@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAdvancedSiteSearchConfig extends \Google\Model
-{
-    /**
-     * If set true, automatic refresh is disabled for the DataStore.
-     *
-     * @var bool
-     */
-    public $disableAutomaticRefresh;
-    /**
-     * If set true, initial indexing is disabled for the DataStore.
-     *
-     * @var bool
-     */
-    public $disableInitialIndex;
-    /**
-     * If set true, automatic refresh is disabled for the DataStore.
-     *
-     * @param bool $disableAutomaticRefresh
-     */
-    public function setDisableAutomaticRefresh($disableAutomaticRefresh)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAdvancedSiteSearchConfig extends \Google\Model
     {
+        /**
+         * If set true, automatic refresh is disabled for the DataStore.
+         *
+         * @var bool
+         */
+        public $disableAutomaticRefresh;
+        /**
+         * If set true, initial indexing is disabled for the DataStore.
+         *
+         * @var bool
+         */
+        public $disableInitialIndex;
+        /**
+         * If set true, automatic refresh is disabled for the DataStore.
+         *
+         * @param bool $disableAutomaticRefresh
+         */
+        public function setDisableAutomaticRefresh($disableAutomaticRefresh)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableAutomaticRefresh()
+        {
+        }
+        /**
+         * If set true, initial indexing is disabled for the DataStore.
+         *
+         * @param bool $disableInitialIndex
+         */
+        public function setDisableInitialIndex($disableInitialIndex)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableInitialIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAdvancedSiteSearchConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableAutomaticRefresh()
-    {
-    }
-    /**
-     * If set true, initial indexing is disabled for the DataStore.
-     *
-     * @param bool $disableInitialIndex
-     */
-    public function setDisableInitialIndex($disableInitialIndex)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableInitialIndex()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAdvancedSiteSearchConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAdvancedSiteSearchConfig
     {
     }
 }

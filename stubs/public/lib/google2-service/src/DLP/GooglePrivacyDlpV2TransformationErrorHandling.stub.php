@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransformationErrorHandling extends \Google\Model
-{
-    protected $leaveUntransformedType = GooglePrivacyDlpV2LeaveUntransformed::class;
-    protected $leaveUntransformedDataType = '';
-    protected $throwErrorType = GooglePrivacyDlpV2ThrowError::class;
-    protected $throwErrorDataType = '';
-    /**
-     * Ignore errors
-     *
-     * @param GooglePrivacyDlpV2LeaveUntransformed $leaveUntransformed
-     */
-    public function setLeaveUntransformed(GooglePrivacyDlpV2LeaveUntransformed $leaveUntransformed)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransformationErrorHandling extends \Google\Model
     {
+        protected $leaveUntransformedType = GooglePrivacyDlpV2LeaveUntransformed::class;
+        protected $leaveUntransformedDataType = '';
+        protected $throwErrorType = GooglePrivacyDlpV2ThrowError::class;
+        protected $throwErrorDataType = '';
+        /**
+         * Ignore errors
+         *
+         * @param GooglePrivacyDlpV2LeaveUntransformed $leaveUntransformed
+         */
+        public function setLeaveUntransformed(GooglePrivacyDlpV2LeaveUntransformed $leaveUntransformed)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LeaveUntransformed
+         */
+        public function getLeaveUntransformed()
+        {
+        }
+        /**
+         * Throw an error
+         *
+         * @param GooglePrivacyDlpV2ThrowError $throwError
+         */
+        public function setThrowError(GooglePrivacyDlpV2ThrowError $throwError)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ThrowError
+         */
+        public function getThrowError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2LeaveUntransformed
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransformationErrorHandling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeaveUntransformed()
-    {
-    }
-    /**
-     * Throw an error
-     *
-     * @param GooglePrivacyDlpV2ThrowError $throwError
-     */
-    public function setThrowError(GooglePrivacyDlpV2ThrowError $throwError)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ThrowError
-     */
-    public function getThrowError()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransformationErrorHandling extends \Google\Service\DLP\GooglePrivacyDlpV2TransformationErrorHandling
     {
     }
 }

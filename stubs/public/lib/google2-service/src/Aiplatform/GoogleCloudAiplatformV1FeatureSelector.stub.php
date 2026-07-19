@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureSelector extends \Google\Model
-{
-    protected $idMatcherType = GoogleCloudAiplatformV1IdMatcher::class;
-    protected $idMatcherDataType = '';
-    /**
-     * Required. Matches Features based on ID.
-     *
-     * @param GoogleCloudAiplatformV1IdMatcher $idMatcher
-     */
-    public function setIdMatcher(GoogleCloudAiplatformV1IdMatcher $idMatcher)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureSelector extends \Google\Model
     {
+        protected $idMatcherType = GoogleCloudAiplatformV1IdMatcher::class;
+        protected $idMatcherDataType = '';
+        /**
+         * Required. Matches Features based on ID.
+         *
+         * @param GoogleCloudAiplatformV1IdMatcher $idMatcher
+         */
+        public function setIdMatcher(GoogleCloudAiplatformV1IdMatcher $idMatcher)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1IdMatcher
+         */
+        public function getIdMatcher()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1IdMatcher
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdMatcher()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureSelector extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureSelector
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StandardSqlTableType extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    protected $columnsType = StandardSqlField::class;
-    protected $columnsDataType = 'array';
-    /**
-     * The columns in this table type
-     *
-     * @param StandardSqlField[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Bigquery {
+    class StandardSqlTableType extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        protected $columnsType = StandardSqlField::class;
+        protected $columnsDataType = 'array';
+        /**
+         * The columns in this table type
+         *
+         * @param StandardSqlField[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return StandardSqlField[]
+         */
+        public function getColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StandardSqlField[]
+     * Runtime class alias of \Google\Service\Bigquery\StandardSqlTableType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
+    class Google_Service_Bigquery_StandardSqlTableType extends \Google\Service\Bigquery\StandardSqlTableType
     {
     }
 }

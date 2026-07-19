@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaTuneModelMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the model that this tune applies to. Format: `projects
-     * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
-     * el_id}`
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * The resource name of the model that this tune applies to. Format: `projects
-     * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
-     * el_id}`
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaTuneModelMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the model that this tune applies to. Format: `projects
+         * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
+         * el_id}`
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * The resource name of the model that this tune applies to. Format: `projects
+         * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
+         * el_id}`
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaTuneModelMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaTuneModelMetadata extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaTuneModelMetadata
     {
     }
 }

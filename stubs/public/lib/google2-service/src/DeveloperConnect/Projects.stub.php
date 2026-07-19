@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class Projects extends \Google\Collection
-{
-    protected $collection_key = 'projectIds';
-    /**
-     * Optional. The GCP Project IDs. Format: projects/{project}
-     *
-     * @var string[]
-     */
-    public $projectIds;
-    /**
-     * Optional. The GCP Project IDs. Format: projects/{project}
-     *
-     * @param string[] $projectIds
-     */
-    public function setProjectIds($projectIds)
+namespace Google\Service\DeveloperConnect {
+    class Projects extends \Google\Collection
     {
+        protected $collection_key = 'projectIds';
+        /**
+         * Optional. The GCP Project IDs. Format: projects/{project}
+         *
+         * @var string[]
+         */
+        public $projectIds;
+        /**
+         * Optional. The GCP Project IDs. Format: projects/{project}
+         *
+         * @param string[] $projectIds
+         */
+        public function setProjectIds($projectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectIds()
+    class Google_Service_DeveloperConnect_Projects extends \Google\Service\DeveloperConnect\Projects
     {
     }
 }

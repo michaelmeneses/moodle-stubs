@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class ListDnsZonesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dnsZonePairs';
-    protected $dnsZonePairsType = DnsZonePair::class;
-    protected $dnsZonePairsDataType = 'array';
-    /**
-     * All pairs of private DNS zones in the shared producer host project and the
-     * matching peering zones in the consumer project..
-     *
-     * @param DnsZonePair[] $dnsZonePairs
-     */
-    public function setDnsZonePairs($dnsZonePairs)
+namespace Google\Service\ServiceNetworking {
+    class ListDnsZonesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dnsZonePairs';
+        protected $dnsZonePairsType = DnsZonePair::class;
+        protected $dnsZonePairsDataType = 'array';
+        /**
+         * All pairs of private DNS zones in the shared producer host project and the
+         * matching peering zones in the consumer project..
+         *
+         * @param DnsZonePair[] $dnsZonePairs
+         */
+        public function setDnsZonePairs($dnsZonePairs)
+        {
+        }
+        /**
+         * @return DnsZonePair[]
+         */
+        public function getDnsZonePairs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsZonePair[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\ListDnsZonesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsZonePairs()
+    class Google_Service_ServiceNetworking_ListDnsZonesResponse extends \Google\Service\ServiceNetworking\ListDnsZonesResponse
     {
     }
 }

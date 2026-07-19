@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility extends \Google\Model
-{
-    /**
-     * Output only. Whether the entity is compatible and can be represented in the
-     * metadata store.
-     *
-     * @var bool
-     */
-    public $compatible;
-    /**
-     * Output only. Provides additional detail if the entity is incompatible with
-     * the metadata store.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Output only. Whether the entity is compatible and can be represented in the
-     * metadata store.
-     *
-     * @param bool $compatible
-     */
-    public function setCompatible($compatible)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility extends \Google\Model
     {
+        /**
+         * Output only. Whether the entity is compatible and can be represented in the
+         * metadata store.
+         *
+         * @var bool
+         */
+        public $compatible;
+        /**
+         * Output only. Provides additional detail if the entity is incompatible with
+         * the metadata store.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Output only. Whether the entity is compatible and can be represented in the
+         * metadata store.
+         *
+         * @param bool $compatible
+         */
+        public function setCompatible($compatible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompatible()
+        {
+        }
+        /**
+         * Output only. Provides additional detail if the entity is incompatible with
+         * the metadata store.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompatible()
-    {
-    }
-    /**
-     * Output only. Provides additional detail if the entity is incompatible with
-     * the metadata store.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility
     {
     }
 }

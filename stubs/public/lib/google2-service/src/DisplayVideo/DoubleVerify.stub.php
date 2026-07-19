@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DoubleVerify extends \Google\Collection
-{
-    protected $collection_key = 'avoidedAgeRatings';
-    protected $appStarRatingType = DoubleVerifyAppStarRating::class;
-    protected $appStarRatingDataType = '';
-    /**
-     * Avoid bidding on apps with the age rating.
-     *
-     * @var string[]
-     */
-    public $avoidedAgeRatings;
-    protected $brandSafetyCategoriesType = DoubleVerifyBrandSafetyCategories::class;
-    protected $brandSafetyCategoriesDataType = '';
-    /**
-     * The custom segment ID provided by DoubleVerify. The ID must start with "51"
-     * and consist of eight digits. Custom segment ID cannot be specified along
-     * with any of the following fields: * brand_safety_categories *
-     * avoided_age_ratings * app_star_rating * fraud_invalid_traffic
-     *
-     * @var string
-     */
-    public $customSegmentId;
-    protected $displayViewabilityType = DoubleVerifyDisplayViewability::class;
-    protected $displayViewabilityDataType = '';
-    protected $fraudInvalidTrafficType = DoubleVerifyFraudInvalidTraffic::class;
-    protected $fraudInvalidTrafficDataType = '';
-    protected $videoViewabilityType = DoubleVerifyVideoViewability::class;
-    protected $videoViewabilityDataType = '';
-    /**
-     * Avoid bidding on apps with the star ratings.
-     *
-     * @param DoubleVerifyAppStarRating $appStarRating
-     */
-    public function setAppStarRating(DoubleVerifyAppStarRating $appStarRating)
+namespace Google\Service\DisplayVideo {
+    class DoubleVerify extends \Google\Collection
     {
+        protected $collection_key = 'avoidedAgeRatings';
+        protected $appStarRatingType = DoubleVerifyAppStarRating::class;
+        protected $appStarRatingDataType = '';
+        /**
+         * Avoid bidding on apps with the age rating.
+         *
+         * @var string[]
+         */
+        public $avoidedAgeRatings;
+        protected $brandSafetyCategoriesType = DoubleVerifyBrandSafetyCategories::class;
+        protected $brandSafetyCategoriesDataType = '';
+        /**
+         * The custom segment ID provided by DoubleVerify. The ID must start with "51"
+         * and consist of eight digits. Custom segment ID cannot be specified along
+         * with any of the following fields: * brand_safety_categories *
+         * avoided_age_ratings * app_star_rating * fraud_invalid_traffic
+         *
+         * @var string
+         */
+        public $customSegmentId;
+        protected $displayViewabilityType = DoubleVerifyDisplayViewability::class;
+        protected $displayViewabilityDataType = '';
+        protected $fraudInvalidTrafficType = DoubleVerifyFraudInvalidTraffic::class;
+        protected $fraudInvalidTrafficDataType = '';
+        protected $videoViewabilityType = DoubleVerifyVideoViewability::class;
+        protected $videoViewabilityDataType = '';
+        /**
+         * Avoid bidding on apps with the star ratings.
+         *
+         * @param DoubleVerifyAppStarRating $appStarRating
+         */
+        public function setAppStarRating(DoubleVerifyAppStarRating $appStarRating)
+        {
+        }
+        /**
+         * @return DoubleVerifyAppStarRating
+         */
+        public function getAppStarRating()
+        {
+        }
+        /**
+         * Avoid bidding on apps with the age rating.
+         *
+         * @param string[] $avoidedAgeRatings
+         */
+        public function setAvoidedAgeRatings($avoidedAgeRatings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvoidedAgeRatings()
+        {
+        }
+        /**
+         * DV Brand Safety Controls.
+         *
+         * @param DoubleVerifyBrandSafetyCategories $brandSafetyCategories
+         */
+        public function setBrandSafetyCategories(DoubleVerifyBrandSafetyCategories $brandSafetyCategories)
+        {
+        }
+        /**
+         * @return DoubleVerifyBrandSafetyCategories
+         */
+        public function getBrandSafetyCategories()
+        {
+        }
+        /**
+         * The custom segment ID provided by DoubleVerify. The ID must start with "51"
+         * and consist of eight digits. Custom segment ID cannot be specified along
+         * with any of the following fields: * brand_safety_categories *
+         * avoided_age_ratings * app_star_rating * fraud_invalid_traffic
+         *
+         * @param string $customSegmentId
+         */
+        public function setCustomSegmentId($customSegmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomSegmentId()
+        {
+        }
+        /**
+         * Display viewability settings (applicable to display line items only).
+         *
+         * @param DoubleVerifyDisplayViewability $displayViewability
+         */
+        public function setDisplayViewability(DoubleVerifyDisplayViewability $displayViewability)
+        {
+        }
+        /**
+         * @return DoubleVerifyDisplayViewability
+         */
+        public function getDisplayViewability()
+        {
+        }
+        /**
+         * Avoid Sites and Apps with historical Fraud & IVT Rates.
+         *
+         * @param DoubleVerifyFraudInvalidTraffic $fraudInvalidTraffic
+         */
+        public function setFraudInvalidTraffic(DoubleVerifyFraudInvalidTraffic $fraudInvalidTraffic)
+        {
+        }
+        /**
+         * @return DoubleVerifyFraudInvalidTraffic
+         */
+        public function getFraudInvalidTraffic()
+        {
+        }
+        /**
+         * Video viewability settings (applicable to video line items only).
+         *
+         * @param DoubleVerifyVideoViewability $videoViewability
+         */
+        public function setVideoViewability(DoubleVerifyVideoViewability $videoViewability)
+        {
+        }
+        /**
+         * @return DoubleVerifyVideoViewability
+         */
+        public function getVideoViewability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DoubleVerifyAppStarRating
+     * Runtime class alias of \Google\Service\DisplayVideo\DoubleVerify registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppStarRating()
-    {
-    }
-    /**
-     * Avoid bidding on apps with the age rating.
-     *
-     * @param string[] $avoidedAgeRatings
-     */
-    public function setAvoidedAgeRatings($avoidedAgeRatings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvoidedAgeRatings()
-    {
-    }
-    /**
-     * DV Brand Safety Controls.
-     *
-     * @param DoubleVerifyBrandSafetyCategories $brandSafetyCategories
-     */
-    public function setBrandSafetyCategories(DoubleVerifyBrandSafetyCategories $brandSafetyCategories)
-    {
-    }
-    /**
-     * @return DoubleVerifyBrandSafetyCategories
-     */
-    public function getBrandSafetyCategories()
-    {
-    }
-    /**
-     * The custom segment ID provided by DoubleVerify. The ID must start with "51"
-     * and consist of eight digits. Custom segment ID cannot be specified along
-     * with any of the following fields: * brand_safety_categories *
-     * avoided_age_ratings * app_star_rating * fraud_invalid_traffic
-     *
-     * @param string $customSegmentId
-     */
-    public function setCustomSegmentId($customSegmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomSegmentId()
-    {
-    }
-    /**
-     * Display viewability settings (applicable to display line items only).
-     *
-     * @param DoubleVerifyDisplayViewability $displayViewability
-     */
-    public function setDisplayViewability(DoubleVerifyDisplayViewability $displayViewability)
-    {
-    }
-    /**
-     * @return DoubleVerifyDisplayViewability
-     */
-    public function getDisplayViewability()
-    {
-    }
-    /**
-     * Avoid Sites and Apps with historical Fraud & IVT Rates.
-     *
-     * @param DoubleVerifyFraudInvalidTraffic $fraudInvalidTraffic
-     */
-    public function setFraudInvalidTraffic(DoubleVerifyFraudInvalidTraffic $fraudInvalidTraffic)
-    {
-    }
-    /**
-     * @return DoubleVerifyFraudInvalidTraffic
-     */
-    public function getFraudInvalidTraffic()
-    {
-    }
-    /**
-     * Video viewability settings (applicable to video line items only).
-     *
-     * @param DoubleVerifyVideoViewability $videoViewability
-     */
-    public function setVideoViewability(DoubleVerifyVideoViewability $videoViewability)
-    {
-    }
-    /**
-     * @return DoubleVerifyVideoViewability
-     */
-    public function getVideoViewability()
+    class Google_Service_DisplayVideo_DoubleVerify extends \Google\Service\DisplayVideo\DoubleVerify
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class JobsEmpty extends \Google\Model
-{
+namespace Google\Service\CloudTalentSolution {
+    class JobsEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudTalentSolution\JobsEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudTalentSolution_JobsEmpty extends \Google\Service\CloudTalentSolution\JobsEmpty
+    {
+    }
 }

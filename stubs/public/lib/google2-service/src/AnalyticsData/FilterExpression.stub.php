@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class FilterExpression extends \Google\Model
-{
-    protected $andGroupType = FilterExpressionList::class;
-    protected $andGroupDataType = '';
-    protected $filterType = Filter::class;
-    protected $filterDataType = '';
-    protected $notExpressionType = FilterExpression::class;
-    protected $notExpressionDataType = '';
-    protected $orGroupType = FilterExpressionList::class;
-    protected $orGroupDataType = '';
-    /**
-     * The FilterExpressions in and_group have an AND relationship.
-     *
-     * @param FilterExpressionList $andGroup
-     */
-    public function setAndGroup(FilterExpressionList $andGroup)
+namespace Google\Service\AnalyticsData {
+    class FilterExpression extends \Google\Model
     {
+        protected $andGroupType = FilterExpressionList::class;
+        protected $andGroupDataType = '';
+        protected $filterType = Filter::class;
+        protected $filterDataType = '';
+        protected $notExpressionType = FilterExpression::class;
+        protected $notExpressionDataType = '';
+        protected $orGroupType = FilterExpressionList::class;
+        protected $orGroupDataType = '';
+        /**
+         * The FilterExpressions in and_group have an AND relationship.
+         *
+         * @param FilterExpressionList $andGroup
+         */
+        public function setAndGroup(FilterExpressionList $andGroup)
+        {
+        }
+        /**
+         * @return FilterExpressionList
+         */
+        public function getAndGroup()
+        {
+        }
+        /**
+         * A primitive filter. In the same FilterExpression, all of the filter's field
+         * names need to be either all dimensions or all metrics.
+         *
+         * @param Filter $filter
+         */
+        public function setFilter(Filter $filter)
+        {
+        }
+        /**
+         * @return Filter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * The FilterExpression is NOT of not_expression.
+         *
+         * @param FilterExpression $notExpression
+         */
+        public function setNotExpression(FilterExpression $notExpression)
+        {
+        }
+        /**
+         * @return FilterExpression
+         */
+        public function getNotExpression()
+        {
+        }
+        /**
+         * The FilterExpressions in or_group have an OR relationship.
+         *
+         * @param FilterExpressionList $orGroup
+         */
+        public function setOrGroup(FilterExpressionList $orGroup)
+        {
+        }
+        /**
+         * @return FilterExpressionList
+         */
+        public function getOrGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterExpressionList
+     * Runtime class alias of \Google\Service\AnalyticsData\FilterExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndGroup()
-    {
-    }
-    /**
-     * A primitive filter. In the same FilterExpression, all of the filter's field
-     * names need to be either all dimensions or all metrics.
-     *
-     * @param Filter $filter
-     */
-    public function setFilter(Filter $filter)
-    {
-    }
-    /**
-     * @return Filter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * The FilterExpression is NOT of not_expression.
-     *
-     * @param FilterExpression $notExpression
-     */
-    public function setNotExpression(FilterExpression $notExpression)
-    {
-    }
-    /**
-     * @return FilterExpression
-     */
-    public function getNotExpression()
-    {
-    }
-    /**
-     * The FilterExpressions in or_group have an OR relationship.
-     *
-     * @param FilterExpressionList $orGroup
-     */
-    public function setOrGroup(FilterExpressionList $orGroup)
-    {
-    }
-    /**
-     * @return FilterExpressionList
-     */
-    public function getOrGroup()
+    class Google_Service_AnalyticsData_FilterExpression extends \Google\Service\AnalyticsData\FilterExpression
     {
     }
 }

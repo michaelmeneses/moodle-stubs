@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceSettingsMetadata extends \Google\Model
-{
-    /**
-     * A metadata key/value items map. The total size of all keys and values must
-     * be less than 512KB.
-     *
-     * @var string[]
-     */
-    public $items;
-    /**
-     * Output only. [Output Only] Type of the resource. Always compute#metadata
-     * for metadata.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A metadata key/value items map. The total size of all keys and values must
-     * be less than 512KB.
-     *
-     * @param string[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Compute {
+    class InstanceSettingsMetadata extends \Google\Model
     {
+        /**
+         * A metadata key/value items map. The total size of all keys and values must
+         * be less than 512KB.
+         *
+         * @var string[]
+         */
+        public $items;
+        /**
+         * Output only. [Output Only] Type of the resource. Always compute#metadata
+         * for metadata.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A metadata key/value items map. The total size of all keys and values must
+         * be less than 512KB.
+         *
+         * @param string[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the resource. Always compute#metadata
+         * for metadata.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InstanceSettingsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the resource. Always compute#metadata
-     * for metadata.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Compute_InstanceSettingsMetadata extends \Google\Service\Compute\InstanceSettingsMetadata
     {
     }
 }

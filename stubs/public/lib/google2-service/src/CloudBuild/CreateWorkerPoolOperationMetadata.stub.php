@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class CreateWorkerPoolOperationMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $completeTime;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $workerPool;
-    /**
-     * @param string
-     */
-    public function setCompleteTime($completeTime)
+namespace Google\Service\CloudBuild {
+    class CreateWorkerPoolOperationMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $completeTime;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $workerPool;
+        /**
+         * @param string
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWorkerPool($workerPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\CreateWorkerPoolOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWorkerPool($workerPool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerPool()
+    class Google_Service_CloudBuild_CreateWorkerPoolOperationMetadata extends \Google\Service\CloudBuild\CreateWorkerPoolOperationMetadata
     {
     }
 }

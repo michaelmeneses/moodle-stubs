@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class Official extends \Google\Collection
-{
-    protected $collection_key = 'urls';
-    protected $addressType = SimpleAddressType::class;
-    protected $addressDataType = 'array';
-    protected $channelsType = Channel::class;
-    protected $channelsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $party;
-    /**
-     * @var string[]
-     */
-    public $phones;
-    /**
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * @var string[]
-     */
-    public $urls;
-    /**
-     * @param SimpleAddressType[]
-     */
-    public function setAddress($address)
+namespace Google\Service\CivicInfo {
+    class Official extends \Google\Collection
     {
+        protected $collection_key = 'urls';
+        protected $addressType = SimpleAddressType::class;
+        protected $addressDataType = 'array';
+        protected $channelsType = Channel::class;
+        protected $channelsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $party;
+        /**
+         * @var string[]
+         */
+        public $phones;
+        /**
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * @var string[]
+         */
+        public $urls;
+        /**
+         * @param SimpleAddressType[]
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return SimpleAddressType[]
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param Channel[]
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return Channel[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParty($party)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParty()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPhones($phones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPhones()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUrls($urls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SimpleAddressType[]
+     * Runtime class alias of \Google\Service\CivicInfo\Official registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param Channel[]
-     */
-    public function setChannels($channels)
-    {
-    }
-    /**
-     * @return Channel[]
-     */
-    public function getChannels()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEmails($emails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEmails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParty($party)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParty()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPhones($phones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPhones()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUrls($urls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUrls()
+    class Google_Service_CivicInfo_Official extends \Google\Service\CivicInfo\Official
     {
     }
 }

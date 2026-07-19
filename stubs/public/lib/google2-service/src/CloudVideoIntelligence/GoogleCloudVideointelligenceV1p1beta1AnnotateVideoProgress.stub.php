@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress extends \Google\Collection
-{
-    protected $collection_key = 'annotationProgress';
-    protected $annotationProgressType = GoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress::class;
-    protected $annotationProgressDataType = 'array';
-    /**
-     * Progress metadata for all videos specified in `AnnotateVideoRequest`.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress[] $annotationProgress
-     */
-    public function setAnnotationProgress($annotationProgress)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress extends \Google\Collection
     {
+        protected $collection_key = 'annotationProgress';
+        protected $annotationProgressType = GoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress::class;
+        protected $annotationProgressDataType = 'array';
+        /**
+         * Progress metadata for all videos specified in `AnnotateVideoRequest`.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress[] $annotationProgress
+         */
+        public function setAnnotationProgress($annotationProgress)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress[]
+         */
+        public function getAnnotationProgress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p1beta1VideoAnnotationProgress[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationProgress()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p1beta1AnnotateVideoProgress
     {
     }
 }

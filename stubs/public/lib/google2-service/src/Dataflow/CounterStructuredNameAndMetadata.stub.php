@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class CounterStructuredNameAndMetadata extends \Google\Model
-{
-    protected $metadataType = CounterMetadata::class;
-    protected $metadataDataType = '';
-    protected $nameType = CounterStructuredName::class;
-    protected $nameDataType = '';
-    /**
-     * Metadata associated with a counter
-     *
-     * @param CounterMetadata $metadata
-     */
-    public function setMetadata(CounterMetadata $metadata)
+namespace Google\Service\Dataflow {
+    class CounterStructuredNameAndMetadata extends \Google\Model
     {
+        protected $metadataType = CounterMetadata::class;
+        protected $metadataDataType = '';
+        protected $nameType = CounterStructuredName::class;
+        protected $nameDataType = '';
+        /**
+         * Metadata associated with a counter
+         *
+         * @param CounterMetadata $metadata
+         */
+        public function setMetadata(CounterMetadata $metadata)
+        {
+        }
+        /**
+         * @return CounterMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Structured name of the counter.
+         *
+         * @param CounterStructuredName $name
+         */
+        public function setName(CounterStructuredName $name)
+        {
+        }
+        /**
+         * @return CounterStructuredName
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CounterMetadata
+     * Runtime class alias of \Google\Service\Dataflow\CounterStructuredNameAndMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Structured name of the counter.
-     *
-     * @param CounterStructuredName $name
-     */
-    public function setName(CounterStructuredName $name)
-    {
-    }
-    /**
-     * @return CounterStructuredName
-     */
-    public function getName()
+    class Google_Service_Dataflow_CounterStructuredNameAndMetadata extends \Google\Service\Dataflow\CounterStructuredNameAndMetadata
     {
     }
 }

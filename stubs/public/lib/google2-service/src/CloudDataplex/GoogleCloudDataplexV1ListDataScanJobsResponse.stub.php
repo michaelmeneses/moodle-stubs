@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListDataScanJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataScanJobs';
-    protected $dataScanJobsType = GoogleCloudDataplexV1DataScanJob::class;
-    protected $dataScanJobsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * DataScanJobs (BASIC view only) under a given dataScan.
-     *
-     * @param GoogleCloudDataplexV1DataScanJob[] $dataScanJobs
-     */
-    public function setDataScanJobs($dataScanJobs)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListDataScanJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataScanJobs';
+        protected $dataScanJobsType = GoogleCloudDataplexV1DataScanJob::class;
+        protected $dataScanJobsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * DataScanJobs (BASIC view only) under a given dataScan.
+         *
+         * @param GoogleCloudDataplexV1DataScanJob[] $dataScanJobs
+         */
+        public function setDataScanJobs($dataScanJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataScanJob[]
+         */
+        public function getDataScanJobs()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataScanJob[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataScanJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataScanJobs()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListDataScanJobsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataScanJobsResponse
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1SpecDetails extends \Google\Model
-{
-    /**
-     * Output only. The description of the spec.
-     *
-     * @var string
-     */
-    public $description;
-    protected $openApiSpecDetailsType = GoogleCloudApihubV1OpenApiSpecDetails::class;
-    protected $openApiSpecDetailsDataType = '';
-    /**
-     * Output only. The description of the spec.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1SpecDetails extends \Google\Model
     {
+        /**
+         * Output only. The description of the spec.
+         *
+         * @var string
+         */
+        public $description;
+        protected $openApiSpecDetailsType = GoogleCloudApihubV1OpenApiSpecDetails::class;
+        protected $openApiSpecDetailsDataType = '';
+        /**
+         * Output only. The description of the spec.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Additional details apart from `OperationDetails` parsed from
+         * an OpenAPI spec. The OperationDetails parsed from the spec can be obtained
+         * by using ListAPIOperations method.
+         *
+         * @param GoogleCloudApihubV1OpenApiSpecDetails $openApiSpecDetails
+         */
+        public function setOpenApiSpecDetails(GoogleCloudApihubV1OpenApiSpecDetails $openApiSpecDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1OpenApiSpecDetails
+         */
+        public function getOpenApiSpecDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1SpecDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Additional details apart from `OperationDetails` parsed from
-     * an OpenAPI spec. The OperationDetails parsed from the spec can be obtained
-     * by using ListAPIOperations method.
-     *
-     * @param GoogleCloudApihubV1OpenApiSpecDetails $openApiSpecDetails
-     */
-    public function setOpenApiSpecDetails(GoogleCloudApihubV1OpenApiSpecDetails $openApiSpecDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1OpenApiSpecDetails
-     */
-    public function getOpenApiSpecDetails()
+    class Google_Service_APIhub_GoogleCloudApihubV1SpecDetails extends \Google\Service\APIhub\GoogleCloudApihubV1SpecDetails
     {
     }
 }

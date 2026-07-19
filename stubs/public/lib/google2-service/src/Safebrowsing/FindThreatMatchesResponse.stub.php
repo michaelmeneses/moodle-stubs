@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class FindThreatMatchesResponse extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $matchesType = ThreatMatch::class;
-    protected $matchesDataType = 'array';
-    public $matches;
-    /**
-     * @param ThreatMatch[]
-     */
-    public function setMatches($matches)
+namespace Google\Service\Safebrowsing {
+    class FindThreatMatchesResponse extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $matchesType = ThreatMatch::class;
+        protected $matchesDataType = 'array';
+        public $matches;
+        /**
+         * @param ThreatMatch[]
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return ThreatMatch[]
+         */
+        public function getMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ThreatMatch[]
+     * Runtime class alias of \Google\Service\Safebrowsing\FindThreatMatchesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatches()
+    class Google_Service_Safebrowsing_FindThreatMatchesResponse extends \Google\Service\Safebrowsing\FindThreatMatchesResponse
     {
     }
 }

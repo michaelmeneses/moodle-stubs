@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserAbout extends \Google\Model
-{
-    /**
-     * About entry can have a type which indicates the content type. It can either
-     * be plain or html. By default, notes contents are assumed to contain plain
-     * text.
-     *
-     * @var string
-     */
-    public $contentType;
-    /**
-     * Actual value of notes.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * About entry can have a type which indicates the content type. It can either
-     * be plain or html. By default, notes contents are assumed to contain plain
-     * text.
-     *
-     * @param string $contentType
-     */
-    public function setContentType($contentType)
+namespace Google\Service\Directory {
+    class UserAbout extends \Google\Model
     {
+        /**
+         * About entry can have a type which indicates the content type. It can either
+         * be plain or html. By default, notes contents are assumed to contain plain
+         * text.
+         *
+         * @var string
+         */
+        public $contentType;
+        /**
+         * Actual value of notes.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * About entry can have a type which indicates the content type. It can either
+         * be plain or html. By default, notes contents are assumed to contain plain
+         * text.
+         *
+         * @param string $contentType
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * Actual value of notes.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserAbout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * Actual value of notes.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Directory_UserAbout extends \Google\Service\Directory\UserAbout
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class ProjectConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enablePrivateKeyCheck;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $pubsubConfigsType = PubsubConfig::class;
-    protected $pubsubConfigsDataType = 'map';
-    /**
-     * @param bool
-     */
-    public function setEnablePrivateKeyCheck($enablePrivateKeyCheck)
+namespace Google\Service\CloudSourceRepositories {
+    class ProjectConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enablePrivateKeyCheck;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $pubsubConfigsType = PubsubConfig::class;
+        protected $pubsubConfigsDataType = 'map';
+        /**
+         * @param bool
+         */
+        public function setEnablePrivateKeyCheck($enablePrivateKeyCheck)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePrivateKeyCheck()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param PubsubConfig[]
+         */
+        public function setPubsubConfigs($pubsubConfigs)
+        {
+        }
+        /**
+         * @return PubsubConfig[]
+         */
+        public function getPubsubConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\ProjectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablePrivateKeyCheck()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param PubsubConfig[]
-     */
-    public function setPubsubConfigs($pubsubConfigs)
-    {
-    }
-    /**
-     * @return PubsubConfig[]
-     */
-    public function getPubsubConfigs()
+    class Google_Service_CloudSourceRepositories_ProjectConfig extends \Google\Service\CloudSourceRepositories\ProjectConfig
     {
     }
 }

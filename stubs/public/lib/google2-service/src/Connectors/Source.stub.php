@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Source extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * @param string
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\Connectors {
+    class Source extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * @param string
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceType()
+    class Google_Service_Connectors_Source extends \Google\Service\Connectors\Source
     {
     }
 }

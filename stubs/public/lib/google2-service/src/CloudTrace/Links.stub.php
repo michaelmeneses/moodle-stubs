@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class Links extends \Google\Collection
-{
-    protected $collection_key = 'link';
-    /**
-     * The number of dropped links after the maximum size was enforced. If this
-     * value is 0, then no links were dropped.
-     *
-     * @var int
-     */
-    public $droppedLinksCount;
-    protected $linkType = Link::class;
-    protected $linkDataType = 'array';
-    /**
-     * The number of dropped links after the maximum size was enforced. If this
-     * value is 0, then no links were dropped.
-     *
-     * @param int $droppedLinksCount
-     */
-    public function setDroppedLinksCount($droppedLinksCount)
+namespace Google\Service\CloudTrace {
+    class Links extends \Google\Collection
     {
+        protected $collection_key = 'link';
+        /**
+         * The number of dropped links after the maximum size was enforced. If this
+         * value is 0, then no links were dropped.
+         *
+         * @var int
+         */
+        public $droppedLinksCount;
+        protected $linkType = Link::class;
+        protected $linkDataType = 'array';
+        /**
+         * The number of dropped links after the maximum size was enforced. If this
+         * value is 0, then no links were dropped.
+         *
+         * @param int $droppedLinksCount
+         */
+        public function setDroppedLinksCount($droppedLinksCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDroppedLinksCount()
+        {
+        }
+        /**
+         * A collection of links.
+         *
+         * @param Link[] $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return Link[]
+         */
+        public function getLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudTrace\Links registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDroppedLinksCount()
-    {
-    }
-    /**
-     * A collection of links.
-     *
-     * @param Link[] $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return Link[]
-     */
-    public function getLink()
+    class Google_Service_CloudTrace_Links extends \Google\Service\CloudTrace\Links
     {
     }
 }

@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class OrgChartSpec extends \Google\Model
-{
-    /**
-     * Default value, do not use.
-     */
-    public const NODE_SIZE_ORG_CHART_LABEL_SIZE_UNSPECIFIED = 'ORG_CHART_LABEL_SIZE_UNSPECIFIED';
-    /**
-     * The small org chart node size.
-     */
-    public const NODE_SIZE_SMALL = 'SMALL';
-    /**
-     * The medium org chart node size.
-     */
-    public const NODE_SIZE_MEDIUM = 'MEDIUM';
-    /**
-     * The large org chart node size.
-     */
-    public const NODE_SIZE_LARGE = 'LARGE';
-    protected $labelsType = ChartData::class;
-    protected $labelsDataType = '';
-    protected $nodeColorType = Color::class;
-    protected $nodeColorDataType = '';
-    protected $nodeColorStyleType = ColorStyle::class;
-    protected $nodeColorStyleDataType = '';
-    /**
-     * The size of the org chart nodes.
-     *
-     * @var string
-     */
-    public $nodeSize;
-    protected $parentLabelsType = ChartData::class;
-    protected $parentLabelsDataType = '';
-    protected $selectedNodeColorType = Color::class;
-    protected $selectedNodeColorDataType = '';
-    protected $selectedNodeColorStyleType = ColorStyle::class;
-    protected $selectedNodeColorStyleDataType = '';
-    protected $tooltipsType = ChartData::class;
-    protected $tooltipsDataType = '';
-    /**
-     * The data containing the labels for all the nodes in the chart. Labels must
-     * be unique.
-     *
-     * @param ChartData $labels
-     */
-    public function setLabels(ChartData $labels)
+namespace Google\Service\Sheets {
+    class OrgChartSpec extends \Google\Model
     {
+        /**
+         * Default value, do not use.
+         */
+        public const NODE_SIZE_ORG_CHART_LABEL_SIZE_UNSPECIFIED = 'ORG_CHART_LABEL_SIZE_UNSPECIFIED';
+        /**
+         * The small org chart node size.
+         */
+        public const NODE_SIZE_SMALL = 'SMALL';
+        /**
+         * The medium org chart node size.
+         */
+        public const NODE_SIZE_MEDIUM = 'MEDIUM';
+        /**
+         * The large org chart node size.
+         */
+        public const NODE_SIZE_LARGE = 'LARGE';
+        protected $labelsType = ChartData::class;
+        protected $labelsDataType = '';
+        protected $nodeColorType = Color::class;
+        protected $nodeColorDataType = '';
+        protected $nodeColorStyleType = ColorStyle::class;
+        protected $nodeColorStyleDataType = '';
+        /**
+         * The size of the org chart nodes.
+         *
+         * @var string
+         */
+        public $nodeSize;
+        protected $parentLabelsType = ChartData::class;
+        protected $parentLabelsDataType = '';
+        protected $selectedNodeColorType = Color::class;
+        protected $selectedNodeColorDataType = '';
+        protected $selectedNodeColorStyleType = ColorStyle::class;
+        protected $selectedNodeColorStyleDataType = '';
+        protected $tooltipsType = ChartData::class;
+        protected $tooltipsDataType = '';
+        /**
+         * The data containing the labels for all the nodes in the chart. Labels must
+         * be unique.
+         *
+         * @param ChartData $labels
+         */
+        public function setLabels(ChartData $labels)
+        {
+        }
+        /**
+         * @return ChartData
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The color of the org chart nodes. Deprecated: Use node_color_style.
+         *
+         * @deprecated
+         * @param Color $nodeColor
+         */
+        public function setNodeColor(Color $nodeColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getNodeColor()
+        {
+        }
+        /**
+         * The color of the org chart nodes. If node_color is also set, this field
+         * takes precedence.
+         *
+         * @param ColorStyle $nodeColorStyle
+         */
+        public function setNodeColorStyle(ColorStyle $nodeColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getNodeColorStyle()
+        {
+        }
+        /**
+         * The size of the org chart nodes.
+         *
+         * Accepted values: ORG_CHART_LABEL_SIZE_UNSPECIFIED, SMALL, MEDIUM, LARGE
+         *
+         * @param self::NODE_SIZE_* $nodeSize
+         */
+        public function setNodeSize($nodeSize)
+        {
+        }
+        /**
+         * @return self::NODE_SIZE_*
+         */
+        public function getNodeSize()
+        {
+        }
+        /**
+         * The data containing the label of the parent for the corresponding node. A
+         * blank value indicates that the node has no parent and is a top-level node.
+         * This field is optional.
+         *
+         * @param ChartData $parentLabels
+         */
+        public function setParentLabels(ChartData $parentLabels)
+        {
+        }
+        /**
+         * @return ChartData
+         */
+        public function getParentLabels()
+        {
+        }
+        /**
+         * The color of the selected org chart nodes. Deprecated: Use
+         * selected_node_color_style.
+         *
+         * @deprecated
+         * @param Color $selectedNodeColor
+         */
+        public function setSelectedNodeColor(Color $selectedNodeColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getSelectedNodeColor()
+        {
+        }
+        /**
+         * The color of the selected org chart nodes. If selected_node_color is also
+         * set, this field takes precedence.
+         *
+         * @param ColorStyle $selectedNodeColorStyle
+         */
+        public function setSelectedNodeColorStyle(ColorStyle $selectedNodeColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getSelectedNodeColorStyle()
+        {
+        }
+        /**
+         * The data containing the tooltip for the corresponding node. A blank value
+         * results in no tooltip being displayed for the node. This field is optional.
+         *
+         * @param ChartData $tooltips
+         */
+        public function setTooltips(ChartData $tooltips)
+        {
+        }
+        /**
+         * @return ChartData
+         */
+        public function getTooltips()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChartData
+     * Runtime class alias of \Google\Service\Sheets\OrgChartSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The color of the org chart nodes. Deprecated: Use node_color_style.
-     *
-     * @deprecated
-     * @param Color $nodeColor
-     */
-    public function setNodeColor(Color $nodeColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getNodeColor()
-    {
-    }
-    /**
-     * The color of the org chart nodes. If node_color is also set, this field
-     * takes precedence.
-     *
-     * @param ColorStyle $nodeColorStyle
-     */
-    public function setNodeColorStyle(ColorStyle $nodeColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getNodeColorStyle()
-    {
-    }
-    /**
-     * The size of the org chart nodes.
-     *
-     * Accepted values: ORG_CHART_LABEL_SIZE_UNSPECIFIED, SMALL, MEDIUM, LARGE
-     *
-     * @param self::NODE_SIZE_* $nodeSize
-     */
-    public function setNodeSize($nodeSize)
-    {
-    }
-    /**
-     * @return self::NODE_SIZE_*
-     */
-    public function getNodeSize()
-    {
-    }
-    /**
-     * The data containing the label of the parent for the corresponding node. A
-     * blank value indicates that the node has no parent and is a top-level node.
-     * This field is optional.
-     *
-     * @param ChartData $parentLabels
-     */
-    public function setParentLabels(ChartData $parentLabels)
-    {
-    }
-    /**
-     * @return ChartData
-     */
-    public function getParentLabels()
-    {
-    }
-    /**
-     * The color of the selected org chart nodes. Deprecated: Use
-     * selected_node_color_style.
-     *
-     * @deprecated
-     * @param Color $selectedNodeColor
-     */
-    public function setSelectedNodeColor(Color $selectedNodeColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getSelectedNodeColor()
-    {
-    }
-    /**
-     * The color of the selected org chart nodes. If selected_node_color is also
-     * set, this field takes precedence.
-     *
-     * @param ColorStyle $selectedNodeColorStyle
-     */
-    public function setSelectedNodeColorStyle(ColorStyle $selectedNodeColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getSelectedNodeColorStyle()
-    {
-    }
-    /**
-     * The data containing the tooltip for the corresponding node. A blank value
-     * results in no tooltip being displayed for the node. This field is optional.
-     *
-     * @param ChartData $tooltips
-     */
-    public function setTooltips(ChartData $tooltips)
-    {
-    }
-    /**
-     * @return ChartData
-     */
-    public function getTooltips()
+    class Google_Service_Sheets_OrgChartSpec extends \Google\Service\Sheets\OrgChartSpec
     {
     }
 }

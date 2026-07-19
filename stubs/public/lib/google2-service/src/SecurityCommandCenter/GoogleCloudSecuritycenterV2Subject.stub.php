@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Subject extends \Google\Model
-{
-    /**
-     * Authentication is not specified.
-     */
-    public const KIND_AUTH_TYPE_UNSPECIFIED = 'AUTH_TYPE_UNSPECIFIED';
-    /**
-     * User with valid certificate.
-     */
-    public const KIND_USER = 'USER';
-    /**
-     * Users managed by Kubernetes API with credentials stored as secrets.
-     */
-    public const KIND_SERVICEACCOUNT = 'SERVICEACCOUNT';
-    /**
-     * Collection of users.
-     */
-    public const KIND_GROUP = 'GROUP';
-    /**
-     * Authentication type for the subject.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name for the subject.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Namespace for the subject.
-     *
-     * @var string
-     */
-    public $ns;
-    /**
-     * Authentication type for the subject.
-     *
-     * Accepted values: AUTH_TYPE_UNSPECIFIED, USER, SERVICEACCOUNT, GROUP
-     *
-     * @param self::KIND_* $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Subject extends \Google\Model
     {
+        /**
+         * Authentication is not specified.
+         */
+        public const KIND_AUTH_TYPE_UNSPECIFIED = 'AUTH_TYPE_UNSPECIFIED';
+        /**
+         * User with valid certificate.
+         */
+        public const KIND_USER = 'USER';
+        /**
+         * Users managed by Kubernetes API with credentials stored as secrets.
+         */
+        public const KIND_SERVICEACCOUNT = 'SERVICEACCOUNT';
+        /**
+         * Collection of users.
+         */
+        public const KIND_GROUP = 'GROUP';
+        /**
+         * Authentication type for the subject.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name for the subject.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Namespace for the subject.
+         *
+         * @var string
+         */
+        public $ns;
+        /**
+         * Authentication type for the subject.
+         *
+         * Accepted values: AUTH_TYPE_UNSPECIFIED, USER, SERVICEACCOUNT, GROUP
+         *
+         * @param self::KIND_* $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return self::KIND_*
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name for the subject.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Namespace for the subject.
+         *
+         * @param string $ns
+         */
+        public function setNs($ns)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::KIND_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Subject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Name for the subject.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Namespace for the subject.
-     *
-     * @param string $ns
-     */
-    public function setNs($ns)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNs()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Subject extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Subject
     {
     }
 }

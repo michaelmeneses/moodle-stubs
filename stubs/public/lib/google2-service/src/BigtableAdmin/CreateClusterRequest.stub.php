@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateClusterRequest extends \Google\Model
-{
-    protected $clusterType = Cluster::class;
-    protected $clusterDataType = '';
-    /**
-     * Required. The ID to be used when referring to the new cluster within its
-     * instance, e.g., just `mycluster` rather than
-     * `projects/myproject/instances/myinstance/clusters/mycluster`.
-     *
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * Required. The unique name of the instance in which to create the new
-     * cluster. Values are of the form `projects/{project}/instances/{instance}`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The cluster to be created. Fields marked `OutputOnly` must be
-     * left blank.
-     *
-     * @param Cluster $cluster
-     */
-    public function setCluster(Cluster $cluster)
+namespace Google\Service\BigtableAdmin {
+    class CreateClusterRequest extends \Google\Model
     {
+        protected $clusterType = Cluster::class;
+        protected $clusterDataType = '';
+        /**
+         * Required. The ID to be used when referring to the new cluster within its
+         * instance, e.g., just `mycluster` rather than
+         * `projects/myproject/instances/myinstance/clusters/mycluster`.
+         *
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * Required. The unique name of the instance in which to create the new
+         * cluster. Values are of the form `projects/{project}/instances/{instance}`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The cluster to be created. Fields marked `OutputOnly` must be
+         * left blank.
+         *
+         * @param Cluster $cluster
+         */
+        public function setCluster(Cluster $cluster)
+        {
+        }
+        /**
+         * @return Cluster
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Required. The ID to be used when referring to the new cluster within its
+         * instance, e.g., just `mycluster` rather than
+         * `projects/myproject/instances/myinstance/clusters/mycluster`.
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The unique name of the instance in which to create the new
+         * cluster. Values are of the form `projects/{project}/instances/{instance}`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateClusterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * Required. The ID to be used when referring to the new cluster within its
-     * instance, e.g., just `mycluster` rather than
-     * `projects/myproject/instances/myinstance/clusters/mycluster`.
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The unique name of the instance in which to create the new
-     * cluster. Values are of the form `projects/{project}/instances/{instance}`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_BigtableAdmin_CreateClusterRequest extends \Google\Service\BigtableAdmin\CreateClusterRequest
     {
     }
 }

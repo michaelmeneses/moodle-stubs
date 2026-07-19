@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TestConfig extends \Google\Collection
-{
-    protected $collection_key = 'trackingParameters';
-    /**
-     * Flow name to start the test case with. Format:
-     * `projects//locations//agents//flows/`. Only one of `flow` and `page` should
-     * be set to indicate the starting point of the test case. If neither is set,
-     * the test case will start with start page on the default start flow.
-     *
-     * @var string
-     */
-    public $flow;
-    /**
-     * The page to start the test case with. Format:
-     * `projects//locations//agents//flows//pages/`. Only one of `flow` and `page`
-     * should be set to indicate the starting point of the test case. If neither
-     * is set, the test case will start with start page on the default start flow.
-     *
-     * @var string
-     */
-    public $page;
-    /**
-     * Session parameters to be compared when calculating differences.
-     *
-     * @var string[]
-     */
-    public $trackingParameters;
-    /**
-     * Flow name to start the test case with. Format:
-     * `projects//locations//agents//flows/`. Only one of `flow` and `page` should
-     * be set to indicate the starting point of the test case. If neither is set,
-     * the test case will start with start page on the default start flow.
-     *
-     * @param string $flow
-     */
-    public function setFlow($flow)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TestConfig extends \Google\Collection
     {
+        protected $collection_key = 'trackingParameters';
+        /**
+         * Flow name to start the test case with. Format:
+         * `projects//locations//agents//flows/`. Only one of `flow` and `page` should
+         * be set to indicate the starting point of the test case. If neither is set,
+         * the test case will start with start page on the default start flow.
+         *
+         * @var string
+         */
+        public $flow;
+        /**
+         * The page to start the test case with. Format:
+         * `projects//locations//agents//flows//pages/`. Only one of `flow` and `page`
+         * should be set to indicate the starting point of the test case. If neither
+         * is set, the test case will start with start page on the default start flow.
+         *
+         * @var string
+         */
+        public $page;
+        /**
+         * Session parameters to be compared when calculating differences.
+         *
+         * @var string[]
+         */
+        public $trackingParameters;
+        /**
+         * Flow name to start the test case with. Format:
+         * `projects//locations//agents//flows/`. Only one of `flow` and `page` should
+         * be set to indicate the starting point of the test case. If neither is set,
+         * the test case will start with start page on the default start flow.
+         *
+         * @param string $flow
+         */
+        public function setFlow($flow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlow()
+        {
+        }
+        /**
+         * The page to start the test case with. Format:
+         * `projects//locations//agents//flows//pages/`. Only one of `flow` and `page`
+         * should be set to indicate the starting point of the test case. If neither
+         * is set, the test case will start with start page on the default start flow.
+         *
+         * @param string $page
+         */
+        public function setPage($page)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPage()
+        {
+        }
+        /**
+         * Session parameters to be compared when calculating differences.
+         *
+         * @param string[] $trackingParameters
+         */
+        public function setTrackingParameters($trackingParameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTrackingParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TestConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlow()
-    {
-    }
-    /**
-     * The page to start the test case with. Format:
-     * `projects//locations//agents//flows//pages/`. Only one of `flow` and `page`
-     * should be set to indicate the starting point of the test case. If neither
-     * is set, the test case will start with start page on the default start flow.
-     *
-     * @param string $page
-     */
-    public function setPage($page)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPage()
-    {
-    }
-    /**
-     * Session parameters to be compared when calculating differences.
-     *
-     * @param string[] $trackingParameters
-     */
-    public function setTrackingParameters($trackingParameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTrackingParameters()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TestConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TestConfig
     {
     }
 }

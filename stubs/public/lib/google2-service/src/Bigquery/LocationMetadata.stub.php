@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class LocationMetadata extends \Google\Model
-{
-    /**
-     * The legacy BigQuery location ID, e.g. “EU” for the “europe” location. This
-     * is for any API consumers that need the legacy “US” and “EU” locations.
-     *
-     * @var string
-     */
-    public $legacyLocationId;
-    /**
-     * The legacy BigQuery location ID, e.g. “EU” for the “europe” location. This
-     * is for any API consumers that need the legacy “US” and “EU” locations.
-     *
-     * @param string $legacyLocationId
-     */
-    public function setLegacyLocationId($legacyLocationId)
+namespace Google\Service\Bigquery {
+    class LocationMetadata extends \Google\Model
     {
+        /**
+         * The legacy BigQuery location ID, e.g. “EU” for the “europe” location. This
+         * is for any API consumers that need the legacy “US” and “EU” locations.
+         *
+         * @var string
+         */
+        public $legacyLocationId;
+        /**
+         * The legacy BigQuery location ID, e.g. “EU” for the “europe” location. This
+         * is for any API consumers that need the legacy “US” and “EU” locations.
+         *
+         * @param string $legacyLocationId
+         */
+        public function setLegacyLocationId($legacyLocationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegacyLocationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacyLocationId()
+    class Google_Service_Bigquery_LocationMetadata extends \Google\Service\Bigquery\LocationMetadata
     {
     }
 }

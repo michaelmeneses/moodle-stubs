@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class ResourcesCount extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $certificates;
-    /**
-     * @var string
-     */
-    public $computeTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setCertificates($certificates)
+namespace Google\Service\CertificateManager {
+    class ResourcesCount extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $certificates;
+        /**
+         * @var string
+         */
+        public $computeTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setCertificates($certificates)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificates()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComputeTime($computeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComputeTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\ResourcesCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificates()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComputeTime($computeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComputeTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CertificateManager_ResourcesCount extends \Google\Service\CertificateManager\ResourcesCount
     {
     }
 }

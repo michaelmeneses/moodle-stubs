@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Fingerprint extends \Google\Collection
-{
-    protected $collection_key = 'v2Blob';
-    /**
-     * Required. The layer ID of the final layer in the Docker image's v1
-     * representation.
-     *
-     * @var string
-     */
-    public $v1Name;
-    /**
-     * Required. The ordered list of v2 blobs that represent a given image.
-     *
-     * @var string[]
-     */
-    public $v2Blob;
-    /**
-     * Output only. The name of the image's v2 blobs computed via: [bottom] :=
-     * v2_blobbottom := sha256(v2_blob[N] + " " + v2_name[N+1]) Only the name of
-     * the final blob is kept.
-     *
-     * @var string
-     */
-    public $v2Name;
-    /**
-     * Required. The layer ID of the final layer in the Docker image's v1
-     * representation.
-     *
-     * @param string $v1Name
-     */
-    public function setV1Name($v1Name)
+namespace Google\Service\ContainerAnalysis {
+    class Fingerprint extends \Google\Collection
     {
+        protected $collection_key = 'v2Blob';
+        /**
+         * Required. The layer ID of the final layer in the Docker image's v1
+         * representation.
+         *
+         * @var string
+         */
+        public $v1Name;
+        /**
+         * Required. The ordered list of v2 blobs that represent a given image.
+         *
+         * @var string[]
+         */
+        public $v2Blob;
+        /**
+         * Output only. The name of the image's v2 blobs computed via: [bottom] :=
+         * v2_blobbottom := sha256(v2_blob[N] + " " + v2_name[N+1]) Only the name of
+         * the final blob is kept.
+         *
+         * @var string
+         */
+        public $v2Name;
+        /**
+         * Required. The layer ID of the final layer in the Docker image's v1
+         * representation.
+         *
+         * @param string $v1Name
+         */
+        public function setV1Name($v1Name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getV1Name()
+        {
+        }
+        /**
+         * Required. The ordered list of v2 blobs that represent a given image.
+         *
+         * @param string[] $v2Blob
+         */
+        public function setV2Blob($v2Blob)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getV2Blob()
+        {
+        }
+        /**
+         * Output only. The name of the image's v2 blobs computed via: [bottom] :=
+         * v2_blobbottom := sha256(v2_blob[N] + " " + v2_name[N+1]) Only the name of
+         * the final blob is kept.
+         *
+         * @param string $v2Name
+         */
+        public function setV2Name($v2Name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getV2Name()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Fingerprint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getV1Name()
-    {
-    }
-    /**
-     * Required. The ordered list of v2 blobs that represent a given image.
-     *
-     * @param string[] $v2Blob
-     */
-    public function setV2Blob($v2Blob)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getV2Blob()
-    {
-    }
-    /**
-     * Output only. The name of the image's v2 blobs computed via: [bottom] :=
-     * v2_blobbottom := sha256(v2_blob[N] + " " + v2_name[N+1]) Only the name of
-     * the final blob is kept.
-     *
-     * @param string $v2Name
-     */
-    public function setV2Name($v2Name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getV2Name()
+    class Google_Service_ContainerAnalysis_Fingerprint extends \Google\Service\ContainerAnalysis\Fingerprint
     {
     }
 }

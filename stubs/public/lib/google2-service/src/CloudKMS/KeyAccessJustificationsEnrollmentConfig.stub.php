@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class KeyAccessJustificationsEnrollmentConfig extends \Google\Model
-{
-    /**
-     * Whether the project has KAJ logging enabled.
-     *
-     * @var bool
-     */
-    public $auditLogging;
-    /**
-     * Whether the project is enrolled in KAJ policy enforcement.
-     *
-     * @var bool
-     */
-    public $policyEnforcement;
-    /**
-     * Whether the project has KAJ logging enabled.
-     *
-     * @param bool $auditLogging
-     */
-    public function setAuditLogging($auditLogging)
+namespace Google\Service\CloudKMS {
+    class KeyAccessJustificationsEnrollmentConfig extends \Google\Model
     {
+        /**
+         * Whether the project has KAJ logging enabled.
+         *
+         * @var bool
+         */
+        public $auditLogging;
+        /**
+         * Whether the project is enrolled in KAJ policy enforcement.
+         *
+         * @var bool
+         */
+        public $policyEnforcement;
+        /**
+         * Whether the project has KAJ logging enabled.
+         *
+         * @param bool $auditLogging
+         */
+        public function setAuditLogging($auditLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAuditLogging()
+        {
+        }
+        /**
+         * Whether the project is enrolled in KAJ policy enforcement.
+         *
+         * @param bool $policyEnforcement
+         */
+        public function setPolicyEnforcement($policyEnforcement)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPolicyEnforcement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudKMS\KeyAccessJustificationsEnrollmentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditLogging()
-    {
-    }
-    /**
-     * Whether the project is enrolled in KAJ policy enforcement.
-     *
-     * @param bool $policyEnforcement
-     */
-    public function setPolicyEnforcement($policyEnforcement)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPolicyEnforcement()
+    class Google_Service_CloudKMS_KeyAccessJustificationsEnrollmentConfig extends \Google\Service\CloudKMS\KeyAccessJustificationsEnrollmentConfig
     {
     }
 }

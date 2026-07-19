@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckStateMetadata extends \Google\Collection
-{
-    protected $collection_key = 'badges';
-    /**
-     * Indicators related to the check state.
-     *
-     * @var string[]
-     */
-    public $badges;
-    /**
-     * The time when the check first started failing.
-     *
-     * @var string
-     */
-    public $firstFailingTime;
-    /**
-     * The last time the check failed.
-     *
-     * @var string
-     */
-    public $lastFailingTime;
-    /**
-     * Indicators related to the check state.
-     *
-     * @param string[] $badges
-     */
-    public function setBadges($badges)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckStateMetadata extends \Google\Collection
     {
+        protected $collection_key = 'badges';
+        /**
+         * Indicators related to the check state.
+         *
+         * @var string[]
+         */
+        public $badges;
+        /**
+         * The time when the check first started failing.
+         *
+         * @var string
+         */
+        public $firstFailingTime;
+        /**
+         * The last time the check failed.
+         *
+         * @var string
+         */
+        public $lastFailingTime;
+        /**
+         * Indicators related to the check state.
+         *
+         * @param string[] $badges
+         */
+        public function setBadges($badges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBadges()
+        {
+        }
+        /**
+         * The time when the check first started failing.
+         *
+         * @param string $firstFailingTime
+         */
+        public function setFirstFailingTime($firstFailingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstFailingTime()
+        {
+        }
+        /**
+         * The last time the check failed.
+         *
+         * @param string $lastFailingTime
+         */
+        public function setLastFailingTime($lastFailingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastFailingTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckStateMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBadges()
-    {
-    }
-    /**
-     * The time when the check first started failing.
-     *
-     * @param string $firstFailingTime
-     */
-    public function setFirstFailingTime($firstFailingTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstFailingTime()
-    {
-    }
-    /**
-     * The last time the check failed.
-     *
-     * @param string $lastFailingTime
-     */
-    public function setLastFailingTime($lastFailingTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastFailingTime()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckStateMetadata extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckStateMetadata
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1DeniedAccessAccess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $permission;
-    /**
-     * @var string
-     */
-    public $role;
-    /**
-     * @param string
-     */
-    public function setPermission($permission)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1DeniedAccessAccess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $permission;
+        /**
+         * @var string
+         */
+        public $role;
+        /**
+         * @param string
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermission()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermission()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1DeniedAccessAccess extends \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessAccess
     {
     }
 }

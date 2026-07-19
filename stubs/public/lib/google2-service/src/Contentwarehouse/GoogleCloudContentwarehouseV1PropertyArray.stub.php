@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1PropertyArray extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = GoogleCloudContentwarehouseV1Property::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * List of property values.
-     *
-     * @param GoogleCloudContentwarehouseV1Property[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1PropertyArray extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = GoogleCloudContentwarehouseV1Property::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * List of property values.
+         *
+         * @param GoogleCloudContentwarehouseV1Property[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Property[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1Property[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1PropertyArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1PropertyArray extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1PropertyArray
     {
     }
 }

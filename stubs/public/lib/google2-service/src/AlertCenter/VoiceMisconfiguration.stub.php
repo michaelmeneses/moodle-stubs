@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class VoiceMisconfiguration extends \Google\Model
-{
-    /**
-     * Entity type wasn't set.
-     */
-    public const ENTITY_TYPE_ENTITY_TYPE_UNSPECIFIED = 'ENTITY_TYPE_UNSPECIFIED';
-    /**
-     * Invalid auto attendant.
-     */
-    public const ENTITY_TYPE_AUTO_ATTENDANT = 'AUTO_ATTENDANT';
-    /**
-     * Invalid ring group.
-     */
-    public const ENTITY_TYPE_RING_GROUP = 'RING_GROUP';
-    /**
-     * Name of the entity whose configuration is now invalid.
-     *
-     * @var string
-     */
-    public $entityName;
-    /**
-     * Type of the entity whose configuration is now invalid.
-     *
-     * @var string
-     */
-    public $entityType;
-    /**
-     * Link that the admin can follow to fix the issue.
-     *
-     * @var string
-     */
-    public $fixUri;
-    protected $membersMisconfigurationType = TransferMisconfiguration::class;
-    protected $membersMisconfigurationDataType = '';
-    protected $transferMisconfigurationType = TransferMisconfiguration::class;
-    protected $transferMisconfigurationDataType = '';
-    protected $voicemailMisconfigurationType = VoicemailMisconfiguration::class;
-    protected $voicemailMisconfigurationDataType = '';
-    /**
-     * Name of the entity whose configuration is now invalid.
-     *
-     * @param string $entityName
-     */
-    public function setEntityName($entityName)
+namespace Google\Service\AlertCenter {
+    class VoiceMisconfiguration extends \Google\Model
     {
+        /**
+         * Entity type wasn't set.
+         */
+        public const ENTITY_TYPE_ENTITY_TYPE_UNSPECIFIED = 'ENTITY_TYPE_UNSPECIFIED';
+        /**
+         * Invalid auto attendant.
+         */
+        public const ENTITY_TYPE_AUTO_ATTENDANT = 'AUTO_ATTENDANT';
+        /**
+         * Invalid ring group.
+         */
+        public const ENTITY_TYPE_RING_GROUP = 'RING_GROUP';
+        /**
+         * Name of the entity whose configuration is now invalid.
+         *
+         * @var string
+         */
+        public $entityName;
+        /**
+         * Type of the entity whose configuration is now invalid.
+         *
+         * @var string
+         */
+        public $entityType;
+        /**
+         * Link that the admin can follow to fix the issue.
+         *
+         * @var string
+         */
+        public $fixUri;
+        protected $membersMisconfigurationType = TransferMisconfiguration::class;
+        protected $membersMisconfigurationDataType = '';
+        protected $transferMisconfigurationType = TransferMisconfiguration::class;
+        protected $transferMisconfigurationDataType = '';
+        protected $voicemailMisconfigurationType = VoicemailMisconfiguration::class;
+        protected $voicemailMisconfigurationDataType = '';
+        /**
+         * Name of the entity whose configuration is now invalid.
+         *
+         * @param string $entityName
+         */
+        public function setEntityName($entityName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityName()
+        {
+        }
+        /**
+         * Type of the entity whose configuration is now invalid.
+         *
+         * Accepted values: ENTITY_TYPE_UNSPECIFIED, AUTO_ATTENDANT, RING_GROUP
+         *
+         * @param self::ENTITY_TYPE_* $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return self::ENTITY_TYPE_*
+         */
+        public function getEntityType()
+        {
+        }
+        /**
+         * Link that the admin can follow to fix the issue.
+         *
+         * @param string $fixUri
+         */
+        public function setFixUri($fixUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFixUri()
+        {
+        }
+        /**
+         * Issue(s) with members of a ring group.
+         *
+         * @param TransferMisconfiguration $membersMisconfiguration
+         */
+        public function setMembersMisconfiguration(TransferMisconfiguration $membersMisconfiguration)
+        {
+        }
+        /**
+         * @return TransferMisconfiguration
+         */
+        public function getMembersMisconfiguration()
+        {
+        }
+        /**
+         * Issue(s) with transferring or forwarding to an external entity.
+         *
+         * @param TransferMisconfiguration $transferMisconfiguration
+         */
+        public function setTransferMisconfiguration(TransferMisconfiguration $transferMisconfiguration)
+        {
+        }
+        /**
+         * @return TransferMisconfiguration
+         */
+        public function getTransferMisconfiguration()
+        {
+        }
+        /**
+         * Issue(s) with sending to voicemail.
+         *
+         * @param VoicemailMisconfiguration $voicemailMisconfiguration
+         */
+        public function setVoicemailMisconfiguration(VoicemailMisconfiguration $voicemailMisconfiguration)
+        {
+        }
+        /**
+         * @return VoicemailMisconfiguration
+         */
+        public function getVoicemailMisconfiguration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\VoiceMisconfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityName()
-    {
-    }
-    /**
-     * Type of the entity whose configuration is now invalid.
-     *
-     * Accepted values: ENTITY_TYPE_UNSPECIFIED, AUTO_ATTENDANT, RING_GROUP
-     *
-     * @param self::ENTITY_TYPE_* $entityType
-     */
-    public function setEntityType($entityType)
-    {
-    }
-    /**
-     * @return self::ENTITY_TYPE_*
-     */
-    public function getEntityType()
-    {
-    }
-    /**
-     * Link that the admin can follow to fix the issue.
-     *
-     * @param string $fixUri
-     */
-    public function setFixUri($fixUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFixUri()
-    {
-    }
-    /**
-     * Issue(s) with members of a ring group.
-     *
-     * @param TransferMisconfiguration $membersMisconfiguration
-     */
-    public function setMembersMisconfiguration(TransferMisconfiguration $membersMisconfiguration)
-    {
-    }
-    /**
-     * @return TransferMisconfiguration
-     */
-    public function getMembersMisconfiguration()
-    {
-    }
-    /**
-     * Issue(s) with transferring or forwarding to an external entity.
-     *
-     * @param TransferMisconfiguration $transferMisconfiguration
-     */
-    public function setTransferMisconfiguration(TransferMisconfiguration $transferMisconfiguration)
-    {
-    }
-    /**
-     * @return TransferMisconfiguration
-     */
-    public function getTransferMisconfiguration()
-    {
-    }
-    /**
-     * Issue(s) with sending to voicemail.
-     *
-     * @param VoicemailMisconfiguration $voicemailMisconfiguration
-     */
-    public function setVoicemailMisconfiguration(VoicemailMisconfiguration $voicemailMisconfiguration)
-    {
-    }
-    /**
-     * @return VoicemailMisconfiguration
-     */
-    public function getVoicemailMisconfiguration()
+    class Google_Service_AlertCenter_VoiceMisconfiguration extends \Google\Service\AlertCenter\VoiceMisconfiguration
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryWorkloadPropertiesSoftwareComponentProperties extends \Google\Model
-{
-    /**
-     * Optional. The component's minor version.
-     *
-     * @var string
-     */
-    public $extVersion;
-    /**
-     * Optional. Name of the component.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The component's type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. The component's major version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. The component's minor version.
-     *
-     * @param string $extVersion
-     */
-    public function setExtVersion($extVersion)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryWorkloadPropertiesSoftwareComponentProperties extends \Google\Model
     {
+        /**
+         * Optional. The component's minor version.
+         *
+         * @var string
+         */
+        public $extVersion;
+        /**
+         * Optional. Name of the component.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The component's type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. The component's major version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. The component's minor version.
+         *
+         * @param string $extVersion
+         */
+        public function setExtVersion($extVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtVersion()
+        {
+        }
+        /**
+         * Optional. Name of the component.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The component's type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Optional. The component's major version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryWorkloadPropertiesSoftwareComponentProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtVersion()
-    {
-    }
-    /**
-     * Optional. Name of the component.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The component's type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Optional. The component's major version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_WorkloadManager_SapDiscoveryWorkloadPropertiesSoftwareComponentProperties extends \Google\Service\WorkloadManager\SapDiscoveryWorkloadPropertiesSoftwareComponentProperties
     {
     }
 }

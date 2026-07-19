@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadResourceInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $resourceId;
-    /**
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * @param string
-     */
-    public function setResourceId($resourceId)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadResourceInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $resourceId;
+        /**
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * @param string
+         */
+        public function setResourceId($resourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsVersioningV1mainWorkloadResourceInfo extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadResourceInfo
     {
     }
 }

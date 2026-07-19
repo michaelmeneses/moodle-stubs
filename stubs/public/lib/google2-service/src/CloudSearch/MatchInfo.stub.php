@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MatchInfo extends \Google\Collection
-{
-    protected $collection_key = 'matchingImageReferenceKey';
-    /**
-     * @var string[]
-     */
-    public $matchingImageReferenceKey;
-    /**
-     * @param string[]
-     */
-    public function setMatchingImageReferenceKey($matchingImageReferenceKey)
+namespace Google\Service\CloudSearch {
+    class MatchInfo extends \Google\Collection
     {
+        protected $collection_key = 'matchingImageReferenceKey';
+        /**
+         * @var string[]
+         */
+        public $matchingImageReferenceKey;
+        /**
+         * @param string[]
+         */
+        public function setMatchingImageReferenceKey($matchingImageReferenceKey)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMatchingImageReferenceKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\MatchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchingImageReferenceKey()
+    class Google_Service_CloudSearch_MatchInfo extends \Google\Service\CloudSearch\MatchInfo
     {
     }
 }

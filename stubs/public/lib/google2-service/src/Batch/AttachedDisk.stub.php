@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AttachedDisk extends \Google\Model
-{
-    /**
-     * Device name that the guest operating system will see. It is used by
-     * Runnable.volumes field to mount disks. So please specify the device_name if
-     * you want Batch to help mount the disk, and it should match the device_name
-     * field in volumes.
-     *
-     * @var string
-     */
-    public $deviceName;
-    /**
-     * Name of an existing PD.
-     *
-     * @var string
-     */
-    public $existingDisk;
-    protected $newDiskType = Disk::class;
-    protected $newDiskDataType = '';
-    /**
-     * Device name that the guest operating system will see. It is used by
-     * Runnable.volumes field to mount disks. So please specify the device_name if
-     * you want Batch to help mount the disk, and it should match the device_name
-     * field in volumes.
-     *
-     * @param string $deviceName
-     */
-    public function setDeviceName($deviceName)
+namespace Google\Service\Batch {
+    class AttachedDisk extends \Google\Model
     {
+        /**
+         * Device name that the guest operating system will see. It is used by
+         * Runnable.volumes field to mount disks. So please specify the device_name if
+         * you want Batch to help mount the disk, and it should match the device_name
+         * field in volumes.
+         *
+         * @var string
+         */
+        public $deviceName;
+        /**
+         * Name of an existing PD.
+         *
+         * @var string
+         */
+        public $existingDisk;
+        protected $newDiskType = Disk::class;
+        protected $newDiskDataType = '';
+        /**
+         * Device name that the guest operating system will see. It is used by
+         * Runnable.volumes field to mount disks. So please specify the device_name if
+         * you want Batch to help mount the disk, and it should match the device_name
+         * field in volumes.
+         *
+         * @param string $deviceName
+         */
+        public function setDeviceName($deviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceName()
+        {
+        }
+        /**
+         * Name of an existing PD.
+         *
+         * @param string $existingDisk
+         */
+        public function setExistingDisk($existingDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExistingDisk()
+        {
+        }
+        /**
+         * @param Disk $newDisk
+         */
+        public function setNewDisk(Disk $newDisk)
+        {
+        }
+        /**
+         * @return Disk
+         */
+        public function getNewDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AttachedDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceName()
-    {
-    }
-    /**
-     * Name of an existing PD.
-     *
-     * @param string $existingDisk
-     */
-    public function setExistingDisk($existingDisk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExistingDisk()
-    {
-    }
-    /**
-     * @param Disk $newDisk
-     */
-    public function setNewDisk(Disk $newDisk)
-    {
-    }
-    /**
-     * @return Disk
-     */
-    public function getNewDisk()
+    class Google_Service_Batch_AttachedDisk extends \Google\Service\Batch\AttachedDisk
     {
     }
 }

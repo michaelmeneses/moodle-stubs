@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessQA;
-
-class ListAnswersResponse extends \Google\Collection
-{
-    protected $collection_key = 'answers';
-    protected $answersType = Answer::class;
-    protected $answersDataType = 'array';
-    /**
-     * If the number of answers exceeds the requested max page size, this field is
-     * populated with a token to fetch the next page of answers on a subsequent
-     * call. If there are no more answers, this field is not present in the
-     * response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of answers posted for this question across all pages.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The requested answers.
-     *
-     * @param Answer[] $answers
-     */
-    public function setAnswers($answers)
+namespace Google\Service\MyBusinessQA {
+    class ListAnswersResponse extends \Google\Collection
     {
+        protected $collection_key = 'answers';
+        protected $answersType = Answer::class;
+        protected $answersDataType = 'array';
+        /**
+         * If the number of answers exceeds the requested max page size, this field is
+         * populated with a token to fetch the next page of answers on a subsequent
+         * call. If there are no more answers, this field is not present in the
+         * response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of answers posted for this question across all pages.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The requested answers.
+         *
+         * @param Answer[] $answers
+         */
+        public function setAnswers($answers)
+        {
+        }
+        /**
+         * @return Answer[]
+         */
+        public function getAnswers()
+        {
+        }
+        /**
+         * If the number of answers exceeds the requested max page size, this field is
+         * populated with a token to fetch the next page of answers on a subsequent
+         * call. If there are no more answers, this field is not present in the
+         * response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of answers posted for this question across all pages.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Answer[]
+     * Runtime class alias of \Google\Service\MyBusinessQA\ListAnswersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswers()
-    {
-    }
-    /**
-     * If the number of answers exceeds the requested max page size, this field is
-     * populated with a token to fetch the next page of answers on a subsequent
-     * call. If there are no more answers, this field is not present in the
-     * response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of answers posted for this question across all pages.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_MyBusinessQA_ListAnswersResponse extends \Google\Service\MyBusinessQA\ListAnswersResponse
     {
     }
 }

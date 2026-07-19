@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DataMaskingStatistics extends \Google\Model
-{
-    /**
-     * Whether any accessed data was protected by the data masking.
-     *
-     * @var bool
-     */
-    public $dataMaskingApplied;
-    /**
-     * Whether any accessed data was protected by the data masking.
-     *
-     * @param bool $dataMaskingApplied
-     */
-    public function setDataMaskingApplied($dataMaskingApplied)
+namespace Google\Service\Bigquery {
+    class DataMaskingStatistics extends \Google\Model
     {
+        /**
+         * Whether any accessed data was protected by the data masking.
+         *
+         * @var bool
+         */
+        public $dataMaskingApplied;
+        /**
+         * Whether any accessed data was protected by the data masking.
+         *
+         * @param bool $dataMaskingApplied
+         */
+        public function setDataMaskingApplied($dataMaskingApplied)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDataMaskingApplied()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Bigquery\DataMaskingStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataMaskingApplied()
+    class Google_Service_Bigquery_DataMaskingStatistics extends \Google\Service\Bigquery\DataMaskingStatistics
     {
     }
 }

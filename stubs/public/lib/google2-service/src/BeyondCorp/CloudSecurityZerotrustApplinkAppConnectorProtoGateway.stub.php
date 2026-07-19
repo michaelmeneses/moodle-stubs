@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class CloudSecurityZerotrustApplinkAppConnectorProtoGateway extends \Google\Model
-{
-    /**
-     * interface specifies the network interface of the gateway to connect to.
-     *
-     * @var string
-     */
-    public $interface;
-    /**
-     * name is the name of an instance running a gateway. It is the unique ID for
-     * a gateway. All gateways under the same connection have the same prefix. It
-     * is derived from the gateway URL. For example, name=${instance} assuming a
-     * gateway URL. https://www.googleapis.com/compute/${version}/projects/${proje
-     * ct}/zones/${zone}/instances/${instance}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * port specifies the port of the gateway for tunnel connections from the
-     * connectors.
-     *
-     * @var string
-     */
-    public $port;
-    /**
-     * project is the tenant project the gateway belongs to. Different from the
-     * project in the connection, it is a BeyondCorpAPI internally created project
-     * to manage all the gateways. It is sharing the same network with the
-     * consumer project user owned. It is derived from the gateway URL. For
-     * example, project=${project} assuming a gateway URL. https://www.googleapis.
-     * com/compute/${version}/projects/${project}/zones/${zone}/instances/${instan
-     * ce}
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * self_link is the gateway URL in the form https://www.googleapis.com/compute
-     * /${version}/projects/${project}/zones/${zone}/instances/${instance}
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * zone represents the zone the instance belongs. It is derived from the
-     * gateway URL. For example, zone=${zone} assuming a gateway URL. https://www.
-     * googleapis.com/compute/${version}/projects/${project}/zones/${zone}/instanc
-     * es/${instance}
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * interface specifies the network interface of the gateway to connect to.
-     *
-     * @param string $interface
-     */
-    public function setInterface($interface)
+namespace Google\Service\BeyondCorp {
+    class CloudSecurityZerotrustApplinkAppConnectorProtoGateway extends \Google\Model
     {
+        /**
+         * interface specifies the network interface of the gateway to connect to.
+         *
+         * @var string
+         */
+        public $interface;
+        /**
+         * name is the name of an instance running a gateway. It is the unique ID for
+         * a gateway. All gateways under the same connection have the same prefix. It
+         * is derived from the gateway URL. For example, name=${instance} assuming a
+         * gateway URL. https://www.googleapis.com/compute/${version}/projects/${proje
+         * ct}/zones/${zone}/instances/${instance}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * port specifies the port of the gateway for tunnel connections from the
+         * connectors.
+         *
+         * @var string
+         */
+        public $port;
+        /**
+         * project is the tenant project the gateway belongs to. Different from the
+         * project in the connection, it is a BeyondCorpAPI internally created project
+         * to manage all the gateways. It is sharing the same network with the
+         * consumer project user owned. It is derived from the gateway URL. For
+         * example, project=${project} assuming a gateway URL. https://www.googleapis.
+         * com/compute/${version}/projects/${project}/zones/${zone}/instances/${instan
+         * ce}
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * self_link is the gateway URL in the form https://www.googleapis.com/compute
+         * /${version}/projects/${project}/zones/${zone}/instances/${instance}
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * zone represents the zone the instance belongs. It is derived from the
+         * gateway URL. For example, zone=${zone} assuming a gateway URL. https://www.
+         * googleapis.com/compute/${version}/projects/${project}/zones/${zone}/instanc
+         * es/${instance}
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * interface specifies the network interface of the gateway to connect to.
+         *
+         * @param string $interface
+         */
+        public function setInterface($interface)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterface()
+        {
+        }
+        /**
+         * name is the name of an instance running a gateway. It is the unique ID for
+         * a gateway. All gateways under the same connection have the same prefix. It
+         * is derived from the gateway URL. For example, name=${instance} assuming a
+         * gateway URL. https://www.googleapis.com/compute/${version}/projects/${proje
+         * ct}/zones/${zone}/instances/${instance}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * port specifies the port of the gateway for tunnel connections from the
+         * connectors.
+         *
+         * @param string $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * project is the tenant project the gateway belongs to. Different from the
+         * project in the connection, it is a BeyondCorpAPI internally created project
+         * to manage all the gateways. It is sharing the same network with the
+         * consumer project user owned. It is derived from the gateway URL. For
+         * example, project=${project} assuming a gateway URL. https://www.googleapis.
+         * com/compute/${version}/projects/${project}/zones/${zone}/instances/${instan
+         * ce}
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * self_link is the gateway URL in the form https://www.googleapis.com/compute
+         * /${version}/projects/${project}/zones/${zone}/instances/${instance}
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * zone represents the zone the instance belongs. It is derived from the
+         * gateway URL. For example, zone=${zone} assuming a gateway URL. https://www.
+         * googleapis.com/compute/${version}/projects/${project}/zones/${zone}/instanc
+         * es/${instance}
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\CloudSecurityZerotrustApplinkAppConnectorProtoGateway registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterface()
-    {
-    }
-    /**
-     * name is the name of an instance running a gateway. It is the unique ID for
-     * a gateway. All gateways under the same connection have the same prefix. It
-     * is derived from the gateway URL. For example, name=${instance} assuming a
-     * gateway URL. https://www.googleapis.com/compute/${version}/projects/${proje
-     * ct}/zones/${zone}/instances/${instance}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * port specifies the port of the gateway for tunnel connections from the
-     * connectors.
-     *
-     * @param string $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * project is the tenant project the gateway belongs to. Different from the
-     * project in the connection, it is a BeyondCorpAPI internally created project
-     * to manage all the gateways. It is sharing the same network with the
-     * consumer project user owned. It is derived from the gateway URL. For
-     * example, project=${project} assuming a gateway URL. https://www.googleapis.
-     * com/compute/${version}/projects/${project}/zones/${zone}/instances/${instan
-     * ce}
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * self_link is the gateway URL in the form https://www.googleapis.com/compute
-     * /${version}/projects/${project}/zones/${zone}/instances/${instance}
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * zone represents the zone the instance belongs. It is derived from the
-     * gateway URL. For example, zone=${zone} assuming a gateway URL. https://www.
-     * googleapis.com/compute/${version}/projects/${project}/zones/${zone}/instanc
-     * es/${instance}
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_BeyondCorp_CloudSecurityZerotrustApplinkAppConnectorProtoGateway extends \Google\Service\BeyondCorp\CloudSecurityZerotrustApplinkAppConnectorProtoGateway
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class EvaluateGkePolicyRequest extends \Google\Model
-{
-    /**
-     * Required. JSON or YAML blob representing a Kubernetes resource.
-     *
-     * @var array[]
-     */
-    public $resource;
-    /**
-     * Required. JSON or YAML blob representing a Kubernetes resource.
-     *
-     * @param array[] $resource
-     */
-    public function setResource($resource)
+namespace Google\Service\BinaryAuthorization {
+    class EvaluateGkePolicyRequest extends \Google\Model
     {
+        /**
+         * Required. JSON or YAML blob representing a Kubernetes resource.
+         *
+         * @var array[]
+         */
+        public $resource;
+        /**
+         * Required. JSON or YAML blob representing a Kubernetes resource.
+         *
+         * @param array[] $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\EvaluateGkePolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_BinaryAuthorization_EvaluateGkePolicyRequest extends \Google\Service\BinaryAuthorization\EvaluateGkePolicyRequest
     {
     }
 }

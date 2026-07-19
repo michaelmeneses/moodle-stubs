@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ListFeedsResponse extends \Google\Collection
-{
-    protected $collection_key = 'feeds';
-    protected $feedsType = Feed::class;
-    protected $feedsDataType = 'array';
-    /**
-     * A list of feeds.
-     *
-     * @param Feed[] $feeds
-     */
-    public function setFeeds($feeds)
+namespace Google\Service\CloudAsset {
+    class ListFeedsResponse extends \Google\Collection
     {
+        protected $collection_key = 'feeds';
+        protected $feedsType = Feed::class;
+        protected $feedsDataType = 'array';
+        /**
+         * A list of feeds.
+         *
+         * @param Feed[] $feeds
+         */
+        public function setFeeds($feeds)
+        {
+        }
+        /**
+         * @return Feed[]
+         */
+        public function getFeeds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feed[]
+     * Runtime class alias of \Google\Service\CloudAsset\ListFeedsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeeds()
+    class Google_Service_CloudAsset_ListFeedsResponse extends \Google\Service\CloudAsset\ListFeedsResponse
     {
     }
 }

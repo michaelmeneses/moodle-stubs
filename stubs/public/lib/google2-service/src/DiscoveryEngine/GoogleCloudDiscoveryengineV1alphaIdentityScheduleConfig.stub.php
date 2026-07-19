@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaIdentityScheduleConfig extends \Google\Model
-{
-    protected $nextSyncTimeType = GoogleTypeDateTime::class;
-    protected $nextSyncTimeDataType = '';
-    /**
-     * Optional. The refresh interval to sync the Access Control List information
-     * for the documents ingested by this connector. If not set, the access
-     * control list will be refreshed at the default interval of 30 minutes. The
-     * identity refresh interval can be at least 30 minutes and at most 7 days.
-     *
-     * @var string
-     */
-    public $refreshInterval;
-    /**
-     * Optional. The UTC time when the next data sync is expected to start for the
-     * Data Connector. Customers are only able to specify the hour and minute to
-     * schedule the data sync. This is utilized when the data connector has a
-     * refresh interval greater than 1 day.
-     *
-     * @param GoogleTypeDateTime $nextSyncTime
-     */
-    public function setNextSyncTime(GoogleTypeDateTime $nextSyncTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaIdentityScheduleConfig extends \Google\Model
     {
+        protected $nextSyncTimeType = GoogleTypeDateTime::class;
+        protected $nextSyncTimeDataType = '';
+        /**
+         * Optional. The refresh interval to sync the Access Control List information
+         * for the documents ingested by this connector. If not set, the access
+         * control list will be refreshed at the default interval of 30 minutes. The
+         * identity refresh interval can be at least 30 minutes and at most 7 days.
+         *
+         * @var string
+         */
+        public $refreshInterval;
+        /**
+         * Optional. The UTC time when the next data sync is expected to start for the
+         * Data Connector. Customers are only able to specify the hour and minute to
+         * schedule the data sync. This is utilized when the data connector has a
+         * refresh interval greater than 1 day.
+         *
+         * @param GoogleTypeDateTime $nextSyncTime
+         */
+        public function setNextSyncTime(GoogleTypeDateTime $nextSyncTime)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getNextSyncTime()
+        {
+        }
+        /**
+         * Optional. The refresh interval to sync the Access Control List information
+         * for the documents ingested by this connector. If not set, the access
+         * control list will be refreshed at the default interval of 30 minutes. The
+         * identity refresh interval can be at least 30 minutes and at most 7 days.
+         *
+         * @param string $refreshInterval
+         */
+        public function setRefreshInterval($refreshInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDateTime
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaIdentityScheduleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextSyncTime()
-    {
-    }
-    /**
-     * Optional. The refresh interval to sync the Access Control List information
-     * for the documents ingested by this connector. If not set, the access
-     * control list will be refreshed at the default interval of 30 minutes. The
-     * identity refresh interval can be at least 30 minutes and at most 7 days.
-     *
-     * @param string $refreshInterval
-     */
-    public function setRefreshInterval($refreshInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshInterval()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaIdentityScheduleConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaIdentityScheduleConfig
     {
     }
 }

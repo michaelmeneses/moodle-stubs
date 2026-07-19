@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZonePrivateVisibilityConfigGKECluster extends \Google\Model
-{
-    /**
-     * The resource name of the cluster to bind this ManagedZone to. This should
-     * be specified in the format like: projects/locations/clusters. This is
-     * referenced from GKE projects.locations.clusters.get API:
-     * https://cloud.google.com/kubernetes-
-     * engine/docs/reference/rest/v1/projects.locations.clusters/get
-     *
-     * @var string
-     */
-    public $gkeClusterName;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * The resource name of the cluster to bind this ManagedZone to. This should
-     * be specified in the format like: projects/locations/clusters. This is
-     * referenced from GKE projects.locations.clusters.get API:
-     * https://cloud.google.com/kubernetes-
-     * engine/docs/reference/rest/v1/projects.locations.clusters/get
-     *
-     * @param string $gkeClusterName
-     */
-    public function setGkeClusterName($gkeClusterName)
+namespace Google\Service\Dns {
+    class ManagedZonePrivateVisibilityConfigGKECluster extends \Google\Model
     {
+        /**
+         * The resource name of the cluster to bind this ManagedZone to. This should
+         * be specified in the format like: projects/locations/clusters. This is
+         * referenced from GKE projects.locations.clusters.get API:
+         * https://cloud.google.com/kubernetes-
+         * engine/docs/reference/rest/v1/projects.locations.clusters/get
+         *
+         * @var string
+         */
+        public $gkeClusterName;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * The resource name of the cluster to bind this ManagedZone to. This should
+         * be specified in the format like: projects/locations/clusters. This is
+         * referenced from GKE projects.locations.clusters.get API:
+         * https://cloud.google.com/kubernetes-
+         * engine/docs/reference/rest/v1/projects.locations.clusters/get
+         *
+         * @param string $gkeClusterName
+         */
+        public function setGkeClusterName($gkeClusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGkeClusterName()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZonePrivateVisibilityConfigGKECluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGkeClusterName()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dns_ManagedZonePrivateVisibilityConfigGKECluster extends \Google\Service\Dns\ManagedZonePrivateVisibilityConfigGKECluster
     {
     }
 }

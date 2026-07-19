@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaCodeScan extends \Google\Collection
-{
-    protected $collection_key = 'dataTypeClassifications';
-    protected $dataTypeClassificationsType = GoogleChecksRepoScanV1alphaCodeScanDataTypeClassification::class;
-    protected $dataTypeClassificationsDataType = 'array';
-    protected $sourceCodeType = GoogleChecksRepoScanV1alphaSourceCode::class;
-    protected $sourceCodeDataType = '';
-    /**
-     * Optional. Data type classification requests.
-     *
-     * @param GoogleChecksRepoScanV1alphaCodeScanDataTypeClassification[] $dataTypeClassifications
-     */
-    public function setDataTypeClassifications($dataTypeClassifications)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaCodeScan extends \Google\Collection
     {
+        protected $collection_key = 'dataTypeClassifications';
+        protected $dataTypeClassificationsType = GoogleChecksRepoScanV1alphaCodeScanDataTypeClassification::class;
+        protected $dataTypeClassificationsDataType = 'array';
+        protected $sourceCodeType = GoogleChecksRepoScanV1alphaSourceCode::class;
+        protected $sourceCodeDataType = '';
+        /**
+         * Optional. Data type classification requests.
+         *
+         * @param GoogleChecksRepoScanV1alphaCodeScanDataTypeClassification[] $dataTypeClassifications
+         */
+        public function setDataTypeClassifications($dataTypeClassifications)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaCodeScanDataTypeClassification[]
+         */
+        public function getDataTypeClassifications()
+        {
+        }
+        /**
+         * Required. Source code to analyze.
+         *
+         * @param GoogleChecksRepoScanV1alphaSourceCode $sourceCode
+         */
+        public function setSourceCode(GoogleChecksRepoScanV1alphaSourceCode $sourceCode)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaSourceCode
+         */
+        public function getSourceCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksRepoScanV1alphaCodeScanDataTypeClassification[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaCodeScan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataTypeClassifications()
-    {
-    }
-    /**
-     * Required. Source code to analyze.
-     *
-     * @param GoogleChecksRepoScanV1alphaSourceCode $sourceCode
-     */
-    public function setSourceCode(GoogleChecksRepoScanV1alphaSourceCode $sourceCode)
-    {
-    }
-    /**
-     * @return GoogleChecksRepoScanV1alphaSourceCode
-     */
-    public function getSourceCode()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaCodeScan extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaCodeScan
     {
     }
 }

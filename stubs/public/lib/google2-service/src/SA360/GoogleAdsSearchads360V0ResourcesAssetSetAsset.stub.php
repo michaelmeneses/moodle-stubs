@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAssetSetAsset extends \Google\Model
-{
-    /**
-     * The status has not been specified.
-     */
-    public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * The received value is not known in this version. This is a response-only
-     * value.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * The asset set asset is enabled.
-     */
-    public const STATUS_ENABLED = 'ENABLED';
-    /**
-     * The asset set asset is removed.
-     */
-    public const STATUS_REMOVED = 'REMOVED';
-    /**
-     * Immutable. The asset which this asset set asset is linking to.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Immutable. The asset set which this asset set asset is linking to.
-     *
-     * @var string
-     */
-    public $assetSet;
-    /**
-     * Immutable. The resource name of the asset set asset. Asset set asset
-     * resource names have the form:
-     * `customers/{customer_id}/assetSetAssets/{asset_set_id}~{asset_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The status of the asset set asset. Read-only.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Immutable. The asset which this asset set asset is linking to.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAssetSetAsset extends \Google\Model
     {
+        /**
+         * The status has not been specified.
+         */
+        public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * The received value is not known in this version. This is a response-only
+         * value.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * The asset set asset is enabled.
+         */
+        public const STATUS_ENABLED = 'ENABLED';
+        /**
+         * The asset set asset is removed.
+         */
+        public const STATUS_REMOVED = 'REMOVED';
+        /**
+         * Immutable. The asset which this asset set asset is linking to.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Immutable. The asset set which this asset set asset is linking to.
+         *
+         * @var string
+         */
+        public $assetSet;
+        /**
+         * Immutable. The resource name of the asset set asset. Asset set asset
+         * resource names have the form:
+         * `customers/{customer_id}/assetSetAssets/{asset_set_id}~{asset_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The status of the asset set asset. Read-only.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Immutable. The asset which this asset set asset is linking to.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Immutable. The asset set which this asset set asset is linking to.
+         *
+         * @param string $assetSet
+         */
+        public function setAssetSet($assetSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetSet()
+        {
+        }
+        /**
+         * Immutable. The resource name of the asset set asset. Asset set asset
+         * resource names have the form:
+         * `customers/{customer_id}/assetSetAssets/{asset_set_id}~{asset_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. The status of the asset set asset. Read-only.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetSetAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * Immutable. The asset set which this asset set asset is linking to.
-     *
-     * @param string $assetSet
-     */
-    public function setAssetSet($assetSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetSet()
-    {
-    }
-    /**
-     * Immutable. The resource name of the asset set asset. Asset set asset
-     * resource names have the form:
-     * `customers/{customer_id}/assetSetAssets/{asset_set_id}~{asset_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. The status of the asset set asset. Read-only.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAssetSetAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetSetAsset
     {
     }
 }

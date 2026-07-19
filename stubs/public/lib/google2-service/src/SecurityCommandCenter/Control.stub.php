@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Control extends \Google\Model
-{
-    /**
-     * Name of the Control
-     *
-     * @var string
-     */
-    public $controlName;
-    /**
-     * Display name of the control. For example, AU-02.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Name of the Control
-     *
-     * @param string $controlName
-     */
-    public function setControlName($controlName)
+namespace Google\Service\SecurityCommandCenter {
+    class Control extends \Google\Model
     {
+        /**
+         * Name of the Control
+         *
+         * @var string
+         */
+        public $controlName;
+        /**
+         * Display name of the control. For example, AU-02.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Name of the Control
+         *
+         * @param string $controlName
+         */
+        public function setControlName($controlName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlName()
+        {
+        }
+        /**
+         * Display name of the control. For example, AU-02.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Control registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlName()
-    {
-    }
-    /**
-     * Display name of the control. For example, AU-02.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_SecurityCommandCenter_Control extends \Google\Service\SecurityCommandCenter\Control
     {
     }
 }

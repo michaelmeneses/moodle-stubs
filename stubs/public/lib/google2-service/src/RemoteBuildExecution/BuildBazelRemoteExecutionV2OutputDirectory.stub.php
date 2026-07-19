@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2OutputDirectory extends \Google\Model
-{
-    public $path;
-    protected $treeDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $treeDigestDataType = '';
-    public function setPath($path)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2OutputDirectory extends \Google\Model
     {
+        public $path;
+        protected $treeDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $treeDigestDataType = '';
+        public function setPath($path)
+        {
+        }
+        public function getPath()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setTreeDigest(BuildBazelRemoteExecutionV2Digest $treeDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getTreeDigest()
+        {
+        }
     }
-    public function getPath()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2OutputDirectory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTreeDigest(BuildBazelRemoteExecutionV2Digest $treeDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getTreeDigest()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2OutputDirectory extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2OutputDirectory
     {
     }
 }

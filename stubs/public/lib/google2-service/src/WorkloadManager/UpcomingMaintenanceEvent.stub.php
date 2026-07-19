@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class UpcomingMaintenanceEvent extends \Google\Model
-{
-    /**
-     * Optional. End time
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Optional. Maintenance status
-     *
-     * @var string
-     */
-    public $maintenanceStatus;
-    /**
-     * Optional. Instance maintenance behavior. Could be "MIGRATE" or "TERMINATE".
-     *
-     * @var string
-     */
-    public $onHostMaintenance;
-    /**
-     * Optional. Start time
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. Type
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. End time
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\WorkloadManager {
+    class UpcomingMaintenanceEvent extends \Google\Model
     {
+        /**
+         * Optional. End time
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Optional. Maintenance status
+         *
+         * @var string
+         */
+        public $maintenanceStatus;
+        /**
+         * Optional. Instance maintenance behavior. Could be "MIGRATE" or "TERMINATE".
+         *
+         * @var string
+         */
+        public $onHostMaintenance;
+        /**
+         * Optional. Start time
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. Type
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. End time
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. Maintenance status
+         *
+         * @param string $maintenanceStatus
+         */
+        public function setMaintenanceStatus($maintenanceStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaintenanceStatus()
+        {
+        }
+        /**
+         * Optional. Instance maintenance behavior. Could be "MIGRATE" or "TERMINATE".
+         *
+         * @param string $onHostMaintenance
+         */
+        public function setOnHostMaintenance($onHostMaintenance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnHostMaintenance()
+        {
+        }
+        /**
+         * Optional. Start time
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Optional. Type
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\UpcomingMaintenanceEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. Maintenance status
-     *
-     * @param string $maintenanceStatus
-     */
-    public function setMaintenanceStatus($maintenanceStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaintenanceStatus()
-    {
-    }
-    /**
-     * Optional. Instance maintenance behavior. Could be "MIGRATE" or "TERMINATE".
-     *
-     * @param string $onHostMaintenance
-     */
-    public function setOnHostMaintenance($onHostMaintenance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnHostMaintenance()
-    {
-    }
-    /**
-     * Optional. Start time
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Optional. Type
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_WorkloadManager_UpcomingMaintenanceEvent extends \Google\Service\WorkloadManager\UpcomingMaintenanceEvent
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Detection extends \Google\Model
-{
-    /**
-     * The name of the binary associated with the memory hash signature detection.
-     *
-     * @var string
-     */
-    public $binary;
-    /**
-     * The percentage of memory page hashes in the signature that were matched.
-     *
-     * @var 
-     */
-    public $percentPagesMatched;
-    /**
-     * The name of the binary associated with the memory hash signature detection.
-     *
-     * @param string $binary
-     */
-    public function setBinary($binary)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Detection extends \Google\Model
     {
+        /**
+         * The name of the binary associated with the memory hash signature detection.
+         *
+         * @var string
+         */
+        public $binary;
+        /**
+         * The percentage of memory page hashes in the signature that were matched.
+         *
+         * @var 
+         */
+        public $percentPagesMatched;
+        /**
+         * The name of the binary associated with the memory hash signature detection.
+         *
+         * @param string $binary
+         */
+        public function setBinary($binary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinary()
+        {
+        }
+        public function setPercentPagesMatched($percentPagesMatched)
+        {
+        }
+        public function getPercentPagesMatched()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Detection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinary()
-    {
-    }
-    public function setPercentPagesMatched($percentPagesMatched)
-    {
-    }
-    public function getPercentPagesMatched()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Detection extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Detection
     {
     }
 }

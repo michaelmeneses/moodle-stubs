@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AutomationRuleCondition extends \Google\Model
-{
-    protected $targetsPresentConditionType = TargetsPresentCondition::class;
-    protected $targetsPresentConditionDataType = '';
-    protected $timedPromoteReleaseConditionType = TimedPromoteReleaseCondition::class;
-    protected $timedPromoteReleaseConditionDataType = '';
-    /**
-     * Optional. Details around targets enumerated in the rule.
-     *
-     * @param TargetsPresentCondition $targetsPresentCondition
-     */
-    public function setTargetsPresentCondition(TargetsPresentCondition $targetsPresentCondition)
+namespace Google\Service\CloudDeploy {
+    class AutomationRuleCondition extends \Google\Model
     {
+        protected $targetsPresentConditionType = TargetsPresentCondition::class;
+        protected $targetsPresentConditionDataType = '';
+        protected $timedPromoteReleaseConditionType = TimedPromoteReleaseCondition::class;
+        protected $timedPromoteReleaseConditionDataType = '';
+        /**
+         * Optional. Details around targets enumerated in the rule.
+         *
+         * @param TargetsPresentCondition $targetsPresentCondition
+         */
+        public function setTargetsPresentCondition(TargetsPresentCondition $targetsPresentCondition)
+        {
+        }
+        /**
+         * @return TargetsPresentCondition
+         */
+        public function getTargetsPresentCondition()
+        {
+        }
+        /**
+         * Optional. TimedPromoteReleaseCondition contains rule conditions specific to
+         * a an Automation with a timed promote release rule defined.
+         *
+         * @param TimedPromoteReleaseCondition $timedPromoteReleaseCondition
+         */
+        public function setTimedPromoteReleaseCondition(TimedPromoteReleaseCondition $timedPromoteReleaseCondition)
+        {
+        }
+        /**
+         * @return TimedPromoteReleaseCondition
+         */
+        public function getTimedPromoteReleaseCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetsPresentCondition
+     * Runtime class alias of \Google\Service\CloudDeploy\AutomationRuleCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetsPresentCondition()
-    {
-    }
-    /**
-     * Optional. TimedPromoteReleaseCondition contains rule conditions specific to
-     * a an Automation with a timed promote release rule defined.
-     *
-     * @param TimedPromoteReleaseCondition $timedPromoteReleaseCondition
-     */
-    public function setTimedPromoteReleaseCondition(TimedPromoteReleaseCondition $timedPromoteReleaseCondition)
-    {
-    }
-    /**
-     * @return TimedPromoteReleaseCondition
-     */
-    public function getTimedPromoteReleaseCondition()
+    class Google_Service_CloudDeploy_AutomationRuleCondition extends \Google\Service\CloudDeploy\AutomationRuleCondition
     {
     }
 }

@@ -20,60 +20,69 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\test\phpunit;
-
-/**
- * Event redirection sink.
- *
- * @package    core
- * @category   test
- * @copyright  2013 Petr Skoda {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class event_sink
-{
-    /** @var \core\event\base[] array of events */
-    protected $events = [];
+namespace core\test\phpunit {
     /**
-     * Stop event redirection.
+     * Event redirection sink.
      *
-     * Use if you do not want event redirected any more.
+     * @package    core
+     * @category   test
+     * @copyright  2013 Petr Skoda {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function close()
+    class event_sink
     {
+        /** @var \core\event\base[] array of events */
+        protected $events = [];
+        /**
+         * Stop event redirection.
+         *
+         * Use if you do not want event redirected any more.
+         */
+        public function close()
+        {
+        }
+        /**
+         * To be called from phpunit_util only!
+         *
+         * @param \core\event\base $event record from event_read table
+         */
+        public function add_event(\core\event\base $event)
+        {
+        }
+        /**
+         * Returns all redirected events.
+         *
+         * The instances are records form the event_read table.
+         * The array indexes are numbered from 0 and the order is matching
+         * the creation of events.
+         *
+         * @return \core\event\base[]
+         */
+        public function get_events()
+        {
+        }
+        /**
+         * Return number of events redirected to this sink.
+         *
+         * @return int
+         */
+        public function count()
+        {
+        }
+        /**
+         * Removes all previously stored events.
+         */
+        public function clear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * To be called from phpunit_util only!
-     *
-     * @param \core\event\base $event record from event_read table
+     * Runtime class alias of \core\test\phpunit\event_sink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function add_event(\core\event\base $event)
-    {
-    }
-    /**
-     * Returns all redirected events.
-     *
-     * The instances are records form the event_read table.
-     * The array indexes are numbered from 0 and the order is matching
-     * the creation of events.
-     *
-     * @return \core\event\base[]
-     */
-    public function get_events()
-    {
-    }
-    /**
-     * Return number of events redirected to this sink.
-     *
-     * @return int
-     */
-    public function count()
-    {
-    }
-    /**
-     * Removes all previously stored events.
-     */
-    public function clear()
+    class phpunit_event_sink extends \core\test\phpunit\event_sink
     {
     }
 }

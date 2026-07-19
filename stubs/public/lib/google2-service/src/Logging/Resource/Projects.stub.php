@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $projects = $loggingService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\CmekSettings;
+    use Google\Service\Logging\Settings;
     /**
-     * Gets the Logging CMEK settings for the given resource.Note: CMEK for the Log
-     * Router can be configured for Google Cloud projects, folders, organizations,
-     * and billing accounts. Once configured for an organization, it applies to all
-     * projects and folders in the Google Cloud organization.See Enabling CMEK for
-     * Log Router (https://cloud.google.com/logging/docs/routing/managed-encryption)
-     * for more information. (projects.getCmekSettings)
-     *
-     * @param string $name Required. The resource for which to retrieve CMEK
-     * settings. "projects/[PROJECT_ID]/cmekSettings"
-     * "organizations/[ORGANIZATION_ID]/cmekSettings"
-     * "billingAccounts/[BILLING_ACCOUNT_ID]/cmekSettings"
-     * "folders/[FOLDER_ID]/cmekSettings" For
-     * example:"organizations/12345/cmekSettings"Note: CMEK for the Log Router can
-     * be configured for Google Cloud projects, folders, organizations, and billing
-     * accounts. Once configured for an organization, it applies to all projects and
-     * folders in the Google Cloud organization.
-     * @param array $optParams Optional parameters.
-     * @return CmekSettings
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $projects = $loggingService->projects;
+     *  </code>
      */
-    public function getCmekSettings($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Gets the Logging CMEK settings for the given resource.Note: CMEK for the Log
+         * Router can be configured for Google Cloud projects, folders, organizations,
+         * and billing accounts. Once configured for an organization, it applies to all
+         * projects and folders in the Google Cloud organization.See Enabling CMEK for
+         * Log Router (https://cloud.google.com/logging/docs/routing/managed-encryption)
+         * for more information. (projects.getCmekSettings)
+         *
+         * @param string $name Required. The resource for which to retrieve CMEK
+         * settings. "projects/[PROJECT_ID]/cmekSettings"
+         * "organizations/[ORGANIZATION_ID]/cmekSettings"
+         * "billingAccounts/[BILLING_ACCOUNT_ID]/cmekSettings"
+         * "folders/[FOLDER_ID]/cmekSettings" For
+         * example:"organizations/12345/cmekSettings"Note: CMEK for the Log Router can
+         * be configured for Google Cloud projects, folders, organizations, and billing
+         * accounts. Once configured for an organization, it applies to all projects and
+         * folders in the Google Cloud organization.
+         * @param array $optParams Optional parameters.
+         * @return CmekSettings
+         * @throws \Google\Service\Exception
+         */
+        public function getCmekSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the settings for the given resource.Note: Settings can be retrieved for
+         * Google Cloud projects, folders, organizations, and billing accounts.See View
+         * default resource settings for Logging
+         * (https://cloud.google.com/logging/docs/default-settings#view-org-settings)
+         * for more information. (projects.getSettings)
+         *
+         * @param string $name Required. The resource for which to retrieve settings.
+         * "projects/[PROJECT_ID]/settings" "organizations/[ORGANIZATION_ID]/settings"
+         * "billingAccounts/[BILLING_ACCOUNT_ID]/settings"
+         * "folders/[FOLDER_ID]/settings" For
+         * example:"organizations/12345/settings"Note: Settings can be retrieved for
+         * Google Cloud projects, folders, organizations, and billing accounts.
+         * @param array $optParams Optional parameters.
+         * @return Settings
+         * @throws \Google\Service\Exception
+         */
+        public function getSettings($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the settings for the given resource.Note: Settings can be retrieved for
-     * Google Cloud projects, folders, organizations, and billing accounts.See View
-     * default resource settings for Logging
-     * (https://cloud.google.com/logging/docs/default-settings#view-org-settings)
-     * for more information. (projects.getSettings)
-     *
-     * @param string $name Required. The resource for which to retrieve settings.
-     * "projects/[PROJECT_ID]/settings" "organizations/[ORGANIZATION_ID]/settings"
-     * "billingAccounts/[BILLING_ACCOUNT_ID]/settings"
-     * "folders/[FOLDER_ID]/settings" For
-     * example:"organizations/12345/settings"Note: Settings can be retrieved for
-     * Google Cloud projects, folders, organizations, and billing accounts.
-     * @param array $optParams Optional parameters.
-     * @return Settings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Logging\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings($name, $optParams = [])
+    class Google_Service_Logging_Resource_Projects extends \Google\Service\Logging\Resource\Projects
     {
     }
 }

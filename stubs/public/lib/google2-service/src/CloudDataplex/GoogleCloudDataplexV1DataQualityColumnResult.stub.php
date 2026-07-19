@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityColumnResult extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    /**
-     * Output only. The column specified in the DataQualityRule.
-     *
-     * @var string
-     */
-    public $column;
-    protected $dimensionsType = GoogleCloudDataplexV1DataQualityDimensionResult::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * Output only. Whether the column passed or failed.
-     *
-     * @var bool
-     */
-    public $passed;
-    /**
-     * Output only. The column-level data quality score for this data scan job if
-     * and only if the 'column' field is set.The score ranges between between 0,
-     * 100 (up to two decimal points).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. The column specified in the DataQualityRule.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityColumnResult extends \Google\Collection
     {
+        protected $collection_key = 'dimensions';
+        /**
+         * Output only. The column specified in the DataQualityRule.
+         *
+         * @var string
+         */
+        public $column;
+        protected $dimensionsType = GoogleCloudDataplexV1DataQualityDimensionResult::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * Output only. Whether the column passed or failed.
+         *
+         * @var bool
+         */
+        public $passed;
+        /**
+         * Output only. The column-level data quality score for this data scan job if
+         * and only if the 'column' field is set.The score ranges between between 0,
+         * 100 (up to two decimal points).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. The column specified in the DataQualityRule.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Output only. The dimension-level results for this column.
+         *
+         * @param GoogleCloudDataplexV1DataQualityDimensionResult[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityDimensionResult[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Output only. Whether the column passed or failed.
+         *
+         * @param bool $passed
+         */
+        public function setPassed($passed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPassed()
+        {
+        }
+        /**
+         * Output only. The column-level data quality score for this data scan job if
+         * and only if the 'column' field is set.The score ranges between between 0,
+         * 100 (up to two decimal points).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityColumnResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Output only. The dimension-level results for this column.
-     *
-     * @param GoogleCloudDataplexV1DataQualityDimensionResult[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualityDimensionResult[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Output only. Whether the column passed or failed.
-     *
-     * @param bool $passed
-     */
-    public function setPassed($passed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPassed()
-    {
-    }
-    /**
-     * Output only. The column-level data quality score for this data scan job if
-     * and only if the 'column' field is set.The score ranges between between 0,
-     * 100 (up to two decimal points).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityColumnResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityColumnResult
     {
     }
 }

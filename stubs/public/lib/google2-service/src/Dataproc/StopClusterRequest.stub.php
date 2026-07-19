@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StopClusterRequest extends \Google\Model
-{
-    /**
-     * Optional. Specifying the cluster_uuid means the RPC will fail (with error
-     * NOT_FOUND) if a cluster with the specified UUID does not exist.
-     *
-     * @var string
-     */
-    public $clusterUuid;
-    /**
-     * Optional. A unique ID used to identify the request. If the server receives
-     * two StopClusterRequest (https://cloud.google.com/dataproc/docs/reference/rp
-     * c/google.cloud.dataproc.v1#google.cloud.dataproc.v1.StopClusterRequest)s
-     * with the same id, then the second request will be ignored and the first
-     * google.longrunning.Operation created and stored in the backend is
-     * returned.Recommendation: Set this value to a UUID
-     * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
-     * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
-     * hyphens (-). The maximum length is 40 characters.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. Specifying the cluster_uuid means the RPC will fail (with error
-     * NOT_FOUND) if a cluster with the specified UUID does not exist.
-     *
-     * @param string $clusterUuid
-     */
-    public function setClusterUuid($clusterUuid)
+namespace Google\Service\Dataproc {
+    class StopClusterRequest extends \Google\Model
     {
+        /**
+         * Optional. Specifying the cluster_uuid means the RPC will fail (with error
+         * NOT_FOUND) if a cluster with the specified UUID does not exist.
+         *
+         * @var string
+         */
+        public $clusterUuid;
+        /**
+         * Optional. A unique ID used to identify the request. If the server receives
+         * two StopClusterRequest (https://cloud.google.com/dataproc/docs/reference/rp
+         * c/google.cloud.dataproc.v1#google.cloud.dataproc.v1.StopClusterRequest)s
+         * with the same id, then the second request will be ignored and the first
+         * google.longrunning.Operation created and stored in the backend is
+         * returned.Recommendation: Set this value to a UUID
+         * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
+         * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
+         * hyphens (-). The maximum length is 40 characters.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. Specifying the cluster_uuid means the RPC will fail (with error
+         * NOT_FOUND) if a cluster with the specified UUID does not exist.
+         *
+         * @param string $clusterUuid
+         */
+        public function setClusterUuid($clusterUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterUuid()
+        {
+        }
+        /**
+         * Optional. A unique ID used to identify the request. If the server receives
+         * two StopClusterRequest (https://cloud.google.com/dataproc/docs/reference/rp
+         * c/google.cloud.dataproc.v1#google.cloud.dataproc.v1.StopClusterRequest)s
+         * with the same id, then the second request will be ignored and the first
+         * google.longrunning.Operation created and stored in the backend is
+         * returned.Recommendation: Set this value to a UUID
+         * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
+         * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
+         * hyphens (-). The maximum length is 40 characters.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StopClusterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterUuid()
-    {
-    }
-    /**
-     * Optional. A unique ID used to identify the request. If the server receives
-     * two StopClusterRequest (https://cloud.google.com/dataproc/docs/reference/rp
-     * c/google.cloud.dataproc.v1#google.cloud.dataproc.v1.StopClusterRequest)s
-     * with the same id, then the second request will be ignored and the first
-     * google.longrunning.Operation created and stored in the backend is
-     * returned.Recommendation: Set this value to a UUID
-     * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
-     * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
-     * hyphens (-). The maximum length is 40 characters.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_Dataproc_StopClusterRequest extends \Google\Service\Dataproc\StopClusterRequest
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AddOnStartingState extends \Google\Model
-{
-    protected $addOnFrameStartingStatesType = AddOnFrameStartingState::class;
-    protected $addOnFrameStartingStatesDataType = 'map';
-    /**
-     * @param AddOnFrameStartingState[]
-     */
-    public function setAddOnFrameStartingStates($addOnFrameStartingStates)
+namespace Google\Service\CloudSearch {
+    class AddOnStartingState extends \Google\Model
     {
+        protected $addOnFrameStartingStatesType = AddOnFrameStartingState::class;
+        protected $addOnFrameStartingStatesDataType = 'map';
+        /**
+         * @param AddOnFrameStartingState[]
+         */
+        public function setAddOnFrameStartingStates($addOnFrameStartingStates)
+        {
+        }
+        /**
+         * @return AddOnFrameStartingState[]
+         */
+        public function getAddOnFrameStartingStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AddOnFrameStartingState[]
+     * Runtime class alias of \Google\Service\CloudSearch\AddOnStartingState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddOnFrameStartingStates()
+    class Google_Service_CloudSearch_AddOnStartingState extends \Google\Service\CloudSearch\AddOnStartingState
     {
     }
 }

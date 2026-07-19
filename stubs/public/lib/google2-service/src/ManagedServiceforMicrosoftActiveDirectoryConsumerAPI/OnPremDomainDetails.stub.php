@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class OnPremDomainDetails extends \Google\Model
-{
-    /**
-     * Optional. Option to disable SID filtering.
-     *
-     * @var bool
-     */
-    public $disableSidFiltering;
-    /**
-     * Required. FQDN of the on-prem domain being migrated.
-     *
-     * @var string
-     */
-    public $domainName;
-    /**
-     * Optional. Option to disable SID filtering.
-     *
-     * @param bool $disableSidFiltering
-     */
-    public function setDisableSidFiltering($disableSidFiltering)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class OnPremDomainDetails extends \Google\Model
     {
+        /**
+         * Optional. Option to disable SID filtering.
+         *
+         * @var bool
+         */
+        public $disableSidFiltering;
+        /**
+         * Required. FQDN of the on-prem domain being migrated.
+         *
+         * @var string
+         */
+        public $domainName;
+        /**
+         * Optional. Option to disable SID filtering.
+         *
+         * @param bool $disableSidFiltering
+         */
+        public function setDisableSidFiltering($disableSidFiltering)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableSidFiltering()
+        {
+        }
+        /**
+         * Required. FQDN of the on-prem domain being migrated.
+         *
+         * @param string $domainName
+         */
+        public function setDomainName($domainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\OnPremDomainDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableSidFiltering()
-    {
-    }
-    /**
-     * Required. FQDN of the on-prem domain being migrated.
-     *
-     * @param string $domainName
-     */
-    public function setDomainName($domainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomainName()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_OnPremDomainDetails extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\OnPremDomainDetails
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SBOMReferenceOccurrence extends \Google\Collection
-{
-    protected $collection_key = 'signatures';
-    protected $payloadDataType = '';
-    /**
-     * The kind of payload that SbomReferenceIntotoPayload takes. Since it's in
-     * the intoto format, this value is expected to be 'application/vnd.in-
-     * toto+json'.
-     *
-     * @var string
-     */
-    public $payloadType;
-    protected $signaturesType = EnvelopeSignature::class;
-    protected $signaturesDataType = 'array';
-    /**
-     * The actual payload that contains the SBOM reference data.
-     *
-     * @param SbomReferenceIntotoPayload $payload
-     */
-    public function setPayload(SbomReferenceIntotoPayload $payload)
+namespace Google\Service\ContainerAnalysis {
+    class SBOMReferenceOccurrence extends \Google\Collection
     {
+        protected $collection_key = 'signatures';
+        protected $payloadDataType = '';
+        /**
+         * The kind of payload that SbomReferenceIntotoPayload takes. Since it's in
+         * the intoto format, this value is expected to be 'application/vnd.in-
+         * toto+json'.
+         *
+         * @var string
+         */
+        public $payloadType;
+        protected $signaturesType = EnvelopeSignature::class;
+        protected $signaturesDataType = 'array';
+        /**
+         * The actual payload that contains the SBOM reference data.
+         *
+         * @param SbomReferenceIntotoPayload $payload
+         */
+        public function setPayload(SbomReferenceIntotoPayload $payload)
+        {
+        }
+        /**
+         * @return SbomReferenceIntotoPayload
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * The kind of payload that SbomReferenceIntotoPayload takes. Since it's in
+         * the intoto format, this value is expected to be 'application/vnd.in-
+         * toto+json'.
+         *
+         * @param string $payloadType
+         */
+        public function setPayloadType($payloadType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayloadType()
+        {
+        }
+        /**
+         * The signatures over the payload.
+         *
+         * @param EnvelopeSignature[] $signatures
+         */
+        public function setSignatures($signatures)
+        {
+        }
+        /**
+         * @return EnvelopeSignature[]
+         */
+        public function getSignatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SbomReferenceIntotoPayload
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SBOMReferenceOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
-    {
-    }
-    /**
-     * The kind of payload that SbomReferenceIntotoPayload takes. Since it's in
-     * the intoto format, this value is expected to be 'application/vnd.in-
-     * toto+json'.
-     *
-     * @param string $payloadType
-     */
-    public function setPayloadType($payloadType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayloadType()
-    {
-    }
-    /**
-     * The signatures over the payload.
-     *
-     * @param EnvelopeSignature[] $signatures
-     */
-    public function setSignatures($signatures)
-    {
-    }
-    /**
-     * @return EnvelopeSignature[]
-     */
-    public function getSignatures()
+    class Google_Service_ContainerAnalysis_SBOMReferenceOccurrence extends \Google\Service\ContainerAnalysis\SBOMReferenceOccurrence
     {
     }
 }

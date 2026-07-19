@@ -8,6 +8,7 @@
  */
 namespace Aws\Panorama;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Panorama** service.
  * @method \Aws\Result createApplicationInstance(array $args = [])

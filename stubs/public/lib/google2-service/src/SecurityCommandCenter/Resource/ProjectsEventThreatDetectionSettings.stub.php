@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "eventThreatDetectionSettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $eventThreatDetectionSettings = $securitycenterService->projects_eventThreatDetectionSettings;
- *  </code>
- */
-class ProjectsEventThreatDetectionSettings extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    use Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleRequest;
+    use Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleResponse;
     /**
-     * Validates the given Event Threat Detection custom module.
-     * (eventThreatDetectionSettings.validateCustomModule)
-     *
-     * @param string $parent Required. Resource name of the parent to validate the
-     * Custom Module under. Its format is: *
-     * `organizations/{organization}/eventThreatDetectionSettings`. *
-     * `folders/{folder}/eventThreatDetectionSettings`. *
-     * `projects/{project}/eventThreatDetectionSettings`.
-     * @param ValidateEventThreatDetectionCustomModuleRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ValidateEventThreatDetectionCustomModuleResponse
-     * @throws \Google\Service\Exception
+     * The "eventThreatDetectionSettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $eventThreatDetectionSettings = $securitycenterService->projects_eventThreatDetectionSettings;
+     *  </code>
      */
-    public function validateCustomModule($parent, ValidateEventThreatDetectionCustomModuleRequest $postBody, $optParams = [])
+    class ProjectsEventThreatDetectionSettings extends \Google\Service\Resource
+    {
+        /**
+         * Validates the given Event Threat Detection custom module.
+         * (eventThreatDetectionSettings.validateCustomModule)
+         *
+         * @param string $parent Required. Resource name of the parent to validate the
+         * Custom Module under. Its format is: *
+         * `organizations/{organization}/eventThreatDetectionSettings`. *
+         * `folders/{folder}/eventThreatDetectionSettings`. *
+         * `projects/{project}/eventThreatDetectionSettings`.
+         * @param ValidateEventThreatDetectionCustomModuleRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ValidateEventThreatDetectionCustomModuleResponse
+         * @throws \Google\Service\Exception
+         */
+        public function validateCustomModule($parent, ValidateEventThreatDetectionCustomModuleRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\ProjectsEventThreatDetectionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityCommandCenter_Resource_ProjectsEventThreatDetectionSettings extends \Google\Service\SecurityCommandCenter\Resource\ProjectsEventThreatDetectionSettings
     {
     }
 }

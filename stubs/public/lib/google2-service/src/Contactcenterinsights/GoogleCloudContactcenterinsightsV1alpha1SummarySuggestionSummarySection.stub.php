@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1SummarySuggestionSummarySection extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $section;
-    /**
-     * @var string
-     */
-    public $summary;
-    /**
-     * @param string
-     */
-    public function setSection($section)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1SummarySuggestionSummarySection extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $section;
+        /**
+         * @var string
+         */
+        public $summary;
+        /**
+         * @param string
+         */
+        public function setSection($section)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSection()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SummarySuggestionSummarySection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSection()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1SummarySuggestionSummarySection extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SummarySuggestionSummarySection
     {
     }
 }

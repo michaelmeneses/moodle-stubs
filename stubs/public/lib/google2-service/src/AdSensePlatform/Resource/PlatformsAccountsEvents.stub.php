@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform\Resource;
-
-/**
- * The "events" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseplatformService = new Google\Service\AdSensePlatform(...);
- *   $events = $adsenseplatformService->platforms_accounts_events;
- *  </code>
- */
-class PlatformsAccountsEvents extends \Google\Service\Resource
-{
+namespace Google\Service\AdSensePlatform\Resource {
+    use Google\Service\AdSensePlatform\Event;
     /**
-     * Creates an account event. (events.create)
-     *
-     * @param string $parent Required. Account to log events about. Format:
-     * platforms/{platform}/accounts/{account}
-     * @param Event $postBody
-     * @param array $optParams Optional parameters.
-     * @return Event
-     * @throws \Google\Service\Exception
+     * The "events" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseplatformService = new Google\Service\AdSensePlatform(...);
+     *   $events = $adsenseplatformService->platforms_accounts_events;
+     *  </code>
      */
-    public function create($parent, Event $postBody, $optParams = [])
+    class PlatformsAccountsEvents extends \Google\Service\Resource
+    {
+        /**
+         * Creates an account event. (events.create)
+         *
+         * @param string $parent Required. Account to log events about. Format:
+         * platforms/{platform}/accounts/{account}
+         * @param Event $postBody
+         * @param array $optParams Optional parameters.
+         * @return Event
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Event $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdSensePlatform\Resource\PlatformsAccountsEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdSensePlatform_Resource_PlatformsAccountsEvents extends \Google\Service\AdSensePlatform\Resource\PlatformsAccountsEvents
     {
     }
 }

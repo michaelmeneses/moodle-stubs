@@ -21,52 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub\Resource;
-
-/**
- * The "discoveredApiObservations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apihubService = new Google\Service\APIhub(...);
- *   $discoveredApiObservations = $apihubService->projects_locations_discoveredApiObservations;
- *  </code>
- */
-class ProjectsLocationsDiscoveredApiObservations extends \Google\Service\Resource
-{
+namespace Google\Service\APIhub\Resource {
+    use Google\Service\APIhub\GoogleCloudApihubV1DiscoveredApiObservation;
+    use Google\Service\APIhub\GoogleCloudApihubV1ListDiscoveredApiObservationsResponse;
     /**
-     * Gets a DiscoveredAPIObservation in a given project, location and
-     * ApiObservation. (discoveredApiObservations.get)
-     *
-     * @param string $name Required. The name of the DiscoveredApiObservation to
-     * retrieve. Format: projects/{project}/locations/{location}/discoveredApiObserv
-     * ations/{discovered_api_observation}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApihubV1DiscoveredApiObservation
-     * @throws \Google\Service\Exception
+     * The "discoveredApiObservations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apihubService = new Google\Service\APIhub(...);
+     *   $discoveredApiObservations = $apihubService->projects_locations_discoveredApiObservations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsDiscoveredApiObservations extends \Google\Service\Resource
     {
+        /**
+         * Gets a DiscoveredAPIObservation in a given project, location and
+         * ApiObservation. (discoveredApiObservations.get)
+         *
+         * @param string $name Required. The name of the DiscoveredApiObservation to
+         * retrieve. Format: projects/{project}/locations/{location}/discoveredApiObserv
+         * ations/{discovered_api_observation}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApihubV1DiscoveredApiObservation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the DiscoveredAPIObservations in a given project and location.
+         * (discoveredApiObservations.listProjectsLocationsDiscoveredApiObservations)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * ApiObservations. Format: projects/{project}/locations/{location}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of ApiObservations to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 10 ApiObservations will be returned. The maximum value is 1000; values above
+         * 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListApiObservations` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListApiObservations` must
+         * match the call that provided the page token.
+         * @return GoogleCloudApihubV1ListDiscoveredApiObservationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDiscoveredApiObservations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the DiscoveredAPIObservations in a given project and location.
-     * (discoveredApiObservations.listProjectsLocationsDiscoveredApiObservations)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * ApiObservations. Format: projects/{project}/locations/{location}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of ApiObservations to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 10 ApiObservations will be returned. The maximum value is 1000; values above
-     * 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListApiObservations` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListApiObservations` must
-     * match the call that provided the page token.
-     * @return GoogleCloudApihubV1ListDiscoveredApiObservationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\APIhub\Resource\ProjectsLocationsDiscoveredApiObservations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsDiscoveredApiObservations($parent, $optParams = [])
+    class Google_Service_APIhub_Resource_ProjectsLocationsDiscoveredApiObservations extends \Google\Service\APIhub\Resource\ProjectsLocationsDiscoveredApiObservations
     {
     }
 }

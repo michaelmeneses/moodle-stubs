@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookImportStrategy extends \Google\Model
-{
-    /**
-     * Unspecified. Treated as 'CREATE_NEW'.
-     */
-    public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
-    /**
-     * Create a new resource with a numeric suffix appended to the end of the
-     * existing display name.
-     */
-    public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
-    /**
-     * Replace existing resource with incoming resource in the content to be
-     * imported.
-     */
-    public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
-    /**
-     * Keep existing resource and discard incoming resource in the content to be
-     * imported.
-     */
-    public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
-    /**
-     * Combine existing and incoming resources when a conflict is encountered.
-     */
-    public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
-    /**
-     * Throw error if a conflict is encountered.
-     */
-    public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
-    /**
-     * Unspecified. Treated as 'CREATE_NEW'.
-     */
-    public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
-    /**
-     * Create a new resource with a numeric suffix appended to the end of the
-     * existing display name.
-     */
-    public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
-    /**
-     * Replace existing resource with incoming resource in the content to be
-     * imported.
-     */
-    public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
-    /**
-     * Keep existing resource and discard incoming resource in the content to be
-     * imported.
-     */
-    public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
-    /**
-     * Combine existing and incoming resources when a conflict is encountered.
-     */
-    public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
-    /**
-     * Throw error if a conflict is encountered.
-     */
-    public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
-    /**
-     * Unspecified. Treated as 'CREATE_NEW'.
-     */
-    public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
-    /**
-     * Create a new resource with a numeric suffix appended to the end of the
-     * existing display name.
-     */
-    public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
-    /**
-     * Replace existing resource with incoming resource in the content to be
-     * imported.
-     */
-    public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
-    /**
-     * Keep existing resource and discard incoming resource in the content to be
-     * imported.
-     */
-    public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
-    /**
-     * Combine existing and incoming resources when a conflict is encountered.
-     */
-    public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
-    /**
-     * Throw error if a conflict is encountered.
-     */
-    public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
-    /**
-     * Optional. Specifies the import strategy used when resolving conflicts with
-     * the main playbook. If not specified, 'CREATE_NEW' is assumed.
-     *
-     * @var string
-     */
-    public $mainPlaybookImportStrategy;
-    /**
-     * Optional. Specifies the import strategy used when resolving referenced
-     * playbook/flow conflicts. If not specified, 'CREATE_NEW' is assumed.
-     *
-     * @var string
-     */
-    public $nestedResourceImportStrategy;
-    /**
-     * Optional. Specifies the import strategy used when resolving tool conflicts.
-     * If not specified, 'CREATE_NEW' is assumed. This will be applied after the
-     * main playbook and nested resource import strategies, meaning if the
-     * playbook that references the tool is skipped, the tool will also be
-     * skipped.
-     *
-     * @var string
-     */
-    public $toolImportStrategy;
-    /**
-     * Optional. Specifies the import strategy used when resolving conflicts with
-     * the main playbook. If not specified, 'CREATE_NEW' is assumed.
-     *
-     * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
-     * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
-     * IMPORT_STRATEGY_THROW_ERROR
-     *
-     * @param self::MAIN_PLAYBOOK_IMPORT_STRATEGY_* $mainPlaybookImportStrategy
-     */
-    public function setMainPlaybookImportStrategy($mainPlaybookImportStrategy)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookImportStrategy extends \Google\Model
     {
+        /**
+         * Unspecified. Treated as 'CREATE_NEW'.
+         */
+        public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
+        /**
+         * Create a new resource with a numeric suffix appended to the end of the
+         * existing display name.
+         */
+        public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
+        /**
+         * Replace existing resource with incoming resource in the content to be
+         * imported.
+         */
+        public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
+        /**
+         * Keep existing resource and discard incoming resource in the content to be
+         * imported.
+         */
+        public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
+        /**
+         * Combine existing and incoming resources when a conflict is encountered.
+         */
+        public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
+        /**
+         * Throw error if a conflict is encountered.
+         */
+        public const MAIN_PLAYBOOK_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
+        /**
+         * Unspecified. Treated as 'CREATE_NEW'.
+         */
+        public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
+        /**
+         * Create a new resource with a numeric suffix appended to the end of the
+         * existing display name.
+         */
+        public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
+        /**
+         * Replace existing resource with incoming resource in the content to be
+         * imported.
+         */
+        public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
+        /**
+         * Keep existing resource and discard incoming resource in the content to be
+         * imported.
+         */
+        public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
+        /**
+         * Combine existing and incoming resources when a conflict is encountered.
+         */
+        public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
+        /**
+         * Throw error if a conflict is encountered.
+         */
+        public const NESTED_RESOURCE_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
+        /**
+         * Unspecified. Treated as 'CREATE_NEW'.
+         */
+        public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
+        /**
+         * Create a new resource with a numeric suffix appended to the end of the
+         * existing display name.
+         */
+        public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
+        /**
+         * Replace existing resource with incoming resource in the content to be
+         * imported.
+         */
+        public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
+        /**
+         * Keep existing resource and discard incoming resource in the content to be
+         * imported.
+         */
+        public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
+        /**
+         * Combine existing and incoming resources when a conflict is encountered.
+         */
+        public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
+        /**
+         * Throw error if a conflict is encountered.
+         */
+        public const TOOL_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
+        /**
+         * Optional. Specifies the import strategy used when resolving conflicts with
+         * the main playbook. If not specified, 'CREATE_NEW' is assumed.
+         *
+         * @var string
+         */
+        public $mainPlaybookImportStrategy;
+        /**
+         * Optional. Specifies the import strategy used when resolving referenced
+         * playbook/flow conflicts. If not specified, 'CREATE_NEW' is assumed.
+         *
+         * @var string
+         */
+        public $nestedResourceImportStrategy;
+        /**
+         * Optional. Specifies the import strategy used when resolving tool conflicts.
+         * If not specified, 'CREATE_NEW' is assumed. This will be applied after the
+         * main playbook and nested resource import strategies, meaning if the
+         * playbook that references the tool is skipped, the tool will also be
+         * skipped.
+         *
+         * @var string
+         */
+        public $toolImportStrategy;
+        /**
+         * Optional. Specifies the import strategy used when resolving conflicts with
+         * the main playbook. If not specified, 'CREATE_NEW' is assumed.
+         *
+         * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
+         * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
+         * IMPORT_STRATEGY_THROW_ERROR
+         *
+         * @param self::MAIN_PLAYBOOK_IMPORT_STRATEGY_* $mainPlaybookImportStrategy
+         */
+        public function setMainPlaybookImportStrategy($mainPlaybookImportStrategy)
+        {
+        }
+        /**
+         * @return self::MAIN_PLAYBOOK_IMPORT_STRATEGY_*
+         */
+        public function getMainPlaybookImportStrategy()
+        {
+        }
+        /**
+         * Optional. Specifies the import strategy used when resolving referenced
+         * playbook/flow conflicts. If not specified, 'CREATE_NEW' is assumed.
+         *
+         * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
+         * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
+         * IMPORT_STRATEGY_THROW_ERROR
+         *
+         * @param self::NESTED_RESOURCE_IMPORT_STRATEGY_* $nestedResourceImportStrategy
+         */
+        public function setNestedResourceImportStrategy($nestedResourceImportStrategy)
+        {
+        }
+        /**
+         * @return self::NESTED_RESOURCE_IMPORT_STRATEGY_*
+         */
+        public function getNestedResourceImportStrategy()
+        {
+        }
+        /**
+         * Optional. Specifies the import strategy used when resolving tool conflicts.
+         * If not specified, 'CREATE_NEW' is assumed. This will be applied after the
+         * main playbook and nested resource import strategies, meaning if the
+         * playbook that references the tool is skipped, the tool will also be
+         * skipped.
+         *
+         * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
+         * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
+         * IMPORT_STRATEGY_THROW_ERROR
+         *
+         * @param self::TOOL_IMPORT_STRATEGY_* $toolImportStrategy
+         */
+        public function setToolImportStrategy($toolImportStrategy)
+        {
+        }
+        /**
+         * @return self::TOOL_IMPORT_STRATEGY_*
+         */
+        public function getToolImportStrategy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MAIN_PLAYBOOK_IMPORT_STRATEGY_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookImportStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMainPlaybookImportStrategy()
-    {
-    }
-    /**
-     * Optional. Specifies the import strategy used when resolving referenced
-     * playbook/flow conflicts. If not specified, 'CREATE_NEW' is assumed.
-     *
-     * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
-     * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
-     * IMPORT_STRATEGY_THROW_ERROR
-     *
-     * @param self::NESTED_RESOURCE_IMPORT_STRATEGY_* $nestedResourceImportStrategy
-     */
-    public function setNestedResourceImportStrategy($nestedResourceImportStrategy)
-    {
-    }
-    /**
-     * @return self::NESTED_RESOURCE_IMPORT_STRATEGY_*
-     */
-    public function getNestedResourceImportStrategy()
-    {
-    }
-    /**
-     * Optional. Specifies the import strategy used when resolving tool conflicts.
-     * If not specified, 'CREATE_NEW' is assumed. This will be applied after the
-     * main playbook and nested resource import strategies, meaning if the
-     * playbook that references the tool is skipped, the tool will also be
-     * skipped.
-     *
-     * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
-     * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
-     * IMPORT_STRATEGY_THROW_ERROR
-     *
-     * @param self::TOOL_IMPORT_STRATEGY_* $toolImportStrategy
-     */
-    public function setToolImportStrategy($toolImportStrategy)
-    {
-    }
-    /**
-     * @return self::TOOL_IMPORT_STRATEGY_*
-     */
-    public function getToolImportStrategy()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookImportStrategy extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookImportStrategy
     {
     }
 }

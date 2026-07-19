@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class MobileApplicationTargeting extends \Google\Model
-{
-    protected $firstPartyTargetingType = FirstPartyMobileApplicationTargeting::class;
-    protected $firstPartyTargetingDataType = '';
-    /**
-     * Publisher owned apps to be targeted or excluded by the publisher to display
-     * the ads in.
-     *
-     * @param FirstPartyMobileApplicationTargeting $firstPartyTargeting
-     */
-    public function setFirstPartyTargeting(FirstPartyMobileApplicationTargeting $firstPartyTargeting)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class MobileApplicationTargeting extends \Google\Model
     {
+        protected $firstPartyTargetingType = FirstPartyMobileApplicationTargeting::class;
+        protected $firstPartyTargetingDataType = '';
+        /**
+         * Publisher owned apps to be targeted or excluded by the publisher to display
+         * the ads in.
+         *
+         * @param FirstPartyMobileApplicationTargeting $firstPartyTargeting
+         */
+        public function setFirstPartyTargeting(FirstPartyMobileApplicationTargeting $firstPartyTargeting)
+        {
+        }
+        /**
+         * @return FirstPartyMobileApplicationTargeting
+         */
+        public function getFirstPartyTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirstPartyMobileApplicationTargeting
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\MobileApplicationTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPartyTargeting()
+    class Google_Service_AuthorizedBuyersMarketplace_MobileApplicationTargeting extends \Google\Service\AuthorizedBuyersMarketplace\MobileApplicationTargeting
     {
     }
 }

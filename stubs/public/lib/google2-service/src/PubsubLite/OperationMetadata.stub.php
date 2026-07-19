@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class OperationMetadata extends \Google\Model
-{
-    /**
-     * The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time the operation finished running. Not set if the operation has not
-     * completed.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Resource path for the target of the operation. For example, targets of
-     * seeks are subscription resources, structured like: projects/{project_number
-     * }/locations/{location}/subscriptions/{subscription_id}
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @var string
-     */
-    public $verb;
-    /**
-     * The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\PubsubLite {
+    class OperationMetadata extends \Google\Model
     {
+        /**
+         * The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time the operation finished running. Not set if the operation has not
+         * completed.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Resource path for the target of the operation. For example, targets of
+         * seeks are subscription resources, structured like: projects/{project_number
+         * }/locations/{location}/subscriptions/{subscription_id}
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @var string
+         */
+        public $verb;
+        /**
+         * The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time the operation finished running. Not set if the operation has not
+         * completed.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Resource path for the target of the operation. For example, targets of
+         * seeks are subscription resources, structured like: projects/{project_number
+         * }/locations/{location}/subscriptions/{subscription_id}
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @param string $verb
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time the operation finished running. Not set if the operation has not
-     * completed.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Resource path for the target of the operation. For example, targets of
-     * seeks are subscription resources, structured like: projects/{project_number
-     * }/locations/{location}/subscriptions/{subscription_id}
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @param string $verb
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_PubsubLite_OperationMetadata extends \Google\Service\PubsubLite\OperationMetadata
     {
     }
 }

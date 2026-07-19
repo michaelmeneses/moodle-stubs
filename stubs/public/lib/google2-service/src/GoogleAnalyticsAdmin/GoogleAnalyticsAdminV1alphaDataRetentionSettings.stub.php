@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaDataRetentionSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $eventDataRetention;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $resetUserDataOnNewActivity;
-    /**
-     * @param string
-     */
-    public function setEventDataRetention($eventDataRetention)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaDataRetentionSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $eventDataRetention;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $resetUserDataOnNewActivity;
+        /**
+         * @param string
+         */
+        public function setEventDataRetention($eventDataRetention)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventDataRetention()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setResetUserDataOnNewActivity($resetUserDataOnNewActivity)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResetUserDataOnNewActivity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataRetentionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventDataRetention()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setResetUserDataOnNewActivity($resetUserDataOnNewActivity)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResetUserDataOnNewActivity()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaDataRetentionSettings extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataRetentionSettings
     {
     }
 }

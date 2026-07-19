@@ -8,6 +8,7 @@
  */
 namespace Aws\CostExplorer;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Cost Explorer Service** service.
  * @method \Aws\Result createAnomalyMonitor(array $args = [])

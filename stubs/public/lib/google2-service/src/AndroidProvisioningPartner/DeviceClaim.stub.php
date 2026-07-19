@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class DeviceClaim extends \Google\Model
-{
-    /**
-     * No additional service.
-     */
-    public const ADDITIONAL_SERVICE_ADDITIONAL_SERVICE_UNSPECIFIED = 'ADDITIONAL_SERVICE_UNSPECIFIED';
-    /**
-     * Device protection service, also known as Android Enterprise Essentials. To
-     * claim a device with the device protection service you must enroll with the
-     * partnership team.
-     */
-    public const ADDITIONAL_SERVICE_DEVICE_PROTECTION = 'DEVICE_PROTECTION';
-    /**
-     * Unspecified section type.
-     */
-    public const SECTION_TYPE_SECTION_TYPE_UNSPECIFIED = 'SECTION_TYPE_UNSPECIFIED';
-    /**
-     * SIM-lock section type.
-     */
-    public const SECTION_TYPE_SECTION_TYPE_SIM_LOCK = 'SECTION_TYPE_SIM_LOCK';
-    /**
-     * Zero-touch enrollment section type.
-     */
-    public const SECTION_TYPE_SECTION_TYPE_ZERO_TOUCH = 'SECTION_TYPE_ZERO_TOUCH';
-    /**
-     * The Additional service registered for the device.
-     *
-     * @var string
-     */
-    public $additionalService;
-    /**
-     * The ID of the Google Workspace account that owns the Chrome OS device.
-     *
-     * @var string
-     */
-    public $googleWorkspaceCustomerId;
-    /**
-     * The ID of the Customer that purchased the device.
-     *
-     * @var string
-     */
-    public $ownerCompanyId;
-    /**
-     * The ID of the reseller that claimed the device.
-     *
-     * @var string
-     */
-    public $resellerId;
-    /**
-     * Output only. The type of claim made on the device.
-     *
-     * @var string
-     */
-    public $sectionType;
-    /**
-     * The timestamp when the device will exit ‘vacation mode’. This value is
-     * present iff the device is in 'vacation mode'.
-     *
-     * @var string
-     */
-    public $vacationModeExpireTime;
-    /**
-     * The timestamp when the device was put into ‘vacation mode’. This value is
-     * present iff the device is in 'vacation mode'.
-     *
-     * @var string
-     */
-    public $vacationModeStartTime;
-    /**
-     * The Additional service registered for the device.
-     *
-     * Accepted values: ADDITIONAL_SERVICE_UNSPECIFIED, DEVICE_PROTECTION
-     *
-     * @param self::ADDITIONAL_SERVICE_* $additionalService
-     */
-    public function setAdditionalService($additionalService)
+namespace Google\Service\AndroidProvisioningPartner {
+    class DeviceClaim extends \Google\Model
     {
+        /**
+         * No additional service.
+         */
+        public const ADDITIONAL_SERVICE_ADDITIONAL_SERVICE_UNSPECIFIED = 'ADDITIONAL_SERVICE_UNSPECIFIED';
+        /**
+         * Device protection service, also known as Android Enterprise Essentials. To
+         * claim a device with the device protection service you must enroll with the
+         * partnership team.
+         */
+        public const ADDITIONAL_SERVICE_DEVICE_PROTECTION = 'DEVICE_PROTECTION';
+        /**
+         * Unspecified section type.
+         */
+        public const SECTION_TYPE_SECTION_TYPE_UNSPECIFIED = 'SECTION_TYPE_UNSPECIFIED';
+        /**
+         * SIM-lock section type.
+         */
+        public const SECTION_TYPE_SECTION_TYPE_SIM_LOCK = 'SECTION_TYPE_SIM_LOCK';
+        /**
+         * Zero-touch enrollment section type.
+         */
+        public const SECTION_TYPE_SECTION_TYPE_ZERO_TOUCH = 'SECTION_TYPE_ZERO_TOUCH';
+        /**
+         * The Additional service registered for the device.
+         *
+         * @var string
+         */
+        public $additionalService;
+        /**
+         * The ID of the Google Workspace account that owns the Chrome OS device.
+         *
+         * @var string
+         */
+        public $googleWorkspaceCustomerId;
+        /**
+         * The ID of the Customer that purchased the device.
+         *
+         * @var string
+         */
+        public $ownerCompanyId;
+        /**
+         * The ID of the reseller that claimed the device.
+         *
+         * @var string
+         */
+        public $resellerId;
+        /**
+         * Output only. The type of claim made on the device.
+         *
+         * @var string
+         */
+        public $sectionType;
+        /**
+         * The timestamp when the device will exit ‘vacation mode’. This value is
+         * present iff the device is in 'vacation mode'.
+         *
+         * @var string
+         */
+        public $vacationModeExpireTime;
+        /**
+         * The timestamp when the device was put into ‘vacation mode’. This value is
+         * present iff the device is in 'vacation mode'.
+         *
+         * @var string
+         */
+        public $vacationModeStartTime;
+        /**
+         * The Additional service registered for the device.
+         *
+         * Accepted values: ADDITIONAL_SERVICE_UNSPECIFIED, DEVICE_PROTECTION
+         *
+         * @param self::ADDITIONAL_SERVICE_* $additionalService
+         */
+        public function setAdditionalService($additionalService)
+        {
+        }
+        /**
+         * @return self::ADDITIONAL_SERVICE_*
+         */
+        public function getAdditionalService()
+        {
+        }
+        /**
+         * The ID of the Google Workspace account that owns the Chrome OS device.
+         *
+         * @param string $googleWorkspaceCustomerId
+         */
+        public function setGoogleWorkspaceCustomerId($googleWorkspaceCustomerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleWorkspaceCustomerId()
+        {
+        }
+        /**
+         * The ID of the Customer that purchased the device.
+         *
+         * @param string $ownerCompanyId
+         */
+        public function setOwnerCompanyId($ownerCompanyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerCompanyId()
+        {
+        }
+        /**
+         * The ID of the reseller that claimed the device.
+         *
+         * @param string $resellerId
+         */
+        public function setResellerId($resellerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResellerId()
+        {
+        }
+        /**
+         * Output only. The type of claim made on the device.
+         *
+         * Accepted values: SECTION_TYPE_UNSPECIFIED, SECTION_TYPE_SIM_LOCK,
+         * SECTION_TYPE_ZERO_TOUCH
+         *
+         * @param self::SECTION_TYPE_* $sectionType
+         */
+        public function setSectionType($sectionType)
+        {
+        }
+        /**
+         * @return self::SECTION_TYPE_*
+         */
+        public function getSectionType()
+        {
+        }
+        /**
+         * The timestamp when the device will exit ‘vacation mode’. This value is
+         * present iff the device is in 'vacation mode'.
+         *
+         * @param string $vacationModeExpireTime
+         */
+        public function setVacationModeExpireTime($vacationModeExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVacationModeExpireTime()
+        {
+        }
+        /**
+         * The timestamp when the device was put into ‘vacation mode’. This value is
+         * present iff the device is in 'vacation mode'.
+         *
+         * @param string $vacationModeStartTime
+         */
+        public function setVacationModeStartTime($vacationModeStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVacationModeStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ADDITIONAL_SERVICE_*
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\DeviceClaim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalService()
-    {
-    }
-    /**
-     * The ID of the Google Workspace account that owns the Chrome OS device.
-     *
-     * @param string $googleWorkspaceCustomerId
-     */
-    public function setGoogleWorkspaceCustomerId($googleWorkspaceCustomerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleWorkspaceCustomerId()
-    {
-    }
-    /**
-     * The ID of the Customer that purchased the device.
-     *
-     * @param string $ownerCompanyId
-     */
-    public function setOwnerCompanyId($ownerCompanyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerCompanyId()
-    {
-    }
-    /**
-     * The ID of the reseller that claimed the device.
-     *
-     * @param string $resellerId
-     */
-    public function setResellerId($resellerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResellerId()
-    {
-    }
-    /**
-     * Output only. The type of claim made on the device.
-     *
-     * Accepted values: SECTION_TYPE_UNSPECIFIED, SECTION_TYPE_SIM_LOCK,
-     * SECTION_TYPE_ZERO_TOUCH
-     *
-     * @param self::SECTION_TYPE_* $sectionType
-     */
-    public function setSectionType($sectionType)
-    {
-    }
-    /**
-     * @return self::SECTION_TYPE_*
-     */
-    public function getSectionType()
-    {
-    }
-    /**
-     * The timestamp when the device will exit ‘vacation mode’. This value is
-     * present iff the device is in 'vacation mode'.
-     *
-     * @param string $vacationModeExpireTime
-     */
-    public function setVacationModeExpireTime($vacationModeExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVacationModeExpireTime()
-    {
-    }
-    /**
-     * The timestamp when the device was put into ‘vacation mode’. This value is
-     * present iff the device is in 'vacation mode'.
-     *
-     * @param string $vacationModeStartTime
-     */
-    public function setVacationModeStartTime($vacationModeStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVacationModeStartTime()
+    class Google_Service_AndroidProvisioningPartner_DeviceClaim extends \Google\Service\AndroidProvisioningPartner\DeviceClaim
     {
     }
 }

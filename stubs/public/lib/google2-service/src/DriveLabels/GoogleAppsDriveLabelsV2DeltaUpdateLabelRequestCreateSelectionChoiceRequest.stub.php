@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateSelectionChoiceRequest extends \Google\Model
-{
-    protected $choiceType = GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice::class;
-    protected $choiceDataType = '';
-    /**
-     * Required. The selection field in which a choice will be created.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Required. The choice to create.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice $choice
-     */
-    public function setChoice(GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice $choice)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateSelectionChoiceRequest extends \Google\Model
     {
+        protected $choiceType = GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice::class;
+        protected $choiceDataType = '';
+        /**
+         * Required. The selection field in which a choice will be created.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Required. The choice to create.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice $choice
+         */
+        public function setChoice(GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice $choice)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice
+         */
+        public function getChoice()
+        {
+        }
+        /**
+         * Required. The selection field in which a choice will be created.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateSelectionChoiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChoice()
-    {
-    }
-    /**
-     * Required. The selection field in which a choice will be created.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldId()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateSelectionChoiceRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateSelectionChoiceRequest
     {
     }
 }

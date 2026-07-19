@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareNodePoolAutoscalingConfig extends \Google\Model
-{
-    /**
-     * Maximum number of replicas in the NodePool.
-     *
-     * @var int
-     */
-    public $maxReplicas;
-    /**
-     * Minimum number of replicas in the NodePool.
-     *
-     * @var int
-     */
-    public $minReplicas;
-    /**
-     * Maximum number of replicas in the NodePool.
-     *
-     * @param int $maxReplicas
-     */
-    public function setMaxReplicas($maxReplicas)
+namespace Google\Service\GKEOnPrem {
+    class VmwareNodePoolAutoscalingConfig extends \Google\Model
     {
+        /**
+         * Maximum number of replicas in the NodePool.
+         *
+         * @var int
+         */
+        public $maxReplicas;
+        /**
+         * Minimum number of replicas in the NodePool.
+         *
+         * @var int
+         */
+        public $minReplicas;
+        /**
+         * Maximum number of replicas in the NodePool.
+         *
+         * @param int $maxReplicas
+         */
+        public function setMaxReplicas($maxReplicas)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxReplicas()
+        {
+        }
+        /**
+         * Minimum number of replicas in the NodePool.
+         *
+         * @param int $minReplicas
+         */
+        public function setMinReplicas($minReplicas)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinReplicas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareNodePoolAutoscalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxReplicas()
-    {
-    }
-    /**
-     * Minimum number of replicas in the NodePool.
-     *
-     * @param int $minReplicas
-     */
-    public function setMinReplicas($minReplicas)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinReplicas()
+    class Google_Service_GKEOnPrem_VmwareNodePoolAutoscalingConfig extends \Google\Service\GKEOnPrem\VmwareNodePoolAutoscalingConfig
     {
     }
 }

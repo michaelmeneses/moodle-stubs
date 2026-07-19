@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class TeamDriveInfo extends \Google\Collection
-{
-    protected $collection_key = 'teamDriveIds';
-    /**
-     * List of Team Drive IDs, as provided by the [Drive
-     * API](https://developers.google.com/drive).
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $teamDriveIds;
-    /**
-     * List of Team Drive IDs, as provided by the [Drive
-     * API](https://developers.google.com/drive).
-     *
-     * @deprecated
-     * @param string[] $teamDriveIds
-     */
-    public function setTeamDriveIds($teamDriveIds)
+namespace Google\Service\Vault {
+    class TeamDriveInfo extends \Google\Collection
     {
+        protected $collection_key = 'teamDriveIds';
+        /**
+         * List of Team Drive IDs, as provided by the [Drive
+         * API](https://developers.google.com/drive).
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $teamDriveIds;
+        /**
+         * List of Team Drive IDs, as provided by the [Drive
+         * API](https://developers.google.com/drive).
+         *
+         * @deprecated
+         * @param string[] $teamDriveIds
+         */
+        public function setTeamDriveIds($teamDriveIds)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getTeamDriveIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\TeamDriveInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTeamDriveIds()
+    class Google_Service_Vault_TeamDriveInfo extends \Google\Service\Vault\TeamDriveInfo
     {
     }
 }

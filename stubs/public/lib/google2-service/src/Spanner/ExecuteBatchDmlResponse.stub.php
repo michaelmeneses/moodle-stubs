@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ExecuteBatchDmlResponse extends \Google\Collection
-{
-    protected $collection_key = 'resultSets';
-    protected $precommitTokenType = MultiplexedSessionPrecommitToken::class;
-    protected $precommitTokenDataType = '';
-    protected $resultSetsType = ResultSet::class;
-    protected $resultSetsDataType = 'array';
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * Optional. A precommit token is included if the read-write transaction is on
-     * a multiplexed session. Pass the precommit token with the highest sequence
-     * number from this transaction attempt should be passed to the Commit request
-     * for this transaction.
-     *
-     * @param MultiplexedSessionPrecommitToken $precommitToken
-     */
-    public function setPrecommitToken(MultiplexedSessionPrecommitToken $precommitToken)
+namespace Google\Service\Spanner {
+    class ExecuteBatchDmlResponse extends \Google\Collection
     {
+        protected $collection_key = 'resultSets';
+        protected $precommitTokenType = MultiplexedSessionPrecommitToken::class;
+        protected $precommitTokenDataType = '';
+        protected $resultSetsType = ResultSet::class;
+        protected $resultSetsDataType = 'array';
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * Optional. A precommit token is included if the read-write transaction is on
+         * a multiplexed session. Pass the precommit token with the highest sequence
+         * number from this transaction attempt should be passed to the Commit request
+         * for this transaction.
+         *
+         * @param MultiplexedSessionPrecommitToken $precommitToken
+         */
+        public function setPrecommitToken(MultiplexedSessionPrecommitToken $precommitToken)
+        {
+        }
+        /**
+         * @return MultiplexedSessionPrecommitToken
+         */
+        public function getPrecommitToken()
+        {
+        }
+        /**
+         * One ResultSet for each statement in the request that ran successfully, in
+         * the same order as the statements in the request. Each ResultSet does not
+         * contain any rows. The ResultSetStats in each ResultSet contain the number
+         * of rows modified by the statement. Only the first ResultSet in the response
+         * contains valid ResultSetMetadata.
+         *
+         * @param ResultSet[] $resultSets
+         */
+        public function setResultSets($resultSets)
+        {
+        }
+        /**
+         * @return ResultSet[]
+         */
+        public function getResultSets()
+        {
+        }
+        /**
+         * If all DML statements are executed successfully, the status is `OK`.
+         * Otherwise, the error status of the first failed statement.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MultiplexedSessionPrecommitToken
+     * Runtime class alias of \Google\Service\Spanner\ExecuteBatchDmlResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrecommitToken()
-    {
-    }
-    /**
-     * One ResultSet for each statement in the request that ran successfully, in
-     * the same order as the statements in the request. Each ResultSet does not
-     * contain any rows. The ResultSetStats in each ResultSet contain the number
-     * of rows modified by the statement. Only the first ResultSet in the response
-     * contains valid ResultSetMetadata.
-     *
-     * @param ResultSet[] $resultSets
-     */
-    public function setResultSets($resultSets)
-    {
-    }
-    /**
-     * @return ResultSet[]
-     */
-    public function getResultSets()
-    {
-    }
-    /**
-     * If all DML statements are executed successfully, the status is `OK`.
-     * Otherwise, the error status of the first failed statement.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_Spanner_ExecuteBatchDmlResponse extends \Google\Service\Spanner\ExecuteBatchDmlResponse
     {
     }
 }

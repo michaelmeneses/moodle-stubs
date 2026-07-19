@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EventActions extends \Google\Model
-{
-    /**
-     * Optional. Indicates that the event is updating an artifact. key is the
-     * filename, value is the version.
-     *
-     * @var int[]
-     */
-    public $artifactDelta;
-    /**
-     * Optional. The agent is escalating to a higher level agent.
-     *
-     * @var bool
-     */
-    public $escalate;
-    /**
-     * Optional. Will only be set by a tool response indicating tool request euc.
-     * Struct key is the function call id since one function call response (from
-     * model) could correspond to multiple function calls. Struct value is the
-     * required auth config, which can be another struct.
-     *
-     * @var array[]
-     */
-    public $requestedAuthConfigs;
-    /**
-     * Optional. If true, it won't call model to summarize function response. Only
-     * used for function_response event.
-     *
-     * @var bool
-     */
-    public $skipSummarization;
-    /**
-     * Optional. Indicates that the event is updating the state with the given
-     * delta.
-     *
-     * @var array[]
-     */
-    public $stateDelta;
-    /**
-     * Optional. If set, the event transfers to the specified agent.
-     *
-     * @var string
-     */
-    public $transferAgent;
-    /**
-     * Optional. Indicates that the event is updating an artifact. key is the
-     * filename, value is the version.
-     *
-     * @param int[] $artifactDelta
-     */
-    public function setArtifactDelta($artifactDelta)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EventActions extends \Google\Model
     {
+        /**
+         * Optional. Indicates that the event is updating an artifact. key is the
+         * filename, value is the version.
+         *
+         * @var int[]
+         */
+        public $artifactDelta;
+        /**
+         * Optional. The agent is escalating to a higher level agent.
+         *
+         * @var bool
+         */
+        public $escalate;
+        /**
+         * Optional. Will only be set by a tool response indicating tool request euc.
+         * Struct key is the function call id since one function call response (from
+         * model) could correspond to multiple function calls. Struct value is the
+         * required auth config, which can be another struct.
+         *
+         * @var array[]
+         */
+        public $requestedAuthConfigs;
+        /**
+         * Optional. If true, it won't call model to summarize function response. Only
+         * used for function_response event.
+         *
+         * @var bool
+         */
+        public $skipSummarization;
+        /**
+         * Optional. Indicates that the event is updating the state with the given
+         * delta.
+         *
+         * @var array[]
+         */
+        public $stateDelta;
+        /**
+         * Optional. If set, the event transfers to the specified agent.
+         *
+         * @var string
+         */
+        public $transferAgent;
+        /**
+         * Optional. Indicates that the event is updating an artifact. key is the
+         * filename, value is the version.
+         *
+         * @param int[] $artifactDelta
+         */
+        public function setArtifactDelta($artifactDelta)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getArtifactDelta()
+        {
+        }
+        /**
+         * Optional. The agent is escalating to a higher level agent.
+         *
+         * @param bool $escalate
+         */
+        public function setEscalate($escalate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEscalate()
+        {
+        }
+        /**
+         * Optional. Will only be set by a tool response indicating tool request euc.
+         * Struct key is the function call id since one function call response (from
+         * model) could correspond to multiple function calls. Struct value is the
+         * required auth config, which can be another struct.
+         *
+         * @param array[] $requestedAuthConfigs
+         */
+        public function setRequestedAuthConfigs($requestedAuthConfigs)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRequestedAuthConfigs()
+        {
+        }
+        /**
+         * Optional. If true, it won't call model to summarize function response. Only
+         * used for function_response event.
+         *
+         * @param bool $skipSummarization
+         */
+        public function setSkipSummarization($skipSummarization)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipSummarization()
+        {
+        }
+        /**
+         * Optional. Indicates that the event is updating the state with the given
+         * delta.
+         *
+         * @param array[] $stateDelta
+         */
+        public function setStateDelta($stateDelta)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStateDelta()
+        {
+        }
+        /**
+         * Optional. If set, the event transfers to the specified agent.
+         *
+         * @param string $transferAgent
+         */
+        public function setTransferAgent($transferAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransferAgent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EventActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactDelta()
-    {
-    }
-    /**
-     * Optional. The agent is escalating to a higher level agent.
-     *
-     * @param bool $escalate
-     */
-    public function setEscalate($escalate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEscalate()
-    {
-    }
-    /**
-     * Optional. Will only be set by a tool response indicating tool request euc.
-     * Struct key is the function call id since one function call response (from
-     * model) could correspond to multiple function calls. Struct value is the
-     * required auth config, which can be another struct.
-     *
-     * @param array[] $requestedAuthConfigs
-     */
-    public function setRequestedAuthConfigs($requestedAuthConfigs)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRequestedAuthConfigs()
-    {
-    }
-    /**
-     * Optional. If true, it won't call model to summarize function response. Only
-     * used for function_response event.
-     *
-     * @param bool $skipSummarization
-     */
-    public function setSkipSummarization($skipSummarization)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipSummarization()
-    {
-    }
-    /**
-     * Optional. Indicates that the event is updating the state with the given
-     * delta.
-     *
-     * @param array[] $stateDelta
-     */
-    public function setStateDelta($stateDelta)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStateDelta()
-    {
-    }
-    /**
-     * Optional. If set, the event transfers to the specified agent.
-     *
-     * @param string $transferAgent
-     */
-    public function setTransferAgent($transferAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransferAgent()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EventActions extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EventActions
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue extends \Google\Model
-{
-    protected $partListType = GoogleCloudAiplatformV1SchemaPromptSpecPartList::class;
-    protected $partListDataType = '';
-    /**
-     * The parts of the variable value.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecPartList $partList
-     */
-    public function setPartList(GoogleCloudAiplatformV1SchemaPromptSpecPartList $partList)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue extends \Google\Model
     {
+        protected $partListType = GoogleCloudAiplatformV1SchemaPromptSpecPartList::class;
+        protected $partListDataType = '';
+        /**
+         * The parts of the variable value.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecPartList $partList
+         */
+        public function setPartList(GoogleCloudAiplatformV1SchemaPromptSpecPartList $partList)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecPartList
+         */
+        public function getPartList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecPartList
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartList()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue
     {
     }
 }

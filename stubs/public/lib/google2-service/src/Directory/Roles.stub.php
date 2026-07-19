@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Roles extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Role::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The type of the API resource. This is always `admin#directory#roles`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class Roles extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Role::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The type of the API resource. This is always `admin#directory#roles`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of Role resources.
+         *
+         * @param Role[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Role[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#roles`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Roles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of Role resources.
-     *
-     * @param Role[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Role[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#roles`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Directory_Roles extends \Google\Service\Directory\Roles
     {
     }
 }

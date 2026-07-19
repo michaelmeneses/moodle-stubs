@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminMaintenanceStatus extends \Google\Model
-{
-    protected $machineDrainStatusType = BareMetalAdminMachineDrainStatus::class;
-    protected $machineDrainStatusDataType = '';
-    /**
-     * Represents the status of draining and drained machine nodes. This is used
-     * to show the progress of cluster upgrade.
-     *
-     * @param BareMetalAdminMachineDrainStatus $machineDrainStatus
-     */
-    public function setMachineDrainStatus(BareMetalAdminMachineDrainStatus $machineDrainStatus)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminMaintenanceStatus extends \Google\Model
     {
+        protected $machineDrainStatusType = BareMetalAdminMachineDrainStatus::class;
+        protected $machineDrainStatusDataType = '';
+        /**
+         * Represents the status of draining and drained machine nodes. This is used
+         * to show the progress of cluster upgrade.
+         *
+         * @param BareMetalAdminMachineDrainStatus $machineDrainStatus
+         */
+        public function setMachineDrainStatus(BareMetalAdminMachineDrainStatus $machineDrainStatus)
+        {
+        }
+        /**
+         * @return BareMetalAdminMachineDrainStatus
+         */
+        public function getMachineDrainStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalAdminMachineDrainStatus
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminMaintenanceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineDrainStatus()
+    class Google_Service_GKEOnPrem_BareMetalAdminMaintenanceStatus extends \Google\Service\GKEOnPrem\BareMetalAdminMaintenanceStatus
     {
     }
 }

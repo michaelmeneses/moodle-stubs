@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class IngestPairDataStatus extends \Google\Model
-{
-    /**
-     * The total count of pair ids sent in the upload request for the destination.
-     * Includes all pair ids in the request, regardless of whether they were
-     * successfully ingested or not.
-     *
-     * @var string
-     */
-    public $pairIdCount;
-    /**
-     * The total count of audience members sent in the upload request for the
-     * destination. Includes all audience members in the request, regardless of
-     * whether they were successfully ingested or not.
-     *
-     * @var string
-     */
-    public $recordCount;
-    /**
-     * The total count of pair ids sent in the upload request for the destination.
-     * Includes all pair ids in the request, regardless of whether they were
-     * successfully ingested or not.
-     *
-     * @param string $pairIdCount
-     */
-    public function setPairIdCount($pairIdCount)
+namespace Google\Service\DataManager {
+    class IngestPairDataStatus extends \Google\Model
     {
+        /**
+         * The total count of pair ids sent in the upload request for the destination.
+         * Includes all pair ids in the request, regardless of whether they were
+         * successfully ingested or not.
+         *
+         * @var string
+         */
+        public $pairIdCount;
+        /**
+         * The total count of audience members sent in the upload request for the
+         * destination. Includes all audience members in the request, regardless of
+         * whether they were successfully ingested or not.
+         *
+         * @var string
+         */
+        public $recordCount;
+        /**
+         * The total count of pair ids sent in the upload request for the destination.
+         * Includes all pair ids in the request, regardless of whether they were
+         * successfully ingested or not.
+         *
+         * @param string $pairIdCount
+         */
+        public function setPairIdCount($pairIdCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPairIdCount()
+        {
+        }
+        /**
+         * The total count of audience members sent in the upload request for the
+         * destination. Includes all audience members in the request, regardless of
+         * whether they were successfully ingested or not.
+         *
+         * @param string $recordCount
+         */
+        public function setRecordCount($recordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\IngestPairDataStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPairIdCount()
-    {
-    }
-    /**
-     * The total count of audience members sent in the upload request for the
-     * destination. Includes all audience members in the request, regardless of
-     * whether they were successfully ingested or not.
-     *
-     * @param string $recordCount
-     */
-    public function setRecordCount($recordCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordCount()
+    class Google_Service_DataManager_IngestPairDataStatus extends \Google\Service\DataManager\IngestPairDataStatus
     {
     }
 }

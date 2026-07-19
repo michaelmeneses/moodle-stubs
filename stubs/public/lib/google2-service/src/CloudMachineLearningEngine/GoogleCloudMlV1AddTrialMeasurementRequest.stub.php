@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1AddTrialMeasurementRequest extends \Google\Model
-{
-    protected $measurementType = GoogleCloudMlV1Measurement::class;
-    protected $measurementDataType = '';
-    /**
-     * Required. The measurement to be added to a trial.
-     *
-     * @param GoogleCloudMlV1Measurement $measurement
-     */
-    public function setMeasurement(GoogleCloudMlV1Measurement $measurement)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1AddTrialMeasurementRequest extends \Google\Model
     {
+        protected $measurementType = GoogleCloudMlV1Measurement::class;
+        protected $measurementDataType = '';
+        /**
+         * Required. The measurement to be added to a trial.
+         *
+         * @param GoogleCloudMlV1Measurement $measurement
+         */
+        public function setMeasurement(GoogleCloudMlV1Measurement $measurement)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Measurement
+         */
+        public function getMeasurement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Measurement
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AddTrialMeasurementRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeasurement()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AddTrialMeasurementRequest extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AddTrialMeasurementRequest
     {
     }
 }

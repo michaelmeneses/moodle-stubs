@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListContentResponse extends \Google\Collection
-{
-    protected $collection_key = 'content';
-    protected $contentType = GoogleCloudDataplexV1Content::class;
-    protected $contentDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Content under the given parent lake.
-     *
-     * @param GoogleCloudDataplexV1Content[] $content
-     */
-    public function setContent($content)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListContentResponse extends \Google\Collection
     {
+        protected $collection_key = 'content';
+        protected $contentType = GoogleCloudDataplexV1Content::class;
+        protected $contentDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Content under the given parent lake.
+         *
+         * @param GoogleCloudDataplexV1Content[] $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Content[]
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Content[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListContentResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListContentResponse
     {
     }
 }

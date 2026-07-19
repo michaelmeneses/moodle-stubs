@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountStatusAccountLevelIssue extends \Google\Model
-{
-    /**
-     * Country for which this issue is reported.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The destination the issue applies to. If this field is empty then the issue
-     * applies to all available destinations.
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * Additional details about the issue.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * The URL of a web page to help resolving this issue.
-     *
-     * @var string
-     */
-    public $documentation;
-    /**
-     * Issue identifier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Severity of the issue. Acceptable values are: - "`critical`" - "`error`" -
-     * "`suggestion`"
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Short description of the issue.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Country for which this issue is reported.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class AccountStatusAccountLevelIssue extends \Google\Model
     {
+        /**
+         * Country for which this issue is reported.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The destination the issue applies to. If this field is empty then the issue
+         * applies to all available destinations.
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * Additional details about the issue.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * The URL of a web page to help resolving this issue.
+         *
+         * @var string
+         */
+        public $documentation;
+        /**
+         * Issue identifier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Severity of the issue. Acceptable values are: - "`critical`" - "`error`" -
+         * "`suggestion`"
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Short description of the issue.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Country for which this issue is reported.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The destination the issue applies to. If this field is empty then the issue
+         * applies to all available destinations.
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Additional details about the issue.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * The URL of a web page to help resolving this issue.
+         *
+         * @param string $documentation
+         */
+        public function setDocumentation($documentation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentation()
+        {
+        }
+        /**
+         * Issue identifier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Severity of the issue. Acceptable values are: - "`critical`" - "`error`" -
+         * "`suggestion`"
+         *
+         * @param string $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Short description of the issue.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountStatusAccountLevelIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * The destination the issue applies to. If this field is empty then the issue
-     * applies to all available destinations.
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * Additional details about the issue.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetail()
-    {
-    }
-    /**
-     * The URL of a web page to help resolving this issue.
-     *
-     * @param string $documentation
-     */
-    public function setDocumentation($documentation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentation()
-    {
-    }
-    /**
-     * Issue identifier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Severity of the issue. Acceptable values are: - "`critical`" - "`error`" -
-     * "`suggestion`"
-     *
-     * @param string $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Short description of the issue.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_ShoppingContent_AccountStatusAccountLevelIssue extends \Google\Service\ShoppingContent\AccountStatusAccountLevelIssue
     {
     }
 }

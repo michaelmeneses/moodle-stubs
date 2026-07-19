@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1OpenApiSpecDetails extends \Google\Model
-{
-    /**
-     * SpecFile type unspecified.
-     */
-    public const FORMAT_FORMAT_UNSPECIFIED = 'FORMAT_UNSPECIFIED';
-    /**
-     * OpenAPI Spec v2.0.
-     */
-    public const FORMAT_OPEN_API_SPEC_2_0 = 'OPEN_API_SPEC_2_0';
-    /**
-     * OpenAPI Spec v3.0.
-     */
-    public const FORMAT_OPEN_API_SPEC_3_0 = 'OPEN_API_SPEC_3_0';
-    /**
-     * OpenAPI Spec v3.1.
-     */
-    public const FORMAT_OPEN_API_SPEC_3_1 = 'OPEN_API_SPEC_3_1';
-    /**
-     * Output only. The format of the spec.
-     *
-     * @var string
-     */
-    public $format;
-    protected $ownerType = GoogleCloudApihubV1Owner::class;
-    protected $ownerDataType = '';
-    /**
-     * Output only. The version in the spec. This maps to `info.version` in
-     * OpenAPI spec.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. The format of the spec.
-     *
-     * Accepted values: FORMAT_UNSPECIFIED, OPEN_API_SPEC_2_0, OPEN_API_SPEC_3_0,
-     * OPEN_API_SPEC_3_1
-     *
-     * @param self::FORMAT_* $format
-     */
-    public function setFormat($format)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1OpenApiSpecDetails extends \Google\Model
     {
+        /**
+         * SpecFile type unspecified.
+         */
+        public const FORMAT_FORMAT_UNSPECIFIED = 'FORMAT_UNSPECIFIED';
+        /**
+         * OpenAPI Spec v2.0.
+         */
+        public const FORMAT_OPEN_API_SPEC_2_0 = 'OPEN_API_SPEC_2_0';
+        /**
+         * OpenAPI Spec v3.0.
+         */
+        public const FORMAT_OPEN_API_SPEC_3_0 = 'OPEN_API_SPEC_3_0';
+        /**
+         * OpenAPI Spec v3.1.
+         */
+        public const FORMAT_OPEN_API_SPEC_3_1 = 'OPEN_API_SPEC_3_1';
+        /**
+         * Output only. The format of the spec.
+         *
+         * @var string
+         */
+        public $format;
+        protected $ownerType = GoogleCloudApihubV1Owner::class;
+        protected $ownerDataType = '';
+        /**
+         * Output only. The version in the spec. This maps to `info.version` in
+         * OpenAPI spec.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. The format of the spec.
+         *
+         * Accepted values: FORMAT_UNSPECIFIED, OPEN_API_SPEC_2_0, OPEN_API_SPEC_3_0,
+         * OPEN_API_SPEC_3_1
+         *
+         * @param self::FORMAT_* $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return self::FORMAT_*
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * Output only. Owner details for the spec. This maps to `info.contact` in
+         * OpenAPI spec.
+         *
+         * @param GoogleCloudApihubV1Owner $owner
+         */
+        public function setOwner(GoogleCloudApihubV1Owner $owner)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Owner
+         */
+        public function getOwner()
+        {
+        }
+        /**
+         * Output only. The version in the spec. This maps to `info.version` in
+         * OpenAPI spec.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FORMAT_*
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1OpenApiSpecDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * Output only. Owner details for the spec. This maps to `info.contact` in
-     * OpenAPI spec.
-     *
-     * @param GoogleCloudApihubV1Owner $owner
-     */
-    public function setOwner(GoogleCloudApihubV1Owner $owner)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Owner
-     */
-    public function getOwner()
-    {
-    }
-    /**
-     * Output only. The version in the spec. This maps to `info.version` in
-     * OpenAPI spec.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_APIhub_GoogleCloudApihubV1OpenApiSpecDetails extends \Google\Service\APIhub\GoogleCloudApihubV1OpenApiSpecDetails
     {
     }
 }

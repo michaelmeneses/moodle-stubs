@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ApplicationAttemptInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $appSparkVersion;
-    /**
-     * @var string
-     */
-    public $attemptId;
-    /**
-     * @var bool
-     */
-    public $completed;
-    /**
-     * @var string
-     */
-    public $durationMillis;
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * @var string
-     */
-    public $sparkUser;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @param string $appSparkVersion
-     */
-    public function setAppSparkVersion($appSparkVersion)
+namespace Google\Service\Dataproc {
+    class ApplicationAttemptInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $appSparkVersion;
+        /**
+         * @var string
+         */
+        public $attemptId;
+        /**
+         * @var bool
+         */
+        public $completed;
+        /**
+         * @var string
+         */
+        public $durationMillis;
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * @var string
+         */
+        public $sparkUser;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @param string $appSparkVersion
+         */
+        public function setAppSparkVersion($appSparkVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppSparkVersion()
+        {
+        }
+        /**
+         * @param string $attemptId
+         */
+        public function setAttemptId($attemptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttemptId()
+        {
+        }
+        /**
+         * @param bool $completed
+         */
+        public function setCompleted($completed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompleted()
+        {
+        }
+        /**
+         * @param string $durationMillis
+         */
+        public function setDurationMillis($durationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
+        /**
+         * @param string $sparkUser
+         */
+        public function setSparkUser($sparkUser)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSparkUser()
+        {
+        }
+        /**
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ApplicationAttemptInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppSparkVersion()
-    {
-    }
-    /**
-     * @param string $attemptId
-     */
-    public function setAttemptId($attemptId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttemptId()
-    {
-    }
-    /**
-     * @param bool $completed
-     */
-    public function setCompleted($completed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCompleted()
-    {
-    }
-    /**
-     * @param string $durationMillis
-     */
-    public function setDurationMillis($durationMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdated()
-    {
-    }
-    /**
-     * @param string $sparkUser
-     */
-    public function setSparkUser($sparkUser)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSparkUser()
-    {
-    }
-    /**
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Dataproc_ApplicationAttemptInfo extends \Google\Service\Dataproc\ApplicationAttemptInfo
     {
     }
 }

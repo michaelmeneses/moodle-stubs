@@ -21,60 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "exports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $exports = $apigeeService->organizations_environments_analytics_exports;
- *  </code>
- */
-class OrganizationsEnvironmentsAnalyticsExports extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Export;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ExportRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListExportsResponse;
     /**
-     * Submit a data export job to be processed in the background. If the request is
-     * successful, the API returns a 201 status, a URI that can be used to retrieve
-     * the status of the export job, and the `state` value of "enqueued".
-     * (exports.create)
-     *
-     * @param string $parent Required. Names of the parent organization and
-     * environment. Must be of the form `organizations/{org}/environments/{env}`.
-     * @param GoogleCloudApigeeV1ExportRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Export
-     * @throws \Google\Service\Exception
+     * The "exports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $exports = $apigeeService->organizations_environments_analytics_exports;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1ExportRequest $postBody, $optParams = [])
+    class OrganizationsEnvironmentsAnalyticsExports extends \Google\Service\Resource
     {
+        /**
+         * Submit a data export job to be processed in the background. If the request is
+         * successful, the API returns a 201 status, a URI that can be used to retrieve
+         * the status of the export job, and the `state` value of "enqueued".
+         * (exports.create)
+         *
+         * @param string $parent Required. Names of the parent organization and
+         * environment. Must be of the form `organizations/{org}/environments/{env}`.
+         * @param GoogleCloudApigeeV1ExportRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Export
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1ExportRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details and status of an analytics export job. If the export job is
+         * still in progress, its `state` is set to "running". After the export job has
+         * completed successfully, its `state` is set to "completed". If the export job
+         * fails, its `state` is set to `failed`. (exports.get)
+         *
+         * @param string $name Required. Resource name of the export to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Export
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the details and status of all analytics export jobs belonging to the
+         * parent organization and environment.
+         * (exports.listOrganizationsEnvironmentsAnalyticsExports)
+         *
+         * @param string $parent Required. Names of the parent organization and
+         * environment. Must be of the form `organizations/{org}/environments/{env}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ListExportsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsEnvironmentsAnalyticsExports($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the details and status of an analytics export job. If the export job is
-     * still in progress, its `state` is set to "running". After the export job has
-     * completed successfully, its `state` is set to "completed". If the export job
-     * fails, its `state` is set to `failed`. (exports.get)
-     *
-     * @param string $name Required. Resource name of the export to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Export
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsAnalyticsExports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the details and status of all analytics export jobs belonging to the
-     * parent organization and environment.
-     * (exports.listOrganizationsEnvironmentsAnalyticsExports)
-     *
-     * @param string $parent Required. Names of the parent organization and
-     * environment. Must be of the form `organizations/{org}/environments/{env}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ListExportsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsEnvironmentsAnalyticsExports($parent, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsAnalyticsExports extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsAnalyticsExports
     {
     }
 }

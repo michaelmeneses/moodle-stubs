@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $policysimulatorService = new Google\Service\PolicySimulator(...);
- *   $operations = $policysimulatorService->organizations_locations_replays_operations;
- *  </code>
- */
-class OrganizationsLocationsReplaysOperations extends \Google\Service\Resource
-{
+namespace Google\Service\PolicySimulator\Resource {
+    use Google\Service\PolicySimulator\GoogleLongrunningListOperationsResponse;
+    use Google\Service\PolicySimulator\GoogleLongrunningOperation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $policysimulatorService = new Google\Service\PolicySimulator(...);
+     *   $operations = $policysimulatorService->organizations_locations_replays_operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class OrganizationsLocationsReplaysOperations extends \Google\Service\Resource
     {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`.
+         * (operations.listOrganizationsLocationsReplaysOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @opt_param bool returnPartialSuccess When set to `true`, operations that are
+         * reachable are returned as normal, and those that are unreachable are returned
+         * in the ListOperationsResponse.unreachable field. This can only be `true` when
+         * reading across collections. For example, when `parent` is set to
+         * `"projects/example/locations/-"`. This field is not supported by default and
+         * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
+         * otherwise in service or product specific documentation.
+         * @return GoogleLongrunningListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsReplaysOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`.
-     * (operations.listOrganizationsLocationsReplaysOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @opt_param bool returnPartialSuccess When set to `true`, operations that are
-     * reachable are returned as normal, and those that are unreachable are returned
-     * in the ListOperationsResponse.unreachable field. This can only be `true` when
-     * reading across collections. For example, when `parent` is set to
-     * `"projects/example/locations/-"`. This field is not supported by default and
-     * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
-     * otherwise in service or product specific documentation.
-     * @return GoogleLongrunningListOperationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\PolicySimulator\Resource\OrganizationsLocationsReplaysOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOrganizationsLocationsReplaysOperations($name, $optParams = [])
+    class Google_Service_PolicySimulator_Resource_OrganizationsLocationsReplaysOperations extends \Google\Service\PolicySimulator\Resource\OrganizationsLocationsReplaysOperations
     {
     }
 }

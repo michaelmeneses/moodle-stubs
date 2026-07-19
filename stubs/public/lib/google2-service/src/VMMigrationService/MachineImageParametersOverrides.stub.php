@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class MachineImageParametersOverrides extends \Google\Model
-{
-    /**
-     * Optional. The machine type to create the MachineImage with. If empty, the
-     * service will choose a relevant machine type based on the information from
-     * the source image. For more information about machine types, please refer to
-     * https://cloud.google.com/compute/docs/machine-resource.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Optional. The machine type to create the MachineImage with. If empty, the
-     * service will choose a relevant machine type based on the information from
-     * the source image. For more information about machine types, please refer to
-     * https://cloud.google.com/compute/docs/machine-resource.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\VMMigrationService {
+    class MachineImageParametersOverrides extends \Google\Model
     {
+        /**
+         * Optional. The machine type to create the MachineImage with. If empty, the
+         * service will choose a relevant machine type based on the information from
+         * the source image. For more information about machine types, please refer to
+         * https://cloud.google.com/compute/docs/machine-resource.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Optional. The machine type to create the MachineImage with. If empty, the
+         * service will choose a relevant machine type based on the information from
+         * the source image. For more information about machine types, please refer to
+         * https://cloud.google.com/compute/docs/machine-resource.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\MachineImageParametersOverrides registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
+    class Google_Service_VMMigrationService_MachineImageParametersOverrides extends \Google\Service\VMMigrationService\MachineImageParametersOverrides
     {
     }
 }

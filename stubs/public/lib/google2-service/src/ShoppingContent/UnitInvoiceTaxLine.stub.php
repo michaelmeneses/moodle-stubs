@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class UnitInvoiceTaxLine extends \Google\Model
-{
-    protected $taxAmountType = Price::class;
-    protected $taxAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $taxName;
-    /**
-     * @var string
-     */
-    public $taxType;
-    /**
-     * @param Price
-     */
-    public function setTaxAmount(Price $taxAmount)
+namespace Google\Service\ShoppingContent {
+    class UnitInvoiceTaxLine extends \Google\Model
     {
+        protected $taxAmountType = Price::class;
+        protected $taxAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $taxName;
+        /**
+         * @var string
+         */
+        public $taxType;
+        /**
+         * @param Price
+         */
+        public function setTaxAmount(Price $taxAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTaxAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTaxName($taxName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaxName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTaxType($taxType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaxType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\UnitInvoiceTaxLine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaxAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTaxName($taxName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaxName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTaxType($taxType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaxType()
+    class Google_Service_ShoppingContent_UnitInvoiceTaxLine extends \Google\Service\ShoppingContent\UnitInvoiceTaxLine
     {
     }
 }

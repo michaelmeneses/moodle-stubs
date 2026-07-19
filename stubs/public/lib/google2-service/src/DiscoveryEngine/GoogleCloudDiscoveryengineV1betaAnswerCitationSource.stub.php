@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerCitationSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $referenceId;
-    /**
-     * @param string
-     */
-    public function setReferenceId($referenceId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerCitationSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $referenceId;
+        /**
+         * @param string
+         */
+        public function setReferenceId($referenceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerCitationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerCitationSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerCitationSource
     {
     }
 }

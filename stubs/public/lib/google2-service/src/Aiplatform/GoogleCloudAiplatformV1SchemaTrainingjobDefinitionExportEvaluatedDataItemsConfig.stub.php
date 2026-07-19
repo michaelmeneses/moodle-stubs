@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionExportEvaluatedDataItemsConfig extends \Google\Model
-{
-    /**
-     * URI of desired destination BigQuery table. Expected format:
-     * `bq://{project_id}:{dataset_id}:{table}` If not specified, then results are
-     * exported to the following auto-created BigQuery table: `{project_id}:export
-     * _evaluated_examples_{model_name}_{yyyy_MM_dd'T'HH_mm_ss_SSS'Z'}.evaluated_e
-     * xamples`
-     *
-     * @var string
-     */
-    public $destinationBigqueryUri;
-    /**
-     * If true and an export destination is specified, then the contents of the
-     * destination are overwritten. Otherwise, if the export destination already
-     * exists, then the export operation fails.
-     *
-     * @var bool
-     */
-    public $overrideExistingTable;
-    /**
-     * URI of desired destination BigQuery table. Expected format:
-     * `bq://{project_id}:{dataset_id}:{table}` If not specified, then results are
-     * exported to the following auto-created BigQuery table: `{project_id}:export
-     * _evaluated_examples_{model_name}_{yyyy_MM_dd'T'HH_mm_ss_SSS'Z'}.evaluated_e
-     * xamples`
-     *
-     * @param string $destinationBigqueryUri
-     */
-    public function setDestinationBigqueryUri($destinationBigqueryUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionExportEvaluatedDataItemsConfig extends \Google\Model
     {
+        /**
+         * URI of desired destination BigQuery table. Expected format:
+         * `bq://{project_id}:{dataset_id}:{table}` If not specified, then results are
+         * exported to the following auto-created BigQuery table: `{project_id}:export
+         * _evaluated_examples_{model_name}_{yyyy_MM_dd'T'HH_mm_ss_SSS'Z'}.evaluated_e
+         * xamples`
+         *
+         * @var string
+         */
+        public $destinationBigqueryUri;
+        /**
+         * If true and an export destination is specified, then the contents of the
+         * destination are overwritten. Otherwise, if the export destination already
+         * exists, then the export operation fails.
+         *
+         * @var bool
+         */
+        public $overrideExistingTable;
+        /**
+         * URI of desired destination BigQuery table. Expected format:
+         * `bq://{project_id}:{dataset_id}:{table}` If not specified, then results are
+         * exported to the following auto-created BigQuery table: `{project_id}:export
+         * _evaluated_examples_{model_name}_{yyyy_MM_dd'T'HH_mm_ss_SSS'Z'}.evaluated_e
+         * xamples`
+         *
+         * @param string $destinationBigqueryUri
+         */
+        public function setDestinationBigqueryUri($destinationBigqueryUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationBigqueryUri()
+        {
+        }
+        /**
+         * If true and an export destination is specified, then the contents of the
+         * destination are overwritten. Otherwise, if the export destination already
+         * exists, then the export operation fails.
+         *
+         * @param bool $overrideExistingTable
+         */
+        public function setOverrideExistingTable($overrideExistingTable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOverrideExistingTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionExportEvaluatedDataItemsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationBigqueryUri()
-    {
-    }
-    /**
-     * If true and an export destination is specified, then the contents of the
-     * destination are overwritten. Otherwise, if the export destination already
-     * exists, then the export operation fails.
-     *
-     * @param bool $overrideExistingTable
-     */
-    public function setOverrideExistingTable($overrideExistingTable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOverrideExistingTable()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionExportEvaluatedDataItemsConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionExportEvaluatedDataItemsConfig
     {
     }
 }

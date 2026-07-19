@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class FileLocation extends \Google\Model
-{
-    /**
-     * For jars that are contained inside .war files, this filepath can indicate
-     * the path to war file combined with the path to jar file.
-     *
-     * @var string
-     */
-    public $filePath;
-    protected $layerDetailsType = LayerDetails::class;
-    protected $layerDetailsDataType = '';
-    /**
-     * For jars that are contained inside .war files, this filepath can indicate
-     * the path to war file combined with the path to jar file.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
+namespace Google\Service\OnDemandScanning {
+    class FileLocation extends \Google\Model
     {
+        /**
+         * For jars that are contained inside .war files, this filepath can indicate
+         * the path to war file combined with the path to jar file.
+         *
+         * @var string
+         */
+        public $filePath;
+        protected $layerDetailsType = LayerDetails::class;
+        protected $layerDetailsDataType = '';
+        /**
+         * For jars that are contained inside .war files, this filepath can indicate
+         * the path to war file combined with the path to jar file.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * @param LayerDetails $layerDetails
+         */
+        public function setLayerDetails(LayerDetails $layerDetails)
+        {
+        }
+        /**
+         * @return LayerDetails
+         */
+        public function getLayerDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\FileLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePath()
-    {
-    }
-    /**
-     * @param LayerDetails $layerDetails
-     */
-    public function setLayerDetails(LayerDetails $layerDetails)
-    {
-    }
-    /**
-     * @return LayerDetails
-     */
-    public function getLayerDetails()
+    class Google_Service_OnDemandScanning_FileLocation extends \Google\Service\OnDemandScanning\FileLocation
     {
     }
 }

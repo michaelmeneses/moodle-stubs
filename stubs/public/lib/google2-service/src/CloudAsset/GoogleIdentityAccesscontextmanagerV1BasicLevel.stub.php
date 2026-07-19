@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleIdentityAccesscontextmanagerV1BasicLevel extends \Google\Collection
-{
-    /**
-     * All `Conditions` must be true for the `BasicLevel` to be true.
-     */
-    public const COMBINING_FUNCTION_AND = 'AND';
-    /**
-     * If at least one `Condition` is true, then the `BasicLevel` is true.
-     */
-    public const COMBINING_FUNCTION_OR = 'OR';
-    protected $collection_key = 'conditions';
-    /**
-     * How the `conditions` list should be combined to determine if a request is
-     * granted this `AccessLevel`. If AND is used, each `Condition` in
-     * `conditions` must be satisfied for the `AccessLevel` to be applied. If OR
-     * is used, at least one `Condition` in `conditions` must be satisfied for the
-     * `AccessLevel` to be applied. Default behavior is AND.
-     *
-     * @var string
-     */
-    public $combiningFunction;
-    protected $conditionsType = GoogleIdentityAccesscontextmanagerV1Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * How the `conditions` list should be combined to determine if a request is
-     * granted this `AccessLevel`. If AND is used, each `Condition` in
-     * `conditions` must be satisfied for the `AccessLevel` to be applied. If OR
-     * is used, at least one `Condition` in `conditions` must be satisfied for the
-     * `AccessLevel` to be applied. Default behavior is AND.
-     *
-     * Accepted values: AND, OR
-     *
-     * @param self::COMBINING_FUNCTION_* $combiningFunction
-     */
-    public function setCombiningFunction($combiningFunction)
+namespace Google\Service\CloudAsset {
+    class GoogleIdentityAccesscontextmanagerV1BasicLevel extends \Google\Collection
     {
+        /**
+         * All `Conditions` must be true for the `BasicLevel` to be true.
+         */
+        public const COMBINING_FUNCTION_AND = 'AND';
+        /**
+         * If at least one `Condition` is true, then the `BasicLevel` is true.
+         */
+        public const COMBINING_FUNCTION_OR = 'OR';
+        protected $collection_key = 'conditions';
+        /**
+         * How the `conditions` list should be combined to determine if a request is
+         * granted this `AccessLevel`. If AND is used, each `Condition` in
+         * `conditions` must be satisfied for the `AccessLevel` to be applied. If OR
+         * is used, at least one `Condition` in `conditions` must be satisfied for the
+         * `AccessLevel` to be applied. Default behavior is AND.
+         *
+         * @var string
+         */
+        public $combiningFunction;
+        protected $conditionsType = GoogleIdentityAccesscontextmanagerV1Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * How the `conditions` list should be combined to determine if a request is
+         * granted this `AccessLevel`. If AND is used, each `Condition` in
+         * `conditions` must be satisfied for the `AccessLevel` to be applied. If OR
+         * is used, at least one `Condition` in `conditions` must be satisfied for the
+         * `AccessLevel` to be applied. Default behavior is AND.
+         *
+         * Accepted values: AND, OR
+         *
+         * @param self::COMBINING_FUNCTION_* $combiningFunction
+         */
+        public function setCombiningFunction($combiningFunction)
+        {
+        }
+        /**
+         * @return self::COMBINING_FUNCTION_*
+         */
+        public function getCombiningFunction()
+        {
+        }
+        /**
+         * Required. A list of requirements for the `AccessLevel` to be granted.
+         *
+         * @param GoogleIdentityAccesscontextmanagerV1Condition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleIdentityAccesscontextmanagerV1Condition[]
+         */
+        public function getConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMBINING_FUNCTION_*
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1BasicLevel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCombiningFunction()
-    {
-    }
-    /**
-     * Required. A list of requirements for the `AccessLevel` to be granted.
-     *
-     * @param GoogleIdentityAccesscontextmanagerV1Condition[] $conditions
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return GoogleIdentityAccesscontextmanagerV1Condition[]
-     */
-    public function getConditions()
+    class Google_Service_CloudAsset_GoogleIdentityAccesscontextmanagerV1BasicLevel extends \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1BasicLevel
     {
     }
 }

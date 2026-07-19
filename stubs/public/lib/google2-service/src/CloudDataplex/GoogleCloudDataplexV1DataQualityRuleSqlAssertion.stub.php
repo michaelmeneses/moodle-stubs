@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityRuleSqlAssertion extends \Google\Model
-{
-    /**
-     * Optional. The SQL statement.
-     *
-     * @var string
-     */
-    public $sqlStatement;
-    /**
-     * Optional. The SQL statement.
-     *
-     * @param string $sqlStatement
-     */
-    public function setSqlStatement($sqlStatement)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityRuleSqlAssertion extends \Google\Model
     {
+        /**
+         * Optional. The SQL statement.
+         *
+         * @var string
+         */
+        public $sqlStatement;
+        /**
+         * Optional. The SQL statement.
+         *
+         * @param string $sqlStatement
+         */
+        public function setSqlStatement($sqlStatement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlStatement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleSqlAssertion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSqlStatement()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityRuleSqlAssertion extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleSqlAssertion
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class ResellernotifyGetwatchdetailsResponse extends \Google\Collection
-{
-    protected $collection_key = 'serviceAccountEmailAddresses';
-    /**
-     * List of registered service accounts.
-     *
-     * @var string[]
-     */
-    public $serviceAccountEmailAddresses;
-    /**
-     * Topic name of the PubSub
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * List of registered service accounts.
-     *
-     * @param string[] $serviceAccountEmailAddresses
-     */
-    public function setServiceAccountEmailAddresses($serviceAccountEmailAddresses)
+namespace Google\Service\Reseller {
+    class ResellernotifyGetwatchdetailsResponse extends \Google\Collection
     {
+        protected $collection_key = 'serviceAccountEmailAddresses';
+        /**
+         * List of registered service accounts.
+         *
+         * @var string[]
+         */
+        public $serviceAccountEmailAddresses;
+        /**
+         * Topic name of the PubSub
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * List of registered service accounts.
+         *
+         * @param string[] $serviceAccountEmailAddresses
+         */
+        public function setServiceAccountEmailAddresses($serviceAccountEmailAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceAccountEmailAddresses()
+        {
+        }
+        /**
+         * Topic name of the PubSub
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Reseller\ResellernotifyGetwatchdetailsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccountEmailAddresses()
-    {
-    }
-    /**
-     * Topic name of the PubSub
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicName()
+    class Google_Service_Reseller_ResellernotifyGetwatchdetailsResponse extends \Google\Service\Reseller\ResellernotifyGetwatchdetailsResponse
     {
     }
 }

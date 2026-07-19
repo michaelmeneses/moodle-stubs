@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RuntimeAccessConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accessType;
-    /**
-     * @var string
-     */
-    public $proxyUri;
-    /**
-     * @var string
-     */
-    public $runtimeOwner;
-    /**
-     * @param string
-     */
-    public function setAccessType($accessType)
+namespace Google\Service\AIPlatformNotebooks {
+    class RuntimeAccessConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accessType;
+        /**
+         * @var string
+         */
+        public $proxyUri;
+        /**
+         * @var string
+         */
+        public $runtimeOwner;
+        /**
+         * @param string
+         */
+        public function setAccessType($accessType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProxyUri($proxyUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProxyUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRuntimeOwner($runtimeOwner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeOwner()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RuntimeAccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProxyUri($proxyUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProxyUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRuntimeOwner($runtimeOwner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeOwner()
+    class Google_Service_AIPlatformNotebooks_RuntimeAccessConfig extends \Google\Service\AIPlatformNotebooks\RuntimeAccessConfig
     {
     }
 }

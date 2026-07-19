@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Licensing;
-
-class LicenseAssignmentInsert extends \Google\Model
-{
-    /**
-     * Email id of the user
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Email id of the user
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
+namespace Google\Service\Licensing {
+    class LicenseAssignmentInsert extends \Google\Model
     {
+        /**
+         * Email id of the user
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Email id of the user
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Licensing\LicenseAssignmentInsert registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserId()
+    class Google_Service_Licensing_LicenseAssignmentInsert extends \Google\Service\Licensing\LicenseAssignmentInsert
     {
     }
 }

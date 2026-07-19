@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DynamicProfileVersion extends \Google\Collection
-{
-    protected $collection_key = 'dynamicProfileFeedSettings';
-    protected $dynamicProfileFeedSettingsType = DynamicProfileFeedSettings::class;
-    protected $dynamicProfileFeedSettingsDataType = 'array';
-    /**
-     * Output only. Version ID of this dynamic profile version. This is a read-
-     * only, auto-generated field. -1 for draft version, 0+ for published
-     * versions.
-     *
-     * @var string
-     */
-    public $versionId;
-    /**
-     * Optional. Associated dynamic feeds and their settings (including dynamic
-     * rules) for this dynamic profile version.
-     *
-     * @param DynamicProfileFeedSettings[] $dynamicProfileFeedSettings
-     */
-    public function setDynamicProfileFeedSettings($dynamicProfileFeedSettings)
+namespace Google\Service\Dfareporting {
+    class DynamicProfileVersion extends \Google\Collection
     {
+        protected $collection_key = 'dynamicProfileFeedSettings';
+        protected $dynamicProfileFeedSettingsType = DynamicProfileFeedSettings::class;
+        protected $dynamicProfileFeedSettingsDataType = 'array';
+        /**
+         * Output only. Version ID of this dynamic profile version. This is a read-
+         * only, auto-generated field. -1 for draft version, 0+ for published
+         * versions.
+         *
+         * @var string
+         */
+        public $versionId;
+        /**
+         * Optional. Associated dynamic feeds and their settings (including dynamic
+         * rules) for this dynamic profile version.
+         *
+         * @param DynamicProfileFeedSettings[] $dynamicProfileFeedSettings
+         */
+        public function setDynamicProfileFeedSettings($dynamicProfileFeedSettings)
+        {
+        }
+        /**
+         * @return DynamicProfileFeedSettings[]
+         */
+        public function getDynamicProfileFeedSettings()
+        {
+        }
+        /**
+         * Output only. Version ID of this dynamic profile version. This is a read-
+         * only, auto-generated field. -1 for draft version, 0+ for published
+         * versions.
+         *
+         * @param string $versionId
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicProfileFeedSettings[]
+     * Runtime class alias of \Google\Service\Dfareporting\DynamicProfileVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicProfileFeedSettings()
-    {
-    }
-    /**
-     * Output only. Version ID of this dynamic profile version. This is a read-
-     * only, auto-generated field. -1 for draft version, 0+ for published
-     * versions.
-     *
-     * @param string $versionId
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
+    class Google_Service_Dfareporting_DynamicProfileVersion extends \Google\Service\Dfareporting\DynamicProfileVersion
     {
     }
 }

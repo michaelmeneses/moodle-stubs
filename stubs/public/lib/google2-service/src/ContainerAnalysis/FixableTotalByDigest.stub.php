@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class FixableTotalByDigest extends \Google\Model
-{
-    /**
-     * Unknown.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Minimal severity.
-     */
-    public const SEVERITY_MINIMAL = 'MINIMAL';
-    /**
-     * Low severity.
-     */
-    public const SEVERITY_LOW = 'LOW';
-    /**
-     * Medium severity.
-     */
-    public const SEVERITY_MEDIUM = 'MEDIUM';
-    /**
-     * High severity.
-     */
-    public const SEVERITY_HIGH = 'HIGH';
-    /**
-     * Critical severity.
-     */
-    public const SEVERITY_CRITICAL = 'CRITICAL';
-    /**
-     * The number of fixable vulnerabilities associated with this resource.
-     *
-     * @var string
-     */
-    public $fixableCount;
-    /**
-     * The affected resource.
-     *
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * The severity for this count. SEVERITY_UNSPECIFIED indicates total across
-     * all severities.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The total number of vulnerabilities associated with this resource.
-     *
-     * @var string
-     */
-    public $totalCount;
-    /**
-     * The number of fixable vulnerabilities associated with this resource.
-     *
-     * @param string $fixableCount
-     */
-    public function setFixableCount($fixableCount)
+namespace Google\Service\ContainerAnalysis {
+    class FixableTotalByDigest extends \Google\Model
     {
+        /**
+         * Unknown.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Minimal severity.
+         */
+        public const SEVERITY_MINIMAL = 'MINIMAL';
+        /**
+         * Low severity.
+         */
+        public const SEVERITY_LOW = 'LOW';
+        /**
+         * Medium severity.
+         */
+        public const SEVERITY_MEDIUM = 'MEDIUM';
+        /**
+         * High severity.
+         */
+        public const SEVERITY_HIGH = 'HIGH';
+        /**
+         * Critical severity.
+         */
+        public const SEVERITY_CRITICAL = 'CRITICAL';
+        /**
+         * The number of fixable vulnerabilities associated with this resource.
+         *
+         * @var string
+         */
+        public $fixableCount;
+        /**
+         * The affected resource.
+         *
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * The severity for this count. SEVERITY_UNSPECIFIED indicates total across
+         * all severities.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The total number of vulnerabilities associated with this resource.
+         *
+         * @var string
+         */
+        public $totalCount;
+        /**
+         * The number of fixable vulnerabilities associated with this resource.
+         *
+         * @param string $fixableCount
+         */
+        public function setFixableCount($fixableCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFixableCount()
+        {
+        }
+        /**
+         * The affected resource.
+         *
+         * @param string $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
+        /**
+         * The severity for this count. SEVERITY_UNSPECIFIED indicates total across
+         * all severities.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, MINIMAL, LOW, MEDIUM, HIGH, CRITICAL
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * The total number of vulnerabilities associated with this resource.
+         *
+         * @param string $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\FixableTotalByDigest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixableCount()
-    {
-    }
-    /**
-     * The affected resource.
-     *
-     * @param string $resourceUri
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
-    {
-    }
-    /**
-     * The severity for this count. SEVERITY_UNSPECIFIED indicates total across
-     * all severities.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, MINIMAL, LOW, MEDIUM, HIGH, CRITICAL
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * The total number of vulnerabilities associated with this resource.
-     *
-     * @param string $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCount()
+    class Google_Service_ContainerAnalysis_FixableTotalByDigest extends \Google\Service\ContainerAnalysis\FixableTotalByDigest
     {
     }
 }

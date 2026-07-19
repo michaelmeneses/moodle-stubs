@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageDateTimePicker extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onChangeActionType = AppsDynamiteStorageAction::class;
-    protected $onChangeActionDataType = '';
-    /**
-     * @var int
-     */
-    public $timezoneOffsetDate;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $valueMsEpoch;
-    /**
-     * @param string
-     */
-    public function setLabel($label)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageDateTimePicker extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onChangeActionType = AppsDynamiteStorageAction::class;
+        protected $onChangeActionDataType = '';
+        /**
+         * @var int
+         */
+        public $timezoneOffsetDate;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $valueMsEpoch;
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageAction
+         */
+        public function setOnChangeAction(AppsDynamiteStorageAction $onChangeAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageAction
+         */
+        public function getOnChangeAction()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTimezoneOffsetDate($timezoneOffsetDate)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTimezoneOffsetDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValueMsEpoch($valueMsEpoch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueMsEpoch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageDateTimePicker registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageAction
-     */
-    public function setOnChangeAction(AppsDynamiteStorageAction $onChangeAction)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageAction
-     */
-    public function getOnChangeAction()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTimezoneOffsetDate($timezoneOffsetDate)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTimezoneOffsetDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValueMsEpoch($valueMsEpoch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueMsEpoch()
+    class Google_Service_CloudSearch_AppsDynamiteStorageDateTimePicker extends \Google\Service\CloudSearch\AppsDynamiteStorageDateTimePicker
     {
     }
 }

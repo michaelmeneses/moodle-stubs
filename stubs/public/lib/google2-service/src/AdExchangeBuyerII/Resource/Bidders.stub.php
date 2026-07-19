@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII\Resource;
-
-/**
- * The "bidders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $bidders = $adexchangebuyer2Service->bidders;
- *  </code>
- */
-class Bidders extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyerII\Resource {
+    /**
+     * The "bidders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
+     *   $bidders = $adexchangebuyer2Service->bidders;
+     *  </code>
+     */
+    class Bidders extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Resource\Bidders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyerII_Resource_Bidders extends \Google\Service\AdExchangeBuyerII\Resource\Bidders
+    {
+    }
 }

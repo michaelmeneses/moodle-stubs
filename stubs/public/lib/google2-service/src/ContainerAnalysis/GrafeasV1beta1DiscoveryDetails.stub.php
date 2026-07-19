@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1DiscoveryDetails extends \Google\Model
-{
-    protected $discoveredType = Discovered::class;
-    protected $discoveredDataType = '';
-    /**
-     * @param Discovered
-     */
-    public function setDiscovered(Discovered $discovered)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1DiscoveryDetails extends \Google\Model
     {
+        protected $discoveredType = Discovered::class;
+        protected $discoveredDataType = '';
+        /**
+         * @param Discovered
+         */
+        public function setDiscovered(Discovered $discovered)
+        {
+        }
+        /**
+         * @return Discovered
+         */
+        public function getDiscovered()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Discovered
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1DiscoveryDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscovered()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1DiscoveryDetails extends \Google\Service\ContainerAnalysis\GrafeasV1beta1DiscoveryDetails
     {
     }
 }

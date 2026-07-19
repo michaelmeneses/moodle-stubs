@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class PageInfo extends \Google\Model
-{
-    /**
-     * Maximum number of results returned in one page. ! The number of results
-     * included in the API response.
-     *
-     * @var int
-     */
-    public $resultPerPage;
-    /**
-     * Index of the first result returned in the current page.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * Total number of results available on the backend ! The total number of
-     * results in the result set.
-     *
-     * @var int
-     */
-    public $totalResults;
-    /**
-     * Maximum number of results returned in one page. ! The number of results
-     * included in the API response.
-     *
-     * @param int $resultPerPage
-     */
-    public function setResultPerPage($resultPerPage)
+namespace Google\Service\AndroidEnterprise {
+    class PageInfo extends \Google\Model
     {
+        /**
+         * Maximum number of results returned in one page. ! The number of results
+         * included in the API response.
+         *
+         * @var int
+         */
+        public $resultPerPage;
+        /**
+         * Index of the first result returned in the current page.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * Total number of results available on the backend ! The total number of
+         * results in the result set.
+         *
+         * @var int
+         */
+        public $totalResults;
+        /**
+         * Maximum number of results returned in one page. ! The number of results
+         * included in the API response.
+         *
+         * @param int $resultPerPage
+         */
+        public function setResultPerPage($resultPerPage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResultPerPage()
+        {
+        }
+        /**
+         * Index of the first result returned in the current page.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * Total number of results available on the backend ! The total number of
+         * results in the result set.
+         *
+         * @param int $totalResults
+         */
+        public function setTotalResults($totalResults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidEnterprise\PageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResultPerPage()
-    {
-    }
-    /**
-     * Index of the first result returned in the current page.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * Total number of results available on the backend ! The total number of
-     * results in the result set.
-     *
-     * @param int $totalResults
-     */
-    public function setTotalResults($totalResults)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalResults()
+    class Google_Service_AndroidEnterprise_PageInfo extends \Google\Service\AndroidEnterprise\PageInfo
     {
     }
 }

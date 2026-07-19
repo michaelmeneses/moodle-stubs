@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PaymentServiceProviderLinkInfo extends \Google\Model
-{
-    /**
-     * The business country of the merchant account as identified by the third
-     * party service provider.
-     *
-     * @var string
-     */
-    public $externalAccountBusinessCountry;
-    /**
-     * The id used by the third party service provider to identify the merchant.
-     *
-     * @var string
-     */
-    public $externalAccountId;
-    /**
-     * The business country of the merchant account as identified by the third
-     * party service provider.
-     *
-     * @param string $externalAccountBusinessCountry
-     */
-    public function setExternalAccountBusinessCountry($externalAccountBusinessCountry)
+namespace Google\Service\ShoppingContent {
+    class PaymentServiceProviderLinkInfo extends \Google\Model
     {
+        /**
+         * The business country of the merchant account as identified by the third
+         * party service provider.
+         *
+         * @var string
+         */
+        public $externalAccountBusinessCountry;
+        /**
+         * The id used by the third party service provider to identify the merchant.
+         *
+         * @var string
+         */
+        public $externalAccountId;
+        /**
+         * The business country of the merchant account as identified by the third
+         * party service provider.
+         *
+         * @param string $externalAccountBusinessCountry
+         */
+        public function setExternalAccountBusinessCountry($externalAccountBusinessCountry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalAccountBusinessCountry()
+        {
+        }
+        /**
+         * The id used by the third party service provider to identify the merchant.
+         *
+         * @param string $externalAccountId
+         */
+        public function setExternalAccountId($externalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PaymentServiceProviderLinkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalAccountBusinessCountry()
-    {
-    }
-    /**
-     * The id used by the third party service provider to identify the merchant.
-     *
-     * @param string $externalAccountId
-     */
-    public function setExternalAccountId($externalAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalAccountId()
+    class Google_Service_ShoppingContent_PaymentServiceProviderLinkInfo extends \Google\Service\ShoppingContent\PaymentServiceProviderLinkInfo
     {
     }
 }

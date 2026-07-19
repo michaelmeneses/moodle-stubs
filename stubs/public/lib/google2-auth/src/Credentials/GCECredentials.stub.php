@@ -23,6 +23,22 @@
  */
 namespace Google\Auth\Credentials;
 
+use COM;
+use com_exception;
+use Google\Auth\CredentialsLoader;
+use Google\Auth\GetQuotaProjectInterface;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Auth\Iam;
+use Google\Auth\IamSignerTrait;
+use Google\Auth\ProjectIdProviderInterface;
+use Google\Auth\SignBlobInterface;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Exception\ServerException;
+use GuzzleHttp\Psr7\Request;
+use InvalidArgumentException;
 /**
  * GCECredentials supports authorization on Google Compute Engine.
  *

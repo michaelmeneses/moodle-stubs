@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class LintResult extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $debugMessage;
-    /**
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * @var string
-     */
-    public $level;
-    /**
-     * @var int
-     */
-    public $locationOffset;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * @var string
-     */
-    public $validationUnitName;
-    /**
-     * @param string
-     */
-    public function setDebugMessage($debugMessage)
+namespace Google\Service\Iam {
+    class LintResult extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $debugMessage;
+        /**
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * @var string
+         */
+        public $level;
+        /**
+         * @var int
+         */
+        public $locationOffset;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * @var string
+         */
+        public $validationUnitName;
+        /**
+         * @param string
+         */
+        public function setDebugMessage($debugMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDebugMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLevel()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setLocationOffset($locationOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLocationOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidationUnitName($validationUnitName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationUnitName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\LintResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLevel($level)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLevel()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setLocationOffset($locationOffset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLocationOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidationUnitName($validationUnitName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationUnitName()
+    class Google_Service_Iam_LintResult extends \Google\Service\Iam\LintResult
     {
     }
 }

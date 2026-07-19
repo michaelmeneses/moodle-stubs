@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Row extends \Google\Collection
-{
-    protected $collection_key = 'altitudeDiffs';
-    public $altitudeDiffs;
-    public function setAltitudeDiffs($altitudeDiffs)
+namespace Google\Service\SemanticTile {
+    class Row extends \Google\Collection
     {
+        protected $collection_key = 'altitudeDiffs';
+        public $altitudeDiffs;
+        public function setAltitudeDiffs($altitudeDiffs)
+        {
+        }
+        public function getAltitudeDiffs()
+        {
+        }
     }
-    public function getAltitudeDiffs()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_Row extends \Google\Service\SemanticTile\Row
     {
     }
 }

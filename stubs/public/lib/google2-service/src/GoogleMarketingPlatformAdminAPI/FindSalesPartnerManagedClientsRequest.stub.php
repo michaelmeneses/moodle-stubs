@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class FindSalesPartnerManagedClientsRequest extends \Google\Model
-{
-    /**
-     * Optional. If set, only active and just ended clients will be returned.
-     *
-     * @var bool
-     */
-    public $isActive;
-    /**
-     * Optional. If set, only active and just ended clients will be returned.
-     *
-     * @param bool $isActive
-     */
-    public function setIsActive($isActive)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class FindSalesPartnerManagedClientsRequest extends \Google\Model
     {
+        /**
+         * Optional. If set, only active and just ended clients will be returned.
+         *
+         * @var bool
+         */
+        public $isActive;
+        /**
+         * Optional. If set, only active and just ended clients will be returned.
+         *
+         * @param bool $isActive
+         */
+        public function setIsActive($isActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsActive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\FindSalesPartnerManagedClientsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsActive()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_FindSalesPartnerManagedClientsRequest extends \Google\Service\GoogleMarketingPlatformAdminAPI\FindSalesPartnerManagedClientsRequest
     {
     }
 }

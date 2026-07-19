@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class ReportRequestFilters extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $columnType = ReportApiColumnSpec::class;
-    protected $columnDataType = '';
-    /**
-     * Operator to use in the filter. See the filter reference for a list of
-     * available operators.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * A list of values to filter the column value against.\ The maximum number of
-     * filter values per request is 300.
-     *
-     * @var array[]
-     */
-    public $values;
-    /**
-     * Column to perform the filter on. This can be a DoubleClick Search column or
-     * a saved column.
-     *
-     * @param ReportApiColumnSpec $column
-     */
-    public function setColumn(ReportApiColumnSpec $column)
+namespace Google\Service\Doubleclicksearch {
+    class ReportRequestFilters extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $columnType = ReportApiColumnSpec::class;
+        protected $columnDataType = '';
+        /**
+         * Operator to use in the filter. See the filter reference for a list of
+         * available operators.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * A list of values to filter the column value against.\ The maximum number of
+         * filter values per request is 300.
+         *
+         * @var array[]
+         */
+        public $values;
+        /**
+         * Column to perform the filter on. This can be a DoubleClick Search column or
+         * a saved column.
+         *
+         * @param ReportApiColumnSpec $column
+         */
+        public function setColumn(ReportApiColumnSpec $column)
+        {
+        }
+        /**
+         * @return ReportApiColumnSpec
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Operator to use in the filter. See the filter reference for a list of
+         * available operators.
+         *
+         * @param string $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * A list of values to filter the column value against.\ The maximum number of
+         * filter values per request is 300.
+         *
+         * @param array[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportApiColumnSpec
+     * Runtime class alias of \Google\Service\Doubleclicksearch\ReportRequestFilters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Operator to use in the filter. See the filter reference for a list of
-     * available operators.
-     *
-     * @param string $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * A list of values to filter the column value against.\ The maximum number of
-     * filter values per request is 300.
-     *
-     * @param array[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValues()
+    class Google_Service_Doubleclicksearch_ReportRequestFilters extends \Google\Service\Doubleclicksearch\ReportRequestFilters
     {
     }
 }

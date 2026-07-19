@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleLongrunningWaitOperationRequest extends \Google\Model
-{
-    /**
-     * The maximum duration to wait before timing out. If left blank, the wait
-     * will be at most the time permitted by the underlying HTTP/RPC protocol. If
-     * RPC context deadline is also specified, the shorter one will be used.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * The maximum duration to wait before timing out. If left blank, the wait
-     * will be at most the time permitted by the underlying HTTP/RPC protocol. If
-     * RPC context deadline is also specified, the shorter one will be used.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
+namespace Google\Service\CloudRun {
+    class GoogleLongrunningWaitOperationRequest extends \Google\Model
     {
+        /**
+         * The maximum duration to wait before timing out. If left blank, the wait
+         * will be at most the time permitted by the underlying HTTP/RPC protocol. If
+         * RPC context deadline is also specified, the shorter one will be used.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * The maximum duration to wait before timing out. If left blank, the wait
+         * will be at most the time permitted by the underlying HTTP/RPC protocol. If
+         * RPC context deadline is also specified, the shorter one will be used.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleLongrunningWaitOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeout()
+    class Google_Service_CloudRun_GoogleLongrunningWaitOperationRequest extends \Google\Service\CloudRun\GoogleLongrunningWaitOperationRequest
     {
     }
 }

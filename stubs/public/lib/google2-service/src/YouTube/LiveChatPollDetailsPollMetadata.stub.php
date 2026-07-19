@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatPollDetailsPollMetadata extends \Google\Collection
-{
-    protected $collection_key = 'options';
-    protected $optionsType = LiveChatPollDetailsPollMetadataPollOption::class;
-    protected $optionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $questionText;
-    /**
-     * The options will be returned in the order that is displayed in 1P
-     *
-     * @param LiveChatPollDetailsPollMetadataPollOption[] $options
-     */
-    public function setOptions($options)
+namespace Google\Service\YouTube {
+    class LiveChatPollDetailsPollMetadata extends \Google\Collection
     {
+        protected $collection_key = 'options';
+        protected $optionsType = LiveChatPollDetailsPollMetadataPollOption::class;
+        protected $optionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $questionText;
+        /**
+         * The options will be returned in the order that is displayed in 1P
+         *
+         * @param LiveChatPollDetailsPollMetadataPollOption[] $options
+         */
+        public function setOptions($options)
+        {
+        }
+        /**
+         * @return LiveChatPollDetailsPollMetadataPollOption[]
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * @param string $questionText
+         */
+        public function setQuestionText($questionText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestionText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiveChatPollDetailsPollMetadataPollOption[]
+     * Runtime class alias of \Google\Service\YouTube\LiveChatPollDetailsPollMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
-    {
-    }
-    /**
-     * @param string $questionText
-     */
-    public function setQuestionText($questionText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestionText()
+    class Google_Service_YouTube_LiveChatPollDetailsPollMetadata extends \Google\Service\YouTube\LiveChatPollDetailsPollMetadata
     {
     }
 }

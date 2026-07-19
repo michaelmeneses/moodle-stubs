@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1SetFailureRequest extends \Google\Model
-{
-    /**
-     * Required. A message describing the failure details. It is displayed on the
-     * ChromeOS client device.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Required. A message describing the failure details. It is displayed on the
-     * ChromeOS client device.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1SetFailureRequest extends \Google\Model
     {
+        /**
+         * Required. A message describing the failure details. It is displayed on the
+         * ChromeOS client device.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Required. A message describing the failure details. It is displayed on the
+         * ChromeOS client device.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SetFailureRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1SetFailureRequest extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SetFailureRequest
     {
     }
 }

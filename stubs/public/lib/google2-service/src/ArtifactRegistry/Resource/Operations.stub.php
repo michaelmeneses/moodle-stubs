@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $operations = $artifactregistryService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\Operation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $operations = $artifactregistryService->operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Operations extends \Google\Service\Resource
+    {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry_Resource_Operations extends \Google\Service\ArtifactRegistry\Resource\Operations
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class BatchUpdateJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobResults';
-    protected $jobResultsType = JobResult::class;
-    protected $jobResultsDataType = 'array';
-    /**
-     * List of job mutation results from a batch update operation. It can change
-     * until operation status is FINISHED, FAILED or CANCELLED.
-     *
-     * @param JobResult[] $jobResults
-     */
-    public function setJobResults($jobResults)
+namespace Google\Service\CloudTalentSolution {
+    class BatchUpdateJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobResults';
+        protected $jobResultsType = JobResult::class;
+        protected $jobResultsDataType = 'array';
+        /**
+         * List of job mutation results from a batch update operation. It can change
+         * until operation status is FINISHED, FAILED or CANCELLED.
+         *
+         * @param JobResult[] $jobResults
+         */
+        public function setJobResults($jobResults)
+        {
+        }
+        /**
+         * @return JobResult[]
+         */
+        public function getJobResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobResult[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\BatchUpdateJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobResults()
+    class Google_Service_CloudTalentSolution_BatchUpdateJobsResponse extends \Google\Service\CloudTalentSolution\BatchUpdateJobsResponse
     {
     }
 }

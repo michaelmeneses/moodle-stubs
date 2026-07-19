@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class EmbeddedObjectPosition extends \Google\Model
-{
-    /**
-     * If true, the embedded object is put on a new sheet whose ID is chosen for
-     * you. Used only when writing.
-     *
-     * @var bool
-     */
-    public $newSheet;
-    protected $overlayPositionType = OverlayPosition::class;
-    protected $overlayPositionDataType = '';
-    /**
-     * The sheet this is on. Set only if the embedded object is on its own sheet.
-     * Must be non-negative.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * If true, the embedded object is put on a new sheet whose ID is chosen for
-     * you. Used only when writing.
-     *
-     * @param bool $newSheet
-     */
-    public function setNewSheet($newSheet)
+namespace Google\Service\Sheets {
+    class EmbeddedObjectPosition extends \Google\Model
     {
+        /**
+         * If true, the embedded object is put on a new sheet whose ID is chosen for
+         * you. Used only when writing.
+         *
+         * @var bool
+         */
+        public $newSheet;
+        protected $overlayPositionType = OverlayPosition::class;
+        protected $overlayPositionDataType = '';
+        /**
+         * The sheet this is on. Set only if the embedded object is on its own sheet.
+         * Must be non-negative.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * If true, the embedded object is put on a new sheet whose ID is chosen for
+         * you. Used only when writing.
+         *
+         * @param bool $newSheet
+         */
+        public function setNewSheet($newSheet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNewSheet()
+        {
+        }
+        /**
+         * The position at which the object is overlaid on top of a grid.
+         *
+         * @param OverlayPosition $overlayPosition
+         */
+        public function setOverlayPosition(OverlayPosition $overlayPosition)
+        {
+        }
+        /**
+         * @return OverlayPosition
+         */
+        public function getOverlayPosition()
+        {
+        }
+        /**
+         * The sheet this is on. Set only if the embedded object is on its own sheet.
+         * Must be non-negative.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\EmbeddedObjectPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewSheet()
-    {
-    }
-    /**
-     * The position at which the object is overlaid on top of a grid.
-     *
-     * @param OverlayPosition $overlayPosition
-     */
-    public function setOverlayPosition(OverlayPosition $overlayPosition)
-    {
-    }
-    /**
-     * @return OverlayPosition
-     */
-    public function getOverlayPosition()
-    {
-    }
-    /**
-     * The sheet this is on. Set only if the embedded object is on its own sheet.
-     * Must be non-negative.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_EmbeddedObjectPosition extends \Google\Service\Sheets\EmbeddedObjectPosition
     {
     }
 }

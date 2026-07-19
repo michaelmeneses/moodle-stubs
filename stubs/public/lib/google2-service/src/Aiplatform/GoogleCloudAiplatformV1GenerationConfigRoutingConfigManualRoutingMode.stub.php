@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode extends \Google\Model
-{
-    /**
-     * The name of the model to use. Only public LLM models are accepted.
-     *
-     * @var string
-     */
-    public $modelName;
-    /**
-     * The name of the model to use. Only public LLM models are accepted.
-     *
-     * @param string $modelName
-     */
-    public function setModelName($modelName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode extends \Google\Model
     {
+        /**
+         * The name of the model to use. Only public LLM models are accepted.
+         *
+         * @var string
+         */
+        public $modelName;
+        /**
+         * The name of the model to use. Only public LLM models are accepted.
+         *
+         * @param string $modelName
+         */
+        public function setModelName($modelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode
     {
     }
 }

@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices\Resource;
-
-/**
- * The "grpcRoutes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkservicesService = new Google\Service\NetworkServices(...);
- *   $grpcRoutes = $networkservicesService->projects_locations_grpcRoutes;
- *  </code>
- */
-class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkServices\Resource {
+    use Google\Service\NetworkServices\GrpcRoute;
+    use Google\Service\NetworkServices\ListGrpcRoutesResponse;
+    use Google\Service\NetworkServices\Operation;
     /**
-     * Creates a new GrpcRoute in a given project and location. (grpcRoutes.create)
-     *
-     * @param string $parent Required. The parent resource of the GrpcRoute. Must be
-     * in the format `projects/locations`.
-     * @param GrpcRoute $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string grpcRouteId Required. Short name of the GrpcRoute resource
-     * to be created.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "grpcRoutes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkservicesService = new Google\Service\NetworkServices(...);
+     *   $grpcRoutes = $networkservicesService->projects_locations_grpcRoutes;
+     *  </code>
      */
-    public function create($parent, GrpcRoute $postBody, $optParams = [])
+    class ProjectsLocationsGrpcRoutes extends \Google\Service\Resource
     {
+        /**
+         * Creates a new GrpcRoute in a given project and location. (grpcRoutes.create)
+         *
+         * @param string $parent Required. The parent resource of the GrpcRoute. Must be
+         * in the format `projects/locations`.
+         * @param GrpcRoute $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string grpcRouteId Required. Short name of the GrpcRoute resource
+         * to be created.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GrpcRoute $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single GrpcRoute. (grpcRoutes.delete)
+         *
+         * @param string $name Required. A name of the GrpcRoute to delete. Must be in
+         * the format `projects/locations/grpcRoutes`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single GrpcRoute. (grpcRoutes.get)
+         *
+         * @param string $name Required. A name of the GrpcRoute to get. Must be in the
+         * format `projects/locations/grpcRoutes`.
+         * @param array $optParams Optional parameters.
+         * @return GrpcRoute
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists GrpcRoutes in a given project and location.
+         * (grpcRoutes.listProjectsLocationsGrpcRoutes)
+         *
+         * @param string $parent Required. The project and location from which the
+         * GrpcRoutes should be listed, specified in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of GrpcRoutes to return per call.
+         * @opt_param string pageToken The value returned by the last
+         * `ListGrpcRoutesResponse` Indicates that this is a continuation of a prior
+         * `ListGrpcRoutes` call, and that the system should return the next page of
+         * data.
+         * @opt_param bool returnPartialSuccess Optional. If true, allow partial
+         * responses for multi-regional Aggregated List requests. Otherwise if one of
+         * the locations is down or unreachable, the Aggregated List request will fail.
+         * @return ListGrpcRoutesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsGrpcRoutes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single GrpcRoute. (grpcRoutes.patch)
+         *
+         * @param string $name Identifier. Name of the GrpcRoute resource. It matches
+         * pattern `projects/locations/grpcRoutes/`
+         * @param GrpcRoute $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the GrpcRoute resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. If the user does
+         * not provide a mask then all fields will be overwritten.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GrpcRoute $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single GrpcRoute. (grpcRoutes.delete)
-     *
-     * @param string $name Required. A name of the GrpcRoute to delete. Must be in
-     * the format `projects/locations/grpcRoutes`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkServices\Resource\ProjectsLocationsGrpcRoutes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single GrpcRoute. (grpcRoutes.get)
-     *
-     * @param string $name Required. A name of the GrpcRoute to get. Must be in the
-     * format `projects/locations/grpcRoutes`.
-     * @param array $optParams Optional parameters.
-     * @return GrpcRoute
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists GrpcRoutes in a given project and location.
-     * (grpcRoutes.listProjectsLocationsGrpcRoutes)
-     *
-     * @param string $parent Required. The project and location from which the
-     * GrpcRoutes should be listed, specified in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of GrpcRoutes to return per call.
-     * @opt_param string pageToken The value returned by the last
-     * `ListGrpcRoutesResponse` Indicates that this is a continuation of a prior
-     * `ListGrpcRoutes` call, and that the system should return the next page of
-     * data.
-     * @opt_param bool returnPartialSuccess Optional. If true, allow partial
-     * responses for multi-regional Aggregated List requests. Otherwise if one of
-     * the locations is down or unreachable, the Aggregated List request will fail.
-     * @return ListGrpcRoutesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsGrpcRoutes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the parameters of a single GrpcRoute. (grpcRoutes.patch)
-     *
-     * @param string $name Identifier. Name of the GrpcRoute resource. It matches
-     * pattern `projects/locations/grpcRoutes/`
-     * @param GrpcRoute $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the GrpcRoute resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. If the user does
-     * not provide a mask then all fields will be overwritten.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GrpcRoute $postBody, $optParams = [])
+    class Google_Service_NetworkServices_Resource_ProjectsLocationsGrpcRoutes extends \Google\Service\NetworkServices\Resource\ProjectsLocationsGrpcRoutes
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UpdateImagePropertiesRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `imageProperties` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the image outline color, set `fields` to
-     * `"outline.outlineFill.solidFill.color"`. To reset a property to its default
-     * value, include its field name in the field mask but leave the field itself
-     * unset.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $imagePropertiesType = ImageProperties::class;
-    protected $imagePropertiesDataType = '';
-    /**
-     * The object ID of the image the updates are applied to.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `imageProperties` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the image outline color, set `fields` to
-     * `"outline.outlineFill.solidFill.color"`. To reset a property to its default
-     * value, include its field name in the field mask but leave the field itself
-     * unset.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Slides {
+    class UpdateImagePropertiesRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `imageProperties` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the image outline color, set `fields` to
+         * `"outline.outlineFill.solidFill.color"`. To reset a property to its default
+         * value, include its field name in the field mask but leave the field itself
+         * unset.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $imagePropertiesType = ImageProperties::class;
+        protected $imagePropertiesDataType = '';
+        /**
+         * The object ID of the image the updates are applied to.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `imageProperties` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the image outline color, set `fields` to
+         * `"outline.outlineFill.solidFill.color"`. To reset a property to its default
+         * value, include its field name in the field mask but leave the field itself
+         * unset.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The image properties to update.
+         *
+         * @param ImageProperties $imageProperties
+         */
+        public function setImageProperties(ImageProperties $imageProperties)
+        {
+        }
+        /**
+         * @return ImageProperties
+         */
+        public function getImageProperties()
+        {
+        }
+        /**
+         * The object ID of the image the updates are applied to.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\UpdateImagePropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The image properties to update.
-     *
-     * @param ImageProperties $imageProperties
-     */
-    public function setImageProperties(ImageProperties $imageProperties)
-    {
-    }
-    /**
-     * @return ImageProperties
-     */
-    public function getImageProperties()
-    {
-    }
-    /**
-     * The object ID of the image the updates are applied to.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
+    class Google_Service_Slides_UpdateImagePropertiesRequest extends \Google\Service\Slides\UpdateImagePropertiesRequest
     {
     }
 }

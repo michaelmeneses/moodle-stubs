@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for MapsPlaces (v1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://mapsplatform.google.com/maps-products/#places-section" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class MapsPlaces extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Private Service: https://www.googleapis.com/auth/maps-platform.places. */
-    const MAPS_PLATFORM_PLACES = "https://www.googleapis.com/auth/maps-platform.places";
-    /** Private Service: https://www.googleapis.com/auth/maps-platform.places.autocomplete. */
-    const MAPS_PLATFORM_PLACES_AUTOCOMPLETE = "https://www.googleapis.com/auth/maps-platform.places.autocomplete";
-    /** Private Service: https://www.googleapis.com/auth/maps-platform.places.details. */
-    const MAPS_PLATFORM_PLACES_DETAILS = "https://www.googleapis.com/auth/maps-platform.places.details";
-    /** Private Service: https://www.googleapis.com/auth/maps-platform.places.getphotomedia. */
-    const MAPS_PLATFORM_PLACES_GETPHOTOMEDIA = "https://www.googleapis.com/auth/maps-platform.places.getphotomedia";
-    /** Private Service: https://www.googleapis.com/auth/maps-platform.places.nearbysearch. */
-    const MAPS_PLATFORM_PLACES_NEARBYSEARCH = "https://www.googleapis.com/auth/maps-platform.places.nearbysearch";
-    /** Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch. */
-    const MAPS_PLATFORM_PLACES_TEXTSEARCH = "https://www.googleapis.com/auth/maps-platform.places.textsearch";
-    public $places;
-    public $places_photos;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the MapsPlaces service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for MapsPlaces (v1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://mapsplatform.google.com/maps-products/#places-section" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class MapsPlaces extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Private Service: https://www.googleapis.com/auth/maps-platform.places. */
+        const MAPS_PLATFORM_PLACES = "https://www.googleapis.com/auth/maps-platform.places";
+        /** Private Service: https://www.googleapis.com/auth/maps-platform.places.autocomplete. */
+        const MAPS_PLATFORM_PLACES_AUTOCOMPLETE = "https://www.googleapis.com/auth/maps-platform.places.autocomplete";
+        /** Private Service: https://www.googleapis.com/auth/maps-platform.places.details. */
+        const MAPS_PLATFORM_PLACES_DETAILS = "https://www.googleapis.com/auth/maps-platform.places.details";
+        /** Private Service: https://www.googleapis.com/auth/maps-platform.places.getphotomedia. */
+        const MAPS_PLATFORM_PLACES_GETPHOTOMEDIA = "https://www.googleapis.com/auth/maps-platform.places.getphotomedia";
+        /** Private Service: https://www.googleapis.com/auth/maps-platform.places.nearbysearch. */
+        const MAPS_PLATFORM_PLACES_NEARBYSEARCH = "https://www.googleapis.com/auth/maps-platform.places.nearbysearch";
+        /** Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch. */
+        const MAPS_PLATFORM_PLACES_TEXTSEARCH = "https://www.googleapis.com/auth/maps-platform.places.textsearch";
+        public $places;
+        public $places_photos;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the MapsPlaces service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MapsPlaces registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_MapsPlaces extends \Google\Service\MapsPlaces
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\Amplify;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Amplify** service.
  * @method \Aws\Result createApp(array $args = [])

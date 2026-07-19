@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class AchievementUpdateRequest extends \Google\Model
-{
-    /**
-     * Achievement is revealed.
-     */
-    public const UPDATE_TYPE_REVEAL = 'REVEAL';
-    /**
-     * Achievement is unlocked.
-     */
-    public const UPDATE_TYPE_UNLOCK = 'UNLOCK';
-    /**
-     * Achievement is incremented.
-     */
-    public const UPDATE_TYPE_INCREMENT = 'INCREMENT';
-    /**
-     * Achievement progress is set to at least the passed value.
-     */
-    public const UPDATE_TYPE_SET_STEPS_AT_LEAST = 'SET_STEPS_AT_LEAST';
-    /**
-     * The achievement this update is being applied to.
-     *
-     * @var string
-     */
-    public $achievementId;
-    protected $incrementPayloadType = GamesAchievementIncrement::class;
-    protected $incrementPayloadDataType = '';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUpdateRequest`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $setStepsAtLeastPayloadType = GamesAchievementSetStepsAtLeast::class;
-    protected $setStepsAtLeastPayloadDataType = '';
-    /**
-     * The type of update being applied.
-     *
-     * @var string
-     */
-    public $updateType;
-    /**
-     * The achievement this update is being applied to.
-     *
-     * @param string $achievementId
-     */
-    public function setAchievementId($achievementId)
+namespace Google\Service\Games {
+    class AchievementUpdateRequest extends \Google\Model
     {
+        /**
+         * Achievement is revealed.
+         */
+        public const UPDATE_TYPE_REVEAL = 'REVEAL';
+        /**
+         * Achievement is unlocked.
+         */
+        public const UPDATE_TYPE_UNLOCK = 'UNLOCK';
+        /**
+         * Achievement is incremented.
+         */
+        public const UPDATE_TYPE_INCREMENT = 'INCREMENT';
+        /**
+         * Achievement progress is set to at least the passed value.
+         */
+        public const UPDATE_TYPE_SET_STEPS_AT_LEAST = 'SET_STEPS_AT_LEAST';
+        /**
+         * The achievement this update is being applied to.
+         *
+         * @var string
+         */
+        public $achievementId;
+        protected $incrementPayloadType = GamesAchievementIncrement::class;
+        protected $incrementPayloadDataType = '';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUpdateRequest`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $setStepsAtLeastPayloadType = GamesAchievementSetStepsAtLeast::class;
+        protected $setStepsAtLeastPayloadDataType = '';
+        /**
+         * The type of update being applied.
+         *
+         * @var string
+         */
+        public $updateType;
+        /**
+         * The achievement this update is being applied to.
+         *
+         * @param string $achievementId
+         */
+        public function setAchievementId($achievementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAchievementId()
+        {
+        }
+        /**
+         * The payload if an update of type `INCREMENT` was requested for the
+         * achievement.
+         *
+         * @param GamesAchievementIncrement $incrementPayload
+         */
+        public function setIncrementPayload(GamesAchievementIncrement $incrementPayload)
+        {
+        }
+        /**
+         * @return GamesAchievementIncrement
+         */
+        public function getIncrementPayload()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUpdateRequest`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The payload if an update of type `SET_STEPS_AT_LEAST` was requested for the
+         * achievement.
+         *
+         * @param GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload
+         */
+        public function setSetStepsAtLeastPayload(GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload)
+        {
+        }
+        /**
+         * @return GamesAchievementSetStepsAtLeast
+         */
+        public function getSetStepsAtLeastPayload()
+        {
+        }
+        /**
+         * The type of update being applied.
+         *
+         * Accepted values: REVEAL, UNLOCK, INCREMENT, SET_STEPS_AT_LEAST
+         *
+         * @param self::UPDATE_TYPE_* $updateType
+         */
+        public function setUpdateType($updateType)
+        {
+        }
+        /**
+         * @return self::UPDATE_TYPE_*
+         */
+        public function getUpdateType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\AchievementUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAchievementId()
-    {
-    }
-    /**
-     * The payload if an update of type `INCREMENT` was requested for the
-     * achievement.
-     *
-     * @param GamesAchievementIncrement $incrementPayload
-     */
-    public function setIncrementPayload(GamesAchievementIncrement $incrementPayload)
-    {
-    }
-    /**
-     * @return GamesAchievementIncrement
-     */
-    public function getIncrementPayload()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUpdateRequest`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The payload if an update of type `SET_STEPS_AT_LEAST` was requested for the
-     * achievement.
-     *
-     * @param GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload
-     */
-    public function setSetStepsAtLeastPayload(GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload)
-    {
-    }
-    /**
-     * @return GamesAchievementSetStepsAtLeast
-     */
-    public function getSetStepsAtLeastPayload()
-    {
-    }
-    /**
-     * The type of update being applied.
-     *
-     * Accepted values: REVEAL, UNLOCK, INCREMENT, SET_STEPS_AT_LEAST
-     *
-     * @param self::UPDATE_TYPE_* $updateType
-     */
-    public function setUpdateType($updateType)
-    {
-    }
-    /**
-     * @return self::UPDATE_TYPE_*
-     */
-    public function getUpdateType()
+    class Google_Service_Games_AchievementUpdateRequest extends \Google\Service\Games\AchievementUpdateRequest
     {
     }
 }

@@ -21,88 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "scripts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $scripts = $displayvideoService->customBiddingAlgorithms_scripts;
- *  </code>
- */
-class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\CustomBiddingScript;
+    use Google\Service\DisplayVideo\ListCustomBiddingScriptsResponse;
     /**
-     * Creates a new custom bidding script. Returns the newly created script if
-     * successful. Requests creating a custom bidding script under an algorithm
-     * assigned to a line item will return an error. (scripts.create)
-     *
-     * @param string $customBiddingAlgorithmId Required. The ID of the custom
-     * bidding algorithm that owns the script.
-     * @param CustomBiddingScript $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserId The ID of the advertiser that owns the parent
-     * custom bidding algorithm.
-     * @opt_param string partnerId The ID of the partner that owns the parent custom
-     * bidding algorithm. Only this partner will have write access to this custom
-     * bidding script.
-     * @return CustomBiddingScript
-     * @throws \Google\Service\Exception
+     * The "scripts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $scripts = $displayvideoService->customBiddingAlgorithms_scripts;
+     *  </code>
      */
-    public function create($customBiddingAlgorithmId, CustomBiddingScript $postBody, $optParams = [])
+    class CustomBiddingAlgorithmsScripts extends \Google\Service\Resource
     {
+        /**
+         * Creates a new custom bidding script. Returns the newly created script if
+         * successful. Requests creating a custom bidding script under an algorithm
+         * assigned to a line item will return an error. (scripts.create)
+         *
+         * @param string $customBiddingAlgorithmId Required. The ID of the custom
+         * bidding algorithm that owns the script.
+         * @param CustomBiddingScript $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserId The ID of the advertiser that owns the parent
+         * custom bidding algorithm.
+         * @opt_param string partnerId The ID of the partner that owns the parent custom
+         * bidding algorithm. Only this partner will have write access to this custom
+         * bidding script.
+         * @return CustomBiddingScript
+         * @throws \Google\Service\Exception
+         */
+        public function create($customBiddingAlgorithmId, CustomBiddingScript $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a custom bidding script. (scripts.get)
+         *
+         * @param string $customBiddingAlgorithmId Required. The ID of the custom
+         * bidding algorithm owns the script.
+         * @param string $customBiddingScriptId Required. The ID of the custom bidding
+         * script to fetch.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserId The ID of the advertiser that owns the parent
+         * custom bidding algorithm.
+         * @opt_param string partnerId The ID of the partner that owns the parent custom
+         * bidding algorithm. Only this partner will have write access to this custom
+         * bidding script.
+         * @return CustomBiddingScript
+         * @throws \Google\Service\Exception
+         */
+        public function get($customBiddingAlgorithmId, $customBiddingScriptId, $optParams = [])
+        {
+        }
+        /**
+         * Lists custom bidding scripts that belong to the given algorithm. The order is
+         * defined by the order_by parameter.
+         * (scripts.listCustomBiddingAlgorithmsScripts)
+         *
+         * @param string $customBiddingAlgorithmId Required. The ID of the custom
+         * bidding algorithm owns the script.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserId The ID of the advertiser that owns the parent
+         * custom bidding algorithm.
+         * @opt_param string orderBy Field by which to sort the list. Acceptable values
+         * are: * `createTime desc` (default) The default sorting order is descending.
+         * To specify ascending order for a field, the suffix "desc" should be removed.
+         * Example: `createTime`.
+         * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
+         * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
+         * if an invalid value is specified.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of next_page_token returned from
+         * the previous call to `ListCustomBiddingScripts` method. If not specified, the
+         * first page of results will be returned.
+         * @opt_param string partnerId The ID of the partner that owns the parent custom
+         * bidding algorithm. Only this partner will have write access to this custom
+         * bidding script.
+         * @return ListCustomBiddingScriptsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomBiddingAlgorithmsScripts($customBiddingAlgorithmId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a custom bidding script. (scripts.get)
-     *
-     * @param string $customBiddingAlgorithmId Required. The ID of the custom
-     * bidding algorithm owns the script.
-     * @param string $customBiddingScriptId Required. The ID of the custom bidding
-     * script to fetch.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserId The ID of the advertiser that owns the parent
-     * custom bidding algorithm.
-     * @opt_param string partnerId The ID of the partner that owns the parent custom
-     * bidding algorithm. Only this partner will have write access to this custom
-     * bidding script.
-     * @return CustomBiddingScript
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\CustomBiddingAlgorithmsScripts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customBiddingAlgorithmId, $customBiddingScriptId, $optParams = [])
-    {
-    }
-    /**
-     * Lists custom bidding scripts that belong to the given algorithm. The order is
-     * defined by the order_by parameter.
-     * (scripts.listCustomBiddingAlgorithmsScripts)
-     *
-     * @param string $customBiddingAlgorithmId Required. The ID of the custom
-     * bidding algorithm owns the script.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserId The ID of the advertiser that owns the parent
-     * custom bidding algorithm.
-     * @opt_param string orderBy Field by which to sort the list. Acceptable values
-     * are: * `createTime desc` (default) The default sorting order is descending.
-     * To specify ascending order for a field, the suffix "desc" should be removed.
-     * Example: `createTime`.
-     * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
-     * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
-     * if an invalid value is specified.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of next_page_token returned from
-     * the previous call to `ListCustomBiddingScripts` method. If not specified, the
-     * first page of results will be returned.
-     * @opt_param string partnerId The ID of the partner that owns the parent custom
-     * bidding algorithm. Only this partner will have write access to this custom
-     * bidding script.
-     * @return ListCustomBiddingScriptsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listCustomBiddingAlgorithmsScripts($customBiddingAlgorithmId, $optParams = [])
+    class Google_Service_DisplayVideo_Resource_CustomBiddingAlgorithmsScripts extends \Google\Service\DisplayVideo\Resource\CustomBiddingAlgorithmsScripts
     {
     }
 }

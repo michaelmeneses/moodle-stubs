@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class User extends \Google\Model
-{
-    /**
-     * A unique identifier you create for this user, such as user342 or
-     * asset#44418. This field must be set when the user is created and can't be
-     * updated. This field must not contain personally identifiable information
-     * (PII). This identifier must be 1024 characters or less; otherwise, the
-     * update policy request will fail.
-     *
-     * @var string
-     */
-    public $accountIdentifier;
-    /**
-     * A unique identifier you create for this user, such as user342 or
-     * asset#44418. This field must be set when the user is created and can't be
-     * updated. This field must not contain personally identifiable information
-     * (PII). This identifier must be 1024 characters or less; otherwise, the
-     * update policy request will fail.
-     *
-     * @param string $accountIdentifier
-     */
-    public function setAccountIdentifier($accountIdentifier)
+namespace Google\Service\AndroidManagement {
+    class User extends \Google\Model
     {
+        /**
+         * A unique identifier you create for this user, such as user342 or
+         * asset#44418. This field must be set when the user is created and can't be
+         * updated. This field must not contain personally identifiable information
+         * (PII). This identifier must be 1024 characters or less; otherwise, the
+         * update policy request will fail.
+         *
+         * @var string
+         */
+        public $accountIdentifier;
+        /**
+         * A unique identifier you create for this user, such as user342 or
+         * asset#44418. This field must be set when the user is created and can't be
+         * updated. This field must not contain personally identifiable information
+         * (PII). This identifier must be 1024 characters or less; otherwise, the
+         * update policy request will fail.
+         *
+         * @param string $accountIdentifier
+         */
+        public function setAccountIdentifier($accountIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountIdentifier()
+    class Google_Service_AndroidManagement_User extends \Google\Service\AndroidManagement\User
     {
     }
 }

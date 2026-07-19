@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2SessionEntityType extends \Google\Collection
-{
-    /**
-     * Not specified. This value should be never used.
-     */
-    public const ENTITY_OVERRIDE_MODE_ENTITY_OVERRIDE_MODE_UNSPECIFIED = 'ENTITY_OVERRIDE_MODE_UNSPECIFIED';
-    /**
-     * The collection of session entities overrides the collection of entities in
-     * the corresponding custom entity type.
-     */
-    public const ENTITY_OVERRIDE_MODE_ENTITY_OVERRIDE_MODE_OVERRIDE = 'ENTITY_OVERRIDE_MODE_OVERRIDE';
-    /**
-     * The collection of session entities extends the collection of entities in
-     * the corresponding custom entity type. Note: Even in this override mode
-     * calls to `ListSessionEntityTypes`, `GetSessionEntityType`,
-     * `CreateSessionEntityType` and `UpdateSessionEntityType` only return the
-     * additional entities added in this session entity type. If you want to get
-     * the supplemented list, please call EntityTypes.GetEntityType on the custom
-     * entity type and merge.
-     */
-    public const ENTITY_OVERRIDE_MODE_ENTITY_OVERRIDE_MODE_SUPPLEMENT = 'ENTITY_OVERRIDE_MODE_SUPPLEMENT';
-    protected $collection_key = 'entities';
-    protected $entitiesType = GoogleCloudDialogflowV2EntityTypeEntity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * Required. Indicates whether the additional data should override or
-     * supplement the custom entity type definition.
-     *
-     * @var string
-     */
-    public $entityOverrideMode;
-    /**
-     * Required. The unique identifier of this session entity type. Format:
-     * `projects//agent/sessions//entityTypes/`, or
-     * `projects//agent/environments//users//sessions//entityTypes/`. If
-     * `Environment ID` is not specified, we assume default 'draft' environment.
-     * If `User ID` is not specified, we assume default '-' user. `` must be the
-     * display name of an existing entity type in the same agent that will be
-     * overridden or supplemented.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The collection of entities associated with this session entity
-     * type.
-     *
-     * @param GoogleCloudDialogflowV2EntityTypeEntity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2SessionEntityType extends \Google\Collection
     {
+        /**
+         * Not specified. This value should be never used.
+         */
+        public const ENTITY_OVERRIDE_MODE_ENTITY_OVERRIDE_MODE_UNSPECIFIED = 'ENTITY_OVERRIDE_MODE_UNSPECIFIED';
+        /**
+         * The collection of session entities overrides the collection of entities in
+         * the corresponding custom entity type.
+         */
+        public const ENTITY_OVERRIDE_MODE_ENTITY_OVERRIDE_MODE_OVERRIDE = 'ENTITY_OVERRIDE_MODE_OVERRIDE';
+        /**
+         * The collection of session entities extends the collection of entities in
+         * the corresponding custom entity type. Note: Even in this override mode
+         * calls to `ListSessionEntityTypes`, `GetSessionEntityType`,
+         * `CreateSessionEntityType` and `UpdateSessionEntityType` only return the
+         * additional entities added in this session entity type. If you want to get
+         * the supplemented list, please call EntityTypes.GetEntityType on the custom
+         * entity type and merge.
+         */
+        public const ENTITY_OVERRIDE_MODE_ENTITY_OVERRIDE_MODE_SUPPLEMENT = 'ENTITY_OVERRIDE_MODE_SUPPLEMENT';
+        protected $collection_key = 'entities';
+        protected $entitiesType = GoogleCloudDialogflowV2EntityTypeEntity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * Required. Indicates whether the additional data should override or
+         * supplement the custom entity type definition.
+         *
+         * @var string
+         */
+        public $entityOverrideMode;
+        /**
+         * Required. The unique identifier of this session entity type. Format:
+         * `projects//agent/sessions//entityTypes/`, or
+         * `projects//agent/environments//users//sessions//entityTypes/`. If
+         * `Environment ID` is not specified, we assume default 'draft' environment.
+         * If `User ID` is not specified, we assume default '-' user. `` must be the
+         * display name of an existing entity type in the same agent that will be
+         * overridden or supplemented.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The collection of entities associated with this session entity
+         * type.
+         *
+         * @param GoogleCloudDialogflowV2EntityTypeEntity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2EntityTypeEntity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * Required. Indicates whether the additional data should override or
+         * supplement the custom entity type definition.
+         *
+         * Accepted values: ENTITY_OVERRIDE_MODE_UNSPECIFIED,
+         * ENTITY_OVERRIDE_MODE_OVERRIDE, ENTITY_OVERRIDE_MODE_SUPPLEMENT
+         *
+         * @param self::ENTITY_OVERRIDE_MODE_* $entityOverrideMode
+         */
+        public function setEntityOverrideMode($entityOverrideMode)
+        {
+        }
+        /**
+         * @return self::ENTITY_OVERRIDE_MODE_*
+         */
+        public function getEntityOverrideMode()
+        {
+        }
+        /**
+         * Required. The unique identifier of this session entity type. Format:
+         * `projects//agent/sessions//entityTypes/`, or
+         * `projects//agent/environments//users//sessions//entityTypes/`. If
+         * `Environment ID` is not specified, we assume default 'draft' environment.
+         * If `User ID` is not specified, we assume default '-' user. `` must be the
+         * display name of an existing entity type in the same agent that will be
+         * overridden or supplemented.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2EntityTypeEntity[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2SessionEntityType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * Required. Indicates whether the additional data should override or
-     * supplement the custom entity type definition.
-     *
-     * Accepted values: ENTITY_OVERRIDE_MODE_UNSPECIFIED,
-     * ENTITY_OVERRIDE_MODE_OVERRIDE, ENTITY_OVERRIDE_MODE_SUPPLEMENT
-     *
-     * @param self::ENTITY_OVERRIDE_MODE_* $entityOverrideMode
-     */
-    public function setEntityOverrideMode($entityOverrideMode)
-    {
-    }
-    /**
-     * @return self::ENTITY_OVERRIDE_MODE_*
-     */
-    public function getEntityOverrideMode()
-    {
-    }
-    /**
-     * Required. The unique identifier of this session entity type. Format:
-     * `projects//agent/sessions//entityTypes/`, or
-     * `projects//agent/environments//users//sessions//entityTypes/`. If
-     * `Environment ID` is not specified, we assume default 'draft' environment.
-     * If `User ID` is not specified, we assume default '-' user. `` must be the
-     * display name of an existing entity type in the same agent that will be
-     * overridden or supplemented.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2SessionEntityType
     {
     }
 }

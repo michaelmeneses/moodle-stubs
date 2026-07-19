@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CallSettings extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $accessLock;
-    /**
-     * @var string
-     */
-    public $accessType;
-    /**
-     * @var bool
-     */
-    public $allowJoiningBeforeHost;
-    /**
-     * @var bool
-     */
-    public $attendanceReportEnabled;
-    /**
-     * @var bool
-     */
-    public $audioLock;
-    /**
-     * @var bool
-     */
-    public $chatLock;
-    /**
-     * @var bool
-     */
-    public $coActivityLock;
-    /**
-     * @var bool
-     */
-    public $cseEnabled;
-    /**
-     * @var bool
-     */
-    public $moderationEnabled;
-    /**
-     * @var bool
-     */
-    public $presentLock;
-    /**
-     * @var bool
-     */
-    public $reactionsLock;
-    /**
-     * @var bool
-     */
-    public $videoLock;
-    /**
-     * @param bool
-     */
-    public function setAccessLock($accessLock)
+namespace Google\Service\CloudSearch {
+    class CallSettings extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $accessLock;
+        /**
+         * @var string
+         */
+        public $accessType;
+        /**
+         * @var bool
+         */
+        public $allowJoiningBeforeHost;
+        /**
+         * @var bool
+         */
+        public $attendanceReportEnabled;
+        /**
+         * @var bool
+         */
+        public $audioLock;
+        /**
+         * @var bool
+         */
+        public $chatLock;
+        /**
+         * @var bool
+         */
+        public $coActivityLock;
+        /**
+         * @var bool
+         */
+        public $cseEnabled;
+        /**
+         * @var bool
+         */
+        public $moderationEnabled;
+        /**
+         * @var bool
+         */
+        public $presentLock;
+        /**
+         * @var bool
+         */
+        public $reactionsLock;
+        /**
+         * @var bool
+         */
+        public $videoLock;
+        /**
+         * @param bool
+         */
+        public function setAccessLock($accessLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAccessLock()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAccessType($accessType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessType()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAllowJoiningBeforeHost($allowJoiningBeforeHost)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowJoiningBeforeHost()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAttendanceReportEnabled($attendanceReportEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAttendanceReportEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAudioLock($audioLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAudioLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setChatLock($chatLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChatLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCoActivityLock($coActivityLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCoActivityLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCseEnabled($cseEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCseEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setModerationEnabled($moderationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getModerationEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPresentLock($presentLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPresentLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReactionsLock($reactionsLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReactionsLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setVideoLock($videoLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVideoLock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\CallSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLock()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAccessType($accessType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccessType()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAllowJoiningBeforeHost($allowJoiningBeforeHost)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowJoiningBeforeHost()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAttendanceReportEnabled($attendanceReportEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAttendanceReportEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAudioLock($audioLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAudioLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setChatLock($chatLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getChatLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCoActivityLock($coActivityLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCoActivityLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCseEnabled($cseEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCseEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setModerationEnabled($moderationEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getModerationEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPresentLock($presentLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPresentLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReactionsLock($reactionsLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReactionsLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setVideoLock($videoLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVideoLock()
+    class Google_Service_CloudSearch_CallSettings extends \Google\Service\CloudSearch\CallSettings
     {
     }
 }

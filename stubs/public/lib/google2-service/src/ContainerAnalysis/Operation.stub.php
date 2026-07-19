@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Operation extends \Google\Model
-{
-    public $done;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    public $metadata;
-    public $name;
-    public $response;
-    public function setDone($done)
+namespace Google\Service\ContainerAnalysis {
+    class Operation extends \Google\Model
     {
+        public $done;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        public $metadata;
+        public $name;
+        public $response;
+        public function setDone($done)
+        {
+        }
+        public function getDone()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        public function setMetadata($metadata)
+        {
+        }
+        public function getMetadata()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setResponse($response)
+        {
+        }
+        public function getResponse()
+        {
+        }
     }
-    public function getDone()
-    {
-    }
+}
+namespace {
     /**
-     * @param Status
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Operation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    public function setMetadata($metadata)
-    {
-    }
-    public function getMetadata()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setResponse($response)
-    {
-    }
-    public function getResponse()
+    class Google_Service_ContainerAnalysis_Operation extends \Google\Service\ContainerAnalysis\Operation
     {
     }
 }

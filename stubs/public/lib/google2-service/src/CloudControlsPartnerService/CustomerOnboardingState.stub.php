@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class CustomerOnboardingState extends \Google\Collection
-{
-    protected $collection_key = 'onboardingSteps';
-    protected $onboardingStepsType = CustomerOnboardingStep::class;
-    protected $onboardingStepsDataType = 'array';
-    /**
-     * List of customer onboarding steps
-     *
-     * @param CustomerOnboardingStep[] $onboardingSteps
-     */
-    public function setOnboardingSteps($onboardingSteps)
+namespace Google\Service\CloudControlsPartnerService {
+    class CustomerOnboardingState extends \Google\Collection
     {
+        protected $collection_key = 'onboardingSteps';
+        protected $onboardingStepsType = CustomerOnboardingStep::class;
+        protected $onboardingStepsDataType = 'array';
+        /**
+         * List of customer onboarding steps
+         *
+         * @param CustomerOnboardingStep[] $onboardingSteps
+         */
+        public function setOnboardingSteps($onboardingSteps)
+        {
+        }
+        /**
+         * @return CustomerOnboardingStep[]
+         */
+        public function getOnboardingSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerOnboardingStep[]
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\CustomerOnboardingState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnboardingSteps()
+    class Google_Service_CloudControlsPartnerService_CustomerOnboardingState extends \Google\Service\CloudControlsPartnerService\CustomerOnboardingState
     {
     }
 }

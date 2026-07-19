@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StreamRawPredictRequest extends \Google\Model
-{
-    protected $httpBodyType = GoogleApiHttpBody::class;
-    protected $httpBodyDataType = '';
-    /**
-     * The prediction input. Supports HTTP headers and arbitrary data payload.
-     *
-     * @param GoogleApiHttpBody $httpBody
-     */
-    public function setHttpBody(GoogleApiHttpBody $httpBody)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StreamRawPredictRequest extends \Google\Model
     {
+        protected $httpBodyType = GoogleApiHttpBody::class;
+        protected $httpBodyDataType = '';
+        /**
+         * The prediction input. Supports HTTP headers and arbitrary data payload.
+         *
+         * @param GoogleApiHttpBody $httpBody
+         */
+        public function setHttpBody(GoogleApiHttpBody $httpBody)
+        {
+        }
+        /**
+         * @return GoogleApiHttpBody
+         */
+        public function getHttpBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiHttpBody
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamRawPredictRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpBody()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StreamRawPredictRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamRawPredictRequest
     {
     }
 }

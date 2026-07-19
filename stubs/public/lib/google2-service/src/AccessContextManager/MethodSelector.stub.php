@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class MethodSelector extends \Google\Model
-{
-    /**
-     * A valid method name for the corresponding `service_name` in ApiOperation.
-     * If `*` is used as the value for the `method`, then ALL methods and
-     * permissions are allowed.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * A valid Cloud IAM permission for the corresponding `service_name` in
-     * ApiOperation.
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * A valid method name for the corresponding `service_name` in ApiOperation.
-     * If `*` is used as the value for the `method`, then ALL methods and
-     * permissions are allowed.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
+namespace Google\Service\AccessContextManager {
+    class MethodSelector extends \Google\Model
     {
+        /**
+         * A valid method name for the corresponding `service_name` in ApiOperation.
+         * If `*` is used as the value for the `method`, then ALL methods and
+         * permissions are allowed.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * A valid Cloud IAM permission for the corresponding `service_name` in
+         * ApiOperation.
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * A valid method name for the corresponding `service_name` in ApiOperation.
+         * If `*` is used as the value for the `method`, then ALL methods and
+         * permissions are allowed.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * A valid Cloud IAM permission for the corresponding `service_name` in
+         * ApiOperation.
+         *
+         * @param string $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\MethodSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * A valid Cloud IAM permission for the corresponding `service_name` in
-     * ApiOperation.
-     *
-     * @param string $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermission()
+    class Google_Service_AccessContextManager_MethodSelector extends \Google\Service\AccessContextManager\MethodSelector
     {
     }
 }

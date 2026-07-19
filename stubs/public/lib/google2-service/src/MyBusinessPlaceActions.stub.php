@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for MyBusinessPlaceActions (v1).
- *
- * <p>
- * The My Business Place Actions API provides an interface for managing place
- * action links of a location on Google. Note - If you have a quota of 0 after
- * enabling the API, please request for GBP API access.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/my-business/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class MyBusinessPlaceActions extends \Google\Service
-{
-    public $locations_placeActionLinks;
-    public $placeActionTypeMetadata;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the MyBusinessPlaceActions
-     * service.
+     * Service definition for MyBusinessPlaceActions (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The My Business Place Actions API provides an interface for managing place
+     * action links of a location on Google. Note - If you have a quota of 0 after
+     * enabling the API, please request for GBP API access.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/my-business/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class MyBusinessPlaceActions extends \Google\Service
+    {
+        public $locations_placeActionLinks;
+        public $placeActionTypeMetadata;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the MyBusinessPlaceActions
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessPlaceActions extends \Google\Service\MyBusinessPlaceActions
     {
     }
 }

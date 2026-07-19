@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest extends \Google\Model
-{
-    /**
-     * Required. The new display name of the enum value. For example,
-     * `my_new_enum_value`.
-     *
-     * @var string
-     */
-    public $newEnumValueDisplayName;
-    /**
-     * Required. The new display name of the enum value. For example,
-     * `my_new_enum_value`.
-     *
-     * @param string $newEnumValueDisplayName
-     */
-    public function setNewEnumValueDisplayName($newEnumValueDisplayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest extends \Google\Model
     {
+        /**
+         * Required. The new display name of the enum value. For example,
+         * `my_new_enum_value`.
+         *
+         * @var string
+         */
+        public $newEnumValueDisplayName;
+        /**
+         * Required. The new display name of the enum value. For example,
+         * `my_new_enum_value`.
+         *
+         * @param string $newEnumValueDisplayName
+         */
+        public function setNewEnumValueDisplayName($newEnumValueDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewEnumValueDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewEnumValueDisplayName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SourceConfig extends \Google\Model
-{
-    protected $crowdingConfigType = SourceCrowdingConfig::class;
-    protected $crowdingConfigDataType = '';
-    protected $scoringConfigType = SourceScoringConfig::class;
-    protected $scoringConfigDataType = '';
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * The crowding configuration for the source.
-     *
-     * @param SourceCrowdingConfig $crowdingConfig
-     */
-    public function setCrowdingConfig(SourceCrowdingConfig $crowdingConfig)
+namespace Google\Service\CloudSearch {
+    class SourceConfig extends \Google\Model
     {
+        protected $crowdingConfigType = SourceCrowdingConfig::class;
+        protected $crowdingConfigDataType = '';
+        protected $scoringConfigType = SourceScoringConfig::class;
+        protected $scoringConfigDataType = '';
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * The crowding configuration for the source.
+         *
+         * @param SourceCrowdingConfig $crowdingConfig
+         */
+        public function setCrowdingConfig(SourceCrowdingConfig $crowdingConfig)
+        {
+        }
+        /**
+         * @return SourceCrowdingConfig
+         */
+        public function getCrowdingConfig()
+        {
+        }
+        /**
+         * The scoring configuration for the source.
+         *
+         * @param SourceScoringConfig $scoringConfig
+         */
+        public function setScoringConfig(SourceScoringConfig $scoringConfig)
+        {
+        }
+        /**
+         * @return SourceScoringConfig
+         */
+        public function getScoringConfig()
+        {
+        }
+        /**
+         * The source for which this configuration is to be used.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceCrowdingConfig
+     * Runtime class alias of \Google\Service\CloudSearch\SourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrowdingConfig()
-    {
-    }
-    /**
-     * The scoring configuration for the source.
-     *
-     * @param SourceScoringConfig $scoringConfig
-     */
-    public function setScoringConfig(SourceScoringConfig $scoringConfig)
-    {
-    }
-    /**
-     * @return SourceScoringConfig
-     */
-    public function getScoringConfig()
-    {
-    }
-    /**
-     * The source for which this configuration is to be used.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_CloudSearch_SourceConfig extends \Google\Service\CloudSearch\SourceConfig
     {
     }
 }

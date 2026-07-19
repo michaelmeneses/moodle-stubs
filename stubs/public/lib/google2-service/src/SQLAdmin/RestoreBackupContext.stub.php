@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class RestoreBackupContext extends \Google\Model
-{
-    /**
-     * The ID of the backup run to restore from.
-     *
-     * @var string
-     */
-    public $backupRunId;
-    /**
-     * The ID of the instance that the backup was taken from.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * This is always `sql#restoreBackupContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The full project ID of the source instance.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The ID of the backup run to restore from.
-     *
-     * @param string $backupRunId
-     */
-    public function setBackupRunId($backupRunId)
+namespace Google\Service\SQLAdmin {
+    class RestoreBackupContext extends \Google\Model
     {
+        /**
+         * The ID of the backup run to restore from.
+         *
+         * @var string
+         */
+        public $backupRunId;
+        /**
+         * The ID of the instance that the backup was taken from.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * This is always `sql#restoreBackupContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The full project ID of the source instance.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The ID of the backup run to restore from.
+         *
+         * @param string $backupRunId
+         */
+        public function setBackupRunId($backupRunId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupRunId()
+        {
+        }
+        /**
+         * The ID of the instance that the backup was taken from.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * This is always `sql#restoreBackupContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The full project ID of the source instance.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\RestoreBackupContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupRunId()
-    {
-    }
-    /**
-     * The ID of the instance that the backup was taken from.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * This is always `sql#restoreBackupContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The full project ID of the source instance.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
+    class Google_Service_SQLAdmin_RestoreBackupContext extends \Google\Service\SQLAdmin\RestoreBackupContext
     {
     }
 }

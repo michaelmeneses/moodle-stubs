@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1GoogleServiceAccountConfig extends \Google\Model
-{
-    /**
-     * Required. The service account to be used for authenticating request. The
-     * `iam.serviceAccounts.getAccessToken` permission should be granted on this
-     * service account to the impersonator service account.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Required. The service account to be used for authenticating request. The
-     * `iam.serviceAccounts.getAccessToken` permission should be granted on this
-     * service account to the impersonator service account.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1GoogleServiceAccountConfig extends \Google\Model
     {
+        /**
+         * Required. The service account to be used for authenticating request. The
+         * `iam.serviceAccounts.getAccessToken` permission should be granted on this
+         * service account to the impersonator service account.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Required. The service account to be used for authenticating request. The
+         * `iam.serviceAccounts.getAccessToken` permission should be granted on this
+         * service account to the impersonator service account.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1GoogleServiceAccountConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
+    class Google_Service_APIhub_GoogleCloudApihubV1GoogleServiceAccountConfig extends \Google\Service\APIhub\GoogleCloudApihubV1GoogleServiceAccountConfig
     {
     }
 }

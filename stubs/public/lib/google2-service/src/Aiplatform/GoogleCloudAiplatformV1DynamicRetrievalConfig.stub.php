@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DynamicRetrievalConfig extends \Google\Model
-{
-    /**
-     * Always trigger retrieval.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Run retrieval only when system decides it is necessary.
-     */
-    public const MODE_MODE_DYNAMIC = 'MODE_DYNAMIC';
-    /**
-     * Optional. The threshold to be used in dynamic retrieval. If not set, a
-     * system default value is used.
-     *
-     * @var float
-     */
-    public $dynamicThreshold;
-    /**
-     * The mode of the predictor to be used in dynamic retrieval.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Optional. The threshold to be used in dynamic retrieval. If not set, a
-     * system default value is used.
-     *
-     * @param float $dynamicThreshold
-     */
-    public function setDynamicThreshold($dynamicThreshold)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DynamicRetrievalConfig extends \Google\Model
     {
+        /**
+         * Always trigger retrieval.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Run retrieval only when system decides it is necessary.
+         */
+        public const MODE_MODE_DYNAMIC = 'MODE_DYNAMIC';
+        /**
+         * Optional. The threshold to be used in dynamic retrieval. If not set, a
+         * system default value is used.
+         *
+         * @var float
+         */
+        public $dynamicThreshold;
+        /**
+         * The mode of the predictor to be used in dynamic retrieval.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Optional. The threshold to be used in dynamic retrieval. If not set, a
+         * system default value is used.
+         *
+         * @param float $dynamicThreshold
+         */
+        public function setDynamicThreshold($dynamicThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDynamicThreshold()
+        {
+        }
+        /**
+         * The mode of the predictor to be used in dynamic retrieval.
+         *
+         * Accepted values: MODE_UNSPECIFIED, MODE_DYNAMIC
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DynamicRetrievalConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicThreshold()
-    {
-    }
-    /**
-     * The mode of the predictor to be used in dynamic retrieval.
-     *
-     * Accepted values: MODE_UNSPECIFIED, MODE_DYNAMIC
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return self::MODE_*
-     */
-    public function getMode()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DynamicRetrievalConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DynamicRetrievalConfig
     {
     }
 }

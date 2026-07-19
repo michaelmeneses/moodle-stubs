@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class PartitionCursor extends \Google\Model
-{
-    protected $cursorType = Cursor::class;
-    protected $cursorDataType = '';
-    /**
-     * The partition this is for.
-     *
-     * @var string
-     */
-    public $partition;
-    /**
-     * The value of the cursor.
-     *
-     * @param Cursor $cursor
-     */
-    public function setCursor(Cursor $cursor)
+namespace Google\Service\PubsubLite {
+    class PartitionCursor extends \Google\Model
     {
+        protected $cursorType = Cursor::class;
+        protected $cursorDataType = '';
+        /**
+         * The partition this is for.
+         *
+         * @var string
+         */
+        public $partition;
+        /**
+         * The value of the cursor.
+         *
+         * @param Cursor $cursor
+         */
+        public function setCursor(Cursor $cursor)
+        {
+        }
+        /**
+         * @return Cursor
+         */
+        public function getCursor()
+        {
+        }
+        /**
+         * The partition this is for.
+         *
+         * @param string $partition
+         */
+        public function setPartition($partition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cursor
+     * Runtime class alias of \Google\Service\PubsubLite\PartitionCursor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCursor()
-    {
-    }
-    /**
-     * The partition this is for.
-     *
-     * @param string $partition
-     */
-    public function setPartition($partition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartition()
+    class Google_Service_PubsubLite_PartitionCursor extends \Google\Service\PubsubLite\PartitionCursor
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ExtraParameter extends \Google\Model
-{
-    protected $regionalMigDistributionPolicyType = RegionalMigDistributionPolicy::class;
-    protected $regionalMigDistributionPolicyDataType = '';
-    /**
-     * @param RegionalMigDistributionPolicy
-     */
-    public function setRegionalMigDistributionPolicy(RegionalMigDistributionPolicy $regionalMigDistributionPolicy)
+namespace Google\Service\Backupdr {
+    class ExtraParameter extends \Google\Model
     {
+        protected $regionalMigDistributionPolicyType = RegionalMigDistributionPolicy::class;
+        protected $regionalMigDistributionPolicyDataType = '';
+        /**
+         * @param RegionalMigDistributionPolicy
+         */
+        public function setRegionalMigDistributionPolicy(RegionalMigDistributionPolicy $regionalMigDistributionPolicy)
+        {
+        }
+        /**
+         * @return RegionalMigDistributionPolicy
+         */
+        public function getRegionalMigDistributionPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegionalMigDistributionPolicy
+     * Runtime class alias of \Google\Service\Backupdr\ExtraParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionalMigDistributionPolicy()
+    class Google_Service_Backupdr_ExtraParameter extends \Google\Service\Backupdr\ExtraParameter
     {
     }
 }

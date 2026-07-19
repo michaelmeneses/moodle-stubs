@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SampleFilter extends \Google\Collection
-{
-    protected $collection_key = 'includedTypes';
-    public $includedTypes;
-    public $maxLocationCount;
-    protected $spacingType = GoogleMapsPlayablelocationsV3SampleSpacingOptions::class;
-    protected $spacingDataType = '';
-    public function setIncludedTypes($includedTypes)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SampleFilter extends \Google\Collection
     {
+        protected $collection_key = 'includedTypes';
+        public $includedTypes;
+        public $maxLocationCount;
+        protected $spacingType = GoogleMapsPlayablelocationsV3SampleSpacingOptions::class;
+        protected $spacingDataType = '';
+        public function setIncludedTypes($includedTypes)
+        {
+        }
+        public function getIncludedTypes()
+        {
+        }
+        public function setMaxLocationCount($maxLocationCount)
+        {
+        }
+        public function getMaxLocationCount()
+        {
+        }
+        /**
+         * @param GoogleMapsPlayablelocationsV3SampleSpacingOptions
+         */
+        public function setSpacing(GoogleMapsPlayablelocationsV3SampleSpacingOptions $spacing)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3SampleSpacingOptions
+         */
+        public function getSpacing()
+        {
+        }
     }
-    public function getIncludedTypes()
-    {
-    }
-    public function setMaxLocationCount($maxLocationCount)
-    {
-    }
-    public function getMaxLocationCount()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleMapsPlayablelocationsV3SampleSpacingOptions
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setSpacing(GoogleMapsPlayablelocationsV3SampleSpacingOptions $spacing)
-    {
-    }
-    /**
-     * @return GoogleMapsPlayablelocationsV3SampleSpacingOptions
-     */
-    public function getSpacing()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SampleFilter extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleFilter
     {
     }
 }

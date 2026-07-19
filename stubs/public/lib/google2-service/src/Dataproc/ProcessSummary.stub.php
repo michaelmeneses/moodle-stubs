@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ProcessSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $addTime;
-    /**
-     * @var string
-     */
-    public $hostPort;
-    /**
-     * @var bool
-     */
-    public $isActive;
-    /**
-     * @var string
-     */
-    public $processId;
-    /**
-     * @var string[]
-     */
-    public $processLogs;
-    /**
-     * @var string
-     */
-    public $removeTime;
-    /**
-     * @var int
-     */
-    public $totalCores;
-    /**
-     * @param string $addTime
-     */
-    public function setAddTime($addTime)
+namespace Google\Service\Dataproc {
+    class ProcessSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $addTime;
+        /**
+         * @var string
+         */
+        public $hostPort;
+        /**
+         * @var bool
+         */
+        public $isActive;
+        /**
+         * @var string
+         */
+        public $processId;
+        /**
+         * @var string[]
+         */
+        public $processLogs;
+        /**
+         * @var string
+         */
+        public $removeTime;
+        /**
+         * @var int
+         */
+        public $totalCores;
+        /**
+         * @param string $addTime
+         */
+        public function setAddTime($addTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddTime()
+        {
+        }
+        /**
+         * @param string $hostPort
+         */
+        public function setHostPort($hostPort)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostPort()
+        {
+        }
+        /**
+         * @param bool $isActive
+         */
+        public function setIsActive($isActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsActive()
+        {
+        }
+        /**
+         * @param string $processId
+         */
+        public function setProcessId($processId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessId()
+        {
+        }
+        /**
+         * @param string[] $processLogs
+         */
+        public function setProcessLogs($processLogs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProcessLogs()
+        {
+        }
+        /**
+         * @param string $removeTime
+         */
+        public function setRemoveTime($removeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoveTime()
+        {
+        }
+        /**
+         * @param int $totalCores
+         */
+        public function setTotalCores($totalCores)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ProcessSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddTime()
-    {
-    }
-    /**
-     * @param string $hostPort
-     */
-    public function setHostPort($hostPort)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostPort()
-    {
-    }
-    /**
-     * @param bool $isActive
-     */
-    public function setIsActive($isActive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsActive()
-    {
-    }
-    /**
-     * @param string $processId
-     */
-    public function setProcessId($processId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessId()
-    {
-    }
-    /**
-     * @param string[] $processLogs
-     */
-    public function setProcessLogs($processLogs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProcessLogs()
-    {
-    }
-    /**
-     * @param string $removeTime
-     */
-    public function setRemoveTime($removeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoveTime()
-    {
-    }
-    /**
-     * @param int $totalCores
-     */
-    public function setTotalCores($totalCores)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCores()
+    class Google_Service_Dataproc_ProcessSummary extends \Google\Service\Dataproc\ProcessSummary
     {
     }
 }

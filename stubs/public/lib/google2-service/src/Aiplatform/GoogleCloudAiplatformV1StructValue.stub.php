@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StructValue extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = GoogleCloudAiplatformV1StructFieldValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * A list of field values.
-     *
-     * @param GoogleCloudAiplatformV1StructFieldValue[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StructValue extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = GoogleCloudAiplatformV1StructFieldValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * A list of field values.
+         *
+         * @param GoogleCloudAiplatformV1StructFieldValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StructFieldValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1StructFieldValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StructValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StructValue extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StructValue
     {
     }
 }

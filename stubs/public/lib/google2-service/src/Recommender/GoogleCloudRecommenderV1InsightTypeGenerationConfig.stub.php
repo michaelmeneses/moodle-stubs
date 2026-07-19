@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1InsightTypeGenerationConfig extends \Google\Model
-{
-    /**
-     * Parameters for this InsightTypeGenerationConfig. These configs can be used
-     * by or are applied to all subtypes.
-     *
-     * @var array[]
-     */
-    public $params;
-    /**
-     * Parameters for this InsightTypeGenerationConfig. These configs can be used
-     * by or are applied to all subtypes.
-     *
-     * @param array[] $params
-     */
-    public function setParams($params)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1InsightTypeGenerationConfig extends \Google\Model
     {
+        /**
+         * Parameters for this InsightTypeGenerationConfig. These configs can be used
+         * by or are applied to all subtypes.
+         *
+         * @var array[]
+         */
+        public $params;
+        /**
+         * Parameters for this InsightTypeGenerationConfig. These configs can be used
+         * by or are applied to all subtypes.
+         *
+         * @param array[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1InsightTypeGenerationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParams()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1InsightTypeGenerationConfig extends \Google\Service\Recommender\GoogleCloudRecommenderV1InsightTypeGenerationConfig
     {
     }
 }

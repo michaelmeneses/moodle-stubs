@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PendingGoogleUpdateInsight extends \Google\Model
-{
-    /**
-     * The name of the Google-provided library with the non-SDK API dependency.
-     *
-     * @var string
-     */
-    public $nameOfGoogleLibrary;
-    /**
-     * The name of the Google-provided library with the non-SDK API dependency.
-     *
-     * @param string $nameOfGoogleLibrary
-     */
-    public function setNameOfGoogleLibrary($nameOfGoogleLibrary)
+namespace Google\Service\ToolResults {
+    class PendingGoogleUpdateInsight extends \Google\Model
     {
+        /**
+         * The name of the Google-provided library with the non-SDK API dependency.
+         *
+         * @var string
+         */
+        public $nameOfGoogleLibrary;
+        /**
+         * The name of the Google-provided library with the non-SDK API dependency.
+         *
+         * @param string $nameOfGoogleLibrary
+         */
+        public function setNameOfGoogleLibrary($nameOfGoogleLibrary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNameOfGoogleLibrary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\PendingGoogleUpdateInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNameOfGoogleLibrary()
+    class Google_Service_ToolResults_PendingGoogleUpdateInsight extends \Google\Service\ToolResults\PendingGoogleUpdateInsight
     {
     }
 }

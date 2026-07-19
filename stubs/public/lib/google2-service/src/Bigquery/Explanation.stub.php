@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Explanation extends \Google\Model
-{
-    /**
-     * Attribution of feature.
-     *
-     * @var 
-     */
-    public $attribution;
-    /**
-     * The full feature name. For non-numerical features, will be formatted like
-     * `.`. Overall size of feature name will always be truncated to first 120
-     * characters.
-     *
-     * @var string
-     */
-    public $featureName;
-    public function setAttribution($attribution)
+namespace Google\Service\Bigquery {
+    class Explanation extends \Google\Model
     {
+        /**
+         * Attribution of feature.
+         *
+         * @var 
+         */
+        public $attribution;
+        /**
+         * The full feature name. For non-numerical features, will be formatted like
+         * `.`. Overall size of feature name will always be truncated to first 120
+         * characters.
+         *
+         * @var string
+         */
+        public $featureName;
+        public function setAttribution($attribution)
+        {
+        }
+        public function getAttribution()
+        {
+        }
+        /**
+         * The full feature name. For non-numerical features, will be formatted like
+         * `.`. Overall size of feature name will always be truncated to first 120
+         * characters.
+         *
+         * @param string $featureName
+         */
+        public function setFeatureName($featureName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureName()
+        {
+        }
     }
-    public function getAttribution()
-    {
-    }
+}
+namespace {
     /**
-     * The full feature name. For non-numerical features, will be formatted like
-     * `.`. Overall size of feature name will always be truncated to first 120
-     * characters.
-     *
-     * @param string $featureName
+     * Runtime class alias of \Google\Service\Bigquery\Explanation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFeatureName($featureName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeatureName()
+    class Google_Service_Bigquery_Explanation extends \Google\Service\Bigquery\Explanation
     {
     }
 }

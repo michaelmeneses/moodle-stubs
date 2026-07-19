@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk\Resource;
-
-/**
- * The "threatLists" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webriskService = new Google\Service\WebRisk(...);
- *   $threatLists = $webriskService->threatLists;
- *  </code>
- */
-class ThreatLists extends \Google\Service\Resource
-{
+namespace Google\Service\WebRisk\Resource {
+    use Google\Service\WebRisk\GoogleCloudWebriskV1ComputeThreatListDiffResponse;
     /**
-     * Gets the most recent threat list diffs. These diffs should be applied to a
-     * local database of hashes to keep it up-to-date. If the local database is
-     * empty or excessively out-of-date, a complete snapshot of the database will be
-     * returned. This Method only updates a single ThreatList at a time. To update
-     * multiple ThreatList databases, this method needs to be called once for each
-     * list. (threatLists.computeDiff)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int constraints.maxDatabaseEntries Sets the maximum number of
-     * entries that the client is willing to have in the local database. This should
-     * be a power of 2 between 2**10 and 2**20. If zero, no database size limit is
-     * set.
-     * @opt_param int constraints.maxDiffEntries The maximum size in number of
-     * entries. The diff will not contain more entries than this value. This should
-     * be a power of 2 between 2**10 and 2**20. If zero, no diff size limit is set.
-     * @opt_param string constraints.supportedCompressions The compression types
-     * supported by the client.
-     * @opt_param string threatType Required. The threat list to update. Only a
-     * single ThreatType should be specified per request. If you want to handle
-     * multiple ThreatTypes, you must make one request per ThreatType.
-     * @opt_param string versionToken The current version token of the client for
-     * the requested list (the client version that was received from the last
-     * successful diff). If the client does not have a version token (this is the
-     * first time calling ComputeThreatListDiff), this may be left empty and a full
-     * database snapshot will be returned.
-     * @return GoogleCloudWebriskV1ComputeThreatListDiffResponse
-     * @throws \Google\Service\Exception
+     * The "threatLists" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webriskService = new Google\Service\WebRisk(...);
+     *   $threatLists = $webriskService->threatLists;
+     *  </code>
      */
-    public function computeDiff($optParams = [])
+    class ThreatLists extends \Google\Service\Resource
+    {
+        /**
+         * Gets the most recent threat list diffs. These diffs should be applied to a
+         * local database of hashes to keep it up-to-date. If the local database is
+         * empty or excessively out-of-date, a complete snapshot of the database will be
+         * returned. This Method only updates a single ThreatList at a time. To update
+         * multiple ThreatList databases, this method needs to be called once for each
+         * list. (threatLists.computeDiff)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int constraints.maxDatabaseEntries Sets the maximum number of
+         * entries that the client is willing to have in the local database. This should
+         * be a power of 2 between 2**10 and 2**20. If zero, no database size limit is
+         * set.
+         * @opt_param int constraints.maxDiffEntries The maximum size in number of
+         * entries. The diff will not contain more entries than this value. This should
+         * be a power of 2 between 2**10 and 2**20. If zero, no diff size limit is set.
+         * @opt_param string constraints.supportedCompressions The compression types
+         * supported by the client.
+         * @opt_param string threatType Required. The threat list to update. Only a
+         * single ThreatType should be specified per request. If you want to handle
+         * multiple ThreatTypes, you must make one request per ThreatType.
+         * @opt_param string versionToken The current version token of the client for
+         * the requested list (the client version that was received from the last
+         * successful diff). If the client does not have a version token (this is the
+         * first time calling ComputeThreatListDiff), this may be left empty and a full
+         * database snapshot will be returned.
+         * @return GoogleCloudWebriskV1ComputeThreatListDiffResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeDiff($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WebRisk\Resource\ThreatLists registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WebRisk_Resource_ThreatLists extends \Google\Service\WebRisk\Resource\ThreatLists
     {
     }
 }

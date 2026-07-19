@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportFloodlightCriteriaReportProperties extends \Google\Model
-{
-    /**
-     * Include conversions that have no cookie, but do have an exposure path.
-     *
-     * @var bool
-     */
-    public $includeAttributedIPConversions;
-    /**
-     * Include conversions of users with a DoubleClick cookie but without an
-     * exposure. That means the user did not click or see an ad from the
-     * advertiser within the Floodlight group, or that the interaction happened
-     * outside the lookback window.
-     *
-     * @var bool
-     */
-    public $includeUnattributedCookieConversions;
-    /**
-     * Include conversions that have no associated cookies and no exposures. It’s
-     * therefore impossible to know how the user was exposed to your ads during
-     * the lookback window prior to a conversion.
-     *
-     * @var bool
-     */
-    public $includeUnattributedIPConversions;
-    /**
-     * Include conversions that have no cookie, but do have an exposure path.
-     *
-     * @param bool $includeAttributedIPConversions
-     */
-    public function setIncludeAttributedIPConversions($includeAttributedIPConversions)
+namespace Google\Service\Dfareporting {
+    class ReportFloodlightCriteriaReportProperties extends \Google\Model
     {
+        /**
+         * Include conversions that have no cookie, but do have an exposure path.
+         *
+         * @var bool
+         */
+        public $includeAttributedIPConversions;
+        /**
+         * Include conversions of users with a DoubleClick cookie but without an
+         * exposure. That means the user did not click or see an ad from the
+         * advertiser within the Floodlight group, or that the interaction happened
+         * outside the lookback window.
+         *
+         * @var bool
+         */
+        public $includeUnattributedCookieConversions;
+        /**
+         * Include conversions that have no associated cookies and no exposures. It’s
+         * therefore impossible to know how the user was exposed to your ads during
+         * the lookback window prior to a conversion.
+         *
+         * @var bool
+         */
+        public $includeUnattributedIPConversions;
+        /**
+         * Include conversions that have no cookie, but do have an exposure path.
+         *
+         * @param bool $includeAttributedIPConversions
+         */
+        public function setIncludeAttributedIPConversions($includeAttributedIPConversions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeAttributedIPConversions()
+        {
+        }
+        /**
+         * Include conversions of users with a DoubleClick cookie but without an
+         * exposure. That means the user did not click or see an ad from the
+         * advertiser within the Floodlight group, or that the interaction happened
+         * outside the lookback window.
+         *
+         * @param bool $includeUnattributedCookieConversions
+         */
+        public function setIncludeUnattributedCookieConversions($includeUnattributedCookieConversions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeUnattributedCookieConversions()
+        {
+        }
+        /**
+         * Include conversions that have no associated cookies and no exposures. It’s
+         * therefore impossible to know how the user was exposed to your ads during
+         * the lookback window prior to a conversion.
+         *
+         * @param bool $includeUnattributedIPConversions
+         */
+        public function setIncludeUnattributedIPConversions($includeUnattributedIPConversions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeUnattributedIPConversions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\ReportFloodlightCriteriaReportProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeAttributedIPConversions()
-    {
-    }
-    /**
-     * Include conversions of users with a DoubleClick cookie but without an
-     * exposure. That means the user did not click or see an ad from the
-     * advertiser within the Floodlight group, or that the interaction happened
-     * outside the lookback window.
-     *
-     * @param bool $includeUnattributedCookieConversions
-     */
-    public function setIncludeUnattributedCookieConversions($includeUnattributedCookieConversions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeUnattributedCookieConversions()
-    {
-    }
-    /**
-     * Include conversions that have no associated cookies and no exposures. It’s
-     * therefore impossible to know how the user was exposed to your ads during
-     * the lookback window prior to a conversion.
-     *
-     * @param bool $includeUnattributedIPConversions
-     */
-    public function setIncludeUnattributedIPConversions($includeUnattributedIPConversions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeUnattributedIPConversions()
+    class Google_Service_Dfareporting_ReportFloodlightCriteriaReportProperties extends \Google\Service\Dfareporting\ReportFloodlightCriteriaReportProperties
     {
     }
 }

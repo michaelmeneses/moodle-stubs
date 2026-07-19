@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictParamsImageSegmentationPredictionParams extends \Google\Model
-{
-    /**
-     * When the model predicts category of pixels of the image, it will only
-     * provide predictions for pixels that it is at least this much confident
-     * about. All other pixels will be classified as background. Default value is
-     * 0.5.
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * When the model predicts category of pixels of the image, it will only
-     * provide predictions for pixels that it is at least this much confident
-     * about. All other pixels will be classified as background. Default value is
-     * 0.5.
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictParamsImageSegmentationPredictionParams extends \Google\Model
     {
+        /**
+         * When the model predicts category of pixels of the image, it will only
+         * provide predictions for pixels that it is at least this much confident
+         * about. All other pixels will be classified as background. Default value is
+         * 0.5.
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * When the model predicts category of pixels of the image, it will only
+         * provide predictions for pixels that it is at least this much confident
+         * about. All other pixels will be classified as background. Default value is
+         * 0.5.
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictParamsImageSegmentationPredictionParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictParamsImageSegmentationPredictionParams extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictParamsImageSegmentationPredictionParams
     {
     }
 }

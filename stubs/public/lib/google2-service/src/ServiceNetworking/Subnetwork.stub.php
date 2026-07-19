@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class Subnetwork extends \Google\Collection
-{
-    protected $collection_key = 'secondaryIpRanges';
-    /**
-     * Subnetwork CIDR range in `10.x.x.x/y` format.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * In the Shared VPC host project, the VPC network that's peered with the
-     * consumer network. For example: `projects/1234321/global/networks/host-
-     * network`
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * This is a discovered subnet that is not within the current consumer
-     * allocated ranges.
-     *
-     * @var bool
-     */
-    public $outsideAllocation;
-    /**
-     * GCP region where the subnetwork is located.
-     *
-     * @var string
-     */
-    public $region;
-    protected $secondaryIpRangesType = SecondaryIpRange::class;
-    protected $secondaryIpRangesDataType = 'array';
-    /**
-     * Subnetwork CIDR range in `10.x.x.x/y` format.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\ServiceNetworking {
+    class Subnetwork extends \Google\Collection
     {
+        protected $collection_key = 'secondaryIpRanges';
+        /**
+         * Subnetwork CIDR range in `10.x.x.x/y` format.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * In the Shared VPC host project, the VPC network that's peered with the
+         * consumer network. For example: `projects/1234321/global/networks/host-
+         * network`
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * This is a discovered subnet that is not within the current consumer
+         * allocated ranges.
+         *
+         * @var bool
+         */
+        public $outsideAllocation;
+        /**
+         * GCP region where the subnetwork is located.
+         *
+         * @var string
+         */
+        public $region;
+        protected $secondaryIpRangesType = SecondaryIpRange::class;
+        protected $secondaryIpRangesDataType = 'array';
+        /**
+         * Subnetwork CIDR range in `10.x.x.x/y` format.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
+        /**
+         * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * In the Shared VPC host project, the VPC network that's peered with the
+         * consumer network. For example: `projects/1234321/global/networks/host-
+         * network`
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * This is a discovered subnet that is not within the current consumer
+         * allocated ranges.
+         *
+         * @param bool $outsideAllocation
+         */
+        public function setOutsideAllocation($outsideAllocation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOutsideAllocation()
+        {
+        }
+        /**
+         * GCP region where the subnetwork is located.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * List of secondary IP ranges in this subnetwork.
+         *
+         * @param SecondaryIpRange[] $secondaryIpRanges
+         */
+        public function setSecondaryIpRanges($secondaryIpRanges)
+        {
+        }
+        /**
+         * @return SecondaryIpRange[]
+         */
+        public function getSecondaryIpRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\Subnetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
-    {
-    }
-    /**
-     * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * In the Shared VPC host project, the VPC network that's peered with the
-     * consumer network. For example: `projects/1234321/global/networks/host-
-     * network`
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * This is a discovered subnet that is not within the current consumer
-     * allocated ranges.
-     *
-     * @param bool $outsideAllocation
-     */
-    public function setOutsideAllocation($outsideAllocation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOutsideAllocation()
-    {
-    }
-    /**
-     * GCP region where the subnetwork is located.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * List of secondary IP ranges in this subnetwork.
-     *
-     * @param SecondaryIpRange[] $secondaryIpRanges
-     */
-    public function setSecondaryIpRanges($secondaryIpRanges)
-    {
-    }
-    /**
-     * @return SecondaryIpRange[]
-     */
-    public function getSecondaryIpRanges()
+    class Google_Service_ServiceNetworking_Subnetwork extends \Google\Service\ServiceNetworking\Subnetwork
     {
     }
 }

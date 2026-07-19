@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListAuthorizedViewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'authorizedViews';
-    protected $authorizedViewsType = AuthorizedView::class;
-    protected $authorizedViewsDataType = 'array';
-    /**
-     * Set if not all tables could be returned in a single response. Pass this
-     * value to `page_token` in another request to get the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The AuthorizedViews present in the requested table.
-     *
-     * @param AuthorizedView[] $authorizedViews
-     */
-    public function setAuthorizedViews($authorizedViews)
+namespace Google\Service\BigtableAdmin {
+    class ListAuthorizedViewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'authorizedViews';
+        protected $authorizedViewsType = AuthorizedView::class;
+        protected $authorizedViewsDataType = 'array';
+        /**
+         * Set if not all tables could be returned in a single response. Pass this
+         * value to `page_token` in another request to get the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The AuthorizedViews present in the requested table.
+         *
+         * @param AuthorizedView[] $authorizedViews
+         */
+        public function setAuthorizedViews($authorizedViews)
+        {
+        }
+        /**
+         * @return AuthorizedView[]
+         */
+        public function getAuthorizedViews()
+        {
+        }
+        /**
+         * Set if not all tables could be returned in a single response. Pass this
+         * value to `page_token` in another request to get the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedView[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListAuthorizedViewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizedViews()
-    {
-    }
-    /**
-     * Set if not all tables could be returned in a single response. Pass this
-     * value to `page_token` in another request to get the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListAuthorizedViewsResponse extends \Google\Service\BigtableAdmin\ListAuthorizedViewsResponse
     {
     }
 }

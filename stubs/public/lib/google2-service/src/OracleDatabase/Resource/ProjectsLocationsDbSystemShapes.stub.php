@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "dbSystemShapes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $dbSystemShapes = $oracledatabaseService->projects_locations_dbSystemShapes;
- *  </code>
- */
-class ProjectsLocationsDbSystemShapes extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListDbSystemShapesResponse;
     /**
-     * Lists the database system shapes available for the project and location.
-     * (dbSystemShapes.listProjectsLocationsDbSystemShapes)
-     *
-     * @param string $parent Required. The parent value for Database System Shapes
-     * in the following format: projects/{project}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. An expression for filtering the results of
-     * the request. Only the gcp_oracle_zone_id field is supported in this format:
-     * `gcp_oracle_zone_id="{gcp_oracle_zone_id}"`.
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, at most 50 database system shapes will be returned. The maximum
-     * value is 1000; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListDbSystemShapesResponse
-     * @throws \Google\Service\Exception
+     * The "dbSystemShapes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $dbSystemShapes = $oracledatabaseService->projects_locations_dbSystemShapes;
+     *  </code>
      */
-    public function listProjectsLocationsDbSystemShapes($parent, $optParams = [])
+    class ProjectsLocationsDbSystemShapes extends \Google\Service\Resource
+    {
+        /**
+         * Lists the database system shapes available for the project and location.
+         * (dbSystemShapes.listProjectsLocationsDbSystemShapes)
+         *
+         * @param string $parent Required. The parent value for Database System Shapes
+         * in the following format: projects/{project}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. An expression for filtering the results of
+         * the request. Only the gcp_oracle_zone_id field is supported in this format:
+         * `gcp_oracle_zone_id="{gcp_oracle_zone_id}"`.
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, at most 50 database system shapes will be returned. The maximum
+         * value is 1000; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListDbSystemShapesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDbSystemShapes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsDbSystemShapes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsDbSystemShapes extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsDbSystemShapes
     {
     }
 }

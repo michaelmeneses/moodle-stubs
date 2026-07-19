@@ -23,6 +23,7 @@
  */
 namespace Google\Auth;
 
+use Psr\Cache\CacheItemPoolInterface;
 /**
  * A class to implement caching for any object implementing
  * FetchAuthTokenInterface

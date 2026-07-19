@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainIssueModelResult extends \Google\Collection
-{
-    protected $collection_key = 'issues';
-    /**
-     * Issue model that generates the result. Format:
-     * projects/{project}/locations/{location}/issueModels/{issue_model}
-     *
-     * @var string
-     */
-    public $issueModel;
-    protected $issuesType = GoogleCloudContactcenterinsightsV1mainIssueAssignment::class;
-    protected $issuesDataType = 'array';
-    /**
-     * Issue model that generates the result. Format:
-     * projects/{project}/locations/{location}/issueModels/{issue_model}
-     *
-     * @param string $issueModel
-     */
-    public function setIssueModel($issueModel)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainIssueModelResult extends \Google\Collection
     {
+        protected $collection_key = 'issues';
+        /**
+         * Issue model that generates the result. Format:
+         * projects/{project}/locations/{location}/issueModels/{issue_model}
+         *
+         * @var string
+         */
+        public $issueModel;
+        protected $issuesType = GoogleCloudContactcenterinsightsV1mainIssueAssignment::class;
+        protected $issuesDataType = 'array';
+        /**
+         * Issue model that generates the result. Format:
+         * projects/{project}/locations/{location}/issueModels/{issue_model}
+         *
+         * @param string $issueModel
+         */
+        public function setIssueModel($issueModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueModel()
+        {
+        }
+        /**
+         * All the matched issues.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainIssueAssignment[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainIssueAssignment[]
+         */
+        public function getIssues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssueModelResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueModel()
-    {
-    }
-    /**
-     * All the matched issues.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainIssueAssignment[] $issues
-     */
-    public function setIssues($issues)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainIssueAssignment[]
-     */
-    public function getIssues()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainIssueModelResult extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssueModelResult
     {
     }
 }

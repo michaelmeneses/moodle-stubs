@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2EntityId extends \Google\Model
-{
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    /**
-     * Composite key indicating which field contains the entity identifier.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2EntityId extends \Google\Model
     {
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        /**
+         * Composite key indicating which field contains the entity identifier.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2EntityId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
+    class Google_Service_DLP_GooglePrivacyDlpV2EntityId extends \Google\Service\DLP\GooglePrivacyDlpV2EntityId
     {
     }
 }

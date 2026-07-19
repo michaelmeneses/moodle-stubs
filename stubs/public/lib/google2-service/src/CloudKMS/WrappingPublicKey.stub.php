@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class WrappingPublicKey extends \Google\Model
-{
-    /**
-     * The public key, encoded in PEM format. For more information, see the [RFC
-     * 7468](https://tools.ietf.org/html/rfc7468) sections for [General
-     * Considerations](https://tools.ietf.org/html/rfc7468#section-2) and [Textual
-     * Encoding of Subject Public Key Info]
-     * (https://tools.ietf.org/html/rfc7468#section-13).
-     *
-     * @var string
-     */
-    public $pem;
-    /**
-     * The public key, encoded in PEM format. For more information, see the [RFC
-     * 7468](https://tools.ietf.org/html/rfc7468) sections for [General
-     * Considerations](https://tools.ietf.org/html/rfc7468#section-2) and [Textual
-     * Encoding of Subject Public Key Info]
-     * (https://tools.ietf.org/html/rfc7468#section-13).
-     *
-     * @param string $pem
-     */
-    public function setPem($pem)
+namespace Google\Service\CloudKMS {
+    class WrappingPublicKey extends \Google\Model
     {
+        /**
+         * The public key, encoded in PEM format. For more information, see the [RFC
+         * 7468](https://tools.ietf.org/html/rfc7468) sections for [General
+         * Considerations](https://tools.ietf.org/html/rfc7468#section-2) and [Textual
+         * Encoding of Subject Public Key Info]
+         * (https://tools.ietf.org/html/rfc7468#section-13).
+         *
+         * @var string
+         */
+        public $pem;
+        /**
+         * The public key, encoded in PEM format. For more information, see the [RFC
+         * 7468](https://tools.ietf.org/html/rfc7468) sections for [General
+         * Considerations](https://tools.ietf.org/html/rfc7468#section-2) and [Textual
+         * Encoding of Subject Public Key Info]
+         * (https://tools.ietf.org/html/rfc7468#section-13).
+         *
+         * @param string $pem
+         */
+        public function setPem($pem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\WrappingPublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPem()
+    class Google_Service_CloudKMS_WrappingPublicKey extends \Google\Service\CloudKMS\WrappingPublicKey
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryCloudSqlFilter extends \Google\Model
-{
-    protected $collectionType = GooglePrivacyDlpV2DatabaseResourceCollection::class;
-    protected $collectionDataType = '';
-    protected $databaseResourceReferenceType = GooglePrivacyDlpV2DatabaseResourceReference::class;
-    protected $databaseResourceReferenceDataType = '';
-    protected $othersType = GooglePrivacyDlpV2AllOtherDatabaseResources::class;
-    protected $othersDataType = '';
-    /**
-     * A specific set of database resources for this filter to apply to.
-     *
-     * @param GooglePrivacyDlpV2DatabaseResourceCollection $collection
-     */
-    public function setCollection(GooglePrivacyDlpV2DatabaseResourceCollection $collection)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryCloudSqlFilter extends \Google\Model
     {
+        protected $collectionType = GooglePrivacyDlpV2DatabaseResourceCollection::class;
+        protected $collectionDataType = '';
+        protected $databaseResourceReferenceType = GooglePrivacyDlpV2DatabaseResourceReference::class;
+        protected $databaseResourceReferenceDataType = '';
+        protected $othersType = GooglePrivacyDlpV2AllOtherDatabaseResources::class;
+        protected $othersDataType = '';
+        /**
+         * A specific set of database resources for this filter to apply to.
+         *
+         * @param GooglePrivacyDlpV2DatabaseResourceCollection $collection
+         */
+        public function setCollection(GooglePrivacyDlpV2DatabaseResourceCollection $collection)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DatabaseResourceCollection
+         */
+        public function getCollection()
+        {
+        }
+        /**
+         * The database resource to scan. Targets including this can only include one
+         * target (the target with this database resource reference).
+         *
+         * @param GooglePrivacyDlpV2DatabaseResourceReference $databaseResourceReference
+         */
+        public function setDatabaseResourceReference(GooglePrivacyDlpV2DatabaseResourceReference $databaseResourceReference)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DatabaseResourceReference
+         */
+        public function getDatabaseResourceReference()
+        {
+        }
+        /**
+         * Catch-all. This should always be the last target in the list because
+         * anything above it will apply first. Should only appear once in a
+         * configuration. If none is specified, a default one will be added
+         * automatically.
+         *
+         * @param GooglePrivacyDlpV2AllOtherDatabaseResources $others
+         */
+        public function setOthers(GooglePrivacyDlpV2AllOtherDatabaseResources $others)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AllOtherDatabaseResources
+         */
+        public function getOthers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DatabaseResourceCollection
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudSqlFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollection()
-    {
-    }
-    /**
-     * The database resource to scan. Targets including this can only include one
-     * target (the target with this database resource reference).
-     *
-     * @param GooglePrivacyDlpV2DatabaseResourceReference $databaseResourceReference
-     */
-    public function setDatabaseResourceReference(GooglePrivacyDlpV2DatabaseResourceReference $databaseResourceReference)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DatabaseResourceReference
-     */
-    public function getDatabaseResourceReference()
-    {
-    }
-    /**
-     * Catch-all. This should always be the last target in the list because
-     * anything above it will apply first. Should only appear once in a
-     * configuration. If none is specified, a default one will be added
-     * automatically.
-     *
-     * @param GooglePrivacyDlpV2AllOtherDatabaseResources $others
-     */
-    public function setOthers(GooglePrivacyDlpV2AllOtherDatabaseResources $others)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2AllOtherDatabaseResources
-     */
-    public function getOthers()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryCloudSqlFilter extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudSqlFilter
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UpdateDiscoveryConfigRequest extends \Google\Model
-{
-    protected $discoveryConfigType = GooglePrivacyDlpV2DiscoveryConfig::class;
-    protected $discoveryConfigDataType = '';
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. New DiscoveryConfig value.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig
-     */
-    public function setDiscoveryConfig(GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UpdateDiscoveryConfigRequest extends \Google\Model
     {
+        protected $discoveryConfigType = GooglePrivacyDlpV2DiscoveryConfig::class;
+        protected $discoveryConfigDataType = '';
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. New DiscoveryConfig value.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig
+         */
+        public function setDiscoveryConfig(GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryConfig
+         */
+        public function getDiscoveryConfig()
+        {
+        }
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DiscoveryConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UpdateDiscoveryConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveryConfig()
-    {
-    }
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DLP_GooglePrivacyDlpV2UpdateDiscoveryConfigRequest extends \Google\Service\DLP\GooglePrivacyDlpV2UpdateDiscoveryConfigRequest
     {
     }
 }

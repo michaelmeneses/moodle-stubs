@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class ListMigrationExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $migrationExecutionsType = MigrationExecution::class;
-    protected $migrationExecutionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param MigrationExecution[]
-     */
-    public function setMigrationExecutions($migrationExecutions)
+namespace Google\Service\DataprocMetastore {
+    class ListMigrationExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $migrationExecutionsType = MigrationExecution::class;
+        protected $migrationExecutionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param MigrationExecution[]
+         */
+        public function setMigrationExecutions($migrationExecutions)
+        {
+        }
+        /**
+         * @return MigrationExecution[]
+         */
+        public function getMigrationExecutions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationExecution[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\ListMigrationExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationExecutions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DataprocMetastore_ListMigrationExecutionsResponse extends \Google\Service\DataprocMetastore\ListMigrationExecutionsResponse
     {
     }
 }

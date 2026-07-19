@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "referencedby" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $referencedby = $managedkafkaService->projects_locations_schemaRegistries_subjects_versions_referencedby;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\HttpBody;
     /**
-     * Get a list of IDs of schemas that reference the schema with the given subject
-     * and version. (referencedby.listProjectsLocationsSchemaRegistriesSubjectsVersi
-     * onsReferencedby)
-     *
-     * @param string $parent Required. The version to list referenced by. Structured
-     * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
-     * try}/subjects/{subject}/versions/{version}` or `projects/{project}/locations/
-     * {location}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{su
-     * bject}/versions/{version}`
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "referencedby" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $referencedby = $managedkafkaService->projects_locations_schemaRegistries_subjects_versions_referencedby;
+     *  </code>
      */
-    public function listProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby($parent, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby extends \Google\Service\Resource
+    {
+        /**
+         * Get a list of IDs of schemas that reference the schema with the given subject
+         * and version. (referencedby.listProjectsLocationsSchemaRegistriesSubjectsVersi
+         * onsReferencedby)
+         *
+         * @param string $parent Required. The version to list referenced by. Structured
+         * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
+         * try}/subjects/{subject}/versions/{version}` or `projects/{project}/locations/
+         * {location}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{su
+         * bject}/versions/{version}`
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSubjectsVersionsReferencedby
     {
     }
 }

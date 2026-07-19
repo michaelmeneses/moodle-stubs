@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListBuildTriggersResponse extends \Google\Collection
-{
-    protected $collection_key = 'triggers';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $triggersType = BuildTrigger::class;
-    protected $triggersDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudBuild {
+    class ListBuildTriggersResponse extends \Google\Collection
     {
+        protected $collection_key = 'triggers';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $triggersType = BuildTrigger::class;
+        protected $triggersDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param BuildTrigger[]
+         */
+        public function setTriggers($triggers)
+        {
+        }
+        /**
+         * @return BuildTrigger[]
+         */
+        public function getTriggers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ListBuildTriggersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param BuildTrigger[]
-     */
-    public function setTriggers($triggers)
-    {
-    }
-    /**
-     * @return BuildTrigger[]
-     */
-    public function getTriggers()
+    class Google_Service_CloudBuild_ListBuildTriggersResponse extends \Google\Service\CloudBuild\ListBuildTriggersResponse
     {
     }
 }

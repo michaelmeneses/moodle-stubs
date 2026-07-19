@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "osImages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $osImages = $baremetalsolutionService->projects_locations_osImages;
- *  </code>
- */
-class ProjectsLocationsOsImages extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\ListOSImagesResponse;
+    use Google\Service\Baremetalsolution\OSImage;
     /**
-     * Get details of a single OS image. (osImages.get)
-     *
-     * @param string $name Required. Name of the OS image.
-     * @param array $optParams Optional parameters.
-     * @return OSImage
-     * @throws \Google\Service\Exception
+     * The "osImages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $osImages = $baremetalsolutionService->projects_locations_osImages;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsOsImages extends \Google\Service\Resource
     {
+        /**
+         * Get details of a single OS image. (osImages.get)
+         *
+         * @param string $name Required. Name of the OS image.
+         * @param array $optParams Optional parameters.
+         * @return OSImage
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the list of OS images which are currently approved.
+         * (osImages.listProjectsLocationsOsImages)
+         *
+         * @param string $parent Required. Parent value for ListOSImagesRequest.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. The server might return fewer
+         * items than requested. If unspecified, server will pick an appropriate
+         * default. Notice that page_size field is not supported and won't be respected
+         * in the API request for now, will be updated when pagination is supported.
+         * @opt_param string pageToken A token identifying a page of results from the
+         * server.
+         * @return ListOSImagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsOsImages($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the list of OS images which are currently approved.
-     * (osImages.listProjectsLocationsOsImages)
-     *
-     * @param string $parent Required. Parent value for ListOSImagesRequest.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. The server might return fewer
-     * items than requested. If unspecified, server will pick an appropriate
-     * default. Notice that page_size field is not supported and won't be respected
-     * in the API request for now, will be updated when pagination is supported.
-     * @opt_param string pageToken A token identifying a page of results from the
-     * server.
-     * @return ListOSImagesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsOsImages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsOsImages($parent, $optParams = [])
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsOsImages extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsOsImages
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class BaseImage extends \Google\Model
-{
-    /**
-     * The number of layers that the base image is composed of.
-     *
-     * @var int
-     */
-    public $layerCount;
-    /**
-     * The name of the base image.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The repository name in which the base image is from.
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * The number of layers that the base image is composed of.
-     *
-     * @param int $layerCount
-     */
-    public function setLayerCount($layerCount)
+namespace Google\Service\OnDemandScanning {
+    class BaseImage extends \Google\Model
     {
+        /**
+         * The number of layers that the base image is composed of.
+         *
+         * @var int
+         */
+        public $layerCount;
+        /**
+         * The name of the base image.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The repository name in which the base image is from.
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * The number of layers that the base image is composed of.
+         *
+         * @param int $layerCount
+         */
+        public function setLayerCount($layerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLayerCount()
+        {
+        }
+        /**
+         * The name of the base image.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The repository name in which the base image is from.
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OnDemandScanning\BaseImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayerCount()
-    {
-    }
-    /**
-     * The name of the base image.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The repository name in which the base image is from.
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_OnDemandScanning_BaseImage extends \Google\Service\OnDemandScanning\BaseImage
     {
     }
 }

@@ -17,6 +17,7 @@
  */
 namespace ScssPhp\ScssPhp\Formatter;
 
+use ScssPhp\ScssPhp\Formatter;
 /**
  * Compact formatter
  *

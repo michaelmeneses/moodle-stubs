@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ServerAndClientVerification extends \Google\Model
-{
-    /**
-     * Required. Input only. PEM-encoded server root CA certificate.
-     *
-     * @var string
-     */
-    public $caCertificate;
-    /**
-     * Required. Input only. PEM-encoded certificate used by the source database
-     * to authenticate the client identity (i.e., the Datastream's identity). This
-     * certificate is signed by either a root certificate trusted by the server or
-     * one or more intermediate certificates (which is stored with the leaf
-     * certificate) to link the this certificate to the trusted root certificate.
-     *
-     * @var string
-     */
-    public $clientCertificate;
-    /**
-     * Optional. Input only. PEM-encoded private key associated with the client
-     * certificate. This value will be used during the SSL/TLS handshake, allowing
-     * the PostgreSQL server to authenticate the client's identity, i.e. identity
-     * of the Datastream.
-     *
-     * @var string
-     */
-    public $clientKey;
-    /**
-     * Optional. The hostname mentioned in the Subject or SAN extension of the
-     * server certificate. If this field is not provided, the hostname in the
-     * server certificate is not validated.
-     *
-     * @var string
-     */
-    public $serverCertificateHostname;
-    /**
-     * Required. Input only. PEM-encoded server root CA certificate.
-     *
-     * @param string $caCertificate
-     */
-    public function setCaCertificate($caCertificate)
+namespace Google\Service\Datastream {
+    class ServerAndClientVerification extends \Google\Model
     {
+        /**
+         * Required. Input only. PEM-encoded server root CA certificate.
+         *
+         * @var string
+         */
+        public $caCertificate;
+        /**
+         * Required. Input only. PEM-encoded certificate used by the source database
+         * to authenticate the client identity (i.e., the Datastream's identity). This
+         * certificate is signed by either a root certificate trusted by the server or
+         * one or more intermediate certificates (which is stored with the leaf
+         * certificate) to link the this certificate to the trusted root certificate.
+         *
+         * @var string
+         */
+        public $clientCertificate;
+        /**
+         * Optional. Input only. PEM-encoded private key associated with the client
+         * certificate. This value will be used during the SSL/TLS handshake, allowing
+         * the PostgreSQL server to authenticate the client's identity, i.e. identity
+         * of the Datastream.
+         *
+         * @var string
+         */
+        public $clientKey;
+        /**
+         * Optional. The hostname mentioned in the Subject or SAN extension of the
+         * server certificate. If this field is not provided, the hostname in the
+         * server certificate is not validated.
+         *
+         * @var string
+         */
+        public $serverCertificateHostname;
+        /**
+         * Required. Input only. PEM-encoded server root CA certificate.
+         *
+         * @param string $caCertificate
+         */
+        public function setCaCertificate($caCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertificate()
+        {
+        }
+        /**
+         * Required. Input only. PEM-encoded certificate used by the source database
+         * to authenticate the client identity (i.e., the Datastream's identity). This
+         * certificate is signed by either a root certificate trusted by the server or
+         * one or more intermediate certificates (which is stored with the leaf
+         * certificate) to link the this certificate to the trusted root certificate.
+         *
+         * @param string $clientCertificate
+         */
+        public function setClientCertificate($clientCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientCertificate()
+        {
+        }
+        /**
+         * Optional. Input only. PEM-encoded private key associated with the client
+         * certificate. This value will be used during the SSL/TLS handshake, allowing
+         * the PostgreSQL server to authenticate the client's identity, i.e. identity
+         * of the Datastream.
+         *
+         * @param string $clientKey
+         */
+        public function setClientKey($clientKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientKey()
+        {
+        }
+        /**
+         * Optional. The hostname mentioned in the Subject or SAN extension of the
+         * server certificate. If this field is not provided, the hostname in the
+         * server certificate is not validated.
+         *
+         * @param string $serverCertificateHostname
+         */
+        public function setServerCertificateHostname($serverCertificateHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerCertificateHostname()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\ServerAndClientVerification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCertificate()
-    {
-    }
-    /**
-     * Required. Input only. PEM-encoded certificate used by the source database
-     * to authenticate the client identity (i.e., the Datastream's identity). This
-     * certificate is signed by either a root certificate trusted by the server or
-     * one or more intermediate certificates (which is stored with the leaf
-     * certificate) to link the this certificate to the trusted root certificate.
-     *
-     * @param string $clientCertificate
-     */
-    public function setClientCertificate($clientCertificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientCertificate()
-    {
-    }
-    /**
-     * Optional. Input only. PEM-encoded private key associated with the client
-     * certificate. This value will be used during the SSL/TLS handshake, allowing
-     * the PostgreSQL server to authenticate the client's identity, i.e. identity
-     * of the Datastream.
-     *
-     * @param string $clientKey
-     */
-    public function setClientKey($clientKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientKey()
-    {
-    }
-    /**
-     * Optional. The hostname mentioned in the Subject or SAN extension of the
-     * server certificate. If this field is not provided, the hostname in the
-     * server certificate is not validated.
-     *
-     * @param string $serverCertificateHostname
-     */
-    public function setServerCertificateHostname($serverCertificateHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerCertificateHostname()
+    class Google_Service_Datastream_ServerAndClientVerification extends \Google\Service\Datastream\ServerAndClientVerification
     {
     }
 }

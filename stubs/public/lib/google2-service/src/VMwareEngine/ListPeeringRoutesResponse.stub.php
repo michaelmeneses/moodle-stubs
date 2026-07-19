@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListPeeringRoutesResponse extends \Google\Collection
-{
-    protected $collection_key = 'peeringRoutes';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $peeringRoutesType = PeeringRoute::class;
-    protected $peeringRoutesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\VMwareEngine {
+    class ListPeeringRoutesResponse extends \Google\Collection
     {
+        protected $collection_key = 'peeringRoutes';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $peeringRoutesType = PeeringRoute::class;
+        protected $peeringRoutesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of peering routes.
+         *
+         * @param PeeringRoute[] $peeringRoutes
+         */
+        public function setPeeringRoutes($peeringRoutes)
+        {
+        }
+        /**
+         * @return PeeringRoute[]
+         */
+        public function getPeeringRoutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\ListPeeringRoutesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of peering routes.
-     *
-     * @param PeeringRoute[] $peeringRoutes
-     */
-    public function setPeeringRoutes($peeringRoutes)
-    {
-    }
-    /**
-     * @return PeeringRoute[]
-     */
-    public function getPeeringRoutes()
+    class Google_Service_VMwareEngine_ListPeeringRoutesResponse extends \Google\Service\VMwareEngine\ListPeeringRoutesResponse
     {
     }
 }

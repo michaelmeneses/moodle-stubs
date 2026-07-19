@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1InitializeEncryptionSpecMetadata extends \Google\Model
-{
-    protected $requestType = GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Output only. The original request for initialization.
-     *
-     * @param GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest $request
-     */
-    public function setRequest(GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest $request)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1InitializeEncryptionSpecMetadata extends \Google\Model
     {
+        protected $requestType = GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Output only. The original request for initialization.
+         *
+         * @param GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest $request
+         */
+        public function setRequest(GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1InitializeEncryptionSpecRequest
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1InitializeEncryptionSpecMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequest()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1InitializeEncryptionSpecMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1InitializeEncryptionSpecMetadata
     {
     }
 }

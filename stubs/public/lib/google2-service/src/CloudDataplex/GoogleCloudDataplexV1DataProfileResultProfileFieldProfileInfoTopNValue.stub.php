@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue extends \Google\Model
-{
-    /**
-     * Output only. Count of the corresponding value in the scanned data.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Output only. Ratio of the corresponding value in the field against the
-     * total number of rows in the scanned data.
-     *
-     * @var 
-     */
-    public $ratio;
-    /**
-     * Output only. String value of a top N non-null value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. Count of the corresponding value in the scanned data.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue extends \Google\Model
     {
+        /**
+         * Output only. Count of the corresponding value in the scanned data.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Output only. Ratio of the corresponding value in the field against the
+         * total number of rows in the scanned data.
+         *
+         * @var 
+         */
+        public $ratio;
+        /**
+         * Output only. String value of a top N non-null value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. Count of the corresponding value in the scanned data.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        public function setRatio($ratio)
+        {
+        }
+        public function getRatio()
+        {
+        }
+        /**
+         * Output only. String value of a top N non-null value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    public function setRatio($ratio)
-    {
-    }
-    public function getRatio()
-    {
-    }
-    /**
-     * Output only. String value of a top N non-null value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue
     {
     }
 }

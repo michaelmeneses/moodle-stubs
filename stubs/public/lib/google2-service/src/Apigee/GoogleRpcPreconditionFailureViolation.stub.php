@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleRpcPreconditionFailureViolation extends \Google\Model
-{
-    /**
-     * A description of how the precondition failed. Developers can use this
-     * description to understand how to fix the failure. For example: "Terms of
-     * service not accepted".
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The subject, relative to the type, that failed. For example,
-     * "google.com/cloud" relative to the "TOS" type would indicate which terms of
-     * service is being referenced.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * The type of PreconditionFailure. We recommend using a service-specific enum
-     * type to define the supported precondition violation subjects. For example,
-     * "TOS" for "Terms of Service violation".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A description of how the precondition failed. Developers can use this
-     * description to understand how to fix the failure. For example: "Terms of
-     * service not accepted".
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Apigee {
+    class GoogleRpcPreconditionFailureViolation extends \Google\Model
     {
+        /**
+         * A description of how the precondition failed. Developers can use this
+         * description to understand how to fix the failure. For example: "Terms of
+         * service not accepted".
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The subject, relative to the type, that failed. For example,
+         * "google.com/cloud" relative to the "TOS" type would indicate which terms of
+         * service is being referenced.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * The type of PreconditionFailure. We recommend using a service-specific enum
+         * type to define the supported precondition violation subjects. For example,
+         * "TOS" for "Terms of Service violation".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A description of how the precondition failed. Developers can use this
+         * description to understand how to fix the failure. For example: "Terms of
+         * service not accepted".
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The subject, relative to the type, that failed. For example,
+         * "google.com/cloud" relative to the "TOS" type would indicate which terms of
+         * service is being referenced.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * The type of PreconditionFailure. We recommend using a service-specific enum
+         * type to define the supported precondition violation subjects. For example,
+         * "TOS" for "Terms of Service violation".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleRpcPreconditionFailureViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The subject, relative to the type, that failed. For example,
-     * "google.com/cloud" relative to the "TOS" type would indicate which terms of
-     * service is being referenced.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
-    {
-    }
-    /**
-     * The type of PreconditionFailure. We recommend using a service-specific enum
-     * type to define the supported precondition violation subjects. For example,
-     * "TOS" for "Terms of Service violation".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Apigee_GoogleRpcPreconditionFailureViolation extends \Google\Service\Apigee\GoogleRpcPreconditionFailureViolation
     {
     }
 }

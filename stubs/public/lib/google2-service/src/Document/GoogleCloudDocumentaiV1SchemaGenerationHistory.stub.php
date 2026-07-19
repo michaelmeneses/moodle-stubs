@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1SchemaGenerationHistory extends \Google\Collection
-{
-    protected $collection_key = 'iterations';
-    protected $iterationsType = GoogleCloudDocumentaiV1SchemaGenerationIteration::class;
-    protected $iterationsDataType = 'array';
-    /**
-     * Required. Previous prompt-answers in a chronological order.
-     *
-     * @param GoogleCloudDocumentaiV1SchemaGenerationIteration[] $iterations
-     */
-    public function setIterations($iterations)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1SchemaGenerationHistory extends \Google\Collection
     {
+        protected $collection_key = 'iterations';
+        protected $iterationsType = GoogleCloudDocumentaiV1SchemaGenerationIteration::class;
+        protected $iterationsDataType = 'array';
+        /**
+         * Required. Previous prompt-answers in a chronological order.
+         *
+         * @param GoogleCloudDocumentaiV1SchemaGenerationIteration[] $iterations
+         */
+        public function setIterations($iterations)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1SchemaGenerationIteration[]
+         */
+        public function getIterations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1SchemaGenerationIteration[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1SchemaGenerationHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIterations()
+    class Google_Service_Document_GoogleCloudDocumentaiV1SchemaGenerationHistory extends \Google\Service\Document\GoogleCloudDocumentaiV1SchemaGenerationHistory
     {
     }
 }

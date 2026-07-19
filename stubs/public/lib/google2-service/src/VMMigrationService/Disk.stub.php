@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class Disk extends \Google\Model
-{
-    /**
-     * The disk's Logical Unit Number (LUN).
-     *
-     * @var int
-     */
-    public $lun;
-    /**
-     * The disk name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The disk size in GB.
-     *
-     * @var int
-     */
-    public $sizeGb;
-    /**
-     * The disk's Logical Unit Number (LUN).
-     *
-     * @param int $lun
-     */
-    public function setLun($lun)
+namespace Google\Service\VMMigrationService {
+    class Disk extends \Google\Model
     {
+        /**
+         * The disk's Logical Unit Number (LUN).
+         *
+         * @var int
+         */
+        public $lun;
+        /**
+         * The disk name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The disk size in GB.
+         *
+         * @var int
+         */
+        public $sizeGb;
+        /**
+         * The disk's Logical Unit Number (LUN).
+         *
+         * @param int $lun
+         */
+        public function setLun($lun)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLun()
+        {
+        }
+        /**
+         * The disk name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The disk size in GB.
+         *
+         * @param int $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\VMMigrationService\Disk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLun()
-    {
-    }
-    /**
-     * The disk name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The disk size in GB.
-     *
-     * @param int $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSizeGb()
+    class Google_Service_VMMigrationService_Disk extends \Google\Service\VMMigrationService\Disk
     {
     }
 }

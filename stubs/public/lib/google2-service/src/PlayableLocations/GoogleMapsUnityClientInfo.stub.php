@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsUnityClientInfo extends \Google\Model
-{
-    public $apiClient;
-    public $applicationId;
-    public $applicationVersion;
-    public $deviceModel;
-    public $languageCode;
-    public $operatingSystem;
-    public $operatingSystemBuild;
-    public $platform;
-    public function setApiClient($apiClient)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsUnityClientInfo extends \Google\Model
     {
+        public $apiClient;
+        public $applicationId;
+        public $applicationVersion;
+        public $deviceModel;
+        public $languageCode;
+        public $operatingSystem;
+        public $operatingSystemBuild;
+        public $platform;
+        public function setApiClient($apiClient)
+        {
+        }
+        public function getApiClient()
+        {
+        }
+        public function setApplicationId($applicationId)
+        {
+        }
+        public function getApplicationId()
+        {
+        }
+        public function setApplicationVersion($applicationVersion)
+        {
+        }
+        public function getApplicationVersion()
+        {
+        }
+        public function setDeviceModel($deviceModel)
+        {
+        }
+        public function getDeviceModel()
+        {
+        }
+        public function setLanguageCode($languageCode)
+        {
+        }
+        public function getLanguageCode()
+        {
+        }
+        public function setOperatingSystem($operatingSystem)
+        {
+        }
+        public function getOperatingSystem()
+        {
+        }
+        public function setOperatingSystemBuild($operatingSystemBuild)
+        {
+        }
+        public function getOperatingSystemBuild()
+        {
+        }
+        public function setPlatform($platform)
+        {
+        }
+        public function getPlatform()
+        {
+        }
     }
-    public function getApiClient()
-    {
-    }
-    public function setApplicationId($applicationId)
-    {
-    }
-    public function getApplicationId()
-    {
-    }
-    public function setApplicationVersion($applicationVersion)
-    {
-    }
-    public function getApplicationVersion()
-    {
-    }
-    public function setDeviceModel($deviceModel)
-    {
-    }
-    public function getDeviceModel()
-    {
-    }
-    public function setLanguageCode($languageCode)
-    {
-    }
-    public function getLanguageCode()
-    {
-    }
-    public function setOperatingSystem($operatingSystem)
-    {
-    }
-    public function getOperatingSystem()
-    {
-    }
-    public function setOperatingSystemBuild($operatingSystemBuild)
-    {
-    }
-    public function getOperatingSystemBuild()
-    {
-    }
-    public function setPlatform($platform)
-    {
-    }
-    public function getPlatform()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsUnityClientInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayableLocations_GoogleMapsUnityClientInfo extends \Google\Service\PlayableLocations\GoogleMapsUnityClientInfo
     {
     }
 }

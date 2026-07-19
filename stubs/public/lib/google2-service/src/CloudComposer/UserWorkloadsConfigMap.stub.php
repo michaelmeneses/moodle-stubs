@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class UserWorkloadsConfigMap extends \Google\Model
-{
-    /**
-     * Optional. The "data" field of Kubernetes ConfigMap, organized in key-value
-     * pairs. For details see:
-     * https://kubernetes.io/docs/concepts/configuration/configmap/ Example: {
-     * "example_key": "example_value", "another_key": "another_value" }
-     *
-     * @var string[]
-     */
-    public $data;
-    /**
-     * Identifier. The resource name of the ConfigMap, in the form: "projects/{pro
-     * jectId}/locations/{locationId}/environments/{environmentId}/userWorkloadsCo
-     * nfigMaps/{userWorkloadsConfigMapId}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The "data" field of Kubernetes ConfigMap, organized in key-value
-     * pairs. For details see:
-     * https://kubernetes.io/docs/concepts/configuration/configmap/ Example: {
-     * "example_key": "example_value", "another_key": "another_value" }
-     *
-     * @param string[] $data
-     */
-    public function setData($data)
+namespace Google\Service\CloudComposer {
+    class UserWorkloadsConfigMap extends \Google\Model
     {
+        /**
+         * Optional. The "data" field of Kubernetes ConfigMap, organized in key-value
+         * pairs. For details see:
+         * https://kubernetes.io/docs/concepts/configuration/configmap/ Example: {
+         * "example_key": "example_value", "another_key": "another_value" }
+         *
+         * @var string[]
+         */
+        public $data;
+        /**
+         * Identifier. The resource name of the ConfigMap, in the form: "projects/{pro
+         * jectId}/locations/{locationId}/environments/{environmentId}/userWorkloadsCo
+         * nfigMaps/{userWorkloadsConfigMapId}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The "data" field of Kubernetes ConfigMap, organized in key-value
+         * pairs. For details see:
+         * https://kubernetes.io/docs/concepts/configuration/configmap/ Example: {
+         * "example_key": "example_value", "another_key": "another_value" }
+         *
+         * @param string[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Identifier. The resource name of the ConfigMap, in the form: "projects/{pro
+         * jectId}/locations/{locationId}/environments/{environmentId}/userWorkloadsCo
+         * nfigMaps/{userWorkloadsConfigMapId}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudComposer\UserWorkloadsConfigMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Identifier. The resource name of the ConfigMap, in the form: "projects/{pro
-     * jectId}/locations/{locationId}/environments/{environmentId}/userWorkloadsCo
-     * nfigMaps/{userWorkloadsConfigMapId}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudComposer_UserWorkloadsConfigMap extends \Google\Service\CloudComposer\UserWorkloadsConfigMap
     {
     }
 }

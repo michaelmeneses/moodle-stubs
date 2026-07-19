@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class StringFilter extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const MATCH_TYPE_MATCH_TYPE_UNSPECIFIED = 'MATCH_TYPE_UNSPECIFIED';
-    /**
-     * Exact match of the string value.
-     */
-    public const MATCH_TYPE_EXACT = 'EXACT';
-    /**
-     * Begins with the string value.
-     */
-    public const MATCH_TYPE_BEGINS_WITH = 'BEGINS_WITH';
-    /**
-     * Ends with the string value.
-     */
-    public const MATCH_TYPE_ENDS_WITH = 'ENDS_WITH';
-    /**
-     * Contains the string value.
-     */
-    public const MATCH_TYPE_CONTAINS = 'CONTAINS';
-    /**
-     * Full match for the regular expression with the string value.
-     */
-    public const MATCH_TYPE_FULL_REGEXP = 'FULL_REGEXP';
-    /**
-     * Partial match for the regular expression with the string value.
-     */
-    public const MATCH_TYPE_PARTIAL_REGEXP = 'PARTIAL_REGEXP';
-    /**
-     * If true, the string value is case sensitive.
-     *
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * The match type for this filter.
-     *
-     * @var string
-     */
-    public $matchType;
-    /**
-     * The string value used for the matching.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * If true, the string value is case sensitive.
-     *
-     * @param bool $caseSensitive
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\AnalyticsData {
+    class StringFilter extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const MATCH_TYPE_MATCH_TYPE_UNSPECIFIED = 'MATCH_TYPE_UNSPECIFIED';
+        /**
+         * Exact match of the string value.
+         */
+        public const MATCH_TYPE_EXACT = 'EXACT';
+        /**
+         * Begins with the string value.
+         */
+        public const MATCH_TYPE_BEGINS_WITH = 'BEGINS_WITH';
+        /**
+         * Ends with the string value.
+         */
+        public const MATCH_TYPE_ENDS_WITH = 'ENDS_WITH';
+        /**
+         * Contains the string value.
+         */
+        public const MATCH_TYPE_CONTAINS = 'CONTAINS';
+        /**
+         * Full match for the regular expression with the string value.
+         */
+        public const MATCH_TYPE_FULL_REGEXP = 'FULL_REGEXP';
+        /**
+         * Partial match for the regular expression with the string value.
+         */
+        public const MATCH_TYPE_PARTIAL_REGEXP = 'PARTIAL_REGEXP';
+        /**
+         * If true, the string value is case sensitive.
+         *
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * The match type for this filter.
+         *
+         * @var string
+         */
+        public $matchType;
+        /**
+         * The string value used for the matching.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * If true, the string value is case sensitive.
+         *
+         * @param bool $caseSensitive
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * The match type for this filter.
+         *
+         * Accepted values: MATCH_TYPE_UNSPECIFIED, EXACT, BEGINS_WITH, ENDS_WITH,
+         * CONTAINS, FULL_REGEXP, PARTIAL_REGEXP
+         *
+         * @param self::MATCH_TYPE_* $matchType
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return self::MATCH_TYPE_*
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * The string value used for the matching.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsData\StringFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * The match type for this filter.
-     *
-     * Accepted values: MATCH_TYPE_UNSPECIFIED, EXACT, BEGINS_WITH, ENDS_WITH,
-     * CONTAINS, FULL_REGEXP, PARTIAL_REGEXP
-     *
-     * @param self::MATCH_TYPE_* $matchType
-     */
-    public function setMatchType($matchType)
-    {
-    }
-    /**
-     * @return self::MATCH_TYPE_*
-     */
-    public function getMatchType()
-    {
-    }
-    /**
-     * The string value used for the matching.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_AnalyticsData_StringFilter extends \Google\Service\AnalyticsData\StringFilter
     {
     }
 }

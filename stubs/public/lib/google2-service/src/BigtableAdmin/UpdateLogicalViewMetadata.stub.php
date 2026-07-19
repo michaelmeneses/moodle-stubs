@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class UpdateLogicalViewMetadata extends \Google\Model
-{
-    /**
-     * DEPRECATED: Use finish_time instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    protected $originalRequestType = UpdateLogicalViewRequest::class;
-    protected $originalRequestDataType = '';
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * DEPRECATED: Use request_time instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $startTime;
-    /**
-     * DEPRECATED: Use finish_time instead.
-     *
-     * @deprecated
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\BigtableAdmin {
+    class UpdateLogicalViewMetadata extends \Google\Model
     {
+        /**
+         * DEPRECATED: Use finish_time instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        protected $originalRequestType = UpdateLogicalViewRequest::class;
+        protected $originalRequestDataType = '';
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * DEPRECATED: Use request_time instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $startTime;
+        /**
+         * DEPRECATED: Use finish_time instead.
+         *
+         * @deprecated
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The request that prompted the initiation of this UpdateLogicalView
+         * operation.
+         *
+         * @param UpdateLogicalViewRequest $originalRequest
+         */
+        public function setOriginalRequest(UpdateLogicalViewRequest $originalRequest)
+        {
+        }
+        /**
+         * @return UpdateLogicalViewRequest
+         */
+        public function getOriginalRequest()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * DEPRECATED: Use request_time instead.
+         *
+         * @deprecated
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\UpdateLogicalViewMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The request that prompted the initiation of this UpdateLogicalView
-     * operation.
-     *
-     * @param UpdateLogicalViewRequest $originalRequest
-     */
-    public function setOriginalRequest(UpdateLogicalViewRequest $originalRequest)
-    {
-    }
-    /**
-     * @return UpdateLogicalViewRequest
-     */
-    public function getOriginalRequest()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * DEPRECATED: Use request_time instead.
-     *
-     * @deprecated
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_BigtableAdmin_UpdateLogicalViewMetadata extends \Google\Service\BigtableAdmin\UpdateLogicalViewMetadata
     {
     }
 }

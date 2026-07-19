@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion extends \Google\Model
-{
-    protected $placePredictionType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction::class;
-    protected $placePredictionDataType = '';
-    protected $queryPredictionType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction::class;
-    protected $queryPredictionDataType = '';
-    /**
-     * A prediction for a Place.
-     *
-     * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction $placePrediction
-     */
-    public function setPlacePrediction(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction $placePrediction)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion extends \Google\Model
     {
+        protected $placePredictionType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction::class;
+        protected $placePredictionDataType = '';
+        protected $queryPredictionType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction::class;
+        protected $queryPredictionDataType = '';
+        /**
+         * A prediction for a Place.
+         *
+         * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction $placePrediction
+         */
+        public function setPlacePrediction(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction $placePrediction)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction
+         */
+        public function getPlacePrediction()
+        {
+        }
+        /**
+         * A prediction for a query.
+         *
+         * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction $queryPrediction
+         */
+        public function setQueryPrediction(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction $queryPrediction)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction
+         */
+        public function getQueryPrediction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionPlacePrediction
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlacePrediction()
-    {
-    }
-    /**
-     * A prediction for a query.
-     *
-     * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction $queryPrediction
-     */
-    public function setQueryPrediction(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction $queryPrediction)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionQueryPrediction
-     */
-    public function getQueryPrediction()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion
     {
     }
 }

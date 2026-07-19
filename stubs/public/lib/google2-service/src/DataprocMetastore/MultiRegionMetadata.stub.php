@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MultiRegionMetadata extends \Google\Collection
-{
-    protected $collection_key = 'constituentRegions';
-    /**
-     * @var string[]
-     */
-    public $constituentRegions;
-    /**
-     * @param string[]
-     */
-    public function setConstituentRegions($constituentRegions)
+namespace Google\Service\DataprocMetastore {
+    class MultiRegionMetadata extends \Google\Collection
     {
+        protected $collection_key = 'constituentRegions';
+        /**
+         * @var string[]
+         */
+        public $constituentRegions;
+        /**
+         * @param string[]
+         */
+        public function setConstituentRegions($constituentRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConstituentRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\MultiRegionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstituentRegions()
+    class Google_Service_DataprocMetastore_MultiRegionMetadata extends \Google\Service\DataprocMetastore\MultiRegionMetadata
     {
     }
 }

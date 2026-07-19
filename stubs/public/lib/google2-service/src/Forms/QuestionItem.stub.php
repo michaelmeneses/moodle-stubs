@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class QuestionItem extends \Google\Model
-{
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    protected $questionType = Question::class;
-    protected $questionDataType = '';
-    /**
-     * The image displayed within the question.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
+namespace Google\Service\Forms {
+    class QuestionItem extends \Google\Model
     {
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        protected $questionType = Question::class;
+        protected $questionDataType = '';
+        /**
+         * The image displayed within the question.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Required. The displayed question.
+         *
+         * @param Question $question
+         */
+        public function setQuestion(Question $question)
+        {
+        }
+        /**
+         * @return Question
+         */
+        public function getQuestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image
+     * Runtime class alias of \Google\Service\Forms\QuestionItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * Required. The displayed question.
-     *
-     * @param Question $question
-     */
-    public function setQuestion(Question $question)
-    {
-    }
-    /**
-     * @return Question
-     */
-    public function getQuestion()
+    class Google_Service_Forms_QuestionItem extends \Google\Service\Forms\QuestionItem
     {
     }
 }

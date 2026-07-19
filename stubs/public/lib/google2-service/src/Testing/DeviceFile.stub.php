@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class DeviceFile extends \Google\Model
-{
-    protected $obbFileType = ObbFile::class;
-    protected $obbFileDataType = '';
-    protected $regularFileType = RegularFile::class;
-    protected $regularFileDataType = '';
-    /**
-     * A reference to an opaque binary blob file.
-     *
-     * @param ObbFile $obbFile
-     */
-    public function setObbFile(ObbFile $obbFile)
+namespace Google\Service\Testing {
+    class DeviceFile extends \Google\Model
     {
+        protected $obbFileType = ObbFile::class;
+        protected $obbFileDataType = '';
+        protected $regularFileType = RegularFile::class;
+        protected $regularFileDataType = '';
+        /**
+         * A reference to an opaque binary blob file.
+         *
+         * @param ObbFile $obbFile
+         */
+        public function setObbFile(ObbFile $obbFile)
+        {
+        }
+        /**
+         * @return ObbFile
+         */
+        public function getObbFile()
+        {
+        }
+        /**
+         * A reference to a regular file.
+         *
+         * @param RegularFile $regularFile
+         */
+        public function setRegularFile(RegularFile $regularFile)
+        {
+        }
+        /**
+         * @return RegularFile
+         */
+        public function getRegularFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObbFile
+     * Runtime class alias of \Google\Service\Testing\DeviceFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObbFile()
-    {
-    }
-    /**
-     * A reference to a regular file.
-     *
-     * @param RegularFile $regularFile
-     */
-    public function setRegularFile(RegularFile $regularFile)
-    {
-    }
-    /**
-     * @return RegularFile
-     */
-    public function getRegularFile()
+    class Google_Service_Testing_DeviceFile extends \Google\Service\Testing\DeviceFile
     {
     }
 }

@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "chat" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $chat = $aiplatformService->projects_locations_endpoints_chat;
- *  </code>
- */
-class ProjectsLocationsEndpointsChat extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleApiHttpBody;
     /**
-     * Exposes an OpenAI-compatible endpoint for chat completions.
-     * (chat.completions)
-     *
-     * @param string $endpoint Required. The name of the endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleApiHttpBody $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleApiHttpBody
-     * @throws \Google\Service\Exception
+     * The "chat" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $chat = $aiplatformService->projects_locations_endpoints_chat;
+     *  </code>
      */
-    public function completions($endpoint, GoogleApiHttpBody $postBody, $optParams = [])
+    class ProjectsLocationsEndpointsChat extends \Google\Service\Resource
+    {
+        /**
+         * Exposes an OpenAI-compatible endpoint for chat completions.
+         * (chat.completions)
+         *
+         * @param string $endpoint Required. The name of the endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleApiHttpBody $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleApiHttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function completions($endpoint, GoogleApiHttpBody $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsEndpointsChat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsEndpointsChat extends \Google\Service\Aiplatform\Resource\ProjectsLocationsEndpointsChat
     {
     }
 }

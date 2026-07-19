@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1FreshnessInfo extends \Google\Collection
-{
-    protected $collection_key = 'freshnesses';
-    protected $freshnessesType = GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness::class;
-    protected $freshnessesDataType = 'array';
-    /**
-     * Information about data freshness for every supported aggregation period.
-     * This field has set semantics, keyed by the `aggregation_period` field.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness[] $freshnesses
-     */
-    public function setFreshnesses($freshnesses)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1FreshnessInfo extends \Google\Collection
     {
+        protected $collection_key = 'freshnesses';
+        protected $freshnessesType = GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness::class;
+        protected $freshnessesDataType = 'array';
+        /**
+         * Information about data freshness for every supported aggregation period.
+         * This field has set semantics, keyed by the `aggregation_period` field.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness[] $freshnesses
+         */
+        public function setFreshnesses($freshnesses)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness[]
+         */
+        public function getFreshnesses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1FreshnessInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreshnesses()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1FreshnessInfo extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1FreshnessInfo
     {
     }
 }

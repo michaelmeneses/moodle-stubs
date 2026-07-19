@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryAssetAggregateStats extends \Google\Model
-{
-    protected $coreCountHistogramType = ReportSummaryHistogramChartData::class;
-    protected $coreCountHistogramDataType = '';
-    protected $memoryBytesHistogramType = ReportSummaryHistogramChartData::class;
-    protected $memoryBytesHistogramDataType = '';
-    protected $memoryUtilizationChartType = ReportSummaryUtilizationChartData::class;
-    protected $memoryUtilizationChartDataType = '';
-    protected $operatingSystemType = ReportSummaryChartData::class;
-    protected $operatingSystemDataType = '';
-    protected $softwareInstancesType = ReportSummaryChartData::class;
-    protected $softwareInstancesDataType = '';
-    protected $storageBytesHistogramType = ReportSummaryHistogramChartData::class;
-    protected $storageBytesHistogramDataType = '';
-    protected $storageUtilizationChartType = ReportSummaryUtilizationChartData::class;
-    protected $storageUtilizationChartDataType = '';
-    /**
-     * Count of the number of unique assets in this collection.
-     *
-     * @var string
-     */
-    public $totalAssets;
-    /**
-     * Sum of the CPU core count of all the assets in this collection.
-     *
-     * @var string
-     */
-    public $totalCores;
-    /**
-     * Sum of the memory in bytes of all the assets in this collection.
-     *
-     * @var string
-     */
-    public $totalMemoryBytes;
-    /**
-     * Sum of persistent storage in bytes of all the assets in this collection.
-     *
-     * @var string
-     */
-    public $totalStorageBytes;
-    /**
-     * Histogram showing a distribution of logical CPU core counts.
-     *
-     * @param ReportSummaryHistogramChartData $coreCountHistogram
-     */
-    public function setCoreCountHistogram(ReportSummaryHistogramChartData $coreCountHistogram)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryAssetAggregateStats extends \Google\Model
     {
+        protected $coreCountHistogramType = ReportSummaryHistogramChartData::class;
+        protected $coreCountHistogramDataType = '';
+        protected $memoryBytesHistogramType = ReportSummaryHistogramChartData::class;
+        protected $memoryBytesHistogramDataType = '';
+        protected $memoryUtilizationChartType = ReportSummaryUtilizationChartData::class;
+        protected $memoryUtilizationChartDataType = '';
+        protected $operatingSystemType = ReportSummaryChartData::class;
+        protected $operatingSystemDataType = '';
+        protected $softwareInstancesType = ReportSummaryChartData::class;
+        protected $softwareInstancesDataType = '';
+        protected $storageBytesHistogramType = ReportSummaryHistogramChartData::class;
+        protected $storageBytesHistogramDataType = '';
+        protected $storageUtilizationChartType = ReportSummaryUtilizationChartData::class;
+        protected $storageUtilizationChartDataType = '';
+        /**
+         * Count of the number of unique assets in this collection.
+         *
+         * @var string
+         */
+        public $totalAssets;
+        /**
+         * Sum of the CPU core count of all the assets in this collection.
+         *
+         * @var string
+         */
+        public $totalCores;
+        /**
+         * Sum of the memory in bytes of all the assets in this collection.
+         *
+         * @var string
+         */
+        public $totalMemoryBytes;
+        /**
+         * Sum of persistent storage in bytes of all the assets in this collection.
+         *
+         * @var string
+         */
+        public $totalStorageBytes;
+        /**
+         * Histogram showing a distribution of logical CPU core counts.
+         *
+         * @param ReportSummaryHistogramChartData $coreCountHistogram
+         */
+        public function setCoreCountHistogram(ReportSummaryHistogramChartData $coreCountHistogram)
+        {
+        }
+        /**
+         * @return ReportSummaryHistogramChartData
+         */
+        public function getCoreCountHistogram()
+        {
+        }
+        /**
+         * Histogram showing a distribution of memory sizes.
+         *
+         * @param ReportSummaryHistogramChartData $memoryBytesHistogram
+         */
+        public function setMemoryBytesHistogram(ReportSummaryHistogramChartData $memoryBytesHistogram)
+        {
+        }
+        /**
+         * @return ReportSummaryHistogramChartData
+         */
+        public function getMemoryBytesHistogram()
+        {
+        }
+        /**
+         * Total memory split into Used/Free buckets.
+         *
+         * @param ReportSummaryUtilizationChartData $memoryUtilizationChart
+         */
+        public function setMemoryUtilizationChart(ReportSummaryUtilizationChartData $memoryUtilizationChart)
+        {
+        }
+        /**
+         * @return ReportSummaryUtilizationChartData
+         */
+        public function getMemoryUtilizationChart()
+        {
+        }
+        /**
+         * Count of assets grouped by Operating System families.
+         *
+         * @param ReportSummaryChartData $operatingSystem
+         */
+        public function setOperatingSystem(ReportSummaryChartData $operatingSystem)
+        {
+        }
+        /**
+         * @return ReportSummaryChartData
+         */
+        public function getOperatingSystem()
+        {
+        }
+        /**
+         * Output only. Count of assets grouped by software name. Only present for
+         * virtual machines.
+         *
+         * @param ReportSummaryChartData $softwareInstances
+         */
+        public function setSoftwareInstances(ReportSummaryChartData $softwareInstances)
+        {
+        }
+        /**
+         * @return ReportSummaryChartData
+         */
+        public function getSoftwareInstances()
+        {
+        }
+        /**
+         * Histogram showing a distribution of storage sizes.
+         *
+         * @param ReportSummaryHistogramChartData $storageBytesHistogram
+         */
+        public function setStorageBytesHistogram(ReportSummaryHistogramChartData $storageBytesHistogram)
+        {
+        }
+        /**
+         * @return ReportSummaryHistogramChartData
+         */
+        public function getStorageBytesHistogram()
+        {
+        }
+        /**
+         * Total memory split into Used/Free buckets.
+         *
+         * @param ReportSummaryUtilizationChartData $storageUtilizationChart
+         */
+        public function setStorageUtilizationChart(ReportSummaryUtilizationChartData $storageUtilizationChart)
+        {
+        }
+        /**
+         * @return ReportSummaryUtilizationChartData
+         */
+        public function getStorageUtilizationChart()
+        {
+        }
+        /**
+         * Count of the number of unique assets in this collection.
+         *
+         * @param string $totalAssets
+         */
+        public function setTotalAssets($totalAssets)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalAssets()
+        {
+        }
+        /**
+         * Sum of the CPU core count of all the assets in this collection.
+         *
+         * @param string $totalCores
+         */
+        public function setTotalCores($totalCores)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCores()
+        {
+        }
+        /**
+         * Sum of the memory in bytes of all the assets in this collection.
+         *
+         * @param string $totalMemoryBytes
+         */
+        public function setTotalMemoryBytes($totalMemoryBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalMemoryBytes()
+        {
+        }
+        /**
+         * Sum of persistent storage in bytes of all the assets in this collection.
+         *
+         * @param string $totalStorageBytes
+         */
+        public function setTotalStorageBytes($totalStorageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalStorageBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportSummaryHistogramChartData
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryAssetAggregateStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoreCountHistogram()
-    {
-    }
-    /**
-     * Histogram showing a distribution of memory sizes.
-     *
-     * @param ReportSummaryHistogramChartData $memoryBytesHistogram
-     */
-    public function setMemoryBytesHistogram(ReportSummaryHistogramChartData $memoryBytesHistogram)
-    {
-    }
-    /**
-     * @return ReportSummaryHistogramChartData
-     */
-    public function getMemoryBytesHistogram()
-    {
-    }
-    /**
-     * Total memory split into Used/Free buckets.
-     *
-     * @param ReportSummaryUtilizationChartData $memoryUtilizationChart
-     */
-    public function setMemoryUtilizationChart(ReportSummaryUtilizationChartData $memoryUtilizationChart)
-    {
-    }
-    /**
-     * @return ReportSummaryUtilizationChartData
-     */
-    public function getMemoryUtilizationChart()
-    {
-    }
-    /**
-     * Count of assets grouped by Operating System families.
-     *
-     * @param ReportSummaryChartData $operatingSystem
-     */
-    public function setOperatingSystem(ReportSummaryChartData $operatingSystem)
-    {
-    }
-    /**
-     * @return ReportSummaryChartData
-     */
-    public function getOperatingSystem()
-    {
-    }
-    /**
-     * Output only. Count of assets grouped by software name. Only present for
-     * virtual machines.
-     *
-     * @param ReportSummaryChartData $softwareInstances
-     */
-    public function setSoftwareInstances(ReportSummaryChartData $softwareInstances)
-    {
-    }
-    /**
-     * @return ReportSummaryChartData
-     */
-    public function getSoftwareInstances()
-    {
-    }
-    /**
-     * Histogram showing a distribution of storage sizes.
-     *
-     * @param ReportSummaryHistogramChartData $storageBytesHistogram
-     */
-    public function setStorageBytesHistogram(ReportSummaryHistogramChartData $storageBytesHistogram)
-    {
-    }
-    /**
-     * @return ReportSummaryHistogramChartData
-     */
-    public function getStorageBytesHistogram()
-    {
-    }
-    /**
-     * Total memory split into Used/Free buckets.
-     *
-     * @param ReportSummaryUtilizationChartData $storageUtilizationChart
-     */
-    public function setStorageUtilizationChart(ReportSummaryUtilizationChartData $storageUtilizationChart)
-    {
-    }
-    /**
-     * @return ReportSummaryUtilizationChartData
-     */
-    public function getStorageUtilizationChart()
-    {
-    }
-    /**
-     * Count of the number of unique assets in this collection.
-     *
-     * @param string $totalAssets
-     */
-    public function setTotalAssets($totalAssets)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalAssets()
-    {
-    }
-    /**
-     * Sum of the CPU core count of all the assets in this collection.
-     *
-     * @param string $totalCores
-     */
-    public function setTotalCores($totalCores)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCores()
-    {
-    }
-    /**
-     * Sum of the memory in bytes of all the assets in this collection.
-     *
-     * @param string $totalMemoryBytes
-     */
-    public function setTotalMemoryBytes($totalMemoryBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalMemoryBytes()
-    {
-    }
-    /**
-     * Sum of persistent storage in bytes of all the assets in this collection.
-     *
-     * @param string $totalStorageBytes
-     */
-    public function setTotalStorageBytes($totalStorageBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalStorageBytes()
+    class Google_Service_MigrationCenterAPI_ReportSummaryAssetAggregateStats extends \Google\Service\MigrationCenterAPI\ReportSummaryAssetAggregateStats
     {
     }
 }

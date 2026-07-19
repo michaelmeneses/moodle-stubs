@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSchema extends \Google\Model
-{
-    /**
-     * The JSON representation of the schema.
-     *
-     * @var string
-     */
-    public $jsonSchema;
-    /**
-     * Immutable. The full resource name of the schema, in the format of `projects
-     * /{project}/locations/{location}/collections/{collection}/dataStores/{data_s
-     * tore}/schemas/{schema}`. This field must be a UTF-8 encoded string with a
-     * length limit of 1024 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The structured representation of the schema.
-     *
-     * @var array[]
-     */
-    public $structSchema;
-    /**
-     * The JSON representation of the schema.
-     *
-     * @param string $jsonSchema
-     */
-    public function setJsonSchema($jsonSchema)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSchema extends \Google\Model
     {
+        /**
+         * The JSON representation of the schema.
+         *
+         * @var string
+         */
+        public $jsonSchema;
+        /**
+         * Immutable. The full resource name of the schema, in the format of `projects
+         * /{project}/locations/{location}/collections/{collection}/dataStores/{data_s
+         * tore}/schemas/{schema}`. This field must be a UTF-8 encoded string with a
+         * length limit of 1024 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The structured representation of the schema.
+         *
+         * @var array[]
+         */
+        public $structSchema;
+        /**
+         * The JSON representation of the schema.
+         *
+         * @param string $jsonSchema
+         */
+        public function setJsonSchema($jsonSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonSchema()
+        {
+        }
+        /**
+         * Immutable. The full resource name of the schema, in the format of `projects
+         * /{project}/locations/{location}/collections/{collection}/dataStores/{data_s
+         * tore}/schemas/{schema}`. This field must be a UTF-8 encoded string with a
+         * length limit of 1024 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The structured representation of the schema.
+         *
+         * @param array[] $structSchema
+         */
+        public function setStructSchema($structSchema)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStructSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJsonSchema()
-    {
-    }
-    /**
-     * Immutable. The full resource name of the schema, in the format of `projects
-     * /{project}/locations/{location}/collections/{collection}/dataStores/{data_s
-     * tore}/schemas/{schema}`. This field must be a UTF-8 encoded string with a
-     * length limit of 1024 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The structured representation of the schema.
-     *
-     * @param array[] $structSchema
-     */
-    public function setStructSchema($structSchema)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStructSchema()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSchema extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSchema
     {
     }
 }

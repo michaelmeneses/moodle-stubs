@@ -21,88 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "webproperties" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $webproperties = $analyticsService->management_webproperties;
- *  </code>
- */
-class ManagementWebproperties extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\Webproperties;
+    use Google\Service\Analytics\Webproperty;
     /**
-     * Gets a web property to which the user has access. (webproperties.get)
-     *
-     * @param string $accountId Account ID to retrieve the web property for.
-     * @param string $webPropertyId ID to retrieve the web property for.
-     * @param array $optParams Optional parameters.
-     * @return Webproperty
-     * @throws \Google\Service\Exception
+     * The "webproperties" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $webproperties = $analyticsService->management_webproperties;
+     *  </code>
      */
-    public function get($accountId, $webPropertyId, $optParams = [])
+    class ManagementWebproperties extends \Google\Service\Resource
     {
+        /**
+         * Gets a web property to which the user has access. (webproperties.get)
+         *
+         * @param string $accountId Account ID to retrieve the web property for.
+         * @param string $webPropertyId ID to retrieve the web property for.
+         * @param array $optParams Optional parameters.
+         * @return Webproperty
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new property if the account has fewer than 20 properties. Web
+         * properties are visible in the Google Analytics interface only if they have at
+         * least one profile. (webproperties.insert)
+         *
+         * @param string $accountId Account ID to create the web property for.
+         * @param Webproperty $postBody
+         * @param array $optParams Optional parameters.
+         * @return Webproperty
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, Webproperty $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists web properties to which the user has access.
+         * (webproperties.listManagementWebproperties)
+         *
+         * @param string $accountId Account ID to retrieve web properties for. Can
+         * either be a specific account ID or '~all', which refers to all the accounts
+         * that user has access to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of web properties to include in
+         * this response.
+         * @opt_param int start-index An index of the first entity to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @return Webproperties
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementWebproperties($accountId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing web property. This method supports patch semantics.
+         * (webproperties.patch)
+         *
+         * @param string $accountId Account ID to which the web property belongs
+         * @param string $webPropertyId Web property ID
+         * @param Webproperty $postBody
+         * @param array $optParams Optional parameters.
+         * @return Webproperty
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $webPropertyId, Webproperty $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing web property. (webproperties.update)
+         *
+         * @param string $accountId Account ID to which the web property belongs
+         * @param string $webPropertyId Web property ID
+         * @param Webproperty $postBody
+         * @param array $optParams Optional parameters.
+         * @return Webproperty
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, Webproperty $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Create a new property if the account has fewer than 20 properties. Web
-     * properties are visible in the Google Analytics interface only if they have at
-     * least one profile. (webproperties.insert)
-     *
-     * @param string $accountId Account ID to create the web property for.
-     * @param Webproperty $postBody
-     * @param array $optParams Optional parameters.
-     * @return Webproperty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementWebproperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($accountId, Webproperty $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists web properties to which the user has access.
-     * (webproperties.listManagementWebproperties)
-     *
-     * @param string $accountId Account ID to retrieve web properties for. Can
-     * either be a specific account ID or '~all', which refers to all the accounts
-     * that user has access to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of web properties to include in
-     * this response.
-     * @opt_param int start-index An index of the first entity to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @return Webproperties
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementWebproperties($accountId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing web property. This method supports patch semantics.
-     * (webproperties.patch)
-     *
-     * @param string $accountId Account ID to which the web property belongs
-     * @param string $webPropertyId Web property ID
-     * @param Webproperty $postBody
-     * @param array $optParams Optional parameters.
-     * @return Webproperty
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $webPropertyId, Webproperty $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing web property. (webproperties.update)
-     *
-     * @param string $accountId Account ID to which the web property belongs
-     * @param string $webPropertyId Web property ID
-     * @param Webproperty $postBody
-     * @param array $optParams Optional parameters.
-     * @return Webproperty
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, Webproperty $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementWebproperties extends \Google\Service\Analytics\Resource\ManagementWebproperties
     {
     }
 }

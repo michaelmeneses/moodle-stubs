@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class SearchTargetingOptionsRequest extends \Google\Model
-{
-    /**
-     * Required. The Advertiser this request is being made in the context of.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $businessChainSearchTermsType = BusinessChainSearchTerms::class;
-    protected $businessChainSearchTermsDataType = '';
-    protected $geoRegionSearchTermsType = GeoRegionSearchTerms::class;
-    protected $geoRegionSearchTermsDataType = '';
-    /**
-     * Requested page size. Must be between `1` and `200`. If unspecified will
-     * default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value
-     * is specified.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A token identifying a page of results the server should return. Typically,
-     * this is the value of next_page_token returned from the previous call to
-     * `SearchTargetingOptions` method. If not specified, the first page of
-     * results will be returned.
-     *
-     * @var string
-     */
-    public $pageToken;
-    protected $poiSearchTermsType = PoiSearchTerms::class;
-    protected $poiSearchTermsDataType = '';
-    /**
-     * Required. The Advertiser this request is being made in the context of.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class SearchTargetingOptionsRequest extends \Google\Model
     {
+        /**
+         * Required. The Advertiser this request is being made in the context of.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $businessChainSearchTermsType = BusinessChainSearchTerms::class;
+        protected $businessChainSearchTermsDataType = '';
+        protected $geoRegionSearchTermsType = GeoRegionSearchTerms::class;
+        protected $geoRegionSearchTermsDataType = '';
+        /**
+         * Requested page size. Must be between `1` and `200`. If unspecified will
+         * default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value
+         * is specified.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A token identifying a page of results the server should return. Typically,
+         * this is the value of next_page_token returned from the previous call to
+         * `SearchTargetingOptions` method. If not specified, the first page of
+         * results will be returned.
+         *
+         * @var string
+         */
+        public $pageToken;
+        protected $poiSearchTermsType = PoiSearchTerms::class;
+        protected $poiSearchTermsDataType = '';
+        /**
+         * Required. The Advertiser this request is being made in the context of.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Search terms for Business Chain targeting options. Can only be used when
+         * targeting_type is `TARGETING_TYPE_BUSINESS_CHAIN`.
+         *
+         * @param BusinessChainSearchTerms $businessChainSearchTerms
+         */
+        public function setBusinessChainSearchTerms(BusinessChainSearchTerms $businessChainSearchTerms)
+        {
+        }
+        /**
+         * @return BusinessChainSearchTerms
+         */
+        public function getBusinessChainSearchTerms()
+        {
+        }
+        /**
+         * Search terms for geo region targeting options. Can only be used when
+         * targeting_type is `TARGETING_TYPE_GEO_REGION`.
+         *
+         * @param GeoRegionSearchTerms $geoRegionSearchTerms
+         */
+        public function setGeoRegionSearchTerms(GeoRegionSearchTerms $geoRegionSearchTerms)
+        {
+        }
+        /**
+         * @return GeoRegionSearchTerms
+         */
+        public function getGeoRegionSearchTerms()
+        {
+        }
+        /**
+         * Requested page size. Must be between `1` and `200`. If unspecified will
+         * default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value
+         * is specified.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return. Typically,
+         * this is the value of next_page_token returned from the previous call to
+         * `SearchTargetingOptions` method. If not specified, the first page of
+         * results will be returned.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Search terms for POI targeting options. Can only be used when
+         * targeting_type is `TARGETING_TYPE_POI`.
+         *
+         * @param PoiSearchTerms $poiSearchTerms
+         */
+        public function setPoiSearchTerms(PoiSearchTerms $poiSearchTerms)
+        {
+        }
+        /**
+         * @return PoiSearchTerms
+         */
+        public function getPoiSearchTerms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\SearchTargetingOptionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Search terms for Business Chain targeting options. Can only be used when
-     * targeting_type is `TARGETING_TYPE_BUSINESS_CHAIN`.
-     *
-     * @param BusinessChainSearchTerms $businessChainSearchTerms
-     */
-    public function setBusinessChainSearchTerms(BusinessChainSearchTerms $businessChainSearchTerms)
-    {
-    }
-    /**
-     * @return BusinessChainSearchTerms
-     */
-    public function getBusinessChainSearchTerms()
-    {
-    }
-    /**
-     * Search terms for geo region targeting options. Can only be used when
-     * targeting_type is `TARGETING_TYPE_GEO_REGION`.
-     *
-     * @param GeoRegionSearchTerms $geoRegionSearchTerms
-     */
-    public function setGeoRegionSearchTerms(GeoRegionSearchTerms $geoRegionSearchTerms)
-    {
-    }
-    /**
-     * @return GeoRegionSearchTerms
-     */
-    public function getGeoRegionSearchTerms()
-    {
-    }
-    /**
-     * Requested page size. Must be between `1` and `200`. If unspecified will
-     * default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value
-     * is specified.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return. Typically,
-     * this is the value of next_page_token returned from the previous call to
-     * `SearchTargetingOptions` method. If not specified, the first page of
-     * results will be returned.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Search terms for POI targeting options. Can only be used when
-     * targeting_type is `TARGETING_TYPE_POI`.
-     *
-     * @param PoiSearchTerms $poiSearchTerms
-     */
-    public function setPoiSearchTerms(PoiSearchTerms $poiSearchTerms)
-    {
-    }
-    /**
-     * @return PoiSearchTerms
-     */
-    public function getPoiSearchTerms()
+    class Google_Service_DisplayVideo_SearchTargetingOptionsRequest extends \Google\Service\DisplayVideo\SearchTargetingOptionsRequest
     {
     }
 }

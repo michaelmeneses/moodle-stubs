@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceSamlConfig extends \Google\Collection
-{
-    protected $collection_key = 'identityProviderCertificates';
-    /**
-     * Optional. The mapping of additional user attributes like nickname, birthday
-     * and address etc.. `key` is the name of this additional attribute. `value`
-     * is a string presenting as CEL(common expression language, go/cel) used for
-     * getting the value from the resources. Take nickname as an example, in this
-     * case, `key` is "attribute.nickname" and `value` is "assertion.nickname".
-     *
-     * @var string[]
-     */
-    public $attributeMapping;
-    /**
-     * Optional. Prefix to prepend to group name.
-     *
-     * @var string
-     */
-    public $groupPrefix;
-    /**
-     * Optional. The SAML attribute to read groups from. This value is expected to
-     * be a string and will be passed along as-is (with the option of being
-     * prefixed by the `group_prefix`).
-     *
-     * @var string
-     */
-    public $groupsAttribute;
-    /**
-     * Required. The list of IdP certificates to validate the SAML response
-     * against.
-     *
-     * @var string[]
-     */
-    public $identityProviderCertificates;
-    /**
-     * Required. The entity ID of the SAML IdP.
-     *
-     * @var string
-     */
-    public $identityProviderId;
-    /**
-     * Required. The URI where the SAML IdP exposes the SSO service.
-     *
-     * @var string
-     */
-    public $identityProviderSsoUri;
-    /**
-     * Optional. The SAML attribute to read username from. If unspecified, the
-     * username will be read from the NameID element of the assertion in SAML
-     * response. This value is expected to be a string and will be passed along
-     * as-is (with the option of being prefixed by the `user_prefix`).
-     *
-     * @var string
-     */
-    public $userAttribute;
-    /**
-     * Optional. Prefix to prepend to user name.
-     *
-     * @var string
-     */
-    public $userPrefix;
-    /**
-     * Optional. The mapping of additional user attributes like nickname, birthday
-     * and address etc.. `key` is the name of this additional attribute. `value`
-     * is a string presenting as CEL(common expression language, go/cel) used for
-     * getting the value from the resources. Take nickname as an example, in this
-     * case, `key` is "attribute.nickname" and `value` is "assertion.nickname".
-     *
-     * @param string[] $attributeMapping
-     */
-    public function setAttributeMapping($attributeMapping)
+namespace Google\Service\GKEHub {
+    class IdentityServiceSamlConfig extends \Google\Collection
     {
+        protected $collection_key = 'identityProviderCertificates';
+        /**
+         * Optional. The mapping of additional user attributes like nickname, birthday
+         * and address etc.. `key` is the name of this additional attribute. `value`
+         * is a string presenting as CEL(common expression language, go/cel) used for
+         * getting the value from the resources. Take nickname as an example, in this
+         * case, `key` is "attribute.nickname" and `value` is "assertion.nickname".
+         *
+         * @var string[]
+         */
+        public $attributeMapping;
+        /**
+         * Optional. Prefix to prepend to group name.
+         *
+         * @var string
+         */
+        public $groupPrefix;
+        /**
+         * Optional. The SAML attribute to read groups from. This value is expected to
+         * be a string and will be passed along as-is (with the option of being
+         * prefixed by the `group_prefix`).
+         *
+         * @var string
+         */
+        public $groupsAttribute;
+        /**
+         * Required. The list of IdP certificates to validate the SAML response
+         * against.
+         *
+         * @var string[]
+         */
+        public $identityProviderCertificates;
+        /**
+         * Required. The entity ID of the SAML IdP.
+         *
+         * @var string
+         */
+        public $identityProviderId;
+        /**
+         * Required. The URI where the SAML IdP exposes the SSO service.
+         *
+         * @var string
+         */
+        public $identityProviderSsoUri;
+        /**
+         * Optional. The SAML attribute to read username from. If unspecified, the
+         * username will be read from the NameID element of the assertion in SAML
+         * response. This value is expected to be a string and will be passed along
+         * as-is (with the option of being prefixed by the `user_prefix`).
+         *
+         * @var string
+         */
+        public $userAttribute;
+        /**
+         * Optional. Prefix to prepend to user name.
+         *
+         * @var string
+         */
+        public $userPrefix;
+        /**
+         * Optional. The mapping of additional user attributes like nickname, birthday
+         * and address etc.. `key` is the name of this additional attribute. `value`
+         * is a string presenting as CEL(common expression language, go/cel) used for
+         * getting the value from the resources. Take nickname as an example, in this
+         * case, `key` is "attribute.nickname" and `value` is "assertion.nickname".
+         *
+         * @param string[] $attributeMapping
+         */
+        public function setAttributeMapping($attributeMapping)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributeMapping()
+        {
+        }
+        /**
+         * Optional. Prefix to prepend to group name.
+         *
+         * @param string $groupPrefix
+         */
+        public function setGroupPrefix($groupPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupPrefix()
+        {
+        }
+        /**
+         * Optional. The SAML attribute to read groups from. This value is expected to
+         * be a string and will be passed along as-is (with the option of being
+         * prefixed by the `group_prefix`).
+         *
+         * @param string $groupsAttribute
+         */
+        public function setGroupsAttribute($groupsAttribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupsAttribute()
+        {
+        }
+        /**
+         * Required. The list of IdP certificates to validate the SAML response
+         * against.
+         *
+         * @param string[] $identityProviderCertificates
+         */
+        public function setIdentityProviderCertificates($identityProviderCertificates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIdentityProviderCertificates()
+        {
+        }
+        /**
+         * Required. The entity ID of the SAML IdP.
+         *
+         * @param string $identityProviderId
+         */
+        public function setIdentityProviderId($identityProviderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentityProviderId()
+        {
+        }
+        /**
+         * Required. The URI where the SAML IdP exposes the SSO service.
+         *
+         * @param string $identityProviderSsoUri
+         */
+        public function setIdentityProviderSsoUri($identityProviderSsoUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentityProviderSsoUri()
+        {
+        }
+        /**
+         * Optional. The SAML attribute to read username from. If unspecified, the
+         * username will be read from the NameID element of the assertion in SAML
+         * response. This value is expected to be a string and will be passed along
+         * as-is (with the option of being prefixed by the `user_prefix`).
+         *
+         * @param string $userAttribute
+         */
+        public function setUserAttribute($userAttribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserAttribute()
+        {
+        }
+        /**
+         * Optional. Prefix to prepend to user name.
+         *
+         * @param string $userPrefix
+         */
+        public function setUserPrefix($userPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceSamlConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeMapping()
-    {
-    }
-    /**
-     * Optional. Prefix to prepend to group name.
-     *
-     * @param string $groupPrefix
-     */
-    public function setGroupPrefix($groupPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupPrefix()
-    {
-    }
-    /**
-     * Optional. The SAML attribute to read groups from. This value is expected to
-     * be a string and will be passed along as-is (with the option of being
-     * prefixed by the `group_prefix`).
-     *
-     * @param string $groupsAttribute
-     */
-    public function setGroupsAttribute($groupsAttribute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupsAttribute()
-    {
-    }
-    /**
-     * Required. The list of IdP certificates to validate the SAML response
-     * against.
-     *
-     * @param string[] $identityProviderCertificates
-     */
-    public function setIdentityProviderCertificates($identityProviderCertificates)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIdentityProviderCertificates()
-    {
-    }
-    /**
-     * Required. The entity ID of the SAML IdP.
-     *
-     * @param string $identityProviderId
-     */
-    public function setIdentityProviderId($identityProviderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdentityProviderId()
-    {
-    }
-    /**
-     * Required. The URI where the SAML IdP exposes the SSO service.
-     *
-     * @param string $identityProviderSsoUri
-     */
-    public function setIdentityProviderSsoUri($identityProviderSsoUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdentityProviderSsoUri()
-    {
-    }
-    /**
-     * Optional. The SAML attribute to read username from. If unspecified, the
-     * username will be read from the NameID element of the assertion in SAML
-     * response. This value is expected to be a string and will be passed along
-     * as-is (with the option of being prefixed by the `user_prefix`).
-     *
-     * @param string $userAttribute
-     */
-    public function setUserAttribute($userAttribute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserAttribute()
-    {
-    }
-    /**
-     * Optional. Prefix to prepend to user name.
-     *
-     * @param string $userPrefix
-     */
-    public function setUserPrefix($userPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPrefix()
+    class Google_Service_GKEHub_IdentityServiceSamlConfig extends \Google\Service\GKEHub\IdentityServiceSamlConfig
     {
     }
 }

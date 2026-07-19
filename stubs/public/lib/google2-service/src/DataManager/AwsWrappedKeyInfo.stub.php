@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class AwsWrappedKeyInfo extends \Google\Model
-{
-    /**
-     * Unspecified key type. Should never be used.
-     */
-    public const KEY_TYPE_KEY_TYPE_UNSPECIFIED = 'KEY_TYPE_UNSPECIFIED';
-    /**
-     * Algorithm XChaCha20-Poly1305
-     */
-    public const KEY_TYPE_XCHACHA20_POLY1305 = 'XCHACHA20_POLY1305';
-    /**
-     * Required. The base64 encoded encrypted data encryption key.
-     *
-     * @var string
-     */
-    public $encryptedDek;
-    /**
-     * Required. The URI of the AWS KMS key used to decrypt the DEK. Should be in
-     * the format of `arn:{partition}:kms:{region}:{account_id}:key/{key_id}` or
-     * `aws-kms://arn:{partition}:kms:{region}:{account_id}:key/{key_id}`
-     *
-     * @var string
-     */
-    public $kekUri;
-    /**
-     * Required. The type of algorithm used to encrypt the data.
-     *
-     * @var string
-     */
-    public $keyType;
-    /**
-     * Required. The Amazon Resource Name of the IAM Role to assume for KMS
-     * decryption access. Should be in the format of
-     * `arn:{partition}:iam::{account_id}:role/{role_name}`
-     *
-     * @var string
-     */
-    public $roleArn;
-    /**
-     * Required. The base64 encoded encrypted data encryption key.
-     *
-     * @param string $encryptedDek
-     */
-    public function setEncryptedDek($encryptedDek)
+namespace Google\Service\DataManager {
+    class AwsWrappedKeyInfo extends \Google\Model
     {
+        /**
+         * Unspecified key type. Should never be used.
+         */
+        public const KEY_TYPE_KEY_TYPE_UNSPECIFIED = 'KEY_TYPE_UNSPECIFIED';
+        /**
+         * Algorithm XChaCha20-Poly1305
+         */
+        public const KEY_TYPE_XCHACHA20_POLY1305 = 'XCHACHA20_POLY1305';
+        /**
+         * Required. The base64 encoded encrypted data encryption key.
+         *
+         * @var string
+         */
+        public $encryptedDek;
+        /**
+         * Required. The URI of the AWS KMS key used to decrypt the DEK. Should be in
+         * the format of `arn:{partition}:kms:{region}:{account_id}:key/{key_id}` or
+         * `aws-kms://arn:{partition}:kms:{region}:{account_id}:key/{key_id}`
+         *
+         * @var string
+         */
+        public $kekUri;
+        /**
+         * Required. The type of algorithm used to encrypt the data.
+         *
+         * @var string
+         */
+        public $keyType;
+        /**
+         * Required. The Amazon Resource Name of the IAM Role to assume for KMS
+         * decryption access. Should be in the format of
+         * `arn:{partition}:iam::{account_id}:role/{role_name}`
+         *
+         * @var string
+         */
+        public $roleArn;
+        /**
+         * Required. The base64 encoded encrypted data encryption key.
+         *
+         * @param string $encryptedDek
+         */
+        public function setEncryptedDek($encryptedDek)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedDek()
+        {
+        }
+        /**
+         * Required. The URI of the AWS KMS key used to decrypt the DEK. Should be in
+         * the format of `arn:{partition}:kms:{region}:{account_id}:key/{key_id}` or
+         * `aws-kms://arn:{partition}:kms:{region}:{account_id}:key/{key_id}`
+         *
+         * @param string $kekUri
+         */
+        public function setKekUri($kekUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKekUri()
+        {
+        }
+        /**
+         * Required. The type of algorithm used to encrypt the data.
+         *
+         * Accepted values: KEY_TYPE_UNSPECIFIED, XCHACHA20_POLY1305
+         *
+         * @param self::KEY_TYPE_* $keyType
+         */
+        public function setKeyType($keyType)
+        {
+        }
+        /**
+         * @return self::KEY_TYPE_*
+         */
+        public function getKeyType()
+        {
+        }
+        /**
+         * Required. The Amazon Resource Name of the IAM Role to assume for KMS
+         * decryption access. Should be in the format of
+         * `arn:{partition}:iam::{account_id}:role/{role_name}`
+         *
+         * @param string $roleArn
+         */
+        public function setRoleArn($roleArn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoleArn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\AwsWrappedKeyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptedDek()
-    {
-    }
-    /**
-     * Required. The URI of the AWS KMS key used to decrypt the DEK. Should be in
-     * the format of `arn:{partition}:kms:{region}:{account_id}:key/{key_id}` or
-     * `aws-kms://arn:{partition}:kms:{region}:{account_id}:key/{key_id}`
-     *
-     * @param string $kekUri
-     */
-    public function setKekUri($kekUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKekUri()
-    {
-    }
-    /**
-     * Required. The type of algorithm used to encrypt the data.
-     *
-     * Accepted values: KEY_TYPE_UNSPECIFIED, XCHACHA20_POLY1305
-     *
-     * @param self::KEY_TYPE_* $keyType
-     */
-    public function setKeyType($keyType)
-    {
-    }
-    /**
-     * @return self::KEY_TYPE_*
-     */
-    public function getKeyType()
-    {
-    }
-    /**
-     * Required. The Amazon Resource Name of the IAM Role to assume for KMS
-     * decryption access. Should be in the format of
-     * `arn:{partition}:iam::{account_id}:role/{role_name}`
-     *
-     * @param string $roleArn
-     */
-    public function setRoleArn($roleArn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoleArn()
+    class Google_Service_DataManager_AwsWrappedKeyInfo extends \Google\Service\DataManager\AwsWrappedKeyInfo
     {
     }
 }

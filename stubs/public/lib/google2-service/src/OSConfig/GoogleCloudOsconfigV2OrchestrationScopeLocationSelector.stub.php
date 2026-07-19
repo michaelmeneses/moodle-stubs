@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class GoogleCloudOsconfigV2OrchestrationScopeLocationSelector extends \Google\Collection
-{
-    protected $collection_key = 'includedLocations';
-    /**
-     * Optional. Names of the locations in scope. Format: `us-central1-a`
-     *
-     * @var string[]
-     */
-    public $includedLocations;
-    /**
-     * Optional. Names of the locations in scope. Format: `us-central1-a`
-     *
-     * @param string[] $includedLocations
-     */
-    public function setIncludedLocations($includedLocations)
+namespace Google\Service\OSConfig {
+    class GoogleCloudOsconfigV2OrchestrationScopeLocationSelector extends \Google\Collection
     {
+        protected $collection_key = 'includedLocations';
+        /**
+         * Optional. Names of the locations in scope. Format: `us-central1-a`
+         *
+         * @var string[]
+         */
+        public $includedLocations;
+        /**
+         * Optional. Names of the locations in scope. Format: `us-central1-a`
+         *
+         * @param string[] $includedLocations
+         */
+        public function setIncludedLocations($includedLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScopeLocationSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludedLocations()
+    class Google_Service_OSConfig_GoogleCloudOsconfigV2OrchestrationScopeLocationSelector extends \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScopeLocationSelector
     {
     }
 }

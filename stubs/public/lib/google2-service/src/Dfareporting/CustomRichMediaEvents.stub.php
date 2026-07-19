@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CustomRichMediaEvents extends \Google\Collection
-{
-    protected $collection_key = 'filteredEventIds';
-    protected $filteredEventIdsType = DimensionValue::class;
-    protected $filteredEventIdsDataType = 'array';
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#customRichMediaEvents.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of custom rich media event IDs. Dimension values must be all of type
-     * dfa:richMediaEventTypeIdAndName.
-     *
-     * @param DimensionValue[] $filteredEventIds
-     */
-    public function setFilteredEventIds($filteredEventIds)
+namespace Google\Service\Dfareporting {
+    class CustomRichMediaEvents extends \Google\Collection
     {
+        protected $collection_key = 'filteredEventIds';
+        protected $filteredEventIdsType = DimensionValue::class;
+        protected $filteredEventIdsDataType = 'array';
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#customRichMediaEvents.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of custom rich media event IDs. Dimension values must be all of type
+         * dfa:richMediaEventTypeIdAndName.
+         *
+         * @param DimensionValue[] $filteredEventIds
+         */
+        public function setFilteredEventIds($filteredEventIds)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getFilteredEventIds()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#customRichMediaEvents.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionValue[]
+     * Runtime class alias of \Google\Service\Dfareporting\CustomRichMediaEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilteredEventIds()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#customRichMediaEvents.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_CustomRichMediaEvents extends \Google\Service\Dfareporting\CustomRichMediaEvents
     {
     }
 }

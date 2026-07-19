@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ClickThroughUrlSuffixProperties extends \Google\Model
-{
-    /**
-     * Click-through URL suffix to apply to all ads in this entity's scope. Must
-     * be less than 128 characters long.
-     *
-     * @var string
-     */
-    public $clickThroughUrlSuffix;
-    /**
-     * Whether this entity should override the inherited click-through URL suffix
-     * with its own defined value.
-     *
-     * @var bool
-     */
-    public $overrideInheritedSuffix;
-    /**
-     * Click-through URL suffix to apply to all ads in this entity's scope. Must
-     * be less than 128 characters long.
-     *
-     * @param string $clickThroughUrlSuffix
-     */
-    public function setClickThroughUrlSuffix($clickThroughUrlSuffix)
+namespace Google\Service\Dfareporting {
+    class ClickThroughUrlSuffixProperties extends \Google\Model
     {
+        /**
+         * Click-through URL suffix to apply to all ads in this entity's scope. Must
+         * be less than 128 characters long.
+         *
+         * @var string
+         */
+        public $clickThroughUrlSuffix;
+        /**
+         * Whether this entity should override the inherited click-through URL suffix
+         * with its own defined value.
+         *
+         * @var bool
+         */
+        public $overrideInheritedSuffix;
+        /**
+         * Click-through URL suffix to apply to all ads in this entity's scope. Must
+         * be less than 128 characters long.
+         *
+         * @param string $clickThroughUrlSuffix
+         */
+        public function setClickThroughUrlSuffix($clickThroughUrlSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClickThroughUrlSuffix()
+        {
+        }
+        /**
+         * Whether this entity should override the inherited click-through URL suffix
+         * with its own defined value.
+         *
+         * @param bool $overrideInheritedSuffix
+         */
+        public function setOverrideInheritedSuffix($overrideInheritedSuffix)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOverrideInheritedSuffix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ClickThroughUrlSuffixProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClickThroughUrlSuffix()
-    {
-    }
-    /**
-     * Whether this entity should override the inherited click-through URL suffix
-     * with its own defined value.
-     *
-     * @param bool $overrideInheritedSuffix
-     */
-    public function setOverrideInheritedSuffix($overrideInheritedSuffix)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOverrideInheritedSuffix()
+    class Google_Service_Dfareporting_ClickThroughUrlSuffixProperties extends \Google\Service\Dfareporting\ClickThroughUrlSuffixProperties
     {
     }
 }

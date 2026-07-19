@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListEvaluationSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'evaluationSets';
-    protected $evaluationSetsType = GoogleCloudAiplatformV1EvaluationSet::class;
-    protected $evaluationSetsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of EvaluationSets in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationSet[] $evaluationSets
-     */
-    public function setEvaluationSets($evaluationSets)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListEvaluationSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'evaluationSets';
+        protected $evaluationSetsType = GoogleCloudAiplatformV1EvaluationSet::class;
+        protected $evaluationSetsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of EvaluationSets in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationSet[] $evaluationSets
+         */
+        public function setEvaluationSets($evaluationSets)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationSet[]
+         */
+        public function getEvaluationSets()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationSet[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationSets()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListEvaluationSetsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationSetsResponse
     {
     }
 }

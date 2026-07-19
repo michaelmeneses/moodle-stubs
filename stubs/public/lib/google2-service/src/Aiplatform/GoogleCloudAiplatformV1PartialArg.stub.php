@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PartialArg extends \Google\Model
-{
-    /**
-     * Null value.
-     */
-    public const NULL_VALUE_NULL_VALUE = 'NULL_VALUE';
-    /**
-     * Optional. Represents a boolean value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * Required. A JSON Path (RFC 9535) to the argument being streamed.
-     * https://datatracker.ietf.org/doc/html/rfc9535. e.g. "$.foo.bar[0].data".
-     *
-     * @var string
-     */
-    public $jsonPath;
-    /**
-     * Optional. Represents a null value.
-     *
-     * @var string
-     */
-    public $nullValue;
-    /**
-     * Optional. Represents a double value.
-     *
-     * @var 
-     */
-    public $numberValue;
-    /**
-     * Optional. Represents a string value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Optional. Whether this is not the last part of the same json_path. If true,
-     * another PartialArg message for the current json_path is expected to follow.
-     *
-     * @var bool
-     */
-    public $willContinue;
-    /**
-     * Optional. Represents a boolean value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PartialArg extends \Google\Model
     {
+        /**
+         * Null value.
+         */
+        public const NULL_VALUE_NULL_VALUE = 'NULL_VALUE';
+        /**
+         * Optional. Represents a boolean value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * Required. A JSON Path (RFC 9535) to the argument being streamed.
+         * https://datatracker.ietf.org/doc/html/rfc9535. e.g. "$.foo.bar[0].data".
+         *
+         * @var string
+         */
+        public $jsonPath;
+        /**
+         * Optional. Represents a null value.
+         *
+         * @var string
+         */
+        public $nullValue;
+        /**
+         * Optional. Represents a double value.
+         *
+         * @var 
+         */
+        public $numberValue;
+        /**
+         * Optional. Represents a string value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Optional. Whether this is not the last part of the same json_path. If true,
+         * another PartialArg message for the current json_path is expected to follow.
+         *
+         * @var bool
+         */
+        public $willContinue;
+        /**
+         * Optional. Represents a boolean value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Required. A JSON Path (RFC 9535) to the argument being streamed.
+         * https://datatracker.ietf.org/doc/html/rfc9535. e.g. "$.foo.bar[0].data".
+         *
+         * @param string $jsonPath
+         */
+        public function setJsonPath($jsonPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonPath()
+        {
+        }
+        /**
+         * Optional. Represents a null value.
+         *
+         * Accepted values: NULL_VALUE
+         *
+         * @param self::NULL_VALUE_* $nullValue
+         */
+        public function setNullValue($nullValue)
+        {
+        }
+        /**
+         * @return self::NULL_VALUE_*
+         */
+        public function getNullValue()
+        {
+        }
+        public function setNumberValue($numberValue)
+        {
+        }
+        public function getNumberValue()
+        {
+        }
+        /**
+         * Optional. Represents a string value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * Optional. Whether this is not the last part of the same json_path. If true,
+         * another PartialArg message for the current json_path is expected to follow.
+         *
+         * @param bool $willContinue
+         */
+        public function setWillContinue($willContinue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWillContinue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PartialArg registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Required. A JSON Path (RFC 9535) to the argument being streamed.
-     * https://datatracker.ietf.org/doc/html/rfc9535. e.g. "$.foo.bar[0].data".
-     *
-     * @param string $jsonPath
-     */
-    public function setJsonPath($jsonPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonPath()
-    {
-    }
-    /**
-     * Optional. Represents a null value.
-     *
-     * Accepted values: NULL_VALUE
-     *
-     * @param self::NULL_VALUE_* $nullValue
-     */
-    public function setNullValue($nullValue)
-    {
-    }
-    /**
-     * @return self::NULL_VALUE_*
-     */
-    public function getNullValue()
-    {
-    }
-    public function setNumberValue($numberValue)
-    {
-    }
-    public function getNumberValue()
-    {
-    }
-    /**
-     * Optional. Represents a string value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * Optional. Whether this is not the last part of the same json_path. If true,
-     * another PartialArg message for the current json_path is expected to follow.
-     *
-     * @param bool $willContinue
-     */
-    public function setWillContinue($willContinue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWillContinue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PartialArg extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PartialArg
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RayClusterMonitoringConfig extends \Google\Model
-{
-    /**
-     * Enable metrics collection for Ray clusters.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Enable metrics collection for Ray clusters.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class RayClusterMonitoringConfig extends \Google\Model
     {
+        /**
+         * Enable metrics collection for Ray clusters.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Enable metrics collection for Ray clusters.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\RayClusterMonitoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_RayClusterMonitoringConfig extends \Google\Service\Container\RayClusterMonitoringConfig
     {
     }
 }

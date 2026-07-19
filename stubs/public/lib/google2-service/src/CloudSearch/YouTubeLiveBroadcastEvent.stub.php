@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class YouTubeLiveBroadcastEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $brandAccountGaiaId;
-    /**
-     * @var string
-     */
-    public $broadcastId;
-    /**
-     * @var string
-     */
-    public $channelId;
-    /**
-     * @var string
-     */
-    public $viewUrl;
-    /**
-     * @param string
-     */
-    public function setBrandAccountGaiaId($brandAccountGaiaId)
+namespace Google\Service\CloudSearch {
+    class YouTubeLiveBroadcastEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $brandAccountGaiaId;
+        /**
+         * @var string
+         */
+        public $broadcastId;
+        /**
+         * @var string
+         */
+        public $channelId;
+        /**
+         * @var string
+         */
+        public $viewUrl;
+        /**
+         * @param string
+         */
+        public function setBrandAccountGaiaId($brandAccountGaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrandAccountGaiaId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBroadcastId($broadcastId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBroadcastId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setViewUrl($viewUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\YouTubeLiveBroadcastEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrandAccountGaiaId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBroadcastId($broadcastId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBroadcastId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setViewUrl($viewUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewUrl()
+    class Google_Service_CloudSearch_YouTubeLiveBroadcastEvent extends \Google\Service\CloudSearch\YouTubeLiveBroadcastEvent
     {
     }
 }

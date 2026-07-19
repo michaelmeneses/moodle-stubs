@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1UserInfo extends \Google\Collection
-{
-    protected $collection_key = 'groupIds';
-    /**
-     * The unique group identifications which the user is belong to. The format is
-     * "group:yyyy@example.com";
-     *
-     * @var string[]
-     */
-    public $groupIds;
-    /**
-     * A unique user identification string, as determined by the client. The
-     * maximum number of allowed characters is 255. Allowed characters include
-     * numbers 0 to 9, uppercase and lowercase letters, and restricted special
-     * symbols (:, @, +, -, _, ~) The format is "user:xxxx@example.com";
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The unique group identifications which the user is belong to. The format is
-     * "group:yyyy@example.com";
-     *
-     * @param string[] $groupIds
-     */
-    public function setGroupIds($groupIds)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1UserInfo extends \Google\Collection
     {
+        protected $collection_key = 'groupIds';
+        /**
+         * The unique group identifications which the user is belong to. The format is
+         * "group:yyyy@example.com";
+         *
+         * @var string[]
+         */
+        public $groupIds;
+        /**
+         * A unique user identification string, as determined by the client. The
+         * maximum number of allowed characters is 255. Allowed characters include
+         * numbers 0 to 9, uppercase and lowercase letters, and restricted special
+         * symbols (:, @, +, -, _, ~) The format is "user:xxxx@example.com";
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The unique group identifications which the user is belong to. The format is
+         * "group:yyyy@example.com";
+         *
+         * @param string[] $groupIds
+         */
+        public function setGroupIds($groupIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGroupIds()
+        {
+        }
+        /**
+         * A unique user identification string, as determined by the client. The
+         * maximum number of allowed characters is 255. Allowed characters include
+         * numbers 0 to 9, uppercase and lowercase letters, and restricted special
+         * symbols (:, @, +, -, _, ~) The format is "user:xxxx@example.com";
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupIds()
-    {
-    }
-    /**
-     * A unique user identification string, as determined by the client. The
-     * maximum number of allowed characters is 255. Allowed characters include
-     * numbers 0 to 9, uppercase and lowercase letters, and restricted special
-     * symbols (:, @, +, -, _, ~) The format is "user:xxxx@example.com";
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1UserInfo extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UserInfo
     {
     }
 }

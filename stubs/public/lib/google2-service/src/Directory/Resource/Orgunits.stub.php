@@ -21,124 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "orgunits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $orgunits = $adminService->orgunits;
- *  </code>
- */
-class Orgunits extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\OrgUnit;
+    use Google\Service\Directory\OrgUnits as OrgUnitsModel;
     /**
-     * Removes an organizational unit. (orgunits.delete)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's `customerId`. The `customerId` is also
-     * returned as part of the [Users resource](https://developers.google.com/worksp
-     * ace/admin/directory/v1/reference/users).
-     * @param string $orgUnitPath The full path of the organizational unit (minus
-     * the leading `/`) or its unique ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "orgunits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $orgunits = $adminService->orgunits;
+     *  </code>
      */
-    public function delete($customerId, $orgUnitPath, $optParams = [])
+    class Orgunits extends \Google\Service\Resource
     {
+        /**
+         * Removes an organizational unit. (orgunits.delete)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's `customerId`. The `customerId` is also
+         * returned as part of the [Users resource](https://developers.google.com/worksp
+         * ace/admin/directory/v1/reference/users).
+         * @param string $orgUnitPath The full path of the organizational unit (minus
+         * the leading `/`) or its unique ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customerId, $orgUnitPath, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves an organizational unit. (orgunits.get)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's `customerId`. The `customerId` is also
+         * returned as part of the [Users resource](https://developers.google.com/worksp
+         * ace/admin/directory/v1/reference/users).
+         * @param string $orgUnitPath The full path of the organizational unit (minus
+         * the leading `/`) or its unique ID.
+         * @param array $optParams Optional parameters.
+         * @return OrgUnit
+         * @throws \Google\Service\Exception
+         */
+        public function get($customerId, $orgUnitPath, $optParams = [])
+        {
+        }
+        /**
+         * Adds an organizational unit. (orgunits.insert)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's `customerId`. The `customerId` is also
+         * returned as part of the [Users resource](https://developers.google.com/worksp
+         * ace/admin/directory/v1/reference/users).
+         * @param OrgUnit $postBody
+         * @param array $optParams Optional parameters.
+         * @return OrgUnit
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customerId, OrgUnit $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of all organizational units for an account.
+         * (orgunits.listOrgunits)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's `customerId`. The `customerId` is also
+         * returned as part of the [Users resource](https://developers.google.com/worksp
+         * ace/admin/directory/v1/reference/users).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string orgUnitPath The full path to the organizational unit or its
+         * unique ID. Returns the children of the specified organizational unit.
+         * @opt_param string type Whether to return all sub-organizations or just
+         * immediate children.
+         * @return OrgUnitsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listOrgunits($customerId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an organizational unit. This method supports [patch semantics](https:
+         * //developers.google.com/workspace/admin/directory/v1/guides/performance#patch
+         * ) (orgunits.patch)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's `customerId`. The `customerId` is also
+         * returned as part of the [Users resource](https://developers.google.com/worksp
+         * ace/admin/directory/v1/reference/users).
+         * @param string $orgUnitPath The full path of the organizational unit (minus
+         * the leading `/`) or its unique ID.
+         * @param OrgUnit $postBody
+         * @param array $optParams Optional parameters.
+         * @return OrgUnit
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customerId, $orgUnitPath, OrgUnit $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an organizational unit. (orgunits.update)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's `customerId`. The `customerId` is also
+         * returned as part of the [Users resource](https://developers.google.com/worksp
+         * ace/admin/directory/v1/reference/users).
+         * @param string $orgUnitPath The full path of the organizational unit (minus
+         * the leading `/`) or its unique ID.
+         * @param OrgUnit $postBody
+         * @param array $optParams Optional parameters.
+         * @return OrgUnit
+         * @throws \Google\Service\Exception
+         */
+        public function update($customerId, $orgUnitPath, OrgUnit $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves an organizational unit. (orgunits.get)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's `customerId`. The `customerId` is also
-     * returned as part of the [Users resource](https://developers.google.com/worksp
-     * ace/admin/directory/v1/reference/users).
-     * @param string $orgUnitPath The full path of the organizational unit (minus
-     * the leading `/`) or its unique ID.
-     * @param array $optParams Optional parameters.
-     * @return OrgUnit
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Orgunits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customerId, $orgUnitPath, $optParams = [])
-    {
-    }
-    /**
-     * Adds an organizational unit. (orgunits.insert)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's `customerId`. The `customerId` is also
-     * returned as part of the [Users resource](https://developers.google.com/worksp
-     * ace/admin/directory/v1/reference/users).
-     * @param OrgUnit $postBody
-     * @param array $optParams Optional parameters.
-     * @return OrgUnit
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customerId, OrgUnit $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of all organizational units for an account.
-     * (orgunits.listOrgunits)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's `customerId`. The `customerId` is also
-     * returned as part of the [Users resource](https://developers.google.com/worksp
-     * ace/admin/directory/v1/reference/users).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string orgUnitPath The full path to the organizational unit or its
-     * unique ID. Returns the children of the specified organizational unit.
-     * @opt_param string type Whether to return all sub-organizations or just
-     * immediate children.
-     * @return OrgUnitsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listOrgunits($customerId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an organizational unit. This method supports [patch semantics](https:
-     * //developers.google.com/workspace/admin/directory/v1/guides/performance#patch
-     * ) (orgunits.patch)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's `customerId`. The `customerId` is also
-     * returned as part of the [Users resource](https://developers.google.com/worksp
-     * ace/admin/directory/v1/reference/users).
-     * @param string $orgUnitPath The full path of the organizational unit (minus
-     * the leading `/`) or its unique ID.
-     * @param OrgUnit $postBody
-     * @param array $optParams Optional parameters.
-     * @return OrgUnit
-     * @throws \Google\Service\Exception
-     */
-    public function patch($customerId, $orgUnitPath, OrgUnit $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an organizational unit. (orgunits.update)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's `customerId`. The `customerId` is also
-     * returned as part of the [Users resource](https://developers.google.com/worksp
-     * ace/admin/directory/v1/reference/users).
-     * @param string $orgUnitPath The full path of the organizational unit (minus
-     * the leading `/`) or its unique ID.
-     * @param OrgUnit $postBody
-     * @param array $optParams Optional parameters.
-     * @return OrgUnit
-     * @throws \Google\Service\Exception
-     */
-    public function update($customerId, $orgUnitPath, OrgUnit $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_Orgunits extends \Google\Service\Directory\Resource\Orgunits
     {
     }
 }

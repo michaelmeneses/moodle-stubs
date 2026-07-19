@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class GroupAlias extends \Google\Model
-{
-    /**
-     * The alias email address.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The unique ID of the group.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The type of the API resource. For Alias resources, the value is
-     * `admin#directory#alias`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The primary email address of the group.
-     *
-     * @var string
-     */
-    public $primaryEmail;
-    /**
-     * The alias email address.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\Directory {
+    class GroupAlias extends \Google\Model
     {
+        /**
+         * The alias email address.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The unique ID of the group.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The type of the API resource. For Alias resources, the value is
+         * `admin#directory#alias`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The primary email address of the group.
+         *
+         * @var string
+         */
+        public $primaryEmail;
+        /**
+         * The alias email address.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The unique ID of the group.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The type of the API resource. For Alias resources, the value is
+         * `admin#directory#alias`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The primary email address of the group.
+         *
+         * @param string $primaryEmail
+         */
+        public function setPrimaryEmail($primaryEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\GroupAlias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The unique ID of the group.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The type of the API resource. For Alias resources, the value is
-     * `admin#directory#alias`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The primary email address of the group.
-     *
-     * @param string $primaryEmail
-     */
-    public function setPrimaryEmail($primaryEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryEmail()
+    class Google_Service_Directory_GroupAlias extends \Google\Service\Directory\GroupAlias
     {
     }
 }

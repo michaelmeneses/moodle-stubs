@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class LockInfo extends \Google\Model
-{
-    /**
-     * Time that the lock was taken.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Extra information to store with the lock, provided by the caller.
-     *
-     * @var string
-     */
-    public $info;
-    /**
-     * Unique ID for the lock to be overridden with generation ID in the backend.
-     *
-     * @var string
-     */
-    public $lockId;
-    /**
-     * Terraform operation, provided by the caller.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * Terraform version
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * user@hostname when available
-     *
-     * @var string
-     */
-    public $who;
-    /**
-     * Time that the lock was taken.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Config {
+    class LockInfo extends \Google\Model
     {
+        /**
+         * Time that the lock was taken.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Extra information to store with the lock, provided by the caller.
+         *
+         * @var string
+         */
+        public $info;
+        /**
+         * Unique ID for the lock to be overridden with generation ID in the backend.
+         *
+         * @var string
+         */
+        public $lockId;
+        /**
+         * Terraform operation, provided by the caller.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * Terraform version
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * user@hostname when available
+         *
+         * @var string
+         */
+        public $who;
+        /**
+         * Time that the lock was taken.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Extra information to store with the lock, provided by the caller.
+         *
+         * @param string $info
+         */
+        public function setInfo($info)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInfo()
+        {
+        }
+        /**
+         * Unique ID for the lock to be overridden with generation ID in the backend.
+         *
+         * @param string $lockId
+         */
+        public function setLockId($lockId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLockId()
+        {
+        }
+        /**
+         * Terraform operation, provided by the caller.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * Terraform version
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * user@hostname when available
+         *
+         * @param string $who
+         */
+        public function setWho($who)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWho()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\LockInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Extra information to store with the lock, provided by the caller.
-     *
-     * @param string $info
-     */
-    public function setInfo($info)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInfo()
-    {
-    }
-    /**
-     * Unique ID for the lock to be overridden with generation ID in the backend.
-     *
-     * @param string $lockId
-     */
-    public function setLockId($lockId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLockId()
-    {
-    }
-    /**
-     * Terraform operation, provided by the caller.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * Terraform version
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * user@hostname when available
-     *
-     * @param string $who
-     */
-    public function setWho($who)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWho()
+    class Google_Service_Config_LockInfo extends \Google\Service\Config\LockInfo
     {
     }
 }

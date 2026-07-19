@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListInfoTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'infoTypes';
-    protected $infoTypesType = GooglePrivacyDlpV2InfoTypeDescription::class;
-    protected $infoTypesDataType = 'array';
-    /**
-     * Set of sensitive infoTypes.
-     *
-     * @param GooglePrivacyDlpV2InfoTypeDescription[] $infoTypes
-     */
-    public function setInfoTypes($infoTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListInfoTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'infoTypes';
+        protected $infoTypesType = GooglePrivacyDlpV2InfoTypeDescription::class;
+        protected $infoTypesDataType = 'array';
+        /**
+         * Set of sensitive infoTypes.
+         *
+         * @param GooglePrivacyDlpV2InfoTypeDescription[] $infoTypes
+         */
+        public function setInfoTypes($infoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoTypeDescription[]
+         */
+        public function getInfoTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoTypeDescription[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListInfoTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListInfoTypesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListInfoTypesResponse
     {
     }
 }

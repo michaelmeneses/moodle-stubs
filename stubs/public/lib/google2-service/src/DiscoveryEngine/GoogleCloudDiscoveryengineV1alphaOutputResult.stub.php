@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaOutputResult extends \Google\Model
-{
-    protected $bigqueryResultType = GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult::class;
-    protected $bigqueryResultDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult
-     */
-    public function setBigqueryResult(GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult $bigqueryResult)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaOutputResult extends \Google\Model
     {
+        protected $bigqueryResultType = GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult::class;
+        protected $bigqueryResultDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult
+         */
+        public function setBigqueryResult(GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult $bigqueryResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult
+         */
+        public function getBigqueryResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaOutputResultBigQueryOutputResult
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaOutputResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryResult()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaOutputResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaOutputResult
     {
     }
 }

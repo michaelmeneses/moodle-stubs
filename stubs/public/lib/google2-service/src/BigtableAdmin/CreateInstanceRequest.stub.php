@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateInstanceRequest extends \Google\Model
-{
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'map';
-    protected $instanceType = Instance::class;
-    protected $instanceDataType = '';
-    /**
-     * Required. The ID to be used when referring to the new instance within its
-     * project, e.g., just `myinstance` rather than
-     * `projects/myproject/instances/myinstance`.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Required. The unique name of the project in which to create the new
-     * instance. Values are of the form `projects/{project}`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The clusters to be created within the instance, mapped by desired
-     * cluster ID, e.g., just `mycluster` rather than
-     * `projects/myproject/instances/myinstance/clusters/mycluster`. Fields marked
-     * `OutputOnly` must be left blank.
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\BigtableAdmin {
+    class CreateInstanceRequest extends \Google\Model
     {
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'map';
+        protected $instanceType = Instance::class;
+        protected $instanceDataType = '';
+        /**
+         * Required. The ID to be used when referring to the new instance within its
+         * project, e.g., just `myinstance` rather than
+         * `projects/myproject/instances/myinstance`.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Required. The unique name of the project in which to create the new
+         * instance. Values are of the form `projects/{project}`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The clusters to be created within the instance, mapped by desired
+         * cluster ID, e.g., just `mycluster` rather than
+         * `projects/myproject/instances/myinstance/clusters/mycluster`. Fields marked
+         * `OutputOnly` must be left blank.
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * Required. The instance to create. Fields marked `OutputOnly` must be left
+         * blank.
+         *
+         * @param Instance $instance
+         */
+        public function setInstance(Instance $instance)
+        {
+        }
+        /**
+         * @return Instance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. The ID to be used when referring to the new instance within its
+         * project, e.g., just `myinstance` rather than
+         * `projects/myproject/instances/myinstance`.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Required. The unique name of the project in which to create the new
+         * instance. Values are of the form `projects/{project}`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * Required. The instance to create. Fields marked `OutputOnly` must be left
-     * blank.
-     *
-     * @param Instance $instance
-     */
-    public function setInstance(Instance $instance)
-    {
-    }
-    /**
-     * @return Instance
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. The ID to be used when referring to the new instance within its
-     * project, e.g., just `myinstance` rather than
-     * `projects/myproject/instances/myinstance`.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Required. The unique name of the project in which to create the new
-     * instance. Values are of the form `projects/{project}`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_BigtableAdmin_CreateInstanceRequest extends \Google\Service\BigtableAdmin\CreateInstanceRequest
     {
     }
 }

@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Runtime extends \Google\Model
-{
-    protected $accessConfigType = RuntimeAccessConfig::class;
-    protected $accessConfigDataType = '';
-    public $accessConfig;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $healthState;
-    /**
-     * @var string[]
-     */
-    public $labels = [];
-    protected $metricsType = RuntimeMetrics::class;
-    protected $metricsDataType = '';
-    public $metrics;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $softwareConfigType = RuntimeSoftwareConfig::class;
-    protected $softwareConfigDataType = '';
-    public $softwareConfig;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    protected $virtualMachineType = VirtualMachine::class;
-    protected $virtualMachineDataType = '';
-    public $virtualMachine;
-    /**
-     * @param RuntimeAccessConfig
-     */
-    public function setAccessConfig(RuntimeAccessConfig $accessConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class Runtime extends \Google\Model
     {
+        protected $accessConfigType = RuntimeAccessConfig::class;
+        protected $accessConfigDataType = '';
+        public $accessConfig;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $healthState;
+        /**
+         * @var string[]
+         */
+        public $labels = [];
+        protected $metricsType = RuntimeMetrics::class;
+        protected $metricsDataType = '';
+        public $metrics;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $softwareConfigType = RuntimeSoftwareConfig::class;
+        protected $softwareConfigDataType = '';
+        public $softwareConfig;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        protected $virtualMachineType = VirtualMachine::class;
+        protected $virtualMachineDataType = '';
+        public $virtualMachine;
+        /**
+         * @param RuntimeAccessConfig
+         */
+        public function setAccessConfig(RuntimeAccessConfig $accessConfig)
+        {
+        }
+        /**
+         * @return RuntimeAccessConfig
+         */
+        public function getAccessConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHealthState($healthState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthState()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param RuntimeMetrics
+         */
+        public function setMetrics(RuntimeMetrics $metrics)
+        {
+        }
+        /**
+         * @return RuntimeMetrics
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param RuntimeSoftwareConfig
+         */
+        public function setSoftwareConfig(RuntimeSoftwareConfig $softwareConfig)
+        {
+        }
+        /**
+         * @return RuntimeSoftwareConfig
+         */
+        public function getSoftwareConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param VirtualMachine
+         */
+        public function setVirtualMachine(VirtualMachine $virtualMachine)
+        {
+        }
+        /**
+         * @return VirtualMachine
+         */
+        public function getVirtualMachine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RuntimeAccessConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Runtime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHealthState($healthState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealthState()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param RuntimeMetrics
-     */
-    public function setMetrics(RuntimeMetrics $metrics)
-    {
-    }
-    /**
-     * @return RuntimeMetrics
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param RuntimeSoftwareConfig
-     */
-    public function setSoftwareConfig(RuntimeSoftwareConfig $softwareConfig)
-    {
-    }
-    /**
-     * @return RuntimeSoftwareConfig
-     */
-    public function getSoftwareConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param VirtualMachine
-     */
-    public function setVirtualMachine(VirtualMachine $virtualMachine)
-    {
-    }
-    /**
-     * @return VirtualMachine
-     */
-    public function getVirtualMachine()
+    class Google_Service_AIPlatformNotebooks_Runtime extends \Google\Service\AIPlatformNotebooks\Runtime
     {
     }
 }

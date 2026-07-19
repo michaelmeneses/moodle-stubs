@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GenericSignedAttestation extends \Google\Collection
-{
-    protected $collection_key = 'signatures';
-    public $contentType;
-    public $serializedPayload;
-    protected $signaturesType = Signature::class;
-    protected $signaturesDataType = 'array';
-    public function setContentType($contentType)
+namespace Google\Service\ContainerAnalysis {
+    class GenericSignedAttestation extends \Google\Collection
     {
+        protected $collection_key = 'signatures';
+        public $contentType;
+        public $serializedPayload;
+        protected $signaturesType = Signature::class;
+        protected $signaturesDataType = 'array';
+        public function setContentType($contentType)
+        {
+        }
+        public function getContentType()
+        {
+        }
+        public function setSerializedPayload($serializedPayload)
+        {
+        }
+        public function getSerializedPayload()
+        {
+        }
+        /**
+         * @param Signature[]
+         */
+        public function setSignatures($signatures)
+        {
+        }
+        /**
+         * @return Signature[]
+         */
+        public function getSignatures()
+        {
+        }
     }
-    public function getContentType()
-    {
-    }
-    public function setSerializedPayload($serializedPayload)
-    {
-    }
-    public function getSerializedPayload()
-    {
-    }
+}
+namespace {
     /**
-     * @param Signature[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GenericSignedAttestation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setSignatures($signatures)
-    {
-    }
-    /**
-     * @return Signature[]
-     */
-    public function getSignatures()
+    class Google_Service_ContainerAnalysis_GenericSignedAttestation extends \Google\Service\ContainerAnalysis\GenericSignedAttestation
     {
     }
 }

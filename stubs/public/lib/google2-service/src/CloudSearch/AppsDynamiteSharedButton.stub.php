@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedButton extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    public $color;
-    /**
-     * @var bool
-     */
-    public $disabled;
-    protected $iconType = AppsDynamiteSharedIcon::class;
-    protected $iconDataType = '';
-    public $icon;
-    protected $onClickType = AppsDynamiteSharedOnClick::class;
-    protected $onClickDataType = '';
-    public $onClick;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedButton extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        public $color;
+        /**
+         * @var bool
+         */
+        public $disabled;
+        protected $iconType = AppsDynamiteSharedIcon::class;
+        protected $iconDataType = '';
+        public $icon;
+        protected $onClickType = AppsDynamiteSharedOnClick::class;
+        protected $onClickDataType = '';
+        public $onClick;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param Color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedIcon
+         */
+        public function setIcon(AppsDynamiteSharedIcon $icon)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedIcon
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOnClick
+         */
+        public function setOnClick(AppsDynamiteSharedOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param Color
-     */
-    public function setColor(Color $color)
-    {
-    }
-    /**
-     * @return Color
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedIcon
-     */
-    public function setIcon(AppsDynamiteSharedIcon $icon)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedIcon
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOnClick
-     */
-    public function setOnClick(AppsDynamiteSharedOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudSearch_AppsDynamiteSharedButton extends \Google\Service\CloudSearch\AppsDynamiteSharedButton
     {
     }
 }

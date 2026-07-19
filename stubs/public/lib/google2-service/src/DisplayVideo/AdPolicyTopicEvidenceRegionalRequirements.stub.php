@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceRegionalRequirements extends \Google\Collection
-{
-    protected $collection_key = 'regionalRequirementsEntries';
-    protected $regionalRequirementsEntriesType = AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry::class;
-    protected $regionalRequirementsEntriesDataType = 'array';
-    /**
-     * List of regional requirements.
-     *
-     * @param AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry[] $regionalRequirementsEntries
-     */
-    public function setRegionalRequirementsEntries($regionalRequirementsEntries)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceRegionalRequirements extends \Google\Collection
     {
+        protected $collection_key = 'regionalRequirementsEntries';
+        protected $regionalRequirementsEntriesType = AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry::class;
+        protected $regionalRequirementsEntriesDataType = 'array';
+        /**
+         * List of regional requirements.
+         *
+         * @param AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry[] $regionalRequirementsEntries
+         */
+        public function setRegionalRequirementsEntries($regionalRequirementsEntries)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry[]
+         */
+        public function getRegionalRequirementsEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceRegionalRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionalRequirementsEntries()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceRegionalRequirements extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceRegionalRequirements
     {
     }
 }

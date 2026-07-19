@@ -21,126 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense\Resource;
-
-/**
- * The "customchannels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseService = new Google\Service\Adsense(...);
- *   $customchannels = $adsenseService->accounts_adclients_customchannels;
- *  </code>
- */
-class AccountsAdclientsCustomchannels extends \Google\Service\Resource
-{
+namespace Google\Service\Adsense\Resource {
+    use Google\Service\Adsense\AdsenseEmpty;
+    use Google\Service\Adsense\CustomChannel;
+    use Google\Service\Adsense\ListCustomChannelsResponse;
+    use Google\Service\Adsense\ListLinkedAdUnitsResponse;
     /**
-     * Creates a custom channel. This method can be called only by a restricted set
-     * of projects, which are usually owned by [AdSense for
-     * Platforms](https://developers.google.com/adsense/platforms/) publishers.
-     * Contact your account manager if you need to use this method.
-     * (customchannels.create)
-     *
-     * @param string $parent Required. The ad client to create a custom channel
-     * under. Format: accounts/{account}/adclients/{adclient}
-     * @param CustomChannel $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
+     * The "customchannels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseService = new Google\Service\Adsense(...);
+     *   $customchannels = $adsenseService->accounts_adclients_customchannels;
+     *  </code>
      */
-    public function create($parent, CustomChannel $postBody, $optParams = [])
+    class AccountsAdclientsCustomchannels extends \Google\Service\Resource
     {
+        /**
+         * Creates a custom channel. This method can be called only by a restricted set
+         * of projects, which are usually owned by [AdSense for
+         * Platforms](https://developers.google.com/adsense/platforms/) publishers.
+         * Contact your account manager if you need to use this method.
+         * (customchannels.create)
+         *
+         * @param string $parent Required. The ad client to create a custom channel
+         * under. Format: accounts/{account}/adclients/{adclient}
+         * @param CustomChannel $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CustomChannel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a custom channel. This method can be called only by a restricted set
+         * of projects, which are usually owned by [AdSense for
+         * Platforms](https://developers.google.com/adsense/platforms/) publishers.
+         * Contact your account manager if you need to use this method.
+         * (customchannels.delete)
+         *
+         * @param string $name Required. Name of the custom channel to delete. Format:
+         * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
+         * @param array $optParams Optional parameters.
+         * @return AdsenseEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about the selected custom channel. (customchannels.get)
+         *
+         * @param string $name Required. Name of the custom channel. Format:
+         * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the custom channels available in an ad client.
+         * (customchannels.listAccountsAdclientsCustomchannels)
+         *
+         * @param string $parent Required. The ad client which owns the collection of
+         * custom channels. Format: accounts/{account}/adclients/{adclient}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of custom channels to include in
+         * the response, used for paging. If unspecified, at most 10000 custom channels
+         * will be returned. The maximum value is 10000; values above 10000 will be
+         * coerced to 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListCustomChannels` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListCustomChannels` must match
+         * the call that provided the page token.
+         * @return ListCustomChannelsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdclientsCustomchannels($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the ad units available for a custom channel.
+         * (customchannels.listLinkedAdUnits)
+         *
+         * @param string $parent Required. The custom channel which owns the collection
+         * of ad units. Format:
+         * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of ad units to include in the
+         * response, used for paging. If unspecified, at most 10000 ad units will be
+         * returned. The maximum value is 10000; values above 10000 will be coerced to
+         * 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListLinkedAdUnits` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListLinkedAdUnits` must match
+         * the call that provided the page token.
+         * @return ListLinkedAdUnitsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLinkedAdUnits($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a custom channel. This method can be called only by a restricted set
+         * of projects, which are usually owned by [AdSense for
+         * Platforms](https://developers.google.com/adsense/platforms/) publishers.
+         * Contact your account manager if you need to use this method.
+         * (customchannels.patch)
+         *
+         * @param string $name Output only. Resource name of the custom channel. Format:
+         * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
+         * @param CustomChannel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to update. If empty, a full
+         * update is performed.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, CustomChannel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a custom channel. This method can be called only by a restricted set
-     * of projects, which are usually owned by [AdSense for
-     * Platforms](https://developers.google.com/adsense/platforms/) publishers.
-     * Contact your account manager if you need to use this method.
-     * (customchannels.delete)
-     *
-     * @param string $name Required. Name of the custom channel to delete. Format:
-     * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
-     * @param array $optParams Optional parameters.
-     * @return AdsenseEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Adsense\Resource\AccountsAdclientsCustomchannels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets information about the selected custom channel. (customchannels.get)
-     *
-     * @param string $name Required. Name of the custom channel. Format:
-     * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the custom channels available in an ad client.
-     * (customchannels.listAccountsAdclientsCustomchannels)
-     *
-     * @param string $parent Required. The ad client which owns the collection of
-     * custom channels. Format: accounts/{account}/adclients/{adclient}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of custom channels to include in
-     * the response, used for paging. If unspecified, at most 10000 custom channels
-     * will be returned. The maximum value is 10000; values above 10000 will be
-     * coerced to 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListCustomChannels` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListCustomChannels` must match
-     * the call that provided the page token.
-     * @return ListCustomChannelsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsAdclientsCustomchannels($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the ad units available for a custom channel.
-     * (customchannels.listLinkedAdUnits)
-     *
-     * @param string $parent Required. The custom channel which owns the collection
-     * of ad units. Format:
-     * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of ad units to include in the
-     * response, used for paging. If unspecified, at most 10000 ad units will be
-     * returned. The maximum value is 10000; values above 10000 will be coerced to
-     * 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListLinkedAdUnits` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListLinkedAdUnits` must match
-     * the call that provided the page token.
-     * @return ListLinkedAdUnitsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listLinkedAdUnits($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a custom channel. This method can be called only by a restricted set
-     * of projects, which are usually owned by [AdSense for
-     * Platforms](https://developers.google.com/adsense/platforms/) publishers.
-     * Contact your account manager if you need to use this method.
-     * (customchannels.patch)
-     *
-     * @param string $name Output only. Resource name of the custom channel. Format:
-     * accounts/{account}/adclients/{adclient}/customchannels/{customchannel}
-     * @param CustomChannel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to update. If empty, a full
-     * update is performed.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, CustomChannel $postBody, $optParams = [])
+    class Google_Service_Adsense_Resource_AccountsAdclientsCustomchannels extends \Google\Service\Adsense\Resource\AccountsAdclientsCustomchannels
     {
     }
 }

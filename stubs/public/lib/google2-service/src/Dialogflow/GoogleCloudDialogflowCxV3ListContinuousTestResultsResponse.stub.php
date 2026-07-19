@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse extends \Google\Collection
-{
-    protected $collection_key = 'continuousTestResults';
-    protected $continuousTestResultsType = GoogleCloudDialogflowCxV3ContinuousTestResult::class;
-    protected $continuousTestResultsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of continuous test results.
-     *
-     * @param GoogleCloudDialogflowCxV3ContinuousTestResult[] $continuousTestResults
-     */
-    public function setContinuousTestResults($continuousTestResults)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse extends \Google\Collection
     {
+        protected $collection_key = 'continuousTestResults';
+        protected $continuousTestResultsType = GoogleCloudDialogflowCxV3ContinuousTestResult::class;
+        protected $continuousTestResultsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of continuous test results.
+         *
+         * @param GoogleCloudDialogflowCxV3ContinuousTestResult[] $continuousTestResults
+         */
+        public function setContinuousTestResults($continuousTestResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ContinuousTestResult[]
+         */
+        public function getContinuousTestResults()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ContinuousTestResult[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContinuousTestResults()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class Places extends \Google\Collection
-{
-    protected $collection_key = 'placeInfos';
-    protected $placeInfosType = PlaceInfo::class;
-    protected $placeInfosDataType = 'array';
-    /**
-     * The areas represented by place IDs. Limited to a maximum of 20 places.
-     *
-     * @param PlaceInfo[] $placeInfos
-     */
-    public function setPlaceInfos($placeInfos)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class Places extends \Google\Collection
     {
+        protected $collection_key = 'placeInfos';
+        protected $placeInfosType = PlaceInfo::class;
+        protected $placeInfosDataType = 'array';
+        /**
+         * The areas represented by place IDs. Limited to a maximum of 20 places.
+         *
+         * @param PlaceInfo[] $placeInfos
+         */
+        public function setPlaceInfos($placeInfos)
+        {
+        }
+        /**
+         * @return PlaceInfo[]
+         */
+        public function getPlaceInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlaceInfo[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Places registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceInfos()
+    class Google_Service_MyBusinessBusinessInformation_Places extends \Google\Service\MyBusinessBusinessInformation\Places
     {
     }
 }

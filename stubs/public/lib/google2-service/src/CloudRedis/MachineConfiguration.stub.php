@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class MachineConfiguration extends \Google\Model
-{
-    /**
-     * The number of CPUs. Deprecated. Use vcpu_count instead. TODO(b/342344482)
-     * add proto validations again after bug fix.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $cpuCount;
-    /**
-     * Memory size in bytes. TODO(b/342344482) add proto validations again after
-     * bug fix.
-     *
-     * @var string
-     */
-    public $memorySizeInBytes;
-    /**
-     * Optional. Number of shards (if applicable).
-     *
-     * @var int
-     */
-    public $shardCount;
-    /**
-     * Optional. The number of vCPUs. TODO(b/342344482) add proto validations
-     * again after bug fix.
-     *
-     * @var 
-     */
-    public $vcpuCount;
-    /**
-     * The number of CPUs. Deprecated. Use vcpu_count instead. TODO(b/342344482)
-     * add proto validations again after bug fix.
-     *
-     * @deprecated
-     * @param int $cpuCount
-     */
-    public function setCpuCount($cpuCount)
+namespace Google\Service\CloudRedis {
+    class MachineConfiguration extends \Google\Model
     {
+        /**
+         * The number of CPUs. Deprecated. Use vcpu_count instead. TODO(b/342344482)
+         * add proto validations again after bug fix.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $cpuCount;
+        /**
+         * Memory size in bytes. TODO(b/342344482) add proto validations again after
+         * bug fix.
+         *
+         * @var string
+         */
+        public $memorySizeInBytes;
+        /**
+         * Optional. Number of shards (if applicable).
+         *
+         * @var int
+         */
+        public $shardCount;
+        /**
+         * Optional. The number of vCPUs. TODO(b/342344482) add proto validations
+         * again after bug fix.
+         *
+         * @var 
+         */
+        public $vcpuCount;
+        /**
+         * The number of CPUs. Deprecated. Use vcpu_count instead. TODO(b/342344482)
+         * add proto validations again after bug fix.
+         *
+         * @deprecated
+         * @param int $cpuCount
+         */
+        public function setCpuCount($cpuCount)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getCpuCount()
+        {
+        }
+        /**
+         * Memory size in bytes. TODO(b/342344482) add proto validations again after
+         * bug fix.
+         *
+         * @param string $memorySizeInBytes
+         */
+        public function setMemorySizeInBytes($memorySizeInBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemorySizeInBytes()
+        {
+        }
+        /**
+         * Optional. Number of shards (if applicable).
+         *
+         * @param int $shardCount
+         */
+        public function setShardCount($shardCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getShardCount()
+        {
+        }
+        public function setVcpuCount($vcpuCount)
+        {
+        }
+        public function getVcpuCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRedis\MachineConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuCount()
-    {
-    }
-    /**
-     * Memory size in bytes. TODO(b/342344482) add proto validations again after
-     * bug fix.
-     *
-     * @param string $memorySizeInBytes
-     */
-    public function setMemorySizeInBytes($memorySizeInBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemorySizeInBytes()
-    {
-    }
-    /**
-     * Optional. Number of shards (if applicable).
-     *
-     * @param int $shardCount
-     */
-    public function setShardCount($shardCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getShardCount()
-    {
-    }
-    public function setVcpuCount($vcpuCount)
-    {
-    }
-    public function getVcpuCount()
+    class Google_Service_CloudRedis_MachineConfiguration extends \Google\Service\CloudRedis\MachineConfiguration
     {
     }
 }

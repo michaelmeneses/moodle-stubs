@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class ListDataSourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataSources';
-    protected $dataSourcesType = DataSource::class;
-    protected $dataSourcesDataType = 'array';
-    /**
-     * Output only. The next-pagination token. For multiple-page list results,
-     * this token can be used as the `ListDataSourcesRequest.page_token` to
-     * request the next page of list results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of supported data sources and their transfer settings.
-     *
-     * @param DataSource[] $dataSources
-     */
-    public function setDataSources($dataSources)
+namespace Google\Service\BigQueryDataTransfer {
+    class ListDataSourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataSources';
+        protected $dataSourcesType = DataSource::class;
+        protected $dataSourcesDataType = 'array';
+        /**
+         * Output only. The next-pagination token. For multiple-page list results,
+         * this token can be used as the `ListDataSourcesRequest.page_token` to
+         * request the next page of list results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of supported data sources and their transfer settings.
+         *
+         * @param DataSource[] $dataSources
+         */
+        public function setDataSources($dataSources)
+        {
+        }
+        /**
+         * @return DataSource[]
+         */
+        public function getDataSources()
+        {
+        }
+        /**
+         * Output only. The next-pagination token. For multiple-page list results,
+         * this token can be used as the `ListDataSourcesRequest.page_token` to
+         * request the next page of list results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSource[]
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\ListDataSourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSources()
-    {
-    }
-    /**
-     * Output only. The next-pagination token. For multiple-page list results,
-     * this token can be used as the `ListDataSourcesRequest.page_token` to
-     * request the next page of list results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigQueryDataTransfer_ListDataSourcesResponse extends \Google\Service\BigQueryDataTransfer\ListDataSourcesResponse
     {
     }
 }

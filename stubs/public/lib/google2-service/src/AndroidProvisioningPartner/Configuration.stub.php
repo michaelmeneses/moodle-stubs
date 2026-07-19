@@ -21,270 +21,279 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class Configuration extends \Google\Model
-{
-    /**
-     * Required. The name of the organization. Zero-touch enrollment shows this
-     * organization name to device users during device provisioning.
-     *
-     * @var string
-     */
-    public $companyName;
-    /**
-     * Output only. The ID of the configuration. Assigned by the server.
-     *
-     * @var string
-     */
-    public $configurationId;
-    /**
-     * Required. A short name that describes the configuration's purpose. For
-     * example, _Sales team_ or _Temporary employees_. The zero-touch enrollment
-     * portal displays this name to IT admins.
-     *
-     * @var string
-     */
-    public $configurationName;
-    /**
-     * Required. The email address that device users can contact to get help.
-     * Zero-touch enrollment shows this email address to device users before
-     * device provisioning. The value is validated on input.
-     *
-     * @var string
-     */
-    public $contactEmail;
-    /**
-     * Required. The telephone number that device users can call, using another
-     * device, to get help. Zero-touch enrollment shows this number to device
-     * users before device provisioning. Accepts numerals, spaces, the plus sign,
-     * hyphens, and parentheses.
-     *
-     * @var string
-     */
-    public $contactPhone;
-    /**
-     * A message, containing one or two sentences, to help device users get help
-     * or give them more details about what’s happening to their device. Zero-
-     * touch enrollment shows this message before the device is provisioned.
-     *
-     * @var string
-     */
-    public $customMessage;
-    /**
-     * The JSON-formatted EMM provisioning extras that are passed to the DPC.
-     *
-     * @var string
-     */
-    public $dpcExtras;
-    /**
-     * Required. The resource name of the selected DPC (device policy controller)
-     * in the format `customers/[CUSTOMER_ID]/dpcs`. To list the supported DPCs,
-     * call `customers.dpcs.list`.
-     *
-     * @var string
-     */
-    public $dpcResourcePath;
-    /**
-     * Optional. The timeout before forcing factory reset the device if the device
-     * doesn't go through provisioning in the setup wizard, usually due to lack of
-     * network connectivity during setup wizard. Ranges from 0-6 hours, with 2
-     * hours being the default if unset.
-     *
-     * @var string
-     */
-    public $forcedResetTime;
-    /**
-     * Required. Whether this is the default configuration that zero-touch
-     * enrollment applies to any new devices the organization purchases in the
-     * future. Only one customer configuration can be the default. Setting this
-     * value to `true`, changes the previous default configuration's `isDefault`
-     * value to `false`.
-     *
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * Output only. The API resource name in the format
-     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by
-     * the server.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The name of the organization. Zero-touch enrollment shows this
-     * organization name to device users during device provisioning.
-     *
-     * @param string $companyName
-     */
-    public function setCompanyName($companyName)
+namespace Google\Service\AndroidProvisioningPartner {
+    class Configuration extends \Google\Model
     {
+        /**
+         * Required. The name of the organization. Zero-touch enrollment shows this
+         * organization name to device users during device provisioning.
+         *
+         * @var string
+         */
+        public $companyName;
+        /**
+         * Output only. The ID of the configuration. Assigned by the server.
+         *
+         * @var string
+         */
+        public $configurationId;
+        /**
+         * Required. A short name that describes the configuration's purpose. For
+         * example, _Sales team_ or _Temporary employees_. The zero-touch enrollment
+         * portal displays this name to IT admins.
+         *
+         * @var string
+         */
+        public $configurationName;
+        /**
+         * Required. The email address that device users can contact to get help.
+         * Zero-touch enrollment shows this email address to device users before
+         * device provisioning. The value is validated on input.
+         *
+         * @var string
+         */
+        public $contactEmail;
+        /**
+         * Required. The telephone number that device users can call, using another
+         * device, to get help. Zero-touch enrollment shows this number to device
+         * users before device provisioning. Accepts numerals, spaces, the plus sign,
+         * hyphens, and parentheses.
+         *
+         * @var string
+         */
+        public $contactPhone;
+        /**
+         * A message, containing one or two sentences, to help device users get help
+         * or give them more details about what’s happening to their device. Zero-
+         * touch enrollment shows this message before the device is provisioned.
+         *
+         * @var string
+         */
+        public $customMessage;
+        /**
+         * The JSON-formatted EMM provisioning extras that are passed to the DPC.
+         *
+         * @var string
+         */
+        public $dpcExtras;
+        /**
+         * Required. The resource name of the selected DPC (device policy controller)
+         * in the format `customers/[CUSTOMER_ID]/dpcs`. To list the supported DPCs,
+         * call `customers.dpcs.list`.
+         *
+         * @var string
+         */
+        public $dpcResourcePath;
+        /**
+         * Optional. The timeout before forcing factory reset the device if the device
+         * doesn't go through provisioning in the setup wizard, usually due to lack of
+         * network connectivity during setup wizard. Ranges from 0-6 hours, with 2
+         * hours being the default if unset.
+         *
+         * @var string
+         */
+        public $forcedResetTime;
+        /**
+         * Required. Whether this is the default configuration that zero-touch
+         * enrollment applies to any new devices the organization purchases in the
+         * future. Only one customer configuration can be the default. Setting this
+         * value to `true`, changes the previous default configuration's `isDefault`
+         * value to `false`.
+         *
+         * @var bool
+         */
+        public $isDefault;
+        /**
+         * Output only. The API resource name in the format
+         * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by
+         * the server.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The name of the organization. Zero-touch enrollment shows this
+         * organization name to device users during device provisioning.
+         *
+         * @param string $companyName
+         */
+        public function setCompanyName($companyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompanyName()
+        {
+        }
+        /**
+         * Output only. The ID of the configuration. Assigned by the server.
+         *
+         * @param string $configurationId
+         */
+        public function setConfigurationId($configurationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigurationId()
+        {
+        }
+        /**
+         * Required. A short name that describes the configuration's purpose. For
+         * example, _Sales team_ or _Temporary employees_. The zero-touch enrollment
+         * portal displays this name to IT admins.
+         *
+         * @param string $configurationName
+         */
+        public function setConfigurationName($configurationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigurationName()
+        {
+        }
+        /**
+         * Required. The email address that device users can contact to get help.
+         * Zero-touch enrollment shows this email address to device users before
+         * device provisioning. The value is validated on input.
+         *
+         * @param string $contactEmail
+         */
+        public function setContactEmail($contactEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactEmail()
+        {
+        }
+        /**
+         * Required. The telephone number that device users can call, using another
+         * device, to get help. Zero-touch enrollment shows this number to device
+         * users before device provisioning. Accepts numerals, spaces, the plus sign,
+         * hyphens, and parentheses.
+         *
+         * @param string $contactPhone
+         */
+        public function setContactPhone($contactPhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactPhone()
+        {
+        }
+        /**
+         * A message, containing one or two sentences, to help device users get help
+         * or give them more details about what’s happening to their device. Zero-
+         * touch enrollment shows this message before the device is provisioned.
+         *
+         * @param string $customMessage
+         */
+        public function setCustomMessage($customMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomMessage()
+        {
+        }
+        /**
+         * The JSON-formatted EMM provisioning extras that are passed to the DPC.
+         *
+         * @param string $dpcExtras
+         */
+        public function setDpcExtras($dpcExtras)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDpcExtras()
+        {
+        }
+        /**
+         * Required. The resource name of the selected DPC (device policy controller)
+         * in the format `customers/[CUSTOMER_ID]/dpcs`. To list the supported DPCs,
+         * call `customers.dpcs.list`.
+         *
+         * @param string $dpcResourcePath
+         */
+        public function setDpcResourcePath($dpcResourcePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDpcResourcePath()
+        {
+        }
+        /**
+         * Optional. The timeout before forcing factory reset the device if the device
+         * doesn't go through provisioning in the setup wizard, usually due to lack of
+         * network connectivity during setup wizard. Ranges from 0-6 hours, with 2
+         * hours being the default if unset.
+         *
+         * @param string $forcedResetTime
+         */
+        public function setForcedResetTime($forcedResetTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getForcedResetTime()
+        {
+        }
+        /**
+         * Required. Whether this is the default configuration that zero-touch
+         * enrollment applies to any new devices the organization purchases in the
+         * future. Only one customer configuration can be the default. Setting this
+         * value to `true`, changes the previous default configuration's `isDefault`
+         * value to `false`.
+         *
+         * @param bool $isDefault
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * Output only. The API resource name in the format
+         * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by
+         * the server.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Configuration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompanyName()
-    {
-    }
-    /**
-     * Output only. The ID of the configuration. Assigned by the server.
-     *
-     * @param string $configurationId
-     */
-    public function setConfigurationId($configurationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfigurationId()
-    {
-    }
-    /**
-     * Required. A short name that describes the configuration's purpose. For
-     * example, _Sales team_ or _Temporary employees_. The zero-touch enrollment
-     * portal displays this name to IT admins.
-     *
-     * @param string $configurationName
-     */
-    public function setConfigurationName($configurationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfigurationName()
-    {
-    }
-    /**
-     * Required. The email address that device users can contact to get help.
-     * Zero-touch enrollment shows this email address to device users before
-     * device provisioning. The value is validated on input.
-     *
-     * @param string $contactEmail
-     */
-    public function setContactEmail($contactEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContactEmail()
-    {
-    }
-    /**
-     * Required. The telephone number that device users can call, using another
-     * device, to get help. Zero-touch enrollment shows this number to device
-     * users before device provisioning. Accepts numerals, spaces, the plus sign,
-     * hyphens, and parentheses.
-     *
-     * @param string $contactPhone
-     */
-    public function setContactPhone($contactPhone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContactPhone()
-    {
-    }
-    /**
-     * A message, containing one or two sentences, to help device users get help
-     * or give them more details about what’s happening to their device. Zero-
-     * touch enrollment shows this message before the device is provisioned.
-     *
-     * @param string $customMessage
-     */
-    public function setCustomMessage($customMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomMessage()
-    {
-    }
-    /**
-     * The JSON-formatted EMM provisioning extras that are passed to the DPC.
-     *
-     * @param string $dpcExtras
-     */
-    public function setDpcExtras($dpcExtras)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDpcExtras()
-    {
-    }
-    /**
-     * Required. The resource name of the selected DPC (device policy controller)
-     * in the format `customers/[CUSTOMER_ID]/dpcs`. To list the supported DPCs,
-     * call `customers.dpcs.list`.
-     *
-     * @param string $dpcResourcePath
-     */
-    public function setDpcResourcePath($dpcResourcePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDpcResourcePath()
-    {
-    }
-    /**
-     * Optional. The timeout before forcing factory reset the device if the device
-     * doesn't go through provisioning in the setup wizard, usually due to lack of
-     * network connectivity during setup wizard. Ranges from 0-6 hours, with 2
-     * hours being the default if unset.
-     *
-     * @param string $forcedResetTime
-     */
-    public function setForcedResetTime($forcedResetTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getForcedResetTime()
-    {
-    }
-    /**
-     * Required. Whether this is the default configuration that zero-touch
-     * enrollment applies to any new devices the organization purchases in the
-     * future. Only one customer configuration can be the default. Setting this
-     * value to `true`, changes the previous default configuration's `isDefault`
-     * value to `false`.
-     *
-     * @param bool $isDefault
-     */
-    public function setIsDefault($isDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * Output only. The API resource name in the format
-     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by
-     * the server.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidProvisioningPartner_Configuration extends \Google\Service\AndroidProvisioningPartner\Configuration
     {
     }
 }

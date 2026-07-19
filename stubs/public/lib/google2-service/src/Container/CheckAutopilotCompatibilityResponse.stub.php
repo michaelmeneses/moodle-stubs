@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CheckAutopilotCompatibilityResponse extends \Google\Collection
-{
-    protected $collection_key = 'issues';
-    protected $issuesType = AutopilotCompatibilityIssue::class;
-    protected $issuesDataType = 'array';
-    /**
-     * The summary of the autopilot compatibility response.
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * The list of issues for the given operation.
-     *
-     * @param AutopilotCompatibilityIssue[] $issues
-     */
-    public function setIssues($issues)
+namespace Google\Service\Container {
+    class CheckAutopilotCompatibilityResponse extends \Google\Collection
     {
+        protected $collection_key = 'issues';
+        protected $issuesType = AutopilotCompatibilityIssue::class;
+        protected $issuesDataType = 'array';
+        /**
+         * The summary of the autopilot compatibility response.
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * The list of issues for the given operation.
+         *
+         * @param AutopilotCompatibilityIssue[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return AutopilotCompatibilityIssue[]
+         */
+        public function getIssues()
+        {
+        }
+        /**
+         * The summary of the autopilot compatibility response.
+         *
+         * @param string $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutopilotCompatibilityIssue[]
+     * Runtime class alias of \Google\Service\Container\CheckAutopilotCompatibilityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssues()
-    {
-    }
-    /**
-     * The summary of the autopilot compatibility response.
-     *
-     * @param string $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
+    class Google_Service_Container_CheckAutopilotCompatibilityResponse extends \Google\Service\Container\CheckAutopilotCompatibilityResponse
     {
     }
 }

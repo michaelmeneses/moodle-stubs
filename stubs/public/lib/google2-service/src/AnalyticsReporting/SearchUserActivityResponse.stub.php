@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SearchUserActivityResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    public $sampleRate;
-    protected $sessionsType = UserActivitySession::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $totalRows;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AnalyticsReporting {
+    class SearchUserActivityResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        public $sampleRate;
+        protected $sessionsType = UserActivitySession::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $totalRows;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        public function setSampleRate($sampleRate)
+        {
+        }
+        public function getSampleRate()
+        {
+        }
+        /**
+         * @param UserActivitySession[]
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return UserActivitySession[]
+         */
+        public function getSessions()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTotalRows($totalRows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SearchUserActivityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    public function setSampleRate($sampleRate)
-    {
-    }
-    public function getSampleRate()
-    {
-    }
-    /**
-     * @param UserActivitySession[]
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return UserActivitySession[]
-     */
-    public function getSessions()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTotalRows($totalRows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalRows()
+    class Google_Service_AnalyticsReporting_SearchUserActivityResponse extends \Google\Service\AnalyticsReporting\SearchUserActivityResponse
     {
     }
 }

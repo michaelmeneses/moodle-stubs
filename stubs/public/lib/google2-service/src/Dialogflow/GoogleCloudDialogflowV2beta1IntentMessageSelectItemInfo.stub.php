@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    /**
-     * Required. A unique key that will be sent back to the agent if this response
-     * is given.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. A list of synonyms that can also be used to trigger this item in
-     * dialog.
-     *
-     * @var string[]
-     */
-    public $synonyms;
-    /**
-     * Required. A unique key that will be sent back to the agent if this response
-     * is given.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        /**
+         * Required. A unique key that will be sent back to the agent if this response
+         * is given.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. A list of synonyms that can also be used to trigger this item in
+         * dialog.
+         *
+         * @var string[]
+         */
+        public $synonyms;
+        /**
+         * Required. A unique key that will be sent back to the agent if this response
+         * is given.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. A list of synonyms that can also be used to trigger this item in
+         * dialog.
+         *
+         * @param string[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynonyms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. A list of synonyms that can also be used to trigger this item in
-     * dialog.
-     *
-     * @param string[] $synonyms
-     */
-    public function setSynonyms($synonyms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSynonyms()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo
     {
     }
 }

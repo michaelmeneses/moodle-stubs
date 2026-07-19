@@ -21,76 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "issues" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $issues = $contactcenterinsightsService->projects_locations_issueModels_issues;
- *  </code>
- */
-class ProjectsLocationsIssueModelsIssues extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Issue;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListIssuesResponse;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
+    use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
     /**
-     * Creates an issue. (issues.create)
-     *
-     * @param string $parent Required. The parent resource of the issue.
-     * @param GoogleCloudContactcenterinsightsV1Issue $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "issues" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $issues = $contactcenterinsightsService->projects_locations_issueModels_issues;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContactcenterinsightsV1Issue $postBody, $optParams = [])
+    class ProjectsLocationsIssueModelsIssues extends \Google\Service\Resource
     {
+        /**
+         * Creates an issue. (issues.create)
+         *
+         * @param string $parent Required. The parent resource of the issue.
+         * @param GoogleCloudContactcenterinsightsV1Issue $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContactcenterinsightsV1Issue $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an issue. (issues.delete)
+         *
+         * @param string $name Required. The name of the issue to delete.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an issue. (issues.get)
+         *
+         * @param string $name Required. The name of the issue to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1Issue
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists issues. (issues.listProjectsLocationsIssueModelsIssues)
+         *
+         * @param string $parent Required. The parent resource of the issue.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1ListIssuesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsIssueModelsIssues($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an issue. (issues.patch)
+         *
+         * @param string $name Immutable. The resource name of the issue. Format: projec
+         * ts/{project}/locations/{location}/issueModels/{issue_model}/issues/{issue}
+         * @param GoogleCloudContactcenterinsightsV1Issue $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @return GoogleCloudContactcenterinsightsV1Issue
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContactcenterinsightsV1Issue $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an issue. (issues.delete)
-     *
-     * @param string $name Required. The name of the issue to delete.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsIssueModelsIssues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an issue. (issues.get)
-     *
-     * @param string $name Required. The name of the issue to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1Issue
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists issues. (issues.listProjectsLocationsIssueModelsIssues)
-     *
-     * @param string $parent Required. The parent resource of the issue.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1ListIssuesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsIssueModelsIssues($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an issue. (issues.patch)
-     *
-     * @param string $name Immutable. The resource name of the issue. Format: projec
-     * ts/{project}/locations/{location}/issueModels/{issue_model}/issues/{issue}
-     * @param GoogleCloudContactcenterinsightsV1Issue $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @return GoogleCloudContactcenterinsightsV1Issue
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContactcenterinsightsV1Issue $postBody, $optParams = [])
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsIssueModelsIssues extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsIssueModelsIssues
     {
     }
 }

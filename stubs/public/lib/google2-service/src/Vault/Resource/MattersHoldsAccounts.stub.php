@@ -21,60 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vaultService = new Google\Service\Vault(...);
- *   $accounts = $vaultService->matters_holds_accounts;
- *  </code>
- */
-class MattersHoldsAccounts extends \Google\Service\Resource
-{
+namespace Google\Service\Vault\Resource {
+    use Google\Service\Vault\HeldAccount;
+    use Google\Service\Vault\ListHeldAccountsResponse;
+    use Google\Service\Vault\VaultEmpty;
     /**
-     * Adds an account to a hold. Accounts can be added only to a hold that does not
-     * have an organizational unit set. If you try to add an account to an
-     * organizational unit-based hold, an error is returned. (accounts.create)
-     *
-     * @param string $matterId The matter ID.
-     * @param string $holdId The hold ID.
-     * @param HeldAccount $postBody
-     * @param array $optParams Optional parameters.
-     * @return HeldAccount
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vaultService = new Google\Service\Vault(...);
+     *   $accounts = $vaultService->matters_holds_accounts;
+     *  </code>
      */
-    public function create($matterId, $holdId, HeldAccount $postBody, $optParams = [])
+    class MattersHoldsAccounts extends \Google\Service\Resource
     {
+        /**
+         * Adds an account to a hold. Accounts can be added only to a hold that does not
+         * have an organizational unit set. If you try to add an account to an
+         * organizational unit-based hold, an error is returned. (accounts.create)
+         *
+         * @param string $matterId The matter ID.
+         * @param string $holdId The hold ID.
+         * @param HeldAccount $postBody
+         * @param array $optParams Optional parameters.
+         * @return HeldAccount
+         * @throws \Google\Service\Exception
+         */
+        public function create($matterId, $holdId, HeldAccount $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes an account from a hold. (accounts.delete)
+         *
+         * @param string $matterId The matter ID.
+         * @param string $holdId The hold ID.
+         * @param string $accountId The ID of the account to remove from the hold.
+         * @param array $optParams Optional parameters.
+         * @return VaultEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($matterId, $holdId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the accounts covered by a hold. This can list only individually-
+         * specified accounts covered by the hold. If the hold covers an organizational
+         * unit, use the [Admin SDK](https://developers.google.com/admin-sdk/). to list
+         * the members of the organizational unit on hold.
+         * (accounts.listMattersHoldsAccounts)
+         *
+         * @param string $matterId The matter ID.
+         * @param string $holdId The hold ID.
+         * @param array $optParams Optional parameters.
+         * @return ListHeldAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMattersHoldsAccounts($matterId, $holdId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes an account from a hold. (accounts.delete)
-     *
-     * @param string $matterId The matter ID.
-     * @param string $holdId The hold ID.
-     * @param string $accountId The ID of the account to remove from the hold.
-     * @param array $optParams Optional parameters.
-     * @return VaultEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Vault\Resource\MattersHoldsAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($matterId, $holdId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the accounts covered by a hold. This can list only individually-
-     * specified accounts covered by the hold. If the hold covers an organizational
-     * unit, use the [Admin SDK](https://developers.google.com/admin-sdk/). to list
-     * the members of the organizational unit on hold.
-     * (accounts.listMattersHoldsAccounts)
-     *
-     * @param string $matterId The matter ID.
-     * @param string $holdId The hold ID.
-     * @param array $optParams Optional parameters.
-     * @return ListHeldAccountsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listMattersHoldsAccounts($matterId, $holdId, $optParams = [])
+    class Google_Service_Vault_Resource_MattersHoldsAccounts extends \Google\Service\Vault\Resource\MattersHoldsAccounts
     {
     }
 }

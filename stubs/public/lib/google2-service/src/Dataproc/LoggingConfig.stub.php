@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class LoggingConfig extends \Google\Model
-{
-    /**
-     * The per-package log levels for the driver. This can include "root" package
-     * name to configure rootLogger. Examples: - 'com.google = FATAL' - 'root =
-     * INFO' - 'org.apache = DEBUG'
-     *
-     * @var string[]
-     */
-    public $driverLogLevels;
-    /**
-     * The per-package log levels for the driver. This can include "root" package
-     * name to configure rootLogger. Examples: - 'com.google = FATAL' - 'root =
-     * INFO' - 'org.apache = DEBUG'
-     *
-     * @param string[] $driverLogLevels
-     */
-    public function setDriverLogLevels($driverLogLevels)
+namespace Google\Service\Dataproc {
+    class LoggingConfig extends \Google\Model
     {
+        /**
+         * The per-package log levels for the driver. This can include "root" package
+         * name to configure rootLogger. Examples: - 'com.google = FATAL' - 'root =
+         * INFO' - 'org.apache = DEBUG'
+         *
+         * @var string[]
+         */
+        public $driverLogLevels;
+        /**
+         * The per-package log levels for the driver. This can include "root" package
+         * name to configure rootLogger. Examples: - 'com.google = FATAL' - 'root =
+         * INFO' - 'org.apache = DEBUG'
+         *
+         * @param string[] $driverLogLevels
+         */
+        public function setDriverLogLevels($driverLogLevels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDriverLogLevels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\LoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriverLogLevels()
+    class Google_Service_Dataproc_LoggingConfig extends \Google\Service\Dataproc\LoggingConfig
     {
     }
 }

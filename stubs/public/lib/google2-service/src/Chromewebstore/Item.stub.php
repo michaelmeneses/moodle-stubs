@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class Item extends \Google\Collection
-{
-    protected $collection_key = 'itemError';
-    /**
-     * @var string
-     */
-    public $crxVersion;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $itemErrorType = ItemError::class;
-    protected $itemErrorDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $publicKey;
-    /**
-     * @var string
-     */
-    public $uploadState;
-    /**
-     * @param string
-     */
-    public function setCrxVersion($crxVersion)
+namespace Google\Service\Chromewebstore {
+    class Item extends \Google\Collection
     {
+        protected $collection_key = 'itemError';
+        /**
+         * @var string
+         */
+        public $crxVersion;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $itemErrorType = ItemError::class;
+        protected $itemErrorDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $publicKey;
+        /**
+         * @var string
+         */
+        public $uploadState;
+        /**
+         * @param string
+         */
+        public function setCrxVersion($crxVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrxVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param ItemError[]
+         */
+        public function setItemError($itemError)
+        {
+        }
+        /**
+         * @return ItemError[]
+         */
+        public function getItemError()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublicKey($publicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUploadState($uploadState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\Item registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrxVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param ItemError[]
-     */
-    public function setItemError($itemError)
-    {
-    }
-    /**
-     * @return ItemError[]
-     */
-    public function getItemError()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublicKey($publicKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUploadState($uploadState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadState()
+    class Google_Service_Chromewebstore_Item extends \Google\Service\Chromewebstore\Item
     {
     }
 }

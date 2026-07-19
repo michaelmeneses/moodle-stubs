@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\objects;
 
+use core\router\schema\openapi_base;
+use core\router\schema\specification;
 /**
  * Part of the OpenAPI Schema.
  *

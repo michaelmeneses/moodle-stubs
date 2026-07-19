@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RetrieveTransferParametersResponse extends \Google\Model
-{
-    protected $transferParametersType = TransferParameters::class;
-    protected $transferParametersDataType = '';
-    /**
-     * Parameters to use when calling the `TransferDomain` method.
-     *
-     * @param TransferParameters $transferParameters
-     */
-    public function setTransferParameters(TransferParameters $transferParameters)
+namespace Google\Service\CloudDomains {
+    class RetrieveTransferParametersResponse extends \Google\Model
     {
+        protected $transferParametersType = TransferParameters::class;
+        protected $transferParametersDataType = '';
+        /**
+         * Parameters to use when calling the `TransferDomain` method.
+         *
+         * @param TransferParameters $transferParameters
+         */
+        public function setTransferParameters(TransferParameters $transferParameters)
+        {
+        }
+        /**
+         * @return TransferParameters
+         */
+        public function getTransferParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TransferParameters
+     * Runtime class alias of \Google\Service\CloudDomains\RetrieveTransferParametersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransferParameters()
+    class Google_Service_CloudDomains_RetrieveTransferParametersResponse extends \Google\Service\CloudDomains\RetrieveTransferParametersResponse
     {
     }
 }

@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialErrors';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $partialErrorsType = GoogleRpcStatus::class;
-    protected $partialErrorsDataType = 'array';
-    protected $requestType = GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest::class;
-    protected $requestDataType = '';
-    protected $sampleConversationsStatsType = GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats::class;
-    protected $sampleConversationsStatsDataType = '';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialErrors';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $partialErrorsType = GoogleRpcStatus::class;
+        protected $partialErrorsDataType = 'array';
+        protected $requestType = GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest::class;
+        protected $requestDataType = '';
+        protected $sampleConversationsStatsType = GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats::class;
+        protected $sampleConversationsStatsDataType = '';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Partial errors during sample conversations operation that
+         * might cause the operation output to be incomplete.
+         *
+         * @param GoogleRpcStatus[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * Output only. The original request for sample conversations to dataset.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Output only. Statistics for SampleConversations operation.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats $sampleConversationsStats
+         */
+        public function setSampleConversationsStats(GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats $sampleConversationsStats)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats
+         */
+        public function getSampleConversationsStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Partial errors during sample conversations operation that
-     * might cause the operation output to be incomplete.
-     *
-     * @param GoogleRpcStatus[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * Output only. The original request for sample conversations to dataset.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Output only. Statistics for SampleConversations operation.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats $sampleConversationsStats
-     */
-    public function setSampleConversationsStats(GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats $sampleConversationsStats)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadataSampleConversationsStats
-     */
-    public function getSampleConversationsStats()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSampleConversationsMetadata
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BackupScheduleSpec extends \Google\Model
-{
-    protected $cronSpecType = CrontabSpec::class;
-    protected $cronSpecDataType = '';
-    /**
-     * Cron style schedule specification.
-     *
-     * @param CrontabSpec $cronSpec
-     */
-    public function setCronSpec(CrontabSpec $cronSpec)
+namespace Google\Service\Spanner {
+    class BackupScheduleSpec extends \Google\Model
     {
+        protected $cronSpecType = CrontabSpec::class;
+        protected $cronSpecDataType = '';
+        /**
+         * Cron style schedule specification.
+         *
+         * @param CrontabSpec $cronSpec
+         */
+        public function setCronSpec(CrontabSpec $cronSpec)
+        {
+        }
+        /**
+         * @return CrontabSpec
+         */
+        public function getCronSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CrontabSpec
+     * Runtime class alias of \Google\Service\Spanner\BackupScheduleSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCronSpec()
+    class Google_Service_Spanner_BackupScheduleSpec extends \Google\Service\Spanner\BackupScheduleSpec
     {
     }
 }

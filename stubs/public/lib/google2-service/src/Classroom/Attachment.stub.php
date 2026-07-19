@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Attachment extends \Google\Model
-{
-    protected $driveFileType = DriveFile::class;
-    protected $driveFileDataType = '';
-    protected $formType = Form::class;
-    protected $formDataType = '';
-    protected $linkType = Link::class;
-    protected $linkDataType = '';
-    protected $youTubeVideoType = YouTubeVideo::class;
-    protected $youTubeVideoDataType = '';
-    /**
-     * Google Drive file attachment.
-     *
-     * @param DriveFile $driveFile
-     */
-    public function setDriveFile(DriveFile $driveFile)
+namespace Google\Service\Classroom {
+    class Attachment extends \Google\Model
     {
+        protected $driveFileType = DriveFile::class;
+        protected $driveFileDataType = '';
+        protected $formType = Form::class;
+        protected $formDataType = '';
+        protected $linkType = Link::class;
+        protected $linkDataType = '';
+        protected $youTubeVideoType = YouTubeVideo::class;
+        protected $youTubeVideoDataType = '';
+        /**
+         * Google Drive file attachment.
+         *
+         * @param DriveFile $driveFile
+         */
+        public function setDriveFile(DriveFile $driveFile)
+        {
+        }
+        /**
+         * @return DriveFile
+         */
+        public function getDriveFile()
+        {
+        }
+        /**
+         * Google Forms attachment.
+         *
+         * @param Form $form
+         */
+        public function setForm(Form $form)
+        {
+        }
+        /**
+         * @return Form
+         */
+        public function getForm()
+        {
+        }
+        /**
+         * Link attachment.
+         *
+         * @param Link $link
+         */
+        public function setLink(Link $link)
+        {
+        }
+        /**
+         * @return Link
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Youtube video attachment.
+         *
+         * @param YouTubeVideo $youTubeVideo
+         */
+        public function setYouTubeVideo(YouTubeVideo $youTubeVideo)
+        {
+        }
+        /**
+         * @return YouTubeVideo
+         */
+        public function getYouTubeVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveFile
+     * Runtime class alias of \Google\Service\Classroom\Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveFile()
-    {
-    }
-    /**
-     * Google Forms attachment.
-     *
-     * @param Form $form
-     */
-    public function setForm(Form $form)
-    {
-    }
-    /**
-     * @return Form
-     */
-    public function getForm()
-    {
-    }
-    /**
-     * Link attachment.
-     *
-     * @param Link $link
-     */
-    public function setLink(Link $link)
-    {
-    }
-    /**
-     * @return Link
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * Youtube video attachment.
-     *
-     * @param YouTubeVideo $youTubeVideo
-     */
-    public function setYouTubeVideo(YouTubeVideo $youTubeVideo)
-    {
-    }
-    /**
-     * @return YouTubeVideo
-     */
-    public function getYouTubeVideo()
+    class Google_Service_Classroom_Attachment extends \Google\Service\Classroom\Attachment
     {
     }
 }

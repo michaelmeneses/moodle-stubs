@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class CpuUtilization extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $utilizationTarget;
-    /**
-     * @param float
-     */
-    public function setUtilizationTarget($utilizationTarget)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class CpuUtilization extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $utilizationTarget;
+        /**
+         * @param float
+         */
+        public function setUtilizationTarget($utilizationTarget)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getUtilizationTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\CpuUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUtilizationTarget()
+    class Google_Service_CloudAlloyDBAdmin_CpuUtilization extends \Google\Service\CloudAlloyDBAdmin\CpuUtilization
     {
     }
 }

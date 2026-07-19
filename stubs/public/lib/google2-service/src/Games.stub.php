@@ -21,52 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Games (v1).
- *
- * <p>
- * The Google Play Games Service allows developers to enhance games with social
- * leaderboards, achievements, game state, sign-in with Google, and more.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/games/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Games extends \Google\Service
-{
-    /** View and manage your Google Play Developer account. */
-    const ANDROIDPUBLISHER = "https://www.googleapis.com/auth/androidpublisher";
-    /** See, create, and delete its own configuration data in your Google Drive. */
-    const DRIVE_APPDATA = "https://www.googleapis.com/auth/drive.appdata";
-    /** Create, edit, and delete your Google Play Games activity. */
-    const GAMES = "https://www.googleapis.com/auth/games";
-    public $accesstokens;
-    public $achievementDefinitions;
-    public $achievements;
-    public $applications;
-    public $events;
-    public $leaderboards;
-    public $metagame;
-    public $players;
-    public $recall;
-    public $revisions;
-    public $scores;
-    public $snapshots;
-    public $stats;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Games service.
+     * Service definition for Games (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Google Play Games Service allows developers to enhance games with social
+     * leaderboards, achievements, game state, sign-in with Google, and more.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/games/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Games extends \Google\Service
+    {
+        /** View and manage your Google Play Developer account. */
+        const ANDROIDPUBLISHER = "https://www.googleapis.com/auth/androidpublisher";
+        /** See, create, and delete its own configuration data in your Google Drive. */
+        const DRIVE_APPDATA = "https://www.googleapis.com/auth/drive.appdata";
+        /** Create, edit, and delete your Google Play Games activity. */
+        const GAMES = "https://www.googleapis.com/auth/games";
+        public $accesstokens;
+        public $achievementDefinitions;
+        public $achievements;
+        public $applications;
+        public $events;
+        public $leaderboards;
+        public $metagame;
+        public $players;
+        public $recall;
+        public $revisions;
+        public $scores;
+        public $snapshots;
+        public $stats;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Games service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Games registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Games extends \Google\Service\Games
     {
     }
 }

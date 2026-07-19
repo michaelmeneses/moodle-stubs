@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistImage extends \Google\Model
-{
-    /**
-     * Identifies this resource (playlist id and image type).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlistImages".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = PlaylistImageSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Identifies this resource (playlist id and image type).
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\YouTube {
+    class PlaylistImage extends \Google\Model
     {
+        /**
+         * Identifies this resource (playlist id and image type).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlistImages".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = PlaylistImageSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Identifies this resource (playlist id and image type).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlistImages".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param PlaylistImageSnippet $snippet
+         */
+        public function setSnippet(PlaylistImageSnippet $snippet)
+        {
+        }
+        /**
+         * @return PlaylistImageSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\PlaylistImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlistImages".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param PlaylistImageSnippet $snippet
-     */
-    public function setSnippet(PlaylistImageSnippet $snippet)
-    {
-    }
-    /**
-     * @return PlaylistImageSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_PlaylistImage extends \Google\Service\YouTube\PlaylistImage
     {
     }
 }

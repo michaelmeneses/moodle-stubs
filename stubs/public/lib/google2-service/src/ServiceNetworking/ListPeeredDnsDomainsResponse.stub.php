@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class ListPeeredDnsDomainsResponse extends \Google\Collection
-{
-    protected $collection_key = 'peeredDnsDomains';
-    protected $peeredDnsDomainsType = PeeredDnsDomain::class;
-    protected $peeredDnsDomainsDataType = 'array';
-    /**
-     * The list of peered DNS domains.
-     *
-     * @param PeeredDnsDomain[] $peeredDnsDomains
-     */
-    public function setPeeredDnsDomains($peeredDnsDomains)
+namespace Google\Service\ServiceNetworking {
+    class ListPeeredDnsDomainsResponse extends \Google\Collection
     {
+        protected $collection_key = 'peeredDnsDomains';
+        protected $peeredDnsDomainsType = PeeredDnsDomain::class;
+        protected $peeredDnsDomainsDataType = 'array';
+        /**
+         * The list of peered DNS domains.
+         *
+         * @param PeeredDnsDomain[] $peeredDnsDomains
+         */
+        public function setPeeredDnsDomains($peeredDnsDomains)
+        {
+        }
+        /**
+         * @return PeeredDnsDomain[]
+         */
+        public function getPeeredDnsDomains()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PeeredDnsDomain[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\ListPeeredDnsDomainsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeeredDnsDomains()
+    class Google_Service_ServiceNetworking_ListPeeredDnsDomainsResponse extends \Google\Service\ServiceNetworking\ListPeeredDnsDomainsResponse
     {
     }
 }

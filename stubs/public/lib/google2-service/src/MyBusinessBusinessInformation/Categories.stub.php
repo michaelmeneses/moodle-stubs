@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class Categories extends \Google\Collection
-{
-    protected $collection_key = 'additionalCategories';
-    protected $additionalCategoriesType = Category::class;
-    protected $additionalCategoriesDataType = 'array';
-    protected $primaryCategoryType = Category::class;
-    protected $primaryCategoryDataType = '';
-    /**
-     * Optional. Additional categories to describe your business. Categories help
-     * your customers find accurate, specific results for services they're
-     * interested in. To keep your business information accurate and live, make
-     * sure that you use as few categories as possible to describe your overall
-     * core business. Choose categories that are as specific as possible, but
-     * representative of your main business.
-     *
-     * @param Category[] $additionalCategories
-     */
-    public function setAdditionalCategories($additionalCategories)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class Categories extends \Google\Collection
     {
+        protected $collection_key = 'additionalCategories';
+        protected $additionalCategoriesType = Category::class;
+        protected $additionalCategoriesDataType = 'array';
+        protected $primaryCategoryType = Category::class;
+        protected $primaryCategoryDataType = '';
+        /**
+         * Optional. Additional categories to describe your business. Categories help
+         * your customers find accurate, specific results for services they're
+         * interested in. To keep your business information accurate and live, make
+         * sure that you use as few categories as possible to describe your overall
+         * core business. Choose categories that are as specific as possible, but
+         * representative of your main business.
+         *
+         * @param Category[] $additionalCategories
+         */
+        public function setAdditionalCategories($additionalCategories)
+        {
+        }
+        /**
+         * @return Category[]
+         */
+        public function getAdditionalCategories()
+        {
+        }
+        /**
+         * Required. Category that best describes the core business this location
+         * engages in.
+         *
+         * @param Category $primaryCategory
+         */
+        public function setPrimaryCategory(Category $primaryCategory)
+        {
+        }
+        /**
+         * @return Category
+         */
+        public function getPrimaryCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Category[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Categories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalCategories()
-    {
-    }
-    /**
-     * Required. Category that best describes the core business this location
-     * engages in.
-     *
-     * @param Category $primaryCategory
-     */
-    public function setPrimaryCategory(Category $primaryCategory)
-    {
-    }
-    /**
-     * @return Category
-     */
-    public function getPrimaryCategory()
+    class Google_Service_MyBusinessBusinessInformation_Categories extends \Google\Service\MyBusinessBusinessInformation\Categories
     {
     }
 }

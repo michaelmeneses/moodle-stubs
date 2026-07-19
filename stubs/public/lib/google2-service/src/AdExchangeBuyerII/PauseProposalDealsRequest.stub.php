@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class PauseProposalDealsRequest extends \Google\Collection
-{
-    protected $collection_key = 'externalDealIds';
-    /**
-     * The external_deal_id's of the deals to be paused. If empty, all the deals
-     * in the proposal will be paused.
-     *
-     * @var string[]
-     */
-    public $externalDealIds;
-    /**
-     * The reason why the deals are being paused. This human readable message will
-     * be displayed in the seller's UI. (Max length: 1000 unicode code units.)
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The external_deal_id's of the deals to be paused. If empty, all the deals
-     * in the proposal will be paused.
-     *
-     * @param string[] $externalDealIds
-     */
-    public function setExternalDealIds($externalDealIds)
+namespace Google\Service\AdExchangeBuyerII {
+    class PauseProposalDealsRequest extends \Google\Collection
     {
+        protected $collection_key = 'externalDealIds';
+        /**
+         * The external_deal_id's of the deals to be paused. If empty, all the deals
+         * in the proposal will be paused.
+         *
+         * @var string[]
+         */
+        public $externalDealIds;
+        /**
+         * The reason why the deals are being paused. This human readable message will
+         * be displayed in the seller's UI. (Max length: 1000 unicode code units.)
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The external_deal_id's of the deals to be paused. If empty, all the deals
+         * in the proposal will be paused.
+         *
+         * @param string[] $externalDealIds
+         */
+        public function setExternalDealIds($externalDealIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExternalDealIds()
+        {
+        }
+        /**
+         * The reason why the deals are being paused. This human readable message will
+         * be displayed in the seller's UI. (Max length: 1000 unicode code units.)
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\PauseProposalDealsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalDealIds()
-    {
-    }
-    /**
-     * The reason why the deals are being paused. This human readable message will
-     * be displayed in the seller's UI. (Max length: 1000 unicode code units.)
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_AdExchangeBuyerII_PauseProposalDealsRequest extends \Google\Service\AdExchangeBuyerII\PauseProposalDealsRequest
     {
     }
 }

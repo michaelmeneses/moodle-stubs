@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LogScope extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * Output only. The creation timestamp of the log scope.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Describes this log scope.The maximum length of the description is
-     * 8000 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. The resource name of the log scope.Log scopes are only
-     * available in the global location. For example:projects/my-
-     * project/locations/global/logScopes/my-log-scope
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Names of one or more parent resources (organizations and folders
-     * are not supported.): projects/[PROJECT_ID]May alternatively be one or more
-     * views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/vi
-     * ews/[VIEW_ID]A log scope can include a maximum of 5 projects and a maximum
-     * of 100 resources in total.
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * Output only. The last update timestamp of the log scope.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation timestamp of the log scope.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Logging {
+    class LogScope extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * Output only. The creation timestamp of the log scope.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Describes this log scope.The maximum length of the description is
+         * 8000 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. The resource name of the log scope.Log scopes are only
+         * available in the global location. For example:projects/my-
+         * project/locations/global/logScopes/my-log-scope
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Names of one or more parent resources (organizations and folders
+         * are not supported.): projects/[PROJECT_ID]May alternatively be one or more
+         * views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/vi
+         * ews/[VIEW_ID]A log scope can include a maximum of 5 projects and a maximum
+         * of 100 resources in total.
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * Output only. The last update timestamp of the log scope.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation timestamp of the log scope.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Describes this log scope.The maximum length of the description is
+         * 8000 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The resource name of the log scope.Log scopes are only
+         * available in the global location. For example:projects/my-
+         * project/locations/global/logScopes/my-log-scope
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Names of one or more parent resources (organizations and folders
+         * are not supported.): projects/[PROJECT_ID]May alternatively be one or more
+         * views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/vi
+         * ews/[VIEW_ID]A log scope can include a maximum of 5 projects and a maximum
+         * of 100 resources in total.
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of the log scope.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\LogScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Describes this log scope.The maximum length of the description is
-     * 8000 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The resource name of the log scope.Log scopes are only
-     * available in the global location. For example:projects/my-
-     * project/locations/global/logScopes/my-log-scope
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Names of one or more parent resources (organizations and folders
-     * are not supported.): projects/[PROJECT_ID]May alternatively be one or more
-     * views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/vi
-     * ews/[VIEW_ID]A log scope can include a maximum of 5 projects and a maximum
-     * of 100 resources in total.
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceNames()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of the log scope.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Logging_LogScope extends \Google\Service\Logging\LogScope
     {
     }
 }

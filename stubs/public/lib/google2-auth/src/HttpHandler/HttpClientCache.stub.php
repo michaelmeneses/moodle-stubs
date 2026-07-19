@@ -23,6 +23,7 @@
  */
 namespace Google\Auth\HttpHandler;
 
+use GuzzleHttp\ClientInterface;
 /**
  * Stores an HTTP Client in order to prevent multiple instantiations.
  */

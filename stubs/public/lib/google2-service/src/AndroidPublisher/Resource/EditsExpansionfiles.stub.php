@@ -21,88 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "expansionfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $expansionfiles = $androidpublisherService->edits_expansionfiles;
- *  </code>
- */
-class EditsExpansionfiles extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ExpansionFile;
+    use Google\Service\AndroidPublisher\ExpansionFilesUploadResponse;
     /**
-     * Fetches the expansion file configuration for the specified APK.
-     * (expansionfiles.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param int $apkVersionCode The version code of the APK whose expansion file
-     * configuration is being read or modified.
-     * @param string $expansionFileType The file type of the file configuration
-     * which is being read or modified.
-     * @param array $optParams Optional parameters.
-     * @return ExpansionFile
-     * @throws \Google\Service\Exception
+     * The "expansionfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $expansionfiles = $androidpublisherService->edits_expansionfiles;
+     *  </code>
      */
-    public function get($packageName, $editId, $apkVersionCode, $expansionFileType, $optParams = [])
+    class EditsExpansionfiles extends \Google\Service\Resource
     {
+        /**
+         * Fetches the expansion file configuration for the specified APK.
+         * (expansionfiles.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param int $apkVersionCode The version code of the APK whose expansion file
+         * configuration is being read or modified.
+         * @param string $expansionFileType The file type of the file configuration
+         * which is being read or modified.
+         * @param array $optParams Optional parameters.
+         * @return ExpansionFile
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $editId, $apkVersionCode, $expansionFileType, $optParams = [])
+        {
+        }
+        /**
+         * Patches the APK's expansion file configuration to reference another APK's
+         * expansion file. To add a new expansion file use the Upload method.
+         * (expansionfiles.patch)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param int $apkVersionCode The version code of the APK whose expansion file
+         * configuration is being read or modified.
+         * @param string $expansionFileType The file type of the expansion file
+         * configuration which is being updated.
+         * @param ExpansionFile $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExpansionFile
+         * @throws \Google\Service\Exception
+         */
+        public function patch($packageName, $editId, $apkVersionCode, $expansionFileType, ExpansionFile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the APK's expansion file configuration to reference another APK's
+         * expansion file. To add a new expansion file use the Upload method.
+         * (expansionfiles.update)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param int $apkVersionCode The version code of the APK whose expansion file
+         * configuration is being read or modified.
+         * @param string $expansionFileType The file type of the file configuration
+         * which is being read or modified.
+         * @param ExpansionFile $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExpansionFile
+         * @throws \Google\Service\Exception
+         */
+        public function update($packageName, $editId, $apkVersionCode, $expansionFileType, ExpansionFile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Uploads a new expansion file and attaches to the specified APK.
+         * (expansionfiles.upload)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param int $apkVersionCode The version code of the APK whose expansion file
+         * configuration is being read or modified.
+         * @param string $expansionFileType The file type of the expansion file
+         * configuration which is being updated.
+         * @param array $optParams Optional parameters.
+         * @return ExpansionFilesUploadResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($packageName, $editId, $apkVersionCode, $expansionFileType, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Patches the APK's expansion file configuration to reference another APK's
-     * expansion file. To add a new expansion file use the Upload method.
-     * (expansionfiles.patch)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param int $apkVersionCode The version code of the APK whose expansion file
-     * configuration is being read or modified.
-     * @param string $expansionFileType The file type of the expansion file
-     * configuration which is being updated.
-     * @param ExpansionFile $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExpansionFile
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsExpansionfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($packageName, $editId, $apkVersionCode, $expansionFileType, ExpansionFile $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the APK's expansion file configuration to reference another APK's
-     * expansion file. To add a new expansion file use the Upload method.
-     * (expansionfiles.update)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param int $apkVersionCode The version code of the APK whose expansion file
-     * configuration is being read or modified.
-     * @param string $expansionFileType The file type of the file configuration
-     * which is being read or modified.
-     * @param ExpansionFile $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExpansionFile
-     * @throws \Google\Service\Exception
-     */
-    public function update($packageName, $editId, $apkVersionCode, $expansionFileType, ExpansionFile $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Uploads a new expansion file and attaches to the specified APK.
-     * (expansionfiles.upload)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param int $apkVersionCode The version code of the APK whose expansion file
-     * configuration is being read or modified.
-     * @param string $expansionFileType The file type of the expansion file
-     * configuration which is being updated.
-     * @param array $optParams Optional parameters.
-     * @return ExpansionFilesUploadResponse
-     * @throws \Google\Service\Exception
-     */
-    public function upload($packageName, $editId, $apkVersionCode, $expansionFileType, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsExpansionfiles extends \Google\Service\AndroidPublisher\Resource\EditsExpansionfiles
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAssetGroupTopCombinationView extends \Google\Collection
-{
-    protected $collection_key = 'assetGroupTopCombinations';
-    protected $assetGroupTopCombinationsType = GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData::class;
-    protected $assetGroupTopCombinationsDataType = 'array';
-    /**
-     * Output only. The resource name of the asset group top combination view.
-     * AssetGroup Top Combination view resource names have the form: `"customers/{
-     * customer_id}/assetGroupTopCombinationViews/{asset_group_id}~{asset_combinat
-     * ion_category}"
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The top combinations of assets that served together.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData[] $assetGroupTopCombinations
-     */
-    public function setAssetGroupTopCombinations($assetGroupTopCombinations)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAssetGroupTopCombinationView extends \Google\Collection
     {
+        protected $collection_key = 'assetGroupTopCombinations';
+        protected $assetGroupTopCombinationsType = GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData::class;
+        protected $assetGroupTopCombinationsDataType = 'array';
+        /**
+         * Output only. The resource name of the asset group top combination view.
+         * AssetGroup Top Combination view resource names have the form: `"customers/{
+         * customer_id}/assetGroupTopCombinationViews/{asset_group_id}~{asset_combinat
+         * ion_category}"
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The top combinations of assets that served together.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData[] $assetGroupTopCombinations
+         */
+        public function setAssetGroupTopCombinations($assetGroupTopCombinations)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData[]
+         */
+        public function getAssetGroupTopCombinations()
+        {
+        }
+        /**
+         * Output only. The resource name of the asset group top combination view.
+         * AssetGroup Top Combination view resource names have the form: `"customers/{
+         * customer_id}/assetGroupTopCombinationViews/{asset_group_id}~{asset_combinat
+         * ion_category}"
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetGroupTopCombinationView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetGroupTopCombinations()
-    {
-    }
-    /**
-     * Output only. The resource name of the asset group top combination view.
-     * AssetGroup Top Combination view resource names have the form: `"customers/{
-     * customer_id}/assetGroupTopCombinationViews/{asset_group_id}~{asset_combinat
-     * ion_category}"
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAssetGroupTopCombinationView extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetGroupTopCombinationView
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class CreateIaCValidationReportRequest extends \Google\Model
-{
-    protected $iacType = IaC::class;
-    protected $iacDataType = '';
-    /**
-     * Required. The infrastructure-as-code (IaC) configuration to validate.
-     *
-     * @param IaC $iac
-     */
-    public function setIac(IaC $iac)
+namespace Google\Service\SecurityPosture {
+    class CreateIaCValidationReportRequest extends \Google\Model
     {
+        protected $iacType = IaC::class;
+        protected $iacDataType = '';
+        /**
+         * Required. The infrastructure-as-code (IaC) configuration to validate.
+         *
+         * @param IaC $iac
+         */
+        public function setIac(IaC $iac)
+        {
+        }
+        /**
+         * @return IaC
+         */
+        public function getIac()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IaC
+     * Runtime class alias of \Google\Service\SecurityPosture\CreateIaCValidationReportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIac()
+    class Google_Service_SecurityPosture_CreateIaCValidationReportRequest extends \Google\Service\SecurityPosture\CreateIaCValidationReportRequest
     {
     }
 }

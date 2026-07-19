@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2PinControlMetadata extends \Google\Model
-{
-    protected $allMatchedPinsType = GoogleCloudRetailV2PinControlMetadataProductPins::class;
-    protected $allMatchedPinsDataType = 'map';
-    protected $droppedPinsType = GoogleCloudRetailV2PinControlMetadataProductPins::class;
-    protected $droppedPinsDataType = 'map';
-    /**
-     * Map of all matched pins, keyed by pin position.
-     *
-     * @param GoogleCloudRetailV2PinControlMetadataProductPins[] $allMatchedPins
-     */
-    public function setAllMatchedPins($allMatchedPins)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2PinControlMetadata extends \Google\Model
     {
+        protected $allMatchedPinsType = GoogleCloudRetailV2PinControlMetadataProductPins::class;
+        protected $allMatchedPinsDataType = 'map';
+        protected $droppedPinsType = GoogleCloudRetailV2PinControlMetadataProductPins::class;
+        protected $droppedPinsDataType = 'map';
+        /**
+         * Map of all matched pins, keyed by pin position.
+         *
+         * @param GoogleCloudRetailV2PinControlMetadataProductPins[] $allMatchedPins
+         */
+        public function setAllMatchedPins($allMatchedPins)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2PinControlMetadataProductPins[]
+         */
+        public function getAllMatchedPins()
+        {
+        }
+        /**
+         * Map of pins that were dropped due to overlap with other matching pins,
+         * keyed by pin position.
+         *
+         * @param GoogleCloudRetailV2PinControlMetadataProductPins[] $droppedPins
+         */
+        public function setDroppedPins($droppedPins)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2PinControlMetadataProductPins[]
+         */
+        public function getDroppedPins()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2PinControlMetadataProductPins[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2PinControlMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllMatchedPins()
-    {
-    }
-    /**
-     * Map of pins that were dropped due to overlap with other matching pins,
-     * keyed by pin position.
-     *
-     * @param GoogleCloudRetailV2PinControlMetadataProductPins[] $droppedPins
-     */
-    public function setDroppedPins($droppedPins)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2PinControlMetadataProductPins[]
-     */
-    public function getDroppedPins()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2PinControlMetadata extends \Google\Service\CloudRetail\GoogleCloudRetailV2PinControlMetadata
     {
     }
 }

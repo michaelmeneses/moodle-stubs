@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class Provision extends \Google\Collection
-{
-    protected $collection_key = 'inputVariables';
-    protected $inputVariablesType = UnitVariable::class;
-    protected $inputVariablesDataType = 'array';
-    /**
-     * Optional. Reference to the Release object to use for the Unit. (optional).
-     *
-     * @var string
-     */
-    public $release;
-    /**
-     * Optional. Set of input variables. Maximum 100. (optional)
-     *
-     * @param UnitVariable[] $inputVariables
-     */
-    public function setInputVariables($inputVariables)
+namespace Google\Service\SaaSServiceManagement {
+    class Provision extends \Google\Collection
     {
+        protected $collection_key = 'inputVariables';
+        protected $inputVariablesType = UnitVariable::class;
+        protected $inputVariablesDataType = 'array';
+        /**
+         * Optional. Reference to the Release object to use for the Unit. (optional).
+         *
+         * @var string
+         */
+        public $release;
+        /**
+         * Optional. Set of input variables. Maximum 100. (optional)
+         *
+         * @param UnitVariable[] $inputVariables
+         */
+        public function setInputVariables($inputVariables)
+        {
+        }
+        /**
+         * @return UnitVariable[]
+         */
+        public function getInputVariables()
+        {
+        }
+        /**
+         * Optional. Reference to the Release object to use for the Unit. (optional).
+         *
+         * @param string $release
+         */
+        public function setRelease($release)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelease()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UnitVariable[]
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\Provision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputVariables()
-    {
-    }
-    /**
-     * Optional. Reference to the Release object to use for the Unit. (optional).
-     *
-     * @param string $release
-     */
-    public function setRelease($release)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelease()
+    class Google_Service_SaaSServiceManagement_Provision extends \Google\Service\SaaSServiceManagement\Provision
     {
     }
 }

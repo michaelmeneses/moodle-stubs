@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ResponseMessagePlayAudio extends \Google\Model
-{
-    /**
-     * Output only. Whether the playback of this message can be interrupted by the
-     * end user's speech and the client can then starts the next Dialogflow
-     * request.
-     *
-     * @var bool
-     */
-    public $allowPlaybackInterruption;
-    /**
-     * Required. URI of the audio clip. Dialogflow does not impose any validation
-     * on this value. It is specific to the client that reads it.
-     *
-     * @var string
-     */
-    public $audioUri;
-    /**
-     * Output only. Whether the playback of this message can be interrupted by the
-     * end user's speech and the client can then starts the next Dialogflow
-     * request.
-     *
-     * @param bool $allowPlaybackInterruption
-     */
-    public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ResponseMessagePlayAudio extends \Google\Model
     {
+        /**
+         * Output only. Whether the playback of this message can be interrupted by the
+         * end user's speech and the client can then starts the next Dialogflow
+         * request.
+         *
+         * @var bool
+         */
+        public $allowPlaybackInterruption;
+        /**
+         * Required. URI of the audio clip. Dialogflow does not impose any validation
+         * on this value. It is specific to the client that reads it.
+         *
+         * @var string
+         */
+        public $audioUri;
+        /**
+         * Output only. Whether the playback of this message can be interrupted by the
+         * end user's speech and the client can then starts the next Dialogflow
+         * request.
+         *
+         * @param bool $allowPlaybackInterruption
+         */
+        public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowPlaybackInterruption()
+        {
+        }
+        /**
+         * Required. URI of the audio clip. Dialogflow does not impose any validation
+         * on this value. It is specific to the client that reads it.
+         *
+         * @param string $audioUri
+         */
+        public function setAudioUri($audioUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ResponseMessagePlayAudio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPlaybackInterruption()
-    {
-    }
-    /**
-     * Required. URI of the audio clip. Dialogflow does not impose any validation
-     * on this value. It is specific to the client that reads it.
-     *
-     * @param string $audioUri
-     */
-    public function setAudioUri($audioUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAudioUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ResponseMessagePlayAudio extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ResponseMessagePlayAudio
     {
     }
 }

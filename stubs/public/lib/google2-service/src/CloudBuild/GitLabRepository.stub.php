@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitLabRepository extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $browseUri;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $repositoryIdType = GitLabRepositoryId::class;
-    protected $repositoryIdDataType = '';
-    /**
-     * @param string
-     */
-    public function setBrowseUri($browseUri)
+namespace Google\Service\CloudBuild {
+    class GitLabRepository extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $browseUri;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $repositoryIdType = GitLabRepositoryId::class;
+        protected $repositoryIdDataType = '';
+        /**
+         * @param string
+         */
+        public function setBrowseUri($browseUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrowseUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GitLabRepositoryId
+         */
+        public function setRepositoryId(GitLabRepositoryId $repositoryId)
+        {
+        }
+        /**
+         * @return GitLabRepositoryId
+         */
+        public function getRepositoryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitLabRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrowseUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GitLabRepositoryId
-     */
-    public function setRepositoryId(GitLabRepositoryId $repositoryId)
-    {
-    }
-    /**
-     * @return GitLabRepositoryId
-     */
-    public function getRepositoryId()
+    class Google_Service_CloudBuild_GitLabRepository extends \Google\Service\CloudBuild\GitLabRepository
     {
     }
 }

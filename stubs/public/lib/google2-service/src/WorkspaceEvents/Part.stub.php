@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class Part extends \Google\Model
-{
-    protected $dataType = DataPart::class;
-    protected $dataDataType = '';
-    protected $fileType = FilePart::class;
-    protected $fileDataType = '';
-    /**
-     * Optional metadata associated with this part.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param DataPart $data
-     */
-    public function setData(DataPart $data)
+namespace Google\Service\WorkspaceEvents {
+    class Part extends \Google\Model
     {
+        protected $dataType = DataPart::class;
+        protected $dataDataType = '';
+        protected $fileType = FilePart::class;
+        protected $fileDataType = '';
+        /**
+         * Optional metadata associated with this part.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param DataPart $data
+         */
+        public function setData(DataPart $data)
+        {
+        }
+        /**
+         * @return DataPart
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param FilePart $file
+         */
+        public function setFile(FilePart $file)
+        {
+        }
+        /**
+         * @return FilePart
+         */
+        public function getFile()
+        {
+        }
+        /**
+         * Optional metadata associated with this part.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataPart
+     * Runtime class alias of \Google\Service\WorkspaceEvents\Part registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * @param FilePart $file
-     */
-    public function setFile(FilePart $file)
-    {
-    }
-    /**
-     * @return FilePart
-     */
-    public function getFile()
-    {
-    }
-    /**
-     * Optional metadata associated with this part.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_WorkspaceEvents_Part extends \Google\Service\WorkspaceEvents\Part
     {
     }
 }

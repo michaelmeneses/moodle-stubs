@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateDraftActionMarkup extends \Google\Model
-{
-    protected $updateBccRecipientsType = UpdateBccRecipients::class;
-    protected $updateBccRecipientsDataType = '';
-    protected $updateBodyType = UpdateBody::class;
-    protected $updateBodyDataType = '';
-    protected $updateCcRecipientsType = UpdateCcRecipients::class;
-    protected $updateCcRecipientsDataType = '';
-    protected $updateSubjectType = UpdateSubject::class;
-    protected $updateSubjectDataType = '';
-    protected $updateToRecipientsType = UpdateToRecipients::class;
-    protected $updateToRecipientsDataType = '';
-    /**
-     * @param UpdateBccRecipients
-     */
-    public function setUpdateBccRecipients(UpdateBccRecipients $updateBccRecipients)
+namespace Google\Service\CloudSearch {
+    class UpdateDraftActionMarkup extends \Google\Model
     {
+        protected $updateBccRecipientsType = UpdateBccRecipients::class;
+        protected $updateBccRecipientsDataType = '';
+        protected $updateBodyType = UpdateBody::class;
+        protected $updateBodyDataType = '';
+        protected $updateCcRecipientsType = UpdateCcRecipients::class;
+        protected $updateCcRecipientsDataType = '';
+        protected $updateSubjectType = UpdateSubject::class;
+        protected $updateSubjectDataType = '';
+        protected $updateToRecipientsType = UpdateToRecipients::class;
+        protected $updateToRecipientsDataType = '';
+        /**
+         * @param UpdateBccRecipients
+         */
+        public function setUpdateBccRecipients(UpdateBccRecipients $updateBccRecipients)
+        {
+        }
+        /**
+         * @return UpdateBccRecipients
+         */
+        public function getUpdateBccRecipients()
+        {
+        }
+        /**
+         * @param UpdateBody
+         */
+        public function setUpdateBody(UpdateBody $updateBody)
+        {
+        }
+        /**
+         * @return UpdateBody
+         */
+        public function getUpdateBody()
+        {
+        }
+        /**
+         * @param UpdateCcRecipients
+         */
+        public function setUpdateCcRecipients(UpdateCcRecipients $updateCcRecipients)
+        {
+        }
+        /**
+         * @return UpdateCcRecipients
+         */
+        public function getUpdateCcRecipients()
+        {
+        }
+        /**
+         * @param UpdateSubject
+         */
+        public function setUpdateSubject(UpdateSubject $updateSubject)
+        {
+        }
+        /**
+         * @return UpdateSubject
+         */
+        public function getUpdateSubject()
+        {
+        }
+        /**
+         * @param UpdateToRecipients
+         */
+        public function setUpdateToRecipients(UpdateToRecipients $updateToRecipients)
+        {
+        }
+        /**
+         * @return UpdateToRecipients
+         */
+        public function getUpdateToRecipients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdateBccRecipients
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateDraftActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateBccRecipients()
-    {
-    }
-    /**
-     * @param UpdateBody
-     */
-    public function setUpdateBody(UpdateBody $updateBody)
-    {
-    }
-    /**
-     * @return UpdateBody
-     */
-    public function getUpdateBody()
-    {
-    }
-    /**
-     * @param UpdateCcRecipients
-     */
-    public function setUpdateCcRecipients(UpdateCcRecipients $updateCcRecipients)
-    {
-    }
-    /**
-     * @return UpdateCcRecipients
-     */
-    public function getUpdateCcRecipients()
-    {
-    }
-    /**
-     * @param UpdateSubject
-     */
-    public function setUpdateSubject(UpdateSubject $updateSubject)
-    {
-    }
-    /**
-     * @return UpdateSubject
-     */
-    public function getUpdateSubject()
-    {
-    }
-    /**
-     * @param UpdateToRecipients
-     */
-    public function setUpdateToRecipients(UpdateToRecipients $updateToRecipients)
-    {
-    }
-    /**
-     * @return UpdateToRecipients
-     */
-    public function getUpdateToRecipients()
+    class Google_Service_CloudSearch_UpdateDraftActionMarkup extends \Google\Service\CloudSearch\UpdateDraftActionMarkup
     {
     }
 }

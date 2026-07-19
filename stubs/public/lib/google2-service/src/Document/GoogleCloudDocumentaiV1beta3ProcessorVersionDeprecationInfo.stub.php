@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3ProcessorVersionDeprecationInfo extends \Google\Model
-{
-    /**
-     * The time at which this processor version will be deprecated.
-     *
-     * @var string
-     */
-    public $deprecationTime;
-    /**
-     * If set, the processor version that will be used as a replacement.
-     *
-     * @var string
-     */
-    public $replacementProcessorVersion;
-    /**
-     * The time at which this processor version will be deprecated.
-     *
-     * @param string $deprecationTime
-     */
-    public function setDeprecationTime($deprecationTime)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3ProcessorVersionDeprecationInfo extends \Google\Model
     {
+        /**
+         * The time at which this processor version will be deprecated.
+         *
+         * @var string
+         */
+        public $deprecationTime;
+        /**
+         * If set, the processor version that will be used as a replacement.
+         *
+         * @var string
+         */
+        public $replacementProcessorVersion;
+        /**
+         * The time at which this processor version will be deprecated.
+         *
+         * @param string $deprecationTime
+         */
+        public function setDeprecationTime($deprecationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeprecationTime()
+        {
+        }
+        /**
+         * If set, the processor version that will be used as a replacement.
+         *
+         * @param string $replacementProcessorVersion
+         */
+        public function setReplacementProcessorVersion($replacementProcessorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplacementProcessorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3ProcessorVersionDeprecationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeprecationTime()
-    {
-    }
-    /**
-     * If set, the processor version that will be used as a replacement.
-     *
-     * @param string $replacementProcessorVersion
-     */
-    public function setReplacementProcessorVersion($replacementProcessorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplacementProcessorVersion()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3ProcessorVersionDeprecationInfo extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3ProcessorVersionDeprecationInfo
     {
     }
 }

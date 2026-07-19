@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1MetadataJobExportJobResult extends \Google\Model
-{
-    /**
-     * Output only. The error message if the metadata export job failed.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Output only. The number of entries that were exported.
-     *
-     * @var string
-     */
-    public $exportedEntries;
-    /**
-     * Output only. The error message if the metadata export job failed.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1MetadataJobExportJobResult extends \Google\Model
     {
+        /**
+         * Output only. The error message if the metadata export job failed.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Output only. The number of entries that were exported.
+         *
+         * @var string
+         */
+        public $exportedEntries;
+        /**
+         * Output only. The error message if the metadata export job failed.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Output only. The number of entries that were exported.
+         *
+         * @param string $exportedEntries
+         */
+        public function setExportedEntries($exportedEntries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportedEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobExportJobResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Output only. The number of entries that were exported.
-     *
-     * @param string $exportedEntries
-     */
-    public function setExportedEntries($exportedEntries)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExportedEntries()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1MetadataJobExportJobResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobExportJobResult
     {
     }
 }

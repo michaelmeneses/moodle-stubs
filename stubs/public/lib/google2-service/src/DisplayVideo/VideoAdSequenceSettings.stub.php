@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class VideoAdSequenceSettings extends \Google\Collection
-{
-    /**
-     * Unspecified or unknown.
-     */
-    public const MINIMUM_DURATION_VIDEO_AD_SEQUENCE_MINIMUM_DURATION_UNSPECIFIED = 'VIDEO_AD_SEQUENCE_MINIMUM_DURATION_UNSPECIFIED';
-    /**
-     * 7 days.
-     */
-    public const MINIMUM_DURATION_VIDEO_AD_SEQUENCE_MINIMUM_DURATION_WEEK = 'VIDEO_AD_SEQUENCE_MINIMUM_DURATION_WEEK';
-    /**
-     * 30 days.
-     */
-    public const MINIMUM_DURATION_VIDEO_AD_SEQUENCE_MINIMUM_DURATION_MONTH = 'VIDEO_AD_SEQUENCE_MINIMUM_DURATION_MONTH';
-    protected $collection_key = 'steps';
-    /**
-     * The minimum time interval before the same user sees this sequence again.
-     *
-     * @var string
-     */
-    public $minimumDuration;
-    protected $stepsType = VideoAdSequenceStep::class;
-    protected $stepsDataType = 'array';
-    /**
-     * The minimum time interval before the same user sees this sequence again.
-     *
-     * Accepted values: VIDEO_AD_SEQUENCE_MINIMUM_DURATION_UNSPECIFIED,
-     * VIDEO_AD_SEQUENCE_MINIMUM_DURATION_WEEK,
-     * VIDEO_AD_SEQUENCE_MINIMUM_DURATION_MONTH
-     *
-     * @param self::MINIMUM_DURATION_* $minimumDuration
-     */
-    public function setMinimumDuration($minimumDuration)
+namespace Google\Service\DisplayVideo {
+    class VideoAdSequenceSettings extends \Google\Collection
     {
+        /**
+         * Unspecified or unknown.
+         */
+        public const MINIMUM_DURATION_VIDEO_AD_SEQUENCE_MINIMUM_DURATION_UNSPECIFIED = 'VIDEO_AD_SEQUENCE_MINIMUM_DURATION_UNSPECIFIED';
+        /**
+         * 7 days.
+         */
+        public const MINIMUM_DURATION_VIDEO_AD_SEQUENCE_MINIMUM_DURATION_WEEK = 'VIDEO_AD_SEQUENCE_MINIMUM_DURATION_WEEK';
+        /**
+         * 30 days.
+         */
+        public const MINIMUM_DURATION_VIDEO_AD_SEQUENCE_MINIMUM_DURATION_MONTH = 'VIDEO_AD_SEQUENCE_MINIMUM_DURATION_MONTH';
+        protected $collection_key = 'steps';
+        /**
+         * The minimum time interval before the same user sees this sequence again.
+         *
+         * @var string
+         */
+        public $minimumDuration;
+        protected $stepsType = VideoAdSequenceStep::class;
+        protected $stepsDataType = 'array';
+        /**
+         * The minimum time interval before the same user sees this sequence again.
+         *
+         * Accepted values: VIDEO_AD_SEQUENCE_MINIMUM_DURATION_UNSPECIFIED,
+         * VIDEO_AD_SEQUENCE_MINIMUM_DURATION_WEEK,
+         * VIDEO_AD_SEQUENCE_MINIMUM_DURATION_MONTH
+         *
+         * @param self::MINIMUM_DURATION_* $minimumDuration
+         */
+        public function setMinimumDuration($minimumDuration)
+        {
+        }
+        /**
+         * @return self::MINIMUM_DURATION_*
+         */
+        public function getMinimumDuration()
+        {
+        }
+        /**
+         * The steps of which the sequence consists.
+         *
+         * @param VideoAdSequenceStep[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return VideoAdSequenceStep[]
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MINIMUM_DURATION_*
+     * Runtime class alias of \Google\Service\DisplayVideo\VideoAdSequenceSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinimumDuration()
-    {
-    }
-    /**
-     * The steps of which the sequence consists.
-     *
-     * @param VideoAdSequenceStep[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return VideoAdSequenceStep[]
-     */
-    public function getSteps()
+    class Google_Service_DisplayVideo_VideoAdSequenceSettings extends \Google\Service\DisplayVideo\VideoAdSequenceSettings
     {
     }
 }

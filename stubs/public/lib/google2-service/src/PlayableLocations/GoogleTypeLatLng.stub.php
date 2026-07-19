@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleTypeLatLng extends \Google\Model
-{
-    public $latitude;
-    public $longitude;
-    public function setLatitude($latitude)
+namespace Google\Service\PlayableLocations {
+    class GoogleTypeLatLng extends \Google\Model
     {
+        public $latitude;
+        public $longitude;
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
     }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleTypeLatLng registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayableLocations_GoogleTypeLatLng extends \Google\Service\PlayableLocations\GoogleTypeLatLng
     {
     }
 }

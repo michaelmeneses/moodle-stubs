@@ -21,261 +21,270 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class Product extends \Google\Collection
-{
-    protected $collection_key = 'sharedTargetings';
-    protected $billedBuyerType = Buyer::class;
-    protected $billedBuyerDataType = '';
-    protected $buyerType = Buyer::class;
-    protected $buyerDataType = '';
-    public $creationTimeMs;
-    protected $creatorContactsType = ContactInformation::class;
-    protected $creatorContactsDataType = 'array';
-    public $creatorRole;
-    protected $deliveryControlType = DeliveryControl::class;
-    protected $deliveryControlDataType = '';
-    public $flightEndTimeMs;
-    public $flightStartTimeMs;
-    public $hasCreatorSignedOff;
-    public $inventorySource;
-    public $kind;
-    protected $labelsType = MarketplaceLabel::class;
-    protected $labelsDataType = 'array';
-    public $lastUpdateTimeMs;
-    public $legacyOfferId;
-    public $marketplacePublisherProfileId;
-    public $name;
-    public $privateAuctionId;
-    public $productId;
-    public $publisherProfileId;
-    protected $publisherProvidedForecastType = PublisherProvidedForecast::class;
-    protected $publisherProvidedForecastDataType = '';
-    public $revisionNumber;
-    protected $sellerType = Seller::class;
-    protected $sellerDataType = '';
-    protected $sharedTargetingsType = SharedTargeting::class;
-    protected $sharedTargetingsDataType = 'array';
-    public $state;
-    public $syndicationProduct;
-    protected $termsType = DealTerms::class;
-    protected $termsDataType = '';
-    public $webPropertyCode;
+namespace Google\Service\AdExchangeBuyer {
+    class Product extends \Google\Collection
+    {
+        protected $collection_key = 'sharedTargetings';
+        protected $billedBuyerType = Buyer::class;
+        protected $billedBuyerDataType = '';
+        protected $buyerType = Buyer::class;
+        protected $buyerDataType = '';
+        public $creationTimeMs;
+        protected $creatorContactsType = ContactInformation::class;
+        protected $creatorContactsDataType = 'array';
+        public $creatorRole;
+        protected $deliveryControlType = DeliveryControl::class;
+        protected $deliveryControlDataType = '';
+        public $flightEndTimeMs;
+        public $flightStartTimeMs;
+        public $hasCreatorSignedOff;
+        public $inventorySource;
+        public $kind;
+        protected $labelsType = MarketplaceLabel::class;
+        protected $labelsDataType = 'array';
+        public $lastUpdateTimeMs;
+        public $legacyOfferId;
+        public $marketplacePublisherProfileId;
+        public $name;
+        public $privateAuctionId;
+        public $productId;
+        public $publisherProfileId;
+        protected $publisherProvidedForecastType = PublisherProvidedForecast::class;
+        protected $publisherProvidedForecastDataType = '';
+        public $revisionNumber;
+        protected $sellerType = Seller::class;
+        protected $sellerDataType = '';
+        protected $sharedTargetingsType = SharedTargeting::class;
+        protected $sharedTargetingsDataType = 'array';
+        public $state;
+        public $syndicationProduct;
+        protected $termsType = DealTerms::class;
+        protected $termsDataType = '';
+        public $webPropertyCode;
+        /**
+         * @param Buyer
+         */
+        public function setBilledBuyer(Buyer $billedBuyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBilledBuyer()
+        {
+        }
+        /**
+         * @param Buyer
+         */
+        public function setBuyer(Buyer $buyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBuyer()
+        {
+        }
+        public function setCreationTimeMs($creationTimeMs)
+        {
+        }
+        public function getCreationTimeMs()
+        {
+        }
+        /**
+         * @param ContactInformation[]
+         */
+        public function setCreatorContacts($creatorContacts)
+        {
+        }
+        /**
+         * @return ContactInformation[]
+         */
+        public function getCreatorContacts()
+        {
+        }
+        public function setCreatorRole($creatorRole)
+        {
+        }
+        public function getCreatorRole()
+        {
+        }
+        /**
+         * @param DeliveryControl
+         */
+        public function setDeliveryControl(DeliveryControl $deliveryControl)
+        {
+        }
+        /**
+         * @return DeliveryControl
+         */
+        public function getDeliveryControl()
+        {
+        }
+        public function setFlightEndTimeMs($flightEndTimeMs)
+        {
+        }
+        public function getFlightEndTimeMs()
+        {
+        }
+        public function setFlightStartTimeMs($flightStartTimeMs)
+        {
+        }
+        public function getFlightStartTimeMs()
+        {
+        }
+        public function setHasCreatorSignedOff($hasCreatorSignedOff)
+        {
+        }
+        public function getHasCreatorSignedOff()
+        {
+        }
+        public function setInventorySource($inventorySource)
+        {
+        }
+        public function getInventorySource()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        /**
+         * @param MarketplaceLabel[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return MarketplaceLabel[]
+         */
+        public function getLabels()
+        {
+        }
+        public function setLastUpdateTimeMs($lastUpdateTimeMs)
+        {
+        }
+        public function getLastUpdateTimeMs()
+        {
+        }
+        public function setLegacyOfferId($legacyOfferId)
+        {
+        }
+        public function getLegacyOfferId()
+        {
+        }
+        public function setMarketplacePublisherProfileId($marketplacePublisherProfileId)
+        {
+        }
+        public function getMarketplacePublisherProfileId()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setPrivateAuctionId($privateAuctionId)
+        {
+        }
+        public function getPrivateAuctionId()
+        {
+        }
+        public function setProductId($productId)
+        {
+        }
+        public function getProductId()
+        {
+        }
+        public function setPublisherProfileId($publisherProfileId)
+        {
+        }
+        public function getPublisherProfileId()
+        {
+        }
+        /**
+         * @param PublisherProvidedForecast
+         */
+        public function setPublisherProvidedForecast(PublisherProvidedForecast $publisherProvidedForecast)
+        {
+        }
+        /**
+         * @return PublisherProvidedForecast
+         */
+        public function getPublisherProvidedForecast()
+        {
+        }
+        public function setRevisionNumber($revisionNumber)
+        {
+        }
+        public function getRevisionNumber()
+        {
+        }
+        /**
+         * @param Seller
+         */
+        public function setSeller(Seller $seller)
+        {
+        }
+        /**
+         * @return Seller
+         */
+        public function getSeller()
+        {
+        }
+        /**
+         * @param SharedTargeting[]
+         */
+        public function setSharedTargetings($sharedTargetings)
+        {
+        }
+        /**
+         * @return SharedTargeting[]
+         */
+        public function getSharedTargetings()
+        {
+        }
+        public function setState($state)
+        {
+        }
+        public function getState()
+        {
+        }
+        public function setSyndicationProduct($syndicationProduct)
+        {
+        }
+        public function getSyndicationProduct()
+        {
+        }
+        /**
+         * @param DealTerms
+         */
+        public function setTerms(DealTerms $terms)
+        {
+        }
+        /**
+         * @return DealTerms
+         */
+        public function getTerms()
+        {
+        }
+        public function setWebPropertyCode($webPropertyCode)
+        {
+        }
+        public function getWebPropertyCode()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Buyer
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBilledBuyer(Buyer $billedBuyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBilledBuyer()
-    {
-    }
-    /**
-     * @param Buyer
-     */
-    public function setBuyer(Buyer $buyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBuyer()
-    {
-    }
-    public function setCreationTimeMs($creationTimeMs)
-    {
-    }
-    public function getCreationTimeMs()
-    {
-    }
-    /**
-     * @param ContactInformation[]
-     */
-    public function setCreatorContacts($creatorContacts)
-    {
-    }
-    /**
-     * @return ContactInformation[]
-     */
-    public function getCreatorContacts()
-    {
-    }
-    public function setCreatorRole($creatorRole)
-    {
-    }
-    public function getCreatorRole()
-    {
-    }
-    /**
-     * @param DeliveryControl
-     */
-    public function setDeliveryControl(DeliveryControl $deliveryControl)
-    {
-    }
-    /**
-     * @return DeliveryControl
-     */
-    public function getDeliveryControl()
-    {
-    }
-    public function setFlightEndTimeMs($flightEndTimeMs)
-    {
-    }
-    public function getFlightEndTimeMs()
-    {
-    }
-    public function setFlightStartTimeMs($flightStartTimeMs)
-    {
-    }
-    public function getFlightStartTimeMs()
-    {
-    }
-    public function setHasCreatorSignedOff($hasCreatorSignedOff)
-    {
-    }
-    public function getHasCreatorSignedOff()
-    {
-    }
-    public function setInventorySource($inventorySource)
-    {
-    }
-    public function getInventorySource()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    /**
-     * @param MarketplaceLabel[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return MarketplaceLabel[]
-     */
-    public function getLabels()
-    {
-    }
-    public function setLastUpdateTimeMs($lastUpdateTimeMs)
-    {
-    }
-    public function getLastUpdateTimeMs()
-    {
-    }
-    public function setLegacyOfferId($legacyOfferId)
-    {
-    }
-    public function getLegacyOfferId()
-    {
-    }
-    public function setMarketplacePublisherProfileId($marketplacePublisherProfileId)
-    {
-    }
-    public function getMarketplacePublisherProfileId()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setPrivateAuctionId($privateAuctionId)
-    {
-    }
-    public function getPrivateAuctionId()
-    {
-    }
-    public function setProductId($productId)
-    {
-    }
-    public function getProductId()
-    {
-    }
-    public function setPublisherProfileId($publisherProfileId)
-    {
-    }
-    public function getPublisherProfileId()
-    {
-    }
-    /**
-     * @param PublisherProvidedForecast
-     */
-    public function setPublisherProvidedForecast(PublisherProvidedForecast $publisherProvidedForecast)
-    {
-    }
-    /**
-     * @return PublisherProvidedForecast
-     */
-    public function getPublisherProvidedForecast()
-    {
-    }
-    public function setRevisionNumber($revisionNumber)
-    {
-    }
-    public function getRevisionNumber()
-    {
-    }
-    /**
-     * @param Seller
-     */
-    public function setSeller(Seller $seller)
-    {
-    }
-    /**
-     * @return Seller
-     */
-    public function getSeller()
-    {
-    }
-    /**
-     * @param SharedTargeting[]
-     */
-    public function setSharedTargetings($sharedTargetings)
-    {
-    }
-    /**
-     * @return SharedTargeting[]
-     */
-    public function getSharedTargetings()
-    {
-    }
-    public function setState($state)
-    {
-    }
-    public function getState()
-    {
-    }
-    public function setSyndicationProduct($syndicationProduct)
-    {
-    }
-    public function getSyndicationProduct()
-    {
-    }
-    /**
-     * @param DealTerms
-     */
-    public function setTerms(DealTerms $terms)
-    {
-    }
-    /**
-     * @return DealTerms
-     */
-    public function getTerms()
-    {
-    }
-    public function setWebPropertyCode($webPropertyCode)
-    {
-    }
-    public function getWebPropertyCode()
+    class Google_Service_AdExchangeBuyer_Product extends \Google\Service\AdExchangeBuyer\Product
     {
     }
 }

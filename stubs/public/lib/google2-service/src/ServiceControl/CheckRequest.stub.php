@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class CheckRequest extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $attributesType = AttributeContext::class;
-    protected $attributesDataType = '';
-    /**
-     * Optional. Contains a comma-separated list of flags.
-     *
-     * @var string
-     */
-    public $flags;
-    protected $resourcesType = ResourceInfo::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Specifies the version of the service configuration that should be used to
-     * process the request. Must not be empty. Set this field to 'latest' to
-     * specify using the latest configuration.
-     *
-     * @var string
-     */
-    public $serviceConfigId;
-    /**
-     * Describes attributes about the operation being executed by the service.
-     *
-     * @param AttributeContext $attributes
-     */
-    public function setAttributes(AttributeContext $attributes)
+namespace Google\Service\ServiceControl {
+    class CheckRequest extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $attributesType = AttributeContext::class;
+        protected $attributesDataType = '';
+        /**
+         * Optional. Contains a comma-separated list of flags.
+         *
+         * @var string
+         */
+        public $flags;
+        protected $resourcesType = ResourceInfo::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Specifies the version of the service configuration that should be used to
+         * process the request. Must not be empty. Set this field to 'latest' to
+         * specify using the latest configuration.
+         *
+         * @var string
+         */
+        public $serviceConfigId;
+        /**
+         * Describes attributes about the operation being executed by the service.
+         *
+         * @param AttributeContext $attributes
+         */
+        public function setAttributes(AttributeContext $attributes)
+        {
+        }
+        /**
+         * @return AttributeContext
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Optional. Contains a comma-separated list of flags.
+         *
+         * @param string $flags
+         */
+        public function setFlags($flags)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlags()
+        {
+        }
+        /**
+         * Describes the resources and the policies applied to each resource.
+         *
+         * @param ResourceInfo[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ResourceInfo[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Specifies the version of the service configuration that should be used to
+         * process the request. Must not be empty. Set this field to 'latest' to
+         * specify using the latest configuration.
+         *
+         * @param string $serviceConfigId
+         */
+        public function setServiceConfigId($serviceConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceConfigId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttributeContext
+     * Runtime class alias of \Google\Service\ServiceControl\CheckRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Optional. Contains a comma-separated list of flags.
-     *
-     * @param string $flags
-     */
-    public function setFlags($flags)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlags()
-    {
-    }
-    /**
-     * Describes the resources and the policies applied to each resource.
-     *
-     * @param ResourceInfo[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ResourceInfo[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Specifies the version of the service configuration that should be used to
-     * process the request. Must not be empty. Set this field to 'latest' to
-     * specify using the latest configuration.
-     *
-     * @param string $serviceConfigId
-     */
-    public function setServiceConfigId($serviceConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceConfigId()
+    class Google_Service_ServiceControl_CheckRequest extends \Google\Service\ServiceControl\CheckRequest
     {
     }
 }

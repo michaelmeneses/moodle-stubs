@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAdGroupBidModifier extends \Google\Model
-{
-    /**
-     * The modifier for the bid when the criterion matches. The modifier must be
-     * in the range: 0.1 - 10.0. Use 0 to opt out of a Device type.
-     *
-     * @var 
-     */
-    public $bidModifier;
-    protected $deviceType = GoogleAdsSearchads360V0CommonDeviceInfo::class;
-    protected $deviceDataType = '';
-    /**
-     * Immutable. The resource name of the ad group bid modifier. Ad group bid
-     * modifier resource names have the form:
-     * `customers/{customer_id}/adGroupBidModifiers/{ad_group_id}~{criterion_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    public function setBidModifier($bidModifier)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAdGroupBidModifier extends \Google\Model
     {
+        /**
+         * The modifier for the bid when the criterion matches. The modifier must be
+         * in the range: 0.1 - 10.0. Use 0 to opt out of a Device type.
+         *
+         * @var 
+         */
+        public $bidModifier;
+        protected $deviceType = GoogleAdsSearchads360V0CommonDeviceInfo::class;
+        protected $deviceDataType = '';
+        /**
+         * Immutable. The resource name of the ad group bid modifier. Ad group bid
+         * modifier resource names have the form:
+         * `customers/{customer_id}/adGroupBidModifiers/{ad_group_id}~{criterion_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        public function setBidModifier($bidModifier)
+        {
+        }
+        public function getBidModifier()
+        {
+        }
+        /**
+         * Immutable. A device criterion.
+         *
+         * @param GoogleAdsSearchads360V0CommonDeviceInfo $device
+         */
+        public function setDevice(GoogleAdsSearchads360V0CommonDeviceInfo $device)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonDeviceInfo
+         */
+        public function getDevice()
+        {
+        }
+        /**
+         * Immutable. The resource name of the ad group bid modifier. Ad group bid
+         * modifier resource names have the form:
+         * `customers/{customer_id}/adGroupBidModifiers/{ad_group_id}~{criterion_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
-    public function getBidModifier()
-    {
-    }
+}
+namespace {
     /**
-     * Immutable. A device criterion.
-     *
-     * @param GoogleAdsSearchads360V0CommonDeviceInfo $device
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupBidModifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDevice(GoogleAdsSearchads360V0CommonDeviceInfo $device)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0CommonDeviceInfo
-     */
-    public function getDevice()
-    {
-    }
-    /**
-     * Immutable. The resource name of the ad group bid modifier. Ad group bid
-     * modifier resource names have the form:
-     * `customers/{customer_id}/adGroupBidModifiers/{ad_group_id}~{criterion_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAdGroupBidModifier extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupBidModifier
     {
     }
 }

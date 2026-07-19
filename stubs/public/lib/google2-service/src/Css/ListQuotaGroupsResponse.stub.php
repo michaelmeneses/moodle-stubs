@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class ListQuotaGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'quotaGroups';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $quotaGroupsType = QuotaGroup::class;
-    protected $quotaGroupsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Css {
+    class ListQuotaGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'quotaGroups';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $quotaGroupsType = QuotaGroup::class;
+        protected $quotaGroupsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The methods, current quota usage and limits per each group. The quota is
+         * shared between all methods in the group. The groups are sorted in
+         * descending order based on quota_usage.
+         *
+         * @param QuotaGroup[] $quotaGroups
+         */
+        public function setQuotaGroups($quotaGroups)
+        {
+        }
+        /**
+         * @return QuotaGroup[]
+         */
+        public function getQuotaGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\ListQuotaGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The methods, current quota usage and limits per each group. The quota is
-     * shared between all methods in the group. The groups are sorted in
-     * descending order based on quota_usage.
-     *
-     * @param QuotaGroup[] $quotaGroups
-     */
-    public function setQuotaGroups($quotaGroups)
-    {
-    }
-    /**
-     * @return QuotaGroup[]
-     */
-    public function getQuotaGroups()
+    class Google_Service_Css_ListQuotaGroupsResponse extends \Google\Service\Css\ListQuotaGroupsResponse
     {
     }
 }

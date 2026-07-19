@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class RelativeDateRange extends \Google\Model
-{
-    /**
-     * The number of days in the requested date range, for example, for a range
-     * spanning today: 1. For a range spanning the last 7 days: 7.
-     *
-     * @var int
-     */
-    public $durationDays;
-    /**
-     * The end date of the filter set, specified as the number of days before
-     * today, for example, for a range where the last date is today: 0.
-     *
-     * @var int
-     */
-    public $offsetDays;
-    /**
-     * The number of days in the requested date range, for example, for a range
-     * spanning today: 1. For a range spanning the last 7 days: 7.
-     *
-     * @param int $durationDays
-     */
-    public function setDurationDays($durationDays)
+namespace Google\Service\AdExchangeBuyerII {
+    class RelativeDateRange extends \Google\Model
     {
+        /**
+         * The number of days in the requested date range, for example, for a range
+         * spanning today: 1. For a range spanning the last 7 days: 7.
+         *
+         * @var int
+         */
+        public $durationDays;
+        /**
+         * The end date of the filter set, specified as the number of days before
+         * today, for example, for a range where the last date is today: 0.
+         *
+         * @var int
+         */
+        public $offsetDays;
+        /**
+         * The number of days in the requested date range, for example, for a range
+         * spanning today: 1. For a range spanning the last 7 days: 7.
+         *
+         * @param int $durationDays
+         */
+        public function setDurationDays($durationDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDurationDays()
+        {
+        }
+        /**
+         * The end date of the filter set, specified as the number of days before
+         * today, for example, for a range where the last date is today: 0.
+         *
+         * @param int $offsetDays
+         */
+        public function setOffsetDays($offsetDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffsetDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\RelativeDateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationDays()
-    {
-    }
-    /**
-     * The end date of the filter set, specified as the number of days before
-     * today, for example, for a range where the last date is today: 0.
-     *
-     * @param int $offsetDays
-     */
-    public function setOffsetDays($offsetDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOffsetDays()
+    class Google_Service_AdExchangeBuyerII_RelativeDateRange extends \Google\Service\AdExchangeBuyerII\RelativeDateRange
     {
     }
 }

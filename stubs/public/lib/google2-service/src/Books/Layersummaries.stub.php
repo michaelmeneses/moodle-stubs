@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Layersummaries extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Layersummary::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The total number of layer summaries found.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * A list of layer summary items.
-     *
-     * @param Layersummary[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Layersummaries extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Layersummary::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The total number of layer summaries found.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * A list of layer summary items.
+         *
+         * @param Layersummary[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Layersummary[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The total number of layer summaries found.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Layersummary[]
+     * Runtime class alias of \Google\Service\Books\Layersummaries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The total number of layer summaries found.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Books_Layersummaries extends \Google\Service\Books\Layersummaries
     {
     }
 }

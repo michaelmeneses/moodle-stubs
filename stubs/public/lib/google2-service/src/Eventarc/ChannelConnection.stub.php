@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class ChannelConnection extends \Google\Model
-{
-    /**
-     * Input only. Activation token for the channel. The token will be used during
-     * the creation of ChannelConnection to bind the channel with the provider
-     * project. This field will not be stored in the provider resource.
-     *
-     * @var string
-     */
-    public $activationToken;
-    /**
-     * Required. The name of the connected subscriber Channel. This is a weak
-     * reference to avoid cross project and cross accounts references. This must
-     * be in `projects/{project}/location/{location}/channels/{channel_id}`
-     * format.
-     *
-     * @var string
-     */
-    public $channel;
-    /**
-     * Output only. The creation time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Resource labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. The name of the connection.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Server assigned ID of the resource. The server guarantees
-     * uniqueness and immutability until deleted.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The last-modified time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Input only. Activation token for the channel. The token will be used during
-     * the creation of ChannelConnection to bind the channel with the provider
-     * project. This field will not be stored in the provider resource.
-     *
-     * @param string $activationToken
-     */
-    public function setActivationToken($activationToken)
+namespace Google\Service\Eventarc {
+    class ChannelConnection extends \Google\Model
     {
+        /**
+         * Input only. Activation token for the channel. The token will be used during
+         * the creation of ChannelConnection to bind the channel with the provider
+         * project. This field will not be stored in the provider resource.
+         *
+         * @var string
+         */
+        public $activationToken;
+        /**
+         * Required. The name of the connected subscriber Channel. This is a weak
+         * reference to avoid cross project and cross accounts references. This must
+         * be in `projects/{project}/location/{location}/channels/{channel_id}`
+         * format.
+         *
+         * @var string
+         */
+        public $channel;
+        /**
+         * Output only. The creation time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Resource labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. The name of the connection.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Server assigned ID of the resource. The server guarantees
+         * uniqueness and immutability until deleted.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The last-modified time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Input only. Activation token for the channel. The token will be used during
+         * the creation of ChannelConnection to bind the channel with the provider
+         * project. This field will not be stored in the provider resource.
+         *
+         * @param string $activationToken
+         */
+        public function setActivationToken($activationToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivationToken()
+        {
+        }
+        /**
+         * Required. The name of the connected subscriber Channel. This is a weak
+         * reference to avoid cross project and cross accounts references. This must
+         * be in `projects/{project}/location/{location}/channels/{channel_id}`
+         * format.
+         *
+         * @param string $channel
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannel()
+        {
+        }
+        /**
+         * Output only. The creation time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Resource labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The name of the connection.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Server assigned ID of the resource. The server guarantees
+         * uniqueness and immutability until deleted.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The last-modified time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\ChannelConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationToken()
-    {
-    }
-    /**
-     * Required. The name of the connected subscriber Channel. This is a weak
-     * reference to avoid cross project and cross accounts references. This must
-     * be in `projects/{project}/location/{location}/channels/{channel_id}`
-     * format.
-     *
-     * @param string $channel
-     */
-    public function setChannel($channel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannel()
-    {
-    }
-    /**
-     * Output only. The creation time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Resource labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The name of the connection.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Server assigned ID of the resource. The server guarantees
-     * uniqueness and immutability until deleted.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The last-modified time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Eventarc_ChannelConnection extends \Google\Service\Eventarc\ChannelConnection
     {
     }
 }

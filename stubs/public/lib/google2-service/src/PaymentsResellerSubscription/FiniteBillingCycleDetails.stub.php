@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class FiniteBillingCycleDetails extends \Google\Model
-{
-    /**
-     * Required. The number of a subscription line item billing cycles after which
-     * billing will stop automatically.
-     *
-     * @var string
-     */
-    public $billingCycleCountLimit;
-    /**
-     * Required. The number of a subscription line item billing cycles after which
-     * billing will stop automatically.
-     *
-     * @param string $billingCycleCountLimit
-     */
-    public function setBillingCycleCountLimit($billingCycleCountLimit)
+namespace Google\Service\PaymentsResellerSubscription {
+    class FiniteBillingCycleDetails extends \Google\Model
     {
+        /**
+         * Required. The number of a subscription line item billing cycles after which
+         * billing will stop automatically.
+         *
+         * @var string
+         */
+        public $billingCycleCountLimit;
+        /**
+         * Required. The number of a subscription line item billing cycles after which
+         * billing will stop automatically.
+         *
+         * @param string $billingCycleCountLimit
+         */
+        public function setBillingCycleCountLimit($billingCycleCountLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingCycleCountLimit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\FiniteBillingCycleDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingCycleCountLimit()
+    class Google_Service_PaymentsResellerSubscription_FiniteBillingCycleDetails extends \Google\Service\PaymentsResellerSubscription\FiniteBillingCycleDetails
     {
     }
 }

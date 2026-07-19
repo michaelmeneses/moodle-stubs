@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalListGcpProjectDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployments';
-    protected $deploymentsType = SasPortalGcpProjectDeployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * Optional. Deployments associated with the GCP project
-     *
-     * @param SasPortalGcpProjectDeployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\Sasportal {
+    class SasPortalListGcpProjectDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployments';
+        protected $deploymentsType = SasPortalGcpProjectDeployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * Optional. Deployments associated with the GCP project
+         *
+         * @param SasPortalGcpProjectDeployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return SasPortalGcpProjectDeployment[]
+         */
+        public function getDeployments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalGcpProjectDeployment[]
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalListGcpProjectDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
+    class Google_Service_Sasportal_SasPortalListGcpProjectDeploymentsResponse extends \Google\Service\Sasportal\SasPortalListGcpProjectDeploymentsResponse
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Name of the user-defined field, as given in the definition.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Matching values of the field. Each element can be a 32-bit unsigned decimal
-     * or hexadecimal (starting with "0x") number (e.g. "64") or range (e.g.
-     * "0x400-0x7ff").
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Name of the user-defined field, as given in the definition.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Name of the user-defined field, as given in the definition.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Matching values of the field. Each element can be a 32-bit unsigned decimal
+         * or hexadecimal (starting with "0x") number (e.g. "64") or range (e.g.
+         * "0x400-0x7ff").
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Name of the user-defined field, as given in the definition.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Matching values of the field. Each element can be a 32-bit unsigned decimal
+         * or hexadecimal (starting with "0x") number (e.g. "64") or range (e.g.
+         * "0x400-0x7ff").
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Matching values of the field. Each element can be a 32-bit unsigned decimal
-     * or hexadecimal (starting with "0x") number (e.g. "64") or range (e.g.
-     * "0x400-0x7ff").
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Compute_SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch extends \Google\Service\Compute\SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch
     {
     }
 }

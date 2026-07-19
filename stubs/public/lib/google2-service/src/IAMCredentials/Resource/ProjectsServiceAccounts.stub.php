@@ -21,92 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials\Resource;
-
-/**
- * The "serviceAccounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
- *   $serviceAccounts = $iamcredentialsService->projects_serviceAccounts;
- *  </code>
- */
-class ProjectsServiceAccounts extends \Google\Service\Resource
-{
+namespace Google\Service\IAMCredentials\Resource {
+    use Google\Service\IAMCredentials\GenerateAccessTokenRequest;
+    use Google\Service\IAMCredentials\GenerateAccessTokenResponse;
+    use Google\Service\IAMCredentials\GenerateIdTokenRequest;
+    use Google\Service\IAMCredentials\GenerateIdTokenResponse;
+    use Google\Service\IAMCredentials\ServiceAccountAllowedLocations;
+    use Google\Service\IAMCredentials\SignBlobRequest;
+    use Google\Service\IAMCredentials\SignBlobResponse;
+    use Google\Service\IAMCredentials\SignJwtRequest;
+    use Google\Service\IAMCredentials\SignJwtResponse;
     /**
-     * Generates an OAuth 2.0 access token for a service account.
-     * (serviceAccounts.generateAccessToken)
-     *
-     * @param string $name Required. The resource name of the service account for
-     * which the credentials are requested, in the following format:
-     * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
-     * character is required; replacing it with a project ID is invalid.
-     * @param GenerateAccessTokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateAccessTokenResponse
-     * @throws \Google\Service\Exception
+     * The "serviceAccounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
+     *   $serviceAccounts = $iamcredentialsService->projects_serviceAccounts;
+     *  </code>
      */
-    public function generateAccessToken($name, GenerateAccessTokenRequest $postBody, $optParams = [])
+    class ProjectsServiceAccounts extends \Google\Service\Resource
     {
+        /**
+         * Generates an OAuth 2.0 access token for a service account.
+         * (serviceAccounts.generateAccessToken)
+         *
+         * @param string $name Required. The resource name of the service account for
+         * which the credentials are requested, in the following format:
+         * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
+         * character is required; replacing it with a project ID is invalid.
+         * @param GenerateAccessTokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateAccessTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateAccessToken($name, GenerateAccessTokenRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Generates an OpenID Connect ID token for a service account.
+         * (serviceAccounts.generateIdToken)
+         *
+         * @param string $name Required. The resource name of the service account for
+         * which the credentials are requested, in the following format:
+         * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
+         * character is required; replacing it with a project ID is invalid.
+         * @param GenerateIdTokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateIdTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateIdToken($name, GenerateIdTokenRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns the trust boundary info for a given service account.
+         * (serviceAccounts.getAllowedLocations)
+         *
+         * @param string $name Required. Resource name of service account.
+         * @param array $optParams Optional parameters.
+         * @return ServiceAccountAllowedLocations
+         * @throws \Google\Service\Exception
+         */
+        public function getAllowedLocations($name, $optParams = [])
+        {
+        }
+        /**
+         * Signs a blob using a service account's system-managed private key.
+         * (serviceAccounts.signBlob)
+         *
+         * @param string $name Required. The resource name of the service account for
+         * which the credentials are requested, in the following format:
+         * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
+         * character is required; replacing it with a project ID is invalid.
+         * @param SignBlobRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SignBlobResponse
+         * @throws \Google\Service\Exception
+         */
+        public function signBlob($name, SignBlobRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Signs a JWT using a service account's system-managed private key.
+         * (serviceAccounts.signJwt)
+         *
+         * @param string $name Required. The resource name of the service account for
+         * which the credentials are requested, in the following format:
+         * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
+         * character is required; replacing it with a project ID is invalid.
+         * @param SignJwtRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SignJwtResponse
+         * @throws \Google\Service\Exception
+         */
+        public function signJwt($name, SignJwtRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Generates an OpenID Connect ID token for a service account.
-     * (serviceAccounts.generateIdToken)
-     *
-     * @param string $name Required. The resource name of the service account for
-     * which the credentials are requested, in the following format:
-     * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
-     * character is required; replacing it with a project ID is invalid.
-     * @param GenerateIdTokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateIdTokenResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\IAMCredentials\Resource\ProjectsServiceAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function generateIdToken($name, GenerateIdTokenRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns the trust boundary info for a given service account.
-     * (serviceAccounts.getAllowedLocations)
-     *
-     * @param string $name Required. Resource name of service account.
-     * @param array $optParams Optional parameters.
-     * @return ServiceAccountAllowedLocations
-     * @throws \Google\Service\Exception
-     */
-    public function getAllowedLocations($name, $optParams = [])
-    {
-    }
-    /**
-     * Signs a blob using a service account's system-managed private key.
-     * (serviceAccounts.signBlob)
-     *
-     * @param string $name Required. The resource name of the service account for
-     * which the credentials are requested, in the following format:
-     * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
-     * character is required; replacing it with a project ID is invalid.
-     * @param SignBlobRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SignBlobResponse
-     * @throws \Google\Service\Exception
-     */
-    public function signBlob($name, SignBlobRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Signs a JWT using a service account's system-managed private key.
-     * (serviceAccounts.signJwt)
-     *
-     * @param string $name Required. The resource name of the service account for
-     * which the credentials are requested, in the following format:
-     * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
-     * character is required; replacing it with a project ID is invalid.
-     * @param SignJwtRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SignJwtResponse
-     * @throws \Google\Service\Exception
-     */
-    public function signJwt($name, SignJwtRequest $postBody, $optParams = [])
+    class Google_Service_IAMCredentials_Resource_ProjectsServiceAccounts extends \Google\Service\IAMCredentials\Resource\ProjectsServiceAccounts
     {
     }
 }

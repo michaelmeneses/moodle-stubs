@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig extends \Google\Collection
-{
-    public const RULE_VISIBILITY_PREMIUM = 'PREMIUM';
-    public const RULE_VISIBILITY_STANDARD = 'STANDARD';
-    protected $collection_key = 'thresholdConfigs';
-    /**
-     * If set to true, enables CAAP for L7 DDoS detection. This field is only
-     * supported in Global Security Policies of type CLOUD_ARMOR.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * Rule visibility can be one of the following: STANDARD - opaque rules.
-     * (default) PREMIUM - transparent rules. This field is only supported in
-     * Global Security Policies of type CLOUD_ARMOR.
-     *
-     * @var string
-     */
-    public $ruleVisibility;
-    protected $thresholdConfigsType = SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfig::class;
-    protected $thresholdConfigsDataType = 'array';
-    /**
-     * If set to true, enables CAAP for L7 DDoS detection. This field is only
-     * supported in Global Security Policies of type CLOUD_ARMOR.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\Compute {
+    class SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig extends \Google\Collection
     {
+        public const RULE_VISIBILITY_PREMIUM = 'PREMIUM';
+        public const RULE_VISIBILITY_STANDARD = 'STANDARD';
+        protected $collection_key = 'thresholdConfigs';
+        /**
+         * If set to true, enables CAAP for L7 DDoS detection. This field is only
+         * supported in Global Security Policies of type CLOUD_ARMOR.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * Rule visibility can be one of the following: STANDARD - opaque rules.
+         * (default) PREMIUM - transparent rules. This field is only supported in
+         * Global Security Policies of type CLOUD_ARMOR.
+         *
+         * @var string
+         */
+        public $ruleVisibility;
+        protected $thresholdConfigsType = SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfig::class;
+        protected $thresholdConfigsDataType = 'array';
+        /**
+         * If set to true, enables CAAP for L7 DDoS detection. This field is only
+         * supported in Global Security Policies of type CLOUD_ARMOR.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
+        /**
+         * Rule visibility can be one of the following: STANDARD - opaque rules.
+         * (default) PREMIUM - transparent rules. This field is only supported in
+         * Global Security Policies of type CLOUD_ARMOR.
+         *
+         * Accepted values: PREMIUM, STANDARD
+         *
+         * @param self::RULE_VISIBILITY_* $ruleVisibility
+         */
+        public function setRuleVisibility($ruleVisibility)
+        {
+        }
+        /**
+         * @return self::RULE_VISIBILITY_*
+         */
+        public function getRuleVisibility()
+        {
+        }
+        /**
+         * Configuration options for layer7 adaptive protection for various
+         * customizable thresholds.
+         *
+         * @param SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfig[] $thresholdConfigs
+         */
+        public function setThresholdConfigs($thresholdConfigs)
+        {
+        }
+        /**
+         * @return SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfig[]
+         */
+        public function getThresholdConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
-    {
-    }
-    /**
-     * Rule visibility can be one of the following: STANDARD - opaque rules.
-     * (default) PREMIUM - transparent rules. This field is only supported in
-     * Global Security Policies of type CLOUD_ARMOR.
-     *
-     * Accepted values: PREMIUM, STANDARD
-     *
-     * @param self::RULE_VISIBILITY_* $ruleVisibility
-     */
-    public function setRuleVisibility($ruleVisibility)
-    {
-    }
-    /**
-     * @return self::RULE_VISIBILITY_*
-     */
-    public function getRuleVisibility()
-    {
-    }
-    /**
-     * Configuration options for layer7 adaptive protection for various
-     * customizable thresholds.
-     *
-     * @param SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfig[] $thresholdConfigs
-     */
-    public function setThresholdConfigs($thresholdConfigs)
-    {
-    }
-    /**
-     * @return SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfig[]
-     */
-    public function getThresholdConfigs()
+    class Google_Service_Compute_SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig extends \Google\Service\Compute\SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig
     {
     }
 }

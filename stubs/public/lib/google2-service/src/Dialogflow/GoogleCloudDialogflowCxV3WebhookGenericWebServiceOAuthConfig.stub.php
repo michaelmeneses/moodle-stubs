@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3WebhookGenericWebServiceOAuthConfig extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Required. The client ID provided by the 3rd party platform.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Optional. The client secret provided by the 3rd party platform.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Optional. The OAuth scopes to grant.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * client secret. If this field is set, the `client_secret` field will be
-     * ignored. Format: `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @var string
-     */
-    public $secretVersionForClientSecret;
-    /**
-     * Required. The token endpoint provided by the 3rd party platform to exchange
-     * an access token.
-     *
-     * @var string
-     */
-    public $tokenEndpoint;
-    /**
-     * Required. The client ID provided by the 3rd party platform.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3WebhookGenericWebServiceOAuthConfig extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Required. The client ID provided by the 3rd party platform.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Optional. The client secret provided by the 3rd party platform.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Optional. The OAuth scopes to grant.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * client secret. If this field is set, the `client_secret` field will be
+         * ignored. Format: `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @var string
+         */
+        public $secretVersionForClientSecret;
+        /**
+         * Required. The token endpoint provided by the 3rd party platform to exchange
+         * an access token.
+         *
+         * @var string
+         */
+        public $tokenEndpoint;
+        /**
+         * Required. The client ID provided by the 3rd party platform.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Optional. The client secret provided by the 3rd party platform.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Optional. The OAuth scopes to grant.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * client secret. If this field is set, the `client_secret` field will be
+         * ignored. Format: `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @param string $secretVersionForClientSecret
+         */
+        public function setSecretVersionForClientSecret($secretVersionForClientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersionForClientSecret()
+        {
+        }
+        /**
+         * Required. The token endpoint provided by the 3rd party platform to exchange
+         * an access token.
+         *
+         * @param string $tokenEndpoint
+         */
+        public function setTokenEndpoint($tokenEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3WebhookGenericWebServiceOAuthConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Optional. The client secret provided by the 3rd party platform.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Optional. The OAuth scopes to grant.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * client secret. If this field is set, the `client_secret` field will be
-     * ignored. Format: `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @param string $secretVersionForClientSecret
-     */
-    public function setSecretVersionForClientSecret($secretVersionForClientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretVersionForClientSecret()
-    {
-    }
-    /**
-     * Required. The token endpoint provided by the 3rd party platform to exchange
-     * an access token.
-     *
-     * @param string $tokenEndpoint
-     */
-    public function setTokenEndpoint($tokenEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenEndpoint()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3WebhookGenericWebServiceOAuthConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3WebhookGenericWebServiceOAuthConfig
     {
     }
 }

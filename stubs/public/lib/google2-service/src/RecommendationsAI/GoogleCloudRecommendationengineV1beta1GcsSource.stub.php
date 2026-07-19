@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1GcsSource extends \Google\Collection
-{
-    protected $collection_key = 'inputUris';
-    /**
-     * Required. Google Cloud Storage URIs to input files. URI can be up to 2000
-     * characters long. URIs can match the full object path (for example,
-     * `gs://bucket/directory/object.json`) or a pattern matching one or more
-     * files, such as `gs://bucket/directory.json`. A request can contain at most
-     * 100 files, and each file can be up to 2 GB. See [Importing catalog
-     * information](/recommendations-ai/docs/upload-catalog) for the expected file
-     * format and setup instructions.
-     *
-     * @var string[]
-     */
-    public $inputUris;
-    /**
-     * Optional. The schema to use when parsing the data from the source.
-     * Supported values for catalog imports: 1: "catalog_recommendations_ai" using
-     * https://cloud.google.com/recommendations-ai/docs/upload-catalog#json
-     * (Default for catalogItems.import) 2: "catalog_merchant_center" using
-     * https://cloud.google.com/recommendations-ai/docs/upload-catalog#mc
-     * Supported values for user events imports: 1:
-     * "user_events_recommendations_ai" using
-     * https://cloud.google.com/recommendations-ai/docs/manage-user-events#import
-     * (Default for userEvents.import) 2. "user_events_ga360" using
-     * https://support.google.com/analytics/answer/3437719?hl=en
-     *
-     * @var string
-     */
-    public $jsonSchema;
-    /**
-     * Required. Google Cloud Storage URIs to input files. URI can be up to 2000
-     * characters long. URIs can match the full object path (for example,
-     * `gs://bucket/directory/object.json`) or a pattern matching one or more
-     * files, such as `gs://bucket/directory.json`. A request can contain at most
-     * 100 files, and each file can be up to 2 GB. See [Importing catalog
-     * information](/recommendations-ai/docs/upload-catalog) for the expected file
-     * format and setup instructions.
-     *
-     * @param string[] $inputUris
-     */
-    public function setInputUris($inputUris)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1GcsSource extends \Google\Collection
     {
+        protected $collection_key = 'inputUris';
+        /**
+         * Required. Google Cloud Storage URIs to input files. URI can be up to 2000
+         * characters long. URIs can match the full object path (for example,
+         * `gs://bucket/directory/object.json`) or a pattern matching one or more
+         * files, such as `gs://bucket/directory.json`. A request can contain at most
+         * 100 files, and each file can be up to 2 GB. See [Importing catalog
+         * information](/recommendations-ai/docs/upload-catalog) for the expected file
+         * format and setup instructions.
+         *
+         * @var string[]
+         */
+        public $inputUris;
+        /**
+         * Optional. The schema to use when parsing the data from the source.
+         * Supported values for catalog imports: 1: "catalog_recommendations_ai" using
+         * https://cloud.google.com/recommendations-ai/docs/upload-catalog#json
+         * (Default for catalogItems.import) 2: "catalog_merchant_center" using
+         * https://cloud.google.com/recommendations-ai/docs/upload-catalog#mc
+         * Supported values for user events imports: 1:
+         * "user_events_recommendations_ai" using
+         * https://cloud.google.com/recommendations-ai/docs/manage-user-events#import
+         * (Default for userEvents.import) 2. "user_events_ga360" using
+         * https://support.google.com/analytics/answer/3437719?hl=en
+         *
+         * @var string
+         */
+        public $jsonSchema;
+        /**
+         * Required. Google Cloud Storage URIs to input files. URI can be up to 2000
+         * characters long. URIs can match the full object path (for example,
+         * `gs://bucket/directory/object.json`) or a pattern matching one or more
+         * files, such as `gs://bucket/directory.json`. A request can contain at most
+         * 100 files, and each file can be up to 2 GB. See [Importing catalog
+         * information](/recommendations-ai/docs/upload-catalog) for the expected file
+         * format and setup instructions.
+         *
+         * @param string[] $inputUris
+         */
+        public function setInputUris($inputUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInputUris()
+        {
+        }
+        /**
+         * Optional. The schema to use when parsing the data from the source.
+         * Supported values for catalog imports: 1: "catalog_recommendations_ai" using
+         * https://cloud.google.com/recommendations-ai/docs/upload-catalog#json
+         * (Default for catalogItems.import) 2: "catalog_merchant_center" using
+         * https://cloud.google.com/recommendations-ai/docs/upload-catalog#mc
+         * Supported values for user events imports: 1:
+         * "user_events_recommendations_ai" using
+         * https://cloud.google.com/recommendations-ai/docs/manage-user-events#import
+         * (Default for userEvents.import) 2. "user_events_ga360" using
+         * https://support.google.com/analytics/answer/3437719?hl=en
+         *
+         * @param string $jsonSchema
+         */
+        public function setJsonSchema($jsonSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1GcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputUris()
-    {
-    }
-    /**
-     * Optional. The schema to use when parsing the data from the source.
-     * Supported values for catalog imports: 1: "catalog_recommendations_ai" using
-     * https://cloud.google.com/recommendations-ai/docs/upload-catalog#json
-     * (Default for catalogItems.import) 2: "catalog_merchant_center" using
-     * https://cloud.google.com/recommendations-ai/docs/upload-catalog#mc
-     * Supported values for user events imports: 1:
-     * "user_events_recommendations_ai" using
-     * https://cloud.google.com/recommendations-ai/docs/manage-user-events#import
-     * (Default for userEvents.import) 2. "user_events_ga360" using
-     * https://support.google.com/analytics/answer/3437719?hl=en
-     *
-     * @param string $jsonSchema
-     */
-    public function setJsonSchema($jsonSchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonSchema()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1GcsSource extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1GcsSource
     {
     }
 }

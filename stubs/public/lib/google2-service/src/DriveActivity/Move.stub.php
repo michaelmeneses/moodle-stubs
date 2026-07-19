@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Move extends \Google\Collection
-{
-    protected $collection_key = 'removedParents';
-    protected $addedParentsType = TargetReference::class;
-    protected $addedParentsDataType = 'array';
-    protected $removedParentsType = TargetReference::class;
-    protected $removedParentsDataType = 'array';
-    /**
-     * The added parent object(s).
-     *
-     * @param TargetReference[] $addedParents
-     */
-    public function setAddedParents($addedParents)
+namespace Google\Service\DriveActivity {
+    class Move extends \Google\Collection
     {
+        protected $collection_key = 'removedParents';
+        protected $addedParentsType = TargetReference::class;
+        protected $addedParentsDataType = 'array';
+        protected $removedParentsType = TargetReference::class;
+        protected $removedParentsDataType = 'array';
+        /**
+         * The added parent object(s).
+         *
+         * @param TargetReference[] $addedParents
+         */
+        public function setAddedParents($addedParents)
+        {
+        }
+        /**
+         * @return TargetReference[]
+         */
+        public function getAddedParents()
+        {
+        }
+        /**
+         * The removed parent object(s).
+         *
+         * @param TargetReference[] $removedParents
+         */
+        public function setRemovedParents($removedParents)
+        {
+        }
+        /**
+         * @return TargetReference[]
+         */
+        public function getRemovedParents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetReference[]
+     * Runtime class alias of \Google\Service\DriveActivity\Move registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedParents()
-    {
-    }
-    /**
-     * The removed parent object(s).
-     *
-     * @param TargetReference[] $removedParents
-     */
-    public function setRemovedParents($removedParents)
-    {
-    }
-    /**
-     * @return TargetReference[]
-     */
-    public function getRemovedParents()
+    class Google_Service_DriveActivity_Move extends \Google\Service\DriveActivity\Move
     {
     }
 }

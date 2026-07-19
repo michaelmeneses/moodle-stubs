@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentValidationResult extends \Google\Collection
-{
-    protected $collection_key = 'flowValidationResults';
-    protected $flowValidationResultsType = GoogleCloudDialogflowCxV3FlowValidationResult::class;
-    protected $flowValidationResultsDataType = 'array';
-    /**
-     * The unique identifier of the agent validation result. Format:
-     * `projects//locations//agents//validationResult`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Contains all flow validation results.
-     *
-     * @param GoogleCloudDialogflowCxV3FlowValidationResult[] $flowValidationResults
-     */
-    public function setFlowValidationResults($flowValidationResults)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentValidationResult extends \Google\Collection
     {
+        protected $collection_key = 'flowValidationResults';
+        protected $flowValidationResultsType = GoogleCloudDialogflowCxV3FlowValidationResult::class;
+        protected $flowValidationResultsDataType = 'array';
+        /**
+         * The unique identifier of the agent validation result. Format:
+         * `projects//locations//agents//validationResult`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Contains all flow validation results.
+         *
+         * @param GoogleCloudDialogflowCxV3FlowValidationResult[] $flowValidationResults
+         */
+        public function setFlowValidationResults($flowValidationResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FlowValidationResult[]
+         */
+        public function getFlowValidationResults()
+        {
+        }
+        /**
+         * The unique identifier of the agent validation result. Format:
+         * `projects//locations//agents//validationResult`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3FlowValidationResult[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlowValidationResults()
-    {
-    }
-    /**
-     * The unique identifier of the agent validation result. Format:
-     * `projects//locations//agents//validationResult`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentValidationResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentValidationResult
     {
     }
 }

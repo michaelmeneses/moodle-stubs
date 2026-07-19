@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1GcsFileSpec extends \Google\Model
-{
-    public $filePath;
-    protected $gcsTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
-    protected $gcsTimestampsDataType = '';
-    public $sizeBytes;
-    public function setFilePath($filePath)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1GcsFileSpec extends \Google\Model
     {
+        public $filePath;
+        protected $gcsTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
+        protected $gcsTimestampsDataType = '';
+        public $sizeBytes;
+        public function setFilePath($filePath)
+        {
+        }
+        public function getFilePath()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function setGcsTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $gcsTimestamps)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function getGcsTimestamps()
+        {
+        }
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        public function getSizeBytes()
+        {
+        }
     }
-    public function getFilePath()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1GcsFileSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setGcsTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $gcsTimestamps)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
-     */
-    public function getGcsTimestamps()
-    {
-    }
-    public function setSizeBytes($sizeBytes)
-    {
-    }
-    public function getSizeBytes()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1GcsFileSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1GcsFileSpec
     {
     }
 }

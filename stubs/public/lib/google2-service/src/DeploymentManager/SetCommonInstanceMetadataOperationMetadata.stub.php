@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class SetCommonInstanceMetadataOperationMetadata extends \Google\Model
-{
-    /**
-     * [Output Only] The client operation id.
-     *
-     * @var string
-     */
-    public $clientOperationId;
-    protected $perLocationOperationsType = SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo::class;
-    protected $perLocationOperationsDataType = 'map';
-    /**
-     * [Output Only] The client operation id.
-     *
-     * @param string $clientOperationId
-     */
-    public function setClientOperationId($clientOperationId)
+namespace Google\Service\DeploymentManager {
+    class SetCommonInstanceMetadataOperationMetadata extends \Google\Model
     {
+        /**
+         * [Output Only] The client operation id.
+         *
+         * @var string
+         */
+        public $clientOperationId;
+        protected $perLocationOperationsType = SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo::class;
+        protected $perLocationOperationsDataType = 'map';
+        /**
+         * [Output Only] The client operation id.
+         *
+         * @param string $clientOperationId
+         */
+        public function setClientOperationId($clientOperationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientOperationId()
+        {
+        }
+        /**
+         * [Output Only] Status information per location (location name is key).
+         * Example key: zones/us-central1-a
+         *
+         * @param SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo[] $perLocationOperations
+         */
+        public function setPerLocationOperations($perLocationOperations)
+        {
+        }
+        /**
+         * @return SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo[]
+         */
+        public function getPerLocationOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\SetCommonInstanceMetadataOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientOperationId()
-    {
-    }
-    /**
-     * [Output Only] Status information per location (location name is key).
-     * Example key: zones/us-central1-a
-     *
-     * @param SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo[] $perLocationOperations
-     */
-    public function setPerLocationOperations($perLocationOperations)
-    {
-    }
-    /**
-     * @return SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo[]
-     */
-    public function getPerLocationOperations()
+    class Google_Service_DeploymentManager_SetCommonInstanceMetadataOperationMetadata extends \Google\Service\DeploymentManager\SetCommonInstanceMetadataOperationMetadata
     {
     }
 }

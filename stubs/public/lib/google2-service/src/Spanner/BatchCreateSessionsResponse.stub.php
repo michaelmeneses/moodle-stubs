@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BatchCreateSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'session';
-    protected $sessionType = Session::class;
-    protected $sessionDataType = 'array';
-    /**
-     * The freshly created sessions.
-     *
-     * @param Session[] $session
-     */
-    public function setSession($session)
+namespace Google\Service\Spanner {
+    class BatchCreateSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'session';
+        protected $sessionType = Session::class;
+        protected $sessionDataType = 'array';
+        /**
+         * The freshly created sessions.
+         *
+         * @param Session[] $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return Session[]
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Session[]
+     * Runtime class alias of \Google\Service\Spanner\BatchCreateSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSession()
+    class Google_Service_Spanner_BatchCreateSessionsResponse extends \Google\Service\Spanner\BatchCreateSessionsResponse
     {
     }
 }

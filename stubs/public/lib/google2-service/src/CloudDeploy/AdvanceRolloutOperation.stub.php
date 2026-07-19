@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AdvanceRolloutOperation extends \Google\Model
-{
-    /**
-     * Output only. The phase the rollout will be advanced to.
-     *
-     * @var string
-     */
-    public $destinationPhase;
-    /**
-     * Output only. The name of the rollout that initiates the `AutomationRun`.
-     *
-     * @var string
-     */
-    public $rollout;
-    /**
-     * Output only. The phase of a deployment that initiated the operation.
-     *
-     * @var string
-     */
-    public $sourcePhase;
-    /**
-     * Output only. How long the operation will be paused.
-     *
-     * @var string
-     */
-    public $wait;
-    /**
-     * Output only. The phase the rollout will be advanced to.
-     *
-     * @param string $destinationPhase
-     */
-    public function setDestinationPhase($destinationPhase)
+namespace Google\Service\CloudDeploy {
+    class AdvanceRolloutOperation extends \Google\Model
     {
+        /**
+         * Output only. The phase the rollout will be advanced to.
+         *
+         * @var string
+         */
+        public $destinationPhase;
+        /**
+         * Output only. The name of the rollout that initiates the `AutomationRun`.
+         *
+         * @var string
+         */
+        public $rollout;
+        /**
+         * Output only. The phase of a deployment that initiated the operation.
+         *
+         * @var string
+         */
+        public $sourcePhase;
+        /**
+         * Output only. How long the operation will be paused.
+         *
+         * @var string
+         */
+        public $wait;
+        /**
+         * Output only. The phase the rollout will be advanced to.
+         *
+         * @param string $destinationPhase
+         */
+        public function setDestinationPhase($destinationPhase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationPhase()
+        {
+        }
+        /**
+         * Output only. The name of the rollout that initiates the `AutomationRun`.
+         *
+         * @param string $rollout
+         */
+        public function setRollout($rollout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * Output only. The phase of a deployment that initiated the operation.
+         *
+         * @param string $sourcePhase
+         */
+        public function setSourcePhase($sourcePhase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourcePhase()
+        {
+        }
+        /**
+         * Output only. How long the operation will be paused.
+         *
+         * @param string $wait
+         */
+        public function setWait($wait)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWait()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\AdvanceRolloutOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationPhase()
-    {
-    }
-    /**
-     * Output only. The name of the rollout that initiates the `AutomationRun`.
-     *
-     * @param string $rollout
-     */
-    public function setRollout($rollout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRollout()
-    {
-    }
-    /**
-     * Output only. The phase of a deployment that initiated the operation.
-     *
-     * @param string $sourcePhase
-     */
-    public function setSourcePhase($sourcePhase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourcePhase()
-    {
-    }
-    /**
-     * Output only. How long the operation will be paused.
-     *
-     * @param string $wait
-     */
-    public function setWait($wait)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWait()
+    class Google_Service_CloudDeploy_AdvanceRolloutOperation extends \Google\Service\CloudDeploy\AdvanceRolloutOperation
     {
     }
 }

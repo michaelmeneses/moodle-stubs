@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaImportUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRetailV2alphaImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $importSummaryType = GoogleCloudRetailV2alphaUserEventImportSummary::class;
-    protected $importSummaryDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaImportUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRetailV2alphaImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $importSummaryType = GoogleCloudRetailV2alphaUserEventImportSummary::class;
+        protected $importSummaryDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Echoes the destination for the complete errors if this field was set in the
+         * request.
+         *
+         * @param GoogleCloudRetailV2alphaImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2alphaImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Aggregated statistics of user event import status.
+         *
+         * @param GoogleCloudRetailV2alphaUserEventImportSummary $importSummary
+         */
+        public function setImportSummary(GoogleCloudRetailV2alphaUserEventImportSummary $importSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaUserEventImportSummary
+         */
+        public function getImportSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaImportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Echoes the destination for the complete errors if this field was set in the
-     * request.
-     *
-     * @param GoogleCloudRetailV2alphaImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2alphaImportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2alphaImportErrorsConfig
-     */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Aggregated statistics of user event import status.
-     *
-     * @param GoogleCloudRetailV2alphaUserEventImportSummary $importSummary
-     */
-    public function setImportSummary(GoogleCloudRetailV2alphaUserEventImportSummary $importSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2alphaUserEventImportSummary
-     */
-    public function getImportSummary()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaImportUserEventsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaImportUserEventsResponse
     {
     }
 }

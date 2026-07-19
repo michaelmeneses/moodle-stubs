@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageOnClick extends \Google\Model
-{
-    protected $actionType = AppsDynamiteStorageAction::class;
-    protected $actionDataType = '';
-    protected $hostAppActionType = HostAppActionMarkup::class;
-    protected $hostAppActionDataType = '';
-    protected $openDynamicLinkActionType = AppsDynamiteStorageAction::class;
-    protected $openDynamicLinkActionDataType = '';
-    protected $openLinkType = AppsDynamiteStorageOpenLink::class;
-    protected $openLinkDataType = '';
-    /**
-     * @param AppsDynamiteStorageAction
-     */
-    public function setAction(AppsDynamiteStorageAction $action)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageOnClick extends \Google\Model
     {
+        protected $actionType = AppsDynamiteStorageAction::class;
+        protected $actionDataType = '';
+        protected $hostAppActionType = HostAppActionMarkup::class;
+        protected $hostAppActionDataType = '';
+        protected $openDynamicLinkActionType = AppsDynamiteStorageAction::class;
+        protected $openDynamicLinkActionDataType = '';
+        protected $openLinkType = AppsDynamiteStorageOpenLink::class;
+        protected $openLinkDataType = '';
+        /**
+         * @param AppsDynamiteStorageAction
+         */
+        public function setAction(AppsDynamiteStorageAction $action)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param HostAppActionMarkup
+         */
+        public function setHostAppAction(HostAppActionMarkup $hostAppAction)
+        {
+        }
+        /**
+         * @return HostAppActionMarkup
+         */
+        public function getHostAppAction()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageAction
+         */
+        public function setOpenDynamicLinkAction(AppsDynamiteStorageAction $openDynamicLinkAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageAction
+         */
+        public function getOpenDynamicLinkAction()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageOpenLink
+         */
+        public function setOpenLink(AppsDynamiteStorageOpenLink $openLink)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOpenLink
+         */
+        public function getOpenLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageAction
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageOnClick registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param HostAppActionMarkup
-     */
-    public function setHostAppAction(HostAppActionMarkup $hostAppAction)
-    {
-    }
-    /**
-     * @return HostAppActionMarkup
-     */
-    public function getHostAppAction()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageAction
-     */
-    public function setOpenDynamicLinkAction(AppsDynamiteStorageAction $openDynamicLinkAction)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageAction
-     */
-    public function getOpenDynamicLinkAction()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageOpenLink
-     */
-    public function setOpenLink(AppsDynamiteStorageOpenLink $openLink)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageOpenLink
-     */
-    public function getOpenLink()
+    class Google_Service_CloudSearch_AppsDynamiteStorageOnClick extends \Google\Service\CloudSearch\AppsDynamiteStorageOnClick
     {
     }
 }

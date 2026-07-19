@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "generatedapks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $generatedapks = $androidpublisherService->generatedapks;
- *  </code>
- */
-class Generatedapks extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\GeneratedApksListResponse;
     /**
-     * Downloads a single signed APK generated from an app bundle.
-     * (generatedapks.download)
-     *
-     * @param string $packageName Package name of the app.
-     * @param int $versionCode Version code of the app bundle.
-     * @param string $downloadId Download ID, which uniquely identifies the APK to
-     * download. Can be obtained from the response of `generatedapks.list` method.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "generatedapks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $generatedapks = $androidpublisherService->generatedapks;
+     *  </code>
      */
-    public function download($packageName, $versionCode, $downloadId, $optParams = [])
+    class Generatedapks extends \Google\Service\Resource
     {
+        /**
+         * Downloads a single signed APK generated from an app bundle.
+         * (generatedapks.download)
+         *
+         * @param string $packageName Package name of the app.
+         * @param int $versionCode Version code of the app bundle.
+         * @param string $downloadId Download ID, which uniquely identifies the APK to
+         * download. Can be obtained from the response of `generatedapks.list` method.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function download($packageName, $versionCode, $downloadId, $optParams = [])
+        {
+        }
+        /**
+         * Returns download metadata for all APKs that were generated from a given app
+         * bundle. (generatedapks.listGeneratedapks)
+         *
+         * @param string $packageName Package name of the app.
+         * @param int $versionCode Version code of the app bundle.
+         * @param array $optParams Optional parameters.
+         * @return GeneratedApksListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGeneratedapks($packageName, $versionCode, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns download metadata for all APKs that were generated from a given app
-     * bundle. (generatedapks.listGeneratedapks)
-     *
-     * @param string $packageName Package name of the app.
-     * @param int $versionCode Version code of the app bundle.
-     * @param array $optParams Optional parameters.
-     * @return GeneratedApksListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Generatedapks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listGeneratedapks($packageName, $versionCode, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Generatedapks extends \Google\Service\AndroidPublisher\Resource\Generatedapks
     {
     }
 }

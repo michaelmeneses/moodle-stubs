@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickAnswerAnswerList extends \Google\Collection
-{
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    public const TYPE_PERSON_ADDRESS = 'PERSON_ADDRESS';
-    public const TYPE_PERSON_BIRTHDAY = 'PERSON_BIRTHDAY';
-    public const TYPE_PERSON_DEPARTMENT = 'PERSON_DEPARTMENT';
-    public const TYPE_PERSON_DESK_LOCATION = 'PERSON_DESK_LOCATION';
-    public const TYPE_PERSON_EMAIL = 'PERSON_EMAIL';
-    public const TYPE_PERSON_JOB_TITLE = 'PERSON_JOB_TITLE';
-    public const TYPE_PERSON_PHONE = 'PERSON_PHONE';
-    protected $collection_key = 'labeledAnswer';
-    protected $labeledAnswerType = EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer::class;
-    protected $labeledAnswerDataType = 'array';
-    /**
-     * Answer type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Answers that have a corresponding label.
-     *
-     * @param EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer[] $labeledAnswer
-     */
-    public function setLabeledAnswer($labeledAnswer)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickAnswerAnswerList extends \Google\Collection
     {
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        public const TYPE_PERSON_ADDRESS = 'PERSON_ADDRESS';
+        public const TYPE_PERSON_BIRTHDAY = 'PERSON_BIRTHDAY';
+        public const TYPE_PERSON_DEPARTMENT = 'PERSON_DEPARTMENT';
+        public const TYPE_PERSON_DESK_LOCATION = 'PERSON_DESK_LOCATION';
+        public const TYPE_PERSON_EMAIL = 'PERSON_EMAIL';
+        public const TYPE_PERSON_JOB_TITLE = 'PERSON_JOB_TITLE';
+        public const TYPE_PERSON_PHONE = 'PERSON_PHONE';
+        protected $collection_key = 'labeledAnswer';
+        protected $labeledAnswerType = EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer::class;
+        protected $labeledAnswerDataType = 'array';
+        /**
+         * Answer type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Answers that have a corresponding label.
+         *
+         * @param EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer[] $labeledAnswer
+         */
+        public function setLabeledAnswer($labeledAnswer)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer[]
+         */
+        public function getLabeledAnswer()
+        {
+        }
+        /**
+         * Answer type.
+         *
+         * Accepted values: UNKNOWN, PERSON_ADDRESS, PERSON_BIRTHDAY,
+         * PERSON_DEPARTMENT, PERSON_DESK_LOCATION, PERSON_EMAIL, PERSON_JOB_TITLE,
+         * PERSON_PHONE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerAnswerList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabeledAnswer()
-    {
-    }
-    /**
-     * Answer type.
-     *
-     * Accepted values: UNKNOWN, PERSON_ADDRESS, PERSON_BIRTHDAY,
-     * PERSON_DEPARTMENT, PERSON_DESK_LOCATION, PERSON_EMAIL, PERSON_JOB_TITLE,
-     * PERSON_PHONE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickAnswerAnswerList extends \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerAnswerList
     {
     }
 }

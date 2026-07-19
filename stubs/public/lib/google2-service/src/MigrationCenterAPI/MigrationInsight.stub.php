@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MigrationInsight extends \Google\Model
-{
-    protected $computeEngineTargetType = ComputeEngineMigrationTarget::class;
-    protected $computeEngineTargetDataType = '';
-    protected $fitType = FitDescriptor::class;
-    protected $fitDataType = '';
-    /**
-     * Output only. A Google Compute Engine target.
-     *
-     * @param ComputeEngineMigrationTarget $computeEngineTarget
-     */
-    public function setComputeEngineTarget(ComputeEngineMigrationTarget $computeEngineTarget)
+namespace Google\Service\MigrationCenterAPI {
+    class MigrationInsight extends \Google\Model
     {
+        protected $computeEngineTargetType = ComputeEngineMigrationTarget::class;
+        protected $computeEngineTargetDataType = '';
+        protected $fitType = FitDescriptor::class;
+        protected $fitDataType = '';
+        /**
+         * Output only. A Google Compute Engine target.
+         *
+         * @param ComputeEngineMigrationTarget $computeEngineTarget
+         */
+        public function setComputeEngineTarget(ComputeEngineMigrationTarget $computeEngineTarget)
+        {
+        }
+        /**
+         * @return ComputeEngineMigrationTarget
+         */
+        public function getComputeEngineTarget()
+        {
+        }
+        /**
+         * Output only. Description of how well the asset this insight is associated
+         * with fits the proposed migration.
+         *
+         * @param FitDescriptor $fit
+         */
+        public function setFit(FitDescriptor $fit)
+        {
+        }
+        /**
+         * @return FitDescriptor
+         */
+        public function getFit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComputeEngineMigrationTarget
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MigrationInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputeEngineTarget()
-    {
-    }
-    /**
-     * Output only. Description of how well the asset this insight is associated
-     * with fits the proposed migration.
-     *
-     * @param FitDescriptor $fit
-     */
-    public function setFit(FitDescriptor $fit)
-    {
-    }
-    /**
-     * @return FitDescriptor
-     */
-    public function getFit()
+    class Google_Service_MigrationCenterAPI_MigrationInsight extends \Google\Service\MigrationCenterAPI\MigrationInsight
     {
     }
 }

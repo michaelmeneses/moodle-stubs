@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class UndeleteProjectMetadata extends \Google\Model
-{
+namespace Google\Service\CloudResourceManager {
+    class UndeleteProjectMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudResourceManager\UndeleteProjectMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudResourceManager_UndeleteProjectMetadata extends \Google\Service\CloudResourceManager\UndeleteProjectMetadata
+    {
+    }
 }

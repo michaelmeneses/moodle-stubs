@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1WeightedSchemaProperty extends \Google\Collection
-{
-    protected $collection_key = 'propertyNames';
-    /**
-     * The document schema name.
-     *
-     * @var string
-     */
-    public $documentSchemaName;
-    /**
-     * The property definition names in the schema.
-     *
-     * @var string[]
-     */
-    public $propertyNames;
-    /**
-     * The document schema name.
-     *
-     * @param string $documentSchemaName
-     */
-    public function setDocumentSchemaName($documentSchemaName)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1WeightedSchemaProperty extends \Google\Collection
     {
+        protected $collection_key = 'propertyNames';
+        /**
+         * The document schema name.
+         *
+         * @var string
+         */
+        public $documentSchemaName;
+        /**
+         * The property definition names in the schema.
+         *
+         * @var string[]
+         */
+        public $propertyNames;
+        /**
+         * The document schema name.
+         *
+         * @param string $documentSchemaName
+         */
+        public function setDocumentSchemaName($documentSchemaName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentSchemaName()
+        {
+        }
+        /**
+         * The property definition names in the schema.
+         *
+         * @param string[] $propertyNames
+         */
+        public function setPropertyNames($propertyNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPropertyNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1WeightedSchemaProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentSchemaName()
-    {
-    }
-    /**
-     * The property definition names in the schema.
-     *
-     * @param string[] $propertyNames
-     */
-    public function setPropertyNames($propertyNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPropertyNames()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1WeightedSchemaProperty extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1WeightedSchemaProperty
     {
     }
 }

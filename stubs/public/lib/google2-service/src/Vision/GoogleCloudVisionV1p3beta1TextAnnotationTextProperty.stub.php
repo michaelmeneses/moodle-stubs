@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1TextAnnotationTextProperty extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedBreakType = GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak::class;
-    protected $detectedBreakDataType = '';
-    protected $detectedLanguagesType = GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    /**
-     * Detected start or end of a text segment.
-     *
-     * @param GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak $detectedBreak
-     */
-    public function setDetectedBreak(GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak $detectedBreak)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1TextAnnotationTextProperty extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedBreakType = GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak::class;
+        protected $detectedBreakDataType = '';
+        protected $detectedLanguagesType = GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        /**
+         * Detected start or end of a text segment.
+         *
+         * @param GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak $detectedBreak
+         */
+        public function setDetectedBreak(GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak $detectedBreak)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak
+         */
+        public function getDetectedBreak()
+        {
+        }
+        /**
+         * A list of detected languages together with confidence.
+         *
+         * @param GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage[] $detectedLanguages
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1TextAnnotationTextProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedBreak()
-    {
-    }
-    /**
-     * A list of detected languages together with confidence.
-     *
-     * @param GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage[] $detectedLanguages
-     */
-    public function setDetectedLanguages($detectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p3beta1TextAnnotationDetectedLanguage[]
-     */
-    public function getDetectedLanguages()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1TextAnnotationTextProperty extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1TextAnnotationTextProperty
     {
     }
 }

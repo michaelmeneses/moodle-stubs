@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class Provider extends \Google\Collection
-{
-    protected $collection_key = 'eventTypes';
-    /**
-     * Output only. Human friendly name for the Provider. For example "Cloud
-     * Storage".
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $eventTypesType = EventType::class;
-    protected $eventTypesDataType = 'array';
-    /**
-     * Output only. In
-     * `projects/{project}/locations/{location}/providers/{provider_id}` format.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Human friendly name for the Provider. For example "Cloud
-     * Storage".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Eventarc {
+    class Provider extends \Google\Collection
     {
+        protected $collection_key = 'eventTypes';
+        /**
+         * Output only. Human friendly name for the Provider. For example "Cloud
+         * Storage".
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $eventTypesType = EventType::class;
+        protected $eventTypesDataType = 'array';
+        /**
+         * Output only. In
+         * `projects/{project}/locations/{location}/providers/{provider_id}` format.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Human friendly name for the Provider. For example "Cloud
+         * Storage".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Event types for this provider.
+         *
+         * @param EventType[] $eventTypes
+         */
+        public function setEventTypes($eventTypes)
+        {
+        }
+        /**
+         * @return EventType[]
+         */
+        public function getEventTypes()
+        {
+        }
+        /**
+         * Output only. In
+         * `projects/{project}/locations/{location}/providers/{provider_id}` format.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\Provider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Event types for this provider.
-     *
-     * @param EventType[] $eventTypes
-     */
-    public function setEventTypes($eventTypes)
-    {
-    }
-    /**
-     * @return EventType[]
-     */
-    public function getEventTypes()
-    {
-    }
-    /**
-     * Output only. In
-     * `projects/{project}/locations/{location}/providers/{provider_id}` format.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Eventarc_Provider extends \Google\Service\Eventarc\Provider
     {
     }
 }

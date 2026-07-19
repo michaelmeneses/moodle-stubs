@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionRecognitionMetrics extends \Google\Collection
-{
-    protected $collection_key = 'videoActionMetrics';
-    /**
-     * The number of ground truth actions used to create this evaluation.
-     *
-     * @var int
-     */
-    public $evaluatedActionCount;
-    protected $videoActionMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionMetrics::class;
-    protected $videoActionMetricsDataType = 'array';
-    /**
-     * The number of ground truth actions used to create this evaluation.
-     *
-     * @param int $evaluatedActionCount
-     */
-    public function setEvaluatedActionCount($evaluatedActionCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionRecognitionMetrics extends \Google\Collection
     {
+        protected $collection_key = 'videoActionMetrics';
+        /**
+         * The number of ground truth actions used to create this evaluation.
+         *
+         * @var int
+         */
+        public $evaluatedActionCount;
+        protected $videoActionMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionMetrics::class;
+        protected $videoActionMetricsDataType = 'array';
+        /**
+         * The number of ground truth actions used to create this evaluation.
+         *
+         * @param int $evaluatedActionCount
+         */
+        public function setEvaluatedActionCount($evaluatedActionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEvaluatedActionCount()
+        {
+        }
+        /**
+         * The metric entries for precision window lengths: 1s,2s,3s.
+         *
+         * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionMetrics[] $videoActionMetrics
+         */
+        public function setVideoActionMetrics($videoActionMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionMetrics[]
+         */
+        public function getVideoActionMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionRecognitionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluatedActionCount()
-    {
-    }
-    /**
-     * The metric entries for precision window lengths: 1s,2s,3s.
-     *
-     * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionMetrics[] $videoActionMetrics
-     */
-    public function setVideoActionMetrics($videoActionMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionMetrics[]
-     */
-    public function getVideoActionMetrics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionRecognitionMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsVideoActionRecognitionMetrics
     {
     }
 }

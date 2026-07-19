@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class SubscribeDataExchangeRequest extends \Google\Model
-{
-    /**
-     * Required. The parent resource path of the Subscription. e.g.
-     * `projects/subscriberproject/locations/us`
-     *
-     * @var string
-     */
-    public $destination;
-    protected $destinationDatasetType = DestinationDataset::class;
-    protected $destinationDatasetDataType = '';
-    /**
-     * Email of the subscriber.
-     *
-     * @var string
-     */
-    public $subscriberContact;
-    /**
-     * Required. Name of the subscription to create. e.g. `subscription1`
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * Required. The parent resource path of the Subscription. e.g.
-     * `projects/subscriberproject/locations/us`
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
+namespace Google\Service\AnalyticsHub {
+    class SubscribeDataExchangeRequest extends \Google\Model
     {
+        /**
+         * Required. The parent resource path of the Subscription. e.g.
+         * `projects/subscriberproject/locations/us`
+         *
+         * @var string
+         */
+        public $destination;
+        protected $destinationDatasetType = DestinationDataset::class;
+        protected $destinationDatasetDataType = '';
+        /**
+         * Email of the subscriber.
+         *
+         * @var string
+         */
+        public $subscriberContact;
+        /**
+         * Required. Name of the subscription to create. e.g. `subscription1`
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * Required. The parent resource path of the Subscription. e.g.
+         * `projects/subscriberproject/locations/us`
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Optional. BigQuery destination dataset to create for the subscriber.
+         *
+         * @param DestinationDataset $destinationDataset
+         */
+        public function setDestinationDataset(DestinationDataset $destinationDataset)
+        {
+        }
+        /**
+         * @return DestinationDataset
+         */
+        public function getDestinationDataset()
+        {
+        }
+        /**
+         * Email of the subscriber.
+         *
+         * @param string $subscriberContact
+         */
+        public function setSubscriberContact($subscriberContact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriberContact()
+        {
+        }
+        /**
+         * Required. Name of the subscription to create. e.g. `subscription1`
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\SubscribeDataExchangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
-    {
-    }
-    /**
-     * Optional. BigQuery destination dataset to create for the subscriber.
-     *
-     * @param DestinationDataset $destinationDataset
-     */
-    public function setDestinationDataset(DestinationDataset $destinationDataset)
-    {
-    }
-    /**
-     * @return DestinationDataset
-     */
-    public function getDestinationDataset()
-    {
-    }
-    /**
-     * Email of the subscriber.
-     *
-     * @param string $subscriberContact
-     */
-    public function setSubscriberContact($subscriberContact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriberContact()
-    {
-    }
-    /**
-     * Required. Name of the subscription to create. e.g. `subscription1`
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
+    class Google_Service_AnalyticsHub_SubscribeDataExchangeRequest extends \Google\Service\AnalyticsHub\SubscribeDataExchangeRequest
     {
     }
 }

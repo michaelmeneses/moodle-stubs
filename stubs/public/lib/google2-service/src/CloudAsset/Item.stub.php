@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class Item extends \Google\Model
-{
-    /**
-     * Invalid. An origin type must be specified.
-     */
-    public const ORIGIN_TYPE_ORIGIN_TYPE_UNSPECIFIED = 'ORIGIN_TYPE_UNSPECIFIED';
-    /**
-     * This inventory item was discovered as the result of the agent reporting
-     * inventory via the reporting API.
-     */
-    public const ORIGIN_TYPE_INVENTORY_REPORT = 'INVENTORY_REPORT';
-    /**
-     * Invalid. A type must be specified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * This represents a package that is installed on the VM.
-     */
-    public const TYPE_INSTALLED_PACKAGE = 'INSTALLED_PACKAGE';
-    /**
-     * This represents an update that is available for a package.
-     */
-    public const TYPE_AVAILABLE_PACKAGE = 'AVAILABLE_PACKAGE';
-    protected $availablePackageType = SoftwarePackage::class;
-    protected $availablePackageDataType = '';
-    /**
-     * When this inventory item was first detected.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier for this item, unique across items for this VM.
-     *
-     * @var string
-     */
-    public $id;
-    protected $installedPackageType = SoftwarePackage::class;
-    protected $installedPackageDataType = '';
-    /**
-     * The origin of this inventory item.
-     *
-     * @var string
-     */
-    public $originType;
-    /**
-     * The specific type of inventory, correlating to its specific details.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * When this inventory item was last modified.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Software package available to be installed on the VM instance.
-     *
-     * @param SoftwarePackage $availablePackage
-     */
-    public function setAvailablePackage(SoftwarePackage $availablePackage)
+namespace Google\Service\CloudAsset {
+    class Item extends \Google\Model
     {
+        /**
+         * Invalid. An origin type must be specified.
+         */
+        public const ORIGIN_TYPE_ORIGIN_TYPE_UNSPECIFIED = 'ORIGIN_TYPE_UNSPECIFIED';
+        /**
+         * This inventory item was discovered as the result of the agent reporting
+         * inventory via the reporting API.
+         */
+        public const ORIGIN_TYPE_INVENTORY_REPORT = 'INVENTORY_REPORT';
+        /**
+         * Invalid. A type must be specified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * This represents a package that is installed on the VM.
+         */
+        public const TYPE_INSTALLED_PACKAGE = 'INSTALLED_PACKAGE';
+        /**
+         * This represents an update that is available for a package.
+         */
+        public const TYPE_AVAILABLE_PACKAGE = 'AVAILABLE_PACKAGE';
+        protected $availablePackageType = SoftwarePackage::class;
+        protected $availablePackageDataType = '';
+        /**
+         * When this inventory item was first detected.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier for this item, unique across items for this VM.
+         *
+         * @var string
+         */
+        public $id;
+        protected $installedPackageType = SoftwarePackage::class;
+        protected $installedPackageDataType = '';
+        /**
+         * The origin of this inventory item.
+         *
+         * @var string
+         */
+        public $originType;
+        /**
+         * The specific type of inventory, correlating to its specific details.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * When this inventory item was last modified.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Software package available to be installed on the VM instance.
+         *
+         * @param SoftwarePackage $availablePackage
+         */
+        public function setAvailablePackage(SoftwarePackage $availablePackage)
+        {
+        }
+        /**
+         * @return SoftwarePackage
+         */
+        public function getAvailablePackage()
+        {
+        }
+        /**
+         * When this inventory item was first detected.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier for this item, unique across items for this VM.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Software package present on the VM instance.
+         *
+         * @param SoftwarePackage $installedPackage
+         */
+        public function setInstalledPackage(SoftwarePackage $installedPackage)
+        {
+        }
+        /**
+         * @return SoftwarePackage
+         */
+        public function getInstalledPackage()
+        {
+        }
+        /**
+         * The origin of this inventory item.
+         *
+         * Accepted values: ORIGIN_TYPE_UNSPECIFIED, INVENTORY_REPORT
+         *
+         * @param self::ORIGIN_TYPE_* $originType
+         */
+        public function setOriginType($originType)
+        {
+        }
+        /**
+         * @return self::ORIGIN_TYPE_*
+         */
+        public function getOriginType()
+        {
+        }
+        /**
+         * The specific type of inventory, correlating to its specific details.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, INSTALLED_PACKAGE, AVAILABLE_PACKAGE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * When this inventory item was last modified.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SoftwarePackage
+     * Runtime class alias of \Google\Service\CloudAsset\Item registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailablePackage()
-    {
-    }
-    /**
-     * When this inventory item was first detected.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier for this item, unique across items for this VM.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Software package present on the VM instance.
-     *
-     * @param SoftwarePackage $installedPackage
-     */
-    public function setInstalledPackage(SoftwarePackage $installedPackage)
-    {
-    }
-    /**
-     * @return SoftwarePackage
-     */
-    public function getInstalledPackage()
-    {
-    }
-    /**
-     * The origin of this inventory item.
-     *
-     * Accepted values: ORIGIN_TYPE_UNSPECIFIED, INVENTORY_REPORT
-     *
-     * @param self::ORIGIN_TYPE_* $originType
-     */
-    public function setOriginType($originType)
-    {
-    }
-    /**
-     * @return self::ORIGIN_TYPE_*
-     */
-    public function getOriginType()
-    {
-    }
-    /**
-     * The specific type of inventory, correlating to its specific details.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, INSTALLED_PACKAGE, AVAILABLE_PACKAGE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * When this inventory item was last modified.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudAsset_Item extends \Google\Service\CloudAsset\Item
     {
     }
 }

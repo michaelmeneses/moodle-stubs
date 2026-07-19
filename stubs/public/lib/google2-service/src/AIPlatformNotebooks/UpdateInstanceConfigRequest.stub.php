@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class UpdateInstanceConfigRequest extends \Google\Model
-{
-    protected $configType = InstanceConfig::class;
-    protected $configDataType = '';
-    public $config;
-    /**
-     * @param InstanceConfig
-     */
-    public function setConfig(InstanceConfig $config)
+namespace Google\Service\AIPlatformNotebooks {
+    class UpdateInstanceConfigRequest extends \Google\Model
     {
+        protected $configType = InstanceConfig::class;
+        protected $configDataType = '';
+        public $config;
+        /**
+         * @param InstanceConfig
+         */
+        public function setConfig(InstanceConfig $config)
+        {
+        }
+        /**
+         * @return InstanceConfig
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\UpdateInstanceConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_AIPlatformNotebooks_UpdateInstanceConfigRequest extends \Google\Service\AIPlatformNotebooks\UpdateInstanceConfigRequest
     {
     }
 }

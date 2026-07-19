@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class MonitoringDestination extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Types of the metrics to report to this monitoring destination. Each type
-     * must be defined in Service.metrics section.
-     *
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * The monitored resource type. The type must be defined in
-     * Service.monitored_resources section.
-     *
-     * @var string
-     */
-    public $monitoredResource;
-    /**
-     * Types of the metrics to report to this monitoring destination. Each type
-     * must be defined in Service.metrics section.
-     *
-     * @param string[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\ServiceNetworking {
+    class MonitoringDestination extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Types of the metrics to report to this monitoring destination. Each type
+         * must be defined in Service.metrics section.
+         *
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * The monitored resource type. The type must be defined in
+         * Service.monitored_resources section.
+         *
+         * @var string
+         */
+        public $monitoredResource;
+        /**
+         * Types of the metrics to report to this monitoring destination. Each type
+         * must be defined in Service.metrics section.
+         *
+         * @param string[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * The monitored resource type. The type must be defined in
+         * Service.monitored_resources section.
+         *
+         * @param string $monitoredResource
+         */
+        public function setMonitoredResource($monitoredResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonitoredResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\MonitoringDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
-    {
-    }
-    /**
-     * The monitored resource type. The type must be defined in
-     * Service.monitored_resources section.
-     *
-     * @param string $monitoredResource
-     */
-    public function setMonitoredResource($monitoredResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonitoredResource()
+    class Google_Service_ServiceNetworking_MonitoringDestination extends \Google\Service\ServiceNetworking\MonitoringDestination
     {
     }
 }

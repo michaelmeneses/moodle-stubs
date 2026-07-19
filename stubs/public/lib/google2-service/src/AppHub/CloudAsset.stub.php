@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class CloudAsset extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $assetName;
-    /**
-     * @var string
-     */
-    public $assetType;
-    /**
-     * @param string
-     */
-    public function setAssetName($assetName)
+namespace Google\Service\AppHub {
+    class CloudAsset extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $assetName;
+        /**
+         * @var string
+         */
+        public $assetType;
+        /**
+         * @param string
+         */
+        public function setAssetName($assetName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\CloudAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAssetType($assetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetType()
+    class Google_Service_AppHub_CloudAsset extends \Google\Service\AppHub\CloudAsset
     {
     }
 }

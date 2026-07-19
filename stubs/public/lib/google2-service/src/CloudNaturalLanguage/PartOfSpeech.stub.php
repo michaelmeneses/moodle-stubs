@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class PartOfSpeech extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $aspect;
-    /**
-     * @var string
-     */
-    public $case;
-    /**
-     * @var string
-     */
-    public $form;
-    /**
-     * @var string
-     */
-    public $gender;
-    /**
-     * @var string
-     */
-    public $mood;
-    /**
-     * @var string
-     */
-    public $number;
-    /**
-     * @var string
-     */
-    public $person;
-    /**
-     * @var string
-     */
-    public $proper;
-    /**
-     * @var string
-     */
-    public $reciprocity;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $tense;
-    /**
-     * @var string
-     */
-    public $voice;
-    /**
-     * @param string
-     */
-    public function setAspect($aspect)
+namespace Google\Service\CloudNaturalLanguage {
+    class PartOfSpeech extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $aspect;
+        /**
+         * @var string
+         */
+        public $case;
+        /**
+         * @var string
+         */
+        public $form;
+        /**
+         * @var string
+         */
+        public $gender;
+        /**
+         * @var string
+         */
+        public $mood;
+        /**
+         * @var string
+         */
+        public $number;
+        /**
+         * @var string
+         */
+        public $person;
+        /**
+         * @var string
+         */
+        public $proper;
+        /**
+         * @var string
+         */
+        public $reciprocity;
+        /**
+         * @var string
+         */
+        public $tag;
+        /**
+         * @var string
+         */
+        public $tense;
+        /**
+         * @var string
+         */
+        public $voice;
+        /**
+         * @param string
+         */
+        public function setAspect($aspect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAspect()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCase($case)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCase()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setForm($form)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getForm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGender($gender)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGender()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMood($mood)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMood()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPerson($person)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPerson()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProper($proper)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProper()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReciprocity($reciprocity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReciprocity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTense($tense)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTense()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVoice($voice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVoice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\PartOfSpeech registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAspect()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCase($case)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCase()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setForm($form)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getForm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGender($gender)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGender()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMood($mood)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMood()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPerson($person)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPerson()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProper($proper)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProper()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReciprocity($reciprocity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReciprocity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTense($tense)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTense()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVoice($voice)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVoice()
+    class Google_Service_CloudNaturalLanguage_PartOfSpeech extends \Google\Service\CloudNaturalLanguage\PartOfSpeech
     {
     }
 }

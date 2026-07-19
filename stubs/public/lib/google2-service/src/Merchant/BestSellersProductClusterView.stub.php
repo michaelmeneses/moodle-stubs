@@ -21,311 +21,320 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class BestSellersProductClusterView extends \Google\Collection
-{
-    protected $collection_key = 'variantGtins';
-    /**
-     * @var string
-     */
-    public $brand;
-    /**
-     * @var string
-     */
-    public $brandInventoryStatus;
-    /**
-     * @var string
-     */
-    public $categoryL1;
-    /**
-     * @var string
-     */
-    public $categoryL2;
-    /**
-     * @var string
-     */
-    public $categoryL3;
-    /**
-     * @var string
-     */
-    public $categoryL4;
-    /**
-     * @var string
-     */
-    public $categoryL5;
-    /**
-     * @var string
-     */
-    public $inventoryStatus;
-    /**
-     * @var string
-     */
-    public $previousRank;
-    /**
-     * @var string
-     */
-    public $previousRelativeDemand;
-    /**
-     * @var string
-     */
-    public $rank;
-    /**
-     * @var string
-     */
-    public $relativeDemand;
-    /**
-     * @var string
-     */
-    public $relativeDemandChange;
-    /**
-     * @var string
-     */
-    public $reportCategoryId;
-    /**
-     * @var string
-     */
-    public $reportCountryCode;
-    protected $reportDateType = Date::class;
-    protected $reportDateDataType = '';
-    /**
-     * @var string
-     */
-    public $reportGranularity;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string[]
-     */
-    public $variantGtins;
-    /**
-     * @param string
-     */
-    public function setBrand($brand)
+namespace Google\Service\Merchant {
+    class BestSellersProductClusterView extends \Google\Collection
     {
+        protected $collection_key = 'variantGtins';
+        /**
+         * @var string
+         */
+        public $brand;
+        /**
+         * @var string
+         */
+        public $brandInventoryStatus;
+        /**
+         * @var string
+         */
+        public $categoryL1;
+        /**
+         * @var string
+         */
+        public $categoryL2;
+        /**
+         * @var string
+         */
+        public $categoryL3;
+        /**
+         * @var string
+         */
+        public $categoryL4;
+        /**
+         * @var string
+         */
+        public $categoryL5;
+        /**
+         * @var string
+         */
+        public $inventoryStatus;
+        /**
+         * @var string
+         */
+        public $previousRank;
+        /**
+         * @var string
+         */
+        public $previousRelativeDemand;
+        /**
+         * @var string
+         */
+        public $rank;
+        /**
+         * @var string
+         */
+        public $relativeDemand;
+        /**
+         * @var string
+         */
+        public $relativeDemandChange;
+        /**
+         * @var string
+         */
+        public $reportCategoryId;
+        /**
+         * @var string
+         */
+        public $reportCountryCode;
+        protected $reportDateType = Date::class;
+        protected $reportDateDataType = '';
+        /**
+         * @var string
+         */
+        public $reportGranularity;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string[]
+         */
+        public $variantGtins;
+        /**
+         * @param string
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBrandInventoryStatus($brandInventoryStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrandInventoryStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL1($categoryL1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL2($categoryL2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL3($categoryL3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL4($categoryL4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL4()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL5($categoryL5)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL5()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInventoryStatus($inventoryStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventoryStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPreviousRank($previousRank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousRank()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPreviousRelativeDemand($previousRelativeDemand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousRelativeDemand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRank($rank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRank()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRelativeDemand($relativeDemand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativeDemand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRelativeDemandChange($relativeDemandChange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativeDemandChange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCategoryId($reportCategoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCategoryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCountryCode($reportCountryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCountryCode()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setReportDate(Date $reportDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReportDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportGranularity($reportGranularity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportGranularity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setVariantGtins($variantGtins)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVariantGtins()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\BestSellersProductClusterView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBrandInventoryStatus($brandInventoryStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBrandInventoryStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL1($categoryL1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL2($categoryL2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL3($categoryL3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL4($categoryL4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL4()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL5($categoryL5)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL5()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInventoryStatus($inventoryStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInventoryStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPreviousRank($previousRank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousRank()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPreviousRelativeDemand($previousRelativeDemand)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousRelativeDemand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRank($rank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRank()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRelativeDemand($relativeDemand)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativeDemand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRelativeDemandChange($relativeDemandChange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativeDemandChange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCategoryId($reportCategoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCategoryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCountryCode($reportCountryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCountryCode()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setReportDate(Date $reportDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReportDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportGranularity($reportGranularity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportGranularity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setVariantGtins($variantGtins)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVariantGtins()
+    class Google_Service_Merchant_BestSellersProductClusterView extends \Google\Service\Merchant\BestSellersProductClusterView
     {
     }
 }

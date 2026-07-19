@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedPositionedObjectProperties extends \Google\Model
-{
-    protected $positionedObjectPropertiesType = PositionedObjectProperties::class;
-    protected $positionedObjectPropertiesDataType = '';
-    protected $positionedObjectPropertiesSuggestionStateType = PositionedObjectPropertiesSuggestionState::class;
-    protected $positionedObjectPropertiesSuggestionStateDataType = '';
-    /**
-     * A PositionedObjectProperties that only includes the changes made in this
-     * suggestion. This can be used along with the
-     * positioned_object_properties_suggestion_state to see which fields have
-     * changed and their new values.
-     *
-     * @param PositionedObjectProperties $positionedObjectProperties
-     */
-    public function setPositionedObjectProperties(PositionedObjectProperties $positionedObjectProperties)
+namespace Google\Service\Docs {
+    class SuggestedPositionedObjectProperties extends \Google\Model
     {
+        protected $positionedObjectPropertiesType = PositionedObjectProperties::class;
+        protected $positionedObjectPropertiesDataType = '';
+        protected $positionedObjectPropertiesSuggestionStateType = PositionedObjectPropertiesSuggestionState::class;
+        protected $positionedObjectPropertiesSuggestionStateDataType = '';
+        /**
+         * A PositionedObjectProperties that only includes the changes made in this
+         * suggestion. This can be used along with the
+         * positioned_object_properties_suggestion_state to see which fields have
+         * changed and their new values.
+         *
+         * @param PositionedObjectProperties $positionedObjectProperties
+         */
+        public function setPositionedObjectProperties(PositionedObjectProperties $positionedObjectProperties)
+        {
+        }
+        /**
+         * @return PositionedObjectProperties
+         */
+        public function getPositionedObjectProperties()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base
+         * PositionedObjectProperties have been changed in this suggestion.
+         *
+         * @param PositionedObjectPropertiesSuggestionState $positionedObjectPropertiesSuggestionState
+         */
+        public function setPositionedObjectPropertiesSuggestionState(PositionedObjectPropertiesSuggestionState $positionedObjectPropertiesSuggestionState)
+        {
+        }
+        /**
+         * @return PositionedObjectPropertiesSuggestionState
+         */
+        public function getPositionedObjectPropertiesSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PositionedObjectProperties
+     * Runtime class alias of \Google\Service\Docs\SuggestedPositionedObjectProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPositionedObjectProperties()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base
-     * PositionedObjectProperties have been changed in this suggestion.
-     *
-     * @param PositionedObjectPropertiesSuggestionState $positionedObjectPropertiesSuggestionState
-     */
-    public function setPositionedObjectPropertiesSuggestionState(PositionedObjectPropertiesSuggestionState $positionedObjectPropertiesSuggestionState)
-    {
-    }
-    /**
-     * @return PositionedObjectPropertiesSuggestionState
-     */
-    public function getPositionedObjectPropertiesSuggestionState()
+    class Google_Service_Docs_SuggestedPositionedObjectProperties extends \Google\Service\Docs\SuggestedPositionedObjectProperties
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "runtimeActionSchemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $runtimeActionSchemas = $integrationsService->projects_locations_connections_runtimeActionSchemas;
- *  </code>
- */
-class ProjectsLocationsConnectionsRuntimeActionSchemas extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse;
     /**
-     * Lists the JSON schemas for the inputs and outputs of actions, filtered by
-     * action name.
-     * (runtimeActionSchemas.listProjectsLocationsConnectionsRuntimeActionSchemas)
-     *
-     * @param string $parent Required. Parent resource of RuntimeActionSchema.
-     * Format: projects/{project}/locations/{location}/connections/{connection}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter. Only the action field with literal equality
-     * operator is supported.
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse
-     * @throws \Google\Service\Exception
+     * The "runtimeActionSchemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $runtimeActionSchemas = $integrationsService->projects_locations_connections_runtimeActionSchemas;
+     *  </code>
      */
-    public function listProjectsLocationsConnectionsRuntimeActionSchemas($parent, $optParams = [])
+    class ProjectsLocationsConnectionsRuntimeActionSchemas extends \Google\Service\Resource
+    {
+        /**
+         * Lists the JSON schemas for the inputs and outputs of actions, filtered by
+         * action name.
+         * (runtimeActionSchemas.listProjectsLocationsConnectionsRuntimeActionSchemas)
+         *
+         * @param string $parent Required. Parent resource of RuntimeActionSchema.
+         * Format: projects/{project}/locations/{location}/connections/{connection}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter. Only the action field with literal equality
+         * operator is supported.
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectionsRuntimeActionSchemas($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsConnectionsRuntimeActionSchemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsConnectionsRuntimeActionSchemas extends \Google\Service\Integrations\Resource\ProjectsLocationsConnectionsRuntimeActionSchemas
     {
     }
 }

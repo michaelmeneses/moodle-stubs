@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class DetectLanguageResponse extends \Google\Collection
-{
-    protected $collection_key = 'languages';
-    protected $languagesType = DetectedLanguage::class;
-    protected $languagesDataType = 'array';
-    /**
-     * The most probable language detected by the Translation API. For each
-     * request, the Translation API will always return only one result.
-     *
-     * @param DetectedLanguage[] $languages
-     */
-    public function setLanguages($languages)
+namespace Google\Service\Translate {
+    class DetectLanguageResponse extends \Google\Collection
     {
+        protected $collection_key = 'languages';
+        protected $languagesType = DetectedLanguage::class;
+        protected $languagesDataType = 'array';
+        /**
+         * The most probable language detected by the Translation API. For each
+         * request, the Translation API will always return only one result.
+         *
+         * @param DetectedLanguage[] $languages
+         */
+        public function setLanguages($languages)
+        {
+        }
+        /**
+         * @return DetectedLanguage[]
+         */
+        public function getLanguages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DetectedLanguage[]
+     * Runtime class alias of \Google\Service\Translate\DetectLanguageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguages()
+    class Google_Service_Translate_DetectLanguageResponse extends \Google\Service\Translate\DetectLanguageResponse
     {
     }
 }

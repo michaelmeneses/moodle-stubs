@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ScriptStackTraceElement extends \Google\Model
-{
-    /**
-     * The name of the function that failed.
-     *
-     * @var string
-     */
-    public $function;
-    /**
-     * The line number where the script failed.
-     *
-     * @var int
-     */
-    public $lineNumber;
-    /**
-     * The name of the function that failed.
-     *
-     * @param string $function
-     */
-    public function setFunction($function)
+namespace Google\Service\Script {
+    class ScriptStackTraceElement extends \Google\Model
     {
+        /**
+         * The name of the function that failed.
+         *
+         * @var string
+         */
+        public $function;
+        /**
+         * The line number where the script failed.
+         *
+         * @var int
+         */
+        public $lineNumber;
+        /**
+         * The name of the function that failed.
+         *
+         * @param string $function
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * The line number where the script failed.
+         *
+         * @param int $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\ScriptStackTraceElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunction()
-    {
-    }
-    /**
-     * The line number where the script failed.
-     *
-     * @param int $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLineNumber()
+    class Google_Service_Script_ScriptStackTraceElement extends \Google\Service\Script\ScriptStackTraceElement
     {
     }
 }

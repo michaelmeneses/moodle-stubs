@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent extends \Google\Model
-{
-    protected $textInputType = GoogleChecksAisafetyV1alphaTextInput::class;
-    protected $textInputDataType = '';
-    /**
-     * Content in text format.
-     *
-     * @param GoogleChecksAisafetyV1alphaTextInput $textInput
-     */
-    public function setTextInput(GoogleChecksAisafetyV1alphaTextInput $textInput)
+namespace Google\Service\ChecksService {
+    class GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent extends \Google\Model
     {
+        protected $textInputType = GoogleChecksAisafetyV1alphaTextInput::class;
+        protected $textInputDataType = '';
+        /**
+         * Content in text format.
+         *
+         * @param GoogleChecksAisafetyV1alphaTextInput $textInput
+         */
+        public function setTextInput(GoogleChecksAisafetyV1alphaTextInput $textInput)
+        {
+        }
+        /**
+         * @return GoogleChecksAisafetyV1alphaTextInput
+         */
+        public function getTextInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksAisafetyV1alphaTextInput
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTextInput()
+    class Google_Service_ChecksService_GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent extends \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent
     {
     }
 }

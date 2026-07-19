@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class UsersettingsNotification extends \Google\Model
-{
-    protected $matchMyInterestsType = UsersettingsNotificationMatchMyInterests::class;
-    protected $matchMyInterestsDataType = '';
-    protected $moreFromAuthorsType = UsersettingsNotificationMoreFromAuthors::class;
-    protected $moreFromAuthorsDataType = '';
-    protected $moreFromSeriesType = UsersettingsNotificationMoreFromSeries::class;
-    protected $moreFromSeriesDataType = '';
-    protected $priceDropType = UsersettingsNotificationPriceDrop::class;
-    protected $priceDropDataType = '';
-    protected $rewardExpirationsType = UsersettingsNotificationRewardExpirations::class;
-    protected $rewardExpirationsDataType = '';
-    /**
-     * @param UsersettingsNotificationMatchMyInterests $matchMyInterests
-     */
-    public function setMatchMyInterests(UsersettingsNotificationMatchMyInterests $matchMyInterests)
+namespace Google\Service\Books {
+    class UsersettingsNotification extends \Google\Model
     {
+        protected $matchMyInterestsType = UsersettingsNotificationMatchMyInterests::class;
+        protected $matchMyInterestsDataType = '';
+        protected $moreFromAuthorsType = UsersettingsNotificationMoreFromAuthors::class;
+        protected $moreFromAuthorsDataType = '';
+        protected $moreFromSeriesType = UsersettingsNotificationMoreFromSeries::class;
+        protected $moreFromSeriesDataType = '';
+        protected $priceDropType = UsersettingsNotificationPriceDrop::class;
+        protected $priceDropDataType = '';
+        protected $rewardExpirationsType = UsersettingsNotificationRewardExpirations::class;
+        protected $rewardExpirationsDataType = '';
+        /**
+         * @param UsersettingsNotificationMatchMyInterests $matchMyInterests
+         */
+        public function setMatchMyInterests(UsersettingsNotificationMatchMyInterests $matchMyInterests)
+        {
+        }
+        /**
+         * @return UsersettingsNotificationMatchMyInterests
+         */
+        public function getMatchMyInterests()
+        {
+        }
+        /**
+         * @param UsersettingsNotificationMoreFromAuthors $moreFromAuthors
+         */
+        public function setMoreFromAuthors(UsersettingsNotificationMoreFromAuthors $moreFromAuthors)
+        {
+        }
+        /**
+         * @return UsersettingsNotificationMoreFromAuthors
+         */
+        public function getMoreFromAuthors()
+        {
+        }
+        /**
+         * @param UsersettingsNotificationMoreFromSeries $moreFromSeries
+         */
+        public function setMoreFromSeries(UsersettingsNotificationMoreFromSeries $moreFromSeries)
+        {
+        }
+        /**
+         * @return UsersettingsNotificationMoreFromSeries
+         */
+        public function getMoreFromSeries()
+        {
+        }
+        /**
+         * @param UsersettingsNotificationPriceDrop $priceDrop
+         */
+        public function setPriceDrop(UsersettingsNotificationPriceDrop $priceDrop)
+        {
+        }
+        /**
+         * @return UsersettingsNotificationPriceDrop
+         */
+        public function getPriceDrop()
+        {
+        }
+        /**
+         * @param UsersettingsNotificationRewardExpirations $rewardExpirations
+         */
+        public function setRewardExpirations(UsersettingsNotificationRewardExpirations $rewardExpirations)
+        {
+        }
+        /**
+         * @return UsersettingsNotificationRewardExpirations
+         */
+        public function getRewardExpirations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UsersettingsNotificationMatchMyInterests
+     * Runtime class alias of \Google\Service\Books\UsersettingsNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchMyInterests()
-    {
-    }
-    /**
-     * @param UsersettingsNotificationMoreFromAuthors $moreFromAuthors
-     */
-    public function setMoreFromAuthors(UsersettingsNotificationMoreFromAuthors $moreFromAuthors)
-    {
-    }
-    /**
-     * @return UsersettingsNotificationMoreFromAuthors
-     */
-    public function getMoreFromAuthors()
-    {
-    }
-    /**
-     * @param UsersettingsNotificationMoreFromSeries $moreFromSeries
-     */
-    public function setMoreFromSeries(UsersettingsNotificationMoreFromSeries $moreFromSeries)
-    {
-    }
-    /**
-     * @return UsersettingsNotificationMoreFromSeries
-     */
-    public function getMoreFromSeries()
-    {
-    }
-    /**
-     * @param UsersettingsNotificationPriceDrop $priceDrop
-     */
-    public function setPriceDrop(UsersettingsNotificationPriceDrop $priceDrop)
-    {
-    }
-    /**
-     * @return UsersettingsNotificationPriceDrop
-     */
-    public function getPriceDrop()
-    {
-    }
-    /**
-     * @param UsersettingsNotificationRewardExpirations $rewardExpirations
-     */
-    public function setRewardExpirations(UsersettingsNotificationRewardExpirations $rewardExpirations)
-    {
-    }
-    /**
-     * @return UsersettingsNotificationRewardExpirations
-     */
-    public function getRewardExpirations()
+    class Google_Service_Books_UsersettingsNotification extends \Google\Service\Books\UsersettingsNotification
     {
     }
 }

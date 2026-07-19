@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "persistentResources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $persistentResources = $aiplatformService->persistentResources;
- *  </code>
- */
-class PersistentResources extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    /**
+     * The "persistentResources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $persistentResources = $aiplatformService->persistentResources;
+     *  </code>
+     */
+    class PersistentResources extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\PersistentResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_Resource_PersistentResources extends \Google\Service\Aiplatform\Resource\PersistentResources
+    {
+    }
 }

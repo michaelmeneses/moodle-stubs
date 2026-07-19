@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class KubernetesMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kubernetesApiServerVersion;
-    /**
-     * @var int
-     */
-    public $memoryMb;
-    /**
-     * @var int
-     */
-    public $nodeCount;
-    /**
-     * @var string
-     */
-    public $nodeProviderId;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var int
-     */
-    public $vcpuCount;
-    /**
-     * @param string
-     */
-    public function setKubernetesApiServerVersion($kubernetesApiServerVersion)
+namespace Google\Service\GKEHub {
+    class KubernetesMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kubernetesApiServerVersion;
+        /**
+         * @var int
+         */
+        public $memoryMb;
+        /**
+         * @var int
+         */
+        public $nodeCount;
+        /**
+         * @var string
+         */
+        public $nodeProviderId;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var int
+         */
+        public $vcpuCount;
+        /**
+         * @param string
+         */
+        public function setKubernetesApiServerVersion($kubernetesApiServerVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesApiServerVersion()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMemoryMb($memoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryMb()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNodeCount($nodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNodeCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNodeProviderId($nodeProviderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeProviderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setVcpuCount($vcpuCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVcpuCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\KubernetesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKubernetesApiServerVersion()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMemoryMb($memoryMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryMb()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNodeCount($nodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNodeCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNodeProviderId($nodeProviderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeProviderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setVcpuCount($vcpuCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVcpuCount()
+    class Google_Service_GKEHub_KubernetesMetadata extends \Google\Service\GKEHub\KubernetesMetadata
     {
     }
 }

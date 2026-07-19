@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalSecurityConfig extends \Google\Model
-{
-    protected $authorizationType = Authorization::class;
-    protected $authorizationDataType = '';
-    /**
-     * Configures user access to the user cluster.
-     *
-     * @param Authorization $authorization
-     */
-    public function setAuthorization(Authorization $authorization)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalSecurityConfig extends \Google\Model
     {
+        protected $authorizationType = Authorization::class;
+        protected $authorizationDataType = '';
+        /**
+         * Configures user access to the user cluster.
+         *
+         * @param Authorization $authorization
+         */
+        public function setAuthorization(Authorization $authorization)
+        {
+        }
+        /**
+         * @return Authorization
+         */
+        public function getAuthorization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Authorization
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalSecurityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorization()
+    class Google_Service_GKEOnPrem_BareMetalSecurityConfig extends \Google\Service\GKEOnPrem\BareMetalSecurityConfig
     {
     }
 }

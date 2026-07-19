@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest extends \Google\Model
-{
-    /**
-     * Optional. Requested page size. Server may return fewer results than
-     * requested. Default value is 100.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Optional. A token identifying a page of results for the server to return.
-     * Typically obtained by the nextPageToken of the response to a previous
-     * search rquest. If you don't specify this field, the API call requests the
-     * first page of the search.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Optional. Requested page size. Server may return fewer results than
-     * requested. Default value is 100.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest extends \Google\Model
     {
+        /**
+         * Optional. Requested page size. Server may return fewer results than
+         * requested. Default value is 100.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Optional. A token identifying a page of results for the server to return.
+         * Typically obtained by the nextPageToken of the response to a previous
+         * search rquest. If you don't specify this field, the API call requests the
+         * first page of the search.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Optional. Requested page size. Server may return fewer results than
+         * requested. Default value is 100.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Optional. A token identifying a page of results for the server to return.
+         * Typically obtained by the nextPageToken of the response to a previous
+         * search rquest. If you don't specify this field, the API call requests the
+         * first page of the search.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Optional. A token identifying a page of results for the server to return.
-     * Typically obtained by the nextPageToken of the response to a previous
-     * search rquest. If you don't specify this field, the API call requests the
-     * first page of the search.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest
     {
     }
 }

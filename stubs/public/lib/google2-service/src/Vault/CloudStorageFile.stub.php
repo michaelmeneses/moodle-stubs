@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class CloudStorageFile extends \Google\Model
-{
-    /**
-     * The name of the Cloud Storage bucket for the export file. You can use this
-     * value in the Cloud Storage [JSON
-     * API](https://cloud.google.com/storage/docs/json_api) or [XML
-     * API](https://cloud.google.com/storage/docs/xml-api), but not to list the
-     * bucket contents. Instead, you can [get individual export
-     * files](https://cloud.google.com/storage/docs/json_api/v1/objects/get) by
-     * object name.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * The md5 hash of the file.
-     *
-     * @var string
-     */
-    public $md5Hash;
-    /**
-     * The name of the Cloud Storage object for the export file. You can use this
-     * value in the Cloud Storage [JSON
-     * API](https://cloud.google.com/storage/docs/json_api) or [XML
-     * API](https://cloud.google.com/storage/docs/xml-api).
-     *
-     * @var string
-     */
-    public $objectName;
-    /**
-     * The export file size.
-     *
-     * @var string
-     */
-    public $size;
-    /**
-     * The name of the Cloud Storage bucket for the export file. You can use this
-     * value in the Cloud Storage [JSON
-     * API](https://cloud.google.com/storage/docs/json_api) or [XML
-     * API](https://cloud.google.com/storage/docs/xml-api), but not to list the
-     * bucket contents. Instead, you can [get individual export
-     * files](https://cloud.google.com/storage/docs/json_api/v1/objects/get) by
-     * object name.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Vault {
+    class CloudStorageFile extends \Google\Model
     {
+        /**
+         * The name of the Cloud Storage bucket for the export file. You can use this
+         * value in the Cloud Storage [JSON
+         * API](https://cloud.google.com/storage/docs/json_api) or [XML
+         * API](https://cloud.google.com/storage/docs/xml-api), but not to list the
+         * bucket contents. Instead, you can [get individual export
+         * files](https://cloud.google.com/storage/docs/json_api/v1/objects/get) by
+         * object name.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * The md5 hash of the file.
+         *
+         * @var string
+         */
+        public $md5Hash;
+        /**
+         * The name of the Cloud Storage object for the export file. You can use this
+         * value in the Cloud Storage [JSON
+         * API](https://cloud.google.com/storage/docs/json_api) or [XML
+         * API](https://cloud.google.com/storage/docs/xml-api).
+         *
+         * @var string
+         */
+        public $objectName;
+        /**
+         * The export file size.
+         *
+         * @var string
+         */
+        public $size;
+        /**
+         * The name of the Cloud Storage bucket for the export file. You can use this
+         * value in the Cloud Storage [JSON
+         * API](https://cloud.google.com/storage/docs/json_api) or [XML
+         * API](https://cloud.google.com/storage/docs/xml-api), but not to list the
+         * bucket contents. Instead, you can [get individual export
+         * files](https://cloud.google.com/storage/docs/json_api/v1/objects/get) by
+         * object name.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * The md5 hash of the file.
+         *
+         * @param string $md5Hash
+         */
+        public function setMd5Hash($md5Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMd5Hash()
+        {
+        }
+        /**
+         * The name of the Cloud Storage object for the export file. You can use this
+         * value in the Cloud Storage [JSON
+         * API](https://cloud.google.com/storage/docs/json_api) or [XML
+         * API](https://cloud.google.com/storage/docs/xml-api).
+         *
+         * @param string $objectName
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
+        /**
+         * The export file size.
+         *
+         * @param string $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\CloudStorageFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * The md5 hash of the file.
-     *
-     * @param string $md5Hash
-     */
-    public function setMd5Hash($md5Hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMd5Hash()
-    {
-    }
-    /**
-     * The name of the Cloud Storage object for the export file. You can use this
-     * value in the Cloud Storage [JSON
-     * API](https://cloud.google.com/storage/docs/json_api) or [XML
-     * API](https://cloud.google.com/storage/docs/xml-api).
-     *
-     * @param string $objectName
-     */
-    public function setObjectName($objectName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectName()
-    {
-    }
-    /**
-     * The export file size.
-     *
-     * @param string $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
+    class Google_Service_Vault_CloudStorageFile extends \Google\Service\Vault\CloudStorageFile
     {
     }
 }

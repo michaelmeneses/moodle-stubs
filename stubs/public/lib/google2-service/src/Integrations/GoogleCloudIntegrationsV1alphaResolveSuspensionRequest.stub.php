@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaResolveSuspensionRequest extends \Google\Model
-{
-    protected $suspensionType = GoogleCloudIntegrationsV1alphaSuspension::class;
-    protected $suspensionDataType = '';
-    /**
-     * Suspension, containing the event_execution_info_id, task_id, and state to
-     * set on the corresponding suspension record.
-     *
-     * @param GoogleCloudIntegrationsV1alphaSuspension $suspension
-     */
-    public function setSuspension(GoogleCloudIntegrationsV1alphaSuspension $suspension)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaResolveSuspensionRequest extends \Google\Model
     {
+        protected $suspensionType = GoogleCloudIntegrationsV1alphaSuspension::class;
+        protected $suspensionDataType = '';
+        /**
+         * Suspension, containing the event_execution_info_id, task_id, and state to
+         * set on the corresponding suspension record.
+         *
+         * @param GoogleCloudIntegrationsV1alphaSuspension $suspension
+         */
+        public function setSuspension(GoogleCloudIntegrationsV1alphaSuspension $suspension)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaSuspension
+         */
+        public function getSuspension()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaSuspension
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaResolveSuspensionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuspension()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaResolveSuspensionRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaResolveSuspensionRequest
     {
     }
 }

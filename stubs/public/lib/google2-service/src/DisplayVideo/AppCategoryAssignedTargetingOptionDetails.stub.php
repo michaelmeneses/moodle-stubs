@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AppCategoryAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Output only. The display name of the app category.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * Required. The targeting_option_id field when targeting_type is
-     * `TARGETING_TYPE_APP_CATEGORY`.
-     *
-     * @var string
-     */
-    public $targetingOptionId;
-    /**
-     * Output only. The display name of the app category.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class AppCategoryAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Output only. The display name of the app category.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * Required. The targeting_option_id field when targeting_type is
+         * `TARGETING_TYPE_APP_CATEGORY`.
+         *
+         * @var string
+         */
+        public $targetingOptionId;
+        /**
+         * Output only. The display name of the app category.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
+        /**
+         * Required. The targeting_option_id field when targeting_type is
+         * `TARGETING_TYPE_APP_CATEGORY`.
+         *
+         * @param string $targetingOptionId
+         */
+        public function setTargetingOptionId($targetingOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AppCategoryAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNegative()
-    {
-    }
-    /**
-     * Required. The targeting_option_id field when targeting_type is
-     * `TARGETING_TYPE_APP_CATEGORY`.
-     *
-     * @param string $targetingOptionId
-     */
-    public function setTargetingOptionId($targetingOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetingOptionId()
+    class Google_Service_DisplayVideo_AppCategoryAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\AppCategoryAssignedTargetingOptionDetails
     {
     }
 }

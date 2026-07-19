@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ToolOutputReference extends \Google\Model
-{
-    protected $creationTimeType = Timestamp::class;
-    protected $creationTimeDataType = '';
-    protected $outputType = FileReference::class;
-    protected $outputDataType = '';
-    protected $testCaseType = TestCaseReference::class;
-    protected $testCaseDataType = '';
-    /**
-     * The creation time of the file. - In response: present if set by
-     * create/update request - In create/update request: optional
-     *
-     * @param Timestamp $creationTime
-     */
-    public function setCreationTime(Timestamp $creationTime)
+namespace Google\Service\ToolResults {
+    class ToolOutputReference extends \Google\Model
     {
+        protected $creationTimeType = Timestamp::class;
+        protected $creationTimeDataType = '';
+        protected $outputType = FileReference::class;
+        protected $outputDataType = '';
+        protected $testCaseType = TestCaseReference::class;
+        protected $testCaseDataType = '';
+        /**
+         * The creation time of the file. - In response: present if set by
+         * create/update request - In create/update request: optional
+         *
+         * @param Timestamp $creationTime
+         */
+        public function setCreationTime(Timestamp $creationTime)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * A FileReference to an output file. - In response: always set - In
+         * create/update request: always set
+         *
+         * @param FileReference $output
+         */
+        public function setOutput(FileReference $output)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getOutput()
+        {
+        }
+        /**
+         * The test case to which this output file belongs. - In response: present if
+         * set by create/update request - In create/update request: optional
+         *
+         * @param TestCaseReference $testCase
+         */
+        public function setTestCase(TestCaseReference $testCase)
+        {
+        }
+        /**
+         * @return TestCaseReference
+         */
+        public function getTestCase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Timestamp
+     * Runtime class alias of \Google\Service\ToolResults\ToolOutputReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * A FileReference to an output file. - In response: always set - In
-     * create/update request: always set
-     *
-     * @param FileReference $output
-     */
-    public function setOutput(FileReference $output)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getOutput()
-    {
-    }
-    /**
-     * The test case to which this output file belongs. - In response: present if
-     * set by create/update request - In create/update request: optional
-     *
-     * @param TestCaseReference $testCase
-     */
-    public function setTestCase(TestCaseReference $testCase)
-    {
-    }
-    /**
-     * @return TestCaseReference
-     */
-    public function getTestCase()
+    class Google_Service_ToolResults_ToolOutputReference extends \Google\Service\ToolResults\ToolOutputReference
     {
     }
 }

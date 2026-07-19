@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListColumnDataProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'columnDataProfiles';
-    protected $columnDataProfilesType = GooglePrivacyDlpV2ColumnDataProfile::class;
-    protected $columnDataProfilesDataType = 'array';
-    /**
-     * The next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of data profiles.
-     *
-     * @param GooglePrivacyDlpV2ColumnDataProfile[] $columnDataProfiles
-     */
-    public function setColumnDataProfiles($columnDataProfiles)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListColumnDataProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'columnDataProfiles';
+        protected $columnDataProfilesType = GooglePrivacyDlpV2ColumnDataProfile::class;
+        protected $columnDataProfilesDataType = 'array';
+        /**
+         * The next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of data profiles.
+         *
+         * @param GooglePrivacyDlpV2ColumnDataProfile[] $columnDataProfiles
+         */
+        public function setColumnDataProfiles($columnDataProfiles)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ColumnDataProfile[]
+         */
+        public function getColumnDataProfiles()
+        {
+        }
+        /**
+         * The next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ColumnDataProfile[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListColumnDataProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnDataProfiles()
-    {
-    }
-    /**
-     * The next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListColumnDataProfilesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListColumnDataProfilesResponse
     {
     }
 }

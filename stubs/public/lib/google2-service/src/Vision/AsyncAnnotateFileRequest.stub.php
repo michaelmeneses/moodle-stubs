@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class AsyncAnnotateFileRequest extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    protected $featuresType = Feature::class;
-    protected $featuresDataType = 'array';
-    protected $imageContextType = ImageContext::class;
-    protected $imageContextDataType = '';
-    protected $inputConfigType = InputConfig::class;
-    protected $inputConfigDataType = '';
-    protected $outputConfigType = OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Required. Requested features.
-     *
-     * @param Feature[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\Vision {
+    class AsyncAnnotateFileRequest extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        protected $featuresType = Feature::class;
+        protected $featuresDataType = 'array';
+        protected $imageContextType = ImageContext::class;
+        protected $imageContextDataType = '';
+        protected $inputConfigType = InputConfig::class;
+        protected $inputConfigDataType = '';
+        protected $outputConfigType = OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Required. Requested features.
+         *
+         * @param Feature[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return Feature[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * Additional context that may accompany the image(s) in the file.
+         *
+         * @param ImageContext $imageContext
+         */
+        public function setImageContext(ImageContext $imageContext)
+        {
+        }
+        /**
+         * @return ImageContext
+         */
+        public function getImageContext()
+        {
+        }
+        /**
+         * Required. Information about the input file.
+         *
+         * @param InputConfig $inputConfig
+         */
+        public function setInputConfig(InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Required. The desired output location and metadata (e.g. format).
+         *
+         * @param OutputConfig $outputConfig
+         */
+        public function setOutputConfig(OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feature[]
+     * Runtime class alias of \Google\Service\Vision\AsyncAnnotateFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
-    {
-    }
-    /**
-     * Additional context that may accompany the image(s) in the file.
-     *
-     * @param ImageContext $imageContext
-     */
-    public function setImageContext(ImageContext $imageContext)
-    {
-    }
-    /**
-     * @return ImageContext
-     */
-    public function getImageContext()
-    {
-    }
-    /**
-     * Required. Information about the input file.
-     *
-     * @param InputConfig $inputConfig
-     */
-    public function setInputConfig(InputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return InputConfig
-     */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Required. The desired output location and metadata (e.g. format).
-     *
-     * @param OutputConfig $outputConfig
-     */
-    public function setOutputConfig(OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return OutputConfig
-     */
-    public function getOutputConfig()
+    class Google_Service_Vision_AsyncAnnotateFileRequest extends \Google\Service\Vision\AsyncAnnotateFileRequest
     {
     }
 }

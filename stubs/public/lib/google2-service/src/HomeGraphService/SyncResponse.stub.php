@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class SyncResponse extends \Google\Model
-{
-    protected $payloadType = SyncResponsePayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Request ID used for debugging. Copied from the request.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Devices associated with the third-party user.
-     *
-     * @param SyncResponsePayload $payload
-     */
-    public function setPayload(SyncResponsePayload $payload)
+namespace Google\Service\HomeGraphService {
+    class SyncResponse extends \Google\Model
     {
+        protected $payloadType = SyncResponsePayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Request ID used for debugging. Copied from the request.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Devices associated with the third-party user.
+         *
+         * @param SyncResponsePayload $payload
+         */
+        public function setPayload(SyncResponsePayload $payload)
+        {
+        }
+        /**
+         * @return SyncResponsePayload
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Request ID used for debugging. Copied from the request.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SyncResponsePayload
+     * Runtime class alias of \Google\Service\HomeGraphService\SyncResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
-    {
-    }
-    /**
-     * Request ID used for debugging. Copied from the request.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_HomeGraphService_SyncResponse extends \Google\Service\HomeGraphService\SyncResponse
     {
     }
 }

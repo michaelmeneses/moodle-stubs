@@ -8,6 +8,11 @@
  */
 namespace Aws\Endpoint\UseFipsEndpoint;
 
+use Aws\AbstractConfigurationProvider;
+use Aws\CacheInterface;
+use Aws\ConfigurationProviderInterface;
+use Aws\Endpoint\UseFipsEndpoint\Exception\ConfigurationException;
+use GuzzleHttp\Promise;
 /**
  * A configuration provider is a function that returns a promise that is
  * fulfilled with a {@see \Aws\Endpoint\UseFipsEndpoint\onfigurationInterface}

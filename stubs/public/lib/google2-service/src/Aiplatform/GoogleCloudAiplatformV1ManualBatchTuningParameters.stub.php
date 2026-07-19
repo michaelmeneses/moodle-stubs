@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ManualBatchTuningParameters extends \Google\Model
-{
-    /**
-     * Immutable. The number of the records (e.g. instances) of the operation
-     * given in each batch to a machine replica. Machine type, and size of a
-     * single record should be considered when setting this parameter, higher
-     * value speeds up the batch operation's execution, but too high value will
-     * result in a whole batch not fitting in a machine's memory, and the whole
-     * operation will fail. The default value is 64.
-     *
-     * @var int
-     */
-    public $batchSize;
-    /**
-     * Immutable. The number of the records (e.g. instances) of the operation
-     * given in each batch to a machine replica. Machine type, and size of a
-     * single record should be considered when setting this parameter, higher
-     * value speeds up the batch operation's execution, but too high value will
-     * result in a whole batch not fitting in a machine's memory, and the whole
-     * operation will fail. The default value is 64.
-     *
-     * @param int $batchSize
-     */
-    public function setBatchSize($batchSize)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ManualBatchTuningParameters extends \Google\Model
     {
+        /**
+         * Immutable. The number of the records (e.g. instances) of the operation
+         * given in each batch to a machine replica. Machine type, and size of a
+         * single record should be considered when setting this parameter, higher
+         * value speeds up the batch operation's execution, but too high value will
+         * result in a whole batch not fitting in a machine's memory, and the whole
+         * operation will fail. The default value is 64.
+         *
+         * @var int
+         */
+        public $batchSize;
+        /**
+         * Immutable. The number of the records (e.g. instances) of the operation
+         * given in each batch to a machine replica. Machine type, and size of a
+         * single record should be considered when setting this parameter, higher
+         * value speeds up the batch operation's execution, but too high value will
+         * result in a whole batch not fitting in a machine's memory, and the whole
+         * operation will fail. The default value is 64.
+         *
+         * @param int $batchSize
+         */
+        public function setBatchSize($batchSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBatchSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ManualBatchTuningParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchSize()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ManualBatchTuningParameters extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ManualBatchTuningParameters
     {
     }
 }

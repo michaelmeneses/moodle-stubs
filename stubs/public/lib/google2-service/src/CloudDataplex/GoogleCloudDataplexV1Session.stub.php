@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1Session extends \Google\Model
-{
-    /**
-     * State is not specified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Resource is active, i.e., ready to use.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Resource is under creation.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Resource is under deletion.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Resource is active but has unresolved actions.
-     */
-    public const STATE_ACTION_REQUIRED = 'ACTION_REQUIRED';
-    /**
-     * Output only. Session start time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The relative resource name of the content, of the form: projec
-     * ts/{project_id}/locations/{location_id}/lakes/{lake_id}/environment/{enviro
-     * nment_id}/sessions/{session_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. State of Session
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Email of user running the session.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Output only. Session start time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1Session extends \Google\Model
     {
+        /**
+         * State is not specified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Resource is active, i.e., ready to use.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Resource is under creation.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Resource is under deletion.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Resource is active but has unresolved actions.
+         */
+        public const STATE_ACTION_REQUIRED = 'ACTION_REQUIRED';
+        /**
+         * Output only. Session start time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The relative resource name of the content, of the form: projec
+         * ts/{project_id}/locations/{location_id}/lakes/{lake_id}/environment/{enviro
+         * nment_id}/sessions/{session_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. State of Session
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Email of user running the session.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Output only. Session start time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The relative resource name of the content, of the form: projec
+         * ts/{project_id}/locations/{location_id}/lakes/{lake_id}/environment/{enviro
+         * nment_id}/sessions/{session_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. State of Session
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING,
+         * ACTION_REQUIRED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Email of user running the session.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1Session registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The relative resource name of the content, of the form: projec
-     * ts/{project_id}/locations/{location_id}/lakes/{lake_id}/environment/{enviro
-     * nment_id}/sessions/{session_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. State of Session
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING,
-     * ACTION_REQUIRED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Email of user running the session.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1Session extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1Session
     {
     }
 }

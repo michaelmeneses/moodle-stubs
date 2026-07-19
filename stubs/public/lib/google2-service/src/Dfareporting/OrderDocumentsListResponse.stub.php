@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OrderDocumentsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'orderDocuments';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $orderDocumentsType = OrderDocument::class;
-    protected $orderDocumentsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class OrderDocumentsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'orderDocuments';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $orderDocumentsType = OrderDocument::class;
+        protected $orderDocumentsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param OrderDocument[]
+         */
+        public function setOrderDocuments($orderDocuments)
+        {
+        }
+        /**
+         * @return OrderDocument[]
+         */
+        public function getOrderDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OrderDocumentsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param OrderDocument[]
-     */
-    public function setOrderDocuments($orderDocuments)
-    {
-    }
-    /**
-     * @return OrderDocument[]
-     */
-    public function getOrderDocuments()
+    class Google_Service_Dfareporting_OrderDocumentsListResponse extends \Google\Service\Dfareporting\OrderDocumentsListResponse
     {
     }
 }

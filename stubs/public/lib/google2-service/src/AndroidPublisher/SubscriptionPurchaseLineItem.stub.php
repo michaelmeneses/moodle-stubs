@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionPurchaseLineItem extends \Google\Model
-{
-    protected $autoRenewingPlanType = AutoRenewingPlan::class;
-    protected $autoRenewingPlanDataType = '';
-    protected $deferredItemRemovalType = DeferredItemRemoval::class;
-    protected $deferredItemRemovalDataType = '';
-    protected $deferredItemReplacementType = DeferredItemReplacement::class;
-    protected $deferredItemReplacementDataType = '';
-    /**
-     * Time at which the subscription expired or will expire unless the access is
-     * extended (ex. renews).
-     *
-     * @var string
-     */
-    public $expiryTime;
-    protected $itemReplacementType = ItemReplacement::class;
-    protected $itemReplacementDataType = '';
-    /**
-     * The order id of the latest successful order associated with this item. Not
-     * present if the item is not owned by the user yet (e.g. the item being
-     * deferred replaced to).
-     *
-     * @var string
-     */
-    public $latestSuccessfulOrderId;
-    protected $offerDetailsType = OfferDetails::class;
-    protected $offerDetailsDataType = '';
-    protected $prepaidPlanType = PrepaidPlan::class;
-    protected $prepaidPlanDataType = '';
-    /**
-     * The purchased product ID (for example, 'monthly001').
-     *
-     * @var string
-     */
-    public $productId;
-    protected $signupPromotionType = SignupPromotion::class;
-    protected $signupPromotionDataType = '';
-    /**
-     * The item is auto renewing.
-     *
-     * @param AutoRenewingPlan $autoRenewingPlan
-     */
-    public function setAutoRenewingPlan(AutoRenewingPlan $autoRenewingPlan)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionPurchaseLineItem extends \Google\Model
     {
+        protected $autoRenewingPlanType = AutoRenewingPlan::class;
+        protected $autoRenewingPlanDataType = '';
+        protected $deferredItemRemovalType = DeferredItemRemoval::class;
+        protected $deferredItemRemovalDataType = '';
+        protected $deferredItemReplacementType = DeferredItemReplacement::class;
+        protected $deferredItemReplacementDataType = '';
+        /**
+         * Time at which the subscription expired or will expire unless the access is
+         * extended (ex. renews).
+         *
+         * @var string
+         */
+        public $expiryTime;
+        protected $itemReplacementType = ItemReplacement::class;
+        protected $itemReplacementDataType = '';
+        /**
+         * The order id of the latest successful order associated with this item. Not
+         * present if the item is not owned by the user yet (e.g. the item being
+         * deferred replaced to).
+         *
+         * @var string
+         */
+        public $latestSuccessfulOrderId;
+        protected $offerDetailsType = OfferDetails::class;
+        protected $offerDetailsDataType = '';
+        protected $prepaidPlanType = PrepaidPlan::class;
+        protected $prepaidPlanDataType = '';
+        /**
+         * The purchased product ID (for example, 'monthly001').
+         *
+         * @var string
+         */
+        public $productId;
+        protected $signupPromotionType = SignupPromotion::class;
+        protected $signupPromotionDataType = '';
+        /**
+         * The item is auto renewing.
+         *
+         * @param AutoRenewingPlan $autoRenewingPlan
+         */
+        public function setAutoRenewingPlan(AutoRenewingPlan $autoRenewingPlan)
+        {
+        }
+        /**
+         * @return AutoRenewingPlan
+         */
+        public function getAutoRenewingPlan()
+        {
+        }
+        /**
+         * Information for deferred item removal.
+         *
+         * @param DeferredItemRemoval $deferredItemRemoval
+         */
+        public function setDeferredItemRemoval(DeferredItemRemoval $deferredItemRemoval)
+        {
+        }
+        /**
+         * @return DeferredItemRemoval
+         */
+        public function getDeferredItemRemoval()
+        {
+        }
+        /**
+         * Information for deferred item replacement.
+         *
+         * @param DeferredItemReplacement $deferredItemReplacement
+         */
+        public function setDeferredItemReplacement(DeferredItemReplacement $deferredItemReplacement)
+        {
+        }
+        /**
+         * @return DeferredItemReplacement
+         */
+        public function getDeferredItemReplacement()
+        {
+        }
+        /**
+         * Time at which the subscription expired or will expire unless the access is
+         * extended (ex. renews).
+         *
+         * @param string $expiryTime
+         */
+        public function setExpiryTime($expiryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTime()
+        {
+        }
+        /**
+         * Details of the item being replaced. This field is only populated if this
+         * item replaced another item in a previous subscription and is only available
+         * for 60 days after the purchase time.
+         *
+         * @param ItemReplacement $itemReplacement
+         */
+        public function setItemReplacement(ItemReplacement $itemReplacement)
+        {
+        }
+        /**
+         * @return ItemReplacement
+         */
+        public function getItemReplacement()
+        {
+        }
+        /**
+         * The order id of the latest successful order associated with this item. Not
+         * present if the item is not owned by the user yet (e.g. the item being
+         * deferred replaced to).
+         *
+         * @param string $latestSuccessfulOrderId
+         */
+        public function setLatestSuccessfulOrderId($latestSuccessfulOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestSuccessfulOrderId()
+        {
+        }
+        /**
+         * The offer details for this item.
+         *
+         * @param OfferDetails $offerDetails
+         */
+        public function setOfferDetails(OfferDetails $offerDetails)
+        {
+        }
+        /**
+         * @return OfferDetails
+         */
+        public function getOfferDetails()
+        {
+        }
+        /**
+         * The item is prepaid.
+         *
+         * @param PrepaidPlan $prepaidPlan
+         */
+        public function setPrepaidPlan(PrepaidPlan $prepaidPlan)
+        {
+        }
+        /**
+         * @return PrepaidPlan
+         */
+        public function getPrepaidPlan()
+        {
+        }
+        /**
+         * The purchased product ID (for example, 'monthly001').
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Promotion details about this item. Only set if a promotion was applied
+         * during signup.
+         *
+         * @param SignupPromotion $signupPromotion
+         */
+        public function setSignupPromotion(SignupPromotion $signupPromotion)
+        {
+        }
+        /**
+         * @return SignupPromotion
+         */
+        public function getSignupPromotion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoRenewingPlan
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionPurchaseLineItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoRenewingPlan()
-    {
-    }
-    /**
-     * Information for deferred item removal.
-     *
-     * @param DeferredItemRemoval $deferredItemRemoval
-     */
-    public function setDeferredItemRemoval(DeferredItemRemoval $deferredItemRemoval)
-    {
-    }
-    /**
-     * @return DeferredItemRemoval
-     */
-    public function getDeferredItemRemoval()
-    {
-    }
-    /**
-     * Information for deferred item replacement.
-     *
-     * @param DeferredItemReplacement $deferredItemReplacement
-     */
-    public function setDeferredItemReplacement(DeferredItemReplacement $deferredItemReplacement)
-    {
-    }
-    /**
-     * @return DeferredItemReplacement
-     */
-    public function getDeferredItemReplacement()
-    {
-    }
-    /**
-     * Time at which the subscription expired or will expire unless the access is
-     * extended (ex. renews).
-     *
-     * @param string $expiryTime
-     */
-    public function setExpiryTime($expiryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiryTime()
-    {
-    }
-    /**
-     * Details of the item being replaced. This field is only populated if this
-     * item replaced another item in a previous subscription and is only available
-     * for 60 days after the purchase time.
-     *
-     * @param ItemReplacement $itemReplacement
-     */
-    public function setItemReplacement(ItemReplacement $itemReplacement)
-    {
-    }
-    /**
-     * @return ItemReplacement
-     */
-    public function getItemReplacement()
-    {
-    }
-    /**
-     * The order id of the latest successful order associated with this item. Not
-     * present if the item is not owned by the user yet (e.g. the item being
-     * deferred replaced to).
-     *
-     * @param string $latestSuccessfulOrderId
-     */
-    public function setLatestSuccessfulOrderId($latestSuccessfulOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestSuccessfulOrderId()
-    {
-    }
-    /**
-     * The offer details for this item.
-     *
-     * @param OfferDetails $offerDetails
-     */
-    public function setOfferDetails(OfferDetails $offerDetails)
-    {
-    }
-    /**
-     * @return OfferDetails
-     */
-    public function getOfferDetails()
-    {
-    }
-    /**
-     * The item is prepaid.
-     *
-     * @param PrepaidPlan $prepaidPlan
-     */
-    public function setPrepaidPlan(PrepaidPlan $prepaidPlan)
-    {
-    }
-    /**
-     * @return PrepaidPlan
-     */
-    public function getPrepaidPlan()
-    {
-    }
-    /**
-     * The purchased product ID (for example, 'monthly001').
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Promotion details about this item. Only set if a promotion was applied
-     * during signup.
-     *
-     * @param SignupPromotion $signupPromotion
-     */
-    public function setSignupPromotion(SignupPromotion $signupPromotion)
-    {
-    }
-    /**
-     * @return SignupPromotion
-     */
-    public function getSignupPromotion()
+    class Google_Service_AndroidPublisher_SubscriptionPurchaseLineItem extends \Google\Service\AndroidPublisher\SubscriptionPurchaseLineItem
     {
     }
 }

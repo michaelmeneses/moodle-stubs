@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $documentaiService = new Google\Service\Document(...);
- *   $operations = $documentaiService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\Document\Resource {
+    use Google\Service\Document\GoogleProtobufEmpty;
     /**
-     * Deletes a long-running operation. This method indicates that the client is no
-     * longer interested in the operation result. It does not cancel the operation.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $documentaiService = new Google\Service\Document(...);
+     *   $operations = $documentaiService->operations;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class Operations extends \Google\Service\Resource
+    {
+        /**
+         * Deletes a long-running operation. This method indicates that the client is no
+         * longer interested in the operation result. It does not cancel the operation.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Document\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Document_Resource_Operations extends \Google\Service\Document\Resource\Operations
     {
     }
 }

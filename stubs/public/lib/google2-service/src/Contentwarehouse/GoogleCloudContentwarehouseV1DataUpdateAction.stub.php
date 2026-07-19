@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1DataUpdateAction extends \Google\Model
-{
-    /**
-     * Map of (K, V) -> (valid name of the field, new value of the field) E.g.,
-     * ("age", "60") entry triggers update of field age with a value of 60. If the
-     * field is not present then new entry is added. During update action
-     * execution, value strings will be casted to appropriate types.
-     *
-     * @var string[]
-     */
-    public $entries;
-    /**
-     * Map of (K, V) -> (valid name of the field, new value of the field) E.g.,
-     * ("age", "60") entry triggers update of field age with a value of 60. If the
-     * field is not present then new entry is added. During update action
-     * execution, value strings will be casted to appropriate types.
-     *
-     * @param string[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1DataUpdateAction extends \Google\Model
     {
+        /**
+         * Map of (K, V) -> (valid name of the field, new value of the field) E.g.,
+         * ("age", "60") entry triggers update of field age with a value of 60. If the
+         * field is not present then new entry is added. During update action
+         * execution, value strings will be casted to appropriate types.
+         *
+         * @var string[]
+         */
+        public $entries;
+        /**
+         * Map of (K, V) -> (valid name of the field, new value of the field) E.g.,
+         * ("age", "60") entry triggers update of field age with a value of 60. If the
+         * field is not present then new entry is added. During update action
+         * execution, value strings will be casted to appropriate types.
+         *
+         * @param string[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DataUpdateAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1DataUpdateAction extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DataUpdateAction
     {
     }
 }

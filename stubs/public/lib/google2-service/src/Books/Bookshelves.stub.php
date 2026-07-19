@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Bookshelves extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Bookshelf::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of bookshelves.
-     *
-     * @param Bookshelf[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Bookshelves extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Bookshelf::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of bookshelves.
+         *
+         * @param Bookshelf[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Bookshelf[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bookshelf[]
+     * Runtime class alias of \Google\Service\Books\Bookshelves registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Books_Bookshelves extends \Google\Service\Books\Bookshelves
     {
     }
 }

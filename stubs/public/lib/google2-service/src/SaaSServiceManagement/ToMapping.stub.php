@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class ToMapping extends \Google\Model
-{
-    /**
-     * Required. Alias of the dependency that the inputVariable will pass its
-     * value to
-     *
-     * @var string
-     */
-    public $dependency;
-    /**
-     * Optional. Tells SaaS Runtime if this mapping should be used during lookup
-     * or not
-     *
-     * @var bool
-     */
-    public $ignoreForLookup;
-    /**
-     * Required. Name of the inputVariable on the dependency
-     *
-     * @var string
-     */
-    public $inputVariable;
-    /**
-     * Required. Alias of the dependency that the inputVariable will pass its
-     * value to
-     *
-     * @param string $dependency
-     */
-    public function setDependency($dependency)
+namespace Google\Service\SaaSServiceManagement {
+    class ToMapping extends \Google\Model
     {
+        /**
+         * Required. Alias of the dependency that the inputVariable will pass its
+         * value to
+         *
+         * @var string
+         */
+        public $dependency;
+        /**
+         * Optional. Tells SaaS Runtime if this mapping should be used during lookup
+         * or not
+         *
+         * @var bool
+         */
+        public $ignoreForLookup;
+        /**
+         * Required. Name of the inputVariable on the dependency
+         *
+         * @var string
+         */
+        public $inputVariable;
+        /**
+         * Required. Alias of the dependency that the inputVariable will pass its
+         * value to
+         *
+         * @param string $dependency
+         */
+        public function setDependency($dependency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDependency()
+        {
+        }
+        /**
+         * Optional. Tells SaaS Runtime if this mapping should be used during lookup
+         * or not
+         *
+         * @param bool $ignoreForLookup
+         */
+        public function setIgnoreForLookup($ignoreForLookup)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreForLookup()
+        {
+        }
+        /**
+         * Required. Name of the inputVariable on the dependency
+         *
+         * @param string $inputVariable
+         */
+        public function setInputVariable($inputVariable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\ToMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependency()
-    {
-    }
-    /**
-     * Optional. Tells SaaS Runtime if this mapping should be used during lookup
-     * or not
-     *
-     * @param bool $ignoreForLookup
-     */
-    public function setIgnoreForLookup($ignoreForLookup)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreForLookup()
-    {
-    }
-    /**
-     * Required. Name of the inputVariable on the dependency
-     *
-     * @param string $inputVariable
-     */
-    public function setInputVariable($inputVariable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputVariable()
+    class Google_Service_SaaSServiceManagement_ToMapping extends \Google\Service\SaaSServiceManagement\ToMapping
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class StandaloneApkMetadata extends \Google\Collection
-{
-    protected $collection_key = 'fusedModuleName';
-    /**
-     * Names of the modules fused in this standalone APK.
-     *
-     * @var string[]
-     */
-    public $fusedModuleName;
-    /**
-     * Names of the modules fused in this standalone APK.
-     *
-     * @param string[] $fusedModuleName
-     */
-    public function setFusedModuleName($fusedModuleName)
+namespace Google\Service\AndroidPublisher {
+    class StandaloneApkMetadata extends \Google\Collection
     {
+        protected $collection_key = 'fusedModuleName';
+        /**
+         * Names of the modules fused in this standalone APK.
+         *
+         * @var string[]
+         */
+        public $fusedModuleName;
+        /**
+         * Names of the modules fused in this standalone APK.
+         *
+         * @param string[] $fusedModuleName
+         */
+        public function setFusedModuleName($fusedModuleName)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFusedModuleName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\StandaloneApkMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFusedModuleName()
+    class Google_Service_AndroidPublisher_StandaloneApkMetadata extends \Google\Service\AndroidPublisher\StandaloneApkMetadata
     {
     }
 }

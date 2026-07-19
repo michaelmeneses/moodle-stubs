@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimeActionSchemas';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimeActionSchemasType = GoogleCloudIntegrationsV1alphaRuntimeActionSchema::class;
-    protected $runtimeActionSchemasDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimeActionSchemas';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimeActionSchemasType = GoogleCloudIntegrationsV1alphaRuntimeActionSchema::class;
+        protected $runtimeActionSchemasDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Runtime action schemas.
+         *
+         * @param GoogleCloudIntegrationsV1alphaRuntimeActionSchema[] $runtimeActionSchemas
+         */
+        public function setRuntimeActionSchemas($runtimeActionSchemas)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaRuntimeActionSchema[]
+         */
+        public function getRuntimeActionSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Runtime action schemas.
-     *
-     * @param GoogleCloudIntegrationsV1alphaRuntimeActionSchema[] $runtimeActionSchemas
-     */
-    public function setRuntimeActionSchemas($runtimeActionSchemas)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaRuntimeActionSchema[]
-     */
-    public function getRuntimeActionSchemas()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeActionSchemasResponse
     {
     }
 }

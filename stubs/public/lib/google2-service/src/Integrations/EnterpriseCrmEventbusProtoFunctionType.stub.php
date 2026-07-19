@@ -21,178 +21,187 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoFunctionType extends \Google\Model
-{
-    protected $baseFunctionType = EnterpriseCrmEventbusProtoBaseFunction::class;
-    protected $baseFunctionDataType = '';
-    protected $booleanArrayFunctionType = EnterpriseCrmEventbusProtoBooleanArrayFunction::class;
-    protected $booleanArrayFunctionDataType = '';
-    protected $booleanFunctionType = EnterpriseCrmEventbusProtoBooleanFunction::class;
-    protected $booleanFunctionDataType = '';
-    protected $doubleArrayFunctionType = EnterpriseCrmEventbusProtoDoubleArrayFunction::class;
-    protected $doubleArrayFunctionDataType = '';
-    protected $doubleFunctionType = EnterpriseCrmEventbusProtoDoubleFunction::class;
-    protected $doubleFunctionDataType = '';
-    protected $intArrayFunctionType = EnterpriseCrmEventbusProtoIntArrayFunction::class;
-    protected $intArrayFunctionDataType = '';
-    protected $intFunctionType = EnterpriseCrmEventbusProtoIntFunction::class;
-    protected $intFunctionDataType = '';
-    protected $jsonFunctionType = EnterpriseCrmEventbusProtoJsonFunction::class;
-    protected $jsonFunctionDataType = '';
-    protected $protoArrayFunctionType = EnterpriseCrmEventbusProtoProtoArrayFunction::class;
-    protected $protoArrayFunctionDataType = '';
-    protected $protoFunctionType = EnterpriseCrmEventbusProtoProtoFunction::class;
-    protected $protoFunctionDataType = '';
-    protected $stringArrayFunctionType = EnterpriseCrmEventbusProtoStringArrayFunction::class;
-    protected $stringArrayFunctionDataType = '';
-    protected $stringFunctionType = EnterpriseCrmEventbusProtoStringFunction::class;
-    protected $stringFunctionDataType = '';
-    /**
-     * LINT.IfChange
-     *
-     * @param EnterpriseCrmEventbusProtoBaseFunction $baseFunction
-     */
-    public function setBaseFunction(EnterpriseCrmEventbusProtoBaseFunction $baseFunction)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoFunctionType extends \Google\Model
     {
+        protected $baseFunctionType = EnterpriseCrmEventbusProtoBaseFunction::class;
+        protected $baseFunctionDataType = '';
+        protected $booleanArrayFunctionType = EnterpriseCrmEventbusProtoBooleanArrayFunction::class;
+        protected $booleanArrayFunctionDataType = '';
+        protected $booleanFunctionType = EnterpriseCrmEventbusProtoBooleanFunction::class;
+        protected $booleanFunctionDataType = '';
+        protected $doubleArrayFunctionType = EnterpriseCrmEventbusProtoDoubleArrayFunction::class;
+        protected $doubleArrayFunctionDataType = '';
+        protected $doubleFunctionType = EnterpriseCrmEventbusProtoDoubleFunction::class;
+        protected $doubleFunctionDataType = '';
+        protected $intArrayFunctionType = EnterpriseCrmEventbusProtoIntArrayFunction::class;
+        protected $intArrayFunctionDataType = '';
+        protected $intFunctionType = EnterpriseCrmEventbusProtoIntFunction::class;
+        protected $intFunctionDataType = '';
+        protected $jsonFunctionType = EnterpriseCrmEventbusProtoJsonFunction::class;
+        protected $jsonFunctionDataType = '';
+        protected $protoArrayFunctionType = EnterpriseCrmEventbusProtoProtoArrayFunction::class;
+        protected $protoArrayFunctionDataType = '';
+        protected $protoFunctionType = EnterpriseCrmEventbusProtoProtoFunction::class;
+        protected $protoFunctionDataType = '';
+        protected $stringArrayFunctionType = EnterpriseCrmEventbusProtoStringArrayFunction::class;
+        protected $stringArrayFunctionDataType = '';
+        protected $stringFunctionType = EnterpriseCrmEventbusProtoStringFunction::class;
+        protected $stringFunctionDataType = '';
+        /**
+         * LINT.IfChange
+         *
+         * @param EnterpriseCrmEventbusProtoBaseFunction $baseFunction
+         */
+        public function setBaseFunction(EnterpriseCrmEventbusProtoBaseFunction $baseFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoBaseFunction
+         */
+        public function getBaseFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoBooleanArrayFunction $booleanArrayFunction
+         */
+        public function setBooleanArrayFunction(EnterpriseCrmEventbusProtoBooleanArrayFunction $booleanArrayFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoBooleanArrayFunction
+         */
+        public function getBooleanArrayFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoBooleanFunction $booleanFunction
+         */
+        public function setBooleanFunction(EnterpriseCrmEventbusProtoBooleanFunction $booleanFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoBooleanFunction
+         */
+        public function getBooleanFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoDoubleArrayFunction $doubleArrayFunction
+         */
+        public function setDoubleArrayFunction(EnterpriseCrmEventbusProtoDoubleArrayFunction $doubleArrayFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoDoubleArrayFunction
+         */
+        public function getDoubleArrayFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoDoubleFunction $doubleFunction
+         */
+        public function setDoubleFunction(EnterpriseCrmEventbusProtoDoubleFunction $doubleFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoDoubleFunction
+         */
+        public function getDoubleFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoIntArrayFunction $intArrayFunction
+         */
+        public function setIntArrayFunction(EnterpriseCrmEventbusProtoIntArrayFunction $intArrayFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoIntArrayFunction
+         */
+        public function getIntArrayFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoIntFunction $intFunction
+         */
+        public function setIntFunction(EnterpriseCrmEventbusProtoIntFunction $intFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoIntFunction
+         */
+        public function getIntFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoJsonFunction $jsonFunction
+         */
+        public function setJsonFunction(EnterpriseCrmEventbusProtoJsonFunction $jsonFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoJsonFunction
+         */
+        public function getJsonFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoProtoArrayFunction $protoArrayFunction
+         */
+        public function setProtoArrayFunction(EnterpriseCrmEventbusProtoProtoArrayFunction $protoArrayFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoProtoArrayFunction
+         */
+        public function getProtoArrayFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoProtoFunction $protoFunction
+         */
+        public function setProtoFunction(EnterpriseCrmEventbusProtoProtoFunction $protoFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoProtoFunction
+         */
+        public function getProtoFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoStringArrayFunction $stringArrayFunction
+         */
+        public function setStringArrayFunction(EnterpriseCrmEventbusProtoStringArrayFunction $stringArrayFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoStringArrayFunction
+         */
+        public function getStringArrayFunction()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoStringFunction $stringFunction
+         */
+        public function setStringFunction(EnterpriseCrmEventbusProtoStringFunction $stringFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoStringFunction
+         */
+        public function getStringFunction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoBaseFunction
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoFunctionType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoBooleanArrayFunction $booleanArrayFunction
-     */
-    public function setBooleanArrayFunction(EnterpriseCrmEventbusProtoBooleanArrayFunction $booleanArrayFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoBooleanArrayFunction
-     */
-    public function getBooleanArrayFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoBooleanFunction $booleanFunction
-     */
-    public function setBooleanFunction(EnterpriseCrmEventbusProtoBooleanFunction $booleanFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoBooleanFunction
-     */
-    public function getBooleanFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoDoubleArrayFunction $doubleArrayFunction
-     */
-    public function setDoubleArrayFunction(EnterpriseCrmEventbusProtoDoubleArrayFunction $doubleArrayFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoDoubleArrayFunction
-     */
-    public function getDoubleArrayFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoDoubleFunction $doubleFunction
-     */
-    public function setDoubleFunction(EnterpriseCrmEventbusProtoDoubleFunction $doubleFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoDoubleFunction
-     */
-    public function getDoubleFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoIntArrayFunction $intArrayFunction
-     */
-    public function setIntArrayFunction(EnterpriseCrmEventbusProtoIntArrayFunction $intArrayFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoIntArrayFunction
-     */
-    public function getIntArrayFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoIntFunction $intFunction
-     */
-    public function setIntFunction(EnterpriseCrmEventbusProtoIntFunction $intFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoIntFunction
-     */
-    public function getIntFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoJsonFunction $jsonFunction
-     */
-    public function setJsonFunction(EnterpriseCrmEventbusProtoJsonFunction $jsonFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoJsonFunction
-     */
-    public function getJsonFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoProtoArrayFunction $protoArrayFunction
-     */
-    public function setProtoArrayFunction(EnterpriseCrmEventbusProtoProtoArrayFunction $protoArrayFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoProtoArrayFunction
-     */
-    public function getProtoArrayFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoProtoFunction $protoFunction
-     */
-    public function setProtoFunction(EnterpriseCrmEventbusProtoProtoFunction $protoFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoProtoFunction
-     */
-    public function getProtoFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoStringArrayFunction $stringArrayFunction
-     */
-    public function setStringArrayFunction(EnterpriseCrmEventbusProtoStringArrayFunction $stringArrayFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoStringArrayFunction
-     */
-    public function getStringArrayFunction()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoStringFunction $stringFunction
-     */
-    public function setStringFunction(EnterpriseCrmEventbusProtoStringFunction $stringFunction)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoStringFunction
-     */
-    public function getStringFunction()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoFunctionType extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoFunctionType
     {
     }
 }

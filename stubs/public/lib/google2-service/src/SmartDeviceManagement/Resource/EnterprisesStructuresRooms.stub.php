@@ -21,40 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement\Resource;
-
-/**
- * The "rooms" collection of methods.
- * Typical usage is:
- *  <code>
- *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
- *   $rooms = $smartdevicemanagementService->enterprises_structures_rooms;
- *  </code>
- */
-class EnterprisesStructuresRooms extends \Google\Service\Resource
-{
+namespace Google\Service\SmartDeviceManagement\Resource {
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListRoomsResponse;
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Room;
     /**
-     * Gets a room managed by the enterprise. (rooms.get)
-     *
-     * @param string $name The name of the room requested. For example:
-     * "enterprises/XYZ/structures/ABC/rooms/123".
-     * @param array $optParams Optional parameters.
-     * @return GoogleHomeEnterpriseSdmV1Room
-     * @throws \Google\Service\Exception
+     * The "rooms" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
+     *   $rooms = $smartdevicemanagementService->enterprises_structures_rooms;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class EnterprisesStructuresRooms extends \Google\Service\Resource
     {
+        /**
+         * Gets a room managed by the enterprise. (rooms.get)
+         *
+         * @param string $name The name of the room requested. For example:
+         * "enterprises/XYZ/structures/ABC/rooms/123".
+         * @param array $optParams Optional parameters.
+         * @return GoogleHomeEnterpriseSdmV1Room
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists rooms managed by the enterprise. (rooms.listEnterprisesStructuresRooms)
+         *
+         * @param string $parent The parent resource name of the rooms requested. For
+         * example: "enterprises/XYZ/structures/ABC".
+         * @param array $optParams Optional parameters.
+         * @return GoogleHomeEnterpriseSdmV1ListRoomsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEnterprisesStructuresRooms($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists rooms managed by the enterprise. (rooms.listEnterprisesStructuresRooms)
-     *
-     * @param string $parent The parent resource name of the rooms requested. For
-     * example: "enterprises/XYZ/structures/ABC".
-     * @param array $optParams Optional parameters.
-     * @return GoogleHomeEnterpriseSdmV1ListRoomsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\Resource\EnterprisesStructuresRooms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listEnterprisesStructuresRooms($parent, $optParams = [])
+    class Google_Service_SmartDeviceManagement_Resource_EnterprisesStructuresRooms extends \Google\Service\SmartDeviceManagement\Resource\EnterprisesStructuresRooms
     {
     }
 }

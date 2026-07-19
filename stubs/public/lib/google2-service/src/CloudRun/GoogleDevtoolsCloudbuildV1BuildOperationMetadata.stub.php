@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1BuildOperationMetadata extends \Google\Model
-{
-    protected $buildType = GoogleDevtoolsCloudbuildV1Build::class;
-    protected $buildDataType = '';
-    /**
-     * The build that the operation is tracking.
-     *
-     * @param GoogleDevtoolsCloudbuildV1Build $build
-     */
-    public function setBuild(GoogleDevtoolsCloudbuildV1Build $build)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1BuildOperationMetadata extends \Google\Model
     {
+        protected $buildType = GoogleDevtoolsCloudbuildV1Build::class;
+        protected $buildDataType = '';
+        /**
+         * The build that the operation is tracking.
+         *
+         * @param GoogleDevtoolsCloudbuildV1Build $build
+         */
+        public function setBuild(GoogleDevtoolsCloudbuildV1Build $build)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1Build
+         */
+        public function getBuild()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsCloudbuildV1Build
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1BuildOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuild()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1BuildOperationMetadata extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1BuildOperationMetadata
     {
     }
 }

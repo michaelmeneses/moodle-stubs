@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList extends \Google\Collection
-{
-    protected $collection_key = 'referenceSentencePairs';
-    protected $referenceSentencePairsType = GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair::class;
-    protected $referenceSentencePairsDataType = 'array';
-    /**
-     * Reference sentence pairs.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair[] $referenceSentencePairs
-     */
-    public function setReferenceSentencePairs($referenceSentencePairs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList extends \Google\Collection
     {
+        protected $collection_key = 'referenceSentencePairs';
+        protected $referenceSentencePairsType = GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair::class;
+        protected $referenceSentencePairsDataType = 'array';
+        /**
+         * Reference sentence pairs.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair[] $referenceSentencePairs
+         */
+        public function setReferenceSentencePairs($referenceSentencePairs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair[]
+         */
+        public function getReferenceSentencePairs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceSentencePairs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList
     {
     }
 }

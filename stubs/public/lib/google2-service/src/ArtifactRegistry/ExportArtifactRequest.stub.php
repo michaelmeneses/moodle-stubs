@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ExportArtifactRequest extends \Google\Model
-{
-    /**
-     * The Cloud Storage path to export the artifact to. Should start with the
-     * bucket name, and optionally have a directory path. Examples: `dst_bucket`,
-     * `dst_bucket/sub_dir`. Existing objects with the same path will be
-     * overwritten.
-     *
-     * @var string
-     */
-    public $gcsPath;
-    /**
-     * The artifact tag to export. Format:projects/{project}/locations/{location}/
-     * repositories/{repository}/packages/{package}/tags/{tag}
-     *
-     * @var string
-     */
-    public $sourceTag;
-    /**
-     * The artifact version to export. Format: projects/{project}/locations/{locat
-     * ion}/repositories/{repository}/packages/{package}/versions/{version}
-     *
-     * @var string
-     */
-    public $sourceVersion;
-    /**
-     * The Cloud Storage path to export the artifact to. Should start with the
-     * bucket name, and optionally have a directory path. Examples: `dst_bucket`,
-     * `dst_bucket/sub_dir`. Existing objects with the same path will be
-     * overwritten.
-     *
-     * @param string $gcsPath
-     */
-    public function setGcsPath($gcsPath)
+namespace Google\Service\ArtifactRegistry {
+    class ExportArtifactRequest extends \Google\Model
     {
+        /**
+         * The Cloud Storage path to export the artifact to. Should start with the
+         * bucket name, and optionally have a directory path. Examples: `dst_bucket`,
+         * `dst_bucket/sub_dir`. Existing objects with the same path will be
+         * overwritten.
+         *
+         * @var string
+         */
+        public $gcsPath;
+        /**
+         * The artifact tag to export. Format:projects/{project}/locations/{location}/
+         * repositories/{repository}/packages/{package}/tags/{tag}
+         *
+         * @var string
+         */
+        public $sourceTag;
+        /**
+         * The artifact version to export. Format: projects/{project}/locations/{locat
+         * ion}/repositories/{repository}/packages/{package}/versions/{version}
+         *
+         * @var string
+         */
+        public $sourceVersion;
+        /**
+         * The Cloud Storage path to export the artifact to. Should start with the
+         * bucket name, and optionally have a directory path. Examples: `dst_bucket`,
+         * `dst_bucket/sub_dir`. Existing objects with the same path will be
+         * overwritten.
+         *
+         * @param string $gcsPath
+         */
+        public function setGcsPath($gcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPath()
+        {
+        }
+        /**
+         * The artifact tag to export. Format:projects/{project}/locations/{location}/
+         * repositories/{repository}/packages/{package}/tags/{tag}
+         *
+         * @param string $sourceTag
+         */
+        public function setSourceTag($sourceTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceTag()
+        {
+        }
+        /**
+         * The artifact version to export. Format: projects/{project}/locations/{locat
+         * ion}/repositories/{repository}/packages/{package}/versions/{version}
+         *
+         * @param string $sourceVersion
+         */
+        public function setSourceVersion($sourceVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ExportArtifactRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsPath()
-    {
-    }
-    /**
-     * The artifact tag to export. Format:projects/{project}/locations/{location}/
-     * repositories/{repository}/packages/{package}/tags/{tag}
-     *
-     * @param string $sourceTag
-     */
-    public function setSourceTag($sourceTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceTag()
-    {
-    }
-    /**
-     * The artifact version to export. Format: projects/{project}/locations/{locat
-     * ion}/repositories/{repository}/packages/{package}/versions/{version}
-     *
-     * @param string $sourceVersion
-     */
-    public function setSourceVersion($sourceVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceVersion()
+    class Google_Service_ArtifactRegistry_ExportArtifactRequest extends \Google\Service\ArtifactRegistry\ExportArtifactRequest
     {
     }
 }

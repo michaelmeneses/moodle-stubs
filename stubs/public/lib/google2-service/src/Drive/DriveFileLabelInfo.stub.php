@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileLabelInfo extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    protected $labelsType = Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * Output only. The set of labels on the file as requested by the label IDs in
-     * the `includeLabels` parameter. By default, no labels are returned.
-     *
-     * @param Label[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Drive {
+    class DriveFileLabelInfo extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        protected $labelsType = Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * Output only. The set of labels on the file as requested by the label IDs in
+         * the `includeLabels` parameter. By default, no labels are returned.
+         *
+         * @param Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Label[]
+     * Runtime class alias of \Google\Service\Drive\DriveFileLabelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_Drive_DriveFileLabelInfo extends \Google\Service\Drive\DriveFileLabelInfo
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "videoCategories" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $videoCategories = $youtubeService->videoCategories;
- *  </code>
- */
-class VideoCategories extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\VideoCategoryListResponse;
     /**
-     * Retrieves a list of resources, possibly filtered.
-     * (videoCategories.listVideoCategories)
-     *
-     * @param string|array $part The *part* parameter specifies the videoCategory
-     * resource properties that the API response will include. Set the parameter
-     * value to snippet.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hl
-     * @opt_param string id Returns the video categories with the given IDs for
-     * Stubby or Apiary.
-     * @opt_param string regionCode
-     * @return VideoCategoryListResponse
-     * @throws \Google\Service\Exception
+     * The "videoCategories" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $videoCategories = $youtubeService->videoCategories;
+     *  </code>
      */
-    public function listVideoCategories($part, $optParams = [])
+    class VideoCategories extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of resources, possibly filtered.
+         * (videoCategories.listVideoCategories)
+         *
+         * @param string|array $part The *part* parameter specifies the videoCategory
+         * resource properties that the API response will include. Set the parameter
+         * value to snippet.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hl
+         * @opt_param string id Returns the video categories with the given IDs for
+         * Stubby or Apiary.
+         * @opt_param string regionCode
+         * @return VideoCategoryListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listVideoCategories($part, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\VideoCategories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_VideoCategories extends \Google\Service\YouTube\Resource\VideoCategories
     {
     }
 }

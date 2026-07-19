@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class Service extends \Google\Model
-{
-    /**
-     * The business under which the service is offered. Ex.
-     * "businessEntities/GCP", "businessEntities/Maps"
-     *
-     * @var string
-     */
-    public $businessEntityName;
-    /**
-     * A human readable display name for this service.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name for the service. Example: "services/6F81-5844-456A"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The identifier for the service. Example: "6F81-5844-456A"
-     *
-     * @var string
-     */
-    public $serviceId;
-    /**
-     * The business under which the service is offered. Ex.
-     * "businessEntities/GCP", "businessEntities/Maps"
-     *
-     * @param string $businessEntityName
-     */
-    public function setBusinessEntityName($businessEntityName)
+namespace Google\Service\Cloudbilling {
+    class Service extends \Google\Model
     {
+        /**
+         * The business under which the service is offered. Ex.
+         * "businessEntities/GCP", "businessEntities/Maps"
+         *
+         * @var string
+         */
+        public $businessEntityName;
+        /**
+         * A human readable display name for this service.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name for the service. Example: "services/6F81-5844-456A"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The identifier for the service. Example: "6F81-5844-456A"
+         *
+         * @var string
+         */
+        public $serviceId;
+        /**
+         * The business under which the service is offered. Ex.
+         * "businessEntities/GCP", "businessEntities/Maps"
+         *
+         * @param string $businessEntityName
+         */
+        public function setBusinessEntityName($businessEntityName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusinessEntityName()
+        {
+        }
+        /**
+         * A human readable display name for this service.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name for the service. Example: "services/6F81-5844-456A"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The identifier for the service. Example: "6F81-5844-456A"
+         *
+         * @param string $serviceId
+         */
+        public function setServiceId($serviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudbilling\Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessEntityName()
-    {
-    }
-    /**
-     * A human readable display name for this service.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name for the service. Example: "services/6F81-5844-456A"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The identifier for the service. Example: "6F81-5844-456A"
-     *
-     * @param string $serviceId
-     */
-    public function setServiceId($serviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceId()
+    class Google_Service_Cloudbilling_Service extends \Google\Service\Cloudbilling\Service
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaVisualInspectionClassificationLabelSavedQueryMetadata extends \Google\Model
-{
-    /**
-     * Whether or not the classification label is multi_label.
-     *
-     * @var bool
-     */
-    public $multiLabel;
-    /**
-     * Whether or not the classification label is multi_label.
-     *
-     * @param bool $multiLabel
-     */
-    public function setMultiLabel($multiLabel)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaVisualInspectionClassificationLabelSavedQueryMetadata extends \Google\Model
     {
+        /**
+         * Whether or not the classification label is multi_label.
+         *
+         * @var bool
+         */
+        public $multiLabel;
+        /**
+         * Whether or not the classification label is multi_label.
+         *
+         * @param bool $multiLabel
+         */
+        public function setMultiLabel($multiLabel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMultiLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVisualInspectionClassificationLabelSavedQueryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiLabel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaVisualInspectionClassificationLabelSavedQueryMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVisualInspectionClassificationLabelSavedQueryMetadata
     {
     }
 }

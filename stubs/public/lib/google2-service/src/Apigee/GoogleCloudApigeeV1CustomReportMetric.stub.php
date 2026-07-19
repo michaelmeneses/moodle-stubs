@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1CustomReportMetric extends \Google\Model
-{
-    /**
-     * aggregate function
-     *
-     * @var string
-     */
-    public $function;
-    /**
-     * name of the metric
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * aggregate function
-     *
-     * @param string $function
-     */
-    public function setFunction($function)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1CustomReportMetric extends \Google\Model
     {
+        /**
+         * aggregate function
+         *
+         * @var string
+         */
+        public $function;
+        /**
+         * name of the metric
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * aggregate function
+         *
+         * @param string $function
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * name of the metric
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1CustomReportMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunction()
-    {
-    }
-    /**
-     * name of the metric
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1CustomReportMetric extends \Google\Service\Apigee\GoogleCloudApigeeV1CustomReportMetric
     {
     }
 }

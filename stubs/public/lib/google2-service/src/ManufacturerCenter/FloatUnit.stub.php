@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class FloatUnit extends \Google\Model
-{
-    /**
-     * amount.
-     *
-     * @var 
-     */
-    public $amount;
-    /**
-     * unit.
-     *
-     * @var string
-     */
-    public $unit;
-    public function setAmount($amount)
+namespace Google\Service\ManufacturerCenter {
+    class FloatUnit extends \Google\Model
     {
+        /**
+         * amount.
+         *
+         * @var 
+         */
+        public $amount;
+        /**
+         * unit.
+         *
+         * @var string
+         */
+        public $unit;
+        public function setAmount($amount)
+        {
+        }
+        public function getAmount()
+        {
+        }
+        /**
+         * unit.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
-    public function getAmount()
-    {
-    }
+}
+namespace {
     /**
-     * unit.
-     *
-     * @param string $unit
+     * Runtime class alias of \Google\Service\ManufacturerCenter\FloatUnit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_ManufacturerCenter_FloatUnit extends \Google\Service\ManufacturerCenter\FloatUnit
     {
     }
 }

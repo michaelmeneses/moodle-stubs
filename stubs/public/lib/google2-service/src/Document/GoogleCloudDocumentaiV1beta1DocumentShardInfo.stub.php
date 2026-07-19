@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentShardInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $shardCount;
-    /**
-     * @var string
-     */
-    public $shardIndex;
-    /**
-     * @var string
-     */
-    public $textOffset;
-    /**
-     * @param string
-     */
-    public function setShardCount($shardCount)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentShardInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $shardCount;
+        /**
+         * @var string
+         */
+        public $shardIndex;
+        /**
+         * @var string
+         */
+        public $textOffset;
+        /**
+         * @param string
+         */
+        public function setShardCount($shardCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShardCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShardIndex($shardIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShardIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextOffset($textOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentShardInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShardCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShardIndex($shardIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShardIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextOffset($textOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextOffset()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentShardInfo extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentShardInfo
     {
     }
 }

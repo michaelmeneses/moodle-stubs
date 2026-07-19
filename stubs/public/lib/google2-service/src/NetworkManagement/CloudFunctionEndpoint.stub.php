@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class CloudFunctionEndpoint extends \Google\Model
-{
-    /**
-     * A [Cloud Function](https://cloud.google.com/functions) name.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * A [Cloud Function](https://cloud.google.com/functions) name.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\NetworkManagement {
+    class CloudFunctionEndpoint extends \Google\Model
     {
+        /**
+         * A [Cloud Function](https://cloud.google.com/functions) name.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * A [Cloud Function](https://cloud.google.com/functions) name.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\CloudFunctionEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_NetworkManagement_CloudFunctionEndpoint extends \Google\Service\NetworkManagement\CloudFunctionEndpoint
     {
     }
 }

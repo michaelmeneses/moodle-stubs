@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV1beta1ServiceIdentity extends \Google\Model
-{
-    /**
-     * The email address of the service account that a service producer would use
-     * to access consumer resources.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The unique and stable id of the service account. https://cloud.google.com/i
-     * am/reference/rest/v1/projects.serviceAccounts#ServiceAccount
-     *
-     * @var string
-     */
-    public $uniqueId;
-    /**
-     * The email address of the service account that a service producer would use
-     * to access consumer resources.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV1beta1ServiceIdentity extends \Google\Model
     {
+        /**
+         * The email address of the service account that a service producer would use
+         * to access consumer resources.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The unique and stable id of the service account. https://cloud.google.com/i
+         * am/reference/rest/v1/projects.serviceAccounts#ServiceAccount
+         *
+         * @var string
+         */
+        public $uniqueId;
+        /**
+         * The email address of the service account that a service producer would use
+         * to access consumer resources.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The unique and stable id of the service account. https://cloud.google.com/i
+         * am/reference/rest/v1/projects.serviceAccounts#ServiceAccount
+         *
+         * @param string $uniqueId
+         */
+        public function setUniqueId($uniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniqueId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV1beta1ServiceIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The unique and stable id of the service account. https://cloud.google.com/i
-     * am/reference/rest/v1/projects.serviceAccounts#ServiceAccount
-     *
-     * @param string $uniqueId
-     */
-    public function setUniqueId($uniqueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniqueId()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV1beta1ServiceIdentity extends \Google\Service\ServiceUsage\GoogleApiServiceusageV1beta1ServiceIdentity
     {
     }
 }

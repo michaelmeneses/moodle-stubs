@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Proximity extends \Google\Model
-{
-    /**
-     * Number of characters after the finding to consider.
-     *
-     * @var int
-     */
-    public $windowAfter;
-    /**
-     * Number of characters before the finding to consider. For tabular data, if
-     * you want to modify the likelihood of an entire column of findngs, set this
-     * to 1. For more information, see [Hotword example: Set the match likelihood
-     * of a table column] (https://cloud.google.com/sensitive-data-
-     * protection/docs/creating-custom-infotypes-likelihood#match-column-values).
-     *
-     * @var int
-     */
-    public $windowBefore;
-    /**
-     * Number of characters after the finding to consider.
-     *
-     * @param int $windowAfter
-     */
-    public function setWindowAfter($windowAfter)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Proximity extends \Google\Model
     {
+        /**
+         * Number of characters after the finding to consider.
+         *
+         * @var int
+         */
+        public $windowAfter;
+        /**
+         * Number of characters before the finding to consider. For tabular data, if
+         * you want to modify the likelihood of an entire column of findngs, set this
+         * to 1. For more information, see [Hotword example: Set the match likelihood
+         * of a table column] (https://cloud.google.com/sensitive-data-
+         * protection/docs/creating-custom-infotypes-likelihood#match-column-values).
+         *
+         * @var int
+         */
+        public $windowBefore;
+        /**
+         * Number of characters after the finding to consider.
+         *
+         * @param int $windowAfter
+         */
+        public function setWindowAfter($windowAfter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWindowAfter()
+        {
+        }
+        /**
+         * Number of characters before the finding to consider. For tabular data, if
+         * you want to modify the likelihood of an entire column of findngs, set this
+         * to 1. For more information, see [Hotword example: Set the match likelihood
+         * of a table column] (https://cloud.google.com/sensitive-data-
+         * protection/docs/creating-custom-infotypes-likelihood#match-column-values).
+         *
+         * @param int $windowBefore
+         */
+        public function setWindowBefore($windowBefore)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWindowBefore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Proximity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWindowAfter()
-    {
-    }
-    /**
-     * Number of characters before the finding to consider. For tabular data, if
-     * you want to modify the likelihood of an entire column of findngs, set this
-     * to 1. For more information, see [Hotword example: Set the match likelihood
-     * of a table column] (https://cloud.google.com/sensitive-data-
-     * protection/docs/creating-custom-infotypes-likelihood#match-column-values).
-     *
-     * @param int $windowBefore
-     */
-    public function setWindowBefore($windowBefore)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWindowBefore()
+    class Google_Service_DLP_GooglePrivacyDlpV2Proximity extends \Google\Service\DLP\GooglePrivacyDlpV2Proximity
     {
     }
 }

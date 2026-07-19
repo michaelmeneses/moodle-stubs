@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class ComposeRequestSourceObjects extends \Google\Model
-{
-    /**
-     * The generation of this object to use as the source.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * The source object's name. All source objects must reside in the same
-     * bucket.
-     *
-     * @var string
-     */
-    public $name;
-    protected $objectPreconditionsType = ComposeRequestSourceObjectsObjectPreconditions::class;
-    protected $objectPreconditionsDataType = '';
-    /**
-     * The generation of this object to use as the source.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
+namespace Google\Service\Storage {
+    class ComposeRequestSourceObjects extends \Google\Model
     {
+        /**
+         * The generation of this object to use as the source.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * The source object's name. All source objects must reside in the same
+         * bucket.
+         *
+         * @var string
+         */
+        public $name;
+        protected $objectPreconditionsType = ComposeRequestSourceObjectsObjectPreconditions::class;
+        protected $objectPreconditionsDataType = '';
+        /**
+         * The generation of this object to use as the source.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * The source object's name. All source objects must reside in the same
+         * bucket.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Conditions that must be met for this operation to execute.
+         *
+         * @param ComposeRequestSourceObjectsObjectPreconditions $objectPreconditions
+         */
+        public function setObjectPreconditions(ComposeRequestSourceObjectsObjectPreconditions $objectPreconditions)
+        {
+        }
+        /**
+         * @return ComposeRequestSourceObjectsObjectPreconditions
+         */
+        public function getObjectPreconditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\ComposeRequestSourceObjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneration()
-    {
-    }
-    /**
-     * The source object's name. All source objects must reside in the same
-     * bucket.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Conditions that must be met for this operation to execute.
-     *
-     * @param ComposeRequestSourceObjectsObjectPreconditions $objectPreconditions
-     */
-    public function setObjectPreconditions(ComposeRequestSourceObjectsObjectPreconditions $objectPreconditions)
-    {
-    }
-    /**
-     * @return ComposeRequestSourceObjectsObjectPreconditions
-     */
-    public function getObjectPreconditions()
+    class Google_Service_Storage_ComposeRequestSourceObjects extends \Google\Service\Storage\ComposeRequestSourceObjects
     {
     }
 }

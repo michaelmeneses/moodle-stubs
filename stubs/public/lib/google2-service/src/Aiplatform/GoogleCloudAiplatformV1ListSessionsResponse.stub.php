@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * A token, which can be sent as ListSessionsRequest.page_token to retrieve
-     * the next page. Absence of this field indicates there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionsType = GoogleCloudAiplatformV1Session::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * A token, which can be sent as ListSessionsRequest.page_token to retrieve
-     * the next page. Absence of this field indicates there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * A token, which can be sent as ListSessionsRequest.page_token to retrieve
+         * the next page. Absence of this field indicates there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionsType = GoogleCloudAiplatformV1Session::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * A token, which can be sent as ListSessionsRequest.page_token to retrieve
+         * the next page. Absence of this field indicates there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of sessions matching the request.
+         *
+         * @param GoogleCloudAiplatformV1Session[] $sessions
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Session[]
+         */
+        public function getSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of sessions matching the request.
-     *
-     * @param GoogleCloudAiplatformV1Session[] $sessions
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Session[]
-     */
-    public function getSessions()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListSessionsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSessionsResponse
     {
     }
 }

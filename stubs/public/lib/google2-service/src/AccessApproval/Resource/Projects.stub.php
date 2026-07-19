@@ -21,82 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $accessapprovalService = new Google\Service\AccessApproval(...);
- *   $projects = $accessapprovalService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\AccessApproval\Resource {
+    use Google\Service\AccessApproval\AccessApprovalServiceAccount;
+    use Google\Service\AccessApproval\AccessApprovalSettings;
+    use Google\Service\AccessApproval\AccessapprovalEmpty;
     /**
-     * Deletes the settings associated with a project, folder, or organization. This
-     * will have the effect of disabling Access Approval for the resource. Access
-     * Approval may remain active based on parent resource settings. To confirm the
-     * effective settings, call GetAccessApprovalSettings and verify effective
-     * setting is disabled. (projects.deleteAccessApprovalSettings)
-     *
-     * @param string $name Name of the AccessApprovalSettings to delete.
-     * @param array $optParams Optional parameters.
-     * @return AccessapprovalEmpty
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $accessapprovalService = new Google\Service\AccessApproval(...);
+     *   $projects = $accessapprovalService->projects;
+     *  </code>
      */
-    public function deleteAccessApprovalSettings($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Deletes the settings associated with a project, folder, or organization. This
+         * will have the effect of disabling Access Approval for the resource. Access
+         * Approval may remain active based on parent resource settings. To confirm the
+         * effective settings, call GetAccessApprovalSettings and verify effective
+         * setting is disabled. (projects.deleteAccessApprovalSettings)
+         *
+         * @param string $name Name of the AccessApprovalSettings to delete.
+         * @param array $optParams Optional parameters.
+         * @return AccessapprovalEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function deleteAccessApprovalSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the Access Approval settings associated with a project, folder, or
+         * organization. (projects.getAccessApprovalSettings)
+         *
+         * @param string $name The name of the AccessApprovalSettings to retrieve.
+         * Format: "{projects|folders|organizations}/{id}/accessApprovalSettings"
+         * @param array $optParams Optional parameters.
+         * @return AccessApprovalSettings
+         * @throws \Google\Service\Exception
+         */
+        public function getAccessApprovalSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the service account that is used by Access Approval to access KMS
+         * keys for signing approved approval requests. (projects.getServiceAccount)
+         *
+         * @param string $name Name of the AccessApprovalServiceAccount to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return AccessApprovalServiceAccount
+         * @throws \Google\Service\Exception
+         */
+        public function getServiceAccount($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the settings associated with a project, folder, or organization.
+         * Settings to update are determined by the value of field_mask.
+         * (projects.updateAccessApprovalSettings)
+         *
+         * @param string $name The resource name of the settings. Format is one of: *
+         * "projects/{project}/accessApprovalSettings" *
+         * "folders/{folder}/accessApprovalSettings" *
+         * "organizations/{organization}/accessApprovalSettings"
+         * @param AccessApprovalSettings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The update mask applies to the settings. Only
+         * the top level fields of AccessApprovalSettings (notification_emails &
+         * enrolled_services) are supported. For each field, if it is included, the
+         * currently stored value will be entirely overwritten with the value of the
+         * field passed in this request. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask If this field is left unset,
+         * only the notification_emails field will be updated.
+         * @return AccessApprovalSettings
+         * @throws \Google\Service\Exception
+         */
+        public function updateAccessApprovalSettings($name, AccessApprovalSettings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the Access Approval settings associated with a project, folder, or
-     * organization. (projects.getAccessApprovalSettings)
-     *
-     * @param string $name The name of the AccessApprovalSettings to retrieve.
-     * Format: "{projects|folders|organizations}/{id}/accessApprovalSettings"
-     * @param array $optParams Optional parameters.
-     * @return AccessApprovalSettings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AccessApproval\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessApprovalSettings($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the service account that is used by Access Approval to access KMS
-     * keys for signing approved approval requests. (projects.getServiceAccount)
-     *
-     * @param string $name Name of the AccessApprovalServiceAccount to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return AccessApprovalServiceAccount
-     * @throws \Google\Service\Exception
-     */
-    public function getServiceAccount($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the settings associated with a project, folder, or organization.
-     * Settings to update are determined by the value of field_mask.
-     * (projects.updateAccessApprovalSettings)
-     *
-     * @param string $name The resource name of the settings. Format is one of: *
-     * "projects/{project}/accessApprovalSettings" *
-     * "folders/{folder}/accessApprovalSettings" *
-     * "organizations/{organization}/accessApprovalSettings"
-     * @param AccessApprovalSettings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The update mask applies to the settings. Only
-     * the top level fields of AccessApprovalSettings (notification_emails &
-     * enrolled_services) are supported. For each field, if it is included, the
-     * currently stored value will be entirely overwritten with the value of the
-     * field passed in this request. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask If this field is left unset,
-     * only the notification_emails field will be updated.
-     * @return AccessApprovalSettings
-     * @throws \Google\Service\Exception
-     */
-    public function updateAccessApprovalSettings($name, AccessApprovalSettings $postBody, $optParams = [])
+    class Google_Service_AccessApproval_Resource_Projects extends \Google\Service\AccessApproval\Resource\Projects
     {
     }
 }

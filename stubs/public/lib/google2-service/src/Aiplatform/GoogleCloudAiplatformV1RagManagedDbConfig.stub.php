@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagManagedDbConfig extends \Google\Model
-{
-    protected $basicType = GoogleCloudAiplatformV1RagManagedDbConfigBasic::class;
-    protected $basicDataType = '';
-    protected $scaledType = GoogleCloudAiplatformV1RagManagedDbConfigScaled::class;
-    protected $scaledDataType = '';
-    protected $unprovisionedType = GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned::class;
-    protected $unprovisionedDataType = '';
-    /**
-     * Sets the RagManagedDb to the Basic tier.
-     *
-     * @param GoogleCloudAiplatformV1RagManagedDbConfigBasic $basic
-     */
-    public function setBasic(GoogleCloudAiplatformV1RagManagedDbConfigBasic $basic)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagManagedDbConfig extends \Google\Model
     {
+        protected $basicType = GoogleCloudAiplatformV1RagManagedDbConfigBasic::class;
+        protected $basicDataType = '';
+        protected $scaledType = GoogleCloudAiplatformV1RagManagedDbConfigScaled::class;
+        protected $scaledDataType = '';
+        protected $unprovisionedType = GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned::class;
+        protected $unprovisionedDataType = '';
+        /**
+         * Sets the RagManagedDb to the Basic tier.
+         *
+         * @param GoogleCloudAiplatformV1RagManagedDbConfigBasic $basic
+         */
+        public function setBasic(GoogleCloudAiplatformV1RagManagedDbConfigBasic $basic)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagManagedDbConfigBasic
+         */
+        public function getBasic()
+        {
+        }
+        /**
+         * Sets the RagManagedDb to the Scaled tier. This is the default tier if not
+         * explicitly chosen.
+         *
+         * @param GoogleCloudAiplatformV1RagManagedDbConfigScaled $scaled
+         */
+        public function setScaled(GoogleCloudAiplatformV1RagManagedDbConfigScaled $scaled)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagManagedDbConfigScaled
+         */
+        public function getScaled()
+        {
+        }
+        /**
+         * Sets the RagManagedDb to the Unprovisioned tier.
+         *
+         * @param GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned $unprovisioned
+         */
+        public function setUnprovisioned(GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned $unprovisioned)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned
+         */
+        public function getUnprovisioned()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagManagedDbConfigBasic
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagManagedDbConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasic()
-    {
-    }
-    /**
-     * Sets the RagManagedDb to the Scaled tier. This is the default tier if not
-     * explicitly chosen.
-     *
-     * @param GoogleCloudAiplatformV1RagManagedDbConfigScaled $scaled
-     */
-    public function setScaled(GoogleCloudAiplatformV1RagManagedDbConfigScaled $scaled)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagManagedDbConfigScaled
-     */
-    public function getScaled()
-    {
-    }
-    /**
-     * Sets the RagManagedDb to the Unprovisioned tier.
-     *
-     * @param GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned $unprovisioned
-     */
-    public function setUnprovisioned(GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned $unprovisioned)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagManagedDbConfigUnprovisioned
-     */
-    public function getUnprovisioned()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagManagedDbConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagManagedDbConfig
     {
     }
 }

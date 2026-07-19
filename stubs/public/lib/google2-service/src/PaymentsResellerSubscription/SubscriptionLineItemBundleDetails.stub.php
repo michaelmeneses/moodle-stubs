@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class SubscriptionLineItemBundleDetails extends \Google\Collection
-{
-    protected $collection_key = 'bundleElementDetails';
-    protected $bundleElementDetailsType = SubscriptionLineItemBundleDetailsBundleElementDetails::class;
-    protected $bundleElementDetailsDataType = 'array';
-    /**
-     * Output only. The details for each element in the hard bundle.
-     *
-     * @param SubscriptionLineItemBundleDetailsBundleElementDetails[] $bundleElementDetails
-     */
-    public function setBundleElementDetails($bundleElementDetails)
+namespace Google\Service\PaymentsResellerSubscription {
+    class SubscriptionLineItemBundleDetails extends \Google\Collection
     {
+        protected $collection_key = 'bundleElementDetails';
+        protected $bundleElementDetailsType = SubscriptionLineItemBundleDetailsBundleElementDetails::class;
+        protected $bundleElementDetailsDataType = 'array';
+        /**
+         * Output only. The details for each element in the hard bundle.
+         *
+         * @param SubscriptionLineItemBundleDetailsBundleElementDetails[] $bundleElementDetails
+         */
+        public function setBundleElementDetails($bundleElementDetails)
+        {
+        }
+        /**
+         * @return SubscriptionLineItemBundleDetailsBundleElementDetails[]
+         */
+        public function getBundleElementDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SubscriptionLineItemBundleDetailsBundleElementDetails[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\SubscriptionLineItemBundleDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleElementDetails()
+    class Google_Service_PaymentsResellerSubscription_SubscriptionLineItemBundleDetails extends \Google\Service\PaymentsResellerSubscription\SubscriptionLineItemBundleDetails
     {
     }
 }

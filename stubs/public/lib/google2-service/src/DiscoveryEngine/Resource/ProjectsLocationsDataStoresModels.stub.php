@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "models" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $models = $discoveryengineService->projects_locations_dataStores_models;
- *  </code>
- */
-class ProjectsLocationsDataStoresModels extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    /**
+     * The "models" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $models = $discoveryengineService->projects_locations_dataStores_models;
+     *  </code>
+     */
+    class ProjectsLocationsDataStoresModels extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresModels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsDataStoresModels extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresModels
+    {
+    }
 }

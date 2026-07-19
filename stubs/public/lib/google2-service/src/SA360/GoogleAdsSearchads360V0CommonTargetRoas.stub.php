@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonTargetRoas extends \Google\Model
-{
-    /**
-     * Maximum bid limit that can be set by the bid strategy. The limit applies to
-     * all keywords managed by the strategy. This should only be set for portfolio
-     * bid strategies.
-     *
-     * @var string
-     */
-    public $cpcBidCeilingMicros;
-    /**
-     * Minimum bid limit that can be set by the bid strategy. The limit applies to
-     * all keywords managed by the strategy. This should only be set for portfolio
-     * bid strategies.
-     *
-     * @var string
-     */
-    public $cpcBidFloorMicros;
-    /**
-     * Required. The chosen revenue (based on conversion data) per unit of spend.
-     * Value must be between 0.01 and 1000.0, inclusive.
-     *
-     * @var 
-     */
-    public $targetRoas;
-    /**
-     * Maximum bid limit that can be set by the bid strategy. The limit applies to
-     * all keywords managed by the strategy. This should only be set for portfolio
-     * bid strategies.
-     *
-     * @param string $cpcBidCeilingMicros
-     */
-    public function setCpcBidCeilingMicros($cpcBidCeilingMicros)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonTargetRoas extends \Google\Model
     {
+        /**
+         * Maximum bid limit that can be set by the bid strategy. The limit applies to
+         * all keywords managed by the strategy. This should only be set for portfolio
+         * bid strategies.
+         *
+         * @var string
+         */
+        public $cpcBidCeilingMicros;
+        /**
+         * Minimum bid limit that can be set by the bid strategy. The limit applies to
+         * all keywords managed by the strategy. This should only be set for portfolio
+         * bid strategies.
+         *
+         * @var string
+         */
+        public $cpcBidFloorMicros;
+        /**
+         * Required. The chosen revenue (based on conversion data) per unit of spend.
+         * Value must be between 0.01 and 1000.0, inclusive.
+         *
+         * @var 
+         */
+        public $targetRoas;
+        /**
+         * Maximum bid limit that can be set by the bid strategy. The limit applies to
+         * all keywords managed by the strategy. This should only be set for portfolio
+         * bid strategies.
+         *
+         * @param string $cpcBidCeilingMicros
+         */
+        public function setCpcBidCeilingMicros($cpcBidCeilingMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpcBidCeilingMicros()
+        {
+        }
+        /**
+         * Minimum bid limit that can be set by the bid strategy. The limit applies to
+         * all keywords managed by the strategy. This should only be set for portfolio
+         * bid strategies.
+         *
+         * @param string $cpcBidFloorMicros
+         */
+        public function setCpcBidFloorMicros($cpcBidFloorMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpcBidFloorMicros()
+        {
+        }
+        public function setTargetRoas($targetRoas)
+        {
+        }
+        public function getTargetRoas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonTargetRoas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpcBidCeilingMicros()
-    {
-    }
-    /**
-     * Minimum bid limit that can be set by the bid strategy. The limit applies to
-     * all keywords managed by the strategy. This should only be set for portfolio
-     * bid strategies.
-     *
-     * @param string $cpcBidFloorMicros
-     */
-    public function setCpcBidFloorMicros($cpcBidFloorMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpcBidFloorMicros()
-    {
-    }
-    public function setTargetRoas($targetRoas)
-    {
-    }
-    public function getTargetRoas()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonTargetRoas extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonTargetRoas
     {
     }
 }

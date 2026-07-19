@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ReleaseChannel extends \Google\Model
-{
-    /**
-     * No channel specified.
-     */
-    public const CHANNEL_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * RAPID channel is offered on an early access basis for customers who want to
-     * test new releases. WARNING: Versions available in the RAPID Channel may be
-     * subject to unresolved issues with no known workaround and are not subject
-     * to any SLAs.
-     */
-    public const CHANNEL_RAPID = 'RAPID';
-    /**
-     * Clusters subscribed to REGULAR receive versions that are considered GA
-     * quality. REGULAR is intended for production users who want to take
-     * advantage of new features.
-     */
-    public const CHANNEL_REGULAR = 'REGULAR';
-    /**
-     * Clusters subscribed to STABLE receive versions that are known to be stable
-     * and reliable in production.
-     */
-    public const CHANNEL_STABLE = 'STABLE';
-    /**
-     * Clusters subscribed to EXTENDED receive extended support and availability
-     * for versions which are known to be stable and reliable in production.
-     */
-    public const CHANNEL_EXTENDED = 'EXTENDED';
-    /**
-     * channel specifies which release channel the cluster is subscribed to.
-     *
-     * @var string
-     */
-    public $channel;
-    /**
-     * channel specifies which release channel the cluster is subscribed to.
-     *
-     * Accepted values: UNSPECIFIED, RAPID, REGULAR, STABLE, EXTENDED
-     *
-     * @param self::CHANNEL_* $channel
-     */
-    public function setChannel($channel)
+namespace Google\Service\Container {
+    class ReleaseChannel extends \Google\Model
     {
+        /**
+         * No channel specified.
+         */
+        public const CHANNEL_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * RAPID channel is offered on an early access basis for customers who want to
+         * test new releases. WARNING: Versions available in the RAPID Channel may be
+         * subject to unresolved issues with no known workaround and are not subject
+         * to any SLAs.
+         */
+        public const CHANNEL_RAPID = 'RAPID';
+        /**
+         * Clusters subscribed to REGULAR receive versions that are considered GA
+         * quality. REGULAR is intended for production users who want to take
+         * advantage of new features.
+         */
+        public const CHANNEL_REGULAR = 'REGULAR';
+        /**
+         * Clusters subscribed to STABLE receive versions that are known to be stable
+         * and reliable in production.
+         */
+        public const CHANNEL_STABLE = 'STABLE';
+        /**
+         * Clusters subscribed to EXTENDED receive extended support and availability
+         * for versions which are known to be stable and reliable in production.
+         */
+        public const CHANNEL_EXTENDED = 'EXTENDED';
+        /**
+         * channel specifies which release channel the cluster is subscribed to.
+         *
+         * @var string
+         */
+        public $channel;
+        /**
+         * channel specifies which release channel the cluster is subscribed to.
+         *
+         * Accepted values: UNSPECIFIED, RAPID, REGULAR, STABLE, EXTENDED
+         *
+         * @param self::CHANNEL_* $channel
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return self::CHANNEL_*
+         */
+        public function getChannel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANNEL_*
+     * Runtime class alias of \Google\Service\Container\ReleaseChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannel()
+    class Google_Service_Container_ReleaseChannel extends \Google\Service\Container\ReleaseChannel
     {
     }
 }

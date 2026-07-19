@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse extends \Google\Model
-{
-    protected $customerConfigType = GoogleCloudIntegrationsV1alphaCustomerConfig::class;
-    protected $customerConfigDataType = '';
-    /**
-     * Required. The updated customer configuration.
-     *
-     * @param GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig
-     */
-    public function setCustomerConfig(GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse extends \Google\Model
     {
+        protected $customerConfigType = GoogleCloudIntegrationsV1alphaCustomerConfig::class;
+        protected $customerConfigDataType = '';
+        /**
+         * Required. The updated customer configuration.
+         *
+         * @param GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig
+         */
+        public function setCustomerConfig(GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaCustomerConfig
+         */
+        public function getCustomerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaCustomerConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerConfig()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse
     {
     }
 }

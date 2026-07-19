@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceSheetDimensionRange extends \Google\Collection
-{
-    protected $collection_key = 'columnReferences';
-    protected $columnReferencesType = DataSourceColumnReference::class;
-    protected $columnReferencesDataType = 'array';
-    /**
-     * The ID of the data source sheet the range is on.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The columns on the data source sheet.
-     *
-     * @param DataSourceColumnReference[] $columnReferences
-     */
-    public function setColumnReferences($columnReferences)
+namespace Google\Service\Sheets {
+    class DataSourceSheetDimensionRange extends \Google\Collection
     {
+        protected $collection_key = 'columnReferences';
+        protected $columnReferencesType = DataSourceColumnReference::class;
+        protected $columnReferencesDataType = 'array';
+        /**
+         * The ID of the data source sheet the range is on.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The columns on the data source sheet.
+         *
+         * @param DataSourceColumnReference[] $columnReferences
+         */
+        public function setColumnReferences($columnReferences)
+        {
+        }
+        /**
+         * @return DataSourceColumnReference[]
+         */
+        public function getColumnReferences()
+        {
+        }
+        /**
+         * The ID of the data source sheet the range is on.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceColumnReference[]
+     * Runtime class alias of \Google\Service\Sheets\DataSourceSheetDimensionRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnReferences()
-    {
-    }
-    /**
-     * The ID of the data source sheet the range is on.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_DataSourceSheetDimensionRange extends \Google\Service\Sheets\DataSourceSheetDimensionRange
     {
     }
 }

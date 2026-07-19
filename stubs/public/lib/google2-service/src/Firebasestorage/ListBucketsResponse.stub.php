@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebasestorage;
-
-class ListBucketsResponse extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = Bucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of linked buckets.
-     *
-     * @param Bucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\Firebasestorage {
+    class ListBucketsResponse extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = Bucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of linked buckets.
+         *
+         * @param Bucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return Bucket[]
+         */
+        public function getBuckets()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bucket[]
+     * Runtime class alias of \Google\Service\Firebasestorage\ListBucketsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firebasestorage_ListBucketsResponse extends \Google\Service\Firebasestorage\ListBucketsResponse
     {
     }
 }

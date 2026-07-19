@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AudioVideoOffset extends \Google\Model
-{
-    /**
-     * Optional. The offset in percentage of the audio or video duration.
-     *
-     * @var string
-     */
-    public $percentage;
-    /**
-     * Optional. The offset in seconds from the start of the audio or video.
-     *
-     * @var string
-     */
-    public $seconds;
-    /**
-     * Optional. The offset in percentage of the audio or video duration.
-     *
-     * @param string $percentage
-     */
-    public function setPercentage($percentage)
+namespace Google\Service\DisplayVideo {
+    class AudioVideoOffset extends \Google\Model
     {
+        /**
+         * Optional. The offset in percentage of the audio or video duration.
+         *
+         * @var string
+         */
+        public $percentage;
+        /**
+         * Optional. The offset in seconds from the start of the audio or video.
+         *
+         * @var string
+         */
+        public $seconds;
+        /**
+         * Optional. The offset in percentage of the audio or video duration.
+         *
+         * @param string $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPercentage()
+        {
+        }
+        /**
+         * Optional. The offset in seconds from the start of the audio or video.
+         *
+         * @param string $seconds
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AudioVideoOffset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentage()
-    {
-    }
-    /**
-     * Optional. The offset in seconds from the start of the audio or video.
-     *
-     * @param string $seconds
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeconds()
+    class Google_Service_DisplayVideo_AudioVideoOffset extends \Google\Service\DisplayVideo\AudioVideoOffset
     {
     }
 }

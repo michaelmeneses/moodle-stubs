@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1KeystoreConfig extends \Google\Collection
-{
-    protected $collection_key = 'aliases';
-    protected $aliasesType = GoogleCloudApigeeV1AliasRevisionConfig::class;
-    protected $aliasesDataType = 'array';
-    /**
-     * Resource name in the following format:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Aliases in the keystore.
-     *
-     * @param GoogleCloudApigeeV1AliasRevisionConfig[] $aliases
-     */
-    public function setAliases($aliases)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1KeystoreConfig extends \Google\Collection
     {
+        protected $collection_key = 'aliases';
+        protected $aliasesType = GoogleCloudApigeeV1AliasRevisionConfig::class;
+        protected $aliasesDataType = 'array';
+        /**
+         * Resource name in the following format:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Aliases in the keystore.
+         *
+         * @param GoogleCloudApigeeV1AliasRevisionConfig[] $aliases
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AliasRevisionConfig[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * Resource name in the following format:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AliasRevisionConfig[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1KeystoreConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * Resource name in the following format:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1KeystoreConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1KeystoreConfig
     {
     }
 }

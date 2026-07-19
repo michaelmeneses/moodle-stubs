@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class AccessPolicy extends \Google\Collection
-{
-    protected $collection_key = 'exception';
-    /**
-     * The value of allowed indicates whether the access to the policy is allowed
-     * or denied by default.
-     *
-     * @var bool
-     */
-    public $allowed;
-    /**
-     * A list of region codes that identify countries where the default policy do
-     * not apply.
-     *
-     * @var string[]
-     */
-    public $exception;
-    /**
-     * The value of allowed indicates whether the access to the policy is allowed
-     * or denied by default.
-     *
-     * @param bool $allowed
-     */
-    public function setAllowed($allowed)
+namespace Google\Service\YouTube {
+    class AccessPolicy extends \Google\Collection
     {
+        protected $collection_key = 'exception';
+        /**
+         * The value of allowed indicates whether the access to the policy is allowed
+         * or denied by default.
+         *
+         * @var bool
+         */
+        public $allowed;
+        /**
+         * A list of region codes that identify countries where the default policy do
+         * not apply.
+         *
+         * @var string[]
+         */
+        public $exception;
+        /**
+         * The value of allowed indicates whether the access to the policy is allowed
+         * or denied by default.
+         *
+         * @param bool $allowed
+         */
+        public function setAllowed($allowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowed()
+        {
+        }
+        /**
+         * A list of region codes that identify countries where the default policy do
+         * not apply.
+         *
+         * @param string[] $exception
+         */
+        public function setException($exception)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\AccessPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowed()
-    {
-    }
-    /**
-     * A list of region codes that identify countries where the default policy do
-     * not apply.
-     *
-     * @param string[] $exception
-     */
-    public function setException($exception)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getException()
+    class Google_Service_YouTube_AccessPolicy extends \Google\Service\YouTube\AccessPolicy
     {
     }
 }

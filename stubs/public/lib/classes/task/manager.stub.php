@@ -30,6 +30,9 @@
  */
 namespace core\task;
 
+use core\lock\lock;
+use core\lock\lock_factory;
+use core\shutdown_manager;
 define('CORE_TASK_TASKS_FILENAME', 'db/tasks.php');
 /**
  * Collection of task related methods.
@@ -357,20 +360,6 @@ class manager
      * @param task_base $task
      */
     private static function task_starting(task_base $task): void
-    {
-    }
-    /**
-     * If a task is waiting on an external event then you can set a retry delay,
-     * which behaves very similar to throwing an exception and retrying with a
-     * fail delay except it will not be treated as an error.
-     *
-     * The number of attempts is still decremented so it cannot be retried indefinitely.
-     * You can specify a delay in seconds, or if not set it will default to an
-     * exponential delay similar to the faildelay.
-     *
-     * @param \core\task\adhoc_task $task
-     */
-    public static function adhoc_task_delayed(\core\task\adhoc_task $task): void
     {
     }
     /**

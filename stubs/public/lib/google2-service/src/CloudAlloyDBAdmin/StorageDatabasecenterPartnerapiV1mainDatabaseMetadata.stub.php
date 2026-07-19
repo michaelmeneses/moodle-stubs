@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainDatabaseMetadata extends \Google\Model
-{
-    protected $backupConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupConfiguration::class;
-    protected $backupConfigurationDataType = '';
-    protected $backupRunType = StorageDatabasecenterPartnerapiV1mainBackupRun::class;
-    protected $backupRunDataType = '';
-    protected $productType = StorageDatabasecenterProtoCommonProduct::class;
-    protected $productDataType = '';
-    protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * @param StorageDatabasecenterPartnerapiV1mainBackupConfiguration
-     */
-    public function setBackupConfiguration(StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainDatabaseMetadata extends \Google\Model
     {
+        protected $backupConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupConfiguration::class;
+        protected $backupConfigurationDataType = '';
+        protected $backupRunType = StorageDatabasecenterPartnerapiV1mainBackupRun::class;
+        protected $backupRunDataType = '';
+        protected $productType = StorageDatabasecenterProtoCommonProduct::class;
+        protected $productDataType = '';
+        protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * @param StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+         */
+        public function setBackupConfiguration(StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+         */
+        public function getBackupConfiguration()
+        {
+        }
+        /**
+         * @param StorageDatabasecenterPartnerapiV1mainBackupRun
+         */
+        public function setBackupRun(StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupRun
+         */
+        public function getBackupRun()
+        {
+        }
+        /**
+         * @param StorageDatabasecenterProtoCommonProduct
+         */
+        public function setProduct(StorageDatabasecenterProtoCommonProduct $product)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterProtoCommonProduct
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
+         */
+        public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainDatabaseMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfiguration()
-    {
-    }
-    /**
-     * @param StorageDatabasecenterPartnerapiV1mainBackupRun
-     */
-    public function setBackupRun(StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupRun
-     */
-    public function getBackupRun()
-    {
-    }
-    /**
-     * @param StorageDatabasecenterProtoCommonProduct
-     */
-    public function setProduct(StorageDatabasecenterProtoCommonProduct $product)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterProtoCommonProduct
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
-     */
-    public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainDatabaseMetadata extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainDatabaseMetadata
     {
     }
 }

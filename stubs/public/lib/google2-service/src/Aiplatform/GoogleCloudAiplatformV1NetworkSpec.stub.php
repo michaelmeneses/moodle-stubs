@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NetworkSpec extends \Google\Model
-{
-    /**
-     * Whether to enable public internet access. Default false.
-     *
-     * @var bool
-     */
-    public $enableInternetAccess;
-    /**
-     * The full name of the Google Compute Engine
-     * [network](https://cloud.google.com//compute/docs/networks-and-
-     * firewalls#networks)
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * The name of the subnet that this instance is in. Format: `projects/{project
-     * _id_or_number}/regions/{region}/subnetworks/{subnetwork_id}`
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Whether to enable public internet access. Default false.
-     *
-     * @param bool $enableInternetAccess
-     */
-    public function setEnableInternetAccess($enableInternetAccess)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NetworkSpec extends \Google\Model
     {
+        /**
+         * Whether to enable public internet access. Default false.
+         *
+         * @var bool
+         */
+        public $enableInternetAccess;
+        /**
+         * The full name of the Google Compute Engine
+         * [network](https://cloud.google.com//compute/docs/networks-and-
+         * firewalls#networks)
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * The name of the subnet that this instance is in. Format: `projects/{project
+         * _id_or_number}/regions/{region}/subnetworks/{subnetwork_id}`
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Whether to enable public internet access. Default false.
+         *
+         * @param bool $enableInternetAccess
+         */
+        public function setEnableInternetAccess($enableInternetAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInternetAccess()
+        {
+        }
+        /**
+         * The full name of the Google Compute Engine
+         * [network](https://cloud.google.com//compute/docs/networks-and-
+         * firewalls#networks)
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * The name of the subnet that this instance is in. Format: `projects/{project
+         * _id_or_number}/regions/{region}/subnetworks/{subnetwork_id}`
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NetworkSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableInternetAccess()
-    {
-    }
-    /**
-     * The full name of the Google Compute Engine
-     * [network](https://cloud.google.com//compute/docs/networks-and-
-     * firewalls#networks)
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * The name of the subnet that this instance is in. Format: `projects/{project
-     * _id_or_number}/regions/{region}/subnetworks/{subnetwork_id}`
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NetworkSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NetworkSpec
     {
     }
 }

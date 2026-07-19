@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class ListExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    protected $executionsType = Execution::class;
-    protected $executionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The executions which match the request.
-     *
-     * @param Execution[] $executions
-     */
-    public function setExecutions($executions)
+namespace Google\Service\WorkflowExecutions {
+    class ListExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        protected $executionsType = Execution::class;
+        protected $executionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The executions which match the request.
+         *
+         * @param Execution[] $executions
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return Execution[]
+         */
+        public function getExecutions()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Execution[]
+     * Runtime class alias of \Google\Service\WorkflowExecutions\ListExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutions()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_WorkflowExecutions_ListExecutionsResponse extends \Google\Service\WorkflowExecutions\ListExecutionsResponse
     {
     }
 }

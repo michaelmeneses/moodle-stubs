@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class EnvironmentConfig extends \Google\Model
-{
-    protected $executionConfigType = ExecutionConfig::class;
-    protected $executionConfigDataType = '';
-    protected $peripheralsConfigType = PeripheralsConfig::class;
-    protected $peripheralsConfigDataType = '';
-    /**
-     * Optional. Execution configuration for a workload.
-     *
-     * @param ExecutionConfig $executionConfig
-     */
-    public function setExecutionConfig(ExecutionConfig $executionConfig)
+namespace Google\Service\Dataproc {
+    class EnvironmentConfig extends \Google\Model
     {
+        protected $executionConfigType = ExecutionConfig::class;
+        protected $executionConfigDataType = '';
+        protected $peripheralsConfigType = PeripheralsConfig::class;
+        protected $peripheralsConfigDataType = '';
+        /**
+         * Optional. Execution configuration for a workload.
+         *
+         * @param ExecutionConfig $executionConfig
+         */
+        public function setExecutionConfig(ExecutionConfig $executionConfig)
+        {
+        }
+        /**
+         * @return ExecutionConfig
+         */
+        public function getExecutionConfig()
+        {
+        }
+        /**
+         * Optional. Peripherals configuration that workload has access to.
+         *
+         * @param PeripheralsConfig $peripheralsConfig
+         */
+        public function setPeripheralsConfig(PeripheralsConfig $peripheralsConfig)
+        {
+        }
+        /**
+         * @return PeripheralsConfig
+         */
+        public function getPeripheralsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecutionConfig
+     * Runtime class alias of \Google\Service\Dataproc\EnvironmentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionConfig()
-    {
-    }
-    /**
-     * Optional. Peripherals configuration that workload has access to.
-     *
-     * @param PeripheralsConfig $peripheralsConfig
-     */
-    public function setPeripheralsConfig(PeripheralsConfig $peripheralsConfig)
-    {
-    }
-    /**
-     * @return PeripheralsConfig
-     */
-    public function getPeripheralsConfig()
+    class Google_Service_Dataproc_EnvironmentConfig extends \Google\Service\Dataproc\EnvironmentConfig
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig extends \Google\Model
-{
-    protected $contentSearchSpecType = GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec::class;
-    protected $contentSearchSpecDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec
-     */
-    public function setContentSearchSpec(GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec $contentSearchSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig extends \Google\Model
     {
+        protected $contentSearchSpecType = GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec::class;
+        protected $contentSearchSpecDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec
+         */
+        public function setContentSearchSpec(GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec $contentSearchSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec
+         */
+        public function getContentSearchSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentSearchSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig
     {
     }
 }

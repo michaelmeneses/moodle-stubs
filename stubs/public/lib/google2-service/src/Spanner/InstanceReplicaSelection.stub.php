@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class InstanceReplicaSelection extends \Google\Model
-{
-    /**
-     * Required. Name of the location of the replicas (for example, "us-
-     * central1").
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. Name of the location of the replicas (for example, "us-
-     * central1").
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Spanner {
+    class InstanceReplicaSelection extends \Google\Model
     {
+        /**
+         * Required. Name of the location of the replicas (for example, "us-
+         * central1").
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. Name of the location of the replicas (for example, "us-
+         * central1").
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\InstanceReplicaSelection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
+    class Google_Service_Spanner_InstanceReplicaSelection extends \Google\Service\Spanner\InstanceReplicaSelection
     {
     }
 }

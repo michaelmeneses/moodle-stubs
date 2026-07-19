@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LicenseResourceCommitment extends \Google\Model
-{
-    /**
-     * The number of licenses you plan to purchase.
-     *
-     * @var string
-     */
-    public $amount;
-    /**
-     * The number of cores per license.
-     *
-     * @var string
-     */
-    public $coresPerLicense;
-    /**
-     * The applicable license URI.
-     *
-     * @var string
-     */
-    public $license;
-    /**
-     * The number of licenses you plan to purchase.
-     *
-     * @param string $amount
-     */
-    public function setAmount($amount)
+namespace Google\Service\Compute {
+    class LicenseResourceCommitment extends \Google\Model
     {
+        /**
+         * The number of licenses you plan to purchase.
+         *
+         * @var string
+         */
+        public $amount;
+        /**
+         * The number of cores per license.
+         *
+         * @var string
+         */
+        public $coresPerLicense;
+        /**
+         * The applicable license URI.
+         *
+         * @var string
+         */
+        public $license;
+        /**
+         * The number of licenses you plan to purchase.
+         *
+         * @param string $amount
+         */
+        public function setAmount($amount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * The number of cores per license.
+         *
+         * @param string $coresPerLicense
+         */
+        public function setCoresPerLicense($coresPerLicense)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoresPerLicense()
+        {
+        }
+        /**
+         * The applicable license URI.
+         *
+         * @param string $license
+         */
+        public function setLicense($license)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLicense()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\LicenseResourceCommitment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * The number of cores per license.
-     *
-     * @param string $coresPerLicense
-     */
-    public function setCoresPerLicense($coresPerLicense)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCoresPerLicense()
-    {
-    }
-    /**
-     * The applicable license URI.
-     *
-     * @param string $license
-     */
-    public function setLicense($license)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLicense()
+    class Google_Service_Compute_LicenseResourceCommitment extends \Google\Service\Compute\LicenseResourceCommitment
     {
     }
 }

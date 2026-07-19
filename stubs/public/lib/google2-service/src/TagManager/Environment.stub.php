@@ -21,333 +21,342 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Environment extends \Google\Model
-{
-    /**
-     * Points to a user defined environment.
-     */
-    public const TYPE_user = 'user';
-    /**
-     * Points to the current live container version.
-     */
-    public const TYPE_live = 'live';
-    /**
-     * Points to the latest container version.
-     */
-    public const TYPE_latest = 'latest';
-    /**
-     * Automatically managed environment that points to a workspace preview or
-     * version created by a workspace.
-     */
-    public const TYPE_workspace = 'workspace';
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The environment authorization code.
-     *
-     * @var string
-     */
-    public $authorizationCode;
-    /**
-     * The last update time-stamp for the authorization code.
-     *
-     * @var string
-     */
-    public $authorizationTimestamp;
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * Represents a link to a container version.
-     *
-     * @var string
-     */
-    public $containerVersionId;
-    /**
-     * The environment description. Can be set or changed only on USER type
-     * environments.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Whether or not to enable debug by default for the environment.
-     *
-     * @var bool
-     */
-    public $enableDebug;
-    /**
-     * GTM Environment ID uniquely identifies the GTM Environment.
-     *
-     * @var string
-     */
-    public $environmentId;
-    /**
-     * The fingerprint of the GTM environment as computed at storage time. This
-     * value is recomputed whenever the environment is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * The environment display name. Can be set or changed only on USER type
-     * environments.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * GTM Environment's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * The type of this environment.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Default preview page url for the environment.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Represents a link to a quick preview of a workspace.
-     *
-     * @var string
-     */
-    public $workspaceId;
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Environment extends \Google\Model
     {
+        /**
+         * Points to a user defined environment.
+         */
+        public const TYPE_user = 'user';
+        /**
+         * Points to the current live container version.
+         */
+        public const TYPE_live = 'live';
+        /**
+         * Points to the latest container version.
+         */
+        public const TYPE_latest = 'latest';
+        /**
+         * Automatically managed environment that points to a workspace preview or
+         * version created by a workspace.
+         */
+        public const TYPE_workspace = 'workspace';
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The environment authorization code.
+         *
+         * @var string
+         */
+        public $authorizationCode;
+        /**
+         * The last update time-stamp for the authorization code.
+         *
+         * @var string
+         */
+        public $authorizationTimestamp;
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * Represents a link to a container version.
+         *
+         * @var string
+         */
+        public $containerVersionId;
+        /**
+         * The environment description. Can be set or changed only on USER type
+         * environments.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Whether or not to enable debug by default for the environment.
+         *
+         * @var bool
+         */
+        public $enableDebug;
+        /**
+         * GTM Environment ID uniquely identifies the GTM Environment.
+         *
+         * @var string
+         */
+        public $environmentId;
+        /**
+         * The fingerprint of the GTM environment as computed at storage time. This
+         * value is recomputed whenever the environment is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * The environment display name. Can be set or changed only on USER type
+         * environments.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * GTM Environment's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * The type of this environment.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Default preview page url for the environment.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Represents a link to a quick preview of a workspace.
+         *
+         * @var string
+         */
+        public $workspaceId;
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The environment authorization code.
+         *
+         * @param string $authorizationCode
+         */
+        public function setAuthorizationCode($authorizationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorizationCode()
+        {
+        }
+        /**
+         * The last update time-stamp for the authorization code.
+         *
+         * @param string $authorizationTimestamp
+         */
+        public function setAuthorizationTimestamp($authorizationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorizationTimestamp()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * Represents a link to a container version.
+         *
+         * @param string $containerVersionId
+         */
+        public function setContainerVersionId($containerVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerVersionId()
+        {
+        }
+        /**
+         * The environment description. Can be set or changed only on USER type
+         * environments.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Whether or not to enable debug by default for the environment.
+         *
+         * @param bool $enableDebug
+         */
+        public function setEnableDebug($enableDebug)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableDebug()
+        {
+        }
+        /**
+         * GTM Environment ID uniquely identifies the GTM Environment.
+         *
+         * @param string $environmentId
+         */
+        public function setEnvironmentId($environmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentId()
+        {
+        }
+        /**
+         * The fingerprint of the GTM environment as computed at storage time. This
+         * value is recomputed whenever the environment is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The environment display name. Can be set or changed only on USER type
+         * environments.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * GTM Environment's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * The type of this environment.
+         *
+         * Accepted values: user, live, latest, workspace
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Default preview page url for the environment.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * Represents a link to a quick preview of a workspace.
+         *
+         * @param string $workspaceId
+         */
+        public function setWorkspaceId($workspaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The environment authorization code.
-     *
-     * @param string $authorizationCode
-     */
-    public function setAuthorizationCode($authorizationCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorizationCode()
-    {
-    }
-    /**
-     * The last update time-stamp for the authorization code.
-     *
-     * @param string $authorizationTimestamp
-     */
-    public function setAuthorizationTimestamp($authorizationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorizationTimestamp()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * Represents a link to a container version.
-     *
-     * @param string $containerVersionId
-     */
-    public function setContainerVersionId($containerVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerVersionId()
-    {
-    }
-    /**
-     * The environment description. Can be set or changed only on USER type
-     * environments.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Whether or not to enable debug by default for the environment.
-     *
-     * @param bool $enableDebug
-     */
-    public function setEnableDebug($enableDebug)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableDebug()
-    {
-    }
-    /**
-     * GTM Environment ID uniquely identifies the GTM Environment.
-     *
-     * @param string $environmentId
-     */
-    public function setEnvironmentId($environmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentId()
-    {
-    }
-    /**
-     * The fingerprint of the GTM environment as computed at storage time. This
-     * value is recomputed whenever the environment is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The environment display name. Can be set or changed only on USER type
-     * environments.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * GTM Environment's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * The type of this environment.
-     *
-     * Accepted values: user, live, latest, workspace
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Default preview page url for the environment.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * Represents a link to a quick preview of a workspace.
-     *
-     * @param string $workspaceId
-     */
-    public function setWorkspaceId($workspaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspaceId()
+    class Google_Service_TagManager_Environment extends \Google\Service\TagManager\Environment
     {
     }
 }

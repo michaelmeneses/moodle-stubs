@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class AssociateLocationRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $placeId;
-    /**
-     * @param string
-     */
-    public function setPlaceId($placeId)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class AssociateLocationRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $placeId;
+        /**
+         * @param string
+         */
+        public function setPlaceId($placeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\AssociateLocationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceId()
+    class Google_Service_MyBusinessBusinessInformation_AssociateLocationRequest extends \Google\Service\MyBusinessBusinessInformation\AssociateLocationRequest
     {
     }
 }

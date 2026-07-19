@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DiscoveryclustersClustersBannerWithContentContainer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fillColorArgb;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @var string
-     */
-    public $maskColorArgb;
-    /**
-     * @var string
-     */
-    public $moreButtonText;
-    /**
-     * @var string
-     */
-    public $moreButtonUrl;
-    /**
-     * @var string
-     */
-    public $textColorArgb;
-    /**
-     * @param string $fillColorArgb
-     */
-    public function setFillColorArgb($fillColorArgb)
+namespace Google\Service\Books {
+    class DiscoveryclustersClustersBannerWithContentContainer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fillColorArgb;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @var string
+         */
+        public $maskColorArgb;
+        /**
+         * @var string
+         */
+        public $moreButtonText;
+        /**
+         * @var string
+         */
+        public $moreButtonUrl;
+        /**
+         * @var string
+         */
+        public $textColorArgb;
+        /**
+         * @param string $fillColorArgb
+         */
+        public function setFillColorArgb($fillColorArgb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFillColorArgb()
+        {
+        }
+        /**
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param string $maskColorArgb
+         */
+        public function setMaskColorArgb($maskColorArgb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaskColorArgb()
+        {
+        }
+        /**
+         * @param string $moreButtonText
+         */
+        public function setMoreButtonText($moreButtonText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMoreButtonText()
+        {
+        }
+        /**
+         * @param string $moreButtonUrl
+         */
+        public function setMoreButtonUrl($moreButtonUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMoreButtonUrl()
+        {
+        }
+        /**
+         * @param string $textColorArgb
+         */
+        public function setTextColorArgb($textColorArgb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextColorArgb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\DiscoveryclustersClustersBannerWithContentContainer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFillColorArgb()
-    {
-    }
-    /**
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param string $maskColorArgb
-     */
-    public function setMaskColorArgb($maskColorArgb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaskColorArgb()
-    {
-    }
-    /**
-     * @param string $moreButtonText
-     */
-    public function setMoreButtonText($moreButtonText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMoreButtonText()
-    {
-    }
-    /**
-     * @param string $moreButtonUrl
-     */
-    public function setMoreButtonUrl($moreButtonUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMoreButtonUrl()
-    {
-    }
-    /**
-     * @param string $textColorArgb
-     */
-    public function setTextColorArgb($textColorArgb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextColorArgb()
+    class Google_Service_Books_DiscoveryclustersClustersBannerWithContentContainer extends \Google\Service\Books\DiscoveryclustersClustersBannerWithContentContainer
     {
     }
 }

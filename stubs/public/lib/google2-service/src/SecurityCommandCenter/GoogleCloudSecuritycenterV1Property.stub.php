@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1Property extends \Google\Model
-{
-    /**
-     * Name of the property for the custom output.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueExpressionType = Expr::class;
-    protected $valueExpressionDataType = '';
-    /**
-     * Name of the property for the custom output.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1Property extends \Google\Model
     {
+        /**
+         * Name of the property for the custom output.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueExpressionType = Expr::class;
+        protected $valueExpressionDataType = '';
+        /**
+         * Name of the property for the custom output.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The CEL expression for the custom output. A resource property can be
+         * specified to return the value of the property or a text string enclosed in
+         * quotation marks.
+         *
+         * @param Expr $valueExpression
+         */
+        public function setValueExpression(Expr $valueExpression)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getValueExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1Property registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The CEL expression for the custom output. A resource property can be
-     * specified to return the value of the property or a text string enclosed in
-     * quotation marks.
-     *
-     * @param Expr $valueExpression
-     */
-    public function setValueExpression(Expr $valueExpression)
-    {
-    }
-    /**
-     * @return Expr
-     */
-    public function getValueExpression()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1Property extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1Property
     {
     }
 }

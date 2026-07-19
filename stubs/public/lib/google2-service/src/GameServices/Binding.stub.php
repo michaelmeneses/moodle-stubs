@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class Binding extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    /**
-     * @var string
-     */
-    public $bindingId;
-    protected $conditionType = Expr::class;
-    protected $conditionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $members;
-    /**
-     * @var string
-     */
-    public $role;
-    /**
-     * @param string
-     */
-    public function setBindingId($bindingId)
+namespace Google\Service\GameServices {
+    class Binding extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        /**
+         * @var string
+         */
+        public $bindingId;
+        protected $conditionType = Expr::class;
+        protected $conditionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $members;
+        /**
+         * @var string
+         */
+        public $role;
+        /**
+         * @param string
+         */
+        public function setBindingId($bindingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBindingId()
+        {
+        }
+        /**
+         * @param Expr
+         */
+        public function setCondition(Expr $condition)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\Binding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBindingId()
-    {
-    }
-    /**
-     * @param Expr
-     */
-    public function setCondition(Expr $condition)
-    {
-    }
-    /**
-     * @return Expr
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMembers($members)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMembers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_GameServices_Binding extends \Google\Service\GameServices\Binding
     {
     }
 }

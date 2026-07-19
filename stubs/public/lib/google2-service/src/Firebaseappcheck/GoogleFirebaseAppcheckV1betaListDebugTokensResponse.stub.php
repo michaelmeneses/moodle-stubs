@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaListDebugTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'debugTokens';
-    protected $debugTokensType = GoogleFirebaseAppcheckV1betaDebugToken::class;
-    protected $debugTokensDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleFirebaseAppcheckV1betaDebugToken[]
-     */
-    public function setDebugTokens($debugTokens)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaListDebugTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'debugTokens';
+        protected $debugTokensType = GoogleFirebaseAppcheckV1betaDebugToken::class;
+        protected $debugTokensDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleFirebaseAppcheckV1betaDebugToken[]
+         */
+        public function setDebugTokens($debugTokens)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaDebugToken[]
+         */
+        public function getDebugTokens()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1betaDebugToken[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaListDebugTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugTokens()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaListDebugTokensResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaListDebugTokensResponse
     {
     }
 }

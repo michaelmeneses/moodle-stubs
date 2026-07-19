@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SimulateSecurityHealthAnalyticsCustomModuleRequest extends \Google\Model
-{
-    protected $customConfigType = GoogleCloudSecuritycenterV1CustomConfig::class;
-    protected $customConfigDataType = '';
-    protected $resourceType = SimulatedResource::class;
-    protected $resourceDataType = '';
-    /**
-     * Required. The custom configuration that you need to test.
-     *
-     * @param GoogleCloudSecuritycenterV1CustomConfig $customConfig
-     */
-    public function setCustomConfig(GoogleCloudSecuritycenterV1CustomConfig $customConfig)
+namespace Google\Service\SecurityCommandCenter {
+    class SimulateSecurityHealthAnalyticsCustomModuleRequest extends \Google\Model
     {
+        protected $customConfigType = GoogleCloudSecuritycenterV1CustomConfig::class;
+        protected $customConfigDataType = '';
+        protected $resourceType = SimulatedResource::class;
+        protected $resourceDataType = '';
+        /**
+         * Required. The custom configuration that you need to test.
+         *
+         * @param GoogleCloudSecuritycenterV1CustomConfig $customConfig
+         */
+        public function setCustomConfig(GoogleCloudSecuritycenterV1CustomConfig $customConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1CustomConfig
+         */
+        public function getCustomConfig()
+        {
+        }
+        /**
+         * Required. Resource data to simulate custom module against.
+         *
+         * @param SimulatedResource $resource
+         */
+        public function setResource(SimulatedResource $resource)
+        {
+        }
+        /**
+         * @return SimulatedResource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV1CustomConfig
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConfig()
-    {
-    }
-    /**
-     * Required. Resource data to simulate custom module against.
-     *
-     * @param SimulatedResource $resource
-     */
-    public function setResource(SimulatedResource $resource)
-    {
-    }
-    /**
-     * @return SimulatedResource
-     */
-    public function getResource()
+    class Google_Service_SecurityCommandCenter_SimulateSecurityHealthAnalyticsCustomModuleRequest extends \Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleRequest
     {
     }
 }

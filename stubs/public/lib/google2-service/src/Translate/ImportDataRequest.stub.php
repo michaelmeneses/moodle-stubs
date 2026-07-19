@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ImportDataRequest extends \Google\Model
-{
-    protected $inputConfigType = DatasetInputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Required. The config for the input content.
-     *
-     * @param DatasetInputConfig $inputConfig
-     */
-    public function setInputConfig(DatasetInputConfig $inputConfig)
+namespace Google\Service\Translate {
+    class ImportDataRequest extends \Google\Model
     {
+        protected $inputConfigType = DatasetInputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Required. The config for the input content.
+         *
+         * @param DatasetInputConfig $inputConfig
+         */
+        public function setInputConfig(DatasetInputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return DatasetInputConfig
+         */
+        public function getInputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatasetInputConfig
+     * Runtime class alias of \Google\Service\Translate\ImportDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
+    class Google_Service_Translate_ImportDataRequest extends \Google\Service\Translate\ImportDataRequest
     {
     }
 }

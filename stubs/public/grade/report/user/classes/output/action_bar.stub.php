@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_user\output;
 
+use moodle_url;
+use core_grades\output\general_action_bar;
 /**
  * Renderable class for the action bar elements in the user report page.
  *

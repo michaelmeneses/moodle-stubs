@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StageShuffleWriteMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bytesWritten;
-    /**
-     * @var string
-     */
-    public $recordsWritten;
-    /**
-     * @var string
-     */
-    public $writeTimeNanos;
-    /**
-     * @param string $bytesWritten
-     */
-    public function setBytesWritten($bytesWritten)
+namespace Google\Service\Dataproc {
+    class StageShuffleWriteMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bytesWritten;
+        /**
+         * @var string
+         */
+        public $recordsWritten;
+        /**
+         * @var string
+         */
+        public $writeTimeNanos;
+        /**
+         * @param string $bytesWritten
+         */
+        public function setBytesWritten($bytesWritten)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesWritten()
+        {
+        }
+        /**
+         * @param string $recordsWritten
+         */
+        public function setRecordsWritten($recordsWritten)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordsWritten()
+        {
+        }
+        /**
+         * @param string $writeTimeNanos
+         */
+        public function setWriteTimeNanos($writeTimeNanos)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteTimeNanos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StageShuffleWriteMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesWritten()
-    {
-    }
-    /**
-     * @param string $recordsWritten
-     */
-    public function setRecordsWritten($recordsWritten)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordsWritten()
-    {
-    }
-    /**
-     * @param string $writeTimeNanos
-     */
-    public function setWriteTimeNanos($writeTimeNanos)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteTimeNanos()
+    class Google_Service_Dataproc_StageShuffleWriteMetrics extends \Google\Service\Dataproc\StageShuffleWriteMetrics
     {
     }
 }

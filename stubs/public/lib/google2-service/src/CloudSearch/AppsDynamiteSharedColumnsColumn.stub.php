@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedColumnsColumn extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    /**
-     * @var string
-     */
-    public $horizontalAlignment;
-    /**
-     * @var string
-     */
-    public $horizontalSizeStyle;
-    /**
-     * @var string
-     */
-    public $verticalAlignment;
-    protected $widgetsType = AppsDynamiteSharedColumnsColumnWidgets::class;
-    protected $widgetsDataType = 'array';
-    public $widgets;
-    /**
-     * @param string
-     */
-    public function setHorizontalAlignment($horizontalAlignment)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedColumnsColumn extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        /**
+         * @var string
+         */
+        public $horizontalAlignment;
+        /**
+         * @var string
+         */
+        public $horizontalSizeStyle;
+        /**
+         * @var string
+         */
+        public $verticalAlignment;
+        protected $widgetsType = AppsDynamiteSharedColumnsColumnWidgets::class;
+        protected $widgetsDataType = 'array';
+        public $widgets;
+        /**
+         * @param string
+         */
+        public function setHorizontalAlignment($horizontalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalAlignment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHorizontalSizeStyle($horizontalSizeStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalSizeStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVerticalAlignment($verticalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerticalAlignment()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedColumnsColumnWidgets[]
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedColumnsColumnWidgets[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedColumnsColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHorizontalAlignment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHorizontalSizeStyle($horizontalSizeStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHorizontalSizeStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVerticalAlignment($verticalAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerticalAlignment()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedColumnsColumnWidgets[]
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedColumnsColumnWidgets[]
-     */
-    public function getWidgets()
+    class Google_Service_CloudSearch_AppsDynamiteSharedColumnsColumn extends \Google\Service\CloudSearch\AppsDynamiteSharedColumnsColumn
     {
     }
 }

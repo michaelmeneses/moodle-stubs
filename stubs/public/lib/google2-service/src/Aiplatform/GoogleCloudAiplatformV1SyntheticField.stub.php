@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SyntheticField extends \Google\Model
-{
-    protected $contentType = GoogleCloudAiplatformV1Content::class;
-    protected $contentDataType = '';
-    /**
-     * Optional. The name of the field.
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * Required. The content of the field.
-     *
-     * @param GoogleCloudAiplatformV1Content $content
-     */
-    public function setContent(GoogleCloudAiplatformV1Content $content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SyntheticField extends \Google\Model
     {
+        protected $contentType = GoogleCloudAiplatformV1Content::class;
+        protected $contentDataType = '';
+        /**
+         * Optional. The name of the field.
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * Required. The content of the field.
+         *
+         * @param GoogleCloudAiplatformV1Content $content
+         */
+        public function setContent(GoogleCloudAiplatformV1Content $content)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Optional. The name of the field.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SyntheticField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Optional. The name of the field.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SyntheticField extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SyntheticField
     {
     }
 }

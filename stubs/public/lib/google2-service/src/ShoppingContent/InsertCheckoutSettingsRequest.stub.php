@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InsertCheckoutSettingsRequest extends \Google\Model
-{
-    protected $uriSettingsType = UrlSettings::class;
-    protected $uriSettingsDataType = '';
-    /**
-     * Required. The `UrlSettings` for the request. The presence of URL settings
-     * indicates `Checkout` enrollment.
-     *
-     * @param UrlSettings $uriSettings
-     */
-    public function setUriSettings(UrlSettings $uriSettings)
+namespace Google\Service\ShoppingContent {
+    class InsertCheckoutSettingsRequest extends \Google\Model
     {
+        protected $uriSettingsType = UrlSettings::class;
+        protected $uriSettingsDataType = '';
+        /**
+         * Required. The `UrlSettings` for the request. The presence of URL settings
+         * indicates `Checkout` enrollment.
+         *
+         * @param UrlSettings $uriSettings
+         */
+        public function setUriSettings(UrlSettings $uriSettings)
+        {
+        }
+        /**
+         * @return UrlSettings
+         */
+        public function getUriSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlSettings
+     * Runtime class alias of \Google\Service\ShoppingContent\InsertCheckoutSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUriSettings()
+    class Google_Service_ShoppingContent_InsertCheckoutSettingsRequest extends \Google\Service\ShoppingContent\InsertCheckoutSettingsRequest
     {
     }
 }

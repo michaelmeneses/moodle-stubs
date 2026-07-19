@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleCloudDiscoveryengineV1SuggestionDenyListEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Required. A list of all denylist entries to import. Max of 1000 items.
-     *
-     * @param GoogleCloudDiscoveryengineV1SuggestionDenyListEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleCloudDiscoveryengineV1SuggestionDenyListEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Required. A list of all denylist entries to import. Max of 1000 items.
+         *
+         * @param GoogleCloudDiscoveryengineV1SuggestionDenyListEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SuggestionDenyListEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SuggestionDenyListEntry[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequestInlineSource
     {
     }
 }

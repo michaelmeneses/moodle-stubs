@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobListJobs extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["principalSubject" => "principal_subject", "userEmail" => "user_email"];
-    protected $configurationType = JobConfiguration::class;
-    protected $configurationDataType = '';
-    protected $errorResultType = ErrorProto::class;
-    protected $errorResultDataType = '';
-    /**
-     * Unique opaque ID of the job.
-     *
-     * @var string
-     */
-    public $id;
-    protected $jobReferenceType = JobReference::class;
-    protected $jobReferenceDataType = '';
-    /**
-     * The resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Full-projection-only] String representation of identity of requesting
-     * party. Populated for both first- and third-party identities. Only present
-     * for APIs that support third-party identities.
-     *
-     * @var string
-     */
-    public $principalSubject;
-    /**
-     * Running state of the job. When the state is DONE, errorResult can be
-     * checked to determine whether the job succeeded or failed.
-     *
-     * @var string
-     */
-    public $state;
-    protected $statisticsType = JobStatistics::class;
-    protected $statisticsDataType = '';
-    protected $statusType = JobStatus::class;
-    protected $statusDataType = '';
-    /**
-     * [Full-projection-only] Email address of the user who ran the job.
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * Required. Describes the job configuration.
-     *
-     * @param JobConfiguration $configuration
-     */
-    public function setConfiguration(JobConfiguration $configuration)
+namespace Google\Service\Bigquery {
+    class JobListJobs extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["principalSubject" => "principal_subject", "userEmail" => "user_email"];
+        protected $configurationType = JobConfiguration::class;
+        protected $configurationDataType = '';
+        protected $errorResultType = ErrorProto::class;
+        protected $errorResultDataType = '';
+        /**
+         * Unique opaque ID of the job.
+         *
+         * @var string
+         */
+        public $id;
+        protected $jobReferenceType = JobReference::class;
+        protected $jobReferenceDataType = '';
+        /**
+         * The resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Full-projection-only] String representation of identity of requesting
+         * party. Populated for both first- and third-party identities. Only present
+         * for APIs that support third-party identities.
+         *
+         * @var string
+         */
+        public $principalSubject;
+        /**
+         * Running state of the job. When the state is DONE, errorResult can be
+         * checked to determine whether the job succeeded or failed.
+         *
+         * @var string
+         */
+        public $state;
+        protected $statisticsType = JobStatistics::class;
+        protected $statisticsDataType = '';
+        protected $statusType = JobStatus::class;
+        protected $statusDataType = '';
+        /**
+         * [Full-projection-only] Email address of the user who ran the job.
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * Required. Describes the job configuration.
+         *
+         * @param JobConfiguration $configuration
+         */
+        public function setConfiguration(JobConfiguration $configuration)
+        {
+        }
+        /**
+         * @return JobConfiguration
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * A result object that will be present only if the job has failed.
+         *
+         * @param ErrorProto $errorResult
+         */
+        public function setErrorResult(ErrorProto $errorResult)
+        {
+        }
+        /**
+         * @return ErrorProto
+         */
+        public function getErrorResult()
+        {
+        }
+        /**
+         * Unique opaque ID of the job.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Unique opaque ID of the job.
+         *
+         * @param JobReference $jobReference
+         */
+        public function setJobReference(JobReference $jobReference)
+        {
+        }
+        /**
+         * @return JobReference
+         */
+        public function getJobReference()
+        {
+        }
+        /**
+         * The resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Full-projection-only] String representation of identity of requesting
+         * party. Populated for both first- and third-party identities. Only present
+         * for APIs that support third-party identities.
+         *
+         * @param string $principalSubject
+         */
+        public function setPrincipalSubject($principalSubject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipalSubject()
+        {
+        }
+        /**
+         * Running state of the job. When the state is DONE, errorResult can be
+         * checked to determine whether the job succeeded or failed.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Information about the job, including starting time and ending
+         * time of the job.
+         *
+         * @param JobStatistics $statistics
+         */
+        public function setStatistics(JobStatistics $statistics)
+        {
+        }
+        /**
+         * @return JobStatistics
+         */
+        public function getStatistics()
+        {
+        }
+        /**
+         * [Full-projection-only] Describes the status of this job.
+         *
+         * @param JobStatus $status
+         */
+        public function setStatus(JobStatus $status)
+        {
+        }
+        /**
+         * @return JobStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * [Full-projection-only] Email address of the user who ran the job.
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobConfiguration
+     * Runtime class alias of \Google\Service\Bigquery\JobListJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * A result object that will be present only if the job has failed.
-     *
-     * @param ErrorProto $errorResult
-     */
-    public function setErrorResult(ErrorProto $errorResult)
-    {
-    }
-    /**
-     * @return ErrorProto
-     */
-    public function getErrorResult()
-    {
-    }
-    /**
-     * Unique opaque ID of the job.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Unique opaque ID of the job.
-     *
-     * @param JobReference $jobReference
-     */
-    public function setJobReference(JobReference $jobReference)
-    {
-    }
-    /**
-     * @return JobReference
-     */
-    public function getJobReference()
-    {
-    }
-    /**
-     * The resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Full-projection-only] String representation of identity of requesting
-     * party. Populated for both first- and third-party identities. Only present
-     * for APIs that support third-party identities.
-     *
-     * @param string $principalSubject
-     */
-    public function setPrincipalSubject($principalSubject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipalSubject()
-    {
-    }
-    /**
-     * Running state of the job. When the state is DONE, errorResult can be
-     * checked to determine whether the job succeeded or failed.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Information about the job, including starting time and ending
-     * time of the job.
-     *
-     * @param JobStatistics $statistics
-     */
-    public function setStatistics(JobStatistics $statistics)
-    {
-    }
-    /**
-     * @return JobStatistics
-     */
-    public function getStatistics()
-    {
-    }
-    /**
-     * [Full-projection-only] Describes the status of this job.
-     *
-     * @param JobStatus $status
-     */
-    public function setStatus(JobStatus $status)
-    {
-    }
-    /**
-     * @return JobStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * [Full-projection-only] Email address of the user who ran the job.
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
+    class Google_Service_Bigquery_JobListJobs extends \Google\Service\Bigquery\JobListJobs
     {
     }
 }

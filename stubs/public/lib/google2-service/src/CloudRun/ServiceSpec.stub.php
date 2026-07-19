@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ServiceSpec extends \Google\Collection
-{
-    protected $collection_key = 'traffic';
-    protected $templateType = RevisionTemplate::class;
-    protected $templateDataType = '';
-    protected $trafficType = TrafficTarget::class;
-    protected $trafficDataType = 'array';
-    /**
-     * @param RevisionTemplate
-     */
-    public function setTemplate(RevisionTemplate $template)
+namespace Google\Service\CloudRun {
+    class ServiceSpec extends \Google\Collection
     {
+        protected $collection_key = 'traffic';
+        protected $templateType = RevisionTemplate::class;
+        protected $templateDataType = '';
+        protected $trafficType = TrafficTarget::class;
+        protected $trafficDataType = 'array';
+        /**
+         * @param RevisionTemplate
+         */
+        public function setTemplate(RevisionTemplate $template)
+        {
+        }
+        /**
+         * @return RevisionTemplate
+         */
+        public function getTemplate()
+        {
+        }
+        /**
+         * @param TrafficTarget[]
+         */
+        public function setTraffic($traffic)
+        {
+        }
+        /**
+         * @return TrafficTarget[]
+         */
+        public function getTraffic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RevisionTemplate
+     * Runtime class alias of \Google\Service\CloudRun\ServiceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTemplate()
-    {
-    }
-    /**
-     * @param TrafficTarget[]
-     */
-    public function setTraffic($traffic)
-    {
-    }
-    /**
-     * @return TrafficTarget[]
-     */
-    public function getTraffic()
+    class Google_Service_CloudRun_ServiceSpec extends \Google\Service\CloudRun\ServiceSpec
     {
     }
 }

@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CommonInStreamAttribute extends \Google\Model
-{
-    /**
-     * The text on the call-to-action button.
-     *
-     * @var string
-     */
-    public $actionButtonLabel;
-    /**
-     * The headline of the call-to-action banner.
-     *
-     * @var string
-     */
-    public $actionHeadline;
-    protected $companionBannerType = ImageAsset::class;
-    protected $companionBannerDataType = '';
-    /**
-     * The webpage address that appears with the ad.
-     *
-     * @var string
-     */
-    public $displayUrl;
-    /**
-     * The URL address of the webpage that people reach after they click the ad.
-     *
-     * @var string
-     */
-    public $finalUrl;
-    /**
-     * The URL address loaded in the background for tracking purposes.
-     *
-     * @var string
-     */
-    public $trackingUrl;
-    protected $videoType = YoutubeVideoDetails::class;
-    protected $videoDataType = '';
-    /**
-     * The text on the call-to-action button.
-     *
-     * @param string $actionButtonLabel
-     */
-    public function setActionButtonLabel($actionButtonLabel)
+namespace Google\Service\DisplayVideo {
+    class CommonInStreamAttribute extends \Google\Model
     {
+        /**
+         * The text on the call-to-action button.
+         *
+         * @var string
+         */
+        public $actionButtonLabel;
+        /**
+         * The headline of the call-to-action banner.
+         *
+         * @var string
+         */
+        public $actionHeadline;
+        protected $companionBannerType = ImageAsset::class;
+        protected $companionBannerDataType = '';
+        /**
+         * The webpage address that appears with the ad.
+         *
+         * @var string
+         */
+        public $displayUrl;
+        /**
+         * The URL address of the webpage that people reach after they click the ad.
+         *
+         * @var string
+         */
+        public $finalUrl;
+        /**
+         * The URL address loaded in the background for tracking purposes.
+         *
+         * @var string
+         */
+        public $trackingUrl;
+        protected $videoType = YoutubeVideoDetails::class;
+        protected $videoDataType = '';
+        /**
+         * The text on the call-to-action button.
+         *
+         * @param string $actionButtonLabel
+         */
+        public function setActionButtonLabel($actionButtonLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionButtonLabel()
+        {
+        }
+        /**
+         * The headline of the call-to-action banner.
+         *
+         * @param string $actionHeadline
+         */
+        public function setActionHeadline($actionHeadline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionHeadline()
+        {
+        }
+        /**
+         * The image which shows next to the video ad.
+         *
+         * @param ImageAsset $companionBanner
+         */
+        public function setCompanionBanner(ImageAsset $companionBanner)
+        {
+        }
+        /**
+         * @return ImageAsset
+         */
+        public function getCompanionBanner()
+        {
+        }
+        /**
+         * The webpage address that appears with the ad.
+         *
+         * @param string $displayUrl
+         */
+        public function setDisplayUrl($displayUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayUrl()
+        {
+        }
+        /**
+         * The URL address of the webpage that people reach after they click the ad.
+         *
+         * @param string $finalUrl
+         */
+        public function setFinalUrl($finalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinalUrl()
+        {
+        }
+        /**
+         * The URL address loaded in the background for tracking purposes.
+         *
+         * @param string $trackingUrl
+         */
+        public function setTrackingUrl($trackingUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingUrl()
+        {
+        }
+        /**
+         * The YouTube video of the ad.
+         *
+         * @param YoutubeVideoDetails $video
+         */
+        public function setVideo(YoutubeVideoDetails $video)
+        {
+        }
+        /**
+         * @return YoutubeVideoDetails
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CommonInStreamAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionButtonLabel()
-    {
-    }
-    /**
-     * The headline of the call-to-action banner.
-     *
-     * @param string $actionHeadline
-     */
-    public function setActionHeadline($actionHeadline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActionHeadline()
-    {
-    }
-    /**
-     * The image which shows next to the video ad.
-     *
-     * @param ImageAsset $companionBanner
-     */
-    public function setCompanionBanner(ImageAsset $companionBanner)
-    {
-    }
-    /**
-     * @return ImageAsset
-     */
-    public function getCompanionBanner()
-    {
-    }
-    /**
-     * The webpage address that appears with the ad.
-     *
-     * @param string $displayUrl
-     */
-    public function setDisplayUrl($displayUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayUrl()
-    {
-    }
-    /**
-     * The URL address of the webpage that people reach after they click the ad.
-     *
-     * @param string $finalUrl
-     */
-    public function setFinalUrl($finalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinalUrl()
-    {
-    }
-    /**
-     * The URL address loaded in the background for tracking purposes.
-     *
-     * @param string $trackingUrl
-     */
-    public function setTrackingUrl($trackingUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingUrl()
-    {
-    }
-    /**
-     * The YouTube video of the ad.
-     *
-     * @param YoutubeVideoDetails $video
-     */
-    public function setVideo(YoutubeVideoDetails $video)
-    {
-    }
-    /**
-     * @return YoutubeVideoDetails
-     */
-    public function getVideo()
+    class Google_Service_DisplayVideo_CommonInStreamAttribute extends \Google\Service\DisplayVideo\CommonInStreamAttribute
     {
     }
 }

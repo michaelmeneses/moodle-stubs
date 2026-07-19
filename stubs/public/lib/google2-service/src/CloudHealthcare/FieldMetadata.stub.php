@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class FieldMetadata extends \Google\Collection
-{
-    /**
-     * No action specified. Defaults to DO_NOT_TRANSFORM.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * Transform the entire field.
-     */
-    public const ACTION_TRANSFORM = 'TRANSFORM';
-    /**
-     * Inspect and transform any found PHI.
-     */
-    public const ACTION_INSPECT_AND_TRANSFORM = 'INSPECT_AND_TRANSFORM';
-    /**
-     * Do not transform.
-     */
-    public const ACTION_DO_NOT_TRANSFORM = 'DO_NOT_TRANSFORM';
-    protected $collection_key = 'paths';
-    /**
-     * Optional. Deidentify action for one field.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Optional. List of paths to FHIR fields to be redacted. Each path is a
-     * period-separated list where each component is either a field name or FHIR
-     * type name, for example: Patient, HumanName. For "choice" types (those
-     * defined in the FHIR spec with the form: field[x]) we use two separate
-     * components. For example, "deceasedAge.unit" is matched by
-     * "Deceased.Age.unit". Supported types are: AdministrativeGenderCode,
-     * Base64Binary, Boolean, Code, Date, DateTime, Decimal, HumanName, Id,
-     * Instant, Integer, LanguageCode, Markdown, Oid, PositiveInt, String,
-     * UnsignedInt, Uri, Uuid, Xhtml.
-     *
-     * @var string[]
-     */
-    public $paths;
-    /**
-     * Optional. Deidentify action for one field.
-     *
-     * Accepted values: ACTION_UNSPECIFIED, TRANSFORM, INSPECT_AND_TRANSFORM,
-     * DO_NOT_TRANSFORM
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\CloudHealthcare {
+    class FieldMetadata extends \Google\Collection
     {
+        /**
+         * No action specified. Defaults to DO_NOT_TRANSFORM.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * Transform the entire field.
+         */
+        public const ACTION_TRANSFORM = 'TRANSFORM';
+        /**
+         * Inspect and transform any found PHI.
+         */
+        public const ACTION_INSPECT_AND_TRANSFORM = 'INSPECT_AND_TRANSFORM';
+        /**
+         * Do not transform.
+         */
+        public const ACTION_DO_NOT_TRANSFORM = 'DO_NOT_TRANSFORM';
+        protected $collection_key = 'paths';
+        /**
+         * Optional. Deidentify action for one field.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Optional. List of paths to FHIR fields to be redacted. Each path is a
+         * period-separated list where each component is either a field name or FHIR
+         * type name, for example: Patient, HumanName. For "choice" types (those
+         * defined in the FHIR spec with the form: field[x]) we use two separate
+         * components. For example, "deceasedAge.unit" is matched by
+         * "Deceased.Age.unit". Supported types are: AdministrativeGenderCode,
+         * Base64Binary, Boolean, Code, Date, DateTime, Decimal, HumanName, Id,
+         * Instant, Integer, LanguageCode, Markdown, Oid, PositiveInt, String,
+         * UnsignedInt, Uri, Uuid, Xhtml.
+         *
+         * @var string[]
+         */
+        public $paths;
+        /**
+         * Optional. Deidentify action for one field.
+         *
+         * Accepted values: ACTION_UNSPECIFIED, TRANSFORM, INSPECT_AND_TRANSFORM,
+         * DO_NOT_TRANSFORM
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. List of paths to FHIR fields to be redacted. Each path is a
+         * period-separated list where each component is either a field name or FHIR
+         * type name, for example: Patient, HumanName. For "choice" types (those
+         * defined in the FHIR spec with the form: field[x]) we use two separate
+         * components. For example, "deceasedAge.unit" is matched by
+         * "Deceased.Age.unit". Supported types are: AdministrativeGenderCode,
+         * Base64Binary, Boolean, Code, Date, DateTime, Decimal, HumanName, Id,
+         * Instant, Integer, LanguageCode, Markdown, Oid, PositiveInt, String,
+         * UnsignedInt, Uri, Uuid, Xhtml.
+         *
+         * @param string[] $paths
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\CloudHealthcare\FieldMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. List of paths to FHIR fields to be redacted. Each path is a
-     * period-separated list where each component is either a field name or FHIR
-     * type name, for example: Patient, HumanName. For "choice" types (those
-     * defined in the FHIR spec with the form: field[x]) we use two separate
-     * components. For example, "deceasedAge.unit" is matched by
-     * "Deceased.Age.unit". Supported types are: AdministrativeGenderCode,
-     * Base64Binary, Boolean, Code, Date, DateTime, Decimal, HumanName, Id,
-     * Instant, Integer, LanguageCode, Markdown, Oid, PositiveInt, String,
-     * UnsignedInt, Uri, Uuid, Xhtml.
-     *
-     * @param string[] $paths
-     */
-    public function setPaths($paths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPaths()
+    class Google_Service_CloudHealthcare_FieldMetadata extends \Google\Service\CloudHealthcare\FieldMetadata
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlImageObjectDetectionMetadata extends \Google\Model
-{
-    /**
-     * Should not be set.
-     */
-    public const SUCCESSFUL_STOP_REASON_SUCCESSFUL_STOP_REASON_UNSPECIFIED = 'SUCCESSFUL_STOP_REASON_UNSPECIFIED';
-    /**
-     * The inputs.budgetMilliNodeHours had been reached.
-     */
-    public const SUCCESSFUL_STOP_REASON_BUDGET_REACHED = 'BUDGET_REACHED';
-    /**
-     * Further training of the Model ceased to increase its quality, since it
-     * already has converged.
-     */
-    public const SUCCESSFUL_STOP_REASON_MODEL_CONVERGED = 'MODEL_CONVERGED';
-    /**
-     * The actual training cost of creating this model, expressed in milli node
-     * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
-     * exceed inputs.budgetMilliNodeHours.
-     *
-     * @var string
-     */
-    public $costMilliNodeHours;
-    /**
-     * For successful job completions, this is the reason why the job has
-     * finished.
-     *
-     * @var string
-     */
-    public $successfulStopReason;
-    /**
-     * The actual training cost of creating this model, expressed in milli node
-     * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
-     * exceed inputs.budgetMilliNodeHours.
-     *
-     * @param string $costMilliNodeHours
-     */
-    public function setCostMilliNodeHours($costMilliNodeHours)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlImageObjectDetectionMetadata extends \Google\Model
     {
+        /**
+         * Should not be set.
+         */
+        public const SUCCESSFUL_STOP_REASON_SUCCESSFUL_STOP_REASON_UNSPECIFIED = 'SUCCESSFUL_STOP_REASON_UNSPECIFIED';
+        /**
+         * The inputs.budgetMilliNodeHours had been reached.
+         */
+        public const SUCCESSFUL_STOP_REASON_BUDGET_REACHED = 'BUDGET_REACHED';
+        /**
+         * Further training of the Model ceased to increase its quality, since it
+         * already has converged.
+         */
+        public const SUCCESSFUL_STOP_REASON_MODEL_CONVERGED = 'MODEL_CONVERGED';
+        /**
+         * The actual training cost of creating this model, expressed in milli node
+         * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
+         * exceed inputs.budgetMilliNodeHours.
+         *
+         * @var string
+         */
+        public $costMilliNodeHours;
+        /**
+         * For successful job completions, this is the reason why the job has
+         * finished.
+         *
+         * @var string
+         */
+        public $successfulStopReason;
+        /**
+         * The actual training cost of creating this model, expressed in milli node
+         * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
+         * exceed inputs.budgetMilliNodeHours.
+         *
+         * @param string $costMilliNodeHours
+         */
+        public function setCostMilliNodeHours($costMilliNodeHours)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCostMilliNodeHours()
+        {
+        }
+        /**
+         * For successful job completions, this is the reason why the job has
+         * finished.
+         *
+         * Accepted values: SUCCESSFUL_STOP_REASON_UNSPECIFIED, BUDGET_REACHED,
+         * MODEL_CONVERGED
+         *
+         * @param self::SUCCESSFUL_STOP_REASON_* $successfulStopReason
+         */
+        public function setSuccessfulStopReason($successfulStopReason)
+        {
+        }
+        /**
+         * @return self::SUCCESSFUL_STOP_REASON_*
+         */
+        public function getSuccessfulStopReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlImageObjectDetectionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCostMilliNodeHours()
-    {
-    }
-    /**
-     * For successful job completions, this is the reason why the job has
-     * finished.
-     *
-     * Accepted values: SUCCESSFUL_STOP_REASON_UNSPECIFIED, BUDGET_REACHED,
-     * MODEL_CONVERGED
-     *
-     * @param self::SUCCESSFUL_STOP_REASON_* $successfulStopReason
-     */
-    public function setSuccessfulStopReason($successfulStopReason)
-    {
-    }
-    /**
-     * @return self::SUCCESSFUL_STOP_REASON_*
-     */
-    public function getSuccessfulStopReason()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlImageObjectDetectionMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlImageObjectDetectionMetadata
     {
     }
 }

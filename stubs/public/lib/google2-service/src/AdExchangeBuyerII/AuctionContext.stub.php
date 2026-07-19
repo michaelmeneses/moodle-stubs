@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class AuctionContext extends \Google\Collection
-{
-    protected $collection_key = 'auctionTypes';
-    /**
-     * The auction types this restriction applies to.
-     *
-     * @var string[]
-     */
-    public $auctionTypes;
-    /**
-     * The auction types this restriction applies to.
-     *
-     * @param string[] $auctionTypes
-     */
-    public function setAuctionTypes($auctionTypes)
+namespace Google\Service\AdExchangeBuyerII {
+    class AuctionContext extends \Google\Collection
     {
+        protected $collection_key = 'auctionTypes';
+        /**
+         * The auction types this restriction applies to.
+         *
+         * @var string[]
+         */
+        public $auctionTypes;
+        /**
+         * The auction types this restriction applies to.
+         *
+         * @param string[] $auctionTypes
+         */
+        public function setAuctionTypes($auctionTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAuctionTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\AuctionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuctionTypes()
+    class Google_Service_AdExchangeBuyerII_AuctionContext extends \Google\Service\AdExchangeBuyerII\AuctionContext
     {
     }
 }

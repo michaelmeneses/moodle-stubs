@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket extends \Google\Model
+    {
+        /**
+         * Output only. Number of values in the bucket.
+         *
+         * @var 
+         */
+        public $count;
+        /**
+         * Output only. Left bound of the bucket.
+         *
+         * @var 
+         */
+        public $left;
+        /**
+         * Output only. Right bound of the bucket.
+         *
+         * @var 
+         */
+        public $right;
+        public function setCount($count)
+        {
+        }
+        public function getCount()
+        {
+        }
+        public function setLeft($left)
+        {
+        }
+        public function getLeft()
+        {
+        }
+        public function setRight($right)
+        {
+        }
+        public function getRight()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Output only. Number of values in the bucket.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $count;
-    /**
-     * Output only. Left bound of the bucket.
-     *
-     * @var 
-     */
-    public $left;
-    /**
-     * Output only. Right bound of the bucket.
-     *
-     * @var 
-     */
-    public $right;
-    public function setCount($count)
-    {
-    }
-    public function getCount()
-    {
-    }
-    public function setLeft($left)
-    {
-    }
-    public function getLeft()
-    {
-    }
-    public function setRight($right)
-    {
-    }
-    public function getRight()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket
     {
     }
 }

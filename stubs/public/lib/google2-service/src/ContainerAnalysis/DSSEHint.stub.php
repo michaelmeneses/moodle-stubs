@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class DSSEHint extends \Google\Model
-{
-    /**
-     * Required. The human readable name of this attestation authority, for
-     * example "cloudbuild-prod".
-     *
-     * @var string
-     */
-    public $humanReadableName;
-    /**
-     * Required. The human readable name of this attestation authority, for
-     * example "cloudbuild-prod".
-     *
-     * @param string $humanReadableName
-     */
-    public function setHumanReadableName($humanReadableName)
+namespace Google\Service\ContainerAnalysis {
+    class DSSEHint extends \Google\Model
     {
+        /**
+         * Required. The human readable name of this attestation authority, for
+         * example "cloudbuild-prod".
+         *
+         * @var string
+         */
+        public $humanReadableName;
+        /**
+         * Required. The human readable name of this attestation authority, for
+         * example "cloudbuild-prod".
+         *
+         * @param string $humanReadableName
+         */
+        public function setHumanReadableName($humanReadableName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHumanReadableName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\DSSEHint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHumanReadableName()
+    class Google_Service_ContainerAnalysis_DSSEHint extends \Google\Service\ContainerAnalysis\DSSEHint
     {
     }
 }

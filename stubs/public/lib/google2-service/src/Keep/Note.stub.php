@@ -21,186 +21,195 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class Note extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    protected $attachmentsType = Attachment::class;
-    protected $attachmentsDataType = 'array';
-    protected $bodyType = Section::class;
-    protected $bodyDataType = '';
-    /**
-     * Output only. When this note was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The resource name of this note. See general note on
-     * identifiers in KeepService.
-     *
-     * @var string
-     */
-    public $name;
-    protected $permissionsType = Permission::class;
-    protected $permissionsDataType = 'array';
-    /**
-     * The title of the note. Length must be less than 1,000 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. When this note was trashed. If `trashed`, the note is
-     * eventually deleted. If the note is not trashed, this field is not set (and
-     * the trashed field is `false`).
-     *
-     * @var string
-     */
-    public $trashTime;
-    /**
-     * Output only. `true` if this note has been trashed. If trashed, the note is
-     * eventually deleted.
-     *
-     * @var bool
-     */
-    public $trashed;
-    /**
-     * Output only. When this note was last modified.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The attachments attached to this note.
-     *
-     * @param Attachment[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\Keep {
+    class Note extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        protected $attachmentsType = Attachment::class;
+        protected $attachmentsDataType = 'array';
+        protected $bodyType = Section::class;
+        protected $bodyDataType = '';
+        /**
+         * Output only. When this note was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The resource name of this note. See general note on
+         * identifiers in KeepService.
+         *
+         * @var string
+         */
+        public $name;
+        protected $permissionsType = Permission::class;
+        protected $permissionsDataType = 'array';
+        /**
+         * The title of the note. Length must be less than 1,000 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. When this note was trashed. If `trashed`, the note is
+         * eventually deleted. If the note is not trashed, this field is not set (and
+         * the trashed field is `false`).
+         *
+         * @var string
+         */
+        public $trashTime;
+        /**
+         * Output only. `true` if this note has been trashed. If trashed, the note is
+         * eventually deleted.
+         *
+         * @var bool
+         */
+        public $trashed;
+        /**
+         * Output only. When this note was last modified.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The attachments attached to this note.
+         *
+         * @param Attachment[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * The body of the note.
+         *
+         * @param Section $body
+         */
+        public function setBody(Section $body)
+        {
+        }
+        /**
+         * @return Section
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Output only. When this note was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The resource name of this note. See general note on
+         * identifiers in KeepService.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The list of permissions set on the note. Contains at least one
+         * entry for the note owner.
+         *
+         * @param Permission[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return Permission[]
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * The title of the note. Length must be less than 1,000 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Output only. When this note was trashed. If `trashed`, the note is
+         * eventually deleted. If the note is not trashed, this field is not set (and
+         * the trashed field is `false`).
+         *
+         * @param string $trashTime
+         */
+        public function setTrashTime($trashTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrashTime()
+        {
+        }
+        /**
+         * Output only. `true` if this note has been trashed. If trashed, the note is
+         * eventually deleted.
+         *
+         * @param bool $trashed
+         */
+        public function setTrashed($trashed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTrashed()
+        {
+        }
+        /**
+         * Output only. When this note was last modified.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attachment[]
+     * Runtime class alias of \Google\Service\Keep\Note registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * The body of the note.
-     *
-     * @param Section $body
-     */
-    public function setBody(Section $body)
-    {
-    }
-    /**
-     * @return Section
-     */
-    public function getBody()
-    {
-    }
-    /**
-     * Output only. When this note was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The resource name of this note. See general note on
-     * identifiers in KeepService.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The list of permissions set on the note. Contains at least one
-     * entry for the note owner.
-     *
-     * @param Permission[] $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return Permission[]
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * The title of the note. Length must be less than 1,000 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Output only. When this note was trashed. If `trashed`, the note is
-     * eventually deleted. If the note is not trashed, this field is not set (and
-     * the trashed field is `false`).
-     *
-     * @param string $trashTime
-     */
-    public function setTrashTime($trashTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrashTime()
-    {
-    }
-    /**
-     * Output only. `true` if this note has been trashed. If trashed, the note is
-     * eventually deleted.
-     *
-     * @param bool $trashed
-     */
-    public function setTrashed($trashed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTrashed()
-    {
-    }
-    /**
-     * Output only. When this note was last modified.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Keep_Note extends \Google\Service\Keep\Note
     {
     }
 }

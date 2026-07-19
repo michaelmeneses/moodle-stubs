@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureOnlineStoreDedicatedServingEndpoint extends \Google\Model
-{
-    protected $privateServiceConnectConfigType = GoogleCloudAiplatformV1PrivateServiceConnectConfig::class;
-    protected $privateServiceConnectConfigDataType = '';
-    /**
-     * Output only. This field will be populated with the domain name to use for
-     * this FeatureOnlineStore
-     *
-     * @var string
-     */
-    public $publicEndpointDomainName;
-    /**
-     * Output only. The name of the service attachment resource. Populated if
-     * private service connect is enabled and after FeatureViewSync is created.
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Optional. Private service connect config. The private service connection is
-     * available only for Optimized storage type, not for embedding management
-     * now. If PrivateServiceConnectConfig.enable_private_service_connect set to
-     * true, customers will use private service connection to send request.
-     * Otherwise, the connection will set to public endpoint.
-     *
-     * @param GoogleCloudAiplatformV1PrivateServiceConnectConfig $privateServiceConnectConfig
-     */
-    public function setPrivateServiceConnectConfig(GoogleCloudAiplatformV1PrivateServiceConnectConfig $privateServiceConnectConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureOnlineStoreDedicatedServingEndpoint extends \Google\Model
     {
+        protected $privateServiceConnectConfigType = GoogleCloudAiplatformV1PrivateServiceConnectConfig::class;
+        protected $privateServiceConnectConfigDataType = '';
+        /**
+         * Output only. This field will be populated with the domain name to use for
+         * this FeatureOnlineStore
+         *
+         * @var string
+         */
+        public $publicEndpointDomainName;
+        /**
+         * Output only. The name of the service attachment resource. Populated if
+         * private service connect is enabled and after FeatureViewSync is created.
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Optional. Private service connect config. The private service connection is
+         * available only for Optimized storage type, not for embedding management
+         * now. If PrivateServiceConnectConfig.enable_private_service_connect set to
+         * true, customers will use private service connection to send request.
+         * Otherwise, the connection will set to public endpoint.
+         *
+         * @param GoogleCloudAiplatformV1PrivateServiceConnectConfig $privateServiceConnectConfig
+         */
+        public function setPrivateServiceConnectConfig(GoogleCloudAiplatformV1PrivateServiceConnectConfig $privateServiceConnectConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PrivateServiceConnectConfig
+         */
+        public function getPrivateServiceConnectConfig()
+        {
+        }
+        /**
+         * Output only. This field will be populated with the domain name to use for
+         * this FeatureOnlineStore
+         *
+         * @param string $publicEndpointDomainName
+         */
+        public function setPublicEndpointDomainName($publicEndpointDomainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicEndpointDomainName()
+        {
+        }
+        /**
+         * Output only. The name of the service attachment resource. Populated if
+         * private service connect is enabled and after FeatureViewSync is created.
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PrivateServiceConnectConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStoreDedicatedServingEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateServiceConnectConfig()
-    {
-    }
-    /**
-     * Output only. This field will be populated with the domain name to use for
-     * this FeatureOnlineStore
-     *
-     * @param string $publicEndpointDomainName
-     */
-    public function setPublicEndpointDomainName($publicEndpointDomainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicEndpointDomainName()
-    {
-    }
-    /**
-     * Output only. The name of the service attachment resource. Populated if
-     * private service connect is enabled and after FeatureViewSync is created.
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureOnlineStoreDedicatedServingEndpoint extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStoreDedicatedServingEndpoint
     {
     }
 }

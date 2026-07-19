@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpec extends \Google\Collection
-{
-    protected $collection_key = 'endUserMetadata';
-    protected $endUserMetadataType = GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpecEndUserMetaData::class;
-    protected $endUserMetadataDataType = 'array';
-    /**
-     * Optional. End user metadata.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpecEndUserMetaData[] $endUserMetadata
-     */
-    public function setEndUserMetadata($endUserMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpec extends \Google\Collection
     {
+        protected $collection_key = 'endUserMetadata';
+        protected $endUserMetadataType = GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpecEndUserMetaData::class;
+        protected $endUserMetadataDataType = 'array';
+        /**
+         * Optional. End user metadata.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpecEndUserMetaData[] $endUserMetadata
+         */
+        public function setEndUserMetadata($endUserMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpecEndUserMetaData[]
+         */
+        public function getEndUserMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpecEndUserMetaData[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndUserMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestEndUserSpec
     {
     }
 }

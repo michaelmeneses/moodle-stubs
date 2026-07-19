@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryFileStoreConditions extends \Google\Model
-{
-    protected $cloudStorageConditionsType = GooglePrivacyDlpV2DiscoveryCloudStorageConditions::class;
-    protected $cloudStorageConditionsDataType = '';
-    /**
-     * Optional. File store must have been created after this date. Used to avoid
-     * backfilling.
-     *
-     * @var string
-     */
-    public $createdAfter;
-    /**
-     * Optional. Minimum age a file store must have. If set, the value must be 1
-     * hour or greater.
-     *
-     * @var string
-     */
-    public $minAge;
-    /**
-     * Optional. Cloud Storage conditions.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryCloudStorageConditions $cloudStorageConditions
-     */
-    public function setCloudStorageConditions(GooglePrivacyDlpV2DiscoveryCloudStorageConditions $cloudStorageConditions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryFileStoreConditions extends \Google\Model
     {
+        protected $cloudStorageConditionsType = GooglePrivacyDlpV2DiscoveryCloudStorageConditions::class;
+        protected $cloudStorageConditionsDataType = '';
+        /**
+         * Optional. File store must have been created after this date. Used to avoid
+         * backfilling.
+         *
+         * @var string
+         */
+        public $createdAfter;
+        /**
+         * Optional. Minimum age a file store must have. If set, the value must be 1
+         * hour or greater.
+         *
+         * @var string
+         */
+        public $minAge;
+        /**
+         * Optional. Cloud Storage conditions.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryCloudStorageConditions $cloudStorageConditions
+         */
+        public function setCloudStorageConditions(GooglePrivacyDlpV2DiscoveryCloudStorageConditions $cloudStorageConditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryCloudStorageConditions
+         */
+        public function getCloudStorageConditions()
+        {
+        }
+        /**
+         * Optional. File store must have been created after this date. Used to avoid
+         * backfilling.
+         *
+         * @param string $createdAfter
+         */
+        public function setCreatedAfter($createdAfter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAfter()
+        {
+        }
+        /**
+         * Optional. Minimum age a file store must have. If set, the value must be 1
+         * hour or greater.
+         *
+         * @param string $minAge
+         */
+        public function setMinAge($minAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinAge()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DiscoveryCloudStorageConditions
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryFileStoreConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudStorageConditions()
-    {
-    }
-    /**
-     * Optional. File store must have been created after this date. Used to avoid
-     * backfilling.
-     *
-     * @param string $createdAfter
-     */
-    public function setCreatedAfter($createdAfter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAfter()
-    {
-    }
-    /**
-     * Optional. Minimum age a file store must have. If set, the value must be 1
-     * hour or greater.
-     *
-     * @param string $minAge
-     */
-    public function setMinAge($minAge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinAge()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryFileStoreConditions extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryFileStoreConditions
     {
     }
 }

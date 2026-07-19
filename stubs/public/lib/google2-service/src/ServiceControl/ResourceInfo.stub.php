@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ResourceInfo extends \Google\Model
-{
-    /**
-     * Optional. The identifier of the container of this resource. For Google
-     * Cloud APIs, the resource container must be one of the following formats: -
-     * `projects/` - `folders/` - `organizations/` Required for the policy
-     * enforcement on the container level (e.g. VPCSC, Location Policy check, Org
-     * Policy check).
-     *
-     * @var string
-     */
-    public $container;
-    /**
-     * Optional. The location of the resource, it must be a valid zone, region or
-     * multiregion, for example: "europe-west4", "northamerica-northeast1-a".
-     * Required for location policy check.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The name of the resource referenced in the request.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The resource permission needed for this request. The format must be
-     * "{service}/{plural}.{verb}".
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * The resource type in the format of "{service}/{kind}".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. The identifier of the container of this resource. For Google
-     * Cloud APIs, the resource container must be one of the following formats: -
-     * `projects/` - `folders/` - `organizations/` Required for the policy
-     * enforcement on the container level (e.g. VPCSC, Location Policy check, Org
-     * Policy check).
-     *
-     * @param string $container
-     */
-    public function setContainer($container)
+namespace Google\Service\ServiceControl {
+    class ResourceInfo extends \Google\Model
     {
+        /**
+         * Optional. The identifier of the container of this resource. For Google
+         * Cloud APIs, the resource container must be one of the following formats: -
+         * `projects/` - `folders/` - `organizations/` Required for the policy
+         * enforcement on the container level (e.g. VPCSC, Location Policy check, Org
+         * Policy check).
+         *
+         * @var string
+         */
+        public $container;
+        /**
+         * Optional. The location of the resource, it must be a valid zone, region or
+         * multiregion, for example: "europe-west4", "northamerica-northeast1-a".
+         * Required for location policy check.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The name of the resource referenced in the request.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The resource permission needed for this request. The format must be
+         * "{service}/{plural}.{verb}".
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * The resource type in the format of "{service}/{kind}".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. The identifier of the container of this resource. For Google
+         * Cloud APIs, the resource container must be one of the following formats: -
+         * `projects/` - `folders/` - `organizations/` Required for the policy
+         * enforcement on the container level (e.g. VPCSC, Location Policy check, Org
+         * Policy check).
+         *
+         * @param string $container
+         */
+        public function setContainer($container)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainer()
+        {
+        }
+        /**
+         * Optional. The location of the resource, it must be a valid zone, region or
+         * multiregion, for example: "europe-west4", "northamerica-northeast1-a".
+         * Required for location policy check.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The name of the resource referenced in the request.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The resource permission needed for this request. The format must be
+         * "{service}/{plural}.{verb}".
+         *
+         * @param string $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermission()
+        {
+        }
+        /**
+         * The resource type in the format of "{service}/{kind}".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\ResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainer()
-    {
-    }
-    /**
-     * Optional. The location of the resource, it must be a valid zone, region or
-     * multiregion, for example: "europe-west4", "northamerica-northeast1-a".
-     * Required for location policy check.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The name of the resource referenced in the request.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The resource permission needed for this request. The format must be
-     * "{service}/{plural}.{verb}".
-     *
-     * @param string $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermission()
-    {
-    }
-    /**
-     * The resource type in the format of "{service}/{kind}".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ServiceControl_ResourceInfo extends \Google\Service\ServiceControl\ResourceInfo
     {
     }
 }

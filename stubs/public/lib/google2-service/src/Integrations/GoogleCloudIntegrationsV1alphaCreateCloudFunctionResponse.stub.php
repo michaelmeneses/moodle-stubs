@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse extends \Google\Model
-{
-    /**
-     * The trigger url that will be returned
-     *
-     * @var string
-     */
-    public $triggerUrl;
-    /**
-     * The trigger url that will be returned
-     *
-     * @param string $triggerUrl
-     */
-    public function setTriggerUrl($triggerUrl)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse extends \Google\Model
     {
+        /**
+         * The trigger url that will be returned
+         *
+         * @var string
+         */
+        public $triggerUrl;
+        /**
+         * The trigger url that will be returned
+         *
+         * @param string $triggerUrl
+         */
+        public function setTriggerUrl($triggerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTriggerUrl()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse
     {
     }
 }

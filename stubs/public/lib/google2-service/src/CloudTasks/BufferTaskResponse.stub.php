@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class BufferTaskResponse extends \Google\Model
-{
-    protected $taskType = Task::class;
-    protected $taskDataType = '';
-    /**
-     * The created task.
-     *
-     * @param Task $task
-     */
-    public function setTask(Task $task)
+namespace Google\Service\CloudTasks {
+    class BufferTaskResponse extends \Google\Model
     {
+        protected $taskType = Task::class;
+        protected $taskDataType = '';
+        /**
+         * The created task.
+         *
+         * @param Task $task
+         */
+        public function setTask(Task $task)
+        {
+        }
+        /**
+         * @return Task
+         */
+        public function getTask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Task
+     * Runtime class alias of \Google\Service\CloudTasks\BufferTaskResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTask()
+    class Google_Service_CloudTasks_BufferTaskResponse extends \Google\Service\CloudTasks\BufferTaskResponse
     {
     }
 }

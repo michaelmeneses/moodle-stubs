@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class UploadAttachmentResponse extends \Google\Model
-{
-    protected $attachmentDataRefType = AttachmentDataRef::class;
-    protected $attachmentDataRefDataType = '';
-    /**
-     * Reference to the uploaded attachment.
-     *
-     * @param AttachmentDataRef $attachmentDataRef
-     */
-    public function setAttachmentDataRef(AttachmentDataRef $attachmentDataRef)
+namespace Google\Service\HangoutsChat {
+    class UploadAttachmentResponse extends \Google\Model
     {
+        protected $attachmentDataRefType = AttachmentDataRef::class;
+        protected $attachmentDataRefDataType = '';
+        /**
+         * Reference to the uploaded attachment.
+         *
+         * @param AttachmentDataRef $attachmentDataRef
+         */
+        public function setAttachmentDataRef(AttachmentDataRef $attachmentDataRef)
+        {
+        }
+        /**
+         * @return AttachmentDataRef
+         */
+        public function getAttachmentDataRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttachmentDataRef
+     * Runtime class alias of \Google\Service\HangoutsChat\UploadAttachmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentDataRef()
+    class Google_Service_HangoutsChat_UploadAttachmentResponse extends \Google\Service\HangoutsChat\UploadAttachmentResponse
     {
     }
 }

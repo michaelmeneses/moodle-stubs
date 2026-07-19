@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Kgsearch\Resource;
-
-/**
- * The "entities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $kgsearchService = new Google\Service\Kgsearch(...);
- *   $entities = $kgsearchService->entities;
- *  </code>
- */
-class Entities extends \Google\Service\Resource
-{
+namespace Google\Service\Kgsearch\Resource {
+    use Google\Service\Kgsearch\SearchResponse;
     /**
-     * Searches Knowledge Graph for entities that match the constraints. A list of
-     * matched entities will be returned in response, which will be in JSON-LD
-     * format and compatible with http://schema.org (entities.search)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ids
-     * @opt_param bool indent Enables indenting of json results.
-     * @opt_param string languages The list of language codes (defined in ISO 693)
-     * to run the query with, e.g. 'en'.
-     * @opt_param int limit Limits the number of entities to be returned.
-     * @opt_param bool prefix Enables prefix match against names and aliases of
-     * entities
-     * @opt_param string query The literal query string for search.
-     * @opt_param string types Restricts returned entities with these types, e.g.
-     * Person (as defined in http://schema.org/Person). If multiple types are
-     * specified, returned entities will contain one or more of these types.
-     * @return SearchResponse
-     * @throws \Google\Service\Exception
+     * The "entities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $kgsearchService = new Google\Service\Kgsearch(...);
+     *   $entities = $kgsearchService->entities;
+     *  </code>
      */
-    public function search($optParams = [])
+    class Entities extends \Google\Service\Resource
+    {
+        /**
+         * Searches Knowledge Graph for entities that match the constraints. A list of
+         * matched entities will be returned in response, which will be in JSON-LD
+         * format and compatible with http://schema.org (entities.search)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ids
+         * @opt_param bool indent Enables indenting of json results.
+         * @opt_param string languages The list of language codes (defined in ISO 693)
+         * to run the query with, e.g. 'en'.
+         * @opt_param int limit Limits the number of entities to be returned.
+         * @opt_param bool prefix Enables prefix match against names and aliases of
+         * entities
+         * @opt_param string query The literal query string for search.
+         * @opt_param string types Restricts returned entities with these types, e.g.
+         * Person (as defined in http://schema.org/Person). If multiple types are
+         * specified, returned entities will contain one or more of these types.
+         * @return SearchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Kgsearch\Resource\Entities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Kgsearch_Resource_Entities extends \Google\Service\Kgsearch\Resource\Entities
     {
     }
 }

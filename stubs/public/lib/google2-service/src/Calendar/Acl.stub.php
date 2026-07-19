@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class Acl extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the collection.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = AclRule::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Type of the collection ("calendar#acl").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token used to access the next page of this result. Omitted if no further
-     * results are available, in which case nextSyncToken is provided.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Token used at a later point in time to retrieve only the entries that have
-     * changed since this result was returned. Omitted if further results are
-     * available, in which case nextPageToken is provided.
-     *
-     * @var string
-     */
-    public $nextSyncToken;
-    /**
-     * ETag of the collection.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Calendar {
+    class Acl extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the collection.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = AclRule::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Type of the collection ("calendar#acl").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token used to access the next page of this result. Omitted if no further
+         * results are available, in which case nextSyncToken is provided.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Token used at a later point in time to retrieve only the entries that have
+         * changed since this result was returned. Omitted if further results are
+         * available, in which case nextPageToken is provided.
+         *
+         * @var string
+         */
+        public $nextSyncToken;
+        /**
+         * ETag of the collection.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * List of rules on the access control list.
+         *
+         * @param AclRule[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AclRule[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Type of the collection ("calendar#acl").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token used to access the next page of this result. Omitted if no further
+         * results are available, in which case nextSyncToken is provided.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Token used at a later point in time to retrieve only the entries that have
+         * changed since this result was returned. Omitted if further results are
+         * available, in which case nextPageToken is provided.
+         *
+         * @param string $nextSyncToken
+         */
+        public function setNextSyncToken($nextSyncToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextSyncToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\Acl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * List of rules on the access control list.
-     *
-     * @param AclRule[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return AclRule[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Type of the collection ("calendar#acl").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token used to access the next page of this result. Omitted if no further
-     * results are available, in which case nextSyncToken is provided.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Token used at a later point in time to retrieve only the entries that have
-     * changed since this result was returned. Omitted if further results are
-     * available, in which case nextPageToken is provided.
-     *
-     * @param string $nextSyncToken
-     */
-    public function setNextSyncToken($nextSyncToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextSyncToken()
+    class Google_Service_Calendar_Acl extends \Google\Service\Calendar\Acl
     {
     }
 }

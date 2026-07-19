@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EntityIdSelector extends \Google\Model
-{
-    protected $csvSourceType = GoogleCloudAiplatformV1CsvSource::class;
-    protected $csvSourceDataType = '';
-    /**
-     * Source column that holds entity IDs. If not provided, entity IDs are
-     * extracted from the column named entity_id.
-     *
-     * @var string
-     */
-    public $entityIdField;
-    /**
-     * Source of Csv
-     *
-     * @param GoogleCloudAiplatformV1CsvSource $csvSource
-     */
-    public function setCsvSource(GoogleCloudAiplatformV1CsvSource $csvSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EntityIdSelector extends \Google\Model
     {
+        protected $csvSourceType = GoogleCloudAiplatformV1CsvSource::class;
+        protected $csvSourceDataType = '';
+        /**
+         * Source column that holds entity IDs. If not provided, entity IDs are
+         * extracted from the column named entity_id.
+         *
+         * @var string
+         */
+        public $entityIdField;
+        /**
+         * Source of Csv
+         *
+         * @param GoogleCloudAiplatformV1CsvSource $csvSource
+         */
+        public function setCsvSource(GoogleCloudAiplatformV1CsvSource $csvSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CsvSource
+         */
+        public function getCsvSource()
+        {
+        }
+        /**
+         * Source column that holds entity IDs. If not provided, entity IDs are
+         * extracted from the column named entity_id.
+         *
+         * @param string $entityIdField
+         */
+        public function setEntityIdField($entityIdField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityIdField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CsvSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EntityIdSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvSource()
-    {
-    }
-    /**
-     * Source column that holds entity IDs. If not provided, entity IDs are
-     * extracted from the column named entity_id.
-     *
-     * @param string $entityIdField
-     */
-    public function setEntityIdField($entityIdField)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityIdField()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EntityIdSelector extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EntityIdSelector
     {
     }
 }

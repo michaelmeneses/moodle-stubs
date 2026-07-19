@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ListKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $keysType = GoogleCloudRecaptchaenterpriseV1Key::class;
-    protected $keysDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. It is set to empty if no keys
-     * remain in results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Key details.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1Key[] $keys
-     */
-    public function setKeys($keys)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ListKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $keysType = GoogleCloudRecaptchaenterpriseV1Key::class;
+        protected $keysDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. It is set to empty if no keys
+         * remain in results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Key details.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1Key[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1Key[]
+         */
+        public function getKeys()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. It is set to empty if no keys
+         * remain in results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1Key[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. It is set to empty if no keys
-     * remain in results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ListKeysResponse extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListKeysResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AssociatedEntities extends \Google\Collection
-{
-    protected $collection_key = 'gkeClusters';
-    protected $anthosClustersType = AnthosCluster::class;
-    protected $anthosClustersDataType = 'array';
-    protected $gkeClustersType = GkeCluster::class;
-    protected $gkeClustersDataType = 'array';
-    /**
-     * Optional. Information specifying Anthos clusters as associated entities.
-     *
-     * @param AnthosCluster[] $anthosClusters
-     */
-    public function setAnthosClusters($anthosClusters)
+namespace Google\Service\CloudDeploy {
+    class AssociatedEntities extends \Google\Collection
     {
+        protected $collection_key = 'gkeClusters';
+        protected $anthosClustersType = AnthosCluster::class;
+        protected $anthosClustersDataType = 'array';
+        protected $gkeClustersType = GkeCluster::class;
+        protected $gkeClustersDataType = 'array';
+        /**
+         * Optional. Information specifying Anthos clusters as associated entities.
+         *
+         * @param AnthosCluster[] $anthosClusters
+         */
+        public function setAnthosClusters($anthosClusters)
+        {
+        }
+        /**
+         * @return AnthosCluster[]
+         */
+        public function getAnthosClusters()
+        {
+        }
+        /**
+         * Optional. Information specifying GKE clusters as associated entities.
+         *
+         * @param GkeCluster[] $gkeClusters
+         */
+        public function setGkeClusters($gkeClusters)
+        {
+        }
+        /**
+         * @return GkeCluster[]
+         */
+        public function getGkeClusters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnthosCluster[]
+     * Runtime class alias of \Google\Service\CloudDeploy\AssociatedEntities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnthosClusters()
-    {
-    }
-    /**
-     * Optional. Information specifying GKE clusters as associated entities.
-     *
-     * @param GkeCluster[] $gkeClusters
-     */
-    public function setGkeClusters($gkeClusters)
-    {
-    }
-    /**
-     * @return GkeCluster[]
-     */
-    public function getGkeClusters()
+    class Google_Service_CloudDeploy_AssociatedEntities extends \Google\Service\CloudDeploy\AssociatedEntities
     {
     }
 }

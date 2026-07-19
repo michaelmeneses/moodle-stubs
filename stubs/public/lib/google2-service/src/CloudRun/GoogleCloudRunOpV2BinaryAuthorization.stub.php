@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2BinaryAuthorization extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $breakglassJustification;
-    /**
-     * @var bool
-     */
-    public $useDefault;
-    /**
-     * @param string
-     */
-    public function setBreakglassJustification($breakglassJustification)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2BinaryAuthorization extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $breakglassJustification;
+        /**
+         * @var bool
+         */
+        public $useDefault;
+        /**
+         * @param string
+         */
+        public function setBreakglassJustification($breakglassJustification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBreakglassJustification()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUseDefault($useDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseDefault()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2BinaryAuthorization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakglassJustification()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUseDefault($useDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseDefault()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2BinaryAuthorization extends \Google\Service\CloudRun\GoogleCloudRunOpV2BinaryAuthorization
     {
     }
 }

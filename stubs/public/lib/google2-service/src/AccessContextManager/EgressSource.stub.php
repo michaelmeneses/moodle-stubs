@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class EgressSource extends \Google\Model
-{
-    /**
-     * An AccessLevel resource name that allows protected resources inside the
-     * ServicePerimeters to access outside the ServicePerimeter boundaries.
-     * AccessLevels listed must be in the same policy as this ServicePerimeter.
-     * Referencing a nonexistent AccessLevel will cause an error. If an
-     * AccessLevel name is not specified, only resources within the perimeter can
-     * be accessed through Google Cloud calls with request origins within the
-     * perimeter. Example: `accessPolicies/MY_POLICY/accessLevels/MY_LEVEL`. If a
-     * single `*` is specified for `access_level`, then all EgressSources will be
-     * allowed.
-     *
-     * @var string
-     */
-    public $accessLevel;
-    /**
-     * A Google Cloud resource from the service perimeter that you want to allow
-     * to access data outside the perimeter. This field supports only projects.
-     * The project format is `projects/{project_number}`. You can't use `*` in
-     * this field to allow all Google Cloud resources.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * An AccessLevel resource name that allows protected resources inside the
-     * ServicePerimeters to access outside the ServicePerimeter boundaries.
-     * AccessLevels listed must be in the same policy as this ServicePerimeter.
-     * Referencing a nonexistent AccessLevel will cause an error. If an
-     * AccessLevel name is not specified, only resources within the perimeter can
-     * be accessed through Google Cloud calls with request origins within the
-     * perimeter. Example: `accessPolicies/MY_POLICY/accessLevels/MY_LEVEL`. If a
-     * single `*` is specified for `access_level`, then all EgressSources will be
-     * allowed.
-     *
-     * @param string $accessLevel
-     */
-    public function setAccessLevel($accessLevel)
+namespace Google\Service\AccessContextManager {
+    class EgressSource extends \Google\Model
     {
+        /**
+         * An AccessLevel resource name that allows protected resources inside the
+         * ServicePerimeters to access outside the ServicePerimeter boundaries.
+         * AccessLevels listed must be in the same policy as this ServicePerimeter.
+         * Referencing a nonexistent AccessLevel will cause an error. If an
+         * AccessLevel name is not specified, only resources within the perimeter can
+         * be accessed through Google Cloud calls with request origins within the
+         * perimeter. Example: `accessPolicies/MY_POLICY/accessLevels/MY_LEVEL`. If a
+         * single `*` is specified for `access_level`, then all EgressSources will be
+         * allowed.
+         *
+         * @var string
+         */
+        public $accessLevel;
+        /**
+         * A Google Cloud resource from the service perimeter that you want to allow
+         * to access data outside the perimeter. This field supports only projects.
+         * The project format is `projects/{project_number}`. You can't use `*` in
+         * this field to allow all Google Cloud resources.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * An AccessLevel resource name that allows protected resources inside the
+         * ServicePerimeters to access outside the ServicePerimeter boundaries.
+         * AccessLevels listed must be in the same policy as this ServicePerimeter.
+         * Referencing a nonexistent AccessLevel will cause an error. If an
+         * AccessLevel name is not specified, only resources within the perimeter can
+         * be accessed through Google Cloud calls with request origins within the
+         * perimeter. Example: `accessPolicies/MY_POLICY/accessLevels/MY_LEVEL`. If a
+         * single `*` is specified for `access_level`, then all EgressSources will be
+         * allowed.
+         *
+         * @param string $accessLevel
+         */
+        public function setAccessLevel($accessLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessLevel()
+        {
+        }
+        /**
+         * A Google Cloud resource from the service perimeter that you want to allow
+         * to access data outside the perimeter. This field supports only projects.
+         * The project format is `projects/{project_number}`. You can't use `*` in
+         * this field to allow all Google Cloud resources.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\EgressSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLevel()
-    {
-    }
-    /**
-     * A Google Cloud resource from the service perimeter that you want to allow
-     * to access data outside the perimeter. This field supports only projects.
-     * The project format is `projects/{project_number}`. You can't use `*` in
-     * this field to allow all Google Cloud resources.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_AccessContextManager_EgressSource extends \Google\Service\AccessContextManager\EgressSource
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    protected $gcsSourceType = GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * @param GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource $bigquerySource
-     */
-    public function setBigquerySource(GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource $bigquerySource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        protected $gcsSourceType = GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * @param GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource $bigquerySource
+         */
+        public function setBigquerySource(GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource
-     */
-    public function getGcsSource()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig
     {
     }
 }

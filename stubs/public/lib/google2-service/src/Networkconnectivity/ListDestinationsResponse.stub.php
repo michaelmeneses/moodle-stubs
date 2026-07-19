@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListDestinationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $destinationsType = Destination::class;
-    protected $destinationsDataType = 'array';
-    /**
-     * The next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of `Destination` resources to be listed.
-     *
-     * @param Destination[] $destinations
-     */
-    public function setDestinations($destinations)
+namespace Google\Service\Networkconnectivity {
+    class ListDestinationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $destinationsType = Destination::class;
+        protected $destinationsDataType = 'array';
+        /**
+         * The next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of `Destination` resources to be listed.
+         *
+         * @param Destination[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return Destination[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * The next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Destination[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListDestinationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinations()
-    {
-    }
-    /**
-     * The next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListDestinationsResponse extends \Google\Service\Networkconnectivity\ListDestinationsResponse
     {
     }
 }

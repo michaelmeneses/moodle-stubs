@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceIdentityServiceOptions extends \Google\Model
-{
-    protected $diagnosticInterfaceType = IdentityServiceDiagnosticInterface::class;
-    protected $diagnosticInterfaceDataType = '';
-    /**
-     * Determines the lifespan of STS tokens issued by Anthos Identity Service.
-     *
-     * @var string
-     */
-    public $sessionDuration;
-    /**
-     * Configuration options for the AIS diagnostic interface.
-     *
-     * @param IdentityServiceDiagnosticInterface $diagnosticInterface
-     */
-    public function setDiagnosticInterface(IdentityServiceDiagnosticInterface $diagnosticInterface)
+namespace Google\Service\GKEHub {
+    class IdentityServiceIdentityServiceOptions extends \Google\Model
     {
+        protected $diagnosticInterfaceType = IdentityServiceDiagnosticInterface::class;
+        protected $diagnosticInterfaceDataType = '';
+        /**
+         * Determines the lifespan of STS tokens issued by Anthos Identity Service.
+         *
+         * @var string
+         */
+        public $sessionDuration;
+        /**
+         * Configuration options for the AIS diagnostic interface.
+         *
+         * @param IdentityServiceDiagnosticInterface $diagnosticInterface
+         */
+        public function setDiagnosticInterface(IdentityServiceDiagnosticInterface $diagnosticInterface)
+        {
+        }
+        /**
+         * @return IdentityServiceDiagnosticInterface
+         */
+        public function getDiagnosticInterface()
+        {
+        }
+        /**
+         * Determines the lifespan of STS tokens issued by Anthos Identity Service.
+         *
+         * @param string $sessionDuration
+         */
+        public function setSessionDuration($sessionDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityServiceDiagnosticInterface
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceIdentityServiceOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiagnosticInterface()
-    {
-    }
-    /**
-     * Determines the lifespan of STS tokens issued by Anthos Identity Service.
-     *
-     * @param string $sessionDuration
-     */
-    public function setSessionDuration($sessionDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionDuration()
+    class Google_Service_GKEHub_IdentityServiceIdentityServiceOptions extends \Google\Service\GKEHub\IdentityServiceIdentityServiceOptions
     {
     }
 }

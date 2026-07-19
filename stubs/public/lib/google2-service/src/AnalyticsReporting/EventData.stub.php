@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class EventData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $eventAction;
-    /**
-     * @var string
-     */
-    public $eventCategory;
-    /**
-     * @var string
-     */
-    public $eventCount;
-    /**
-     * @var string
-     */
-    public $eventLabel;
-    /**
-     * @var string
-     */
-    public $eventValue;
-    /**
-     * @param string
-     */
-    public function setEventAction($eventAction)
+namespace Google\Service\AnalyticsReporting {
+    class EventData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $eventAction;
+        /**
+         * @var string
+         */
+        public $eventCategory;
+        /**
+         * @var string
+         */
+        public $eventCount;
+        /**
+         * @var string
+         */
+        public $eventLabel;
+        /**
+         * @var string
+         */
+        public $eventValue;
+        /**
+         * @param string
+         */
+        public function setEventAction($eventAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventCategory($eventCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventCount($eventCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventLabel($eventLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventValue($eventValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\EventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventCategory($eventCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventCount($eventCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventLabel($eventLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventValue($eventValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventValue()
+    class Google_Service_AnalyticsReporting_EventData extends \Google\Service\AnalyticsReporting\EventData
     {
     }
 }

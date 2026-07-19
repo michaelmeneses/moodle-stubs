@@ -21,325 +21,334 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Order extends \Google\Collection
-{
-    protected $collection_key = 'siteNames';
-    /**
-     * @var string
-     */
-    public $accountId;
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var string[]
-     */
-    public $approverUserProfileIds;
-    /**
-     * @var string
-     */
-    public $buyerInvoiceId;
-    /**
-     * @var string
-     */
-    public $buyerOrganizationName;
-    /**
-     * @var string
-     */
-    public $comments;
-    protected $contactsType = OrderContact::class;
-    protected $contactsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $lastModifiedInfoType = LastModifiedInfo::class;
-    protected $lastModifiedInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $notes;
-    /**
-     * @var string
-     */
-    public $planningTermId;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $sellerOrderId;
-    /**
-     * @var string
-     */
-    public $sellerOrganizationName;
-    /**
-     * @var string[]
-     */
-    public $siteId;
-    /**
-     * @var string[]
-     */
-    public $siteNames;
-    /**
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * @var string
-     */
-    public $termsAndConditions;
-    /**
-     * @param string
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class Order extends \Google\Collection
     {
+        protected $collection_key = 'siteNames';
+        /**
+         * @var string
+         */
+        public $accountId;
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var string[]
+         */
+        public $approverUserProfileIds;
+        /**
+         * @var string
+         */
+        public $buyerInvoiceId;
+        /**
+         * @var string
+         */
+        public $buyerOrganizationName;
+        /**
+         * @var string
+         */
+        public $comments;
+        protected $contactsType = OrderContact::class;
+        protected $contactsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $lastModifiedInfoType = LastModifiedInfo::class;
+        protected $lastModifiedInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $notes;
+        /**
+         * @var string
+         */
+        public $planningTermId;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $sellerOrderId;
+        /**
+         * @var string
+         */
+        public $sellerOrganizationName;
+        /**
+         * @var string[]
+         */
+        public $siteId;
+        /**
+         * @var string[]
+         */
+        public $siteNames;
+        /**
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * @var string
+         */
+        public $termsAndConditions;
+        /**
+         * @param string
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setApproverUserProfileIds($approverUserProfileIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApproverUserProfileIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuyerInvoiceId($buyerInvoiceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyerInvoiceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuyerOrganizationName($buyerOrganizationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyerOrganizationName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComments()
+        {
+        }
+        /**
+         * @param OrderContact[]
+         */
+        public function setContacts($contacts)
+        {
+        }
+        /**
+         * @return OrderContact[]
+         */
+        public function getContacts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param LastModifiedInfo
+         */
+        public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getLastModifiedInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlanningTermId($planningTermId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlanningTermId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSellerOrderId($sellerOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSellerOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSellerOrganizationName($sellerOrganizationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSellerOrganizationName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSiteId($siteId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSiteId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSiteNames($siteNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSiteNames()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTermsAndConditions($termsAndConditions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTermsAndConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Order registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setApproverUserProfileIds($approverUserProfileIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getApproverUserProfileIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuyerInvoiceId($buyerInvoiceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuyerInvoiceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuyerOrganizationName($buyerOrganizationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuyerOrganizationName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComments($comments)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComments()
-    {
-    }
-    /**
-     * @param OrderContact[]
-     */
-    public function setContacts($contacts)
-    {
-    }
-    /**
-     * @return OrderContact[]
-     */
-    public function getContacts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param LastModifiedInfo
-     */
-    public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getLastModifiedInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlanningTermId($planningTermId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlanningTermId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSellerOrderId($sellerOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSellerOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSellerOrganizationName($sellerOrganizationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSellerOrganizationName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSiteId($siteId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSiteId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSiteNames($siteNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSiteNames()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTermsAndConditions($termsAndConditions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTermsAndConditions()
+    class Google_Service_Dfareporting_Order extends \Google\Service\Dfareporting\Order
     {
     }
 }

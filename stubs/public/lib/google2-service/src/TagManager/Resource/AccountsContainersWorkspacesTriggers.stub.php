@@ -21,93 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "triggers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $triggers = $tagmanagerService->accounts_containers_workspaces_triggers;
- *  </code>
- */
-class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ListTriggersResponse;
+    use Google\Service\TagManager\RevertTriggerResponse;
+    use Google\Service\TagManager\Trigger;
     /**
-     * Creates a GTM Trigger. (triggers.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param Trigger $postBody
-     * @param array $optParams Optional parameters.
-     * @return Trigger
-     * @throws \Google\Service\Exception
+     * The "triggers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $triggers = $tagmanagerService->accounts_containers_workspaces_triggers;
+     *  </code>
      */
-    public function create($parent, Trigger $postBody, $optParams = [])
+    class AccountsContainersWorkspacesTriggers extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Trigger. (triggers.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param Trigger $postBody
+         * @param array $optParams Optional parameters.
+         * @return Trigger
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Trigger $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Trigger. (triggers.delete)
+         *
+         * @param string $path GTM Trigger's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Trigger. (triggers.get)
+         *
+         * @param string $path GTM Trigger's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Trigger
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Triggers of a Container.
+         * (triggers.listAccountsContainersWorkspacesTriggers)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListTriggersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesTriggers($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Trigger in a GTM Workspace. (triggers.revert)
+         *
+         * @param string $path GTM Trigger's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the trigger in storage.
+         * @return RevertTriggerResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Trigger. (triggers.update)
+         *
+         * @param string $path GTM Trigger's API relative path.
+         * @param Trigger $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the trigger in storage.
+         * @return Trigger
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Trigger $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Trigger. (triggers.delete)
-     *
-     * @param string $path GTM Trigger's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTriggers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Trigger. (triggers.get)
-     *
-     * @param string $path GTM Trigger's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Trigger
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Triggers of a Container.
-     * (triggers.listAccountsContainersWorkspacesTriggers)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListTriggersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesTriggers($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Trigger in a GTM Workspace. (triggers.revert)
-     *
-     * @param string $path GTM Trigger's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the trigger in storage.
-     * @return RevertTriggerResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Trigger. (triggers.update)
-     *
-     * @param string $path GTM Trigger's API relative path.
-     * @param Trigger $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the trigger in storage.
-     * @return Trigger
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Trigger $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesTriggers extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTriggers
     {
     }
 }

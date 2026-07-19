@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class LanguageCodesSet extends \Google\Collection
-{
-    protected $collection_key = 'languageCodes';
-    /**
-     * The ISO-639 language code(s) for terms defined in the glossary. All entries
-     * are unique. The list contains at least two entries. Expected to be an exact
-     * match for GlossaryTerm.language_code.
-     *
-     * @var string[]
-     */
-    public $languageCodes;
-    /**
-     * The ISO-639 language code(s) for terms defined in the glossary. All entries
-     * are unique. The list contains at least two entries. Expected to be an exact
-     * match for GlossaryTerm.language_code.
-     *
-     * @param string[] $languageCodes
-     */
-    public function setLanguageCodes($languageCodes)
+namespace Google\Service\Translate {
+    class LanguageCodesSet extends \Google\Collection
     {
+        protected $collection_key = 'languageCodes';
+        /**
+         * The ISO-639 language code(s) for terms defined in the glossary. All entries
+         * are unique. The list contains at least two entries. Expected to be an exact
+         * match for GlossaryTerm.language_code.
+         *
+         * @var string[]
+         */
+        public $languageCodes;
+        /**
+         * The ISO-639 language code(s) for terms defined in the glossary. All entries
+         * are unique. The list contains at least two entries. Expected to be an exact
+         * match for GlossaryTerm.language_code.
+         *
+         * @param string[] $languageCodes
+         */
+        public function setLanguageCodes($languageCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLanguageCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Translate\LanguageCodesSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCodes()
+    class Google_Service_Translate_LanguageCodesSet extends \Google\Service\Translate\LanguageCodesSet
     {
     }
 }

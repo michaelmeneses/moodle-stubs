@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class IntelligenceCloudAutomlXpsMetricEntry extends \Google\Collection
-{
-    protected $collection_key = 'systemLabels';
-    /**
-     * @var string
-     */
-    public $argentumMetricId;
-    public $doubleValue;
-    /**
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * @var string
-     */
-    public $metricName;
-    protected $systemLabelsType = IntelligenceCloudAutomlXpsMetricEntryLabel::class;
-    protected $systemLabelsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setArgentumMetricId($argentumMetricId)
+namespace Google\Service\Aiplatform {
+    class IntelligenceCloudAutomlXpsMetricEntry extends \Google\Collection
     {
+        protected $collection_key = 'systemLabels';
+        /**
+         * @var string
+         */
+        public $argentumMetricId;
+        public $doubleValue;
+        /**
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * @var string
+         */
+        public $metricName;
+        protected $systemLabelsType = IntelligenceCloudAutomlXpsMetricEntryLabel::class;
+        protected $systemLabelsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setArgentumMetricId($argentumMetricId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArgentumMetricId()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
+        /**
+         * @param IntelligenceCloudAutomlXpsMetricEntryLabel[]
+         */
+        public function setSystemLabels($systemLabels)
+        {
+        }
+        /**
+         * @return IntelligenceCloudAutomlXpsMetricEntryLabel[]
+         */
+        public function getSystemLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\IntelligenceCloudAutomlXpsMetricEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgentumMetricId()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetricName($metricName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricName()
-    {
-    }
-    /**
-     * @param IntelligenceCloudAutomlXpsMetricEntryLabel[]
-     */
-    public function setSystemLabels($systemLabels)
-    {
-    }
-    /**
-     * @return IntelligenceCloudAutomlXpsMetricEntryLabel[]
-     */
-    public function getSystemLabels()
+    class Google_Service_Aiplatform_IntelligenceCloudAutomlXpsMetricEntry extends \Google\Service\Aiplatform\IntelligenceCloudAutomlXpsMetricEntry
     {
     }
 }

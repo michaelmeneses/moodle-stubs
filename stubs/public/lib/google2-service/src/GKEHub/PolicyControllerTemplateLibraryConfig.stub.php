@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerTemplateLibraryConfig extends \Google\Model
-{
-    /**
-     * No installation strategy has been specified.
-     */
-    public const INSTALLATION_INSTALLATION_UNSPECIFIED = 'INSTALLATION_UNSPECIFIED';
-    /**
-     * Do not install the template library.
-     */
-    public const INSTALLATION_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Install the entire template library.
-     */
-    public const INSTALLATION_ALL = 'ALL';
-    /**
-     * Configures the manner in which the template library is installed on the
-     * cluster.
-     *
-     * @var string
-     */
-    public $installation;
-    /**
-     * Configures the manner in which the template library is installed on the
-     * cluster.
-     *
-     * Accepted values: INSTALLATION_UNSPECIFIED, NOT_INSTALLED, ALL
-     *
-     * @param self::INSTALLATION_* $installation
-     */
-    public function setInstallation($installation)
+namespace Google\Service\GKEHub {
+    class PolicyControllerTemplateLibraryConfig extends \Google\Model
     {
+        /**
+         * No installation strategy has been specified.
+         */
+        public const INSTALLATION_INSTALLATION_UNSPECIFIED = 'INSTALLATION_UNSPECIFIED';
+        /**
+         * Do not install the template library.
+         */
+        public const INSTALLATION_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Install the entire template library.
+         */
+        public const INSTALLATION_ALL = 'ALL';
+        /**
+         * Configures the manner in which the template library is installed on the
+         * cluster.
+         *
+         * @var string
+         */
+        public $installation;
+        /**
+         * Configures the manner in which the template library is installed on the
+         * cluster.
+         *
+         * Accepted values: INSTALLATION_UNSPECIFIED, NOT_INSTALLED, ALL
+         *
+         * @param self::INSTALLATION_* $installation
+         */
+        public function setInstallation($installation)
+        {
+        }
+        /**
+         * @return self::INSTALLATION_*
+         */
+        public function getInstallation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INSTALLATION_*
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerTemplateLibraryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstallation()
+    class Google_Service_GKEHub_PolicyControllerTemplateLibraryConfig extends \Google\Service\GKEHub\PolicyControllerTemplateLibraryConfig
     {
     }
 }

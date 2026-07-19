@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class EntitleSubscriptionRequestLineItemEntitlementDetails extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * Required. The index of the line item to be entitled.
-     *
-     * @var int
-     */
-    public $lineItemIndex;
-    /**
-     * Optional. Only applicable if the line item corresponds to a hard bundle.
-     * Product resource names that identify the bundle elements to be entitled in
-     * the line item. If unspecified, all bundle elements will be entitled. The
-     * format is 'partners/{partner_id}/products/{product_id}'.
-     *
-     * @var string[]
-     */
-    public $products;
-    /**
-     * Required. The index of the line item to be entitled.
-     *
-     * @param int $lineItemIndex
-     */
-    public function setLineItemIndex($lineItemIndex)
+namespace Google\Service\PaymentsResellerSubscription {
+    class EntitleSubscriptionRequestLineItemEntitlementDetails extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * Required. The index of the line item to be entitled.
+         *
+         * @var int
+         */
+        public $lineItemIndex;
+        /**
+         * Optional. Only applicable if the line item corresponds to a hard bundle.
+         * Product resource names that identify the bundle elements to be entitled in
+         * the line item. If unspecified, all bundle elements will be entitled. The
+         * format is 'partners/{partner_id}/products/{product_id}'.
+         *
+         * @var string[]
+         */
+        public $products;
+        /**
+         * Required. The index of the line item to be entitled.
+         *
+         * @param int $lineItemIndex
+         */
+        public function setLineItemIndex($lineItemIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineItemIndex()
+        {
+        }
+        /**
+         * Optional. Only applicable if the line item corresponds to a hard bundle.
+         * Product resource names that identify the bundle elements to be entitled in
+         * the line item. If unspecified, all bundle elements will be entitled. The
+         * format is 'partners/{partner_id}/products/{product_id}'.
+         *
+         * @param string[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\EntitleSubscriptionRequestLineItemEntitlementDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemIndex()
-    {
-    }
-    /**
-     * Optional. Only applicable if the line item corresponds to a hard bundle.
-     * Product resource names that identify the bundle elements to be entitled in
-     * the line item. If unspecified, all bundle elements will be entitled. The
-     * format is 'partners/{partner_id}/products/{product_id}'.
-     *
-     * @param string[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProducts()
+    class Google_Service_PaymentsResellerSubscription_EntitleSubscriptionRequestLineItemEntitlementDetails extends \Google\Service\PaymentsResellerSubscription\EntitleSubscriptionRequestLineItemEntitlementDetails
     {
     }
 }

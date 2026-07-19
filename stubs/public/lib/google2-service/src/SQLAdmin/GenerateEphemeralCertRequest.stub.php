@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class GenerateEphemeralCertRequest extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["accessToken" => "access_token", "publicKey" => "public_key"];
-    /**
-     * Optional. Access token to include in the signed certificate.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * PEM encoded public key to include in the signed certificate.
-     *
-     * @var string
-     */
-    public $publicKey;
-    /**
-     * Optional. Optional snapshot read timestamp to trade freshness for
-     * performance.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * Optional. If set, it will contain the cert valid duration.
-     *
-     * @var string
-     */
-    public $validDuration;
-    /**
-     * Optional. Access token to include in the signed certificate.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\SQLAdmin {
+    class GenerateEphemeralCertRequest extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["accessToken" => "access_token", "publicKey" => "public_key"];
+        /**
+         * Optional. Access token to include in the signed certificate.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * PEM encoded public key to include in the signed certificate.
+         *
+         * @var string
+         */
+        public $publicKey;
+        /**
+         * Optional. Optional snapshot read timestamp to trade freshness for
+         * performance.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * Optional. If set, it will contain the cert valid duration.
+         *
+         * @var string
+         */
+        public $validDuration;
+        /**
+         * Optional. Access token to include in the signed certificate.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * PEM encoded public key to include in the signed certificate.
+         *
+         * @param string $publicKey
+         */
+        public function setPublicKey($publicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKey()
+        {
+        }
+        /**
+         * Optional. Optional snapshot read timestamp to trade freshness for
+         * performance.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * Optional. If set, it will contain the cert valid duration.
+         *
+         * @param string $validDuration
+         */
+        public function setValidDuration($validDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\GenerateEphemeralCertRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * PEM encoded public key to include in the signed certificate.
-     *
-     * @param string $publicKey
-     */
-    public function setPublicKey($publicKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKey()
-    {
-    }
-    /**
-     * Optional. Optional snapshot read timestamp to trade freshness for
-     * performance.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * Optional. If set, it will contain the cert valid duration.
-     *
-     * @param string $validDuration
-     */
-    public function setValidDuration($validDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidDuration()
+    class Google_Service_SQLAdmin_GenerateEphemeralCertRequest extends \Google\Service\SQLAdmin\GenerateEphemeralCertRequest
     {
     }
 }

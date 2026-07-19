@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class UploadPrivateDataRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $issuerId;
-    protected $textType = PrivateText::class;
-    protected $textDataType = '';
-    protected $uriType = PrivateUri::class;
-    protected $uriDataType = '';
-    /**
-     * @param string
-     */
-    public function setIssuerId($issuerId)
+namespace Google\Service\Walletobjects {
+    class UploadPrivateDataRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $issuerId;
+        protected $textType = PrivateText::class;
+        protected $textDataType = '';
+        protected $uriType = PrivateUri::class;
+        protected $uriDataType = '';
+        /**
+         * @param string
+         */
+        public function setIssuerId($issuerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuerId()
+        {
+        }
+        /**
+         * @param PrivateText
+         */
+        public function setText(PrivateText $text)
+        {
+        }
+        /**
+         * @return PrivateText
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param PrivateUri
+         */
+        public function setUri(PrivateUri $uri)
+        {
+        }
+        /**
+         * @return PrivateUri
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\UploadPrivateDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssuerId()
-    {
-    }
-    /**
-     * @param PrivateText
-     */
-    public function setText(PrivateText $text)
-    {
-    }
-    /**
-     * @return PrivateText
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param PrivateUri
-     */
-    public function setUri(PrivateUri $uri)
-    {
-    }
-    /**
-     * @return PrivateUri
-     */
-    public function getUri()
+    class Google_Service_Walletobjects_UploadPrivateDataRequest extends \Google\Service\Walletobjects\UploadPrivateDataRequest
     {
     }
 }

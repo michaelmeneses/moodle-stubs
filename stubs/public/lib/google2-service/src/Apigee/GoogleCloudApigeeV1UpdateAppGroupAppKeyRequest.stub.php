@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1UpdateAppGroupAppKeyRequest extends \Google\Collection
-{
-    protected $collection_key = 'apiProducts';
-    /**
-     * Approve or revoke the consumer key by setting this value to `approve` or
-     * `revoke` respectively. The `Content-Type` header, if set, must be set to
-     * `application/octet-stream`, with empty body.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * The list of API products that will be associated with the credential. This
-     * list will be appended to the existing list of associated API Products for
-     * this App Key. Duplicates will be ignored.
-     *
-     * @var string[]
-     */
-    public $apiProducts;
-    protected $appGroupAppKeyType = GoogleCloudApigeeV1AppGroupAppKey::class;
-    protected $appGroupAppKeyDataType = '';
-    /**
-     * Approve or revoke the consumer key by setting this value to `approve` or
-     * `revoke` respectively. The `Content-Type` header, if set, must be set to
-     * `application/octet-stream`, with empty body.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1UpdateAppGroupAppKeyRequest extends \Google\Collection
     {
+        protected $collection_key = 'apiProducts';
+        /**
+         * Approve or revoke the consumer key by setting this value to `approve` or
+         * `revoke` respectively. The `Content-Type` header, if set, must be set to
+         * `application/octet-stream`, with empty body.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * The list of API products that will be associated with the credential. This
+         * list will be appended to the existing list of associated API Products for
+         * this App Key. Duplicates will be ignored.
+         *
+         * @var string[]
+         */
+        public $apiProducts;
+        protected $appGroupAppKeyType = GoogleCloudApigeeV1AppGroupAppKey::class;
+        protected $appGroupAppKeyDataType = '';
+        /**
+         * Approve or revoke the consumer key by setting this value to `approve` or
+         * `revoke` respectively. The `Content-Type` header, if set, must be set to
+         * `application/octet-stream`, with empty body.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The list of API products that will be associated with the credential. This
+         * list will be appended to the existing list of associated API Products for
+         * this App Key. Duplicates will be ignored.
+         *
+         * @param string[] $apiProducts
+         */
+        public function setApiProducts($apiProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApiProducts()
+        {
+        }
+        /**
+         * Note that only Scopes and Attributes of the AppGroupAppKey can be amended.
+         * Scopes and Attributes mentioned in the request will be inserted and the
+         * existing scopes and attributes will be removed.
+         *
+         * @param GoogleCloudApigeeV1AppGroupAppKey $appGroupAppKey
+         */
+        public function setAppGroupAppKey(GoogleCloudApigeeV1AppGroupAppKey $appGroupAppKey)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AppGroupAppKey
+         */
+        public function getAppGroupAppKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1UpdateAppGroupAppKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The list of API products that will be associated with the credential. This
-     * list will be appended to the existing list of associated API Products for
-     * this App Key. Duplicates will be ignored.
-     *
-     * @param string[] $apiProducts
-     */
-    public function setApiProducts($apiProducts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getApiProducts()
-    {
-    }
-    /**
-     * Note that only Scopes and Attributes of the AppGroupAppKey can be amended.
-     * Scopes and Attributes mentioned in the request will be inserted and the
-     * existing scopes and attributes will be removed.
-     *
-     * @param GoogleCloudApigeeV1AppGroupAppKey $appGroupAppKey
-     */
-    public function setAppGroupAppKey(GoogleCloudApigeeV1AppGroupAppKey $appGroupAppKey)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1AppGroupAppKey
-     */
-    public function getAppGroupAppKey()
+    class Google_Service_Apigee_GoogleCloudApigeeV1UpdateAppGroupAppKeyRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1UpdateAppGroupAppKeyRequest
     {
     }
 }

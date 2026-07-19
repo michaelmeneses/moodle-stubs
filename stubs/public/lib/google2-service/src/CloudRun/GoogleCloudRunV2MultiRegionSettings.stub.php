@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2MultiRegionSettings extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * Optional. System-generated unique id for the multi-region Service.
-     *
-     * @var string
-     */
-    public $multiRegionId;
-    /**
-     * Required. List of regions to deploy to, including primary region.
-     *
-     * @var string[]
-     */
-    public $regions;
-    /**
-     * Optional. System-generated unique id for the multi-region Service.
-     *
-     * @param string $multiRegionId
-     */
-    public function setMultiRegionId($multiRegionId)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2MultiRegionSettings extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * Optional. System-generated unique id for the multi-region Service.
+         *
+         * @var string
+         */
+        public $multiRegionId;
+        /**
+         * Required. List of regions to deploy to, including primary region.
+         *
+         * @var string[]
+         */
+        public $regions;
+        /**
+         * Optional. System-generated unique id for the multi-region Service.
+         *
+         * @param string $multiRegionId
+         */
+        public function setMultiRegionId($multiRegionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMultiRegionId()
+        {
+        }
+        /**
+         * Required. List of regions to deploy to, including primary region.
+         *
+         * @param string[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2MultiRegionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiRegionId()
-    {
-    }
-    /**
-     * Required. List of regions to deploy to, including primary region.
-     *
-     * @param string[] $regions
-     */
-    public function setRegions($regions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegions()
+    class Google_Service_CloudRun_GoogleCloudRunV2MultiRegionSettings extends \Google\Service\CloudRun\GoogleCloudRunV2MultiRegionSettings
     {
     }
 }

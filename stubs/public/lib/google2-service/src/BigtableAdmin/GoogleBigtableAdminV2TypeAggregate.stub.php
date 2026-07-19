@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeAggregate extends \Google\Model
-{
-    protected $hllppUniqueCountType = GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount::class;
-    protected $hllppUniqueCountDataType = '';
-    protected $inputTypeType = Type::class;
-    protected $inputTypeDataType = '';
-    protected $maxType = GoogleBigtableAdminV2TypeAggregateMax::class;
-    protected $maxDataType = '';
-    protected $minType = GoogleBigtableAdminV2TypeAggregateMin::class;
-    protected $minDataType = '';
-    protected $stateTypeType = Type::class;
-    protected $stateTypeDataType = '';
-    protected $sumType = GoogleBigtableAdminV2TypeAggregateSum::class;
-    protected $sumDataType = '';
-    /**
-     * HyperLogLogPlusPlusUniqueCount aggregator.
-     *
-     * @param GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount $hllppUniqueCount
-     */
-    public function setHllppUniqueCount(GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount $hllppUniqueCount)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeAggregate extends \Google\Model
     {
+        protected $hllppUniqueCountType = GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount::class;
+        protected $hllppUniqueCountDataType = '';
+        protected $inputTypeType = Type::class;
+        protected $inputTypeDataType = '';
+        protected $maxType = GoogleBigtableAdminV2TypeAggregateMax::class;
+        protected $maxDataType = '';
+        protected $minType = GoogleBigtableAdminV2TypeAggregateMin::class;
+        protected $minDataType = '';
+        protected $stateTypeType = Type::class;
+        protected $stateTypeDataType = '';
+        protected $sumType = GoogleBigtableAdminV2TypeAggregateSum::class;
+        protected $sumDataType = '';
+        /**
+         * HyperLogLogPlusPlusUniqueCount aggregator.
+         *
+         * @param GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount $hllppUniqueCount
+         */
+        public function setHllppUniqueCount(GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount $hllppUniqueCount)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount
+         */
+        public function getHllppUniqueCount()
+        {
+        }
+        /**
+         * Type of the inputs that are accumulated by this `Aggregate`. Use `AddInput`
+         * mutations to accumulate new inputs.
+         *
+         * @param Type $inputType
+         */
+        public function setInputType(Type $inputType)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getInputType()
+        {
+        }
+        /**
+         * Max aggregator.
+         *
+         * @param GoogleBigtableAdminV2TypeAggregateMax $max
+         */
+        public function setMax(GoogleBigtableAdminV2TypeAggregateMax $max)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeAggregateMax
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Min aggregator.
+         *
+         * @param GoogleBigtableAdminV2TypeAggregateMin $min
+         */
+        public function setMin(GoogleBigtableAdminV2TypeAggregateMin $min)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeAggregateMin
+         */
+        public function getMin()
+        {
+        }
+        /**
+         * Output only. Type that holds the internal accumulator state for the
+         * `Aggregate`. This is a function of the `input_type` and `aggregator`
+         * chosen.
+         *
+         * @param Type $stateType
+         */
+        public function setStateType(Type $stateType)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getStateType()
+        {
+        }
+        /**
+         * Sum aggregator.
+         *
+         * @param GoogleBigtableAdminV2TypeAggregateSum $sum
+         */
+        public function setSum(GoogleBigtableAdminV2TypeAggregateSum $sum)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeAggregateSum
+         */
+        public function getSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeAggregateHyperLogLogPlusPlusUniqueCount
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeAggregate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHllppUniqueCount()
-    {
-    }
-    /**
-     * Type of the inputs that are accumulated by this `Aggregate`. Use `AddInput`
-     * mutations to accumulate new inputs.
-     *
-     * @param Type $inputType
-     */
-    public function setInputType(Type $inputType)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getInputType()
-    {
-    }
-    /**
-     * Max aggregator.
-     *
-     * @param GoogleBigtableAdminV2TypeAggregateMax $max
-     */
-    public function setMax(GoogleBigtableAdminV2TypeAggregateMax $max)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeAggregateMax
-     */
-    public function getMax()
-    {
-    }
-    /**
-     * Min aggregator.
-     *
-     * @param GoogleBigtableAdminV2TypeAggregateMin $min
-     */
-    public function setMin(GoogleBigtableAdminV2TypeAggregateMin $min)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeAggregateMin
-     */
-    public function getMin()
-    {
-    }
-    /**
-     * Output only. Type that holds the internal accumulator state for the
-     * `Aggregate`. This is a function of the `input_type` and `aggregator`
-     * chosen.
-     *
-     * @param Type $stateType
-     */
-    public function setStateType(Type $stateType)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getStateType()
-    {
-    }
-    /**
-     * Sum aggregator.
-     *
-     * @param GoogleBigtableAdminV2TypeAggregateSum $sum
-     */
-    public function setSum(GoogleBigtableAdminV2TypeAggregateSum $sum)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeAggregateSum
-     */
-    public function getSum()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeAggregate extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeAggregate
     {
     }
 }

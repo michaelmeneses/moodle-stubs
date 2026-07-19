@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageCardButton extends \Google\Model
-{
-    /**
-     * Optional. The text to send back to the Dialogflow API or a URI to open.
-     *
-     * @var string
-     */
-    public $postback;
-    /**
-     * Optional. The text to show on the button.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Optional. The text to send back to the Dialogflow API or a URI to open.
-     *
-     * @param string $postback
-     */
-    public function setPostback($postback)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageCardButton extends \Google\Model
     {
+        /**
+         * Optional. The text to send back to the Dialogflow API or a URI to open.
+         *
+         * @var string
+         */
+        public $postback;
+        /**
+         * Optional. The text to show on the button.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Optional. The text to send back to the Dialogflow API or a URI to open.
+         *
+         * @param string $postback
+         */
+        public function setPostback($postback)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostback()
+        {
+        }
+        /**
+         * Optional. The text to show on the button.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageCardButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostback()
-    {
-    }
-    /**
-     * Optional. The text to show on the button.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageCardButton extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageCardButton
     {
     }
 }

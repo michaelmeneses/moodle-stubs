@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScores extends \Google\Collection
-{
-    protected $collection_key = 'detectedDefects';
-    protected $detectedDefectsType = GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScoresDetectedDefect::class;
-    protected $detectedDefectsDataType = 'array';
-    /**
-     * @var float
-     */
-    public $qualityScore;
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScoresDetectedDefect[]
-     */
-    public function setDetectedDefects($detectedDefects)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScores extends \Google\Collection
     {
+        protected $collection_key = 'detectedDefects';
+        protected $detectedDefectsType = GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScoresDetectedDefect::class;
+        protected $detectedDefectsDataType = 'array';
+        /**
+         * @var float
+         */
+        public $qualityScore;
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScoresDetectedDefect[]
+         */
+        public function setDetectedDefects($detectedDefects)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScoresDetectedDefect[]
+         */
+        public function getDetectedDefects()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setQualityScore($qualityScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getQualityScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScoresDetectedDefect[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedDefects()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setQualityScore($qualityScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getQualityScore()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScores extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageImageQualityScores
     {
     }
 }

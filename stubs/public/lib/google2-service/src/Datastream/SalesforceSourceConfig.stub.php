@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SalesforceSourceConfig extends \Google\Model
-{
-    protected $excludeObjectsType = SalesforceOrg::class;
-    protected $excludeObjectsDataType = '';
-    protected $includeObjectsType = SalesforceOrg::class;
-    protected $includeObjectsDataType = '';
-    /**
-     * Required. Salesforce objects polling interval. The interval at which new
-     * changes will be polled for each object. The duration must be between 5
-     * minutes and 24 hours.
-     *
-     * @var string
-     */
-    public $pollingInterval;
-    /**
-     * Salesforce objects to exclude from the stream.
-     *
-     * @param SalesforceOrg $excludeObjects
-     */
-    public function setExcludeObjects(SalesforceOrg $excludeObjects)
+namespace Google\Service\Datastream {
+    class SalesforceSourceConfig extends \Google\Model
     {
+        protected $excludeObjectsType = SalesforceOrg::class;
+        protected $excludeObjectsDataType = '';
+        protected $includeObjectsType = SalesforceOrg::class;
+        protected $includeObjectsDataType = '';
+        /**
+         * Required. Salesforce objects polling interval. The interval at which new
+         * changes will be polled for each object. The duration must be between 5
+         * minutes and 24 hours.
+         *
+         * @var string
+         */
+        public $pollingInterval;
+        /**
+         * Salesforce objects to exclude from the stream.
+         *
+         * @param SalesforceOrg $excludeObjects
+         */
+        public function setExcludeObjects(SalesforceOrg $excludeObjects)
+        {
+        }
+        /**
+         * @return SalesforceOrg
+         */
+        public function getExcludeObjects()
+        {
+        }
+        /**
+         * Salesforce objects to retrieve from the source.
+         *
+         * @param SalesforceOrg $includeObjects
+         */
+        public function setIncludeObjects(SalesforceOrg $includeObjects)
+        {
+        }
+        /**
+         * @return SalesforceOrg
+         */
+        public function getIncludeObjects()
+        {
+        }
+        /**
+         * Required. Salesforce objects polling interval. The interval at which new
+         * changes will be polled for each object. The duration must be between 5
+         * minutes and 24 hours.
+         *
+         * @param string $pollingInterval
+         */
+        public function setPollingInterval($pollingInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPollingInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SalesforceOrg
+     * Runtime class alias of \Google\Service\Datastream\SalesforceSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeObjects()
-    {
-    }
-    /**
-     * Salesforce objects to retrieve from the source.
-     *
-     * @param SalesforceOrg $includeObjects
-     */
-    public function setIncludeObjects(SalesforceOrg $includeObjects)
-    {
-    }
-    /**
-     * @return SalesforceOrg
-     */
-    public function getIncludeObjects()
-    {
-    }
-    /**
-     * Required. Salesforce objects polling interval. The interval at which new
-     * changes will be polled for each object. The duration must be between 5
-     * minutes and 24 hours.
-     *
-     * @param string $pollingInterval
-     */
-    public function setPollingInterval($pollingInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPollingInterval()
+    class Google_Service_Datastream_SalesforceSourceConfig extends \Google\Service\Datastream\SalesforceSourceConfig
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SuggestResult extends \Google\Model
-{
-    protected $peopleSuggestionType = PeopleSuggestion::class;
-    protected $peopleSuggestionDataType = '';
-    protected $querySuggestionType = QuerySuggestion::class;
-    protected $querySuggestionDataType = '';
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * The suggested query that will be used for search, when the user clicks on
-     * the suggestion
-     *
-     * @var string
-     */
-    public $suggestedQuery;
-    /**
-     * This is present when the suggestion indicates a person. It contains more
-     * information about the person - like their email ID, name etc.
-     *
-     * @param PeopleSuggestion $peopleSuggestion
-     */
-    public function setPeopleSuggestion(PeopleSuggestion $peopleSuggestion)
+namespace Google\Service\CloudSearch {
+    class SuggestResult extends \Google\Model
     {
+        protected $peopleSuggestionType = PeopleSuggestion::class;
+        protected $peopleSuggestionDataType = '';
+        protected $querySuggestionType = QuerySuggestion::class;
+        protected $querySuggestionDataType = '';
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * The suggested query that will be used for search, when the user clicks on
+         * the suggestion
+         *
+         * @var string
+         */
+        public $suggestedQuery;
+        /**
+         * This is present when the suggestion indicates a person. It contains more
+         * information about the person - like their email ID, name etc.
+         *
+         * @param PeopleSuggestion $peopleSuggestion
+         */
+        public function setPeopleSuggestion(PeopleSuggestion $peopleSuggestion)
+        {
+        }
+        /**
+         * @return PeopleSuggestion
+         */
+        public function getPeopleSuggestion()
+        {
+        }
+        /**
+         * This field will be present if the suggested query is a word/phrase
+         * completion.
+         *
+         * @param QuerySuggestion $querySuggestion
+         */
+        public function setQuerySuggestion(QuerySuggestion $querySuggestion)
+        {
+        }
+        /**
+         * @return QuerySuggestion
+         */
+        public function getQuerySuggestion()
+        {
+        }
+        /**
+         * The source of the suggestion.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * The suggested query that will be used for search, when the user clicks on
+         * the suggestion
+         *
+         * @param string $suggestedQuery
+         */
+        public function setSuggestedQuery($suggestedQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestedQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PeopleSuggestion
+     * Runtime class alias of \Google\Service\CloudSearch\SuggestResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeopleSuggestion()
-    {
-    }
-    /**
-     * This field will be present if the suggested query is a word/phrase
-     * completion.
-     *
-     * @param QuerySuggestion $querySuggestion
-     */
-    public function setQuerySuggestion(QuerySuggestion $querySuggestion)
-    {
-    }
-    /**
-     * @return QuerySuggestion
-     */
-    public function getQuerySuggestion()
-    {
-    }
-    /**
-     * The source of the suggestion.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * The suggested query that will be used for search, when the user clicks on
-     * the suggestion
-     *
-     * @param string $suggestedQuery
-     */
-    public function setSuggestedQuery($suggestedQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestedQuery()
+    class Google_Service_CloudSearch_SuggestResult extends \Google\Service\CloudSearch\SuggestResult
     {
     }
 }

@@ -21,185 +21,194 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals extends \Google\Collection
-{
-    protected $collection_key = 'customSignals';
-    /**
-     * Optional. Combined custom boosts for a doc.
-     *
-     * @var float
-     */
-    public $boostingFactor;
-    protected $customSignalsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal::class;
-    protected $customSignalsDataType = 'array';
-    /**
-     * Optional. The default rank of the result.
-     *
-     * @var float
-     */
-    public $defaultRank;
-    /**
-     * Optional. Age of the document in hours.
-     *
-     * @var float
-     */
-    public $documentAge;
-    /**
-     * Optional. Keyword matching adjustment.
-     *
-     * @var float
-     */
-    public $keywordSimilarityScore;
-    /**
-     * Optional. Predicted conversion rate adjustment as a rank.
-     *
-     * @var float
-     */
-    public $pctrRank;
-    /**
-     * Optional. Semantic relevance adjustment.
-     *
-     * @var float
-     */
-    public $relevanceScore;
-    /**
-     * Optional. Semantic similarity adjustment.
-     *
-     * @var float
-     */
-    public $semanticSimilarityScore;
-    /**
-     * Optional. Topicality adjustment as a rank.
-     *
-     * @var float
-     */
-    public $topicalityRank;
-    /**
-     * Optional. Combined custom boosts for a doc.
-     *
-     * @param float $boostingFactor
-     */
-    public function setBoostingFactor($boostingFactor)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals extends \Google\Collection
     {
+        protected $collection_key = 'customSignals';
+        /**
+         * Optional. Combined custom boosts for a doc.
+         *
+         * @var float
+         */
+        public $boostingFactor;
+        protected $customSignalsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal::class;
+        protected $customSignalsDataType = 'array';
+        /**
+         * Optional. The default rank of the result.
+         *
+         * @var float
+         */
+        public $defaultRank;
+        /**
+         * Optional. Age of the document in hours.
+         *
+         * @var float
+         */
+        public $documentAge;
+        /**
+         * Optional. Keyword matching adjustment.
+         *
+         * @var float
+         */
+        public $keywordSimilarityScore;
+        /**
+         * Optional. Predicted conversion rate adjustment as a rank.
+         *
+         * @var float
+         */
+        public $pctrRank;
+        /**
+         * Optional. Semantic relevance adjustment.
+         *
+         * @var float
+         */
+        public $relevanceScore;
+        /**
+         * Optional. Semantic similarity adjustment.
+         *
+         * @var float
+         */
+        public $semanticSimilarityScore;
+        /**
+         * Optional. Topicality adjustment as a rank.
+         *
+         * @var float
+         */
+        public $topicalityRank;
+        /**
+         * Optional. Combined custom boosts for a doc.
+         *
+         * @param float $boostingFactor
+         */
+        public function setBoostingFactor($boostingFactor)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBoostingFactor()
+        {
+        }
+        /**
+         * Optional. A list of custom clearbox signals.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal[] $customSignals
+         */
+        public function setCustomSignals($customSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal[]
+         */
+        public function getCustomSignals()
+        {
+        }
+        /**
+         * Optional. The default rank of the result.
+         *
+         * @param float $defaultRank
+         */
+        public function setDefaultRank($defaultRank)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDefaultRank()
+        {
+        }
+        /**
+         * Optional. Age of the document in hours.
+         *
+         * @param float $documentAge
+         */
+        public function setDocumentAge($documentAge)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDocumentAge()
+        {
+        }
+        /**
+         * Optional. Keyword matching adjustment.
+         *
+         * @param float $keywordSimilarityScore
+         */
+        public function setKeywordSimilarityScore($keywordSimilarityScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getKeywordSimilarityScore()
+        {
+        }
+        /**
+         * Optional. Predicted conversion rate adjustment as a rank.
+         *
+         * @param float $pctrRank
+         */
+        public function setPctrRank($pctrRank)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPctrRank()
+        {
+        }
+        /**
+         * Optional. Semantic relevance adjustment.
+         *
+         * @param float $relevanceScore
+         */
+        public function setRelevanceScore($relevanceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRelevanceScore()
+        {
+        }
+        /**
+         * Optional. Semantic similarity adjustment.
+         *
+         * @param float $semanticSimilarityScore
+         */
+        public function setSemanticSimilarityScore($semanticSimilarityScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSemanticSimilarityScore()
+        {
+        }
+        /**
+         * Optional. Topicality adjustment as a rank.
+         *
+         * @param float $topicalityRank
+         */
+        public function setTopicalityRank($topicalityRank)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTopicalityRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostingFactor()
-    {
-    }
-    /**
-     * Optional. A list of custom clearbox signals.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal[] $customSignals
-     */
-    public function setCustomSignals($customSignals)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal[]
-     */
-    public function getCustomSignals()
-    {
-    }
-    /**
-     * Optional. The default rank of the result.
-     *
-     * @param float $defaultRank
-     */
-    public function setDefaultRank($defaultRank)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getDefaultRank()
-    {
-    }
-    /**
-     * Optional. Age of the document in hours.
-     *
-     * @param float $documentAge
-     */
-    public function setDocumentAge($documentAge)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getDocumentAge()
-    {
-    }
-    /**
-     * Optional. Keyword matching adjustment.
-     *
-     * @param float $keywordSimilarityScore
-     */
-    public function setKeywordSimilarityScore($keywordSimilarityScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getKeywordSimilarityScore()
-    {
-    }
-    /**
-     * Optional. Predicted conversion rate adjustment as a rank.
-     *
-     * @param float $pctrRank
-     */
-    public function setPctrRank($pctrRank)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPctrRank()
-    {
-    }
-    /**
-     * Optional. Semantic relevance adjustment.
-     *
-     * @param float $relevanceScore
-     */
-    public function setRelevanceScore($relevanceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRelevanceScore()
-    {
-    }
-    /**
-     * Optional. Semantic similarity adjustment.
-     *
-     * @param float $semanticSimilarityScore
-     */
-    public function setSemanticSimilarityScore($semanticSimilarityScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSemanticSimilarityScore()
-    {
-    }
-    /**
-     * Optional. Topicality adjustment as a rank.
-     *
-     * @param float $topicalityRank
-     */
-    public function setTopicalityRank($topicalityRank)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTopicalityRank()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals
     {
     }
 }

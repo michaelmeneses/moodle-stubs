@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $media = $displayvideoService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\GoogleBytestreamMedia;
     /**
-     * Downloads media. Download is supported on the URI
-     * `/download/{resource_name=**}?alt=media.` **Note**: Download requests will
-     * not be successful without including `alt=media` query string.
-     * (media.download)
-     *
-     * @param string $resourceName Name of the media that is being downloaded. See
-     * ReadRequest.resource_name.
-     * @param array $optParams Optional parameters.
-     * @return GoogleBytestreamMedia
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $media = $displayvideoService->media;
+     *  </code>
      */
-    public function download($resourceName, $optParams = [])
+    class Media extends \Google\Service\Resource
     {
+        /**
+         * Downloads media. Download is supported on the URI
+         * `/download/{resource_name=**}?alt=media.` **Note**: Download requests will
+         * not be successful without including `alt=media` query string.
+         * (media.download)
+         *
+         * @param string $resourceName Name of the media that is being downloaded. See
+         * ReadRequest.resource_name.
+         * @param array $optParams Optional parameters.
+         * @return GoogleBytestreamMedia
+         * @throws \Google\Service\Exception
+         */
+        public function download($resourceName, $optParams = [])
+        {
+        }
+        /**
+         * Uploads media. Upload is supported on the URI
+         * `/upload/media/{resource_name=**}?upload_type=media.` **Note**: Upload
+         * requests will not be successful without including `upload_type=media` query
+         * string. (media.upload)
+         *
+         * @param string $resourceName Name of the media that is being downloaded. See
+         * ReadRequest.resource_name.
+         * @param GoogleBytestreamMedia $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleBytestreamMedia
+         * @throws \Google\Service\Exception
+         */
+        public function upload($resourceName, GoogleBytestreamMedia $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Uploads media. Upload is supported on the URI
-     * `/upload/media/{resource_name=**}?upload_type=media.` **Note**: Upload
-     * requests will not be successful without including `upload_type=media` query
-     * string. (media.upload)
-     *
-     * @param string $resourceName Name of the media that is being downloaded. See
-     * ReadRequest.resource_name.
-     * @param GoogleBytestreamMedia $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleBytestreamMedia
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function upload($resourceName, GoogleBytestreamMedia $postBody, $optParams = [])
+    class Google_Service_DisplayVideo_Resource_Media extends \Google\Service\DisplayVideo\Resource\Media
     {
     }
 }

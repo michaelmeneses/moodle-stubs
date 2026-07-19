@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DailyResourceUsageAggregation extends \Google\Model
-{
-    protected $cpuType = DailyResourceUsageAggregationCPU::class;
-    protected $cpuDataType = '';
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    protected $diskType = DailyResourceUsageAggregationDisk::class;
-    protected $diskDataType = '';
-    protected $memoryType = DailyResourceUsageAggregationMemory::class;
-    protected $memoryDataType = '';
-    protected $networkType = DailyResourceUsageAggregationNetwork::class;
-    protected $networkDataType = '';
-    /**
-     * CPU usage.
-     *
-     * @param DailyResourceUsageAggregationCPU $cpu
-     */
-    public function setCpu(DailyResourceUsageAggregationCPU $cpu)
+namespace Google\Service\MigrationCenterAPI {
+    class DailyResourceUsageAggregation extends \Google\Model
     {
+        protected $cpuType = DailyResourceUsageAggregationCPU::class;
+        protected $cpuDataType = '';
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        protected $diskType = DailyResourceUsageAggregationDisk::class;
+        protected $diskDataType = '';
+        protected $memoryType = DailyResourceUsageAggregationMemory::class;
+        protected $memoryDataType = '';
+        protected $networkType = DailyResourceUsageAggregationNetwork::class;
+        protected $networkDataType = '';
+        /**
+         * CPU usage.
+         *
+         * @param DailyResourceUsageAggregationCPU $cpu
+         */
+        public function setCpu(DailyResourceUsageAggregationCPU $cpu)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationCPU
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Aggregation date. Day boundaries are at midnight UTC.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * Disk usage.
+         *
+         * @param DailyResourceUsageAggregationDisk $disk
+         */
+        public function setDisk(DailyResourceUsageAggregationDisk $disk)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationDisk
+         */
+        public function getDisk()
+        {
+        }
+        /**
+         * Memory usage.
+         *
+         * @param DailyResourceUsageAggregationMemory $memory
+         */
+        public function setMemory(DailyResourceUsageAggregationMemory $memory)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationMemory
+         */
+        public function getMemory()
+        {
+        }
+        /**
+         * Network usage.
+         *
+         * @param DailyResourceUsageAggregationNetwork $network
+         */
+        public function setNetwork(DailyResourceUsageAggregationNetwork $network)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationNetwork
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyResourceUsageAggregationCPU
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpu()
-    {
-    }
-    /**
-     * Aggregation date. Day boundaries are at midnight UTC.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * Disk usage.
-     *
-     * @param DailyResourceUsageAggregationDisk $disk
-     */
-    public function setDisk(DailyResourceUsageAggregationDisk $disk)
-    {
-    }
-    /**
-     * @return DailyResourceUsageAggregationDisk
-     */
-    public function getDisk()
-    {
-    }
-    /**
-     * Memory usage.
-     *
-     * @param DailyResourceUsageAggregationMemory $memory
-     */
-    public function setMemory(DailyResourceUsageAggregationMemory $memory)
-    {
-    }
-    /**
-     * @return DailyResourceUsageAggregationMemory
-     */
-    public function getMemory()
-    {
-    }
-    /**
-     * Network usage.
-     *
-     * @param DailyResourceUsageAggregationNetwork $network
-     */
-    public function setNetwork(DailyResourceUsageAggregationNetwork $network)
-    {
-    }
-    /**
-     * @return DailyResourceUsageAggregationNetwork
-     */
-    public function getNetwork()
+    class Google_Service_MigrationCenterAPI_DailyResourceUsageAggregation extends \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregation
     {
     }
 }

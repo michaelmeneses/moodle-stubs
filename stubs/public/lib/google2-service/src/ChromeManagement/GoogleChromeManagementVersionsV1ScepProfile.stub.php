@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ScepProfile extends \Google\Collection
-{
-    protected $collection_key = 'subjectAltNames';
-    /**
-     * Output only. The certificate template name as defined by the admin on their
-     * on-prem infrastructure. The Certificate Authority uses this name to
-     * identify the certificate template.
-     *
-     * @var string
-     */
-    public $certificateTemplateName;
-    /**
-     * Output only. The country of the subject.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * Output only. The allowed key usages for certificate's key.
-     *
-     * @var string[]
-     */
-    public $keyUsages;
-    /**
-     * Output only. The locality of the subject.
-     *
-     * @var string
-     */
-    public $locality;
-    /**
-     * Output only. The name of the organization the subject belongs to.
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * Output only. The organizational units of the subject.
-     *
-     * @var string[]
-     */
-    public $organizationalUnits;
-    /**
-     * Output only. The state of the subject.
-     *
-     * @var string
-     */
-    public $state;
-    protected $subjectAltNamesType = GoogleChromeManagementVersionsV1SubjectAltName::class;
-    protected $subjectAltNamesDataType = 'array';
-    /**
-     * Output only. The common name of the subject.
-     *
-     * @var string
-     */
-    public $subjectCommonName;
-    /**
-     * Output only. The certificate template name as defined by the admin on their
-     * on-prem infrastructure. The Certificate Authority uses this name to
-     * identify the certificate template.
-     *
-     * @param string $certificateTemplateName
-     */
-    public function setCertificateTemplateName($certificateTemplateName)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ScepProfile extends \Google\Collection
     {
+        protected $collection_key = 'subjectAltNames';
+        /**
+         * Output only. The certificate template name as defined by the admin on their
+         * on-prem infrastructure. The Certificate Authority uses this name to
+         * identify the certificate template.
+         *
+         * @var string
+         */
+        public $certificateTemplateName;
+        /**
+         * Output only. The country of the subject.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * Output only. The allowed key usages for certificate's key.
+         *
+         * @var string[]
+         */
+        public $keyUsages;
+        /**
+         * Output only. The locality of the subject.
+         *
+         * @var string
+         */
+        public $locality;
+        /**
+         * Output only. The name of the organization the subject belongs to.
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * Output only. The organizational units of the subject.
+         *
+         * @var string[]
+         */
+        public $organizationalUnits;
+        /**
+         * Output only. The state of the subject.
+         *
+         * @var string
+         */
+        public $state;
+        protected $subjectAltNamesType = GoogleChromeManagementVersionsV1SubjectAltName::class;
+        protected $subjectAltNamesDataType = 'array';
+        /**
+         * Output only. The common name of the subject.
+         *
+         * @var string
+         */
+        public $subjectCommonName;
+        /**
+         * Output only. The certificate template name as defined by the admin on their
+         * on-prem infrastructure. The Certificate Authority uses this name to
+         * identify the certificate template.
+         *
+         * @param string $certificateTemplateName
+         */
+        public function setCertificateTemplateName($certificateTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateTemplateName()
+        {
+        }
+        /**
+         * Output only. The country of the subject.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * Output only. The allowed key usages for certificate's key.
+         *
+         * @param string[] $keyUsages
+         */
+        public function setKeyUsages($keyUsages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getKeyUsages()
+        {
+        }
+        /**
+         * Output only. The locality of the subject.
+         *
+         * @param string $locality
+         */
+        public function setLocality($locality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocality()
+        {
+        }
+        /**
+         * Output only. The name of the organization the subject belongs to.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * Output only. The organizational units of the subject.
+         *
+         * @param string[] $organizationalUnits
+         */
+        public function setOrganizationalUnits($organizationalUnits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOrganizationalUnits()
+        {
+        }
+        /**
+         * Output only. The state of the subject.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The subject alternative names.
+         *
+         * @param GoogleChromeManagementVersionsV1SubjectAltName[] $subjectAltNames
+         */
+        public function setSubjectAltNames($subjectAltNames)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1SubjectAltName[]
+         */
+        public function getSubjectAltNames()
+        {
+        }
+        /**
+         * Output only. The common name of the subject.
+         *
+         * @param string $subjectCommonName
+         */
+        public function setSubjectCommonName($subjectCommonName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectCommonName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ScepProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateTemplateName()
-    {
-    }
-    /**
-     * Output only. The country of the subject.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountry()
-    {
-    }
-    /**
-     * Output only. The allowed key usages for certificate's key.
-     *
-     * @param string[] $keyUsages
-     */
-    public function setKeyUsages($keyUsages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getKeyUsages()
-    {
-    }
-    /**
-     * Output only. The locality of the subject.
-     *
-     * @param string $locality
-     */
-    public function setLocality($locality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocality()
-    {
-    }
-    /**
-     * Output only. The name of the organization the subject belongs to.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * Output only. The organizational units of the subject.
-     *
-     * @param string[] $organizationalUnits
-     */
-    public function setOrganizationalUnits($organizationalUnits)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOrganizationalUnits()
-    {
-    }
-    /**
-     * Output only. The state of the subject.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The subject alternative names.
-     *
-     * @param GoogleChromeManagementVersionsV1SubjectAltName[] $subjectAltNames
-     */
-    public function setSubjectAltNames($subjectAltNames)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1SubjectAltName[]
-     */
-    public function getSubjectAltNames()
-    {
-    }
-    /**
-     * Output only. The common name of the subject.
-     *
-     * @param string $subjectCommonName
-     */
-    public function setSubjectCommonName($subjectCommonName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectCommonName()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ScepProfile extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ScepProfile
     {
     }
 }

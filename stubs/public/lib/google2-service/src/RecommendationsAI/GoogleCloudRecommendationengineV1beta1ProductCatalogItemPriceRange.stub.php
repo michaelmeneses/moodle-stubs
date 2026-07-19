@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange extends \Google\Model
-{
-    /**
-     * Required. The maximum product price.
-     *
-     * @var float
-     */
-    public $max;
-    /**
-     * Required. The minimum product price.
-     *
-     * @var float
-     */
-    public $min;
-    /**
-     * Required. The maximum product price.
-     *
-     * @param float $max
-     */
-    public function setMax($max)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange extends \Google\Model
     {
+        /**
+         * Required. The maximum product price.
+         *
+         * @var float
+         */
+        public $max;
+        /**
+         * Required. The minimum product price.
+         *
+         * @var float
+         */
+        public $min;
+        /**
+         * Required. The maximum product price.
+         *
+         * @param float $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Required. The minimum product price.
+         *
+         * @param float $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * Required. The minimum product price.
-     *
-     * @param float $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMin()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange
     {
     }
 }

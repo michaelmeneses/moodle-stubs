@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaImportUserEventsRequest extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudDiscoveryengineV1betaBigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1betaImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $gcsSourceType = GoogleCloudDiscoveryengineV1betaGcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaBigQuerySource
-     */
-    public function setBigquerySource(GoogleCloudDiscoveryengineV1betaBigQuerySource $bigquerySource)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaImportUserEventsRequest extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudDiscoveryengineV1betaBigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1betaImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $gcsSourceType = GoogleCloudDiscoveryengineV1betaGcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaBigQuerySource
+         */
+        public function setBigquerySource(GoogleCloudDiscoveryengineV1betaBigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaBigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaImportErrorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaGcsSource
+         */
+        public function setGcsSource(GoogleCloudDiscoveryengineV1betaGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaBigQuerySource
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportUserEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaImportErrorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaImportErrorConfig
-     */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaGcsSource
-     */
-    public function setGcsSource(GoogleCloudDiscoveryengineV1betaGcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaGcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaImportUserEventsRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaImportUserEventsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportUserEventsRequest
     {
     }
 }

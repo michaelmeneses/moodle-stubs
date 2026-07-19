@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagVectorDbConfigPinecone extends \Google\Model
-{
-    /**
-     * Pinecone index name. This value cannot be changed after it's set.
-     *
-     * @var string
-     */
-    public $indexName;
-    /**
-     * Pinecone index name. This value cannot be changed after it's set.
-     *
-     * @param string $indexName
-     */
-    public function setIndexName($indexName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagVectorDbConfigPinecone extends \Google\Model
     {
+        /**
+         * Pinecone index name. This value cannot be changed after it's set.
+         *
+         * @var string
+         */
+        public $indexName;
+        /**
+         * Pinecone index name. This value cannot be changed after it's set.
+         *
+         * @param string $indexName
+         */
+        public function setIndexName($indexName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigPinecone registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagVectorDbConfigPinecone extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigPinecone
     {
     }
 }

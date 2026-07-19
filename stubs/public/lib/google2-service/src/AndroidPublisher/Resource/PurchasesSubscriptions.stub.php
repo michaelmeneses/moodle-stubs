@@ -21,123 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "subscriptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $subscriptions = $androidpublisherService->purchases_subscriptions;
- *  </code>
- */
-class PurchasesSubscriptions extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\SubscriptionPurchase;
+    use Google\Service\AndroidPublisher\SubscriptionPurchasesAcknowledgeRequest;
+    use Google\Service\AndroidPublisher\SubscriptionPurchasesDeferRequest;
+    use Google\Service\AndroidPublisher\SubscriptionPurchasesDeferResponse;
     /**
-     * Acknowledges a subscription purchase. (subscriptions.acknowledge)
-     *
-     * @param string $packageName The package name of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $subscriptionId Note: Since May 21, 2025, subscription_id is
-     * not required, and not recommended for subscription with add-ons. The
-     * purchased subscription ID (for example, 'monthly001').
-     * @param string $token The token provided to the user's device when the
-     * subscription was purchased.
-     * @param SubscriptionPurchasesAcknowledgeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "subscriptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $subscriptions = $androidpublisherService->purchases_subscriptions;
+     *  </code>
      */
-    public function acknowledge($packageName, $subscriptionId, $token, SubscriptionPurchasesAcknowledgeRequest $postBody, $optParams = [])
+    class PurchasesSubscriptions extends \Google\Service\Resource
     {
+        /**
+         * Acknowledges a subscription purchase. (subscriptions.acknowledge)
+         *
+         * @param string $packageName The package name of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $subscriptionId Note: Since May 21, 2025, subscription_id is
+         * not required, and not recommended for subscription with add-ons. The
+         * purchased subscription ID (for example, 'monthly001').
+         * @param string $token The token provided to the user's device when the
+         * subscription was purchased.
+         * @param SubscriptionPurchasesAcknowledgeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function acknowledge($packageName, $subscriptionId, $token, SubscriptionPurchasesAcknowledgeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Cancels a user's subscription purchase. The subscription remains valid until
+         * its expiration time. Newer version is available at
+         * purchases.subscriptionsv2.cancel for better client library support.
+         * (subscriptions.cancel)
+         *
+         * @param string $packageName The package name of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $subscriptionId Note: Since May 21, 2025, subscription_id is
+         * not required, and not recommended for subscription with add-ons. The
+         * purchased subscription ID (for example, 'monthly001').
+         * @param string $token The token provided to the user's device when the
+         * subscription was purchased.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($packageName, $subscriptionId, $token, $optParams = [])
+        {
+        }
+        /**
+         * Defers a user's subscription purchase until a specified future expiration
+         * time. (subscriptions.defer)
+         *
+         * @param string $packageName The package name of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $subscriptionId The purchased subscription ID (for example,
+         * 'monthly001').
+         * @param string $token The token provided to the user's device when the
+         * subscription was purchased.
+         * @param SubscriptionPurchasesDeferRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SubscriptionPurchasesDeferResponse
+         * @throws \Google\Service\Exception
+         */
+        public function defer($packageName, $subscriptionId, $token, SubscriptionPurchasesDeferRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deprecated: Use purchases.subscriptionsv2.get instead. Checks whether a
+         * user's subscription purchase is valid and returns its expiry time.
+         * (subscriptions.get)
+         *
+         * @param string $packageName The package name of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $subscriptionId The purchased subscription ID (for example,
+         * 'monthly001').
+         * @param string $token The token provided to the user's device when the
+         * subscription was purchased.
+         * @param array $optParams Optional parameters.
+         * @return SubscriptionPurchase
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $subscriptionId, $token, $optParams = [])
+        {
+        }
+        /**
+         * Deprecated: Use orders.refund instead. Refunds a user's subscription
+         * purchase, but the subscription remains valid until its expiration time and it
+         * will continue to recur. (subscriptions.refund)
+         *
+         * @param string $packageName The package name of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $subscriptionId "The purchased subscription ID (for example,
+         * 'monthly001').
+         * @param string $token The token provided to the user's device when the
+         * subscription was purchased.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function refund($packageName, $subscriptionId, $token, $optParams = [])
+        {
+        }
+        /**
+         * Deprecated: Use purchases.subscriptionsv2.revoke instead. Refunds and
+         * immediately revokes a user's subscription purchase. Access to the
+         * subscription will be terminated immediately and it will stop recurring.
+         * (subscriptions.revoke)
+         *
+         * @param string $packageName The package name of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $subscriptionId The purchased subscription ID (for example,
+         * 'monthly001').
+         * @param string $token The token provided to the user's device when the
+         * subscription was purchased.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function revoke($packageName, $subscriptionId, $token, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Cancels a user's subscription purchase. The subscription remains valid until
-     * its expiration time. Newer version is available at
-     * purchases.subscriptionsv2.cancel for better client library support.
-     * (subscriptions.cancel)
-     *
-     * @param string $packageName The package name of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $subscriptionId Note: Since May 21, 2025, subscription_id is
-     * not required, and not recommended for subscription with add-ons. The
-     * purchased subscription ID (for example, 'monthly001').
-     * @param string $token The token provided to the user's device when the
-     * subscription was purchased.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\PurchasesSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function cancel($packageName, $subscriptionId, $token, $optParams = [])
-    {
-    }
-    /**
-     * Defers a user's subscription purchase until a specified future expiration
-     * time. (subscriptions.defer)
-     *
-     * @param string $packageName The package name of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $subscriptionId The purchased subscription ID (for example,
-     * 'monthly001').
-     * @param string $token The token provided to the user's device when the
-     * subscription was purchased.
-     * @param SubscriptionPurchasesDeferRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SubscriptionPurchasesDeferResponse
-     * @throws \Google\Service\Exception
-     */
-    public function defer($packageName, $subscriptionId, $token, SubscriptionPurchasesDeferRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deprecated: Use purchases.subscriptionsv2.get instead. Checks whether a
-     * user's subscription purchase is valid and returns its expiry time.
-     * (subscriptions.get)
-     *
-     * @param string $packageName The package name of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $subscriptionId The purchased subscription ID (for example,
-     * 'monthly001').
-     * @param string $token The token provided to the user's device when the
-     * subscription was purchased.
-     * @param array $optParams Optional parameters.
-     * @return SubscriptionPurchase
-     * @throws \Google\Service\Exception
-     */
-    public function get($packageName, $subscriptionId, $token, $optParams = [])
-    {
-    }
-    /**
-     * Deprecated: Use orders.refund instead. Refunds a user's subscription
-     * purchase, but the subscription remains valid until its expiration time and it
-     * will continue to recur. (subscriptions.refund)
-     *
-     * @param string $packageName The package name of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $subscriptionId "The purchased subscription ID (for example,
-     * 'monthly001').
-     * @param string $token The token provided to the user's device when the
-     * subscription was purchased.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function refund($packageName, $subscriptionId, $token, $optParams = [])
-    {
-    }
-    /**
-     * Deprecated: Use purchases.subscriptionsv2.revoke instead. Refunds and
-     * immediately revokes a user's subscription purchase. Access to the
-     * subscription will be terminated immediately and it will stop recurring.
-     * (subscriptions.revoke)
-     *
-     * @param string $packageName The package name of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $subscriptionId The purchased subscription ID (for example,
-     * 'monthly001').
-     * @param string $token The token provided to the user's device when the
-     * subscription was purchased.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function revoke($packageName, $subscriptionId, $token, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_PurchasesSubscriptions extends \Google\Service\AndroidPublisher\Resource\PurchasesSubscriptions
     {
     }
 }

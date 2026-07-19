@@ -21,267 +21,276 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Client extends \Google\Collection
-{
-    protected $collection_key = 'parameter';
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The Client ID uniquely identifies the GTM client.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * The fingerprint of the GTM Client as computed at storage time. This value
-     * is recomputed whenever the client is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Client display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User notes on how to apply this tag in the container.
-     *
-     * @var string
-     */
-    public $notes;
-    protected $parameterType = Parameter::class;
-    protected $parameterDataType = 'array';
-    /**
-     * Parent folder id.
-     *
-     * @var string
-     */
-    public $parentFolderId;
-    /**
-     * GTM client's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Priority determines relative firing order.
-     *
-     * @var int
-     */
-    public $priority;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * Client type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * GTM Workspace ID.
-     *
-     * @var string
-     */
-    public $workspaceId;
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Client extends \Google\Collection
     {
+        protected $collection_key = 'parameter';
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The Client ID uniquely identifies the GTM client.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * The fingerprint of the GTM Client as computed at storage time. This value
+         * is recomputed whenever the client is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Client display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User notes on how to apply this tag in the container.
+         *
+         * @var string
+         */
+        public $notes;
+        protected $parameterType = Parameter::class;
+        protected $parameterDataType = 'array';
+        /**
+         * Parent folder id.
+         *
+         * @var string
+         */
+        public $parentFolderId;
+        /**
+         * GTM client's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Priority determines relative firing order.
+         *
+         * @var int
+         */
+        public $priority;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * Client type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * GTM Workspace ID.
+         *
+         * @var string
+         */
+        public $workspaceId;
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The Client ID uniquely identifies the GTM client.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * The fingerprint of the GTM Client as computed at storage time. This value
+         * is recomputed whenever the client is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Client display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User notes on how to apply this tag in the container.
+         *
+         * @param string $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * The client's parameters.
+         *
+         * @param Parameter[] $parameter
+         */
+        public function setParameter($parameter)
+        {
+        }
+        /**
+         * @return Parameter[]
+         */
+        public function getParameter()
+        {
+        }
+        /**
+         * Parent folder id.
+         *
+         * @param string $parentFolderId
+         */
+        public function setParentFolderId($parentFolderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentFolderId()
+        {
+        }
+        /**
+         * GTM client's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Priority determines relative firing order.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * Client type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * GTM Workspace ID.
+         *
+         * @param string $workspaceId
+         */
+        public function setWorkspaceId($workspaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Client registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The Client ID uniquely identifies the GTM client.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * The fingerprint of the GTM Client as computed at storage time. This value
-     * is recomputed whenever the client is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Client display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User notes on how to apply this tag in the container.
-     *
-     * @param string $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * The client's parameters.
-     *
-     * @param Parameter[] $parameter
-     */
-    public function setParameter($parameter)
-    {
-    }
-    /**
-     * @return Parameter[]
-     */
-    public function getParameter()
-    {
-    }
-    /**
-     * Parent folder id.
-     *
-     * @param string $parentFolderId
-     */
-    public function setParentFolderId($parentFolderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentFolderId()
-    {
-    }
-    /**
-     * GTM client's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Priority determines relative firing order.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * Client type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * GTM Workspace ID.
-     *
-     * @param string $workspaceId
-     */
-    public function setWorkspaceId($workspaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspaceId()
+    class Google_Service_TagManager_Client extends \Google\Service\TagManager\Client
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PricingSchedulePricingPeriod extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Comments for this pricing period.
-     *
-     * @var string
-     */
-    public $pricingComment;
-    /**
-     * Rate or cost of this pricing period in nanos (i.e., multiplied by
-     * 1000000000). Acceptable values are 0 to 1000000000000000000, inclusive.
-     *
-     * @var string
-     */
-    public $rateOrCostNanos;
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Units of this pricing period. Acceptable values are 0 to 10000000000,
-     * inclusive.
-     *
-     * @var string
-     */
-    public $units;
-    /**
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
+namespace Google\Service\Dfareporting {
+    class PricingSchedulePricingPeriod extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Comments for this pricing period.
+         *
+         * @var string
+         */
+        public $pricingComment;
+        /**
+         * Rate or cost of this pricing period in nanos (i.e., multiplied by
+         * 1000000000). Acceptable values are 0 to 1000000000000000000, inclusive.
+         *
+         * @var string
+         */
+        public $rateOrCostNanos;
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Units of this pricing period. Acceptable values are 0 to 10000000000,
+         * inclusive.
+         *
+         * @var string
+         */
+        public $units;
+        /**
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Comments for this pricing period.
+         *
+         * @param string $pricingComment
+         */
+        public function setPricingComment($pricingComment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPricingComment()
+        {
+        }
+        /**
+         * Rate or cost of this pricing period in nanos (i.e., multiplied by
+         * 1000000000). Acceptable values are 0 to 1000000000000000000, inclusive.
+         *
+         * @param string $rateOrCostNanos
+         */
+        public function setRateOrCostNanos($rateOrCostNanos)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRateOrCostNanos()
+        {
+        }
+        /**
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Units of this pricing period. Acceptable values are 0 to 10000000000,
+         * inclusive.
+         *
+         * @param string $units
+         */
+        public function setUnits($units)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PricingSchedulePricingPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Comments for this pricing period.
-     *
-     * @param string $pricingComment
-     */
-    public function setPricingComment($pricingComment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPricingComment()
-    {
-    }
-    /**
-     * Rate or cost of this pricing period in nanos (i.e., multiplied by
-     * 1000000000). Acceptable values are 0 to 1000000000000000000, inclusive.
-     *
-     * @param string $rateOrCostNanos
-     */
-    public function setRateOrCostNanos($rateOrCostNanos)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRateOrCostNanos()
-    {
-    }
-    /**
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Units of this pricing period. Acceptable values are 0 to 10000000000,
-     * inclusive.
-     *
-     * @param string $units
-     */
-    public function setUnits($units)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnits()
+    class Google_Service_Dfareporting_PricingSchedulePricingPeriod extends \Google\Service\Dfareporting\PricingSchedulePricingPeriod
     {
     }
 }

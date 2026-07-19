@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PerformanceSample extends \Google\Model
-{
-    protected $cpuType = CpuUsageSample::class;
-    protected $cpuDataType = '';
-    protected $diskType = DiskUsageSample::class;
-    protected $diskDataType = '';
-    protected $memoryType = MemoryUsageSample::class;
-    protected $memoryDataType = '';
-    protected $networkType = NetworkUsageSample::class;
-    protected $networkDataType = '';
-    /**
-     * Time the sample was collected. If omitted, the frame report time will be
-     * used.
-     *
-     * @var string
-     */
-    public $sampleTime;
-    /**
-     * CPU usage sample.
-     *
-     * @param CpuUsageSample $cpu
-     */
-    public function setCpu(CpuUsageSample $cpu)
+namespace Google\Service\MigrationCenterAPI {
+    class PerformanceSample extends \Google\Model
     {
+        protected $cpuType = CpuUsageSample::class;
+        protected $cpuDataType = '';
+        protected $diskType = DiskUsageSample::class;
+        protected $diskDataType = '';
+        protected $memoryType = MemoryUsageSample::class;
+        protected $memoryDataType = '';
+        protected $networkType = NetworkUsageSample::class;
+        protected $networkDataType = '';
+        /**
+         * Time the sample was collected. If omitted, the frame report time will be
+         * used.
+         *
+         * @var string
+         */
+        public $sampleTime;
+        /**
+         * CPU usage sample.
+         *
+         * @param CpuUsageSample $cpu
+         */
+        public function setCpu(CpuUsageSample $cpu)
+        {
+        }
+        /**
+         * @return CpuUsageSample
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Disk usage sample.
+         *
+         * @param DiskUsageSample $disk
+         */
+        public function setDisk(DiskUsageSample $disk)
+        {
+        }
+        /**
+         * @return DiskUsageSample
+         */
+        public function getDisk()
+        {
+        }
+        /**
+         * Memory usage sample.
+         *
+         * @param MemoryUsageSample $memory
+         */
+        public function setMemory(MemoryUsageSample $memory)
+        {
+        }
+        /**
+         * @return MemoryUsageSample
+         */
+        public function getMemory()
+        {
+        }
+        /**
+         * Network usage sample.
+         *
+         * @param NetworkUsageSample $network
+         */
+        public function setNetwork(NetworkUsageSample $network)
+        {
+        }
+        /**
+         * @return NetworkUsageSample
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Time the sample was collected. If omitted, the frame report time will be
+         * used.
+         *
+         * @param string $sampleTime
+         */
+        public function setSampleTime($sampleTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CpuUsageSample
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PerformanceSample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpu()
-    {
-    }
-    /**
-     * Disk usage sample.
-     *
-     * @param DiskUsageSample $disk
-     */
-    public function setDisk(DiskUsageSample $disk)
-    {
-    }
-    /**
-     * @return DiskUsageSample
-     */
-    public function getDisk()
-    {
-    }
-    /**
-     * Memory usage sample.
-     *
-     * @param MemoryUsageSample $memory
-     */
-    public function setMemory(MemoryUsageSample $memory)
-    {
-    }
-    /**
-     * @return MemoryUsageSample
-     */
-    public function getMemory()
-    {
-    }
-    /**
-     * Network usage sample.
-     *
-     * @param NetworkUsageSample $network
-     */
-    public function setNetwork(NetworkUsageSample $network)
-    {
-    }
-    /**
-     * @return NetworkUsageSample
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Time the sample was collected. If omitted, the frame report time will be
-     * used.
-     *
-     * @param string $sampleTime
-     */
-    public function setSampleTime($sampleTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleTime()
+    class Google_Service_MigrationCenterAPI_PerformanceSample extends \Google\Service\MigrationCenterAPI\PerformanceSample
     {
     }
 }

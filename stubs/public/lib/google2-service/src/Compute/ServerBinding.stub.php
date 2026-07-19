@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ServerBinding extends \Google\Model
-{
-    /**
-     * Node may associate with any physical server over its lifetime.
-     */
-    public const TYPE_RESTART_NODE_ON_ANY_SERVER = 'RESTART_NODE_ON_ANY_SERVER';
-    /**
-     * Node may associate with minimal physical servers over its lifetime.
-     */
-    public const TYPE_RESTART_NODE_ON_MINIMAL_SERVERS = 'RESTART_NODE_ON_MINIMAL_SERVERS';
-    public const TYPE_SERVER_BINDING_TYPE_UNSPECIFIED = 'SERVER_BINDING_TYPE_UNSPECIFIED';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\Compute {
+    class ServerBinding extends \Google\Model
     {
+        /**
+         * Node may associate with any physical server over its lifetime.
+         */
+        public const TYPE_RESTART_NODE_ON_ANY_SERVER = 'RESTART_NODE_ON_ANY_SERVER';
+        /**
+         * Node may associate with minimal physical servers over its lifetime.
+         */
+        public const TYPE_RESTART_NODE_ON_MINIMAL_SERVERS = 'RESTART_NODE_ON_MINIMAL_SERVERS';
+        public const TYPE_SERVER_BINDING_TYPE_UNSPECIFIED = 'SERVER_BINDING_TYPE_UNSPECIFIED';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\Compute\ServerBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Compute_ServerBinding extends \Google\Service\Compute\ServerBinding
     {
     }
 }

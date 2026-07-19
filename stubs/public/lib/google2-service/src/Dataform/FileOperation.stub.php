@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class FileOperation extends \Google\Model
-{
-    protected $deleteFileType = DeleteFile::class;
-    protected $deleteFileDataType = '';
-    protected $writeFileType = WriteFile::class;
-    protected $writeFileDataType = '';
-    /**
-     * Represents the delete operation.
-     *
-     * @param DeleteFile $deleteFile
-     */
-    public function setDeleteFile(DeleteFile $deleteFile)
+namespace Google\Service\Dataform {
+    class FileOperation extends \Google\Model
     {
+        protected $deleteFileType = DeleteFile::class;
+        protected $deleteFileDataType = '';
+        protected $writeFileType = WriteFile::class;
+        protected $writeFileDataType = '';
+        /**
+         * Represents the delete operation.
+         *
+         * @param DeleteFile $deleteFile
+         */
+        public function setDeleteFile(DeleteFile $deleteFile)
+        {
+        }
+        /**
+         * @return DeleteFile
+         */
+        public function getDeleteFile()
+        {
+        }
+        /**
+         * Represents the write operation.
+         *
+         * @param WriteFile $writeFile
+         */
+        public function setWriteFile(WriteFile $writeFile)
+        {
+        }
+        /**
+         * @return WriteFile
+         */
+        public function getWriteFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeleteFile
+     * Runtime class alias of \Google\Service\Dataform\FileOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteFile()
-    {
-    }
-    /**
-     * Represents the write operation.
-     *
-     * @param WriteFile $writeFile
-     */
-    public function setWriteFile(WriteFile $writeFile)
-    {
-    }
-    /**
-     * @return WriteFile
-     */
-    public function getWriteFile()
+    class Google_Service_Dataform_FileOperation extends \Google\Service\Dataform\FileOperation
     {
     }
 }

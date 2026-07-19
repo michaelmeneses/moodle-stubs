@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StageSummary extends \Google\Collection
-{
-    /**
-     * The component state is unknown or unspecified.
-     */
-    public const STATE_EXECUTION_STATE_UNKNOWN = 'EXECUTION_STATE_UNKNOWN';
-    /**
-     * The component is not yet running.
-     */
-    public const STATE_EXECUTION_STATE_NOT_STARTED = 'EXECUTION_STATE_NOT_STARTED';
-    /**
-     * The component is currently running.
-     */
-    public const STATE_EXECUTION_STATE_RUNNING = 'EXECUTION_STATE_RUNNING';
-    /**
-     * The component succeeded.
-     */
-    public const STATE_EXECUTION_STATE_SUCCEEDED = 'EXECUTION_STATE_SUCCEEDED';
-    /**
-     * The component failed.
-     */
-    public const STATE_EXECUTION_STATE_FAILED = 'EXECUTION_STATE_FAILED';
-    /**
-     * Execution of the component was cancelled.
-     */
-    public const STATE_EXECUTION_STATE_CANCELLED = 'EXECUTION_STATE_CANCELLED';
-    protected $collection_key = 'metrics';
-    /**
-     * End time of this stage. If the work item is completed, this is the actual
-     * end time of the stage. Otherwise, it is the predicted end time.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $metricsType = MetricUpdate::class;
-    protected $metricsDataType = 'array';
-    protected $progressType = ProgressTimeseries::class;
-    protected $progressDataType = '';
-    /**
-     * ID of this stage
-     *
-     * @var string
-     */
-    public $stageId;
-    /**
-     * Start time of this stage.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * State of this stage.
-     *
-     * @var string
-     */
-    public $state;
-    protected $stragglerSummaryType = StragglerSummary::class;
-    protected $stragglerSummaryDataType = '';
-    /**
-     * End time of this stage. If the work item is completed, this is the actual
-     * end time of the stage. Otherwise, it is the predicted end time.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Dataflow {
+    class StageSummary extends \Google\Collection
     {
+        /**
+         * The component state is unknown or unspecified.
+         */
+        public const STATE_EXECUTION_STATE_UNKNOWN = 'EXECUTION_STATE_UNKNOWN';
+        /**
+         * The component is not yet running.
+         */
+        public const STATE_EXECUTION_STATE_NOT_STARTED = 'EXECUTION_STATE_NOT_STARTED';
+        /**
+         * The component is currently running.
+         */
+        public const STATE_EXECUTION_STATE_RUNNING = 'EXECUTION_STATE_RUNNING';
+        /**
+         * The component succeeded.
+         */
+        public const STATE_EXECUTION_STATE_SUCCEEDED = 'EXECUTION_STATE_SUCCEEDED';
+        /**
+         * The component failed.
+         */
+        public const STATE_EXECUTION_STATE_FAILED = 'EXECUTION_STATE_FAILED';
+        /**
+         * Execution of the component was cancelled.
+         */
+        public const STATE_EXECUTION_STATE_CANCELLED = 'EXECUTION_STATE_CANCELLED';
+        protected $collection_key = 'metrics';
+        /**
+         * End time of this stage. If the work item is completed, this is the actual
+         * end time of the stage. Otherwise, it is the predicted end time.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $metricsType = MetricUpdate::class;
+        protected $metricsDataType = 'array';
+        protected $progressType = ProgressTimeseries::class;
+        protected $progressDataType = '';
+        /**
+         * ID of this stage
+         *
+         * @var string
+         */
+        public $stageId;
+        /**
+         * Start time of this stage.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * State of this stage.
+         *
+         * @var string
+         */
+        public $state;
+        protected $stragglerSummaryType = StragglerSummary::class;
+        protected $stragglerSummaryDataType = '';
+        /**
+         * End time of this stage. If the work item is completed, this is the actual
+         * end time of the stage. Otherwise, it is the predicted end time.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Metrics for this stage.
+         *
+         * @param MetricUpdate[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return MetricUpdate[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Progress for this stage. Only applicable to Batch jobs.
+         *
+         * @param ProgressTimeseries $progress
+         */
+        public function setProgress(ProgressTimeseries $progress)
+        {
+        }
+        /**
+         * @return ProgressTimeseries
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * ID of this stage
+         *
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
+        /**
+         * Start time of this stage.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * State of this stage.
+         *
+         * Accepted values: EXECUTION_STATE_UNKNOWN, EXECUTION_STATE_NOT_STARTED,
+         * EXECUTION_STATE_RUNNING, EXECUTION_STATE_SUCCEEDED, EXECUTION_STATE_FAILED,
+         * EXECUTION_STATE_CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Straggler summary for this stage.
+         *
+         * @param StragglerSummary $stragglerSummary
+         */
+        public function setStragglerSummary(StragglerSummary $stragglerSummary)
+        {
+        }
+        /**
+         * @return StragglerSummary
+         */
+        public function getStragglerSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StageSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Metrics for this stage.
-     *
-     * @param MetricUpdate[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return MetricUpdate[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Progress for this stage. Only applicable to Batch jobs.
-     *
-     * @param ProgressTimeseries $progress
-     */
-    public function setProgress(ProgressTimeseries $progress)
-    {
-    }
-    /**
-     * @return ProgressTimeseries
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * ID of this stage
-     *
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
-    {
-    }
-    /**
-     * Start time of this stage.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * State of this stage.
-     *
-     * Accepted values: EXECUTION_STATE_UNKNOWN, EXECUTION_STATE_NOT_STARTED,
-     * EXECUTION_STATE_RUNNING, EXECUTION_STATE_SUCCEEDED, EXECUTION_STATE_FAILED,
-     * EXECUTION_STATE_CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Straggler summary for this stage.
-     *
-     * @param StragglerSummary $stragglerSummary
-     */
-    public function setStragglerSummary(StragglerSummary $stragglerSummary)
-    {
-    }
-    /**
-     * @return StragglerSummary
-     */
-    public function getStragglerSummary()
+    class Google_Service_Dataflow_StageSummary extends \Google\Service\Dataflow\StageSummary
     {
     }
 }

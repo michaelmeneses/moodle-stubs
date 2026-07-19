@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class MerchantReview extends \Google\Collection
-{
-    protected $collection_key = 'customAttributes';
-    protected $customAttributesType = CustomAttribute::class;
-    protected $customAttributesDataType = 'array';
-    /**
-     * Output only. The primary data source of the merchant review.
-     *
-     * @var string
-     */
-    public $dataSource;
-    protected $merchantReviewAttributesType = MerchantReviewAttributes::class;
-    protected $merchantReviewAttributesDataType = '';
-    /**
-     * Required. The user provided merchant review ID to uniquely identify the
-     * merchant review.
-     *
-     * @var string
-     */
-    public $merchantReviewId;
-    protected $merchantReviewStatusType = MerchantReviewStatus::class;
-    protected $merchantReviewStatusDataType = '';
-    /**
-     * Identifier. The name of the merchant review. Format: `"{merchantreview.name
-     * =accounts/{account}/merchantReviews/{merchantReview}}"`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. A list of custom (merchant-provided) attributes. It can also be
-     * used for submitting any attribute of the data specification in its generic
-     * form (for example, `{ "name": "size type", "value": "regular" }`). This is
-     * useful for submitting attributes not explicitly exposed by the API, such as
-     * experimental attributes. Maximum allowed number of characters for each
-     * custom attribute is 10240 (represents sum of characters for name and
-     * value). Maximum 2500 custom attributes can be set per product, with total
-     * size of 102.4kB. Underscores in custom attribute names are replaced by
-     * spaces upon insertion.
-     *
-     * @param CustomAttribute[] $customAttributes
-     */
-    public function setCustomAttributes($customAttributes)
+namespace Google\Service\Merchant {
+    class MerchantReview extends \Google\Collection
     {
+        protected $collection_key = 'customAttributes';
+        protected $customAttributesType = CustomAttribute::class;
+        protected $customAttributesDataType = 'array';
+        /**
+         * Output only. The primary data source of the merchant review.
+         *
+         * @var string
+         */
+        public $dataSource;
+        protected $merchantReviewAttributesType = MerchantReviewAttributes::class;
+        protected $merchantReviewAttributesDataType = '';
+        /**
+         * Required. The user provided merchant review ID to uniquely identify the
+         * merchant review.
+         *
+         * @var string
+         */
+        public $merchantReviewId;
+        protected $merchantReviewStatusType = MerchantReviewStatus::class;
+        protected $merchantReviewStatusDataType = '';
+        /**
+         * Identifier. The name of the merchant review. Format: `"{merchantreview.name
+         * =accounts/{account}/merchantReviews/{merchantReview}}"`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. A list of custom (merchant-provided) attributes. It can also be
+         * used for submitting any attribute of the data specification in its generic
+         * form (for example, `{ "name": "size type", "value": "regular" }`). This is
+         * useful for submitting attributes not explicitly exposed by the API, such as
+         * experimental attributes. Maximum allowed number of characters for each
+         * custom attribute is 10240 (represents sum of characters for name and
+         * value). Maximum 2500 custom attributes can be set per product, with total
+         * size of 102.4kB. Underscores in custom attribute names are replaced by
+         * spaces upon insertion.
+         *
+         * @param CustomAttribute[] $customAttributes
+         */
+        public function setCustomAttributes($customAttributes)
+        {
+        }
+        /**
+         * @return CustomAttribute[]
+         */
+        public function getCustomAttributes()
+        {
+        }
+        /**
+         * Output only. The primary data source of the merchant review.
+         *
+         * @param string $dataSource
+         */
+        public function setDataSource($dataSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSource()
+        {
+        }
+        /**
+         * Optional. A list of merchant review attributes.
+         *
+         * @param MerchantReviewAttributes $merchantReviewAttributes
+         */
+        public function setMerchantReviewAttributes(MerchantReviewAttributes $merchantReviewAttributes)
+        {
+        }
+        /**
+         * @return MerchantReviewAttributes
+         */
+        public function getMerchantReviewAttributes()
+        {
+        }
+        /**
+         * Required. The user provided merchant review ID to uniquely identify the
+         * merchant review.
+         *
+         * @param string $merchantReviewId
+         */
+        public function setMerchantReviewId($merchantReviewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantReviewId()
+        {
+        }
+        /**
+         * Output only. The status of a merchant review, data validation issues, that
+         * is, information about a merchant review computed asynchronously.
+         *
+         * @param MerchantReviewStatus $merchantReviewStatus
+         */
+        public function setMerchantReviewStatus(MerchantReviewStatus $merchantReviewStatus)
+        {
+        }
+        /**
+         * @return MerchantReviewStatus
+         */
+        public function getMerchantReviewStatus()
+        {
+        }
+        /**
+         * Identifier. The name of the merchant review. Format: `"{merchantreview.name
+         * =accounts/{account}/merchantReviews/{merchantReview}}"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomAttribute[]
+     * Runtime class alias of \Google\Service\Merchant\MerchantReview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomAttributes()
-    {
-    }
-    /**
-     * Output only. The primary data source of the merchant review.
-     *
-     * @param string $dataSource
-     */
-    public function setDataSource($dataSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataSource()
-    {
-    }
-    /**
-     * Optional. A list of merchant review attributes.
-     *
-     * @param MerchantReviewAttributes $merchantReviewAttributes
-     */
-    public function setMerchantReviewAttributes(MerchantReviewAttributes $merchantReviewAttributes)
-    {
-    }
-    /**
-     * @return MerchantReviewAttributes
-     */
-    public function getMerchantReviewAttributes()
-    {
-    }
-    /**
-     * Required. The user provided merchant review ID to uniquely identify the
-     * merchant review.
-     *
-     * @param string $merchantReviewId
-     */
-    public function setMerchantReviewId($merchantReviewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantReviewId()
-    {
-    }
-    /**
-     * Output only. The status of a merchant review, data validation issues, that
-     * is, information about a merchant review computed asynchronously.
-     *
-     * @param MerchantReviewStatus $merchantReviewStatus
-     */
-    public function setMerchantReviewStatus(MerchantReviewStatus $merchantReviewStatus)
-    {
-    }
-    /**
-     * @return MerchantReviewStatus
-     */
-    public function getMerchantReviewStatus()
-    {
-    }
-    /**
-     * Identifier. The name of the merchant review. Format: `"{merchantreview.name
-     * =accounts/{account}/merchantReviews/{merchantReview}}"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Merchant_MerchantReview extends \Google\Service\Merchant\MerchantReview
     {
     }
 }

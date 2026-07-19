@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RuleSet extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * Short description of the rule-set.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The resource name of the rule set. Managed internally. Format:
-     * projects/{project_number}/locations/{location}/ruleSet/{rule_set_id}. The
-     * name is ignored when creating a rule set.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rulesType = GoogleCloudContentwarehouseV1Rule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Source of the rules i.e., customer name.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Short description of the rule-set.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RuleSet extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * Short description of the rule-set.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The resource name of the rule set. Managed internally. Format:
+         * projects/{project_number}/locations/{location}/ruleSet/{rule_set_id}. The
+         * name is ignored when creating a rule set.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rulesType = GoogleCloudContentwarehouseV1Rule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Source of the rules i.e., customer name.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Short description of the rule-set.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The resource name of the rule set. Managed internally. Format:
+         * projects/{project_number}/locations/{location}/ruleSet/{rule_set_id}. The
+         * name is ignored when creating a rule set.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * List of rules given by the customer.
+         *
+         * @param GoogleCloudContentwarehouseV1Rule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Rule[]
+         */
+        public function getRules()
+        {
+        }
+        /**
+         * Source of the rules i.e., customer name.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The resource name of the rule set. Managed internally. Format:
-     * projects/{project_number}/locations/{location}/ruleSet/{rule_set_id}. The
-     * name is ignored when creating a rule set.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * List of rules given by the customer.
-     *
-     * @param GoogleCloudContentwarehouseV1Rule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1Rule[]
-     */
-    public function getRules()
-    {
-    }
-    /**
-     * Source of the rules i.e., customer name.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RuleSet extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleSet
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UvarFilter extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var bool
-     */
-    public $complement;
-    /**
-     * @var string
-     */
-    public $index;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $match;
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param bool
-     */
-    public function setComplement($complement)
+namespace Google\Service\Dfareporting {
+    class UvarFilter extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var bool
+         */
+        public $complement;
+        /**
+         * @var string
+         */
+        public $index;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $match;
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param bool
+         */
+        public function setComplement($complement)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getComplement()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMatch($match)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatch()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\UvarFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplement()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMatch($match)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatch()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Dfareporting_UvarFilter extends \Google\Service\Dfareporting\UvarFilter
     {
     }
 }

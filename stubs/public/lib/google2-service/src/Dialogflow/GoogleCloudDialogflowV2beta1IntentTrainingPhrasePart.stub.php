@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart extends \Google\Model
-{
-    /**
-     * Optional. The parameter name for the value extracted from the annotated
-     * part of the example. This field is required for annotated parts of the
-     * training phrase.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Optional. The entity type name prefixed with `@`. This field is required
-     * for annotated parts of the training phrase.
-     *
-     * @var string
-     */
-    public $entityType;
-    /**
-     * Required. The text for this part.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Optional. Indicates whether the text was manually annotated. This field is
-     * set to true when the Dialogflow Console is used to manually annotate the
-     * part. When creating an annotated part with the API, you must set this to
-     * true.
-     *
-     * @var bool
-     */
-    public $userDefined;
-    /**
-     * Optional. The parameter name for the value extracted from the annotated
-     * part of the example. This field is required for annotated parts of the
-     * training phrase.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart extends \Google\Model
     {
+        /**
+         * Optional. The parameter name for the value extracted from the annotated
+         * part of the example. This field is required for annotated parts of the
+         * training phrase.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Optional. The entity type name prefixed with `@`. This field is required
+         * for annotated parts of the training phrase.
+         *
+         * @var string
+         */
+        public $entityType;
+        /**
+         * Required. The text for this part.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Optional. Indicates whether the text was manually annotated. This field is
+         * set to true when the Dialogflow Console is used to manually annotate the
+         * part. When creating an annotated part with the API, you must set this to
+         * true.
+         *
+         * @var bool
+         */
+        public $userDefined;
+        /**
+         * Optional. The parameter name for the value extracted from the annotated
+         * part of the example. This field is required for annotated parts of the
+         * training phrase.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Optional. The entity type name prefixed with `@`. This field is required
+         * for annotated parts of the training phrase.
+         *
+         * @param string $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityType()
+        {
+        }
+        /**
+         * Required. The text for this part.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Optional. Indicates whether the text was manually annotated. This field is
+         * set to true when the Dialogflow Console is used to manually annotate the
+         * part. When creating an annotated part with the API, you must set this to
+         * true.
+         *
+         * @param bool $userDefined
+         */
+        public function setUserDefined($userDefined)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUserDefined()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * Optional. The entity type name prefixed with `@`. This field is required
-     * for annotated parts of the training phrase.
-     *
-     * @param string $entityType
-     */
-    public function setEntityType($entityType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityType()
-    {
-    }
-    /**
-     * Required. The text for this part.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Optional. Indicates whether the text was manually annotated. This field is
-     * set to true when the Dialogflow Console is used to manually annotate the
-     * part. When creating an annotated part with the API, you must set this to
-     * true.
-     *
-     * @param bool $userDefined
-     */
-    public function setUserDefined($userDefined)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUserDefined()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart
     {
     }
 }

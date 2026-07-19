@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradepenalty_duedate\output;
 
+use core_grades\output\action_bar;
+use core\output\notification;
+use core\output\single_button;
+use core\url;
+use gradepenalty_duedate\penalty_rule;
 /**
  * Renderable class for the action bar elements in the penalty rule page.
  *

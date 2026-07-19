@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class ExplainOptions extends \Google\Model
-{
-    /**
-     * Optional. Whether to execute this query. When false (the default), the
-     * query will be planned, returning only metrics from the planning stages.
-     * When true, the query will be planned and executed, returning the full query
-     * results along with both planning and execution stage metrics.
-     *
-     * @var bool
-     */
-    public $analyze;
-    /**
-     * Optional. Whether to execute this query. When false (the default), the
-     * query will be planned, returning only metrics from the planning stages.
-     * When true, the query will be planned and executed, returning the full query
-     * results along with both planning and execution stage metrics.
-     *
-     * @param bool $analyze
-     */
-    public function setAnalyze($analyze)
+namespace Google\Service\Datastore {
+    class ExplainOptions extends \Google\Model
     {
+        /**
+         * Optional. Whether to execute this query. When false (the default), the
+         * query will be planned, returning only metrics from the planning stages.
+         * When true, the query will be planned and executed, returning the full query
+         * results along with both planning and execution stage metrics.
+         *
+         * @var bool
+         */
+        public $analyze;
+        /**
+         * Optional. Whether to execute this query. When false (the default), the
+         * query will be planned, returning only metrics from the planning stages.
+         * When true, the query will be planned and executed, returning the full query
+         * results along with both planning and execution stage metrics.
+         *
+         * @param bool $analyze
+         */
+        public function setAnalyze($analyze)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAnalyze()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Datastore\ExplainOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyze()
+    class Google_Service_Datastore_ExplainOptions extends \Google\Service\Datastore\ExplainOptions
     {
     }
 }

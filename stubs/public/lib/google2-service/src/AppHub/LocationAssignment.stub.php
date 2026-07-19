@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class LocationAssignment extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $locationType;
-    /**
-     * @param string
-     */
-    public function setLocation($location)
+namespace Google\Service\AppHub {
+    class LocationAssignment extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $location;
+        /**
+         * @var string
+         */
+        public $locationType;
+        /**
+         * @param string
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocationType($locationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\LocationAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocationType($locationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationType()
+    class Google_Service_AppHub_LocationAssignment extends \Google\Service\AppHub\LocationAssignment
     {
     }
 }

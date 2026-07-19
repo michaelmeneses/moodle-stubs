@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1AdditionalTargetKeyName extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var string
-     */
-    public $keyDescription;
-    /**
-     * @param string
-     */
-    public function setKey($key)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1AdditionalTargetKeyName extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var string
+         */
+        public $keyDescription;
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyDescription($keyDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1AdditionalTargetKeyName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyDescription($keyDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyDescription()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1AdditionalTargetKeyName extends \Google\Service\ChromePolicy\GoogleChromePolicyV1AdditionalTargetKeyName
     {
     }
 }

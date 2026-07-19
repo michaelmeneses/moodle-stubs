@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class TypedValue extends \Google\Model
-{
-    /**
-     * A Boolean value: true or false.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    protected $distributionValueType = Distribution::class;
-    protected $distributionValueDataType = '';
-    /**
-     * A 64-bit double-precision floating-point number. Its magnitude is
-     * approximately ±10±300 and it has 16 significant digits of precision.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * A 64-bit integer. Its range is approximately ±9.2x1018.
-     *
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * A variable-length string value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * A Boolean value: true or false.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Monitoring {
+    class TypedValue extends \Google\Model
     {
+        /**
+         * A Boolean value: true or false.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        protected $distributionValueType = Distribution::class;
+        protected $distributionValueDataType = '';
+        /**
+         * A 64-bit double-precision floating-point number. Its magnitude is
+         * approximately ±10±300 and it has 16 significant digits of precision.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * A 64-bit integer. Its range is approximately ±9.2x1018.
+         *
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * A variable-length string value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * A Boolean value: true or false.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * A distribution value.
+         *
+         * @param Distribution $distributionValue
+         */
+        public function setDistributionValue(Distribution $distributionValue)
+        {
+        }
+        /**
+         * @return Distribution
+         */
+        public function getDistributionValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * A 64-bit integer. Its range is approximately ±9.2x1018.
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * A variable-length string value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Monitoring\TypedValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * A distribution value.
-     *
-     * @param Distribution $distributionValue
-     */
-    public function setDistributionValue(Distribution $distributionValue)
-    {
-    }
-    /**
-     * @return Distribution
-     */
-    public function getDistributionValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * A 64-bit integer. Its range is approximately ±9.2x1018.
-     *
-     * @param string $int64Value
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * A variable-length string value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Monitoring_TypedValue extends \Google\Service\Monitoring\TypedValue
     {
     }
 }

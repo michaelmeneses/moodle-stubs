@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig extends \Google\Model
-{
-    /**
-     * Required. Full resource name of automl Dataset. Format:
-     * `projects/{project}/locations/{location}/datasets/{dataset}`.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Required. Display name of the Dataset in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @var string
-     */
-    public $datasetDisplayName;
-    /**
-     * Required. Full resource name of automl Dataset. Format:
-     * `projects/{project}/locations/{location}/datasets/{dataset}`.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig extends \Google\Model
     {
+        /**
+         * Required. Full resource name of automl Dataset. Format:
+         * `projects/{project}/locations/{location}/datasets/{dataset}`.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Required. Display name of the Dataset in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @var string
+         */
+        public $datasetDisplayName;
+        /**
+         * Required. Full resource name of automl Dataset. Format:
+         * `projects/{project}/locations/{location}/datasets/{dataset}`.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Required. Display name of the Dataset in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @param string $datasetDisplayName
+         */
+        public function setDatasetDisplayName($datasetDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Required. Display name of the Dataset in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @param string $datasetDisplayName
-     */
-    public function setDatasetDisplayName($datasetDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatasetDisplayName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig
     {
     }
 }

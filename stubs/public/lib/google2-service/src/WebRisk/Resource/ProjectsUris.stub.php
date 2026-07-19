@@ -21,37 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk\Resource;
-
-/**
- * The "uris" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webriskService = new Google\Service\WebRisk(...);
- *   $uris = $webriskService->projects_uris;
- *  </code>
- */
-class ProjectsUris extends \Google\Service\Resource
-{
+namespace Google\Service\WebRisk\Resource {
+    use Google\Service\WebRisk\GoogleCloudWebriskV1SubmitUriRequest;
+    use Google\Service\WebRisk\GoogleLongrunningOperation;
     /**
-     * Submits a URI suspected of containing malicious content to be reviewed.
-     * Returns a google.longrunning.Operation which, once the review is complete, is
-     * updated with its result. You can use the [Pub/Sub API]
-     * (https://cloud.google.com/pubsub) to receive notifications for the returned
-     * Operation. If the result verifies the existence of malicious content, the
-     * site will be added to the [Google's Social Engineering lists]
-     * (https://support.google.com/webmasters/answer/6350487/) in order to protect
-     * users that could get exposed to this threat in the future. Only allowlisted
-     * projects can use this method during Early Access. Please reach out to Sales
-     * or your customer engineer to obtain access. (uris.submit)
-     *
-     * @param string $parent Required. The name of the project that is making the
-     * submission. This string is in the format "projects/{project_number}".
-     * @param GoogleCloudWebriskV1SubmitUriRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
+     * The "uris" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webriskService = new Google\Service\WebRisk(...);
+     *   $uris = $webriskService->projects_uris;
+     *  </code>
      */
-    public function submit($parent, GoogleCloudWebriskV1SubmitUriRequest $postBody, $optParams = [])
+    class ProjectsUris extends \Google\Service\Resource
+    {
+        /**
+         * Submits a URI suspected of containing malicious content to be reviewed.
+         * Returns a google.longrunning.Operation which, once the review is complete, is
+         * updated with its result. You can use the [Pub/Sub API]
+         * (https://cloud.google.com/pubsub) to receive notifications for the returned
+         * Operation. If the result verifies the existence of malicious content, the
+         * site will be added to the [Google's Social Engineering lists]
+         * (https://support.google.com/webmasters/answer/6350487/) in order to protect
+         * users that could get exposed to this threat in the future. Only allowlisted
+         * projects can use this method during Early Access. Please reach out to Sales
+         * or your customer engineer to obtain access. (uris.submit)
+         *
+         * @param string $parent Required. The name of the project that is making the
+         * submission. This string is in the format "projects/{project_number}".
+         * @param GoogleCloudWebriskV1SubmitUriRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         */
+        public function submit($parent, GoogleCloudWebriskV1SubmitUriRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WebRisk\Resource\ProjectsUris registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WebRisk_Resource_ProjectsUris extends \Google\Service\WebRisk\Resource\ProjectsUris
     {
     }
 }

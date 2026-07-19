@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class FileUploadQuestion extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    /**
-     * Required. The ID of the Drive folder where uploaded files are stored.
-     *
-     * @var string
-     */
-    public $folderId;
-    /**
-     * Maximum number of bytes allowed for any single file uploaded to this
-     * question.
-     *
-     * @var string
-     */
-    public $maxFileSize;
-    /**
-     * Maximum number of files that can be uploaded for this question in a single
-     * response.
-     *
-     * @var int
-     */
-    public $maxFiles;
-    /**
-     * File types accepted by this question.
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * Required. The ID of the Drive folder where uploaded files are stored.
-     *
-     * @param string $folderId
-     */
-    public function setFolderId($folderId)
+namespace Google\Service\Forms {
+    class FileUploadQuestion extends \Google\Collection
     {
+        protected $collection_key = 'types';
+        /**
+         * Required. The ID of the Drive folder where uploaded files are stored.
+         *
+         * @var string
+         */
+        public $folderId;
+        /**
+         * Maximum number of bytes allowed for any single file uploaded to this
+         * question.
+         *
+         * @var string
+         */
+        public $maxFileSize;
+        /**
+         * Maximum number of files that can be uploaded for this question in a single
+         * response.
+         *
+         * @var int
+         */
+        public $maxFiles;
+        /**
+         * File types accepted by this question.
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * Required. The ID of the Drive folder where uploaded files are stored.
+         *
+         * @param string $folderId
+         */
+        public function setFolderId($folderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolderId()
+        {
+        }
+        /**
+         * Maximum number of bytes allowed for any single file uploaded to this
+         * question.
+         *
+         * @param string $maxFileSize
+         */
+        public function setMaxFileSize($maxFileSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxFileSize()
+        {
+        }
+        /**
+         * Maximum number of files that can be uploaded for this question in a single
+         * response.
+         *
+         * @param int $maxFiles
+         */
+        public function setMaxFiles($maxFiles)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxFiles()
+        {
+        }
+        /**
+         * File types accepted by this question.
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\FileUploadQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolderId()
-    {
-    }
-    /**
-     * Maximum number of bytes allowed for any single file uploaded to this
-     * question.
-     *
-     * @param string $maxFileSize
-     */
-    public function setMaxFileSize($maxFileSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxFileSize()
-    {
-    }
-    /**
-     * Maximum number of files that can be uploaded for this question in a single
-     * response.
-     *
-     * @param int $maxFiles
-     */
-    public function setMaxFiles($maxFiles)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxFiles()
-    {
-    }
-    /**
-     * File types accepted by this question.
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypes()
+    class Google_Service_Forms_FileUploadQuestion extends \Google\Service\Forms\FileUploadQuestion
     {
     }
 }

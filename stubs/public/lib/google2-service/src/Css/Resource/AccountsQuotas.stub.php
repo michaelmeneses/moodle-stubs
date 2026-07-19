@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css\Resource;
-
-/**
- * The "quotas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cssService = new Google\Service\Css(...);
- *   $quotas = $cssService->accounts_quotas;
- *  </code>
- */
-class AccountsQuotas extends \Google\Service\Resource
-{
+namespace Google\Service\Css\Resource {
+    use Google\Service\Css\ListQuotaGroupsResponse;
     /**
-     * Lists the daily call quota and usage per group for your CSS Center account.
-     * (quotas.listAccountsQuotas)
-     *
-     * @param string $parent Required. The CSS account that owns the collection of
-     * method quotas and resources. In most cases, this is the CSS domain. Format:
-     * accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of quotas to return in
-     * the response, used for paging. Defaults to 500; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. Token (if provided) to retrieve the
-     * subsequent page. All other parameters must match the original call that
-     * provided the page token.
-     * @return ListQuotaGroupsResponse
-     * @throws \Google\Service\Exception
+     * The "quotas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cssService = new Google\Service\Css(...);
+     *   $quotas = $cssService->accounts_quotas;
+     *  </code>
      */
-    public function listAccountsQuotas($parent, $optParams = [])
+    class AccountsQuotas extends \Google\Service\Resource
+    {
+        /**
+         * Lists the daily call quota and usage per group for your CSS Center account.
+         * (quotas.listAccountsQuotas)
+         *
+         * @param string $parent Required. The CSS account that owns the collection of
+         * method quotas and resources. In most cases, this is the CSS domain. Format:
+         * accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of quotas to return in
+         * the response, used for paging. Defaults to 500; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. Token (if provided) to retrieve the
+         * subsequent page. All other parameters must match the original call that
+         * provided the page token.
+         * @return ListQuotaGroupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsQuotas($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Css\Resource\AccountsQuotas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Css_Resource_AccountsQuotas extends \Google\Service\Css\Resource\AccountsQuotas
     {
     }
 }

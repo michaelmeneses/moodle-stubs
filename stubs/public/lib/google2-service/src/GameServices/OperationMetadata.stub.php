@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class OperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $endTime;
-    protected $operationStatusType = OperationStatus::class;
-    protected $operationStatusDataType = 'map';
-    /**
-     * @var bool
-     */
-    public $requestedCancellation;
-    /**
-     * @var string
-     */
-    public $statusMessage;
-    /**
-     * @var string
-     */
-    public $target;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @var string
-     */
-    public $verb;
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\GameServices {
+    class OperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $endTime;
+        protected $operationStatusType = OperationStatus::class;
+        protected $operationStatusDataType = 'map';
+        /**
+         * @var bool
+         */
+        public $requestedCancellation;
+        /**
+         * @var string
+         */
+        public $statusMessage;
+        /**
+         * @var string
+         */
+        public $target;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @var string
+         */
+        public $verb;
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param OperationStatus[]
+         */
+        public function setOperationStatus($operationStatus)
+        {
+        }
+        /**
+         * @return OperationStatus[]
+         */
+        public function getOperationStatus()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setRequestedCancellation($requestedCancellation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequestedCancellation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param OperationStatus[]
-     */
-    public function setOperationStatus($operationStatus)
-    {
-    }
-    /**
-     * @return OperationStatus[]
-     */
-    public function getOperationStatus()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setRequestedCancellation($requestedCancellation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequestedCancellation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_GameServices_OperationMetadata extends \Google\Service\GameServices\OperationMetadata
     {
     }
 }

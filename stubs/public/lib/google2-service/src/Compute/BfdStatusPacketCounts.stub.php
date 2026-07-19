@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BfdStatusPacketCounts extends \Google\Model
-{
-    /**
-     * Number of packets received since the beginning of the current BFD session.
-     *
-     * @var string
-     */
-    public $numRx;
-    /**
-     * Number of packets received that were rejected because of errors since the
-     * beginning of the current BFD session.
-     *
-     * @var string
-     */
-    public $numRxRejected;
-    /**
-     * Number of packets received that were successfully processed since the
-     * beginning of the current BFD session.
-     *
-     * @var string
-     */
-    public $numRxSuccessful;
-    /**
-     * Number of packets transmitted since the beginning of the current BFD
-     * session.
-     *
-     * @var string
-     */
-    public $numTx;
-    /**
-     * Number of packets received since the beginning of the current BFD session.
-     *
-     * @param string $numRx
-     */
-    public function setNumRx($numRx)
+namespace Google\Service\Compute {
+    class BfdStatusPacketCounts extends \Google\Model
     {
+        /**
+         * Number of packets received since the beginning of the current BFD session.
+         *
+         * @var string
+         */
+        public $numRx;
+        /**
+         * Number of packets received that were rejected because of errors since the
+         * beginning of the current BFD session.
+         *
+         * @var string
+         */
+        public $numRxRejected;
+        /**
+         * Number of packets received that were successfully processed since the
+         * beginning of the current BFD session.
+         *
+         * @var string
+         */
+        public $numRxSuccessful;
+        /**
+         * Number of packets transmitted since the beginning of the current BFD
+         * session.
+         *
+         * @var string
+         */
+        public $numTx;
+        /**
+         * Number of packets received since the beginning of the current BFD session.
+         *
+         * @param string $numRx
+         */
+        public function setNumRx($numRx)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRx()
+        {
+        }
+        /**
+         * Number of packets received that were rejected because of errors since the
+         * beginning of the current BFD session.
+         *
+         * @param string $numRxRejected
+         */
+        public function setNumRxRejected($numRxRejected)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRxRejected()
+        {
+        }
+        /**
+         * Number of packets received that were successfully processed since the
+         * beginning of the current BFD session.
+         *
+         * @param string $numRxSuccessful
+         */
+        public function setNumRxSuccessful($numRxSuccessful)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRxSuccessful()
+        {
+        }
+        /**
+         * Number of packets transmitted since the beginning of the current BFD
+         * session.
+         *
+         * @param string $numTx
+         */
+        public function setNumTx($numTx)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumTx()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BfdStatusPacketCounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumRx()
-    {
-    }
-    /**
-     * Number of packets received that were rejected because of errors since the
-     * beginning of the current BFD session.
-     *
-     * @param string $numRxRejected
-     */
-    public function setNumRxRejected($numRxRejected)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRxRejected()
-    {
-    }
-    /**
-     * Number of packets received that were successfully processed since the
-     * beginning of the current BFD session.
-     *
-     * @param string $numRxSuccessful
-     */
-    public function setNumRxSuccessful($numRxSuccessful)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRxSuccessful()
-    {
-    }
-    /**
-     * Number of packets transmitted since the beginning of the current BFD
-     * session.
-     *
-     * @param string $numTx
-     */
-    public function setNumTx($numTx)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumTx()
+    class Google_Service_Compute_BfdStatusPacketCounts extends \Google\Service\Compute\BfdStatusPacketCounts
     {
     }
 }

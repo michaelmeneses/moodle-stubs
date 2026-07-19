@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerReference extends \Google\Model
-{
-    protected $chunkInfoType = GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo::class;
-    protected $chunkInfoDataType = '';
-    protected $unstructuredDocumentInfoType = GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo::class;
-    protected $unstructuredDocumentInfoDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo
-     */
-    public function setChunkInfo(GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo $chunkInfo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerReference extends \Google\Model
     {
+        protected $chunkInfoType = GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo::class;
+        protected $chunkInfoDataType = '';
+        protected $unstructuredDocumentInfoType = GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo::class;
+        protected $unstructuredDocumentInfoDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo
+         */
+        public function setChunkInfo(GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo $chunkInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo
+         */
+        public function getChunkInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo
+         */
+        public function setUnstructuredDocumentInfo(GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo $unstructuredDocumentInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo
+         */
+        public function getUnstructuredDocumentInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo
-     */
-    public function setUnstructuredDocumentInfo(GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo $unstructuredDocumentInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerReferenceUnstructuredDocumentInfo
-     */
-    public function getUnstructuredDocumentInfo()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerReference extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerReference
     {
     }
 }

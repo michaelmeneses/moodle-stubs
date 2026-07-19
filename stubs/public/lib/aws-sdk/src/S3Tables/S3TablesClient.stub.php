@@ -8,6 +8,7 @@
  */
 namespace Aws\S3Tables;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon S3 Tables** service.
  * @method \Aws\Result createNamespace(array $args = [])

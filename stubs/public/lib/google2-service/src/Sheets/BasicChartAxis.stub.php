@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BasicChartAxis extends \Google\Model
-{
-    /**
-     * Default value, do not use.
-     */
-    public const POSITION_BASIC_CHART_AXIS_POSITION_UNSPECIFIED = 'BASIC_CHART_AXIS_POSITION_UNSPECIFIED';
-    /**
-     * The axis rendered at the bottom of a chart. For most charts, this is the
-     * standard major axis. For bar charts, this is a minor axis.
-     */
-    public const POSITION_BOTTOM_AXIS = 'BOTTOM_AXIS';
-    /**
-     * The axis rendered at the left of a chart. For most charts, this is a minor
-     * axis. For bar charts, this is the standard major axis.
-     */
-    public const POSITION_LEFT_AXIS = 'LEFT_AXIS';
-    /**
-     * The axis rendered at the right of a chart. For most charts, this is a minor
-     * axis. For bar charts, this is an unusual major axis.
-     */
-    public const POSITION_RIGHT_AXIS = 'RIGHT_AXIS';
-    protected $formatType = TextFormat::class;
-    protected $formatDataType = '';
-    /**
-     * The position of this axis.
-     *
-     * @var string
-     */
-    public $position;
-    /**
-     * The title of this axis. If set, this overrides any title inferred from
-     * headers of the data.
-     *
-     * @var string
-     */
-    public $title;
-    protected $titleTextPositionType = TextPosition::class;
-    protected $titleTextPositionDataType = '';
-    protected $viewWindowOptionsType = ChartAxisViewWindowOptions::class;
-    protected $viewWindowOptionsDataType = '';
-    /**
-     * The format of the title. Only valid if the axis is not associated with the
-     * domain. The link field is not supported.
-     *
-     * @param TextFormat $format
-     */
-    public function setFormat(TextFormat $format)
+namespace Google\Service\Sheets {
+    class BasicChartAxis extends \Google\Model
     {
+        /**
+         * Default value, do not use.
+         */
+        public const POSITION_BASIC_CHART_AXIS_POSITION_UNSPECIFIED = 'BASIC_CHART_AXIS_POSITION_UNSPECIFIED';
+        /**
+         * The axis rendered at the bottom of a chart. For most charts, this is the
+         * standard major axis. For bar charts, this is a minor axis.
+         */
+        public const POSITION_BOTTOM_AXIS = 'BOTTOM_AXIS';
+        /**
+         * The axis rendered at the left of a chart. For most charts, this is a minor
+         * axis. For bar charts, this is the standard major axis.
+         */
+        public const POSITION_LEFT_AXIS = 'LEFT_AXIS';
+        /**
+         * The axis rendered at the right of a chart. For most charts, this is a minor
+         * axis. For bar charts, this is an unusual major axis.
+         */
+        public const POSITION_RIGHT_AXIS = 'RIGHT_AXIS';
+        protected $formatType = TextFormat::class;
+        protected $formatDataType = '';
+        /**
+         * The position of this axis.
+         *
+         * @var string
+         */
+        public $position;
+        /**
+         * The title of this axis. If set, this overrides any title inferred from
+         * headers of the data.
+         *
+         * @var string
+         */
+        public $title;
+        protected $titleTextPositionType = TextPosition::class;
+        protected $titleTextPositionDataType = '';
+        protected $viewWindowOptionsType = ChartAxisViewWindowOptions::class;
+        protected $viewWindowOptionsDataType = '';
+        /**
+         * The format of the title. Only valid if the axis is not associated with the
+         * domain. The link field is not supported.
+         *
+         * @param TextFormat $format
+         */
+        public function setFormat(TextFormat $format)
+        {
+        }
+        /**
+         * @return TextFormat
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * The position of this axis.
+         *
+         * Accepted values: BASIC_CHART_AXIS_POSITION_UNSPECIFIED, BOTTOM_AXIS,
+         * LEFT_AXIS, RIGHT_AXIS
+         *
+         * @param self::POSITION_* $position
+         */
+        public function setPosition($position)
+        {
+        }
+        /**
+         * @return self::POSITION_*
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * The title of this axis. If set, this overrides any title inferred from
+         * headers of the data.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The axis title text position.
+         *
+         * @param TextPosition $titleTextPosition
+         */
+        public function setTitleTextPosition(TextPosition $titleTextPosition)
+        {
+        }
+        /**
+         * @return TextPosition
+         */
+        public function getTitleTextPosition()
+        {
+        }
+        /**
+         * The view window options for this axis.
+         *
+         * @param ChartAxisViewWindowOptions $viewWindowOptions
+         */
+        public function setViewWindowOptions(ChartAxisViewWindowOptions $viewWindowOptions)
+        {
+        }
+        /**
+         * @return ChartAxisViewWindowOptions
+         */
+        public function getViewWindowOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextFormat
+     * Runtime class alias of \Google\Service\Sheets\BasicChartAxis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * The position of this axis.
-     *
-     * Accepted values: BASIC_CHART_AXIS_POSITION_UNSPECIFIED, BOTTOM_AXIS,
-     * LEFT_AXIS, RIGHT_AXIS
-     *
-     * @param self::POSITION_* $position
-     */
-    public function setPosition($position)
-    {
-    }
-    /**
-     * @return self::POSITION_*
-     */
-    public function getPosition()
-    {
-    }
-    /**
-     * The title of this axis. If set, this overrides any title inferred from
-     * headers of the data.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The axis title text position.
-     *
-     * @param TextPosition $titleTextPosition
-     */
-    public function setTitleTextPosition(TextPosition $titleTextPosition)
-    {
-    }
-    /**
-     * @return TextPosition
-     */
-    public function getTitleTextPosition()
-    {
-    }
-    /**
-     * The view window options for this axis.
-     *
-     * @param ChartAxisViewWindowOptions $viewWindowOptions
-     */
-    public function setViewWindowOptions(ChartAxisViewWindowOptions $viewWindowOptions)
-    {
-    }
-    /**
-     * @return ChartAxisViewWindowOptions
-     */
-    public function getViewWindowOptions()
+    class Google_Service_Sheets_BasicChartAxis extends \Google\Service\Sheets\BasicChartAxis
     {
     }
 }

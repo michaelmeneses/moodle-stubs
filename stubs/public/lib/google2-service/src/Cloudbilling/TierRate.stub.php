@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class TierRate extends \Google\Model
-{
-    /**
-     * Usage is priced at this rate only after this amount. Example:
-     * start_usage_amount of 10 indicates that the usage will be priced at the
-     * unit_price after the first 10 usage_units.
-     *
-     * @var 
-     */
-    public $startUsageAmount;
-    protected $unitPriceType = Money::class;
-    protected $unitPriceDataType = '';
-    public function setStartUsageAmount($startUsageAmount)
+namespace Google\Service\Cloudbilling {
+    class TierRate extends \Google\Model
     {
+        /**
+         * Usage is priced at this rate only after this amount. Example:
+         * start_usage_amount of 10 indicates that the usage will be priced at the
+         * unit_price after the first 10 usage_units.
+         *
+         * @var 
+         */
+        public $startUsageAmount;
+        protected $unitPriceType = Money::class;
+        protected $unitPriceDataType = '';
+        public function setStartUsageAmount($startUsageAmount)
+        {
+        }
+        public function getStartUsageAmount()
+        {
+        }
+        /**
+         * The price per unit of usage. Example: unit_price of amount $10 indicates
+         * that each unit will cost $10.
+         *
+         * @param Money $unitPrice
+         */
+        public function setUnitPrice(Money $unitPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getUnitPrice()
+        {
+        }
     }
-    public function getStartUsageAmount()
-    {
-    }
+}
+namespace {
     /**
-     * The price per unit of usage. Example: unit_price of amount $10 indicates
-     * that each unit will cost $10.
-     *
-     * @param Money $unitPrice
+     * Runtime class alias of \Google\Service\Cloudbilling\TierRate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setUnitPrice(Money $unitPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getUnitPrice()
+    class Google_Service_Cloudbilling_TierRate extends \Google\Service\Cloudbilling\TierRate
     {
     }
 }

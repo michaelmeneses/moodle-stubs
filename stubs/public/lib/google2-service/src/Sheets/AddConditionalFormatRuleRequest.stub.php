@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddConditionalFormatRuleRequest extends \Google\Model
-{
-    /**
-     * The zero-based index where the rule should be inserted.
-     *
-     * @var int
-     */
-    public $index;
-    protected $ruleType = ConditionalFormatRule::class;
-    protected $ruleDataType = '';
-    /**
-     * The zero-based index where the rule should be inserted.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Sheets {
+    class AddConditionalFormatRuleRequest extends \Google\Model
     {
+        /**
+         * The zero-based index where the rule should be inserted.
+         *
+         * @var int
+         */
+        public $index;
+        protected $ruleType = ConditionalFormatRule::class;
+        protected $ruleDataType = '';
+        /**
+         * The zero-based index where the rule should be inserted.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The rule to add.
+         *
+         * @param ConditionalFormatRule $rule
+         */
+        public function setRule(ConditionalFormatRule $rule)
+        {
+        }
+        /**
+         * @return ConditionalFormatRule
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\AddConditionalFormatRuleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * The rule to add.
-     *
-     * @param ConditionalFormatRule $rule
-     */
-    public function setRule(ConditionalFormatRule $rule)
-    {
-    }
-    /**
-     * @return ConditionalFormatRule
-     */
-    public function getRule()
+    class Google_Service_Sheets_AddConditionalFormatRuleRequest extends \Google\Service\Sheets\AddConditionalFormatRuleRequest
     {
     }
 }

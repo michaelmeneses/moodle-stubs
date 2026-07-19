@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookSoftwareConfig extends \Google\Collection
-{
-    protected $collection_key = 'env';
-    protected $colabImageType = GoogleCloudAiplatformV1ColabImage::class;
-    protected $colabImageDataType = '';
-    protected $envType = GoogleCloudAiplatformV1EnvVar::class;
-    protected $envDataType = 'array';
-    protected $postStartupScriptConfigType = GoogleCloudAiplatformV1PostStartupScriptConfig::class;
-    protected $postStartupScriptConfigDataType = '';
-    /**
-     * Optional. Google-managed NotebookRuntime colab image.
-     *
-     * @param GoogleCloudAiplatformV1ColabImage $colabImage
-     */
-    public function setColabImage(GoogleCloudAiplatformV1ColabImage $colabImage)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookSoftwareConfig extends \Google\Collection
     {
+        protected $collection_key = 'env';
+        protected $colabImageType = GoogleCloudAiplatformV1ColabImage::class;
+        protected $colabImageDataType = '';
+        protected $envType = GoogleCloudAiplatformV1EnvVar::class;
+        protected $envDataType = 'array';
+        protected $postStartupScriptConfigType = GoogleCloudAiplatformV1PostStartupScriptConfig::class;
+        protected $postStartupScriptConfigDataType = '';
+        /**
+         * Optional. Google-managed NotebookRuntime colab image.
+         *
+         * @param GoogleCloudAiplatformV1ColabImage $colabImage
+         */
+        public function setColabImage(GoogleCloudAiplatformV1ColabImage $colabImage)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ColabImage
+         */
+        public function getColabImage()
+        {
+        }
+        /**
+         * Optional. Environment variables to be passed to the container. Maximum
+         * limit is 100.
+         *
+         * @param GoogleCloudAiplatformV1EnvVar[] $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EnvVar[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Optional. Post startup script config.
+         *
+         * @param GoogleCloudAiplatformV1PostStartupScriptConfig $postStartupScriptConfig
+         */
+        public function setPostStartupScriptConfig(GoogleCloudAiplatformV1PostStartupScriptConfig $postStartupScriptConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PostStartupScriptConfig
+         */
+        public function getPostStartupScriptConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ColabImage
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookSoftwareConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColabImage()
-    {
-    }
-    /**
-     * Optional. Environment variables to be passed to the container. Maximum
-     * limit is 100.
-     *
-     * @param GoogleCloudAiplatformV1EnvVar[] $env
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EnvVar[]
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * Optional. Post startup script config.
-     *
-     * @param GoogleCloudAiplatformV1PostStartupScriptConfig $postStartupScriptConfig
-     */
-    public function setPostStartupScriptConfig(GoogleCloudAiplatformV1PostStartupScriptConfig $postStartupScriptConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PostStartupScriptConfig
-     */
-    public function getPostStartupScriptConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookSoftwareConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookSoftwareConfig
     {
     }
 }

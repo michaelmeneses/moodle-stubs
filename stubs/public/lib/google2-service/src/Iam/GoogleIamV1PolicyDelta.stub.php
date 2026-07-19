@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV1PolicyDelta extends \Google\Collection
-{
-    protected $collection_key = 'bindingDeltas';
-    protected $bindingDeltasType = GoogleIamV1BindingDelta::class;
-    protected $bindingDeltasDataType = 'array';
-    /**
-     * The delta for Bindings between two policies.
-     *
-     * @param GoogleIamV1BindingDelta[] $bindingDeltas
-     */
-    public function setBindingDeltas($bindingDeltas)
+namespace Google\Service\Iam {
+    class GoogleIamV1PolicyDelta extends \Google\Collection
     {
+        protected $collection_key = 'bindingDeltas';
+        protected $bindingDeltasType = GoogleIamV1BindingDelta::class;
+        protected $bindingDeltasDataType = 'array';
+        /**
+         * The delta for Bindings between two policies.
+         *
+         * @param GoogleIamV1BindingDelta[] $bindingDeltas
+         */
+        public function setBindingDeltas($bindingDeltas)
+        {
+        }
+        /**
+         * @return GoogleIamV1BindingDelta[]
+         */
+        public function getBindingDeltas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamV1BindingDelta[]
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV1PolicyDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBindingDeltas()
+    class Google_Service_Iam_GoogleIamV1PolicyDelta extends \Google\Service\Iam\GoogleIamV1PolicyDelta
     {
     }
 }

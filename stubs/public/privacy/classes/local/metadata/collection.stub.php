@@ -32,6 +32,7 @@
  */
 namespace core_privacy\local\metadata;
 
+use core_privacy\local\metadata\types\type;
 /**
  * A collection of metadata items.
  *

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2SecretManagerCredential extends \Google\Model
-{
-    /**
-     * Required. The name of the Secret Manager resource that stores the password,
-     * in the form `projects/project-id/secrets/secret-name/versions/version`.
-     *
-     * @var string
-     */
-    public $passwordSecretVersionName;
-    /**
-     * Required. The username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. The name of the Secret Manager resource that stores the password,
-     * in the form `projects/project-id/secrets/secret-name/versions/version`.
-     *
-     * @param string $passwordSecretVersionName
-     */
-    public function setPasswordSecretVersionName($passwordSecretVersionName)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2SecretManagerCredential extends \Google\Model
     {
+        /**
+         * Required. The name of the Secret Manager resource that stores the password,
+         * in the form `projects/project-id/secrets/secret-name/versions/version`.
+         *
+         * @var string
+         */
+        public $passwordSecretVersionName;
+        /**
+         * Required. The username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. The name of the Secret Manager resource that stores the password,
+         * in the form `projects/project-id/secrets/secret-name/versions/version`.
+         *
+         * @param string $passwordSecretVersionName
+         */
+        public function setPasswordSecretVersionName($passwordSecretVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasswordSecretVersionName()
+        {
+        }
+        /**
+         * Required. The username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2SecretManagerCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPasswordSecretVersionName()
-    {
-    }
-    /**
-     * Required. The username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_DLP_GooglePrivacyDlpV2SecretManagerCredential extends \Google\Service\DLP\GooglePrivacyDlpV2SecretManagerCredential
     {
     }
 }

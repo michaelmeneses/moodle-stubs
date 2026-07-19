@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata extends \Google\Model
-{
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata
+    {
+    }
 }

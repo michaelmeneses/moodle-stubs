@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LogEntryOperation extends \Google\Model
-{
-    /**
-     * Optional. Set this to True if this is the first log entry in the operation.
-     *
-     * @var bool
-     */
-    public $first;
-    /**
-     * Optional. An arbitrary operation identifier. Log entries with the same
-     * identifier are assumed to be part of the same operation.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. Set this to True if this is the last log entry in the operation.
-     *
-     * @var bool
-     */
-    public $last;
-    /**
-     * Optional. An arbitrary producer identifier. The combination of id and
-     * producer must be globally unique. Examples for producer:
-     * "MyDivision.MyBigCompany.com", "github.com/MyProject/MyApplication".
-     *
-     * @var string
-     */
-    public $producer;
-    /**
-     * Optional. Set this to True if this is the first log entry in the operation.
-     *
-     * @param bool $first
-     */
-    public function setFirst($first)
+namespace Google\Service\Logging {
+    class LogEntryOperation extends \Google\Model
     {
+        /**
+         * Optional. Set this to True if this is the first log entry in the operation.
+         *
+         * @var bool
+         */
+        public $first;
+        /**
+         * Optional. An arbitrary operation identifier. Log entries with the same
+         * identifier are assumed to be part of the same operation.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. Set this to True if this is the last log entry in the operation.
+         *
+         * @var bool
+         */
+        public $last;
+        /**
+         * Optional. An arbitrary producer identifier. The combination of id and
+         * producer must be globally unique. Examples for producer:
+         * "MyDivision.MyBigCompany.com", "github.com/MyProject/MyApplication".
+         *
+         * @var string
+         */
+        public $producer;
+        /**
+         * Optional. Set this to True if this is the first log entry in the operation.
+         *
+         * @param bool $first
+         */
+        public function setFirst($first)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFirst()
+        {
+        }
+        /**
+         * Optional. An arbitrary operation identifier. Log entries with the same
+         * identifier are assumed to be part of the same operation.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. Set this to True if this is the last log entry in the operation.
+         *
+         * @param bool $last
+         */
+        public function setLast($last)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLast()
+        {
+        }
+        /**
+         * Optional. An arbitrary producer identifier. The combination of id and
+         * producer must be globally unique. Examples for producer:
+         * "MyDivision.MyBigCompany.com", "github.com/MyProject/MyApplication".
+         *
+         * @param string $producer
+         */
+        public function setProducer($producer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProducer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Logging\LogEntryOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirst()
-    {
-    }
-    /**
-     * Optional. An arbitrary operation identifier. Log entries with the same
-     * identifier are assumed to be part of the same operation.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. Set this to True if this is the last log entry in the operation.
-     *
-     * @param bool $last
-     */
-    public function setLast($last)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLast()
-    {
-    }
-    /**
-     * Optional. An arbitrary producer identifier. The combination of id and
-     * producer must be globally unique. Examples for producer:
-     * "MyDivision.MyBigCompany.com", "github.com/MyProject/MyApplication".
-     *
-     * @param string $producer
-     */
-    public function setProducer($producer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProducer()
+    class Google_Service_Logging_LogEntryOperation extends \Google\Service\Logging\LogEntryOperation
     {
     }
 }

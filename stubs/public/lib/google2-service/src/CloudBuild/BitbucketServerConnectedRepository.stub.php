@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BitbucketServerConnectedRepository extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $parent;
-    protected $repoType = BitbucketServerRepositoryId::class;
-    protected $repoDataType = '';
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * @param string
-     */
-    public function setParent($parent)
+namespace Google\Service\CloudBuild {
+    class BitbucketServerConnectedRepository extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $parent;
+        protected $repoType = BitbucketServerRepositoryId::class;
+        protected $repoDataType = '';
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param BitbucketServerRepositoryId
+         */
+        public function setRepo(BitbucketServerRepositoryId $repo)
+        {
+        }
+        /**
+         * @return BitbucketServerRepositoryId
+         */
+        public function getRepo()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\BitbucketServerConnectedRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * @param BitbucketServerRepositoryId
-     */
-    public function setRepo(BitbucketServerRepositoryId $repo)
-    {
-    }
-    /**
-     * @return BitbucketServerRepositoryId
-     */
-    public function getRepo()
-    {
-    }
-    /**
-     * @param Status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_CloudBuild_BitbucketServerConnectedRepository extends \Google\Service\CloudBuild\BitbucketServerConnectedRepository
     {
     }
 }

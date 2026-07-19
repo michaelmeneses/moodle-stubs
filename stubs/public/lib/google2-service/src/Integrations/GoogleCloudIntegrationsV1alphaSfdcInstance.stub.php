@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSfdcInstance extends \Google\Collection
-{
-    protected $collection_key = 'authConfigId';
-    /**
-     * A list of AuthConfigs that can be tried to open the channel to SFDC
-     *
-     * @var string[]
-     */
-    public $authConfigId;
-    /**
-     * Output only. Time when the instance is created
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Time when the instance was deleted. Empty if not deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * Optional. A description of the sfdc instance.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User selected unique name/alias to easily reference an instance.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name of the SFDC instance
-     * projects/{project}/locations/{location}/sfdcInstances/{sfdcInstance}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. URL used for API calls after authentication (the login authority
-     * is configured within the referenced AuthConfig).
-     *
-     * @var string
-     */
-    public $serviceAuthority;
-    /**
-     * The SFDC Org Id. This is defined in salesforce.
-     *
-     * @var string
-     */
-    public $sfdcOrgId;
-    /**
-     * Output only. Time when the instance was last updated
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * A list of AuthConfigs that can be tried to open the channel to SFDC
-     *
-     * @param string[] $authConfigId
-     */
-    public function setAuthConfigId($authConfigId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSfdcInstance extends \Google\Collection
     {
+        protected $collection_key = 'authConfigId';
+        /**
+         * A list of AuthConfigs that can be tried to open the channel to SFDC
+         *
+         * @var string[]
+         */
+        public $authConfigId;
+        /**
+         * Output only. Time when the instance is created
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Time when the instance was deleted. Empty if not deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * Optional. A description of the sfdc instance.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User selected unique name/alias to easily reference an instance.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name of the SFDC instance
+         * projects/{project}/locations/{location}/sfdcInstances/{sfdcInstance}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. URL used for API calls after authentication (the login authority
+         * is configured within the referenced AuthConfig).
+         *
+         * @var string
+         */
+        public $serviceAuthority;
+        /**
+         * The SFDC Org Id. This is defined in salesforce.
+         *
+         * @var string
+         */
+        public $sfdcOrgId;
+        /**
+         * Output only. Time when the instance was last updated
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * A list of AuthConfigs that can be tried to open the channel to SFDC
+         *
+         * @param string[] $authConfigId
+         */
+        public function setAuthConfigId($authConfigId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAuthConfigId()
+        {
+        }
+        /**
+         * Output only. Time when the instance is created
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Time when the instance was deleted. Empty if not deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * Optional. A description of the sfdc instance.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User selected unique name/alias to easily reference an instance.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name of the SFDC instance
+         * projects/{project}/locations/{location}/sfdcInstances/{sfdcInstance}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. URL used for API calls after authentication (the login authority
+         * is configured within the referenced AuthConfig).
+         *
+         * @param string $serviceAuthority
+         */
+        public function setServiceAuthority($serviceAuthority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAuthority()
+        {
+        }
+        /**
+         * The SFDC Org Id. This is defined in salesforce.
+         *
+         * @param string $sfdcOrgId
+         */
+        public function setSfdcOrgId($sfdcOrgId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSfdcOrgId()
+        {
+        }
+        /**
+         * Output only. Time when the instance was last updated
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSfdcInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthConfigId()
-    {
-    }
-    /**
-     * Output only. Time when the instance is created
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Time when the instance was deleted. Empty if not deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * Optional. A description of the sfdc instance.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User selected unique name/alias to easily reference an instance.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name of the SFDC instance
-     * projects/{project}/locations/{location}/sfdcInstances/{sfdcInstance}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. URL used for API calls after authentication (the login authority
-     * is configured within the referenced AuthConfig).
-     *
-     * @param string $serviceAuthority
-     */
-    public function setServiceAuthority($serviceAuthority)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAuthority()
-    {
-    }
-    /**
-     * The SFDC Org Id. This is defined in salesforce.
-     *
-     * @param string $sfdcOrgId
-     */
-    public function setSfdcOrgId($sfdcOrgId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSfdcOrgId()
-    {
-    }
-    /**
-     * Output only. Time when the instance was last updated
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSfdcInstance extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSfdcInstance
     {
     }
 }

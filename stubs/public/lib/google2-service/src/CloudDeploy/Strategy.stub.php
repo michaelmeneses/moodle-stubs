@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Strategy extends \Google\Model
-{
-    protected $canaryType = Canary::class;
-    protected $canaryDataType = '';
-    protected $standardType = Standard::class;
-    protected $standardDataType = '';
-    /**
-     * Optional. Canary deployment strategy provides progressive percentage based
-     * deployments to a Target.
-     *
-     * @param Canary $canary
-     */
-    public function setCanary(Canary $canary)
+namespace Google\Service\CloudDeploy {
+    class Strategy extends \Google\Model
     {
+        protected $canaryType = Canary::class;
+        protected $canaryDataType = '';
+        protected $standardType = Standard::class;
+        protected $standardDataType = '';
+        /**
+         * Optional. Canary deployment strategy provides progressive percentage based
+         * deployments to a Target.
+         *
+         * @param Canary $canary
+         */
+        public function setCanary(Canary $canary)
+        {
+        }
+        /**
+         * @return Canary
+         */
+        public function getCanary()
+        {
+        }
+        /**
+         * Optional. Standard deployment strategy executes a single deploy and allows
+         * verifying the deployment.
+         *
+         * @param Standard $standard
+         */
+        public function setStandard(Standard $standard)
+        {
+        }
+        /**
+         * @return Standard
+         */
+        public function getStandard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Canary
+     * Runtime class alias of \Google\Service\CloudDeploy\Strategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanary()
-    {
-    }
-    /**
-     * Optional. Standard deployment strategy executes a single deploy and allows
-     * verifying the deployment.
-     *
-     * @param Standard $standard
-     */
-    public function setStandard(Standard $standard)
-    {
-    }
-    /**
-     * @return Standard
-     */
-    public function getStandard()
+    class Google_Service_CloudDeploy_Strategy extends \Google\Service\CloudDeploy\Strategy
     {
     }
 }

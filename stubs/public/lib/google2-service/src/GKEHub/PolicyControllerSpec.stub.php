@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerSpec extends \Google\Model
-{
-    protected $policyControllerHubConfigType = PolicyControllerHubConfig::class;
-    protected $policyControllerHubConfigDataType = '';
-    /**
-     * Version of Policy Controller installed.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Policy Controller configuration for the cluster.
-     *
-     * @param PolicyControllerHubConfig $policyControllerHubConfig
-     */
-    public function setPolicyControllerHubConfig(PolicyControllerHubConfig $policyControllerHubConfig)
+namespace Google\Service\GKEHub {
+    class PolicyControllerSpec extends \Google\Model
     {
+        protected $policyControllerHubConfigType = PolicyControllerHubConfig::class;
+        protected $policyControllerHubConfigDataType = '';
+        /**
+         * Version of Policy Controller installed.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Policy Controller configuration for the cluster.
+         *
+         * @param PolicyControllerHubConfig $policyControllerHubConfig
+         */
+        public function setPolicyControllerHubConfig(PolicyControllerHubConfig $policyControllerHubConfig)
+        {
+        }
+        /**
+         * @return PolicyControllerHubConfig
+         */
+        public function getPolicyControllerHubConfig()
+        {
+        }
+        /**
+         * Version of Policy Controller installed.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyControllerHubConfig
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyControllerHubConfig()
-    {
-    }
-    /**
-     * Version of Policy Controller installed.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_PolicyControllerSpec extends \Google\Service\GKEHub\PolicyControllerSpec
     {
     }
 }

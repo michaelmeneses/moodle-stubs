@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class DataSourceGcpResourceInfo extends \Google\Model
-{
-    protected $cloudSqlInstancePropertiesType = CloudSqlInstanceDataSourceReferenceProperties::class;
-    protected $cloudSqlInstancePropertiesDataType = '';
-    /**
-     * Output only. The resource name of the GCP resource. Ex:
-     * projects/{project}/zones/{zone}/instances/{instance}
-     *
-     * @var string
-     */
-    public $gcpResourcename;
-    /**
-     * Output only. The location of the GCP resource. Ex: //"global"/"unspecified"
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The type of the GCP resource. Ex:
-     * compute.googleapis.com/Instance
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The properties of the Cloud SQL instance.
-     *
-     * @param CloudSqlInstanceDataSourceReferenceProperties $cloudSqlInstanceProperties
-     */
-    public function setCloudSqlInstanceProperties(CloudSqlInstanceDataSourceReferenceProperties $cloudSqlInstanceProperties)
+namespace Google\Service\Backupdr {
+    class DataSourceGcpResourceInfo extends \Google\Model
     {
+        protected $cloudSqlInstancePropertiesType = CloudSqlInstanceDataSourceReferenceProperties::class;
+        protected $cloudSqlInstancePropertiesDataType = '';
+        /**
+         * Output only. The resource name of the GCP resource. Ex:
+         * projects/{project}/zones/{zone}/instances/{instance}
+         *
+         * @var string
+         */
+        public $gcpResourcename;
+        /**
+         * Output only. The location of the GCP resource. Ex: //"global"/"unspecified"
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The type of the GCP resource. Ex:
+         * compute.googleapis.com/Instance
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The properties of the Cloud SQL instance.
+         *
+         * @param CloudSqlInstanceDataSourceReferenceProperties $cloudSqlInstanceProperties
+         */
+        public function setCloudSqlInstanceProperties(CloudSqlInstanceDataSourceReferenceProperties $cloudSqlInstanceProperties)
+        {
+        }
+        /**
+         * @return CloudSqlInstanceDataSourceReferenceProperties
+         */
+        public function getCloudSqlInstanceProperties()
+        {
+        }
+        /**
+         * Output only. The resource name of the GCP resource. Ex:
+         * projects/{project}/zones/{zone}/instances/{instance}
+         *
+         * @param string $gcpResourcename
+         */
+        public function setGcpResourcename($gcpResourcename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpResourcename()
+        {
+        }
+        /**
+         * Output only. The location of the GCP resource. Ex: //"global"/"unspecified"
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. The type of the GCP resource. Ex:
+         * compute.googleapis.com/Instance
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudSqlInstanceDataSourceReferenceProperties
+     * Runtime class alias of \Google\Service\Backupdr\DataSourceGcpResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlInstanceProperties()
-    {
-    }
-    /**
-     * Output only. The resource name of the GCP resource. Ex:
-     * projects/{project}/zones/{zone}/instances/{instance}
-     *
-     * @param string $gcpResourcename
-     */
-    public function setGcpResourcename($gcpResourcename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpResourcename()
-    {
-    }
-    /**
-     * Output only. The location of the GCP resource. Ex: //"global"/"unspecified"
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. The type of the GCP resource. Ex:
-     * compute.googleapis.com/Instance
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Backupdr_DataSourceGcpResourceInfo extends \Google\Service\Backupdr\DataSourceGcpResourceInfo
     {
     }
 }

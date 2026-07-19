@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class TaskStatus extends \Google\Collection
-{
-    /**
-     * Unknown state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Task is created and waiting for resources.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The Task is assigned to at least one VM.
-     */
-    public const STATE_ASSIGNED = 'ASSIGNED';
-    /**
-     * The Task is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The Task has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The Task has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The Task has not been executed when the Job finishes.
-     */
-    public const STATE_UNEXECUTED = 'UNEXECUTED';
-    protected $collection_key = 'statusEvents';
-    /**
-     * Task state.
-     *
-     * @var string
-     */
-    public $state;
-    protected $statusEventsType = StatusEvent::class;
-    protected $statusEventsDataType = 'array';
-    /**
-     * Task state.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, ASSIGNED, RUNNING, FAILED,
-     * SUCCEEDED, UNEXECUTED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Batch {
+    class TaskStatus extends \Google\Collection
     {
+        /**
+         * Unknown state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Task is created and waiting for resources.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The Task is assigned to at least one VM.
+         */
+        public const STATE_ASSIGNED = 'ASSIGNED';
+        /**
+         * The Task is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The Task has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The Task has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The Task has not been executed when the Job finishes.
+         */
+        public const STATE_UNEXECUTED = 'UNEXECUTED';
+        protected $collection_key = 'statusEvents';
+        /**
+         * Task state.
+         *
+         * @var string
+         */
+        public $state;
+        protected $statusEventsType = StatusEvent::class;
+        protected $statusEventsDataType = 'array';
+        /**
+         * Task state.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, ASSIGNED, RUNNING, FAILED,
+         * SUCCEEDED, UNEXECUTED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Detailed info about why the state is reached.
+         *
+         * @param StatusEvent[] $statusEvents
+         */
+        public function setStatusEvents($statusEvents)
+        {
+        }
+        /**
+         * @return StatusEvent[]
+         */
+        public function getStatusEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Batch\TaskStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * Detailed info about why the state is reached.
-     *
-     * @param StatusEvent[] $statusEvents
-     */
-    public function setStatusEvents($statusEvents)
-    {
-    }
-    /**
-     * @return StatusEvent[]
-     */
-    public function getStatusEvents()
+    class Google_Service_Batch_TaskStatus extends \Google\Service\Batch\TaskStatus
     {
     }
 }

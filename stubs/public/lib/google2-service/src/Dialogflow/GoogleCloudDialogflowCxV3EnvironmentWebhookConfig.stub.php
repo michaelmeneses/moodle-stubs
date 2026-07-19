@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3EnvironmentWebhookConfig extends \Google\Collection
-{
-    protected $collection_key = 'webhookOverrides';
-    protected $webhookOverridesType = GoogleCloudDialogflowCxV3Webhook::class;
-    protected $webhookOverridesDataType = 'array';
-    /**
-     * The list of webhooks to override for the agent environment. The webhook
-     * must exist in the agent. You can override fields in `generic_web_service`
-     * and `service_directory`.
-     *
-     * @param GoogleCloudDialogflowCxV3Webhook[] $webhookOverrides
-     */
-    public function setWebhookOverrides($webhookOverrides)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3EnvironmentWebhookConfig extends \Google\Collection
     {
+        protected $collection_key = 'webhookOverrides';
+        protected $webhookOverridesType = GoogleCloudDialogflowCxV3Webhook::class;
+        protected $webhookOverridesDataType = 'array';
+        /**
+         * The list of webhooks to override for the agent environment. The webhook
+         * must exist in the agent. You can override fields in `generic_web_service`
+         * and `service_directory`.
+         *
+         * @param GoogleCloudDialogflowCxV3Webhook[] $webhookOverrides
+         */
+        public function setWebhookOverrides($webhookOverrides)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Webhook[]
+         */
+        public function getWebhookOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Webhook[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EnvironmentWebhookConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebhookOverrides()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3EnvironmentWebhookConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EnvironmentWebhookConfig
     {
     }
 }

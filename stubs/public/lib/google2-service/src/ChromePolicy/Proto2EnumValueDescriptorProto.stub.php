@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class Proto2EnumValueDescriptorProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var int
-     */
-    public $number;
-    /**
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ChromePolicy {
+    class Proto2EnumValueDescriptorProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var int
+         */
+        public $number;
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param int $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\Proto2EnumValueDescriptorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param int $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumber()
+    class Google_Service_ChromePolicy_Proto2EnumValueDescriptorProto extends \Google\Service\ChromePolicy\Proto2EnumValueDescriptorProto
     {
     }
 }

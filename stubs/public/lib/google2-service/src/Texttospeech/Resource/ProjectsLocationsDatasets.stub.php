@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech\Resource;
-
-/**
- * The "datasets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $texttospeechService = new Google\Service\Texttospeech(...);
- *   $datasets = $texttospeechService->datasets;
- *  </code>
- */
-class ProjectsLocationsDatasets extends \Google\Service\Resource
-{
+namespace Google\Service\Texttospeech\Resource {
+    use Google\Service\Texttospeech\ImportDataRequest;
+    use Google\Service\Texttospeech\Operation;
     /**
-     * Imports audio+text data for training custom voice. (datasets.import)
-     *
-     * @param string $name The name of the Dataset resource. Format:
-     * `projects/{project}/locations/{location}/datasets/{dataset}`
-     * @param ImportDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "datasets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $texttospeechService = new Google\Service\Texttospeech(...);
+     *   $datasets = $texttospeechService->datasets;
+     *  </code>
      */
-    public function import($name, ImportDataRequest $postBody, $optParams = [])
+    class ProjectsLocationsDatasets extends \Google\Service\Resource
+    {
+        /**
+         * Imports audio+text data for training custom voice. (datasets.import)
+         *
+         * @param string $name The name of the Dataset resource. Format:
+         * `projects/{project}/locations/{location}/datasets/{dataset}`
+         * @param ImportDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function import($name, ImportDataRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Texttospeech\Resource\ProjectsLocationsDatasets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Texttospeech_Resource_ProjectsLocationsDatasets extends \Google\Service\Texttospeech\Resource\ProjectsLocationsDatasets
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementErrorResource extends \Google\Model
-{
-    protected $resourceGvkType = ConfigManagementGroupVersionKind::class;
-    protected $resourceGvkDataType = '';
-    /**
-     * Metadata name of the resource that is causing an error
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Namespace of the resource that is causing an error
-     *
-     * @var string
-     */
-    public $resourceNamespace;
-    /**
-     * Path in the git repo of the erroneous config
-     *
-     * @var string
-     */
-    public $sourcePath;
-    /**
-     * Group/version/kind of the resource that is causing an error
-     *
-     * @param ConfigManagementGroupVersionKind $resourceGvk
-     */
-    public function setResourceGvk(ConfigManagementGroupVersionKind $resourceGvk)
+namespace Google\Service\GKEHub {
+    class ConfigManagementErrorResource extends \Google\Model
     {
+        protected $resourceGvkType = ConfigManagementGroupVersionKind::class;
+        protected $resourceGvkDataType = '';
+        /**
+         * Metadata name of the resource that is causing an error
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Namespace of the resource that is causing an error
+         *
+         * @var string
+         */
+        public $resourceNamespace;
+        /**
+         * Path in the git repo of the erroneous config
+         *
+         * @var string
+         */
+        public $sourcePath;
+        /**
+         * Group/version/kind of the resource that is causing an error
+         *
+         * @param ConfigManagementGroupVersionKind $resourceGvk
+         */
+        public function setResourceGvk(ConfigManagementGroupVersionKind $resourceGvk)
+        {
+        }
+        /**
+         * @return ConfigManagementGroupVersionKind
+         */
+        public function getResourceGvk()
+        {
+        }
+        /**
+         * Metadata name of the resource that is causing an error
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Namespace of the resource that is causing an error
+         *
+         * @param string $resourceNamespace
+         */
+        public function setResourceNamespace($resourceNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceNamespace()
+        {
+        }
+        /**
+         * Path in the git repo of the erroneous config
+         *
+         * @param string $sourcePath
+         */
+        public function setSourcePath($sourcePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourcePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigManagementGroupVersionKind
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementErrorResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceGvk()
-    {
-    }
-    /**
-     * Metadata name of the resource that is causing an error
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Namespace of the resource that is causing an error
-     *
-     * @param string $resourceNamespace
-     */
-    public function setResourceNamespace($resourceNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceNamespace()
-    {
-    }
-    /**
-     * Path in the git repo of the erroneous config
-     *
-     * @param string $sourcePath
-     */
-    public function setSourcePath($sourcePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourcePath()
+    class Google_Service_GKEHub_ConfigManagementErrorResource extends \Google\Service\GKEHub\ConfigManagementErrorResource
     {
     }
 }

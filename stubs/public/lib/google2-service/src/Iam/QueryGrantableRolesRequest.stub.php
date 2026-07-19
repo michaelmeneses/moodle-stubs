@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class QueryGrantableRolesRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * @var string
-     */
-    public $view;
-    /**
-     * @param string
-     */
-    public function setFullResourceName($fullResourceName)
+namespace Google\Service\Iam {
+    class QueryGrantableRolesRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * @var string
+         */
+        public $view;
+        /**
+         * @param string
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setView($view)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\QueryGrantableRolesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setView($view)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getView()
+    class Google_Service_Iam_QueryGrantableRolesRequest extends \Google\Service\Iam\QueryGrantableRolesRequest
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AddressDescriptor extends \Google\Collection
-{
-    protected $collection_key = 'landmarks';
-    protected $areasType = GoogleMapsPlacesV1AddressDescriptorArea::class;
-    protected $areasDataType = 'array';
-    protected $landmarksType = GoogleMapsPlacesV1AddressDescriptorLandmark::class;
-    protected $landmarksDataType = 'array';
-    /**
-     * A ranked list of containing or adjacent areas. The most recognizable and
-     * precise areas are ranked first.
-     *
-     * @param GoogleMapsPlacesV1AddressDescriptorArea[] $areas
-     */
-    public function setAreas($areas)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AddressDescriptor extends \Google\Collection
     {
+        protected $collection_key = 'landmarks';
+        protected $areasType = GoogleMapsPlacesV1AddressDescriptorArea::class;
+        protected $areasDataType = 'array';
+        protected $landmarksType = GoogleMapsPlacesV1AddressDescriptorLandmark::class;
+        protected $landmarksDataType = 'array';
+        /**
+         * A ranked list of containing or adjacent areas. The most recognizable and
+         * precise areas are ranked first.
+         *
+         * @param GoogleMapsPlacesV1AddressDescriptorArea[] $areas
+         */
+        public function setAreas($areas)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AddressDescriptorArea[]
+         */
+        public function getAreas()
+        {
+        }
+        /**
+         * A ranked list of nearby landmarks. The most recognizable and nearby
+         * landmarks are ranked first.
+         *
+         * @param GoogleMapsPlacesV1AddressDescriptorLandmark[] $landmarks
+         */
+        public function setLandmarks($landmarks)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AddressDescriptorLandmark[]
+         */
+        public function getLandmarks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1AddressDescriptorArea[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AddressDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAreas()
-    {
-    }
-    /**
-     * A ranked list of nearby landmarks. The most recognizable and nearby
-     * landmarks are ranked first.
-     *
-     * @param GoogleMapsPlacesV1AddressDescriptorLandmark[] $landmarks
-     */
-    public function setLandmarks($landmarks)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1AddressDescriptorLandmark[]
-     */
-    public function getLandmarks()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AddressDescriptor extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AddressDescriptor
     {
     }
 }

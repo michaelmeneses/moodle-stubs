@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'listAssetsResults';
-    protected $listAssetsResultsType = ListAssetsResult::class;
-    protected $listAssetsResultsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Time used for executing the list request.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * The total number of assets matching the query.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Assets matching the list request.
-     *
-     * @param ListAssetsResult[] $listAssetsResults
-     */
-    public function setListAssetsResults($listAssetsResults)
+namespace Google\Service\SecurityCommandCenter {
+    class ListAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'listAssetsResults';
+        protected $listAssetsResultsType = ListAssetsResult::class;
+        protected $listAssetsResultsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Time used for executing the list request.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * The total number of assets matching the query.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Assets matching the list request.
+         *
+         * @param ListAssetsResult[] $listAssetsResults
+         */
+        public function setListAssetsResults($listAssetsResults)
+        {
+        }
+        /**
+         * @return ListAssetsResult[]
+         */
+        public function getListAssetsResults()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Time used for executing the list request.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * The total number of assets matching the query.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListAssetsResult[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListAssetsResults()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Time used for executing the list request.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * The total number of assets matching the query.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_SecurityCommandCenter_ListAssetsResponse extends \Google\Service\SecurityCommandCenter\ListAssetsResponse
     {
     }
 }

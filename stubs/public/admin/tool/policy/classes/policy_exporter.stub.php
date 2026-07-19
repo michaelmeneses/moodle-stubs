@@ -29,6 +29,8 @@
  */
 namespace tool_policy;
 
+use core\external\exporter;
+use renderer_base;
 /**
  * Exporter of a policy document model.
  *

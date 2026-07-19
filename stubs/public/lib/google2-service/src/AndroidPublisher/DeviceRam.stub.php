@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceRam extends \Google\Model
-{
-    /**
-     * Maximum RAM in bytes (bound excluded).
-     *
-     * @var string
-     */
-    public $maxBytes;
-    /**
-     * Minimum RAM in bytes (bound included).
-     *
-     * @var string
-     */
-    public $minBytes;
-    /**
-     * Maximum RAM in bytes (bound excluded).
-     *
-     * @param string $maxBytes
-     */
-    public function setMaxBytes($maxBytes)
+namespace Google\Service\AndroidPublisher {
+    class DeviceRam extends \Google\Model
     {
+        /**
+         * Maximum RAM in bytes (bound excluded).
+         *
+         * @var string
+         */
+        public $maxBytes;
+        /**
+         * Minimum RAM in bytes (bound included).
+         *
+         * @var string
+         */
+        public $minBytes;
+        /**
+         * Maximum RAM in bytes (bound excluded).
+         *
+         * @param string $maxBytes
+         */
+        public function setMaxBytes($maxBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxBytes()
+        {
+        }
+        /**
+         * Minimum RAM in bytes (bound included).
+         *
+         * @param string $minBytes
+         */
+        public function setMinBytes($minBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceRam registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxBytes()
-    {
-    }
-    /**
-     * Minimum RAM in bytes (bound included).
-     *
-     * @param string $minBytes
-     */
-    public function setMinBytes($minBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinBytes()
+    class Google_Service_AndroidPublisher_DeviceRam extends \Google\Service\AndroidPublisher\DeviceRam
     {
     }
 }

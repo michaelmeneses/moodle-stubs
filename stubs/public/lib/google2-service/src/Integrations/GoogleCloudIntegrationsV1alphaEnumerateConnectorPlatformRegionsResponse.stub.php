@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * All regions where Connector Platform is provisioned.
-     *
-     * @var string[]
-     */
-    public $regions;
-    /**
-     * All regions where Connector Platform is provisioned.
-     *
-     * @param string[] $regions
-     */
-    public function setRegions($regions)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * All regions where Connector Platform is provisioned.
+         *
+         * @var string[]
+         */
+        public $regions;
+        /**
+         * All regions where Connector Platform is provisioned.
+         *
+         * @param string[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegions()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse
     {
     }
 }

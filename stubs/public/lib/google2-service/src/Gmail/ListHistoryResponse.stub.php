@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListHistoryResponse extends \Google\Collection
-{
-    protected $collection_key = 'history';
-    protected $historyType = History::class;
-    protected $historyDataType = 'array';
-    /**
-     * The ID of the mailbox's current history record.
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * Page token to retrieve the next page of results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of history records. Any `messages` contained in the response will
-     * typically only have `id` and `threadId` fields populated.
-     *
-     * @param History[] $history
-     */
-    public function setHistory($history)
+namespace Google\Service\Gmail {
+    class ListHistoryResponse extends \Google\Collection
     {
+        protected $collection_key = 'history';
+        protected $historyType = History::class;
+        protected $historyDataType = 'array';
+        /**
+         * The ID of the mailbox's current history record.
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * Page token to retrieve the next page of results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of history records. Any `messages` contained in the response will
+         * typically only have `id` and `threadId` fields populated.
+         *
+         * @param History[] $history
+         */
+        public function setHistory($history)
+        {
+        }
+        /**
+         * @return History[]
+         */
+        public function getHistory()
+        {
+        }
+        /**
+         * The ID of the mailbox's current history record.
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * Page token to retrieve the next page of results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return History[]
+     * Runtime class alias of \Google\Service\Gmail\ListHistoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistory()
-    {
-    }
-    /**
-     * The ID of the mailbox's current history record.
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * Page token to retrieve the next page of results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Gmail_ListHistoryResponse extends \Google\Service\Gmail\ListHistoryResponse
     {
     }
 }

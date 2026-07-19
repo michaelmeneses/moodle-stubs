@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CropProperties extends \Google\Model
-{
-    /**
-     * The clockwise rotation angle of the crop rectangle around its center, in
-     * radians. Rotation is applied after the offsets.
-     *
-     * @var float
-     */
-    public $angle;
-    /**
-     * The offset specifies how far inwards the bottom edge of the crop rectangle
-     * is from the bottom edge of the original content as a fraction of the
-     * original content's height.
-     *
-     * @var float
-     */
-    public $offsetBottom;
-    /**
-     * The offset specifies how far inwards the left edge of the crop rectangle is
-     * from the left edge of the original content as a fraction of the original
-     * content's width.
-     *
-     * @var float
-     */
-    public $offsetLeft;
-    /**
-     * The offset specifies how far inwards the right edge of the crop rectangle
-     * is from the right edge of the original content as a fraction of the
-     * original content's width.
-     *
-     * @var float
-     */
-    public $offsetRight;
-    /**
-     * The offset specifies how far inwards the top edge of the crop rectangle is
-     * from the top edge of the original content as a fraction of the original
-     * content's height.
-     *
-     * @var float
-     */
-    public $offsetTop;
-    /**
-     * The clockwise rotation angle of the crop rectangle around its center, in
-     * radians. Rotation is applied after the offsets.
-     *
-     * @param float $angle
-     */
-    public function setAngle($angle)
+namespace Google\Service\Docs {
+    class CropProperties extends \Google\Model
     {
+        /**
+         * The clockwise rotation angle of the crop rectangle around its center, in
+         * radians. Rotation is applied after the offsets.
+         *
+         * @var float
+         */
+        public $angle;
+        /**
+         * The offset specifies how far inwards the bottom edge of the crop rectangle
+         * is from the bottom edge of the original content as a fraction of the
+         * original content's height.
+         *
+         * @var float
+         */
+        public $offsetBottom;
+        /**
+         * The offset specifies how far inwards the left edge of the crop rectangle is
+         * from the left edge of the original content as a fraction of the original
+         * content's width.
+         *
+         * @var float
+         */
+        public $offsetLeft;
+        /**
+         * The offset specifies how far inwards the right edge of the crop rectangle
+         * is from the right edge of the original content as a fraction of the
+         * original content's width.
+         *
+         * @var float
+         */
+        public $offsetRight;
+        /**
+         * The offset specifies how far inwards the top edge of the crop rectangle is
+         * from the top edge of the original content as a fraction of the original
+         * content's height.
+         *
+         * @var float
+         */
+        public $offsetTop;
+        /**
+         * The clockwise rotation angle of the crop rectangle around its center, in
+         * radians. Rotation is applied after the offsets.
+         *
+         * @param float $angle
+         */
+        public function setAngle($angle)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAngle()
+        {
+        }
+        /**
+         * The offset specifies how far inwards the bottom edge of the crop rectangle
+         * is from the bottom edge of the original content as a fraction of the
+         * original content's height.
+         *
+         * @param float $offsetBottom
+         */
+        public function setOffsetBottom($offsetBottom)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOffsetBottom()
+        {
+        }
+        /**
+         * The offset specifies how far inwards the left edge of the crop rectangle is
+         * from the left edge of the original content as a fraction of the original
+         * content's width.
+         *
+         * @param float $offsetLeft
+         */
+        public function setOffsetLeft($offsetLeft)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOffsetLeft()
+        {
+        }
+        /**
+         * The offset specifies how far inwards the right edge of the crop rectangle
+         * is from the right edge of the original content as a fraction of the
+         * original content's width.
+         *
+         * @param float $offsetRight
+         */
+        public function setOffsetRight($offsetRight)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOffsetRight()
+        {
+        }
+        /**
+         * The offset specifies how far inwards the top edge of the crop rectangle is
+         * from the top edge of the original content as a fraction of the original
+         * content's height.
+         *
+         * @param float $offsetTop
+         */
+        public function setOffsetTop($offsetTop)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOffsetTop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Docs\CropProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAngle()
-    {
-    }
-    /**
-     * The offset specifies how far inwards the bottom edge of the crop rectangle
-     * is from the bottom edge of the original content as a fraction of the
-     * original content's height.
-     *
-     * @param float $offsetBottom
-     */
-    public function setOffsetBottom($offsetBottom)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOffsetBottom()
-    {
-    }
-    /**
-     * The offset specifies how far inwards the left edge of the crop rectangle is
-     * from the left edge of the original content as a fraction of the original
-     * content's width.
-     *
-     * @param float $offsetLeft
-     */
-    public function setOffsetLeft($offsetLeft)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOffsetLeft()
-    {
-    }
-    /**
-     * The offset specifies how far inwards the right edge of the crop rectangle
-     * is from the right edge of the original content as a fraction of the
-     * original content's width.
-     *
-     * @param float $offsetRight
-     */
-    public function setOffsetRight($offsetRight)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOffsetRight()
-    {
-    }
-    /**
-     * The offset specifies how far inwards the top edge of the crop rectangle is
-     * from the top edge of the original content as a fraction of the original
-     * content's height.
-     *
-     * @param float $offsetTop
-     */
-    public function setOffsetTop($offsetTop)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOffsetTop()
+    class Google_Service_Docs_CropProperties extends \Google\Service\Docs\CropProperties
     {
     }
 }

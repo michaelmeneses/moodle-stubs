@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest extends \Google\Model
-{
-    public $newEnumValueDisplayName;
-    public function setNewEnumValueDisplayName($newEnumValueDisplayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest extends \Google\Model
     {
+        public $newEnumValueDisplayName;
+        public function setNewEnumValueDisplayName($newEnumValueDisplayName)
+        {
+        }
+        public function getNewEnumValueDisplayName()
+        {
+        }
     }
-    public function getNewEnumValueDisplayName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest
     {
     }
 }

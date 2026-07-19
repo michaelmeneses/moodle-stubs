@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ConversionsBatchUpdateRequest extends \Google\Collection
-{
-    protected $collection_key = 'conversions';
-    protected $conversionsType = Conversion::class;
-    protected $conversionsDataType = 'array';
-    protected $encryptionInfoType = EncryptionInfo::class;
-    protected $encryptionInfoDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionsBatchUpdateRequest".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The set of conversions to update.
-     *
-     * @param Conversion[] $conversions
-     */
-    public function setConversions($conversions)
+namespace Google\Service\Dfareporting {
+    class ConversionsBatchUpdateRequest extends \Google\Collection
     {
+        protected $collection_key = 'conversions';
+        protected $conversionsType = Conversion::class;
+        protected $conversionsDataType = 'array';
+        protected $encryptionInfoType = EncryptionInfo::class;
+        protected $encryptionInfoDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionsBatchUpdateRequest".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The set of conversions to update.
+         *
+         * @param Conversion[] $conversions
+         */
+        public function setConversions($conversions)
+        {
+        }
+        /**
+         * @return Conversion[]
+         */
+        public function getConversions()
+        {
+        }
+        /**
+         * Describes how encryptedUserId is encrypted. This is a required field if
+         * encryptedUserId is used.
+         *
+         * @param EncryptionInfo $encryptionInfo
+         */
+        public function setEncryptionInfo(EncryptionInfo $encryptionInfo)
+        {
+        }
+        /**
+         * @return EncryptionInfo
+         */
+        public function getEncryptionInfo()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionsBatchUpdateRequest".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Conversion[]
+     * Runtime class alias of \Google\Service\Dfareporting\ConversionsBatchUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversions()
-    {
-    }
-    /**
-     * Describes how encryptedUserId is encrypted. This is a required field if
-     * encryptedUserId is used.
-     *
-     * @param EncryptionInfo $encryptionInfo
-     */
-    public function setEncryptionInfo(EncryptionInfo $encryptionInfo)
-    {
-    }
-    /**
-     * @return EncryptionInfo
-     */
-    public function getEncryptionInfo()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionsBatchUpdateRequest".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_ConversionsBatchUpdateRequest extends \Google\Service\Dfareporting\ConversionsBatchUpdateRequest
     {
     }
 }

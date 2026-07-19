@@ -8,6 +8,7 @@
  */
 namespace Aws\SageMakerMetrics;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon SageMaker Metrics Service** service.
  * @method \Aws\Result batchGetMetrics(array $args = [])

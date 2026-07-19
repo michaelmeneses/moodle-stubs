@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class VoidedPurchasesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'voidedPurchases';
-    protected $pageInfoType = PageInfo::class;
-    protected $pageInfoDataType = '';
-    protected $tokenPaginationType = TokenPagination::class;
-    protected $tokenPaginationDataType = '';
-    protected $voidedPurchasesType = VoidedPurchase::class;
-    protected $voidedPurchasesDataType = 'array';
-    /**
-     * General pagination information.
-     *
-     * @param PageInfo $pageInfo
-     */
-    public function setPageInfo(PageInfo $pageInfo)
+namespace Google\Service\AndroidPublisher {
+    class VoidedPurchasesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'voidedPurchases';
+        protected $pageInfoType = PageInfo::class;
+        protected $pageInfoDataType = '';
+        protected $tokenPaginationType = TokenPagination::class;
+        protected $tokenPaginationDataType = '';
+        protected $voidedPurchasesType = VoidedPurchase::class;
+        protected $voidedPurchasesDataType = 'array';
+        /**
+         * General pagination information.
+         *
+         * @param PageInfo $pageInfo
+         */
+        public function setPageInfo(PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * Pagination information for token pagination.
+         *
+         * @param TokenPagination $tokenPagination
+         */
+        public function setTokenPagination(TokenPagination $tokenPagination)
+        {
+        }
+        /**
+         * @return TokenPagination
+         */
+        public function getTokenPagination()
+        {
+        }
+        /**
+         * @param VoidedPurchase[] $voidedPurchases
+         */
+        public function setVoidedPurchases($voidedPurchases)
+        {
+        }
+        /**
+         * @return VoidedPurchase[]
+         */
+        public function getVoidedPurchases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PageInfo
+     * Runtime class alias of \Google\Service\AndroidPublisher\VoidedPurchasesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * Pagination information for token pagination.
-     *
-     * @param TokenPagination $tokenPagination
-     */
-    public function setTokenPagination(TokenPagination $tokenPagination)
-    {
-    }
-    /**
-     * @return TokenPagination
-     */
-    public function getTokenPagination()
-    {
-    }
-    /**
-     * @param VoidedPurchase[] $voidedPurchases
-     */
-    public function setVoidedPurchases($voidedPurchases)
-    {
-    }
-    /**
-     * @return VoidedPurchase[]
-     */
-    public function getVoidedPurchases()
+    class Google_Service_AndroidPublisher_VoidedPurchasesListResponse extends \Google\Service\AndroidPublisher\VoidedPurchasesListResponse
     {
     }
 }

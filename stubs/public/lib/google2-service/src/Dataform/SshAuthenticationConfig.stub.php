@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class SshAuthenticationConfig extends \Google\Model
-{
-    /**
-     * Required. Content of a public SSH key to verify an identity of a remote Git
-     * host.
-     *
-     * @var string
-     */
-    public $hostPublicKey;
-    /**
-     * Required. The name of the Secret Manager secret version to use as a ssh
-     * private key for Git operations. Must be in the format
-     * `projects/secrets/versions`.
-     *
-     * @var string
-     */
-    public $userPrivateKeySecretVersion;
-    /**
-     * Required. Content of a public SSH key to verify an identity of a remote Git
-     * host.
-     *
-     * @param string $hostPublicKey
-     */
-    public function setHostPublicKey($hostPublicKey)
+namespace Google\Service\Dataform {
+    class SshAuthenticationConfig extends \Google\Model
     {
+        /**
+         * Required. Content of a public SSH key to verify an identity of a remote Git
+         * host.
+         *
+         * @var string
+         */
+        public $hostPublicKey;
+        /**
+         * Required. The name of the Secret Manager secret version to use as a ssh
+         * private key for Git operations. Must be in the format
+         * `projects/secrets/versions`.
+         *
+         * @var string
+         */
+        public $userPrivateKeySecretVersion;
+        /**
+         * Required. Content of a public SSH key to verify an identity of a remote Git
+         * host.
+         *
+         * @param string $hostPublicKey
+         */
+        public function setHostPublicKey($hostPublicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostPublicKey()
+        {
+        }
+        /**
+         * Required. The name of the Secret Manager secret version to use as a ssh
+         * private key for Git operations. Must be in the format
+         * `projects/secrets/versions`.
+         *
+         * @param string $userPrivateKeySecretVersion
+         */
+        public function setUserPrivateKeySecretVersion($userPrivateKeySecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPrivateKeySecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\SshAuthenticationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostPublicKey()
-    {
-    }
-    /**
-     * Required. The name of the Secret Manager secret version to use as a ssh
-     * private key for Git operations. Must be in the format
-     * `projects/secrets/versions`.
-     *
-     * @param string $userPrivateKeySecretVersion
-     */
-    public function setUserPrivateKeySecretVersion($userPrivateKeySecretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPrivateKeySecretVersion()
+    class Google_Service_Dataform_SshAuthenticationConfig extends \Google\Service\Dataform\SshAuthenticationConfig
     {
     }
 }

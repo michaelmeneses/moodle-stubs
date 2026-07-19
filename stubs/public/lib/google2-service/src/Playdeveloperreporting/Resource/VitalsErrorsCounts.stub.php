@@ -21,41 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting\Resource;
-
-/**
- * The "counts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $counts = $playdeveloperreportingService->vitals_errors_counts;
- *  </code>
- */
-class VitalsErrorsCounts extends \Google\Service\Resource
-{
+namespace Google\Service\Playdeveloperreporting\Resource {
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetRequest;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetResponse;
     /**
-     * Describes the properties of the metrics set. (counts.get)
-     *
-     * @param string $name Required. Name of the errors metric set. Format:
-     * apps/{app}/errorCountMetricSet
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet
-     * @throws \Google\Service\Exception
+     * The "counts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
+     *   $counts = $playdeveloperreportingService->vitals_errors_counts;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class VitalsErrorsCounts extends \Google\Service\Resource
     {
+        /**
+         * Describes the properties of the metrics set. (counts.get)
+         *
+         * @param string $name Required. Name of the errors metric set. Format:
+         * apps/{app}/errorCountMetricSet
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Queries the metrics in the metrics set. (counts.query)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/errorCountMetricSet
+         * @param GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Queries the metrics in the metrics set. (counts.query)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/errorCountMetricSet
-     * @param GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\Resource\VitalsErrorsCounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function query($name, GooglePlayDeveloperReportingV1beta1QueryErrorCountMetricSetRequest $postBody, $optParams = [])
+    class Google_Service_Playdeveloperreporting_Resource_VitalsErrorsCounts extends \Google\Service\Playdeveloperreporting\Resource\VitalsErrorsCounts
     {
     }
 }

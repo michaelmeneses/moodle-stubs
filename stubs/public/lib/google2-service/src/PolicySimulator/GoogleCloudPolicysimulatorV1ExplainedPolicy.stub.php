@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ExplainedPolicy extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const ACCESS_ACCESS_STATE_UNSPECIFIED = 'ACCESS_STATE_UNSPECIFIED';
-    /**
-     * The principal has the permission.
-     */
-    public const ACCESS_GRANTED = 'GRANTED';
-    /**
-     * The principal does not have the permission.
-     */
-    public const ACCESS_NOT_GRANTED = 'NOT_GRANTED';
-    /**
-     * The principal has the permission only if a condition expression evaluates
-     * to `true`.
-     */
-    public const ACCESS_UNKNOWN_CONDITIONAL = 'UNKNOWN_CONDITIONAL';
-    /**
-     * The user who created the Replay does not have access to all of the policies
-     * that Policy Simulator needs to evaluate.
-     */
-    public const ACCESS_UNKNOWN_INFO_DENIED = 'UNKNOWN_INFO_DENIED';
-    /**
-     * Default value. This value is unused.
-     */
-    public const RELEVANCE_HEURISTIC_RELEVANCE_UNSPECIFIED = 'HEURISTIC_RELEVANCE_UNSPECIFIED';
-    /**
-     * The data point has a limited effect on the result. Changing the data point
-     * is unlikely to affect the overall determination.
-     */
-    public const RELEVANCE_NORMAL = 'NORMAL';
-    /**
-     * The data point has a strong effect on the result. Changing the data point
-     * is likely to affect the overall determination.
-     */
-    public const RELEVANCE_HIGH = 'HIGH';
-    protected $collection_key = 'bindingExplanations';
-    /**
-     * Indicates whether _this policy_ provides the specified permission to the
-     * specified principal for the specified resource. This field does _not_
-     * indicate whether the principal actually has the permission for the
-     * resource. There might be another policy that overrides this policy. To
-     * determine whether the principal actually has the permission, use the
-     * `access` field in the TroubleshootIamPolicyResponse.
-     *
-     * @var string
-     */
-    public $access;
-    protected $bindingExplanationsType = GoogleCloudPolicysimulatorV1BindingExplanation::class;
-    protected $bindingExplanationsDataType = 'array';
-    /**
-     * The full resource name that identifies the resource. For example,
-     * `//compute.googleapis.com/projects/my-project/zones/us-
-     * central1-a/instances/my-instance`. If the user who created the Replay does
-     * not have access to the policy, this field is omitted. For examples of full
-     * resource names for Google Cloud services, see
-     * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    protected $policyType = GoogleIamV1Policy::class;
-    protected $policyDataType = '';
-    /**
-     * The relevance of this policy to the overall determination in the
-     * TroubleshootIamPolicyResponse. If the user who created the Replay does not
-     * have access to the policy, this field is omitted.
-     *
-     * @var string
-     */
-    public $relevance;
-    /**
-     * Indicates whether _this policy_ provides the specified permission to the
-     * specified principal for the specified resource. This field does _not_
-     * indicate whether the principal actually has the permission for the
-     * resource. There might be another policy that overrides this policy. To
-     * determine whether the principal actually has the permission, use the
-     * `access` field in the TroubleshootIamPolicyResponse.
-     *
-     * Accepted values: ACCESS_STATE_UNSPECIFIED, GRANTED, NOT_GRANTED,
-     * UNKNOWN_CONDITIONAL, UNKNOWN_INFO_DENIED
-     *
-     * @param self::ACCESS_* $access
-     */
-    public function setAccess($access)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ExplainedPolicy extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const ACCESS_ACCESS_STATE_UNSPECIFIED = 'ACCESS_STATE_UNSPECIFIED';
+        /**
+         * The principal has the permission.
+         */
+        public const ACCESS_GRANTED = 'GRANTED';
+        /**
+         * The principal does not have the permission.
+         */
+        public const ACCESS_NOT_GRANTED = 'NOT_GRANTED';
+        /**
+         * The principal has the permission only if a condition expression evaluates
+         * to `true`.
+         */
+        public const ACCESS_UNKNOWN_CONDITIONAL = 'UNKNOWN_CONDITIONAL';
+        /**
+         * The user who created the Replay does not have access to all of the policies
+         * that Policy Simulator needs to evaluate.
+         */
+        public const ACCESS_UNKNOWN_INFO_DENIED = 'UNKNOWN_INFO_DENIED';
+        /**
+         * Default value. This value is unused.
+         */
+        public const RELEVANCE_HEURISTIC_RELEVANCE_UNSPECIFIED = 'HEURISTIC_RELEVANCE_UNSPECIFIED';
+        /**
+         * The data point has a limited effect on the result. Changing the data point
+         * is unlikely to affect the overall determination.
+         */
+        public const RELEVANCE_NORMAL = 'NORMAL';
+        /**
+         * The data point has a strong effect on the result. Changing the data point
+         * is likely to affect the overall determination.
+         */
+        public const RELEVANCE_HIGH = 'HIGH';
+        protected $collection_key = 'bindingExplanations';
+        /**
+         * Indicates whether _this policy_ provides the specified permission to the
+         * specified principal for the specified resource. This field does _not_
+         * indicate whether the principal actually has the permission for the
+         * resource. There might be another policy that overrides this policy. To
+         * determine whether the principal actually has the permission, use the
+         * `access` field in the TroubleshootIamPolicyResponse.
+         *
+         * @var string
+         */
+        public $access;
+        protected $bindingExplanationsType = GoogleCloudPolicysimulatorV1BindingExplanation::class;
+        protected $bindingExplanationsDataType = 'array';
+        /**
+         * The full resource name that identifies the resource. For example,
+         * `//compute.googleapis.com/projects/my-project/zones/us-
+         * central1-a/instances/my-instance`. If the user who created the Replay does
+         * not have access to the policy, this field is omitted. For examples of full
+         * resource names for Google Cloud services, see
+         * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        protected $policyType = GoogleIamV1Policy::class;
+        protected $policyDataType = '';
+        /**
+         * The relevance of this policy to the overall determination in the
+         * TroubleshootIamPolicyResponse. If the user who created the Replay does not
+         * have access to the policy, this field is omitted.
+         *
+         * @var string
+         */
+        public $relevance;
+        /**
+         * Indicates whether _this policy_ provides the specified permission to the
+         * specified principal for the specified resource. This field does _not_
+         * indicate whether the principal actually has the permission for the
+         * resource. There might be another policy that overrides this policy. To
+         * determine whether the principal actually has the permission, use the
+         * `access` field in the TroubleshootIamPolicyResponse.
+         *
+         * Accepted values: ACCESS_STATE_UNSPECIFIED, GRANTED, NOT_GRANTED,
+         * UNKNOWN_CONDITIONAL, UNKNOWN_INFO_DENIED
+         *
+         * @param self::ACCESS_* $access
+         */
+        public function setAccess($access)
+        {
+        }
+        /**
+         * @return self::ACCESS_*
+         */
+        public function getAccess()
+        {
+        }
+        /**
+         * Details about how each binding in the policy affects the principal's
+         * ability, or inability, to use the permission for the resource. If the user
+         * who created the Replay does not have access to the policy, this field is
+         * omitted.
+         *
+         * @param GoogleCloudPolicysimulatorV1BindingExplanation[] $bindingExplanations
+         */
+        public function setBindingExplanations($bindingExplanations)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1BindingExplanation[]
+         */
+        public function getBindingExplanations()
+        {
+        }
+        /**
+         * The full resource name that identifies the resource. For example,
+         * `//compute.googleapis.com/projects/my-project/zones/us-
+         * central1-a/instances/my-instance`. If the user who created the Replay does
+         * not have access to the policy, this field is omitted. For examples of full
+         * resource names for Google Cloud services, see
+         * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * The IAM policy attached to the resource. If the user who created the Replay
+         * does not have access to the policy, this field is empty.
+         *
+         * @param GoogleIamV1Policy $policy
+         */
+        public function setPolicy(GoogleIamV1Policy $policy)
+        {
+        }
+        /**
+         * @return GoogleIamV1Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * The relevance of this policy to the overall determination in the
+         * TroubleshootIamPolicyResponse. If the user who created the Replay does not
+         * have access to the policy, this field is omitted.
+         *
+         * Accepted values: HEURISTIC_RELEVANCE_UNSPECIFIED, NORMAL, HIGH
+         *
+         * @param self::RELEVANCE_* $relevance
+         */
+        public function setRelevance($relevance)
+        {
+        }
+        /**
+         * @return self::RELEVANCE_*
+         */
+        public function getRelevance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACCESS_*
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ExplainedPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccess()
-    {
-    }
-    /**
-     * Details about how each binding in the policy affects the principal's
-     * ability, or inability, to use the permission for the resource. If the user
-     * who created the Replay does not have access to the policy, this field is
-     * omitted.
-     *
-     * @param GoogleCloudPolicysimulatorV1BindingExplanation[] $bindingExplanations
-     */
-    public function setBindingExplanations($bindingExplanations)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1BindingExplanation[]
-     */
-    public function getBindingExplanations()
-    {
-    }
-    /**
-     * The full resource name that identifies the resource. For example,
-     * `//compute.googleapis.com/projects/my-project/zones/us-
-     * central1-a/instances/my-instance`. If the user who created the Replay does
-     * not have access to the policy, this field is omitted. For examples of full
-     * resource names for Google Cloud services, see
-     * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * The IAM policy attached to the resource. If the user who created the Replay
-     * does not have access to the policy, this field is empty.
-     *
-     * @param GoogleIamV1Policy $policy
-     */
-    public function setPolicy(GoogleIamV1Policy $policy)
-    {
-    }
-    /**
-     * @return GoogleIamV1Policy
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * The relevance of this policy to the overall determination in the
-     * TroubleshootIamPolicyResponse. If the user who created the Replay does not
-     * have access to the policy, this field is omitted.
-     *
-     * Accepted values: HEURISTIC_RELEVANCE_UNSPECIFIED, NORMAL, HIGH
-     *
-     * @param self::RELEVANCE_* $relevance
-     */
-    public function setRelevance($relevance)
-    {
-    }
-    /**
-     * @return self::RELEVANCE_*
-     */
-    public function getRelevance()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ExplainedPolicy extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ExplainedPolicy
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class EcommerceData extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * @var string
-     */
-    public $actionType;
-    /**
-     * @var string
-     */
-    public $ecommerceType;
-    protected $productsType = ProductData::class;
-    protected $productsDataType = 'array';
-    protected $transactionType = TransactionData::class;
-    protected $transactionDataType = '';
-    /**
-     * @param string
-     */
-    public function setActionType($actionType)
+namespace Google\Service\AnalyticsReporting {
+    class EcommerceData extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * @var string
+         */
+        public $actionType;
+        /**
+         * @var string
+         */
+        public $ecommerceType;
+        protected $productsType = ProductData::class;
+        protected $productsDataType = 'array';
+        protected $transactionType = TransactionData::class;
+        protected $transactionDataType = '';
+        /**
+         * @param string
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEcommerceType($ecommerceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEcommerceType()
+        {
+        }
+        /**
+         * @param ProductData[]
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return ProductData[]
+         */
+        public function getProducts()
+        {
+        }
+        /**
+         * @param TransactionData
+         */
+        public function setTransaction(TransactionData $transaction)
+        {
+        }
+        /**
+         * @return TransactionData
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\EcommerceData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEcommerceType($ecommerceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEcommerceType()
-    {
-    }
-    /**
-     * @param ProductData[]
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return ProductData[]
-     */
-    public function getProducts()
-    {
-    }
-    /**
-     * @param TransactionData
-     */
-    public function setTransaction(TransactionData $transaction)
-    {
-    }
-    /**
-     * @return TransactionData
-     */
-    public function getTransaction()
+    class Google_Service_AnalyticsReporting_EcommerceData extends \Google\Service\AnalyticsReporting\EcommerceData
     {
     }
 }

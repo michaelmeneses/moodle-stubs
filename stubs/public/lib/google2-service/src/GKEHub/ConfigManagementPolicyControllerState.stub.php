@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementPolicyControllerState extends \Google\Model
-{
-    protected $deploymentStateType = ConfigManagementGatekeeperDeploymentState::class;
-    protected $deploymentStateDataType = '';
-    protected $migrationType = ConfigManagementPolicyControllerMigration::class;
-    protected $migrationDataType = '';
-    protected $versionType = ConfigManagementPolicyControllerVersion::class;
-    protected $versionDataType = '';
-    /**
-     * The state about the policy controller installation.
-     *
-     * @param ConfigManagementGatekeeperDeploymentState $deploymentState
-     */
-    public function setDeploymentState(ConfigManagementGatekeeperDeploymentState $deploymentState)
+namespace Google\Service\GKEHub {
+    class ConfigManagementPolicyControllerState extends \Google\Model
     {
+        protected $deploymentStateType = ConfigManagementGatekeeperDeploymentState::class;
+        protected $deploymentStateDataType = '';
+        protected $migrationType = ConfigManagementPolicyControllerMigration::class;
+        protected $migrationDataType = '';
+        protected $versionType = ConfigManagementPolicyControllerVersion::class;
+        protected $versionDataType = '';
+        /**
+         * The state about the policy controller installation.
+         *
+         * @param ConfigManagementGatekeeperDeploymentState $deploymentState
+         */
+        public function setDeploymentState(ConfigManagementGatekeeperDeploymentState $deploymentState)
+        {
+        }
+        /**
+         * @return ConfigManagementGatekeeperDeploymentState
+         */
+        public function getDeploymentState()
+        {
+        }
+        /**
+         * Record state of ACM -> PoCo Hub migration for this feature.
+         *
+         * @param ConfigManagementPolicyControllerMigration $migration
+         */
+        public function setMigration(ConfigManagementPolicyControllerMigration $migration)
+        {
+        }
+        /**
+         * @return ConfigManagementPolicyControllerMigration
+         */
+        public function getMigration()
+        {
+        }
+        /**
+         * The version of Gatekeeper Policy Controller deployed.
+         *
+         * @param ConfigManagementPolicyControllerVersion $version
+         */
+        public function setVersion(ConfigManagementPolicyControllerVersion $version)
+        {
+        }
+        /**
+         * @return ConfigManagementPolicyControllerVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigManagementGatekeeperDeploymentState
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementPolicyControllerState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentState()
-    {
-    }
-    /**
-     * Record state of ACM -> PoCo Hub migration for this feature.
-     *
-     * @param ConfigManagementPolicyControllerMigration $migration
-     */
-    public function setMigration(ConfigManagementPolicyControllerMigration $migration)
-    {
-    }
-    /**
-     * @return ConfigManagementPolicyControllerMigration
-     */
-    public function getMigration()
-    {
-    }
-    /**
-     * The version of Gatekeeper Policy Controller deployed.
-     *
-     * @param ConfigManagementPolicyControllerVersion $version
-     */
-    public function setVersion(ConfigManagementPolicyControllerVersion $version)
-    {
-    }
-    /**
-     * @return ConfigManagementPolicyControllerVersion
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_ConfigManagementPolicyControllerState extends \Google\Service\GKEHub\ConfigManagementPolicyControllerState
     {
     }
 }

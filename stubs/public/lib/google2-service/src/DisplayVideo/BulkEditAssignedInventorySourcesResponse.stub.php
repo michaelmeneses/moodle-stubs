@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedInventorySourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'assignedInventorySources';
-    protected $assignedInventorySourcesType = AssignedInventorySource::class;
-    protected $assignedInventorySourcesDataType = 'array';
-    /**
-     * The list of assigned inventory sources that have been successfully created.
-     * This list will be absent if empty.
-     *
-     * @param AssignedInventorySource[] $assignedInventorySources
-     */
-    public function setAssignedInventorySources($assignedInventorySources)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedInventorySourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'assignedInventorySources';
+        protected $assignedInventorySourcesType = AssignedInventorySource::class;
+        protected $assignedInventorySourcesDataType = 'array';
+        /**
+         * The list of assigned inventory sources that have been successfully created.
+         * This list will be absent if empty.
+         *
+         * @param AssignedInventorySource[] $assignedInventorySources
+         */
+        public function setAssignedInventorySources($assignedInventorySources)
+        {
+        }
+        /**
+         * @return AssignedInventorySource[]
+         */
+        public function getAssignedInventorySources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedInventorySource[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedInventorySourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedInventorySources()
+    class Google_Service_DisplayVideo_BulkEditAssignedInventorySourcesResponse extends \Google\Service\DisplayVideo\BulkEditAssignedInventorySourcesResponse
     {
     }
 }

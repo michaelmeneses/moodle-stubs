@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UserRolesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'userRoles';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userRolesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userRolesType = UserRole::class;
-    protected $userRolesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userRolesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class UserRolesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'userRoles';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userRolesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userRolesType = UserRole::class;
+        protected $userRolesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userRolesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * User role collection.
+         *
+         * @param UserRole[] $userRoles
+         */
+        public function setUserRoles($userRoles)
+        {
+        }
+        /**
+         * @return UserRole[]
+         */
+        public function getUserRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\UserRolesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * User role collection.
-     *
-     * @param UserRole[] $userRoles
-     */
-    public function setUserRoles($userRoles)
-    {
-    }
-    /**
-     * @return UserRole[]
-     */
-    public function getUserRoles()
+    class Google_Service_Dfareporting_UserRolesListResponse extends \Google\Service\Dfareporting\UserRolesListResponse
     {
     }
 }

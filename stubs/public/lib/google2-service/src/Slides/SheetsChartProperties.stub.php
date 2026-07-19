@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class SheetsChartProperties extends \Google\Model
-{
-    protected $chartImagePropertiesType = ImageProperties::class;
-    protected $chartImagePropertiesDataType = '';
-    /**
-     * The properties of the embedded chart image.
-     *
-     * @param ImageProperties $chartImageProperties
-     */
-    public function setChartImageProperties(ImageProperties $chartImageProperties)
+namespace Google\Service\Slides {
+    class SheetsChartProperties extends \Google\Model
     {
+        protected $chartImagePropertiesType = ImageProperties::class;
+        protected $chartImagePropertiesDataType = '';
+        /**
+         * The properties of the embedded chart image.
+         *
+         * @param ImageProperties $chartImageProperties
+         */
+        public function setChartImageProperties(ImageProperties $chartImageProperties)
+        {
+        }
+        /**
+         * @return ImageProperties
+         */
+        public function getChartImageProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageProperties
+     * Runtime class alias of \Google\Service\Slides\SheetsChartProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartImageProperties()
+    class Google_Service_Slides_SheetsChartProperties extends \Google\Service\Slides\SheetsChartProperties
     {
     }
 }

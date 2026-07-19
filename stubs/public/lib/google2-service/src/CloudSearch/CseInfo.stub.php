@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CseInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cseDomain;
-    /**
-     * @var string
-     */
-    public $wrappedKey;
-    /**
-     * @param string
-     */
-    public function setCseDomain($cseDomain)
+namespace Google\Service\CloudSearch {
+    class CseInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cseDomain;
+        /**
+         * @var string
+         */
+        public $wrappedKey;
+        /**
+         * @param string
+         */
+        public function setCseDomain($cseDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCseDomain()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWrappedKey($wrappedKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWrappedKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CseInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCseDomain()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWrappedKey($wrappedKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWrappedKey()
+    class Google_Service_CloudSearch_CseInfo extends \Google\Service\CloudSearch\CseInfo
     {
     }
 }

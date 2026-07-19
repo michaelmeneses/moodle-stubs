@@ -21,564 +21,573 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class Product extends \Google\Collection
-{
-    public const CONTENT_RATING_ratingUnknown = 'ratingUnknown';
-    public const CONTENT_RATING_all = 'all';
-    public const CONTENT_RATING_preTeen = 'preTeen';
-    public const CONTENT_RATING_teen = 'teen';
-    public const CONTENT_RATING_mature = 'mature';
-    public const DISTRIBUTION_CHANNEL_publicGoogleHosted = 'publicGoogleHosted';
-    public const DISTRIBUTION_CHANNEL_privateGoogleHosted = 'privateGoogleHosted';
-    public const DISTRIBUTION_CHANNEL_privateSelfHosted = 'privateSelfHosted';
-    /**
-     * Unknown pricing, used to denote an approved product that is not generally
-     * available.
-     */
-    public const PRODUCT_PRICING_unknown = 'unknown';
-    /**
-     * The product is free.
-     */
-    public const PRODUCT_PRICING_free = 'free';
-    /**
-     * The product is free, but offers in-app purchases.
-     */
-    public const PRODUCT_PRICING_freeWithInAppPurchase = 'freeWithInAppPurchase';
-    /**
-     * The product is paid.
-     */
-    public const PRODUCT_PRICING_paid = 'paid';
-    protected $collection_key = 'screenshotUrls';
-    protected $appRestrictionsSchemaType = AppRestrictionsSchema::class;
-    protected $appRestrictionsSchemaDataType = '';
-    protected $appTracksType = TrackInfo::class;
-    protected $appTracksDataType = 'array';
-    protected $appVersionType = AppVersion::class;
-    protected $appVersionDataType = 'array';
-    /**
-     * The name of the author of the product (for example, the app developer).
-     *
-     * @var string
-     */
-    public $authorName;
-    /**
-     * The countries which this app is available in.
-     *
-     * @var string[]
-     */
-    public $availableCountries;
-    /**
-     * Deprecated, use appTracks instead.
-     *
-     * @var string[]
-     */
-    public $availableTracks;
-    /**
-     * The app category (e.g. RACING, SOCIAL, etc.)
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * The content rating for this app.
-     *
-     * @var string
-     */
-    public $contentRating;
-    /**
-     * The localized promotional description, if available.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A link to the (consumer) Google Play details page for the product.
-     *
-     * @var string
-     */
-    public $detailsUrl;
-    /**
-     * How and to whom the package is made available. The value publicGoogleHosted
-     * means that the package is available through the Play store and not
-     * restricted to a specific enterprise. The value privateGoogleHosted means
-     * that the package is a private app (restricted to an enterprise) but hosted
-     * by Google. The value privateSelfHosted means that the package is a private
-     * app (restricted to an enterprise) and is privately hosted.
-     *
-     * @var string
-     */
-    public $distributionChannel;
-    /**
-     * Noteworthy features (if any) of this product.
-     *
-     * @var string[]
-     */
-    public $features;
-    /**
-     * The localized full app store description, if available.
-     *
-     * @var string
-     */
-    public $fullDescription;
-    /**
-     * A link to an image that can be used as an icon for the product. This image
-     * is suitable for use at up to 512px x 512px.
-     *
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * The approximate time (within 7 days) the app was last published, expressed
-     * in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $lastUpdatedTimestampMillis;
-    /**
-     * The minimum Android SDK necessary to run the app.
-     *
-     * @var int
-     */
-    public $minAndroidSdkVersion;
-    protected $permissionsType = ProductPermission::class;
-    protected $permissionsDataType = 'array';
-    /**
-     * A string of the form *app:*. For example, app:com.google.android.gm
-     * represents the Gmail app.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Whether this product is free, free with in-app purchases, or paid. If the
-     * pricing is unknown, this means the product is not generally available
-     * anymore (even though it might still be available to people who own it).
-     *
-     * @var string
-     */
-    public $productPricing;
-    /**
-     * A description of the recent changes made to the app.
-     *
-     * @var string
-     */
-    public $recentChanges;
-    /**
-     * Deprecated.
-     *
-     * @var bool
-     */
-    public $requiresContainerApp;
-    /**
-     * A list of screenshot links representing the app.
-     *
-     * @var string[]
-     */
-    public $screenshotUrls;
-    protected $signingCertificateType = ProductSigningCertificate::class;
-    protected $signingCertificateDataType = '';
-    /**
-     * A link to a smaller image that can be used as an icon for the product. This
-     * image is suitable for use at up to 128px x 128px.
-     *
-     * @var string
-     */
-    public $smallIconUrl;
-    /**
-     * The name of the product.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * A link to the managed Google Play details page for the product, for use by
-     * an Enterprise admin.
-     *
-     * @var string
-     */
-    public $workDetailsUrl;
-    /**
-     * The app restriction schema
-     *
-     * @param AppRestrictionsSchema $appRestrictionsSchema
-     */
-    public function setAppRestrictionsSchema(AppRestrictionsSchema $appRestrictionsSchema)
+namespace Google\Service\AndroidEnterprise {
+    class Product extends \Google\Collection
     {
+        public const CONTENT_RATING_ratingUnknown = 'ratingUnknown';
+        public const CONTENT_RATING_all = 'all';
+        public const CONTENT_RATING_preTeen = 'preTeen';
+        public const CONTENT_RATING_teen = 'teen';
+        public const CONTENT_RATING_mature = 'mature';
+        public const DISTRIBUTION_CHANNEL_publicGoogleHosted = 'publicGoogleHosted';
+        public const DISTRIBUTION_CHANNEL_privateGoogleHosted = 'privateGoogleHosted';
+        public const DISTRIBUTION_CHANNEL_privateSelfHosted = 'privateSelfHosted';
+        /**
+         * Unknown pricing, used to denote an approved product that is not generally
+         * available.
+         */
+        public const PRODUCT_PRICING_unknown = 'unknown';
+        /**
+         * The product is free.
+         */
+        public const PRODUCT_PRICING_free = 'free';
+        /**
+         * The product is free, but offers in-app purchases.
+         */
+        public const PRODUCT_PRICING_freeWithInAppPurchase = 'freeWithInAppPurchase';
+        /**
+         * The product is paid.
+         */
+        public const PRODUCT_PRICING_paid = 'paid';
+        protected $collection_key = 'screenshotUrls';
+        protected $appRestrictionsSchemaType = AppRestrictionsSchema::class;
+        protected $appRestrictionsSchemaDataType = '';
+        protected $appTracksType = TrackInfo::class;
+        protected $appTracksDataType = 'array';
+        protected $appVersionType = AppVersion::class;
+        protected $appVersionDataType = 'array';
+        /**
+         * The name of the author of the product (for example, the app developer).
+         *
+         * @var string
+         */
+        public $authorName;
+        /**
+         * The countries which this app is available in.
+         *
+         * @var string[]
+         */
+        public $availableCountries;
+        /**
+         * Deprecated, use appTracks instead.
+         *
+         * @var string[]
+         */
+        public $availableTracks;
+        /**
+         * The app category (e.g. RACING, SOCIAL, etc.)
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * The content rating for this app.
+         *
+         * @var string
+         */
+        public $contentRating;
+        /**
+         * The localized promotional description, if available.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A link to the (consumer) Google Play details page for the product.
+         *
+         * @var string
+         */
+        public $detailsUrl;
+        /**
+         * How and to whom the package is made available. The value publicGoogleHosted
+         * means that the package is available through the Play store and not
+         * restricted to a specific enterprise. The value privateGoogleHosted means
+         * that the package is a private app (restricted to an enterprise) but hosted
+         * by Google. The value privateSelfHosted means that the package is a private
+         * app (restricted to an enterprise) and is privately hosted.
+         *
+         * @var string
+         */
+        public $distributionChannel;
+        /**
+         * Noteworthy features (if any) of this product.
+         *
+         * @var string[]
+         */
+        public $features;
+        /**
+         * The localized full app store description, if available.
+         *
+         * @var string
+         */
+        public $fullDescription;
+        /**
+         * A link to an image that can be used as an icon for the product. This image
+         * is suitable for use at up to 512px x 512px.
+         *
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * The approximate time (within 7 days) the app was last published, expressed
+         * in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $lastUpdatedTimestampMillis;
+        /**
+         * The minimum Android SDK necessary to run the app.
+         *
+         * @var int
+         */
+        public $minAndroidSdkVersion;
+        protected $permissionsType = ProductPermission::class;
+        protected $permissionsDataType = 'array';
+        /**
+         * A string of the form *app:*. For example, app:com.google.android.gm
+         * represents the Gmail app.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Whether this product is free, free with in-app purchases, or paid. If the
+         * pricing is unknown, this means the product is not generally available
+         * anymore (even though it might still be available to people who own it).
+         *
+         * @var string
+         */
+        public $productPricing;
+        /**
+         * A description of the recent changes made to the app.
+         *
+         * @var string
+         */
+        public $recentChanges;
+        /**
+         * Deprecated.
+         *
+         * @var bool
+         */
+        public $requiresContainerApp;
+        /**
+         * A list of screenshot links representing the app.
+         *
+         * @var string[]
+         */
+        public $screenshotUrls;
+        protected $signingCertificateType = ProductSigningCertificate::class;
+        protected $signingCertificateDataType = '';
+        /**
+         * A link to a smaller image that can be used as an icon for the product. This
+         * image is suitable for use at up to 128px x 128px.
+         *
+         * @var string
+         */
+        public $smallIconUrl;
+        /**
+         * The name of the product.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * A link to the managed Google Play details page for the product, for use by
+         * an Enterprise admin.
+         *
+         * @var string
+         */
+        public $workDetailsUrl;
+        /**
+         * The app restriction schema
+         *
+         * @param AppRestrictionsSchema $appRestrictionsSchema
+         */
+        public function setAppRestrictionsSchema(AppRestrictionsSchema $appRestrictionsSchema)
+        {
+        }
+        /**
+         * @return AppRestrictionsSchema
+         */
+        public function getAppRestrictionsSchema()
+        {
+        }
+        /**
+         * The tracks visible to the enterprise.
+         *
+         * @param TrackInfo[] $appTracks
+         */
+        public function setAppTracks($appTracks)
+        {
+        }
+        /**
+         * @return TrackInfo[]
+         */
+        public function getAppTracks()
+        {
+        }
+        /**
+         * App versions currently available for this product.
+         *
+         * @param AppVersion[] $appVersion
+         */
+        public function setAppVersion($appVersion)
+        {
+        }
+        /**
+         * @return AppVersion[]
+         */
+        public function getAppVersion()
+        {
+        }
+        /**
+         * The name of the author of the product (for example, the app developer).
+         *
+         * @param string $authorName
+         */
+        public function setAuthorName($authorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorName()
+        {
+        }
+        /**
+         * The countries which this app is available in.
+         *
+         * @param string[] $availableCountries
+         */
+        public function setAvailableCountries($availableCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailableCountries()
+        {
+        }
+        /**
+         * Deprecated, use appTracks instead.
+         *
+         * @param string[] $availableTracks
+         */
+        public function setAvailableTracks($availableTracks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailableTracks()
+        {
+        }
+        /**
+         * The app category (e.g. RACING, SOCIAL, etc.)
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The content rating for this app.
+         *
+         * Accepted values: ratingUnknown, all, preTeen, teen, mature
+         *
+         * @param self::CONTENT_RATING_* $contentRating
+         */
+        public function setContentRating($contentRating)
+        {
+        }
+        /**
+         * @return self::CONTENT_RATING_*
+         */
+        public function getContentRating()
+        {
+        }
+        /**
+         * The localized promotional description, if available.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * A link to the (consumer) Google Play details page for the product.
+         *
+         * @param string $detailsUrl
+         */
+        public function setDetailsUrl($detailsUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetailsUrl()
+        {
+        }
+        /**
+         * How and to whom the package is made available. The value publicGoogleHosted
+         * means that the package is available through the Play store and not
+         * restricted to a specific enterprise. The value privateGoogleHosted means
+         * that the package is a private app (restricted to an enterprise) but hosted
+         * by Google. The value privateSelfHosted means that the package is a private
+         * app (restricted to an enterprise) and is privately hosted.
+         *
+         * Accepted values: publicGoogleHosted, privateGoogleHosted, privateSelfHosted
+         *
+         * @param self::DISTRIBUTION_CHANNEL_* $distributionChannel
+         */
+        public function setDistributionChannel($distributionChannel)
+        {
+        }
+        /**
+         * @return self::DISTRIBUTION_CHANNEL_*
+         */
+        public function getDistributionChannel()
+        {
+        }
+        /**
+         * Noteworthy features (if any) of this product.
+         *
+         * @param string[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * The localized full app store description, if available.
+         *
+         * @param string $fullDescription
+         */
+        public function setFullDescription($fullDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullDescription()
+        {
+        }
+        /**
+         * A link to an image that can be used as an icon for the product. This image
+         * is suitable for use at up to 512px x 512px.
+         *
+         * @param string $iconUrl
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * The approximate time (within 7 days) the app was last published, expressed
+         * in milliseconds since epoch.
+         *
+         * @param string $lastUpdatedTimestampMillis
+         */
+        public function setLastUpdatedTimestampMillis($lastUpdatedTimestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestampMillis()
+        {
+        }
+        /**
+         * The minimum Android SDK necessary to run the app.
+         *
+         * @param int $minAndroidSdkVersion
+         */
+        public function setMinAndroidSdkVersion($minAndroidSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinAndroidSdkVersion()
+        {
+        }
+        /**
+         * A list of permissions required by the app.
+         *
+         * @param ProductPermission[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return ProductPermission[]
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * A string of the form *app:*. For example, app:com.google.android.gm
+         * represents the Gmail app.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Whether this product is free, free with in-app purchases, or paid. If the
+         * pricing is unknown, this means the product is not generally available
+         * anymore (even though it might still be available to people who own it).
+         *
+         * Accepted values: unknown, free, freeWithInAppPurchase, paid
+         *
+         * @param self::PRODUCT_PRICING_* $productPricing
+         */
+        public function setProductPricing($productPricing)
+        {
+        }
+        /**
+         * @return self::PRODUCT_PRICING_*
+         */
+        public function getProductPricing()
+        {
+        }
+        /**
+         * A description of the recent changes made to the app.
+         *
+         * @param string $recentChanges
+         */
+        public function setRecentChanges($recentChanges)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecentChanges()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param bool $requiresContainerApp
+         */
+        public function setRequiresContainerApp($requiresContainerApp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequiresContainerApp()
+        {
+        }
+        /**
+         * A list of screenshot links representing the app.
+         *
+         * @param string[] $screenshotUrls
+         */
+        public function setScreenshotUrls($screenshotUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScreenshotUrls()
+        {
+        }
+        /**
+         * The certificate used to sign this product.
+         *
+         * @param ProductSigningCertificate $signingCertificate
+         */
+        public function setSigningCertificate(ProductSigningCertificate $signingCertificate)
+        {
+        }
+        /**
+         * @return ProductSigningCertificate
+         */
+        public function getSigningCertificate()
+        {
+        }
+        /**
+         * A link to a smaller image that can be used as an icon for the product. This
+         * image is suitable for use at up to 128px x 128px.
+         *
+         * @param string $smallIconUrl
+         */
+        public function setSmallIconUrl($smallIconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSmallIconUrl()
+        {
+        }
+        /**
+         * The name of the product.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * A link to the managed Google Play details page for the product, for use by
+         * an Enterprise admin.
+         *
+         * @param string $workDetailsUrl
+         */
+        public function setWorkDetailsUrl($workDetailsUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkDetailsUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppRestrictionsSchema
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppRestrictionsSchema()
-    {
-    }
-    /**
-     * The tracks visible to the enterprise.
-     *
-     * @param TrackInfo[] $appTracks
-     */
-    public function setAppTracks($appTracks)
-    {
-    }
-    /**
-     * @return TrackInfo[]
-     */
-    public function getAppTracks()
-    {
-    }
-    /**
-     * App versions currently available for this product.
-     *
-     * @param AppVersion[] $appVersion
-     */
-    public function setAppVersion($appVersion)
-    {
-    }
-    /**
-     * @return AppVersion[]
-     */
-    public function getAppVersion()
-    {
-    }
-    /**
-     * The name of the author of the product (for example, the app developer).
-     *
-     * @param string $authorName
-     */
-    public function setAuthorName($authorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorName()
-    {
-    }
-    /**
-     * The countries which this app is available in.
-     *
-     * @param string[] $availableCountries
-     */
-    public function setAvailableCountries($availableCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvailableCountries()
-    {
-    }
-    /**
-     * Deprecated, use appTracks instead.
-     *
-     * @param string[] $availableTracks
-     */
-    public function setAvailableTracks($availableTracks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvailableTracks()
-    {
-    }
-    /**
-     * The app category (e.g. RACING, SOCIAL, etc.)
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * The content rating for this app.
-     *
-     * Accepted values: ratingUnknown, all, preTeen, teen, mature
-     *
-     * @param self::CONTENT_RATING_* $contentRating
-     */
-    public function setContentRating($contentRating)
-    {
-    }
-    /**
-     * @return self::CONTENT_RATING_*
-     */
-    public function getContentRating()
-    {
-    }
-    /**
-     * The localized promotional description, if available.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * A link to the (consumer) Google Play details page for the product.
-     *
-     * @param string $detailsUrl
-     */
-    public function setDetailsUrl($detailsUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetailsUrl()
-    {
-    }
-    /**
-     * How and to whom the package is made available. The value publicGoogleHosted
-     * means that the package is available through the Play store and not
-     * restricted to a specific enterprise. The value privateGoogleHosted means
-     * that the package is a private app (restricted to an enterprise) but hosted
-     * by Google. The value privateSelfHosted means that the package is a private
-     * app (restricted to an enterprise) and is privately hosted.
-     *
-     * Accepted values: publicGoogleHosted, privateGoogleHosted, privateSelfHosted
-     *
-     * @param self::DISTRIBUTION_CHANNEL_* $distributionChannel
-     */
-    public function setDistributionChannel($distributionChannel)
-    {
-    }
-    /**
-     * @return self::DISTRIBUTION_CHANNEL_*
-     */
-    public function getDistributionChannel()
-    {
-    }
-    /**
-     * Noteworthy features (if any) of this product.
-     *
-     * @param string[] $features
-     */
-    public function setFeatures($features)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * The localized full app store description, if available.
-     *
-     * @param string $fullDescription
-     */
-    public function setFullDescription($fullDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullDescription()
-    {
-    }
-    /**
-     * A link to an image that can be used as an icon for the product. This image
-     * is suitable for use at up to 512px x 512px.
-     *
-     * @param string $iconUrl
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * The approximate time (within 7 days) the app was last published, expressed
-     * in milliseconds since epoch.
-     *
-     * @param string $lastUpdatedTimestampMillis
-     */
-    public function setLastUpdatedTimestampMillis($lastUpdatedTimestampMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdatedTimestampMillis()
-    {
-    }
-    /**
-     * The minimum Android SDK necessary to run the app.
-     *
-     * @param int $minAndroidSdkVersion
-     */
-    public function setMinAndroidSdkVersion($minAndroidSdkVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinAndroidSdkVersion()
-    {
-    }
-    /**
-     * A list of permissions required by the app.
-     *
-     * @param ProductPermission[] $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return ProductPermission[]
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * A string of the form *app:*. For example, app:com.google.android.gm
-     * represents the Gmail app.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Whether this product is free, free with in-app purchases, or paid. If the
-     * pricing is unknown, this means the product is not generally available
-     * anymore (even though it might still be available to people who own it).
-     *
-     * Accepted values: unknown, free, freeWithInAppPurchase, paid
-     *
-     * @param self::PRODUCT_PRICING_* $productPricing
-     */
-    public function setProductPricing($productPricing)
-    {
-    }
-    /**
-     * @return self::PRODUCT_PRICING_*
-     */
-    public function getProductPricing()
-    {
-    }
-    /**
-     * A description of the recent changes made to the app.
-     *
-     * @param string $recentChanges
-     */
-    public function setRecentChanges($recentChanges)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecentChanges()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param bool $requiresContainerApp
-     */
-    public function setRequiresContainerApp($requiresContainerApp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequiresContainerApp()
-    {
-    }
-    /**
-     * A list of screenshot links representing the app.
-     *
-     * @param string[] $screenshotUrls
-     */
-    public function setScreenshotUrls($screenshotUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScreenshotUrls()
-    {
-    }
-    /**
-     * The certificate used to sign this product.
-     *
-     * @param ProductSigningCertificate $signingCertificate
-     */
-    public function setSigningCertificate(ProductSigningCertificate $signingCertificate)
-    {
-    }
-    /**
-     * @return ProductSigningCertificate
-     */
-    public function getSigningCertificate()
-    {
-    }
-    /**
-     * A link to a smaller image that can be used as an icon for the product. This
-     * image is suitable for use at up to 128px x 128px.
-     *
-     * @param string $smallIconUrl
-     */
-    public function setSmallIconUrl($smallIconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSmallIconUrl()
-    {
-    }
-    /**
-     * The name of the product.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * A link to the managed Google Play details page for the product, for use by
-     * an Enterprise admin.
-     *
-     * @param string $workDetailsUrl
-     */
-    public function setWorkDetailsUrl($workDetailsUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkDetailsUrl()
+    class Google_Service_AndroidEnterprise_Product extends \Google\Service\AndroidEnterprise\Product
     {
     }
 }

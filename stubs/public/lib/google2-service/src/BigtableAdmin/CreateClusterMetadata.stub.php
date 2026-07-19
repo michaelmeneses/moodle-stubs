@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateClusterMetadata extends \Google\Model
-{
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    protected $originalRequestType = CreateClusterRequest::class;
-    protected $originalRequestDataType = '';
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    protected $tablesType = TableProgress::class;
-    protected $tablesDataType = 'map';
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
+namespace Google\Service\BigtableAdmin {
+    class CreateClusterMetadata extends \Google\Model
     {
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        protected $originalRequestType = CreateClusterRequest::class;
+        protected $originalRequestDataType = '';
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        protected $tablesType = TableProgress::class;
+        protected $tablesDataType = 'map';
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The request that prompted the initiation of this CreateCluster operation.
+         *
+         * @param CreateClusterRequest $originalRequest
+         */
+        public function setOriginalRequest(CreateClusterRequest $originalRequest)
+        {
+        }
+        /**
+         * @return CreateClusterRequest
+         */
+        public function getOriginalRequest()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * Keys: the full `name` of each table that existed in the instance when
+         * CreateCluster was first called, i.e. `projects//instances//tables/`. Any
+         * table added to the instance by a later API call will be created in the new
+         * cluster by that API call, not this one. Values: information on how much of
+         * a table's data has been copied to the newly-created cluster so far.
+         *
+         * @param TableProgress[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return TableProgress[]
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateClusterMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The request that prompted the initiation of this CreateCluster operation.
-     *
-     * @param CreateClusterRequest $originalRequest
-     */
-    public function setOriginalRequest(CreateClusterRequest $originalRequest)
-    {
-    }
-    /**
-     * @return CreateClusterRequest
-     */
-    public function getOriginalRequest()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * Keys: the full `name` of each table that existed in the instance when
-     * CreateCluster was first called, i.e. `projects//instances//tables/`. Any
-     * table added to the instance by a later API call will be created in the new
-     * cluster by that API call, not this one. Values: information on how much of
-     * a table's data has been copied to the newly-created cluster so far.
-     *
-     * @param TableProgress[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return TableProgress[]
-     */
-    public function getTables()
+    class Google_Service_BigtableAdmin_CreateClusterMetadata extends \Google\Service\BigtableAdmin\CreateClusterMetadata
     {
     }
 }

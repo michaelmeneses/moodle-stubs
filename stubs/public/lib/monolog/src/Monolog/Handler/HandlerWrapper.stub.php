@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\ResettableInterface;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * This simple wrapper class can be used to extend handlers functionality.
  *

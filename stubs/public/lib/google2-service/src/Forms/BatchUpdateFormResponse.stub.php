@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class BatchUpdateFormResponse extends \Google\Collection
-{
-    protected $collection_key = 'replies';
-    protected $formType = Form::class;
-    protected $formDataType = '';
-    protected $repliesType = Response::class;
-    protected $repliesDataType = 'array';
-    protected $writeControlType = WriteControl::class;
-    protected $writeControlDataType = '';
-    /**
-     * Based on the bool request field `include_form_in_response`, a form with all
-     * applied mutations/updates is returned or not. This may be later than the
-     * revision ID created by these changes.
-     *
-     * @param Form $form
-     */
-    public function setForm(Form $form)
+namespace Google\Service\Forms {
+    class BatchUpdateFormResponse extends \Google\Collection
     {
+        protected $collection_key = 'replies';
+        protected $formType = Form::class;
+        protected $formDataType = '';
+        protected $repliesType = Response::class;
+        protected $repliesDataType = 'array';
+        protected $writeControlType = WriteControl::class;
+        protected $writeControlDataType = '';
+        /**
+         * Based on the bool request field `include_form_in_response`, a form with all
+         * applied mutations/updates is returned or not. This may be later than the
+         * revision ID created by these changes.
+         *
+         * @param Form $form
+         */
+        public function setForm(Form $form)
+        {
+        }
+        /**
+         * @return Form
+         */
+        public function getForm()
+        {
+        }
+        /**
+         * The reply of the updates. This maps 1:1 with the update requests, although
+         * replies to some requests may be empty.
+         *
+         * @param Response[] $replies
+         */
+        public function setReplies($replies)
+        {
+        }
+        /**
+         * @return Response[]
+         */
+        public function getReplies()
+        {
+        }
+        /**
+         * The updated write control after applying the request.
+         *
+         * @param WriteControl $writeControl
+         */
+        public function setWriteControl(WriteControl $writeControl)
+        {
+        }
+        /**
+         * @return WriteControl
+         */
+        public function getWriteControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Form
+     * Runtime class alias of \Google\Service\Forms\BatchUpdateFormResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForm()
-    {
-    }
-    /**
-     * The reply of the updates. This maps 1:1 with the update requests, although
-     * replies to some requests may be empty.
-     *
-     * @param Response[] $replies
-     */
-    public function setReplies($replies)
-    {
-    }
-    /**
-     * @return Response[]
-     */
-    public function getReplies()
-    {
-    }
-    /**
-     * The updated write control after applying the request.
-     *
-     * @param WriteControl $writeControl
-     */
-    public function setWriteControl(WriteControl $writeControl)
-    {
-    }
-    /**
-     * @return WriteControl
-     */
-    public function getWriteControl()
+    class Google_Service_Forms_BatchUpdateFormResponse extends \Google\Service\Forms\BatchUpdateFormResponse
     {
     }
 }

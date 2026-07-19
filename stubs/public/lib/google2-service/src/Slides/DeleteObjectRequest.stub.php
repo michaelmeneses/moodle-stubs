@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class DeleteObjectRequest extends \Google\Model
-{
-    /**
-     * The object ID of the page or page element to delete. If after a delete
-     * operation a group contains only 1 or no page elements, the group is also
-     * deleted. If a placeholder is deleted on a layout, any empty inheriting
-     * placeholders are also deleted.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The object ID of the page or page element to delete. If after a delete
-     * operation a group contains only 1 or no page elements, the group is also
-     * deleted. If a placeholder is deleted on a layout, any empty inheriting
-     * placeholders are also deleted.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class DeleteObjectRequest extends \Google\Model
     {
+        /**
+         * The object ID of the page or page element to delete. If after a delete
+         * operation a group contains only 1 or no page elements, the group is also
+         * deleted. If a placeholder is deleted on a layout, any empty inheriting
+         * placeholders are also deleted.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The object ID of the page or page element to delete. If after a delete
+         * operation a group contains only 1 or no page elements, the group is also
+         * deleted. If a placeholder is deleted on a layout, any empty inheriting
+         * placeholders are also deleted.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\DeleteObjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Slides_DeleteObjectRequest extends \Google\Service\Slides\DeleteObjectRequest
     {
     }
 }

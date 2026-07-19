@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class TerraformOutput extends \Google\Model
-{
-    /**
-     * Identifies whether Terraform has set this output as a potential sensitive
-     * value.
-     *
-     * @var bool
-     */
-    public $sensitive;
-    /**
-     * Value of output.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Identifies whether Terraform has set this output as a potential sensitive
-     * value.
-     *
-     * @param bool $sensitive
-     */
-    public function setSensitive($sensitive)
+namespace Google\Service\Config {
+    class TerraformOutput extends \Google\Model
     {
+        /**
+         * Identifies whether Terraform has set this output as a potential sensitive
+         * value.
+         *
+         * @var bool
+         */
+        public $sensitive;
+        /**
+         * Value of output.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Identifies whether Terraform has set this output as a potential sensitive
+         * value.
+         *
+         * @param bool $sensitive
+         */
+        public function setSensitive($sensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSensitive()
+        {
+        }
+        /**
+         * Value of output.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Config\TerraformOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSensitive()
-    {
-    }
-    /**
-     * Value of output.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Config_TerraformOutput extends \Google\Service\Config\TerraformOutput
     {
     }
 }

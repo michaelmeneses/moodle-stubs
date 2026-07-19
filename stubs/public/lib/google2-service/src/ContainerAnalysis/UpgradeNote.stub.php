@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class UpgradeNote extends \Google\Collection
-{
-    protected $collection_key = 'distributions';
-    protected $distributionsType = UpgradeDistribution::class;
-    protected $distributionsDataType = 'array';
-    /**
-     * Required for non-Windows OS. The package this Upgrade is for.
-     *
-     * @var string
-     */
-    public $package;
-    protected $versionType = Version::class;
-    protected $versionDataType = '';
-    protected $windowsUpdateType = WindowsUpdate::class;
-    protected $windowsUpdateDataType = '';
-    /**
-     * Metadata about the upgrade for each specific operating system.
-     *
-     * @param UpgradeDistribution[] $distributions
-     */
-    public function setDistributions($distributions)
+namespace Google\Service\ContainerAnalysis {
+    class UpgradeNote extends \Google\Collection
     {
+        protected $collection_key = 'distributions';
+        protected $distributionsType = UpgradeDistribution::class;
+        protected $distributionsDataType = 'array';
+        /**
+         * Required for non-Windows OS. The package this Upgrade is for.
+         *
+         * @var string
+         */
+        public $package;
+        protected $versionType = Version::class;
+        protected $versionDataType = '';
+        protected $windowsUpdateType = WindowsUpdate::class;
+        protected $windowsUpdateDataType = '';
+        /**
+         * Metadata about the upgrade for each specific operating system.
+         *
+         * @param UpgradeDistribution[] $distributions
+         */
+        public function setDistributions($distributions)
+        {
+        }
+        /**
+         * @return UpgradeDistribution[]
+         */
+        public function getDistributions()
+        {
+        }
+        /**
+         * Required for non-Windows OS. The package this Upgrade is for.
+         *
+         * @param string $package
+         */
+        public function setPackage($package)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackage()
+        {
+        }
+        /**
+         * Required for non-Windows OS. The version of the package in machine + human
+         * readable form.
+         *
+         * @param Version $version
+         */
+        public function setVersion(Version $version)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * Required for Windows OS. Represents the metadata about the Windows update.
+         *
+         * @param WindowsUpdate $windowsUpdate
+         */
+        public function setWindowsUpdate(WindowsUpdate $windowsUpdate)
+        {
+        }
+        /**
+         * @return WindowsUpdate
+         */
+        public function getWindowsUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpgradeDistribution[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\UpgradeNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistributions()
-    {
-    }
-    /**
-     * Required for non-Windows OS. The package this Upgrade is for.
-     *
-     * @param string $package
-     */
-    public function setPackage($package)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackage()
-    {
-    }
-    /**
-     * Required for non-Windows OS. The version of the package in machine + human
-     * readable form.
-     *
-     * @param Version $version
-     */
-    public function setVersion(Version $version)
-    {
-    }
-    /**
-     * @return Version
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * Required for Windows OS. Represents the metadata about the Windows update.
-     *
-     * @param WindowsUpdate $windowsUpdate
-     */
-    public function setWindowsUpdate(WindowsUpdate $windowsUpdate)
-    {
-    }
-    /**
-     * @return WindowsUpdate
-     */
-    public function getWindowsUpdate()
+    class Google_Service_ContainerAnalysis_UpgradeNote extends \Google\Service\ContainerAnalysis\UpgradeNote
     {
     }
 }

@@ -16,6 +16,13 @@
  */
 namespace Monolog\Handler;
 
+use Closure;
+use Monolog\Level;
+use Monolog\Logger;
+use Monolog\ResettableInterface;
+use Monolog\Formatter\FormatterInterface;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Simple handler wrapper that filters records based on a list of levels
  *

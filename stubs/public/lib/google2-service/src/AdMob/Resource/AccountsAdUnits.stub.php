@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob\Resource;
-
-/**
- * The "adUnits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $admobService = new Google\Service\AdMob(...);
- *   $adUnits = $admobService->accounts_adUnits;
- *  </code>
- */
-class AccountsAdUnits extends \Google\Service\Resource
-{
+namespace Google\Service\AdMob\Resource {
+    use Google\Service\AdMob\ListAdUnitsResponse;
     /**
-     * List the ad units under the specified AdMob account.
-     * (adUnits.listAccountsAdUnits)
-     *
-     * @param string $parent Required. Resource name of the account to list ad units
-     * for. Example: accounts/pub-9876543210987654
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of ad units to return. If
-     * unspecified or 0, at most 10,000 ad units will be returned. The maximum value
-     * is 20,000; values above 20,000 will be coerced to 20,000.
-     * @opt_param string pageToken The value returned by the last
-     * `ListAdUnitsResponse`; indicates that this is a continuation of a prior
-     * `ListAdUnits` call, and that the system should return the next page of data.
-     * @return ListAdUnitsResponse
-     * @throws \Google\Service\Exception
+     * The "adUnits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $admobService = new Google\Service\AdMob(...);
+     *   $adUnits = $admobService->accounts_adUnits;
+     *  </code>
      */
-    public function listAccountsAdUnits($parent, $optParams = [])
+    class AccountsAdUnits extends \Google\Service\Resource
+    {
+        /**
+         * List the ad units under the specified AdMob account.
+         * (adUnits.listAccountsAdUnits)
+         *
+         * @param string $parent Required. Resource name of the account to list ad units
+         * for. Example: accounts/pub-9876543210987654
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of ad units to return. If
+         * unspecified or 0, at most 10,000 ad units will be returned. The maximum value
+         * is 20,000; values above 20,000 will be coerced to 20,000.
+         * @opt_param string pageToken The value returned by the last
+         * `ListAdUnitsResponse`; indicates that this is a continuation of a prior
+         * `ListAdUnits` call, and that the system should return the next page of data.
+         * @return ListAdUnitsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdUnits($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdMob\Resource\AccountsAdUnits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdMob_Resource_AccountsAdUnits extends \Google\Service\AdMob\Resource\AccountsAdUnits
     {
     }
 }

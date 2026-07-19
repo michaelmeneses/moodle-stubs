@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class DataRetentionConfig extends \Google\Model
-{
-    protected $airflowMetadataRetentionConfigType = AirflowMetadataRetentionPolicyConfig::class;
-    protected $airflowMetadataRetentionConfigDataType = '';
-    protected $taskLogsRetentionConfigType = TaskLogsRetentionConfig::class;
-    protected $taskLogsRetentionConfigDataType = '';
-    /**
-     * Optional. The retention policy for airflow metadata database.
-     *
-     * @param AirflowMetadataRetentionPolicyConfig $airflowMetadataRetentionConfig
-     */
-    public function setAirflowMetadataRetentionConfig(AirflowMetadataRetentionPolicyConfig $airflowMetadataRetentionConfig)
+namespace Google\Service\CloudComposer {
+    class DataRetentionConfig extends \Google\Model
     {
+        protected $airflowMetadataRetentionConfigType = AirflowMetadataRetentionPolicyConfig::class;
+        protected $airflowMetadataRetentionConfigDataType = '';
+        protected $taskLogsRetentionConfigType = TaskLogsRetentionConfig::class;
+        protected $taskLogsRetentionConfigDataType = '';
+        /**
+         * Optional. The retention policy for airflow metadata database.
+         *
+         * @param AirflowMetadataRetentionPolicyConfig $airflowMetadataRetentionConfig
+         */
+        public function setAirflowMetadataRetentionConfig(AirflowMetadataRetentionPolicyConfig $airflowMetadataRetentionConfig)
+        {
+        }
+        /**
+         * @return AirflowMetadataRetentionPolicyConfig
+         */
+        public function getAirflowMetadataRetentionConfig()
+        {
+        }
+        /**
+         * Optional. The configuration settings for task logs retention
+         *
+         * @param TaskLogsRetentionConfig $taskLogsRetentionConfig
+         */
+        public function setTaskLogsRetentionConfig(TaskLogsRetentionConfig $taskLogsRetentionConfig)
+        {
+        }
+        /**
+         * @return TaskLogsRetentionConfig
+         */
+        public function getTaskLogsRetentionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AirflowMetadataRetentionPolicyConfig
+     * Runtime class alias of \Google\Service\CloudComposer\DataRetentionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAirflowMetadataRetentionConfig()
-    {
-    }
-    /**
-     * Optional. The configuration settings for task logs retention
-     *
-     * @param TaskLogsRetentionConfig $taskLogsRetentionConfig
-     */
-    public function setTaskLogsRetentionConfig(TaskLogsRetentionConfig $taskLogsRetentionConfig)
-    {
-    }
-    /**
-     * @return TaskLogsRetentionConfig
-     */
-    public function getTaskLogsRetentionConfig()
+    class Google_Service_CloudComposer_DataRetentionConfig extends \Google\Service\CloudComposer\DataRetentionConfig
     {
     }
 }

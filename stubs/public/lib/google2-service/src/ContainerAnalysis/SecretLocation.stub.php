@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SecretLocation extends \Google\Model
-{
-    protected $fileLocationType = GrafeasV1FileLocation::class;
-    protected $fileLocationDataType = '';
-    /**
-     * The secret is found from a file.
-     *
-     * @param GrafeasV1FileLocation $fileLocation
-     */
-    public function setFileLocation(GrafeasV1FileLocation $fileLocation)
+namespace Google\Service\ContainerAnalysis {
+    class SecretLocation extends \Google\Model
     {
+        protected $fileLocationType = GrafeasV1FileLocation::class;
+        protected $fileLocationDataType = '';
+        /**
+         * The secret is found from a file.
+         *
+         * @param GrafeasV1FileLocation $fileLocation
+         */
+        public function setFileLocation(GrafeasV1FileLocation $fileLocation)
+        {
+        }
+        /**
+         * @return GrafeasV1FileLocation
+         */
+        public function getFileLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GrafeasV1FileLocation
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SecretLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileLocation()
+    class Google_Service_ContainerAnalysis_SecretLocation extends \Google\Service\ContainerAnalysis\SecretLocation
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ContentSource extends \Google\Model
-{
-    /**
-     * The resource type is unspecified.
-     */
-    public const RESOURCE_TYPE_RESOURCE_TYPE_UNSPECIFIED = 'RESOURCE_TYPE_UNSPECIFIED';
-    /**
-     * The resource type is google spreadsheet.
-     */
-    public const RESOURCE_TYPE_RESOURCE_TYPE_GOOGLE_SPREADSHEET = 'RESOURCE_TYPE_GOOGLE_SPREADSHEET';
-    /**
-     * The resource type is remote file.
-     */
-    public const RESOURCE_TYPE_RESOURCE_TYPE_REMOTE_FILE = 'RESOURCE_TYPE_REMOTE_FILE';
-    /**
-     * Optional. The name of the content source. It is defaulted to content source
-     * file name if not provided.
-     *
-     * @var string
-     */
-    public $contentSourceName;
-    protected $createInfoType = LastModifiedInfo::class;
-    protected $createInfoDataType = '';
-    protected $lastModifiedInfoType = LastModifiedInfo::class;
-    protected $lastModifiedInfoDataType = '';
-    protected $metaDataType = ContentSourceMetaData::class;
-    protected $metaDataDataType = '';
-    /**
-     * Required. The link to the file of the content source.
-     *
-     * @var string
-     */
-    public $resourceLink;
-    /**
-     * Required. The resource type of the content source.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Optional. The name of the content source. It is defaulted to content source
-     * file name if not provided.
-     *
-     * @param string $contentSourceName
-     */
-    public function setContentSourceName($contentSourceName)
+namespace Google\Service\Dfareporting {
+    class ContentSource extends \Google\Model
     {
+        /**
+         * The resource type is unspecified.
+         */
+        public const RESOURCE_TYPE_RESOURCE_TYPE_UNSPECIFIED = 'RESOURCE_TYPE_UNSPECIFIED';
+        /**
+         * The resource type is google spreadsheet.
+         */
+        public const RESOURCE_TYPE_RESOURCE_TYPE_GOOGLE_SPREADSHEET = 'RESOURCE_TYPE_GOOGLE_SPREADSHEET';
+        /**
+         * The resource type is remote file.
+         */
+        public const RESOURCE_TYPE_RESOURCE_TYPE_REMOTE_FILE = 'RESOURCE_TYPE_REMOTE_FILE';
+        /**
+         * Optional. The name of the content source. It is defaulted to content source
+         * file name if not provided.
+         *
+         * @var string
+         */
+        public $contentSourceName;
+        protected $createInfoType = LastModifiedInfo::class;
+        protected $createInfoDataType = '';
+        protected $lastModifiedInfoType = LastModifiedInfo::class;
+        protected $lastModifiedInfoDataType = '';
+        protected $metaDataType = ContentSourceMetaData::class;
+        protected $metaDataDataType = '';
+        /**
+         * Required. The link to the file of the content source.
+         *
+         * @var string
+         */
+        public $resourceLink;
+        /**
+         * Required. The resource type of the content source.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Optional. The name of the content source. It is defaulted to content source
+         * file name if not provided.
+         *
+         * @param string $contentSourceName
+         */
+        public function setContentSourceName($contentSourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentSourceName()
+        {
+        }
+        /**
+         * Output only. The creation timestamp of the content source. This is a read-
+         * only field.
+         *
+         * @param LastModifiedInfo $createInfo
+         */
+        public function setCreateInfo(LastModifiedInfo $createInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getCreateInfo()
+        {
+        }
+        /**
+         * Output only. The last modified timestamp of the content source. This is a
+         * read-only field.
+         *
+         * @param LastModifiedInfo $lastModifiedInfo
+         */
+        public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getLastModifiedInfo()
+        {
+        }
+        /**
+         * Output only. Metadata of the content source. It contains the number of rows
+         * and the column names from resource link. This is a read-only field.
+         *
+         * @param ContentSourceMetaData $metaData
+         */
+        public function setMetaData(ContentSourceMetaData $metaData)
+        {
+        }
+        /**
+         * @return ContentSourceMetaData
+         */
+        public function getMetaData()
+        {
+        }
+        /**
+         * Required. The link to the file of the content source.
+         *
+         * @param string $resourceLink
+         */
+        public function setResourceLink($resourceLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceLink()
+        {
+        }
+        /**
+         * Required. The resource type of the content source.
+         *
+         * Accepted values: RESOURCE_TYPE_UNSPECIFIED,
+         * RESOURCE_TYPE_GOOGLE_SPREADSHEET, RESOURCE_TYPE_REMOTE_FILE
+         *
+         * @param self::RESOURCE_TYPE_* $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return self::RESOURCE_TYPE_*
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ContentSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentSourceName()
-    {
-    }
-    /**
-     * Output only. The creation timestamp of the content source. This is a read-
-     * only field.
-     *
-     * @param LastModifiedInfo $createInfo
-     */
-    public function setCreateInfo(LastModifiedInfo $createInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getCreateInfo()
-    {
-    }
-    /**
-     * Output only. The last modified timestamp of the content source. This is a
-     * read-only field.
-     *
-     * @param LastModifiedInfo $lastModifiedInfo
-     */
-    public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getLastModifiedInfo()
-    {
-    }
-    /**
-     * Output only. Metadata of the content source. It contains the number of rows
-     * and the column names from resource link. This is a read-only field.
-     *
-     * @param ContentSourceMetaData $metaData
-     */
-    public function setMetaData(ContentSourceMetaData $metaData)
-    {
-    }
-    /**
-     * @return ContentSourceMetaData
-     */
-    public function getMetaData()
-    {
-    }
-    /**
-     * Required. The link to the file of the content source.
-     *
-     * @param string $resourceLink
-     */
-    public function setResourceLink($resourceLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceLink()
-    {
-    }
-    /**
-     * Required. The resource type of the content source.
-     *
-     * Accepted values: RESOURCE_TYPE_UNSPECIFIED,
-     * RESOURCE_TYPE_GOOGLE_SPREADSHEET, RESOURCE_TYPE_REMOTE_FILE
-     *
-     * @param self::RESOURCE_TYPE_* $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return self::RESOURCE_TYPE_*
-     */
-    public function getResourceType()
+    class Google_Service_Dfareporting_ContentSource extends \Google\Service\Dfareporting\ContentSource
     {
     }
 }

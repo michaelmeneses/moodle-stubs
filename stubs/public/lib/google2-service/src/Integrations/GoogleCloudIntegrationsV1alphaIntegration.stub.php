@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaIntegration extends \Google\Model
-{
-    /**
-     * Required. If any integration version is published.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * Required. Output only. Auto-generated.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The creator's email address. Generated based on the End User
-     * Credentials/LOAS role of the user making the call.
-     *
-     * @var string
-     */
-    public $creatorEmail;
-    /**
-     * Optional.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The last modifier of this integration
-     *
-     * @var string
-     */
-    public $lastModifierEmail;
-    /**
-     * Required. The resource name of the integration.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Auto-generated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. If any integration version is published.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaIntegration extends \Google\Model
     {
+        /**
+         * Required. If any integration version is published.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * Required. Output only. Auto-generated.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The creator's email address. Generated based on the End User
+         * Credentials/LOAS role of the user making the call.
+         *
+         * @var string
+         */
+        public $creatorEmail;
+        /**
+         * Optional.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The last modifier of this integration
+         *
+         * @var string
+         */
+        public $lastModifierEmail;
+        /**
+         * Required. The resource name of the integration.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Auto-generated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. If any integration version is published.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Required. Output only. Auto-generated.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The creator's email address. Generated based on the End User
+         * Credentials/LOAS role of the user making the call.
+         *
+         * @param string $creatorEmail
+         */
+        public function setCreatorEmail($creatorEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorEmail()
+        {
+        }
+        /**
+         * Optional.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The last modifier of this integration
+         *
+         * @param string $lastModifierEmail
+         */
+        public function setLastModifierEmail($lastModifierEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifierEmail()
+        {
+        }
+        /**
+         * Required. The resource name of the integration.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Auto-generated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * Required. Output only. Auto-generated.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The creator's email address. Generated based on the End User
-     * Credentials/LOAS role of the user making the call.
-     *
-     * @param string $creatorEmail
-     */
-    public function setCreatorEmail($creatorEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatorEmail()
-    {
-    }
-    /**
-     * Optional.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The last modifier of this integration
-     *
-     * @param string $lastModifierEmail
-     */
-    public function setLastModifierEmail($lastModifierEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifierEmail()
-    {
-    }
-    /**
-     * Required. The resource name of the integration.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Auto-generated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaIntegration extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegration
     {
     }
 }

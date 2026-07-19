@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "flexTemplates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $flexTemplates = $dataflowService->projects_locations_flexTemplates;
- *  </code>
- */
-class ProjectsLocationsFlexTemplates extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\LaunchFlexTemplateRequest;
+    use Google\Service\Dataflow\LaunchFlexTemplateResponse;
     /**
-     * Launch a job with a FlexTemplate. (flexTemplates.launch)
-     *
-     * @param string $projectId Required. The ID of the Cloud Platform project that
-     * the job belongs to.
-     * @param string $location Required. The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which
-     * to direct the request. E.g., us-central1, us-west1.
-     * @param LaunchFlexTemplateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LaunchFlexTemplateResponse
-     * @throws \Google\Service\Exception
+     * The "flexTemplates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $flexTemplates = $dataflowService->projects_locations_flexTemplates;
+     *  </code>
      */
-    public function launch($projectId, $location, LaunchFlexTemplateRequest $postBody, $optParams = [])
+    class ProjectsLocationsFlexTemplates extends \Google\Service\Resource
+    {
+        /**
+         * Launch a job with a FlexTemplate. (flexTemplates.launch)
+         *
+         * @param string $projectId Required. The ID of the Cloud Platform project that
+         * the job belongs to.
+         * @param string $location Required. The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which
+         * to direct the request. E.g., us-central1, us-west1.
+         * @param LaunchFlexTemplateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LaunchFlexTemplateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function launch($projectId, $location, LaunchFlexTemplateRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsFlexTemplates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_Resource_ProjectsLocationsFlexTemplates extends \Google\Service\Dataflow\Resource\ProjectsLocationsFlexTemplates
     {
     }
 }

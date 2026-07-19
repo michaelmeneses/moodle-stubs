@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ListFieldsResponse extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = GoogleFirestoreAdminV1Field::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * A page token that may be used to request another page of results. If blank,
-     * this is the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The requested fields.
-     *
-     * @param GoogleFirestoreAdminV1Field[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ListFieldsResponse extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = GoogleFirestoreAdminV1Field::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * A page token that may be used to request another page of results. If blank,
+         * this is the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The requested fields.
+         *
+         * @param GoogleFirestoreAdminV1Field[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1Field[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * A page token that may be used to request another page of results. If blank,
+         * this is the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1Field[]
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ListFieldsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * A page token that may be used to request another page of results. If blank,
-     * this is the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ListFieldsResponse extends \Google\Service\Firestore\GoogleFirestoreAdminV1ListFieldsResponse
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class WeeklySchedule extends \Google\Collection
-{
-    protected $collection_key = 'startTimes';
-    /**
-     * The days of the week to perform a backup. If this field is left empty, the
-     * default of every day of the week is used.
-     *
-     * @var string[]
-     */
-    public $daysOfWeek;
-    protected $startTimesType = GoogleTypeTimeOfDay::class;
-    protected $startTimesDataType = 'array';
-    /**
-     * The days of the week to perform a backup. If this field is left empty, the
-     * default of every day of the week is used.
-     *
-     * @param string[] $daysOfWeek
-     */
-    public function setDaysOfWeek($daysOfWeek)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class WeeklySchedule extends \Google\Collection
     {
+        protected $collection_key = 'startTimes';
+        /**
+         * The days of the week to perform a backup. If this field is left empty, the
+         * default of every day of the week is used.
+         *
+         * @var string[]
+         */
+        public $daysOfWeek;
+        protected $startTimesType = GoogleTypeTimeOfDay::class;
+        protected $startTimesDataType = 'array';
+        /**
+         * The days of the week to perform a backup. If this field is left empty, the
+         * default of every day of the week is used.
+         *
+         * @param string[] $daysOfWeek
+         */
+        public function setDaysOfWeek($daysOfWeek)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDaysOfWeek()
+        {
+        }
+        /**
+         * The times during the day to start a backup. The start times are assumed to
+         * be in UTC and to be an exact hour (e.g., 04:00:00). If no start times are
+         * provided, a single fixed start time is chosen arbitrarily.
+         *
+         * @param GoogleTypeTimeOfDay[] $startTimes
+         */
+        public function setStartTimes($startTimes)
+        {
+        }
+        /**
+         * @return GoogleTypeTimeOfDay[]
+         */
+        public function getStartTimes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\WeeklySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysOfWeek()
-    {
-    }
-    /**
-     * The times during the day to start a backup. The start times are assumed to
-     * be in UTC and to be an exact hour (e.g., 04:00:00). If no start times are
-     * provided, a single fixed start time is chosen arbitrarily.
-     *
-     * @param GoogleTypeTimeOfDay[] $startTimes
-     */
-    public function setStartTimes($startTimes)
-    {
-    }
-    /**
-     * @return GoogleTypeTimeOfDay[]
-     */
-    public function getStartTimes()
+    class Google_Service_CloudAlloyDBAdmin_WeeklySchedule extends \Google\Service\CloudAlloyDBAdmin\WeeklySchedule
     {
     }
 }

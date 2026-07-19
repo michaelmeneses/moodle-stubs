@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ListDebugTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'debugTokens';
-    protected $debugTokensType = GoogleFirebaseAppcheckV1DebugToken::class;
-    protected $debugTokensDataType = 'array';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty or omitted, then this response is the
-     * last page of results. This token can be used in a subsequent call to
-     * ListDebugTokens to find the next group of DebugTokens. Page tokens are
-     * short-lived and should not be persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The DebugTokens retrieved.
-     *
-     * @param GoogleFirebaseAppcheckV1DebugToken[] $debugTokens
-     */
-    public function setDebugTokens($debugTokens)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ListDebugTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'debugTokens';
+        protected $debugTokensType = GoogleFirebaseAppcheckV1DebugToken::class;
+        protected $debugTokensDataType = 'array';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty or omitted, then this response is the
+         * last page of results. This token can be used in a subsequent call to
+         * ListDebugTokens to find the next group of DebugTokens. Page tokens are
+         * short-lived and should not be persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The DebugTokens retrieved.
+         *
+         * @param GoogleFirebaseAppcheckV1DebugToken[] $debugTokens
+         */
+        public function setDebugTokens($debugTokens)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1DebugToken[]
+         */
+        public function getDebugTokens()
+        {
+        }
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty or omitted, then this response is the
+         * last page of results. This token can be used in a subsequent call to
+         * ListDebugTokens to find the next group of DebugTokens. Page tokens are
+         * short-lived and should not be persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1DebugToken[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListDebugTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugTokens()
-    {
-    }
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty or omitted, then this response is the
-     * last page of results. This token can be used in a subsequent call to
-     * ListDebugTokens to find the next group of DebugTokens. Page tokens are
-     * short-lived and should not be persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ListDebugTokensResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListDebugTokensResponse
     {
     }
 }

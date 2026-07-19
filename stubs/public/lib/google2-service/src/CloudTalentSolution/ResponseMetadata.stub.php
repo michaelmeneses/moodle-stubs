@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class ResponseMetadata extends \Google\Model
-{
-    /**
-     * A unique id associated with this call. This id is logged for tracking
-     * purposes.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * A unique id associated with this call. This id is logged for tracking
-     * purposes.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\CloudTalentSolution {
+    class ResponseMetadata extends \Google\Model
     {
+        /**
+         * A unique id associated with this call. This id is logged for tracking
+         * purposes.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * A unique id associated with this call. This id is logged for tracking
+         * purposes.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTalentSolution\ResponseMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
+    class Google_Service_CloudTalentSolution_ResponseMetadata extends \Google\Service\CloudTalentSolution\ResponseMetadata
     {
     }
 }

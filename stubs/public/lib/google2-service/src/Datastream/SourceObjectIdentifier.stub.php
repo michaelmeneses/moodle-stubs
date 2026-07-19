@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SourceObjectIdentifier extends \Google\Model
-{
-    protected $mongodbIdentifierType = MongodbObjectIdentifier::class;
-    protected $mongodbIdentifierDataType = '';
-    protected $mysqlIdentifierType = MysqlObjectIdentifier::class;
-    protected $mysqlIdentifierDataType = '';
-    protected $oracleIdentifierType = OracleObjectIdentifier::class;
-    protected $oracleIdentifierDataType = '';
-    protected $postgresqlIdentifierType = PostgresqlObjectIdentifier::class;
-    protected $postgresqlIdentifierDataType = '';
-    protected $salesforceIdentifierType = SalesforceObjectIdentifier::class;
-    protected $salesforceIdentifierDataType = '';
-    protected $sqlServerIdentifierType = SqlServerObjectIdentifier::class;
-    protected $sqlServerIdentifierDataType = '';
-    /**
-     * MongoDB data source object identifier.
-     *
-     * @param MongodbObjectIdentifier $mongodbIdentifier
-     */
-    public function setMongodbIdentifier(MongodbObjectIdentifier $mongodbIdentifier)
+namespace Google\Service\Datastream {
+    class SourceObjectIdentifier extends \Google\Model
     {
+        protected $mongodbIdentifierType = MongodbObjectIdentifier::class;
+        protected $mongodbIdentifierDataType = '';
+        protected $mysqlIdentifierType = MysqlObjectIdentifier::class;
+        protected $mysqlIdentifierDataType = '';
+        protected $oracleIdentifierType = OracleObjectIdentifier::class;
+        protected $oracleIdentifierDataType = '';
+        protected $postgresqlIdentifierType = PostgresqlObjectIdentifier::class;
+        protected $postgresqlIdentifierDataType = '';
+        protected $salesforceIdentifierType = SalesforceObjectIdentifier::class;
+        protected $salesforceIdentifierDataType = '';
+        protected $sqlServerIdentifierType = SqlServerObjectIdentifier::class;
+        protected $sqlServerIdentifierDataType = '';
+        /**
+         * MongoDB data source object identifier.
+         *
+         * @param MongodbObjectIdentifier $mongodbIdentifier
+         */
+        public function setMongodbIdentifier(MongodbObjectIdentifier $mongodbIdentifier)
+        {
+        }
+        /**
+         * @return MongodbObjectIdentifier
+         */
+        public function getMongodbIdentifier()
+        {
+        }
+        /**
+         * Mysql data source object identifier.
+         *
+         * @param MysqlObjectIdentifier $mysqlIdentifier
+         */
+        public function setMysqlIdentifier(MysqlObjectIdentifier $mysqlIdentifier)
+        {
+        }
+        /**
+         * @return MysqlObjectIdentifier
+         */
+        public function getMysqlIdentifier()
+        {
+        }
+        /**
+         * Oracle data source object identifier.
+         *
+         * @param OracleObjectIdentifier $oracleIdentifier
+         */
+        public function setOracleIdentifier(OracleObjectIdentifier $oracleIdentifier)
+        {
+        }
+        /**
+         * @return OracleObjectIdentifier
+         */
+        public function getOracleIdentifier()
+        {
+        }
+        /**
+         * PostgreSQL data source object identifier.
+         *
+         * @param PostgresqlObjectIdentifier $postgresqlIdentifier
+         */
+        public function setPostgresqlIdentifier(PostgresqlObjectIdentifier $postgresqlIdentifier)
+        {
+        }
+        /**
+         * @return PostgresqlObjectIdentifier
+         */
+        public function getPostgresqlIdentifier()
+        {
+        }
+        /**
+         * Salesforce data source object identifier.
+         *
+         * @param SalesforceObjectIdentifier $salesforceIdentifier
+         */
+        public function setSalesforceIdentifier(SalesforceObjectIdentifier $salesforceIdentifier)
+        {
+        }
+        /**
+         * @return SalesforceObjectIdentifier
+         */
+        public function getSalesforceIdentifier()
+        {
+        }
+        /**
+         * SQLServer data source object identifier.
+         *
+         * @param SqlServerObjectIdentifier $sqlServerIdentifier
+         */
+        public function setSqlServerIdentifier(SqlServerObjectIdentifier $sqlServerIdentifier)
+        {
+        }
+        /**
+         * @return SqlServerObjectIdentifier
+         */
+        public function getSqlServerIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbObjectIdentifier
+     * Runtime class alias of \Google\Service\Datastream\SourceObjectIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMongodbIdentifier()
-    {
-    }
-    /**
-     * Mysql data source object identifier.
-     *
-     * @param MysqlObjectIdentifier $mysqlIdentifier
-     */
-    public function setMysqlIdentifier(MysqlObjectIdentifier $mysqlIdentifier)
-    {
-    }
-    /**
-     * @return MysqlObjectIdentifier
-     */
-    public function getMysqlIdentifier()
-    {
-    }
-    /**
-     * Oracle data source object identifier.
-     *
-     * @param OracleObjectIdentifier $oracleIdentifier
-     */
-    public function setOracleIdentifier(OracleObjectIdentifier $oracleIdentifier)
-    {
-    }
-    /**
-     * @return OracleObjectIdentifier
-     */
-    public function getOracleIdentifier()
-    {
-    }
-    /**
-     * PostgreSQL data source object identifier.
-     *
-     * @param PostgresqlObjectIdentifier $postgresqlIdentifier
-     */
-    public function setPostgresqlIdentifier(PostgresqlObjectIdentifier $postgresqlIdentifier)
-    {
-    }
-    /**
-     * @return PostgresqlObjectIdentifier
-     */
-    public function getPostgresqlIdentifier()
-    {
-    }
-    /**
-     * Salesforce data source object identifier.
-     *
-     * @param SalesforceObjectIdentifier $salesforceIdentifier
-     */
-    public function setSalesforceIdentifier(SalesforceObjectIdentifier $salesforceIdentifier)
-    {
-    }
-    /**
-     * @return SalesforceObjectIdentifier
-     */
-    public function getSalesforceIdentifier()
-    {
-    }
-    /**
-     * SQLServer data source object identifier.
-     *
-     * @param SqlServerObjectIdentifier $sqlServerIdentifier
-     */
-    public function setSqlServerIdentifier(SqlServerObjectIdentifier $sqlServerIdentifier)
-    {
-    }
-    /**
-     * @return SqlServerObjectIdentifier
-     */
-    public function getSqlServerIdentifier()
+    class Google_Service_Datastream_SourceObjectIdentifier extends \Google\Service\Datastream\SourceObjectIdentifier
     {
     }
 }

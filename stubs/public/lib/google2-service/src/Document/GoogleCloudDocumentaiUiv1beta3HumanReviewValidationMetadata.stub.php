@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata extends \Google\Model
-{
-    /**
-     * The confidence threshold if human review validation is enabled.
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * Whether to enable human review validation.
-     *
-     * @var bool
-     */
-    public $enableValidation;
-    /**
-     * The confidence threshold if human review validation is enabled.
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata extends \Google\Model
     {
+        /**
+         * The confidence threshold if human review validation is enabled.
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * Whether to enable human review validation.
+         *
+         * @var bool
+         */
+        public $enableValidation;
+        /**
+         * The confidence threshold if human review validation is enabled.
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * Whether to enable human review validation.
+         *
+         * @param bool $enableValidation
+         */
+        public function setEnableValidation($enableValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * Whether to enable human review validation.
-     *
-     * @param bool $enableValidation
-     */
-    public function setEnableValidation($enableValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableValidation()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata
     {
     }
 }

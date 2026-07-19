@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class BeginTransactionRequest extends \Google\Model
-{
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @var string
-     */
-    public $databaseId;
-    protected $transactionOptionsType = TransactionOptions::class;
-    protected $transactionOptionsDataType = '';
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Datastore {
+    class BeginTransactionRequest extends \Google\Model
     {
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @var string
+         */
+        public $databaseId;
+        protected $transactionOptionsType = TransactionOptions::class;
+        protected $transactionOptionsDataType = '';
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Options for a new transaction.
+         *
+         * @param TransactionOptions $transactionOptions
+         */
+        public function setTransactionOptions(TransactionOptions $transactionOptions)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getTransactionOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\BeginTransactionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Options for a new transaction.
-     *
-     * @param TransactionOptions $transactionOptions
-     */
-    public function setTransactionOptions(TransactionOptions $transactionOptions)
-    {
-    }
-    /**
-     * @return TransactionOptions
-     */
-    public function getTransactionOptions()
+    class Google_Service_Datastore_BeginTransactionRequest extends \Google\Service\Datastore\BeginTransactionRequest
     {
     }
 }

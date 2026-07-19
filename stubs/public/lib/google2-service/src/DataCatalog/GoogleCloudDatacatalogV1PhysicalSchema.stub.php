@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1PhysicalSchema extends \Google\Model
-{
-    protected $avroType = GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema::class;
-    protected $avroDataType = '';
-    protected $csvType = GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema::class;
-    protected $csvDataType = '';
-    protected $orcType = GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema::class;
-    protected $orcDataType = '';
-    protected $parquetType = GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema::class;
-    protected $parquetDataType = '';
-    protected $protobufType = GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema::class;
-    protected $protobufDataType = '';
-    protected $thriftType = GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema::class;
-    protected $thriftDataType = '';
-    /**
-     * Schema in Avro JSON format.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema $avro
-     */
-    public function setAvro(GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema $avro)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1PhysicalSchema extends \Google\Model
     {
+        protected $avroType = GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema::class;
+        protected $avroDataType = '';
+        protected $csvType = GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema::class;
+        protected $csvDataType = '';
+        protected $orcType = GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema::class;
+        protected $orcDataType = '';
+        protected $parquetType = GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema::class;
+        protected $parquetDataType = '';
+        protected $protobufType = GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema::class;
+        protected $protobufDataType = '';
+        protected $thriftType = GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema::class;
+        protected $thriftDataType = '';
+        /**
+         * Schema in Avro JSON format.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema $avro
+         */
+        public function setAvro(GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema $avro)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema
+         */
+        public function getAvro()
+        {
+        }
+        /**
+         * Marks a CSV-encoded data source.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema $csv
+         */
+        public function setCsv(GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema $csv)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema
+         */
+        public function getCsv()
+        {
+        }
+        /**
+         * Marks an ORC-encoded data source.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema $orc
+         */
+        public function setOrc(GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema $orc)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema
+         */
+        public function getOrc()
+        {
+        }
+        /**
+         * Marks a Parquet-encoded data source.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema $parquet
+         */
+        public function setParquet(GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema $parquet)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema
+         */
+        public function getParquet()
+        {
+        }
+        /**
+         * Schema in protocol buffer format.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema $protobuf
+         */
+        public function setProtobuf(GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema $protobuf)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema
+         */
+        public function getProtobuf()
+        {
+        }
+        /**
+         * Schema in Thrift format.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema $thrift
+         */
+        public function setThrift(GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema $thrift)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema
+         */
+        public function getThrift()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PhysicalSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvro()
-    {
-    }
-    /**
-     * Marks a CSV-encoded data source.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema $csv
-     */
-    public function setCsv(GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema $csv)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchemaCsvSchema
-     */
-    public function getCsv()
-    {
-    }
-    /**
-     * Marks an ORC-encoded data source.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema $orc
-     */
-    public function setOrc(GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema $orc)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchemaOrcSchema
-     */
-    public function getOrc()
-    {
-    }
-    /**
-     * Marks a Parquet-encoded data source.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema $parquet
-     */
-    public function setParquet(GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema $parquet)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchemaParquetSchema
-     */
-    public function getParquet()
-    {
-    }
-    /**
-     * Schema in protocol buffer format.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema $protobuf
-     */
-    public function setProtobuf(GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema $protobuf)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema
-     */
-    public function getProtobuf()
-    {
-    }
-    /**
-     * Schema in Thrift format.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema $thrift
-     */
-    public function setThrift(GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema $thrift)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema
-     */
-    public function getThrift()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1PhysicalSchema extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PhysicalSchema
     {
     }
 }

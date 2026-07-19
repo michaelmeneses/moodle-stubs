@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Button extends \Google\Model
-{
-    protected $imageButtonType = ImageButton::class;
-    protected $imageButtonDataType = '';
-    protected $textButtonType = TextButton::class;
-    protected $textButtonDataType = '';
-    /**
-     * A button with image and `onclick` action.
-     *
-     * @param ImageButton $imageButton
-     */
-    public function setImageButton(ImageButton $imageButton)
+namespace Google\Service\HangoutsChat {
+    class Button extends \Google\Model
     {
+        protected $imageButtonType = ImageButton::class;
+        protected $imageButtonDataType = '';
+        protected $textButtonType = TextButton::class;
+        protected $textButtonDataType = '';
+        /**
+         * A button with image and `onclick` action.
+         *
+         * @param ImageButton $imageButton
+         */
+        public function setImageButton(ImageButton $imageButton)
+        {
+        }
+        /**
+         * @return ImageButton
+         */
+        public function getImageButton()
+        {
+        }
+        /**
+         * A button with text and `onclick` action.
+         *
+         * @param TextButton $textButton
+         */
+        public function setTextButton(TextButton $textButton)
+        {
+        }
+        /**
+         * @return TextButton
+         */
+        public function getTextButton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageButton
+     * Runtime class alias of \Google\Service\HangoutsChat\Button registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageButton()
-    {
-    }
-    /**
-     * A button with text and `onclick` action.
-     *
-     * @param TextButton $textButton
-     */
-    public function setTextButton(TextButton $textButton)
-    {
-    }
-    /**
-     * @return TextButton
-     */
-    public function getTextButton()
+    class Google_Service_HangoutsChat_Button extends \Google\Service\HangoutsChat\Button
     {
     }
 }

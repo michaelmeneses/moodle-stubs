@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableFieldSchemaRangeElementType extends \Google\Model
-{
-    /**
-     * Required. The type of a field element. For more information, see
-     * TableFieldSchema.type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The type of a field element. For more information, see
-     * TableFieldSchema.type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\Bigquery {
+    class TableFieldSchemaRangeElementType extends \Google\Model
     {
+        /**
+         * Required. The type of a field element. For more information, see
+         * TableFieldSchema.type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The type of a field element. For more information, see
+         * TableFieldSchema.type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableFieldSchemaRangeElementType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Bigquery_TableFieldSchemaRangeElementType extends \Google\Service\Bigquery\TableFieldSchemaRangeElementType
     {
     }
 }

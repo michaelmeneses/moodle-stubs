@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1DeploymentDetails extends \Google\Model
-{
-    protected $deploymentType = Deployment::class;
-    protected $deploymentDataType = '';
-    /**
-     * @param Deployment
-     */
-    public function setDeployment(Deployment $deployment)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1DeploymentDetails extends \Google\Model
     {
+        protected $deploymentType = Deployment::class;
+        protected $deploymentDataType = '';
+        /**
+         * @param Deployment
+         */
+        public function setDeployment(Deployment $deployment)
+        {
+        }
+        /**
+         * @return Deployment
+         */
+        public function getDeployment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deployment
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1DeploymentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1DeploymentDetails extends \Google\Service\ContainerAnalysis\GrafeasV1beta1DeploymentDetails
     {
     }
 }

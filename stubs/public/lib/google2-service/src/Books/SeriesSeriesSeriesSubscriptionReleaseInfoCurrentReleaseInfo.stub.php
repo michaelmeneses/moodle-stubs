@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo extends \Google\Model
-{
-    public $amountInMicros;
-    /**
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * @var string
-     */
-    public $releaseNumber;
-    /**
-     * @var string
-     */
-    public $releaseTime;
-    public function setAmountInMicros($amountInMicros)
+namespace Google\Service\Books {
+    class SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo extends \Google\Model
     {
+        public $amountInMicros;
+        /**
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * @var string
+         */
+        public $releaseNumber;
+        /**
+         * @var string
+         */
+        public $releaseTime;
+        public function setAmountInMicros($amountInMicros)
+        {
+        }
+        public function getAmountInMicros()
+        {
+        }
+        /**
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * @param string $releaseNumber
+         */
+        public function setReleaseNumber($releaseNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseNumber()
+        {
+        }
+        /**
+         * @param string $releaseTime
+         */
+        public function setReleaseTime($releaseTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseTime()
+        {
+        }
     }
-    public function getAmountInMicros()
-    {
-    }
+}
+namespace {
     /**
-     * @param string $currencyCode
+     * Runtime class alias of \Google\Service\Books\SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * @param string $releaseNumber
-     */
-    public function setReleaseNumber($releaseNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseNumber()
-    {
-    }
-    /**
-     * @param string $releaseTime
-     */
-    public function setReleaseTime($releaseTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseTime()
+    class Google_Service_Books_SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo extends \Google\Service\Books\SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo
     {
     }
 }

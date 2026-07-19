@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PostmasterTools;
-
-class Domain extends \Google\Model
-{
-    /**
-     * The default value and should never be used explicitly.
-     */
-    public const PERMISSION_PERMISSION_UNSPECIFIED = 'PERMISSION_UNSPECIFIED';
-    /**
-     * User has read access to the domain and can share access with others.
-     */
-    public const PERMISSION_OWNER = 'OWNER';
-    /**
-     * User has read access to the domain.
-     */
-    public const PERMISSION_READER = 'READER';
-    /**
-     * User doesn't have permission to access information about the domain. User
-     * did not verify ownership of domain nor was access granted by other domain
-     * owners.
-     */
-    public const PERMISSION_NONE = 'NONE';
-    /**
-     * Timestamp when the user registered this domain. Assigned by the server.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The resource name of the Domain. Domain names have the form
-     * `domains/{domain_name}`, where domain_name is the fully qualified domain
-     * name (i.e., mymail.mydomain.com).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User’s permission for this domain. Assigned by the server.
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * Timestamp when the user registered this domain. Assigned by the server.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\PostmasterTools {
+    class Domain extends \Google\Model
     {
+        /**
+         * The default value and should never be used explicitly.
+         */
+        public const PERMISSION_PERMISSION_UNSPECIFIED = 'PERMISSION_UNSPECIFIED';
+        /**
+         * User has read access to the domain and can share access with others.
+         */
+        public const PERMISSION_OWNER = 'OWNER';
+        /**
+         * User has read access to the domain.
+         */
+        public const PERMISSION_READER = 'READER';
+        /**
+         * User doesn't have permission to access information about the domain. User
+         * did not verify ownership of domain nor was access granted by other domain
+         * owners.
+         */
+        public const PERMISSION_NONE = 'NONE';
+        /**
+         * Timestamp when the user registered this domain. Assigned by the server.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The resource name of the Domain. Domain names have the form
+         * `domains/{domain_name}`, where domain_name is the fully qualified domain
+         * name (i.e., mymail.mydomain.com).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User’s permission for this domain. Assigned by the server.
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * Timestamp when the user registered this domain. Assigned by the server.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The resource name of the Domain. Domain names have the form
+         * `domains/{domain_name}`, where domain_name is the fully qualified domain
+         * name (i.e., mymail.mydomain.com).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User’s permission for this domain. Assigned by the server.
+         *
+         * Accepted values: PERMISSION_UNSPECIFIED, OWNER, READER, NONE
+         *
+         * @param self::PERMISSION_* $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return self::PERMISSION_*
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PostmasterTools\Domain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The resource name of the Domain. Domain names have the form
-     * `domains/{domain_name}`, where domain_name is the fully qualified domain
-     * name (i.e., mymail.mydomain.com).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User’s permission for this domain. Assigned by the server.
-     *
-     * Accepted values: PERMISSION_UNSPECIFIED, OWNER, READER, NONE
-     *
-     * @param self::PERMISSION_* $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return self::PERMISSION_*
-     */
-    public function getPermission()
+    class Google_Service_PostmasterTools_Domain extends \Google\Service\PostmasterTools\Domain
     {
     }
 }

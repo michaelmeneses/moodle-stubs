@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteV1ApiCompatV1ActionConfirm extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["dismissText" => "dismiss_text", "okText" => "ok_text"];
-    /**
-     * @var string
-     */
-    public $dismissText;
-    /**
-     * @var string
-     */
-    public $okText;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setDismissText($dismissText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteV1ApiCompatV1ActionConfirm extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["dismissText" => "dismiss_text", "okText" => "ok_text"];
+        /**
+         * @var string
+         */
+        public $dismissText;
+        /**
+         * @var string
+         */
+        public $okText;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setDismissText($dismissText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDismissText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOkText($okText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOkText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1ActionConfirm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDismissText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOkText($okText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOkText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteV1ApiCompatV1ActionConfirm extends \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1ActionConfirm
     {
     }
 }

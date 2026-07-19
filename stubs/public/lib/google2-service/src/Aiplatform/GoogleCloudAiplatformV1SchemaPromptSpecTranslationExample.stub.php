@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample extends \Google\Collection
-{
-    protected $collection_key = 'referenceSentencesFileInputs';
-    protected $referenceSentencePairListsType = GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList::class;
-    protected $referenceSentencePairListsDataType = 'array';
-    protected $referenceSentencesFileInputsType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput::class;
-    protected $referenceSentencesFileInputsDataType = 'array';
-    /**
-     * The reference sentences from inline text.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList[] $referenceSentencePairLists
-     */
-    public function setReferenceSentencePairLists($referenceSentencePairLists)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample extends \Google\Collection
     {
+        protected $collection_key = 'referenceSentencesFileInputs';
+        protected $referenceSentencePairListsType = GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList::class;
+        protected $referenceSentencePairListsDataType = 'array';
+        protected $referenceSentencesFileInputsType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput::class;
+        protected $referenceSentencesFileInputsDataType = 'array';
+        /**
+         * The reference sentences from inline text.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList[] $referenceSentencePairLists
+         */
+        public function setReferenceSentencePairLists($referenceSentencePairLists)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList[]
+         */
+        public function getReferenceSentencePairLists()
+        {
+        }
+        /**
+         * The reference sentences from file.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput[] $referenceSentencesFileInputs
+         */
+        public function setReferenceSentencesFileInputs($referenceSentencesFileInputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput[]
+         */
+        public function getReferenceSentencesFileInputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePairList[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceSentencePairLists()
-    {
-    }
-    /**
-     * The reference sentences from file.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput[] $referenceSentencesFileInputs
-     */
-    public function setReferenceSentencesFileInputs($referenceSentencesFileInputs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput[]
-     */
-    public function getReferenceSentencesFileInputs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample
     {
     }
 }

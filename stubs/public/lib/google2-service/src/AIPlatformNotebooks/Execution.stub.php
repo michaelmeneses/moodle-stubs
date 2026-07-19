@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Execution extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $executionTemplateType = ExecutionTemplate::class;
-    protected $executionTemplateDataType = '';
-    public $executionTemplate;
-    /**
-     * @var string
-     */
-    public $jobUri;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $outputNotebookFile;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AIPlatformNotebooks {
+    class Execution extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $executionTemplateType = ExecutionTemplate::class;
+        protected $executionTemplateDataType = '';
+        public $executionTemplate;
+        /**
+         * @var string
+         */
+        public $jobUri;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $outputNotebookFile;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param ExecutionTemplate
+         */
+        public function setExecutionTemplate(ExecutionTemplate $executionTemplate)
+        {
+        }
+        /**
+         * @return ExecutionTemplate
+         */
+        public function getExecutionTemplate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setJobUri($jobUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOutputNotebookFile($outputNotebookFile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputNotebookFile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Execution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param ExecutionTemplate
-     */
-    public function setExecutionTemplate(ExecutionTemplate $executionTemplate)
-    {
-    }
-    /**
-     * @return ExecutionTemplate
-     */
-    public function getExecutionTemplate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setJobUri($jobUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOutputNotebookFile($outputNotebookFile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputNotebookFile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_AIPlatformNotebooks_Execution extends \Google\Service\AIPlatformNotebooks\Execution
     {
     }
 }

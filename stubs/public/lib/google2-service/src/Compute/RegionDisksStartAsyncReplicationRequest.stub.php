@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionDisksStartAsyncReplicationRequest extends \Google\Model
-{
-    /**
-     * The secondary disk to start asynchronous replication to. You can provide
-     * this as a partial or full URL to the resource. For example, the following
-     * are valid values:              -         https://www.googleapis.com/compute
-     * /v1/projects/project/zones/zone/disks/disk            -         https://www
-     * .googleapis.com/compute/v1/projects/project/regions/region/disks/disk
-     * -         projects/project/zones/zone/disks/disk            -
-     * projects/project/regions/region/disks/disk            -
-     * zones/zone/disks/disk            -         regions/region/disks/disk
-     *
-     * @var string
-     */
-    public $asyncSecondaryDisk;
-    /**
-     * The secondary disk to start asynchronous replication to. You can provide
-     * this as a partial or full URL to the resource. For example, the following
-     * are valid values:              -         https://www.googleapis.com/compute
-     * /v1/projects/project/zones/zone/disks/disk            -         https://www
-     * .googleapis.com/compute/v1/projects/project/regions/region/disks/disk
-     * -         projects/project/zones/zone/disks/disk            -
-     * projects/project/regions/region/disks/disk            -
-     * zones/zone/disks/disk            -         regions/region/disks/disk
-     *
-     * @param string $asyncSecondaryDisk
-     */
-    public function setAsyncSecondaryDisk($asyncSecondaryDisk)
+namespace Google\Service\Compute {
+    class RegionDisksStartAsyncReplicationRequest extends \Google\Model
     {
+        /**
+         * The secondary disk to start asynchronous replication to. You can provide
+         * this as a partial or full URL to the resource. For example, the following
+         * are valid values:              -         https://www.googleapis.com/compute
+         * /v1/projects/project/zones/zone/disks/disk            -         https://www
+         * .googleapis.com/compute/v1/projects/project/regions/region/disks/disk
+         * -         projects/project/zones/zone/disks/disk            -
+         * projects/project/regions/region/disks/disk            -
+         * zones/zone/disks/disk            -         regions/region/disks/disk
+         *
+         * @var string
+         */
+        public $asyncSecondaryDisk;
+        /**
+         * The secondary disk to start asynchronous replication to. You can provide
+         * this as a partial or full URL to the resource. For example, the following
+         * are valid values:              -         https://www.googleapis.com/compute
+         * /v1/projects/project/zones/zone/disks/disk            -         https://www
+         * .googleapis.com/compute/v1/projects/project/regions/region/disks/disk
+         * -         projects/project/zones/zone/disks/disk            -
+         * projects/project/regions/region/disks/disk            -
+         * zones/zone/disks/disk            -         regions/region/disks/disk
+         *
+         * @param string $asyncSecondaryDisk
+         */
+        public function setAsyncSecondaryDisk($asyncSecondaryDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsyncSecondaryDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RegionDisksStartAsyncReplicationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsyncSecondaryDisk()
+    class Google_Service_Compute_RegionDisksStartAsyncReplicationRequest extends \Google\Service\Compute\RegionDisksStartAsyncReplicationRequest
     {
     }
 }

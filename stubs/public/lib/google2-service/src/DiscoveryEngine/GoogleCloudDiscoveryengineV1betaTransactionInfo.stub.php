@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaTransactionInfo extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $cost;
-    /**
-     * @var string
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $discountValue;
-    /**
-     * @var float
-     */
-    public $tax;
-    /**
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * @var float
-     */
-    public $value;
-    /**
-     * @param float
-     */
-    public function setCost($cost)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaTransactionInfo extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $cost;
+        /**
+         * @var string
+         */
+        public $currency;
+        /**
+         * @var float
+         */
+        public $discountValue;
+        /**
+         * @var float
+         */
+        public $tax;
+        /**
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * @var float
+         */
+        public $value;
+        /**
+         * @param float
+         */
+        public function setCost($cost)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCost()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setDiscountValue($discountValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDiscountValue()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setTax($tax)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTax()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTransactionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCost()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setDiscountValue($discountValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getDiscountValue()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setTax($tax)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTax()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaTransactionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTransactionInfo
     {
     }
 }

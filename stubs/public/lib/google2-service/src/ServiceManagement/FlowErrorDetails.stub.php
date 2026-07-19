@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class FlowErrorDetails extends \Google\Model
-{
-    /**
-     * The type of exception (as a class name).
-     *
-     * @var string
-     */
-    public $exceptionType;
-    /**
-     * The step that failed.
-     *
-     * @var string
-     */
-    public $flowStepId;
-    /**
-     * The type of exception (as a class name).
-     *
-     * @param string $exceptionType
-     */
-    public function setExceptionType($exceptionType)
+namespace Google\Service\ServiceManagement {
+    class FlowErrorDetails extends \Google\Model
     {
+        /**
+         * The type of exception (as a class name).
+         *
+         * @var string
+         */
+        public $exceptionType;
+        /**
+         * The step that failed.
+         *
+         * @var string
+         */
+        public $flowStepId;
+        /**
+         * The type of exception (as a class name).
+         *
+         * @param string $exceptionType
+         */
+        public function setExceptionType($exceptionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExceptionType()
+        {
+        }
+        /**
+         * The step that failed.
+         *
+         * @param string $flowStepId
+         */
+        public function setFlowStepId($flowStepId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowStepId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\FlowErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExceptionType()
-    {
-    }
-    /**
-     * The step that failed.
-     *
-     * @param string $flowStepId
-     */
-    public function setFlowStepId($flowStepId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlowStepId()
+    class Google_Service_ServiceManagement_FlowErrorDetails extends \Google\Service\ServiceManagement\FlowErrorDetails
     {
     }
 }

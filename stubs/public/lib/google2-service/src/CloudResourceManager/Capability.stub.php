@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class Capability extends \Google\Model
-{
-    /**
-     * Immutable. Identifier. The resource name of the capability. Must be in the
-     * following form: * `folders/{folder_id}/capabilities/{capability_name}` For
-     * example, `folders/123/capabilities/app-management` Following are the
-     * allowed {capability_name} values: * `app-management`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The configured value of the capability at the given parent
-     * resource.
-     *
-     * @var bool
-     */
-    public $value;
-    /**
-     * Immutable. Identifier. The resource name of the capability. Must be in the
-     * following form: * `folders/{folder_id}/capabilities/{capability_name}` For
-     * example, `folders/123/capabilities/app-management` Following are the
-     * allowed {capability_name} values: * `app-management`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudResourceManager {
+    class Capability extends \Google\Model
     {
+        /**
+         * Immutable. Identifier. The resource name of the capability. Must be in the
+         * following form: * `folders/{folder_id}/capabilities/{capability_name}` For
+         * example, `folders/123/capabilities/app-management` Following are the
+         * allowed {capability_name} values: * `app-management`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The configured value of the capability at the given parent
+         * resource.
+         *
+         * @var bool
+         */
+        public $value;
+        /**
+         * Immutable. Identifier. The resource name of the capability. Must be in the
+         * following form: * `folders/{folder_id}/capabilities/{capability_name}` For
+         * example, `folders/123/capabilities/app-management` Following are the
+         * allowed {capability_name} values: * `app-management`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The configured value of the capability at the given parent
+         * resource.
+         *
+         * @param bool $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\Capability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The configured value of the capability at the given parent
-     * resource.
-     *
-     * @param bool $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValue()
+    class Google_Service_CloudResourceManager_Capability extends \Google\Service\CloudResourceManager\Capability
     {
     }
 }

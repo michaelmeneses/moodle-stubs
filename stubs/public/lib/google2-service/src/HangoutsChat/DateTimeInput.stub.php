@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class DateTimeInput extends \Google\Model
-{
-    /**
-     * Whether the `datetime` input includes a calendar date.
-     *
-     * @var bool
-     */
-    public $hasDate;
-    /**
-     * Whether the `datetime` input includes a timestamp.
-     *
-     * @var bool
-     */
-    public $hasTime;
-    /**
-     * Time since epoch time, in milliseconds.
-     *
-     * @var string
-     */
-    public $msSinceEpoch;
-    /**
-     * Whether the `datetime` input includes a calendar date.
-     *
-     * @param bool $hasDate
-     */
-    public function setHasDate($hasDate)
+namespace Google\Service\HangoutsChat {
+    class DateTimeInput extends \Google\Model
     {
+        /**
+         * Whether the `datetime` input includes a calendar date.
+         *
+         * @var bool
+         */
+        public $hasDate;
+        /**
+         * Whether the `datetime` input includes a timestamp.
+         *
+         * @var bool
+         */
+        public $hasTime;
+        /**
+         * Time since epoch time, in milliseconds.
+         *
+         * @var string
+         */
+        public $msSinceEpoch;
+        /**
+         * Whether the `datetime` input includes a calendar date.
+         *
+         * @param bool $hasDate
+         */
+        public function setHasDate($hasDate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasDate()
+        {
+        }
+        /**
+         * Whether the `datetime` input includes a timestamp.
+         *
+         * @param bool $hasTime
+         */
+        public function setHasTime($hasTime)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasTime()
+        {
+        }
+        /**
+         * Time since epoch time, in milliseconds.
+         *
+         * @param string $msSinceEpoch
+         */
+        public function setMsSinceEpoch($msSinceEpoch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMsSinceEpoch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\HangoutsChat\DateTimeInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasDate()
-    {
-    }
-    /**
-     * Whether the `datetime` input includes a timestamp.
-     *
-     * @param bool $hasTime
-     */
-    public function setHasTime($hasTime)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasTime()
-    {
-    }
-    /**
-     * Time since epoch time, in milliseconds.
-     *
-     * @param string $msSinceEpoch
-     */
-    public function setMsSinceEpoch($msSinceEpoch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMsSinceEpoch()
+    class Google_Service_HangoutsChat_DateTimeInput extends \Google\Service\HangoutsChat\DateTimeInput
     {
     }
 }

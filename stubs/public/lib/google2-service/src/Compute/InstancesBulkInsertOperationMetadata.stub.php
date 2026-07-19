@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesBulkInsertOperationMetadata extends \Google\Model
-{
-    protected $perLocationStatusType = BulkInsertOperationStatus::class;
-    protected $perLocationStatusDataType = 'map';
-    /**
-     * Status information per location (location name is key). Example key:
-     * zones/us-central1-a
-     *
-     * @param BulkInsertOperationStatus[] $perLocationStatus
-     */
-    public function setPerLocationStatus($perLocationStatus)
+namespace Google\Service\Compute {
+    class InstancesBulkInsertOperationMetadata extends \Google\Model
     {
+        protected $perLocationStatusType = BulkInsertOperationStatus::class;
+        protected $perLocationStatusDataType = 'map';
+        /**
+         * Status information per location (location name is key). Example key:
+         * zones/us-central1-a
+         *
+         * @param BulkInsertOperationStatus[] $perLocationStatus
+         */
+        public function setPerLocationStatus($perLocationStatus)
+        {
+        }
+        /**
+         * @return BulkInsertOperationStatus[]
+         */
+        public function getPerLocationStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BulkInsertOperationStatus[]
+     * Runtime class alias of \Google\Service\Compute\InstancesBulkInsertOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerLocationStatus()
+    class Google_Service_Compute_InstancesBulkInsertOperationMetadata extends \Google\Service\Compute\InstancesBulkInsertOperationMetadata
     {
     }
 }

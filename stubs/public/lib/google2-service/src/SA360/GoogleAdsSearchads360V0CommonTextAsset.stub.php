@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonTextAsset extends \Google\Model
-{
-    /**
-     * Text content of the text asset.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Text content of the text asset.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonTextAsset extends \Google\Model
     {
+        /**
+         * Text content of the text asset.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Text content of the text asset.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonTextAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonTextAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonTextAsset
     {
     }
 }

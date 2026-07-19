@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SearchConfig extends \Google\Collection
-{
-    protected $collection_key = 'filterSpecs';
-    protected $boostSpecsType = GoogleCloudDialogflowCxV3BoostSpecs::class;
-    protected $boostSpecsDataType = 'array';
-    protected $filterSpecsType = GoogleCloudDialogflowCxV3FilterSpecs::class;
-    protected $filterSpecsDataType = 'array';
-    /**
-     * Optional. Boosting configuration for the datastores. Maps from datastore
-     * name to their boost configuration. Do not specify more than one BoostSpecs
-     * for each datastore name. If multiple BoostSpecs are provided for the same
-     * datastore name, the behavior is undefined.
-     *
-     * @param GoogleCloudDialogflowCxV3BoostSpecs[] $boostSpecs
-     */
-    public function setBoostSpecs($boostSpecs)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SearchConfig extends \Google\Collection
     {
+        protected $collection_key = 'filterSpecs';
+        protected $boostSpecsType = GoogleCloudDialogflowCxV3BoostSpecs::class;
+        protected $boostSpecsDataType = 'array';
+        protected $filterSpecsType = GoogleCloudDialogflowCxV3FilterSpecs::class;
+        protected $filterSpecsDataType = 'array';
+        /**
+         * Optional. Boosting configuration for the datastores. Maps from datastore
+         * name to their boost configuration. Do not specify more than one BoostSpecs
+         * for each datastore name. If multiple BoostSpecs are provided for the same
+         * datastore name, the behavior is undefined.
+         *
+         * @param GoogleCloudDialogflowCxV3BoostSpecs[] $boostSpecs
+         */
+        public function setBoostSpecs($boostSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3BoostSpecs[]
+         */
+        public function getBoostSpecs()
+        {
+        }
+        /**
+         * Optional. Filter configuration for the datastores. Maps from datastore name
+         * to the filter expression for that datastore. Do not specify more than one
+         * FilterSpecs for each datastore name. If multiple FilterSpecs are provided
+         * for the same datastore name, the behavior is undefined.
+         *
+         * @param GoogleCloudDialogflowCxV3FilterSpecs[] $filterSpecs
+         */
+        public function setFilterSpecs($filterSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FilterSpecs[]
+         */
+        public function getFilterSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3BoostSpecs[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SearchConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostSpecs()
-    {
-    }
-    /**
-     * Optional. Filter configuration for the datastores. Maps from datastore name
-     * to the filter expression for that datastore. Do not specify more than one
-     * FilterSpecs for each datastore name. If multiple FilterSpecs are provided
-     * for the same datastore name, the behavior is undefined.
-     *
-     * @param GoogleCloudDialogflowCxV3FilterSpecs[] $filterSpecs
-     */
-    public function setFilterSpecs($filterSpecs)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3FilterSpecs[]
-     */
-    public function getFilterSpecs()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SearchConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SearchConfig
     {
     }
 }

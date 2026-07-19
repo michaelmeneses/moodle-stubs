@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class FileInputSource extends \Google\Model
-{
-    /**
-     * Required. The file's byte contents.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Required. The file's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The file's mime type.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. The file's byte contents.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Translate {
+    class FileInputSource extends \Google\Model
     {
+        /**
+         * Required. The file's byte contents.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Required. The file's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The file's mime type.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. The file's byte contents.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Required. The file's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The file's mime type.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\FileInputSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Required. The file's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The file's mime type.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Translate_FileInputSource extends \Google\Service\Translate\FileInputSource
     {
     }
 }

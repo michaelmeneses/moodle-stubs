@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class GradeCategory extends \Google\Model
-{
-    /**
-     * Default value of denominator. Only applicable when grade calculation type
-     * is TOTAL_POINTS.
-     *
-     * @var int
-     */
-    public $defaultGradeDenominator;
-    /**
-     * ID of the grade category.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of the grade category.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The weight of the category average as part of overall average. A weight of
-     * 12.34% is represented as 123400 (100% is 1,000,000). The last two digits
-     * should always be zero since we use two decimal precision. Only applicable
-     * when grade calculation type is WEIGHTED_CATEGORIES.
-     *
-     * @var int
-     */
-    public $weight;
-    /**
-     * Default value of denominator. Only applicable when grade calculation type
-     * is TOTAL_POINTS.
-     *
-     * @param int $defaultGradeDenominator
-     */
-    public function setDefaultGradeDenominator($defaultGradeDenominator)
+namespace Google\Service\Classroom {
+    class GradeCategory extends \Google\Model
     {
+        /**
+         * Default value of denominator. Only applicable when grade calculation type
+         * is TOTAL_POINTS.
+         *
+         * @var int
+         */
+        public $defaultGradeDenominator;
+        /**
+         * ID of the grade category.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of the grade category.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The weight of the category average as part of overall average. A weight of
+         * 12.34% is represented as 123400 (100% is 1,000,000). The last two digits
+         * should always be zero since we use two decimal precision. Only applicable
+         * when grade calculation type is WEIGHTED_CATEGORIES.
+         *
+         * @var int
+         */
+        public $weight;
+        /**
+         * Default value of denominator. Only applicable when grade calculation type
+         * is TOTAL_POINTS.
+         *
+         * @param int $defaultGradeDenominator
+         */
+        public function setDefaultGradeDenominator($defaultGradeDenominator)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDefaultGradeDenominator()
+        {
+        }
+        /**
+         * ID of the grade category.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of the grade category.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The weight of the category average as part of overall average. A weight of
+         * 12.34% is represented as 123400 (100% is 1,000,000). The last two digits
+         * should always be zero since we use two decimal precision. Only applicable
+         * when grade calculation type is WEIGHTED_CATEGORIES.
+         *
+         * @param int $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Classroom\GradeCategory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultGradeDenominator()
-    {
-    }
-    /**
-     * ID of the grade category.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Name of the grade category.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The weight of the category average as part of overall average. A weight of
-     * 12.34% is represented as 123400 (100% is 1,000,000). The last two digits
-     * should always be zero since we use two decimal precision. Only applicable
-     * when grade calculation type is WEIGHTED_CATEGORIES.
-     *
-     * @param int $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeight()
+    class Google_Service_Classroom_GradeCategory extends \Google\Service\Classroom\GradeCategory
     {
     }
 }

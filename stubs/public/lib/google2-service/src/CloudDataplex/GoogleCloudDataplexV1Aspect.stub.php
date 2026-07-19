@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1Aspect extends \Google\Model
-{
-    protected $aspectSourceType = GoogleCloudDataplexV1AspectSource::class;
-    protected $aspectSourceDataType = '';
-    /**
-     * Output only. The resource name of the type used to create this Aspect.
-     *
-     * @var string
-     */
-    public $aspectType;
-    /**
-     * Output only. The time when the Aspect was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The content of the aspect, according to its aspect type schema.
-     * The maximum size of the field is 120KB (encoded as UTF-8).
-     *
-     * @var array[]
-     */
-    public $data;
-    /**
-     * Output only. The path in the entry under which the aspect is attached.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. The time when the Aspect was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Information related to the source system of the aspect.
-     *
-     * @param GoogleCloudDataplexV1AspectSource $aspectSource
-     */
-    public function setAspectSource(GoogleCloudDataplexV1AspectSource $aspectSource)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1Aspect extends \Google\Model
     {
+        protected $aspectSourceType = GoogleCloudDataplexV1AspectSource::class;
+        protected $aspectSourceDataType = '';
+        /**
+         * Output only. The resource name of the type used to create this Aspect.
+         *
+         * @var string
+         */
+        public $aspectType;
+        /**
+         * Output only. The time when the Aspect was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The content of the aspect, according to its aspect type schema.
+         * The maximum size of the field is 120KB (encoded as UTF-8).
+         *
+         * @var array[]
+         */
+        public $data;
+        /**
+         * Output only. The path in the entry under which the aspect is attached.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. The time when the Aspect was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Information related to the source system of the aspect.
+         *
+         * @param GoogleCloudDataplexV1AspectSource $aspectSource
+         */
+        public function setAspectSource(GoogleCloudDataplexV1AspectSource $aspectSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AspectSource
+         */
+        public function getAspectSource()
+        {
+        }
+        /**
+         * Output only. The resource name of the type used to create this Aspect.
+         *
+         * @param string $aspectType
+         */
+        public function setAspectType($aspectType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAspectType()
+        {
+        }
+        /**
+         * Output only. The time when the Aspect was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The content of the aspect, according to its aspect type schema.
+         * The maximum size of the field is 120KB (encoded as UTF-8).
+         *
+         * @param array[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Output only. The path in the entry under which the aspect is attached.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Output only. The time when the Aspect was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1AspectSource
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1Aspect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAspectSource()
-    {
-    }
-    /**
-     * Output only. The resource name of the type used to create this Aspect.
-     *
-     * @param string $aspectType
-     */
-    public function setAspectType($aspectType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAspectType()
-    {
-    }
-    /**
-     * Output only. The time when the Aspect was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The content of the aspect, according to its aspect type schema.
-     * The maximum size of the field is 120KB (encoded as UTF-8).
-     *
-     * @param array[] $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Output only. The path in the entry under which the aspect is attached.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Output only. The time when the Aspect was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1Aspect extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1Aspect
     {
     }
 }

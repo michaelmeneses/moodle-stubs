@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "android" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $android = $chromemanagementService->customers_apps_android;
- *  </code>
- */
-class CustomersAppsAndroid extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    use Google\Service\ChromeManagement\GoogleChromeManagementV1AppDetails;
     /**
-     * Get a specific app for a customer by its resource name. (android.get)
-     *
-     * @param string $name Required. The app for which details are being queried.
-     * Examples:
-     * "customers/my_customer/apps/chrome/gmbmikajjgmnabiglmofipeabaddhgne@2.1.2"
-     * for the Save to Google Drive Chrome extension version 2.1.2,
-     * "customers/my_customer/apps/android/com.google.android.apps.docs" for the
-     * Google Drive Android app's latest version.
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementV1AppDetails
-     * @throws \Google\Service\Exception
+     * The "android" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $android = $chromemanagementService->customers_apps_android;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class CustomersAppsAndroid extends \Google\Service\Resource
+    {
+        /**
+         * Get a specific app for a customer by its resource name. (android.get)
+         *
+         * @param string $name Required. The app for which details are being queried.
+         * Examples:
+         * "customers/my_customer/apps/chrome/gmbmikajjgmnabiglmofipeabaddhgne@2.1.2"
+         * for the Save to Google Drive Chrome extension version 2.1.2,
+         * "customers/my_customer/apps/android/com.google.android.apps.docs" for the
+         * Google Drive Android app's latest version.
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementV1AppDetails
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\CustomersAppsAndroid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement_Resource_CustomersAppsAndroid extends \Google\Service\ChromeManagement\Resource\CustomersAppsAndroid
     {
     }
 }

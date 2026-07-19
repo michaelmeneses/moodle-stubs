@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class GoogleAppsScriptTypeUser extends \Google\Model
-{
-    /**
-     * The user's domain.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * The user's identifying email address.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The user's display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The user's photo.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * The user's domain.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\Script {
+    class GoogleAppsScriptTypeUser extends \Google\Model
     {
+        /**
+         * The user's domain.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * The user's identifying email address.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The user's display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The user's photo.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * The user's domain.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * The user's identifying email address.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The user's display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The user's photo.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\GoogleAppsScriptTypeUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * The user's identifying email address.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The user's display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The user's photo.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
+    class Google_Service_Script_GoogleAppsScriptTypeUser extends \Google\Service\Script\GoogleAppsScriptTypeUser
     {
     }
 }

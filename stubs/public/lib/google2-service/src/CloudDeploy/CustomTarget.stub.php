@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CustomTarget extends \Google\Model
-{
-    /**
-     * Required. The name of the CustomTargetType. Format must be `projects/{proje
-     * ct}/locations/{location}/customTargetTypes/{custom_target_type}`.
-     *
-     * @var string
-     */
-    public $customTargetType;
-    /**
-     * Required. The name of the CustomTargetType. Format must be `projects/{proje
-     * ct}/locations/{location}/customTargetTypes/{custom_target_type}`.
-     *
-     * @param string $customTargetType
-     */
-    public function setCustomTargetType($customTargetType)
+namespace Google\Service\CloudDeploy {
+    class CustomTarget extends \Google\Model
     {
+        /**
+         * Required. The name of the CustomTargetType. Format must be `projects/{proje
+         * ct}/locations/{location}/customTargetTypes/{custom_target_type}`.
+         *
+         * @var string
+         */
+        public $customTargetType;
+        /**
+         * Required. The name of the CustomTargetType. Format must be `projects/{proje
+         * ct}/locations/{location}/customTargetTypes/{custom_target_type}`.
+         *
+         * @param string $customTargetType
+         */
+        public function setCustomTargetType($customTargetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomTargetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CustomTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomTargetType()
+    class Google_Service_CloudDeploy_CustomTarget extends \Google\Service\CloudDeploy\CustomTarget
     {
     }
 }

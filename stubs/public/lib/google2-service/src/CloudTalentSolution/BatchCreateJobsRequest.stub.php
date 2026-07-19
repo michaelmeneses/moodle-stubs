@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class BatchCreateJobsRequest extends \Google\Collection
-{
-    protected $collection_key = 'jobs';
-    protected $jobsType = Job::class;
-    protected $jobsDataType = 'array';
-    /**
-     * Required. The jobs to be created. A maximum of 200 jobs can be created in a
-     * batch.
-     *
-     * @param Job[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\CloudTalentSolution {
+    class BatchCreateJobsRequest extends \Google\Collection
     {
+        protected $collection_key = 'jobs';
+        protected $jobsType = Job::class;
+        protected $jobsDataType = 'array';
+        /**
+         * Required. The jobs to be created. A maximum of 200 jobs can be created in a
+         * batch.
+         *
+         * @param Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\BatchCreateJobsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
+    class Google_Service_CloudTalentSolution_BatchCreateJobsRequest extends \Google\Service\CloudTalentSolution\BatchCreateJobsRequest
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class DnsRecordSet extends \Google\Collection
-{
-    protected $collection_key = 'data';
-    /**
-     * Required. As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1)
-     * for examples see https://cloud.google.com/dns/records/json-record.
-     *
-     * @var string[]
-     */
-    public $data;
-    /**
-     * Required. The DNS or domain name of the record set, e.g.
-     * `test.example.com`. Cloud DNS requires that a DNS suffix ends with a
-     * trailing dot.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Required. The period of time for which this RecordSet can be cached by
-     * resolvers.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Required. The identifier of a supported record type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1)
-     * for examples see https://cloud.google.com/dns/records/json-record.
-     *
-     * @param string[] $data
-     */
-    public function setData($data)
+namespace Google\Service\ServiceNetworking {
+    class DnsRecordSet extends \Google\Collection
     {
+        protected $collection_key = 'data';
+        /**
+         * Required. As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1)
+         * for examples see https://cloud.google.com/dns/records/json-record.
+         *
+         * @var string[]
+         */
+        public $data;
+        /**
+         * Required. The DNS or domain name of the record set, e.g.
+         * `test.example.com`. Cloud DNS requires that a DNS suffix ends with a
+         * trailing dot.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Required. The period of time for which this RecordSet can be cached by
+         * resolvers.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Required. The identifier of a supported record type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1)
+         * for examples see https://cloud.google.com/dns/records/json-record.
+         *
+         * @param string[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Required. The DNS or domain name of the record set, e.g.
+         * `test.example.com`. Cloud DNS requires that a DNS suffix ends with a
+         * trailing dot.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Required. The period of time for which this RecordSet can be cached by
+         * resolvers.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
+        /**
+         * Required. The identifier of a supported record type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\DnsRecordSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Required. The DNS or domain name of the record set, e.g.
-     * `test.example.com`. Cloud DNS requires that a DNS suffix ends with a
-     * trailing dot.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    /**
-     * Required. The period of time for which this RecordSet can be cached by
-     * resolvers.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
-    {
-    }
-    /**
-     * Required. The identifier of a supported record type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ServiceNetworking_DnsRecordSet extends \Google\Service\ServiceNetworking\DnsRecordSet
     {
     }
 }

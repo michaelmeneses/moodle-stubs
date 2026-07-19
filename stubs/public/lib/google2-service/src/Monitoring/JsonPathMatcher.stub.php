@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class JsonPathMatcher extends \Google\Model
-{
-    /**
-     * No JSONPath matcher type specified (not valid).
-     */
-    public const JSON_MATCHER_JSON_PATH_MATCHER_OPTION_UNSPECIFIED = 'JSON_PATH_MATCHER_OPTION_UNSPECIFIED';
-    /**
-     * Selects 'exact string' matching. The match succeeds if the content at the
-     * json_path within the output is exactly the same as the content string.
-     */
-    public const JSON_MATCHER_EXACT_MATCH = 'EXACT_MATCH';
-    /**
-     * Selects regular-expression matching. The match succeeds if the content at
-     * the json_path within the output matches the regular expression specified in
-     * the content string.
-     */
-    public const JSON_MATCHER_REGEX_MATCH = 'REGEX_MATCH';
-    /**
-     * The type of JSONPath match that will be applied to the JSON output
-     * (ContentMatcher.content)
-     *
-     * @var string
-     */
-    public $jsonMatcher;
-    /**
-     * JSONPath within the response output pointing to the expected
-     * ContentMatcher::content to match against.
-     *
-     * @var string
-     */
-    public $jsonPath;
-    /**
-     * The type of JSONPath match that will be applied to the JSON output
-     * (ContentMatcher.content)
-     *
-     * Accepted values: JSON_PATH_MATCHER_OPTION_UNSPECIFIED, EXACT_MATCH,
-     * REGEX_MATCH
-     *
-     * @param self::JSON_MATCHER_* $jsonMatcher
-     */
-    public function setJsonMatcher($jsonMatcher)
+namespace Google\Service\Monitoring {
+    class JsonPathMatcher extends \Google\Model
     {
+        /**
+         * No JSONPath matcher type specified (not valid).
+         */
+        public const JSON_MATCHER_JSON_PATH_MATCHER_OPTION_UNSPECIFIED = 'JSON_PATH_MATCHER_OPTION_UNSPECIFIED';
+        /**
+         * Selects 'exact string' matching. The match succeeds if the content at the
+         * json_path within the output is exactly the same as the content string.
+         */
+        public const JSON_MATCHER_EXACT_MATCH = 'EXACT_MATCH';
+        /**
+         * Selects regular-expression matching. The match succeeds if the content at
+         * the json_path within the output matches the regular expression specified in
+         * the content string.
+         */
+        public const JSON_MATCHER_REGEX_MATCH = 'REGEX_MATCH';
+        /**
+         * The type of JSONPath match that will be applied to the JSON output
+         * (ContentMatcher.content)
+         *
+         * @var string
+         */
+        public $jsonMatcher;
+        /**
+         * JSONPath within the response output pointing to the expected
+         * ContentMatcher::content to match against.
+         *
+         * @var string
+         */
+        public $jsonPath;
+        /**
+         * The type of JSONPath match that will be applied to the JSON output
+         * (ContentMatcher.content)
+         *
+         * Accepted values: JSON_PATH_MATCHER_OPTION_UNSPECIFIED, EXACT_MATCH,
+         * REGEX_MATCH
+         *
+         * @param self::JSON_MATCHER_* $jsonMatcher
+         */
+        public function setJsonMatcher($jsonMatcher)
+        {
+        }
+        /**
+         * @return self::JSON_MATCHER_*
+         */
+        public function getJsonMatcher()
+        {
+        }
+        /**
+         * JSONPath within the response output pointing to the expected
+         * ContentMatcher::content to match against.
+         *
+         * @param string $jsonPath
+         */
+        public function setJsonPath($jsonPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::JSON_MATCHER_*
+     * Runtime class alias of \Google\Service\Monitoring\JsonPathMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJsonMatcher()
-    {
-    }
-    /**
-     * JSONPath within the response output pointing to the expected
-     * ContentMatcher::content to match against.
-     *
-     * @param string $jsonPath
-     */
-    public function setJsonPath($jsonPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonPath()
+    class Google_Service_Monitoring_JsonPathMatcher extends \Google\Service\Monitoring\JsonPathMatcher
     {
     }
 }

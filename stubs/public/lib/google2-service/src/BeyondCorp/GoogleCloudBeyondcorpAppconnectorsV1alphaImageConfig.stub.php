@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $stableImage;
-    /**
-     * @var string
-     */
-    public $targetImage;
-    /**
-     * @param string
-     */
-    public function setStableImage($stableImage)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $stableImage;
+        /**
+         * @var string
+         */
+        public $targetImage;
+        /**
+         * @param string
+         */
+        public function setStableImage($stableImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStableImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetImage($targetImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStableImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetImage($targetImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetImage()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesExportRequest extends \Google\Model
-{
-    protected $exportContextType = ExportContext::class;
-    protected $exportContextDataType = '';
-    /**
-     * Contains details about the export operation.
-     *
-     * @param ExportContext $exportContext
-     */
-    public function setExportContext(ExportContext $exportContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesExportRequest extends \Google\Model
     {
+        protected $exportContextType = ExportContext::class;
+        protected $exportContextDataType = '';
+        /**
+         * Contains details about the export operation.
+         *
+         * @param ExportContext $exportContext
+         */
+        public function setExportContext(ExportContext $exportContext)
+        {
+        }
+        /**
+         * @return ExportContext
+         */
+        public function getExportContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExportContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesExportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportContext()
+    class Google_Service_SQLAdmin_InstancesExportRequest extends \Google\Service\SQLAdmin\InstancesExportRequest
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class InsightsValue extends \Google\Model
-{
-    /**
-     * Represents the threshold below which the actual value falls.
-     *
-     * @var string
-     */
-    public $threshold;
-    /**
-     * Represents the actual value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Represents the threshold below which the actual value falls.
-     *
-     * @param string $threshold
-     */
-    public function setThreshold($threshold)
+namespace Google\Service\BusinessProfilePerformance {
+    class InsightsValue extends \Google\Model
     {
+        /**
+         * Represents the threshold below which the actual value falls.
+         *
+         * @var string
+         */
+        public $threshold;
+        /**
+         * Represents the actual value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Represents the threshold below which the actual value falls.
+         *
+         * @param string $threshold
+         */
+        public function setThreshold($threshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreshold()
+        {
+        }
+        /**
+         * Represents the actual value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\InsightsValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreshold()
-    {
-    }
-    /**
-     * Represents the actual value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_BusinessProfilePerformance_InsightsValue extends \Google\Service\BusinessProfilePerformance\InsightsValue
     {
     }
 }

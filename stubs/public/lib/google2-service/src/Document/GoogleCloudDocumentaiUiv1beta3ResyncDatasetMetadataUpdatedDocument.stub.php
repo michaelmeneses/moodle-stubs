@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataUpdatedDocument extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $destinationPrefix;
-    /**
-     * @var string
-     */
-    public $sourcePrefix;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @param string
-     */
-    public function setDestinationPrefix($destinationPrefix)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataUpdatedDocument extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $destinationPrefix;
+        /**
+         * @var string
+         */
+        public $sourcePrefix;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param string
+         */
+        public function setDestinationPrefix($destinationPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationPrefix()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourcePrefix($sourcePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourcePrefix()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataUpdatedDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationPrefix()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourcePrefix($sourcePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourcePrefix()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataUpdatedDocument extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataUpdatedDocument
     {
     }
 }

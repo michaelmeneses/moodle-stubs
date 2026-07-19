@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class NamedStylesSuggestionState extends \Google\Collection
-{
-    protected $collection_key = 'stylesSuggestionStates';
-    protected $stylesSuggestionStatesType = NamedStyleSuggestionState::class;
-    protected $stylesSuggestionStatesDataType = 'array';
-    /**
-     * A mask that indicates which of the fields on the corresponding NamedStyle
-     * in styles have been changed in this suggestion. The order of these named
-     * style suggestion states matches the order of the corresponding named style
-     * within the named styles suggestion.
-     *
-     * @param NamedStyleSuggestionState[] $stylesSuggestionStates
-     */
-    public function setStylesSuggestionStates($stylesSuggestionStates)
+namespace Google\Service\Docs {
+    class NamedStylesSuggestionState extends \Google\Collection
     {
+        protected $collection_key = 'stylesSuggestionStates';
+        protected $stylesSuggestionStatesType = NamedStyleSuggestionState::class;
+        protected $stylesSuggestionStatesDataType = 'array';
+        /**
+         * A mask that indicates which of the fields on the corresponding NamedStyle
+         * in styles have been changed in this suggestion. The order of these named
+         * style suggestion states matches the order of the corresponding named style
+         * within the named styles suggestion.
+         *
+         * @param NamedStyleSuggestionState[] $stylesSuggestionStates
+         */
+        public function setStylesSuggestionStates($stylesSuggestionStates)
+        {
+        }
+        /**
+         * @return NamedStyleSuggestionState[]
+         */
+        public function getStylesSuggestionStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamedStyleSuggestionState[]
+     * Runtime class alias of \Google\Service\Docs\NamedStylesSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStylesSuggestionStates()
+    class Google_Service_Docs_NamedStylesSuggestionState extends \Google\Service\Docs\NamedStylesSuggestionState
     {
     }
 }

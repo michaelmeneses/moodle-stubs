@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceCustomMetric extends \Google\Model
-{
-    /**
-     * If true, the metric data is not used for load balancing.
-     *
-     * @var bool
-     */
-    public $dryRun;
-    /**
-     * Name of a custom utilization signal. The name must be 1-64 characters long
-     * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
-     * that the first character must be a lowercase letter, and all following
-     * characters must be a dash, period, underscore, lowercase letter, or digit,
-     * except the last character, which cannot be a dash, period, or underscore.
-     * For usage guidelines, see Custom Metrics balancing mode. This field can
-     * only be used for a global or regional backend service with the
-     * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
-     * INTERNAL_SELF_MANAGED.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * If true, the metric data is not used for load balancing.
-     *
-     * @param bool $dryRun
-     */
-    public function setDryRun($dryRun)
+namespace Google\Service\Compute {
+    class BackendServiceCustomMetric extends \Google\Model
     {
+        /**
+         * If true, the metric data is not used for load balancing.
+         *
+         * @var bool
+         */
+        public $dryRun;
+        /**
+         * Name of a custom utilization signal. The name must be 1-64 characters long
+         * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
+         * that the first character must be a lowercase letter, and all following
+         * characters must be a dash, period, underscore, lowercase letter, or digit,
+         * except the last character, which cannot be a dash, period, or underscore.
+         * For usage guidelines, see Custom Metrics balancing mode. This field can
+         * only be used for a global or regional backend service with the
+         * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
+         * INTERNAL_SELF_MANAGED.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * If true, the metric data is not used for load balancing.
+         *
+         * @param bool $dryRun
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * Name of a custom utilization signal. The name must be 1-64 characters long
+         * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
+         * that the first character must be a lowercase letter, and all following
+         * characters must be a dash, period, underscore, lowercase letter, or digit,
+         * except the last character, which cannot be a dash, period, or underscore.
+         * For usage guidelines, see Custom Metrics balancing mode. This field can
+         * only be used for a global or regional backend service with the
+         * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
+         * INTERNAL_SELF_MANAGED.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\BackendServiceCustomMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDryRun()
-    {
-    }
-    /**
-     * Name of a custom utilization signal. The name must be 1-64 characters long
-     * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
-     * that the first character must be a lowercase letter, and all following
-     * characters must be a dash, period, underscore, lowercase letter, or digit,
-     * except the last character, which cannot be a dash, period, or underscore.
-     * For usage guidelines, see Custom Metrics balancing mode. This field can
-     * only be used for a global or regional backend service with the
-     * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
-     * INTERNAL_SELF_MANAGED.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Compute_BackendServiceCustomMetric extends \Google\Service\Compute\BackendServiceCustomMetric
     {
     }
 }

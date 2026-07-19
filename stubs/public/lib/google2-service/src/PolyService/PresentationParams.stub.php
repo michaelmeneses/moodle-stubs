@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class PresentationParams extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backgroundColor;
-    /**
-     * @var string
-     */
-    public $colorSpace;
-    /**
-     * @var Quaternion
-     */
-    public $orientingRotation;
-    protected $orientingRotationType = Quaternion::class;
-    protected $orientingRotationDataType = '';
-    /**
-     * @param string
-     */
-    public function setBackgroundColor($backgroundColor)
+namespace Google\Service\PolyService {
+    class PresentationParams extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backgroundColor;
+        /**
+         * @var string
+         */
+        public $colorSpace;
+        /**
+         * @var Quaternion
+         */
+        public $orientingRotation;
+        protected $orientingRotationType = Quaternion::class;
+        protected $orientingRotationDataType = '';
+        /**
+         * @param string
+         */
+        public function setBackgroundColor($backgroundColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setColorSpace($colorSpace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColorSpace()
+        {
+        }
+        /**
+         * @param Quaternion
+         */
+        public function setOrientingRotation(Quaternion $orientingRotation)
+        {
+        }
+        /**
+         * @return Quaternion
+         */
+        public function getOrientingRotation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolyService\PresentationParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setColorSpace($colorSpace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getColorSpace()
-    {
-    }
-    /**
-     * @param Quaternion
-     */
-    public function setOrientingRotation(Quaternion $orientingRotation)
-    {
-    }
-    /**
-     * @return Quaternion
-     */
-    public function getOrientingRotation()
+    class Google_Service_PolyService_PresentationParams extends \Google\Service\PolyService\PresentationParams
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class AlloyDBClusterDataSourceProperties extends \Google\Model
-{
-    /**
-     * Output only. Name of the AlloyDB cluster backed up by the datasource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Name of the AlloyDB cluster backed up by the datasource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Backupdr {
+    class AlloyDBClusterDataSourceProperties extends \Google\Model
     {
+        /**
+         * Output only. Name of the AlloyDB cluster backed up by the datasource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Name of the AlloyDB cluster backed up by the datasource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\AlloyDBClusterDataSourceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Backupdr_AlloyDBClusterDataSourceProperties extends \Google\Service\Backupdr\AlloyDBClusterDataSourceProperties
     {
     }
 }

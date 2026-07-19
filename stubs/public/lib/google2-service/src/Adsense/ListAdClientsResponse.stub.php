@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListAdClientsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adClients';
-    protected $adClientsType = AdClient::class;
-    protected $adClientsDataType = 'array';
-    /**
-     * Continuation token used to page through ad clients. To retrieve the next
-     * page of the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ad clients returned in this list response.
-     *
-     * @param AdClient[] $adClients
-     */
-    public function setAdClients($adClients)
+namespace Google\Service\Adsense {
+    class ListAdClientsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adClients';
+        protected $adClientsType = AdClient::class;
+        protected $adClientsDataType = 'array';
+        /**
+         * Continuation token used to page through ad clients. To retrieve the next
+         * page of the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ad clients returned in this list response.
+         *
+         * @param AdClient[] $adClients
+         */
+        public function setAdClients($adClients)
+        {
+        }
+        /**
+         * @return AdClient[]
+         */
+        public function getAdClients()
+        {
+        }
+        /**
+         * Continuation token used to page through ad clients. To retrieve the next
+         * page of the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdClient[]
+     * Runtime class alias of \Google\Service\Adsense\ListAdClientsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdClients()
-    {
-    }
-    /**
-     * Continuation token used to page through ad clients. To retrieve the next
-     * page of the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Adsense_ListAdClientsResponse extends \Google\Service\Adsense\ListAdClientsResponse
     {
     }
 }

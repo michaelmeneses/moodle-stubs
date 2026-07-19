@@ -16,6 +16,8 @@
  */
 namespace Mustache;
 
+use Mustache\Exception\InvalidArgumentException;
+use Mustache\Exception\SyntaxException;
 /**
  * Mustache Tokenizer class.
  *

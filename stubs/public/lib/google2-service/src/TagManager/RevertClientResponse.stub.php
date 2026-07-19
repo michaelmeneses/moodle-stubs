@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertClientResponse extends \Google\Model
-{
-    protected $clientType = Client::class;
-    protected $clientDataType = '';
-    /**
-     * Client as it appears in the latest container version since the last
-     * workspace synchronization operation. If no client is present, that means
-     * the client was deleted in the latest container version.
-     *
-     * @param Client $client
-     */
-    public function setClient(Client $client)
+namespace Google\Service\TagManager {
+    class RevertClientResponse extends \Google\Model
     {
+        protected $clientType = Client::class;
+        protected $clientDataType = '';
+        /**
+         * Client as it appears in the latest container version since the last
+         * workspace synchronization operation. If no client is present, that means
+         * the client was deleted in the latest container version.
+         *
+         * @param Client $client
+         */
+        public function setClient(Client $client)
+        {
+        }
+        /**
+         * @return Client
+         */
+        public function getClient()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Client
+     * Runtime class alias of \Google\Service\TagManager\RevertClientResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClient()
+    class Google_Service_TagManager_RevertClientResponse extends \Google\Service\TagManager\RevertClientResponse
     {
     }
 }

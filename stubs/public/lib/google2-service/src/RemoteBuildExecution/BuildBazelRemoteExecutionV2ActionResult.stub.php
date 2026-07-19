@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ActionResult extends \Google\Collection
-{
-    protected $collection_key = 'outputSymlinks';
-    protected $executionMetadataType = BuildBazelRemoteExecutionV2ExecutedActionMetadata::class;
-    protected $executionMetadataDataType = '';
-    public $exitCode;
-    protected $outputDirectoriesType = BuildBazelRemoteExecutionV2OutputDirectory::class;
-    protected $outputDirectoriesDataType = 'array';
-    protected $outputDirectorySymlinksType = BuildBazelRemoteExecutionV2OutputSymlink::class;
-    protected $outputDirectorySymlinksDataType = 'array';
-    protected $outputFileSymlinksType = BuildBazelRemoteExecutionV2OutputSymlink::class;
-    protected $outputFileSymlinksDataType = 'array';
-    protected $outputFilesType = BuildBazelRemoteExecutionV2OutputFile::class;
-    protected $outputFilesDataType = 'array';
-    protected $outputSymlinksType = BuildBazelRemoteExecutionV2OutputSymlink::class;
-    protected $outputSymlinksDataType = 'array';
-    protected $stderrDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $stderrDigestDataType = '';
-    public $stderrRaw;
-    protected $stdoutDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $stdoutDigestDataType = '';
-    public $stdoutRaw;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ActionResult extends \Google\Collection
+    {
+        protected $collection_key = 'outputSymlinks';
+        protected $executionMetadataType = BuildBazelRemoteExecutionV2ExecutedActionMetadata::class;
+        protected $executionMetadataDataType = '';
+        public $exitCode;
+        protected $outputDirectoriesType = BuildBazelRemoteExecutionV2OutputDirectory::class;
+        protected $outputDirectoriesDataType = 'array';
+        protected $outputDirectorySymlinksType = BuildBazelRemoteExecutionV2OutputSymlink::class;
+        protected $outputDirectorySymlinksDataType = 'array';
+        protected $outputFileSymlinksType = BuildBazelRemoteExecutionV2OutputSymlink::class;
+        protected $outputFileSymlinksDataType = 'array';
+        protected $outputFilesType = BuildBazelRemoteExecutionV2OutputFile::class;
+        protected $outputFilesDataType = 'array';
+        protected $outputSymlinksType = BuildBazelRemoteExecutionV2OutputSymlink::class;
+        protected $outputSymlinksDataType = 'array';
+        protected $stderrDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $stderrDigestDataType = '';
+        public $stderrRaw;
+        protected $stdoutDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $stdoutDigestDataType = '';
+        public $stdoutRaw;
+        /**
+         * @param BuildBazelRemoteExecutionV2ExecutedActionMetadata
+         */
+        public function setExecutionMetadata(BuildBazelRemoteExecutionV2ExecutedActionMetadata $executionMetadata)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ExecutedActionMetadata
+         */
+        public function getExecutionMetadata()
+        {
+        }
+        public function setExitCode($exitCode)
+        {
+        }
+        public function getExitCode()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2OutputDirectory[]
+         */
+        public function setOutputDirectories($outputDirectories)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2OutputDirectory[]
+         */
+        public function getOutputDirectories()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2OutputSymlink[]
+         */
+        public function setOutputDirectorySymlinks($outputDirectorySymlinks)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2OutputSymlink[]
+         */
+        public function getOutputDirectorySymlinks()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2OutputSymlink[]
+         */
+        public function setOutputFileSymlinks($outputFileSymlinks)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2OutputSymlink[]
+         */
+        public function getOutputFileSymlinks()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2OutputFile[]
+         */
+        public function setOutputFiles($outputFiles)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2OutputFile[]
+         */
+        public function getOutputFiles()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2OutputSymlink[]
+         */
+        public function setOutputSymlinks($outputSymlinks)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2OutputSymlink[]
+         */
+        public function getOutputSymlinks()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setStderrDigest(BuildBazelRemoteExecutionV2Digest $stderrDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getStderrDigest()
+        {
+        }
+        public function setStderrRaw($stderrRaw)
+        {
+        }
+        public function getStderrRaw()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setStdoutDigest(BuildBazelRemoteExecutionV2Digest $stdoutDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getStdoutDigest()
+        {
+        }
+        public function setStdoutRaw($stdoutRaw)
+        {
+        }
+        public function getStdoutRaw()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2ExecutedActionMetadata
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ActionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setExecutionMetadata(BuildBazelRemoteExecutionV2ExecutedActionMetadata $executionMetadata)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ExecutedActionMetadata
-     */
-    public function getExecutionMetadata()
-    {
-    }
-    public function setExitCode($exitCode)
-    {
-    }
-    public function getExitCode()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2OutputDirectory[]
-     */
-    public function setOutputDirectories($outputDirectories)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2OutputDirectory[]
-     */
-    public function getOutputDirectories()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2OutputSymlink[]
-     */
-    public function setOutputDirectorySymlinks($outputDirectorySymlinks)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2OutputSymlink[]
-     */
-    public function getOutputDirectorySymlinks()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2OutputSymlink[]
-     */
-    public function setOutputFileSymlinks($outputFileSymlinks)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2OutputSymlink[]
-     */
-    public function getOutputFileSymlinks()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2OutputFile[]
-     */
-    public function setOutputFiles($outputFiles)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2OutputFile[]
-     */
-    public function getOutputFiles()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2OutputSymlink[]
-     */
-    public function setOutputSymlinks($outputSymlinks)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2OutputSymlink[]
-     */
-    public function getOutputSymlinks()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2Digest
-     */
-    public function setStderrDigest(BuildBazelRemoteExecutionV2Digest $stderrDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getStderrDigest()
-    {
-    }
-    public function setStderrRaw($stderrRaw)
-    {
-    }
-    public function getStderrRaw()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2Digest
-     */
-    public function setStdoutDigest(BuildBazelRemoteExecutionV2Digest $stdoutDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getStdoutDigest()
-    {
-    }
-    public function setStdoutRaw($stdoutRaw)
-    {
-    }
-    public function getStdoutRaw()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ActionResult extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ActionResult
     {
     }
 }

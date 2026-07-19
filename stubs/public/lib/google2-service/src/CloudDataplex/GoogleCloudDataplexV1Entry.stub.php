@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1Entry extends \Google\Model
-{
-    protected $aspectsType = GoogleCloudDataplexV1Aspect::class;
-    protected $aspectsDataType = 'map';
-    /**
-     * Output only. The time when the entry was created in Dataplex Universal
-     * Catalog.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $entrySourceType = GoogleCloudDataplexV1EntrySource::class;
-    protected $entrySourceDataType = '';
-    /**
-     * Required. Immutable. The relative resource name of the entry type that was
-     * used to create this entry, in the format projects/{project_id_or_number}/lo
-     * cations/{location_id}/entryTypes/{entry_type_id}.
-     *
-     * @var string
-     */
-    public $entryType;
-    /**
-     * Optional. A name for the entry that can be referenced by an external
-     * system. For more information, see Fully qualified names
-     * (https://cloud.google.com/data-catalog/docs/fully-qualified-names). The
-     * maximum size of the field is 4000 characters.
-     *
-     * @var string
-     */
-    public $fullyQualifiedName;
-    /**
-     * Identifier. The relative resource name of the entry, in the format projects
-     * /{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id
-     * }/entries/{entry_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Immutable. The resource name of the parent entry, in the format p
-     * rojects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_g
-     * roup_id}/entries/{entry_id}.
-     *
-     * @var string
-     */
-    public $parentEntry;
-    /**
-     * Output only. The time when the entry was last updated in Dataplex Universal
-     * Catalog.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The aspects that are attached to the entry. Depending on how the
-     * aspect is attached to the entry, the format of the aspect key can be one of
-     * the following: If the aspect is attached directly to the entry:
-     * {project_id_or_number}.{location_id}.{aspect_type_id} If the aspect is
-     * attached to an entry's path:
-     * {project_id_or_number}.{location_id}.{aspect_type_id}@{path}
-     *
-     * @param GoogleCloudDataplexV1Aspect[] $aspects
-     */
-    public function setAspects($aspects)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1Entry extends \Google\Model
     {
+        protected $aspectsType = GoogleCloudDataplexV1Aspect::class;
+        protected $aspectsDataType = 'map';
+        /**
+         * Output only. The time when the entry was created in Dataplex Universal
+         * Catalog.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $entrySourceType = GoogleCloudDataplexV1EntrySource::class;
+        protected $entrySourceDataType = '';
+        /**
+         * Required. Immutable. The relative resource name of the entry type that was
+         * used to create this entry, in the format projects/{project_id_or_number}/lo
+         * cations/{location_id}/entryTypes/{entry_type_id}.
+         *
+         * @var string
+         */
+        public $entryType;
+        /**
+         * Optional. A name for the entry that can be referenced by an external
+         * system. For more information, see Fully qualified names
+         * (https://cloud.google.com/data-catalog/docs/fully-qualified-names). The
+         * maximum size of the field is 4000 characters.
+         *
+         * @var string
+         */
+        public $fullyQualifiedName;
+        /**
+         * Identifier. The relative resource name of the entry, in the format projects
+         * /{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id
+         * }/entries/{entry_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Immutable. The resource name of the parent entry, in the format p
+         * rojects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_g
+         * roup_id}/entries/{entry_id}.
+         *
+         * @var string
+         */
+        public $parentEntry;
+        /**
+         * Output only. The time when the entry was last updated in Dataplex Universal
+         * Catalog.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The aspects that are attached to the entry. Depending on how the
+         * aspect is attached to the entry, the format of the aspect key can be one of
+         * the following: If the aspect is attached directly to the entry:
+         * {project_id_or_number}.{location_id}.{aspect_type_id} If the aspect is
+         * attached to an entry's path:
+         * {project_id_or_number}.{location_id}.{aspect_type_id}@{path}
+         *
+         * @param GoogleCloudDataplexV1Aspect[] $aspects
+         */
+        public function setAspects($aspects)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Aspect[]
+         */
+        public function getAspects()
+        {
+        }
+        /**
+         * Output only. The time when the entry was created in Dataplex Universal
+         * Catalog.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Information related to the source system of the data resource
+         * that is represented by the entry.
+         *
+         * @param GoogleCloudDataplexV1EntrySource $entrySource
+         */
+        public function setEntrySource(GoogleCloudDataplexV1EntrySource $entrySource)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EntrySource
+         */
+        public function getEntrySource()
+        {
+        }
+        /**
+         * Required. Immutable. The relative resource name of the entry type that was
+         * used to create this entry, in the format projects/{project_id_or_number}/lo
+         * cations/{location_id}/entryTypes/{entry_type_id}.
+         *
+         * @param string $entryType
+         */
+        public function setEntryType($entryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntryType()
+        {
+        }
+        /**
+         * Optional. A name for the entry that can be referenced by an external
+         * system. For more information, see Fully qualified names
+         * (https://cloud.google.com/data-catalog/docs/fully-qualified-names). The
+         * maximum size of the field is 4000 characters.
+         *
+         * @param string $fullyQualifiedName
+         */
+        public function setFullyQualifiedName($fullyQualifiedName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullyQualifiedName()
+        {
+        }
+        /**
+         * Identifier. The relative resource name of the entry, in the format projects
+         * /{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id
+         * }/entries/{entry_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Immutable. The resource name of the parent entry, in the format p
+         * rojects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_g
+         * roup_id}/entries/{entry_id}.
+         *
+         * @param string $parentEntry
+         */
+        public function setParentEntry($parentEntry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentEntry()
+        {
+        }
+        /**
+         * Output only. The time when the entry was last updated in Dataplex Universal
+         * Catalog.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Aspect[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1Entry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAspects()
-    {
-    }
-    /**
-     * Output only. The time when the entry was created in Dataplex Universal
-     * Catalog.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Information related to the source system of the data resource
-     * that is represented by the entry.
-     *
-     * @param GoogleCloudDataplexV1EntrySource $entrySource
-     */
-    public function setEntrySource(GoogleCloudDataplexV1EntrySource $entrySource)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1EntrySource
-     */
-    public function getEntrySource()
-    {
-    }
-    /**
-     * Required. Immutable. The relative resource name of the entry type that was
-     * used to create this entry, in the format projects/{project_id_or_number}/lo
-     * cations/{location_id}/entryTypes/{entry_type_id}.
-     *
-     * @param string $entryType
-     */
-    public function setEntryType($entryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntryType()
-    {
-    }
-    /**
-     * Optional. A name for the entry that can be referenced by an external
-     * system. For more information, see Fully qualified names
-     * (https://cloud.google.com/data-catalog/docs/fully-qualified-names). The
-     * maximum size of the field is 4000 characters.
-     *
-     * @param string $fullyQualifiedName
-     */
-    public function setFullyQualifiedName($fullyQualifiedName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullyQualifiedName()
-    {
-    }
-    /**
-     * Identifier. The relative resource name of the entry, in the format projects
-     * /{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id
-     * }/entries/{entry_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Immutable. The resource name of the parent entry, in the format p
-     * rojects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_g
-     * roup_id}/entries/{entry_id}.
-     *
-     * @param string $parentEntry
-     */
-    public function setParentEntry($parentEntry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentEntry()
-    {
-    }
-    /**
-     * Output only. The time when the entry was last updated in Dataplex Universal
-     * Catalog.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1Entry extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1Entry
     {
     }
 }

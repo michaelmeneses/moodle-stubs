@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "dimensionValues" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $dimensionValues = $dfareportingService->dimensionValues;
- *  </code>
- */
-class DimensionValues extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DimensionValueList;
+    use Google\Service\Dfareporting\DimensionValueRequest;
     /**
-     * Retrieves list of report dimension values for a list of filters.
-     * (dimensionValues.query)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param DimensionValueRequest $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken The value of the nextToken from the previous
-     * result page.
-     * @return DimensionValueList
-     * @throws \Google\Service\Exception
+     * The "dimensionValues" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $dimensionValues = $dfareportingService->dimensionValues;
+     *  </code>
      */
-    public function query($profileId, DimensionValueRequest $postBody, $optParams = [])
+    class DimensionValues extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves list of report dimension values for a list of filters.
+         * (dimensionValues.query)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param DimensionValueRequest $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken The value of the nextToken from the previous
+         * result page.
+         * @return DimensionValueList
+         * @throws \Google\Service\Exception
+         */
+        public function query($profileId, DimensionValueRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\DimensionValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_DimensionValues extends \Google\Service\Dfareporting\Resource\DimensionValues
     {
     }
 }

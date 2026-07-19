@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAdGroupAssetSet extends \Google\Model
-{
-    /**
-     * The status has not been specified.
-     */
-    public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * The received value is not known in this version. This is a response-only
-     * value.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * The linkage between asset set and its container is enabled.
-     */
-    public const STATUS_ENABLED = 'ENABLED';
-    /**
-     * The linkage between asset set and its container is removed.
-     */
-    public const STATUS_REMOVED = 'REMOVED';
-    /**
-     * Immutable. The ad group to which this asset set is linked.
-     *
-     * @var string
-     */
-    public $adGroup;
-    /**
-     * Immutable. The asset set which is linked to the ad group.
-     *
-     * @var string
-     */
-    public $assetSet;
-    /**
-     * Immutable. The resource name of the ad group asset set. Ad group asset set
-     * resource names have the form:
-     * `customers/{customer_id}/adGroupAssetSets/{ad_group_id}~{asset_set_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The status of the ad group asset set. Read-only.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Immutable. The ad group to which this asset set is linked.
-     *
-     * @param string $adGroup
-     */
-    public function setAdGroup($adGroup)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAdGroupAssetSet extends \Google\Model
     {
+        /**
+         * The status has not been specified.
+         */
+        public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * The received value is not known in this version. This is a response-only
+         * value.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * The linkage between asset set and its container is enabled.
+         */
+        public const STATUS_ENABLED = 'ENABLED';
+        /**
+         * The linkage between asset set and its container is removed.
+         */
+        public const STATUS_REMOVED = 'REMOVED';
+        /**
+         * Immutable. The ad group to which this asset set is linked.
+         *
+         * @var string
+         */
+        public $adGroup;
+        /**
+         * Immutable. The asset set which is linked to the ad group.
+         *
+         * @var string
+         */
+        public $assetSet;
+        /**
+         * Immutable. The resource name of the ad group asset set. Ad group asset set
+         * resource names have the form:
+         * `customers/{customer_id}/adGroupAssetSets/{ad_group_id}~{asset_set_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The status of the ad group asset set. Read-only.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Immutable. The ad group to which this asset set is linked.
+         *
+         * @param string $adGroup
+         */
+        public function setAdGroup($adGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroup()
+        {
+        }
+        /**
+         * Immutable. The asset set which is linked to the ad group.
+         *
+         * @param string $assetSet
+         */
+        public function setAssetSet($assetSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetSet()
+        {
+        }
+        /**
+         * Immutable. The resource name of the ad group asset set. Ad group asset set
+         * resource names have the form:
+         * `customers/{customer_id}/adGroupAssetSets/{ad_group_id}~{asset_set_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. The status of the ad group asset set. Read-only.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupAssetSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroup()
-    {
-    }
-    /**
-     * Immutable. The asset set which is linked to the ad group.
-     *
-     * @param string $assetSet
-     */
-    public function setAssetSet($assetSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetSet()
-    {
-    }
-    /**
-     * Immutable. The resource name of the ad group asset set. Ad group asset set
-     * resource names have the form:
-     * `customers/{customer_id}/adGroupAssetSets/{ad_group_id}~{asset_set_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. The status of the ad group asset set. Read-only.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAdGroupAssetSet extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupAssetSet
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class BatchUpdateAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = Asset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * Update asset content. The content only includes values after field mask
-     * being applied.
-     *
-     * @param Asset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\MigrationCenterAPI {
+    class BatchUpdateAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = Asset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * Update asset content. The content only includes values after field mask
+         * being applied.
+         *
+         * @param Asset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return Asset[]
+         */
+        public function getAssets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\BatchUpdateAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
+    class Google_Service_MigrationCenterAPI_BatchUpdateAssetsResponse extends \Google\Service\MigrationCenterAPI\BatchUpdateAssetsResponse
     {
     }
 }

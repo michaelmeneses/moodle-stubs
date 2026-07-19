@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ListCollectionIdsRequest extends \Google\Model
-{
-    /**
-     * The maximum number of results to return.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A page token. Must be a value from ListCollectionIdsResponse.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Reads documents as they were at the given time. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * The maximum number of results to return.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Firestore {
+    class ListCollectionIdsRequest extends \Google\Model
     {
+        /**
+         * The maximum number of results to return.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A page token. Must be a value from ListCollectionIdsResponse.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Reads documents as they were at the given time. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * The maximum number of results to return.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A page token. Must be a value from ListCollectionIdsResponse.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Reads documents as they were at the given time. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Firestore\ListCollectionIdsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A page token. Must be a value from ListCollectionIdsResponse.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Reads documents as they were at the given time. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
+    class Google_Service_Firestore_ListCollectionIdsRequest extends \Google\Service\Firestore\ListCollectionIdsRequest
     {
     }
 }

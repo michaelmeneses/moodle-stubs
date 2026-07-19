@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DataSamplingConfig extends \Google\Collection
-{
-    protected $collection_key = 'behaviors';
-    /**
-     * List of given sampling behaviors to enable. For example, specifying
-     * behaviors = [ALWAYS_ON] samples in-flight elements but does not sample
-     * exceptions. Can be used to specify multiple behaviors like, behaviors =
-     * [ALWAYS_ON, EXCEPTIONS] for specifying periodic sampling and exception
-     * sampling. If DISABLED is in the list, then sampling will be disabled and
-     * ignore the other given behaviors. Ordering does not matter.
-     *
-     * @var string[]
-     */
-    public $behaviors;
-    /**
-     * List of given sampling behaviors to enable. For example, specifying
-     * behaviors = [ALWAYS_ON] samples in-flight elements but does not sample
-     * exceptions. Can be used to specify multiple behaviors like, behaviors =
-     * [ALWAYS_ON, EXCEPTIONS] for specifying periodic sampling and exception
-     * sampling. If DISABLED is in the list, then sampling will be disabled and
-     * ignore the other given behaviors. Ordering does not matter.
-     *
-     * @param string[] $behaviors
-     */
-    public function setBehaviors($behaviors)
+namespace Google\Service\Dataflow {
+    class DataSamplingConfig extends \Google\Collection
     {
+        protected $collection_key = 'behaviors';
+        /**
+         * List of given sampling behaviors to enable. For example, specifying
+         * behaviors = [ALWAYS_ON] samples in-flight elements but does not sample
+         * exceptions. Can be used to specify multiple behaviors like, behaviors =
+         * [ALWAYS_ON, EXCEPTIONS] for specifying periodic sampling and exception
+         * sampling. If DISABLED is in the list, then sampling will be disabled and
+         * ignore the other given behaviors. Ordering does not matter.
+         *
+         * @var string[]
+         */
+        public $behaviors;
+        /**
+         * List of given sampling behaviors to enable. For example, specifying
+         * behaviors = [ALWAYS_ON] samples in-flight elements but does not sample
+         * exceptions. Can be used to specify multiple behaviors like, behaviors =
+         * [ALWAYS_ON, EXCEPTIONS] for specifying periodic sampling and exception
+         * sampling. If DISABLED is in the list, then sampling will be disabled and
+         * ignore the other given behaviors. Ordering does not matter.
+         *
+         * @param string[] $behaviors
+         */
+        public function setBehaviors($behaviors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBehaviors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\DataSamplingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBehaviors()
+    class Google_Service_Dataflow_DataSamplingConfig extends \Google\Service\Dataflow\DataSamplingConfig
     {
     }
 }

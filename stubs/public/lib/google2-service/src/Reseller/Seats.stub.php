@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class Seats extends \Google\Model
-{
-    /**
-     * Identifies the resource as a subscription seat setting. Value:
-     * `subscriptions#seats`
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Read-only field containing the current number of users that are assigned a
-     * license for the product defined in `skuId`. This field's value is
-     * equivalent to the numerical count of users returned by the Enterprise
-     * License Manager API method: [`listForProductAndSku`](https://developers.goo
-     * gle.com/workspace/admin/licensing/v1/reference/licenseAssignments/listForPr
-     * oductAndSku).
-     *
-     * @var int
-     */
-    public $licensedNumberOfSeats;
-    /**
-     * This is a required property and is exclusive to subscriptions with
-     * `FLEXIBLE` or `TRIAL` plans. This property sets the maximum number of
-     * licensed users allowed on a subscription. This quantity can be increased up
-     * to the maximum limit defined in the reseller's contract. The minimum
-     * quantity is the current number of users in the customer account. *Note: *G
-     * Suite subscriptions automatically assign a license to every user.
-     *
-     * @var int
-     */
-    public $maximumNumberOfSeats;
-    /**
-     * This is a required property and is exclusive to subscriptions with
-     * `ANNUAL_MONTHLY_PAY` and `ANNUAL_YEARLY_PAY` plans. This property sets the
-     * maximum number of licenses assignable to users on a subscription. The
-     * reseller can add more licenses, but once set, the `numberOfSeats` cannot be
-     * reduced until renewal. The reseller is invoiced based on the
-     * `numberOfSeats` value regardless of how many of these user licenses are
-     * assigned. *Note: *Google Workspace subscriptions automatically assign a
-     * license to every user.
-     *
-     * @var int
-     */
-    public $numberOfSeats;
-    /**
-     * Identifies the resource as a subscription seat setting. Value:
-     * `subscriptions#seats`
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Reseller {
+    class Seats extends \Google\Model
     {
+        /**
+         * Identifies the resource as a subscription seat setting. Value:
+         * `subscriptions#seats`
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Read-only field containing the current number of users that are assigned a
+         * license for the product defined in `skuId`. This field's value is
+         * equivalent to the numerical count of users returned by the Enterprise
+         * License Manager API method: [`listForProductAndSku`](https://developers.goo
+         * gle.com/workspace/admin/licensing/v1/reference/licenseAssignments/listForPr
+         * oductAndSku).
+         *
+         * @var int
+         */
+        public $licensedNumberOfSeats;
+        /**
+         * This is a required property and is exclusive to subscriptions with
+         * `FLEXIBLE` or `TRIAL` plans. This property sets the maximum number of
+         * licensed users allowed on a subscription. This quantity can be increased up
+         * to the maximum limit defined in the reseller's contract. The minimum
+         * quantity is the current number of users in the customer account. *Note: *G
+         * Suite subscriptions automatically assign a license to every user.
+         *
+         * @var int
+         */
+        public $maximumNumberOfSeats;
+        /**
+         * This is a required property and is exclusive to subscriptions with
+         * `ANNUAL_MONTHLY_PAY` and `ANNUAL_YEARLY_PAY` plans. This property sets the
+         * maximum number of licenses assignable to users on a subscription. The
+         * reseller can add more licenses, but once set, the `numberOfSeats` cannot be
+         * reduced until renewal. The reseller is invoiced based on the
+         * `numberOfSeats` value regardless of how many of these user licenses are
+         * assigned. *Note: *Google Workspace subscriptions automatically assign a
+         * license to every user.
+         *
+         * @var int
+         */
+        public $numberOfSeats;
+        /**
+         * Identifies the resource as a subscription seat setting. Value:
+         * `subscriptions#seats`
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Read-only field containing the current number of users that are assigned a
+         * license for the product defined in `skuId`. This field's value is
+         * equivalent to the numerical count of users returned by the Enterprise
+         * License Manager API method: [`listForProductAndSku`](https://developers.goo
+         * gle.com/workspace/admin/licensing/v1/reference/licenseAssignments/listForPr
+         * oductAndSku).
+         *
+         * @param int $licensedNumberOfSeats
+         */
+        public function setLicensedNumberOfSeats($licensedNumberOfSeats)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLicensedNumberOfSeats()
+        {
+        }
+        /**
+         * This is a required property and is exclusive to subscriptions with
+         * `FLEXIBLE` or `TRIAL` plans. This property sets the maximum number of
+         * licensed users allowed on a subscription. This quantity can be increased up
+         * to the maximum limit defined in the reseller's contract. The minimum
+         * quantity is the current number of users in the customer account. *Note: *G
+         * Suite subscriptions automatically assign a license to every user.
+         *
+         * @param int $maximumNumberOfSeats
+         */
+        public function setMaximumNumberOfSeats($maximumNumberOfSeats)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaximumNumberOfSeats()
+        {
+        }
+        /**
+         * This is a required property and is exclusive to subscriptions with
+         * `ANNUAL_MONTHLY_PAY` and `ANNUAL_YEARLY_PAY` plans. This property sets the
+         * maximum number of licenses assignable to users on a subscription. The
+         * reseller can add more licenses, but once set, the `numberOfSeats` cannot be
+         * reduced until renewal. The reseller is invoiced based on the
+         * `numberOfSeats` value regardless of how many of these user licenses are
+         * assigned. *Note: *Google Workspace subscriptions automatically assign a
+         * license to every user.
+         *
+         * @param int $numberOfSeats
+         */
+        public function setNumberOfSeats($numberOfSeats)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberOfSeats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\Seats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Read-only field containing the current number of users that are assigned a
-     * license for the product defined in `skuId`. This field's value is
-     * equivalent to the numerical count of users returned by the Enterprise
-     * License Manager API method: [`listForProductAndSku`](https://developers.goo
-     * gle.com/workspace/admin/licensing/v1/reference/licenseAssignments/listForPr
-     * oductAndSku).
-     *
-     * @param int $licensedNumberOfSeats
-     */
-    public function setLicensedNumberOfSeats($licensedNumberOfSeats)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLicensedNumberOfSeats()
-    {
-    }
-    /**
-     * This is a required property and is exclusive to subscriptions with
-     * `FLEXIBLE` or `TRIAL` plans. This property sets the maximum number of
-     * licensed users allowed on a subscription. This quantity can be increased up
-     * to the maximum limit defined in the reseller's contract. The minimum
-     * quantity is the current number of users in the customer account. *Note: *G
-     * Suite subscriptions automatically assign a license to every user.
-     *
-     * @param int $maximumNumberOfSeats
-     */
-    public function setMaximumNumberOfSeats($maximumNumberOfSeats)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaximumNumberOfSeats()
-    {
-    }
-    /**
-     * This is a required property and is exclusive to subscriptions with
-     * `ANNUAL_MONTHLY_PAY` and `ANNUAL_YEARLY_PAY` plans. This property sets the
-     * maximum number of licenses assignable to users on a subscription. The
-     * reseller can add more licenses, but once set, the `numberOfSeats` cannot be
-     * reduced until renewal. The reseller is invoiced based on the
-     * `numberOfSeats` value regardless of how many of these user licenses are
-     * assigned. *Note: *Google Workspace subscriptions automatically assign a
-     * license to every user.
-     *
-     * @param int $numberOfSeats
-     */
-    public function setNumberOfSeats($numberOfSeats)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumberOfSeats()
+    class Google_Service_Reseller_Seats extends \Google\Service\Reseller\Seats
     {
     }
 }

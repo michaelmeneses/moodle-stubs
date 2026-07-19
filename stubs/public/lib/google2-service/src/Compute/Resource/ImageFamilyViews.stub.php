@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute\Resource;
-
-/**
- * The "imageFamilyViews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $computeService = new Google\Service\Compute(...);
- *   $imageFamilyViews = $computeService->imageFamilyViews;
- *  </code>
- */
-class ImageFamilyViews extends \Google\Service\Resource
-{
+namespace Google\Service\Compute\Resource {
+    use Google\Service\Compute\ImageFamilyView;
     /**
-     * Returns the latest image that is part of an image family, is not deprecated
-     * and is rolled out in the specified zone. (imageFamilyViews.get)
-     *
-     * @param string $project Project ID for this request.
-     * @param string $zone The name of the zone for this request.
-     * @param string $family Name of the image family to search for.
-     * @param array $optParams Optional parameters.
-     * @return ImageFamilyView
-     * @throws \Google\Service\Exception
+     * The "imageFamilyViews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $computeService = new Google\Service\Compute(...);
+     *   $imageFamilyViews = $computeService->imageFamilyViews;
+     *  </code>
      */
-    public function get($project, $zone, $family, $optParams = [])
+    class ImageFamilyViews extends \Google\Service\Resource
+    {
+        /**
+         * Returns the latest image that is part of an image family, is not deprecated
+         * and is rolled out in the specified zone. (imageFamilyViews.get)
+         *
+         * @param string $project Project ID for this request.
+         * @param string $zone The name of the zone for this request.
+         * @param string $family Name of the image family to search for.
+         * @param array $optParams Optional parameters.
+         * @return ImageFamilyView
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $zone, $family, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Compute\Resource\ImageFamilyViews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Compute_Resource_ImageFamilyViews extends \Google\Service\Compute\Resource\ImageFamilyViews
     {
     }
 }

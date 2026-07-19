@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class TimerEvent extends \Google\Model
-{
-    /**
-     * Required. The name of the timer event.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The name used to identify this timer event in reports.
-     *
-     * @var string
-     */
-    public $reportingName;
-    /**
-     * Required. The name of the timer event.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DisplayVideo {
+    class TimerEvent extends \Google\Model
     {
+        /**
+         * Required. The name of the timer event.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The name used to identify this timer event in reports.
+         *
+         * @var string
+         */
+        public $reportingName;
+        /**
+         * Required. The name of the timer event.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The name used to identify this timer event in reports.
+         *
+         * @param string $reportingName
+         */
+        public function setReportingName($reportingName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\TimerEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The name used to identify this timer event in reports.
-     *
-     * @param string $reportingName
-     */
-    public function setReportingName($reportingName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingName()
+    class Google_Service_DisplayVideo_TimerEvent extends \Google\Service\DisplayVideo\TimerEvent
     {
     }
 }

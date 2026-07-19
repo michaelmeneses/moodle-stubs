@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ComputeEnvironmentScoresRequest extends \Google\Collection
-{
-    protected $collection_key = 'filters';
-    protected $filtersType = GoogleCloudApigeeV1ComputeEnvironmentScoresRequestFilter::class;
-    protected $filtersDataType = 'array';
-    /**
-     * Optional. The maximum number of subcomponents to be returned in a single
-     * page. The service may return fewer than this value. If unspecified, at most
-     * 100 subcomponents will be returned in a single page.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Optional. A token that can be sent as `page_token` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $pageToken;
-    protected $timeRangeType = GoogleTypeInterval::class;
-    protected $timeRangeDataType = '';
-    /**
-     * Optional. Filters are used to filter scored components. Return all the
-     * components if no filter is mentioned. Example: [{ "scorePath":
-     * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/source" },
-     * { "scorePath":
-     * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/target", }]
-     * This will return components with path:
-     * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/source" OR
-     * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/target"
-     *
-     * @param GoogleCloudApigeeV1ComputeEnvironmentScoresRequestFilter[] $filters
-     */
-    public function setFilters($filters)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ComputeEnvironmentScoresRequest extends \Google\Collection
     {
+        protected $collection_key = 'filters';
+        protected $filtersType = GoogleCloudApigeeV1ComputeEnvironmentScoresRequestFilter::class;
+        protected $filtersDataType = 'array';
+        /**
+         * Optional. The maximum number of subcomponents to be returned in a single
+         * page. The service may return fewer than this value. If unspecified, at most
+         * 100 subcomponents will be returned in a single page.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Optional. A token that can be sent as `page_token` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $pageToken;
+        protected $timeRangeType = GoogleTypeInterval::class;
+        protected $timeRangeDataType = '';
+        /**
+         * Optional. Filters are used to filter scored components. Return all the
+         * components if no filter is mentioned. Example: [{ "scorePath":
+         * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/source" },
+         * { "scorePath":
+         * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/target", }]
+         * This will return components with path:
+         * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/source" OR
+         * "/org@myorg/envgroup@myenvgroup/env@myenv/proxies/proxy@myproxy/target"
+         *
+         * @param GoogleCloudApigeeV1ComputeEnvironmentScoresRequestFilter[] $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ComputeEnvironmentScoresRequestFilter[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * Optional. The maximum number of subcomponents to be returned in a single
+         * page. The service may return fewer than this value. If unspecified, at most
+         * 100 subcomponents will be returned in a single page.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Optional. A token that can be sent as `page_token` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. Time range for score calculation. At most 14 days of scores will
+         * be returned, and both the start and end dates must be within the last 90
+         * days.
+         *
+         * @param GoogleTypeInterval $timeRange
+         */
+        public function setTimeRange(GoogleTypeInterval $timeRange)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ComputeEnvironmentScoresRequestFilter[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * Optional. The maximum number of subcomponents to be returned in a single
-     * page. The service may return fewer than this value. If unspecified, at most
-     * 100 subcomponents will be returned in a single page.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Optional. A token that can be sent as `page_token` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. Time range for score calculation. At most 14 days of scores will
-     * be returned, and both the start and end dates must be within the last 90
-     * days.
-     *
-     * @param GoogleTypeInterval $timeRange
-     */
-    public function setTimeRange(GoogleTypeInterval $timeRange)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getTimeRange()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ComputeEnvironmentScoresRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresRequest
     {
     }
 }

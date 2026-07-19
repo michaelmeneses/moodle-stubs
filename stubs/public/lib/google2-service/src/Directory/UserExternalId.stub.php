@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserExternalId extends \Google\Model
-{
-    /**
-     * Custom type.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * The type of the Id.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The value of the id.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Custom type.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
+namespace Google\Service\Directory {
+    class UserExternalId extends \Google\Model
     {
+        /**
+         * Custom type.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * The type of the Id.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The value of the id.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Custom type.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * The type of the Id.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The value of the id.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserExternalId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomType()
-    {
-    }
-    /**
-     * The type of the Id.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The value of the id.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Directory_UserExternalId extends \Google\Service\Directory\UserExternalId
     {
     }
 }

@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "findings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $findings = $securitycenterService->folders_findings;
- *  </code>
- */
-class FoldersFindings extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    use Google\Service\SecurityCommandCenter\BulkMuteFindingsRequest;
+    use Google\Service\SecurityCommandCenter\Operation;
     /**
-     * Kicks off an LRO to bulk mute findings for a parent based on a filter. The
-     * parent can be either an organization, folder or project. The findings matched
-     * by the filter will be muted after the LRO is done. (findings.bulkMute)
-     *
-     * @param string $parent Required. The parent, at which bulk action needs to be
-     * applied. Its format is `organizations/[organization_id]`,
-     * `folders/[folder_id]`, `projects/[project_id]`.
-     * @param BulkMuteFindingsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "findings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $findings = $securitycenterService->folders_findings;
+     *  </code>
      */
-    public function bulkMute($parent, BulkMuteFindingsRequest $postBody, $optParams = [])
+    class FoldersFindings extends \Google\Service\Resource
+    {
+        /**
+         * Kicks off an LRO to bulk mute findings for a parent based on a filter. The
+         * parent can be either an organization, folder or project. The findings matched
+         * by the filter will be muted after the LRO is done. (findings.bulkMute)
+         *
+         * @param string $parent Required. The parent, at which bulk action needs to be
+         * applied. Its format is `organizations/[organization_id]`,
+         * `folders/[folder_id]`, `projects/[project_id]`.
+         * @param BulkMuteFindingsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function bulkMute($parent, BulkMuteFindingsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\FoldersFindings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityCommandCenter_Resource_FoldersFindings extends \Google\Service\SecurityCommandCenter\Resource\FoldersFindings
     {
     }
 }

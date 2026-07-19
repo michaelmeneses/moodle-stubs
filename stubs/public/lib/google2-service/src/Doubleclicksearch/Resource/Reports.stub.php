@@ -21,75 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $doubleclicksearchService = new Google\Service\Doubleclicksearch(...);
- *   $reports = $doubleclicksearchService->reports;
- *  </code>
- */
-class Reports extends \Google\Service\Resource
-{
+namespace Google\Service\Doubleclicksearch\Resource {
+    use Google\Service\Doubleclicksearch\IdMappingFile;
+    use Google\Service\Doubleclicksearch\Report;
+    use Google\Service\Doubleclicksearch\ReportRequest;
     /**
-     * Generates and returns a report immediately. (reports.generate)
-     *
-     * @param ReportRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Report
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $doubleclicksearchService = new Google\Service\Doubleclicksearch(...);
+     *   $reports = $doubleclicksearchService->reports;
+     *  </code>
      */
-    public function generate(ReportRequest $postBody, $optParams = [])
+    class Reports extends \Google\Service\Resource
     {
+        /**
+         * Generates and returns a report immediately. (reports.generate)
+         *
+         * @param ReportRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function generate(ReportRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Polls for the status of a report request. (reports.get)
+         *
+         * @param string $reportId ID of the report request being polled.
+         * @param array $optParams Optional parameters.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function get($reportId, $optParams = [])
+        {
+        }
+        /**
+         * Downloads a report file encoded in UTF-8. (reports.getFile)
+         *
+         * @param string $reportId ID of the report.
+         * @param int $reportFragment The index of the report fragment to download.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function getFile($reportId, $reportFragment, $optParams = [])
+        {
+        }
+        /**
+         * Downloads a csv file(encoded in UTF-8) that contains ID mappings between
+         * legacy SA360 and new SA360. The file includes all children entities of the
+         * given advertiser(e.g. engine accounts, campaigns, ad groups, etc.) that exist
+         * in both legacy SA360 and new SA360. (reports.getIdMappingFile)
+         *
+         * @param string $agencyId Legacy SA360 agency ID.
+         * @param string $advertiserId Legacy SA360 advertiser ID.
+         * @param array $optParams Optional parameters.
+         * @return IdMappingFile
+         * @throws \Google\Service\Exception
+         */
+        public function getIdMappingFile($agencyId, $advertiserId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a report request into the reporting system. (reports.request)
+         *
+         * @param ReportRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function request(ReportRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Polls for the status of a report request. (reports.get)
-     *
-     * @param string $reportId ID of the report request being polled.
-     * @param array $optParams Optional parameters.
-     * @return Report
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Doubleclicksearch\Resource\Reports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($reportId, $optParams = [])
-    {
-    }
-    /**
-     * Downloads a report file encoded in UTF-8. (reports.getFile)
-     *
-     * @param string $reportId ID of the report.
-     * @param int $reportFragment The index of the report fragment to download.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function getFile($reportId, $reportFragment, $optParams = [])
-    {
-    }
-    /**
-     * Downloads a csv file(encoded in UTF-8) that contains ID mappings between
-     * legacy SA360 and new SA360. The file includes all children entities of the
-     * given advertiser(e.g. engine accounts, campaigns, ad groups, etc.) that exist
-     * in both legacy SA360 and new SA360. (reports.getIdMappingFile)
-     *
-     * @param string $agencyId Legacy SA360 agency ID.
-     * @param string $advertiserId Legacy SA360 advertiser ID.
-     * @param array $optParams Optional parameters.
-     * @return IdMappingFile
-     * @throws \Google\Service\Exception
-     */
-    public function getIdMappingFile($agencyId, $advertiserId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a report request into the reporting system. (reports.request)
-     *
-     * @param ReportRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Report
-     * @throws \Google\Service\Exception
-     */
-    public function request(ReportRequest $postBody, $optParams = [])
+    class Google_Service_Doubleclicksearch_Resource_Reports extends \Google\Service\Doubleclicksearch\Resource\Reports
     {
     }
 }

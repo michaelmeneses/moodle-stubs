@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class GPUUsage extends \Google\Model
-{
-    /**
-     * Required. Timestamp of the measurement.
-     *
-     * @var string
-     */
-    public $timestamp;
-    protected $utilizationType = GPUUtilization::class;
-    protected $utilizationDataType = '';
-    /**
-     * Required. Timestamp of the measurement.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
+namespace Google\Service\Dataflow {
+    class GPUUsage extends \Google\Model
     {
+        /**
+         * Required. Timestamp of the measurement.
+         *
+         * @var string
+         */
+        public $timestamp;
+        protected $utilizationType = GPUUtilization::class;
+        protected $utilizationDataType = '';
+        /**
+         * Required. Timestamp of the measurement.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * Required. Utilization info about the GPU.
+         *
+         * @param GPUUtilization $utilization
+         */
+        public function setUtilization(GPUUtilization $utilization)
+        {
+        }
+        /**
+         * @return GPUUtilization
+         */
+        public function getUtilization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\GPUUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * Required. Utilization info about the GPU.
-     *
-     * @param GPUUtilization $utilization
-     */
-    public function setUtilization(GPUUtilization $utilization)
-    {
-    }
-    /**
-     * @return GPUUtilization
-     */
-    public function getUtilization()
+    class Google_Service_Dataflow_GPUUsage extends \Google\Service\Dataflow\GPUUsage
     {
     }
 }

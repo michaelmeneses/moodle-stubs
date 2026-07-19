@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesListServerCertificatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'serverCerts';
-    /**
-     * The `sha1_fingerprint` of the active certificate from `server_certs`.
-     *
-     * @var string
-     */
-    public $activeVersion;
-    protected $caCertsType = SslCert::class;
-    protected $caCertsDataType = 'array';
-    /**
-     * This is always `sql#instancesListServerCertificates`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $serverCertsType = SslCert::class;
-    protected $serverCertsDataType = 'array';
-    /**
-     * The `sha1_fingerprint` of the active certificate from `server_certs`.
-     *
-     * @param string $activeVersion
-     */
-    public function setActiveVersion($activeVersion)
+namespace Google\Service\SQLAdmin {
+    class InstancesListServerCertificatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'serverCerts';
+        /**
+         * The `sha1_fingerprint` of the active certificate from `server_certs`.
+         *
+         * @var string
+         */
+        public $activeVersion;
+        protected $caCertsType = SslCert::class;
+        protected $caCertsDataType = 'array';
+        /**
+         * This is always `sql#instancesListServerCertificates`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $serverCertsType = SslCert::class;
+        protected $serverCertsDataType = 'array';
+        /**
+         * The `sha1_fingerprint` of the active certificate from `server_certs`.
+         *
+         * @param string $activeVersion
+         */
+        public function setActiveVersion($activeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveVersion()
+        {
+        }
+        /**
+         * List of server CA certificates for the instance.
+         *
+         * @param SslCert[] $caCerts
+         */
+        public function setCaCerts($caCerts)
+        {
+        }
+        /**
+         * @return SslCert[]
+         */
+        public function getCaCerts()
+        {
+        }
+        /**
+         * This is always `sql#instancesListServerCertificates`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of server certificates for the instance, signed by the corresponding
+         * CA from the `ca_certs` list.
+         *
+         * @param SslCert[] $serverCerts
+         */
+        public function setServerCerts($serverCerts)
+        {
+        }
+        /**
+         * @return SslCert[]
+         */
+        public function getServerCerts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesListServerCertificatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveVersion()
-    {
-    }
-    /**
-     * List of server CA certificates for the instance.
-     *
-     * @param SslCert[] $caCerts
-     */
-    public function setCaCerts($caCerts)
-    {
-    }
-    /**
-     * @return SslCert[]
-     */
-    public function getCaCerts()
-    {
-    }
-    /**
-     * This is always `sql#instancesListServerCertificates`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * List of server certificates for the instance, signed by the corresponding
-     * CA from the `ca_certs` list.
-     *
-     * @param SslCert[] $serverCerts
-     */
-    public function setServerCerts($serverCerts)
-    {
-    }
-    /**
-     * @return SslCert[]
-     */
-    public function getServerCerts()
+    class Google_Service_SQLAdmin_InstancesListServerCertificatesResponse extends \Google\Service\SQLAdmin\InstancesListServerCertificatesResponse
     {
     }
 }

@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudObservability\Resource;
-
-/**
- * The "scopes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $observabilityService = new Google\Service\CloudObservability(...);
- *   $scopes = $observabilityService->projects_locations_scopes;
- *  </code>
- */
-class ProjectsLocationsScopes extends \Google\Service\Resource
-{
+namespace Google\Service\CloudObservability\Resource {
+    use Google\Service\CloudObservability\Scope;
     /**
-     * Gets details of a single Scope. (scopes.get)
-     *
-     * @param string $name Required. Name of the resource. The format is:
-     * projects/{project}/locations/{location}/scopes/{scope} The `{location}` field
-     * must be set to `global`. The `{scope}` field must be set to `_Default`.
-     * @param array $optParams Optional parameters.
-     * @return Scope
-     * @throws \Google\Service\Exception
+     * The "scopes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $observabilityService = new Google\Service\CloudObservability(...);
+     *   $scopes = $observabilityService->projects_locations_scopes;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsScopes extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single Scope. (scopes.get)
+         *
+         * @param string $name Required. Name of the resource. The format is:
+         * projects/{project}/locations/{location}/scopes/{scope} The `{location}` field
+         * must be set to `global`. The `{scope}` field must be set to `_Default`.
+         * @param array $optParams Optional parameters.
+         * @return Scope
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single Scope. (scopes.patch)
+         *
+         * @param string $name Identifier. Name of the resource. The format is:
+         * projects/{project}/locations/{location}/scopes/{scope} The `{location}` field
+         * must be set to `global`. The `{scope}` field must be set to `_Default`.
+         * @param Scope $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the Scope resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field is overwritten when it is in the mask. If the user does not
+         * provide a mask, then all fields present in the request are overwritten.
+         * @return Scope
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Scope $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the parameters of a single Scope. (scopes.patch)
-     *
-     * @param string $name Identifier. Name of the resource. The format is:
-     * projects/{project}/locations/{location}/scopes/{scope} The `{location}` field
-     * must be set to `global`. The `{scope}` field must be set to `_Default`.
-     * @param Scope $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the Scope resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field is overwritten when it is in the mask. If the user does not
-     * provide a mask, then all fields present in the request are overwritten.
-     * @return Scope
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudObservability\Resource\ProjectsLocationsScopes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($name, Scope $postBody, $optParams = [])
+    class Google_Service_CloudObservability_Resource_ProjectsLocationsScopes extends \Google\Service\CloudObservability\Resource\ProjectsLocationsScopes
     {
     }
 }

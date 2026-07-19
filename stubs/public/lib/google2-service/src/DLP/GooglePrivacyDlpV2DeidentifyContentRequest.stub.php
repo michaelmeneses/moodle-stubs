@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeidentifyContentRequest extends \Google\Model
-{
-    protected $deidentifyConfigType = GooglePrivacyDlpV2DeidentifyConfig::class;
-    protected $deidentifyConfigDataType = '';
-    /**
-     * Template to use. Any configuration directly specified in deidentify_config
-     * will override those set in the template. Singular fields that are set in
-     * this request will replace their corresponding fields in the template.
-     * Repeated fields are appended. Singular sub-messages and groups are
-     * recursively merged.
-     *
-     * @var string
-     */
-    public $deidentifyTemplateName;
-    protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
-    protected $inspectConfigDataType = '';
-    /**
-     * Template to use. Any configuration directly specified in inspect_config
-     * will override those set in the template. Singular fields that are set in
-     * this request will replace their corresponding fields in the template.
-     * Repeated fields are appended. Singular sub-messages and groups are
-     * recursively merged.
-     *
-     * @var string
-     */
-    public $inspectTemplateName;
-    protected $itemType = GooglePrivacyDlpV2ContentItem::class;
-    protected $itemDataType = '';
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * Configuration for the de-identification of the content item. Items
-     * specified here will override the template referenced by the
-     * deidentify_template_name argument.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig
-     */
-    public function setDeidentifyConfig(GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeidentifyContentRequest extends \Google\Model
     {
+        protected $deidentifyConfigType = GooglePrivacyDlpV2DeidentifyConfig::class;
+        protected $deidentifyConfigDataType = '';
+        /**
+         * Template to use. Any configuration directly specified in deidentify_config
+         * will override those set in the template. Singular fields that are set in
+         * this request will replace their corresponding fields in the template.
+         * Repeated fields are appended. Singular sub-messages and groups are
+         * recursively merged.
+         *
+         * @var string
+         */
+        public $deidentifyTemplateName;
+        protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
+        protected $inspectConfigDataType = '';
+        /**
+         * Template to use. Any configuration directly specified in inspect_config
+         * will override those set in the template. Singular fields that are set in
+         * this request will replace their corresponding fields in the template.
+         * Repeated fields are appended. Singular sub-messages and groups are
+         * recursively merged.
+         *
+         * @var string
+         */
+        public $inspectTemplateName;
+        protected $itemType = GooglePrivacyDlpV2ContentItem::class;
+        protected $itemDataType = '';
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * Configuration for the de-identification of the content item. Items
+         * specified here will override the template referenced by the
+         * deidentify_template_name argument.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig
+         */
+        public function setDeidentifyConfig(GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyConfig
+         */
+        public function getDeidentifyConfig()
+        {
+        }
+        /**
+         * Template to use. Any configuration directly specified in deidentify_config
+         * will override those set in the template. Singular fields that are set in
+         * this request will replace their corresponding fields in the template.
+         * Repeated fields are appended. Singular sub-messages and groups are
+         * recursively merged.
+         *
+         * @param string $deidentifyTemplateName
+         */
+        public function setDeidentifyTemplateName($deidentifyTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeidentifyTemplateName()
+        {
+        }
+        /**
+         * Configuration for the inspector. Items specified here will override the
+         * template referenced by the inspect_template_name argument.
+         *
+         * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
+         */
+        public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectConfig
+         */
+        public function getInspectConfig()
+        {
+        }
+        /**
+         * Template to use. Any configuration directly specified in inspect_config
+         * will override those set in the template. Singular fields that are set in
+         * this request will replace their corresponding fields in the template.
+         * Repeated fields are appended. Singular sub-messages and groups are
+         * recursively merged.
+         *
+         * @param string $inspectTemplateName
+         */
+        public function setInspectTemplateName($inspectTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectTemplateName()
+        {
+        }
+        /**
+         * The item to de-identify. Will be treated as text. This value must be of
+         * type Table if your deidentify_config is a RecordTransformations object.
+         *
+         * @param GooglePrivacyDlpV2ContentItem $item
+         */
+        public function setItem(GooglePrivacyDlpV2ContentItem $item)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ContentItem
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeidentifyConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyContentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyConfig()
-    {
-    }
-    /**
-     * Template to use. Any configuration directly specified in deidentify_config
-     * will override those set in the template. Singular fields that are set in
-     * this request will replace their corresponding fields in the template.
-     * Repeated fields are appended. Singular sub-messages and groups are
-     * recursively merged.
-     *
-     * @param string $deidentifyTemplateName
-     */
-    public function setDeidentifyTemplateName($deidentifyTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeidentifyTemplateName()
-    {
-    }
-    /**
-     * Configuration for the inspector. Items specified here will override the
-     * template referenced by the inspect_template_name argument.
-     *
-     * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
-     */
-    public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectConfig
-     */
-    public function getInspectConfig()
-    {
-    }
-    /**
-     * Template to use. Any configuration directly specified in inspect_config
-     * will override those set in the template. Singular fields that are set in
-     * this request will replace their corresponding fields in the template.
-     * Repeated fields are appended. Singular sub-messages and groups are
-     * recursively merged.
-     *
-     * @param string $inspectTemplateName
-     */
-    public function setInspectTemplateName($inspectTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectTemplateName()
-    {
-    }
-    /**
-     * The item to de-identify. Will be treated as text. This value must be of
-     * type Table if your deidentify_config is a RecordTransformations object.
-     *
-     * @param GooglePrivacyDlpV2ContentItem $item
-     */
-    public function setItem(GooglePrivacyDlpV2ContentItem $item)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ContentItem
-     */
-    public function getItem()
-    {
-    }
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeidentifyContentRequest extends \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyContentRequest
     {
     }
 }

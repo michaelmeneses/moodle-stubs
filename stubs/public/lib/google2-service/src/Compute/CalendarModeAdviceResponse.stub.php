@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CalendarModeAdviceResponse extends \Google\Collection
-{
-    protected $collection_key = 'recommendations';
-    protected $recommendationsType = CalendarModeRecommendation::class;
-    protected $recommendationsDataType = 'array';
-    /**
-     * Recommendations where, how and when to create the requested resources in
-     * order to maximize their obtainability and minimize cost.
-     *
-     * @param CalendarModeRecommendation[] $recommendations
-     */
-    public function setRecommendations($recommendations)
+namespace Google\Service\Compute {
+    class CalendarModeAdviceResponse extends \Google\Collection
     {
+        protected $collection_key = 'recommendations';
+        protected $recommendationsType = CalendarModeRecommendation::class;
+        protected $recommendationsDataType = 'array';
+        /**
+         * Recommendations where, how and when to create the requested resources in
+         * order to maximize their obtainability and minimize cost.
+         *
+         * @param CalendarModeRecommendation[] $recommendations
+         */
+        public function setRecommendations($recommendations)
+        {
+        }
+        /**
+         * @return CalendarModeRecommendation[]
+         */
+        public function getRecommendations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CalendarModeRecommendation[]
+     * Runtime class alias of \Google\Service\Compute\CalendarModeAdviceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecommendations()
+    class Google_Service_Compute_CalendarModeAdviceResponse extends \Google\Service\Compute\CalendarModeAdviceResponse
     {
     }
 }

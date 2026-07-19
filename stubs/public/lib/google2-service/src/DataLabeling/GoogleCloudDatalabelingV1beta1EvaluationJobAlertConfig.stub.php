@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends \Google\Model
-{
-    /**
-     * Required. An email address to send alerts to.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Required. A number between 0 and 1 that describes a minimum mean average
-     * precision threshold. When the evaluation job runs, if it calculates that
-     * your model version's predictions from the recent interval have
-     * meanAveragePrecision below this threshold, then it sends an alert to your
-     * specified email.
-     *
-     * @var 
-     */
-    public $minAcceptableMeanAveragePrecision;
-    /**
-     * Required. An email address to send alerts to.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends \Google\Model
     {
+        /**
+         * Required. An email address to send alerts to.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Required. A number between 0 and 1 that describes a minimum mean average
+         * precision threshold. When the evaluation job runs, if it calculates that
+         * your model version's predictions from the recent interval have
+         * meanAveragePrecision below this threshold, then it sends an alert to your
+         * specified email.
+         *
+         * @var 
+         */
+        public $minAcceptableMeanAveragePrecision;
+        /**
+         * Required. An email address to send alerts to.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        public function setMinAcceptableMeanAveragePrecision($minAcceptableMeanAveragePrecision)
+        {
+        }
+        public function getMinAcceptableMeanAveragePrecision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    public function setMinAcceptableMeanAveragePrecision($minAcceptableMeanAveragePrecision)
-    {
-    }
-    public function getMinAcceptableMeanAveragePrecision()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig
     {
     }
 }

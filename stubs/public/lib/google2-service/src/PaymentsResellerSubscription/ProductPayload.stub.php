@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ProductPayload extends \Google\Model
-{
-    protected $googleHomePayloadType = GoogleHomePayload::class;
-    protected $googleHomePayloadDataType = '';
-    protected $googleOnePayloadType = GoogleOnePayload::class;
-    protected $googleOnePayloadDataType = '';
-    protected $youtubePayloadType = YoutubePayload::class;
-    protected $youtubePayloadDataType = '';
-    /**
-     * Payload specific to Google Home products.
-     *
-     * @param GoogleHomePayload $googleHomePayload
-     */
-    public function setGoogleHomePayload(GoogleHomePayload $googleHomePayload)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ProductPayload extends \Google\Model
     {
+        protected $googleHomePayloadType = GoogleHomePayload::class;
+        protected $googleHomePayloadDataType = '';
+        protected $googleOnePayloadType = GoogleOnePayload::class;
+        protected $googleOnePayloadDataType = '';
+        protected $youtubePayloadType = YoutubePayload::class;
+        protected $youtubePayloadDataType = '';
+        /**
+         * Payload specific to Google Home products.
+         *
+         * @param GoogleHomePayload $googleHomePayload
+         */
+        public function setGoogleHomePayload(GoogleHomePayload $googleHomePayload)
+        {
+        }
+        /**
+         * @return GoogleHomePayload
+         */
+        public function getGoogleHomePayload()
+        {
+        }
+        /**
+         * Product-specific payloads. Payload specific to Google One products.
+         *
+         * @param GoogleOnePayload $googleOnePayload
+         */
+        public function setGoogleOnePayload(GoogleOnePayload $googleOnePayload)
+        {
+        }
+        /**
+         * @return GoogleOnePayload
+         */
+        public function getGoogleOnePayload()
+        {
+        }
+        /**
+         * Payload specific to Youtube products.
+         *
+         * @param YoutubePayload $youtubePayload
+         */
+        public function setYoutubePayload(YoutubePayload $youtubePayload)
+        {
+        }
+        /**
+         * @return YoutubePayload
+         */
+        public function getYoutubePayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleHomePayload
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ProductPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleHomePayload()
-    {
-    }
-    /**
-     * Product-specific payloads. Payload specific to Google One products.
-     *
-     * @param GoogleOnePayload $googleOnePayload
-     */
-    public function setGoogleOnePayload(GoogleOnePayload $googleOnePayload)
-    {
-    }
-    /**
-     * @return GoogleOnePayload
-     */
-    public function getGoogleOnePayload()
-    {
-    }
-    /**
-     * Payload specific to Youtube products.
-     *
-     * @param YoutubePayload $youtubePayload
-     */
-    public function setYoutubePayload(YoutubePayload $youtubePayload)
-    {
-    }
-    /**
-     * @return YoutubePayload
-     */
-    public function getYoutubePayload()
+    class Google_Service_PaymentsResellerSubscription_ProductPayload extends \Google\Service\PaymentsResellerSubscription\ProductPayload
     {
     }
 }

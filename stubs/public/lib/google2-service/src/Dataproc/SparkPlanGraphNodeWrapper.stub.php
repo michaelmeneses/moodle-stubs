@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkPlanGraphNodeWrapper extends \Google\Model
-{
-    protected $clusterType = SparkPlanGraphCluster::class;
-    protected $clusterDataType = '';
-    protected $nodeType = SparkPlanGraphNode::class;
-    protected $nodeDataType = '';
-    /**
-     * @param SparkPlanGraphCluster $cluster
-     */
-    public function setCluster(SparkPlanGraphCluster $cluster)
+namespace Google\Service\Dataproc {
+    class SparkPlanGraphNodeWrapper extends \Google\Model
     {
+        protected $clusterType = SparkPlanGraphCluster::class;
+        protected $clusterDataType = '';
+        protected $nodeType = SparkPlanGraphNode::class;
+        protected $nodeDataType = '';
+        /**
+         * @param SparkPlanGraphCluster $cluster
+         */
+        public function setCluster(SparkPlanGraphCluster $cluster)
+        {
+        }
+        /**
+         * @return SparkPlanGraphCluster
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * @param SparkPlanGraphNode $node
+         */
+        public function setNode(SparkPlanGraphNode $node)
+        {
+        }
+        /**
+         * @return SparkPlanGraphNode
+         */
+        public function getNode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SparkPlanGraphCluster
+     * Runtime class alias of \Google\Service\Dataproc\SparkPlanGraphNodeWrapper registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * @param SparkPlanGraphNode $node
-     */
-    public function setNode(SparkPlanGraphNode $node)
-    {
-    }
-    /**
-     * @return SparkPlanGraphNode
-     */
-    public function getNode()
+    class Google_Service_Dataproc_SparkPlanGraphNodeWrapper extends \Google\Service\Dataproc\SparkPlanGraphNodeWrapper
     {
     }
 }

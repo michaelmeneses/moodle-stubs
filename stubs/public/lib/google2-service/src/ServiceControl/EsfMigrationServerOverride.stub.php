@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class EsfMigrationServerOverride extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $overrideMode;
-    /**
-     * @param string
-     */
-    public function setOverrideMode($overrideMode)
+namespace Google\Service\ServiceControl {
+    class EsfMigrationServerOverride extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $overrideMode;
+        /**
+         * @param string
+         */
+        public function setOverrideMode($overrideMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverrideMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\EsfMigrationServerOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrideMode()
+    class Google_Service_ServiceControl_EsfMigrationServerOverride extends \Google\Service\ServiceControl\EsfMigrationServerOverride
     {
     }
 }

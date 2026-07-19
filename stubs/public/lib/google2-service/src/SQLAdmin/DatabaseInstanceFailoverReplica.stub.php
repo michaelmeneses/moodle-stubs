@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DatabaseInstanceFailoverReplica extends \Google\Model
-{
-    /**
-     * The availability status of the failover replica. A false status indicates
-     * that the failover replica is out of sync. The primary instance can only
-     * failover to the failover replica when the status is true.
-     *
-     * @var bool
-     */
-    public $available;
-    /**
-     * The name of the failover replica. If specified at instance creation, a
-     * failover replica is created for the instance. The name doesn't include the
-     * project ID.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The availability status of the failover replica. A false status indicates
-     * that the failover replica is out of sync. The primary instance can only
-     * failover to the failover replica when the status is true.
-     *
-     * @param bool $available
-     */
-    public function setAvailable($available)
+namespace Google\Service\SQLAdmin {
+    class DatabaseInstanceFailoverReplica extends \Google\Model
     {
+        /**
+         * The availability status of the failover replica. A false status indicates
+         * that the failover replica is out of sync. The primary instance can only
+         * failover to the failover replica when the status is true.
+         *
+         * @var bool
+         */
+        public $available;
+        /**
+         * The name of the failover replica. If specified at instance creation, a
+         * failover replica is created for the instance. The name doesn't include the
+         * project ID.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The availability status of the failover replica. A false status indicates
+         * that the failover replica is out of sync. The primary instance can only
+         * failover to the failover replica when the status is true.
+         *
+         * @param bool $available
+         */
+        public function setAvailable($available)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAvailable()
+        {
+        }
+        /**
+         * The name of the failover replica. If specified at instance creation, a
+         * failover replica is created for the instance. The name doesn't include the
+         * project ID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\DatabaseInstanceFailoverReplica registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailable()
-    {
-    }
-    /**
-     * The name of the failover replica. If specified at instance creation, a
-     * failover replica is created for the instance. The name doesn't include the
-     * project ID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SQLAdmin_DatabaseInstanceFailoverReplica extends \Google\Service\SQLAdmin\DatabaseInstanceFailoverReplica
     {
     }
 }

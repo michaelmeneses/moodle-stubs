@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1LicenseConfigUsageStats extends \Google\Model
-{
-    /**
-     * Required. The LicenseConfig name.
-     *
-     * @var string
-     */
-    public $licenseConfig;
-    /**
-     * Required. The number of licenses used.
-     *
-     * @var string
-     */
-    public $usedLicenseCount;
-    /**
-     * Required. The LicenseConfig name.
-     *
-     * @param string $licenseConfig
-     */
-    public function setLicenseConfig($licenseConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1LicenseConfigUsageStats extends \Google\Model
     {
+        /**
+         * Required. The LicenseConfig name.
+         *
+         * @var string
+         */
+        public $licenseConfig;
+        /**
+         * Required. The number of licenses used.
+         *
+         * @var string
+         */
+        public $usedLicenseCount;
+        /**
+         * Required. The LicenseConfig name.
+         *
+         * @param string $licenseConfig
+         */
+        public function setLicenseConfig($licenseConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLicenseConfig()
+        {
+        }
+        /**
+         * Required. The number of licenses used.
+         *
+         * @param string $usedLicenseCount
+         */
+        public function setUsedLicenseCount($usedLicenseCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsedLicenseCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1LicenseConfigUsageStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLicenseConfig()
-    {
-    }
-    /**
-     * Required. The number of licenses used.
-     *
-     * @param string $usedLicenseCount
-     */
-    public function setUsedLicenseCount($usedLicenseCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsedLicenseCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1LicenseConfigUsageStats extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1LicenseConfigUsageStats
     {
     }
 }

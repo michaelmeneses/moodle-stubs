@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Kmsinventory\Resource;
-
-/**
- * The "cryptoKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $kmsinventoryService = new Google\Service\Kmsinventory(...);
- *   $cryptoKeys = $kmsinventoryService->projects_cryptoKeys;
- *  </code>
- */
-class ProjectsCryptoKeys extends \Google\Service\Resource
-{
+namespace Google\Service\Kmsinventory\Resource {
+    use Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ListCryptoKeysResponse;
     /**
-     * Returns cryptographic keys managed by Cloud KMS in a given Cloud project.
-     * Note that this data is sourced from snapshots, meaning it may not completely
-     * reflect the actual state of key metadata at call time.
-     * (cryptoKeys.listProjectsCryptoKeys)
-     *
-     * @param string $parent Required. The Google Cloud project for which to
-     * retrieve key metadata, in the format `projects`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of keys to return. The
-     * service may return fewer than this value. If unspecified, at most 1000 keys
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. Pass this into a subsequent request in
-     * order to receive the next page of results.
-     * @return GoogleCloudKmsInventoryV1ListCryptoKeysResponse
-     * @throws \Google\Service\Exception
+     * The "cryptoKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $kmsinventoryService = new Google\Service\Kmsinventory(...);
+     *   $cryptoKeys = $kmsinventoryService->projects_cryptoKeys;
+     *  </code>
      */
-    public function listProjectsCryptoKeys($parent, $optParams = [])
+    class ProjectsCryptoKeys extends \Google\Service\Resource
+    {
+        /**
+         * Returns cryptographic keys managed by Cloud KMS in a given Cloud project.
+         * Note that this data is sourced from snapshots, meaning it may not completely
+         * reflect the actual state of key metadata at call time.
+         * (cryptoKeys.listProjectsCryptoKeys)
+         *
+         * @param string $parent Required. The Google Cloud project for which to
+         * retrieve key metadata, in the format `projects`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of keys to return. The
+         * service may return fewer than this value. If unspecified, at most 1000 keys
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. Pass this into a subsequent request in
+         * order to receive the next page of results.
+         * @return GoogleCloudKmsInventoryV1ListCryptoKeysResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsCryptoKeys($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Kmsinventory\Resource\ProjectsCryptoKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Kmsinventory_Resource_ProjectsCryptoKeys extends \Google\Service\Kmsinventory\Resource\ProjectsCryptoKeys
     {
     }
 }

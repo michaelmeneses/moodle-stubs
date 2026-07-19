@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ListOSPolicyAssignmentReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'osPolicyAssignmentReports';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $osPolicyAssignmentReportsType = OSPolicyAssignmentReport::class;
-    protected $osPolicyAssignmentReportsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OSConfig {
+    class ListOSPolicyAssignmentReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'osPolicyAssignmentReports';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $osPolicyAssignmentReportsType = OSPolicyAssignmentReport::class;
+        protected $osPolicyAssignmentReportsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param OSPolicyAssignmentReport[]
+         */
+        public function setOsPolicyAssignmentReports($osPolicyAssignmentReports)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentReport[]
+         */
+        public function getOsPolicyAssignmentReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\ListOSPolicyAssignmentReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param OSPolicyAssignmentReport[]
-     */
-    public function setOsPolicyAssignmentReports($osPolicyAssignmentReports)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentReport[]
-     */
-    public function getOsPolicyAssignmentReports()
+    class Google_Service_OSConfig_ListOSPolicyAssignmentReportsResponse extends \Google\Service\OSConfig\ListOSPolicyAssignmentReportsResponse
     {
     }
 }

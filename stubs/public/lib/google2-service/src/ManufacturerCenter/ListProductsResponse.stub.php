@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class ListProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * The token for the retrieval of the next page of product statuses.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * The token for the retrieval of the next page of product statuses.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ManufacturerCenter {
+    class ListProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * The token for the retrieval of the next page of product statuses.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * The token for the retrieval of the next page of product statuses.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of the products.
+         *
+         * @param Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\ListProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of the products.
-     *
-     * @param Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return Product[]
-     */
-    public function getProducts()
+    class Google_Service_ManufacturerCenter_ListProductsResponse extends \Google\Service\ManufacturerCenter\ListProductsResponse
     {
     }
 }

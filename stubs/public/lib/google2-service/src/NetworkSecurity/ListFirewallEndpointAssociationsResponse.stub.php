@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListFirewallEndpointAssociationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $firewallEndpointAssociationsType = FirewallEndpointAssociation::class;
-    protected $firewallEndpointAssociationsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of Association
-     *
-     * @param FirewallEndpointAssociation[] $firewallEndpointAssociations
-     */
-    public function setFirewallEndpointAssociations($firewallEndpointAssociations)
+namespace Google\Service\NetworkSecurity {
+    class ListFirewallEndpointAssociationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $firewallEndpointAssociationsType = FirewallEndpointAssociation::class;
+        protected $firewallEndpointAssociationsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of Association
+         *
+         * @param FirewallEndpointAssociation[] $firewallEndpointAssociations
+         */
+        public function setFirewallEndpointAssociations($firewallEndpointAssociations)
+        {
+        }
+        /**
+         * @return FirewallEndpointAssociation[]
+         */
+        public function getFirewallEndpointAssociations()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirewallEndpointAssociation[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListFirewallEndpointAssociationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallEndpointAssociations()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkSecurity_ListFirewallEndpointAssociationsResponse extends \Google\Service\NetworkSecurity\ListFirewallEndpointAssociationsResponse
     {
     }
 }

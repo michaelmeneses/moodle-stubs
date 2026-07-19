@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1MetricsRow extends \Google\Collection
-{
-    /**
-     * Unspecified granularity.
-     */
-    public const AGGREGATION_PERIOD_AGGREGATION_PERIOD_UNSPECIFIED = 'AGGREGATION_PERIOD_UNSPECIFIED';
-    /**
-     * Data is aggregated in hourly intervals.
-     */
-    public const AGGREGATION_PERIOD_HOURLY = 'HOURLY';
-    /**
-     * Data is aggregated in daily intervals.
-     */
-    public const AGGREGATION_PERIOD_DAILY = 'DAILY';
-    /**
-     * Data is aggregated over the full timeline range. Effectively this produces
-     * a single value rather than a timeline.
-     */
-    public const AGGREGATION_PERIOD_FULL_RANGE = 'FULL_RANGE';
-    protected $collection_key = 'metrics';
-    /**
-     * Granularity of the aggregation period of the row.
-     *
-     * @var string
-     */
-    public $aggregationPeriod;
-    protected $dimensionsType = GooglePlayDeveloperReportingV1beta1DimensionValue::class;
-    protected $dimensionsDataType = 'array';
-    protected $metricsType = GooglePlayDeveloperReportingV1beta1MetricValue::class;
-    protected $metricsDataType = 'array';
-    protected $startTimeType = GoogleTypeDateTime::class;
-    protected $startTimeDataType = '';
-    /**
-     * Granularity of the aggregation period of the row.
-     *
-     * Accepted values: AGGREGATION_PERIOD_UNSPECIFIED, HOURLY, DAILY, FULL_RANGE
-     *
-     * @param self::AGGREGATION_PERIOD_* $aggregationPeriod
-     */
-    public function setAggregationPeriod($aggregationPeriod)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1MetricsRow extends \Google\Collection
     {
+        /**
+         * Unspecified granularity.
+         */
+        public const AGGREGATION_PERIOD_AGGREGATION_PERIOD_UNSPECIFIED = 'AGGREGATION_PERIOD_UNSPECIFIED';
+        /**
+         * Data is aggregated in hourly intervals.
+         */
+        public const AGGREGATION_PERIOD_HOURLY = 'HOURLY';
+        /**
+         * Data is aggregated in daily intervals.
+         */
+        public const AGGREGATION_PERIOD_DAILY = 'DAILY';
+        /**
+         * Data is aggregated over the full timeline range. Effectively this produces
+         * a single value rather than a timeline.
+         */
+        public const AGGREGATION_PERIOD_FULL_RANGE = 'FULL_RANGE';
+        protected $collection_key = 'metrics';
+        /**
+         * Granularity of the aggregation period of the row.
+         *
+         * @var string
+         */
+        public $aggregationPeriod;
+        protected $dimensionsType = GooglePlayDeveloperReportingV1beta1DimensionValue::class;
+        protected $dimensionsDataType = 'array';
+        protected $metricsType = GooglePlayDeveloperReportingV1beta1MetricValue::class;
+        protected $metricsDataType = 'array';
+        protected $startTimeType = GoogleTypeDateTime::class;
+        protected $startTimeDataType = '';
+        /**
+         * Granularity of the aggregation period of the row.
+         *
+         * Accepted values: AGGREGATION_PERIOD_UNSPECIFIED, HOURLY, DAILY, FULL_RANGE
+         *
+         * @param self::AGGREGATION_PERIOD_* $aggregationPeriod
+         */
+        public function setAggregationPeriod($aggregationPeriod)
+        {
+        }
+        /**
+         * @return self::AGGREGATION_PERIOD_*
+         */
+        public function getAggregationPeriod()
+        {
+        }
+        /**
+         * Dimension columns in the row.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1DimensionValue[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1DimensionValue[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Metric columns in the row.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1MetricValue[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1MetricValue[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Starting date (and time for hourly aggregation) of the period covered by
+         * this row.
+         *
+         * @param GoogleTypeDateTime $startTime
+         */
+        public function setStartTime(GoogleTypeDateTime $startTime)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AGGREGATION_PERIOD_*
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1MetricsRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregationPeriod()
-    {
-    }
-    /**
-     * Dimension columns in the row.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1DimensionValue[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1DimensionValue[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Metric columns in the row.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1MetricValue[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1MetricValue[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Starting date (and time for hourly aggregation) of the period covered by
-     * this row.
-     *
-     * @param GoogleTypeDateTime $startTime
-     */
-    public function setStartTime(GoogleTypeDateTime $startTime)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getStartTime()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1MetricsRow extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1MetricsRow
     {
     }
 }

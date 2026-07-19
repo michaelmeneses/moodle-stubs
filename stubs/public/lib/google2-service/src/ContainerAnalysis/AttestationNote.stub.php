@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class AttestationNote extends \Google\Model
-{
-    protected $hintType = Hint::class;
-    protected $hintDataType = '';
-    /**
-     * Hint hints at the purpose of the attestation authority.
-     *
-     * @param Hint $hint
-     */
-    public function setHint(Hint $hint)
+namespace Google\Service\ContainerAnalysis {
+    class AttestationNote extends \Google\Model
     {
+        protected $hintType = Hint::class;
+        protected $hintDataType = '';
+        /**
+         * Hint hints at the purpose of the attestation authority.
+         *
+         * @param Hint $hint
+         */
+        public function setHint(Hint $hint)
+        {
+        }
+        /**
+         * @return Hint
+         */
+        public function getHint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hint
+     * Runtime class alias of \Google\Service\ContainerAnalysis\AttestationNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHint()
+    class Google_Service_ContainerAnalysis_AttestationNote extends \Google\Service\ContainerAnalysis\AttestationNote
     {
     }
 }

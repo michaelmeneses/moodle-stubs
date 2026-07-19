@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountGoogleMyBusinessLink extends \Google\Model
-{
-    /**
-     * The ID of the Business Profile. If this is provided, then `gmbEmail` is
-     * ignored. The value of this field should match the `accountId` used by the
-     * Business Profile API.
-     *
-     * @var string
-     */
-    public $gmbAccountId;
-    /**
-     * The Business Profile email address of a specific account within a Business
-     * Profile. A sample account within a Business Profile could be a business
-     * account with set of locations, managed under the Business Profile.
-     *
-     * @var string
-     */
-    public $gmbEmail;
-    /**
-     * Status of the link between this Merchant Center account and the Business
-     * Profile. Acceptable values are: - "`active`" - "`pending`"
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The ID of the Business Profile. If this is provided, then `gmbEmail` is
-     * ignored. The value of this field should match the `accountId` used by the
-     * Business Profile API.
-     *
-     * @param string $gmbAccountId
-     */
-    public function setGmbAccountId($gmbAccountId)
+namespace Google\Service\ShoppingContent {
+    class AccountGoogleMyBusinessLink extends \Google\Model
     {
+        /**
+         * The ID of the Business Profile. If this is provided, then `gmbEmail` is
+         * ignored. The value of this field should match the `accountId` used by the
+         * Business Profile API.
+         *
+         * @var string
+         */
+        public $gmbAccountId;
+        /**
+         * The Business Profile email address of a specific account within a Business
+         * Profile. A sample account within a Business Profile could be a business
+         * account with set of locations, managed under the Business Profile.
+         *
+         * @var string
+         */
+        public $gmbEmail;
+        /**
+         * Status of the link between this Merchant Center account and the Business
+         * Profile. Acceptable values are: - "`active`" - "`pending`"
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The ID of the Business Profile. If this is provided, then `gmbEmail` is
+         * ignored. The value of this field should match the `accountId` used by the
+         * Business Profile API.
+         *
+         * @param string $gmbAccountId
+         */
+        public function setGmbAccountId($gmbAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGmbAccountId()
+        {
+        }
+        /**
+         * The Business Profile email address of a specific account within a Business
+         * Profile. A sample account within a Business Profile could be a business
+         * account with set of locations, managed under the Business Profile.
+         *
+         * @param string $gmbEmail
+         */
+        public function setGmbEmail($gmbEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGmbEmail()
+        {
+        }
+        /**
+         * Status of the link between this Merchant Center account and the Business
+         * Profile. Acceptable values are: - "`active`" - "`pending`"
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountGoogleMyBusinessLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGmbAccountId()
-    {
-    }
-    /**
-     * The Business Profile email address of a specific account within a Business
-     * Profile. A sample account within a Business Profile could be a business
-     * account with set of locations, managed under the Business Profile.
-     *
-     * @param string $gmbEmail
-     */
-    public function setGmbEmail($gmbEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGmbEmail()
-    {
-    }
-    /**
-     * Status of the link between this Merchant Center account and the Business
-     * Profile. Acceptable values are: - "`active`" - "`pending`"
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_ShoppingContent_AccountGoogleMyBusinessLink extends \Google\Service\ShoppingContent\AccountGoogleMyBusinessLink
     {
     }
 }

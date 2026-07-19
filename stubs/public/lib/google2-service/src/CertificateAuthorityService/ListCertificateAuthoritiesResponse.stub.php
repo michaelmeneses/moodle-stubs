@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class ListCertificateAuthoritiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $certificateAuthoritiesType = CertificateAuthority::class;
-    protected $certificateAuthoritiesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of CertificateAuthorities.
-     *
-     * @param CertificateAuthority[] $certificateAuthorities
-     */
-    public function setCertificateAuthorities($certificateAuthorities)
+namespace Google\Service\CertificateAuthorityService {
+    class ListCertificateAuthoritiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $certificateAuthoritiesType = CertificateAuthority::class;
+        protected $certificateAuthoritiesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of CertificateAuthorities.
+         *
+         * @param CertificateAuthority[] $certificateAuthorities
+         */
+        public function setCertificateAuthorities($certificateAuthorities)
+        {
+        }
+        /**
+         * @return CertificateAuthority[]
+         */
+        public function getCertificateAuthorities()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateAuthority[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\ListCertificateAuthoritiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateAuthorities()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CertificateAuthorityService_ListCertificateAuthoritiesResponse extends \Google\Service\CertificateAuthorityService\ListCertificateAuthoritiesResponse
     {
     }
 }

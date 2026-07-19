@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use Doctrine\Common\Cache\Cache;
 class DoctrineCacheAdapter implements CacheInterface, Cache
 {
     /** @var Cache */

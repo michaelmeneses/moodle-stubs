@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class PartialUpdateInstanceRequest extends \Google\Model
-{
-    protected $instanceType = Instance::class;
-    protected $instanceDataType = '';
-    /**
-     * Required. The subset of Instance fields which should be replaced. Must be
-     * explicitly set.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The Instance which will (partially) replace the current value.
-     *
-     * @param Instance $instance
-     */
-    public function setInstance(Instance $instance)
+namespace Google\Service\BigtableAdmin {
+    class PartialUpdateInstanceRequest extends \Google\Model
     {
+        protected $instanceType = Instance::class;
+        protected $instanceDataType = '';
+        /**
+         * Required. The subset of Instance fields which should be replaced. Must be
+         * explicitly set.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The Instance which will (partially) replace the current value.
+         *
+         * @param Instance $instance
+         */
+        public function setInstance(Instance $instance)
+        {
+        }
+        /**
+         * @return Instance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. The subset of Instance fields which should be replaced. Must be
+         * explicitly set.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance
+     * Runtime class alias of \Google\Service\BigtableAdmin\PartialUpdateInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. The subset of Instance fields which should be replaced. Must be
-     * explicitly set.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_BigtableAdmin_PartialUpdateInstanceRequest extends \Google\Service\BigtableAdmin\PartialUpdateInstanceRequest
     {
     }
 }

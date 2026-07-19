@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateSchemaRequest extends \Google\Model
-{
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    protected $schemaType = Schema::class;
-    protected $schemaDataType = '';
-    /**
-     * If true, the schema will be checked for validity, but will not be
-     * registered with the data source, even if valid.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
+namespace Google\Service\CloudSearch {
+    class UpdateSchemaRequest extends \Google\Model
     {
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        protected $schemaType = Schema::class;
+        protected $schemaDataType = '';
+        /**
+         * If true, the schema will be checked for validity, but will not be
+         * registered with the data source, even if valid.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
+        /**
+         * The new schema for the source.
+         *
+         * @param Schema $schema
+         */
+        public function setSchema(Schema $schema)
+        {
+        }
+        /**
+         * @return Schema
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * If true, the schema will be checked for validity, but will not be
+         * registered with the data source, even if valid.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DebugOptions
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateSchemaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugOptions()
-    {
-    }
-    /**
-     * The new schema for the source.
-     *
-     * @param Schema $schema
-     */
-    public function setSchema(Schema $schema)
-    {
-    }
-    /**
-     * @return Schema
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * If true, the schema will be checked for validity, but will not be
-     * registered with the data source, even if valid.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_CloudSearch_UpdateSchemaRequest extends \Google\Service\CloudSearch\UpdateSchemaRequest
     {
     }
 }

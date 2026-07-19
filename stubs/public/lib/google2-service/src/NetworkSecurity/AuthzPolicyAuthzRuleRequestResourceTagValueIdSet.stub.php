@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleRequestResourceTagValueIdSet extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * Required. A list of resource tag value permanent IDs to match against the
-     * resource manager tags value associated with the source VM of a request. The
-     * match follows AND semantics which means all the ids must match. Limited to
-     * 5 ids in the Tag value id set.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * Required. A list of resource tag value permanent IDs to match against the
-     * resource manager tags value associated with the source VM of a request. The
-     * match follows AND semantics which means all the ids must match. Limited to
-     * 5 ids in the Tag value id set.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleRequestResourceTagValueIdSet extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * Required. A list of resource tag value permanent IDs to match against the
+         * resource manager tags value associated with the source VM of a request. The
+         * match follows AND semantics which means all the ids must match. Limited to
+         * 5 ids in the Tag value id set.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * Required. A list of resource tag value permanent IDs to match against the
+         * resource manager tags value associated with the source VM of a request. The
+         * match follows AND semantics which means all the ids must match. Limited to
+         * 5 ids in the Tag value id set.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleRequestResourceTagValueIdSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIds()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleRequestResourceTagValueIdSet extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleRequestResourceTagValueIdSet
     {
     }
 }

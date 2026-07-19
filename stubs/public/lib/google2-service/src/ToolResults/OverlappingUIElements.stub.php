@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class OverlappingUIElements extends \Google\Collection
-{
-    protected $collection_key = 'resourceName';
-    /**
-     * Resource names of the overlapping screen elements
-     *
-     * @var string[]
-     */
-    public $resourceName;
-    /**
-     * The screen id of the elements
-     *
-     * @var string
-     */
-    public $screenId;
-    /**
-     * Resource names of the overlapping screen elements
-     *
-     * @param string[] $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\ToolResults {
+    class OverlappingUIElements extends \Google\Collection
     {
+        protected $collection_key = 'resourceName';
+        /**
+         * Resource names of the overlapping screen elements
+         *
+         * @var string[]
+         */
+        public $resourceName;
+        /**
+         * The screen id of the elements
+         *
+         * @var string
+         */
+        public $screenId;
+        /**
+         * Resource names of the overlapping screen elements
+         *
+         * @param string[] $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * The screen id of the elements
+         *
+         * @param string $screenId
+         */
+        public function setScreenId($screenId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ToolResults\OverlappingUIElements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
-    {
-    }
-    /**
-     * The screen id of the elements
-     *
-     * @param string $screenId
-     */
-    public function setScreenId($screenId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScreenId()
+    class Google_Service_ToolResults_OverlappingUIElements extends \Google\Service\ToolResults\OverlappingUIElements
     {
     }
 }

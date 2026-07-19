@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class CustomerListConfigurationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configurations';
-    protected $configurationsType = Configuration::class;
-    protected $configurationsDataType = 'array';
-    /**
-     * The configurations.
-     *
-     * @param Configuration[] $configurations
-     */
-    public function setConfigurations($configurations)
+namespace Google\Service\AndroidProvisioningPartner {
+    class CustomerListConfigurationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configurations';
+        protected $configurationsType = Configuration::class;
+        protected $configurationsDataType = 'array';
+        /**
+         * The configurations.
+         *
+         * @param Configuration[] $configurations
+         */
+        public function setConfigurations($configurations)
+        {
+        }
+        /**
+         * @return Configuration[]
+         */
+        public function getConfigurations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Configuration[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\CustomerListConfigurationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurations()
+    class Google_Service_AndroidProvisioningPartner_CustomerListConfigurationsResponse extends \Google\Service\AndroidProvisioningPartner\CustomerListConfigurationsResponse
     {
     }
 }

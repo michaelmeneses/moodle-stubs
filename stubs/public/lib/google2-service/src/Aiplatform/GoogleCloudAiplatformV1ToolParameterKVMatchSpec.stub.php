@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolParameterKVMatchSpec extends \Google\Model
-{
-    /**
-     * Optional. Whether to use STRICT string match on parameter values.
-     *
-     * @var bool
-     */
-    public $useStrictStringMatch;
-    /**
-     * Optional. Whether to use STRICT string match on parameter values.
-     *
-     * @param bool $useStrictStringMatch
-     */
-    public function setUseStrictStringMatch($useStrictStringMatch)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolParameterKVMatchSpec extends \Google\Model
     {
+        /**
+         * Optional. Whether to use STRICT string match on parameter values.
+         *
+         * @var bool
+         */
+        public $useStrictStringMatch;
+        /**
+         * Optional. Whether to use STRICT string match on parameter values.
+         *
+         * @param bool $useStrictStringMatch
+         */
+        public function setUseStrictStringMatch($useStrictStringMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseStrictStringMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolParameterKVMatchSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseStrictStringMatch()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolParameterKVMatchSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolParameterKVMatchSpec
     {
     }
 }

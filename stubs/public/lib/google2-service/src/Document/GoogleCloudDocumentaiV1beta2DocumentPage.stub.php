@@ -21,249 +21,258 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPage extends \Google\Collection
-{
-    protected $collection_key = 'visualElements';
-    protected $blocksType = GoogleCloudDocumentaiV1beta2DocumentPageBlock::class;
-    protected $blocksDataType = 'array';
-    protected $detectedBarcodesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode::class;
-    protected $detectedBarcodesDataType = 'array';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $dimensionType = GoogleCloudDocumentaiV1beta2DocumentPageDimension::class;
-    protected $dimensionDataType = '';
-    protected $formFieldsType = GoogleCloudDocumentaiV1beta2DocumentPageFormField::class;
-    protected $formFieldsDataType = 'array';
-    protected $imageType = GoogleCloudDocumentaiV1beta2DocumentPageImage::class;
-    protected $imageDataType = '';
-    protected $imageQualityScoresType = GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores::class;
-    protected $imageQualityScoresDataType = '';
-    protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    protected $linesType = GoogleCloudDocumentaiV1beta2DocumentPageLine::class;
-    protected $linesDataType = 'array';
-    /**
-     * @var int
-     */
-    public $pageNumber;
-    protected $paragraphsType = GoogleCloudDocumentaiV1beta2DocumentPageParagraph::class;
-    protected $paragraphsDataType = 'array';
-    protected $provenanceType = GoogleCloudDocumentaiV1beta2DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    protected $symbolsType = GoogleCloudDocumentaiV1beta2DocumentPageSymbol::class;
-    protected $symbolsDataType = 'array';
-    protected $tablesType = GoogleCloudDocumentaiV1beta2DocumentPageTable::class;
-    protected $tablesDataType = 'array';
-    protected $tokensType = GoogleCloudDocumentaiV1beta2DocumentPageToken::class;
-    protected $tokensDataType = 'array';
-    protected $transformsType = GoogleCloudDocumentaiV1beta2DocumentPageMatrix::class;
-    protected $transformsDataType = 'array';
-    protected $visualElementsType = GoogleCloudDocumentaiV1beta2DocumentPageVisualElement::class;
-    protected $visualElementsDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageBlock[]
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPage extends \Google\Collection
     {
+        protected $collection_key = 'visualElements';
+        protected $blocksType = GoogleCloudDocumentaiV1beta2DocumentPageBlock::class;
+        protected $blocksDataType = 'array';
+        protected $detectedBarcodesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode::class;
+        protected $detectedBarcodesDataType = 'array';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $dimensionType = GoogleCloudDocumentaiV1beta2DocumentPageDimension::class;
+        protected $dimensionDataType = '';
+        protected $formFieldsType = GoogleCloudDocumentaiV1beta2DocumentPageFormField::class;
+        protected $formFieldsDataType = 'array';
+        protected $imageType = GoogleCloudDocumentaiV1beta2DocumentPageImage::class;
+        protected $imageDataType = '';
+        protected $imageQualityScoresType = GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores::class;
+        protected $imageQualityScoresDataType = '';
+        protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        protected $linesType = GoogleCloudDocumentaiV1beta2DocumentPageLine::class;
+        protected $linesDataType = 'array';
+        /**
+         * @var int
+         */
+        public $pageNumber;
+        protected $paragraphsType = GoogleCloudDocumentaiV1beta2DocumentPageParagraph::class;
+        protected $paragraphsDataType = 'array';
+        protected $provenanceType = GoogleCloudDocumentaiV1beta2DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        protected $symbolsType = GoogleCloudDocumentaiV1beta2DocumentPageSymbol::class;
+        protected $symbolsDataType = 'array';
+        protected $tablesType = GoogleCloudDocumentaiV1beta2DocumentPageTable::class;
+        protected $tablesDataType = 'array';
+        protected $tokensType = GoogleCloudDocumentaiV1beta2DocumentPageToken::class;
+        protected $tokensDataType = 'array';
+        protected $transformsType = GoogleCloudDocumentaiV1beta2DocumentPageMatrix::class;
+        protected $transformsDataType = 'array';
+        protected $visualElementsType = GoogleCloudDocumentaiV1beta2DocumentPageVisualElement::class;
+        protected $visualElementsDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageBlock[]
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageBlock[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode[]
+         */
+        public function setDetectedBarcodes($detectedBarcodes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode[]
+         */
+        public function getDetectedBarcodes()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDimension
+         */
+        public function setDimension(GoogleCloudDocumentaiV1beta2DocumentPageDimension $dimension)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDimension
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageFormField[]
+         */
+        public function setFormFields($formFields)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageFormField[]
+         */
+        public function getFormFields()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageImage
+         */
+        public function setImage(GoogleCloudDocumentaiV1beta2DocumentPageImage $image)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores
+         */
+        public function setImageQualityScores(GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores $imageQualityScores)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores
+         */
+        public function getImageQualityScores()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLine[]
+         */
+        public function setLines($lines)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLine[]
+         */
+        public function getLines()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageNumber($pageNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageNumber()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageParagraph[]
+         */
+        public function setParagraphs($paragraphs)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageParagraph[]
+         */
+        public function getParagraphs()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentProvenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1beta2DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageSymbol[]
+         */
+        public function setSymbols($symbols)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageSymbol[]
+         */
+        public function getSymbols()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageTable[]
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageTable[]
+         */
+        public function getTables()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageToken[]
+         */
+        public function setTokens($tokens)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageToken[]
+         */
+        public function getTokens()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageMatrix[]
+         */
+        public function setTransforms($transforms)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageMatrix[]
+         */
+        public function getTransforms()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageVisualElement[]
+         */
+        public function setVisualElements($visualElements)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageVisualElement[]
+         */
+        public function getVisualElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageBlock[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode[]
-     */
-    public function setDetectedBarcodes($detectedBarcodes)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode[]
-     */
-    public function getDetectedBarcodes()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function setDetectedLanguages($detectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDimension
-     */
-    public function setDimension(GoogleCloudDocumentaiV1beta2DocumentPageDimension $dimension)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDimension
-     */
-    public function getDimension()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageFormField[]
-     */
-    public function setFormFields($formFields)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageFormField[]
-     */
-    public function getFormFields()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageImage
-     */
-    public function setImage(GoogleCloudDocumentaiV1beta2DocumentPageImage $image)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores
-     */
-    public function setImageQualityScores(GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores $imageQualityScores)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScores
-     */
-    public function getImageQualityScores()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLine[]
-     */
-    public function setLines($lines)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLine[]
-     */
-    public function getLines()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageNumber($pageNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageNumber()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageParagraph[]
-     */
-    public function setParagraphs($paragraphs)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageParagraph[]
-     */
-    public function getParagraphs()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentProvenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1beta2DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentProvenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageSymbol[]
-     */
-    public function setSymbols($symbols)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageSymbol[]
-     */
-    public function getSymbols()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageTable[]
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageTable[]
-     */
-    public function getTables()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageToken[]
-     */
-    public function setTokens($tokens)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageToken[]
-     */
-    public function getTokens()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageMatrix[]
-     */
-    public function setTransforms($transforms)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageMatrix[]
-     */
-    public function getTransforms()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageVisualElement[]
-     */
-    public function setVisualElements($visualElements)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageVisualElement[]
-     */
-    public function getVisualElements()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPage extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPage
     {
     }
 }

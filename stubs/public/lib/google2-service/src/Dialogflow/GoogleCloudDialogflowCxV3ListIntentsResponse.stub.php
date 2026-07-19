@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListIntentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'intents';
-    protected $intentsType = GoogleCloudDialogflowCxV3Intent::class;
-    protected $intentsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of intents. There will be a maximum number of items returned based
-     * on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3Intent[] $intents
-     */
-    public function setIntents($intents)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListIntentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'intents';
+        protected $intentsType = GoogleCloudDialogflowCxV3Intent::class;
+        protected $intentsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of intents. There will be a maximum number of items returned based
+         * on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3Intent[] $intents
+         */
+        public function setIntents($intents)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Intent[]
+         */
+        public function getIntents()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Intent[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListIntentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntents()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListIntentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListIntentsResponse
     {
     }
 }

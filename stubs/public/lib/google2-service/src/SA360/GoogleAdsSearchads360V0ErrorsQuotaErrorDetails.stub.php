@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ErrorsQuotaErrorDetails extends \Google\Model
-{
-    /**
-     * Unspecified enum
-     */
-    public const RATE_SCOPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const RATE_SCOPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Per customer account quota
-     */
-    public const RATE_SCOPE_ACCOUNT = 'ACCOUNT';
-    /**
-     * Per project quota
-     */
-    public const RATE_SCOPE_DEVELOPER = 'DEVELOPER';
-    /**
-     * The high level description of the quota bucket. Examples are "Get requests
-     * for standard access" or "Requests per account".
-     *
-     * @var string
-     */
-    public $rateName;
-    /**
-     * The rate scope of the quota limit.
-     *
-     * @var string
-     */
-    public $rateScope;
-    /**
-     * Backoff period that customers should wait before sending next request.
-     *
-     * @var string
-     */
-    public $retryDelay;
-    /**
-     * The high level description of the quota bucket. Examples are "Get requests
-     * for standard access" or "Requests per account".
-     *
-     * @param string $rateName
-     */
-    public function setRateName($rateName)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ErrorsQuotaErrorDetails extends \Google\Model
     {
+        /**
+         * Unspecified enum
+         */
+        public const RATE_SCOPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const RATE_SCOPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Per customer account quota
+         */
+        public const RATE_SCOPE_ACCOUNT = 'ACCOUNT';
+        /**
+         * Per project quota
+         */
+        public const RATE_SCOPE_DEVELOPER = 'DEVELOPER';
+        /**
+         * The high level description of the quota bucket. Examples are "Get requests
+         * for standard access" or "Requests per account".
+         *
+         * @var string
+         */
+        public $rateName;
+        /**
+         * The rate scope of the quota limit.
+         *
+         * @var string
+         */
+        public $rateScope;
+        /**
+         * Backoff period that customers should wait before sending next request.
+         *
+         * @var string
+         */
+        public $retryDelay;
+        /**
+         * The high level description of the quota bucket. Examples are "Get requests
+         * for standard access" or "Requests per account".
+         *
+         * @param string $rateName
+         */
+        public function setRateName($rateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRateName()
+        {
+        }
+        /**
+         * The rate scope of the quota limit.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ACCOUNT, DEVELOPER
+         *
+         * @param self::RATE_SCOPE_* $rateScope
+         */
+        public function setRateScope($rateScope)
+        {
+        }
+        /**
+         * @return self::RATE_SCOPE_*
+         */
+        public function getRateScope()
+        {
+        }
+        /**
+         * Backoff period that customers should wait before sending next request.
+         *
+         * @param string $retryDelay
+         */
+        public function setRetryDelay($retryDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetryDelay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsQuotaErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRateName()
-    {
-    }
-    /**
-     * The rate scope of the quota limit.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ACCOUNT, DEVELOPER
-     *
-     * @param self::RATE_SCOPE_* $rateScope
-     */
-    public function setRateScope($rateScope)
-    {
-    }
-    /**
-     * @return self::RATE_SCOPE_*
-     */
-    public function getRateScope()
-    {
-    }
-    /**
-     * Backoff period that customers should wait before sending next request.
-     *
-     * @param string $retryDelay
-     */
-    public function setRetryDelay($retryDelay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetryDelay()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ErrorsQuotaErrorDetails extends \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsQuotaErrorDetails
     {
     }
 }

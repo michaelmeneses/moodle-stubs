@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickAgendaItem extends \Google\Model
-{
-    protected $conflictedGroupType = EnterpriseTopazSidekickConflictingEventsCardProto::class;
-    protected $conflictedGroupDataType = '';
-    protected $gapBeforeType = EnterpriseTopazSidekickGap::class;
-    protected $gapBeforeDataType = '';
-    protected $meetingType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $meetingDataType = '';
-    /**
-     * @param EnterpriseTopazSidekickConflictingEventsCardProto $conflictedGroup
-     */
-    public function setConflictedGroup(EnterpriseTopazSidekickConflictingEventsCardProto $conflictedGroup)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickAgendaItem extends \Google\Model
     {
+        protected $conflictedGroupType = EnterpriseTopazSidekickConflictingEventsCardProto::class;
+        protected $conflictedGroupDataType = '';
+        protected $gapBeforeType = EnterpriseTopazSidekickGap::class;
+        protected $gapBeforeDataType = '';
+        protected $meetingType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $meetingDataType = '';
+        /**
+         * @param EnterpriseTopazSidekickConflictingEventsCardProto $conflictedGroup
+         */
+        public function setConflictedGroup(EnterpriseTopazSidekickConflictingEventsCardProto $conflictedGroup)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickConflictingEventsCardProto
+         */
+        public function getConflictedGroup()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickGap $gapBefore
+         */
+        public function setGapBefore(EnterpriseTopazSidekickGap $gapBefore)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickGap
+         */
+        public function getGapBefore()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickAgendaEntry $meeting
+         */
+        public function setMeeting(EnterpriseTopazSidekickAgendaEntry $meeting)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry
+         */
+        public function getMeeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickConflictingEventsCardProto
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickAgendaItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConflictedGroup()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickGap $gapBefore
-     */
-    public function setGapBefore(EnterpriseTopazSidekickGap $gapBefore)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickGap
-     */
-    public function getGapBefore()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickAgendaEntry $meeting
-     */
-    public function setMeeting(EnterpriseTopazSidekickAgendaEntry $meeting)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAgendaEntry
-     */
-    public function getMeeting()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickAgendaItem extends \Google\Service\CloudSearch\EnterpriseTopazSidekickAgendaItem
     {
     }
 }

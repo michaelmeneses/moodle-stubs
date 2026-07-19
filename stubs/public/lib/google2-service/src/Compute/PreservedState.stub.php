@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreservedState extends \Google\Model
-{
-    protected $disksType = PreservedStatePreservedDisk::class;
-    protected $disksDataType = 'map';
-    protected $externalIPsType = PreservedStatePreservedNetworkIp::class;
-    protected $externalIPsDataType = 'map';
-    protected $internalIPsType = PreservedStatePreservedNetworkIp::class;
-    protected $internalIPsDataType = 'map';
-    /**
-     * Preserved metadata defined for this instance.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * Preserved disks defined for this instance. This map is keyed with the
-     * device names of the disks.
-     *
-     * @param PreservedStatePreservedDisk[] $disks
-     */
-    public function setDisks($disks)
+namespace Google\Service\Compute {
+    class PreservedState extends \Google\Model
     {
+        protected $disksType = PreservedStatePreservedDisk::class;
+        protected $disksDataType = 'map';
+        protected $externalIPsType = PreservedStatePreservedNetworkIp::class;
+        protected $externalIPsDataType = 'map';
+        protected $internalIPsType = PreservedStatePreservedNetworkIp::class;
+        protected $internalIPsDataType = 'map';
+        /**
+         * Preserved metadata defined for this instance.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * Preserved disks defined for this instance. This map is keyed with the
+         * device names of the disks.
+         *
+         * @param PreservedStatePreservedDisk[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return PreservedStatePreservedDisk[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * Preserved external IPs defined for this instance. This map is keyed with
+         * the name of the network interface.
+         *
+         * @param PreservedStatePreservedNetworkIp[] $externalIPs
+         */
+        public function setExternalIPs($externalIPs)
+        {
+        }
+        /**
+         * @return PreservedStatePreservedNetworkIp[]
+         */
+        public function getExternalIPs()
+        {
+        }
+        /**
+         * Preserved internal IPs defined for this instance. This map is keyed with
+         * the name of the network interface.
+         *
+         * @param PreservedStatePreservedNetworkIp[] $internalIPs
+         */
+        public function setInternalIPs($internalIPs)
+        {
+        }
+        /**
+         * @return PreservedStatePreservedNetworkIp[]
+         */
+        public function getInternalIPs()
+        {
+        }
+        /**
+         * Preserved metadata defined for this instance.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PreservedStatePreservedDisk[]
+     * Runtime class alias of \Google\Service\Compute\PreservedState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * Preserved external IPs defined for this instance. This map is keyed with
-     * the name of the network interface.
-     *
-     * @param PreservedStatePreservedNetworkIp[] $externalIPs
-     */
-    public function setExternalIPs($externalIPs)
-    {
-    }
-    /**
-     * @return PreservedStatePreservedNetworkIp[]
-     */
-    public function getExternalIPs()
-    {
-    }
-    /**
-     * Preserved internal IPs defined for this instance. This map is keyed with
-     * the name of the network interface.
-     *
-     * @param PreservedStatePreservedNetworkIp[] $internalIPs
-     */
-    public function setInternalIPs($internalIPs)
-    {
-    }
-    /**
-     * @return PreservedStatePreservedNetworkIp[]
-     */
-    public function getInternalIPs()
-    {
-    }
-    /**
-     * Preserved metadata defined for this instance.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
+    class Google_Service_Compute_PreservedState extends \Google\Service\Compute\PreservedState
     {
     }
 }

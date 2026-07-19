@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoSuspensionConfig extends \Google\Collection
-{
-    protected $collection_key = 'whoMayResolve';
-    /**
-     * Optional information to provide recipients of the suspension in addition to
-     * the resolution URL, typically containing relevant parameter values from the
-     * originating workflow.
-     *
-     * @var string
-     */
-    public $customMessage;
-    protected $notificationsType = EnterpriseCrmEventbusProtoNotification::class;
-    protected $notificationsDataType = 'array';
-    protected $suspensionExpirationType = EnterpriseCrmEventbusProtoSuspensionExpiration::class;
-    protected $suspensionExpirationDataType = '';
-    protected $whoMayResolveType = EnterpriseCrmEventbusProtoSuspensionAuthPermissions::class;
-    protected $whoMayResolveDataType = 'array';
-    /**
-     * Optional information to provide recipients of the suspension in addition to
-     * the resolution URL, typically containing relevant parameter values from the
-     * originating workflow.
-     *
-     * @param string $customMessage
-     */
-    public function setCustomMessage($customMessage)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoSuspensionConfig extends \Google\Collection
     {
+        protected $collection_key = 'whoMayResolve';
+        /**
+         * Optional information to provide recipients of the suspension in addition to
+         * the resolution URL, typically containing relevant parameter values from the
+         * originating workflow.
+         *
+         * @var string
+         */
+        public $customMessage;
+        protected $notificationsType = EnterpriseCrmEventbusProtoNotification::class;
+        protected $notificationsDataType = 'array';
+        protected $suspensionExpirationType = EnterpriseCrmEventbusProtoSuspensionExpiration::class;
+        protected $suspensionExpirationDataType = '';
+        protected $whoMayResolveType = EnterpriseCrmEventbusProtoSuspensionAuthPermissions::class;
+        protected $whoMayResolveDataType = 'array';
+        /**
+         * Optional information to provide recipients of the suspension in addition to
+         * the resolution URL, typically containing relevant parameter values from the
+         * originating workflow.
+         *
+         * @param string $customMessage
+         */
+        public function setCustomMessage($customMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomMessage()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoNotification[] $notifications
+         */
+        public function setNotifications($notifications)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoNotification[]
+         */
+        public function getNotifications()
+        {
+        }
+        /**
+         * Indicates the next steps when no external actions happen on the suspension.
+         *
+         * @param EnterpriseCrmEventbusProtoSuspensionExpiration $suspensionExpiration
+         */
+        public function setSuspensionExpiration(EnterpriseCrmEventbusProtoSuspensionExpiration $suspensionExpiration)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoSuspensionExpiration
+         */
+        public function getSuspensionExpiration()
+        {
+        }
+        /**
+         * Identities able to resolve this suspension.
+         *
+         * @param EnterpriseCrmEventbusProtoSuspensionAuthPermissions[] $whoMayResolve
+         */
+        public function setWhoMayResolve($whoMayResolve)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoSuspensionAuthPermissions[]
+         */
+        public function getWhoMayResolve()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomMessage()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoNotification[] $notifications
-     */
-    public function setNotifications($notifications)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoNotification[]
-     */
-    public function getNotifications()
-    {
-    }
-    /**
-     * Indicates the next steps when no external actions happen on the suspension.
-     *
-     * @param EnterpriseCrmEventbusProtoSuspensionExpiration $suspensionExpiration
-     */
-    public function setSuspensionExpiration(EnterpriseCrmEventbusProtoSuspensionExpiration $suspensionExpiration)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoSuspensionExpiration
-     */
-    public function getSuspensionExpiration()
-    {
-    }
-    /**
-     * Identities able to resolve this suspension.
-     *
-     * @param EnterpriseCrmEventbusProtoSuspensionAuthPermissions[] $whoMayResolve
-     */
-    public function setWhoMayResolve($whoMayResolve)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoSuspensionAuthPermissions[]
-     */
-    public function getWhoMayResolve()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoSuspensionConfig extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionConfig
     {
     }
 }

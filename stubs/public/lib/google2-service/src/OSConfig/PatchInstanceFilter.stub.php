@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchInstanceFilter extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * @var bool
-     */
-    public $all;
-    protected $groupLabelsType = PatchInstanceFilterGroupLabel::class;
-    protected $groupLabelsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $instanceNamePrefixes;
-    /**
-     * @var string[]
-     */
-    public $instances;
-    /**
-     * @var string[]
-     */
-    public $zones;
-    /**
-     * @param bool
-     */
-    public function setAll($all)
+namespace Google\Service\OSConfig {
+    class PatchInstanceFilter extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * @var bool
+         */
+        public $all;
+        protected $groupLabelsType = PatchInstanceFilterGroupLabel::class;
+        protected $groupLabelsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $instanceNamePrefixes;
+        /**
+         * @var string[]
+         */
+        public $instances;
+        /**
+         * @var string[]
+         */
+        public $zones;
+        /**
+         * @param bool
+         */
+        public function setAll($all)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAll()
+        {
+        }
+        /**
+         * @param PatchInstanceFilterGroupLabel[]
+         */
+        public function setGroupLabels($groupLabels)
+        {
+        }
+        /**
+         * @return PatchInstanceFilterGroupLabel[]
+         */
+        public function getGroupLabels()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setInstanceNamePrefixes($instanceNamePrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstanceNamePrefixes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OSConfig\PatchInstanceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAll()
-    {
-    }
-    /**
-     * @param PatchInstanceFilterGroupLabel[]
-     */
-    public function setGroupLabels($groupLabels)
-    {
-    }
-    /**
-     * @return PatchInstanceFilterGroupLabel[]
-     */
-    public function getGroupLabels()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setInstanceNamePrefixes($instanceNamePrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInstanceNamePrefixes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getZones()
+    class Google_Service_OSConfig_PatchInstanceFilter extends \Google\Service\OSConfig\PatchInstanceFilter
     {
     }
 }

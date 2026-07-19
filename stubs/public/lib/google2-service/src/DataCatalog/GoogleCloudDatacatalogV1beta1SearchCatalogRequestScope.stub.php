@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends \Google\Collection
-{
-    protected $collection_key = 'restrictedLocations';
-    public $includeGcpPublicDatasets;
-    public $includeOrgIds;
-    public $includeProjectIds;
-    public $restrictedLocations;
-    public function setIncludeGcpPublicDatasets($includeGcpPublicDatasets)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends \Google\Collection
     {
+        protected $collection_key = 'restrictedLocations';
+        public $includeGcpPublicDatasets;
+        public $includeOrgIds;
+        public $includeProjectIds;
+        public $restrictedLocations;
+        public function setIncludeGcpPublicDatasets($includeGcpPublicDatasets)
+        {
+        }
+        public function getIncludeGcpPublicDatasets()
+        {
+        }
+        public function setIncludeOrgIds($includeOrgIds)
+        {
+        }
+        public function getIncludeOrgIds()
+        {
+        }
+        public function setIncludeProjectIds($includeProjectIds)
+        {
+        }
+        public function getIncludeProjectIds()
+        {
+        }
+        public function setRestrictedLocations($restrictedLocations)
+        {
+        }
+        public function getRestrictedLocations()
+        {
+        }
     }
-    public function getIncludeGcpPublicDatasets()
-    {
-    }
-    public function setIncludeOrgIds($includeOrgIds)
-    {
-    }
-    public function getIncludeOrgIds()
-    {
-    }
-    public function setIncludeProjectIds($includeProjectIds)
-    {
-    }
-    public function getIncludeProjectIds()
-    {
-    }
-    public function setRestrictedLocations($restrictedLocations)
-    {
-    }
-    public function getRestrictedLocations()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class BeginTransactionResponse extends \Google\Model
-{
-    /**
-     * The transaction identifier (always present).
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * The transaction identifier (always present).
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
+namespace Google\Service\Datastore {
+    class BeginTransactionResponse extends \Google\Model
     {
+        /**
+         * The transaction identifier (always present).
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * The transaction identifier (always present).
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\BeginTransactionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransaction()
+    class Google_Service_Datastore_BeginTransactionResponse extends \Google\Service\Datastore\BeginTransactionResponse
     {
     }
 }

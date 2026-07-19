@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class LocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'supportedHiveMetastoreVersions';
-    protected $customRegionMetadataType = CustomRegionMetadata::class;
-    protected $customRegionMetadataDataType = 'array';
-    protected $multiRegionMetadataType = MultiRegionMetadata::class;
-    protected $multiRegionMetadataDataType = '';
-    protected $supportedHiveMetastoreVersionsType = HiveMetastoreVersion::class;
-    protected $supportedHiveMetastoreVersionsDataType = 'array';
-    /**
-     * @param CustomRegionMetadata[]
-     */
-    public function setCustomRegionMetadata($customRegionMetadata)
+namespace Google\Service\DataprocMetastore {
+    class LocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'supportedHiveMetastoreVersions';
+        protected $customRegionMetadataType = CustomRegionMetadata::class;
+        protected $customRegionMetadataDataType = 'array';
+        protected $multiRegionMetadataType = MultiRegionMetadata::class;
+        protected $multiRegionMetadataDataType = '';
+        protected $supportedHiveMetastoreVersionsType = HiveMetastoreVersion::class;
+        protected $supportedHiveMetastoreVersionsDataType = 'array';
+        /**
+         * @param CustomRegionMetadata[]
+         */
+        public function setCustomRegionMetadata($customRegionMetadata)
+        {
+        }
+        /**
+         * @return CustomRegionMetadata[]
+         */
+        public function getCustomRegionMetadata()
+        {
+        }
+        /**
+         * @param MultiRegionMetadata
+         */
+        public function setMultiRegionMetadata(MultiRegionMetadata $multiRegionMetadata)
+        {
+        }
+        /**
+         * @return MultiRegionMetadata
+         */
+        public function getMultiRegionMetadata()
+        {
+        }
+        /**
+         * @param HiveMetastoreVersion[]
+         */
+        public function setSupportedHiveMetastoreVersions($supportedHiveMetastoreVersions)
+        {
+        }
+        /**
+         * @return HiveMetastoreVersion[]
+         */
+        public function getSupportedHiveMetastoreVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomRegionMetadata[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomRegionMetadata()
-    {
-    }
-    /**
-     * @param MultiRegionMetadata
-     */
-    public function setMultiRegionMetadata(MultiRegionMetadata $multiRegionMetadata)
-    {
-    }
-    /**
-     * @return MultiRegionMetadata
-     */
-    public function getMultiRegionMetadata()
-    {
-    }
-    /**
-     * @param HiveMetastoreVersion[]
-     */
-    public function setSupportedHiveMetastoreVersions($supportedHiveMetastoreVersions)
-    {
-    }
-    /**
-     * @return HiveMetastoreVersion[]
-     */
-    public function getSupportedHiveMetastoreVersions()
+    class Google_Service_DataprocMetastore_LocationMetadata extends \Google\Service\DataprocMetastore\LocationMetadata
     {
     }
 }

@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderAddress extends \Google\Collection
-{
-    protected $collection_key = 'streetAddress';
-    /**
-     * @var string
-     */
-    public $country;
-    /**
-     * @var string[]
-     */
-    public $fullAddress;
-    /**
-     * @var bool
-     */
-    public $isPostOfficeBox;
-    /**
-     * @var string
-     */
-    public $locality;
-    /**
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * @var string
-     */
-    public $recipientName;
-    /**
-     * @var string
-     */
-    public $region;
-    /**
-     * @var string[]
-     */
-    public $streetAddress;
-    /**
-     * @param string
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class OrderAddress extends \Google\Collection
     {
+        protected $collection_key = 'streetAddress';
+        /**
+         * @var string
+         */
+        public $country;
+        /**
+         * @var string[]
+         */
+        public $fullAddress;
+        /**
+         * @var bool
+         */
+        public $isPostOfficeBox;
+        /**
+         * @var string
+         */
+        public $locality;
+        /**
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * @var string
+         */
+        public $recipientName;
+        /**
+         * @var string
+         */
+        public $region;
+        /**
+         * @var string[]
+         */
+        public $streetAddress;
+        /**
+         * @param string
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFullAddress($fullAddress)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFullAddress()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsPostOfficeBox($isPostOfficeBox)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPostOfficeBox()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocality($locality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocality()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecipientName($recipientName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecipientName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setStreetAddress($streetAddress)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStreetAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFullAddress($fullAddress)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFullAddress()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsPostOfficeBox($isPostOfficeBox)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsPostOfficeBox()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocality($locality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocality()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecipientName($recipientName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecipientName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setStreetAddress($streetAddress)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStreetAddress()
+    class Google_Service_ShoppingContent_OrderAddress extends \Google\Service\ShoppingContent\OrderAddress
     {
     }
 }

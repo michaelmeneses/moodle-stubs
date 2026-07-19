@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ConfidentialNodes extends \Google\Model
-{
-    /**
-     * No type specified. Do not use this value.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED = 'CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED';
-    /**
-     * AMD Secure Encrypted Virtualization.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_SEV = 'SEV';
-    /**
-     * AMD Secure Encrypted Virtualization - Secure Nested Paging.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_SEV_SNP = 'SEV_SNP';
-    /**
-     * Intel Trust Domain eXtension.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_TDX = 'TDX';
-    /**
-     * Defines the type of technology used by the confidential node.
-     *
-     * @var string
-     */
-    public $confidentialInstanceType;
-    /**
-     * Whether Confidential Nodes feature is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Defines the type of technology used by the confidential node.
-     *
-     * Accepted values: CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED, SEV, SEV_SNP, TDX
-     *
-     * @param self::CONFIDENTIAL_INSTANCE_TYPE_* $confidentialInstanceType
-     */
-    public function setConfidentialInstanceType($confidentialInstanceType)
+namespace Google\Service\Container {
+    class ConfidentialNodes extends \Google\Model
     {
+        /**
+         * No type specified. Do not use this value.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED = 'CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED';
+        /**
+         * AMD Secure Encrypted Virtualization.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_SEV = 'SEV';
+        /**
+         * AMD Secure Encrypted Virtualization - Secure Nested Paging.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_SEV_SNP = 'SEV_SNP';
+        /**
+         * Intel Trust Domain eXtension.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_TDX = 'TDX';
+        /**
+         * Defines the type of technology used by the confidential node.
+         *
+         * @var string
+         */
+        public $confidentialInstanceType;
+        /**
+         * Whether Confidential Nodes feature is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Defines the type of technology used by the confidential node.
+         *
+         * Accepted values: CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED, SEV, SEV_SNP, TDX
+         *
+         * @param self::CONFIDENTIAL_INSTANCE_TYPE_* $confidentialInstanceType
+         */
+        public function setConfidentialInstanceType($confidentialInstanceType)
+        {
+        }
+        /**
+         * @return self::CONFIDENTIAL_INSTANCE_TYPE_*
+         */
+        public function getConfidentialInstanceType()
+        {
+        }
+        /**
+         * Whether Confidential Nodes feature is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONFIDENTIAL_INSTANCE_TYPE_*
+     * Runtime class alias of \Google\Service\Container\ConfidentialNodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidentialInstanceType()
-    {
-    }
-    /**
-     * Whether Confidential Nodes feature is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_Container_ConfidentialNodes extends \Google\Service\Container\ConfidentialNodes
     {
     }
 }

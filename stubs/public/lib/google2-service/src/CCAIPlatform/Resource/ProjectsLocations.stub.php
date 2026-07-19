@@ -21,78 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenteraiplatformService = new Google\Service\CCAIPlatform(...);
- *   $locations = $contactcenteraiplatformService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CCAIPlatform\Resource {
+    use Google\Service\CCAIPlatform\ContactCenterQuota;
+    use Google\Service\CCAIPlatform\GenerateShiftsRequest;
+    use Google\Service\CCAIPlatform\ListLocationsResponse;
+    use Google\Service\CCAIPlatform\Location;
+    use Google\Service\CCAIPlatform\Operation;
     /**
-     * Generates shifts constrained by various parameters.
-     * (locations.generateShifts)
-     *
-     * @param string $parent Required. Name of the parent resource associated with
-     * the request. Format: projects/{project}/locations/{location}
-     * @param GenerateShiftsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenteraiplatformService = new Google\Service\CCAIPlatform(...);
+     *   $locations = $contactcenteraiplatformService->projects_locations;
+     *  </code>
      */
-    public function generateShifts($parent, GenerateShiftsRequest $postBody, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Generates shifts constrained by various parameters.
+         * (locations.generateShifts)
+         *
+         * @param string $parent Required. Name of the parent resource associated with
+         * the request. Format: projects/{project}/locations/{location}
+         * @param GenerateShiftsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function generateShifts($parent, GenerateShiftsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about a location. (locations.get)
+         *
+         * @param string $name Resource name for the location.
+         * @param array $optParams Optional parameters.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists information about the supported locations for this service.
+         * (locations.listProjectsLocations)
+         *
+         * @param string $name The resource that owns the locations collection, if
+         * applicable.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extraLocationTypes Optional. Do not use this field. It is
+         * unsupported and is ignored unless explicitly documented otherwise. This is
+         * primarily for internal usage.
+         * @opt_param string filter A filter to narrow down results to a preferred
+         * subset. The filtering language accepts strings like `"displayName=tokyo"`,
+         * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return. If not set,
+         * the service selects a default.
+         * @opt_param string pageToken A page token received from the `next_page_token`
+         * field in the response. Send that page token to receive the subsequent page.
+         * @return ListLocationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocations($name, $optParams = [])
+        {
+        }
+        /**
+         * Queries the contact center quota, an aggregation over all the projects, that
+         * belongs to the billing account, which the input project belongs to.
+         * (locations.queryContactCenterQuota)
+         *
+         * @param string $parent Required. Parent project resource id.
+         * @param array $optParams Optional parameters.
+         * @return ContactCenterQuota
+         * @throws \Google\Service\Exception
+         */
+        public function queryContactCenterQuota($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about a location. (locations.get)
-     *
-     * @param string $name Resource name for the location.
-     * @param array $optParams Optional parameters.
-     * @return Location
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CCAIPlatform\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists information about the supported locations for this service.
-     * (locations.listProjectsLocations)
-     *
-     * @param string $name The resource that owns the locations collection, if
-     * applicable.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extraLocationTypes Optional. Do not use this field. It is
-     * unsupported and is ignored unless explicitly documented otherwise. This is
-     * primarily for internal usage.
-     * @opt_param string filter A filter to narrow down results to a preferred
-     * subset. The filtering language accepts strings like `"displayName=tokyo"`,
-     * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return. If not set,
-     * the service selects a default.
-     * @opt_param string pageToken A page token received from the `next_page_token`
-     * field in the response. Send that page token to receive the subsequent page.
-     * @return ListLocationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocations($name, $optParams = [])
-    {
-    }
-    /**
-     * Queries the contact center quota, an aggregation over all the projects, that
-     * belongs to the billing account, which the input project belongs to.
-     * (locations.queryContactCenterQuota)
-     *
-     * @param string $parent Required. Parent project resource id.
-     * @param array $optParams Optional parameters.
-     * @return ContactCenterQuota
-     * @throws \Google\Service\Exception
-     */
-    public function queryContactCenterQuota($parent, $optParams = [])
+    class Google_Service_CCAIPlatform_Resource_ProjectsLocations extends \Google\Service\CCAIPlatform\Resource\ProjectsLocations
     {
     }
 }

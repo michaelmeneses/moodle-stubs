@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender\Resource;
-
-/**
- * The "recommenders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommenderService = new Google\Service\Recommender(...);
- *   $recommenders = $recommenderService->organizations_locations_recommenders;
- *  </code>
- */
-class OrganizationsLocationsRecommenders extends \Google\Service\Resource
-{
+namespace Google\Service\Recommender\Resource {
+    use Google\Service\Recommender\GoogleCloudRecommenderV1RecommenderConfig;
     /**
-     * Gets the requested Recommender Config. There is only one instance of the
-     * config for each Recommender. (recommenders.getConfig)
-     *
-     * @param string $name Required. Name of the Recommendation Config to get.
-     * Acceptable formats: * `projects/[PROJECT_NUMBER]/locations/[LOCATION]/recomme
-     * nders/[RECOMMENDER_ID]/config` * `projects/[PROJECT_ID]/locations/[LOCATION]/
-     * recommenders/[RECOMMENDER_ID]/config` * `organizations/[ORGANIZATION_ID]/loca
-     * tions/[LOCATION]/recommenders/[RECOMMENDER_ID]/config` * `billingAccounts/[BI
-     * LLING_ACCOUNT_ID]/locations/[LOCATION]/recommenders/[RECOMMENDER_ID]/config`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecommenderV1RecommenderConfig
-     * @throws \Google\Service\Exception
+     * The "recommenders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommenderService = new Google\Service\Recommender(...);
+     *   $recommenders = $recommenderService->organizations_locations_recommenders;
+     *  </code>
      */
-    public function getConfig($name, $optParams = [])
+    class OrganizationsLocationsRecommenders extends \Google\Service\Resource
     {
+        /**
+         * Gets the requested Recommender Config. There is only one instance of the
+         * config for each Recommender. (recommenders.getConfig)
+         *
+         * @param string $name Required. Name of the Recommendation Config to get.
+         * Acceptable formats: * `projects/[PROJECT_NUMBER]/locations/[LOCATION]/recomme
+         * nders/[RECOMMENDER_ID]/config` * `projects/[PROJECT_ID]/locations/[LOCATION]/
+         * recommenders/[RECOMMENDER_ID]/config` * `organizations/[ORGANIZATION_ID]/loca
+         * tions/[LOCATION]/recommenders/[RECOMMENDER_ID]/config` * `billingAccounts/[BI
+         * LLING_ACCOUNT_ID]/locations/[LOCATION]/recommenders/[RECOMMENDER_ID]/config`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecommenderV1RecommenderConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Recommender Config. This will create a new revision of the config.
+         * (recommenders.updateConfig)
+         *
+         * @param string $name Identifier. Name of recommender config. Eg, projects/[PRO
+         * JECT_NUMBER]/locations/[LOCATION]/recommenders/[RECOMMENDER_ID]/config
+         * @param GoogleCloudRecommenderV1RecommenderConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @opt_param bool validateOnly If true, validate the request and preview the
+         * change, but do not actually update it.
+         * @return GoogleCloudRecommenderV1RecommenderConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateConfig($name, GoogleCloudRecommenderV1RecommenderConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates a Recommender Config. This will create a new revision of the config.
-     * (recommenders.updateConfig)
-     *
-     * @param string $name Identifier. Name of recommender config. Eg, projects/[PRO
-     * JECT_NUMBER]/locations/[LOCATION]/recommenders/[RECOMMENDER_ID]/config
-     * @param GoogleCloudRecommenderV1RecommenderConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @opt_param bool validateOnly If true, validate the request and preview the
-     * change, but do not actually update it.
-     * @return GoogleCloudRecommenderV1RecommenderConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Recommender\Resource\OrganizationsLocationsRecommenders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateConfig($name, GoogleCloudRecommenderV1RecommenderConfig $postBody, $optParams = [])
+    class Google_Service_Recommender_Resource_OrganizationsLocationsRecommenders extends \Google\Service\Recommender\Resource\OrganizationsLocationsRecommenders
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SamplingStrategy extends \Google\Model
-{
-    protected $randomSampleConfigType = GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig::class;
-    protected $randomSampleConfigDataType = '';
-    /**
-     * Random sample config. Will support more sampling strategies later.
-     *
-     * @param GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig $randomSampleConfig
-     */
-    public function setRandomSampleConfig(GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig $randomSampleConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SamplingStrategy extends \Google\Model
     {
+        protected $randomSampleConfigType = GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig::class;
+        protected $randomSampleConfigDataType = '';
+        /**
+         * Random sample config. Will support more sampling strategies later.
+         *
+         * @param GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig $randomSampleConfig
+         */
+        public function setRandomSampleConfig(GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig $randomSampleConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig
+         */
+        public function getRandomSampleConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SamplingStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRandomSampleConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SamplingStrategy extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SamplingStrategy
     {
     }
 }

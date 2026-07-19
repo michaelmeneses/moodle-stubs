@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectLocationCrossSiteInterconnectInfo extends \Google\Model
-{
-    /**
-     * Output only. The remote location for Cross-Site Interconnect wires. This
-     * specifies an InterconnectLocation city (metropolitan area designator),
-     * which itself may match multiple InterconnectLocations.
-     *
-     * @var string
-     */
-    public $city;
-    /**
-     * Output only. The remote location for Cross-Site Interconnect wires. This
-     * specifies an InterconnectLocation city (metropolitan area designator),
-     * which itself may match multiple InterconnectLocations.
-     *
-     * @param string $city
-     */
-    public function setCity($city)
+namespace Google\Service\Compute {
+    class InterconnectLocationCrossSiteInterconnectInfo extends \Google\Model
     {
+        /**
+         * Output only. The remote location for Cross-Site Interconnect wires. This
+         * specifies an InterconnectLocation city (metropolitan area designator),
+         * which itself may match multiple InterconnectLocations.
+         *
+         * @var string
+         */
+        public $city;
+        /**
+         * Output only. The remote location for Cross-Site Interconnect wires. This
+         * specifies an InterconnectLocation city (metropolitan area designator),
+         * which itself may match multiple InterconnectLocations.
+         *
+         * @param string $city
+         */
+        public function setCity($city)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectLocationCrossSiteInterconnectInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCity()
+    class Google_Service_Compute_InterconnectLocationCrossSiteInterconnectInfo extends \Google\Service\Compute\InterconnectLocationCrossSiteInterconnectInfo
     {
     }
 }

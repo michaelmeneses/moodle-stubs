@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Issue extends \Google\Collection
-{
-    /**
-     * Severity unspecified.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Severity error.
-     */
-    public const SEVERITY_SEVERITY_ERROR = 'SEVERITY_ERROR';
-    /**
-     * Severity warning.
-     */
-    public const SEVERITY_SEVERITY_WARNING = 'SEVERITY_WARNING';
-    /**
-     * Severity info.
-     */
-    public const SEVERITY_SEVERITY_INFO = 'SEVERITY_INFO';
-    /**
-     * Severity hint.
-     */
-    public const SEVERITY_SEVERITY_HINT = 'SEVERITY_HINT';
-    protected $collection_key = 'path';
-    /**
-     * Required. Rule code unique to each rule defined in linter.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Required. Human-readable message describing the issue found by the linter.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Required. An array of strings indicating the location in the analyzed
-     * document where the rule was triggered.
-     *
-     * @var string[]
-     */
-    public $path;
-    protected $rangeType = GoogleCloudApihubV1Range::class;
-    protected $rangeDataType = '';
-    /**
-     * Required. Severity level of the rule violation.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Required. Rule code unique to each rule defined in linter.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Issue extends \Google\Collection
     {
+        /**
+         * Severity unspecified.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Severity error.
+         */
+        public const SEVERITY_SEVERITY_ERROR = 'SEVERITY_ERROR';
+        /**
+         * Severity warning.
+         */
+        public const SEVERITY_SEVERITY_WARNING = 'SEVERITY_WARNING';
+        /**
+         * Severity info.
+         */
+        public const SEVERITY_SEVERITY_INFO = 'SEVERITY_INFO';
+        /**
+         * Severity hint.
+         */
+        public const SEVERITY_SEVERITY_HINT = 'SEVERITY_HINT';
+        protected $collection_key = 'path';
+        /**
+         * Required. Rule code unique to each rule defined in linter.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Required. Human-readable message describing the issue found by the linter.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Required. An array of strings indicating the location in the analyzed
+         * document where the rule was triggered.
+         *
+         * @var string[]
+         */
+        public $path;
+        protected $rangeType = GoogleCloudApihubV1Range::class;
+        protected $rangeDataType = '';
+        /**
+         * Required. Severity level of the rule violation.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Required. Rule code unique to each rule defined in linter.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Required. Human-readable message describing the issue found by the linter.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Required. An array of strings indicating the location in the analyzed
+         * document where the rule was triggered.
+         *
+         * @param string[] $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Required. Object describing where in the file the issue was found.
+         *
+         * @param GoogleCloudApihubV1Range $range
+         */
+        public function setRange(GoogleCloudApihubV1Range $range)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Range
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * Required. Severity level of the rule violation.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, SEVERITY_ERROR, SEVERITY_WARNING,
+         * SEVERITY_INFO, SEVERITY_HINT
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Issue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Required. Human-readable message describing the issue found by the linter.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Required. An array of strings indicating the location in the analyzed
-     * document where the rule was triggered.
-     *
-     * @param string[] $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Required. Object describing where in the file the issue was found.
-     *
-     * @param GoogleCloudApihubV1Range $range
-     */
-    public function setRange(GoogleCloudApihubV1Range $range)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Range
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * Required. Severity level of the rule violation.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, SEVERITY_ERROR, SEVERITY_WARNING,
-     * SEVERITY_INFO, SEVERITY_HINT
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_APIhub_GoogleCloudApihubV1Issue extends \Google\Service\APIhub\GoogleCloudApihubV1Issue
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class MirroringDeploymentGroupDeployment extends \Google\Model
-{
-    /**
-     * State not set (this is not a valid state).
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The deployment is ready and in sync with the parent group.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The deployment is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The deployment is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The deployment is out of sync with the parent group. In most cases, this is
-     * a result of a transient issue within the system (e.g. a delayed data-path
-     * config) and the system is expected to recover automatically. See the parent
-     * deployment group's state for more details.
-     */
-    public const STATE_OUT_OF_SYNC = 'OUT_OF_SYNC';
-    /**
-     * An attempt to delete the deployment has failed. This is a terminal state
-     * and the deployment is not expected to recover. The only permitted operation
-     * is to retry deleting the deployment.
-     */
-    public const STATE_DELETE_FAILED = 'DELETE_FAILED';
-    /**
-     * Output only. The name of the Mirroring Deployment, in the format: `projects
-     * /{project}/locations/{location}/mirroringDeployments/{mirroring_deployment}
-     * `.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Most recent known state of the deployment.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The name of the Mirroring Deployment, in the format: `projects
-     * /{project}/locations/{location}/mirroringDeployments/{mirroring_deployment}
-     * `.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\NetworkSecurity {
+    class MirroringDeploymentGroupDeployment extends \Google\Model
     {
+        /**
+         * State not set (this is not a valid state).
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The deployment is ready and in sync with the parent group.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The deployment is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The deployment is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The deployment is out of sync with the parent group. In most cases, this is
+         * a result of a transient issue within the system (e.g. a delayed data-path
+         * config) and the system is expected to recover automatically. See the parent
+         * deployment group's state for more details.
+         */
+        public const STATE_OUT_OF_SYNC = 'OUT_OF_SYNC';
+        /**
+         * An attempt to delete the deployment has failed. This is a terminal state
+         * and the deployment is not expected to recover. The only permitted operation
+         * is to retry deleting the deployment.
+         */
+        public const STATE_DELETE_FAILED = 'DELETE_FAILED';
+        /**
+         * Output only. The name of the Mirroring Deployment, in the format: `projects
+         * /{project}/locations/{location}/mirroringDeployments/{mirroring_deployment}
+         * `.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Most recent known state of the deployment.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The name of the Mirroring Deployment, in the format: `projects
+         * /{project}/locations/{location}/mirroringDeployments/{mirroring_deployment}
+         * `.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Most recent known state of the deployment.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING,
+         * OUT_OF_SYNC, DELETE_FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\MirroringDeploymentGroupDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Most recent known state of the deployment.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING,
-     * OUT_OF_SYNC, DELETE_FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_NetworkSecurity_MirroringDeploymentGroupDeployment extends \Google\Service\NetworkSecurity\MirroringDeploymentGroupDeployment
     {
     }
 }

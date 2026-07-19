@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class GamesNumberFormatConfiguration extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const NUMBER_FORMAT_TYPE_NUMBER_FORMAT_TYPE_UNSPECIFIED = 'NUMBER_FORMAT_TYPE_UNSPECIFIED';
-    /**
-     * Numbers are formatted to have no digits or fixed number of digits after the
-     * decimal point according to locale. An optional custom unit can be added.
-     */
-    public const NUMBER_FORMAT_TYPE_NUMERIC = 'NUMERIC';
-    /**
-     * Numbers are formatted to hours, minutes and seconds.
-     */
-    public const NUMBER_FORMAT_TYPE_TIME_DURATION = 'TIME_DURATION';
-    /**
-     * Numbers are formatted to currency according to locale.
-     */
-    public const NUMBER_FORMAT_TYPE_CURRENCY = 'CURRENCY';
-    /**
-     * The curreny code string. Only used for CURRENCY format type.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * The number of decimal places for number. Only used for NUMERIC format type.
-     *
-     * @var int
-     */
-    public $numDecimalPlaces;
-    /**
-     * The formatting for the number.
-     *
-     * @var string
-     */
-    public $numberFormatType;
-    protected $suffixType = GamesNumberAffixConfiguration::class;
-    protected $suffixDataType = '';
-    /**
-     * The curreny code string. Only used for CURRENCY format type.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\GamesConfiguration {
+    class GamesNumberFormatConfiguration extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const NUMBER_FORMAT_TYPE_NUMBER_FORMAT_TYPE_UNSPECIFIED = 'NUMBER_FORMAT_TYPE_UNSPECIFIED';
+        /**
+         * Numbers are formatted to have no digits or fixed number of digits after the
+         * decimal point according to locale. An optional custom unit can be added.
+         */
+        public const NUMBER_FORMAT_TYPE_NUMERIC = 'NUMERIC';
+        /**
+         * Numbers are formatted to hours, minutes and seconds.
+         */
+        public const NUMBER_FORMAT_TYPE_TIME_DURATION = 'TIME_DURATION';
+        /**
+         * Numbers are formatted to currency according to locale.
+         */
+        public const NUMBER_FORMAT_TYPE_CURRENCY = 'CURRENCY';
+        /**
+         * The curreny code string. Only used for CURRENCY format type.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * The number of decimal places for number. Only used for NUMERIC format type.
+         *
+         * @var int
+         */
+        public $numDecimalPlaces;
+        /**
+         * The formatting for the number.
+         *
+         * @var string
+         */
+        public $numberFormatType;
+        protected $suffixType = GamesNumberAffixConfiguration::class;
+        protected $suffixDataType = '';
+        /**
+         * The curreny code string. Only used for CURRENCY format type.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * The number of decimal places for number. Only used for NUMERIC format type.
+         *
+         * @param int $numDecimalPlaces
+         */
+        public function setNumDecimalPlaces($numDecimalPlaces)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumDecimalPlaces()
+        {
+        }
+        /**
+         * The formatting for the number.
+         *
+         * Accepted values: NUMBER_FORMAT_TYPE_UNSPECIFIED, NUMERIC, TIME_DURATION,
+         * CURRENCY
+         *
+         * @param self::NUMBER_FORMAT_TYPE_* $numberFormatType
+         */
+        public function setNumberFormatType($numberFormatType)
+        {
+        }
+        /**
+         * @return self::NUMBER_FORMAT_TYPE_*
+         */
+        public function getNumberFormatType()
+        {
+        }
+        /**
+         * An optional suffix for the NUMERIC format type. These strings follow the
+         * same plural rules as all Android string resources.
+         *
+         * @param GamesNumberAffixConfiguration $suffix
+         */
+        public function setSuffix(GamesNumberAffixConfiguration $suffix)
+        {
+        }
+        /**
+         * @return GamesNumberAffixConfiguration
+         */
+        public function getSuffix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesConfiguration\GamesNumberFormatConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * The number of decimal places for number. Only used for NUMERIC format type.
-     *
-     * @param int $numDecimalPlaces
-     */
-    public function setNumDecimalPlaces($numDecimalPlaces)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumDecimalPlaces()
-    {
-    }
-    /**
-     * The formatting for the number.
-     *
-     * Accepted values: NUMBER_FORMAT_TYPE_UNSPECIFIED, NUMERIC, TIME_DURATION,
-     * CURRENCY
-     *
-     * @param self::NUMBER_FORMAT_TYPE_* $numberFormatType
-     */
-    public function setNumberFormatType($numberFormatType)
-    {
-    }
-    /**
-     * @return self::NUMBER_FORMAT_TYPE_*
-     */
-    public function getNumberFormatType()
-    {
-    }
-    /**
-     * An optional suffix for the NUMERIC format type. These strings follow the
-     * same plural rules as all Android string resources.
-     *
-     * @param GamesNumberAffixConfiguration $suffix
-     */
-    public function setSuffix(GamesNumberAffixConfiguration $suffix)
-    {
-    }
-    /**
-     * @return GamesNumberAffixConfiguration
-     */
-    public function getSuffix()
+    class Google_Service_GamesConfiguration_GamesNumberFormatConfiguration extends \Google\Service\GamesConfiguration\GamesNumberFormatConfiguration
     {
     }
 }

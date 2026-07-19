@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class NestingLevel extends \Google\Model
-{
-    protected $bulletStyleType = TextStyle::class;
-    protected $bulletStyleDataType = '';
-    /**
-     * The style of a bullet at this level of nesting.
-     *
-     * @param TextStyle $bulletStyle
-     */
-    public function setBulletStyle(TextStyle $bulletStyle)
+namespace Google\Service\Slides {
+    class NestingLevel extends \Google\Model
     {
+        protected $bulletStyleType = TextStyle::class;
+        protected $bulletStyleDataType = '';
+        /**
+         * The style of a bullet at this level of nesting.
+         *
+         * @param TextStyle $bulletStyle
+         */
+        public function setBulletStyle(TextStyle $bulletStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getBulletStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextStyle
+     * Runtime class alias of \Google\Service\Slides\NestingLevel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBulletStyle()
+    class Google_Service_Slides_NestingLevel extends \Google\Service\Slides\NestingLevel
     {
     }
 }

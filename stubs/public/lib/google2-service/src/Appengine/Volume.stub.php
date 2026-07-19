@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class Volume extends \Google\Model
-{
-    /**
-     * Unique name for the volume.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Volume size in gigabytes.
-     *
-     * @var 
-     */
-    public $sizeGb;
-    /**
-     * Underlying volume type, e.g. 'tmpfs'.
-     *
-     * @var string
-     */
-    public $volumeType;
-    /**
-     * Unique name for the volume.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Appengine {
+    class Volume extends \Google\Model
     {
+        /**
+         * Unique name for the volume.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Volume size in gigabytes.
+         *
+         * @var 
+         */
+        public $sizeGb;
+        /**
+         * Underlying volume type, e.g. 'tmpfs'.
+         *
+         * @var string
+         */
+        public $volumeType;
+        /**
+         * Unique name for the volume.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        public function setSizeGb($sizeGb)
+        {
+        }
+        public function getSizeGb()
+        {
+        }
+        /**
+         * Underlying volume type, e.g. 'tmpfs'.
+         *
+         * @param string $volumeType
+         */
+        public function setVolumeType($volumeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\Volume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    public function setSizeGb($sizeGb)
-    {
-    }
-    public function getSizeGb()
-    {
-    }
-    /**
-     * Underlying volume type, e.g. 'tmpfs'.
-     *
-     * @param string $volumeType
-     */
-    public function setVolumeType($volumeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeType()
+    class Google_Service_Appengine_Volume extends \Google\Service\Appengine\Volume
     {
     }
 }

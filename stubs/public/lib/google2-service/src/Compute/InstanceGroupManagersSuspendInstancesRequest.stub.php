@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersSuspendInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * If this flag is set to true, the Instance Group Manager will proceed to
-     * suspend the instances, skipping initialization on them.
-     *
-     * @var bool
-     */
-    public $forceSuspend;
-    /**
-     * The URLs of one or more instances to suspend. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @var string[]
-     */
-    public $instances;
-    /**
-     * If this flag is set to true, the Instance Group Manager will proceed to
-     * suspend the instances, skipping initialization on them.
-     *
-     * @param bool $forceSuspend
-     */
-    public function setForceSuspend($forceSuspend)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersSuspendInstancesRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * If this flag is set to true, the Instance Group Manager will proceed to
+         * suspend the instances, skipping initialization on them.
+         *
+         * @var bool
+         */
+        public $forceSuspend;
+        /**
+         * The URLs of one or more instances to suspend. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @var string[]
+         */
+        public $instances;
+        /**
+         * If this flag is set to true, the Instance Group Manager will proceed to
+         * suspend the instances, skipping initialization on them.
+         *
+         * @param bool $forceSuspend
+         */
+        public function setForceSuspend($forceSuspend)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForceSuspend()
+        {
+        }
+        /**
+         * The URLs of one or more instances to suspend. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @param string[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersSuspendInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForceSuspend()
-    {
-    }
-    /**
-     * The URLs of one or more instances to suspend. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @param string[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInstances()
+    class Google_Service_Compute_InstanceGroupManagersSuspendInstancesRequest extends \Google\Service\Compute\InstanceGroupManagersSuspendInstancesRequest
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class CustomAppConfig extends \Google\Model
-{
-    /**
-     * Unspecified. Defaults to DISALLOW_UNINSTALL_BY_USER.
-     */
-    public const USER_UNINSTALL_SETTINGS_USER_UNINSTALL_SETTINGS_UNSPECIFIED = 'USER_UNINSTALL_SETTINGS_UNSPECIFIED';
-    /**
-     * User is not allowed to uninstall the custom app.
-     */
-    public const USER_UNINSTALL_SETTINGS_DISALLOW_UNINSTALL_BY_USER = 'DISALLOW_UNINSTALL_BY_USER';
-    /**
-     * User is allowed to uninstall the custom app.
-     */
-    public const USER_UNINSTALL_SETTINGS_ALLOW_UNINSTALL_BY_USER = 'ALLOW_UNINSTALL_BY_USER';
-    /**
-     * Optional. User uninstall settings of the custom app.
-     *
-     * @var string
-     */
-    public $userUninstallSettings;
-    /**
-     * Optional. User uninstall settings of the custom app.
-     *
-     * Accepted values: USER_UNINSTALL_SETTINGS_UNSPECIFIED,
-     * DISALLOW_UNINSTALL_BY_USER, ALLOW_UNINSTALL_BY_USER
-     *
-     * @param self::USER_UNINSTALL_SETTINGS_* $userUninstallSettings
-     */
-    public function setUserUninstallSettings($userUninstallSettings)
+namespace Google\Service\AndroidManagement {
+    class CustomAppConfig extends \Google\Model
     {
+        /**
+         * Unspecified. Defaults to DISALLOW_UNINSTALL_BY_USER.
+         */
+        public const USER_UNINSTALL_SETTINGS_USER_UNINSTALL_SETTINGS_UNSPECIFIED = 'USER_UNINSTALL_SETTINGS_UNSPECIFIED';
+        /**
+         * User is not allowed to uninstall the custom app.
+         */
+        public const USER_UNINSTALL_SETTINGS_DISALLOW_UNINSTALL_BY_USER = 'DISALLOW_UNINSTALL_BY_USER';
+        /**
+         * User is allowed to uninstall the custom app.
+         */
+        public const USER_UNINSTALL_SETTINGS_ALLOW_UNINSTALL_BY_USER = 'ALLOW_UNINSTALL_BY_USER';
+        /**
+         * Optional. User uninstall settings of the custom app.
+         *
+         * @var string
+         */
+        public $userUninstallSettings;
+        /**
+         * Optional. User uninstall settings of the custom app.
+         *
+         * Accepted values: USER_UNINSTALL_SETTINGS_UNSPECIFIED,
+         * DISALLOW_UNINSTALL_BY_USER, ALLOW_UNINSTALL_BY_USER
+         *
+         * @param self::USER_UNINSTALL_SETTINGS_* $userUninstallSettings
+         */
+        public function setUserUninstallSettings($userUninstallSettings)
+        {
+        }
+        /**
+         * @return self::USER_UNINSTALL_SETTINGS_*
+         */
+        public function getUserUninstallSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::USER_UNINSTALL_SETTINGS_*
+     * Runtime class alias of \Google\Service\AndroidManagement\CustomAppConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserUninstallSettings()
+    class Google_Service_AndroidManagement_CustomAppConfig extends \Google\Service\AndroidManagement\CustomAppConfig
     {
     }
 }

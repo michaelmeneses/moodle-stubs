@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class FirebasedataconnectFile extends \Google\Model
-{
-    /**
-     * Required. The file's textual content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Required. The file name including folder path, if applicable. The path
-     * should be relative to a local workspace (e.g.
-     * dataconnect/(schema|connector).gql) and not an absolute path (e.g.
-     * /absolute/path/(schema|connector).gql).
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. The file's textual content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\FirebaseDataConnect {
+    class FirebasedataconnectFile extends \Google\Model
     {
+        /**
+         * Required. The file's textual content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Required. The file name including folder path, if applicable. The path
+         * should be relative to a local workspace (e.g.
+         * dataconnect/(schema|connector).gql) and not an absolute path (e.g.
+         * /absolute/path/(schema|connector).gql).
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. The file's textual content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Required. The file name including folder path, if applicable. The path
+         * should be relative to a local workspace (e.g.
+         * dataconnect/(schema|connector).gql) and not an absolute path (e.g.
+         * /absolute/path/(schema|connector).gql).
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\FirebasedataconnectFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Required. The file name including folder path, if applicable. The path
-     * should be relative to a local workspace (e.g.
-     * dataconnect/(schema|connector).gql) and not an absolute path (e.g.
-     * /absolute/path/(schema|connector).gql).
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_FirebaseDataConnect_FirebasedataconnectFile extends \Google\Service\FirebaseDataConnect\FirebasedataconnectFile
     {
     }
 }

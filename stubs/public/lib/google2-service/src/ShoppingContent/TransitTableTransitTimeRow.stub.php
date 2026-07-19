@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TransitTableTransitTimeRow extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = TransitTableTransitTimeRowTransitTimeValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * @param TransitTableTransitTimeRowTransitTimeValue[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\ShoppingContent {
+    class TransitTableTransitTimeRow extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = TransitTableTransitTimeRowTransitTimeValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * @param TransitTableTransitTimeRowTransitTimeValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return TransitTableTransitTimeRowTransitTimeValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TransitTableTransitTimeRowTransitTimeValue[]
+     * Runtime class alias of \Google\Service\ShoppingContent\TransitTableTransitTimeRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_ShoppingContent_TransitTableTransitTimeRow extends \Google\Service\ShoppingContent\TransitTableTransitTimeRow
     {
     }
 }

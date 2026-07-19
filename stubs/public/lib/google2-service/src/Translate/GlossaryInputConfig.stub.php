@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GlossaryInputConfig extends \Google\Model
-{
-    protected $gcsSourceType = GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Required. Google Cloud Storage location of glossary data. File format is
-     * determined based on the filename extension. API returns
-     * [google.rpc.Code.INVALID_ARGUMENT] for unsupported URI-s and file formats.
-     * Wildcards are not allowed. This must be a single file in one of the
-     * following formats: For unidirectional glossaries: - TSV/CSV
-     * (`.tsv`/`.csv`): Two column file, tab- or comma-separated. The first column
-     * is source text. The second column is target text. No headers in this file.
-     * The first row contains data and not column names. - TMX (`.tmx`): TMX file
-     * with parallel data defining source/target term pairs. For equivalent term
-     * sets glossaries: - CSV (`.csv`): Multi-column CSV file defining equivalent
-     * glossary terms in multiple languages. See documentation for more
-     * information -
-     * [glossaries](https://cloud.google.com/translate/docs/advanced/glossary).
-     *
-     * @param GcsSource $gcsSource
-     */
-    public function setGcsSource(GcsSource $gcsSource)
+namespace Google\Service\Translate {
+    class GlossaryInputConfig extends \Google\Model
     {
+        protected $gcsSourceType = GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Required. Google Cloud Storage location of glossary data. File format is
+         * determined based on the filename extension. API returns
+         * [google.rpc.Code.INVALID_ARGUMENT] for unsupported URI-s and file formats.
+         * Wildcards are not allowed. This must be a single file in one of the
+         * following formats: For unidirectional glossaries: - TSV/CSV
+         * (`.tsv`/`.csv`): Two column file, tab- or comma-separated. The first column
+         * is source text. The second column is target text. No headers in this file.
+         * The first row contains data and not column names. - TMX (`.tmx`): TMX file
+         * with parallel data defining source/target term pairs. For equivalent term
+         * sets glossaries: - CSV (`.csv`): Multi-column CSV file defining equivalent
+         * glossary terms in multiple languages. See documentation for more
+         * information -
+         * [glossaries](https://cloud.google.com/translate/docs/advanced/glossary).
+         *
+         * @param GcsSource $gcsSource
+         */
+        public function setGcsSource(GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsSource
+     * Runtime class alias of \Google\Service\Translate\GlossaryInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_Translate_GlossaryInputConfig extends \Google\Service\Translate\GlossaryInputConfig
     {
     }
 }

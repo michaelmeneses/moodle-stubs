@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceRecentUsers extends \Google\Model
-{
-    /**
-     * The user's email address. This is only present if the user type is
-     * `USER_TYPE_MANAGED`.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The type of the user.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The user's email address. This is only present if the user type is
-     * `USER_TYPE_MANAGED`.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceRecentUsers extends \Google\Model
     {
+        /**
+         * The user's email address. This is only present if the user type is
+         * `USER_TYPE_MANAGED`.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The type of the user.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The user's email address. This is only present if the user type is
+         * `USER_TYPE_MANAGED`.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The type of the user.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceRecentUsers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The type of the user.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Directory_ChromeOsDeviceRecentUsers extends \Google\Service\Directory\ChromeOsDeviceRecentUsers
     {
     }
 }

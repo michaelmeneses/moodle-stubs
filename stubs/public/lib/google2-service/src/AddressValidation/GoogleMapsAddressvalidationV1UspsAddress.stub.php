@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AddressValidation;
-
-class GoogleMapsAddressvalidationV1UspsAddress extends \Google\Model
-{
-    /**
-     * City name.
-     *
-     * @var string
-     */
-    public $city;
-    /**
-     * City + state + postal code.
-     *
-     * @var string
-     */
-    public $cityStateZipAddressLine;
-    /**
-     * Firm name.
-     *
-     * @var string
-     */
-    public $firm;
-    /**
-     * First address line.
-     *
-     * @var string
-     */
-    public $firstAddressLine;
-    /**
-     * Second address line.
-     *
-     * @var string
-     */
-    public $secondAddressLine;
-    /**
-     * 2 letter state code.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Puerto Rican urbanization name.
-     *
-     * @var string
-     */
-    public $urbanization;
-    /**
-     * Postal code e.g. 10009.
-     *
-     * @var string
-     */
-    public $zipCode;
-    /**
-     * 4-digit postal code extension e.g. 5023.
-     *
-     * @var string
-     */
-    public $zipCodeExtension;
-    /**
-     * City name.
-     *
-     * @param string $city
-     */
-    public function setCity($city)
+namespace Google\Service\AddressValidation {
+    class GoogleMapsAddressvalidationV1UspsAddress extends \Google\Model
     {
+        /**
+         * City name.
+         *
+         * @var string
+         */
+        public $city;
+        /**
+         * City + state + postal code.
+         *
+         * @var string
+         */
+        public $cityStateZipAddressLine;
+        /**
+         * Firm name.
+         *
+         * @var string
+         */
+        public $firm;
+        /**
+         * First address line.
+         *
+         * @var string
+         */
+        public $firstAddressLine;
+        /**
+         * Second address line.
+         *
+         * @var string
+         */
+        public $secondAddressLine;
+        /**
+         * 2 letter state code.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Puerto Rican urbanization name.
+         *
+         * @var string
+         */
+        public $urbanization;
+        /**
+         * Postal code e.g. 10009.
+         *
+         * @var string
+         */
+        public $zipCode;
+        /**
+         * 4-digit postal code extension e.g. 5023.
+         *
+         * @var string
+         */
+        public $zipCodeExtension;
+        /**
+         * City name.
+         *
+         * @param string $city
+         */
+        public function setCity($city)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCity()
+        {
+        }
+        /**
+         * City + state + postal code.
+         *
+         * @param string $cityStateZipAddressLine
+         */
+        public function setCityStateZipAddressLine($cityStateZipAddressLine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCityStateZipAddressLine()
+        {
+        }
+        /**
+         * Firm name.
+         *
+         * @param string $firm
+         */
+        public function setFirm($firm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirm()
+        {
+        }
+        /**
+         * First address line.
+         *
+         * @param string $firstAddressLine
+         */
+        public function setFirstAddressLine($firstAddressLine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstAddressLine()
+        {
+        }
+        /**
+         * Second address line.
+         *
+         * @param string $secondAddressLine
+         */
+        public function setSecondAddressLine($secondAddressLine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondAddressLine()
+        {
+        }
+        /**
+         * 2 letter state code.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Puerto Rican urbanization name.
+         *
+         * @param string $urbanization
+         */
+        public function setUrbanization($urbanization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrbanization()
+        {
+        }
+        /**
+         * Postal code e.g. 10009.
+         *
+         * @param string $zipCode
+         */
+        public function setZipCode($zipCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZipCode()
+        {
+        }
+        /**
+         * 4-digit postal code extension e.g. 5023.
+         *
+         * @param string $zipCodeExtension
+         */
+        public function setZipCodeExtension($zipCodeExtension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZipCodeExtension()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1UspsAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCity()
-    {
-    }
-    /**
-     * City + state + postal code.
-     *
-     * @param string $cityStateZipAddressLine
-     */
-    public function setCityStateZipAddressLine($cityStateZipAddressLine)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCityStateZipAddressLine()
-    {
-    }
-    /**
-     * Firm name.
-     *
-     * @param string $firm
-     */
-    public function setFirm($firm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirm()
-    {
-    }
-    /**
-     * First address line.
-     *
-     * @param string $firstAddressLine
-     */
-    public function setFirstAddressLine($firstAddressLine)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstAddressLine()
-    {
-    }
-    /**
-     * Second address line.
-     *
-     * @param string $secondAddressLine
-     */
-    public function setSecondAddressLine($secondAddressLine)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondAddressLine()
-    {
-    }
-    /**
-     * 2 letter state code.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Puerto Rican urbanization name.
-     *
-     * @param string $urbanization
-     */
-    public function setUrbanization($urbanization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrbanization()
-    {
-    }
-    /**
-     * Postal code e.g. 10009.
-     *
-     * @param string $zipCode
-     */
-    public function setZipCode($zipCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZipCode()
-    {
-    }
-    /**
-     * 4-digit postal code extension e.g. 5023.
-     *
-     * @param string $zipCodeExtension
-     */
-    public function setZipCodeExtension($zipCodeExtension)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZipCodeExtension()
+    class Google_Service_AddressValidation_GoogleMapsAddressvalidationV1UspsAddress extends \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1UspsAddress
     {
     }
 }

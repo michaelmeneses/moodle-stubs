@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "connectedRepositories" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $connectedRepositories = $cloudbuildService->projects_locations_bitbucketServerConfigs_connectedRepositories;
- *  </code>
- */
-class ProjectsLocationsBitbucketServerConfigsConnectedRepositories extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\BatchCreateBitbucketServerConnectedRepositoriesRequest;
+    use Google\Service\CloudBuild\Operation;
     /**
-     * Batch connecting Bitbucket Server repositories to Cloud Build.
-     * (connectedRepositories.batchCreate)
-     *
-     * @param string $parent The name of the `BitbucketServerConfig` that added
-     * connected repository. Format:
-     * `projects/{project}/locations/{location}/bitbucketServerConfigs/{config}`
-     * @param BatchCreateBitbucketServerConnectedRepositoriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "connectedRepositories" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $connectedRepositories = $cloudbuildService->projects_locations_bitbucketServerConfigs_connectedRepositories;
+     *  </code>
      */
-    public function batchCreate($parent, BatchCreateBitbucketServerConnectedRepositoriesRequest $postBody, $optParams = [])
+    class ProjectsLocationsBitbucketServerConfigsConnectedRepositories extends \Google\Service\Resource
+    {
+        /**
+         * Batch connecting Bitbucket Server repositories to Cloud Build.
+         * (connectedRepositories.batchCreate)
+         *
+         * @param string $parent The name of the `BitbucketServerConfig` that added
+         * connected repository. Format:
+         * `projects/{project}/locations/{location}/bitbucketServerConfigs/{config}`
+         * @param BatchCreateBitbucketServerConnectedRepositoriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function batchCreate($parent, BatchCreateBitbucketServerConnectedRepositoriesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsBitbucketServerConfigsConnectedRepositories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsBitbucketServerConfigsConnectedRepositories extends \Google\Service\CloudBuild\Resource\ProjectsLocationsBitbucketServerConfigsConnectedRepositories
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class GoogleIamV1GetIamPolicyRequest extends \Google\Model
-{
-    protected $optionsType = GoogleIamV1GetPolicyOptions::class;
-    protected $optionsDataType = '';
-    /**
-     * OPTIONAL: A `GetPolicyOptions` object for specifying options to
-     * `GetIamPolicy`.
-     *
-     * @param GoogleIamV1GetPolicyOptions $options
-     */
-    public function setOptions(GoogleIamV1GetPolicyOptions $options)
+namespace Google\Service\Dns {
+    class GoogleIamV1GetIamPolicyRequest extends \Google\Model
     {
+        protected $optionsType = GoogleIamV1GetPolicyOptions::class;
+        protected $optionsDataType = '';
+        /**
+         * OPTIONAL: A `GetPolicyOptions` object for specifying options to
+         * `GetIamPolicy`.
+         *
+         * @param GoogleIamV1GetPolicyOptions $options
+         */
+        public function setOptions(GoogleIamV1GetPolicyOptions $options)
+        {
+        }
+        /**
+         * @return GoogleIamV1GetPolicyOptions
+         */
+        public function getOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamV1GetPolicyOptions
+     * Runtime class alias of \Google\Service\Dns\GoogleIamV1GetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
+    class Google_Service_Dns_GoogleIamV1GetIamPolicyRequest extends \Google\Service\Dns\GoogleIamV1GetIamPolicyRequest
     {
     }
 }

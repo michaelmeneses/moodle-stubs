@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GraphqlDocumentation extends \Google\Model
-{
-    /**
-     * Required. The GraphQL endpoint URI to be queried by API consumers. Max
-     * length is 2,083 characters.
-     *
-     * @var string
-     */
-    public $endpointUri;
-    protected $schemaType = GoogleCloudApigeeV1DocumentationFile::class;
-    protected $schemaDataType = '';
-    /**
-     * Required. The GraphQL endpoint URI to be queried by API consumers. Max
-     * length is 2,083 characters.
-     *
-     * @param string $endpointUri
-     */
-    public function setEndpointUri($endpointUri)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GraphqlDocumentation extends \Google\Model
     {
+        /**
+         * Required. The GraphQL endpoint URI to be queried by API consumers. Max
+         * length is 2,083 characters.
+         *
+         * @var string
+         */
+        public $endpointUri;
+        protected $schemaType = GoogleCloudApigeeV1DocumentationFile::class;
+        protected $schemaDataType = '';
+        /**
+         * Required. The GraphQL endpoint URI to be queried by API consumers. Max
+         * length is 2,083 characters.
+         *
+         * @param string $endpointUri
+         */
+        public function setEndpointUri($endpointUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointUri()
+        {
+        }
+        /**
+         * Required. The documentation file contents for the GraphQL schema.
+         *
+         * @param GoogleCloudApigeeV1DocumentationFile $schema
+         */
+        public function setSchema(GoogleCloudApigeeV1DocumentationFile $schema)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DocumentationFile
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GraphqlDocumentation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointUri()
-    {
-    }
-    /**
-     * Required. The documentation file contents for the GraphQL schema.
-     *
-     * @param GoogleCloudApigeeV1DocumentationFile $schema
-     */
-    public function setSchema(GoogleCloudApigeeV1DocumentationFile $schema)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1DocumentationFile
-     */
-    public function getSchema()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GraphqlDocumentation extends \Google\Service\Apigee\GoogleCloudApigeeV1GraphqlDocumentation
     {
     }
 }

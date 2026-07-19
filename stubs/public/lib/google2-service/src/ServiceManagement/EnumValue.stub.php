@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class EnumValue extends \Google\Collection
-{
-    protected $collection_key = 'options';
-    /**
-     * Enum value name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Enum value number.
-     *
-     * @var int
-     */
-    public $number;
-    protected $optionsType = Option::class;
-    protected $optionsDataType = 'array';
-    /**
-     * Enum value name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ServiceManagement {
+    class EnumValue extends \Google\Collection
     {
+        protected $collection_key = 'options';
+        /**
+         * Enum value name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Enum value number.
+         *
+         * @var int
+         */
+        public $number;
+        protected $optionsType = Option::class;
+        protected $optionsDataType = 'array';
+        /**
+         * Enum value name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Enum value number.
+         *
+         * @param int $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * Protocol buffer options.
+         *
+         * @param Option[] $options
+         */
+        public function setOptions($options)
+        {
+        }
+        /**
+         * @return Option[]
+         */
+        public function getOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\EnumValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Enum value number.
-     *
-     * @param int $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * Protocol buffer options.
-     *
-     * @param Option[] $options
-     */
-    public function setOptions($options)
-    {
-    }
-    /**
-     * @return Option[]
-     */
-    public function getOptions()
+    class Google_Service_ServiceManagement_EnumValue extends \Google\Service\ServiceManagement\EnumValue
     {
     }
 }

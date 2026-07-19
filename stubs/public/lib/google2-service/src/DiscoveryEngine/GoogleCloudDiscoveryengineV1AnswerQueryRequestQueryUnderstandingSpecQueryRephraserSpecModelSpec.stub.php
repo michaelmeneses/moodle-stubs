@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpecModelSpec extends \Google\Model
-{
-    /**
-     * Unspecified model type.
-     */
-    public const MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
-    /**
-     * Small query rephraser model. Gemini 1.0 XS model.
-     */
-    public const MODEL_TYPE_SMALL = 'SMALL';
-    /**
-     * Large query rephraser model. Gemini 1.0 Pro model.
-     */
-    public const MODEL_TYPE_LARGE = 'LARGE';
-    /**
-     * Optional. Enabled query rephraser model type. If not set, it will use LARGE
-     * by default.
-     *
-     * @var string
-     */
-    public $modelType;
-    /**
-     * Optional. Enabled query rephraser model type. If not set, it will use LARGE
-     * by default.
-     *
-     * Accepted values: MODEL_TYPE_UNSPECIFIED, SMALL, LARGE
-     *
-     * @param self::MODEL_TYPE_* $modelType
-     */
-    public function setModelType($modelType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpecModelSpec extends \Google\Model
     {
+        /**
+         * Unspecified model type.
+         */
+        public const MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
+        /**
+         * Small query rephraser model. Gemini 1.0 XS model.
+         */
+        public const MODEL_TYPE_SMALL = 'SMALL';
+        /**
+         * Large query rephraser model. Gemini 1.0 Pro model.
+         */
+        public const MODEL_TYPE_LARGE = 'LARGE';
+        /**
+         * Optional. Enabled query rephraser model type. If not set, it will use LARGE
+         * by default.
+         *
+         * @var string
+         */
+        public $modelType;
+        /**
+         * Optional. Enabled query rephraser model type. If not set, it will use LARGE
+         * by default.
+         *
+         * Accepted values: MODEL_TYPE_UNSPECIFIED, SMALL, LARGE
+         *
+         * @param self::MODEL_TYPE_* $modelType
+         */
+        public function setModelType($modelType)
+        {
+        }
+        /**
+         * @return self::MODEL_TYPE_*
+         */
+        public function getModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODEL_TYPE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpecModelSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpecModelSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpecModelSpec
     {
     }
 }

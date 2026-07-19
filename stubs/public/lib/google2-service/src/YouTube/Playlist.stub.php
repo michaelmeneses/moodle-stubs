@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Playlist extends \Google\Model
-{
-    protected $contentDetailsType = PlaylistContentDetails::class;
-    protected $contentDetailsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the playlist.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlist".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $localizationsType = PlaylistLocalization::class;
-    protected $localizationsDataType = 'map';
-    protected $playerType = PlaylistPlayer::class;
-    protected $playerDataType = '';
-    protected $snippetType = PlaylistSnippet::class;
-    protected $snippetDataType = '';
-    protected $statusType = PlaylistStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The contentDetails object contains information like video count.
-     *
-     * @param PlaylistContentDetails $contentDetails
-     */
-    public function setContentDetails(PlaylistContentDetails $contentDetails)
+namespace Google\Service\YouTube {
+    class Playlist extends \Google\Model
     {
+        protected $contentDetailsType = PlaylistContentDetails::class;
+        protected $contentDetailsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the playlist.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlist".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $localizationsType = PlaylistLocalization::class;
+        protected $localizationsDataType = 'map';
+        protected $playerType = PlaylistPlayer::class;
+        protected $playerDataType = '';
+        protected $snippetType = PlaylistSnippet::class;
+        protected $snippetDataType = '';
+        protected $statusType = PlaylistStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The contentDetails object contains information like video count.
+         *
+         * @param PlaylistContentDetails $contentDetails
+         */
+        public function setContentDetails(PlaylistContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return PlaylistContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the playlist.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlist".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Localizations for different languages
+         *
+         * @param PlaylistLocalization[] $localizations
+         */
+        public function setLocalizations($localizations)
+        {
+        }
+        /**
+         * @return PlaylistLocalization[]
+         */
+        public function getLocalizations()
+        {
+        }
+        /**
+         * The player object contains information that you would use to play the
+         * playlist in an embedded player.
+         *
+         * @param PlaylistPlayer $player
+         */
+        public function setPlayer(PlaylistPlayer $player)
+        {
+        }
+        /**
+         * @return PlaylistPlayer
+         */
+        public function getPlayer()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the playlist, such as its
+         * title and description.
+         *
+         * @param PlaylistSnippet $snippet
+         */
+        public function setSnippet(PlaylistSnippet $snippet)
+        {
+        }
+        /**
+         * @return PlaylistSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The status object contains status information for the playlist.
+         *
+         * @param PlaylistStatus $status
+         */
+        public function setStatus(PlaylistStatus $status)
+        {
+        }
+        /**
+         * @return PlaylistStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlaylistContentDetails
+     * Runtime class alias of \Google\Service\YouTube\Playlist registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the playlist.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlist".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Localizations for different languages
-     *
-     * @param PlaylistLocalization[] $localizations
-     */
-    public function setLocalizations($localizations)
-    {
-    }
-    /**
-     * @return PlaylistLocalization[]
-     */
-    public function getLocalizations()
-    {
-    }
-    /**
-     * The player object contains information that you would use to play the
-     * playlist in an embedded player.
-     *
-     * @param PlaylistPlayer $player
-     */
-    public function setPlayer(PlaylistPlayer $player)
-    {
-    }
-    /**
-     * @return PlaylistPlayer
-     */
-    public function getPlayer()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the playlist, such as its
-     * title and description.
-     *
-     * @param PlaylistSnippet $snippet
-     */
-    public function setSnippet(PlaylistSnippet $snippet)
-    {
-    }
-    /**
-     * @return PlaylistSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The status object contains status information for the playlist.
-     *
-     * @param PlaylistStatus $status
-     */
-    public function setStatus(PlaylistStatus $status)
-    {
-    }
-    /**
-     * @return PlaylistStatus
-     */
-    public function getStatus()
+    class Google_Service_YouTube_Playlist extends \Google\Service\YouTube\Playlist
     {
     }
 }

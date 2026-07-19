@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "types" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $types = $managedkafkaService->projects_locations_schemaRegistries_schemas_types;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesSchemasTypes extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\HttpBody;
     /**
-     * List the supported schema types. The response will be an array of schema
-     * types. (types.listProjectsLocationsSchemaRegistriesSchemasTypes)
-     *
-     * @param string $parent Required. The parent schema registry whose schema types
-     * are to be listed. Structured like:
-     * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "types" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $types = $managedkafkaService->projects_locations_schemaRegistries_schemas_types;
+     *  </code>
      */
-    public function listProjectsLocationsSchemaRegistriesSchemasTypes($parent, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesSchemasTypes extends \Google\Service\Resource
+    {
+        /**
+         * List the supported schema types. The response will be an array of schema
+         * types. (types.listProjectsLocationsSchemaRegistriesSchemasTypes)
+         *
+         * @param string $parent Required. The parent schema registry whose schema types
+         * are to be listed. Structured like:
+         * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesSchemasTypes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSchemasTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesSchemasTypes extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSchemasTypes
     {
     }
 }

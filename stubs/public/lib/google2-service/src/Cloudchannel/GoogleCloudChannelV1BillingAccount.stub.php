@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1BillingAccount extends \Google\Model
-{
-    /**
-     * Output only. The time when this billing account was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The 3-letter currency code defined in ISO 4217.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Display name of the billing account.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Resource name of the billing account. Format:
-     * accounts/{account_id}/billingAccounts/{billing_account_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The CLDR region code.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Output only. The time when this billing account was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1BillingAccount extends \Google\Model
     {
+        /**
+         * Output only. The time when this billing account was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The 3-letter currency code defined in ISO 4217.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Display name of the billing account.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Resource name of the billing account. Format:
+         * accounts/{account_id}/billingAccounts/{billing_account_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The CLDR region code.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Output only. The time when this billing account was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The 3-letter currency code defined in ISO 4217.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * Display name of the billing account.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Resource name of the billing account. Format:
+         * accounts/{account_id}/billingAccounts/{billing_account_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The CLDR region code.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1BillingAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The 3-letter currency code defined in ISO 4217.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * Display name of the billing account.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Resource name of the billing account. Format:
-     * accounts/{account_id}/billingAccounts/{billing_account_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The CLDR region code.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1BillingAccount extends \Google\Service\Cloudchannel\GoogleCloudChannelV1BillingAccount
     {
     }
 }

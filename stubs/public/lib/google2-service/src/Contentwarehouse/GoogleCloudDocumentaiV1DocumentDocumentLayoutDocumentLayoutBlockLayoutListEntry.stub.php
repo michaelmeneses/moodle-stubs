@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock::class;
-    protected $blocksDataType = 'array';
-    /**
-     * A list entry is a list of blocks. Repeated blocks support further
-     * hierarchies and nested blocks.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[] $blocks
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock::class;
+        protected $blocksDataType = 'array';
+        /**
+         * A list entry is a list of blocks. Repeated blocks support further
+         * hierarchies and nested blocks.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[] $blocks
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function getBlocks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry
     {
     }
 }

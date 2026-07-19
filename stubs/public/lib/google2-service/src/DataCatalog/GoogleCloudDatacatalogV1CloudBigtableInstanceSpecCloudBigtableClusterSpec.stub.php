@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec extends \Google\Model
-{
-    /**
-     * Name of the cluster.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * A link back to the parent resource, in this case Instance.
-     *
-     * @var string
-     */
-    public $linkedResource;
-    /**
-     * Location of the cluster, typically a Cloud zone.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Type of the resource. For a cluster this would be "CLUSTER".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Name of the cluster.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec extends \Google\Model
     {
+        /**
+         * Name of the cluster.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * A link back to the parent resource, in this case Instance.
+         *
+         * @var string
+         */
+        public $linkedResource;
+        /**
+         * Location of the cluster, typically a Cloud zone.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Type of the resource. For a cluster this would be "CLUSTER".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Name of the cluster.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * A link back to the parent resource, in this case Instance.
+         *
+         * @param string $linkedResource
+         */
+        public function setLinkedResource($linkedResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedResource()
+        {
+        }
+        /**
+         * Location of the cluster, typically a Cloud zone.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Type of the resource. For a cluster this would be "CLUSTER".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * A link back to the parent resource, in this case Instance.
-     *
-     * @param string $linkedResource
-     */
-    public function setLinkedResource($linkedResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkedResource()
-    {
-    }
-    /**
-     * Location of the cluster, typically a Cloud zone.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Type of the resource. For a cluster this would be "CLUSTER".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec
     {
     }
 }

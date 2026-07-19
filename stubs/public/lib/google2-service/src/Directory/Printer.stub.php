@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Printer extends \Google\Collection
-{
-    protected $collection_key = 'auxiliaryMessages';
-    protected $auxiliaryMessagesType = AuxiliaryMessage::class;
-    protected $auxiliaryMessagesDataType = 'array';
-    /**
-     * Output only. Time when printer was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Editable. Description of printer.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Editable. Name of printer.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Id of the printer. (During printer creation leave empty)
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Editable. Make and model of printer. e.g. Lexmark MS610de Value must be in
-     * format as seen in ListPrinterModels response.
-     *
-     * @var string
-     */
-    public $makeAndModel;
-    /**
-     * Identifier. The resource name of the Printer object, in the format
-     * customers/{customer-id}/printers/{printer-id} (During printer creation
-     * leave empty)
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Organization Unit that owns this printer (Only can be set during Printer
-     * creation)
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * Editable. Printer URI.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Editable. flag to use driverless configuration or not. If it's set to be
-     * true, make_and_model can be ignored
-     *
-     * @var bool
-     */
-    public $useDriverlessConfig;
-    /**
-     * Output only. Auxiliary messages about issues with the printer configuration
-     * if any.
-     *
-     * @param AuxiliaryMessage[] $auxiliaryMessages
-     */
-    public function setAuxiliaryMessages($auxiliaryMessages)
+namespace Google\Service\Directory {
+    class Printer extends \Google\Collection
     {
+        protected $collection_key = 'auxiliaryMessages';
+        protected $auxiliaryMessagesType = AuxiliaryMessage::class;
+        protected $auxiliaryMessagesDataType = 'array';
+        /**
+         * Output only. Time when printer was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Editable. Description of printer.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Editable. Name of printer.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Id of the printer. (During printer creation leave empty)
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Editable. Make and model of printer. e.g. Lexmark MS610de Value must be in
+         * format as seen in ListPrinterModels response.
+         *
+         * @var string
+         */
+        public $makeAndModel;
+        /**
+         * Identifier. The resource name of the Printer object, in the format
+         * customers/{customer-id}/printers/{printer-id} (During printer creation
+         * leave empty)
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Organization Unit that owns this printer (Only can be set during Printer
+         * creation)
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * Editable. Printer URI.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Editable. flag to use driverless configuration or not. If it's set to be
+         * true, make_and_model can be ignored
+         *
+         * @var bool
+         */
+        public $useDriverlessConfig;
+        /**
+         * Output only. Auxiliary messages about issues with the printer configuration
+         * if any.
+         *
+         * @param AuxiliaryMessage[] $auxiliaryMessages
+         */
+        public function setAuxiliaryMessages($auxiliaryMessages)
+        {
+        }
+        /**
+         * @return AuxiliaryMessage[]
+         */
+        public function getAuxiliaryMessages()
+        {
+        }
+        /**
+         * Output only. Time when printer was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Editable. Description of printer.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Editable. Name of printer.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Id of the printer. (During printer creation leave empty)
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Editable. Make and model of printer. e.g. Lexmark MS610de Value must be in
+         * format as seen in ListPrinterModels response.
+         *
+         * @param string $makeAndModel
+         */
+        public function setMakeAndModel($makeAndModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMakeAndModel()
+        {
+        }
+        /**
+         * Identifier. The resource name of the Printer object, in the format
+         * customers/{customer-id}/printers/{printer-id} (During printer creation
+         * leave empty)
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Organization Unit that owns this printer (Only can be set during Printer
+         * creation)
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
+        /**
+         * Editable. Printer URI.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Editable. flag to use driverless configuration or not. If it's set to be
+         * true, make_and_model can be ignored
+         *
+         * @param bool $useDriverlessConfig
+         */
+        public function setUseDriverlessConfig($useDriverlessConfig)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseDriverlessConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuxiliaryMessage[]
+     * Runtime class alias of \Google\Service\Directory\Printer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuxiliaryMessages()
-    {
-    }
-    /**
-     * Output only. Time when printer was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Editable. Description of printer.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Editable. Name of printer.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Id of the printer. (During printer creation leave empty)
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Editable. Make and model of printer. e.g. Lexmark MS610de Value must be in
-     * format as seen in ListPrinterModels response.
-     *
-     * @param string $makeAndModel
-     */
-    public function setMakeAndModel($makeAndModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMakeAndModel()
-    {
-    }
-    /**
-     * Identifier. The resource name of the Printer object, in the format
-     * customers/{customer-id}/printers/{printer-id} (During printer creation
-     * leave empty)
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Organization Unit that owns this printer (Only can be set during Printer
-     * creation)
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
-    {
-    }
-    /**
-     * Editable. Printer URI.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Editable. flag to use driverless configuration or not. If it's set to be
-     * true, make_and_model can be ignored
-     *
-     * @param bool $useDriverlessConfig
-     */
-    public function setUseDriverlessConfig($useDriverlessConfig)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseDriverlessConfig()
+    class Google_Service_Directory_Printer extends \Google\Service\Directory\Printer
     {
     }
 }

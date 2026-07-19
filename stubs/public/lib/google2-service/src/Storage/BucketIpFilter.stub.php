@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketIpFilter extends \Google\Collection
-{
-    protected $collection_key = 'vpcNetworkSources';
-    /**
-     * Whether to allow all service agents to access the bucket regardless of the
-     * IP filter configuration.
-     *
-     * @var bool
-     */
-    public $allowAllServiceAgentAccess;
-    /**
-     * Whether to allow cross-org VPCs in the bucket's IP filter configuration.
-     *
-     * @var bool
-     */
-    public $allowCrossOrgVpcs;
-    /**
-     * The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'.
-     *
-     * @var string
-     */
-    public $mode;
-    protected $publicNetworkSourceType = BucketIpFilterPublicNetworkSource::class;
-    protected $publicNetworkSourceDataType = '';
-    protected $vpcNetworkSourcesType = BucketIpFilterVpcNetworkSources::class;
-    protected $vpcNetworkSourcesDataType = 'array';
-    /**
-     * Whether to allow all service agents to access the bucket regardless of the
-     * IP filter configuration.
-     *
-     * @param bool $allowAllServiceAgentAccess
-     */
-    public function setAllowAllServiceAgentAccess($allowAllServiceAgentAccess)
+namespace Google\Service\Storage {
+    class BucketIpFilter extends \Google\Collection
     {
+        protected $collection_key = 'vpcNetworkSources';
+        /**
+         * Whether to allow all service agents to access the bucket regardless of the
+         * IP filter configuration.
+         *
+         * @var bool
+         */
+        public $allowAllServiceAgentAccess;
+        /**
+         * Whether to allow cross-org VPCs in the bucket's IP filter configuration.
+         *
+         * @var bool
+         */
+        public $allowCrossOrgVpcs;
+        /**
+         * The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'.
+         *
+         * @var string
+         */
+        public $mode;
+        protected $publicNetworkSourceType = BucketIpFilterPublicNetworkSource::class;
+        protected $publicNetworkSourceDataType = '';
+        protected $vpcNetworkSourcesType = BucketIpFilterVpcNetworkSources::class;
+        protected $vpcNetworkSourcesDataType = 'array';
+        /**
+         * Whether to allow all service agents to access the bucket regardless of the
+         * IP filter configuration.
+         *
+         * @param bool $allowAllServiceAgentAccess
+         */
+        public function setAllowAllServiceAgentAccess($allowAllServiceAgentAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowAllServiceAgentAccess()
+        {
+        }
+        /**
+         * Whether to allow cross-org VPCs in the bucket's IP filter configuration.
+         *
+         * @param bool $allowCrossOrgVpcs
+         */
+        public function setAllowCrossOrgVpcs($allowCrossOrgVpcs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowCrossOrgVpcs()
+        {
+        }
+        /**
+         * The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'.
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * The public network source of the bucket's IP filter.
+         *
+         * @param BucketIpFilterPublicNetworkSource $publicNetworkSource
+         */
+        public function setPublicNetworkSource(BucketIpFilterPublicNetworkSource $publicNetworkSource)
+        {
+        }
+        /**
+         * @return BucketIpFilterPublicNetworkSource
+         */
+        public function getPublicNetworkSource()
+        {
+        }
+        /**
+         * The list of [VPC network](https://cloud.google.com/vpc/docs/vpc) sources of
+         * the bucket's IP filter.
+         *
+         * @param BucketIpFilterVpcNetworkSources[] $vpcNetworkSources
+         */
+        public function setVpcNetworkSources($vpcNetworkSources)
+        {
+        }
+        /**
+         * @return BucketIpFilterVpcNetworkSources[]
+         */
+        public function getVpcNetworkSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\BucketIpFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowAllServiceAgentAccess()
-    {
-    }
-    /**
-     * Whether to allow cross-org VPCs in the bucket's IP filter configuration.
-     *
-     * @param bool $allowCrossOrgVpcs
-     */
-    public function setAllowCrossOrgVpcs($allowCrossOrgVpcs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowCrossOrgVpcs()
-    {
-    }
-    /**
-     * The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'.
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * The public network source of the bucket's IP filter.
-     *
-     * @param BucketIpFilterPublicNetworkSource $publicNetworkSource
-     */
-    public function setPublicNetworkSource(BucketIpFilterPublicNetworkSource $publicNetworkSource)
-    {
-    }
-    /**
-     * @return BucketIpFilterPublicNetworkSource
-     */
-    public function getPublicNetworkSource()
-    {
-    }
-    /**
-     * The list of [VPC network](https://cloud.google.com/vpc/docs/vpc) sources of
-     * the bucket's IP filter.
-     *
-     * @param BucketIpFilterVpcNetworkSources[] $vpcNetworkSources
-     */
-    public function setVpcNetworkSources($vpcNetworkSources)
-    {
-    }
-    /**
-     * @return BucketIpFilterVpcNetworkSources[]
-     */
-    public function getVpcNetworkSources()
+    class Google_Service_Storage_BucketIpFilter extends \Google\Service\Storage\BucketIpFilter
     {
     }
 }

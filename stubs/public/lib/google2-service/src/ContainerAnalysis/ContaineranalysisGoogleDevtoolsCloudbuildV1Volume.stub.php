@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1Volume extends \Google\Model
-{
-    /**
-     * Name of the volume to mount. Volume names must be unique per build step and
-     * must be valid names for Docker volumes. Each named volume must be used by
-     * at least two build steps.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Path at which to mount the volume. Paths must be absolute and cannot
-     * conflict with other volume paths on the same build step or with certain
-     * reserved volume paths.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Name of the volume to mount. Volume names must be unique per build step and
-     * must be valid names for Docker volumes. Each named volume must be used by
-     * at least two build steps.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1Volume extends \Google\Model
     {
+        /**
+         * Name of the volume to mount. Volume names must be unique per build step and
+         * must be valid names for Docker volumes. Each named volume must be used by
+         * at least two build steps.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Path at which to mount the volume. Paths must be absolute and cannot
+         * conflict with other volume paths on the same build step or with certain
+         * reserved volume paths.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Name of the volume to mount. Volume names must be unique per build step and
+         * must be valid names for Docker volumes. Each named volume must be used by
+         * at least two build steps.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Path at which to mount the volume. Paths must be absolute and cannot
+         * conflict with other volume paths on the same build step or with certain
+         * reserved volume paths.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Volume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Path at which to mount the volume. Paths must be absolute and cannot
-     * conflict with other volume paths on the same build step or with certain
-     * reserved volume paths.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1Volume extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Volume
     {
     }
 }

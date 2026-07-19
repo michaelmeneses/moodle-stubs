@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListAgentFlowsResponse extends \Google\Collection
-{
-    protected $collection_key = 'agentFlows';
-    protected $agentFlowsType = GoogleCloudIntegrationsV1alphaAgentFlow::class;
-    protected $agentFlowsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaAgentFlow[]
-     */
-    public function setAgentFlows($agentFlows)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListAgentFlowsResponse extends \Google\Collection
     {
+        protected $collection_key = 'agentFlows';
+        protected $agentFlowsType = GoogleCloudIntegrationsV1alphaAgentFlow::class;
+        protected $agentFlowsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaAgentFlow[]
+         */
+        public function setAgentFlows($agentFlows)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaAgentFlow[]
+         */
+        public function getAgentFlows()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaAgentFlow[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListAgentFlowsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentFlows()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListAgentFlowsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListAgentFlowsResponse
     {
     }
 }

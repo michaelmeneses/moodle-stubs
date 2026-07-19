@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class Accounts extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Account::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
+namespace Google\Service\AdSenseHost {
+    class Accounts extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Account::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param Account[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param Account[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Account[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_AdSenseHost_Accounts extends \Google\Service\AdSenseHost\Accounts
     {
     }
 }

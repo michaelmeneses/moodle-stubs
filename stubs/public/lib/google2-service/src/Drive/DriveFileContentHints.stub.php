@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileContentHints extends \Google\Model
-{
-    /**
-     * Text to be indexed for the file to improve fullText queries. This is
-     * limited to 128 KB in length and may contain HTML elements.
-     *
-     * @var string
-     */
-    public $indexableText;
-    protected $thumbnailType = DriveFileContentHintsThumbnail::class;
-    protected $thumbnailDataType = '';
-    /**
-     * Text to be indexed for the file to improve fullText queries. This is
-     * limited to 128 KB in length and may contain HTML elements.
-     *
-     * @param string $indexableText
-     */
-    public function setIndexableText($indexableText)
+namespace Google\Service\Drive {
+    class DriveFileContentHints extends \Google\Model
     {
+        /**
+         * Text to be indexed for the file to improve fullText queries. This is
+         * limited to 128 KB in length and may contain HTML elements.
+         *
+         * @var string
+         */
+        public $indexableText;
+        protected $thumbnailType = DriveFileContentHintsThumbnail::class;
+        protected $thumbnailDataType = '';
+        /**
+         * Text to be indexed for the file to improve fullText queries. This is
+         * limited to 128 KB in length and may contain HTML elements.
+         *
+         * @param string $indexableText
+         */
+        public function setIndexableText($indexableText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexableText()
+        {
+        }
+        /**
+         * A thumbnail for the file. This will only be used if Google Drive cannot
+         * generate a standard thumbnail.
+         *
+         * @param DriveFileContentHintsThumbnail $thumbnail
+         */
+        public function setThumbnail(DriveFileContentHintsThumbnail $thumbnail)
+        {
+        }
+        /**
+         * @return DriveFileContentHintsThumbnail
+         */
+        public function getThumbnail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\DriveFileContentHints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexableText()
-    {
-    }
-    /**
-     * A thumbnail for the file. This will only be used if Google Drive cannot
-     * generate a standard thumbnail.
-     *
-     * @param DriveFileContentHintsThumbnail $thumbnail
-     */
-    public function setThumbnail(DriveFileContentHintsThumbnail $thumbnail)
-    {
-    }
-    /**
-     * @return DriveFileContentHintsThumbnail
-     */
-    public function getThumbnail()
+    class Google_Service_Drive_DriveFileContentHints extends \Google\Service\Drive\DriveFileContentHints
     {
     }
 }

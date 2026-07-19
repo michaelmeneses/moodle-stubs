@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDiscoveryResultScanStatistics extends \Google\Model
-{
-    /**
-     * The data processed in bytes.
-     *
-     * @var string
-     */
-    public $dataProcessedBytes;
-    /**
-     * The number of files excluded.
-     *
-     * @var int
-     */
-    public $filesExcluded;
-    /**
-     * The number of filesets created.
-     *
-     * @var int
-     */
-    public $filesetsCreated;
-    /**
-     * The number of filesets deleted.
-     *
-     * @var int
-     */
-    public $filesetsDeleted;
-    /**
-     * The number of filesets updated.
-     *
-     * @var int
-     */
-    public $filesetsUpdated;
-    /**
-     * The number of files scanned.
-     *
-     * @var int
-     */
-    public $scannedFileCount;
-    /**
-     * The number of tables created.
-     *
-     * @var int
-     */
-    public $tablesCreated;
-    /**
-     * The number of tables deleted.
-     *
-     * @var int
-     */
-    public $tablesDeleted;
-    /**
-     * The number of tables updated.
-     *
-     * @var int
-     */
-    public $tablesUpdated;
-    /**
-     * The data processed in bytes.
-     *
-     * @param string $dataProcessedBytes
-     */
-    public function setDataProcessedBytes($dataProcessedBytes)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDiscoveryResultScanStatistics extends \Google\Model
     {
+        /**
+         * The data processed in bytes.
+         *
+         * @var string
+         */
+        public $dataProcessedBytes;
+        /**
+         * The number of files excluded.
+         *
+         * @var int
+         */
+        public $filesExcluded;
+        /**
+         * The number of filesets created.
+         *
+         * @var int
+         */
+        public $filesetsCreated;
+        /**
+         * The number of filesets deleted.
+         *
+         * @var int
+         */
+        public $filesetsDeleted;
+        /**
+         * The number of filesets updated.
+         *
+         * @var int
+         */
+        public $filesetsUpdated;
+        /**
+         * The number of files scanned.
+         *
+         * @var int
+         */
+        public $scannedFileCount;
+        /**
+         * The number of tables created.
+         *
+         * @var int
+         */
+        public $tablesCreated;
+        /**
+         * The number of tables deleted.
+         *
+         * @var int
+         */
+        public $tablesDeleted;
+        /**
+         * The number of tables updated.
+         *
+         * @var int
+         */
+        public $tablesUpdated;
+        /**
+         * The data processed in bytes.
+         *
+         * @param string $dataProcessedBytes
+         */
+        public function setDataProcessedBytes($dataProcessedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataProcessedBytes()
+        {
+        }
+        /**
+         * The number of files excluded.
+         *
+         * @param int $filesExcluded
+         */
+        public function setFilesExcluded($filesExcluded)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilesExcluded()
+        {
+        }
+        /**
+         * The number of filesets created.
+         *
+         * @param int $filesetsCreated
+         */
+        public function setFilesetsCreated($filesetsCreated)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilesetsCreated()
+        {
+        }
+        /**
+         * The number of filesets deleted.
+         *
+         * @param int $filesetsDeleted
+         */
+        public function setFilesetsDeleted($filesetsDeleted)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilesetsDeleted()
+        {
+        }
+        /**
+         * The number of filesets updated.
+         *
+         * @param int $filesetsUpdated
+         */
+        public function setFilesetsUpdated($filesetsUpdated)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilesetsUpdated()
+        {
+        }
+        /**
+         * The number of files scanned.
+         *
+         * @param int $scannedFileCount
+         */
+        public function setScannedFileCount($scannedFileCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScannedFileCount()
+        {
+        }
+        /**
+         * The number of tables created.
+         *
+         * @param int $tablesCreated
+         */
+        public function setTablesCreated($tablesCreated)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTablesCreated()
+        {
+        }
+        /**
+         * The number of tables deleted.
+         *
+         * @param int $tablesDeleted
+         */
+        public function setTablesDeleted($tablesDeleted)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTablesDeleted()
+        {
+        }
+        /**
+         * The number of tables updated.
+         *
+         * @param int $tablesUpdated
+         */
+        public function setTablesUpdated($tablesUpdated)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTablesUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoveryResultScanStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataProcessedBytes()
-    {
-    }
-    /**
-     * The number of files excluded.
-     *
-     * @param int $filesExcluded
-     */
-    public function setFilesExcluded($filesExcluded)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFilesExcluded()
-    {
-    }
-    /**
-     * The number of filesets created.
-     *
-     * @param int $filesetsCreated
-     */
-    public function setFilesetsCreated($filesetsCreated)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFilesetsCreated()
-    {
-    }
-    /**
-     * The number of filesets deleted.
-     *
-     * @param int $filesetsDeleted
-     */
-    public function setFilesetsDeleted($filesetsDeleted)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFilesetsDeleted()
-    {
-    }
-    /**
-     * The number of filesets updated.
-     *
-     * @param int $filesetsUpdated
-     */
-    public function setFilesetsUpdated($filesetsUpdated)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFilesetsUpdated()
-    {
-    }
-    /**
-     * The number of files scanned.
-     *
-     * @param int $scannedFileCount
-     */
-    public function setScannedFileCount($scannedFileCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScannedFileCount()
-    {
-    }
-    /**
-     * The number of tables created.
-     *
-     * @param int $tablesCreated
-     */
-    public function setTablesCreated($tablesCreated)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTablesCreated()
-    {
-    }
-    /**
-     * The number of tables deleted.
-     *
-     * @param int $tablesDeleted
-     */
-    public function setTablesDeleted($tablesDeleted)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTablesDeleted()
-    {
-    }
-    /**
-     * The number of tables updated.
-     *
-     * @param int $tablesUpdated
-     */
-    public function setTablesUpdated($tablesUpdated)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTablesUpdated()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDiscoveryResultScanStatistics extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoveryResultScanStatistics
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServerlessVPCAccess;
-
-class ListConnectorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'connectors';
-    protected $connectorsType = Connector::class;
-    protected $connectorsDataType = 'array';
-    /**
-     * Continuation token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Serverless VPC Access connectors.
-     *
-     * @param Connector[] $connectors
-     */
-    public function setConnectors($connectors)
+namespace Google\Service\ServerlessVPCAccess {
+    class ListConnectorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'connectors';
+        protected $connectorsType = Connector::class;
+        protected $connectorsDataType = 'array';
+        /**
+         * Continuation token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Serverless VPC Access connectors.
+         *
+         * @param Connector[] $connectors
+         */
+        public function setConnectors($connectors)
+        {
+        }
+        /**
+         * @return Connector[]
+         */
+        public function getConnectors()
+        {
+        }
+        /**
+         * Continuation token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Connector[]
+     * Runtime class alias of \Google\Service\ServerlessVPCAccess\ListConnectorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectors()
-    {
-    }
-    /**
-     * Continuation token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ServerlessVPCAccess_ListConnectorsResponse extends \Google\Service\ServerlessVPCAccess\ListConnectorsResponse
     {
     }
 }

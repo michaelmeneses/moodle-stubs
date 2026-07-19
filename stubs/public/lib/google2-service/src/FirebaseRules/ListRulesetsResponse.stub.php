@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class ListRulesetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rulesets';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rulesetsType = Ruleset::class;
-    protected $rulesetsDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\FirebaseRules {
+    class ListRulesetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rulesets';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rulesetsType = Ruleset::class;
+        protected $rulesetsDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of `Ruleset` instances.
+         *
+         * @param Ruleset[] $rulesets
+         */
+        public function setRulesets($rulesets)
+        {
+        }
+        /**
+         * @return Ruleset[]
+         */
+        public function getRulesets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseRules\ListRulesetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of `Ruleset` instances.
-     *
-     * @param Ruleset[] $rulesets
-     */
-    public function setRulesets($rulesets)
-    {
-    }
-    /**
-     * @return Ruleset[]
-     */
-    public function getRulesets()
+    class Google_Service_FirebaseRules_ListRulesetsResponse extends \Google\Service\FirebaseRules\ListRulesetsResponse
     {
     }
 }

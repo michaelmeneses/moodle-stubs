@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class DirectedReadOptions extends \Google\Model
-{
-    protected $excludeReplicasType = ExcludeReplicas::class;
-    protected $excludeReplicasDataType = '';
-    protected $includeReplicasType = IncludeReplicas::class;
-    protected $includeReplicasDataType = '';
-    /**
-     * `Exclude_replicas` indicates that specified replicas should be excluded
-     * from serving requests. Spanner doesn't route requests to the replicas in
-     * this list.
-     *
-     * @param ExcludeReplicas $excludeReplicas
-     */
-    public function setExcludeReplicas(ExcludeReplicas $excludeReplicas)
+namespace Google\Service\Spanner {
+    class DirectedReadOptions extends \Google\Model
     {
+        protected $excludeReplicasType = ExcludeReplicas::class;
+        protected $excludeReplicasDataType = '';
+        protected $includeReplicasType = IncludeReplicas::class;
+        protected $includeReplicasDataType = '';
+        /**
+         * `Exclude_replicas` indicates that specified replicas should be excluded
+         * from serving requests. Spanner doesn't route requests to the replicas in
+         * this list.
+         *
+         * @param ExcludeReplicas $excludeReplicas
+         */
+        public function setExcludeReplicas(ExcludeReplicas $excludeReplicas)
+        {
+        }
+        /**
+         * @return ExcludeReplicas
+         */
+        public function getExcludeReplicas()
+        {
+        }
+        /**
+         * `Include_replicas` indicates the order of replicas (as they appear in this
+         * list) to process the request. If `auto_failover_disabled` is set to `true`
+         * and all replicas are exhausted without finding a healthy replica, Spanner
+         * waits for a replica in the list to become available, requests might fail
+         * due to `DEADLINE_EXCEEDED` errors.
+         *
+         * @param IncludeReplicas $includeReplicas
+         */
+        public function setIncludeReplicas(IncludeReplicas $includeReplicas)
+        {
+        }
+        /**
+         * @return IncludeReplicas
+         */
+        public function getIncludeReplicas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExcludeReplicas
+     * Runtime class alias of \Google\Service\Spanner\DirectedReadOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeReplicas()
-    {
-    }
-    /**
-     * `Include_replicas` indicates the order of replicas (as they appear in this
-     * list) to process the request. If `auto_failover_disabled` is set to `true`
-     * and all replicas are exhausted without finding a healthy replica, Spanner
-     * waits for a replica in the list to become available, requests might fail
-     * due to `DEADLINE_EXCEEDED` errors.
-     *
-     * @param IncludeReplicas $includeReplicas
-     */
-    public function setIncludeReplicas(IncludeReplicas $includeReplicas)
-    {
-    }
-    /**
-     * @return IncludeReplicas
-     */
-    public function getIncludeReplicas()
+    class Google_Service_Spanner_DirectedReadOptions extends \Google\Service\Spanner\DirectedReadOptions
     {
     }
 }

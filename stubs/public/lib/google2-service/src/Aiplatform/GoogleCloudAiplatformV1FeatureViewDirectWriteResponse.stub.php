@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDirectWriteResponse extends \Google\Collection
-{
-    protected $collection_key = 'writeResponses';
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    protected $writeResponsesType = GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse::class;
-    protected $writeResponsesDataType = 'array';
-    /**
-     * Response status for the keys listed in
-     * FeatureViewDirectWriteResponse.write_responses. The error only applies to
-     * the listed data keys - the stream will remain open for further
-     * FeatureOnlineStoreService.FeatureViewDirectWriteRequest requests. Partial
-     * failures (e.g. if the first 10 keys of a request fail, but the rest
-     * succeed) from a single request may result in multiple responses - there
-     * will be one response for the successful request keys and one response for
-     * the failing request keys.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDirectWriteResponse extends \Google\Collection
     {
+        protected $collection_key = 'writeResponses';
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        protected $writeResponsesType = GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse::class;
+        protected $writeResponsesDataType = 'array';
+        /**
+         * Response status for the keys listed in
+         * FeatureViewDirectWriteResponse.write_responses. The error only applies to
+         * the listed data keys - the stream will remain open for further
+         * FeatureOnlineStoreService.FeatureViewDirectWriteRequest requests. Partial
+         * failures (e.g. if the first 10 keys of a request fail, but the rest
+         * succeed) from a single request may result in multiple responses - there
+         * will be one response for the successful request keys and one response for
+         * the failing request keys.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Details about write for each key. If status is not OK,
+         * WriteResponse.data_key will have the key with error, but
+         * WriteResponse.online_store_write_time will not be present.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse[] $writeResponses
+         */
+        public function setWriteResponses($writeResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse[]
+         */
+        public function getWriteResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * Details about write for each key. If status is not OK,
-     * WriteResponse.data_key will have the key with error, but
-     * WriteResponse.online_store_write_time will not be present.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse[] $writeResponses
-     */
-    public function setWriteResponses($writeResponses)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse[]
-     */
-    public function getWriteResponses()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDirectWriteResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteResponse
     {
     }
 }

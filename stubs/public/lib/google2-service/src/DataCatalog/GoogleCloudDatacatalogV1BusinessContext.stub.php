@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1BusinessContext extends \Google\Model
-{
-    protected $contactsType = GoogleCloudDatacatalogV1Contacts::class;
-    protected $contactsDataType = '';
-    protected $entryOverviewType = GoogleCloudDatacatalogV1EntryOverview::class;
-    protected $entryOverviewDataType = '';
-    /**
-     * Contact people for the entry.
-     *
-     * @param GoogleCloudDatacatalogV1Contacts $contacts
-     */
-    public function setContacts(GoogleCloudDatacatalogV1Contacts $contacts)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1BusinessContext extends \Google\Model
     {
+        protected $contactsType = GoogleCloudDatacatalogV1Contacts::class;
+        protected $contactsDataType = '';
+        protected $entryOverviewType = GoogleCloudDatacatalogV1EntryOverview::class;
+        protected $entryOverviewDataType = '';
+        /**
+         * Contact people for the entry.
+         *
+         * @param GoogleCloudDatacatalogV1Contacts $contacts
+         */
+        public function setContacts(GoogleCloudDatacatalogV1Contacts $contacts)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Contacts
+         */
+        public function getContacts()
+        {
+        }
+        /**
+         * Entry overview fields for rich text descriptions of entries.
+         *
+         * @param GoogleCloudDatacatalogV1EntryOverview $entryOverview
+         */
+        public function setEntryOverview(GoogleCloudDatacatalogV1EntryOverview $entryOverview)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1EntryOverview
+         */
+        public function getEntryOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1Contacts
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BusinessContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContacts()
-    {
-    }
-    /**
-     * Entry overview fields for rich text descriptions of entries.
-     *
-     * @param GoogleCloudDatacatalogV1EntryOverview $entryOverview
-     */
-    public function setEntryOverview(GoogleCloudDatacatalogV1EntryOverview $entryOverview)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1EntryOverview
-     */
-    public function getEntryOverview()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1BusinessContext extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BusinessContext
     {
     }
 }

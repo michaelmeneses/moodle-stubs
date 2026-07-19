@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1EventHandler extends \Google\Model
-{
-    /**
-     * Required. The name of the event to handle.
-     *
-     * @var string
-     */
-    public $event;
-    /**
-     * Output only. The unique identifier of this event handler.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The target flow to transition to. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @var string
-     */
-    public $targetFlow;
-    /**
-     * The target page to transition to. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @var string
-     */
-    public $targetPage;
-    /**
-     * The target playbook to transition to. Format:
-     * `projects//locations//agents//playbooks/`.
-     *
-     * @var string
-     */
-    public $targetPlaybook;
-    protected $triggerFulfillmentType = GoogleCloudDialogflowCxV3beta1Fulfillment::class;
-    protected $triggerFulfillmentDataType = '';
-    /**
-     * Required. The name of the event to handle.
-     *
-     * @param string $event
-     */
-    public function setEvent($event)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1EventHandler extends \Google\Model
     {
+        /**
+         * Required. The name of the event to handle.
+         *
+         * @var string
+         */
+        public $event;
+        /**
+         * Output only. The unique identifier of this event handler.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The target flow to transition to. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @var string
+         */
+        public $targetFlow;
+        /**
+         * The target page to transition to. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @var string
+         */
+        public $targetPage;
+        /**
+         * The target playbook to transition to. Format:
+         * `projects//locations//agents//playbooks/`.
+         *
+         * @var string
+         */
+        public $targetPlaybook;
+        protected $triggerFulfillmentType = GoogleCloudDialogflowCxV3beta1Fulfillment::class;
+        protected $triggerFulfillmentDataType = '';
+        /**
+         * Required. The name of the event to handle.
+         *
+         * @param string $event
+         */
+        public function setEvent($event)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * Output only. The unique identifier of this event handler.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The target flow to transition to. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @param string $targetFlow
+         */
+        public function setTargetFlow($targetFlow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetFlow()
+        {
+        }
+        /**
+         * The target page to transition to. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @param string $targetPage
+         */
+        public function setTargetPage($targetPage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetPage()
+        {
+        }
+        /**
+         * The target playbook to transition to. Format:
+         * `projects//locations//agents//playbooks/`.
+         *
+         * @param string $targetPlaybook
+         */
+        public function setTargetPlaybook($targetPlaybook)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetPlaybook()
+        {
+        }
+        /**
+         * The fulfillment to call when the event occurs. Handling webhook errors with
+         * a fulfillment enabled with webhook could cause infinite loop. It is invalid
+         * to specify such fulfillment for a handler handling webhooks.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment
+         */
+        public function setTriggerFulfillment(GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1Fulfillment
+         */
+        public function getTriggerFulfillment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1EventHandler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvent()
-    {
-    }
-    /**
-     * Output only. The unique identifier of this event handler.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The target flow to transition to. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @param string $targetFlow
-     */
-    public function setTargetFlow($targetFlow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetFlow()
-    {
-    }
-    /**
-     * The target page to transition to. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @param string $targetPage
-     */
-    public function setTargetPage($targetPage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetPage()
-    {
-    }
-    /**
-     * The target playbook to transition to. Format:
-     * `projects//locations//agents//playbooks/`.
-     *
-     * @param string $targetPlaybook
-     */
-    public function setTargetPlaybook($targetPlaybook)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetPlaybook()
-    {
-    }
-    /**
-     * The fulfillment to call when the event occurs. Handling webhook errors with
-     * a fulfillment enabled with webhook could cause infinite loop. It is invalid
-     * to specify such fulfillment for a handler handling webhooks.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment
-     */
-    public function setTriggerFulfillment(GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1Fulfillment
-     */
-    public function getTriggerFulfillment()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1EventHandler extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1EventHandler
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRealtimeDatabase;
-
-class ListDatabaseInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = DatabaseInstance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty, then this response is the last page of
-     * results. This token can be used in a subsequent call to
-     * `ListDatabaseInstances` to find the next group of database instances. Page
-     * tokens are short-lived and should not be persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of each DatabaseInstance that is in the parent Firebase project.
-     *
-     * @param DatabaseInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\FirebaseRealtimeDatabase {
+    class ListDatabaseInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = DatabaseInstance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty, then this response is the last page of
+         * results. This token can be used in a subsequent call to
+         * `ListDatabaseInstances` to find the next group of database instances. Page
+         * tokens are short-lived and should not be persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of each DatabaseInstance that is in the parent Firebase project.
+         *
+         * @param DatabaseInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return DatabaseInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty, then this response is the last page of
+         * results. This token can be used in a subsequent call to
+         * `ListDatabaseInstances` to find the next group of database instances. Page
+         * tokens are short-lived and should not be persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatabaseInstance[]
+     * Runtime class alias of \Google\Service\FirebaseRealtimeDatabase\ListDatabaseInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty, then this response is the last page of
-     * results. This token can be used in a subsequent call to
-     * `ListDatabaseInstances` to find the next group of database instances. Page
-     * tokens are short-lived and should not be persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_FirebaseRealtimeDatabase_ListDatabaseInstancesResponse extends \Google\Service\FirebaseRealtimeDatabase\ListDatabaseInstancesResponse
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions extends \Google\Collection
-{
-    protected $collection_key = 'sessionTokenSiteKeys';
-    /**
-     * A list of site keys to be used during the validation of reCAPTCHA action-
-     * tokens. The provided site keys need to be created from reCAPTCHA API under
-     * the same project where the security policy is created.
-     *
-     * @var string[]
-     */
-    public $actionTokenSiteKeys;
-    /**
-     * A list of site keys to be used during the validation of reCAPTCHA session-
-     * tokens. The provided site keys need to be created from reCAPTCHA API under
-     * the same project where the security policy is created.
-     *
-     * @var string[]
-     */
-    public $sessionTokenSiteKeys;
-    /**
-     * A list of site keys to be used during the validation of reCAPTCHA action-
-     * tokens. The provided site keys need to be created from reCAPTCHA API under
-     * the same project where the security policy is created.
-     *
-     * @param string[] $actionTokenSiteKeys
-     */
-    public function setActionTokenSiteKeys($actionTokenSiteKeys)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions extends \Google\Collection
     {
+        protected $collection_key = 'sessionTokenSiteKeys';
+        /**
+         * A list of site keys to be used during the validation of reCAPTCHA action-
+         * tokens. The provided site keys need to be created from reCAPTCHA API under
+         * the same project where the security policy is created.
+         *
+         * @var string[]
+         */
+        public $actionTokenSiteKeys;
+        /**
+         * A list of site keys to be used during the validation of reCAPTCHA session-
+         * tokens. The provided site keys need to be created from reCAPTCHA API under
+         * the same project where the security policy is created.
+         *
+         * @var string[]
+         */
+        public $sessionTokenSiteKeys;
+        /**
+         * A list of site keys to be used during the validation of reCAPTCHA action-
+         * tokens. The provided site keys need to be created from reCAPTCHA API under
+         * the same project where the security policy is created.
+         *
+         * @param string[] $actionTokenSiteKeys
+         */
+        public function setActionTokenSiteKeys($actionTokenSiteKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActionTokenSiteKeys()
+        {
+        }
+        /**
+         * A list of site keys to be used during the validation of reCAPTCHA session-
+         * tokens. The provided site keys need to be created from reCAPTCHA API under
+         * the same project where the security policy is created.
+         *
+         * @param string[] $sessionTokenSiteKeys
+         */
+        public function setSessionTokenSiteKeys($sessionTokenSiteKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSessionTokenSiteKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionTokenSiteKeys()
-    {
-    }
-    /**
-     * A list of site keys to be used during the validation of reCAPTCHA session-
-     * tokens. The provided site keys need to be created from reCAPTCHA API under
-     * the same project where the security policy is created.
-     *
-     * @param string[] $sessionTokenSiteKeys
-     */
-    public function setSessionTokenSiteKeys($sessionTokenSiteKeys)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSessionTokenSiteKeys()
+    class Google_Service_Compute_SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions extends \Google\Service\Compute\SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions
     {
     }
 }

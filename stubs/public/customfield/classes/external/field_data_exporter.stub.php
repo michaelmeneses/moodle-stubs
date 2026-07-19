@@ -8,6 +8,10 @@
  */
 namespace core_customfield\external;
 
+use core_customfield\handler;
+use core\external\exporter;
+use core\output\renderer_base;
+use core_customfield\output\field_data;
 /**
  * Custom field data exporter
  *

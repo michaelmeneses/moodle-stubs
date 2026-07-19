@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ListIssueCommentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'issueComments';
-    protected $issueCommentsType = IssueComment::class;
-    protected $issueCommentsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of issue comments.
-     *
-     * @param IssueComment[] $issueComments
-     */
-    public function setIssueComments($issueComments)
+namespace Google\Service\SecureSourceManager {
+    class ListIssueCommentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'issueComments';
+        protected $issueCommentsType = IssueComment::class;
+        protected $issueCommentsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of issue comments.
+         *
+         * @param IssueComment[] $issueComments
+         */
+        public function setIssueComments($issueComments)
+        {
+        }
+        /**
+         * @return IssueComment[]
+         */
+        public function getIssueComments()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IssueComment[]
+     * Runtime class alias of \Google\Service\SecureSourceManager\ListIssueCommentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueComments()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecureSourceManager_ListIssueCommentsResponse extends \Google\Service\SecureSourceManager\ListIssueCommentsResponse
     {
     }
 }

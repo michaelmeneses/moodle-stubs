@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ExecutionReport extends \Google\Model
-{
-    protected $executionErrorsType = ValidationReport::class;
-    protected $executionErrorsDataType = '';
-    /**
-     * Total number of asset frames reported for the import job.
-     *
-     * @var int
-     */
-    public $framesReported;
-    /**
-     * Output only. Total number of rows in the import job.
-     *
-     * @var int
-     */
-    public $totalRowsCount;
-    /**
-     * Validation errors encountered during the execution of the import job.
-     *
-     * @param ValidationReport $executionErrors
-     */
-    public function setExecutionErrors(ValidationReport $executionErrors)
+namespace Google\Service\MigrationCenterAPI {
+    class ExecutionReport extends \Google\Model
     {
+        protected $executionErrorsType = ValidationReport::class;
+        protected $executionErrorsDataType = '';
+        /**
+         * Total number of asset frames reported for the import job.
+         *
+         * @var int
+         */
+        public $framesReported;
+        /**
+         * Output only. Total number of rows in the import job.
+         *
+         * @var int
+         */
+        public $totalRowsCount;
+        /**
+         * Validation errors encountered during the execution of the import job.
+         *
+         * @param ValidationReport $executionErrors
+         */
+        public function setExecutionErrors(ValidationReport $executionErrors)
+        {
+        }
+        /**
+         * @return ValidationReport
+         */
+        public function getExecutionErrors()
+        {
+        }
+        /**
+         * Total number of asset frames reported for the import job.
+         *
+         * @param int $framesReported
+         */
+        public function setFramesReported($framesReported)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFramesReported()
+        {
+        }
+        /**
+         * Output only. Total number of rows in the import job.
+         *
+         * @param int $totalRowsCount
+         */
+        public function setTotalRowsCount($totalRowsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalRowsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ValidationReport
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ExecutionReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionErrors()
-    {
-    }
-    /**
-     * Total number of asset frames reported for the import job.
-     *
-     * @param int $framesReported
-     */
-    public function setFramesReported($framesReported)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFramesReported()
-    {
-    }
-    /**
-     * Output only. Total number of rows in the import job.
-     *
-     * @param int $totalRowsCount
-     */
-    public function setTotalRowsCount($totalRowsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalRowsCount()
+    class Google_Service_MigrationCenterAPI_ExecutionReport extends \Google\Service\MigrationCenterAPI\ExecutionReport
     {
     }
 }

@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class LookupCurrentConditionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'pollutants';
-    /**
-     * A rounded down timestamp in RFC3339 UTC "Zulu" format, with nanosecond
-     * resolution and up to nine fractional digits. For example:
-     * "2014-10-02T15:00:00Z".
-     *
-     * @var string
-     */
-    public $dateTime;
-    protected $healthRecommendationsType = HealthRecommendations::class;
-    protected $healthRecommendationsDataType = '';
-    protected $indexesType = AirQualityIndex::class;
-    protected $indexesDataType = 'array';
-    protected $pollutantsType = Pollutant::class;
-    protected $pollutantsDataType = 'array';
-    /**
-     * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
-     * location provided in the request. This field might be omitted from the
-     * response if the location provided in the request resides in a disputed
-     * territory.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * A rounded down timestamp in RFC3339 UTC "Zulu" format, with nanosecond
-     * resolution and up to nine fractional digits. For example:
-     * "2014-10-02T15:00:00Z".
-     *
-     * @param string $dateTime
-     */
-    public function setDateTime($dateTime)
+namespace Google\Service\AirQuality {
+    class LookupCurrentConditionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'pollutants';
+        /**
+         * A rounded down timestamp in RFC3339 UTC "Zulu" format, with nanosecond
+         * resolution and up to nine fractional digits. For example:
+         * "2014-10-02T15:00:00Z".
+         *
+         * @var string
+         */
+        public $dateTime;
+        protected $healthRecommendationsType = HealthRecommendations::class;
+        protected $healthRecommendationsDataType = '';
+        protected $indexesType = AirQualityIndex::class;
+        protected $indexesDataType = 'array';
+        protected $pollutantsType = Pollutant::class;
+        protected $pollutantsDataType = 'array';
+        /**
+         * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
+         * location provided in the request. This field might be omitted from the
+         * response if the location provided in the request resides in a disputed
+         * territory.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * A rounded down timestamp in RFC3339 UTC "Zulu" format, with nanosecond
+         * resolution and up to nine fractional digits. For example:
+         * "2014-10-02T15:00:00Z".
+         *
+         * @param string $dateTime
+         */
+        public function setDateTime($dateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDateTime()
+        {
+        }
+        /**
+         * Health advice and recommended actions related to the reported air quality
+         * conditions. Recommendations are tailored differently for populations at
+         * risk, groups with greater sensitivities to pollutants, and the general
+         * population.
+         *
+         * @param HealthRecommendations $healthRecommendations
+         */
+        public function setHealthRecommendations(HealthRecommendations $healthRecommendations)
+        {
+        }
+        /**
+         * @return HealthRecommendations
+         */
+        public function getHealthRecommendations()
+        {
+        }
+        /**
+         * Based on the request parameters, this list will include (up to) two air
+         * quality indexes: - Universal AQI. Will be returned if the universalAqi
+         * boolean is set to true. - Local AQI. Will be returned if the LOCAL_AQI
+         * extra computation is specified.
+         *
+         * @param AirQualityIndex[] $indexes
+         */
+        public function setIndexes($indexes)
+        {
+        }
+        /**
+         * @return AirQualityIndex[]
+         */
+        public function getIndexes()
+        {
+        }
+        /**
+         * A list of pollutants affecting the location specified in the request. Note:
+         * This field will be returned only for requests that specified one or more of
+         * the following extra computations: POLLUTANT_ADDITIONAL_INFO,
+         * DOMINANT_POLLUTANT_CONCENTRATION, POLLUTANT_CONCENTRATION.
+         *
+         * @param Pollutant[] $pollutants
+         */
+        public function setPollutants($pollutants)
+        {
+        }
+        /**
+         * @return Pollutant[]
+         */
+        public function getPollutants()
+        {
+        }
+        /**
+         * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
+         * location provided in the request. This field might be omitted from the
+         * response if the location provided in the request resides in a disputed
+         * territory.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AirQuality\LookupCurrentConditionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateTime()
-    {
-    }
-    /**
-     * Health advice and recommended actions related to the reported air quality
-     * conditions. Recommendations are tailored differently for populations at
-     * risk, groups with greater sensitivities to pollutants, and the general
-     * population.
-     *
-     * @param HealthRecommendations $healthRecommendations
-     */
-    public function setHealthRecommendations(HealthRecommendations $healthRecommendations)
-    {
-    }
-    /**
-     * @return HealthRecommendations
-     */
-    public function getHealthRecommendations()
-    {
-    }
-    /**
-     * Based on the request parameters, this list will include (up to) two air
-     * quality indexes: - Universal AQI. Will be returned if the universalAqi
-     * boolean is set to true. - Local AQI. Will be returned if the LOCAL_AQI
-     * extra computation is specified.
-     *
-     * @param AirQualityIndex[] $indexes
-     */
-    public function setIndexes($indexes)
-    {
-    }
-    /**
-     * @return AirQualityIndex[]
-     */
-    public function getIndexes()
-    {
-    }
-    /**
-     * A list of pollutants affecting the location specified in the request. Note:
-     * This field will be returned only for requests that specified one or more of
-     * the following extra computations: POLLUTANT_ADDITIONAL_INFO,
-     * DOMINANT_POLLUTANT_CONCENTRATION, POLLUTANT_CONCENTRATION.
-     *
-     * @param Pollutant[] $pollutants
-     */
-    public function setPollutants($pollutants)
-    {
-    }
-    /**
-     * @return Pollutant[]
-     */
-    public function getPollutants()
-    {
-    }
-    /**
-     * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
-     * location provided in the request. This field might be omitted from the
-     * response if the location provided in the request resides in a disputed
-     * territory.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_AirQuality_LookupCurrentConditionsResponse extends \Google\Service\AirQuality\LookupCurrentConditionsResponse
     {
     }
 }

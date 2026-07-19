@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class FetchErrorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * @param Error[]
-     */
-    public function setErrors($errors)
+namespace Google\Service\Datastream {
+    class FetchErrorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * @param Error[]
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Error[]
+     * Runtime class alias of \Google\Service\Datastream\FetchErrorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Datastream_FetchErrorsResponse extends \Google\Service\Datastream\FetchErrorsResponse
     {
     }
 }

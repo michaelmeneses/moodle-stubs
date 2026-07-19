@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources extends \Google\Collection
-{
-    protected $collection_key = 'reviewSnippets';
-    protected $reviewSnippetsType = GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet::class;
-    protected $reviewSnippetsDataType = 'array';
-    /**
-     * Snippets of reviews that were used to generate the answer.
-     *
-     * @param GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet[] $reviewSnippets
-     */
-    public function setReviewSnippets($reviewSnippets)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources extends \Google\Collection
     {
+        protected $collection_key = 'reviewSnippets';
+        protected $reviewSnippetsType = GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet::class;
+        protected $reviewSnippetsDataType = 'array';
+        /**
+         * Snippets of reviews that were used to generate the answer.
+         *
+         * @param GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet[] $reviewSnippets
+         */
+        public function setReviewSnippets($reviewSnippets)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet[]
+         */
+        public function getReviewSnippets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReviewSnippets()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources
     {
     }
 }

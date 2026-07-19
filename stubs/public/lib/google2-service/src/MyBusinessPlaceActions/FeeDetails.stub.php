@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class FeeDetails extends \Google\Model
-{
-    protected $baseFeeType = MinimumFee::class;
-    protected $baseFeeDataType = '';
-    protected $fixedFeeType = FixedFee::class;
-    protected $fixedFeeDataType = '';
-    protected $noFeeType = NoFee::class;
-    protected $noFeeDataType = '';
-    /**
-     * @param MinimumFee
-     */
-    public function setBaseFee(MinimumFee $baseFee)
+namespace Google\Service\MyBusinessPlaceActions {
+    class FeeDetails extends \Google\Model
     {
+        protected $baseFeeType = MinimumFee::class;
+        protected $baseFeeDataType = '';
+        protected $fixedFeeType = FixedFee::class;
+        protected $fixedFeeDataType = '';
+        protected $noFeeType = NoFee::class;
+        protected $noFeeDataType = '';
+        /**
+         * @param MinimumFee
+         */
+        public function setBaseFee(MinimumFee $baseFee)
+        {
+        }
+        /**
+         * @return MinimumFee
+         */
+        public function getBaseFee()
+        {
+        }
+        /**
+         * @param FixedFee
+         */
+        public function setFixedFee(FixedFee $fixedFee)
+        {
+        }
+        /**
+         * @return FixedFee
+         */
+        public function getFixedFee()
+        {
+        }
+        /**
+         * @param NoFee
+         */
+        public function setNoFee(NoFee $noFee)
+        {
+        }
+        /**
+         * @return NoFee
+         */
+        public function getNoFee()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MinimumFee
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\FeeDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseFee()
-    {
-    }
-    /**
-     * @param FixedFee
-     */
-    public function setFixedFee(FixedFee $fixedFee)
-    {
-    }
-    /**
-     * @return FixedFee
-     */
-    public function getFixedFee()
-    {
-    }
-    /**
-     * @param NoFee
-     */
-    public function setNoFee(NoFee $noFee)
-    {
-    }
-    /**
-     * @return NoFee
-     */
-    public function getNoFee()
+    class Google_Service_MyBusinessPlaceActions_FeeDetails extends \Google\Service\MyBusinessPlaceActions\FeeDetails
     {
     }
 }

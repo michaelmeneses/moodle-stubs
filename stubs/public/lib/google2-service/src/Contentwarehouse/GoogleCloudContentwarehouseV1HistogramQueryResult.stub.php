@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1HistogramQueryResult extends \Google\Model
-{
-    /**
-     * A map from the values of the facet associated with distinct values to the
-     * number of matching entries with corresponding value. The key format is: *
-     * (for string histogram) string values stored in the field.
-     *
-     * @var string[]
-     */
-    public $histogram;
-    /**
-     * Requested histogram expression.
-     *
-     * @var string
-     */
-    public $histogramQuery;
-    /**
-     * A map from the values of the facet associated with distinct values to the
-     * number of matching entries with corresponding value. The key format is: *
-     * (for string histogram) string values stored in the field.
-     *
-     * @param string[] $histogram
-     */
-    public function setHistogram($histogram)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1HistogramQueryResult extends \Google\Model
     {
+        /**
+         * A map from the values of the facet associated with distinct values to the
+         * number of matching entries with corresponding value. The key format is: *
+         * (for string histogram) string values stored in the field.
+         *
+         * @var string[]
+         */
+        public $histogram;
+        /**
+         * Requested histogram expression.
+         *
+         * @var string
+         */
+        public $histogramQuery;
+        /**
+         * A map from the values of the facet associated with distinct values to the
+         * number of matching entries with corresponding value. The key format is: *
+         * (for string histogram) string values stored in the field.
+         *
+         * @param string[] $histogram
+         */
+        public function setHistogram($histogram)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHistogram()
+        {
+        }
+        /**
+         * Requested histogram expression.
+         *
+         * @param string $histogramQuery
+         */
+        public function setHistogramQuery($histogramQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistogramQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1HistogramQueryResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistogram()
-    {
-    }
-    /**
-     * Requested histogram expression.
-     *
-     * @param string $histogramQuery
-     */
-    public function setHistogramQuery($histogramQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistogramQuery()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1HistogramQueryResult extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1HistogramQueryResult
     {
     }
 }

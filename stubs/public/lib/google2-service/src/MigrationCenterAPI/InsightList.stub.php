@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class InsightList extends \Google\Collection
-{
-    protected $collection_key = 'insights';
-    protected $insightsType = Insight::class;
-    protected $insightsDataType = 'array';
-    /**
-     * Output only. Update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Insights of the list.
-     *
-     * @param Insight[] $insights
-     */
-    public function setInsights($insights)
+namespace Google\Service\MigrationCenterAPI {
+    class InsightList extends \Google\Collection
     {
+        protected $collection_key = 'insights';
+        protected $insightsType = Insight::class;
+        protected $insightsDataType = 'array';
+        /**
+         * Output only. Update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Insights of the list.
+         *
+         * @param Insight[] $insights
+         */
+        public function setInsights($insights)
+        {
+        }
+        /**
+         * @return Insight[]
+         */
+        public function getInsights()
+        {
+        }
+        /**
+         * Output only. Update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Insight[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\InsightList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsights()
-    {
-    }
-    /**
-     * Output only. Update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_MigrationCenterAPI_InsightList extends \Google\Service\MigrationCenterAPI\InsightList
     {
     }
 }

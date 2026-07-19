@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class DestinationDatasetReference extends \Google\Model
-{
-    /**
-     * Required. A unique ID for this dataset, without the project name. The ID
-     * must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
-     * The maximum length is 1,024 characters.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * Required. The ID of the project containing this dataset.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. A unique ID for this dataset, without the project name. The ID
-     * must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
-     * The maximum length is 1,024 characters.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\AnalyticsHub {
+    class DestinationDatasetReference extends \Google\Model
     {
+        /**
+         * Required. A unique ID for this dataset, without the project name. The ID
+         * must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
+         * The maximum length is 1,024 characters.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * Required. The ID of the project containing this dataset.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. A unique ID for this dataset, without the project name. The ID
+         * must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
+         * The maximum length is 1,024 characters.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * Required. The ID of the project containing this dataset.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\DestinationDatasetReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * Required. The ID of the project containing this dataset.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_AnalyticsHub_DestinationDatasetReference extends \Google\Service\AnalyticsHub\DestinationDatasetReference
     {
     }
 }

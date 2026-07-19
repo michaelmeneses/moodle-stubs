@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SiteVerification;
-
-class SiteVerificationWebResourceGettokenRequest extends \Google\Model
-{
-    protected $siteType = SiteVerificationWebResourceGettokenRequestSite::class;
-    protected $siteDataType = '';
-    /**
-     * The verification method that will be used to verify this site. For sites,
-     * 'FILE' or 'META' methods may be used. For domains, only 'DNS' may be used.
-     *
-     * @var string
-     */
-    public $verificationMethod;
-    /**
-     * The site for which a verification token will be generated.
-     *
-     * @param SiteVerificationWebResourceGettokenRequestSite $site
-     */
-    public function setSite(SiteVerificationWebResourceGettokenRequestSite $site)
+namespace Google\Service\SiteVerification {
+    class SiteVerificationWebResourceGettokenRequest extends \Google\Model
     {
+        protected $siteType = SiteVerificationWebResourceGettokenRequestSite::class;
+        protected $siteDataType = '';
+        /**
+         * The verification method that will be used to verify this site. For sites,
+         * 'FILE' or 'META' methods may be used. For domains, only 'DNS' may be used.
+         *
+         * @var string
+         */
+        public $verificationMethod;
+        /**
+         * The site for which a verification token will be generated.
+         *
+         * @param SiteVerificationWebResourceGettokenRequestSite $site
+         */
+        public function setSite(SiteVerificationWebResourceGettokenRequestSite $site)
+        {
+        }
+        /**
+         * @return SiteVerificationWebResourceGettokenRequestSite
+         */
+        public function getSite()
+        {
+        }
+        /**
+         * The verification method that will be used to verify this site. For sites,
+         * 'FILE' or 'META' methods may be used. For domains, only 'DNS' may be used.
+         *
+         * @param string $verificationMethod
+         */
+        public function setVerificationMethod($verificationMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationMethod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SiteVerificationWebResourceGettokenRequestSite
+     * Runtime class alias of \Google\Service\SiteVerification\SiteVerificationWebResourceGettokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSite()
-    {
-    }
-    /**
-     * The verification method that will be used to verify this site. For sites,
-     * 'FILE' or 'META' methods may be used. For domains, only 'DNS' may be used.
-     *
-     * @param string $verificationMethod
-     */
-    public function setVerificationMethod($verificationMethod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationMethod()
+    class Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequest extends \Google\Service\SiteVerification\SiteVerificationWebResourceGettokenRequest
     {
     }
 }

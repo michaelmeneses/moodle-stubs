@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class MoveInstanceRequest extends \Google\Collection
-{
-    protected $collection_key = 'targetDatabaseMoveConfigs';
-    /**
-     * Required. The target instance configuration where to move the instance.
-     * Values are of the form `projects//instanceConfigs/`.
-     *
-     * @var string
-     */
-    public $targetConfig;
-    protected $targetDatabaseMoveConfigsType = DatabaseMoveConfig::class;
-    protected $targetDatabaseMoveConfigsDataType = 'array';
-    /**
-     * Required. The target instance configuration where to move the instance.
-     * Values are of the form `projects//instanceConfigs/`.
-     *
-     * @param string $targetConfig
-     */
-    public function setTargetConfig($targetConfig)
+namespace Google\Service\Spanner {
+    class MoveInstanceRequest extends \Google\Collection
     {
+        protected $collection_key = 'targetDatabaseMoveConfigs';
+        /**
+         * Required. The target instance configuration where to move the instance.
+         * Values are of the form `projects//instanceConfigs/`.
+         *
+         * @var string
+         */
+        public $targetConfig;
+        protected $targetDatabaseMoveConfigsType = DatabaseMoveConfig::class;
+        protected $targetDatabaseMoveConfigsDataType = 'array';
+        /**
+         * Required. The target instance configuration where to move the instance.
+         * Values are of the form `projects//instanceConfigs/`.
+         *
+         * @param string $targetConfig
+         */
+        public function setTargetConfig($targetConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetConfig()
+        {
+        }
+        /**
+         * Optional. The configuration for each database in the target instance
+         * configuration.
+         *
+         * @param DatabaseMoveConfig[] $targetDatabaseMoveConfigs
+         */
+        public function setTargetDatabaseMoveConfigs($targetDatabaseMoveConfigs)
+        {
+        }
+        /**
+         * @return DatabaseMoveConfig[]
+         */
+        public function getTargetDatabaseMoveConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\MoveInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetConfig()
-    {
-    }
-    /**
-     * Optional. The configuration for each database in the target instance
-     * configuration.
-     *
-     * @param DatabaseMoveConfig[] $targetDatabaseMoveConfigs
-     */
-    public function setTargetDatabaseMoveConfigs($targetDatabaseMoveConfigs)
-    {
-    }
-    /**
-     * @return DatabaseMoveConfig[]
-     */
-    public function getTargetDatabaseMoveConfigs()
+    class Google_Service_Spanner_MoveInstanceRequest extends \Google\Service\Spanner\MoveInstanceRequest
     {
     }
 }

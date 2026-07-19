@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3VariantsHistory extends \Google\Model
-{
-    /**
-     * Update time of the variants.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $versionVariantsType = GoogleCloudDialogflowCxV3VersionVariants::class;
-    protected $versionVariantsDataType = '';
-    /**
-     * Update time of the variants.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3VariantsHistory extends \Google\Model
     {
+        /**
+         * Update time of the variants.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $versionVariantsType = GoogleCloudDialogflowCxV3VersionVariants::class;
+        protected $versionVariantsDataType = '';
+        /**
+         * Update time of the variants.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The flow versions as the variants.
+         *
+         * @param GoogleCloudDialogflowCxV3VersionVariants $versionVariants
+         */
+        public function setVersionVariants(GoogleCloudDialogflowCxV3VersionVariants $versionVariants)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3VersionVariants
+         */
+        public function getVersionVariants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3VariantsHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The flow versions as the variants.
-     *
-     * @param GoogleCloudDialogflowCxV3VersionVariants $versionVariants
-     */
-    public function setVersionVariants(GoogleCloudDialogflowCxV3VersionVariants $versionVariants)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3VersionVariants
-     */
-    public function getVersionVariants()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3VariantsHistory extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3VariantsHistory
     {
     }
 }

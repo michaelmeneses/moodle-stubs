@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class WeeklyWindow extends \Google\Collection
-{
-    protected $collection_key = 'daysOfWeek';
-    /**
-     * Optional. Days of week. If left empty, all days of the week will be
-     * included.
-     *
-     * @var string[]
-     */
-    public $daysOfWeek;
-    protected $endTimeType = TimeOfDay::class;
-    protected $endTimeDataType = '';
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Optional. Days of week. If left empty, all days of the week will be
-     * included.
-     *
-     * @param string[] $daysOfWeek
-     */
-    public function setDaysOfWeek($daysOfWeek)
+namespace Google\Service\CloudDeploy {
+    class WeeklyWindow extends \Google\Collection
     {
+        protected $collection_key = 'daysOfWeek';
+        /**
+         * Optional. Days of week. If left empty, all days of the week will be
+         * included.
+         *
+         * @var string[]
+         */
+        public $daysOfWeek;
+        protected $endTimeType = TimeOfDay::class;
+        protected $endTimeDataType = '';
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Optional. Days of week. If left empty, all days of the week will be
+         * included.
+         *
+         * @param string[] $daysOfWeek
+         */
+        public function setDaysOfWeek($daysOfWeek)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDaysOfWeek()
+        {
+        }
+        /**
+         * Optional. End time (exclusive). Use 24:00 to indicate midnight. If you
+         * specify end_time you must also specify start_time. If left empty, this will
+         * block for the entire day for the days specified in days_of_week.
+         *
+         * @param TimeOfDay $endTime
+         */
+        public function setEndTime(TimeOfDay $endTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. Start time (inclusive). Use 00:00 for the beginning of the day.
+         * If you specify start_time you must also specify end_time. If left empty,
+         * this will block for the entire day for the days specified in days_of_week.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\WeeklyWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysOfWeek()
-    {
-    }
-    /**
-     * Optional. End time (exclusive). Use 24:00 to indicate midnight. If you
-     * specify end_time you must also specify start_time. If left empty, this will
-     * block for the entire day for the days specified in days_of_week.
-     *
-     * @param TimeOfDay $endTime
-     */
-    public function setEndTime(TimeOfDay $endTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. Start time (inclusive). Use 00:00 for the beginning of the day.
-     * If you specify start_time you must also specify end_time. If left empty,
-     * this will block for the entire day for the days specified in days_of_week.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_CloudDeploy_WeeklyWindow extends \Google\Service\CloudDeploy\WeeklyWindow
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AssociatedFinding extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $canonicalFindingName;
-    /**
-     * @var string
-     */
-    public $findingCategory;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setCanonicalFindingName($canonicalFindingName)
+namespace Google\Service\SecurityCommandCenter {
+    class AssociatedFinding extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $canonicalFindingName;
+        /**
+         * @var string
+         */
+        public $findingCategory;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setCanonicalFindingName($canonicalFindingName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalFindingName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFindingCategory($findingCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFindingCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AssociatedFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalFindingName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFindingCategory($findingCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFindingCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_AssociatedFinding extends \Google\Service\SecurityCommandCenter\AssociatedFinding
     {
     }
 }

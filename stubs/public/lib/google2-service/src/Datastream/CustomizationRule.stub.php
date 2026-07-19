@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class CustomizationRule extends \Google\Model
-{
-    protected $bigqueryClusteringType = BigQueryClustering::class;
-    protected $bigqueryClusteringDataType = '';
-    protected $bigqueryPartitioningType = BigQueryPartitioning::class;
-    protected $bigqueryPartitioningDataType = '';
-    /**
-     * BigQuery clustering rule.
-     *
-     * @param BigQueryClustering $bigqueryClustering
-     */
-    public function setBigqueryClustering(BigQueryClustering $bigqueryClustering)
+namespace Google\Service\Datastream {
+    class CustomizationRule extends \Google\Model
     {
+        protected $bigqueryClusteringType = BigQueryClustering::class;
+        protected $bigqueryClusteringDataType = '';
+        protected $bigqueryPartitioningType = BigQueryPartitioning::class;
+        protected $bigqueryPartitioningDataType = '';
+        /**
+         * BigQuery clustering rule.
+         *
+         * @param BigQueryClustering $bigqueryClustering
+         */
+        public function setBigqueryClustering(BigQueryClustering $bigqueryClustering)
+        {
+        }
+        /**
+         * @return BigQueryClustering
+         */
+        public function getBigqueryClustering()
+        {
+        }
+        /**
+         * BigQuery partitioning rule.
+         *
+         * @param BigQueryPartitioning $bigqueryPartitioning
+         */
+        public function setBigqueryPartitioning(BigQueryPartitioning $bigqueryPartitioning)
+        {
+        }
+        /**
+         * @return BigQueryPartitioning
+         */
+        public function getBigqueryPartitioning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryClustering
+     * Runtime class alias of \Google\Service\Datastream\CustomizationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryClustering()
-    {
-    }
-    /**
-     * BigQuery partitioning rule.
-     *
-     * @param BigQueryPartitioning $bigqueryPartitioning
-     */
-    public function setBigqueryPartitioning(BigQueryPartitioning $bigqueryPartitioning)
-    {
-    }
-    /**
-     * @return BigQueryPartitioning
-     */
-    public function getBigqueryPartitioning()
+    class Google_Service_Datastream_CustomizationRule extends \Google\Service\Datastream\CustomizationRule
     {
     }
 }

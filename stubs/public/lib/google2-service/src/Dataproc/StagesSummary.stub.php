@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StagesSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $applicationId;
-    /**
-     * @var int
-     */
-    public $numActiveStages;
-    /**
-     * @var int
-     */
-    public $numCompletedStages;
-    /**
-     * @var int
-     */
-    public $numFailedStages;
-    /**
-     * @var int
-     */
-    public $numPendingStages;
-    /**
-     * @var int
-     */
-    public $numSkippedStages;
-    /**
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\Dataproc {
+    class StagesSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $applicationId;
+        /**
+         * @var int
+         */
+        public $numActiveStages;
+        /**
+         * @var int
+         */
+        public $numCompletedStages;
+        /**
+         * @var int
+         */
+        public $numFailedStages;
+        /**
+         * @var int
+         */
+        public $numPendingStages;
+        /**
+         * @var int
+         */
+        public $numSkippedStages;
+        /**
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * @param int $numActiveStages
+         */
+        public function setNumActiveStages($numActiveStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumActiveStages()
+        {
+        }
+        /**
+         * @param int $numCompletedStages
+         */
+        public function setNumCompletedStages($numCompletedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedStages()
+        {
+        }
+        /**
+         * @param int $numFailedStages
+         */
+        public function setNumFailedStages($numFailedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFailedStages()
+        {
+        }
+        /**
+         * @param int $numPendingStages
+         */
+        public function setNumPendingStages($numPendingStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumPendingStages()
+        {
+        }
+        /**
+         * @param int $numSkippedStages
+         */
+        public function setNumSkippedStages($numSkippedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumSkippedStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StagesSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * @param int $numActiveStages
-     */
-    public function setNumActiveStages($numActiveStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumActiveStages()
-    {
-    }
-    /**
-     * @param int $numCompletedStages
-     */
-    public function setNumCompletedStages($numCompletedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumCompletedStages()
-    {
-    }
-    /**
-     * @param int $numFailedStages
-     */
-    public function setNumFailedStages($numFailedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFailedStages()
-    {
-    }
-    /**
-     * @param int $numPendingStages
-     */
-    public function setNumPendingStages($numPendingStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumPendingStages()
-    {
-    }
-    /**
-     * @param int $numSkippedStages
-     */
-    public function setNumSkippedStages($numSkippedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumSkippedStages()
+    class Google_Service_Dataproc_StagesSummary extends \Google\Service\Dataproc\StagesSummary
     {
     }
 }

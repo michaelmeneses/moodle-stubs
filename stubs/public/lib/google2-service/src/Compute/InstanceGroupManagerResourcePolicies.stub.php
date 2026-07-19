@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerResourcePolicies extends \Google\Model
-{
-    /**
-     * The URL of the workload policy that is specified for this managed instance
-     * group. It can be a full or partial URL. For example, the following are all
-     * valid URLs to a workload policy:                - https://www.googleapis.co
-     * m/compute/v1/projects/project/regions/region/resourcePolicies/resourcePolic
-     * y       - projects/project/regions/region/resourcePolicies/resourcePolicy
-     * - regions/region/resourcePolicies/resourcePolicy
-     *
-     * @var string
-     */
-    public $workloadPolicy;
-    /**
-     * The URL of the workload policy that is specified for this managed instance
-     * group. It can be a full or partial URL. For example, the following are all
-     * valid URLs to a workload policy:                - https://www.googleapis.co
-     * m/compute/v1/projects/project/regions/region/resourcePolicies/resourcePolic
-     * y       - projects/project/regions/region/resourcePolicies/resourcePolicy
-     * - regions/region/resourcePolicies/resourcePolicy
-     *
-     * @param string $workloadPolicy
-     */
-    public function setWorkloadPolicy($workloadPolicy)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerResourcePolicies extends \Google\Model
     {
+        /**
+         * The URL of the workload policy that is specified for this managed instance
+         * group. It can be a full or partial URL. For example, the following are all
+         * valid URLs to a workload policy:                - https://www.googleapis.co
+         * m/compute/v1/projects/project/regions/region/resourcePolicies/resourcePolic
+         * y       - projects/project/regions/region/resourcePolicies/resourcePolicy
+         * - regions/region/resourcePolicies/resourcePolicy
+         *
+         * @var string
+         */
+        public $workloadPolicy;
+        /**
+         * The URL of the workload policy that is specified for this managed instance
+         * group. It can be a full or partial URL. For example, the following are all
+         * valid URLs to a workload policy:                - https://www.googleapis.co
+         * m/compute/v1/projects/project/regions/region/resourcePolicies/resourcePolic
+         * y       - projects/project/regions/region/resourcePolicies/resourcePolicy
+         * - regions/region/resourcePolicies/resourcePolicy
+         *
+         * @param string $workloadPolicy
+         */
+        public function setWorkloadPolicy($workloadPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkloadPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerResourcePolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkloadPolicy()
+    class Google_Service_Compute_InstanceGroupManagerResourcePolicies extends \Google\Service\Compute\InstanceGroupManagerResourcePolicies
     {
     }
 }

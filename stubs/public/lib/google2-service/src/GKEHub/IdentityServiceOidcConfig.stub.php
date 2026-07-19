@@ -21,298 +21,307 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceOidcConfig extends \Google\Model
-{
-    /**
-     * PEM-encoded CA for OIDC provider.
-     *
-     * @var string
-     */
-    public $certificateAuthorityData;
-    /**
-     * ID for OIDC client application.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Input only. Unencrypted OIDC client secret will be passed to the GKE Hub
-     * CLH.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Flag to denote if reverse proxy is used to connect to auth provider. This
-     * flag should be set to true when provider is not reachable by Google Cloud
-     * Console.
-     *
-     * @var bool
-     */
-    public $deployCloudConsoleProxy;
-    /**
-     * Enable access token.
-     *
-     * @var bool
-     */
-    public $enableAccessToken;
-    /**
-     * Output only. Encrypted OIDC Client secret
-     *
-     * @var string
-     */
-    public $encryptedClientSecret;
-    /**
-     * Comma-separated list of key-value pairs.
-     *
-     * @var string
-     */
-    public $extraParams;
-    /**
-     * Prefix to prepend to group name.
-     *
-     * @var string
-     */
-    public $groupPrefix;
-    /**
-     * Claim in OIDC ID token that holds group information.
-     *
-     * @var string
-     */
-    public $groupsClaim;
-    /**
-     * URI for the OIDC provider. This should point to the level below .well-
-     * known/openid-configuration.
-     *
-     * @var string
-     */
-    public $issuerUri;
-    /**
-     * Registered redirect uri to redirect users going through OAuth flow using
-     * kubectl plugin.
-     *
-     * @var string
-     */
-    public $kubectlRedirectUri;
-    /**
-     * Comma-separated list of identifiers.
-     *
-     * @var string
-     */
-    public $scopes;
-    /**
-     * Claim in OIDC ID token that holds username.
-     *
-     * @var string
-     */
-    public $userClaim;
-    /**
-     * Prefix to prepend to user name.
-     *
-     * @var string
-     */
-    public $userPrefix;
-    /**
-     * PEM-encoded CA for OIDC provider.
-     *
-     * @param string $certificateAuthorityData
-     */
-    public function setCertificateAuthorityData($certificateAuthorityData)
+namespace Google\Service\GKEHub {
+    class IdentityServiceOidcConfig extends \Google\Model
     {
+        /**
+         * PEM-encoded CA for OIDC provider.
+         *
+         * @var string
+         */
+        public $certificateAuthorityData;
+        /**
+         * ID for OIDC client application.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Input only. Unencrypted OIDC client secret will be passed to the GKE Hub
+         * CLH.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Flag to denote if reverse proxy is used to connect to auth provider. This
+         * flag should be set to true when provider is not reachable by Google Cloud
+         * Console.
+         *
+         * @var bool
+         */
+        public $deployCloudConsoleProxy;
+        /**
+         * Enable access token.
+         *
+         * @var bool
+         */
+        public $enableAccessToken;
+        /**
+         * Output only. Encrypted OIDC Client secret
+         *
+         * @var string
+         */
+        public $encryptedClientSecret;
+        /**
+         * Comma-separated list of key-value pairs.
+         *
+         * @var string
+         */
+        public $extraParams;
+        /**
+         * Prefix to prepend to group name.
+         *
+         * @var string
+         */
+        public $groupPrefix;
+        /**
+         * Claim in OIDC ID token that holds group information.
+         *
+         * @var string
+         */
+        public $groupsClaim;
+        /**
+         * URI for the OIDC provider. This should point to the level below .well-
+         * known/openid-configuration.
+         *
+         * @var string
+         */
+        public $issuerUri;
+        /**
+         * Registered redirect uri to redirect users going through OAuth flow using
+         * kubectl plugin.
+         *
+         * @var string
+         */
+        public $kubectlRedirectUri;
+        /**
+         * Comma-separated list of identifiers.
+         *
+         * @var string
+         */
+        public $scopes;
+        /**
+         * Claim in OIDC ID token that holds username.
+         *
+         * @var string
+         */
+        public $userClaim;
+        /**
+         * Prefix to prepend to user name.
+         *
+         * @var string
+         */
+        public $userPrefix;
+        /**
+         * PEM-encoded CA for OIDC provider.
+         *
+         * @param string $certificateAuthorityData
+         */
+        public function setCertificateAuthorityData($certificateAuthorityData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateAuthorityData()
+        {
+        }
+        /**
+         * ID for OIDC client application.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Input only. Unencrypted OIDC client secret will be passed to the GKE Hub
+         * CLH.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Flag to denote if reverse proxy is used to connect to auth provider. This
+         * flag should be set to true when provider is not reachable by Google Cloud
+         * Console.
+         *
+         * @param bool $deployCloudConsoleProxy
+         */
+        public function setDeployCloudConsoleProxy($deployCloudConsoleProxy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeployCloudConsoleProxy()
+        {
+        }
+        /**
+         * Enable access token.
+         *
+         * @param bool $enableAccessToken
+         */
+        public function setEnableAccessToken($enableAccessToken)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableAccessToken()
+        {
+        }
+        /**
+         * Output only. Encrypted OIDC Client secret
+         *
+         * @param string $encryptedClientSecret
+         */
+        public function setEncryptedClientSecret($encryptedClientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedClientSecret()
+        {
+        }
+        /**
+         * Comma-separated list of key-value pairs.
+         *
+         * @param string $extraParams
+         */
+        public function setExtraParams($extraParams)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtraParams()
+        {
+        }
+        /**
+         * Prefix to prepend to group name.
+         *
+         * @param string $groupPrefix
+         */
+        public function setGroupPrefix($groupPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupPrefix()
+        {
+        }
+        /**
+         * Claim in OIDC ID token that holds group information.
+         *
+         * @param string $groupsClaim
+         */
+        public function setGroupsClaim($groupsClaim)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupsClaim()
+        {
+        }
+        /**
+         * URI for the OIDC provider. This should point to the level below .well-
+         * known/openid-configuration.
+         *
+         * @param string $issuerUri
+         */
+        public function setIssuerUri($issuerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuerUri()
+        {
+        }
+        /**
+         * Registered redirect uri to redirect users going through OAuth flow using
+         * kubectl plugin.
+         *
+         * @param string $kubectlRedirectUri
+         */
+        public function setKubectlRedirectUri($kubectlRedirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubectlRedirectUri()
+        {
+        }
+        /**
+         * Comma-separated list of identifiers.
+         *
+         * @param string $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Claim in OIDC ID token that holds username.
+         *
+         * @param string $userClaim
+         */
+        public function setUserClaim($userClaim)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserClaim()
+        {
+        }
+        /**
+         * Prefix to prepend to user name.
+         *
+         * @param string $userPrefix
+         */
+        public function setUserPrefix($userPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceOidcConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateAuthorityData()
-    {
-    }
-    /**
-     * ID for OIDC client application.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * Input only. Unencrypted OIDC client secret will be passed to the GKE Hub
-     * CLH.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Flag to denote if reverse proxy is used to connect to auth provider. This
-     * flag should be set to true when provider is not reachable by Google Cloud
-     * Console.
-     *
-     * @param bool $deployCloudConsoleProxy
-     */
-    public function setDeployCloudConsoleProxy($deployCloudConsoleProxy)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeployCloudConsoleProxy()
-    {
-    }
-    /**
-     * Enable access token.
-     *
-     * @param bool $enableAccessToken
-     */
-    public function setEnableAccessToken($enableAccessToken)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableAccessToken()
-    {
-    }
-    /**
-     * Output only. Encrypted OIDC Client secret
-     *
-     * @param string $encryptedClientSecret
-     */
-    public function setEncryptedClientSecret($encryptedClientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptedClientSecret()
-    {
-    }
-    /**
-     * Comma-separated list of key-value pairs.
-     *
-     * @param string $extraParams
-     */
-    public function setExtraParams($extraParams)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExtraParams()
-    {
-    }
-    /**
-     * Prefix to prepend to group name.
-     *
-     * @param string $groupPrefix
-     */
-    public function setGroupPrefix($groupPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupPrefix()
-    {
-    }
-    /**
-     * Claim in OIDC ID token that holds group information.
-     *
-     * @param string $groupsClaim
-     */
-    public function setGroupsClaim($groupsClaim)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupsClaim()
-    {
-    }
-    /**
-     * URI for the OIDC provider. This should point to the level below .well-
-     * known/openid-configuration.
-     *
-     * @param string $issuerUri
-     */
-    public function setIssuerUri($issuerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuerUri()
-    {
-    }
-    /**
-     * Registered redirect uri to redirect users going through OAuth flow using
-     * kubectl plugin.
-     *
-     * @param string $kubectlRedirectUri
-     */
-    public function setKubectlRedirectUri($kubectlRedirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubectlRedirectUri()
-    {
-    }
-    /**
-     * Comma-separated list of identifiers.
-     *
-     * @param string $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Claim in OIDC ID token that holds username.
-     *
-     * @param string $userClaim
-     */
-    public function setUserClaim($userClaim)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserClaim()
-    {
-    }
-    /**
-     * Prefix to prepend to user name.
-     *
-     * @param string $userPrefix
-     */
-    public function setUserPrefix($userPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPrefix()
+    class Google_Service_GKEHub_IdentityServiceOidcConfig extends \Google\Service\GKEHub\IdentityServiceOidcConfig
     {
     }
 }

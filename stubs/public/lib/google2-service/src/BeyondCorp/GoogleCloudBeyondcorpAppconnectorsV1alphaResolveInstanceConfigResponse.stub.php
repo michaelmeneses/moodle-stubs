@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaResolveInstanceConfigResponse extends \Google\Model
-{
-    protected $instanceConfigType = GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig::class;
-    protected $instanceConfigDataType = '';
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig
-     */
-    public function setInstanceConfig(GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig $instanceConfig)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaResolveInstanceConfigResponse extends \Google\Model
     {
+        protected $instanceConfigType = GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig::class;
+        protected $instanceConfigDataType = '';
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig
+         */
+        public function setInstanceConfig(GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig $instanceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig
+         */
+        public function getInstanceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaResolveInstanceConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceConfig()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaResolveInstanceConfigResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaResolveInstanceConfigResponse
     {
     }
 }

@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CorsPolicy extends \Google\Collection
-{
-    protected $collection_key = 'exposeHeaders';
-    /**
-     * In response to a preflight request, setting this to true indicates that the
-     * actual request can include user credentials. This field translates to the
-     * Access-Control-Allow-Credentials header.
-     *
-     * Default is false.
-     *
-     * @var bool
-     */
-    public $allowCredentials;
-    /**
-     * Specifies the content for the Access-Control-Allow-Headers header.
-     *
-     * @var string[]
-     */
-    public $allowHeaders;
-    /**
-     * Specifies the content for the Access-Control-Allow-Methods header.
-     *
-     * @var string[]
-     */
-    public $allowMethods;
-    /**
-     * Specifies a regular expression that matches allowed origins. For more
-     * information, see regular expression syntax.
-     *
-     * An origin is allowed if it matches either an item inallowOrigins or an item
-     * inallowOriginRegexes.
-     *
-     * Regular expressions can only be used when the loadBalancingScheme is set to
-     * INTERNAL_SELF_MANAGED.
-     *
-     * @var string[]
-     */
-    public $allowOriginRegexes;
-    /**
-     * Specifies the list of origins that is allowed to do CORS requests.
-     *
-     * An origin is allowed if it matches either an item inallowOrigins or an item
-     * inallowOriginRegexes.
-     *
-     * @var string[]
-     */
-    public $allowOrigins;
-    /**
-     * If true, disables the CORS policy. The default value is false, which
-     * indicates that the CORS policy is in effect.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Specifies the content for the Access-Control-Expose-Headers header.
-     *
-     * @var string[]
-     */
-    public $exposeHeaders;
-    /**
-     * Specifies how long results of a preflight request can be cached in seconds.
-     * This field translates to the Access-Control-Max-Age header.
-     *
-     * @var int
-     */
-    public $maxAge;
-    /**
-     * In response to a preflight request, setting this to true indicates that the
-     * actual request can include user credentials. This field translates to the
-     * Access-Control-Allow-Credentials header.
-     *
-     * Default is false.
-     *
-     * @param bool $allowCredentials
-     */
-    public function setAllowCredentials($allowCredentials)
+namespace Google\Service\Compute {
+    class CorsPolicy extends \Google\Collection
     {
+        protected $collection_key = 'exposeHeaders';
+        /**
+         * In response to a preflight request, setting this to true indicates that the
+         * actual request can include user credentials. This field translates to the
+         * Access-Control-Allow-Credentials header.
+         *
+         * Default is false.
+         *
+         * @var bool
+         */
+        public $allowCredentials;
+        /**
+         * Specifies the content for the Access-Control-Allow-Headers header.
+         *
+         * @var string[]
+         */
+        public $allowHeaders;
+        /**
+         * Specifies the content for the Access-Control-Allow-Methods header.
+         *
+         * @var string[]
+         */
+        public $allowMethods;
+        /**
+         * Specifies a regular expression that matches allowed origins. For more
+         * information, see regular expression syntax.
+         *
+         * An origin is allowed if it matches either an item inallowOrigins or an item
+         * inallowOriginRegexes.
+         *
+         * Regular expressions can only be used when the loadBalancingScheme is set to
+         * INTERNAL_SELF_MANAGED.
+         *
+         * @var string[]
+         */
+        public $allowOriginRegexes;
+        /**
+         * Specifies the list of origins that is allowed to do CORS requests.
+         *
+         * An origin is allowed if it matches either an item inallowOrigins or an item
+         * inallowOriginRegexes.
+         *
+         * @var string[]
+         */
+        public $allowOrigins;
+        /**
+         * If true, disables the CORS policy. The default value is false, which
+         * indicates that the CORS policy is in effect.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Specifies the content for the Access-Control-Expose-Headers header.
+         *
+         * @var string[]
+         */
+        public $exposeHeaders;
+        /**
+         * Specifies how long results of a preflight request can be cached in seconds.
+         * This field translates to the Access-Control-Max-Age header.
+         *
+         * @var int
+         */
+        public $maxAge;
+        /**
+         * In response to a preflight request, setting this to true indicates that the
+         * actual request can include user credentials. This field translates to the
+         * Access-Control-Allow-Credentials header.
+         *
+         * Default is false.
+         *
+         * @param bool $allowCredentials
+         */
+        public function setAllowCredentials($allowCredentials)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowCredentials()
+        {
+        }
+        /**
+         * Specifies the content for the Access-Control-Allow-Headers header.
+         *
+         * @param string[] $allowHeaders
+         */
+        public function setAllowHeaders($allowHeaders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowHeaders()
+        {
+        }
+        /**
+         * Specifies the content for the Access-Control-Allow-Methods header.
+         *
+         * @param string[] $allowMethods
+         */
+        public function setAllowMethods($allowMethods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowMethods()
+        {
+        }
+        /**
+         * Specifies a regular expression that matches allowed origins. For more
+         * information, see regular expression syntax.
+         *
+         * An origin is allowed if it matches either an item inallowOrigins or an item
+         * inallowOriginRegexes.
+         *
+         * Regular expressions can only be used when the loadBalancingScheme is set to
+         * INTERNAL_SELF_MANAGED.
+         *
+         * @param string[] $allowOriginRegexes
+         */
+        public function setAllowOriginRegexes($allowOriginRegexes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowOriginRegexes()
+        {
+        }
+        /**
+         * Specifies the list of origins that is allowed to do CORS requests.
+         *
+         * An origin is allowed if it matches either an item inallowOrigins or an item
+         * inallowOriginRegexes.
+         *
+         * @param string[] $allowOrigins
+         */
+        public function setAllowOrigins($allowOrigins)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowOrigins()
+        {
+        }
+        /**
+         * If true, disables the CORS policy. The default value is false, which
+         * indicates that the CORS policy is in effect.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Specifies the content for the Access-Control-Expose-Headers header.
+         *
+         * @param string[] $exposeHeaders
+         */
+        public function setExposeHeaders($exposeHeaders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExposeHeaders()
+        {
+        }
+        /**
+         * Specifies how long results of a preflight request can be cached in seconds.
+         * This field translates to the Access-Control-Max-Age header.
+         *
+         * @param int $maxAge
+         */
+        public function setMaxAge($maxAge)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxAge()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\CorsPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowCredentials()
-    {
-    }
-    /**
-     * Specifies the content for the Access-Control-Allow-Headers header.
-     *
-     * @param string[] $allowHeaders
-     */
-    public function setAllowHeaders($allowHeaders)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowHeaders()
-    {
-    }
-    /**
-     * Specifies the content for the Access-Control-Allow-Methods header.
-     *
-     * @param string[] $allowMethods
-     */
-    public function setAllowMethods($allowMethods)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowMethods()
-    {
-    }
-    /**
-     * Specifies a regular expression that matches allowed origins. For more
-     * information, see regular expression syntax.
-     *
-     * An origin is allowed if it matches either an item inallowOrigins or an item
-     * inallowOriginRegexes.
-     *
-     * Regular expressions can only be used when the loadBalancingScheme is set to
-     * INTERNAL_SELF_MANAGED.
-     *
-     * @param string[] $allowOriginRegexes
-     */
-    public function setAllowOriginRegexes($allowOriginRegexes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowOriginRegexes()
-    {
-    }
-    /**
-     * Specifies the list of origins that is allowed to do CORS requests.
-     *
-     * An origin is allowed if it matches either an item inallowOrigins or an item
-     * inallowOriginRegexes.
-     *
-     * @param string[] $allowOrigins
-     */
-    public function setAllowOrigins($allowOrigins)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowOrigins()
-    {
-    }
-    /**
-     * If true, disables the CORS policy. The default value is false, which
-     * indicates that the CORS policy is in effect.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Specifies the content for the Access-Control-Expose-Headers header.
-     *
-     * @param string[] $exposeHeaders
-     */
-    public function setExposeHeaders($exposeHeaders)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExposeHeaders()
-    {
-    }
-    /**
-     * Specifies how long results of a preflight request can be cached in seconds.
-     * This field translates to the Access-Control-Max-Age header.
-     *
-     * @param int $maxAge
-     */
-    public function setMaxAge($maxAge)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxAge()
+    class Google_Service_Compute_CorsPolicy extends \Google\Service\Compute\CorsPolicy
     {
     }
 }

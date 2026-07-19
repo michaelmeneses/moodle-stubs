@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalOrganization extends \Google\Model
-{
-    /**
-     * Name of organization
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Id of organization
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of organization
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Sasportal {
+    class SasPortalOrganization extends \Google\Model
     {
+        /**
+         * Name of organization
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Id of organization
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of organization
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Id of organization
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalOrganization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Id of organization
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Sasportal_SasPortalOrganization extends \Google\Service\Sasportal\SasPortalOrganization
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class AnalyzePrivacyPolicyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $privacyPolicyPageContent;
-    /**
-     * @var string
-     */
-    public $privacyPolicyUri;
-    /**
-     * @param string
-     */
-    public function setPrivacyPolicyPageContent($privacyPolicyPageContent)
+namespace Google\Service\ChecksService {
+    class AnalyzePrivacyPolicyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $privacyPolicyPageContent;
+        /**
+         * @var string
+         */
+        public $privacyPolicyUri;
+        /**
+         * @param string
+         */
+        public function setPrivacyPolicyPageContent($privacyPolicyPageContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivacyPolicyPageContent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivacyPolicyUri($privacyPolicyUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivacyPolicyUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\AnalyzePrivacyPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivacyPolicyPageContent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivacyPolicyUri($privacyPolicyUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivacyPolicyUri()
+    class Google_Service_ChecksService_AnalyzePrivacyPolicyRequest extends \Google\Service\ChecksService\AnalyzePrivacyPolicyRequest
     {
     }
 }

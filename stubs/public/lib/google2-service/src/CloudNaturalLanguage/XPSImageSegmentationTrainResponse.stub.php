@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageSegmentationTrainResponse extends \Google\Collection
-{
-    public const STOP_REASON_TRAIN_STOP_REASON_UNSPECIFIED = 'TRAIN_STOP_REASON_UNSPECIFIED';
-    public const STOP_REASON_TRAIN_STOP_REASON_BUDGET_REACHED = 'TRAIN_STOP_REASON_BUDGET_REACHED';
-    /**
-     * Model fully converged, can not be resumbed training.
-     */
-    public const STOP_REASON_TRAIN_STOP_REASON_MODEL_CONVERGED = 'TRAIN_STOP_REASON_MODEL_CONVERGED';
-    /**
-     * Model early converged, can be further trained till full convergency.
-     */
-    public const STOP_REASON_TRAIN_STOP_REASON_MODEL_EARLY_STOPPED = 'TRAIN_STOP_REASON_MODEL_EARLY_STOPPED';
-    protected $collection_key = 'colorMaps';
-    protected $colorMapsType = XPSColorMap::class;
-    protected $colorMapsDataType = 'array';
-    protected $exportModelSpecType = XPSImageExportModelSpec::class;
-    protected $exportModelSpecDataType = '';
-    protected $modelArtifactSpecType = XPSImageModelArtifactSpec::class;
-    protected $modelArtifactSpecDataType = '';
-    protected $modelServingSpecType = XPSImageModelServingSpec::class;
-    protected $modelServingSpecDataType = '';
-    /**
-     * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
-     * 'MODEL_CONVERGED'.
-     *
-     * @var string
-     */
-    public $stopReason;
-    /**
-     * The actual train cost of creating this model, expressed in node seconds,
-     * i.e. 3,600 value in this field means 1 node hour.
-     *
-     * @var string
-     */
-    public $trainCostNodeSeconds;
-    /**
-     * Color map of the model.
-     *
-     * @param XPSColorMap[] $colorMaps
-     */
-    public function setColorMaps($colorMaps)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageSegmentationTrainResponse extends \Google\Collection
     {
+        public const STOP_REASON_TRAIN_STOP_REASON_UNSPECIFIED = 'TRAIN_STOP_REASON_UNSPECIFIED';
+        public const STOP_REASON_TRAIN_STOP_REASON_BUDGET_REACHED = 'TRAIN_STOP_REASON_BUDGET_REACHED';
+        /**
+         * Model fully converged, can not be resumbed training.
+         */
+        public const STOP_REASON_TRAIN_STOP_REASON_MODEL_CONVERGED = 'TRAIN_STOP_REASON_MODEL_CONVERGED';
+        /**
+         * Model early converged, can be further trained till full convergency.
+         */
+        public const STOP_REASON_TRAIN_STOP_REASON_MODEL_EARLY_STOPPED = 'TRAIN_STOP_REASON_MODEL_EARLY_STOPPED';
+        protected $collection_key = 'colorMaps';
+        protected $colorMapsType = XPSColorMap::class;
+        protected $colorMapsDataType = 'array';
+        protected $exportModelSpecType = XPSImageExportModelSpec::class;
+        protected $exportModelSpecDataType = '';
+        protected $modelArtifactSpecType = XPSImageModelArtifactSpec::class;
+        protected $modelArtifactSpecDataType = '';
+        protected $modelServingSpecType = XPSImageModelServingSpec::class;
+        protected $modelServingSpecDataType = '';
+        /**
+         * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
+         * 'MODEL_CONVERGED'.
+         *
+         * @var string
+         */
+        public $stopReason;
+        /**
+         * The actual train cost of creating this model, expressed in node seconds,
+         * i.e. 3,600 value in this field means 1 node hour.
+         *
+         * @var string
+         */
+        public $trainCostNodeSeconds;
+        /**
+         * Color map of the model.
+         *
+         * @param XPSColorMap[] $colorMaps
+         */
+        public function setColorMaps($colorMaps)
+        {
+        }
+        /**
+         * @return XPSColorMap[]
+         */
+        public function getColorMaps()
+        {
+        }
+        /**
+         * NOTE: These fields are not used/needed in EAP but will be set later.
+         *
+         * @param XPSImageExportModelSpec $exportModelSpec
+         */
+        public function setExportModelSpec(XPSImageExportModelSpec $exportModelSpec)
+        {
+        }
+        /**
+         * @return XPSImageExportModelSpec
+         */
+        public function getExportModelSpec()
+        {
+        }
+        /**
+         * ## The fields below are only populated under uCAIP request scope. Model
+         * artifact spec stores and model gcs pathes and related metadata
+         *
+         * @param XPSImageModelArtifactSpec $modelArtifactSpec
+         */
+        public function setModelArtifactSpec(XPSImageModelArtifactSpec $modelArtifactSpec)
+        {
+        }
+        /**
+         * @return XPSImageModelArtifactSpec
+         */
+        public function getModelArtifactSpec()
+        {
+        }
+        /**
+         * @param XPSImageModelServingSpec $modelServingSpec
+         */
+        public function setModelServingSpec(XPSImageModelServingSpec $modelServingSpec)
+        {
+        }
+        /**
+         * @return XPSImageModelServingSpec
+         */
+        public function getModelServingSpec()
+        {
+        }
+        /**
+         * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
+         * 'MODEL_CONVERGED'.
+         *
+         * Accepted values: TRAIN_STOP_REASON_UNSPECIFIED,
+         * TRAIN_STOP_REASON_BUDGET_REACHED, TRAIN_STOP_REASON_MODEL_CONVERGED,
+         * TRAIN_STOP_REASON_MODEL_EARLY_STOPPED
+         *
+         * @param self::STOP_REASON_* $stopReason
+         */
+        public function setStopReason($stopReason)
+        {
+        }
+        /**
+         * @return self::STOP_REASON_*
+         */
+        public function getStopReason()
+        {
+        }
+        /**
+         * The actual train cost of creating this model, expressed in node seconds,
+         * i.e. 3,600 value in this field means 1 node hour.
+         *
+         * @param string $trainCostNodeSeconds
+         */
+        public function setTrainCostNodeSeconds($trainCostNodeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostNodeSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSColorMap[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageSegmentationTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColorMaps()
-    {
-    }
-    /**
-     * NOTE: These fields are not used/needed in EAP but will be set later.
-     *
-     * @param XPSImageExportModelSpec $exportModelSpec
-     */
-    public function setExportModelSpec(XPSImageExportModelSpec $exportModelSpec)
-    {
-    }
-    /**
-     * @return XPSImageExportModelSpec
-     */
-    public function getExportModelSpec()
-    {
-    }
-    /**
-     * ## The fields below are only populated under uCAIP request scope. Model
-     * artifact spec stores and model gcs pathes and related metadata
-     *
-     * @param XPSImageModelArtifactSpec $modelArtifactSpec
-     */
-    public function setModelArtifactSpec(XPSImageModelArtifactSpec $modelArtifactSpec)
-    {
-    }
-    /**
-     * @return XPSImageModelArtifactSpec
-     */
-    public function getModelArtifactSpec()
-    {
-    }
-    /**
-     * @param XPSImageModelServingSpec $modelServingSpec
-     */
-    public function setModelServingSpec(XPSImageModelServingSpec $modelServingSpec)
-    {
-    }
-    /**
-     * @return XPSImageModelServingSpec
-     */
-    public function getModelServingSpec()
-    {
-    }
-    /**
-     * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
-     * 'MODEL_CONVERGED'.
-     *
-     * Accepted values: TRAIN_STOP_REASON_UNSPECIFIED,
-     * TRAIN_STOP_REASON_BUDGET_REACHED, TRAIN_STOP_REASON_MODEL_CONVERGED,
-     * TRAIN_STOP_REASON_MODEL_EARLY_STOPPED
-     *
-     * @param self::STOP_REASON_* $stopReason
-     */
-    public function setStopReason($stopReason)
-    {
-    }
-    /**
-     * @return self::STOP_REASON_*
-     */
-    public function getStopReason()
-    {
-    }
-    /**
-     * The actual train cost of creating this model, expressed in node seconds,
-     * i.e. 3,600 value in this field means 1 node hour.
-     *
-     * @param string $trainCostNodeSeconds
-     */
-    public function setTrainCostNodeSeconds($trainCostNodeSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostNodeSeconds()
+    class Google_Service_CloudNaturalLanguage_XPSImageSegmentationTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSImageSegmentationTrainResponse
     {
     }
 }

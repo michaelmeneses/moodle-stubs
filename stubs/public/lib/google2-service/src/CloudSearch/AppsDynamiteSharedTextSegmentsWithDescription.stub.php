@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedTextSegmentsWithDescription extends \Google\Collection
-{
-    protected $collection_key = 'textSegment';
-    /**
-     * @var string
-     */
-    public $descriptionType;
-    protected $textSegmentType = AppsDynamiteSharedTextSegment::class;
-    protected $textSegmentDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setDescriptionType($descriptionType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedTextSegmentsWithDescription extends \Google\Collection
     {
+        protected $collection_key = 'textSegment';
+        /**
+         * @var string
+         */
+        public $descriptionType;
+        protected $textSegmentType = AppsDynamiteSharedTextSegment::class;
+        protected $textSegmentDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setDescriptionType($descriptionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescriptionType()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTextSegment[]
+         */
+        public function setTextSegment($textSegment)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTextSegment[]
+         */
+        public function getTextSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedTextSegmentsWithDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescriptionType()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTextSegment[]
-     */
-    public function setTextSegment($textSegment)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTextSegment[]
-     */
-    public function getTextSegment()
+    class Google_Service_CloudSearch_AppsDynamiteSharedTextSegmentsWithDescription extends \Google\Service\CloudSearch\AppsDynamiteSharedTextSegmentsWithDescription
     {
     }
 }

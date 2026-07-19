@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ModifyLinkedOfferObjectsRequest extends \Google\Model
-{
-    protected $linkedOfferObjectIdsType = ModifyLinkedOfferObjects::class;
-    protected $linkedOfferObjectIdsDataType = '';
-    /**
-     * The linked offer object ids to add or remove from the object.
-     *
-     * @param ModifyLinkedOfferObjects $linkedOfferObjectIds
-     */
-    public function setLinkedOfferObjectIds(ModifyLinkedOfferObjects $linkedOfferObjectIds)
+namespace Google\Service\Walletobjects {
+    class ModifyLinkedOfferObjectsRequest extends \Google\Model
     {
+        protected $linkedOfferObjectIdsType = ModifyLinkedOfferObjects::class;
+        protected $linkedOfferObjectIdsDataType = '';
+        /**
+         * The linked offer object ids to add or remove from the object.
+         *
+         * @param ModifyLinkedOfferObjects $linkedOfferObjectIds
+         */
+        public function setLinkedOfferObjectIds(ModifyLinkedOfferObjects $linkedOfferObjectIds)
+        {
+        }
+        /**
+         * @return ModifyLinkedOfferObjects
+         */
+        public function getLinkedOfferObjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ModifyLinkedOfferObjects
+     * Runtime class alias of \Google\Service\Walletobjects\ModifyLinkedOfferObjectsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedOfferObjectIds()
+    class Google_Service_Walletobjects_ModifyLinkedOfferObjectsRequest extends \Google\Service\Walletobjects\ModifyLinkedOfferObjectsRequest
     {
     }
 }

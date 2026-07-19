@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigqueryconnectionService = new Google\Service\BigQueryConnectionService(...);
- *   $projects = $bigqueryconnectionService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryConnectionService\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigqueryconnectionService = new Google\Service\BigQueryConnectionService(...);
+     *   $projects = $bigqueryconnectionService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigQueryConnectionService_Resource_Projects extends \Google\Service\BigQueryConnectionService\Resource\Projects
+    {
+    }
 }

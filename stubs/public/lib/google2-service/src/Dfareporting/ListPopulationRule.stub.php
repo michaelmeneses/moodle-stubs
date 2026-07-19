@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ListPopulationRule extends \Google\Collection
-{
-    protected $collection_key = 'listPopulationClauses';
-    /**
-     * Floodlight activity ID associated with this rule. This field can be left
-     * blank.
-     *
-     * @var string
-     */
-    public $floodlightActivityId;
-    /**
-     * Name of floodlight activity associated with this rule. This is a read-only,
-     * auto-generated field.
-     *
-     * @var string
-     */
-    public $floodlightActivityName;
-    protected $listPopulationClausesType = ListPopulationClause::class;
-    protected $listPopulationClausesDataType = 'array';
-    /**
-     * Floodlight activity ID associated with this rule. This field can be left
-     * blank.
-     *
-     * @param string $floodlightActivityId
-     */
-    public function setFloodlightActivityId($floodlightActivityId)
+namespace Google\Service\Dfareporting {
+    class ListPopulationRule extends \Google\Collection
     {
+        protected $collection_key = 'listPopulationClauses';
+        /**
+         * Floodlight activity ID associated with this rule. This field can be left
+         * blank.
+         *
+         * @var string
+         */
+        public $floodlightActivityId;
+        /**
+         * Name of floodlight activity associated with this rule. This is a read-only,
+         * auto-generated field.
+         *
+         * @var string
+         */
+        public $floodlightActivityName;
+        protected $listPopulationClausesType = ListPopulationClause::class;
+        protected $listPopulationClausesDataType = 'array';
+        /**
+         * Floodlight activity ID associated with this rule. This field can be left
+         * blank.
+         *
+         * @param string $floodlightActivityId
+         */
+        public function setFloodlightActivityId($floodlightActivityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloodlightActivityId()
+        {
+        }
+        /**
+         * Name of floodlight activity associated with this rule. This is a read-only,
+         * auto-generated field.
+         *
+         * @param string $floodlightActivityName
+         */
+        public function setFloodlightActivityName($floodlightActivityName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloodlightActivityName()
+        {
+        }
+        /**
+         * Clauses that make up this list population rule. Clauses are joined by ANDs,
+         * and the clauses themselves are made up of list population terms which are
+         * joined by ORs.
+         *
+         * @param ListPopulationClause[] $listPopulationClauses
+         */
+        public function setListPopulationClauses($listPopulationClauses)
+        {
+        }
+        /**
+         * @return ListPopulationClause[]
+         */
+        public function getListPopulationClauses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ListPopulationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightActivityId()
-    {
-    }
-    /**
-     * Name of floodlight activity associated with this rule. This is a read-only,
-     * auto-generated field.
-     *
-     * @param string $floodlightActivityName
-     */
-    public function setFloodlightActivityName($floodlightActivityName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloodlightActivityName()
-    {
-    }
-    /**
-     * Clauses that make up this list population rule. Clauses are joined by ANDs,
-     * and the clauses themselves are made up of list population terms which are
-     * joined by ORs.
-     *
-     * @param ListPopulationClause[] $listPopulationClauses
-     */
-    public function setListPopulationClauses($listPopulationClauses)
-    {
-    }
-    /**
-     * @return ListPopulationClause[]
-     */
-    public function getListPopulationClauses()
+    class Google_Service_Dfareporting_ListPopulationRule extends \Google\Service\Dfareporting\ListPopulationRule
     {
     }
 }

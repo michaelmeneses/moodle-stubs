@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductAvailabilityChangeEvent extends \Google\Model
-{
-    /**
-     * Conveys no information.
-     */
-    public const AVAILABILITY_STATUS_unknown = 'unknown';
-    /**
-     * The previously unavailable product is again available on Google Play.
-     */
-    public const AVAILABILITY_STATUS_available = 'available';
-    /**
-     * The product was removed from Google Play.
-     */
-    public const AVAILABILITY_STATUS_removed = 'removed';
-    /**
-     * The product was unpublished by the developer.
-     */
-    public const AVAILABILITY_STATUS_unpublished = 'unpublished';
-    /**
-     * The new state of the product. This field will always be present.
-     *
-     * @var string
-     */
-    public $availabilityStatus;
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the
-     * product availability changed. This field will always be present.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The new state of the product. This field will always be present.
-     *
-     * Accepted values: unknown, available, removed, unpublished
-     *
-     * @param self::AVAILABILITY_STATUS_* $availabilityStatus
-     */
-    public function setAvailabilityStatus($availabilityStatus)
+namespace Google\Service\AndroidEnterprise {
+    class ProductAvailabilityChangeEvent extends \Google\Model
     {
+        /**
+         * Conveys no information.
+         */
+        public const AVAILABILITY_STATUS_unknown = 'unknown';
+        /**
+         * The previously unavailable product is again available on Google Play.
+         */
+        public const AVAILABILITY_STATUS_available = 'available';
+        /**
+         * The product was removed from Google Play.
+         */
+        public const AVAILABILITY_STATUS_removed = 'removed';
+        /**
+         * The product was unpublished by the developer.
+         */
+        public const AVAILABILITY_STATUS_unpublished = 'unpublished';
+        /**
+         * The new state of the product. This field will always be present.
+         *
+         * @var string
+         */
+        public $availabilityStatus;
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the
+         * product availability changed. This field will always be present.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The new state of the product. This field will always be present.
+         *
+         * Accepted values: unknown, available, removed, unpublished
+         *
+         * @param self::AVAILABILITY_STATUS_* $availabilityStatus
+         */
+        public function setAvailabilityStatus($availabilityStatus)
+        {
+        }
+        /**
+         * @return self::AVAILABILITY_STATUS_*
+         */
+        public function getAvailabilityStatus()
+        {
+        }
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the
+         * product availability changed. This field will always be present.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AVAILABILITY_STATUS_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductAvailabilityChangeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilityStatus()
-    {
-    }
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the
-     * product availability changed. This field will always be present.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_ProductAvailabilityChangeEvent extends \Google\Service\AndroidEnterprise\ProductAvailabilityChangeEvent
     {
     }
 }

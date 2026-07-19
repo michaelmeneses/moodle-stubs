@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ExecutorMetricsDistributions extends \Google\Collection
-{
-    protected $collection_key = 'taskTimeMillis';
-    public $diskBytesSpilled;
-    public $failedTasks;
-    public $inputBytes;
-    public $inputRecords;
-    public $killedTasks;
-    public $memoryBytesSpilled;
-    public $outputBytes;
-    public $outputRecords;
-    protected $peakMemoryMetricsType = ExecutorPeakMetricsDistributions::class;
-    protected $peakMemoryMetricsDataType = '';
-    public $quantiles;
-    public $shuffleRead;
-    public $shuffleReadRecords;
-    public $shuffleWrite;
-    public $shuffleWriteRecords;
-    public $succeededTasks;
-    public $taskTimeMillis;
-    public function setDiskBytesSpilled($diskBytesSpilled)
+namespace Google\Service\Dataproc {
+    class ExecutorMetricsDistributions extends \Google\Collection
     {
+        protected $collection_key = 'taskTimeMillis';
+        public $diskBytesSpilled;
+        public $failedTasks;
+        public $inputBytes;
+        public $inputRecords;
+        public $killedTasks;
+        public $memoryBytesSpilled;
+        public $outputBytes;
+        public $outputRecords;
+        protected $peakMemoryMetricsType = ExecutorPeakMetricsDistributions::class;
+        protected $peakMemoryMetricsDataType = '';
+        public $quantiles;
+        public $shuffleRead;
+        public $shuffleReadRecords;
+        public $shuffleWrite;
+        public $shuffleWriteRecords;
+        public $succeededTasks;
+        public $taskTimeMillis;
+        public function setDiskBytesSpilled($diskBytesSpilled)
+        {
+        }
+        public function getDiskBytesSpilled()
+        {
+        }
+        public function setFailedTasks($failedTasks)
+        {
+        }
+        public function getFailedTasks()
+        {
+        }
+        public function setInputBytes($inputBytes)
+        {
+        }
+        public function getInputBytes()
+        {
+        }
+        public function setInputRecords($inputRecords)
+        {
+        }
+        public function getInputRecords()
+        {
+        }
+        public function setKilledTasks($killedTasks)
+        {
+        }
+        public function getKilledTasks()
+        {
+        }
+        public function setMemoryBytesSpilled($memoryBytesSpilled)
+        {
+        }
+        public function getMemoryBytesSpilled()
+        {
+        }
+        public function setOutputBytes($outputBytes)
+        {
+        }
+        public function getOutputBytes()
+        {
+        }
+        public function setOutputRecords($outputRecords)
+        {
+        }
+        public function getOutputRecords()
+        {
+        }
+        /**
+         * @param ExecutorPeakMetricsDistributions $peakMemoryMetrics
+         */
+        public function setPeakMemoryMetrics(ExecutorPeakMetricsDistributions $peakMemoryMetrics)
+        {
+        }
+        /**
+         * @return ExecutorPeakMetricsDistributions
+         */
+        public function getPeakMemoryMetrics()
+        {
+        }
+        public function setQuantiles($quantiles)
+        {
+        }
+        public function getQuantiles()
+        {
+        }
+        public function setShuffleRead($shuffleRead)
+        {
+        }
+        public function getShuffleRead()
+        {
+        }
+        public function setShuffleReadRecords($shuffleReadRecords)
+        {
+        }
+        public function getShuffleReadRecords()
+        {
+        }
+        public function setShuffleWrite($shuffleWrite)
+        {
+        }
+        public function getShuffleWrite()
+        {
+        }
+        public function setShuffleWriteRecords($shuffleWriteRecords)
+        {
+        }
+        public function getShuffleWriteRecords()
+        {
+        }
+        public function setSucceededTasks($succeededTasks)
+        {
+        }
+        public function getSucceededTasks()
+        {
+        }
+        public function setTaskTimeMillis($taskTimeMillis)
+        {
+        }
+        public function getTaskTimeMillis()
+        {
+        }
     }
-    public function getDiskBytesSpilled()
-    {
-    }
-    public function setFailedTasks($failedTasks)
-    {
-    }
-    public function getFailedTasks()
-    {
-    }
-    public function setInputBytes($inputBytes)
-    {
-    }
-    public function getInputBytes()
-    {
-    }
-    public function setInputRecords($inputRecords)
-    {
-    }
-    public function getInputRecords()
-    {
-    }
-    public function setKilledTasks($killedTasks)
-    {
-    }
-    public function getKilledTasks()
-    {
-    }
-    public function setMemoryBytesSpilled($memoryBytesSpilled)
-    {
-    }
-    public function getMemoryBytesSpilled()
-    {
-    }
-    public function setOutputBytes($outputBytes)
-    {
-    }
-    public function getOutputBytes()
-    {
-    }
-    public function setOutputRecords($outputRecords)
-    {
-    }
-    public function getOutputRecords()
-    {
-    }
+}
+namespace {
     /**
-     * @param ExecutorPeakMetricsDistributions $peakMemoryMetrics
+     * Runtime class alias of \Google\Service\Dataproc\ExecutorMetricsDistributions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPeakMemoryMetrics(ExecutorPeakMetricsDistributions $peakMemoryMetrics)
-    {
-    }
-    /**
-     * @return ExecutorPeakMetricsDistributions
-     */
-    public function getPeakMemoryMetrics()
-    {
-    }
-    public function setQuantiles($quantiles)
-    {
-    }
-    public function getQuantiles()
-    {
-    }
-    public function setShuffleRead($shuffleRead)
-    {
-    }
-    public function getShuffleRead()
-    {
-    }
-    public function setShuffleReadRecords($shuffleReadRecords)
-    {
-    }
-    public function getShuffleReadRecords()
-    {
-    }
-    public function setShuffleWrite($shuffleWrite)
-    {
-    }
-    public function getShuffleWrite()
-    {
-    }
-    public function setShuffleWriteRecords($shuffleWriteRecords)
-    {
-    }
-    public function getShuffleWriteRecords()
-    {
-    }
-    public function setSucceededTasks($succeededTasks)
-    {
-    }
-    public function getSucceededTasks()
-    {
-    }
-    public function setTaskTimeMillis($taskTimeMillis)
-    {
-    }
-    public function getTaskTimeMillis()
+    class Google_Service_Dataproc_ExecutorMetricsDistributions extends \Google\Service\Dataproc\ExecutorMetricsDistributions
     {
     }
 }

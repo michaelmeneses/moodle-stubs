@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager\Resource;
-
-/**
- * The "rules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
- *   $rules = $workloadmanagerService->projects_locations_rules;
- *  </code>
- */
-class ProjectsLocationsRules extends \Google\Service\Resource
-{
+namespace Google\Service\WorkloadManager\Resource {
+    use Google\Service\WorkloadManager\ListRulesResponse;
     /**
-     * Lists rules in a given project. (rules.listProjectsLocationsRules)
-     *
-     * @param string $parent Required. The [project] on which to execute the
-     * request. The format is: projects/{project_id}/locations/{location} Currently,
-     * the pre-defined rules are global available to all projects and all regions
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string customRulesBucket The Cloud Storage bucket name for custom
-     * rules.
-     * @opt_param string evaluationType Optional. The evaluation type of the rules
-     * will be applied to. The Cloud Storage bucket name for custom rules.
-     * @opt_param string filter Filter based on primary_category, secondary_category
-     * @opt_param int pageSize Requested page size. Server may return fewer items
-     * than requested. If unspecified, server will pick an appropriate default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return.
-     * @return ListRulesResponse
-     * @throws \Google\Service\Exception
+     * The "rules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
+     *   $rules = $workloadmanagerService->projects_locations_rules;
+     *  </code>
      */
-    public function listProjectsLocationsRules($parent, $optParams = [])
+    class ProjectsLocationsRules extends \Google\Service\Resource
+    {
+        /**
+         * Lists rules in a given project. (rules.listProjectsLocationsRules)
+         *
+         * @param string $parent Required. The [project] on which to execute the
+         * request. The format is: projects/{project_id}/locations/{location} Currently,
+         * the pre-defined rules are global available to all projects and all regions
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string customRulesBucket The Cloud Storage bucket name for custom
+         * rules.
+         * @opt_param string evaluationType Optional. The evaluation type of the rules
+         * will be applied to. The Cloud Storage bucket name for custom rules.
+         * @opt_param string filter Filter based on primary_category, secondary_category
+         * @opt_param int pageSize Requested page size. Server may return fewer items
+         * than requested. If unspecified, server will pick an appropriate default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return.
+         * @return ListRulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRules($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkloadManager\Resource\ProjectsLocationsRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkloadManager_Resource_ProjectsLocationsRules extends \Google\Service\WorkloadManager\Resource\ProjectsLocationsRules
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1IndexConfigDelta extends \Google\Model
-{
-    /**
-     * The type of change is not specified or known.
-     */
-    public const CHANGE_TYPE_CHANGE_TYPE_UNSPECIFIED = 'CHANGE_TYPE_UNSPECIFIED';
-    /**
-     * The single field index is being added.
-     */
-    public const CHANGE_TYPE_ADD = 'ADD';
-    /**
-     * The single field index is being removed.
-     */
-    public const CHANGE_TYPE_REMOVE = 'REMOVE';
-    /**
-     * Specifies how the index is changing.
-     *
-     * @var string
-     */
-    public $changeType;
-    protected $indexType = GoogleFirestoreAdminV1Index::class;
-    protected $indexDataType = '';
-    /**
-     * Specifies how the index is changing.
-     *
-     * Accepted values: CHANGE_TYPE_UNSPECIFIED, ADD, REMOVE
-     *
-     * @param self::CHANGE_TYPE_* $changeType
-     */
-    public function setChangeType($changeType)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1IndexConfigDelta extends \Google\Model
     {
+        /**
+         * The type of change is not specified or known.
+         */
+        public const CHANGE_TYPE_CHANGE_TYPE_UNSPECIFIED = 'CHANGE_TYPE_UNSPECIFIED';
+        /**
+         * The single field index is being added.
+         */
+        public const CHANGE_TYPE_ADD = 'ADD';
+        /**
+         * The single field index is being removed.
+         */
+        public const CHANGE_TYPE_REMOVE = 'REMOVE';
+        /**
+         * Specifies how the index is changing.
+         *
+         * @var string
+         */
+        public $changeType;
+        protected $indexType = GoogleFirestoreAdminV1Index::class;
+        protected $indexDataType = '';
+        /**
+         * Specifies how the index is changing.
+         *
+         * Accepted values: CHANGE_TYPE_UNSPECIFIED, ADD, REMOVE
+         *
+         * @param self::CHANGE_TYPE_* $changeType
+         */
+        public function setChangeType($changeType)
+        {
+        }
+        /**
+         * @return self::CHANGE_TYPE_*
+         */
+        public function getChangeType()
+        {
+        }
+        /**
+         * The index being changed.
+         *
+         * @param GoogleFirestoreAdminV1Index $index
+         */
+        public function setIndex(GoogleFirestoreAdminV1Index $index)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1Index
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANGE_TYPE_*
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1IndexConfigDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeType()
-    {
-    }
-    /**
-     * The index being changed.
-     *
-     * @param GoogleFirestoreAdminV1Index $index
-     */
-    public function setIndex(GoogleFirestoreAdminV1Index $index)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1Index
-     */
-    public function getIndex()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1IndexConfigDelta extends \Google\Service\Firestore\GoogleFirestoreAdminV1IndexConfigDelta
     {
     }
 }

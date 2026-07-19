@@ -16,6 +16,8 @@
  */
 namespace Monolog\Formatter;
 
+use DateTimeInterface;
+use Monolog\LogRecord;
 /**
  * Format a log message into an Elasticsearch record
  *

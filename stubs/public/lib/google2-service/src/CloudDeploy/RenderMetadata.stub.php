@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RenderMetadata extends \Google\Model
-{
-    protected $cloudRunType = CloudRunRenderMetadata::class;
-    protected $cloudRunDataType = '';
-    protected $customType = CustomMetadata::class;
-    protected $customDataType = '';
-    /**
-     * Output only. Metadata associated with rendering for Cloud Run.
-     *
-     * @param CloudRunRenderMetadata $cloudRun
-     */
-    public function setCloudRun(CloudRunRenderMetadata $cloudRun)
+namespace Google\Service\CloudDeploy {
+    class RenderMetadata extends \Google\Model
     {
+        protected $cloudRunType = CloudRunRenderMetadata::class;
+        protected $cloudRunDataType = '';
+        protected $customType = CustomMetadata::class;
+        protected $customDataType = '';
+        /**
+         * Output only. Metadata associated with rendering for Cloud Run.
+         *
+         * @param CloudRunRenderMetadata $cloudRun
+         */
+        public function setCloudRun(CloudRunRenderMetadata $cloudRun)
+        {
+        }
+        /**
+         * @return CloudRunRenderMetadata
+         */
+        public function getCloudRun()
+        {
+        }
+        /**
+         * Output only. Custom metadata provided by user-defined render operation.
+         *
+         * @param CustomMetadata $custom
+         */
+        public function setCustom(CustomMetadata $custom)
+        {
+        }
+        /**
+         * @return CustomMetadata
+         */
+        public function getCustom()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudRunRenderMetadata
+     * Runtime class alias of \Google\Service\CloudDeploy\RenderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudRun()
-    {
-    }
-    /**
-     * Output only. Custom metadata provided by user-defined render operation.
-     *
-     * @param CustomMetadata $custom
-     */
-    public function setCustom(CustomMetadata $custom)
-    {
-    }
-    /**
-     * @return CustomMetadata
-     */
-    public function getCustom()
+    class Google_Service_CloudDeploy_RenderMetadata extends \Google\Service\CloudDeploy\RenderMetadata
     {
     }
 }

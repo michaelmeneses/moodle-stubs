@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchRequestBoostSpec extends \Google\Collection
-{
-    protected $collection_key = 'conditionBoostSpecs';
-    protected $conditionBoostSpecsType = GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec::class;
-    protected $conditionBoostSpecsDataType = 'array';
-    /**
-     * Whether to skip boostspec validation. If this field is set to true, invalid
-     * BoostSpec.condition_boost_specs will be ignored and valid
-     * BoostSpec.condition_boost_specs will still be applied.
-     *
-     * @var bool
-     */
-    public $skipBoostSpecValidation;
-    /**
-     * Condition boost specifications. If a product matches multiple conditions in
-     * the specifications, boost scores from these specifications are all applied
-     * and combined in a non-linear way. Maximum number of specifications is 20.
-     *
-     * @param GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec[] $conditionBoostSpecs
-     */
-    public function setConditionBoostSpecs($conditionBoostSpecs)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchRequestBoostSpec extends \Google\Collection
     {
+        protected $collection_key = 'conditionBoostSpecs';
+        protected $conditionBoostSpecsType = GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec::class;
+        protected $conditionBoostSpecsDataType = 'array';
+        /**
+         * Whether to skip boostspec validation. If this field is set to true, invalid
+         * BoostSpec.condition_boost_specs will be ignored and valid
+         * BoostSpec.condition_boost_specs will still be applied.
+         *
+         * @var bool
+         */
+        public $skipBoostSpecValidation;
+        /**
+         * Condition boost specifications. If a product matches multiple conditions in
+         * the specifications, boost scores from these specifications are all applied
+         * and combined in a non-linear way. Maximum number of specifications is 20.
+         *
+         * @param GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec[] $conditionBoostSpecs
+         */
+        public function setConditionBoostSpecs($conditionBoostSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec[]
+         */
+        public function getConditionBoostSpecs()
+        {
+        }
+        /**
+         * Whether to skip boostspec validation. If this field is set to true, invalid
+         * BoostSpec.condition_boost_specs will be ignored and valid
+         * BoostSpec.condition_boost_specs will still be applied.
+         *
+         * @param bool $skipBoostSpecValidation
+         */
+        public function setSkipBoostSpecValidation($skipBoostSpecValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipBoostSpecValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2SearchRequestBoostSpecConditionBoostSpec[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestBoostSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditionBoostSpecs()
-    {
-    }
-    /**
-     * Whether to skip boostspec validation. If this field is set to true, invalid
-     * BoostSpec.condition_boost_specs will be ignored and valid
-     * BoostSpec.condition_boost_specs will still be applied.
-     *
-     * @param bool $skipBoostSpecValidation
-     */
-    public function setSkipBoostSpecValidation($skipBoostSpecValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipBoostSpecValidation()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchRequestBoostSpec extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestBoostSpec
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Listing extends \Google\Model
-{
-    /**
-     * Full description of the app.
-     *
-     * @var string
-     */
-    public $fullDescription;
-    /**
-     * Language localization code (a BCP-47 language tag; for example, "de-AT" for
-     * Austrian German).
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * Short description of the app.
-     *
-     * @var string
-     */
-    public $shortDescription;
-    /**
-     * Localized title of the app.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL of a promotional YouTube video for the app.
-     *
-     * @var string
-     */
-    public $video;
-    /**
-     * Full description of the app.
-     *
-     * @param string $fullDescription
-     */
-    public function setFullDescription($fullDescription)
+namespace Google\Service\AndroidPublisher {
+    class Listing extends \Google\Model
     {
+        /**
+         * Full description of the app.
+         *
+         * @var string
+         */
+        public $fullDescription;
+        /**
+         * Language localization code (a BCP-47 language tag; for example, "de-AT" for
+         * Austrian German).
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * Short description of the app.
+         *
+         * @var string
+         */
+        public $shortDescription;
+        /**
+         * Localized title of the app.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL of a promotional YouTube video for the app.
+         *
+         * @var string
+         */
+        public $video;
+        /**
+         * Full description of the app.
+         *
+         * @param string $fullDescription
+         */
+        public function setFullDescription($fullDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullDescription()
+        {
+        }
+        /**
+         * Language localization code (a BCP-47 language tag; for example, "de-AT" for
+         * Austrian German).
+         *
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * Short description of the app.
+         *
+         * @param string $shortDescription
+         */
+        public function setShortDescription($shortDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortDescription()
+        {
+        }
+        /**
+         * Localized title of the app.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URL of a promotional YouTube video for the app.
+         *
+         * @param string $video
+         */
+        public function setVideo($video)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\Listing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullDescription()
-    {
-    }
-    /**
-     * Language localization code (a BCP-47 language tag; for example, "de-AT" for
-     * Austrian German).
-     *
-     * @param string $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * Short description of the app.
-     *
-     * @param string $shortDescription
-     */
-    public function setShortDescription($shortDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortDescription()
-    {
-    }
-    /**
-     * Localized title of the app.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URL of a promotional YouTube video for the app.
-     *
-     * @param string $video
-     */
-    public function setVideo($video)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideo()
+    class Google_Service_AndroidPublisher_Listing extends \Google\Service\AndroidPublisher\Listing
     {
     }
 }

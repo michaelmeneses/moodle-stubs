@@ -21,62 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "environments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $environments = $apigeeService->organizations_securityProfiles_environments;
- *  </code>
- */
-class OrganizationsSecurityProfilesEnvironments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation;
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * ComputeEnvironmentScores calculates scores for requested time range for the
-     * specified security profile and environment.
-     * (environments.computeEnvironmentScores)
-     *
-     * @param string $profileEnvironment Required. Name of organization and
-     * environment and profile id for which score needs to be computed. Format:
-     * organizations/{org}/securityProfiles/{profile}/environments/{env}
-     * @param GoogleCloudApigeeV1ComputeEnvironmentScoresRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ComputeEnvironmentScoresResponse
-     * @throws \Google\Service\Exception
+     * The "environments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $environments = $apigeeService->organizations_securityProfiles_environments;
+     *  </code>
      */
-    public function computeEnvironmentScores($profileEnvironment, GoogleCloudApigeeV1ComputeEnvironmentScoresRequest $postBody, $optParams = [])
+    class OrganizationsSecurityProfilesEnvironments extends \Google\Service\Resource
     {
+        /**
+         * ComputeEnvironmentScores calculates scores for requested time range for the
+         * specified security profile and environment.
+         * (environments.computeEnvironmentScores)
+         *
+         * @param string $profileEnvironment Required. Name of organization and
+         * environment and profile id for which score needs to be computed. Format:
+         * organizations/{org}/securityProfiles/{profile}/environments/{env}
+         * @param GoogleCloudApigeeV1ComputeEnvironmentScoresRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ComputeEnvironmentScoresResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeEnvironmentScores($profileEnvironment, GoogleCloudApigeeV1ComputeEnvironmentScoresRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * CreateSecurityProfileEnvironmentAssociation creates profile environment
+         * association i.e. attaches environment to security profile.
+         * (environments.create)
+         *
+         * @param string $parent Required. Name of organization and security profile ID.
+         * Format: organizations/{org}/securityProfiles/{profile}
+         * @param GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * DeleteSecurityProfileEnvironmentAssociation removes profile environment
+         * association i.e. detaches environment from security profile.
+         * (environments.delete)
+         *
+         * @param string $name Required. The name of the environment attachment to
+         * delete. Format:
+         * organizations/{org}/securityProfiles/{profile}/environments/{env}
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * CreateSecurityProfileEnvironmentAssociation creates profile environment
-     * association i.e. attaches environment to security profile.
-     * (environments.create)
-     *
-     * @param string $parent Required. Name of organization and security profile ID.
-     * Format: organizations/{org}/securityProfiles/{profile}
-     * @param GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsSecurityProfilesEnvironments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation $postBody, $optParams = [])
-    {
-    }
-    /**
-     * DeleteSecurityProfileEnvironmentAssociation removes profile environment
-     * association i.e. detaches environment from security profile.
-     * (environments.delete)
-     *
-     * @param string $name Required. The name of the environment attachment to
-     * delete. Format:
-     * organizations/{org}/securityProfiles/{profile}/environments/{env}
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsSecurityProfilesEnvironments extends \Google\Service\Apigee\Resource\OrganizationsSecurityProfilesEnvironments
     {
     }
 }

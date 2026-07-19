@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminAddonNodeConfig extends \Google\Model
-{
-    protected $autoResizeConfigType = VmwareAutoResizeConfig::class;
-    protected $autoResizeConfigDataType = '';
-    /**
-     * VmwareAutoResizeConfig config specifies auto resize config.
-     *
-     * @param VmwareAutoResizeConfig $autoResizeConfig
-     */
-    public function setAutoResizeConfig(VmwareAutoResizeConfig $autoResizeConfig)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminAddonNodeConfig extends \Google\Model
     {
+        protected $autoResizeConfigType = VmwareAutoResizeConfig::class;
+        protected $autoResizeConfigDataType = '';
+        /**
+         * VmwareAutoResizeConfig config specifies auto resize config.
+         *
+         * @param VmwareAutoResizeConfig $autoResizeConfig
+         */
+        public function setAutoResizeConfig(VmwareAutoResizeConfig $autoResizeConfig)
+        {
+        }
+        /**
+         * @return VmwareAutoResizeConfig
+         */
+        public function getAutoResizeConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareAutoResizeConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminAddonNodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoResizeConfig()
+    class Google_Service_GKEOnPrem_VmwareAdminAddonNodeConfig extends \Google\Service\GKEOnPrem\VmwareAdminAddonNodeConfig
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSSpeechEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'subModelEvaluationMetrics';
-    protected $subModelEvaluationMetricsType = XPSSpeechEvaluationMetricsSubModelEvaluationMetric::class;
-    protected $subModelEvaluationMetricsDataType = 'array';
-    /**
-     * Evaluation metrics for all submodels contained in this model.
-     *
-     * @param XPSSpeechEvaluationMetricsSubModelEvaluationMetric[] $subModelEvaluationMetrics
-     */
-    public function setSubModelEvaluationMetrics($subModelEvaluationMetrics)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSSpeechEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'subModelEvaluationMetrics';
+        protected $subModelEvaluationMetricsType = XPSSpeechEvaluationMetricsSubModelEvaluationMetric::class;
+        protected $subModelEvaluationMetricsDataType = 'array';
+        /**
+         * Evaluation metrics for all submodels contained in this model.
+         *
+         * @param XPSSpeechEvaluationMetricsSubModelEvaluationMetric[] $subModelEvaluationMetrics
+         */
+        public function setSubModelEvaluationMetrics($subModelEvaluationMetrics)
+        {
+        }
+        /**
+         * @return XPSSpeechEvaluationMetricsSubModelEvaluationMetric[]
+         */
+        public function getSubModelEvaluationMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSSpeechEvaluationMetricsSubModelEvaluationMetric[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSSpeechEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubModelEvaluationMetrics()
+    class Google_Service_CloudNaturalLanguage_XPSSpeechEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSSpeechEvaluationMetrics
     {
     }
 }

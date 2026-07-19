@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class QueryParameter extends \Google\Model
-{
-    /**
-     * Optional. If unset, this is a positional parameter. Otherwise, should be
-     * unique within a query.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parameterTypeType = QueryParameterType::class;
-    protected $parameterTypeDataType = '';
-    protected $parameterValueType = QueryParameterValue::class;
-    protected $parameterValueDataType = '';
-    /**
-     * Optional. If unset, this is a positional parameter. Otherwise, should be
-     * unique within a query.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Bigquery {
+    class QueryParameter extends \Google\Model
     {
+        /**
+         * Optional. If unset, this is a positional parameter. Otherwise, should be
+         * unique within a query.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parameterTypeType = QueryParameterType::class;
+        protected $parameterTypeDataType = '';
+        protected $parameterValueType = QueryParameterValue::class;
+        protected $parameterValueDataType = '';
+        /**
+         * Optional. If unset, this is a positional parameter. Otherwise, should be
+         * unique within a query.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The type of this parameter.
+         *
+         * @param QueryParameterType $parameterType
+         */
+        public function setParameterType(QueryParameterType $parameterType)
+        {
+        }
+        /**
+         * @return QueryParameterType
+         */
+        public function getParameterType()
+        {
+        }
+        /**
+         * Required. The value of this parameter.
+         *
+         * @param QueryParameterValue $parameterValue
+         */
+        public function setParameterValue(QueryParameterValue $parameterValue)
+        {
+        }
+        /**
+         * @return QueryParameterValue
+         */
+        public function getParameterValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\QueryParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The type of this parameter.
-     *
-     * @param QueryParameterType $parameterType
-     */
-    public function setParameterType(QueryParameterType $parameterType)
-    {
-    }
-    /**
-     * @return QueryParameterType
-     */
-    public function getParameterType()
-    {
-    }
-    /**
-     * Required. The value of this parameter.
-     *
-     * @param QueryParameterValue $parameterValue
-     */
-    public function setParameterValue(QueryParameterValue $parameterValue)
-    {
-    }
-    /**
-     * @return QueryParameterValue
-     */
-    public function getParameterValue()
+    class Google_Service_Bigquery_QueryParameter extends \Google\Service\Bigquery\QueryParameter
     {
     }
 }

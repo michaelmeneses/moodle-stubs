@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListCreativeStatusBreakdownByCreativeResponse extends \Google\Collection
-{
-    protected $collection_key = 'filteredBidCreativeRows';
-    protected $filteredBidCreativeRowsType = FilteredBidCreativeRow::class;
-    protected $filteredBidCreativeRowsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the
-     * subsequent call to the filteredBids.creatives.list method to retrieve the
-     * next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of rows, with counts of bids with a given creative status aggregated
-     * by creative.
-     *
-     * @param FilteredBidCreativeRow[] $filteredBidCreativeRows
-     */
-    public function setFilteredBidCreativeRows($filteredBidCreativeRows)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListCreativeStatusBreakdownByCreativeResponse extends \Google\Collection
     {
+        protected $collection_key = 'filteredBidCreativeRows';
+        protected $filteredBidCreativeRowsType = FilteredBidCreativeRow::class;
+        protected $filteredBidCreativeRowsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the
+         * subsequent call to the filteredBids.creatives.list method to retrieve the
+         * next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of rows, with counts of bids with a given creative status aggregated
+         * by creative.
+         *
+         * @param FilteredBidCreativeRow[] $filteredBidCreativeRows
+         */
+        public function setFilteredBidCreativeRows($filteredBidCreativeRows)
+        {
+        }
+        /**
+         * @return FilteredBidCreativeRow[]
+         */
+        public function getFilteredBidCreativeRows()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the
+         * subsequent call to the filteredBids.creatives.list method to retrieve the
+         * next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilteredBidCreativeRow[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListCreativeStatusBreakdownByCreativeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilteredBidCreativeRows()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the
-     * subsequent call to the filteredBids.creatives.list method to retrieve the
-     * next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListCreativeStatusBreakdownByCreativeResponse extends \Google\Service\AdExchangeBuyerII\ListCreativeStatusBreakdownByCreativeResponse
     {
     }
 }

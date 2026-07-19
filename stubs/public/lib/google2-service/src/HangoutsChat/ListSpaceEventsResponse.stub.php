@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ListSpaceEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'spaceEvents';
-    /**
-     * Continuation token used to fetch more events. If this field is omitted,
-     * there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $spaceEventsType = SpaceEvent::class;
-    protected $spaceEventsDataType = 'array';
-    /**
-     * Continuation token used to fetch more events. If this field is omitted,
-     * there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\HangoutsChat {
+    class ListSpaceEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'spaceEvents';
+        /**
+         * Continuation token used to fetch more events. If this field is omitted,
+         * there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $spaceEventsType = SpaceEvent::class;
+        protected $spaceEventsDataType = 'array';
+        /**
+         * Continuation token used to fetch more events. If this field is omitted,
+         * there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Results are returned in chronological order (oldest event first). Note: The
+         * `permissionSettings` field is not returned in the Space object for list
+         * requests.
+         *
+         * @param SpaceEvent[] $spaceEvents
+         */
+        public function setSpaceEvents($spaceEvents)
+        {
+        }
+        /**
+         * @return SpaceEvent[]
+         */
+        public function getSpaceEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\ListSpaceEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Results are returned in chronological order (oldest event first). Note: The
-     * `permissionSettings` field is not returned in the Space object for list
-     * requests.
-     *
-     * @param SpaceEvent[] $spaceEvents
-     */
-    public function setSpaceEvents($spaceEvents)
-    {
-    }
-    /**
-     * @return SpaceEvent[]
-     */
-    public function getSpaceEvents()
+    class Google_Service_HangoutsChat_ListSpaceEventsResponse extends \Google\Service\HangoutsChat\ListSpaceEventsResponse
     {
     }
 }

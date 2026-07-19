@@ -21,76 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Gmail (v1).
- *
- * <p>
- * The Gmail API lets you view and manage Gmail mailbox data like threads,
- * messages, and labels.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/gmail/api/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Gmail extends \Google\Service
-{
-    /** Read, compose, send, and permanently delete all your email from Gmail. */
-    const MAIL_GOOGLE_COM = "https://mail.google.com/";
-    /** Manage drafts and send emails when you interact with the add-on. */
-    const GMAIL_ADDONS_CURRENT_ACTION_COMPOSE = "https://www.googleapis.com/auth/gmail.addons.current.action.compose";
-    /** View your email messages when you interact with the add-on. */
-    const GMAIL_ADDONS_CURRENT_MESSAGE_ACTION = "https://www.googleapis.com/auth/gmail.addons.current.message.action";
-    /** View your email message metadata when the add-on is running. */
-    const GMAIL_ADDONS_CURRENT_MESSAGE_METADATA = "https://www.googleapis.com/auth/gmail.addons.current.message.metadata";
-    /** View your email messages when the add-on is running. */
-    const GMAIL_ADDONS_CURRENT_MESSAGE_READONLY = "https://www.googleapis.com/auth/gmail.addons.current.message.readonly";
-    /** Manage drafts and send emails. */
-    const GMAIL_COMPOSE = "https://www.googleapis.com/auth/gmail.compose";
-    /** Add emails into your Gmail mailbox. */
-    const GMAIL_INSERT = "https://www.googleapis.com/auth/gmail.insert";
-    /** See and edit your email labels. */
-    const GMAIL_LABELS = "https://www.googleapis.com/auth/gmail.labels";
-    /** View your email message metadata such as labels and headers, but not the email body. */
-    const GMAIL_METADATA = "https://www.googleapis.com/auth/gmail.metadata";
-    /** Read, compose, and send emails from your Gmail account. */
-    const GMAIL_MODIFY = "https://www.googleapis.com/auth/gmail.modify";
-    /** View your email messages and settings. */
-    const GMAIL_READONLY = "https://www.googleapis.com/auth/gmail.readonly";
-    /** Send email on your behalf. */
-    const GMAIL_SEND = "https://www.googleapis.com/auth/gmail.send";
-    /** See, edit, create, or change your email settings and filters in Gmail. */
-    const GMAIL_SETTINGS_BASIC = "https://www.googleapis.com/auth/gmail.settings.basic";
-    /** Manage your sensitive mail settings, including who can manage your mail. */
-    const GMAIL_SETTINGS_SHARING = "https://www.googleapis.com/auth/gmail.settings.sharing";
-    public $users;
-    public $users_drafts;
-    public $users_history;
-    public $users_labels;
-    public $users_messages;
-    public $users_messages_attachments;
-    public $users_settings;
-    public $users_settings_cse_identities;
-    public $users_settings_cse_keypairs;
-    public $users_settings_delegates;
-    public $users_settings_filters;
-    public $users_settings_forwardingAddresses;
-    public $users_settings_sendAs;
-    public $users_settings_sendAs_smimeInfo;
-    public $users_threads;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Gmail service.
+     * Service definition for Gmail (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Gmail API lets you view and manage Gmail mailbox data like threads,
+     * messages, and labels.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/gmail/api/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Gmail extends \Google\Service
+    {
+        /** Read, compose, send, and permanently delete all your email from Gmail. */
+        const MAIL_GOOGLE_COM = "https://mail.google.com/";
+        /** Manage drafts and send emails when you interact with the add-on. */
+        const GMAIL_ADDONS_CURRENT_ACTION_COMPOSE = "https://www.googleapis.com/auth/gmail.addons.current.action.compose";
+        /** View your email messages when you interact with the add-on. */
+        const GMAIL_ADDONS_CURRENT_MESSAGE_ACTION = "https://www.googleapis.com/auth/gmail.addons.current.message.action";
+        /** View your email message metadata when the add-on is running. */
+        const GMAIL_ADDONS_CURRENT_MESSAGE_METADATA = "https://www.googleapis.com/auth/gmail.addons.current.message.metadata";
+        /** View your email messages when the add-on is running. */
+        const GMAIL_ADDONS_CURRENT_MESSAGE_READONLY = "https://www.googleapis.com/auth/gmail.addons.current.message.readonly";
+        /** Manage drafts and send emails. */
+        const GMAIL_COMPOSE = "https://www.googleapis.com/auth/gmail.compose";
+        /** Add emails into your Gmail mailbox. */
+        const GMAIL_INSERT = "https://www.googleapis.com/auth/gmail.insert";
+        /** See and edit your email labels. */
+        const GMAIL_LABELS = "https://www.googleapis.com/auth/gmail.labels";
+        /** View your email message metadata such as labels and headers, but not the email body. */
+        const GMAIL_METADATA = "https://www.googleapis.com/auth/gmail.metadata";
+        /** Read, compose, and send emails from your Gmail account. */
+        const GMAIL_MODIFY = "https://www.googleapis.com/auth/gmail.modify";
+        /** View your email messages and settings. */
+        const GMAIL_READONLY = "https://www.googleapis.com/auth/gmail.readonly";
+        /** Send email on your behalf. */
+        const GMAIL_SEND = "https://www.googleapis.com/auth/gmail.send";
+        /** See, edit, create, or change your email settings and filters in Gmail. */
+        const GMAIL_SETTINGS_BASIC = "https://www.googleapis.com/auth/gmail.settings.basic";
+        /** Manage your sensitive mail settings, including who can manage your mail. */
+        const GMAIL_SETTINGS_SHARING = "https://www.googleapis.com/auth/gmail.settings.sharing";
+        public $users;
+        public $users_drafts;
+        public $users_history;
+        public $users_labels;
+        public $users_messages;
+        public $users_messages_attachments;
+        public $users_settings;
+        public $users_settings_cse_identities;
+        public $users_settings_cse_keypairs;
+        public $users_settings_delegates;
+        public $users_settings_filters;
+        public $users_settings_forwardingAddresses;
+        public $users_settings_sendAs;
+        public $users_settings_sendAs_smimeInfo;
+        public $users_threads;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Gmail service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Gmail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Gmail extends \Google\Service\Gmail
     {
     }
 }

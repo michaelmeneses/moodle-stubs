@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SchedulingNodeAffinity extends \Google\Collection
-{
-    /**
-     * Requires Compute Engine to seek for matched nodes.
-     */
-    public const OPERATOR_IN = 'IN';
-    /**
-     * Requires Compute Engine to avoid certain nodes.
-     */
-    public const OPERATOR_NOT_IN = 'NOT_IN';
-    public const OPERATOR_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
-    protected $collection_key = 'values';
-    /**
-     * Corresponds to the label key of Node resource.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Defines the operation of node selection. Valid operators areIN for affinity
-     * and NOT_IN for anti-affinity.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Corresponds to the label values of Node resource.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Corresponds to the label key of Node resource.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Compute {
+    class SchedulingNodeAffinity extends \Google\Collection
     {
+        /**
+         * Requires Compute Engine to seek for matched nodes.
+         */
+        public const OPERATOR_IN = 'IN';
+        /**
+         * Requires Compute Engine to avoid certain nodes.
+         */
+        public const OPERATOR_NOT_IN = 'NOT_IN';
+        public const OPERATOR_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
+        protected $collection_key = 'values';
+        /**
+         * Corresponds to the label key of Node resource.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Defines the operation of node selection. Valid operators areIN for affinity
+         * and NOT_IN for anti-affinity.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Corresponds to the label values of Node resource.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Corresponds to the label key of Node resource.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Defines the operation of node selection. Valid operators areIN for affinity
+         * and NOT_IN for anti-affinity.
+         *
+         * Accepted values: IN, NOT_IN, OPERATOR_UNSPECIFIED
+         *
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Corresponds to the label values of Node resource.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SchedulingNodeAffinity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Defines the operation of node selection. Valid operators areIN for affinity
-     * and NOT_IN for anti-affinity.
-     *
-     * Accepted values: IN, NOT_IN, OPERATOR_UNSPECIFIED
-     *
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Corresponds to the label values of Node resource.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Compute_SchedulingNodeAffinity extends \Google\Service\Compute\SchedulingNodeAffinity
     {
     }
 }

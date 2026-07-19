@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ListActiveDirectoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $activeDirectoriesType = ActiveDirectory::class;
-    protected $activeDirectoriesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of active directories.
-     *
-     * @param ActiveDirectory[] $activeDirectories
-     */
-    public function setActiveDirectories($activeDirectories)
+namespace Google\Service\NetAppFiles {
+    class ListActiveDirectoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $activeDirectoriesType = ActiveDirectory::class;
+        protected $activeDirectoriesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of active directories.
+         *
+         * @param ActiveDirectory[] $activeDirectories
+         */
+        public function setActiveDirectories($activeDirectories)
+        {
+        }
+        /**
+         * @return ActiveDirectory[]
+         */
+        public function getActiveDirectories()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActiveDirectory[]
+     * Runtime class alias of \Google\Service\NetAppFiles\ListActiveDirectoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveDirectories()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetAppFiles_ListActiveDirectoriesResponse extends \Google\Service\NetAppFiles\ListActiveDirectoriesResponse
     {
     }
 }

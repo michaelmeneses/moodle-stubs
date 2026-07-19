@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalListNodesResponse extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    /**
-     * A pagination token returned from a previous call to ListNodes that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there is no more nodes.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $nodesType = SasPortalNode::class;
-    protected $nodesDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to ListNodes that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there is no more nodes.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalListNodesResponse extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        /**
+         * A pagination token returned from a previous call to ListNodes that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there is no more nodes.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $nodesType = SasPortalNode::class;
+        protected $nodesDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to ListNodes that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there is no more nodes.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The nodes that match the request.
+         *
+         * @param SasPortalNode[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return SasPortalNode[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalListNodesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The nodes that match the request.
-     *
-     * @param SasPortalNode[] $nodes
-     */
-    public function setNodes($nodes)
-    {
-    }
-    /**
-     * @return SasPortalNode[]
-     */
-    public function getNodes()
+    class Google_Service_SASPortalTesting_SasPortalListNodesResponse extends \Google\Service\SASPortalTesting\SasPortalListNodesResponse
     {
     }
 }

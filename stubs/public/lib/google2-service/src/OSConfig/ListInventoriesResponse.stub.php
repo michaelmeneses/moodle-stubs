@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ListInventoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'inventories';
-    protected $inventoriesType = Inventory::class;
-    protected $inventoriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param Inventory[]
-     */
-    public function setInventories($inventories)
+namespace Google\Service\OSConfig {
+    class ListInventoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'inventories';
+        protected $inventoriesType = Inventory::class;
+        protected $inventoriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param Inventory[]
+         */
+        public function setInventories($inventories)
+        {
+        }
+        /**
+         * @return Inventory[]
+         */
+        public function getInventories()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Inventory[]
+     * Runtime class alias of \Google\Service\OSConfig\ListInventoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventories()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OSConfig_ListInventoriesResponse extends \Google\Service\OSConfig\ListInventoriesResponse
     {
     }
 }

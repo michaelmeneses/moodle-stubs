@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListHubsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $hubsType = Hub::class;
-    protected $hubsDataType = 'array';
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The requested hubs.
-     *
-     * @param Hub[] $hubs
-     */
-    public function setHubs($hubs)
+namespace Google\Service\Networkconnectivity {
+    class ListHubsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $hubsType = Hub::class;
+        protected $hubsDataType = 'array';
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The requested hubs.
+         *
+         * @param Hub[] $hubs
+         */
+        public function setHubs($hubs)
+        {
+        }
+        /**
+         * @return Hub[]
+         */
+        public function getHubs()
+        {
+        }
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hub[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListHubsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHubs()
-    {
-    }
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListHubsResponse extends \Google\Service\Networkconnectivity\ListHubsResponse
     {
     }
 }

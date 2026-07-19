@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1Polyline extends \Google\Collection
-{
-    protected $collection_key = 'vertices';
-    protected $verticesType = GoogleCloudDatalabelingV1beta1Vertex::class;
-    protected $verticesDataType = 'array';
-    /**
-     * The polyline vertices.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Vertex[] $vertices
-     */
-    public function setVertices($vertices)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1Polyline extends \Google\Collection
     {
+        protected $collection_key = 'vertices';
+        protected $verticesType = GoogleCloudDatalabelingV1beta1Vertex::class;
+        protected $verticesDataType = 'array';
+        /**
+         * The polyline vertices.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Vertex[] $vertices
+         */
+        public function setVertices($vertices)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Vertex[]
+         */
+        public function getVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Vertex[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Polyline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVertices()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1Polyline extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Polyline
     {
     }
 }

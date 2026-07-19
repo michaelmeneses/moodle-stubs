@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem extends \Google\Model
-{
-    /**
-     * The unique ID for each annotation. Used by FE to allocate the annotation in
-     * DB.
-     *
-     * @var string
-     */
-    public $annotationResourceName;
-    /**
-     * The distance of this item to the annotation.
-     *
-     * @var 
-     */
-    public $distance;
-    /**
-     * The unique ID for each annotation. Used by FE to allocate the annotation in
-     * DB.
-     *
-     * @param string $annotationResourceName
-     */
-    public function setAnnotationResourceName($annotationResourceName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem extends \Google\Model
     {
+        /**
+         * The unique ID for each annotation. Used by FE to allocate the annotation in
+         * DB.
+         *
+         * @var string
+         */
+        public $annotationResourceName;
+        /**
+         * The distance of this item to the annotation.
+         *
+         * @var 
+         */
+        public $distance;
+        /**
+         * The unique ID for each annotation. Used by FE to allocate the annotation in
+         * DB.
+         *
+         * @param string $annotationResourceName
+         */
+        public function setAnnotationResourceName($annotationResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationResourceName()
+        {
+        }
+        public function setDistance($distance)
+        {
+        }
+        public function getDistance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationResourceName()
-    {
-    }
-    public function setDistance($distance)
-    {
-    }
-    public function getDistance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem
     {
     }
 }

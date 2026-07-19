@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class StorageInfo extends \Google\Model
-{
-    protected $blobStorageInfoType = BlobStorageInfo::class;
-    protected $blobStorageInfoDataType = '';
-    /**
-     * The resource whose storage info is returned. For example: `projects/{projec
-     * tID}/locations/{locationID}/datasets/{datasetID}/dicomStores/{dicomStoreID}
-     * /dicomWeb/studies/{studyUID}/series/{seriesUID}/instances/{instanceUID}`
-     *
-     * @var string
-     */
-    public $referencedResource;
-    protected $structuredStorageInfoType = StructuredStorageInfo::class;
-    protected $structuredStorageInfoDataType = '';
-    /**
-     * Info about the data stored in blob storage for the resource.
-     *
-     * @param BlobStorageInfo $blobStorageInfo
-     */
-    public function setBlobStorageInfo(BlobStorageInfo $blobStorageInfo)
+namespace Google\Service\CloudHealthcare {
+    class StorageInfo extends \Google\Model
     {
+        protected $blobStorageInfoType = BlobStorageInfo::class;
+        protected $blobStorageInfoDataType = '';
+        /**
+         * The resource whose storage info is returned. For example: `projects/{projec
+         * tID}/locations/{locationID}/datasets/{datasetID}/dicomStores/{dicomStoreID}
+         * /dicomWeb/studies/{studyUID}/series/{seriesUID}/instances/{instanceUID}`
+         *
+         * @var string
+         */
+        public $referencedResource;
+        protected $structuredStorageInfoType = StructuredStorageInfo::class;
+        protected $structuredStorageInfoDataType = '';
+        /**
+         * Info about the data stored in blob storage for the resource.
+         *
+         * @param BlobStorageInfo $blobStorageInfo
+         */
+        public function setBlobStorageInfo(BlobStorageInfo $blobStorageInfo)
+        {
+        }
+        /**
+         * @return BlobStorageInfo
+         */
+        public function getBlobStorageInfo()
+        {
+        }
+        /**
+         * The resource whose storage info is returned. For example: `projects/{projec
+         * tID}/locations/{locationID}/datasets/{datasetID}/dicomStores/{dicomStoreID}
+         * /dicomWeb/studies/{studyUID}/series/{seriesUID}/instances/{instanceUID}`
+         *
+         * @param string $referencedResource
+         */
+        public function setReferencedResource($referencedResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferencedResource()
+        {
+        }
+        /**
+         * Info about the data stored in structured storage for the resource.
+         *
+         * @param StructuredStorageInfo $structuredStorageInfo
+         */
+        public function setStructuredStorageInfo(StructuredStorageInfo $structuredStorageInfo)
+        {
+        }
+        /**
+         * @return StructuredStorageInfo
+         */
+        public function getStructuredStorageInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlobStorageInfo
+     * Runtime class alias of \Google\Service\CloudHealthcare\StorageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobStorageInfo()
-    {
-    }
-    /**
-     * The resource whose storage info is returned. For example: `projects/{projec
-     * tID}/locations/{locationID}/datasets/{datasetID}/dicomStores/{dicomStoreID}
-     * /dicomWeb/studies/{studyUID}/series/{seriesUID}/instances/{instanceUID}`
-     *
-     * @param string $referencedResource
-     */
-    public function setReferencedResource($referencedResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferencedResource()
-    {
-    }
-    /**
-     * Info about the data stored in structured storage for the resource.
-     *
-     * @param StructuredStorageInfo $structuredStorageInfo
-     */
-    public function setStructuredStorageInfo(StructuredStorageInfo $structuredStorageInfo)
-    {
-    }
-    /**
-     * @return StructuredStorageInfo
-     */
-    public function getStructuredStorageInfo()
+    class Google_Service_CloudHealthcare_StorageInfo extends \Google\Service\CloudHealthcare\StorageInfo
     {
     }
 }

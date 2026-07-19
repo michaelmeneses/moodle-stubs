@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeploymentChangeReport extends \Google\Collection
-{
-    protected $collection_key = 'routingConflicts';
-    protected $routingChangesType = GoogleCloudApigeeV1DeploymentChangeReportRoutingChange::class;
-    protected $routingChangesDataType = 'array';
-    protected $routingConflictsType = GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict::class;
-    protected $routingConflictsDataType = 'array';
-    protected $validationErrorsType = GoogleRpcPreconditionFailure::class;
-    protected $validationErrorsDataType = '';
-    /**
-     * All routing changes that may result from a deployment request.
-     *
-     * @param GoogleCloudApigeeV1DeploymentChangeReportRoutingChange[] $routingChanges
-     */
-    public function setRoutingChanges($routingChanges)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeploymentChangeReport extends \Google\Collection
     {
+        protected $collection_key = 'routingConflicts';
+        protected $routingChangesType = GoogleCloudApigeeV1DeploymentChangeReportRoutingChange::class;
+        protected $routingChangesDataType = 'array';
+        protected $routingConflictsType = GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict::class;
+        protected $routingConflictsDataType = 'array';
+        protected $validationErrorsType = GoogleRpcPreconditionFailure::class;
+        protected $validationErrorsDataType = '';
+        /**
+         * All routing changes that may result from a deployment request.
+         *
+         * @param GoogleCloudApigeeV1DeploymentChangeReportRoutingChange[] $routingChanges
+         */
+        public function setRoutingChanges($routingChanges)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DeploymentChangeReportRoutingChange[]
+         */
+        public function getRoutingChanges()
+        {
+        }
+        /**
+         * All base path conflicts detected for a deployment request.
+         *
+         * @param GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict[] $routingConflicts
+         */
+        public function setRoutingConflicts($routingConflicts)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict[]
+         */
+        public function getRoutingConflicts()
+        {
+        }
+        /**
+         * Validation errors that would cause the deployment change request to be
+         * rejected.
+         *
+         * @param GoogleRpcPreconditionFailure $validationErrors
+         */
+        public function setValidationErrors(GoogleRpcPreconditionFailure $validationErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcPreconditionFailure
+         */
+        public function getValidationErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DeploymentChangeReportRoutingChange[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoutingChanges()
-    {
-    }
-    /**
-     * All base path conflicts detected for a deployment request.
-     *
-     * @param GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict[] $routingConflicts
-     */
-    public function setRoutingConflicts($routingConflicts)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict[]
-     */
-    public function getRoutingConflicts()
-    {
-    }
-    /**
-     * Validation errors that would cause the deployment change request to be
-     * rejected.
-     *
-     * @param GoogleRpcPreconditionFailure $validationErrors
-     */
-    public function setValidationErrors(GoogleRpcPreconditionFailure $validationErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcPreconditionFailure
-     */
-    public function getValidationErrors()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeploymentChangeReport extends \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReport
     {
     }
 }

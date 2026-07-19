@@ -21,59 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "urlchannels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $urlchannels = $adsensehostService->urlchannels;
- *  </code>
- */
-class Urlchannels extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\UrlChannel;
+    use Google\Service\AdSenseHost\UrlChannels as UrlChannelsModel;
     /**
-     * Delete a URL channel from the host AdSense account. (urlchannels.delete)
-     *
-     * @param string $adClientId Ad client from which to delete the URL channel.
-     * @param string $urlChannelId URL channel to delete.
-     * @param array $optParams Optional parameters.
-     * @return UrlChannel
-     * @throws \Google\Service\Exception
+     * The "urlchannels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $urlchannels = $adsensehostService->urlchannels;
+     *  </code>
      */
-    public function delete($adClientId, $urlChannelId, $optParams = [])
+    class Urlchannels extends \Google\Service\Resource
     {
+        /**
+         * Delete a URL channel from the host AdSense account. (urlchannels.delete)
+         *
+         * @param string $adClientId Ad client from which to delete the URL channel.
+         * @param string $urlChannelId URL channel to delete.
+         * @param array $optParams Optional parameters.
+         * @return UrlChannel
+         * @throws \Google\Service\Exception
+         */
+        public function delete($adClientId, $urlChannelId, $optParams = [])
+        {
+        }
+        /**
+         * Add a new URL channel to the host AdSense account. (urlchannels.insert)
+         *
+         * @param string $adClientId Ad client to which the new URL channel will be
+         * added.
+         * @param UrlChannel $postBody
+         * @param array $optParams Optional parameters.
+         * @return UrlChannel
+         * @throws \Google\Service\Exception
+         */
+        public function insert($adClientId, UrlChannel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List all host URL channels in the host AdSense account.
+         * (urlchannels.listUrlchannels)
+         *
+         * @param string $adClientId Ad client for which to list URL channels.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of URL channels to include in
+         * the response, used for paging.
+         * @opt_param string pageToken A continuation token, used to page through URL
+         * channels. To retrieve the next page, set this parameter to the value of
+         * "nextPageToken" from the previous response.
+         * @return UrlChannelsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listUrlchannels($adClientId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Add a new URL channel to the host AdSense account. (urlchannels.insert)
-     *
-     * @param string $adClientId Ad client to which the new URL channel will be
-     * added.
-     * @param UrlChannel $postBody
-     * @param array $optParams Optional parameters.
-     * @return UrlChannel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\Urlchannels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($adClientId, UrlChannel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * List all host URL channels in the host AdSense account.
-     * (urlchannels.listUrlchannels)
-     *
-     * @param string $adClientId Ad client for which to list URL channels.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of URL channels to include in
-     * the response, used for paging.
-     * @opt_param string pageToken A continuation token, used to page through URL
-     * channels. To retrieve the next page, set this parameter to the value of
-     * "nextPageToken" from the previous response.
-     * @return UrlChannelsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listUrlchannels($adClientId, $optParams = [])
+    class Google_Service_AdSenseHost_Resource_Urlchannels extends \Google\Service\AdSenseHost\Resource\Urlchannels
     {
     }
 }

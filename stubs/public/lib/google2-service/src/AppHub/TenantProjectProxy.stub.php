@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class TenantProjectProxy extends \Google\Collection
-{
-    protected $collection_key = 'projectNumbers';
-    /**
-     * @var string[]
-     */
-    public $projectNumbers;
-    /**
-     * @param string[]
-     */
-    public function setProjectNumbers($projectNumbers)
+namespace Google\Service\AppHub {
+    class TenantProjectProxy extends \Google\Collection
     {
+        protected $collection_key = 'projectNumbers';
+        /**
+         * @var string[]
+         */
+        public $projectNumbers;
+        /**
+         * @param string[]
+         */
+        public function setProjectNumbers($projectNumbers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProjectNumbers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AppHub\TenantProjectProxy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectNumbers()
+    class Google_Service_AppHub_TenantProjectProxy extends \Google\Service\AppHub\TenantProjectProxy
     {
     }
 }

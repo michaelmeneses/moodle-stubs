@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1AppUri extends \Google\Model
-{
-    protected $androidIntentType = GoogleAppsCardV1Intent::class;
-    protected $androidIntentDataType = '';
-    /**
-     * @var string
-     */
-    public $companionUri;
-    /**
-     * @var string
-     */
-    public $iosUri;
-    /**
-     * @param GoogleAppsCardV1Intent
-     */
-    public function setAndroidIntent(GoogleAppsCardV1Intent $androidIntent)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1AppUri extends \Google\Model
     {
+        protected $androidIntentType = GoogleAppsCardV1Intent::class;
+        protected $androidIntentDataType = '';
+        /**
+         * @var string
+         */
+        public $companionUri;
+        /**
+         * @var string
+         */
+        public $iosUri;
+        /**
+         * @param GoogleAppsCardV1Intent
+         */
+        public function setAndroidIntent(GoogleAppsCardV1Intent $androidIntent)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Intent
+         */
+        public function getAndroidIntent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCompanionUri($companionUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompanionUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIosUri($iosUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Intent
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1AppUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidIntent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCompanionUri($companionUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompanionUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIosUri($iosUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosUri()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1AppUri extends \Google\Service\HangoutsChat\GoogleAppsCardV1AppUri
     {
     }
 }

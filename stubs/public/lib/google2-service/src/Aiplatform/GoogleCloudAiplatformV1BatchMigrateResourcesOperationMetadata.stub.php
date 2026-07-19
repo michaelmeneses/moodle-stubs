@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialResults';
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    protected $partialResultsType = GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult::class;
-    protected $partialResultsDataType = 'array';
-    /**
-     * The common part of the operation metadata.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialResults';
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        protected $partialResultsType = GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult::class;
+        protected $partialResultsDataType = 'array';
+        /**
+         * The common part of the operation metadata.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * Partial results that reflect the latest migration operation progress.
+         *
+         * @param GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult[] $partialResults
+         */
+        public function setPartialResults($partialResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult[]
+         */
+        public function getPartialResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * Partial results that reflect the latest migration operation progress.
-     *
-     * @param GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult[] $partialResults
-     */
-    public function setPartialResults($partialResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult[]
-     */
-    public function getPartialResults()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadata
     {
     }
 }

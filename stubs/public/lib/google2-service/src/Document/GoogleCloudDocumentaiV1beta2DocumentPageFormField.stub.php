@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageFormField extends \Google\Collection
-{
-    protected $collection_key = 'valueDetectedLanguages';
-    /**
-     * @var string
-     */
-    public $correctedKeyText;
-    /**
-     * @var string
-     */
-    public $correctedValueText;
-    protected $fieldNameType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
-    protected $fieldNameDataType = '';
-    protected $fieldValueType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
-    protected $fieldValueDataType = '';
-    protected $nameDetectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
-    protected $nameDetectedLanguagesDataType = 'array';
-    protected $provenanceType = GoogleCloudDocumentaiV1beta2DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    protected $valueDetectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
-    protected $valueDetectedLanguagesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $valueType;
-    /**
-     * @param string
-     */
-    public function setCorrectedKeyText($correctedKeyText)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageFormField extends \Google\Collection
     {
+        protected $collection_key = 'valueDetectedLanguages';
+        /**
+         * @var string
+         */
+        public $correctedKeyText;
+        /**
+         * @var string
+         */
+        public $correctedValueText;
+        protected $fieldNameType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
+        protected $fieldNameDataType = '';
+        protected $fieldValueType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
+        protected $fieldValueDataType = '';
+        protected $nameDetectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
+        protected $nameDetectedLanguagesDataType = 'array';
+        protected $provenanceType = GoogleCloudDocumentaiV1beta2DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        protected $valueDetectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
+        protected $valueDetectedLanguagesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $valueType;
+        /**
+         * @param string
+         */
+        public function setCorrectedKeyText($correctedKeyText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedKeyText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCorrectedValueText($correctedValueText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedValueText()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function setFieldName(GoogleCloudDocumentaiV1beta2DocumentPageLayout $fieldName)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function setFieldValue(GoogleCloudDocumentaiV1beta2DocumentPageLayout $fieldValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function getFieldValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function setNameDetectedLanguages($nameDetectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function getNameDetectedLanguages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentProvenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1beta2DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function setValueDetectedLanguages($valueDetectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function getValueDetectedLanguages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValueType($valueType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageFormField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorrectedKeyText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCorrectedValueText($correctedValueText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorrectedValueText()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function setFieldName(GoogleCloudDocumentaiV1beta2DocumentPageLayout $fieldName)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function setFieldValue(GoogleCloudDocumentaiV1beta2DocumentPageLayout $fieldValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function getFieldValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function setNameDetectedLanguages($nameDetectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function getNameDetectedLanguages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentProvenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1beta2DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentProvenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function setValueDetectedLanguages($valueDetectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function getValueDetectedLanguages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValueType($valueType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageFormField extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageFormField
     {
     }
 }

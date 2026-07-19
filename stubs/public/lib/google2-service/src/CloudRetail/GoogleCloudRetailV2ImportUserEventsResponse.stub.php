@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ImportUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRetailV2ImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $importSummaryType = GoogleCloudRetailV2UserEventImportSummary::class;
-    protected $importSummaryDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ImportUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRetailV2ImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $importSummaryType = GoogleCloudRetailV2UserEventImportSummary::class;
+        protected $importSummaryDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Echoes the destination for the complete errors if this field was set in the
+         * request.
+         *
+         * @param GoogleCloudRetailV2ImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2ImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Aggregated statistics of user event import status.
+         *
+         * @param GoogleCloudRetailV2UserEventImportSummary $importSummary
+         */
+        public function setImportSummary(GoogleCloudRetailV2UserEventImportSummary $importSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2UserEventImportSummary
+         */
+        public function getImportSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ImportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Echoes the destination for the complete errors if this field was set in the
-     * request.
-     *
-     * @param GoogleCloudRetailV2ImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2ImportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ImportErrorsConfig
-     */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Aggregated statistics of user event import status.
-     *
-     * @param GoogleCloudRetailV2UserEventImportSummary $importSummary
-     */
-    public function setImportSummary(GoogleCloudRetailV2UserEventImportSummary $importSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2UserEventImportSummary
-     */
-    public function getImportSummary()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ImportUserEventsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2ImportUserEventsResponse
     {
     }
 }

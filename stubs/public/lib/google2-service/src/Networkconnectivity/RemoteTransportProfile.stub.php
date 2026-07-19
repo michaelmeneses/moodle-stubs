@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class RemoteTransportProfile extends \Google\Collection
-{
-    protected $collection_key = 'supportedBandwidths';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $flow;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $orderState;
-    /**
-     * @var string
-     */
-    public $provider;
-    /**
-     * @var string
-     */
-    public $providerSite;
-    /**
-     * @var string
-     */
-    public $region;
-    /**
-     * @var string
-     */
-    public $sla;
-    /**
-     * @var string[]
-     */
-    public $supportedBandwidths;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Networkconnectivity {
+    class RemoteTransportProfile extends \Google\Collection
     {
+        protected $collection_key = 'supportedBandwidths';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $flow;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $orderState;
+        /**
+         * @var string
+         */
+        public $provider;
+        /**
+         * @var string
+         */
+        public $providerSite;
+        /**
+         * @var string
+         */
+        public $region;
+        /**
+         * @var string
+         */
+        public $sla;
+        /**
+         * @var string[]
+         */
+        public $supportedBandwidths;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFlow($flow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlow()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderState($orderState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProviderSite($providerSite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderSite()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSla($sla)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSla()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSupportedBandwidths($supportedBandwidths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedBandwidths()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\RemoteTransportProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFlow($flow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlow()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderState($orderState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProviderSite($providerSite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderSite()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSla($sla)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSla()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSupportedBandwidths($supportedBandwidths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedBandwidths()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Networkconnectivity_RemoteTransportProfile extends \Google\Service\Networkconnectivity\RemoteTransportProfile
     {
     }
 }

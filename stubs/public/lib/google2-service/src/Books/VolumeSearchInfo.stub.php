@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeSearchInfo extends \Google\Model
-{
-    /**
-     * A text snippet containing the search query.
-     *
-     * @var string
-     */
-    public $textSnippet;
-    /**
-     * A text snippet containing the search query.
-     *
-     * @param string $textSnippet
-     */
-    public function setTextSnippet($textSnippet)
+namespace Google\Service\Books {
+    class VolumeSearchInfo extends \Google\Model
     {
+        /**
+         * A text snippet containing the search query.
+         *
+         * @var string
+         */
+        public $textSnippet;
+        /**
+         * A text snippet containing the search query.
+         *
+         * @param string $textSnippet
+         */
+        public function setTextSnippet($textSnippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeSearchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTextSnippet()
+    class Google_Service_Books_VolumeSearchInfo extends \Google\Service\Books\VolumeSearchInfo
     {
     }
 }

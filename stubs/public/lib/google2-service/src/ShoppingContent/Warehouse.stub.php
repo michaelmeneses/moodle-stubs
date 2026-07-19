@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Warehouse extends \Google\Model
-{
-    protected $businessDayConfigType = BusinessDayConfig::class;
-    protected $businessDayConfigDataType = '';
-    protected $cutoffTimeType = WarehouseCutoffTime::class;
-    protected $cutoffTimeDataType = '';
-    /**
-     * Required. The number of days it takes for this warehouse to pack up and
-     * ship an item. This is on the warehouse level, but can be overridden on the
-     * offer level based on the attributes of an item.
-     *
-     * @var string
-     */
-    public $handlingDays;
-    /**
-     * Required. The name of the warehouse. Must be unique within account.
-     *
-     * @var string
-     */
-    public $name;
-    protected $shippingAddressType = Address::class;
-    protected $shippingAddressDataType = '';
-    /**
-     * Business days of the warehouse. If not set, will be Monday to Friday by
-     * default.
-     *
-     * @param BusinessDayConfig $businessDayConfig
-     */
-    public function setBusinessDayConfig(BusinessDayConfig $businessDayConfig)
+namespace Google\Service\ShoppingContent {
+    class Warehouse extends \Google\Model
     {
+        protected $businessDayConfigType = BusinessDayConfig::class;
+        protected $businessDayConfigDataType = '';
+        protected $cutoffTimeType = WarehouseCutoffTime::class;
+        protected $cutoffTimeDataType = '';
+        /**
+         * Required. The number of days it takes for this warehouse to pack up and
+         * ship an item. This is on the warehouse level, but can be overridden on the
+         * offer level based on the attributes of an item.
+         *
+         * @var string
+         */
+        public $handlingDays;
+        /**
+         * Required. The name of the warehouse. Must be unique within account.
+         *
+         * @var string
+         */
+        public $name;
+        protected $shippingAddressType = Address::class;
+        protected $shippingAddressDataType = '';
+        /**
+         * Business days of the warehouse. If not set, will be Monday to Friday by
+         * default.
+         *
+         * @param BusinessDayConfig $businessDayConfig
+         */
+        public function setBusinessDayConfig(BusinessDayConfig $businessDayConfig)
+        {
+        }
+        /**
+         * @return BusinessDayConfig
+         */
+        public function getBusinessDayConfig()
+        {
+        }
+        /**
+         * Required. The latest time of day that an order can be accepted and begin
+         * processing. Later orders will be processed in the next day. The time is
+         * based on the warehouse postal code.
+         *
+         * @param WarehouseCutoffTime $cutoffTime
+         */
+        public function setCutoffTime(WarehouseCutoffTime $cutoffTime)
+        {
+        }
+        /**
+         * @return WarehouseCutoffTime
+         */
+        public function getCutoffTime()
+        {
+        }
+        /**
+         * Required. The number of days it takes for this warehouse to pack up and
+         * ship an item. This is on the warehouse level, but can be overridden on the
+         * offer level based on the attributes of an item.
+         *
+         * @param string $handlingDays
+         */
+        public function setHandlingDays($handlingDays)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHandlingDays()
+        {
+        }
+        /**
+         * Required. The name of the warehouse. Must be unique within account.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Shipping address of the warehouse.
+         *
+         * @param Address $shippingAddress
+         */
+        public function setShippingAddress(Address $shippingAddress)
+        {
+        }
+        /**
+         * @return Address
+         */
+        public function getShippingAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BusinessDayConfig
+     * Runtime class alias of \Google\Service\ShoppingContent\Warehouse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessDayConfig()
-    {
-    }
-    /**
-     * Required. The latest time of day that an order can be accepted and begin
-     * processing. Later orders will be processed in the next day. The time is
-     * based on the warehouse postal code.
-     *
-     * @param WarehouseCutoffTime $cutoffTime
-     */
-    public function setCutoffTime(WarehouseCutoffTime $cutoffTime)
-    {
-    }
-    /**
-     * @return WarehouseCutoffTime
-     */
-    public function getCutoffTime()
-    {
-    }
-    /**
-     * Required. The number of days it takes for this warehouse to pack up and
-     * ship an item. This is on the warehouse level, but can be overridden on the
-     * offer level based on the attributes of an item.
-     *
-     * @param string $handlingDays
-     */
-    public function setHandlingDays($handlingDays)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHandlingDays()
-    {
-    }
-    /**
-     * Required. The name of the warehouse. Must be unique within account.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Shipping address of the warehouse.
-     *
-     * @param Address $shippingAddress
-     */
-    public function setShippingAddress(Address $shippingAddress)
-    {
-    }
-    /**
-     * @return Address
-     */
-    public function getShippingAddress()
+    class Google_Service_ShoppingContent_Warehouse extends \Google\Service\ShoppingContent\Warehouse
     {
     }
 }

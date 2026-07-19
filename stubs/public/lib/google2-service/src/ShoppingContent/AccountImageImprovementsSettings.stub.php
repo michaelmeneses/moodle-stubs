@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountImageImprovementsSettings extends \Google\Model
-{
-    /**
-     * Enables automatic image improvements.
-     *
-     * @var bool
-     */
-    public $allowAutomaticImageImprovements;
-    /**
-     * Enables automatic image improvements.
-     *
-     * @param bool $allowAutomaticImageImprovements
-     */
-    public function setAllowAutomaticImageImprovements($allowAutomaticImageImprovements)
+namespace Google\Service\ShoppingContent {
+    class AccountImageImprovementsSettings extends \Google\Model
     {
+        /**
+         * Enables automatic image improvements.
+         *
+         * @var bool
+         */
+        public $allowAutomaticImageImprovements;
+        /**
+         * Enables automatic image improvements.
+         *
+         * @param bool $allowAutomaticImageImprovements
+         */
+        public function setAllowAutomaticImageImprovements($allowAutomaticImageImprovements)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowAutomaticImageImprovements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountImageImprovementsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowAutomaticImageImprovements()
+    class Google_Service_ShoppingContent_AccountImageImprovementsSettings extends \Google\Service\ShoppingContent\AccountImageImprovementsSettings
     {
     }
 }

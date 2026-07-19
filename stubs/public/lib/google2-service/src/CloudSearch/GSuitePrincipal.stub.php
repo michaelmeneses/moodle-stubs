@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GSuitePrincipal extends \Google\Model
-{
-    /**
-     * This principal represents all users of the Google Workspace domain of the
-     * customer.
-     *
-     * @var bool
-     */
-    public $gsuiteDomain;
-    /**
-     * This principal references a Google Workspace group name.
-     *
-     * @var string
-     */
-    public $gsuiteGroupEmail;
-    /**
-     * This principal references a Google Workspace user account.
-     *
-     * @var string
-     */
-    public $gsuiteUserEmail;
-    /**
-     * This principal represents all users of the Google Workspace domain of the
-     * customer.
-     *
-     * @param bool $gsuiteDomain
-     */
-    public function setGsuiteDomain($gsuiteDomain)
+namespace Google\Service\CloudSearch {
+    class GSuitePrincipal extends \Google\Model
     {
+        /**
+         * This principal represents all users of the Google Workspace domain of the
+         * customer.
+         *
+         * @var bool
+         */
+        public $gsuiteDomain;
+        /**
+         * This principal references a Google Workspace group name.
+         *
+         * @var string
+         */
+        public $gsuiteGroupEmail;
+        /**
+         * This principal references a Google Workspace user account.
+         *
+         * @var string
+         */
+        public $gsuiteUserEmail;
+        /**
+         * This principal represents all users of the Google Workspace domain of the
+         * customer.
+         *
+         * @param bool $gsuiteDomain
+         */
+        public function setGsuiteDomain($gsuiteDomain)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGsuiteDomain()
+        {
+        }
+        /**
+         * This principal references a Google Workspace group name.
+         *
+         * @param string $gsuiteGroupEmail
+         */
+        public function setGsuiteGroupEmail($gsuiteGroupEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGsuiteGroupEmail()
+        {
+        }
+        /**
+         * This principal references a Google Workspace user account.
+         *
+         * @param string $gsuiteUserEmail
+         */
+        public function setGsuiteUserEmail($gsuiteUserEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGsuiteUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\GSuitePrincipal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGsuiteDomain()
-    {
-    }
-    /**
-     * This principal references a Google Workspace group name.
-     *
-     * @param string $gsuiteGroupEmail
-     */
-    public function setGsuiteGroupEmail($gsuiteGroupEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGsuiteGroupEmail()
-    {
-    }
-    /**
-     * This principal references a Google Workspace user account.
-     *
-     * @param string $gsuiteUserEmail
-     */
-    public function setGsuiteUserEmail($gsuiteUserEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGsuiteUserEmail()
+    class Google_Service_CloudSearch_GSuitePrincipal extends \Google\Service\CloudSearch\GSuitePrincipal
     {
     }
 }

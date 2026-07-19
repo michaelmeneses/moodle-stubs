@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class Entity extends \Google\Model
-{
-    protected $keyType = Key::class;
-    protected $keyDataType = '';
-    protected $propertiesType = Value::class;
-    protected $propertiesDataType = 'map';
-    /**
-     * The entity's key. An entity must have a key, unless otherwise documented
-     * (for example, an entity in `Value.entity_value` may have no key). An
-     * entity's kind is its key path's last element's kind, or null if it has no
-     * key.
-     *
-     * @param Key $key
-     */
-    public function setKey(Key $key)
+namespace Google\Service\Datastore {
+    class Entity extends \Google\Model
     {
+        protected $keyType = Key::class;
+        protected $keyDataType = '';
+        protected $propertiesType = Value::class;
+        protected $propertiesDataType = 'map';
+        /**
+         * The entity's key. An entity must have a key, unless otherwise documented
+         * (for example, an entity in `Value.entity_value` may have no key). An
+         * entity's kind is its key path's last element's kind, or null if it has no
+         * key.
+         *
+         * @param Key $key
+         */
+        public function setKey(Key $key)
+        {
+        }
+        /**
+         * @return Key
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The entity's properties. The map's keys are property names. A property name
+         * matching regex `__.*__` is reserved. A reserved property name is forbidden
+         * in certain documented contexts. The map keys, represented as UTF-8, must
+         * not exceed 1,500 bytes and cannot be empty.
+         *
+         * @param Value[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Key
+     * Runtime class alias of \Google\Service\Datastore\Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The entity's properties. The map's keys are property names. A property name
-     * matching regex `__.*__` is reserved. A reserved property name is forbidden
-     * in certain documented contexts. The map keys, represented as UTF-8, must
-     * not exceed 1,500 bytes and cannot be empty.
-     *
-     * @param Value[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return Value[]
-     */
-    public function getProperties()
+    class Google_Service_Datastore_Entity extends \Google\Service\Datastore\Entity
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ACMEDNS;
-
-class AcmeTxtRecord extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $fqdn;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setDigest($digest)
+namespace Google\Service\ACMEDNS {
+    class AcmeTxtRecord extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $fqdn;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFqdn($fqdn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFqdn()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ACMEDNS\AcmeTxtRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFqdn($fqdn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFqdn()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ACMEDNS_AcmeTxtRecord extends \Google\Service\ACMEDNS\AcmeTxtRecord
     {
     }
 }

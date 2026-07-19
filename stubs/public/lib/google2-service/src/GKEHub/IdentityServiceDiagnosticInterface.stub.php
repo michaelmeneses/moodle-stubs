@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceDiagnosticInterface extends \Google\Model
-{
-    /**
-     * Determines whether to enable the diagnostic interface.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Determines the expiration time of the diagnostic interface enablement. When
-     * reached, requests to the interface would be automatically rejected.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * Determines whether to enable the diagnostic interface.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEHub {
+    class IdentityServiceDiagnosticInterface extends \Google\Model
     {
+        /**
+         * Determines whether to enable the diagnostic interface.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Determines the expiration time of the diagnostic interface enablement. When
+         * reached, requests to the interface would be automatically rejected.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * Determines whether to enable the diagnostic interface.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Determines the expiration time of the diagnostic interface enablement. When
+         * reached, requests to the interface would be automatically rejected.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceDiagnosticInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Determines the expiration time of the diagnostic interface enablement. When
-     * reached, requests to the interface would be automatically rejected.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
+    class Google_Service_GKEHub_IdentityServiceDiagnosticInterface extends \Google\Service\GKEHub\IdentityServiceDiagnosticInterface
     {
     }
 }

@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class GraphqlError extends \Google\Collection
-{
-    protected $collection_key = 'path';
-    protected $extensionsType = GraphqlErrorExtensions::class;
-    protected $extensionsDataType = '';
-    protected $locationsType = SourceLocation::class;
-    protected $locationsDataType = 'array';
-    /**
-     * The detailed error message. The message should help developer understand
-     * the underlying problem without leaking internal data.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The result field which could not be populated due to error. Clients can use
-     * path to identify whether a null result is intentional or caused by a
-     * runtime error. It should be a list of string or index from the root of
-     * GraphQL query document.
-     *
-     * @var array[]
-     */
-    public $path;
-    /**
-     * Additional error information.
-     *
-     * @param GraphqlErrorExtensions $extensions
-     */
-    public function setExtensions(GraphqlErrorExtensions $extensions)
+namespace Google\Service\FirebaseDataConnect {
+    class GraphqlError extends \Google\Collection
     {
+        protected $collection_key = 'path';
+        protected $extensionsType = GraphqlErrorExtensions::class;
+        protected $extensionsDataType = '';
+        protected $locationsType = SourceLocation::class;
+        protected $locationsDataType = 'array';
+        /**
+         * The detailed error message. The message should help developer understand
+         * the underlying problem without leaking internal data.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The result field which could not be populated due to error. Clients can use
+         * path to identify whether a null result is intentional or caused by a
+         * runtime error. It should be a list of string or index from the root of
+         * GraphQL query document.
+         *
+         * @var array[]
+         */
+        public $path;
+        /**
+         * Additional error information.
+         *
+         * @param GraphqlErrorExtensions $extensions
+         */
+        public function setExtensions(GraphqlErrorExtensions $extensions)
+        {
+        }
+        /**
+         * @return GraphqlErrorExtensions
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * The source locations where the error occurred. Locations should help
+         * developers and toolings identify the source of error quickly. Included in
+         * admin endpoints (`ExecuteGraphql`, `ExecuteGraphqlRead`,
+         * `IntrospectGraphql`, `ImpersonateQuery`, `ImpersonateMutation`,
+         * `UpdateSchema` and `UpdateConnector`) to reference the provided GraphQL GQL
+         * document. Omitted in `ExecuteMutation` and `ExecuteQuery` since the caller
+         * shouldn't have access access the underlying GQL source.
+         *
+         * @param SourceLocation[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return SourceLocation[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * The detailed error message. The message should help developer understand
+         * the underlying problem without leaking internal data.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The result field which could not be populated due to error. Clients can use
+         * path to identify whether a null result is intentional or caused by a
+         * runtime error. It should be a list of string or index from the root of
+         * GraphQL query document.
+         *
+         * @param array[] $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GraphqlErrorExtensions
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\GraphqlError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensions()
-    {
-    }
-    /**
-     * The source locations where the error occurred. Locations should help
-     * developers and toolings identify the source of error quickly. Included in
-     * admin endpoints (`ExecuteGraphql`, `ExecuteGraphqlRead`,
-     * `IntrospectGraphql`, `ImpersonateQuery`, `ImpersonateMutation`,
-     * `UpdateSchema` and `UpdateConnector`) to reference the provided GraphQL GQL
-     * document. Omitted in `ExecuteMutation` and `ExecuteQuery` since the caller
-     * shouldn't have access access the underlying GQL source.
-     *
-     * @param SourceLocation[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return SourceLocation[]
-     */
-    public function getLocations()
-    {
-    }
-    /**
-     * The detailed error message. The message should help developer understand
-     * the underlying problem without leaking internal data.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The result field which could not be populated due to error. Clients can use
-     * path to identify whether a null result is intentional or caused by a
-     * runtime error. It should be a list of string or index from the root of
-     * GraphQL query document.
-     *
-     * @param array[] $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPath()
+    class Google_Service_FirebaseDataConnect_GraphqlError extends \Google\Service\FirebaseDataConnect\GraphqlError
     {
     }
 }

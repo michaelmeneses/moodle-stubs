@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class BatchAnnotateFilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = AnnotateFileResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The list of file annotation responses, each response corresponding to each
-     * AnnotateFileRequest in BatchAnnotateFilesRequest.
-     *
-     * @param AnnotateFileResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\Vision {
+    class BatchAnnotateFilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = AnnotateFileResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The list of file annotation responses, each response corresponding to each
+         * AnnotateFileRequest in BatchAnnotateFilesRequest.
+         *
+         * @param AnnotateFileResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return AnnotateFileResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnnotateFileResponse[]
+     * Runtime class alias of \Google\Service\Vision\BatchAnnotateFilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_Vision_BatchAnnotateFilesResponse extends \Google\Service\Vision\BatchAnnotateFilesResponse
     {
     }
 }

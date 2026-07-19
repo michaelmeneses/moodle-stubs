@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class BarcodeSectionDetail extends \Google\Model
-{
-    protected $fieldSelectorType = FieldSelector::class;
-    protected $fieldSelectorDataType = '';
-    /**
-     * A reference to an existing text-based or image field to display.
-     *
-     * @param FieldSelector $fieldSelector
-     */
-    public function setFieldSelector(FieldSelector $fieldSelector)
+namespace Google\Service\Walletobjects {
+    class BarcodeSectionDetail extends \Google\Model
     {
+        protected $fieldSelectorType = FieldSelector::class;
+        protected $fieldSelectorDataType = '';
+        /**
+         * A reference to an existing text-based or image field to display.
+         *
+         * @param FieldSelector $fieldSelector
+         */
+        public function setFieldSelector(FieldSelector $fieldSelector)
+        {
+        }
+        /**
+         * @return FieldSelector
+         */
+        public function getFieldSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldSelector
+     * Runtime class alias of \Google\Service\Walletobjects\BarcodeSectionDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldSelector()
+    class Google_Service_Walletobjects_BarcodeSectionDetail extends \Google\Service\Walletobjects\BarcodeSectionDetail
     {
     }
 }

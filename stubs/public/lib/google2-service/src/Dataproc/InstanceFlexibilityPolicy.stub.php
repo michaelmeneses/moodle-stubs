@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InstanceFlexibilityPolicy extends \Google\Collection
-{
-    protected $collection_key = 'instanceSelectionResults';
-    protected $instanceSelectionListType = InstanceSelection::class;
-    protected $instanceSelectionListDataType = 'array';
-    protected $instanceSelectionResultsType = InstanceSelectionResult::class;
-    protected $instanceSelectionResultsDataType = 'array';
-    protected $provisioningModelMixType = ProvisioningModelMix::class;
-    protected $provisioningModelMixDataType = '';
-    /**
-     * Optional. List of instance selection options that the group will use when
-     * creating new VMs.
-     *
-     * @param InstanceSelection[] $instanceSelectionList
-     */
-    public function setInstanceSelectionList($instanceSelectionList)
+namespace Google\Service\Dataproc {
+    class InstanceFlexibilityPolicy extends \Google\Collection
     {
+        protected $collection_key = 'instanceSelectionResults';
+        protected $instanceSelectionListType = InstanceSelection::class;
+        protected $instanceSelectionListDataType = 'array';
+        protected $instanceSelectionResultsType = InstanceSelectionResult::class;
+        protected $instanceSelectionResultsDataType = 'array';
+        protected $provisioningModelMixType = ProvisioningModelMix::class;
+        protected $provisioningModelMixDataType = '';
+        /**
+         * Optional. List of instance selection options that the group will use when
+         * creating new VMs.
+         *
+         * @param InstanceSelection[] $instanceSelectionList
+         */
+        public function setInstanceSelectionList($instanceSelectionList)
+        {
+        }
+        /**
+         * @return InstanceSelection[]
+         */
+        public function getInstanceSelectionList()
+        {
+        }
+        /**
+         * Output only. A list of instance selection results in the group.
+         *
+         * @param InstanceSelectionResult[] $instanceSelectionResults
+         */
+        public function setInstanceSelectionResults($instanceSelectionResults)
+        {
+        }
+        /**
+         * @return InstanceSelectionResult[]
+         */
+        public function getInstanceSelectionResults()
+        {
+        }
+        /**
+         * Optional. Defines how the Group selects the provisioning model to ensure
+         * required reliability.
+         *
+         * @param ProvisioningModelMix $provisioningModelMix
+         */
+        public function setProvisioningModelMix(ProvisioningModelMix $provisioningModelMix)
+        {
+        }
+        /**
+         * @return ProvisioningModelMix
+         */
+        public function getProvisioningModelMix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceSelection[]
+     * Runtime class alias of \Google\Service\Dataproc\InstanceFlexibilityPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceSelectionList()
-    {
-    }
-    /**
-     * Output only. A list of instance selection results in the group.
-     *
-     * @param InstanceSelectionResult[] $instanceSelectionResults
-     */
-    public function setInstanceSelectionResults($instanceSelectionResults)
-    {
-    }
-    /**
-     * @return InstanceSelectionResult[]
-     */
-    public function getInstanceSelectionResults()
-    {
-    }
-    /**
-     * Optional. Defines how the Group selects the provisioning model to ensure
-     * required reliability.
-     *
-     * @param ProvisioningModelMix $provisioningModelMix
-     */
-    public function setProvisioningModelMix(ProvisioningModelMix $provisioningModelMix)
-    {
-    }
-    /**
-     * @return ProvisioningModelMix
-     */
-    public function getProvisioningModelMix()
+    class Google_Service_Dataproc_InstanceFlexibilityPolicy extends \Google\Service\Dataproc\InstanceFlexibilityPolicy
     {
     }
 }

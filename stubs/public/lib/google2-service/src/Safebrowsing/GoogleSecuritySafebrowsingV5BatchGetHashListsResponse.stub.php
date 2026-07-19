@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV5BatchGetHashListsResponse extends \Google\Collection
-{
-    protected $collection_key = 'hashLists';
-    protected $hashListsType = GoogleSecuritySafebrowsingV5HashList::class;
-    protected $hashListsDataType = 'array';
-    /**
-     * The hash lists in the same order given in the request.
-     *
-     * @param GoogleSecuritySafebrowsingV5HashList[] $hashLists
-     */
-    public function setHashLists($hashLists)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV5BatchGetHashListsResponse extends \Google\Collection
     {
+        protected $collection_key = 'hashLists';
+        protected $hashListsType = GoogleSecuritySafebrowsingV5HashList::class;
+        protected $hashListsDataType = 'array';
+        /**
+         * The hash lists in the same order given in the request.
+         *
+         * @param GoogleSecuritySafebrowsingV5HashList[] $hashLists
+         */
+        public function setHashLists($hashLists)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5HashList[]
+         */
+        public function getHashLists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV5HashList[]
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5BatchGetHashListsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHashLists()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV5BatchGetHashListsResponse extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5BatchGetHashListsResponse
     {
     }
 }

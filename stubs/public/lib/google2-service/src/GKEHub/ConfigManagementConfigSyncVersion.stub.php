@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementConfigSyncVersion extends \Google\Model
-{
-    /**
-     * Version of the deployed admission-webhook pod.
-     *
-     * @var string
-     */
-    public $admissionWebhook;
-    /**
-     * Version of the deployed git-sync pod.
-     *
-     * @var string
-     */
-    public $gitSync;
-    /**
-     * Version of the deployed importer pod.
-     *
-     * @var string
-     */
-    public $importer;
-    /**
-     * Version of the deployed monitor pod.
-     *
-     * @var string
-     */
-    public $monitor;
-    /**
-     * Version of the deployed otel-collector pod
-     *
-     * @var string
-     */
-    public $otelCollector;
-    /**
-     * Version of the deployed reconciler-manager pod.
-     *
-     * @var string
-     */
-    public $reconcilerManager;
-    /**
-     * Version of the deployed resource-group-controller-manager pod
-     *
-     * @var string
-     */
-    public $resourceGroupControllerManager;
-    /**
-     * Version of the deployed reconciler container in root-reconciler pod.
-     *
-     * @var string
-     */
-    public $rootReconciler;
-    /**
-     * Version of the deployed syncer pod.
-     *
-     * @var string
-     */
-    public $syncer;
-    /**
-     * Version of the deployed admission-webhook pod.
-     *
-     * @param string $admissionWebhook
-     */
-    public function setAdmissionWebhook($admissionWebhook)
+namespace Google\Service\GKEHub {
+    class ConfigManagementConfigSyncVersion extends \Google\Model
     {
+        /**
+         * Version of the deployed admission-webhook pod.
+         *
+         * @var string
+         */
+        public $admissionWebhook;
+        /**
+         * Version of the deployed git-sync pod.
+         *
+         * @var string
+         */
+        public $gitSync;
+        /**
+         * Version of the deployed importer pod.
+         *
+         * @var string
+         */
+        public $importer;
+        /**
+         * Version of the deployed monitor pod.
+         *
+         * @var string
+         */
+        public $monitor;
+        /**
+         * Version of the deployed otel-collector pod
+         *
+         * @var string
+         */
+        public $otelCollector;
+        /**
+         * Version of the deployed reconciler-manager pod.
+         *
+         * @var string
+         */
+        public $reconcilerManager;
+        /**
+         * Version of the deployed resource-group-controller-manager pod
+         *
+         * @var string
+         */
+        public $resourceGroupControllerManager;
+        /**
+         * Version of the deployed reconciler container in root-reconciler pod.
+         *
+         * @var string
+         */
+        public $rootReconciler;
+        /**
+         * Version of the deployed syncer pod.
+         *
+         * @var string
+         */
+        public $syncer;
+        /**
+         * Version of the deployed admission-webhook pod.
+         *
+         * @param string $admissionWebhook
+         */
+        public function setAdmissionWebhook($admissionWebhook)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdmissionWebhook()
+        {
+        }
+        /**
+         * Version of the deployed git-sync pod.
+         *
+         * @param string $gitSync
+         */
+        public function setGitSync($gitSync)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitSync()
+        {
+        }
+        /**
+         * Version of the deployed importer pod.
+         *
+         * @param string $importer
+         */
+        public function setImporter($importer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImporter()
+        {
+        }
+        /**
+         * Version of the deployed monitor pod.
+         *
+         * @param string $monitor
+         */
+        public function setMonitor($monitor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonitor()
+        {
+        }
+        /**
+         * Version of the deployed otel-collector pod
+         *
+         * @param string $otelCollector
+         */
+        public function setOtelCollector($otelCollector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOtelCollector()
+        {
+        }
+        /**
+         * Version of the deployed reconciler-manager pod.
+         *
+         * @param string $reconcilerManager
+         */
+        public function setReconcilerManager($reconcilerManager)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReconcilerManager()
+        {
+        }
+        /**
+         * Version of the deployed resource-group-controller-manager pod
+         *
+         * @param string $resourceGroupControllerManager
+         */
+        public function setResourceGroupControllerManager($resourceGroupControllerManager)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceGroupControllerManager()
+        {
+        }
+        /**
+         * Version of the deployed reconciler container in root-reconciler pod.
+         *
+         * @param string $rootReconciler
+         */
+        public function setRootReconciler($rootReconciler)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRootReconciler()
+        {
+        }
+        /**
+         * Version of the deployed syncer pod.
+         *
+         * @param string $syncer
+         */
+        public function setSyncer($syncer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementConfigSyncVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdmissionWebhook()
-    {
-    }
-    /**
-     * Version of the deployed git-sync pod.
-     *
-     * @param string $gitSync
-     */
-    public function setGitSync($gitSync)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitSync()
-    {
-    }
-    /**
-     * Version of the deployed importer pod.
-     *
-     * @param string $importer
-     */
-    public function setImporter($importer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImporter()
-    {
-    }
-    /**
-     * Version of the deployed monitor pod.
-     *
-     * @param string $monitor
-     */
-    public function setMonitor($monitor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonitor()
-    {
-    }
-    /**
-     * Version of the deployed otel-collector pod
-     *
-     * @param string $otelCollector
-     */
-    public function setOtelCollector($otelCollector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOtelCollector()
-    {
-    }
-    /**
-     * Version of the deployed reconciler-manager pod.
-     *
-     * @param string $reconcilerManager
-     */
-    public function setReconcilerManager($reconcilerManager)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReconcilerManager()
-    {
-    }
-    /**
-     * Version of the deployed resource-group-controller-manager pod
-     *
-     * @param string $resourceGroupControllerManager
-     */
-    public function setResourceGroupControllerManager($resourceGroupControllerManager)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceGroupControllerManager()
-    {
-    }
-    /**
-     * Version of the deployed reconciler container in root-reconciler pod.
-     *
-     * @param string $rootReconciler
-     */
-    public function setRootReconciler($rootReconciler)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRootReconciler()
-    {
-    }
-    /**
-     * Version of the deployed syncer pod.
-     *
-     * @param string $syncer
-     */
-    public function setSyncer($syncer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncer()
+    class Google_Service_GKEHub_ConfigManagementConfigSyncVersion extends \Google\Service\GKEHub\ConfigManagementConfigSyncVersion
     {
     }
 }

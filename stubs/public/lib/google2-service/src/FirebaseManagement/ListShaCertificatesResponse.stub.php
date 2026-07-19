@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class ListShaCertificatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'certificates';
-    protected $certificatesType = ShaCertificate::class;
-    protected $certificatesDataType = 'array';
-    /**
-     * The list of each `ShaCertificate` associated with the `AndroidApp`.
-     *
-     * @param ShaCertificate[] $certificates
-     */
-    public function setCertificates($certificates)
+namespace Google\Service\FirebaseManagement {
+    class ListShaCertificatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'certificates';
+        protected $certificatesType = ShaCertificate::class;
+        protected $certificatesDataType = 'array';
+        /**
+         * The list of each `ShaCertificate` associated with the `AndroidApp`.
+         *
+         * @param ShaCertificate[] $certificates
+         */
+        public function setCertificates($certificates)
+        {
+        }
+        /**
+         * @return ShaCertificate[]
+         */
+        public function getCertificates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ShaCertificate[]
+     * Runtime class alias of \Google\Service\FirebaseManagement\ListShaCertificatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificates()
+    class Google_Service_FirebaseManagement_ListShaCertificatesResponse extends \Google\Service\FirebaseManagement\ListShaCertificatesResponse
     {
     }
 }

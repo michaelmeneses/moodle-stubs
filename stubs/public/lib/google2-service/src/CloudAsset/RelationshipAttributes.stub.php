@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class RelationshipAttributes extends \Google\Model
-{
-    /**
-     * The detail of the relationship, e.g. `contains`, `attaches`
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * The source asset type. Example: `compute.googleapis.com/Instance`
-     *
-     * @var string
-     */
-    public $sourceResourceType;
-    /**
-     * The target asset type. Example: `compute.googleapis.com/Disk`
-     *
-     * @var string
-     */
-    public $targetResourceType;
-    /**
-     * The unique identifier of the relationship type. Example:
-     * `INSTANCE_TO_INSTANCEGROUP`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The detail of the relationship, e.g. `contains`, `attaches`
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\CloudAsset {
+    class RelationshipAttributes extends \Google\Model
     {
+        /**
+         * The detail of the relationship, e.g. `contains`, `attaches`
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * The source asset type. Example: `compute.googleapis.com/Instance`
+         *
+         * @var string
+         */
+        public $sourceResourceType;
+        /**
+         * The target asset type. Example: `compute.googleapis.com/Disk`
+         *
+         * @var string
+         */
+        public $targetResourceType;
+        /**
+         * The unique identifier of the relationship type. Example:
+         * `INSTANCE_TO_INSTANCEGROUP`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The detail of the relationship, e.g. `contains`, `attaches`
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The source asset type. Example: `compute.googleapis.com/Instance`
+         *
+         * @param string $sourceResourceType
+         */
+        public function setSourceResourceType($sourceResourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceResourceType()
+        {
+        }
+        /**
+         * The target asset type. Example: `compute.googleapis.com/Disk`
+         *
+         * @param string $targetResourceType
+         */
+        public function setTargetResourceType($targetResourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResourceType()
+        {
+        }
+        /**
+         * The unique identifier of the relationship type. Example:
+         * `INSTANCE_TO_INSTANCEGROUP`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\RelationshipAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The source asset type. Example: `compute.googleapis.com/Instance`
-     *
-     * @param string $sourceResourceType
-     */
-    public function setSourceResourceType($sourceResourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceResourceType()
-    {
-    }
-    /**
-     * The target asset type. Example: `compute.googleapis.com/Disk`
-     *
-     * @param string $targetResourceType
-     */
-    public function setTargetResourceType($targetResourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResourceType()
-    {
-    }
-    /**
-     * The unique identifier of the relationship type. Example:
-     * `INSTANCE_TO_INSTANCEGROUP`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudAsset_RelationshipAttributes extends \Google\Service\CloudAsset\RelationshipAttributes
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class MoveFileRequest extends \Google\Model
-{
-    /**
-     * Required. The file's new path including filename, relative to the workspace
-     * root.
-     *
-     * @var string
-     */
-    public $newPath;
-    /**
-     * Required. The file's full path including filename, relative to the
-     * workspace root.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. The file's new path including filename, relative to the workspace
-     * root.
-     *
-     * @param string $newPath
-     */
-    public function setNewPath($newPath)
+namespace Google\Service\Dataform {
+    class MoveFileRequest extends \Google\Model
     {
+        /**
+         * Required. The file's new path including filename, relative to the workspace
+         * root.
+         *
+         * @var string
+         */
+        public $newPath;
+        /**
+         * Required. The file's full path including filename, relative to the
+         * workspace root.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. The file's new path including filename, relative to the workspace
+         * root.
+         *
+         * @param string $newPath
+         */
+        public function setNewPath($newPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewPath()
+        {
+        }
+        /**
+         * Required. The file's full path including filename, relative to the
+         * workspace root.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\MoveFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewPath()
-    {
-    }
-    /**
-     * Required. The file's full path including filename, relative to the
-     * workspace root.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Dataform_MoveFileRequest extends \Google\Service\Dataform\MoveFileRequest
     {
     }
 }

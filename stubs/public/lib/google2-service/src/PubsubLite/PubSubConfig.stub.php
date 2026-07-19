@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class PubSubConfig extends \Google\Model
-{
-    /**
-     * The name of the Pub/Sub topic. Structured like:
-     * projects/{project_number}/topics/{topic_id}. The topic may be changed.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * The name of the Pub/Sub topic. Structured like:
-     * projects/{project_number}/topics/{topic_id}. The topic may be changed.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
+namespace Google\Service\PubsubLite {
+    class PubSubConfig extends \Google\Model
     {
+        /**
+         * The name of the Pub/Sub topic. Structured like:
+         * projects/{project_number}/topics/{topic_id}. The topic may be changed.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * The name of the Pub/Sub topic. Structured like:
+         * projects/{project_number}/topics/{topic_id}. The topic may be changed.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\PubSubConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_PubsubLite_PubSubConfig extends \Google\Service\PubsubLite\PubSubConfig
     {
     }
 }

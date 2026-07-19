@@ -21,105 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager\Resource;
-
-/**
- * The "certificateMaps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $certificatemanagerService = new Google\Service\CertificateManager(...);
- *   $certificateMaps = $certificatemanagerService->projects_locations_certificateMaps;
- *  </code>
- */
-class ProjectsLocationsCertificateMaps extends \Google\Service\Resource
-{
+namespace Google\Service\CertificateManager\Resource {
+    use Google\Service\CertificateManager\CertificateMap;
+    use Google\Service\CertificateManager\ListCertificateMapsResponse;
+    use Google\Service\CertificateManager\Operation;
     /**
-     * Creates a new CertificateMap in a given project and location.
-     * (certificateMaps.create)
-     *
-     * @param string $parent Required. The parent resource of the certificate map.
-     * Must be in the format `projects/locations`.
-     * @param CertificateMap $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string certificateMapId Required. A user-provided name of the
-     * certificate map.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "certificateMaps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $certificatemanagerService = new Google\Service\CertificateManager(...);
+     *   $certificateMaps = $certificatemanagerService->projects_locations_certificateMaps;
+     *  </code>
      */
-    public function create($parent, CertificateMap $postBody, $optParams = [])
+    class ProjectsLocationsCertificateMaps extends \Google\Service\Resource
     {
+        /**
+         * Creates a new CertificateMap in a given project and location.
+         * (certificateMaps.create)
+         *
+         * @param string $parent Required. The parent resource of the certificate map.
+         * Must be in the format `projects/locations`.
+         * @param CertificateMap $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string certificateMapId Required. A user-provided name of the
+         * certificate map.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CertificateMap $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single CertificateMap. A Certificate Map can't be deleted if it
+         * contains Certificate Map Entries. Remove all the entries from the map before
+         * calling this method. (certificateMaps.delete)
+         *
+         * @param string $name Required. A name of the certificate map to delete. Must
+         * be in the format `projects/locations/certificateMaps`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single CertificateMap. (certificateMaps.get)
+         *
+         * @param string $name Required. A name of the certificate map to describe. Must
+         * be in the format `projects/locations/certificateMaps`.
+         * @param array $optParams Optional parameters.
+         * @return CertificateMap
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists CertificateMaps in a given project and location.
+         * (certificateMaps.listProjectsLocationsCertificateMaps)
+         *
+         * @param string $parent Required. The project and location from which the
+         * certificate maps should be listed, specified in the format
+         * `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression to restrict the
+         * Certificates Maps returned.
+         * @opt_param string orderBy Optional. A list of Certificate Map field names
+         * used to specify the order of the returned results. The default sorting order
+         * is ascending. To specify descending order for a field, add a suffix `"
+         * desc"`.
+         * @opt_param int pageSize Optional. Maximum number of certificate maps to
+         * return per call.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListCertificateMapsResponse`. Indicates that this is a continuation of a
+         * prior `ListCertificateMaps` call, and that the system should return the next
+         * page of data.
+         * @return ListCertificateMapsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCertificateMaps($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a CertificateMap. (certificateMaps.patch)
+         *
+         * @param string $name Identifier. A user-defined name of the Certificate Map.
+         * Certificate Map names must be unique globally and match pattern
+         * `projects/locations/certificateMaps`.
+         * @param CertificateMap $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The update mask applies to the
+         * resource. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, CertificateMap $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single CertificateMap. A Certificate Map can't be deleted if it
-     * contains Certificate Map Entries. Remove all the entries from the map before
-     * calling this method. (certificateMaps.delete)
-     *
-     * @param string $name Required. A name of the certificate map to delete. Must
-     * be in the format `projects/locations/certificateMaps`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificateMaps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single CertificateMap. (certificateMaps.get)
-     *
-     * @param string $name Required. A name of the certificate map to describe. Must
-     * be in the format `projects/locations/certificateMaps`.
-     * @param array $optParams Optional parameters.
-     * @return CertificateMap
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists CertificateMaps in a given project and location.
-     * (certificateMaps.listProjectsLocationsCertificateMaps)
-     *
-     * @param string $parent Required. The project and location from which the
-     * certificate maps should be listed, specified in the format
-     * `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression to restrict the
-     * Certificates Maps returned.
-     * @opt_param string orderBy Optional. A list of Certificate Map field names
-     * used to specify the order of the returned results. The default sorting order
-     * is ascending. To specify descending order for a field, add a suffix `"
-     * desc"`.
-     * @opt_param int pageSize Optional. Maximum number of certificate maps to
-     * return per call.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListCertificateMapsResponse`. Indicates that this is a continuation of a
-     * prior `ListCertificateMaps` call, and that the system should return the next
-     * page of data.
-     * @return ListCertificateMapsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsCertificateMaps($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a CertificateMap. (certificateMaps.patch)
-     *
-     * @param string $name Identifier. A user-defined name of the Certificate Map.
-     * Certificate Map names must be unique globally and match pattern
-     * `projects/locations/certificateMaps`.
-     * @param CertificateMap $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The update mask applies to the
-     * resource. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, CertificateMap $postBody, $optParams = [])
+    class Google_Service_CertificateManager_Resource_ProjectsLocationsCertificateMaps extends \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificateMaps
     {
     }
 }

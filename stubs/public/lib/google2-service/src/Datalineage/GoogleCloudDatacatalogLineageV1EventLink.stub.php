@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1EventLink extends \Google\Model
-{
-    protected $sourceType = GoogleCloudDatacatalogLineageV1EntityReference::class;
-    protected $sourceDataType = '';
-    protected $targetType = GoogleCloudDatacatalogLineageV1EntityReference::class;
-    protected $targetDataType = '';
-    /**
-     * Required. Reference to the source entity
-     *
-     * @param GoogleCloudDatacatalogLineageV1EntityReference $source
-     */
-    public function setSource(GoogleCloudDatacatalogLineageV1EntityReference $source)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1EventLink extends \Google\Model
     {
+        protected $sourceType = GoogleCloudDatacatalogLineageV1EntityReference::class;
+        protected $sourceDataType = '';
+        protected $targetType = GoogleCloudDatacatalogLineageV1EntityReference::class;
+        protected $targetDataType = '';
+        /**
+         * Required. Reference to the source entity
+         *
+         * @param GoogleCloudDatacatalogLineageV1EntityReference $source
+         */
+        public function setSource(GoogleCloudDatacatalogLineageV1EntityReference $source)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1EntityReference
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Required. Reference to the target entity
+         *
+         * @param GoogleCloudDatacatalogLineageV1EntityReference $target
+         */
+        public function setTarget(GoogleCloudDatacatalogLineageV1EntityReference $target)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1EntityReference
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogLineageV1EntityReference
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1EventLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * Required. Reference to the target entity
-     *
-     * @param GoogleCloudDatacatalogLineageV1EntityReference $target
-     */
-    public function setTarget(GoogleCloudDatacatalogLineageV1EntityReference $target)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1EntityReference
-     */
-    public function getTarget()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1EventLink extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1EventLink
     {
     }
 }

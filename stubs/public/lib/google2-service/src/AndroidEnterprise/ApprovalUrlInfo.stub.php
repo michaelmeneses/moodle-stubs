@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ApprovalUrlInfo extends \Google\Model
-{
-    /**
-     * A URL that displays a product's permissions and that can also be used to
-     * approve the product with the Products.approve call.
-     *
-     * @var string
-     */
-    public $approvalUrl;
-    /**
-     * A URL that displays a product's permissions and that can also be used to
-     * approve the product with the Products.approve call.
-     *
-     * @param string $approvalUrl
-     */
-    public function setApprovalUrl($approvalUrl)
+namespace Google\Service\AndroidEnterprise {
+    class ApprovalUrlInfo extends \Google\Model
     {
+        /**
+         * A URL that displays a product's permissions and that can also be used to
+         * approve the product with the Products.approve call.
+         *
+         * @var string
+         */
+        public $approvalUrl;
+        /**
+         * A URL that displays a product's permissions and that can also be used to
+         * approve the product with the Products.approve call.
+         *
+         * @param string $approvalUrl
+         */
+        public function setApprovalUrl($approvalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApprovalUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ApprovalUrlInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalUrl()
+    class Google_Service_AndroidEnterprise_ApprovalUrlInfo extends \Google\Service\AndroidEnterprise\ApprovalUrlInfo
     {
     }
 }

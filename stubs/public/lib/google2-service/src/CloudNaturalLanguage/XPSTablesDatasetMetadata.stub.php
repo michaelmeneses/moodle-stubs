@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesDatasetMetadata extends \Google\Model
-{
-    /**
-     * Id the column to split the table.
-     *
-     * @var int
-     */
-    public $mlUseColumnId;
-    protected $primaryTableSpecType = XPSTableSpec::class;
-    protected $primaryTableSpecDataType = '';
-    protected $targetColumnCorrelationsType = XPSCorrelationStats::class;
-    protected $targetColumnCorrelationsDataType = 'map';
-    /**
-     * Id of the primary table column that should be used as the training label.
-     *
-     * @var int
-     */
-    public $targetColumnId;
-    /**
-     * Id of the primary table column that should be used as the weight column.
-     *
-     * @var int
-     */
-    public $weightColumnId;
-    /**
-     * Id the column to split the table.
-     *
-     * @param int $mlUseColumnId
-     */
-    public function setMlUseColumnId($mlUseColumnId)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesDatasetMetadata extends \Google\Model
     {
+        /**
+         * Id the column to split the table.
+         *
+         * @var int
+         */
+        public $mlUseColumnId;
+        protected $primaryTableSpecType = XPSTableSpec::class;
+        protected $primaryTableSpecDataType = '';
+        protected $targetColumnCorrelationsType = XPSCorrelationStats::class;
+        protected $targetColumnCorrelationsDataType = 'map';
+        /**
+         * Id of the primary table column that should be used as the training label.
+         *
+         * @var int
+         */
+        public $targetColumnId;
+        /**
+         * Id of the primary table column that should be used as the weight column.
+         *
+         * @var int
+         */
+        public $weightColumnId;
+        /**
+         * Id the column to split the table.
+         *
+         * @param int $mlUseColumnId
+         */
+        public function setMlUseColumnId($mlUseColumnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMlUseColumnId()
+        {
+        }
+        /**
+         * Primary table.
+         *
+         * @param XPSTableSpec $primaryTableSpec
+         */
+        public function setPrimaryTableSpec(XPSTableSpec $primaryTableSpec)
+        {
+        }
+        /**
+         * @return XPSTableSpec
+         */
+        public function getPrimaryTableSpec()
+        {
+        }
+        /**
+         * (the column id : its CorrelationStats with target column).
+         *
+         * @param XPSCorrelationStats[] $targetColumnCorrelations
+         */
+        public function setTargetColumnCorrelations($targetColumnCorrelations)
+        {
+        }
+        /**
+         * @return XPSCorrelationStats[]
+         */
+        public function getTargetColumnCorrelations()
+        {
+        }
+        /**
+         * Id of the primary table column that should be used as the training label.
+         *
+         * @param int $targetColumnId
+         */
+        public function setTargetColumnId($targetColumnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetColumnId()
+        {
+        }
+        /**
+         * Id of the primary table column that should be used as the weight column.
+         *
+         * @param int $weightColumnId
+         */
+        public function setWeightColumnId($weightColumnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeightColumnId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesDatasetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMlUseColumnId()
-    {
-    }
-    /**
-     * Primary table.
-     *
-     * @param XPSTableSpec $primaryTableSpec
-     */
-    public function setPrimaryTableSpec(XPSTableSpec $primaryTableSpec)
-    {
-    }
-    /**
-     * @return XPSTableSpec
-     */
-    public function getPrimaryTableSpec()
-    {
-    }
-    /**
-     * (the column id : its CorrelationStats with target column).
-     *
-     * @param XPSCorrelationStats[] $targetColumnCorrelations
-     */
-    public function setTargetColumnCorrelations($targetColumnCorrelations)
-    {
-    }
-    /**
-     * @return XPSCorrelationStats[]
-     */
-    public function getTargetColumnCorrelations()
-    {
-    }
-    /**
-     * Id of the primary table column that should be used as the training label.
-     *
-     * @param int $targetColumnId
-     */
-    public function setTargetColumnId($targetColumnId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetColumnId()
-    {
-    }
-    /**
-     * Id of the primary table column that should be used as the weight column.
-     *
-     * @param int $weightColumnId
-     */
-    public function setWeightColumnId($weightColumnId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeightColumnId()
+    class Google_Service_CloudNaturalLanguage_XPSTablesDatasetMetadata extends \Google\Service\CloudNaturalLanguage\XPSTablesDatasetMetadata
     {
     }
 }

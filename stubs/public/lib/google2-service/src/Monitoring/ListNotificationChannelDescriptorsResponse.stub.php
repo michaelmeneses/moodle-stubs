@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListNotificationChannelDescriptorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'channelDescriptors';
-    protected $channelDescriptorsType = NotificationChannelDescriptor::class;
-    protected $channelDescriptorsDataType = 'array';
-    /**
-     * If not empty, indicates that there may be more results that match the
-     * request. Use the value in the page_token field in a subsequent request to
-     * fetch the next set of results. If empty, all results have been returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The monitored resource descriptors supported for the specified project,
-     * optionally filtered.
-     *
-     * @param NotificationChannelDescriptor[] $channelDescriptors
-     */
-    public function setChannelDescriptors($channelDescriptors)
+namespace Google\Service\Monitoring {
+    class ListNotificationChannelDescriptorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'channelDescriptors';
+        protected $channelDescriptorsType = NotificationChannelDescriptor::class;
+        protected $channelDescriptorsDataType = 'array';
+        /**
+         * If not empty, indicates that there may be more results that match the
+         * request. Use the value in the page_token field in a subsequent request to
+         * fetch the next set of results. If empty, all results have been returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The monitored resource descriptors supported for the specified project,
+         * optionally filtered.
+         *
+         * @param NotificationChannelDescriptor[] $channelDescriptors
+         */
+        public function setChannelDescriptors($channelDescriptors)
+        {
+        }
+        /**
+         * @return NotificationChannelDescriptor[]
+         */
+        public function getChannelDescriptors()
+        {
+        }
+        /**
+         * If not empty, indicates that there may be more results that match the
+         * request. Use the value in the page_token field in a subsequent request to
+         * fetch the next set of results. If empty, all results have been returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NotificationChannelDescriptor[]
+     * Runtime class alias of \Google\Service\Monitoring\ListNotificationChannelDescriptorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelDescriptors()
-    {
-    }
-    /**
-     * If not empty, indicates that there may be more results that match the
-     * request. Use the value in the page_token field in a subsequent request to
-     * fetch the next set of results. If empty, all results have been returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Monitoring_ListNotificationChannelDescriptorsResponse extends \Google\Service\Monitoring\ListNotificationChannelDescriptorsResponse
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class MachineTypesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'machineTypes';
-    protected $machineTypesType = MachineType::class;
-    protected $machineTypesDataType = 'array';
-    protected $warningType = MachineTypesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of machine types contained in this scope.
-     *
-     * @param MachineType[] $machineTypes
-     */
-    public function setMachineTypes($machineTypes)
+namespace Google\Service\Compute {
+    class MachineTypesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'machineTypes';
+        protected $machineTypesType = MachineType::class;
+        protected $machineTypesDataType = 'array';
+        protected $warningType = MachineTypesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of machine types contained in this scope.
+         *
+         * @param MachineType[] $machineTypes
+         */
+        public function setMachineTypes($machineTypes)
+        {
+        }
+        /**
+         * @return MachineType[]
+         */
+        public function getMachineTypes()
+        {
+        }
+        /**
+         * [Output Only] An informational warning that appears when the machine types
+         * list is empty.
+         *
+         * @param MachineTypesScopedListWarning $warning
+         */
+        public function setWarning(MachineTypesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return MachineTypesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MachineType[]
+     * Runtime class alias of \Google\Service\Compute\MachineTypesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineTypes()
-    {
-    }
-    /**
-     * [Output Only] An informational warning that appears when the machine types
-     * list is empty.
-     *
-     * @param MachineTypesScopedListWarning $warning
-     */
-    public function setWarning(MachineTypesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return MachineTypesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_MachineTypesScopedList extends \Google\Service\Compute\MachineTypesScopedList
     {
     }
 }

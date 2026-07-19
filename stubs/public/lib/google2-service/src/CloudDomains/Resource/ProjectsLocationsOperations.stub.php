@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $domainsService = new Google\Service\CloudDomains(...);
- *   $operations = $domainsService->projects_locations_operations;
- *  </code>
- */
-class ProjectsLocationsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDomains\Resource {
+    use Google\Service\CloudDomains\ListOperationsResponse;
+    use Google\Service\CloudDomains\Operation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $domainsService = new Google\Service\CloudDomains(...);
+     *   $operations = $domainsService->projects_locations_operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsOperations extends \Google\Service\Resource
     {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`.
+         * (operations.listProjectsLocationsOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @return ListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`.
-     * (operations.listProjectsLocationsOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @return ListOperationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudDomains\Resource\ProjectsLocationsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsOperations($name, $optParams = [])
+    class Google_Service_CloudDomains_Resource_ProjectsLocationsOperations extends \Google\Service\CloudDomains\Resource\ProjectsLocationsOperations
     {
     }
 }

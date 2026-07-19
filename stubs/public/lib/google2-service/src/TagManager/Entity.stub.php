@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Entity extends \Google\Model
-{
-    public const CHANGE_STATUS_changeStatusUnspecified = 'changeStatusUnspecified';
-    /**
-     * The entity has never been changed.
-     */
-    public const CHANGE_STATUS_none = 'none';
-    /**
-     * The entity is added to the workspace.
-     */
-    public const CHANGE_STATUS_added = 'added';
-    /**
-     * The entity is deleted from the workspace.
-     */
-    public const CHANGE_STATUS_deleted = 'deleted';
-    /**
-     * The entity has been updated in the workspace.
-     */
-    public const CHANGE_STATUS_updated = 'updated';
-    protected $builtInVariableType = BuiltInVariable::class;
-    protected $builtInVariableDataType = '';
-    /**
-     * Represents how the entity has been changed in the workspace.
-     *
-     * @var string
-     */
-    public $changeStatus;
-    protected $clientType = Client::class;
-    protected $clientDataType = '';
-    protected $customTemplateType = CustomTemplate::class;
-    protected $customTemplateDataType = '';
-    protected $folderType = Folder::class;
-    protected $folderDataType = '';
-    protected $gtagConfigType = GtagConfig::class;
-    protected $gtagConfigDataType = '';
-    protected $tagType = Tag::class;
-    protected $tagDataType = '';
-    protected $transformationType = Transformation::class;
-    protected $transformationDataType = '';
-    protected $triggerType = Trigger::class;
-    protected $triggerDataType = '';
-    protected $variableType = Variable::class;
-    protected $variableDataType = '';
-    protected $zoneType = Zone::class;
-    protected $zoneDataType = '';
-    /**
-     * The built in variable being represented by the entity.
-     *
-     * @param BuiltInVariable $builtInVariable
-     */
-    public function setBuiltInVariable(BuiltInVariable $builtInVariable)
+namespace Google\Service\TagManager {
+    class Entity extends \Google\Model
     {
+        public const CHANGE_STATUS_changeStatusUnspecified = 'changeStatusUnspecified';
+        /**
+         * The entity has never been changed.
+         */
+        public const CHANGE_STATUS_none = 'none';
+        /**
+         * The entity is added to the workspace.
+         */
+        public const CHANGE_STATUS_added = 'added';
+        /**
+         * The entity is deleted from the workspace.
+         */
+        public const CHANGE_STATUS_deleted = 'deleted';
+        /**
+         * The entity has been updated in the workspace.
+         */
+        public const CHANGE_STATUS_updated = 'updated';
+        protected $builtInVariableType = BuiltInVariable::class;
+        protected $builtInVariableDataType = '';
+        /**
+         * Represents how the entity has been changed in the workspace.
+         *
+         * @var string
+         */
+        public $changeStatus;
+        protected $clientType = Client::class;
+        protected $clientDataType = '';
+        protected $customTemplateType = CustomTemplate::class;
+        protected $customTemplateDataType = '';
+        protected $folderType = Folder::class;
+        protected $folderDataType = '';
+        protected $gtagConfigType = GtagConfig::class;
+        protected $gtagConfigDataType = '';
+        protected $tagType = Tag::class;
+        protected $tagDataType = '';
+        protected $transformationType = Transformation::class;
+        protected $transformationDataType = '';
+        protected $triggerType = Trigger::class;
+        protected $triggerDataType = '';
+        protected $variableType = Variable::class;
+        protected $variableDataType = '';
+        protected $zoneType = Zone::class;
+        protected $zoneDataType = '';
+        /**
+         * The built in variable being represented by the entity.
+         *
+         * @param BuiltInVariable $builtInVariable
+         */
+        public function setBuiltInVariable(BuiltInVariable $builtInVariable)
+        {
+        }
+        /**
+         * @return BuiltInVariable
+         */
+        public function getBuiltInVariable()
+        {
+        }
+        /**
+         * Represents how the entity has been changed in the workspace.
+         *
+         * Accepted values: changeStatusUnspecified, none, added, deleted, updated
+         *
+         * @param self::CHANGE_STATUS_* $changeStatus
+         */
+        public function setChangeStatus($changeStatus)
+        {
+        }
+        /**
+         * @return self::CHANGE_STATUS_*
+         */
+        public function getChangeStatus()
+        {
+        }
+        /**
+         * The client being represented by the entity.
+         *
+         * @param Client $client
+         */
+        public function setClient(Client $client)
+        {
+        }
+        /**
+         * @return Client
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * The custom template being represented by the entity.
+         *
+         * @param CustomTemplate $customTemplate
+         */
+        public function setCustomTemplate(CustomTemplate $customTemplate)
+        {
+        }
+        /**
+         * @return CustomTemplate
+         */
+        public function getCustomTemplate()
+        {
+        }
+        /**
+         * The folder being represented by the entity.
+         *
+         * @param Folder $folder
+         */
+        public function setFolder(Folder $folder)
+        {
+        }
+        /**
+         * @return Folder
+         */
+        public function getFolder()
+        {
+        }
+        /**
+         * The gtag config being represented by the entity.
+         *
+         * @param GtagConfig $gtagConfig
+         */
+        public function setGtagConfig(GtagConfig $gtagConfig)
+        {
+        }
+        /**
+         * @return GtagConfig
+         */
+        public function getGtagConfig()
+        {
+        }
+        /**
+         * The tag being represented by the entity.
+         *
+         * @param Tag $tag
+         */
+        public function setTag(Tag $tag)
+        {
+        }
+        /**
+         * @return Tag
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * The transformation being represented by the entity.
+         *
+         * @param Transformation $transformation
+         */
+        public function setTransformation(Transformation $transformation)
+        {
+        }
+        /**
+         * @return Transformation
+         */
+        public function getTransformation()
+        {
+        }
+        /**
+         * The trigger being represented by the entity.
+         *
+         * @param Trigger $trigger
+         */
+        public function setTrigger(Trigger $trigger)
+        {
+        }
+        /**
+         * @return Trigger
+         */
+        public function getTrigger()
+        {
+        }
+        /**
+         * The variable being represented by the entity.
+         *
+         * @param Variable $variable
+         */
+        public function setVariable(Variable $variable)
+        {
+        }
+        /**
+         * @return Variable
+         */
+        public function getVariable()
+        {
+        }
+        /**
+         * The zone being represented by the entity.
+         *
+         * @param Zone $zone
+         */
+        public function setZone(Zone $zone)
+        {
+        }
+        /**
+         * @return Zone
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuiltInVariable
+     * Runtime class alias of \Google\Service\TagManager\Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuiltInVariable()
-    {
-    }
-    /**
-     * Represents how the entity has been changed in the workspace.
-     *
-     * Accepted values: changeStatusUnspecified, none, added, deleted, updated
-     *
-     * @param self::CHANGE_STATUS_* $changeStatus
-     */
-    public function setChangeStatus($changeStatus)
-    {
-    }
-    /**
-     * @return self::CHANGE_STATUS_*
-     */
-    public function getChangeStatus()
-    {
-    }
-    /**
-     * The client being represented by the entity.
-     *
-     * @param Client $client
-     */
-    public function setClient(Client $client)
-    {
-    }
-    /**
-     * @return Client
-     */
-    public function getClient()
-    {
-    }
-    /**
-     * The custom template being represented by the entity.
-     *
-     * @param CustomTemplate $customTemplate
-     */
-    public function setCustomTemplate(CustomTemplate $customTemplate)
-    {
-    }
-    /**
-     * @return CustomTemplate
-     */
-    public function getCustomTemplate()
-    {
-    }
-    /**
-     * The folder being represented by the entity.
-     *
-     * @param Folder $folder
-     */
-    public function setFolder(Folder $folder)
-    {
-    }
-    /**
-     * @return Folder
-     */
-    public function getFolder()
-    {
-    }
-    /**
-     * The gtag config being represented by the entity.
-     *
-     * @param GtagConfig $gtagConfig
-     */
-    public function setGtagConfig(GtagConfig $gtagConfig)
-    {
-    }
-    /**
-     * @return GtagConfig
-     */
-    public function getGtagConfig()
-    {
-    }
-    /**
-     * The tag being represented by the entity.
-     *
-     * @param Tag $tag
-     */
-    public function setTag(Tag $tag)
-    {
-    }
-    /**
-     * @return Tag
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * The transformation being represented by the entity.
-     *
-     * @param Transformation $transformation
-     */
-    public function setTransformation(Transformation $transformation)
-    {
-    }
-    /**
-     * @return Transformation
-     */
-    public function getTransformation()
-    {
-    }
-    /**
-     * The trigger being represented by the entity.
-     *
-     * @param Trigger $trigger
-     */
-    public function setTrigger(Trigger $trigger)
-    {
-    }
-    /**
-     * @return Trigger
-     */
-    public function getTrigger()
-    {
-    }
-    /**
-     * The variable being represented by the entity.
-     *
-     * @param Variable $variable
-     */
-    public function setVariable(Variable $variable)
-    {
-    }
-    /**
-     * @return Variable
-     */
-    public function getVariable()
-    {
-    }
-    /**
-     * The zone being represented by the entity.
-     *
-     * @param Zone $zone
-     */
-    public function setZone(Zone $zone)
-    {
-    }
-    /**
-     * @return Zone
-     */
-    public function getZone()
+    class Google_Service_TagManager_Entity extends \Google\Service\TagManager\Entity
     {
     }
 }

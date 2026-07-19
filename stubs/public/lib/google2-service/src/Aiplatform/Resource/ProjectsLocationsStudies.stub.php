@@ -21,86 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "studies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $studies = $aiplatformService->projects_locations_studies;
- *  </code>
- */
-class ProjectsLocationsStudies extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListStudiesResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1LookupStudyRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1Study;
+    use Google\Service\Aiplatform\GoogleProtobufEmpty;
     /**
-     * Creates a Study. A resource name will be generated after creation of the
-     * Study. (studies.create)
-     *
-     * @param string $parent Required. The resource name of the Location to create
-     * the CustomJob in. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudAiplatformV1Study $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1Study
-     * @throws \Google\Service\Exception
+     * The "studies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $studies = $aiplatformService->projects_locations_studies;
+     *  </code>
      */
-    public function create($parent, GoogleCloudAiplatformV1Study $postBody, $optParams = [])
+    class ProjectsLocationsStudies extends \Google\Service\Resource
     {
+        /**
+         * Creates a Study. A resource name will be generated after creation of the
+         * Study. (studies.create)
+         *
+         * @param string $parent Required. The resource name of the Location to create
+         * the CustomJob in. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudAiplatformV1Study $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1Study
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudAiplatformV1Study $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Study. (studies.delete)
+         *
+         * @param string $name Required. The name of the Study resource to be deleted.
+         * Format: `projects/{project}/locations/{location}/studies/{study}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Study by name. (studies.get)
+         *
+         * @param string $name Required. The name of the Study resource. Format:
+         * `projects/{project}/locations/{location}/studies/{study}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1Study
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the studies in a region for an associated project.
+         * (studies.listProjectsLocationsStudies)
+         *
+         * @param string $parent Required. The resource name of the Location to list the
+         * Study from. Format: `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of studies to return per
+         * "page" of results. If unspecified, service will pick an appropriate default.
+         * @opt_param string pageToken Optional. A page token to request the next page
+         * of results. If unspecified, there are no subsequent pages.
+         * @return GoogleCloudAiplatformV1ListStudiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsStudies($parent, $optParams = [])
+        {
+        }
+        /**
+         * Looks a study up using the user-defined display_name field instead of the
+         * fully qualified resource name. (studies.lookup)
+         *
+         * @param string $parent Required. The resource name of the Location to get the
+         * Study from. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudAiplatformV1LookupStudyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1Study
+         * @throws \Google\Service\Exception
+         */
+        public function lookup($parent, GoogleCloudAiplatformV1LookupStudyRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a Study. (studies.delete)
-     *
-     * @param string $name Required. The name of the Study resource to be deleted.
-     * Format: `projects/{project}/locations/{location}/studies/{study}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsStudies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a Study by name. (studies.get)
-     *
-     * @param string $name Required. The name of the Study resource. Format:
-     * `projects/{project}/locations/{location}/studies/{study}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1Study
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the studies in a region for an associated project.
-     * (studies.listProjectsLocationsStudies)
-     *
-     * @param string $parent Required. The resource name of the Location to list the
-     * Study from. Format: `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of studies to return per
-     * "page" of results. If unspecified, service will pick an appropriate default.
-     * @opt_param string pageToken Optional. A page token to request the next page
-     * of results. If unspecified, there are no subsequent pages.
-     * @return GoogleCloudAiplatformV1ListStudiesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsStudies($parent, $optParams = [])
-    {
-    }
-    /**
-     * Looks a study up using the user-defined display_name field instead of the
-     * fully qualified resource name. (studies.lookup)
-     *
-     * @param string $parent Required. The resource name of the Location to get the
-     * Study from. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudAiplatformV1LookupStudyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1Study
-     * @throws \Google\Service\Exception
-     */
-    public function lookup($parent, GoogleCloudAiplatformV1LookupStudyRequest $postBody, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsStudies extends \Google\Service\Aiplatform\Resource\ProjectsLocationsStudies
     {
     }
 }

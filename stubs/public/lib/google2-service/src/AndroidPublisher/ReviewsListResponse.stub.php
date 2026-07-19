@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ReviewsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'reviews';
-    protected $pageInfoType = PageInfo::class;
-    protected $pageInfoDataType = '';
-    protected $reviewsType = Review::class;
-    protected $reviewsDataType = 'array';
-    protected $tokenPaginationType = TokenPagination::class;
-    protected $tokenPaginationDataType = '';
-    /**
-     * Information about the current page.
-     *
-     * @param PageInfo $pageInfo
-     */
-    public function setPageInfo(PageInfo $pageInfo)
+namespace Google\Service\AndroidPublisher {
+    class ReviewsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'reviews';
+        protected $pageInfoType = PageInfo::class;
+        protected $pageInfoDataType = '';
+        protected $reviewsType = Review::class;
+        protected $reviewsDataType = 'array';
+        protected $tokenPaginationType = TokenPagination::class;
+        protected $tokenPaginationDataType = '';
+        /**
+         * Information about the current page.
+         *
+         * @param PageInfo $pageInfo
+         */
+        public function setPageInfo(PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * List of reviews.
+         *
+         * @param Review[] $reviews
+         */
+        public function setReviews($reviews)
+        {
+        }
+        /**
+         * @return Review[]
+         */
+        public function getReviews()
+        {
+        }
+        /**
+         * Pagination token, to handle a number of products that is over one page.
+         *
+         * @param TokenPagination $tokenPagination
+         */
+        public function setTokenPagination(TokenPagination $tokenPagination)
+        {
+        }
+        /**
+         * @return TokenPagination
+         */
+        public function getTokenPagination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PageInfo
+     * Runtime class alias of \Google\Service\AndroidPublisher\ReviewsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * List of reviews.
-     *
-     * @param Review[] $reviews
-     */
-    public function setReviews($reviews)
-    {
-    }
-    /**
-     * @return Review[]
-     */
-    public function getReviews()
-    {
-    }
-    /**
-     * Pagination token, to handle a number of products that is over one page.
-     *
-     * @param TokenPagination $tokenPagination
-     */
-    public function setTokenPagination(TokenPagination $tokenPagination)
-    {
-    }
-    /**
-     * @return TokenPagination
-     */
-    public function getTokenPagination()
+    class Google_Service_AndroidPublisher_ReviewsListResponse extends \Google\Service\AndroidPublisher\ReviewsListResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class BuildNote extends \Google\Model
-{
-    /**
-     * Required. Immutable. Version of the builder which produced this build.
-     *
-     * @var string
-     */
-    public $builderVersion;
-    /**
-     * Required. Immutable. Version of the builder which produced this build.
-     *
-     * @param string $builderVersion
-     */
-    public function setBuilderVersion($builderVersion)
+namespace Google\Service\ContainerAnalysis {
+    class BuildNote extends \Google\Model
     {
+        /**
+         * Required. Immutable. Version of the builder which produced this build.
+         *
+         * @var string
+         */
+        public $builderVersion;
+        /**
+         * Required. Immutable. Version of the builder which produced this build.
+         *
+         * @param string $builderVersion
+         */
+        public function setBuilderVersion($builderVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuilderVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\BuildNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilderVersion()
+    class Google_Service_ContainerAnalysis_BuildNote extends \Google\Service\ContainerAnalysis\BuildNote
     {
     }
 }

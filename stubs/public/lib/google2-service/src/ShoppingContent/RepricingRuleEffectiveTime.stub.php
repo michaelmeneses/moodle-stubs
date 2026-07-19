@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleEffectiveTime extends \Google\Collection
-{
-    protected $collection_key = 'fixedTimePeriods';
-    /**
-     * @var RepricingRuleEffectiveTimeFixedTimePeriod[]
-     */
-    public $fixedTimePeriods;
-    protected $fixedTimePeriodsType = RepricingRuleEffectiveTimeFixedTimePeriod::class;
-    protected $fixedTimePeriodsDataType = 'array';
-    /**
-     * @param RepricingRuleEffectiveTimeFixedTimePeriod[]
-     */
-    public function setFixedTimePeriods($fixedTimePeriods)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleEffectiveTime extends \Google\Collection
     {
+        protected $collection_key = 'fixedTimePeriods';
+        /**
+         * @var RepricingRuleEffectiveTimeFixedTimePeriod[]
+         */
+        public $fixedTimePeriods;
+        protected $fixedTimePeriodsType = RepricingRuleEffectiveTimeFixedTimePeriod::class;
+        protected $fixedTimePeriodsDataType = 'array';
+        /**
+         * @param RepricingRuleEffectiveTimeFixedTimePeriod[]
+         */
+        public function setFixedTimePeriods($fixedTimePeriods)
+        {
+        }
+        /**
+         * @return RepricingRuleEffectiveTimeFixedTimePeriod[]
+         */
+        public function getFixedTimePeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RepricingRuleEffectiveTimeFixedTimePeriod[]
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleEffectiveTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedTimePeriods()
+    class Google_Service_ShoppingContent_RepricingRuleEffectiveTime extends \Google\Service\ShoppingContent\RepricingRuleEffectiveTime
     {
     }
 }

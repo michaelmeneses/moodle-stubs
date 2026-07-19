@@ -21,57 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "destinations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $destinations = $tagmanagerService->accounts_containers_destinations;
- *  </code>
- */
-class AccountsContainersDestinations extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\Destination;
+    use Google\Service\TagManager\ListDestinationsResponse;
     /**
-     * Gets a Destination. (destinations.get)
-     *
-     * @param string $path Google Tag Destination's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Destination
-     * @throws \Google\Service\Exception
+     * The "destinations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $destinations = $tagmanagerService->accounts_containers_destinations;
+     *  </code>
      */
-    public function get($path, $optParams = [])
+    class AccountsContainersDestinations extends \Google\Service\Resource
     {
+        /**
+         * Gets a Destination. (destinations.get)
+         *
+         * @param string $path Google Tag Destination's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Destination
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Adds a Destination to this Container and removes it from the Container to
+         * which it is currently linked. (destinations.link)
+         *
+         * @param string $parent GTM parent Container's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool allowUserPermissionFeatureUpdate Must be set to true to allow
+         * features.user_permissions to change from false to true. If this operation
+         * causes an update but this bit is false, the operation will fail.
+         * @opt_param string destinationId Destination ID to be linked to the current
+         * container.
+         * @return Destination
+         * @throws \Google\Service\Exception
+         */
+        public function link($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists all Destinations linked to a GTM Container.
+         * (destinations.listAccountsContainersDestinations)
+         *
+         * @param string $parent GTM parent Container's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return ListDestinationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersDestinations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds a Destination to this Container and removes it from the Container to
-     * which it is currently linked. (destinations.link)
-     *
-     * @param string $parent GTM parent Container's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool allowUserPermissionFeatureUpdate Must be set to true to allow
-     * features.user_permissions to change from false to true. If this operation
-     * causes an update but this bit is false, the operation will fail.
-     * @opt_param string destinationId Destination ID to be linked to the current
-     * container.
-     * @return Destination
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersDestinations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function link($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists all Destinations linked to a GTM Container.
-     * (destinations.listAccountsContainersDestinations)
-     *
-     * @param string $parent GTM parent Container's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return ListDestinationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersDestinations($parent, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersDestinations extends \Google\Service\TagManager\Resource\AccountsContainersDestinations
     {
     }
 }

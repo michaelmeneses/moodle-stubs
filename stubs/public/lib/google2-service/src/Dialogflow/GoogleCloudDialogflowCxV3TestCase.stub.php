@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TestCase extends \Google\Collection
-{
-    protected $collection_key = 'testCaseConversationTurns';
-    /**
-     * Output only. When the test was created.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * Required. The human-readable name of the test case, unique within the
-     * agent. Limit of 200 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $lastTestResultType = GoogleCloudDialogflowCxV3TestCaseResult::class;
-    protected $lastTestResultDataType = '';
-    /**
-     * The unique identifier of the test case. TestCases.CreateTestCase will
-     * populate the name automatically. Otherwise use format:
-     * `projects//locations//agents//testCases/`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Additional freeform notes about the test case. Limit of 400 characters.
-     *
-     * @var string
-     */
-    public $notes;
-    /**
-     * Tags are short descriptions that users may apply to test cases for
-     * organizational and filtering purposes. Each tag should start with "#" and
-     * has a limit of 30 characters.
-     *
-     * @var string[]
-     */
-    public $tags;
-    protected $testCaseConversationTurnsType = GoogleCloudDialogflowCxV3ConversationTurn::class;
-    protected $testCaseConversationTurnsDataType = 'array';
-    protected $testConfigType = GoogleCloudDialogflowCxV3TestConfig::class;
-    protected $testConfigDataType = '';
-    /**
-     * Output only. When the test was created.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TestCase extends \Google\Collection
     {
+        protected $collection_key = 'testCaseConversationTurns';
+        /**
+         * Output only. When the test was created.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * Required. The human-readable name of the test case, unique within the
+         * agent. Limit of 200 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $lastTestResultType = GoogleCloudDialogflowCxV3TestCaseResult::class;
+        protected $lastTestResultDataType = '';
+        /**
+         * The unique identifier of the test case. TestCases.CreateTestCase will
+         * populate the name automatically. Otherwise use format:
+         * `projects//locations//agents//testCases/`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Additional freeform notes about the test case. Limit of 400 characters.
+         *
+         * @var string
+         */
+        public $notes;
+        /**
+         * Tags are short descriptions that users may apply to test cases for
+         * organizational and filtering purposes. Each tag should start with "#" and
+         * has a limit of 30 characters.
+         *
+         * @var string[]
+         */
+        public $tags;
+        protected $testCaseConversationTurnsType = GoogleCloudDialogflowCxV3ConversationTurn::class;
+        protected $testCaseConversationTurnsDataType = 'array';
+        protected $testConfigType = GoogleCloudDialogflowCxV3TestConfig::class;
+        protected $testConfigDataType = '';
+        /**
+         * Output only. When the test was created.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * Required. The human-readable name of the test case, unique within the
+         * agent. Limit of 200 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The latest test result.
+         *
+         * @param GoogleCloudDialogflowCxV3TestCaseResult $lastTestResult
+         */
+        public function setLastTestResult(GoogleCloudDialogflowCxV3TestCaseResult $lastTestResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TestCaseResult
+         */
+        public function getLastTestResult()
+        {
+        }
+        /**
+         * The unique identifier of the test case. TestCases.CreateTestCase will
+         * populate the name automatically. Otherwise use format:
+         * `projects//locations//agents//testCases/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Additional freeform notes about the test case. Limit of 400 characters.
+         *
+         * @param string $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * Tags are short descriptions that users may apply to test cases for
+         * organizational and filtering purposes. Each tag should start with "#" and
+         * has a limit of 30 characters.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * The conversation turns uttered when the test case was created, in
+         * chronological order. These include the canonical set of agent utterances
+         * that should occur when the agent is working properly.
+         *
+         * @param GoogleCloudDialogflowCxV3ConversationTurn[] $testCaseConversationTurns
+         */
+        public function setTestCaseConversationTurns($testCaseConversationTurns)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ConversationTurn[]
+         */
+        public function getTestCaseConversationTurns()
+        {
+        }
+        /**
+         * Config for the test case.
+         *
+         * @param GoogleCloudDialogflowCxV3TestConfig $testConfig
+         */
+        public function setTestConfig(GoogleCloudDialogflowCxV3TestConfig $testConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TestConfig
+         */
+        public function getTestConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TestCase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * Required. The human-readable name of the test case, unique within the
-     * agent. Limit of 200 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The latest test result.
-     *
-     * @param GoogleCloudDialogflowCxV3TestCaseResult $lastTestResult
-     */
-    public function setLastTestResult(GoogleCloudDialogflowCxV3TestCaseResult $lastTestResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TestCaseResult
-     */
-    public function getLastTestResult()
-    {
-    }
-    /**
-     * The unique identifier of the test case. TestCases.CreateTestCase will
-     * populate the name automatically. Otherwise use format:
-     * `projects//locations//agents//testCases/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Additional freeform notes about the test case. Limit of 400 characters.
-     *
-     * @param string $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * Tags are short descriptions that users may apply to test cases for
-     * organizational and filtering purposes. Each tag should start with "#" and
-     * has a limit of 30 characters.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * The conversation turns uttered when the test case was created, in
-     * chronological order. These include the canonical set of agent utterances
-     * that should occur when the agent is working properly.
-     *
-     * @param GoogleCloudDialogflowCxV3ConversationTurn[] $testCaseConversationTurns
-     */
-    public function setTestCaseConversationTurns($testCaseConversationTurns)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ConversationTurn[]
-     */
-    public function getTestCaseConversationTurns()
-    {
-    }
-    /**
-     * Config for the test case.
-     *
-     * @param GoogleCloudDialogflowCxV3TestConfig $testConfig
-     */
-    public function setTestConfig(GoogleCloudDialogflowCxV3TestConfig $testConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TestConfig
-     */
-    public function getTestConfig()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TestCase extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TestCase
     {
     }
 }

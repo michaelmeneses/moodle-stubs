@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class PlayerScoreResetResponse extends \Google\Collection
-{
-    protected $collection_key = 'resetScoreTimeSpans';
-    /**
-     * The ID of an leaderboard for which player state has been updated.
-     *
-     * @var string
-     */
-    public $definitionId;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#playerScoreResetResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The time spans of the updated score. Possible values are: - "`ALL_TIME`" -
-     * The score is an all-time score. - "`WEEKLY`" - The score is a weekly score.
-     * - "`DAILY`" - The score is a daily score.
-     *
-     * @var string[]
-     */
-    public $resetScoreTimeSpans;
-    /**
-     * The ID of an leaderboard for which player state has been updated.
-     *
-     * @param string $definitionId
-     */
-    public function setDefinitionId($definitionId)
+namespace Google\Service\GamesManagement {
+    class PlayerScoreResetResponse extends \Google\Collection
     {
+        protected $collection_key = 'resetScoreTimeSpans';
+        /**
+         * The ID of an leaderboard for which player state has been updated.
+         *
+         * @var string
+         */
+        public $definitionId;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#playerScoreResetResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The time spans of the updated score. Possible values are: - "`ALL_TIME`" -
+         * The score is an all-time score. - "`WEEKLY`" - The score is a weekly score.
+         * - "`DAILY`" - The score is a daily score.
+         *
+         * @var string[]
+         */
+        public $resetScoreTimeSpans;
+        /**
+         * The ID of an leaderboard for which player state has been updated.
+         *
+         * @param string $definitionId
+         */
+        public function setDefinitionId($definitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinitionId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#playerScoreResetResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The time spans of the updated score. Possible values are: - "`ALL_TIME`" -
+         * The score is an all-time score. - "`WEEKLY`" - The score is a weekly score.
+         * - "`DAILY`" - The score is a daily score.
+         *
+         * @param string[] $resetScoreTimeSpans
+         */
+        public function setResetScoreTimeSpans($resetScoreTimeSpans)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResetScoreTimeSpans()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\PlayerScoreResetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefinitionId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#playerScoreResetResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The time spans of the updated score. Possible values are: - "`ALL_TIME`" -
-     * The score is an all-time score. - "`WEEKLY`" - The score is a weekly score.
-     * - "`DAILY`" - The score is a daily score.
-     *
-     * @param string[] $resetScoreTimeSpans
-     */
-    public function setResetScoreTimeSpans($resetScoreTimeSpans)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResetScoreTimeSpans()
+    class Google_Service_GamesManagement_PlayerScoreResetResponse extends \Google\Service\GamesManagement\PlayerScoreResetResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3IntentTrainingPhrasePart extends \Google\Model
-{
-    /**
-     * The parameter used to annotate this part of the training phrase. This field
-     * is required for annotated parts of the training phrase.
-     *
-     * @var string
-     */
-    public $parameterId;
-    /**
-     * Required. The text for this part.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The parameter used to annotate this part of the training phrase. This field
-     * is required for annotated parts of the training phrase.
-     *
-     * @param string $parameterId
-     */
-    public function setParameterId($parameterId)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3IntentTrainingPhrasePart extends \Google\Model
     {
+        /**
+         * The parameter used to annotate this part of the training phrase. This field
+         * is required for annotated parts of the training phrase.
+         *
+         * @var string
+         */
+        public $parameterId;
+        /**
+         * Required. The text for this part.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The parameter used to annotate this part of the training phrase. This field
+         * is required for annotated parts of the training phrase.
+         *
+         * @param string $parameterId
+         */
+        public function setParameterId($parameterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameterId()
+        {
+        }
+        /**
+         * Required. The text for this part.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentTrainingPhrasePart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameterId()
-    {
-    }
-    /**
-     * Required. The text for this part.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3IntentTrainingPhrasePart extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentTrainingPhrasePart
     {
     }
 }

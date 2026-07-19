@@ -21,79 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore\Resource;
-
-/**
- * The "items" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromewebstoreService = new Google\Service\Chromewebstore(...);
- *   $items = $chromewebstoreService->items;
- *  </code>
- */
-class Items extends \Google\Service\Resource
-{
+namespace Google\Service\Chromewebstore\Resource {
+    use Google\Service\Chromewebstore\Item;
+    use Google\Service\Chromewebstore\Item2;
+    use Google\Service\Chromewebstore\PublishRequest;
     /**
-     * Gets your own Chrome Web Store item. (items.get)
-     *
-     * @param string $itemId Unique identifier representing the Chrome App, Chrome
-     * Extension, or the Chrome Theme.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string projection Determines which subset of the item information
-     * to return.
-     * @return Item
-     * @throws \Google\Service\Exception
+     * The "items" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromewebstoreService = new Google\Service\Chromewebstore(...);
+     *   $items = $chromewebstoreService->items;
+     *  </code>
      */
-    public function get($itemId, $optParams = [])
+    class Items extends \Google\Service\Resource
     {
+        /**
+         * Gets your own Chrome Web Store item. (items.get)
+         *
+         * @param string $itemId Unique identifier representing the Chrome App, Chrome
+         * Extension, or the Chrome Theme.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string projection Determines which subset of the item information
+         * to return.
+         * @return Item
+         * @throws \Google\Service\Exception
+         */
+        public function get($itemId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new item. (items.insert)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string publisherEmail The email of the publisher who owns the
+         * items. Defaults to the caller's email address.
+         * @return Item
+         * @throws \Google\Service\Exception
+         */
+        public function insert($optParams = [])
+        {
+        }
+        /**
+         * Publishes an item. (items.publish)
+         *
+         * @param string $itemId The ID of the item to publish.
+         * @param PublishRequest $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int deployPercentage The deploy percentage you want to set for
+         * your item. Valid values are [0, 100]. If set to any number less than 100,
+         * only that many percentage of users will be allowed to get the update.
+         * @opt_param string publishTarget Provide defined publishTarget in URL (case
+         * sensitive): publishTarget="trustedTesters" or publishTarget="default".
+         * Defaults to publishTarget="default".
+         * @opt_param bool reviewExemption Optional. The caller request to exempt the
+         * review and directly publish because the update is within the list that we can
+         * automatically validate. The API will check if the exemption can be granted
+         * using real time data.
+         * @return Item2
+         * @throws \Google\Service\Exception
+         */
+        public function publish($itemId, PublishRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing item. (items.update)
+         *
+         * @param string $itemId The ID of the item to upload.
+         * @param Item $postBody
+         * @param array $optParams Optional parameters.
+         * @return Item
+         * @throws \Google\Service\Exception
+         */
+        public function update($itemId, Item $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new item. (items.insert)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string publisherEmail The email of the publisher who owns the
-     * items. Defaults to the caller's email address.
-     * @return Item
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Chromewebstore\Resource\Items registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($optParams = [])
-    {
-    }
-    /**
-     * Publishes an item. (items.publish)
-     *
-     * @param string $itemId The ID of the item to publish.
-     * @param PublishRequest $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int deployPercentage The deploy percentage you want to set for
-     * your item. Valid values are [0, 100]. If set to any number less than 100,
-     * only that many percentage of users will be allowed to get the update.
-     * @opt_param string publishTarget Provide defined publishTarget in URL (case
-     * sensitive): publishTarget="trustedTesters" or publishTarget="default".
-     * Defaults to publishTarget="default".
-     * @opt_param bool reviewExemption Optional. The caller request to exempt the
-     * review and directly publish because the update is within the list that we can
-     * automatically validate. The API will check if the exemption can be granted
-     * using real time data.
-     * @return Item2
-     * @throws \Google\Service\Exception
-     */
-    public function publish($itemId, PublishRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing item. (items.update)
-     *
-     * @param string $itemId The ID of the item to upload.
-     * @param Item $postBody
-     * @param array $optParams Optional parameters.
-     * @return Item
-     * @throws \Google\Service\Exception
-     */
-    public function update($itemId, Item $postBody, $optParams = [])
+    class Google_Service_Chromewebstore_Resource_Items extends \Google\Service\Chromewebstore\Resource\Items
     {
     }
 }

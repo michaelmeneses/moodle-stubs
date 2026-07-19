@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InstanceSelectionResult extends \Google\Model
-{
-    /**
-     * Output only. Full machine-type names, e.g. "n1-standard-16".
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Output only. Number of VM provisioned with the machine_type.
-     *
-     * @var int
-     */
-    public $vmCount;
-    /**
-     * Output only. Full machine-type names, e.g. "n1-standard-16".
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\Dataproc {
+    class InstanceSelectionResult extends \Google\Model
     {
+        /**
+         * Output only. Full machine-type names, e.g. "n1-standard-16".
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Output only. Number of VM provisioned with the machine_type.
+         *
+         * @var int
+         */
+        public $vmCount;
+        /**
+         * Output only. Full machine-type names, e.g. "n1-standard-16".
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Output only. Number of VM provisioned with the machine_type.
+         *
+         * @param int $vmCount
+         */
+        public function setVmCount($vmCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVmCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\InstanceSelectionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Output only. Number of VM provisioned with the machine_type.
-     *
-     * @param int $vmCount
-     */
-    public function setVmCount($vmCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVmCount()
+    class Google_Service_Dataproc_InstanceSelectionResult extends \Google\Service\Dataproc\InstanceSelectionResult
     {
     }
 }

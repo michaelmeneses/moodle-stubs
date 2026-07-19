@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TriggerActionPayload extends \Google\Model
-{
-    /**
-     * Required. The context from the selected action. The value is obtained from
-     * rendered issues and needs to be sent back to identify the action that is
-     * being triggered.
-     *
-     * @var string
-     */
-    public $actionContext;
-    protected $actionInputType = ActionInput::class;
-    protected $actionInputDataType = '';
-    /**
-     * Required. The context from the selected action. The value is obtained from
-     * rendered issues and needs to be sent back to identify the action that is
-     * being triggered.
-     *
-     * @param string $actionContext
-     */
-    public function setActionContext($actionContext)
+namespace Google\Service\ShoppingContent {
+    class TriggerActionPayload extends \Google\Model
     {
+        /**
+         * Required. The context from the selected action. The value is obtained from
+         * rendered issues and needs to be sent back to identify the action that is
+         * being triggered.
+         *
+         * @var string
+         */
+        public $actionContext;
+        protected $actionInputType = ActionInput::class;
+        protected $actionInputDataType = '';
+        /**
+         * Required. The context from the selected action. The value is obtained from
+         * rendered issues and needs to be sent back to identify the action that is
+         * being triggered.
+         *
+         * @param string $actionContext
+         */
+        public function setActionContext($actionContext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionContext()
+        {
+        }
+        /**
+         * Required. Input provided by the merchant.
+         *
+         * @param ActionInput $actionInput
+         */
+        public function setActionInput(ActionInput $actionInput)
+        {
+        }
+        /**
+         * @return ActionInput
+         */
+        public function getActionInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\TriggerActionPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionContext()
-    {
-    }
-    /**
-     * Required. Input provided by the merchant.
-     *
-     * @param ActionInput $actionInput
-     */
-    public function setActionInput(ActionInput $actionInput)
-    {
-    }
-    /**
-     * @return ActionInput
-     */
-    public function getActionInput()
+    class Google_Service_ShoppingContent_TriggerActionPayload extends \Google\Service\ShoppingContent\TriggerActionPayload
     {
     }
 }

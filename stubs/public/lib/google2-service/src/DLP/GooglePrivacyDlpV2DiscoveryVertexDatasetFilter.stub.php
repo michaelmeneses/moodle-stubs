@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryVertexDatasetFilter extends \Google\Model
-{
-    protected $collectionType = GooglePrivacyDlpV2VertexDatasetCollection::class;
-    protected $collectionDataType = '';
-    protected $othersType = GooglePrivacyDlpV2AllOtherResources::class;
-    protected $othersDataType = '';
-    protected $vertexDatasetResourceReferenceType = GooglePrivacyDlpV2VertexDatasetResourceReference::class;
-    protected $vertexDatasetResourceReferenceDataType = '';
-    /**
-     * A specific set of Vertex AI datasets for this filter to apply to.
-     *
-     * @param GooglePrivacyDlpV2VertexDatasetCollection $collection
-     */
-    public function setCollection(GooglePrivacyDlpV2VertexDatasetCollection $collection)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryVertexDatasetFilter extends \Google\Model
     {
+        protected $collectionType = GooglePrivacyDlpV2VertexDatasetCollection::class;
+        protected $collectionDataType = '';
+        protected $othersType = GooglePrivacyDlpV2AllOtherResources::class;
+        protected $othersDataType = '';
+        protected $vertexDatasetResourceReferenceType = GooglePrivacyDlpV2VertexDatasetResourceReference::class;
+        protected $vertexDatasetResourceReferenceDataType = '';
+        /**
+         * A specific set of Vertex AI datasets for this filter to apply to.
+         *
+         * @param GooglePrivacyDlpV2VertexDatasetCollection $collection
+         */
+        public function setCollection(GooglePrivacyDlpV2VertexDatasetCollection $collection)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2VertexDatasetCollection
+         */
+        public function getCollection()
+        {
+        }
+        /**
+         * Catch-all. This should always be the last target in the list because
+         * anything above it will apply first. Should only appear once in a
+         * configuration. If none is specified, a default one will be added
+         * automatically.
+         *
+         * @param GooglePrivacyDlpV2AllOtherResources $others
+         */
+        public function setOthers(GooglePrivacyDlpV2AllOtherResources $others)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AllOtherResources
+         */
+        public function getOthers()
+        {
+        }
+        /**
+         * The dataset resource to scan. Targets including this can only include one
+         * target (the target with this dataset resource reference).
+         *
+         * @param GooglePrivacyDlpV2VertexDatasetResourceReference $vertexDatasetResourceReference
+         */
+        public function setVertexDatasetResourceReference(GooglePrivacyDlpV2VertexDatasetResourceReference $vertexDatasetResourceReference)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2VertexDatasetResourceReference
+         */
+        public function getVertexDatasetResourceReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2VertexDatasetCollection
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryVertexDatasetFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollection()
-    {
-    }
-    /**
-     * Catch-all. This should always be the last target in the list because
-     * anything above it will apply first. Should only appear once in a
-     * configuration. If none is specified, a default one will be added
-     * automatically.
-     *
-     * @param GooglePrivacyDlpV2AllOtherResources $others
-     */
-    public function setOthers(GooglePrivacyDlpV2AllOtherResources $others)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2AllOtherResources
-     */
-    public function getOthers()
-    {
-    }
-    /**
-     * The dataset resource to scan. Targets including this can only include one
-     * target (the target with this dataset resource reference).
-     *
-     * @param GooglePrivacyDlpV2VertexDatasetResourceReference $vertexDatasetResourceReference
-     */
-    public function setVertexDatasetResourceReference(GooglePrivacyDlpV2VertexDatasetResourceReference $vertexDatasetResourceReference)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2VertexDatasetResourceReference
-     */
-    public function getVertexDatasetResourceReference()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryVertexDatasetFilter extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryVertexDatasetFilter
     {
     }
 }

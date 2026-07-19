@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListMessagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'hl7V2Messages';
-    protected $hl7V2MessagesType = Message::class;
-    protected $hl7V2MessagesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned Messages. Won't be more Messages than the value of page_size
-     * in the request. See view for populated fields.
-     *
-     * @param Message[] $hl7V2Messages
-     */
-    public function setHl7V2Messages($hl7V2Messages)
+namespace Google\Service\CloudHealthcare {
+    class ListMessagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'hl7V2Messages';
+        protected $hl7V2MessagesType = Message::class;
+        protected $hl7V2MessagesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned Messages. Won't be more Messages than the value of page_size
+         * in the request. See view for populated fields.
+         *
+         * @param Message[] $hl7V2Messages
+         */
+        public function setHl7V2Messages($hl7V2Messages)
+        {
+        }
+        /**
+         * @return Message[]
+         */
+        public function getHl7V2Messages()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListMessagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHl7V2Messages()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudHealthcare_ListMessagesResponse extends \Google\Service\CloudHealthcare\ListMessagesResponse
     {
     }
 }

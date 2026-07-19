@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace mod_quiz\local;
 
+use cache;
 /**
  * Manages cache operations for quiz overrides.
  *

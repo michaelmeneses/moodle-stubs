@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class ListTagKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'tagKeys';
-    /**
-     * A pagination token returned from a previous call to `ListTagKeys` that
-     * indicates from where listing should continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tagKeysType = TagKey::class;
-    protected $tagKeysDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to `ListTagKeys` that
-     * indicates from where listing should continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudResourceManager {
+    class ListTagKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'tagKeys';
+        /**
+         * A pagination token returned from a previous call to `ListTagKeys` that
+         * indicates from where listing should continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tagKeysType = TagKey::class;
+        protected $tagKeysDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to `ListTagKeys` that
+         * indicates from where listing should continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of TagKeys that live under the specified parent in the request.
+         *
+         * @param TagKey[] $tagKeys
+         */
+        public function setTagKeys($tagKeys)
+        {
+        }
+        /**
+         * @return TagKey[]
+         */
+        public function getTagKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\ListTagKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of TagKeys that live under the specified parent in the request.
-     *
-     * @param TagKey[] $tagKeys
-     */
-    public function setTagKeys($tagKeys)
-    {
-    }
-    /**
-     * @return TagKey[]
-     */
-    public function getTagKeys()
+    class Google_Service_CloudResourceManager_ListTagKeysResponse extends \Google\Service\CloudResourceManager\ListTagKeysResponse
     {
     }
 }

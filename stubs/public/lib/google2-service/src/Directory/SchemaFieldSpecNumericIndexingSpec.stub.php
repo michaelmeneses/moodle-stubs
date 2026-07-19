@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class SchemaFieldSpecNumericIndexingSpec extends \Google\Model
-{
+namespace Google\Service\Directory {
+    class SchemaFieldSpecNumericIndexingSpec extends \Google\Model
+    {
+        /**
+         * Maximum value of this field. This is meant to be indicative rather than
+         * enforced. Values outside this range will still be indexed, but search may
+         * not be as performant.
+         *
+         * @var 
+         */
+        public $maxValue;
+        /**
+         * Minimum value of this field. This is meant to be indicative rather than
+         * enforced. Values outside this range will still be indexed, but search may
+         * not be as performant.
+         *
+         * @var 
+         */
+        public $minValue;
+        public function setMaxValue($maxValue)
+        {
+        }
+        public function getMaxValue()
+        {
+        }
+        public function setMinValue($minValue)
+        {
+        }
+        public function getMinValue()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Maximum value of this field. This is meant to be indicative rather than
-     * enforced. Values outside this range will still be indexed, but search may
-     * not be as performant.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Directory\SchemaFieldSpecNumericIndexingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $maxValue;
-    /**
-     * Minimum value of this field. This is meant to be indicative rather than
-     * enforced. Values outside this range will still be indexed, but search may
-     * not be as performant.
-     *
-     * @var 
-     */
-    public $minValue;
-    public function setMaxValue($maxValue)
-    {
-    }
-    public function getMaxValue()
-    {
-    }
-    public function setMinValue($minValue)
-    {
-    }
-    public function getMinValue()
+    class Google_Service_Directory_SchemaFieldSpecNumericIndexingSpec extends \Google\Service\Directory\SchemaFieldSpecNumericIndexingSpec
     {
     }
 }

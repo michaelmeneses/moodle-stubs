@@ -21,42 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "contexts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $contexts = $managedkafkaService->projects_locations_schemaRegistries_contexts;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesContexts extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\Context;
+    use Google\Service\ManagedKafka\HttpBody;
     /**
-     * Get the context. (contexts.get)
-     *
-     * @param string $name Required. The name of the context to return. Structured
-     * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
-     * try}/contexts/{context}`
-     * @param array $optParams Optional parameters.
-     * @return Context
-     * @throws \Google\Service\Exception
+     * The "contexts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $contexts = $managedkafkaService->projects_locations_schemaRegistries_contexts;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesContexts extends \Google\Service\Resource
     {
+        /**
+         * Get the context. (contexts.get)
+         *
+         * @param string $name Required. The name of the context to return. Structured
+         * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
+         * try}/contexts/{context}`
+         * @param array $optParams Optional parameters.
+         * @return Context
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List contexts for a schema registry.
+         * (contexts.listProjectsLocationsSchemaRegistriesContexts)
+         *
+         * @param string $parent Required. The parent of the contexts. Structured like:
+         * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesContexts($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List contexts for a schema registry.
-     * (contexts.listProjectsLocationsSchemaRegistriesContexts)
-     *
-     * @param string $parent Required. The parent of the contexts. Structured like:
-     * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesContexts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsSchemaRegistriesContexts($parent, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesContexts extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesContexts
     {
     }
 }

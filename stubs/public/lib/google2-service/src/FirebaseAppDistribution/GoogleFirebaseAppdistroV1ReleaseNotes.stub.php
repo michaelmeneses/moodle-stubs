@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1ReleaseNotes extends \Google\Model
-{
-    /**
-     * The text of the release notes.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The text of the release notes.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1ReleaseNotes extends \Google\Model
     {
+        /**
+         * The text of the release notes.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The text of the release notes.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ReleaseNotes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1ReleaseNotes extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ReleaseNotes
     {
     }
 }

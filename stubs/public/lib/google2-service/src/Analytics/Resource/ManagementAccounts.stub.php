@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $accounts = $analyticsService->management_accounts;
- *  </code>
- */
-class ManagementAccounts extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\Accounts;
     /**
-     * Lists all accounts to which the user has access.
-     * (accounts.listManagementAccounts)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of accounts to include in this
-     * response.
-     * @opt_param int start-index An index of the first account to retrieve. Use
-     * this parameter as a pagination mechanism along with the max-results
-     * parameter.
-     * @return Accounts
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $accounts = $analyticsService->management_accounts;
+     *  </code>
      */
-    public function listManagementAccounts($optParams = [])
+    class ManagementAccounts extends \Google\Service\Resource
+    {
+        /**
+         * Lists all accounts to which the user has access.
+         * (accounts.listManagementAccounts)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of accounts to include in this
+         * response.
+         * @opt_param int start-index An index of the first account to retrieve. Use
+         * this parameter as a pagination mechanism along with the max-results
+         * parameter.
+         * @return Accounts
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementAccounts($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_ManagementAccounts extends \Google\Service\Analytics\Resource\ManagementAccounts
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersCustomBatchRequestEntryRefundItemShipping extends \Google\Model
-{
-    protected $amountType = Price::class;
-    protected $amountDataType = '';
-    /**
-     * @var bool
-     */
-    public $fullRefund;
-    /**
-     * @param Price
-     */
-    public function setAmount(Price $amount)
+namespace Google\Service\ShoppingContent {
+    class OrdersCustomBatchRequestEntryRefundItemShipping extends \Google\Model
     {
+        protected $amountType = Price::class;
+        protected $amountDataType = '';
+        /**
+         * @var bool
+         */
+        public $fullRefund;
+        /**
+         * @param Price
+         */
+        public function setAmount(Price $amount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setFullRefund($fullRefund)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullRefund()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersCustomBatchRequestEntryRefundItemShipping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setFullRefund($fullRefund)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullRefund()
+    class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryRefundItemShipping extends \Google\Service\ShoppingContent\OrdersCustomBatchRequestEntryRefundItemShipping
     {
     }
 }

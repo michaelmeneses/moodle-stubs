@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoTransformExpression extends \Google\Collection
-{
-    protected $collection_key = 'transformationFunctions';
-    protected $initialValueType = EnterpriseCrmEventbusProtoBaseValue::class;
-    protected $initialValueDataType = '';
-    protected $transformationFunctionsType = EnterpriseCrmEventbusProtoFunction::class;
-    protected $transformationFunctionsDataType = 'array';
-    /**
-     * Initial value upon which to perform transformations.
-     *
-     * @param EnterpriseCrmEventbusProtoBaseValue $initialValue
-     */
-    public function setInitialValue(EnterpriseCrmEventbusProtoBaseValue $initialValue)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoTransformExpression extends \Google\Collection
     {
+        protected $collection_key = 'transformationFunctions';
+        protected $initialValueType = EnterpriseCrmEventbusProtoBaseValue::class;
+        protected $initialValueDataType = '';
+        protected $transformationFunctionsType = EnterpriseCrmEventbusProtoFunction::class;
+        protected $transformationFunctionsDataType = 'array';
+        /**
+         * Initial value upon which to perform transformations.
+         *
+         * @param EnterpriseCrmEventbusProtoBaseValue $initialValue
+         */
+        public function setInitialValue(EnterpriseCrmEventbusProtoBaseValue $initialValue)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoBaseValue
+         */
+        public function getInitialValue()
+        {
+        }
+        /**
+         * Transformations to be applied sequentially.
+         *
+         * @param EnterpriseCrmEventbusProtoFunction[] $transformationFunctions
+         */
+        public function setTransformationFunctions($transformationFunctions)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoFunction[]
+         */
+        public function getTransformationFunctions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoBaseValue
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoTransformExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitialValue()
-    {
-    }
-    /**
-     * Transformations to be applied sequentially.
-     *
-     * @param EnterpriseCrmEventbusProtoFunction[] $transformationFunctions
-     */
-    public function setTransformationFunctions($transformationFunctions)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoFunction[]
-     */
-    public function getTransformationFunctions()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoTransformExpression extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoTransformExpression
     {
     }
 }

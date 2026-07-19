@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2WebhookRequest extends \Google\Model
-{
-    protected $originalDetectIntentRequestType = GoogleCloudDialogflowV2OriginalDetectIntentRequest::class;
-    protected $originalDetectIntentRequestDataType = '';
-    protected $queryResultType = GoogleCloudDialogflowV2QueryResult::class;
-    protected $queryResultDataType = '';
-    /**
-     * The unique identifier of the response. Contains the same value as
-     * `[Streaming]DetectIntentResponse.response_id`.
-     *
-     * @var string
-     */
-    public $responseId;
-    /**
-     * The unique identifier of detectIntent request session. Can be used to
-     * identify end-user inside webhook implementation. Format:
-     * `projects//agent/sessions/`, or
-     * `projects//agent/environments//users//sessions/`.
-     *
-     * @var string
-     */
-    public $session;
-    /**
-     * Optional. The contents of the original request that was passed to
-     * `[Streaming]DetectIntent` call.
-     *
-     * @param GoogleCloudDialogflowV2OriginalDetectIntentRequest $originalDetectIntentRequest
-     */
-    public function setOriginalDetectIntentRequest(GoogleCloudDialogflowV2OriginalDetectIntentRequest $originalDetectIntentRequest)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2WebhookRequest extends \Google\Model
     {
+        protected $originalDetectIntentRequestType = GoogleCloudDialogflowV2OriginalDetectIntentRequest::class;
+        protected $originalDetectIntentRequestDataType = '';
+        protected $queryResultType = GoogleCloudDialogflowV2QueryResult::class;
+        protected $queryResultDataType = '';
+        /**
+         * The unique identifier of the response. Contains the same value as
+         * `[Streaming]DetectIntentResponse.response_id`.
+         *
+         * @var string
+         */
+        public $responseId;
+        /**
+         * The unique identifier of detectIntent request session. Can be used to
+         * identify end-user inside webhook implementation. Format:
+         * `projects//agent/sessions/`, or
+         * `projects//agent/environments//users//sessions/`.
+         *
+         * @var string
+         */
+        public $session;
+        /**
+         * Optional. The contents of the original request that was passed to
+         * `[Streaming]DetectIntent` call.
+         *
+         * @param GoogleCloudDialogflowV2OriginalDetectIntentRequest $originalDetectIntentRequest
+         */
+        public function setOriginalDetectIntentRequest(GoogleCloudDialogflowV2OriginalDetectIntentRequest $originalDetectIntentRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2OriginalDetectIntentRequest
+         */
+        public function getOriginalDetectIntentRequest()
+        {
+        }
+        /**
+         * The result of the conversational query or event processing. Contains the
+         * same value as `[Streaming]DetectIntentResponse.query_result`.
+         *
+         * @param GoogleCloudDialogflowV2QueryResult $queryResult
+         */
+        public function setQueryResult(GoogleCloudDialogflowV2QueryResult $queryResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2QueryResult
+         */
+        public function getQueryResult()
+        {
+        }
+        /**
+         * The unique identifier of the response. Contains the same value as
+         * `[Streaming]DetectIntentResponse.response_id`.
+         *
+         * @param string $responseId
+         */
+        public function setResponseId($responseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseId()
+        {
+        }
+        /**
+         * The unique identifier of detectIntent request session. Can be used to
+         * identify end-user inside webhook implementation. Format:
+         * `projects//agent/sessions/`, or
+         * `projects//agent/environments//users//sessions/`.
+         *
+         * @param string $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2OriginalDetectIntentRequest
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2WebhookRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalDetectIntentRequest()
-    {
-    }
-    /**
-     * The result of the conversational query or event processing. Contains the
-     * same value as `[Streaming]DetectIntentResponse.query_result`.
-     *
-     * @param GoogleCloudDialogflowV2QueryResult $queryResult
-     */
-    public function setQueryResult(GoogleCloudDialogflowV2QueryResult $queryResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2QueryResult
-     */
-    public function getQueryResult()
-    {
-    }
-    /**
-     * The unique identifier of the response. Contains the same value as
-     * `[Streaming]DetectIntentResponse.response_id`.
-     *
-     * @param string $responseId
-     */
-    public function setResponseId($responseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseId()
-    {
-    }
-    /**
-     * The unique identifier of detectIntent request session. Can be used to
-     * identify end-user inside webhook implementation. Format:
-     * `projects//agent/sessions/`, or
-     * `projects//agent/environments//users//sessions/`.
-     *
-     * @param string $session
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2WebhookRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2WebhookRequest
     {
     }
 }

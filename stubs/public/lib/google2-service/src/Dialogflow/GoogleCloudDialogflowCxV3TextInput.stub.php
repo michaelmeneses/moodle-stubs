@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TextInput extends \Google\Model
-{
-    /**
-     * Required. The UTF-8 encoded natural language text to be processed.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Required. The UTF-8 encoded natural language text to be processed.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TextInput extends \Google\Model
     {
+        /**
+         * Required. The UTF-8 encoded natural language text to be processed.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Required. The UTF-8 encoded natural language text to be processed.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TextInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TextInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TextInput
     {
     }
 }

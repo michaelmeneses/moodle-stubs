@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonRealTimeBiddingSetting extends \Google\Model
-{
-    /**
-     * Whether the campaign is opted in to real-time bidding.
-     *
-     * @var bool
-     */
-    public $optIn;
-    /**
-     * Whether the campaign is opted in to real-time bidding.
-     *
-     * @param bool $optIn
-     */
-    public function setOptIn($optIn)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonRealTimeBiddingSetting extends \Google\Model
     {
+        /**
+         * Whether the campaign is opted in to real-time bidding.
+         *
+         * @var bool
+         */
+        public $optIn;
+        /**
+         * Whether the campaign is opted in to real-time bidding.
+         *
+         * @param bool $optIn
+         */
+        public function setOptIn($optIn)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptIn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonRealTimeBiddingSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptIn()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonRealTimeBiddingSetting extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonRealTimeBiddingSetting
     {
     }
 }

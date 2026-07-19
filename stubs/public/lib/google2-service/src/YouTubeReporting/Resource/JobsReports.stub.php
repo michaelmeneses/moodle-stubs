@@ -21,61 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubereportingService = new Google\Service\YouTubeReporting(...);
- *   $reports = $youtubereportingService->jobs_reports;
- *  </code>
- */
-class JobsReports extends \Google\Service\Resource
-{
+namespace Google\Service\YouTubeReporting\Resource {
+    use Google\Service\YouTubeReporting\ListReportsResponse;
+    use Google\Service\YouTubeReporting\Report;
     /**
-     * Gets the metadata of a specific report. (reports.get)
-     *
-     * @param string $jobId The ID of the job.
-     * @param string $reportId The ID of the report to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner The content owner's external ID on
-     * which behalf the user is acting on. If not set, the user is acting for
-     * himself (his own channel).
-     * @return Report
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubereportingService = new Google\Service\YouTubeReporting(...);
+     *   $reports = $youtubereportingService->jobs_reports;
+     *  </code>
      */
-    public function get($jobId, $reportId, $optParams = [])
+    class JobsReports extends \Google\Service\Resource
     {
+        /**
+         * Gets the metadata of a specific report. (reports.get)
+         *
+         * @param string $jobId The ID of the job.
+         * @param string $reportId The ID of the report to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner The content owner's external ID on
+         * which behalf the user is acting on. If not set, the user is acting for
+         * himself (his own channel).
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function get($jobId, $reportId, $optParams = [])
+        {
+        }
+        /**
+         * Lists reports created by a specific job. Returns NOT_FOUND if the job does
+         * not exist. (reports.listJobsReports)
+         *
+         * @param string $jobId The ID of the job.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string createdAfter If set, only reports created after the
+         * specified date/time are returned.
+         * @opt_param string onBehalfOfContentOwner The content owner's external ID on
+         * which behalf the user is acting on. If not set, the user is acting for
+         * himself (his own channel).
+         * @opt_param int pageSize Requested page size. Server may return fewer report
+         * types than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of
+         * ListReportsResponse.next_page_token returned in response to the previous call
+         * to the `ListReports` method.
+         * @opt_param string startTimeAtOrAfter If set, only reports whose start time is
+         * greater than or equal the specified date/time are returned.
+         * @opt_param string startTimeBefore If set, only reports whose start time is
+         * smaller than the specified date/time are returned.
+         * @return ListReportsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listJobsReports($jobId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists reports created by a specific job. Returns NOT_FOUND if the job does
-     * not exist. (reports.listJobsReports)
-     *
-     * @param string $jobId The ID of the job.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string createdAfter If set, only reports created after the
-     * specified date/time are returned.
-     * @opt_param string onBehalfOfContentOwner The content owner's external ID on
-     * which behalf the user is acting on. If not set, the user is acting for
-     * himself (his own channel).
-     * @opt_param int pageSize Requested page size. Server may return fewer report
-     * types than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of
-     * ListReportsResponse.next_page_token returned in response to the previous call
-     * to the `ListReports` method.
-     * @opt_param string startTimeAtOrAfter If set, only reports whose start time is
-     * greater than or equal the specified date/time are returned.
-     * @opt_param string startTimeBefore If set, only reports whose start time is
-     * smaller than the specified date/time are returned.
-     * @return ListReportsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTubeReporting\Resource\JobsReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listJobsReports($jobId, $optParams = [])
+    class Google_Service_YouTubeReporting_Resource_JobsReports extends \Google\Service\YouTubeReporting\Resource\JobsReports
     {
     }
 }

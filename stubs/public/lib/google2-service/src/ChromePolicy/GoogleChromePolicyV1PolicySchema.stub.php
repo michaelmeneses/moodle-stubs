@@ -21,205 +21,214 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1PolicySchema extends \Google\Collection
-{
-    protected $collection_key = 'validTargetResources';
-    /**
-     * @var string[]
-     */
-    public $accessRestrictions;
-    protected $additionalTargetKeyNamesType = GoogleChromePolicyV1AdditionalTargetKeyName::class;
-    protected $additionalTargetKeyNamesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $categoryTitle;
-    protected $definitionType = Proto2FileDescriptorProto::class;
-    protected $definitionDataType = '';
-    protected $fieldDescriptionsType = GoogleChromePolicyV1PolicySchemaFieldDescription::class;
-    protected $fieldDescriptionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $noticesType = GoogleChromePolicyV1PolicySchemaNoticeDescription::class;
-    protected $noticesDataType = 'array';
-    protected $policyApiLifecycleType = ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle::class;
-    protected $policyApiLifecycleDataType = '';
-    protected $policyApiLifeycleType = ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle::class;
-    protected $policyApiLifeycleDataType = '';
-    /**
-     * @var string
-     */
-    public $policyDescription;
-    /**
-     * @var string
-     */
-    public $schemaName;
-    /**
-     * @var string
-     */
-    public $supportUri;
-    /**
-     * @var string[]
-     */
-    public $validTargetResources;
-    /**
-     * @param string[]
-     */
-    public function setAccessRestrictions($accessRestrictions)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1PolicySchema extends \Google\Collection
     {
+        protected $collection_key = 'validTargetResources';
+        /**
+         * @var string[]
+         */
+        public $accessRestrictions;
+        protected $additionalTargetKeyNamesType = GoogleChromePolicyV1AdditionalTargetKeyName::class;
+        protected $additionalTargetKeyNamesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $categoryTitle;
+        protected $definitionType = Proto2FileDescriptorProto::class;
+        protected $definitionDataType = '';
+        protected $fieldDescriptionsType = GoogleChromePolicyV1PolicySchemaFieldDescription::class;
+        protected $fieldDescriptionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $noticesType = GoogleChromePolicyV1PolicySchemaNoticeDescription::class;
+        protected $noticesDataType = 'array';
+        protected $policyApiLifecycleType = ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle::class;
+        protected $policyApiLifecycleDataType = '';
+        protected $policyApiLifeycleType = ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle::class;
+        protected $policyApiLifeycleDataType = '';
+        /**
+         * @var string
+         */
+        public $policyDescription;
+        /**
+         * @var string
+         */
+        public $schemaName;
+        /**
+         * @var string
+         */
+        public $supportUri;
+        /**
+         * @var string[]
+         */
+        public $validTargetResources;
+        /**
+         * @param string[]
+         */
+        public function setAccessRestrictions($accessRestrictions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAccessRestrictions()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1AdditionalTargetKeyName[]
+         */
+        public function setAdditionalTargetKeyNames($additionalTargetKeyNames)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1AdditionalTargetKeyName[]
+         */
+        public function getAdditionalTargetKeyNames()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryTitle($categoryTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryTitle()
+        {
+        }
+        /**
+         * @param Proto2FileDescriptorProto
+         */
+        public function setDefinition(Proto2FileDescriptorProto $definition)
+        {
+        }
+        /**
+         * @return Proto2FileDescriptorProto
+         */
+        public function getDefinition()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicySchemaFieldDescription[]
+         */
+        public function setFieldDescriptions($fieldDescriptions)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicySchemaFieldDescription[]
+         */
+        public function getFieldDescriptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicySchemaNoticeDescription[]
+         */
+        public function setNotices($notices)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicySchemaNoticeDescription[]
+         */
+        public function getNotices()
+        {
+        }
+        /**
+         * @param ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
+         */
+        public function setPolicyApiLifecycle(ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle $policyApiLifecycle)
+        {
+        }
+        /**
+         * @return ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
+         */
+        public function getPolicyApiLifecycle()
+        {
+        }
+        /**
+         * @param ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
+         */
+        public function setPolicyApiLifeycle(ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle $policyApiLifeycle)
+        {
+        }
+        /**
+         * @return ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
+         */
+        public function getPolicyApiLifeycle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPolicyDescription($policyDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSchemaName($schemaName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSupportUri($supportUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportUri()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValidTargetResources($validTargetResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValidTargetResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicySchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessRestrictions()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1AdditionalTargetKeyName[]
-     */
-    public function setAdditionalTargetKeyNames($additionalTargetKeyNames)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1AdditionalTargetKeyName[]
-     */
-    public function getAdditionalTargetKeyNames()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryTitle($categoryTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryTitle()
-    {
-    }
-    /**
-     * @param Proto2FileDescriptorProto
-     */
-    public function setDefinition(Proto2FileDescriptorProto $definition)
-    {
-    }
-    /**
-     * @return Proto2FileDescriptorProto
-     */
-    public function getDefinition()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicySchemaFieldDescription[]
-     */
-    public function setFieldDescriptions($fieldDescriptions)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicySchemaFieldDescription[]
-     */
-    public function getFieldDescriptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicySchemaNoticeDescription[]
-     */
-    public function setNotices($notices)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicySchemaNoticeDescription[]
-     */
-    public function getNotices()
-    {
-    }
-    /**
-     * @param ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
-     */
-    public function setPolicyApiLifecycle(ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle $policyApiLifecycle)
-    {
-    }
-    /**
-     * @return ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
-     */
-    public function getPolicyApiLifecycle()
-    {
-    }
-    /**
-     * @param ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
-     */
-    public function setPolicyApiLifeycle(ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle $policyApiLifeycle)
-    {
-    }
-    /**
-     * @return ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
-     */
-    public function getPolicyApiLifeycle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPolicyDescription($policyDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSchemaName($schemaName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSupportUri($supportUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportUri()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValidTargetResources($validTargetResources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValidTargetResources()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1PolicySchema extends \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicySchema
     {
     }
 }

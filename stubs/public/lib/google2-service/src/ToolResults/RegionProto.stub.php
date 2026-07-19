@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class RegionProto extends \Google\Model
-{
-    /**
-     * The height, in pixels. Always set.
-     *
-     * @var int
-     */
-    public $heightPx;
-    /**
-     * The left side of the rectangle, in pixels. Always set.
-     *
-     * @var int
-     */
-    public $leftPx;
-    /**
-     * The top of the rectangle, in pixels. Always set.
-     *
-     * @var int
-     */
-    public $topPx;
-    /**
-     * The width, in pixels. Always set.
-     *
-     * @var int
-     */
-    public $widthPx;
-    /**
-     * The height, in pixels. Always set.
-     *
-     * @param int $heightPx
-     */
-    public function setHeightPx($heightPx)
+namespace Google\Service\ToolResults {
+    class RegionProto extends \Google\Model
     {
+        /**
+         * The height, in pixels. Always set.
+         *
+         * @var int
+         */
+        public $heightPx;
+        /**
+         * The left side of the rectangle, in pixels. Always set.
+         *
+         * @var int
+         */
+        public $leftPx;
+        /**
+         * The top of the rectangle, in pixels. Always set.
+         *
+         * @var int
+         */
+        public $topPx;
+        /**
+         * The width, in pixels. Always set.
+         *
+         * @var int
+         */
+        public $widthPx;
+        /**
+         * The height, in pixels. Always set.
+         *
+         * @param int $heightPx
+         */
+        public function setHeightPx($heightPx)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeightPx()
+        {
+        }
+        /**
+         * The left side of the rectangle, in pixels. Always set.
+         *
+         * @param int $leftPx
+         */
+        public function setLeftPx($leftPx)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeftPx()
+        {
+        }
+        /**
+         * The top of the rectangle, in pixels. Always set.
+         *
+         * @param int $topPx
+         */
+        public function setTopPx($topPx)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTopPx()
+        {
+        }
+        /**
+         * The width, in pixels. Always set.
+         *
+         * @param int $widthPx
+         */
+        public function setWidthPx($widthPx)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidthPx()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\RegionProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeightPx()
-    {
-    }
-    /**
-     * The left side of the rectangle, in pixels. Always set.
-     *
-     * @param int $leftPx
-     */
-    public function setLeftPx($leftPx)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLeftPx()
-    {
-    }
-    /**
-     * The top of the rectangle, in pixels. Always set.
-     *
-     * @param int $topPx
-     */
-    public function setTopPx($topPx)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTopPx()
-    {
-    }
-    /**
-     * The width, in pixels. Always set.
-     *
-     * @param int $widthPx
-     */
-    public function setWidthPx($widthPx)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidthPx()
+    class Google_Service_ToolResults_RegionProto extends \Google\Service\ToolResults\RegionProto
     {
     }
 }

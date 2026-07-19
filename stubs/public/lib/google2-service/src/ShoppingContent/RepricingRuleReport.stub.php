@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleReport extends \Google\Collection
-{
-    protected $collection_key = 'inapplicableProducts';
-    /**
-     * @var RepricingRuleReportBuyboxWinningRuleStats
-     */
-    public $buyboxWinningRuleStats;
-    protected $buyboxWinningRuleStatsType = RepricingRuleReportBuyboxWinningRuleStats::class;
-    protected $buyboxWinningRuleStatsDataType = '';
-    /**
-     * @var Date
-     */
-    public $date;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * @var string[]
-     */
-    public $impactedProducts;
-    /**
-     * @var InapplicabilityDetails[]
-     */
-    public $inapplicabilityDetails;
-    protected $inapplicabilityDetailsType = InapplicabilityDetails::class;
-    protected $inapplicabilityDetailsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $inapplicableProducts;
-    /**
-     * @var int
-     */
-    public $orderItemCount;
-    /**
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * @var PriceAmount
-     */
-    public $totalGmv;
-    protected $totalGmvType = PriceAmount::class;
-    protected $totalGmvDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param RepricingRuleReportBuyboxWinningRuleStats
-     */
-    public function setBuyboxWinningRuleStats(RepricingRuleReportBuyboxWinningRuleStats $buyboxWinningRuleStats)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleReport extends \Google\Collection
     {
+        protected $collection_key = 'inapplicableProducts';
+        /**
+         * @var RepricingRuleReportBuyboxWinningRuleStats
+         */
+        public $buyboxWinningRuleStats;
+        protected $buyboxWinningRuleStatsType = RepricingRuleReportBuyboxWinningRuleStats::class;
+        protected $buyboxWinningRuleStatsDataType = '';
+        /**
+         * @var Date
+         */
+        public $date;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * @var string[]
+         */
+        public $impactedProducts;
+        /**
+         * @var InapplicabilityDetails[]
+         */
+        public $inapplicabilityDetails;
+        protected $inapplicabilityDetailsType = InapplicabilityDetails::class;
+        protected $inapplicabilityDetailsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $inapplicableProducts;
+        /**
+         * @var int
+         */
+        public $orderItemCount;
+        /**
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * @var PriceAmount
+         */
+        public $totalGmv;
+        protected $totalGmvType = PriceAmount::class;
+        protected $totalGmvDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param RepricingRuleReportBuyboxWinningRuleStats
+         */
+        public function setBuyboxWinningRuleStats(RepricingRuleReportBuyboxWinningRuleStats $buyboxWinningRuleStats)
+        {
+        }
+        /**
+         * @return RepricingRuleReportBuyboxWinningRuleStats
+         */
+        public function getBuyboxWinningRuleStats()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setImpactedProducts($impactedProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getImpactedProducts()
+        {
+        }
+        /**
+         * @param InapplicabilityDetails[]
+         */
+        public function setInapplicabilityDetails($inapplicabilityDetails)
+        {
+        }
+        /**
+         * @return InapplicabilityDetails[]
+         */
+        public function getInapplicabilityDetails()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setInapplicableProducts($inapplicableProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInapplicableProducts()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setOrderItemCount($orderItemCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOrderItemCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
+        /**
+         * @param PriceAmount
+         */
+        public function setTotalGmv(PriceAmount $totalGmv)
+        {
+        }
+        /**
+         * @return PriceAmount
+         */
+        public function getTotalGmv()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RepricingRuleReportBuyboxWinningRuleStats
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyboxWinningRuleStats()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setImpactedProducts($impactedProducts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getImpactedProducts()
-    {
-    }
-    /**
-     * @param InapplicabilityDetails[]
-     */
-    public function setInapplicabilityDetails($inapplicabilityDetails)
-    {
-    }
-    /**
-     * @return InapplicabilityDetails[]
-     */
-    public function getInapplicabilityDetails()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setInapplicableProducts($inapplicableProducts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInapplicableProducts()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setOrderItemCount($orderItemCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOrderItemCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
-    {
-    }
-    /**
-     * @param PriceAmount
-     */
-    public function setTotalGmv(PriceAmount $totalGmv)
-    {
-    }
-    /**
-     * @return PriceAmount
-     */
-    public function getTotalGmv()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_RepricingRuleReport extends \Google\Service\ShoppingContent\RepricingRuleReport
     {
     }
 }

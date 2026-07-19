@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class RuntimeMetadata extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $parametersType = ParameterMetadata::class;
-    protected $parametersDataType = 'array';
-    protected $sdkInfoType = SDKInfo::class;
-    protected $sdkInfoDataType = '';
-    /**
-     * The parameters for the template.
-     *
-     * @param ParameterMetadata[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Dataflow {
+    class RuntimeMetadata extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $parametersType = ParameterMetadata::class;
+        protected $parametersDataType = 'array';
+        protected $sdkInfoType = SDKInfo::class;
+        protected $sdkInfoDataType = '';
+        /**
+         * The parameters for the template.
+         *
+         * @param ParameterMetadata[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return ParameterMetadata[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * SDK Info for the template.
+         *
+         * @param SDKInfo $sdkInfo
+         */
+        public function setSdkInfo(SDKInfo $sdkInfo)
+        {
+        }
+        /**
+         * @return SDKInfo
+         */
+        public function getSdkInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ParameterMetadata[]
+     * Runtime class alias of \Google\Service\Dataflow\RuntimeMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
-    {
-    }
-    /**
-     * SDK Info for the template.
-     *
-     * @param SDKInfo $sdkInfo
-     */
-    public function setSdkInfo(SDKInfo $sdkInfo)
-    {
-    }
-    /**
-     * @return SDKInfo
-     */
-    public function getSdkInfo()
+    class Google_Service_Dataflow_RuntimeMetadata extends \Google\Service\Dataflow\RuntimeMetadata
     {
     }
 }

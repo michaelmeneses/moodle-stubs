@@ -21,139 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager\Resource;
-
-/**
- * The "pullRequestComments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
- *   $pullRequestComments = $securesourcemanagerService->projects_locations_repositories_pullRequests_pullRequestComments;
- *  </code>
- */
-class ProjectsLocationsRepositoriesPullRequestsPullRequestComments extends \Google\Service\Resource
-{
+namespace Google\Service\SecureSourceManager\Resource {
+    use Google\Service\SecureSourceManager\BatchCreatePullRequestCommentsRequest;
+    use Google\Service\SecureSourceManager\ListPullRequestCommentsResponse;
+    use Google\Service\SecureSourceManager\Operation;
+    use Google\Service\SecureSourceManager\PullRequestComment;
+    use Google\Service\SecureSourceManager\ResolvePullRequestCommentsRequest;
+    use Google\Service\SecureSourceManager\UnresolvePullRequestCommentsRequest;
     /**
-     * Batch creates pull request comments. (pullRequestComments.batchCreate)
-     *
-     * @param string $parent Required. The pull request in which to create the pull
-     * request comments. Format: `projects/{project_number}/locations/{location_id}/
-     * repositories/{repository_id}/pullRequests/{pull_request_id}`
-     * @param BatchCreatePullRequestCommentsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "pullRequestComments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
+     *   $pullRequestComments = $securesourcemanagerService->projects_locations_repositories_pullRequests_pullRequestComments;
+     *  </code>
      */
-    public function batchCreate($parent, BatchCreatePullRequestCommentsRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesPullRequestsPullRequestComments extends \Google\Service\Resource
     {
+        /**
+         * Batch creates pull request comments. (pullRequestComments.batchCreate)
+         *
+         * @param string $parent Required. The pull request in which to create the pull
+         * request comments. Format: `projects/{project_number}/locations/{location_id}/
+         * repositories/{repository_id}/pullRequests/{pull_request_id}`
+         * @param BatchCreatePullRequestCommentsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function batchCreate($parent, BatchCreatePullRequestCommentsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a pull request comment. (pullRequestComments.create)
+         *
+         * @param string $parent Required. The pull request in which to create the pull
+         * request comment. Format: `projects/{project_number}/locations/{location_id}/r
+         * epositories/{repository_id}/pullRequests/{pull_request_id}`
+         * @param PullRequestComment $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, PullRequestComment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a pull request comment. (pullRequestComments.delete)
+         *
+         * @param string $name Required. Name of the pull request comment to delete. The
+         * format is `projects/{project_number}/locations/{location_id}/repositories/{re
+         * pository_id}/pullRequests/{pull_request_id}/pullRequestComments/{comment_id}`
+         * .
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a pull request comment. (pullRequestComments.get)
+         *
+         * @param string $name Required. Name of the pull request comment to retrieve.
+         * The format is `projects/{project_number}/locations/{location_id}/repositories
+         * /{repository_id}/pullRequests/{pull_request_id}/pullRequestComments/{comment_
+         * id}`.
+         * @param array $optParams Optional parameters.
+         * @return PullRequestComment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists pull request comments. (pullRequestComments.listProjectsLocationsReposi
+         * toriesPullRequestsPullRequestComments)
+         *
+         * @param string $parent Required. The pull request in which to list pull
+         * request comments. Format: `projects/{project_number}/locations/{location_id}/
+         * repositories/{repository_id}/pullRequests/{pull_request_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. If unspecified, at
+         * most 100 pull request comments will be returned. The maximum value is 100;
+         * values above 100 will be coerced to 100.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListPullRequestCommentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesPullRequestsPullRequestComments($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a pull request comment. (pullRequestComments.patch)
+         *
+         * @param string $name Identifier. Unique identifier for the pull request
+         * comment. The comment id is generated by the server. Format: `projects/{projec
+         * t}/locations/{location}/repositories/{repository}/pullRequests/{pull_request}
+         * /pullRequestComments/{comment_id}`
+         * @param PullRequestComment $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the pull request comment resource by the update.
+         * Updatable fields are `body`.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, PullRequestComment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Resolves pull request comments. (pullRequestComments.resolve)
+         *
+         * @param string $parent Required. The pull request in which to resolve the pull
+         * request comments. Format: `projects/{project_number}/locations/{location_id}/
+         * repositories/{repository_id}/pullRequests/{pull_request_id}`
+         * @param ResolvePullRequestCommentsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function resolve($parent, ResolvePullRequestCommentsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Unresolves pull request comment. (pullRequestComments.unresolve)
+         *
+         * @param string $parent Required. The pull request in which to resolve the pull
+         * request comments. Format: `projects/{project_number}/locations/{location_id}/
+         * repositories/{repository_id}/pullRequests/{pull_request_id}`
+         * @param UnresolvePullRequestCommentsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function unresolve($parent, UnresolvePullRequestCommentsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a pull request comment. (pullRequestComments.create)
-     *
-     * @param string $parent Required. The pull request in which to create the pull
-     * request comment. Format: `projects/{project_number}/locations/{location_id}/r
-     * epositories/{repository_id}/pullRequests/{pull_request_id}`
-     * @param PullRequestComment $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesPullRequestsPullRequestComments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, PullRequestComment $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a pull request comment. (pullRequestComments.delete)
-     *
-     * @param string $name Required. Name of the pull request comment to delete. The
-     * format is `projects/{project_number}/locations/{location_id}/repositories/{re
-     * pository_id}/pullRequests/{pull_request_id}/pullRequestComments/{comment_id}`
-     * .
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a pull request comment. (pullRequestComments.get)
-     *
-     * @param string $name Required. Name of the pull request comment to retrieve.
-     * The format is `projects/{project_number}/locations/{location_id}/repositories
-     * /{repository_id}/pullRequests/{pull_request_id}/pullRequestComments/{comment_
-     * id}`.
-     * @param array $optParams Optional parameters.
-     * @return PullRequestComment
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists pull request comments. (pullRequestComments.listProjectsLocationsReposi
-     * toriesPullRequestsPullRequestComments)
-     *
-     * @param string $parent Required. The pull request in which to list pull
-     * request comments. Format: `projects/{project_number}/locations/{location_id}/
-     * repositories/{repository_id}/pullRequests/{pull_request_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. If unspecified, at
-     * most 100 pull request comments will be returned. The maximum value is 100;
-     * values above 100 will be coerced to 100.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListPullRequestCommentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesPullRequestsPullRequestComments($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a pull request comment. (pullRequestComments.patch)
-     *
-     * @param string $name Identifier. Unique identifier for the pull request
-     * comment. The comment id is generated by the server. Format: `projects/{projec
-     * t}/locations/{location}/repositories/{repository}/pullRequests/{pull_request}
-     * /pullRequestComments/{comment_id}`
-     * @param PullRequestComment $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the pull request comment resource by the update.
-     * Updatable fields are `body`.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, PullRequestComment $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Resolves pull request comments. (pullRequestComments.resolve)
-     *
-     * @param string $parent Required. The pull request in which to resolve the pull
-     * request comments. Format: `projects/{project_number}/locations/{location_id}/
-     * repositories/{repository_id}/pullRequests/{pull_request_id}`
-     * @param ResolvePullRequestCommentsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function resolve($parent, ResolvePullRequestCommentsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Unresolves pull request comment. (pullRequestComments.unresolve)
-     *
-     * @param string $parent Required. The pull request in which to resolve the pull
-     * request comments. Format: `projects/{project_number}/locations/{location_id}/
-     * repositories/{repository_id}/pullRequests/{pull_request_id}`
-     * @param UnresolvePullRequestCommentsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function unresolve($parent, UnresolvePullRequestCommentsRequest $postBody, $optParams = [])
+    class Google_Service_SecureSourceManager_Resource_ProjectsLocationsRepositoriesPullRequestsPullRequestComments extends \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesPullRequestsPullRequestComments
     {
     }
 }

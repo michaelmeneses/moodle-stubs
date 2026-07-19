@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class PurgeProductsRequest extends \Google\Model
-{
-    /**
-     * If delete_orphan_products is true, all Products that are not in any
-     * ProductSet will be deleted.
-     *
-     * @var bool
-     */
-    public $deleteOrphanProducts;
-    /**
-     * The default value is false. Override this value to true to actually perform
-     * the purge.
-     *
-     * @var bool
-     */
-    public $force;
-    protected $productSetPurgeConfigType = ProductSetPurgeConfig::class;
-    protected $productSetPurgeConfigDataType = '';
-    /**
-     * If delete_orphan_products is true, all Products that are not in any
-     * ProductSet will be deleted.
-     *
-     * @param bool $deleteOrphanProducts
-     */
-    public function setDeleteOrphanProducts($deleteOrphanProducts)
+namespace Google\Service\Vision {
+    class PurgeProductsRequest extends \Google\Model
     {
+        /**
+         * If delete_orphan_products is true, all Products that are not in any
+         * ProductSet will be deleted.
+         *
+         * @var bool
+         */
+        public $deleteOrphanProducts;
+        /**
+         * The default value is false. Override this value to true to actually perform
+         * the purge.
+         *
+         * @var bool
+         */
+        public $force;
+        protected $productSetPurgeConfigType = ProductSetPurgeConfig::class;
+        protected $productSetPurgeConfigDataType = '';
+        /**
+         * If delete_orphan_products is true, all Products that are not in any
+         * ProductSet will be deleted.
+         *
+         * @param bool $deleteOrphanProducts
+         */
+        public function setDeleteOrphanProducts($deleteOrphanProducts)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleteOrphanProducts()
+        {
+        }
+        /**
+         * The default value is false. Override this value to true to actually perform
+         * the purge.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Specify which ProductSet contains the Products to be deleted.
+         *
+         * @param ProductSetPurgeConfig $productSetPurgeConfig
+         */
+        public function setProductSetPurgeConfig(ProductSetPurgeConfig $productSetPurgeConfig)
+        {
+        }
+        /**
+         * @return ProductSetPurgeConfig
+         */
+        public function getProductSetPurgeConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vision\PurgeProductsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteOrphanProducts()
-    {
-    }
-    /**
-     * The default value is false. Override this value to true to actually perform
-     * the purge.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * Specify which ProductSet contains the Products to be deleted.
-     *
-     * @param ProductSetPurgeConfig $productSetPurgeConfig
-     */
-    public function setProductSetPurgeConfig(ProductSetPurgeConfig $productSetPurgeConfig)
-    {
-    }
-    /**
-     * @return ProductSetPurgeConfig
-     */
-    public function getProductSetPurgeConfig()
+    class Google_Service_Vision_PurgeProductsRequest extends \Google\Service\Vision\PurgeProductsRequest
     {
     }
 }

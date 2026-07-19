@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ViolationDetails extends \Google\Model
-{
-    /**
-     * The name of the asset.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Details of the violation. TODO(b/452163887)
-     *
-     * @var string[]
-     */
-    public $observed;
-    /**
-     * The service account associated with the resource.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * The name of the asset.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\WorkloadManager {
+    class ViolationDetails extends \Google\Model
     {
+        /**
+         * The name of the asset.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Details of the violation. TODO(b/452163887)
+         *
+         * @var string[]
+         */
+        public $observed;
+        /**
+         * The service account associated with the resource.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * The name of the asset.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Details of the violation. TODO(b/452163887)
+         *
+         * @param string[] $observed
+         */
+        public function setObserved($observed)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getObserved()
+        {
+        }
+        /**
+         * The service account associated with the resource.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ViolationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * Details of the violation. TODO(b/452163887)
-     *
-     * @param string[] $observed
-     */
-    public function setObserved($observed)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getObserved()
-    {
-    }
-    /**
-     * The service account associated with the resource.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
+    class Google_Service_WorkloadManager_ViolationDetails extends \Google\Service\WorkloadManager\ViolationDetails
     {
     }
 }

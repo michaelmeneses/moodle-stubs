@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class DomainAliases extends \Google\Collection
-{
-    protected $collection_key = 'domainAliases';
-    protected $domainAliasesType = DomainAlias::class;
-    protected $domainAliasesDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of domain alias objects.
-     *
-     * @param DomainAlias[] $domainAliases
-     */
-    public function setDomainAliases($domainAliases)
+namespace Google\Service\Directory {
+    class DomainAliases extends \Google\Collection
     {
+        protected $collection_key = 'domainAliases';
+        protected $domainAliasesType = DomainAlias::class;
+        protected $domainAliasesDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of domain alias objects.
+         *
+         * @param DomainAlias[] $domainAliases
+         */
+        public function setDomainAliases($domainAliases)
+        {
+        }
+        /**
+         * @return DomainAlias[]
+         */
+        public function getDomainAliases()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainAlias[]
+     * Runtime class alias of \Google\Service\Directory\DomainAliases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainAliases()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Directory_DomainAliases extends \Google\Service\Directory\DomainAliases
     {
     }
 }

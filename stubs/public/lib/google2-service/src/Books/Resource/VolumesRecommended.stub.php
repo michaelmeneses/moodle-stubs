@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "recommended" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $recommended = $booksService->volumes_recommended;
- *  </code>
- */
-class VolumesRecommended extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\BooksVolumesRecommendedRateResponse;
+    use Google\Service\Books\Volumes as VolumesModel;
     /**
-     * Return a list of recommended books for the current user.
-     * (recommended.listVolumesRecommended)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
-     * 'en_US'. Used for generating recommendations.
-     * @opt_param string maxAllowedMaturityRating The maximum allowed maturity
-     * rating of returned recommendations. Books with a higher maturity rating are
-     * filtered out.
-     * @opt_param string source String to identify the originator of this request.
-     * @return VolumesModel
-     * @throws \Google\Service\Exception
+     * The "recommended" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $recommended = $booksService->volumes_recommended;
+     *  </code>
      */
-    public function listVolumesRecommended($optParams = [])
+    class VolumesRecommended extends \Google\Service\Resource
     {
+        /**
+         * Return a list of recommended books for the current user.
+         * (recommended.listVolumesRecommended)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
+         * 'en_US'. Used for generating recommendations.
+         * @opt_param string maxAllowedMaturityRating The maximum allowed maturity
+         * rating of returned recommendations. Books with a higher maturity rating are
+         * filtered out.
+         * @opt_param string source String to identify the originator of this request.
+         * @return VolumesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listVolumesRecommended($optParams = [])
+        {
+        }
+        /**
+         * Rate a recommended book for the current user. (recommended.rate)
+         *
+         * @param string $rating Rating to be given to the volume.
+         * @param string $volumeId ID of the source volume.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
+         * 'en_US'. Used for generating recommendations.
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksVolumesRecommendedRateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function rate($rating, $volumeId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Rate a recommended book for the current user. (recommended.rate)
-     *
-     * @param string $rating Rating to be given to the volume.
-     * @param string $volumeId ID of the source volume.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
-     * 'en_US'. Used for generating recommendations.
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksVolumesRecommendedRateResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\VolumesRecommended registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function rate($rating, $volumeId, $optParams = [])
+    class Google_Service_Books_Resource_VolumesRecommended extends \Google\Service\Books\Resource\VolumesRecommended
     {
     }
 }

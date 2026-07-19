@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class ListWorkloadIdentityPoolProvidersResponse extends \Google\Collection
-{
-    protected $collection_key = 'workloadIdentityPoolProviders';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workloadIdentityPoolProvidersType = WorkloadIdentityPoolProvider::class;
-    protected $workloadIdentityPoolProvidersDataType = 'array';
-    public $workloadIdentityPoolProviders;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Iam {
+    class ListWorkloadIdentityPoolProvidersResponse extends \Google\Collection
     {
+        protected $collection_key = 'workloadIdentityPoolProviders';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workloadIdentityPoolProvidersType = WorkloadIdentityPoolProvider::class;
+        protected $workloadIdentityPoolProvidersDataType = 'array';
+        public $workloadIdentityPoolProviders;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param WorkloadIdentityPoolProvider[]
+         */
+        public function setWorkloadIdentityPoolProviders($workloadIdentityPoolProviders)
+        {
+        }
+        /**
+         * @return WorkloadIdentityPoolProvider[]
+         */
+        public function getWorkloadIdentityPoolProviders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\ListWorkloadIdentityPoolProvidersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param WorkloadIdentityPoolProvider[]
-     */
-    public function setWorkloadIdentityPoolProviders($workloadIdentityPoolProviders)
-    {
-    }
-    /**
-     * @return WorkloadIdentityPoolProvider[]
-     */
-    public function getWorkloadIdentityPoolProviders()
+    class Google_Service_Iam_ListWorkloadIdentityPoolProvidersResponse extends \Google\Service\Iam\ListWorkloadIdentityPoolProvidersResponse
     {
     }
 }

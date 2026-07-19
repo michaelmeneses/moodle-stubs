@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class CreateBitbucketServerConnectedRepositoryRequest extends \Google\Model
-{
-    protected $bitbucketServerConnectedRepositoryType = BitbucketServerConnectedRepository::class;
-    protected $bitbucketServerConnectedRepositoryDataType = '';
-    /**
-     * @var string
-     */
-    public $parent;
-    /**
-     * @param BitbucketServerConnectedRepository
-     */
-    public function setBitbucketServerConnectedRepository(BitbucketServerConnectedRepository $bitbucketServerConnectedRepository)
+namespace Google\Service\CloudBuild {
+    class CreateBitbucketServerConnectedRepositoryRequest extends \Google\Model
     {
+        protected $bitbucketServerConnectedRepositoryType = BitbucketServerConnectedRepository::class;
+        protected $bitbucketServerConnectedRepositoryDataType = '';
+        /**
+         * @var string
+         */
+        public $parent;
+        /**
+         * @param BitbucketServerConnectedRepository
+         */
+        public function setBitbucketServerConnectedRepository(BitbucketServerConnectedRepository $bitbucketServerConnectedRepository)
+        {
+        }
+        /**
+         * @return BitbucketServerConnectedRepository
+         */
+        public function getBitbucketServerConnectedRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitbucketServerConnectedRepository
+     * Runtime class alias of \Google\Service\CloudBuild\CreateBitbucketServerConnectedRepositoryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerConnectedRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_CloudBuild_CreateBitbucketServerConnectedRepositoryRequest extends \Google\Service\CloudBuild\CreateBitbucketServerConnectedRepositoryRequest
     {
     }
 }

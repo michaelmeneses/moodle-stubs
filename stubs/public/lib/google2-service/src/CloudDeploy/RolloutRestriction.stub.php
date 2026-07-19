@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RolloutRestriction extends \Google\Collection
-{
-    protected $collection_key = 'invokers';
-    /**
-     * Optional. Rollout actions to be restricted as part of the policy. If left
-     * empty, all actions will be restricted.
-     *
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * Required. Restriction rule ID. Required and must be unique within a
-     * DeployPolicy. The format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. What invoked the action. If left empty, all invoker types will be
-     * restricted.
-     *
-     * @var string[]
-     */
-    public $invokers;
-    protected $timeWindowsType = TimeWindows::class;
-    protected $timeWindowsDataType = '';
-    /**
-     * Optional. Rollout actions to be restricted as part of the policy. If left
-     * empty, all actions will be restricted.
-     *
-     * @param string[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\CloudDeploy {
+    class RolloutRestriction extends \Google\Collection
     {
+        protected $collection_key = 'invokers';
+        /**
+         * Optional. Rollout actions to be restricted as part of the policy. If left
+         * empty, all actions will be restricted.
+         *
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * Required. Restriction rule ID. Required and must be unique within a
+         * DeployPolicy. The format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. What invoked the action. If left empty, all invoker types will be
+         * restricted.
+         *
+         * @var string[]
+         */
+        public $invokers;
+        protected $timeWindowsType = TimeWindows::class;
+        protected $timeWindowsDataType = '';
+        /**
+         * Optional. Rollout actions to be restricted as part of the policy. If left
+         * empty, all actions will be restricted.
+         *
+         * @param string[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Required. Restriction rule ID. Required and must be unique within a
+         * DeployPolicy. The format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. What invoked the action. If left empty, all invoker types will be
+         * restricted.
+         *
+         * @param string[] $invokers
+         */
+        public function setInvokers($invokers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInvokers()
+        {
+        }
+        /**
+         * Required. Time window within which actions are restricted.
+         *
+         * @param TimeWindows $timeWindows
+         */
+        public function setTimeWindows(TimeWindows $timeWindows)
+        {
+        }
+        /**
+         * @return TimeWindows
+         */
+        public function getTimeWindows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\RolloutRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Required. Restriction rule ID. Required and must be unique within a
-     * DeployPolicy. The format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. What invoked the action. If left empty, all invoker types will be
-     * restricted.
-     *
-     * @param string[] $invokers
-     */
-    public function setInvokers($invokers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInvokers()
-    {
-    }
-    /**
-     * Required. Time window within which actions are restricted.
-     *
-     * @param TimeWindows $timeWindows
-     */
-    public function setTimeWindows(TimeWindows $timeWindows)
-    {
-    }
-    /**
-     * @return TimeWindows
-     */
-    public function getTimeWindows()
+    class Google_Service_CloudDeploy_RolloutRestriction extends \Google\Service\CloudDeploy\RolloutRestriction
     {
     }
 }

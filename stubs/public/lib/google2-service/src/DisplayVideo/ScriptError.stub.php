@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ScriptError extends \Google\Model
-{
-    /**
-     * The script error is not specified or is unknown in this version.
-     */
-    public const ERROR_CODE_ERROR_CODE_UNSPECIFIED = 'ERROR_CODE_UNSPECIFIED';
-    /**
-     * The script has a syntax error.
-     */
-    public const ERROR_CODE_SYNTAX_ERROR = 'SYNTAX_ERROR';
-    /**
-     * The script uses deprecated syntax.
-     */
-    public const ERROR_CODE_DEPRECATED_SYNTAX = 'DEPRECATED_SYNTAX';
-    /**
-     * Internal errors were thrown while processing the script.
-     */
-    public const ERROR_CODE_INTERNAL_ERROR = 'INTERNAL_ERROR';
-    /**
-     * The column number in the script where the error was thrown.
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * The type of error.
-     *
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * The detailed error message.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The line number in the script where the error was thrown.
-     *
-     * @var string
-     */
-    public $line;
-    /**
-     * The column number in the script where the error was thrown.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\DisplayVideo {
+    class ScriptError extends \Google\Model
     {
+        /**
+         * The script error is not specified or is unknown in this version.
+         */
+        public const ERROR_CODE_ERROR_CODE_UNSPECIFIED = 'ERROR_CODE_UNSPECIFIED';
+        /**
+         * The script has a syntax error.
+         */
+        public const ERROR_CODE_SYNTAX_ERROR = 'SYNTAX_ERROR';
+        /**
+         * The script uses deprecated syntax.
+         */
+        public const ERROR_CODE_DEPRECATED_SYNTAX = 'DEPRECATED_SYNTAX';
+        /**
+         * Internal errors were thrown while processing the script.
+         */
+        public const ERROR_CODE_INTERNAL_ERROR = 'INTERNAL_ERROR';
+        /**
+         * The column number in the script where the error was thrown.
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * The type of error.
+         *
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * The detailed error message.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The line number in the script where the error was thrown.
+         *
+         * @var string
+         */
+        public $line;
+        /**
+         * The column number in the script where the error was thrown.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * The type of error.
+         *
+         * Accepted values: ERROR_CODE_UNSPECIFIED, SYNTAX_ERROR, DEPRECATED_SYNTAX,
+         * INTERNAL_ERROR
+         *
+         * @param self::ERROR_CODE_* $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return self::ERROR_CODE_*
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * The detailed error message.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * The line number in the script where the error was thrown.
+         *
+         * @param string $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ScriptError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * The type of error.
-     *
-     * Accepted values: ERROR_CODE_UNSPECIFIED, SYNTAX_ERROR, DEPRECATED_SYNTAX,
-     * INTERNAL_ERROR
-     *
-     * @param self::ERROR_CODE_* $errorCode
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return self::ERROR_CODE_*
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * The detailed error message.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * The line number in the script where the error was thrown.
-     *
-     * @param string $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine()
+    class Google_Service_DisplayVideo_ScriptError extends \Google\Service\DisplayVideo\ScriptError
     {
     }
 }

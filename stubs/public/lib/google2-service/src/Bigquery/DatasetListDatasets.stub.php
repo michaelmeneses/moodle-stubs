@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DatasetListDatasets extends \Google\Model
-{
-    protected $datasetReferenceType = DatasetReference::class;
-    protected $datasetReferenceDataType = '';
-    protected $externalDatasetReferenceType = ExternalDatasetReference::class;
-    protected $externalDatasetReferenceDataType = '';
-    /**
-     * An alternate name for the dataset. The friendly name is purely decorative
-     * in nature.
-     *
-     * @var string
-     */
-    public $friendlyName;
-    /**
-     * The fully-qualified, unique, opaque ID of the dataset.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The resource type. This property always returns the value
-     * "bigquery#dataset"
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The labels associated with this dataset. You can use these to organize and
-     * group your datasets.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The geographic location where the dataset resides.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The dataset reference. Use this property to access specific parts of the
-     * dataset's ID, such as project ID or dataset ID.
-     *
-     * @param DatasetReference $datasetReference
-     */
-    public function setDatasetReference(DatasetReference $datasetReference)
+namespace Google\Service\Bigquery {
+    class DatasetListDatasets extends \Google\Model
     {
+        protected $datasetReferenceType = DatasetReference::class;
+        protected $datasetReferenceDataType = '';
+        protected $externalDatasetReferenceType = ExternalDatasetReference::class;
+        protected $externalDatasetReferenceDataType = '';
+        /**
+         * An alternate name for the dataset. The friendly name is purely decorative
+         * in nature.
+         *
+         * @var string
+         */
+        public $friendlyName;
+        /**
+         * The fully-qualified, unique, opaque ID of the dataset.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The resource type. This property always returns the value
+         * "bigquery#dataset"
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The labels associated with this dataset. You can use these to organize and
+         * group your datasets.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The geographic location where the dataset resides.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The dataset reference. Use this property to access specific parts of the
+         * dataset's ID, such as project ID or dataset ID.
+         *
+         * @param DatasetReference $datasetReference
+         */
+        public function setDatasetReference(DatasetReference $datasetReference)
+        {
+        }
+        /**
+         * @return DatasetReference
+         */
+        public function getDatasetReference()
+        {
+        }
+        /**
+         * Output only. Reference to a read-only external dataset defined in data
+         * catalogs outside of BigQuery. Filled out when the dataset type is EXTERNAL.
+         *
+         * @param ExternalDatasetReference $externalDatasetReference
+         */
+        public function setExternalDatasetReference(ExternalDatasetReference $externalDatasetReference)
+        {
+        }
+        /**
+         * @return ExternalDatasetReference
+         */
+        public function getExternalDatasetReference()
+        {
+        }
+        /**
+         * An alternate name for the dataset. The friendly name is purely decorative
+         * in nature.
+         *
+         * @param string $friendlyName
+         */
+        public function setFriendlyName($friendlyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFriendlyName()
+        {
+        }
+        /**
+         * The fully-qualified, unique, opaque ID of the dataset.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The resource type. This property always returns the value
+         * "bigquery#dataset"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The labels associated with this dataset. You can use these to organize and
+         * group your datasets.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The geographic location where the dataset resides.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatasetReference
+     * Runtime class alias of \Google\Service\Bigquery\DatasetListDatasets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetReference()
-    {
-    }
-    /**
-     * Output only. Reference to a read-only external dataset defined in data
-     * catalogs outside of BigQuery. Filled out when the dataset type is EXTERNAL.
-     *
-     * @param ExternalDatasetReference $externalDatasetReference
-     */
-    public function setExternalDatasetReference(ExternalDatasetReference $externalDatasetReference)
-    {
-    }
-    /**
-     * @return ExternalDatasetReference
-     */
-    public function getExternalDatasetReference()
-    {
-    }
-    /**
-     * An alternate name for the dataset. The friendly name is purely decorative
-     * in nature.
-     *
-     * @param string $friendlyName
-     */
-    public function setFriendlyName($friendlyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFriendlyName()
-    {
-    }
-    /**
-     * The fully-qualified, unique, opaque ID of the dataset.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The resource type. This property always returns the value
-     * "bigquery#dataset"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The labels associated with this dataset. You can use these to organize and
-     * group your datasets.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The geographic location where the dataset resides.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_Bigquery_DatasetListDatasets extends \Google\Service\Bigquery\DatasetListDatasets
     {
     }
 }

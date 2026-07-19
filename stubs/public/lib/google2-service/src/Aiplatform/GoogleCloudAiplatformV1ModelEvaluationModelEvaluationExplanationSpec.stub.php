@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelEvaluationModelEvaluationExplanationSpec extends \Google\Model
-{
-    protected $explanationSpecType = GoogleCloudAiplatformV1ExplanationSpec::class;
-    protected $explanationSpecDataType = '';
-    /**
-     * Explanation type. For AutoML Image Classification models, possible values
-     * are: * `image-integrated-gradients` * `image-xrai`
-     *
-     * @var string
-     */
-    public $explanationType;
-    /**
-     * Explanation spec details.
-     *
-     * @param GoogleCloudAiplatformV1ExplanationSpec $explanationSpec
-     */
-    public function setExplanationSpec(GoogleCloudAiplatformV1ExplanationSpec $explanationSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelEvaluationModelEvaluationExplanationSpec extends \Google\Model
     {
+        protected $explanationSpecType = GoogleCloudAiplatformV1ExplanationSpec::class;
+        protected $explanationSpecDataType = '';
+        /**
+         * Explanation type. For AutoML Image Classification models, possible values
+         * are: * `image-integrated-gradients` * `image-xrai`
+         *
+         * @var string
+         */
+        public $explanationType;
+        /**
+         * Explanation spec details.
+         *
+         * @param GoogleCloudAiplatformV1ExplanationSpec $explanationSpec
+         */
+        public function setExplanationSpec(GoogleCloudAiplatformV1ExplanationSpec $explanationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExplanationSpec
+         */
+        public function getExplanationSpec()
+        {
+        }
+        /**
+         * Explanation type. For AutoML Image Classification models, possible values
+         * are: * `image-integrated-gradients` * `image-xrai`
+         *
+         * @param string $explanationType
+         */
+        public function setExplanationType($explanationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExplanationSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationModelEvaluationExplanationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplanationSpec()
-    {
-    }
-    /**
-     * Explanation type. For AutoML Image Classification models, possible values
-     * are: * `image-integrated-gradients` * `image-xrai`
-     *
-     * @param string $explanationType
-     */
-    public function setExplanationType($explanationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanationType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelEvaluationModelEvaluationExplanationSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationModelEvaluationExplanationSpec
     {
     }
 }

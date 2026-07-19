@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class Scope extends \Google\Model
-{
-    /**
-     * Optional. Matches all Kubernetes service accounts in the provided
-     * namespace, unless a more specific `kubernetes_service_account` scope
-     * already matched.
-     *
-     * @var string
-     */
-    public $kubernetesNamespace;
-    /**
-     * Optional. Matches a single Kubernetes service account, e.g. `my-
-     * namespace:my-service-account`. `kubernetes_service_account` scope is always
-     * more specific than `kubernetes_namespace` scope for the same namespace.
-     *
-     * @var string
-     */
-    public $kubernetesServiceAccount;
-    /**
-     * Optional. Matches all Kubernetes service accounts in the provided
-     * namespace, unless a more specific `kubernetes_service_account` scope
-     * already matched.
-     *
-     * @param string $kubernetesNamespace
-     */
-    public function setKubernetesNamespace($kubernetesNamespace)
+namespace Google\Service\BinaryAuthorization {
+    class Scope extends \Google\Model
     {
+        /**
+         * Optional. Matches all Kubernetes service accounts in the provided
+         * namespace, unless a more specific `kubernetes_service_account` scope
+         * already matched.
+         *
+         * @var string
+         */
+        public $kubernetesNamespace;
+        /**
+         * Optional. Matches a single Kubernetes service account, e.g. `my-
+         * namespace:my-service-account`. `kubernetes_service_account` scope is always
+         * more specific than `kubernetes_namespace` scope for the same namespace.
+         *
+         * @var string
+         */
+        public $kubernetesServiceAccount;
+        /**
+         * Optional. Matches all Kubernetes service accounts in the provided
+         * namespace, unless a more specific `kubernetes_service_account` scope
+         * already matched.
+         *
+         * @param string $kubernetesNamespace
+         */
+        public function setKubernetesNamespace($kubernetesNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesNamespace()
+        {
+        }
+        /**
+         * Optional. Matches a single Kubernetes service account, e.g. `my-
+         * namespace:my-service-account`. `kubernetes_service_account` scope is always
+         * more specific than `kubernetes_namespace` scope for the same namespace.
+         *
+         * @param string $kubernetesServiceAccount
+         */
+        public function setKubernetesServiceAccount($kubernetesServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Scope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKubernetesNamespace()
-    {
-    }
-    /**
-     * Optional. Matches a single Kubernetes service account, e.g. `my-
-     * namespace:my-service-account`. `kubernetes_service_account` scope is always
-     * more specific than `kubernetes_namespace` scope for the same namespace.
-     *
-     * @param string $kubernetesServiceAccount
-     */
-    public function setKubernetesServiceAccount($kubernetesServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesServiceAccount()
+    class Google_Service_BinaryAuthorization_Scope extends \Google\Service\BinaryAuthorization\Scope
     {
     }
 }

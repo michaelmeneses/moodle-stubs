@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class SyncRequest extends \Google\Model
-{
-    /**
-     * Required. Third-party user ID.
-     *
-     * @var string
-     */
-    public $agentUserId;
-    /**
-     * Request ID used for debugging.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. Third-party user ID.
-     *
-     * @param string $agentUserId
-     */
-    public function setAgentUserId($agentUserId)
+namespace Google\Service\HomeGraphService {
+    class SyncRequest extends \Google\Model
     {
+        /**
+         * Required. Third-party user ID.
+         *
+         * @var string
+         */
+        public $agentUserId;
+        /**
+         * Request ID used for debugging.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. Third-party user ID.
+         *
+         * @param string $agentUserId
+         */
+        public function setAgentUserId($agentUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentUserId()
+        {
+        }
+        /**
+         * Request ID used for debugging.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\SyncRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentUserId()
-    {
-    }
-    /**
-     * Request ID used for debugging.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_HomeGraphService_SyncRequest extends \Google\Service\HomeGraphService\SyncRequest
     {
     }
 }

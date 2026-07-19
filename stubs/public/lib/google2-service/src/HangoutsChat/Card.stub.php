@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Card extends \Google\Collection
-{
-    protected $collection_key = 'sections';
-    protected $cardActionsType = CardAction::class;
-    protected $cardActionsDataType = 'array';
-    protected $headerType = CardHeader::class;
-    protected $headerDataType = '';
-    /**
-     * Name of the card.
-     *
-     * @var string
-     */
-    public $name;
-    protected $sectionsType = Section::class;
-    protected $sectionsDataType = 'array';
-    /**
-     * The actions of this card.
-     *
-     * @param CardAction[] $cardActions
-     */
-    public function setCardActions($cardActions)
+namespace Google\Service\HangoutsChat {
+    class Card extends \Google\Collection
     {
+        protected $collection_key = 'sections';
+        protected $cardActionsType = CardAction::class;
+        protected $cardActionsDataType = 'array';
+        protected $headerType = CardHeader::class;
+        protected $headerDataType = '';
+        /**
+         * Name of the card.
+         *
+         * @var string
+         */
+        public $name;
+        protected $sectionsType = Section::class;
+        protected $sectionsDataType = 'array';
+        /**
+         * The actions of this card.
+         *
+         * @param CardAction[] $cardActions
+         */
+        public function setCardActions($cardActions)
+        {
+        }
+        /**
+         * @return CardAction[]
+         */
+        public function getCardActions()
+        {
+        }
+        /**
+         * The header of the card. A header usually contains a title and an image.
+         *
+         * @param CardHeader $header
+         */
+        public function setHeader(CardHeader $header)
+        {
+        }
+        /**
+         * @return CardHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * Name of the card.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Sections are separated by a line divider.
+         *
+         * @param Section[] $sections
+         */
+        public function setSections($sections)
+        {
+        }
+        /**
+         * @return Section[]
+         */
+        public function getSections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CardAction[]
+     * Runtime class alias of \Google\Service\HangoutsChat\Card registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardActions()
-    {
-    }
-    /**
-     * The header of the card. A header usually contains a title and an image.
-     *
-     * @param CardHeader $header
-     */
-    public function setHeader(CardHeader $header)
-    {
-    }
-    /**
-     * @return CardHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * Name of the card.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Sections are separated by a line divider.
-     *
-     * @param Section[] $sections
-     */
-    public function setSections($sections)
-    {
-    }
-    /**
-     * @return Section[]
-     */
-    public function getSections()
+    class Google_Service_HangoutsChat_Card extends \Google\Service\HangoutsChat\Card
     {
     }
 }

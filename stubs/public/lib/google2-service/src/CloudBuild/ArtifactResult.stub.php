@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ArtifactResult extends \Google\Collection
-{
-    protected $collection_key = 'fileHash';
-    protected $fileHashType = FileHashes::class;
-    protected $fileHashDataType = 'array';
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @param FileHashes[]
-     */
-    public function setFileHash($fileHash)
+namespace Google\Service\CloudBuild {
+    class ArtifactResult extends \Google\Collection
     {
+        protected $collection_key = 'fileHash';
+        protected $fileHashType = FileHashes::class;
+        protected $fileHashDataType = 'array';
+        /**
+         * @var string
+         */
+        public $location;
+        /**
+         * @param FileHashes[]
+         */
+        public function setFileHash($fileHash)
+        {
+        }
+        /**
+         * @return FileHashes[]
+         */
+        public function getFileHash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileHashes[]
+     * Runtime class alias of \Google\Service\CloudBuild\ArtifactResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_CloudBuild_ArtifactResult extends \Google\Service\CloudBuild\ArtifactResult
     {
     }
 }

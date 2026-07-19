@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectCircuitInfo extends \Google\Model
-{
-    /**
-     * Customer-side demarc ID for this circuit.
-     *
-     * @var string
-     */
-    public $customerDemarcId;
-    /**
-     * Google-assigned unique ID for this circuit. Assigned at circuit turn-up.
-     *
-     * @var string
-     */
-    public $googleCircuitId;
-    /**
-     * Google-side demarc ID for this circuit. Assigned at circuit turn-up and
-     * provided by Google to the customer in the LOA.
-     *
-     * @var string
-     */
-    public $googleDemarcId;
-    /**
-     * Customer-side demarc ID for this circuit.
-     *
-     * @param string $customerDemarcId
-     */
-    public function setCustomerDemarcId($customerDemarcId)
+namespace Google\Service\Compute {
+    class InterconnectCircuitInfo extends \Google\Model
     {
+        /**
+         * Customer-side demarc ID for this circuit.
+         *
+         * @var string
+         */
+        public $customerDemarcId;
+        /**
+         * Google-assigned unique ID for this circuit. Assigned at circuit turn-up.
+         *
+         * @var string
+         */
+        public $googleCircuitId;
+        /**
+         * Google-side demarc ID for this circuit. Assigned at circuit turn-up and
+         * provided by Google to the customer in the LOA.
+         *
+         * @var string
+         */
+        public $googleDemarcId;
+        /**
+         * Customer-side demarc ID for this circuit.
+         *
+         * @param string $customerDemarcId
+         */
+        public function setCustomerDemarcId($customerDemarcId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerDemarcId()
+        {
+        }
+        /**
+         * Google-assigned unique ID for this circuit. Assigned at circuit turn-up.
+         *
+         * @param string $googleCircuitId
+         */
+        public function setGoogleCircuitId($googleCircuitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleCircuitId()
+        {
+        }
+        /**
+         * Google-side demarc ID for this circuit. Assigned at circuit turn-up and
+         * provided by Google to the customer in the LOA.
+         *
+         * @param string $googleDemarcId
+         */
+        public function setGoogleDemarcId($googleDemarcId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleDemarcId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectCircuitInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerDemarcId()
-    {
-    }
-    /**
-     * Google-assigned unique ID for this circuit. Assigned at circuit turn-up.
-     *
-     * @param string $googleCircuitId
-     */
-    public function setGoogleCircuitId($googleCircuitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleCircuitId()
-    {
-    }
-    /**
-     * Google-side demarc ID for this circuit. Assigned at circuit turn-up and
-     * provided by Google to the customer in the LOA.
-     *
-     * @param string $googleDemarcId
-     */
-    public function setGoogleDemarcId($googleDemarcId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleDemarcId()
+    class Google_Service_Compute_InterconnectCircuitInfo extends \Google\Service\Compute\InterconnectCircuitInfo
     {
     }
 }

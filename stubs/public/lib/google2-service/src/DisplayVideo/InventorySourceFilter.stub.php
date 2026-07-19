@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceFilter extends \Google\Collection
-{
-    protected $collection_key = 'inventorySourceIds';
-    /**
-     * Inventory Sources to download by ID. All IDs must belong to the same
-     * Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Leave
-     * empty to download all Inventory Sources for the selected Advertiser or
-     * Partner.
-     *
-     * @var string[]
-     */
-    public $inventorySourceIds;
-    /**
-     * Inventory Sources to download by ID. All IDs must belong to the same
-     * Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Leave
-     * empty to download all Inventory Sources for the selected Advertiser or
-     * Partner.
-     *
-     * @param string[] $inventorySourceIds
-     */
-    public function setInventorySourceIds($inventorySourceIds)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceFilter extends \Google\Collection
     {
+        protected $collection_key = 'inventorySourceIds';
+        /**
+         * Inventory Sources to download by ID. All IDs must belong to the same
+         * Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Leave
+         * empty to download all Inventory Sources for the selected Advertiser or
+         * Partner.
+         *
+         * @var string[]
+         */
+        public $inventorySourceIds;
+        /**
+         * Inventory Sources to download by ID. All IDs must belong to the same
+         * Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Leave
+         * empty to download all Inventory Sources for the selected Advertiser or
+         * Partner.
+         *
+         * @param string[] $inventorySourceIds
+         */
+        public function setInventorySourceIds($inventorySourceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInventorySourceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventorySourceIds()
+    class Google_Service_DisplayVideo_InventorySourceFilter extends \Google\Service\DisplayVideo\InventorySourceFilter
     {
     }
 }

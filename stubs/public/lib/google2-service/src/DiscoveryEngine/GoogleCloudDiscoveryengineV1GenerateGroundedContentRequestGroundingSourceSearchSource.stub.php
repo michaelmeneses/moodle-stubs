@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $filter;
-    /**
-     * @var int
-     */
-    public $maxResultCount;
-    /**
-     * @var bool
-     */
-    public $safeSearch;
-    /**
-     * @var string
-     */
-    public $servingConfig;
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $filter;
+        /**
+         * @var int
+         */
+        public $maxResultCount;
+        /**
+         * @var bool
+         */
+        public $safeSearch;
+        /**
+         * @var string
+         */
+        public $servingConfig;
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxResultCount($maxResultCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxResultCount()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSafeSearch($safeSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSafeSearch()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServingConfig($servingConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxResultCount($maxResultCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxResultCount()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSafeSearch($safeSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSafeSearch()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServingConfig($servingConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServingConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource
     {
     }
 }

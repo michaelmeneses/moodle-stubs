@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListUserDataMappingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userDataMappings';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userDataMappingsType = UserDataMapping::class;
-    protected $userDataMappingsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudHealthcare {
+    class ListUserDataMappingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userDataMappings';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userDataMappingsType = UserDataMapping::class;
+        protected $userDataMappingsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The returned User data mappings. The maximum number of User data mappings
+         * returned is determined by the value of page_size in the
+         * ListUserDataMappingsRequest.
+         *
+         * @param UserDataMapping[] $userDataMappings
+         */
+        public function setUserDataMappings($userDataMappings)
+        {
+        }
+        /**
+         * @return UserDataMapping[]
+         */
+        public function getUserDataMappings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListUserDataMappingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The returned User data mappings. The maximum number of User data mappings
-     * returned is determined by the value of page_size in the
-     * ListUserDataMappingsRequest.
-     *
-     * @param UserDataMapping[] $userDataMappings
-     */
-    public function setUserDataMappings($userDataMappings)
-    {
-    }
-    /**
-     * @return UserDataMapping[]
-     */
-    public function getUserDataMappings()
+    class Google_Service_CloudHealthcare_ListUserDataMappingsResponse extends \Google\Service\CloudHealthcare\ListUserDataMappingsResponse
     {
     }
 }

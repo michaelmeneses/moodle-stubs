@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListGuardiansResponse extends \Google\Collection
-{
-    protected $collection_key = 'guardians';
-    protected $guardiansType = Guardian::class;
-    protected $guardiansDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Guardians on this page of results that met the criteria specified in the
-     * request.
-     *
-     * @param Guardian[] $guardians
-     */
-    public function setGuardians($guardians)
+namespace Google\Service\Classroom {
+    class ListGuardiansResponse extends \Google\Collection
     {
+        protected $collection_key = 'guardians';
+        protected $guardiansType = Guardian::class;
+        protected $guardiansDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Guardians on this page of results that met the criteria specified in the
+         * request.
+         *
+         * @param Guardian[] $guardians
+         */
+        public function setGuardians($guardians)
+        {
+        }
+        /**
+         * @return Guardian[]
+         */
+        public function getGuardians()
+        {
+        }
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Guardian[]
+     * Runtime class alias of \Google\Service\Classroom\ListGuardiansResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuardians()
-    {
-    }
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListGuardiansResponse extends \Google\Service\Classroom\ListGuardiansResponse
     {
     }
 }

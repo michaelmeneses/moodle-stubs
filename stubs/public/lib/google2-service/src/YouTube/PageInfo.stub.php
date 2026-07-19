@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PageInfo extends \Google\Model
-{
-    /**
-     * The number of results included in the API response.
-     *
-     * @var int
-     */
-    public $resultsPerPage;
-    /**
-     * The total number of results in the result set.
-     *
-     * @var int
-     */
-    public $totalResults;
-    /**
-     * The number of results included in the API response.
-     *
-     * @param int $resultsPerPage
-     */
-    public function setResultsPerPage($resultsPerPage)
+namespace Google\Service\YouTube {
+    class PageInfo extends \Google\Model
     {
+        /**
+         * The number of results included in the API response.
+         *
+         * @var int
+         */
+        public $resultsPerPage;
+        /**
+         * The total number of results in the result set.
+         *
+         * @var int
+         */
+        public $totalResults;
+        /**
+         * The number of results included in the API response.
+         *
+         * @param int $resultsPerPage
+         */
+        public function setResultsPerPage($resultsPerPage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResultsPerPage()
+        {
+        }
+        /**
+         * The total number of results in the result set.
+         *
+         * @param int $totalResults
+         */
+        public function setTotalResults($totalResults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\YouTube\PageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResultsPerPage()
-    {
-    }
-    /**
-     * The total number of results in the result set.
-     *
-     * @param int $totalResults
-     */
-    public function setTotalResults($totalResults)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalResults()
+    class Google_Service_YouTube_PageInfo extends \Google\Service\YouTube\PageInfo
     {
     }
 }

@@ -29,6 +29,7 @@
  */
 namespace core_rating\phpunit;
 
+use core_privacy\tests\request\content_writer;
 /**
  * Helpers for the core_rating subsystem implementation of privacy.
  *

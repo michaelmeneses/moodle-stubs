@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListMetricDescriptorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'metricDescriptors';
-    protected $metricDescriptorsType = MetricDescriptor::class;
-    protected $metricDescriptorsDataType = 'array';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The metric descriptors that are available to the project and that match the
-     * value of filter, if present.
-     *
-     * @param MetricDescriptor[] $metricDescriptors
-     */
-    public function setMetricDescriptors($metricDescriptors)
+namespace Google\Service\Monitoring {
+    class ListMetricDescriptorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'metricDescriptors';
+        protected $metricDescriptorsType = MetricDescriptor::class;
+        protected $metricDescriptorsDataType = 'array';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The metric descriptors that are available to the project and that match the
+         * value of filter, if present.
+         *
+         * @param MetricDescriptor[] $metricDescriptors
+         */
+        public function setMetricDescriptors($metricDescriptors)
+        {
+        }
+        /**
+         * @return MetricDescriptor[]
+         */
+        public function getMetricDescriptors()
+        {
+        }
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricDescriptor[]
+     * Runtime class alias of \Google\Service\Monitoring\ListMetricDescriptorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricDescriptors()
-    {
-    }
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Monitoring_ListMetricDescriptorsResponse extends \Google\Service\Monitoring\ListMetricDescriptorsResponse
     {
     }
 }

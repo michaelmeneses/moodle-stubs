@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub\Resource;
-
-/**
- * The "subscriptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubService = new Google\Service\Pubsub(...);
- *   $subscriptions = $pubsubService->projects_topics_subscriptions;
- *  </code>
- */
-class ProjectsTopicsSubscriptions extends \Google\Service\Resource
-{
+namespace Google\Service\Pubsub\Resource {
+    use Google\Service\Pubsub\ListTopicSubscriptionsResponse;
     /**
-     * Lists the names of the attached subscriptions on this topic.
-     * (subscriptions.listProjectsTopicsSubscriptions)
-     *
-     * @param string $topic Required. The name of the topic that subscriptions are
-     * attached to. Format is `projects/{project}/topics/{topic}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of subscription names to
-     * return.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListTopicSubscriptionsResponse`; indicates that this is a continuation of a
-     * prior `ListTopicSubscriptions` call, and that the system should return the
-     * next page of data.
-     * @return ListTopicSubscriptionsResponse
-     * @throws \Google\Service\Exception
+     * The "subscriptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubService = new Google\Service\Pubsub(...);
+     *   $subscriptions = $pubsubService->projects_topics_subscriptions;
+     *  </code>
      */
-    public function listProjectsTopicsSubscriptions($topic, $optParams = [])
+    class ProjectsTopicsSubscriptions extends \Google\Service\Resource
+    {
+        /**
+         * Lists the names of the attached subscriptions on this topic.
+         * (subscriptions.listProjectsTopicsSubscriptions)
+         *
+         * @param string $topic Required. The name of the topic that subscriptions are
+         * attached to. Format is `projects/{project}/topics/{topic}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of subscription names to
+         * return.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListTopicSubscriptionsResponse`; indicates that this is a continuation of a
+         * prior `ListTopicSubscriptions` call, and that the system should return the
+         * next page of data.
+         * @return ListTopicSubscriptionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsTopicsSubscriptions($topic, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Pubsub\Resource\ProjectsTopicsSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Pubsub_Resource_ProjectsTopicsSubscriptions extends \Google\Service\Pubsub\Resource\ProjectsTopicsSubscriptions
     {
     }
 }

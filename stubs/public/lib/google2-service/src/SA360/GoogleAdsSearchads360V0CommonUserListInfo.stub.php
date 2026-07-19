@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonUserListInfo extends \Google\Model
-{
-    /**
-     * The User List resource name.
-     *
-     * @var string
-     */
-    public $userList;
-    /**
-     * The User List resource name.
-     *
-     * @param string $userList
-     */
-    public function setUserList($userList)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonUserListInfo extends \Google\Model
     {
+        /**
+         * The User List resource name.
+         *
+         * @var string
+         */
+        public $userList;
+        /**
+         * The User List resource name.
+         *
+         * @param string $userList
+         */
+        public function setUserList($userList)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonUserListInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserList()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonUserListInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonUserListInfo
     {
     }
 }

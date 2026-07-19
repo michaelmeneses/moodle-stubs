@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoAbuseReportReasonSnippet extends \Google\Collection
-{
-    protected $collection_key = 'secondaryReasons';
-    /**
-     * The localized label belonging to this abuse report reason.
-     *
-     * @var string
-     */
-    public $label;
-    protected $secondaryReasonsType = VideoAbuseReportSecondaryReason::class;
-    protected $secondaryReasonsDataType = 'array';
-    /**
-     * The localized label belonging to this abuse report reason.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\YouTube {
+    class VideoAbuseReportReasonSnippet extends \Google\Collection
     {
+        protected $collection_key = 'secondaryReasons';
+        /**
+         * The localized label belonging to this abuse report reason.
+         *
+         * @var string
+         */
+        public $label;
+        protected $secondaryReasonsType = VideoAbuseReportSecondaryReason::class;
+        protected $secondaryReasonsDataType = 'array';
+        /**
+         * The localized label belonging to this abuse report reason.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * The secondary reasons associated with this reason, if any are available.
+         * (There might be 0 or more.)
+         *
+         * @param VideoAbuseReportSecondaryReason[] $secondaryReasons
+         */
+        public function setSecondaryReasons($secondaryReasons)
+        {
+        }
+        /**
+         * @return VideoAbuseReportSecondaryReason[]
+         */
+        public function getSecondaryReasons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoAbuseReportReasonSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * The secondary reasons associated with this reason, if any are available.
-     * (There might be 0 or more.)
-     *
-     * @param VideoAbuseReportSecondaryReason[] $secondaryReasons
-     */
-    public function setSecondaryReasons($secondaryReasons)
-    {
-    }
-    /**
-     * @return VideoAbuseReportSecondaryReason[]
-     */
-    public function getSecondaryReasons()
+    class Google_Service_YouTube_VideoAbuseReportReasonSnippet extends \Google\Service\YouTube\VideoAbuseReportReasonSnippet
     {
     }
 }

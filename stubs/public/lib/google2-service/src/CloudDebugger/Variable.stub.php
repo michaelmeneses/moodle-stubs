@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class Variable extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    protected $membersType = Variable::class;
-    protected $membersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $statusType = StatusMessage::class;
-    protected $statusDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @var int
-     */
-    public $varTableIndex;
-    /**
-     * @param Variable[]
-     */
-    public function setMembers($members)
+namespace Google\Service\CloudDebugger {
+    class Variable extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        protected $membersType = Variable::class;
+        protected $membersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $statusType = StatusMessage::class;
+        protected $statusDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @var int
+         */
+        public $varTableIndex;
+        /**
+         * @param Variable[]
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param StatusMessage
+         */
+        public function setStatus(StatusMessage $status)
+        {
+        }
+        /**
+         * @return StatusMessage
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setVarTableIndex($varTableIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVarTableIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Variable[]
+     * Runtime class alias of \Google\Service\CloudDebugger\Variable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param StatusMessage
-     */
-    public function setStatus(StatusMessage $status)
-    {
-    }
-    /**
-     * @return StatusMessage
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setVarTableIndex($varTableIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVarTableIndex()
+    class Google_Service_CloudDebugger_Variable extends \Google\Service\CloudDebugger\Variable
     {
     }
 }

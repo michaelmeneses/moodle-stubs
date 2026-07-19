@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class GceInstanceFilter extends \Google\Collection
-{
-    protected $collection_key = 'serviceAccounts';
-    /**
-     * Service account of compute engine
-     *
-     * @var string[]
-     */
-    public $serviceAccounts;
-    /**
-     * Service account of compute engine
-     *
-     * @param string[] $serviceAccounts
-     */
-    public function setServiceAccounts($serviceAccounts)
+namespace Google\Service\WorkloadManager {
+    class GceInstanceFilter extends \Google\Collection
     {
+        protected $collection_key = 'serviceAccounts';
+        /**
+         * Service account of compute engine
+         *
+         * @var string[]
+         */
+        public $serviceAccounts;
+        /**
+         * Service account of compute engine
+         *
+         * @param string[] $serviceAccounts
+         */
+        public function setServiceAccounts($serviceAccounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceAccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\GceInstanceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccounts()
+    class Google_Service_WorkloadManager_GceInstanceFilter extends \Google\Service\WorkloadManager\GceInstanceFilter
     {
     }
 }

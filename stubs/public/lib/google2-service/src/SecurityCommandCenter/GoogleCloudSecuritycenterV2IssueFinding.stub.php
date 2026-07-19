@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueFinding extends \Google\Model
-{
-    protected $cveType = GoogleCloudSecuritycenterV2IssueFindingCve::class;
-    protected $cveDataType = '';
-    /**
-     * The name of the finding.
-     *
-     * @var string
-     */
-    public $name;
-    protected $securityBulletinType = GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin::class;
-    protected $securityBulletinDataType = '';
-    /**
-     * The CVE of the finding.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueFindingCve $cve
-     */
-    public function setCve(GoogleCloudSecuritycenterV2IssueFindingCve $cve)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueFinding extends \Google\Model
     {
+        protected $cveType = GoogleCloudSecuritycenterV2IssueFindingCve::class;
+        protected $cveDataType = '';
+        /**
+         * The name of the finding.
+         *
+         * @var string
+         */
+        public $name;
+        protected $securityBulletinType = GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin::class;
+        protected $securityBulletinDataType = '';
+        /**
+         * The CVE of the finding.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueFindingCve $cve
+         */
+        public function setCve(GoogleCloudSecuritycenterV2IssueFindingCve $cve)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueFindingCve
+         */
+        public function getCve()
+        {
+        }
+        /**
+         * The name of the finding.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The security bulletin of the finding.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin $securityBulletin
+         */
+        public function setSecurityBulletin(GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin $securityBulletin)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin
+         */
+        public function getSecurityBulletin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IssueFindingCve
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCve()
-    {
-    }
-    /**
-     * The name of the finding.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The security bulletin of the finding.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin $securityBulletin
-     */
-    public function setSecurityBulletin(GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin $securityBulletin)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueFindingSecurityBulletin
-     */
-    public function getSecurityBulletin()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueFinding extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueFinding
     {
     }
 }

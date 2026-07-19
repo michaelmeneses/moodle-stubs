@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryMetadata extends \Google\Model
-{
-    /**
-     * Optional. Customer region string for customer's use. Does not represent GCP
-     * region.
-     *
-     * @var string
-     */
-    public $customerRegion;
-    /**
-     * Optional. Customer defined, something like "E-commerce pre prod"
-     *
-     * @var string
-     */
-    public $definedSystem;
-    /**
-     * Optional. Should be "prod", "QA", "dev", "staging", etc.
-     *
-     * @var string
-     */
-    public $environmentType;
-    /**
-     * Optional. This SAP product name
-     *
-     * @var string
-     */
-    public $sapProduct;
-    /**
-     * Optional. Customer region string for customer's use. Does not represent GCP
-     * region.
-     *
-     * @param string $customerRegion
-     */
-    public function setCustomerRegion($customerRegion)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryMetadata extends \Google\Model
     {
+        /**
+         * Optional. Customer region string for customer's use. Does not represent GCP
+         * region.
+         *
+         * @var string
+         */
+        public $customerRegion;
+        /**
+         * Optional. Customer defined, something like "E-commerce pre prod"
+         *
+         * @var string
+         */
+        public $definedSystem;
+        /**
+         * Optional. Should be "prod", "QA", "dev", "staging", etc.
+         *
+         * @var string
+         */
+        public $environmentType;
+        /**
+         * Optional. This SAP product name
+         *
+         * @var string
+         */
+        public $sapProduct;
+        /**
+         * Optional. Customer region string for customer's use. Does not represent GCP
+         * region.
+         *
+         * @param string $customerRegion
+         */
+        public function setCustomerRegion($customerRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerRegion()
+        {
+        }
+        /**
+         * Optional. Customer defined, something like "E-commerce pre prod"
+         *
+         * @param string $definedSystem
+         */
+        public function setDefinedSystem($definedSystem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinedSystem()
+        {
+        }
+        /**
+         * Optional. Should be "prod", "QA", "dev", "staging", etc.
+         *
+         * @param string $environmentType
+         */
+        public function setEnvironmentType($environmentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentType()
+        {
+        }
+        /**
+         * Optional. This SAP product name
+         *
+         * @param string $sapProduct
+         */
+        public function setSapProduct($sapProduct)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSapProduct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerRegion()
-    {
-    }
-    /**
-     * Optional. Customer defined, something like "E-commerce pre prod"
-     *
-     * @param string $definedSystem
-     */
-    public function setDefinedSystem($definedSystem)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefinedSystem()
-    {
-    }
-    /**
-     * Optional. Should be "prod", "QA", "dev", "staging", etc.
-     *
-     * @param string $environmentType
-     */
-    public function setEnvironmentType($environmentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentType()
-    {
-    }
-    /**
-     * Optional. This SAP product name
-     *
-     * @param string $sapProduct
-     */
-    public function setSapProduct($sapProduct)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSapProduct()
+    class Google_Service_WorkloadManager_SapDiscoveryMetadata extends \Google\Service\WorkloadManager\SapDiscoveryMetadata
     {
     }
 }

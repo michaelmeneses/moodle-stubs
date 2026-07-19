@@ -21,94 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse\Resource;
-
-/**
- * The "documentSchemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
- *   $documentSchemas = $contentwarehouseService->projects_locations_documentSchemas;
- *  </code>
- */
-class ProjectsLocationsDocumentSchemas extends \Google\Service\Resource
-{
+namespace Google\Service\Contentwarehouse\Resource {
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentSchema;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListDocumentSchemasResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest;
+    use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
     /**
-     * Creates a document schema. (documentSchemas.create)
-     *
-     * @param string $parent Required. The parent name.
-     * @param GoogleCloudContentwarehouseV1DocumentSchema $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1DocumentSchema
-     * @throws \Google\Service\Exception
+     * The "documentSchemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
+     *   $documentSchemas = $contentwarehouseService->projects_locations_documentSchemas;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContentwarehouseV1DocumentSchema $postBody, $optParams = [])
+    class ProjectsLocationsDocumentSchemas extends \Google\Service\Resource
     {
+        /**
+         * Creates a document schema. (documentSchemas.create)
+         *
+         * @param string $parent Required. The parent name.
+         * @param GoogleCloudContentwarehouseV1DocumentSchema $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1DocumentSchema
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContentwarehouseV1DocumentSchema $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a document schema. Returns NOT_FOUND if the document schema does not
+         * exist. Returns BAD_REQUEST if the document schema has documents depending on
+         * it. (documentSchemas.delete)
+         *
+         * @param string $name Required. The name of the document schema to delete.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a document schema. Returns NOT_FOUND if the document schema does not
+         * exist. (documentSchemas.get)
+         *
+         * @param string $name Required. The name of the document schema to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1DocumentSchema
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists document schemas.
+         * (documentSchemas.listProjectsLocationsDocumentSchemas)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * document schemas. Format: projects/{project_number}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of document schemas to return. The
+         * service may return fewer than this value. If unspecified, at most 50 document
+         * schemas will be returned. The maximum value is 1000; values above 1000 will
+         * be coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListDocumentSchemas` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListDocumentSchemas` must
+         * match the call that provided the page token.
+         * @return GoogleCloudContentwarehouseV1ListDocumentSchemasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDocumentSchemas($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Document Schema. Returns INVALID_ARGUMENT if the name of the
+         * Document Schema is non-empty and does not equal the existing name. Supports
+         * only appending new properties, adding new ENUM possible values, and updating
+         * the EnumTypeOptions.validation_check_disabled flag for ENUM possible values.
+         * Updating existing properties will result into INVALID_ARGUMENT.
+         * (documentSchemas.patch)
+         *
+         * @param string $name Required. The name of the document schema to update.
+         * Format: projects/{project_number}/locations/{location}/documentSchemas/{docum
+         * ent_schema_id}.
+         * @param GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1DocumentSchema
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a document schema. Returns NOT_FOUND if the document schema does not
-     * exist. Returns BAD_REQUEST if the document schema has documents depending on
-     * it. (documentSchemas.delete)
-     *
-     * @param string $name Required. The name of the document schema to delete.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocumentSchemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a document schema. Returns NOT_FOUND if the document schema does not
-     * exist. (documentSchemas.get)
-     *
-     * @param string $name Required. The name of the document schema to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1DocumentSchema
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists document schemas.
-     * (documentSchemas.listProjectsLocationsDocumentSchemas)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * document schemas. Format: projects/{project_number}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of document schemas to return. The
-     * service may return fewer than this value. If unspecified, at most 50 document
-     * schemas will be returned. The maximum value is 1000; values above 1000 will
-     * be coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListDocumentSchemas` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListDocumentSchemas` must
-     * match the call that provided the page token.
-     * @return GoogleCloudContentwarehouseV1ListDocumentSchemasResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDocumentSchemas($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a Document Schema. Returns INVALID_ARGUMENT if the name of the
-     * Document Schema is non-empty and does not equal the existing name. Supports
-     * only appending new properties, adding new ENUM possible values, and updating
-     * the EnumTypeOptions.validation_check_disabled flag for ENUM possible values.
-     * Updating existing properties will result into INVALID_ARGUMENT.
-     * (documentSchemas.patch)
-     *
-     * @param string $name Required. The name of the document schema to update.
-     * Format: projects/{project_number}/locations/{location}/documentSchemas/{docum
-     * ent_schema_id}.
-     * @param GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1DocumentSchema
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest $postBody, $optParams = [])
+    class Google_Service_Contentwarehouse_Resource_ProjectsLocationsDocumentSchemas extends \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocumentSchemas
     {
     }
 }

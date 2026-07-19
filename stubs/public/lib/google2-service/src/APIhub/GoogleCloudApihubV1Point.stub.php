@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Point extends \Google\Model
-{
-    /**
-     * Required. Character position within the line (zero-indexed).
-     *
-     * @var int
-     */
-    public $character;
-    /**
-     * Required. Line number (zero-indexed).
-     *
-     * @var int
-     */
-    public $line;
-    /**
-     * Required. Character position within the line (zero-indexed).
-     *
-     * @param int $character
-     */
-    public function setCharacter($character)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Point extends \Google\Model
     {
+        /**
+         * Required. Character position within the line (zero-indexed).
+         *
+         * @var int
+         */
+        public $character;
+        /**
+         * Required. Line number (zero-indexed).
+         *
+         * @var int
+         */
+        public $line;
+        /**
+         * Required. Character position within the line (zero-indexed).
+         *
+         * @param int $character
+         */
+        public function setCharacter($character)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCharacter()
+        {
+        }
+        /**
+         * Required. Line number (zero-indexed).
+         *
+         * @param int $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Point registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCharacter()
-    {
-    }
-    /**
-     * Required. Line number (zero-indexed).
-     *
-     * @param int $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLine()
+    class Google_Service_APIhub_GoogleCloudApihubV1Point extends \Google\Service\APIhub\GoogleCloudApihubV1Point
     {
     }
 }

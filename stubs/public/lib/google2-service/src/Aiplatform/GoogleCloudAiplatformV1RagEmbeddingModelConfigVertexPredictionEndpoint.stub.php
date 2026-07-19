@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint extends \Google\Model
-{
-    /**
-     * Required. The endpoint resource name. Format: `projects/{project}/locations
-     * /{location}/publishers/{publisher}/models/{model}` or
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Output only. The resource name of the model that is deployed on the
-     * endpoint. Present only when the endpoint is not a publisher model. Pattern:
-     * `projects/{project}/locations/{location}/models/{model}`
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Output only. Version ID of the model that is deployed on the endpoint.
-     * Present only when the endpoint is not a publisher model.
-     *
-     * @var string
-     */
-    public $modelVersionId;
-    /**
-     * Required. The endpoint resource name. Format: `projects/{project}/locations
-     * /{location}/publishers/{publisher}/models/{model}` or
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint extends \Google\Model
     {
+        /**
+         * Required. The endpoint resource name. Format: `projects/{project}/locations
+         * /{location}/publishers/{publisher}/models/{model}` or
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Output only. The resource name of the model that is deployed on the
+         * endpoint. Present only when the endpoint is not a publisher model. Pattern:
+         * `projects/{project}/locations/{location}/models/{model}`
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Output only. Version ID of the model that is deployed on the endpoint.
+         * Present only when the endpoint is not a publisher model.
+         *
+         * @var string
+         */
+        public $modelVersionId;
+        /**
+         * Required. The endpoint resource name. Format: `projects/{project}/locations
+         * /{location}/publishers/{publisher}/models/{model}` or
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Output only. The resource name of the model that is deployed on the
+         * endpoint. Present only when the endpoint is not a publisher model. Pattern:
+         * `projects/{project}/locations/{location}/models/{model}`
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Output only. Version ID of the model that is deployed on the endpoint.
+         * Present only when the endpoint is not a publisher model.
+         *
+         * @param string $modelVersionId
+         */
+        public function setModelVersionId($modelVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Output only. The resource name of the model that is deployed on the
-     * endpoint. Present only when the endpoint is not a publisher model. Pattern:
-     * `projects/{project}/locations/{location}/models/{model}`
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * Output only. Version ID of the model that is deployed on the endpoint.
-     * Present only when the endpoint is not a publisher model.
-     *
-     * @param string $modelVersionId
-     */
-    public function setModelVersionId($modelVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelVersionId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AccessLoggingConfig extends \Google\Model
-{
-    /**
-     * Optional. Boolean flag that specifies whether the customer access log
-     * feature is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Optional. Ship the access log entries that match the status_code defined in
-     * the filter. The status_code is the only expected/supported filter field.
-     * (Ex: status_code) The filter will parse it to the Common Expression
-     * Language semantics for expression evaluation to build the filter condition.
-     * (Ex: "filter": status_code >= 200 && status_code < 300 )
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. Boolean flag that specifies whether the customer access log
-     * feature is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AccessLoggingConfig extends \Google\Model
     {
+        /**
+         * Optional. Boolean flag that specifies whether the customer access log
+         * feature is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Optional. Ship the access log entries that match the status_code defined in
+         * the filter. The status_code is the only expected/supported filter field.
+         * (Ex: status_code) The filter will parse it to the Common Expression
+         * Language semantics for expression evaluation to build the filter condition.
+         * (Ex: "filter": status_code >= 200 && status_code < 300 )
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. Boolean flag that specifies whether the customer access log
+         * feature is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. Ship the access log entries that match the status_code defined in
+         * the filter. The status_code is the only expected/supported filter field.
+         * (Ex: status_code) The filter will parse it to the Common Expression
+         * Language semantics for expression evaluation to build the filter condition.
+         * (Ex: "filter": status_code >= 200 && status_code < 300 )
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AccessLoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. Ship the access log entries that match the status_code defined in
-     * the filter. The status_code is the only expected/supported filter field.
-     * (Ex: status_code) The filter will parse it to the Common Expression
-     * Language semantics for expression evaluation to build the filter condition.
-     * (Ex: "filter": status_code >= 200 && status_code < 300 )
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AccessLoggingConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1AccessLoggingConfig
     {
     }
 }

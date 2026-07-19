@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaImageClassificationAnnotation extends \Google\Model
-{
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $annotationSpecId;
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $annotationSpecId
-     */
-    public function setAnnotationSpecId($annotationSpecId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaImageClassificationAnnotation extends \Google\Model
     {
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $annotationSpecId;
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $annotationSpecId
+         */
+        public function setAnnotationSpecId($annotationSpecId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecId()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageClassificationAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecId()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaImageClassificationAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageClassificationAnnotation
     {
     }
 }

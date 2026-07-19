@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesPreprocessResponse extends \Google\Model
-{
-    protected $tablesDatasetMetadataType = XPSTablesDatasetMetadata::class;
-    protected $tablesDatasetMetadataDataType = '';
-    /**
-     * The table/column id, column_name and the DataTypes of the columns will be
-     * populated.
-     *
-     * @param XPSTablesDatasetMetadata $tablesDatasetMetadata
-     */
-    public function setTablesDatasetMetadata(XPSTablesDatasetMetadata $tablesDatasetMetadata)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesPreprocessResponse extends \Google\Model
     {
+        protected $tablesDatasetMetadataType = XPSTablesDatasetMetadata::class;
+        protected $tablesDatasetMetadataDataType = '';
+        /**
+         * The table/column id, column_name and the DataTypes of the columns will be
+         * populated.
+         *
+         * @param XPSTablesDatasetMetadata $tablesDatasetMetadata
+         */
+        public function setTablesDatasetMetadata(XPSTablesDatasetMetadata $tablesDatasetMetadata)
+        {
+        }
+        /**
+         * @return XPSTablesDatasetMetadata
+         */
+        public function getTablesDatasetMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTablesDatasetMetadata
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesPreprocessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTablesDatasetMetadata()
+    class Google_Service_CloudNaturalLanguage_XPSTablesPreprocessResponse extends \Google\Service\CloudNaturalLanguage\XPSTablesPreprocessResponse
     {
     }
 }

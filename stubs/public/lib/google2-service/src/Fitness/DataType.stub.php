@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class DataType extends \Google\Collection
-{
-    protected $collection_key = 'field';
-    protected $fieldType = DataTypeField::class;
-    protected $fieldDataType = 'array';
-    /**
-     * Each data type has a unique, namespaced, name. All data types in the
-     * com.google namespace are shared as part of the platform.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A field represents one dimension of a data type.
-     *
-     * @param DataTypeField[] $field
-     */
-    public function setField($field)
+namespace Google\Service\Fitness {
+    class DataType extends \Google\Collection
     {
+        protected $collection_key = 'field';
+        protected $fieldType = DataTypeField::class;
+        protected $fieldDataType = 'array';
+        /**
+         * Each data type has a unique, namespaced, name. All data types in the
+         * com.google namespace are shared as part of the platform.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A field represents one dimension of a data type.
+         *
+         * @param DataTypeField[] $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return DataTypeField[]
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Each data type has a unique, namespaced, name. All data types in the
+         * com.google namespace are shared as part of the platform.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataTypeField[]
+     * Runtime class alias of \Google\Service\Fitness\DataType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Each data type has a unique, namespaced, name. All data types in the
-     * com.google namespace are shared as part of the platform.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Fitness_DataType extends \Google\Service\Fitness\DataType
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class AvailableDatabaseVersion extends \Google\Model
-{
-    /**
-     * The database version's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The version's major version name.
-     *
-     * @var string
-     */
-    public $majorVersion;
-    /**
-     * The database version name. For MySQL 8.0, this string provides the database
-     * major and minor version.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The database version's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SQLAdmin {
+    class AvailableDatabaseVersion extends \Google\Model
     {
+        /**
+         * The database version's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The version's major version name.
+         *
+         * @var string
+         */
+        public $majorVersion;
+        /**
+         * The database version name. For MySQL 8.0, this string provides the database
+         * major and minor version.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The database version's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The version's major version name.
+         *
+         * @param string $majorVersion
+         */
+        public function setMajorVersion($majorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMajorVersion()
+        {
+        }
+        /**
+         * The database version name. For MySQL 8.0, this string provides the database
+         * major and minor version.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\AvailableDatabaseVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The version's major version name.
-     *
-     * @param string $majorVersion
-     */
-    public function setMajorVersion($majorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMajorVersion()
-    {
-    }
-    /**
-     * The database version name. For MySQL 8.0, this string provides the database
-     * major and minor version.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SQLAdmin_AvailableDatabaseVersion extends \Google\Service\SQLAdmin\AvailableDatabaseVersion
     {
     }
 }

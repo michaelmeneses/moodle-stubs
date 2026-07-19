@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "integrationtemplates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $integrationtemplates = $integrationsService->projects_locations_products_integrationtemplates;
- *  </code>
- */
-class ProjectsLocationsProductsIntegrationtemplates extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    /**
+     * The "integrationtemplates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $integrationtemplates = $integrationsService->projects_locations_products_integrationtemplates;
+     *  </code>
+     */
+    class ProjectsLocationsProductsIntegrationtemplates extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsProductsIntegrationtemplates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsProductsIntegrationtemplates extends \Google\Service\Integrations\Resource\ProjectsLocationsProductsIntegrationtemplates
+    {
+    }
 }

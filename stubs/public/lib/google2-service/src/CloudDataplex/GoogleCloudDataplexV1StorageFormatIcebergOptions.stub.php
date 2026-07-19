@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1StorageFormatIcebergOptions extends \Google\Model
-{
-    /**
-     * Optional. The location of where the iceberg metadata is present, must be
-     * within the table path
-     *
-     * @var string
-     */
-    public $metadataLocation;
-    /**
-     * Optional. The location of where the iceberg metadata is present, must be
-     * within the table path
-     *
-     * @param string $metadataLocation
-     */
-    public function setMetadataLocation($metadataLocation)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1StorageFormatIcebergOptions extends \Google\Model
     {
+        /**
+         * Optional. The location of where the iceberg metadata is present, must be
+         * within the table path
+         *
+         * @var string
+         */
+        public $metadataLocation;
+        /**
+         * Optional. The location of where the iceberg metadata is present, must be
+         * within the table path
+         *
+         * @param string $metadataLocation
+         */
+        public function setMetadataLocation($metadataLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadataLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageFormatIcebergOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataLocation()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1StorageFormatIcebergOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageFormatIcebergOptions
     {
     }
 }

@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class CssProduct extends \Google\Collection
-{
-    protected $collection_key = 'customAttributes';
-    protected $attributesType = Attributes::class;
-    protected $attributesDataType = '';
-    /**
-     * Output only. The two-letter [ISO
-     * 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the
-     * product.
-     *
-     * @var string
-     */
-    public $contentLanguage;
-    protected $cssProductStatusType = CssProductStatus::class;
-    protected $cssProductStatusDataType = '';
-    protected $customAttributesType = CustomAttribute::class;
-    protected $customAttributesDataType = 'array';
-    /**
-     * Output only. The feed label for the product.
-     *
-     * @var string
-     */
-    public $feedLabel;
-    /**
-     * The name of the CSS Product. Format:
-     * `"accounts/{account}/cssProducts/{css_product}"`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Your unique raw identifier for the product.
-     *
-     * @var string
-     */
-    public $rawProvidedId;
-    /**
-     * Output only. A list of product attributes.
-     *
-     * @param Attributes $attributes
-     */
-    public function setAttributes(Attributes $attributes)
+namespace Google\Service\Css {
+    class CssProduct extends \Google\Collection
     {
+        protected $collection_key = 'customAttributes';
+        protected $attributesType = Attributes::class;
+        protected $attributesDataType = '';
+        /**
+         * Output only. The two-letter [ISO
+         * 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the
+         * product.
+         *
+         * @var string
+         */
+        public $contentLanguage;
+        protected $cssProductStatusType = CssProductStatus::class;
+        protected $cssProductStatusDataType = '';
+        protected $customAttributesType = CustomAttribute::class;
+        protected $customAttributesDataType = 'array';
+        /**
+         * Output only. The feed label for the product.
+         *
+         * @var string
+         */
+        public $feedLabel;
+        /**
+         * The name of the CSS Product. Format:
+         * `"accounts/{account}/cssProducts/{css_product}"`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Your unique raw identifier for the product.
+         *
+         * @var string
+         */
+        public $rawProvidedId;
+        /**
+         * Output only. A list of product attributes.
+         *
+         * @param Attributes $attributes
+         */
+        public function setAttributes(Attributes $attributes)
+        {
+        }
+        /**
+         * @return Attributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Output only. The two-letter [ISO
+         * 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the
+         * product.
+         *
+         * @param string $contentLanguage
+         */
+        public function setContentLanguage($contentLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentLanguage()
+        {
+        }
+        /**
+         * Output only. The status of a product, data validation issues, that is,
+         * information about a product computed asynchronously.
+         *
+         * @param CssProductStatus $cssProductStatus
+         */
+        public function setCssProductStatus(CssProductStatus $cssProductStatus)
+        {
+        }
+        /**
+         * @return CssProductStatus
+         */
+        public function getCssProductStatus()
+        {
+        }
+        /**
+         * Output only. A list of custom (CSS-provided) attributes. It can also be
+         * used to submit any attribute of the feed specification in its generic form
+         * (for example, `{ "name": "size type", "value": "regular" }`). This is
+         * useful for submitting attributes not explicitly exposed by the API, such as
+         * additional attributes used for Buy on Google.
+         *
+         * @param CustomAttribute[] $customAttributes
+         */
+        public function setCustomAttributes($customAttributes)
+        {
+        }
+        /**
+         * @return CustomAttribute[]
+         */
+        public function getCustomAttributes()
+        {
+        }
+        /**
+         * Output only. The feed label for the product.
+         *
+         * @param string $feedLabel
+         */
+        public function setFeedLabel($feedLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeedLabel()
+        {
+        }
+        /**
+         * The name of the CSS Product. Format:
+         * `"accounts/{account}/cssProducts/{css_product}"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Your unique raw identifier for the product.
+         *
+         * @param string $rawProvidedId
+         */
+        public function setRawProvidedId($rawProvidedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawProvidedId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attributes
+     * Runtime class alias of \Google\Service\Css\CssProduct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Output only. The two-letter [ISO
-     * 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the
-     * product.
-     *
-     * @param string $contentLanguage
-     */
-    public function setContentLanguage($contentLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentLanguage()
-    {
-    }
-    /**
-     * Output only. The status of a product, data validation issues, that is,
-     * information about a product computed asynchronously.
-     *
-     * @param CssProductStatus $cssProductStatus
-     */
-    public function setCssProductStatus(CssProductStatus $cssProductStatus)
-    {
-    }
-    /**
-     * @return CssProductStatus
-     */
-    public function getCssProductStatus()
-    {
-    }
-    /**
-     * Output only. A list of custom (CSS-provided) attributes. It can also be
-     * used to submit any attribute of the feed specification in its generic form
-     * (for example, `{ "name": "size type", "value": "regular" }`). This is
-     * useful for submitting attributes not explicitly exposed by the API, such as
-     * additional attributes used for Buy on Google.
-     *
-     * @param CustomAttribute[] $customAttributes
-     */
-    public function setCustomAttributes($customAttributes)
-    {
-    }
-    /**
-     * @return CustomAttribute[]
-     */
-    public function getCustomAttributes()
-    {
-    }
-    /**
-     * Output only. The feed label for the product.
-     *
-     * @param string $feedLabel
-     */
-    public function setFeedLabel($feedLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeedLabel()
-    {
-    }
-    /**
-     * The name of the CSS Product. Format:
-     * `"accounts/{account}/cssProducts/{css_product}"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Your unique raw identifier for the product.
-     *
-     * @param string $rawProvidedId
-     */
-    public function setRawProvidedId($rawProvidedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawProvidedId()
+    class Google_Service_Css_CssProduct extends \Google\Service\Css\CssProduct
     {
     }
 }

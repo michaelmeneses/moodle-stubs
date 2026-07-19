@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ProvisionCloudIdentityRequest extends \Google\Model
-{
-    protected $cloudIdentityInfoType = GoogleCloudChannelV1CloudIdentityInfo::class;
-    protected $cloudIdentityInfoDataType = '';
-    protected $userType = GoogleCloudChannelV1AdminUser::class;
-    protected $userDataType = '';
-    /**
-     * Validate the request and preview the review, but do not post it.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * CloudIdentity-specific customer information.
-     *
-     * @param GoogleCloudChannelV1CloudIdentityInfo $cloudIdentityInfo
-     */
-    public function setCloudIdentityInfo(GoogleCloudChannelV1CloudIdentityInfo $cloudIdentityInfo)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ProvisionCloudIdentityRequest extends \Google\Model
     {
+        protected $cloudIdentityInfoType = GoogleCloudChannelV1CloudIdentityInfo::class;
+        protected $cloudIdentityInfoDataType = '';
+        protected $userType = GoogleCloudChannelV1AdminUser::class;
+        protected $userDataType = '';
+        /**
+         * Validate the request and preview the review, but do not post it.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * CloudIdentity-specific customer information.
+         *
+         * @param GoogleCloudChannelV1CloudIdentityInfo $cloudIdentityInfo
+         */
+        public function setCloudIdentityInfo(GoogleCloudChannelV1CloudIdentityInfo $cloudIdentityInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1CloudIdentityInfo
+         */
+        public function getCloudIdentityInfo()
+        {
+        }
+        /**
+         * Admin user information.
+         *
+         * @param GoogleCloudChannelV1AdminUser $user
+         */
+        public function setUser(GoogleCloudChannelV1AdminUser $user)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1AdminUser
+         */
+        public function getUser()
+        {
+        }
+        /**
+         * Validate the request and preview the review, but do not post it.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1CloudIdentityInfo
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ProvisionCloudIdentityRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudIdentityInfo()
-    {
-    }
-    /**
-     * Admin user information.
-     *
-     * @param GoogleCloudChannelV1AdminUser $user
-     */
-    public function setUser(GoogleCloudChannelV1AdminUser $user)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1AdminUser
-     */
-    public function getUser()
-    {
-    }
-    /**
-     * Validate the request and preview the review, but do not post it.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ProvisionCloudIdentityRequest extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ProvisionCloudIdentityRequest
     {
     }
 }

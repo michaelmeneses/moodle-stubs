@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ListUpdateResponse extends \Google\Collection
-{
-    protected $collection_key = 'removals';
-    protected $additionsType = ThreatEntrySet::class;
-    protected $additionsDataType = 'array';
-    public $additions;
-    protected $checksumType = Checksum::class;
-    protected $checksumDataType = '';
-    public $checksum;
-    /**
-     * @var string
-     */
-    public $newClientState;
-    /**
-     * @var string
-     */
-    public $platformType;
-    protected $removalsType = ThreatEntrySet::class;
-    protected $removalsDataType = 'array';
-    public $removals;
-    /**
-     * @var string
-     */
-    public $responseType;
-    /**
-     * @var string
-     */
-    public $threatEntryType;
-    /**
-     * @var string
-     */
-    public $threatType;
-    /**
-     * @param ThreatEntrySet[]
-     */
-    public function setAdditions($additions)
+namespace Google\Service\Safebrowsing {
+    class ListUpdateResponse extends \Google\Collection
     {
+        protected $collection_key = 'removals';
+        protected $additionsType = ThreatEntrySet::class;
+        protected $additionsDataType = 'array';
+        public $additions;
+        protected $checksumType = Checksum::class;
+        protected $checksumDataType = '';
+        public $checksum;
+        /**
+         * @var string
+         */
+        public $newClientState;
+        /**
+         * @var string
+         */
+        public $platformType;
+        protected $removalsType = ThreatEntrySet::class;
+        protected $removalsDataType = 'array';
+        public $removals;
+        /**
+         * @var string
+         */
+        public $responseType;
+        /**
+         * @var string
+         */
+        public $threatEntryType;
+        /**
+         * @var string
+         */
+        public $threatType;
+        /**
+         * @param ThreatEntrySet[]
+         */
+        public function setAdditions($additions)
+        {
+        }
+        /**
+         * @return ThreatEntrySet[]
+         */
+        public function getAdditions()
+        {
+        }
+        /**
+         * @param Checksum
+         */
+        public function setChecksum(Checksum $checksum)
+        {
+        }
+        /**
+         * @return Checksum
+         */
+        public function getChecksum()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNewClientState($newClientState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewClientState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param ThreatEntrySet[]
+         */
+        public function setRemovals($removals)
+        {
+        }
+        /**
+         * @return ThreatEntrySet[]
+         */
+        public function getRemovals()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResponseType($responseType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatEntryType($threatEntryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatEntryType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ThreatEntrySet[]
+     * Runtime class alias of \Google\Service\Safebrowsing\ListUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditions()
-    {
-    }
-    /**
-     * @param Checksum
-     */
-    public function setChecksum(Checksum $checksum)
-    {
-    }
-    /**
-     * @return Checksum
-     */
-    public function getChecksum()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNewClientState($newClientState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewClientState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param ThreatEntrySet[]
-     */
-    public function setRemovals($removals)
-    {
-    }
-    /**
-     * @return ThreatEntrySet[]
-     */
-    public function getRemovals()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResponseType($responseType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatEntryType($threatEntryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatEntryType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
+    class Google_Service_Safebrowsing_ListUpdateResponse extends \Google\Service\Safebrowsing\ListUpdateResponse
     {
     }
 }

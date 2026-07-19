@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CatalogAttributeFacetConfigRerankConfig extends \Google\Collection
-{
-    protected $collection_key = 'facetValues';
-    /**
-     * If empty, rerank on all facet values for the current key. Otherwise, will
-     * rerank on the facet values from this list only.
-     *
-     * @var string[]
-     */
-    public $facetValues;
-    /**
-     * If set to true, then we also rerank the dynamic facets based on the facet
-     * values engaged by the user for the current attribute key during serving.
-     *
-     * @var bool
-     */
-    public $rerankFacet;
-    /**
-     * If empty, rerank on all facet values for the current key. Otherwise, will
-     * rerank on the facet values from this list only.
-     *
-     * @param string[] $facetValues
-     */
-    public function setFacetValues($facetValues)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CatalogAttributeFacetConfigRerankConfig extends \Google\Collection
     {
+        protected $collection_key = 'facetValues';
+        /**
+         * If empty, rerank on all facet values for the current key. Otherwise, will
+         * rerank on the facet values from this list only.
+         *
+         * @var string[]
+         */
+        public $facetValues;
+        /**
+         * If set to true, then we also rerank the dynamic facets based on the facet
+         * values engaged by the user for the current attribute key during serving.
+         *
+         * @var bool
+         */
+        public $rerankFacet;
+        /**
+         * If empty, rerank on all facet values for the current key. Otherwise, will
+         * rerank on the facet values from this list only.
+         *
+         * @param string[] $facetValues
+         */
+        public function setFacetValues($facetValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFacetValues()
+        {
+        }
+        /**
+         * If set to true, then we also rerank the dynamic facets based on the facet
+         * values engaged by the user for the current attribute key during serving.
+         *
+         * @param bool $rerankFacet
+         */
+        public function setRerankFacet($rerankFacet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRerankFacet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CatalogAttributeFacetConfigRerankConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacetValues()
-    {
-    }
-    /**
-     * If set to true, then we also rerank the dynamic facets based on the facet
-     * values engaged by the user for the current attribute key during serving.
-     *
-     * @param bool $rerankFacet
-     */
-    public function setRerankFacet($rerankFacet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRerankFacet()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CatalogAttributeFacetConfigRerankConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2CatalogAttributeFacetConfigRerankConfig
     {
     }
 }

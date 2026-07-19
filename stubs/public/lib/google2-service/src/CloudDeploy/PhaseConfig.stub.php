@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PhaseConfig extends \Google\Collection
-{
-    protected $collection_key = 'profiles';
-    /**
-     * Required. Percentage deployment for the phase.
-     *
-     * @var int
-     */
-    public $percentage;
-    /**
-     * Required. The ID to assign to the `Rollout` phase. This value must consist
-     * of lower-case letters, numbers, and hyphens, start with a letter and end
-     * with a letter or a number, and have a max length of 63 characters. In other
-     * words, it must match the following regex:
-     * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @var string
-     */
-    public $phaseId;
-    protected $postdeployType = Postdeploy::class;
-    protected $postdeployDataType = '';
-    protected $predeployType = Predeploy::class;
-    protected $predeployDataType = '';
-    /**
-     * Optional. Skaffold profiles to use when rendering the manifest for this
-     * phase. These are in addition to the profiles list specified in the
-     * `DeliveryPipeline` stage.
-     *
-     * @var string[]
-     */
-    public $profiles;
-    /**
-     * Optional. Whether to run verify tests after the deployment via `skaffold
-     * verify`.
-     *
-     * @var bool
-     */
-    public $verify;
-    /**
-     * Required. Percentage deployment for the phase.
-     *
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
+namespace Google\Service\CloudDeploy {
+    class PhaseConfig extends \Google\Collection
     {
+        protected $collection_key = 'profiles';
+        /**
+         * Required. Percentage deployment for the phase.
+         *
+         * @var int
+         */
+        public $percentage;
+        /**
+         * Required. The ID to assign to the `Rollout` phase. This value must consist
+         * of lower-case letters, numbers, and hyphens, start with a letter and end
+         * with a letter or a number, and have a max length of 63 characters. In other
+         * words, it must match the following regex:
+         * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @var string
+         */
+        public $phaseId;
+        protected $postdeployType = Postdeploy::class;
+        protected $postdeployDataType = '';
+        protected $predeployType = Predeploy::class;
+        protected $predeployDataType = '';
+        /**
+         * Optional. Skaffold profiles to use when rendering the manifest for this
+         * phase. These are in addition to the profiles list specified in the
+         * `DeliveryPipeline` stage.
+         *
+         * @var string[]
+         */
+        public $profiles;
+        /**
+         * Optional. Whether to run verify tests after the deployment via `skaffold
+         * verify`.
+         *
+         * @var bool
+         */
+        public $verify;
+        /**
+         * Required. Percentage deployment for the phase.
+         *
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
+        /**
+         * Required. The ID to assign to the `Rollout` phase. This value must consist
+         * of lower-case letters, numbers, and hyphens, start with a letter and end
+         * with a letter or a number, and have a max length of 63 characters. In other
+         * words, it must match the following regex:
+         * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @param string $phaseId
+         */
+        public function setPhaseId($phaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhaseId()
+        {
+        }
+        /**
+         * Optional. Configuration for the postdeploy job of this phase. If this is
+         * not configured, there will be no postdeploy job for this phase.
+         *
+         * @param Postdeploy $postdeploy
+         */
+        public function setPostdeploy(Postdeploy $postdeploy)
+        {
+        }
+        /**
+         * @return Postdeploy
+         */
+        public function getPostdeploy()
+        {
+        }
+        /**
+         * Optional. Configuration for the predeploy job of this phase. If this is not
+         * configured, there will be no predeploy job for this phase.
+         *
+         * @param Predeploy $predeploy
+         */
+        public function setPredeploy(Predeploy $predeploy)
+        {
+        }
+        /**
+         * @return Predeploy
+         */
+        public function getPredeploy()
+        {
+        }
+        /**
+         * Optional. Skaffold profiles to use when rendering the manifest for this
+         * phase. These are in addition to the profiles list specified in the
+         * `DeliveryPipeline` stage.
+         *
+         * @param string[] $profiles
+         */
+        public function setProfiles($profiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProfiles()
+        {
+        }
+        /**
+         * Optional. Whether to run verify tests after the deployment via `skaffold
+         * verify`.
+         *
+         * @param bool $verify
+         */
+        public function setVerify($verify)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerify()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDeploy\PhaseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentage()
-    {
-    }
-    /**
-     * Required. The ID to assign to the `Rollout` phase. This value must consist
-     * of lower-case letters, numbers, and hyphens, start with a letter and end
-     * with a letter or a number, and have a max length of 63 characters. In other
-     * words, it must match the following regex:
-     * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @param string $phaseId
-     */
-    public function setPhaseId($phaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhaseId()
-    {
-    }
-    /**
-     * Optional. Configuration for the postdeploy job of this phase. If this is
-     * not configured, there will be no postdeploy job for this phase.
-     *
-     * @param Postdeploy $postdeploy
-     */
-    public function setPostdeploy(Postdeploy $postdeploy)
-    {
-    }
-    /**
-     * @return Postdeploy
-     */
-    public function getPostdeploy()
-    {
-    }
-    /**
-     * Optional. Configuration for the predeploy job of this phase. If this is not
-     * configured, there will be no predeploy job for this phase.
-     *
-     * @param Predeploy $predeploy
-     */
-    public function setPredeploy(Predeploy $predeploy)
-    {
-    }
-    /**
-     * @return Predeploy
-     */
-    public function getPredeploy()
-    {
-    }
-    /**
-     * Optional. Skaffold profiles to use when rendering the manifest for this
-     * phase. These are in addition to the profiles list specified in the
-     * `DeliveryPipeline` stage.
-     *
-     * @param string[] $profiles
-     */
-    public function setProfiles($profiles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProfiles()
-    {
-    }
-    /**
-     * Optional. Whether to run verify tests after the deployment via `skaffold
-     * verify`.
-     *
-     * @param bool $verify
-     */
-    public function setVerify($verify)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerify()
+    class Google_Service_CloudDeploy_PhaseConfig extends \Google\Service\CloudDeploy\PhaseConfig
     {
     }
 }

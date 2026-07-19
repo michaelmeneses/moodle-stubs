@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacet extends \Google\Model
-{
-    /**
-     * The merged facet key should be a valid facet key that is different than the
-     * facet key of the current catalog attribute. We refer this is merged facet
-     * key as the child of the current catalog attribute. This merged facet key
-     * can't be a parent of another facet key (i.e. no directed path of length 2).
-     * This merged facet key needs to be either a textual custom attribute or a
-     * numerical custom attribute.
-     *
-     * @var string
-     */
-    public $mergedFacetKey;
-    /**
-     * The merged facet key should be a valid facet key that is different than the
-     * facet key of the current catalog attribute. We refer this is merged facet
-     * key as the child of the current catalog attribute. This merged facet key
-     * can't be a parent of another facet key (i.e. no directed path of length 2).
-     * This merged facet key needs to be either a textual custom attribute or a
-     * numerical custom attribute.
-     *
-     * @param string $mergedFacetKey
-     */
-    public function setMergedFacetKey($mergedFacetKey)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacet extends \Google\Model
     {
+        /**
+         * The merged facet key should be a valid facet key that is different than the
+         * facet key of the current catalog attribute. We refer this is merged facet
+         * key as the child of the current catalog attribute. This merged facet key
+         * can't be a parent of another facet key (i.e. no directed path of length 2).
+         * This merged facet key needs to be either a textual custom attribute or a
+         * numerical custom attribute.
+         *
+         * @var string
+         */
+        public $mergedFacetKey;
+        /**
+         * The merged facet key should be a valid facet key that is different than the
+         * facet key of the current catalog attribute. We refer this is merged facet
+         * key as the child of the current catalog attribute. This merged facet key
+         * can't be a parent of another facet key (i.e. no directed path of length 2).
+         * This merged facet key needs to be either a textual custom attribute or a
+         * numerical custom attribute.
+         *
+         * @param string $mergedFacetKey
+         */
+        public function setMergedFacetKey($mergedFacetKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMergedFacetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergedFacetKey()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacet extends \Google\Service\CloudRetail\GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacet
     {
     }
 }

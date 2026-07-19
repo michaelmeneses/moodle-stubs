@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId extends \Google\Model
-{
-    /**
-     * Id of the document (indexed) managed by Content Warehouse.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $cwDocId;
-    /**
-     * Required. The Cloud Storage URI where the actual document is stored.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Id of the document (indexed) managed by Content Warehouse.
-     *
-     * @deprecated
-     * @param string $cwDocId
-     */
-    public function setCwDocId($cwDocId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId extends \Google\Model
     {
+        /**
+         * Id of the document (indexed) managed by Content Warehouse.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $cwDocId;
+        /**
+         * Required. The Cloud Storage URI where the actual document is stored.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Id of the document (indexed) managed by Content Warehouse.
+         *
+         * @deprecated
+         * @param string $cwDocId
+         */
+        public function setCwDocId($cwDocId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getCwDocId()
+        {
+        }
+        /**
+         * Required. The Cloud Storage URI where the actual document is stored.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCwDocId()
-    {
-    }
-    /**
-     * Required. The Cloud Storage URI where the actual document is stored.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId
     {
     }
 }

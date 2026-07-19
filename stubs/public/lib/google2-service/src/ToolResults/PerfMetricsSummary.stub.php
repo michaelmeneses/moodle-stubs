@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PerfMetricsSummary extends \Google\Collection
-{
-    protected $collection_key = 'perfMetrics';
-    protected $appStartTimeType = AppStartTime::class;
-    protected $appStartTimeDataType = '';
-    /**
-     * A tool results execution ID. @OutputOnly
-     *
-     * @var string
-     */
-    public $executionId;
-    protected $graphicsStatsType = GraphicsStats::class;
-    protected $graphicsStatsDataType = '';
-    /**
-     * A tool results history ID. @OutputOnly
-     *
-     * @var string
-     */
-    public $historyId;
-    protected $perfEnvironmentType = PerfEnvironment::class;
-    protected $perfEnvironmentDataType = '';
-    /**
-     * Set of resource collected
-     *
-     * @var string[]
-     */
-    public $perfMetrics;
-    /**
-     * The cloud project @OutputOnly
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * A tool results step ID. @OutputOnly
-     *
-     * @var string
-     */
-    public $stepId;
-    /**
-     * @param AppStartTime $appStartTime
-     */
-    public function setAppStartTime(AppStartTime $appStartTime)
+namespace Google\Service\ToolResults {
+    class PerfMetricsSummary extends \Google\Collection
     {
+        protected $collection_key = 'perfMetrics';
+        protected $appStartTimeType = AppStartTime::class;
+        protected $appStartTimeDataType = '';
+        /**
+         * A tool results execution ID. @OutputOnly
+         *
+         * @var string
+         */
+        public $executionId;
+        protected $graphicsStatsType = GraphicsStats::class;
+        protected $graphicsStatsDataType = '';
+        /**
+         * A tool results history ID. @OutputOnly
+         *
+         * @var string
+         */
+        public $historyId;
+        protected $perfEnvironmentType = PerfEnvironment::class;
+        protected $perfEnvironmentDataType = '';
+        /**
+         * Set of resource collected
+         *
+         * @var string[]
+         */
+        public $perfMetrics;
+        /**
+         * The cloud project @OutputOnly
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * A tool results step ID. @OutputOnly
+         *
+         * @var string
+         */
+        public $stepId;
+        /**
+         * @param AppStartTime $appStartTime
+         */
+        public function setAppStartTime(AppStartTime $appStartTime)
+        {
+        }
+        /**
+         * @return AppStartTime
+         */
+        public function getAppStartTime()
+        {
+        }
+        /**
+         * A tool results execution ID. @OutputOnly
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * Graphics statistics for the entire run. Statistics are reset at the
+         * beginning of the run and collected at the end of the run.
+         *
+         * @deprecated
+         * @param GraphicsStats $graphicsStats
+         */
+        public function setGraphicsStats(GraphicsStats $graphicsStats)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GraphicsStats
+         */
+        public function getGraphicsStats()
+        {
+        }
+        /**
+         * A tool results history ID. @OutputOnly
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * Describes the environment in which the performance metrics were collected
+         *
+         * @param PerfEnvironment $perfEnvironment
+         */
+        public function setPerfEnvironment(PerfEnvironment $perfEnvironment)
+        {
+        }
+        /**
+         * @return PerfEnvironment
+         */
+        public function getPerfEnvironment()
+        {
+        }
+        /**
+         * Set of resource collected
+         *
+         * @param string[] $perfMetrics
+         */
+        public function setPerfMetrics($perfMetrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPerfMetrics()
+        {
+        }
+        /**
+         * The cloud project @OutputOnly
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * A tool results step ID. @OutputOnly
+         *
+         * @param string $stepId
+         */
+        public function setStepId($stepId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStepId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppStartTime
+     * Runtime class alias of \Google\Service\ToolResults\PerfMetricsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppStartTime()
-    {
-    }
-    /**
-     * A tool results execution ID. @OutputOnly
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * Graphics statistics for the entire run. Statistics are reset at the
-     * beginning of the run and collected at the end of the run.
-     *
-     * @deprecated
-     * @param GraphicsStats $graphicsStats
-     */
-    public function setGraphicsStats(GraphicsStats $graphicsStats)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GraphicsStats
-     */
-    public function getGraphicsStats()
-    {
-    }
-    /**
-     * A tool results history ID. @OutputOnly
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * Describes the environment in which the performance metrics were collected
-     *
-     * @param PerfEnvironment $perfEnvironment
-     */
-    public function setPerfEnvironment(PerfEnvironment $perfEnvironment)
-    {
-    }
-    /**
-     * @return PerfEnvironment
-     */
-    public function getPerfEnvironment()
-    {
-    }
-    /**
-     * Set of resource collected
-     *
-     * @param string[] $perfMetrics
-     */
-    public function setPerfMetrics($perfMetrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPerfMetrics()
-    {
-    }
-    /**
-     * The cloud project @OutputOnly
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * A tool results step ID. @OutputOnly
-     *
-     * @param string $stepId
-     */
-    public function setStepId($stepId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStepId()
+    class Google_Service_ToolResults_PerfMetricsSummary extends \Google\Service\ToolResults\PerfMetricsSummary
     {
     }
 }

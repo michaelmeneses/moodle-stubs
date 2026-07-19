@@ -29,3 +29,5 @@
  */
 define('AJAX_SCRIPT', true);
 define('NO_MOODLE_COOKIES', true);
+use core_badges\local\backpack\helper;
+use core_badges\local\backpack\ob_factory;

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2DatabaseDump extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2DatabaseDump extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2DatabaseDump registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2DatabaseDump extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2DatabaseDump
     {
     }
 }

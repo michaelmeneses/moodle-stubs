@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourceType';
-    /**
-     * @var string[]
-     */
-    public $action;
-    /**
-     * @var string[]
-     */
-    public $actorEmail;
-    /**
-     * @var string
-     */
-    public $earliestChangeTime;
-    /**
-     * @var string
-     */
-    public $latestChangeTime;
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * @var string
-     */
-    public $property;
-    /**
-     * @var string[]
-     */
-    public $resourceType;
-    /**
-     * @param string[]
-     */
-    public function setAction($action)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourceType';
+        /**
+         * @var string[]
+         */
+        public $action;
+        /**
+         * @var string[]
+         */
+        public $actorEmail;
+        /**
+         * @var string
+         */
+        public $earliestChangeTime;
+        /**
+         * @var string
+         */
+        public $latestChangeTime;
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * @var string
+         */
+        public $property;
+        /**
+         * @var string[]
+         */
+        public $resourceType;
+        /**
+         * @param string[]
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setActorEmail($actorEmail)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActorEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEarliestChangeTime($earliestChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEarliestChangeTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLatestChangeTime($latestChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestChangeTime()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setActorEmail($actorEmail)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getActorEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEarliestChangeTime($earliestChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEarliestChangeTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLatestChangeTime($latestChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestChangeTime()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProperty($property)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceType()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsRequest
     {
     }
 }

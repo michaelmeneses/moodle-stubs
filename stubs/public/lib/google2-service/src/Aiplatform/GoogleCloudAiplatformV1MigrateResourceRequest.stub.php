@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceRequest extends \Google\Model
-{
-    protected $migrateAutomlDatasetConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig::class;
-    protected $migrateAutomlDatasetConfigDataType = '';
-    protected $migrateAutomlModelConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig::class;
-    protected $migrateAutomlModelConfigDataType = '';
-    protected $migrateDataLabelingDatasetConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig::class;
-    protected $migrateDataLabelingDatasetConfigDataType = '';
-    protected $migrateMlEngineModelVersionConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig::class;
-    protected $migrateMlEngineModelVersionConfigDataType = '';
-    /**
-     * Config for migrating Dataset in automl.googleapis.com to Vertex AI's
-     * Dataset.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig $migrateAutomlDatasetConfig
-     */
-    public function setMigrateAutomlDatasetConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig $migrateAutomlDatasetConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceRequest extends \Google\Model
     {
+        protected $migrateAutomlDatasetConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig::class;
+        protected $migrateAutomlDatasetConfigDataType = '';
+        protected $migrateAutomlModelConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig::class;
+        protected $migrateAutomlModelConfigDataType = '';
+        protected $migrateDataLabelingDatasetConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig::class;
+        protected $migrateDataLabelingDatasetConfigDataType = '';
+        protected $migrateMlEngineModelVersionConfigType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig::class;
+        protected $migrateMlEngineModelVersionConfigDataType = '';
+        /**
+         * Config for migrating Dataset in automl.googleapis.com to Vertex AI's
+         * Dataset.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig $migrateAutomlDatasetConfig
+         */
+        public function setMigrateAutomlDatasetConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig $migrateAutomlDatasetConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig
+         */
+        public function getMigrateAutomlDatasetConfig()
+        {
+        }
+        /**
+         * Config for migrating Model in automl.googleapis.com to Vertex AI's Model.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig $migrateAutomlModelConfig
+         */
+        public function setMigrateAutomlModelConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig $migrateAutomlModelConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig
+         */
+        public function getMigrateAutomlModelConfig()
+        {
+        }
+        /**
+         * Config for migrating Dataset in datalabeling.googleapis.com to Vertex AI's
+         * Dataset.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig $migrateDataLabelingDatasetConfig
+         */
+        public function setMigrateDataLabelingDatasetConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig $migrateDataLabelingDatasetConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig
+         */
+        public function getMigrateDataLabelingDatasetConfig()
+        {
+        }
+        /**
+         * Config for migrating Version in ml.googleapis.com to Vertex AI's Model.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig $migrateMlEngineModelVersionConfig
+         */
+        public function setMigrateMlEngineModelVersionConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig $migrateMlEngineModelVersionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig
+         */
+        public function getMigrateMlEngineModelVersionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlDatasetConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrateAutomlDatasetConfig()
-    {
-    }
-    /**
-     * Config for migrating Model in automl.googleapis.com to Vertex AI's Model.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig $migrateAutomlModelConfig
-     */
-    public function setMigrateAutomlModelConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig $migrateAutomlModelConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig
-     */
-    public function getMigrateAutomlModelConfig()
-    {
-    }
-    /**
-     * Config for migrating Dataset in datalabeling.googleapis.com to Vertex AI's
-     * Dataset.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig $migrateDataLabelingDatasetConfig
-     */
-    public function setMigrateDataLabelingDatasetConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig $migrateDataLabelingDatasetConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig
-     */
-    public function getMigrateDataLabelingDatasetConfig()
-    {
-    }
-    /**
-     * Config for migrating Version in ml.googleapis.com to Vertex AI's Model.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig $migrateMlEngineModelVersionConfig
-     */
-    public function setMigrateMlEngineModelVersionConfig(GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig $migrateMlEngineModelVersionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig
-     */
-    public function getMigrateMlEngineModelVersionConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequest
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageRbmText extends \Google\Collection
-{
-    protected $collection_key = 'rbmSuggestion';
-    protected $rbmSuggestionType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion::class;
-    protected $rbmSuggestionDataType = 'array';
-    /**
-     * Required. Text sent and displayed to the user.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Optional. One or more suggestions to show to the user.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[] $rbmSuggestion
-     */
-    public function setRbmSuggestion($rbmSuggestion)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageRbmText extends \Google\Collection
     {
+        protected $collection_key = 'rbmSuggestion';
+        protected $rbmSuggestionType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion::class;
+        protected $rbmSuggestionDataType = 'array';
+        /**
+         * Required. Text sent and displayed to the user.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Optional. One or more suggestions to show to the user.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[] $rbmSuggestion
+         */
+        public function setRbmSuggestion($rbmSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[]
+         */
+        public function getRbmSuggestion()
+        {
+        }
+        /**
+         * Required. Text sent and displayed to the user.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRbmSuggestion()
-    {
-    }
-    /**
-     * Required. Text sent and displayed to the user.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageRbmText extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmText
     {
     }
 }

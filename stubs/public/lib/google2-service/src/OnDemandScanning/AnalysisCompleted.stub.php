@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class AnalysisCompleted extends \Google\Collection
-{
-    protected $collection_key = 'analysisType';
-    /**
-     * @var string[]
-     */
-    public $analysisType;
-    /**
-     * @param string[] $analysisType
-     */
-    public function setAnalysisType($analysisType)
+namespace Google\Service\OnDemandScanning {
+    class AnalysisCompleted extends \Google\Collection
     {
+        protected $collection_key = 'analysisType';
+        /**
+         * @var string[]
+         */
+        public $analysisType;
+        /**
+         * @param string[] $analysisType
+         */
+        public function setAnalysisType($analysisType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnalysisType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\AnalysisCompleted registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisType()
+    class Google_Service_OnDemandScanning_AnalysisCompleted extends \Google\Service\OnDemandScanning\AnalysisCompleted
     {
     }
 }

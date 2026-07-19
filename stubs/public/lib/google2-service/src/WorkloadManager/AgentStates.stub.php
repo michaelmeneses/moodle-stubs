@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class AgentStates extends \Google\Model
-{
-    /**
-     * Optional. The available version of the agent in artifact registry.
-     *
-     * @var string
-     */
-    public $availableVersion;
-    protected $hanaMonitoringType = ServiceStates::class;
-    protected $hanaMonitoringDataType = '';
-    /**
-     * Optional. The installed version of the agent on the host.
-     *
-     * @var string
-     */
-    public $installedVersion;
-    /**
-     * Optional. Whether the agent is fully enabled. If false, the agent is has
-     * some issues.
-     *
-     * @var bool
-     */
-    public $isFullyEnabled;
-    protected $processMetricsType = ServiceStates::class;
-    protected $processMetricsDataType = '';
-    protected $systemDiscoveryType = ServiceStates::class;
-    protected $systemDiscoveryDataType = '';
-    /**
-     * Optional. The available version of the agent in artifact registry.
-     *
-     * @param string $availableVersion
-     */
-    public function setAvailableVersion($availableVersion)
+namespace Google\Service\WorkloadManager {
+    class AgentStates extends \Google\Model
     {
+        /**
+         * Optional. The available version of the agent in artifact registry.
+         *
+         * @var string
+         */
+        public $availableVersion;
+        protected $hanaMonitoringType = ServiceStates::class;
+        protected $hanaMonitoringDataType = '';
+        /**
+         * Optional. The installed version of the agent on the host.
+         *
+         * @var string
+         */
+        public $installedVersion;
+        /**
+         * Optional. Whether the agent is fully enabled. If false, the agent is has
+         * some issues.
+         *
+         * @var bool
+         */
+        public $isFullyEnabled;
+        protected $processMetricsType = ServiceStates::class;
+        protected $processMetricsDataType = '';
+        protected $systemDiscoveryType = ServiceStates::class;
+        protected $systemDiscoveryDataType = '';
+        /**
+         * Optional. The available version of the agent in artifact registry.
+         *
+         * @param string $availableVersion
+         */
+        public function setAvailableVersion($availableVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvailableVersion()
+        {
+        }
+        /**
+         * Optional. HANA monitoring metrics of the agent.
+         *
+         * @param ServiceStates $hanaMonitoring
+         */
+        public function setHanaMonitoring(ServiceStates $hanaMonitoring)
+        {
+        }
+        /**
+         * @return ServiceStates
+         */
+        public function getHanaMonitoring()
+        {
+        }
+        /**
+         * Optional. The installed version of the agent on the host.
+         *
+         * @param string $installedVersion
+         */
+        public function setInstalledVersion($installedVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstalledVersion()
+        {
+        }
+        /**
+         * Optional. Whether the agent is fully enabled. If false, the agent is has
+         * some issues.
+         *
+         * @param bool $isFullyEnabled
+         */
+        public function setIsFullyEnabled($isFullyEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsFullyEnabled()
+        {
+        }
+        /**
+         * Optional. The Process metrics of the agent.
+         *
+         * @param ServiceStates $processMetrics
+         */
+        public function setProcessMetrics(ServiceStates $processMetrics)
+        {
+        }
+        /**
+         * @return ServiceStates
+         */
+        public function getProcessMetrics()
+        {
+        }
+        /**
+         * Optional. The System discovery metrics of the agent.
+         *
+         * @param ServiceStates $systemDiscovery
+         */
+        public function setSystemDiscovery(ServiceStates $systemDiscovery)
+        {
+        }
+        /**
+         * @return ServiceStates
+         */
+        public function getSystemDiscovery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\AgentStates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableVersion()
-    {
-    }
-    /**
-     * Optional. HANA monitoring metrics of the agent.
-     *
-     * @param ServiceStates $hanaMonitoring
-     */
-    public function setHanaMonitoring(ServiceStates $hanaMonitoring)
-    {
-    }
-    /**
-     * @return ServiceStates
-     */
-    public function getHanaMonitoring()
-    {
-    }
-    /**
-     * Optional. The installed version of the agent on the host.
-     *
-     * @param string $installedVersion
-     */
-    public function setInstalledVersion($installedVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstalledVersion()
-    {
-    }
-    /**
-     * Optional. Whether the agent is fully enabled. If false, the agent is has
-     * some issues.
-     *
-     * @param bool $isFullyEnabled
-     */
-    public function setIsFullyEnabled($isFullyEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsFullyEnabled()
-    {
-    }
-    /**
-     * Optional. The Process metrics of the agent.
-     *
-     * @param ServiceStates $processMetrics
-     */
-    public function setProcessMetrics(ServiceStates $processMetrics)
-    {
-    }
-    /**
-     * @return ServiceStates
-     */
-    public function getProcessMetrics()
-    {
-    }
-    /**
-     * Optional. The System discovery metrics of the agent.
-     *
-     * @param ServiceStates $systemDiscovery
-     */
-    public function setSystemDiscovery(ServiceStates $systemDiscovery)
-    {
-    }
-    /**
-     * @return ServiceStates
-     */
-    public function getSystemDiscovery()
+    class Google_Service_WorkloadManager_AgentStates extends \Google\Service\WorkloadManager\AgentStates
     {
     }
 }

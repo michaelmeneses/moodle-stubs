@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "encodedUpdates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $encodedUpdates = $safebrowsingService->encodedUpdates;
- *  </code>
- */
-class EncodedUpdates extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse;
     /**
-     * (encodedUpdates.get)
-     *
-     * @param string $encodedRequest A serialized FetchThreatListUpdatesRequest
-     * proto.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientId A client ID that uniquely identifies the client
-     * implementation of the Safe Browsing API.
-     * @opt_param string clientVersion The version of the client implementation.
-     * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse
+     * The "encodedUpdates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $encodedUpdates = $safebrowsingService->encodedUpdates;
+     *  </code>
      */
-    public function get($encodedRequest, $optParams = [])
+    class EncodedUpdates extends \Google\Service\Resource
+    {
+        /**
+         * (encodedUpdates.get)
+         *
+         * @param string $encodedRequest A serialized FetchThreatListUpdatesRequest
+         * proto.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientId A client ID that uniquely identifies the client
+         * implementation of the Safe Browsing API.
+         * @opt_param string clientVersion The version of the client implementation.
+         * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse
+         */
+        public function get($encodedRequest, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\EncodedUpdates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_EncodedUpdates extends \Google\Service\Safebrowsing\Resource\EncodedUpdates
     {
     }
 }

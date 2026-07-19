@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1TransactionInfo extends \Google\Model
-{
-    /**
-     * All the costs associated with the products. These can be manufacturing
-     * costs, shipping expenses not borne by the end user, or any other costs,
-     * such that: * Profit = value - tax - cost
-     *
-     * @var float
-     */
-    public $cost;
-    /**
-     * Required. Currency code. Use three-character ISO-4217 code.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * The total discount(s) value applied to this transaction. This figure should
-     * be excluded from TransactionInfo.value For example, if a user paid
-     * TransactionInfo.value amount, then nominal (pre-discount) value of the
-     * transaction is the sum of TransactionInfo.value and
-     * TransactionInfo.discount_value This means that profit is calculated the
-     * same way, regardless of the discount value, and that
-     * TransactionInfo.discount_value can be larger than TransactionInfo.value: *
-     * Profit = value - tax - cost
-     *
-     * @var float
-     */
-    public $discountValue;
-    /**
-     * All the taxes associated with the transaction.
-     *
-     * @var float
-     */
-    public $tax;
-    /**
-     * The transaction ID with a length limit of 128 characters.
-     *
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * Required. Total non-zero value associated with the transaction. This value
-     * may include shipping, tax, or other adjustments to the total value that you
-     * want to include.
-     *
-     * @var float
-     */
-    public $value;
-    /**
-     * All the costs associated with the products. These can be manufacturing
-     * costs, shipping expenses not borne by the end user, or any other costs,
-     * such that: * Profit = value - tax - cost
-     *
-     * @param float $cost
-     */
-    public function setCost($cost)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1TransactionInfo extends \Google\Model
     {
+        /**
+         * All the costs associated with the products. These can be manufacturing
+         * costs, shipping expenses not borne by the end user, or any other costs,
+         * such that: * Profit = value - tax - cost
+         *
+         * @var float
+         */
+        public $cost;
+        /**
+         * Required. Currency code. Use three-character ISO-4217 code.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * The total discount(s) value applied to this transaction. This figure should
+         * be excluded from TransactionInfo.value For example, if a user paid
+         * TransactionInfo.value amount, then nominal (pre-discount) value of the
+         * transaction is the sum of TransactionInfo.value and
+         * TransactionInfo.discount_value This means that profit is calculated the
+         * same way, regardless of the discount value, and that
+         * TransactionInfo.discount_value can be larger than TransactionInfo.value: *
+         * Profit = value - tax - cost
+         *
+         * @var float
+         */
+        public $discountValue;
+        /**
+         * All the taxes associated with the transaction.
+         *
+         * @var float
+         */
+        public $tax;
+        /**
+         * The transaction ID with a length limit of 128 characters.
+         *
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * Required. Total non-zero value associated with the transaction. This value
+         * may include shipping, tax, or other adjustments to the total value that you
+         * want to include.
+         *
+         * @var float
+         */
+        public $value;
+        /**
+         * All the costs associated with the products. These can be manufacturing
+         * costs, shipping expenses not borne by the end user, or any other costs,
+         * such that: * Profit = value - tax - cost
+         *
+         * @param float $cost
+         */
+        public function setCost($cost)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCost()
+        {
+        }
+        /**
+         * Required. Currency code. Use three-character ISO-4217 code.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * The total discount(s) value applied to this transaction. This figure should
+         * be excluded from TransactionInfo.value For example, if a user paid
+         * TransactionInfo.value amount, then nominal (pre-discount) value of the
+         * transaction is the sum of TransactionInfo.value and
+         * TransactionInfo.discount_value This means that profit is calculated the
+         * same way, regardless of the discount value, and that
+         * TransactionInfo.discount_value can be larger than TransactionInfo.value: *
+         * Profit = value - tax - cost
+         *
+         * @param float $discountValue
+         */
+        public function setDiscountValue($discountValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDiscountValue()
+        {
+        }
+        /**
+         * All the taxes associated with the transaction.
+         *
+         * @param float $tax
+         */
+        public function setTax($tax)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTax()
+        {
+        }
+        /**
+         * The transaction ID with a length limit of 128 characters.
+         *
+         * @param string $transactionId
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
+        /**
+         * Required. Total non-zero value associated with the transaction. This value
+         * may include shipping, tax, or other adjustments to the total value that you
+         * want to include.
+         *
+         * @param float $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TransactionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCost()
-    {
-    }
-    /**
-     * Required. Currency code. Use three-character ISO-4217 code.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * The total discount(s) value applied to this transaction. This figure should
-     * be excluded from TransactionInfo.value For example, if a user paid
-     * TransactionInfo.value amount, then nominal (pre-discount) value of the
-     * transaction is the sum of TransactionInfo.value and
-     * TransactionInfo.discount_value This means that profit is calculated the
-     * same way, regardless of the discount value, and that
-     * TransactionInfo.discount_value can be larger than TransactionInfo.value: *
-     * Profit = value - tax - cost
-     *
-     * @param float $discountValue
-     */
-    public function setDiscountValue($discountValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getDiscountValue()
-    {
-    }
-    /**
-     * All the taxes associated with the transaction.
-     *
-     * @param float $tax
-     */
-    public function setTax($tax)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTax()
-    {
-    }
-    /**
-     * The transaction ID with a length limit of 128 characters.
-     *
-     * @param string $transactionId
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
-    {
-    }
-    /**
-     * Required. Total non-zero value associated with the transaction. This value
-     * may include shipping, tax, or other adjustments to the total value that you
-     * want to include.
-     *
-     * @param float $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1TransactionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TransactionInfo
     {
     }
 }

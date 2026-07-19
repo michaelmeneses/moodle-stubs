@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1OrgPolicyViolation extends \Google\Model
-{
-    protected $customConstraintType = GoogleCloudOrgpolicyV2CustomConstraint::class;
-    protected $customConstraintDataType = '';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * The name of the `OrgPolicyViolation`. Example: organizations/my-example-org
-     * /locations/global/orgPolicyViolationsPreviews/506a5f7f/orgPolicyViolations/
-     * 38ce`
-     *
-     * @var string
-     */
-    public $name;
-    protected $resourceType = GoogleCloudPolicysimulatorV1ResourceContext::class;
-    protected $resourceDataType = '';
-    /**
-     * The custom constraint being violated.
-     *
-     * @param GoogleCloudOrgpolicyV2CustomConstraint $customConstraint
-     */
-    public function setCustomConstraint(GoogleCloudOrgpolicyV2CustomConstraint $customConstraint)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1OrgPolicyViolation extends \Google\Model
     {
+        protected $customConstraintType = GoogleCloudOrgpolicyV2CustomConstraint::class;
+        protected $customConstraintDataType = '';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * The name of the `OrgPolicyViolation`. Example: organizations/my-example-org
+         * /locations/global/orgPolicyViolationsPreviews/506a5f7f/orgPolicyViolations/
+         * 38ce`
+         *
+         * @var string
+         */
+        public $name;
+        protected $resourceType = GoogleCloudPolicysimulatorV1ResourceContext::class;
+        protected $resourceDataType = '';
+        /**
+         * The custom constraint being violated.
+         *
+         * @param GoogleCloudOrgpolicyV2CustomConstraint $customConstraint
+         */
+        public function setCustomConstraint(GoogleCloudOrgpolicyV2CustomConstraint $customConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2CustomConstraint
+         */
+        public function getCustomConstraint()
+        {
+        }
+        /**
+         * Any error encountered during the evaluation.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The name of the `OrgPolicyViolation`. Example: organizations/my-example-org
+         * /locations/global/orgPolicyViolationsPreviews/506a5f7f/orgPolicyViolations/
+         * 38ce`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The resource violating the constraint.
+         *
+         * @param GoogleCloudPolicysimulatorV1ResourceContext $resource
+         */
+        public function setResource(GoogleCloudPolicysimulatorV1ResourceContext $resource)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1ResourceContext
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2CustomConstraint
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraint()
-    {
-    }
-    /**
-     * Any error encountered during the evaluation.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The name of the `OrgPolicyViolation`. Example: organizations/my-example-org
-     * /locations/global/orgPolicyViolationsPreviews/506a5f7f/orgPolicyViolations/
-     * 38ce`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The resource violating the constraint.
-     *
-     * @param GoogleCloudPolicysimulatorV1ResourceContext $resource
-     */
-    public function setResource(GoogleCloudPolicysimulatorV1ResourceContext $resource)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1ResourceContext
-     */
-    public function getResource()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1OrgPolicyViolation extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyViolation
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListAccountReturnCarrierResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountReturnCarriers';
-    protected $accountReturnCarriersType = AccountReturnCarrier::class;
-    protected $accountReturnCarriersDataType = 'array';
-    /**
-     * List of all available account return carriers for the merchant.
-     *
-     * @param AccountReturnCarrier[] $accountReturnCarriers
-     */
-    public function setAccountReturnCarriers($accountReturnCarriers)
+namespace Google\Service\ShoppingContent {
+    class ListAccountReturnCarrierResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountReturnCarriers';
+        protected $accountReturnCarriersType = AccountReturnCarrier::class;
+        protected $accountReturnCarriersDataType = 'array';
+        /**
+         * List of all available account return carriers for the merchant.
+         *
+         * @param AccountReturnCarrier[] $accountReturnCarriers
+         */
+        public function setAccountReturnCarriers($accountReturnCarriers)
+        {
+        }
+        /**
+         * @return AccountReturnCarrier[]
+         */
+        public function getAccountReturnCarriers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountReturnCarrier[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ListAccountReturnCarrierResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountReturnCarriers()
+    class Google_Service_ShoppingContent_ListAccountReturnCarrierResponse extends \Google\Service\ShoppingContent\ListAccountReturnCarrierResponse
     {
     }
 }

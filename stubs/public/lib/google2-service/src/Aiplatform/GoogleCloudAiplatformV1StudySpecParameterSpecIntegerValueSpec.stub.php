@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecIntegerValueSpec extends \Google\Model
-{
-    /**
-     * A default value for an `INTEGER` parameter that is assumed to be a
-     * relatively good starting point. Unset value signals that there is no
-     * offered starting point. Currently only supported by the Vertex AI Vizier
-     * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
-     *
-     * @var string
-     */
-    public $defaultValue;
-    /**
-     * Required. Inclusive maximum value of the parameter.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Required. Inclusive minimum value of the parameter.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * A default value for an `INTEGER` parameter that is assumed to be a
-     * relatively good starting point. Unset value signals that there is no
-     * offered starting point. Currently only supported by the Vertex AI Vizier
-     * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
-     *
-     * @param string $defaultValue
-     */
-    public function setDefaultValue($defaultValue)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecIntegerValueSpec extends \Google\Model
     {
+        /**
+         * A default value for an `INTEGER` parameter that is assumed to be a
+         * relatively good starting point. Unset value signals that there is no
+         * offered starting point. Currently only supported by the Vertex AI Vizier
+         * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
+         *
+         * @var string
+         */
+        public $defaultValue;
+        /**
+         * Required. Inclusive maximum value of the parameter.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Required. Inclusive minimum value of the parameter.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * A default value for an `INTEGER` parameter that is assumed to be a
+         * relatively good starting point. Unset value signals that there is no
+         * offered starting point. Currently only supported by the Vertex AI Vizier
+         * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
+         *
+         * @param string $defaultValue
+         */
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Required. Inclusive maximum value of the parameter.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Required. Inclusive minimum value of the parameter.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecIntegerValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Required. Inclusive maximum value of the parameter.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Required. Inclusive minimum value of the parameter.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecIntegerValueSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecIntegerValueSpec
     {
     }
 }

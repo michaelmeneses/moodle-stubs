@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "create" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $create = $apigeeService->organizations_developers_apps_keys_create;
- *  </code>
- */
-class OrganizationsDevelopersAppsKeysCreate extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperAppKey;
     /**
-     * Creates a custom consumer key and secret for a developer app. This is
-     * particularly useful if you want to migrate existing consumer keys and secrets
-     * to Apigee from another system. Consumer keys and secrets can contain letters,
-     * numbers, underscores, and hyphens. No other special characters are allowed.
-     * To avoid service disruptions, a consumer key and secret should not exceed 2
-     * KBs each. **Note**: When creating the consumer key and secret, an association
-     * to API products will not be made. Therefore, you should not specify the
-     * associated API products in your request. Instead, use the
-     * UpdateDeveloperAppKey API to make the association after the consumer key and
-     * secret are created. If a consumer key and secret already exist, you can keep
-     * them or delete them using the DeleteDeveloperAppKey API. **Note**: All keys
-     * start out with status=approved, even if status=revoked is passed when the key
-     * is created. To revoke a key, use the UpdateDeveloperAppKey API.
-     * (create.create)
-     *
-     * @param string $parent Parent of the developer app key. Use the following
-     * structure in your request:
-     * 'organizations/{org}/developers/{developerEmail}/apps/{appName}'
-     * @param GoogleCloudApigeeV1DeveloperAppKey $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperAppKey
-     * @throws \Google\Service\Exception
+     * The "create" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $create = $apigeeService->organizations_developers_apps_keys_create;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1DeveloperAppKey $postBody, $optParams = [])
+    class OrganizationsDevelopersAppsKeysCreate extends \Google\Service\Resource
+    {
+        /**
+         * Creates a custom consumer key and secret for a developer app. This is
+         * particularly useful if you want to migrate existing consumer keys and secrets
+         * to Apigee from another system. Consumer keys and secrets can contain letters,
+         * numbers, underscores, and hyphens. No other special characters are allowed.
+         * To avoid service disruptions, a consumer key and secret should not exceed 2
+         * KBs each. **Note**: When creating the consumer key and secret, an association
+         * to API products will not be made. Therefore, you should not specify the
+         * associated API products in your request. Instead, use the
+         * UpdateDeveloperAppKey API to make the association after the consumer key and
+         * secret are created. If a consumer key and secret already exist, you can keep
+         * them or delete them using the DeleteDeveloperAppKey API. **Note**: All keys
+         * start out with status=approved, even if status=revoked is passed when the key
+         * is created. To revoke a key, use the UpdateDeveloperAppKey API.
+         * (create.create)
+         *
+         * @param string $parent Parent of the developer app key. Use the following
+         * structure in your request:
+         * 'organizations/{org}/developers/{developerEmail}/apps/{appName}'
+         * @param GoogleCloudApigeeV1DeveloperAppKey $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperAppKey
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1DeveloperAppKey $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsDevelopersAppsKeysCreate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsDevelopersAppsKeysCreate extends \Google\Service\Apigee\Resource\OrganizationsDevelopersAppsKeysCreate
     {
     }
 }

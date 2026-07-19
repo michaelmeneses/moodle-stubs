@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "canaryevaluations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $canaryevaluations = $apigeeService->organizations_instances_canaryevaluations;
- *  </code>
- */
-class OrganizationsInstancesCanaryevaluations extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1CanaryEvaluation;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Creates a new canary evaluation for an organization.
-     * (canaryevaluations.create)
-     *
-     * @param string $parent Required. Name of the organization. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`.
-     * @param GoogleCloudApigeeV1CanaryEvaluation $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "canaryevaluations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $canaryevaluations = $apigeeService->organizations_instances_canaryevaluations;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1CanaryEvaluation $postBody, $optParams = [])
+    class OrganizationsInstancesCanaryevaluations extends \Google\Service\Resource
     {
+        /**
+         * Creates a new canary evaluation for an organization.
+         * (canaryevaluations.create)
+         *
+         * @param string $parent Required. Name of the organization. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`.
+         * @param GoogleCloudApigeeV1CanaryEvaluation $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1CanaryEvaluation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a CanaryEvaluation for an organization. (canaryevaluations.get)
+         *
+         * @param string $name Required. Name of the CanaryEvaluation. Use the following
+         * structure in your request:
+         * `organizations/{org}/instances/canaryevaluations/{evaluation}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1CanaryEvaluation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a CanaryEvaluation for an organization. (canaryevaluations.get)
-     *
-     * @param string $name Required. Name of the CanaryEvaluation. Use the following
-     * structure in your request:
-     * `organizations/{org}/instances/canaryevaluations/{evaluation}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1CanaryEvaluation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsInstancesCanaryevaluations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsInstancesCanaryevaluations extends \Google\Service\Apigee\Resource\OrganizationsInstancesCanaryevaluations
     {
     }
 }

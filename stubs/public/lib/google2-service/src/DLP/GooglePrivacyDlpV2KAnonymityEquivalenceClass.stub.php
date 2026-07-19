@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KAnonymityEquivalenceClass extends \Google\Collection
-{
-    protected $collection_key = 'quasiIdsValues';
-    /**
-     * Size of the equivalence class, for example number of rows with the above
-     * set of values.
-     *
-     * @var string
-     */
-    public $equivalenceClassSize;
-    protected $quasiIdsValuesType = GooglePrivacyDlpV2Value::class;
-    protected $quasiIdsValuesDataType = 'array';
-    /**
-     * Size of the equivalence class, for example number of rows with the above
-     * set of values.
-     *
-     * @param string $equivalenceClassSize
-     */
-    public function setEquivalenceClassSize($equivalenceClassSize)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KAnonymityEquivalenceClass extends \Google\Collection
     {
+        protected $collection_key = 'quasiIdsValues';
+        /**
+         * Size of the equivalence class, for example number of rows with the above
+         * set of values.
+         *
+         * @var string
+         */
+        public $equivalenceClassSize;
+        protected $quasiIdsValuesType = GooglePrivacyDlpV2Value::class;
+        protected $quasiIdsValuesDataType = 'array';
+        /**
+         * Size of the equivalence class, for example number of rows with the above
+         * set of values.
+         *
+         * @param string $equivalenceClassSize
+         */
+        public function setEquivalenceClassSize($equivalenceClassSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEquivalenceClassSize()
+        {
+        }
+        /**
+         * Set of values defining the equivalence class. One value per quasi-
+         * identifier column in the original KAnonymity metric message. The order is
+         * always the same as the original request.
+         *
+         * @param GooglePrivacyDlpV2Value[] $quasiIdsValues
+         */
+        public function setQuasiIdsValues($quasiIdsValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value[]
+         */
+        public function getQuasiIdsValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityEquivalenceClass registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEquivalenceClassSize()
-    {
-    }
-    /**
-     * Set of values defining the equivalence class. One value per quasi-
-     * identifier column in the original KAnonymity metric message. The order is
-     * always the same as the original request.
-     *
-     * @param GooglePrivacyDlpV2Value[] $quasiIdsValues
-     */
-    public function setQuasiIdsValues($quasiIdsValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value[]
-     */
-    public function getQuasiIdsValues()
+    class Google_Service_DLP_GooglePrivacyDlpV2KAnonymityEquivalenceClass extends \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityEquivalenceClass
     {
     }
 }

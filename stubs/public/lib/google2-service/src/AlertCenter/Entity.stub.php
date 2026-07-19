@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class Entity extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Link to a Security Investigation Tool search based on this entity, if
-     * available.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Human-readable name of this entity, such as an email address, file ID, or
-     * device name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Extra values beyond name. The order of values should align with headers in
-     * EntityList.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Link to a Security Investigation Tool search based on this entity, if
-     * available.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
+namespace Google\Service\AlertCenter {
+    class Entity extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Link to a Security Investigation Tool search based on this entity, if
+         * available.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Human-readable name of this entity, such as an email address, file ID, or
+         * device name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Extra values beyond name. The order of values should align with headers in
+         * EntityList.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Link to a Security Investigation Tool search based on this entity, if
+         * available.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Human-readable name of this entity, such as an email address, file ID, or
+         * device name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Extra values beyond name. The order of values should align with headers in
+         * EntityList.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLink()
-    {
-    }
-    /**
-     * Human-readable name of this entity, such as an email address, file ID, or
-     * device name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Extra values beyond name. The order of values should align with headers in
-     * EntityList.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_AlertCenter_Entity extends \Google\Service\AlertCenter\Entity
     {
     }
 }

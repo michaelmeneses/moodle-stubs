@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class FixedFrequencySchedule extends \Google\Model
-{
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. The start time of every automated backup in UTC. It must be set
-     * to the start of an hour. This field is required.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
+namespace Google\Service\CloudRedis {
+    class FixedFrequencySchedule extends \Google\Model
     {
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. The start time of every automated backup in UTC. It must be set
+         * to the start of an hour. This field is required.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeOfDay
+     * Runtime class alias of \Google\Service\CloudRedis\FixedFrequencySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_CloudRedis_FixedFrequencySchedule extends \Google\Service\CloudRedis\FixedFrequencySchedule
     {
     }
 }

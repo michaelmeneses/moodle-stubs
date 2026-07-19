@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class QuizSettings extends \Google\Model
-{
-    /**
-     * Whether this form is a quiz or not. When true, responses are graded based
-     * on question Grading. Upon setting to false, all question Grading is
-     * deleted.
-     *
-     * @var bool
-     */
-    public $isQuiz;
-    /**
-     * Whether this form is a quiz or not. When true, responses are graded based
-     * on question Grading. Upon setting to false, all question Grading is
-     * deleted.
-     *
-     * @param bool $isQuiz
-     */
-    public function setIsQuiz($isQuiz)
+namespace Google\Service\Forms {
+    class QuizSettings extends \Google\Model
     {
+        /**
+         * Whether this form is a quiz or not. When true, responses are graded based
+         * on question Grading. Upon setting to false, all question Grading is
+         * deleted.
+         *
+         * @var bool
+         */
+        public $isQuiz;
+        /**
+         * Whether this form is a quiz or not. When true, responses are graded based
+         * on question Grading. Upon setting to false, all question Grading is
+         * deleted.
+         *
+         * @param bool $isQuiz
+         */
+        public function setIsQuiz($isQuiz)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsQuiz()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\QuizSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsQuiz()
+    class Google_Service_Forms_QuizSettings extends \Google\Service\Forms\QuizSettings
     {
     }
 }

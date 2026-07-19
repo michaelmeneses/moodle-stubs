@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPeopleAnswerPersonAnswerCard extends \Google\Collection
-{
-    /**
-     * Unknown.
-     */
-    public const RESPONSE_STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Success.
-     */
-    public const RESPONSE_STATUS_SUCCESS = 'SUCCESS';
-    /**
-     * No such person was found in the user's domain.
-     */
-    public const RESPONSE_STATUS_MISSING_PERSON = 'MISSING_PERSON';
-    /**
-     * A person was found to match the query, but an answer could not be obtained.
-     */
-    public const RESPONSE_STATUS_MISSING_DATA = 'MISSING_DATA';
-    protected $collection_key = 'answer';
-    protected $answerType = SafeHtmlProto::class;
-    protected $answerDataType = 'array';
-    protected $answerTextType = EnterpriseTopazSidekickAnswerAnswerList::class;
-    protected $answerTextDataType = '';
-    protected $disambiguationInfoType = EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo::class;
-    protected $disambiguationInfoDataType = '';
-    protected $headerType = EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader::class;
-    protected $headerDataType = '';
-    /**
-     * The response status.
-     *
-     * @var string
-     */
-    public $responseStatus;
-    /**
-     * Localized user friendly message to display to the user in the case of
-     * missing data or an error.
-     *
-     * @var string
-     */
-    public $statusMessage;
-    protected $subjectType = EnterpriseTopazSidekickCommonPerson::class;
-    protected $subjectDataType = '';
-    /**
-     * List of answers.
-     *
-     * @deprecated
-     * @param SafeHtmlProto[] $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPeopleAnswerPersonAnswerCard extends \Google\Collection
     {
+        /**
+         * Unknown.
+         */
+        public const RESPONSE_STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Success.
+         */
+        public const RESPONSE_STATUS_SUCCESS = 'SUCCESS';
+        /**
+         * No such person was found in the user's domain.
+         */
+        public const RESPONSE_STATUS_MISSING_PERSON = 'MISSING_PERSON';
+        /**
+         * A person was found to match the query, but an answer could not be obtained.
+         */
+        public const RESPONSE_STATUS_MISSING_DATA = 'MISSING_DATA';
+        protected $collection_key = 'answer';
+        protected $answerType = SafeHtmlProto::class;
+        protected $answerDataType = 'array';
+        protected $answerTextType = EnterpriseTopazSidekickAnswerAnswerList::class;
+        protected $answerTextDataType = '';
+        protected $disambiguationInfoType = EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo::class;
+        protected $disambiguationInfoDataType = '';
+        protected $headerType = EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader::class;
+        protected $headerDataType = '';
+        /**
+         * The response status.
+         *
+         * @var string
+         */
+        public $responseStatus;
+        /**
+         * Localized user friendly message to display to the user in the case of
+         * missing data or an error.
+         *
+         * @var string
+         */
+        public $statusMessage;
+        protected $subjectType = EnterpriseTopazSidekickCommonPerson::class;
+        protected $subjectDataType = '';
+        /**
+         * List of answers.
+         *
+         * @deprecated
+         * @param SafeHtmlProto[] $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @deprecated
+         * @return SafeHtmlProto[]
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * List of answers.
+         *
+         * @param EnterpriseTopazSidekickAnswerAnswerList $answerText
+         */
+        public function setAnswerText(EnterpriseTopazSidekickAnswerAnswerList $answerText)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAnswerAnswerList
+         */
+        public function getAnswerText()
+        {
+        }
+        /**
+         * Disambiguation information.
+         *
+         * @param EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo $disambiguationInfo
+         */
+        public function setDisambiguationInfo(EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo $disambiguationInfo)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo
+         */
+        public function getDisambiguationInfo()
+        {
+        }
+        /**
+         * The header to display for the card.
+         *
+         * @param EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader $header
+         */
+        public function setHeader(EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader $header)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * The response status.
+         *
+         * Accepted values: UNKNOWN, SUCCESS, MISSING_PERSON, MISSING_DATA
+         *
+         * @param self::RESPONSE_STATUS_* $responseStatus
+         */
+        public function setResponseStatus($responseStatus)
+        {
+        }
+        /**
+         * @return self::RESPONSE_STATUS_*
+         */
+        public function getResponseStatus()
+        {
+        }
+        /**
+         * Localized user friendly message to display to the user in the case of
+         * missing data or an error.
+         *
+         * @param string $statusMessage
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * The profile of the person that was the subject of the query.
+         *
+         * @param EnterpriseTopazSidekickCommonPerson $subject
+         */
+        public function setSubject(EnterpriseTopazSidekickCommonPerson $subject)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPerson
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return SafeHtmlProto[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerPersonAnswerCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * List of answers.
-     *
-     * @param EnterpriseTopazSidekickAnswerAnswerList $answerText
-     */
-    public function setAnswerText(EnterpriseTopazSidekickAnswerAnswerList $answerText)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAnswerAnswerList
-     */
-    public function getAnswerText()
-    {
-    }
-    /**
-     * Disambiguation information.
-     *
-     * @param EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo $disambiguationInfo
-     */
-    public function setDisambiguationInfo(EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo $disambiguationInfo)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo
-     */
-    public function getDisambiguationInfo()
-    {
-    }
-    /**
-     * The header to display for the card.
-     *
-     * @param EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader $header
-     */
-    public function setHeader(EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader $header)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * The response status.
-     *
-     * Accepted values: UNKNOWN, SUCCESS, MISSING_PERSON, MISSING_DATA
-     *
-     * @param self::RESPONSE_STATUS_* $responseStatus
-     */
-    public function setResponseStatus($responseStatus)
-    {
-    }
-    /**
-     * @return self::RESPONSE_STATUS_*
-     */
-    public function getResponseStatus()
-    {
-    }
-    /**
-     * Localized user friendly message to display to the user in the case of
-     * missing data or an error.
-     *
-     * @param string $statusMessage
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * The profile of the person that was the subject of the query.
-     *
-     * @param EnterpriseTopazSidekickCommonPerson $subject
-     */
-    public function setSubject(EnterpriseTopazSidekickCommonPerson $subject)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickCommonPerson
-     */
-    public function getSubject()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPeopleAnswerPersonAnswerCard extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerPersonAnswerCard
     {
     }
 }

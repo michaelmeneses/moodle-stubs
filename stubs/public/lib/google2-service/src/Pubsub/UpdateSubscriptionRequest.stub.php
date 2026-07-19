@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class UpdateSubscriptionRequest extends \Google\Model
-{
-    protected $subscriptionType = Subscription::class;
-    protected $subscriptionDataType = '';
-    /**
-     * Required. Indicates which fields in the provided subscription to update.
-     * Must be specified and non-empty.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The updated subscription object.
-     *
-     * @param Subscription $subscription
-     */
-    public function setSubscription(Subscription $subscription)
+namespace Google\Service\Pubsub {
+    class UpdateSubscriptionRequest extends \Google\Model
     {
+        protected $subscriptionType = Subscription::class;
+        protected $subscriptionDataType = '';
+        /**
+         * Required. Indicates which fields in the provided subscription to update.
+         * Must be specified and non-empty.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The updated subscription object.
+         *
+         * @param Subscription $subscription
+         */
+        public function setSubscription(Subscription $subscription)
+        {
+        }
+        /**
+         * @return Subscription
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * Required. Indicates which fields in the provided subscription to update.
+         * Must be specified and non-empty.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Subscription
+     * Runtime class alias of \Google\Service\Pubsub\UpdateSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
-    {
-    }
-    /**
-     * Required. Indicates which fields in the provided subscription to update.
-     * Must be specified and non-empty.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Pubsub_UpdateSubscriptionRequest extends \Google\Service\Pubsub\UpdateSubscriptionRequest
     {
     }
 }

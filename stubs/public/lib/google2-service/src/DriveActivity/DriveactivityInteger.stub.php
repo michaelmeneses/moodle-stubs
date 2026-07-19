@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class DriveactivityInteger extends \Google\Model
-{
-    /**
-     * Integer value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Integer value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\DriveActivity {
+    class DriveactivityInteger extends \Google\Model
     {
+        /**
+         * Integer value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Integer value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\DriveactivityInteger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_DriveActivity_DriveactivityInteger extends \Google\Service\DriveActivity\DriveactivityInteger
     {
     }
 }

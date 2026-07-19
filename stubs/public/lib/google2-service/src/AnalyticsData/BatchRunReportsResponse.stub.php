@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class BatchRunReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'reports';
-    /**
-     * Identifies what kind of resource this message is. This `kind` is always the
-     * fixed string "analyticsData#batchRunReports". Useful to distinguish between
-     * response types in JSON.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $reportsType = RunReportResponse::class;
-    protected $reportsDataType = 'array';
-    /**
-     * Identifies what kind of resource this message is. This `kind` is always the
-     * fixed string "analyticsData#batchRunReports". Useful to distinguish between
-     * response types in JSON.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\AnalyticsData {
+    class BatchRunReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'reports';
+        /**
+         * Identifies what kind of resource this message is. This `kind` is always the
+         * fixed string "analyticsData#batchRunReports". Useful to distinguish between
+         * response types in JSON.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $reportsType = RunReportResponse::class;
+        protected $reportsDataType = 'array';
+        /**
+         * Identifies what kind of resource this message is. This `kind` is always the
+         * fixed string "analyticsData#batchRunReports". Useful to distinguish between
+         * response types in JSON.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Individual responses. Each response has a separate report request.
+         *
+         * @param RunReportResponse[] $reports
+         */
+        public function setReports($reports)
+        {
+        }
+        /**
+         * @return RunReportResponse[]
+         */
+        public function getReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\BatchRunReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Individual responses. Each response has a separate report request.
-     *
-     * @param RunReportResponse[] $reports
-     */
-    public function setReports($reports)
-    {
-    }
-    /**
-     * @return RunReportResponse[]
-     */
-    public function getReports()
+    class Google_Service_AnalyticsData_BatchRunReportsResponse extends \Google\Service\AnalyticsData\BatchRunReportsResponse
     {
     }
 }

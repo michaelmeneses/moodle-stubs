@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class Replica extends \Google\Model
-{
-    protected $customerManagedEncryptionType = CustomerManagedEncryption::class;
-    protected $customerManagedEncryptionDataType = '';
-    /**
-     * The canonical IDs of the location to replicate data. For example: `"us-
-     * east1"`.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Optional. The customer-managed encryption configuration of the User-Managed
-     * Replica. If no configuration is provided, Google-managed default encryption
-     * is used. Updates to the Secret encryption configuration only apply to
-     * SecretVersions added afterwards. They do not apply retroactively to
-     * existing SecretVersions.
-     *
-     * @param CustomerManagedEncryption $customerManagedEncryption
-     */
-    public function setCustomerManagedEncryption(CustomerManagedEncryption $customerManagedEncryption)
+namespace Google\Service\SecretManager {
+    class Replica extends \Google\Model
     {
+        protected $customerManagedEncryptionType = CustomerManagedEncryption::class;
+        protected $customerManagedEncryptionDataType = '';
+        /**
+         * The canonical IDs of the location to replicate data. For example: `"us-
+         * east1"`.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Optional. The customer-managed encryption configuration of the User-Managed
+         * Replica. If no configuration is provided, Google-managed default encryption
+         * is used. Updates to the Secret encryption configuration only apply to
+         * SecretVersions added afterwards. They do not apply retroactively to
+         * existing SecretVersions.
+         *
+         * @param CustomerManagedEncryption $customerManagedEncryption
+         */
+        public function setCustomerManagedEncryption(CustomerManagedEncryption $customerManagedEncryption)
+        {
+        }
+        /**
+         * @return CustomerManagedEncryption
+         */
+        public function getCustomerManagedEncryption()
+        {
+        }
+        /**
+         * The canonical IDs of the location to replicate data. For example: `"us-
+         * east1"`.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerManagedEncryption
+     * Runtime class alias of \Google\Service\SecretManager\Replica registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerManagedEncryption()
-    {
-    }
-    /**
-     * The canonical IDs of the location to replicate data. For example: `"us-
-     * east1"`.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_SecretManager_Replica extends \Google\Service\SecretManager\Replica
     {
     }
 }

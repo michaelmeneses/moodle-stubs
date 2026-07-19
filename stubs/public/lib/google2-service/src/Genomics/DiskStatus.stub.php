@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class DiskStatus extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $freeSpaceBytes;
-    /**
-     * @var string
-     */
-    public $totalSpaceBytes;
-    /**
-     * @param string
-     */
-    public function setFreeSpaceBytes($freeSpaceBytes)
+namespace Google\Service\Genomics {
+    class DiskStatus extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $freeSpaceBytes;
+        /**
+         * @var string
+         */
+        public $totalSpaceBytes;
+        /**
+         * @param string
+         */
+        public function setFreeSpaceBytes($freeSpaceBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFreeSpaceBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTotalSpaceBytes($totalSpaceBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSpaceBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\DiskStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreeSpaceBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTotalSpaceBytes($totalSpaceBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSpaceBytes()
+    class Google_Service_Genomics_DiskStatus extends \Google\Service\Genomics\DiskStatus
     {
     }
 }

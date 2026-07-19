@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class CardRowThreeItems extends \Google\Model
-{
-    protected $endItemType = TemplateItem::class;
-    protected $endItemDataType = '';
-    protected $middleItemType = TemplateItem::class;
-    protected $middleItemDataType = '';
-    protected $startItemType = TemplateItem::class;
-    protected $startItemDataType = '';
-    /**
-     * The item to be displayed at the end of the row. This item will be aligned
-     * to the right.
-     *
-     * @param TemplateItem $endItem
-     */
-    public function setEndItem(TemplateItem $endItem)
+namespace Google\Service\Walletobjects {
+    class CardRowThreeItems extends \Google\Model
     {
+        protected $endItemType = TemplateItem::class;
+        protected $endItemDataType = '';
+        protected $middleItemType = TemplateItem::class;
+        protected $middleItemDataType = '';
+        protected $startItemType = TemplateItem::class;
+        protected $startItemDataType = '';
+        /**
+         * The item to be displayed at the end of the row. This item will be aligned
+         * to the right.
+         *
+         * @param TemplateItem $endItem
+         */
+        public function setEndItem(TemplateItem $endItem)
+        {
+        }
+        /**
+         * @return TemplateItem
+         */
+        public function getEndItem()
+        {
+        }
+        /**
+         * The item to be displayed in the middle of the row. This item will be
+         * centered between the start and end items.
+         *
+         * @param TemplateItem $middleItem
+         */
+        public function setMiddleItem(TemplateItem $middleItem)
+        {
+        }
+        /**
+         * @return TemplateItem
+         */
+        public function getMiddleItem()
+        {
+        }
+        /**
+         * The item to be displayed at the start of the row. This item will be aligned
+         * to the left.
+         *
+         * @param TemplateItem $startItem
+         */
+        public function setStartItem(TemplateItem $startItem)
+        {
+        }
+        /**
+         * @return TemplateItem
+         */
+        public function getStartItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TemplateItem
+     * Runtime class alias of \Google\Service\Walletobjects\CardRowThreeItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndItem()
-    {
-    }
-    /**
-     * The item to be displayed in the middle of the row. This item will be
-     * centered between the start and end items.
-     *
-     * @param TemplateItem $middleItem
-     */
-    public function setMiddleItem(TemplateItem $middleItem)
-    {
-    }
-    /**
-     * @return TemplateItem
-     */
-    public function getMiddleItem()
-    {
-    }
-    /**
-     * The item to be displayed at the start of the row. This item will be aligned
-     * to the left.
-     *
-     * @param TemplateItem $startItem
-     */
-    public function setStartItem(TemplateItem $startItem)
-    {
-    }
-    /**
-     * @return TemplateItem
-     */
-    public function getStartItem()
+    class Google_Service_Walletobjects_CardRowThreeItems extends \Google\Service\Walletobjects\CardRowThreeItems
     {
     }
 }

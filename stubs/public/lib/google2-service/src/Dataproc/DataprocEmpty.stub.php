@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class DataprocEmpty extends \Google\Model
-{
+namespace Google\Service\Dataproc {
+    class DataprocEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataproc\DataprocEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataproc_DataprocEmpty extends \Google\Service\Dataproc\DataprocEmpty
+    {
+    }
 }

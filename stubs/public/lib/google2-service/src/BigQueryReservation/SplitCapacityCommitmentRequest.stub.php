@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class SplitCapacityCommitmentRequest extends \Google\Model
-{
-    /**
-     * Number of slots in the capacity commitment after the split.
-     *
-     * @var string
-     */
-    public $slotCount;
-    /**
-     * Number of slots in the capacity commitment after the split.
-     *
-     * @param string $slotCount
-     */
-    public function setSlotCount($slotCount)
+namespace Google\Service\BigQueryReservation {
+    class SplitCapacityCommitmentRequest extends \Google\Model
     {
+        /**
+         * Number of slots in the capacity commitment after the split.
+         *
+         * @var string
+         */
+        public $slotCount;
+        /**
+         * Number of slots in the capacity commitment after the split.
+         *
+         * @param string $slotCount
+         */
+        public function setSlotCount($slotCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlotCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\SplitCapacityCommitmentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSlotCount()
+    class Google_Service_BigQueryReservation_SplitCapacityCommitmentRequest extends \Google\Service\BigQueryReservation\SplitCapacityCommitmentRequest
     {
     }
 }

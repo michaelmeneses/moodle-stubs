@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class RenameTableRequest extends \Google\Model
-{
-    /**
-     * Required. The new `name` for the specified table, must be in the same
-     * database. Format: projects/{project_id_or_number}/locations/{location_id}/c
-     * atalogs/{catalog_id}/databases/{database_id}/tables/{table_id}
-     *
-     * @var string
-     */
-    public $newName;
-    /**
-     * Required. The new `name` for the specified table, must be in the same
-     * database. Format: projects/{project_id_or_number}/locations/{location_id}/c
-     * atalogs/{catalog_id}/databases/{database_id}/tables/{table_id}
-     *
-     * @param string $newName
-     */
-    public function setNewName($newName)
+namespace Google\Service\BigLakeService {
+    class RenameTableRequest extends \Google\Model
     {
+        /**
+         * Required. The new `name` for the specified table, must be in the same
+         * database. Format: projects/{project_id_or_number}/locations/{location_id}/c
+         * atalogs/{catalog_id}/databases/{database_id}/tables/{table_id}
+         *
+         * @var string
+         */
+        public $newName;
+        /**
+         * Required. The new `name` for the specified table, must be in the same
+         * database. Format: projects/{project_id_or_number}/locations/{location_id}/c
+         * atalogs/{catalog_id}/databases/{database_id}/tables/{table_id}
+         *
+         * @param string $newName
+         */
+        public function setNewName($newName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\RenameTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewName()
+    class Google_Service_BigLakeService_RenameTableRequest extends \Google\Service\BigLakeService\RenameTableRequest
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class SocialMetaTagInfo extends \Google\Model
-{
-    /**
-     * A short description of the link. Optional.
-     *
-     * @var string
-     */
-    public $socialDescription;
-    /**
-     * An image url string. Optional.
-     *
-     * @var string
-     */
-    public $socialImageLink;
-    /**
-     * Title to be displayed. Optional.
-     *
-     * @var string
-     */
-    public $socialTitle;
-    /**
-     * A short description of the link. Optional.
-     *
-     * @param string $socialDescription
-     */
-    public function setSocialDescription($socialDescription)
+namespace Google\Service\FirebaseDynamicLinks {
+    class SocialMetaTagInfo extends \Google\Model
     {
+        /**
+         * A short description of the link. Optional.
+         *
+         * @var string
+         */
+        public $socialDescription;
+        /**
+         * An image url string. Optional.
+         *
+         * @var string
+         */
+        public $socialImageLink;
+        /**
+         * Title to be displayed. Optional.
+         *
+         * @var string
+         */
+        public $socialTitle;
+        /**
+         * A short description of the link. Optional.
+         *
+         * @param string $socialDescription
+         */
+        public function setSocialDescription($socialDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSocialDescription()
+        {
+        }
+        /**
+         * An image url string. Optional.
+         *
+         * @param string $socialImageLink
+         */
+        public function setSocialImageLink($socialImageLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSocialImageLink()
+        {
+        }
+        /**
+         * Title to be displayed. Optional.
+         *
+         * @param string $socialTitle
+         */
+        public function setSocialTitle($socialTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSocialTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\SocialMetaTagInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSocialDescription()
-    {
-    }
-    /**
-     * An image url string. Optional.
-     *
-     * @param string $socialImageLink
-     */
-    public function setSocialImageLink($socialImageLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSocialImageLink()
-    {
-    }
-    /**
-     * Title to be displayed. Optional.
-     *
-     * @param string $socialTitle
-     */
-    public function setSocialTitle($socialTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSocialTitle()
+    class Google_Service_FirebaseDynamicLinks_SocialMetaTagInfo extends \Google\Service\FirebaseDynamicLinks\SocialMetaTagInfo
     {
     }
 }

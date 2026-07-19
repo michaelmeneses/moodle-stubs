@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudProfiler;
-
-class CreateProfileRequest extends \Google\Collection
-{
-    protected $collection_key = 'profileType';
-    protected $deploymentType = Deployment::class;
-    protected $deploymentDataType = '';
-    /**
-     * One or more profile types that the agent is capable of providing.
-     *
-     * @var string[]
-     */
-    public $profileType;
-    /**
-     * Deployment details.
-     *
-     * @param Deployment $deployment
-     */
-    public function setDeployment(Deployment $deployment)
+namespace Google\Service\CloudProfiler {
+    class CreateProfileRequest extends \Google\Collection
     {
+        protected $collection_key = 'profileType';
+        protected $deploymentType = Deployment::class;
+        protected $deploymentDataType = '';
+        /**
+         * One or more profile types that the agent is capable of providing.
+         *
+         * @var string[]
+         */
+        public $profileType;
+        /**
+         * Deployment details.
+         *
+         * @param Deployment $deployment
+         */
+        public function setDeployment(Deployment $deployment)
+        {
+        }
+        /**
+         * @return Deployment
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * One or more profile types that the agent is capable of providing.
+         *
+         * @param string[] $profileType
+         */
+        public function setProfileType($profileType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProfileType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deployment
+     * Runtime class alias of \Google\Service\CloudProfiler\CreateProfileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * One or more profile types that the agent is capable of providing.
-     *
-     * @param string[] $profileType
-     */
-    public function setProfileType($profileType)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProfileType()
+    class Google_Service_CloudProfiler_CreateProfileRequest extends \Google\Service\CloudProfiler\CreateProfileRequest
     {
     }
 }

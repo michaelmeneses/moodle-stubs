@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RougeResults extends \Google\Collection
-{
-    protected $collection_key = 'rougeMetricValues';
-    protected $rougeMetricValuesType = GoogleCloudAiplatformV1RougeMetricValue::class;
-    protected $rougeMetricValuesDataType = 'array';
-    /**
-     * Output only. Rouge metric values.
-     *
-     * @param GoogleCloudAiplatformV1RougeMetricValue[] $rougeMetricValues
-     */
-    public function setRougeMetricValues($rougeMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RougeResults extends \Google\Collection
     {
+        protected $collection_key = 'rougeMetricValues';
+        protected $rougeMetricValuesType = GoogleCloudAiplatformV1RougeMetricValue::class;
+        protected $rougeMetricValuesDataType = 'array';
+        /**
+         * Output only. Rouge metric values.
+         *
+         * @param GoogleCloudAiplatformV1RougeMetricValue[] $rougeMetricValues
+         */
+        public function setRougeMetricValues($rougeMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RougeMetricValue[]
+         */
+        public function getRougeMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RougeMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RougeResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRougeMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RougeResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RougeResults
     {
     }
 }

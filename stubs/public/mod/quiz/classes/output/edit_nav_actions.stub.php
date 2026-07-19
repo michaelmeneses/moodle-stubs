@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use templatable;
+use core\output\select_menu;
 /**
  * Represents the tertiary navigation around the quiz edit pages.
  *

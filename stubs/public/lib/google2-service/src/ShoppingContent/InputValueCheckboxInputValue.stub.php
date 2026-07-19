@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InputValueCheckboxInputValue extends \Google\Model
-{
-    /**
-     * Required. True if the merchant checked the box field. False otherwise.
-     *
-     * @var bool
-     */
-    public $value;
-    /**
-     * Required. True if the merchant checked the box field. False otherwise.
-     *
-     * @param bool $value
-     */
-    public function setValue($value)
+namespace Google\Service\ShoppingContent {
+    class InputValueCheckboxInputValue extends \Google\Model
     {
+        /**
+         * Required. True if the merchant checked the box field. False otherwise.
+         *
+         * @var bool
+         */
+        public $value;
+        /**
+         * Required. True if the merchant checked the box field. False otherwise.
+         *
+         * @param bool $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\InputValueCheckboxInputValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_ShoppingContent_InputValueCheckboxInputValue extends \Google\Service\ShoppingContent\InputValueCheckboxInputValue
     {
     }
 }

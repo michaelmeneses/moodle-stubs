@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * The token to retrieve the next page of rules, or empty if there are no more
-     * rules to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rulesType = GoogleDevtoolsArtifactregistryV1Rule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * The token to retrieve the next page of rules, or empty if there are no more
-     * rules to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * The token to retrieve the next page of rules, or empty if there are no more
+         * rules to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rulesType = GoogleDevtoolsArtifactregistryV1Rule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * The token to retrieve the next page of rules, or empty if there are no more
+         * rules to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The rules returned.
+         *
+         * @param GoogleDevtoolsArtifactregistryV1Rule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsArtifactregistryV1Rule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The rules returned.
-     *
-     * @param GoogleDevtoolsArtifactregistryV1Rule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsArtifactregistryV1Rule[]
-     */
-    public function getRules()
+    class Google_Service_ArtifactRegistry_ListRulesResponse extends \Google\Service\ArtifactRegistry\ListRulesResponse
     {
     }
 }

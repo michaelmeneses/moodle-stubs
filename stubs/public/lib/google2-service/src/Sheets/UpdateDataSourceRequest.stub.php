@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateDataSourceRequest extends \Google\Model
-{
-    protected $dataSourceType = DataSource::class;
-    protected $dataSourceDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `dataSource` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The data source to update.
-     *
-     * @param DataSource $dataSource
-     */
-    public function setDataSource(DataSource $dataSource)
+namespace Google\Service\Sheets {
+    class UpdateDataSourceRequest extends \Google\Model
     {
+        protected $dataSourceType = DataSource::class;
+        protected $dataSourceDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `dataSource` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The data source to update.
+         *
+         * @param DataSource $dataSource
+         */
+        public function setDataSource(DataSource $dataSource)
+        {
+        }
+        /**
+         * @return DataSource
+         */
+        public function getDataSource()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `dataSource` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSource
+     * Runtime class alias of \Google\Service\Sheets\UpdateDataSourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSource()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `dataSource` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
+    class Google_Service_Sheets_UpdateDataSourceRequest extends \Google\Service\Sheets\UpdateDataSourceRequest
     {
     }
 }

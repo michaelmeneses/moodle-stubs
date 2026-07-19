@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SampleSpacingOptions extends \Google\Model
-{
-    public $minSpacingMeters;
-    public $pointType;
-    public function setMinSpacingMeters($minSpacingMeters)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SampleSpacingOptions extends \Google\Model
     {
+        public $minSpacingMeters;
+        public $pointType;
+        public function setMinSpacingMeters($minSpacingMeters)
+        {
+        }
+        public function getMinSpacingMeters()
+        {
+        }
+        public function setPointType($pointType)
+        {
+        }
+        public function getPointType()
+        {
+        }
     }
-    public function getMinSpacingMeters()
-    {
-    }
-    public function setPointType($pointType)
-    {
-    }
-    public function getPointType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleSpacingOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SampleSpacingOptions extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleSpacingOptions
     {
     }
 }

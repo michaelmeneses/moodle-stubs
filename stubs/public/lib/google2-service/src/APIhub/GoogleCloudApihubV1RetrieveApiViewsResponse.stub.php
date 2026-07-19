@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1RetrieveApiViewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiViews';
-    protected $apiViewsType = GoogleCloudApihubV1ApiView::class;
-    protected $apiViewsDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of API views.
-     *
-     * @param GoogleCloudApihubV1ApiView[] $apiViews
-     */
-    public function setApiViews($apiViews)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1RetrieveApiViewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiViews';
+        protected $apiViewsType = GoogleCloudApihubV1ApiView::class;
+        protected $apiViewsDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of API views.
+         *
+         * @param GoogleCloudApihubV1ApiView[] $apiViews
+         */
+        public function setApiViews($apiViews)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiView[]
+         */
+        public function getApiViews()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApiView[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1RetrieveApiViewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiViews()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1RetrieveApiViewsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1RetrieveApiViewsResponse
     {
     }
 }

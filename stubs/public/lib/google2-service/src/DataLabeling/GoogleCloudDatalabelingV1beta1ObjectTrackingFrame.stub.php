@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ObjectTrackingFrame extends \Google\Model
-{
-    protected $boundingPolyType = GoogleCloudDatalabelingV1beta1BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    protected $normalizedBoundingPolyType = GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly::class;
-    protected $normalizedBoundingPolyDataType = '';
-    /**
-     * The time offset of this frame relative to the beginning of the video.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * @param GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ObjectTrackingFrame extends \Google\Model
     {
+        protected $boundingPolyType = GoogleCloudDatalabelingV1beta1BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        protected $normalizedBoundingPolyType = GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly::class;
+        protected $normalizedBoundingPolyDataType = '';
+        /**
+         * The time offset of this frame relative to the beginning of the video.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * @param GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly
+         */
+        public function setNormalizedBoundingPoly(GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly
+         */
+        public function getNormalizedBoundingPoly()
+        {
+        }
+        /**
+         * The time offset of this frame relative to the beginning of the video.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1BoundingPoly
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ObjectTrackingFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly
-     */
-    public function setNormalizedBoundingPoly(GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly
-     */
-    public function getNormalizedBoundingPoly()
-    {
-    }
-    /**
-     * The time offset of this frame relative to the beginning of the video.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ObjectTrackingFrame extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ObjectTrackingFrame
     {
     }
 }

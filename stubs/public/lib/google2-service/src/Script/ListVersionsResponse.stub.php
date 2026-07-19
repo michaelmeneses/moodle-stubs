@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ListVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * The token use to fetch the next page of records. if not exist in the
-     * response, that means no more versions to list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $versionsType = Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * The token use to fetch the next page of records. if not exist in the
-     * response, that means no more versions to list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Script {
+    class ListVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * The token use to fetch the next page of records. if not exist in the
+         * response, that means no more versions to list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $versionsType = Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * The token use to fetch the next page of records. if not exist in the
+         * response, that means no more versions to list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of versions.
+         *
+         * @param Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\ListVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of versions.
-     *
-     * @param Version[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return Version[]
-     */
-    public function getVersions()
+    class Google_Service_Script_ListVersionsResponse extends \Google\Service\Script\ListVersionsResponse
     {
     }
 }

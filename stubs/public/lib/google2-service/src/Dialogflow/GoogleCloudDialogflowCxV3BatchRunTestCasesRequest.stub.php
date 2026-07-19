@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3BatchRunTestCasesRequest extends \Google\Collection
-{
-    protected $collection_key = 'testCases';
-    /**
-     * Optional. If not set, draft environment is assumed. Format:
-     * `projects//locations//agents//environments/`.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Required. Format: `projects//locations//agents//testCases/`.
-     *
-     * @var string[]
-     */
-    public $testCases;
-    /**
-     * Optional. If not set, draft environment is assumed. Format:
-     * `projects//locations//agents//environments/`.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3BatchRunTestCasesRequest extends \Google\Collection
     {
+        protected $collection_key = 'testCases';
+        /**
+         * Optional. If not set, draft environment is assumed. Format:
+         * `projects//locations//agents//environments/`.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Required. Format: `projects//locations//agents//testCases/`.
+         *
+         * @var string[]
+         */
+        public $testCases;
+        /**
+         * Optional. If not set, draft environment is assumed. Format:
+         * `projects//locations//agents//environments/`.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Required. Format: `projects//locations//agents//testCases/`.
+         *
+         * @param string[] $testCases
+         */
+        public function setTestCases($testCases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTestCases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Required. Format: `projects//locations//agents//testCases/`.
-     *
-     * @param string[] $testCases
-     */
-    public function setTestCases($testCases)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTestCases()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3BatchRunTestCasesRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesRequest
     {
     }
 }

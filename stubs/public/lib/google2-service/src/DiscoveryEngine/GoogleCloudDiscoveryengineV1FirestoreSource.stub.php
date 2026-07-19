@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1FirestoreSource extends \Google\Model
-{
-    /**
-     * Required. The Firestore collection (or entity) to copy the data from with a
-     * length limit of 1,500 characters.
-     *
-     * @var string
-     */
-    public $collectionId;
-    /**
-     * Required. The Firestore database to copy the data from with a length limit
-     * of 256 characters.
-     *
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * Intermediate Cloud Storage directory used for the import with a length
-     * limit of 2,000 characters. Can be specified if one wants to have the
-     * Firestore export to a specific Cloud Storage directory. Ensure that the
-     * Firestore service account has the necessary Cloud Storage Admin permissions
-     * to access the specified Cloud Storage directory.
-     *
-     * @var string
-     */
-    public $gcsStagingDir;
-    /**
-     * The project ID that the Cloud SQL source is in with a length limit of 128
-     * characters. If not specified, inherits the project ID from the parent
-     * request.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The Firestore collection (or entity) to copy the data from with a
-     * length limit of 1,500 characters.
-     *
-     * @param string $collectionId
-     */
-    public function setCollectionId($collectionId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1FirestoreSource extends \Google\Model
     {
+        /**
+         * Required. The Firestore collection (or entity) to copy the data from with a
+         * length limit of 1,500 characters.
+         *
+         * @var string
+         */
+        public $collectionId;
+        /**
+         * Required. The Firestore database to copy the data from with a length limit
+         * of 256 characters.
+         *
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * Intermediate Cloud Storage directory used for the import with a length
+         * limit of 2,000 characters. Can be specified if one wants to have the
+         * Firestore export to a specific Cloud Storage directory. Ensure that the
+         * Firestore service account has the necessary Cloud Storage Admin permissions
+         * to access the specified Cloud Storage directory.
+         *
+         * @var string
+         */
+        public $gcsStagingDir;
+        /**
+         * The project ID that the Cloud SQL source is in with a length limit of 128
+         * characters. If not specified, inherits the project ID from the parent
+         * request.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The Firestore collection (or entity) to copy the data from with a
+         * length limit of 1,500 characters.
+         *
+         * @param string $collectionId
+         */
+        public function setCollectionId($collectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollectionId()
+        {
+        }
+        /**
+         * Required. The Firestore database to copy the data from with a length limit
+         * of 256 characters.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Intermediate Cloud Storage directory used for the import with a length
+         * limit of 2,000 characters. Can be specified if one wants to have the
+         * Firestore export to a specific Cloud Storage directory. Ensure that the
+         * Firestore service account has the necessary Cloud Storage Admin permissions
+         * to access the specified Cloud Storage directory.
+         *
+         * @param string $gcsStagingDir
+         */
+        public function setGcsStagingDir($gcsStagingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsStagingDir()
+        {
+        }
+        /**
+         * The project ID that the Cloud SQL source is in with a length limit of 128
+         * characters. If not specified, inherits the project ID from the parent
+         * request.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FirestoreSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionId()
-    {
-    }
-    /**
-     * Required. The Firestore database to copy the data from with a length limit
-     * of 256 characters.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Intermediate Cloud Storage directory used for the import with a length
-     * limit of 2,000 characters. Can be specified if one wants to have the
-     * Firestore export to a specific Cloud Storage directory. Ensure that the
-     * Firestore service account has the necessary Cloud Storage Admin permissions
-     * to access the specified Cloud Storage directory.
-     *
-     * @param string $gcsStagingDir
-     */
-    public function setGcsStagingDir($gcsStagingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsStagingDir()
-    {
-    }
-    /**
-     * The project ID that the Cloud SQL source is in with a length limit of 128
-     * characters. If not specified, inherits the project ID from the parent
-     * request.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1FirestoreSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FirestoreSource
     {
     }
 }

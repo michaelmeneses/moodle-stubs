@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ImageAsset extends \Google\Model
-{
-    /**
-     * The height of the asset.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#imageAsset`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the asset.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The URL of the asset.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The width of the asset.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The height of the asset.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\Games {
+    class ImageAsset extends \Google\Model
     {
+        /**
+         * The height of the asset.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#imageAsset`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the asset.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The URL of the asset.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The width of the asset.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The height of the asset.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#imageAsset`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the asset.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The URL of the asset.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * The width of the asset.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Games\ImageAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#imageAsset`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the asset.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The URL of the asset.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * The width of the asset.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Games_ImageAsset extends \Google\Service\Games\ImageAsset
     {
     }
 }

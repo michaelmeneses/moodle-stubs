@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class CloudSqlInstanceBackupPlanAssociationProperties extends \Google\Model
-{
-    /**
-     * Output only. The time when the instance was created.
-     *
-     * @var string
-     */
-    public $instanceCreateTime;
-    /**
-     * Output only. The time when the instance was created.
-     *
-     * @param string $instanceCreateTime
-     */
-    public function setInstanceCreateTime($instanceCreateTime)
+namespace Google\Service\Backupdr {
+    class CloudSqlInstanceBackupPlanAssociationProperties extends \Google\Model
     {
+        /**
+         * Output only. The time when the instance was created.
+         *
+         * @var string
+         */
+        public $instanceCreateTime;
+        /**
+         * Output only. The time when the instance was created.
+         *
+         * @param string $instanceCreateTime
+         */
+        public function setInstanceCreateTime($instanceCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceCreateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\CloudSqlInstanceBackupPlanAssociationProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceCreateTime()
+    class Google_Service_Backupdr_CloudSqlInstanceBackupPlanAssociationProperties extends \Google\Service\Backupdr\CloudSqlInstanceBackupPlanAssociationProperties
     {
     }
 }

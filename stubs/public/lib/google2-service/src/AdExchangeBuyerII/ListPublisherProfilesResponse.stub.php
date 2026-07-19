@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListPublisherProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'publisherProfiles';
-    /**
-     * List pagination support
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $publisherProfilesType = PublisherProfile::class;
-    protected $publisherProfilesDataType = 'array';
-    /**
-     * List pagination support
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListPublisherProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'publisherProfiles';
+        /**
+         * List pagination support
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $publisherProfilesType = PublisherProfile::class;
+        protected $publisherProfilesDataType = 'array';
+        /**
+         * List pagination support
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of matching publisher profiles.
+         *
+         * @param PublisherProfile[] $publisherProfiles
+         */
+        public function setPublisherProfiles($publisherProfiles)
+        {
+        }
+        /**
+         * @return PublisherProfile[]
+         */
+        public function getPublisherProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListPublisherProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of matching publisher profiles.
-     *
-     * @param PublisherProfile[] $publisherProfiles
-     */
-    public function setPublisherProfiles($publisherProfiles)
-    {
-    }
-    /**
-     * @return PublisherProfile[]
-     */
-    public function getPublisherProfiles()
+    class Google_Service_AdExchangeBuyerII_ListPublisherProfilesResponse extends \Google\Service\AdExchangeBuyerII\ListPublisherProfilesResponse
     {
     }
 }

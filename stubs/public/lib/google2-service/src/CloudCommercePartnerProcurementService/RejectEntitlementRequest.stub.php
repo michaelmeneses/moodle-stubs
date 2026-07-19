@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class RejectEntitlementRequest extends \Google\Model
-{
-    /**
-     * Free form text string explaining the rejection reason. Max allowed length:
-     * 256 bytes. Longer strings will be truncated.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Free form text string explaining the rejection reason. Max allowed length:
-     * 256 bytes. Longer strings will be truncated.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class RejectEntitlementRequest extends \Google\Model
     {
+        /**
+         * Free form text string explaining the rejection reason. Max allowed length:
+         * 256 bytes. Longer strings will be truncated.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Free form text string explaining the rejection reason. Max allowed length:
+         * 256 bytes. Longer strings will be truncated.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\RejectEntitlementRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
+    class Google_Service_CloudCommercePartnerProcurementService_RejectEntitlementRequest extends \Google\Service\CloudCommercePartnerProcurementService\RejectEntitlementRequest
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistContentDetails extends \Google\Model
-{
-    /**
-     * The number of videos in the playlist.
-     *
-     * @var string
-     */
-    public $itemCount;
-    /**
-     * The number of videos in the playlist.
-     *
-     * @param string $itemCount
-     */
-    public function setItemCount($itemCount)
+namespace Google\Service\YouTube {
+    class PlaylistContentDetails extends \Google\Model
     {
+        /**
+         * The number of videos in the playlist.
+         *
+         * @var string
+         */
+        public $itemCount;
+        /**
+         * The number of videos in the playlist.
+         *
+         * @param string $itemCount
+         */
+        public function setItemCount($itemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\PlaylistContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemCount()
+    class Google_Service_YouTube_PlaylistContentDetails extends \Google\Service\YouTube\PlaylistContentDetails
     {
     }
 }

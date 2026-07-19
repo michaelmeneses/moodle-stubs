@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2SubmitBuildResponse extends \Google\Model
-{
-    /**
-     * URI of the base builder image in Artifact Registry being used in the build.
-     * Used to opt into automatic base image updates.
-     *
-     * @var string
-     */
-    public $baseImageUri;
-    /**
-     * Warning message for the base image.
-     *
-     * @var string
-     */
-    public $baseImageWarning;
-    protected $buildOperationType = GoogleLongrunningOperation::class;
-    protected $buildOperationDataType = '';
-    /**
-     * URI of the base builder image in Artifact Registry being used in the build.
-     * Used to opt into automatic base image updates.
-     *
-     * @param string $baseImageUri
-     */
-    public function setBaseImageUri($baseImageUri)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2SubmitBuildResponse extends \Google\Model
     {
+        /**
+         * URI of the base builder image in Artifact Registry being used in the build.
+         * Used to opt into automatic base image updates.
+         *
+         * @var string
+         */
+        public $baseImageUri;
+        /**
+         * Warning message for the base image.
+         *
+         * @var string
+         */
+        public $baseImageWarning;
+        protected $buildOperationType = GoogleLongrunningOperation::class;
+        protected $buildOperationDataType = '';
+        /**
+         * URI of the base builder image in Artifact Registry being used in the build.
+         * Used to opt into automatic base image updates.
+         *
+         * @param string $baseImageUri
+         */
+        public function setBaseImageUri($baseImageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseImageUri()
+        {
+        }
+        /**
+         * Warning message for the base image.
+         *
+         * @param string $baseImageWarning
+         */
+        public function setBaseImageWarning($baseImageWarning)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseImageWarning()
+        {
+        }
+        /**
+         * Cloud Build operation to be polled via CloudBuild API.
+         *
+         * @param GoogleLongrunningOperation $buildOperation
+         */
+        public function setBuildOperation(GoogleLongrunningOperation $buildOperation)
+        {
+        }
+        /**
+         * @return GoogleLongrunningOperation
+         */
+        public function getBuildOperation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2SubmitBuildResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseImageUri()
-    {
-    }
-    /**
-     * Warning message for the base image.
-     *
-     * @param string $baseImageWarning
-     */
-    public function setBaseImageWarning($baseImageWarning)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBaseImageWarning()
-    {
-    }
-    /**
-     * Cloud Build operation to be polled via CloudBuild API.
-     *
-     * @param GoogleLongrunningOperation $buildOperation
-     */
-    public function setBuildOperation(GoogleLongrunningOperation $buildOperation)
-    {
-    }
-    /**
-     * @return GoogleLongrunningOperation
-     */
-    public function getBuildOperation()
+    class Google_Service_CloudRun_GoogleCloudRunV2SubmitBuildResponse extends \Google\Service\CloudRun\GoogleCloudRunV2SubmitBuildResponse
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class PartitionConfig extends \Google\Model
-{
-    protected $capacityType = Capacity::class;
-    protected $capacityDataType = '';
-    /**
-     * The number of partitions in the topic. Must be at least 1. Once a topic has
-     * been created the number of partitions can be increased but not decreased.
-     * Message ordering is not guaranteed across a topic resize. For more
-     * information see
-     * https://cloud.google.com/pubsub/lite/docs/topics#scaling_capacity
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * DEPRECATED: Use capacity instead which can express a superset of
-     * configurations. Every partition in the topic is allocated throughput
-     * equivalent to `scale` times the standard partition throughput (4 MiB/s).
-     * This is also reflected in the cost of this topic; a topic with `scale` of 2
-     * and count of 10 is charged for 20 partitions. This value must be in the
-     * range [1,4].
-     *
-     * @deprecated
-     * @var int
-     */
-    public $scale;
-    /**
-     * The capacity configuration.
-     *
-     * @param Capacity $capacity
-     */
-    public function setCapacity(Capacity $capacity)
+namespace Google\Service\PubsubLite {
+    class PartitionConfig extends \Google\Model
     {
+        protected $capacityType = Capacity::class;
+        protected $capacityDataType = '';
+        /**
+         * The number of partitions in the topic. Must be at least 1. Once a topic has
+         * been created the number of partitions can be increased but not decreased.
+         * Message ordering is not guaranteed across a topic resize. For more
+         * information see
+         * https://cloud.google.com/pubsub/lite/docs/topics#scaling_capacity
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * DEPRECATED: Use capacity instead which can express a superset of
+         * configurations. Every partition in the topic is allocated throughput
+         * equivalent to `scale` times the standard partition throughput (4 MiB/s).
+         * This is also reflected in the cost of this topic; a topic with `scale` of 2
+         * and count of 10 is charged for 20 partitions. This value must be in the
+         * range [1,4].
+         *
+         * @deprecated
+         * @var int
+         */
+        public $scale;
+        /**
+         * The capacity configuration.
+         *
+         * @param Capacity $capacity
+         */
+        public function setCapacity(Capacity $capacity)
+        {
+        }
+        /**
+         * @return Capacity
+         */
+        public function getCapacity()
+        {
+        }
+        /**
+         * The number of partitions in the topic. Must be at least 1. Once a topic has
+         * been created the number of partitions can be increased but not decreased.
+         * Message ordering is not guaranteed across a topic resize. For more
+         * information see
+         * https://cloud.google.com/pubsub/lite/docs/topics#scaling_capacity
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * DEPRECATED: Use capacity instead which can express a superset of
+         * configurations. Every partition in the topic is allocated throughput
+         * equivalent to `scale` times the standard partition throughput (4 MiB/s).
+         * This is also reflected in the cost of this topic; a topic with `scale` of 2
+         * and count of 10 is charged for 20 partitions. This value must be in the
+         * range [1,4].
+         *
+         * @deprecated
+         * @param int $scale
+         */
+        public function setScale($scale)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getScale()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Capacity
+     * Runtime class alias of \Google\Service\PubsubLite\PartitionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacity()
-    {
-    }
-    /**
-     * The number of partitions in the topic. Must be at least 1. Once a topic has
-     * been created the number of partitions can be increased but not decreased.
-     * Message ordering is not guaranteed across a topic resize. For more
-     * information see
-     * https://cloud.google.com/pubsub/lite/docs/topics#scaling_capacity
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * DEPRECATED: Use capacity instead which can express a superset of
-     * configurations. Every partition in the topic is allocated throughput
-     * equivalent to `scale` times the standard partition throughput (4 MiB/s).
-     * This is also reflected in the cost of this topic; a topic with `scale` of 2
-     * and count of 10 is charged for 20 partitions. This value must be in the
-     * range [1,4].
-     *
-     * @deprecated
-     * @param int $scale
-     */
-    public function setScale($scale)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getScale()
+    class Google_Service_PubsubLite_PartitionConfig extends \Google\Service\PubsubLite\PartitionConfig
     {
     }
 }

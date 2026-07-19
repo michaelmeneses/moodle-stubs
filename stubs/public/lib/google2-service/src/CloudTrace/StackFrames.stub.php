@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class StackFrames extends \Google\Collection
-{
-    protected $collection_key = 'frame';
-    /**
-     * The number of stack frames that were dropped because there were too many
-     * stack frames. If this value is 0, then no stack frames were dropped.
-     *
-     * @var int
-     */
-    public $droppedFramesCount;
-    protected $frameType = StackFrame::class;
-    protected $frameDataType = 'array';
-    /**
-     * The number of stack frames that were dropped because there were too many
-     * stack frames. If this value is 0, then no stack frames were dropped.
-     *
-     * @param int $droppedFramesCount
-     */
-    public function setDroppedFramesCount($droppedFramesCount)
+namespace Google\Service\CloudTrace {
+    class StackFrames extends \Google\Collection
     {
+        protected $collection_key = 'frame';
+        /**
+         * The number of stack frames that were dropped because there were too many
+         * stack frames. If this value is 0, then no stack frames were dropped.
+         *
+         * @var int
+         */
+        public $droppedFramesCount;
+        protected $frameType = StackFrame::class;
+        protected $frameDataType = 'array';
+        /**
+         * The number of stack frames that were dropped because there were too many
+         * stack frames. If this value is 0, then no stack frames were dropped.
+         *
+         * @param int $droppedFramesCount
+         */
+        public function setDroppedFramesCount($droppedFramesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDroppedFramesCount()
+        {
+        }
+        /**
+         * Stack frames in this call stack.
+         *
+         * @param StackFrame[] $frame
+         */
+        public function setFrame($frame)
+        {
+        }
+        /**
+         * @return StackFrame[]
+         */
+        public function getFrame()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudTrace\StackFrames registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDroppedFramesCount()
-    {
-    }
-    /**
-     * Stack frames in this call stack.
-     *
-     * @param StackFrame[] $frame
-     */
-    public function setFrame($frame)
-    {
-    }
-    /**
-     * @return StackFrame[]
-     */
-    public function getFrame()
+    class Google_Service_CloudTrace_StackFrames extends \Google\Service\CloudTrace\StackFrames
     {
     }
 }

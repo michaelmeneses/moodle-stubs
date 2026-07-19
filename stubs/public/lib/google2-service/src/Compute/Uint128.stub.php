@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Uint128 extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $high;
-    /**
-     * @var string
-     */
-    public $low;
-    /**
-     * @param string $high
-     */
-    public function setHigh($high)
+namespace Google\Service\Compute {
+    class Uint128 extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $high;
+        /**
+         * @var string
+         */
+        public $low;
+        /**
+         * @param string $high
+         */
+        public function setHigh($high)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * @param string $low
+         */
+        public function setLow($low)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\Uint128 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHigh()
-    {
-    }
-    /**
-     * @param string $low
-     */
-    public function setLow($low)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLow()
+    class Google_Service_Compute_Uint128 extends \Google\Service\Compute\Uint128
     {
     }
 }

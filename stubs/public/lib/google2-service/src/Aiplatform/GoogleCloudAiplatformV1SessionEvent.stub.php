@@ -21,182 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SessionEvent extends \Google\Model
-{
-    protected $actionsType = GoogleCloudAiplatformV1EventActions::class;
-    protected $actionsDataType = '';
-    /**
-     * Required. The name of the agent that sent the event, or user.
-     *
-     * @var string
-     */
-    public $author;
-    protected $contentType = GoogleCloudAiplatformV1Content::class;
-    protected $contentDataType = '';
-    /**
-     * Optional. Error code if the response is an error. Code varies by model.
-     *
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * Optional. Error message if the response is an error.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    protected $eventMetadataType = GoogleCloudAiplatformV1EventMetadata::class;
-    protected $eventMetadataDataType = '';
-    /**
-     * Required. The invocation id of the event, multiple events can have the same
-     * invocation id.
-     *
-     * @var string
-     */
-    public $invocationId;
-    /**
-     * Identifier. The resource name of the event. Format:`projects/{project}/loca
-     * tions/{location}/reasoningEngines/{reasoning_engine}/sessions/{session}/eve
-     * nts/{event}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Timestamp when the event was created on client side.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Optional. Actions executed by the agent.
-     *
-     * @param GoogleCloudAiplatformV1EventActions $actions
-     */
-    public function setActions(GoogleCloudAiplatformV1EventActions $actions)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SessionEvent extends \Google\Model
     {
+        protected $actionsType = GoogleCloudAiplatformV1EventActions::class;
+        protected $actionsDataType = '';
+        /**
+         * Required. The name of the agent that sent the event, or user.
+         *
+         * @var string
+         */
+        public $author;
+        protected $contentType = GoogleCloudAiplatformV1Content::class;
+        protected $contentDataType = '';
+        /**
+         * Optional. Error code if the response is an error. Code varies by model.
+         *
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * Optional. Error message if the response is an error.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        protected $eventMetadataType = GoogleCloudAiplatformV1EventMetadata::class;
+        protected $eventMetadataDataType = '';
+        /**
+         * Required. The invocation id of the event, multiple events can have the same
+         * invocation id.
+         *
+         * @var string
+         */
+        public $invocationId;
+        /**
+         * Identifier. The resource name of the event. Format:`projects/{project}/loca
+         * tions/{location}/reasoningEngines/{reasoning_engine}/sessions/{session}/eve
+         * nts/{event}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Timestamp when the event was created on client side.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Optional. Actions executed by the agent.
+         *
+         * @param GoogleCloudAiplatformV1EventActions $actions
+         */
+        public function setActions(GoogleCloudAiplatformV1EventActions $actions)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EventActions
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Required. The name of the agent that sent the event, or user.
+         *
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Optional. Content of the event provided by the author.
+         *
+         * @param GoogleCloudAiplatformV1Content $content
+         */
+        public function setContent(GoogleCloudAiplatformV1Content $content)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Optional. Error code if the response is an error. Code varies by model.
+         *
+         * @param string $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * Optional. Error message if the response is an error.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Optional. Metadata relating to this event.
+         *
+         * @param GoogleCloudAiplatformV1EventMetadata $eventMetadata
+         */
+        public function setEventMetadata(GoogleCloudAiplatformV1EventMetadata $eventMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EventMetadata
+         */
+        public function getEventMetadata()
+        {
+        }
+        /**
+         * Required. The invocation id of the event, multiple events can have the same
+         * invocation id.
+         *
+         * @param string $invocationId
+         */
+        public function setInvocationId($invocationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvocationId()
+        {
+        }
+        /**
+         * Identifier. The resource name of the event. Format:`projects/{project}/loca
+         * tions/{location}/reasoningEngines/{reasoning_engine}/sessions/{session}/eve
+         * nts/{event}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Timestamp when the event was created on client side.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EventActions
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SessionEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Required. The name of the agent that sent the event, or user.
-     *
-     * @param string $author
-     */
-    public function setAuthor($author)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Optional. Content of the event provided by the author.
-     *
-     * @param GoogleCloudAiplatformV1Content $content
-     */
-    public function setContent(GoogleCloudAiplatformV1Content $content)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Content
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Optional. Error code if the response is an error. Code varies by model.
-     *
-     * @param string $errorCode
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * Optional. Error message if the response is an error.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Optional. Metadata relating to this event.
-     *
-     * @param GoogleCloudAiplatformV1EventMetadata $eventMetadata
-     */
-    public function setEventMetadata(GoogleCloudAiplatformV1EventMetadata $eventMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EventMetadata
-     */
-    public function getEventMetadata()
-    {
-    }
-    /**
-     * Required. The invocation id of the event, multiple events can have the same
-     * invocation id.
-     *
-     * @param string $invocationId
-     */
-    public function setInvocationId($invocationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvocationId()
-    {
-    }
-    /**
-     * Identifier. The resource name of the event. Format:`projects/{project}/loca
-     * tions/{location}/reasoningEngines/{reasoning_engine}/sessions/{session}/eve
-     * nts/{event}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Timestamp when the event was created on client side.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SessionEvent extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SessionEvent
     {
     }
 }

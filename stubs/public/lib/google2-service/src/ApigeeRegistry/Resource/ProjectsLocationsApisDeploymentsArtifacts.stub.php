@@ -21,113 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry\Resource;
-
-/**
- * The "artifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeregistryService = new Google\Service\ApigeeRegistry(...);
- *   $artifacts = $apigeeregistryService->projects_locations_apis_deployments_artifacts;
- *  </code>
- */
-class ProjectsLocationsApisDeploymentsArtifacts extends \Google\Service\Resource
-{
+namespace Google\Service\ApigeeRegistry\Resource {
+    use Google\Service\ApigeeRegistry\ApigeeregistryEmpty;
+    use Google\Service\ApigeeRegistry\Artifact;
+    use Google\Service\ApigeeRegistry\HttpBody;
+    use Google\Service\ApigeeRegistry\ListArtifactsResponse;
     /**
-     * Creates a specified artifact. (artifacts.create)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * artifacts. Format: `{parent}`
-     * @param Artifact $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string artifactId Required. The ID to use for the artifact, which
-     * will become the final component of the artifact's resource name. This value
-     * should be 4-63 characters, and valid characters are /a-z-/. Following
-     * AIP-162, IDs must not have the form of a UUID.
-     * @return Artifact
-     * @throws \Google\Service\Exception
+     * The "artifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeregistryService = new Google\Service\ApigeeRegistry(...);
+     *   $artifacts = $apigeeregistryService->projects_locations_apis_deployments_artifacts;
+     *  </code>
      */
-    public function create($parent, Artifact $postBody, $optParams = [])
+    class ProjectsLocationsApisDeploymentsArtifacts extends \Google\Service\Resource
     {
+        /**
+         * Creates a specified artifact. (artifacts.create)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * artifacts. Format: `{parent}`
+         * @param Artifact $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string artifactId Required. The ID to use for the artifact, which
+         * will become the final component of the artifact's resource name. This value
+         * should be 4-63 characters, and valid characters are /a-z-/. Following
+         * AIP-162, IDs must not have the form of a UUID.
+         * @return Artifact
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Artifact $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes a specified artifact. (artifacts.delete)
+         *
+         * @param string $name Required. The name of the artifact to delete. Format:
+         * `{parent}/artifacts`
+         * @param array $optParams Optional parameters.
+         * @return ApigeeregistryEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a specified artifact. (artifacts.get)
+         *
+         * @param string $name Required. The name of the artifact to retrieve. Format:
+         * `{parent}/artifacts`
+         * @param array $optParams Optional parameters.
+         * @return Artifact
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the contents of a specified artifact. If artifacts are stored with
+         * GZip compression, the default behavior is to return the artifact uncompressed
+         * (the mime_type response field indicates the exact format returned).
+         * (artifacts.getContents)
+         *
+         * @param string $name Required. The name of the artifact whose contents should
+         * be retrieved. Format: `{parent}/artifacts`
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function getContents($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns matching artifacts.
+         * (artifacts.listProjectsLocationsApisDeploymentsArtifacts)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * artifacts. Format: `{parent}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter An expression that can be used to filter the list.
+         * Filters use the Common Expression Language and can refer to all message
+         * fields except contents.
+         * @opt_param string orderBy A comma-separated list of fields, e.g. "foo,bar"
+         * Fields can be sorted in descending order using the "desc" identifier, e.g.
+         * "foo desc,bar"
+         * @opt_param int pageSize The maximum number of artifacts to return. The
+         * service may return fewer than this value. If unspecified, at most 50 values
+         * will be returned. The maximum is 1000; values above 1000 will be coerced to
+         * 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListArtifacts` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListArtifacts` must match the
+         * call that provided the page token.
+         * @return ListArtifactsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsApisDeploymentsArtifacts($parent, $optParams = [])
+        {
+        }
+        /**
+         * Used to replace a specified artifact. (artifacts.replaceArtifact)
+         *
+         * @param string $name Resource name.
+         * @param Artifact $postBody
+         * @param array $optParams Optional parameters.
+         * @return Artifact
+         * @throws \Google\Service\Exception
+         */
+        public function replaceArtifact($name, Artifact $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes a specified artifact. (artifacts.delete)
-     *
-     * @param string $name Required. The name of the artifact to delete. Format:
-     * `{parent}/artifacts`
-     * @param array $optParams Optional parameters.
-     * @return ApigeeregistryEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ApigeeRegistry\Resource\ProjectsLocationsApisDeploymentsArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns a specified artifact. (artifacts.get)
-     *
-     * @param string $name Required. The name of the artifact to retrieve. Format:
-     * `{parent}/artifacts`
-     * @param array $optParams Optional parameters.
-     * @return Artifact
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the contents of a specified artifact. If artifacts are stored with
-     * GZip compression, the default behavior is to return the artifact uncompressed
-     * (the mime_type response field indicates the exact format returned).
-     * (artifacts.getContents)
-     *
-     * @param string $name Required. The name of the artifact whose contents should
-     * be retrieved. Format: `{parent}/artifacts`
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function getContents($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns matching artifacts.
-     * (artifacts.listProjectsLocationsApisDeploymentsArtifacts)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * artifacts. Format: `{parent}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter An expression that can be used to filter the list.
-     * Filters use the Common Expression Language and can refer to all message
-     * fields except contents.
-     * @opt_param string orderBy A comma-separated list of fields, e.g. "foo,bar"
-     * Fields can be sorted in descending order using the "desc" identifier, e.g.
-     * "foo desc,bar"
-     * @opt_param int pageSize The maximum number of artifacts to return. The
-     * service may return fewer than this value. If unspecified, at most 50 values
-     * will be returned. The maximum is 1000; values above 1000 will be coerced to
-     * 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListArtifacts` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListArtifacts` must match the
-     * call that provided the page token.
-     * @return ListArtifactsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsApisDeploymentsArtifacts($parent, $optParams = [])
-    {
-    }
-    /**
-     * Used to replace a specified artifact. (artifacts.replaceArtifact)
-     *
-     * @param string $name Resource name.
-     * @param Artifact $postBody
-     * @param array $optParams Optional parameters.
-     * @return Artifact
-     * @throws \Google\Service\Exception
-     */
-    public function replaceArtifact($name, Artifact $postBody, $optParams = [])
+    class Google_Service_ApigeeRegistry_Resource_ProjectsLocationsApisDeploymentsArtifacts extends \Google\Service\ApigeeRegistry\Resource\ProjectsLocationsApisDeploymentsArtifacts
     {
     }
 }

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace availability_grade;
 
+use grade_helper;
+use core\output\html_writer;
 /**
  * Condition on grades of current user.
  *

@@ -21,271 +21,280 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Query extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Delimiter used in the CSV file, if `outputFormat` is set to `csv`. Defaults
-     * to the `,` (comma) character. Supported delimiter characters include comma
-     * (`,`), pipe (`|`), and tab (`\t`).
-     *
-     * @var string
-     */
-    public $csvDelimiter;
-    /**
-     * A list of dimensions. https://docs.apigee.com/api-
-     * platform/analytics/analytics-reference#dimensions
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * Hostname needs to be specified if query intends to run at host level. This
-     * field is only allowed when query is submitted by CreateHostAsyncQuery where
-     * analytics data will be grouped by organization and hostname.
-     *
-     * @var string
-     */
-    public $envgroupHostname;
-    /**
-     * Boolean expression that can be used to filter data. Filter expressions can
-     * be combined using AND/OR terms and should be fully parenthesized to avoid
-     * ambiguity. See Analytics metrics, dimensions, and filters reference
-     * https://docs.apigee.com/api-platform/analytics/analytics-reference for more
-     * information on the fields available to filter on. For more information on
-     * the tokens that you use to build filter expressions, see Filter expression
-     * syntax. https://docs.apigee.com/api-platform/analytics/asynch-reports-
-     * api#filter-expression-syntax
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Time unit used to group the result set. Valid values include: second,
-     * minute, hour, day, week, or month. If a query includes groupByTimeUnit,
-     * then the result is an aggregation based on the specified time unit and the
-     * resultant timestamp does not include milliseconds precision. If a query
-     * omits groupByTimeUnit, then the resultant timestamp includes milliseconds
-     * precision.
-     *
-     * @var string
-     */
-    public $groupByTimeUnit;
-    /**
-     * Maximum number of rows that can be returned in the result.
-     *
-     * @var int
-     */
-    public $limit;
-    protected $metricsType = GoogleCloudApigeeV1QueryMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Asynchronous Query Name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Valid values include: `csv` or `json`. Defaults to `json`. Note: Configure
-     * the delimiter for CSV output using the csvDelimiter property.
-     *
-     * @var string
-     */
-    public $outputFormat;
-    /**
-     * Asynchronous Report ID.
-     *
-     * @var string
-     */
-    public $reportDefinitionId;
-    /**
-     * Required. Time range for the query. Can use the following predefined
-     * strings to specify the time range: `last60minutes` `last24hours`
-     * `last7days` Or, specify the timeRange as a structure describing start and
-     * end timestamps in the ISO format: yyyy-mm-ddThh:mm:ssZ. Example:
-     * "timeRange": { "start": "2018-07-29T00:13:00Z", "end":
-     * "2018-08-01T00:18:00Z" }
-     *
-     * @var array
-     */
-    public $timeRange;
-    /**
-     * Delimiter used in the CSV file, if `outputFormat` is set to `csv`. Defaults
-     * to the `,` (comma) character. Supported delimiter characters include comma
-     * (`,`), pipe (`|`), and tab (`\t`).
-     *
-     * @param string $csvDelimiter
-     */
-    public function setCsvDelimiter($csvDelimiter)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Query extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Delimiter used in the CSV file, if `outputFormat` is set to `csv`. Defaults
+         * to the `,` (comma) character. Supported delimiter characters include comma
+         * (`,`), pipe (`|`), and tab (`\t`).
+         *
+         * @var string
+         */
+        public $csvDelimiter;
+        /**
+         * A list of dimensions. https://docs.apigee.com/api-
+         * platform/analytics/analytics-reference#dimensions
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * Hostname needs to be specified if query intends to run at host level. This
+         * field is only allowed when query is submitted by CreateHostAsyncQuery where
+         * analytics data will be grouped by organization and hostname.
+         *
+         * @var string
+         */
+        public $envgroupHostname;
+        /**
+         * Boolean expression that can be used to filter data. Filter expressions can
+         * be combined using AND/OR terms and should be fully parenthesized to avoid
+         * ambiguity. See Analytics metrics, dimensions, and filters reference
+         * https://docs.apigee.com/api-platform/analytics/analytics-reference for more
+         * information on the fields available to filter on. For more information on
+         * the tokens that you use to build filter expressions, see Filter expression
+         * syntax. https://docs.apigee.com/api-platform/analytics/asynch-reports-
+         * api#filter-expression-syntax
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Time unit used to group the result set. Valid values include: second,
+         * minute, hour, day, week, or month. If a query includes groupByTimeUnit,
+         * then the result is an aggregation based on the specified time unit and the
+         * resultant timestamp does not include milliseconds precision. If a query
+         * omits groupByTimeUnit, then the resultant timestamp includes milliseconds
+         * precision.
+         *
+         * @var string
+         */
+        public $groupByTimeUnit;
+        /**
+         * Maximum number of rows that can be returned in the result.
+         *
+         * @var int
+         */
+        public $limit;
+        protected $metricsType = GoogleCloudApigeeV1QueryMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Asynchronous Query Name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Valid values include: `csv` or `json`. Defaults to `json`. Note: Configure
+         * the delimiter for CSV output using the csvDelimiter property.
+         *
+         * @var string
+         */
+        public $outputFormat;
+        /**
+         * Asynchronous Report ID.
+         *
+         * @var string
+         */
+        public $reportDefinitionId;
+        /**
+         * Required. Time range for the query. Can use the following predefined
+         * strings to specify the time range: `last60minutes` `last24hours`
+         * `last7days` Or, specify the timeRange as a structure describing start and
+         * end timestamps in the ISO format: yyyy-mm-ddThh:mm:ssZ. Example:
+         * "timeRange": { "start": "2018-07-29T00:13:00Z", "end":
+         * "2018-08-01T00:18:00Z" }
+         *
+         * @var array
+         */
+        public $timeRange;
+        /**
+         * Delimiter used in the CSV file, if `outputFormat` is set to `csv`. Defaults
+         * to the `,` (comma) character. Supported delimiter characters include comma
+         * (`,`), pipe (`|`), and tab (`\t`).
+         *
+         * @param string $csvDelimiter
+         */
+        public function setCsvDelimiter($csvDelimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCsvDelimiter()
+        {
+        }
+        /**
+         * A list of dimensions. https://docs.apigee.com/api-
+         * platform/analytics/analytics-reference#dimensions
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Hostname needs to be specified if query intends to run at host level. This
+         * field is only allowed when query is submitted by CreateHostAsyncQuery where
+         * analytics data will be grouped by organization and hostname.
+         *
+         * @param string $envgroupHostname
+         */
+        public function setEnvgroupHostname($envgroupHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvgroupHostname()
+        {
+        }
+        /**
+         * Boolean expression that can be used to filter data. Filter expressions can
+         * be combined using AND/OR terms and should be fully parenthesized to avoid
+         * ambiguity. See Analytics metrics, dimensions, and filters reference
+         * https://docs.apigee.com/api-platform/analytics/analytics-reference for more
+         * information on the fields available to filter on. For more information on
+         * the tokens that you use to build filter expressions, see Filter expression
+         * syntax. https://docs.apigee.com/api-platform/analytics/asynch-reports-
+         * api#filter-expression-syntax
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Time unit used to group the result set. Valid values include: second,
+         * minute, hour, day, week, or month. If a query includes groupByTimeUnit,
+         * then the result is an aggregation based on the specified time unit and the
+         * resultant timestamp does not include milliseconds precision. If a query
+         * omits groupByTimeUnit, then the resultant timestamp includes milliseconds
+         * precision.
+         *
+         * @param string $groupByTimeUnit
+         */
+        public function setGroupByTimeUnit($groupByTimeUnit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupByTimeUnit()
+        {
+        }
+        /**
+         * Maximum number of rows that can be returned in the result.
+         *
+         * @param int $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * A list of Metrics.
+         *
+         * @param GoogleCloudApigeeV1QueryMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1QueryMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Asynchronous Query Name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Valid values include: `csv` or `json`. Defaults to `json`. Note: Configure
+         * the delimiter for CSV output using the csvDelimiter property.
+         *
+         * @param string $outputFormat
+         */
+        public function setOutputFormat($outputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputFormat()
+        {
+        }
+        /**
+         * Asynchronous Report ID.
+         *
+         * @param string $reportDefinitionId
+         */
+        public function setReportDefinitionId($reportDefinitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportDefinitionId()
+        {
+        }
+        /**
+         * Required. Time range for the query. Can use the following predefined
+         * strings to specify the time range: `last60minutes` `last24hours`
+         * `last7days` Or, specify the timeRange as a structure describing start and
+         * end timestamps in the ISO format: yyyy-mm-ddThh:mm:ssZ. Example:
+         * "timeRange": { "start": "2018-07-29T00:13:00Z", "end":
+         * "2018-08-01T00:18:00Z" }
+         *
+         * @param array $timeRange
+         */
+        public function setTimeRange($timeRange)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Query registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvDelimiter()
-    {
-    }
-    /**
-     * A list of dimensions. https://docs.apigee.com/api-
-     * platform/analytics/analytics-reference#dimensions
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Hostname needs to be specified if query intends to run at host level. This
-     * field is only allowed when query is submitted by CreateHostAsyncQuery where
-     * analytics data will be grouped by organization and hostname.
-     *
-     * @param string $envgroupHostname
-     */
-    public function setEnvgroupHostname($envgroupHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvgroupHostname()
-    {
-    }
-    /**
-     * Boolean expression that can be used to filter data. Filter expressions can
-     * be combined using AND/OR terms and should be fully parenthesized to avoid
-     * ambiguity. See Analytics metrics, dimensions, and filters reference
-     * https://docs.apigee.com/api-platform/analytics/analytics-reference for more
-     * information on the fields available to filter on. For more information on
-     * the tokens that you use to build filter expressions, see Filter expression
-     * syntax. https://docs.apigee.com/api-platform/analytics/asynch-reports-
-     * api#filter-expression-syntax
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Time unit used to group the result set. Valid values include: second,
-     * minute, hour, day, week, or month. If a query includes groupByTimeUnit,
-     * then the result is an aggregation based on the specified time unit and the
-     * resultant timestamp does not include milliseconds precision. If a query
-     * omits groupByTimeUnit, then the resultant timestamp includes milliseconds
-     * precision.
-     *
-     * @param string $groupByTimeUnit
-     */
-    public function setGroupByTimeUnit($groupByTimeUnit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupByTimeUnit()
-    {
-    }
-    /**
-     * Maximum number of rows that can be returned in the result.
-     *
-     * @param int $limit
-     */
-    public function setLimit($limit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLimit()
-    {
-    }
-    /**
-     * A list of Metrics.
-     *
-     * @param GoogleCloudApigeeV1QueryMetric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1QueryMetric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Asynchronous Query Name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Valid values include: `csv` or `json`. Defaults to `json`. Note: Configure
-     * the delimiter for CSV output using the csvDelimiter property.
-     *
-     * @param string $outputFormat
-     */
-    public function setOutputFormat($outputFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputFormat()
-    {
-    }
-    /**
-     * Asynchronous Report ID.
-     *
-     * @param string $reportDefinitionId
-     */
-    public function setReportDefinitionId($reportDefinitionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportDefinitionId()
-    {
-    }
-    /**
-     * Required. Time range for the query. Can use the following predefined
-     * strings to specify the time range: `last60minutes` `last24hours`
-     * `last7days` Or, specify the timeRange as a structure describing start and
-     * end timestamps in the ISO format: yyyy-mm-ddThh:mm:ssZ. Example:
-     * "timeRange": { "start": "2018-07-29T00:13:00Z", "end":
-     * "2018-08-01T00:18:00Z" }
-     *
-     * @param array $timeRange
-     */
-    public function setTimeRange($timeRange)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getTimeRange()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Query extends \Google\Service\Apigee\GoogleCloudApigeeV1Query
     {
     }
 }

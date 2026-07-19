@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseDeploymentDetailsAggregatedStats extends \Google\Model
-{
-    /**
-     * Output only. The number of databases in the deployment.
-     *
-     * @var int
-     */
-    public $databaseCount;
-    /**
-     * Output only. The number of databases in the deployment.
-     *
-     * @param int $databaseCount
-     */
-    public function setDatabaseCount($databaseCount)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseDeploymentDetailsAggregatedStats extends \Google\Model
     {
+        /**
+         * Output only. The number of databases in the deployment.
+         *
+         * @var int
+         */
+        public $databaseCount;
+        /**
+         * Output only. The number of databases in the deployment.
+         *
+         * @param int $databaseCount
+         */
+        public function setDatabaseCount($databaseCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDatabaseCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseDeploymentDetailsAggregatedStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseCount()
+    class Google_Service_MigrationCenterAPI_DatabaseDeploymentDetailsAggregatedStats extends \Google\Service\MigrationCenterAPI\DatabaseDeploymentDetailsAggregatedStats
     {
     }
 }

@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class GameServerDeploymentRollout extends \Google\Collection
-{
-    protected $collection_key = 'gameServerConfigOverrides';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $defaultGameServerConfig;
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $gameServerConfigOverridesType = GameServerConfigOverride::class;
-    protected $gameServerConfigOverridesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GameServices {
+    class GameServerDeploymentRollout extends \Google\Collection
     {
+        protected $collection_key = 'gameServerConfigOverrides';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $defaultGameServerConfig;
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $gameServerConfigOverridesType = GameServerConfigOverride::class;
+        protected $gameServerConfigOverridesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDefaultGameServerConfig($defaultGameServerConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultGameServerConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param GameServerConfigOverride[]
+         */
+        public function setGameServerConfigOverrides($gameServerConfigOverrides)
+        {
+        }
+        /**
+         * @return GameServerConfigOverride[]
+         */
+        public function getGameServerConfigOverrides()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\GameServerDeploymentRollout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDefaultGameServerConfig($defaultGameServerConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultGameServerConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param GameServerConfigOverride[]
-     */
-    public function setGameServerConfigOverrides($gameServerConfigOverrides)
-    {
-    }
-    /**
-     * @return GameServerConfigOverride[]
-     */
-    public function getGameServerConfigOverrides()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GameServices_GameServerDeploymentRollout extends \Google\Service\GameServices\GameServerDeploymentRollout
     {
     }
 }

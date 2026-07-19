@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class GoogleCloudOsconfigV2OrchestrationScopeSelector extends \Google\Model
-{
-    protected $locationSelectorType = GoogleCloudOsconfigV2OrchestrationScopeLocationSelector::class;
-    protected $locationSelectorDataType = '';
-    protected $resourceHierarchySelectorType = GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector::class;
-    protected $resourceHierarchySelectorDataType = '';
-    /**
-     * Selector for selecting locations.
-     *
-     * @param GoogleCloudOsconfigV2OrchestrationScopeLocationSelector $locationSelector
-     */
-    public function setLocationSelector(GoogleCloudOsconfigV2OrchestrationScopeLocationSelector $locationSelector)
+namespace Google\Service\OSConfig {
+    class GoogleCloudOsconfigV2OrchestrationScopeSelector extends \Google\Model
     {
+        protected $locationSelectorType = GoogleCloudOsconfigV2OrchestrationScopeLocationSelector::class;
+        protected $locationSelectorDataType = '';
+        protected $resourceHierarchySelectorType = GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector::class;
+        protected $resourceHierarchySelectorDataType = '';
+        /**
+         * Selector for selecting locations.
+         *
+         * @param GoogleCloudOsconfigV2OrchestrationScopeLocationSelector $locationSelector
+         */
+        public function setLocationSelector(GoogleCloudOsconfigV2OrchestrationScopeLocationSelector $locationSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudOsconfigV2OrchestrationScopeLocationSelector
+         */
+        public function getLocationSelector()
+        {
+        }
+        /**
+         * Selector for selecting resource hierarchy.
+         *
+         * @param GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector $resourceHierarchySelector
+         */
+        public function setResourceHierarchySelector(GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector $resourceHierarchySelector)
+        {
+        }
+        /**
+         * @return GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector
+         */
+        public function getResourceHierarchySelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOsconfigV2OrchestrationScopeLocationSelector
+     * Runtime class alias of \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScopeSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationSelector()
-    {
-    }
-    /**
-     * Selector for selecting resource hierarchy.
-     *
-     * @param GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector $resourceHierarchySelector
-     */
-    public function setResourceHierarchySelector(GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector $resourceHierarchySelector)
-    {
-    }
-    /**
-     * @return GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector
-     */
-    public function getResourceHierarchySelector()
+    class Google_Service_OSConfig_GoogleCloudOsconfigV2OrchestrationScopeSelector extends \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScopeSelector
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class BatchCreateResourceValueConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'resourceValueConfigs';
-    protected $resourceValueConfigsType = GoogleCloudSecuritycenterV1ResourceValueConfig::class;
-    protected $resourceValueConfigsDataType = 'array';
-    /**
-     * The resource value configs created
-     *
-     * @param GoogleCloudSecuritycenterV1ResourceValueConfig[] $resourceValueConfigs
-     */
-    public function setResourceValueConfigs($resourceValueConfigs)
+namespace Google\Service\SecurityCommandCenter {
+    class BatchCreateResourceValueConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'resourceValueConfigs';
+        protected $resourceValueConfigsType = GoogleCloudSecuritycenterV1ResourceValueConfig::class;
+        protected $resourceValueConfigsDataType = 'array';
+        /**
+         * The resource value configs created
+         *
+         * @param GoogleCloudSecuritycenterV1ResourceValueConfig[] $resourceValueConfigs
+         */
+        public function setResourceValueConfigs($resourceValueConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1ResourceValueConfig[]
+         */
+        public function getResourceValueConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV1ResourceValueConfig[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\BatchCreateResourceValueConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceValueConfigs()
+    class Google_Service_SecurityCommandCenter_BatchCreateResourceValueConfigsResponse extends \Google\Service\SecurityCommandCenter\BatchCreateResourceValueConfigsResponse
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class TypesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    /**
-     * A token used to continue a truncated list request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $typesType = Type::class;
-    protected $typesDataType = 'array';
-    /**
-     * A token used to continue a truncated list request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DeploymentManager {
+    class TypesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'types';
+        /**
+         * A token used to continue a truncated list request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $typesType = Type::class;
+        protected $typesDataType = 'array';
+        /**
+         * A token used to continue a truncated list request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. A list of resource types supported by Deployment Manager.
+         *
+         * @param Type[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return Type[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\TypesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. A list of resource types supported by Deployment Manager.
-     *
-     * @param Type[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return Type[]
-     */
-    public function getTypes()
+    class Google_Service_DeploymentManager_TypesListResponse extends \Google\Service\DeploymentManager\TypesListResponse
     {
     }
 }

@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class SystraceSetup extends \Google\Model
-{
-    /**
-     * Systrace duration in seconds. Should be between 1 and 30 seconds. 0
-     * disables systrace.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $durationSeconds;
-    /**
-     * Systrace duration in seconds. Should be between 1 and 30 seconds. 0
-     * disables systrace.
-     *
-     * @deprecated
-     * @param int $durationSeconds
-     */
-    public function setDurationSeconds($durationSeconds)
+namespace Google\Service\Testing {
+    class SystraceSetup extends \Google\Model
     {
+        /**
+         * Systrace duration in seconds. Should be between 1 and 30 seconds. 0
+         * disables systrace.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $durationSeconds;
+        /**
+         * Systrace duration in seconds. Should be between 1 and 30 seconds. 0
+         * disables systrace.
+         *
+         * @deprecated
+         * @param int $durationSeconds
+         */
+        public function setDurationSeconds($durationSeconds)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getDurationSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return int
+     * Runtime class alias of \Google\Service\Testing\SystraceSetup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationSeconds()
+    class Google_Service_Testing_SystraceSetup extends \Google\Service\Testing\SystraceSetup
     {
     }
 }

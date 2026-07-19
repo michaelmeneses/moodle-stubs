@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FloodlightReportCompatibleFields extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $dimensionFiltersType = Dimension::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#floodlightReportCompatibleFields.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Dimensions which are compatible to be selected in the "dimensionFilters"
-     * section of the report.
-     *
-     * @param Dimension[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
+namespace Google\Service\Dfareporting {
+    class FloodlightReportCompatibleFields extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $dimensionFiltersType = Dimension::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#floodlightReportCompatibleFields.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Dimensions which are compatible to be selected in the "dimensionFilters"
+         * section of the report.
+         *
+         * @param Dimension[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * Dimensions which are compatible to be selected in the "dimensions" section
+         * of the report.
+         *
+         * @param Dimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#floodlightReportCompatibleFields.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the "metricNames" section of
+         * the report.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\FloodlightReportCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * Dimensions which are compatible to be selected in the "dimensions" section
-     * of the report.
-     *
-     * @param Dimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#floodlightReportCompatibleFields.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the "metricNames" section of
-     * the report.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
+    class Google_Service_Dfareporting_FloodlightReportCompatibleFields extends \Google\Service\Dfareporting\FloodlightReportCompatibleFields
     {
     }
 }

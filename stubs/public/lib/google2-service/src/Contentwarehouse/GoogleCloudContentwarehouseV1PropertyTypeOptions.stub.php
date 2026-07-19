@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1PropertyTypeOptions extends \Google\Collection
-{
-    protected $collection_key = 'propertyDefinitions';
-    protected $propertyDefinitionsType = GoogleCloudContentwarehouseV1PropertyDefinition::class;
-    protected $propertyDefinitionsDataType = 'array';
-    /**
-     * Required. List of property definitions.
-     *
-     * @param GoogleCloudContentwarehouseV1PropertyDefinition[] $propertyDefinitions
-     */
-    public function setPropertyDefinitions($propertyDefinitions)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1PropertyTypeOptions extends \Google\Collection
     {
+        protected $collection_key = 'propertyDefinitions';
+        protected $propertyDefinitionsType = GoogleCloudContentwarehouseV1PropertyDefinition::class;
+        protected $propertyDefinitionsDataType = 'array';
+        /**
+         * Required. List of property definitions.
+         *
+         * @param GoogleCloudContentwarehouseV1PropertyDefinition[] $propertyDefinitions
+         */
+        public function setPropertyDefinitions($propertyDefinitions)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1PropertyDefinition[]
+         */
+        public function getPropertyDefinitions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1PropertyDefinition[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1PropertyTypeOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPropertyDefinitions()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1PropertyTypeOptions extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1PropertyTypeOptions
     {
     }
 }

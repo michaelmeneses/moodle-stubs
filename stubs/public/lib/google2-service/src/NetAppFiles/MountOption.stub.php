@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class MountOption extends \Google\Model
-{
-    /**
-     * Unspecified protocol
-     */
-    public const PROTOCOL_PROTOCOLS_UNSPECIFIED = 'PROTOCOLS_UNSPECIFIED';
-    /**
-     * NFS V3 protocol
-     */
-    public const PROTOCOL_NFSV3 = 'NFSV3';
-    /**
-     * NFS V4 protocol
-     */
-    public const PROTOCOL_NFSV4 = 'NFSV4';
-    /**
-     * SMB protocol
-     */
-    public const PROTOCOL_SMB = 'SMB';
-    /**
-     * ISCSI protocol
-     */
-    public const PROTOCOL_ISCSI = 'ISCSI';
-    /**
-     * Export string
-     *
-     * @var string
-     */
-    public $export;
-    /**
-     * Full export string
-     *
-     * @var string
-     */
-    public $exportFull;
-    /**
-     * Instructions for mounting
-     *
-     * @var string
-     */
-    public $instructions;
-    /**
-     * Output only. IP Address.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Protocol to mount with.
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Export string
-     *
-     * @param string $export
-     */
-    public function setExport($export)
+namespace Google\Service\NetAppFiles {
+    class MountOption extends \Google\Model
     {
+        /**
+         * Unspecified protocol
+         */
+        public const PROTOCOL_PROTOCOLS_UNSPECIFIED = 'PROTOCOLS_UNSPECIFIED';
+        /**
+         * NFS V3 protocol
+         */
+        public const PROTOCOL_NFSV3 = 'NFSV3';
+        /**
+         * NFS V4 protocol
+         */
+        public const PROTOCOL_NFSV4 = 'NFSV4';
+        /**
+         * SMB protocol
+         */
+        public const PROTOCOL_SMB = 'SMB';
+        /**
+         * ISCSI protocol
+         */
+        public const PROTOCOL_ISCSI = 'ISCSI';
+        /**
+         * Export string
+         *
+         * @var string
+         */
+        public $export;
+        /**
+         * Full export string
+         *
+         * @var string
+         */
+        public $exportFull;
+        /**
+         * Instructions for mounting
+         *
+         * @var string
+         */
+        public $instructions;
+        /**
+         * Output only. IP Address.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Protocol to mount with.
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Export string
+         *
+         * @param string $export
+         */
+        public function setExport($export)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExport()
+        {
+        }
+        /**
+         * Full export string
+         *
+         * @param string $exportFull
+         */
+        public function setExportFull($exportFull)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportFull()
+        {
+        }
+        /**
+         * Instructions for mounting
+         *
+         * @param string $instructions
+         */
+        public function setInstructions($instructions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstructions()
+        {
+        }
+        /**
+         * Output only. IP Address.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Protocol to mount with.
+         *
+         * Accepted values: PROTOCOLS_UNSPECIFIED, NFSV3, NFSV4, SMB, ISCSI
+         *
+         * @param self::PROTOCOL_* $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return self::PROTOCOL_*
+         */
+        public function getProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\MountOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExport()
-    {
-    }
-    /**
-     * Full export string
-     *
-     * @param string $exportFull
-     */
-    public function setExportFull($exportFull)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExportFull()
-    {
-    }
-    /**
-     * Instructions for mounting
-     *
-     * @param string $instructions
-     */
-    public function setInstructions($instructions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstructions()
-    {
-    }
-    /**
-     * Output only. IP Address.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Protocol to mount with.
-     *
-     * Accepted values: PROTOCOLS_UNSPECIFIED, NFSV3, NFSV4, SMB, ISCSI
-     *
-     * @param self::PROTOCOL_* $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return self::PROTOCOL_*
-     */
-    public function getProtocol()
+    class Google_Service_NetAppFiles_MountOption extends \Google\Service\NetAppFiles\MountOption
     {
     }
 }

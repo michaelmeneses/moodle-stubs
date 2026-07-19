@@ -21,182 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Node extends \Google\Model
-{
-    /**
-     * The default value. This value should never be used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Node is operational and can be used by the user.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Node is being provisioned.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Node is in a failed state.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Node is undergoing maintenance, e.g.: during private cloud upgrade.
-     */
-    public const STATE_UPGRADING = 'UPGRADING';
-    /**
-     * Output only. Customized number of cores
-     *
-     * @var string
-     */
-    public $customCoreCount;
-    /**
-     * Output only. Fully qualified domain name of the node.
-     *
-     * @var string
-     */
-    public $fqdn;
-    /**
-     * Output only. Internal IP address of the node.
-     *
-     * @var string
-     */
-    public $internalIp;
-    /**
-     * Output only. The resource name of this node. Resource names are schemeless
-     * URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * projects/my-project/locations/us-central1-a/privateClouds/my-
-     * cloud/clusters/my-cluster/nodes/my-node
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The canonical identifier of the node type (corresponds to the
-     * `NodeType`). For example: standard-72.
-     *
-     * @var string
-     */
-    public $nodeTypeId;
-    /**
-     * Output only. The state of the appliance.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The version number of the VMware ESXi management component in
-     * this cluster.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Customized number of cores
-     *
-     * @param string $customCoreCount
-     */
-    public function setCustomCoreCount($customCoreCount)
+namespace Google\Service\VMwareEngine {
+    class Node extends \Google\Model
     {
+        /**
+         * The default value. This value should never be used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Node is operational and can be used by the user.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Node is being provisioned.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Node is in a failed state.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Node is undergoing maintenance, e.g.: during private cloud upgrade.
+         */
+        public const STATE_UPGRADING = 'UPGRADING';
+        /**
+         * Output only. Customized number of cores
+         *
+         * @var string
+         */
+        public $customCoreCount;
+        /**
+         * Output only. Fully qualified domain name of the node.
+         *
+         * @var string
+         */
+        public $fqdn;
+        /**
+         * Output only. Internal IP address of the node.
+         *
+         * @var string
+         */
+        public $internalIp;
+        /**
+         * Output only. The resource name of this node. Resource names are schemeless
+         * URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * projects/my-project/locations/us-central1-a/privateClouds/my-
+         * cloud/clusters/my-cluster/nodes/my-node
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The canonical identifier of the node type (corresponds to the
+         * `NodeType`). For example: standard-72.
+         *
+         * @var string
+         */
+        public $nodeTypeId;
+        /**
+         * Output only. The state of the appliance.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The version number of the VMware ESXi management component in
+         * this cluster.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Customized number of cores
+         *
+         * @param string $customCoreCount
+         */
+        public function setCustomCoreCount($customCoreCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomCoreCount()
+        {
+        }
+        /**
+         * Output only. Fully qualified domain name of the node.
+         *
+         * @param string $fqdn
+         */
+        public function setFqdn($fqdn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFqdn()
+        {
+        }
+        /**
+         * Output only. Internal IP address of the node.
+         *
+         * @param string $internalIp
+         */
+        public function setInternalIp($internalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalIp()
+        {
+        }
+        /**
+         * Output only. The resource name of this node. Resource names are schemeless
+         * URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * projects/my-project/locations/us-central1-a/privateClouds/my-
+         * cloud/clusters/my-cluster/nodes/my-node
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The canonical identifier of the node type (corresponds to the
+         * `NodeType`). For example: standard-72.
+         *
+         * @param string $nodeTypeId
+         */
+        public function setNodeTypeId($nodeTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeTypeId()
+        {
+        }
+        /**
+         * Output only. The state of the appliance.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, FAILED, UPGRADING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The version number of the VMware ESXi management component in
+         * this cluster.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\Node registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomCoreCount()
-    {
-    }
-    /**
-     * Output only. Fully qualified domain name of the node.
-     *
-     * @param string $fqdn
-     */
-    public function setFqdn($fqdn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFqdn()
-    {
-    }
-    /**
-     * Output only. Internal IP address of the node.
-     *
-     * @param string $internalIp
-     */
-    public function setInternalIp($internalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalIp()
-    {
-    }
-    /**
-     * Output only. The resource name of this node. Resource names are schemeless
-     * URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * projects/my-project/locations/us-central1-a/privateClouds/my-
-     * cloud/clusters/my-cluster/nodes/my-node
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The canonical identifier of the node type (corresponds to the
-     * `NodeType`). For example: standard-72.
-     *
-     * @param string $nodeTypeId
-     */
-    public function setNodeTypeId($nodeTypeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeTypeId()
-    {
-    }
-    /**
-     * Output only. The state of the appliance.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, FAILED, UPGRADING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The version number of the VMware ESXi management component in
-     * this cluster.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_VMwareEngine_Node extends \Google\Service\VMwareEngine\Node
     {
     }
 }

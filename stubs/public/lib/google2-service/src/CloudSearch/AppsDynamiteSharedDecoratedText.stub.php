@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedDecoratedText extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bottomLabel;
-    protected $buttonType = AppsDynamiteSharedButton::class;
-    protected $buttonDataType = '';
-    public $button;
-    protected $endIconType = AppsDynamiteSharedIcon::class;
-    protected $endIconDataType = '';
-    public $endIcon;
-    protected $iconType = AppsDynamiteSharedIcon::class;
-    protected $iconDataType = '';
-    public $icon;
-    protected $onClickType = AppsDynamiteSharedOnClick::class;
-    protected $onClickDataType = '';
-    public $onClick;
-    protected $startIconType = AppsDynamiteSharedIcon::class;
-    protected $startIconDataType = '';
-    public $startIcon;
-    protected $switchControlType = AppsDynamiteSharedDecoratedTextSwitchControl::class;
-    protected $switchControlDataType = '';
-    public $switchControl;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $topLabel;
-    /**
-     * @var bool
-     */
-    public $wrapText;
-    /**
-     * @param string
-     */
-    public function setBottomLabel($bottomLabel)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedDecoratedText extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bottomLabel;
+        protected $buttonType = AppsDynamiteSharedButton::class;
+        protected $buttonDataType = '';
+        public $button;
+        protected $endIconType = AppsDynamiteSharedIcon::class;
+        protected $endIconDataType = '';
+        public $endIcon;
+        protected $iconType = AppsDynamiteSharedIcon::class;
+        protected $iconDataType = '';
+        public $icon;
+        protected $onClickType = AppsDynamiteSharedOnClick::class;
+        protected $onClickDataType = '';
+        public $onClick;
+        protected $startIconType = AppsDynamiteSharedIcon::class;
+        protected $startIconDataType = '';
+        public $startIcon;
+        protected $switchControlType = AppsDynamiteSharedDecoratedTextSwitchControl::class;
+        protected $switchControlDataType = '';
+        public $switchControl;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $topLabel;
+        /**
+         * @var bool
+         */
+        public $wrapText;
+        /**
+         * @param string
+         */
+        public function setBottomLabel($bottomLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBottomLabel()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedButton
+         */
+        public function setButton(AppsDynamiteSharedButton $button)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedButton
+         */
+        public function getButton()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedIcon
+         */
+        public function setEndIcon(AppsDynamiteSharedIcon $endIcon)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedIcon
+         */
+        public function getEndIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedIcon
+         */
+        public function setIcon(AppsDynamiteSharedIcon $icon)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedIcon
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOnClick
+         */
+        public function setOnClick(AppsDynamiteSharedOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedIcon
+         */
+        public function setStartIcon(AppsDynamiteSharedIcon $startIcon)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedIcon
+         */
+        public function getStartIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDecoratedTextSwitchControl
+         */
+        public function setSwitchControl(AppsDynamiteSharedDecoratedTextSwitchControl $switchControl)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDecoratedTextSwitchControl
+         */
+        public function getSwitchControl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopLabel($topLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopLabel()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWrapText($wrapText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWrapText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedDecoratedText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottomLabel()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedButton
-     */
-    public function setButton(AppsDynamiteSharedButton $button)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedButton
-     */
-    public function getButton()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedIcon
-     */
-    public function setEndIcon(AppsDynamiteSharedIcon $endIcon)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedIcon
-     */
-    public function getEndIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedIcon
-     */
-    public function setIcon(AppsDynamiteSharedIcon $icon)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedIcon
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOnClick
-     */
-    public function setOnClick(AppsDynamiteSharedOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedIcon
-     */
-    public function setStartIcon(AppsDynamiteSharedIcon $startIcon)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedIcon
-     */
-    public function getStartIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDecoratedTextSwitchControl
-     */
-    public function setSwitchControl(AppsDynamiteSharedDecoratedTextSwitchControl $switchControl)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDecoratedTextSwitchControl
-     */
-    public function getSwitchControl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopLabel($topLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopLabel()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWrapText($wrapText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWrapText()
+    class Google_Service_CloudSearch_AppsDynamiteSharedDecoratedText extends \Google\Service\CloudSearch\AppsDynamiteSharedDecoratedText
     {
     }
 }

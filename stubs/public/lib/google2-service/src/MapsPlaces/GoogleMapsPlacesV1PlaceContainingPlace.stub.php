@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceContainingPlace extends \Google\Model
-{
-    /**
-     * The place id of the place in which this place is located.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The resource name of the place in which this place is located.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The place id of the place in which this place is located.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceContainingPlace extends \Google\Model
     {
+        /**
+         * The place id of the place in which this place is located.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The resource name of the place in which this place is located.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The place id of the place in which this place is located.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The resource name of the place in which this place is located.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceContainingPlace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The resource name of the place in which this place is located.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceContainingPlace extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceContainingPlace
     {
     }
 }

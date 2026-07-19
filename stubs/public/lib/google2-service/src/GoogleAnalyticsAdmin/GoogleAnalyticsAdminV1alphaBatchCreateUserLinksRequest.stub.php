@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    /**
-     * @var bool
-     */
-    public $notifyNewUsers;
-    protected $requestsType = GoogleAnalyticsAdminV1alphaCreateUserLinkRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param bool
-     */
-    public function setNotifyNewUsers($notifyNewUsers)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        /**
+         * @var bool
+         */
+        public $notifyNewUsers;
+        protected $requestsType = GoogleAnalyticsAdminV1alphaCreateUserLinkRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param bool
+         */
+        public function setNotifyNewUsers($notifyNewUsers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNotifyNewUsers()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaCreateUserLinkRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaCreateUserLinkRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotifyNewUsers()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaCreateUserLinkRequest[]
-     */
-    public function setRequests($requests)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaCreateUserLinkRequest[]
-     */
-    public function getRequests()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest
     {
     }
 }

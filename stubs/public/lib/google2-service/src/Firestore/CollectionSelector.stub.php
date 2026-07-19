@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class CollectionSelector extends \Google\Model
-{
-    /**
-     * When false, selects only collections that are immediate children of the
-     * `parent` specified in the containing `RunQueryRequest`. When true, selects
-     * all descendant collections.
-     *
-     * @var bool
-     */
-    public $allDescendants;
-    /**
-     * The collection ID. When set, selects only collections with this ID.
-     *
-     * @var string
-     */
-    public $collectionId;
-    /**
-     * When false, selects only collections that are immediate children of the
-     * `parent` specified in the containing `RunQueryRequest`. When true, selects
-     * all descendant collections.
-     *
-     * @param bool $allDescendants
-     */
-    public function setAllDescendants($allDescendants)
+namespace Google\Service\Firestore {
+    class CollectionSelector extends \Google\Model
     {
+        /**
+         * When false, selects only collections that are immediate children of the
+         * `parent` specified in the containing `RunQueryRequest`. When true, selects
+         * all descendant collections.
+         *
+         * @var bool
+         */
+        public $allDescendants;
+        /**
+         * The collection ID. When set, selects only collections with this ID.
+         *
+         * @var string
+         */
+        public $collectionId;
+        /**
+         * When false, selects only collections that are immediate children of the
+         * `parent` specified in the containing `RunQueryRequest`. When true, selects
+         * all descendant collections.
+         *
+         * @param bool $allDescendants
+         */
+        public function setAllDescendants($allDescendants)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllDescendants()
+        {
+        }
+        /**
+         * The collection ID. When set, selects only collections with this ID.
+         *
+         * @param string $collectionId
+         */
+        public function setCollectionId($collectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollectionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Firestore\CollectionSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllDescendants()
-    {
-    }
-    /**
-     * The collection ID. When set, selects only collections with this ID.
-     *
-     * @param string $collectionId
-     */
-    public function setCollectionId($collectionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCollectionId()
+    class Google_Service_Firestore_CollectionSelector extends \Google\Service\Firestore\CollectionSelector
     {
     }
 }

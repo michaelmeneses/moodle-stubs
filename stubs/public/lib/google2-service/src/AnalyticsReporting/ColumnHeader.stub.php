@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class ColumnHeader extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    /**
-     * @var string[]
-     */
-    public $dimensions;
-    protected $metricHeaderType = MetricHeader::class;
-    protected $metricHeaderDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\AnalyticsReporting {
+    class ColumnHeader extends \Google\Collection
     {
+        protected $collection_key = 'dimensions';
+        /**
+         * @var string[]
+         */
+        public $dimensions;
+        protected $metricHeaderType = MetricHeader::class;
+        protected $metricHeaderDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * @param MetricHeader
+         */
+        public function setMetricHeader(MetricHeader $metricHeader)
+        {
+        }
+        /**
+         * @return MetricHeader
+         */
+        public function getMetricHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\ColumnHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * @param MetricHeader
-     */
-    public function setMetricHeader(MetricHeader $metricHeader)
-    {
-    }
-    /**
-     * @return MetricHeader
-     */
-    public function getMetricHeader()
+    class Google_Service_AnalyticsReporting_ColumnHeader extends \Google\Service\AnalyticsReporting\ColumnHeader
     {
     }
 }

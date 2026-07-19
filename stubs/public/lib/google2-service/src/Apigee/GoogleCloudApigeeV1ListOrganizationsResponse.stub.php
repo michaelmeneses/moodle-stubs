@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListOrganizationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'organizations';
-    protected $organizationsType = GoogleCloudApigeeV1OrganizationProjectMapping::class;
-    protected $organizationsDataType = 'array';
-    /**
-     * List of Apigee organizations and associated Google Cloud projects.
-     *
-     * @param GoogleCloudApigeeV1OrganizationProjectMapping[] $organizations
-     */
-    public function setOrganizations($organizations)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListOrganizationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'organizations';
+        protected $organizationsType = GoogleCloudApigeeV1OrganizationProjectMapping::class;
+        protected $organizationsDataType = 'array';
+        /**
+         * List of Apigee organizations and associated Google Cloud projects.
+         *
+         * @param GoogleCloudApigeeV1OrganizationProjectMapping[] $organizations
+         */
+        public function setOrganizations($organizations)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1OrganizationProjectMapping[]
+         */
+        public function getOrganizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1OrganizationProjectMapping[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListOrganizationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrganizations()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListOrganizationsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListOrganizationsResponse
     {
     }
 }

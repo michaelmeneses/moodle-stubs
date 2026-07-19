@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ImportRowError extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $archiveErrorType = ImportRowErrorArchiveErrorDetails::class;
-    protected $archiveErrorDataType = '';
-    /**
-     * Output only. The asset title.
-     *
-     * @var string
-     */
-    public $assetTitle;
-    protected $csvErrorType = ImportRowErrorCsvErrorDetails::class;
-    protected $csvErrorDataType = '';
-    protected $errorsType = ImportError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The row number where the error was detected.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $rowNumber;
-    /**
-     * The name of the VM in the row.
-     *
-     * @var string
-     */
-    public $vmName;
-    /**
-     * The VM UUID.
-     *
-     * @var string
-     */
-    public $vmUuid;
-    protected $xlsxErrorType = ImportRowErrorXlsxErrorDetails::class;
-    protected $xlsxErrorDataType = '';
-    /**
-     * Error details for an archive file.
-     *
-     * @param ImportRowErrorArchiveErrorDetails $archiveError
-     */
-    public function setArchiveError(ImportRowErrorArchiveErrorDetails $archiveError)
+namespace Google\Service\MigrationCenterAPI {
+    class ImportRowError extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $archiveErrorType = ImportRowErrorArchiveErrorDetails::class;
+        protected $archiveErrorDataType = '';
+        /**
+         * Output only. The asset title.
+         *
+         * @var string
+         */
+        public $assetTitle;
+        protected $csvErrorType = ImportRowErrorCsvErrorDetails::class;
+        protected $csvErrorDataType = '';
+        protected $errorsType = ImportError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The row number where the error was detected.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $rowNumber;
+        /**
+         * The name of the VM in the row.
+         *
+         * @var string
+         */
+        public $vmName;
+        /**
+         * The VM UUID.
+         *
+         * @var string
+         */
+        public $vmUuid;
+        protected $xlsxErrorType = ImportRowErrorXlsxErrorDetails::class;
+        protected $xlsxErrorDataType = '';
+        /**
+         * Error details for an archive file.
+         *
+         * @param ImportRowErrorArchiveErrorDetails $archiveError
+         */
+        public function setArchiveError(ImportRowErrorArchiveErrorDetails $archiveError)
+        {
+        }
+        /**
+         * @return ImportRowErrorArchiveErrorDetails
+         */
+        public function getArchiveError()
+        {
+        }
+        /**
+         * Output only. The asset title.
+         *
+         * @param string $assetTitle
+         */
+        public function setAssetTitle($assetTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetTitle()
+        {
+        }
+        /**
+         * Error details for a CSV file.
+         *
+         * @param ImportRowErrorCsvErrorDetails $csvError
+         */
+        public function setCsvError(ImportRowErrorCsvErrorDetails $csvError)
+        {
+        }
+        /**
+         * @return ImportRowErrorCsvErrorDetails
+         */
+        public function getCsvError()
+        {
+        }
+        /**
+         * The list of errors detected in the row.
+         *
+         * @param ImportError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ImportError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The row number where the error was detected.
+         *
+         * @deprecated
+         * @param int $rowNumber
+         */
+        public function setRowNumber($rowNumber)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getRowNumber()
+        {
+        }
+        /**
+         * The name of the VM in the row.
+         *
+         * @param string $vmName
+         */
+        public function setVmName($vmName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmName()
+        {
+        }
+        /**
+         * The VM UUID.
+         *
+         * @param string $vmUuid
+         */
+        public function setVmUuid($vmUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmUuid()
+        {
+        }
+        /**
+         * Error details for an XLSX file.
+         *
+         * @param ImportRowErrorXlsxErrorDetails $xlsxError
+         */
+        public function setXlsxError(ImportRowErrorXlsxErrorDetails $xlsxError)
+        {
+        }
+        /**
+         * @return ImportRowErrorXlsxErrorDetails
+         */
+        public function getXlsxError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportRowErrorArchiveErrorDetails
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ImportRowError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveError()
-    {
-    }
-    /**
-     * Output only. The asset title.
-     *
-     * @param string $assetTitle
-     */
-    public function setAssetTitle($assetTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetTitle()
-    {
-    }
-    /**
-     * Error details for a CSV file.
-     *
-     * @param ImportRowErrorCsvErrorDetails $csvError
-     */
-    public function setCsvError(ImportRowErrorCsvErrorDetails $csvError)
-    {
-    }
-    /**
-     * @return ImportRowErrorCsvErrorDetails
-     */
-    public function getCsvError()
-    {
-    }
-    /**
-     * The list of errors detected in the row.
-     *
-     * @param ImportError[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return ImportError[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The row number where the error was detected.
-     *
-     * @deprecated
-     * @param int $rowNumber
-     */
-    public function setRowNumber($rowNumber)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getRowNumber()
-    {
-    }
-    /**
-     * The name of the VM in the row.
-     *
-     * @param string $vmName
-     */
-    public function setVmName($vmName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmName()
-    {
-    }
-    /**
-     * The VM UUID.
-     *
-     * @param string $vmUuid
-     */
-    public function setVmUuid($vmUuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmUuid()
-    {
-    }
-    /**
-     * Error details for an XLSX file.
-     *
-     * @param ImportRowErrorXlsxErrorDetails $xlsxError
-     */
-    public function setXlsxError(ImportRowErrorXlsxErrorDetails $xlsxError)
-    {
-    }
-    /**
-     * @return ImportRowErrorXlsxErrorDetails
-     */
-    public function getXlsxError()
+    class Google_Service_MigrationCenterAPI_ImportRowError extends \Google\Service\MigrationCenterAPI\ImportRowError
     {
     }
 }

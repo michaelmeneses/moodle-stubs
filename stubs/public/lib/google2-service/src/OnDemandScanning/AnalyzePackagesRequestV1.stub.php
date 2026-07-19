@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class AnalyzePackagesRequestV1 extends \Google\Collection
-{
-    protected $collection_key = 'packages';
-    /**
-     * [DEPRECATED] Whether to include OSV data in the scan. For backwards
-     * compatibility reasons, this field can be neither removed nor renamed.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $includeOsvData;
-    protected $packagesType = PackageData::class;
-    protected $packagesDataType = 'array';
-    /**
-     * Required. The resource URI of the container image being scanned.
-     *
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * [DEPRECATED] Whether to include OSV data in the scan. For backwards
-     * compatibility reasons, this field can be neither removed nor renamed.
-     *
-     * @deprecated
-     * @param bool $includeOsvData
-     */
-    public function setIncludeOsvData($includeOsvData)
+namespace Google\Service\OnDemandScanning {
+    class AnalyzePackagesRequestV1 extends \Google\Collection
     {
+        protected $collection_key = 'packages';
+        /**
+         * [DEPRECATED] Whether to include OSV data in the scan. For backwards
+         * compatibility reasons, this field can be neither removed nor renamed.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $includeOsvData;
+        protected $packagesType = PackageData::class;
+        protected $packagesDataType = 'array';
+        /**
+         * Required. The resource URI of the container image being scanned.
+         *
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * [DEPRECATED] Whether to include OSV data in the scan. For backwards
+         * compatibility reasons, this field can be neither removed nor renamed.
+         *
+         * @deprecated
+         * @param bool $includeOsvData
+         */
+        public function setIncludeOsvData($includeOsvData)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIncludeOsvData()
+        {
+        }
+        /**
+         * The packages to analyze.
+         *
+         * @param PackageData[] $packages
+         */
+        public function setPackages($packages)
+        {
+        }
+        /**
+         * @return PackageData[]
+         */
+        public function getPackages()
+        {
+        }
+        /**
+         * Required. The resource URI of the container image being scanned.
+         *
+         * @param string $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\OnDemandScanning\AnalyzePackagesRequestV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeOsvData()
-    {
-    }
-    /**
-     * The packages to analyze.
-     *
-     * @param PackageData[] $packages
-     */
-    public function setPackages($packages)
-    {
-    }
-    /**
-     * @return PackageData[]
-     */
-    public function getPackages()
-    {
-    }
-    /**
-     * Required. The resource URI of the container image being scanned.
-     *
-     * @param string $resourceUri
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
+    class Google_Service_OnDemandScanning_AnalyzePackagesRequestV1 extends \Google\Service\OnDemandScanning\AnalyzePackagesRequestV1
     {
     }
 }

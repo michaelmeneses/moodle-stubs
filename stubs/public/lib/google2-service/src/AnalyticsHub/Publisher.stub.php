@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class Publisher extends \Google\Model
-{
-    /**
-     * Optional. Name of the listing publisher.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Email or URL of the listing publisher. Max Length: 1000 bytes.
-     *
-     * @var string
-     */
-    public $primaryContact;
-    /**
-     * Optional. Name of the listing publisher.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AnalyticsHub {
+    class Publisher extends \Google\Model
     {
+        /**
+         * Optional. Name of the listing publisher.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Email or URL of the listing publisher. Max Length: 1000 bytes.
+         *
+         * @var string
+         */
+        public $primaryContact;
+        /**
+         * Optional. Name of the listing publisher.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Email or URL of the listing publisher. Max Length: 1000 bytes.
+         *
+         * @param string $primaryContact
+         */
+        public function setPrimaryContact($primaryContact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryContact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\Publisher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Email or URL of the listing publisher. Max Length: 1000 bytes.
-     *
-     * @param string $primaryContact
-     */
-    public function setPrimaryContact($primaryContact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryContact()
+    class Google_Service_AnalyticsHub_Publisher extends \Google\Service\AnalyticsHub\Publisher
     {
     }
 }

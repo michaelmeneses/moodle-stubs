@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ManageAddonConfigRequest extends \Google\Model
-{
-    protected $configType = GoogleCloudApihubV1AddonConfig::class;
-    protected $configDataType = '';
-    /**
-     * Required. The config of the addon to be managed. This config will replace
-     * the config present in the addon. The type of the config should match the
-     * config type already present in the addon.
-     *
-     * @param GoogleCloudApihubV1AddonConfig $config
-     */
-    public function setConfig(GoogleCloudApihubV1AddonConfig $config)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ManageAddonConfigRequest extends \Google\Model
     {
+        protected $configType = GoogleCloudApihubV1AddonConfig::class;
+        protected $configDataType = '';
+        /**
+         * Required. The config of the addon to be managed. This config will replace
+         * the config present in the addon. The type of the config should match the
+         * config type already present in the addon.
+         *
+         * @param GoogleCloudApihubV1AddonConfig $config
+         */
+        public function setConfig(GoogleCloudApihubV1AddonConfig $config)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AddonConfig
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AddonConfig
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ManageAddonConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_APIhub_GoogleCloudApihubV1ManageAddonConfigRequest extends \Google\Service\APIhub\GoogleCloudApihubV1ManageAddonConfigRequest
     {
     }
 }

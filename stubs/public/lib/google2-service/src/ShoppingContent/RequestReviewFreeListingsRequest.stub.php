@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RequestReviewFreeListingsRequest extends \Google\Model
-{
-    /**
-     * The code [ISO 3166-1
-     * alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country
-     * for which review is to be requested.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * The code [ISO 3166-1
-     * alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country
-     * for which review is to be requested.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
+namespace Google\Service\ShoppingContent {
+    class RequestReviewFreeListingsRequest extends \Google\Model
     {
+        /**
+         * The code [ISO 3166-1
+         * alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country
+         * for which review is to be requested.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * The code [ISO 3166-1
+         * alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country
+         * for which review is to be requested.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RequestReviewFreeListingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionCode()
+    class Google_Service_ShoppingContent_RequestReviewFreeListingsRequest extends \Google\Service\ShoppingContent\RequestReviewFreeListingsRequest
     {
     }
 }

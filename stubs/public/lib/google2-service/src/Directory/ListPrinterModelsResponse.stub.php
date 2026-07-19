@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ListPrinterModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'printerModels';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $printerModelsType = PrinterModel::class;
-    protected $printerModelsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Directory {
+    class ListPrinterModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'printerModels';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $printerModelsType = PrinterModel::class;
+        protected $printerModelsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Printer models that are currently allowed to be configured for ChromeOs.
+         * Some printers may be added or removed over time.
+         *
+         * @param PrinterModel[] $printerModels
+         */
+        public function setPrinterModels($printerModels)
+        {
+        }
+        /**
+         * @return PrinterModel[]
+         */
+        public function getPrinterModels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ListPrinterModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Printer models that are currently allowed to be configured for ChromeOs.
-     * Some printers may be added or removed over time.
-     *
-     * @param PrinterModel[] $printerModels
-     */
-    public function setPrinterModels($printerModels)
-    {
-    }
-    /**
-     * @return PrinterModel[]
-     */
-    public function getPrinterModels()
+    class Google_Service_Directory_ListPrinterModelsResponse extends \Google\Service\Directory\ListPrinterModelsResponse
     {
     }
 }

@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class VariableFormatValue extends \Google\Model
-{
-    public const CASE_CONVERSION_TYPE_none = 'none';
-    /**
-     * The option to convert a variable value to lowercase.
-     */
-    public const CASE_CONVERSION_TYPE_lowercase = 'lowercase';
-    /**
-     * The option to convert a variable value to uppercase.
-     */
-    public const CASE_CONVERSION_TYPE_uppercase = 'uppercase';
-    /**
-     * The option to convert a string-type variable value to either lowercase or
-     * uppercase.
-     *
-     * @var string
-     */
-    public $caseConversionType;
-    protected $convertFalseToValueType = Parameter::class;
-    protected $convertFalseToValueDataType = '';
-    protected $convertNullToValueType = Parameter::class;
-    protected $convertNullToValueDataType = '';
-    protected $convertTrueToValueType = Parameter::class;
-    protected $convertTrueToValueDataType = '';
-    protected $convertUndefinedToValueType = Parameter::class;
-    protected $convertUndefinedToValueDataType = '';
-    /**
-     * The option to convert a string-type variable value to either lowercase or
-     * uppercase.
-     *
-     * Accepted values: none, lowercase, uppercase
-     *
-     * @param self::CASE_CONVERSION_TYPE_* $caseConversionType
-     */
-    public function setCaseConversionType($caseConversionType)
+namespace Google\Service\TagManager {
+    class VariableFormatValue extends \Google\Model
     {
+        public const CASE_CONVERSION_TYPE_none = 'none';
+        /**
+         * The option to convert a variable value to lowercase.
+         */
+        public const CASE_CONVERSION_TYPE_lowercase = 'lowercase';
+        /**
+         * The option to convert a variable value to uppercase.
+         */
+        public const CASE_CONVERSION_TYPE_uppercase = 'uppercase';
+        /**
+         * The option to convert a string-type variable value to either lowercase or
+         * uppercase.
+         *
+         * @var string
+         */
+        public $caseConversionType;
+        protected $convertFalseToValueType = Parameter::class;
+        protected $convertFalseToValueDataType = '';
+        protected $convertNullToValueType = Parameter::class;
+        protected $convertNullToValueDataType = '';
+        protected $convertTrueToValueType = Parameter::class;
+        protected $convertTrueToValueDataType = '';
+        protected $convertUndefinedToValueType = Parameter::class;
+        protected $convertUndefinedToValueDataType = '';
+        /**
+         * The option to convert a string-type variable value to either lowercase or
+         * uppercase.
+         *
+         * Accepted values: none, lowercase, uppercase
+         *
+         * @param self::CASE_CONVERSION_TYPE_* $caseConversionType
+         */
+        public function setCaseConversionType($caseConversionType)
+        {
+        }
+        /**
+         * @return self::CASE_CONVERSION_TYPE_*
+         */
+        public function getCaseConversionType()
+        {
+        }
+        /**
+         * The value to convert if a variable value is false.
+         *
+         * @param Parameter $convertFalseToValue
+         */
+        public function setConvertFalseToValue(Parameter $convertFalseToValue)
+        {
+        }
+        /**
+         * @return Parameter
+         */
+        public function getConvertFalseToValue()
+        {
+        }
+        /**
+         * The value to convert if a variable value is null.
+         *
+         * @param Parameter $convertNullToValue
+         */
+        public function setConvertNullToValue(Parameter $convertNullToValue)
+        {
+        }
+        /**
+         * @return Parameter
+         */
+        public function getConvertNullToValue()
+        {
+        }
+        /**
+         * The value to convert if a variable value is true.
+         *
+         * @param Parameter $convertTrueToValue
+         */
+        public function setConvertTrueToValue(Parameter $convertTrueToValue)
+        {
+        }
+        /**
+         * @return Parameter
+         */
+        public function getConvertTrueToValue()
+        {
+        }
+        /**
+         * The value to convert if a variable value is undefined.
+         *
+         * @param Parameter $convertUndefinedToValue
+         */
+        public function setConvertUndefinedToValue(Parameter $convertUndefinedToValue)
+        {
+        }
+        /**
+         * @return Parameter
+         */
+        public function getConvertUndefinedToValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CASE_CONVERSION_TYPE_*
+     * Runtime class alias of \Google\Service\TagManager\VariableFormatValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseConversionType()
-    {
-    }
-    /**
-     * The value to convert if a variable value is false.
-     *
-     * @param Parameter $convertFalseToValue
-     */
-    public function setConvertFalseToValue(Parameter $convertFalseToValue)
-    {
-    }
-    /**
-     * @return Parameter
-     */
-    public function getConvertFalseToValue()
-    {
-    }
-    /**
-     * The value to convert if a variable value is null.
-     *
-     * @param Parameter $convertNullToValue
-     */
-    public function setConvertNullToValue(Parameter $convertNullToValue)
-    {
-    }
-    /**
-     * @return Parameter
-     */
-    public function getConvertNullToValue()
-    {
-    }
-    /**
-     * The value to convert if a variable value is true.
-     *
-     * @param Parameter $convertTrueToValue
-     */
-    public function setConvertTrueToValue(Parameter $convertTrueToValue)
-    {
-    }
-    /**
-     * @return Parameter
-     */
-    public function getConvertTrueToValue()
-    {
-    }
-    /**
-     * The value to convert if a variable value is undefined.
-     *
-     * @param Parameter $convertUndefinedToValue
-     */
-    public function setConvertUndefinedToValue(Parameter $convertUndefinedToValue)
-    {
-    }
-    /**
-     * @return Parameter
-     */
-    public function getConvertUndefinedToValue()
+    class Google_Service_TagManager_VariableFormatValue extends \Google\Service\TagManager\VariableFormatValue
     {
     }
 }

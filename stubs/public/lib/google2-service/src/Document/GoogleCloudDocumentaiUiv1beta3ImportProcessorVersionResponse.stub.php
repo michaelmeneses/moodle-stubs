@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ImportProcessorVersionResponse extends \Google\Model
-{
-    /**
-     * The destination processor version name.
-     *
-     * @var string
-     */
-    public $processorVersion;
-    /**
-     * The destination processor version name.
-     *
-     * @param string $processorVersion
-     */
-    public function setProcessorVersion($processorVersion)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ImportProcessorVersionResponse extends \Google\Model
     {
+        /**
+         * The destination processor version name.
+         *
+         * @var string
+         */
+        public $processorVersion;
+        /**
+         * The destination processor version name.
+         *
+         * @param string $processorVersion
+         */
+        public function setProcessorVersion($processorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ImportProcessorVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProcessorVersion()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ImportProcessorVersionResponse extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ImportProcessorVersionResponse
     {
     }
 }

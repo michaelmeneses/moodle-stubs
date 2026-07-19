@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class AccessSettings extends \Google\Collection
-{
-    protected $collection_key = 'accessLevels';
-    /**
-     * Optional. Access level that a user must have to be granted access. Only one
-     * access level is supported, not multiple. This repeated field must have
-     * exactly one element. Example:
-     * "accessPolicies/9522/accessLevels/device_trusted"
-     *
-     * @var string[]
-     */
-    public $accessLevels;
-    protected $sessionSettingsType = SessionSettings::class;
-    protected $sessionSettingsDataType = '';
-    /**
-     * Optional. Access level that a user must have to be granted access. Only one
-     * access level is supported, not multiple. This repeated field must have
-     * exactly one element. Example:
-     * "accessPolicies/9522/accessLevels/device_trusted"
-     *
-     * @param string[] $accessLevels
-     */
-    public function setAccessLevels($accessLevels)
+namespace Google\Service\AccessContextManager {
+    class AccessSettings extends \Google\Collection
     {
+        protected $collection_key = 'accessLevels';
+        /**
+         * Optional. Access level that a user must have to be granted access. Only one
+         * access level is supported, not multiple. This repeated field must have
+         * exactly one element. Example:
+         * "accessPolicies/9522/accessLevels/device_trusted"
+         *
+         * @var string[]
+         */
+        public $accessLevels;
+        protected $sessionSettingsType = SessionSettings::class;
+        protected $sessionSettingsDataType = '';
+        /**
+         * Optional. Access level that a user must have to be granted access. Only one
+         * access level is supported, not multiple. This repeated field must have
+         * exactly one element. Example:
+         * "accessPolicies/9522/accessLevels/device_trusted"
+         *
+         * @param string[] $accessLevels
+         */
+        public function setAccessLevels($accessLevels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAccessLevels()
+        {
+        }
+        /**
+         * Optional. Session settings applied to user access on a given AccessScope.
+         *
+         * @param SessionSettings $sessionSettings
+         */
+        public function setSessionSettings(SessionSettings $sessionSettings)
+        {
+        }
+        /**
+         * @return SessionSettings
+         */
+        public function getSessionSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AccessContextManager\AccessSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLevels()
-    {
-    }
-    /**
-     * Optional. Session settings applied to user access on a given AccessScope.
-     *
-     * @param SessionSettings $sessionSettings
-     */
-    public function setSessionSettings(SessionSettings $sessionSettings)
-    {
-    }
-    /**
-     * @return SessionSettings
-     */
-    public function getSessionSettings()
+    class Google_Service_AccessContextManager_AccessSettings extends \Google\Service\AccessContextManager\AccessSettings
     {
     }
 }

@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FeatureState extends \Google\Model
-{
-    protected $appdevexperienceType = AppDevExperienceState::class;
-    protected $appdevexperienceDataType = '';
-    protected $clusterupgradeType = ClusterUpgradeState::class;
-    protected $clusterupgradeDataType = '';
-    protected $configmanagementType = ConfigManagementState::class;
-    protected $configmanagementDataType = '';
-    protected $identityserviceType = IdentityServiceState::class;
-    protected $identityserviceDataType = '';
-    protected $meteringType = MeteringState::class;
-    protected $meteringDataType = '';
-    protected $policycontrollerType = PolicyControllerState::class;
-    protected $policycontrollerDataType = '';
-    protected $rbacrolebindingactuationType = RBACRoleBindingActuationState::class;
-    protected $rbacrolebindingactuationDataType = '';
-    protected $servicemeshType = ServiceMeshState::class;
-    protected $servicemeshDataType = '';
-    protected $stateType = State::class;
-    protected $stateDataType = '';
-    /**
-     * Appdevexperience specific state.
-     *
-     * @param AppDevExperienceState $appdevexperience
-     */
-    public function setAppdevexperience(AppDevExperienceState $appdevexperience)
+namespace Google\Service\GKEHub {
+    class FeatureState extends \Google\Model
     {
+        protected $appdevexperienceType = AppDevExperienceState::class;
+        protected $appdevexperienceDataType = '';
+        protected $clusterupgradeType = ClusterUpgradeState::class;
+        protected $clusterupgradeDataType = '';
+        protected $configmanagementType = ConfigManagementState::class;
+        protected $configmanagementDataType = '';
+        protected $identityserviceType = IdentityServiceState::class;
+        protected $identityserviceDataType = '';
+        protected $meteringType = MeteringState::class;
+        protected $meteringDataType = '';
+        protected $policycontrollerType = PolicyControllerState::class;
+        protected $policycontrollerDataType = '';
+        protected $rbacrolebindingactuationType = RBACRoleBindingActuationState::class;
+        protected $rbacrolebindingactuationDataType = '';
+        protected $servicemeshType = ServiceMeshState::class;
+        protected $servicemeshDataType = '';
+        protected $stateType = State::class;
+        protected $stateDataType = '';
+        /**
+         * Appdevexperience specific state.
+         *
+         * @param AppDevExperienceState $appdevexperience
+         */
+        public function setAppdevexperience(AppDevExperienceState $appdevexperience)
+        {
+        }
+        /**
+         * @return AppDevExperienceState
+         */
+        public function getAppdevexperience()
+        {
+        }
+        /**
+         * Cluster upgrade state.
+         *
+         * @param ClusterUpgradeState $clusterupgrade
+         */
+        public function setClusterupgrade(ClusterUpgradeState $clusterupgrade)
+        {
+        }
+        /**
+         * @return ClusterUpgradeState
+         */
+        public function getClusterupgrade()
+        {
+        }
+        /**
+         * Config Management state
+         *
+         * @param ConfigManagementState $configmanagement
+         */
+        public function setConfigmanagement(ConfigManagementState $configmanagement)
+        {
+        }
+        /**
+         * @return ConfigManagementState
+         */
+        public function getConfigmanagement()
+        {
+        }
+        /**
+         * Identity service state
+         *
+         * @param IdentityServiceState $identityservice
+         */
+        public function setIdentityservice(IdentityServiceState $identityservice)
+        {
+        }
+        /**
+         * @return IdentityServiceState
+         */
+        public function getIdentityservice()
+        {
+        }
+        /**
+         * Metering state
+         *
+         * @param MeteringState $metering
+         */
+        public function setMetering(MeteringState $metering)
+        {
+        }
+        /**
+         * @return MeteringState
+         */
+        public function getMetering()
+        {
+        }
+        /**
+         * Policy Controller state
+         *
+         * @param PolicyControllerState $policycontroller
+         */
+        public function setPolicycontroller(PolicyControllerState $policycontroller)
+        {
+        }
+        /**
+         * @return PolicyControllerState
+         */
+        public function getPolicycontroller()
+        {
+        }
+        /**
+         * RBAC Role Binding Actuation state
+         *
+         * @param RBACRoleBindingActuationState $rbacrolebindingactuation
+         */
+        public function setRbacrolebindingactuation(RBACRoleBindingActuationState $rbacrolebindingactuation)
+        {
+        }
+        /**
+         * @return RBACRoleBindingActuationState
+         */
+        public function getRbacrolebindingactuation()
+        {
+        }
+        /**
+         * Service mesh state
+         *
+         * @param ServiceMeshState $servicemesh
+         */
+        public function setServicemesh(ServiceMeshState $servicemesh)
+        {
+        }
+        /**
+         * @return ServiceMeshState
+         */
+        public function getServicemesh()
+        {
+        }
+        /**
+         * The high-level state of this MembershipFeature.
+         *
+         * @param State $state
+         */
+        public function setState(State $state)
+        {
+        }
+        /**
+         * @return State
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppDevExperienceState
+     * Runtime class alias of \Google\Service\GKEHub\FeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppdevexperience()
-    {
-    }
-    /**
-     * Cluster upgrade state.
-     *
-     * @param ClusterUpgradeState $clusterupgrade
-     */
-    public function setClusterupgrade(ClusterUpgradeState $clusterupgrade)
-    {
-    }
-    /**
-     * @return ClusterUpgradeState
-     */
-    public function getClusterupgrade()
-    {
-    }
-    /**
-     * Config Management state
-     *
-     * @param ConfigManagementState $configmanagement
-     */
-    public function setConfigmanagement(ConfigManagementState $configmanagement)
-    {
-    }
-    /**
-     * @return ConfigManagementState
-     */
-    public function getConfigmanagement()
-    {
-    }
-    /**
-     * Identity service state
-     *
-     * @param IdentityServiceState $identityservice
-     */
-    public function setIdentityservice(IdentityServiceState $identityservice)
-    {
-    }
-    /**
-     * @return IdentityServiceState
-     */
-    public function getIdentityservice()
-    {
-    }
-    /**
-     * Metering state
-     *
-     * @param MeteringState $metering
-     */
-    public function setMetering(MeteringState $metering)
-    {
-    }
-    /**
-     * @return MeteringState
-     */
-    public function getMetering()
-    {
-    }
-    /**
-     * Policy Controller state
-     *
-     * @param PolicyControllerState $policycontroller
-     */
-    public function setPolicycontroller(PolicyControllerState $policycontroller)
-    {
-    }
-    /**
-     * @return PolicyControllerState
-     */
-    public function getPolicycontroller()
-    {
-    }
-    /**
-     * RBAC Role Binding Actuation state
-     *
-     * @param RBACRoleBindingActuationState $rbacrolebindingactuation
-     */
-    public function setRbacrolebindingactuation(RBACRoleBindingActuationState $rbacrolebindingactuation)
-    {
-    }
-    /**
-     * @return RBACRoleBindingActuationState
-     */
-    public function getRbacrolebindingactuation()
-    {
-    }
-    /**
-     * Service mesh state
-     *
-     * @param ServiceMeshState $servicemesh
-     */
-    public function setServicemesh(ServiceMeshState $servicemesh)
-    {
-    }
-    /**
-     * @return ServiceMeshState
-     */
-    public function getServicemesh()
-    {
-    }
-    /**
-     * The high-level state of this MembershipFeature.
-     *
-     * @param State $state
-     */
-    public function setState(State $state)
-    {
-    }
-    /**
-     * @return State
-     */
-    public function getState()
+    class Google_Service_GKEHub_FeatureState extends \Google\Service\GKEHub\FeatureState
     {
     }
 }

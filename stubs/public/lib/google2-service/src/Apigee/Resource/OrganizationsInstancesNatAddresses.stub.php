@@ -21,96 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "natAddresses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $natAddresses = $apigeeService->organizations_instances_natAddresses;
- *  </code>
- */
-class OrganizationsInstancesNatAddresses extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ActivateNatAddressRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListNatAddressesResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1NatAddress;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Activates the NAT address. The Apigee instance can now use this for Internet
-     * egress traffic. **Note:** Not supported for Apigee hybrid.
-     * (natAddresses.activate)
-     *
-     * @param string $name Required. Name of the nat address. Use the following
-     * structure in your request:
-     * `organizations/{org}/instances/{instances}/natAddresses/{nataddress}``
-     * @param GoogleCloudApigeeV1ActivateNatAddressRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "natAddresses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $natAddresses = $apigeeService->organizations_instances_natAddresses;
+     *  </code>
      */
-    public function activate($name, GoogleCloudApigeeV1ActivateNatAddressRequest $postBody, $optParams = [])
+    class OrganizationsInstancesNatAddresses extends \Google\Service\Resource
     {
+        /**
+         * Activates the NAT address. The Apigee instance can now use this for Internet
+         * egress traffic. **Note:** Not supported for Apigee hybrid.
+         * (natAddresses.activate)
+         *
+         * @param string $name Required. Name of the nat address. Use the following
+         * structure in your request:
+         * `organizations/{org}/instances/{instances}/natAddresses/{nataddress}``
+         * @param GoogleCloudApigeeV1ActivateNatAddressRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function activate($name, GoogleCloudApigeeV1ActivateNatAddressRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a NAT address. The address is created in the RESERVED state and a
+         * static external IP address will be provisioned. At this time, the instance
+         * will not use this IP address for Internet egress traffic. The address can be
+         * activated for use once any required firewall IP whitelisting has been
+         * completed. **Note:** Not supported for Apigee hybrid. (natAddresses.create)
+         *
+         * @param string $parent Required. Name of the instance. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`
+         * @param GoogleCloudApigeeV1NatAddress $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1NatAddress $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the NAT address. Connections that are actively using the address are
+         * drained before it is removed. **Note:** Not supported for Apigee hybrid.
+         * (natAddresses.delete)
+         *
+         * @param string $name Required. Name of the nat address. Use the following
+         * structure in your request:
+         * `organizations/{org}/instances/{instances}/natAddresses/{nataddress}``
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details of a NAT address. **Note:** Not supported for Apigee hybrid.
+         * (natAddresses.get)
+         *
+         * @param string $name Required. Name of the nat address. Use the following
+         * structure in your request:
+         * `organizations/{org}/instances/{instances}/natAddresses/{nataddress}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1NatAddress
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the NAT addresses for an Apigee instance. **Note:** Not supported for
+         * Apigee hybrid. (natAddresses.listOrganizationsInstancesNatAddresses)
+         *
+         * @param string $parent Required. Name of the instance. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of natAddresses to return. Defaults to
+         * 25.
+         * @opt_param string pageToken Page token, returned from a previous
+         * ListNatAddresses call, that you can use to retrieve the next page of content.
+         * @return GoogleCloudApigeeV1ListNatAddressesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsInstancesNatAddresses($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a NAT address. The address is created in the RESERVED state and a
-     * static external IP address will be provisioned. At this time, the instance
-     * will not use this IP address for Internet egress traffic. The address can be
-     * activated for use once any required firewall IP whitelisting has been
-     * completed. **Note:** Not supported for Apigee hybrid. (natAddresses.create)
-     *
-     * @param string $parent Required. Name of the instance. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`
-     * @param GoogleCloudApigeeV1NatAddress $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsInstancesNatAddresses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, GoogleCloudApigeeV1NatAddress $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes the NAT address. Connections that are actively using the address are
-     * drained before it is removed. **Note:** Not supported for Apigee hybrid.
-     * (natAddresses.delete)
-     *
-     * @param string $name Required. Name of the nat address. Use the following
-     * structure in your request:
-     * `organizations/{org}/instances/{instances}/natAddresses/{nataddress}``
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the details of a NAT address. **Note:** Not supported for Apigee hybrid.
-     * (natAddresses.get)
-     *
-     * @param string $name Required. Name of the nat address. Use the following
-     * structure in your request:
-     * `organizations/{org}/instances/{instances}/natAddresses/{nataddress}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1NatAddress
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the NAT addresses for an Apigee instance. **Note:** Not supported for
-     * Apigee hybrid. (natAddresses.listOrganizationsInstancesNatAddresses)
-     *
-     * @param string $parent Required. Name of the instance. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of natAddresses to return. Defaults to
-     * 25.
-     * @opt_param string pageToken Page token, returned from a previous
-     * ListNatAddresses call, that you can use to retrieve the next page of content.
-     * @return GoogleCloudApigeeV1ListNatAddressesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsInstancesNatAddresses($parent, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsInstancesNatAddresses extends \Google\Service\Apigee\Resource\OrganizationsInstancesNatAddresses
     {
     }
 }

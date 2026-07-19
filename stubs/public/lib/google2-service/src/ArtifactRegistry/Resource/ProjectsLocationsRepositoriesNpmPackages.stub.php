@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "npmPackages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $npmPackages = $artifactregistryService->projects_locations_repositories_npmPackages;
- *  </code>
- */
-class ProjectsLocationsRepositoriesNpmPackages extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ListNpmPackagesResponse;
+    use Google\Service\ArtifactRegistry\NpmPackage;
     /**
-     * Gets a npm package. (npmPackages.get)
-     *
-     * @param string $name Required. The name of the npm package.
-     * @param array $optParams Optional parameters.
-     * @return NpmPackage
-     * @throws \Google\Service\Exception
+     * The "npmPackages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $npmPackages = $artifactregistryService->projects_locations_repositories_npmPackages;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRepositoriesNpmPackages extends \Google\Service\Resource
     {
+        /**
+         * Gets a npm package. (npmPackages.get)
+         *
+         * @param string $name Required. The name of the npm package.
+         * @param array $optParams Optional parameters.
+         * @return NpmPackage
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists npm packages.
+         * (npmPackages.listProjectsLocationsRepositoriesNpmPackages)
+         *
+         * @param string $parent Required. The name of the parent resource whose npm
+         * packages will be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of artifacts to return. Maximum
+         * page size is 1,000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request, if any.
+         * @return ListNpmPackagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesNpmPackages($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists npm packages.
-     * (npmPackages.listProjectsLocationsRepositoriesNpmPackages)
-     *
-     * @param string $parent Required. The name of the parent resource whose npm
-     * packages will be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of artifacts to return. Maximum
-     * page size is 1,000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request, if any.
-     * @return ListNpmPackagesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesNpmPackages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRepositoriesNpmPackages($parent, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesNpmPackages extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesNpmPackages
     {
     }
 }

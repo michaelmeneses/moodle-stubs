@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TensorboardTimeSeriesMetadata extends \Google\Model
-{
-    /**
-     * Output only. The largest blob sequence length (number of blobs) of all data
-     * points in this time series, if its ValueType is BLOB_SEQUENCE.
-     *
-     * @var string
-     */
-    public $maxBlobSequenceLength;
-    /**
-     * Output only. Max step index of all data points within a
-     * TensorboardTimeSeries.
-     *
-     * @var string
-     */
-    public $maxStep;
-    /**
-     * Output only. Max wall clock timestamp of all data points within a
-     * TensorboardTimeSeries.
-     *
-     * @var string
-     */
-    public $maxWallTime;
-    /**
-     * Output only. The largest blob sequence length (number of blobs) of all data
-     * points in this time series, if its ValueType is BLOB_SEQUENCE.
-     *
-     * @param string $maxBlobSequenceLength
-     */
-    public function setMaxBlobSequenceLength($maxBlobSequenceLength)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TensorboardTimeSeriesMetadata extends \Google\Model
     {
+        /**
+         * Output only. The largest blob sequence length (number of blobs) of all data
+         * points in this time series, if its ValueType is BLOB_SEQUENCE.
+         *
+         * @var string
+         */
+        public $maxBlobSequenceLength;
+        /**
+         * Output only. Max step index of all data points within a
+         * TensorboardTimeSeries.
+         *
+         * @var string
+         */
+        public $maxStep;
+        /**
+         * Output only. Max wall clock timestamp of all data points within a
+         * TensorboardTimeSeries.
+         *
+         * @var string
+         */
+        public $maxWallTime;
+        /**
+         * Output only. The largest blob sequence length (number of blobs) of all data
+         * points in this time series, if its ValueType is BLOB_SEQUENCE.
+         *
+         * @param string $maxBlobSequenceLength
+         */
+        public function setMaxBlobSequenceLength($maxBlobSequenceLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxBlobSequenceLength()
+        {
+        }
+        /**
+         * Output only. Max step index of all data points within a
+         * TensorboardTimeSeries.
+         *
+         * @param string $maxStep
+         */
+        public function setMaxStep($maxStep)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxStep()
+        {
+        }
+        /**
+         * Output only. Max wall clock timestamp of all data points within a
+         * TensorboardTimeSeries.
+         *
+         * @param string $maxWallTime
+         */
+        public function setMaxWallTime($maxWallTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxWallTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardTimeSeriesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxBlobSequenceLength()
-    {
-    }
-    /**
-     * Output only. Max step index of all data points within a
-     * TensorboardTimeSeries.
-     *
-     * @param string $maxStep
-     */
-    public function setMaxStep($maxStep)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxStep()
-    {
-    }
-    /**
-     * Output only. Max wall clock timestamp of all data points within a
-     * TensorboardTimeSeries.
-     *
-     * @param string $maxWallTime
-     */
-    public function setMaxWallTime($maxWallTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxWallTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TensorboardTimeSeriesMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardTimeSeriesMetadata
     {
     }
 }

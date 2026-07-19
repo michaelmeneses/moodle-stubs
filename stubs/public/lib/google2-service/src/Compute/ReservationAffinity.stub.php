@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationAffinity extends \Google\Collection
-{
-    /**
-     * Consume any allocation available.
-     */
-    public const CONSUME_RESERVATION_TYPE_ANY_RESERVATION = 'ANY_RESERVATION';
-    /**
-     * Do not consume from any allocated capacity.
-     */
-    public const CONSUME_RESERVATION_TYPE_NO_RESERVATION = 'NO_RESERVATION';
-    /**
-     * Must consume from a specific reservation. Must specify key value fields for
-     * specifying the reservations.
-     */
-    public const CONSUME_RESERVATION_TYPE_SPECIFIC_RESERVATION = 'SPECIFIC_RESERVATION';
-    public const CONSUME_RESERVATION_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    protected $collection_key = 'values';
-    /**
-     * Specifies the type of reservation from which this instance can consume
-     * resources: ANY_RESERVATION (default),SPECIFIC_RESERVATION, or
-     * NO_RESERVATION. See Consuming reserved instances for examples.
-     *
-     * @var string
-     */
-    public $consumeReservationType;
-    /**
-     * Corresponds to the label key of a reservation resource. To target
-     * aSPECIFIC_RESERVATION by name, specifygoogleapis.com/reservation-name as
-     * the key and specify the name of your reservation as its value.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Corresponds to the label values of a reservation resource. This can be
-     * either a name to a reservation in the same project or "projects/different-
-     * project/reservations/some-reservation-name" to target a shared reservation
-     * in the same zone but in a different project.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Specifies the type of reservation from which this instance can consume
-     * resources: ANY_RESERVATION (default),SPECIFIC_RESERVATION, or
-     * NO_RESERVATION. See Consuming reserved instances for examples.
-     *
-     * Accepted values: ANY_RESERVATION, NO_RESERVATION, SPECIFIC_RESERVATION,
-     * UNSPECIFIED
-     *
-     * @param self::CONSUME_RESERVATION_TYPE_* $consumeReservationType
-     */
-    public function setConsumeReservationType($consumeReservationType)
+namespace Google\Service\Compute {
+    class ReservationAffinity extends \Google\Collection
     {
+        /**
+         * Consume any allocation available.
+         */
+        public const CONSUME_RESERVATION_TYPE_ANY_RESERVATION = 'ANY_RESERVATION';
+        /**
+         * Do not consume from any allocated capacity.
+         */
+        public const CONSUME_RESERVATION_TYPE_NO_RESERVATION = 'NO_RESERVATION';
+        /**
+         * Must consume from a specific reservation. Must specify key value fields for
+         * specifying the reservations.
+         */
+        public const CONSUME_RESERVATION_TYPE_SPECIFIC_RESERVATION = 'SPECIFIC_RESERVATION';
+        public const CONSUME_RESERVATION_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        protected $collection_key = 'values';
+        /**
+         * Specifies the type of reservation from which this instance can consume
+         * resources: ANY_RESERVATION (default),SPECIFIC_RESERVATION, or
+         * NO_RESERVATION. See Consuming reserved instances for examples.
+         *
+         * @var string
+         */
+        public $consumeReservationType;
+        /**
+         * Corresponds to the label key of a reservation resource. To target
+         * aSPECIFIC_RESERVATION by name, specifygoogleapis.com/reservation-name as
+         * the key and specify the name of your reservation as its value.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Corresponds to the label values of a reservation resource. This can be
+         * either a name to a reservation in the same project or "projects/different-
+         * project/reservations/some-reservation-name" to target a shared reservation
+         * in the same zone but in a different project.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Specifies the type of reservation from which this instance can consume
+         * resources: ANY_RESERVATION (default),SPECIFIC_RESERVATION, or
+         * NO_RESERVATION. See Consuming reserved instances for examples.
+         *
+         * Accepted values: ANY_RESERVATION, NO_RESERVATION, SPECIFIC_RESERVATION,
+         * UNSPECIFIED
+         *
+         * @param self::CONSUME_RESERVATION_TYPE_* $consumeReservationType
+         */
+        public function setConsumeReservationType($consumeReservationType)
+        {
+        }
+        /**
+         * @return self::CONSUME_RESERVATION_TYPE_*
+         */
+        public function getConsumeReservationType()
+        {
+        }
+        /**
+         * Corresponds to the label key of a reservation resource. To target
+         * aSPECIFIC_RESERVATION by name, specifygoogleapis.com/reservation-name as
+         * the key and specify the name of your reservation as its value.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Corresponds to the label values of a reservation resource. This can be
+         * either a name to a reservation in the same project or "projects/different-
+         * project/reservations/some-reservation-name" to target a shared reservation
+         * in the same zone but in a different project.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONSUME_RESERVATION_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\ReservationAffinity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumeReservationType()
-    {
-    }
-    /**
-     * Corresponds to the label key of a reservation resource. To target
-     * aSPECIFIC_RESERVATION by name, specifygoogleapis.com/reservation-name as
-     * the key and specify the name of your reservation as its value.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Corresponds to the label values of a reservation resource. This can be
-     * either a name to a reservation in the same project or "projects/different-
-     * project/reservations/some-reservation-name" to target a shared reservation
-     * in the same zone but in a different project.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Compute_ReservationAffinity extends \Google\Service\Compute\ReservationAffinity
     {
     }
 }

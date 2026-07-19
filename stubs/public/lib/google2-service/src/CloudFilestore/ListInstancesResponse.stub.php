@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * The token you can use to retrieve the next page of results. Not returned if
-     * there are no more results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unordered list. Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of instances in the project for the specified location. If the
-     * `{location}` value in the request is "-", the response contains a list of
-     * instances from all locations. If any location is unreachable, the response
-     * will only return instances in reachable locations and the "unreachable"
-     * field will be populated with a list of unreachable locations.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\CloudFilestore {
+    class ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * The token you can use to retrieve the next page of results. Not returned if
+         * there are no more results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unordered list. Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of instances in the project for the specified location. If the
+         * `{location}` value in the request is "-", the response contains a list of
+         * instances from all locations. If any location is unreachable, the response
+         * will only return instances in reachable locations and the "unreachable"
+         * field will be populated with a list of unreachable locations.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * The token you can use to retrieve the next page of results. Not returned if
+         * there are no more results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unordered list. Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance[]
+     * Runtime class alias of \Google\Service\CloudFilestore\ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * The token you can use to retrieve the next page of results. Not returned if
-     * there are no more results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unordered list. Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudFilestore_ListInstancesResponse extends \Google\Service\CloudFilestore\ListInstancesResponse
     {
     }
 }

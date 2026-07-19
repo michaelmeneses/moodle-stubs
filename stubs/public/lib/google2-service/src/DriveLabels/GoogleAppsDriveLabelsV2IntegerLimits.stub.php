@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2IntegerLimits extends \Google\Model
-{
-    /**
-     * Maximum value for an integer field type.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Minimum value for an integer field type.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * Maximum value for an integer field type.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2IntegerLimits extends \Google\Model
     {
+        /**
+         * Maximum value for an integer field type.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Minimum value for an integer field type.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * Maximum value for an integer field type.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Minimum value for an integer field type.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2IntegerLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Minimum value for an integer field type.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2IntegerLimits extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2IntegerLimits
     {
     }
 }

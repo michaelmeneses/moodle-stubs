@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1MetricValue extends \Google\Model
-{
-    protected $decimalValueType = GoogleTypeDecimal::class;
-    protected $decimalValueDataType = '';
-    protected $decimalValueConfidenceIntervalType = GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval::class;
-    protected $decimalValueConfidenceIntervalDataType = '';
-    /**
-     * Name of the metric.
-     *
-     * @var string
-     */
-    public $metric;
-    /**
-     * Actual value, represented as a decimal number.
-     *
-     * @param GoogleTypeDecimal $decimalValue
-     */
-    public function setDecimalValue(GoogleTypeDecimal $decimalValue)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1MetricValue extends \Google\Model
     {
+        protected $decimalValueType = GoogleTypeDecimal::class;
+        protected $decimalValueDataType = '';
+        protected $decimalValueConfidenceIntervalType = GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval::class;
+        protected $decimalValueConfidenceIntervalDataType = '';
+        /**
+         * Name of the metric.
+         *
+         * @var string
+         */
+        public $metric;
+        /**
+         * Actual value, represented as a decimal number.
+         *
+         * @param GoogleTypeDecimal $decimalValue
+         */
+        public function setDecimalValue(GoogleTypeDecimal $decimalValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDecimal
+         */
+        public function getDecimalValue()
+        {
+        }
+        /**
+         * Confidence interval of a value that is of type `type.Decimal`.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval $decimalValueConfidenceInterval
+         */
+        public function setDecimalValueConfidenceInterval(GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval $decimalValueConfidenceInterval)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval
+         */
+        public function getDecimalValueConfidenceInterval()
+        {
+        }
+        /**
+         * Name of the metric.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDecimal
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1MetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDecimalValue()
-    {
-    }
-    /**
-     * Confidence interval of a value that is of type `type.Decimal`.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval $decimalValueConfidenceInterval
-     */
-    public function setDecimalValueConfidenceInterval(GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval $decimalValueConfidenceInterval)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval
-     */
-    public function getDecimalValueConfidenceInterval()
-    {
-    }
-    /**
-     * Name of the metric.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1MetricValue extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1MetricValue
     {
     }
 }

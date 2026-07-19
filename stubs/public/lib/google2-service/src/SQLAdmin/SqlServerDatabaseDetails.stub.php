@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlServerDatabaseDetails extends \Google\Model
-{
-    /**
-     * The version of SQL Server with which the database is to be made compatible
-     *
-     * @var int
-     */
-    public $compatibilityLevel;
-    /**
-     * The recovery model of a SQL Server database
-     *
-     * @var string
-     */
-    public $recoveryModel;
-    /**
-     * The version of SQL Server with which the database is to be made compatible
-     *
-     * @param int $compatibilityLevel
-     */
-    public function setCompatibilityLevel($compatibilityLevel)
+namespace Google\Service\SQLAdmin {
+    class SqlServerDatabaseDetails extends \Google\Model
     {
+        /**
+         * The version of SQL Server with which the database is to be made compatible
+         *
+         * @var int
+         */
+        public $compatibilityLevel;
+        /**
+         * The recovery model of a SQL Server database
+         *
+         * @var string
+         */
+        public $recoveryModel;
+        /**
+         * The version of SQL Server with which the database is to be made compatible
+         *
+         * @param int $compatibilityLevel
+         */
+        public function setCompatibilityLevel($compatibilityLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompatibilityLevel()
+        {
+        }
+        /**
+         * The recovery model of a SQL Server database
+         *
+         * @param string $recoveryModel
+         */
+        public function setRecoveryModel($recoveryModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecoveryModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlServerDatabaseDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompatibilityLevel()
-    {
-    }
-    /**
-     * The recovery model of a SQL Server database
-     *
-     * @param string $recoveryModel
-     */
-    public function setRecoveryModel($recoveryModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecoveryModel()
+    class Google_Service_SQLAdmin_SqlServerDatabaseDetails extends \Google\Service\SQLAdmin\SqlServerDatabaseDetails
     {
     }
 }

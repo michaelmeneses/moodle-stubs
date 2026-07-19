@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class QueryHubStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'hubStatusEntries';
-    protected $hubStatusEntriesType = HubStatusEntry::class;
-    protected $hubStatusEntriesDataType = 'array';
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of hub status.
-     *
-     * @param HubStatusEntry[] $hubStatusEntries
-     */
-    public function setHubStatusEntries($hubStatusEntries)
+namespace Google\Service\Networkconnectivity {
+    class QueryHubStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'hubStatusEntries';
+        protected $hubStatusEntriesType = HubStatusEntry::class;
+        protected $hubStatusEntriesDataType = 'array';
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of hub status.
+         *
+         * @param HubStatusEntry[] $hubStatusEntries
+         */
+        public function setHubStatusEntries($hubStatusEntries)
+        {
+        }
+        /**
+         * @return HubStatusEntry[]
+         */
+        public function getHubStatusEntries()
+        {
+        }
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HubStatusEntry[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\QueryHubStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHubStatusEntries()
-    {
-    }
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Networkconnectivity_QueryHubStatusResponse extends \Google\Service\Networkconnectivity\QueryHubStatusResponse
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class UploadAccountResponse extends \Google\Collection
-{
-    protected $collection_key = 'error';
-    protected $errorType = UploadAccountResponseError::class;
-    protected $errorDataType = 'array';
-    /**
-     * The fixed string "identitytoolkit#UploadAccountResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The error encountered while processing the account info.
-     *
-     * @param UploadAccountResponseError[] $error
-     */
-    public function setError($error)
+namespace Google\Service\IdentityToolkit {
+    class UploadAccountResponse extends \Google\Collection
     {
+        protected $collection_key = 'error';
+        protected $errorType = UploadAccountResponseError::class;
+        protected $errorDataType = 'array';
+        /**
+         * The fixed string "identitytoolkit#UploadAccountResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The error encountered while processing the account info.
+         *
+         * @param UploadAccountResponseError[] $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return UploadAccountResponseError[]
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#UploadAccountResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UploadAccountResponseError[]
+     * Runtime class alias of \Google\Service\IdentityToolkit\UploadAccountResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#UploadAccountResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_IdentityToolkit_UploadAccountResponse extends \Google\Service\IdentityToolkit\UploadAccountResponse
     {
     }
 }

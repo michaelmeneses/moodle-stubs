@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ControlPromoteAction extends \Google\Model
-{
-    /**
-     * Required. Data store with which this promotion is attached to.
-     *
-     * @var string
-     */
-    public $dataStore;
-    protected $searchLinkPromotionType = GoogleCloudDiscoveryengineV1SearchLinkPromotion::class;
-    protected $searchLinkPromotionDataType = '';
-    /**
-     * Required. Data store with which this promotion is attached to.
-     *
-     * @param string $dataStore
-     */
-    public function setDataStore($dataStore)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ControlPromoteAction extends \Google\Model
     {
+        /**
+         * Required. Data store with which this promotion is attached to.
+         *
+         * @var string
+         */
+        public $dataStore;
+        protected $searchLinkPromotionType = GoogleCloudDiscoveryengineV1SearchLinkPromotion::class;
+        protected $searchLinkPromotionDataType = '';
+        /**
+         * Required. Data store with which this promotion is attached to.
+         *
+         * @param string $dataStore
+         */
+        public function setDataStore($dataStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataStore()
+        {
+        }
+        /**
+         * Required. Promotion attached to this action.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchLinkPromotion $searchLinkPromotion
+         */
+        public function setSearchLinkPromotion(GoogleCloudDiscoveryengineV1SearchLinkPromotion $searchLinkPromotion)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchLinkPromotion
+         */
+        public function getSearchLinkPromotion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ControlPromoteAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStore()
-    {
-    }
-    /**
-     * Required. Promotion attached to this action.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchLinkPromotion $searchLinkPromotion
-     */
-    public function setSearchLinkPromotion(GoogleCloudDiscoveryengineV1SearchLinkPromotion $searchLinkPromotion)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchLinkPromotion
-     */
-    public function getSearchLinkPromotion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ControlPromoteAction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ControlPromoteAction
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class CancelOperationRequest extends \Google\Model
-{
+namespace Google\Service\AccessContextManager {
+    class CancelOperationRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AccessContextManager\CancelOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AccessContextManager_CancelOperationRequest extends \Google\Service\AccessContextManager\CancelOperationRequest
+    {
+    }
 }

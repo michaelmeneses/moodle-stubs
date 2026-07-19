@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class PitrSettings extends \Google\Model
-{
-    /**
-     * Output only. Number of days to retain the backup.
-     *
-     * @var int
-     */
-    public $retentionDays;
-    /**
-     * Output only. Number of days to retain the backup.
-     *
-     * @param int $retentionDays
-     */
-    public function setRetentionDays($retentionDays)
+namespace Google\Service\Backupdr {
+    class PitrSettings extends \Google\Model
     {
+        /**
+         * Output only. Number of days to retain the backup.
+         *
+         * @var int
+         */
+        public $retentionDays;
+        /**
+         * Output only. Number of days to retain the backup.
+         *
+         * @param int $retentionDays
+         */
+        public function setRetentionDays($retentionDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRetentionDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Backupdr\PitrSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetentionDays()
+    class Google_Service_Backupdr_PitrSettings extends \Google\Service\Backupdr\PitrSettings
     {
     }
 }

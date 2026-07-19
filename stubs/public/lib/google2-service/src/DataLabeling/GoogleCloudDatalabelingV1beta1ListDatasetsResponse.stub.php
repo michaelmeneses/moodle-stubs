@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ListDatasetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'datasets';
-    protected $datasetsType = GoogleCloudDatalabelingV1beta1Dataset::class;
-    protected $datasetsDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of datasets to return.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Dataset[] $datasets
-     */
-    public function setDatasets($datasets)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ListDatasetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'datasets';
+        protected $datasetsType = GoogleCloudDatalabelingV1beta1Dataset::class;
+        protected $datasetsDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of datasets to return.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Dataset[] $datasets
+         */
+        public function setDatasets($datasets)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Dataset[]
+         */
+        public function getDatasets()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Dataset[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListDatasetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasets()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ListDatasetsResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListDatasetsResponse
     {
     }
 }

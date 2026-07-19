@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class SubscriptionSubscriberSnippet extends \Google\Model
-{
-    /**
-     * The channel ID of the subscriber.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The description of the subscriber.
-     *
-     * @var string
-     */
-    public $description;
-    protected $thumbnailsType = ThumbnailDetails::class;
-    protected $thumbnailsDataType = '';
-    /**
-     * The title of the subscriber.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The channel ID of the subscriber.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\YouTube {
+    class SubscriptionSubscriberSnippet extends \Google\Model
     {
+        /**
+         * The channel ID of the subscriber.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The description of the subscriber.
+         *
+         * @var string
+         */
+        public $description;
+        protected $thumbnailsType = ThumbnailDetails::class;
+        protected $thumbnailsDataType = '';
+        /**
+         * The title of the subscriber.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The channel ID of the subscriber.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The description of the subscriber.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Thumbnails for this subscriber.
+         *
+         * @param ThumbnailDetails $thumbnails
+         */
+        public function setThumbnails(ThumbnailDetails $thumbnails)
+        {
+        }
+        /**
+         * @return ThumbnailDetails
+         */
+        public function getThumbnails()
+        {
+        }
+        /**
+         * The title of the subscriber.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\SubscriptionSubscriberSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The description of the subscriber.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Thumbnails for this subscriber.
-     *
-     * @param ThumbnailDetails $thumbnails
-     */
-    public function setThumbnails(ThumbnailDetails $thumbnails)
-    {
-    }
-    /**
-     * @return ThumbnailDetails
-     */
-    public function getThumbnails()
-    {
-    }
-    /**
-     * The title of the subscriber.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_SubscriptionSubscriberSnippet extends \Google\Service\YouTube\SubscriptionSubscriberSnippet
     {
     }
 }

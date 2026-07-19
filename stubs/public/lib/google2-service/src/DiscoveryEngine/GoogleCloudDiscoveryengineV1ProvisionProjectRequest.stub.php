@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ProvisionProjectRequest extends \Google\Model
-{
-    /**
-     * Required. Set to `true` to specify that caller has read and would like to
-     * give consent to the [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms).
-     *
-     * @var bool
-     */
-    public $acceptDataUseTerms;
-    /**
-     * Required. The version of the [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms) that caller has read
-     * and would like to give consent to. Acceptable version is `2022-11-23`, and
-     * this may change over time.
-     *
-     * @var string
-     */
-    public $dataUseTermsVersion;
-    protected $saasParamsType = GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams::class;
-    protected $saasParamsDataType = '';
-    /**
-     * Required. Set to `true` to specify that caller has read and would like to
-     * give consent to the [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms).
-     *
-     * @param bool $acceptDataUseTerms
-     */
-    public function setAcceptDataUseTerms($acceptDataUseTerms)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ProvisionProjectRequest extends \Google\Model
     {
+        /**
+         * Required. Set to `true` to specify that caller has read and would like to
+         * give consent to the [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms).
+         *
+         * @var bool
+         */
+        public $acceptDataUseTerms;
+        /**
+         * Required. The version of the [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms) that caller has read
+         * and would like to give consent to. Acceptable version is `2022-11-23`, and
+         * this may change over time.
+         *
+         * @var string
+         */
+        public $dataUseTermsVersion;
+        protected $saasParamsType = GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams::class;
+        protected $saasParamsDataType = '';
+        /**
+         * Required. Set to `true` to specify that caller has read and would like to
+         * give consent to the [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms).
+         *
+         * @param bool $acceptDataUseTerms
+         */
+        public function setAcceptDataUseTerms($acceptDataUseTerms)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcceptDataUseTerms()
+        {
+        }
+        /**
+         * Required. The version of the [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms) that caller has read
+         * and would like to give consent to. Acceptable version is `2022-11-23`, and
+         * this may change over time.
+         *
+         * @param string $dataUseTermsVersion
+         */
+        public function setDataUseTermsVersion($dataUseTermsVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataUseTermsVersion()
+        {
+        }
+        /**
+         * Optional. Parameters for Agentspace.
+         *
+         * @param GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams $saasParams
+         */
+        public function setSaasParams(GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams $saasParams)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams
+         */
+        public function getSaasParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProvisionProjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptDataUseTerms()
-    {
-    }
-    /**
-     * Required. The version of the [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms) that caller has read
-     * and would like to give consent to. Acceptable version is `2022-11-23`, and
-     * this may change over time.
-     *
-     * @param string $dataUseTermsVersion
-     */
-    public function setDataUseTermsVersion($dataUseTermsVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataUseTermsVersion()
-    {
-    }
-    /**
-     * Optional. Parameters for Agentspace.
-     *
-     * @param GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams $saasParams
-     */
-    public function setSaasParams(GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams $saasParams)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams
-     */
-    public function getSaasParams()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ProvisionProjectRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProvisionProjectRequest
     {
     }
 }

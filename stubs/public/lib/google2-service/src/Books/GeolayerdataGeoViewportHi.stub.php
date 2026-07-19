@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class GeolayerdataGeoViewportHi extends \Google\Model
-{
-    public $latitude;
-    public $longitude;
-    public function setLatitude($latitude)
+namespace Google\Service\Books {
+    class GeolayerdataGeoViewportHi extends \Google\Model
     {
+        public $latitude;
+        public $longitude;
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
     }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\GeolayerdataGeoViewportHi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_GeolayerdataGeoViewportHi extends \Google\Service\Books\GeolayerdataGeoViewportHi
     {
     }
 }

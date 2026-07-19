@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class GoogleCloudRedisV1ZoneMetadata extends \Google\Model
-{
+namespace Google\Service\CloudRedis {
+    class GoogleCloudRedisV1ZoneMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRedis\GoogleCloudRedisV1ZoneMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRedis_GoogleCloudRedisV1ZoneMetadata extends \Google\Service\CloudRedis\GoogleCloudRedisV1ZoneMetadata
+    {
+    }
 }

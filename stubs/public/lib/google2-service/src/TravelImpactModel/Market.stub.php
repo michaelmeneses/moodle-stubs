@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class Market extends \Google\Model
-{
-    /**
-     * Required. IATA airport code for flight destination, e.g. "JFK".
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * Required. IATA airport code for flight origin, e.g. "LHR".
-     *
-     * @var string
-     */
-    public $origin;
-    /**
-     * Required. IATA airport code for flight destination, e.g. "JFK".
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
+namespace Google\Service\TravelImpactModel {
+    class Market extends \Google\Model
     {
+        /**
+         * Required. IATA airport code for flight destination, e.g. "JFK".
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * Required. IATA airport code for flight origin, e.g. "LHR".
+         *
+         * @var string
+         */
+        public $origin;
+        /**
+         * Required. IATA airport code for flight destination, e.g. "JFK".
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Required. IATA airport code for flight origin, e.g. "LHR".
+         *
+         * @param string $origin
+         */
+        public function setOrigin($origin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrigin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TravelImpactModel\Market registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
-    {
-    }
-    /**
-     * Required. IATA airport code for flight origin, e.g. "LHR".
-     *
-     * @param string $origin
-     */
-    public function setOrigin($origin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrigin()
+    class Google_Service_TravelImpactModel_Market extends \Google\Service\TravelImpactModel\Market
     {
     }
 }

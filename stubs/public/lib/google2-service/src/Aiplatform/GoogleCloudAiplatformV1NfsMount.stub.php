@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NfsMount extends \Google\Model
-{
-    /**
-     * Required. Destination mount path. The NFS will be mounted for the user
-     * under /mnt/nfs/
-     *
-     * @var string
-     */
-    public $mountPoint;
-    /**
-     * Required. Source path exported from NFS server. Has to start with '/', and
-     * combined with the ip address, it indicates the source mount path in the
-     * form of `server:path`
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. IP address of the NFS server.
-     *
-     * @var string
-     */
-    public $server;
-    /**
-     * Required. Destination mount path. The NFS will be mounted for the user
-     * under /mnt/nfs/
-     *
-     * @param string $mountPoint
-     */
-    public function setMountPoint($mountPoint)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NfsMount extends \Google\Model
     {
+        /**
+         * Required. Destination mount path. The NFS will be mounted for the user
+         * under /mnt/nfs/
+         *
+         * @var string
+         */
+        public $mountPoint;
+        /**
+         * Required. Source path exported from NFS server. Has to start with '/', and
+         * combined with the ip address, it indicates the source mount path in the
+         * form of `server:path`
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. IP address of the NFS server.
+         *
+         * @var string
+         */
+        public $server;
+        /**
+         * Required. Destination mount path. The NFS will be mounted for the user
+         * under /mnt/nfs/
+         *
+         * @param string $mountPoint
+         */
+        public function setMountPoint($mountPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPoint()
+        {
+        }
+        /**
+         * Required. Source path exported from NFS server. Has to start with '/', and
+         * combined with the ip address, it indicates the source mount path in the
+         * form of `server:path`
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Required. IP address of the NFS server.
+         *
+         * @param string $server
+         */
+        public function setServer($server)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NfsMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMountPoint()
-    {
-    }
-    /**
-     * Required. Source path exported from NFS server. Has to start with '/', and
-     * combined with the ip address, it indicates the source mount path in the
-     * form of `server:path`
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Required. IP address of the NFS server.
-     *
-     * @param string $server
-     */
-    public function setServer($server)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServer()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NfsMount extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NfsMount
     {
     }
 }

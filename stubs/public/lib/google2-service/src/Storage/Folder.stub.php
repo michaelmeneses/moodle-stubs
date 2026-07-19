@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Folder extends \Google\Model
-{
-    /**
-     * The name of the bucket containing this folder.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * The creation time of the folder in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The ID of the folder, including the bucket name, folder name.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of item this is. For folders, this is always storage#folder.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The version of the metadata for this folder. Used for preconditions and for
-     * detecting changes in metadata.
-     *
-     * @var string
-     */
-    public $metageneration;
-    /**
-     * The name of the folder. Required if not specified by URL parameter.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pendingRenameInfoType = FolderPendingRenameInfo::class;
-    protected $pendingRenameInfoDataType = '';
-    /**
-     * The link to this folder.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The modification time of the folder metadata in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The name of the bucket containing this folder.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Storage {
+    class Folder extends \Google\Model
     {
+        /**
+         * The name of the bucket containing this folder.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * The creation time of the folder in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The ID of the folder, including the bucket name, folder name.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of item this is. For folders, this is always storage#folder.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The version of the metadata for this folder. Used for preconditions and for
+         * detecting changes in metadata.
+         *
+         * @var string
+         */
+        public $metageneration;
+        /**
+         * The name of the folder. Required if not specified by URL parameter.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pendingRenameInfoType = FolderPendingRenameInfo::class;
+        protected $pendingRenameInfoDataType = '';
+        /**
+         * The link to this folder.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The modification time of the folder metadata in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The name of the bucket containing this folder.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * The creation time of the folder in RFC 3339 format.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The ID of the folder, including the bucket name, folder name.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of item this is. For folders, this is always storage#folder.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The version of the metadata for this folder. Used for preconditions and for
+         * detecting changes in metadata.
+         *
+         * @param string $metageneration
+         */
+        public function setMetageneration($metageneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetageneration()
+        {
+        }
+        /**
+         * The name of the folder. Required if not specified by URL parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Only present if the folder is part of an ongoing rename folder operation.
+         * Contains information which can be used to query the operation status.
+         *
+         * @param FolderPendingRenameInfo $pendingRenameInfo
+         */
+        public function setPendingRenameInfo(FolderPendingRenameInfo $pendingRenameInfo)
+        {
+        }
+        /**
+         * @return FolderPendingRenameInfo
+         */
+        public function getPendingRenameInfo()
+        {
+        }
+        /**
+         * The link to this folder.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The modification time of the folder metadata in RFC 3339 format.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\Folder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * The creation time of the folder in RFC 3339 format.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The ID of the folder, including the bucket name, folder name.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of item this is. For folders, this is always storage#folder.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The version of the metadata for this folder. Used for preconditions and for
-     * detecting changes in metadata.
-     *
-     * @param string $metageneration
-     */
-    public function setMetageneration($metageneration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetageneration()
-    {
-    }
-    /**
-     * The name of the folder. Required if not specified by URL parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Only present if the folder is part of an ongoing rename folder operation.
-     * Contains information which can be used to query the operation status.
-     *
-     * @param FolderPendingRenameInfo $pendingRenameInfo
-     */
-    public function setPendingRenameInfo(FolderPendingRenameInfo $pendingRenameInfo)
-    {
-    }
-    /**
-     * @return FolderPendingRenameInfo
-     */
-    public function getPendingRenameInfo()
-    {
-    }
-    /**
-     * The link to this folder.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The modification time of the folder metadata in RFC 3339 format.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Storage_Folder extends \Google\Service\Storage\Folder
     {
     }
 }

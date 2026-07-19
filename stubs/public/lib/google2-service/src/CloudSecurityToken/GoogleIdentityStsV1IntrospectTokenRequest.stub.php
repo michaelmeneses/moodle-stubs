@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1IntrospectTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $token;
-    /**
-     * @var string
-     */
-    public $tokenTypeHint;
-    /**
-     * @param string
-     */
-    public function setToken($token)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1IntrospectTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $token;
+        /**
+         * @var string
+         */
+        public $tokenTypeHint;
+        /**
+         * @param string
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTokenTypeHint($tokenTypeHint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenTypeHint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1IntrospectTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTokenTypeHint($tokenTypeHint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenTypeHint()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1IntrospectTokenRequest extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1IntrospectTokenRequest
     {
     }
 }

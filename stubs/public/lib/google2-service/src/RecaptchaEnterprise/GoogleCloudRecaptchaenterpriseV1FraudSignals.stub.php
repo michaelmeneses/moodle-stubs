@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FraudSignals extends \Google\Model
-{
-    protected $cardSignalsType = GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals::class;
-    protected $cardSignalsDataType = '';
-    protected $userSignalsType = GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals::class;
-    protected $userSignalsDataType = '';
-    /**
-     * Output only. Signals describing the payment card or cards used in this
-     * transaction.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals $cardSignals
-     */
-    public function setCardSignals(GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals $cardSignals)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FraudSignals extends \Google\Model
     {
+        protected $cardSignalsType = GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals::class;
+        protected $cardSignalsDataType = '';
+        protected $userSignalsType = GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals::class;
+        protected $userSignalsDataType = '';
+        /**
+         * Output only. Signals describing the payment card or cards used in this
+         * transaction.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals $cardSignals
+         */
+        public function setCardSignals(GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals $cardSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals
+         */
+        public function getCardSignals()
+        {
+        }
+        /**
+         * Output only. Signals describing the end user in this transaction.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals $userSignals
+         */
+        public function setUserSignals(GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals $userSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals
+         */
+        public function getUserSignals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardSignals()
-    {
-    }
-    /**
-     * Output only. Signals describing the end user in this transaction.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals $userSignals
-     */
-    public function setUserSignals(GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals $userSignals)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals
-     */
-    public function getUserSignals()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FraudSignals extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudSignals
     {
     }
 }

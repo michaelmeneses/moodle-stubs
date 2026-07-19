@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaLiftSuspensionRequest extends \Google\Model
-{
-    /**
-     * User passed in suspension result and will be used to control workflow
-     * execution branching behavior by setting up corresponnding edge condition
-     * with suspension result. For example, if you want to lift the suspension,
-     * you can pass "Approved", or if you want to reject the suspension and
-     * terminate workfloe execution, you can pass "Rejected" and terminate the
-     * workflow execution with configuring the edge condition.
-     *
-     * @var string
-     */
-    public $suspensionResult;
-    /**
-     * User passed in suspension result and will be used to control workflow
-     * execution branching behavior by setting up corresponnding edge condition
-     * with suspension result. For example, if you want to lift the suspension,
-     * you can pass "Approved", or if you want to reject the suspension and
-     * terminate workfloe execution, you can pass "Rejected" and terminate the
-     * workflow execution with configuring the edge condition.
-     *
-     * @param string $suspensionResult
-     */
-    public function setSuspensionResult($suspensionResult)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaLiftSuspensionRequest extends \Google\Model
     {
+        /**
+         * User passed in suspension result and will be used to control workflow
+         * execution branching behavior by setting up corresponnding edge condition
+         * with suspension result. For example, if you want to lift the suspension,
+         * you can pass "Approved", or if you want to reject the suspension and
+         * terminate workfloe execution, you can pass "Rejected" and terminate the
+         * workflow execution with configuring the edge condition.
+         *
+         * @var string
+         */
+        public $suspensionResult;
+        /**
+         * User passed in suspension result and will be used to control workflow
+         * execution branching behavior by setting up corresponnding edge condition
+         * with suspension result. For example, if you want to lift the suspension,
+         * you can pass "Approved", or if you want to reject the suspension and
+         * terminate workfloe execution, you can pass "Rejected" and terminate the
+         * workflow execution with configuring the edge condition.
+         *
+         * @param string $suspensionResult
+         */
+        public function setSuspensionResult($suspensionResult)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuspensionResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLiftSuspensionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuspensionResult()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaLiftSuspensionRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLiftSuspensionRequest
     {
     }
 }

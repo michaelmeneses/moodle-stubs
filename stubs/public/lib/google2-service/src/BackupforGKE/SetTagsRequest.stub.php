@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class SetTagsRequest extends \Google\Model
-{
-    /**
-     * Optional. A checksum based on the current bindings which can be passed to
-     * prevent race conditions. If not passed, etag check would be skipped.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. A unique identifier for this request. Must be a valid UUID. This
-     * request is only idempotent if a `request_id` is provided.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. These bindings will override any bindings previously set and will
-     * be effective immediately. Each item in the map must be expressed as " : ".
-     * For example: "123/environment" : "production", "123/costCenter" :
-     * "marketing"
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Optional. A checksum based on the current bindings which can be passed to
-     * prevent race conditions. If not passed, etag check would be skipped.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\BackupforGKE {
+    class SetTagsRequest extends \Google\Model
     {
+        /**
+         * Optional. A checksum based on the current bindings which can be passed to
+         * prevent race conditions. If not passed, etag check would be skipped.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. A unique identifier for this request. Must be a valid UUID. This
+         * request is only idempotent if a `request_id` is provided.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. These bindings will override any bindings previously set and will
+         * be effective immediately. Each item in the map must be expressed as " : ".
+         * For example: "123/environment" : "production", "123/costCenter" :
+         * "marketing"
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Optional. A checksum based on the current bindings which can be passed to
+         * prevent race conditions. If not passed, etag check would be skipped.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. A unique identifier for this request. Must be a valid UUID. This
+         * request is only idempotent if a `request_id` is provided.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Required. These bindings will override any bindings previously set and will
+         * be effective immediately. Each item in the map must be expressed as " : ".
+         * For example: "123/environment" : "production", "123/costCenter" :
+         * "marketing"
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\SetTagsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. A unique identifier for this request. Must be a valid UUID. This
-     * request is only idempotent if a `request_id` is provided.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Required. These bindings will override any bindings previously set and will
-     * be effective immediately. Each item in the map must be expressed as " : ".
-     * For example: "123/environment" : "production", "123/costCenter" :
-     * "marketing"
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_BackupforGKE_SetTagsRequest extends \Google\Service\BackupforGKE\SetTagsRequest
     {
     }
 }

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\bank;
 
+use core\context;
+use core_course\cm_info;
+use JsonSerializable;
 /**
  * Data class to hold bank info and categories, and return them with formatted names for output.
  *
@@ -33,6 +36,10 @@ namespace core_question\local\bank;
 class formatted_bank implements JsonSerializable
 {
     /**
+     * @var bool True if the bank is the module currently being viewed.
+     */
+    public bool $current;
+    /**
      * Constructor
      *
      * @param cm_info $cminfo The course module info for the bank's course module
@@ -40,7 +47,6 @@ class formatted_bank implements JsonSerializable
      * @param array $questioncategories Array of categories belonging to the bank.
      * @param bool $shared True if the bank contains shared questions, false if it contains private questions.
      * @param bool $recent True if the bank was recently viewed by the user.
-     * @param bool $current True if the bank is the module currently being viewed.
      */
     public function __construct(
         /** @var cm_info $cminfo Course module info. */
@@ -52,9 +58,7 @@ class formatted_bank implements JsonSerializable
         /** @var bool True if the bank contains shared questions, false if it contains private questions. */
         public bool $shared,
         /** @var bool True if the bank was recently viewed by the user. */
-        public bool $recent,
-        /** @var bool True if the bank is the module currently being viewed. */
-        public bool $current = false
+        public bool $recent
     )
     {
     }

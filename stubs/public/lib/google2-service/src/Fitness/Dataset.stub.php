@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class Dataset extends \Google\Collection
-{
-    protected $collection_key = 'point';
-    /**
-     * The data stream ID of the data source that created the points in this
-     * dataset.
-     *
-     * @var string
-     */
-    public $dataSourceId;
-    /**
-     * The largest end time of all data points in this possibly partial
-     * representation of the dataset. Time is in nanoseconds from epoch. This
-     * should also match the second part of the dataset identifier.
-     *
-     * @var string
-     */
-    public $maxEndTimeNs;
-    /**
-     * The smallest start time of all data points in this possibly partial
-     * representation of the dataset. Time is in nanoseconds from epoch. This
-     * should also match the first part of the dataset identifier.
-     *
-     * @var string
-     */
-    public $minStartTimeNs;
-    /**
-     * This token will be set when a dataset is received in response to a GET
-     * request and the dataset is too large to be included in a single response.
-     * Provide this value in a subsequent GET request to return the next page of
-     * data points within this dataset.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pointType = DataPoint::class;
-    protected $pointDataType = 'array';
-    /**
-     * The data stream ID of the data source that created the points in this
-     * dataset.
-     *
-     * @param string $dataSourceId
-     */
-    public function setDataSourceId($dataSourceId)
+namespace Google\Service\Fitness {
+    class Dataset extends \Google\Collection
     {
+        protected $collection_key = 'point';
+        /**
+         * The data stream ID of the data source that created the points in this
+         * dataset.
+         *
+         * @var string
+         */
+        public $dataSourceId;
+        /**
+         * The largest end time of all data points in this possibly partial
+         * representation of the dataset. Time is in nanoseconds from epoch. This
+         * should also match the second part of the dataset identifier.
+         *
+         * @var string
+         */
+        public $maxEndTimeNs;
+        /**
+         * The smallest start time of all data points in this possibly partial
+         * representation of the dataset. Time is in nanoseconds from epoch. This
+         * should also match the first part of the dataset identifier.
+         *
+         * @var string
+         */
+        public $minStartTimeNs;
+        /**
+         * This token will be set when a dataset is received in response to a GET
+         * request and the dataset is too large to be included in a single response.
+         * Provide this value in a subsequent GET request to return the next page of
+         * data points within this dataset.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pointType = DataPoint::class;
+        protected $pointDataType = 'array';
+        /**
+         * The data stream ID of the data source that created the points in this
+         * dataset.
+         *
+         * @param string $dataSourceId
+         */
+        public function setDataSourceId($dataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSourceId()
+        {
+        }
+        /**
+         * The largest end time of all data points in this possibly partial
+         * representation of the dataset. Time is in nanoseconds from epoch. This
+         * should also match the second part of the dataset identifier.
+         *
+         * @param string $maxEndTimeNs
+         */
+        public function setMaxEndTimeNs($maxEndTimeNs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxEndTimeNs()
+        {
+        }
+        /**
+         * The smallest start time of all data points in this possibly partial
+         * representation of the dataset. Time is in nanoseconds from epoch. This
+         * should also match the first part of the dataset identifier.
+         *
+         * @param string $minStartTimeNs
+         */
+        public function setMinStartTimeNs($minStartTimeNs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinStartTimeNs()
+        {
+        }
+        /**
+         * This token will be set when a dataset is received in response to a GET
+         * request and the dataset is too large to be included in a single response.
+         * Provide this value in a subsequent GET request to return the next page of
+         * data points within this dataset.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A partial list of data points contained in the dataset, ordered by
+         * endTimeNanos. This list is considered complete when retrieving a small
+         * dataset and partial when patching a dataset or retrieving a dataset that is
+         * too large to include in a single response.
+         *
+         * @param DataPoint[] $point
+         */
+        public function setPoint($point)
+        {
+        }
+        /**
+         * @return DataPoint[]
+         */
+        public function getPoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\Dataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceId()
-    {
-    }
-    /**
-     * The largest end time of all data points in this possibly partial
-     * representation of the dataset. Time is in nanoseconds from epoch. This
-     * should also match the second part of the dataset identifier.
-     *
-     * @param string $maxEndTimeNs
-     */
-    public function setMaxEndTimeNs($maxEndTimeNs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxEndTimeNs()
-    {
-    }
-    /**
-     * The smallest start time of all data points in this possibly partial
-     * representation of the dataset. Time is in nanoseconds from epoch. This
-     * should also match the first part of the dataset identifier.
-     *
-     * @param string $minStartTimeNs
-     */
-    public function setMinStartTimeNs($minStartTimeNs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinStartTimeNs()
-    {
-    }
-    /**
-     * This token will be set when a dataset is received in response to a GET
-     * request and the dataset is too large to be included in a single response.
-     * Provide this value in a subsequent GET request to return the next page of
-     * data points within this dataset.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A partial list of data points contained in the dataset, ordered by
-     * endTimeNanos. This list is considered complete when retrieving a small
-     * dataset and partial when patching a dataset or retrieving a dataset that is
-     * too large to include in a single response.
-     *
-     * @param DataPoint[] $point
-     */
-    public function setPoint($point)
-    {
-    }
-    /**
-     * @return DataPoint[]
-     */
-    public function getPoint()
+    class Google_Service_Fitness_Dataset extends \Google\Service\Fitness\Dataset
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AssetDiscoverySpecJsonOptions extends \Google\Model
-{
-    /**
-     * Optional. Whether to disable the inference of data type for Json data. If
-     * true, all columns will be registered as their primitive types (strings,
-     * number or boolean).
-     *
-     * @var bool
-     */
-    public $disableTypeInference;
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. Whether to disable the inference of data type for Json data. If
-     * true, all columns will be registered as their primitive types (strings,
-     * number or boolean).
-     *
-     * @param bool $disableTypeInference
-     */
-    public function setDisableTypeInference($disableTypeInference)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AssetDiscoverySpecJsonOptions extends \Google\Model
     {
+        /**
+         * Optional. Whether to disable the inference of data type for Json data. If
+         * true, all columns will be registered as their primitive types (strings,
+         * number or boolean).
+         *
+         * @var bool
+         */
+        public $disableTypeInference;
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. Whether to disable the inference of data type for Json data. If
+         * true, all columns will be registered as their primitive types (strings,
+         * number or boolean).
+         *
+         * @param bool $disableTypeInference
+         */
+        public function setDisableTypeInference($disableTypeInference)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableTypeInference()
+        {
+        }
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoverySpecJsonOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableTypeInference()
-    {
-    }
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncoding()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AssetDiscoverySpecJsonOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoverySpecJsonOptions
     {
     }
 }

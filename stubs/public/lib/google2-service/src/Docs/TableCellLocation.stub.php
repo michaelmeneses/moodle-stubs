@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableCellLocation extends \Google\Model
-{
-    /**
-     * The zero-based column index. For example, the second column in the table
-     * has a column index of 1.
-     *
-     * @var int
-     */
-    public $columnIndex;
-    /**
-     * The zero-based row index. For example, the second row in the table has a
-     * row index of 1.
-     *
-     * @var int
-     */
-    public $rowIndex;
-    protected $tableStartLocationType = Location::class;
-    protected $tableStartLocationDataType = '';
-    /**
-     * The zero-based column index. For example, the second column in the table
-     * has a column index of 1.
-     *
-     * @param int $columnIndex
-     */
-    public function setColumnIndex($columnIndex)
+namespace Google\Service\Docs {
+    class TableCellLocation extends \Google\Model
     {
+        /**
+         * The zero-based column index. For example, the second column in the table
+         * has a column index of 1.
+         *
+         * @var int
+         */
+        public $columnIndex;
+        /**
+         * The zero-based row index. For example, the second row in the table has a
+         * row index of 1.
+         *
+         * @var int
+         */
+        public $rowIndex;
+        protected $tableStartLocationType = Location::class;
+        protected $tableStartLocationDataType = '';
+        /**
+         * The zero-based column index. For example, the second column in the table
+         * has a column index of 1.
+         *
+         * @param int $columnIndex
+         */
+        public function setColumnIndex($columnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnIndex()
+        {
+        }
+        /**
+         * The zero-based row index. For example, the second row in the table has a
+         * row index of 1.
+         *
+         * @param int $rowIndex
+         */
+        public function setRowIndex($rowIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowIndex()
+        {
+        }
+        /**
+         * The location where the table starts in the document.
+         *
+         * @param Location $tableStartLocation
+         */
+        public function setTableStartLocation(Location $tableStartLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getTableStartLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\TableCellLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnIndex()
-    {
-    }
-    /**
-     * The zero-based row index. For example, the second row in the table has a
-     * row index of 1.
-     *
-     * @param int $rowIndex
-     */
-    public function setRowIndex($rowIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowIndex()
-    {
-    }
-    /**
-     * The location where the table starts in the document.
-     *
-     * @param Location $tableStartLocation
-     */
-    public function setTableStartLocation(Location $tableStartLocation)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getTableStartLocation()
+    class Google_Service_Docs_TableCellLocation extends \Google\Service\Docs\TableCellLocation
     {
     }
 }

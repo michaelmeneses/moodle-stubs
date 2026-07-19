@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class DatasetInputConfig extends \Google\Collection
-{
-    protected $collection_key = 'inputFiles';
-    protected $inputFilesType = InputFile::class;
-    protected $inputFilesDataType = 'array';
-    /**
-     * Files containing the sentence pairs to be imported to the dataset.
-     *
-     * @param InputFile[] $inputFiles
-     */
-    public function setInputFiles($inputFiles)
+namespace Google\Service\Translate {
+    class DatasetInputConfig extends \Google\Collection
     {
+        protected $collection_key = 'inputFiles';
+        protected $inputFilesType = InputFile::class;
+        protected $inputFilesDataType = 'array';
+        /**
+         * Files containing the sentence pairs to be imported to the dataset.
+         *
+         * @param InputFile[] $inputFiles
+         */
+        public function setInputFiles($inputFiles)
+        {
+        }
+        /**
+         * @return InputFile[]
+         */
+        public function getInputFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputFile[]
+     * Runtime class alias of \Google\Service\Translate\DatasetInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputFiles()
+    class Google_Service_Translate_DatasetInputConfig extends \Google\Service\Translate\DatasetInputConfig
     {
     }
 }

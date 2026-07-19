@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class CommitCursorRequest extends \Google\Model
-{
-    protected $cursorType = Cursor::class;
-    protected $cursorDataType = '';
-    /**
-     * The partition for which to update the cursor. Partitions are zero indexed,
-     * so `partition` must be in the range [0, topic.num_partitions).
-     *
-     * @var string
-     */
-    public $partition;
-    /**
-     * The new value for the committed cursor.
-     *
-     * @param Cursor $cursor
-     */
-    public function setCursor(Cursor $cursor)
+namespace Google\Service\PubsubLite {
+    class CommitCursorRequest extends \Google\Model
     {
+        protected $cursorType = Cursor::class;
+        protected $cursorDataType = '';
+        /**
+         * The partition for which to update the cursor. Partitions are zero indexed,
+         * so `partition` must be in the range [0, topic.num_partitions).
+         *
+         * @var string
+         */
+        public $partition;
+        /**
+         * The new value for the committed cursor.
+         *
+         * @param Cursor $cursor
+         */
+        public function setCursor(Cursor $cursor)
+        {
+        }
+        /**
+         * @return Cursor
+         */
+        public function getCursor()
+        {
+        }
+        /**
+         * The partition for which to update the cursor. Partitions are zero indexed,
+         * so `partition` must be in the range [0, topic.num_partitions).
+         *
+         * @param string $partition
+         */
+        public function setPartition($partition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cursor
+     * Runtime class alias of \Google\Service\PubsubLite\CommitCursorRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCursor()
-    {
-    }
-    /**
-     * The partition for which to update the cursor. Partitions are zero indexed,
-     * so `partition` must be in the range [0, topic.num_partitions).
-     *
-     * @param string $partition
-     */
-    public function setPartition($partition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartition()
+    class Google_Service_PubsubLite_CommitCursorRequest extends \Google\Service\PubsubLite\CommitCursorRequest
     {
     }
 }

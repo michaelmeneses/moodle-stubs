@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ParDoInstruction extends \Google\Collection
-{
-    protected $collection_key = 'sideInputs';
-    protected $inputType = InstructionInput::class;
-    protected $inputDataType = '';
-    protected $multiOutputInfosType = MultiOutputInfo::class;
-    protected $multiOutputInfosDataType = 'array';
-    /**
-     * The number of outputs.
-     *
-     * @var int
-     */
-    public $numOutputs;
-    protected $sideInputsType = SideInputInfo::class;
-    protected $sideInputsDataType = 'array';
-    /**
-     * The user function to invoke.
-     *
-     * @var array[]
-     */
-    public $userFn;
-    /**
-     * The input.
-     *
-     * @param InstructionInput $input
-     */
-    public function setInput(InstructionInput $input)
+namespace Google\Service\Dataflow {
+    class ParDoInstruction extends \Google\Collection
     {
+        protected $collection_key = 'sideInputs';
+        protected $inputType = InstructionInput::class;
+        protected $inputDataType = '';
+        protected $multiOutputInfosType = MultiOutputInfo::class;
+        protected $multiOutputInfosDataType = 'array';
+        /**
+         * The number of outputs.
+         *
+         * @var int
+         */
+        public $numOutputs;
+        protected $sideInputsType = SideInputInfo::class;
+        protected $sideInputsDataType = 'array';
+        /**
+         * The user function to invoke.
+         *
+         * @var array[]
+         */
+        public $userFn;
+        /**
+         * The input.
+         *
+         * @param InstructionInput $input
+         */
+        public function setInput(InstructionInput $input)
+        {
+        }
+        /**
+         * @return InstructionInput
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * Information about each of the outputs, if user_fn is a MultiDoFn.
+         *
+         * @param MultiOutputInfo[] $multiOutputInfos
+         */
+        public function setMultiOutputInfos($multiOutputInfos)
+        {
+        }
+        /**
+         * @return MultiOutputInfo[]
+         */
+        public function getMultiOutputInfos()
+        {
+        }
+        /**
+         * The number of outputs.
+         *
+         * @param int $numOutputs
+         */
+        public function setNumOutputs($numOutputs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumOutputs()
+        {
+        }
+        /**
+         * Zero or more side inputs.
+         *
+         * @param SideInputInfo[] $sideInputs
+         */
+        public function setSideInputs($sideInputs)
+        {
+        }
+        /**
+         * @return SideInputInfo[]
+         */
+        public function getSideInputs()
+        {
+        }
+        /**
+         * The user function to invoke.
+         *
+         * @param array[] $userFn
+         */
+        public function setUserFn($userFn)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getUserFn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstructionInput
+     * Runtime class alias of \Google\Service\Dataflow\ParDoInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInput()
-    {
-    }
-    /**
-     * Information about each of the outputs, if user_fn is a MultiDoFn.
-     *
-     * @param MultiOutputInfo[] $multiOutputInfos
-     */
-    public function setMultiOutputInfos($multiOutputInfos)
-    {
-    }
-    /**
-     * @return MultiOutputInfo[]
-     */
-    public function getMultiOutputInfos()
-    {
-    }
-    /**
-     * The number of outputs.
-     *
-     * @param int $numOutputs
-     */
-    public function setNumOutputs($numOutputs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumOutputs()
-    {
-    }
-    /**
-     * Zero or more side inputs.
-     *
-     * @param SideInputInfo[] $sideInputs
-     */
-    public function setSideInputs($sideInputs)
-    {
-    }
-    /**
-     * @return SideInputInfo[]
-     */
-    public function getSideInputs()
-    {
-    }
-    /**
-     * The user function to invoke.
-     *
-     * @param array[] $userFn
-     */
-    public function setUserFn($userFn)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getUserFn()
+    class Google_Service_Dataflow_ParDoInstruction extends \Google\Service\Dataflow\ParDoInstruction
     {
     }
 }

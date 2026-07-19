@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class OrganizationSubscription extends \Google\Model
-{
-    /**
-     * Required. Enable org level subscription.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Required. Enable org level subscription.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Eventarc {
+    class OrganizationSubscription extends \Google\Model
     {
+        /**
+         * Required. Enable org level subscription.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Required. Enable org level subscription.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Eventarc\OrganizationSubscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Eventarc_OrganizationSubscription extends \Google\Service\Eventarc\OrganizationSubscription
     {
     }
 }

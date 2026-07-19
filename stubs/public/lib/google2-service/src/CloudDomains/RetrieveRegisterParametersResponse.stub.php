@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RetrieveRegisterParametersResponse extends \Google\Model
-{
-    protected $registerParametersType = RegisterParameters::class;
-    protected $registerParametersDataType = '';
-    /**
-     * Parameters to use when calling the `RegisterDomain` method.
-     *
-     * @param RegisterParameters $registerParameters
-     */
-    public function setRegisterParameters(RegisterParameters $registerParameters)
+namespace Google\Service\CloudDomains {
+    class RetrieveRegisterParametersResponse extends \Google\Model
     {
+        protected $registerParametersType = RegisterParameters::class;
+        protected $registerParametersDataType = '';
+        /**
+         * Parameters to use when calling the `RegisterDomain` method.
+         *
+         * @param RegisterParameters $registerParameters
+         */
+        public function setRegisterParameters(RegisterParameters $registerParameters)
+        {
+        }
+        /**
+         * @return RegisterParameters
+         */
+        public function getRegisterParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegisterParameters
+     * Runtime class alias of \Google\Service\CloudDomains\RetrieveRegisterParametersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegisterParameters()
+    class Google_Service_CloudDomains_RetrieveRegisterParametersResponse extends \Google\Service\CloudDomains\RetrieveRegisterParametersResponse
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class AccessDeniedPageSettings extends \Google\Model
-{
-    /**
-     * The URI to be redirected to when access is denied.
-     *
-     * @var string
-     */
-    public $accessDeniedPageUri;
-    /**
-     * Whether to generate a troubleshooting URL on access denied events to this
-     * application.
-     *
-     * @var bool
-     */
-    public $generateTroubleshootingUri;
-    /**
-     * Whether to generate remediation token on access denied events to this
-     * application.
-     *
-     * @var bool
-     */
-    public $remediationTokenGenerationEnabled;
-    /**
-     * The URI to be redirected to when access is denied.
-     *
-     * @param string $accessDeniedPageUri
-     */
-    public function setAccessDeniedPageUri($accessDeniedPageUri)
+namespace Google\Service\CloudIAP {
+    class AccessDeniedPageSettings extends \Google\Model
     {
+        /**
+         * The URI to be redirected to when access is denied.
+         *
+         * @var string
+         */
+        public $accessDeniedPageUri;
+        /**
+         * Whether to generate a troubleshooting URL on access denied events to this
+         * application.
+         *
+         * @var bool
+         */
+        public $generateTroubleshootingUri;
+        /**
+         * Whether to generate remediation token on access denied events to this
+         * application.
+         *
+         * @var bool
+         */
+        public $remediationTokenGenerationEnabled;
+        /**
+         * The URI to be redirected to when access is denied.
+         *
+         * @param string $accessDeniedPageUri
+         */
+        public function setAccessDeniedPageUri($accessDeniedPageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessDeniedPageUri()
+        {
+        }
+        /**
+         * Whether to generate a troubleshooting URL on access denied events to this
+         * application.
+         *
+         * @param bool $generateTroubleshootingUri
+         */
+        public function setGenerateTroubleshootingUri($generateTroubleshootingUri)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGenerateTroubleshootingUri()
+        {
+        }
+        /**
+         * Whether to generate remediation token on access denied events to this
+         * application.
+         *
+         * @param bool $remediationTokenGenerationEnabled
+         */
+        public function setRemediationTokenGenerationEnabled($remediationTokenGenerationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRemediationTokenGenerationEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\AccessDeniedPageSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessDeniedPageUri()
-    {
-    }
-    /**
-     * Whether to generate a troubleshooting URL on access denied events to this
-     * application.
-     *
-     * @param bool $generateTroubleshootingUri
-     */
-    public function setGenerateTroubleshootingUri($generateTroubleshootingUri)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGenerateTroubleshootingUri()
-    {
-    }
-    /**
-     * Whether to generate remediation token on access denied events to this
-     * application.
-     *
-     * @param bool $remediationTokenGenerationEnabled
-     */
-    public function setRemediationTokenGenerationEnabled($remediationTokenGenerationEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRemediationTokenGenerationEnabled()
+    class Google_Service_CloudIAP_AccessDeniedPageSettings extends \Google\Service\CloudIAP\AccessDeniedPageSettings
     {
     }
 }

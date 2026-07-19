@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsToolDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The dialogflow tool display name.
-     *
-     * @var string
-     */
-    public $toolDisplayName;
-    /**
-     * Optional. The dialogflow tool ID.
-     *
-     * @var string
-     */
-    public $toolId;
-    /**
-     * Optional. The dialogflow tool display name.
-     *
-     * @param string $toolDisplayName
-     */
-    public function setToolDisplayName($toolDisplayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsToolDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The dialogflow tool display name.
+         *
+         * @var string
+         */
+        public $toolDisplayName;
+        /**
+         * Optional. The dialogflow tool ID.
+         *
+         * @var string
+         */
+        public $toolId;
+        /**
+         * Optional. The dialogflow tool display name.
+         *
+         * @param string $toolDisplayName
+         */
+        public function setToolDisplayName($toolDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToolDisplayName()
+        {
+        }
+        /**
+         * Optional. The dialogflow tool ID.
+         *
+         * @param string $toolId
+         */
+        public function setToolId($toolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToolId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsToolDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolDisplayName()
-    {
-    }
-    /**
-     * Optional. The dialogflow tool ID.
-     *
-     * @param string $toolId
-     */
-    public function setToolId($toolId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToolId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsToolDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsToolDimensionMetadata
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class PluggableDatabaseConnectionStrings extends \Google\Model
-{
-    /**
-     * Optional. All connection strings to use to connect to the pluggable
-     * database.
-     *
-     * @var string[]
-     */
-    public $allConnectionStrings;
-    /**
-     * Optional. The default connection string to use to connect to the pluggable
-     * database.
-     *
-     * @var string
-     */
-    public $pdbDefault;
-    /**
-     * Optional. The default connection string to use to connect to the pluggable
-     * database using IP.
-     *
-     * @var string
-     */
-    public $pdbIpDefault;
-    /**
-     * Optional. All connection strings to use to connect to the pluggable
-     * database.
-     *
-     * @param string[] $allConnectionStrings
-     */
-    public function setAllConnectionStrings($allConnectionStrings)
+namespace Google\Service\OracleDatabase {
+    class PluggableDatabaseConnectionStrings extends \Google\Model
     {
+        /**
+         * Optional. All connection strings to use to connect to the pluggable
+         * database.
+         *
+         * @var string[]
+         */
+        public $allConnectionStrings;
+        /**
+         * Optional. The default connection string to use to connect to the pluggable
+         * database.
+         *
+         * @var string
+         */
+        public $pdbDefault;
+        /**
+         * Optional. The default connection string to use to connect to the pluggable
+         * database using IP.
+         *
+         * @var string
+         */
+        public $pdbIpDefault;
+        /**
+         * Optional. All connection strings to use to connect to the pluggable
+         * database.
+         *
+         * @param string[] $allConnectionStrings
+         */
+        public function setAllConnectionStrings($allConnectionStrings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllConnectionStrings()
+        {
+        }
+        /**
+         * Optional. The default connection string to use to connect to the pluggable
+         * database.
+         *
+         * @param string $pdbDefault
+         */
+        public function setPdbDefault($pdbDefault)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPdbDefault()
+        {
+        }
+        /**
+         * Optional. The default connection string to use to connect to the pluggable
+         * database using IP.
+         *
+         * @param string $pdbIpDefault
+         */
+        public function setPdbIpDefault($pdbIpDefault)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPdbIpDefault()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OracleDatabase\PluggableDatabaseConnectionStrings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllConnectionStrings()
-    {
-    }
-    /**
-     * Optional. The default connection string to use to connect to the pluggable
-     * database.
-     *
-     * @param string $pdbDefault
-     */
-    public function setPdbDefault($pdbDefault)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPdbDefault()
-    {
-    }
-    /**
-     * Optional. The default connection string to use to connect to the pluggable
-     * database using IP.
-     *
-     * @param string $pdbIpDefault
-     */
-    public function setPdbIpDefault($pdbIpDefault)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPdbIpDefault()
+    class Google_Service_OracleDatabase_PluggableDatabaseConnectionStrings extends \Google\Service\OracleDatabase\PluggableDatabaseConnectionStrings
     {
     }
 }

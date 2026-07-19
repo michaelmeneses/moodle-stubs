@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Package extends \Google\Model
-{
-    /**
-     * The resource to read the package from. The supported resource type is:
-     * Google Cloud Storage: storage.googleapis.com/{bucket}
-     * bucket.storage.googleapis.com/
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The name of the package.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The resource to read the package from. The supported resource type is:
-     * Google Cloud Storage: storage.googleapis.com/{bucket}
-     * bucket.storage.googleapis.com/
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Dataflow {
+    class Package extends \Google\Model
     {
+        /**
+         * The resource to read the package from. The supported resource type is:
+         * Google Cloud Storage: storage.googleapis.com/{bucket}
+         * bucket.storage.googleapis.com/
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The name of the package.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The resource to read the package from. The supported resource type is:
+         * Google Cloud Storage: storage.googleapis.com/{bucket}
+         * bucket.storage.googleapis.com/
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The name of the package.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Package registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The name of the package.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dataflow_Package extends \Google\Service\Dataflow\Package
     {
     }
 }

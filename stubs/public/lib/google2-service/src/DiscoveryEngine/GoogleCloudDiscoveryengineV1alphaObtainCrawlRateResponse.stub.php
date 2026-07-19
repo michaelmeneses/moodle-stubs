@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaObtainCrawlRateResponse extends \Google\Model
-{
-    /**
-     * The state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The state is successful.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The state is failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $dedicatedCrawlRateTimeSeriesType = GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries::class;
-    protected $dedicatedCrawlRateTimeSeriesDataType = '';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    protected $organicCrawlRateTimeSeriesType = GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries::class;
-    protected $organicCrawlRateTimeSeriesDataType = '';
-    /**
-     * Output only. The state of the response.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The historical dedicated crawl rate timeseries data, used for monitoring.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries $dedicatedCrawlRateTimeSeries
-     */
-    public function setDedicatedCrawlRateTimeSeries(GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries $dedicatedCrawlRateTimeSeries)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaObtainCrawlRateResponse extends \Google\Model
     {
+        /**
+         * The state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The state is successful.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The state is failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $dedicatedCrawlRateTimeSeriesType = GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries::class;
+        protected $dedicatedCrawlRateTimeSeriesDataType = '';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        protected $organicCrawlRateTimeSeriesType = GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries::class;
+        protected $organicCrawlRateTimeSeriesDataType = '';
+        /**
+         * Output only. The state of the response.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The historical dedicated crawl rate timeseries data, used for monitoring.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries $dedicatedCrawlRateTimeSeries
+         */
+        public function setDedicatedCrawlRateTimeSeries(GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries $dedicatedCrawlRateTimeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries
+         */
+        public function getDedicatedCrawlRateTimeSeries()
+        {
+        }
+        /**
+         * Errors from service when handling the request.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The historical organic crawl rate timeseries data, used for monitoring.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries $organicCrawlRateTimeSeries
+         */
+        public function setOrganicCrawlRateTimeSeries(GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries $organicCrawlRateTimeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries
+         */
+        public function getOrganicCrawlRateTimeSeries()
+        {
+        }
+        /**
+         * Output only. The state of the response.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaDedicatedCrawlRateTimeSeries
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaObtainCrawlRateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDedicatedCrawlRateTimeSeries()
-    {
-    }
-    /**
-     * Errors from service when handling the request.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The historical organic crawl rate timeseries data, used for monitoring.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries $organicCrawlRateTimeSeries
-     */
-    public function setOrganicCrawlRateTimeSeries(GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries $organicCrawlRateTimeSeries)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries
-     */
-    public function getOrganicCrawlRateTimeSeries()
-    {
-    }
-    /**
-     * Output only. The state of the response.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaObtainCrawlRateResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaObtainCrawlRateResponse
     {
     }
 }

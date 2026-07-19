@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ParameterManager;
-
-class RenderParameterVersionResponse extends \Google\Model
-{
-    /**
-     * Output only. Resource identifier of a ParameterVersion in the format
-     * `projects/locations/parameters/versions`.
-     *
-     * @var string
-     */
-    public $parameterVersion;
-    protected $payloadType = ParameterVersionPayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Output only. Server generated rendered version of the user provided payload
-     * data (ParameterVersionPayload) which has substitutions of all (if any)
-     * references to a SecretManager SecretVersion resources. This substitution
-     * only works for a Parameter which is in JSON or YAML format.
-     *
-     * @var string
-     */
-    public $renderedPayload;
-    /**
-     * Output only. Resource identifier of a ParameterVersion in the format
-     * `projects/locations/parameters/versions`.
-     *
-     * @param string $parameterVersion
-     */
-    public function setParameterVersion($parameterVersion)
+namespace Google\Service\ParameterManager {
+    class RenderParameterVersionResponse extends \Google\Model
     {
+        /**
+         * Output only. Resource identifier of a ParameterVersion in the format
+         * `projects/locations/parameters/versions`.
+         *
+         * @var string
+         */
+        public $parameterVersion;
+        protected $payloadType = ParameterVersionPayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Output only. Server generated rendered version of the user provided payload
+         * data (ParameterVersionPayload) which has substitutions of all (if any)
+         * references to a SecretManager SecretVersion resources. This substitution
+         * only works for a Parameter which is in JSON or YAML format.
+         *
+         * @var string
+         */
+        public $renderedPayload;
+        /**
+         * Output only. Resource identifier of a ParameterVersion in the format
+         * `projects/locations/parameters/versions`.
+         *
+         * @param string $parameterVersion
+         */
+        public function setParameterVersion($parameterVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameterVersion()
+        {
+        }
+        /**
+         * Payload content of a ParameterVersion resource.
+         *
+         * @param ParameterVersionPayload $payload
+         */
+        public function setPayload(ParameterVersionPayload $payload)
+        {
+        }
+        /**
+         * @return ParameterVersionPayload
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Output only. Server generated rendered version of the user provided payload
+         * data (ParameterVersionPayload) which has substitutions of all (if any)
+         * references to a SecretManager SecretVersion resources. This substitution
+         * only works for a Parameter which is in JSON or YAML format.
+         *
+         * @param string $renderedPayload
+         */
+        public function setRenderedPayload($renderedPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderedPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ParameterManager\RenderParameterVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameterVersion()
-    {
-    }
-    /**
-     * Payload content of a ParameterVersion resource.
-     *
-     * @param ParameterVersionPayload $payload
-     */
-    public function setPayload(ParameterVersionPayload $payload)
-    {
-    }
-    /**
-     * @return ParameterVersionPayload
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Output only. Server generated rendered version of the user provided payload
-     * data (ParameterVersionPayload) which has substitutions of all (if any)
-     * references to a SecretManager SecretVersion resources. This substitution
-     * only works for a Parameter which is in JSON or YAML format.
-     *
-     * @param string $renderedPayload
-     */
-    public function setRenderedPayload($renderedPayload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenderedPayload()
+    class Google_Service_ParameterManager_RenderParameterVersionResponse extends \Google\Service\ParameterManager\RenderParameterVersionResponse
     {
     }
 }

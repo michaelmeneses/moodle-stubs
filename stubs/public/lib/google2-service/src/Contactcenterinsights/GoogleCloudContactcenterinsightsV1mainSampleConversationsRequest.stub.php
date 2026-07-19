@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest extends \Google\Model
-{
-    protected $destinationDatasetType = GoogleCloudContactcenterinsightsV1mainDataset::class;
-    protected $destinationDatasetDataType = '';
-    /**
-     * Required. The parent resource of the dataset.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $sampleRuleType = GoogleCloudContactcenterinsightsV1mainSampleRule::class;
-    protected $sampleRuleDataType = '';
-    /**
-     * The dataset resource to copy the sampled conversations to.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainDataset $destinationDataset
-     */
-    public function setDestinationDataset(GoogleCloudContactcenterinsightsV1mainDataset $destinationDataset)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest extends \Google\Model
     {
+        protected $destinationDatasetType = GoogleCloudContactcenterinsightsV1mainDataset::class;
+        protected $destinationDatasetDataType = '';
+        /**
+         * Required. The parent resource of the dataset.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $sampleRuleType = GoogleCloudContactcenterinsightsV1mainSampleRule::class;
+        protected $sampleRuleDataType = '';
+        /**
+         * The dataset resource to copy the sampled conversations to.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainDataset $destinationDataset
+         */
+        public function setDestinationDataset(GoogleCloudContactcenterinsightsV1mainDataset $destinationDataset)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainDataset
+         */
+        public function getDestinationDataset()
+        {
+        }
+        /**
+         * Required. The parent resource of the dataset.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Optional. The sample rule used for sampling conversations.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainSampleRule $sampleRule
+         */
+        public function setSampleRule(GoogleCloudContactcenterinsightsV1mainSampleRule $sampleRule)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainSampleRule
+         */
+        public function getSampleRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainDataset
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationDataset()
-    {
-    }
-    /**
-     * Required. The parent resource of the dataset.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Optional. The sample rule used for sampling conversations.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainSampleRule $sampleRule
-     */
-    public function setSampleRule(GoogleCloudContactcenterinsightsV1mainSampleRule $sampleRule)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainSampleRule
-     */
-    public function getSampleRule()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSampleConversationsRequest
     {
     }
 }

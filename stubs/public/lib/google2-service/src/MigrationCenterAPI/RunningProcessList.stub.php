@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class RunningProcessList extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = RunningProcess::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Running process entries.
-     *
-     * @param RunningProcess[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\MigrationCenterAPI {
+    class RunningProcessList extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = RunningProcess::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Running process entries.
+         *
+         * @param RunningProcess[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return RunningProcess[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RunningProcess[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\RunningProcessList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_MigrationCenterAPI_RunningProcessList extends \Google\Service\MigrationCenterAPI\RunningProcessList
     {
     }
 }

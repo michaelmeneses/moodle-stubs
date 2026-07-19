@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class BigQueryDestination extends \Google\Model
-{
-    /**
-     * Optional. determine if results will be saved in a new table
-     *
-     * @var bool
-     */
-    public $createNewResultsTable;
-    /**
-     * Optional. destination dataset to save evaluation results
-     *
-     * @var string
-     */
-    public $destinationDataset;
-    /**
-     * Optional. determine if results will be saved in a new table
-     *
-     * @param bool $createNewResultsTable
-     */
-    public function setCreateNewResultsTable($createNewResultsTable)
+namespace Google\Service\WorkloadManager {
+    class BigQueryDestination extends \Google\Model
     {
+        /**
+         * Optional. determine if results will be saved in a new table
+         *
+         * @var bool
+         */
+        public $createNewResultsTable;
+        /**
+         * Optional. destination dataset to save evaluation results
+         *
+         * @var string
+         */
+        public $destinationDataset;
+        /**
+         * Optional. determine if results will be saved in a new table
+         *
+         * @param bool $createNewResultsTable
+         */
+        public function setCreateNewResultsTable($createNewResultsTable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCreateNewResultsTable()
+        {
+        }
+        /**
+         * Optional. destination dataset to save evaluation results
+         *
+         * @param string $destinationDataset
+         */
+        public function setDestinationDataset($destinationDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\WorkloadManager\BigQueryDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateNewResultsTable()
-    {
-    }
-    /**
-     * Optional. destination dataset to save evaluation results
-     *
-     * @param string $destinationDataset
-     */
-    public function setDestinationDataset($destinationDataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationDataset()
+    class Google_Service_WorkloadManager_BigQueryDestination extends \Google\Service\WorkloadManager\BigQueryDestination
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionUrlMapsValidateRequest extends \Google\Model
-{
-    protected $resourceType = UrlMap::class;
-    protected $resourceDataType = '';
-    /**
-     * Content of the UrlMap to be validated.
-     *
-     * @param UrlMap $resource
-     */
-    public function setResource(UrlMap $resource)
+namespace Google\Service\Compute {
+    class RegionUrlMapsValidateRequest extends \Google\Model
     {
+        protected $resourceType = UrlMap::class;
+        protected $resourceDataType = '';
+        /**
+         * Content of the UrlMap to be validated.
+         *
+         * @param UrlMap $resource
+         */
+        public function setResource(UrlMap $resource)
+        {
+        }
+        /**
+         * @return UrlMap
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlMap
+     * Runtime class alias of \Google\Service\Compute\RegionUrlMapsValidateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Compute_RegionUrlMapsValidateRequest extends \Google\Service\Compute\RegionUrlMapsValidateRequest
     {
     }
 }

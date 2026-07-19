@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class UIElementTooDeep extends \Google\Model
-{
-    /**
-     * The depth of the screen element
-     *
-     * @var int
-     */
-    public $depth;
-    /**
-     * The screen id of the element
-     *
-     * @var string
-     */
-    public $screenId;
-    /**
-     * The screen state id of the element
-     *
-     * @var string
-     */
-    public $screenStateId;
-    /**
-     * The depth of the screen element
-     *
-     * @param int $depth
-     */
-    public function setDepth($depth)
+namespace Google\Service\ToolResults {
+    class UIElementTooDeep extends \Google\Model
     {
+        /**
+         * The depth of the screen element
+         *
+         * @var int
+         */
+        public $depth;
+        /**
+         * The screen id of the element
+         *
+         * @var string
+         */
+        public $screenId;
+        /**
+         * The screen state id of the element
+         *
+         * @var string
+         */
+        public $screenStateId;
+        /**
+         * The depth of the screen element
+         *
+         * @param int $depth
+         */
+        public function setDepth($depth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDepth()
+        {
+        }
+        /**
+         * The screen id of the element
+         *
+         * @param string $screenId
+         */
+        public function setScreenId($screenId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenId()
+        {
+        }
+        /**
+         * The screen state id of the element
+         *
+         * @param string $screenStateId
+         */
+        public function setScreenStateId($screenStateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenStateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\UIElementTooDeep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDepth()
-    {
-    }
-    /**
-     * The screen id of the element
-     *
-     * @param string $screenId
-     */
-    public function setScreenId($screenId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScreenId()
-    {
-    }
-    /**
-     * The screen state id of the element
-     *
-     * @param string $screenStateId
-     */
-    public function setScreenStateId($screenStateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScreenStateId()
+    class Google_Service_ToolResults_UIElementTooDeep extends \Google\Service\ToolResults\UIElementTooDeep
     {
     }
 }

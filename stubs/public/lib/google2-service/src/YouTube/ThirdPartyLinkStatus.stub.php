@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ThirdPartyLinkStatus extends \Google\Model
-{
-    public const LINK_STATUS_unknown = 'unknown';
-    public const LINK_STATUS_failed = 'failed';
-    public const LINK_STATUS_pending = 'pending';
-    public const LINK_STATUS_linked = 'linked';
-    /**
-     * @var string
-     */
-    public $linkStatus;
-    /**
-     * @param self::LINK_STATUS_* $linkStatus
-     */
-    public function setLinkStatus($linkStatus)
+namespace Google\Service\YouTube {
+    class ThirdPartyLinkStatus extends \Google\Model
     {
+        public const LINK_STATUS_unknown = 'unknown';
+        public const LINK_STATUS_failed = 'failed';
+        public const LINK_STATUS_pending = 'pending';
+        public const LINK_STATUS_linked = 'linked';
+        /**
+         * @var string
+         */
+        public $linkStatus;
+        /**
+         * @param self::LINK_STATUS_* $linkStatus
+         */
+        public function setLinkStatus($linkStatus)
+        {
+        }
+        /**
+         * @return self::LINK_STATUS_*
+         */
+        public function getLinkStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::LINK_STATUS_*
+     * Runtime class alias of \Google\Service\YouTube\ThirdPartyLinkStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkStatus()
+    class Google_Service_YouTube_ThirdPartyLinkStatus extends \Google\Service\YouTube\ThirdPartyLinkStatus
     {
     }
 }

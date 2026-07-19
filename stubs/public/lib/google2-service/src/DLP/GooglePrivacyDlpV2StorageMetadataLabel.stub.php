@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StorageMetadataLabel extends \Google\Model
-{
-    /**
-     * Label name.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Label name.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StorageMetadataLabel extends \Google\Model
     {
+        /**
+         * Label name.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Label name.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StorageMetadataLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
+    class Google_Service_DLP_GooglePrivacyDlpV2StorageMetadataLabel extends \Google\Service\DLP\GooglePrivacyDlpV2StorageMetadataLabel
     {
     }
 }

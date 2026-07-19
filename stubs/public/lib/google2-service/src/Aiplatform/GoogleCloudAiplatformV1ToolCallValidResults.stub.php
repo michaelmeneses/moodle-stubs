@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolCallValidResults extends \Google\Collection
-{
-    protected $collection_key = 'toolCallValidMetricValues';
-    protected $toolCallValidMetricValuesType = GoogleCloudAiplatformV1ToolCallValidMetricValue::class;
-    protected $toolCallValidMetricValuesDataType = 'array';
-    /**
-     * Output only. Tool call valid metric values.
-     *
-     * @param GoogleCloudAiplatformV1ToolCallValidMetricValue[] $toolCallValidMetricValues
-     */
-    public function setToolCallValidMetricValues($toolCallValidMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolCallValidResults extends \Google\Collection
     {
+        protected $collection_key = 'toolCallValidMetricValues';
+        protected $toolCallValidMetricValuesType = GoogleCloudAiplatformV1ToolCallValidMetricValue::class;
+        protected $toolCallValidMetricValuesDataType = 'array';
+        /**
+         * Output only. Tool call valid metric values.
+         *
+         * @param GoogleCloudAiplatformV1ToolCallValidMetricValue[] $toolCallValidMetricValues
+         */
+        public function setToolCallValidMetricValues($toolCallValidMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolCallValidMetricValue[]
+         */
+        public function getToolCallValidMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ToolCallValidMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolCallValidResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolCallValidMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolCallValidResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolCallValidResults
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ProductPayload extends \Google\Model
-{
-    protected $googleHomePayloadType = GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload::class;
-    protected $googleHomePayloadDataType = '';
-    protected $googleOnePayloadType = GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload::class;
-    protected $googleOnePayloadDataType = '';
-    protected $youtubePayloadType = GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload::class;
-    protected $youtubePayloadDataType = '';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload
-     */
-    public function setGoogleHomePayload(GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload $googleHomePayload)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ProductPayload extends \Google\Model
     {
+        protected $googleHomePayloadType = GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload::class;
+        protected $googleHomePayloadDataType = '';
+        protected $googleOnePayloadType = GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload::class;
+        protected $googleOnePayloadDataType = '';
+        protected $youtubePayloadType = GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload::class;
+        protected $youtubePayloadDataType = '';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload
+         */
+        public function setGoogleHomePayload(GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload $googleHomePayload)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload
+         */
+        public function getGoogleHomePayload()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload
+         */
+        public function setGoogleOnePayload(GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload $googleOnePayload)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload
+         */
+        public function getGoogleOnePayload()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload
+         */
+        public function setYoutubePayload(GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload $youtubePayload)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload
+         */
+        public function getYoutubePayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleHomePayload()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload
-     */
-    public function setGoogleOnePayload(GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload $googleOnePayload)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload
-     */
-    public function getGoogleOnePayload()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload
-     */
-    public function setYoutubePayload(GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload $youtubePayload)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload
-     */
-    public function getYoutubePayload()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ProductPayload extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductPayload
     {
     }
 }

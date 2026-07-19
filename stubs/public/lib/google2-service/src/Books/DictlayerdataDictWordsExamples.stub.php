@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsExamples extends \Google\Model
-{
-    protected $sourceType = DictlayerdataDictWordsExamplesSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param DictlayerdataDictWordsExamplesSource $source
-     */
-    public function setSource(DictlayerdataDictWordsExamplesSource $source)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsExamples extends \Google\Model
     {
+        protected $sourceType = DictlayerdataDictWordsExamplesSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param DictlayerdataDictWordsExamplesSource $source
+         */
+        public function setSource(DictlayerdataDictWordsExamplesSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsExamplesSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictWordsExamplesSource
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsExamples registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Books_DictlayerdataDictWordsExamples extends \Google\Service\Books\DictlayerdataDictWordsExamples
     {
     }
 }

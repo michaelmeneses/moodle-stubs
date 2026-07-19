@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ProcessorInfo extends \Google\Model
-{
-    /**
-     * The processor will process the documents with this document type.
-     *
-     * @var string
-     */
-    public $documentType;
-    /**
-     * The processor resource name. Format is
-     * `projects/{project}/locations/{location}/processors/{processor}`, or `proje
-     * cts/{project}/locations/{location}/processors/{processor}/processorVersions
-     * /{processorVersion}`
-     *
-     * @var string
-     */
-    public $processorName;
-    /**
-     * The Document schema resource name. All documents processed by this
-     * processor will use this schema. Format: projects/{project_number}/locations
-     * /{location}/documentSchemas/{document_schema_id}.
-     *
-     * @var string
-     */
-    public $schemaName;
-    /**
-     * The processor will process the documents with this document type.
-     *
-     * @param string $documentType
-     */
-    public function setDocumentType($documentType)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ProcessorInfo extends \Google\Model
     {
+        /**
+         * The processor will process the documents with this document type.
+         *
+         * @var string
+         */
+        public $documentType;
+        /**
+         * The processor resource name. Format is
+         * `projects/{project}/locations/{location}/processors/{processor}`, or `proje
+         * cts/{project}/locations/{location}/processors/{processor}/processorVersions
+         * /{processorVersion}`
+         *
+         * @var string
+         */
+        public $processorName;
+        /**
+         * The Document schema resource name. All documents processed by this
+         * processor will use this schema. Format: projects/{project_number}/locations
+         * /{location}/documentSchemas/{document_schema_id}.
+         *
+         * @var string
+         */
+        public $schemaName;
+        /**
+         * The processor will process the documents with this document type.
+         *
+         * @param string $documentType
+         */
+        public function setDocumentType($documentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentType()
+        {
+        }
+        /**
+         * The processor resource name. Format is
+         * `projects/{project}/locations/{location}/processors/{processor}`, or `proje
+         * cts/{project}/locations/{location}/processors/{processor}/processorVersions
+         * /{processorVersion}`
+         *
+         * @param string $processorName
+         */
+        public function setProcessorName($processorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessorName()
+        {
+        }
+        /**
+         * The Document schema resource name. All documents processed by this
+         * processor will use this schema. Format: projects/{project_number}/locations
+         * /{location}/documentSchemas/{document_schema_id}.
+         *
+         * @param string $schemaName
+         */
+        public function setSchemaName($schemaName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ProcessorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentType()
-    {
-    }
-    /**
-     * The processor resource name. Format is
-     * `projects/{project}/locations/{location}/processors/{processor}`, or `proje
-     * cts/{project}/locations/{location}/processors/{processor}/processorVersions
-     * /{processorVersion}`
-     *
-     * @param string $processorName
-     */
-    public function setProcessorName($processorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessorName()
-    {
-    }
-    /**
-     * The Document schema resource name. All documents processed by this
-     * processor will use this schema. Format: projects/{project_number}/locations
-     * /{location}/documentSchemas/{document_schema_id}.
-     *
-     * @param string $schemaName
-     */
-    public function setSchemaName($schemaName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaName()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ProcessorInfo extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ProcessorInfo
     {
     }
 }

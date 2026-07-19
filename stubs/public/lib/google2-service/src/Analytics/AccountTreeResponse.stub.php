@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AccountTreeResponse extends \Google\Model
-{
-    protected $accountType = Account::class;
-    protected $accountDataType = '';
-    /**
-     * Resource type for account ticket.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $profileType = Profile::class;
-    protected $profileDataType = '';
-    protected $webpropertyType = Webproperty::class;
-    protected $webpropertyDataType = '';
-    /**
-     * The account created.
-     *
-     * @param Account $account
-     */
-    public function setAccount(Account $account)
+namespace Google\Service\Analytics {
+    class AccountTreeResponse extends \Google\Model
     {
+        protected $accountType = Account::class;
+        protected $accountDataType = '';
+        /**
+         * Resource type for account ticket.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $profileType = Profile::class;
+        protected $profileDataType = '';
+        protected $webpropertyType = Webproperty::class;
+        protected $webpropertyDataType = '';
+        /**
+         * The account created.
+         *
+         * @param Account $account
+         */
+        public function setAccount(Account $account)
+        {
+        }
+        /**
+         * @return Account
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * Resource type for account ticket.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * View (Profile) for the account.
+         *
+         * @param Profile $profile
+         */
+        public function setProfile(Profile $profile)
+        {
+        }
+        /**
+         * @return Profile
+         */
+        public function getProfile()
+        {
+        }
+        /**
+         * Web property for the account.
+         *
+         * @param Webproperty $webproperty
+         */
+        public function setWebproperty(Webproperty $webproperty)
+        {
+        }
+        /**
+         * @return Webproperty
+         */
+        public function getWebproperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account
+     * Runtime class alias of \Google\Service\Analytics\AccountTreeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * Resource type for account ticket.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * View (Profile) for the account.
-     *
-     * @param Profile $profile
-     */
-    public function setProfile(Profile $profile)
-    {
-    }
-    /**
-     * @return Profile
-     */
-    public function getProfile()
-    {
-    }
-    /**
-     * Web property for the account.
-     *
-     * @param Webproperty $webproperty
-     */
-    public function setWebproperty(Webproperty $webproperty)
-    {
-    }
-    /**
-     * @return Webproperty
-     */
-    public function getWebproperty()
+    class Google_Service_Analytics_AccountTreeResponse extends \Google\Service\Analytics\AccountTreeResponse
     {
     }
 }

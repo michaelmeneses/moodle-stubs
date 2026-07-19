@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class SuspendEntitlementRequest extends \Google\Model
-{
-    /**
-     * A free-form reason string, explaining the reason for suspension request.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * A free-form reason string, explaining the reason for suspension request.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class SuspendEntitlementRequest extends \Google\Model
     {
+        /**
+         * A free-form reason string, explaining the reason for suspension request.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * A free-form reason string, explaining the reason for suspension request.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\SuspendEntitlementRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
+    class Google_Service_CloudCommercePartnerProcurementService_SuspendEntitlementRequest extends \Google\Service\CloudCommercePartnerProcurementService\SuspendEntitlementRequest
     {
     }
 }

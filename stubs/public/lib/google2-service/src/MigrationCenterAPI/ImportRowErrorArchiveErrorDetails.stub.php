@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ImportRowErrorArchiveErrorDetails extends \Google\Model
-{
-    protected $csvErrorType = ImportRowErrorCsvErrorDetails::class;
-    protected $csvErrorDataType = '';
-    /**
-     * Output only. The file path inside the archive where the error was detected.
-     *
-     * @var string
-     */
-    public $filePath;
-    /**
-     * Error details for a CSV file.
-     *
-     * @param ImportRowErrorCsvErrorDetails $csvError
-     */
-    public function setCsvError(ImportRowErrorCsvErrorDetails $csvError)
+namespace Google\Service\MigrationCenterAPI {
+    class ImportRowErrorArchiveErrorDetails extends \Google\Model
     {
+        protected $csvErrorType = ImportRowErrorCsvErrorDetails::class;
+        protected $csvErrorDataType = '';
+        /**
+         * Output only. The file path inside the archive where the error was detected.
+         *
+         * @var string
+         */
+        public $filePath;
+        /**
+         * Error details for a CSV file.
+         *
+         * @param ImportRowErrorCsvErrorDetails $csvError
+         */
+        public function setCsvError(ImportRowErrorCsvErrorDetails $csvError)
+        {
+        }
+        /**
+         * @return ImportRowErrorCsvErrorDetails
+         */
+        public function getCsvError()
+        {
+        }
+        /**
+         * Output only. The file path inside the archive where the error was detected.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportRowErrorCsvErrorDetails
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ImportRowErrorArchiveErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvError()
-    {
-    }
-    /**
-     * Output only. The file path inside the archive where the error was detected.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilePath()
+    class Google_Service_MigrationCenterAPI_ImportRowErrorArchiveErrorDetails extends \Google\Service\MigrationCenterAPI\ImportRowErrorArchiveErrorDetails
     {
     }
 }

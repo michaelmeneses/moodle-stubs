@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerStep extends \Google\Collection
-{
-    /**
-     * Unknown.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Step is currently in progress.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * Step currently failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Step has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    protected $collection_key = 'actions';
-    protected $actionsType = GoogleCloudDiscoveryengineV1alphaAnswerStepAction::class;
-    protected $actionsDataType = 'array';
-    /**
-     * The description of the step.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The state of the step.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The thought of the step.
-     *
-     * @var string
-     */
-    public $thought;
-    /**
-     * Actions.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerStepAction[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerStep extends \Google\Collection
     {
+        /**
+         * Unknown.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Step is currently in progress.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * Step currently failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Step has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        protected $collection_key = 'actions';
+        protected $actionsType = GoogleCloudDiscoveryengineV1alphaAnswerStepAction::class;
+        protected $actionsDataType = 'array';
+        /**
+         * The description of the step.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The state of the step.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The thought of the step.
+         *
+         * @var string
+         */
+        public $thought;
+        /**
+         * Actions.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerStepAction[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerStepAction[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * The description of the step.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The state of the step.
+         *
+         * Accepted values: STATE_UNSPECIFIED, IN_PROGRESS, FAILED, SUCCEEDED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The thought of the step.
+         *
+         * @param string $thought
+         */
+        public function setThought($thought)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThought()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerStepAction[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * The description of the step.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The state of the step.
-     *
-     * Accepted values: STATE_UNSPECIFIED, IN_PROGRESS, FAILED, SUCCEEDED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The thought of the step.
-     *
-     * @param string $thought
-     */
-    public function setThought($thought)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThought()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerStep extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStep
     {
     }
 }

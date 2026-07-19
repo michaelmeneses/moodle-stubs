@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1AppleDeveloperId extends \Google\Model
-{
-    /**
-     * Required. The Apple developer key ID (10-character string).
-     *
-     * @var string
-     */
-    public $keyId;
-    /**
-     * Required. Input only. A private key (downloaded as a text file with a .p8
-     * file extension) generated for your Apple Developer account. Ensure that
-     * Apple DeviceCheck is enabled for the private key.
-     *
-     * @var string
-     */
-    public $privateKey;
-    /**
-     * Required. The Apple team ID (10-character string) owning the provisioning
-     * profile used to build your application.
-     *
-     * @var string
-     */
-    public $teamId;
-    /**
-     * Required. The Apple developer key ID (10-character string).
-     *
-     * @param string $keyId
-     */
-    public function setKeyId($keyId)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1AppleDeveloperId extends \Google\Model
     {
+        /**
+         * Required. The Apple developer key ID (10-character string).
+         *
+         * @var string
+         */
+        public $keyId;
+        /**
+         * Required. Input only. A private key (downloaded as a text file with a .p8
+         * file extension) generated for your Apple Developer account. Ensure that
+         * Apple DeviceCheck is enabled for the private key.
+         *
+         * @var string
+         */
+        public $privateKey;
+        /**
+         * Required. The Apple team ID (10-character string) owning the provisioning
+         * profile used to build your application.
+         *
+         * @var string
+         */
+        public $teamId;
+        /**
+         * Required. The Apple developer key ID (10-character string).
+         *
+         * @param string $keyId
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
+        /**
+         * Required. Input only. A private key (downloaded as a text file with a .p8
+         * file extension) generated for your Apple Developer account. Ensure that
+         * Apple DeviceCheck is enabled for the private key.
+         *
+         * @param string $privateKey
+         */
+        public function setPrivateKey($privateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKey()
+        {
+        }
+        /**
+         * Required. The Apple team ID (10-character string) owning the provisioning
+         * profile used to build your application.
+         *
+         * @param string $teamId
+         */
+        public function setTeamId($teamId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTeamId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AppleDeveloperId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyId()
-    {
-    }
-    /**
-     * Required. Input only. A private key (downloaded as a text file with a .p8
-     * file extension) generated for your Apple Developer account. Ensure that
-     * Apple DeviceCheck is enabled for the private key.
-     *
-     * @param string $privateKey
-     */
-    public function setPrivateKey($privateKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKey()
-    {
-    }
-    /**
-     * Required. The Apple team ID (10-character string) owning the provisioning
-     * profile used to build your application.
-     *
-     * @param string $teamId
-     */
-    public function setTeamId($teamId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTeamId()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1AppleDeveloperId extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AppleDeveloperId
     {
     }
 }

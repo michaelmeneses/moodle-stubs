@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductViewItemIssueIssueSeverityPerDestination extends \Google\Collection
-{
-    protected $collection_key = 'disapprovedCountries';
-    /**
-     * List of demoted countries in the destination.
-     *
-     * @var string[]
-     */
-    public $demotedCountries;
-    /**
-     * Issue destination.
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * List of disapproved countries in the destination.
-     *
-     * @var string[]
-     */
-    public $disapprovedCountries;
-    /**
-     * List of demoted countries in the destination.
-     *
-     * @param string[] $demotedCountries
-     */
-    public function setDemotedCountries($demotedCountries)
+namespace Google\Service\ShoppingContent {
+    class ProductViewItemIssueIssueSeverityPerDestination extends \Google\Collection
     {
+        protected $collection_key = 'disapprovedCountries';
+        /**
+         * List of demoted countries in the destination.
+         *
+         * @var string[]
+         */
+        public $demotedCountries;
+        /**
+         * Issue destination.
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * List of disapproved countries in the destination.
+         *
+         * @var string[]
+         */
+        public $disapprovedCountries;
+        /**
+         * List of demoted countries in the destination.
+         *
+         * @param string[] $demotedCountries
+         */
+        public function setDemotedCountries($demotedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDemotedCountries()
+        {
+        }
+        /**
+         * Issue destination.
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * List of disapproved countries in the destination.
+         *
+         * @param string[] $disapprovedCountries
+         */
+        public function setDisapprovedCountries($disapprovedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisapprovedCountries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductViewItemIssueIssueSeverityPerDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDemotedCountries()
-    {
-    }
-    /**
-     * Issue destination.
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * List of disapproved countries in the destination.
-     *
-     * @param string[] $disapprovedCountries
-     */
-    public function setDisapprovedCountries($disapprovedCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisapprovedCountries()
+    class Google_Service_ShoppingContent_ProductViewItemIssueIssueSeverityPerDestination extends \Google\Service\ShoppingContent\ProductViewItemIssueIssueSeverityPerDestination
     {
     }
 }

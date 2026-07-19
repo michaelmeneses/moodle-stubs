@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyTroubleshooter\Resource;
-
-/**
- * The "iam" collection of methods.
- * Typical usage is:
- *  <code>
- *   $policytroubleshooterService = new Google\Service\PolicyTroubleshooter(...);
- *   $iam = $policytroubleshooterService->iam;
- *  </code>
- */
-class Iam extends \Google\Service\Resource
-{
+namespace Google\Service\PolicyTroubleshooter\Resource {
+    use Google\Service\PolicyTroubleshooter\GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest;
+    use Google\Service\PolicyTroubleshooter\GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse;
     /**
-     * Checks whether a principal has a specific permission for a specific resource,
-     * and explains why the principal does or does not have that permission.
-     * (iam.troubleshoot)
-     *
-     * @param GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse
-     * @throws \Google\Service\Exception
+     * The "iam" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $policytroubleshooterService = new Google\Service\PolicyTroubleshooter(...);
+     *   $iam = $policytroubleshooterService->iam;
+     *  </code>
      */
-    public function troubleshoot(GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest $postBody, $optParams = [])
+    class Iam extends \Google\Service\Resource
+    {
+        /**
+         * Checks whether a principal has a specific permission for a specific resource,
+         * and explains why the principal does or does not have that permission.
+         * (iam.troubleshoot)
+         *
+         * @param GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function troubleshoot(GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolicyTroubleshooter\Resource\Iam registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolicyTroubleshooter_Resource_Iam extends \Google\Service\PolicyTroubleshooter\Resource\Iam
     {
     }
 }

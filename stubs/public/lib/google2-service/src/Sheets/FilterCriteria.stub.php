@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class FilterCriteria extends \Google\Collection
-{
-    protected $collection_key = 'hiddenValues';
-    protected $conditionType = BooleanCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * Values that should be hidden.
-     *
-     * @var string[]
-     */
-    public $hiddenValues;
-    protected $visibleBackgroundColorType = Color::class;
-    protected $visibleBackgroundColorDataType = '';
-    protected $visibleBackgroundColorStyleType = ColorStyle::class;
-    protected $visibleBackgroundColorStyleDataType = '';
-    protected $visibleForegroundColorType = Color::class;
-    protected $visibleForegroundColorDataType = '';
-    protected $visibleForegroundColorStyleType = ColorStyle::class;
-    protected $visibleForegroundColorStyleDataType = '';
-    /**
-     * A condition that must be true for values to be shown. (This does not
-     * override hidden_values -- if a value is listed there, it will still be
-     * hidden.)
-     *
-     * @param BooleanCondition $condition
-     */
-    public function setCondition(BooleanCondition $condition)
+namespace Google\Service\Sheets {
+    class FilterCriteria extends \Google\Collection
     {
+        protected $collection_key = 'hiddenValues';
+        protected $conditionType = BooleanCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * Values that should be hidden.
+         *
+         * @var string[]
+         */
+        public $hiddenValues;
+        protected $visibleBackgroundColorType = Color::class;
+        protected $visibleBackgroundColorDataType = '';
+        protected $visibleBackgroundColorStyleType = ColorStyle::class;
+        protected $visibleBackgroundColorStyleDataType = '';
+        protected $visibleForegroundColorType = Color::class;
+        protected $visibleForegroundColorDataType = '';
+        protected $visibleForegroundColorStyleType = ColorStyle::class;
+        protected $visibleForegroundColorStyleDataType = '';
+        /**
+         * A condition that must be true for values to be shown. (This does not
+         * override hidden_values -- if a value is listed there, it will still be
+         * hidden.)
+         *
+         * @param BooleanCondition $condition
+         */
+        public function setCondition(BooleanCondition $condition)
+        {
+        }
+        /**
+         * @return BooleanCondition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Values that should be hidden.
+         *
+         * @param string[] $hiddenValues
+         */
+        public function setHiddenValues($hiddenValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHiddenValues()
+        {
+        }
+        /**
+         * The background fill color to filter by; only cells with this fill color are
+         * shown. Mutually exclusive with visible_foreground_color. Deprecated: Use
+         * visible_background_color_style.
+         *
+         * @deprecated
+         * @param Color $visibleBackgroundColor
+         */
+        public function setVisibleBackgroundColor(Color $visibleBackgroundColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getVisibleBackgroundColor()
+        {
+        }
+        /**
+         * The background fill color to filter by; only cells with this fill color are
+         * shown. This field is mutually exclusive with visible_foreground_color, and
+         * must be set to an RGB-type color. If visible_background_color is also set,
+         * this field takes precedence.
+         *
+         * @param ColorStyle $visibleBackgroundColorStyle
+         */
+        public function setVisibleBackgroundColorStyle(ColorStyle $visibleBackgroundColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getVisibleBackgroundColorStyle()
+        {
+        }
+        /**
+         * The foreground color to filter by; only cells with this foreground color
+         * are shown. Mutually exclusive with visible_background_color. Deprecated:
+         * Use visible_foreground_color_style.
+         *
+         * @deprecated
+         * @param Color $visibleForegroundColor
+         */
+        public function setVisibleForegroundColor(Color $visibleForegroundColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getVisibleForegroundColor()
+        {
+        }
+        /**
+         * The foreground color to filter by; only cells with this foreground color
+         * are shown. This field is mutually exclusive with visible_background_color,
+         * and must be set to an RGB-type color. If visible_foreground_color is also
+         * set, this field takes precedence.
+         *
+         * @param ColorStyle $visibleForegroundColorStyle
+         */
+        public function setVisibleForegroundColorStyle(ColorStyle $visibleForegroundColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getVisibleForegroundColorStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanCondition
+     * Runtime class alias of \Google\Service\Sheets\FilterCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Values that should be hidden.
-     *
-     * @param string[] $hiddenValues
-     */
-    public function setHiddenValues($hiddenValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHiddenValues()
-    {
-    }
-    /**
-     * The background fill color to filter by; only cells with this fill color are
-     * shown. Mutually exclusive with visible_foreground_color. Deprecated: Use
-     * visible_background_color_style.
-     *
-     * @deprecated
-     * @param Color $visibleBackgroundColor
-     */
-    public function setVisibleBackgroundColor(Color $visibleBackgroundColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getVisibleBackgroundColor()
-    {
-    }
-    /**
-     * The background fill color to filter by; only cells with this fill color are
-     * shown. This field is mutually exclusive with visible_foreground_color, and
-     * must be set to an RGB-type color. If visible_background_color is also set,
-     * this field takes precedence.
-     *
-     * @param ColorStyle $visibleBackgroundColorStyle
-     */
-    public function setVisibleBackgroundColorStyle(ColorStyle $visibleBackgroundColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getVisibleBackgroundColorStyle()
-    {
-    }
-    /**
-     * The foreground color to filter by; only cells with this foreground color
-     * are shown. Mutually exclusive with visible_background_color. Deprecated:
-     * Use visible_foreground_color_style.
-     *
-     * @deprecated
-     * @param Color $visibleForegroundColor
-     */
-    public function setVisibleForegroundColor(Color $visibleForegroundColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getVisibleForegroundColor()
-    {
-    }
-    /**
-     * The foreground color to filter by; only cells with this foreground color
-     * are shown. This field is mutually exclusive with visible_background_color,
-     * and must be set to an RGB-type color. If visible_foreground_color is also
-     * set, this field takes precedence.
-     *
-     * @param ColorStyle $visibleForegroundColorStyle
-     */
-    public function setVisibleForegroundColorStyle(ColorStyle $visibleForegroundColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getVisibleForegroundColorStyle()
+    class Google_Service_Sheets_FilterCriteria extends \Google\Service\Sheets\FilterCriteria
     {
     }
 }

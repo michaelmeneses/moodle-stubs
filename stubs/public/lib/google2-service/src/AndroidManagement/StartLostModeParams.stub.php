@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class StartLostModeParams extends \Google\Model
-{
-    /**
-     * The email address displayed to the user when the device is in lost mode.
-     *
-     * @var string
-     */
-    public $lostEmailAddress;
-    protected $lostMessageType = UserFacingMessage::class;
-    protected $lostMessageDataType = '';
-    protected $lostOrganizationType = UserFacingMessage::class;
-    protected $lostOrganizationDataType = '';
-    protected $lostPhoneNumberType = UserFacingMessage::class;
-    protected $lostPhoneNumberDataType = '';
-    protected $lostStreetAddressType = UserFacingMessage::class;
-    protected $lostStreetAddressDataType = '';
-    /**
-     * The email address displayed to the user when the device is in lost mode.
-     *
-     * @param string $lostEmailAddress
-     */
-    public function setLostEmailAddress($lostEmailAddress)
+namespace Google\Service\AndroidManagement {
+    class StartLostModeParams extends \Google\Model
     {
+        /**
+         * The email address displayed to the user when the device is in lost mode.
+         *
+         * @var string
+         */
+        public $lostEmailAddress;
+        protected $lostMessageType = UserFacingMessage::class;
+        protected $lostMessageDataType = '';
+        protected $lostOrganizationType = UserFacingMessage::class;
+        protected $lostOrganizationDataType = '';
+        protected $lostPhoneNumberType = UserFacingMessage::class;
+        protected $lostPhoneNumberDataType = '';
+        protected $lostStreetAddressType = UserFacingMessage::class;
+        protected $lostStreetAddressDataType = '';
+        /**
+         * The email address displayed to the user when the device is in lost mode.
+         *
+         * @param string $lostEmailAddress
+         */
+        public function setLostEmailAddress($lostEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLostEmailAddress()
+        {
+        }
+        /**
+         * The message displayed to the user when the device is in lost mode.
+         *
+         * @param UserFacingMessage $lostMessage
+         */
+        public function setLostMessage(UserFacingMessage $lostMessage)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getLostMessage()
+        {
+        }
+        /**
+         * The organization name displayed to the user when the device is in lost
+         * mode.
+         *
+         * @param UserFacingMessage $lostOrganization
+         */
+        public function setLostOrganization(UserFacingMessage $lostOrganization)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getLostOrganization()
+        {
+        }
+        /**
+         * The phone number that will be called when the device is in lost mode and
+         * the call owner button is tapped.
+         *
+         * @param UserFacingMessage $lostPhoneNumber
+         */
+        public function setLostPhoneNumber(UserFacingMessage $lostPhoneNumber)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getLostPhoneNumber()
+        {
+        }
+        /**
+         * The street address displayed to the user when the device is in lost mode.
+         *
+         * @param UserFacingMessage $lostStreetAddress
+         */
+        public function setLostStreetAddress(UserFacingMessage $lostStreetAddress)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getLostStreetAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\StartLostModeParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLostEmailAddress()
-    {
-    }
-    /**
-     * The message displayed to the user when the device is in lost mode.
-     *
-     * @param UserFacingMessage $lostMessage
-     */
-    public function setLostMessage(UserFacingMessage $lostMessage)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getLostMessage()
-    {
-    }
-    /**
-     * The organization name displayed to the user when the device is in lost
-     * mode.
-     *
-     * @param UserFacingMessage $lostOrganization
-     */
-    public function setLostOrganization(UserFacingMessage $lostOrganization)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getLostOrganization()
-    {
-    }
-    /**
-     * The phone number that will be called when the device is in lost mode and
-     * the call owner button is tapped.
-     *
-     * @param UserFacingMessage $lostPhoneNumber
-     */
-    public function setLostPhoneNumber(UserFacingMessage $lostPhoneNumber)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getLostPhoneNumber()
-    {
-    }
-    /**
-     * The street address displayed to the user when the device is in lost mode.
-     *
-     * @param UserFacingMessage $lostStreetAddress
-     */
-    public function setLostStreetAddress(UserFacingMessage $lostStreetAddress)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getLostStreetAddress()
+    class Google_Service_AndroidManagement_StartLostModeParams extends \Google\Service\AndroidManagement\StartLostModeParams
     {
     }
 }

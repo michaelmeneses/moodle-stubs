@@ -8,6 +8,23 @@
  */
 namespace Aws\S3\S3Transfer;
 
+use Aws\HashingStream;
+use Aws\PhpHash;
+use Aws\ResultInterface;
+use Aws\S3\S3ClientInterface;
+use Aws\S3\S3Transfer\Exception\S3TransferException;
+use Aws\S3\S3Transfer\Models\S3TransferManagerConfig;
+use Aws\S3\S3Transfer\Models\UploadResult;
+use Aws\S3\S3Transfer\Progress\TransferListenerNotifier;
+use Aws\S3\S3Transfer\Progress\TransferProgressSnapshot;
+use GuzzleHttp\Promise\Create;
+use GuzzleHttp\Promise\Each;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Psr7\LazyOpenStream;
+use GuzzleHttp\Psr7\LimitStream;
+use GuzzleHttp\Psr7\Utils;
+use Psr\Http\Message\StreamInterface;
+use Throwable;
 /**
  * Multipart uploader implementation.
  */

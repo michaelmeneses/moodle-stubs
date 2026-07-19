@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NatIpInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'result';
-    protected $resultType = NatIpInfo::class;
-    protected $resultDataType = 'array';
-    /**
-     * [Output Only] A list of NAT IP information.
-     *
-     * @param NatIpInfo[] $result
-     */
-    public function setResult($result)
+namespace Google\Service\Compute {
+    class NatIpInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'result';
+        protected $resultType = NatIpInfo::class;
+        protected $resultDataType = 'array';
+        /**
+         * [Output Only] A list of NAT IP information.
+         *
+         * @param NatIpInfo[] $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return NatIpInfo[]
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NatIpInfo[]
+     * Runtime class alias of \Google\Service\Compute\NatIpInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Compute_NatIpInfoResponse extends \Google\Service\Compute\NatIpInfoResponse
     {
     }
 }

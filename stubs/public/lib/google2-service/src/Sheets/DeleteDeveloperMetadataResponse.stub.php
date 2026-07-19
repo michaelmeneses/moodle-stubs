@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDeveloperMetadataResponse extends \Google\Collection
-{
-    protected $collection_key = 'deletedDeveloperMetadata';
-    protected $deletedDeveloperMetadataType = DeveloperMetadata::class;
-    protected $deletedDeveloperMetadataDataType = 'array';
-    /**
-     * The metadata that was deleted.
-     *
-     * @param DeveloperMetadata[] $deletedDeveloperMetadata
-     */
-    public function setDeletedDeveloperMetadata($deletedDeveloperMetadata)
+namespace Google\Service\Sheets {
+    class DeleteDeveloperMetadataResponse extends \Google\Collection
     {
+        protected $collection_key = 'deletedDeveloperMetadata';
+        protected $deletedDeveloperMetadataType = DeveloperMetadata::class;
+        protected $deletedDeveloperMetadataDataType = 'array';
+        /**
+         * The metadata that was deleted.
+         *
+         * @param DeveloperMetadata[] $deletedDeveloperMetadata
+         */
+        public function setDeletedDeveloperMetadata($deletedDeveloperMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata[]
+         */
+        public function getDeletedDeveloperMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeveloperMetadata[]
+     * Runtime class alias of \Google\Service\Sheets\DeleteDeveloperMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletedDeveloperMetadata()
+    class Google_Service_Sheets_DeleteDeveloperMetadataResponse extends \Google\Service\Sheets\DeleteDeveloperMetadataResponse
     {
     }
 }

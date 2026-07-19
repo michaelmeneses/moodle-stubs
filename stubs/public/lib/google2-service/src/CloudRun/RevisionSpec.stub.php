@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class RevisionSpec extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    /**
-     * @var int
-     */
-    public $containerConcurrency;
-    protected $containersType = Container::class;
-    protected $containersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $serviceAccountName;
-    /**
-     * @var int
-     */
-    public $timeoutSeconds;
-    protected $volumesType = Volume::class;
-    protected $volumesDataType = 'array';
-    /**
-     * @param int
-     */
-    public function setContainerConcurrency($containerConcurrency)
+namespace Google\Service\CloudRun {
+    class RevisionSpec extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        /**
+         * @var int
+         */
+        public $containerConcurrency;
+        protected $containersType = Container::class;
+        protected $containersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $serviceAccountName;
+        /**
+         * @var int
+         */
+        public $timeoutSeconds;
+        protected $volumesType = Volume::class;
+        protected $volumesDataType = 'array';
+        /**
+         * @param int
+         */
+        public function setContainerConcurrency($containerConcurrency)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerConcurrency()
+        {
+        }
+        /**
+         * @param Container[]
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return Container[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccountName($serviceAccountName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTimeoutSeconds($timeoutSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTimeoutSeconds()
+        {
+        }
+        /**
+         * @param Volume[]
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getVolumes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\RevisionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerConcurrency()
-    {
-    }
-    /**
-     * @param Container[]
-     */
-    public function setContainers($containers)
-    {
-    }
-    /**
-     * @return Container[]
-     */
-    public function getContainers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccountName($serviceAccountName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTimeoutSeconds($timeoutSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTimeoutSeconds()
-    {
-    }
-    /**
-     * @param Volume[]
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return Volume[]
-     */
-    public function getVolumes()
+    class Google_Service_CloudRun_RevisionSpec extends \Google\Service\CloudRun\RevisionSpec
     {
     }
 }

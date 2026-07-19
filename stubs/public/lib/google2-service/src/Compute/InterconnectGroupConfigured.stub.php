@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupConfigured extends \Google\Model
-{
-    protected $topologyCapabilityType = InterconnectGroupConfiguredTopologyCapability::class;
-    protected $topologyCapabilityDataType = '';
-    /**
-     * @param InterconnectGroupConfiguredTopologyCapability $topologyCapability
-     */
-    public function setTopologyCapability(InterconnectGroupConfiguredTopologyCapability $topologyCapability)
+namespace Google\Service\Compute {
+    class InterconnectGroupConfigured extends \Google\Model
     {
+        protected $topologyCapabilityType = InterconnectGroupConfiguredTopologyCapability::class;
+        protected $topologyCapabilityDataType = '';
+        /**
+         * @param InterconnectGroupConfiguredTopologyCapability $topologyCapability
+         */
+        public function setTopologyCapability(InterconnectGroupConfiguredTopologyCapability $topologyCapability)
+        {
+        }
+        /**
+         * @return InterconnectGroupConfiguredTopologyCapability
+         */
+        public function getTopologyCapability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectGroupConfiguredTopologyCapability
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupConfigured registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopologyCapability()
+    class Google_Service_Compute_InterconnectGroupConfigured extends \Google\Service\Compute\InterconnectGroupConfigured
     {
     }
 }

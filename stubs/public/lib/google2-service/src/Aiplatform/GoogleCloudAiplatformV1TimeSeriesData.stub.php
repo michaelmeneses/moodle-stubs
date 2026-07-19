@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TimeSeriesData extends \Google\Collection
-{
-    /**
-     * The value type is unspecified.
-     */
-    public const VALUE_TYPE_VALUE_TYPE_UNSPECIFIED = 'VALUE_TYPE_UNSPECIFIED';
-    /**
-     * Used for TensorboardTimeSeries that is a list of scalars. E.g. accuracy of
-     * a model over epochs/time.
-     */
-    public const VALUE_TYPE_SCALAR = 'SCALAR';
-    /**
-     * Used for TensorboardTimeSeries that is a list of tensors. E.g. histograms
-     * of weights of layer in a model over epoch/time.
-     */
-    public const VALUE_TYPE_TENSOR = 'TENSOR';
-    /**
-     * Used for TensorboardTimeSeries that is a list of blob sequences. E.g. set
-     * of sample images with labels over epochs/time.
-     */
-    public const VALUE_TYPE_BLOB_SEQUENCE = 'BLOB_SEQUENCE';
-    protected $collection_key = 'values';
-    /**
-     * Required. The ID of the TensorboardTimeSeries, which will become the final
-     * component of the TensorboardTimeSeries' resource name
-     *
-     * @var string
-     */
-    public $tensorboardTimeSeriesId;
-    /**
-     * Required. Immutable. The value type of this time series. All the values in
-     * this time series data must match this value type.
-     *
-     * @var string
-     */
-    public $valueType;
-    protected $valuesType = GoogleCloudAiplatformV1TimeSeriesDataPoint::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Required. The ID of the TensorboardTimeSeries, which will become the final
-     * component of the TensorboardTimeSeries' resource name
-     *
-     * @param string $tensorboardTimeSeriesId
-     */
-    public function setTensorboardTimeSeriesId($tensorboardTimeSeriesId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TimeSeriesData extends \Google\Collection
     {
+        /**
+         * The value type is unspecified.
+         */
+        public const VALUE_TYPE_VALUE_TYPE_UNSPECIFIED = 'VALUE_TYPE_UNSPECIFIED';
+        /**
+         * Used for TensorboardTimeSeries that is a list of scalars. E.g. accuracy of
+         * a model over epochs/time.
+         */
+        public const VALUE_TYPE_SCALAR = 'SCALAR';
+        /**
+         * Used for TensorboardTimeSeries that is a list of tensors. E.g. histograms
+         * of weights of layer in a model over epoch/time.
+         */
+        public const VALUE_TYPE_TENSOR = 'TENSOR';
+        /**
+         * Used for TensorboardTimeSeries that is a list of blob sequences. E.g. set
+         * of sample images with labels over epochs/time.
+         */
+        public const VALUE_TYPE_BLOB_SEQUENCE = 'BLOB_SEQUENCE';
+        protected $collection_key = 'values';
+        /**
+         * Required. The ID of the TensorboardTimeSeries, which will become the final
+         * component of the TensorboardTimeSeries' resource name
+         *
+         * @var string
+         */
+        public $tensorboardTimeSeriesId;
+        /**
+         * Required. Immutable. The value type of this time series. All the values in
+         * this time series data must match this value type.
+         *
+         * @var string
+         */
+        public $valueType;
+        protected $valuesType = GoogleCloudAiplatformV1TimeSeriesDataPoint::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Required. The ID of the TensorboardTimeSeries, which will become the final
+         * component of the TensorboardTimeSeries' resource name
+         *
+         * @param string $tensorboardTimeSeriesId
+         */
+        public function setTensorboardTimeSeriesId($tensorboardTimeSeriesId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTensorboardTimeSeriesId()
+        {
+        }
+        /**
+         * Required. Immutable. The value type of this time series. All the values in
+         * this time series data must match this value type.
+         *
+         * Accepted values: VALUE_TYPE_UNSPECIFIED, SCALAR, TENSOR, BLOB_SEQUENCE
+         *
+         * @param self::VALUE_TYPE_* $valueType
+         */
+        public function setValueType($valueType)
+        {
+        }
+        /**
+         * @return self::VALUE_TYPE_*
+         */
+        public function getValueType()
+        {
+        }
+        /**
+         * Required. Data points in this time series.
+         *
+         * @param GoogleCloudAiplatformV1TimeSeriesDataPoint[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TimeSeriesDataPoint[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TimeSeriesData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTensorboardTimeSeriesId()
-    {
-    }
-    /**
-     * Required. Immutable. The value type of this time series. All the values in
-     * this time series data must match this value type.
-     *
-     * Accepted values: VALUE_TYPE_UNSPECIFIED, SCALAR, TENSOR, BLOB_SEQUENCE
-     *
-     * @param self::VALUE_TYPE_* $valueType
-     */
-    public function setValueType($valueType)
-    {
-    }
-    /**
-     * @return self::VALUE_TYPE_*
-     */
-    public function getValueType()
-    {
-    }
-    /**
-     * Required. Data points in this time series.
-     *
-     * @param GoogleCloudAiplatformV1TimeSeriesDataPoint[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TimeSeriesDataPoint[]
-     */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TimeSeriesData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TimeSeriesData
     {
     }
 }

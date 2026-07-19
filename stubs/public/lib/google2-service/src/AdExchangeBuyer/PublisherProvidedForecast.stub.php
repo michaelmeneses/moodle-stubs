@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PublisherProvidedForecast extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    public $weeklyImpressions;
-    public $weeklyUniques;
+namespace Google\Service\AdExchangeBuyer {
+    class PublisherProvidedForecast extends \Google\Collection
+    {
+        protected $collection_key = 'dimensions';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        public $weeklyImpressions;
+        public $weeklyUniques;
+        /**
+         * @param Dimension[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        public function setWeeklyImpressions($weeklyImpressions)
+        {
+        }
+        public function getWeeklyImpressions()
+        {
+        }
+        public function setWeeklyUniques($weeklyUniques)
+        {
+        }
+        public function getWeeklyUniques()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Dimension[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PublisherProvidedForecast registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    public function setWeeklyImpressions($weeklyImpressions)
-    {
-    }
-    public function getWeeklyImpressions()
-    {
-    }
-    public function setWeeklyUniques($weeklyUniques)
-    {
-    }
-    public function getWeeklyUniques()
+    class Google_Service_AdExchangeBuyer_PublisherProvidedForecast extends \Google\Service\AdExchangeBuyer\PublisherProvidedForecast
     {
     }
 }

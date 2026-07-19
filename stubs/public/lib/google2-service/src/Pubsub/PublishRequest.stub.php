@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class PublishRequest extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $messagesType = PubsubMessage::class;
-    protected $messagesDataType = 'array';
-    /**
-     * Required. The messages to publish.
-     *
-     * @param PubsubMessage[] $messages
-     */
-    public function setMessages($messages)
+namespace Google\Service\Pubsub {
+    class PublishRequest extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $messagesType = PubsubMessage::class;
+        protected $messagesDataType = 'array';
+        /**
+         * Required. The messages to publish.
+         *
+         * @param PubsubMessage[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return PubsubMessage[]
+         */
+        public function getMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PubsubMessage[]
+     * Runtime class alias of \Google\Service\Pubsub\PublishRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessages()
+    class Google_Service_Pubsub_PublishRequest extends \Google\Service\Pubsub\PublishRequest
     {
     }
 }

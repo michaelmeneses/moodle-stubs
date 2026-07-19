@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII\Resource;
-
-/**
- * The "products" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $products = $adexchangebuyer2Service->accounts_products;
- *  </code>
- */
-class AccountsProducts extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyerII\Resource {
+    use Google\Service\AdExchangeBuyerII\ListProductsResponse;
+    use Google\Service\AdExchangeBuyerII\Product;
     /**
-     * Gets the requested product by ID. (products.get)
-     *
-     * @param string $accountId Account ID of the buyer.
-     * @param string $productId The ID for the product to get the head revision for.
-     * @param array $optParams Optional parameters.
-     * @return Product
-     * @throws \Google\Service\Exception
+     * The "products" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
+     *   $products = $adexchangebuyer2Service->accounts_products;
+     *  </code>
      */
-    public function get($accountId, $productId, $optParams = [])
+    class AccountsProducts extends \Google\Service\Resource
     {
+        /**
+         * Gets the requested product by ID. (products.get)
+         *
+         * @param string $accountId Account ID of the buyer.
+         * @param string $productId The ID for the product to get the head revision for.
+         * @param array $optParams Optional parameters.
+         * @return Product
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $productId, $optParams = [])
+        {
+        }
+        /**
+         * List all products visible to the buyer (optionally filtered by the specified
+         * PQL query). (products.listAccountsProducts)
+         *
+         * @param string $accountId Account ID of the buyer.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter An optional PQL query used to query for products.
+         * See https://developers.google.com/ad-manager/docs/pqlreference for
+         * documentation about PQL and examples. Nested repeated fields, such as
+         * product.targetingCriterion.inclusions, cannot be filtered.
+         * @opt_param int pageSize Requested page size. The server may return fewer
+         * results than requested. If unspecified, the server will pick an appropriate
+         * default.
+         * @opt_param string pageToken The page token as returned from
+         * ListProductsResponse.
+         * @return ListProductsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsProducts($accountId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List all products visible to the buyer (optionally filtered by the specified
-     * PQL query). (products.listAccountsProducts)
-     *
-     * @param string $accountId Account ID of the buyer.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter An optional PQL query used to query for products.
-     * See https://developers.google.com/ad-manager/docs/pqlreference for
-     * documentation about PQL and examples. Nested repeated fields, such as
-     * product.targetingCriterion.inclusions, cannot be filtered.
-     * @opt_param int pageSize Requested page size. The server may return fewer
-     * results than requested. If unspecified, the server will pick an appropriate
-     * default.
-     * @opt_param string pageToken The page token as returned from
-     * ListProductsResponse.
-     * @return ListProductsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Resource\AccountsProducts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsProducts($accountId, $optParams = [])
+    class Google_Service_AdExchangeBuyerII_Resource_AccountsProducts extends \Google\Service\AdExchangeBuyerII\Resource\AccountsProducts
     {
     }
 }

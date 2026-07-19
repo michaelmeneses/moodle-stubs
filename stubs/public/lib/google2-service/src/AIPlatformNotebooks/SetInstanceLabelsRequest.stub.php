@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class SetInstanceLabelsRequest extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $labels = [];
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
+namespace Google\Service\AIPlatformNotebooks {
+    class SetInstanceLabelsRequest extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $labels = [];
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\SetInstanceLabelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_AIPlatformNotebooks_SetInstanceLabelsRequest extends \Google\Service\AIPlatformNotebooks\SetInstanceLabelsRequest
     {
     }
 }

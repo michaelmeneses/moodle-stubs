@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DicomStoreMetrics extends \Google\Model
-{
-    /**
-     * Total blob storage bytes for all instances in the store.
-     *
-     * @var string
-     */
-    public $blobStorageSizeBytes;
-    /**
-     * Number of instances in the store.
-     *
-     * @var string
-     */
-    public $instanceCount;
-    /**
-     * Resource name of the DICOM store, of the form `projects/{project_id}/locati
-     * ons/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Number of series in the store.
-     *
-     * @var string
-     */
-    public $seriesCount;
-    /**
-     * Total structured storage bytes for all instances in the store.
-     *
-     * @var string
-     */
-    public $structuredStorageSizeBytes;
-    /**
-     * Number of studies in the store.
-     *
-     * @var string
-     */
-    public $studyCount;
-    /**
-     * Total blob storage bytes for all instances in the store.
-     *
-     * @param string $blobStorageSizeBytes
-     */
-    public function setBlobStorageSizeBytes($blobStorageSizeBytes)
+namespace Google\Service\CloudHealthcare {
+    class DicomStoreMetrics extends \Google\Model
     {
+        /**
+         * Total blob storage bytes for all instances in the store.
+         *
+         * @var string
+         */
+        public $blobStorageSizeBytes;
+        /**
+         * Number of instances in the store.
+         *
+         * @var string
+         */
+        public $instanceCount;
+        /**
+         * Resource name of the DICOM store, of the form `projects/{project_id}/locati
+         * ons/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Number of series in the store.
+         *
+         * @var string
+         */
+        public $seriesCount;
+        /**
+         * Total structured storage bytes for all instances in the store.
+         *
+         * @var string
+         */
+        public $structuredStorageSizeBytes;
+        /**
+         * Number of studies in the store.
+         *
+         * @var string
+         */
+        public $studyCount;
+        /**
+         * Total blob storage bytes for all instances in the store.
+         *
+         * @param string $blobStorageSizeBytes
+         */
+        public function setBlobStorageSizeBytes($blobStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobStorageSizeBytes()
+        {
+        }
+        /**
+         * Number of instances in the store.
+         *
+         * @param string $instanceCount
+         */
+        public function setInstanceCount($instanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceCount()
+        {
+        }
+        /**
+         * Resource name of the DICOM store, of the form `projects/{project_id}/locati
+         * ons/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Number of series in the store.
+         *
+         * @param string $seriesCount
+         */
+        public function setSeriesCount($seriesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesCount()
+        {
+        }
+        /**
+         * Total structured storage bytes for all instances in the store.
+         *
+         * @param string $structuredStorageSizeBytes
+         */
+        public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredStorageSizeBytes()
+        {
+        }
+        /**
+         * Number of studies in the store.
+         *
+         * @param string $studyCount
+         */
+        public function setStudyCount($studyCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudyCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\DicomStoreMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobStorageSizeBytes()
-    {
-    }
-    /**
-     * Number of instances in the store.
-     *
-     * @param string $instanceCount
-     */
-    public function setInstanceCount($instanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceCount()
-    {
-    }
-    /**
-     * Resource name of the DICOM store, of the form `projects/{project_id}/locati
-     * ons/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Number of series in the store.
-     *
-     * @param string $seriesCount
-     */
-    public function setSeriesCount($seriesCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesCount()
-    {
-    }
-    /**
-     * Total structured storage bytes for all instances in the store.
-     *
-     * @param string $structuredStorageSizeBytes
-     */
-    public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStructuredStorageSizeBytes()
-    {
-    }
-    /**
-     * Number of studies in the store.
-     *
-     * @param string $studyCount
-     */
-    public function setStudyCount($studyCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudyCount()
+    class Google_Service_CloudHealthcare_DicomStoreMetrics extends \Google\Service\CloudHealthcare\DicomStoreMetrics
     {
     }
 }

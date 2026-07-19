@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class WindowsUpdatePackage extends \Google\Collection
-{
-    protected $collection_key = 'moreInfoUrls';
-    protected $categoriesType = WindowsUpdateCategory::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * The localized description of the update package.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A collection of Microsoft Knowledge Base article IDs that are associated
-     * with the update package.
-     *
-     * @var string[]
-     */
-    public $kbArticleIds;
-    /**
-     * The last published date of the update, in (UTC) date and time.
-     *
-     * @var string
-     */
-    public $lastDeploymentChangeTime;
-    /**
-     * A collection of URLs that provide more information about the update
-     * package.
-     *
-     * @var string[]
-     */
-    public $moreInfoUrls;
-    /**
-     * The revision number of this update package.
-     *
-     * @var int
-     */
-    public $revisionNumber;
-    /**
-     * A hyperlink to the language-specific support information for the update.
-     *
-     * @var string
-     */
-    public $supportUrl;
-    /**
-     * The localized title of the update package.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Gets the identifier of an update package. Stays the same across revisions.
-     *
-     * @var string
-     */
-    public $updateId;
-    /**
-     * The categories that are associated with this update package.
-     *
-     * @param WindowsUpdateCategory[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\CloudAsset {
+    class WindowsUpdatePackage extends \Google\Collection
     {
+        protected $collection_key = 'moreInfoUrls';
+        protected $categoriesType = WindowsUpdateCategory::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * The localized description of the update package.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A collection of Microsoft Knowledge Base article IDs that are associated
+         * with the update package.
+         *
+         * @var string[]
+         */
+        public $kbArticleIds;
+        /**
+         * The last published date of the update, in (UTC) date and time.
+         *
+         * @var string
+         */
+        public $lastDeploymentChangeTime;
+        /**
+         * A collection of URLs that provide more information about the update
+         * package.
+         *
+         * @var string[]
+         */
+        public $moreInfoUrls;
+        /**
+         * The revision number of this update package.
+         *
+         * @var int
+         */
+        public $revisionNumber;
+        /**
+         * A hyperlink to the language-specific support information for the update.
+         *
+         * @var string
+         */
+        public $supportUrl;
+        /**
+         * The localized title of the update package.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Gets the identifier of an update package. Stays the same across revisions.
+         *
+         * @var string
+         */
+        public $updateId;
+        /**
+         * The categories that are associated with this update package.
+         *
+         * @param WindowsUpdateCategory[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return WindowsUpdateCategory[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * The localized description of the update package.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * A collection of Microsoft Knowledge Base article IDs that are associated
+         * with the update package.
+         *
+         * @param string[] $kbArticleIds
+         */
+        public function setKbArticleIds($kbArticleIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getKbArticleIds()
+        {
+        }
+        /**
+         * The last published date of the update, in (UTC) date and time.
+         *
+         * @param string $lastDeploymentChangeTime
+         */
+        public function setLastDeploymentChangeTime($lastDeploymentChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastDeploymentChangeTime()
+        {
+        }
+        /**
+         * A collection of URLs that provide more information about the update
+         * package.
+         *
+         * @param string[] $moreInfoUrls
+         */
+        public function setMoreInfoUrls($moreInfoUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMoreInfoUrls()
+        {
+        }
+        /**
+         * The revision number of this update package.
+         *
+         * @param int $revisionNumber
+         */
+        public function setRevisionNumber($revisionNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRevisionNumber()
+        {
+        }
+        /**
+         * A hyperlink to the language-specific support information for the update.
+         *
+         * @param string $supportUrl
+         */
+        public function setSupportUrl($supportUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportUrl()
+        {
+        }
+        /**
+         * The localized title of the update package.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Gets the identifier of an update package. Stays the same across revisions.
+         *
+         * @param string $updateId
+         */
+        public function setUpdateId($updateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WindowsUpdateCategory[]
+     * Runtime class alias of \Google\Service\CloudAsset\WindowsUpdatePackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * The localized description of the update package.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * A collection of Microsoft Knowledge Base article IDs that are associated
-     * with the update package.
-     *
-     * @param string[] $kbArticleIds
-     */
-    public function setKbArticleIds($kbArticleIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getKbArticleIds()
-    {
-    }
-    /**
-     * The last published date of the update, in (UTC) date and time.
-     *
-     * @param string $lastDeploymentChangeTime
-     */
-    public function setLastDeploymentChangeTime($lastDeploymentChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastDeploymentChangeTime()
-    {
-    }
-    /**
-     * A collection of URLs that provide more information about the update
-     * package.
-     *
-     * @param string[] $moreInfoUrls
-     */
-    public function setMoreInfoUrls($moreInfoUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMoreInfoUrls()
-    {
-    }
-    /**
-     * The revision number of this update package.
-     *
-     * @param int $revisionNumber
-     */
-    public function setRevisionNumber($revisionNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRevisionNumber()
-    {
-    }
-    /**
-     * A hyperlink to the language-specific support information for the update.
-     *
-     * @param string $supportUrl
-     */
-    public function setSupportUrl($supportUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportUrl()
-    {
-    }
-    /**
-     * The localized title of the update package.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Gets the identifier of an update package. Stays the same across revisions.
-     *
-     * @param string $updateId
-     */
-    public function setUpdateId($updateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateId()
+    class Google_Service_CloudAsset_WindowsUpdatePackage extends \Google\Service\CloudAsset\WindowsUpdatePackage
     {
     }
 }

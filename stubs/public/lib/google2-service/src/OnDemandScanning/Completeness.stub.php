@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class Completeness extends \Google\Model
-{
-    /**
-     * If true, the builder claims that recipe.arguments is complete, meaning that
-     * all external inputs are properly captured in the recipe.
-     *
-     * @var bool
-     */
-    public $arguments;
-    /**
-     * If true, the builder claims that recipe.environment is claimed to be
-     * complete.
-     *
-     * @var bool
-     */
-    public $environment;
-    /**
-     * If true, the builder claims that materials are complete, usually through
-     * some controls to prevent network access. Sometimes called "hermetic".
-     *
-     * @var bool
-     */
-    public $materials;
-    /**
-     * If true, the builder claims that recipe.arguments is complete, meaning that
-     * all external inputs are properly captured in the recipe.
-     *
-     * @param bool $arguments
-     */
-    public function setArguments($arguments)
+namespace Google\Service\OnDemandScanning {
+    class Completeness extends \Google\Model
     {
+        /**
+         * If true, the builder claims that recipe.arguments is complete, meaning that
+         * all external inputs are properly captured in the recipe.
+         *
+         * @var bool
+         */
+        public $arguments;
+        /**
+         * If true, the builder claims that recipe.environment is claimed to be
+         * complete.
+         *
+         * @var bool
+         */
+        public $environment;
+        /**
+         * If true, the builder claims that materials are complete, usually through
+         * some controls to prevent network access. Sometimes called "hermetic".
+         *
+         * @var bool
+         */
+        public $materials;
+        /**
+         * If true, the builder claims that recipe.arguments is complete, meaning that
+         * all external inputs are properly captured in the recipe.
+         *
+         * @param bool $arguments
+         */
+        public function setArguments($arguments)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getArguments()
+        {
+        }
+        /**
+         * If true, the builder claims that recipe.environment is claimed to be
+         * complete.
+         *
+         * @param bool $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * If true, the builder claims that materials are complete, usually through
+         * some controls to prevent network access. Sometimes called "hermetic".
+         *
+         * @param bool $materials
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMaterials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OnDemandScanning\Completeness registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArguments()
-    {
-    }
-    /**
-     * If true, the builder claims that recipe.environment is claimed to be
-     * complete.
-     *
-     * @param bool $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * If true, the builder claims that materials are complete, usually through
-     * some controls to prevent network access. Sometimes called "hermetic".
-     *
-     * @param bool $materials
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMaterials()
+    class Google_Service_OnDemandScanning_Completeness extends \Google\Service\OnDemandScanning\Completeness
     {
     }
 }

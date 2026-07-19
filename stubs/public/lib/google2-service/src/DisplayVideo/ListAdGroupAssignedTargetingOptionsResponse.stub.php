@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListAdGroupAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assignedTargetingOptions';
-    protected $assignedTargetingOptionsType = AssignedTargetingOption::class;
-    protected $assignedTargetingOptionsDataType = 'array';
-    /**
-     * A token identifying the next page of results. This value should be
-     * specified as the pageToken in a subsequent
-     * ListAdGroupAssignedTargetingOptionsRequest to fetch the next page of
-     * results. This token will be absent if there are no more
-     * AssignedTargetingOption resources to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of assigned targeting options. This list will be absent if empty.
-     *
-     * @param AssignedTargetingOption[] $assignedTargetingOptions
-     */
-    public function setAssignedTargetingOptions($assignedTargetingOptions)
+namespace Google\Service\DisplayVideo {
+    class ListAdGroupAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assignedTargetingOptions';
+        protected $assignedTargetingOptionsType = AssignedTargetingOption::class;
+        protected $assignedTargetingOptionsDataType = 'array';
+        /**
+         * A token identifying the next page of results. This value should be
+         * specified as the pageToken in a subsequent
+         * ListAdGroupAssignedTargetingOptionsRequest to fetch the next page of
+         * results. This token will be absent if there are no more
+         * AssignedTargetingOption resources to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of assigned targeting options. This list will be absent if empty.
+         *
+         * @param AssignedTargetingOption[] $assignedTargetingOptions
+         */
+        public function setAssignedTargetingOptions($assignedTargetingOptions)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption[]
+         */
+        public function getAssignedTargetingOptions()
+        {
+        }
+        /**
+         * A token identifying the next page of results. This value should be
+         * specified as the pageToken in a subsequent
+         * ListAdGroupAssignedTargetingOptionsRequest to fetch the next page of
+         * results. This token will be absent if there are no more
+         * AssignedTargetingOption resources to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedTargetingOption[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListAdGroupAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedTargetingOptions()
-    {
-    }
-    /**
-     * A token identifying the next page of results. This value should be
-     * specified as the pageToken in a subsequent
-     * ListAdGroupAssignedTargetingOptionsRequest to fetch the next page of
-     * results. This token will be absent if there are no more
-     * AssignedTargetingOption resources to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListAdGroupAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\ListAdGroupAssignedTargetingOptionsResponse
     {
     }
 }

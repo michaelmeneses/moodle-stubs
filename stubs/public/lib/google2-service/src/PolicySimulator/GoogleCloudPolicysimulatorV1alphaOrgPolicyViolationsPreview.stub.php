@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreview extends \Google\Collection
-{
-    protected $collection_key = 'customConstraints';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string[]
-     */
-    public $customConstraints;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $overlayType = GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay::class;
-    protected $overlayDataType = '';
-    protected $resourceCountsType = GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts::class;
-    protected $resourceCountsDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var int
-     */
-    public $violationsCount;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreview extends \Google\Collection
     {
+        protected $collection_key = 'customConstraints';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string[]
+         */
+        public $customConstraints;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $overlayType = GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay::class;
+        protected $overlayDataType = '';
+        protected $resourceCountsType = GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts::class;
+        protected $resourceCountsDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var int
+         */
+        public $violationsCount;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCustomConstraints($customConstraints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomConstraints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay
+         */
+        public function setOverlay(GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay $overlay)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay
+         */
+        public function getOverlay()
+        {
+        }
+        /**
+         * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts
+         */
+        public function setResourceCounts(GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts $resourceCounts)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts
+         */
+        public function getResourceCounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setViolationsCount($violationsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getViolationsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCustomConstraints($customConstraints)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCustomConstraints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay
-     */
-    public function setOverlay(GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay $overlay)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay
-     */
-    public function getOverlay()
-    {
-    }
-    /**
-     * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts
-     */
-    public function setResourceCounts(GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts $resourceCounts)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts
-     */
-    public function getResourceCounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setViolationsCount($violationsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getViolationsCount()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreview extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreview
     {
     }
 }

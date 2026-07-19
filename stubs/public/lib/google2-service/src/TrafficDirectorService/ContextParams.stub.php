@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class ContextParams extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $params;
-    /**
-     * @param string[] $params
-     */
-    public function setParams($params)
+namespace Google\Service\TrafficDirectorService {
+    class ContextParams extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $params;
+        /**
+         * @param string[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\ContextParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParams()
+    class Google_Service_TrafficDirectorService_ContextParams extends \Google\Service\TrafficDirectorService\ContextParams
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class Metric extends \Google\Model
-{
-    /**
-     * For metrics with floating point value.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * For metrics with integer value.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Required. Metric name, e.g., "nodes total", "percent done".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * For metrics with custom values (ratios, visual progress, etc.).
-     *
-     * @var string
-     */
-    public $stringValue;
-    public function setDoubleValue($doubleValue)
+namespace Google\Service\Container {
+    class Metric extends \Google\Model
     {
+        /**
+         * For metrics with floating point value.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * For metrics with integer value.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Required. Metric name, e.g., "nodes total", "percent done".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * For metrics with custom values (ratios, visual progress, etc.).
+         *
+         * @var string
+         */
+        public $stringValue;
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * For metrics with integer value.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Required. Metric name, e.g., "nodes total", "percent done".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * For metrics with custom values (ratios, visual progress, etc.).
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * For metrics with integer value.
-     *
-     * @param string $intValue
+     * Runtime class alias of \Google\Service\Container\Metric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Required. Metric name, e.g., "nodes total", "percent done".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * For metrics with custom values (ratios, visual progress, etc.).
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Container_Metric extends \Google\Service\Container\Metric
     {
     }
 }

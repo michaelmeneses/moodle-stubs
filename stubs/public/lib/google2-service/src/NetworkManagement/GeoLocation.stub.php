@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class GeoLocation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $country;
-    /**
-     * @var string
-     */
-    public $formattedAddress;
-    /**
-     * @param string
-     */
-    public function setCountry($country)
+namespace Google\Service\NetworkManagement {
+    class GeoLocation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $country;
+        /**
+         * @var string
+         */
+        public $formattedAddress;
+        /**
+         * @param string
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFormattedAddress($formattedAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\GeoLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFormattedAddress($formattedAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedAddress()
+    class Google_Service_NetworkManagement_GeoLocation extends \Google\Service\NetworkManagement\GeoLocation
     {
     }
 }

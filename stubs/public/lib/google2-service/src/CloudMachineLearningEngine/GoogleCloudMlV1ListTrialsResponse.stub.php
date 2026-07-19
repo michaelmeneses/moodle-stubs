@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ListTrialsResponse extends \Google\Collection
-{
-    protected $collection_key = 'trials';
-    protected $trialsType = GoogleCloudMlV1Trial::class;
-    protected $trialsDataType = 'array';
-    /**
-     * The trials associated with the study.
-     *
-     * @param GoogleCloudMlV1Trial[] $trials
-     */
-    public function setTrials($trials)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ListTrialsResponse extends \Google\Collection
     {
+        protected $collection_key = 'trials';
+        protected $trialsType = GoogleCloudMlV1Trial::class;
+        protected $trialsDataType = 'array';
+        /**
+         * The trials associated with the study.
+         *
+         * @param GoogleCloudMlV1Trial[] $trials
+         */
+        public function setTrials($trials)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Trial[]
+         */
+        public function getTrials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Trial[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListTrialsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrials()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListTrialsResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListTrialsResponse
     {
     }
 }

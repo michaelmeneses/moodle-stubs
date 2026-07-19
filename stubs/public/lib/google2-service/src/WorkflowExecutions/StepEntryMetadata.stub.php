@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class StepEntryMetadata extends \Google\Model
-{
-    /**
-     * Current step entry does not have any progress data.
-     */
-    public const PROGRESS_TYPE_PROGRESS_TYPE_UNSPECIFIED = 'PROGRESS_TYPE_UNSPECIFIED';
-    /**
-     * Current step entry is in progress of a FOR step.
-     */
-    public const PROGRESS_TYPE_PROGRESS_TYPE_FOR = 'PROGRESS_TYPE_FOR';
-    /**
-     * Current step entry is in progress of a SWITCH step.
-     */
-    public const PROGRESS_TYPE_PROGRESS_TYPE_SWITCH = 'PROGRESS_TYPE_SWITCH';
-    /**
-     * Current step entry is in progress of a RETRY step.
-     */
-    public const PROGRESS_TYPE_PROGRESS_TYPE_RETRY = 'PROGRESS_TYPE_RETRY';
-    /**
-     * Current step entry is in progress of a PARALLEL FOR step.
-     */
-    public const PROGRESS_TYPE_PROGRESS_TYPE_PARALLEL_FOR = 'PROGRESS_TYPE_PARALLEL_FOR';
-    /**
-     * Current step entry is in progress of a PARALLEL BRANCH step.
-     */
-    public const PROGRESS_TYPE_PROGRESS_TYPE_PARALLEL_BRANCH = 'PROGRESS_TYPE_PARALLEL_BRANCH';
-    /**
-     * Expected iteration represents the expected number of iterations in the
-     * step's progress.
-     *
-     * @var string
-     */
-    public $expectedIteration;
-    /**
-     * Progress number represents the current state of the current progress. eg: A
-     * step entry represents the 4th iteration in a progress of PROGRESS_TYPE_FOR.
-     * Note: This field is only populated when an iteration exists and the
-     * starting value is 1.
-     *
-     * @var string
-     */
-    public $progressNumber;
-    /**
-     * Progress type of this step entry.
-     *
-     * @var string
-     */
-    public $progressType;
-    /**
-     * Child thread id that this step entry belongs to.
-     *
-     * @var string
-     */
-    public $threadId;
-    /**
-     * Expected iteration represents the expected number of iterations in the
-     * step's progress.
-     *
-     * @param string $expectedIteration
-     */
-    public function setExpectedIteration($expectedIteration)
+namespace Google\Service\WorkflowExecutions {
+    class StepEntryMetadata extends \Google\Model
     {
+        /**
+         * Current step entry does not have any progress data.
+         */
+        public const PROGRESS_TYPE_PROGRESS_TYPE_UNSPECIFIED = 'PROGRESS_TYPE_UNSPECIFIED';
+        /**
+         * Current step entry is in progress of a FOR step.
+         */
+        public const PROGRESS_TYPE_PROGRESS_TYPE_FOR = 'PROGRESS_TYPE_FOR';
+        /**
+         * Current step entry is in progress of a SWITCH step.
+         */
+        public const PROGRESS_TYPE_PROGRESS_TYPE_SWITCH = 'PROGRESS_TYPE_SWITCH';
+        /**
+         * Current step entry is in progress of a RETRY step.
+         */
+        public const PROGRESS_TYPE_PROGRESS_TYPE_RETRY = 'PROGRESS_TYPE_RETRY';
+        /**
+         * Current step entry is in progress of a PARALLEL FOR step.
+         */
+        public const PROGRESS_TYPE_PROGRESS_TYPE_PARALLEL_FOR = 'PROGRESS_TYPE_PARALLEL_FOR';
+        /**
+         * Current step entry is in progress of a PARALLEL BRANCH step.
+         */
+        public const PROGRESS_TYPE_PROGRESS_TYPE_PARALLEL_BRANCH = 'PROGRESS_TYPE_PARALLEL_BRANCH';
+        /**
+         * Expected iteration represents the expected number of iterations in the
+         * step's progress.
+         *
+         * @var string
+         */
+        public $expectedIteration;
+        /**
+         * Progress number represents the current state of the current progress. eg: A
+         * step entry represents the 4th iteration in a progress of PROGRESS_TYPE_FOR.
+         * Note: This field is only populated when an iteration exists and the
+         * starting value is 1.
+         *
+         * @var string
+         */
+        public $progressNumber;
+        /**
+         * Progress type of this step entry.
+         *
+         * @var string
+         */
+        public $progressType;
+        /**
+         * Child thread id that this step entry belongs to.
+         *
+         * @var string
+         */
+        public $threadId;
+        /**
+         * Expected iteration represents the expected number of iterations in the
+         * step's progress.
+         *
+         * @param string $expectedIteration
+         */
+        public function setExpectedIteration($expectedIteration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpectedIteration()
+        {
+        }
+        /**
+         * Progress number represents the current state of the current progress. eg: A
+         * step entry represents the 4th iteration in a progress of PROGRESS_TYPE_FOR.
+         * Note: This field is only populated when an iteration exists and the
+         * starting value is 1.
+         *
+         * @param string $progressNumber
+         */
+        public function setProgressNumber($progressNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProgressNumber()
+        {
+        }
+        /**
+         * Progress type of this step entry.
+         *
+         * Accepted values: PROGRESS_TYPE_UNSPECIFIED, PROGRESS_TYPE_FOR,
+         * PROGRESS_TYPE_SWITCH, PROGRESS_TYPE_RETRY, PROGRESS_TYPE_PARALLEL_FOR,
+         * PROGRESS_TYPE_PARALLEL_BRANCH
+         *
+         * @param self::PROGRESS_TYPE_* $progressType
+         */
+        public function setProgressType($progressType)
+        {
+        }
+        /**
+         * @return self::PROGRESS_TYPE_*
+         */
+        public function getProgressType()
+        {
+        }
+        /**
+         * Child thread id that this step entry belongs to.
+         *
+         * @param string $threadId
+         */
+        public function setThreadId($threadId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\StepEntryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpectedIteration()
-    {
-    }
-    /**
-     * Progress number represents the current state of the current progress. eg: A
-     * step entry represents the 4th iteration in a progress of PROGRESS_TYPE_FOR.
-     * Note: This field is only populated when an iteration exists and the
-     * starting value is 1.
-     *
-     * @param string $progressNumber
-     */
-    public function setProgressNumber($progressNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProgressNumber()
-    {
-    }
-    /**
-     * Progress type of this step entry.
-     *
-     * Accepted values: PROGRESS_TYPE_UNSPECIFIED, PROGRESS_TYPE_FOR,
-     * PROGRESS_TYPE_SWITCH, PROGRESS_TYPE_RETRY, PROGRESS_TYPE_PARALLEL_FOR,
-     * PROGRESS_TYPE_PARALLEL_BRANCH
-     *
-     * @param self::PROGRESS_TYPE_* $progressType
-     */
-    public function setProgressType($progressType)
-    {
-    }
-    /**
-     * @return self::PROGRESS_TYPE_*
-     */
-    public function getProgressType()
-    {
-    }
-    /**
-     * Child thread id that this step entry belongs to.
-     *
-     * @param string $threadId
-     */
-    public function setThreadId($threadId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadId()
+    class Google_Service_WorkflowExecutions_StepEntryMetadata extends \Google\Service\WorkflowExecutions\StepEntryMetadata
     {
     }
 }

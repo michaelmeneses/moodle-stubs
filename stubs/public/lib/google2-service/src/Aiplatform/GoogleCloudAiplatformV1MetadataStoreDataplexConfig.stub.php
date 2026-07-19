@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MetadataStoreDataplexConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether or not Data Lineage synchronization is enabled for Vertex
-     * Pipelines.
-     *
-     * @var bool
-     */
-    public $enabledPipelinesLineage;
-    /**
-     * Optional. Whether or not Data Lineage synchronization is enabled for Vertex
-     * Pipelines.
-     *
-     * @param bool $enabledPipelinesLineage
-     */
-    public function setEnabledPipelinesLineage($enabledPipelinesLineage)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MetadataStoreDataplexConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether or not Data Lineage synchronization is enabled for Vertex
+         * Pipelines.
+         *
+         * @var bool
+         */
+        public $enabledPipelinesLineage;
+        /**
+         * Optional. Whether or not Data Lineage synchronization is enabled for Vertex
+         * Pipelines.
+         *
+         * @param bool $enabledPipelinesLineage
+         */
+        public function setEnabledPipelinesLineage($enabledPipelinesLineage)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabledPipelinesLineage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MetadataStoreDataplexConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledPipelinesLineage()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MetadataStoreDataplexConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MetadataStoreDataplexConfig
     {
     }
 }

@@ -21,46 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse\Resource;
-
-/**
- * The "documentLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
- *   $documentLinks = $contentwarehouseService->projects_locations_documents_documentLinks;
- *  </code>
- */
-class ProjectsLocationsDocumentsDocumentLinks extends \Google\Service\Resource
-{
+namespace Google\Service\Contentwarehouse\Resource {
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentLinkRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentLink;
+    use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
     /**
-     * Create a link between a source document and a target document.
-     * (documentLinks.create)
-     *
-     * @param string $parent Required. Parent of the document-link to be created.
-     * parent of document-link should be a document. Format: projects/{project_numbe
-     * r}/locations/{location}/documents/{source_document_id}.
-     * @param GoogleCloudContentwarehouseV1CreateDocumentLinkRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1DocumentLink
-     * @throws \Google\Service\Exception
+     * The "documentLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
+     *   $documentLinks = $contentwarehouseService->projects_locations_documents_documentLinks;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContentwarehouseV1CreateDocumentLinkRequest $postBody, $optParams = [])
+    class ProjectsLocationsDocumentsDocumentLinks extends \Google\Service\Resource
     {
+        /**
+         * Create a link between a source document and a target document.
+         * (documentLinks.create)
+         *
+         * @param string $parent Required. Parent of the document-link to be created.
+         * parent of document-link should be a document. Format: projects/{project_numbe
+         * r}/locations/{location}/documents/{source_document_id}.
+         * @param GoogleCloudContentwarehouseV1CreateDocumentLinkRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1DocumentLink
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContentwarehouseV1CreateDocumentLinkRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Remove the link between the source and target documents.
+         * (documentLinks.delete)
+         *
+         * @param string $name Required. The name of the document-link to be deleted.
+         * Format: projects/{project_number}/locations/{location}/documents/{source_docu
+         * ment_id}/documentLinks/{document_link_id}.
+         * @param GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Remove the link between the source and target documents.
-     * (documentLinks.delete)
-     *
-     * @param string $name Required. The name of the document-link to be deleted.
-     * Format: projects/{project_number}/locations/{location}/documents/{source_docu
-     * ment_id}/documentLinks/{document_link_id}.
-     * @param GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocumentsDocumentLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest $postBody, $optParams = [])
+    class Google_Service_Contentwarehouse_Resource_ProjectsLocationsDocumentsDocumentLinks extends \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocumentsDocumentLinks
     {
     }
 }

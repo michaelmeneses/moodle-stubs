@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1RecommendResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * A unique attribution token. This should be included in the UserEvent logs
-     * resulting from this recommendation, which enables accurate attribution of
-     * recommendation model performance.
-     *
-     * @var string
-     */
-    public $attributionToken;
-    /**
-     * IDs of documents in the request that were missing from the default Branch
-     * associated with the requested ServingConfig.
-     *
-     * @var string[]
-     */
-    public $missingIds;
-    protected $resultsType = GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * True if RecommendRequest.validate_only was set.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * A unique attribution token. This should be included in the UserEvent logs
-     * resulting from this recommendation, which enables accurate attribution of
-     * recommendation model performance.
-     *
-     * @param string $attributionToken
-     */
-    public function setAttributionToken($attributionToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1RecommendResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * A unique attribution token. This should be included in the UserEvent logs
+         * resulting from this recommendation, which enables accurate attribution of
+         * recommendation model performance.
+         *
+         * @var string
+         */
+        public $attributionToken;
+        /**
+         * IDs of documents in the request that were missing from the default Branch
+         * associated with the requested ServingConfig.
+         *
+         * @var string[]
+         */
+        public $missingIds;
+        protected $resultsType = GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * True if RecommendRequest.validate_only was set.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * A unique attribution token. This should be included in the UserEvent logs
+         * resulting from this recommendation, which enables accurate attribution of
+         * recommendation model performance.
+         *
+         * @param string $attributionToken
+         */
+        public function setAttributionToken($attributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionToken()
+        {
+        }
+        /**
+         * IDs of documents in the request that were missing from the default Branch
+         * associated with the requested ServingConfig.
+         *
+         * @param string[] $missingIds
+         */
+        public function setMissingIds($missingIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMissingIds()
+        {
+        }
+        /**
+         * A list of recommended Documents. The order represents the ranking (from the
+         * most relevant Document to the least).
+         *
+         * @param GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * True if RecommendRequest.validate_only was set.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecommendResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributionToken()
-    {
-    }
-    /**
-     * IDs of documents in the request that were missing from the default Branch
-     * associated with the requested ServingConfig.
-     *
-     * @param string[] $missingIds
-     */
-    public function setMissingIds($missingIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMissingIds()
-    {
-    }
-    /**
-     * A list of recommended Documents. The order represents the ranking (from the
-     * most relevant Document to the least).
-     *
-     * @param GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * True if RecommendRequest.validate_only was set.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1RecommendResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecommendResponse
     {
     }
 }

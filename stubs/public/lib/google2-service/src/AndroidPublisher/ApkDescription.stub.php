@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ApkDescription extends \Google\Model
-{
-    protected $assetSliceMetadataType = SplitApkMetadata::class;
-    protected $assetSliceMetadataDataType = '';
-    protected $instantApkMetadataType = SplitApkMetadata::class;
-    protected $instantApkMetadataDataType = '';
-    /**
-     * Path of the Apk, will be in the following format: .apk where DownloadId is
-     * the ID used to download the apk using GeneratedApks.Download API.
-     *
-     * @var string
-     */
-    public $path;
-    protected $splitApkMetadataType = SplitApkMetadata::class;
-    protected $splitApkMetadataDataType = '';
-    protected $standaloneApkMetadataType = StandaloneApkMetadata::class;
-    protected $standaloneApkMetadataDataType = '';
-    protected $targetingType = ApkTargeting::class;
-    protected $targetingDataType = '';
-    /**
-     * Set only for asset slices.
-     *
-     * @param SplitApkMetadata $assetSliceMetadata
-     */
-    public function setAssetSliceMetadata(SplitApkMetadata $assetSliceMetadata)
+namespace Google\Service\AndroidPublisher {
+    class ApkDescription extends \Google\Model
     {
+        protected $assetSliceMetadataType = SplitApkMetadata::class;
+        protected $assetSliceMetadataDataType = '';
+        protected $instantApkMetadataType = SplitApkMetadata::class;
+        protected $instantApkMetadataDataType = '';
+        /**
+         * Path of the Apk, will be in the following format: .apk where DownloadId is
+         * the ID used to download the apk using GeneratedApks.Download API.
+         *
+         * @var string
+         */
+        public $path;
+        protected $splitApkMetadataType = SplitApkMetadata::class;
+        protected $splitApkMetadataDataType = '';
+        protected $standaloneApkMetadataType = StandaloneApkMetadata::class;
+        protected $standaloneApkMetadataDataType = '';
+        protected $targetingType = ApkTargeting::class;
+        protected $targetingDataType = '';
+        /**
+         * Set only for asset slices.
+         *
+         * @param SplitApkMetadata $assetSliceMetadata
+         */
+        public function setAssetSliceMetadata(SplitApkMetadata $assetSliceMetadata)
+        {
+        }
+        /**
+         * @return SplitApkMetadata
+         */
+        public function getAssetSliceMetadata()
+        {
+        }
+        /**
+         * Set only for Instant split APKs.
+         *
+         * @param SplitApkMetadata $instantApkMetadata
+         */
+        public function setInstantApkMetadata(SplitApkMetadata $instantApkMetadata)
+        {
+        }
+        /**
+         * @return SplitApkMetadata
+         */
+        public function getInstantApkMetadata()
+        {
+        }
+        /**
+         * Path of the Apk, will be in the following format: .apk where DownloadId is
+         * the ID used to download the apk using GeneratedApks.Download API.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Set only for Split APKs.
+         *
+         * @param SplitApkMetadata $splitApkMetadata
+         */
+        public function setSplitApkMetadata(SplitApkMetadata $splitApkMetadata)
+        {
+        }
+        /**
+         * @return SplitApkMetadata
+         */
+        public function getSplitApkMetadata()
+        {
+        }
+        /**
+         * Set only for standalone APKs.
+         *
+         * @param StandaloneApkMetadata $standaloneApkMetadata
+         */
+        public function setStandaloneApkMetadata(StandaloneApkMetadata $standaloneApkMetadata)
+        {
+        }
+        /**
+         * @return StandaloneApkMetadata
+         */
+        public function getStandaloneApkMetadata()
+        {
+        }
+        /**
+         * Apk-level targeting.
+         *
+         * @param ApkTargeting $targeting
+         */
+        public function setTargeting(ApkTargeting $targeting)
+        {
+        }
+        /**
+         * @return ApkTargeting
+         */
+        public function getTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SplitApkMetadata
+     * Runtime class alias of \Google\Service\AndroidPublisher\ApkDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetSliceMetadata()
-    {
-    }
-    /**
-     * Set only for Instant split APKs.
-     *
-     * @param SplitApkMetadata $instantApkMetadata
-     */
-    public function setInstantApkMetadata(SplitApkMetadata $instantApkMetadata)
-    {
-    }
-    /**
-     * @return SplitApkMetadata
-     */
-    public function getInstantApkMetadata()
-    {
-    }
-    /**
-     * Path of the Apk, will be in the following format: .apk where DownloadId is
-     * the ID used to download the apk using GeneratedApks.Download API.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Set only for Split APKs.
-     *
-     * @param SplitApkMetadata $splitApkMetadata
-     */
-    public function setSplitApkMetadata(SplitApkMetadata $splitApkMetadata)
-    {
-    }
-    /**
-     * @return SplitApkMetadata
-     */
-    public function getSplitApkMetadata()
-    {
-    }
-    /**
-     * Set only for standalone APKs.
-     *
-     * @param StandaloneApkMetadata $standaloneApkMetadata
-     */
-    public function setStandaloneApkMetadata(StandaloneApkMetadata $standaloneApkMetadata)
-    {
-    }
-    /**
-     * @return StandaloneApkMetadata
-     */
-    public function getStandaloneApkMetadata()
-    {
-    }
-    /**
-     * Apk-level targeting.
-     *
-     * @param ApkTargeting $targeting
-     */
-    public function setTargeting(ApkTargeting $targeting)
-    {
-    }
-    /**
-     * @return ApkTargeting
-     */
-    public function getTargeting()
+    class Google_Service_AndroidPublisher_ApkDescription extends \Google\Service\AndroidPublisher\ApkDescription
     {
     }
 }

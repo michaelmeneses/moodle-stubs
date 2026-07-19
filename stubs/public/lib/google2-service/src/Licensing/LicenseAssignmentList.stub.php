@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Licensing;
-
-class LicenseAssignmentList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = LicenseAssignment::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies the resource as a collection of LicenseAssignments.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The token that you must submit in a subsequent request to retrieve
-     * additional license results matching your query parameters. The `maxResults`
-     * query string is related to the `nextPageToken` since `maxResults`
-     * determines how many entries are returned on each next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Licensing {
+    class LicenseAssignmentList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = LicenseAssignment::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies the resource as a collection of LicenseAssignments.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The token that you must submit in a subsequent request to retrieve
+         * additional license results matching your query parameters. The `maxResults`
+         * query string is related to the `nextPageToken` since `maxResults`
+         * determines how many entries are returned on each next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The LicenseAssignments in this page of results.
+         *
+         * @param LicenseAssignment[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return LicenseAssignment[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies the resource as a collection of LicenseAssignments.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The token that you must submit in a subsequent request to retrieve
+         * additional license results matching your query parameters. The `maxResults`
+         * query string is related to the `nextPageToken` since `maxResults`
+         * determines how many entries are returned on each next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Licensing\LicenseAssignmentList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The LicenseAssignments in this page of results.
-     *
-     * @param LicenseAssignment[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return LicenseAssignment[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies the resource as a collection of LicenseAssignments.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The token that you must submit in a subsequent request to retrieve
-     * additional license results matching your query parameters. The `maxResults`
-     * query string is related to the `nextPageToken` since `maxResults`
-     * determines how many entries are returned on each next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Licensing_LicenseAssignmentList extends \Google\Service\Licensing\LicenseAssignmentList
     {
     }
 }

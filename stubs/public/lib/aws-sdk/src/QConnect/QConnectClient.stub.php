@@ -8,6 +8,7 @@
  */
 namespace Aws\QConnect;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Q Connect** service.
  * @method \Aws\Result activateMessageTemplate(array $args = [])

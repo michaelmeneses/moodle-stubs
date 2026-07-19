@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class UsersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'user';
-    protected $userType = User::class;
-    protected $userDataType = 'array';
-    /**
-     * A user of an enterprise.
-     *
-     * @param User[] $user
-     */
-    public function setUser($user)
+namespace Google\Service\AndroidEnterprise {
+    class UsersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'user';
+        protected $userType = User::class;
+        protected $userDataType = 'array';
+        /**
+         * A user of an enterprise.
+         *
+         * @param User[] $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return User[]
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return User[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\UsersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUser()
+    class Google_Service_AndroidEnterprise_UsersListResponse extends \Google\Service\AndroidEnterprise\UsersListResponse
     {
     }
 }

@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GroupsMigration\Resource;
-
-/**
- * The "archive" collection of methods.
- * Typical usage is:
- *  <code>
- *   $groupsmigrationService = new Google\Service\GroupsMigration(...);
- *   $archive = $groupsmigrationService->archive;
- *  </code>
- */
-class Archive extends \Google\Service\Resource
-{
+namespace Google\Service\GroupsMigration\Resource {
+    use Google\Service\GroupsMigration\Groups;
     /**
-     * Inserts a new mail into the archive of the Google group. (archive.insert)
-     *
-     * @param string $groupId The group ID
-     * @param array $optParams Optional parameters.
-     * @return Groups
-     * @throws \Google\Service\Exception
+     * The "archive" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $groupsmigrationService = new Google\Service\GroupsMigration(...);
+     *   $archive = $groupsmigrationService->archive;
+     *  </code>
      */
-    public function insert($groupId, $optParams = [])
+    class Archive extends \Google\Service\Resource
+    {
+        /**
+         * Inserts a new mail into the archive of the Google group. (archive.insert)
+         *
+         * @param string $groupId The group ID
+         * @param array $optParams Optional parameters.
+         * @return Groups
+         * @throws \Google\Service\Exception
+         */
+        public function insert($groupId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GroupsMigration\Resource\Archive registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GroupsMigration_Resource_Archive extends \Google\Service\GroupsMigration\Resource\Archive
     {
     }
 }

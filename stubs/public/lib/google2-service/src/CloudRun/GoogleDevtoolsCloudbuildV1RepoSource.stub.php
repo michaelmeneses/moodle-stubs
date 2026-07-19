@@ -21,186 +21,195 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1RepoSource extends \Google\Model
-{
-    /**
-     * Regex matching branches to build. The syntax of the regular expressions
-     * accepted is the syntax accepted by RE2 and described at
-     * https://github.com/google/re2/wiki/Syntax
-     *
-     * @var string
-     */
-    public $branchName;
-    /**
-     * Explicit commit SHA to build.
-     *
-     * @var string
-     */
-    public $commitSha;
-    /**
-     * Optional. Directory, relative to the source root, in which to run the
-     * build. This must be a relative path. If a step's `dir` is specified and is
-     * an absolute path, this value is ignored for that step's execution.
-     *
-     * @var string
-     */
-    public $dir;
-    /**
-     * Optional. Only trigger a build if the revision regex does NOT match the
-     * revision regex.
-     *
-     * @var bool
-     */
-    public $invertRegex;
-    /**
-     * Optional. ID of the project that owns the Cloud Source Repository. If
-     * omitted, the project ID requesting the build is assumed.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. Name of the Cloud Source Repository.
-     *
-     * @var string
-     */
-    public $repoName;
-    /**
-     * Optional. Substitutions to use in a triggered build. Should only be used
-     * with RunBuildTrigger
-     *
-     * @var string[]
-     */
-    public $substitutions;
-    /**
-     * Regex matching tags to build. The syntax of the regular expressions
-     * accepted is the syntax accepted by RE2 and described at
-     * https://github.com/google/re2/wiki/Syntax
-     *
-     * @var string
-     */
-    public $tagName;
-    /**
-     * Regex matching branches to build. The syntax of the regular expressions
-     * accepted is the syntax accepted by RE2 and described at
-     * https://github.com/google/re2/wiki/Syntax
-     *
-     * @param string $branchName
-     */
-    public function setBranchName($branchName)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1RepoSource extends \Google\Model
     {
+        /**
+         * Regex matching branches to build. The syntax of the regular expressions
+         * accepted is the syntax accepted by RE2 and described at
+         * https://github.com/google/re2/wiki/Syntax
+         *
+         * @var string
+         */
+        public $branchName;
+        /**
+         * Explicit commit SHA to build.
+         *
+         * @var string
+         */
+        public $commitSha;
+        /**
+         * Optional. Directory, relative to the source root, in which to run the
+         * build. This must be a relative path. If a step's `dir` is specified and is
+         * an absolute path, this value is ignored for that step's execution.
+         *
+         * @var string
+         */
+        public $dir;
+        /**
+         * Optional. Only trigger a build if the revision regex does NOT match the
+         * revision regex.
+         *
+         * @var bool
+         */
+        public $invertRegex;
+        /**
+         * Optional. ID of the project that owns the Cloud Source Repository. If
+         * omitted, the project ID requesting the build is assumed.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. Name of the Cloud Source Repository.
+         *
+         * @var string
+         */
+        public $repoName;
+        /**
+         * Optional. Substitutions to use in a triggered build. Should only be used
+         * with RunBuildTrigger
+         *
+         * @var string[]
+         */
+        public $substitutions;
+        /**
+         * Regex matching tags to build. The syntax of the regular expressions
+         * accepted is the syntax accepted by RE2 and described at
+         * https://github.com/google/re2/wiki/Syntax
+         *
+         * @var string
+         */
+        public $tagName;
+        /**
+         * Regex matching branches to build. The syntax of the regular expressions
+         * accepted is the syntax accepted by RE2 and described at
+         * https://github.com/google/re2/wiki/Syntax
+         *
+         * @param string $branchName
+         */
+        public function setBranchName($branchName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranchName()
+        {
+        }
+        /**
+         * Explicit commit SHA to build.
+         *
+         * @param string $commitSha
+         */
+        public function setCommitSha($commitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitSha()
+        {
+        }
+        /**
+         * Optional. Directory, relative to the source root, in which to run the
+         * build. This must be a relative path. If a step's `dir` is specified and is
+         * an absolute path, this value is ignored for that step's execution.
+         *
+         * @param string $dir
+         */
+        public function setDir($dir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDir()
+        {
+        }
+        /**
+         * Optional. Only trigger a build if the revision regex does NOT match the
+         * revision regex.
+         *
+         * @param bool $invertRegex
+         */
+        public function setInvertRegex($invertRegex)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvertRegex()
+        {
+        }
+        /**
+         * Optional. ID of the project that owns the Cloud Source Repository. If
+         * omitted, the project ID requesting the build is assumed.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. Name of the Cloud Source Repository.
+         *
+         * @param string $repoName
+         */
+        public function setRepoName($repoName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepoName()
+        {
+        }
+        /**
+         * Optional. Substitutions to use in a triggered build. Should only be used
+         * with RunBuildTrigger
+         *
+         * @param string[] $substitutions
+         */
+        public function setSubstitutions($substitutions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubstitutions()
+        {
+        }
+        /**
+         * Regex matching tags to build. The syntax of the regular expressions
+         * accepted is the syntax accepted by RE2 and described at
+         * https://github.com/google/re2/wiki/Syntax
+         *
+         * @param string $tagName
+         */
+        public function setTagName($tagName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1RepoSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranchName()
-    {
-    }
-    /**
-     * Explicit commit SHA to build.
-     *
-     * @param string $commitSha
-     */
-    public function setCommitSha($commitSha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitSha()
-    {
-    }
-    /**
-     * Optional. Directory, relative to the source root, in which to run the
-     * build. This must be a relative path. If a step's `dir` is specified and is
-     * an absolute path, this value is ignored for that step's execution.
-     *
-     * @param string $dir
-     */
-    public function setDir($dir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDir()
-    {
-    }
-    /**
-     * Optional. Only trigger a build if the revision regex does NOT match the
-     * revision regex.
-     *
-     * @param bool $invertRegex
-     */
-    public function setInvertRegex($invertRegex)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvertRegex()
-    {
-    }
-    /**
-     * Optional. ID of the project that owns the Cloud Source Repository. If
-     * omitted, the project ID requesting the build is assumed.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. Name of the Cloud Source Repository.
-     *
-     * @param string $repoName
-     */
-    public function setRepoName($repoName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepoName()
-    {
-    }
-    /**
-     * Optional. Substitutions to use in a triggered build. Should only be used
-     * with RunBuildTrigger
-     *
-     * @param string[] $substitutions
-     */
-    public function setSubstitutions($substitutions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubstitutions()
-    {
-    }
-    /**
-     * Regex matching tags to build. The syntax of the regular expressions
-     * accepted is the syntax accepted by RE2 and described at
-     * https://github.com/google/re2/wiki/Syntax
-     *
-     * @param string $tagName
-     */
-    public function setTagName($tagName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagName()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1RepoSource extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1RepoSource
     {
     }
 }

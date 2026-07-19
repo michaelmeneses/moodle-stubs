@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendBucketUsedBy extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Server-defined URL for UrlMaps referencing that
-     * BackendBucket.
-     *
-     * @var string
-     */
-    public $reference;
-    /**
-     * Output only. [Output Only] Server-defined URL for UrlMaps referencing that
-     * BackendBucket.
-     *
-     * @param string $reference
-     */
-    public function setReference($reference)
+namespace Google\Service\Compute {
+    class BackendBucketUsedBy extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Server-defined URL for UrlMaps referencing that
+         * BackendBucket.
+         *
+         * @var string
+         */
+        public $reference;
+        /**
+         * Output only. [Output Only] Server-defined URL for UrlMaps referencing that
+         * BackendBucket.
+         *
+         * @param string $reference
+         */
+        public function setReference($reference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendBucketUsedBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReference()
+    class Google_Service_Compute_BackendBucketUsedBy extends \Google\Service\Compute\BackendBucketUsedBy
     {
     }
 }

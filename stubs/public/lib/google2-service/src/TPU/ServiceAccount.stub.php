@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class ServiceAccount extends \Google\Collection
-{
-    protected $collection_key = 'scope';
-    /**
-     * Email address of the service account. If empty, default Compute service
-     * account will be used.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The list of scopes to be made available for this service account. If empty,
-     * access to all Cloud APIs will be allowed.
-     *
-     * @var string[]
-     */
-    public $scope;
-    /**
-     * Email address of the service account. If empty, default Compute service
-     * account will be used.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\TPU {
+    class ServiceAccount extends \Google\Collection
     {
+        protected $collection_key = 'scope';
+        /**
+         * Email address of the service account. If empty, default Compute service
+         * account will be used.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The list of scopes to be made available for this service account. If empty,
+         * access to all Cloud APIs will be allowed.
+         *
+         * @var string[]
+         */
+        public $scope;
+        /**
+         * Email address of the service account. If empty, default Compute service
+         * account will be used.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The list of scopes to be made available for this service account. If empty,
+         * access to all Cloud APIs will be allowed.
+         *
+         * @param string[] $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The list of scopes to be made available for this service account. If empty,
-     * access to all Cloud APIs will be allowed.
-     *
-     * @param string[] $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScope()
+    class Google_Service_TPU_ServiceAccount extends \Google\Service\TPU\ServiceAccount
     {
     }
 }

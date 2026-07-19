@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CustomerSessionStats extends \Google\Model
-{
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * The count of search sessions on the day
-     *
-     * @var string
-     */
-    public $searchSessionsCount;
-    /**
-     * The date for which session stats were calculated. Stats are calculated on
-     * the following day, close to midnight PST, and then returned.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\CloudSearch {
+    class CustomerSessionStats extends \Google\Model
     {
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * The count of search sessions on the day
+         *
+         * @var string
+         */
+        public $searchSessionsCount;
+        /**
+         * The date for which session stats were calculated. Stats are calculated on
+         * the following day, close to midnight PST, and then returned.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * The count of search sessions on the day
+         *
+         * @param string $searchSessionsCount
+         */
+        public function setSearchSessionsCount($searchSessionsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchSessionsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudSearch\CustomerSessionStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * The count of search sessions on the day
-     *
-     * @param string $searchSessionsCount
-     */
-    public function setSearchSessionsCount($searchSessionsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchSessionsCount()
+    class Google_Service_CloudSearch_CustomerSessionStats extends \Google\Service\CloudSearch\CustomerSessionStats
     {
     }
 }

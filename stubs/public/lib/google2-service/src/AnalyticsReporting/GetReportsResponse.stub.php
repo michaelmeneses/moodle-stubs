@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class GetReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'reports';
-    /**
-     * @var int
-     */
-    public $queryCost;
-    protected $reportsType = Report::class;
-    protected $reportsDataType = 'array';
-    protected $resourceQuotasRemainingType = ResourceQuotasRemaining::class;
-    protected $resourceQuotasRemainingDataType = '';
-    /**
-     * @param int
-     */
-    public function setQueryCost($queryCost)
+namespace Google\Service\AnalyticsReporting {
+    class GetReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'reports';
+        /**
+         * @var int
+         */
+        public $queryCost;
+        protected $reportsType = Report::class;
+        protected $reportsDataType = 'array';
+        protected $resourceQuotasRemainingType = ResourceQuotasRemaining::class;
+        protected $resourceQuotasRemainingDataType = '';
+        /**
+         * @param int
+         */
+        public function setQueryCost($queryCost)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQueryCost()
+        {
+        }
+        /**
+         * @param Report[]
+         */
+        public function setReports($reports)
+        {
+        }
+        /**
+         * @return Report[]
+         */
+        public function getReports()
+        {
+        }
+        /**
+         * @param ResourceQuotasRemaining
+         */
+        public function setResourceQuotasRemaining(ResourceQuotasRemaining $resourceQuotasRemaining)
+        {
+        }
+        /**
+         * @return ResourceQuotasRemaining
+         */
+        public function getResourceQuotasRemaining()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AnalyticsReporting\GetReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryCost()
-    {
-    }
-    /**
-     * @param Report[]
-     */
-    public function setReports($reports)
-    {
-    }
-    /**
-     * @return Report[]
-     */
-    public function getReports()
-    {
-    }
-    /**
-     * @param ResourceQuotasRemaining
-     */
-    public function setResourceQuotasRemaining(ResourceQuotasRemaining $resourceQuotasRemaining)
-    {
-    }
-    /**
-     * @return ResourceQuotasRemaining
-     */
-    public function getResourceQuotasRemaining()
+    class Google_Service_AnalyticsReporting_GetReportsResponse extends \Google\Service\AnalyticsReporting\GetReportsResponse
     {
     }
 }

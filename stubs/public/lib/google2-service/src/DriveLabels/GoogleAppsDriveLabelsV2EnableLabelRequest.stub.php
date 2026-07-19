@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2EnableLabelRequest extends \Google\Model
-{
-    /**
-     * The BCP-47 language code to use for evaluating localized field labels. When
-     * not specified, values in the default configured language will be used.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access.
-     *
-     * @var bool
-     */
-    public $useAdminAccess;
-    protected $writeControlType = GoogleAppsDriveLabelsV2WriteControl::class;
-    protected $writeControlDataType = '';
-    /**
-     * The BCP-47 language code to use for evaluating localized field labels. When
-     * not specified, values in the default configured language will be used.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2EnableLabelRequest extends \Google\Model
     {
+        /**
+         * The BCP-47 language code to use for evaluating localized field labels. When
+         * not specified, values in the default configured language will be used.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access.
+         *
+         * @var bool
+         */
+        public $useAdminAccess;
+        protected $writeControlType = GoogleAppsDriveLabelsV2WriteControl::class;
+        protected $writeControlDataType = '';
+        /**
+         * The BCP-47 language code to use for evaluating localized field labels. When
+         * not specified, values in the default configured language will be used.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access.
+         *
+         * @param bool $useAdminAccess
+         */
+        public function setUseAdminAccess($useAdminAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAdminAccess()
+        {
+        }
+        /**
+         * Provides control over how write requests are executed. Defaults to unset,
+         * which means the last write wins.
+         *
+         * @param GoogleAppsDriveLabelsV2WriteControl $writeControl
+         */
+        public function setWriteControl(GoogleAppsDriveLabelsV2WriteControl $writeControl)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2WriteControl
+         */
+        public function getWriteControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2EnableLabelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access.
-     *
-     * @param bool $useAdminAccess
-     */
-    public function setUseAdminAccess($useAdminAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAdminAccess()
-    {
-    }
-    /**
-     * Provides control over how write requests are executed. Defaults to unset,
-     * which means the last write wins.
-     *
-     * @param GoogleAppsDriveLabelsV2WriteControl $writeControl
-     */
-    public function setWriteControl(GoogleAppsDriveLabelsV2WriteControl $writeControl)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2WriteControl
-     */
-    public function getWriteControl()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2EnableLabelRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2EnableLabelRequest
     {
     }
 }

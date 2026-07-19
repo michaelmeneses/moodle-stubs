@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class EscalateCaseRequest extends \Google\Model
-{
-    protected $escalationType = Escalation::class;
-    protected $escalationDataType = '';
-    /**
-     * The escalation information to be sent with the escalation request.
-     *
-     * @param Escalation $escalation
-     */
-    public function setEscalation(Escalation $escalation)
+namespace Google\Service\CloudSupport {
+    class EscalateCaseRequest extends \Google\Model
     {
+        protected $escalationType = Escalation::class;
+        protected $escalationDataType = '';
+        /**
+         * The escalation information to be sent with the escalation request.
+         *
+         * @param Escalation $escalation
+         */
+        public function setEscalation(Escalation $escalation)
+        {
+        }
+        /**
+         * @return Escalation
+         */
+        public function getEscalation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Escalation
+     * Runtime class alias of \Google\Service\CloudSupport\EscalateCaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEscalation()
+    class Google_Service_CloudSupport_EscalateCaseRequest extends \Google\Service\CloudSupport\EscalateCaseRequest
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoNextTeardownTask extends \Google\Model
-{
-    /**
-     * Required. Name of the next teardown task.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Name of the next teardown task.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoNextTeardownTask extends \Google\Model
     {
+        /**
+         * Required. Name of the next teardown task.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Name of the next teardown task.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoNextTeardownTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoNextTeardownTask extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoNextTeardownTask
     {
     }
 }

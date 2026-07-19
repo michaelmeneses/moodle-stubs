@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryHistogramChartData extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = ReportSummaryHistogramChartDataBucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * Buckets in the histogram. There will be `n+1` buckets matching `n` lower
-     * bounds in the request. The first bucket will be from -infinity to the first
-     * bound. Subsequent buckets will be between one bound and the next. The final
-     * bucket will be from the final bound to infinity.
-     *
-     * @param ReportSummaryHistogramChartDataBucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryHistogramChartData extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = ReportSummaryHistogramChartDataBucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * Buckets in the histogram. There will be `n+1` buckets matching `n` lower
+         * bounds in the request. The first bucket will be from -infinity to the first
+         * bound. Subsequent buckets will be between one bound and the next. The final
+         * bucket will be from the final bound to infinity.
+         *
+         * @param ReportSummaryHistogramChartDataBucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return ReportSummaryHistogramChartDataBucket[]
+         */
+        public function getBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportSummaryHistogramChartDataBucket[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryHistogramChartData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
+    class Google_Service_MigrationCenterAPI_ReportSummaryHistogramChartData extends \Google\Service\MigrationCenterAPI\ReportSummaryHistogramChartData
     {
     }
 }

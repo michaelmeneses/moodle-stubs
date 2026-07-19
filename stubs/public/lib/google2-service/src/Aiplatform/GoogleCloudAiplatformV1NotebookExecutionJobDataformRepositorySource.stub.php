@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookExecutionJobDataformRepositorySource extends \Google\Model
-{
-    /**
-     * The commit SHA to read repository with. If unset, the file will be read at
-     * HEAD.
-     *
-     * @var string
-     */
-    public $commitSha;
-    /**
-     * The resource name of the Dataform Repository. Format:
-     * `projects/{project_id}/locations/{location}/repositories/{repository_id}`
-     *
-     * @var string
-     */
-    public $dataformRepositoryResourceName;
-    /**
-     * The commit SHA to read repository with. If unset, the file will be read at
-     * HEAD.
-     *
-     * @param string $commitSha
-     */
-    public function setCommitSha($commitSha)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookExecutionJobDataformRepositorySource extends \Google\Model
     {
+        /**
+         * The commit SHA to read repository with. If unset, the file will be read at
+         * HEAD.
+         *
+         * @var string
+         */
+        public $commitSha;
+        /**
+         * The resource name of the Dataform Repository. Format:
+         * `projects/{project_id}/locations/{location}/repositories/{repository_id}`
+         *
+         * @var string
+         */
+        public $dataformRepositoryResourceName;
+        /**
+         * The commit SHA to read repository with. If unset, the file will be read at
+         * HEAD.
+         *
+         * @param string $commitSha
+         */
+        public function setCommitSha($commitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitSha()
+        {
+        }
+        /**
+         * The resource name of the Dataform Repository. Format:
+         * `projects/{project_id}/locations/{location}/repositories/{repository_id}`
+         *
+         * @param string $dataformRepositoryResourceName
+         */
+        public function setDataformRepositoryResourceName($dataformRepositoryResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataformRepositoryResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJobDataformRepositorySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitSha()
-    {
-    }
-    /**
-     * The resource name of the Dataform Repository. Format:
-     * `projects/{project_id}/locations/{location}/repositories/{repository_id}`
-     *
-     * @param string $dataformRepositoryResourceName
-     */
-    public function setDataformRepositoryResourceName($dataformRepositoryResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataformRepositoryResourceName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookExecutionJobDataformRepositorySource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJobDataformRepositorySource
     {
     }
 }

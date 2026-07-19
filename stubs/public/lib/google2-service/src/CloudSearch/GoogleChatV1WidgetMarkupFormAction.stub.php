@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupFormAction extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * @var string
-     */
-    public $actionMethodName;
-    protected $parametersType = GoogleChatV1WidgetMarkupFormActionActionParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setActionMethodName($actionMethodName)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupFormAction extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * @var string
+         */
+        public $actionMethodName;
+        protected $parametersType = GoogleChatV1WidgetMarkupFormActionActionParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setActionMethodName($actionMethodName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionMethodName()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupFormActionActionParameter[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupFormActionActionParameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupFormAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionMethodName()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupFormActionActionParameter[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupFormActionActionParameter[]
-     */
-    public function getParameters()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupFormAction extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupFormAction
     {
     }
 }

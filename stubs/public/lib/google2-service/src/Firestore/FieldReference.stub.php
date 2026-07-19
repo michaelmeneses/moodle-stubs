@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class FieldReference extends \Google\Model
-{
-    /**
-     * A reference to a field in a document. Requires: * MUST be a dot-delimited
-     * (`.`) string of segments, where each segment conforms to document field
-     * name limitations.
-     *
-     * @var string
-     */
-    public $fieldPath;
-    /**
-     * A reference to a field in a document. Requires: * MUST be a dot-delimited
-     * (`.`) string of segments, where each segment conforms to document field
-     * name limitations.
-     *
-     * @param string $fieldPath
-     */
-    public function setFieldPath($fieldPath)
+namespace Google\Service\Firestore {
+    class FieldReference extends \Google\Model
     {
+        /**
+         * A reference to a field in a document. Requires: * MUST be a dot-delimited
+         * (`.`) string of segments, where each segment conforms to document field
+         * name limitations.
+         *
+         * @var string
+         */
+        public $fieldPath;
+        /**
+         * A reference to a field in a document. Requires: * MUST be a dot-delimited
+         * (`.`) string of segments, where each segment conforms to document field
+         * name limitations.
+         *
+         * @param string $fieldPath
+         */
+        public function setFieldPath($fieldPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\FieldReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldPath()
+    class Google_Service_Firestore_FieldReference extends \Google\Service\Firestore\FieldReference
     {
     }
 }

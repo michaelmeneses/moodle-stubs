@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchUpdateSecurityIncidentsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudApigeeV1UpdateSecurityIncidentRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Optional. Required. The request message specifying the resources to update.
-     * A maximum of 1000 can be modified in a batch.
-     *
-     * @param GoogleCloudApigeeV1UpdateSecurityIncidentRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchUpdateSecurityIncidentsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudApigeeV1UpdateSecurityIncidentRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Optional. Required. The request message specifying the resources to update.
+         * A maximum of 1000 can be modified in a batch.
+         *
+         * @param GoogleCloudApigeeV1UpdateSecurityIncidentRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1UpdateSecurityIncidentRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1UpdateSecurityIncidentRequest[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchUpdateSecurityIncidentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchUpdateSecurityIncidentsRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchUpdateSecurityIncidentsRequest
     {
     }
 }

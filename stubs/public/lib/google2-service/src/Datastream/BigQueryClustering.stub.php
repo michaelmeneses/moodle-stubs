@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class BigQueryClustering extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    /**
-     * Required. Column names to set as clustering columns.
-     *
-     * @var string[]
-     */
-    public $columns;
-    /**
-     * Required. Column names to set as clustering columns.
-     *
-     * @param string[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Datastream {
+    class BigQueryClustering extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        /**
+         * Required. Column names to set as clustering columns.
+         *
+         * @var string[]
+         */
+        public $columns;
+        /**
+         * Required. Column names to set as clustering columns.
+         *
+         * @param string[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datastream\BigQueryClustering registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
+    class Google_Service_Datastream_BigQueryClustering extends \Google\Service\Datastream\BigQueryClustering
     {
     }
 }

@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CircuitBreakers extends \Google\Model
-{
-    /**
-     * The maximum number of connections to the backend service. If not specified,
-     * there is no limit.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @var int
-     */
-    public $maxConnections;
-    /**
-     * The maximum number of pending requests allowed to the backend service. If
-     * not specified, there is no limit.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @var int
-     */
-    public $maxPendingRequests;
-    /**
-     * The maximum number of parallel requests that allowed to the backend
-     * service. If not specified, there is no limit.
-     *
-     * @var int
-     */
-    public $maxRequests;
-    /**
-     * Maximum requests for a single connection to the backend service. This
-     * parameter is respected by both the HTTP/1.1 and HTTP/2 implementations. If
-     * not specified, there is no limit. Setting this parameter to 1 will
-     * effectively disable keep alive.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @var int
-     */
-    public $maxRequestsPerConnection;
-    /**
-     * The maximum number of parallel retries allowed to the backend cluster. If
-     * not specified, the default is 1.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @var int
-     */
-    public $maxRetries;
-    /**
-     * The maximum number of connections to the backend service. If not specified,
-     * there is no limit.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @param int $maxConnections
-     */
-    public function setMaxConnections($maxConnections)
+namespace Google\Service\Compute {
+    class CircuitBreakers extends \Google\Model
     {
+        /**
+         * The maximum number of connections to the backend service. If not specified,
+         * there is no limit.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @var int
+         */
+        public $maxConnections;
+        /**
+         * The maximum number of pending requests allowed to the backend service. If
+         * not specified, there is no limit.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @var int
+         */
+        public $maxPendingRequests;
+        /**
+         * The maximum number of parallel requests that allowed to the backend
+         * service. If not specified, there is no limit.
+         *
+         * @var int
+         */
+        public $maxRequests;
+        /**
+         * Maximum requests for a single connection to the backend service. This
+         * parameter is respected by both the HTTP/1.1 and HTTP/2 implementations. If
+         * not specified, there is no limit. Setting this parameter to 1 will
+         * effectively disable keep alive.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @var int
+         */
+        public $maxRequestsPerConnection;
+        /**
+         * The maximum number of parallel retries allowed to the backend cluster. If
+         * not specified, the default is 1.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @var int
+         */
+        public $maxRetries;
+        /**
+         * The maximum number of connections to the backend service. If not specified,
+         * there is no limit.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @param int $maxConnections
+         */
+        public function setMaxConnections($maxConnections)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConnections()
+        {
+        }
+        /**
+         * The maximum number of pending requests allowed to the backend service. If
+         * not specified, there is no limit.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @param int $maxPendingRequests
+         */
+        public function setMaxPendingRequests($maxPendingRequests)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxPendingRequests()
+        {
+        }
+        /**
+         * The maximum number of parallel requests that allowed to the backend
+         * service. If not specified, there is no limit.
+         *
+         * @param int $maxRequests
+         */
+        public function setMaxRequests($maxRequests)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxRequests()
+        {
+        }
+        /**
+         * Maximum requests for a single connection to the backend service. This
+         * parameter is respected by both the HTTP/1.1 and HTTP/2 implementations. If
+         * not specified, there is no limit. Setting this parameter to 1 will
+         * effectively disable keep alive.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @param int $maxRequestsPerConnection
+         */
+        public function setMaxRequestsPerConnection($maxRequestsPerConnection)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxRequestsPerConnection()
+        {
+        }
+        /**
+         * The maximum number of parallel retries allowed to the backend cluster. If
+         * not specified, the default is 1.
+         *
+         * Not supported when the backend service is referenced by a URL map that is
+         * bound to target gRPC proxy that has validateForProxyless field set to true.
+         *
+         * @param int $maxRetries
+         */
+        public function setMaxRetries($maxRetries)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxRetries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\CircuitBreakers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxConnections()
-    {
-    }
-    /**
-     * The maximum number of pending requests allowed to the backend service. If
-     * not specified, there is no limit.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @param int $maxPendingRequests
-     */
-    public function setMaxPendingRequests($maxPendingRequests)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxPendingRequests()
-    {
-    }
-    /**
-     * The maximum number of parallel requests that allowed to the backend
-     * service. If not specified, there is no limit.
-     *
-     * @param int $maxRequests
-     */
-    public function setMaxRequests($maxRequests)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxRequests()
-    {
-    }
-    /**
-     * Maximum requests for a single connection to the backend service. This
-     * parameter is respected by both the HTTP/1.1 and HTTP/2 implementations. If
-     * not specified, there is no limit. Setting this parameter to 1 will
-     * effectively disable keep alive.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @param int $maxRequestsPerConnection
-     */
-    public function setMaxRequestsPerConnection($maxRequestsPerConnection)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxRequestsPerConnection()
-    {
-    }
-    /**
-     * The maximum number of parallel retries allowed to the backend cluster. If
-     * not specified, the default is 1.
-     *
-     * Not supported when the backend service is referenced by a URL map that is
-     * bound to target gRPC proxy that has validateForProxyless field set to true.
-     *
-     * @param int $maxRetries
-     */
-    public function setMaxRetries($maxRetries)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxRetries()
+    class Google_Service_Compute_CircuitBreakers extends \Google\Service\Compute\CircuitBreakers
     {
     }
 }

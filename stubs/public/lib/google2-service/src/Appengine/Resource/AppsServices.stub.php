@@ -21,89 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine\Resource;
-
-/**
- * The "services" collection of methods.
- * Typical usage is:
- *  <code>
- *   $appengineService = new Google\Service\Appengine(...);
- *   $services = $appengineService->apps_services;
- *  </code>
- */
-class AppsServices extends \Google\Service\Resource
-{
+namespace Google\Service\Appengine\Resource {
+    use Google\Service\Appengine\ListServicesResponse;
+    use Google\Service\Appengine\Operation;
+    use Google\Service\Appengine\Service;
     /**
-     * Deletes the specified service and all enclosed versions. (services.delete)
-     *
-     * @param string $appsId Part of `name`. Required. Name of the resource
-     * requested. Example: apps/myapp/services/default.
-     * @param string $servicesId Part of `name`. See documentation of `appsId`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "services" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $appengineService = new Google\Service\Appengine(...);
+     *   $services = $appengineService->apps_services;
+     *  </code>
      */
-    public function delete($appsId, $servicesId, $optParams = [])
+    class AppsServices extends \Google\Service\Resource
     {
+        /**
+         * Deletes the specified service and all enclosed versions. (services.delete)
+         *
+         * @param string $appsId Part of `name`. Required. Name of the resource
+         * requested. Example: apps/myapp/services/default.
+         * @param string $servicesId Part of `name`. See documentation of `appsId`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($appsId, $servicesId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the current configuration of the specified service. (services.get)
+         *
+         * @param string $appsId Part of `name`. Required. Name of the resource
+         * requested. Example: apps/myapp/services/default.
+         * @param string $servicesId Part of `name`. See documentation of `appsId`.
+         * @param array $optParams Optional parameters.
+         * @return Service
+         * @throws \Google\Service\Exception
+         */
+        public function get($appsId, $servicesId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the services in the application. (services.listAppsServices)
+         *
+         * @param string $appsId Part of `parent`. Required. Name of the parent
+         * Application resource. Example: apps/myapp.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum results to return per page.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListServicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAppsServices($appsId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the configuration of the specified service. (services.patch)
+         *
+         * @param string $appsId Part of `name`. Required. Name of the resource to
+         * update. Example: apps/myapp/services/default.
+         * @param string $servicesId Part of `name`. See documentation of `appsId`.
+         * @param Service $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool migrateTraffic Set to true to gradually shift traffic to one
+         * or more versions that you specify. By default, traffic is shifted
+         * immediately. For gradual traffic migration, the target versions must be
+         * located within instances that are configured for both warmup requests
+         * (https://cloud.google.com/appengine/docs/admin-
+         * api/reference/rest/v1/apps.services.versions#InboundServiceType) and
+         * automatic scaling (https://cloud.google.com/appengine/docs/admin-
+         * api/reference/rest/v1/apps.services.versions#AutomaticScaling). You must
+         * specify the shardBy (https://cloud.google.com/appengine/docs/admin-
+         * api/reference/rest/v1/apps.services#ShardBy) field in the Service resource.
+         * Gradual traffic migration is not supported in the App Engine flexible
+         * environment. For examples, see Migrating and Splitting Traffic
+         * (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-
+         * traffic).
+         * @opt_param string updateMask Required. Standard field mask for the set of
+         * fields to be updated.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($appsId, $servicesId, Service $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the current configuration of the specified service. (services.get)
-     *
-     * @param string $appsId Part of `name`. Required. Name of the resource
-     * requested. Example: apps/myapp/services/default.
-     * @param string $servicesId Part of `name`. See documentation of `appsId`.
-     * @param array $optParams Optional parameters.
-     * @return Service
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Appengine\Resource\AppsServices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($appsId, $servicesId, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the services in the application. (services.listAppsServices)
-     *
-     * @param string $appsId Part of `parent`. Required. Name of the parent
-     * Application resource. Example: apps/myapp.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum results to return per page.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListServicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAppsServices($appsId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the configuration of the specified service. (services.patch)
-     *
-     * @param string $appsId Part of `name`. Required. Name of the resource to
-     * update. Example: apps/myapp/services/default.
-     * @param string $servicesId Part of `name`. See documentation of `appsId`.
-     * @param Service $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool migrateTraffic Set to true to gradually shift traffic to one
-     * or more versions that you specify. By default, traffic is shifted
-     * immediately. For gradual traffic migration, the target versions must be
-     * located within instances that are configured for both warmup requests
-     * (https://cloud.google.com/appengine/docs/admin-
-     * api/reference/rest/v1/apps.services.versions#InboundServiceType) and
-     * automatic scaling (https://cloud.google.com/appengine/docs/admin-
-     * api/reference/rest/v1/apps.services.versions#AutomaticScaling). You must
-     * specify the shardBy (https://cloud.google.com/appengine/docs/admin-
-     * api/reference/rest/v1/apps.services#ShardBy) field in the Service resource.
-     * Gradual traffic migration is not supported in the App Engine flexible
-     * environment. For examples, see Migrating and Splitting Traffic
-     * (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-
-     * traffic).
-     * @opt_param string updateMask Required. Standard field mask for the set of
-     * fields to be updated.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($appsId, $servicesId, Service $postBody, $optParams = [])
+    class Google_Service_Appengine_Resource_AppsServices extends \Google\Service\Appengine\Resource\AppsServices
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosDeviceList extends \Google\Collection
-{
-    protected $collection_key = 'iosDevices';
-    protected $iosDevicesType = IosDevice::class;
-    protected $iosDevicesDataType = 'array';
-    /**
-     * Required. A list of iOS devices.
-     *
-     * @param IosDevice[] $iosDevices
-     */
-    public function setIosDevices($iosDevices)
+namespace Google\Service\Testing {
+    class IosDeviceList extends \Google\Collection
     {
+        protected $collection_key = 'iosDevices';
+        protected $iosDevicesType = IosDevice::class;
+        protected $iosDevicesDataType = 'array';
+        /**
+         * Required. A list of iOS devices.
+         *
+         * @param IosDevice[] $iosDevices
+         */
+        public function setIosDevices($iosDevices)
+        {
+        }
+        /**
+         * @return IosDevice[]
+         */
+        public function getIosDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IosDevice[]
+     * Runtime class alias of \Google\Service\Testing\IosDeviceList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIosDevices()
+    class Google_Service_Testing_IosDeviceList extends \Google\Service\Testing\IosDeviceList
     {
     }
 }

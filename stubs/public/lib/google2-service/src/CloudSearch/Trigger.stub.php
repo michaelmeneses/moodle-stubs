@@ -21,176 +21,185 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Trigger extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actionType;
-    /**
-     * @var string
-     */
-    public $batchTimeUs;
-    /**
-     * @var string
-     */
-    public $dispatchId;
-    /**
-     * @var string
-     */
-    public $dispatcher;
-    /**
-     * @var string
-     */
-    public $fireTimeUs;
-    protected $jobsettedServerSpecType = JobsettedServerSpec::class;
-    protected $jobsettedServerSpecDataType = '';
-    /**
-     * @var string
-     */
-    public $key;
-    protected $rpcOptionsType = RpcOptions::class;
-    protected $rpcOptionsDataType = '';
-    /**
-     * @var string
-     */
-    public $sliceFireTimeUs;
-    protected $triggerActionType = TriggerAction::class;
-    protected $triggerActionDataType = '';
-    protected $triggerKeyType = TriggerKey::class;
-    protected $triggerKeyDataType = '';
-    /**
-     * @param string
-     */
-    public function setActionType($actionType)
+namespace Google\Service\CloudSearch {
+    class Trigger extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actionType;
+        /**
+         * @var string
+         */
+        public $batchTimeUs;
+        /**
+         * @var string
+         */
+        public $dispatchId;
+        /**
+         * @var string
+         */
+        public $dispatcher;
+        /**
+         * @var string
+         */
+        public $fireTimeUs;
+        protected $jobsettedServerSpecType = JobsettedServerSpec::class;
+        protected $jobsettedServerSpecDataType = '';
+        /**
+         * @var string
+         */
+        public $key;
+        protected $rpcOptionsType = RpcOptions::class;
+        protected $rpcOptionsDataType = '';
+        /**
+         * @var string
+         */
+        public $sliceFireTimeUs;
+        protected $triggerActionType = TriggerAction::class;
+        protected $triggerActionDataType = '';
+        protected $triggerKeyType = TriggerKey::class;
+        protected $triggerKeyDataType = '';
+        /**
+         * @param string
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBatchTimeUs($batchTimeUs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchTimeUs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDispatchId($dispatchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDispatchId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDispatcher($dispatcher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDispatcher()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFireTimeUs($fireTimeUs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFireTimeUs()
+        {
+        }
+        /**
+         * @param JobsettedServerSpec
+         */
+        public function setJobsettedServerSpec(JobsettedServerSpec $jobsettedServerSpec)
+        {
+        }
+        /**
+         * @return JobsettedServerSpec
+         */
+        public function getJobsettedServerSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param RpcOptions
+         */
+        public function setRpcOptions(RpcOptions $rpcOptions)
+        {
+        }
+        /**
+         * @return RpcOptions
+         */
+        public function getRpcOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSliceFireTimeUs($sliceFireTimeUs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSliceFireTimeUs()
+        {
+        }
+        /**
+         * @param TriggerAction
+         */
+        public function setTriggerAction(TriggerAction $triggerAction)
+        {
+        }
+        /**
+         * @return TriggerAction
+         */
+        public function getTriggerAction()
+        {
+        }
+        /**
+         * @param TriggerKey
+         */
+        public function setTriggerKey(TriggerKey $triggerKey)
+        {
+        }
+        /**
+         * @return TriggerKey
+         */
+        public function getTriggerKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Trigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBatchTimeUs($batchTimeUs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchTimeUs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDispatchId($dispatchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDispatchId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDispatcher($dispatcher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDispatcher()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFireTimeUs($fireTimeUs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFireTimeUs()
-    {
-    }
-    /**
-     * @param JobsettedServerSpec
-     */
-    public function setJobsettedServerSpec(JobsettedServerSpec $jobsettedServerSpec)
-    {
-    }
-    /**
-     * @return JobsettedServerSpec
-     */
-    public function getJobsettedServerSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param RpcOptions
-     */
-    public function setRpcOptions(RpcOptions $rpcOptions)
-    {
-    }
-    /**
-     * @return RpcOptions
-     */
-    public function getRpcOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSliceFireTimeUs($sliceFireTimeUs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSliceFireTimeUs()
-    {
-    }
-    /**
-     * @param TriggerAction
-     */
-    public function setTriggerAction(TriggerAction $triggerAction)
-    {
-    }
-    /**
-     * @return TriggerAction
-     */
-    public function getTriggerAction()
-    {
-    }
-    /**
-     * @param TriggerKey
-     */
-    public function setTriggerKey(TriggerKey $triggerKey)
-    {
-    }
-    /**
-     * @return TriggerKey
-     */
-    public function getTriggerKey()
+    class Google_Service_CloudSearch_Trigger extends \Google\Service\CloudSearch\Trigger
     {
     }
 }

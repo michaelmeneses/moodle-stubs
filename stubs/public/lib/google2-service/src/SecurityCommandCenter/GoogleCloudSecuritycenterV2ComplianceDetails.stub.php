@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2ComplianceDetails extends \Google\Collection
-{
-    protected $collection_key = 'frameworks';
-    protected $cloudControlType = GoogleCloudSecuritycenterV2CloudControl::class;
-    protected $cloudControlDataType = '';
-    /**
-     * Cloud Control Deployments associated with the finding. For example, organiz
-     * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
-     *
-     * @var string[]
-     */
-    public $cloudControlDeploymentNames;
-    protected $frameworksType = GoogleCloudSecuritycenterV2Framework::class;
-    protected $frameworksDataType = 'array';
-    /**
-     * CloudControl associated with the finding
-     *
-     * @param GoogleCloudSecuritycenterV2CloudControl $cloudControl
-     */
-    public function setCloudControl(GoogleCloudSecuritycenterV2CloudControl $cloudControl)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2ComplianceDetails extends \Google\Collection
     {
+        protected $collection_key = 'frameworks';
+        protected $cloudControlType = GoogleCloudSecuritycenterV2CloudControl::class;
+        protected $cloudControlDataType = '';
+        /**
+         * Cloud Control Deployments associated with the finding. For example, organiz
+         * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
+         *
+         * @var string[]
+         */
+        public $cloudControlDeploymentNames;
+        protected $frameworksType = GoogleCloudSecuritycenterV2Framework::class;
+        protected $frameworksDataType = 'array';
+        /**
+         * CloudControl associated with the finding
+         *
+         * @param GoogleCloudSecuritycenterV2CloudControl $cloudControl
+         */
+        public function setCloudControl(GoogleCloudSecuritycenterV2CloudControl $cloudControl)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2CloudControl
+         */
+        public function getCloudControl()
+        {
+        }
+        /**
+         * Cloud Control Deployments associated with the finding. For example, organiz
+         * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
+         *
+         * @param string[] $cloudControlDeploymentNames
+         */
+        public function setCloudControlDeploymentNames($cloudControlDeploymentNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCloudControlDeploymentNames()
+        {
+        }
+        /**
+         * Details of Frameworks associated with the finding
+         *
+         * @param GoogleCloudSecuritycenterV2Framework[] $frameworks
+         */
+        public function setFrameworks($frameworks)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Framework[]
+         */
+        public function getFrameworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2CloudControl
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ComplianceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudControl()
-    {
-    }
-    /**
-     * Cloud Control Deployments associated with the finding. For example, organiz
-     * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
-     *
-     * @param string[] $cloudControlDeploymentNames
-     */
-    public function setCloudControlDeploymentNames($cloudControlDeploymentNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCloudControlDeploymentNames()
-    {
-    }
-    /**
-     * Details of Frameworks associated with the finding
-     *
-     * @param GoogleCloudSecuritycenterV2Framework[] $frameworks
-     */
-    public function setFrameworks($frameworks)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Framework[]
-     */
-    public function getFrameworks()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2ComplianceDetails extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ComplianceDetails
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class TransactionData extends \Google\Model
-{
+namespace Google\Service\AnalyticsReporting {
+    class TransactionData extends \Google\Model
+    {
+        /**
+         * @var string
+         */
+        public $transactionId;
+        public $transactionRevenue;
+        public $transactionShipping;
+        public $transactionTax;
+        /**
+         * @param string
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
+        public function setTransactionRevenue($transactionRevenue)
+        {
+        }
+        public function getTransactionRevenue()
+        {
+        }
+        public function setTransactionShipping($transactionShipping)
+        {
+        }
+        public function getTransactionShipping()
+        {
+        }
+        public function setTransactionTax($transactionTax)
+        {
+        }
+        public function getTransactionTax()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @var string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\TransactionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $transactionId;
-    public $transactionRevenue;
-    public $transactionShipping;
-    public $transactionTax;
-    /**
-     * @param string
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
-    {
-    }
-    public function setTransactionRevenue($transactionRevenue)
-    {
-    }
-    public function getTransactionRevenue()
-    {
-    }
-    public function setTransactionShipping($transactionShipping)
-    {
-    }
-    public function getTransactionShipping()
-    {
-    }
-    public function setTransactionTax($transactionTax)
-    {
-    }
-    public function getTransactionTax()
+    class Google_Service_AnalyticsReporting_TransactionData extends \Google\Service\AnalyticsReporting\TransactionData
     {
     }
 }

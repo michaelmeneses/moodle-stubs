@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class SignUpInfo extends \Google\Model
-{
-    /**
-     * ID of the class the user can sign up for.
-     *
-     * @var string
-     */
-    public $classId;
-    /**
-     * ID of the class the user can sign up for.
-     *
-     * @param string $classId
-     */
-    public function setClassId($classId)
+namespace Google\Service\Walletobjects {
+    class SignUpInfo extends \Google\Model
     {
+        /**
+         * ID of the class the user can sign up for.
+         *
+         * @var string
+         */
+        public $classId;
+        /**
+         * ID of the class the user can sign up for.
+         *
+         * @param string $classId
+         */
+        public function setClassId($classId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\SignUpInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassId()
+    class Google_Service_Walletobjects_SignUpInfo extends \Google\Service\Walletobjects\SignUpInfo
     {
     }
 }

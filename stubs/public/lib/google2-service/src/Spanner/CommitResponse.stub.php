@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class CommitResponse extends \Google\Model
-{
-    protected $commitStatsType = CommitStats::class;
-    protected $commitStatsDataType = '';
-    /**
-     * The Cloud Spanner timestamp at which the transaction committed.
-     *
-     * @var string
-     */
-    public $commitTimestamp;
-    protected $precommitTokenType = MultiplexedSessionPrecommitToken::class;
-    protected $precommitTokenDataType = '';
-    /**
-     * If `TransactionOptions.isolation_level` is set to
-     * `IsolationLevel.REPEATABLE_READ`, then the snapshot timestamp is the
-     * timestamp at which all reads in the transaction ran. This timestamp is
-     * never returned.
-     *
-     * @var string
-     */
-    public $snapshotTimestamp;
-    /**
-     * The statistics about this `Commit`. Not returned by default. For more
-     * information, see CommitRequest.return_commit_stats.
-     *
-     * @param CommitStats $commitStats
-     */
-    public function setCommitStats(CommitStats $commitStats)
+namespace Google\Service\Spanner {
+    class CommitResponse extends \Google\Model
     {
+        protected $commitStatsType = CommitStats::class;
+        protected $commitStatsDataType = '';
+        /**
+         * The Cloud Spanner timestamp at which the transaction committed.
+         *
+         * @var string
+         */
+        public $commitTimestamp;
+        protected $precommitTokenType = MultiplexedSessionPrecommitToken::class;
+        protected $precommitTokenDataType = '';
+        /**
+         * If `TransactionOptions.isolation_level` is set to
+         * `IsolationLevel.REPEATABLE_READ`, then the snapshot timestamp is the
+         * timestamp at which all reads in the transaction ran. This timestamp is
+         * never returned.
+         *
+         * @var string
+         */
+        public $snapshotTimestamp;
+        /**
+         * The statistics about this `Commit`. Not returned by default. For more
+         * information, see CommitRequest.return_commit_stats.
+         *
+         * @param CommitStats $commitStats
+         */
+        public function setCommitStats(CommitStats $commitStats)
+        {
+        }
+        /**
+         * @return CommitStats
+         */
+        public function getCommitStats()
+        {
+        }
+        /**
+         * The Cloud Spanner timestamp at which the transaction committed.
+         *
+         * @param string $commitTimestamp
+         */
+        public function setCommitTimestamp($commitTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTimestamp()
+        {
+        }
+        /**
+         * If specified, transaction has not committed yet. You must retry the commit
+         * with the new precommit token.
+         *
+         * @param MultiplexedSessionPrecommitToken $precommitToken
+         */
+        public function setPrecommitToken(MultiplexedSessionPrecommitToken $precommitToken)
+        {
+        }
+        /**
+         * @return MultiplexedSessionPrecommitToken
+         */
+        public function getPrecommitToken()
+        {
+        }
+        /**
+         * If `TransactionOptions.isolation_level` is set to
+         * `IsolationLevel.REPEATABLE_READ`, then the snapshot timestamp is the
+         * timestamp at which all reads in the transaction ran. This timestamp is
+         * never returned.
+         *
+         * @param string $snapshotTimestamp
+         */
+        public function setSnapshotTimestamp($snapshotTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitStats
+     * Runtime class alias of \Google\Service\Spanner\CommitResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitStats()
-    {
-    }
-    /**
-     * The Cloud Spanner timestamp at which the transaction committed.
-     *
-     * @param string $commitTimestamp
-     */
-    public function setCommitTimestamp($commitTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitTimestamp()
-    {
-    }
-    /**
-     * If specified, transaction has not committed yet. You must retry the commit
-     * with the new precommit token.
-     *
-     * @param MultiplexedSessionPrecommitToken $precommitToken
-     */
-    public function setPrecommitToken(MultiplexedSessionPrecommitToken $precommitToken)
-    {
-    }
-    /**
-     * @return MultiplexedSessionPrecommitToken
-     */
-    public function getPrecommitToken()
-    {
-    }
-    /**
-     * If `TransactionOptions.isolation_level` is set to
-     * `IsolationLevel.REPEATABLE_READ`, then the snapshot timestamp is the
-     * timestamp at which all reads in the transaction ran. This timestamp is
-     * never returned.
-     *
-     * @param string $snapshotTimestamp
-     */
-    public function setSnapshotTimestamp($snapshotTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTimestamp()
+    class Google_Service_Spanner_CommitResponse extends \Google\Service\Spanner\CommitResponse
     {
     }
 }

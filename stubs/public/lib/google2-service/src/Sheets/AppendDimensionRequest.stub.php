@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AppendDimensionRequest extends \Google\Model
-{
-    /**
-     * The default value, do not use.
-     */
-    public const DIMENSION_DIMENSION_UNSPECIFIED = 'DIMENSION_UNSPECIFIED';
-    /**
-     * Operates on the rows of a sheet.
-     */
-    public const DIMENSION_ROWS = 'ROWS';
-    /**
-     * Operates on the columns of a sheet.
-     */
-    public const DIMENSION_COLUMNS = 'COLUMNS';
-    /**
-     * Whether rows or columns should be appended.
-     *
-     * @var string
-     */
-    public $dimension;
-    /**
-     * The number of rows or columns to append.
-     *
-     * @var int
-     */
-    public $length;
-    /**
-     * The sheet to append rows or columns to.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * Whether rows or columns should be appended.
-     *
-     * Accepted values: DIMENSION_UNSPECIFIED, ROWS, COLUMNS
-     *
-     * @param self::DIMENSION_* $dimension
-     */
-    public function setDimension($dimension)
+namespace Google\Service\Sheets {
+    class AppendDimensionRequest extends \Google\Model
     {
+        /**
+         * The default value, do not use.
+         */
+        public const DIMENSION_DIMENSION_UNSPECIFIED = 'DIMENSION_UNSPECIFIED';
+        /**
+         * Operates on the rows of a sheet.
+         */
+        public const DIMENSION_ROWS = 'ROWS';
+        /**
+         * Operates on the columns of a sheet.
+         */
+        public const DIMENSION_COLUMNS = 'COLUMNS';
+        /**
+         * Whether rows or columns should be appended.
+         *
+         * @var string
+         */
+        public $dimension;
+        /**
+         * The number of rows or columns to append.
+         *
+         * @var int
+         */
+        public $length;
+        /**
+         * The sheet to append rows or columns to.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * Whether rows or columns should be appended.
+         *
+         * Accepted values: DIMENSION_UNSPECIFIED, ROWS, COLUMNS
+         *
+         * @param self::DIMENSION_* $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return self::DIMENSION_*
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * The number of rows or columns to append.
+         *
+         * @param int $length
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * The sheet to append rows or columns to.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIMENSION_*
+     * Runtime class alias of \Google\Service\Sheets\AppendDimensionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * The number of rows or columns to append.
-     *
-     * @param int $length
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * The sheet to append rows or columns to.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_AppendDimensionRequest extends \Google\Service\Sheets\AppendDimensionRequest
     {
     }
 }

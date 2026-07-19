@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class BackupRun extends \Google\Model
-{
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * The backup was successful.
-     */
-    public const STATUS_SUCCESSFUL = 'SUCCESSFUL';
-    /**
-     * The backup was unsuccessful.
-     */
-    public const STATUS_FAILED = 'FAILED';
-    /**
-     * The time the backup operation completed. REQUIRED
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $errorType = OperationError::class;
-    protected $errorDataType = '';
-    /**
-     * The time the backup operation started. REQUIRED
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The status of this run. REQUIRED
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The time the backup operation completed. REQUIRED
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudRedis {
+    class BackupRun extends \Google\Model
     {
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * The backup was successful.
+         */
+        public const STATUS_SUCCESSFUL = 'SUCCESSFUL';
+        /**
+         * The backup was unsuccessful.
+         */
+        public const STATUS_FAILED = 'FAILED';
+        /**
+         * The time the backup operation completed. REQUIRED
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $errorType = OperationError::class;
+        protected $errorDataType = '';
+        /**
+         * The time the backup operation started. REQUIRED
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The status of this run. REQUIRED
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The time the backup operation completed. REQUIRED
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Information about why the backup operation failed. This is only present if
+         * the run has the FAILED status. OPTIONAL
+         *
+         * @param OperationError $error
+         */
+        public function setError(OperationError $error)
+        {
+        }
+        /**
+         * @return OperationError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The time the backup operation started. REQUIRED
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The status of this run. REQUIRED
+         *
+         * Accepted values: STATUS_UNSPECIFIED, SUCCESSFUL, FAILED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\BackupRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Information about why the backup operation failed. This is only present if
-     * the run has the FAILED status. OPTIONAL
-     *
-     * @param OperationError $error
-     */
-    public function setError(OperationError $error)
-    {
-    }
-    /**
-     * @return OperationError
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The time the backup operation started. REQUIRED
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The status of this run. REQUIRED
-     *
-     * Accepted values: STATUS_UNSPECIFIED, SUCCESSFUL, FAILED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_CloudRedis_BackupRun extends \Google\Service\CloudRedis\BackupRun
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult extends \Google\Collection
-{
-    protected $collection_key = 'duplicateSuggestions';
-    protected $duplicateSuggestionsType = GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion::class;
-    protected $duplicateSuggestionsDataType = 'array';
-    /**
-     * Output only. The duplicate suggestions.
-     *
-     * @param GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion[] $duplicateSuggestions
-     */
-    public function setDuplicateSuggestions($duplicateSuggestions)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult extends \Google\Collection
     {
+        protected $collection_key = 'duplicateSuggestions';
+        protected $duplicateSuggestionsType = GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion::class;
+        protected $duplicateSuggestionsDataType = 'array';
+        /**
+         * Output only. The duplicate suggestions.
+         *
+         * @param GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion[] $duplicateSuggestions
+         */
+        public function setDuplicateSuggestions($duplicateSuggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion[]
+         */
+        public function getDuplicateSuggestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuplicateSuggestions()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult
     {
     }
 }

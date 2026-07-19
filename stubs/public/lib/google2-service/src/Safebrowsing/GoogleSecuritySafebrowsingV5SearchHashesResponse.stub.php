@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV5SearchHashesResponse extends \Google\Collection
-{
-    protected $collection_key = 'fullHashes';
-    /**
-     * The client-side cache duration. The client MUST add this duration to the
-     * current time to determine the expiration time. The expiration time then
-     * applies to every hash prefix queried by the client in the request,
-     * regardless of how many full hashes are returned in the response. Even if
-     * the server returns no full hashes for a particular hash prefix, this fact
-     * MUST also be cached by the client. If and only if the field `full_hashes`
-     * is empty, the client MAY increase the `cache_duration` to determine a new
-     * expiration that is later than that specified by the server. In any case,
-     * the increased cache duration must not be longer than 24 hours. Important:
-     * the client MUST NOT assume that the server will return the same cache
-     * duration for all responses. The server MAY choose different cache durations
-     * for different responses depending on the situation.
-     *
-     * @var string
-     */
-    public $cacheDuration;
-    protected $fullHashesType = GoogleSecuritySafebrowsingV5FullHash::class;
-    protected $fullHashesDataType = 'array';
-    /**
-     * The client-side cache duration. The client MUST add this duration to the
-     * current time to determine the expiration time. The expiration time then
-     * applies to every hash prefix queried by the client in the request,
-     * regardless of how many full hashes are returned in the response. Even if
-     * the server returns no full hashes for a particular hash prefix, this fact
-     * MUST also be cached by the client. If and only if the field `full_hashes`
-     * is empty, the client MAY increase the `cache_duration` to determine a new
-     * expiration that is later than that specified by the server. In any case,
-     * the increased cache duration must not be longer than 24 hours. Important:
-     * the client MUST NOT assume that the server will return the same cache
-     * duration for all responses. The server MAY choose different cache durations
-     * for different responses depending on the situation.
-     *
-     * @param string $cacheDuration
-     */
-    public function setCacheDuration($cacheDuration)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV5SearchHashesResponse extends \Google\Collection
     {
+        protected $collection_key = 'fullHashes';
+        /**
+         * The client-side cache duration. The client MUST add this duration to the
+         * current time to determine the expiration time. The expiration time then
+         * applies to every hash prefix queried by the client in the request,
+         * regardless of how many full hashes are returned in the response. Even if
+         * the server returns no full hashes for a particular hash prefix, this fact
+         * MUST also be cached by the client. If and only if the field `full_hashes`
+         * is empty, the client MAY increase the `cache_duration` to determine a new
+         * expiration that is later than that specified by the server. In any case,
+         * the increased cache duration must not be longer than 24 hours. Important:
+         * the client MUST NOT assume that the server will return the same cache
+         * duration for all responses. The server MAY choose different cache durations
+         * for different responses depending on the situation.
+         *
+         * @var string
+         */
+        public $cacheDuration;
+        protected $fullHashesType = GoogleSecuritySafebrowsingV5FullHash::class;
+        protected $fullHashesDataType = 'array';
+        /**
+         * The client-side cache duration. The client MUST add this duration to the
+         * current time to determine the expiration time. The expiration time then
+         * applies to every hash prefix queried by the client in the request,
+         * regardless of how many full hashes are returned in the response. Even if
+         * the server returns no full hashes for a particular hash prefix, this fact
+         * MUST also be cached by the client. If and only if the field `full_hashes`
+         * is empty, the client MAY increase the `cache_duration` to determine a new
+         * expiration that is later than that specified by the server. In any case,
+         * the increased cache duration must not be longer than 24 hours. Important:
+         * the client MUST NOT assume that the server will return the same cache
+         * duration for all responses. The server MAY choose different cache durations
+         * for different responses depending on the situation.
+         *
+         * @param string $cacheDuration
+         */
+        public function setCacheDuration($cacheDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCacheDuration()
+        {
+        }
+        /**
+         * Unordered list. The unordered list of full hashes found.
+         *
+         * @param GoogleSecuritySafebrowsingV5FullHash[] $fullHashes
+         */
+        public function setFullHashes($fullHashes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5FullHash[]
+         */
+        public function getFullHashes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5SearchHashesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheDuration()
-    {
-    }
-    /**
-     * Unordered list. The unordered list of full hashes found.
-     *
-     * @param GoogleSecuritySafebrowsingV5FullHash[] $fullHashes
-     */
-    public function setFullHashes($fullHashes)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5FullHash[]
-     */
-    public function getFullHashes()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV5SearchHashesResponse extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5SearchHashesResponse
     {
     }
 }

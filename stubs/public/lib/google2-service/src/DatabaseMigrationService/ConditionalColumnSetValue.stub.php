@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ConditionalColumnSetValue extends \Google\Model
-{
-    /**
-     * Optional. Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    protected $sourceNumericFilterType = SourceNumericFilter::class;
-    protected $sourceNumericFilterDataType = '';
-    protected $sourceTextFilterType = SourceTextFilter::class;
-    protected $sourceTextFilterDataType = '';
-    protected $valueTransformationType = ValueTransformation::class;
-    protected $valueTransformationDataType = '';
-    /**
-     * Optional. Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class ConditionalColumnSetValue extends \Google\Model
     {
+        /**
+         * Optional. Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        protected $sourceNumericFilterType = SourceNumericFilter::class;
+        protected $sourceNumericFilterDataType = '';
+        protected $sourceTextFilterType = SourceTextFilter::class;
+        protected $sourceTextFilterDataType = '';
+        protected $valueTransformationType = ValueTransformation::class;
+        protected $valueTransformationDataType = '';
+        /**
+         * Optional. Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * Optional. Optional filter on source column precision and scale. Used for
+         * fixed point numbers such as NUMERIC/NUMBER data types.
+         *
+         * @param SourceNumericFilter $sourceNumericFilter
+         */
+        public function setSourceNumericFilter(SourceNumericFilter $sourceNumericFilter)
+        {
+        }
+        /**
+         * @return SourceNumericFilter
+         */
+        public function getSourceNumericFilter()
+        {
+        }
+        /**
+         * Optional. Optional filter on source column length. Used for text based data
+         * types like varchar.
+         *
+         * @param SourceTextFilter $sourceTextFilter
+         */
+        public function setSourceTextFilter(SourceTextFilter $sourceTextFilter)
+        {
+        }
+        /**
+         * @return SourceTextFilter
+         */
+        public function getSourceTextFilter()
+        {
+        }
+        /**
+         * Required. Description of data transformation during migration.
+         *
+         * @param ValueTransformation $valueTransformation
+         */
+        public function setValueTransformation(ValueTransformation $valueTransformation)
+        {
+        }
+        /**
+         * @return ValueTransformation
+         */
+        public function getValueTransformation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ConditionalColumnSetValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * Optional. Optional filter on source column precision and scale. Used for
-     * fixed point numbers such as NUMERIC/NUMBER data types.
-     *
-     * @param SourceNumericFilter $sourceNumericFilter
-     */
-    public function setSourceNumericFilter(SourceNumericFilter $sourceNumericFilter)
-    {
-    }
-    /**
-     * @return SourceNumericFilter
-     */
-    public function getSourceNumericFilter()
-    {
-    }
-    /**
-     * Optional. Optional filter on source column length. Used for text based data
-     * types like varchar.
-     *
-     * @param SourceTextFilter $sourceTextFilter
-     */
-    public function setSourceTextFilter(SourceTextFilter $sourceTextFilter)
-    {
-    }
-    /**
-     * @return SourceTextFilter
-     */
-    public function getSourceTextFilter()
-    {
-    }
-    /**
-     * Required. Description of data transformation during migration.
-     *
-     * @param ValueTransformation $valueTransformation
-     */
-    public function setValueTransformation(ValueTransformation $valueTransformation)
-    {
-    }
-    /**
-     * @return ValueTransformation
-     */
-    public function getValueTransformation()
+    class Google_Service_DatabaseMigrationService_ConditionalColumnSetValue extends \Google\Service\DatabaseMigrationService\ConditionalColumnSetValue
     {
     }
 }

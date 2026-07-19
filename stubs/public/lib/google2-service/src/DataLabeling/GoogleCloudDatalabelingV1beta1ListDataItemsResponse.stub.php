@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ListDataItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataItems';
-    protected $dataItemsType = GoogleCloudDatalabelingV1beta1DataItem::class;
-    protected $dataItemsDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of data items to return.
-     *
-     * @param GoogleCloudDatalabelingV1beta1DataItem[] $dataItems
-     */
-    public function setDataItems($dataItems)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ListDataItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataItems';
+        protected $dataItemsType = GoogleCloudDatalabelingV1beta1DataItem::class;
+        protected $dataItemsDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of data items to return.
+         *
+         * @param GoogleCloudDatalabelingV1beta1DataItem[] $dataItems
+         */
+        public function setDataItems($dataItems)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1DataItem[]
+         */
+        public function getDataItems()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1DataItem[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListDataItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataItems()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ListDataItemsResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListDataItemsResponse
     {
     }
 }

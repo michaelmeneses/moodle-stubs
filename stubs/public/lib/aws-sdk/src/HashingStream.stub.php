@@ -8,6 +8,8 @@
  */
 namespace Aws;
 
+use GuzzleHttp\Psr7\StreamDecoratorTrait;
+use Psr\Http\Message\StreamInterface;
 /**
  * Stream decorator that calculates a rolling hash of the stream as it is read.
  */

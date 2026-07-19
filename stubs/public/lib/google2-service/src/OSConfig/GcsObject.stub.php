@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class GcsObject extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucket;
-    /**
-     * @var string
-     */
-    public $generationNumber;
-    /**
-     * @var string
-     */
-    public $object;
-    /**
-     * @param string
-     */
-    public function setBucket($bucket)
+namespace Google\Service\OSConfig {
+    class GcsObject extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucket;
+        /**
+         * @var string
+         */
+        public $generationNumber;
+        /**
+         * @var string
+         */
+        public $object;
+        /**
+         * @param string
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGenerationNumber($generationNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenerationNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\GcsObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGenerationNumber($generationNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGenerationNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
+    class Google_Service_OSConfig_GcsObject extends \Google\Service\OSConfig\GcsObject
     {
     }
 }

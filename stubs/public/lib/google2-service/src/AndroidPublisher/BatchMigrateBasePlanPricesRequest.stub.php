@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchMigrateBasePlanPricesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = MigrateBasePlanPricesRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. Up to 100 price migration requests. All requests must update
-     * different base plans.
-     *
-     * @param MigrateBasePlanPricesRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AndroidPublisher {
+    class BatchMigrateBasePlanPricesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = MigrateBasePlanPricesRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. Up to 100 price migration requests. All requests must update
+         * different base plans.
+         *
+         * @param MigrateBasePlanPricesRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return MigrateBasePlanPricesRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrateBasePlanPricesRequest[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchMigrateBasePlanPricesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AndroidPublisher_BatchMigrateBasePlanPricesRequest extends \Google\Service\AndroidPublisher\BatchMigrateBasePlanPricesRequest
     {
     }
 }

@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessRow extends \Google\Collection
-{
-    protected $collection_key = 'metricValues';
-    protected $dimensionValuesType = GoogleAnalyticsAdminV1alphaAccessDimensionValue::class;
-    protected $dimensionValuesDataType = 'array';
-    protected $metricValuesType = GoogleAnalyticsAdminV1alphaAccessMetricValue::class;
-    protected $metricValuesDataType = 'array';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessDimensionValue[]
-     */
-    public function setDimensionValues($dimensionValues)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessRow extends \Google\Collection
     {
+        protected $collection_key = 'metricValues';
+        protected $dimensionValuesType = GoogleAnalyticsAdminV1alphaAccessDimensionValue::class;
+        protected $dimensionValuesDataType = 'array';
+        protected $metricValuesType = GoogleAnalyticsAdminV1alphaAccessMetricValue::class;
+        protected $metricValuesDataType = 'array';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessDimensionValue[]
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessDimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessMetricValue[]
+         */
+        public function setMetricValues($metricValues)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessMetricValue[]
+         */
+        public function getMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccessDimensionValue[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionValues()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessMetricValue[]
-     */
-    public function setMetricValues($metricValues)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessMetricValue[]
-     */
-    public function getMetricValues()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessRow extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessRow
     {
     }
 }

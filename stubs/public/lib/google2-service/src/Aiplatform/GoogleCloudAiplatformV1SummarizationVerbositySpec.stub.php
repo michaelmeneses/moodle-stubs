@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SummarizationVerbositySpec extends \Google\Model
-{
-    /**
-     * Optional. Whether to use instance.reference to compute summarization
-     * verbosity.
-     *
-     * @var bool
-     */
-    public $useReference;
-    /**
-     * Optional. Which version to use for evaluation.
-     *
-     * @var int
-     */
-    public $version;
-    /**
-     * Optional. Whether to use instance.reference to compute summarization
-     * verbosity.
-     *
-     * @param bool $useReference
-     */
-    public function setUseReference($useReference)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SummarizationVerbositySpec extends \Google\Model
     {
+        /**
+         * Optional. Whether to use instance.reference to compute summarization
+         * verbosity.
+         *
+         * @var bool
+         */
+        public $useReference;
+        /**
+         * Optional. Which version to use for evaluation.
+         *
+         * @var int
+         */
+        public $version;
+        /**
+         * Optional. Whether to use instance.reference to compute summarization
+         * verbosity.
+         *
+         * @param bool $useReference
+         */
+        public function setUseReference($useReference)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseReference()
+        {
+        }
+        /**
+         * Optional. Which version to use for evaluation.
+         *
+         * @param int $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationVerbositySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseReference()
-    {
-    }
-    /**
-     * Optional. Which version to use for evaluation.
-     *
-     * @param int $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SummarizationVerbositySpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationVerbositySpec
     {
     }
 }

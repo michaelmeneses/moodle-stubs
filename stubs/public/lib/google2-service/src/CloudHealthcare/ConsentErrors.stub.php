@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ConsentErrors extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * The versioned name of the admin Consent resource, in the format `projects/{
-     * project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_sto
-     * re_id}/fhir/Consent/{resource_id}/_history/{version_id}`. For FHIR stores
-     * with `disable_resource_versioning=true`, the format is `projects/{project_i
-     * d}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fh
-     * ir/Consent/{resource_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The error code and message.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\CloudHealthcare {
+    class ConsentErrors extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * The versioned name of the admin Consent resource, in the format `projects/{
+         * project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_sto
+         * re_id}/fhir/Consent/{resource_id}/_history/{version_id}`. For FHIR stores
+         * with `disable_resource_versioning=true`, the format is `projects/{project_i
+         * d}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fh
+         * ir/Consent/{resource_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The error code and message.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The versioned name of the admin Consent resource, in the format `projects/{
+         * project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_sto
+         * re_id}/fhir/Consent/{resource_id}/_history/{version_id}`. For FHIR stores
+         * with `disable_resource_versioning=true`, the format is `projects/{project_i
+         * d}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fh
+         * ir/Consent/{resource_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\CloudHealthcare\ConsentErrors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The versioned name of the admin Consent resource, in the format `projects/{
-     * project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_sto
-     * re_id}/fhir/Consent/{resource_id}/_history/{version_id}`. For FHIR stores
-     * with `disable_resource_versioning=true`, the format is `projects/{project_i
-     * d}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fh
-     * ir/Consent/{resource_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudHealthcare_ConsentErrors extends \Google\Service\CloudHealthcare\ConsentErrors
     {
     }
 }

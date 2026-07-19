@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ListDomainMappingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    protected $itemsType = DomainMapping::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $metadataType = ListMeta::class;
-    protected $metadataDataType = '';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudRun {
+    class ListDomainMappingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        protected $itemsType = DomainMapping::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $metadataType = ListMeta::class;
+        protected $metadataDataType = '';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param DomainMapping[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return DomainMapping[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param ListMeta
+         */
+        public function setMetadata(ListMeta $metadata)
+        {
+        }
+        /**
+         * @return ListMeta
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\ListDomainMappingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param DomainMapping[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return DomainMapping[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param ListMeta
-     */
-    public function setMetadata(ListMeta $metadata)
-    {
-    }
-    /**
-     * @return ListMeta
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudRun_ListDomainMappingsResponse extends \Google\Service\CloudRun\ListDomainMappingsResponse
     {
     }
 }

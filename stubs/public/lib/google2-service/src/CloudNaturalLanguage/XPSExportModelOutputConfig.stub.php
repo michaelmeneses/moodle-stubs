@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSExportModelOutputConfig extends \Google\Model
-{
-    protected $coreMlFormatType = XPSCoreMlFormat::class;
-    protected $coreMlFormatDataType = '';
-    protected $dockerFormatType = XPSDockerFormat::class;
-    protected $dockerFormatDataType = '';
-    protected $edgeTpuTfLiteFormatType = XPSEdgeTpuTfLiteFormat::class;
-    protected $edgeTpuTfLiteFormatDataType = '';
-    /**
-     * For any model and format: If true, will additionally export
-     * FirebaseExportedModelInfo in a firebase.txt file.
-     *
-     * @var bool
-     */
-    public $exportFirebaseAuxiliaryInfo;
-    /**
-     * The Google Contained Registry path the exported files to be pushed to. This
-     * location is set if the exported format is DOCKDER.
-     *
-     * @var string
-     */
-    public $outputGcrUri;
-    /**
-     * The Google Cloud Storage directory where XPS will output the exported
-     * models and related files. Format: gs://bucket/directory
-     *
-     * @var string
-     */
-    public $outputGcsUri;
-    protected $tfJsFormatType = XPSTfJsFormat::class;
-    protected $tfJsFormatDataType = '';
-    protected $tfLiteFormatType = XPSTfLiteFormat::class;
-    protected $tfLiteFormatDataType = '';
-    protected $tfSavedModelFormatType = XPSTfSavedModelFormat::class;
-    protected $tfSavedModelFormatDataType = '';
-    /**
-     * @param XPSCoreMlFormat $coreMlFormat
-     */
-    public function setCoreMlFormat(XPSCoreMlFormat $coreMlFormat)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSExportModelOutputConfig extends \Google\Model
     {
+        protected $coreMlFormatType = XPSCoreMlFormat::class;
+        protected $coreMlFormatDataType = '';
+        protected $dockerFormatType = XPSDockerFormat::class;
+        protected $dockerFormatDataType = '';
+        protected $edgeTpuTfLiteFormatType = XPSEdgeTpuTfLiteFormat::class;
+        protected $edgeTpuTfLiteFormatDataType = '';
+        /**
+         * For any model and format: If true, will additionally export
+         * FirebaseExportedModelInfo in a firebase.txt file.
+         *
+         * @var bool
+         */
+        public $exportFirebaseAuxiliaryInfo;
+        /**
+         * The Google Contained Registry path the exported files to be pushed to. This
+         * location is set if the exported format is DOCKDER.
+         *
+         * @var string
+         */
+        public $outputGcrUri;
+        /**
+         * The Google Cloud Storage directory where XPS will output the exported
+         * models and related files. Format: gs://bucket/directory
+         *
+         * @var string
+         */
+        public $outputGcsUri;
+        protected $tfJsFormatType = XPSTfJsFormat::class;
+        protected $tfJsFormatDataType = '';
+        protected $tfLiteFormatType = XPSTfLiteFormat::class;
+        protected $tfLiteFormatDataType = '';
+        protected $tfSavedModelFormatType = XPSTfSavedModelFormat::class;
+        protected $tfSavedModelFormatDataType = '';
+        /**
+         * @param XPSCoreMlFormat $coreMlFormat
+         */
+        public function setCoreMlFormat(XPSCoreMlFormat $coreMlFormat)
+        {
+        }
+        /**
+         * @return XPSCoreMlFormat
+         */
+        public function getCoreMlFormat()
+        {
+        }
+        /**
+         * @param XPSDockerFormat $dockerFormat
+         */
+        public function setDockerFormat(XPSDockerFormat $dockerFormat)
+        {
+        }
+        /**
+         * @return XPSDockerFormat
+         */
+        public function getDockerFormat()
+        {
+        }
+        /**
+         * @param XPSEdgeTpuTfLiteFormat $edgeTpuTfLiteFormat
+         */
+        public function setEdgeTpuTfLiteFormat(XPSEdgeTpuTfLiteFormat $edgeTpuTfLiteFormat)
+        {
+        }
+        /**
+         * @return XPSEdgeTpuTfLiteFormat
+         */
+        public function getEdgeTpuTfLiteFormat()
+        {
+        }
+        /**
+         * For any model and format: If true, will additionally export
+         * FirebaseExportedModelInfo in a firebase.txt file.
+         *
+         * @param bool $exportFirebaseAuxiliaryInfo
+         */
+        public function setExportFirebaseAuxiliaryInfo($exportFirebaseAuxiliaryInfo)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExportFirebaseAuxiliaryInfo()
+        {
+        }
+        /**
+         * The Google Contained Registry path the exported files to be pushed to. This
+         * location is set if the exported format is DOCKDER.
+         *
+         * @param string $outputGcrUri
+         */
+        public function setOutputGcrUri($outputGcrUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputGcrUri()
+        {
+        }
+        /**
+         * The Google Cloud Storage directory where XPS will output the exported
+         * models and related files. Format: gs://bucket/directory
+         *
+         * @param string $outputGcsUri
+         */
+        public function setOutputGcsUri($outputGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputGcsUri()
+        {
+        }
+        /**
+         * @param XPSTfJsFormat $tfJsFormat
+         */
+        public function setTfJsFormat(XPSTfJsFormat $tfJsFormat)
+        {
+        }
+        /**
+         * @return XPSTfJsFormat
+         */
+        public function getTfJsFormat()
+        {
+        }
+        /**
+         * @param XPSTfLiteFormat $tfLiteFormat
+         */
+        public function setTfLiteFormat(XPSTfLiteFormat $tfLiteFormat)
+        {
+        }
+        /**
+         * @return XPSTfLiteFormat
+         */
+        public function getTfLiteFormat()
+        {
+        }
+        /**
+         * @param XPSTfSavedModelFormat $tfSavedModelFormat
+         */
+        public function setTfSavedModelFormat(XPSTfSavedModelFormat $tfSavedModelFormat)
+        {
+        }
+        /**
+         * @return XPSTfSavedModelFormat
+         */
+        public function getTfSavedModelFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSCoreMlFormat
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSExportModelOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoreMlFormat()
-    {
-    }
-    /**
-     * @param XPSDockerFormat $dockerFormat
-     */
-    public function setDockerFormat(XPSDockerFormat $dockerFormat)
-    {
-    }
-    /**
-     * @return XPSDockerFormat
-     */
-    public function getDockerFormat()
-    {
-    }
-    /**
-     * @param XPSEdgeTpuTfLiteFormat $edgeTpuTfLiteFormat
-     */
-    public function setEdgeTpuTfLiteFormat(XPSEdgeTpuTfLiteFormat $edgeTpuTfLiteFormat)
-    {
-    }
-    /**
-     * @return XPSEdgeTpuTfLiteFormat
-     */
-    public function getEdgeTpuTfLiteFormat()
-    {
-    }
-    /**
-     * For any model and format: If true, will additionally export
-     * FirebaseExportedModelInfo in a firebase.txt file.
-     *
-     * @param bool $exportFirebaseAuxiliaryInfo
-     */
-    public function setExportFirebaseAuxiliaryInfo($exportFirebaseAuxiliaryInfo)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExportFirebaseAuxiliaryInfo()
-    {
-    }
-    /**
-     * The Google Contained Registry path the exported files to be pushed to. This
-     * location is set if the exported format is DOCKDER.
-     *
-     * @param string $outputGcrUri
-     */
-    public function setOutputGcrUri($outputGcrUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputGcrUri()
-    {
-    }
-    /**
-     * The Google Cloud Storage directory where XPS will output the exported
-     * models and related files. Format: gs://bucket/directory
-     *
-     * @param string $outputGcsUri
-     */
-    public function setOutputGcsUri($outputGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputGcsUri()
-    {
-    }
-    /**
-     * @param XPSTfJsFormat $tfJsFormat
-     */
-    public function setTfJsFormat(XPSTfJsFormat $tfJsFormat)
-    {
-    }
-    /**
-     * @return XPSTfJsFormat
-     */
-    public function getTfJsFormat()
-    {
-    }
-    /**
-     * @param XPSTfLiteFormat $tfLiteFormat
-     */
-    public function setTfLiteFormat(XPSTfLiteFormat $tfLiteFormat)
-    {
-    }
-    /**
-     * @return XPSTfLiteFormat
-     */
-    public function getTfLiteFormat()
-    {
-    }
-    /**
-     * @param XPSTfSavedModelFormat $tfSavedModelFormat
-     */
-    public function setTfSavedModelFormat(XPSTfSavedModelFormat $tfSavedModelFormat)
-    {
-    }
-    /**
-     * @return XPSTfSavedModelFormat
-     */
-    public function getTfSavedModelFormat()
+    class Google_Service_CloudNaturalLanguage_XPSExportModelOutputConfig extends \Google\Service\CloudNaturalLanguage\XPSExportModelOutputConfig
     {
     }
 }

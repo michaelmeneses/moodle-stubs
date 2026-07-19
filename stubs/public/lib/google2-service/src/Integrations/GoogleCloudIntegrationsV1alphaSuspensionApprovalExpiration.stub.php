@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration extends \Google\Model
-{
-    /**
-     * Output only. Time after which the suspension expires, if no action taken.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
-     * is the default behavior.
-     *
-     * @var bool
-     */
-    public $liftWhenExpired;
-    /**
-     * Time after the previous suspension action reminder, if any, is sent using
-     * the selected notification option, for a suspension which is still
-     * PENDING_UNSPECIFIED.
-     *
-     * @var string
-     */
-    public $remindTime;
-    /**
-     * Output only. Time after which the suspension expires, if no action taken.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration extends \Google\Model
     {
+        /**
+         * Output only. Time after which the suspension expires, if no action taken.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
+         * is the default behavior.
+         *
+         * @var bool
+         */
+        public $liftWhenExpired;
+        /**
+         * Time after the previous suspension action reminder, if any, is sent using
+         * the selected notification option, for a suspension which is still
+         * PENDING_UNSPECIFIED.
+         *
+         * @var string
+         */
+        public $remindTime;
+        /**
+         * Output only. Time after which the suspension expires, if no action taken.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
+         * is the default behavior.
+         *
+         * @param bool $liftWhenExpired
+         */
+        public function setLiftWhenExpired($liftWhenExpired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLiftWhenExpired()
+        {
+        }
+        /**
+         * Time after the previous suspension action reminder, if any, is sent using
+         * the selected notification option, for a suspension which is still
+         * PENDING_UNSPECIFIED.
+         *
+         * @param string $remindTime
+         */
+        public function setRemindTime($remindTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemindTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
-     * is the default behavior.
-     *
-     * @param bool $liftWhenExpired
-     */
-    public function setLiftWhenExpired($liftWhenExpired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLiftWhenExpired()
-    {
-    }
-    /**
-     * Time after the previous suspension action reminder, if any, is sent using
-     * the selected notification option, for a suspension which is still
-     * PENDING_UNSPECIFIED.
-     *
-     * @param string $remindTime
-     */
-    public function setRemindTime($remindTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemindTime()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration
     {
     }
 }

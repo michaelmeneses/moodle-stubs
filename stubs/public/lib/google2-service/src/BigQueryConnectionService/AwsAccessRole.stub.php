@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class AwsAccessRole extends \Google\Model
-{
-    /**
-     * The user’s AWS IAM Role that trusts the Google-owned AWS IAM user
-     * Connection.
-     *
-     * @var string
-     */
-    public $iamRoleId;
-    /**
-     * A unique Google-owned and Google-generated identity for the Connection.
-     * This identity will be used to access the user's AWS IAM Role.
-     *
-     * @var string
-     */
-    public $identity;
-    /**
-     * The user’s AWS IAM Role that trusts the Google-owned AWS IAM user
-     * Connection.
-     *
-     * @param string $iamRoleId
-     */
-    public function setIamRoleId($iamRoleId)
+namespace Google\Service\BigQueryConnectionService {
+    class AwsAccessRole extends \Google\Model
     {
+        /**
+         * The user’s AWS IAM Role that trusts the Google-owned AWS IAM user
+         * Connection.
+         *
+         * @var string
+         */
+        public $iamRoleId;
+        /**
+         * A unique Google-owned and Google-generated identity for the Connection.
+         * This identity will be used to access the user's AWS IAM Role.
+         *
+         * @var string
+         */
+        public $identity;
+        /**
+         * The user’s AWS IAM Role that trusts the Google-owned AWS IAM user
+         * Connection.
+         *
+         * @param string $iamRoleId
+         */
+        public function setIamRoleId($iamRoleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIamRoleId()
+        {
+        }
+        /**
+         * A unique Google-owned and Google-generated identity for the Connection.
+         * This identity will be used to access the user's AWS IAM Role.
+         *
+         * @param string $identity
+         */
+        public function setIdentity($identity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\AwsAccessRole registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamRoleId()
-    {
-    }
-    /**
-     * A unique Google-owned and Google-generated identity for the Connection.
-     * This identity will be used to access the user's AWS IAM Role.
-     *
-     * @param string $identity
-     */
-    public function setIdentity($identity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdentity()
+    class Google_Service_BigQueryConnectionService_AwsAccessRole extends \Google\Service\BigQueryConnectionService\AwsAccessRole
     {
     }
 }

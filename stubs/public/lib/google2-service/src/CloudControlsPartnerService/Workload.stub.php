@@ -21,221 +21,230 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Workload extends \Google\Model
-{
-    /**
-     * Unknown Partner.
-     */
-    public const PARTNER_PARTNER_UNSPECIFIED = 'PARTNER_UNSPECIFIED';
-    /**
-     * Enum representing S3NS (Thales) partner.
-     */
-    public const PARTNER_PARTNER_LOCAL_CONTROLS_BY_S3NS = 'PARTNER_LOCAL_CONTROLS_BY_S3NS';
-    /**
-     * Enum representing T_SYSTEM (TSI) partner.
-     */
-    public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_T_SYSTEMS = 'PARTNER_SOVEREIGN_CONTROLS_BY_T_SYSTEMS';
-    /**
-     * Enum representing SIA_MINSAIT (Indra) partner.
-     */
-    public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_SIA_MINSAIT = 'PARTNER_SOVEREIGN_CONTROLS_BY_SIA_MINSAIT';
-    /**
-     * Enum representing PSN (TIM) partner.
-     */
-    public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_PSN = 'PARTNER_SOVEREIGN_CONTROLS_BY_PSN';
-    /**
-     * Enum representing CNTXT (Kingdom of Saudi Arabia) partner.
-     */
-    public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT = 'PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT';
-    /**
-     * Enum representing CNXT (Kingdom of Saudi Arabia) partner offering without
-     * EKM provisioning.
-     */
-    public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT_NO_EKM = 'PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT_NO_EKM';
-    /**
-     * Output only. Time the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The name of container folder of the assured workload
-     *
-     * @var string
-     */
-    public $folder;
-    /**
-     * Output only. Folder id this workload is associated with
-     *
-     * @var string
-     */
-    public $folderId;
-    /**
-     * Indicates whether a workload is fully onboarded.
-     *
-     * @var bool
-     */
-    public $isOnboarded;
-    /**
-     * The project id of the key management project for the workload
-     *
-     * @var string
-     */
-    public $keyManagementProjectId;
-    /**
-     * The Google Cloud location of the workload
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Partner associated with this workload.
-     *
-     * @var string
-     */
-    public $partner;
-    protected $workloadOnboardingStateType = WorkloadOnboardingState::class;
-    protected $workloadOnboardingStateDataType = '';
-    /**
-     * Output only. Time the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudControlsPartnerService {
+    class Workload extends \Google\Model
     {
+        /**
+         * Unknown Partner.
+         */
+        public const PARTNER_PARTNER_UNSPECIFIED = 'PARTNER_UNSPECIFIED';
+        /**
+         * Enum representing S3NS (Thales) partner.
+         */
+        public const PARTNER_PARTNER_LOCAL_CONTROLS_BY_S3NS = 'PARTNER_LOCAL_CONTROLS_BY_S3NS';
+        /**
+         * Enum representing T_SYSTEM (TSI) partner.
+         */
+        public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_T_SYSTEMS = 'PARTNER_SOVEREIGN_CONTROLS_BY_T_SYSTEMS';
+        /**
+         * Enum representing SIA_MINSAIT (Indra) partner.
+         */
+        public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_SIA_MINSAIT = 'PARTNER_SOVEREIGN_CONTROLS_BY_SIA_MINSAIT';
+        /**
+         * Enum representing PSN (TIM) partner.
+         */
+        public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_PSN = 'PARTNER_SOVEREIGN_CONTROLS_BY_PSN';
+        /**
+         * Enum representing CNTXT (Kingdom of Saudi Arabia) partner.
+         */
+        public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT = 'PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT';
+        /**
+         * Enum representing CNXT (Kingdom of Saudi Arabia) partner offering without
+         * EKM provisioning.
+         */
+        public const PARTNER_PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT_NO_EKM = 'PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT_NO_EKM';
+        /**
+         * Output only. Time the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The name of container folder of the assured workload
+         *
+         * @var string
+         */
+        public $folder;
+        /**
+         * Output only. Folder id this workload is associated with
+         *
+         * @var string
+         */
+        public $folderId;
+        /**
+         * Indicates whether a workload is fully onboarded.
+         *
+         * @var bool
+         */
+        public $isOnboarded;
+        /**
+         * The project id of the key management project for the workload
+         *
+         * @var string
+         */
+        public $keyManagementProjectId;
+        /**
+         * The Google Cloud location of the workload
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Partner associated with this workload.
+         *
+         * @var string
+         */
+        public $partner;
+        protected $workloadOnboardingStateType = WorkloadOnboardingState::class;
+        protected $workloadOnboardingStateDataType = '';
+        /**
+         * Output only. Time the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The name of container folder of the assured workload
+         *
+         * @param string $folder
+         */
+        public function setFolder($folder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolder()
+        {
+        }
+        /**
+         * Output only. Folder id this workload is associated with
+         *
+         * @param string $folderId
+         */
+        public function setFolderId($folderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolderId()
+        {
+        }
+        /**
+         * Indicates whether a workload is fully onboarded.
+         *
+         * @param bool $isOnboarded
+         */
+        public function setIsOnboarded($isOnboarded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsOnboarded()
+        {
+        }
+        /**
+         * The project id of the key management project for the workload
+         *
+         * @param string $keyManagementProjectId
+         */
+        public function setKeyManagementProjectId($keyManagementProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyManagementProjectId()
+        {
+        }
+        /**
+         * The Google Cloud location of the workload
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Partner associated with this workload.
+         *
+         * Accepted values: PARTNER_UNSPECIFIED, PARTNER_LOCAL_CONTROLS_BY_S3NS,
+         * PARTNER_SOVEREIGN_CONTROLS_BY_T_SYSTEMS,
+         * PARTNER_SOVEREIGN_CONTROLS_BY_SIA_MINSAIT,
+         * PARTNER_SOVEREIGN_CONTROLS_BY_PSN, PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT,
+         * PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT_NO_EKM
+         *
+         * @param self::PARTNER_* $partner
+         */
+        public function setPartner($partner)
+        {
+        }
+        /**
+         * @return self::PARTNER_*
+         */
+        public function getPartner()
+        {
+        }
+        /**
+         * Container for workload onboarding steps.
+         *
+         * @param WorkloadOnboardingState $workloadOnboardingState
+         */
+        public function setWorkloadOnboardingState(WorkloadOnboardingState $workloadOnboardingState)
+        {
+        }
+        /**
+         * @return WorkloadOnboardingState
+         */
+        public function getWorkloadOnboardingState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Workload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The name of container folder of the assured workload
-     *
-     * @param string $folder
-     */
-    public function setFolder($folder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFolder()
-    {
-    }
-    /**
-     * Output only. Folder id this workload is associated with
-     *
-     * @param string $folderId
-     */
-    public function setFolderId($folderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFolderId()
-    {
-    }
-    /**
-     * Indicates whether a workload is fully onboarded.
-     *
-     * @param bool $isOnboarded
-     */
-    public function setIsOnboarded($isOnboarded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsOnboarded()
-    {
-    }
-    /**
-     * The project id of the key management project for the workload
-     *
-     * @param string $keyManagementProjectId
-     */
-    public function setKeyManagementProjectId($keyManagementProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyManagementProjectId()
-    {
-    }
-    /**
-     * The Google Cloud location of the workload
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Partner associated with this workload.
-     *
-     * Accepted values: PARTNER_UNSPECIFIED, PARTNER_LOCAL_CONTROLS_BY_S3NS,
-     * PARTNER_SOVEREIGN_CONTROLS_BY_T_SYSTEMS,
-     * PARTNER_SOVEREIGN_CONTROLS_BY_SIA_MINSAIT,
-     * PARTNER_SOVEREIGN_CONTROLS_BY_PSN, PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT,
-     * PARTNER_SOVEREIGN_CONTROLS_BY_CNTXT_NO_EKM
-     *
-     * @param self::PARTNER_* $partner
-     */
-    public function setPartner($partner)
-    {
-    }
-    /**
-     * @return self::PARTNER_*
-     */
-    public function getPartner()
-    {
-    }
-    /**
-     * Container for workload onboarding steps.
-     *
-     * @param WorkloadOnboardingState $workloadOnboardingState
-     */
-    public function setWorkloadOnboardingState(WorkloadOnboardingState $workloadOnboardingState)
-    {
-    }
-    /**
-     * @return WorkloadOnboardingState
-     */
-    public function getWorkloadOnboardingState()
+    class Google_Service_CloudControlsPartnerService_Workload extends \Google\Service\CloudControlsPartnerService\Workload
     {
     }
 }

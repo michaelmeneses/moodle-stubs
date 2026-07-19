@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnGatewaysGetStatusResponse extends \Google\Model
-{
-    protected $resultType = VpnGatewayStatus::class;
-    protected $resultDataType = '';
-    /**
-     * @param VpnGatewayStatus $result
-     */
-    public function setResult(VpnGatewayStatus $result)
+namespace Google\Service\Compute {
+    class VpnGatewaysGetStatusResponse extends \Google\Model
     {
+        protected $resultType = VpnGatewayStatus::class;
+        protected $resultDataType = '';
+        /**
+         * @param VpnGatewayStatus $result
+         */
+        public function setResult(VpnGatewayStatus $result)
+        {
+        }
+        /**
+         * @return VpnGatewayStatus
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VpnGatewayStatus
+     * Runtime class alias of \Google\Service\Compute\VpnGatewaysGetStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Compute_VpnGatewaysGetStatusResponse extends \Google\Service\Compute\VpnGatewaysGetStatusResponse
     {
     }
 }

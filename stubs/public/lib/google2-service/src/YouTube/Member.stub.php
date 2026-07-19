@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Member extends \Google\Model
-{
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#member".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = MemberSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class Member extends \Google\Model
     {
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#member".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = MemberSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#member".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the member.
+         *
+         * @param MemberSnippet $snippet
+         */
+        public function setSnippet(MemberSnippet $snippet)
+        {
+        }
+        /**
+         * @return MemberSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\Member registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#member".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the member.
-     *
-     * @param MemberSnippet $snippet
-     */
-    public function setSnippet(MemberSnippet $snippet)
-    {
-    }
-    /**
-     * @return MemberSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_Member extends \Google\Service\YouTube\Member
     {
     }
 }

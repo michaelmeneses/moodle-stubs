@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryCloudStorageConditions extends \Google\Collection
-{
-    protected $collection_key = 'includedObjectAttributes';
-    /**
-     * Required. Only objects with the specified attributes will be scanned.
-     * Defaults to [ALL_SUPPORTED_BUCKETS] if unset.
-     *
-     * @var string[]
-     */
-    public $includedBucketAttributes;
-    /**
-     * Required. Only objects with the specified attributes will be scanned. If an
-     * object has one of the specified attributes but is inside an excluded
-     * bucket, it will not be scanned. Defaults to [ALL_SUPPORTED_OBJECTS]. A
-     * profile will be created even if no objects match the
-     * included_object_attributes.
-     *
-     * @var string[]
-     */
-    public $includedObjectAttributes;
-    /**
-     * Required. Only objects with the specified attributes will be scanned.
-     * Defaults to [ALL_SUPPORTED_BUCKETS] if unset.
-     *
-     * @param string[] $includedBucketAttributes
-     */
-    public function setIncludedBucketAttributes($includedBucketAttributes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryCloudStorageConditions extends \Google\Collection
     {
+        protected $collection_key = 'includedObjectAttributes';
+        /**
+         * Required. Only objects with the specified attributes will be scanned.
+         * Defaults to [ALL_SUPPORTED_BUCKETS] if unset.
+         *
+         * @var string[]
+         */
+        public $includedBucketAttributes;
+        /**
+         * Required. Only objects with the specified attributes will be scanned. If an
+         * object has one of the specified attributes but is inside an excluded
+         * bucket, it will not be scanned. Defaults to [ALL_SUPPORTED_OBJECTS]. A
+         * profile will be created even if no objects match the
+         * included_object_attributes.
+         *
+         * @var string[]
+         */
+        public $includedObjectAttributes;
+        /**
+         * Required. Only objects with the specified attributes will be scanned.
+         * Defaults to [ALL_SUPPORTED_BUCKETS] if unset.
+         *
+         * @param string[] $includedBucketAttributes
+         */
+        public function setIncludedBucketAttributes($includedBucketAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedBucketAttributes()
+        {
+        }
+        /**
+         * Required. Only objects with the specified attributes will be scanned. If an
+         * object has one of the specified attributes but is inside an excluded
+         * bucket, it will not be scanned. Defaults to [ALL_SUPPORTED_OBJECTS]. A
+         * profile will be created even if no objects match the
+         * included_object_attributes.
+         *
+         * @param string[] $includedObjectAttributes
+         */
+        public function setIncludedObjectAttributes($includedObjectAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedObjectAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudStorageConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludedBucketAttributes()
-    {
-    }
-    /**
-     * Required. Only objects with the specified attributes will be scanned. If an
-     * object has one of the specified attributes but is inside an excluded
-     * bucket, it will not be scanned. Defaults to [ALL_SUPPORTED_OBJECTS]. A
-     * profile will be created even if no objects match the
-     * included_object_attributes.
-     *
-     * @param string[] $includedObjectAttributes
-     */
-    public function setIncludedObjectAttributes($includedObjectAttributes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedObjectAttributes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryCloudStorageConditions extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudStorageConditions
     {
     }
 }

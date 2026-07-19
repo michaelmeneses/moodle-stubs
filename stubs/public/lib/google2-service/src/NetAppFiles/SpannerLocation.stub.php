@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class SpannerLocation extends \Google\Collection
-{
-    protected $collection_key = 'dbName';
-    /**
-     * @var string[]
-     */
-    public $backupName;
-    /**
-     * @var string[]
-     */
-    public $dbName;
-    /**
-     * @param string[]
-     */
-    public function setBackupName($backupName)
+namespace Google\Service\NetAppFiles {
+    class SpannerLocation extends \Google\Collection
     {
+        protected $collection_key = 'dbName';
+        /**
+         * @var string[]
+         */
+        public $backupName;
+        /**
+         * @var string[]
+         */
+        public $dbName;
+        /**
+         * @param string[]
+         */
+        public function setBackupName($backupName)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBackupName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDbName($dbName)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDbName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetAppFiles\SpannerLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDbName($dbName)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDbName()
+    class Google_Service_NetAppFiles_SpannerLocation extends \Google\Service\NetAppFiles\SpannerLocation
     {
     }
 }

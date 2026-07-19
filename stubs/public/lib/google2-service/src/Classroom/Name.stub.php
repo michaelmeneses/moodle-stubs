@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Name extends \Google\Model
-{
-    /**
-     * The user's last name. Read-only.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The user's full name formed by concatenating the first and last name
-     * values. Read-only.
-     *
-     * @var string
-     */
-    public $fullName;
-    /**
-     * The user's first name. Read-only.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * The user's last name. Read-only.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
+namespace Google\Service\Classroom {
+    class Name extends \Google\Model
     {
+        /**
+         * The user's last name. Read-only.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The user's full name formed by concatenating the first and last name
+         * values. Read-only.
+         *
+         * @var string
+         */
+        public $fullName;
+        /**
+         * The user's first name. Read-only.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * The user's last name. Read-only.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The user's full name formed by concatenating the first and last name
+         * values. Read-only.
+         *
+         * @param string $fullName
+         */
+        public function setFullName($fullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullName()
+        {
+        }
+        /**
+         * The user's first name. Read-only.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Name registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The user's full name formed by concatenating the first and last name
-     * values. Read-only.
-     *
-     * @param string $fullName
-     */
-    public function setFullName($fullName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullName()
-    {
-    }
-    /**
-     * The user's first name. Read-only.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
+    class Google_Service_Classroom_Name extends \Google\Service\Classroom\Name
     {
     }
 }

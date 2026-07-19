@@ -21,202 +21,211 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DocumentTab extends \Google\Model
-{
-    protected $bodyType = Body::class;
-    protected $bodyDataType = '';
-    protected $documentStyleType = DocumentStyle::class;
-    protected $documentStyleDataType = '';
-    protected $footersType = Footer::class;
-    protected $footersDataType = 'map';
-    protected $footnotesType = Footnote::class;
-    protected $footnotesDataType = 'map';
-    protected $headersType = Header::class;
-    protected $headersDataType = 'map';
-    protected $inlineObjectsType = InlineObject::class;
-    protected $inlineObjectsDataType = 'map';
-    protected $listsType = DocsList::class;
-    protected $listsDataType = 'map';
-    protected $namedRangesType = NamedRanges::class;
-    protected $namedRangesDataType = 'map';
-    protected $namedStylesType = NamedStyles::class;
-    protected $namedStylesDataType = '';
-    protected $positionedObjectsType = PositionedObject::class;
-    protected $positionedObjectsDataType = 'map';
-    protected $suggestedDocumentStyleChangesType = SuggestedDocumentStyle::class;
-    protected $suggestedDocumentStyleChangesDataType = 'map';
-    protected $suggestedNamedStylesChangesType = SuggestedNamedStyles::class;
-    protected $suggestedNamedStylesChangesDataType = 'map';
-    /**
-     * The main body of the document tab.
-     *
-     * @param Body $body
-     */
-    public function setBody(Body $body)
+namespace Google\Service\Docs {
+    class DocumentTab extends \Google\Model
     {
+        protected $bodyType = Body::class;
+        protected $bodyDataType = '';
+        protected $documentStyleType = DocumentStyle::class;
+        protected $documentStyleDataType = '';
+        protected $footersType = Footer::class;
+        protected $footersDataType = 'map';
+        protected $footnotesType = Footnote::class;
+        protected $footnotesDataType = 'map';
+        protected $headersType = Header::class;
+        protected $headersDataType = 'map';
+        protected $inlineObjectsType = InlineObject::class;
+        protected $inlineObjectsDataType = 'map';
+        protected $listsType = DocsList::class;
+        protected $listsDataType = 'map';
+        protected $namedRangesType = NamedRanges::class;
+        protected $namedRangesDataType = 'map';
+        protected $namedStylesType = NamedStyles::class;
+        protected $namedStylesDataType = '';
+        protected $positionedObjectsType = PositionedObject::class;
+        protected $positionedObjectsDataType = 'map';
+        protected $suggestedDocumentStyleChangesType = SuggestedDocumentStyle::class;
+        protected $suggestedDocumentStyleChangesDataType = 'map';
+        protected $suggestedNamedStylesChangesType = SuggestedNamedStyles::class;
+        protected $suggestedNamedStylesChangesDataType = 'map';
+        /**
+         * The main body of the document tab.
+         *
+         * @param Body $body
+         */
+        public function setBody(Body $body)
+        {
+        }
+        /**
+         * @return Body
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * The style of the document tab.
+         *
+         * @param DocumentStyle $documentStyle
+         */
+        public function setDocumentStyle(DocumentStyle $documentStyle)
+        {
+        }
+        /**
+         * @return DocumentStyle
+         */
+        public function getDocumentStyle()
+        {
+        }
+        /**
+         * The footers in the document tab, keyed by footer ID.
+         *
+         * @param Footer[] $footers
+         */
+        public function setFooters($footers)
+        {
+        }
+        /**
+         * @return Footer[]
+         */
+        public function getFooters()
+        {
+        }
+        /**
+         * The footnotes in the document tab, keyed by footnote ID.
+         *
+         * @param Footnote[] $footnotes
+         */
+        public function setFootnotes($footnotes)
+        {
+        }
+        /**
+         * @return Footnote[]
+         */
+        public function getFootnotes()
+        {
+        }
+        /**
+         * The headers in the document tab, keyed by header ID.
+         *
+         * @param Header[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return Header[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * The inline objects in the document tab, keyed by object ID.
+         *
+         * @param InlineObject[] $inlineObjects
+         */
+        public function setInlineObjects($inlineObjects)
+        {
+        }
+        /**
+         * @return InlineObject[]
+         */
+        public function getInlineObjects()
+        {
+        }
+        /**
+         * The lists in the document tab, keyed by list ID.
+         *
+         * @param DocsList[] $lists
+         */
+        public function setLists($lists)
+        {
+        }
+        /**
+         * @return DocsList[]
+         */
+        public function getLists()
+        {
+        }
+        /**
+         * The named ranges in the document tab, keyed by name.
+         *
+         * @param NamedRanges[] $namedRanges
+         */
+        public function setNamedRanges($namedRanges)
+        {
+        }
+        /**
+         * @return NamedRanges[]
+         */
+        public function getNamedRanges()
+        {
+        }
+        /**
+         * The named styles of the document tab.
+         *
+         * @param NamedStyles $namedStyles
+         */
+        public function setNamedStyles(NamedStyles $namedStyles)
+        {
+        }
+        /**
+         * @return NamedStyles
+         */
+        public function getNamedStyles()
+        {
+        }
+        /**
+         * The positioned objects in the document tab, keyed by object ID.
+         *
+         * @param PositionedObject[] $positionedObjects
+         */
+        public function setPositionedObjects($positionedObjects)
+        {
+        }
+        /**
+         * @return PositionedObject[]
+         */
+        public function getPositionedObjects()
+        {
+        }
+        /**
+         * The suggested changes to the style of the document tab, keyed by suggestion
+         * ID.
+         *
+         * @param SuggestedDocumentStyle[] $suggestedDocumentStyleChanges
+         */
+        public function setSuggestedDocumentStyleChanges($suggestedDocumentStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedDocumentStyle[]
+         */
+        public function getSuggestedDocumentStyleChanges()
+        {
+        }
+        /**
+         * The suggested changes to the named styles of the document tab, keyed by
+         * suggestion ID.
+         *
+         * @param SuggestedNamedStyles[] $suggestedNamedStylesChanges
+         */
+        public function setSuggestedNamedStylesChanges($suggestedNamedStylesChanges)
+        {
+        }
+        /**
+         * @return SuggestedNamedStyles[]
+         */
+        public function getSuggestedNamedStylesChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Body
+     * Runtime class alias of \Google\Service\Docs\DocumentTab registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * The style of the document tab.
-     *
-     * @param DocumentStyle $documentStyle
-     */
-    public function setDocumentStyle(DocumentStyle $documentStyle)
-    {
-    }
-    /**
-     * @return DocumentStyle
-     */
-    public function getDocumentStyle()
-    {
-    }
-    /**
-     * The footers in the document tab, keyed by footer ID.
-     *
-     * @param Footer[] $footers
-     */
-    public function setFooters($footers)
-    {
-    }
-    /**
-     * @return Footer[]
-     */
-    public function getFooters()
-    {
-    }
-    /**
-     * The footnotes in the document tab, keyed by footnote ID.
-     *
-     * @param Footnote[] $footnotes
-     */
-    public function setFootnotes($footnotes)
-    {
-    }
-    /**
-     * @return Footnote[]
-     */
-    public function getFootnotes()
-    {
-    }
-    /**
-     * The headers in the document tab, keyed by header ID.
-     *
-     * @param Header[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return Header[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * The inline objects in the document tab, keyed by object ID.
-     *
-     * @param InlineObject[] $inlineObjects
-     */
-    public function setInlineObjects($inlineObjects)
-    {
-    }
-    /**
-     * @return InlineObject[]
-     */
-    public function getInlineObjects()
-    {
-    }
-    /**
-     * The lists in the document tab, keyed by list ID.
-     *
-     * @param DocsList[] $lists
-     */
-    public function setLists($lists)
-    {
-    }
-    /**
-     * @return DocsList[]
-     */
-    public function getLists()
-    {
-    }
-    /**
-     * The named ranges in the document tab, keyed by name.
-     *
-     * @param NamedRanges[] $namedRanges
-     */
-    public function setNamedRanges($namedRanges)
-    {
-    }
-    /**
-     * @return NamedRanges[]
-     */
-    public function getNamedRanges()
-    {
-    }
-    /**
-     * The named styles of the document tab.
-     *
-     * @param NamedStyles $namedStyles
-     */
-    public function setNamedStyles(NamedStyles $namedStyles)
-    {
-    }
-    /**
-     * @return NamedStyles
-     */
-    public function getNamedStyles()
-    {
-    }
-    /**
-     * The positioned objects in the document tab, keyed by object ID.
-     *
-     * @param PositionedObject[] $positionedObjects
-     */
-    public function setPositionedObjects($positionedObjects)
-    {
-    }
-    /**
-     * @return PositionedObject[]
-     */
-    public function getPositionedObjects()
-    {
-    }
-    /**
-     * The suggested changes to the style of the document tab, keyed by suggestion
-     * ID.
-     *
-     * @param SuggestedDocumentStyle[] $suggestedDocumentStyleChanges
-     */
-    public function setSuggestedDocumentStyleChanges($suggestedDocumentStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedDocumentStyle[]
-     */
-    public function getSuggestedDocumentStyleChanges()
-    {
-    }
-    /**
-     * The suggested changes to the named styles of the document tab, keyed by
-     * suggestion ID.
-     *
-     * @param SuggestedNamedStyles[] $suggestedNamedStylesChanges
-     */
-    public function setSuggestedNamedStylesChanges($suggestedNamedStylesChanges)
-    {
-    }
-    /**
-     * @return SuggestedNamedStyles[]
-     */
-    public function getSuggestedNamedStylesChanges()
+    class Google_Service_Docs_DocumentTab extends \Google\Service\Docs\DocumentTab
     {
     }
 }

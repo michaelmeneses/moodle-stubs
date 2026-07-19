@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class JsonFileFormat extends \Google\Model
-{
-    /**
-     * Unspecified json file compression.
-     */
-    public const COMPRESSION_JSON_COMPRESSION_UNSPECIFIED = 'JSON_COMPRESSION_UNSPECIFIED';
-    /**
-     * Do not compress JSON file.
-     */
-    public const COMPRESSION_NO_COMPRESSION = 'NO_COMPRESSION';
-    /**
-     * Gzip compression.
-     */
-    public const COMPRESSION_GZIP = 'GZIP';
-    /**
-     * Unspecified schema file format.
-     */
-    public const SCHEMA_FILE_FORMAT_SCHEMA_FILE_FORMAT_UNSPECIFIED = 'SCHEMA_FILE_FORMAT_UNSPECIFIED';
-    /**
-     * Do not attach schema file.
-     */
-    public const SCHEMA_FILE_FORMAT_NO_SCHEMA_FILE = 'NO_SCHEMA_FILE';
-    /**
-     * Avro schema format.
-     */
-    public const SCHEMA_FILE_FORMAT_AVRO_SCHEMA_FILE = 'AVRO_SCHEMA_FILE';
-    /**
-     * Compression of the loaded JSON file.
-     *
-     * @var string
-     */
-    public $compression;
-    /**
-     * The schema file format along JSON data files.
-     *
-     * @var string
-     */
-    public $schemaFileFormat;
-    /**
-     * Compression of the loaded JSON file.
-     *
-     * Accepted values: JSON_COMPRESSION_UNSPECIFIED, NO_COMPRESSION, GZIP
-     *
-     * @param self::COMPRESSION_* $compression
-     */
-    public function setCompression($compression)
+namespace Google\Service\Datastream {
+    class JsonFileFormat extends \Google\Model
     {
+        /**
+         * Unspecified json file compression.
+         */
+        public const COMPRESSION_JSON_COMPRESSION_UNSPECIFIED = 'JSON_COMPRESSION_UNSPECIFIED';
+        /**
+         * Do not compress JSON file.
+         */
+        public const COMPRESSION_NO_COMPRESSION = 'NO_COMPRESSION';
+        /**
+         * Gzip compression.
+         */
+        public const COMPRESSION_GZIP = 'GZIP';
+        /**
+         * Unspecified schema file format.
+         */
+        public const SCHEMA_FILE_FORMAT_SCHEMA_FILE_FORMAT_UNSPECIFIED = 'SCHEMA_FILE_FORMAT_UNSPECIFIED';
+        /**
+         * Do not attach schema file.
+         */
+        public const SCHEMA_FILE_FORMAT_NO_SCHEMA_FILE = 'NO_SCHEMA_FILE';
+        /**
+         * Avro schema format.
+         */
+        public const SCHEMA_FILE_FORMAT_AVRO_SCHEMA_FILE = 'AVRO_SCHEMA_FILE';
+        /**
+         * Compression of the loaded JSON file.
+         *
+         * @var string
+         */
+        public $compression;
+        /**
+         * The schema file format along JSON data files.
+         *
+         * @var string
+         */
+        public $schemaFileFormat;
+        /**
+         * Compression of the loaded JSON file.
+         *
+         * Accepted values: JSON_COMPRESSION_UNSPECIFIED, NO_COMPRESSION, GZIP
+         *
+         * @param self::COMPRESSION_* $compression
+         */
+        public function setCompression($compression)
+        {
+        }
+        /**
+         * @return self::COMPRESSION_*
+         */
+        public function getCompression()
+        {
+        }
+        /**
+         * The schema file format along JSON data files.
+         *
+         * Accepted values: SCHEMA_FILE_FORMAT_UNSPECIFIED, NO_SCHEMA_FILE,
+         * AVRO_SCHEMA_FILE
+         *
+         * @param self::SCHEMA_FILE_FORMAT_* $schemaFileFormat
+         */
+        public function setSchemaFileFormat($schemaFileFormat)
+        {
+        }
+        /**
+         * @return self::SCHEMA_FILE_FORMAT_*
+         */
+        public function getSchemaFileFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPRESSION_*
+     * Runtime class alias of \Google\Service\Datastream\JsonFileFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompression()
-    {
-    }
-    /**
-     * The schema file format along JSON data files.
-     *
-     * Accepted values: SCHEMA_FILE_FORMAT_UNSPECIFIED, NO_SCHEMA_FILE,
-     * AVRO_SCHEMA_FILE
-     *
-     * @param self::SCHEMA_FILE_FORMAT_* $schemaFileFormat
-     */
-    public function setSchemaFileFormat($schemaFileFormat)
-    {
-    }
-    /**
-     * @return self::SCHEMA_FILE_FORMAT_*
-     */
-    public function getSchemaFileFormat()
+    class Google_Service_Datastream_JsonFileFormat extends \Google\Service\Datastream\JsonFileFormat
     {
     }
 }

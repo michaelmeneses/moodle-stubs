@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1SettingsAnalysisConfig extends \Google\Model
-{
-    protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1AnnotatorSelector::class;
-    protected $annotatorSelectorDataType = '';
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1SettingsAnalysisConfig extends \Google\Model
+    {
+        protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1AnnotatorSelector::class;
+        protected $annotatorSelectorDataType = '';
+        /**
+         * Percentage of conversations created using Dialogflow runtime integration to
+         * analyze automatically, between [0, 100].
+         *
+         * @var 
+         */
+        public $runtimeIntegrationAnalysisPercentage;
+        /**
+         * Percentage of conversations created using the UploadConversation endpoint
+         * to analyze automatically, between [0, 100].
+         *
+         * @var 
+         */
+        public $uploadConversationAnalysisPercentage;
+        /**
+         * To select the annotators to run and the phrase matchers to use (if any). If
+         * not specified, all annotators will be run.
+         *
+         * @param GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector
+         */
+        public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1AnnotatorSelector
+         */
+        public function getAnnotatorSelector()
+        {
+        }
+        public function setRuntimeIntegrationAnalysisPercentage($runtimeIntegrationAnalysisPercentage)
+        {
+        }
+        public function getRuntimeIntegrationAnalysisPercentage()
+        {
+        }
+        public function setUploadConversationAnalysisPercentage($uploadConversationAnalysisPercentage)
+        {
+        }
+        public function getUploadConversationAnalysisPercentage()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Percentage of conversations created using Dialogflow runtime integration to
-     * analyze automatically, between [0, 100].
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SettingsAnalysisConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $runtimeIntegrationAnalysisPercentage;
-    /**
-     * Percentage of conversations created using the UploadConversation endpoint
-     * to analyze automatically, between [0, 100].
-     *
-     * @var 
-     */
-    public $uploadConversationAnalysisPercentage;
-    /**
-     * To select the annotators to run and the phrase matchers to use (if any). If
-     * not specified, all annotators will be run.
-     *
-     * @param GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector
-     */
-    public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1AnnotatorSelector
-     */
-    public function getAnnotatorSelector()
-    {
-    }
-    public function setRuntimeIntegrationAnalysisPercentage($runtimeIntegrationAnalysisPercentage)
-    {
-    }
-    public function getRuntimeIntegrationAnalysisPercentage()
-    {
-    }
-    public function setUploadConversationAnalysisPercentage($uploadConversationAnalysisPercentage)
-    {
-    }
-    public function getUploadConversationAnalysisPercentage()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1SettingsAnalysisConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SettingsAnalysisConfig
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class BetweenFilter extends \Google\Model
-{
-    protected $fromValueType = NumericValue::class;
-    protected $fromValueDataType = '';
-    protected $toValueType = NumericValue::class;
-    protected $toValueDataType = '';
-    /**
-     * Begins with this number.
-     *
-     * @param NumericValue $fromValue
-     */
-    public function setFromValue(NumericValue $fromValue)
+namespace Google\Service\AnalyticsData {
+    class BetweenFilter extends \Google\Model
     {
+        protected $fromValueType = NumericValue::class;
+        protected $fromValueDataType = '';
+        protected $toValueType = NumericValue::class;
+        protected $toValueDataType = '';
+        /**
+         * Begins with this number.
+         *
+         * @param NumericValue $fromValue
+         */
+        public function setFromValue(NumericValue $fromValue)
+        {
+        }
+        /**
+         * @return NumericValue
+         */
+        public function getFromValue()
+        {
+        }
+        /**
+         * Ends with this number.
+         *
+         * @param NumericValue $toValue
+         */
+        public function setToValue(NumericValue $toValue)
+        {
+        }
+        /**
+         * @return NumericValue
+         */
+        public function getToValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NumericValue
+     * Runtime class alias of \Google\Service\AnalyticsData\BetweenFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromValue()
-    {
-    }
-    /**
-     * Ends with this number.
-     *
-     * @param NumericValue $toValue
-     */
-    public function setToValue(NumericValue $toValue)
-    {
-    }
-    /**
-     * @return NumericValue
-     */
-    public function getToValue()
+    class Google_Service_AnalyticsData_BetweenFilter extends \Google\Service\AnalyticsData\BetweenFilter
     {
     }
 }

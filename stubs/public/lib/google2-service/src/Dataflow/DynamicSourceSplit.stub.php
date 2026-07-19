@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DynamicSourceSplit extends \Google\Model
-{
-    protected $primaryType = DerivedSource::class;
-    protected $primaryDataType = '';
-    protected $residualType = DerivedSource::class;
-    protected $residualDataType = '';
-    /**
-     * Primary part (continued to be processed by worker). Specified relative to
-     * the previously-current source. Becomes current.
-     *
-     * @param DerivedSource $primary
-     */
-    public function setPrimary(DerivedSource $primary)
+namespace Google\Service\Dataflow {
+    class DynamicSourceSplit extends \Google\Model
     {
+        protected $primaryType = DerivedSource::class;
+        protected $primaryDataType = '';
+        protected $residualType = DerivedSource::class;
+        protected $residualDataType = '';
+        /**
+         * Primary part (continued to be processed by worker). Specified relative to
+         * the previously-current source. Becomes current.
+         *
+         * @param DerivedSource $primary
+         */
+        public function setPrimary(DerivedSource $primary)
+        {
+        }
+        /**
+         * @return DerivedSource
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * Residual part (returned to the pool of work). Specified relative to the
+         * previously-current source.
+         *
+         * @param DerivedSource $residual
+         */
+        public function setResidual(DerivedSource $residual)
+        {
+        }
+        /**
+         * @return DerivedSource
+         */
+        public function getResidual()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DerivedSource
+     * Runtime class alias of \Google\Service\Dataflow\DynamicSourceSplit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimary()
-    {
-    }
-    /**
-     * Residual part (returned to the pool of work). Specified relative to the
-     * previously-current source.
-     *
-     * @param DerivedSource $residual
-     */
-    public function setResidual(DerivedSource $residual)
-    {
-    }
-    /**
-     * @return DerivedSource
-     */
-    public function getResidual()
+    class Google_Service_Dataflow_DynamicSourceSplit extends \Google\Service\Dataflow\DynamicSourceSplit
     {
     }
 }

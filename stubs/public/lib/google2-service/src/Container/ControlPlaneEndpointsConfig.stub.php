@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ControlPlaneEndpointsConfig extends \Google\Model
-{
-    protected $dnsEndpointConfigType = DNSEndpointConfig::class;
-    protected $dnsEndpointConfigDataType = '';
-    protected $ipEndpointsConfigType = IPEndpointsConfig::class;
-    protected $ipEndpointsConfigDataType = '';
-    /**
-     * DNS endpoint configuration.
-     *
-     * @param DNSEndpointConfig $dnsEndpointConfig
-     */
-    public function setDnsEndpointConfig(DNSEndpointConfig $dnsEndpointConfig)
+namespace Google\Service\Container {
+    class ControlPlaneEndpointsConfig extends \Google\Model
     {
+        protected $dnsEndpointConfigType = DNSEndpointConfig::class;
+        protected $dnsEndpointConfigDataType = '';
+        protected $ipEndpointsConfigType = IPEndpointsConfig::class;
+        protected $ipEndpointsConfigDataType = '';
+        /**
+         * DNS endpoint configuration.
+         *
+         * @param DNSEndpointConfig $dnsEndpointConfig
+         */
+        public function setDnsEndpointConfig(DNSEndpointConfig $dnsEndpointConfig)
+        {
+        }
+        /**
+         * @return DNSEndpointConfig
+         */
+        public function getDnsEndpointConfig()
+        {
+        }
+        /**
+         * IP endpoints configuration.
+         *
+         * @param IPEndpointsConfig $ipEndpointsConfig
+         */
+        public function setIpEndpointsConfig(IPEndpointsConfig $ipEndpointsConfig)
+        {
+        }
+        /**
+         * @return IPEndpointsConfig
+         */
+        public function getIpEndpointsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DNSEndpointConfig
+     * Runtime class alias of \Google\Service\Container\ControlPlaneEndpointsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsEndpointConfig()
-    {
-    }
-    /**
-     * IP endpoints configuration.
-     *
-     * @param IPEndpointsConfig $ipEndpointsConfig
-     */
-    public function setIpEndpointsConfig(IPEndpointsConfig $ipEndpointsConfig)
-    {
-    }
-    /**
-     * @return IPEndpointsConfig
-     */
-    public function getIpEndpointsConfig()
+    class Google_Service_Container_ControlPlaneEndpointsConfig extends \Google\Service\Container\ControlPlaneEndpointsConfig
     {
     }
 }

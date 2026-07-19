@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainIssueModelLabelStats extends \Google\Model
-{
-    /**
-     * Number of conversations the issue model has analyzed at this point in time.
-     *
-     * @var string
-     */
-    public $analyzedConversationsCount;
-    protected $issueStatsType = GoogleCloudContactcenterinsightsV1mainIssueModelLabelStatsIssueStats::class;
-    protected $issueStatsDataType = 'map';
-    /**
-     * Number of analyzed conversations for which no issue was applicable at this
-     * point in time.
-     *
-     * @var string
-     */
-    public $unclassifiedConversationsCount;
-    /**
-     * Number of conversations the issue model has analyzed at this point in time.
-     *
-     * @param string $analyzedConversationsCount
-     */
-    public function setAnalyzedConversationsCount($analyzedConversationsCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainIssueModelLabelStats extends \Google\Model
     {
+        /**
+         * Number of conversations the issue model has analyzed at this point in time.
+         *
+         * @var string
+         */
+        public $analyzedConversationsCount;
+        protected $issueStatsType = GoogleCloudContactcenterinsightsV1mainIssueModelLabelStatsIssueStats::class;
+        protected $issueStatsDataType = 'map';
+        /**
+         * Number of analyzed conversations for which no issue was applicable at this
+         * point in time.
+         *
+         * @var string
+         */
+        public $unclassifiedConversationsCount;
+        /**
+         * Number of conversations the issue model has analyzed at this point in time.
+         *
+         * @param string $analyzedConversationsCount
+         */
+        public function setAnalyzedConversationsCount($analyzedConversationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyzedConversationsCount()
+        {
+        }
+        /**
+         * Statistics on each issue. Key is the issue's resource name.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainIssueModelLabelStatsIssueStats[] $issueStats
+         */
+        public function setIssueStats($issueStats)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainIssueModelLabelStatsIssueStats[]
+         */
+        public function getIssueStats()
+        {
+        }
+        /**
+         * Number of analyzed conversations for which no issue was applicable at this
+         * point in time.
+         *
+         * @param string $unclassifiedConversationsCount
+         */
+        public function setUnclassifiedConversationsCount($unclassifiedConversationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnclassifiedConversationsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssueModelLabelStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyzedConversationsCount()
-    {
-    }
-    /**
-     * Statistics on each issue. Key is the issue's resource name.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainIssueModelLabelStatsIssueStats[] $issueStats
-     */
-    public function setIssueStats($issueStats)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainIssueModelLabelStatsIssueStats[]
-     */
-    public function getIssueStats()
-    {
-    }
-    /**
-     * Number of analyzed conversations for which no issue was applicable at this
-     * point in time.
-     *
-     * @param string $unclassifiedConversationsCount
-     */
-    public function setUnclassifiedConversationsCount($unclassifiedConversationsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnclassifiedConversationsCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainIssueModelLabelStats extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssueModelLabelStats
     {
     }
 }

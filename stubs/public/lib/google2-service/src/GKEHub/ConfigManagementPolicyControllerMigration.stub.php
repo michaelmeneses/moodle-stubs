@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementPolicyControllerMigration extends \Google\Model
-{
-    /**
-     * Unknown state of migration.
-     */
-    public const STAGE_STAGE_UNSPECIFIED = 'STAGE_UNSPECIFIED';
-    /**
-     * ACM Hub/Operator manages policycontroller. No migration yet completed.
-     */
-    public const STAGE_ACM_MANAGED = 'ACM_MANAGED';
-    /**
-     * All migrations steps complete; Poco Hub now manages policycontroller.
-     */
-    public const STAGE_POCO_MANAGED = 'POCO_MANAGED';
-    /**
-     * Last time this membership spec was copied to PoCo feature.
-     *
-     * @var string
-     */
-    public $copyTime;
-    /**
-     * Stage of the migration.
-     *
-     * @var string
-     */
-    public $stage;
-    /**
-     * Last time this membership spec was copied to PoCo feature.
-     *
-     * @param string $copyTime
-     */
-    public function setCopyTime($copyTime)
+namespace Google\Service\GKEHub {
+    class ConfigManagementPolicyControllerMigration extends \Google\Model
     {
+        /**
+         * Unknown state of migration.
+         */
+        public const STAGE_STAGE_UNSPECIFIED = 'STAGE_UNSPECIFIED';
+        /**
+         * ACM Hub/Operator manages policycontroller. No migration yet completed.
+         */
+        public const STAGE_ACM_MANAGED = 'ACM_MANAGED';
+        /**
+         * All migrations steps complete; Poco Hub now manages policycontroller.
+         */
+        public const STAGE_POCO_MANAGED = 'POCO_MANAGED';
+        /**
+         * Last time this membership spec was copied to PoCo feature.
+         *
+         * @var string
+         */
+        public $copyTime;
+        /**
+         * Stage of the migration.
+         *
+         * @var string
+         */
+        public $stage;
+        /**
+         * Last time this membership spec was copied to PoCo feature.
+         *
+         * @param string $copyTime
+         */
+        public function setCopyTime($copyTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCopyTime()
+        {
+        }
+        /**
+         * Stage of the migration.
+         *
+         * Accepted values: STAGE_UNSPECIFIED, ACM_MANAGED, POCO_MANAGED
+         *
+         * @param self::STAGE_* $stage
+         */
+        public function setStage($stage)
+        {
+        }
+        /**
+         * @return self::STAGE_*
+         */
+        public function getStage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementPolicyControllerMigration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCopyTime()
-    {
-    }
-    /**
-     * Stage of the migration.
-     *
-     * Accepted values: STAGE_UNSPECIFIED, ACM_MANAGED, POCO_MANAGED
-     *
-     * @param self::STAGE_* $stage
-     */
-    public function setStage($stage)
-    {
-    }
-    /**
-     * @return self::STAGE_*
-     */
-    public function getStage()
+    class Google_Service_GKEHub_ConfigManagementPolicyControllerMigration extends \Google\Service\GKEHub\ConfigManagementPolicyControllerMigration
     {
     }
 }

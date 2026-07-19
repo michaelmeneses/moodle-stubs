@@ -21,70 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "promooffer" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $promooffer = $booksService->promooffer;
- *  </code>
- */
-class Promooffer extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\BooksEmpty;
+    use Google\Service\Books\Offers;
     /**
-     * Accepts the promo offer. (promooffer.accept)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string androidId device android_id
-     * @opt_param string device device device
-     * @opt_param string manufacturer device manufacturer
-     * @opt_param string model device model
-     * @opt_param string offerId
-     * @opt_param string product device product
-     * @opt_param string serial device serial
-     * @opt_param string volumeId Volume id to exercise the offer
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * The "promooffer" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $promooffer = $booksService->promooffer;
+     *  </code>
      */
-    public function accept($optParams = [])
+    class Promooffer extends \Google\Service\Resource
     {
+        /**
+         * Accepts the promo offer. (promooffer.accept)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string androidId device android_id
+         * @opt_param string device device device
+         * @opt_param string manufacturer device manufacturer
+         * @opt_param string model device model
+         * @opt_param string offerId
+         * @opt_param string product device product
+         * @opt_param string serial device serial
+         * @opt_param string volumeId Volume id to exercise the offer
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function accept($optParams = [])
+        {
+        }
+        /**
+         * Marks the promo offer as dismissed. (promooffer.dismiss)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string androidId device android_id
+         * @opt_param string device device device
+         * @opt_param string manufacturer device manufacturer
+         * @opt_param string model device model
+         * @opt_param string offerId Offer to dimiss
+         * @opt_param string product device product
+         * @opt_param string serial device serial
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function dismiss($optParams = [])
+        {
+        }
+        /**
+         * Returns a list of promo offers available to the user (promooffer.get)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string androidId device android_id
+         * @opt_param string device device device
+         * @opt_param string manufacturer device manufacturer
+         * @opt_param string model device model
+         * @opt_param string product device product
+         * @opt_param string serial device serial
+         * @return Offers
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Marks the promo offer as dismissed. (promooffer.dismiss)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string androidId device android_id
-     * @opt_param string device device device
-     * @opt_param string manufacturer device manufacturer
-     * @opt_param string model device model
-     * @opt_param string offerId Offer to dimiss
-     * @opt_param string product device product
-     * @opt_param string serial device serial
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\Promooffer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function dismiss($optParams = [])
-    {
-    }
-    /**
-     * Returns a list of promo offers available to the user (promooffer.get)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string androidId device android_id
-     * @opt_param string device device device
-     * @opt_param string manufacturer device manufacturer
-     * @opt_param string model device model
-     * @opt_param string product device product
-     * @opt_param string serial device serial
-     * @return Offers
-     * @throws \Google\Service\Exception
-     */
-    public function get($optParams = [])
+    class Google_Service_Books_Resource_Promooffer extends \Google\Service\Books\Resource\Promooffer
     {
     }
 }

@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager\Resource;
-
-/**
- * The "discoveredprofiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
- *   $discoveredprofiles = $workloadmanagerService->projects_locations_discoveredprofiles;
- *  </code>
- */
-class ProjectsLocationsDiscoveredprofiles extends \Google\Service\Resource
-{
+namespace Google\Service\WorkloadManager\Resource {
+    use Google\Service\WorkloadManager\ListDiscoveredProfilesResponse;
     /**
-     * List discovered workload profiles
-     * (discoveredprofiles.listProjectsLocationsDiscoveredprofiles)
-     *
-     * @param string $parent Required. Parent value for
-     * ListDiscoveredProfilesRequest
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListDiscoveredProfilesResponse
-     * @throws \Google\Service\Exception
+     * The "discoveredprofiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
+     *   $discoveredprofiles = $workloadmanagerService->projects_locations_discoveredprofiles;
+     *  </code>
      */
-    public function listProjectsLocationsDiscoveredprofiles($parent, $optParams = [])
+    class ProjectsLocationsDiscoveredprofiles extends \Google\Service\Resource
+    {
+        /**
+         * List discovered workload profiles
+         * (discoveredprofiles.listProjectsLocationsDiscoveredprofiles)
+         *
+         * @param string $parent Required. Parent value for
+         * ListDiscoveredProfilesRequest
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListDiscoveredProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDiscoveredprofiles($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkloadManager\Resource\ProjectsLocationsDiscoveredprofiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkloadManager_Resource_ProjectsLocationsDiscoveredprofiles extends \Google\Service\WorkloadManager\Resource\ProjectsLocationsDiscoveredprofiles
     {
     }
 }

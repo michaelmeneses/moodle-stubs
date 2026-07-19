@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class AccessConfig extends \Google\Model
-{
-    /**
-     * An external IP address associated with this instance. Specify an unused
-     * static external IP address available to the project or leave this field
-     * undefined to use an IP from a shared ephemeral IP address pool. If you
-     * specify a static external IP address, it must live in the same region as
-     * the zone of the instance.
-     *
-     * @var string
-     */
-    public $externalIp;
-    /**
-     * An external IP address associated with this instance. Specify an unused
-     * static external IP address available to the project or leave this field
-     * undefined to use an IP from a shared ephemeral IP address pool. If you
-     * specify a static external IP address, it must live in the same region as
-     * the zone of the instance.
-     *
-     * @param string $externalIp
-     */
-    public function setExternalIp($externalIp)
+namespace Google\Service\AIPlatformNotebooks {
+    class AccessConfig extends \Google\Model
     {
+        /**
+         * An external IP address associated with this instance. Specify an unused
+         * static external IP address available to the project or leave this field
+         * undefined to use an IP from a shared ephemeral IP address pool. If you
+         * specify a static external IP address, it must live in the same region as
+         * the zone of the instance.
+         *
+         * @var string
+         */
+        public $externalIp;
+        /**
+         * An external IP address associated with this instance. Specify an unused
+         * static external IP address available to the project or leave this field
+         * undefined to use an IP from a shared ephemeral IP address pool. If you
+         * specify a static external IP address, it must live in the same region as
+         * the zone of the instance.
+         *
+         * @param string $externalIp
+         */
+        public function setExternalIp($externalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\AccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalIp()
+    class Google_Service_AIPlatformNotebooks_AccessConfig extends \Google\Service\AIPlatformNotebooks\AccessConfig
     {
     }
 }

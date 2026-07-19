@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class ReportRow extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * @var string[]
-     */
-    public $dimensions;
-    protected $metricsType = DateRangeValues::class;
-    protected $metricsDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\AnalyticsReporting {
+    class ReportRow extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * @var string[]
+         */
+        public $dimensions;
+        protected $metricsType = DateRangeValues::class;
+        protected $metricsDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * @param DateRangeValues[]
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return DateRangeValues[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\ReportRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * @param DateRangeValues[]
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return DateRangeValues[]
-     */
-    public function getMetrics()
+    class Google_Service_AnalyticsReporting_ReportRow extends \Google\Service\AnalyticsReporting\ReportRow
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SourceTextFilter extends \Google\Model
-{
-    /**
-     * Optional. The filter will match columns with length smaller than or equal
-     * to this number.
-     *
-     * @var string
-     */
-    public $sourceMaxLengthFilter;
-    /**
-     * Optional. The filter will match columns with length greater than or equal
-     * to this number.
-     *
-     * @var string
-     */
-    public $sourceMinLengthFilter;
-    /**
-     * Optional. The filter will match columns with length smaller than or equal
-     * to this number.
-     *
-     * @param string $sourceMaxLengthFilter
-     */
-    public function setSourceMaxLengthFilter($sourceMaxLengthFilter)
+namespace Google\Service\DatabaseMigrationService {
+    class SourceTextFilter extends \Google\Model
     {
+        /**
+         * Optional. The filter will match columns with length smaller than or equal
+         * to this number.
+         *
+         * @var string
+         */
+        public $sourceMaxLengthFilter;
+        /**
+         * Optional. The filter will match columns with length greater than or equal
+         * to this number.
+         *
+         * @var string
+         */
+        public $sourceMinLengthFilter;
+        /**
+         * Optional. The filter will match columns with length smaller than or equal
+         * to this number.
+         *
+         * @param string $sourceMaxLengthFilter
+         */
+        public function setSourceMaxLengthFilter($sourceMaxLengthFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceMaxLengthFilter()
+        {
+        }
+        /**
+         * Optional. The filter will match columns with length greater than or equal
+         * to this number.
+         *
+         * @param string $sourceMinLengthFilter
+         */
+        public function setSourceMinLengthFilter($sourceMinLengthFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceMinLengthFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SourceTextFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceMaxLengthFilter()
-    {
-    }
-    /**
-     * Optional. The filter will match columns with length greater than or equal
-     * to this number.
-     *
-     * @param string $sourceMinLengthFilter
-     */
-    public function setSourceMinLengthFilter($sourceMinLengthFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceMinLengthFilter()
+    class Google_Service_DatabaseMigrationService_SourceTextFilter extends \Google\Service\DatabaseMigrationService\SourceTextFilter
     {
     }
 }

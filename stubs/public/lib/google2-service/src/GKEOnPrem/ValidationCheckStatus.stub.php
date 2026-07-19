@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class ValidationCheckStatus extends \Google\Collection
-{
-    protected $collection_key = 'result';
-    protected $resultType = ValidationCheckResult::class;
-    protected $resultDataType = 'array';
-    /**
-     * Individual checks which failed as part of the Preflight check execution.
-     *
-     * @param ValidationCheckResult[] $result
-     */
-    public function setResult($result)
+namespace Google\Service\GKEOnPrem {
+    class ValidationCheckStatus extends \Google\Collection
     {
+        protected $collection_key = 'result';
+        protected $resultType = ValidationCheckResult::class;
+        protected $resultDataType = 'array';
+        /**
+         * Individual checks which failed as part of the Preflight check execution.
+         *
+         * @param ValidationCheckResult[] $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return ValidationCheckResult[]
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ValidationCheckResult[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\ValidationCheckStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_GKEOnPrem_ValidationCheckStatus extends \Google\Service\GKEOnPrem\ValidationCheckStatus
     {
     }
 }

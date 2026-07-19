@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListExportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'exports';
-    protected $exportsType = GoogleCloudApigeeV1Export::class;
-    protected $exportsDataType = 'array';
-    /**
-     * Details of the export jobs.
-     *
-     * @param GoogleCloudApigeeV1Export[] $exports
-     */
-    public function setExports($exports)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListExportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'exports';
+        protected $exportsType = GoogleCloudApigeeV1Export::class;
+        protected $exportsDataType = 'array';
+        /**
+         * Details of the export jobs.
+         *
+         * @param GoogleCloudApigeeV1Export[] $exports
+         */
+        public function setExports($exports)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Export[]
+         */
+        public function getExports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Export[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListExportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExports()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListExportsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListExportsResponse
     {
     }
 }

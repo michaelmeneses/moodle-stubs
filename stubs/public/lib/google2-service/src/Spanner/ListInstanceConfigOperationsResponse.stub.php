@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListInstanceConfigOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstanceConfigOperations
-     * call to fetch more of the matching metadata.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $operationsType = Operation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstanceConfigOperations
-     * call to fetch more of the matching metadata.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Spanner {
+    class ListInstanceConfigOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstanceConfigOperations
+         * call to fetch more of the matching metadata.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $operationsType = Operation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstanceConfigOperations
+         * call to fetch more of the matching metadata.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of matching instance configuration long-running operations. Each
+         * operation's name will be prefixed by the name of the instance
+         * configuration. The operation's metadata field type `metadata.type_url`
+         * describes the type of the metadata.
+         *
+         * @param Operation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return Operation[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ListInstanceConfigOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of matching instance configuration long-running operations. Each
-     * operation's name will be prefixed by the name of the instance
-     * configuration. The operation's metadata field type `metadata.type_url`
-     * describes the type of the metadata.
-     *
-     * @param Operation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return Operation[]
-     */
-    public function getOperations()
+    class Google_Service_Spanner_ListInstanceConfigOperationsResponse extends \Google\Service\Spanner\ListInstanceConfigOperationsResponse
     {
     }
 }

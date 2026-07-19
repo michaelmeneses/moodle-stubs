@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeGroupsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'creativeGroups';
-    protected $creativeGroupsType = CreativeGroup::class;
-    protected $creativeGroupsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeGroupsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Creative group collection.
-     *
-     * @param CreativeGroup[] $creativeGroups
-     */
-    public function setCreativeGroups($creativeGroups)
+namespace Google\Service\Dfareporting {
+    class CreativeGroupsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'creativeGroups';
+        protected $creativeGroupsType = CreativeGroup::class;
+        protected $creativeGroupsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeGroupsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Creative group collection.
+         *
+         * @param CreativeGroup[] $creativeGroups
+         */
+        public function setCreativeGroups($creativeGroups)
+        {
+        }
+        /**
+         * @return CreativeGroup[]
+         */
+        public function getCreativeGroups()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeGroupsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreativeGroup[]
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeGroupsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeGroups()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeGroupsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_CreativeGroupsListResponse extends \Google\Service\Dfareporting\CreativeGroupsListResponse
     {
     }
 }

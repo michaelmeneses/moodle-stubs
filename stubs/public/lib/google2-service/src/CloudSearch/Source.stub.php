@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Source extends \Google\Model
-{
-    public const PREDEFINED_SOURCE_NONE = 'NONE';
-    /**
-     * Suggests queries issued by the user in the past. Only valid when used with
-     * the suggest API. Ignored when used in the query API.
-     */
-    public const PREDEFINED_SOURCE_QUERY_HISTORY = 'QUERY_HISTORY';
-    /**
-     * Suggests people in the organization. Only valid when used with the suggest
-     * API. Results in an error when used in the query API.
-     */
-    public const PREDEFINED_SOURCE_PERSON = 'PERSON';
-    public const PREDEFINED_SOURCE_GOOGLE_DRIVE = 'GOOGLE_DRIVE';
-    public const PREDEFINED_SOURCE_GOOGLE_GMAIL = 'GOOGLE_GMAIL';
-    public const PREDEFINED_SOURCE_GOOGLE_SITES = 'GOOGLE_SITES';
-    public const PREDEFINED_SOURCE_GOOGLE_GROUPS = 'GOOGLE_GROUPS';
-    public const PREDEFINED_SOURCE_GOOGLE_CALENDAR = 'GOOGLE_CALENDAR';
-    public const PREDEFINED_SOURCE_GOOGLE_KEEP = 'GOOGLE_KEEP';
-    /**
-     * Source name for content indexed by the Indexing API.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Predefined content source for Google Apps.
-     *
-     * @var string
-     */
-    public $predefinedSource;
-    /**
-     * Source name for content indexed by the Indexing API.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudSearch {
+    class Source extends \Google\Model
     {
+        public const PREDEFINED_SOURCE_NONE = 'NONE';
+        /**
+         * Suggests queries issued by the user in the past. Only valid when used with
+         * the suggest API. Ignored when used in the query API.
+         */
+        public const PREDEFINED_SOURCE_QUERY_HISTORY = 'QUERY_HISTORY';
+        /**
+         * Suggests people in the organization. Only valid when used with the suggest
+         * API. Results in an error when used in the query API.
+         */
+        public const PREDEFINED_SOURCE_PERSON = 'PERSON';
+        public const PREDEFINED_SOURCE_GOOGLE_DRIVE = 'GOOGLE_DRIVE';
+        public const PREDEFINED_SOURCE_GOOGLE_GMAIL = 'GOOGLE_GMAIL';
+        public const PREDEFINED_SOURCE_GOOGLE_SITES = 'GOOGLE_SITES';
+        public const PREDEFINED_SOURCE_GOOGLE_GROUPS = 'GOOGLE_GROUPS';
+        public const PREDEFINED_SOURCE_GOOGLE_CALENDAR = 'GOOGLE_CALENDAR';
+        public const PREDEFINED_SOURCE_GOOGLE_KEEP = 'GOOGLE_KEEP';
+        /**
+         * Source name for content indexed by the Indexing API.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Predefined content source for Google Apps.
+         *
+         * @var string
+         */
+        public $predefinedSource;
+        /**
+         * Source name for content indexed by the Indexing API.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Predefined content source for Google Apps.
+         *
+         * Accepted values: NONE, QUERY_HISTORY, PERSON, GOOGLE_DRIVE, GOOGLE_GMAIL,
+         * GOOGLE_SITES, GOOGLE_GROUPS, GOOGLE_CALENDAR, GOOGLE_KEEP
+         *
+         * @param self::PREDEFINED_SOURCE_* $predefinedSource
+         */
+        public function setPredefinedSource($predefinedSource)
+        {
+        }
+        /**
+         * @return self::PREDEFINED_SOURCE_*
+         */
+        public function getPredefinedSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Predefined content source for Google Apps.
-     *
-     * Accepted values: NONE, QUERY_HISTORY, PERSON, GOOGLE_DRIVE, GOOGLE_GMAIL,
-     * GOOGLE_SITES, GOOGLE_GROUPS, GOOGLE_CALENDAR, GOOGLE_KEEP
-     *
-     * @param self::PREDEFINED_SOURCE_* $predefinedSource
-     */
-    public function setPredefinedSource($predefinedSource)
-    {
-    }
-    /**
-     * @return self::PREDEFINED_SOURCE_*
-     */
-    public function getPredefinedSource()
+    class Google_Service_CloudSearch_Source extends \Google\Service\CloudSearch\Source
     {
     }
 }

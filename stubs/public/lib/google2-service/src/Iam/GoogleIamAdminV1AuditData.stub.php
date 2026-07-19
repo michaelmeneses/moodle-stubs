@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamAdminV1AuditData extends \Google\Model
-{
-    protected $permissionDeltaType = GoogleIamAdminV1AuditDataPermissionDelta::class;
-    protected $permissionDeltaDataType = '';
-    /**
-     * The permission_delta when when creating or updating a Role.
-     *
-     * @param GoogleIamAdminV1AuditDataPermissionDelta $permissionDelta
-     */
-    public function setPermissionDelta(GoogleIamAdminV1AuditDataPermissionDelta $permissionDelta)
+namespace Google\Service\Iam {
+    class GoogleIamAdminV1AuditData extends \Google\Model
     {
+        protected $permissionDeltaType = GoogleIamAdminV1AuditDataPermissionDelta::class;
+        protected $permissionDeltaDataType = '';
+        /**
+         * The permission_delta when when creating or updating a Role.
+         *
+         * @param GoogleIamAdminV1AuditDataPermissionDelta $permissionDelta
+         */
+        public function setPermissionDelta(GoogleIamAdminV1AuditDataPermissionDelta $permissionDelta)
+        {
+        }
+        /**
+         * @return GoogleIamAdminV1AuditDataPermissionDelta
+         */
+        public function getPermissionDelta()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamAdminV1AuditDataPermissionDelta
+     * Runtime class alias of \Google\Service\Iam\GoogleIamAdminV1AuditData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissionDelta()
+    class Google_Service_Iam_GoogleIamAdminV1AuditData extends \Google\Service\Iam\GoogleIamAdminV1AuditData
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListWorkerPoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workerPools';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workerPoolsType = WorkerPool::class;
-    protected $workerPoolsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudBuild {
+    class ListWorkerPoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workerPools';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workerPoolsType = WorkerPool::class;
+        protected $workerPoolsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param WorkerPool[]
+         */
+        public function setWorkerPools($workerPools)
+        {
+        }
+        /**
+         * @return WorkerPool[]
+         */
+        public function getWorkerPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ListWorkerPoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param WorkerPool[]
-     */
-    public function setWorkerPools($workerPools)
-    {
-    }
-    /**
-     * @return WorkerPool[]
-     */
-    public function getWorkerPools()
+    class Google_Service_CloudBuild_ListWorkerPoolsResponse extends \Google\Service\CloudBuild\ListWorkerPoolsResponse
     {
     }
 }

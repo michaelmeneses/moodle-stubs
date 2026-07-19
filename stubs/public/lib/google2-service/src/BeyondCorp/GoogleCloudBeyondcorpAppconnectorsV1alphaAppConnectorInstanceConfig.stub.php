@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig extends \Google\Model
-{
-    protected $imageConfigType = GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig::class;
-    protected $imageConfigDataType = '';
-    /**
-     * @var array[]
-     */
-    public $instanceConfig;
-    protected $notificationConfigType = GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig::class;
-    protected $notificationConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $sequenceNumber;
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig
-     */
-    public function setImageConfig(GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig $imageConfig)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig extends \Google\Model
     {
+        protected $imageConfigType = GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig::class;
+        protected $imageConfigDataType = '';
+        /**
+         * @var array[]
+         */
+        public $instanceConfig;
+        protected $notificationConfigType = GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig::class;
+        protected $notificationConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $sequenceNumber;
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig
+         */
+        public function setImageConfig(GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig $imageConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig
+         */
+        public function getImageConfig()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setInstanceConfig($instanceConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInstanceConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig
+         */
+        public function setNotificationConfig(GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig $notificationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig
+         */
+        public function getNotificationConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSequenceNumber($sequenceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSequenceNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaImageConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageConfig()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setInstanceConfig($instanceConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInstanceConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig
-     */
-    public function setNotificationConfig(GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig $notificationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig
-     */
-    public function getNotificationConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSequenceNumber($sequenceNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSequenceNumber()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorInstanceConfig
     {
     }
 }

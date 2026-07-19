@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class ArtifactConfig extends \Google\Model
-{
-    protected $googleArtifactAnalysisType = GoogleArtifactAnalysis::class;
-    protected $googleArtifactAnalysisDataType = '';
-    protected $googleArtifactRegistryType = GoogleArtifactRegistry::class;
-    protected $googleArtifactRegistryDataType = '';
-    /**
-     * Required. Immutable. The URI of the artifact that is deployed. e.g. `us-
-     * docker.pkg.dev/my-project/my-repo/image`. The URI does not include the tag
-     * / digest because it captures a lineage of artifacts.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional. Set if the artifact metadata is stored in Artifact analysis.
-     *
-     * @param GoogleArtifactAnalysis $googleArtifactAnalysis
-     */
-    public function setGoogleArtifactAnalysis(GoogleArtifactAnalysis $googleArtifactAnalysis)
+namespace Google\Service\DeveloperConnect {
+    class ArtifactConfig extends \Google\Model
     {
+        protected $googleArtifactAnalysisType = GoogleArtifactAnalysis::class;
+        protected $googleArtifactAnalysisDataType = '';
+        protected $googleArtifactRegistryType = GoogleArtifactRegistry::class;
+        protected $googleArtifactRegistryDataType = '';
+        /**
+         * Required. Immutable. The URI of the artifact that is deployed. e.g. `us-
+         * docker.pkg.dev/my-project/my-repo/image`. The URI does not include the tag
+         * / digest because it captures a lineage of artifacts.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional. Set if the artifact metadata is stored in Artifact analysis.
+         *
+         * @param GoogleArtifactAnalysis $googleArtifactAnalysis
+         */
+        public function setGoogleArtifactAnalysis(GoogleArtifactAnalysis $googleArtifactAnalysis)
+        {
+        }
+        /**
+         * @return GoogleArtifactAnalysis
+         */
+        public function getGoogleArtifactAnalysis()
+        {
+        }
+        /**
+         * Optional. Set if the artifact is stored in Artifact registry.
+         *
+         * @param GoogleArtifactRegistry $googleArtifactRegistry
+         */
+        public function setGoogleArtifactRegistry(GoogleArtifactRegistry $googleArtifactRegistry)
+        {
+        }
+        /**
+         * @return GoogleArtifactRegistry
+         */
+        public function getGoogleArtifactRegistry()
+        {
+        }
+        /**
+         * Required. Immutable. The URI of the artifact that is deployed. e.g. `us-
+         * docker.pkg.dev/my-project/my-repo/image`. The URI does not include the tag
+         * / digest because it captures a lineage of artifacts.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleArtifactAnalysis
+     * Runtime class alias of \Google\Service\DeveloperConnect\ArtifactConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleArtifactAnalysis()
-    {
-    }
-    /**
-     * Optional. Set if the artifact is stored in Artifact registry.
-     *
-     * @param GoogleArtifactRegistry $googleArtifactRegistry
-     */
-    public function setGoogleArtifactRegistry(GoogleArtifactRegistry $googleArtifactRegistry)
-    {
-    }
-    /**
-     * @return GoogleArtifactRegistry
-     */
-    public function getGoogleArtifactRegistry()
-    {
-    }
-    /**
-     * Required. Immutable. The URI of the artifact that is deployed. e.g. `us-
-     * docker.pkg.dev/my-project/my-repo/image`. The URI does not include the tag
-     * / digest because it captures a lineage of artifacts.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DeveloperConnect_ArtifactConfig extends \Google\Service\DeveloperConnect\ArtifactConfig
     {
     }
 }

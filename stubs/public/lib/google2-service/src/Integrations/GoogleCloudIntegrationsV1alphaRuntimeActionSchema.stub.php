@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaRuntimeActionSchema extends \Google\Model
-{
-    /**
-     * Name of the action.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Input parameter schema for the action.
-     *
-     * @var string
-     */
-    public $inputSchema;
-    /**
-     * Output parameter schema for the action.
-     *
-     * @var string
-     */
-    public $outputSchema;
-    /**
-     * Name of the action.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaRuntimeActionSchema extends \Google\Model
     {
+        /**
+         * Name of the action.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Input parameter schema for the action.
+         *
+         * @var string
+         */
+        public $inputSchema;
+        /**
+         * Output parameter schema for the action.
+         *
+         * @var string
+         */
+        public $outputSchema;
+        /**
+         * Name of the action.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Input parameter schema for the action.
+         *
+         * @param string $inputSchema
+         */
+        public function setInputSchema($inputSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputSchema()
+        {
+        }
+        /**
+         * Output parameter schema for the action.
+         *
+         * @param string $outputSchema
+         */
+        public function setOutputSchema($outputSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaRuntimeActionSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Input parameter schema for the action.
-     *
-     * @param string $inputSchema
-     */
-    public function setInputSchema($inputSchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputSchema()
-    {
-    }
-    /**
-     * Output parameter schema for the action.
-     *
-     * @param string $outputSchema
-     */
-    public function setOutputSchema($outputSchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputSchema()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaRuntimeActionSchema extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaRuntimeActionSchema
     {
     }
 }

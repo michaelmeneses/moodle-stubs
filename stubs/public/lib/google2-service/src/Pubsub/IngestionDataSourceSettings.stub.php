@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class IngestionDataSourceSettings extends \Google\Model
-{
-    protected $awsKinesisType = AwsKinesis::class;
-    protected $awsKinesisDataType = '';
-    protected $awsMskType = AwsMsk::class;
-    protected $awsMskDataType = '';
-    protected $azureEventHubsType = AzureEventHubs::class;
-    protected $azureEventHubsDataType = '';
-    protected $cloudStorageType = CloudStorage::class;
-    protected $cloudStorageDataType = '';
-    protected $confluentCloudType = ConfluentCloud::class;
-    protected $confluentCloudDataType = '';
-    protected $platformLogsSettingsType = PlatformLogsSettings::class;
-    protected $platformLogsSettingsDataType = '';
-    /**
-     * Optional. Amazon Kinesis Data Streams.
-     *
-     * @param AwsKinesis $awsKinesis
-     */
-    public function setAwsKinesis(AwsKinesis $awsKinesis)
+namespace Google\Service\Pubsub {
+    class IngestionDataSourceSettings extends \Google\Model
     {
+        protected $awsKinesisType = AwsKinesis::class;
+        protected $awsKinesisDataType = '';
+        protected $awsMskType = AwsMsk::class;
+        protected $awsMskDataType = '';
+        protected $azureEventHubsType = AzureEventHubs::class;
+        protected $azureEventHubsDataType = '';
+        protected $cloudStorageType = CloudStorage::class;
+        protected $cloudStorageDataType = '';
+        protected $confluentCloudType = ConfluentCloud::class;
+        protected $confluentCloudDataType = '';
+        protected $platformLogsSettingsType = PlatformLogsSettings::class;
+        protected $platformLogsSettingsDataType = '';
+        /**
+         * Optional. Amazon Kinesis Data Streams.
+         *
+         * @param AwsKinesis $awsKinesis
+         */
+        public function setAwsKinesis(AwsKinesis $awsKinesis)
+        {
+        }
+        /**
+         * @return AwsKinesis
+         */
+        public function getAwsKinesis()
+        {
+        }
+        /**
+         * Optional. Amazon MSK.
+         *
+         * @param AwsMsk $awsMsk
+         */
+        public function setAwsMsk(AwsMsk $awsMsk)
+        {
+        }
+        /**
+         * @return AwsMsk
+         */
+        public function getAwsMsk()
+        {
+        }
+        /**
+         * Optional. Azure Event Hubs.
+         *
+         * @param AzureEventHubs $azureEventHubs
+         */
+        public function setAzureEventHubs(AzureEventHubs $azureEventHubs)
+        {
+        }
+        /**
+         * @return AzureEventHubs
+         */
+        public function getAzureEventHubs()
+        {
+        }
+        /**
+         * Optional. Cloud Storage.
+         *
+         * @param CloudStorage $cloudStorage
+         */
+        public function setCloudStorage(CloudStorage $cloudStorage)
+        {
+        }
+        /**
+         * @return CloudStorage
+         */
+        public function getCloudStorage()
+        {
+        }
+        /**
+         * Optional. Confluent Cloud.
+         *
+         * @param ConfluentCloud $confluentCloud
+         */
+        public function setConfluentCloud(ConfluentCloud $confluentCloud)
+        {
+        }
+        /**
+         * @return ConfluentCloud
+         */
+        public function getConfluentCloud()
+        {
+        }
+        /**
+         * Optional. Platform Logs settings. If unset, no Platform Logs will be
+         * generated.
+         *
+         * @param PlatformLogsSettings $platformLogsSettings
+         */
+        public function setPlatformLogsSettings(PlatformLogsSettings $platformLogsSettings)
+        {
+        }
+        /**
+         * @return PlatformLogsSettings
+         */
+        public function getPlatformLogsSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsKinesis
+     * Runtime class alias of \Google\Service\Pubsub\IngestionDataSourceSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsKinesis()
-    {
-    }
-    /**
-     * Optional. Amazon MSK.
-     *
-     * @param AwsMsk $awsMsk
-     */
-    public function setAwsMsk(AwsMsk $awsMsk)
-    {
-    }
-    /**
-     * @return AwsMsk
-     */
-    public function getAwsMsk()
-    {
-    }
-    /**
-     * Optional. Azure Event Hubs.
-     *
-     * @param AzureEventHubs $azureEventHubs
-     */
-    public function setAzureEventHubs(AzureEventHubs $azureEventHubs)
-    {
-    }
-    /**
-     * @return AzureEventHubs
-     */
-    public function getAzureEventHubs()
-    {
-    }
-    /**
-     * Optional. Cloud Storage.
-     *
-     * @param CloudStorage $cloudStorage
-     */
-    public function setCloudStorage(CloudStorage $cloudStorage)
-    {
-    }
-    /**
-     * @return CloudStorage
-     */
-    public function getCloudStorage()
-    {
-    }
-    /**
-     * Optional. Confluent Cloud.
-     *
-     * @param ConfluentCloud $confluentCloud
-     */
-    public function setConfluentCloud(ConfluentCloud $confluentCloud)
-    {
-    }
-    /**
-     * @return ConfluentCloud
-     */
-    public function getConfluentCloud()
-    {
-    }
-    /**
-     * Optional. Platform Logs settings. If unset, no Platform Logs will be
-     * generated.
-     *
-     * @param PlatformLogsSettings $platformLogsSettings
-     */
-    public function setPlatformLogsSettings(PlatformLogsSettings $platformLogsSettings)
-    {
-    }
-    /**
-     * @return PlatformLogsSettings
-     */
-    public function getPlatformLogsSettings()
+    class Google_Service_Pubsub_IngestionDataSourceSettings extends \Google\Service\Pubsub\IngestionDataSourceSettings
     {
     }
 }

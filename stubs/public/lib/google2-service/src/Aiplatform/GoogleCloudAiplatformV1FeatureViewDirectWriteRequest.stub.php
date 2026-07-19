@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDirectWriteRequest extends \Google\Collection
-{
-    protected $collection_key = 'dataKeyAndFeatureValues';
-    protected $dataKeyAndFeatureValuesType = GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues::class;
-    protected $dataKeyAndFeatureValuesDataType = 'array';
-    /**
-     * Required. The data keys and associated feature values.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues[] $dataKeyAndFeatureValues
-     */
-    public function setDataKeyAndFeatureValues($dataKeyAndFeatureValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDirectWriteRequest extends \Google\Collection
     {
+        protected $collection_key = 'dataKeyAndFeatureValues';
+        protected $dataKeyAndFeatureValuesType = GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues::class;
+        protected $dataKeyAndFeatureValuesDataType = 'array';
+        /**
+         * Required. The data keys and associated feature values.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues[] $dataKeyAndFeatureValues
+         */
+        public function setDataKeyAndFeatureValues($dataKeyAndFeatureValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues[]
+         */
+        public function getDataKeyAndFeatureValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataKeyAndFeatureValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDirectWriteRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequest
     {
     }
 }

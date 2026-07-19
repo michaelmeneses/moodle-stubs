@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class TestTargetsForShard extends \Google\Collection
-{
-    protected $collection_key = 'testTargets';
-    /**
-     * Group of packages, classes, and/or test methods to be run for each shard.
-     * The targets need to be specified in AndroidJUnitRunner argument format. For
-     * example, "package com.my.packages" "class com.my.package.MyClass". The
-     * number of test_targets must be greater than 0.
-     *
-     * @var string[]
-     */
-    public $testTargets;
-    /**
-     * Group of packages, classes, and/or test methods to be run for each shard.
-     * The targets need to be specified in AndroidJUnitRunner argument format. For
-     * example, "package com.my.packages" "class com.my.package.MyClass". The
-     * number of test_targets must be greater than 0.
-     *
-     * @param string[] $testTargets
-     */
-    public function setTestTargets($testTargets)
+namespace Google\Service\Testing {
+    class TestTargetsForShard extends \Google\Collection
     {
+        protected $collection_key = 'testTargets';
+        /**
+         * Group of packages, classes, and/or test methods to be run for each shard.
+         * The targets need to be specified in AndroidJUnitRunner argument format. For
+         * example, "package com.my.packages" "class com.my.package.MyClass". The
+         * number of test_targets must be greater than 0.
+         *
+         * @var string[]
+         */
+        public $testTargets;
+        /**
+         * Group of packages, classes, and/or test methods to be run for each shard.
+         * The targets need to be specified in AndroidJUnitRunner argument format. For
+         * example, "package com.my.packages" "class com.my.package.MyClass". The
+         * number of test_targets must be greater than 0.
+         *
+         * @param string[] $testTargets
+         */
+        public function setTestTargets($testTargets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTestTargets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Testing\TestTargetsForShard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestTargets()
+    class Google_Service_Testing_TestTargetsForShard extends \Google\Service\Testing\TestTargetsForShard
     {
     }
 }

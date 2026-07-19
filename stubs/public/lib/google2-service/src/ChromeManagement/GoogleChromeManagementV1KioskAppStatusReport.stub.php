@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1KioskAppStatusReport extends \Google\Model
-{
-    /**
-     * App id of kiosk app for example "mdmkkicfmmkgmpkmkdikhlbggogpicma"
-     *
-     * @var string
-     */
-    public $appId;
-    /**
-     * App version number of kiosk app for example "1.10.118"
-     *
-     * @var string
-     */
-    public $appVersion;
-    /**
-     * Timestamp of when report was collected
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * App id of kiosk app for example "mdmkkicfmmkgmpkmkdikhlbggogpicma"
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1KioskAppStatusReport extends \Google\Model
     {
+        /**
+         * App id of kiosk app for example "mdmkkicfmmkgmpkmkdikhlbggogpicma"
+         *
+         * @var string
+         */
+        public $appId;
+        /**
+         * App version number of kiosk app for example "1.10.118"
+         *
+         * @var string
+         */
+        public $appVersion;
+        /**
+         * Timestamp of when report was collected
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * App id of kiosk app for example "mdmkkicfmmkgmpkmkdikhlbggogpicma"
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * App version number of kiosk app for example "1.10.118"
+         *
+         * @param string $appVersion
+         */
+        public function setAppVersion($appVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppVersion()
+        {
+        }
+        /**
+         * Timestamp of when report was collected
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1KioskAppStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * App version number of kiosk app for example "1.10.118"
-     *
-     * @param string $appVersion
-     */
-    public function setAppVersion($appVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppVersion()
-    {
-    }
-    /**
-     * Timestamp of when report was collected
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1KioskAppStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1KioskAppStatusReport
     {
     }
 }

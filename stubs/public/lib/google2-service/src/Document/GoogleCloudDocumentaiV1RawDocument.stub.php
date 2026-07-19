@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1RawDocument extends \Google\Model
-{
-    /**
-     * Inline document content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The display name of the document, it supports all Unicode characters except
-     * the following: `*`, `?`, `[`, `]`, `%`, `{`, `}`,`'`, `\"`, `,` `~`, `=`
-     * and `:` are reserved. If not specified, a default ID is generated.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * An IANA MIME type (RFC6838) indicating the nature and format of the
-     * content.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Inline document content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1RawDocument extends \Google\Model
     {
+        /**
+         * Inline document content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The display name of the document, it supports all Unicode characters except
+         * the following: `*`, `?`, `[`, `]`, `%`, `{`, `}`,`'`, `\"`, `,` `~`, `=`
+         * and `:` are reserved. If not specified, a default ID is generated.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * An IANA MIME type (RFC6838) indicating the nature and format of the
+         * content.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Inline document content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The display name of the document, it supports all Unicode characters except
+         * the following: `*`, `?`, `[`, `]`, `%`, `{`, `}`,`'`, `\"`, `,` `~`, `=`
+         * and `:` are reserved. If not specified, a default ID is generated.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * An IANA MIME type (RFC6838) indicating the nature and format of the
+         * content.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1RawDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The display name of the document, it supports all Unicode characters except
-     * the following: `*`, `?`, `[`, `]`, `%`, `{`, `}`,`'`, `\"`, `,` `~`, `=`
-     * and `:` are reserved. If not specified, a default ID is generated.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * An IANA MIME type (RFC6838) indicating the nature and format of the
-     * content.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1RawDocument extends \Google\Service\Document\GoogleCloudDocumentaiV1RawDocument
     {
     }
 }

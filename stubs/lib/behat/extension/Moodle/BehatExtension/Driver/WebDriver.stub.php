@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Driver;
 
+use Behat\Mink\Exception\DriverException;
+use OAndreyev\Mink\Driver\WebDriver as UpstreamDriver;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * WebDriver Driver to allow extra selenium capabilities required by Moodle.

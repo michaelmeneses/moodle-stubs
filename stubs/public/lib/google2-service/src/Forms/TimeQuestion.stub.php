@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class TimeQuestion extends \Google\Model
-{
-    /**
-     * `true` if the question is about an elapsed time. Otherwise it is about a
-     * time of day.
-     *
-     * @var bool
-     */
-    public $duration;
-    /**
-     * `true` if the question is about an elapsed time. Otherwise it is about a
-     * time of day.
-     *
-     * @param bool $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\Forms {
+    class TimeQuestion extends \Google\Model
     {
+        /**
+         * `true` if the question is about an elapsed time. Otherwise it is about a
+         * time of day.
+         *
+         * @var bool
+         */
+        public $duration;
+        /**
+         * `true` if the question is about an elapsed time. Otherwise it is about a
+         * time of day.
+         *
+         * @param bool $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\TimeQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
+    class Google_Service_Forms_TimeQuestion extends \Google\Service\Forms\TimeQuestion
     {
     }
 }

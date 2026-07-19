@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineContextSpec extends \Google\Model
-{
-    protected $memoryBankConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig::class;
-    protected $memoryBankConfigDataType = '';
-    /**
-     * Optional. Specification for a Memory Bank, which manages memories for the
-     * Agent Engine.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig $memoryBankConfig
-     */
-    public function setMemoryBankConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig $memoryBankConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineContextSpec extends \Google\Model
     {
+        protected $memoryBankConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig::class;
+        protected $memoryBankConfigDataType = '';
+        /**
+         * Optional. Specification for a Memory Bank, which manages memories for the
+         * Agent Engine.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig $memoryBankConfig
+         */
+        public function setMemoryBankConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig $memoryBankConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig
+         */
+        public function getMemoryBankConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryBankConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineContextSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpec
     {
     }
 }

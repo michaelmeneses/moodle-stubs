@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class NetworkAdapterDetails extends \Google\Model
-{
-    /**
-     * Network adapter type (e.g. VMXNET3).
-     *
-     * @var string
-     */
-    public $adapterType;
-    protected $addressesType = NetworkAddressList::class;
-    protected $addressesDataType = '';
-    /**
-     * MAC address.
-     *
-     * @var string
-     */
-    public $macAddress;
-    /**
-     * Network adapter type (e.g. VMXNET3).
-     *
-     * @param string $adapterType
-     */
-    public function setAdapterType($adapterType)
+namespace Google\Service\MigrationCenterAPI {
+    class NetworkAdapterDetails extends \Google\Model
     {
+        /**
+         * Network adapter type (e.g. VMXNET3).
+         *
+         * @var string
+         */
+        public $adapterType;
+        protected $addressesType = NetworkAddressList::class;
+        protected $addressesDataType = '';
+        /**
+         * MAC address.
+         *
+         * @var string
+         */
+        public $macAddress;
+        /**
+         * Network adapter type (e.g. VMXNET3).
+         *
+         * @param string $adapterType
+         */
+        public function setAdapterType($adapterType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdapterType()
+        {
+        }
+        /**
+         * NetworkAddressList
+         *
+         * @param NetworkAddressList $addresses
+         */
+        public function setAddresses(NetworkAddressList $addresses)
+        {
+        }
+        /**
+         * @return NetworkAddressList
+         */
+        public function getAddresses()
+        {
+        }
+        /**
+         * MAC address.
+         *
+         * @param string $macAddress
+         */
+        public function setMacAddress($macAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMacAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\NetworkAdapterDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdapterType()
-    {
-    }
-    /**
-     * NetworkAddressList
-     *
-     * @param NetworkAddressList $addresses
-     */
-    public function setAddresses(NetworkAddressList $addresses)
-    {
-    }
-    /**
-     * @return NetworkAddressList
-     */
-    public function getAddresses()
-    {
-    }
-    /**
-     * MAC address.
-     *
-     * @param string $macAddress
-     */
-    public function setMacAddress($macAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMacAddress()
+    class Google_Service_MigrationCenterAPI_NetworkAdapterDetails extends \Google\Service\MigrationCenterAPI\NetworkAdapterDetails
     {
     }
 }

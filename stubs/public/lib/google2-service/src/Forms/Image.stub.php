@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Image extends \Google\Model
-{
-    /**
-     * A description of the image that is shown on hover and read by
-     * screenreaders.
-     *
-     * @var string
-     */
-    public $altText;
-    /**
-     * Output only. A URI from which you can download the image; this is valid
-     * only for a limited time.
-     *
-     * @var string
-     */
-    public $contentUri;
-    protected $propertiesType = MediaProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Input only. The source URI is the URI used to insert the image. The source
-     * URI can be empty when fetched.
-     *
-     * @var string
-     */
-    public $sourceUri;
-    /**
-     * A description of the image that is shown on hover and read by
-     * screenreaders.
-     *
-     * @param string $altText
-     */
-    public function setAltText($altText)
+namespace Google\Service\Forms {
+    class Image extends \Google\Model
     {
+        /**
+         * A description of the image that is shown on hover and read by
+         * screenreaders.
+         *
+         * @var string
+         */
+        public $altText;
+        /**
+         * Output only. A URI from which you can download the image; this is valid
+         * only for a limited time.
+         *
+         * @var string
+         */
+        public $contentUri;
+        protected $propertiesType = MediaProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Input only. The source URI is the URI used to insert the image. The source
+         * URI can be empty when fetched.
+         *
+         * @var string
+         */
+        public $sourceUri;
+        /**
+         * A description of the image that is shown on hover and read by
+         * screenreaders.
+         *
+         * @param string $altText
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * Output only. A URI from which you can download the image; this is valid
+         * only for a limited time.
+         *
+         * @param string $contentUri
+         */
+        public function setContentUri($contentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentUri()
+        {
+        }
+        /**
+         * Properties of an image.
+         *
+         * @param MediaProperties $properties
+         */
+        public function setProperties(MediaProperties $properties)
+        {
+        }
+        /**
+         * @return MediaProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Input only. The source URI is the URI used to insert the image. The source
+         * URI can be empty when fetched.
+         *
+         * @param string $sourceUri
+         */
+        public function setSourceUri($sourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * Output only. A URI from which you can download the image; this is valid
-     * only for a limited time.
-     *
-     * @param string $contentUri
-     */
-    public function setContentUri($contentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentUri()
-    {
-    }
-    /**
-     * Properties of an image.
-     *
-     * @param MediaProperties $properties
-     */
-    public function setProperties(MediaProperties $properties)
-    {
-    }
-    /**
-     * @return MediaProperties
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Input only. The source URI is the URI used to insert the image. The source
-     * URI can be empty when fetched.
-     *
-     * @param string $sourceUri
-     */
-    public function setSourceUri($sourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUri()
+    class Google_Service_Forms_Image extends \Google\Service\Forms\Image
     {
     }
 }

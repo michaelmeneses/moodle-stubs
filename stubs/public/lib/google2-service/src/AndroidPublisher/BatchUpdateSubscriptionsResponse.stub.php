@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchUpdateSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'subscriptions';
-    protected $subscriptionsType = Subscription::class;
-    protected $subscriptionsDataType = 'array';
-    /**
-     * The updated subscriptions list.
-     *
-     * @param Subscription[] $subscriptions
-     */
-    public function setSubscriptions($subscriptions)
+namespace Google\Service\AndroidPublisher {
+    class BatchUpdateSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'subscriptions';
+        protected $subscriptionsType = Subscription::class;
+        protected $subscriptionsDataType = 'array';
+        /**
+         * The updated subscriptions list.
+         *
+         * @param Subscription[] $subscriptions
+         */
+        public function setSubscriptions($subscriptions)
+        {
+        }
+        /**
+         * @return Subscription[]
+         */
+        public function getSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Subscription[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchUpdateSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscriptions()
+    class Google_Service_AndroidPublisher_BatchUpdateSubscriptionsResponse extends \Google\Service\AndroidPublisher\BatchUpdateSubscriptionsResponse
     {
     }
 }

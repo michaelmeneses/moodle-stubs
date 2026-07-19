@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class CreateDatabaseMetadata extends \Google\Model
-{
-    /**
-     * The database being created.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * The database being created.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Spanner {
+    class CreateDatabaseMetadata extends \Google\Model
     {
+        /**
+         * The database being created.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * The database being created.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\CreateDatabaseMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
+    class Google_Service_Spanner_CreateDatabaseMetadata extends \Google\Service\Spanner\CreateDatabaseMetadata
     {
     }
 }

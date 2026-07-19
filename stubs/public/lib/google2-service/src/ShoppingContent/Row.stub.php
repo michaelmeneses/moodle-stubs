@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Row extends \Google\Collection
-{
-    protected $collection_key = 'cells';
-    protected $cellsType = Value::class;
-    protected $cellsDataType = 'array';
-    /**
-     * The list of cells that constitute the row. Must have the same length as
-     * `columnHeaders` for two-dimensional tables, a length of 1 for one-
-     * dimensional tables. Required.
-     *
-     * @param Value[] $cells
-     */
-    public function setCells($cells)
+namespace Google\Service\ShoppingContent {
+    class Row extends \Google\Collection
     {
+        protected $collection_key = 'cells';
+        protected $cellsType = Value::class;
+        protected $cellsDataType = 'array';
+        /**
+         * The list of cells that constitute the row. Must have the same length as
+         * `columnHeaders` for two-dimensional tables, a length of 1 for one-
+         * dimensional tables. Required.
+         *
+         * @param Value[] $cells
+         */
+        public function setCells($cells)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getCells()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\ShoppingContent\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCells()
+    class Google_Service_ShoppingContent_Row extends \Google\Service\ShoppingContent\Row
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineRetryPolicy extends \Google\Model
-{
-    /**
-     * Optional. The maximum number of delivery attempts for any message. The
-     * value must be between 1 and 100. The default value for this field is 5.
-     *
-     * @var int
-     */
-    public $maxAttempts;
-    /**
-     * Optional. The maximum amount of seconds to wait between retry attempts. The
-     * value must be between 1 and 600. The default value for this field is 60.
-     *
-     * @var string
-     */
-    public $maxRetryDelay;
-    /**
-     * Optional. The minimum amount of seconds to wait between retry attempts. The
-     * value must be between 1 and 600. The default value for this field is 5.
-     *
-     * @var string
-     */
-    public $minRetryDelay;
-    /**
-     * Optional. The maximum number of delivery attempts for any message. The
-     * value must be between 1 and 100. The default value for this field is 5.
-     *
-     * @param int $maxAttempts
-     */
-    public function setMaxAttempts($maxAttempts)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineRetryPolicy extends \Google\Model
     {
+        /**
+         * Optional. The maximum number of delivery attempts for any message. The
+         * value must be between 1 and 100. The default value for this field is 5.
+         *
+         * @var int
+         */
+        public $maxAttempts;
+        /**
+         * Optional. The maximum amount of seconds to wait between retry attempts. The
+         * value must be between 1 and 600. The default value for this field is 60.
+         *
+         * @var string
+         */
+        public $maxRetryDelay;
+        /**
+         * Optional. The minimum amount of seconds to wait between retry attempts. The
+         * value must be between 1 and 600. The default value for this field is 5.
+         *
+         * @var string
+         */
+        public $minRetryDelay;
+        /**
+         * Optional. The maximum number of delivery attempts for any message. The
+         * value must be between 1 and 100. The default value for this field is 5.
+         *
+         * @param int $maxAttempts
+         */
+        public function setMaxAttempts($maxAttempts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxAttempts()
+        {
+        }
+        /**
+         * Optional. The maximum amount of seconds to wait between retry attempts. The
+         * value must be between 1 and 600. The default value for this field is 60.
+         *
+         * @param string $maxRetryDelay
+         */
+        public function setMaxRetryDelay($maxRetryDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxRetryDelay()
+        {
+        }
+        /**
+         * Optional. The minimum amount of seconds to wait between retry attempts. The
+         * value must be between 1 and 600. The default value for this field is 5.
+         *
+         * @param string $minRetryDelay
+         */
+        public function setMinRetryDelay($minRetryDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinRetryDelay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineRetryPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxAttempts()
-    {
-    }
-    /**
-     * Optional. The maximum amount of seconds to wait between retry attempts. The
-     * value must be between 1 and 600. The default value for this field is 60.
-     *
-     * @param string $maxRetryDelay
-     */
-    public function setMaxRetryDelay($maxRetryDelay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxRetryDelay()
-    {
-    }
-    /**
-     * Optional. The minimum amount of seconds to wait between retry attempts. The
-     * value must be between 1 and 600. The default value for this field is 5.
-     *
-     * @param string $minRetryDelay
-     */
-    public function setMinRetryDelay($minRetryDelay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinRetryDelay()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineRetryPolicy extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineRetryPolicy
     {
     }
 }

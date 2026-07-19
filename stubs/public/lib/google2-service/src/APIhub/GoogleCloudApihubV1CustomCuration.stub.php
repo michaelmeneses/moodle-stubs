@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1CustomCuration extends \Google\Model
-{
-    /**
-     * Required. The unique name of the curation resource. This will be the name
-     * of the curation resource in the format:
-     * `projects/{project}/locations/{location}/curations/{curation}`
-     *
-     * @var string
-     */
-    public $curation;
-    /**
-     * Required. The unique name of the curation resource. This will be the name
-     * of the curation resource in the format:
-     * `projects/{project}/locations/{location}/curations/{curation}`
-     *
-     * @param string $curation
-     */
-    public function setCuration($curation)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1CustomCuration extends \Google\Model
     {
+        /**
+         * Required. The unique name of the curation resource. This will be the name
+         * of the curation resource in the format:
+         * `projects/{project}/locations/{location}/curations/{curation}`
+         *
+         * @var string
+         */
+        public $curation;
+        /**
+         * Required. The unique name of the curation resource. This will be the name
+         * of the curation resource in the format:
+         * `projects/{project}/locations/{location}/curations/{curation}`
+         *
+         * @param string $curation
+         */
+        public function setCuration($curation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1CustomCuration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCuration()
+    class Google_Service_APIhub_GoogleCloudApihubV1CustomCuration extends \Google\Service\APIhub\GoogleCloudApihubV1CustomCuration
     {
     }
 }

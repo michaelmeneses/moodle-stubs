@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DiskMoveRequest extends \Google\Model
-{
-    /**
-     * The URL of the destination zone to move the disk. This can be a full or
-     * partial URL. For example, the following are all valid URLs to a zone:
-     * - https://www.googleapis.com/compute/v1/projects/project/zones/zone     -
-     * projects/project/zones/zone     - zones/zone
-     *
-     * @var string
-     */
-    public $destinationZone;
-    /**
-     * The URL of the target disk to move. This can be a full or partial URL. For
-     * example, the following are all valid URLs to a disk:        - https://www.g
-     * oogleapis.com/compute/v1/projects/project/zones/zone/disks/disk     -
-     * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
-     *
-     * @var string
-     */
-    public $targetDisk;
-    /**
-     * The URL of the destination zone to move the disk. This can be a full or
-     * partial URL. For example, the following are all valid URLs to a zone:
-     * - https://www.googleapis.com/compute/v1/projects/project/zones/zone     -
-     * projects/project/zones/zone     - zones/zone
-     *
-     * @param string $destinationZone
-     */
-    public function setDestinationZone($destinationZone)
+namespace Google\Service\Compute {
+    class DiskMoveRequest extends \Google\Model
     {
+        /**
+         * The URL of the destination zone to move the disk. This can be a full or
+         * partial URL. For example, the following are all valid URLs to a zone:
+         * - https://www.googleapis.com/compute/v1/projects/project/zones/zone     -
+         * projects/project/zones/zone     - zones/zone
+         *
+         * @var string
+         */
+        public $destinationZone;
+        /**
+         * The URL of the target disk to move. This can be a full or partial URL. For
+         * example, the following are all valid URLs to a disk:        - https://www.g
+         * oogleapis.com/compute/v1/projects/project/zones/zone/disks/disk     -
+         * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
+         *
+         * @var string
+         */
+        public $targetDisk;
+        /**
+         * The URL of the destination zone to move the disk. This can be a full or
+         * partial URL. For example, the following are all valid URLs to a zone:
+         * - https://www.googleapis.com/compute/v1/projects/project/zones/zone     -
+         * projects/project/zones/zone     - zones/zone
+         *
+         * @param string $destinationZone
+         */
+        public function setDestinationZone($destinationZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationZone()
+        {
+        }
+        /**
+         * The URL of the target disk to move. This can be a full or partial URL. For
+         * example, the following are all valid URLs to a disk:        - https://www.g
+         * oogleapis.com/compute/v1/projects/project/zones/zone/disks/disk     -
+         * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
+         *
+         * @param string $targetDisk
+         */
+        public function setTargetDisk($targetDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\DiskMoveRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationZone()
-    {
-    }
-    /**
-     * The URL of the target disk to move. This can be a full or partial URL. For
-     * example, the following are all valid URLs to a disk:        - https://www.g
-     * oogleapis.com/compute/v1/projects/project/zones/zone/disks/disk     -
-     * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
-     *
-     * @param string $targetDisk
-     */
-    public function setTargetDisk($targetDisk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetDisk()
+    class Google_Service_Compute_DiskMoveRequest extends \Google\Service\Compute\DiskMoveRequest
     {
     }
 }

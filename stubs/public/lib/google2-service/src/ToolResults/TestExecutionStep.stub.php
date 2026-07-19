@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class TestExecutionStep extends \Google\Collection
-{
-    protected $collection_key = 'testSuiteOverviews';
-    protected $testIssuesType = TestIssue::class;
-    protected $testIssuesDataType = 'array';
-    protected $testSuiteOverviewsType = TestSuiteOverview::class;
-    protected $testSuiteOverviewsDataType = 'array';
-    protected $testTimingType = TestTiming::class;
-    protected $testTimingDataType = '';
-    protected $toolExecutionType = ToolExecution::class;
-    protected $toolExecutionDataType = '';
-    /**
-     * Issues observed during the test execution. For example, if the mobile app
-     * under test crashed during the test, the error message and the stack trace
-     * content can be recorded here to assist debugging. - In response: present if
-     * set by create or update - In create/update request: optional
-     *
-     * @param TestIssue[] $testIssues
-     */
-    public function setTestIssues($testIssues)
+namespace Google\Service\ToolResults {
+    class TestExecutionStep extends \Google\Collection
     {
+        protected $collection_key = 'testSuiteOverviews';
+        protected $testIssuesType = TestIssue::class;
+        protected $testIssuesDataType = 'array';
+        protected $testSuiteOverviewsType = TestSuiteOverview::class;
+        protected $testSuiteOverviewsDataType = 'array';
+        protected $testTimingType = TestTiming::class;
+        protected $testTimingDataType = '';
+        protected $toolExecutionType = ToolExecution::class;
+        protected $toolExecutionDataType = '';
+        /**
+         * Issues observed during the test execution. For example, if the mobile app
+         * under test crashed during the test, the error message and the stack trace
+         * content can be recorded here to assist debugging. - In response: present if
+         * set by create or update - In create/update request: optional
+         *
+         * @param TestIssue[] $testIssues
+         */
+        public function setTestIssues($testIssues)
+        {
+        }
+        /**
+         * @return TestIssue[]
+         */
+        public function getTestIssues()
+        {
+        }
+        /**
+         * List of test suite overview contents. This could be parsed from xUnit XML
+         * log by server, or uploaded directly by user. This references should only be
+         * called when test suites are fully parsed or uploaded. The maximum allowed
+         * number of test suite overviews per step is 1000. - In response: always set
+         * - In create request: optional - In update request: never (use
+         * publishXunitXmlFiles custom method instead)
+         *
+         * @param TestSuiteOverview[] $testSuiteOverviews
+         */
+        public function setTestSuiteOverviews($testSuiteOverviews)
+        {
+        }
+        /**
+         * @return TestSuiteOverview[]
+         */
+        public function getTestSuiteOverviews()
+        {
+        }
+        /**
+         * The timing break down of the test execution. - In response: present if set
+         * by create or update - In create/update request: optional
+         *
+         * @param TestTiming $testTiming
+         */
+        public function setTestTiming(TestTiming $testTiming)
+        {
+        }
+        /**
+         * @return TestTiming
+         */
+        public function getTestTiming()
+        {
+        }
+        /**
+         * Represents the execution of the test runner. The exit code of this tool
+         * will be used to determine if the test passed. - In response: always set -
+         * In create/update request: optional
+         *
+         * @param ToolExecution $toolExecution
+         */
+        public function setToolExecution(ToolExecution $toolExecution)
+        {
+        }
+        /**
+         * @return ToolExecution
+         */
+        public function getToolExecution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TestIssue[]
+     * Runtime class alias of \Google\Service\ToolResults\TestExecutionStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestIssues()
-    {
-    }
-    /**
-     * List of test suite overview contents. This could be parsed from xUnit XML
-     * log by server, or uploaded directly by user. This references should only be
-     * called when test suites are fully parsed or uploaded. The maximum allowed
-     * number of test suite overviews per step is 1000. - In response: always set
-     * - In create request: optional - In update request: never (use
-     * publishXunitXmlFiles custom method instead)
-     *
-     * @param TestSuiteOverview[] $testSuiteOverviews
-     */
-    public function setTestSuiteOverviews($testSuiteOverviews)
-    {
-    }
-    /**
-     * @return TestSuiteOverview[]
-     */
-    public function getTestSuiteOverviews()
-    {
-    }
-    /**
-     * The timing break down of the test execution. - In response: present if set
-     * by create or update - In create/update request: optional
-     *
-     * @param TestTiming $testTiming
-     */
-    public function setTestTiming(TestTiming $testTiming)
-    {
-    }
-    /**
-     * @return TestTiming
-     */
-    public function getTestTiming()
-    {
-    }
-    /**
-     * Represents the execution of the test runner. The exit code of this tool
-     * will be used to determine if the test passed. - In response: always set -
-     * In create/update request: optional
-     *
-     * @param ToolExecution $toolExecution
-     */
-    public function setToolExecution(ToolExecution $toolExecution)
-    {
-    }
-    /**
-     * @return ToolExecution
-     */
-    public function getToolExecution()
+    class Google_Service_ToolResults_TestExecutionStep extends \Google\Service\ToolResults\TestExecutionStep
     {
     }
 }

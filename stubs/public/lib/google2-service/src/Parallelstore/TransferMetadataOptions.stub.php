@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Parallelstore;
-
-class TransferMetadataOptions extends \Google\Model
-{
-    /**
-     * default is GID_NUMBER_PRESERVE.
-     */
-    public const GID_GID_UNSPECIFIED = 'GID_UNSPECIFIED';
-    /**
-     * Do not preserve GID during a transfer job.
-     */
-    public const GID_GID_SKIP = 'GID_SKIP';
-    /**
-     * Preserve GID that is in number format during a transfer job.
-     */
-    public const GID_GID_NUMBER_PRESERVE = 'GID_NUMBER_PRESERVE';
-    /**
-     * default is MODE_PRESERVE.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Do not preserve mode during a transfer job.
-     */
-    public const MODE_MODE_SKIP = 'MODE_SKIP';
-    /**
-     * Preserve mode during a transfer job.
-     */
-    public const MODE_MODE_PRESERVE = 'MODE_PRESERVE';
-    /**
-     * default is UID_NUMBER_PRESERVE.
-     */
-    public const UID_UID_UNSPECIFIED = 'UID_UNSPECIFIED';
-    /**
-     * Do not preserve UID during a transfer job.
-     */
-    public const UID_UID_SKIP = 'UID_SKIP';
-    /**
-     * Preserve UID that is in number format during a transfer job.
-     */
-    public const UID_UID_NUMBER_PRESERVE = 'UID_NUMBER_PRESERVE';
-    /**
-     * Optional. The GID preservation behavior.
-     *
-     * @var string
-     */
-    public $gid;
-    /**
-     * Optional. The mode preservation behavior.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Optional. The UID preservation behavior.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Optional. The GID preservation behavior.
-     *
-     * Accepted values: GID_UNSPECIFIED, GID_SKIP, GID_NUMBER_PRESERVE
-     *
-     * @param self::GID_* $gid
-     */
-    public function setGid($gid)
+namespace Google\Service\Parallelstore {
+    class TransferMetadataOptions extends \Google\Model
     {
+        /**
+         * default is GID_NUMBER_PRESERVE.
+         */
+        public const GID_GID_UNSPECIFIED = 'GID_UNSPECIFIED';
+        /**
+         * Do not preserve GID during a transfer job.
+         */
+        public const GID_GID_SKIP = 'GID_SKIP';
+        /**
+         * Preserve GID that is in number format during a transfer job.
+         */
+        public const GID_GID_NUMBER_PRESERVE = 'GID_NUMBER_PRESERVE';
+        /**
+         * default is MODE_PRESERVE.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Do not preserve mode during a transfer job.
+         */
+        public const MODE_MODE_SKIP = 'MODE_SKIP';
+        /**
+         * Preserve mode during a transfer job.
+         */
+        public const MODE_MODE_PRESERVE = 'MODE_PRESERVE';
+        /**
+         * default is UID_NUMBER_PRESERVE.
+         */
+        public const UID_UID_UNSPECIFIED = 'UID_UNSPECIFIED';
+        /**
+         * Do not preserve UID during a transfer job.
+         */
+        public const UID_UID_SKIP = 'UID_SKIP';
+        /**
+         * Preserve UID that is in number format during a transfer job.
+         */
+        public const UID_UID_NUMBER_PRESERVE = 'UID_NUMBER_PRESERVE';
+        /**
+         * Optional. The GID preservation behavior.
+         *
+         * @var string
+         */
+        public $gid;
+        /**
+         * Optional. The mode preservation behavior.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Optional. The UID preservation behavior.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Optional. The GID preservation behavior.
+         *
+         * Accepted values: GID_UNSPECIFIED, GID_SKIP, GID_NUMBER_PRESERVE
+         *
+         * @param self::GID_* $gid
+         */
+        public function setGid($gid)
+        {
+        }
+        /**
+         * @return self::GID_*
+         */
+        public function getGid()
+        {
+        }
+        /**
+         * Optional. The mode preservation behavior.
+         *
+         * Accepted values: MODE_UNSPECIFIED, MODE_SKIP, MODE_PRESERVE
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Optional. The UID preservation behavior.
+         *
+         * Accepted values: UID_UNSPECIFIED, UID_SKIP, UID_NUMBER_PRESERVE
+         *
+         * @param self::UID_* $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return self::UID_*
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GID_*
+     * Runtime class alias of \Google\Service\Parallelstore\TransferMetadataOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGid()
-    {
-    }
-    /**
-     * Optional. The mode preservation behavior.
-     *
-     * Accepted values: MODE_UNSPECIFIED, MODE_SKIP, MODE_PRESERVE
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return self::MODE_*
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * Optional. The UID preservation behavior.
-     *
-     * Accepted values: UID_UNSPECIFIED, UID_SKIP, UID_NUMBER_PRESERVE
-     *
-     * @param self::UID_* $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return self::UID_*
-     */
-    public function getUid()
+    class Google_Service_Parallelstore_TransferMetadataOptions extends \Google\Service\Parallelstore\TransferMetadataOptions
     {
     }
 }

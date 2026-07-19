@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Label extends \Google\Model
-{
-    /**
-     * Name of the label.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Value that corresponds to the label's name.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Name of the label.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Label extends \Google\Model
     {
+        /**
+         * Name of the label.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Value that corresponds to the label's name.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Name of the label.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value that corresponds to the label's name.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Label registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Value that corresponds to the label's name.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Label extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Label
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class TlsRouteRouteAction extends \Google\Collection
-{
-    protected $collection_key = 'destinations';
-    protected $destinationsType = TlsRouteRouteDestination::class;
-    protected $destinationsDataType = 'array';
-    /**
-     * Optional. Specifies the idle timeout for the selected route. The idle
-     * timeout is defined as the period in which there are no bytes sent or
-     * received on either the upstream or downstream connection. If not set, the
-     * default idle timeout is 1 hour. If set to 0s, the timeout will be disabled.
-     *
-     * @var string
-     */
-    public $idleTimeout;
-    /**
-     * Required. The destination services to which traffic should be forwarded. At
-     * least one destination service is required.
-     *
-     * @param TlsRouteRouteDestination[] $destinations
-     */
-    public function setDestinations($destinations)
+namespace Google\Service\NetworkServices {
+    class TlsRouteRouteAction extends \Google\Collection
     {
+        protected $collection_key = 'destinations';
+        protected $destinationsType = TlsRouteRouteDestination::class;
+        protected $destinationsDataType = 'array';
+        /**
+         * Optional. Specifies the idle timeout for the selected route. The idle
+         * timeout is defined as the period in which there are no bytes sent or
+         * received on either the upstream or downstream connection. If not set, the
+         * default idle timeout is 1 hour. If set to 0s, the timeout will be disabled.
+         *
+         * @var string
+         */
+        public $idleTimeout;
+        /**
+         * Required. The destination services to which traffic should be forwarded. At
+         * least one destination service is required.
+         *
+         * @param TlsRouteRouteDestination[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return TlsRouteRouteDestination[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * Optional. Specifies the idle timeout for the selected route. The idle
+         * timeout is defined as the period in which there are no bytes sent or
+         * received on either the upstream or downstream connection. If not set, the
+         * default idle timeout is 1 hour. If set to 0s, the timeout will be disabled.
+         *
+         * @param string $idleTimeout
+         */
+        public function setIdleTimeout($idleTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdleTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TlsRouteRouteDestination[]
+     * Runtime class alias of \Google\Service\NetworkServices\TlsRouteRouteAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinations()
-    {
-    }
-    /**
-     * Optional. Specifies the idle timeout for the selected route. The idle
-     * timeout is defined as the period in which there are no bytes sent or
-     * received on either the upstream or downstream connection. If not set, the
-     * default idle timeout is 1 hour. If set to 0s, the timeout will be disabled.
-     *
-     * @param string $idleTimeout
-     */
-    public function setIdleTimeout($idleTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdleTimeout()
+    class Google_Service_NetworkServices_TlsRouteRouteAction extends \Google\Service\NetworkServices\TlsRouteRouteAction
     {
     }
 }

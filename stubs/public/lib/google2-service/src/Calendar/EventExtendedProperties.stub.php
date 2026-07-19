@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventExtendedProperties extends \Google\Model
-{
-    /**
-     * Properties that are private to the copy of the event that appears on this
-     * calendar.
-     *
-     * @var string[]
-     */
-    public $private;
-    /**
-     * Properties that are shared between copies of the event on other attendees'
-     * calendars.
-     *
-     * @var string[]
-     */
-    public $shared;
-    /**
-     * Properties that are private to the copy of the event that appears on this
-     * calendar.
-     *
-     * @param string[] $private
-     */
-    public function setPrivate($private)
+namespace Google\Service\Calendar {
+    class EventExtendedProperties extends \Google\Model
     {
+        /**
+         * Properties that are private to the copy of the event that appears on this
+         * calendar.
+         *
+         * @var string[]
+         */
+        public $private;
+        /**
+         * Properties that are shared between copies of the event on other attendees'
+         * calendars.
+         *
+         * @var string[]
+         */
+        public $shared;
+        /**
+         * Properties that are private to the copy of the event that appears on this
+         * calendar.
+         *
+         * @param string[] $private
+         */
+        public function setPrivate($private)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrivate()
+        {
+        }
+        /**
+         * Properties that are shared between copies of the event on other attendees'
+         * calendars.
+         *
+         * @param string[] $shared
+         */
+        public function setShared($shared)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getShared()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Calendar\EventExtendedProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivate()
-    {
-    }
-    /**
-     * Properties that are shared between copies of the event on other attendees'
-     * calendars.
-     *
-     * @param string[] $shared
-     */
-    public function setShared($shared)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getShared()
+    class Google_Service_Calendar_EventExtendedProperties extends \Google\Service\Calendar\EventExtendedProperties
     {
     }
 }

@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ContactInfo extends \Google\Model
-{
-    /**
-     * Email address for a point of contact, which will be used to send important
-     * announcements related to managed Google Play.
-     *
-     * @var string
-     */
-    public $contactEmail;
-    /**
-     * The email of the data protection officer. The email is validated but not
-     * verified.
-     *
-     * @var string
-     */
-    public $dataProtectionOfficerEmail;
-    /**
-     * The name of the data protection officer.
-     *
-     * @var string
-     */
-    public $dataProtectionOfficerName;
-    /**
-     * The phone number of the data protection officer The phone number is
-     * validated but not verified.
-     *
-     * @var string
-     */
-    public $dataProtectionOfficerPhone;
-    /**
-     * The email of the EU representative. The email is validated but not
-     * verified.
-     *
-     * @var string
-     */
-    public $euRepresentativeEmail;
-    /**
-     * The name of the EU representative.
-     *
-     * @var string
-     */
-    public $euRepresentativeName;
-    /**
-     * The phone number of the EU representative. The phone number is validated
-     * but not verified.
-     *
-     * @var string
-     */
-    public $euRepresentativePhone;
-    /**
-     * Email address for a point of contact, which will be used to send important
-     * announcements related to managed Google Play.
-     *
-     * @param string $contactEmail
-     */
-    public function setContactEmail($contactEmail)
+namespace Google\Service\AndroidManagement {
+    class ContactInfo extends \Google\Model
     {
+        /**
+         * Email address for a point of contact, which will be used to send important
+         * announcements related to managed Google Play.
+         *
+         * @var string
+         */
+        public $contactEmail;
+        /**
+         * The email of the data protection officer. The email is validated but not
+         * verified.
+         *
+         * @var string
+         */
+        public $dataProtectionOfficerEmail;
+        /**
+         * The name of the data protection officer.
+         *
+         * @var string
+         */
+        public $dataProtectionOfficerName;
+        /**
+         * The phone number of the data protection officer The phone number is
+         * validated but not verified.
+         *
+         * @var string
+         */
+        public $dataProtectionOfficerPhone;
+        /**
+         * The email of the EU representative. The email is validated but not
+         * verified.
+         *
+         * @var string
+         */
+        public $euRepresentativeEmail;
+        /**
+         * The name of the EU representative.
+         *
+         * @var string
+         */
+        public $euRepresentativeName;
+        /**
+         * The phone number of the EU representative. The phone number is validated
+         * but not verified.
+         *
+         * @var string
+         */
+        public $euRepresentativePhone;
+        /**
+         * Email address for a point of contact, which will be used to send important
+         * announcements related to managed Google Play.
+         *
+         * @param string $contactEmail
+         */
+        public function setContactEmail($contactEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactEmail()
+        {
+        }
+        /**
+         * The email of the data protection officer. The email is validated but not
+         * verified.
+         *
+         * @param string $dataProtectionOfficerEmail
+         */
+        public function setDataProtectionOfficerEmail($dataProtectionOfficerEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataProtectionOfficerEmail()
+        {
+        }
+        /**
+         * The name of the data protection officer.
+         *
+         * @param string $dataProtectionOfficerName
+         */
+        public function setDataProtectionOfficerName($dataProtectionOfficerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataProtectionOfficerName()
+        {
+        }
+        /**
+         * The phone number of the data protection officer The phone number is
+         * validated but not verified.
+         *
+         * @param string $dataProtectionOfficerPhone
+         */
+        public function setDataProtectionOfficerPhone($dataProtectionOfficerPhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataProtectionOfficerPhone()
+        {
+        }
+        /**
+         * The email of the EU representative. The email is validated but not
+         * verified.
+         *
+         * @param string $euRepresentativeEmail
+         */
+        public function setEuRepresentativeEmail($euRepresentativeEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEuRepresentativeEmail()
+        {
+        }
+        /**
+         * The name of the EU representative.
+         *
+         * @param string $euRepresentativeName
+         */
+        public function setEuRepresentativeName($euRepresentativeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEuRepresentativeName()
+        {
+        }
+        /**
+         * The phone number of the EU representative. The phone number is validated
+         * but not verified.
+         *
+         * @param string $euRepresentativePhone
+         */
+        public function setEuRepresentativePhone($euRepresentativePhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEuRepresentativePhone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ContactInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactEmail()
-    {
-    }
-    /**
-     * The email of the data protection officer. The email is validated but not
-     * verified.
-     *
-     * @param string $dataProtectionOfficerEmail
-     */
-    public function setDataProtectionOfficerEmail($dataProtectionOfficerEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataProtectionOfficerEmail()
-    {
-    }
-    /**
-     * The name of the data protection officer.
-     *
-     * @param string $dataProtectionOfficerName
-     */
-    public function setDataProtectionOfficerName($dataProtectionOfficerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataProtectionOfficerName()
-    {
-    }
-    /**
-     * The phone number of the data protection officer The phone number is
-     * validated but not verified.
-     *
-     * @param string $dataProtectionOfficerPhone
-     */
-    public function setDataProtectionOfficerPhone($dataProtectionOfficerPhone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataProtectionOfficerPhone()
-    {
-    }
-    /**
-     * The email of the EU representative. The email is validated but not
-     * verified.
-     *
-     * @param string $euRepresentativeEmail
-     */
-    public function setEuRepresentativeEmail($euRepresentativeEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEuRepresentativeEmail()
-    {
-    }
-    /**
-     * The name of the EU representative.
-     *
-     * @param string $euRepresentativeName
-     */
-    public function setEuRepresentativeName($euRepresentativeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEuRepresentativeName()
-    {
-    }
-    /**
-     * The phone number of the EU representative. The phone number is validated
-     * but not verified.
-     *
-     * @param string $euRepresentativePhone
-     */
-    public function setEuRepresentativePhone($euRepresentativePhone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEuRepresentativePhone()
+    class Google_Service_AndroidManagement_ContactInfo extends \Google\Service\AndroidManagement\ContactInfo
     {
     }
 }

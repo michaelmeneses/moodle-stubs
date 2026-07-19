@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class StorageObjectContexts extends \Google\Model
-{
-    protected $customType = ObjectCustomContextPayload::class;
-    protected $customDataType = 'map';
-    /**
-     * User-defined object contexts.
-     *
-     * @param ObjectCustomContextPayload[] $custom
-     */
-    public function setCustom($custom)
+namespace Google\Service\Storage {
+    class StorageObjectContexts extends \Google\Model
     {
+        protected $customType = ObjectCustomContextPayload::class;
+        protected $customDataType = 'map';
+        /**
+         * User-defined object contexts.
+         *
+         * @param ObjectCustomContextPayload[] $custom
+         */
+        public function setCustom($custom)
+        {
+        }
+        /**
+         * @return ObjectCustomContextPayload[]
+         */
+        public function getCustom()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectCustomContextPayload[]
+     * Runtime class alias of \Google\Service\Storage\StorageObjectContexts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustom()
+    class Google_Service_Storage_StorageObjectContexts extends \Google\Service\Storage\StorageObjectContexts
     {
     }
 }

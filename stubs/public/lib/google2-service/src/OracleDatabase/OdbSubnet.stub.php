@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class OdbSubnet extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const PURPOSE_PURPOSE_UNSPECIFIED = 'PURPOSE_UNSPECIFIED';
-    /**
-     * Subnet to be used for client connections.
-     */
-    public const PURPOSE_CLIENT_SUBNET = 'CLIENT_SUBNET';
-    /**
-     * Subnet to be used for backup.
-     */
-    public const PURPOSE_BACKUP_SUBNET = 'BACKUP_SUBNET';
-    /**
-     * Default unspecified value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Indicates that the resource is in provisioning state.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * Indicates that the resource is in available state.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * Indicates that the resource is in terminating state.
-     */
-    public const STATE_TERMINATING = 'TERMINATING';
-    /**
-     * Indicates that the resource is in failed state.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Required. The CIDR range of the subnet.
-     *
-     * @var string
-     */
-    public $cidrRange;
-    /**
-     * Output only. The date and time that the OdbNetwork was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Labels or tags associated with the resource.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The name of the OdbSubnet resource in the following format: pro
-     * jects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{
-     * odb_subnet}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Purpose of the subnet.
-     *
-     * @var string
-     */
-    public $purpose;
-    /**
-     * Output only. State of the ODB Subnet.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Required. The CIDR range of the subnet.
-     *
-     * @param string $cidrRange
-     */
-    public function setCidrRange($cidrRange)
+namespace Google\Service\OracleDatabase {
+    class OdbSubnet extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const PURPOSE_PURPOSE_UNSPECIFIED = 'PURPOSE_UNSPECIFIED';
+        /**
+         * Subnet to be used for client connections.
+         */
+        public const PURPOSE_CLIENT_SUBNET = 'CLIENT_SUBNET';
+        /**
+         * Subnet to be used for backup.
+         */
+        public const PURPOSE_BACKUP_SUBNET = 'BACKUP_SUBNET';
+        /**
+         * Default unspecified value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Indicates that the resource is in provisioning state.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * Indicates that the resource is in available state.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * Indicates that the resource is in terminating state.
+         */
+        public const STATE_TERMINATING = 'TERMINATING';
+        /**
+         * Indicates that the resource is in failed state.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Required. The CIDR range of the subnet.
+         *
+         * @var string
+         */
+        public $cidrRange;
+        /**
+         * Output only. The date and time that the OdbNetwork was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Labels or tags associated with the resource.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The name of the OdbSubnet resource in the following format: pro
+         * jects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{
+         * odb_subnet}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Purpose of the subnet.
+         *
+         * @var string
+         */
+        public $purpose;
+        /**
+         * Output only. State of the ODB Subnet.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Required. The CIDR range of the subnet.
+         *
+         * @param string $cidrRange
+         */
+        public function setCidrRange($cidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCidrRange()
+        {
+        }
+        /**
+         * Output only. The date and time that the OdbNetwork was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Labels or tags associated with the resource.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The name of the OdbSubnet resource in the following format: pro
+         * jects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{
+         * odb_subnet}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Purpose of the subnet.
+         *
+         * Accepted values: PURPOSE_UNSPECIFIED, CLIENT_SUBNET, BACKUP_SUBNET
+         *
+         * @param self::PURPOSE_* $purpose
+         */
+        public function setPurpose($purpose)
+        {
+        }
+        /**
+         * @return self::PURPOSE_*
+         */
+        public function getPurpose()
+        {
+        }
+        /**
+         * Output only. State of the ODB Subnet.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PROVISIONING, AVAILABLE, TERMINATING,
+         * FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\OdbSubnet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCidrRange()
-    {
-    }
-    /**
-     * Output only. The date and time that the OdbNetwork was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Labels or tags associated with the resource.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The name of the OdbSubnet resource in the following format: pro
-     * jects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{
-     * odb_subnet}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Purpose of the subnet.
-     *
-     * Accepted values: PURPOSE_UNSPECIFIED, CLIENT_SUBNET, BACKUP_SUBNET
-     *
-     * @param self::PURPOSE_* $purpose
-     */
-    public function setPurpose($purpose)
-    {
-    }
-    /**
-     * @return self::PURPOSE_*
-     */
-    public function getPurpose()
-    {
-    }
-    /**
-     * Output only. State of the ODB Subnet.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PROVISIONING, AVAILABLE, TERMINATING,
-     * FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_OracleDatabase_OdbSubnet extends \Google\Service\OracleDatabase\OdbSubnet
     {
     }
 }

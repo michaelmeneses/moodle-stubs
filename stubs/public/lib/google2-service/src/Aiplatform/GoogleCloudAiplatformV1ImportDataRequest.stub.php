@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImportDataRequest extends \Google\Collection
-{
-    protected $collection_key = 'importConfigs';
-    protected $importConfigsType = GoogleCloudAiplatformV1ImportDataConfig::class;
-    protected $importConfigsDataType = 'array';
-    /**
-     * Required. The desired input locations. The contents of all input locations
-     * will be imported in one batch.
-     *
-     * @param GoogleCloudAiplatformV1ImportDataConfig[] $importConfigs
-     */
-    public function setImportConfigs($importConfigs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImportDataRequest extends \Google\Collection
     {
+        protected $collection_key = 'importConfigs';
+        protected $importConfigsType = GoogleCloudAiplatformV1ImportDataConfig::class;
+        protected $importConfigsDataType = 'array';
+        /**
+         * Required. The desired input locations. The contents of all input locations
+         * will be imported in one batch.
+         *
+         * @param GoogleCloudAiplatformV1ImportDataConfig[] $importConfigs
+         */
+        public function setImportConfigs($importConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ImportDataConfig[]
+         */
+        public function getImportConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ImportDataConfig[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportConfigs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImportDataRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportDataRequest
     {
     }
 }

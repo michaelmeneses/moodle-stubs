@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class FetchNetworkPolicyExternalAddressesResponse extends \Google\Collection
-{
-    protected $collection_key = 'externalAddresses';
-    protected $externalAddressesType = ExternalAddress::class;
-    protected $externalAddressesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of external IP addresses assigned to VMware workload VMs within the
-     * scope of the given network policy.
-     *
-     * @param ExternalAddress[] $externalAddresses
-     */
-    public function setExternalAddresses($externalAddresses)
+namespace Google\Service\VMwareEngine {
+    class FetchNetworkPolicyExternalAddressesResponse extends \Google\Collection
     {
+        protected $collection_key = 'externalAddresses';
+        protected $externalAddressesType = ExternalAddress::class;
+        protected $externalAddressesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of external IP addresses assigned to VMware workload VMs within the
+         * scope of the given network policy.
+         *
+         * @param ExternalAddress[] $externalAddresses
+         */
+        public function setExternalAddresses($externalAddresses)
+        {
+        }
+        /**
+         * @return ExternalAddress[]
+         */
+        public function getExternalAddresses()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExternalAddress[]
+     * Runtime class alias of \Google\Service\VMwareEngine\FetchNetworkPolicyExternalAddressesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalAddresses()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_VMwareEngine_FetchNetworkPolicyExternalAddressesResponse extends \Google\Service\VMwareEngine\FetchNetworkPolicyExternalAddressesResponse
     {
     }
 }

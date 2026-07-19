@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareIpBlock extends \Google\Collection
-{
-    protected $collection_key = 'ips';
-    /**
-     * The network gateway used by the VMware user cluster.
-     *
-     * @var string
-     */
-    public $gateway;
-    protected $ipsType = VmwareHostIp::class;
-    protected $ipsDataType = 'array';
-    /**
-     * The netmask used by the VMware user cluster.
-     *
-     * @var string
-     */
-    public $netmask;
-    /**
-     * The network gateway used by the VMware user cluster.
-     *
-     * @param string $gateway
-     */
-    public function setGateway($gateway)
+namespace Google\Service\GKEOnPrem {
+    class VmwareIpBlock extends \Google\Collection
     {
+        protected $collection_key = 'ips';
+        /**
+         * The network gateway used by the VMware user cluster.
+         *
+         * @var string
+         */
+        public $gateway;
+        protected $ipsType = VmwareHostIp::class;
+        protected $ipsDataType = 'array';
+        /**
+         * The netmask used by the VMware user cluster.
+         *
+         * @var string
+         */
+        public $netmask;
+        /**
+         * The network gateway used by the VMware user cluster.
+         *
+         * @param string $gateway
+         */
+        public function setGateway($gateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGateway()
+        {
+        }
+        /**
+         * The node's network configurations used by the VMware user cluster.
+         *
+         * @param VmwareHostIp[] $ips
+         */
+        public function setIps($ips)
+        {
+        }
+        /**
+         * @return VmwareHostIp[]
+         */
+        public function getIps()
+        {
+        }
+        /**
+         * The netmask used by the VMware user cluster.
+         *
+         * @param string $netmask
+         */
+        public function setNetmask($netmask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetmask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareIpBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGateway()
-    {
-    }
-    /**
-     * The node's network configurations used by the VMware user cluster.
-     *
-     * @param VmwareHostIp[] $ips
-     */
-    public function setIps($ips)
-    {
-    }
-    /**
-     * @return VmwareHostIp[]
-     */
-    public function getIps()
-    {
-    }
-    /**
-     * The netmask used by the VMware user cluster.
-     *
-     * @param string $netmask
-     */
-    public function setNetmask($netmask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetmask()
+    class Google_Service_GKEOnPrem_VmwareIpBlock extends \Google\Service\GKEOnPrem\VmwareIpBlock
     {
     }
 }

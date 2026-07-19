@@ -29,6 +29,9 @@
  */
 namespace datafield_date\privacy;
 
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
+use mod_data\privacy\datafield_provider;
 /**
  * Privacy Subsystem for datafield_date implementing null_provider.
  *

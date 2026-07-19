@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Blogger (v3).
- *
- * <p>
- * The Blogger API provides access to posts, comments and pages of a Blogger
- * blog.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/blogger/docs/3.0/getting_started" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Blogger extends \Google\Service
-{
-    /** Manage your Blogger account. */
-    const BLOGGER = "https://www.googleapis.com/auth/blogger";
-    /** View your Blogger account. */
-    const BLOGGER_READONLY = "https://www.googleapis.com/auth/blogger.readonly";
-    public $blogUserInfos;
-    public $blogs;
-    public $comments;
-    public $pageViews;
-    public $pages;
-    public $postUserInfos;
-    public $posts;
-    public $users;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Blogger service.
+     * Service definition for Blogger (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Blogger API provides access to posts, comments and pages of a Blogger
+     * blog.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/blogger/docs/3.0/getting_started" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Blogger extends \Google\Service
+    {
+        /** Manage your Blogger account. */
+        const BLOGGER = "https://www.googleapis.com/auth/blogger";
+        /** View your Blogger account. */
+        const BLOGGER_READONLY = "https://www.googleapis.com/auth/blogger.readonly";
+        public $blogUserInfos;
+        public $blogs;
+        public $comments;
+        public $pageViews;
+        public $pages;
+        public $postUserInfos;
+        public $posts;
+        public $users;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Blogger service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Blogger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Blogger extends \Google\Service\Blogger
     {
     }
 }

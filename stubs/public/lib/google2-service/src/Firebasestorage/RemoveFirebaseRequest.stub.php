@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebasestorage;
-
-class RemoveFirebaseRequest extends \Google\Model
-{
+namespace Google\Service\Firebasestorage {
+    class RemoveFirebaseRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firebasestorage\RemoveFirebaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firebasestorage_RemoveFirebaseRequest extends \Google\Service\Firebasestorage\RemoveFirebaseRequest
+    {
+    }
 }

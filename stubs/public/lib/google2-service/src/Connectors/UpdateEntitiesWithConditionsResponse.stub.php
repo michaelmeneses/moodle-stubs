@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class UpdateEntitiesWithConditionsResponse extends \Google\Model
-{
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Response returned by the external system.
-     *
-     * @var array[]
-     */
-    public $response;
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Connectors {
+    class UpdateEntitiesWithConditionsResponse extends \Google\Model
     {
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Response returned by the external system.
+         *
+         * @var array[]
+         */
+        public $response;
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Response returned by the external system.
+         *
+         * @param array[] $response
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\UpdateEntitiesWithConditionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Response returned by the external system.
-     *
-     * @param array[] $response
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResponse()
+    class Google_Service_Connectors_UpdateEntitiesWithConditionsResponse extends \Google\Service\Connectors\UpdateEntitiesWithConditionsResponse
     {
     }
 }

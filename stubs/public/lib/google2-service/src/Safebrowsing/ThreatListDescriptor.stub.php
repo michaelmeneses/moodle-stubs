@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatListDescriptor extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $platformType;
-    /**
-     * @var string
-     */
-    public $threatEntryType;
-    /**
-     * @var string
-     */
-    public $threatType;
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
+namespace Google\Service\Safebrowsing {
+    class ThreatListDescriptor extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $platformType;
+        /**
+         * @var string
+         */
+        public $threatEntryType;
+        /**
+         * @var string
+         */
+        public $threatType;
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatEntryType($threatEntryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatEntryType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatListDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatEntryType($threatEntryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatEntryType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
+    class Google_Service_Safebrowsing_ThreatListDescriptor extends \Google\Service\Safebrowsing\ThreatListDescriptor
     {
     }
 }

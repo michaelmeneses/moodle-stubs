@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1TransactionDataUser extends \Google\Model
-{
-    /**
-     * Optional. Unique account identifier for this user. If using account
-     * defender, this should match the hashed_account_id field. Otherwise, a
-     * unique and persistent identifier for this account.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Optional. The epoch milliseconds of the user's account creation.
-     *
-     * @var string
-     */
-    public $creationMs;
-    /**
-     * Optional. The email address of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Optional. Whether the email has been verified to be accessible by the user
-     * (OTP or similar).
-     *
-     * @var bool
-     */
-    public $emailVerified;
-    /**
-     * Optional. The phone number of the user, with country code.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Optional. Whether the phone number has been verified to be accessible by
-     * the user (OTP or similar).
-     *
-     * @var bool
-     */
-    public $phoneVerified;
-    /**
-     * Optional. Unique account identifier for this user. If using account
-     * defender, this should match the hashed_account_id field. Otherwise, a
-     * unique and persistent identifier for this account.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1TransactionDataUser extends \Google\Model
     {
+        /**
+         * Optional. Unique account identifier for this user. If using account
+         * defender, this should match the hashed_account_id field. Otherwise, a
+         * unique and persistent identifier for this account.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Optional. The epoch milliseconds of the user's account creation.
+         *
+         * @var string
+         */
+        public $creationMs;
+        /**
+         * Optional. The email address of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Optional. Whether the email has been verified to be accessible by the user
+         * (OTP or similar).
+         *
+         * @var bool
+         */
+        public $emailVerified;
+        /**
+         * Optional. The phone number of the user, with country code.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Optional. Whether the phone number has been verified to be accessible by
+         * the user (OTP or similar).
+         *
+         * @var bool
+         */
+        public $phoneVerified;
+        /**
+         * Optional. Unique account identifier for this user. If using account
+         * defender, this should match the hashed_account_id field. Otherwise, a
+         * unique and persistent identifier for this account.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Optional. The epoch milliseconds of the user's account creation.
+         *
+         * @param string $creationMs
+         */
+        public function setCreationMs($creationMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationMs()
+        {
+        }
+        /**
+         * Optional. The email address of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Optional. Whether the email has been verified to be accessible by the user
+         * (OTP or similar).
+         *
+         * @param bool $emailVerified
+         */
+        public function setEmailVerified($emailVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmailVerified()
+        {
+        }
+        /**
+         * Optional. The phone number of the user, with country code.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Optional. Whether the phone number has been verified to be accessible by
+         * the user (OTP or similar).
+         *
+         * @param bool $phoneVerified
+         */
+        public function setPhoneVerified($phoneVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPhoneVerified()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Optional. The epoch milliseconds of the user's account creation.
-     *
-     * @param string $creationMs
-     */
-    public function setCreationMs($creationMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationMs()
-    {
-    }
-    /**
-     * Optional. The email address of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Optional. Whether the email has been verified to be accessible by the user
-     * (OTP or similar).
-     *
-     * @param bool $emailVerified
-     */
-    public function setEmailVerified($emailVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEmailVerified()
-    {
-    }
-    /**
-     * Optional. The phone number of the user, with country code.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Optional. Whether the phone number has been verified to be accessible by
-     * the user (OTP or similar).
-     *
-     * @param bool $phoneVerified
-     */
-    public function setPhoneVerified($phoneVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPhoneVerified()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1TransactionDataUser extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataUser
     {
     }
 }

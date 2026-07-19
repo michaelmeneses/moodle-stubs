@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListSitesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sites';
-    /**
-     * Continuation token used to page through sites. To retrieve the next page of
-     * the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sitesType = Site::class;
-    protected $sitesDataType = 'array';
-    /**
-     * Continuation token used to page through sites. To retrieve the next page of
-     * the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Adsense {
+    class ListSitesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sites';
+        /**
+         * Continuation token used to page through sites. To retrieve the next page of
+         * the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sitesType = Site::class;
+        protected $sitesDataType = 'array';
+        /**
+         * Continuation token used to page through sites. To retrieve the next page of
+         * the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The sites returned in this list response.
+         *
+         * @param Site[] $sites
+         */
+        public function setSites($sites)
+        {
+        }
+        /**
+         * @return Site[]
+         */
+        public function getSites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\ListSitesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The sites returned in this list response.
-     *
-     * @param Site[] $sites
-     */
-    public function setSites($sites)
-    {
-    }
-    /**
-     * @return Site[]
-     */
-    public function getSites()
+    class Google_Service_Adsense_ListSitesResponse extends \Google\Service\Adsense\ListSitesResponse
     {
     }
 }

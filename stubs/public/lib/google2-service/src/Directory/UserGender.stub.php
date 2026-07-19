@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserGender extends \Google\Model
-{
-    /**
-     * AddressMeAs. A human-readable string containing the proper way to refer to
-     * the profile owner by humans for example he/him/his or they/them/their.
-     *
-     * @var string
-     */
-    public $addressMeAs;
-    /**
-     * Custom gender.
-     *
-     * @var string
-     */
-    public $customGender;
-    /**
-     * Gender.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * AddressMeAs. A human-readable string containing the proper way to refer to
-     * the profile owner by humans for example he/him/his or they/them/their.
-     *
-     * @param string $addressMeAs
-     */
-    public function setAddressMeAs($addressMeAs)
+namespace Google\Service\Directory {
+    class UserGender extends \Google\Model
     {
+        /**
+         * AddressMeAs. A human-readable string containing the proper way to refer to
+         * the profile owner by humans for example he/him/his or they/them/their.
+         *
+         * @var string
+         */
+        public $addressMeAs;
+        /**
+         * Custom gender.
+         *
+         * @var string
+         */
+        public $customGender;
+        /**
+         * Gender.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * AddressMeAs. A human-readable string containing the proper way to refer to
+         * the profile owner by humans for example he/him/his or they/them/their.
+         *
+         * @param string $addressMeAs
+         */
+        public function setAddressMeAs($addressMeAs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddressMeAs()
+        {
+        }
+        /**
+         * Custom gender.
+         *
+         * @param string $customGender
+         */
+        public function setCustomGender($customGender)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomGender()
+        {
+        }
+        /**
+         * Gender.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserGender registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressMeAs()
-    {
-    }
-    /**
-     * Custom gender.
-     *
-     * @param string $customGender
-     */
-    public function setCustomGender($customGender)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomGender()
-    {
-    }
-    /**
-     * Gender.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Directory_UserGender extends \Google\Service\Directory\UserGender
     {
     }
 }

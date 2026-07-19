@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ClusterOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    /**
-     * Output only. Child operation ids
-     *
-     * @var string[]
-     */
-    public $childOperationIds;
-    /**
-     * Output only. Name of the cluster for the operation.
-     *
-     * @var string
-     */
-    public $clusterName;
-    /**
-     * Output only. Cluster UUID for the operation.
-     *
-     * @var string
-     */
-    public $clusterUuid;
-    /**
-     * Output only. Short description of operation.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. Labels associated with the operation
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The operation type.
-     *
-     * @var string
-     */
-    public $operationType;
-    protected $statusType = ClusterOperationStatus::class;
-    protected $statusDataType = '';
-    protected $statusHistoryType = ClusterOperationStatus::class;
-    protected $statusHistoryDataType = 'array';
-    /**
-     * Output only. Errors encountered during operation execution.
-     *
-     * @var string[]
-     */
-    public $warnings;
-    /**
-     * Output only. Child operation ids
-     *
-     * @param string[] $childOperationIds
-     */
-    public function setChildOperationIds($childOperationIds)
+namespace Google\Service\Dataproc {
+    class ClusterOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        /**
+         * Output only. Child operation ids
+         *
+         * @var string[]
+         */
+        public $childOperationIds;
+        /**
+         * Output only. Name of the cluster for the operation.
+         *
+         * @var string
+         */
+        public $clusterName;
+        /**
+         * Output only. Cluster UUID for the operation.
+         *
+         * @var string
+         */
+        public $clusterUuid;
+        /**
+         * Output only. Short description of operation.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. Labels associated with the operation
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The operation type.
+         *
+         * @var string
+         */
+        public $operationType;
+        protected $statusType = ClusterOperationStatus::class;
+        protected $statusDataType = '';
+        protected $statusHistoryType = ClusterOperationStatus::class;
+        protected $statusHistoryDataType = 'array';
+        /**
+         * Output only. Errors encountered during operation execution.
+         *
+         * @var string[]
+         */
+        public $warnings;
+        /**
+         * Output only. Child operation ids
+         *
+         * @param string[] $childOperationIds
+         */
+        public function setChildOperationIds($childOperationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getChildOperationIds()
+        {
+        }
+        /**
+         * Output only. Name of the cluster for the operation.
+         *
+         * @param string $clusterName
+         */
+        public function setClusterName($clusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterName()
+        {
+        }
+        /**
+         * Output only. Cluster UUID for the operation.
+         *
+         * @param string $clusterUuid
+         */
+        public function setClusterUuid($clusterUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterUuid()
+        {
+        }
+        /**
+         * Output only. Short description of operation.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Labels associated with the operation
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The operation type.
+         *
+         * @param string $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * Output only. Current operation status.
+         *
+         * @param ClusterOperationStatus $status
+         */
+        public function setStatus(ClusterOperationStatus $status)
+        {
+        }
+        /**
+         * @return ClusterOperationStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. The previous operation status.
+         *
+         * @param ClusterOperationStatus[] $statusHistory
+         */
+        public function setStatusHistory($statusHistory)
+        {
+        }
+        /**
+         * @return ClusterOperationStatus[]
+         */
+        public function getStatusHistory()
+        {
+        }
+        /**
+         * Output only. Errors encountered during operation execution.
+         *
+         * @param string[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\ClusterOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildOperationIds()
-    {
-    }
-    /**
-     * Output only. Name of the cluster for the operation.
-     *
-     * @param string $clusterName
-     */
-    public function setClusterName($clusterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterName()
-    {
-    }
-    /**
-     * Output only. Cluster UUID for the operation.
-     *
-     * @param string $clusterUuid
-     */
-    public function setClusterUuid($clusterUuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterUuid()
-    {
-    }
-    /**
-     * Output only. Short description of operation.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Labels associated with the operation
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The operation type.
-     *
-     * @param string $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * Output only. Current operation status.
-     *
-     * @param ClusterOperationStatus $status
-     */
-    public function setStatus(ClusterOperationStatus $status)
-    {
-    }
-    /**
-     * @return ClusterOperationStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. The previous operation status.
-     *
-     * @param ClusterOperationStatus[] $statusHistory
-     */
-    public function setStatusHistory($statusHistory)
-    {
-    }
-    /**
-     * @return ClusterOperationStatus[]
-     */
-    public function getStatusHistory()
-    {
-    }
-    /**
-     * Output only. Errors encountered during operation execution.
-     *
-     * @param string[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarnings()
+    class Google_Service_Dataproc_ClusterOperationMetadata extends \Google\Service\Dataproc\ClusterOperationMetadata
     {
     }
 }

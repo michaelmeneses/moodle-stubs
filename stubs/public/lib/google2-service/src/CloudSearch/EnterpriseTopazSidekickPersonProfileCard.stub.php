@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPersonProfileCard extends \Google\Collection
-{
-    protected $collection_key = 'relatedPeople';
-    protected $relatedPeopleType = EnterpriseTopazSidekickPersonProfileCardRelatedPeople::class;
-    protected $relatedPeopleDataType = 'array';
-    protected $subjectType = EnterpriseTopazSidekickCommonPerson::class;
-    protected $subjectDataType = '';
-    /**
-     * @param EnterpriseTopazSidekickPersonProfileCardRelatedPeople[] $relatedPeople
-     */
-    public function setRelatedPeople($relatedPeople)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPersonProfileCard extends \Google\Collection
     {
+        protected $collection_key = 'relatedPeople';
+        protected $relatedPeopleType = EnterpriseTopazSidekickPersonProfileCardRelatedPeople::class;
+        protected $relatedPeopleDataType = 'array';
+        protected $subjectType = EnterpriseTopazSidekickCommonPerson::class;
+        protected $subjectDataType = '';
+        /**
+         * @param EnterpriseTopazSidekickPersonProfileCardRelatedPeople[] $relatedPeople
+         */
+        public function setRelatedPeople($relatedPeople)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPersonProfileCardRelatedPeople[]
+         */
+        public function getRelatedPeople()
+        {
+        }
+        /**
+         * The subject of the card.
+         *
+         * @param EnterpriseTopazSidekickCommonPerson $subject
+         */
+        public function setSubject(EnterpriseTopazSidekickCommonPerson $subject)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPerson
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickPersonProfileCardRelatedPeople[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPersonProfileCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelatedPeople()
-    {
-    }
-    /**
-     * The subject of the card.
-     *
-     * @param EnterpriseTopazSidekickCommonPerson $subject
-     */
-    public function setSubject(EnterpriseTopazSidekickCommonPerson $subject)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickCommonPerson
-     */
-    public function getSubject()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPersonProfileCard extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPersonProfileCard
     {
     }
 }

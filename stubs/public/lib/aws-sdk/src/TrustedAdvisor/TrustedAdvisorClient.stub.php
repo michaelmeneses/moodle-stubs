@@ -8,6 +8,7 @@
  */
 namespace Aws\TrustedAdvisor;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **TrustedAdvisor Public API** service.
  * @method \Aws\Result batchUpdateRecommendationResourceExclusion(array $args = [])

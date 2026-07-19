@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ProductPriceConfig extends \Google\Model
-{
-    protected $amountType = Amount::class;
-    protected $amountDataType = '';
-    /**
-     * Output only. 2-letter ISO region code where the product is available in.
-     * Ex. "US".
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Output only. The price in the region.
-     *
-     * @param Amount $amount
-     */
-    public function setAmount(Amount $amount)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ProductPriceConfig extends \Google\Model
     {
+        protected $amountType = Amount::class;
+        protected $amountDataType = '';
+        /**
+         * Output only. 2-letter ISO region code where the product is available in.
+         * Ex. "US".
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Output only. The price in the region.
+         *
+         * @param Amount $amount
+         */
+        public function setAmount(Amount $amount)
+        {
+        }
+        /**
+         * @return Amount
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * Output only. 2-letter ISO region code where the product is available in.
+         * Ex. "US".
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Amount
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ProductPriceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * Output only. 2-letter ISO region code where the product is available in.
-     * Ex. "US".
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_PaymentsResellerSubscription_ProductPriceConfig extends \Google\Service\PaymentsResellerSubscription\ProductPriceConfig
     {
     }
 }

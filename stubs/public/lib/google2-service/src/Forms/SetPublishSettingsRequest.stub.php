@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class SetPublishSettingsRequest extends \Google\Model
-{
-    protected $publishSettingsType = PublishSettings::class;
-    protected $publishSettingsDataType = '';
-    /**
-     * Optional. The `publish_settings` fields to update. This field mask accepts
-     * the following values: * `publish_state`: Updates or replaces all
-     * `publish_state` settings. * `"*"`: Updates or replaces all
-     * `publish_settings` fields.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The desired publish settings to apply to the form.
-     *
-     * @param PublishSettings $publishSettings
-     */
-    public function setPublishSettings(PublishSettings $publishSettings)
+namespace Google\Service\Forms {
+    class SetPublishSettingsRequest extends \Google\Model
     {
+        protected $publishSettingsType = PublishSettings::class;
+        protected $publishSettingsDataType = '';
+        /**
+         * Optional. The `publish_settings` fields to update. This field mask accepts
+         * the following values: * `publish_state`: Updates or replaces all
+         * `publish_state` settings. * `"*"`: Updates or replaces all
+         * `publish_settings` fields.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The desired publish settings to apply to the form.
+         *
+         * @param PublishSettings $publishSettings
+         */
+        public function setPublishSettings(PublishSettings $publishSettings)
+        {
+        }
+        /**
+         * @return PublishSettings
+         */
+        public function getPublishSettings()
+        {
+        }
+        /**
+         * Optional. The `publish_settings` fields to update. This field mask accepts
+         * the following values: * `publish_state`: Updates or replaces all
+         * `publish_state` settings. * `"*"`: Updates or replaces all
+         * `publish_settings` fields.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublishSettings
+     * Runtime class alias of \Google\Service\Forms\SetPublishSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublishSettings()
-    {
-    }
-    /**
-     * Optional. The `publish_settings` fields to update. This field mask accepts
-     * the following values: * `publish_state`: Updates or replaces all
-     * `publish_state` settings. * `"*"`: Updates or replaces all
-     * `publish_settings` fields.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Forms_SetPublishSettingsRequest extends \Google\Service\Forms\SetPublishSettingsRequest
     {
     }
 }

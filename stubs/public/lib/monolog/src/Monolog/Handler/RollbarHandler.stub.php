@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Rollbar\RollbarLogger;
+use Throwable;
+use Monolog\LogRecord;
 /**
  * Sends errors to Rollbar
  *

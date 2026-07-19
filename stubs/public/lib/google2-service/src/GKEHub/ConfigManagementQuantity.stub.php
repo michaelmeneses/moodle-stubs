@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementQuantity extends \Google\Model
-{
-    public $string;
-    public function setString($string)
+namespace Google\Service\GKEHub {
+    class ConfigManagementQuantity extends \Google\Model
     {
+        public $string;
+        public function setString($string)
+        {
+        }
+        public function getString()
+        {
+        }
     }
-    public function getString()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementQuantity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEHub_ConfigManagementQuantity extends \Google\Service\GKEHub\ConfigManagementQuantity
     {
     }
 }

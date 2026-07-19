@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine\Resource;
-
-/**
- * The "nodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vmwareengineService = new Google\Service\VMwareEngine(...);
- *   $nodes = $vmwareengineService->projects_locations_privateClouds_clusters_nodes;
- *  </code>
- */
-class ProjectsLocationsPrivateCloudsClustersNodes extends \Google\Service\Resource
-{
+namespace Google\Service\VMwareEngine\Resource {
+    use Google\Service\VMwareEngine\ListNodesResponse;
+    use Google\Service\VMwareEngine\Node;
     /**
-     * Gets details of a single node. (nodes.get)
-     *
-     * @param string $name Required. The resource name of the node to retrieve. For
-     * example: `projects/{project}/locations/{location}/privateClouds/{private_clou
-     * d}/clusters/{cluster}/nodes/{node}`
-     * @param array $optParams Optional parameters.
-     * @return Node
-     * @throws \Google\Service\Exception
+     * The "nodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vmwareengineService = new Google\Service\VMwareEngine(...);
+     *   $nodes = $vmwareengineService->projects_locations_privateClouds_clusters_nodes;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsPrivateCloudsClustersNodes extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single node. (nodes.get)
+         *
+         * @param string $name Required. The resource name of the node to retrieve. For
+         * example: `projects/{project}/locations/{location}/privateClouds/{private_clou
+         * d}/clusters/{cluster}/nodes/{node}`
+         * @param array $optParams Optional parameters.
+         * @return Node
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists nodes in a given cluster.
+         * (nodes.listProjectsLocationsPrivateCloudsClustersNodes)
+         *
+         * @param string $parent Required. The resource name of the cluster to be
+         * queried for nodes. Resource names are schemeless URIs that follow the
+         * conventions in https://cloud.google.com/apis/design/resource_names. For
+         * example: `projects/my-project/locations/us-central1-a/privateClouds/my-
+         * cloud/clusters/my-cluster`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of nodes to return in one page.
+         * The service may return fewer than this value. The maximum value is coerced to
+         * 1000. The default value of this field is 500.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListNodes` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListNodes` must match the call
+         * that provided the page token.
+         * @return ListNodesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsPrivateCloudsClustersNodes($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists nodes in a given cluster.
-     * (nodes.listProjectsLocationsPrivateCloudsClustersNodes)
-     *
-     * @param string $parent Required. The resource name of the cluster to be
-     * queried for nodes. Resource names are schemeless URIs that follow the
-     * conventions in https://cloud.google.com/apis/design/resource_names. For
-     * example: `projects/my-project/locations/us-central1-a/privateClouds/my-
-     * cloud/clusters/my-cluster`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of nodes to return in one page.
-     * The service may return fewer than this value. The maximum value is coerced to
-     * 1000. The default value of this field is 500.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListNodes` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListNodes` must match the call
-     * that provided the page token.
-     * @return ListNodesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\VMwareEngine\Resource\ProjectsLocationsPrivateCloudsClustersNodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsPrivateCloudsClustersNodes($parent, $optParams = [])
+    class Google_Service_VMwareEngine_Resource_ProjectsLocationsPrivateCloudsClustersNodes extends \Google\Service\VMwareEngine\Resource\ProjectsLocationsPrivateCloudsClustersNodes
     {
     }
 }

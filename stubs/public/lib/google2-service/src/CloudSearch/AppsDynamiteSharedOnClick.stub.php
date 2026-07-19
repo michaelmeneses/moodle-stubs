@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedOnClick extends \Google\Model
-{
-    protected $actionType = AppsDynamiteSharedAction::class;
-    protected $actionDataType = '';
-    public $action;
-    protected $hostAppActionType = HostAppActionMarkup::class;
-    protected $hostAppActionDataType = '';
-    public $hostAppAction;
-    protected $openDynamicLinkActionType = AppsDynamiteSharedAction::class;
-    protected $openDynamicLinkActionDataType = '';
-    public $openDynamicLinkAction;
-    protected $openLinkType = AppsDynamiteSharedOpenLink::class;
-    protected $openLinkDataType = '';
-    public $openLink;
-    /**
-     * @param AppsDynamiteSharedAction
-     */
-    public function setAction(AppsDynamiteSharedAction $action)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedOnClick extends \Google\Model
     {
+        protected $actionType = AppsDynamiteSharedAction::class;
+        protected $actionDataType = '';
+        public $action;
+        protected $hostAppActionType = HostAppActionMarkup::class;
+        protected $hostAppActionDataType = '';
+        public $hostAppAction;
+        protected $openDynamicLinkActionType = AppsDynamiteSharedAction::class;
+        protected $openDynamicLinkActionDataType = '';
+        public $openDynamicLinkAction;
+        protected $openLinkType = AppsDynamiteSharedOpenLink::class;
+        protected $openLinkDataType = '';
+        public $openLink;
+        /**
+         * @param AppsDynamiteSharedAction
+         */
+        public function setAction(AppsDynamiteSharedAction $action)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param HostAppActionMarkup
+         */
+        public function setHostAppAction(HostAppActionMarkup $hostAppAction)
+        {
+        }
+        /**
+         * @return HostAppActionMarkup
+         */
+        public function getHostAppAction()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAction
+         */
+        public function setOpenDynamicLinkAction(AppsDynamiteSharedAction $openDynamicLinkAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAction
+         */
+        public function getOpenDynamicLinkAction()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOpenLink
+         */
+        public function setOpenLink(AppsDynamiteSharedOpenLink $openLink)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOpenLink
+         */
+        public function getOpenLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedAction
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedOnClick registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param HostAppActionMarkup
-     */
-    public function setHostAppAction(HostAppActionMarkup $hostAppAction)
-    {
-    }
-    /**
-     * @return HostAppActionMarkup
-     */
-    public function getHostAppAction()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAction
-     */
-    public function setOpenDynamicLinkAction(AppsDynamiteSharedAction $openDynamicLinkAction)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAction
-     */
-    public function getOpenDynamicLinkAction()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOpenLink
-     */
-    public function setOpenLink(AppsDynamiteSharedOpenLink $openLink)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOpenLink
-     */
-    public function getOpenLink()
+    class Google_Service_CloudSearch_AppsDynamiteSharedOnClick extends \Google\Service\CloudSearch\AppsDynamiteSharedOnClick
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InputValue extends \Google\Model
-{
-    protected $checkboxInputValueType = InputValueCheckboxInputValue::class;
-    protected $checkboxInputValueDataType = '';
-    protected $choiceInputValueType = InputValueChoiceInputValue::class;
-    protected $choiceInputValueDataType = '';
-    /**
-     * Required. Id of the corresponding input field.
-     *
-     * @var string
-     */
-    public $inputFieldId;
-    protected $textInputValueType = InputValueTextInputValue::class;
-    protected $textInputValueDataType = '';
-    /**
-     * Value for checkbox input field.
-     *
-     * @param InputValueCheckboxInputValue $checkboxInputValue
-     */
-    public function setCheckboxInputValue(InputValueCheckboxInputValue $checkboxInputValue)
+namespace Google\Service\ShoppingContent {
+    class InputValue extends \Google\Model
     {
+        protected $checkboxInputValueType = InputValueCheckboxInputValue::class;
+        protected $checkboxInputValueDataType = '';
+        protected $choiceInputValueType = InputValueChoiceInputValue::class;
+        protected $choiceInputValueDataType = '';
+        /**
+         * Required. Id of the corresponding input field.
+         *
+         * @var string
+         */
+        public $inputFieldId;
+        protected $textInputValueType = InputValueTextInputValue::class;
+        protected $textInputValueDataType = '';
+        /**
+         * Value for checkbox input field.
+         *
+         * @param InputValueCheckboxInputValue $checkboxInputValue
+         */
+        public function setCheckboxInputValue(InputValueCheckboxInputValue $checkboxInputValue)
+        {
+        }
+        /**
+         * @return InputValueCheckboxInputValue
+         */
+        public function getCheckboxInputValue()
+        {
+        }
+        /**
+         * Value for choice input field.
+         *
+         * @param InputValueChoiceInputValue $choiceInputValue
+         */
+        public function setChoiceInputValue(InputValueChoiceInputValue $choiceInputValue)
+        {
+        }
+        /**
+         * @return InputValueChoiceInputValue
+         */
+        public function getChoiceInputValue()
+        {
+        }
+        /**
+         * Required. Id of the corresponding input field.
+         *
+         * @param string $inputFieldId
+         */
+        public function setInputFieldId($inputFieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputFieldId()
+        {
+        }
+        /**
+         * Value for text input field.
+         *
+         * @param InputValueTextInputValue $textInputValue
+         */
+        public function setTextInputValue(InputValueTextInputValue $textInputValue)
+        {
+        }
+        /**
+         * @return InputValueTextInputValue
+         */
+        public function getTextInputValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputValueCheckboxInputValue
+     * Runtime class alias of \Google\Service\ShoppingContent\InputValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckboxInputValue()
-    {
-    }
-    /**
-     * Value for choice input field.
-     *
-     * @param InputValueChoiceInputValue $choiceInputValue
-     */
-    public function setChoiceInputValue(InputValueChoiceInputValue $choiceInputValue)
-    {
-    }
-    /**
-     * @return InputValueChoiceInputValue
-     */
-    public function getChoiceInputValue()
-    {
-    }
-    /**
-     * Required. Id of the corresponding input field.
-     *
-     * @param string $inputFieldId
-     */
-    public function setInputFieldId($inputFieldId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputFieldId()
-    {
-    }
-    /**
-     * Value for text input field.
-     *
-     * @param InputValueTextInputValue $textInputValue
-     */
-    public function setTextInputValue(InputValueTextInputValue $textInputValue)
-    {
-    }
-    /**
-     * @return InputValueTextInputValue
-     */
-    public function getTextInputValue()
+    class Google_Service_ShoppingContent_InputValue extends \Google\Service\ShoppingContent\InputValue
     {
     }
 }

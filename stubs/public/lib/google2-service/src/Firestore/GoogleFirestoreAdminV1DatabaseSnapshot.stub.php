@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1DatabaseSnapshot extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $database;
-    /**
-     * @var string
-     */
-    public $snapshotTime;
-    /**
-     * @param string
-     */
-    public function setDatabase($database)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1DatabaseSnapshot extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $database;
+        /**
+         * @var string
+         */
+        public $snapshotTime;
+        /**
+         * @param string
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnapshotTime($snapshotTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1DatabaseSnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnapshotTime($snapshotTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTime()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1DatabaseSnapshot extends \Google\Service\Firestore\GoogleFirestoreAdminV1DatabaseSnapshot
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DataProfileFindingLocation extends \Google\Model
-{
-    /**
-     * Name of the container where the finding is located. The top-level name is
-     * the source file name or table name. Names of some common storage containers
-     * are formatted as follows: * BigQuery tables:
-     * `{project_id}:{dataset_id}.{table_id}` * Cloud Storage files:
-     * `gs://{bucket}/{path}`
-     *
-     * @var string
-     */
-    public $containerName;
-    protected $dataProfileFindingRecordLocationType = GooglePrivacyDlpV2DataProfileFindingRecordLocation::class;
-    protected $dataProfileFindingRecordLocationDataType = '';
-    /**
-     * Name of the container where the finding is located. The top-level name is
-     * the source file name or table name. Names of some common storage containers
-     * are formatted as follows: * BigQuery tables:
-     * `{project_id}:{dataset_id}.{table_id}` * Cloud Storage files:
-     * `gs://{bucket}/{path}`
-     *
-     * @param string $containerName
-     */
-    public function setContainerName($containerName)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DataProfileFindingLocation extends \Google\Model
     {
+        /**
+         * Name of the container where the finding is located. The top-level name is
+         * the source file name or table name. Names of some common storage containers
+         * are formatted as follows: * BigQuery tables:
+         * `{project_id}:{dataset_id}.{table_id}` * Cloud Storage files:
+         * `gs://{bucket}/{path}`
+         *
+         * @var string
+         */
+        public $containerName;
+        protected $dataProfileFindingRecordLocationType = GooglePrivacyDlpV2DataProfileFindingRecordLocation::class;
+        protected $dataProfileFindingRecordLocationDataType = '';
+        /**
+         * Name of the container where the finding is located. The top-level name is
+         * the source file name or table name. Names of some common storage containers
+         * are formatted as follows: * BigQuery tables:
+         * `{project_id}:{dataset_id}.{table_id}` * Cloud Storage files:
+         * `gs://{bucket}/{path}`
+         *
+         * @param string $containerName
+         */
+        public function setContainerName($containerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerName()
+        {
+        }
+        /**
+         * Location of a finding within a resource that produces a table data profile.
+         *
+         * @param GooglePrivacyDlpV2DataProfileFindingRecordLocation $dataProfileFindingRecordLocation
+         */
+        public function setDataProfileFindingRecordLocation(GooglePrivacyDlpV2DataProfileFindingRecordLocation $dataProfileFindingRecordLocation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DataProfileFindingRecordLocation
+         */
+        public function getDataProfileFindingRecordLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DataProfileFindingLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerName()
-    {
-    }
-    /**
-     * Location of a finding within a resource that produces a table data profile.
-     *
-     * @param GooglePrivacyDlpV2DataProfileFindingRecordLocation $dataProfileFindingRecordLocation
-     */
-    public function setDataProfileFindingRecordLocation(GooglePrivacyDlpV2DataProfileFindingRecordLocation $dataProfileFindingRecordLocation)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DataProfileFindingRecordLocation
-     */
-    public function getDataProfileFindingRecordLocation()
+    class Google_Service_DLP_GooglePrivacyDlpV2DataProfileFindingLocation extends \Google\Service\DLP\GooglePrivacyDlpV2DataProfileFindingLocation
     {
     }
 }

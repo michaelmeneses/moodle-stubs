@@ -21,69 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement\Resource;
-
-/**
- * The "consumers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicemanagementService = new Google\Service\ServiceManagement(...);
- *   $consumers = $servicemanagementService->services_consumers;
- *  </code>
- */
-class ServicesConsumers extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceManagement\Resource {
+    use Google\Service\ServiceManagement\GetIamPolicyRequest;
+    use Google\Service\ServiceManagement\Policy;
+    use Google\Service\ServiceManagement\SetIamPolicyRequest;
+    use Google\Service\ServiceManagement\TestIamPermissionsRequest;
+    use Google\Service\ServiceManagement\TestIamPermissionsResponse;
     /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (consumers.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * The "consumers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicemanagementService = new Google\Service\ServiceManagement(...);
+     *   $consumers = $servicemanagementService->services_consumers;
+     *  </code>
      */
-    public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+    class ServicesConsumers extends \Google\Service\Resource
     {
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (consumers.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
+         * `PERMISSION_DENIED` errors. (consumers.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * `NOT_FOUND` error. Note: This operation is designed to be used for building
+         * permission-aware UIs and command-line tools, not for authorization checking.
+         * This operation may "fail open" without warning.
+         * (consumers.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
-     * `PERMISSION_DENIED` errors. (consumers.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceManagement\Resource\ServicesConsumers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * `NOT_FOUND` error. Note: This operation is designed to be used for building
-     * permission-aware UIs and command-line tools, not for authorization checking.
-     * This operation may "fail open" without warning.
-     * (consumers.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_ServiceManagement_Resource_ServicesConsumers extends \Google\Service\ServiceManagement\Resource\ServicesConsumers
     {
     }
 }

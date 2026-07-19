@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder;
 
+use context_system;
+use core_question\local\bank\column_base;
+use core_question\local\bank\column_manager_base;
+use core_question\local\bank\question_edit_contexts;
+use core_question\local\bank\view;
+use core_question\local\bank\question_bank_helper;
+use qbank_columnsortorder\local\bank\column_action_move;
+use qbank_columnsortorder\local\bank\column_action_remove;
+use qbank_columnsortorder\local\bank\column_action_resize;
+use qbank_columnsortorder\local\bank\preview_view;
+use moodle_url;
 /**
  * Class column_manager responsible for loading and saving order to the config setting.
  *

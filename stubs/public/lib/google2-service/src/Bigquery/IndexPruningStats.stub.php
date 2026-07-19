@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IndexPruningStats extends \Google\Model
-{
-    protected $baseTableType = TableReference::class;
-    protected $baseTableDataType = '';
-    /**
-     * The index id.
-     *
-     * @var string
-     */
-    public $indexId;
-    /**
-     * The number of parallel inputs after index pruning.
-     *
-     * @var string
-     */
-    public $postIndexPruningParallelInputCount;
-    /**
-     * The number of parallel inputs before index pruning.
-     *
-     * @var string
-     */
-    public $preIndexPruningParallelInputCount;
-    /**
-     * The base table reference.
-     *
-     * @param TableReference $baseTable
-     */
-    public function setBaseTable(TableReference $baseTable)
+namespace Google\Service\Bigquery {
+    class IndexPruningStats extends \Google\Model
     {
+        protected $baseTableType = TableReference::class;
+        protected $baseTableDataType = '';
+        /**
+         * The index id.
+         *
+         * @var string
+         */
+        public $indexId;
+        /**
+         * The number of parallel inputs after index pruning.
+         *
+         * @var string
+         */
+        public $postIndexPruningParallelInputCount;
+        /**
+         * The number of parallel inputs before index pruning.
+         *
+         * @var string
+         */
+        public $preIndexPruningParallelInputCount;
+        /**
+         * The base table reference.
+         *
+         * @param TableReference $baseTable
+         */
+        public function setBaseTable(TableReference $baseTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getBaseTable()
+        {
+        }
+        /**
+         * The index id.
+         *
+         * @param string $indexId
+         */
+        public function setIndexId($indexId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexId()
+        {
+        }
+        /**
+         * The number of parallel inputs after index pruning.
+         *
+         * @param string $postIndexPruningParallelInputCount
+         */
+        public function setPostIndexPruningParallelInputCount($postIndexPruningParallelInputCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostIndexPruningParallelInputCount()
+        {
+        }
+        /**
+         * The number of parallel inputs before index pruning.
+         *
+         * @param string $preIndexPruningParallelInputCount
+         */
+        public function setPreIndexPruningParallelInputCount($preIndexPruningParallelInputCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreIndexPruningParallelInputCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableReference
+     * Runtime class alias of \Google\Service\Bigquery\IndexPruningStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseTable()
-    {
-    }
-    /**
-     * The index id.
-     *
-     * @param string $indexId
-     */
-    public function setIndexId($indexId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndexId()
-    {
-    }
-    /**
-     * The number of parallel inputs after index pruning.
-     *
-     * @param string $postIndexPruningParallelInputCount
-     */
-    public function setPostIndexPruningParallelInputCount($postIndexPruningParallelInputCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostIndexPruningParallelInputCount()
-    {
-    }
-    /**
-     * The number of parallel inputs before index pruning.
-     *
-     * @param string $preIndexPruningParallelInputCount
-     */
-    public function setPreIndexPruningParallelInputCount($preIndexPruningParallelInputCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreIndexPruningParallelInputCount()
+    class Google_Service_Bigquery_IndexPruningStats extends \Google\Service\Bigquery\IndexPruningStats
     {
     }
 }

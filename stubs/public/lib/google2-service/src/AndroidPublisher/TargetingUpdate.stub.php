@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TargetingUpdate extends \Google\Model
-{
-    protected $allUsersType = AllUsers::class;
-    protected $allUsersDataType = '';
-    protected $androidSdksType = AndroidSdks::class;
-    protected $androidSdksDataType = '';
-    protected $regionsType = Regions::class;
-    protected $regionsDataType = '';
-    /**
-     * All users are targeted.
-     *
-     * @param AllUsers $allUsers
-     */
-    public function setAllUsers(AllUsers $allUsers)
+namespace Google\Service\AndroidPublisher {
+    class TargetingUpdate extends \Google\Model
     {
+        protected $allUsersType = AllUsers::class;
+        protected $allUsersDataType = '';
+        protected $androidSdksType = AndroidSdks::class;
+        protected $androidSdksDataType = '';
+        protected $regionsType = Regions::class;
+        protected $regionsDataType = '';
+        /**
+         * All users are targeted.
+         *
+         * @param AllUsers $allUsers
+         */
+        public function setAllUsers(AllUsers $allUsers)
+        {
+        }
+        /**
+         * @return AllUsers
+         */
+        public function getAllUsers()
+        {
+        }
+        /**
+         * Additional android sdk levels are targeted by the recovery action.
+         *
+         * @param AndroidSdks $androidSdks
+         */
+        public function setAndroidSdks(AndroidSdks $androidSdks)
+        {
+        }
+        /**
+         * @return AndroidSdks
+         */
+        public function getAndroidSdks()
+        {
+        }
+        /**
+         * Additional regions are targeted by the recovery action.
+         *
+         * @param Regions $regions
+         */
+        public function setRegions(Regions $regions)
+        {
+        }
+        /**
+         * @return Regions
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllUsers
+     * Runtime class alias of \Google\Service\AndroidPublisher\TargetingUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllUsers()
-    {
-    }
-    /**
-     * Additional android sdk levels are targeted by the recovery action.
-     *
-     * @param AndroidSdks $androidSdks
-     */
-    public function setAndroidSdks(AndroidSdks $androidSdks)
-    {
-    }
-    /**
-     * @return AndroidSdks
-     */
-    public function getAndroidSdks()
-    {
-    }
-    /**
-     * Additional regions are targeted by the recovery action.
-     *
-     * @param Regions $regions
-     */
-    public function setRegions(Regions $regions)
-    {
-    }
-    /**
-     * @return Regions
-     */
-    public function getRegions()
+    class Google_Service_AndroidPublisher_TargetingUpdate extends \Google\Service\AndroidPublisher\TargetingUpdate
     {
     }
 }

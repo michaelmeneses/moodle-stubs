@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DemoteMasterConfiguration extends \Google\Model
-{
-    /**
-     * This is always `sql#demoteMasterConfiguration`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $mysqlReplicaConfigurationType = DemoteMasterMySqlReplicaConfiguration::class;
-    protected $mysqlReplicaConfigurationDataType = '';
-    /**
-     * This is always `sql#demoteMasterConfiguration`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class DemoteMasterConfiguration extends \Google\Model
     {
+        /**
+         * This is always `sql#demoteMasterConfiguration`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $mysqlReplicaConfigurationType = DemoteMasterMySqlReplicaConfiguration::class;
+        protected $mysqlReplicaConfigurationDataType = '';
+        /**
+         * This is always `sql#demoteMasterConfiguration`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * MySQL specific configuration when replicating from a MySQL on-premises
+         * primary instance. Replication configuration information such as the
+         * username, password, certificates, and keys are not stored in the instance
+         * metadata. The configuration information is used only to set up the
+         * replication connection and is stored by MySQL in a file named `master.info`
+         * in the data directory.
+         *
+         * @param DemoteMasterMySqlReplicaConfiguration $mysqlReplicaConfiguration
+         */
+        public function setMysqlReplicaConfiguration(DemoteMasterMySqlReplicaConfiguration $mysqlReplicaConfiguration)
+        {
+        }
+        /**
+         * @return DemoteMasterMySqlReplicaConfiguration
+         */
+        public function getMysqlReplicaConfiguration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\DemoteMasterConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * MySQL specific configuration when replicating from a MySQL on-premises
-     * primary instance. Replication configuration information such as the
-     * username, password, certificates, and keys are not stored in the instance
-     * metadata. The configuration information is used only to set up the
-     * replication connection and is stored by MySQL in a file named `master.info`
-     * in the data directory.
-     *
-     * @param DemoteMasterMySqlReplicaConfiguration $mysqlReplicaConfiguration
-     */
-    public function setMysqlReplicaConfiguration(DemoteMasterMySqlReplicaConfiguration $mysqlReplicaConfiguration)
-    {
-    }
-    /**
-     * @return DemoteMasterMySqlReplicaConfiguration
-     */
-    public function getMysqlReplicaConfiguration()
+    class Google_Service_SQLAdmin_DemoteMasterConfiguration extends \Google\Service\SQLAdmin\DemoteMasterConfiguration
     {
     }
 }

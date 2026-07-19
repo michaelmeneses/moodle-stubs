@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleTypeLocalizedText extends \Google\Model
-{
-    /**
-     * The text's BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Localized string in the language corresponding to language_code below.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The text's BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleTypeLocalizedText extends \Google\Model
     {
+        /**
+         * The text's BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Localized string in the language corresponding to language_code below.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The text's BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Localized string in the language corresponding to language_code below.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleTypeLocalizedText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Localized string in the language corresponding to language_code below.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_PaymentsResellerSubscription_GoogleTypeLocalizedText extends \Google\Service\PaymentsResellerSubscription\GoogleTypeLocalizedText
     {
     }
 }

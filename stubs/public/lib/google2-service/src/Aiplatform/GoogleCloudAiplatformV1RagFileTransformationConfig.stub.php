@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagFileTransformationConfig extends \Google\Model
-{
-    protected $ragFileChunkingConfigType = GoogleCloudAiplatformV1RagFileChunkingConfig::class;
-    protected $ragFileChunkingConfigDataType = '';
-    /**
-     * Specifies the chunking config for RagFiles.
-     *
-     * @param GoogleCloudAiplatformV1RagFileChunkingConfig $ragFileChunkingConfig
-     */
-    public function setRagFileChunkingConfig(GoogleCloudAiplatformV1RagFileChunkingConfig $ragFileChunkingConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagFileTransformationConfig extends \Google\Model
     {
+        protected $ragFileChunkingConfigType = GoogleCloudAiplatformV1RagFileChunkingConfig::class;
+        protected $ragFileChunkingConfigDataType = '';
+        /**
+         * Specifies the chunking config for RagFiles.
+         *
+         * @param GoogleCloudAiplatformV1RagFileChunkingConfig $ragFileChunkingConfig
+         */
+        public function setRagFileChunkingConfig(GoogleCloudAiplatformV1RagFileChunkingConfig $ragFileChunkingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFileChunkingConfig
+         */
+        public function getRagFileChunkingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagFileChunkingConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileTransformationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagFileChunkingConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagFileTransformationConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileTransformationConfig
     {
     }
 }

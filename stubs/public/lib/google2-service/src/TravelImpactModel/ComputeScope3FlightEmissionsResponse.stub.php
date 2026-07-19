@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class ComputeScope3FlightEmissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'flightEmissions';
-    protected $flightEmissionsType = Scope3FlightEmissions::class;
-    protected $flightEmissionsDataType = 'array';
-    protected $modelVersionType = ModelVersion::class;
-    protected $modelVersionDataType = '';
-    /**
-     * List of flight segments with emission estimates.
-     *
-     * @param Scope3FlightEmissions[] $flightEmissions
-     */
-    public function setFlightEmissions($flightEmissions)
+namespace Google\Service\TravelImpactModel {
+    class ComputeScope3FlightEmissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'flightEmissions';
+        protected $flightEmissionsType = Scope3FlightEmissions::class;
+        protected $flightEmissionsDataType = 'array';
+        protected $modelVersionType = ModelVersion::class;
+        protected $modelVersionDataType = '';
+        /**
+         * List of flight segments with emission estimates.
+         *
+         * @param Scope3FlightEmissions[] $flightEmissions
+         */
+        public function setFlightEmissions($flightEmissions)
+        {
+        }
+        /**
+         * @return Scope3FlightEmissions[]
+         */
+        public function getFlightEmissions()
+        {
+        }
+        /**
+         * The model version under which emission estimates for all flights in this
+         * response were computed.
+         *
+         * @param ModelVersion $modelVersion
+         */
+        public function setModelVersion(ModelVersion $modelVersion)
+        {
+        }
+        /**
+         * @return ModelVersion
+         */
+        public function getModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Scope3FlightEmissions[]
+     * Runtime class alias of \Google\Service\TravelImpactModel\ComputeScope3FlightEmissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlightEmissions()
-    {
-    }
-    /**
-     * The model version under which emission estimates for all flights in this
-     * response were computed.
-     *
-     * @param ModelVersion $modelVersion
-     */
-    public function setModelVersion(ModelVersion $modelVersion)
-    {
-    }
-    /**
-     * @return ModelVersion
-     */
-    public function getModelVersion()
+    class Google_Service_TravelImpactModel_ComputeScope3FlightEmissionsResponse extends \Google\Service\TravelImpactModel\ComputeScope3FlightEmissionsResponse
     {
     }
 }

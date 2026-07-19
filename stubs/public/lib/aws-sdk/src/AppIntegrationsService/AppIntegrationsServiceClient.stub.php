@@ -8,6 +8,7 @@
  */
 namespace Aws\AppIntegrationsService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon AppIntegrations Service** service.
  * @method \Aws\Result createApplication(array $args = [])

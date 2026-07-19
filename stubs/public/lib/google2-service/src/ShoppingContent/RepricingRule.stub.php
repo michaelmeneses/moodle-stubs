@@ -21,210 +21,219 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRule extends \Google\Model
-{
-    /**
-     * @var RepricingRuleCostOfGoodsSaleRule
-     */
-    public $cogsBasedRule;
-    protected $cogsBasedRuleType = RepricingRuleCostOfGoodsSaleRule::class;
-    protected $cogsBasedRuleDataType = '';
-    /**
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * @var RepricingRuleEffectiveTime
-     */
-    public $effectiveTimePeriod;
-    protected $effectiveTimePeriodType = RepricingRuleEffectiveTime::class;
-    protected $effectiveTimePeriodDataType = '';
-    /**
-     * @var RepricingRuleEligibleOfferMatcher
-     */
-    public $eligibleOfferMatcher;
-    protected $eligibleOfferMatcherType = RepricingRuleEligibleOfferMatcher::class;
-    protected $eligibleOfferMatcherDataType = '';
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * @var bool
-     */
-    public $paused;
-    /**
-     * @var RepricingRuleRestriction
-     */
-    public $restriction;
-    protected $restrictionType = RepricingRuleRestriction::class;
-    protected $restrictionDataType = '';
-    /**
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * @var RepricingRuleStatsBasedRule
-     */
-    public $statsBasedRule;
-    protected $statsBasedRuleType = RepricingRuleStatsBasedRule::class;
-    protected $statsBasedRuleDataType = '';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param RepricingRuleCostOfGoodsSaleRule
-     */
-    public function setCogsBasedRule(RepricingRuleCostOfGoodsSaleRule $cogsBasedRule)
+namespace Google\Service\ShoppingContent {
+    class RepricingRule extends \Google\Model
     {
+        /**
+         * @var RepricingRuleCostOfGoodsSaleRule
+         */
+        public $cogsBasedRule;
+        protected $cogsBasedRuleType = RepricingRuleCostOfGoodsSaleRule::class;
+        protected $cogsBasedRuleDataType = '';
+        /**
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * @var RepricingRuleEffectiveTime
+         */
+        public $effectiveTimePeriod;
+        protected $effectiveTimePeriodType = RepricingRuleEffectiveTime::class;
+        protected $effectiveTimePeriodDataType = '';
+        /**
+         * @var RepricingRuleEligibleOfferMatcher
+         */
+        public $eligibleOfferMatcher;
+        protected $eligibleOfferMatcherType = RepricingRuleEligibleOfferMatcher::class;
+        protected $eligibleOfferMatcherDataType = '';
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * @var bool
+         */
+        public $paused;
+        /**
+         * @var RepricingRuleRestriction
+         */
+        public $restriction;
+        protected $restrictionType = RepricingRuleRestriction::class;
+        protected $restrictionDataType = '';
+        /**
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * @var RepricingRuleStatsBasedRule
+         */
+        public $statsBasedRule;
+        protected $statsBasedRuleType = RepricingRuleStatsBasedRule::class;
+        protected $statsBasedRuleDataType = '';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param RepricingRuleCostOfGoodsSaleRule
+         */
+        public function setCogsBasedRule(RepricingRuleCostOfGoodsSaleRule $cogsBasedRule)
+        {
+        }
+        /**
+         * @return RepricingRuleCostOfGoodsSaleRule
+         */
+        public function getCogsBasedRule()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * @param RepricingRuleEffectiveTime
+         */
+        public function setEffectiveTimePeriod(RepricingRuleEffectiveTime $effectiveTimePeriod)
+        {
+        }
+        /**
+         * @return RepricingRuleEffectiveTime
+         */
+        public function getEffectiveTimePeriod()
+        {
+        }
+        /**
+         * @param RepricingRuleEligibleOfferMatcher
+         */
+        public function setEligibleOfferMatcher(RepricingRuleEligibleOfferMatcher $eligibleOfferMatcher)
+        {
+        }
+        /**
+         * @return RepricingRuleEligibleOfferMatcher
+         */
+        public function getEligibleOfferMatcher()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPaused($paused)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPaused()
+        {
+        }
+        /**
+         * @param RepricingRuleRestriction
+         */
+        public function setRestriction(RepricingRuleRestriction $restriction)
+        {
+        }
+        /**
+         * @return RepricingRuleRestriction
+         */
+        public function getRestriction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
+        /**
+         * @param RepricingRuleStatsBasedRule
+         */
+        public function setStatsBasedRule(RepricingRuleStatsBasedRule $statsBasedRule)
+        {
+        }
+        /**
+         * @return RepricingRuleStatsBasedRule
+         */
+        public function getStatsBasedRule()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RepricingRuleCostOfGoodsSaleRule
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCogsBasedRule()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * @param RepricingRuleEffectiveTime
-     */
-    public function setEffectiveTimePeriod(RepricingRuleEffectiveTime $effectiveTimePeriod)
-    {
-    }
-    /**
-     * @return RepricingRuleEffectiveTime
-     */
-    public function getEffectiveTimePeriod()
-    {
-    }
-    /**
-     * @param RepricingRuleEligibleOfferMatcher
-     */
-    public function setEligibleOfferMatcher(RepricingRuleEligibleOfferMatcher $eligibleOfferMatcher)
-    {
-    }
-    /**
-     * @return RepricingRuleEligibleOfferMatcher
-     */
-    public function getEligibleOfferMatcher()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPaused($paused)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPaused()
-    {
-    }
-    /**
-     * @param RepricingRuleRestriction
-     */
-    public function setRestriction(RepricingRuleRestriction $restriction)
-    {
-    }
-    /**
-     * @return RepricingRuleRestriction
-     */
-    public function getRestriction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
-    {
-    }
-    /**
-     * @param RepricingRuleStatsBasedRule
-     */
-    public function setStatsBasedRule(RepricingRuleStatsBasedRule $statsBasedRule)
-    {
-    }
-    /**
-     * @return RepricingRuleStatsBasedRule
-     */
-    public function getStatsBasedRule()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_RepricingRule extends \Google\Service\ShoppingContent\RepricingRule
     {
     }
 }

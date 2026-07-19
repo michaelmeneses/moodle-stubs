@@ -29,6 +29,7 @@
  */
 namespace core_badges\external;
 
+use core\external\exporter;
 /**
  * Class for displaying information of a related badge.
  *

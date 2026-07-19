@@ -21,36 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp\Resource;
-
-/**
- * The "partnerTenants" collection of methods.
- * Typical usage is:
- *  <code>
- *   $beyondcorpService = new Google\Service\BeyondCorp(...);
- *   $partnerTenants = $beyondcorpService->organizations_locations_global_partnerTenants;
- *  </code>
- */
-class OrganizationsLocationsBeyondcorpGlobalPartnerTenants extends \Google\Service\Resource
-{
+namespace Google\Service\BeyondCorp\Resource {
+    use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+    use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
     /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * `NOT_FOUND` error. Note: This operation is designed to be used for building
-     * permission-aware UIs and command-line tools, not for authorization checking.
-     * This operation may "fail open" without warning.
-     * (partnerTenants.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GoogleIamV1TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleIamV1TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
+     * The "partnerTenants" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $beyondcorpService = new Google\Service\BeyondCorp(...);
+     *   $partnerTenants = $beyondcorpService->organizations_locations_global_partnerTenants;
+     *  </code>
      */
-    public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
+    class OrganizationsLocationsBeyondcorpGlobalPartnerTenants extends \Google\Service\Resource
+    {
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * `NOT_FOUND` error. Note: This operation is designed to be used for building
+         * permission-aware UIs and command-line tools, not for authorization checking.
+         * This operation may "fail open" without warning.
+         * (partnerTenants.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GoogleIamV1TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleIamV1TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BeyondCorp\Resource\OrganizationsLocationsBeyondcorpGlobalPartnerTenants registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BeyondCorp_Resource_OrganizationsLocationsBeyondcorpGlobalPartnerTenants extends \Google\Service\BeyondCorp\Resource\OrganizationsLocationsBeyondcorpGlobalPartnerTenants
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1InheritOrgUnitPolicyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $policySchema;
-    protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * @param string
-     */
-    public function setPolicySchema($policySchema)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1InheritOrgUnitPolicyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $policySchema;
+        protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * @param string
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1InheritOrgUnitPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1InheritOrgUnitPolicyRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1InheritOrgUnitPolicyRequest
     {
     }
 }

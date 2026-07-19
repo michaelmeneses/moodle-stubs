@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class NetworkConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $egressOption;
-    /**
-     * @var string
-     */
-    public $peeredNetwork;
-    /**
-     * @var string
-     */
-    public $peeredNetworkIpRange;
-    /**
-     * @param string
-     */
-    public function setEgressOption($egressOption)
+namespace Google\Service\CloudBuild {
+    class NetworkConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $egressOption;
+        /**
+         * @var string
+         */
+        public $peeredNetwork;
+        /**
+         * @var string
+         */
+        public $peeredNetworkIpRange;
+        /**
+         * @param string
+         */
+        public function setEgressOption($egressOption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEgressOption()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPeeredNetwork($peeredNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeeredNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPeeredNetworkIpRange($peeredNetworkIpRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeeredNetworkIpRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\NetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressOption()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPeeredNetwork($peeredNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeeredNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPeeredNetworkIpRange($peeredNetworkIpRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeeredNetworkIpRange()
+    class Google_Service_CloudBuild_NetworkConfig extends \Google\Service\CloudBuild\NetworkConfig
     {
     }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $videointelligenceService = new Google\Service\CloudVideoIntelligence(...);
- *   $operations = $videointelligenceService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudVideoIntelligence\Resource {
+    /**
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $videointelligenceService = new Google\Service\CloudVideoIntelligence(...);
+     *   $operations = $videointelligenceService->operations;
+     *  </code>
+     */
+    class Operations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudVideoIntelligence_Resource_Operations extends \Google\Service\CloudVideoIntelligence\Resource\Operations
+    {
+    }
 }

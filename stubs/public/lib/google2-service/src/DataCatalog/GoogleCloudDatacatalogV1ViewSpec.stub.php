@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ViewSpec extends \Google\Model
-{
-    /**
-     * Output only. The query that defines the table view.
-     *
-     * @var string
-     */
-    public $viewQuery;
-    /**
-     * Output only. The query that defines the table view.
-     *
-     * @param string $viewQuery
-     */
-    public function setViewQuery($viewQuery)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ViewSpec extends \Google\Model
     {
+        /**
+         * Output only. The query that defines the table view.
+         *
+         * @var string
+         */
+        public $viewQuery;
+        /**
+         * Output only. The query that defines the table view.
+         *
+         * @param string $viewQuery
+         */
+        public function setViewQuery($viewQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ViewSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getViewQuery()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ViewSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ViewSpec
     {
     }
 }

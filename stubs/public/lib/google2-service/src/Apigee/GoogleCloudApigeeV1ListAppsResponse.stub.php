@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'app';
-    protected $appType = GoogleCloudApigeeV1App::class;
-    protected $appDataType = 'array';
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total count of Apps.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * @param GoogleCloudApigeeV1App[] $app
-     */
-    public function setApp($app)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'app';
+        protected $appType = GoogleCloudApigeeV1App::class;
+        protected $appDataType = 'array';
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total count of Apps.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * @param GoogleCloudApigeeV1App[] $app
+         */
+        public function setApp($app)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1App[]
+         */
+        public function getApp()
+        {
+        }
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total count of Apps.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1App[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApp()
-    {
-    }
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total count of Apps.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListAppsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListAppsResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class GetOobConfirmationCodeResponse extends \Google\Model
-{
-    /**
-     * The email address that the email is sent to.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The fixed string "identitytoolkit#GetOobConfirmationCodeResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The code to be send to the user.
-     *
-     * @var string
-     */
-    public $oobCode;
-    /**
-     * The email address that the email is sent to.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\IdentityToolkit {
+    class GetOobConfirmationCodeResponse extends \Google\Model
     {
+        /**
+         * The email address that the email is sent to.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The fixed string "identitytoolkit#GetOobConfirmationCodeResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The code to be send to the user.
+         *
+         * @var string
+         */
+        public $oobCode;
+        /**
+         * The email address that the email is sent to.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#GetOobConfirmationCodeResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The code to be send to the user.
+         *
+         * @param string $oobCode
+         */
+        public function setOobCode($oobCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOobCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\GetOobConfirmationCodeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#GetOobConfirmationCodeResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The code to be send to the user.
-     *
-     * @param string $oobCode
-     */
-    public function setOobCode($oobCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOobCode()
+    class Google_Service_IdentityToolkit_GetOobConfirmationCodeResponse extends \Google\Service\IdentityToolkit\GetOobConfirmationCodeResponse
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class ExtractPostureRequest extends \Google\Model
-{
-    /**
-     * Required. An identifier for the posture.
-     *
-     * @var string
-     */
-    public $postureId;
-    /**
-     * Required. The organization, folder, or project from which policies are
-     * extracted. Must be within the organization defined in parent. Use one of
-     * the following formats: * `organization/{organization_number}` *
-     * `folder/{folder_number}` * `project/{project_number}`
-     *
-     * @var string
-     */
-    public $workload;
-    /**
-     * Required. An identifier for the posture.
-     *
-     * @param string $postureId
-     */
-    public function setPostureId($postureId)
+namespace Google\Service\SecurityPosture {
+    class ExtractPostureRequest extends \Google\Model
     {
+        /**
+         * Required. An identifier for the posture.
+         *
+         * @var string
+         */
+        public $postureId;
+        /**
+         * Required. The organization, folder, or project from which policies are
+         * extracted. Must be within the organization defined in parent. Use one of
+         * the following formats: * `organization/{organization_number}` *
+         * `folder/{folder_number}` * `project/{project_number}`
+         *
+         * @var string
+         */
+        public $workload;
+        /**
+         * Required. An identifier for the posture.
+         *
+         * @param string $postureId
+         */
+        public function setPostureId($postureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostureId()
+        {
+        }
+        /**
+         * Required. The organization, folder, or project from which policies are
+         * extracted. Must be within the organization defined in parent. Use one of
+         * the following formats: * `organization/{organization_number}` *
+         * `folder/{folder_number}` * `project/{project_number}`
+         *
+         * @param string $workload
+         */
+        public function setWorkload($workload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\ExtractPostureRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostureId()
-    {
-    }
-    /**
-     * Required. The organization, folder, or project from which policies are
-     * extracted. Must be within the organization defined in parent. Use one of
-     * the following formats: * `organization/{organization_number}` *
-     * `folder/{folder_number}` * `project/{project_number}`
-     *
-     * @param string $workload
-     */
-    public function setWorkload($workload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkload()
+    class Google_Service_SecurityPosture_ExtractPostureRequest extends \Google\Service\SecurityPosture\ExtractPostureRequest
     {
     }
 }

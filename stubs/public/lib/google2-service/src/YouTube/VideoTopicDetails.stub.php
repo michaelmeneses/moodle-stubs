@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoTopicDetails extends \Google\Collection
-{
-    protected $collection_key = 'topicIds';
-    /**
-     * Similar to topic_id, except that these topics are merely relevant to the
-     * video. These are topics that may be mentioned in, or appear in the video.
-     * You can retrieve information about each topic using Freebase Topic API.
-     *
-     * @var string[]
-     */
-    public $relevantTopicIds;
-    /**
-     * A list of Wikipedia URLs that provide a high-level description of the
-     * video's content.
-     *
-     * @var string[]
-     */
-    public $topicCategories;
-    /**
-     * A list of Freebase topic IDs that are centrally associated with the video.
-     * These are topics that are centrally featured in the video, and it can be
-     * said that the video is mainly about each of these. You can retrieve
-     * information about each topic using the < a
-     * href="http://wiki.freebase.com/wiki/Topic_API">Freebase Topic API.
-     *
-     * @var string[]
-     */
-    public $topicIds;
-    /**
-     * Similar to topic_id, except that these topics are merely relevant to the
-     * video. These are topics that may be mentioned in, or appear in the video.
-     * You can retrieve information about each topic using Freebase Topic API.
-     *
-     * @param string[] $relevantTopicIds
-     */
-    public function setRelevantTopicIds($relevantTopicIds)
+namespace Google\Service\YouTube {
+    class VideoTopicDetails extends \Google\Collection
     {
+        protected $collection_key = 'topicIds';
+        /**
+         * Similar to topic_id, except that these topics are merely relevant to the
+         * video. These are topics that may be mentioned in, or appear in the video.
+         * You can retrieve information about each topic using Freebase Topic API.
+         *
+         * @var string[]
+         */
+        public $relevantTopicIds;
+        /**
+         * A list of Wikipedia URLs that provide a high-level description of the
+         * video's content.
+         *
+         * @var string[]
+         */
+        public $topicCategories;
+        /**
+         * A list of Freebase topic IDs that are centrally associated with the video.
+         * These are topics that are centrally featured in the video, and it can be
+         * said that the video is mainly about each of these. You can retrieve
+         * information about each topic using the < a
+         * href="http://wiki.freebase.com/wiki/Topic_API">Freebase Topic API.
+         *
+         * @var string[]
+         */
+        public $topicIds;
+        /**
+         * Similar to topic_id, except that these topics are merely relevant to the
+         * video. These are topics that may be mentioned in, or appear in the video.
+         * You can retrieve information about each topic using Freebase Topic API.
+         *
+         * @param string[] $relevantTopicIds
+         */
+        public function setRelevantTopicIds($relevantTopicIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelevantTopicIds()
+        {
+        }
+        /**
+         * A list of Wikipedia URLs that provide a high-level description of the
+         * video's content.
+         *
+         * @param string[] $topicCategories
+         */
+        public function setTopicCategories($topicCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTopicCategories()
+        {
+        }
+        /**
+         * A list of Freebase topic IDs that are centrally associated with the video.
+         * These are topics that are centrally featured in the video, and it can be
+         * said that the video is mainly about each of these. You can retrieve
+         * information about each topic using the < a
+         * href="http://wiki.freebase.com/wiki/Topic_API">Freebase Topic API.
+         *
+         * @param string[] $topicIds
+         */
+        public function setTopicIds($topicIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTopicIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\VideoTopicDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelevantTopicIds()
-    {
-    }
-    /**
-     * A list of Wikipedia URLs that provide a high-level description of the
-     * video's content.
-     *
-     * @param string[] $topicCategories
-     */
-    public function setTopicCategories($topicCategories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTopicCategories()
-    {
-    }
-    /**
-     * A list of Freebase topic IDs that are centrally associated with the video.
-     * These are topics that are centrally featured in the video, and it can be
-     * said that the video is mainly about each of these. You can retrieve
-     * information about each topic using the < a
-     * href="http://wiki.freebase.com/wiki/Topic_API">Freebase Topic API.
-     *
-     * @param string[] $topicIds
-     */
-    public function setTopicIds($topicIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTopicIds()
+    class Google_Service_YouTube_VideoTopicDetails extends \Google\Service\YouTube\VideoTopicDetails
     {
     }
 }

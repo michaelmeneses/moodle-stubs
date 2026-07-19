@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveStreamSnippet extends \Google\Model
-{
-    /**
-     * The ID that YouTube uses to uniquely identify the channel that is
-     * transmitting the stream.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The stream's description. The value cannot be longer than 10000 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $isDefaultStream;
-    /**
-     * The date and time that the stream was created.
-     *
-     * @var string
-     */
-    public $publishedAt;
-    /**
-     * The stream's title. The value must be between 1 and 128 characters long.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The ID that YouTube uses to uniquely identify the channel that is
-     * transmitting the stream.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\YouTube {
+    class LiveStreamSnippet extends \Google\Model
     {
+        /**
+         * The ID that YouTube uses to uniquely identify the channel that is
+         * transmitting the stream.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The stream's description. The value cannot be longer than 10000 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * @var bool
+         */
+        public $isDefaultStream;
+        /**
+         * The date and time that the stream was created.
+         *
+         * @var string
+         */
+        public $publishedAt;
+        /**
+         * The stream's title. The value must be between 1 and 128 characters long.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The ID that YouTube uses to uniquely identify the channel that is
+         * transmitting the stream.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The stream's description. The value cannot be longer than 10000 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param bool $isDefaultStream
+         */
+        public function setIsDefaultStream($isDefaultStream)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefaultStream()
+        {
+        }
+        /**
+         * The date and time that the stream was created.
+         *
+         * @param string $publishedAt
+         */
+        public function setPublishedAt($publishedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishedAt()
+        {
+        }
+        /**
+         * The stream's title. The value must be between 1 and 128 characters long.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveStreamSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The stream's description. The value cannot be longer than 10000 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param bool $isDefaultStream
-     */
-    public function setIsDefaultStream($isDefaultStream)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDefaultStream()
-    {
-    }
-    /**
-     * The date and time that the stream was created.
-     *
-     * @param string $publishedAt
-     */
-    public function setPublishedAt($publishedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishedAt()
-    {
-    }
-    /**
-     * The stream's title. The value must be between 1 and 128 characters long.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_LiveStreamSnippet extends \Google\Service\YouTube\LiveStreamSnippet
     {
     }
 }

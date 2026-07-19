@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class HttpCookieEvidence extends \Google\Collection
-{
-    protected $collection_key = 'cookieNames';
-    /**
-     * Names of cookies that violate Google policies. For TOO_MANY_COOKIES policy,
-     * this will be the cookie names of top domains with the largest number of
-     * cookies. For other policies, this will be all the cookie names that violate
-     * the policy.
-     *
-     * @var string[]
-     */
-    public $cookieNames;
-    /**
-     * The largest number of cookies set by a creative. If this field is set,
-     * cookie_names above will be set to the cookie names of top domains with the
-     * largest number of cookies. This field will only be set for TOO_MANY_COOKIES
-     * policy.
-     *
-     * @var int
-     */
-    public $maxCookieCount;
-    /**
-     * Names of cookies that violate Google policies. For TOO_MANY_COOKIES policy,
-     * this will be the cookie names of top domains with the largest number of
-     * cookies. For other policies, this will be all the cookie names that violate
-     * the policy.
-     *
-     * @param string[] $cookieNames
-     */
-    public function setCookieNames($cookieNames)
+namespace Google\Service\RealTimeBidding {
+    class HttpCookieEvidence extends \Google\Collection
     {
+        protected $collection_key = 'cookieNames';
+        /**
+         * Names of cookies that violate Google policies. For TOO_MANY_COOKIES policy,
+         * this will be the cookie names of top domains with the largest number of
+         * cookies. For other policies, this will be all the cookie names that violate
+         * the policy.
+         *
+         * @var string[]
+         */
+        public $cookieNames;
+        /**
+         * The largest number of cookies set by a creative. If this field is set,
+         * cookie_names above will be set to the cookie names of top domains with the
+         * largest number of cookies. This field will only be set for TOO_MANY_COOKIES
+         * policy.
+         *
+         * @var int
+         */
+        public $maxCookieCount;
+        /**
+         * Names of cookies that violate Google policies. For TOO_MANY_COOKIES policy,
+         * this will be the cookie names of top domains with the largest number of
+         * cookies. For other policies, this will be all the cookie names that violate
+         * the policy.
+         *
+         * @param string[] $cookieNames
+         */
+        public function setCookieNames($cookieNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCookieNames()
+        {
+        }
+        /**
+         * The largest number of cookies set by a creative. If this field is set,
+         * cookie_names above will be set to the cookie names of top domains with the
+         * largest number of cookies. This field will only be set for TOO_MANY_COOKIES
+         * policy.
+         *
+         * @param int $maxCookieCount
+         */
+        public function setMaxCookieCount($maxCookieCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxCookieCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\HttpCookieEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCookieNames()
-    {
-    }
-    /**
-     * The largest number of cookies set by a creative. If this field is set,
-     * cookie_names above will be set to the cookie names of top domains with the
-     * largest number of cookies. This field will only be set for TOO_MANY_COOKIES
-     * policy.
-     *
-     * @param int $maxCookieCount
-     */
-    public function setMaxCookieCount($maxCookieCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxCookieCount()
+    class Google_Service_RealTimeBidding_HttpCookieEvidence extends \Google\Service\RealTimeBidding\HttpCookieEvidence
     {
     }
 }

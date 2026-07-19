@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListUserLicensesResponse extends \Google\Collection
-{
-    protected $collection_key = 'userLicenses';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userLicensesType = GoogleCloudDiscoveryengineV1UserLicense::class;
-    protected $userLicensesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListUserLicensesResponse extends \Google\Collection
     {
+        protected $collection_key = 'userLicenses';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userLicensesType = GoogleCloudDiscoveryengineV1UserLicense::class;
+        protected $userLicensesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All the customer's UserLicenses.
+         *
+         * @param GoogleCloudDiscoveryengineV1UserLicense[] $userLicenses
+         */
+        public function setUserLicenses($userLicenses)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1UserLicense[]
+         */
+        public function getUserLicenses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListUserLicensesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All the customer's UserLicenses.
-     *
-     * @param GoogleCloudDiscoveryengineV1UserLicense[] $userLicenses
-     */
-    public function setUserLicenses($userLicenses)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1UserLicense[]
-     */
-    public function getUserLicenses()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListUserLicensesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListUserLicensesResponse
     {
     }
 }

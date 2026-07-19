@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin\Resource;
-
-/**
- * The "eventEditRules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
- *   $eventEditRules = $analyticsadminService->properties_dataStreams_eventEditRules;
- *  </code>
- */
-class PropertiesDataStreamsEventEditRules extends \Google\Service\Resource
-{
+namespace Google\Service\GoogleAnalyticsAdmin\Resource {
+    use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest;
+    use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
     /**
-     * Changes the processing order of event edit rules on the specified stream.
-     * (eventEditRules.reorder)
-     *
-     * @param string $parent Required. Example format:
-     * properties/123/dataStreams/456
-     * @param GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "eventEditRules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
+     *   $eventEditRules = $analyticsadminService->properties_dataStreams_eventEditRules;
+     *  </code>
      */
-    public function reorder($parent, GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest $postBody, $optParams = [])
+    class PropertiesDataStreamsEventEditRules extends \Google\Service\Resource
+    {
+        /**
+         * Changes the processing order of event edit rules on the specified stream.
+         * (eventEditRules.reorder)
+         *
+         * @param string $parent Required. Example format:
+         * properties/123/dataStreams/456
+         * @param GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function reorder($parent, GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\Resource\PropertiesDataStreamsEventEditRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GoogleAnalyticsAdmin_Resource_PropertiesDataStreamsEventEditRules extends \Google\Service\GoogleAnalyticsAdmin\Resource\PropertiesDataStreamsEventEditRules
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1MigrationStateEvent extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const STATE_MIGRATION_STATE_UNSPECIFIED = 'MIGRATION_STATE_UNSPECIFIED';
-    /**
-     * The migration is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The migration is paused.
-     */
-    public const STATE_PAUSED = 'PAUSED';
-    /**
-     * The migration is complete.
-     */
-    public const STATE_COMPLETE = 'COMPLETE';
-    /**
-     * The new state of the migration.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The new state of the migration.
-     *
-     * Accepted values: MIGRATION_STATE_UNSPECIFIED, RUNNING, PAUSED, COMPLETE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1MigrationStateEvent extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const STATE_MIGRATION_STATE_UNSPECIFIED = 'MIGRATION_STATE_UNSPECIFIED';
+        /**
+         * The migration is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The migration is paused.
+         */
+        public const STATE_PAUSED = 'PAUSED';
+        /**
+         * The migration is complete.
+         */
+        public const STATE_COMPLETE = 'COMPLETE';
+        /**
+         * The new state of the migration.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The new state of the migration.
+         *
+         * Accepted values: MIGRATION_STATE_UNSPECIFIED, RUNNING, PAUSED, COMPLETE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1MigrationStateEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1MigrationStateEvent extends \Google\Service\Datastore\GoogleDatastoreAdminV1MigrationStateEvent
     {
     }
 }

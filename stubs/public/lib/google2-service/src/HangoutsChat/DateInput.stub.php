@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class DateInput extends \Google\Model
-{
-    /**
-     * Time since epoch time, in milliseconds.
-     *
-     * @var string
-     */
-    public $msSinceEpoch;
-    /**
-     * Time since epoch time, in milliseconds.
-     *
-     * @param string $msSinceEpoch
-     */
-    public function setMsSinceEpoch($msSinceEpoch)
+namespace Google\Service\HangoutsChat {
+    class DateInput extends \Google\Model
     {
+        /**
+         * Time since epoch time, in milliseconds.
+         *
+         * @var string
+         */
+        public $msSinceEpoch;
+        /**
+         * Time since epoch time, in milliseconds.
+         *
+         * @param string $msSinceEpoch
+         */
+        public function setMsSinceEpoch($msSinceEpoch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMsSinceEpoch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\DateInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMsSinceEpoch()
+    class Google_Service_HangoutsChat_DateInput extends \Google\Service\HangoutsChat\DateInput
     {
     }
 }

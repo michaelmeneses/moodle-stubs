@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2SummarySuggestion extends \Google\Collection
-{
-    protected $collection_key = 'summarySections';
-    protected $summarySectionsType = GoogleCloudDialogflowV2SummarySuggestionSummarySection::class;
-    protected $summarySectionsDataType = 'array';
-    /**
-     * Required. All the parts of generated summary.
-     *
-     * @param GoogleCloudDialogflowV2SummarySuggestionSummarySection[] $summarySections
-     */
-    public function setSummarySections($summarySections)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2SummarySuggestion extends \Google\Collection
     {
+        protected $collection_key = 'summarySections';
+        protected $summarySectionsType = GoogleCloudDialogflowV2SummarySuggestionSummarySection::class;
+        protected $summarySectionsDataType = 'array';
+        /**
+         * Required. All the parts of generated summary.
+         *
+         * @param GoogleCloudDialogflowV2SummarySuggestionSummarySection[] $summarySections
+         */
+        public function setSummarySections($summarySections)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SummarySuggestionSummarySection[]
+         */
+        public function getSummarySections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2SummarySuggestionSummarySection[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2SummarySuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSummarySections()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2SummarySuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2SummarySuggestion
     {
     }
 }

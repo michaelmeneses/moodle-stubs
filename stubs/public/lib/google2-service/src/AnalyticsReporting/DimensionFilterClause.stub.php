@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class DimensionFilterClause extends \Google\Collection
-{
-    protected $collection_key = 'filters';
-    protected $filtersType = DimensionFilter::class;
-    protected $filtersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $operator;
-    /**
-     * @param DimensionFilter[]
-     */
-    public function setFilters($filters)
+namespace Google\Service\AnalyticsReporting {
+    class DimensionFilterClause extends \Google\Collection
     {
+        protected $collection_key = 'filters';
+        protected $filtersType = DimensionFilter::class;
+        protected $filtersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $operator;
+        /**
+         * @param DimensionFilter[]
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return DimensionFilter[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionFilter[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\DimensionFilterClause registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
+    class Google_Service_AnalyticsReporting_DimensionFilterClause extends \Google\Service\AnalyticsReporting\DimensionFilterClause
     {
     }
 }

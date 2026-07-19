@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RuleBlock extends \Google\Collection
-{
-    protected $collection_key = 'fieldFilter';
-    protected $fieldFilterType = FieldFilter::class;
-    protected $fieldFilterDataType = 'array';
-    /**
-     * Optional. A list of non-auto field filters
-     *
-     * @param FieldFilter[] $fieldFilter
-     */
-    public function setFieldFilter($fieldFilter)
+namespace Google\Service\Dfareporting {
+    class RuleBlock extends \Google\Collection
     {
+        protected $collection_key = 'fieldFilter';
+        protected $fieldFilterType = FieldFilter::class;
+        protected $fieldFilterDataType = 'array';
+        /**
+         * Optional. A list of non-auto field filters
+         *
+         * @param FieldFilter[] $fieldFilter
+         */
+        public function setFieldFilter($fieldFilter)
+        {
+        }
+        /**
+         * @return FieldFilter[]
+         */
+        public function getFieldFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldFilter[]
+     * Runtime class alias of \Google\Service\Dfareporting\RuleBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldFilter()
+    class Google_Service_Dfareporting_RuleBlock extends \Google\Service\Dfareporting\RuleBlock
     {
     }
 }

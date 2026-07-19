@@ -29,6 +29,7 @@
  */
 namespace tool_lpmigrate;
 
+use core_competency\api;
 /**
  * Framework mapper class.
  *

@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet\Resource;
-
-/**
- * The "spaces" collection of methods.
- * Typical usage is:
- *  <code>
- *   $meetService = new Google\Service\Meet(...);
- *   $spaces = $meetService->spaces;
- *  </code>
- */
-class Spaces extends \Google\Service\Resource
-{
+namespace Google\Service\Meet\Resource {
+    use Google\Service\Meet\EndActiveConferenceRequest;
+    use Google\Service\Meet\MeetEmpty;
+    use Google\Service\Meet\Space;
     /**
-     * Creates a space. (spaces.create)
-     *
-     * @param Space $postBody
-     * @param array $optParams Optional parameters.
-     * @return Space
-     * @throws \Google\Service\Exception
+     * The "spaces" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $meetService = new Google\Service\Meet(...);
+     *   $spaces = $meetService->spaces;
+     *  </code>
      */
-    public function create(Space $postBody, $optParams = [])
+    class Spaces extends \Google\Service\Resource
     {
+        /**
+         * Creates a space. (spaces.create)
+         *
+         * @param Space $postBody
+         * @param array $optParams Optional parameters.
+         * @return Space
+         * @throws \Google\Service\Exception
+         */
+        public function create(Space $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Ends an active conference (if there's one). For an example, see [End active
+         * conference](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#end-active-conference). (spaces.endActiveConference)
+         *
+         * @param string $name Required. Resource name of the space. Format:
+         * `spaces/{space}`. `{space}` is the resource identifier for the space. It's a
+         * unique, server-generated ID and is case sensitive. For example,
+         * `jQCFfuBOdN5z`. For more information, see [How Meet identifies a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#identify-meeting-space).
+         * @param EndActiveConferenceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return MeetEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function endActiveConference($name, EndActiveConferenceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets details about a meeting space. For an example, see [Get a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#get-meeting-space). (spaces.get)
+         *
+         * @param string $name Required. Resource name of the space. Format:
+         * `spaces/{space}` or `spaces/{meetingCode}`. `{space}` is the resource
+         * identifier for the space. It's a unique, server-generated ID and is case
+         * sensitive. For example, `jQCFfuBOdN5z`. `{meetingCode}` is an alias for the
+         * space. It's a typeable, unique character string and is non-case sensitive.
+         * For example, `abc-mnop-xyz`. The maximum length is 128 characters. A
+         * `meetingCode` shouldn't be stored long term as it can become dissociated from
+         * a meeting space and can be reused for different meeting spaces in the future.
+         * Generally, a `meetingCode` expires 365 days after last use. For more
+         * information, see [Learn about meeting codes in Google
+         * Meet](https://support.google.com/meet/answer/10710509). For more information,
+         * see [How Meet identifies a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#identify-meeting-space).
+         * @param array $optParams Optional parameters.
+         * @return Space
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates details about a meeting space. For an example, see [Update a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#update-meeting-space). (spaces.patch)
+         *
+         * @param string $name Immutable. Resource name of the space. Format:
+         * `spaces/{space}`. `{space}` is the resource identifier for the space. It's a
+         * unique, server-generated ID and is case sensitive. For example,
+         * `jQCFfuBOdN5z`. For more information, see [How Meet identifies a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#identify-meeting-space).
+         * @param Space $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask used to specify the fields
+         * to be updated in the space. If update_mask isn't provided(not set, set with
+         * empty paths, or only has "" as paths), it defaults to update all fields
+         * provided with values in the request. Using "*" as update_mask will update all
+         * fields, including deleting fields not set in the request.
+         * @return Space
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Space $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Ends an active conference (if there's one). For an example, see [End active
-     * conference](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#end-active-conference). (spaces.endActiveConference)
-     *
-     * @param string $name Required. Resource name of the space. Format:
-     * `spaces/{space}`. `{space}` is the resource identifier for the space. It's a
-     * unique, server-generated ID and is case sensitive. For example,
-     * `jQCFfuBOdN5z`. For more information, see [How Meet identifies a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#identify-meeting-space).
-     * @param EndActiveConferenceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return MeetEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Meet\Resource\Spaces registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function endActiveConference($name, EndActiveConferenceRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets details about a meeting space. For an example, see [Get a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#get-meeting-space). (spaces.get)
-     *
-     * @param string $name Required. Resource name of the space. Format:
-     * `spaces/{space}` or `spaces/{meetingCode}`. `{space}` is the resource
-     * identifier for the space. It's a unique, server-generated ID and is case
-     * sensitive. For example, `jQCFfuBOdN5z`. `{meetingCode}` is an alias for the
-     * space. It's a typeable, unique character string and is non-case sensitive.
-     * For example, `abc-mnop-xyz`. The maximum length is 128 characters. A
-     * `meetingCode` shouldn't be stored long term as it can become dissociated from
-     * a meeting space and can be reused for different meeting spaces in the future.
-     * Generally, a `meetingCode` expires 365 days after last use. For more
-     * information, see [Learn about meeting codes in Google
-     * Meet](https://support.google.com/meet/answer/10710509). For more information,
-     * see [How Meet identifies a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#identify-meeting-space).
-     * @param array $optParams Optional parameters.
-     * @return Space
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates details about a meeting space. For an example, see [Update a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#update-meeting-space). (spaces.patch)
-     *
-     * @param string $name Immutable. Resource name of the space. Format:
-     * `spaces/{space}`. `{space}` is the resource identifier for the space. It's a
-     * unique, server-generated ID and is case sensitive. For example,
-     * `jQCFfuBOdN5z`. For more information, see [How Meet identifies a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#identify-meeting-space).
-     * @param Space $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask used to specify the fields
-     * to be updated in the space. If update_mask isn't provided(not set, set with
-     * empty paths, or only has "" as paths), it defaults to update all fields
-     * provided with values in the request. Using "*" as update_mask will update all
-     * fields, including deleting fields not set in the request.
-     * @return Space
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Space $postBody, $optParams = [])
+    class Google_Service_Meet_Resource_Spaces extends \Google\Service\Meet\Resource\Spaces
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadTensorboardBlobDataResponse extends \Google\Collection
-{
-    protected $collection_key = 'blobs';
-    protected $blobsType = GoogleCloudAiplatformV1TensorboardBlob::class;
-    protected $blobsDataType = 'array';
-    /**
-     * Blob messages containing blob bytes.
-     *
-     * @param GoogleCloudAiplatformV1TensorboardBlob[] $blobs
-     */
-    public function setBlobs($blobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadTensorboardBlobDataResponse extends \Google\Collection
     {
+        protected $collection_key = 'blobs';
+        protected $blobsType = GoogleCloudAiplatformV1TensorboardBlob::class;
+        protected $blobsDataType = 'array';
+        /**
+         * Blob messages containing blob bytes.
+         *
+         * @param GoogleCloudAiplatformV1TensorboardBlob[] $blobs
+         */
+        public function setBlobs($blobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TensorboardBlob[]
+         */
+        public function getBlobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TensorboardBlob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardBlobDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadTensorboardBlobDataResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardBlobDataResponse
     {
     }
 }

@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportReachCriteria extends \Google\Collection
-{
-    protected $collection_key = 'reachByFrequencyMetricNames';
-    protected $activitiesType = Activities::class;
-    protected $activitiesDataType = '';
-    protected $customRichMediaEventsType = CustomRichMediaEvents::class;
-    protected $customRichMediaEventsDataType = '';
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $dimensionFiltersType = DimensionValue::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = SortedDimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * The list of names of metrics the report should include.
-     *
-     * @var string[]
-     */
-    public $metricNames;
-    /**
-     * The list of names of Reach By Frequency metrics the report should include.
-     *
-     * @var string[]
-     */
-    public $reachByFrequencyMetricNames;
-    /**
-     * Activity group.
-     *
-     * @param Activities $activities
-     */
-    public function setActivities(Activities $activities)
+namespace Google\Service\Dfareporting {
+    class ReportReachCriteria extends \Google\Collection
     {
+        protected $collection_key = 'reachByFrequencyMetricNames';
+        protected $activitiesType = Activities::class;
+        protected $activitiesDataType = '';
+        protected $customRichMediaEventsType = CustomRichMediaEvents::class;
+        protected $customRichMediaEventsDataType = '';
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $dimensionFiltersType = DimensionValue::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = SortedDimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * The list of names of metrics the report should include.
+         *
+         * @var string[]
+         */
+        public $metricNames;
+        /**
+         * The list of names of Reach By Frequency metrics the report should include.
+         *
+         * @var string[]
+         */
+        public $reachByFrequencyMetricNames;
+        /**
+         * Activity group.
+         *
+         * @param Activities $activities
+         */
+        public function setActivities(Activities $activities)
+        {
+        }
+        /**
+         * @return Activities
+         */
+        public function getActivities()
+        {
+        }
+        /**
+         * Custom Rich Media Events group.
+         *
+         * @param CustomRichMediaEvents $customRichMediaEvents
+         */
+        public function setCustomRichMediaEvents(CustomRichMediaEvents $customRichMediaEvents)
+        {
+        }
+        /**
+         * @return CustomRichMediaEvents
+         */
+        public function getCustomRichMediaEvents()
+        {
+        }
+        /**
+         * The date range this report should be run for.
+         *
+         * @param DateRange $dateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * The list of filters on which dimensions are filtered. Filters for different
+         * dimensions are ANDed, filters for the same dimension are grouped together
+         * and ORed.
+         *
+         * @param DimensionValue[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * The list of dimensions the report should include.
+         *
+         * @param SortedDimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return SortedDimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The list of names of metrics the report should include.
+         *
+         * @param string[] $metricNames
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
+        /**
+         * The list of names of Reach By Frequency metrics the report should include.
+         *
+         * @param string[] $reachByFrequencyMetricNames
+         */
+        public function setReachByFrequencyMetricNames($reachByFrequencyMetricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReachByFrequencyMetricNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Activities
+     * Runtime class alias of \Google\Service\Dfareporting\ReportReachCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivities()
-    {
-    }
-    /**
-     * Custom Rich Media Events group.
-     *
-     * @param CustomRichMediaEvents $customRichMediaEvents
-     */
-    public function setCustomRichMediaEvents(CustomRichMediaEvents $customRichMediaEvents)
-    {
-    }
-    /**
-     * @return CustomRichMediaEvents
-     */
-    public function getCustomRichMediaEvents()
-    {
-    }
-    /**
-     * The date range this report should be run for.
-     *
-     * @param DateRange $dateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * The list of filters on which dimensions are filtered. Filters for different
-     * dimensions are ANDed, filters for the same dimension are grouped together
-     * and ORed.
-     *
-     * @param DimensionValue[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
-    {
-    }
-    /**
-     * @return DimensionValue[]
-     */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * The list of dimensions the report should include.
-     *
-     * @param SortedDimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return SortedDimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The list of names of metrics the report should include.
-     *
-     * @param string[] $metricNames
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
-    {
-    }
-    /**
-     * The list of names of Reach By Frequency metrics the report should include.
-     *
-     * @param string[] $reachByFrequencyMetricNames
-     */
-    public function setReachByFrequencyMetricNames($reachByFrequencyMetricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReachByFrequencyMetricNames()
+    class Google_Service_Dfareporting_ReportReachCriteria extends \Google\Service\Dfareporting\ReportReachCriteria
     {
     }
 }

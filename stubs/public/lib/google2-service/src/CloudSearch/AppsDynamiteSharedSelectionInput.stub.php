@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedSelectionInput extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = AppsDynamiteSharedSelectionInputSelectionItem::class;
-    protected $itemsDataType = 'array';
-    public $items;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onChangeActionType = AppsDynamiteSharedAction::class;
-    protected $onChangeActionDataType = '';
-    public $onChangeAction;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param AppsDynamiteSharedSelectionInputSelectionItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedSelectionInput extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = AppsDynamiteSharedSelectionInputSelectionItem::class;
+        protected $itemsDataType = 'array';
+        public $items;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onChangeActionType = AppsDynamiteSharedAction::class;
+        protected $onChangeActionDataType = '';
+        public $onChangeAction;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param AppsDynamiteSharedSelectionInputSelectionItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSelectionInputSelectionItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAction
+         */
+        public function setOnChangeAction(AppsDynamiteSharedAction $onChangeAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAction
+         */
+        public function getOnChangeAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedSelectionInputSelectionItem[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedSelectionInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAction
-     */
-    public function setOnChangeAction(AppsDynamiteSharedAction $onChangeAction)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAction
-     */
-    public function getOnChangeAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteSharedSelectionInput extends \Google\Service\CloudSearch\AppsDynamiteSharedSelectionInput
     {
     }
 }

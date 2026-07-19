@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    /**
-     * Enabled query classification types.
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * Enabled query classification types.
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec extends \Google\Collection
     {
+        protected $collection_key = 'types';
+        /**
+         * Enabled query classification types.
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * Enabled query classification types.
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTypes()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
     {
     }
 }

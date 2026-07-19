@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class AddBitbucketServerConnectedRepositoryResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $config;
-    protected $connectedRepositoryType = BitbucketServerRepositoryId::class;
-    protected $connectedRepositoryDataType = '';
-    /**
-     * @param string
-     */
-    public function setConfig($config)
+namespace Google\Service\CloudBuild {
+    class AddBitbucketServerConnectedRepositoryResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $config;
+        protected $connectedRepositoryType = BitbucketServerRepositoryId::class;
+        protected $connectedRepositoryDataType = '';
+        /**
+         * @param string
+         */
+        public function setConfig($config)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param BitbucketServerRepositoryId
+         */
+        public function setConnectedRepository(BitbucketServerRepositoryId $connectedRepository)
+        {
+        }
+        /**
+         * @return BitbucketServerRepositoryId
+         */
+        public function getConnectedRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\AddBitbucketServerConnectedRepositoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param BitbucketServerRepositoryId
-     */
-    public function setConnectedRepository(BitbucketServerRepositoryId $connectedRepository)
-    {
-    }
-    /**
-     * @return BitbucketServerRepositoryId
-     */
-    public function getConnectedRepository()
+    class Google_Service_CloudBuild_AddBitbucketServerConnectedRepositoryResponse extends \Google\Service\CloudBuild\AddBitbucketServerConnectedRepositoryResponse
     {
     }
 }

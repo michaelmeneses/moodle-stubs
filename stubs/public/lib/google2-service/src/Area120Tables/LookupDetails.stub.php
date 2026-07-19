@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class LookupDetails extends \Google\Model
-{
-    /**
-     * The name of the relationship column associated with the lookup.
-     *
-     * @var string
-     */
-    public $relationshipColumn;
-    /**
-     * The id of the relationship column.
-     *
-     * @var string
-     */
-    public $relationshipColumnId;
-    /**
-     * The name of the relationship column associated with the lookup.
-     *
-     * @param string $relationshipColumn
-     */
-    public function setRelationshipColumn($relationshipColumn)
+namespace Google\Service\Area120Tables {
+    class LookupDetails extends \Google\Model
     {
+        /**
+         * The name of the relationship column associated with the lookup.
+         *
+         * @var string
+         */
+        public $relationshipColumn;
+        /**
+         * The id of the relationship column.
+         *
+         * @var string
+         */
+        public $relationshipColumnId;
+        /**
+         * The name of the relationship column associated with the lookup.
+         *
+         * @param string $relationshipColumn
+         */
+        public function setRelationshipColumn($relationshipColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelationshipColumn()
+        {
+        }
+        /**
+         * The id of the relationship column.
+         *
+         * @param string $relationshipColumnId
+         */
+        public function setRelationshipColumnId($relationshipColumnId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelationshipColumnId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Area120Tables\LookupDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelationshipColumn()
-    {
-    }
-    /**
-     * The id of the relationship column.
-     *
-     * @param string $relationshipColumnId
-     */
-    public function setRelationshipColumnId($relationshipColumnId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelationshipColumnId()
+    class Google_Service_Area120Tables_LookupDetails extends \Google\Service\Area120Tables\LookupDetails
     {
     }
 }

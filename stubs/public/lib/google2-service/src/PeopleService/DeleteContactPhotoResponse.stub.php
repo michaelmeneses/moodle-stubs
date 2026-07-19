@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class DeleteContactPhotoResponse extends \Google\Model
-{
-    protected $personType = Person::class;
-    protected $personDataType = '';
-    /**
-     * The updated person, if person_fields is set in the
-     * DeleteContactPhotoRequest; otherwise this will be unset.
-     *
-     * @param Person $person
-     */
-    public function setPerson(Person $person)
+namespace Google\Service\PeopleService {
+    class DeleteContactPhotoResponse extends \Google\Model
     {
+        protected $personType = Person::class;
+        protected $personDataType = '';
+        /**
+         * The updated person, if person_fields is set in the
+         * DeleteContactPhotoRequest; otherwise this will be unset.
+         *
+         * @param Person $person
+         */
+        public function setPerson(Person $person)
+        {
+        }
+        /**
+         * @return Person
+         */
+        public function getPerson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Person
+     * Runtime class alias of \Google\Service\PeopleService\DeleteContactPhotoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerson()
+    class Google_Service_PeopleService_DeleteContactPhotoResponse extends \Google\Service\PeopleService\DeleteContactPhotoResponse
     {
     }
 }

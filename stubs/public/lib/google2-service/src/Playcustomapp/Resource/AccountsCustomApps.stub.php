@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playcustomapp\Resource;
-
-/**
- * The "customApps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playcustomappService = new Google\Service\Playcustomapp(...);
- *   $customApps = $playcustomappService->accounts_customApps;
- *  </code>
- */
-class AccountsCustomApps extends \Google\Service\Resource
-{
+namespace Google\Service\Playcustomapp\Resource {
+    use Google\Service\Playcustomapp\CustomApp;
     /**
-     * Creates a new custom app. (customApps.create)
-     *
-     * @param string $account Developer account ID.
-     * @param CustomApp $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomApp
-     * @throws \Google\Service\Exception
+     * The "customApps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playcustomappService = new Google\Service\Playcustomapp(...);
+     *   $customApps = $playcustomappService->accounts_customApps;
+     *  </code>
      */
-    public function create($account, CustomApp $postBody, $optParams = [])
+    class AccountsCustomApps extends \Google\Service\Resource
+    {
+        /**
+         * Creates a new custom app. (customApps.create)
+         *
+         * @param string $account Developer account ID.
+         * @param CustomApp $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomApp
+         * @throws \Google\Service\Exception
+         */
+        public function create($account, CustomApp $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Playcustomapp\Resource\AccountsCustomApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Playcustomapp_Resource_AccountsCustomApps extends \Google\Service\Playcustomapp\Resource\AccountsCustomApps
     {
     }
 }

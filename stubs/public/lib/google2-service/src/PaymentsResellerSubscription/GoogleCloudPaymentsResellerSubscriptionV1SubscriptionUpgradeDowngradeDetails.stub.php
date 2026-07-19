@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionUpgradeDowngradeDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $billingCycleSpec;
-    /**
-     * @var string
-     */
-    public $previousSubscriptionId;
-    /**
-     * @param string
-     */
-    public function setBillingCycleSpec($billingCycleSpec)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionUpgradeDowngradeDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $billingCycleSpec;
+        /**
+         * @var string
+         */
+        public $previousSubscriptionId;
+        /**
+         * @param string
+         */
+        public function setBillingCycleSpec($billingCycleSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingCycleSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPreviousSubscriptionId($previousSubscriptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousSubscriptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionUpgradeDowngradeDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingCycleSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPreviousSubscriptionId($previousSubscriptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousSubscriptionId()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1SubscriptionUpgradeDowngradeDetails extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionUpgradeDowngradeDetails
     {
     }
 }

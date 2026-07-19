@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaCodeAttribution extends \Google\Model
-{
-    /**
-     * Optional. Code excerpt where the source was detected along with surrounding
-     * code.
-     *
-     * @var string
-     */
-    public $codeExcerpt;
-    /**
-     * Required. Line number (1-based).
-     *
-     * @var int
-     */
-    public $lineNumber;
-    /**
-     * Required. Path of the file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. Start line number of the code excerpt (1-based).
-     *
-     * @var int
-     */
-    public $startLineNumber;
-    /**
-     * Optional. Code excerpt where the source was detected along with surrounding
-     * code.
-     *
-     * @param string $codeExcerpt
-     */
-    public function setCodeExcerpt($codeExcerpt)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaCodeAttribution extends \Google\Model
     {
+        /**
+         * Optional. Code excerpt where the source was detected along with surrounding
+         * code.
+         *
+         * @var string
+         */
+        public $codeExcerpt;
+        /**
+         * Required. Line number (1-based).
+         *
+         * @var int
+         */
+        public $lineNumber;
+        /**
+         * Required. Path of the file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. Start line number of the code excerpt (1-based).
+         *
+         * @var int
+         */
+        public $startLineNumber;
+        /**
+         * Optional. Code excerpt where the source was detected along with surrounding
+         * code.
+         *
+         * @param string $codeExcerpt
+         */
+        public function setCodeExcerpt($codeExcerpt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodeExcerpt()
+        {
+        }
+        /**
+         * Required. Line number (1-based).
+         *
+         * @param int $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineNumber()
+        {
+        }
+        /**
+         * Required. Path of the file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Optional. Start line number of the code excerpt (1-based).
+         *
+         * @param int $startLineNumber
+         */
+        public function setStartLineNumber($startLineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartLineNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaCodeAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodeExcerpt()
-    {
-    }
-    /**
-     * Required. Line number (1-based).
-     *
-     * @param int $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLineNumber()
-    {
-    }
-    /**
-     * Required. Path of the file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Optional. Start line number of the code excerpt (1-based).
-     *
-     * @param int $startLineNumber
-     */
-    public function setStartLineNumber($startLineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartLineNumber()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaCodeAttribution extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaCodeAttribution
     {
     }
 }

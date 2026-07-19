@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class ListActiveBreakpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'breakpoints';
-    protected $breakpointsType = Breakpoint::class;
-    protected $breakpointsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextWaitToken;
-    /**
-     * @var bool
-     */
-    public $waitExpired;
-    /**
-     * @param Breakpoint[]
-     */
-    public function setBreakpoints($breakpoints)
+namespace Google\Service\CloudDebugger {
+    class ListActiveBreakpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'breakpoints';
+        protected $breakpointsType = Breakpoint::class;
+        protected $breakpointsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextWaitToken;
+        /**
+         * @var bool
+         */
+        public $waitExpired;
+        /**
+         * @param Breakpoint[]
+         */
+        public function setBreakpoints($breakpoints)
+        {
+        }
+        /**
+         * @return Breakpoint[]
+         */
+        public function getBreakpoints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextWaitToken($nextWaitToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextWaitToken()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWaitExpired($waitExpired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWaitExpired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Breakpoint[]
+     * Runtime class alias of \Google\Service\CloudDebugger\ListActiveBreakpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakpoints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextWaitToken($nextWaitToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextWaitToken()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWaitExpired($waitExpired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWaitExpired()
+    class Google_Service_CloudDebugger_ListActiveBreakpointsResponse extends \Google\Service\CloudDebugger\ListActiveBreakpointsResponse
     {
     }
 }

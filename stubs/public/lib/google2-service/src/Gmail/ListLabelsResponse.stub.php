@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListLabelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    protected $labelsType = Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * List of labels. Note that each label resource only contains an `id`,
-     * `name`, `messageListVisibility`, `labelListVisibility`, and `type`. The [`l
-     * abels.get`](https://developers.google.com/workspace/gmail/api/v1/reference/
-     * users/labels/get) method can fetch additional label details.
-     *
-     * @param Label[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Gmail {
+    class ListLabelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        protected $labelsType = Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * List of labels. Note that each label resource only contains an `id`,
+         * `name`, `messageListVisibility`, `labelListVisibility`, and `type`. The [`l
+         * abels.get`](https://developers.google.com/workspace/gmail/api/v1/reference/
+         * users/labels/get) method can fetch additional label details.
+         *
+         * @param Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Label[]
+     * Runtime class alias of \Google\Service\Gmail\ListLabelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_Gmail_ListLabelsResponse extends \Google\Service\Gmail\ListLabelsResponse
     {
     }
 }

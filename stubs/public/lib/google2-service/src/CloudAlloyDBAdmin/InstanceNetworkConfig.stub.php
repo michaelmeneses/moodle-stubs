@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class InstanceNetworkConfig extends \Google\Collection
-{
-    protected $collection_key = 'authorizedExternalNetworks';
-    /**
-     * Optional. Name of the allocated IP range for the private IP AlloyDB
-     * instance, for example: "google-managed-services-default". If set, the
-     * instance IPs will be created from this allocated range and will override
-     * the IP range used by the parent cluster. The range name must comply with
-     * [RFC 1035](http://datatracker.ietf.org/doc/html/rfc1035). Specifically, the
-     * name must be 1-63 characters long and match the regular expression
-     * [a-z]([-a-z0-9]*[a-z0-9])?.
-     *
-     * @var string
-     */
-    public $allocatedIpRangeOverride;
-    protected $authorizedExternalNetworksType = AuthorizedNetwork::class;
-    protected $authorizedExternalNetworksDataType = 'array';
-    /**
-     * Optional. Enabling an outbound public IP address to support a database
-     * server sending requests out into the internet.
-     *
-     * @var bool
-     */
-    public $enableOutboundPublicIp;
-    /**
-     * Optional. Enabling public ip for the instance.
-     *
-     * @var bool
-     */
-    public $enablePublicIp;
-    /**
-     * Output only. The resource link for the VPC network in which instance
-     * resources are created and from which they are accessible via Private IP.
-     * This will be the same value as the parent cluster's network. It is
-     * specified in the form: //
-     * `projects/{project_number}/global/networks/{network_id}`.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Optional. Name of the allocated IP range for the private IP AlloyDB
-     * instance, for example: "google-managed-services-default". If set, the
-     * instance IPs will be created from this allocated range and will override
-     * the IP range used by the parent cluster. The range name must comply with
-     * [RFC 1035](http://datatracker.ietf.org/doc/html/rfc1035). Specifically, the
-     * name must be 1-63 characters long and match the regular expression
-     * [a-z]([-a-z0-9]*[a-z0-9])?.
-     *
-     * @param string $allocatedIpRangeOverride
-     */
-    public function setAllocatedIpRangeOverride($allocatedIpRangeOverride)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class InstanceNetworkConfig extends \Google\Collection
     {
+        protected $collection_key = 'authorizedExternalNetworks';
+        /**
+         * Optional. Name of the allocated IP range for the private IP AlloyDB
+         * instance, for example: "google-managed-services-default". If set, the
+         * instance IPs will be created from this allocated range and will override
+         * the IP range used by the parent cluster. The range name must comply with
+         * [RFC 1035](http://datatracker.ietf.org/doc/html/rfc1035). Specifically, the
+         * name must be 1-63 characters long and match the regular expression
+         * [a-z]([-a-z0-9]*[a-z0-9])?.
+         *
+         * @var string
+         */
+        public $allocatedIpRangeOverride;
+        protected $authorizedExternalNetworksType = AuthorizedNetwork::class;
+        protected $authorizedExternalNetworksDataType = 'array';
+        /**
+         * Optional. Enabling an outbound public IP address to support a database
+         * server sending requests out into the internet.
+         *
+         * @var bool
+         */
+        public $enableOutboundPublicIp;
+        /**
+         * Optional. Enabling public ip for the instance.
+         *
+         * @var bool
+         */
+        public $enablePublicIp;
+        /**
+         * Output only. The resource link for the VPC network in which instance
+         * resources are created and from which they are accessible via Private IP.
+         * This will be the same value as the parent cluster's network. It is
+         * specified in the form: //
+         * `projects/{project_number}/global/networks/{network_id}`.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Optional. Name of the allocated IP range for the private IP AlloyDB
+         * instance, for example: "google-managed-services-default". If set, the
+         * instance IPs will be created from this allocated range and will override
+         * the IP range used by the parent cluster. The range name must comply with
+         * [RFC 1035](http://datatracker.ietf.org/doc/html/rfc1035). Specifically, the
+         * name must be 1-63 characters long and match the regular expression
+         * [a-z]([-a-z0-9]*[a-z0-9])?.
+         *
+         * @param string $allocatedIpRangeOverride
+         */
+        public function setAllocatedIpRangeOverride($allocatedIpRangeOverride)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedIpRangeOverride()
+        {
+        }
+        /**
+         * Optional. A list of external network authorized to access this instance.
+         *
+         * @param AuthorizedNetwork[] $authorizedExternalNetworks
+         */
+        public function setAuthorizedExternalNetworks($authorizedExternalNetworks)
+        {
+        }
+        /**
+         * @return AuthorizedNetwork[]
+         */
+        public function getAuthorizedExternalNetworks()
+        {
+        }
+        /**
+         * Optional. Enabling an outbound public IP address to support a database
+         * server sending requests out into the internet.
+         *
+         * @param bool $enableOutboundPublicIp
+         */
+        public function setEnableOutboundPublicIp($enableOutboundPublicIp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableOutboundPublicIp()
+        {
+        }
+        /**
+         * Optional. Enabling public ip for the instance.
+         *
+         * @param bool $enablePublicIp
+         */
+        public function setEnablePublicIp($enablePublicIp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePublicIp()
+        {
+        }
+        /**
+         * Output only. The resource link for the VPC network in which instance
+         * resources are created and from which they are accessible via Private IP.
+         * This will be the same value as the parent cluster's network. It is
+         * specified in the form: //
+         * `projects/{project_number}/global/networks/{network_id}`.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\InstanceNetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedIpRangeOverride()
-    {
-    }
-    /**
-     * Optional. A list of external network authorized to access this instance.
-     *
-     * @param AuthorizedNetwork[] $authorizedExternalNetworks
-     */
-    public function setAuthorizedExternalNetworks($authorizedExternalNetworks)
-    {
-    }
-    /**
-     * @return AuthorizedNetwork[]
-     */
-    public function getAuthorizedExternalNetworks()
-    {
-    }
-    /**
-     * Optional. Enabling an outbound public IP address to support a database
-     * server sending requests out into the internet.
-     *
-     * @param bool $enableOutboundPublicIp
-     */
-    public function setEnableOutboundPublicIp($enableOutboundPublicIp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableOutboundPublicIp()
-    {
-    }
-    /**
-     * Optional. Enabling public ip for the instance.
-     *
-     * @param bool $enablePublicIp
-     */
-    public function setEnablePublicIp($enablePublicIp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePublicIp()
-    {
-    }
-    /**
-     * Output only. The resource link for the VPC network in which instance
-     * resources are created and from which they are accessible via Private IP.
-     * This will be the same value as the parent cluster's network. It is
-     * specified in the form: //
-     * `projects/{project_number}/global/networks/{network_id}`.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
+    class Google_Service_CloudAlloyDBAdmin_InstanceNetworkConfig extends \Google\Service\CloudAlloyDBAdmin\InstanceNetworkConfig
     {
     }
 }

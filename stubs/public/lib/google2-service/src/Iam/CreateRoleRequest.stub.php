@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class CreateRoleRequest extends \Google\Model
-{
-    protected $roleType = Role::class;
-    protected $roleDataType = '';
-    public $role;
-    /**
-     * @var string
-     */
-    public $roleId;
-    /**
-     * @param Role
-     */
-    public function setRole(Role $role)
+namespace Google\Service\Iam {
+    class CreateRoleRequest extends \Google\Model
     {
+        protected $roleType = Role::class;
+        protected $roleDataType = '';
+        public $role;
+        /**
+         * @var string
+         */
+        public $roleId;
+        /**
+         * @param Role
+         */
+        public function setRole(Role $role)
+        {
+        }
+        /**
+         * @return Role
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRoleId($roleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Role
+     * Runtime class alias of \Google\Service\Iam\CreateRoleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRole()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRoleId($roleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoleId()
+    class Google_Service_Iam_CreateRoleRequest extends \Google\Service\Iam\CreateRoleRequest
     {
     }
 }

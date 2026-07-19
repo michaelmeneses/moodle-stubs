@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1FieldTypeEnumTypeEnumValue extends \Google\Model
-{
-    /**
-     * Required. The display name of the enum value. Must not be an empty string.
-     * The name must contain only Unicode letters, numbers (0-9), underscores (_),
-     * dashes (-), spaces ( ), and can't start or end with spaces. The maximum
-     * length is 200 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The display name of the enum value. Must not be an empty string.
-     * The name must contain only Unicode letters, numbers (0-9), underscores (_),
-     * dashes (-), spaces ( ), and can't start or end with spaces. The maximum
-     * length is 200 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1FieldTypeEnumTypeEnumValue extends \Google\Model
     {
+        /**
+         * Required. The display name of the enum value. Must not be an empty string.
+         * The name must contain only Unicode letters, numbers (0-9), underscores (_),
+         * dashes (-), spaces ( ), and can't start or end with spaces. The maximum
+         * length is 200 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The display name of the enum value. Must not be an empty string.
+         * The name must contain only Unicode letters, numbers (0-9), underscores (_),
+         * dashes (-), spaces ( ), and can't start or end with spaces. The maximum
+         * length is 200 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1FieldTypeEnumTypeEnumValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1FieldTypeEnumTypeEnumValue extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1FieldTypeEnumTypeEnumValue
     {
     }
 }

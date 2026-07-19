@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetInstancesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'targetInstances';
-    protected $targetInstancesType = TargetInstance::class;
-    protected $targetInstancesDataType = 'array';
-    protected $warningType = TargetInstancesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of target instances contained in this scope.
-     *
-     * @param TargetInstance[] $targetInstances
-     */
-    public function setTargetInstances($targetInstances)
+namespace Google\Service\Compute {
+    class TargetInstancesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'targetInstances';
+        protected $targetInstancesType = TargetInstance::class;
+        protected $targetInstancesDataType = 'array';
+        protected $warningType = TargetInstancesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of target instances contained in this scope.
+         *
+         * @param TargetInstance[] $targetInstances
+         */
+        public function setTargetInstances($targetInstances)
+        {
+        }
+        /**
+         * @return TargetInstance[]
+         */
+        public function getTargetInstances()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of addresses when the list is
+         * empty.
+         *
+         * @param TargetInstancesScopedListWarning $warning
+         */
+        public function setWarning(TargetInstancesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return TargetInstancesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetInstance[]
+     * Runtime class alias of \Google\Service\Compute\TargetInstancesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetInstances()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of addresses when the list is
-     * empty.
-     *
-     * @param TargetInstancesScopedListWarning $warning
-     */
-    public function setWarning(TargetInstancesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return TargetInstancesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_TargetInstancesScopedList extends \Google\Service\Compute\TargetInstancesScopedList
     {
     }
 }

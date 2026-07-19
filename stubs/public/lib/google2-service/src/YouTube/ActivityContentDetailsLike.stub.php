@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetailsLike extends \Google\Model
-{
-    protected $resourceIdType = ResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * The resourceId object contains information that identifies the rated
-     * resource.
-     *
-     * @param ResourceId $resourceId
-     */
-    public function setResourceId(ResourceId $resourceId)
+namespace Google\Service\YouTube {
+    class ActivityContentDetailsLike extends \Google\Model
     {
+        protected $resourceIdType = ResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * The resourceId object contains information that identifies the rated
+         * resource.
+         *
+         * @param ResourceId $resourceId
+         */
+        public function setResourceId(ResourceId $resourceId)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceId
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetailsLike registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceId()
+    class Google_Service_YouTube_ActivityContentDetailsLike extends \Google\Service\YouTube\ActivityContentDetailsLike
     {
     }
 }

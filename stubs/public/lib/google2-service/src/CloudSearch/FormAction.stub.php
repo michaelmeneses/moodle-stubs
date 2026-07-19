@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FormAction extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * @var string
-     */
-    public $actionMethodName;
-    /**
-     * @var string
-     */
-    public $loadIndicator;
-    protected $parametersType = ActionParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $persistValues;
-    /**
-     * @param string
-     */
-    public function setActionMethodName($actionMethodName)
+namespace Google\Service\CloudSearch {
+    class FormAction extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * @var string
+         */
+        public $actionMethodName;
+        /**
+         * @var string
+         */
+        public $loadIndicator;
+        protected $parametersType = ActionParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $persistValues;
+        /**
+         * @param string
+         */
+        public function setActionMethodName($actionMethodName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionMethodName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLoadIndicator($loadIndicator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoadIndicator()
+        {
+        }
+        /**
+         * @param ActionParameter[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return ActionParameter[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPersistValues($persistValues)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPersistValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\FormAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionMethodName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLoadIndicator($loadIndicator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoadIndicator()
-    {
-    }
-    /**
-     * @param ActionParameter[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return ActionParameter[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPersistValues($persistValues)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPersistValues()
+    class Google_Service_CloudSearch_FormAction extends \Google\Service\CloudSearch\FormAction
     {
     }
 }

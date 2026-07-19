@@ -32,6 +32,7 @@
  */
 namespace mod_assign\privacy;
 
+use core_privacy\local\request\userlist;
 interface assignsubmission_user_provider extends \core_privacy\local\request\plugin\subplugin_provider, \core_privacy\local\request\shared_userlist_provider
 {
     /**

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class RepositoryEventConfig extends \Google\Model
-{
-    protected $pullRequestType = PullRequestFilter::class;
-    protected $pullRequestDataType = '';
-    protected $pushType = PushFilter::class;
-    protected $pushDataType = '';
-    /**
-     * @var string
-     */
-    public $repository;
-    /**
-     * @var string
-     */
-    public $repositoryType;
-    /**
-     * @param PullRequestFilter
-     */
-    public function setPullRequest(PullRequestFilter $pullRequest)
+namespace Google\Service\CloudBuild {
+    class RepositoryEventConfig extends \Google\Model
     {
+        protected $pullRequestType = PullRequestFilter::class;
+        protected $pullRequestDataType = '';
+        protected $pushType = PushFilter::class;
+        protected $pushDataType = '';
+        /**
+         * @var string
+         */
+        public $repository;
+        /**
+         * @var string
+         */
+        public $repositoryType;
+        /**
+         * @param PullRequestFilter
+         */
+        public function setPullRequest(PullRequestFilter $pullRequest)
+        {
+        }
+        /**
+         * @return PullRequestFilter
+         */
+        public function getPullRequest()
+        {
+        }
+        /**
+         * @param PushFilter
+         */
+        public function setPush(PushFilter $push)
+        {
+        }
+        /**
+         * @return PushFilter
+         */
+        public function getPush()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepositoryType($repositoryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepositoryType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PullRequestFilter
+     * Runtime class alias of \Google\Service\CloudBuild\RepositoryEventConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPullRequest()
-    {
-    }
-    /**
-     * @param PushFilter
-     */
-    public function setPush(PushFilter $push)
-    {
-    }
-    /**
-     * @return PushFilter
-     */
-    public function getPush()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepositoryType($repositoryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepositoryType()
+    class Google_Service_CloudBuild_RepositoryEventConfig extends \Google\Service\CloudBuild\RepositoryEventConfig
     {
     }
 }

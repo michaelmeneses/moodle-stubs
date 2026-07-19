@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ConfidentialInstanceConfig extends \Google\Model
-{
-    /**
-     * No type specified. Do not use this value.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED = 'CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED';
-    /**
-     * AMD Secure Encrypted Virtualization.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_SEV = 'SEV';
-    /**
-     * Optional. Defines the type of technology used by the confidential instance.
-     *
-     * @var string
-     */
-    public $confidentialInstanceType;
-    /**
-     * Optional. Defines the type of technology used by the confidential instance.
-     *
-     * Accepted values: CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED, SEV
-     *
-     * @param self::CONFIDENTIAL_INSTANCE_TYPE_* $confidentialInstanceType
-     */
-    public function setConfidentialInstanceType($confidentialInstanceType)
+namespace Google\Service\AIPlatformNotebooks {
+    class ConfidentialInstanceConfig extends \Google\Model
     {
+        /**
+         * No type specified. Do not use this value.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED = 'CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED';
+        /**
+         * AMD Secure Encrypted Virtualization.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_SEV = 'SEV';
+        /**
+         * Optional. Defines the type of technology used by the confidential instance.
+         *
+         * @var string
+         */
+        public $confidentialInstanceType;
+        /**
+         * Optional. Defines the type of technology used by the confidential instance.
+         *
+         * Accepted values: CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED, SEV
+         *
+         * @param self::CONFIDENTIAL_INSTANCE_TYPE_* $confidentialInstanceType
+         */
+        public function setConfidentialInstanceType($confidentialInstanceType)
+        {
+        }
+        /**
+         * @return self::CONFIDENTIAL_INSTANCE_TYPE_*
+         */
+        public function getConfidentialInstanceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONFIDENTIAL_INSTANCE_TYPE_*
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ConfidentialInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidentialInstanceType()
+    class Google_Service_AIPlatformNotebooks_ConfidentialInstanceConfig extends \Google\Service\AIPlatformNotebooks\ConfidentialInstanceConfig
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadTensorboardSizeResponse extends \Google\Model
-{
-    /**
-     * Payload storage size for the TensorBoard
-     *
-     * @var string
-     */
-    public $storageSizeByte;
-    /**
-     * Payload storage size for the TensorBoard
-     *
-     * @param string $storageSizeByte
-     */
-    public function setStorageSizeByte($storageSizeByte)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadTensorboardSizeResponse extends \Google\Model
     {
+        /**
+         * Payload storage size for the TensorBoard
+         *
+         * @var string
+         */
+        public $storageSizeByte;
+        /**
+         * Payload storage size for the TensorBoard
+         *
+         * @param string $storageSizeByte
+         */
+        public function setStorageSizeByte($storageSizeByte)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageSizeByte()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardSizeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageSizeByte()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadTensorboardSizeResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardSizeResponse
     {
     }
 }

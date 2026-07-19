@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Denied extends \Google\Collection
-{
-    protected $collection_key = 'ipRules';
-    protected $ipRulesType = IpRule::class;
-    protected $ipRulesDataType = 'array';
-    /**
-     * Optional. Optional list of denied IP rules.
-     *
-     * @param IpRule[] $ipRules
-     */
-    public function setIpRules($ipRules)
+namespace Google\Service\SecurityCommandCenter {
+    class Denied extends \Google\Collection
     {
+        protected $collection_key = 'ipRules';
+        protected $ipRulesType = IpRule::class;
+        protected $ipRulesDataType = 'array';
+        /**
+         * Optional. Optional list of denied IP rules.
+         *
+         * @param IpRule[] $ipRules
+         */
+        public function setIpRules($ipRules)
+        {
+        }
+        /**
+         * @return IpRule[]
+         */
+        public function getIpRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IpRule[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Denied registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpRules()
+    class Google_Service_SecurityCommandCenter_Denied extends \Google\Service\SecurityCommandCenter\Denied
     {
     }
 }

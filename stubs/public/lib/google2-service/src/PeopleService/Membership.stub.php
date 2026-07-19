@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Membership extends \Google\Model
-{
-    protected $contactGroupMembershipType = ContactGroupMembership::class;
-    protected $contactGroupMembershipDataType = '';
-    protected $domainMembershipType = DomainMembership::class;
-    protected $domainMembershipDataType = '';
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The contact group membership.
-     *
-     * @param ContactGroupMembership $contactGroupMembership
-     */
-    public function setContactGroupMembership(ContactGroupMembership $contactGroupMembership)
+namespace Google\Service\PeopleService {
+    class Membership extends \Google\Model
     {
+        protected $contactGroupMembershipType = ContactGroupMembership::class;
+        protected $contactGroupMembershipDataType = '';
+        protected $domainMembershipType = DomainMembership::class;
+        protected $domainMembershipDataType = '';
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The contact group membership.
+         *
+         * @param ContactGroupMembership $contactGroupMembership
+         */
+        public function setContactGroupMembership(ContactGroupMembership $contactGroupMembership)
+        {
+        }
+        /**
+         * @return ContactGroupMembership
+         */
+        public function getContactGroupMembership()
+        {
+        }
+        /**
+         * Output only. The domain membership.
+         *
+         * @param DomainMembership $domainMembership
+         */
+        public function setDomainMembership(DomainMembership $domainMembership)
+        {
+        }
+        /**
+         * @return DomainMembership
+         */
+        public function getDomainMembership()
+        {
+        }
+        /**
+         * Metadata about the membership.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactGroupMembership
+     * Runtime class alias of \Google\Service\PeopleService\Membership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactGroupMembership()
-    {
-    }
-    /**
-     * Output only. The domain membership.
-     *
-     * @param DomainMembership $domainMembership
-     */
-    public function setDomainMembership(DomainMembership $domainMembership)
-    {
-    }
-    /**
-     * @return DomainMembership
-     */
-    public function getDomainMembership()
-    {
-    }
-    /**
-     * Metadata about the membership.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
+    class Google_Service_PeopleService_Membership extends \Google\Service\PeopleService\Membership
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ListResourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token to request the next page of resources from the 'ListResources'
-     * method. The value of an empty string means that there are no more resources
-     * to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = ConfigResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token to request the next page of resources from the 'ListResources'
-     * method. The value of an empty string means that there are no more resources
-     * to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Config {
+    class ListResourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token to request the next page of resources from the 'ListResources'
+         * method. The value of an empty string means that there are no more resources
+         * to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = ConfigResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token to request the next page of resources from the 'ListResources'
+         * method. The value of an empty string means that there are no more resources
+         * to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Resources.
+         *
+         * @param ConfigResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ConfigResource[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ListResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Resources.
-     *
-     * @param ConfigResource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ConfigResource[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Config_ListResourcesResponse extends \Google\Service\Config\ListResourcesResponse
     {
     }
 }

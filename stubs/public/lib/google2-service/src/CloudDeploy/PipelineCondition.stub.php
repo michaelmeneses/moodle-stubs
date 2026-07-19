@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PipelineCondition extends \Google\Model
-{
-    protected $pipelineReadyConditionType = PipelineReadyCondition::class;
-    protected $pipelineReadyConditionDataType = '';
-    protected $targetsPresentConditionType = TargetsPresentCondition::class;
-    protected $targetsPresentConditionDataType = '';
-    protected $targetsTypeConditionType = TargetsTypeCondition::class;
-    protected $targetsTypeConditionDataType = '';
-    /**
-     * Details around the Pipeline's overall status.
-     *
-     * @param PipelineReadyCondition $pipelineReadyCondition
-     */
-    public function setPipelineReadyCondition(PipelineReadyCondition $pipelineReadyCondition)
+namespace Google\Service\CloudDeploy {
+    class PipelineCondition extends \Google\Model
     {
+        protected $pipelineReadyConditionType = PipelineReadyCondition::class;
+        protected $pipelineReadyConditionDataType = '';
+        protected $targetsPresentConditionType = TargetsPresentCondition::class;
+        protected $targetsPresentConditionDataType = '';
+        protected $targetsTypeConditionType = TargetsTypeCondition::class;
+        protected $targetsTypeConditionDataType = '';
+        /**
+         * Details around the Pipeline's overall status.
+         *
+         * @param PipelineReadyCondition $pipelineReadyCondition
+         */
+        public function setPipelineReadyCondition(PipelineReadyCondition $pipelineReadyCondition)
+        {
+        }
+        /**
+         * @return PipelineReadyCondition
+         */
+        public function getPipelineReadyCondition()
+        {
+        }
+        /**
+         * Details around targets enumerated in the pipeline.
+         *
+         * @param TargetsPresentCondition $targetsPresentCondition
+         */
+        public function setTargetsPresentCondition(TargetsPresentCondition $targetsPresentCondition)
+        {
+        }
+        /**
+         * @return TargetsPresentCondition
+         */
+        public function getTargetsPresentCondition()
+        {
+        }
+        /**
+         * Details on the whether the targets enumerated in the pipeline are of the
+         * same type.
+         *
+         * @param TargetsTypeCondition $targetsTypeCondition
+         */
+        public function setTargetsTypeCondition(TargetsTypeCondition $targetsTypeCondition)
+        {
+        }
+        /**
+         * @return TargetsTypeCondition
+         */
+        public function getTargetsTypeCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PipelineReadyCondition
+     * Runtime class alias of \Google\Service\CloudDeploy\PipelineCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPipelineReadyCondition()
-    {
-    }
-    /**
-     * Details around targets enumerated in the pipeline.
-     *
-     * @param TargetsPresentCondition $targetsPresentCondition
-     */
-    public function setTargetsPresentCondition(TargetsPresentCondition $targetsPresentCondition)
-    {
-    }
-    /**
-     * @return TargetsPresentCondition
-     */
-    public function getTargetsPresentCondition()
-    {
-    }
-    /**
-     * Details on the whether the targets enumerated in the pipeline are of the
-     * same type.
-     *
-     * @param TargetsTypeCondition $targetsTypeCondition
-     */
-    public function setTargetsTypeCondition(TargetsTypeCondition $targetsTypeCondition)
-    {
-    }
-    /**
-     * @return TargetsTypeCondition
-     */
-    public function getTargetsTypeCondition()
+    class Google_Service_CloudDeploy_PipelineCondition extends \Google\Service\CloudDeploy\PipelineCondition
     {
     }
 }

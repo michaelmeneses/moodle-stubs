@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatSuperStickerDetails extends \Google\Model
-{
-    /**
-     * A rendered string that displays the fund amount and currency to the user.
-     *
-     * @var string
-     */
-    public $amountDisplayString;
-    /**
-     * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * The currency in which the purchase was made.
-     *
-     * @var string
-     */
-    public $currency;
-    protected $superStickerMetadataType = SuperStickerMetadata::class;
-    protected $superStickerMetadataDataType = '';
-    /**
-     * The tier in which the amount belongs. Lower amounts belong to lower tiers.
-     * The lowest tier is 1.
-     *
-     * @var string
-     */
-    public $tier;
-    /**
-     * A rendered string that displays the fund amount and currency to the user.
-     *
-     * @param string $amountDisplayString
-     */
-    public function setAmountDisplayString($amountDisplayString)
+namespace Google\Service\YouTube {
+    class LiveChatSuperStickerDetails extends \Google\Model
     {
+        /**
+         * A rendered string that displays the fund amount and currency to the user.
+         *
+         * @var string
+         */
+        public $amountDisplayString;
+        /**
+         * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * The currency in which the purchase was made.
+         *
+         * @var string
+         */
+        public $currency;
+        protected $superStickerMetadataType = SuperStickerMetadata::class;
+        protected $superStickerMetadataDataType = '';
+        /**
+         * The tier in which the amount belongs. Lower amounts belong to lower tiers.
+         * The lowest tier is 1.
+         *
+         * @var string
+         */
+        public $tier;
+        /**
+         * A rendered string that displays the fund amount and currency to the user.
+         *
+         * @param string $amountDisplayString
+         */
+        public function setAmountDisplayString($amountDisplayString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountDisplayString()
+        {
+        }
+        /**
+         * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * The currency in which the purchase was made.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * Information about the Super Sticker.
+         *
+         * @param SuperStickerMetadata $superStickerMetadata
+         */
+        public function setSuperStickerMetadata(SuperStickerMetadata $superStickerMetadata)
+        {
+        }
+        /**
+         * @return SuperStickerMetadata
+         */
+        public function getSuperStickerMetadata()
+        {
+        }
+        /**
+         * The tier in which the amount belongs. Lower amounts belong to lower tiers.
+         * The lowest tier is 1.
+         *
+         * @param string $tier
+         */
+        public function setTier($tier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatSuperStickerDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountDisplayString()
-    {
-    }
-    /**
-     * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * The currency in which the purchase was made.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * Information about the Super Sticker.
-     *
-     * @param SuperStickerMetadata $superStickerMetadata
-     */
-    public function setSuperStickerMetadata(SuperStickerMetadata $superStickerMetadata)
-    {
-    }
-    /**
-     * @return SuperStickerMetadata
-     */
-    public function getSuperStickerMetadata()
-    {
-    }
-    /**
-     * The tier in which the amount belongs. Lower amounts belong to lower tiers.
-     * The lowest tier is 1.
-     *
-     * @param string $tier
-     */
-    public function setTier($tier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTier()
+    class Google_Service_YouTube_LiveChatSuperStickerDetails extends \Google\Service\YouTube\LiveChatSuperStickerDetails
     {
     }
 }

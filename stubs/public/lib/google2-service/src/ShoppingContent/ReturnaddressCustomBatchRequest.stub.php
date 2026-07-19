@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnaddressCustomBatchRequest extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = ReturnaddressCustomBatchRequestEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * @param ReturnaddressCustomBatchRequestEntry[]
-     */
-    public function setEntries($entries)
+namespace Google\Service\ShoppingContent {
+    class ReturnaddressCustomBatchRequest extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = ReturnaddressCustomBatchRequestEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * @param ReturnaddressCustomBatchRequestEntry[]
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return ReturnaddressCustomBatchRequestEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReturnaddressCustomBatchRequestEntry[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnaddressCustomBatchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_ShoppingContent_ReturnaddressCustomBatchRequest extends \Google\Service\ShoppingContent\ReturnaddressCustomBatchRequest
     {
     }
 }

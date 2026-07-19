@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ConversationTranscript extends \Google\Collection
-{
-    protected $collection_key = 'transcriptSegments';
-    protected $transcriptSegmentsType = GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegment::class;
-    protected $transcriptSegmentsDataType = 'array';
-    /**
-     * A list of sequential transcript segments that comprise the conversation.
-     *
-     * @param GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegment[] $transcriptSegments
-     */
-    public function setTranscriptSegments($transcriptSegments)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ConversationTranscript extends \Google\Collection
     {
+        protected $collection_key = 'transcriptSegments';
+        protected $transcriptSegmentsType = GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegment::class;
+        protected $transcriptSegmentsDataType = 'array';
+        /**
+         * A list of sequential transcript segments that comprise the conversation.
+         *
+         * @param GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegment[] $transcriptSegments
+         */
+        public function setTranscriptSegments($transcriptSegments)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegment[]
+         */
+        public function getTranscriptSegments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegment[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationTranscript registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTranscriptSegments()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ConversationTranscript extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationTranscript
     {
     }
 }

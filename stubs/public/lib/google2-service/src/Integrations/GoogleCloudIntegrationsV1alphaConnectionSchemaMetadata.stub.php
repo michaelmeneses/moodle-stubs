@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    /**
-     * List of actions.
-     *
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * List of entity names.
-     *
-     * @var string[]
-     */
-    public $entities;
-    /**
-     * List of actions.
-     *
-     * @param string[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        /**
+         * List of actions.
+         *
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * List of entity names.
+         *
+         * @var string[]
+         */
+        public $entities;
+        /**
+         * List of actions.
+         *
+         * @param string[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * List of entity names.
+         *
+         * @param string[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * List of entity names.
-     *
-     * @param string[] $entities
-     */
-    public function setEntities($entities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEntities()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata
     {
     }
 }

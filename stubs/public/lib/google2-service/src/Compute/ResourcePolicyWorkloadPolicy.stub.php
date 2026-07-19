@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyWorkloadPolicy extends \Google\Model
-{
-    /**
-     * VMs must be provisioned in the same block.
-     */
-    public const MAX_TOPOLOGY_DISTANCE_BLOCK = 'BLOCK';
-    /**
-     * VMs must be provisioned in the same cluster.
-     */
-    public const MAX_TOPOLOGY_DISTANCE_CLUSTER = 'CLUSTER';
-    /**
-     * VMs must be provisioned in the same subblock.
-     */
-    public const MAX_TOPOLOGY_DISTANCE_SUBBLOCK = 'SUBBLOCK';
-    /**
-     * MIG spreads out the instances as much as possible for high availability.
-     */
-    public const TYPE_HIGH_AVAILABILITY = 'HIGH_AVAILABILITY';
-    /**
-     * MIG provisions instances as close to each other as possible for high
-     * throughput.
-     */
-    public const TYPE_HIGH_THROUGHPUT = 'HIGH_THROUGHPUT';
-    /**
-     * Specifies the topology required to create a partition for VMs that have
-     * interconnected GPUs.
-     *
-     * @var string
-     */
-    public $acceleratorTopology;
-    /**
-     * Specifies the maximum distance between instances.
-     *
-     * @var string
-     */
-    public $maxTopologyDistance;
-    /**
-     * Specifies the intent of the instance placement in the MIG.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Specifies the topology required to create a partition for VMs that have
-     * interconnected GPUs.
-     *
-     * @param string $acceleratorTopology
-     */
-    public function setAcceleratorTopology($acceleratorTopology)
+namespace Google\Service\Compute {
+    class ResourcePolicyWorkloadPolicy extends \Google\Model
     {
+        /**
+         * VMs must be provisioned in the same block.
+         */
+        public const MAX_TOPOLOGY_DISTANCE_BLOCK = 'BLOCK';
+        /**
+         * VMs must be provisioned in the same cluster.
+         */
+        public const MAX_TOPOLOGY_DISTANCE_CLUSTER = 'CLUSTER';
+        /**
+         * VMs must be provisioned in the same subblock.
+         */
+        public const MAX_TOPOLOGY_DISTANCE_SUBBLOCK = 'SUBBLOCK';
+        /**
+         * MIG spreads out the instances as much as possible for high availability.
+         */
+        public const TYPE_HIGH_AVAILABILITY = 'HIGH_AVAILABILITY';
+        /**
+         * MIG provisions instances as close to each other as possible for high
+         * throughput.
+         */
+        public const TYPE_HIGH_THROUGHPUT = 'HIGH_THROUGHPUT';
+        /**
+         * Specifies the topology required to create a partition for VMs that have
+         * interconnected GPUs.
+         *
+         * @var string
+         */
+        public $acceleratorTopology;
+        /**
+         * Specifies the maximum distance between instances.
+         *
+         * @var string
+         */
+        public $maxTopologyDistance;
+        /**
+         * Specifies the intent of the instance placement in the MIG.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Specifies the topology required to create a partition for VMs that have
+         * interconnected GPUs.
+         *
+         * @param string $acceleratorTopology
+         */
+        public function setAcceleratorTopology($acceleratorTopology)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorTopology()
+        {
+        }
+        /**
+         * Specifies the maximum distance between instances.
+         *
+         * Accepted values: BLOCK, CLUSTER, SUBBLOCK
+         *
+         * @param self::MAX_TOPOLOGY_DISTANCE_* $maxTopologyDistance
+         */
+        public function setMaxTopologyDistance($maxTopologyDistance)
+        {
+        }
+        /**
+         * @return self::MAX_TOPOLOGY_DISTANCE_*
+         */
+        public function getMaxTopologyDistance()
+        {
+        }
+        /**
+         * Specifies the intent of the instance placement in the MIG.
+         *
+         * Accepted values: HIGH_AVAILABILITY, HIGH_THROUGHPUT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyWorkloadPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorTopology()
-    {
-    }
-    /**
-     * Specifies the maximum distance between instances.
-     *
-     * Accepted values: BLOCK, CLUSTER, SUBBLOCK
-     *
-     * @param self::MAX_TOPOLOGY_DISTANCE_* $maxTopologyDistance
-     */
-    public function setMaxTopologyDistance($maxTopologyDistance)
-    {
-    }
-    /**
-     * @return self::MAX_TOPOLOGY_DISTANCE_*
-     */
-    public function getMaxTopologyDistance()
-    {
-    }
-    /**
-     * Specifies the intent of the instance placement in the MIG.
-     *
-     * Accepted values: HIGH_AVAILABILITY, HIGH_THROUGHPUT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Compute_ResourcePolicyWorkloadPolicy extends \Google\Service\Compute\ResourcePolicyWorkloadPolicy
     {
     }
 }

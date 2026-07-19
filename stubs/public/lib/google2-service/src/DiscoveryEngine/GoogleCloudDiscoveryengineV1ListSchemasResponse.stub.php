@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    /**
-     * A token that can be sent as ListSchemasRequest.page_token to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemasType = GoogleCloudDiscoveryengineV1Schema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * A token that can be sent as ListSchemasRequest.page_token to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        /**
+         * A token that can be sent as ListSchemasRequest.page_token to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemasType = GoogleCloudDiscoveryengineV1Schema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * A token that can be sent as ListSchemasRequest.page_token to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The Schemas.
+         *
+         * @param GoogleCloudDiscoveryengineV1Schema[] $schemas
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Schema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The Schemas.
-     *
-     * @param GoogleCloudDiscoveryengineV1Schema[] $schemas
-     */
-    public function setSchemas($schemas)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Schema[]
-     */
-    public function getSchemas()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListSchemasResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListSchemasResponse
     {
     }
 }

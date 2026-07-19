@@ -21,59 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ChromeManagement (v1).
- *
- * <p>
- * The Chrome Management API is a suite of services that allows Chrome
- * administrators to view, manage and gain insights on their Chrome OS and
- * Chrome Browser devices.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/chrome/management/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ChromeManagement extends \Google\Service
-{
-    /** See detailed information about apps installed on Chrome browsers and devices managed by your organization. */
-    const CHROME_MANAGEMENT_APPDETAILS_READONLY = "https://www.googleapis.com/auth/chrome.management.appdetails.readonly";
-    /** See, edit, delete, and take other necessary actions on Chrome browser profiles managed by your organization. */
-    const CHROME_MANAGEMENT_PROFILES = "https://www.googleapis.com/auth/chrome.management.profiles";
-    /** See Chrome browser profiles managed by your organization. */
-    const CHROME_MANAGEMENT_PROFILES_READONLY = "https://www.googleapis.com/auth/chrome.management.profiles.readonly";
-    /** See reports about devices and Chrome browsers managed within your organization. */
-    const CHROME_MANAGEMENT_REPORTS_READONLY = "https://www.googleapis.com/auth/chrome.management.reports.readonly";
-    /** See basic device and telemetry information collected from ChromeOS devices or users managed within your organization. */
-    const CHROME_MANAGEMENT_TELEMETRY_READONLY = "https://www.googleapis.com/auth/chrome.management.telemetry.readonly";
-    public $customers_apps;
-    public $customers_apps_android;
-    public $customers_apps_chrome;
-    public $customers_apps_web;
-    public $customers_certificateProvisioningProcesses;
-    public $customers_certificateProvisioningProcesses_operations;
-    public $customers_profiles;
-    public $customers_profiles_commands;
-    public $customers_reports;
-    public $customers_telemetry_devices;
-    public $customers_telemetry_events;
-    public $customers_telemetry_notificationConfigs;
-    public $customers_telemetry_users;
-    public $customers_thirdPartyProfileUsers;
-    public $operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ChromeManagement service.
+     * Service definition for ChromeManagement (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Chrome Management API is a suite of services that allows Chrome
+     * administrators to view, manage and gain insights on their Chrome OS and
+     * Chrome Browser devices.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/chrome/management/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ChromeManagement extends \Google\Service
+    {
+        /** See detailed information about apps installed on Chrome browsers and devices managed by your organization. */
+        const CHROME_MANAGEMENT_APPDETAILS_READONLY = "https://www.googleapis.com/auth/chrome.management.appdetails.readonly";
+        /** See, edit, delete, and take other necessary actions on Chrome browser profiles managed by your organization. */
+        const CHROME_MANAGEMENT_PROFILES = "https://www.googleapis.com/auth/chrome.management.profiles";
+        /** See Chrome browser profiles managed by your organization. */
+        const CHROME_MANAGEMENT_PROFILES_READONLY = "https://www.googleapis.com/auth/chrome.management.profiles.readonly";
+        /** See reports about devices and Chrome browsers managed within your organization. */
+        const CHROME_MANAGEMENT_REPORTS_READONLY = "https://www.googleapis.com/auth/chrome.management.reports.readonly";
+        /** See basic device and telemetry information collected from ChromeOS devices or users managed within your organization. */
+        const CHROME_MANAGEMENT_TELEMETRY_READONLY = "https://www.googleapis.com/auth/chrome.management.telemetry.readonly";
+        public $customers_apps;
+        public $customers_apps_android;
+        public $customers_apps_chrome;
+        public $customers_apps_web;
+        public $customers_certificateProvisioningProcesses;
+        public $customers_certificateProvisioningProcesses_operations;
+        public $customers_profiles;
+        public $customers_profiles_commands;
+        public $customers_reports;
+        public $customers_telemetry_devices;
+        public $customers_telemetry_events;
+        public $customers_telemetry_notificationConfigs;
+        public $customers_telemetry_users;
+        public $customers_thirdPartyProfileUsers;
+        public $operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ChromeManagement service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement extends \Google\Service\ChromeManagement
     {
     }
 }

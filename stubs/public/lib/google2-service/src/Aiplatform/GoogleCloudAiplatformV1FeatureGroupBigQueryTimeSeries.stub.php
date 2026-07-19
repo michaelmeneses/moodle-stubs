@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries extends \Google\Model
-{
-    /**
-     * Optional. Column hosting timestamp values for a time-series source. Will be
-     * used to determine the latest `feature_values` for each entity. Optional. If
-     * not provided, column named `feature_timestamp` of type `TIMESTAMP` will be
-     * used.
-     *
-     * @var string
-     */
-    public $timestampColumn;
-    /**
-     * Optional. Column hosting timestamp values for a time-series source. Will be
-     * used to determine the latest `feature_values` for each entity. Optional. If
-     * not provided, column named `feature_timestamp` of type `TIMESTAMP` will be
-     * used.
-     *
-     * @param string $timestampColumn
-     */
-    public function setTimestampColumn($timestampColumn)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries extends \Google\Model
     {
+        /**
+         * Optional. Column hosting timestamp values for a time-series source. Will be
+         * used to determine the latest `feature_values` for each entity. Optional. If
+         * not provided, column named `feature_timestamp` of type `TIMESTAMP` will be
+         * used.
+         *
+         * @var string
+         */
+        public $timestampColumn;
+        /**
+         * Optional. Column hosting timestamp values for a time-series source. Will be
+         * used to determine the latest `feature_values` for each entity. Optional. If
+         * not provided, column named `feature_timestamp` of type `TIMESTAMP` will be
+         * used.
+         *
+         * @param string $timestampColumn
+         */
+        public function setTimestampColumn($timestampColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampColumn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimestampColumn()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries
     {
     }
 }

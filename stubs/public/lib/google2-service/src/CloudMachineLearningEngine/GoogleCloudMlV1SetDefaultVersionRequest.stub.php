@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1SetDefaultVersionRequest extends \Google\Model
-{
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1SetDefaultVersionRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SetDefaultVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1SetDefaultVersionRequest extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SetDefaultVersionRequest
+    {
+    }
 }

@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class SchemaSettings extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const ENCODING_ENCODING_UNSPECIFIED = 'ENCODING_UNSPECIFIED';
-    /**
-     * JSON encoding
-     */
-    public const ENCODING_JSON = 'JSON';
-    /**
-     * Binary encoding, as defined by the schema type. For some schema types,
-     * binary encoding may not be available.
-     */
-    public const ENCODING_BINARY = 'BINARY';
-    /**
-     * Optional. The encoding of messages validated against `schema`.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. The minimum (inclusive) revision allowed for validating messages.
-     * If empty or not present, allow any revision to be validated against
-     * last_revision or any revision created before.
-     *
-     * @var string
-     */
-    public $firstRevisionId;
-    /**
-     * Optional. The maximum (inclusive) revision allowed for validating messages.
-     * If empty or not present, allow any revision to be validated against
-     * first_revision or any revision created after.
-     *
-     * @var string
-     */
-    public $lastRevisionId;
-    /**
-     * Required. The name of the schema that messages published should be
-     * validated against. Format is `projects/{project}/schemas/{schema}`. The
-     * value of this field will be `_deleted-schema_` if the schema has been
-     * deleted.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Optional. The encoding of messages validated against `schema`.
-     *
-     * Accepted values: ENCODING_UNSPECIFIED, JSON, BINARY
-     *
-     * @param self::ENCODING_* $encoding
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\Pubsub {
+    class SchemaSettings extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const ENCODING_ENCODING_UNSPECIFIED = 'ENCODING_UNSPECIFIED';
+        /**
+         * JSON encoding
+         */
+        public const ENCODING_JSON = 'JSON';
+        /**
+         * Binary encoding, as defined by the schema type. For some schema types,
+         * binary encoding may not be available.
+         */
+        public const ENCODING_BINARY = 'BINARY';
+        /**
+         * Optional. The encoding of messages validated against `schema`.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. The minimum (inclusive) revision allowed for validating messages.
+         * If empty or not present, allow any revision to be validated against
+         * last_revision or any revision created before.
+         *
+         * @var string
+         */
+        public $firstRevisionId;
+        /**
+         * Optional. The maximum (inclusive) revision allowed for validating messages.
+         * If empty or not present, allow any revision to be validated against
+         * first_revision or any revision created after.
+         *
+         * @var string
+         */
+        public $lastRevisionId;
+        /**
+         * Required. The name of the schema that messages published should be
+         * validated against. Format is `projects/{project}/schemas/{schema}`. The
+         * value of this field will be `_deleted-schema_` if the schema has been
+         * deleted.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Optional. The encoding of messages validated against `schema`.
+         *
+         * Accepted values: ENCODING_UNSPECIFIED, JSON, BINARY
+         *
+         * @param self::ENCODING_* $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return self::ENCODING_*
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Optional. The minimum (inclusive) revision allowed for validating messages.
+         * If empty or not present, allow any revision to be validated against
+         * last_revision or any revision created before.
+         *
+         * @param string $firstRevisionId
+         */
+        public function setFirstRevisionId($firstRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstRevisionId()
+        {
+        }
+        /**
+         * Optional. The maximum (inclusive) revision allowed for validating messages.
+         * If empty or not present, allow any revision to be validated against
+         * first_revision or any revision created after.
+         *
+         * @param string $lastRevisionId
+         */
+        public function setLastRevisionId($lastRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRevisionId()
+        {
+        }
+        /**
+         * Required. The name of the schema that messages published should be
+         * validated against. Format is `projects/{project}/schemas/{schema}`. The
+         * value of this field will be `_deleted-schema_` if the schema has been
+         * deleted.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENCODING_*
+     * Runtime class alias of \Google\Service\Pubsub\SchemaSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Optional. The minimum (inclusive) revision allowed for validating messages.
-     * If empty or not present, allow any revision to be validated against
-     * last_revision or any revision created before.
-     *
-     * @param string $firstRevisionId
-     */
-    public function setFirstRevisionId($firstRevisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstRevisionId()
-    {
-    }
-    /**
-     * Optional. The maximum (inclusive) revision allowed for validating messages.
-     * If empty or not present, allow any revision to be validated against
-     * first_revision or any revision created after.
-     *
-     * @param string $lastRevisionId
-     */
-    public function setLastRevisionId($lastRevisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRevisionId()
-    {
-    }
-    /**
-     * Required. The name of the schema that messages published should be
-     * validated against. Format is `projects/{project}/schemas/{schema}`. The
-     * value of this field will be `_deleted-schema_` if the schema has been
-     * deleted.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
+    class Google_Service_Pubsub_SchemaSettings extends \Google\Service\Pubsub\SchemaSettings
     {
     }
 }

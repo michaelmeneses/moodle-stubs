@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SetAddonEnablementRequest extends \Google\Model
-{
-    /**
-     * If the Analytics should be enabled in the environment.
-     *
-     * @var bool
-     */
-    public $analyticsEnabled;
-    /**
-     * If the API Security should be enabled in the environment.
-     *
-     * @var bool
-     */
-    public $apiSecurityEnabled;
-    /**
-     * If the Analytics should be enabled in the environment.
-     *
-     * @param bool $analyticsEnabled
-     */
-    public function setAnalyticsEnabled($analyticsEnabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SetAddonEnablementRequest extends \Google\Model
     {
+        /**
+         * If the Analytics should be enabled in the environment.
+         *
+         * @var bool
+         */
+        public $analyticsEnabled;
+        /**
+         * If the API Security should be enabled in the environment.
+         *
+         * @var bool
+         */
+        public $apiSecurityEnabled;
+        /**
+         * If the Analytics should be enabled in the environment.
+         *
+         * @param bool $analyticsEnabled
+         */
+        public function setAnalyticsEnabled($analyticsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAnalyticsEnabled()
+        {
+        }
+        /**
+         * If the API Security should be enabled in the environment.
+         *
+         * @param bool $apiSecurityEnabled
+         */
+        public function setApiSecurityEnabled($apiSecurityEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApiSecurityEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SetAddonEnablementRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsEnabled()
-    {
-    }
-    /**
-     * If the API Security should be enabled in the environment.
-     *
-     * @param bool $apiSecurityEnabled
-     */
-    public function setApiSecurityEnabled($apiSecurityEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getApiSecurityEnabled()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SetAddonEnablementRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1SetAddonEnablementRequest
     {
     }
 }

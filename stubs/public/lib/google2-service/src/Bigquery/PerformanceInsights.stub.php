@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class PerformanceInsights extends \Google\Collection
-{
-    protected $collection_key = 'stagePerformanceStandaloneInsights';
-    /**
-     * Output only. Average execution ms of previous runs. Indicates the job ran
-     * slow compared to previous executions. To find previous executions, use
-     * INFORMATION_SCHEMA tables and filter jobs with same query hash.
-     *
-     * @var string
-     */
-    public $avgPreviousExecutionMs;
-    protected $stagePerformanceChangeInsightsType = StagePerformanceChangeInsight::class;
-    protected $stagePerformanceChangeInsightsDataType = 'array';
-    protected $stagePerformanceStandaloneInsightsType = StagePerformanceStandaloneInsight::class;
-    protected $stagePerformanceStandaloneInsightsDataType = 'array';
-    /**
-     * Output only. Average execution ms of previous runs. Indicates the job ran
-     * slow compared to previous executions. To find previous executions, use
-     * INFORMATION_SCHEMA tables and filter jobs with same query hash.
-     *
-     * @param string $avgPreviousExecutionMs
-     */
-    public function setAvgPreviousExecutionMs($avgPreviousExecutionMs)
+namespace Google\Service\Bigquery {
+    class PerformanceInsights extends \Google\Collection
     {
+        protected $collection_key = 'stagePerformanceStandaloneInsights';
+        /**
+         * Output only. Average execution ms of previous runs. Indicates the job ran
+         * slow compared to previous executions. To find previous executions, use
+         * INFORMATION_SCHEMA tables and filter jobs with same query hash.
+         *
+         * @var string
+         */
+        public $avgPreviousExecutionMs;
+        protected $stagePerformanceChangeInsightsType = StagePerformanceChangeInsight::class;
+        protected $stagePerformanceChangeInsightsDataType = 'array';
+        protected $stagePerformanceStandaloneInsightsType = StagePerformanceStandaloneInsight::class;
+        protected $stagePerformanceStandaloneInsightsDataType = 'array';
+        /**
+         * Output only. Average execution ms of previous runs. Indicates the job ran
+         * slow compared to previous executions. To find previous executions, use
+         * INFORMATION_SCHEMA tables and filter jobs with same query hash.
+         *
+         * @param string $avgPreviousExecutionMs
+         */
+        public function setAvgPreviousExecutionMs($avgPreviousExecutionMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvgPreviousExecutionMs()
+        {
+        }
+        /**
+         * Output only. Query stage performance insights compared to previous runs,
+         * for diagnosing performance regression.
+         *
+         * @param StagePerformanceChangeInsight[] $stagePerformanceChangeInsights
+         */
+        public function setStagePerformanceChangeInsights($stagePerformanceChangeInsights)
+        {
+        }
+        /**
+         * @return StagePerformanceChangeInsight[]
+         */
+        public function getStagePerformanceChangeInsights()
+        {
+        }
+        /**
+         * Output only. Standalone query stage performance insights, for exploring
+         * potential improvements.
+         *
+         * @param StagePerformanceStandaloneInsight[] $stagePerformanceStandaloneInsights
+         */
+        public function setStagePerformanceStandaloneInsights($stagePerformanceStandaloneInsights)
+        {
+        }
+        /**
+         * @return StagePerformanceStandaloneInsight[]
+         */
+        public function getStagePerformanceStandaloneInsights()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\PerformanceInsights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvgPreviousExecutionMs()
-    {
-    }
-    /**
-     * Output only. Query stage performance insights compared to previous runs,
-     * for diagnosing performance regression.
-     *
-     * @param StagePerformanceChangeInsight[] $stagePerformanceChangeInsights
-     */
-    public function setStagePerformanceChangeInsights($stagePerformanceChangeInsights)
-    {
-    }
-    /**
-     * @return StagePerformanceChangeInsight[]
-     */
-    public function getStagePerformanceChangeInsights()
-    {
-    }
-    /**
-     * Output only. Standalone query stage performance insights, for exploring
-     * potential improvements.
-     *
-     * @param StagePerformanceStandaloneInsight[] $stagePerformanceStandaloneInsights
-     */
-    public function setStagePerformanceStandaloneInsights($stagePerformanceStandaloneInsights)
-    {
-    }
-    /**
-     * @return StagePerformanceStandaloneInsight[]
-     */
-    public function getStagePerformanceStandaloneInsights()
+    class Google_Service_Bigquery_PerformanceInsights extends \Google\Service\Bigquery\PerformanceInsights
     {
     }
 }

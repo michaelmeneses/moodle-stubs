@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListApiDocsResponse extends \Google\Collection
-{
-    protected $collection_key = 'data';
-    protected $dataType = GoogleCloudApigeeV1ApiDoc::class;
-    protected $dataDataType = 'array';
-    /**
-     * Unique error code for the request, if any.
-     *
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * Description of the operation.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unique ID of the request.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Status of the operation.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The catalog item resources.
-     *
-     * @param GoogleCloudApigeeV1ApiDoc[] $data
-     */
-    public function setData($data)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListApiDocsResponse extends \Google\Collection
     {
+        protected $collection_key = 'data';
+        protected $dataType = GoogleCloudApigeeV1ApiDoc::class;
+        protected $dataDataType = 'array';
+        /**
+         * Unique error code for the request, if any.
+         *
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * Description of the operation.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unique ID of the request.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Status of the operation.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The catalog item resources.
+         *
+         * @param GoogleCloudApigeeV1ApiDoc[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiDoc[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Unique error code for the request, if any.
+         *
+         * @param string $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * Description of the operation.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unique ID of the request.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Status of the operation.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ApiDoc[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListApiDocsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Unique error code for the request, if any.
-     *
-     * @param string $errorCode
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * Description of the operation.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unique ID of the request.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Status of the operation.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListApiDocsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListApiDocsResponse
     {
     }
 }

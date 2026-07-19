@@ -21,174 +21,183 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2Stage extends \Google\Collection
-{
-    /**
-     * Not specified. Invalid name.
-     */
-    public const NAME_NAME_UNSPECIFIED = 'NAME_UNSPECIFIED';
-    /**
-     * Artifact Registry Stage
-     */
-    public const NAME_ARTIFACT_REGISTRY = 'ARTIFACT_REGISTRY';
-    /**
-     * Build Stage
-     */
-    public const NAME_BUILD = 'BUILD';
-    /**
-     * Service Stage
-     */
-    public const NAME_SERVICE = 'SERVICE';
-    /**
-     * Trigger Stage
-     */
-    public const NAME_TRIGGER = 'TRIGGER';
-    /**
-     * Service Rollback Stage
-     */
-    public const NAME_SERVICE_ROLLBACK = 'SERVICE_ROLLBACK';
-    /**
-     * Trigger Rollback Stage
-     */
-    public const NAME_TRIGGER_ROLLBACK = 'TRIGGER_ROLLBACK';
-    /**
-     * Not specified. Invalid state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Stage has not started.
-     */
-    public const STATE_NOT_STARTED = 'NOT_STARTED';
-    /**
-     * Stage is in progress.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * Stage has completed.
-     */
-    public const STATE_COMPLETE = 'COMPLETE';
-    protected $collection_key = 'stateMessages';
-    /**
-     * Message describing the Stage
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Name of the Stage. This will be unique for each Stage.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Resource of the Stage
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Link to the current Stage resource
-     *
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * Current state of the Stage
-     *
-     * @var string
-     */
-    public $state;
-    protected $stateMessagesType = GoogleCloudFunctionsV2StateMessage::class;
-    protected $stateMessagesDataType = 'array';
-    /**
-     * Message describing the Stage
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2Stage extends \Google\Collection
     {
+        /**
+         * Not specified. Invalid name.
+         */
+        public const NAME_NAME_UNSPECIFIED = 'NAME_UNSPECIFIED';
+        /**
+         * Artifact Registry Stage
+         */
+        public const NAME_ARTIFACT_REGISTRY = 'ARTIFACT_REGISTRY';
+        /**
+         * Build Stage
+         */
+        public const NAME_BUILD = 'BUILD';
+        /**
+         * Service Stage
+         */
+        public const NAME_SERVICE = 'SERVICE';
+        /**
+         * Trigger Stage
+         */
+        public const NAME_TRIGGER = 'TRIGGER';
+        /**
+         * Service Rollback Stage
+         */
+        public const NAME_SERVICE_ROLLBACK = 'SERVICE_ROLLBACK';
+        /**
+         * Trigger Rollback Stage
+         */
+        public const NAME_TRIGGER_ROLLBACK = 'TRIGGER_ROLLBACK';
+        /**
+         * Not specified. Invalid state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Stage has not started.
+         */
+        public const STATE_NOT_STARTED = 'NOT_STARTED';
+        /**
+         * Stage is in progress.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * Stage has completed.
+         */
+        public const STATE_COMPLETE = 'COMPLETE';
+        protected $collection_key = 'stateMessages';
+        /**
+         * Message describing the Stage
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Name of the Stage. This will be unique for each Stage.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Resource of the Stage
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Link to the current Stage resource
+         *
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * Current state of the Stage
+         *
+         * @var string
+         */
+        public $state;
+        protected $stateMessagesType = GoogleCloudFunctionsV2StateMessage::class;
+        protected $stateMessagesDataType = 'array';
+        /**
+         * Message describing the Stage
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Name of the Stage. This will be unique for each Stage.
+         *
+         * Accepted values: NAME_UNSPECIFIED, ARTIFACT_REGISTRY, BUILD, SERVICE,
+         * TRIGGER, SERVICE_ROLLBACK, TRIGGER_ROLLBACK
+         *
+         * @param self::NAME_* $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return self::NAME_*
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Resource of the Stage
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * Link to the current Stage resource
+         *
+         * @param string $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
+        /**
+         * Current state of the Stage
+         *
+         * Accepted values: STATE_UNSPECIFIED, NOT_STARTED, IN_PROGRESS, COMPLETE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * State messages from the current Stage.
+         *
+         * @param GoogleCloudFunctionsV2StateMessage[] $stateMessages
+         */
+        public function setStateMessages($stateMessages)
+        {
+        }
+        /**
+         * @return GoogleCloudFunctionsV2StateMessage[]
+         */
+        public function getStateMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2Stage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Name of the Stage. This will be unique for each Stage.
-     *
-     * Accepted values: NAME_UNSPECIFIED, ARTIFACT_REGISTRY, BUILD, SERVICE,
-     * TRIGGER, SERVICE_ROLLBACK, TRIGGER_ROLLBACK
-     *
-     * @param self::NAME_* $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return self::NAME_*
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Resource of the Stage
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * Link to the current Stage resource
-     *
-     * @param string $resourceUri
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
-    {
-    }
-    /**
-     * Current state of the Stage
-     *
-     * Accepted values: STATE_UNSPECIFIED, NOT_STARTED, IN_PROGRESS, COMPLETE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * State messages from the current Stage.
-     *
-     * @param GoogleCloudFunctionsV2StateMessage[] $stateMessages
-     */
-    public function setStateMessages($stateMessages)
-    {
-    }
-    /**
-     * @return GoogleCloudFunctionsV2StateMessage[]
-     */
-    public function getStateMessages()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2Stage extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2Stage
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $replyType;
-    /**
-     * @param string
-     */
-    public function setReplyType($replyType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $replyType;
+        /**
+         * @param string
+         */
+        public function setReplyType($replyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplyType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplyType()
+    class Google_Service_CloudSearch_AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply extends \Google\Service\CloudSearch\AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply
     {
     }
 }

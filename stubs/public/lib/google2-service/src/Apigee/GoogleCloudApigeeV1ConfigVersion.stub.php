@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ConfigVersion extends \Google\Model
-{
-    /**
-     * Major version of the API proxy configuration schema.
-     *
-     * @var int
-     */
-    public $majorVersion;
-    /**
-     * Minor version of the API proxy configuration schema.
-     *
-     * @var int
-     */
-    public $minorVersion;
-    /**
-     * Major version of the API proxy configuration schema.
-     *
-     * @param int $majorVersion
-     */
-    public function setMajorVersion($majorVersion)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ConfigVersion extends \Google\Model
     {
+        /**
+         * Major version of the API proxy configuration schema.
+         *
+         * @var int
+         */
+        public $majorVersion;
+        /**
+         * Minor version of the API proxy configuration schema.
+         *
+         * @var int
+         */
+        public $minorVersion;
+        /**
+         * Major version of the API proxy configuration schema.
+         *
+         * @param int $majorVersion
+         */
+        public function setMajorVersion($majorVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMajorVersion()
+        {
+        }
+        /**
+         * Minor version of the API proxy configuration schema.
+         *
+         * @param int $minorVersion
+         */
+        public function setMinorVersion($minorVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ConfigVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMajorVersion()
-    {
-    }
-    /**
-     * Minor version of the API proxy configuration schema.
-     *
-     * @param int $minorVersion
-     */
-    public function setMinorVersion($minorVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinorVersion()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ConfigVersion extends \Google\Service\Apigee\GoogleCloudApigeeV1ConfigVersion
     {
     }
 }

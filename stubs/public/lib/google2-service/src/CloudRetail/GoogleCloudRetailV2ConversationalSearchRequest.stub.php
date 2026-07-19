@@ -21,256 +21,265 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchRequest extends \Google\Collection
-{
-    protected $collection_key = 'safetySettings';
-    /**
-     * Required. The branch resource name, such as
-     * `projects/locations/global/catalogs/default_catalog/branches/0`. Use
-     * "default_branch" as the branch ID or leave this field empty, to search
-     * products under the default branch.
-     *
-     * @var string
-     */
-    public $branch;
-    /**
-     * Optional. This field specifies the conversation id, which maintains the
-     * state of the conversation between client side and server side. Use the
-     * value from the previous ConversationalSearchResponse.conversation_id. For
-     * the initial request, this should be empty.
-     *
-     * @var string
-     */
-    public $conversationId;
-    protected $conversationalFilteringSpecType = GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec::class;
-    protected $conversationalFilteringSpecDataType = '';
-    /**
-     * Optional. The categories associated with a category page. Must be set for
-     * category navigation queries to achieve good search quality. The format
-     * should be the same as UserEvent.page_categories; To represent full path of
-     * category, use '>' sign to separate different hierarchies. If '>' is part of
-     * the category name, replace it with other character(s). Category pages
-     * include special pages such as sales or promotions. For instance, a special
-     * sale page may have the category hierarchy: "pageCategories" : ["Sales >
-     * 2017 Black Friday Deals"].
-     *
-     * @var string[]
-     */
-    public $pageCategories;
-    /**
-     * Optional. Raw search query to be searched for. If this field is empty, the
-     * request is considered a category browsing request.
-     *
-     * @var string
-     */
-    public $query;
-    protected $safetySettingsType = GoogleCloudRetailV2SafetySetting::class;
-    protected $safetySettingsDataType = 'array';
-    protected $searchParamsType = GoogleCloudRetailV2ConversationalSearchRequestSearchParams::class;
-    protected $searchParamsDataType = '';
-    protected $userInfoType = GoogleCloudRetailV2UserInfo::class;
-    protected $userInfoDataType = '';
-    /**
-     * Optional. The user labels applied to a resource must meet the following
-     * requirements: * Each resource can have multiple labels, up to a maximum of
-     * 64. * Each label must be a key-value pair. * Keys have a minimum length of
-     * 1 character and a maximum length of 63 characters and cannot be empty.
-     * Values can be empty and have a maximum length of 63 characters. * Keys and
-     * values can contain only lowercase letters, numeric characters, underscores,
-     * and dashes. All characters must use UTF-8 encoding, and international
-     * characters are allowed. * The key portion of a label must be unique.
-     * However, you can use the same key with multiple resources. * Keys must
-     * start with a lowercase letter or international character. See [Google Cloud
-     * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * labels#requirements) for more details.
-     *
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * Required. A unique identifier for tracking visitors. For example, this
-     * could be implemented with an HTTP cookie, which should be able to uniquely
-     * identify a visitor on a single device. This unique identifier should not
-     * change if the visitor logs in or out of the website. This should be the
-     * same identifier as UserEvent.visitor_id. The field must be a UTF-8 encoded
-     * string with a length limit of 128 characters. Otherwise, an
-     * INVALID_ARGUMENT error is returned.
-     *
-     * @var string
-     */
-    public $visitorId;
-    /**
-     * Required. The branch resource name, such as
-     * `projects/locations/global/catalogs/default_catalog/branches/0`. Use
-     * "default_branch" as the branch ID or leave this field empty, to search
-     * products under the default branch.
-     *
-     * @param string $branch
-     */
-    public function setBranch($branch)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchRequest extends \Google\Collection
     {
+        protected $collection_key = 'safetySettings';
+        /**
+         * Required. The branch resource name, such as
+         * `projects/locations/global/catalogs/default_catalog/branches/0`. Use
+         * "default_branch" as the branch ID or leave this field empty, to search
+         * products under the default branch.
+         *
+         * @var string
+         */
+        public $branch;
+        /**
+         * Optional. This field specifies the conversation id, which maintains the
+         * state of the conversation between client side and server side. Use the
+         * value from the previous ConversationalSearchResponse.conversation_id. For
+         * the initial request, this should be empty.
+         *
+         * @var string
+         */
+        public $conversationId;
+        protected $conversationalFilteringSpecType = GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec::class;
+        protected $conversationalFilteringSpecDataType = '';
+        /**
+         * Optional. The categories associated with a category page. Must be set for
+         * category navigation queries to achieve good search quality. The format
+         * should be the same as UserEvent.page_categories; To represent full path of
+         * category, use '>' sign to separate different hierarchies. If '>' is part of
+         * the category name, replace it with other character(s). Category pages
+         * include special pages such as sales or promotions. For instance, a special
+         * sale page may have the category hierarchy: "pageCategories" : ["Sales >
+         * 2017 Black Friday Deals"].
+         *
+         * @var string[]
+         */
+        public $pageCategories;
+        /**
+         * Optional. Raw search query to be searched for. If this field is empty, the
+         * request is considered a category browsing request.
+         *
+         * @var string
+         */
+        public $query;
+        protected $safetySettingsType = GoogleCloudRetailV2SafetySetting::class;
+        protected $safetySettingsDataType = 'array';
+        protected $searchParamsType = GoogleCloudRetailV2ConversationalSearchRequestSearchParams::class;
+        protected $searchParamsDataType = '';
+        protected $userInfoType = GoogleCloudRetailV2UserInfo::class;
+        protected $userInfoDataType = '';
+        /**
+         * Optional. The user labels applied to a resource must meet the following
+         * requirements: * Each resource can have multiple labels, up to a maximum of
+         * 64. * Each label must be a key-value pair. * Keys have a minimum length of
+         * 1 character and a maximum length of 63 characters and cannot be empty.
+         * Values can be empty and have a maximum length of 63 characters. * Keys and
+         * values can contain only lowercase letters, numeric characters, underscores,
+         * and dashes. All characters must use UTF-8 encoding, and international
+         * characters are allowed. * The key portion of a label must be unique.
+         * However, you can use the same key with multiple resources. * Keys must
+         * start with a lowercase letter or international character. See [Google Cloud
+         * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * labels#requirements) for more details.
+         *
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * Required. A unique identifier for tracking visitors. For example, this
+         * could be implemented with an HTTP cookie, which should be able to uniquely
+         * identify a visitor on a single device. This unique identifier should not
+         * change if the visitor logs in or out of the website. This should be the
+         * same identifier as UserEvent.visitor_id. The field must be a UTF-8 encoded
+         * string with a length limit of 128 characters. Otherwise, an
+         * INVALID_ARGUMENT error is returned.
+         *
+         * @var string
+         */
+        public $visitorId;
+        /**
+         * Required. The branch resource name, such as
+         * `projects/locations/global/catalogs/default_catalog/branches/0`. Use
+         * "default_branch" as the branch ID or leave this field empty, to search
+         * products under the default branch.
+         *
+         * @param string $branch
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * Optional. This field specifies the conversation id, which maintains the
+         * state of the conversation between client side and server side. Use the
+         * value from the previous ConversationalSearchResponse.conversation_id. For
+         * the initial request, this should be empty.
+         *
+         * @param string $conversationId
+         */
+        public function setConversationId($conversationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationId()
+        {
+        }
+        /**
+         * Optional. This field specifies all conversational filtering related
+         * parameters.
+         *
+         * @param GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec $conversationalFilteringSpec
+         */
+        public function setConversationalFilteringSpec(GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec $conversationalFilteringSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec
+         */
+        public function getConversationalFilteringSpec()
+        {
+        }
+        /**
+         * Optional. The categories associated with a category page. Must be set for
+         * category navigation queries to achieve good search quality. The format
+         * should be the same as UserEvent.page_categories; To represent full path of
+         * category, use '>' sign to separate different hierarchies. If '>' is part of
+         * the category name, replace it with other character(s). Category pages
+         * include special pages such as sales or promotions. For instance, a special
+         * sale page may have the category hierarchy: "pageCategories" : ["Sales >
+         * 2017 Black Friday Deals"].
+         *
+         * @param string[] $pageCategories
+         */
+        public function setPageCategories($pageCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPageCategories()
+        {
+        }
+        /**
+         * Optional. Raw search query to be searched for. If this field is empty, the
+         * request is considered a category browsing request.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Optional. The safety settings to be applied to the generated content.
+         *
+         * @param GoogleCloudRetailV2SafetySetting[] $safetySettings
+         */
+        public function setSafetySettings($safetySettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2SafetySetting[]
+         */
+        public function getSafetySettings()
+        {
+        }
+        /**
+         * Optional. Search parameters.
+         *
+         * @param GoogleCloudRetailV2ConversationalSearchRequestSearchParams $searchParams
+         */
+        public function setSearchParams(GoogleCloudRetailV2ConversationalSearchRequestSearchParams $searchParams)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ConversationalSearchRequestSearchParams
+         */
+        public function getSearchParams()
+        {
+        }
+        /**
+         * Optional. User information.
+         *
+         * @param GoogleCloudRetailV2UserInfo $userInfo
+         */
+        public function setUserInfo(GoogleCloudRetailV2UserInfo $userInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2UserInfo
+         */
+        public function getUserInfo()
+        {
+        }
+        /**
+         * Optional. The user labels applied to a resource must meet the following
+         * requirements: * Each resource can have multiple labels, up to a maximum of
+         * 64. * Each label must be a key-value pair. * Keys have a minimum length of
+         * 1 character and a maximum length of 63 characters and cannot be empty.
+         * Values can be empty and have a maximum length of 63 characters. * Keys and
+         * values can contain only lowercase letters, numeric characters, underscores,
+         * and dashes. All characters must use UTF-8 encoding, and international
+         * characters are allowed. * The key portion of a label must be unique.
+         * However, you can use the same key with multiple resources. * Keys must
+         * start with a lowercase letter or international character. See [Google Cloud
+         * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * labels#requirements) for more details.
+         *
+         * @param string[] $userLabels
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
+        /**
+         * Required. A unique identifier for tracking visitors. For example, this
+         * could be implemented with an HTTP cookie, which should be able to uniquely
+         * identify a visitor on a single device. This unique identifier should not
+         * change if the visitor logs in or out of the website. This should be the
+         * same identifier as UserEvent.visitor_id. The field must be a UTF-8 encoded
+         * string with a length limit of 128 characters. Otherwise, an
+         * INVALID_ARGUMENT error is returned.
+         *
+         * @param string $visitorId
+         */
+        public function setVisitorId($visitorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVisitorId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranch()
-    {
-    }
-    /**
-     * Optional. This field specifies the conversation id, which maintains the
-     * state of the conversation between client side and server side. Use the
-     * value from the previous ConversationalSearchResponse.conversation_id. For
-     * the initial request, this should be empty.
-     *
-     * @param string $conversationId
-     */
-    public function setConversationId($conversationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversationId()
-    {
-    }
-    /**
-     * Optional. This field specifies all conversational filtering related
-     * parameters.
-     *
-     * @param GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec $conversationalFilteringSpec
-     */
-    public function setConversationalFilteringSpec(GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec $conversationalFilteringSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec
-     */
-    public function getConversationalFilteringSpec()
-    {
-    }
-    /**
-     * Optional. The categories associated with a category page. Must be set for
-     * category navigation queries to achieve good search quality. The format
-     * should be the same as UserEvent.page_categories; To represent full path of
-     * category, use '>' sign to separate different hierarchies. If '>' is part of
-     * the category name, replace it with other character(s). Category pages
-     * include special pages such as sales or promotions. For instance, a special
-     * sale page may have the category hierarchy: "pageCategories" : ["Sales >
-     * 2017 Black Friday Deals"].
-     *
-     * @param string[] $pageCategories
-     */
-    public function setPageCategories($pageCategories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPageCategories()
-    {
-    }
-    /**
-     * Optional. Raw search query to be searched for. If this field is empty, the
-     * request is considered a category browsing request.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Optional. The safety settings to be applied to the generated content.
-     *
-     * @param GoogleCloudRetailV2SafetySetting[] $safetySettings
-     */
-    public function setSafetySettings($safetySettings)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2SafetySetting[]
-     */
-    public function getSafetySettings()
-    {
-    }
-    /**
-     * Optional. Search parameters.
-     *
-     * @param GoogleCloudRetailV2ConversationalSearchRequestSearchParams $searchParams
-     */
-    public function setSearchParams(GoogleCloudRetailV2ConversationalSearchRequestSearchParams $searchParams)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ConversationalSearchRequestSearchParams
-     */
-    public function getSearchParams()
-    {
-    }
-    /**
-     * Optional. User information.
-     *
-     * @param GoogleCloudRetailV2UserInfo $userInfo
-     */
-    public function setUserInfo(GoogleCloudRetailV2UserInfo $userInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2UserInfo
-     */
-    public function getUserInfo()
-    {
-    }
-    /**
-     * Optional. The user labels applied to a resource must meet the following
-     * requirements: * Each resource can have multiple labels, up to a maximum of
-     * 64. * Each label must be a key-value pair. * Keys have a minimum length of
-     * 1 character and a maximum length of 63 characters and cannot be empty.
-     * Values can be empty and have a maximum length of 63 characters. * Keys and
-     * values can contain only lowercase letters, numeric characters, underscores,
-     * and dashes. All characters must use UTF-8 encoding, and international
-     * characters are allowed. * The key portion of a label must be unique.
-     * However, you can use the same key with multiple resources. * Keys must
-     * start with a lowercase letter or international character. See [Google Cloud
-     * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * labels#requirements) for more details.
-     *
-     * @param string[] $userLabels
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
-    {
-    }
-    /**
-     * Required. A unique identifier for tracking visitors. For example, this
-     * could be implemented with an HTTP cookie, which should be able to uniquely
-     * identify a visitor on a single device. This unique identifier should not
-     * change if the visitor logs in or out of the website. This should be the
-     * same identifier as UserEvent.visitor_id. The field must be a UTF-8 encoded
-     * string with a length limit of 128 characters. Otherwise, an
-     * INVALID_ARGUMENT error is returned.
-     *
-     * @param string $visitorId
-     */
-    public function setVisitorId($visitorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVisitorId()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequest
     {
     }
 }

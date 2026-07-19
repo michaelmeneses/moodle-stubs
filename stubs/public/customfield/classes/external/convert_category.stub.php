@@ -8,6 +8,13 @@
  */
 namespace core_customfield\external;
 
+use core_customfield\api;
+use core_customfield\customfield\shared_handler;
+use core_customfield\handler;
+use core_customfield\category;
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
 /**
  * External method for converting any entity custom field category to a shared category.
  *

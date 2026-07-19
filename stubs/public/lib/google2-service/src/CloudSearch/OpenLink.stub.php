@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OpenLink extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $loadIndicator;
-    /**
-     * @var string
-     */
-    public $onClose;
-    /**
-     * @var string
-     */
-    public $openAs;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setLoadIndicator($loadIndicator)
+namespace Google\Service\CloudSearch {
+    class OpenLink extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $loadIndicator;
+        /**
+         * @var string
+         */
+        public $onClose;
+        /**
+         * @var string
+         */
+        public $openAs;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setLoadIndicator($loadIndicator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoadIndicator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOnClose($onClose)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnClose()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOpenAs($openAs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpenAs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\OpenLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoadIndicator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOnClose($onClose)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnClose()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOpenAs($openAs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpenAs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_OpenLink extends \Google\Service\CloudSearch\OpenLink
     {
     }
 }

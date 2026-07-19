@@ -21,54 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect\Resource;
-
-/**
- * The "deploymentEvents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $developerconnectService = new Google\Service\DeveloperConnect(...);
- *   $deploymentEvents = $developerconnectService->projects_locations_insightsConfigs_deploymentEvents;
- *  </code>
- */
-class ProjectsLocationsInsightsConfigsDeploymentEvents extends \Google\Service\Resource
-{
+namespace Google\Service\DeveloperConnect\Resource {
+    use Google\Service\DeveloperConnect\DeploymentEvent;
+    use Google\Service\DeveloperConnect\ListDeploymentEventsResponse;
     /**
-     * Gets a single Deployment Event. (deploymentEvents.get)
-     *
-     * @param string $name Required. The name of the deployment event to retrieve.
-     * Format: projects/{project}/locations/{location}/insightsConfigs/{insights_con
-     * fig}/deploymentEvents/{uuid}
-     * @param array $optParams Optional parameters.
-     * @return DeploymentEvent
-     * @throws \Google\Service\Exception
+     * The "deploymentEvents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $developerconnectService = new Google\Service\DeveloperConnect(...);
+     *   $deploymentEvents = $developerconnectService->projects_locations_insightsConfigs_deploymentEvents;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsInsightsConfigsDeploymentEvents extends \Google\Service\Resource
     {
+        /**
+         * Gets a single Deployment Event. (deploymentEvents.get)
+         *
+         * @param string $name Required. The name of the deployment event to retrieve.
+         * Format: projects/{project}/locations/{location}/insightsConfigs/{insights_con
+         * fig}/deploymentEvents/{uuid}
+         * @param array $optParams Optional parameters.
+         * @return DeploymentEvent
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Deployment Events in a given insights config.
+         * (deploymentEvents.listProjectsLocationsInsightsConfigsDeploymentEvents)
+         *
+         * @param string $parent Required. The parent insights config that owns this
+         * collection of deployment events. Format:
+         * projects/{project}/locations/{location}/insightsConfigs/{insights_config}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression that matches a subset of
+         * the DeploymentEvents. https://google.aip.dev/160.
+         * @opt_param int pageSize Optional. The maximum number of deployment events to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 50 deployment events will be returned. The maximum value is 1000; values
+         * above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListDeploymentEvents` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListDeploymentEvents` must
+         * match the call that provided the page token.
+         * @return ListDeploymentEventsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsInsightsConfigsDeploymentEvents($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Deployment Events in a given insights config.
-     * (deploymentEvents.listProjectsLocationsInsightsConfigsDeploymentEvents)
-     *
-     * @param string $parent Required. The parent insights config that owns this
-     * collection of deployment events. Format:
-     * projects/{project}/locations/{location}/insightsConfigs/{insights_config}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression that matches a subset of
-     * the DeploymentEvents. https://google.aip.dev/160.
-     * @opt_param int pageSize Optional. The maximum number of deployment events to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 50 deployment events will be returned. The maximum value is 1000; values
-     * above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListDeploymentEvents` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListDeploymentEvents` must
-     * match the call that provided the page token.
-     * @return ListDeploymentEventsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DeveloperConnect\Resource\ProjectsLocationsInsightsConfigsDeploymentEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsInsightsConfigsDeploymentEvents($parent, $optParams = [])
+    class Google_Service_DeveloperConnect_Resource_ProjectsLocationsInsightsConfigsDeploymentEvents extends \Google\Service\DeveloperConnect\Resource\ProjectsLocationsInsightsConfigsDeploymentEvents
     {
     }
 }

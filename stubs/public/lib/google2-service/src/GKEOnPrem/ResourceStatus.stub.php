@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class ResourceStatus extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $conditionsType = ResourceCondition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * Human-friendly representation of the error message from controller. The
-     * error message can be temporary as the controller controller creates a
-     * cluster or node pool. If the error message persists for a longer period of
-     * time, it can be used to surface error message to indicate real problems
-     * requiring user intervention.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Reflect current version of the resource.
-     *
-     * @var string
-     */
-    public $version;
-    protected $versionsType = Versions::class;
-    protected $versionsDataType = '';
-    /**
-     * ResourceCondition provide a standard mechanism for higher-level status
-     * reporting from controller.
-     *
-     * @param ResourceCondition[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\GKEOnPrem {
+    class ResourceStatus extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $conditionsType = ResourceCondition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * Human-friendly representation of the error message from controller. The
+         * error message can be temporary as the controller controller creates a
+         * cluster or node pool. If the error message persists for a longer period of
+         * time, it can be used to surface error message to indicate real problems
+         * requiring user intervention.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Reflect current version of the resource.
+         *
+         * @var string
+         */
+        public $version;
+        protected $versionsType = Versions::class;
+        protected $versionsDataType = '';
+        /**
+         * ResourceCondition provide a standard mechanism for higher-level status
+         * reporting from controller.
+         *
+         * @param ResourceCondition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return ResourceCondition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * Human-friendly representation of the error message from controller. The
+         * error message can be temporary as the controller controller creates a
+         * cluster or node pool. If the error message persists for a longer period of
+         * time, it can be used to surface error message to indicate real problems
+         * requiring user intervention.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Reflect current version of the resource.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * Shows the mapping of a given version to the number of machines under this
+         * version.
+         *
+         * @param Versions $versions
+         */
+        public function setVersions(Versions $versions)
+        {
+        }
+        /**
+         * @return Versions
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceCondition[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\ResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * Human-friendly representation of the error message from controller. The
-     * error message can be temporary as the controller controller creates a
-     * cluster or node pool. If the error message persists for a longer period of
-     * time, it can be used to surface error message to indicate real problems
-     * requiring user intervention.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Reflect current version of the resource.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * Shows the mapping of a given version to the number of machines under this
-     * version.
-     *
-     * @param Versions $versions
-     */
-    public function setVersions(Versions $versions)
-    {
-    }
-    /**
-     * @return Versions
-     */
-    public function getVersions()
+    class Google_Service_GKEOnPrem_ResourceStatus extends \Google\Service\GKEOnPrem\ResourceStatus
     {
     }
 }

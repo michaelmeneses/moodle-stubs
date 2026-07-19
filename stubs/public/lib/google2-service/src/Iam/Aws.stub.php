@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class Aws extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accountId;
-    /**
-     * @param string
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Iam {
+    class Aws extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accountId;
+        /**
+         * @param string
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\Aws registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
+    class Google_Service_Iam_Aws extends \Google\Service\Iam\Aws
     {
     }
 }

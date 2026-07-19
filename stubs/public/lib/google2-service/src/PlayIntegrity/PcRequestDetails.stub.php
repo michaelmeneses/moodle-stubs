@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class PcRequestDetails extends \Google\Model
-{
-    /**
-     * Request hash that was provided in the request.
-     *
-     * @var string
-     */
-    public $requestHash;
-    /**
-     * Required. Application package name this attestation was requested for.
-     * Note: This field makes no guarantees or promises on the caller integrity.
-     *
-     * @var string
-     */
-    public $requestPackageName;
-    /**
-     * Required. Timestamp, of the integrity application request.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * Request hash that was provided in the request.
-     *
-     * @param string $requestHash
-     */
-    public function setRequestHash($requestHash)
+namespace Google\Service\PlayIntegrity {
+    class PcRequestDetails extends \Google\Model
     {
+        /**
+         * Request hash that was provided in the request.
+         *
+         * @var string
+         */
+        public $requestHash;
+        /**
+         * Required. Application package name this attestation was requested for.
+         * Note: This field makes no guarantees or promises on the caller integrity.
+         *
+         * @var string
+         */
+        public $requestPackageName;
+        /**
+         * Required. Timestamp, of the integrity application request.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * Request hash that was provided in the request.
+         *
+         * @param string $requestHash
+         */
+        public function setRequestHash($requestHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestHash()
+        {
+        }
+        /**
+         * Required. Application package name this attestation was requested for.
+         * Note: This field makes no guarantees or promises on the caller integrity.
+         *
+         * @param string $requestPackageName
+         */
+        public function setRequestPackageName($requestPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestPackageName()
+        {
+        }
+        /**
+         * Required. Timestamp, of the integrity application request.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayIntegrity\PcRequestDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestHash()
-    {
-    }
-    /**
-     * Required. Application package name this attestation was requested for.
-     * Note: This field makes no guarantees or promises on the caller integrity.
-     *
-     * @param string $requestPackageName
-     */
-    public function setRequestPackageName($requestPackageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestPackageName()
-    {
-    }
-    /**
-     * Required. Timestamp, of the integrity application request.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
+    class Google_Service_PlayIntegrity_PcRequestDetails extends \Google\Service\PlayIntegrity\PcRequestDetails
     {
     }
 }

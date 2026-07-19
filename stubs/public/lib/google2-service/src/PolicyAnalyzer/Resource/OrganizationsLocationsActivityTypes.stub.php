@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyAnalyzer\Resource;
-
-/**
- * The "activityTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $policyanalyzerService = new Google\Service\PolicyAnalyzer(...);
- *   $activityTypes = $policyanalyzerService->organizations_locations_activityTypes;
- *  </code>
- */
-class OrganizationsLocationsActivityTypes extends \Google\Service\Resource
-{
+namespace Google\Service\PolicyAnalyzer\Resource {
+    /**
+     * The "activityTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $policyanalyzerService = new Google\Service\PolicyAnalyzer(...);
+     *   $activityTypes = $policyanalyzerService->organizations_locations_activityTypes;
+     *  </code>
+     */
+    class OrganizationsLocationsActivityTypes extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolicyAnalyzer\Resource\OrganizationsLocationsActivityTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolicyAnalyzer_Resource_OrganizationsLocationsActivityTypes extends \Google\Service\PolicyAnalyzer\Resource\OrganizationsLocationsActivityTypes
+    {
+    }
 }

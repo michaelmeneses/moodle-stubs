@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployedModelStatus extends \Google\Model
-{
-    /**
-     * Output only. The number of available replicas of the deployed model.
-     *
-     * @var int
-     */
-    public $availableReplicaCount;
-    /**
-     * Output only. The time at which the status was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * Output only. The latest deployed model's status message (if any).
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. The number of available replicas of the deployed model.
-     *
-     * @param int $availableReplicaCount
-     */
-    public function setAvailableReplicaCount($availableReplicaCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployedModelStatus extends \Google\Model
     {
+        /**
+         * Output only. The number of available replicas of the deployed model.
+         *
+         * @var int
+         */
+        public $availableReplicaCount;
+        /**
+         * Output only. The time at which the status was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * Output only. The latest deployed model's status message (if any).
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. The number of available replicas of the deployed model.
+         *
+         * @param int $availableReplicaCount
+         */
+        public function setAvailableReplicaCount($availableReplicaCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableReplicaCount()
+        {
+        }
+        /**
+         * Output only. The time at which the status was last updated.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Output only. The latest deployed model's status message (if any).
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedModelStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableReplicaCount()
-    {
-    }
-    /**
-     * Output only. The time at which the status was last updated.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Output only. The latest deployed model's status message (if any).
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployedModelStatus extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedModelStatus
     {
     }
 }

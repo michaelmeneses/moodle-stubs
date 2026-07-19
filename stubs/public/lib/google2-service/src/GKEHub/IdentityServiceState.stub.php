@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceState extends \Google\Model
-{
-    /**
-     * Unspecified state
-     */
-    public const STATE_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * deployment succeeds
-     */
-    public const STATE_OK = 'OK';
-    /**
-     * Failure with error.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * The reason of the failure.
-     *
-     * @var string
-     */
-    public $failureReason;
-    /**
-     * Installed AIS version. This is the AIS version installed on this member.
-     * The values makes sense iff state is OK.
-     *
-     * @var string
-     */
-    public $installedVersion;
-    protected $memberConfigType = IdentityServiceSpec::class;
-    protected $memberConfigDataType = '';
-    /**
-     * Deployment state on this member
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The reason of the failure.
-     *
-     * @param string $failureReason
-     */
-    public function setFailureReason($failureReason)
+namespace Google\Service\GKEHub {
+    class IdentityServiceState extends \Google\Model
     {
+        /**
+         * Unspecified state
+         */
+        public const STATE_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * deployment succeeds
+         */
+        public const STATE_OK = 'OK';
+        /**
+         * Failure with error.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * The reason of the failure.
+         *
+         * @var string
+         */
+        public $failureReason;
+        /**
+         * Installed AIS version. This is the AIS version installed on this member.
+         * The values makes sense iff state is OK.
+         *
+         * @var string
+         */
+        public $installedVersion;
+        protected $memberConfigType = IdentityServiceSpec::class;
+        protected $memberConfigDataType = '';
+        /**
+         * Deployment state on this member
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The reason of the failure.
+         *
+         * @param string $failureReason
+         */
+        public function setFailureReason($failureReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureReason()
+        {
+        }
+        /**
+         * Installed AIS version. This is the AIS version installed on this member.
+         * The values makes sense iff state is OK.
+         *
+         * @param string $installedVersion
+         */
+        public function setInstalledVersion($installedVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstalledVersion()
+        {
+        }
+        /**
+         * Last reconciled membership configuration
+         *
+         * @param IdentityServiceSpec $memberConfig
+         */
+        public function setMemberConfig(IdentityServiceSpec $memberConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceSpec
+         */
+        public function getMemberConfig()
+        {
+        }
+        /**
+         * Deployment state on this member
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, OK, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureReason()
-    {
-    }
-    /**
-     * Installed AIS version. This is the AIS version installed on this member.
-     * The values makes sense iff state is OK.
-     *
-     * @param string $installedVersion
-     */
-    public function setInstalledVersion($installedVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstalledVersion()
-    {
-    }
-    /**
-     * Last reconciled membership configuration
-     *
-     * @param IdentityServiceSpec $memberConfig
-     */
-    public function setMemberConfig(IdentityServiceSpec $memberConfig)
-    {
-    }
-    /**
-     * @return IdentityServiceSpec
-     */
-    public function getMemberConfig()
-    {
-    }
-    /**
-     * Deployment state on this member
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, OK, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_GKEHub_IdentityServiceState extends \Google\Service\GKEHub\IdentityServiceState
     {
     }
 }

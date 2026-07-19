@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RemoveControlRequest extends \Google\Model
-{
-    /**
-     * Required. The id of the control to apply. Assumed to be in the same catalog
-     * as the serving config.
-     *
-     * @var string
-     */
-    public $controlId;
-    /**
-     * Required. The id of the control to apply. Assumed to be in the same catalog
-     * as the serving config.
-     *
-     * @param string $controlId
-     */
-    public function setControlId($controlId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RemoveControlRequest extends \Google\Model
     {
+        /**
+         * Required. The id of the control to apply. Assumed to be in the same catalog
+         * as the serving config.
+         *
+         * @var string
+         */
+        public $controlId;
+        /**
+         * Required. The id of the control to apply. Assumed to be in the same catalog
+         * as the serving config.
+         *
+         * @param string $controlId
+         */
+        public function setControlId($controlId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveControlRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlId()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RemoveControlRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveControlRequest
     {
     }
 }

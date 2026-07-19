@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ConsentList extends \Google\Collection
-{
-    protected $collection_key = 'consents';
-    /**
-     * The resource names of the Consents to evaluate against, of the form `projec
-     * ts/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentStores
-     * /{consent_store_id}/consents/{consent_id}`.
-     *
-     * @var string[]
-     */
-    public $consents;
-    /**
-     * The resource names of the Consents to evaluate against, of the form `projec
-     * ts/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentStores
-     * /{consent_store_id}/consents/{consent_id}`.
-     *
-     * @param string[] $consents
-     */
-    public function setConsents($consents)
+namespace Google\Service\CloudHealthcare {
+    class ConsentList extends \Google\Collection
     {
+        protected $collection_key = 'consents';
+        /**
+         * The resource names of the Consents to evaluate against, of the form `projec
+         * ts/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentStores
+         * /{consent_store_id}/consents/{consent_id}`.
+         *
+         * @var string[]
+         */
+        public $consents;
+        /**
+         * The resource names of the Consents to evaluate against, of the form `projec
+         * ts/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentStores
+         * /{consent_store_id}/consents/{consent_id}`.
+         *
+         * @param string[] $consents
+         */
+        public function setConsents($consents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConsents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ConsentList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsents()
+    class Google_Service_CloudHealthcare_ConsentList extends \Google\Service\CloudHealthcare\ConsentList
     {
     }
 }

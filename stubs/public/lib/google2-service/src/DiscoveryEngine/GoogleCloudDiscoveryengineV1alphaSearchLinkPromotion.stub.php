@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchLinkPromotion extends \Google\Model
-{
-    /**
-     * Optional. The Promotion description. Maximum length: 200 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. The Document the user wants to promote. For site search, leave
-     * unset and only populate uri. Can be set along with uri.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Optional. The enabled promotion will be returned for any serving configs
-     * associated with the parent of the control this promotion is attached to.
-     * This flag is used for basic site search only.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Optional. The promotion thumbnail image url.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * Required. The title of the promotion. Maximum length: 160 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. The URL for the page the user wants to promote. Must be set for
-     * site search. For other verticals, this is optional.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional. The Promotion description. Maximum length: 200 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchLinkPromotion extends \Google\Model
     {
+        /**
+         * Optional. The Promotion description. Maximum length: 200 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. The Document the user wants to promote. For site search, leave
+         * unset and only populate uri. Can be set along with uri.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Optional. The enabled promotion will be returned for any serving configs
+         * associated with the parent of the control this promotion is attached to.
+         * This flag is used for basic site search only.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Optional. The promotion thumbnail image url.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * Required. The title of the promotion. Maximum length: 160 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. The URL for the page the user wants to promote. Must be set for
+         * site search. For other verticals, this is optional.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional. The Promotion description. Maximum length: 200 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The Document the user wants to promote. For site search, leave
+         * unset and only populate uri. Can be set along with uri.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Optional. The enabled promotion will be returned for any serving configs
+         * associated with the parent of the control this promotion is attached to.
+         * This flag is used for basic site search only.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. The promotion thumbnail image url.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * Required. The title of the promotion. Maximum length: 160 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Optional. The URL for the page the user wants to promote. Must be set for
+         * site search. For other verticals, this is optional.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchLinkPromotion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The Document the user wants to promote. For site search, leave
-     * unset and only populate uri. Can be set along with uri.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * Optional. The enabled promotion will be returned for any serving configs
-     * associated with the parent of the control this promotion is attached to.
-     * This flag is used for basic site search only.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. The promotion thumbnail image url.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * Required. The title of the promotion. Maximum length: 160 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Optional. The URL for the page the user wants to promote. Must be set for
-     * site search. For other verticals, this is optional.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchLinkPromotion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchLinkPromotion
     {
     }
 }

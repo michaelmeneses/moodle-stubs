@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DataProfilePubSubCondition extends \Google\Model
-{
-    protected $expressionsType = GooglePrivacyDlpV2PubSubExpressions::class;
-    protected $expressionsDataType = '';
-    /**
-     * An expression.
-     *
-     * @param GooglePrivacyDlpV2PubSubExpressions $expressions
-     */
-    public function setExpressions(GooglePrivacyDlpV2PubSubExpressions $expressions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DataProfilePubSubCondition extends \Google\Model
     {
+        protected $expressionsType = GooglePrivacyDlpV2PubSubExpressions::class;
+        protected $expressionsDataType = '';
+        /**
+         * An expression.
+         *
+         * @param GooglePrivacyDlpV2PubSubExpressions $expressions
+         */
+        public function setExpressions(GooglePrivacyDlpV2PubSubExpressions $expressions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PubSubExpressions
+         */
+        public function getExpressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2PubSubExpressions
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DataProfilePubSubCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpressions()
+    class Google_Service_DLP_GooglePrivacyDlpV2DataProfilePubSubCondition extends \Google\Service\DLP\GooglePrivacyDlpV2DataProfilePubSubCondition
     {
     }
 }

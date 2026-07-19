@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1EvaluationConfig extends \Google\Model
-{
-    protected $boundingBoxEvaluationOptionsType = GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions::class;
-    protected $boundingBoxEvaluationOptionsDataType = '';
-    /**
-     * Only specify this field if the related model performs image object
-     * detection (`IMAGE_BOUNDING_BOX_ANNOTATION`). Describes how to evaluate
-     * bounding boxes.
-     *
-     * @param GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions $boundingBoxEvaluationOptions
-     */
-    public function setBoundingBoxEvaluationOptions(GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions $boundingBoxEvaluationOptions)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1EvaluationConfig extends \Google\Model
     {
+        protected $boundingBoxEvaluationOptionsType = GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions::class;
+        protected $boundingBoxEvaluationOptionsDataType = '';
+        /**
+         * Only specify this field if the related model performs image object
+         * detection (`IMAGE_BOUNDING_BOX_ANNOTATION`). Describes how to evaluate
+         * bounding boxes.
+         *
+         * @param GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions $boundingBoxEvaluationOptions
+         */
+        public function setBoundingBoxEvaluationOptions(GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions $boundingBoxEvaluationOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions
+         */
+        public function getBoundingBoxEvaluationOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBoxEvaluationOptions()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1EvaluationConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationConfig
     {
     }
 }

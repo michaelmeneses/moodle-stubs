@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut extends \Google\Model
-{
-    /**
-     * Optional. Destination URL of shortcut.
-     *
-     * @var string
-     */
-    public $destinationUri;
-    protected $iconType = GoogleCloudDiscoveryengineV1WidgetConfigImage::class;
-    protected $iconDataType = '';
-    /**
-     * Optional. Title of the shortcut.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. Destination URL of shortcut.
-     *
-     * @param string $destinationUri
-     */
-    public function setDestinationUri($destinationUri)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut extends \Google\Model
     {
+        /**
+         * Optional. Destination URL of shortcut.
+         *
+         * @var string
+         */
+        public $destinationUri;
+        protected $iconType = GoogleCloudDiscoveryengineV1WidgetConfigImage::class;
+        protected $iconDataType = '';
+        /**
+         * Optional. Title of the shortcut.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. Destination URL of shortcut.
+         *
+         * @param string $destinationUri
+         */
+        public function setDestinationUri($destinationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationUri()
+        {
+        }
+        /**
+         * Optional. Icon URL of shortcut.
+         *
+         * @param GoogleCloudDiscoveryengineV1WidgetConfigImage $icon
+         */
+        public function setIcon(GoogleCloudDiscoveryengineV1WidgetConfigImage $icon)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1WidgetConfigImage
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * Optional. Title of the shortcut.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationUri()
-    {
-    }
-    /**
-     * Optional. Icon URL of shortcut.
-     *
-     * @param GoogleCloudDiscoveryengineV1WidgetConfigImage $icon
-     */
-    public function setIcon(GoogleCloudDiscoveryengineV1WidgetConfigImage $icon)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1WidgetConfigImage
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * Optional. Title of the shortcut.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class AddDnsRecordSetMetadata extends \Google\Model
-{
+namespace Google\Service\ServiceNetworking {
+    class AddDnsRecordSetMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking\AddDnsRecordSetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking_AddDnsRecordSetMetadata extends \Google\Service\ServiceNetworking\AddDnsRecordSetMetadata
+    {
+    }
 }

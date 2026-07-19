@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ListRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $invalidRulesWrapperType = InvalidRulesWrapper::class;
-    protected $invalidRulesWrapperDataType = '';
-    protected $rulesType = Rule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * A wrapper of the invalid rules that failed to be validated.
-     *
-     * @param InvalidRulesWrapper $invalidRulesWrapper
-     */
-    public function setInvalidRulesWrapper(InvalidRulesWrapper $invalidRulesWrapper)
+namespace Google\Service\WorkloadManager {
+    class ListRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $invalidRulesWrapperType = InvalidRulesWrapper::class;
+        protected $invalidRulesWrapperDataType = '';
+        protected $rulesType = Rule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * A wrapper of the invalid rules that failed to be validated.
+         *
+         * @param InvalidRulesWrapper $invalidRulesWrapper
+         */
+        public function setInvalidRulesWrapper(InvalidRulesWrapper $invalidRulesWrapper)
+        {
+        }
+        /**
+         * @return InvalidRulesWrapper
+         */
+        public function getInvalidRulesWrapper()
+        {
+        }
+        /**
+         * all rules in response
+         *
+         * @param Rule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return Rule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InvalidRulesWrapper
+     * Runtime class alias of \Google\Service\WorkloadManager\ListRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvalidRulesWrapper()
-    {
-    }
-    /**
-     * all rules in response
-     *
-     * @param Rule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return Rule[]
-     */
-    public function getRules()
+    class Google_Service_WorkloadManager_ListRulesResponse extends \Google\Service\WorkloadManager\ListRulesResponse
     {
     }
 }

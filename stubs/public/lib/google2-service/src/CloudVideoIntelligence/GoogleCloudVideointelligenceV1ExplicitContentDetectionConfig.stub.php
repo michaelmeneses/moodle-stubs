@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig extends \Google\Model
-{
-    /**
-     * Model to use for explicit content detection. Supported values:
-     * "builtin/stable" (the default if unset) and "builtin/latest".
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Model to use for explicit content detection. Supported values:
-     * "builtin/stable" (the default if unset) and "builtin/latest".
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig extends \Google\Model
     {
+        /**
+         * Model to use for explicit content detection. Supported values:
+         * "builtin/stable" (the default if unset) and "builtin/latest".
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Model to use for explicit content detection. Supported values:
+         * "builtin/stable" (the default if unset) and "builtin/latest".
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig
     {
     }
 }

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\event;
 
+use core\event\base;
 /**
  * Admin tool presets event class imported.
  *

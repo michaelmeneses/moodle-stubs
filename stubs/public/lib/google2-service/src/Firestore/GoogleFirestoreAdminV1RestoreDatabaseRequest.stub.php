@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1RestoreDatabaseRequest extends \Google\Model
-{
-    /**
-     * Required. Backup to restore from. Must be from the same project as the
-     * parent. The restored database will be created in the same location as the
-     * source backup. Format is:
-     * `projects/{project_id}/locations/{location}/backups/{backup}`
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Required. The ID to use for the database, which will become the final
-     * component of the database's resource name. This database ID must not be
-     * associated with an existing database. This value should be 4-63 characters.
-     * Valid characters are /a-z-/ with first character a letter and the last a
-     * letter or a number. Must not be UUID-like
-     * /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/. "(default)" database ID is
-     * also valid if the database is Standard edition.
-     *
-     * @var string
-     */
-    public $databaseId;
-    protected $encryptionConfigType = GoogleFirestoreAdminV1EncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    /**
-     * Optional. Immutable. Tags to be bound to the restored database. The tags
-     * should be provided in the format of `tagKeys/{tag_key_id} ->
-     * tagValues/{tag_value_id}`.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Required. Backup to restore from. Must be from the same project as the
-     * parent. The restored database will be created in the same location as the
-     * source backup. Format is:
-     * `projects/{project_id}/locations/{location}/backups/{backup}`
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1RestoreDatabaseRequest extends \Google\Model
     {
+        /**
+         * Required. Backup to restore from. Must be from the same project as the
+         * parent. The restored database will be created in the same location as the
+         * source backup. Format is:
+         * `projects/{project_id}/locations/{location}/backups/{backup}`
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Required. The ID to use for the database, which will become the final
+         * component of the database's resource name. This database ID must not be
+         * associated with an existing database. This value should be 4-63 characters.
+         * Valid characters are /a-z-/ with first character a letter and the last a
+         * letter or a number. Must not be UUID-like
+         * /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/. "(default)" database ID is
+         * also valid if the database is Standard edition.
+         *
+         * @var string
+         */
+        public $databaseId;
+        protected $encryptionConfigType = GoogleFirestoreAdminV1EncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        /**
+         * Optional. Immutable. Tags to be bound to the restored database. The tags
+         * should be provided in the format of `tagKeys/{tag_key_id} ->
+         * tagValues/{tag_value_id}`.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Required. Backup to restore from. Must be from the same project as the
+         * parent. The restored database will be created in the same location as the
+         * source backup. Format is:
+         * `projects/{project_id}/locations/{location}/backups/{backup}`
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * Required. The ID to use for the database, which will become the final
+         * component of the database's resource name. This database ID must not be
+         * associated with an existing database. This value should be 4-63 characters.
+         * Valid characters are /a-z-/ with first character a letter and the last a
+         * letter or a number. Must not be UUID-like
+         * /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/. "(default)" database ID is
+         * also valid if the database is Standard edition.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Optional. Encryption configuration for the restored database. If this field
+         * is not specified, the restored database will use the same encryption
+         * configuration as the backup, namely use_source_encryption.
+         *
+         * @param GoogleFirestoreAdminV1EncryptionConfig $encryptionConfig
+         */
+        public function setEncryptionConfig(GoogleFirestoreAdminV1EncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1EncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
+        /**
+         * Optional. Immutable. Tags to be bound to the restored database. The tags
+         * should be provided in the format of `tagKeys/{tag_key_id} ->
+         * tagValues/{tag_value_id}`.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1RestoreDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * Required. The ID to use for the database, which will become the final
-     * component of the database's resource name. This database ID must not be
-     * associated with an existing database. This value should be 4-63 characters.
-     * Valid characters are /a-z-/ with first character a letter and the last a
-     * letter or a number. Must not be UUID-like
-     * /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/. "(default)" database ID is
-     * also valid if the database is Standard edition.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Optional. Encryption configuration for the restored database. If this field
-     * is not specified, the restored database will use the same encryption
-     * configuration as the backup, namely use_source_encryption.
-     *
-     * @param GoogleFirestoreAdminV1EncryptionConfig $encryptionConfig
-     */
-    public function setEncryptionConfig(GoogleFirestoreAdminV1EncryptionConfig $encryptionConfig)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1EncryptionConfig
-     */
-    public function getEncryptionConfig()
-    {
-    }
-    /**
-     * Optional. Immutable. Tags to be bound to the restored database. The tags
-     * should be provided in the format of `tagKeys/{tag_key_id} ->
-     * tagValues/{tag_value_id}`.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1RestoreDatabaseRequest extends \Google\Service\Firestore\GoogleFirestoreAdminV1RestoreDatabaseRequest
     {
     }
 }

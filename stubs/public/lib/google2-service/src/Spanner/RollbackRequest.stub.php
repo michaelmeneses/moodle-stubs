@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class RollbackRequest extends \Google\Model
-{
-    /**
-     * Required. The transaction to roll back.
-     *
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * Required. The transaction to roll back.
-     *
-     * @param string $transactionId
-     */
-    public function setTransactionId($transactionId)
+namespace Google\Service\Spanner {
+    class RollbackRequest extends \Google\Model
     {
+        /**
+         * Required. The transaction to roll back.
+         *
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * Required. The transaction to roll back.
+         *
+         * @param string $transactionId
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\RollbackRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransactionId()
+    class Google_Service_Spanner_RollbackRequest extends \Google\Service\Spanner\RollbackRequest
     {
     }
 }

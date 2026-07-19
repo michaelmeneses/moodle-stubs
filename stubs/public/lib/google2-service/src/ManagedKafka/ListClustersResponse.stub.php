@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ListClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of Clusters in the requested parent.
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\ManagedKafka {
+    class ListClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of Clusters in the requested parent.
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster[]
+     * Runtime class alias of \Google\Service\ManagedKafka\ListClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_ManagedKafka_ListClustersResponse extends \Google\Service\ManagedKafka\ListClustersResponse
     {
     }
 }

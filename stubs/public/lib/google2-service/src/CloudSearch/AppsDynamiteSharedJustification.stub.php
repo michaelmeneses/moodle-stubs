@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedJustification extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * @var string
-     */
-    public $actionTime;
-    /**
-     * @var string
-     */
-    public $actionType;
-    protected $documentOwnerType = AppsDynamiteSharedJustificationPerson::class;
-    protected $documentOwnerDataType = '';
-    /**
-     * @var string[]
-     */
-    public $topics;
-    /**
-     * @param string
-     */
-    public function setActionTime($actionTime)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedJustification extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * @var string
+         */
+        public $actionTime;
+        /**
+         * @var string
+         */
+        public $actionType;
+        protected $documentOwnerType = AppsDynamiteSharedJustificationPerson::class;
+        protected $documentOwnerDataType = '';
+        /**
+         * @var string[]
+         */
+        public $topics;
+        /**
+         * @param string
+         */
+        public function setActionTime($actionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedJustificationPerson
+         */
+        public function setDocumentOwner(AppsDynamiteSharedJustificationPerson $documentOwner)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedJustificationPerson
+         */
+        public function getDocumentOwner()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedJustification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setActionType($actionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActionType()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedJustificationPerson
-     */
-    public function setDocumentOwner(AppsDynamiteSharedJustificationPerson $documentOwner)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedJustificationPerson
-     */
-    public function getDocumentOwner()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTopics()
+    class Google_Service_CloudSearch_AppsDynamiteSharedJustification extends \Google\Service\CloudSearch\AppsDynamiteSharedJustification
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Comment extends \Google\Model
-{
-    protected $developerCommentType = DeveloperComment::class;
-    protected $developerCommentDataType = '';
-    protected $userCommentType = UserComment::class;
-    protected $userCommentDataType = '';
-    /**
-     * A comment from a developer.
-     *
-     * @param DeveloperComment $developerComment
-     */
-    public function setDeveloperComment(DeveloperComment $developerComment)
+namespace Google\Service\AndroidPublisher {
+    class Comment extends \Google\Model
     {
+        protected $developerCommentType = DeveloperComment::class;
+        protected $developerCommentDataType = '';
+        protected $userCommentType = UserComment::class;
+        protected $userCommentDataType = '';
+        /**
+         * A comment from a developer.
+         *
+         * @param DeveloperComment $developerComment
+         */
+        public function setDeveloperComment(DeveloperComment $developerComment)
+        {
+        }
+        /**
+         * @return DeveloperComment
+         */
+        public function getDeveloperComment()
+        {
+        }
+        /**
+         * A comment from a user.
+         *
+         * @param UserComment $userComment
+         */
+        public function setUserComment(UserComment $userComment)
+        {
+        }
+        /**
+         * @return UserComment
+         */
+        public function getUserComment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeveloperComment
+     * Runtime class alias of \Google\Service\AndroidPublisher\Comment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperComment()
-    {
-    }
-    /**
-     * A comment from a user.
-     *
-     * @param UserComment $userComment
-     */
-    public function setUserComment(UserComment $userComment)
-    {
-    }
-    /**
-     * @return UserComment
-     */
-    public function getUserComment()
+    class Google_Service_AndroidPublisher_Comment extends \Google\Service\AndroidPublisher\Comment
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class SignBlobRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bytesToSign;
-    /**
-     * @param string
-     */
-    public function setBytesToSign($bytesToSign)
+namespace Google\Service\Iam {
+    class SignBlobRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bytesToSign;
+        /**
+         * @param string
+         */
+        public function setBytesToSign($bytesToSign)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesToSign()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\SignBlobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesToSign()
+    class Google_Service_Iam_SignBlobRequest extends \Google\Service\Iam\SignBlobRequest
     {
     }
 }

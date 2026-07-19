@@ -21,95 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $operations = $runService->projects_locations_operations;
- *  </code>
- */
-class ProjectsLocationsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\GoogleLongrunningListOperationsResponse;
+    use Google\Service\CloudRun\GoogleLongrunningOperation;
+    use Google\Service\CloudRun\GoogleLongrunningWaitOperationRequest;
+    use Google\Service\CloudRun\GoogleProtobufEmpty;
     /**
-     * Deletes a long-running operation. This method indicates that the client is no
-     * longer interested in the operation result. It does not cancel the operation.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $operations = $runService->projects_locations_operations;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsOperations extends \Google\Service\Resource
     {
+        /**
+         * Deletes a long-running operation. This method indicates that the client is no
+         * longer interested in the operation result. It does not cancel the operation.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`.
+         * (operations.listProjectsLocationsOperations)
+         *
+         * @param string $name Required. To query for all of the operations for a
+         * project.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. A filter for matching the completed or in-
+         * progress operations. The supported formats of *filter* are: To query for only
+         * completed operations: done:true To query for only ongoing operations:
+         * done:false Must be empty to query for all of the latest operations for the
+         * given parent project.
+         * @opt_param int pageSize The maximum number of records that should be
+         * returned. Requested page size cannot exceed 100. If not set or set to less
+         * than or equal to 0, the default page size is 100. .
+         * @opt_param string pageToken Token identifying which result to start with,
+         * which is returned by a previous list call.
+         * @opt_param bool returnPartialSuccess When set to `true`, operations that are
+         * reachable are returned as normal, and those that are unreachable are returned
+         * in the ListOperationsResponse.unreachable field. This can only be `true` when
+         * reading across collections. For example, when `parent` is set to
+         * `"projects/example/locations/-"`. This field is not supported by default and
+         * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
+         * otherwise in service or product specific documentation.
+         * @return GoogleLongrunningListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsOperations($name, $optParams = [])
+        {
+        }
+        /**
+         * Waits until the specified long-running operation is done or reaches at most a
+         * specified timeout, returning the latest state. If the operation is already
+         * done, the latest state is immediately returned. If the timeout specified is
+         * greater than the default HTTP/RPC timeout, the HTTP/RPC timeout is used. If
+         * the server does not support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. Note that this method is on a best-effort
+         * basis. It may return the latest state before the specified timeout (including
+         * immediately), meaning even an immediate response is no guarantee that the
+         * operation is done. (operations.wait)
+         *
+         * @param string $name The name of the operation resource to wait on.
+         * @param GoogleLongrunningWaitOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function wait($name, GoogleLongrunningWaitOperationRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudRun\Resource\ProjectsLocationsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`.
-     * (operations.listProjectsLocationsOperations)
-     *
-     * @param string $name Required. To query for all of the operations for a
-     * project.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. A filter for matching the completed or in-
-     * progress operations. The supported formats of *filter* are: To query for only
-     * completed operations: done:true To query for only ongoing operations:
-     * done:false Must be empty to query for all of the latest operations for the
-     * given parent project.
-     * @opt_param int pageSize The maximum number of records that should be
-     * returned. Requested page size cannot exceed 100. If not set or set to less
-     * than or equal to 0, the default page size is 100. .
-     * @opt_param string pageToken Token identifying which result to start with,
-     * which is returned by a previous list call.
-     * @opt_param bool returnPartialSuccess When set to `true`, operations that are
-     * reachable are returned as normal, and those that are unreachable are returned
-     * in the ListOperationsResponse.unreachable field. This can only be `true` when
-     * reading across collections. For example, when `parent` is set to
-     * `"projects/example/locations/-"`. This field is not supported by default and
-     * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
-     * otherwise in service or product specific documentation.
-     * @return GoogleLongrunningListOperationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsOperations($name, $optParams = [])
-    {
-    }
-    /**
-     * Waits until the specified long-running operation is done or reaches at most a
-     * specified timeout, returning the latest state. If the operation is already
-     * done, the latest state is immediately returned. If the timeout specified is
-     * greater than the default HTTP/RPC timeout, the HTTP/RPC timeout is used. If
-     * the server does not support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. Note that this method is on a best-effort
-     * basis. It may return the latest state before the specified timeout (including
-     * immediately), meaning even an immediate response is no guarantee that the
-     * operation is done. (operations.wait)
-     *
-     * @param string $name The name of the operation resource to wait on.
-     * @param GoogleLongrunningWaitOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function wait($name, GoogleLongrunningWaitOperationRequest $postBody, $optParams = [])
+    class Google_Service_CloudRun_Resource_ProjectsLocationsOperations extends \Google\Service\CloudRun\Resource\ProjectsLocationsOperations
     {
     }
 }

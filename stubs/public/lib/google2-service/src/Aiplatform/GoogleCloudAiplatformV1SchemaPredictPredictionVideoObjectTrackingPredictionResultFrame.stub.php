@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionVideoObjectTrackingPredictionResultFrame extends \Google\Model
-{
-    /**
-     * A time (frame) of a video in which the object has been detected. Expressed
-     * as a number of seconds as measured from the start of the video, with
-     * fractions up to a microsecond precision, and with "s" appended at the end.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * The rightmost coordinate of the bounding box.
-     *
-     * @var float
-     */
-    public $xMax;
-    /**
-     * The leftmost coordinate of the bounding box.
-     *
-     * @var float
-     */
-    public $xMin;
-    /**
-     * The bottommost coordinate of the bounding box.
-     *
-     * @var float
-     */
-    public $yMax;
-    /**
-     * The topmost coordinate of the bounding box.
-     *
-     * @var float
-     */
-    public $yMin;
-    /**
-     * A time (frame) of a video in which the object has been detected. Expressed
-     * as a number of seconds as measured from the start of the video, with
-     * fractions up to a microsecond precision, and with "s" appended at the end.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionVideoObjectTrackingPredictionResultFrame extends \Google\Model
     {
+        /**
+         * A time (frame) of a video in which the object has been detected. Expressed
+         * as a number of seconds as measured from the start of the video, with
+         * fractions up to a microsecond precision, and with "s" appended at the end.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * The rightmost coordinate of the bounding box.
+         *
+         * @var float
+         */
+        public $xMax;
+        /**
+         * The leftmost coordinate of the bounding box.
+         *
+         * @var float
+         */
+        public $xMin;
+        /**
+         * The bottommost coordinate of the bounding box.
+         *
+         * @var float
+         */
+        public $yMax;
+        /**
+         * The topmost coordinate of the bounding box.
+         *
+         * @var float
+         */
+        public $yMin;
+        /**
+         * A time (frame) of a video in which the object has been detected. Expressed
+         * as a number of seconds as measured from the start of the video, with
+         * fractions up to a microsecond precision, and with "s" appended at the end.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
+        /**
+         * The rightmost coordinate of the bounding box.
+         *
+         * @param float $xMax
+         */
+        public function setXMax($xMax)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getXMax()
+        {
+        }
+        /**
+         * The leftmost coordinate of the bounding box.
+         *
+         * @param float $xMin
+         */
+        public function setXMin($xMin)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getXMin()
+        {
+        }
+        /**
+         * The bottommost coordinate of the bounding box.
+         *
+         * @param float $yMax
+         */
+        public function setYMax($yMax)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getYMax()
+        {
+        }
+        /**
+         * The topmost coordinate of the bounding box.
+         *
+         * @param float $yMin
+         */
+        public function setYMin($yMin)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getYMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionVideoObjectTrackingPredictionResultFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeOffset()
-    {
-    }
-    /**
-     * The rightmost coordinate of the bounding box.
-     *
-     * @param float $xMax
-     */
-    public function setXMax($xMax)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getXMax()
-    {
-    }
-    /**
-     * The leftmost coordinate of the bounding box.
-     *
-     * @param float $xMin
-     */
-    public function setXMin($xMin)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getXMin()
-    {
-    }
-    /**
-     * The bottommost coordinate of the bounding box.
-     *
-     * @param float $yMax
-     */
-    public function setYMax($yMax)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getYMax()
-    {
-    }
-    /**
-     * The topmost coordinate of the bounding box.
-     *
-     * @param float $yMin
-     */
-    public function setYMin($yMin)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getYMin()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionVideoObjectTrackingPredictionResultFrame extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionVideoObjectTrackingPredictionResultFrame
     {
     }
 }

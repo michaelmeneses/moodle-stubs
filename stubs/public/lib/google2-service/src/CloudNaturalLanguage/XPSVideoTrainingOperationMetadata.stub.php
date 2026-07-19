@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoTrainingOperationMetadata extends \Google\Model
-{
-    /**
-     * This is an estimation of the node hours necessary for training a model,
-     * expressed in milli node hours (i.e. 1,000 value in this field means 1 node
-     * hour). A node hour represents the time a virtual machine spends running
-     * your training job. The cost of one node running for one hour is a node
-     * hour.
-     *
-     * @var string
-     */
-    public $trainCostMilliNodeHour;
-    /**
-     * This is an estimation of the node hours necessary for training a model,
-     * expressed in milli node hours (i.e. 1,000 value in this field means 1 node
-     * hour). A node hour represents the time a virtual machine spends running
-     * your training job. The cost of one node running for one hour is a node
-     * hour.
-     *
-     * @param string $trainCostMilliNodeHour
-     */
-    public function setTrainCostMilliNodeHour($trainCostMilliNodeHour)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoTrainingOperationMetadata extends \Google\Model
     {
+        /**
+         * This is an estimation of the node hours necessary for training a model,
+         * expressed in milli node hours (i.e. 1,000 value in this field means 1 node
+         * hour). A node hour represents the time a virtual machine spends running
+         * your training job. The cost of one node running for one hour is a node
+         * hour.
+         *
+         * @var string
+         */
+        public $trainCostMilliNodeHour;
+        /**
+         * This is an estimation of the node hours necessary for training a model,
+         * expressed in milli node hours (i.e. 1,000 value in this field means 1 node
+         * hour). A node hour represents the time a virtual machine spends running
+         * your training job. The cost of one node running for one hour is a node
+         * hour.
+         *
+         * @param string $trainCostMilliNodeHour
+         */
+        public function setTrainCostMilliNodeHour($trainCostMilliNodeHour)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostMilliNodeHour()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoTrainingOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrainCostMilliNodeHour()
+    class Google_Service_CloudNaturalLanguage_XPSVideoTrainingOperationMetadata extends \Google\Service\CloudNaturalLanguage\XPSVideoTrainingOperationMetadata
     {
     }
 }

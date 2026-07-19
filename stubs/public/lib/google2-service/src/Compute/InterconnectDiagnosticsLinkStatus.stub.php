@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectDiagnosticsLinkStatus extends \Google\Collection
-{
-    /**
-     * The interface is unable to communicate with the remote end.
-     */
-    public const OPERATIONAL_STATUS_LINK_OPERATIONAL_STATUS_DOWN = 'LINK_OPERATIONAL_STATUS_DOWN';
-    /**
-     * The interface has low level communication with the remote end.
-     */
-    public const OPERATIONAL_STATUS_LINK_OPERATIONAL_STATUS_UP = 'LINK_OPERATIONAL_STATUS_UP';
-    protected $collection_key = 'arpCaches';
-    protected $arpCachesType = InterconnectDiagnosticsARPEntry::class;
-    protected $arpCachesDataType = 'array';
-    /**
-     * The unique ID for this link assigned during turn up by Google.
-     *
-     * @var string
-     */
-    public $circuitId;
-    /**
-     * The Demarc address assigned by Google and provided in the LoA.
-     *
-     * @var string
-     */
-    public $googleDemarc;
-    protected $lacpStatusType = InterconnectDiagnosticsLinkLACPStatus::class;
-    protected $lacpStatusDataType = '';
-    protected $macsecType = InterconnectDiagnosticsMacsecStatus::class;
-    protected $macsecDataType = '';
-    /**
-     * The operational status of the link.
-     *
-     * @var string
-     */
-    public $operationalStatus;
-    protected $receivingOpticalPowerType = InterconnectDiagnosticsLinkOpticalPower::class;
-    protected $receivingOpticalPowerDataType = '';
-    protected $transmittingOpticalPowerType = InterconnectDiagnosticsLinkOpticalPower::class;
-    protected $transmittingOpticalPowerDataType = '';
-    /**
-     * A list of InterconnectDiagnostics.ARPEntry objects, describing the ARP
-     * neighbor entries seen on this link. This will be empty if the link is
-     * bundled
-     *
-     * @param InterconnectDiagnosticsARPEntry[] $arpCaches
-     */
-    public function setArpCaches($arpCaches)
+namespace Google\Service\Compute {
+    class InterconnectDiagnosticsLinkStatus extends \Google\Collection
     {
+        /**
+         * The interface is unable to communicate with the remote end.
+         */
+        public const OPERATIONAL_STATUS_LINK_OPERATIONAL_STATUS_DOWN = 'LINK_OPERATIONAL_STATUS_DOWN';
+        /**
+         * The interface has low level communication with the remote end.
+         */
+        public const OPERATIONAL_STATUS_LINK_OPERATIONAL_STATUS_UP = 'LINK_OPERATIONAL_STATUS_UP';
+        protected $collection_key = 'arpCaches';
+        protected $arpCachesType = InterconnectDiagnosticsARPEntry::class;
+        protected $arpCachesDataType = 'array';
+        /**
+         * The unique ID for this link assigned during turn up by Google.
+         *
+         * @var string
+         */
+        public $circuitId;
+        /**
+         * The Demarc address assigned by Google and provided in the LoA.
+         *
+         * @var string
+         */
+        public $googleDemarc;
+        protected $lacpStatusType = InterconnectDiagnosticsLinkLACPStatus::class;
+        protected $lacpStatusDataType = '';
+        protected $macsecType = InterconnectDiagnosticsMacsecStatus::class;
+        protected $macsecDataType = '';
+        /**
+         * The operational status of the link.
+         *
+         * @var string
+         */
+        public $operationalStatus;
+        protected $receivingOpticalPowerType = InterconnectDiagnosticsLinkOpticalPower::class;
+        protected $receivingOpticalPowerDataType = '';
+        protected $transmittingOpticalPowerType = InterconnectDiagnosticsLinkOpticalPower::class;
+        protected $transmittingOpticalPowerDataType = '';
+        /**
+         * A list of InterconnectDiagnostics.ARPEntry objects, describing the ARP
+         * neighbor entries seen on this link. This will be empty if the link is
+         * bundled
+         *
+         * @param InterconnectDiagnosticsARPEntry[] $arpCaches
+         */
+        public function setArpCaches($arpCaches)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsARPEntry[]
+         */
+        public function getArpCaches()
+        {
+        }
+        /**
+         * The unique ID for this link assigned during turn up by Google.
+         *
+         * @param string $circuitId
+         */
+        public function setCircuitId($circuitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCircuitId()
+        {
+        }
+        /**
+         * The Demarc address assigned by Google and provided in the LoA.
+         *
+         * @param string $googleDemarc
+         */
+        public function setGoogleDemarc($googleDemarc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleDemarc()
+        {
+        }
+        /**
+         * @param InterconnectDiagnosticsLinkLACPStatus $lacpStatus
+         */
+        public function setLacpStatus(InterconnectDiagnosticsLinkLACPStatus $lacpStatus)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsLinkLACPStatus
+         */
+        public function getLacpStatus()
+        {
+        }
+        /**
+         * Describes the status of MACsec encryption on this link.
+         *
+         * @param InterconnectDiagnosticsMacsecStatus $macsec
+         */
+        public function setMacsec(InterconnectDiagnosticsMacsecStatus $macsec)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsMacsecStatus
+         */
+        public function getMacsec()
+        {
+        }
+        /**
+         * The operational status of the link.
+         *
+         * Accepted values: LINK_OPERATIONAL_STATUS_DOWN, LINK_OPERATIONAL_STATUS_UP
+         *
+         * @param self::OPERATIONAL_STATUS_* $operationalStatus
+         */
+        public function setOperationalStatus($operationalStatus)
+        {
+        }
+        /**
+         * @return self::OPERATIONAL_STATUS_*
+         */
+        public function getOperationalStatus()
+        {
+        }
+        /**
+         * An InterconnectDiagnostics.LinkOpticalPower object, describing the current
+         * value and status of the received light level.
+         *
+         * @param InterconnectDiagnosticsLinkOpticalPower $receivingOpticalPower
+         */
+        public function setReceivingOpticalPower(InterconnectDiagnosticsLinkOpticalPower $receivingOpticalPower)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsLinkOpticalPower
+         */
+        public function getReceivingOpticalPower()
+        {
+        }
+        /**
+         * An InterconnectDiagnostics.LinkOpticalPower object, describing the current
+         * value and status of the transmitted light level.
+         *
+         * @param InterconnectDiagnosticsLinkOpticalPower $transmittingOpticalPower
+         */
+        public function setTransmittingOpticalPower(InterconnectDiagnosticsLinkOpticalPower $transmittingOpticalPower)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsLinkOpticalPower
+         */
+        public function getTransmittingOpticalPower()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectDiagnosticsARPEntry[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectDiagnosticsLinkStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArpCaches()
-    {
-    }
-    /**
-     * The unique ID for this link assigned during turn up by Google.
-     *
-     * @param string $circuitId
-     */
-    public function setCircuitId($circuitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCircuitId()
-    {
-    }
-    /**
-     * The Demarc address assigned by Google and provided in the LoA.
-     *
-     * @param string $googleDemarc
-     */
-    public function setGoogleDemarc($googleDemarc)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleDemarc()
-    {
-    }
-    /**
-     * @param InterconnectDiagnosticsLinkLACPStatus $lacpStatus
-     */
-    public function setLacpStatus(InterconnectDiagnosticsLinkLACPStatus $lacpStatus)
-    {
-    }
-    /**
-     * @return InterconnectDiagnosticsLinkLACPStatus
-     */
-    public function getLacpStatus()
-    {
-    }
-    /**
-     * Describes the status of MACsec encryption on this link.
-     *
-     * @param InterconnectDiagnosticsMacsecStatus $macsec
-     */
-    public function setMacsec(InterconnectDiagnosticsMacsecStatus $macsec)
-    {
-    }
-    /**
-     * @return InterconnectDiagnosticsMacsecStatus
-     */
-    public function getMacsec()
-    {
-    }
-    /**
-     * The operational status of the link.
-     *
-     * Accepted values: LINK_OPERATIONAL_STATUS_DOWN, LINK_OPERATIONAL_STATUS_UP
-     *
-     * @param self::OPERATIONAL_STATUS_* $operationalStatus
-     */
-    public function setOperationalStatus($operationalStatus)
-    {
-    }
-    /**
-     * @return self::OPERATIONAL_STATUS_*
-     */
-    public function getOperationalStatus()
-    {
-    }
-    /**
-     * An InterconnectDiagnostics.LinkOpticalPower object, describing the current
-     * value and status of the received light level.
-     *
-     * @param InterconnectDiagnosticsLinkOpticalPower $receivingOpticalPower
-     */
-    public function setReceivingOpticalPower(InterconnectDiagnosticsLinkOpticalPower $receivingOpticalPower)
-    {
-    }
-    /**
-     * @return InterconnectDiagnosticsLinkOpticalPower
-     */
-    public function getReceivingOpticalPower()
-    {
-    }
-    /**
-     * An InterconnectDiagnostics.LinkOpticalPower object, describing the current
-     * value and status of the transmitted light level.
-     *
-     * @param InterconnectDiagnosticsLinkOpticalPower $transmittingOpticalPower
-     */
-    public function setTransmittingOpticalPower(InterconnectDiagnosticsLinkOpticalPower $transmittingOpticalPower)
-    {
-    }
-    /**
-     * @return InterconnectDiagnosticsLinkOpticalPower
-     */
-    public function getTransmittingOpticalPower()
+    class Google_Service_Compute_InterconnectDiagnosticsLinkStatus extends \Google\Service\Compute\InterconnectDiagnosticsLinkStatus
     {
     }
 }

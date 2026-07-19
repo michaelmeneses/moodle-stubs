@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP\Resource;
-
-/**
- * The "entity" collection of methods.
- * Typical usage is:
- *  <code>
- *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
- *   $entity = $domainsrdapService->entity;
- *  </code>
- */
-class Entity extends \Google\Service\Resource
-{
+namespace Google\Service\DomainsRDAP\Resource {
+    use Google\Service\DomainsRDAP\RdapResponse;
     /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (entity.get)
-     *
-     * @param string $entityId
-     * @param array $optParams Optional parameters.
-     * @return RdapResponse
-     * @throws \Google\Service\Exception
+     * The "entity" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
+     *   $entity = $domainsrdapService->entity;
+     *  </code>
      */
-    public function get($entityId, $optParams = [])
+    class Entity extends \Google\Service\Resource
+    {
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (entity.get)
+         *
+         * @param string $entityId
+         * @param array $optParams Optional parameters.
+         * @return RdapResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($entityId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DomainsRDAP\Resource\Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DomainsRDAP_Resource_Entity extends \Google\Service\DomainsRDAP\Resource\Entity
     {
     }
 }

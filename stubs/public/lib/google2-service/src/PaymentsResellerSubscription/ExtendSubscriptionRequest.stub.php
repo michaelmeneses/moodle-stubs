@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ExtendSubscriptionRequest extends \Google\Model
-{
-    protected $extensionType = Extension::class;
-    protected $extensionDataType = '';
-    /**
-     * Required. Restricted to 36 ASCII characters. A random UUID is recommended.
-     * The idempotency key for the request. The ID generation logic is controlled
-     * by the partner. request_id should be the same as on retries of the same
-     * request. A different request_id must be used for a extension of a different
-     * cycle.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. Specifies details of the extension. Currently, the duration of
-     * the extension must be exactly one billing cycle of the original
-     * subscription.
-     *
-     * @param Extension $extension
-     */
-    public function setExtension(Extension $extension)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ExtendSubscriptionRequest extends \Google\Model
     {
+        protected $extensionType = Extension::class;
+        protected $extensionDataType = '';
+        /**
+         * Required. Restricted to 36 ASCII characters. A random UUID is recommended.
+         * The idempotency key for the request. The ID generation logic is controlled
+         * by the partner. request_id should be the same as on retries of the same
+         * request. A different request_id must be used for a extension of a different
+         * cycle.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. Specifies details of the extension. Currently, the duration of
+         * the extension must be exactly one billing cycle of the original
+         * subscription.
+         *
+         * @param Extension $extension
+         */
+        public function setExtension(Extension $extension)
+        {
+        }
+        /**
+         * @return Extension
+         */
+        public function getExtension()
+        {
+        }
+        /**
+         * Required. Restricted to 36 ASCII characters. A random UUID is recommended.
+         * The idempotency key for the request. The ID generation logic is controlled
+         * by the partner. request_id should be the same as on retries of the same
+         * request. A different request_id must be used for a extension of a different
+         * cycle.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Extension
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ExtendSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtension()
-    {
-    }
-    /**
-     * Required. Restricted to 36 ASCII characters. A random UUID is recommended.
-     * The idempotency key for the request. The ID generation logic is controlled
-     * by the partner. request_id should be the same as on retries of the same
-     * request. A different request_id must be used for a extension of a different
-     * cycle.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_PaymentsResellerSubscription_ExtendSubscriptionRequest extends \Google\Service\PaymentsResellerSubscription\ExtendSubscriptionRequest
     {
     }
 }

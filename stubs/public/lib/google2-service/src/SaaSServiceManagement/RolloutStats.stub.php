@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class RolloutStats extends \Google\Collection
-{
-    protected $collection_key = 'operationsByState';
-    protected $operationsByStateType = Aggregate::class;
-    protected $operationsByStateDataType = 'array';
-    /**
-     * Output only. A breakdown of the progress of operations triggered by the
-     * rollout. Provides a count of Operations by their state. This can be used to
-     * determine the number of units which have been updated, or are scheduled to
-     * be updated. There will be at most one entry per group. Possible values for
-     * operation groups are: - "SCHEDULED" - "PENDING" - "RUNNING" - "SUCCEEDED" -
-     * "FAILED" - "CANCELLED"
-     *
-     * @param Aggregate[] $operationsByState
-     */
-    public function setOperationsByState($operationsByState)
+namespace Google\Service\SaaSServiceManagement {
+    class RolloutStats extends \Google\Collection
     {
+        protected $collection_key = 'operationsByState';
+        protected $operationsByStateType = Aggregate::class;
+        protected $operationsByStateDataType = 'array';
+        /**
+         * Output only. A breakdown of the progress of operations triggered by the
+         * rollout. Provides a count of Operations by their state. This can be used to
+         * determine the number of units which have been updated, or are scheduled to
+         * be updated. There will be at most one entry per group. Possible values for
+         * operation groups are: - "SCHEDULED" - "PENDING" - "RUNNING" - "SUCCEEDED" -
+         * "FAILED" - "CANCELLED"
+         *
+         * @param Aggregate[] $operationsByState
+         */
+        public function setOperationsByState($operationsByState)
+        {
+        }
+        /**
+         * @return Aggregate[]
+         */
+        public function getOperationsByState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Aggregate[]
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\RolloutStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationsByState()
+    class Google_Service_SaaSServiceManagement_RolloutStats extends \Google\Service\SaaSServiceManagement\RolloutStats
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult extends \Google\Model
-{
-    protected $documentType = GoogleCloudDiscoveryengineV1Document::class;
-    protected $documentDataType = '';
-    /**
-     * Resource ID of the recommended Document.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Additional Document metadata or annotations. Possible values: * `score`:
-     * Recommendation score in double value. Is set if `returnScore` is set to
-     * true in RecommendRequest.params.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Set if `returnDocument` is set to true in RecommendRequest.params.
-     *
-     * @param GoogleCloudDiscoveryengineV1Document $document
-     */
-    public function setDocument(GoogleCloudDiscoveryengineV1Document $document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult extends \Google\Model
     {
+        protected $documentType = GoogleCloudDiscoveryengineV1Document::class;
+        protected $documentDataType = '';
+        /**
+         * Resource ID of the recommended Document.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Additional Document metadata or annotations. Possible values: * `score`:
+         * Recommendation score in double value. Is set if `returnScore` is set to
+         * true in RecommendRequest.params.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Set if `returnDocument` is set to true in RecommendRequest.params.
+         *
+         * @param GoogleCloudDiscoveryengineV1Document $document
+         */
+        public function setDocument(GoogleCloudDiscoveryengineV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Resource ID of the recommended Document.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Additional Document metadata or annotations. Possible values: * `score`:
+         * Recommendation score in double value. Is set if `returnScore` is set to
+         * true in RecommendRequest.params.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Document
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Resource ID of the recommended Document.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Additional Document metadata or annotations. Possible values: * `score`:
-     * Recommendation score in double value. Is set if `returnScore` is set to
-     * true in RecommendRequest.params.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecommendResponseRecommendationResult
     {
     }
 }

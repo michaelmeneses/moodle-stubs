@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QaScorecardResultQaTagResult extends \Google\Model
-{
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QaScorecardResultQaTagResult extends \Google\Model
+    {
+        /**
+         * The normalized score the tag applies to.
+         *
+         * @var 
+         */
+        public $normalizedScore;
+        /**
+         * The potential score the tag applies to.
+         *
+         * @var 
+         */
+        public $potentialScore;
+        /**
+         * The score the tag applies to.
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * The tag the score applies to.
+         *
+         * @var string
+         */
+        public $tag;
+        public function setNormalizedScore($normalizedScore)
+        {
+        }
+        public function getNormalizedScore()
+        {
+        }
+        public function setPotentialScore($potentialScore)
+        {
+        }
+        public function getPotentialScore()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * The tag the score applies to.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The normalized score the tag applies to.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaScorecardResultQaTagResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $normalizedScore;
-    /**
-     * The potential score the tag applies to.
-     *
-     * @var 
-     */
-    public $potentialScore;
-    /**
-     * The score the tag applies to.
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * The tag the score applies to.
-     *
-     * @var string
-     */
-    public $tag;
-    public function setNormalizedScore($normalizedScore)
-    {
-    }
-    public function getNormalizedScore()
-    {
-    }
-    public function setPotentialScore($potentialScore)
-    {
-    }
-    public function getPotentialScore()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * The tag the score applies to.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QaScorecardResultQaTagResult extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaScorecardResultQaTagResult
     {
     }
 }

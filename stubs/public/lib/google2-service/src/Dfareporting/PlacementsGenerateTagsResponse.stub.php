@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementsGenerateTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'placementTags';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#placementsGenerateTagsResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $placementTagsType = PlacementTag::class;
-    protected $placementTagsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#placementsGenerateTagsResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class PlacementsGenerateTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'placementTags';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#placementsGenerateTagsResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $placementTagsType = PlacementTag::class;
+        protected $placementTagsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#placementsGenerateTagsResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Set of generated tags for the specified placements.
+         *
+         * @param PlacementTag[] $placementTags
+         */
+        public function setPlacementTags($placementTags)
+        {
+        }
+        /**
+         * @return PlacementTag[]
+         */
+        public function getPlacementTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementsGenerateTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Set of generated tags for the specified placements.
-     *
-     * @param PlacementTag[] $placementTags
-     */
-    public function setPlacementTags($placementTags)
-    {
-    }
-    /**
-     * @return PlacementTag[]
-     */
-    public function getPlacementTags()
+    class Google_Service_Dfareporting_PlacementsGenerateTagsResponse extends \Google\Service\Dfareporting\PlacementsGenerateTagsResponse
     {
     }
 }

@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties extends \Google\Model
-{
-    protected $badgeConfigType = GoogleAppsDriveLabelsV2BadgeConfig::class;
-    protected $badgeConfigDataType = '';
-    /**
-     * The description of this label.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The display text to show in the UI identifying this field.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Input only. Insert or move this choice before the indicated choice. If
-     * empty, the choice is placed at the end of the list.
-     *
-     * @var string
-     */
-    public $insertBeforeChoice;
-    /**
-     * The badge configuration for this choice. When set, the label that owns this
-     * choice is considered a "badged label".
-     *
-     * @param GoogleAppsDriveLabelsV2BadgeConfig $badgeConfig
-     */
-    public function setBadgeConfig(GoogleAppsDriveLabelsV2BadgeConfig $badgeConfig)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties extends \Google\Model
     {
+        protected $badgeConfigType = GoogleAppsDriveLabelsV2BadgeConfig::class;
+        protected $badgeConfigDataType = '';
+        /**
+         * The description of this label.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The display text to show in the UI identifying this field.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Input only. Insert or move this choice before the indicated choice. If
+         * empty, the choice is placed at the end of the list.
+         *
+         * @var string
+         */
+        public $insertBeforeChoice;
+        /**
+         * The badge configuration for this choice. When set, the label that owns this
+         * choice is considered a "badged label".
+         *
+         * @param GoogleAppsDriveLabelsV2BadgeConfig $badgeConfig
+         */
+        public function setBadgeConfig(GoogleAppsDriveLabelsV2BadgeConfig $badgeConfig)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2BadgeConfig
+         */
+        public function getBadgeConfig()
+        {
+        }
+        /**
+         * The description of this label.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The display text to show in the UI identifying this field.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Input only. Insert or move this choice before the indicated choice. If
+         * empty, the choice is placed at the end of the list.
+         *
+         * @param string $insertBeforeChoice
+         */
+        public function setInsertBeforeChoice($insertBeforeChoice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertBeforeChoice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2BadgeConfig
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBadgeConfig()
-    {
-    }
-    /**
-     * The description of this label.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The display text to show in the UI identifying this field.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Input only. Insert or move this choice before the indicated choice. If
-     * empty, the choice is placed at the end of the list.
-     *
-     * @param string $insertBeforeChoice
-     */
-    public function setInsertBeforeChoice($insertBeforeChoice)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertBeforeChoice()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties
     {
     }
 }

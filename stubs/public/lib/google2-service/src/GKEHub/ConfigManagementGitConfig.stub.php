@@ -21,178 +21,187 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementGitConfig extends \Google\Model
-{
-    /**
-     * Optional. The Google Cloud Service Account Email used for auth when
-     * secret_type is gcpServiceAccount.
-     *
-     * @var string
-     */
-    public $gcpServiceAccountEmail;
-    /**
-     * Optional. URL for the HTTPS proxy to be used when communicating with the
-     * Git repo.
-     *
-     * @var string
-     */
-    public $httpsProxy;
-    /**
-     * Optional. The path within the Git repository that represents the top level
-     * of the repo to sync. Default: the root directory of the repository.
-     *
-     * @var string
-     */
-    public $policyDir;
-    /**
-     * Required. Type of secret configured for access to the Git repo. Must be one
-     * of ssh, cookiefile, gcenode, token, gcpserviceaccount, githubapp or none.
-     * The validation of this is case-sensitive.
-     *
-     * @var string
-     */
-    public $secretType;
-    /**
-     * Optional. The branch of the repository to sync from. Default: master.
-     *
-     * @var string
-     */
-    public $syncBranch;
-    /**
-     * Required. The URL of the Git repository to use as the source of truth.
-     *
-     * @var string
-     */
-    public $syncRepo;
-    /**
-     * Optional. Git revision (tag or hash) to check out. Default HEAD.
-     *
-     * @var string
-     */
-    public $syncRev;
-    /**
-     * Optional. Period in seconds between consecutive syncs. Default: 15.
-     *
-     * @var string
-     */
-    public $syncWaitSecs;
-    /**
-     * Optional. The Google Cloud Service Account Email used for auth when
-     * secret_type is gcpServiceAccount.
-     *
-     * @param string $gcpServiceAccountEmail
-     */
-    public function setGcpServiceAccountEmail($gcpServiceAccountEmail)
+namespace Google\Service\GKEHub {
+    class ConfigManagementGitConfig extends \Google\Model
     {
+        /**
+         * Optional. The Google Cloud Service Account Email used for auth when
+         * secret_type is gcpServiceAccount.
+         *
+         * @var string
+         */
+        public $gcpServiceAccountEmail;
+        /**
+         * Optional. URL for the HTTPS proxy to be used when communicating with the
+         * Git repo.
+         *
+         * @var string
+         */
+        public $httpsProxy;
+        /**
+         * Optional. The path within the Git repository that represents the top level
+         * of the repo to sync. Default: the root directory of the repository.
+         *
+         * @var string
+         */
+        public $policyDir;
+        /**
+         * Required. Type of secret configured for access to the Git repo. Must be one
+         * of ssh, cookiefile, gcenode, token, gcpserviceaccount, githubapp or none.
+         * The validation of this is case-sensitive.
+         *
+         * @var string
+         */
+        public $secretType;
+        /**
+         * Optional. The branch of the repository to sync from. Default: master.
+         *
+         * @var string
+         */
+        public $syncBranch;
+        /**
+         * Required. The URL of the Git repository to use as the source of truth.
+         *
+         * @var string
+         */
+        public $syncRepo;
+        /**
+         * Optional. Git revision (tag or hash) to check out. Default HEAD.
+         *
+         * @var string
+         */
+        public $syncRev;
+        /**
+         * Optional. Period in seconds between consecutive syncs. Default: 15.
+         *
+         * @var string
+         */
+        public $syncWaitSecs;
+        /**
+         * Optional. The Google Cloud Service Account Email used for auth when
+         * secret_type is gcpServiceAccount.
+         *
+         * @param string $gcpServiceAccountEmail
+         */
+        public function setGcpServiceAccountEmail($gcpServiceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpServiceAccountEmail()
+        {
+        }
+        /**
+         * Optional. URL for the HTTPS proxy to be used when communicating with the
+         * Git repo.
+         *
+         * @param string $httpsProxy
+         */
+        public function setHttpsProxy($httpsProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHttpsProxy()
+        {
+        }
+        /**
+         * Optional. The path within the Git repository that represents the top level
+         * of the repo to sync. Default: the root directory of the repository.
+         *
+         * @param string $policyDir
+         */
+        public function setPolicyDir($policyDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyDir()
+        {
+        }
+        /**
+         * Required. Type of secret configured for access to the Git repo. Must be one
+         * of ssh, cookiefile, gcenode, token, gcpserviceaccount, githubapp or none.
+         * The validation of this is case-sensitive.
+         *
+         * @param string $secretType
+         */
+        public function setSecretType($secretType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretType()
+        {
+        }
+        /**
+         * Optional. The branch of the repository to sync from. Default: master.
+         *
+         * @param string $syncBranch
+         */
+        public function setSyncBranch($syncBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncBranch()
+        {
+        }
+        /**
+         * Required. The URL of the Git repository to use as the source of truth.
+         *
+         * @param string $syncRepo
+         */
+        public function setSyncRepo($syncRepo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncRepo()
+        {
+        }
+        /**
+         * Optional. Git revision (tag or hash) to check out. Default HEAD.
+         *
+         * @param string $syncRev
+         */
+        public function setSyncRev($syncRev)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncRev()
+        {
+        }
+        /**
+         * Optional. Period in seconds between consecutive syncs. Default: 15.
+         *
+         * @param string $syncWaitSecs
+         */
+        public function setSyncWaitSecs($syncWaitSecs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncWaitSecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementGitConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpServiceAccountEmail()
-    {
-    }
-    /**
-     * Optional. URL for the HTTPS proxy to be used when communicating with the
-     * Git repo.
-     *
-     * @param string $httpsProxy
-     */
-    public function setHttpsProxy($httpsProxy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHttpsProxy()
-    {
-    }
-    /**
-     * Optional. The path within the Git repository that represents the top level
-     * of the repo to sync. Default: the root directory of the repository.
-     *
-     * @param string $policyDir
-     */
-    public function setPolicyDir($policyDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyDir()
-    {
-    }
-    /**
-     * Required. Type of secret configured for access to the Git repo. Must be one
-     * of ssh, cookiefile, gcenode, token, gcpserviceaccount, githubapp or none.
-     * The validation of this is case-sensitive.
-     *
-     * @param string $secretType
-     */
-    public function setSecretType($secretType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretType()
-    {
-    }
-    /**
-     * Optional. The branch of the repository to sync from. Default: master.
-     *
-     * @param string $syncBranch
-     */
-    public function setSyncBranch($syncBranch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncBranch()
-    {
-    }
-    /**
-     * Required. The URL of the Git repository to use as the source of truth.
-     *
-     * @param string $syncRepo
-     */
-    public function setSyncRepo($syncRepo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncRepo()
-    {
-    }
-    /**
-     * Optional. Git revision (tag or hash) to check out. Default HEAD.
-     *
-     * @param string $syncRev
-     */
-    public function setSyncRev($syncRev)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncRev()
-    {
-    }
-    /**
-     * Optional. Period in seconds between consecutive syncs. Default: 15.
-     *
-     * @param string $syncWaitSecs
-     */
-    public function setSyncWaitSecs($syncWaitSecs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncWaitSecs()
+    class Google_Service_GKEHub_ConfigManagementGitConfig extends \Google\Service\GKEHub\ConfigManagementGitConfig
     {
     }
 }

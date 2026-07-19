@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MessageUpdatedEventData extends \Google\Model
-{
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * The updated message.
-     *
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
+namespace Google\Service\HangoutsChat {
+    class MessageUpdatedEventData extends \Google\Model
     {
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * The updated message.
+         *
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message
+     * Runtime class alias of \Google\Service\HangoutsChat\MessageUpdatedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_HangoutsChat_MessageUpdatedEventData extends \Google\Service\HangoutsChat\MessageUpdatedEventData
     {
     }
 }

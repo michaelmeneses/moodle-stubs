@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class VerifyPhoneNumberResponse extends \Google\Model
-{
-    /**
-     * Verified phone number if verification is successful. This phone number can
-     * only be replaced by another verified phone number.
-     *
-     * @var string
-     */
-    public $verifiedPhoneNumber;
-    /**
-     * Verified phone number if verification is successful. This phone number can
-     * only be replaced by another verified phone number.
-     *
-     * @param string $verifiedPhoneNumber
-     */
-    public function setVerifiedPhoneNumber($verifiedPhoneNumber)
+namespace Google\Service\ShoppingContent {
+    class VerifyPhoneNumberResponse extends \Google\Model
     {
+        /**
+         * Verified phone number if verification is successful. This phone number can
+         * only be replaced by another verified phone number.
+         *
+         * @var string
+         */
+        public $verifiedPhoneNumber;
+        /**
+         * Verified phone number if verification is successful. This phone number can
+         * only be replaced by another verified phone number.
+         *
+         * @param string $verifiedPhoneNumber
+         */
+        public function setVerifiedPhoneNumber($verifiedPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerifiedPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\VerifyPhoneNumberResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVerifiedPhoneNumber()
+    class Google_Service_ShoppingContent_VerifyPhoneNumberResponse extends \Google\Service\ShoppingContent\VerifyPhoneNumberResponse
     {
     }
 }

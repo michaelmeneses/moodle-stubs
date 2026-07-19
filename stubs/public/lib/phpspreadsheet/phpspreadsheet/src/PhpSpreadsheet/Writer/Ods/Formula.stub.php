@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Ods;
 
+use Composer\Pcre\Preg;
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\DefinedName;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class Formula
 {
     /** @var string[] */

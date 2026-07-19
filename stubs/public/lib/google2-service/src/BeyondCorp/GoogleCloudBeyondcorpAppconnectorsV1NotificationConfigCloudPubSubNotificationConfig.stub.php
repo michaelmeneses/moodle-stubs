@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig extends \Google\Model
-{
-    /**
-     * The Pub/Sub subscription the AppConnector uses to receive notifications.
-     *
-     * @var string
-     */
-    public $pubsubSubscription;
-    /**
-     * The Pub/Sub subscription the AppConnector uses to receive notifications.
-     *
-     * @param string $pubsubSubscription
-     */
-    public function setPubsubSubscription($pubsubSubscription)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig extends \Google\Model
     {
+        /**
+         * The Pub/Sub subscription the AppConnector uses to receive notifications.
+         *
+         * @var string
+         */
+        public $pubsubSubscription;
+        /**
+         * The Pub/Sub subscription the AppConnector uses to receive notifications.
+         *
+         * @param string $pubsubSubscription
+         */
+        public function setPubsubSubscription($pubsubSubscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubSubscription()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig
     {
     }
 }

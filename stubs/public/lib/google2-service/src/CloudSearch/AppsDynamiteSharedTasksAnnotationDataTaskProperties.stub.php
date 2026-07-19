@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedTasksAnnotationDataTaskProperties extends \Google\Model
-{
-    protected $assigneeType = UserId::class;
-    protected $assigneeDataType = '';
-    /**
-     * @var bool
-     */
-    public $completed;
-    /**
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param UserId
-     */
-    public function setAssignee(UserId $assignee)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedTasksAnnotationDataTaskProperties extends \Google\Model
     {
+        protected $assigneeType = UserId::class;
+        protected $assigneeDataType = '';
+        /**
+         * @var bool
+         */
+        public $completed;
+        /**
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param UserId
+         */
+        public function setAssignee(UserId $assignee)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getAssignee()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCompleted($completed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompleted()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedTasksAnnotationDataTaskProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignee()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCompleted($completed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCompleted()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteSharedTasksAnnotationDataTaskProperties extends \Google\Service\CloudSearch\AppsDynamiteSharedTasksAnnotationDataTaskProperties
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class EncryptionSpec extends \Google\Model
-{
-    /**
-     * The resource name for a Cloud KMS key in the format
-     * `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @var string
-     */
-    public $cloudKmsKey;
-    /**
-     * The resource name for a Cloud KMS key in the format
-     * `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @param string $cloudKmsKey
-     */
-    public function setCloudKmsKey($cloudKmsKey)
+namespace Google\Service\CertificateAuthorityService {
+    class EncryptionSpec extends \Google\Model
     {
+        /**
+         * The resource name for a Cloud KMS key in the format
+         * `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @var string
+         */
+        public $cloudKmsKey;
+        /**
+         * The resource name for a Cloud KMS key in the format
+         * `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @param string $cloudKmsKey
+         */
+        public function setCloudKmsKey($cloudKmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudKmsKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\EncryptionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudKmsKey()
+    class Google_Service_CertificateAuthorityService_EncryptionSpec extends \Google\Service\CertificateAuthorityService\EncryptionSpec
     {
     }
 }

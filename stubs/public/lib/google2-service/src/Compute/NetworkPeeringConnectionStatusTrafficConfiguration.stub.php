@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkPeeringConnectionStatusTrafficConfiguration extends \Google\Model
-{
-    /**
-     * This Peering will allow IPv4 traffic and routes to be exchanged.
-     * Additionally if the matching peering is IPV4_IPV6, IPv6 traffic and routes
-     * will be exchanged as well.
-     */
-    public const STACK_TYPE_IPV4_IPV6 = 'IPV4_IPV6';
-    /**
-     * This Peering will only allow IPv4 traffic and routes to be exchanged, even
-     * if the matching peering is IPV4_IPV6.
-     */
-    public const STACK_TYPE_IPV4_ONLY = 'IPV4_ONLY';
-    /**
-     * Whether custom routes are being exported to the peer network.
-     *
-     * @var bool
-     */
-    public $exportCustomRoutesToPeer;
-    /**
-     * Whether subnet routes with public IP ranges are being exported to the peer
-     * network.
-     *
-     * @var bool
-     */
-    public $exportSubnetRoutesWithPublicIpToPeer;
-    /**
-     * Whether custom routes are being imported from the peer network.
-     *
-     * @var bool
-     */
-    public $importCustomRoutesFromPeer;
-    /**
-     * Whether subnet routes with public IP ranges are being imported from the
-     * peer network.
-     *
-     * @var bool
-     */
-    public $importSubnetRoutesWithPublicIpFromPeer;
-    /**
-     * Which IP version(s) of traffic and routes are being imported or exported
-     * between peer networks.
-     *
-     * @var string
-     */
-    public $stackType;
-    /**
-     * Whether custom routes are being exported to the peer network.
-     *
-     * @param bool $exportCustomRoutesToPeer
-     */
-    public function setExportCustomRoutesToPeer($exportCustomRoutesToPeer)
+namespace Google\Service\Compute {
+    class NetworkPeeringConnectionStatusTrafficConfiguration extends \Google\Model
     {
+        /**
+         * This Peering will allow IPv4 traffic and routes to be exchanged.
+         * Additionally if the matching peering is IPV4_IPV6, IPv6 traffic and routes
+         * will be exchanged as well.
+         */
+        public const STACK_TYPE_IPV4_IPV6 = 'IPV4_IPV6';
+        /**
+         * This Peering will only allow IPv4 traffic and routes to be exchanged, even
+         * if the matching peering is IPV4_IPV6.
+         */
+        public const STACK_TYPE_IPV4_ONLY = 'IPV4_ONLY';
+        /**
+         * Whether custom routes are being exported to the peer network.
+         *
+         * @var bool
+         */
+        public $exportCustomRoutesToPeer;
+        /**
+         * Whether subnet routes with public IP ranges are being exported to the peer
+         * network.
+         *
+         * @var bool
+         */
+        public $exportSubnetRoutesWithPublicIpToPeer;
+        /**
+         * Whether custom routes are being imported from the peer network.
+         *
+         * @var bool
+         */
+        public $importCustomRoutesFromPeer;
+        /**
+         * Whether subnet routes with public IP ranges are being imported from the
+         * peer network.
+         *
+         * @var bool
+         */
+        public $importSubnetRoutesWithPublicIpFromPeer;
+        /**
+         * Which IP version(s) of traffic and routes are being imported or exported
+         * between peer networks.
+         *
+         * @var string
+         */
+        public $stackType;
+        /**
+         * Whether custom routes are being exported to the peer network.
+         *
+         * @param bool $exportCustomRoutesToPeer
+         */
+        public function setExportCustomRoutesToPeer($exportCustomRoutesToPeer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExportCustomRoutesToPeer()
+        {
+        }
+        /**
+         * Whether subnet routes with public IP ranges are being exported to the peer
+         * network.
+         *
+         * @param bool $exportSubnetRoutesWithPublicIpToPeer
+         */
+        public function setExportSubnetRoutesWithPublicIpToPeer($exportSubnetRoutesWithPublicIpToPeer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExportSubnetRoutesWithPublicIpToPeer()
+        {
+        }
+        /**
+         * Whether custom routes are being imported from the peer network.
+         *
+         * @param bool $importCustomRoutesFromPeer
+         */
+        public function setImportCustomRoutesFromPeer($importCustomRoutesFromPeer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImportCustomRoutesFromPeer()
+        {
+        }
+        /**
+         * Whether subnet routes with public IP ranges are being imported from the
+         * peer network.
+         *
+         * @param bool $importSubnetRoutesWithPublicIpFromPeer
+         */
+        public function setImportSubnetRoutesWithPublicIpFromPeer($importSubnetRoutesWithPublicIpFromPeer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImportSubnetRoutesWithPublicIpFromPeer()
+        {
+        }
+        /**
+         * Which IP version(s) of traffic and routes are being imported or exported
+         * between peer networks.
+         *
+         * Accepted values: IPV4_IPV6, IPV4_ONLY
+         *
+         * @param self::STACK_TYPE_* $stackType
+         */
+        public function setStackType($stackType)
+        {
+        }
+        /**
+         * @return self::STACK_TYPE_*
+         */
+        public function getStackType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\NetworkPeeringConnectionStatusTrafficConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportCustomRoutesToPeer()
-    {
-    }
-    /**
-     * Whether subnet routes with public IP ranges are being exported to the peer
-     * network.
-     *
-     * @param bool $exportSubnetRoutesWithPublicIpToPeer
-     */
-    public function setExportSubnetRoutesWithPublicIpToPeer($exportSubnetRoutesWithPublicIpToPeer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExportSubnetRoutesWithPublicIpToPeer()
-    {
-    }
-    /**
-     * Whether custom routes are being imported from the peer network.
-     *
-     * @param bool $importCustomRoutesFromPeer
-     */
-    public function setImportCustomRoutesFromPeer($importCustomRoutesFromPeer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImportCustomRoutesFromPeer()
-    {
-    }
-    /**
-     * Whether subnet routes with public IP ranges are being imported from the
-     * peer network.
-     *
-     * @param bool $importSubnetRoutesWithPublicIpFromPeer
-     */
-    public function setImportSubnetRoutesWithPublicIpFromPeer($importSubnetRoutesWithPublicIpFromPeer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImportSubnetRoutesWithPublicIpFromPeer()
-    {
-    }
-    /**
-     * Which IP version(s) of traffic and routes are being imported or exported
-     * between peer networks.
-     *
-     * Accepted values: IPV4_IPV6, IPV4_ONLY
-     *
-     * @param self::STACK_TYPE_* $stackType
-     */
-    public function setStackType($stackType)
-    {
-    }
-    /**
-     * @return self::STACK_TYPE_*
-     */
-    public function getStackType()
+    class Google_Service_Compute_NetworkPeeringConnectionStatusTrafficConfiguration extends \Google\Service\Compute\NetworkPeeringConnectionStatusTrafficConfiguration
     {
     }
 }

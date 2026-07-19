@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatInfo extends \Google\Collection
-{
-    protected $collection_key = 'threatTypes';
-    /**
-     * @var string[]
-     */
-    public $platformTypes;
-    protected $threatEntriesType = ThreatEntry::class;
-    protected $threatEntriesDataType = 'array';
-    public $threatEntries;
-    /**
-     * @var string[]
-     */
-    public $threatEntryTypes;
-    /**
-     * @var string[]
-     */
-    public $threatTypes;
-    /**
-     * @param string[]
-     */
-    public function setPlatformTypes($platformTypes)
+namespace Google\Service\Safebrowsing {
+    class ThreatInfo extends \Google\Collection
     {
+        protected $collection_key = 'threatTypes';
+        /**
+         * @var string[]
+         */
+        public $platformTypes;
+        protected $threatEntriesType = ThreatEntry::class;
+        protected $threatEntriesDataType = 'array';
+        public $threatEntries;
+        /**
+         * @var string[]
+         */
+        public $threatEntryTypes;
+        /**
+         * @var string[]
+         */
+        public $threatTypes;
+        /**
+         * @param string[]
+         */
+        public function setPlatformTypes($platformTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPlatformTypes()
+        {
+        }
+        /**
+         * @param ThreatEntry[]
+         */
+        public function setThreatEntries($threatEntries)
+        {
+        }
+        /**
+         * @return ThreatEntry[]
+         */
+        public function getThreatEntries()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setThreatEntryTypes($threatEntryTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getThreatEntryTypes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setThreatTypes($threatTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getThreatTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlatformTypes()
-    {
-    }
-    /**
-     * @param ThreatEntry[]
-     */
-    public function setThreatEntries($threatEntries)
-    {
-    }
-    /**
-     * @return ThreatEntry[]
-     */
-    public function getThreatEntries()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setThreatEntryTypes($threatEntryTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getThreatEntryTypes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setThreatTypes($threatTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getThreatTypes()
+    class Google_Service_Safebrowsing_ThreatInfo extends \Google\Service\Safebrowsing\ThreatInfo
     {
     }
 }

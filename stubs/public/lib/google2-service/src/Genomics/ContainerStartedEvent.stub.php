@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class ContainerStartedEvent extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $actionId;
-    /**
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * @var int[]
-     */
-    public $portMappings;
-    /**
-     * @param int
-     */
-    public function setActionId($actionId)
+namespace Google\Service\Genomics {
+    class ContainerStartedEvent extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $actionId;
+        /**
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * @var int[]
+         */
+        public $portMappings;
+        /**
+         * @param int
+         */
+        public function setActionId($actionId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setPortMappings($portMappings)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getPortMappings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Genomics\ContainerStartedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setPortMappings($portMappings)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getPortMappings()
+    class Google_Service_Genomics_ContainerStartedEvent extends \Google\Service\Genomics\ContainerStartedEvent
     {
     }
 }

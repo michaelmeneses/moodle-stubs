@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserRelation extends \Google\Model
-{
-    /**
-     * Custom Type.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * The relation of the user. Some of the possible values are mother father
-     * sister brother manager assistant partner.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The name of the relation.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Custom Type.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
+namespace Google\Service\Directory {
+    class UserRelation extends \Google\Model
     {
+        /**
+         * Custom Type.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * The relation of the user. Some of the possible values are mother father
+         * sister brother manager assistant partner.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The name of the relation.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Custom Type.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * The relation of the user. Some of the possible values are mother father
+         * sister brother manager assistant partner.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The name of the relation.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserRelation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomType()
-    {
-    }
-    /**
-     * The relation of the user. Some of the possible values are mother father
-     * sister brother manager assistant partner.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The name of the relation.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Directory_UserRelation extends \Google\Service\Directory\UserRelation
     {
     }
 }

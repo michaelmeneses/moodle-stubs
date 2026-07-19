@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchInfo extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $offset;
-    /**
-     * @var string
-     */
-    public $orderBy;
-    /**
-     * @var string
-     */
-    public $searchQuery;
-    /**
-     * @param int
-     */
-    public function setOffset($offset)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchInfo extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $offset;
+        /**
+         * @var string
+         */
+        public $orderBy;
+        /**
+         * @var string
+         */
+        public $searchQuery;
+        /**
+         * @param int
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderBy($orderBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderBy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSearchQuery($searchQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderBy($orderBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderBy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSearchQuery($searchQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchQuery()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchInfo
     {
     }
 }

@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class SnapshotImage extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["mimeType" => "mime_type"];
-    /**
-     * The height of the image.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#snapshotImage`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The MIME type of the image.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The URL of the image. This URL may be invalidated at any time and should
-     * not be cached.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The width of the image.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The height of the image.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\Games {
+    class SnapshotImage extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["mimeType" => "mime_type"];
+        /**
+         * The height of the image.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#snapshotImage`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The MIME type of the image.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The URL of the image. This URL may be invalidated at any time and should
+         * not be cached.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The width of the image.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The height of the image.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#snapshotImage`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The MIME type of the image.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The URL of the image. This URL may be invalidated at any time and should
+         * not be cached.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * The width of the image.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Games\SnapshotImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#snapshotImage`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The MIME type of the image.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The URL of the image. This URL may be invalidated at any time and should
-     * not be cached.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * The width of the image.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Games_SnapshotImage extends \Google\Service\Games\SnapshotImage
     {
     }
 }

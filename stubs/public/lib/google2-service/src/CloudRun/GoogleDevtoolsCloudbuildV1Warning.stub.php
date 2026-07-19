@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1Warning extends \Google\Model
-{
-    /**
-     * Should not be used.
-     */
-    public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
-    /**
-     * e.g. deprecation warnings and alternative feature highlights.
-     */
-    public const PRIORITY_INFO = 'INFO';
-    /**
-     * e.g. automated detection of possible issues with the build.
-     */
-    public const PRIORITY_WARNING = 'WARNING';
-    /**
-     * e.g. alerts that a feature used in the build is pending removal
-     */
-    public const PRIORITY_ALERT = 'ALERT';
-    /**
-     * The priority for this warning.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * Explanation of the warning generated.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The priority for this warning.
-     *
-     * Accepted values: PRIORITY_UNSPECIFIED, INFO, WARNING, ALERT
-     *
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1Warning extends \Google\Model
     {
+        /**
+         * Should not be used.
+         */
+        public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
+        /**
+         * e.g. deprecation warnings and alternative feature highlights.
+         */
+        public const PRIORITY_INFO = 'INFO';
+        /**
+         * e.g. automated detection of possible issues with the build.
+         */
+        public const PRIORITY_WARNING = 'WARNING';
+        /**
+         * e.g. alerts that a feature used in the build is pending removal
+         */
+        public const PRIORITY_ALERT = 'ALERT';
+        /**
+         * The priority for this warning.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * Explanation of the warning generated.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The priority for this warning.
+         *
+         * Accepted values: PRIORITY_UNSPECIFIED, INFO, WARNING, ALERT
+         *
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * Explanation of the warning generated.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PRIORITY_*
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Warning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriority()
-    {
-    }
-    /**
-     * Explanation of the warning generated.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1Warning extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Warning
     {
     }
 }

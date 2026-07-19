@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BatchUpdateSpreadsheetRequest extends \Google\Collection
-{
-    protected $collection_key = 'responseRanges';
-    /**
-     * Determines if the update response should include the spreadsheet resource.
-     *
-     * @var bool
-     */
-    public $includeSpreadsheetInResponse;
-    protected $requestsType = Request::class;
-    protected $requestsDataType = 'array';
-    /**
-     * True if grid data should be returned. Meaningful only if
-     * include_spreadsheet_in_response is 'true'. This parameter is ignored if a
-     * field mask was set in the request.
-     *
-     * @var bool
-     */
-    public $responseIncludeGridData;
-    /**
-     * Limits the ranges included in the response spreadsheet. Meaningful only if
-     * include_spreadsheet_in_response is 'true'.
-     *
-     * @var string[]
-     */
-    public $responseRanges;
-    /**
-     * Determines if the update response should include the spreadsheet resource.
-     *
-     * @param bool $includeSpreadsheetInResponse
-     */
-    public function setIncludeSpreadsheetInResponse($includeSpreadsheetInResponse)
+namespace Google\Service\Sheets {
+    class BatchUpdateSpreadsheetRequest extends \Google\Collection
     {
+        protected $collection_key = 'responseRanges';
+        /**
+         * Determines if the update response should include the spreadsheet resource.
+         *
+         * @var bool
+         */
+        public $includeSpreadsheetInResponse;
+        protected $requestsType = Request::class;
+        protected $requestsDataType = 'array';
+        /**
+         * True if grid data should be returned. Meaningful only if
+         * include_spreadsheet_in_response is 'true'. This parameter is ignored if a
+         * field mask was set in the request.
+         *
+         * @var bool
+         */
+        public $responseIncludeGridData;
+        /**
+         * Limits the ranges included in the response spreadsheet. Meaningful only if
+         * include_spreadsheet_in_response is 'true'.
+         *
+         * @var string[]
+         */
+        public $responseRanges;
+        /**
+         * Determines if the update response should include the spreadsheet resource.
+         *
+         * @param bool $includeSpreadsheetInResponse
+         */
+        public function setIncludeSpreadsheetInResponse($includeSpreadsheetInResponse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeSpreadsheetInResponse()
+        {
+        }
+        /**
+         * A list of updates to apply to the spreadsheet. Requests will be applied in
+         * the order they are specified. If any request is not valid, no requests will
+         * be applied.
+         *
+         * @param Request[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return Request[]
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * True if grid data should be returned. Meaningful only if
+         * include_spreadsheet_in_response is 'true'. This parameter is ignored if a
+         * field mask was set in the request.
+         *
+         * @param bool $responseIncludeGridData
+         */
+        public function setResponseIncludeGridData($responseIncludeGridData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResponseIncludeGridData()
+        {
+        }
+        /**
+         * Limits the ranges included in the response spreadsheet. Meaningful only if
+         * include_spreadsheet_in_response is 'true'.
+         *
+         * @param string[] $responseRanges
+         */
+        public function setResponseRanges($responseRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\BatchUpdateSpreadsheetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeSpreadsheetInResponse()
-    {
-    }
-    /**
-     * A list of updates to apply to the spreadsheet. Requests will be applied in
-     * the order they are specified. If any request is not valid, no requests will
-     * be applied.
-     *
-     * @param Request[] $requests
-     */
-    public function setRequests($requests)
-    {
-    }
-    /**
-     * @return Request[]
-     */
-    public function getRequests()
-    {
-    }
-    /**
-     * True if grid data should be returned. Meaningful only if
-     * include_spreadsheet_in_response is 'true'. This parameter is ignored if a
-     * field mask was set in the request.
-     *
-     * @param bool $responseIncludeGridData
-     */
-    public function setResponseIncludeGridData($responseIncludeGridData)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResponseIncludeGridData()
-    {
-    }
-    /**
-     * Limits the ranges included in the response spreadsheet. Meaningful only if
-     * include_spreadsheet_in_response is 'true'.
-     *
-     * @param string[] $responseRanges
-     */
-    public function setResponseRanges($responseRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseRanges()
+    class Google_Service_Sheets_BatchUpdateSpreadsheetRequest extends \Google\Service\Sheets\BatchUpdateSpreadsheetRequest
     {
     }
 }

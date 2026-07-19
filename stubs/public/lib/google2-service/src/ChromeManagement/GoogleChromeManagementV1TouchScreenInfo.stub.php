@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TouchScreenInfo extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = GoogleChromeManagementV1TouchScreenDevice::class;
-    protected $devicesDataType = 'array';
-    /**
-     * Output only. Touchpad library name used by the input stack.
-     *
-     * @var string
-     */
-    public $touchpadLibrary;
-    /**
-     * Output only. List of the internal touch screen devices.
-     *
-     * @param GoogleChromeManagementV1TouchScreenDevice[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TouchScreenInfo extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = GoogleChromeManagementV1TouchScreenDevice::class;
+        protected $devicesDataType = 'array';
+        /**
+         * Output only. Touchpad library name used by the input stack.
+         *
+         * @var string
+         */
+        public $touchpadLibrary;
+        /**
+         * Output only. List of the internal touch screen devices.
+         *
+         * @param GoogleChromeManagementV1TouchScreenDevice[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TouchScreenDevice[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * Output only. Touchpad library name used by the input stack.
+         *
+         * @param string $touchpadLibrary
+         */
+        public function setTouchpadLibrary($touchpadLibrary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTouchpadLibrary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1TouchScreenDevice[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TouchScreenInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * Output only. Touchpad library name used by the input stack.
-     *
-     * @param string $touchpadLibrary
-     */
-    public function setTouchpadLibrary($touchpadLibrary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTouchpadLibrary()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TouchScreenInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TouchScreenInfo
     {
     }
 }

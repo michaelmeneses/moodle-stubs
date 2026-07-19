@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Activities extends \Google\Collection
-{
-    protected $collection_key = 'metricNames';
-    protected $filtersType = DimensionValue::class;
-    protected $filtersDataType = 'array';
-    /**
-     * The kind of resource this is, in this case dfareporting#activities.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of names of floodlight activity metrics.
-     *
-     * @var string[]
-     */
-    public $metricNames;
-    /**
-     * List of activity filters. The dimension values need to be all either of
-     * type "dfa:activity" or "dfa:activityGroup".
-     *
-     * @param DimensionValue[] $filters
-     */
-    public function setFilters($filters)
+namespace Google\Service\Dfareporting {
+    class Activities extends \Google\Collection
     {
+        protected $collection_key = 'metricNames';
+        protected $filtersType = DimensionValue::class;
+        protected $filtersDataType = 'array';
+        /**
+         * The kind of resource this is, in this case dfareporting#activities.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of names of floodlight activity metrics.
+         *
+         * @var string[]
+         */
+        public $metricNames;
+        /**
+         * List of activity filters. The dimension values need to be all either of
+         * type "dfa:activity" or "dfa:activityGroup".
+         *
+         * @param DimensionValue[] $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case dfareporting#activities.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of names of floodlight activity metrics.
+         *
+         * @param string[] $metricNames
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionValue[]
+     * Runtime class alias of \Google\Service\Dfareporting\Activities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case dfareporting#activities.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * List of names of floodlight activity metrics.
-     *
-     * @param string[] $metricNames
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
+    class Google_Service_Dfareporting_Activities extends \Google\Service\Dfareporting\Activities
     {
     }
 }

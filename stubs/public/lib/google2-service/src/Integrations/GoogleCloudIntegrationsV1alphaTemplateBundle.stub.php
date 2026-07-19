@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaTemplateBundle extends \Google\Collection
-{
-    protected $collection_key = 'subIntegrationVersionTemplates';
-    protected $integrationVersionTemplateType = GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate::class;
-    protected $integrationVersionTemplateDataType = '';
-    protected $subIntegrationVersionTemplatesType = GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate::class;
-    protected $subIntegrationVersionTemplatesDataType = 'array';
-    /**
-     * Required. Main integration templates of the template bundle.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate $integrationVersionTemplate
-     */
-    public function setIntegrationVersionTemplate(GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate $integrationVersionTemplate)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaTemplateBundle extends \Google\Collection
     {
+        protected $collection_key = 'subIntegrationVersionTemplates';
+        protected $integrationVersionTemplateType = GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate::class;
+        protected $integrationVersionTemplateDataType = '';
+        protected $subIntegrationVersionTemplatesType = GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate::class;
+        protected $subIntegrationVersionTemplatesDataType = 'array';
+        /**
+         * Required. Main integration templates of the template bundle.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate $integrationVersionTemplate
+         */
+        public function setIntegrationVersionTemplate(GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate $integrationVersionTemplate)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate
+         */
+        public function getIntegrationVersionTemplate()
+        {
+        }
+        /**
+         * Optional. Sub integration templates which would be added along with main
+         * integration.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate[] $subIntegrationVersionTemplates
+         */
+        public function setSubIntegrationVersionTemplates($subIntegrationVersionTemplates)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate[]
+         */
+        public function getSubIntegrationVersionTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplateBundle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationVersionTemplate()
-    {
-    }
-    /**
-     * Optional. Sub integration templates which would be added along with main
-     * integration.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate[] $subIntegrationVersionTemplates
-     */
-    public function setSubIntegrationVersionTemplates($subIntegrationVersionTemplates)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate[]
-     */
-    public function getSubIntegrationVersionTemplates()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaTemplateBundle extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplateBundle
     {
     }
 }

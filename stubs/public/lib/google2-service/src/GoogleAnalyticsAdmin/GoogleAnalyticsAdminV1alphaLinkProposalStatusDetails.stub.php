@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $linkProposalInitiatingProduct;
-    /**
-     * @var string
-     */
-    public $linkProposalState;
-    /**
-     * @var string
-     */
-    public $requestorEmail;
-    /**
-     * @param string
-     */
-    public function setLinkProposalInitiatingProduct($linkProposalInitiatingProduct)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $linkProposalInitiatingProduct;
+        /**
+         * @var string
+         */
+        public $linkProposalState;
+        /**
+         * @var string
+         */
+        public $requestorEmail;
+        /**
+         * @param string
+         */
+        public function setLinkProposalInitiatingProduct($linkProposalInitiatingProduct)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkProposalInitiatingProduct()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLinkProposalState($linkProposalState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkProposalState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestorEmail($requestorEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestorEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkProposalInitiatingProduct()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLinkProposalState($linkProposalState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkProposalState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestorEmail($requestorEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestorEmail()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails
     {
     }
 }

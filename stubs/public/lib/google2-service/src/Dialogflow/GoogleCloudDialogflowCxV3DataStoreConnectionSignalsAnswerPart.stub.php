@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart extends \Google\Collection
-{
-    protected $collection_key = 'supportingIndices';
-    /**
-     * Citations for this answer part. Indices of `search_snippets`.
-     *
-     * @var int[]
-     */
-    public $supportingIndices;
-    /**
-     * Substring of the answer.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Citations for this answer part. Indices of `search_snippets`.
-     *
-     * @param int[] $supportingIndices
-     */
-    public function setSupportingIndices($supportingIndices)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart extends \Google\Collection
     {
+        protected $collection_key = 'supportingIndices';
+        /**
+         * Citations for this answer part. Indices of `search_snippets`.
+         *
+         * @var int[]
+         */
+        public $supportingIndices;
+        /**
+         * Substring of the answer.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Citations for this answer part. Indices of `search_snippets`.
+         *
+         * @param int[] $supportingIndices
+         */
+        public function setSupportingIndices($supportingIndices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getSupportingIndices()
+        {
+        }
+        /**
+         * Substring of the answer.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSupportingIndices()
-    {
-    }
-    /**
-     * Substring of the answer.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart
     {
     }
 }

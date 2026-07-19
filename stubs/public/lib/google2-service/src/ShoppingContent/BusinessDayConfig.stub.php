@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class BusinessDayConfig extends \Google\Collection
-{
-    protected $collection_key = 'businessDays';
-    /**
-     * Regular business days, such as '"monday"'. May not be empty.
-     *
-     * @var string[]
-     */
-    public $businessDays;
-    /**
-     * Regular business days, such as '"monday"'. May not be empty.
-     *
-     * @param string[] $businessDays
-     */
-    public function setBusinessDays($businessDays)
+namespace Google\Service\ShoppingContent {
+    class BusinessDayConfig extends \Google\Collection
     {
+        protected $collection_key = 'businessDays';
+        /**
+         * Regular business days, such as '"monday"'. May not be empty.
+         *
+         * @var string[]
+         */
+        public $businessDays;
+        /**
+         * Regular business days, such as '"monday"'. May not be empty.
+         *
+         * @param string[] $businessDays
+         */
+        public function setBusinessDays($businessDays)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBusinessDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\BusinessDayConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessDays()
+    class Google_Service_ShoppingContent_BusinessDayConfig extends \Google\Service\ShoppingContent\BusinessDayConfig
     {
     }
 }

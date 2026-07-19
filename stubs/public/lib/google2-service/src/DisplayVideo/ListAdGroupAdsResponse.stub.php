@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListAdGroupAdsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adGroupAds';
-    protected $adGroupAdsType = AdGroupAd::class;
-    protected $adGroupAdsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAdGroupAds` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of ad group ads. This list will be absent if empty.
-     *
-     * @param AdGroupAd[] $adGroupAds
-     */
-    public function setAdGroupAds($adGroupAds)
+namespace Google\Service\DisplayVideo {
+    class ListAdGroupAdsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adGroupAds';
+        protected $adGroupAdsType = AdGroupAd::class;
+        protected $adGroupAdsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAdGroupAds` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of ad group ads. This list will be absent if empty.
+         *
+         * @param AdGroupAd[] $adGroupAds
+         */
+        public function setAdGroupAds($adGroupAds)
+        {
+        }
+        /**
+         * @return AdGroupAd[]
+         */
+        public function getAdGroupAds()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAdGroupAds` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdGroupAd[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListAdGroupAdsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupAds()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAdGroupAds` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListAdGroupAdsResponse extends \Google\Service\DisplayVideo\ListAdGroupAdsResponse
     {
     }
 }

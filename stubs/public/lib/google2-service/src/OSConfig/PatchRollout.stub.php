@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchRollout extends \Google\Model
-{
-    protected $disruptionBudgetType = FixedOrPercent::class;
-    protected $disruptionBudgetDataType = '';
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @param FixedOrPercent
-     */
-    public function setDisruptionBudget(FixedOrPercent $disruptionBudget)
+namespace Google\Service\OSConfig {
+    class PatchRollout extends \Google\Model
     {
+        protected $disruptionBudgetType = FixedOrPercent::class;
+        protected $disruptionBudgetDataType = '';
+        /**
+         * @var string
+         */
+        public $mode;
+        /**
+         * @param FixedOrPercent
+         */
+        public function setDisruptionBudget(FixedOrPercent $disruptionBudget)
+        {
+        }
+        /**
+         * @return FixedOrPercent
+         */
+        public function getDisruptionBudget()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FixedOrPercent
+     * Runtime class alias of \Google\Service\OSConfig\PatchRollout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisruptionBudget()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMode()
+    class Google_Service_OSConfig_PatchRollout extends \Google\Service\OSConfig\PatchRollout
     {
     }
 }

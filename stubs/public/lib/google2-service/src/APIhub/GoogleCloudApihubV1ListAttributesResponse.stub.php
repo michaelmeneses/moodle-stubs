@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListAttributesResponse extends \Google\Collection
-{
-    protected $collection_key = 'attributes';
-    protected $attributesType = GoogleCloudApihubV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of all attributes.
-     *
-     * @param GoogleCloudApihubV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListAttributesResponse extends \Google\Collection
     {
+        protected $collection_key = 'attributes';
+        protected $attributesType = GoogleCloudApihubV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of all attributes.
+         *
+         * @param GoogleCloudApihubV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Attribute[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListAttributesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListAttributesResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListAttributesResponse
     {
     }
 }

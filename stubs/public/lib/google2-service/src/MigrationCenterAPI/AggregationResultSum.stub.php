@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AggregationResultSum extends \Google\Model
-{
-    public $value;
-    public function setValue($value)
+namespace Google\Service\MigrationCenterAPI {
+    class AggregationResultSum extends \Google\Model
     {
+        public $value;
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
-    public function getValue()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AggregationResultSum registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MigrationCenterAPI_AggregationResultSum extends \Google\Service\MigrationCenterAPI\AggregationResultSum
     {
     }
 }

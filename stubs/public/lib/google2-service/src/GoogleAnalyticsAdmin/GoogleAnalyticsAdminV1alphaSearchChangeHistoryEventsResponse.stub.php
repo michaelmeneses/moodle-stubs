@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'changeHistoryEvents';
-    protected $changeHistoryEventsType = GoogleAnalyticsAdminV1alphaChangeHistoryEvent::class;
-    protected $changeHistoryEventsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaChangeHistoryEvent[]
-     */
-    public function setChangeHistoryEvents($changeHistoryEvents)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'changeHistoryEvents';
+        protected $changeHistoryEventsType = GoogleAnalyticsAdminV1alphaChangeHistoryEvent::class;
+        protected $changeHistoryEventsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaChangeHistoryEvent[]
+         */
+        public function setChangeHistoryEvents($changeHistoryEvents)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaChangeHistoryEvent[]
+         */
+        public function getChangeHistoryEvents()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaChangeHistoryEvent[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeHistoryEvents()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaSearchChangeHistoryEventsResponse
     {
     }
 }

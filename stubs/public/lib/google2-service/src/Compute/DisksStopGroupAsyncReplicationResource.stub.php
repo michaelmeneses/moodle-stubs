@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DisksStopGroupAsyncReplicationResource extends \Google\Model
-{
-    /**
-     * The URL of the DiskConsistencyGroupPolicy for the group of disks to stop.
-     * This may be a full or partial URL, such as:              -         https://
-     * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
-     * ies/resourcePolicy            -
-     * projects/project/regions/region/resourcePolicies/resourcePolicy
-     * -         regions/region/resourcePolicies/resourcePolicy
-     *
-     * @var string
-     */
-    public $resourcePolicy;
-    /**
-     * The URL of the DiskConsistencyGroupPolicy for the group of disks to stop.
-     * This may be a full or partial URL, such as:              -         https://
-     * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
-     * ies/resourcePolicy            -
-     * projects/project/regions/region/resourcePolicies/resourcePolicy
-     * -         regions/region/resourcePolicies/resourcePolicy
-     *
-     * @param string $resourcePolicy
-     */
-    public function setResourcePolicy($resourcePolicy)
+namespace Google\Service\Compute {
+    class DisksStopGroupAsyncReplicationResource extends \Google\Model
     {
+        /**
+         * The URL of the DiskConsistencyGroupPolicy for the group of disks to stop.
+         * This may be a full or partial URL, such as:              -         https://
+         * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
+         * ies/resourcePolicy            -
+         * projects/project/regions/region/resourcePolicies/resourcePolicy
+         * -         regions/region/resourcePolicies/resourcePolicy
+         *
+         * @var string
+         */
+        public $resourcePolicy;
+        /**
+         * The URL of the DiskConsistencyGroupPolicy for the group of disks to stop.
+         * This may be a full or partial URL, such as:              -         https://
+         * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
+         * ies/resourcePolicy            -
+         * projects/project/regions/region/resourcePolicies/resourcePolicy
+         * -         regions/region/resourcePolicies/resourcePolicy
+         *
+         * @param string $resourcePolicy
+         */
+        public function setResourcePolicy($resourcePolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourcePolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\DisksStopGroupAsyncReplicationResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourcePolicy()
+    class Google_Service_Compute_DisksStopGroupAsyncReplicationResource extends \Google\Service\Compute\DisksStopGroupAsyncReplicationResource
     {
     }
 }

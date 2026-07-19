@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceScreenshotFiles extends \Google\Model
-{
-    /**
-     * Date and time the file was created
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * File download URL
-     *
-     * @var string
-     */
-    public $downloadUrl;
-    /**
-     * File name
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * File type
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Date and time the file was created
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceScreenshotFiles extends \Google\Model
     {
+        /**
+         * Date and time the file was created
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * File download URL
+         *
+         * @var string
+         */
+        public $downloadUrl;
+        /**
+         * File name
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * File type
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Date and time the file was created
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * File download URL
+         *
+         * @param string $downloadUrl
+         */
+        public function setDownloadUrl($downloadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUrl()
+        {
+        }
+        /**
+         * File name
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * File type
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceScreenshotFiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * File download URL
-     *
-     * @param string $downloadUrl
-     */
-    public function setDownloadUrl($downloadUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadUrl()
-    {
-    }
-    /**
-     * File name
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * File type
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Directory_ChromeOsDeviceScreenshotFiles extends \Google\Service\Directory\ChromeOsDeviceScreenshotFiles
     {
     }
 }

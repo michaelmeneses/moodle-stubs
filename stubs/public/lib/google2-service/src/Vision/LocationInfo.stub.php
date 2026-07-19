@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class LocationInfo extends \Google\Model
-{
-    protected $latLngType = LatLng::class;
-    protected $latLngDataType = '';
-    /**
-     * lat/long location coordinates.
-     *
-     * @param LatLng $latLng
-     */
-    public function setLatLng(LatLng $latLng)
+namespace Google\Service\Vision {
+    class LocationInfo extends \Google\Model
     {
+        protected $latLngType = LatLng::class;
+        protected $latLngDataType = '';
+        /**
+         * lat/long location coordinates.
+         *
+         * @param LatLng $latLng
+         */
+        public function setLatLng(LatLng $latLng)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getLatLng()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng
+     * Runtime class alias of \Google\Service\Vision\LocationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatLng()
+    class Google_Service_Vision_LocationInfo extends \Google\Service\Vision\LocationInfo
     {
     }
 }

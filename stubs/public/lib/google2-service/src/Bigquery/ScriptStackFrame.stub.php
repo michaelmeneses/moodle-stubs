@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ScriptStackFrame extends \Google\Model
-{
-    /**
-     * Output only. One-based end column.
-     *
-     * @var int
-     */
-    public $endColumn;
-    /**
-     * Output only. One-based end line.
-     *
-     * @var int
-     */
-    public $endLine;
-    /**
-     * Output only. Name of the active procedure, empty if in a top-level script.
-     *
-     * @var string
-     */
-    public $procedureId;
-    /**
-     * Output only. One-based start column.
-     *
-     * @var int
-     */
-    public $startColumn;
-    /**
-     * Output only. One-based start line.
-     *
-     * @var int
-     */
-    public $startLine;
-    /**
-     * Output only. Text of the current statement/expression.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Output only. One-based end column.
-     *
-     * @param int $endColumn
-     */
-    public function setEndColumn($endColumn)
+namespace Google\Service\Bigquery {
+    class ScriptStackFrame extends \Google\Model
     {
+        /**
+         * Output only. One-based end column.
+         *
+         * @var int
+         */
+        public $endColumn;
+        /**
+         * Output only. One-based end line.
+         *
+         * @var int
+         */
+        public $endLine;
+        /**
+         * Output only. Name of the active procedure, empty if in a top-level script.
+         *
+         * @var string
+         */
+        public $procedureId;
+        /**
+         * Output only. One-based start column.
+         *
+         * @var int
+         */
+        public $startColumn;
+        /**
+         * Output only. One-based start line.
+         *
+         * @var int
+         */
+        public $startLine;
+        /**
+         * Output only. Text of the current statement/expression.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Output only. One-based end column.
+         *
+         * @param int $endColumn
+         */
+        public function setEndColumn($endColumn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndColumn()
+        {
+        }
+        /**
+         * Output only. One-based end line.
+         *
+         * @param int $endLine
+         */
+        public function setEndLine($endLine)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndLine()
+        {
+        }
+        /**
+         * Output only. Name of the active procedure, empty if in a top-level script.
+         *
+         * @param string $procedureId
+         */
+        public function setProcedureId($procedureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcedureId()
+        {
+        }
+        /**
+         * Output only. One-based start column.
+         *
+         * @param int $startColumn
+         */
+        public function setStartColumn($startColumn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartColumn()
+        {
+        }
+        /**
+         * Output only. One-based start line.
+         *
+         * @param int $startLine
+         */
+        public function setStartLine($startLine)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartLine()
+        {
+        }
+        /**
+         * Output only. Text of the current statement/expression.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Bigquery\ScriptStackFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndColumn()
-    {
-    }
-    /**
-     * Output only. One-based end line.
-     *
-     * @param int $endLine
-     */
-    public function setEndLine($endLine)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndLine()
-    {
-    }
-    /**
-     * Output only. Name of the active procedure, empty if in a top-level script.
-     *
-     * @param string $procedureId
-     */
-    public function setProcedureId($procedureId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcedureId()
-    {
-    }
-    /**
-     * Output only. One-based start column.
-     *
-     * @param int $startColumn
-     */
-    public function setStartColumn($startColumn)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartColumn()
-    {
-    }
-    /**
-     * Output only. One-based start line.
-     *
-     * @param int $startLine
-     */
-    public function setStartLine($startLine)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartLine()
-    {
-    }
-    /**
-     * Output only. Text of the current statement/expression.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Bigquery_ScriptStackFrame extends \Google\Service\Bigquery\ScriptStackFrame
     {
     }
 }

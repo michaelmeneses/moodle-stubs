@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SortOptions extends \Google\Model
-{
-    public const SORT_ORDER_ASCENDING = 'ASCENDING';
-    public const SORT_ORDER_DESCENDING = 'DESCENDING';
-    /**
-     * The name of the operator corresponding to the field to sort on. The
-     * corresponding property must be marked as sortable.
-     *
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * Ascending is the default sort order
-     *
-     * @var string
-     */
-    public $sortOrder;
-    /**
-     * The name of the operator corresponding to the field to sort on. The
-     * corresponding property must be marked as sortable.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
+namespace Google\Service\CloudSearch {
+    class SortOptions extends \Google\Model
     {
+        public const SORT_ORDER_ASCENDING = 'ASCENDING';
+        public const SORT_ORDER_DESCENDING = 'DESCENDING';
+        /**
+         * The name of the operator corresponding to the field to sort on. The
+         * corresponding property must be marked as sortable.
+         *
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * Ascending is the default sort order
+         *
+         * @var string
+         */
+        public $sortOrder;
+        /**
+         * The name of the operator corresponding to the field to sort on. The
+         * corresponding property must be marked as sortable.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
+        /**
+         * Ascending is the default sort order
+         *
+         * Accepted values: ASCENDING, DESCENDING
+         *
+         * @param self::SORT_ORDER_* $sortOrder
+         */
+        public function setSortOrder($sortOrder)
+        {
+        }
+        /**
+         * @return self::SORT_ORDER_*
+         */
+        public function getSortOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\SortOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorName()
-    {
-    }
-    /**
-     * Ascending is the default sort order
-     *
-     * Accepted values: ASCENDING, DESCENDING
-     *
-     * @param self::SORT_ORDER_* $sortOrder
-     */
-    public function setSortOrder($sortOrder)
-    {
-    }
-    /**
-     * @return self::SORT_ORDER_*
-     */
-    public function getSortOrder()
+    class Google_Service_CloudSearch_SortOptions extends \Google\Service\CloudSearch\SortOptions
     {
     }
 }

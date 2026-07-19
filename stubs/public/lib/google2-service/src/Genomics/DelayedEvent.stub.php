@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class DelayedEvent extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * @var string
-     */
-    public $cause;
-    /**
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * @param string
-     */
-    public function setCause($cause)
+namespace Google\Service\Genomics {
+    class DelayedEvent extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * @var string
+         */
+        public $cause;
+        /**
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * @param string
+         */
+        public function setCause($cause)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCause()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\DelayedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCause()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetrics()
+    class Google_Service_Genomics_DelayedEvent extends \Google\Service\Genomics\DelayedEvent
     {
     }
 }

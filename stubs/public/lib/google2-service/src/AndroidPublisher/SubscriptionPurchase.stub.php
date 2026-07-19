@@ -21,689 +21,698 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionPurchase extends \Google\Model
-{
-    /**
-     * The acknowledgement state of the subscription product. Possible values are:
-     * 0. Yet to be acknowledged 1. Acknowledged
-     *
-     * @var int
-     */
-    public $acknowledgementState;
-    /**
-     * Whether the subscription will automatically be renewed when it reaches its
-     * current expiry time.
-     *
-     * @var bool
-     */
-    public $autoRenewing;
-    /**
-     * Time at which the subscription will be automatically resumed, in
-     * milliseconds since the Epoch. Only present if the user has requested to
-     * pause the subscription.
-     *
-     * @var string
-     */
-    public $autoResumeTimeMillis;
-    /**
-     * The reason why a subscription was canceled or is not auto-renewing.
-     * Possible values are: 0. User canceled the subscription 1. Subscription was
-     * canceled by the system, for example because of a billing problem 2.
-     * Subscription was replaced with a new subscription 3. Subscription was
-     * canceled by the developer
-     *
-     * @var int
-     */
-    public $cancelReason;
-    protected $cancelSurveyResultType = SubscriptionCancelSurveyResult::class;
-    protected $cancelSurveyResultDataType = '';
-    /**
-     * ISO 3166-1 alpha-2 billing country/region code of the user at the time the
-     * subscription was granted.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * A developer-specified string that contains supplemental information about
-     * an order.
-     *
-     * @var string
-     */
-    public $developerPayload;
-    /**
-     * The email address of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Time at which the subscription will expire, in milliseconds since the
-     * Epoch.
-     *
-     * @var string
-     */
-    public $expiryTimeMillis;
-    /**
-     * User account identifier in the third-party service. Only present if account
-     * linking happened as part of the subscription purchase flow.
-     *
-     * @var string
-     */
-    public $externalAccountId;
-    /**
-     * The family name of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The given name of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @var string
-     */
-    public $givenName;
-    protected $introductoryPriceInfoType = IntroductoryPriceInfo::class;
-    protected $introductoryPriceInfoDataType = '';
-    /**
-     * This kind represents a subscriptionPurchase object in the androidpublisher
-     * service.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The purchase token of the originating purchase if this subscription is one
-     * of the following: 0. Re-signup of a canceled but non-lapsed subscription 1.
-     * Upgrade/downgrade from a previous subscription For example, suppose a user
-     * originally signs up and you receive purchase token X, then the user cancels
-     * and goes through the resignup flow (before their subscription lapses) and
-     * you receive purchase token Y, and finally the user upgrades their
-     * subscription and you receive purchase token Z. If you call this API with
-     * purchase token Z, this field will be set to Y. If you call this API with
-     * purchase token Y, this field will be set to X. If you call this API with
-     * purchase token X, this field will not be set.
-     *
-     * @var string
-     */
-    public $linkedPurchaseToken;
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * account in your app. Present for the following purchases: * If account
-     * linking happened as part of the subscription purchase flow. * It was
-     * specified using https://developer.android.com/reference/com/android/billing
-     * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
-     * purchase was made.
-     *
-     * @var string
-     */
-    public $obfuscatedExternalAccountId;
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * profile in your app. Only present if specified using https://developer.andr
-     * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
-     * etobfuscatedprofileid when the purchase was made.
-     *
-     * @var string
-     */
-    public $obfuscatedExternalProfileId;
-    /**
-     * The order id of the latest recurring order associated with the purchase of
-     * the subscription. If the subscription was canceled because payment was
-     * declined, this will be the order id from the payment declined order.
-     *
-     * @var string
-     */
-    public $orderId;
-    /**
-     * The payment state of the subscription. Possible values are: 0. Payment
-     * pending 1. Payment received 2. Free trial 3. Pending deferred
-     * upgrade/downgrade Not present for canceled, expired subscriptions.
-     *
-     * @var int
-     */
-    public $paymentState;
-    /**
-     * Price of the subscription, For tax exclusive countries, the price doesn't
-     * include tax. For tax inclusive countries, the price includes tax. Price is
-     * expressed in micro-units, where 1,000,000 micro-units represents one unit
-     * of the currency. For example, if the subscription price is €1.99,
-     * price_amount_micros is 1990000.
-     *
-     * @var string
-     */
-    public $priceAmountMicros;
-    protected $priceChangeType = SubscriptionPriceChange::class;
-    protected $priceChangeDataType = '';
-    /**
-     * ISO 4217 currency code for the subscription price. For example, if the
-     * price is specified in British pounds sterling, price_currency_code is
-     * "GBP".
-     *
-     * @var string
-     */
-    public $priceCurrencyCode;
-    /**
-     * The Google profile id of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @var string
-     */
-    public $profileId;
-    /**
-     * The profile name of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @var string
-     */
-    public $profileName;
-    /**
-     * The promotion code applied on this purchase. This field is only set if a
-     * vanity code promotion is applied when the subscription was purchased.
-     *
-     * @var string
-     */
-    public $promotionCode;
-    /**
-     * The type of promotion applied on this purchase. This field is only set if a
-     * promotion is applied when the subscription was purchased. Possible values
-     * are: 0. One time code 1. Vanity code
-     *
-     * @var int
-     */
-    public $promotionType;
-    /**
-     * The type of purchase of the subscription. This field is only set if this
-     * purchase was not made using the standard in-app billing flow. Possible
-     * values are: 0. Test (i.e. purchased from a license testing account) 1.
-     * Promo (i.e. purchased using a promo code)
-     *
-     * @var int
-     */
-    public $purchaseType;
-    /**
-     * Time at which the subscription was granted, in milliseconds since the
-     * Epoch.
-     *
-     * @var string
-     */
-    public $startTimeMillis;
-    /**
-     * The time at which the subscription was canceled by the user, in
-     * milliseconds since the epoch. Only present if cancelReason is 0.
-     *
-     * @var string
-     */
-    public $userCancellationTimeMillis;
-    /**
-     * The acknowledgement state of the subscription product. Possible values are:
-     * 0. Yet to be acknowledged 1. Acknowledged
-     *
-     * @param int $acknowledgementState
-     */
-    public function setAcknowledgementState($acknowledgementState)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionPurchase extends \Google\Model
     {
+        /**
+         * The acknowledgement state of the subscription product. Possible values are:
+         * 0. Yet to be acknowledged 1. Acknowledged
+         *
+         * @var int
+         */
+        public $acknowledgementState;
+        /**
+         * Whether the subscription will automatically be renewed when it reaches its
+         * current expiry time.
+         *
+         * @var bool
+         */
+        public $autoRenewing;
+        /**
+         * Time at which the subscription will be automatically resumed, in
+         * milliseconds since the Epoch. Only present if the user has requested to
+         * pause the subscription.
+         *
+         * @var string
+         */
+        public $autoResumeTimeMillis;
+        /**
+         * The reason why a subscription was canceled or is not auto-renewing.
+         * Possible values are: 0. User canceled the subscription 1. Subscription was
+         * canceled by the system, for example because of a billing problem 2.
+         * Subscription was replaced with a new subscription 3. Subscription was
+         * canceled by the developer
+         *
+         * @var int
+         */
+        public $cancelReason;
+        protected $cancelSurveyResultType = SubscriptionCancelSurveyResult::class;
+        protected $cancelSurveyResultDataType = '';
+        /**
+         * ISO 3166-1 alpha-2 billing country/region code of the user at the time the
+         * subscription was granted.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * A developer-specified string that contains supplemental information about
+         * an order.
+         *
+         * @var string
+         */
+        public $developerPayload;
+        /**
+         * The email address of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Time at which the subscription will expire, in milliseconds since the
+         * Epoch.
+         *
+         * @var string
+         */
+        public $expiryTimeMillis;
+        /**
+         * User account identifier in the third-party service. Only present if account
+         * linking happened as part of the subscription purchase flow.
+         *
+         * @var string
+         */
+        public $externalAccountId;
+        /**
+         * The family name of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The given name of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @var string
+         */
+        public $givenName;
+        protected $introductoryPriceInfoType = IntroductoryPriceInfo::class;
+        protected $introductoryPriceInfoDataType = '';
+        /**
+         * This kind represents a subscriptionPurchase object in the androidpublisher
+         * service.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The purchase token of the originating purchase if this subscription is one
+         * of the following: 0. Re-signup of a canceled but non-lapsed subscription 1.
+         * Upgrade/downgrade from a previous subscription For example, suppose a user
+         * originally signs up and you receive purchase token X, then the user cancels
+         * and goes through the resignup flow (before their subscription lapses) and
+         * you receive purchase token Y, and finally the user upgrades their
+         * subscription and you receive purchase token Z. If you call this API with
+         * purchase token Z, this field will be set to Y. If you call this API with
+         * purchase token Y, this field will be set to X. If you call this API with
+         * purchase token X, this field will not be set.
+         *
+         * @var string
+         */
+        public $linkedPurchaseToken;
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * account in your app. Present for the following purchases: * If account
+         * linking happened as part of the subscription purchase flow. * It was
+         * specified using https://developer.android.com/reference/com/android/billing
+         * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
+         * purchase was made.
+         *
+         * @var string
+         */
+        public $obfuscatedExternalAccountId;
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * profile in your app. Only present if specified using https://developer.andr
+         * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
+         * etobfuscatedprofileid when the purchase was made.
+         *
+         * @var string
+         */
+        public $obfuscatedExternalProfileId;
+        /**
+         * The order id of the latest recurring order associated with the purchase of
+         * the subscription. If the subscription was canceled because payment was
+         * declined, this will be the order id from the payment declined order.
+         *
+         * @var string
+         */
+        public $orderId;
+        /**
+         * The payment state of the subscription. Possible values are: 0. Payment
+         * pending 1. Payment received 2. Free trial 3. Pending deferred
+         * upgrade/downgrade Not present for canceled, expired subscriptions.
+         *
+         * @var int
+         */
+        public $paymentState;
+        /**
+         * Price of the subscription, For tax exclusive countries, the price doesn't
+         * include tax. For tax inclusive countries, the price includes tax. Price is
+         * expressed in micro-units, where 1,000,000 micro-units represents one unit
+         * of the currency. For example, if the subscription price is €1.99,
+         * price_amount_micros is 1990000.
+         *
+         * @var string
+         */
+        public $priceAmountMicros;
+        protected $priceChangeType = SubscriptionPriceChange::class;
+        protected $priceChangeDataType = '';
+        /**
+         * ISO 4217 currency code for the subscription price. For example, if the
+         * price is specified in British pounds sterling, price_currency_code is
+         * "GBP".
+         *
+         * @var string
+         */
+        public $priceCurrencyCode;
+        /**
+         * The Google profile id of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @var string
+         */
+        public $profileId;
+        /**
+         * The profile name of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @var string
+         */
+        public $profileName;
+        /**
+         * The promotion code applied on this purchase. This field is only set if a
+         * vanity code promotion is applied when the subscription was purchased.
+         *
+         * @var string
+         */
+        public $promotionCode;
+        /**
+         * The type of promotion applied on this purchase. This field is only set if a
+         * promotion is applied when the subscription was purchased. Possible values
+         * are: 0. One time code 1. Vanity code
+         *
+         * @var int
+         */
+        public $promotionType;
+        /**
+         * The type of purchase of the subscription. This field is only set if this
+         * purchase was not made using the standard in-app billing flow. Possible
+         * values are: 0. Test (i.e. purchased from a license testing account) 1.
+         * Promo (i.e. purchased using a promo code)
+         *
+         * @var int
+         */
+        public $purchaseType;
+        /**
+         * Time at which the subscription was granted, in milliseconds since the
+         * Epoch.
+         *
+         * @var string
+         */
+        public $startTimeMillis;
+        /**
+         * The time at which the subscription was canceled by the user, in
+         * milliseconds since the epoch. Only present if cancelReason is 0.
+         *
+         * @var string
+         */
+        public $userCancellationTimeMillis;
+        /**
+         * The acknowledgement state of the subscription product. Possible values are:
+         * 0. Yet to be acknowledged 1. Acknowledged
+         *
+         * @param int $acknowledgementState
+         */
+        public function setAcknowledgementState($acknowledgementState)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcknowledgementState()
+        {
+        }
+        /**
+         * Whether the subscription will automatically be renewed when it reaches its
+         * current expiry time.
+         *
+         * @param bool $autoRenewing
+         */
+        public function setAutoRenewing($autoRenewing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoRenewing()
+        {
+        }
+        /**
+         * Time at which the subscription will be automatically resumed, in
+         * milliseconds since the Epoch. Only present if the user has requested to
+         * pause the subscription.
+         *
+         * @param string $autoResumeTimeMillis
+         */
+        public function setAutoResumeTimeMillis($autoResumeTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoResumeTimeMillis()
+        {
+        }
+        /**
+         * The reason why a subscription was canceled or is not auto-renewing.
+         * Possible values are: 0. User canceled the subscription 1. Subscription was
+         * canceled by the system, for example because of a billing problem 2.
+         * Subscription was replaced with a new subscription 3. Subscription was
+         * canceled by the developer
+         *
+         * @param int $cancelReason
+         */
+        public function setCancelReason($cancelReason)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCancelReason()
+        {
+        }
+        /**
+         * Information provided by the user when they complete the subscription
+         * cancellation flow (cancellation reason survey).
+         *
+         * @param SubscriptionCancelSurveyResult $cancelSurveyResult
+         */
+        public function setCancelSurveyResult(SubscriptionCancelSurveyResult $cancelSurveyResult)
+        {
+        }
+        /**
+         * @return SubscriptionCancelSurveyResult
+         */
+        public function getCancelSurveyResult()
+        {
+        }
+        /**
+         * ISO 3166-1 alpha-2 billing country/region code of the user at the time the
+         * subscription was granted.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * A developer-specified string that contains supplemental information about
+         * an order.
+         *
+         * @param string $developerPayload
+         */
+        public function setDeveloperPayload($developerPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperPayload()
+        {
+        }
+        /**
+         * The email address of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * Time at which the subscription will expire, in milliseconds since the
+         * Epoch.
+         *
+         * @param string $expiryTimeMillis
+         */
+        public function setExpiryTimeMillis($expiryTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTimeMillis()
+        {
+        }
+        /**
+         * User account identifier in the third-party service. Only present if account
+         * linking happened as part of the subscription purchase flow.
+         *
+         * @param string $externalAccountId
+         */
+        public function setExternalAccountId($externalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalAccountId()
+        {
+        }
+        /**
+         * The family name of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The given name of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
+        /**
+         * Introductory price information of the subscription. This is only present
+         * when the subscription was purchased with an introductory price. This field
+         * does not indicate the subscription is currently in introductory price
+         * period.
+         *
+         * @param IntroductoryPriceInfo $introductoryPriceInfo
+         */
+        public function setIntroductoryPriceInfo(IntroductoryPriceInfo $introductoryPriceInfo)
+        {
+        }
+        /**
+         * @return IntroductoryPriceInfo
+         */
+        public function getIntroductoryPriceInfo()
+        {
+        }
+        /**
+         * This kind represents a subscriptionPurchase object in the androidpublisher
+         * service.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The purchase token of the originating purchase if this subscription is one
+         * of the following: 0. Re-signup of a canceled but non-lapsed subscription 1.
+         * Upgrade/downgrade from a previous subscription For example, suppose a user
+         * originally signs up and you receive purchase token X, then the user cancels
+         * and goes through the resignup flow (before their subscription lapses) and
+         * you receive purchase token Y, and finally the user upgrades their
+         * subscription and you receive purchase token Z. If you call this API with
+         * purchase token Z, this field will be set to Y. If you call this API with
+         * purchase token Y, this field will be set to X. If you call this API with
+         * purchase token X, this field will not be set.
+         *
+         * @param string $linkedPurchaseToken
+         */
+        public function setLinkedPurchaseToken($linkedPurchaseToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedPurchaseToken()
+        {
+        }
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * account in your app. Present for the following purchases: * If account
+         * linking happened as part of the subscription purchase flow. * It was
+         * specified using https://developer.android.com/reference/com/android/billing
+         * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
+         * purchase was made.
+         *
+         * @param string $obfuscatedExternalAccountId
+         */
+        public function setObfuscatedExternalAccountId($obfuscatedExternalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedExternalAccountId()
+        {
+        }
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * profile in your app. Only present if specified using https://developer.andr
+         * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
+         * etobfuscatedprofileid when the purchase was made.
+         *
+         * @param string $obfuscatedExternalProfileId
+         */
+        public function setObfuscatedExternalProfileId($obfuscatedExternalProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedExternalProfileId()
+        {
+        }
+        /**
+         * The order id of the latest recurring order associated with the purchase of
+         * the subscription. If the subscription was canceled because payment was
+         * declined, this will be the order id from the payment declined order.
+         *
+         * @param string $orderId
+         */
+        public function setOrderId($orderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderId()
+        {
+        }
+        /**
+         * The payment state of the subscription. Possible values are: 0. Payment
+         * pending 1. Payment received 2. Free trial 3. Pending deferred
+         * upgrade/downgrade Not present for canceled, expired subscriptions.
+         *
+         * @param int $paymentState
+         */
+        public function setPaymentState($paymentState)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPaymentState()
+        {
+        }
+        /**
+         * Price of the subscription, For tax exclusive countries, the price doesn't
+         * include tax. For tax inclusive countries, the price includes tax. Price is
+         * expressed in micro-units, where 1,000,000 micro-units represents one unit
+         * of the currency. For example, if the subscription price is €1.99,
+         * price_amount_micros is 1990000.
+         *
+         * @param string $priceAmountMicros
+         */
+        public function setPriceAmountMicros($priceAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriceAmountMicros()
+        {
+        }
+        /**
+         * The latest price change information available. This is present only when
+         * there is an upcoming price change for the subscription yet to be applied.
+         * Once the subscription renews with the new price or the subscription is
+         * canceled, no price change information will be returned.
+         *
+         * @param SubscriptionPriceChange $priceChange
+         */
+        public function setPriceChange(SubscriptionPriceChange $priceChange)
+        {
+        }
+        /**
+         * @return SubscriptionPriceChange
+         */
+        public function getPriceChange()
+        {
+        }
+        /**
+         * ISO 4217 currency code for the subscription price. For example, if the
+         * price is specified in British pounds sterling, price_currency_code is
+         * "GBP".
+         *
+         * @param string $priceCurrencyCode
+         */
+        public function setPriceCurrencyCode($priceCurrencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriceCurrencyCode()
+        {
+        }
+        /**
+         * The Google profile id of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @param string $profileId
+         */
+        public function setProfileId($profileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileId()
+        {
+        }
+        /**
+         * The profile name of the user when the subscription was purchased. Only
+         * present for purchases made with 'Subscribe with Google'.
+         *
+         * @param string $profileName
+         */
+        public function setProfileName($profileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileName()
+        {
+        }
+        /**
+         * The promotion code applied on this purchase. This field is only set if a
+         * vanity code promotion is applied when the subscription was purchased.
+         *
+         * @param string $promotionCode
+         */
+        public function setPromotionCode($promotionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromotionCode()
+        {
+        }
+        /**
+         * The type of promotion applied on this purchase. This field is only set if a
+         * promotion is applied when the subscription was purchased. Possible values
+         * are: 0. One time code 1. Vanity code
+         *
+         * @param int $promotionType
+         */
+        public function setPromotionType($promotionType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPromotionType()
+        {
+        }
+        /**
+         * The type of purchase of the subscription. This field is only set if this
+         * purchase was not made using the standard in-app billing flow. Possible
+         * values are: 0. Test (i.e. purchased from a license testing account) 1.
+         * Promo (i.e. purchased using a promo code)
+         *
+         * @param int $purchaseType
+         */
+        public function setPurchaseType($purchaseType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPurchaseType()
+        {
+        }
+        /**
+         * Time at which the subscription was granted, in milliseconds since the
+         * Epoch.
+         *
+         * @param string $startTimeMillis
+         */
+        public function setStartTimeMillis($startTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeMillis()
+        {
+        }
+        /**
+         * The time at which the subscription was canceled by the user, in
+         * milliseconds since the epoch. Only present if cancelReason is 0.
+         *
+         * @param string $userCancellationTimeMillis
+         */
+        public function setUserCancellationTimeMillis($userCancellationTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserCancellationTimeMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionPurchase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgementState()
-    {
-    }
-    /**
-     * Whether the subscription will automatically be renewed when it reaches its
-     * current expiry time.
-     *
-     * @param bool $autoRenewing
-     */
-    public function setAutoRenewing($autoRenewing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutoRenewing()
-    {
-    }
-    /**
-     * Time at which the subscription will be automatically resumed, in
-     * milliseconds since the Epoch. Only present if the user has requested to
-     * pause the subscription.
-     *
-     * @param string $autoResumeTimeMillis
-     */
-    public function setAutoResumeTimeMillis($autoResumeTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAutoResumeTimeMillis()
-    {
-    }
-    /**
-     * The reason why a subscription was canceled or is not auto-renewing.
-     * Possible values are: 0. User canceled the subscription 1. Subscription was
-     * canceled by the system, for example because of a billing problem 2.
-     * Subscription was replaced with a new subscription 3. Subscription was
-     * canceled by the developer
-     *
-     * @param int $cancelReason
-     */
-    public function setCancelReason($cancelReason)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCancelReason()
-    {
-    }
-    /**
-     * Information provided by the user when they complete the subscription
-     * cancellation flow (cancellation reason survey).
-     *
-     * @param SubscriptionCancelSurveyResult $cancelSurveyResult
-     */
-    public function setCancelSurveyResult(SubscriptionCancelSurveyResult $cancelSurveyResult)
-    {
-    }
-    /**
-     * @return SubscriptionCancelSurveyResult
-     */
-    public function getCancelSurveyResult()
-    {
-    }
-    /**
-     * ISO 3166-1 alpha-2 billing country/region code of the user at the time the
-     * subscription was granted.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * A developer-specified string that contains supplemental information about
-     * an order.
-     *
-     * @param string $developerPayload
-     */
-    public function setDeveloperPayload($developerPayload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeveloperPayload()
-    {
-    }
-    /**
-     * The email address of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * Time at which the subscription will expire, in milliseconds since the
-     * Epoch.
-     *
-     * @param string $expiryTimeMillis
-     */
-    public function setExpiryTimeMillis($expiryTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiryTimeMillis()
-    {
-    }
-    /**
-     * User account identifier in the third-party service. Only present if account
-     * linking happened as part of the subscription purchase flow.
-     *
-     * @param string $externalAccountId
-     */
-    public function setExternalAccountId($externalAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalAccountId()
-    {
-    }
-    /**
-     * The family name of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The given name of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
-    {
-    }
-    /**
-     * Introductory price information of the subscription. This is only present
-     * when the subscription was purchased with an introductory price. This field
-     * does not indicate the subscription is currently in introductory price
-     * period.
-     *
-     * @param IntroductoryPriceInfo $introductoryPriceInfo
-     */
-    public function setIntroductoryPriceInfo(IntroductoryPriceInfo $introductoryPriceInfo)
-    {
-    }
-    /**
-     * @return IntroductoryPriceInfo
-     */
-    public function getIntroductoryPriceInfo()
-    {
-    }
-    /**
-     * This kind represents a subscriptionPurchase object in the androidpublisher
-     * service.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The purchase token of the originating purchase if this subscription is one
-     * of the following: 0. Re-signup of a canceled but non-lapsed subscription 1.
-     * Upgrade/downgrade from a previous subscription For example, suppose a user
-     * originally signs up and you receive purchase token X, then the user cancels
-     * and goes through the resignup flow (before their subscription lapses) and
-     * you receive purchase token Y, and finally the user upgrades their
-     * subscription and you receive purchase token Z. If you call this API with
-     * purchase token Z, this field will be set to Y. If you call this API with
-     * purchase token Y, this field will be set to X. If you call this API with
-     * purchase token X, this field will not be set.
-     *
-     * @param string $linkedPurchaseToken
-     */
-    public function setLinkedPurchaseToken($linkedPurchaseToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkedPurchaseToken()
-    {
-    }
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * account in your app. Present for the following purchases: * If account
-     * linking happened as part of the subscription purchase flow. * It was
-     * specified using https://developer.android.com/reference/com/android/billing
-     * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
-     * purchase was made.
-     *
-     * @param string $obfuscatedExternalAccountId
-     */
-    public function setObfuscatedExternalAccountId($obfuscatedExternalAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedExternalAccountId()
-    {
-    }
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * profile in your app. Only present if specified using https://developer.andr
-     * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
-     * etobfuscatedprofileid when the purchase was made.
-     *
-     * @param string $obfuscatedExternalProfileId
-     */
-    public function setObfuscatedExternalProfileId($obfuscatedExternalProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedExternalProfileId()
-    {
-    }
-    /**
-     * The order id of the latest recurring order associated with the purchase of
-     * the subscription. If the subscription was canceled because payment was
-     * declined, this will be the order id from the payment declined order.
-     *
-     * @param string $orderId
-     */
-    public function setOrderId($orderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderId()
-    {
-    }
-    /**
-     * The payment state of the subscription. Possible values are: 0. Payment
-     * pending 1. Payment received 2. Free trial 3. Pending deferred
-     * upgrade/downgrade Not present for canceled, expired subscriptions.
-     *
-     * @param int $paymentState
-     */
-    public function setPaymentState($paymentState)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPaymentState()
-    {
-    }
-    /**
-     * Price of the subscription, For tax exclusive countries, the price doesn't
-     * include tax. For tax inclusive countries, the price includes tax. Price is
-     * expressed in micro-units, where 1,000,000 micro-units represents one unit
-     * of the currency. For example, if the subscription price is €1.99,
-     * price_amount_micros is 1990000.
-     *
-     * @param string $priceAmountMicros
-     */
-    public function setPriceAmountMicros($priceAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriceAmountMicros()
-    {
-    }
-    /**
-     * The latest price change information available. This is present only when
-     * there is an upcoming price change for the subscription yet to be applied.
-     * Once the subscription renews with the new price or the subscription is
-     * canceled, no price change information will be returned.
-     *
-     * @param SubscriptionPriceChange $priceChange
-     */
-    public function setPriceChange(SubscriptionPriceChange $priceChange)
-    {
-    }
-    /**
-     * @return SubscriptionPriceChange
-     */
-    public function getPriceChange()
-    {
-    }
-    /**
-     * ISO 4217 currency code for the subscription price. For example, if the
-     * price is specified in British pounds sterling, price_currency_code is
-     * "GBP".
-     *
-     * @param string $priceCurrencyCode
-     */
-    public function setPriceCurrencyCode($priceCurrencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriceCurrencyCode()
-    {
-    }
-    /**
-     * The Google profile id of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @param string $profileId
-     */
-    public function setProfileId($profileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileId()
-    {
-    }
-    /**
-     * The profile name of the user when the subscription was purchased. Only
-     * present for purchases made with 'Subscribe with Google'.
-     *
-     * @param string $profileName
-     */
-    public function setProfileName($profileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileName()
-    {
-    }
-    /**
-     * The promotion code applied on this purchase. This field is only set if a
-     * vanity code promotion is applied when the subscription was purchased.
-     *
-     * @param string $promotionCode
-     */
-    public function setPromotionCode($promotionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromotionCode()
-    {
-    }
-    /**
-     * The type of promotion applied on this purchase. This field is only set if a
-     * promotion is applied when the subscription was purchased. Possible values
-     * are: 0. One time code 1. Vanity code
-     *
-     * @param int $promotionType
-     */
-    public function setPromotionType($promotionType)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPromotionType()
-    {
-    }
-    /**
-     * The type of purchase of the subscription. This field is only set if this
-     * purchase was not made using the standard in-app billing flow. Possible
-     * values are: 0. Test (i.e. purchased from a license testing account) 1.
-     * Promo (i.e. purchased using a promo code)
-     *
-     * @param int $purchaseType
-     */
-    public function setPurchaseType($purchaseType)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPurchaseType()
-    {
-    }
-    /**
-     * Time at which the subscription was granted, in milliseconds since the
-     * Epoch.
-     *
-     * @param string $startTimeMillis
-     */
-    public function setStartTimeMillis($startTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeMillis()
-    {
-    }
-    /**
-     * The time at which the subscription was canceled by the user, in
-     * milliseconds since the epoch. Only present if cancelReason is 0.
-     *
-     * @param string $userCancellationTimeMillis
-     */
-    public function setUserCancellationTimeMillis($userCancellationTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserCancellationTimeMillis()
+    class Google_Service_AndroidPublisher_SubscriptionPurchase extends \Google\Service\AndroidPublisher\SubscriptionPurchase
     {
     }
 }

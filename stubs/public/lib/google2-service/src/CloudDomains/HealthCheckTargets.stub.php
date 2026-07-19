@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class HealthCheckTargets extends \Google\Collection
-{
-    protected $collection_key = 'internalLoadBalancer';
-    /**
-     * The Internet IP addresses to be health checked. The format matches the
-     * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
-     * RFC 1034 (section 3.6.1)
-     *
-     * @var string[]
-     */
-    public $externalEndpoints;
-    protected $internalLoadBalancerType = LoadBalancerTarget::class;
-    protected $internalLoadBalancerDataType = 'array';
-    /**
-     * The Internet IP addresses to be health checked. The format matches the
-     * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
-     * RFC 1034 (section 3.6.1)
-     *
-     * @param string[] $externalEndpoints
-     */
-    public function setExternalEndpoints($externalEndpoints)
+namespace Google\Service\CloudDomains {
+    class HealthCheckTargets extends \Google\Collection
     {
+        protected $collection_key = 'internalLoadBalancer';
+        /**
+         * The Internet IP addresses to be health checked. The format matches the
+         * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
+         * RFC 1034 (section 3.6.1)
+         *
+         * @var string[]
+         */
+        public $externalEndpoints;
+        protected $internalLoadBalancerType = LoadBalancerTarget::class;
+        protected $internalLoadBalancerDataType = 'array';
+        /**
+         * The Internet IP addresses to be health checked. The format matches the
+         * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
+         * RFC 1034 (section 3.6.1)
+         *
+         * @param string[] $externalEndpoints
+         */
+        public function setExternalEndpoints($externalEndpoints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExternalEndpoints()
+        {
+        }
+        /**
+         * Configuration for internal load balancers to be health checked.
+         *
+         * @param LoadBalancerTarget[] $internalLoadBalancer
+         */
+        public function setInternalLoadBalancer($internalLoadBalancer)
+        {
+        }
+        /**
+         * @return LoadBalancerTarget[]
+         */
+        public function getInternalLoadBalancer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDomains\HealthCheckTargets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalEndpoints()
-    {
-    }
-    /**
-     * Configuration for internal load balancers to be health checked.
-     *
-     * @param LoadBalancerTarget[] $internalLoadBalancer
-     */
-    public function setInternalLoadBalancer($internalLoadBalancer)
-    {
-    }
-    /**
-     * @return LoadBalancerTarget[]
-     */
-    public function getInternalLoadBalancer()
+    class Google_Service_CloudDomains_HealthCheckTargets extends \Google\Service\CloudDomains\HealthCheckTargets
     {
     }
 }

@@ -21,104 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar\Resource;
-
-/**
- * The "calendars" collection of methods.
- * Typical usage is:
- *  <code>
- *   $calendarService = new Google\Service\Calendar(...);
- *   $calendars = $calendarService->calendars;
- *  </code>
- */
-class Calendars extends \Google\Service\Resource
-{
+namespace Google\Service\Calendar\Resource {
+    use Google\Service\Calendar\Calendar;
     /**
-     * Clears a primary calendar. This operation deletes all events associated with
-     * the primary calendar of an account. (calendars.clear)
-     *
-     * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
-     * the calendarList.list method. If you want to access the primary calendar of
-     * the currently logged in user, use the "primary" keyword.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "calendars" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $calendarService = new Google\Service\Calendar(...);
+     *   $calendars = $calendarService->calendars;
+     *  </code>
      */
-    public function clear($calendarId, $optParams = [])
+    class Calendars extends \Google\Service\Resource
     {
+        /**
+         * Clears a primary calendar. This operation deletes all events associated with
+         * the primary calendar of an account. (calendars.clear)
+         *
+         * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
+         * the calendarList.list method. If you want to access the primary calendar of
+         * the currently logged in user, use the "primary" keyword.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function clear($calendarId, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a secondary calendar. Use calendars.clear for clearing all events on
+         * primary calendars. (calendars.delete)
+         *
+         * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
+         * the calendarList.list method. If you want to access the primary calendar of
+         * the currently logged in user, use the "primary" keyword.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($calendarId, $optParams = [])
+        {
+        }
+        /**
+         * Returns metadata for a calendar. (calendars.get)
+         *
+         * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
+         * the calendarList.list method. If you want to access the primary calendar of
+         * the currently logged in user, use the "primary" keyword.
+         * @param array $optParams Optional parameters.
+         * @return Calendar
+         * @throws \Google\Service\Exception
+         */
+        public function get($calendarId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a secondary calendar. The authenticated user for the request is made
+         * the data owner of the new calendar.
+         *
+         * Note: We recommend to authenticate as the intended data owner of the
+         * calendar. You can use domain-wide delegation of authority to allow
+         * applications to act on behalf of a specific user. Don't use a service account
+         * for authentication. If you use a service account for authentication, the
+         * service account is the data owner, which can lead to unexpected behavior. For
+         * example, if a service account is the data owner, data ownership cannot be
+         * transferred. (calendars.insert)
+         *
+         * @param Calendar $postBody
+         * @param array $optParams Optional parameters.
+         * @return Calendar
+         * @throws \Google\Service\Exception
+         */
+        public function insert(Calendar $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates metadata for a calendar. This method supports patch semantics.
+         * (calendars.patch)
+         *
+         * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
+         * the calendarList.list method. If you want to access the primary calendar of
+         * the currently logged in user, use the "primary" keyword.
+         * @param Calendar $postBody
+         * @param array $optParams Optional parameters.
+         * @return Calendar
+         * @throws \Google\Service\Exception
+         */
+        public function patch($calendarId, Calendar $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates metadata for a calendar. (calendars.update)
+         *
+         * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
+         * the calendarList.list method. If you want to access the primary calendar of
+         * the currently logged in user, use the "primary" keyword.
+         * @param Calendar $postBody
+         * @param array $optParams Optional parameters.
+         * @return Calendar
+         * @throws \Google\Service\Exception
+         */
+        public function update($calendarId, Calendar $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a secondary calendar. Use calendars.clear for clearing all events on
-     * primary calendars. (calendars.delete)
-     *
-     * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
-     * the calendarList.list method. If you want to access the primary calendar of
-     * the currently logged in user, use the "primary" keyword.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Calendar\Resource\Calendars registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($calendarId, $optParams = [])
-    {
-    }
-    /**
-     * Returns metadata for a calendar. (calendars.get)
-     *
-     * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
-     * the calendarList.list method. If you want to access the primary calendar of
-     * the currently logged in user, use the "primary" keyword.
-     * @param array $optParams Optional parameters.
-     * @return Calendar
-     * @throws \Google\Service\Exception
-     */
-    public function get($calendarId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a secondary calendar. The authenticated user for the request is made
-     * the data owner of the new calendar.
-     *
-     * Note: We recommend to authenticate as the intended data owner of the
-     * calendar. You can use domain-wide delegation of authority to allow
-     * applications to act on behalf of a specific user. Don't use a service account
-     * for authentication. If you use a service account for authentication, the
-     * service account is the data owner, which can lead to unexpected behavior. For
-     * example, if a service account is the data owner, data ownership cannot be
-     * transferred. (calendars.insert)
-     *
-     * @param Calendar $postBody
-     * @param array $optParams Optional parameters.
-     * @return Calendar
-     * @throws \Google\Service\Exception
-     */
-    public function insert(Calendar $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates metadata for a calendar. This method supports patch semantics.
-     * (calendars.patch)
-     *
-     * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
-     * the calendarList.list method. If you want to access the primary calendar of
-     * the currently logged in user, use the "primary" keyword.
-     * @param Calendar $postBody
-     * @param array $optParams Optional parameters.
-     * @return Calendar
-     * @throws \Google\Service\Exception
-     */
-    public function patch($calendarId, Calendar $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates metadata for a calendar. (calendars.update)
-     *
-     * @param string $calendarId Calendar identifier. To retrieve calendar IDs call
-     * the calendarList.list method. If you want to access the primary calendar of
-     * the currently logged in user, use the "primary" keyword.
-     * @param Calendar $postBody
-     * @param array $optParams Optional parameters.
-     * @return Calendar
-     * @throws \Google\Service\Exception
-     */
-    public function update($calendarId, Calendar $postBody, $optParams = [])
+    class Google_Service_Calendar_Resource_Calendars extends \Google\Service\Calendar\Resource\Calendars
     {
     }
 }

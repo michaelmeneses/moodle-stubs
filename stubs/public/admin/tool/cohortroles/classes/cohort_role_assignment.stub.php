@@ -29,6 +29,8 @@
  */
 namespace tool_cohortroles;
 
+use lang_string;
+use core_competency\persistent;
 /**
  * Class for loading/storing cohort_role_assignments from the DB.
  *

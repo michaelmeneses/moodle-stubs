@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityFeatureSpec extends \Google\Model
-{
-    protected $loggingConfigType = FleetObservabilityLoggingConfig::class;
-    protected $loggingConfigDataType = '';
-    /**
-     * @param FleetObservabilityLoggingConfig
-     */
-    public function setLoggingConfig(FleetObservabilityLoggingConfig $loggingConfig)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityFeatureSpec extends \Google\Model
     {
+        protected $loggingConfigType = FleetObservabilityLoggingConfig::class;
+        protected $loggingConfigDataType = '';
+        /**
+         * @param FleetObservabilityLoggingConfig
+         */
+        public function setLoggingConfig(FleetObservabilityLoggingConfig $loggingConfig)
+        {
+        }
+        /**
+         * @return FleetObservabilityLoggingConfig
+         */
+        public function getLoggingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FleetObservabilityLoggingConfig
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityFeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoggingConfig()
+    class Google_Service_GKEHub_FleetObservabilityFeatureSpec extends \Google\Service\GKEHub\FleetObservabilityFeatureSpec
     {
     }
 }

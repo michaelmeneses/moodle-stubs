@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class FindDevicesByDeviceIdentifierRequest extends \Google\Model
-{
-    protected $deviceIdentifierType = DeviceIdentifier::class;
-    protected $deviceIdentifierDataType = '';
-    /**
-     * Required. The maximum number of devices to show in a page of results. Must
-     * be between 1 and 100 inclusive.
-     *
-     * @var string
-     */
-    public $limit;
-    /**
-     * A token specifying which result page to return.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. Required. The device identifier to search for. If serial number
-     * is provided then case insensitive serial number matches are allowed.
-     *
-     * @param DeviceIdentifier $deviceIdentifier
-     */
-    public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+namespace Google\Service\AndroidProvisioningPartner {
+    class FindDevicesByDeviceIdentifierRequest extends \Google\Model
     {
+        protected $deviceIdentifierType = DeviceIdentifier::class;
+        protected $deviceIdentifierDataType = '';
+        /**
+         * Required. The maximum number of devices to show in a page of results. Must
+         * be between 1 and 100 inclusive.
+         *
+         * @var string
+         */
+        public $limit;
+        /**
+         * A token specifying which result page to return.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. Required. The device identifier to search for. If serial number
+         * is provided then case insensitive serial number matches are allowed.
+         *
+         * @param DeviceIdentifier $deviceIdentifier
+         */
+        public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+        {
+        }
+        /**
+         * @return DeviceIdentifier
+         */
+        public function getDeviceIdentifier()
+        {
+        }
+        /**
+         * Required. The maximum number of devices to show in a page of results. Must
+         * be between 1 and 100 inclusive.
+         *
+         * @param string $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * A token specifying which result page to return.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceIdentifier
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\FindDevicesByDeviceIdentifierRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceIdentifier()
-    {
-    }
-    /**
-     * Required. The maximum number of devices to show in a page of results. Must
-     * be between 1 and 100 inclusive.
-     *
-     * @param string $limit
-     */
-    public function setLimit($limit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLimit()
-    {
-    }
-    /**
-     * A token specifying which result page to return.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_AndroidProvisioningPartner_FindDevicesByDeviceIdentifierRequest extends \Google\Service\AndroidProvisioningPartner\FindDevicesByDeviceIdentifierRequest
     {
     }
 }

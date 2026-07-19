@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetPoolsRemoveHealthCheckRequest extends \Google\Collection
-{
-    protected $collection_key = 'healthChecks';
-    protected $healthChecksType = HealthCheckReference::class;
-    protected $healthChecksDataType = 'array';
-    /**
-     * Health check URL to be removed. This can be a full or valid partial URL.
-     * For example, the following are valid URLs:        - https://www.googleapis.
-     * com/compute/beta/projects/project/global/httpHealthChecks/health-check
-     * - projects/project/global/httpHealthChecks/health-check    -
-     * global/httpHealthChecks/health-check
-     *
-     * @param HealthCheckReference[] $healthChecks
-     */
-    public function setHealthChecks($healthChecks)
+namespace Google\Service\Compute {
+    class TargetPoolsRemoveHealthCheckRequest extends \Google\Collection
     {
+        protected $collection_key = 'healthChecks';
+        protected $healthChecksType = HealthCheckReference::class;
+        protected $healthChecksDataType = 'array';
+        /**
+         * Health check URL to be removed. This can be a full or valid partial URL.
+         * For example, the following are valid URLs:        - https://www.googleapis.
+         * com/compute/beta/projects/project/global/httpHealthChecks/health-check
+         * - projects/project/global/httpHealthChecks/health-check    -
+         * global/httpHealthChecks/health-check
+         *
+         * @param HealthCheckReference[] $healthChecks
+         */
+        public function setHealthChecks($healthChecks)
+        {
+        }
+        /**
+         * @return HealthCheckReference[]
+         */
+        public function getHealthChecks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HealthCheckReference[]
+     * Runtime class alias of \Google\Service\Compute\TargetPoolsRemoveHealthCheckRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthChecks()
+    class Google_Service_Compute_TargetPoolsRemoveHealthCheckRequest extends \Google\Service\Compute\TargetPoolsRemoveHealthCheckRequest
     {
     }
 }

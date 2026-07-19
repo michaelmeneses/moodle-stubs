@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class LabInfo extends \Google\Model
-{
-    /**
-     * Lab name where the device is hosted. If empty, the device is hosted in a
-     * Google owned lab.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The Unicode country/region code (CLDR) of the lab where the device is
-     * hosted. E.g. "US" for United States, "CH" for Switzerland.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Lab name where the device is hosted. If empty, the device is hosted in a
-     * Google owned lab.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Testing {
+    class LabInfo extends \Google\Model
     {
+        /**
+         * Lab name where the device is hosted. If empty, the device is hosted in a
+         * Google owned lab.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The Unicode country/region code (CLDR) of the lab where the device is
+         * hosted. E.g. "US" for United States, "CH" for Switzerland.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Lab name where the device is hosted. If empty, the device is hosted in a
+         * Google owned lab.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The Unicode country/region code (CLDR) of the lab where the device is
+         * hosted. E.g. "US" for United States, "CH" for Switzerland.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\LabInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The Unicode country/region code (CLDR) of the lab where the device is
-     * hosted. E.g. "US" for United States, "CH" for Switzerland.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_Testing_LabInfo extends \Google\Service\Testing\LabInfo
     {
     }
 }

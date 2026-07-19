@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GuestRuntimeDetails extends \Google\Model
-{
-    /**
-     * Domain, e.g. c.stratozone-development.internal.
-     *
-     * @var string
-     */
-    public $domain;
-    protected $installedAppsType = GuestInstalledApplicationList::class;
-    protected $installedAppsDataType = '';
-    /**
-     * Last time the OS was booted.
-     *
-     * @var string
-     */
-    public $lastBootTime;
-    /**
-     * Machine name.
-     *
-     * @var string
-     */
-    public $machineName;
-    protected $networkType = RuntimeNetworkInfo::class;
-    protected $networkDataType = '';
-    protected $openFileListType = OpenFileList::class;
-    protected $openFileListDataType = '';
-    protected $processesType = RunningProcessList::class;
-    protected $processesDataType = '';
-    protected $servicesType = RunningServiceList::class;
-    protected $servicesDataType = '';
-    /**
-     * Domain, e.g. c.stratozone-development.internal.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\MigrationCenterAPI {
+    class GuestRuntimeDetails extends \Google\Model
     {
+        /**
+         * Domain, e.g. c.stratozone-development.internal.
+         *
+         * @var string
+         */
+        public $domain;
+        protected $installedAppsType = GuestInstalledApplicationList::class;
+        protected $installedAppsDataType = '';
+        /**
+         * Last time the OS was booted.
+         *
+         * @var string
+         */
+        public $lastBootTime;
+        /**
+         * Machine name.
+         *
+         * @var string
+         */
+        public $machineName;
+        protected $networkType = RuntimeNetworkInfo::class;
+        protected $networkDataType = '';
+        protected $openFileListType = OpenFileList::class;
+        protected $openFileListDataType = '';
+        protected $processesType = RunningProcessList::class;
+        protected $processesDataType = '';
+        protected $servicesType = RunningServiceList::class;
+        protected $servicesDataType = '';
+        /**
+         * Domain, e.g. c.stratozone-development.internal.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Installed applications information.
+         *
+         * @param GuestInstalledApplicationList $installedApps
+         */
+        public function setInstalledApps(GuestInstalledApplicationList $installedApps)
+        {
+        }
+        /**
+         * @return GuestInstalledApplicationList
+         */
+        public function getInstalledApps()
+        {
+        }
+        /**
+         * Last time the OS was booted.
+         *
+         * @param string $lastBootTime
+         */
+        public function setLastBootTime($lastBootTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastBootTime()
+        {
+        }
+        /**
+         * Machine name.
+         *
+         * @param string $machineName
+         */
+        public function setMachineName($machineName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineName()
+        {
+        }
+        /**
+         * Runtime network information (connections, ports).
+         *
+         * @param RuntimeNetworkInfo $network
+         */
+        public function setNetwork(RuntimeNetworkInfo $network)
+        {
+        }
+        /**
+         * @return RuntimeNetworkInfo
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Open files information.
+         *
+         * @param OpenFileList $openFileList
+         */
+        public function setOpenFileList(OpenFileList $openFileList)
+        {
+        }
+        /**
+         * @return OpenFileList
+         */
+        public function getOpenFileList()
+        {
+        }
+        /**
+         * Running processes.
+         *
+         * @param RunningProcessList $processes
+         */
+        public function setProcesses(RunningProcessList $processes)
+        {
+        }
+        /**
+         * @return RunningProcessList
+         */
+        public function getProcesses()
+        {
+        }
+        /**
+         * Running background services.
+         *
+         * @param RunningServiceList $services
+         */
+        public function setServices(RunningServiceList $services)
+        {
+        }
+        /**
+         * @return RunningServiceList
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GuestRuntimeDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Installed applications information.
-     *
-     * @param GuestInstalledApplicationList $installedApps
-     */
-    public function setInstalledApps(GuestInstalledApplicationList $installedApps)
-    {
-    }
-    /**
-     * @return GuestInstalledApplicationList
-     */
-    public function getInstalledApps()
-    {
-    }
-    /**
-     * Last time the OS was booted.
-     *
-     * @param string $lastBootTime
-     */
-    public function setLastBootTime($lastBootTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastBootTime()
-    {
-    }
-    /**
-     * Machine name.
-     *
-     * @param string $machineName
-     */
-    public function setMachineName($machineName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineName()
-    {
-    }
-    /**
-     * Runtime network information (connections, ports).
-     *
-     * @param RuntimeNetworkInfo $network
-     */
-    public function setNetwork(RuntimeNetworkInfo $network)
-    {
-    }
-    /**
-     * @return RuntimeNetworkInfo
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Open files information.
-     *
-     * @param OpenFileList $openFileList
-     */
-    public function setOpenFileList(OpenFileList $openFileList)
-    {
-    }
-    /**
-     * @return OpenFileList
-     */
-    public function getOpenFileList()
-    {
-    }
-    /**
-     * Running processes.
-     *
-     * @param RunningProcessList $processes
-     */
-    public function setProcesses(RunningProcessList $processes)
-    {
-    }
-    /**
-     * @return RunningProcessList
-     */
-    public function getProcesses()
-    {
-    }
-    /**
-     * Running background services.
-     *
-     * @param RunningServiceList $services
-     */
-    public function setServices(RunningServiceList $services)
-    {
-    }
-    /**
-     * @return RunningServiceList
-     */
-    public function getServices()
+    class Google_Service_MigrationCenterAPI_GuestRuntimeDetails extends \Google\Service\MigrationCenterAPI\GuestRuntimeDetails
     {
     }
 }

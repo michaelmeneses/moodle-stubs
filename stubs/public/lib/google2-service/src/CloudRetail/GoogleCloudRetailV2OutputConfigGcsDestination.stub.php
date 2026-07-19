@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2OutputConfigGcsDestination extends \Google\Model
-{
-    /**
-     * Required. The output uri prefix for saving output data to json files. Some
-     * mapping examples are as follows: output_uri_prefix sample output(assuming
-     * the object is foo.json) ========================
-     * ============================================= gs://bucket/
-     * gs://bucket/foo.json gs://bucket/folder/ gs://bucket/folder/foo.json
-     * gs://bucket/folder/item_ gs://bucket/folder/item_foo.json
-     *
-     * @var string
-     */
-    public $outputUriPrefix;
-    /**
-     * Required. The output uri prefix for saving output data to json files. Some
-     * mapping examples are as follows: output_uri_prefix sample output(assuming
-     * the object is foo.json) ========================
-     * ============================================= gs://bucket/
-     * gs://bucket/foo.json gs://bucket/folder/ gs://bucket/folder/foo.json
-     * gs://bucket/folder/item_ gs://bucket/folder/item_foo.json
-     *
-     * @param string $outputUriPrefix
-     */
-    public function setOutputUriPrefix($outputUriPrefix)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2OutputConfigGcsDestination extends \Google\Model
     {
+        /**
+         * Required. The output uri prefix for saving output data to json files. Some
+         * mapping examples are as follows: output_uri_prefix sample output(assuming
+         * the object is foo.json) ========================
+         * ============================================= gs://bucket/
+         * gs://bucket/foo.json gs://bucket/folder/ gs://bucket/folder/foo.json
+         * gs://bucket/folder/item_ gs://bucket/folder/item_foo.json
+         *
+         * @var string
+         */
+        public $outputUriPrefix;
+        /**
+         * Required. The output uri prefix for saving output data to json files. Some
+         * mapping examples are as follows: output_uri_prefix sample output(assuming
+         * the object is foo.json) ========================
+         * ============================================= gs://bucket/
+         * gs://bucket/foo.json gs://bucket/folder/ gs://bucket/folder/foo.json
+         * gs://bucket/folder/item_ gs://bucket/folder/item_foo.json
+         *
+         * @param string $outputUriPrefix
+         */
+        public function setOutputUriPrefix($outputUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2OutputConfigGcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUriPrefix()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2OutputConfigGcsDestination extends \Google\Service\CloudRetail\GoogleCloudRetailV2OutputConfigGcsDestination
     {
     }
 }

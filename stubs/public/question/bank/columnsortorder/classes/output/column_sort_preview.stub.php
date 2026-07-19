@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder\output;
 
+use moodle_url;
+use templatable;
+use renderable;
+use qbank_columnsortorder\column_manager;
 /**
  * Renderable for the question bank preview.
  *

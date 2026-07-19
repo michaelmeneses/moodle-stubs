@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Dataset extends \Google\Model
-{
-    protected $encryptionSpecType = EncryptionSpec::class;
-    protected $encryptionSpecDataType = '';
-    /**
-     * Identifier. Resource name of the dataset, of the form
-     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Whether the dataset satisfies zone isolation.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Whether the dataset satisfies zone separation.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Optional. The default timezone used by this dataset. Must be a either a
-     * valid IANA time zone name such as "America/New_York" or empty, which
-     * defaults to UTC. This is used for parsing times in resources, such as HL7
-     * messages, where no explicit timezone is specified.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Optional. Customer-managed encryption key spec for a Dataset. If set, this
-     * Dataset and all of its sub-resources will be secured by this key. If empty,
-     * the Dataset is secured by the default Google encryption key.
-     *
-     * @param EncryptionSpec $encryptionSpec
-     */
-    public function setEncryptionSpec(EncryptionSpec $encryptionSpec)
+namespace Google\Service\CloudHealthcare {
+    class Dataset extends \Google\Model
     {
+        protected $encryptionSpecType = EncryptionSpec::class;
+        protected $encryptionSpecDataType = '';
+        /**
+         * Identifier. Resource name of the dataset, of the form
+         * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Whether the dataset satisfies zone isolation.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Whether the dataset satisfies zone separation.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Optional. The default timezone used by this dataset. Must be a either a
+         * valid IANA time zone name such as "America/New_York" or empty, which
+         * defaults to UTC. This is used for parsing times in resources, such as HL7
+         * messages, where no explicit timezone is specified.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Optional. Customer-managed encryption key spec for a Dataset. If set, this
+         * Dataset and all of its sub-resources will be secured by this key. If empty,
+         * the Dataset is secured by the default Google encryption key.
+         *
+         * @param EncryptionSpec $encryptionSpec
+         */
+        public function setEncryptionSpec(EncryptionSpec $encryptionSpec)
+        {
+        }
+        /**
+         * @return EncryptionSpec
+         */
+        public function getEncryptionSpec()
+        {
+        }
+        /**
+         * Identifier. Resource name of the dataset, of the form
+         * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Whether the dataset satisfies zone isolation.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Whether the dataset satisfies zone separation.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Optional. The default timezone used by this dataset. Must be a either a
+         * valid IANA time zone name such as "America/New_York" or empty, which
+         * defaults to UTC. This is used for parsing times in resources, such as HL7
+         * messages, where no explicit timezone is specified.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EncryptionSpec
+     * Runtime class alias of \Google\Service\CloudHealthcare\Dataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionSpec()
-    {
-    }
-    /**
-     * Identifier. Resource name of the dataset, of the form
-     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Whether the dataset satisfies zone isolation.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Whether the dataset satisfies zone separation.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Optional. The default timezone used by this dataset. Must be a either a
-     * valid IANA time zone name such as "America/New_York" or empty, which
-     * defaults to UTC. This is used for parsing times in resources, such as HL7
-     * messages, where no explicit timezone is specified.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_CloudHealthcare_Dataset extends \Google\Service\CloudHealthcare\Dataset
     {
     }
 }

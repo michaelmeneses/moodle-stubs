@@ -21,339 +21,348 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Annotation extends \Google\Collection
-{
-    protected $collection_key = 'pageIds';
-    /**
-     * Anchor text after excerpt. For requests, if the user bookmarked a screen
-     * that has no flowing text on it, then this field should be empty.
-     *
-     * @var string
-     */
-    public $afterSelectedText;
-    /**
-     * Anchor text before excerpt. For requests, if the user bookmarked a screen
-     * that has no flowing text on it, then this field should be empty.
-     *
-     * @var string
-     */
-    public $beforeSelectedText;
-    protected $clientVersionRangesType = AnnotationClientVersionRanges::class;
-    protected $clientVersionRangesDataType = '';
-    /**
-     * Timestamp for the created time of this annotation.
-     *
-     * @var string
-     */
-    public $created;
-    protected $currentVersionRangesType = AnnotationCurrentVersionRanges::class;
-    protected $currentVersionRangesDataType = '';
-    /**
-     * User-created data for this annotation.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Indicates that this annotation is deleted.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * The highlight style for this annotation.
-     *
-     * @var string
-     */
-    public $highlightStyle;
-    /**
-     * Id of this annotation, in the form of a GUID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The layer this annotation is for.
-     *
-     * @var string
-     */
-    public $layerId;
-    protected $layerSummaryType = AnnotationLayerSummary::class;
-    protected $layerSummaryDataType = '';
-    /**
-     * Pages that this annotation spans.
-     *
-     * @var string[]
-     */
-    public $pageIds;
-    /**
-     * Excerpt from the volume.
-     *
-     * @var string
-     */
-    public $selectedText;
-    /**
-     * URL to this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Timestamp for the last time this annotation was modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The volume that this annotation belongs to.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * Anchor text after excerpt. For requests, if the user bookmarked a screen
-     * that has no flowing text on it, then this field should be empty.
-     *
-     * @param string $afterSelectedText
-     */
-    public function setAfterSelectedText($afterSelectedText)
+namespace Google\Service\Books {
+    class Annotation extends \Google\Collection
     {
+        protected $collection_key = 'pageIds';
+        /**
+         * Anchor text after excerpt. For requests, if the user bookmarked a screen
+         * that has no flowing text on it, then this field should be empty.
+         *
+         * @var string
+         */
+        public $afterSelectedText;
+        /**
+         * Anchor text before excerpt. For requests, if the user bookmarked a screen
+         * that has no flowing text on it, then this field should be empty.
+         *
+         * @var string
+         */
+        public $beforeSelectedText;
+        protected $clientVersionRangesType = AnnotationClientVersionRanges::class;
+        protected $clientVersionRangesDataType = '';
+        /**
+         * Timestamp for the created time of this annotation.
+         *
+         * @var string
+         */
+        public $created;
+        protected $currentVersionRangesType = AnnotationCurrentVersionRanges::class;
+        protected $currentVersionRangesDataType = '';
+        /**
+         * User-created data for this annotation.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Indicates that this annotation is deleted.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * The highlight style for this annotation.
+         *
+         * @var string
+         */
+        public $highlightStyle;
+        /**
+         * Id of this annotation, in the form of a GUID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The layer this annotation is for.
+         *
+         * @var string
+         */
+        public $layerId;
+        protected $layerSummaryType = AnnotationLayerSummary::class;
+        protected $layerSummaryDataType = '';
+        /**
+         * Pages that this annotation spans.
+         *
+         * @var string[]
+         */
+        public $pageIds;
+        /**
+         * Excerpt from the volume.
+         *
+         * @var string
+         */
+        public $selectedText;
+        /**
+         * URL to this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Timestamp for the last time this annotation was modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The volume that this annotation belongs to.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * Anchor text after excerpt. For requests, if the user bookmarked a screen
+         * that has no flowing text on it, then this field should be empty.
+         *
+         * @param string $afterSelectedText
+         */
+        public function setAfterSelectedText($afterSelectedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAfterSelectedText()
+        {
+        }
+        /**
+         * Anchor text before excerpt. For requests, if the user bookmarked a screen
+         * that has no flowing text on it, then this field should be empty.
+         *
+         * @param string $beforeSelectedText
+         */
+        public function setBeforeSelectedText($beforeSelectedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBeforeSelectedText()
+        {
+        }
+        /**
+         * Selection ranges sent from the client.
+         *
+         * @param AnnotationClientVersionRanges $clientVersionRanges
+         */
+        public function setClientVersionRanges(AnnotationClientVersionRanges $clientVersionRanges)
+        {
+        }
+        /**
+         * @return AnnotationClientVersionRanges
+         */
+        public function getClientVersionRanges()
+        {
+        }
+        /**
+         * Timestamp for the created time of this annotation.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Selection ranges for the most recent content version.
+         *
+         * @param AnnotationCurrentVersionRanges $currentVersionRanges
+         */
+        public function setCurrentVersionRanges(AnnotationCurrentVersionRanges $currentVersionRanges)
+        {
+        }
+        /**
+         * @return AnnotationCurrentVersionRanges
+         */
+        public function getCurrentVersionRanges()
+        {
+        }
+        /**
+         * User-created data for this annotation.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Indicates that this annotation is deleted.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * The highlight style for this annotation.
+         *
+         * @param string $highlightStyle
+         */
+        public function setHighlightStyle($highlightStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHighlightStyle()
+        {
+        }
+        /**
+         * Id of this annotation, in the form of a GUID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The layer this annotation is for.
+         *
+         * @param string $layerId
+         */
+        public function setLayerId($layerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayerId()
+        {
+        }
+        /**
+         * @param AnnotationLayerSummary $layerSummary
+         */
+        public function setLayerSummary(AnnotationLayerSummary $layerSummary)
+        {
+        }
+        /**
+         * @return AnnotationLayerSummary
+         */
+        public function getLayerSummary()
+        {
+        }
+        /**
+         * Pages that this annotation spans.
+         *
+         * @param string[] $pageIds
+         */
+        public function setPageIds($pageIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPageIds()
+        {
+        }
+        /**
+         * Excerpt from the volume.
+         *
+         * @param string $selectedText
+         */
+        public function setSelectedText($selectedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedText()
+        {
+        }
+        /**
+         * URL to this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Timestamp for the last time this annotation was modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * The volume that this annotation belongs to.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Annotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAfterSelectedText()
-    {
-    }
-    /**
-     * Anchor text before excerpt. For requests, if the user bookmarked a screen
-     * that has no flowing text on it, then this field should be empty.
-     *
-     * @param string $beforeSelectedText
-     */
-    public function setBeforeSelectedText($beforeSelectedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBeforeSelectedText()
-    {
-    }
-    /**
-     * Selection ranges sent from the client.
-     *
-     * @param AnnotationClientVersionRanges $clientVersionRanges
-     */
-    public function setClientVersionRanges(AnnotationClientVersionRanges $clientVersionRanges)
-    {
-    }
-    /**
-     * @return AnnotationClientVersionRanges
-     */
-    public function getClientVersionRanges()
-    {
-    }
-    /**
-     * Timestamp for the created time of this annotation.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * Selection ranges for the most recent content version.
-     *
-     * @param AnnotationCurrentVersionRanges $currentVersionRanges
-     */
-    public function setCurrentVersionRanges(AnnotationCurrentVersionRanges $currentVersionRanges)
-    {
-    }
-    /**
-     * @return AnnotationCurrentVersionRanges
-     */
-    public function getCurrentVersionRanges()
-    {
-    }
-    /**
-     * User-created data for this annotation.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Indicates that this annotation is deleted.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * The highlight style for this annotation.
-     *
-     * @param string $highlightStyle
-     */
-    public function setHighlightStyle($highlightStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHighlightStyle()
-    {
-    }
-    /**
-     * Id of this annotation, in the form of a GUID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The layer this annotation is for.
-     *
-     * @param string $layerId
-     */
-    public function setLayerId($layerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayerId()
-    {
-    }
-    /**
-     * @param AnnotationLayerSummary $layerSummary
-     */
-    public function setLayerSummary(AnnotationLayerSummary $layerSummary)
-    {
-    }
-    /**
-     * @return AnnotationLayerSummary
-     */
-    public function getLayerSummary()
-    {
-    }
-    /**
-     * Pages that this annotation spans.
-     *
-     * @param string[] $pageIds
-     */
-    public function setPageIds($pageIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPageIds()
-    {
-    }
-    /**
-     * Excerpt from the volume.
-     *
-     * @param string $selectedText
-     */
-    public function setSelectedText($selectedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedText()
-    {
-    }
-    /**
-     * URL to this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Timestamp for the last time this annotation was modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * The volume that this annotation belongs to.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_Annotation extends \Google\Service\Books\Annotation
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay extends \Google\Model
-{
-    protected $dateType = GoogleTypeDate::class;
-    protected $dateDataType = '';
-    /**
-     * The date of this special day.
-     *
-     * @param GoogleTypeDate $date
-     */
-    public function setDate(GoogleTypeDate $date)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay extends \Google\Model
     {
+        protected $dateType = GoogleTypeDate::class;
+        protected $dateDataType = '';
+        /**
+         * The date of this special day.
+         *
+         * @param GoogleTypeDate $date
+         */
+        public function setDate(GoogleTypeDate $date)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceOpeningHoursSpecialDay
     {
     }
 }

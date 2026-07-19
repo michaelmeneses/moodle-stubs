@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Secrets extends \Google\Collection
-{
-    protected $collection_key = 'secretManager';
-    protected $inlineType = InlineSecret::class;
-    protected $inlineDataType = 'array';
-    protected $secretManagerType = SecretManagerSecret::class;
-    protected $secretManagerDataType = 'array';
-    /**
-     * @param InlineSecret[]
-     */
-    public function setInline($inline)
+namespace Google\Service\CloudBuild {
+    class Secrets extends \Google\Collection
     {
+        protected $collection_key = 'secretManager';
+        protected $inlineType = InlineSecret::class;
+        protected $inlineDataType = 'array';
+        protected $secretManagerType = SecretManagerSecret::class;
+        protected $secretManagerDataType = 'array';
+        /**
+         * @param InlineSecret[]
+         */
+        public function setInline($inline)
+        {
+        }
+        /**
+         * @return InlineSecret[]
+         */
+        public function getInline()
+        {
+        }
+        /**
+         * @param SecretManagerSecret[]
+         */
+        public function setSecretManager($secretManager)
+        {
+        }
+        /**
+         * @return SecretManagerSecret[]
+         */
+        public function getSecretManager()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InlineSecret[]
+     * Runtime class alias of \Google\Service\CloudBuild\Secrets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInline()
-    {
-    }
-    /**
-     * @param SecretManagerSecret[]
-     */
-    public function setSecretManager($secretManager)
-    {
-    }
-    /**
-     * @return SecretManagerSecret[]
-     */
-    public function getSecretManager()
+    class Google_Service_CloudBuild_Secrets extends \Google\Service\CloudBuild\Secrets
     {
     }
 }

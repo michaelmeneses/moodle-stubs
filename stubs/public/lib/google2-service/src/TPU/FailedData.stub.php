@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class FailedData extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. The error that caused the queued resource to enter the FAILED
-     * state.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\TPU {
+    class FailedData extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. The error that caused the queued resource to enter the FAILED
+         * state.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\TPU\FailedData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
+    class Google_Service_TPU_FailedData extends \Google\Service\TPU\FailedData
     {
     }
 }

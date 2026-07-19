@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RpcOptions extends \Google\Model
-{
-    protected $requestExtensionsType = MessageSet::class;
-    protected $requestExtensionsDataType = '';
-    /**
-     * @param MessageSet
-     */
-    public function setRequestExtensions(MessageSet $requestExtensions)
+namespace Google\Service\CloudSearch {
+    class RpcOptions extends \Google\Model
     {
+        protected $requestExtensionsType = MessageSet::class;
+        protected $requestExtensionsDataType = '';
+        /**
+         * @param MessageSet
+         */
+        public function setRequestExtensions(MessageSet $requestExtensions)
+        {
+        }
+        /**
+         * @return MessageSet
+         */
+        public function getRequestExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MessageSet
+     * Runtime class alias of \Google\Service\CloudSearch\RpcOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestExtensions()
+    class Google_Service_CloudSearch_RpcOptions extends \Google\Service\CloudSearch\RpcOptions
     {
     }
 }

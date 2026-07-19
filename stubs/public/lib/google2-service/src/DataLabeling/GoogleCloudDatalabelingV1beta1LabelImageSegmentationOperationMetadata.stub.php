@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1LabelImageSegmentationOperationMetadata extends \Google\Model
-{
-    protected $basicConfigType = GoogleCloudDatalabelingV1beta1HumanAnnotationConfig::class;
-    protected $basicConfigDataType = '';
-    /**
-     * Basic human annotation config.
-     *
-     * @param GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig
-     */
-    public function setBasicConfig(GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1LabelImageSegmentationOperationMetadata extends \Google\Model
     {
+        protected $basicConfigType = GoogleCloudDatalabelingV1beta1HumanAnnotationConfig::class;
+        protected $basicConfigDataType = '';
+        /**
+         * Basic human annotation config.
+         *
+         * @param GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig
+         */
+        public function setBasicConfig(GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1HumanAnnotationConfig
+         */
+        public function getBasicConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1HumanAnnotationConfig
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelImageSegmentationOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicConfig()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1LabelImageSegmentationOperationMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelImageSegmentationOperationMetadata
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomTask extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1CustomJobSpec::class;
-    protected $inputsDataType = '';
-    protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The input parameters of this CustomTask.
-     *
-     * @param GoogleCloudAiplatformV1CustomJobSpec $inputs
-     */
-    public function setInputs(GoogleCloudAiplatformV1CustomJobSpec $inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomTask extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1CustomJobSpec::class;
+        protected $inputsDataType = '';
+        protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The input parameters of this CustomTask.
+         *
+         * @param GoogleCloudAiplatformV1CustomJobSpec $inputs
+         */
+        public function setInputs(GoogleCloudAiplatformV1CustomJobSpec $inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CustomJobSpec
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * The metadata information.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CustomJobSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * The metadata information.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomTask extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomTask
     {
     }
 }

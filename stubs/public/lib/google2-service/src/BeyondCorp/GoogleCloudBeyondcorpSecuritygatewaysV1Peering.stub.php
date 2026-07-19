@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1Peering extends \Google\Collection
-{
-    protected $collection_key = 'dnsZones';
-    /**
-     * @var string[]
-     */
-    public $dnsZones;
-    /**
-     * @var string
-     */
-    public $targetNetwork;
-    /**
-     * @param string[]
-     */
-    public function setDnsZones($dnsZones)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1Peering extends \Google\Collection
     {
+        protected $collection_key = 'dnsZones';
+        /**
+         * @var string[]
+         */
+        public $dnsZones;
+        /**
+         * @var string
+         */
+        public $targetNetwork;
+        /**
+         * @param string[]
+         */
+        public function setDnsZones($dnsZones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDnsZones()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetNetwork($targetNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Peering registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsZones()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetNetwork($targetNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetNetwork()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1Peering extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Peering
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class SyncResponsePayload extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    /**
-     * Third-party user ID
-     *
-     * @var string
-     */
-    public $agentUserId;
-    protected $devicesType = Device::class;
-    protected $devicesDataType = 'array';
-    /**
-     * Third-party user ID
-     *
-     * @param string $agentUserId
-     */
-    public function setAgentUserId($agentUserId)
+namespace Google\Service\HomeGraphService {
+    class SyncResponsePayload extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        /**
+         * Third-party user ID
+         *
+         * @var string
+         */
+        public $agentUserId;
+        protected $devicesType = Device::class;
+        protected $devicesDataType = 'array';
+        /**
+         * Third-party user ID
+         *
+         * @param string $agentUserId
+         */
+        public function setAgentUserId($agentUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentUserId()
+        {
+        }
+        /**
+         * Devices associated with the third-party user.
+         *
+         * @param Device[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return Device[]
+         */
+        public function getDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\SyncResponsePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentUserId()
-    {
-    }
-    /**
-     * Devices associated with the third-party user.
-     *
-     * @param Device[] $devices
-     */
-    public function setDevices($devices)
-    {
-    }
-    /**
-     * @return Device[]
-     */
-    public function getDevices()
+    class Google_Service_HomeGraphService_SyncResponsePayload extends \Google\Service\HomeGraphService\SyncResponsePayload
     {
     }
 }

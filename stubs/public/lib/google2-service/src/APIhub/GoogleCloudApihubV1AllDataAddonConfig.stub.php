@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AllDataAddonConfig extends \Google\Model
-{
-    /**
-     * Required. If true, the addon is enabled for all data in the API hub.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Required. If true, the addon is enabled for all data in the API hub.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AllDataAddonConfig extends \Google\Model
     {
+        /**
+         * Required. If true, the addon is enabled for all data in the API hub.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Required. If true, the addon is enabled for all data in the API hub.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AllDataAddonConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_APIhub_GoogleCloudApihubV1AllDataAddonConfig extends \Google\Service\APIhub\GoogleCloudApihubV1AllDataAddonConfig
     {
     }
 }

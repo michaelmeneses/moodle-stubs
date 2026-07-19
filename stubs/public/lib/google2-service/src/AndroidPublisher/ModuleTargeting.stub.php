@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ModuleTargeting extends \Google\Collection
-{
-    protected $collection_key = 'deviceFeatureTargeting';
-    protected $deviceFeatureTargetingType = DeviceFeatureTargeting::class;
-    protected $deviceFeatureTargetingDataType = 'array';
-    protected $sdkVersionTargetingType = SdkVersionTargeting::class;
-    protected $sdkVersionTargetingDataType = '';
-    protected $userCountriesTargetingType = UserCountriesTargeting::class;
-    protected $userCountriesTargetingDataType = '';
-    /**
-     * Targeting for device features.
-     *
-     * @param DeviceFeatureTargeting[] $deviceFeatureTargeting
-     */
-    public function setDeviceFeatureTargeting($deviceFeatureTargeting)
+namespace Google\Service\AndroidPublisher {
+    class ModuleTargeting extends \Google\Collection
     {
+        protected $collection_key = 'deviceFeatureTargeting';
+        protected $deviceFeatureTargetingType = DeviceFeatureTargeting::class;
+        protected $deviceFeatureTargetingDataType = 'array';
+        protected $sdkVersionTargetingType = SdkVersionTargeting::class;
+        protected $sdkVersionTargetingDataType = '';
+        protected $userCountriesTargetingType = UserCountriesTargeting::class;
+        protected $userCountriesTargetingDataType = '';
+        /**
+         * Targeting for device features.
+         *
+         * @param DeviceFeatureTargeting[] $deviceFeatureTargeting
+         */
+        public function setDeviceFeatureTargeting($deviceFeatureTargeting)
+        {
+        }
+        /**
+         * @return DeviceFeatureTargeting[]
+         */
+        public function getDeviceFeatureTargeting()
+        {
+        }
+        /**
+         * The sdk version that the variant targets
+         *
+         * @param SdkVersionTargeting $sdkVersionTargeting
+         */
+        public function setSdkVersionTargeting(SdkVersionTargeting $sdkVersionTargeting)
+        {
+        }
+        /**
+         * @return SdkVersionTargeting
+         */
+        public function getSdkVersionTargeting()
+        {
+        }
+        /**
+         * Countries-level targeting
+         *
+         * @param UserCountriesTargeting $userCountriesTargeting
+         */
+        public function setUserCountriesTargeting(UserCountriesTargeting $userCountriesTargeting)
+        {
+        }
+        /**
+         * @return UserCountriesTargeting
+         */
+        public function getUserCountriesTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceFeatureTargeting[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ModuleTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceFeatureTargeting()
-    {
-    }
-    /**
-     * The sdk version that the variant targets
-     *
-     * @param SdkVersionTargeting $sdkVersionTargeting
-     */
-    public function setSdkVersionTargeting(SdkVersionTargeting $sdkVersionTargeting)
-    {
-    }
-    /**
-     * @return SdkVersionTargeting
-     */
-    public function getSdkVersionTargeting()
-    {
-    }
-    /**
-     * Countries-level targeting
-     *
-     * @param UserCountriesTargeting $userCountriesTargeting
-     */
-    public function setUserCountriesTargeting(UserCountriesTargeting $userCountriesTargeting)
-    {
-    }
-    /**
-     * @return UserCountriesTargeting
-     */
-    public function getUserCountriesTargeting()
+    class Google_Service_AndroidPublisher_ModuleTargeting extends \Google\Service\AndroidPublisher\ModuleTargeting
     {
     }
 }

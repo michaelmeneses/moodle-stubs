@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AuthorAttribution extends \Google\Model
-{
-    /**
-     * Name of the author of the Photo or Review.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Profile photo URI of the author of the Photo or Review.
-     *
-     * @var string
-     */
-    public $photoUri;
-    /**
-     * URI of the author of the Photo or Review.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of the author of the Photo or Review.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AuthorAttribution extends \Google\Model
     {
+        /**
+         * Name of the author of the Photo or Review.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Profile photo URI of the author of the Photo or Review.
+         *
+         * @var string
+         */
+        public $photoUri;
+        /**
+         * URI of the author of the Photo or Review.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of the author of the Photo or Review.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Profile photo URI of the author of the Photo or Review.
+         *
+         * @param string $photoUri
+         */
+        public function setPhotoUri($photoUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUri()
+        {
+        }
+        /**
+         * URI of the author of the Photo or Review.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AuthorAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Profile photo URI of the author of the Photo or Review.
-     *
-     * @param string $photoUri
-     */
-    public function setPhotoUri($photoUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUri()
-    {
-    }
-    /**
-     * URI of the author of the Photo or Review.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AuthorAttribution extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AuthorAttribution
     {
     }
 }

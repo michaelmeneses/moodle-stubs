@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Trigger extends \Google\Model
-{
-    /**
-     * The absolute number of time series that must fail the predicate for the
-     * condition to be triggered.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * The percentage of time series that must fail the predicate for the
-     * condition to be triggered.
-     *
-     * @var 
-     */
-    public $percent;
-    /**
-     * The absolute number of time series that must fail the predicate for the
-     * condition to be triggered.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\Monitoring {
+    class Trigger extends \Google\Model
     {
+        /**
+         * The absolute number of time series that must fail the predicate for the
+         * condition to be triggered.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * The percentage of time series that must fail the predicate for the
+         * condition to be triggered.
+         *
+         * @var 
+         */
+        public $percent;
+        /**
+         * The absolute number of time series that must fail the predicate for the
+         * condition to be triggered.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        public function setPercent($percent)
+        {
+        }
+        public function getPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Monitoring\Trigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    public function setPercent($percent)
-    {
-    }
-    public function getPercent()
+    class Google_Service_Monitoring_Trigger extends \Google\Service\Monitoring\Trigger
     {
     }
 }

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_ollama;
 
+use core_ai\aimodel\base;
 /**
  * Helper class for the Ollama provider.
  *

@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1EventConfig extends \Google\Collection
-{
-    protected $collection_key = 'annotationSpecSets';
-    /**
-     * Required. The list of annotation spec set resource name. Similar to video
-     * classification, we support selecting event from multiple AnnotationSpecSet
-     * at the same time.
-     *
-     * @var string[]
-     */
-    public $annotationSpecSets;
-    /**
-     * Videos will be cut to smaller clips to make it easier for labelers to work
-     * on. Users can configure is field in seconds, if not set, default value is
-     * 60s.
-     *
-     * @var int
-     */
-    public $clipLength;
-    /**
-     * The overlap length between different video clips. Users can configure is
-     * field in seconds, if not set, default value is 1s.
-     *
-     * @var int
-     */
-    public $overlapLength;
-    /**
-     * Required. The list of annotation spec set resource name. Similar to video
-     * classification, we support selecting event from multiple AnnotationSpecSet
-     * at the same time.
-     *
-     * @param string[] $annotationSpecSets
-     */
-    public function setAnnotationSpecSets($annotationSpecSets)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1EventConfig extends \Google\Collection
     {
+        protected $collection_key = 'annotationSpecSets';
+        /**
+         * Required. The list of annotation spec set resource name. Similar to video
+         * classification, we support selecting event from multiple AnnotationSpecSet
+         * at the same time.
+         *
+         * @var string[]
+         */
+        public $annotationSpecSets;
+        /**
+         * Videos will be cut to smaller clips to make it easier for labelers to work
+         * on. Users can configure is field in seconds, if not set, default value is
+         * 60s.
+         *
+         * @var int
+         */
+        public $clipLength;
+        /**
+         * The overlap length between different video clips. Users can configure is
+         * field in seconds, if not set, default value is 1s.
+         *
+         * @var int
+         */
+        public $overlapLength;
+        /**
+         * Required. The list of annotation spec set resource name. Similar to video
+         * classification, we support selecting event from multiple AnnotationSpecSet
+         * at the same time.
+         *
+         * @param string[] $annotationSpecSets
+         */
+        public function setAnnotationSpecSets($annotationSpecSets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotationSpecSets()
+        {
+        }
+        /**
+         * Videos will be cut to smaller clips to make it easier for labelers to work
+         * on. Users can configure is field in seconds, if not set, default value is
+         * 60s.
+         *
+         * @param int $clipLength
+         */
+        public function setClipLength($clipLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getClipLength()
+        {
+        }
+        /**
+         * The overlap length between different video clips. Users can configure is
+         * field in seconds, if not set, default value is 1s.
+         *
+         * @param int $overlapLength
+         */
+        public function setOverlapLength($overlapLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOverlapLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EventConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSets()
-    {
-    }
-    /**
-     * Videos will be cut to smaller clips to make it easier for labelers to work
-     * on. Users can configure is field in seconds, if not set, default value is
-     * 60s.
-     *
-     * @param int $clipLength
-     */
-    public function setClipLength($clipLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getClipLength()
-    {
-    }
-    /**
-     * The overlap length between different video clips. Users can configure is
-     * field in seconds, if not set, default value is 1s.
-     *
-     * @param int $overlapLength
-     */
-    public function setOverlapLength($overlapLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOverlapLength()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1EventConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EventConfig
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class GrpcRouteFaultInjectionPolicyDelay extends \Google\Model
-{
-    /**
-     * Specify a fixed delay before forwarding the request.
-     *
-     * @var string
-     */
-    public $fixedDelay;
-    /**
-     * The percentage of traffic on which delay will be injected. The value must
-     * be between [0, 100]
-     *
-     * @var int
-     */
-    public $percentage;
-    /**
-     * Specify a fixed delay before forwarding the request.
-     *
-     * @param string $fixedDelay
-     */
-    public function setFixedDelay($fixedDelay)
+namespace Google\Service\NetworkServices {
+    class GrpcRouteFaultInjectionPolicyDelay extends \Google\Model
     {
+        /**
+         * Specify a fixed delay before forwarding the request.
+         *
+         * @var string
+         */
+        public $fixedDelay;
+        /**
+         * The percentage of traffic on which delay will be injected. The value must
+         * be between [0, 100]
+         *
+         * @var int
+         */
+        public $percentage;
+        /**
+         * Specify a fixed delay before forwarding the request.
+         *
+         * @param string $fixedDelay
+         */
+        public function setFixedDelay($fixedDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFixedDelay()
+        {
+        }
+        /**
+         * The percentage of traffic on which delay will be injected. The value must
+         * be between [0, 100]
+         *
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\GrpcRouteFaultInjectionPolicyDelay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedDelay()
-    {
-    }
-    /**
-     * The percentage of traffic on which delay will be injected. The value must
-     * be between [0, 100]
-     *
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentage()
+    class Google_Service_NetworkServices_GrpcRouteFaultInjectionPolicyDelay extends \Google\Service\NetworkServices\GrpcRouteFaultInjectionPolicyDelay
     {
     }
 }

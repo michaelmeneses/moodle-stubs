@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GatewaySipAccess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $sipAccessCode;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setSipAccessCode($sipAccessCode)
+namespace Google\Service\CloudSearch {
+    class GatewaySipAccess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $sipAccessCode;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setSipAccessCode($sipAccessCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSipAccessCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GatewaySipAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSipAccessCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudSearch_GatewaySipAccess extends \Google\Service\CloudSearch\GatewaySipAccess
     {
     }
 }

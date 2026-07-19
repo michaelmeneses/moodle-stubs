@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class AndroidDeviceList extends \Google\Collection
-{
-    protected $collection_key = 'androidDevices';
-    protected $androidDevicesType = AndroidDevice::class;
-    protected $androidDevicesDataType = 'array';
-    /**
-     * Required. A list of Android devices.
-     *
-     * @param AndroidDevice[] $androidDevices
-     */
-    public function setAndroidDevices($androidDevices)
+namespace Google\Service\Testing {
+    class AndroidDeviceList extends \Google\Collection
     {
+        protected $collection_key = 'androidDevices';
+        protected $androidDevicesType = AndroidDevice::class;
+        protected $androidDevicesDataType = 'array';
+        /**
+         * Required. A list of Android devices.
+         *
+         * @param AndroidDevice[] $androidDevices
+         */
+        public function setAndroidDevices($androidDevices)
+        {
+        }
+        /**
+         * @return AndroidDevice[]
+         */
+        public function getAndroidDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidDevice[]
+     * Runtime class alias of \Google\Service\Testing\AndroidDeviceList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidDevices()
+    class Google_Service_Testing_AndroidDeviceList extends \Google\Service\Testing\AndroidDeviceList
     {
     }
 }

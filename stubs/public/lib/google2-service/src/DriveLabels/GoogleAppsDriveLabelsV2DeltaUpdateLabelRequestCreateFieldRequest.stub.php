@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateFieldRequest extends \Google\Model
-{
-    protected $fieldType = GoogleAppsDriveLabelsV2Field::class;
-    protected $fieldDataType = '';
-    /**
-     * Required. Field to create.
-     *
-     * @param GoogleAppsDriveLabelsV2Field $field
-     */
-    public function setField(GoogleAppsDriveLabelsV2Field $field)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateFieldRequest extends \Google\Model
     {
+        protected $fieldType = GoogleAppsDriveLabelsV2Field::class;
+        protected $fieldDataType = '';
+        /**
+         * Required. Field to create.
+         *
+         * @param GoogleAppsDriveLabelsV2Field $field
+         */
+        public function setField(GoogleAppsDriveLabelsV2Field $field)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2Field
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2Field
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateFieldRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateFieldRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestCreateFieldRequest
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ResourceCAIInfo extends \Google\Model
-{
-    /**
-     * CAI resource name in the format following
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * CAI resource name in the format following
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
+namespace Google\Service\Config {
+    class ResourceCAIInfo extends \Google\Model
     {
+        /**
+         * CAI resource name in the format following
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * CAI resource name in the format following
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ResourceCAIInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullResourceName()
+    class Google_Service_Config_ResourceCAIInfo extends \Google\Service\Config\ResourceCAIInfo
     {
     }
 }

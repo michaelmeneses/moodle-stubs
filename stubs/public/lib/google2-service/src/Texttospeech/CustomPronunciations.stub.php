@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class CustomPronunciations extends \Google\Collection
-{
-    protected $collection_key = 'pronunciations';
-    protected $pronunciationsType = CustomPronunciationParams::class;
-    protected $pronunciationsDataType = 'array';
-    /**
-     * The pronunciation customizations are applied.
-     *
-     * @param CustomPronunciationParams[] $pronunciations
-     */
-    public function setPronunciations($pronunciations)
+namespace Google\Service\Texttospeech {
+    class CustomPronunciations extends \Google\Collection
     {
+        protected $collection_key = 'pronunciations';
+        protected $pronunciationsType = CustomPronunciationParams::class;
+        protected $pronunciationsDataType = 'array';
+        /**
+         * The pronunciation customizations are applied.
+         *
+         * @param CustomPronunciationParams[] $pronunciations
+         */
+        public function setPronunciations($pronunciations)
+        {
+        }
+        /**
+         * @return CustomPronunciationParams[]
+         */
+        public function getPronunciations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomPronunciationParams[]
+     * Runtime class alias of \Google\Service\Texttospeech\CustomPronunciations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPronunciations()
+    class Google_Service_Texttospeech_CustomPronunciations extends \Google\Service\Texttospeech\CustomPronunciations
     {
     }
 }

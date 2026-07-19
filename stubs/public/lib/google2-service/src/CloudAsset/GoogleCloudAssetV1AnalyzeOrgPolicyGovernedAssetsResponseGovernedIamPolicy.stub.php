@@ -21,153 +21,162 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy extends \Google\Collection
-{
-    protected $collection_key = 'folders';
-    /**
-     * The asset type of the
-     * AnalyzeOrgPolicyGovernedAssetsResponse.GovernedIamPolicy.attached_resource.
-     * Example: `cloudresourcemanager.googleapis.com/Project` See [Cloud Asset
-     * Inventory Supported Asset Types](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types) for all supported asset types.
-     *
-     * @var string
-     */
-    public $assetType;
-    /**
-     * The full resource name of the resource on which this IAM policy is set.
-     * Example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/inst
-     * ances/instance1`. See [Cloud Asset Inventory Resource Name
-     * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * for more information.
-     *
-     * @var string
-     */
-    public $attachedResource;
-    /**
-     * The folder(s) that this IAM policy belongs to, in the format of
-     * folders/{FOLDER_NUMBER}. This field is available when the IAM policy
-     * belongs (directly or cascadingly) to one or more folders.
-     *
-     * @var string[]
-     */
-    public $folders;
-    /**
-     * The organization that this IAM policy belongs to, in the format of
-     * organizations/{ORGANIZATION_NUMBER}. This field is available when the IAM
-     * policy belongs (directly or cascadingly) to an organization.
-     *
-     * @var string
-     */
-    public $organization;
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * The project that this IAM policy belongs to, in the format of
-     * projects/{PROJECT_NUMBER}. This field is available when the IAM policy
-     * belongs to a project.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The asset type of the
-     * AnalyzeOrgPolicyGovernedAssetsResponse.GovernedIamPolicy.attached_resource.
-     * Example: `cloudresourcemanager.googleapis.com/Project` See [Cloud Asset
-     * Inventory Supported Asset Types](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types) for all supported asset types.
-     *
-     * @param string $assetType
-     */
-    public function setAssetType($assetType)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy extends \Google\Collection
     {
+        protected $collection_key = 'folders';
+        /**
+         * The asset type of the
+         * AnalyzeOrgPolicyGovernedAssetsResponse.GovernedIamPolicy.attached_resource.
+         * Example: `cloudresourcemanager.googleapis.com/Project` See [Cloud Asset
+         * Inventory Supported Asset Types](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types) for all supported asset types.
+         *
+         * @var string
+         */
+        public $assetType;
+        /**
+         * The full resource name of the resource on which this IAM policy is set.
+         * Example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/inst
+         * ances/instance1`. See [Cloud Asset Inventory Resource Name
+         * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
+         * for more information.
+         *
+         * @var string
+         */
+        public $attachedResource;
+        /**
+         * The folder(s) that this IAM policy belongs to, in the format of
+         * folders/{FOLDER_NUMBER}. This field is available when the IAM policy
+         * belongs (directly or cascadingly) to one or more folders.
+         *
+         * @var string[]
+         */
+        public $folders;
+        /**
+         * The organization that this IAM policy belongs to, in the format of
+         * organizations/{ORGANIZATION_NUMBER}. This field is available when the IAM
+         * policy belongs (directly or cascadingly) to an organization.
+         *
+         * @var string
+         */
+        public $organization;
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * The project that this IAM policy belongs to, in the format of
+         * projects/{PROJECT_NUMBER}. This field is available when the IAM policy
+         * belongs to a project.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The asset type of the
+         * AnalyzeOrgPolicyGovernedAssetsResponse.GovernedIamPolicy.attached_resource.
+         * Example: `cloudresourcemanager.googleapis.com/Project` See [Cloud Asset
+         * Inventory Supported Asset Types](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types) for all supported asset types.
+         *
+         * @param string $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
+        /**
+         * The full resource name of the resource on which this IAM policy is set.
+         * Example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/inst
+         * ances/instance1`. See [Cloud Asset Inventory Resource Name
+         * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
+         * for more information.
+         *
+         * @param string $attachedResource
+         */
+        public function setAttachedResource($attachedResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachedResource()
+        {
+        }
+        /**
+         * The folder(s) that this IAM policy belongs to, in the format of
+         * folders/{FOLDER_NUMBER}. This field is available when the IAM policy
+         * belongs (directly or cascadingly) to one or more folders.
+         *
+         * @param string[] $folders
+         */
+        public function setFolders($folders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFolders()
+        {
+        }
+        /**
+         * The organization that this IAM policy belongs to, in the format of
+         * organizations/{ORGANIZATION_NUMBER}. This field is available when the IAM
+         * policy belongs (directly or cascadingly) to an organization.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * The IAM policy directly set on the given resource.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * The project that this IAM policy belongs to, in the format of
+         * projects/{PROJECT_NUMBER}. This field is available when the IAM policy
+         * belongs to a project.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetType()
-    {
-    }
-    /**
-     * The full resource name of the resource on which this IAM policy is set.
-     * Example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/inst
-     * ances/instance1`. See [Cloud Asset Inventory Resource Name
-     * Format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     * for more information.
-     *
-     * @param string $attachedResource
-     */
-    public function setAttachedResource($attachedResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttachedResource()
-    {
-    }
-    /**
-     * The folder(s) that this IAM policy belongs to, in the format of
-     * folders/{FOLDER_NUMBER}. This field is available when the IAM policy
-     * belongs (directly or cascadingly) to one or more folders.
-     *
-     * @param string[] $folders
-     */
-    public function setFolders($folders)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFolders()
-    {
-    }
-    /**
-     * The organization that this IAM policy belongs to, in the format of
-     * organizations/{ORGANIZATION_NUMBER}. This field is available when the IAM
-     * policy belongs (directly or cascadingly) to an organization.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * The IAM policy directly set on the given resource.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
-    {
-    }
-    /**
-     * @return Policy
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * The project that this IAM policy belongs to, in the format of
-     * projects/{PROJECT_NUMBER}. This field is available when the IAM policy
-     * belongs to a project.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy extends \Google\Service\CloudAsset\GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy
     {
     }
 }

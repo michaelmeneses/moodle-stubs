@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "runtimeEntitySchemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $runtimeEntitySchemas = $integrationsService->projects_locations_connections_runtimeEntitySchemas;
- *  </code>
- */
-class ProjectsLocationsConnectionsRuntimeEntitySchemas extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse;
     /**
-     * Lists the JSON schemas for the properties of runtime entities, filtered by
-     * entity name.
-     * (runtimeEntitySchemas.listProjectsLocationsConnectionsRuntimeEntitySchemas)
-     *
-     * @param string $parent Required. Parent resource of RuntimeEntitySchema.
-     * Format: projects/{project}/locations/{location}/connections/{connection}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter. Only the entity field with literal equality
-     * operator is supported.
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse
-     * @throws \Google\Service\Exception
+     * The "runtimeEntitySchemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $runtimeEntitySchemas = $integrationsService->projects_locations_connections_runtimeEntitySchemas;
+     *  </code>
      */
-    public function listProjectsLocationsConnectionsRuntimeEntitySchemas($parent, $optParams = [])
+    class ProjectsLocationsConnectionsRuntimeEntitySchemas extends \Google\Service\Resource
+    {
+        /**
+         * Lists the JSON schemas for the properties of runtime entities, filtered by
+         * entity name.
+         * (runtimeEntitySchemas.listProjectsLocationsConnectionsRuntimeEntitySchemas)
+         *
+         * @param string $parent Required. Parent resource of RuntimeEntitySchema.
+         * Format: projects/{project}/locations/{location}/connections/{connection}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter. Only the entity field with literal equality
+         * operator is supported.
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectionsRuntimeEntitySchemas($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsConnectionsRuntimeEntitySchemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsConnectionsRuntimeEntitySchemas extends \Google\Service\Integrations\Resource\ProjectsLocationsConnectionsRuntimeEntitySchemas
     {
     }
 }

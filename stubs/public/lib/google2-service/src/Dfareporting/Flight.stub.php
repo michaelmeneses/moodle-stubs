@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Flight extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endDate;
-    /**
-     * @var string
-     */
-    public $rateOrCost;
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * @var string
-     */
-    public $units;
-    /**
-     * @param string
-     */
-    public function setEndDate($endDate)
+namespace Google\Service\Dfareporting {
+    class Flight extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endDate;
+        /**
+         * @var string
+         */
+        public $rateOrCost;
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * @var string
+         */
+        public $units;
+        /**
+         * @param string
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRateOrCost($rateOrCost)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRateOrCost()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnits($units)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Flight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRateOrCost($rateOrCost)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRateOrCost()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnits($units)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnits()
+    class Google_Service_Dfareporting_Flight extends \Google\Service\Dfareporting\Flight
     {
     }
 }

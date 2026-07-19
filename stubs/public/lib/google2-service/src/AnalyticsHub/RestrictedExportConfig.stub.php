@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class RestrictedExportConfig extends \Google\Model
-{
-    /**
-     * Optional. If true, enable restricted export.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Output only. If true, restrict direct table access(read api/tabledata.list)
-     * on linked table.
-     *
-     * @var bool
-     */
-    public $restrictDirectTableAccess;
-    /**
-     * Optional. If true, restrict export of query result derived from restricted
-     * linked dataset table.
-     *
-     * @var bool
-     */
-    public $restrictQueryResult;
-    /**
-     * Optional. If true, enable restricted export.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\AnalyticsHub {
+    class RestrictedExportConfig extends \Google\Model
     {
+        /**
+         * Optional. If true, enable restricted export.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Output only. If true, restrict direct table access(read api/tabledata.list)
+         * on linked table.
+         *
+         * @var bool
+         */
+        public $restrictDirectTableAccess;
+        /**
+         * Optional. If true, restrict export of query result derived from restricted
+         * linked dataset table.
+         *
+         * @var bool
+         */
+        public $restrictQueryResult;
+        /**
+         * Optional. If true, enable restricted export.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Output only. If true, restrict direct table access(read api/tabledata.list)
+         * on linked table.
+         *
+         * @param bool $restrictDirectTableAccess
+         */
+        public function setRestrictDirectTableAccess($restrictDirectTableAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRestrictDirectTableAccess()
+        {
+        }
+        /**
+         * Optional. If true, restrict export of query result derived from restricted
+         * linked dataset table.
+         *
+         * @param bool $restrictQueryResult
+         */
+        public function setRestrictQueryResult($restrictQueryResult)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRestrictQueryResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsHub\RestrictedExportConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Output only. If true, restrict direct table access(read api/tabledata.list)
-     * on linked table.
-     *
-     * @param bool $restrictDirectTableAccess
-     */
-    public function setRestrictDirectTableAccess($restrictDirectTableAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRestrictDirectTableAccess()
-    {
-    }
-    /**
-     * Optional. If true, restrict export of query result derived from restricted
-     * linked dataset table.
-     *
-     * @param bool $restrictQueryResult
-     */
-    public function setRestrictQueryResult($restrictQueryResult)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRestrictQueryResult()
+    class Google_Service_AnalyticsHub_RestrictedExportConfig extends \Google\Service\AnalyticsHub\RestrictedExportConfig
     {
     }
 }

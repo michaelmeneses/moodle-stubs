@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingComputationTask extends \Google\Collection
-{
-    /**
-     * The streaming computation task is unknown, or unspecified.
-     */
-    public const TASK_TYPE_STREAMING_COMPUTATION_TASK_UNKNOWN = 'STREAMING_COMPUTATION_TASK_UNKNOWN';
-    /**
-     * Stop processing specified streaming computation range(s).
-     */
-    public const TASK_TYPE_STREAMING_COMPUTATION_TASK_STOP = 'STREAMING_COMPUTATION_TASK_STOP';
-    /**
-     * Start processing specified streaming computation range(s).
-     */
-    public const TASK_TYPE_STREAMING_COMPUTATION_TASK_START = 'STREAMING_COMPUTATION_TASK_START';
-    protected $collection_key = 'dataDisks';
-    protected $computationRangesType = StreamingComputationRanges::class;
-    protected $computationRangesDataType = 'array';
-    protected $dataDisksType = MountedDataDisk::class;
-    protected $dataDisksDataType = 'array';
-    /**
-     * A type of streaming computation task.
-     *
-     * @var string
-     */
-    public $taskType;
-    /**
-     * Contains ranges of a streaming computation this task should apply to.
-     *
-     * @param StreamingComputationRanges[] $computationRanges
-     */
-    public function setComputationRanges($computationRanges)
+namespace Google\Service\Dataflow {
+    class StreamingComputationTask extends \Google\Collection
     {
+        /**
+         * The streaming computation task is unknown, or unspecified.
+         */
+        public const TASK_TYPE_STREAMING_COMPUTATION_TASK_UNKNOWN = 'STREAMING_COMPUTATION_TASK_UNKNOWN';
+        /**
+         * Stop processing specified streaming computation range(s).
+         */
+        public const TASK_TYPE_STREAMING_COMPUTATION_TASK_STOP = 'STREAMING_COMPUTATION_TASK_STOP';
+        /**
+         * Start processing specified streaming computation range(s).
+         */
+        public const TASK_TYPE_STREAMING_COMPUTATION_TASK_START = 'STREAMING_COMPUTATION_TASK_START';
+        protected $collection_key = 'dataDisks';
+        protected $computationRangesType = StreamingComputationRanges::class;
+        protected $computationRangesDataType = 'array';
+        protected $dataDisksType = MountedDataDisk::class;
+        protected $dataDisksDataType = 'array';
+        /**
+         * A type of streaming computation task.
+         *
+         * @var string
+         */
+        public $taskType;
+        /**
+         * Contains ranges of a streaming computation this task should apply to.
+         *
+         * @param StreamingComputationRanges[] $computationRanges
+         */
+        public function setComputationRanges($computationRanges)
+        {
+        }
+        /**
+         * @return StreamingComputationRanges[]
+         */
+        public function getComputationRanges()
+        {
+        }
+        /**
+         * Describes the set of data disks this task should apply to.
+         *
+         * @param MountedDataDisk[] $dataDisks
+         */
+        public function setDataDisks($dataDisks)
+        {
+        }
+        /**
+         * @return MountedDataDisk[]
+         */
+        public function getDataDisks()
+        {
+        }
+        /**
+         * A type of streaming computation task.
+         *
+         * Accepted values: STREAMING_COMPUTATION_TASK_UNKNOWN,
+         * STREAMING_COMPUTATION_TASK_STOP, STREAMING_COMPUTATION_TASK_START
+         *
+         * @param self::TASK_TYPE_* $taskType
+         */
+        public function setTaskType($taskType)
+        {
+        }
+        /**
+         * @return self::TASK_TYPE_*
+         */
+        public function getTaskType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StreamingComputationRanges[]
+     * Runtime class alias of \Google\Service\Dataflow\StreamingComputationTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputationRanges()
-    {
-    }
-    /**
-     * Describes the set of data disks this task should apply to.
-     *
-     * @param MountedDataDisk[] $dataDisks
-     */
-    public function setDataDisks($dataDisks)
-    {
-    }
-    /**
-     * @return MountedDataDisk[]
-     */
-    public function getDataDisks()
-    {
-    }
-    /**
-     * A type of streaming computation task.
-     *
-     * Accepted values: STREAMING_COMPUTATION_TASK_UNKNOWN,
-     * STREAMING_COMPUTATION_TASK_STOP, STREAMING_COMPUTATION_TASK_START
-     *
-     * @param self::TASK_TYPE_* $taskType
-     */
-    public function setTaskType($taskType)
-    {
-    }
-    /**
-     * @return self::TASK_TYPE_*
-     */
-    public function getTaskType()
+    class Google_Service_Dataflow_StreamingComputationTask extends \Google\Service\Dataflow\StreamingComputationTask
     {
     }
 }

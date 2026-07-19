@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1MetadataJobEvent extends \Google\Model
-{
-    protected $importResultType = GoogleCloudDataplexV1MetadataJobEventImportResult::class;
-    protected $importResultDataType = '';
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $resource;
-    /**
-     * @param GoogleCloudDataplexV1MetadataJobEventImportResult
-     */
-    public function setImportResult(GoogleCloudDataplexV1MetadataJobEventImportResult $importResult)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1MetadataJobEvent extends \Google\Model
     {
+        protected $importResultType = GoogleCloudDataplexV1MetadataJobEventImportResult::class;
+        protected $importResultDataType = '';
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $resource;
+        /**
+         * @param GoogleCloudDataplexV1MetadataJobEventImportResult
+         */
+        public function setImportResult(GoogleCloudDataplexV1MetadataJobEventImportResult $importResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1MetadataJobEventImportResult
+         */
+        public function getImportResult()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1MetadataJobEventImportResult
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportResult()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1MetadataJobEvent extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobEvent
     {
     }
 }

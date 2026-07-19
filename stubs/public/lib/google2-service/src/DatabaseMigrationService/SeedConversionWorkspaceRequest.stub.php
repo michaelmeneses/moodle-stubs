@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SeedConversionWorkspaceRequest extends \Google\Model
-{
-    /**
-     * Should the conversion workspace be committed automatically after the seed
-     * operation.
-     *
-     * @var bool
-     */
-    public $autoCommit;
-    /**
-     * Optional. Fully qualified (Uri) name of the destination connection profile.
-     *
-     * @var string
-     */
-    public $destinationConnectionProfile;
-    /**
-     * Optional. Fully qualified (Uri) name of the source connection profile.
-     *
-     * @var string
-     */
-    public $sourceConnectionProfile;
-    /**
-     * Should the conversion workspace be committed automatically after the seed
-     * operation.
-     *
-     * @param bool $autoCommit
-     */
-    public function setAutoCommit($autoCommit)
+namespace Google\Service\DatabaseMigrationService {
+    class SeedConversionWorkspaceRequest extends \Google\Model
     {
+        /**
+         * Should the conversion workspace be committed automatically after the seed
+         * operation.
+         *
+         * @var bool
+         */
+        public $autoCommit;
+        /**
+         * Optional. Fully qualified (Uri) name of the destination connection profile.
+         *
+         * @var string
+         */
+        public $destinationConnectionProfile;
+        /**
+         * Optional. Fully qualified (Uri) name of the source connection profile.
+         *
+         * @var string
+         */
+        public $sourceConnectionProfile;
+        /**
+         * Should the conversion workspace be committed automatically after the seed
+         * operation.
+         *
+         * @param bool $autoCommit
+         */
+        public function setAutoCommit($autoCommit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoCommit()
+        {
+        }
+        /**
+         * Optional. Fully qualified (Uri) name of the destination connection profile.
+         *
+         * @param string $destinationConnectionProfile
+         */
+        public function setDestinationConnectionProfile($destinationConnectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationConnectionProfile()
+        {
+        }
+        /**
+         * Optional. Fully qualified (Uri) name of the source connection profile.
+         *
+         * @param string $sourceConnectionProfile
+         */
+        public function setSourceConnectionProfile($sourceConnectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceConnectionProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SeedConversionWorkspaceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoCommit()
-    {
-    }
-    /**
-     * Optional. Fully qualified (Uri) name of the destination connection profile.
-     *
-     * @param string $destinationConnectionProfile
-     */
-    public function setDestinationConnectionProfile($destinationConnectionProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationConnectionProfile()
-    {
-    }
-    /**
-     * Optional. Fully qualified (Uri) name of the source connection profile.
-     *
-     * @param string $sourceConnectionProfile
-     */
-    public function setSourceConnectionProfile($sourceConnectionProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceConnectionProfile()
+    class Google_Service_DatabaseMigrationService_SeedConversionWorkspaceRequest extends \Google\Service\DatabaseMigrationService\SeedConversionWorkspaceRequest
     {
     }
 }

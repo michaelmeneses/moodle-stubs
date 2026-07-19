@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class Reservation extends \Google\Model
-{
-    /**
-     * The name of the reservation. Structured like: projects/{project_number}/loc
-     * ations/{location}/reservations/{reservation_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The reserved throughput capacity. Every unit of throughput capacity is
-     * equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
-     * messages. Any topics which are declared as using capacity from a
-     * Reservation will consume resources from this reservation instead of being
-     * charged individually.
-     *
-     * @var string
-     */
-    public $throughputCapacity;
-    /**
-     * The name of the reservation. Structured like: projects/{project_number}/loc
-     * ations/{location}/reservations/{reservation_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\PubsubLite {
+    class Reservation extends \Google\Model
     {
+        /**
+         * The name of the reservation. Structured like: projects/{project_number}/loc
+         * ations/{location}/reservations/{reservation_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The reserved throughput capacity. Every unit of throughput capacity is
+         * equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
+         * messages. Any topics which are declared as using capacity from a
+         * Reservation will consume resources from this reservation instead of being
+         * charged individually.
+         *
+         * @var string
+         */
+        public $throughputCapacity;
+        /**
+         * The name of the reservation. Structured like: projects/{project_number}/loc
+         * ations/{location}/reservations/{reservation_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The reserved throughput capacity. Every unit of throughput capacity is
+         * equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
+         * messages. Any topics which are declared as using capacity from a
+         * Reservation will consume resources from this reservation instead of being
+         * charged individually.
+         *
+         * @param string $throughputCapacity
+         */
+        public function setThroughputCapacity($throughputCapacity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThroughputCapacity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\Reservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The reserved throughput capacity. Every unit of throughput capacity is
-     * equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
-     * messages. Any topics which are declared as using capacity from a
-     * Reservation will consume resources from this reservation instead of being
-     * charged individually.
-     *
-     * @param string $throughputCapacity
-     */
-    public function setThroughputCapacity($throughputCapacity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThroughputCapacity()
+    class Google_Service_PubsubLite_Reservation extends \Google\Service\PubsubLite\Reservation
     {
     }
 }

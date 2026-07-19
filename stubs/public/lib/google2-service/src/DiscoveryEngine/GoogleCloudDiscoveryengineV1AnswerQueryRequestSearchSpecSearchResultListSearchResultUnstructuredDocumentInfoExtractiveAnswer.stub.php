@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer extends \Google\Model
-{
-    /**
-     * Extractive answer content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Page identifier.
-     *
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * Extractive answer content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer extends \Google\Model
     {
+        /**
+         * Extractive answer content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Page identifier.
+         *
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * Extractive answer content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Page identifier.
+         *
+         * @param string $pageIdentifier
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Page identifier.
-     *
-     * @param string $pageIdentifier
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer
     {
     }
 }

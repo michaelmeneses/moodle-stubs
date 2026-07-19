@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesDemoteMasterRequest extends \Google\Model
-{
-    protected $demoteMasterContextType = DemoteMasterContext::class;
-    protected $demoteMasterContextDataType = '';
-    /**
-     * Contains details about the demoteMaster operation.
-     *
-     * @param DemoteMasterContext $demoteMasterContext
-     */
-    public function setDemoteMasterContext(DemoteMasterContext $demoteMasterContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesDemoteMasterRequest extends \Google\Model
     {
+        protected $demoteMasterContextType = DemoteMasterContext::class;
+        protected $demoteMasterContextDataType = '';
+        /**
+         * Contains details about the demoteMaster operation.
+         *
+         * @param DemoteMasterContext $demoteMasterContext
+         */
+        public function setDemoteMasterContext(DemoteMasterContext $demoteMasterContext)
+        {
+        }
+        /**
+         * @return DemoteMasterContext
+         */
+        public function getDemoteMasterContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DemoteMasterContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesDemoteMasterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDemoteMasterContext()
+    class Google_Service_SQLAdmin_InstancesDemoteMasterRequest extends \Google\Service\SQLAdmin\InstancesDemoteMasterRequest
     {
     }
 }

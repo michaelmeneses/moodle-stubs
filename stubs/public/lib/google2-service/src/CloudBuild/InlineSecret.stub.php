@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class InlineSecret extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $envMap;
-    /**
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * @param string[]
-     */
-    public function setEnvMap($envMap)
+namespace Google\Service\CloudBuild {
+    class InlineSecret extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $envMap;
+        /**
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * @param string[]
+         */
+        public function setEnvMap($envMap)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvMap()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\InlineSecret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvMap()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
+    class Google_Service_CloudBuild_InlineSecret extends \Google\Service\CloudBuild\InlineSecret
     {
     }
 }

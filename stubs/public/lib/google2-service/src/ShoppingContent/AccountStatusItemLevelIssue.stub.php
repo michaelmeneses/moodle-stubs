@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountStatusItemLevelIssue extends \Google\Model
-{
-    /**
-     * The attribute's name, if the issue is caused by a single attribute.
-     *
-     * @var string
-     */
-    public $attributeName;
-    /**
-     * The error code of the issue.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A short issue description in English.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A detailed issue description in English.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * The URL of a web page to help with resolving this issue.
-     *
-     * @var string
-     */
-    public $documentation;
-    /**
-     * Number of items with this issue.
-     *
-     * @var string
-     */
-    public $numItems;
-    /**
-     * Whether the issue can be resolved by the merchant.
-     *
-     * @var string
-     */
-    public $resolution;
-    /**
-     * How this issue affects serving of the offer.
-     *
-     * @var string
-     */
-    public $servability;
-    /**
-     * The attribute's name, if the issue is caused by a single attribute.
-     *
-     * @param string $attributeName
-     */
-    public function setAttributeName($attributeName)
+namespace Google\Service\ShoppingContent {
+    class AccountStatusItemLevelIssue extends \Google\Model
     {
+        /**
+         * The attribute's name, if the issue is caused by a single attribute.
+         *
+         * @var string
+         */
+        public $attributeName;
+        /**
+         * The error code of the issue.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A short issue description in English.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A detailed issue description in English.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * The URL of a web page to help with resolving this issue.
+         *
+         * @var string
+         */
+        public $documentation;
+        /**
+         * Number of items with this issue.
+         *
+         * @var string
+         */
+        public $numItems;
+        /**
+         * Whether the issue can be resolved by the merchant.
+         *
+         * @var string
+         */
+        public $resolution;
+        /**
+         * How this issue affects serving of the offer.
+         *
+         * @var string
+         */
+        public $servability;
+        /**
+         * The attribute's name, if the issue is caused by a single attribute.
+         *
+         * @param string $attributeName
+         */
+        public function setAttributeName($attributeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeName()
+        {
+        }
+        /**
+         * The error code of the issue.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A short issue description in English.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * A detailed issue description in English.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * The URL of a web page to help with resolving this issue.
+         *
+         * @param string $documentation
+         */
+        public function setDocumentation($documentation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentation()
+        {
+        }
+        /**
+         * Number of items with this issue.
+         *
+         * @param string $numItems
+         */
+        public function setNumItems($numItems)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumItems()
+        {
+        }
+        /**
+         * Whether the issue can be resolved by the merchant.
+         *
+         * @param string $resolution
+         */
+        public function setResolution($resolution)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolution()
+        {
+        }
+        /**
+         * How this issue affects serving of the offer.
+         *
+         * @param string $servability
+         */
+        public function setServability($servability)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountStatusItemLevelIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeName()
-    {
-    }
-    /**
-     * The error code of the issue.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
-    {
-    }
-    /**
-     * A short issue description in English.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * A detailed issue description in English.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetail()
-    {
-    }
-    /**
-     * The URL of a web page to help with resolving this issue.
-     *
-     * @param string $documentation
-     */
-    public function setDocumentation($documentation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentation()
-    {
-    }
-    /**
-     * Number of items with this issue.
-     *
-     * @param string $numItems
-     */
-    public function setNumItems($numItems)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumItems()
-    {
-    }
-    /**
-     * Whether the issue can be resolved by the merchant.
-     *
-     * @param string $resolution
-     */
-    public function setResolution($resolution)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolution()
-    {
-    }
-    /**
-     * How this issue affects serving of the offer.
-     *
-     * @param string $servability
-     */
-    public function setServability($servability)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServability()
+    class Google_Service_ShoppingContent_AccountStatusItemLevelIssue extends \Google\Service\ShoppingContent\AccountStatusItemLevelIssue
     {
     }
 }

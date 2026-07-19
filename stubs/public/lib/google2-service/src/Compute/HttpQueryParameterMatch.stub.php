@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HttpQueryParameterMatch extends \Google\Model
-{
-    /**
-     * The queryParameterMatch matches if the value of the parameter exactly
-     * matches the contents of exactMatch.
-     *
-     * Only one of presentMatch, exactMatch, orregexMatch must be set.
-     *
-     * @var string
-     */
-    public $exactMatch;
-    /**
-     * The name of the query parameter to match. The query parameter must exist in
-     * the request, in the absence of which the request match fails.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Specifies that the queryParameterMatch matches if the request contains the
-     * query parameter, irrespective of whether the parameter has a value or not.
-     *
-     * Only one of presentMatch, exactMatch, orregexMatch must be set.
-     *
-     * @var bool
-     */
-    public $presentMatch;
-    /**
-     * The queryParameterMatch matches if the value of the parameter matches the
-     * regular expression specified byregexMatch. For more information about
-     * regular expression syntax, see Syntax.
-     *
-     * Only one of presentMatch, exactMatch, orregexMatch must be set.
-     *
-     * Regular expressions can only be used when the loadBalancingScheme is set to
-     * INTERNAL_SELF_MANAGED, EXTERNAL_MANAGED (regional scope) or
-     * INTERNAL_MANAGED.
-     *
-     * @var string
-     */
-    public $regexMatch;
-    /**
-     * The queryParameterMatch matches if the value of the parameter exactly
-     * matches the contents of exactMatch.
-     *
-     * Only one of presentMatch, exactMatch, orregexMatch must be set.
-     *
-     * @param string $exactMatch
-     */
-    public function setExactMatch($exactMatch)
+namespace Google\Service\Compute {
+    class HttpQueryParameterMatch extends \Google\Model
     {
+        /**
+         * The queryParameterMatch matches if the value of the parameter exactly
+         * matches the contents of exactMatch.
+         *
+         * Only one of presentMatch, exactMatch, orregexMatch must be set.
+         *
+         * @var string
+         */
+        public $exactMatch;
+        /**
+         * The name of the query parameter to match. The query parameter must exist in
+         * the request, in the absence of which the request match fails.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Specifies that the queryParameterMatch matches if the request contains the
+         * query parameter, irrespective of whether the parameter has a value or not.
+         *
+         * Only one of presentMatch, exactMatch, orregexMatch must be set.
+         *
+         * @var bool
+         */
+        public $presentMatch;
+        /**
+         * The queryParameterMatch matches if the value of the parameter matches the
+         * regular expression specified byregexMatch. For more information about
+         * regular expression syntax, see Syntax.
+         *
+         * Only one of presentMatch, exactMatch, orregexMatch must be set.
+         *
+         * Regular expressions can only be used when the loadBalancingScheme is set to
+         * INTERNAL_SELF_MANAGED, EXTERNAL_MANAGED (regional scope) or
+         * INTERNAL_MANAGED.
+         *
+         * @var string
+         */
+        public $regexMatch;
+        /**
+         * The queryParameterMatch matches if the value of the parameter exactly
+         * matches the contents of exactMatch.
+         *
+         * Only one of presentMatch, exactMatch, orregexMatch must be set.
+         *
+         * @param string $exactMatch
+         */
+        public function setExactMatch($exactMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExactMatch()
+        {
+        }
+        /**
+         * The name of the query parameter to match. The query parameter must exist in
+         * the request, in the absence of which the request match fails.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Specifies that the queryParameterMatch matches if the request contains the
+         * query parameter, irrespective of whether the parameter has a value or not.
+         *
+         * Only one of presentMatch, exactMatch, orregexMatch must be set.
+         *
+         * @param bool $presentMatch
+         */
+        public function setPresentMatch($presentMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPresentMatch()
+        {
+        }
+        /**
+         * The queryParameterMatch matches if the value of the parameter matches the
+         * regular expression specified byregexMatch. For more information about
+         * regular expression syntax, see Syntax.
+         *
+         * Only one of presentMatch, exactMatch, orregexMatch must be set.
+         *
+         * Regular expressions can only be used when the loadBalancingScheme is set to
+         * INTERNAL_SELF_MANAGED, EXTERNAL_MANAGED (regional scope) or
+         * INTERNAL_MANAGED.
+         *
+         * @param string $regexMatch
+         */
+        public function setRegexMatch($regexMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegexMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\HttpQueryParameterMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExactMatch()
-    {
-    }
-    /**
-     * The name of the query parameter to match. The query parameter must exist in
-     * the request, in the absence of which the request match fails.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Specifies that the queryParameterMatch matches if the request contains the
-     * query parameter, irrespective of whether the parameter has a value or not.
-     *
-     * Only one of presentMatch, exactMatch, orregexMatch must be set.
-     *
-     * @param bool $presentMatch
-     */
-    public function setPresentMatch($presentMatch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPresentMatch()
-    {
-    }
-    /**
-     * The queryParameterMatch matches if the value of the parameter matches the
-     * regular expression specified byregexMatch. For more information about
-     * regular expression syntax, see Syntax.
-     *
-     * Only one of presentMatch, exactMatch, orregexMatch must be set.
-     *
-     * Regular expressions can only be used when the loadBalancingScheme is set to
-     * INTERNAL_SELF_MANAGED, EXTERNAL_MANAGED (regional scope) or
-     * INTERNAL_MANAGED.
-     *
-     * @param string $regexMatch
-     */
-    public function setRegexMatch($regexMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegexMatch()
+    class Google_Service_Compute_HttpQueryParameterMatch extends \Google\Service\Compute\HttpQueryParameterMatch
     {
     }
 }

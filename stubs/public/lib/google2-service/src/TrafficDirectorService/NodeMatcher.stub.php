@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class NodeMatcher extends \Google\Collection
-{
-    protected $collection_key = 'nodeMetadatas';
-    protected $nodeIdType = StringMatcher::class;
-    protected $nodeIdDataType = '';
-    protected $nodeMetadatasType = StructMatcher::class;
-    protected $nodeMetadatasDataType = 'array';
-    /**
-     * Specifies match criteria on the node id.
-     *
-     * @param StringMatcher $nodeId
-     */
-    public function setNodeId(StringMatcher $nodeId)
+namespace Google\Service\TrafficDirectorService {
+    class NodeMatcher extends \Google\Collection
     {
+        protected $collection_key = 'nodeMetadatas';
+        protected $nodeIdType = StringMatcher::class;
+        protected $nodeIdDataType = '';
+        protected $nodeMetadatasType = StructMatcher::class;
+        protected $nodeMetadatasDataType = 'array';
+        /**
+         * Specifies match criteria on the node id.
+         *
+         * @param StringMatcher $nodeId
+         */
+        public function setNodeId(StringMatcher $nodeId)
+        {
+        }
+        /**
+         * @return StringMatcher
+         */
+        public function getNodeId()
+        {
+        }
+        /**
+         * Specifies match criteria on the node metadata.
+         *
+         * @param StructMatcher[] $nodeMetadatas
+         */
+        public function setNodeMetadatas($nodeMetadatas)
+        {
+        }
+        /**
+         * @return StructMatcher[]
+         */
+        public function getNodeMetadatas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StringMatcher
+     * Runtime class alias of \Google\Service\TrafficDirectorService\NodeMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeId()
-    {
-    }
-    /**
-     * Specifies match criteria on the node metadata.
-     *
-     * @param StructMatcher[] $nodeMetadatas
-     */
-    public function setNodeMetadatas($nodeMetadatas)
-    {
-    }
-    /**
-     * @return StructMatcher[]
-     */
-    public function getNodeMetadatas()
+    class Google_Service_TrafficDirectorService_NodeMatcher extends \Google\Service\TrafficDirectorService\NodeMatcher
     {
     }
 }

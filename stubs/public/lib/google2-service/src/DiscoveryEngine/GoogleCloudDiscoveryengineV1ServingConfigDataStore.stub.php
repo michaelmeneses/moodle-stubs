@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ServingConfigDataStore extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $disabledForServing;
-    /**
-     * @param bool
-     */
-    public function setDisabledForServing($disabledForServing)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ServingConfigDataStore extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $disabledForServing;
+        /**
+         * @param bool
+         */
+        public function setDisabledForServing($disabledForServing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabledForServing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ServingConfigDataStore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabledForServing()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ServingConfigDataStore extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ServingConfigDataStore
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1Beta1EnableConsumerResponse extends \Google\Model
-{
+namespace Google\Service\ServiceConsumerManagement {
+    class V1Beta1EnableConsumerResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1Beta1EnableConsumerResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceConsumerManagement_V1Beta1EnableConsumerResponse extends \Google\Service\ServiceConsumerManagement\V1Beta1EnableConsumerResponse
+    {
+    }
 }

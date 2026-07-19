@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonBusinessProfileLocation extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * Advertiser specified label for the location on the Business Profile
-     * account. This is synced from the Business Profile account.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Listing ID of this Business Profile location. This is synced from the
-     * linked Business Profile account.
-     *
-     * @var string
-     */
-    public $listingId;
-    /**
-     * Business Profile store code of this location. This is synced from the
-     * Business Profile account.
-     *
-     * @var string
-     */
-    public $storeCode;
-    /**
-     * Advertiser specified label for the location on the Business Profile
-     * account. This is synced from the Business Profile account.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonBusinessProfileLocation extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * Advertiser specified label for the location on the Business Profile
+         * account. This is synced from the Business Profile account.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Listing ID of this Business Profile location. This is synced from the
+         * linked Business Profile account.
+         *
+         * @var string
+         */
+        public $listingId;
+        /**
+         * Business Profile store code of this location. This is synced from the
+         * Business Profile account.
+         *
+         * @var string
+         */
+        public $storeCode;
+        /**
+         * Advertiser specified label for the location on the Business Profile
+         * account. This is synced from the Business Profile account.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Listing ID of this Business Profile location. This is synced from the
+         * linked Business Profile account.
+         *
+         * @param string $listingId
+         */
+        public function setListingId($listingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListingId()
+        {
+        }
+        /**
+         * Business Profile store code of this location. This is synced from the
+         * Business Profile account.
+         *
+         * @param string $storeCode
+         */
+        public function setStoreCode($storeCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonBusinessProfileLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Listing ID of this Business Profile location. This is synced from the
-     * linked Business Profile account.
-     *
-     * @param string $listingId
-     */
-    public function setListingId($listingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getListingId()
-    {
-    }
-    /**
-     * Business Profile store code of this location. This is synced from the
-     * Business Profile account.
-     *
-     * @param string $storeCode
-     */
-    public function setStoreCode($storeCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreCode()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonBusinessProfileLocation extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonBusinessProfileLocation
     {
     }
 }

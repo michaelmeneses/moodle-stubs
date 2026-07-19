@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSColumnSpecCorrelatedColumn extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $columnId;
-    protected $correlationStatsType = XPSCorrelationStats::class;
-    protected $correlationStatsDataType = '';
-    /**
-     * @param int $columnId
-     */
-    public function setColumnId($columnId)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSColumnSpecCorrelatedColumn extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $columnId;
+        protected $correlationStatsType = XPSCorrelationStats::class;
+        protected $correlationStatsDataType = '';
+        /**
+         * @param int $columnId
+         */
+        public function setColumnId($columnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnId()
+        {
+        }
+        /**
+         * @param XPSCorrelationStats $correlationStats
+         */
+        public function setCorrelationStats(XPSCorrelationStats $correlationStats)
+        {
+        }
+        /**
+         * @return XPSCorrelationStats
+         */
+        public function getCorrelationStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSColumnSpecCorrelatedColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnId()
-    {
-    }
-    /**
-     * @param XPSCorrelationStats $correlationStats
-     */
-    public function setCorrelationStats(XPSCorrelationStats $correlationStats)
-    {
-    }
-    /**
-     * @return XPSCorrelationStats
-     */
-    public function getCorrelationStats()
+    class Google_Service_CloudNaturalLanguage_XPSColumnSpecCorrelatedColumn extends \Google\Service\CloudNaturalLanguage\XPSColumnSpecCorrelatedColumn
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealTermsGuaranteedFixedPriceTerms extends \Google\Collection
-{
-    protected $collection_key = 'fixedPrices';
-    protected $billingInfoType = DealTermsGuaranteedFixedPriceTermsBillingInfo::class;
-    protected $billingInfoDataType = '';
-    protected $fixedPricesType = PricePerBuyer::class;
-    protected $fixedPricesDataType = 'array';
-    public $guaranteedImpressions;
-    public $guaranteedLooks;
-    public $minimumDailyLooks;
+namespace Google\Service\AdExchangeBuyer {
+    class DealTermsGuaranteedFixedPriceTerms extends \Google\Collection
+    {
+        protected $collection_key = 'fixedPrices';
+        protected $billingInfoType = DealTermsGuaranteedFixedPriceTermsBillingInfo::class;
+        protected $billingInfoDataType = '';
+        protected $fixedPricesType = PricePerBuyer::class;
+        protected $fixedPricesDataType = 'array';
+        public $guaranteedImpressions;
+        public $guaranteedLooks;
+        public $minimumDailyLooks;
+        /**
+         * @param DealTermsGuaranteedFixedPriceTermsBillingInfo
+         */
+        public function setBillingInfo(DealTermsGuaranteedFixedPriceTermsBillingInfo $billingInfo)
+        {
+        }
+        /**
+         * @return DealTermsGuaranteedFixedPriceTermsBillingInfo
+         */
+        public function getBillingInfo()
+        {
+        }
+        /**
+         * @param PricePerBuyer[]
+         */
+        public function setFixedPrices($fixedPrices)
+        {
+        }
+        /**
+         * @return PricePerBuyer[]
+         */
+        public function getFixedPrices()
+        {
+        }
+        public function setGuaranteedImpressions($guaranteedImpressions)
+        {
+        }
+        public function getGuaranteedImpressions()
+        {
+        }
+        public function setGuaranteedLooks($guaranteedLooks)
+        {
+        }
+        public function getGuaranteedLooks()
+        {
+        }
+        public function setMinimumDailyLooks($minimumDailyLooks)
+        {
+        }
+        public function getMinimumDailyLooks()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param DealTermsGuaranteedFixedPriceTermsBillingInfo
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealTermsGuaranteedFixedPriceTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBillingInfo(DealTermsGuaranteedFixedPriceTermsBillingInfo $billingInfo)
-    {
-    }
-    /**
-     * @return DealTermsGuaranteedFixedPriceTermsBillingInfo
-     */
-    public function getBillingInfo()
-    {
-    }
-    /**
-     * @param PricePerBuyer[]
-     */
-    public function setFixedPrices($fixedPrices)
-    {
-    }
-    /**
-     * @return PricePerBuyer[]
-     */
-    public function getFixedPrices()
-    {
-    }
-    public function setGuaranteedImpressions($guaranteedImpressions)
-    {
-    }
-    public function getGuaranteedImpressions()
-    {
-    }
-    public function setGuaranteedLooks($guaranteedLooks)
-    {
-    }
-    public function getGuaranteedLooks()
-    {
-    }
-    public function setMinimumDailyLooks($minimumDailyLooks)
-    {
-    }
-    public function getMinimumDailyLooks()
+    class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTerms extends \Google\Service\AdExchangeBuyer\DealTermsGuaranteedFixedPriceTerms
     {
     }
 }

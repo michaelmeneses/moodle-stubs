@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class FileValidationReport extends \Google\Collection
-{
-    protected $collection_key = 'rowErrors';
-    protected $fileErrorsType = ImportError::class;
-    protected $fileErrorsDataType = 'array';
-    /**
-     * The name of the file.
-     *
-     * @var string
-     */
-    public $fileName;
-    /**
-     * Flag indicating that processing was aborted due to maximum number of
-     * errors.
-     *
-     * @var bool
-     */
-    public $partialReport;
-    protected $rowErrorsType = ImportRowError::class;
-    protected $rowErrorsDataType = 'array';
-    /**
-     * List of file level errors.
-     *
-     * @param ImportError[] $fileErrors
-     */
-    public function setFileErrors($fileErrors)
+namespace Google\Service\MigrationCenterAPI {
+    class FileValidationReport extends \Google\Collection
     {
+        protected $collection_key = 'rowErrors';
+        protected $fileErrorsType = ImportError::class;
+        protected $fileErrorsDataType = 'array';
+        /**
+         * The name of the file.
+         *
+         * @var string
+         */
+        public $fileName;
+        /**
+         * Flag indicating that processing was aborted due to maximum number of
+         * errors.
+         *
+         * @var bool
+         */
+        public $partialReport;
+        protected $rowErrorsType = ImportRowError::class;
+        protected $rowErrorsDataType = 'array';
+        /**
+         * List of file level errors.
+         *
+         * @param ImportError[] $fileErrors
+         */
+        public function setFileErrors($fileErrors)
+        {
+        }
+        /**
+         * @return ImportError[]
+         */
+        public function getFileErrors()
+        {
+        }
+        /**
+         * The name of the file.
+         *
+         * @param string $fileName
+         */
+        public function setFileName($fileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileName()
+        {
+        }
+        /**
+         * Flag indicating that processing was aborted due to maximum number of
+         * errors.
+         *
+         * @param bool $partialReport
+         */
+        public function setPartialReport($partialReport)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPartialReport()
+        {
+        }
+        /**
+         * Partial list of rows that encountered validation error.
+         *
+         * @param ImportRowError[] $rowErrors
+         */
+        public function setRowErrors($rowErrors)
+        {
+        }
+        /**
+         * @return ImportRowError[]
+         */
+        public function getRowErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportError[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\FileValidationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileErrors()
-    {
-    }
-    /**
-     * The name of the file.
-     *
-     * @param string $fileName
-     */
-    public function setFileName($fileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileName()
-    {
-    }
-    /**
-     * Flag indicating that processing was aborted due to maximum number of
-     * errors.
-     *
-     * @param bool $partialReport
-     */
-    public function setPartialReport($partialReport)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPartialReport()
-    {
-    }
-    /**
-     * Partial list of rows that encountered validation error.
-     *
-     * @param ImportRowError[] $rowErrors
-     */
-    public function setRowErrors($rowErrors)
-    {
-    }
-    /**
-     * @return ImportRowError[]
-     */
-    public function getRowErrors()
+    class Google_Service_MigrationCenterAPI_FileValidationReport extends \Google\Service\MigrationCenterAPI\FileValidationReport
     {
     }
 }

@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "videoTrainability" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $videoTrainability = $youtubeService->videoTrainability;
- *  </code>
- */
-class VideoTrainability extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\VideoTrainability as VideoTrainabilityModel;
     /**
-     * Returns the trainability status of a video. (videoTrainability.get)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string id The ID of the video to retrieve.
-     * @return VideoTrainabilityModel
-     * @throws \Google\Service\Exception
+     * The "videoTrainability" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $videoTrainability = $youtubeService->videoTrainability;
+     *  </code>
      */
-    public function get($optParams = [])
+    class VideoTrainability extends \Google\Service\Resource
+    {
+        /**
+         * Returns the trainability status of a video. (videoTrainability.get)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string id The ID of the video to retrieve.
+         * @return VideoTrainabilityModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\VideoTrainability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_VideoTrainability extends \Google\Service\YouTube\Resource\VideoTrainability
     {
     }
 }

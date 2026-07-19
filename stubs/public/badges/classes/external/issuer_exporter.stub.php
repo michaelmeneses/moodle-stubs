@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\external;
 
+use core\external\exporter;
 /**
  * Class for displaying a badge competency.
  *

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class Tag extends \Google\Model
-{
-    /**
-     * The name of the tag, for example: "projects/p1/locations/us-
-     * central1/repositories/repo1/packages/pkg1/tags/tag1". If the package part
-     * contains slashes, the slashes are escaped. The tag part can only have
-     * characters in [a-zA-Z0-9\-._~:@], anything else must be URL encoded.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the version the tag refers to, for example:
-     * `projects/p1/locations/us-
-     * central1/repositories/repo1/packages/pkg1/versions/sha256:5243811` If the
-     * package or version ID parts contain slashes, the slashes are escaped.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The name of the tag, for example: "projects/p1/locations/us-
-     * central1/repositories/repo1/packages/pkg1/tags/tag1". If the package part
-     * contains slashes, the slashes are escaped. The tag part can only have
-     * characters in [a-zA-Z0-9\-._~:@], anything else must be URL encoded.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ArtifactRegistry {
+    class Tag extends \Google\Model
     {
+        /**
+         * The name of the tag, for example: "projects/p1/locations/us-
+         * central1/repositories/repo1/packages/pkg1/tags/tag1". If the package part
+         * contains slashes, the slashes are escaped. The tag part can only have
+         * characters in [a-zA-Z0-9\-._~:@], anything else must be URL encoded.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the version the tag refers to, for example:
+         * `projects/p1/locations/us-
+         * central1/repositories/repo1/packages/pkg1/versions/sha256:5243811` If the
+         * package or version ID parts contain slashes, the slashes are escaped.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The name of the tag, for example: "projects/p1/locations/us-
+         * central1/repositories/repo1/packages/pkg1/tags/tag1". If the package part
+         * contains slashes, the slashes are escaped. The tag part can only have
+         * characters in [a-zA-Z0-9\-._~:@], anything else must be URL encoded.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The name of the version the tag refers to, for example:
+         * `projects/p1/locations/us-
+         * central1/repositories/repo1/packages/pkg1/versions/sha256:5243811` If the
+         * package or version ID parts contain slashes, the slashes are escaped.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Tag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The name of the version the tag refers to, for example:
-     * `projects/p1/locations/us-
-     * central1/repositories/repo1/packages/pkg1/versions/sha256:5243811` If the
-     * package or version ID parts contain slashes, the slashes are escaped.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ArtifactRegistry_Tag extends \Google\Service\ArtifactRegistry\Tag
     {
     }
 }

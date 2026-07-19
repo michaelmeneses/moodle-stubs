@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetSslProxiesSetBackendServiceRequest extends \Google\Model
-{
-    /**
-     * The URL of the new BackendService resource for the targetSslProxy.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The URL of the new BackendService resource for the targetSslProxy.
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\Compute {
+    class TargetSslProxiesSetBackendServiceRequest extends \Google\Model
     {
+        /**
+         * The URL of the new BackendService resource for the targetSslProxy.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The URL of the new BackendService resource for the targetSslProxy.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\TargetSslProxiesSetBackendServiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_Compute_TargetSslProxiesSetBackendServiceRequest extends \Google\Service\Compute\TargetSslProxiesSetBackendServiceRequest
     {
     }
 }

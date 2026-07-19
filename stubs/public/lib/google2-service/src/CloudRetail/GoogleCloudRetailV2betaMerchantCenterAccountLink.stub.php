@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaMerchantCenterAccountLink extends \Google\Collection
-{
-    protected $collection_key = 'feedFilters';
-    /**
-     * @var string
-     */
-    public $branchId;
-    protected $feedFiltersType = GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter::class;
-    protected $feedFiltersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $feedLabel;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @var string
-     */
-    public $merchantCenterAccountId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setBranchId($branchId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaMerchantCenterAccountLink extends \Google\Collection
     {
+        protected $collection_key = 'feedFilters';
+        /**
+         * @var string
+         */
+        public $branchId;
+        protected $feedFiltersType = GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter::class;
+        protected $feedFiltersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $feedLabel;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @var string
+         */
+        public $merchantCenterAccountId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setBranchId($branchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranchId()
+        {
+        }
+        /**
+         * @param GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter[]
+         */
+        public function setFeedFilters($feedFilters)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter[]
+         */
+        public function getFeedFilters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFeedLabel($feedLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeedLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantCenterAccountId($merchantCenterAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantCenterAccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaMerchantCenterAccountLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranchId()
-    {
-    }
-    /**
-     * @param GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter[]
-     */
-    public function setFeedFilters($feedFilters)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter[]
-     */
-    public function getFeedFilters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFeedLabel($feedLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeedLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantCenterAccountId($merchantCenterAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantCenterAccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaMerchantCenterAccountLink extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaMerchantCenterAccountLink
     {
     }
 }

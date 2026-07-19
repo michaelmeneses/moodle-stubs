@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class PreCheckResponse extends \Google\Collection
-{
-    /**
-     * Default unspecified value to prevent unintended behavior changes.
-     */
-    public const MESSAGE_TYPE_MESSAGE_TYPE_UNSPECIFIED = 'MESSAGE_TYPE_UNSPECIFIED';
-    /**
-     * General informational messages that don't require action.
-     */
-    public const MESSAGE_TYPE_INFO = 'INFO';
-    /**
-     * Warnings that might impact the upgrade but don't block it.
-     */
-    public const MESSAGE_TYPE_WARNING = 'WARNING';
-    /**
-     * Errors that a user must resolve before proceeding with the upgrade.
-     */
-    public const MESSAGE_TYPE_ERROR = 'ERROR';
-    protected $collection_key = 'actionsRequired';
-    /**
-     * The actions that the user needs to take. Use repeated for multiple actions.
-     *
-     * @var string[]
-     */
-    public $actionsRequired;
-    /**
-     * The message to be displayed to the user.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The type of message whether it is an info, warning, or error.
-     *
-     * @var string
-     */
-    public $messageType;
-    /**
-     * The actions that the user needs to take. Use repeated for multiple actions.
-     *
-     * @param string[] $actionsRequired
-     */
-    public function setActionsRequired($actionsRequired)
+namespace Google\Service\SQLAdmin {
+    class PreCheckResponse extends \Google\Collection
     {
+        /**
+         * Default unspecified value to prevent unintended behavior changes.
+         */
+        public const MESSAGE_TYPE_MESSAGE_TYPE_UNSPECIFIED = 'MESSAGE_TYPE_UNSPECIFIED';
+        /**
+         * General informational messages that don't require action.
+         */
+        public const MESSAGE_TYPE_INFO = 'INFO';
+        /**
+         * Warnings that might impact the upgrade but don't block it.
+         */
+        public const MESSAGE_TYPE_WARNING = 'WARNING';
+        /**
+         * Errors that a user must resolve before proceeding with the upgrade.
+         */
+        public const MESSAGE_TYPE_ERROR = 'ERROR';
+        protected $collection_key = 'actionsRequired';
+        /**
+         * The actions that the user needs to take. Use repeated for multiple actions.
+         *
+         * @var string[]
+         */
+        public $actionsRequired;
+        /**
+         * The message to be displayed to the user.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The type of message whether it is an info, warning, or error.
+         *
+         * @var string
+         */
+        public $messageType;
+        /**
+         * The actions that the user needs to take. Use repeated for multiple actions.
+         *
+         * @param string[] $actionsRequired
+         */
+        public function setActionsRequired($actionsRequired)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActionsRequired()
+        {
+        }
+        /**
+         * The message to be displayed to the user.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The type of message whether it is an info, warning, or error.
+         *
+         * Accepted values: MESSAGE_TYPE_UNSPECIFIED, INFO, WARNING, ERROR
+         *
+         * @param self::MESSAGE_TYPE_* $messageType
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return self::MESSAGE_TYPE_*
+         */
+        public function getMessageType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SQLAdmin\PreCheckResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionsRequired()
-    {
-    }
-    /**
-     * The message to be displayed to the user.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The type of message whether it is an info, warning, or error.
-     *
-     * Accepted values: MESSAGE_TYPE_UNSPECIFIED, INFO, WARNING, ERROR
-     *
-     * @param self::MESSAGE_TYPE_* $messageType
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return self::MESSAGE_TYPE_*
-     */
-    public function getMessageType()
+    class Google_Service_SQLAdmin_PreCheckResponse extends \Google\Service\SQLAdmin\PreCheckResponse
     {
     }
 }

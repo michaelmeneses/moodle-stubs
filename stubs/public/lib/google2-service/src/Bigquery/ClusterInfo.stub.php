@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ClusterInfo extends \Google\Model
-{
-    /**
-     * Centroid id.
-     *
-     * @var string
-     */
-    public $centroidId;
-    /**
-     * Cluster radius, the average distance from centroid to each point assigned
-     * to the cluster.
-     *
-     * @var 
-     */
-    public $clusterRadius;
-    /**
-     * Cluster size, the total number of points assigned to the cluster.
-     *
-     * @var string
-     */
-    public $clusterSize;
-    /**
-     * Centroid id.
-     *
-     * @param string $centroidId
-     */
-    public function setCentroidId($centroidId)
+namespace Google\Service\Bigquery {
+    class ClusterInfo extends \Google\Model
     {
+        /**
+         * Centroid id.
+         *
+         * @var string
+         */
+        public $centroidId;
+        /**
+         * Cluster radius, the average distance from centroid to each point assigned
+         * to the cluster.
+         *
+         * @var 
+         */
+        public $clusterRadius;
+        /**
+         * Cluster size, the total number of points assigned to the cluster.
+         *
+         * @var string
+         */
+        public $clusterSize;
+        /**
+         * Centroid id.
+         *
+         * @param string $centroidId
+         */
+        public function setCentroidId($centroidId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCentroidId()
+        {
+        }
+        public function setClusterRadius($clusterRadius)
+        {
+        }
+        public function getClusterRadius()
+        {
+        }
+        /**
+         * Cluster size, the total number of points assigned to the cluster.
+         *
+         * @param string $clusterSize
+         */
+        public function setClusterSize($clusterSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ClusterInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCentroidId()
-    {
-    }
-    public function setClusterRadius($clusterRadius)
-    {
-    }
-    public function getClusterRadius()
-    {
-    }
-    /**
-     * Cluster size, the total number of points assigned to the cluster.
-     *
-     * @param string $clusterSize
-     */
-    public function setClusterSize($clusterSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterSize()
+    class Google_Service_Bigquery_ClusterInfo extends \Google\Service\Bigquery\ClusterInfo
     {
     }
 }

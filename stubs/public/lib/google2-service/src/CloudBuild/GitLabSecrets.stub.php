@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitLabSecrets extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $apiAccessTokenVersion;
-    /**
-     * @var string
-     */
-    public $apiKeyVersion;
-    /**
-     * @var string
-     */
-    public $readAccessTokenVersion;
-    /**
-     * @var string
-     */
-    public $webhookSecretVersion;
-    /**
-     * @param string
-     */
-    public function setApiAccessTokenVersion($apiAccessTokenVersion)
+namespace Google\Service\CloudBuild {
+    class GitLabSecrets extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $apiAccessTokenVersion;
+        /**
+         * @var string
+         */
+        public $apiKeyVersion;
+        /**
+         * @var string
+         */
+        public $readAccessTokenVersion;
+        /**
+         * @var string
+         */
+        public $webhookSecretVersion;
+        /**
+         * @param string
+         */
+        public function setApiAccessTokenVersion($apiAccessTokenVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiAccessTokenVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setApiKeyVersion($apiKeyVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKeyVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadAccessTokenVersion($readAccessTokenVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadAccessTokenVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookSecretVersion($webhookSecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitLabSecrets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiAccessTokenVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setApiKeyVersion($apiKeyVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApiKeyVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadAccessTokenVersion($readAccessTokenVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadAccessTokenVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookSecretVersion($webhookSecretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretVersion()
+    class Google_Service_CloudBuild_GitLabSecrets extends \Google\Service\CloudBuild\GitLabSecrets
     {
     }
 }

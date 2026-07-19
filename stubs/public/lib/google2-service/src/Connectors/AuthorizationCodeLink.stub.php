@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class AuthorizationCodeLink extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string[]
-     */
-    public function setScopes($scopes)
+namespace Google\Service\Connectors {
+    class AuthorizationCodeLink extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string[]
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Connectors\AuthorizationCodeLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScopes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Connectors_AuthorizationCodeLink extends \Google\Service\Connectors\AuthorizationCodeLink
     {
     }
 }

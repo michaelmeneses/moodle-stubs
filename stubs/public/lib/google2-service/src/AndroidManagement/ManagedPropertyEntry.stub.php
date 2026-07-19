@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ManagedPropertyEntry extends \Google\Model
-{
-    /**
-     * The human-readable name of the value. Localized.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The machine-readable value of the entry, which should be used in the
-     * configuration. Not localized.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The human-readable name of the value. Localized.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AndroidManagement {
+    class ManagedPropertyEntry extends \Google\Model
     {
+        /**
+         * The human-readable name of the value. Localized.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The machine-readable value of the entry, which should be used in the
+         * configuration. Not localized.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The human-readable name of the value. Localized.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The machine-readable value of the entry, which should be used in the
+         * configuration. Not localized.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ManagedPropertyEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The machine-readable value of the entry, which should be used in the
-     * configuration. Not localized.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_AndroidManagement_ManagedPropertyEntry extends \Google\Service\AndroidManagement\ManagedPropertyEntry
     {
     }
 }

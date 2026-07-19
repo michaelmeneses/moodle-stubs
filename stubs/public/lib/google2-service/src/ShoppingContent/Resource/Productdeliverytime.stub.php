@@ -21,57 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "productdeliverytime" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $productdeliverytime = $contentService->productdeliverytime;
- *  </code>
- */
-class Productdeliverytime extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\ProductDeliveryTime as ProductDeliveryTimeModel;
     /**
-     * Creates or updates the delivery time of a product.
-     * (productdeliverytime.create)
-     *
-     * @param string $merchantId The Google merchant ID of the account that contains
-     * the product. This account cannot be a multi-client account.
-     * @param ProductDeliveryTimeModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return ProductDeliveryTimeModel
-     * @throws \Google\Service\Exception
+     * The "productdeliverytime" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $productdeliverytime = $contentService->productdeliverytime;
+     *  </code>
      */
-    public function create($merchantId, ProductDeliveryTimeModel $postBody, $optParams = [])
+    class Productdeliverytime extends \Google\Service\Resource
     {
+        /**
+         * Creates or updates the delivery time of a product.
+         * (productdeliverytime.create)
+         *
+         * @param string $merchantId The Google merchant ID of the account that contains
+         * the product. This account cannot be a multi-client account.
+         * @param ProductDeliveryTimeModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return ProductDeliveryTimeModel
+         * @throws \Google\Service\Exception
+         */
+        public function create($merchantId, ProductDeliveryTimeModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the delivery time of a product. (productdeliverytime.delete)
+         *
+         * @param string $merchantId Required. The Google merchant ID of the account
+         * that contains the product. This account cannot be a multi-client account.
+         * @param string $productId Required. The Content API ID of the product, in the
+         * form `channel:contentLanguage:targetCountry:offerId`.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($merchantId, $productId, $optParams = [])
+        {
+        }
+        /**
+         * Gets `productDeliveryTime` by `productId`. (productdeliverytime.get)
+         *
+         * @param string $merchantId Required. The Google merchant ID of the account
+         * that contains the product. This account cannot be a multi-client account.
+         * @param string $productId Required. The Content API ID of the product, in the
+         * form `channel:contentLanguage:targetCountry:offerId`.
+         * @param array $optParams Optional parameters.
+         * @return ProductDeliveryTimeModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $productId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the delivery time of a product. (productdeliverytime.delete)
-     *
-     * @param string $merchantId Required. The Google merchant ID of the account
-     * that contains the product. This account cannot be a multi-client account.
-     * @param string $productId Required. The Content API ID of the product, in the
-     * form `channel:contentLanguage:targetCountry:offerId`.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Productdeliverytime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($merchantId, $productId, $optParams = [])
-    {
-    }
-    /**
-     * Gets `productDeliveryTime` by `productId`. (productdeliverytime.get)
-     *
-     * @param string $merchantId Required. The Google merchant ID of the account
-     * that contains the product. This account cannot be a multi-client account.
-     * @param string $productId Required. The Content API ID of the product, in the
-     * form `channel:contentLanguage:targetCountry:offerId`.
-     * @param array $optParams Optional parameters.
-     * @return ProductDeliveryTimeModel
-     * @throws \Google\Service\Exception
-     */
-    public function get($merchantId, $productId, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Productdeliverytime extends \Google\Service\ShoppingContent\Resource\Productdeliverytime
     {
     }
 }

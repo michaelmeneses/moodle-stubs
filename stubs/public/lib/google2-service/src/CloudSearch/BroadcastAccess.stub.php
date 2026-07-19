@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BroadcastAccess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accessPolicy;
-    /**
-     * @var string
-     */
-    public $viewUrl;
-    /**
-     * @param string
-     */
-    public function setAccessPolicy($accessPolicy)
+namespace Google\Service\CloudSearch {
+    class BroadcastAccess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accessPolicy;
+        /**
+         * @var string
+         */
+        public $viewUrl;
+        /**
+         * @param string
+         */
+        public function setAccessPolicy($accessPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setViewUrl($viewUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\BroadcastAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setViewUrl($viewUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewUrl()
+    class Google_Service_CloudSearch_BroadcastAccess extends \Google\Service\CloudSearch\BroadcastAccess
     {
     }
 }

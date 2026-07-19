@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PostgresqlRdbms extends \Google\Collection
-{
-    protected $collection_key = 'postgresqlSchemas';
-    protected $postgresqlSchemasType = PostgresqlSchema::class;
-    protected $postgresqlSchemasDataType = 'array';
-    /**
-     * PostgreSQL schemas in the database server.
-     *
-     * @param PostgresqlSchema[] $postgresqlSchemas
-     */
-    public function setPostgresqlSchemas($postgresqlSchemas)
+namespace Google\Service\Datastream {
+    class PostgresqlRdbms extends \Google\Collection
     {
+        protected $collection_key = 'postgresqlSchemas';
+        protected $postgresqlSchemasType = PostgresqlSchema::class;
+        protected $postgresqlSchemasDataType = 'array';
+        /**
+         * PostgreSQL schemas in the database server.
+         *
+         * @param PostgresqlSchema[] $postgresqlSchemas
+         */
+        public function setPostgresqlSchemas($postgresqlSchemas)
+        {
+        }
+        /**
+         * @return PostgresqlSchema[]
+         */
+        public function getPostgresqlSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostgresqlSchema[]
+     * Runtime class alias of \Google\Service\Datastream\PostgresqlRdbms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostgresqlSchemas()
+    class Google_Service_Datastream_PostgresqlRdbms extends \Google\Service\Datastream\PostgresqlRdbms
     {
     }
 }

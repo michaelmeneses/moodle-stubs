@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworksGetEffectiveFirewallsResponseEffectiveFirewallPolicy extends \Google\Collection
-{
-    public const TYPE_HIERARCHY = 'HIERARCHY';
-    public const TYPE_NETWORK = 'NETWORK';
-    public const TYPE_SYSTEM = 'SYSTEM';
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    protected $collection_key = 'rules';
-    /**
-     * Output only. [Output Only] Deprecated, please use short name instead. The
-     * display name of the firewall policy.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. [Output Only] The name of the firewall policy.
-     *
-     * @var string
-     */
-    public $name;
-    protected $packetMirroringRulesType = FirewallPolicyRule::class;
-    protected $packetMirroringRulesDataType = 'array';
-    /**
-     * Output only. [Output only] Priority of firewall policy association. Not
-     * applicable for type=HIERARCHY.
-     *
-     * @var int
-     */
-    public $priority;
-    protected $rulesType = FirewallPolicyRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Output only. [Output Only] The short name of the firewall policy.
-     *
-     * @var string
-     */
-    public $shortName;
-    /**
-     * Output only. [Output Only] The type of the firewall policy.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. [Output Only] Deprecated, please use short name instead. The
-     * display name of the firewall policy.
-     *
-     * @deprecated
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Compute {
+    class NetworksGetEffectiveFirewallsResponseEffectiveFirewallPolicy extends \Google\Collection
     {
+        public const TYPE_HIERARCHY = 'HIERARCHY';
+        public const TYPE_NETWORK = 'NETWORK';
+        public const TYPE_SYSTEM = 'SYSTEM';
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        protected $collection_key = 'rules';
+        /**
+         * Output only. [Output Only] Deprecated, please use short name instead. The
+         * display name of the firewall policy.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. [Output Only] The name of the firewall policy.
+         *
+         * @var string
+         */
+        public $name;
+        protected $packetMirroringRulesType = FirewallPolicyRule::class;
+        protected $packetMirroringRulesDataType = 'array';
+        /**
+         * Output only. [Output only] Priority of firewall policy association. Not
+         * applicable for type=HIERARCHY.
+         *
+         * @var int
+         */
+        public $priority;
+        protected $rulesType = FirewallPolicyRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Output only. [Output Only] The short name of the firewall policy.
+         *
+         * @var string
+         */
+        public $shortName;
+        /**
+         * Output only. [Output Only] The type of the firewall policy.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. [Output Only] Deprecated, please use short name instead. The
+         * display name of the firewall policy.
+         *
+         * @deprecated
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of the firewall policy.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The packet mirroring rules that apply to the
+         * network.
+         *
+         * @param FirewallPolicyRule[] $packetMirroringRules
+         */
+        public function setPacketMirroringRules($packetMirroringRules)
+        {
+        }
+        /**
+         * @return FirewallPolicyRule[]
+         */
+        public function getPacketMirroringRules()
+        {
+        }
+        /**
+         * Output only. [Output only] Priority of firewall policy association. Not
+         * applicable for type=HIERARCHY.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * [Output Only] The rules that apply to the network.
+         *
+         * @param FirewallPolicyRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return FirewallPolicyRule[]
+         */
+        public function getRules()
+        {
+        }
+        /**
+         * Output only. [Output Only] The short name of the firewall policy.
+         *
+         * @param string $shortName
+         */
+        public function setShortName($shortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The type of the firewall policy.
+         *
+         * Accepted values: HIERARCHY, NETWORK, SYSTEM, UNSPECIFIED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NetworksGetEffectiveFirewallsResponseEffectiveFirewallPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of the firewall policy.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The packet mirroring rules that apply to the
-     * network.
-     *
-     * @param FirewallPolicyRule[] $packetMirroringRules
-     */
-    public function setPacketMirroringRules($packetMirroringRules)
-    {
-    }
-    /**
-     * @return FirewallPolicyRule[]
-     */
-    public function getPacketMirroringRules()
-    {
-    }
-    /**
-     * Output only. [Output only] Priority of firewall policy association. Not
-     * applicable for type=HIERARCHY.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * [Output Only] The rules that apply to the network.
-     *
-     * @param FirewallPolicyRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return FirewallPolicyRule[]
-     */
-    public function getRules()
-    {
-    }
-    /**
-     * Output only. [Output Only] The short name of the firewall policy.
-     *
-     * @param string $shortName
-     */
-    public function setShortName($shortName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The type of the firewall policy.
-     *
-     * Accepted values: HIERARCHY, NETWORK, SYSTEM, UNSPECIFIED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Compute_NetworksGetEffectiveFirewallsResponseEffectiveFirewallPolicy extends \Google\Service\Compute\NetworksGetEffectiveFirewallsResponseEffectiveFirewallPolicy
     {
     }
 }

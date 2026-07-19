@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1BatchDocumentsInputConfig extends \Google\Model
-{
-    protected $gcsDocumentsType = GoogleCloudDocumentaiV1GcsDocuments::class;
-    protected $gcsDocumentsDataType = '';
-    protected $gcsPrefixType = GoogleCloudDocumentaiV1GcsPrefix::class;
-    protected $gcsPrefixDataType = '';
-    /**
-     * The set of documents individually specified on Cloud Storage.
-     *
-     * @param GoogleCloudDocumentaiV1GcsDocuments $gcsDocuments
-     */
-    public function setGcsDocuments(GoogleCloudDocumentaiV1GcsDocuments $gcsDocuments)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1BatchDocumentsInputConfig extends \Google\Model
     {
+        protected $gcsDocumentsType = GoogleCloudDocumentaiV1GcsDocuments::class;
+        protected $gcsDocumentsDataType = '';
+        protected $gcsPrefixType = GoogleCloudDocumentaiV1GcsPrefix::class;
+        protected $gcsPrefixDataType = '';
+        /**
+         * The set of documents individually specified on Cloud Storage.
+         *
+         * @param GoogleCloudDocumentaiV1GcsDocuments $gcsDocuments
+         */
+        public function setGcsDocuments(GoogleCloudDocumentaiV1GcsDocuments $gcsDocuments)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1GcsDocuments
+         */
+        public function getGcsDocuments()
+        {
+        }
+        /**
+         * The set of documents that match the specified Cloud Storage `gcs_prefix`.
+         *
+         * @param GoogleCloudDocumentaiV1GcsPrefix $gcsPrefix
+         */
+        public function setGcsPrefix(GoogleCloudDocumentaiV1GcsPrefix $gcsPrefix)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1GcsPrefix
+         */
+        public function getGcsPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1GcsDocuments
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1BatchDocumentsInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDocuments()
-    {
-    }
-    /**
-     * The set of documents that match the specified Cloud Storage `gcs_prefix`.
-     *
-     * @param GoogleCloudDocumentaiV1GcsPrefix $gcsPrefix
-     */
-    public function setGcsPrefix(GoogleCloudDocumentaiV1GcsPrefix $gcsPrefix)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1GcsPrefix
-     */
-    public function getGcsPrefix()
+    class Google_Service_Document_GoogleCloudDocumentaiV1BatchDocumentsInputConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1BatchDocumentsInputConfig
     {
     }
 }

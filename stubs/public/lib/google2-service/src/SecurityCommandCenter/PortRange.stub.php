@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class PortRange extends \Google\Model
-{
-    /**
-     * Maximum port value.
-     *
-     * @var string
-     */
-    public $max;
-    /**
-     * Minimum port value.
-     *
-     * @var string
-     */
-    public $min;
-    /**
-     * Maximum port value.
-     *
-     * @param string $max
-     */
-    public function setMax($max)
+namespace Google\Service\SecurityCommandCenter {
+    class PortRange extends \Google\Model
     {
+        /**
+         * Maximum port value.
+         *
+         * @var string
+         */
+        public $max;
+        /**
+         * Minimum port value.
+         *
+         * @var string
+         */
+        public $min;
+        /**
+         * Maximum port value.
+         *
+         * @param string $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Minimum port value.
+         *
+         * @param string $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\PortRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * Minimum port value.
-     *
-     * @param string $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMin()
+    class Google_Service_SecurityCommandCenter_PortRange extends \Google\Service\SecurityCommandCenter\PortRange
     {
     }
 }

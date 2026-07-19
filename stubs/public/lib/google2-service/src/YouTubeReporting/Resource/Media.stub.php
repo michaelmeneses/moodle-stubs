@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubereportingService = new Google\Service\YouTubeReporting(...);
- *   $media = $youtubereportingService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\YouTubeReporting\Resource {
+    use Google\Service\YouTubeReporting\GdataMedia;
     /**
-     * Method for media download. Download is supported on the URI
-     * `/v1/media/{+name}?alt=media`. (media.download)
-     *
-     * @param string $resourceName Name of the media that is being downloaded.
-     * @param array $optParams Optional parameters.
-     * @return GdataMedia
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubereportingService = new Google\Service\YouTubeReporting(...);
+     *   $media = $youtubereportingService->media;
+     *  </code>
      */
-    public function download($resourceName, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Method for media download. Download is supported on the URI
+         * `/v1/media/{+name}?alt=media`. (media.download)
+         *
+         * @param string $resourceName Name of the media that is being downloaded.
+         * @param array $optParams Optional parameters.
+         * @return GdataMedia
+         * @throws \Google\Service\Exception
+         */
+        public function download($resourceName, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTubeReporting\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTubeReporting_Resource_Media extends \Google\Service\YouTubeReporting\Resource\Media
     {
     }
 }

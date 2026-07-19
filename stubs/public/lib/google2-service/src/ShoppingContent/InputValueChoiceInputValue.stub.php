@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InputValueChoiceInputValue extends \Google\Model
-{
-    /**
-     * Required. Id of the option that was selected by the merchant.
-     *
-     * @var string
-     */
-    public $choiceInputOptionId;
-    /**
-     * Required. Id of the option that was selected by the merchant.
-     *
-     * @param string $choiceInputOptionId
-     */
-    public function setChoiceInputOptionId($choiceInputOptionId)
+namespace Google\Service\ShoppingContent {
+    class InputValueChoiceInputValue extends \Google\Model
     {
+        /**
+         * Required. Id of the option that was selected by the merchant.
+         *
+         * @var string
+         */
+        public $choiceInputOptionId;
+        /**
+         * Required. Id of the option that was selected by the merchant.
+         *
+         * @param string $choiceInputOptionId
+         */
+        public function setChoiceInputOptionId($choiceInputOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChoiceInputOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\InputValueChoiceInputValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChoiceInputOptionId()
+    class Google_Service_ShoppingContent_InputValueChoiceInputValue extends \Google\Service\ShoppingContent\InputValueChoiceInputValue
     {
     }
 }

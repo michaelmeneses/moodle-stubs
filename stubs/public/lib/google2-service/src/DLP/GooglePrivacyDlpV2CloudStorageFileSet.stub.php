@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CloudStorageFileSet extends \Google\Model
-{
-    /**
-     * The url, in the format `gs:`. Trailing wildcard in the path is allowed.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The url, in the format `gs:`. Trailing wildcard in the path is allowed.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CloudStorageFileSet extends \Google\Model
     {
+        /**
+         * The url, in the format `gs:`. Trailing wildcard in the path is allowed.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The url, in the format `gs:`. Trailing wildcard in the path is allowed.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CloudStorageFileSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_DLP_GooglePrivacyDlpV2CloudStorageFileSet extends \Google\Service\DLP\GooglePrivacyDlpV2CloudStorageFileSet
     {
     }
 }

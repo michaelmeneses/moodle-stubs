@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListBackupSchedulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'backupSchedules';
-    protected $backupSchedulesType = BackupSchedule::class;
-    protected $backupSchedulesDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListBackupSchedules call to
-     * fetch more of the schedules.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of backup schedules for a database.
-     *
-     * @param BackupSchedule[] $backupSchedules
-     */
-    public function setBackupSchedules($backupSchedules)
+namespace Google\Service\Spanner {
+    class ListBackupSchedulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'backupSchedules';
+        protected $backupSchedulesType = BackupSchedule::class;
+        protected $backupSchedulesDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListBackupSchedules call to
+         * fetch more of the schedules.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of backup schedules for a database.
+         *
+         * @param BackupSchedule[] $backupSchedules
+         */
+        public function setBackupSchedules($backupSchedules)
+        {
+        }
+        /**
+         * @return BackupSchedule[]
+         */
+        public function getBackupSchedules()
+        {
+        }
+        /**
+         * `next_page_token` can be sent in a subsequent ListBackupSchedules call to
+         * fetch more of the schedules.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupSchedule[]
+     * Runtime class alias of \Google\Service\Spanner\ListBackupSchedulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupSchedules()
-    {
-    }
-    /**
-     * `next_page_token` can be sent in a subsequent ListBackupSchedules call to
-     * fetch more of the schedules.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Spanner_ListBackupSchedulesResponse extends \Google\Service\Spanner\ListBackupSchedulesResponse
     {
     }
 }

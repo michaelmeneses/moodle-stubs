@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors extends \Google\Collection
-{
-    protected $collection_key = 'neighbors';
-    /**
-     * The ID of the query datapoint.
-     *
-     * @var string
-     */
-    public $id;
-    protected $neighborsType = GoogleCloudAiplatformV1FindNeighborsResponseNeighbor::class;
-    protected $neighborsDataType = 'array';
-    /**
-     * The ID of the query datapoint.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors extends \Google\Collection
     {
+        protected $collection_key = 'neighbors';
+        /**
+         * The ID of the query datapoint.
+         *
+         * @var string
+         */
+        public $id;
+        protected $neighborsType = GoogleCloudAiplatformV1FindNeighborsResponseNeighbor::class;
+        protected $neighborsDataType = 'array';
+        /**
+         * The ID of the query datapoint.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * All its neighbors.
+         *
+         * @param GoogleCloudAiplatformV1FindNeighborsResponseNeighbor[] $neighbors
+         */
+        public function setNeighbors($neighbors)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FindNeighborsResponseNeighbor[]
+         */
+        public function getNeighbors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * All its neighbors.
-     *
-     * @param GoogleCloudAiplatformV1FindNeighborsResponseNeighbor[] $neighbors
-     */
-    public function setNeighbors($neighbors)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FindNeighborsResponseNeighbor[]
-     */
-    public function getNeighbors()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors
     {
     }
 }

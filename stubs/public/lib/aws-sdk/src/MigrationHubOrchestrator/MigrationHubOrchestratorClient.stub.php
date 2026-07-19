@@ -8,6 +8,7 @@
  */
 namespace Aws\MigrationHubOrchestrator;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Migration Hub Orchestrator** service.
  * @method \Aws\Result createTemplate(array $args = [])

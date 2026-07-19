@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderShipmentScheduledDeliveryDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $carrierPhoneNumber;
-    /**
-     * @var string
-     */
-    public $scheduledDate;
-    /**
-     * @param string
-     */
-    public function setCarrierPhoneNumber($carrierPhoneNumber)
+namespace Google\Service\ShoppingContent {
+    class OrderShipmentScheduledDeliveryDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $carrierPhoneNumber;
+        /**
+         * @var string
+         */
+        public $scheduledDate;
+        /**
+         * @param string
+         */
+        public function setCarrierPhoneNumber($carrierPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrierPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScheduledDate($scheduledDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduledDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderShipmentScheduledDeliveryDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrierPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScheduledDate($scheduledDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduledDate()
+    class Google_Service_ShoppingContent_OrderShipmentScheduledDeliveryDetails extends \Google\Service\ShoppingContent\OrderShipmentScheduledDeliveryDetails
     {
     }
 }

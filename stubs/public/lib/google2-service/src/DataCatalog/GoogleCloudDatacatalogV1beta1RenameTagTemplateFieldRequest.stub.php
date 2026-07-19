@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends \Google\Model
-{
-    public $newTagTemplateFieldId;
-    public function setNewTagTemplateFieldId($newTagTemplateFieldId)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends \Google\Model
     {
+        public $newTagTemplateFieldId;
+        public function setNewTagTemplateFieldId($newTagTemplateFieldId)
+        {
+        }
+        public function getNewTagTemplateFieldId()
+        {
+        }
     }
-    public function getNewTagTemplateFieldId()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest
     {
     }
 }

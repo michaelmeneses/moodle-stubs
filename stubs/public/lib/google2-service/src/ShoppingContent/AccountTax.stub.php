@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountTax extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * Required. The ID of the account to which these account tax settings belong.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountTax`".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $rulesType = AccountTaxTaxRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Required. The ID of the account to which these account tax settings belong.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class AccountTax extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * Required. The ID of the account to which these account tax settings belong.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountTax`".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $rulesType = AccountTaxTaxRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Required. The ID of the account to which these account tax settings belong.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountTax`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Tax rules. Updating the tax rules will enable "US" taxes (not reversible).
+         * Defining no rules is equivalent to not charging tax at all.
+         *
+         * @param AccountTaxTaxRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return AccountTaxTaxRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountTax registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountTax`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Tax rules. Updating the tax rules will enable "US" taxes (not reversible).
-     * Defining no rules is equivalent to not charging tax at all.
-     *
-     * @param AccountTaxTaxRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return AccountTaxTaxRule[]
-     */
-    public function getRules()
+    class Google_Service_ShoppingContent_AccountTax extends \Google\Service\ShoppingContent\AccountTax
     {
     }
 }

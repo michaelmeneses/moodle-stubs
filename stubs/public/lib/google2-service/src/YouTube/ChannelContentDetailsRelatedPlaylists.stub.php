@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelContentDetailsRelatedPlaylists extends \Google\Model
-{
-    /**
-     * The ID of the playlist that contains the channel"s favorite videos. Use the
-     * playlistItems.insert and playlistItems.delete to add or remove items from
-     * that list.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $favorites;
-    /**
-     * The ID of the playlist that contains the channel"s liked videos. Use the
-     * playlistItems.insert and playlistItems.delete to add or remove items from
-     * that list.
-     *
-     * @var string
-     */
-    public $likes;
-    /**
-     * The ID of the playlist that contains the channel"s uploaded videos. Use the
-     * videos.insert method to upload new videos and the videos.delete method to
-     * delete previously uploaded videos.
-     *
-     * @var string
-     */
-    public $uploads;
-    /**
-     * The ID of the playlist that contains the channel"s watch history. Use the
-     * playlistItems.insert and playlistItems.delete to add or remove items from
-     * that list.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $watchHistory;
-    /**
-     * The ID of the playlist that contains the channel"s watch later playlist.
-     * Use the playlistItems.insert and playlistItems.delete to add or remove
-     * items from that list.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $watchLater;
-    /**
-     * The ID of the playlist that contains the channel"s favorite videos. Use the
-     * playlistItems.insert and playlistItems.delete to add or remove items from
-     * that list.
-     *
-     * @deprecated
-     * @param string $favorites
-     */
-    public function setFavorites($favorites)
+namespace Google\Service\YouTube {
+    class ChannelContentDetailsRelatedPlaylists extends \Google\Model
     {
+        /**
+         * The ID of the playlist that contains the channel"s favorite videos. Use the
+         * playlistItems.insert and playlistItems.delete to add or remove items from
+         * that list.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $favorites;
+        /**
+         * The ID of the playlist that contains the channel"s liked videos. Use the
+         * playlistItems.insert and playlistItems.delete to add or remove items from
+         * that list.
+         *
+         * @var string
+         */
+        public $likes;
+        /**
+         * The ID of the playlist that contains the channel"s uploaded videos. Use the
+         * videos.insert method to upload new videos and the videos.delete method to
+         * delete previously uploaded videos.
+         *
+         * @var string
+         */
+        public $uploads;
+        /**
+         * The ID of the playlist that contains the channel"s watch history. Use the
+         * playlistItems.insert and playlistItems.delete to add or remove items from
+         * that list.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $watchHistory;
+        /**
+         * The ID of the playlist that contains the channel"s watch later playlist.
+         * Use the playlistItems.insert and playlistItems.delete to add or remove
+         * items from that list.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $watchLater;
+        /**
+         * The ID of the playlist that contains the channel"s favorite videos. Use the
+         * playlistItems.insert and playlistItems.delete to add or remove items from
+         * that list.
+         *
+         * @deprecated
+         * @param string $favorites
+         */
+        public function setFavorites($favorites)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getFavorites()
+        {
+        }
+        /**
+         * The ID of the playlist that contains the channel"s liked videos. Use the
+         * playlistItems.insert and playlistItems.delete to add or remove items from
+         * that list.
+         *
+         * @param string $likes
+         */
+        public function setLikes($likes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLikes()
+        {
+        }
+        /**
+         * The ID of the playlist that contains the channel"s uploaded videos. Use the
+         * videos.insert method to upload new videos and the videos.delete method to
+         * delete previously uploaded videos.
+         *
+         * @param string $uploads
+         */
+        public function setUploads($uploads)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploads()
+        {
+        }
+        /**
+         * The ID of the playlist that contains the channel"s watch history. Use the
+         * playlistItems.insert and playlistItems.delete to add or remove items from
+         * that list.
+         *
+         * @deprecated
+         * @param string $watchHistory
+         */
+        public function setWatchHistory($watchHistory)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getWatchHistory()
+        {
+        }
+        /**
+         * The ID of the playlist that contains the channel"s watch later playlist.
+         * Use the playlistItems.insert and playlistItems.delete to add or remove
+         * items from that list.
+         *
+         * @deprecated
+         * @param string $watchLater
+         */
+        public function setWatchLater($watchLater)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getWatchLater()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelContentDetailsRelatedPlaylists registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFavorites()
-    {
-    }
-    /**
-     * The ID of the playlist that contains the channel"s liked videos. Use the
-     * playlistItems.insert and playlistItems.delete to add or remove items from
-     * that list.
-     *
-     * @param string $likes
-     */
-    public function setLikes($likes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLikes()
-    {
-    }
-    /**
-     * The ID of the playlist that contains the channel"s uploaded videos. Use the
-     * videos.insert method to upload new videos and the videos.delete method to
-     * delete previously uploaded videos.
-     *
-     * @param string $uploads
-     */
-    public function setUploads($uploads)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploads()
-    {
-    }
-    /**
-     * The ID of the playlist that contains the channel"s watch history. Use the
-     * playlistItems.insert and playlistItems.delete to add or remove items from
-     * that list.
-     *
-     * @deprecated
-     * @param string $watchHistory
-     */
-    public function setWatchHistory($watchHistory)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getWatchHistory()
-    {
-    }
-    /**
-     * The ID of the playlist that contains the channel"s watch later playlist.
-     * Use the playlistItems.insert and playlistItems.delete to add or remove
-     * items from that list.
-     *
-     * @deprecated
-     * @param string $watchLater
-     */
-    public function setWatchLater($watchLater)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getWatchLater()
+    class Google_Service_YouTube_ChannelContentDetailsRelatedPlaylists extends \Google\Service\YouTube\ChannelContentDetailsRelatedPlaylists
     {
     }
 }

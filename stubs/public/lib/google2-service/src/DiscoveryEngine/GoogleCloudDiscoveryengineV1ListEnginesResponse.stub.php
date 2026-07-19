@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListEnginesResponse extends \Google\Collection
-{
-    protected $collection_key = 'engines';
-    protected $enginesType = GoogleCloudDiscoveryengineV1Engine::class;
-    protected $enginesDataType = 'array';
-    /**
-     * Not supported.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All the customer's Engines.
-     *
-     * @param GoogleCloudDiscoveryengineV1Engine[] $engines
-     */
-    public function setEngines($engines)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListEnginesResponse extends \Google\Collection
     {
+        protected $collection_key = 'engines';
+        protected $enginesType = GoogleCloudDiscoveryengineV1Engine::class;
+        protected $enginesDataType = 'array';
+        /**
+         * Not supported.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All the customer's Engines.
+         *
+         * @param GoogleCloudDiscoveryengineV1Engine[] $engines
+         */
+        public function setEngines($engines)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Engine[]
+         */
+        public function getEngines()
+        {
+        }
+        /**
+         * Not supported.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Engine[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListEnginesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEngines()
-    {
-    }
-    /**
-     * Not supported.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListEnginesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListEnginesResponse
     {
     }
 }

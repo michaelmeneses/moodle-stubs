@@ -21,64 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ManagedKafka (v1).
- *
- * <p>
- * Manage Apache Kafka clusters and resources.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/managed-service-for-apache-kafka/docs" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ManagedKafka extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_clusters;
-    public $projects_locations_clusters_acls;
-    public $projects_locations_clusters_consumerGroups;
-    public $projects_locations_clusters_topics;
-    public $projects_locations_connectClusters;
-    public $projects_locations_connectClusters_connectors;
-    public $projects_locations_operations;
-    public $projects_locations_schemaRegistries;
-    public $projects_locations_schemaRegistries_compatibility;
-    public $projects_locations_schemaRegistries_config;
-    public $projects_locations_schemaRegistries_contexts;
-    public $projects_locations_schemaRegistries_contexts_compatibility;
-    public $projects_locations_schemaRegistries_contexts_config;
-    public $projects_locations_schemaRegistries_contexts_mode;
-    public $projects_locations_schemaRegistries_contexts_schemas;
-    public $projects_locations_schemaRegistries_contexts_schemas_subjects;
-    public $projects_locations_schemaRegistries_contexts_schemas_types;
-    public $projects_locations_schemaRegistries_contexts_schemas_versions;
-    public $projects_locations_schemaRegistries_contexts_subjects;
-    public $projects_locations_schemaRegistries_contexts_subjects_versions;
-    public $projects_locations_schemaRegistries_contexts_subjects_versions_referencedby;
-    public $projects_locations_schemaRegistries_mode;
-    public $projects_locations_schemaRegistries_schemas;
-    public $projects_locations_schemaRegistries_schemas_subjects;
-    public $projects_locations_schemaRegistries_schemas_types;
-    public $projects_locations_schemaRegistries_schemas_versions;
-    public $projects_locations_schemaRegistries_subjects;
-    public $projects_locations_schemaRegistries_subjects_versions;
-    public $projects_locations_schemaRegistries_subjects_versions_referencedby;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ManagedKafka service.
+     * Service definition for ManagedKafka (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manage Apache Kafka clusters and resources.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/managed-service-for-apache-kafka/docs" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ManagedKafka extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_clusters;
+        public $projects_locations_clusters_acls;
+        public $projects_locations_clusters_consumerGroups;
+        public $projects_locations_clusters_topics;
+        public $projects_locations_connectClusters;
+        public $projects_locations_connectClusters_connectors;
+        public $projects_locations_operations;
+        public $projects_locations_schemaRegistries;
+        public $projects_locations_schemaRegistries_compatibility;
+        public $projects_locations_schemaRegistries_config;
+        public $projects_locations_schemaRegistries_contexts;
+        public $projects_locations_schemaRegistries_contexts_compatibility;
+        public $projects_locations_schemaRegistries_contexts_config;
+        public $projects_locations_schemaRegistries_contexts_mode;
+        public $projects_locations_schemaRegistries_contexts_schemas;
+        public $projects_locations_schemaRegistries_contexts_schemas_subjects;
+        public $projects_locations_schemaRegistries_contexts_schemas_types;
+        public $projects_locations_schemaRegistries_contexts_schemas_versions;
+        public $projects_locations_schemaRegistries_contexts_subjects;
+        public $projects_locations_schemaRegistries_contexts_subjects_versions;
+        public $projects_locations_schemaRegistries_contexts_subjects_versions_referencedby;
+        public $projects_locations_schemaRegistries_mode;
+        public $projects_locations_schemaRegistries_schemas;
+        public $projects_locations_schemaRegistries_schemas_subjects;
+        public $projects_locations_schemaRegistries_schemas_types;
+        public $projects_locations_schemaRegistries_schemas_versions;
+        public $projects_locations_schemaRegistries_subjects;
+        public $projects_locations_schemaRegistries_subjects_versions;
+        public $projects_locations_schemaRegistries_subjects_versions_referencedby;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ManagedKafka service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka extends \Google\Service\ManagedKafka
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseInstance extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * Primary.
-     */
-    public const ROLE_PRIMARY = 'PRIMARY';
-    /**
-     * Secondary.
-     */
-    public const ROLE_SECONDARY = 'SECONDARY';
-    /**
-     * Arbiter.
-     */
-    public const ROLE_ARBITER = 'ARBITER';
-    /**
-     * Optional. The instance's name.
-     *
-     * @var string
-     */
-    public $instanceName;
-    protected $networkType = DatabaseInstanceNetwork::class;
-    protected $networkDataType = '';
-    /**
-     * Optional. The instance role in the database engine.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Optional. The instance's name.
-     *
-     * @param string $instanceName
-     */
-    public function setInstanceName($instanceName)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseInstance extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * Primary.
+         */
+        public const ROLE_PRIMARY = 'PRIMARY';
+        /**
+         * Secondary.
+         */
+        public const ROLE_SECONDARY = 'SECONDARY';
+        /**
+         * Arbiter.
+         */
+        public const ROLE_ARBITER = 'ARBITER';
+        /**
+         * Optional. The instance's name.
+         *
+         * @var string
+         */
+        public $instanceName;
+        protected $networkType = DatabaseInstanceNetwork::class;
+        protected $networkDataType = '';
+        /**
+         * Optional. The instance role in the database engine.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Optional. The instance's name.
+         *
+         * @param string $instanceName
+         */
+        public function setInstanceName($instanceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceName()
+        {
+        }
+        /**
+         * Optional. Networking details.
+         *
+         * @param DatabaseInstanceNetwork $network
+         */
+        public function setNetwork(DatabaseInstanceNetwork $network)
+        {
+        }
+        /**
+         * @return DatabaseInstanceNetwork
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. The instance role in the database engine.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, PRIMARY, SECONDARY, ARBITER
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceName()
-    {
-    }
-    /**
-     * Optional. Networking details.
-     *
-     * @param DatabaseInstanceNetwork $network
-     */
-    public function setNetwork(DatabaseInstanceNetwork $network)
-    {
-    }
-    /**
-     * @return DatabaseInstanceNetwork
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. The instance role in the database engine.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, PRIMARY, SECONDARY, ARBITER
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
+    class Google_Service_MigrationCenterAPI_DatabaseInstance extends \Google\Service\MigrationCenterAPI\DatabaseInstance
     {
     }
 }

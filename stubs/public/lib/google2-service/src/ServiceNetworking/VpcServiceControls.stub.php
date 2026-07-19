@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class VpcServiceControls extends \Google\Model
-{
-    /**
-     * Output only. Indicates whether the VPC Service Controls are enabled or
-     * disabled for the connection. If the consumer called the
-     * EnableVpcServiceControls method, then this is true. If the consumer called
-     * DisableVpcServiceControls, then this is false. The default is false.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Output only. Indicates whether the VPC Service Controls are enabled or
-     * disabled for the connection. If the consumer called the
-     * EnableVpcServiceControls method, then this is true. If the consumer called
-     * DisableVpcServiceControls, then this is false. The default is false.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\ServiceNetworking {
+    class VpcServiceControls extends \Google\Model
     {
+        /**
+         * Output only. Indicates whether the VPC Service Controls are enabled or
+         * disabled for the connection. If the consumer called the
+         * EnableVpcServiceControls method, then this is true. If the consumer called
+         * DisableVpcServiceControls, then this is false. The default is false.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Output only. Indicates whether the VPC Service Controls are enabled or
+         * disabled for the connection. If the consumer called the
+         * EnableVpcServiceControls method, then this is true. If the consumer called
+         * DisableVpcServiceControls, then this is false. The default is false.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ServiceNetworking\VpcServiceControls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_ServiceNetworking_VpcServiceControls extends \Google\Service\ServiceNetworking\VpcServiceControls
     {
     }
 }

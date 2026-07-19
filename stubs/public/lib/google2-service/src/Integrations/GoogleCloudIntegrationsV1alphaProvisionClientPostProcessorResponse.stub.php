@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse extends \Google\Model
-{
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse
+    {
+    }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SocialCommonAttachmentAttachment extends \Google\Model
-{
-    protected $embedItemType = EmbedClientItem::class;
-    protected $embedItemDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @param EmbedClientItem
-     */
-    public function setEmbedItem(EmbedClientItem $embedItem)
+namespace Google\Service\CloudSearch {
+    class SocialCommonAttachmentAttachment extends \Google\Model
     {
+        protected $embedItemType = EmbedClientItem::class;
+        protected $embedItemDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @param EmbedClientItem
+         */
+        public function setEmbedItem(EmbedClientItem $embedItem)
+        {
+        }
+        /**
+         * @return EmbedClientItem
+         */
+        public function getEmbedItem()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbedClientItem
+     * Runtime class alias of \Google\Service\CloudSearch\SocialCommonAttachmentAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbedItem()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_CloudSearch_SocialCommonAttachmentAttachment extends \Google\Service\CloudSearch\SocialCommonAttachmentAttachment
     {
     }
 }

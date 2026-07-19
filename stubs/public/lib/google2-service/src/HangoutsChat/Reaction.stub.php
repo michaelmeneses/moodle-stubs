@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Reaction extends \Google\Model
-{
-    protected $emojiType = Emoji::class;
-    protected $emojiDataType = '';
-    /**
-     * Identifier. The resource name of the reaction. Format:
-     * `spaces/{space}/messages/{message}/reactions/{reaction}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * Required. The emoji used in the reaction.
-     *
-     * @param Emoji $emoji
-     */
-    public function setEmoji(Emoji $emoji)
+namespace Google\Service\HangoutsChat {
+    class Reaction extends \Google\Model
     {
+        protected $emojiType = Emoji::class;
+        protected $emojiDataType = '';
+        /**
+         * Identifier. The resource name of the reaction. Format:
+         * `spaces/{space}/messages/{message}/reactions/{reaction}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * Required. The emoji used in the reaction.
+         *
+         * @param Emoji $emoji
+         */
+        public function setEmoji(Emoji $emoji)
+        {
+        }
+        /**
+         * @return Emoji
+         */
+        public function getEmoji()
+        {
+        }
+        /**
+         * Identifier. The resource name of the reaction. Format:
+         * `spaces/{space}/messages/{message}/reactions/{reaction}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The user who created the reaction.
+         *
+         * @param User $user
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Emoji
+     * Runtime class alias of \Google\Service\HangoutsChat\Reaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmoji()
-    {
-    }
-    /**
-     * Identifier. The resource name of the reaction. Format:
-     * `spaces/{space}/messages/{message}/reactions/{reaction}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The user who created the reaction.
-     *
-     * @param User $user
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
+    class Google_Service_HangoutsChat_Reaction extends \Google\Service\HangoutsChat\Reaction
     {
     }
 }

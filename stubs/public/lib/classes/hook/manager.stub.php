@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core\hook;
 
+use core\attribute_helper;
+use Psr\EventDispatcher\EventDispatcherInterface;
+use Psr\EventDispatcher\ListenerProviderInterface;
+use Psr\EventDispatcher\StoppableEventInterface;
 /**
  * Hook manager implementing "Dispatcher" and "Event Provider" from PSR-14.
  *

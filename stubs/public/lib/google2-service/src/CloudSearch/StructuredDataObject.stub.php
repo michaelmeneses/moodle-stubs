@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class StructuredDataObject extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = NamedProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * The properties for the object. The maximum number of elements is 1000.
-     *
-     * @param NamedProperty[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\CloudSearch {
+    class StructuredDataObject extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = NamedProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * The properties for the object. The maximum number of elements is 1000.
+         *
+         * @param NamedProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return NamedProperty[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamedProperty[]
+     * Runtime class alias of \Google\Service\CloudSearch\StructuredDataObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_CloudSearch_StructuredDataObject extends \Google\Service\CloudSearch\StructuredDataObject
     {
     }
 }

@@ -21,73 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "issuer" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $issuer = $walletobjectsService->issuer;
- *  </code>
- */
-class Issuer extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\Issuer as IssuerModel;
+    use Google\Service\Walletobjects\IssuerListResponse;
     /**
-     * Returns the issuer with the given issuer ID. (issuer.get)
-     *
-     * @param string $resourceId The unique identifier for an issuer.
-     * @param array $optParams Optional parameters.
-     * @return IssuerModel
-     * @throws \Google\Service\Exception
+     * The "issuer" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $issuer = $walletobjectsService->issuer;
+     *  </code>
      */
-    public function get($resourceId, $optParams = [])
+    class Issuer extends \Google\Service\Resource
     {
+        /**
+         * Returns the issuer with the given issuer ID. (issuer.get)
+         *
+         * @param string $resourceId The unique identifier for an issuer.
+         * @param array $optParams Optional parameters.
+         * @return IssuerModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts an issuer with the given ID and properties. (issuer.insert)
+         *
+         * @param IssuerModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return IssuerModel
+         * @throws \Google\Service\Exception
+         */
+        public function insert(IssuerModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all issuers shared to the caller. (issuer.listIssuer)
+         *
+         * @param array $optParams Optional parameters.
+         * @return IssuerListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listIssuer($optParams = [])
+        {
+        }
+        /**
+         * Updates the issuer referenced by the given issuer ID. This method supports
+         * patch semantics. (issuer.patch)
+         *
+         * @param string $resourceId The unique identifier for an issuer.
+         * @param IssuerModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return IssuerModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($resourceId, IssuerModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the issuer referenced by the given issuer ID. (issuer.update)
+         *
+         * @param string $resourceId The unique identifier for an issuer.
+         * @param IssuerModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return IssuerModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($resourceId, IssuerModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts an issuer with the given ID and properties. (issuer.insert)
-     *
-     * @param IssuerModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return IssuerModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Issuer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert(IssuerModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all issuers shared to the caller. (issuer.listIssuer)
-     *
-     * @param array $optParams Optional parameters.
-     * @return IssuerListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listIssuer($optParams = [])
-    {
-    }
-    /**
-     * Updates the issuer referenced by the given issuer ID. This method supports
-     * patch semantics. (issuer.patch)
-     *
-     * @param string $resourceId The unique identifier for an issuer.
-     * @param IssuerModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return IssuerModel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($resourceId, IssuerModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the issuer referenced by the given issuer ID. (issuer.update)
-     *
-     * @param string $resourceId The unique identifier for an issuer.
-     * @param IssuerModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return IssuerModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($resourceId, IssuerModel $postBody, $optParams = [])
+    class Google_Service_Walletobjects_Resource_Issuer extends \Google\Service\Walletobjects\Resource\Issuer
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class LeasingSavings extends \Google\Model
-{
-    protected $annualLeasingCostType = Money::class;
-    protected $annualLeasingCostDataType = '';
-    /**
-     * Whether leases are allowed in this juristiction (leases are not allowed in
-     * some states). If this field is false, then the values in this message
-     * should probably be ignored.
-     *
-     * @var bool
-     */
-    public $leasesAllowed;
-    /**
-     * Whether leases are supported in this juristiction by the financial
-     * calculation engine. If this field is false, then the values in this message
-     * should probably be ignored. This is independent of `leases_allowed`: in
-     * some areas leases are allowed, but under conditions that aren't handled by
-     * the financial models.
-     *
-     * @var bool
-     */
-    public $leasesSupported;
-    protected $savingsType = SavingsOverTime::class;
-    protected $savingsDataType = '';
-    /**
-     * Estimated annual leasing cost.
-     *
-     * @param Money $annualLeasingCost
-     */
-    public function setAnnualLeasingCost(Money $annualLeasingCost)
+namespace Google\Service\Solar {
+    class LeasingSavings extends \Google\Model
     {
+        protected $annualLeasingCostType = Money::class;
+        protected $annualLeasingCostDataType = '';
+        /**
+         * Whether leases are allowed in this juristiction (leases are not allowed in
+         * some states). If this field is false, then the values in this message
+         * should probably be ignored.
+         *
+         * @var bool
+         */
+        public $leasesAllowed;
+        /**
+         * Whether leases are supported in this juristiction by the financial
+         * calculation engine. If this field is false, then the values in this message
+         * should probably be ignored. This is independent of `leases_allowed`: in
+         * some areas leases are allowed, but under conditions that aren't handled by
+         * the financial models.
+         *
+         * @var bool
+         */
+        public $leasesSupported;
+        protected $savingsType = SavingsOverTime::class;
+        protected $savingsDataType = '';
+        /**
+         * Estimated annual leasing cost.
+         *
+         * @param Money $annualLeasingCost
+         */
+        public function setAnnualLeasingCost(Money $annualLeasingCost)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getAnnualLeasingCost()
+        {
+        }
+        /**
+         * Whether leases are allowed in this juristiction (leases are not allowed in
+         * some states). If this field is false, then the values in this message
+         * should probably be ignored.
+         *
+         * @param bool $leasesAllowed
+         */
+        public function setLeasesAllowed($leasesAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLeasesAllowed()
+        {
+        }
+        /**
+         * Whether leases are supported in this juristiction by the financial
+         * calculation engine. If this field is false, then the values in this message
+         * should probably be ignored. This is independent of `leases_allowed`: in
+         * some areas leases are allowed, but under conditions that aren't handled by
+         * the financial models.
+         *
+         * @param bool $leasesSupported
+         */
+        public function setLeasesSupported($leasesSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLeasesSupported()
+        {
+        }
+        /**
+         * How much is saved (or not) over the lifetime period.
+         *
+         * @param SavingsOverTime $savings
+         */
+        public function setSavings(SavingsOverTime $savings)
+        {
+        }
+        /**
+         * @return SavingsOverTime
+         */
+        public function getSavings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\Solar\LeasingSavings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnualLeasingCost()
-    {
-    }
-    /**
-     * Whether leases are allowed in this juristiction (leases are not allowed in
-     * some states). If this field is false, then the values in this message
-     * should probably be ignored.
-     *
-     * @param bool $leasesAllowed
-     */
-    public function setLeasesAllowed($leasesAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLeasesAllowed()
-    {
-    }
-    /**
-     * Whether leases are supported in this juristiction by the financial
-     * calculation engine. If this field is false, then the values in this message
-     * should probably be ignored. This is independent of `leases_allowed`: in
-     * some areas leases are allowed, but under conditions that aren't handled by
-     * the financial models.
-     *
-     * @param bool $leasesSupported
-     */
-    public function setLeasesSupported($leasesSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLeasesSupported()
-    {
-    }
-    /**
-     * How much is saved (or not) over the lifetime period.
-     *
-     * @param SavingsOverTime $savings
-     */
-    public function setSavings(SavingsOverTime $savings)
-    {
-    }
-    /**
-     * @return SavingsOverTime
-     */
-    public function getSavings()
+    class Google_Service_Solar_LeasingSavings extends \Google\Service\Solar\LeasingSavings
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class MoveOutEvent extends \Google\Model
-{
-    /**
-     * An unique partition identifier describing the destination change stream
-     * partition that will record changes for the key range that is moving out of
-     * this partition.
-     *
-     * @var string
-     */
-    public $destinationPartitionToken;
-    /**
-     * An unique partition identifier describing the destination change stream
-     * partition that will record changes for the key range that is moving out of
-     * this partition.
-     *
-     * @param string $destinationPartitionToken
-     */
-    public function setDestinationPartitionToken($destinationPartitionToken)
+namespace Google\Service\Spanner {
+    class MoveOutEvent extends \Google\Model
     {
+        /**
+         * An unique partition identifier describing the destination change stream
+         * partition that will record changes for the key range that is moving out of
+         * this partition.
+         *
+         * @var string
+         */
+        public $destinationPartitionToken;
+        /**
+         * An unique partition identifier describing the destination change stream
+         * partition that will record changes for the key range that is moving out of
+         * this partition.
+         *
+         * @param string $destinationPartitionToken
+         */
+        public function setDestinationPartitionToken($destinationPartitionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationPartitionToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\MoveOutEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationPartitionToken()
+    class Google_Service_Spanner_MoveOutEvent extends \Google\Service\Spanner\MoveOutEvent
     {
     }
 }

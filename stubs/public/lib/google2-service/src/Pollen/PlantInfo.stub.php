@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pollen;
-
-class PlantInfo extends \Google\Model
-{
-    /**
-     * Unspecified plant code.
-     */
-    public const CODE_PLANT_UNSPECIFIED = 'PLANT_UNSPECIFIED';
-    /**
-     * Alder is classified as a tree pollen type.
-     */
-    public const CODE_ALDER = 'ALDER';
-    /**
-     * Ash is classified as a tree pollen type.
-     */
-    public const CODE_ASH = 'ASH';
-    /**
-     * Birch is classified as a tree pollen type.
-     */
-    public const CODE_BIRCH = 'BIRCH';
-    /**
-     * Cottonwood is classified as a tree pollen type.
-     */
-    public const CODE_COTTONWOOD = 'COTTONWOOD';
-    /**
-     * Elm is classified as a tree pollen type.
-     */
-    public const CODE_ELM = 'ELM';
-    /**
-     * Maple is classified as a tree pollen type.
-     */
-    public const CODE_MAPLE = 'MAPLE';
-    /**
-     * Olive is classified as a tree pollen type.
-     */
-    public const CODE_OLIVE = 'OLIVE';
-    /**
-     * Juniper is classified as a tree pollen type.
-     */
-    public const CODE_JUNIPER = 'JUNIPER';
-    /**
-     * Oak is classified as a tree pollen type.
-     */
-    public const CODE_OAK = 'OAK';
-    /**
-     * Pine is classified as a tree pollen type.
-     */
-    public const CODE_PINE = 'PINE';
-    /**
-     * Cypress pine is classified as a tree pollen type.
-     */
-    public const CODE_CYPRESS_PINE = 'CYPRESS_PINE';
-    /**
-     * Hazel is classified as a tree pollen type.
-     */
-    public const CODE_HAZEL = 'HAZEL';
-    /**
-     * Graminales is classified as a grass pollen type.
-     */
-    public const CODE_GRAMINALES = 'GRAMINALES';
-    /**
-     * Ragweed is classified as a weed pollen type.
-     */
-    public const CODE_RAGWEED = 'RAGWEED';
-    /**
-     * Mugwort is classified as a weed pollen type.
-     */
-    public const CODE_MUGWORT = 'MUGWORT';
-    /**
-     * Japanese cedar is classified as a tree pollen type.
-     */
-    public const CODE_JAPANESE_CEDAR = 'JAPANESE_CEDAR';
-    /**
-     * Japanese cypress is classified as a tree pollen type.
-     */
-    public const CODE_JAPANESE_CYPRESS = 'JAPANESE_CYPRESS';
-    /**
-     * The plant code name. For example: "COTTONWOOD". A list of all available
-     * codes could be found here.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A human readable representation of the plant name. Example: “Cottonwood".
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Indication of either the plant is in season or not.
-     *
-     * @var bool
-     */
-    public $inSeason;
-    protected $indexInfoType = IndexInfo::class;
-    protected $indexInfoDataType = '';
-    protected $plantDescriptionType = PlantDescription::class;
-    protected $plantDescriptionDataType = '';
-    /**
-     * The plant code name. For example: "COTTONWOOD". A list of all available
-     * codes could be found here.
-     *
-     * Accepted values: PLANT_UNSPECIFIED, ALDER, ASH, BIRCH, COTTONWOOD, ELM,
-     * MAPLE, OLIVE, JUNIPER, OAK, PINE, CYPRESS_PINE, HAZEL, GRAMINALES, RAGWEED,
-     * MUGWORT, JAPANESE_CEDAR, JAPANESE_CYPRESS
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\Pollen {
+    class PlantInfo extends \Google\Model
     {
+        /**
+         * Unspecified plant code.
+         */
+        public const CODE_PLANT_UNSPECIFIED = 'PLANT_UNSPECIFIED';
+        /**
+         * Alder is classified as a tree pollen type.
+         */
+        public const CODE_ALDER = 'ALDER';
+        /**
+         * Ash is classified as a tree pollen type.
+         */
+        public const CODE_ASH = 'ASH';
+        /**
+         * Birch is classified as a tree pollen type.
+         */
+        public const CODE_BIRCH = 'BIRCH';
+        /**
+         * Cottonwood is classified as a tree pollen type.
+         */
+        public const CODE_COTTONWOOD = 'COTTONWOOD';
+        /**
+         * Elm is classified as a tree pollen type.
+         */
+        public const CODE_ELM = 'ELM';
+        /**
+         * Maple is classified as a tree pollen type.
+         */
+        public const CODE_MAPLE = 'MAPLE';
+        /**
+         * Olive is classified as a tree pollen type.
+         */
+        public const CODE_OLIVE = 'OLIVE';
+        /**
+         * Juniper is classified as a tree pollen type.
+         */
+        public const CODE_JUNIPER = 'JUNIPER';
+        /**
+         * Oak is classified as a tree pollen type.
+         */
+        public const CODE_OAK = 'OAK';
+        /**
+         * Pine is classified as a tree pollen type.
+         */
+        public const CODE_PINE = 'PINE';
+        /**
+         * Cypress pine is classified as a tree pollen type.
+         */
+        public const CODE_CYPRESS_PINE = 'CYPRESS_PINE';
+        /**
+         * Hazel is classified as a tree pollen type.
+         */
+        public const CODE_HAZEL = 'HAZEL';
+        /**
+         * Graminales is classified as a grass pollen type.
+         */
+        public const CODE_GRAMINALES = 'GRAMINALES';
+        /**
+         * Ragweed is classified as a weed pollen type.
+         */
+        public const CODE_RAGWEED = 'RAGWEED';
+        /**
+         * Mugwort is classified as a weed pollen type.
+         */
+        public const CODE_MUGWORT = 'MUGWORT';
+        /**
+         * Japanese cedar is classified as a tree pollen type.
+         */
+        public const CODE_JAPANESE_CEDAR = 'JAPANESE_CEDAR';
+        /**
+         * Japanese cypress is classified as a tree pollen type.
+         */
+        public const CODE_JAPANESE_CYPRESS = 'JAPANESE_CYPRESS';
+        /**
+         * The plant code name. For example: "COTTONWOOD". A list of all available
+         * codes could be found here.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A human readable representation of the plant name. Example: “Cottonwood".
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Indication of either the plant is in season or not.
+         *
+         * @var bool
+         */
+        public $inSeason;
+        protected $indexInfoType = IndexInfo::class;
+        protected $indexInfoDataType = '';
+        protected $plantDescriptionType = PlantDescription::class;
+        protected $plantDescriptionDataType = '';
+        /**
+         * The plant code name. For example: "COTTONWOOD". A list of all available
+         * codes could be found here.
+         *
+         * Accepted values: PLANT_UNSPECIFIED, ALDER, ASH, BIRCH, COTTONWOOD, ELM,
+         * MAPLE, OLIVE, JUNIPER, OAK, PINE, CYPRESS_PINE, HAZEL, GRAMINALES, RAGWEED,
+         * MUGWORT, JAPANESE_CEDAR, JAPANESE_CYPRESS
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A human readable representation of the plant name. Example: “Cottonwood".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Indication of either the plant is in season or not.
+         *
+         * @param bool $inSeason
+         */
+        public function setInSeason($inSeason)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInSeason()
+        {
+        }
+        /**
+         * This object contains data representing specific pollen index value,
+         * category and description.
+         *
+         * @param IndexInfo $indexInfo
+         */
+        public function setIndexInfo(IndexInfo $indexInfo)
+        {
+        }
+        /**
+         * @return IndexInfo
+         */
+        public function getIndexInfo()
+        {
+        }
+        /**
+         * Contains general information about plants, including details on their
+         * seasonality, special shapes and colors, information about allergic cross-
+         * reactions, and plant photos.
+         *
+         * @param PlantDescription $plantDescription
+         */
+        public function setPlantDescription(PlantDescription $plantDescription)
+        {
+        }
+        /**
+         * @return PlantDescription
+         */
+        public function getPlantDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\Pollen\PlantInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A human readable representation of the plant name. Example: “Cottonwood".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Indication of either the plant is in season or not.
-     *
-     * @param bool $inSeason
-     */
-    public function setInSeason($inSeason)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInSeason()
-    {
-    }
-    /**
-     * This object contains data representing specific pollen index value,
-     * category and description.
-     *
-     * @param IndexInfo $indexInfo
-     */
-    public function setIndexInfo(IndexInfo $indexInfo)
-    {
-    }
-    /**
-     * @return IndexInfo
-     */
-    public function getIndexInfo()
-    {
-    }
-    /**
-     * Contains general information about plants, including details on their
-     * seasonality, special shapes and colors, information about allergic cross-
-     * reactions, and plant photos.
-     *
-     * @param PlantDescription $plantDescription
-     */
-    public function setPlantDescription(PlantDescription $plantDescription)
-    {
-    }
-    /**
-     * @return PlantDescription
-     */
-    public function getPlantDescription()
+    class Google_Service_Pollen_PlantInfo extends \Google\Service\Pollen\PlantInfo
     {
     }
 }

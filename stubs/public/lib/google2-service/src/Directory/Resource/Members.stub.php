@@ -21,135 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "members" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $members = $adminService->members;
- *  </code>
- */
-class Members extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Member;
+    use Google\Service\Directory\Members as MembersModel;
+    use Google\Service\Directory\MembersHasMember;
     /**
-     * Removes a member from a group. (members.delete)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param string $memberKey Identifies the group member in the API request. A
-     * group member can be a user or another group. The value can be the member's
-     * (group or user) primary email address, alias, or unique ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "members" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $members = $adminService->members;
+     *  </code>
      */
-    public function delete($groupKey, $memberKey, $optParams = [])
+    class Members extends \Google\Service\Resource
     {
+        /**
+         * Removes a member from a group. (members.delete)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param string $memberKey Identifies the group member in the API request. A
+         * group member can be a user or another group. The value can be the member's
+         * (group or user) primary email address, alias, or unique ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($groupKey, $memberKey, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a group member's properties. (members.get)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param string $memberKey Identifies the group member in the API request. A
+         * group member can be a user or another group. The value can be the member's
+         * (group or user) primary email address, alias, or unique ID.
+         * @param array $optParams Optional parameters.
+         * @return Member
+         * @throws \Google\Service\Exception
+         */
+        public function get($groupKey, $memberKey, $optParams = [])
+        {
+        }
+        /**
+         * Checks whether the given user is a member of the group. Membership can be
+         * direct or nested, but if nested, the `memberKey` and `groupKey` must be
+         * entities in the same domain or an `Invalid input` error is returned. To check
+         * for nested memberships that include entities outside of the group's domain,
+         * use the [`checkTransitiveMembership()`](https://cloud.google.com/identity/doc
+         * s/reference/rest/v1/groups.memberships/checkTransitiveMembership) method in
+         * the Cloud Identity Groups API. (members.hasMember)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param string $memberKey Identifies the user member in the API request. The
+         * value can be the user's primary email address, alias, or unique ID.
+         * @param array $optParams Optional parameters.
+         * @return MembersHasMember
+         * @throws \Google\Service\Exception
+         */
+        public function hasMember($groupKey, $memberKey, $optParams = [])
+        {
+        }
+        /**
+         * Adds a user to the specified group. (members.insert)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param Member $postBody
+         * @param array $optParams Optional parameters.
+         * @return Member
+         * @throws \Google\Service\Exception
+         */
+        public function insert($groupKey, Member $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a paginated list of all members in a group. This method times out
+         * after 60 minutes. For more information, see [Troubleshoot error codes](https:
+         * //developers.google.com/workspace/admin/directory/v1/guides/troubleshoot-
+         * error-codes). (members.listMembers)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeDerivedMembership Whether to list indirect
+         * memberships. Default: false.
+         * @opt_param int maxResults Maximum number of results to return. Max allowed
+         * value is 200.
+         * @opt_param string pageToken Token to specify next page in the list.
+         * @opt_param string roles The `roles` query parameter allows you to retrieve
+         * group members by role. Allowed values are `OWNER`, `MANAGER`, and `MEMBER`.
+         * @return MembersModel
+         * @throws \Google\Service\Exception
+         */
+        public function listMembers($groupKey, $optParams = [])
+        {
+        }
+        /**
+         * Updates the membership properties of a user in the specified group. This
+         * method supports [patch semantics](https://developers.google.com/workspace/adm
+         * in/directory/v1/guides/performance#patch). (members.patch)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param string $memberKey Identifies the group member in the API request. A
+         * group member can be a user or another group. The value can be the member's
+         * (group or user) primary email address, alias, or unique ID.
+         * @param Member $postBody
+         * @param array $optParams Optional parameters.
+         * @return Member
+         * @throws \Google\Service\Exception
+         */
+        public function patch($groupKey, $memberKey, Member $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the membership of a user in the specified group. (members.update)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param string $memberKey Identifies the group member in the API request. A
+         * group member can be a user or another group. The value can be the member's
+         * (group or user) primary email address, alias, or unique ID.
+         * @param Member $postBody
+         * @param array $optParams Optional parameters.
+         * @return Member
+         * @throws \Google\Service\Exception
+         */
+        public function update($groupKey, $memberKey, Member $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a group member's properties. (members.get)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param string $memberKey Identifies the group member in the API request. A
-     * group member can be a user or another group. The value can be the member's
-     * (group or user) primary email address, alias, or unique ID.
-     * @param array $optParams Optional parameters.
-     * @return Member
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Members registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($groupKey, $memberKey, $optParams = [])
-    {
-    }
-    /**
-     * Checks whether the given user is a member of the group. Membership can be
-     * direct or nested, but if nested, the `memberKey` and `groupKey` must be
-     * entities in the same domain or an `Invalid input` error is returned. To check
-     * for nested memberships that include entities outside of the group's domain,
-     * use the [`checkTransitiveMembership()`](https://cloud.google.com/identity/doc
-     * s/reference/rest/v1/groups.memberships/checkTransitiveMembership) method in
-     * the Cloud Identity Groups API. (members.hasMember)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param string $memberKey Identifies the user member in the API request. The
-     * value can be the user's primary email address, alias, or unique ID.
-     * @param array $optParams Optional parameters.
-     * @return MembersHasMember
-     * @throws \Google\Service\Exception
-     */
-    public function hasMember($groupKey, $memberKey, $optParams = [])
-    {
-    }
-    /**
-     * Adds a user to the specified group. (members.insert)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param Member $postBody
-     * @param array $optParams Optional parameters.
-     * @return Member
-     * @throws \Google\Service\Exception
-     */
-    public function insert($groupKey, Member $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a paginated list of all members in a group. This method times out
-     * after 60 minutes. For more information, see [Troubleshoot error codes](https:
-     * //developers.google.com/workspace/admin/directory/v1/guides/troubleshoot-
-     * error-codes). (members.listMembers)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeDerivedMembership Whether to list indirect
-     * memberships. Default: false.
-     * @opt_param int maxResults Maximum number of results to return. Max allowed
-     * value is 200.
-     * @opt_param string pageToken Token to specify next page in the list.
-     * @opt_param string roles The `roles` query parameter allows you to retrieve
-     * group members by role. Allowed values are `OWNER`, `MANAGER`, and `MEMBER`.
-     * @return MembersModel
-     * @throws \Google\Service\Exception
-     */
-    public function listMembers($groupKey, $optParams = [])
-    {
-    }
-    /**
-     * Updates the membership properties of a user in the specified group. This
-     * method supports [patch semantics](https://developers.google.com/workspace/adm
-     * in/directory/v1/guides/performance#patch). (members.patch)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param string $memberKey Identifies the group member in the API request. A
-     * group member can be a user or another group. The value can be the member's
-     * (group or user) primary email address, alias, or unique ID.
-     * @param Member $postBody
-     * @param array $optParams Optional parameters.
-     * @return Member
-     * @throws \Google\Service\Exception
-     */
-    public function patch($groupKey, $memberKey, Member $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the membership of a user in the specified group. (members.update)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param string $memberKey Identifies the group member in the API request. A
-     * group member can be a user or another group. The value can be the member's
-     * (group or user) primary email address, alias, or unique ID.
-     * @param Member $postBody
-     * @param array $optParams Optional parameters.
-     * @return Member
-     * @throws \Google\Service\Exception
-     */
-    public function update($groupKey, $memberKey, Member $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_Members extends \Google\Service\Directory\Resource\Members
     {
     }
 }

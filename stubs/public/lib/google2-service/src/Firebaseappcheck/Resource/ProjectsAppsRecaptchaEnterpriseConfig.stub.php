@@ -21,71 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck\Resource;
-
-/**
- * The "recaptchaEnterpriseConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
- *   $recaptchaEnterpriseConfig = $firebaseappcheckService->projects_apps_recaptchaEnterpriseConfig;
- *  </code>
- */
-class ProjectsAppsRecaptchaEnterpriseConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Firebaseappcheck\Resource {
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse;
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig;
     /**
-     * Atomically gets the RecaptchaEnterpriseConfigs for the specified list of
-     * apps. (recaptchaEnterpriseConfig.batchGet)
-     *
-     * @param string $parent Required. The parent project name shared by all
-     * RecaptchaEnterpriseConfigs being retrieved, in the format ```
-     * projects/{project_number} ``` The parent collection in the `name` field of
-     * any resource being retrieved must match this field, or the entire batch
-     * fails.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string names Required. The relative resource names of the
-     * RecaptchaEnterpriseConfigs to retrieve, in the format: ```
-     * projects/{project_number}/apps/{app_id}/recaptchaEnterpriseConfig ``` A
-     * maximum of 100 objects can be retrieved in a batch.
-     * @return GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse
-     * @throws \Google\Service\Exception
+     * The "recaptchaEnterpriseConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
+     *   $recaptchaEnterpriseConfig = $firebaseappcheckService->projects_apps_recaptchaEnterpriseConfig;
+     *  </code>
      */
-    public function batchGet($parent, $optParams = [])
+    class ProjectsAppsRecaptchaEnterpriseConfig extends \Google\Service\Resource
     {
+        /**
+         * Atomically gets the RecaptchaEnterpriseConfigs for the specified list of
+         * apps. (recaptchaEnterpriseConfig.batchGet)
+         *
+         * @param string $parent Required. The parent project name shared by all
+         * RecaptchaEnterpriseConfigs being retrieved, in the format ```
+         * projects/{project_number} ``` The parent collection in the `name` field of
+         * any resource being retrieved must match this field, or the entire batch
+         * fails.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string names Required. The relative resource names of the
+         * RecaptchaEnterpriseConfigs to retrieve, in the format: ```
+         * projects/{project_number}/apps/{app_id}/recaptchaEnterpriseConfig ``` A
+         * maximum of 100 objects can be retrieved in a batch.
+         * @return GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet($parent, $optParams = [])
+        {
+        }
+        /**
+         * Gets the RecaptchaEnterpriseConfig for the specified app.
+         * (recaptchaEnterpriseConfig.get)
+         *
+         * @param string $name Required. The relative resource name of the
+         * RecaptchaEnterpriseConfig, in the format: ```
+         * projects/{project_number}/apps/{app_id}/recaptchaEnterpriseConfig ```
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the RecaptchaEnterpriseConfig for the specified app. While this
+         * configuration is incomplete or invalid, the app will be unable to exchange
+         * reCAPTCHA Enterprise tokens for App Check tokens.
+         * (recaptchaEnterpriseConfig.patch)
+         *
+         * @param string $name Required. The relative resource name of the reCAPTCHA
+         * Enterprise configuration object, in the format: ```
+         * projects/{project_number}/apps/{app_id}/recaptchaEnterpriseConfig ```
+         * @param GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A comma-separated list of names of
+         * fields in the RecaptchaEnterpriseConfig to update. Example: `site_key`.
+         * @return GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the RecaptchaEnterpriseConfig for the specified app.
-     * (recaptchaEnterpriseConfig.get)
-     *
-     * @param string $name Required. The relative resource name of the
-     * RecaptchaEnterpriseConfig, in the format: ```
-     * projects/{project_number}/apps/{app_id}/recaptchaEnterpriseConfig ```
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firebaseappcheck\Resource\ProjectsAppsRecaptchaEnterpriseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the RecaptchaEnterpriseConfig for the specified app. While this
-     * configuration is incomplete or invalid, the app will be unable to exchange
-     * reCAPTCHA Enterprise tokens for App Check tokens.
-     * (recaptchaEnterpriseConfig.patch)
-     *
-     * @param string $name Required. The relative resource name of the reCAPTCHA
-     * Enterprise configuration object, in the format: ```
-     * projects/{project_number}/apps/{app_id}/recaptchaEnterpriseConfig ```
-     * @param GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A comma-separated list of names of
-     * fields in the RecaptchaEnterpriseConfig to update. Example: `site_key`.
-     * @return GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig $postBody, $optParams = [])
+    class Google_Service_Firebaseappcheck_Resource_ProjectsAppsRecaptchaEnterpriseConfig extends \Google\Service\Firebaseappcheck\Resource\ProjectsAppsRecaptchaEnterpriseConfig
     {
     }
 }

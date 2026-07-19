@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class BiosDetails extends \Google\Model
-{
-    /**
-     * BIOS name. This fields is deprecated. Please use the `id` field instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $biosName;
-    /**
-     * BIOS ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * BIOS manufacturer.
-     *
-     * @var string
-     */
-    public $manufacturer;
-    protected $releaseDateType = Date::class;
-    protected $releaseDateDataType = '';
-    /**
-     * SMBIOS UUID.
-     *
-     * @var string
-     */
-    public $smbiosUuid;
-    /**
-     * BIOS version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * BIOS name. This fields is deprecated. Please use the `id` field instead.
-     *
-     * @deprecated
-     * @param string $biosName
-     */
-    public function setBiosName($biosName)
+namespace Google\Service\MigrationCenterAPI {
+    class BiosDetails extends \Google\Model
     {
+        /**
+         * BIOS name. This fields is deprecated. Please use the `id` field instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $biosName;
+        /**
+         * BIOS ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * BIOS manufacturer.
+         *
+         * @var string
+         */
+        public $manufacturer;
+        protected $releaseDateType = Date::class;
+        protected $releaseDateDataType = '';
+        /**
+         * SMBIOS UUID.
+         *
+         * @var string
+         */
+        public $smbiosUuid;
+        /**
+         * BIOS version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * BIOS name. This fields is deprecated. Please use the `id` field instead.
+         *
+         * @deprecated
+         * @param string $biosName
+         */
+        public function setBiosName($biosName)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBiosName()
+        {
+        }
+        /**
+         * BIOS ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * BIOS manufacturer.
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
+        /**
+         * BIOS release date.
+         *
+         * @param Date $releaseDate
+         */
+        public function setReleaseDate(Date $releaseDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReleaseDate()
+        {
+        }
+        /**
+         * SMBIOS UUID.
+         *
+         * @param string $smbiosUuid
+         */
+        public function setSmbiosUuid($smbiosUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSmbiosUuid()
+        {
+        }
+        /**
+         * BIOS version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\BiosDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBiosName()
-    {
-    }
-    /**
-     * BIOS ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * BIOS manufacturer.
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManufacturer()
-    {
-    }
-    /**
-     * BIOS release date.
-     *
-     * @param Date $releaseDate
-     */
-    public function setReleaseDate(Date $releaseDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReleaseDate()
-    {
-    }
-    /**
-     * SMBIOS UUID.
-     *
-     * @param string $smbiosUuid
-     */
-    public function setSmbiosUuid($smbiosUuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSmbiosUuid()
-    {
-    }
-    /**
-     * BIOS version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_BiosDetails extends \Google\Service\MigrationCenterAPI\BiosDetails
     {
     }
 }

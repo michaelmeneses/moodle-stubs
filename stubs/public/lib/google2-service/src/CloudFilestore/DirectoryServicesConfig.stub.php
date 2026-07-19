@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class DirectoryServicesConfig extends \Google\Model
-{
-    protected $ldapType = LdapConfig::class;
-    protected $ldapDataType = '';
-    /**
-     * Configuration for LDAP servers.
-     *
-     * @param LdapConfig $ldap
-     */
-    public function setLdap(LdapConfig $ldap)
+namespace Google\Service\CloudFilestore {
+    class DirectoryServicesConfig extends \Google\Model
     {
+        protected $ldapType = LdapConfig::class;
+        protected $ldapDataType = '';
+        /**
+         * Configuration for LDAP servers.
+         *
+         * @param LdapConfig $ldap
+         */
+        public function setLdap(LdapConfig $ldap)
+        {
+        }
+        /**
+         * @return LdapConfig
+         */
+        public function getLdap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LdapConfig
+     * Runtime class alias of \Google\Service\CloudFilestore\DirectoryServicesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLdap()
+    class Google_Service_CloudFilestore_DirectoryServicesConfig extends \Google\Service\CloudFilestore\DirectoryServicesConfig
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1Tenant extends \Google\Model
-{
-    /**
-     * Optional display name for the tenant, e.g. "My Slack Team".
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The tenant's instance ID. Examples: Jira
-     * ("8594f221-9797-5f78-1fa4-485e198d7cd0"), Slack ("T123456").
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The URI of the tenant, if applicable. For example, the URI of a Jira
-     * instance is https://my-jira-instance.atlassian.net, and a Slack tenant does
-     * not have a URI.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional display name for the tenant, e.g. "My Slack Team".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1Tenant extends \Google\Model
     {
+        /**
+         * Optional display name for the tenant, e.g. "My Slack Team".
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The tenant's instance ID. Examples: Jira
+         * ("8594f221-9797-5f78-1fa4-485e198d7cd0"), Slack ("T123456").
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The URI of the tenant, if applicable. For example, the URI of a Jira
+         * instance is https://my-jira-instance.atlassian.net, and a Slack tenant does
+         * not have a URI.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional display name for the tenant, e.g. "My Slack Team".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The tenant's instance ID. Examples: Jira
+         * ("8594f221-9797-5f78-1fa4-485e198d7cd0"), Slack ("T123456").
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The URI of the tenant, if applicable. For example, the URI of a Jira
+         * instance is https://my-jira-instance.atlassian.net, and a Slack tenant does
+         * not have a URI.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Tenant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The tenant's instance ID. Examples: Jira
-     * ("8594f221-9797-5f78-1fa4-485e198d7cd0"), Slack ("T123456").
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The URI of the tenant, if applicable. For example, the URI of a Jira
-     * instance is https://my-jira-instance.atlassian.net, and a Slack tenant does
-     * not have a URI.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1Tenant extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Tenant
     {
     }
 }

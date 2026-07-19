@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class EnvelopeSignature extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $keyid;
-    /**
-     * @var string
-     */
-    public $sig;
-    /**
-     * @param string $keyid
-     */
-    public function setKeyid($keyid)
+namespace Google\Service\OnDemandScanning {
+    class EnvelopeSignature extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $keyid;
+        /**
+         * @var string
+         */
+        public $sig;
+        /**
+         * @param string $keyid
+         */
+        public function setKeyid($keyid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyid()
+        {
+        }
+        /**
+         * @param string $sig
+         */
+        public function setSig($sig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\EnvelopeSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyid()
-    {
-    }
-    /**
-     * @param string $sig
-     */
-    public function setSig($sig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSig()
+    class Google_Service_OnDemandScanning_EnvelopeSignature extends \Google\Service\OnDemandScanning\EnvelopeSignature
     {
     }
 }

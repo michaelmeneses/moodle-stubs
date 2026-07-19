@@ -21,243 +21,252 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemProduct extends \Google\Collection
-{
-    protected $collection_key = 'variantAttributes';
-    /**
-     * @var string
-     */
-    public $brand;
-    /**
-     * @var string
-     */
-    public $condition;
-    /**
-     * @var string
-     */
-    public $contentLanguage;
-    protected $feesType = OrderLineItemProductFee::class;
-    protected $feesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $gtin;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $imageLink;
-    /**
-     * @var string
-     */
-    public $itemGroupId;
-    /**
-     * @var string
-     */
-    public $mpn;
-    /**
-     * @var string
-     */
-    public $offerId;
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    /**
-     * @var string
-     */
-    public $shownImage;
-    /**
-     * @var string
-     */
-    public $targetCountry;
-    /**
-     * @var string
-     */
-    public $title;
-    protected $variantAttributesType = OrderLineItemProductVariantAttribute::class;
-    protected $variantAttributesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setBrand($brand)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemProduct extends \Google\Collection
     {
+        protected $collection_key = 'variantAttributes';
+        /**
+         * @var string
+         */
+        public $brand;
+        /**
+         * @var string
+         */
+        public $condition;
+        /**
+         * @var string
+         */
+        public $contentLanguage;
+        protected $feesType = OrderLineItemProductFee::class;
+        protected $feesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $gtin;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $imageLink;
+        /**
+         * @var string
+         */
+        public $itemGroupId;
+        /**
+         * @var string
+         */
+        public $mpn;
+        /**
+         * @var string
+         */
+        public $offerId;
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        /**
+         * @var string
+         */
+        public $shownImage;
+        /**
+         * @var string
+         */
+        public $targetCountry;
+        /**
+         * @var string
+         */
+        public $title;
+        protected $variantAttributesType = OrderLineItemProductVariantAttribute::class;
+        protected $variantAttributesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentLanguage($contentLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentLanguage()
+        {
+        }
+        /**
+         * @param OrderLineItemProductFee[]
+         */
+        public function setFees($fees)
+        {
+        }
+        /**
+         * @return OrderLineItemProductFee[]
+         */
+        public function getFees()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGtin($gtin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGtin()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageLink($imageLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageLink()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setItemGroupId($itemGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMpn($mpn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMpn()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShownImage($shownImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShownImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetCountry($targetCountry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetCountry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param OrderLineItemProductVariantAttribute[]
+         */
+        public function setVariantAttributes($variantAttributes)
+        {
+        }
+        /**
+         * @return OrderLineItemProductVariantAttribute[]
+         */
+        public function getVariantAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemProduct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentLanguage($contentLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentLanguage()
-    {
-    }
-    /**
-     * @param OrderLineItemProductFee[]
-     */
-    public function setFees($fees)
-    {
-    }
-    /**
-     * @return OrderLineItemProductFee[]
-     */
-    public function getFees()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGtin($gtin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGtin()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageLink($imageLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageLink()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setItemGroupId($itemGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMpn($mpn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMpn()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShownImage($shownImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShownImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetCountry($targetCountry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetCountry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param OrderLineItemProductVariantAttribute[]
-     */
-    public function setVariantAttributes($variantAttributes)
-    {
-    }
-    /**
-     * @return OrderLineItemProductVariantAttribute[]
-     */
-    public function getVariantAttributes()
+    class Google_Service_ShoppingContent_OrderLineItemProduct extends \Google\Service\ShoppingContent\OrderLineItemProduct
     {
     }
 }

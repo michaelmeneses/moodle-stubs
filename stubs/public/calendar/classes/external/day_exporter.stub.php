@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_calendar\external;
 
+use core\external\exporter;
+use core_date;
+use DateTimeImmutable;
+use renderer_base;
+use moodle_url;
 /**
  * Class for displaying the day view.
  *

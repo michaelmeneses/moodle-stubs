@@ -21,1114 +21,1123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Request extends \Google\Model
-{
-    protected $addBandingType = AddBandingRequest::class;
-    protected $addBandingDataType = '';
-    protected $addChartType = AddChartRequest::class;
-    protected $addChartDataType = '';
-    protected $addConditionalFormatRuleType = AddConditionalFormatRuleRequest::class;
-    protected $addConditionalFormatRuleDataType = '';
-    protected $addDataSourceType = AddDataSourceRequest::class;
-    protected $addDataSourceDataType = '';
-    protected $addDimensionGroupType = AddDimensionGroupRequest::class;
-    protected $addDimensionGroupDataType = '';
-    protected $addFilterViewType = AddFilterViewRequest::class;
-    protected $addFilterViewDataType = '';
-    protected $addNamedRangeType = AddNamedRangeRequest::class;
-    protected $addNamedRangeDataType = '';
-    protected $addProtectedRangeType = AddProtectedRangeRequest::class;
-    protected $addProtectedRangeDataType = '';
-    protected $addSheetType = AddSheetRequest::class;
-    protected $addSheetDataType = '';
-    protected $addSlicerType = AddSlicerRequest::class;
-    protected $addSlicerDataType = '';
-    protected $addTableType = AddTableRequest::class;
-    protected $addTableDataType = '';
-    protected $appendCellsType = AppendCellsRequest::class;
-    protected $appendCellsDataType = '';
-    protected $appendDimensionType = AppendDimensionRequest::class;
-    protected $appendDimensionDataType = '';
-    protected $autoFillType = AutoFillRequest::class;
-    protected $autoFillDataType = '';
-    protected $autoResizeDimensionsType = AutoResizeDimensionsRequest::class;
-    protected $autoResizeDimensionsDataType = '';
-    protected $cancelDataSourceRefreshType = CancelDataSourceRefreshRequest::class;
-    protected $cancelDataSourceRefreshDataType = '';
-    protected $clearBasicFilterType = ClearBasicFilterRequest::class;
-    protected $clearBasicFilterDataType = '';
-    protected $copyPasteType = CopyPasteRequest::class;
-    protected $copyPasteDataType = '';
-    protected $createDeveloperMetadataType = CreateDeveloperMetadataRequest::class;
-    protected $createDeveloperMetadataDataType = '';
-    protected $cutPasteType = CutPasteRequest::class;
-    protected $cutPasteDataType = '';
-    protected $deleteBandingType = DeleteBandingRequest::class;
-    protected $deleteBandingDataType = '';
-    protected $deleteConditionalFormatRuleType = DeleteConditionalFormatRuleRequest::class;
-    protected $deleteConditionalFormatRuleDataType = '';
-    protected $deleteDataSourceType = DeleteDataSourceRequest::class;
-    protected $deleteDataSourceDataType = '';
-    protected $deleteDeveloperMetadataType = DeleteDeveloperMetadataRequest::class;
-    protected $deleteDeveloperMetadataDataType = '';
-    protected $deleteDimensionType = DeleteDimensionRequest::class;
-    protected $deleteDimensionDataType = '';
-    protected $deleteDimensionGroupType = DeleteDimensionGroupRequest::class;
-    protected $deleteDimensionGroupDataType = '';
-    protected $deleteDuplicatesType = DeleteDuplicatesRequest::class;
-    protected $deleteDuplicatesDataType = '';
-    protected $deleteEmbeddedObjectType = DeleteEmbeddedObjectRequest::class;
-    protected $deleteEmbeddedObjectDataType = '';
-    protected $deleteFilterViewType = DeleteFilterViewRequest::class;
-    protected $deleteFilterViewDataType = '';
-    protected $deleteNamedRangeType = DeleteNamedRangeRequest::class;
-    protected $deleteNamedRangeDataType = '';
-    protected $deleteProtectedRangeType = DeleteProtectedRangeRequest::class;
-    protected $deleteProtectedRangeDataType = '';
-    protected $deleteRangeType = DeleteRangeRequest::class;
-    protected $deleteRangeDataType = '';
-    protected $deleteSheetType = DeleteSheetRequest::class;
-    protected $deleteSheetDataType = '';
-    protected $deleteTableType = DeleteTableRequest::class;
-    protected $deleteTableDataType = '';
-    protected $duplicateFilterViewType = DuplicateFilterViewRequest::class;
-    protected $duplicateFilterViewDataType = '';
-    protected $duplicateSheetType = DuplicateSheetRequest::class;
-    protected $duplicateSheetDataType = '';
-    protected $findReplaceType = FindReplaceRequest::class;
-    protected $findReplaceDataType = '';
-    protected $insertDimensionType = InsertDimensionRequest::class;
-    protected $insertDimensionDataType = '';
-    protected $insertRangeType = InsertRangeRequest::class;
-    protected $insertRangeDataType = '';
-    protected $mergeCellsType = MergeCellsRequest::class;
-    protected $mergeCellsDataType = '';
-    protected $moveDimensionType = MoveDimensionRequest::class;
-    protected $moveDimensionDataType = '';
-    protected $pasteDataType = PasteDataRequest::class;
-    protected $pasteDataDataType = '';
-    protected $randomizeRangeType = RandomizeRangeRequest::class;
-    protected $randomizeRangeDataType = '';
-    protected $refreshDataSourceType = RefreshDataSourceRequest::class;
-    protected $refreshDataSourceDataType = '';
-    protected $repeatCellType = RepeatCellRequest::class;
-    protected $repeatCellDataType = '';
-    protected $setBasicFilterType = SetBasicFilterRequest::class;
-    protected $setBasicFilterDataType = '';
-    protected $setDataValidationType = SetDataValidationRequest::class;
-    protected $setDataValidationDataType = '';
-    protected $sortRangeType = SortRangeRequest::class;
-    protected $sortRangeDataType = '';
-    protected $textToColumnsType = TextToColumnsRequest::class;
-    protected $textToColumnsDataType = '';
-    protected $trimWhitespaceType = TrimWhitespaceRequest::class;
-    protected $trimWhitespaceDataType = '';
-    protected $unmergeCellsType = UnmergeCellsRequest::class;
-    protected $unmergeCellsDataType = '';
-    protected $updateBandingType = UpdateBandingRequest::class;
-    protected $updateBandingDataType = '';
-    protected $updateBordersType = UpdateBordersRequest::class;
-    protected $updateBordersDataType = '';
-    protected $updateCellsType = UpdateCellsRequest::class;
-    protected $updateCellsDataType = '';
-    protected $updateChartSpecType = UpdateChartSpecRequest::class;
-    protected $updateChartSpecDataType = '';
-    protected $updateConditionalFormatRuleType = UpdateConditionalFormatRuleRequest::class;
-    protected $updateConditionalFormatRuleDataType = '';
-    protected $updateDataSourceType = UpdateDataSourceRequest::class;
-    protected $updateDataSourceDataType = '';
-    protected $updateDeveloperMetadataType = UpdateDeveloperMetadataRequest::class;
-    protected $updateDeveloperMetadataDataType = '';
-    protected $updateDimensionGroupType = UpdateDimensionGroupRequest::class;
-    protected $updateDimensionGroupDataType = '';
-    protected $updateDimensionPropertiesType = UpdateDimensionPropertiesRequest::class;
-    protected $updateDimensionPropertiesDataType = '';
-    protected $updateEmbeddedObjectBorderType = UpdateEmbeddedObjectBorderRequest::class;
-    protected $updateEmbeddedObjectBorderDataType = '';
-    protected $updateEmbeddedObjectPositionType = UpdateEmbeddedObjectPositionRequest::class;
-    protected $updateEmbeddedObjectPositionDataType = '';
-    protected $updateFilterViewType = UpdateFilterViewRequest::class;
-    protected $updateFilterViewDataType = '';
-    protected $updateNamedRangeType = UpdateNamedRangeRequest::class;
-    protected $updateNamedRangeDataType = '';
-    protected $updateProtectedRangeType = UpdateProtectedRangeRequest::class;
-    protected $updateProtectedRangeDataType = '';
-    protected $updateSheetPropertiesType = UpdateSheetPropertiesRequest::class;
-    protected $updateSheetPropertiesDataType = '';
-    protected $updateSlicerSpecType = UpdateSlicerSpecRequest::class;
-    protected $updateSlicerSpecDataType = '';
-    protected $updateSpreadsheetPropertiesType = UpdateSpreadsheetPropertiesRequest::class;
-    protected $updateSpreadsheetPropertiesDataType = '';
-    protected $updateTableType = UpdateTableRequest::class;
-    protected $updateTableDataType = '';
-    /**
-     * Adds a new banded range
-     *
-     * @param AddBandingRequest $addBanding
-     */
-    public function setAddBanding(AddBandingRequest $addBanding)
-    {
-    }
-    /**
-     * @return AddBandingRequest
-     */
-    public function getAddBanding()
-    {
-    }
-    /**
-     * Adds a chart.
-     *
-     * @param AddChartRequest $addChart
-     */
-    public function setAddChart(AddChartRequest $addChart)
-    {
-    }
-    /**
-     * @return AddChartRequest
-     */
-    public function getAddChart()
-    {
-    }
-    /**
-     * Adds a new conditional format rule.
-     *
-     * @param AddConditionalFormatRuleRequest $addConditionalFormatRule
-     */
-    public function setAddConditionalFormatRule(AddConditionalFormatRuleRequest $addConditionalFormatRule)
-    {
-    }
-    /**
-     * @return AddConditionalFormatRuleRequest
-     */
-    public function getAddConditionalFormatRule()
-    {
-    }
-    /**
-     * Adds a data source.
-     *
-     * @param AddDataSourceRequest $addDataSource
-     */
-    public function setAddDataSource(AddDataSourceRequest $addDataSource)
-    {
-    }
-    /**
-     * @return AddDataSourceRequest
-     */
-    public function getAddDataSource()
-    {
-    }
-    /**
-     * Creates a group over the specified range.
-     *
-     * @param AddDimensionGroupRequest $addDimensionGroup
-     */
-    public function setAddDimensionGroup(AddDimensionGroupRequest $addDimensionGroup)
-    {
-    }
-    /**
-     * @return AddDimensionGroupRequest
-     */
-    public function getAddDimensionGroup()
-    {
-    }
-    /**
-     * Adds a filter view.
-     *
-     * @param AddFilterViewRequest $addFilterView
-     */
-    public function setAddFilterView(AddFilterViewRequest $addFilterView)
-    {
-    }
-    /**
-     * @return AddFilterViewRequest
-     */
-    public function getAddFilterView()
-    {
-    }
-    /**
-     * Adds a named range.
-     *
-     * @param AddNamedRangeRequest $addNamedRange
-     */
-    public function setAddNamedRange(AddNamedRangeRequest $addNamedRange)
-    {
-    }
-    /**
-     * @return AddNamedRangeRequest
-     */
-    public function getAddNamedRange()
-    {
-    }
-    /**
-     * Adds a protected range.
-     *
-     * @param AddProtectedRangeRequest $addProtectedRange
-     */
-    public function setAddProtectedRange(AddProtectedRangeRequest $addProtectedRange)
-    {
-    }
-    /**
-     * @return AddProtectedRangeRequest
-     */
-    public function getAddProtectedRange()
-    {
-    }
-    /**
-     * Adds a sheet.
-     *
-     * @param AddSheetRequest $addSheet
-     */
-    public function setAddSheet(AddSheetRequest $addSheet)
-    {
-    }
-    /**
-     * @return AddSheetRequest
-     */
-    public function getAddSheet()
-    {
-    }
-    /**
-     * Adds a slicer.
-     *
-     * @param AddSlicerRequest $addSlicer
-     */
-    public function setAddSlicer(AddSlicerRequest $addSlicer)
-    {
-    }
-    /**
-     * @return AddSlicerRequest
-     */
-    public function getAddSlicer()
-    {
-    }
-    /**
-     * Adds a table.
-     *
-     * @param AddTableRequest $addTable
-     */
-    public function setAddTable(AddTableRequest $addTable)
-    {
-    }
-    /**
-     * @return AddTableRequest
-     */
-    public function getAddTable()
-    {
-    }
-    /**
-     * Appends cells after the last row with data in a sheet.
-     *
-     * @param AppendCellsRequest $appendCells
-     */
-    public function setAppendCells(AppendCellsRequest $appendCells)
-    {
-    }
-    /**
-     * @return AppendCellsRequest
-     */
-    public function getAppendCells()
-    {
-    }
-    /**
-     * Appends dimensions to the end of a sheet.
-     *
-     * @param AppendDimensionRequest $appendDimension
-     */
-    public function setAppendDimension(AppendDimensionRequest $appendDimension)
-    {
-    }
-    /**
-     * @return AppendDimensionRequest
-     */
-    public function getAppendDimension()
-    {
-    }
-    /**
-     * Automatically fills in more data based on existing data.
-     *
-     * @param AutoFillRequest $autoFill
-     */
-    public function setAutoFill(AutoFillRequest $autoFill)
-    {
-    }
-    /**
-     * @return AutoFillRequest
-     */
-    public function getAutoFill()
-    {
-    }
-    /**
-     * Automatically resizes one or more dimensions based on the contents of the
-     * cells in that dimension.
-     *
-     * @param AutoResizeDimensionsRequest $autoResizeDimensions
-     */
-    public function setAutoResizeDimensions(AutoResizeDimensionsRequest $autoResizeDimensions)
-    {
-    }
-    /**
-     * @return AutoResizeDimensionsRequest
-     */
-    public function getAutoResizeDimensions()
-    {
-    }
-    /**
-     * Cancels refreshes of one or multiple data sources and associated dbobjects.
-     *
-     * @param CancelDataSourceRefreshRequest $cancelDataSourceRefresh
-     */
-    public function setCancelDataSourceRefresh(CancelDataSourceRefreshRequest $cancelDataSourceRefresh)
-    {
-    }
-    /**
-     * @return CancelDataSourceRefreshRequest
-     */
-    public function getCancelDataSourceRefresh()
-    {
-    }
-    /**
-     * Clears the basic filter on a sheet.
-     *
-     * @param ClearBasicFilterRequest $clearBasicFilter
-     */
-    public function setClearBasicFilter(ClearBasicFilterRequest $clearBasicFilter)
-    {
-    }
-    /**
-     * @return ClearBasicFilterRequest
-     */
-    public function getClearBasicFilter()
-    {
-    }
-    /**
-     * Copies data from one area and pastes it to another.
-     *
-     * @param CopyPasteRequest $copyPaste
-     */
-    public function setCopyPaste(CopyPasteRequest $copyPaste)
-    {
-    }
-    /**
-     * @return CopyPasteRequest
-     */
-    public function getCopyPaste()
-    {
-    }
-    /**
-     * Creates new developer metadata
-     *
-     * @param CreateDeveloperMetadataRequest $createDeveloperMetadata
-     */
-    public function setCreateDeveloperMetadata(CreateDeveloperMetadataRequest $createDeveloperMetadata)
-    {
-    }
-    /**
-     * @return CreateDeveloperMetadataRequest
-     */
-    public function getCreateDeveloperMetadata()
-    {
-    }
-    /**
-     * Cuts data from one area and pastes it to another.
-     *
-     * @param CutPasteRequest $cutPaste
-     */
-    public function setCutPaste(CutPasteRequest $cutPaste)
-    {
-    }
-    /**
-     * @return CutPasteRequest
-     */
-    public function getCutPaste()
-    {
-    }
-    /**
-     * Removes a banded range
-     *
-     * @param DeleteBandingRequest $deleteBanding
-     */
-    public function setDeleteBanding(DeleteBandingRequest $deleteBanding)
-    {
-    }
-    /**
-     * @return DeleteBandingRequest
-     */
-    public function getDeleteBanding()
-    {
-    }
-    /**
-     * Deletes an existing conditional format rule.
-     *
-     * @param DeleteConditionalFormatRuleRequest $deleteConditionalFormatRule
-     */
-    public function setDeleteConditionalFormatRule(DeleteConditionalFormatRuleRequest $deleteConditionalFormatRule)
-    {
-    }
-    /**
-     * @return DeleteConditionalFormatRuleRequest
-     */
-    public function getDeleteConditionalFormatRule()
-    {
-    }
-    /**
-     * Deletes a data source.
-     *
-     * @param DeleteDataSourceRequest $deleteDataSource
-     */
-    public function setDeleteDataSource(DeleteDataSourceRequest $deleteDataSource)
-    {
-    }
-    /**
-     * @return DeleteDataSourceRequest
-     */
-    public function getDeleteDataSource()
-    {
-    }
-    /**
-     * Deletes developer metadata
-     *
-     * @param DeleteDeveloperMetadataRequest $deleteDeveloperMetadata
-     */
-    public function setDeleteDeveloperMetadata(DeleteDeveloperMetadataRequest $deleteDeveloperMetadata)
-    {
-    }
-    /**
-     * @return DeleteDeveloperMetadataRequest
-     */
-    public function getDeleteDeveloperMetadata()
-    {
-    }
-    /**
-     * Deletes rows or columns in a sheet.
-     *
-     * @param DeleteDimensionRequest $deleteDimension
-     */
-    public function setDeleteDimension(DeleteDimensionRequest $deleteDimension)
-    {
-    }
-    /**
-     * @return DeleteDimensionRequest
-     */
-    public function getDeleteDimension()
-    {
-    }
-    /**
-     * Deletes a group over the specified range.
-     *
-     * @param DeleteDimensionGroupRequest $deleteDimensionGroup
-     */
-    public function setDeleteDimensionGroup(DeleteDimensionGroupRequest $deleteDimensionGroup)
-    {
-    }
-    /**
-     * @return DeleteDimensionGroupRequest
-     */
-    public function getDeleteDimensionGroup()
-    {
-    }
-    /**
-     * Removes rows containing duplicate values in specified columns of a cell
-     * range.
-     *
-     * @param DeleteDuplicatesRequest $deleteDuplicates
-     */
-    public function setDeleteDuplicates(DeleteDuplicatesRequest $deleteDuplicates)
-    {
-    }
-    /**
-     * @return DeleteDuplicatesRequest
-     */
-    public function getDeleteDuplicates()
-    {
-    }
-    /**
-     * Deletes an embedded object (e.g, chart, image) in a sheet.
-     *
-     * @param DeleteEmbeddedObjectRequest $deleteEmbeddedObject
-     */
-    public function setDeleteEmbeddedObject(DeleteEmbeddedObjectRequest $deleteEmbeddedObject)
-    {
-    }
-    /**
-     * @return DeleteEmbeddedObjectRequest
-     */
-    public function getDeleteEmbeddedObject()
-    {
-    }
-    /**
-     * Deletes a filter view from a sheet.
-     *
-     * @param DeleteFilterViewRequest $deleteFilterView
-     */
-    public function setDeleteFilterView(DeleteFilterViewRequest $deleteFilterView)
-    {
-    }
-    /**
-     * @return DeleteFilterViewRequest
-     */
-    public function getDeleteFilterView()
-    {
-    }
-    /**
-     * Deletes a named range.
-     *
-     * @param DeleteNamedRangeRequest $deleteNamedRange
-     */
-    public function setDeleteNamedRange(DeleteNamedRangeRequest $deleteNamedRange)
-    {
-    }
-    /**
-     * @return DeleteNamedRangeRequest
-     */
-    public function getDeleteNamedRange()
-    {
-    }
-    /**
-     * Deletes a protected range.
-     *
-     * @param DeleteProtectedRangeRequest $deleteProtectedRange
-     */
-    public function setDeleteProtectedRange(DeleteProtectedRangeRequest $deleteProtectedRange)
-    {
-    }
-    /**
-     * @return DeleteProtectedRangeRequest
-     */
-    public function getDeleteProtectedRange()
-    {
-    }
-    /**
-     * Deletes a range of cells from a sheet, shifting the remaining cells.
-     *
-     * @param DeleteRangeRequest $deleteRange
-     */
-    public function setDeleteRange(DeleteRangeRequest $deleteRange)
-    {
-    }
-    /**
-     * @return DeleteRangeRequest
-     */
-    public function getDeleteRange()
-    {
-    }
-    /**
-     * Deletes a sheet.
-     *
-     * @param DeleteSheetRequest $deleteSheet
-     */
-    public function setDeleteSheet(DeleteSheetRequest $deleteSheet)
-    {
-    }
-    /**
-     * @return DeleteSheetRequest
-     */
-    public function getDeleteSheet()
-    {
-    }
-    /**
-     * A request for deleting a table.
-     *
-     * @param DeleteTableRequest $deleteTable
-     */
-    public function setDeleteTable(DeleteTableRequest $deleteTable)
-    {
-    }
-    /**
-     * @return DeleteTableRequest
-     */
-    public function getDeleteTable()
-    {
-    }
-    /**
-     * Duplicates a filter view.
-     *
-     * @param DuplicateFilterViewRequest $duplicateFilterView
-     */
-    public function setDuplicateFilterView(DuplicateFilterViewRequest $duplicateFilterView)
-    {
-    }
-    /**
-     * @return DuplicateFilterViewRequest
-     */
-    public function getDuplicateFilterView()
-    {
-    }
-    /**
-     * Duplicates a sheet.
-     *
-     * @param DuplicateSheetRequest $duplicateSheet
-     */
-    public function setDuplicateSheet(DuplicateSheetRequest $duplicateSheet)
-    {
-    }
-    /**
-     * @return DuplicateSheetRequest
-     */
-    public function getDuplicateSheet()
-    {
-    }
-    /**
-     * Finds and replaces occurrences of some text with other text.
-     *
-     * @param FindReplaceRequest $findReplace
-     */
-    public function setFindReplace(FindReplaceRequest $findReplace)
-    {
-    }
-    /**
-     * @return FindReplaceRequest
-     */
-    public function getFindReplace()
-    {
-    }
-    /**
-     * Inserts new rows or columns in a sheet.
-     *
-     * @param InsertDimensionRequest $insertDimension
-     */
-    public function setInsertDimension(InsertDimensionRequest $insertDimension)
-    {
-    }
-    /**
-     * @return InsertDimensionRequest
-     */
-    public function getInsertDimension()
-    {
-    }
-    /**
-     * Inserts new cells in a sheet, shifting the existing cells.
-     *
-     * @param InsertRangeRequest $insertRange
-     */
-    public function setInsertRange(InsertRangeRequest $insertRange)
-    {
-    }
-    /**
-     * @return InsertRangeRequest
-     */
-    public function getInsertRange()
-    {
-    }
-    /**
-     * Merges cells together.
-     *
-     * @param MergeCellsRequest $mergeCells
-     */
-    public function setMergeCells(MergeCellsRequest $mergeCells)
-    {
-    }
-    /**
-     * @return MergeCellsRequest
-     */
-    public function getMergeCells()
-    {
-    }
-    /**
-     * Moves rows or columns to another location in a sheet.
-     *
-     * @param MoveDimensionRequest $moveDimension
-     */
-    public function setMoveDimension(MoveDimensionRequest $moveDimension)
-    {
-    }
-    /**
-     * @return MoveDimensionRequest
-     */
-    public function getMoveDimension()
-    {
-    }
-    /**
-     * Pastes data (HTML or delimited) into a sheet.
-     *
-     * @param PasteDataRequest $pasteData
-     */
-    public function setPasteData(PasteDataRequest $pasteData)
-    {
-    }
-    /**
-     * @return PasteDataRequest
-     */
-    public function getPasteData()
-    {
-    }
-    /**
-     * Randomizes the order of the rows in a range.
-     *
-     * @param RandomizeRangeRequest $randomizeRange
-     */
-    public function setRandomizeRange(RandomizeRangeRequest $randomizeRange)
-    {
-    }
-    /**
-     * @return RandomizeRangeRequest
-     */
-    public function getRandomizeRange()
-    {
-    }
-    /**
-     * Refreshes one or multiple data sources and associated dbobjects.
-     *
-     * @param RefreshDataSourceRequest $refreshDataSource
-     */
-    public function setRefreshDataSource(RefreshDataSourceRequest $refreshDataSource)
-    {
-    }
-    /**
-     * @return RefreshDataSourceRequest
-     */
-    public function getRefreshDataSource()
-    {
-    }
-    /**
-     * Repeats a single cell across a range.
-     *
-     * @param RepeatCellRequest $repeatCell
-     */
-    public function setRepeatCell(RepeatCellRequest $repeatCell)
-    {
-    }
-    /**
-     * @return RepeatCellRequest
-     */
-    public function getRepeatCell()
-    {
-    }
-    /**
-     * Sets the basic filter on a sheet.
-     *
-     * @param SetBasicFilterRequest $setBasicFilter
-     */
-    public function setSetBasicFilter(SetBasicFilterRequest $setBasicFilter)
-    {
-    }
-    /**
-     * @return SetBasicFilterRequest
-     */
-    public function getSetBasicFilter()
-    {
-    }
-    /**
-     * Sets data validation for one or more cells.
-     *
-     * @param SetDataValidationRequest $setDataValidation
-     */
-    public function setSetDataValidation(SetDataValidationRequest $setDataValidation)
-    {
-    }
-    /**
-     * @return SetDataValidationRequest
-     */
-    public function getSetDataValidation()
-    {
-    }
-    /**
-     * Sorts data in a range.
-     *
-     * @param SortRangeRequest $sortRange
-     */
-    public function setSortRange(SortRangeRequest $sortRange)
-    {
-    }
-    /**
-     * @return SortRangeRequest
-     */
-    public function getSortRange()
-    {
-    }
-    /**
-     * Converts a column of text into many columns of text.
-     *
-     * @param TextToColumnsRequest $textToColumns
-     */
-    public function setTextToColumns(TextToColumnsRequest $textToColumns)
-    {
-    }
-    /**
-     * @return TextToColumnsRequest
-     */
-    public function getTextToColumns()
-    {
-    }
-    /**
-     * Trims cells of whitespace (such as spaces, tabs, or new lines).
-     *
-     * @param TrimWhitespaceRequest $trimWhitespace
-     */
-    public function setTrimWhitespace(TrimWhitespaceRequest $trimWhitespace)
-    {
-    }
-    /**
-     * @return TrimWhitespaceRequest
-     */
-    public function getTrimWhitespace()
-    {
-    }
-    /**
-     * Unmerges merged cells.
-     *
-     * @param UnmergeCellsRequest $unmergeCells
-     */
-    public function setUnmergeCells(UnmergeCellsRequest $unmergeCells)
-    {
-    }
-    /**
-     * @return UnmergeCellsRequest
-     */
-    public function getUnmergeCells()
-    {
-    }
-    /**
-     * Updates a banded range
-     *
-     * @param UpdateBandingRequest $updateBanding
-     */
-    public function setUpdateBanding(UpdateBandingRequest $updateBanding)
-    {
-    }
-    /**
-     * @return UpdateBandingRequest
-     */
-    public function getUpdateBanding()
-    {
-    }
-    /**
-     * Updates the borders in a range of cells.
-     *
-     * @param UpdateBordersRequest $updateBorders
-     */
-    public function setUpdateBorders(UpdateBordersRequest $updateBorders)
-    {
-    }
-    /**
-     * @return UpdateBordersRequest
-     */
-    public function getUpdateBorders()
-    {
-    }
-    /**
-     * Updates many cells at once.
-     *
-     * @param UpdateCellsRequest $updateCells
-     */
-    public function setUpdateCells(UpdateCellsRequest $updateCells)
-    {
-    }
-    /**
-     * @return UpdateCellsRequest
-     */
-    public function getUpdateCells()
-    {
-    }
-    /**
-     * Updates a chart's specifications.
-     *
-     * @param UpdateChartSpecRequest $updateChartSpec
-     */
-    public function setUpdateChartSpec(UpdateChartSpecRequest $updateChartSpec)
-    {
-    }
-    /**
-     * @return UpdateChartSpecRequest
-     */
-    public function getUpdateChartSpec()
-    {
-    }
-    /**
-     * Updates an existing conditional format rule.
-     *
-     * @param UpdateConditionalFormatRuleRequest $updateConditionalFormatRule
-     */
-    public function setUpdateConditionalFormatRule(UpdateConditionalFormatRuleRequest $updateConditionalFormatRule)
-    {
-    }
-    /**
-     * @return UpdateConditionalFormatRuleRequest
-     */
-    public function getUpdateConditionalFormatRule()
-    {
-    }
-    /**
-     * Updates a data source.
-     *
-     * @param UpdateDataSourceRequest $updateDataSource
-     */
-    public function setUpdateDataSource(UpdateDataSourceRequest $updateDataSource)
-    {
-    }
-    /**
-     * @return UpdateDataSourceRequest
-     */
-    public function getUpdateDataSource()
-    {
-    }
-    /**
-     * Updates an existing developer metadata entry
-     *
-     * @param UpdateDeveloperMetadataRequest $updateDeveloperMetadata
-     */
-    public function setUpdateDeveloperMetadata(UpdateDeveloperMetadataRequest $updateDeveloperMetadata)
-    {
-    }
-    /**
-     * @return UpdateDeveloperMetadataRequest
-     */
-    public function getUpdateDeveloperMetadata()
-    {
-    }
-    /**
-     * Updates the state of the specified group.
-     *
-     * @param UpdateDimensionGroupRequest $updateDimensionGroup
-     */
-    public function setUpdateDimensionGroup(UpdateDimensionGroupRequest $updateDimensionGroup)
-    {
-    }
-    /**
-     * @return UpdateDimensionGroupRequest
-     */
-    public function getUpdateDimensionGroup()
-    {
-    }
-    /**
-     * Updates dimensions' properties.
-     *
-     * @param UpdateDimensionPropertiesRequest $updateDimensionProperties
-     */
-    public function setUpdateDimensionProperties(UpdateDimensionPropertiesRequest $updateDimensionProperties)
-    {
-    }
-    /**
-     * @return UpdateDimensionPropertiesRequest
-     */
-    public function getUpdateDimensionProperties()
-    {
-    }
-    /**
-     * Updates an embedded object's border.
-     *
-     * @param UpdateEmbeddedObjectBorderRequest $updateEmbeddedObjectBorder
-     */
-    public function setUpdateEmbeddedObjectBorder(UpdateEmbeddedObjectBorderRequest $updateEmbeddedObjectBorder)
-    {
-    }
-    /**
-     * @return UpdateEmbeddedObjectBorderRequest
-     */
-    public function getUpdateEmbeddedObjectBorder()
-    {
-    }
-    /**
-     * Updates an embedded object's (e.g. chart, image) position.
-     *
-     * @param UpdateEmbeddedObjectPositionRequest $updateEmbeddedObjectPosition
-     */
-    public function setUpdateEmbeddedObjectPosition(UpdateEmbeddedObjectPositionRequest $updateEmbeddedObjectPosition)
-    {
-    }
-    /**
-     * @return UpdateEmbeddedObjectPositionRequest
-     */
-    public function getUpdateEmbeddedObjectPosition()
-    {
-    }
-    /**
-     * Updates the properties of a filter view.
-     *
-     * @param UpdateFilterViewRequest $updateFilterView
-     */
-    public function setUpdateFilterView(UpdateFilterViewRequest $updateFilterView)
-    {
-    }
-    /**
-     * @return UpdateFilterViewRequest
-     */
-    public function getUpdateFilterView()
-    {
-    }
-    /**
-     * Updates a named range.
-     *
-     * @param UpdateNamedRangeRequest $updateNamedRange
-     */
-    public function setUpdateNamedRange(UpdateNamedRangeRequest $updateNamedRange)
-    {
-    }
-    /**
-     * @return UpdateNamedRangeRequest
-     */
-    public function getUpdateNamedRange()
-    {
-    }
-    /**
-     * Updates a protected range.
-     *
-     * @param UpdateProtectedRangeRequest $updateProtectedRange
-     */
-    public function setUpdateProtectedRange(UpdateProtectedRangeRequest $updateProtectedRange)
-    {
-    }
-    /**
-     * @return UpdateProtectedRangeRequest
-     */
-    public function getUpdateProtectedRange()
-    {
-    }
-    /**
-     * Updates a sheet's properties.
-     *
-     * @param UpdateSheetPropertiesRequest $updateSheetProperties
-     */
-    public function setUpdateSheetProperties(UpdateSheetPropertiesRequest $updateSheetProperties)
-    {
-    }
-    /**
-     * @return UpdateSheetPropertiesRequest
-     */
-    public function getUpdateSheetProperties()
-    {
-    }
-    /**
-     * Updates a slicer's specifications.
-     *
-     * @param UpdateSlicerSpecRequest $updateSlicerSpec
-     */
-    public function setUpdateSlicerSpec(UpdateSlicerSpecRequest $updateSlicerSpec)
-    {
-    }
-    /**
-     * @return UpdateSlicerSpecRequest
-     */
-    public function getUpdateSlicerSpec()
-    {
-    }
-    /**
-     * Updates the spreadsheet's properties.
-     *
-     * @param UpdateSpreadsheetPropertiesRequest $updateSpreadsheetProperties
-     */
-    public function setUpdateSpreadsheetProperties(UpdateSpreadsheetPropertiesRequest $updateSpreadsheetProperties)
-    {
-    }
-    /**
-     * @return UpdateSpreadsheetPropertiesRequest
-     */
-    public function getUpdateSpreadsheetProperties()
-    {
-    }
-    /**
-     * Updates a table.
-     *
-     * @param UpdateTableRequest $updateTable
-     */
-    public function setUpdateTable(UpdateTableRequest $updateTable)
-    {
-    }
-    /**
-     * @return UpdateTableRequest
-     */
-    public function getUpdateTable()
+namespace Google\Service\Sheets {
+    class Request extends \Google\Model
+    {
+        protected $addBandingType = AddBandingRequest::class;
+        protected $addBandingDataType = '';
+        protected $addChartType = AddChartRequest::class;
+        protected $addChartDataType = '';
+        protected $addConditionalFormatRuleType = AddConditionalFormatRuleRequest::class;
+        protected $addConditionalFormatRuleDataType = '';
+        protected $addDataSourceType = AddDataSourceRequest::class;
+        protected $addDataSourceDataType = '';
+        protected $addDimensionGroupType = AddDimensionGroupRequest::class;
+        protected $addDimensionGroupDataType = '';
+        protected $addFilterViewType = AddFilterViewRequest::class;
+        protected $addFilterViewDataType = '';
+        protected $addNamedRangeType = AddNamedRangeRequest::class;
+        protected $addNamedRangeDataType = '';
+        protected $addProtectedRangeType = AddProtectedRangeRequest::class;
+        protected $addProtectedRangeDataType = '';
+        protected $addSheetType = AddSheetRequest::class;
+        protected $addSheetDataType = '';
+        protected $addSlicerType = AddSlicerRequest::class;
+        protected $addSlicerDataType = '';
+        protected $addTableType = AddTableRequest::class;
+        protected $addTableDataType = '';
+        protected $appendCellsType = AppendCellsRequest::class;
+        protected $appendCellsDataType = '';
+        protected $appendDimensionType = AppendDimensionRequest::class;
+        protected $appendDimensionDataType = '';
+        protected $autoFillType = AutoFillRequest::class;
+        protected $autoFillDataType = '';
+        protected $autoResizeDimensionsType = AutoResizeDimensionsRequest::class;
+        protected $autoResizeDimensionsDataType = '';
+        protected $cancelDataSourceRefreshType = CancelDataSourceRefreshRequest::class;
+        protected $cancelDataSourceRefreshDataType = '';
+        protected $clearBasicFilterType = ClearBasicFilterRequest::class;
+        protected $clearBasicFilterDataType = '';
+        protected $copyPasteType = CopyPasteRequest::class;
+        protected $copyPasteDataType = '';
+        protected $createDeveloperMetadataType = CreateDeveloperMetadataRequest::class;
+        protected $createDeveloperMetadataDataType = '';
+        protected $cutPasteType = CutPasteRequest::class;
+        protected $cutPasteDataType = '';
+        protected $deleteBandingType = DeleteBandingRequest::class;
+        protected $deleteBandingDataType = '';
+        protected $deleteConditionalFormatRuleType = DeleteConditionalFormatRuleRequest::class;
+        protected $deleteConditionalFormatRuleDataType = '';
+        protected $deleteDataSourceType = DeleteDataSourceRequest::class;
+        protected $deleteDataSourceDataType = '';
+        protected $deleteDeveloperMetadataType = DeleteDeveloperMetadataRequest::class;
+        protected $deleteDeveloperMetadataDataType = '';
+        protected $deleteDimensionType = DeleteDimensionRequest::class;
+        protected $deleteDimensionDataType = '';
+        protected $deleteDimensionGroupType = DeleteDimensionGroupRequest::class;
+        protected $deleteDimensionGroupDataType = '';
+        protected $deleteDuplicatesType = DeleteDuplicatesRequest::class;
+        protected $deleteDuplicatesDataType = '';
+        protected $deleteEmbeddedObjectType = DeleteEmbeddedObjectRequest::class;
+        protected $deleteEmbeddedObjectDataType = '';
+        protected $deleteFilterViewType = DeleteFilterViewRequest::class;
+        protected $deleteFilterViewDataType = '';
+        protected $deleteNamedRangeType = DeleteNamedRangeRequest::class;
+        protected $deleteNamedRangeDataType = '';
+        protected $deleteProtectedRangeType = DeleteProtectedRangeRequest::class;
+        protected $deleteProtectedRangeDataType = '';
+        protected $deleteRangeType = DeleteRangeRequest::class;
+        protected $deleteRangeDataType = '';
+        protected $deleteSheetType = DeleteSheetRequest::class;
+        protected $deleteSheetDataType = '';
+        protected $deleteTableType = DeleteTableRequest::class;
+        protected $deleteTableDataType = '';
+        protected $duplicateFilterViewType = DuplicateFilterViewRequest::class;
+        protected $duplicateFilterViewDataType = '';
+        protected $duplicateSheetType = DuplicateSheetRequest::class;
+        protected $duplicateSheetDataType = '';
+        protected $findReplaceType = FindReplaceRequest::class;
+        protected $findReplaceDataType = '';
+        protected $insertDimensionType = InsertDimensionRequest::class;
+        protected $insertDimensionDataType = '';
+        protected $insertRangeType = InsertRangeRequest::class;
+        protected $insertRangeDataType = '';
+        protected $mergeCellsType = MergeCellsRequest::class;
+        protected $mergeCellsDataType = '';
+        protected $moveDimensionType = MoveDimensionRequest::class;
+        protected $moveDimensionDataType = '';
+        protected $pasteDataType = PasteDataRequest::class;
+        protected $pasteDataDataType = '';
+        protected $randomizeRangeType = RandomizeRangeRequest::class;
+        protected $randomizeRangeDataType = '';
+        protected $refreshDataSourceType = RefreshDataSourceRequest::class;
+        protected $refreshDataSourceDataType = '';
+        protected $repeatCellType = RepeatCellRequest::class;
+        protected $repeatCellDataType = '';
+        protected $setBasicFilterType = SetBasicFilterRequest::class;
+        protected $setBasicFilterDataType = '';
+        protected $setDataValidationType = SetDataValidationRequest::class;
+        protected $setDataValidationDataType = '';
+        protected $sortRangeType = SortRangeRequest::class;
+        protected $sortRangeDataType = '';
+        protected $textToColumnsType = TextToColumnsRequest::class;
+        protected $textToColumnsDataType = '';
+        protected $trimWhitespaceType = TrimWhitespaceRequest::class;
+        protected $trimWhitespaceDataType = '';
+        protected $unmergeCellsType = UnmergeCellsRequest::class;
+        protected $unmergeCellsDataType = '';
+        protected $updateBandingType = UpdateBandingRequest::class;
+        protected $updateBandingDataType = '';
+        protected $updateBordersType = UpdateBordersRequest::class;
+        protected $updateBordersDataType = '';
+        protected $updateCellsType = UpdateCellsRequest::class;
+        protected $updateCellsDataType = '';
+        protected $updateChartSpecType = UpdateChartSpecRequest::class;
+        protected $updateChartSpecDataType = '';
+        protected $updateConditionalFormatRuleType = UpdateConditionalFormatRuleRequest::class;
+        protected $updateConditionalFormatRuleDataType = '';
+        protected $updateDataSourceType = UpdateDataSourceRequest::class;
+        protected $updateDataSourceDataType = '';
+        protected $updateDeveloperMetadataType = UpdateDeveloperMetadataRequest::class;
+        protected $updateDeveloperMetadataDataType = '';
+        protected $updateDimensionGroupType = UpdateDimensionGroupRequest::class;
+        protected $updateDimensionGroupDataType = '';
+        protected $updateDimensionPropertiesType = UpdateDimensionPropertiesRequest::class;
+        protected $updateDimensionPropertiesDataType = '';
+        protected $updateEmbeddedObjectBorderType = UpdateEmbeddedObjectBorderRequest::class;
+        protected $updateEmbeddedObjectBorderDataType = '';
+        protected $updateEmbeddedObjectPositionType = UpdateEmbeddedObjectPositionRequest::class;
+        protected $updateEmbeddedObjectPositionDataType = '';
+        protected $updateFilterViewType = UpdateFilterViewRequest::class;
+        protected $updateFilterViewDataType = '';
+        protected $updateNamedRangeType = UpdateNamedRangeRequest::class;
+        protected $updateNamedRangeDataType = '';
+        protected $updateProtectedRangeType = UpdateProtectedRangeRequest::class;
+        protected $updateProtectedRangeDataType = '';
+        protected $updateSheetPropertiesType = UpdateSheetPropertiesRequest::class;
+        protected $updateSheetPropertiesDataType = '';
+        protected $updateSlicerSpecType = UpdateSlicerSpecRequest::class;
+        protected $updateSlicerSpecDataType = '';
+        protected $updateSpreadsheetPropertiesType = UpdateSpreadsheetPropertiesRequest::class;
+        protected $updateSpreadsheetPropertiesDataType = '';
+        protected $updateTableType = UpdateTableRequest::class;
+        protected $updateTableDataType = '';
+        /**
+         * Adds a new banded range
+         *
+         * @param AddBandingRequest $addBanding
+         */
+        public function setAddBanding(AddBandingRequest $addBanding)
+        {
+        }
+        /**
+         * @return AddBandingRequest
+         */
+        public function getAddBanding()
+        {
+        }
+        /**
+         * Adds a chart.
+         *
+         * @param AddChartRequest $addChart
+         */
+        public function setAddChart(AddChartRequest $addChart)
+        {
+        }
+        /**
+         * @return AddChartRequest
+         */
+        public function getAddChart()
+        {
+        }
+        /**
+         * Adds a new conditional format rule.
+         *
+         * @param AddConditionalFormatRuleRequest $addConditionalFormatRule
+         */
+        public function setAddConditionalFormatRule(AddConditionalFormatRuleRequest $addConditionalFormatRule)
+        {
+        }
+        /**
+         * @return AddConditionalFormatRuleRequest
+         */
+        public function getAddConditionalFormatRule()
+        {
+        }
+        /**
+         * Adds a data source.
+         *
+         * @param AddDataSourceRequest $addDataSource
+         */
+        public function setAddDataSource(AddDataSourceRequest $addDataSource)
+        {
+        }
+        /**
+         * @return AddDataSourceRequest
+         */
+        public function getAddDataSource()
+        {
+        }
+        /**
+         * Creates a group over the specified range.
+         *
+         * @param AddDimensionGroupRequest $addDimensionGroup
+         */
+        public function setAddDimensionGroup(AddDimensionGroupRequest $addDimensionGroup)
+        {
+        }
+        /**
+         * @return AddDimensionGroupRequest
+         */
+        public function getAddDimensionGroup()
+        {
+        }
+        /**
+         * Adds a filter view.
+         *
+         * @param AddFilterViewRequest $addFilterView
+         */
+        public function setAddFilterView(AddFilterViewRequest $addFilterView)
+        {
+        }
+        /**
+         * @return AddFilterViewRequest
+         */
+        public function getAddFilterView()
+        {
+        }
+        /**
+         * Adds a named range.
+         *
+         * @param AddNamedRangeRequest $addNamedRange
+         */
+        public function setAddNamedRange(AddNamedRangeRequest $addNamedRange)
+        {
+        }
+        /**
+         * @return AddNamedRangeRequest
+         */
+        public function getAddNamedRange()
+        {
+        }
+        /**
+         * Adds a protected range.
+         *
+         * @param AddProtectedRangeRequest $addProtectedRange
+         */
+        public function setAddProtectedRange(AddProtectedRangeRequest $addProtectedRange)
+        {
+        }
+        /**
+         * @return AddProtectedRangeRequest
+         */
+        public function getAddProtectedRange()
+        {
+        }
+        /**
+         * Adds a sheet.
+         *
+         * @param AddSheetRequest $addSheet
+         */
+        public function setAddSheet(AddSheetRequest $addSheet)
+        {
+        }
+        /**
+         * @return AddSheetRequest
+         */
+        public function getAddSheet()
+        {
+        }
+        /**
+         * Adds a slicer.
+         *
+         * @param AddSlicerRequest $addSlicer
+         */
+        public function setAddSlicer(AddSlicerRequest $addSlicer)
+        {
+        }
+        /**
+         * @return AddSlicerRequest
+         */
+        public function getAddSlicer()
+        {
+        }
+        /**
+         * Adds a table.
+         *
+         * @param AddTableRequest $addTable
+         */
+        public function setAddTable(AddTableRequest $addTable)
+        {
+        }
+        /**
+         * @return AddTableRequest
+         */
+        public function getAddTable()
+        {
+        }
+        /**
+         * Appends cells after the last row with data in a sheet.
+         *
+         * @param AppendCellsRequest $appendCells
+         */
+        public function setAppendCells(AppendCellsRequest $appendCells)
+        {
+        }
+        /**
+         * @return AppendCellsRequest
+         */
+        public function getAppendCells()
+        {
+        }
+        /**
+         * Appends dimensions to the end of a sheet.
+         *
+         * @param AppendDimensionRequest $appendDimension
+         */
+        public function setAppendDimension(AppendDimensionRequest $appendDimension)
+        {
+        }
+        /**
+         * @return AppendDimensionRequest
+         */
+        public function getAppendDimension()
+        {
+        }
+        /**
+         * Automatically fills in more data based on existing data.
+         *
+         * @param AutoFillRequest $autoFill
+         */
+        public function setAutoFill(AutoFillRequest $autoFill)
+        {
+        }
+        /**
+         * @return AutoFillRequest
+         */
+        public function getAutoFill()
+        {
+        }
+        /**
+         * Automatically resizes one or more dimensions based on the contents of the
+         * cells in that dimension.
+         *
+         * @param AutoResizeDimensionsRequest $autoResizeDimensions
+         */
+        public function setAutoResizeDimensions(AutoResizeDimensionsRequest $autoResizeDimensions)
+        {
+        }
+        /**
+         * @return AutoResizeDimensionsRequest
+         */
+        public function getAutoResizeDimensions()
+        {
+        }
+        /**
+         * Cancels refreshes of one or multiple data sources and associated dbobjects.
+         *
+         * @param CancelDataSourceRefreshRequest $cancelDataSourceRefresh
+         */
+        public function setCancelDataSourceRefresh(CancelDataSourceRefreshRequest $cancelDataSourceRefresh)
+        {
+        }
+        /**
+         * @return CancelDataSourceRefreshRequest
+         */
+        public function getCancelDataSourceRefresh()
+        {
+        }
+        /**
+         * Clears the basic filter on a sheet.
+         *
+         * @param ClearBasicFilterRequest $clearBasicFilter
+         */
+        public function setClearBasicFilter(ClearBasicFilterRequest $clearBasicFilter)
+        {
+        }
+        /**
+         * @return ClearBasicFilterRequest
+         */
+        public function getClearBasicFilter()
+        {
+        }
+        /**
+         * Copies data from one area and pastes it to another.
+         *
+         * @param CopyPasteRequest $copyPaste
+         */
+        public function setCopyPaste(CopyPasteRequest $copyPaste)
+        {
+        }
+        /**
+         * @return CopyPasteRequest
+         */
+        public function getCopyPaste()
+        {
+        }
+        /**
+         * Creates new developer metadata
+         *
+         * @param CreateDeveloperMetadataRequest $createDeveloperMetadata
+         */
+        public function setCreateDeveloperMetadata(CreateDeveloperMetadataRequest $createDeveloperMetadata)
+        {
+        }
+        /**
+         * @return CreateDeveloperMetadataRequest
+         */
+        public function getCreateDeveloperMetadata()
+        {
+        }
+        /**
+         * Cuts data from one area and pastes it to another.
+         *
+         * @param CutPasteRequest $cutPaste
+         */
+        public function setCutPaste(CutPasteRequest $cutPaste)
+        {
+        }
+        /**
+         * @return CutPasteRequest
+         */
+        public function getCutPaste()
+        {
+        }
+        /**
+         * Removes a banded range
+         *
+         * @param DeleteBandingRequest $deleteBanding
+         */
+        public function setDeleteBanding(DeleteBandingRequest $deleteBanding)
+        {
+        }
+        /**
+         * @return DeleteBandingRequest
+         */
+        public function getDeleteBanding()
+        {
+        }
+        /**
+         * Deletes an existing conditional format rule.
+         *
+         * @param DeleteConditionalFormatRuleRequest $deleteConditionalFormatRule
+         */
+        public function setDeleteConditionalFormatRule(DeleteConditionalFormatRuleRequest $deleteConditionalFormatRule)
+        {
+        }
+        /**
+         * @return DeleteConditionalFormatRuleRequest
+         */
+        public function getDeleteConditionalFormatRule()
+        {
+        }
+        /**
+         * Deletes a data source.
+         *
+         * @param DeleteDataSourceRequest $deleteDataSource
+         */
+        public function setDeleteDataSource(DeleteDataSourceRequest $deleteDataSource)
+        {
+        }
+        /**
+         * @return DeleteDataSourceRequest
+         */
+        public function getDeleteDataSource()
+        {
+        }
+        /**
+         * Deletes developer metadata
+         *
+         * @param DeleteDeveloperMetadataRequest $deleteDeveloperMetadata
+         */
+        public function setDeleteDeveloperMetadata(DeleteDeveloperMetadataRequest $deleteDeveloperMetadata)
+        {
+        }
+        /**
+         * @return DeleteDeveloperMetadataRequest
+         */
+        public function getDeleteDeveloperMetadata()
+        {
+        }
+        /**
+         * Deletes rows or columns in a sheet.
+         *
+         * @param DeleteDimensionRequest $deleteDimension
+         */
+        public function setDeleteDimension(DeleteDimensionRequest $deleteDimension)
+        {
+        }
+        /**
+         * @return DeleteDimensionRequest
+         */
+        public function getDeleteDimension()
+        {
+        }
+        /**
+         * Deletes a group over the specified range.
+         *
+         * @param DeleteDimensionGroupRequest $deleteDimensionGroup
+         */
+        public function setDeleteDimensionGroup(DeleteDimensionGroupRequest $deleteDimensionGroup)
+        {
+        }
+        /**
+         * @return DeleteDimensionGroupRequest
+         */
+        public function getDeleteDimensionGroup()
+        {
+        }
+        /**
+         * Removes rows containing duplicate values in specified columns of a cell
+         * range.
+         *
+         * @param DeleteDuplicatesRequest $deleteDuplicates
+         */
+        public function setDeleteDuplicates(DeleteDuplicatesRequest $deleteDuplicates)
+        {
+        }
+        /**
+         * @return DeleteDuplicatesRequest
+         */
+        public function getDeleteDuplicates()
+        {
+        }
+        /**
+         * Deletes an embedded object (e.g, chart, image) in a sheet.
+         *
+         * @param DeleteEmbeddedObjectRequest $deleteEmbeddedObject
+         */
+        public function setDeleteEmbeddedObject(DeleteEmbeddedObjectRequest $deleteEmbeddedObject)
+        {
+        }
+        /**
+         * @return DeleteEmbeddedObjectRequest
+         */
+        public function getDeleteEmbeddedObject()
+        {
+        }
+        /**
+         * Deletes a filter view from a sheet.
+         *
+         * @param DeleteFilterViewRequest $deleteFilterView
+         */
+        public function setDeleteFilterView(DeleteFilterViewRequest $deleteFilterView)
+        {
+        }
+        /**
+         * @return DeleteFilterViewRequest
+         */
+        public function getDeleteFilterView()
+        {
+        }
+        /**
+         * Deletes a named range.
+         *
+         * @param DeleteNamedRangeRequest $deleteNamedRange
+         */
+        public function setDeleteNamedRange(DeleteNamedRangeRequest $deleteNamedRange)
+        {
+        }
+        /**
+         * @return DeleteNamedRangeRequest
+         */
+        public function getDeleteNamedRange()
+        {
+        }
+        /**
+         * Deletes a protected range.
+         *
+         * @param DeleteProtectedRangeRequest $deleteProtectedRange
+         */
+        public function setDeleteProtectedRange(DeleteProtectedRangeRequest $deleteProtectedRange)
+        {
+        }
+        /**
+         * @return DeleteProtectedRangeRequest
+         */
+        public function getDeleteProtectedRange()
+        {
+        }
+        /**
+         * Deletes a range of cells from a sheet, shifting the remaining cells.
+         *
+         * @param DeleteRangeRequest $deleteRange
+         */
+        public function setDeleteRange(DeleteRangeRequest $deleteRange)
+        {
+        }
+        /**
+         * @return DeleteRangeRequest
+         */
+        public function getDeleteRange()
+        {
+        }
+        /**
+         * Deletes a sheet.
+         *
+         * @param DeleteSheetRequest $deleteSheet
+         */
+        public function setDeleteSheet(DeleteSheetRequest $deleteSheet)
+        {
+        }
+        /**
+         * @return DeleteSheetRequest
+         */
+        public function getDeleteSheet()
+        {
+        }
+        /**
+         * A request for deleting a table.
+         *
+         * @param DeleteTableRequest $deleteTable
+         */
+        public function setDeleteTable(DeleteTableRequest $deleteTable)
+        {
+        }
+        /**
+         * @return DeleteTableRequest
+         */
+        public function getDeleteTable()
+        {
+        }
+        /**
+         * Duplicates a filter view.
+         *
+         * @param DuplicateFilterViewRequest $duplicateFilterView
+         */
+        public function setDuplicateFilterView(DuplicateFilterViewRequest $duplicateFilterView)
+        {
+        }
+        /**
+         * @return DuplicateFilterViewRequest
+         */
+        public function getDuplicateFilterView()
+        {
+        }
+        /**
+         * Duplicates a sheet.
+         *
+         * @param DuplicateSheetRequest $duplicateSheet
+         */
+        public function setDuplicateSheet(DuplicateSheetRequest $duplicateSheet)
+        {
+        }
+        /**
+         * @return DuplicateSheetRequest
+         */
+        public function getDuplicateSheet()
+        {
+        }
+        /**
+         * Finds and replaces occurrences of some text with other text.
+         *
+         * @param FindReplaceRequest $findReplace
+         */
+        public function setFindReplace(FindReplaceRequest $findReplace)
+        {
+        }
+        /**
+         * @return FindReplaceRequest
+         */
+        public function getFindReplace()
+        {
+        }
+        /**
+         * Inserts new rows or columns in a sheet.
+         *
+         * @param InsertDimensionRequest $insertDimension
+         */
+        public function setInsertDimension(InsertDimensionRequest $insertDimension)
+        {
+        }
+        /**
+         * @return InsertDimensionRequest
+         */
+        public function getInsertDimension()
+        {
+        }
+        /**
+         * Inserts new cells in a sheet, shifting the existing cells.
+         *
+         * @param InsertRangeRequest $insertRange
+         */
+        public function setInsertRange(InsertRangeRequest $insertRange)
+        {
+        }
+        /**
+         * @return InsertRangeRequest
+         */
+        public function getInsertRange()
+        {
+        }
+        /**
+         * Merges cells together.
+         *
+         * @param MergeCellsRequest $mergeCells
+         */
+        public function setMergeCells(MergeCellsRequest $mergeCells)
+        {
+        }
+        /**
+         * @return MergeCellsRequest
+         */
+        public function getMergeCells()
+        {
+        }
+        /**
+         * Moves rows or columns to another location in a sheet.
+         *
+         * @param MoveDimensionRequest $moveDimension
+         */
+        public function setMoveDimension(MoveDimensionRequest $moveDimension)
+        {
+        }
+        /**
+         * @return MoveDimensionRequest
+         */
+        public function getMoveDimension()
+        {
+        }
+        /**
+         * Pastes data (HTML or delimited) into a sheet.
+         *
+         * @param PasteDataRequest $pasteData
+         */
+        public function setPasteData(PasteDataRequest $pasteData)
+        {
+        }
+        /**
+         * @return PasteDataRequest
+         */
+        public function getPasteData()
+        {
+        }
+        /**
+         * Randomizes the order of the rows in a range.
+         *
+         * @param RandomizeRangeRequest $randomizeRange
+         */
+        public function setRandomizeRange(RandomizeRangeRequest $randomizeRange)
+        {
+        }
+        /**
+         * @return RandomizeRangeRequest
+         */
+        public function getRandomizeRange()
+        {
+        }
+        /**
+         * Refreshes one or multiple data sources and associated dbobjects.
+         *
+         * @param RefreshDataSourceRequest $refreshDataSource
+         */
+        public function setRefreshDataSource(RefreshDataSourceRequest $refreshDataSource)
+        {
+        }
+        /**
+         * @return RefreshDataSourceRequest
+         */
+        public function getRefreshDataSource()
+        {
+        }
+        /**
+         * Repeats a single cell across a range.
+         *
+         * @param RepeatCellRequest $repeatCell
+         */
+        public function setRepeatCell(RepeatCellRequest $repeatCell)
+        {
+        }
+        /**
+         * @return RepeatCellRequest
+         */
+        public function getRepeatCell()
+        {
+        }
+        /**
+         * Sets the basic filter on a sheet.
+         *
+         * @param SetBasicFilterRequest $setBasicFilter
+         */
+        public function setSetBasicFilter(SetBasicFilterRequest $setBasicFilter)
+        {
+        }
+        /**
+         * @return SetBasicFilterRequest
+         */
+        public function getSetBasicFilter()
+        {
+        }
+        /**
+         * Sets data validation for one or more cells.
+         *
+         * @param SetDataValidationRequest $setDataValidation
+         */
+        public function setSetDataValidation(SetDataValidationRequest $setDataValidation)
+        {
+        }
+        /**
+         * @return SetDataValidationRequest
+         */
+        public function getSetDataValidation()
+        {
+        }
+        /**
+         * Sorts data in a range.
+         *
+         * @param SortRangeRequest $sortRange
+         */
+        public function setSortRange(SortRangeRequest $sortRange)
+        {
+        }
+        /**
+         * @return SortRangeRequest
+         */
+        public function getSortRange()
+        {
+        }
+        /**
+         * Converts a column of text into many columns of text.
+         *
+         * @param TextToColumnsRequest $textToColumns
+         */
+        public function setTextToColumns(TextToColumnsRequest $textToColumns)
+        {
+        }
+        /**
+         * @return TextToColumnsRequest
+         */
+        public function getTextToColumns()
+        {
+        }
+        /**
+         * Trims cells of whitespace (such as spaces, tabs, or new lines).
+         *
+         * @param TrimWhitespaceRequest $trimWhitespace
+         */
+        public function setTrimWhitespace(TrimWhitespaceRequest $trimWhitespace)
+        {
+        }
+        /**
+         * @return TrimWhitespaceRequest
+         */
+        public function getTrimWhitespace()
+        {
+        }
+        /**
+         * Unmerges merged cells.
+         *
+         * @param UnmergeCellsRequest $unmergeCells
+         */
+        public function setUnmergeCells(UnmergeCellsRequest $unmergeCells)
+        {
+        }
+        /**
+         * @return UnmergeCellsRequest
+         */
+        public function getUnmergeCells()
+        {
+        }
+        /**
+         * Updates a banded range
+         *
+         * @param UpdateBandingRequest $updateBanding
+         */
+        public function setUpdateBanding(UpdateBandingRequest $updateBanding)
+        {
+        }
+        /**
+         * @return UpdateBandingRequest
+         */
+        public function getUpdateBanding()
+        {
+        }
+        /**
+         * Updates the borders in a range of cells.
+         *
+         * @param UpdateBordersRequest $updateBorders
+         */
+        public function setUpdateBorders(UpdateBordersRequest $updateBorders)
+        {
+        }
+        /**
+         * @return UpdateBordersRequest
+         */
+        public function getUpdateBorders()
+        {
+        }
+        /**
+         * Updates many cells at once.
+         *
+         * @param UpdateCellsRequest $updateCells
+         */
+        public function setUpdateCells(UpdateCellsRequest $updateCells)
+        {
+        }
+        /**
+         * @return UpdateCellsRequest
+         */
+        public function getUpdateCells()
+        {
+        }
+        /**
+         * Updates a chart's specifications.
+         *
+         * @param UpdateChartSpecRequest $updateChartSpec
+         */
+        public function setUpdateChartSpec(UpdateChartSpecRequest $updateChartSpec)
+        {
+        }
+        /**
+         * @return UpdateChartSpecRequest
+         */
+        public function getUpdateChartSpec()
+        {
+        }
+        /**
+         * Updates an existing conditional format rule.
+         *
+         * @param UpdateConditionalFormatRuleRequest $updateConditionalFormatRule
+         */
+        public function setUpdateConditionalFormatRule(UpdateConditionalFormatRuleRequest $updateConditionalFormatRule)
+        {
+        }
+        /**
+         * @return UpdateConditionalFormatRuleRequest
+         */
+        public function getUpdateConditionalFormatRule()
+        {
+        }
+        /**
+         * Updates a data source.
+         *
+         * @param UpdateDataSourceRequest $updateDataSource
+         */
+        public function setUpdateDataSource(UpdateDataSourceRequest $updateDataSource)
+        {
+        }
+        /**
+         * @return UpdateDataSourceRequest
+         */
+        public function getUpdateDataSource()
+        {
+        }
+        /**
+         * Updates an existing developer metadata entry
+         *
+         * @param UpdateDeveloperMetadataRequest $updateDeveloperMetadata
+         */
+        public function setUpdateDeveloperMetadata(UpdateDeveloperMetadataRequest $updateDeveloperMetadata)
+        {
+        }
+        /**
+         * @return UpdateDeveloperMetadataRequest
+         */
+        public function getUpdateDeveloperMetadata()
+        {
+        }
+        /**
+         * Updates the state of the specified group.
+         *
+         * @param UpdateDimensionGroupRequest $updateDimensionGroup
+         */
+        public function setUpdateDimensionGroup(UpdateDimensionGroupRequest $updateDimensionGroup)
+        {
+        }
+        /**
+         * @return UpdateDimensionGroupRequest
+         */
+        public function getUpdateDimensionGroup()
+        {
+        }
+        /**
+         * Updates dimensions' properties.
+         *
+         * @param UpdateDimensionPropertiesRequest $updateDimensionProperties
+         */
+        public function setUpdateDimensionProperties(UpdateDimensionPropertiesRequest $updateDimensionProperties)
+        {
+        }
+        /**
+         * @return UpdateDimensionPropertiesRequest
+         */
+        public function getUpdateDimensionProperties()
+        {
+        }
+        /**
+         * Updates an embedded object's border.
+         *
+         * @param UpdateEmbeddedObjectBorderRequest $updateEmbeddedObjectBorder
+         */
+        public function setUpdateEmbeddedObjectBorder(UpdateEmbeddedObjectBorderRequest $updateEmbeddedObjectBorder)
+        {
+        }
+        /**
+         * @return UpdateEmbeddedObjectBorderRequest
+         */
+        public function getUpdateEmbeddedObjectBorder()
+        {
+        }
+        /**
+         * Updates an embedded object's (e.g. chart, image) position.
+         *
+         * @param UpdateEmbeddedObjectPositionRequest $updateEmbeddedObjectPosition
+         */
+        public function setUpdateEmbeddedObjectPosition(UpdateEmbeddedObjectPositionRequest $updateEmbeddedObjectPosition)
+        {
+        }
+        /**
+         * @return UpdateEmbeddedObjectPositionRequest
+         */
+        public function getUpdateEmbeddedObjectPosition()
+        {
+        }
+        /**
+         * Updates the properties of a filter view.
+         *
+         * @param UpdateFilterViewRequest $updateFilterView
+         */
+        public function setUpdateFilterView(UpdateFilterViewRequest $updateFilterView)
+        {
+        }
+        /**
+         * @return UpdateFilterViewRequest
+         */
+        public function getUpdateFilterView()
+        {
+        }
+        /**
+         * Updates a named range.
+         *
+         * @param UpdateNamedRangeRequest $updateNamedRange
+         */
+        public function setUpdateNamedRange(UpdateNamedRangeRequest $updateNamedRange)
+        {
+        }
+        /**
+         * @return UpdateNamedRangeRequest
+         */
+        public function getUpdateNamedRange()
+        {
+        }
+        /**
+         * Updates a protected range.
+         *
+         * @param UpdateProtectedRangeRequest $updateProtectedRange
+         */
+        public function setUpdateProtectedRange(UpdateProtectedRangeRequest $updateProtectedRange)
+        {
+        }
+        /**
+         * @return UpdateProtectedRangeRequest
+         */
+        public function getUpdateProtectedRange()
+        {
+        }
+        /**
+         * Updates a sheet's properties.
+         *
+         * @param UpdateSheetPropertiesRequest $updateSheetProperties
+         */
+        public function setUpdateSheetProperties(UpdateSheetPropertiesRequest $updateSheetProperties)
+        {
+        }
+        /**
+         * @return UpdateSheetPropertiesRequest
+         */
+        public function getUpdateSheetProperties()
+        {
+        }
+        /**
+         * Updates a slicer's specifications.
+         *
+         * @param UpdateSlicerSpecRequest $updateSlicerSpec
+         */
+        public function setUpdateSlicerSpec(UpdateSlicerSpecRequest $updateSlicerSpec)
+        {
+        }
+        /**
+         * @return UpdateSlicerSpecRequest
+         */
+        public function getUpdateSlicerSpec()
+        {
+        }
+        /**
+         * Updates the spreadsheet's properties.
+         *
+         * @param UpdateSpreadsheetPropertiesRequest $updateSpreadsheetProperties
+         */
+        public function setUpdateSpreadsheetProperties(UpdateSpreadsheetPropertiesRequest $updateSpreadsheetProperties)
+        {
+        }
+        /**
+         * @return UpdateSpreadsheetPropertiesRequest
+         */
+        public function getUpdateSpreadsheetProperties()
+        {
+        }
+        /**
+         * Updates a table.
+         *
+         * @param UpdateTableRequest $updateTable
+         */
+        public function setUpdateTable(UpdateTableRequest $updateTable)
+        {
+        }
+        /**
+         * @return UpdateTableRequest
+         */
+        public function getUpdateTable()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Sheets\Request registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Sheets_Request extends \Google\Service\Sheets\Request
     {
     }
 }

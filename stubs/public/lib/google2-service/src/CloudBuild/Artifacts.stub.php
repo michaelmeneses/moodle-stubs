@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Artifacts extends \Google\Collection
-{
-    protected $collection_key = 'pythonPackages';
-    /**
-     * @var string[]
-     */
-    public $images;
-    protected $mavenArtifactsType = MavenArtifact::class;
-    protected $mavenArtifactsDataType = 'array';
-    protected $npmPackagesType = NpmPackage::class;
-    protected $npmPackagesDataType = 'array';
-    protected $objectsType = ArtifactObjects::class;
-    protected $objectsDataType = '';
-    protected $pythonPackagesType = PythonPackage::class;
-    protected $pythonPackagesDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setImages($images)
+namespace Google\Service\CloudBuild {
+    class Artifacts extends \Google\Collection
     {
+        protected $collection_key = 'pythonPackages';
+        /**
+         * @var string[]
+         */
+        public $images;
+        protected $mavenArtifactsType = MavenArtifact::class;
+        protected $mavenArtifactsDataType = 'array';
+        protected $npmPackagesType = NpmPackage::class;
+        protected $npmPackagesDataType = 'array';
+        protected $objectsType = ArtifactObjects::class;
+        protected $objectsDataType = '';
+        protected $pythonPackagesType = PythonPackage::class;
+        protected $pythonPackagesDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setImages($images)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getImages()
+        {
+        }
+        /**
+         * @param MavenArtifact[]
+         */
+        public function setMavenArtifacts($mavenArtifacts)
+        {
+        }
+        /**
+         * @return MavenArtifact[]
+         */
+        public function getMavenArtifacts()
+        {
+        }
+        /**
+         * @param NpmPackage[]
+         */
+        public function setNpmPackages($npmPackages)
+        {
+        }
+        /**
+         * @return NpmPackage[]
+         */
+        public function getNpmPackages()
+        {
+        }
+        /**
+         * @param ArtifactObjects
+         */
+        public function setObjects(ArtifactObjects $objects)
+        {
+        }
+        /**
+         * @return ArtifactObjects
+         */
+        public function getObjects()
+        {
+        }
+        /**
+         * @param PythonPackage[]
+         */
+        public function setPythonPackages($pythonPackages)
+        {
+        }
+        /**
+         * @return PythonPackage[]
+         */
+        public function getPythonPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\Artifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImages()
-    {
-    }
-    /**
-     * @param MavenArtifact[]
-     */
-    public function setMavenArtifacts($mavenArtifacts)
-    {
-    }
-    /**
-     * @return MavenArtifact[]
-     */
-    public function getMavenArtifacts()
-    {
-    }
-    /**
-     * @param NpmPackage[]
-     */
-    public function setNpmPackages($npmPackages)
-    {
-    }
-    /**
-     * @return NpmPackage[]
-     */
-    public function getNpmPackages()
-    {
-    }
-    /**
-     * @param ArtifactObjects
-     */
-    public function setObjects(ArtifactObjects $objects)
-    {
-    }
-    /**
-     * @return ArtifactObjects
-     */
-    public function getObjects()
-    {
-    }
-    /**
-     * @param PythonPackage[]
-     */
-    public function setPythonPackages($pythonPackages)
-    {
-    }
-    /**
-     * @return PythonPackage[]
-     */
-    public function getPythonPackages()
+    class Google_Service_CloudBuild_Artifacts extends \Google\Service\CloudBuild\Artifacts
     {
     }
 }

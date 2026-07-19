@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DocumentContent extends \Google\Model
-{
-    /**
-     * The MIME type of the content. Supported types: * `application/pdf` (PDF,
-     * only native PDFs are supported for now) * `text/html` (HTML) * `text/plain`
-     * (TXT) * `application/xml` or `text/xml` (XML) * `application/json` (JSON) *
-     * `application/vnd.openxmlformats-officedocument.wordprocessingml.document`
-     * (DOCX) * `application/vnd.openxmlformats-
-     * officedocument.presentationml.presentation` (PPTX) *
-     * `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` (XLSX)
-     * * `application/vnd.ms-excel.sheet.macroenabled.12` (XLSM) The following
-     * types are supported only if layout parser is enabled in the data store: *
-     * `image/bmp` (BMP) * `image/gif` (GIF) * `image/jpeg` (JPEG) * `image/png`
-     * (PNG) * `image/tiff` (TIFF) See https://www.iana.org/assignments/media-
-     * types/media-types.xhtml.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The content represented as a stream of bytes. The maximum length is
-     * 1,000,000 bytes (1 MB / ~0.95 MiB). Note: As with all `bytes` fields, this
-     * field is represented as pure binary in Protocol Buffers and base64-encoded
-     * string in JSON. For example, `abc123!?$*&()'-=@~` should be represented as
-     * `YWJjMTIzIT8kKiYoKSctPUB+` in JSON. See
-     * https://developers.google.com/protocol-buffers/docs/proto3#json.
-     *
-     * @var string
-     */
-    public $rawBytes;
-    /**
-     * The URI of the content. Only Cloud Storage URIs (e.g. `gs://bucket-
-     * name/path/to/file`) are supported. The maximum file size is 2.5 MB for
-     * text-based formats, 200 MB for other formats.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The MIME type of the content. Supported types: * `application/pdf` (PDF,
-     * only native PDFs are supported for now) * `text/html` (HTML) * `text/plain`
-     * (TXT) * `application/xml` or `text/xml` (XML) * `application/json` (JSON) *
-     * `application/vnd.openxmlformats-officedocument.wordprocessingml.document`
-     * (DOCX) * `application/vnd.openxmlformats-
-     * officedocument.presentationml.presentation` (PPTX) *
-     * `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` (XLSX)
-     * * `application/vnd.ms-excel.sheet.macroenabled.12` (XLSM) The following
-     * types are supported only if layout parser is enabled in the data store: *
-     * `image/bmp` (BMP) * `image/gif` (GIF) * `image/jpeg` (JPEG) * `image/png`
-     * (PNG) * `image/tiff` (TIFF) See https://www.iana.org/assignments/media-
-     * types/media-types.xhtml.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DocumentContent extends \Google\Model
     {
+        /**
+         * The MIME type of the content. Supported types: * `application/pdf` (PDF,
+         * only native PDFs are supported for now) * `text/html` (HTML) * `text/plain`
+         * (TXT) * `application/xml` or `text/xml` (XML) * `application/json` (JSON) *
+         * `application/vnd.openxmlformats-officedocument.wordprocessingml.document`
+         * (DOCX) * `application/vnd.openxmlformats-
+         * officedocument.presentationml.presentation` (PPTX) *
+         * `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` (XLSX)
+         * * `application/vnd.ms-excel.sheet.macroenabled.12` (XLSM) The following
+         * types are supported only if layout parser is enabled in the data store: *
+         * `image/bmp` (BMP) * `image/gif` (GIF) * `image/jpeg` (JPEG) * `image/png`
+         * (PNG) * `image/tiff` (TIFF) See https://www.iana.org/assignments/media-
+         * types/media-types.xhtml.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The content represented as a stream of bytes. The maximum length is
+         * 1,000,000 bytes (1 MB / ~0.95 MiB). Note: As with all `bytes` fields, this
+         * field is represented as pure binary in Protocol Buffers and base64-encoded
+         * string in JSON. For example, `abc123!?$*&()'-=@~` should be represented as
+         * `YWJjMTIzIT8kKiYoKSctPUB+` in JSON. See
+         * https://developers.google.com/protocol-buffers/docs/proto3#json.
+         *
+         * @var string
+         */
+        public $rawBytes;
+        /**
+         * The URI of the content. Only Cloud Storage URIs (e.g. `gs://bucket-
+         * name/path/to/file`) are supported. The maximum file size is 2.5 MB for
+         * text-based formats, 200 MB for other formats.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The MIME type of the content. Supported types: * `application/pdf` (PDF,
+         * only native PDFs are supported for now) * `text/html` (HTML) * `text/plain`
+         * (TXT) * `application/xml` or `text/xml` (XML) * `application/json` (JSON) *
+         * `application/vnd.openxmlformats-officedocument.wordprocessingml.document`
+         * (DOCX) * `application/vnd.openxmlformats-
+         * officedocument.presentationml.presentation` (PPTX) *
+         * `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` (XLSX)
+         * * `application/vnd.ms-excel.sheet.macroenabled.12` (XLSM) The following
+         * types are supported only if layout parser is enabled in the data store: *
+         * `image/bmp` (BMP) * `image/gif` (GIF) * `image/jpeg` (JPEG) * `image/png`
+         * (PNG) * `image/tiff` (TIFF) See https://www.iana.org/assignments/media-
+         * types/media-types.xhtml.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The content represented as a stream of bytes. The maximum length is
+         * 1,000,000 bytes (1 MB / ~0.95 MiB). Note: As with all `bytes` fields, this
+         * field is represented as pure binary in Protocol Buffers and base64-encoded
+         * string in JSON. For example, `abc123!?$*&()'-=@~` should be represented as
+         * `YWJjMTIzIT8kKiYoKSctPUB+` in JSON. See
+         * https://developers.google.com/protocol-buffers/docs/proto3#json.
+         *
+         * @param string $rawBytes
+         */
+        public function setRawBytes($rawBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawBytes()
+        {
+        }
+        /**
+         * The URI of the content. Only Cloud Storage URIs (e.g. `gs://bucket-
+         * name/path/to/file`) are supported. The maximum file size is 2.5 MB for
+         * text-based formats, 200 MB for other formats.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The content represented as a stream of bytes. The maximum length is
-     * 1,000,000 bytes (1 MB / ~0.95 MiB). Note: As with all `bytes` fields, this
-     * field is represented as pure binary in Protocol Buffers and base64-encoded
-     * string in JSON. For example, `abc123!?$*&()'-=@~` should be represented as
-     * `YWJjMTIzIT8kKiYoKSctPUB+` in JSON. See
-     * https://developers.google.com/protocol-buffers/docs/proto3#json.
-     *
-     * @param string $rawBytes
-     */
-    public function setRawBytes($rawBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawBytes()
-    {
-    }
-    /**
-     * The URI of the content. Only Cloud Storage URIs (e.g. `gs://bucket-
-     * name/path/to/file`) are supported. The maximum file size is 2.5 MB for
-     * text-based formats, 200 MB for other formats.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DocumentContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentContent
     {
     }
 }

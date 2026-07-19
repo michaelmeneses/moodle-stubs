@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class OrderOnlineMetadata extends \Google\Collection
-{
-    protected $collection_key = 'fulfillmentOption';
-    protected $fulfillmentOptionType = FulfillmentOption::class;
-    protected $fulfillmentOptionDataType = 'array';
-    /**
-     * @param FulfillmentOption[]
-     */
-    public function setFulfillmentOption($fulfillmentOption)
+namespace Google\Service\MyBusinessPlaceActions {
+    class OrderOnlineMetadata extends \Google\Collection
     {
+        protected $collection_key = 'fulfillmentOption';
+        protected $fulfillmentOptionType = FulfillmentOption::class;
+        protected $fulfillmentOptionDataType = 'array';
+        /**
+         * @param FulfillmentOption[]
+         */
+        public function setFulfillmentOption($fulfillmentOption)
+        {
+        }
+        /**
+         * @return FulfillmentOption[]
+         */
+        public function getFulfillmentOption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FulfillmentOption[]
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\OrderOnlineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFulfillmentOption()
+    class Google_Service_MyBusinessPlaceActions_OrderOnlineMetadata extends \Google\Service\MyBusinessPlaceActions\OrderOnlineMetadata
     {
     }
 }

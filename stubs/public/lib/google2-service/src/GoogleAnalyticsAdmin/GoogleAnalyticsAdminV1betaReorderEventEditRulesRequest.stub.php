@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest extends \Google\Collection
-{
-    protected $collection_key = 'eventEditRules';
-    /**
-     * @var string[]
-     */
-    public $eventEditRules;
-    /**
-     * @param string[]
-     */
-    public function setEventEditRules($eventEditRules)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest extends \Google\Collection
     {
+        protected $collection_key = 'eventEditRules';
+        /**
+         * @var string[]
+         */
+        public $eventEditRules;
+        /**
+         * @param string[]
+         */
+        public function setEventEditRules($eventEditRules)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEventEditRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventEditRules()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaReorderEventEditRulesRequest
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BatchClearValuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'clearedRanges';
-    /**
-     * The ranges that were cleared, in A1 notation. If the requests are for an
-     * unbounded range or a ranger larger than the bounds of the sheet, this is
-     * the actual ranges that were cleared, bounded to the sheet's limits.
-     *
-     * @var string[]
-     */
-    public $clearedRanges;
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The ranges that were cleared, in A1 notation. If the requests are for an
-     * unbounded range or a ranger larger than the bounds of the sheet, this is
-     * the actual ranges that were cleared, bounded to the sheet's limits.
-     *
-     * @param string[] $clearedRanges
-     */
-    public function setClearedRanges($clearedRanges)
+namespace Google\Service\Sheets {
+    class BatchClearValuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'clearedRanges';
+        /**
+         * The ranges that were cleared, in A1 notation. If the requests are for an
+         * unbounded range or a ranger larger than the bounds of the sheet, this is
+         * the actual ranges that were cleared, bounded to the sheet's limits.
+         *
+         * @var string[]
+         */
+        public $clearedRanges;
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The ranges that were cleared, in A1 notation. If the requests are for an
+         * unbounded range or a ranger larger than the bounds of the sheet, this is
+         * the actual ranges that were cleared, bounded to the sheet's limits.
+         *
+         * @param string[] $clearedRanges
+         */
+        public function setClearedRanges($clearedRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClearedRanges()
+        {
+        }
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Sheets\BatchClearValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClearedRanges()
-    {
-    }
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetId()
+    class Google_Service_Sheets_BatchClearValuesResponse extends \Google\Service\Sheets\BatchClearValuesResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class RuleSet extends \Google\Collection
-{
-    protected $collection_key = 'customizationRules';
-    protected $customizationRulesType = CustomizationRule::class;
-    protected $customizationRulesDataType = 'array';
-    protected $objectFilterType = ObjectFilter::class;
-    protected $objectFilterDataType = '';
-    /**
-     * Required. List of customization rules to apply.
-     *
-     * @param CustomizationRule[] $customizationRules
-     */
-    public function setCustomizationRules($customizationRules)
+namespace Google\Service\Datastream {
+    class RuleSet extends \Google\Collection
     {
+        protected $collection_key = 'customizationRules';
+        protected $customizationRulesType = CustomizationRule::class;
+        protected $customizationRulesDataType = 'array';
+        protected $objectFilterType = ObjectFilter::class;
+        protected $objectFilterDataType = '';
+        /**
+         * Required. List of customization rules to apply.
+         *
+         * @param CustomizationRule[] $customizationRules
+         */
+        public function setCustomizationRules($customizationRules)
+        {
+        }
+        /**
+         * @return CustomizationRule[]
+         */
+        public function getCustomizationRules()
+        {
+        }
+        /**
+         * Required. Object filter to apply the customization rules to.
+         *
+         * @param ObjectFilter $objectFilter
+         */
+        public function setObjectFilter(ObjectFilter $objectFilter)
+        {
+        }
+        /**
+         * @return ObjectFilter
+         */
+        public function getObjectFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomizationRule[]
+     * Runtime class alias of \Google\Service\Datastream\RuleSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomizationRules()
-    {
-    }
-    /**
-     * Required. Object filter to apply the customization rules to.
-     *
-     * @param ObjectFilter $objectFilter
-     */
-    public function setObjectFilter(ObjectFilter $objectFilter)
-    {
-    }
-    /**
-     * @return ObjectFilter
-     */
-    public function getObjectFilter()
+    class Google_Service_Datastream_RuleSet extends \Google\Service\Datastream\RuleSet
     {
     }
 }

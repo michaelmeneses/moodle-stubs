@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1CustomWeightsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'weightedSchemaProperties';
-    protected $weightedSchemaPropertiesType = GoogleCloudContentwarehouseV1WeightedSchemaProperty::class;
-    protected $weightedSchemaPropertiesDataType = 'array';
-    /**
-     * List of schema and property name. Allows a maximum of 10 schemas to be
-     * specified for relevance boosting.
-     *
-     * @param GoogleCloudContentwarehouseV1WeightedSchemaProperty[] $weightedSchemaProperties
-     */
-    public function setWeightedSchemaProperties($weightedSchemaProperties)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1CustomWeightsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'weightedSchemaProperties';
+        protected $weightedSchemaPropertiesType = GoogleCloudContentwarehouseV1WeightedSchemaProperty::class;
+        protected $weightedSchemaPropertiesDataType = 'array';
+        /**
+         * List of schema and property name. Allows a maximum of 10 schemas to be
+         * specified for relevance boosting.
+         *
+         * @param GoogleCloudContentwarehouseV1WeightedSchemaProperty[] $weightedSchemaProperties
+         */
+        public function setWeightedSchemaProperties($weightedSchemaProperties)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1WeightedSchemaProperty[]
+         */
+        public function getWeightedSchemaProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1WeightedSchemaProperty[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CustomWeightsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWeightedSchemaProperties()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1CustomWeightsMetadata extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CustomWeightsMetadata
     {
     }
 }

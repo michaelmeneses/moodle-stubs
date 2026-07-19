@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class PartnerUnclaim extends \Google\Model
-{
-    /**
-     * Unspecified section type.
-     */
-    public const SECTION_TYPE_SECTION_TYPE_UNSPECIFIED = 'SECTION_TYPE_UNSPECIFIED';
-    /**
-     * SIM-lock section type.
-     */
-    public const SECTION_TYPE_SECTION_TYPE_SIM_LOCK = 'SECTION_TYPE_SIM_LOCK';
-    /**
-     * Zero-touch enrollment section type.
-     */
-    public const SECTION_TYPE_SECTION_TYPE_ZERO_TOUCH = 'SECTION_TYPE_ZERO_TOUCH';
-    /**
-     * Required. Device ID of the device.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $deviceIdentifierType = DeviceIdentifier::class;
-    protected $deviceIdentifierDataType = '';
-    /**
-     * Required. The section type of the device's provisioning record.
-     *
-     * @var string
-     */
-    public $sectionType;
-    /**
-     * Optional. The duration of the vacation unlock starting from when the
-     * request is processed. (1 day is treated as 24 hours)
-     *
-     * @var int
-     */
-    public $vacationModeDays;
-    /**
-     * Optional. The expiration time of the vacation unlock.
-     *
-     * @var string
-     */
-    public $vacationModeExpireTime;
-    /**
-     * Required. Device ID of the device.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidProvisioningPartner {
+    class PartnerUnclaim extends \Google\Model
     {
+        /**
+         * Unspecified section type.
+         */
+        public const SECTION_TYPE_SECTION_TYPE_UNSPECIFIED = 'SECTION_TYPE_UNSPECIFIED';
+        /**
+         * SIM-lock section type.
+         */
+        public const SECTION_TYPE_SECTION_TYPE_SIM_LOCK = 'SECTION_TYPE_SIM_LOCK';
+        /**
+         * Zero-touch enrollment section type.
+         */
+        public const SECTION_TYPE_SECTION_TYPE_ZERO_TOUCH = 'SECTION_TYPE_ZERO_TOUCH';
+        /**
+         * Required. Device ID of the device.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $deviceIdentifierType = DeviceIdentifier::class;
+        protected $deviceIdentifierDataType = '';
+        /**
+         * Required. The section type of the device's provisioning record.
+         *
+         * @var string
+         */
+        public $sectionType;
+        /**
+         * Optional. The duration of the vacation unlock starting from when the
+         * request is processed. (1 day is treated as 24 hours)
+         *
+         * @var int
+         */
+        public $vacationModeDays;
+        /**
+         * Optional. The expiration time of the vacation unlock.
+         *
+         * @var string
+         */
+        public $vacationModeExpireTime;
+        /**
+         * Required. Device ID of the device.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Required. Device identifier of the device.
+         *
+         * @param DeviceIdentifier $deviceIdentifier
+         */
+        public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+        {
+        }
+        /**
+         * @return DeviceIdentifier
+         */
+        public function getDeviceIdentifier()
+        {
+        }
+        /**
+         * Required. The section type of the device's provisioning record.
+         *
+         * Accepted values: SECTION_TYPE_UNSPECIFIED, SECTION_TYPE_SIM_LOCK,
+         * SECTION_TYPE_ZERO_TOUCH
+         *
+         * @param self::SECTION_TYPE_* $sectionType
+         */
+        public function setSectionType($sectionType)
+        {
+        }
+        /**
+         * @return self::SECTION_TYPE_*
+         */
+        public function getSectionType()
+        {
+        }
+        /**
+         * Optional. The duration of the vacation unlock starting from when the
+         * request is processed. (1 day is treated as 24 hours)
+         *
+         * @param int $vacationModeDays
+         */
+        public function setVacationModeDays($vacationModeDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVacationModeDays()
+        {
+        }
+        /**
+         * Optional. The expiration time of the vacation unlock.
+         *
+         * @param string $vacationModeExpireTime
+         */
+        public function setVacationModeExpireTime($vacationModeExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVacationModeExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\PartnerUnclaim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Required. Device identifier of the device.
-     *
-     * @param DeviceIdentifier $deviceIdentifier
-     */
-    public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
-    {
-    }
-    /**
-     * @return DeviceIdentifier
-     */
-    public function getDeviceIdentifier()
-    {
-    }
-    /**
-     * Required. The section type of the device's provisioning record.
-     *
-     * Accepted values: SECTION_TYPE_UNSPECIFIED, SECTION_TYPE_SIM_LOCK,
-     * SECTION_TYPE_ZERO_TOUCH
-     *
-     * @param self::SECTION_TYPE_* $sectionType
-     */
-    public function setSectionType($sectionType)
-    {
-    }
-    /**
-     * @return self::SECTION_TYPE_*
-     */
-    public function getSectionType()
-    {
-    }
-    /**
-     * Optional. The duration of the vacation unlock starting from when the
-     * request is processed. (1 day is treated as 24 hours)
-     *
-     * @param int $vacationModeDays
-     */
-    public function setVacationModeDays($vacationModeDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVacationModeDays()
-    {
-    }
-    /**
-     * Optional. The expiration time of the vacation unlock.
-     *
-     * @param string $vacationModeExpireTime
-     */
-    public function setVacationModeExpireTime($vacationModeExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVacationModeExpireTime()
+    class Google_Service_AndroidProvisioningPartner_PartnerUnclaim extends \Google\Service\AndroidProvisioningPartner\PartnerUnclaim
     {
     }
 }

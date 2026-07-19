@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Slides (v1).
- *
- * <p>
- * Reads and writes Google Slides presentations.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/slides/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Slides extends \Google\Service
-{
-    /** See, edit, create, and delete all of your Google Drive files. */
-    const DRIVE = "https://www.googleapis.com/auth/drive";
-    /** See, edit, create, and delete only the specific Google Drive files you use with this app. */
-    const DRIVE_FILE = "https://www.googleapis.com/auth/drive.file";
-    /** See and download all your Google Drive files. */
-    const DRIVE_READONLY = "https://www.googleapis.com/auth/drive.readonly";
-    /** See, edit, create, and delete all your Google Slides presentations. */
-    const PRESENTATIONS = "https://www.googleapis.com/auth/presentations";
-    /** See all your Google Slides presentations. */
-    const PRESENTATIONS_READONLY = "https://www.googleapis.com/auth/presentations.readonly";
-    /** See, edit, create, and delete all your Google Sheets spreadsheets. */
-    const SPREADSHEETS = "https://www.googleapis.com/auth/spreadsheets";
-    /** See all your Google Sheets spreadsheets. */
-    const SPREADSHEETS_READONLY = "https://www.googleapis.com/auth/spreadsheets.readonly";
-    public $presentations;
-    public $presentations_pages;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Slides service.
+     * Service definition for Slides (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Reads and writes Google Slides presentations.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/slides/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Slides extends \Google\Service
+    {
+        /** See, edit, create, and delete all of your Google Drive files. */
+        const DRIVE = "https://www.googleapis.com/auth/drive";
+        /** See, edit, create, and delete only the specific Google Drive files you use with this app. */
+        const DRIVE_FILE = "https://www.googleapis.com/auth/drive.file";
+        /** See and download all your Google Drive files. */
+        const DRIVE_READONLY = "https://www.googleapis.com/auth/drive.readonly";
+        /** See, edit, create, and delete all your Google Slides presentations. */
+        const PRESENTATIONS = "https://www.googleapis.com/auth/presentations";
+        /** See all your Google Slides presentations. */
+        const PRESENTATIONS_READONLY = "https://www.googleapis.com/auth/presentations.readonly";
+        /** See, edit, create, and delete all your Google Sheets spreadsheets. */
+        const SPREADSHEETS = "https://www.googleapis.com/auth/spreadsheets";
+        /** See all your Google Sheets spreadsheets. */
+        const SPREADSHEETS_READONLY = "https://www.googleapis.com/auth/spreadsheets.readonly";
+        public $presentations;
+        public $presentations_pages;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Slides service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Slides registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Slides extends \Google\Service\Slides
     {
     }
 }

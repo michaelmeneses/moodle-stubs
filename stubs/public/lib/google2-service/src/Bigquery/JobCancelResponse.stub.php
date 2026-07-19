@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobCancelResponse extends \Google\Model
-{
-    protected $jobType = Job::class;
-    protected $jobDataType = '';
-    /**
-     * The resource type of the response.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The final state of the job.
-     *
-     * @param Job $job
-     */
-    public function setJob(Job $job)
+namespace Google\Service\Bigquery {
+    class JobCancelResponse extends \Google\Model
     {
+        protected $jobType = Job::class;
+        protected $jobDataType = '';
+        /**
+         * The resource type of the response.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The final state of the job.
+         *
+         * @param Job $job
+         */
+        public function setJob(Job $job)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getJob()
+        {
+        }
+        /**
+         * The resource type of the response.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job
+     * Runtime class alias of \Google\Service\Bigquery\JobCancelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
-    {
-    }
-    /**
-     * The resource type of the response.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Bigquery_JobCancelResponse extends \Google\Service\Bigquery\JobCancelResponse
     {
     }
 }

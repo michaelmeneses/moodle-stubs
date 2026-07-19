@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class TestSuiteOverview extends \Google\Model
-{
-    protected $elapsedTimeType = Duration::class;
-    protected $elapsedTimeDataType = '';
-    /**
-     * Number of test cases in error, typically set by the service by parsing the
-     * xml_source. - In create/response: always set - In update request: never
-     *
-     * @var int
-     */
-    public $errorCount;
-    /**
-     * Number of failed test cases, typically set by the service by parsing the
-     * xml_source. May also be set by the user. - In create/response: always set -
-     * In update request: never
-     *
-     * @var int
-     */
-    public $failureCount;
-    /**
-     * Number of flaky test cases, set by the service by rolling up flaky test
-     * attempts. Present only for rollup test suite overview at environment level.
-     * A step cannot have flaky test cases.
-     *
-     * @var int
-     */
-    public $flakyCount;
-    /**
-     * The name of the test suite. - In create/response: always set - In update
-     * request: never
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Number of test cases not run, typically set by the service by parsing the
-     * xml_source. - In create/response: always set - In update request: never
-     *
-     * @var int
-     */
-    public $skippedCount;
-    /**
-     * Number of test cases, typically set by the service by parsing the
-     * xml_source. - In create/response: always set - In update request: never
-     *
-     * @var int
-     */
-    public $totalCount;
-    protected $xmlSourceType = FileReference::class;
-    protected $xmlSourceDataType = '';
-    /**
-     * Elapsed time of test suite.
-     *
-     * @param Duration $elapsedTime
-     */
-    public function setElapsedTime(Duration $elapsedTime)
+namespace Google\Service\ToolResults {
+    class TestSuiteOverview extends \Google\Model
     {
+        protected $elapsedTimeType = Duration::class;
+        protected $elapsedTimeDataType = '';
+        /**
+         * Number of test cases in error, typically set by the service by parsing the
+         * xml_source. - In create/response: always set - In update request: never
+         *
+         * @var int
+         */
+        public $errorCount;
+        /**
+         * Number of failed test cases, typically set by the service by parsing the
+         * xml_source. May also be set by the user. - In create/response: always set -
+         * In update request: never
+         *
+         * @var int
+         */
+        public $failureCount;
+        /**
+         * Number of flaky test cases, set by the service by rolling up flaky test
+         * attempts. Present only for rollup test suite overview at environment level.
+         * A step cannot have flaky test cases.
+         *
+         * @var int
+         */
+        public $flakyCount;
+        /**
+         * The name of the test suite. - In create/response: always set - In update
+         * request: never
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Number of test cases not run, typically set by the service by parsing the
+         * xml_source. - In create/response: always set - In update request: never
+         *
+         * @var int
+         */
+        public $skippedCount;
+        /**
+         * Number of test cases, typically set by the service by parsing the
+         * xml_source. - In create/response: always set - In update request: never
+         *
+         * @var int
+         */
+        public $totalCount;
+        protected $xmlSourceType = FileReference::class;
+        protected $xmlSourceDataType = '';
+        /**
+         * Elapsed time of test suite.
+         *
+         * @param Duration $elapsedTime
+         */
+        public function setElapsedTime(Duration $elapsedTime)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getElapsedTime()
+        {
+        }
+        /**
+         * Number of test cases in error, typically set by the service by parsing the
+         * xml_source. - In create/response: always set - In update request: never
+         *
+         * @param int $errorCount
+         */
+        public function setErrorCount($errorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrorCount()
+        {
+        }
+        /**
+         * Number of failed test cases, typically set by the service by parsing the
+         * xml_source. May also be set by the user. - In create/response: always set -
+         * In update request: never
+         *
+         * @param int $failureCount
+         */
+        public function setFailureCount($failureCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailureCount()
+        {
+        }
+        /**
+         * Number of flaky test cases, set by the service by rolling up flaky test
+         * attempts. Present only for rollup test suite overview at environment level.
+         * A step cannot have flaky test cases.
+         *
+         * @param int $flakyCount
+         */
+        public function setFlakyCount($flakyCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFlakyCount()
+        {
+        }
+        /**
+         * The name of the test suite. - In create/response: always set - In update
+         * request: never
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Number of test cases not run, typically set by the service by parsing the
+         * xml_source. - In create/response: always set - In update request: never
+         *
+         * @param int $skippedCount
+         */
+        public function setSkippedCount($skippedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSkippedCount()
+        {
+        }
+        /**
+         * Number of test cases, typically set by the service by parsing the
+         * xml_source. - In create/response: always set - In update request: never
+         *
+         * @param int $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCount()
+        {
+        }
+        /**
+         * If this test suite was parsed from XML, this is the URI where the original
+         * XML file is stored. Note: Multiple test suites can share the same
+         * xml_source Returns INVALID_ARGUMENT if the uri format is not supported. -
+         * In create/response: optional - In update request: never
+         *
+         * @param FileReference $xmlSource
+         */
+        public function setXmlSource(FileReference $xmlSource)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getXmlSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\ToolResults\TestSuiteOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElapsedTime()
-    {
-    }
-    /**
-     * Number of test cases in error, typically set by the service by parsing the
-     * xml_source. - In create/response: always set - In update request: never
-     *
-     * @param int $errorCount
-     */
-    public function setErrorCount($errorCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getErrorCount()
-    {
-    }
-    /**
-     * Number of failed test cases, typically set by the service by parsing the
-     * xml_source. May also be set by the user. - In create/response: always set -
-     * In update request: never
-     *
-     * @param int $failureCount
-     */
-    public function setFailureCount($failureCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailureCount()
-    {
-    }
-    /**
-     * Number of flaky test cases, set by the service by rolling up flaky test
-     * attempts. Present only for rollup test suite overview at environment level.
-     * A step cannot have flaky test cases.
-     *
-     * @param int $flakyCount
-     */
-    public function setFlakyCount($flakyCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFlakyCount()
-    {
-    }
-    /**
-     * The name of the test suite. - In create/response: always set - In update
-     * request: never
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Number of test cases not run, typically set by the service by parsing the
-     * xml_source. - In create/response: always set - In update request: never
-     *
-     * @param int $skippedCount
-     */
-    public function setSkippedCount($skippedCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSkippedCount()
-    {
-    }
-    /**
-     * Number of test cases, typically set by the service by parsing the
-     * xml_source. - In create/response: always set - In update request: never
-     *
-     * @param int $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCount()
-    {
-    }
-    /**
-     * If this test suite was parsed from XML, this is the URI where the original
-     * XML file is stored. Note: Multiple test suites can share the same
-     * xml_source Returns INVALID_ARGUMENT if the uri format is not supported. -
-     * In create/response: optional - In update request: never
-     *
-     * @param FileReference $xmlSource
-     */
-    public function setXmlSource(FileReference $xmlSource)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getXmlSource()
+    class Google_Service_ToolResults_TestSuiteOverview extends \Google\Service\ToolResults\TestSuiteOverview
     {
     }
 }

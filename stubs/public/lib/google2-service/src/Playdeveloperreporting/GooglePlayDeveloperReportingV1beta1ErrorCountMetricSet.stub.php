@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet extends \Google\Model
-{
-    protected $freshnessInfoType = GooglePlayDeveloperReportingV1beta1FreshnessInfo::class;
-    protected $freshnessInfoDataType = '';
-    /**
-     * The resource name. Format: apps/{app}/errorCountMetricSet
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Summary about data freshness in this resource.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1FreshnessInfo $freshnessInfo
-     */
-    public function setFreshnessInfo(GooglePlayDeveloperReportingV1beta1FreshnessInfo $freshnessInfo)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet extends \Google\Model
     {
+        protected $freshnessInfoType = GooglePlayDeveloperReportingV1beta1FreshnessInfo::class;
+        protected $freshnessInfoDataType = '';
+        /**
+         * The resource name. Format: apps/{app}/errorCountMetricSet
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Summary about data freshness in this resource.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1FreshnessInfo $freshnessInfo
+         */
+        public function setFreshnessInfo(GooglePlayDeveloperReportingV1beta1FreshnessInfo $freshnessInfo)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1FreshnessInfo
+         */
+        public function getFreshnessInfo()
+        {
+        }
+        /**
+         * The resource name. Format: apps/{app}/errorCountMetricSet
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1FreshnessInfo
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreshnessInfo()
-    {
-    }
-    /**
-     * The resource name. Format: apps/{app}/errorCountMetricSet
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ErrorCountMetricSet
     {
     }
 }

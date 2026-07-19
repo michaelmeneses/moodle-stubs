@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Libraryagent;
-
-class GoogleExampleLibraryagentV1Shelf extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the shelf. Shelf names have the form
-     * `shelves/{shelf_id}`. The name is ignored when creating a shelf.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The theme of the shelf
-     *
-     * @var string
-     */
-    public $theme;
-    /**
-     * Output only. The resource name of the shelf. Shelf names have the form
-     * `shelves/{shelf_id}`. The name is ignored when creating a shelf.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Libraryagent {
+    class GoogleExampleLibraryagentV1Shelf extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the shelf. Shelf names have the form
+         * `shelves/{shelf_id}`. The name is ignored when creating a shelf.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The theme of the shelf
+         *
+         * @var string
+         */
+        public $theme;
+        /**
+         * Output only. The resource name of the shelf. Shelf names have the form
+         * `shelves/{shelf_id}`. The name is ignored when creating a shelf.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The theme of the shelf
+         *
+         * @param string $theme
+         */
+        public function setTheme($theme)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTheme()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Libraryagent\GoogleExampleLibraryagentV1Shelf registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The theme of the shelf
-     *
-     * @param string $theme
-     */
-    public function setTheme($theme)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTheme()
+    class Google_Service_Libraryagent_GoogleExampleLibraryagentV1Shelf extends \Google\Service\Libraryagent\GoogleExampleLibraryagentV1Shelf
     {
     }
 }

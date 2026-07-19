@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class UnexpectedExitStatusEvent extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $actionId;
-    /**
-     * @var int
-     */
-    public $exitStatus;
-    /**
-     * @param int
-     */
-    public function setActionId($actionId)
+namespace Google\Service\CloudLifeSciences {
+    class UnexpectedExitStatusEvent extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $actionId;
+        /**
+         * @var int
+         */
+        public $exitStatus;
+        /**
+         * @param int
+         */
+        public function setActionId($actionId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActionId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setExitStatus($exitStatus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExitStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudLifeSciences\UnexpectedExitStatusEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setExitStatus($exitStatus)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExitStatus()
+    class Google_Service_CloudLifeSciences_UnexpectedExitStatusEvent extends \Google\Service\CloudLifeSciences\UnexpectedExitStatusEvent
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Tokens extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Token::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The type of the API resource. This is always `admin#directory#tokenList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class Tokens extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Token::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The type of the API resource. This is always `admin#directory#tokenList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of Token resources.
+         *
+         * @param Token[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Token[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#tokenList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Tokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of Token resources.
-     *
-     * @param Token[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Token[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#tokenList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Directory_Tokens extends \Google\Service\Directory\Tokens
     {
     }
 }

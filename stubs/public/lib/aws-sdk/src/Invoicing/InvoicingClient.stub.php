@@ -8,6 +8,7 @@
  */
 namespace Aws\Invoicing;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Invoicing** service.
  * @method \Aws\Result batchGetInvoiceProfile(array $args = [])

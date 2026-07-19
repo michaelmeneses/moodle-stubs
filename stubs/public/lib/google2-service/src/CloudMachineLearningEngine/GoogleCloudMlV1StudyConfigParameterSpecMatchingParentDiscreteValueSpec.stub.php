@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Matches values of the parent parameter with type 'DISCRETE'. All values
-     * must exist in `discrete_value_spec` of parent parameter.
-     *
-     * @var []
-     */
-    public $values;
-    public function setValues($values)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Matches values of the parent parameter with type 'DISCRETE'. All values
+         * must exist in `discrete_value_spec` of parent parameter.
+         *
+         * @var []
+         */
+        public $values;
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
     }
-    public function getValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec
     {
     }
 }

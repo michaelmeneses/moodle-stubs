@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class CheckInResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deadline;
-    /**
-     * @var array[]
-     */
-    public $features;
-    /**
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * @param string
-     */
-    public function setDeadline($deadline)
+namespace Google\Service\Genomics {
+    class CheckInResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deadline;
+        /**
+         * @var array[]
+         */
+        public $features;
+        /**
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * @param string
+         */
+        public function setDeadline($deadline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadline()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\CheckInResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeadline()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setFeatures($features)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
+    class Google_Service_Genomics_CheckInResponse extends \Google\Service\Genomics\CheckInResponse
     {
     }
 }

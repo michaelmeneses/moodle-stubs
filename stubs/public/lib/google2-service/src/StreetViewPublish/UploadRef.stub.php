@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class UploadRef extends \Google\Model
-{
-    /**
-     * An upload reference should be unique for each user. It follows the form: "h
-     * ttps://streetviewpublish.googleapis.com/media/user/{account_id}/photo/{uplo
-     * ad_reference}"
-     *
-     * @var string
-     */
-    public $uploadUrl;
-    /**
-     * An upload reference should be unique for each user. It follows the form: "h
-     * ttps://streetviewpublish.googleapis.com/media/user/{account_id}/photo/{uplo
-     * ad_reference}"
-     *
-     * @param string $uploadUrl
-     */
-    public function setUploadUrl($uploadUrl)
+namespace Google\Service\StreetViewPublish {
+    class UploadRef extends \Google\Model
     {
+        /**
+         * An upload reference should be unique for each user. It follows the form: "h
+         * ttps://streetviewpublish.googleapis.com/media/user/{account_id}/photo/{uplo
+         * ad_reference}"
+         *
+         * @var string
+         */
+        public $uploadUrl;
+        /**
+         * An upload reference should be unique for each user. It follows the form: "h
+         * ttps://streetviewpublish.googleapis.com/media/user/{account_id}/photo/{uplo
+         * ad_reference}"
+         *
+         * @param string $uploadUrl
+         */
+        public function setUploadUrl($uploadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\UploadRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUploadUrl()
+    class Google_Service_StreetViewPublish_UploadRef extends \Google\Service\StreetViewPublish\UploadRef
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class SubExchangeAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Required. The targeting_option_id of a TargetingOption of type
-     * `TARGETING_TYPE_SUB_EXCHANGE`.
-     *
-     * @var string
-     */
-    public $targetingOptionId;
-    /**
-     * Required. The targeting_option_id of a TargetingOption of type
-     * `TARGETING_TYPE_SUB_EXCHANGE`.
-     *
-     * @param string $targetingOptionId
-     */
-    public function setTargetingOptionId($targetingOptionId)
+namespace Google\Service\DisplayVideo {
+    class SubExchangeAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Required. The targeting_option_id of a TargetingOption of type
+         * `TARGETING_TYPE_SUB_EXCHANGE`.
+         *
+         * @var string
+         */
+        public $targetingOptionId;
+        /**
+         * Required. The targeting_option_id of a TargetingOption of type
+         * `TARGETING_TYPE_SUB_EXCHANGE`.
+         *
+         * @param string $targetingOptionId
+         */
+        public function setTargetingOptionId($targetingOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\SubExchangeAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetingOptionId()
+    class Google_Service_DisplayVideo_SubExchangeAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\SubExchangeAssignedTargetingOptionDetails
     {
     }
 }

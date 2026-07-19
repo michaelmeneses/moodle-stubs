@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersStartInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * The URLs of one or more instances to start. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @var string[]
-     */
-    public $instances;
-    /**
-     * The URLs of one or more instances to start. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @param string[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersStartInstancesRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * The URLs of one or more instances to start. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @var string[]
+         */
+        public $instances;
+        /**
+         * The URLs of one or more instances to start. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @param string[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersStartInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_Compute_InstanceGroupManagersStartInstancesRequest extends \Google\Service\Compute\InstanceGroupManagersStartInstancesRequest
     {
     }
 }

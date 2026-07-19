@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class MetricHeader extends \Google\Collection
-{
-    protected $collection_key = 'pivotHeaders';
-    protected $metricHeaderEntriesType = MetricHeaderEntry::class;
-    protected $metricHeaderEntriesDataType = 'array';
-    protected $pivotHeadersType = PivotHeader::class;
-    protected $pivotHeadersDataType = 'array';
-    /**
-     * @param MetricHeaderEntry[]
-     */
-    public function setMetricHeaderEntries($metricHeaderEntries)
+namespace Google\Service\AnalyticsReporting {
+    class MetricHeader extends \Google\Collection
     {
+        protected $collection_key = 'pivotHeaders';
+        protected $metricHeaderEntriesType = MetricHeaderEntry::class;
+        protected $metricHeaderEntriesDataType = 'array';
+        protected $pivotHeadersType = PivotHeader::class;
+        protected $pivotHeadersDataType = 'array';
+        /**
+         * @param MetricHeaderEntry[]
+         */
+        public function setMetricHeaderEntries($metricHeaderEntries)
+        {
+        }
+        /**
+         * @return MetricHeaderEntry[]
+         */
+        public function getMetricHeaderEntries()
+        {
+        }
+        /**
+         * @param PivotHeader[]
+         */
+        public function setPivotHeaders($pivotHeaders)
+        {
+        }
+        /**
+         * @return PivotHeader[]
+         */
+        public function getPivotHeaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricHeaderEntry[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\MetricHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricHeaderEntries()
-    {
-    }
-    /**
-     * @param PivotHeader[]
-     */
-    public function setPivotHeaders($pivotHeaders)
-    {
-    }
-    /**
-     * @return PivotHeader[]
-     */
-    public function getPivotHeaders()
+    class Google_Service_AnalyticsReporting_MetricHeader extends \Google\Service\AnalyticsReporting\MetricHeader
     {
     }
 }

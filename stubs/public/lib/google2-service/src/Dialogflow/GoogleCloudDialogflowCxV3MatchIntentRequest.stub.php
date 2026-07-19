@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3MatchIntentRequest extends \Google\Model
-{
-    /**
-     * Persist session parameter changes from `query_params`.
-     *
-     * @var bool
-     */
-    public $persistParameterChanges;
-    protected $queryInputType = GoogleCloudDialogflowCxV3QueryInput::class;
-    protected $queryInputDataType = '';
-    protected $queryParamsType = GoogleCloudDialogflowCxV3QueryParameters::class;
-    protected $queryParamsDataType = '';
-    /**
-     * Persist session parameter changes from `query_params`.
-     *
-     * @param bool $persistParameterChanges
-     */
-    public function setPersistParameterChanges($persistParameterChanges)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3MatchIntentRequest extends \Google\Model
     {
+        /**
+         * Persist session parameter changes from `query_params`.
+         *
+         * @var bool
+         */
+        public $persistParameterChanges;
+        protected $queryInputType = GoogleCloudDialogflowCxV3QueryInput::class;
+        protected $queryInputDataType = '';
+        protected $queryParamsType = GoogleCloudDialogflowCxV3QueryParameters::class;
+        protected $queryParamsDataType = '';
+        /**
+         * Persist session parameter changes from `query_params`.
+         *
+         * @param bool $persistParameterChanges
+         */
+        public function setPersistParameterChanges($persistParameterChanges)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPersistParameterChanges()
+        {
+        }
+        /**
+         * Required. The input specification.
+         *
+         * @param GoogleCloudDialogflowCxV3QueryInput $queryInput
+         */
+        public function setQueryInput(GoogleCloudDialogflowCxV3QueryInput $queryInput)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3QueryInput
+         */
+        public function getQueryInput()
+        {
+        }
+        /**
+         * The parameters of this query.
+         *
+         * @param GoogleCloudDialogflowCxV3QueryParameters $queryParams
+         */
+        public function setQueryParams(GoogleCloudDialogflowCxV3QueryParameters $queryParams)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3QueryParameters
+         */
+        public function getQueryParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3MatchIntentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPersistParameterChanges()
-    {
-    }
-    /**
-     * Required. The input specification.
-     *
-     * @param GoogleCloudDialogflowCxV3QueryInput $queryInput
-     */
-    public function setQueryInput(GoogleCloudDialogflowCxV3QueryInput $queryInput)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3QueryInput
-     */
-    public function getQueryInput()
-    {
-    }
-    /**
-     * The parameters of this query.
-     *
-     * @param GoogleCloudDialogflowCxV3QueryParameters $queryParams
-     */
-    public function setQueryParams(GoogleCloudDialogflowCxV3QueryParameters $queryParams)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3QueryParameters
-     */
-    public function getQueryParams()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3MatchIntentRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3MatchIntentRequest
     {
     }
 }

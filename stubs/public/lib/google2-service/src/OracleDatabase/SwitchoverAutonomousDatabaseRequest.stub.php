@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class SwitchoverAutonomousDatabaseRequest extends \Google\Model
-{
-    /**
-     * Required. The peer database name to switch over to.
-     *
-     * @var string
-     */
-    public $peerAutonomousDatabase;
-    /**
-     * Required. The peer database name to switch over to.
-     *
-     * @param string $peerAutonomousDatabase
-     */
-    public function setPeerAutonomousDatabase($peerAutonomousDatabase)
+namespace Google\Service\OracleDatabase {
+    class SwitchoverAutonomousDatabaseRequest extends \Google\Model
     {
+        /**
+         * Required. The peer database name to switch over to.
+         *
+         * @var string
+         */
+        public $peerAutonomousDatabase;
+        /**
+         * Required. The peer database name to switch over to.
+         *
+         * @param string $peerAutonomousDatabase
+         */
+        public function setPeerAutonomousDatabase($peerAutonomousDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerAutonomousDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\SwitchoverAutonomousDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeerAutonomousDatabase()
+    class Google_Service_OracleDatabase_SwitchoverAutonomousDatabaseRequest extends \Google\Service\OracleDatabase\SwitchoverAutonomousDatabaseRequest
     {
     }
 }

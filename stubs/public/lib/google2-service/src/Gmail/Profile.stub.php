@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class Profile extends \Google\Model
-{
-    /**
-     * The user's email address.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * The ID of the mailbox's current history record.
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * The total number of messages in the mailbox.
-     *
-     * @var int
-     */
-    public $messagesTotal;
-    /**
-     * The total number of threads in the mailbox.
-     *
-     * @var int
-     */
-    public $threadsTotal;
-    /**
-     * The user's email address.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\Gmail {
+    class Profile extends \Google\Model
     {
+        /**
+         * The user's email address.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * The ID of the mailbox's current history record.
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * The total number of messages in the mailbox.
+         *
+         * @var int
+         */
+        public $messagesTotal;
+        /**
+         * The total number of threads in the mailbox.
+         *
+         * @var int
+         */
+        public $threadsTotal;
+        /**
+         * The user's email address.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * The ID of the mailbox's current history record.
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * The total number of messages in the mailbox.
+         *
+         * @param int $messagesTotal
+         */
+        public function setMessagesTotal($messagesTotal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMessagesTotal()
+        {
+        }
+        /**
+         * The total number of threads in the mailbox.
+         *
+         * @param int $threadsTotal
+         */
+        public function setThreadsTotal($threadsTotal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThreadsTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\Profile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * The ID of the mailbox's current history record.
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * The total number of messages in the mailbox.
-     *
-     * @param int $messagesTotal
-     */
-    public function setMessagesTotal($messagesTotal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMessagesTotal()
-    {
-    }
-    /**
-     * The total number of threads in the mailbox.
-     *
-     * @param int $threadsTotal
-     */
-    public function setThreadsTotal($threadsTotal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThreadsTotal()
+    class Google_Service_Gmail_Profile extends \Google\Service\Gmail\Profile
     {
     }
 }

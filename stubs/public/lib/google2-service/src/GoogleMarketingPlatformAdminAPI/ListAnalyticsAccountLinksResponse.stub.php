@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class ListAnalyticsAccountLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'analyticsAccountLinks';
-    protected $analyticsAccountLinksType = AnalyticsAccountLink::class;
-    protected $analyticsAccountLinksDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Analytics account links in this organization.
-     *
-     * @param AnalyticsAccountLink[] $analyticsAccountLinks
-     */
-    public function setAnalyticsAccountLinks($analyticsAccountLinks)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class ListAnalyticsAccountLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'analyticsAccountLinks';
+        protected $analyticsAccountLinksType = AnalyticsAccountLink::class;
+        protected $analyticsAccountLinksDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Analytics account links in this organization.
+         *
+         * @param AnalyticsAccountLink[] $analyticsAccountLinks
+         */
+        public function setAnalyticsAccountLinks($analyticsAccountLinks)
+        {
+        }
+        /**
+         * @return AnalyticsAccountLink[]
+         */
+        public function getAnalyticsAccountLinks()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyticsAccountLink[]
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\ListAnalyticsAccountLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsAccountLinks()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_ListAnalyticsAccountLinksResponse extends \Google\Service\GoogleMarketingPlatformAdminAPI\ListAnalyticsAccountLinksResponse
     {
     }
 }

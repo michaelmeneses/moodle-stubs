@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class GamesPlayerExperienceInfoResource extends \Google\Model
-{
-    /**
-     * The current number of experience points for the player.
-     *
-     * @var string
-     */
-    public $currentExperiencePoints;
-    protected $currentLevelType = GamesPlayerLevelResource::class;
-    protected $currentLevelDataType = '';
-    /**
-     * The timestamp when the player was leveled up, in millis since Unix epoch
-     * UTC.
-     *
-     * @var string
-     */
-    public $lastLevelUpTimestampMillis;
-    protected $nextLevelType = GamesPlayerLevelResource::class;
-    protected $nextLevelDataType = '';
-    /**
-     * The current number of experience points for the player.
-     *
-     * @param string $currentExperiencePoints
-     */
-    public function setCurrentExperiencePoints($currentExperiencePoints)
+namespace Google\Service\GamesManagement {
+    class GamesPlayerExperienceInfoResource extends \Google\Model
     {
+        /**
+         * The current number of experience points for the player.
+         *
+         * @var string
+         */
+        public $currentExperiencePoints;
+        protected $currentLevelType = GamesPlayerLevelResource::class;
+        protected $currentLevelDataType = '';
+        /**
+         * The timestamp when the player was leveled up, in millis since Unix epoch
+         * UTC.
+         *
+         * @var string
+         */
+        public $lastLevelUpTimestampMillis;
+        protected $nextLevelType = GamesPlayerLevelResource::class;
+        protected $nextLevelDataType = '';
+        /**
+         * The current number of experience points for the player.
+         *
+         * @param string $currentExperiencePoints
+         */
+        public function setCurrentExperiencePoints($currentExperiencePoints)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentExperiencePoints()
+        {
+        }
+        /**
+         * The current level of the player.
+         *
+         * @param GamesPlayerLevelResource $currentLevel
+         */
+        public function setCurrentLevel(GamesPlayerLevelResource $currentLevel)
+        {
+        }
+        /**
+         * @return GamesPlayerLevelResource
+         */
+        public function getCurrentLevel()
+        {
+        }
+        /**
+         * The timestamp when the player was leveled up, in millis since Unix epoch
+         * UTC.
+         *
+         * @param string $lastLevelUpTimestampMillis
+         */
+        public function setLastLevelUpTimestampMillis($lastLevelUpTimestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastLevelUpTimestampMillis()
+        {
+        }
+        /**
+         * The next level of the player. If the current level is the maximum level,
+         * this should be same as the current level.
+         *
+         * @param GamesPlayerLevelResource $nextLevel
+         */
+        public function setNextLevel(GamesPlayerLevelResource $nextLevel)
+        {
+        }
+        /**
+         * @return GamesPlayerLevelResource
+         */
+        public function getNextLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\GamesPlayerExperienceInfoResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentExperiencePoints()
-    {
-    }
-    /**
-     * The current level of the player.
-     *
-     * @param GamesPlayerLevelResource $currentLevel
-     */
-    public function setCurrentLevel(GamesPlayerLevelResource $currentLevel)
-    {
-    }
-    /**
-     * @return GamesPlayerLevelResource
-     */
-    public function getCurrentLevel()
-    {
-    }
-    /**
-     * The timestamp when the player was leveled up, in millis since Unix epoch
-     * UTC.
-     *
-     * @param string $lastLevelUpTimestampMillis
-     */
-    public function setLastLevelUpTimestampMillis($lastLevelUpTimestampMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastLevelUpTimestampMillis()
-    {
-    }
-    /**
-     * The next level of the player. If the current level is the maximum level,
-     * this should be same as the current level.
-     *
-     * @param GamesPlayerLevelResource $nextLevel
-     */
-    public function setNextLevel(GamesPlayerLevelResource $nextLevel)
-    {
-    }
-    /**
-     * @return GamesPlayerLevelResource
-     */
-    public function getNextLevel()
+    class Google_Service_GamesManagement_GamesPlayerExperienceInfoResource extends \Google\Service\GamesManagement\GamesPlayerExperienceInfoResource
     {
     }
 }

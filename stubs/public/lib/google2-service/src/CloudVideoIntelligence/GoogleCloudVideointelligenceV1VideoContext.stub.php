@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1VideoContext extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $explicitContentDetectionConfigType = GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig::class;
-    protected $explicitContentDetectionConfigDataType = '';
-    protected $faceDetectionConfigType = GoogleCloudVideointelligenceV1FaceDetectionConfig::class;
-    protected $faceDetectionConfigDataType = '';
-    protected $labelDetectionConfigType = GoogleCloudVideointelligenceV1LabelDetectionConfig::class;
-    protected $labelDetectionConfigDataType = '';
-    protected $objectTrackingConfigType = GoogleCloudVideointelligenceV1ObjectTrackingConfig::class;
-    protected $objectTrackingConfigDataType = '';
-    protected $personDetectionConfigType = GoogleCloudVideointelligenceV1PersonDetectionConfig::class;
-    protected $personDetectionConfigDataType = '';
-    protected $segmentsType = GoogleCloudVideointelligenceV1VideoSegment::class;
-    protected $segmentsDataType = 'array';
-    protected $shotChangeDetectionConfigType = GoogleCloudVideointelligenceV1ShotChangeDetectionConfig::class;
-    protected $shotChangeDetectionConfigDataType = '';
-    protected $speechTranscriptionConfigType = GoogleCloudVideointelligenceV1SpeechTranscriptionConfig::class;
-    protected $speechTranscriptionConfigDataType = '';
-    protected $textDetectionConfigType = GoogleCloudVideointelligenceV1TextDetectionConfig::class;
-    protected $textDetectionConfigDataType = '';
-    /**
-     * Config for EXPLICIT_CONTENT_DETECTION.
-     *
-     * @param GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig $explicitContentDetectionConfig
-     */
-    public function setExplicitContentDetectionConfig(GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig $explicitContentDetectionConfig)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1VideoContext extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $explicitContentDetectionConfigType = GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig::class;
+        protected $explicitContentDetectionConfigDataType = '';
+        protected $faceDetectionConfigType = GoogleCloudVideointelligenceV1FaceDetectionConfig::class;
+        protected $faceDetectionConfigDataType = '';
+        protected $labelDetectionConfigType = GoogleCloudVideointelligenceV1LabelDetectionConfig::class;
+        protected $labelDetectionConfigDataType = '';
+        protected $objectTrackingConfigType = GoogleCloudVideointelligenceV1ObjectTrackingConfig::class;
+        protected $objectTrackingConfigDataType = '';
+        protected $personDetectionConfigType = GoogleCloudVideointelligenceV1PersonDetectionConfig::class;
+        protected $personDetectionConfigDataType = '';
+        protected $segmentsType = GoogleCloudVideointelligenceV1VideoSegment::class;
+        protected $segmentsDataType = 'array';
+        protected $shotChangeDetectionConfigType = GoogleCloudVideointelligenceV1ShotChangeDetectionConfig::class;
+        protected $shotChangeDetectionConfigDataType = '';
+        protected $speechTranscriptionConfigType = GoogleCloudVideointelligenceV1SpeechTranscriptionConfig::class;
+        protected $speechTranscriptionConfigDataType = '';
+        protected $textDetectionConfigType = GoogleCloudVideointelligenceV1TextDetectionConfig::class;
+        protected $textDetectionConfigDataType = '';
+        /**
+         * Config for EXPLICIT_CONTENT_DETECTION.
+         *
+         * @param GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig $explicitContentDetectionConfig
+         */
+        public function setExplicitContentDetectionConfig(GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig $explicitContentDetectionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig
+         */
+        public function getExplicitContentDetectionConfig()
+        {
+        }
+        /**
+         * Config for FACE_DETECTION.
+         *
+         * @param GoogleCloudVideointelligenceV1FaceDetectionConfig $faceDetectionConfig
+         */
+        public function setFaceDetectionConfig(GoogleCloudVideointelligenceV1FaceDetectionConfig $faceDetectionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1FaceDetectionConfig
+         */
+        public function getFaceDetectionConfig()
+        {
+        }
+        /**
+         * Config for LABEL_DETECTION.
+         *
+         * @param GoogleCloudVideointelligenceV1LabelDetectionConfig $labelDetectionConfig
+         */
+        public function setLabelDetectionConfig(GoogleCloudVideointelligenceV1LabelDetectionConfig $labelDetectionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LabelDetectionConfig
+         */
+        public function getLabelDetectionConfig()
+        {
+        }
+        /**
+         * Config for OBJECT_TRACKING.
+         *
+         * @param GoogleCloudVideointelligenceV1ObjectTrackingConfig $objectTrackingConfig
+         */
+        public function setObjectTrackingConfig(GoogleCloudVideointelligenceV1ObjectTrackingConfig $objectTrackingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1ObjectTrackingConfig
+         */
+        public function getObjectTrackingConfig()
+        {
+        }
+        /**
+         * Config for PERSON_DETECTION.
+         *
+         * @param GoogleCloudVideointelligenceV1PersonDetectionConfig $personDetectionConfig
+         */
+        public function setPersonDetectionConfig(GoogleCloudVideointelligenceV1PersonDetectionConfig $personDetectionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1PersonDetectionConfig
+         */
+        public function getPersonDetectionConfig()
+        {
+        }
+        /**
+         * Video segments to annotate. The segments may overlap and are not required
+         * to be contiguous or span the whole video. If unspecified, each video is
+         * treated as a single segment.
+         *
+         * @param GoogleCloudVideointelligenceV1VideoSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1VideoSegment[]
+         */
+        public function getSegments()
+        {
+        }
+        /**
+         * Config for SHOT_CHANGE_DETECTION.
+         *
+         * @param GoogleCloudVideointelligenceV1ShotChangeDetectionConfig $shotChangeDetectionConfig
+         */
+        public function setShotChangeDetectionConfig(GoogleCloudVideointelligenceV1ShotChangeDetectionConfig $shotChangeDetectionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1ShotChangeDetectionConfig
+         */
+        public function getShotChangeDetectionConfig()
+        {
+        }
+        /**
+         * Config for SPEECH_TRANSCRIPTION.
+         *
+         * @param GoogleCloudVideointelligenceV1SpeechTranscriptionConfig $speechTranscriptionConfig
+         */
+        public function setSpeechTranscriptionConfig(GoogleCloudVideointelligenceV1SpeechTranscriptionConfig $speechTranscriptionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1SpeechTranscriptionConfig
+         */
+        public function getSpeechTranscriptionConfig()
+        {
+        }
+        /**
+         * Config for TEXT_DETECTION.
+         *
+         * @param GoogleCloudVideointelligenceV1TextDetectionConfig $textDetectionConfig
+         */
+        public function setTextDetectionConfig(GoogleCloudVideointelligenceV1TextDetectionConfig $textDetectionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1TextDetectionConfig
+         */
+        public function getTextDetectionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1VideoContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplicitContentDetectionConfig()
-    {
-    }
-    /**
-     * Config for FACE_DETECTION.
-     *
-     * @param GoogleCloudVideointelligenceV1FaceDetectionConfig $faceDetectionConfig
-     */
-    public function setFaceDetectionConfig(GoogleCloudVideointelligenceV1FaceDetectionConfig $faceDetectionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1FaceDetectionConfig
-     */
-    public function getFaceDetectionConfig()
-    {
-    }
-    /**
-     * Config for LABEL_DETECTION.
-     *
-     * @param GoogleCloudVideointelligenceV1LabelDetectionConfig $labelDetectionConfig
-     */
-    public function setLabelDetectionConfig(GoogleCloudVideointelligenceV1LabelDetectionConfig $labelDetectionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LabelDetectionConfig
-     */
-    public function getLabelDetectionConfig()
-    {
-    }
-    /**
-     * Config for OBJECT_TRACKING.
-     *
-     * @param GoogleCloudVideointelligenceV1ObjectTrackingConfig $objectTrackingConfig
-     */
-    public function setObjectTrackingConfig(GoogleCloudVideointelligenceV1ObjectTrackingConfig $objectTrackingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1ObjectTrackingConfig
-     */
-    public function getObjectTrackingConfig()
-    {
-    }
-    /**
-     * Config for PERSON_DETECTION.
-     *
-     * @param GoogleCloudVideointelligenceV1PersonDetectionConfig $personDetectionConfig
-     */
-    public function setPersonDetectionConfig(GoogleCloudVideointelligenceV1PersonDetectionConfig $personDetectionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1PersonDetectionConfig
-     */
-    public function getPersonDetectionConfig()
-    {
-    }
-    /**
-     * Video segments to annotate. The segments may overlap and are not required
-     * to be contiguous or span the whole video. If unspecified, each video is
-     * treated as a single segment.
-     *
-     * @param GoogleCloudVideointelligenceV1VideoSegment[] $segments
-     */
-    public function setSegments($segments)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1VideoSegment[]
-     */
-    public function getSegments()
-    {
-    }
-    /**
-     * Config for SHOT_CHANGE_DETECTION.
-     *
-     * @param GoogleCloudVideointelligenceV1ShotChangeDetectionConfig $shotChangeDetectionConfig
-     */
-    public function setShotChangeDetectionConfig(GoogleCloudVideointelligenceV1ShotChangeDetectionConfig $shotChangeDetectionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1ShotChangeDetectionConfig
-     */
-    public function getShotChangeDetectionConfig()
-    {
-    }
-    /**
-     * Config for SPEECH_TRANSCRIPTION.
-     *
-     * @param GoogleCloudVideointelligenceV1SpeechTranscriptionConfig $speechTranscriptionConfig
-     */
-    public function setSpeechTranscriptionConfig(GoogleCloudVideointelligenceV1SpeechTranscriptionConfig $speechTranscriptionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1SpeechTranscriptionConfig
-     */
-    public function getSpeechTranscriptionConfig()
-    {
-    }
-    /**
-     * Config for TEXT_DETECTION.
-     *
-     * @param GoogleCloudVideointelligenceV1TextDetectionConfig $textDetectionConfig
-     */
-    public function setTextDetectionConfig(GoogleCloudVideointelligenceV1TextDetectionConfig $textDetectionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1TextDetectionConfig
-     */
-    public function getTextDetectionConfig()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoContext extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1VideoContext
     {
     }
 }

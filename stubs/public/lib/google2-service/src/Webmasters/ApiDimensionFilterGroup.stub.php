@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class ApiDimensionFilterGroup extends \Google\Collection
-{
-    protected $collection_key = 'filters';
-    protected $filtersType = ApiDimensionFilter::class;
-    protected $filtersDataType = 'array';
-    public $groupType;
+namespace Google\Service\Webmasters {
+    class ApiDimensionFilterGroup extends \Google\Collection
+    {
+        protected $collection_key = 'filters';
+        protected $filtersType = ApiDimensionFilter::class;
+        protected $filtersDataType = 'array';
+        public $groupType;
+        /**
+         * @param ApiDimensionFilter[]
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return ApiDimensionFilter[]
+         */
+        public function getFilters()
+        {
+        }
+        public function setGroupType($groupType)
+        {
+        }
+        public function getGroupType()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param ApiDimensionFilter[]
+     * Runtime class alias of \Google\Service\Webmasters\ApiDimensionFilterGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFilters($filters)
-    {
-    }
-    /**
-     * @return ApiDimensionFilter[]
-     */
-    public function getFilters()
-    {
-    }
-    public function setGroupType($groupType)
-    {
-    }
-    public function getGroupType()
+    class Google_Service_Webmasters_ApiDimensionFilterGroup extends \Google\Service\Webmasters\ApiDimensionFilterGroup
     {
     }
 }

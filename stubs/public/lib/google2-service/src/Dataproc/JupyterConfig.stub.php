@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class JupyterConfig extends \Google\Model
-{
-    /**
-     * The kernel is unknown.
-     */
-    public const KERNEL_KERNEL_UNSPECIFIED = 'KERNEL_UNSPECIFIED';
-    /**
-     * Python kernel.
-     */
-    public const KERNEL_PYTHON = 'PYTHON';
-    /**
-     * Scala kernel.
-     */
-    public const KERNEL_SCALA = 'SCALA';
-    /**
-     * Optional. Display name, shown in the Jupyter kernelspec card.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Kernel
-     *
-     * @var string
-     */
-    public $kernel;
-    /**
-     * Optional. Display name, shown in the Jupyter kernelspec card.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Dataproc {
+    class JupyterConfig extends \Google\Model
     {
+        /**
+         * The kernel is unknown.
+         */
+        public const KERNEL_KERNEL_UNSPECIFIED = 'KERNEL_UNSPECIFIED';
+        /**
+         * Python kernel.
+         */
+        public const KERNEL_PYTHON = 'PYTHON';
+        /**
+         * Scala kernel.
+         */
+        public const KERNEL_SCALA = 'SCALA';
+        /**
+         * Optional. Display name, shown in the Jupyter kernelspec card.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Kernel
+         *
+         * @var string
+         */
+        public $kernel;
+        /**
+         * Optional. Display name, shown in the Jupyter kernelspec card.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Kernel
+         *
+         * Accepted values: KERNEL_UNSPECIFIED, PYTHON, SCALA
+         *
+         * @param self::KERNEL_* $kernel
+         */
+        public function setKernel($kernel)
+        {
+        }
+        /**
+         * @return self::KERNEL_*
+         */
+        public function getKernel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\JupyterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Kernel
-     *
-     * Accepted values: KERNEL_UNSPECIFIED, PYTHON, SCALA
-     *
-     * @param self::KERNEL_* $kernel
-     */
-    public function setKernel($kernel)
-    {
-    }
-    /**
-     * @return self::KERNEL_*
-     */
-    public function getKernel()
+    class Google_Service_Dataproc_JupyterConfig extends \Google\Service\Dataproc\JupyterConfig
     {
     }
 }

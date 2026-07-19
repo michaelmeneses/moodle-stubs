@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ListJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobs';
-    protected $jobsType = GoogleCloudRunV2Job::class;
-    protected $jobsDataType = 'array';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListJobs request to continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The resulting list of Jobs.
-     *
-     * @param GoogleCloudRunV2Job[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ListJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobs';
+        protected $jobsType = GoogleCloudRunV2Job::class;
+        protected $jobsDataType = 'array';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListJobs request to continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The resulting list of Jobs.
+         *
+         * @param GoogleCloudRunV2Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2Job[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListJobs request to continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV2Job[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ListJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
-    {
-    }
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListJobs request to continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudRun_GoogleCloudRunV2ListJobsResponse extends \Google\Service\CloudRun\GoogleCloudRunV2ListJobsResponse
     {
     }
 }

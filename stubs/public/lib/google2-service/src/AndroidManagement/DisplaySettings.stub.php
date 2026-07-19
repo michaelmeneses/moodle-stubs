@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class DisplaySettings extends \Google\Model
-{
-    protected $screenBrightnessSettingsType = ScreenBrightnessSettings::class;
-    protected $screenBrightnessSettingsDataType = '';
-    protected $screenTimeoutSettingsType = ScreenTimeoutSettings::class;
-    protected $screenTimeoutSettingsDataType = '';
-    /**
-     * Optional. Controls the screen brightness settings.
-     *
-     * @param ScreenBrightnessSettings $screenBrightnessSettings
-     */
-    public function setScreenBrightnessSettings(ScreenBrightnessSettings $screenBrightnessSettings)
+namespace Google\Service\AndroidManagement {
+    class DisplaySettings extends \Google\Model
     {
+        protected $screenBrightnessSettingsType = ScreenBrightnessSettings::class;
+        protected $screenBrightnessSettingsDataType = '';
+        protected $screenTimeoutSettingsType = ScreenTimeoutSettings::class;
+        protected $screenTimeoutSettingsDataType = '';
+        /**
+         * Optional. Controls the screen brightness settings.
+         *
+         * @param ScreenBrightnessSettings $screenBrightnessSettings
+         */
+        public function setScreenBrightnessSettings(ScreenBrightnessSettings $screenBrightnessSettings)
+        {
+        }
+        /**
+         * @return ScreenBrightnessSettings
+         */
+        public function getScreenBrightnessSettings()
+        {
+        }
+        /**
+         * Optional. Controls the screen timeout settings.
+         *
+         * @param ScreenTimeoutSettings $screenTimeoutSettings
+         */
+        public function setScreenTimeoutSettings(ScreenTimeoutSettings $screenTimeoutSettings)
+        {
+        }
+        /**
+         * @return ScreenTimeoutSettings
+         */
+        public function getScreenTimeoutSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ScreenBrightnessSettings
+     * Runtime class alias of \Google\Service\AndroidManagement\DisplaySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScreenBrightnessSettings()
-    {
-    }
-    /**
-     * Optional. Controls the screen timeout settings.
-     *
-     * @param ScreenTimeoutSettings $screenTimeoutSettings
-     */
-    public function setScreenTimeoutSettings(ScreenTimeoutSettings $screenTimeoutSettings)
-    {
-    }
-    /**
-     * @return ScreenTimeoutSettings
-     */
-    public function getScreenTimeoutSettings()
+    class Google_Service_AndroidManagement_DisplaySettings extends \Google\Service\AndroidManagement\DisplaySettings
     {
     }
 }

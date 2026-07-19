@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub\Resource;
-
-/**
- * The "fleets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkehubService = new Google\Service\GKEHub(...);
- *   $fleets = $gkehubService->organizations_locations_fleets;
- *  </code>
- */
-class OrganizationsLocationsFleets extends \Google\Service\Resource
-{
+namespace Google\Service\GKEHub\Resource {
+    use Google\Service\GKEHub\ListFleetsResponse;
     /**
-     * Returns all fleets within an organization or a project that the caller has
-     * access to. (fleets.listOrganizationsLocationsFleets)
-     *
-     * @param string $parent Required. The organization or project to list for
-     * Fleets under, in the format `organizations/locations` or
-     * `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of fleets to return. The
-     * service may return fewer than this value. If unspecified, at most 200 fleets
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListFleets` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListFleets` must match the call
-     * that provided the page token.
-     * @return ListFleetsResponse
-     * @throws \Google\Service\Exception
+     * The "fleets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkehubService = new Google\Service\GKEHub(...);
+     *   $fleets = $gkehubService->organizations_locations_fleets;
+     *  </code>
      */
-    public function listOrganizationsLocationsFleets($parent, $optParams = [])
+    class OrganizationsLocationsFleets extends \Google\Service\Resource
+    {
+        /**
+         * Returns all fleets within an organization or a project that the caller has
+         * access to. (fleets.listOrganizationsLocationsFleets)
+         *
+         * @param string $parent Required. The organization or project to list for
+         * Fleets under, in the format `organizations/locations` or
+         * `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of fleets to return. The
+         * service may return fewer than this value. If unspecified, at most 200 fleets
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListFleets` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListFleets` must match the call
+         * that provided the page token.
+         * @return ListFleetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsFleets($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEHub\Resource\OrganizationsLocationsFleets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEHub_Resource_OrganizationsLocationsFleets extends \Google\Service\GKEHub\Resource\OrganizationsLocationsFleets
     {
     }
 }

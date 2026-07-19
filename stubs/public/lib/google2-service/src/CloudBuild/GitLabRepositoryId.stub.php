@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitLabRepositoryId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var int
-     */
-    public $webhookId;
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\CloudBuild {
+    class GitLabRepositoryId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var int
+         */
+        public $webhookId;
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setWebhookId($webhookId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWebhookId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitLabRepositoryId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setWebhookId($webhookId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWebhookId()
+    class Google_Service_CloudBuild_GitLabRepositoryId extends \Google\Service\CloudBuild\GitLabRepositoryId
     {
     }
 }

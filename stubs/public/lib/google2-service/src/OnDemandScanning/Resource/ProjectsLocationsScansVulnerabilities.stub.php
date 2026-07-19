@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning\Resource;
-
-/**
- * The "vulnerabilities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
- *   $vulnerabilities = $ondemandscanningService->projects_locations_scans_vulnerabilities;
- *  </code>
- */
-class ProjectsLocationsScansVulnerabilities extends \Google\Service\Resource
-{
+namespace Google\Service\OnDemandScanning\Resource {
+    use Google\Service\OnDemandScanning\ListVulnerabilitiesResponseV1;
     /**
-     * Lists vulnerabilities resulting from a successfully completed scan.
-     * (vulnerabilities.listProjectsLocationsScansVulnerabilities)
-     *
-     * @param string $parent Required. The parent of the collection of
-     * Vulnerabilities being requested. Format:
-     * projects/[project_name]/locations/[location]/scans/[scan_id]
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The number of vulnerabilities to retrieve.
-     * @opt_param string pageToken The page token, resulting from a previous call to
-     * ListVulnerabilities.
-     * @return ListVulnerabilitiesResponseV1
-     * @throws \Google\Service\Exception
+     * The "vulnerabilities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
+     *   $vulnerabilities = $ondemandscanningService->projects_locations_scans_vulnerabilities;
+     *  </code>
      */
-    public function listProjectsLocationsScansVulnerabilities($parent, $optParams = [])
+    class ProjectsLocationsScansVulnerabilities extends \Google\Service\Resource
+    {
+        /**
+         * Lists vulnerabilities resulting from a successfully completed scan.
+         * (vulnerabilities.listProjectsLocationsScansVulnerabilities)
+         *
+         * @param string $parent Required. The parent of the collection of
+         * Vulnerabilities being requested. Format:
+         * projects/[project_name]/locations/[location]/scans/[scan_id]
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The number of vulnerabilities to retrieve.
+         * @opt_param string pageToken The page token, resulting from a previous call to
+         * ListVulnerabilities.
+         * @return ListVulnerabilitiesResponseV1
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsScansVulnerabilities($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OnDemandScanning\Resource\ProjectsLocationsScansVulnerabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OnDemandScanning_Resource_ProjectsLocationsScansVulnerabilities extends \Google\Service\OnDemandScanning\Resource\ProjectsLocationsScansVulnerabilities
     {
     }
 }

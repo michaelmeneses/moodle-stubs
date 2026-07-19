@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1QAResult extends \Google\Collection
-{
-    protected $collection_key = 'highlights';
-    /**
-     * The calibrated confidence score for this document, in the range [0., 1.].
-     * This represents the confidence level for whether the returned document and
-     * snippet answers the user's query.
-     *
-     * @var float
-     */
-    public $confidenceScore;
-    protected $highlightsType = GoogleCloudContentwarehouseV1QAResultHighlight::class;
-    protected $highlightsDataType = 'array';
-    /**
-     * The calibrated confidence score for this document, in the range [0., 1.].
-     * This represents the confidence level for whether the returned document and
-     * snippet answers the user's query.
-     *
-     * @param float $confidenceScore
-     */
-    public function setConfidenceScore($confidenceScore)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1QAResult extends \Google\Collection
     {
+        protected $collection_key = 'highlights';
+        /**
+         * The calibrated confidence score for this document, in the range [0., 1.].
+         * This represents the confidence level for whether the returned document and
+         * snippet answers the user's query.
+         *
+         * @var float
+         */
+        public $confidenceScore;
+        protected $highlightsType = GoogleCloudContentwarehouseV1QAResultHighlight::class;
+        protected $highlightsDataType = 'array';
+        /**
+         * The calibrated confidence score for this document, in the range [0., 1.].
+         * This represents the confidence level for whether the returned document and
+         * snippet answers the user's query.
+         *
+         * @param float $confidenceScore
+         */
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * Highlighted sections in the snippet.
+         *
+         * @param GoogleCloudContentwarehouseV1QAResultHighlight[] $highlights
+         */
+        public function setHighlights($highlights)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1QAResultHighlight[]
+         */
+        public function getHighlights()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1QAResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceScore()
-    {
-    }
-    /**
-     * Highlighted sections in the snippet.
-     *
-     * @param GoogleCloudContentwarehouseV1QAResultHighlight[] $highlights
-     */
-    public function setHighlights($highlights)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1QAResultHighlight[]
-     */
-    public function getHighlights()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1QAResult extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1QAResult
     {
     }
 }

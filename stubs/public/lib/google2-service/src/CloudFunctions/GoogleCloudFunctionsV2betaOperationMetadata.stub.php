@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2betaOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'stages';
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * @var string
-     */
-    public $buildName;
-    /**
-     * @var bool
-     */
-    public $cancelRequested;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $operationType;
-    /**
-     * @var array[]
-     */
-    public $requestResource;
-    /**
-     * @var string
-     */
-    public $sourceToken;
-    protected $stagesType = GoogleCloudFunctionsV2betaStage::class;
-    protected $stagesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $statusDetail;
-    /**
-     * @var string
-     */
-    public $target;
-    /**
-     * @var string
-     */
-    public $verb;
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2betaOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'stages';
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * @var string
+         */
+        public $buildName;
+        /**
+         * @var bool
+         */
+        public $cancelRequested;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $operationType;
+        /**
+         * @var array[]
+         */
+        public $requestResource;
+        /**
+         * @var string
+         */
+        public $sourceToken;
+        protected $stagesType = GoogleCloudFunctionsV2betaStage::class;
+        protected $stagesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $statusDetail;
+        /**
+         * @var string
+         */
+        public $target;
+        /**
+         * @var string
+         */
+        public $verb;
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildName($buildName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCancelRequested($cancelRequested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCancelRequested()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setRequestResource($requestResource)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRequestResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceToken($sourceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceToken()
+        {
+        }
+        /**
+         * @param GoogleCloudFunctionsV2betaStage[]
+         */
+        public function setStages($stages)
+        {
+        }
+        /**
+         * @return GoogleCloudFunctionsV2betaStage[]
+         */
+        public function getStages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusDetail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2betaOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildName($buildName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCancelRequested($cancelRequested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCancelRequested()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setRequestResource($requestResource)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRequestResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceToken($sourceToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceToken()
-    {
-    }
-    /**
-     * @param GoogleCloudFunctionsV2betaStage[]
-     */
-    public function setStages($stages)
-    {
-    }
-    /**
-     * @return GoogleCloudFunctionsV2betaStage[]
-     */
-    public function getStages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusDetail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2betaOperationMetadata extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2betaOperationMetadata
     {
     }
 }

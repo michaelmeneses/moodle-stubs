@@ -21,93 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
- *   $customers = $cloudcontrolspartnerService->organizations_locations_customers;
- *  </code>
- */
-class OrganizationsLocationsCustomers extends \Google\Service\Resource
-{
+namespace Google\Service\CloudControlsPartnerService\Resource {
+    use Google\Service\CloudControlsPartnerService\CloudcontrolspartnerEmpty;
+    use Google\Service\CloudControlsPartnerService\Customer;
+    use Google\Service\CloudControlsPartnerService\ListCustomersResponse;
     /**
-     * Creates a new customer. (customers.create)
-     *
-     * @param string $parent Required. Parent resource Format:
-     * `organizations/{organization}/locations/{location}`
-     * @param Customer $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string customerId Required. The customer id to use for the
-     * customer, which will become the final component of the customer's resource
-     * name. The specified value must be a valid Google cloud organization id.
-     * @return Customer
-     * @throws \Google\Service\Exception
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
+     *   $customers = $cloudcontrolspartnerService->organizations_locations_customers;
+     *  </code>
      */
-    public function create($parent, Customer $postBody, $optParams = [])
+    class OrganizationsLocationsCustomers extends \Google\Service\Resource
     {
+        /**
+         * Creates a new customer. (customers.create)
+         *
+         * @param string $parent Required. Parent resource Format:
+         * `organizations/{organization}/locations/{location}`
+         * @param Customer $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string customerId Required. The customer id to use for the
+         * customer, which will become the final component of the customer's resource
+         * name. The specified value must be a valid Google cloud organization id.
+         * @return Customer
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Customer $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete details of a single customer (customers.delete)
+         *
+         * @param string $name Required. name of the resource to be deleted format:
+         * name=organizations/locations/customers
+         * @param array $optParams Optional parameters.
+         * @return CloudcontrolspartnerEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single customer (customers.get)
+         *
+         * @param string $name Required. Format:
+         * `organizations/{organization}/locations/{location}/customers/{customer}`
+         * @param array $optParams Optional parameters.
+         * @return Customer
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists customers of a partner identified by its Google Cloud organization ID
+         * (customers.listOrganizationsLocationsCustomers)
+         *
+         * @param string $parent Required. Parent resource Format:
+         * `organizations/{organization}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results
+         * @opt_param string orderBy Optional. Hint for how to order the results
+         * @opt_param int pageSize The maximum number of Customers to return. The
+         * service may return fewer than this value. If unspecified, at most 500
+         * Customers will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListCustomers` call. Provide this to retrieve the subsequent page.
+         * @return ListCustomersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsCustomers($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update details of a single customer (customers.patch)
+         *
+         * @param string $name Identifier. Format:
+         * `organizations/{organization}/locations/{location}/customers/{customer}`
+         * @param Customer $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update
+         * @return Customer
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Customer $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete details of a single customer (customers.delete)
-     *
-     * @param string $name Required. name of the resource to be deleted format:
-     * name=organizations/locations/customers
-     * @param array $optParams Optional parameters.
-     * @return CloudcontrolspartnerEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocationsCustomers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single customer (customers.get)
-     *
-     * @param string $name Required. Format:
-     * `organizations/{organization}/locations/{location}/customers/{customer}`
-     * @param array $optParams Optional parameters.
-     * @return Customer
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists customers of a partner identified by its Google Cloud organization ID
-     * (customers.listOrganizationsLocationsCustomers)
-     *
-     * @param string $parent Required. Parent resource Format:
-     * `organizations/{organization}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results
-     * @opt_param string orderBy Optional. Hint for how to order the results
-     * @opt_param int pageSize The maximum number of Customers to return. The
-     * service may return fewer than this value. If unspecified, at most 500
-     * Customers will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListCustomers` call. Provide this to retrieve the subsequent page.
-     * @return ListCustomersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsLocationsCustomers($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update details of a single customer (customers.patch)
-     *
-     * @param string $name Identifier. Format:
-     * `organizations/{organization}/locations/{location}/customers/{customer}`
-     * @param Customer $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update
-     * @return Customer
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Customer $postBody, $optParams = [])
+    class Google_Service_CloudControlsPartnerService_Resource_OrganizationsLocationsCustomers extends \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocationsCustomers
     {
     }
 }

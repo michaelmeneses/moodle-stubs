@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class SearchDomainsResponse extends \Google\Collection
-{
-    protected $collection_key = 'registerParameters';
-    protected $registerParametersType = RegisterParameters::class;
-    protected $registerParametersDataType = 'array';
-    /**
-     * Results of the domain name search.
-     *
-     * @param RegisterParameters[] $registerParameters
-     */
-    public function setRegisterParameters($registerParameters)
+namespace Google\Service\CloudDomains {
+    class SearchDomainsResponse extends \Google\Collection
     {
+        protected $collection_key = 'registerParameters';
+        protected $registerParametersType = RegisterParameters::class;
+        protected $registerParametersDataType = 'array';
+        /**
+         * Results of the domain name search.
+         *
+         * @param RegisterParameters[] $registerParameters
+         */
+        public function setRegisterParameters($registerParameters)
+        {
+        }
+        /**
+         * @return RegisterParameters[]
+         */
+        public function getRegisterParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegisterParameters[]
+     * Runtime class alias of \Google\Service\CloudDomains\SearchDomainsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegisterParameters()
+    class Google_Service_CloudDomains_SearchDomainsResponse extends \Google\Service\CloudDomains\SearchDomainsResponse
     {
     }
 }

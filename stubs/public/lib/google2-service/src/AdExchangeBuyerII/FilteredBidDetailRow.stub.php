@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class FilteredBidDetailRow extends \Google\Model
-{
-    protected $bidCountType = MetricValue::class;
-    protected $bidCountDataType = '';
-    /**
-     * The ID of the detail, can be numeric or text. The associated value can be
-     * looked up in the dictionary file corresponding to the DetailType in the
-     * response message.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * Note: this field will be deprecated, use "detail" field instead. When
-     * "detail" field represents an integer value, this field is populated as the
-     * same integer value "detail" field represents, otherwise this field will be
-     * 0. The ID of the detail. The associated value can be looked up in the
-     * dictionary file corresponding to the DetailType in the response message.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $detailId;
-    protected $rowDimensionsType = RowDimensions::class;
-    protected $rowDimensionsDataType = '';
-    /**
-     * The number of bids with the specified detail.
-     *
-     * @param MetricValue $bidCount
-     */
-    public function setBidCount(MetricValue $bidCount)
+namespace Google\Service\AdExchangeBuyerII {
+    class FilteredBidDetailRow extends \Google\Model
     {
+        protected $bidCountType = MetricValue::class;
+        protected $bidCountDataType = '';
+        /**
+         * The ID of the detail, can be numeric or text. The associated value can be
+         * looked up in the dictionary file corresponding to the DetailType in the
+         * response message.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * Note: this field will be deprecated, use "detail" field instead. When
+         * "detail" field represents an integer value, this field is populated as the
+         * same integer value "detail" field represents, otherwise this field will be
+         * 0. The ID of the detail. The associated value can be looked up in the
+         * dictionary file corresponding to the DetailType in the response message.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $detailId;
+        protected $rowDimensionsType = RowDimensions::class;
+        protected $rowDimensionsDataType = '';
+        /**
+         * The number of bids with the specified detail.
+         *
+         * @param MetricValue $bidCount
+         */
+        public function setBidCount(MetricValue $bidCount)
+        {
+        }
+        /**
+         * @return MetricValue
+         */
+        public function getBidCount()
+        {
+        }
+        /**
+         * The ID of the detail, can be numeric or text. The associated value can be
+         * looked up in the dictionary file corresponding to the DetailType in the
+         * response message.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * Note: this field will be deprecated, use "detail" field instead. When
+         * "detail" field represents an integer value, this field is populated as the
+         * same integer value "detail" field represents, otherwise this field will be
+         * 0. The ID of the detail. The associated value can be looked up in the
+         * dictionary file corresponding to the DetailType in the response message.
+         *
+         * @deprecated
+         * @param int $detailId
+         */
+        public function setDetailId($detailId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getDetailId()
+        {
+        }
+        /**
+         * The values of all dimensions associated with metric values in this row.
+         *
+         * @param RowDimensions $rowDimensions
+         */
+        public function setRowDimensions(RowDimensions $rowDimensions)
+        {
+        }
+        /**
+         * @return RowDimensions
+         */
+        public function getRowDimensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricValue
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\FilteredBidDetailRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBidCount()
-    {
-    }
-    /**
-     * The ID of the detail, can be numeric or text. The associated value can be
-     * looked up in the dictionary file corresponding to the DetailType in the
-     * response message.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetail()
-    {
-    }
-    /**
-     * Note: this field will be deprecated, use "detail" field instead. When
-     * "detail" field represents an integer value, this field is populated as the
-     * same integer value "detail" field represents, otherwise this field will be
-     * 0. The ID of the detail. The associated value can be looked up in the
-     * dictionary file corresponding to the DetailType in the response message.
-     *
-     * @deprecated
-     * @param int $detailId
-     */
-    public function setDetailId($detailId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getDetailId()
-    {
-    }
-    /**
-     * The values of all dimensions associated with metric values in this row.
-     *
-     * @param RowDimensions $rowDimensions
-     */
-    public function setRowDimensions(RowDimensions $rowDimensions)
-    {
-    }
-    /**
-     * @return RowDimensions
-     */
-    public function getRowDimensions()
+    class Google_Service_AdExchangeBuyerII_FilteredBidDetailRow extends \Google\Service\AdExchangeBuyerII\FilteredBidDetailRow
     {
     }
 }

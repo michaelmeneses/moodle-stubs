@@ -21,184 +21,193 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkAttachmentConnectedEndpoint extends \Google\Collection
-{
-    /**
-     * The consumer allows traffic from the producer to reach its VPC.
-     */
-    public const STATUS_ACCEPTED = 'ACCEPTED';
-    /**
-     * The consumer network attachment no longer exists.
-     */
-    public const STATUS_CLOSED = 'CLOSED';
-    /**
-     * The consumer needs to take further action before traffic can be served.
-     */
-    public const STATUS_NEEDS_ATTENTION = 'NEEDS_ATTENTION';
-    /**
-     * The consumer neither allows nor prohibits traffic from the producer to
-     * reach its VPC.
-     */
-    public const STATUS_PENDING = 'PENDING';
-    /**
-     * The consumer prohibits traffic from the producer to reach its VPC.
-     */
-    public const STATUS_REJECTED = 'REJECTED';
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    protected $collection_key = 'secondaryIpCidrRanges';
-    /**
-     * The IPv4 address assigned to the producer instance network interface. This
-     * value will be a range in case of Serverless.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The IPv6 address assigned to the producer instance network interface. This
-     * is only assigned when the stack types of both the instance network
-     * interface and the consumer subnet are IPv4_IPv6.
-     *
-     * @var string
-     */
-    public $ipv6Address;
-    /**
-     * The project id or number of the interface to which the IP was assigned.
-     *
-     * @var string
-     */
-    public $projectIdOrNum;
-    /**
-     * Alias IP ranges from the same subnetwork.
-     *
-     * @var string[]
-     */
-    public $secondaryIpCidrRanges;
-    /**
-     * The status of a connected endpoint to this network attachment.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The subnetwork used to assign the IP to the producer instance network
-     * interface.
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Output only. [Output Only] The CIDR range of the subnet from which the IPv4
-     * internal IP was allocated from.
-     *
-     * @var string
-     */
-    public $subnetworkCidrRange;
-    /**
-     * The IPv4 address assigned to the producer instance network interface. This
-     * value will be a range in case of Serverless.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\Compute {
+    class NetworkAttachmentConnectedEndpoint extends \Google\Collection
     {
+        /**
+         * The consumer allows traffic from the producer to reach its VPC.
+         */
+        public const STATUS_ACCEPTED = 'ACCEPTED';
+        /**
+         * The consumer network attachment no longer exists.
+         */
+        public const STATUS_CLOSED = 'CLOSED';
+        /**
+         * The consumer needs to take further action before traffic can be served.
+         */
+        public const STATUS_NEEDS_ATTENTION = 'NEEDS_ATTENTION';
+        /**
+         * The consumer neither allows nor prohibits traffic from the producer to
+         * reach its VPC.
+         */
+        public const STATUS_PENDING = 'PENDING';
+        /**
+         * The consumer prohibits traffic from the producer to reach its VPC.
+         */
+        public const STATUS_REJECTED = 'REJECTED';
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        protected $collection_key = 'secondaryIpCidrRanges';
+        /**
+         * The IPv4 address assigned to the producer instance network interface. This
+         * value will be a range in case of Serverless.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The IPv6 address assigned to the producer instance network interface. This
+         * is only assigned when the stack types of both the instance network
+         * interface and the consumer subnet are IPv4_IPv6.
+         *
+         * @var string
+         */
+        public $ipv6Address;
+        /**
+         * The project id or number of the interface to which the IP was assigned.
+         *
+         * @var string
+         */
+        public $projectIdOrNum;
+        /**
+         * Alias IP ranges from the same subnetwork.
+         *
+         * @var string[]
+         */
+        public $secondaryIpCidrRanges;
+        /**
+         * The status of a connected endpoint to this network attachment.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The subnetwork used to assign the IP to the producer instance network
+         * interface.
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Output only. [Output Only] The CIDR range of the subnet from which the IPv4
+         * internal IP was allocated from.
+         *
+         * @var string
+         */
+        public $subnetworkCidrRange;
+        /**
+         * The IPv4 address assigned to the producer instance network interface. This
+         * value will be a range in case of Serverless.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The IPv6 address assigned to the producer instance network interface. This
+         * is only assigned when the stack types of both the instance network
+         * interface and the consumer subnet are IPv4_IPv6.
+         *
+         * @param string $ipv6Address
+         */
+        public function setIpv6Address($ipv6Address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpv6Address()
+        {
+        }
+        /**
+         * The project id or number of the interface to which the IP was assigned.
+         *
+         * @param string $projectIdOrNum
+         */
+        public function setProjectIdOrNum($projectIdOrNum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectIdOrNum()
+        {
+        }
+        /**
+         * Alias IP ranges from the same subnetwork.
+         *
+         * @param string[] $secondaryIpCidrRanges
+         */
+        public function setSecondaryIpCidrRanges($secondaryIpCidrRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecondaryIpCidrRanges()
+        {
+        }
+        /**
+         * The status of a connected endpoint to this network attachment.
+         *
+         * Accepted values: ACCEPTED, CLOSED, NEEDS_ATTENTION, PENDING, REJECTED,
+         * STATUS_UNSPECIFIED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The subnetwork used to assign the IP to the producer instance network
+         * interface.
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
+        /**
+         * Output only. [Output Only] The CIDR range of the subnet from which the IPv4
+         * internal IP was allocated from.
+         *
+         * @param string $subnetworkCidrRange
+         */
+        public function setSubnetworkCidrRange($subnetworkCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetworkCidrRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NetworkAttachmentConnectedEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The IPv6 address assigned to the producer instance network interface. This
-     * is only assigned when the stack types of both the instance network
-     * interface and the consumer subnet are IPv4_IPv6.
-     *
-     * @param string $ipv6Address
-     */
-    public function setIpv6Address($ipv6Address)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpv6Address()
-    {
-    }
-    /**
-     * The project id or number of the interface to which the IP was assigned.
-     *
-     * @param string $projectIdOrNum
-     */
-    public function setProjectIdOrNum($projectIdOrNum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectIdOrNum()
-    {
-    }
-    /**
-     * Alias IP ranges from the same subnetwork.
-     *
-     * @param string[] $secondaryIpCidrRanges
-     */
-    public function setSecondaryIpCidrRanges($secondaryIpCidrRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecondaryIpCidrRanges()
-    {
-    }
-    /**
-     * The status of a connected endpoint to this network attachment.
-     *
-     * Accepted values: ACCEPTED, CLOSED, NEEDS_ATTENTION, PENDING, REJECTED,
-     * STATUS_UNSPECIFIED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The subnetwork used to assign the IP to the producer instance network
-     * interface.
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
-    {
-    }
-    /**
-     * Output only. [Output Only] The CIDR range of the subnet from which the IPv4
-     * internal IP was allocated from.
-     *
-     * @param string $subnetworkCidrRange
-     */
-    public function setSubnetworkCidrRange($subnetworkCidrRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetworkCidrRange()
+    class Google_Service_Compute_NetworkAttachmentConnectedEndpoint extends \Google\Service\Compute\NetworkAttachmentConnectedEndpoint
     {
     }
 }

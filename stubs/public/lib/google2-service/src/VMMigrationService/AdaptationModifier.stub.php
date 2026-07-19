@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AdaptationModifier extends \Google\Model
-{
-    /**
-     * Optional. The modifier name.
-     *
-     * @var string
-     */
-    public $modifier;
-    /**
-     * Optional. The value of the modifier. The actual value depends on the
-     * modifier and can also be empty.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. The modifier name.
-     *
-     * @param string $modifier
-     */
-    public function setModifier($modifier)
+namespace Google\Service\VMMigrationService {
+    class AdaptationModifier extends \Google\Model
     {
+        /**
+         * Optional. The modifier name.
+         *
+         * @var string
+         */
+        public $modifier;
+        /**
+         * Optional. The value of the modifier. The actual value depends on the
+         * modifier and can also be empty.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. The modifier name.
+         *
+         * @param string $modifier
+         */
+        public function setModifier($modifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModifier()
+        {
+        }
+        /**
+         * Optional. The value of the modifier. The actual value depends on the
+         * modifier and can also be empty.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\AdaptationModifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModifier()
-    {
-    }
-    /**
-     * Optional. The value of the modifier. The actual value depends on the
-     * modifier and can also be empty.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_VMMigrationService_AdaptationModifier extends \Google\Service\VMMigrationService\AdaptationModifier
     {
     }
 }

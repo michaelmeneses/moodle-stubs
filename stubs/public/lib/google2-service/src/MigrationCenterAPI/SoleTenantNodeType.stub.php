@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SoleTenantNodeType extends \Google\Model
-{
-    /**
-     * Name of the Sole Tenant node. Consult
-     * https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes
-     *
-     * @var string
-     */
-    public $nodeName;
-    /**
-     * Name of the Sole Tenant node. Consult
-     * https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes
-     *
-     * @param string $nodeName
-     */
-    public function setNodeName($nodeName)
+namespace Google\Service\MigrationCenterAPI {
+    class SoleTenantNodeType extends \Google\Model
     {
+        /**
+         * Name of the Sole Tenant node. Consult
+         * https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes
+         *
+         * @var string
+         */
+        public $nodeName;
+        /**
+         * Name of the Sole Tenant node. Consult
+         * https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes
+         *
+         * @param string $nodeName
+         */
+        public function setNodeName($nodeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SoleTenantNodeType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeName()
+    class Google_Service_MigrationCenterAPI_SoleTenantNodeType extends \Google\Service\MigrationCenterAPI\SoleTenantNodeType
     {
     }
 }

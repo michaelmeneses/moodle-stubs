@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment extends \Google\Model
-{
-    /**
-     * Name of the deployed API proxy revision containing the base path.
-     *
-     * @var string
-     */
-    public $apiProxy;
-    /**
-     * Base path receiving traffic.
-     *
-     * @var string
-     */
-    public $basepath;
-    /**
-     * Name of the environment in which the proxy is deployed.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Name of the deployed API proxy revision containing the base path.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * Name of the deployed API proxy revision containing the base path.
-     *
-     * @param string $apiProxy
-     */
-    public function setApiProxy($apiProxy)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment extends \Google\Model
     {
+        /**
+         * Name of the deployed API proxy revision containing the base path.
+         *
+         * @var string
+         */
+        public $apiProxy;
+        /**
+         * Base path receiving traffic.
+         *
+         * @var string
+         */
+        public $basepath;
+        /**
+         * Name of the environment in which the proxy is deployed.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Name of the deployed API proxy revision containing the base path.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * Name of the deployed API proxy revision containing the base path.
+         *
+         * @param string $apiProxy
+         */
+        public function setApiProxy($apiProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiProxy()
+        {
+        }
+        /**
+         * Base path receiving traffic.
+         *
+         * @param string $basepath
+         */
+        public function setBasepath($basepath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasepath()
+        {
+        }
+        /**
+         * Name of the environment in which the proxy is deployed.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Name of the deployed API proxy revision containing the base path.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProxy()
-    {
-    }
-    /**
-     * Base path receiving traffic.
-     *
-     * @param string $basepath
-     */
-    public function setBasepath($basepath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBasepath()
-    {
-    }
-    /**
-     * Name of the environment in which the proxy is deployed.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Name of the deployed API proxy revision containing the base path.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment extends \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment
     {
     }
 }

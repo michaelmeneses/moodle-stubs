@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListApiDebugSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * Page token that you can include in a ListApiDebugSessionsRequest to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionsType = GoogleCloudApigeeV1ApiDebugSession::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * Page token that you can include in a ListApiDebugSessionsRequest to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListApiDebugSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * Page token that you can include in a ListApiDebugSessionsRequest to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionsType = GoogleCloudApigeeV1ApiDebugSession::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * Page token that you can include in a ListApiDebugSessionsRequest to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Session info that includes debug session ID, environment ID, api proxy
+         * revision ID and the first transaction creation timestamp.
+         *
+         * @param GoogleCloudApigeeV1ApiDebugSession[] $sessions
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiDebugSession[]
+         */
+        public function getSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListApiDebugSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Session info that includes debug session ID, environment ID, api proxy
-     * revision ID and the first transaction creation timestamp.
-     *
-     * @param GoogleCloudApigeeV1ApiDebugSession[] $sessions
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1ApiDebugSession[]
-     */
-    public function getSessions()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListApiDebugSessionsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListApiDebugSessionsResponse
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataDiffUploadRequest extends \Google\Model
-{
-    protected $checksumsInfoType = GdataCompositeMedia::class;
-    protected $checksumsInfoDataType = '';
-    protected $objectInfoType = GdataCompositeMedia::class;
-    protected $objectInfoDataType = '';
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * gdata
-     *
-     * @param GdataCompositeMedia $checksumsInfo
-     */
-    public function setChecksumsInfo(GdataCompositeMedia $checksumsInfo)
+namespace Google\Service\YouTubeReporting {
+    class GdataDiffUploadRequest extends \Google\Model
     {
+        protected $checksumsInfoType = GdataCompositeMedia::class;
+        protected $checksumsInfoDataType = '';
+        protected $objectInfoType = GdataCompositeMedia::class;
+        protected $objectInfoDataType = '';
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * gdata
+         *
+         * @param GdataCompositeMedia $checksumsInfo
+         */
+        public function setChecksumsInfo(GdataCompositeMedia $checksumsInfo)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getChecksumsInfo()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param GdataCompositeMedia $objectInfo
+         */
+        public function setObjectInfo(GdataCompositeMedia $objectInfo)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getObjectInfo()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GdataCompositeMedia
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataDiffUploadRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksumsInfo()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param GdataCompositeMedia $objectInfo
-     */
-    public function setObjectInfo(GdataCompositeMedia $objectInfo)
-    {
-    }
-    /**
-     * @return GdataCompositeMedia
-     */
-    public function getObjectInfo()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_YouTubeReporting_GdataDiffUploadRequest extends \Google\Service\YouTubeReporting\GdataDiffUploadRequest
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CollectdPayloadError extends \Google\Collection
-{
-    protected $collection_key = 'valueErrors';
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * The zero-based index in CreateCollectdTimeSeriesRequest.collectd_payloads.
-     *
-     * @var int
-     */
-    public $index;
-    protected $valueErrorsType = CollectdValueError::class;
-    protected $valueErrorsDataType = 'array';
-    /**
-     * Records the error status for the payload. If this field is present, the
-     * partial errors for nested values won't be populated.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\Monitoring {
+    class CollectdPayloadError extends \Google\Collection
     {
+        protected $collection_key = 'valueErrors';
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * The zero-based index in CreateCollectdTimeSeriesRequest.collectd_payloads.
+         *
+         * @var int
+         */
+        public $index;
+        protected $valueErrorsType = CollectdValueError::class;
+        protected $valueErrorsDataType = 'array';
+        /**
+         * Records the error status for the payload. If this field is present, the
+         * partial errors for nested values won't be populated.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The zero-based index in CreateCollectdTimeSeriesRequest.collectd_payloads.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Records the error status for values that were not written due to an
+         * error.Failed payloads for which nothing is written will not include partial
+         * value errors.
+         *
+         * @param CollectdValueError[] $valueErrors
+         */
+        public function setValueErrors($valueErrors)
+        {
+        }
+        /**
+         * @return CollectdValueError[]
+         */
+        public function getValueErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\Monitoring\CollectdPayloadError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The zero-based index in CreateCollectdTimeSeriesRequest.collectd_payloads.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * Records the error status for values that were not written due to an
-     * error.Failed payloads for which nothing is written will not include partial
-     * value errors.
-     *
-     * @param CollectdValueError[] $valueErrors
-     */
-    public function setValueErrors($valueErrors)
-    {
-    }
-    /**
-     * @return CollectdValueError[]
-     */
-    public function getValueErrors()
+    class Google_Service_Monitoring_CollectdPayloadError extends \Google\Service\Monitoring\CollectdPayloadError
     {
     }
 }

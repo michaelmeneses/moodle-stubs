@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BleuSpec extends \Google\Model
-{
-    /**
-     * Optional. Whether to use_effective_order to compute bleu score.
-     *
-     * @var bool
-     */
-    public $useEffectiveOrder;
-    /**
-     * Optional. Whether to use_effective_order to compute bleu score.
-     *
-     * @param bool $useEffectiveOrder
-     */
-    public function setUseEffectiveOrder($useEffectiveOrder)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BleuSpec extends \Google\Model
     {
+        /**
+         * Optional. Whether to use_effective_order to compute bleu score.
+         *
+         * @var bool
+         */
+        public $useEffectiveOrder;
+        /**
+         * Optional. Whether to use_effective_order to compute bleu score.
+         *
+         * @param bool $useEffectiveOrder
+         */
+        public function setUseEffectiveOrder($useEffectiveOrder)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseEffectiveOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BleuSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseEffectiveOrder()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BleuSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BleuSpec
     {
     }
 }

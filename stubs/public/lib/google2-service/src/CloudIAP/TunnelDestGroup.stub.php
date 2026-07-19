@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class TunnelDestGroup extends \Google\Collection
-{
-    protected $collection_key = 'fqdns';
-    /**
-     * Optional. Unordered list. List of CIDRs that this group applies to.
-     *
-     * @var string[]
-     */
-    public $cidrs;
-    /**
-     * Optional. Unordered list. List of FQDNs that this group applies to.
-     *
-     * @var string[]
-     */
-    public $fqdns;
-    /**
-     * Identifier. Identifier for the TunnelDestGroup. Must be unique within the
-     * project and contain only lower case letters (a-z) and dashes (-).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Unordered list. List of CIDRs that this group applies to.
-     *
-     * @param string[] $cidrs
-     */
-    public function setCidrs($cidrs)
+namespace Google\Service\CloudIAP {
+    class TunnelDestGroup extends \Google\Collection
     {
+        protected $collection_key = 'fqdns';
+        /**
+         * Optional. Unordered list. List of CIDRs that this group applies to.
+         *
+         * @var string[]
+         */
+        public $cidrs;
+        /**
+         * Optional. Unordered list. List of FQDNs that this group applies to.
+         *
+         * @var string[]
+         */
+        public $fqdns;
+        /**
+         * Identifier. Identifier for the TunnelDestGroup. Must be unique within the
+         * project and contain only lower case letters (a-z) and dashes (-).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Unordered list. List of CIDRs that this group applies to.
+         *
+         * @param string[] $cidrs
+         */
+        public function setCidrs($cidrs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCidrs()
+        {
+        }
+        /**
+         * Optional. Unordered list. List of FQDNs that this group applies to.
+         *
+         * @param string[] $fqdns
+         */
+        public function setFqdns($fqdns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFqdns()
+        {
+        }
+        /**
+         * Identifier. Identifier for the TunnelDestGroup. Must be unique within the
+         * project and contain only lower case letters (a-z) and dashes (-).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudIAP\TunnelDestGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCidrs()
-    {
-    }
-    /**
-     * Optional. Unordered list. List of FQDNs that this group applies to.
-     *
-     * @param string[] $fqdns
-     */
-    public function setFqdns($fqdns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFqdns()
-    {
-    }
-    /**
-     * Identifier. Identifier for the TunnelDestGroup. Must be unique within the
-     * project and contain only lower case letters (a-z) and dashes (-).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudIAP_TunnelDestGroup extends \Google\Service\CloudIAP\TunnelDestGroup
     {
     }
 }

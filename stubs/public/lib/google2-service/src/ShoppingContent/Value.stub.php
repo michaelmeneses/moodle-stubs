@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Value extends \Google\Model
-{
-    /**
-     * The name of a carrier rate referring to a carrier rate defined in the same
-     * rate group. Can only be set if all other fields are not set.
-     *
-     * @var string
-     */
-    public $carrierRateName;
-    protected $flatRateType = Price::class;
-    protected $flatRateDataType = '';
-    /**
-     * If true, then the product can't ship. Must be true when set, can only be
-     * set if all other fields are not set.
-     *
-     * @var bool
-     */
-    public $noShipping;
-    /**
-     * A percentage of the price represented as a number in decimal notation (for
-     * example, `"5.4"`). Can only be set if all other fields are not set.
-     *
-     * @var string
-     */
-    public $pricePercentage;
-    /**
-     * The name of a subtable. Can only be set in table cells (not for single
-     * values), and only if all other fields are not set.
-     *
-     * @var string
-     */
-    public $subtableName;
-    /**
-     * The name of a carrier rate referring to a carrier rate defined in the same
-     * rate group. Can only be set if all other fields are not set.
-     *
-     * @param string $carrierRateName
-     */
-    public function setCarrierRateName($carrierRateName)
+namespace Google\Service\ShoppingContent {
+    class Value extends \Google\Model
     {
+        /**
+         * The name of a carrier rate referring to a carrier rate defined in the same
+         * rate group. Can only be set if all other fields are not set.
+         *
+         * @var string
+         */
+        public $carrierRateName;
+        protected $flatRateType = Price::class;
+        protected $flatRateDataType = '';
+        /**
+         * If true, then the product can't ship. Must be true when set, can only be
+         * set if all other fields are not set.
+         *
+         * @var bool
+         */
+        public $noShipping;
+        /**
+         * A percentage of the price represented as a number in decimal notation (for
+         * example, `"5.4"`). Can only be set if all other fields are not set.
+         *
+         * @var string
+         */
+        public $pricePercentage;
+        /**
+         * The name of a subtable. Can only be set in table cells (not for single
+         * values), and only if all other fields are not set.
+         *
+         * @var string
+         */
+        public $subtableName;
+        /**
+         * The name of a carrier rate referring to a carrier rate defined in the same
+         * rate group. Can only be set if all other fields are not set.
+         *
+         * @param string $carrierRateName
+         */
+        public function setCarrierRateName($carrierRateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrierRateName()
+        {
+        }
+        /**
+         * A flat rate. Can only be set if all other fields are not set.
+         *
+         * @param Price $flatRate
+         */
+        public function setFlatRate(Price $flatRate)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getFlatRate()
+        {
+        }
+        /**
+         * If true, then the product can't ship. Must be true when set, can only be
+         * set if all other fields are not set.
+         *
+         * @param bool $noShipping
+         */
+        public function setNoShipping($noShipping)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoShipping()
+        {
+        }
+        /**
+         * A percentage of the price represented as a number in decimal notation (for
+         * example, `"5.4"`). Can only be set if all other fields are not set.
+         *
+         * @param string $pricePercentage
+         */
+        public function setPricePercentage($pricePercentage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPricePercentage()
+        {
+        }
+        /**
+         * The name of a subtable. Can only be set in table cells (not for single
+         * values), and only if all other fields are not set.
+         *
+         * @param string $subtableName
+         */
+        public function setSubtableName($subtableName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtableName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrierRateName()
-    {
-    }
-    /**
-     * A flat rate. Can only be set if all other fields are not set.
-     *
-     * @param Price $flatRate
-     */
-    public function setFlatRate(Price $flatRate)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getFlatRate()
-    {
-    }
-    /**
-     * If true, then the product can't ship. Must be true when set, can only be
-     * set if all other fields are not set.
-     *
-     * @param bool $noShipping
-     */
-    public function setNoShipping($noShipping)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoShipping()
-    {
-    }
-    /**
-     * A percentage of the price represented as a number in decimal notation (for
-     * example, `"5.4"`). Can only be set if all other fields are not set.
-     *
-     * @param string $pricePercentage
-     */
-    public function setPricePercentage($pricePercentage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPricePercentage()
-    {
-    }
-    /**
-     * The name of a subtable. Can only be set in table cells (not for single
-     * values), and only if all other fields are not set.
-     *
-     * @param string $subtableName
-     */
-    public function setSubtableName($subtableName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtableName()
+    class Google_Service_ShoppingContent_Value extends \Google\Service\ShoppingContent\Value
     {
     }
 }

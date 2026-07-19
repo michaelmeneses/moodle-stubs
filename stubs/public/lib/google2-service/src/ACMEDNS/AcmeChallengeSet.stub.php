@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ACMEDNS;
-
-class AcmeChallengeSet extends \Google\Collection
-{
-    protected $collection_key = 'record';
-    protected $recordType = AcmeTxtRecord::class;
-    protected $recordDataType = 'array';
-    /**
-     * @param AcmeTxtRecord[]
-     */
-    public function setRecord($record)
+namespace Google\Service\ACMEDNS {
+    class AcmeChallengeSet extends \Google\Collection
     {
+        protected $collection_key = 'record';
+        protected $recordType = AcmeTxtRecord::class;
+        protected $recordDataType = 'array';
+        /**
+         * @param AcmeTxtRecord[]
+         */
+        public function setRecord($record)
+        {
+        }
+        /**
+         * @return AcmeTxtRecord[]
+         */
+        public function getRecord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcmeTxtRecord[]
+     * Runtime class alias of \Google\Service\ACMEDNS\AcmeChallengeSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecord()
+    class Google_Service_ACMEDNS_AcmeChallengeSet extends \Google\Service\ACMEDNS\AcmeChallengeSet
     {
     }
 }

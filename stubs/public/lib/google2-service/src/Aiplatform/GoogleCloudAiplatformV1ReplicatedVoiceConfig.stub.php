@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReplicatedVoiceConfig extends \Google\Model
-{
-    /**
-     * Optional. The mimetype of the voice sample. The only currently supported
-     * value is `audio/wav`. This represents 16-bit signed little-endian wav data,
-     * with a 24kHz sampling rate. `mime_type` will default to `audio/wav` if not
-     * set.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Optional. The sample of the custom voice.
-     *
-     * @var string
-     */
-    public $voiceSampleAudio;
-    /**
-     * Optional. The mimetype of the voice sample. The only currently supported
-     * value is `audio/wav`. This represents 16-bit signed little-endian wav data,
-     * with a 24kHz sampling rate. `mime_type` will default to `audio/wav` if not
-     * set.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReplicatedVoiceConfig extends \Google\Model
     {
+        /**
+         * Optional. The mimetype of the voice sample. The only currently supported
+         * value is `audio/wav`. This represents 16-bit signed little-endian wav data,
+         * with a 24kHz sampling rate. `mime_type` will default to `audio/wav` if not
+         * set.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Optional. The sample of the custom voice.
+         *
+         * @var string
+         */
+        public $voiceSampleAudio;
+        /**
+         * Optional. The mimetype of the voice sample. The only currently supported
+         * value is `audio/wav`. This represents 16-bit signed little-endian wav data,
+         * with a 24kHz sampling rate. `mime_type` will default to `audio/wav` if not
+         * set.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Optional. The sample of the custom voice.
+         *
+         * @param string $voiceSampleAudio
+         */
+        public function setVoiceSampleAudio($voiceSampleAudio)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVoiceSampleAudio()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReplicatedVoiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Optional. The sample of the custom voice.
-     *
-     * @param string $voiceSampleAudio
-     */
-    public function setVoiceSampleAudio($voiceSampleAudio)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVoiceSampleAudio()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReplicatedVoiceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReplicatedVoiceConfig
     {
     }
 }

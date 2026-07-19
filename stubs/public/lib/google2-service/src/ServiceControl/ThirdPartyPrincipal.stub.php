@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ThirdPartyPrincipal extends \Google\Model
-{
-    /**
-     * Metadata about third party identity.
-     *
-     * @var array[]
-     */
-    public $thirdPartyClaims;
-    /**
-     * Metadata about third party identity.
-     *
-     * @param array[] $thirdPartyClaims
-     */
-    public function setThirdPartyClaims($thirdPartyClaims)
+namespace Google\Service\ServiceControl {
+    class ThirdPartyPrincipal extends \Google\Model
     {
+        /**
+         * Metadata about third party identity.
+         *
+         * @var array[]
+         */
+        public $thirdPartyClaims;
+        /**
+         * Metadata about third party identity.
+         *
+         * @param array[] $thirdPartyClaims
+         */
+        public function setThirdPartyClaims($thirdPartyClaims)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getThirdPartyClaims()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\ServiceControl\ThirdPartyPrincipal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThirdPartyClaims()
+    class Google_Service_ServiceControl_ThirdPartyPrincipal extends \Google\Service\ServiceControl\ThirdPartyPrincipal
     {
     }
 }

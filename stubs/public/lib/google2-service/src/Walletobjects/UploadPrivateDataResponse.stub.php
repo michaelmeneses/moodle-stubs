@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class UploadPrivateDataResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $privateContentId;
-    /**
-     * @param string
-     */
-    public function setPrivateContentId($privateContentId)
+namespace Google\Service\Walletobjects {
+    class UploadPrivateDataResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $privateContentId;
+        /**
+         * @param string
+         */
+        public function setPrivateContentId($privateContentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateContentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\UploadPrivateDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateContentId()
+    class Google_Service_Walletobjects_UploadPrivateDataResponse extends \Google\Service\Walletobjects\UploadPrivateDataResponse
     {
     }
 }

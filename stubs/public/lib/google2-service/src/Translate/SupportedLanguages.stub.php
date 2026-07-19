@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class SupportedLanguages extends \Google\Collection
-{
-    protected $collection_key = 'languages';
-    protected $languagesType = SupportedLanguage::class;
-    protected $languagesDataType = 'array';
-    /**
-     * A list of supported language responses. This list contains an entry for
-     * each language the Translation API supports.
-     *
-     * @param SupportedLanguage[] $languages
-     */
-    public function setLanguages($languages)
+namespace Google\Service\Translate {
+    class SupportedLanguages extends \Google\Collection
     {
+        protected $collection_key = 'languages';
+        protected $languagesType = SupportedLanguage::class;
+        protected $languagesDataType = 'array';
+        /**
+         * A list of supported language responses. This list contains an entry for
+         * each language the Translation API supports.
+         *
+         * @param SupportedLanguage[] $languages
+         */
+        public function setLanguages($languages)
+        {
+        }
+        /**
+         * @return SupportedLanguage[]
+         */
+        public function getLanguages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SupportedLanguage[]
+     * Runtime class alias of \Google\Service\Translate\SupportedLanguages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguages()
+    class Google_Service_Translate_SupportedLanguages extends \Google\Service\Translate\SupportedLanguages
     {
     }
 }

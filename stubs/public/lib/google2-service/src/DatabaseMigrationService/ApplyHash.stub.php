@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ApplyHash extends \Google\Model
-{
-    protected $uuidFromBytesType = DatamigrationEmpty::class;
-    protected $uuidFromBytesDataType = '';
-    /**
-     * Optional. Generate UUID from the data's byte array
-     *
-     * @param DatamigrationEmpty $uuidFromBytes
-     */
-    public function setUuidFromBytes(DatamigrationEmpty $uuidFromBytes)
+namespace Google\Service\DatabaseMigrationService {
+    class ApplyHash extends \Google\Model
     {
+        protected $uuidFromBytesType = DatamigrationEmpty::class;
+        protected $uuidFromBytesDataType = '';
+        /**
+         * Optional. Generate UUID from the data's byte array
+         *
+         * @param DatamigrationEmpty $uuidFromBytes
+         */
+        public function setUuidFromBytes(DatamigrationEmpty $uuidFromBytes)
+        {
+        }
+        /**
+         * @return DatamigrationEmpty
+         */
+        public function getUuidFromBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatamigrationEmpty
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ApplyHash registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUuidFromBytes()
+    class Google_Service_DatabaseMigrationService_ApplyHash extends \Google\Service\DatabaseMigrationService\ApplyHash
     {
     }
 }

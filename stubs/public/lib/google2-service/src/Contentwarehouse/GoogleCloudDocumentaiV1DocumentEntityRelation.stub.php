@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentEntityRelation extends \Google\Model
-{
-    /**
-     * Object entity id.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * Relationship description.
-     *
-     * @var string
-     */
-    public $relation;
-    /**
-     * Subject entity id.
-     *
-     * @var string
-     */
-    public $subjectId;
-    /**
-     * Object entity id.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentEntityRelation extends \Google\Model
     {
+        /**
+         * Object entity id.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * Relationship description.
+         *
+         * @var string
+         */
+        public $relation;
+        /**
+         * Subject entity id.
+         *
+         * @var string
+         */
+        public $subjectId;
+        /**
+         * Object entity id.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * Relationship description.
+         *
+         * @param string $relation
+         */
+        public function setRelation($relation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelation()
+        {
+        }
+        /**
+         * Subject entity id.
+         *
+         * @param string $subjectId
+         */
+        public function setSubjectId($subjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentEntityRelation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
-    {
-    }
-    /**
-     * Relationship description.
-     *
-     * @param string $relation
-     */
-    public function setRelation($relation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelation()
-    {
-    }
-    /**
-     * Subject entity id.
-     *
-     * @param string $subjectId
-     */
-    public function setSubjectId($subjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectId()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentEntityRelation extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentEntityRelation
     {
     }
 }

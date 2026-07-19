@@ -16,6 +16,8 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\LogRecord;
+use Throwable;
 /**
  * Forwards records to multiple handlers suppressing failures of each handler
  * and continuing through to give every handler a chance to succeed.

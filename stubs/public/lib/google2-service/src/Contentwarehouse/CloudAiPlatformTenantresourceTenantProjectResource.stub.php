@@ -21,174 +21,183 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceTenantProjectResource extends \Google\Collection
-{
-    protected $collection_key = 'tenantServiceAccounts';
-    protected $cloudSqlInstancesType = CloudAiPlatformTenantresourceCloudSqlInstanceConfig::class;
-    protected $cloudSqlInstancesDataType = 'array';
-    protected $gcsBucketsType = CloudAiPlatformTenantresourceGcsBucketConfig::class;
-    protected $gcsBucketsDataType = 'array';
-    protected $iamPolicyBindingsType = CloudAiPlatformTenantresourceIamPolicyBinding::class;
-    protected $iamPolicyBindingsDataType = 'array';
-    protected $infraSpannerConfigsType = CloudAiPlatformTenantresourceInfraSpannerConfig::class;
-    protected $infraSpannerConfigsDataType = 'array';
-    /**
-     * Input/Output [Required]. The tag that uniquely identifies a tenant project
-     * within a tenancy unit. Note: for the same tenant project tag, all tenant
-     * manager operations should be idempotent.
-     *
-     * @var string
-     */
-    public $tag;
-    protected $tenantProjectConfigType = CloudAiPlatformTenantresourceTenantProjectConfig::class;
-    protected $tenantProjectConfigDataType = '';
-    /**
-     * Output only. The tenant project ID that has been created.
-     *
-     * @var string
-     */
-    public $tenantProjectId;
-    /**
-     * Output only. The tenant project number that has been created.
-     *
-     * @var string
-     */
-    public $tenantProjectNumber;
-    protected $tenantServiceAccountsType = CloudAiPlatformTenantresourceTenantServiceAccountIdentity::class;
-    protected $tenantServiceAccountsDataType = 'array';
-    /**
-     * The CloudSQL instances that are provisioned under the tenant project.
-     *
-     * @param CloudAiPlatformTenantresourceCloudSqlInstanceConfig[] $cloudSqlInstances
-     */
-    public function setCloudSqlInstances($cloudSqlInstances)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceTenantProjectResource extends \Google\Collection
     {
+        protected $collection_key = 'tenantServiceAccounts';
+        protected $cloudSqlInstancesType = CloudAiPlatformTenantresourceCloudSqlInstanceConfig::class;
+        protected $cloudSqlInstancesDataType = 'array';
+        protected $gcsBucketsType = CloudAiPlatformTenantresourceGcsBucketConfig::class;
+        protected $gcsBucketsDataType = 'array';
+        protected $iamPolicyBindingsType = CloudAiPlatformTenantresourceIamPolicyBinding::class;
+        protected $iamPolicyBindingsDataType = 'array';
+        protected $infraSpannerConfigsType = CloudAiPlatformTenantresourceInfraSpannerConfig::class;
+        protected $infraSpannerConfigsDataType = 'array';
+        /**
+         * Input/Output [Required]. The tag that uniquely identifies a tenant project
+         * within a tenancy unit. Note: for the same tenant project tag, all tenant
+         * manager operations should be idempotent.
+         *
+         * @var string
+         */
+        public $tag;
+        protected $tenantProjectConfigType = CloudAiPlatformTenantresourceTenantProjectConfig::class;
+        protected $tenantProjectConfigDataType = '';
+        /**
+         * Output only. The tenant project ID that has been created.
+         *
+         * @var string
+         */
+        public $tenantProjectId;
+        /**
+         * Output only. The tenant project number that has been created.
+         *
+         * @var string
+         */
+        public $tenantProjectNumber;
+        protected $tenantServiceAccountsType = CloudAiPlatformTenantresourceTenantServiceAccountIdentity::class;
+        protected $tenantServiceAccountsDataType = 'array';
+        /**
+         * The CloudSQL instances that are provisioned under the tenant project.
+         *
+         * @param CloudAiPlatformTenantresourceCloudSqlInstanceConfig[] $cloudSqlInstances
+         */
+        public function setCloudSqlInstances($cloudSqlInstances)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceCloudSqlInstanceConfig[]
+         */
+        public function getCloudSqlInstances()
+        {
+        }
+        /**
+         * The GCS buckets that are provisioned under the tenant project.
+         *
+         * @param CloudAiPlatformTenantresourceGcsBucketConfig[] $gcsBuckets
+         */
+        public function setGcsBuckets($gcsBuckets)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceGcsBucketConfig[]
+         */
+        public function getGcsBuckets()
+        {
+        }
+        /**
+         * The dynamic IAM bindings that are granted under the tenant project. Note:
+         * this should only add new bindings to the project if they don't exist and
+         * the existing bindings won't be affected.
+         *
+         * @param CloudAiPlatformTenantresourceIamPolicyBinding[] $iamPolicyBindings
+         */
+        public function setIamPolicyBindings($iamPolicyBindings)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceIamPolicyBinding[]
+         */
+        public function getIamPolicyBindings()
+        {
+        }
+        /**
+         * The Infra Spanner databases that are provisioned under the tenant project.
+         * Note: this is an experimental feature.
+         *
+         * @param CloudAiPlatformTenantresourceInfraSpannerConfig[] $infraSpannerConfigs
+         */
+        public function setInfraSpannerConfigs($infraSpannerConfigs)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceInfraSpannerConfig[]
+         */
+        public function getInfraSpannerConfigs()
+        {
+        }
+        /**
+         * Input/Output [Required]. The tag that uniquely identifies a tenant project
+         * within a tenancy unit. Note: for the same tenant project tag, all tenant
+         * manager operations should be idempotent.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * The configurations of a tenant project.
+         *
+         * @param CloudAiPlatformTenantresourceTenantProjectConfig $tenantProjectConfig
+         */
+        public function setTenantProjectConfig(CloudAiPlatformTenantresourceTenantProjectConfig $tenantProjectConfig)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceTenantProjectConfig
+         */
+        public function getTenantProjectConfig()
+        {
+        }
+        /**
+         * Output only. The tenant project ID that has been created.
+         *
+         * @param string $tenantProjectId
+         */
+        public function setTenantProjectId($tenantProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantProjectId()
+        {
+        }
+        /**
+         * Output only. The tenant project number that has been created.
+         *
+         * @param string $tenantProjectNumber
+         */
+        public function setTenantProjectNumber($tenantProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantProjectNumber()
+        {
+        }
+        /**
+         * The service account identities (or enabled API service's P4SA) that are
+         * expclicitly created under the tenant project (before JIT provisioning
+         * during enabled API services).
+         *
+         * @param CloudAiPlatformTenantresourceTenantServiceAccountIdentity[] $tenantServiceAccounts
+         */
+        public function setTenantServiceAccounts($tenantServiceAccounts)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceTenantServiceAccountIdentity[]
+         */
+        public function getTenantServiceAccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiPlatformTenantresourceCloudSqlInstanceConfig[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantProjectResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlInstances()
-    {
-    }
-    /**
-     * The GCS buckets that are provisioned under the tenant project.
-     *
-     * @param CloudAiPlatformTenantresourceGcsBucketConfig[] $gcsBuckets
-     */
-    public function setGcsBuckets($gcsBuckets)
-    {
-    }
-    /**
-     * @return CloudAiPlatformTenantresourceGcsBucketConfig[]
-     */
-    public function getGcsBuckets()
-    {
-    }
-    /**
-     * The dynamic IAM bindings that are granted under the tenant project. Note:
-     * this should only add new bindings to the project if they don't exist and
-     * the existing bindings won't be affected.
-     *
-     * @param CloudAiPlatformTenantresourceIamPolicyBinding[] $iamPolicyBindings
-     */
-    public function setIamPolicyBindings($iamPolicyBindings)
-    {
-    }
-    /**
-     * @return CloudAiPlatformTenantresourceIamPolicyBinding[]
-     */
-    public function getIamPolicyBindings()
-    {
-    }
-    /**
-     * The Infra Spanner databases that are provisioned under the tenant project.
-     * Note: this is an experimental feature.
-     *
-     * @param CloudAiPlatformTenantresourceInfraSpannerConfig[] $infraSpannerConfigs
-     */
-    public function setInfraSpannerConfigs($infraSpannerConfigs)
-    {
-    }
-    /**
-     * @return CloudAiPlatformTenantresourceInfraSpannerConfig[]
-     */
-    public function getInfraSpannerConfigs()
-    {
-    }
-    /**
-     * Input/Output [Required]. The tag that uniquely identifies a tenant project
-     * within a tenancy unit. Note: for the same tenant project tag, all tenant
-     * manager operations should be idempotent.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * The configurations of a tenant project.
-     *
-     * @param CloudAiPlatformTenantresourceTenantProjectConfig $tenantProjectConfig
-     */
-    public function setTenantProjectConfig(CloudAiPlatformTenantresourceTenantProjectConfig $tenantProjectConfig)
-    {
-    }
-    /**
-     * @return CloudAiPlatformTenantresourceTenantProjectConfig
-     */
-    public function getTenantProjectConfig()
-    {
-    }
-    /**
-     * Output only. The tenant project ID that has been created.
-     *
-     * @param string $tenantProjectId
-     */
-    public function setTenantProjectId($tenantProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantProjectId()
-    {
-    }
-    /**
-     * Output only. The tenant project number that has been created.
-     *
-     * @param string $tenantProjectNumber
-     */
-    public function setTenantProjectNumber($tenantProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantProjectNumber()
-    {
-    }
-    /**
-     * The service account identities (or enabled API service's P4SA) that are
-     * expclicitly created under the tenant project (before JIT provisioning
-     * during enabled API services).
-     *
-     * @param CloudAiPlatformTenantresourceTenantServiceAccountIdentity[] $tenantServiceAccounts
-     */
-    public function setTenantServiceAccounts($tenantServiceAccounts)
-    {
-    }
-    /**
-     * @return CloudAiPlatformTenantresourceTenantServiceAccountIdentity[]
-     */
-    public function getTenantServiceAccounts()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceTenantProjectResource extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantProjectResource
     {
     }
 }

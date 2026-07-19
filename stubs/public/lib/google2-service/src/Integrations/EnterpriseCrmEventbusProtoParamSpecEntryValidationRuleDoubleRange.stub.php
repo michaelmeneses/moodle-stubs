@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange extends \Google\Model
-{
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange extends \Google\Model
+    {
+        /**
+         * The inclusive maximum of the acceptable range.
+         *
+         * @var 
+         */
+        public $max;
+        /**
+         * The inclusive minimum of the acceptable range.
+         *
+         * @var 
+         */
+        public $min;
+        public function setMax($max)
+        {
+        }
+        public function getMax()
+        {
+        }
+        public function setMin($min)
+        {
+        }
+        public function getMin()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The inclusive maximum of the acceptable range.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $max;
-    /**
-     * The inclusive minimum of the acceptable range.
-     *
-     * @var 
-     */
-    public $min;
-    public function setMax($max)
-    {
-    }
-    public function getMax()
-    {
-    }
-    public function setMin($min)
-    {
-    }
-    public function getMin()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange
     {
     }
 }

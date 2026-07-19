@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ClusterAutoscalingConfig extends \Google\Model
-{
-    protected $autoscalingLimitsType = AutoscalingLimits::class;
-    protected $autoscalingLimitsDataType = '';
-    protected $autoscalingTargetsType = AutoscalingTargets::class;
-    protected $autoscalingTargetsDataType = '';
-    /**
-     * Required. Autoscaling limits for this cluster.
-     *
-     * @param AutoscalingLimits $autoscalingLimits
-     */
-    public function setAutoscalingLimits(AutoscalingLimits $autoscalingLimits)
+namespace Google\Service\BigtableAdmin {
+    class ClusterAutoscalingConfig extends \Google\Model
     {
+        protected $autoscalingLimitsType = AutoscalingLimits::class;
+        protected $autoscalingLimitsDataType = '';
+        protected $autoscalingTargetsType = AutoscalingTargets::class;
+        protected $autoscalingTargetsDataType = '';
+        /**
+         * Required. Autoscaling limits for this cluster.
+         *
+         * @param AutoscalingLimits $autoscalingLimits
+         */
+        public function setAutoscalingLimits(AutoscalingLimits $autoscalingLimits)
+        {
+        }
+        /**
+         * @return AutoscalingLimits
+         */
+        public function getAutoscalingLimits()
+        {
+        }
+        /**
+         * Required. Autoscaling targets for this cluster.
+         *
+         * @param AutoscalingTargets $autoscalingTargets
+         */
+        public function setAutoscalingTargets(AutoscalingTargets $autoscalingTargets)
+        {
+        }
+        /**
+         * @return AutoscalingTargets
+         */
+        public function getAutoscalingTargets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoscalingLimits
+     * Runtime class alias of \Google\Service\BigtableAdmin\ClusterAutoscalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalingLimits()
-    {
-    }
-    /**
-     * Required. Autoscaling targets for this cluster.
-     *
-     * @param AutoscalingTargets $autoscalingTargets
-     */
-    public function setAutoscalingTargets(AutoscalingTargets $autoscalingTargets)
-    {
-    }
-    /**
-     * @return AutoscalingTargets
-     */
-    public function getAutoscalingTargets()
+    class Google_Service_BigtableAdmin_ClusterAutoscalingConfig extends \Google\Service\BigtableAdmin\ClusterAutoscalingConfig
     {
     }
 }

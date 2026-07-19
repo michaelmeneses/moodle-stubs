@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerGroundingSupport extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * Required. End of the claim, exclusive.
-     *
-     * @var string
-     */
-    public $endIndex;
-    /**
-     * Indicates that this claim required grounding check. When the system decided
-     * this claim didn't require attribution/grounding check, this field is set to
-     * false. In that case, no grounding check was done for the claim and
-     * therefore `grounding_score`, `sources` is not returned.
-     *
-     * @var bool
-     */
-    public $groundingCheckRequired;
-    /**
-     * A score in the range of [0, 1] describing how grounded is a specific claim
-     * by the references. Higher value means that the claim is better supported by
-     * the reference chunks.
-     *
-     * @var 
-     */
-    public $groundingScore;
-    protected $sourcesType = GoogleCloudDiscoveryengineV1alphaAnswerCitationSource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Required. Index indicates the start of the claim, measured in bytes (UTF-8
-     * unicode).
-     *
-     * @var string
-     */
-    public $startIndex;
-    /**
-     * Required. End of the claim, exclusive.
-     *
-     * @param string $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerGroundingSupport extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * Required. End of the claim, exclusive.
+         *
+         * @var string
+         */
+        public $endIndex;
+        /**
+         * Indicates that this claim required grounding check. When the system decided
+         * this claim didn't require attribution/grounding check, this field is set to
+         * false. In that case, no grounding check was done for the claim and
+         * therefore `grounding_score`, `sources` is not returned.
+         *
+         * @var bool
+         */
+        public $groundingCheckRequired;
+        /**
+         * A score in the range of [0, 1] describing how grounded is a specific claim
+         * by the references. Higher value means that the claim is better supported by
+         * the reference chunks.
+         *
+         * @var 
+         */
+        public $groundingScore;
+        protected $sourcesType = GoogleCloudDiscoveryengineV1alphaAnswerCitationSource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Required. Index indicates the start of the claim, measured in bytes (UTF-8
+         * unicode).
+         *
+         * @var string
+         */
+        public $startIndex;
+        /**
+         * Required. End of the claim, exclusive.
+         *
+         * @param string $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Indicates that this claim required grounding check. When the system decided
+         * this claim didn't require attribution/grounding check, this field is set to
+         * false. In that case, no grounding check was done for the claim and
+         * therefore `grounding_score`, `sources` is not returned.
+         *
+         * @param bool $groundingCheckRequired
+         */
+        public function setGroundingCheckRequired($groundingCheckRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGroundingCheckRequired()
+        {
+        }
+        public function setGroundingScore($groundingScore)
+        {
+        }
+        public function getGroundingScore()
+        {
+        }
+        /**
+         * Optional. Citation sources for the claim.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerCitationSource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerCitationSource[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * Required. Index indicates the start of the claim, measured in bytes (UTF-8
+         * unicode).
+         *
+         * @param string $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerGroundingSupport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Indicates that this claim required grounding check. When the system decided
-     * this claim didn't require attribution/grounding check, this field is set to
-     * false. In that case, no grounding check was done for the claim and
-     * therefore `grounding_score`, `sources` is not returned.
-     *
-     * @param bool $groundingCheckRequired
-     */
-    public function setGroundingCheckRequired($groundingCheckRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGroundingCheckRequired()
-    {
-    }
-    public function setGroundingScore($groundingScore)
-    {
-    }
-    public function getGroundingScore()
-    {
-    }
-    /**
-     * Optional. Citation sources for the claim.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerCitationSource[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerCitationSource[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * Required. Index indicates the start of the claim, measured in bytes (UTF-8
-     * unicode).
-     *
-     * @param string $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartIndex()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerGroundingSupport extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerGroundingSupport
     {
     }
 }

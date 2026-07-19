@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1WebDetectionWebEntity extends \Google\Model
-{
-    /**
-     * Canonical description of the entity, in English.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Opaque entity ID.
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * Overall relevancy score for the entity. Not normalized and not comparable
-     * across different image queries.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Canonical description of the entity, in English.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1WebDetectionWebEntity extends \Google\Model
     {
+        /**
+         * Canonical description of the entity, in English.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Opaque entity ID.
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * Overall relevancy score for the entity. Not normalized and not comparable
+         * across different image queries.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Canonical description of the entity, in English.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Opaque entity ID.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Overall relevancy score for the entity. Not normalized and not comparable
+         * across different image queries.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1WebDetectionWebEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Opaque entity ID.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Overall relevancy score for the entity. Not normalized and not comparable
-     * across different image queries.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1WebDetectionWebEntity extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1WebDetectionWebEntity
     {
     }
 }

@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class IntegrationConfigUpdatedMetadata extends \Google\Collection
-{
-    protected $collection_key = 'mutations';
-    protected $initiatorIdType = UserId::class;
-    protected $initiatorIdDataType = '';
-    protected $mutationsType = IntegrationConfigMutation::class;
-    protected $mutationsDataType = 'array';
-    /**
-     * @param UserId
-     */
-    public function setInitiatorId(UserId $initiatorId)
+namespace Google\Service\CloudSearch {
+    class IntegrationConfigUpdatedMetadata extends \Google\Collection
     {
+        protected $collection_key = 'mutations';
+        protected $initiatorIdType = UserId::class;
+        protected $initiatorIdDataType = '';
+        protected $mutationsType = IntegrationConfigMutation::class;
+        protected $mutationsDataType = 'array';
+        /**
+         * @param UserId
+         */
+        public function setInitiatorId(UserId $initiatorId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getInitiatorId()
+        {
+        }
+        /**
+         * @param IntegrationConfigMutation[]
+         */
+        public function setMutations($mutations)
+        {
+        }
+        /**
+         * @return IntegrationConfigMutation[]
+         */
+        public function getMutations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserId
+     * Runtime class alias of \Google\Service\CloudSearch\IntegrationConfigUpdatedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitiatorId()
-    {
-    }
-    /**
-     * @param IntegrationConfigMutation[]
-     */
-    public function setMutations($mutations)
-    {
-    }
-    /**
-     * @return IntegrationConfigMutation[]
-     */
-    public function getMutations()
+    class Google_Service_CloudSearch_IntegrationConfigUpdatedMetadata extends \Google\Service\CloudSearch\IntegrationConfigUpdatedMetadata
     {
     }
 }

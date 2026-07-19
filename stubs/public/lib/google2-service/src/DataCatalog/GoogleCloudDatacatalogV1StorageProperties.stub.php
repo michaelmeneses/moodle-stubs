@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1StorageProperties extends \Google\Collection
-{
-    protected $collection_key = 'filePattern';
-    /**
-     * Patterns to identify a set of files for this fileset. Examples of a valid
-     * `file_pattern`: * `gs://bucket_name/dir`: matches all files in the
-     * `bucket_name/dir` directory * `gs://bucket_name/dir*`: matches all files in
-     * the `bucket_name/dir` and all subdirectories recursively *
-     * `gs://bucket_name/file*`: matches files prefixed by `file` in `bucket_name`
-     * * `gs://bucket_name/??.txt`: matches files with two characters followed by
-     * `.txt` in `bucket_name` * `gs://bucket_name/[aeiou].txt`: matches files
-     * that contain a single vowel character followed by `.txt` in `bucket_name` *
-     * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
-     * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
-     * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
-     * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
-     *
-     * @var string[]
-     */
-    public $filePattern;
-    /**
-     * File type in MIME format, for example, `text/plain`.
-     *
-     * @var string
-     */
-    public $fileType;
-    /**
-     * Patterns to identify a set of files for this fileset. Examples of a valid
-     * `file_pattern`: * `gs://bucket_name/dir`: matches all files in the
-     * `bucket_name/dir` directory * `gs://bucket_name/dir*`: matches all files in
-     * the `bucket_name/dir` and all subdirectories recursively *
-     * `gs://bucket_name/file*`: matches files prefixed by `file` in `bucket_name`
-     * * `gs://bucket_name/??.txt`: matches files with two characters followed by
-     * `.txt` in `bucket_name` * `gs://bucket_name/[aeiou].txt`: matches files
-     * that contain a single vowel character followed by `.txt` in `bucket_name` *
-     * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
-     * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
-     * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
-     * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
-     *
-     * @param string[] $filePattern
-     */
-    public function setFilePattern($filePattern)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1StorageProperties extends \Google\Collection
     {
+        protected $collection_key = 'filePattern';
+        /**
+         * Patterns to identify a set of files for this fileset. Examples of a valid
+         * `file_pattern`: * `gs://bucket_name/dir`: matches all files in the
+         * `bucket_name/dir` directory * `gs://bucket_name/dir*`: matches all files in
+         * the `bucket_name/dir` and all subdirectories recursively *
+         * `gs://bucket_name/file*`: matches files prefixed by `file` in `bucket_name`
+         * * `gs://bucket_name/??.txt`: matches files with two characters followed by
+         * `.txt` in `bucket_name` * `gs://bucket_name/[aeiou].txt`: matches files
+         * that contain a single vowel character followed by `.txt` in `bucket_name` *
+         * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
+         * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
+         * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
+         * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
+         *
+         * @var string[]
+         */
+        public $filePattern;
+        /**
+         * File type in MIME format, for example, `text/plain`.
+         *
+         * @var string
+         */
+        public $fileType;
+        /**
+         * Patterns to identify a set of files for this fileset. Examples of a valid
+         * `file_pattern`: * `gs://bucket_name/dir`: matches all files in the
+         * `bucket_name/dir` directory * `gs://bucket_name/dir*`: matches all files in
+         * the `bucket_name/dir` and all subdirectories recursively *
+         * `gs://bucket_name/file*`: matches files prefixed by `file` in `bucket_name`
+         * * `gs://bucket_name/??.txt`: matches files with two characters followed by
+         * `.txt` in `bucket_name` * `gs://bucket_name/[aeiou].txt`: matches files
+         * that contain a single vowel character followed by `.txt` in `bucket_name` *
+         * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
+         * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
+         * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
+         * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
+         *
+         * @param string[] $filePattern
+         */
+        public function setFilePattern($filePattern)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFilePattern()
+        {
+        }
+        /**
+         * File type in MIME format, for example, `text/plain`.
+         *
+         * @param string $fileType
+         */
+        public function setFileType($fileType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1StorageProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePattern()
-    {
-    }
-    /**
-     * File type in MIME format, for example, `text/plain`.
-     *
-     * @param string $fileType
-     */
-    public function setFileType($fileType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1StorageProperties extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1StorageProperties
     {
     }
 }

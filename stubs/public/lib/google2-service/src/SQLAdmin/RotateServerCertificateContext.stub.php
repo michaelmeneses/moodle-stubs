@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class RotateServerCertificateContext extends \Google\Model
-{
-    /**
-     * Optional. This is always `sql#rotateServerCertificateContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The fingerprint of the next version to be rotated to. If left unspecified,
-     * will be rotated to the most recently added server certificate version.
-     *
-     * @var string
-     */
-    public $nextVersion;
-    /**
-     * Optional. This is always `sql#rotateServerCertificateContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class RotateServerCertificateContext extends \Google\Model
     {
+        /**
+         * Optional. This is always `sql#rotateServerCertificateContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The fingerprint of the next version to be rotated to. If left unspecified,
+         * will be rotated to the most recently added server certificate version.
+         *
+         * @var string
+         */
+        public $nextVersion;
+        /**
+         * Optional. This is always `sql#rotateServerCertificateContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The fingerprint of the next version to be rotated to. If left unspecified,
+         * will be rotated to the most recently added server certificate version.
+         *
+         * @param string $nextVersion
+         */
+        public function setNextVersion($nextVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\RotateServerCertificateContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The fingerprint of the next version to be rotated to. If left unspecified,
-     * will be rotated to the most recently added server certificate version.
-     *
-     * @param string $nextVersion
-     */
-    public function setNextVersion($nextVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextVersion()
+    class Google_Service_SQLAdmin_RotateServerCertificateContext extends \Google\Service\SQLAdmin\RotateServerCertificateContext
     {
     }
 }

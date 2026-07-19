@@ -21,95 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "webhooks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $webhooks = $dialogflowService->projects_locations_agents_webhooks;
- *  </code>
- */
-class ProjectsLocationsAgentsWebhooks extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListWebhooksResponse;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Webhook;
+    use Google\Service\Dialogflow\GoogleProtobufEmpty;
     /**
-     * Creates a webhook in the specified agent. (webhooks.create)
-     *
-     * @param string $parent Required. The agent to create a webhook for. Format:
-     * `projects//locations//agents/`.
-     * @param GoogleCloudDialogflowCxV3Webhook $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Webhook
-     * @throws \Google\Service\Exception
+     * The "webhooks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $webhooks = $dialogflowService->projects_locations_agents_webhooks;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDialogflowCxV3Webhook $postBody, $optParams = [])
+    class ProjectsLocationsAgentsWebhooks extends \Google\Service\Resource
     {
+        /**
+         * Creates a webhook in the specified agent. (webhooks.create)
+         *
+         * @param string $parent Required. The agent to create a webhook for. Format:
+         * `projects//locations//agents/`.
+         * @param GoogleCloudDialogflowCxV3Webhook $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Webhook
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDialogflowCxV3Webhook $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified webhook. (webhooks.delete)
+         *
+         * @param string $name Required. The name of the webhook to delete. Format:
+         * `projects//locations//agents//webhooks/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool force This field has no effect for webhook not being used.
+         * For webhooks that are used by pages/flows/transition route groups: * If
+         * `force` is set to false, an error will be returned with message indicating
+         * the referenced resources. * If `force` is set to true, Dialogflow will remove
+         * the webhook, as well as any references to the webhook (i.e. Webhook and tagin
+         * fulfillments that point to this webhook will be removed).
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the specified webhook. (webhooks.get)
+         *
+         * @param string $name Required. The name of the webhook. Format:
+         * `projects//locations//agents//webhooks/`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Webhook
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of all webhooks in the specified agent.
+         * (webhooks.listProjectsLocationsAgentsWebhooks)
+         *
+         * @param string $parent Required. The agent to list all webhooks for. Format:
+         * `projects//locations//agents/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 100 and at most 1000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListWebhooksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsWebhooks($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified webhook. (webhooks.patch)
+         *
+         * @param string $name The unique identifier of the webhook. Required for the
+         * Webhooks.UpdateWebhook method. Webhooks.CreateWebhook populates the name
+         * automatically. Format: `projects//locations//agents//webhooks/`.
+         * @param GoogleCloudDialogflowCxV3Webhook $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The mask to control which fields get updated. If
+         * the mask is not present, all fields will be updated.
+         * @return GoogleCloudDialogflowCxV3Webhook
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDialogflowCxV3Webhook $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified webhook. (webhooks.delete)
-     *
-     * @param string $name Required. The name of the webhook to delete. Format:
-     * `projects//locations//agents//webhooks/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool force This field has no effect for webhook not being used.
-     * For webhooks that are used by pages/flows/transition route groups: * If
-     * `force` is set to false, an error will be returned with message indicating
-     * the referenced resources. * If `force` is set to true, Dialogflow will remove
-     * the webhook, as well as any references to the webhook (i.e. Webhook and tagin
-     * fulfillments that point to this webhook will be removed).
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsWebhooks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the specified webhook. (webhooks.get)
-     *
-     * @param string $name Required. The name of the webhook. Format:
-     * `projects//locations//agents//webhooks/`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Webhook
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of all webhooks in the specified agent.
-     * (webhooks.listProjectsLocationsAgentsWebhooks)
-     *
-     * @param string $parent Required. The agent to list all webhooks for. Format:
-     * `projects//locations//agents/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 100 and at most 1000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListWebhooksResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsAgentsWebhooks($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified webhook. (webhooks.patch)
-     *
-     * @param string $name The unique identifier of the webhook. Required for the
-     * Webhooks.UpdateWebhook method. Webhooks.CreateWebhook populates the name
-     * automatically. Format: `projects//locations//agents//webhooks/`.
-     * @param GoogleCloudDialogflowCxV3Webhook $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The mask to control which fields get updated. If
-     * the mask is not present, all fields will be updated.
-     * @return GoogleCloudDialogflowCxV3Webhook
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudDialogflowCxV3Webhook $postBody, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsWebhooks extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsWebhooks
     {
     }
 }

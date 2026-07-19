@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InternalAppSharingArtifact extends \Google\Model
-{
-    /**
-     * The sha256 fingerprint of the certificate used to sign the generated
-     * artifact.
-     *
-     * @var string
-     */
-    public $certificateFingerprint;
-    /**
-     * The download URL generated for the uploaded artifact. Users that are
-     * authorized to download can follow the link to the Play Store app to install
-     * it.
-     *
-     * @var string
-     */
-    public $downloadUrl;
-    /**
-     * The sha256 hash of the artifact represented as a lowercase hexadecimal
-     * number, matching the output of the sha256sum command.
-     *
-     * @var string
-     */
-    public $sha256;
-    /**
-     * The sha256 fingerprint of the certificate used to sign the generated
-     * artifact.
-     *
-     * @param string $certificateFingerprint
-     */
-    public function setCertificateFingerprint($certificateFingerprint)
+namespace Google\Service\AndroidPublisher {
+    class InternalAppSharingArtifact extends \Google\Model
     {
+        /**
+         * The sha256 fingerprint of the certificate used to sign the generated
+         * artifact.
+         *
+         * @var string
+         */
+        public $certificateFingerprint;
+        /**
+         * The download URL generated for the uploaded artifact. Users that are
+         * authorized to download can follow the link to the Play Store app to install
+         * it.
+         *
+         * @var string
+         */
+        public $downloadUrl;
+        /**
+         * The sha256 hash of the artifact represented as a lowercase hexadecimal
+         * number, matching the output of the sha256sum command.
+         *
+         * @var string
+         */
+        public $sha256;
+        /**
+         * The sha256 fingerprint of the certificate used to sign the generated
+         * artifact.
+         *
+         * @param string $certificateFingerprint
+         */
+        public function setCertificateFingerprint($certificateFingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateFingerprint()
+        {
+        }
+        /**
+         * The download URL generated for the uploaded artifact. Users that are
+         * authorized to download can follow the link to the Play Store app to install
+         * it.
+         *
+         * @param string $downloadUrl
+         */
+        public function setDownloadUrl($downloadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUrl()
+        {
+        }
+        /**
+         * The sha256 hash of the artifact represented as a lowercase hexadecimal
+         * number, matching the output of the sha256sum command.
+         *
+         * @param string $sha256
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\InternalAppSharingArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateFingerprint()
-    {
-    }
-    /**
-     * The download URL generated for the uploaded artifact. Users that are
-     * authorized to download can follow the link to the Play Store app to install
-     * it.
-     *
-     * @param string $downloadUrl
-     */
-    public function setDownloadUrl($downloadUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadUrl()
-    {
-    }
-    /**
-     * The sha256 hash of the artifact represented as a lowercase hexadecimal
-     * number, matching the output of the sha256sum command.
-     *
-     * @param string $sha256
-     */
-    public function setSha256($sha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256()
+    class Google_Service_AndroidPublisher_InternalAppSharingArtifact extends \Google\Service\AndroidPublisher\InternalAppSharingArtifact
     {
     }
 }

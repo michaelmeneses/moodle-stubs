@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainDeleteQaQuestionTagRequest extends \Google\Model
-{
-    /**
-     * Required. The name of the QaQuestionTag to delete.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The name of the QaQuestionTag to delete.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainDeleteQaQuestionTagRequest extends \Google\Model
     {
+        /**
+         * Required. The name of the QaQuestionTag to delete.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The name of the QaQuestionTag to delete.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDeleteQaQuestionTagRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainDeleteQaQuestionTagRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDeleteQaQuestionTagRequest
     {
     }
 }

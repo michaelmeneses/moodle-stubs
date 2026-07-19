@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BulkZoneSetLabelsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = BulkSetLabelsRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param BulkSetLabelsRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Compute {
+    class BulkZoneSetLabelsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = BulkSetLabelsRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param BulkSetLabelsRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return BulkSetLabelsRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BulkSetLabelsRequest[]
+     * Runtime class alias of \Google\Service\Compute\BulkZoneSetLabelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Compute_BulkZoneSetLabelsRequest extends \Google\Service\Compute\BulkZoneSetLabelsRequest
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends \Google\Model
-{
-    /**
-     * Corresponds to `ClaimReview.itemReviewed.author.image`.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * Corresponds to `ClaimReview.itemReviewed.author.jobTitle`.
-     *
-     * @var string
-     */
-    public $jobTitle;
-    /**
-     * A person or organization stating the claim. For instance, "John Doe".
-     * Corresponds to `ClaimReview.itemReviewed.author.name`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Corresponds to `ClaimReview.itemReviewed.author.sameAs`.
-     *
-     * @var string
-     */
-    public $sameAs;
-    /**
-     * Corresponds to `ClaimReview.itemReviewed.author.image`.
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends \Google\Model
     {
+        /**
+         * Corresponds to `ClaimReview.itemReviewed.author.image`.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * Corresponds to `ClaimReview.itemReviewed.author.jobTitle`.
+         *
+         * @var string
+         */
+        public $jobTitle;
+        /**
+         * A person or organization stating the claim. For instance, "John Doe".
+         * Corresponds to `ClaimReview.itemReviewed.author.name`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Corresponds to `ClaimReview.itemReviewed.author.sameAs`.
+         *
+         * @var string
+         */
+        public $sameAs;
+        /**
+         * Corresponds to `ClaimReview.itemReviewed.author.image`.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * Corresponds to `ClaimReview.itemReviewed.author.jobTitle`.
+         *
+         * @param string $jobTitle
+         */
+        public function setJobTitle($jobTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobTitle()
+        {
+        }
+        /**
+         * A person or organization stating the claim. For instance, "John Doe".
+         * Corresponds to `ClaimReview.itemReviewed.author.name`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Corresponds to `ClaimReview.itemReviewed.author.sameAs`.
+         *
+         * @param string $sameAs
+         */
+        public function setSameAs($sameAs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSameAs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * Corresponds to `ClaimReview.itemReviewed.author.jobTitle`.
-     *
-     * @param string $jobTitle
-     */
-    public function setJobTitle($jobTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobTitle()
-    {
-    }
-    /**
-     * A person or organization stating the claim. For instance, "John Doe".
-     * Corresponds to `ClaimReview.itemReviewed.author.name`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Corresponds to `ClaimReview.itemReviewed.author.sameAs`.
-     *
-     * @param string $sameAs
-     */
-    public function setSameAs($sameAs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSameAs()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor
     {
     }
 }

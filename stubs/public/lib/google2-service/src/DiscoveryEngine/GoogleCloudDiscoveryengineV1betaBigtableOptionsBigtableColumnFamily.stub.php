@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    protected $columnsType = GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn::class;
-    protected $columnsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $encoding;
-    /**
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn[]
-     */
-    public function setColumns($columns)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        protected $columnsType = GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn::class;
+        protected $columnsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $encoding;
+        /**
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn[]
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncoding()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily
     {
     }
 }

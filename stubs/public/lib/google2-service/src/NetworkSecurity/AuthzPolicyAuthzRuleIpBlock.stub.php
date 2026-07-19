@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleIpBlock extends \Google\Model
-{
-    /**
-     * Required. The length of the address range.
-     *
-     * @var int
-     */
-    public $length;
-    /**
-     * Required. The address prefix.
-     *
-     * @var string
-     */
-    public $prefix;
-    /**
-     * Required. The length of the address range.
-     *
-     * @param int $length
-     */
-    public function setLength($length)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleIpBlock extends \Google\Model
     {
+        /**
+         * Required. The length of the address range.
+         *
+         * @var int
+         */
+        public $length;
+        /**
+         * Required. The address prefix.
+         *
+         * @var string
+         */
+        public $prefix;
+        /**
+         * Required. The length of the address range.
+         *
+         * @param int $length
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * Required. The address prefix.
+         *
+         * @param string $prefix
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleIpBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLength()
-    {
-    }
-    /**
-     * Required. The address prefix.
-     *
-     * @param string $prefix
-     */
-    public function setPrefix($prefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefix()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleIpBlock extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleIpBlock
     {
     }
 }

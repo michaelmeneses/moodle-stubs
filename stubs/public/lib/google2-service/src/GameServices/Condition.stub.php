@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class Condition extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var string
-     */
-    public $iam;
-    /**
-     * @var string
-     */
-    public $op;
-    /**
-     * @var string
-     */
-    public $svc;
-    /**
-     * @var string
-     */
-    public $sys;
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param string
-     */
-    public function setIam($iam)
+namespace Google\Service\GameServices {
+    class Condition extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var string
+         */
+        public $iam;
+        /**
+         * @var string
+         */
+        public $op;
+        /**
+         * @var string
+         */
+        public $svc;
+        /**
+         * @var string
+         */
+        public $sys;
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param string
+         */
+        public function setIam($iam)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIam()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOp($op)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSvc($svc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSvc()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSys($sys)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSys()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\Condition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIam()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOp($op)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSvc($svc)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSvc()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSys($sys)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSys()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_GameServices_Condition extends \Google\Service\GameServices\Condition
     {
     }
 }

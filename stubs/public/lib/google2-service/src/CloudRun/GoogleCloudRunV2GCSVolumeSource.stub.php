@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2GCSVolumeSource extends \Google\Collection
-{
-    protected $collection_key = 'mountOptions';
-    /**
-     * Cloud Storage Bucket name.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * A list of additional flags to pass to the gcsfuse CLI. Options should be
-     * specified without the leading "--".
-     *
-     * @var string[]
-     */
-    public $mountOptions;
-    /**
-     * If true, the volume will be mounted as read only for all mounts.
-     *
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * Cloud Storage Bucket name.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2GCSVolumeSource extends \Google\Collection
     {
+        protected $collection_key = 'mountOptions';
+        /**
+         * Cloud Storage Bucket name.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * A list of additional flags to pass to the gcsfuse CLI. Options should be
+         * specified without the leading "--".
+         *
+         * @var string[]
+         */
+        public $mountOptions;
+        /**
+         * If true, the volume will be mounted as read only for all mounts.
+         *
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * Cloud Storage Bucket name.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * A list of additional flags to pass to the gcsfuse CLI. Options should be
+         * specified without the leading "--".
+         *
+         * @param string[] $mountOptions
+         */
+        public function setMountOptions($mountOptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMountOptions()
+        {
+        }
+        /**
+         * If true, the volume will be mounted as read only for all mounts.
+         *
+         * @param bool $readOnly
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2GCSVolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * A list of additional flags to pass to the gcsfuse CLI. Options should be
-     * specified without the leading "--".
-     *
-     * @param string[] $mountOptions
-     */
-    public function setMountOptions($mountOptions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMountOptions()
-    {
-    }
-    /**
-     * If true, the volume will be mounted as read only for all mounts.
-     *
-     * @param bool $readOnly
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
+    class Google_Service_CloudRun_GoogleCloudRunV2GCSVolumeSource extends \Google\Service\CloudRun\GoogleCloudRunV2GCSVolumeSource
     {
     }
 }

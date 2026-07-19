@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Color extends \Google\Model
-{
-    /**
-     * The amount of blue in the color as a value in the interval [0, 1].
-     *
-     * @var float
-     */
-    public $blue;
-    /**
-     * The amount of green in the color as a value in the interval [0, 1].
-     *
-     * @var float
-     */
-    public $green;
-    /**
-     * The amount of red in the color as a value in the interval [0, 1].
-     *
-     * @var float
-     */
-    public $red;
-    /**
-     * The amount of blue in the color as a value in the interval [0, 1].
-     *
-     * @param float $blue
-     */
-    public function setBlue($blue)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Color extends \Google\Model
     {
+        /**
+         * The amount of blue in the color as a value in the interval [0, 1].
+         *
+         * @var float
+         */
+        public $blue;
+        /**
+         * The amount of green in the color as a value in the interval [0, 1].
+         *
+         * @var float
+         */
+        public $green;
+        /**
+         * The amount of red in the color as a value in the interval [0, 1].
+         *
+         * @var float
+         */
+        public $red;
+        /**
+         * The amount of blue in the color as a value in the interval [0, 1].
+         *
+         * @param float $blue
+         */
+        public function setBlue($blue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBlue()
+        {
+        }
+        /**
+         * The amount of green in the color as a value in the interval [0, 1].
+         *
+         * @param float $green
+         */
+        public function setGreen($green)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getGreen()
+        {
+        }
+        /**
+         * The amount of red in the color as a value in the interval [0, 1].
+         *
+         * @param float $red
+         */
+        public function setRed($red)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Color registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlue()
-    {
-    }
-    /**
-     * The amount of green in the color as a value in the interval [0, 1].
-     *
-     * @param float $green
-     */
-    public function setGreen($green)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getGreen()
-    {
-    }
-    /**
-     * The amount of red in the color as a value in the interval [0, 1].
-     *
-     * @param float $red
-     */
-    public function setRed($red)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRed()
+    class Google_Service_DLP_GooglePrivacyDlpV2Color extends \Google\Service\DLP\GooglePrivacyDlpV2Color
     {
     }
 }

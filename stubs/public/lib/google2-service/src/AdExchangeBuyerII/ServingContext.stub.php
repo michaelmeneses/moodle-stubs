@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ServingContext extends \Google\Model
-{
-    /**
-     * A simple context.
-     */
-    public const ALL_SIMPLE_CONTEXT = 'SIMPLE_CONTEXT';
-    /**
-     * Matches all contexts.
-     *
-     * @var string
-     */
-    public $all;
-    protected $appTypeType = AppContext::class;
-    protected $appTypeDataType = '';
-    protected $auctionTypeType = AuctionContext::class;
-    protected $auctionTypeDataType = '';
-    protected $locationType = LocationContext::class;
-    protected $locationDataType = '';
-    protected $platformType = PlatformContext::class;
-    protected $platformDataType = '';
-    protected $securityTypeType = SecurityContext::class;
-    protected $securityTypeDataType = '';
-    /**
-     * Matches all contexts.
-     *
-     * Accepted values: SIMPLE_CONTEXT
-     *
-     * @param self::ALL_* $all
-     */
-    public function setAll($all)
+namespace Google\Service\AdExchangeBuyerII {
+    class ServingContext extends \Google\Model
     {
+        /**
+         * A simple context.
+         */
+        public const ALL_SIMPLE_CONTEXT = 'SIMPLE_CONTEXT';
+        /**
+         * Matches all contexts.
+         *
+         * @var string
+         */
+        public $all;
+        protected $appTypeType = AppContext::class;
+        protected $appTypeDataType = '';
+        protected $auctionTypeType = AuctionContext::class;
+        protected $auctionTypeDataType = '';
+        protected $locationType = LocationContext::class;
+        protected $locationDataType = '';
+        protected $platformType = PlatformContext::class;
+        protected $platformDataType = '';
+        protected $securityTypeType = SecurityContext::class;
+        protected $securityTypeDataType = '';
+        /**
+         * Matches all contexts.
+         *
+         * Accepted values: SIMPLE_CONTEXT
+         *
+         * @param self::ALL_* $all
+         */
+        public function setAll($all)
+        {
+        }
+        /**
+         * @return self::ALL_*
+         */
+        public function getAll()
+        {
+        }
+        /**
+         * Matches impressions for a particular app type.
+         *
+         * @param AppContext $appType
+         */
+        public function setAppType(AppContext $appType)
+        {
+        }
+        /**
+         * @return AppContext
+         */
+        public function getAppType()
+        {
+        }
+        /**
+         * Matches impressions for a particular auction type.
+         *
+         * @param AuctionContext $auctionType
+         */
+        public function setAuctionType(AuctionContext $auctionType)
+        {
+        }
+        /**
+         * @return AuctionContext
+         */
+        public function getAuctionType()
+        {
+        }
+        /**
+         * Matches impressions coming from users *or* publishers in a specific
+         * location.
+         *
+         * @param LocationContext $location
+         */
+        public function setLocation(LocationContext $location)
+        {
+        }
+        /**
+         * @return LocationContext
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Matches impressions coming from a particular platform.
+         *
+         * @param PlatformContext $platform
+         */
+        public function setPlatform(PlatformContext $platform)
+        {
+        }
+        /**
+         * @return PlatformContext
+         */
+        public function getPlatform()
+        {
+        }
+        /**
+         * Matches impressions for a particular security type.
+         *
+         * @deprecated
+         * @param SecurityContext $securityType
+         */
+        public function setSecurityType(SecurityContext $securityType)
+        {
+        }
+        /**
+         * @deprecated
+         * @return SecurityContext
+         */
+        public function getSecurityType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALL_*
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ServingContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAll()
-    {
-    }
-    /**
-     * Matches impressions for a particular app type.
-     *
-     * @param AppContext $appType
-     */
-    public function setAppType(AppContext $appType)
-    {
-    }
-    /**
-     * @return AppContext
-     */
-    public function getAppType()
-    {
-    }
-    /**
-     * Matches impressions for a particular auction type.
-     *
-     * @param AuctionContext $auctionType
-     */
-    public function setAuctionType(AuctionContext $auctionType)
-    {
-    }
-    /**
-     * @return AuctionContext
-     */
-    public function getAuctionType()
-    {
-    }
-    /**
-     * Matches impressions coming from users *or* publishers in a specific
-     * location.
-     *
-     * @param LocationContext $location
-     */
-    public function setLocation(LocationContext $location)
-    {
-    }
-    /**
-     * @return LocationContext
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Matches impressions coming from a particular platform.
-     *
-     * @param PlatformContext $platform
-     */
-    public function setPlatform(PlatformContext $platform)
-    {
-    }
-    /**
-     * @return PlatformContext
-     */
-    public function getPlatform()
-    {
-    }
-    /**
-     * Matches impressions for a particular security type.
-     *
-     * @deprecated
-     * @param SecurityContext $securityType
-     */
-    public function setSecurityType(SecurityContext $securityType)
-    {
-    }
-    /**
-     * @deprecated
-     * @return SecurityContext
-     */
-    public function getSecurityType()
+    class Google_Service_AdExchangeBuyerII_ServingContext extends \Google\Service\AdExchangeBuyerII\ServingContext
     {
     }
 }

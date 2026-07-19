@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\task;
 
+use core\task\scheduled_task;
+use mod_quiz\quiz_settings;
+use question_engine;
 /**
  * Pre-create attempts for quizzes that have passed their threshold.
  *

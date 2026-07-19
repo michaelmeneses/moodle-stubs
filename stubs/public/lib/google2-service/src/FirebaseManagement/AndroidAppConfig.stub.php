@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class AndroidAppConfig extends \Google\Model
-{
-    /**
-     * The contents of the JSON configuration file.
-     *
-     * @var string
-     */
-    public $configFileContents;
-    /**
-     * The filename that the configuration artifact for the `AndroidApp` is
-     * typically saved as. For example: `google-services.json`
-     *
-     * @var string
-     */
-    public $configFilename;
-    /**
-     * The contents of the JSON configuration file.
-     *
-     * @param string $configFileContents
-     */
-    public function setConfigFileContents($configFileContents)
+namespace Google\Service\FirebaseManagement {
+    class AndroidAppConfig extends \Google\Model
     {
+        /**
+         * The contents of the JSON configuration file.
+         *
+         * @var string
+         */
+        public $configFileContents;
+        /**
+         * The filename that the configuration artifact for the `AndroidApp` is
+         * typically saved as. For example: `google-services.json`
+         *
+         * @var string
+         */
+        public $configFilename;
+        /**
+         * The contents of the JSON configuration file.
+         *
+         * @param string $configFileContents
+         */
+        public function setConfigFileContents($configFileContents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigFileContents()
+        {
+        }
+        /**
+         * The filename that the configuration artifact for the `AndroidApp` is
+         * typically saved as. For example: `google-services.json`
+         *
+         * @param string $configFilename
+         */
+        public function setConfigFilename($configFilename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\AndroidAppConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigFileContents()
-    {
-    }
-    /**
-     * The filename that the configuration artifact for the `AndroidApp` is
-     * typically saved as. For example: `google-services.json`
-     *
-     * @param string $configFilename
-     */
-    public function setConfigFilename($configFilename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfigFilename()
+    class Google_Service_FirebaseManagement_AndroidAppConfig extends \Google\Service\FirebaseManagement\AndroidAppConfig
     {
     }
 }

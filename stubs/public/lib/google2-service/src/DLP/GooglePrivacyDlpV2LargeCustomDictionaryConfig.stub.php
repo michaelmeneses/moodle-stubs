@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2LargeCustomDictionaryConfig extends \Google\Model
-{
-    protected $bigQueryFieldType = GooglePrivacyDlpV2BigQueryField::class;
-    protected $bigQueryFieldDataType = '';
-    protected $cloudStorageFileSetType = GooglePrivacyDlpV2CloudStorageFileSet::class;
-    protected $cloudStorageFileSetDataType = '';
-    protected $outputPathType = GooglePrivacyDlpV2CloudStoragePath::class;
-    protected $outputPathDataType = '';
-    /**
-     * Field in a BigQuery table where each cell represents a dictionary phrase.
-     *
-     * @param GooglePrivacyDlpV2BigQueryField $bigQueryField
-     */
-    public function setBigQueryField(GooglePrivacyDlpV2BigQueryField $bigQueryField)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2LargeCustomDictionaryConfig extends \Google\Model
     {
+        protected $bigQueryFieldType = GooglePrivacyDlpV2BigQueryField::class;
+        protected $bigQueryFieldDataType = '';
+        protected $cloudStorageFileSetType = GooglePrivacyDlpV2CloudStorageFileSet::class;
+        protected $cloudStorageFileSetDataType = '';
+        protected $outputPathType = GooglePrivacyDlpV2CloudStoragePath::class;
+        protected $outputPathDataType = '';
+        /**
+         * Field in a BigQuery table where each cell represents a dictionary phrase.
+         *
+         * @param GooglePrivacyDlpV2BigQueryField $bigQueryField
+         */
+        public function setBigQueryField(GooglePrivacyDlpV2BigQueryField $bigQueryField)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryField
+         */
+        public function getBigQueryField()
+        {
+        }
+        /**
+         * Set of files containing newline-delimited lists of dictionary phrases.
+         *
+         * @param GooglePrivacyDlpV2CloudStorageFileSet $cloudStorageFileSet
+         */
+        public function setCloudStorageFileSet(GooglePrivacyDlpV2CloudStorageFileSet $cloudStorageFileSet)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStorageFileSet
+         */
+        public function getCloudStorageFileSet()
+        {
+        }
+        /**
+         * Location to store dictionary artifacts in Cloud Storage. These files will
+         * only be accessible by project owners and the DLP API. If any of these
+         * artifacts are modified, the dictionary is considered invalid and can no
+         * longer be used.
+         *
+         * @param GooglePrivacyDlpV2CloudStoragePath $outputPath
+         */
+        public function setOutputPath(GooglePrivacyDlpV2CloudStoragePath $outputPath)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStoragePath
+         */
+        public function getOutputPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryField
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2LargeCustomDictionaryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryField()
-    {
-    }
-    /**
-     * Set of files containing newline-delimited lists of dictionary phrases.
-     *
-     * @param GooglePrivacyDlpV2CloudStorageFileSet $cloudStorageFileSet
-     */
-    public function setCloudStorageFileSet(GooglePrivacyDlpV2CloudStorageFileSet $cloudStorageFileSet)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CloudStorageFileSet
-     */
-    public function getCloudStorageFileSet()
-    {
-    }
-    /**
-     * Location to store dictionary artifacts in Cloud Storage. These files will
-     * only be accessible by project owners and the DLP API. If any of these
-     * artifacts are modified, the dictionary is considered invalid and can no
-     * longer be used.
-     *
-     * @param GooglePrivacyDlpV2CloudStoragePath $outputPath
-     */
-    public function setOutputPath(GooglePrivacyDlpV2CloudStoragePath $outputPath)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CloudStoragePath
-     */
-    public function getOutputPath()
+    class Google_Service_DLP_GooglePrivacyDlpV2LargeCustomDictionaryConfig extends \Google\Service\DLP\GooglePrivacyDlpV2LargeCustomDictionaryConfig
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class DynamicMuteRecord extends \Google\Model
-{
-    /**
-     * When the dynamic mute rule first matched the finding.
-     *
-     * @var string
-     */
-    public $matchTime;
-    /**
-     * The relative resource name of the mute rule, represented by a mute config,
-     * that created this record, for example
-     * `organizations/123/muteConfigs/mymuteconfig` or
-     * `organizations/123/locations/global/muteConfigs/mymuteconfig`.
-     *
-     * @var string
-     */
-    public $muteConfig;
-    /**
-     * When the dynamic mute rule first matched the finding.
-     *
-     * @param string $matchTime
-     */
-    public function setMatchTime($matchTime)
+namespace Google\Service\SecurityCommandCenter {
+    class DynamicMuteRecord extends \Google\Model
     {
+        /**
+         * When the dynamic mute rule first matched the finding.
+         *
+         * @var string
+         */
+        public $matchTime;
+        /**
+         * The relative resource name of the mute rule, represented by a mute config,
+         * that created this record, for example
+         * `organizations/123/muteConfigs/mymuteconfig` or
+         * `organizations/123/locations/global/muteConfigs/mymuteconfig`.
+         *
+         * @var string
+         */
+        public $muteConfig;
+        /**
+         * When the dynamic mute rule first matched the finding.
+         *
+         * @param string $matchTime
+         */
+        public function setMatchTime($matchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchTime()
+        {
+        }
+        /**
+         * The relative resource name of the mute rule, represented by a mute config,
+         * that created this record, for example
+         * `organizations/123/muteConfigs/mymuteconfig` or
+         * `organizations/123/locations/global/muteConfigs/mymuteconfig`.
+         *
+         * @param string $muteConfig
+         */
+        public function setMuteConfig($muteConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMuteConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\DynamicMuteRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchTime()
-    {
-    }
-    /**
-     * The relative resource name of the mute rule, represented by a mute config,
-     * that created this record, for example
-     * `organizations/123/muteConfigs/mymuteconfig` or
-     * `organizations/123/locations/global/muteConfigs/mymuteconfig`.
-     *
-     * @param string $muteConfig
-     */
-    public function setMuteConfig($muteConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMuteConfig()
+    class Google_Service_SecurityCommandCenter_DynamicMuteRecord extends \Google\Service\SecurityCommandCenter\DynamicMuteRecord
     {
     }
 }

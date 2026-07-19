@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HealthCheckServiceReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $healthCheckService;
-    /**
-     * @param string $healthCheckService
-     */
-    public function setHealthCheckService($healthCheckService)
+namespace Google\Service\Compute {
+    class HealthCheckServiceReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $healthCheckService;
+        /**
+         * @param string $healthCheckService
+         */
+        public function setHealthCheckService($healthCheckService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthCheckService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\HealthCheckServiceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthCheckService()
+    class Google_Service_Compute_HealthCheckServiceReference extends \Google\Service\Compute\HealthCheckServiceReference
     {
     }
 }

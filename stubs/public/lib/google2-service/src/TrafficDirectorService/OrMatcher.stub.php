@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class OrMatcher extends \Google\Collection
-{
-    protected $collection_key = 'valueMatchers';
-    protected $valueMatchersType = ValueMatcher::class;
-    protected $valueMatchersDataType = 'array';
-    /**
-     * @param ValueMatcher[] $valueMatchers
-     */
-    public function setValueMatchers($valueMatchers)
+namespace Google\Service\TrafficDirectorService {
+    class OrMatcher extends \Google\Collection
     {
+        protected $collection_key = 'valueMatchers';
+        protected $valueMatchersType = ValueMatcher::class;
+        protected $valueMatchersDataType = 'array';
+        /**
+         * @param ValueMatcher[] $valueMatchers
+         */
+        public function setValueMatchers($valueMatchers)
+        {
+        }
+        /**
+         * @return ValueMatcher[]
+         */
+        public function getValueMatchers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ValueMatcher[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\OrMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValueMatchers()
+    class Google_Service_TrafficDirectorService_OrMatcher extends \Google\Service\TrafficDirectorService\OrMatcher
     {
     }
 }

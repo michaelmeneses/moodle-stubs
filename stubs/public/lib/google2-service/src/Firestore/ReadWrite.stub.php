@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ReadWrite extends \Google\Model
-{
-    /**
-     * An optional transaction to retry.
-     *
-     * @var string
-     */
-    public $retryTransaction;
-    /**
-     * An optional transaction to retry.
-     *
-     * @param string $retryTransaction
-     */
-    public function setRetryTransaction($retryTransaction)
+namespace Google\Service\Firestore {
+    class ReadWrite extends \Google\Model
     {
+        /**
+         * An optional transaction to retry.
+         *
+         * @var string
+         */
+        public $retryTransaction;
+        /**
+         * An optional transaction to retry.
+         *
+         * @param string $retryTransaction
+         */
+        public function setRetryTransaction($retryTransaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetryTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\ReadWrite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetryTransaction()
+    class Google_Service_Firestore_ReadWrite extends \Google\Service\Firestore\ReadWrite
     {
     }
 }

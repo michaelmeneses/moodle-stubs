@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class RetrieveDeveloperGamesLastPlayerTokenResponse extends \Google\Model
-{
-    protected $gamePlayerTokenType = GamePlayerToken::class;
-    protected $gamePlayerTokenDataType = '';
-    /**
-     * The recall token associated with the requested PGS Player principal. It can
-     * be unset if there is no recall token associated with the requested
-     * principal.
-     *
-     * @param GamePlayerToken $gamePlayerToken
-     */
-    public function setGamePlayerToken(GamePlayerToken $gamePlayerToken)
+namespace Google\Service\Games {
+    class RetrieveDeveloperGamesLastPlayerTokenResponse extends \Google\Model
     {
+        protected $gamePlayerTokenType = GamePlayerToken::class;
+        protected $gamePlayerTokenDataType = '';
+        /**
+         * The recall token associated with the requested PGS Player principal. It can
+         * be unset if there is no recall token associated with the requested
+         * principal.
+         *
+         * @param GamePlayerToken $gamePlayerToken
+         */
+        public function setGamePlayerToken(GamePlayerToken $gamePlayerToken)
+        {
+        }
+        /**
+         * @return GamePlayerToken
+         */
+        public function getGamePlayerToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GamePlayerToken
+     * Runtime class alias of \Google\Service\Games\RetrieveDeveloperGamesLastPlayerTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGamePlayerToken()
+    class Google_Service_Games_RetrieveDeveloperGamesLastPlayerTokenResponse extends \Google\Service\Games\RetrieveDeveloperGamesLastPlayerTokenResponse
     {
     }
 }

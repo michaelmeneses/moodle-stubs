@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlacePaymentOptions extends \Google\Model
-{
-    /**
-     * Place accepts cash only as payment. Places with this attribute may still
-     * accept other payment methods.
-     *
-     * @var bool
-     */
-    public $acceptsCashOnly;
-    /**
-     * Place accepts credit cards as payment.
-     *
-     * @var bool
-     */
-    public $acceptsCreditCards;
-    /**
-     * Place accepts debit cards as payment.
-     *
-     * @var bool
-     */
-    public $acceptsDebitCards;
-    /**
-     * Place accepts NFC payments.
-     *
-     * @var bool
-     */
-    public $acceptsNfc;
-    /**
-     * Place accepts cash only as payment. Places with this attribute may still
-     * accept other payment methods.
-     *
-     * @param bool $acceptsCashOnly
-     */
-    public function setAcceptsCashOnly($acceptsCashOnly)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlacePaymentOptions extends \Google\Model
     {
+        /**
+         * Place accepts cash only as payment. Places with this attribute may still
+         * accept other payment methods.
+         *
+         * @var bool
+         */
+        public $acceptsCashOnly;
+        /**
+         * Place accepts credit cards as payment.
+         *
+         * @var bool
+         */
+        public $acceptsCreditCards;
+        /**
+         * Place accepts debit cards as payment.
+         *
+         * @var bool
+         */
+        public $acceptsDebitCards;
+        /**
+         * Place accepts NFC payments.
+         *
+         * @var bool
+         */
+        public $acceptsNfc;
+        /**
+         * Place accepts cash only as payment. Places with this attribute may still
+         * accept other payment methods.
+         *
+         * @param bool $acceptsCashOnly
+         */
+        public function setAcceptsCashOnly($acceptsCashOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcceptsCashOnly()
+        {
+        }
+        /**
+         * Place accepts credit cards as payment.
+         *
+         * @param bool $acceptsCreditCards
+         */
+        public function setAcceptsCreditCards($acceptsCreditCards)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcceptsCreditCards()
+        {
+        }
+        /**
+         * Place accepts debit cards as payment.
+         *
+         * @param bool $acceptsDebitCards
+         */
+        public function setAcceptsDebitCards($acceptsDebitCards)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcceptsDebitCards()
+        {
+        }
+        /**
+         * Place accepts NFC payments.
+         *
+         * @param bool $acceptsNfc
+         */
+        public function setAcceptsNfc($acceptsNfc)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcceptsNfc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlacePaymentOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptsCashOnly()
-    {
-    }
-    /**
-     * Place accepts credit cards as payment.
-     *
-     * @param bool $acceptsCreditCards
-     */
-    public function setAcceptsCreditCards($acceptsCreditCards)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAcceptsCreditCards()
-    {
-    }
-    /**
-     * Place accepts debit cards as payment.
-     *
-     * @param bool $acceptsDebitCards
-     */
-    public function setAcceptsDebitCards($acceptsDebitCards)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAcceptsDebitCards()
-    {
-    }
-    /**
-     * Place accepts NFC payments.
-     *
-     * @param bool $acceptsNfc
-     */
-    public function setAcceptsNfc($acceptsNfc)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAcceptsNfc()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlacePaymentOptions extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlacePaymentOptions
     {
     }
 }

@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1GraphSpecGraphElementTableGraphNodeReference extends \Google\Collection
-{
-    protected $collection_key = 'nodeTableColumns';
-    /**
-     * Required. The referencing columns in the edge table. The size of
-     * `edge_table_columns` must be equal to the size of `node_table_columns`.
-     *
-     * @var string[]
-     */
-    public $edgeTableColumns;
-    /**
-     * Required. The reference to the source/destination node of the edge. This
-     * name must be a valid `alias` of a node element in the same graph. Example,
-     * `Person` node can be a source node name of an edge element
-     * `Person_to_Address`.
-     *
-     * @var string
-     */
-    public $nodeAlias;
-    /**
-     * Required. The referenced columns of the source node table.
-     *
-     * @var string[]
-     */
-    public $nodeTableColumns;
-    /**
-     * Required. The referencing columns in the edge table. The size of
-     * `edge_table_columns` must be equal to the size of `node_table_columns`.
-     *
-     * @param string[] $edgeTableColumns
-     */
-    public function setEdgeTableColumns($edgeTableColumns)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1GraphSpecGraphElementTableGraphNodeReference extends \Google\Collection
     {
+        protected $collection_key = 'nodeTableColumns';
+        /**
+         * Required. The referencing columns in the edge table. The size of
+         * `edge_table_columns` must be equal to the size of `node_table_columns`.
+         *
+         * @var string[]
+         */
+        public $edgeTableColumns;
+        /**
+         * Required. The reference to the source/destination node of the edge. This
+         * name must be a valid `alias` of a node element in the same graph. Example,
+         * `Person` node can be a source node name of an edge element
+         * `Person_to_Address`.
+         *
+         * @var string
+         */
+        public $nodeAlias;
+        /**
+         * Required. The referenced columns of the source node table.
+         *
+         * @var string[]
+         */
+        public $nodeTableColumns;
+        /**
+         * Required. The referencing columns in the edge table. The size of
+         * `edge_table_columns` must be equal to the size of `node_table_columns`.
+         *
+         * @param string[] $edgeTableColumns
+         */
+        public function setEdgeTableColumns($edgeTableColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEdgeTableColumns()
+        {
+        }
+        /**
+         * Required. The reference to the source/destination node of the edge. This
+         * name must be a valid `alias` of a node element in the same graph. Example,
+         * `Person` node can be a source node name of an edge element
+         * `Person_to_Address`.
+         *
+         * @param string $nodeAlias
+         */
+        public function setNodeAlias($nodeAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeAlias()
+        {
+        }
+        /**
+         * Required. The referenced columns of the source node table.
+         *
+         * @param string[] $nodeTableColumns
+         */
+        public function setNodeTableColumns($nodeTableColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNodeTableColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpecGraphElementTableGraphNodeReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdgeTableColumns()
-    {
-    }
-    /**
-     * Required. The reference to the source/destination node of the edge. This
-     * name must be a valid `alias` of a node element in the same graph. Example,
-     * `Person` node can be a source node name of an edge element
-     * `Person_to_Address`.
-     *
-     * @param string $nodeAlias
-     */
-    public function setNodeAlias($nodeAlias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeAlias()
-    {
-    }
-    /**
-     * Required. The referenced columns of the source node table.
-     *
-     * @param string[] $nodeTableColumns
-     */
-    public function setNodeTableColumns($nodeTableColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNodeTableColumns()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1GraphSpecGraphElementTableGraphNodeReference extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpecGraphElementTableGraphNodeReference
     {
     }
 }

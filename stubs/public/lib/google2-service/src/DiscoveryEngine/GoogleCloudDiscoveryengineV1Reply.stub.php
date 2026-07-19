@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1Reply extends \Google\Model
-{
-    protected $summaryType = GoogleCloudDiscoveryengineV1SearchResponseSummary::class;
-    protected $summaryDataType = '';
-    /**
-     * Summary based on search results.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummary $summary
-     */
-    public function setSummary(GoogleCloudDiscoveryengineV1SearchResponseSummary $summary)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1Reply extends \Google\Model
     {
+        protected $summaryType = GoogleCloudDiscoveryengineV1SearchResponseSummary::class;
+        protected $summaryDataType = '';
+        /**
+         * Summary based on search results.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummary $summary
+         */
+        public function setSummary(GoogleCloudDiscoveryengineV1SearchResponseSummary $summary)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummary
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummary
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Reply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSummary()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1Reply extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Reply
     {
     }
 }

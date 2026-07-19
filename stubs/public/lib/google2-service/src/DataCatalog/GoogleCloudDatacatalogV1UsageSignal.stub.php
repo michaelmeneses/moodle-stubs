@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1UsageSignal extends \Google\Model
-{
-    protected $commonUsageWithinTimeRangeType = GoogleCloudDatacatalogV1CommonUsageStats::class;
-    protected $commonUsageWithinTimeRangeDataType = 'map';
-    /**
-     * Favorite count in the source system.
-     *
-     * @var string
-     */
-    public $favoriteCount;
-    /**
-     * The end timestamp of the duration of usage statistics.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $usageWithinTimeRangeType = GoogleCloudDatacatalogV1UsageStats::class;
-    protected $usageWithinTimeRangeDataType = 'map';
-    /**
-     * Common usage statistics over each of the predefined time ranges. Supported
-     * time ranges are `{"24H", "7D", "30D", "Lifetime"}`.
-     *
-     * @param GoogleCloudDatacatalogV1CommonUsageStats[] $commonUsageWithinTimeRange
-     */
-    public function setCommonUsageWithinTimeRange($commonUsageWithinTimeRange)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1UsageSignal extends \Google\Model
     {
+        protected $commonUsageWithinTimeRangeType = GoogleCloudDatacatalogV1CommonUsageStats::class;
+        protected $commonUsageWithinTimeRangeDataType = 'map';
+        /**
+         * Favorite count in the source system.
+         *
+         * @var string
+         */
+        public $favoriteCount;
+        /**
+         * The end timestamp of the duration of usage statistics.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $usageWithinTimeRangeType = GoogleCloudDatacatalogV1UsageStats::class;
+        protected $usageWithinTimeRangeDataType = 'map';
+        /**
+         * Common usage statistics over each of the predefined time ranges. Supported
+         * time ranges are `{"24H", "7D", "30D", "Lifetime"}`.
+         *
+         * @param GoogleCloudDatacatalogV1CommonUsageStats[] $commonUsageWithinTimeRange
+         */
+        public function setCommonUsageWithinTimeRange($commonUsageWithinTimeRange)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1CommonUsageStats[]
+         */
+        public function getCommonUsageWithinTimeRange()
+        {
+        }
+        /**
+         * Favorite count in the source system.
+         *
+         * @param string $favoriteCount
+         */
+        public function setFavoriteCount($favoriteCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFavoriteCount()
+        {
+        }
+        /**
+         * The end timestamp of the duration of usage statistics.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. BigQuery usage statistics over each of the predefined time
+         * ranges. Supported time ranges are `{"24H", "7D", "30D"}`.
+         *
+         * @param GoogleCloudDatacatalogV1UsageStats[] $usageWithinTimeRange
+         */
+        public function setUsageWithinTimeRange($usageWithinTimeRange)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1UsageStats[]
+         */
+        public function getUsageWithinTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1CommonUsageStats[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1UsageSignal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonUsageWithinTimeRange()
-    {
-    }
-    /**
-     * Favorite count in the source system.
-     *
-     * @param string $favoriteCount
-     */
-    public function setFavoriteCount($favoriteCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFavoriteCount()
-    {
-    }
-    /**
-     * The end timestamp of the duration of usage statistics.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. BigQuery usage statistics over each of the predefined time
-     * ranges. Supported time ranges are `{"24H", "7D", "30D"}`.
-     *
-     * @param GoogleCloudDatacatalogV1UsageStats[] $usageWithinTimeRange
-     */
-    public function setUsageWithinTimeRange($usageWithinTimeRange)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1UsageStats[]
-     */
-    public function getUsageWithinTimeRange()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1UsageSignal extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1UsageSignal
     {
     }
 }

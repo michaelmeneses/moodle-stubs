@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeOptimizationConfiguration extends \Google\Collection
-{
-    public const OPTIMIZATION_MODEL_CLICK = 'CLICK';
-    public const OPTIMIZATION_MODEL_POST_CLICK = 'POST_CLICK';
-    public const OPTIMIZATION_MODEL_POST_IMPRESSION = 'POST_IMPRESSION';
-    public const OPTIMIZATION_MODEL_POST_CLICK_AND_IMPRESSION = 'POST_CLICK_AND_IMPRESSION';
-    public const OPTIMIZATION_MODEL_VIDEO_COMPLETION = 'VIDEO_COMPLETION';
-    protected $collection_key = 'optimizationActivitys';
-    /**
-     * ID of this creative optimization config. This field is auto-generated when
-     * the campaign is inserted or updated. It can be null for existing campaigns.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of this creative optimization config. This is a required field and
-     * must be less than 129 characters long.
-     *
-     * @var string
-     */
-    public $name;
-    protected $optimizationActivitysType = OptimizationActivity::class;
-    protected $optimizationActivitysDataType = 'array';
-    /**
-     * Optimization model for this configuration.
-     *
-     * @var string
-     */
-    public $optimizationModel;
-    /**
-     * ID of this creative optimization config. This field is auto-generated when
-     * the campaign is inserted or updated. It can be null for existing campaigns.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dfareporting {
+    class CreativeOptimizationConfiguration extends \Google\Collection
     {
+        public const OPTIMIZATION_MODEL_CLICK = 'CLICK';
+        public const OPTIMIZATION_MODEL_POST_CLICK = 'POST_CLICK';
+        public const OPTIMIZATION_MODEL_POST_IMPRESSION = 'POST_IMPRESSION';
+        public const OPTIMIZATION_MODEL_POST_CLICK_AND_IMPRESSION = 'POST_CLICK_AND_IMPRESSION';
+        public const OPTIMIZATION_MODEL_VIDEO_COMPLETION = 'VIDEO_COMPLETION';
+        protected $collection_key = 'optimizationActivitys';
+        /**
+         * ID of this creative optimization config. This field is auto-generated when
+         * the campaign is inserted or updated. It can be null for existing campaigns.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of this creative optimization config. This is a required field and
+         * must be less than 129 characters long.
+         *
+         * @var string
+         */
+        public $name;
+        protected $optimizationActivitysType = OptimizationActivity::class;
+        protected $optimizationActivitysDataType = 'array';
+        /**
+         * Optimization model for this configuration.
+         *
+         * @var string
+         */
+        public $optimizationModel;
+        /**
+         * ID of this creative optimization config. This field is auto-generated when
+         * the campaign is inserted or updated. It can be null for existing campaigns.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of this creative optimization config. This is a required field and
+         * must be less than 129 characters long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * List of optimization activities associated with this configuration.
+         *
+         * @param OptimizationActivity[] $optimizationActivitys
+         */
+        public function setOptimizationActivitys($optimizationActivitys)
+        {
+        }
+        /**
+         * @return OptimizationActivity[]
+         */
+        public function getOptimizationActivitys()
+        {
+        }
+        /**
+         * Optimization model for this configuration.
+         *
+         * Accepted values: CLICK, POST_CLICK, POST_IMPRESSION,
+         * POST_CLICK_AND_IMPRESSION, VIDEO_COMPLETION
+         *
+         * @param self::OPTIMIZATION_MODEL_* $optimizationModel
+         */
+        public function setOptimizationModel($optimizationModel)
+        {
+        }
+        /**
+         * @return self::OPTIMIZATION_MODEL_*
+         */
+        public function getOptimizationModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeOptimizationConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Name of this creative optimization config. This is a required field and
-     * must be less than 129 characters long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * List of optimization activities associated with this configuration.
-     *
-     * @param OptimizationActivity[] $optimizationActivitys
-     */
-    public function setOptimizationActivitys($optimizationActivitys)
-    {
-    }
-    /**
-     * @return OptimizationActivity[]
-     */
-    public function getOptimizationActivitys()
-    {
-    }
-    /**
-     * Optimization model for this configuration.
-     *
-     * Accepted values: CLICK, POST_CLICK, POST_IMPRESSION,
-     * POST_CLICK_AND_IMPRESSION, VIDEO_COMPLETION
-     *
-     * @param self::OPTIMIZATION_MODEL_* $optimizationModel
-     */
-    public function setOptimizationModel($optimizationModel)
-    {
-    }
-    /**
-     * @return self::OPTIMIZATION_MODEL_*
-     */
-    public function getOptimizationModel()
+    class Google_Service_Dfareporting_CreativeOptimizationConfiguration extends \Google\Service\Dfareporting\CreativeOptimizationConfiguration
     {
     }
 }

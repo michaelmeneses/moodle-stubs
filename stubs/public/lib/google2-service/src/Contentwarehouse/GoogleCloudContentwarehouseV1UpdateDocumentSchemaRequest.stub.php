@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest extends \Google\Model
-{
-    protected $documentSchemaType = GoogleCloudContentwarehouseV1DocumentSchema::class;
-    protected $documentSchemaDataType = '';
-    /**
-     * Required. The document schema to update with.
-     *
-     * @param GoogleCloudContentwarehouseV1DocumentSchema $documentSchema
-     */
-    public function setDocumentSchema(GoogleCloudContentwarehouseV1DocumentSchema $documentSchema)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest extends \Google\Model
     {
+        protected $documentSchemaType = GoogleCloudContentwarehouseV1DocumentSchema::class;
+        protected $documentSchemaDataType = '';
+        /**
+         * Required. The document schema to update with.
+         *
+         * @param GoogleCloudContentwarehouseV1DocumentSchema $documentSchema
+         */
+        public function setDocumentSchema(GoogleCloudContentwarehouseV1DocumentSchema $documentSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1DocumentSchema
+         */
+        public function getDocumentSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1DocumentSchema
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentSchema()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentSchemaRequest
     {
     }
 }

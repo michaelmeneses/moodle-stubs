@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SharePointSourcesSharePointSource extends \Google\Model
-{
-    /**
-     * The Application ID for the app registered in Microsoft Azure Portal. The
-     * application must also be configured with MS Graph permissions
-     * "Files.ReadAll", "Sites.ReadAll" and BrowserSiteLists.Read.All.
-     *
-     * @var string
-     */
-    public $clientId;
-    protected $clientSecretType = GoogleCloudAiplatformV1ApiAuthApiKeyConfig::class;
-    protected $clientSecretDataType = '';
-    /**
-     * The ID of the drive to download from.
-     *
-     * @var string
-     */
-    public $driveId;
-    /**
-     * The name of the drive to download from.
-     *
-     * @var string
-     */
-    public $driveName;
-    /**
-     * Output only. The SharePoint file id. Output only.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * The ID of the SharePoint folder to download from.
-     *
-     * @var string
-     */
-    public $sharepointFolderId;
-    /**
-     * The path of the SharePoint folder to download from.
-     *
-     * @var string
-     */
-    public $sharepointFolderPath;
-    /**
-     * The name of the SharePoint site to download from. This can be the site name
-     * or the site id.
-     *
-     * @var string
-     */
-    public $sharepointSiteName;
-    /**
-     * Unique identifier of the Azure Active Directory Instance.
-     *
-     * @var string
-     */
-    public $tenantId;
-    /**
-     * The Application ID for the app registered in Microsoft Azure Portal. The
-     * application must also be configured with MS Graph permissions
-     * "Files.ReadAll", "Sites.ReadAll" and BrowserSiteLists.Read.All.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SharePointSourcesSharePointSource extends \Google\Model
     {
+        /**
+         * The Application ID for the app registered in Microsoft Azure Portal. The
+         * application must also be configured with MS Graph permissions
+         * "Files.ReadAll", "Sites.ReadAll" and BrowserSiteLists.Read.All.
+         *
+         * @var string
+         */
+        public $clientId;
+        protected $clientSecretType = GoogleCloudAiplatformV1ApiAuthApiKeyConfig::class;
+        protected $clientSecretDataType = '';
+        /**
+         * The ID of the drive to download from.
+         *
+         * @var string
+         */
+        public $driveId;
+        /**
+         * The name of the drive to download from.
+         *
+         * @var string
+         */
+        public $driveName;
+        /**
+         * Output only. The SharePoint file id. Output only.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * The ID of the SharePoint folder to download from.
+         *
+         * @var string
+         */
+        public $sharepointFolderId;
+        /**
+         * The path of the SharePoint folder to download from.
+         *
+         * @var string
+         */
+        public $sharepointFolderPath;
+        /**
+         * The name of the SharePoint site to download from. This can be the site name
+         * or the site id.
+         *
+         * @var string
+         */
+        public $sharepointSiteName;
+        /**
+         * Unique identifier of the Azure Active Directory Instance.
+         *
+         * @var string
+         */
+        public $tenantId;
+        /**
+         * The Application ID for the app registered in Microsoft Azure Portal. The
+         * application must also be configured with MS Graph permissions
+         * "Files.ReadAll", "Sites.ReadAll" and BrowserSiteLists.Read.All.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * The application secret for the app registered in Azure.
+         *
+         * @param GoogleCloudAiplatformV1ApiAuthApiKeyConfig $clientSecret
+         */
+        public function setClientSecret(GoogleCloudAiplatformV1ApiAuthApiKeyConfig $clientSecret)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ApiAuthApiKeyConfig
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * The ID of the drive to download from.
+         *
+         * @param string $driveId
+         */
+        public function setDriveId($driveId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveId()
+        {
+        }
+        /**
+         * The name of the drive to download from.
+         *
+         * @param string $driveName
+         */
+        public function setDriveName($driveName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveName()
+        {
+        }
+        /**
+         * Output only. The SharePoint file id. Output only.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * The ID of the SharePoint folder to download from.
+         *
+         * @param string $sharepointFolderId
+         */
+        public function setSharepointFolderId($sharepointFolderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSharepointFolderId()
+        {
+        }
+        /**
+         * The path of the SharePoint folder to download from.
+         *
+         * @param string $sharepointFolderPath
+         */
+        public function setSharepointFolderPath($sharepointFolderPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSharepointFolderPath()
+        {
+        }
+        /**
+         * The name of the SharePoint site to download from. This can be the site name
+         * or the site id.
+         *
+         * @param string $sharepointSiteName
+         */
+        public function setSharepointSiteName($sharepointSiteName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSharepointSiteName()
+        {
+        }
+        /**
+         * Unique identifier of the Azure Active Directory Instance.
+         *
+         * @param string $tenantId
+         */
+        public function setTenantId($tenantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SharePointSourcesSharePointSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * The application secret for the app registered in Azure.
-     *
-     * @param GoogleCloudAiplatformV1ApiAuthApiKeyConfig $clientSecret
-     */
-    public function setClientSecret(GoogleCloudAiplatformV1ApiAuthApiKeyConfig $clientSecret)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ApiAuthApiKeyConfig
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * The ID of the drive to download from.
-     *
-     * @param string $driveId
-     */
-    public function setDriveId($driveId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriveId()
-    {
-    }
-    /**
-     * The name of the drive to download from.
-     *
-     * @param string $driveName
-     */
-    public function setDriveName($driveName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriveName()
-    {
-    }
-    /**
-     * Output only. The SharePoint file id. Output only.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileId()
-    {
-    }
-    /**
-     * The ID of the SharePoint folder to download from.
-     *
-     * @param string $sharepointFolderId
-     */
-    public function setSharepointFolderId($sharepointFolderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSharepointFolderId()
-    {
-    }
-    /**
-     * The path of the SharePoint folder to download from.
-     *
-     * @param string $sharepointFolderPath
-     */
-    public function setSharepointFolderPath($sharepointFolderPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSharepointFolderPath()
-    {
-    }
-    /**
-     * The name of the SharePoint site to download from. This can be the site name
-     * or the site id.
-     *
-     * @param string $sharepointSiteName
-     */
-    public function setSharepointSiteName($sharepointSiteName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSharepointSiteName()
-    {
-    }
-    /**
-     * Unique identifier of the Azure Active Directory Instance.
-     *
-     * @param string $tenantId
-     */
-    public function setTenantId($tenantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SharePointSourcesSharePointSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SharePointSourcesSharePointSource
     {
     }
 }

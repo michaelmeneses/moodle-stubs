@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectionsV1ListAppConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $appConnectionsType = GoogleCloudBeyondcorpAppconnectionsV1AppConnection::class;
-    protected $appConnectionsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of BeyondCorp AppConnections in the project.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectionsV1AppConnection[] $appConnections
-     */
-    public function setAppConnections($appConnections)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectionsV1ListAppConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $appConnectionsType = GoogleCloudBeyondcorpAppconnectionsV1AppConnection::class;
+        protected $appConnectionsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of BeyondCorp AppConnections in the project.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectionsV1AppConnection[] $appConnections
+         */
+        public function setAppConnections($appConnections)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectionsV1AppConnection[]
+         */
+        public function getAppConnections()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectionsV1AppConnection[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ListAppConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppConnections()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectionsV1ListAppConnectionsResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ListAppConnectionsResponse
     {
     }
 }

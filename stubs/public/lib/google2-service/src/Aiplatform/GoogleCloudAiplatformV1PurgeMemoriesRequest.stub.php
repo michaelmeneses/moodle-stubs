@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PurgeMemoriesRequest extends \Google\Model
-{
-    /**
-     * Required. The standard list filter to determine which memories to purge.
-     * More detail in [AIP-160](https://google.aip.dev/160).
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. If true, the memories will actually be purged. If false, the
-     * purge request will be validated but not executed.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Required. The standard list filter to determine which memories to purge.
-     * More detail in [AIP-160](https://google.aip.dev/160).
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PurgeMemoriesRequest extends \Google\Model
     {
+        /**
+         * Required. The standard list filter to determine which memories to purge.
+         * More detail in [AIP-160](https://google.aip.dev/160).
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. If true, the memories will actually be purged. If false, the
+         * purge request will be validated but not executed.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Required. The standard list filter to determine which memories to purge.
+         * More detail in [AIP-160](https://google.aip.dev/160).
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. If true, the memories will actually be purged. If false, the
+         * purge request will be validated but not executed.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeMemoriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. If true, the memories will actually be purged. If false, the
-     * purge request will be validated but not executed.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PurgeMemoriesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeMemoriesRequest
     {
     }
 }

@@ -21,460 +21,469 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChartSpec extends \Google\Collection
-{
-    /**
-     * Default value, do not use.
-     */
-    public const HIDDEN_DIMENSION_STRATEGY_CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED = 'CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED';
-    /**
-     * Charts will skip hidden rows and columns.
-     */
-    public const HIDDEN_DIMENSION_STRATEGY_SKIP_HIDDEN_ROWS_AND_COLUMNS = 'SKIP_HIDDEN_ROWS_AND_COLUMNS';
-    /**
-     * Charts will skip hidden rows only.
-     */
-    public const HIDDEN_DIMENSION_STRATEGY_SKIP_HIDDEN_ROWS = 'SKIP_HIDDEN_ROWS';
-    /**
-     * Charts will skip hidden columns only.
-     */
-    public const HIDDEN_DIMENSION_STRATEGY_SKIP_HIDDEN_COLUMNS = 'SKIP_HIDDEN_COLUMNS';
-    /**
-     * Charts will not skip any hidden rows or columns.
-     */
-    public const HIDDEN_DIMENSION_STRATEGY_SHOW_ALL = 'SHOW_ALL';
-    protected $collection_key = 'sortSpecs';
-    /**
-     * The alternative text that describes the chart. This is often used for
-     * accessibility.
-     *
-     * @var string
-     */
-    public $altText;
-    protected $backgroundColorType = Color::class;
-    protected $backgroundColorDataType = '';
-    protected $backgroundColorStyleType = ColorStyle::class;
-    protected $backgroundColorStyleDataType = '';
-    protected $basicChartType = BasicChartSpec::class;
-    protected $basicChartDataType = '';
-    protected $bubbleChartType = BubbleChartSpec::class;
-    protected $bubbleChartDataType = '';
-    protected $candlestickChartType = CandlestickChartSpec::class;
-    protected $candlestickChartDataType = '';
-    protected $dataSourceChartPropertiesType = DataSourceChartProperties::class;
-    protected $dataSourceChartPropertiesDataType = '';
-    protected $filterSpecsType = FilterSpec::class;
-    protected $filterSpecsDataType = 'array';
-    /**
-     * The name of the font to use by default for all chart text (e.g. title, axis
-     * labels, legend). If a font is specified for a specific part of the chart it
-     * will override this font name.
-     *
-     * @var string
-     */
-    public $fontName;
-    /**
-     * Determines how the charts will use hidden rows or columns.
-     *
-     * @var string
-     */
-    public $hiddenDimensionStrategy;
-    protected $histogramChartType = HistogramChartSpec::class;
-    protected $histogramChartDataType = '';
-    /**
-     * True to make a chart fill the entire space in which it's rendered with
-     * minimum padding. False to use the default padding. (Not applicable to Geo
-     * and Org charts.)
-     *
-     * @var bool
-     */
-    public $maximized;
-    protected $orgChartType = OrgChartSpec::class;
-    protected $orgChartDataType = '';
-    protected $pieChartType = PieChartSpec::class;
-    protected $pieChartDataType = '';
-    protected $scorecardChartType = ScorecardChartSpec::class;
-    protected $scorecardChartDataType = '';
-    protected $sortSpecsType = SortSpec::class;
-    protected $sortSpecsDataType = 'array';
-    /**
-     * The subtitle of the chart.
-     *
-     * @var string
-     */
-    public $subtitle;
-    protected $subtitleTextFormatType = TextFormat::class;
-    protected $subtitleTextFormatDataType = '';
-    protected $subtitleTextPositionType = TextPosition::class;
-    protected $subtitleTextPositionDataType = '';
-    /**
-     * The title of the chart.
-     *
-     * @var string
-     */
-    public $title;
-    protected $titleTextFormatType = TextFormat::class;
-    protected $titleTextFormatDataType = '';
-    protected $titleTextPositionType = TextPosition::class;
-    protected $titleTextPositionDataType = '';
-    protected $treemapChartType = TreemapChartSpec::class;
-    protected $treemapChartDataType = '';
-    protected $waterfallChartType = WaterfallChartSpec::class;
-    protected $waterfallChartDataType = '';
-    /**
-     * The alternative text that describes the chart. This is often used for
-     * accessibility.
-     *
-     * @param string $altText
-     */
-    public function setAltText($altText)
+namespace Google\Service\Sheets {
+    class ChartSpec extends \Google\Collection
     {
+        /**
+         * Default value, do not use.
+         */
+        public const HIDDEN_DIMENSION_STRATEGY_CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED = 'CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED';
+        /**
+         * Charts will skip hidden rows and columns.
+         */
+        public const HIDDEN_DIMENSION_STRATEGY_SKIP_HIDDEN_ROWS_AND_COLUMNS = 'SKIP_HIDDEN_ROWS_AND_COLUMNS';
+        /**
+         * Charts will skip hidden rows only.
+         */
+        public const HIDDEN_DIMENSION_STRATEGY_SKIP_HIDDEN_ROWS = 'SKIP_HIDDEN_ROWS';
+        /**
+         * Charts will skip hidden columns only.
+         */
+        public const HIDDEN_DIMENSION_STRATEGY_SKIP_HIDDEN_COLUMNS = 'SKIP_HIDDEN_COLUMNS';
+        /**
+         * Charts will not skip any hidden rows or columns.
+         */
+        public const HIDDEN_DIMENSION_STRATEGY_SHOW_ALL = 'SHOW_ALL';
+        protected $collection_key = 'sortSpecs';
+        /**
+         * The alternative text that describes the chart. This is often used for
+         * accessibility.
+         *
+         * @var string
+         */
+        public $altText;
+        protected $backgroundColorType = Color::class;
+        protected $backgroundColorDataType = '';
+        protected $backgroundColorStyleType = ColorStyle::class;
+        protected $backgroundColorStyleDataType = '';
+        protected $basicChartType = BasicChartSpec::class;
+        protected $basicChartDataType = '';
+        protected $bubbleChartType = BubbleChartSpec::class;
+        protected $bubbleChartDataType = '';
+        protected $candlestickChartType = CandlestickChartSpec::class;
+        protected $candlestickChartDataType = '';
+        protected $dataSourceChartPropertiesType = DataSourceChartProperties::class;
+        protected $dataSourceChartPropertiesDataType = '';
+        protected $filterSpecsType = FilterSpec::class;
+        protected $filterSpecsDataType = 'array';
+        /**
+         * The name of the font to use by default for all chart text (e.g. title, axis
+         * labels, legend). If a font is specified for a specific part of the chart it
+         * will override this font name.
+         *
+         * @var string
+         */
+        public $fontName;
+        /**
+         * Determines how the charts will use hidden rows or columns.
+         *
+         * @var string
+         */
+        public $hiddenDimensionStrategy;
+        protected $histogramChartType = HistogramChartSpec::class;
+        protected $histogramChartDataType = '';
+        /**
+         * True to make a chart fill the entire space in which it's rendered with
+         * minimum padding. False to use the default padding. (Not applicable to Geo
+         * and Org charts.)
+         *
+         * @var bool
+         */
+        public $maximized;
+        protected $orgChartType = OrgChartSpec::class;
+        protected $orgChartDataType = '';
+        protected $pieChartType = PieChartSpec::class;
+        protected $pieChartDataType = '';
+        protected $scorecardChartType = ScorecardChartSpec::class;
+        protected $scorecardChartDataType = '';
+        protected $sortSpecsType = SortSpec::class;
+        protected $sortSpecsDataType = 'array';
+        /**
+         * The subtitle of the chart.
+         *
+         * @var string
+         */
+        public $subtitle;
+        protected $subtitleTextFormatType = TextFormat::class;
+        protected $subtitleTextFormatDataType = '';
+        protected $subtitleTextPositionType = TextPosition::class;
+        protected $subtitleTextPositionDataType = '';
+        /**
+         * The title of the chart.
+         *
+         * @var string
+         */
+        public $title;
+        protected $titleTextFormatType = TextFormat::class;
+        protected $titleTextFormatDataType = '';
+        protected $titleTextPositionType = TextPosition::class;
+        protected $titleTextPositionDataType = '';
+        protected $treemapChartType = TreemapChartSpec::class;
+        protected $treemapChartDataType = '';
+        protected $waterfallChartType = WaterfallChartSpec::class;
+        protected $waterfallChartDataType = '';
+        /**
+         * The alternative text that describes the chart. This is often used for
+         * accessibility.
+         *
+         * @param string $altText
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * The background color of the entire chart. Not applicable to Org charts.
+         * Deprecated: Use background_color_style.
+         *
+         * @deprecated
+         * @param Color $backgroundColor
+         */
+        public function setBackgroundColor(Color $backgroundColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * The background color of the entire chart. Not applicable to Org charts. If
+         * background_color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $backgroundColorStyle
+         */
+        public function setBackgroundColorStyle(ColorStyle $backgroundColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getBackgroundColorStyle()
+        {
+        }
+        /**
+         * A basic chart specification, can be one of many kinds of charts. See
+         * BasicChartType for the list of all charts this supports.
+         *
+         * @param BasicChartSpec $basicChart
+         */
+        public function setBasicChart(BasicChartSpec $basicChart)
+        {
+        }
+        /**
+         * @return BasicChartSpec
+         */
+        public function getBasicChart()
+        {
+        }
+        /**
+         * A bubble chart specification.
+         *
+         * @param BubbleChartSpec $bubbleChart
+         */
+        public function setBubbleChart(BubbleChartSpec $bubbleChart)
+        {
+        }
+        /**
+         * @return BubbleChartSpec
+         */
+        public function getBubbleChart()
+        {
+        }
+        /**
+         * A candlestick chart specification.
+         *
+         * @param CandlestickChartSpec $candlestickChart
+         */
+        public function setCandlestickChart(CandlestickChartSpec $candlestickChart)
+        {
+        }
+        /**
+         * @return CandlestickChartSpec
+         */
+        public function getCandlestickChart()
+        {
+        }
+        /**
+         * If present, the field contains data source chart specific properties.
+         *
+         * @param DataSourceChartProperties $dataSourceChartProperties
+         */
+        public function setDataSourceChartProperties(DataSourceChartProperties $dataSourceChartProperties)
+        {
+        }
+        /**
+         * @return DataSourceChartProperties
+         */
+        public function getDataSourceChartProperties()
+        {
+        }
+        /**
+         * The filters applied to the source data of the chart. Only supported for
+         * data source charts.
+         *
+         * @param FilterSpec[] $filterSpecs
+         */
+        public function setFilterSpecs($filterSpecs)
+        {
+        }
+        /**
+         * @return FilterSpec[]
+         */
+        public function getFilterSpecs()
+        {
+        }
+        /**
+         * The name of the font to use by default for all chart text (e.g. title, axis
+         * labels, legend). If a font is specified for a specific part of the chart it
+         * will override this font name.
+         *
+         * @param string $fontName
+         */
+        public function setFontName($fontName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontName()
+        {
+        }
+        /**
+         * Determines how the charts will use hidden rows or columns.
+         *
+         * Accepted values: CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED,
+         * SKIP_HIDDEN_ROWS_AND_COLUMNS, SKIP_HIDDEN_ROWS, SKIP_HIDDEN_COLUMNS,
+         * SHOW_ALL
+         *
+         * @param self::HIDDEN_DIMENSION_STRATEGY_* $hiddenDimensionStrategy
+         */
+        public function setHiddenDimensionStrategy($hiddenDimensionStrategy)
+        {
+        }
+        /**
+         * @return self::HIDDEN_DIMENSION_STRATEGY_*
+         */
+        public function getHiddenDimensionStrategy()
+        {
+        }
+        /**
+         * A histogram chart specification.
+         *
+         * @param HistogramChartSpec $histogramChart
+         */
+        public function setHistogramChart(HistogramChartSpec $histogramChart)
+        {
+        }
+        /**
+         * @return HistogramChartSpec
+         */
+        public function getHistogramChart()
+        {
+        }
+        /**
+         * True to make a chart fill the entire space in which it's rendered with
+         * minimum padding. False to use the default padding. (Not applicable to Geo
+         * and Org charts.)
+         *
+         * @param bool $maximized
+         */
+        public function setMaximized($maximized)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMaximized()
+        {
+        }
+        /**
+         * An org chart specification.
+         *
+         * @param OrgChartSpec $orgChart
+         */
+        public function setOrgChart(OrgChartSpec $orgChart)
+        {
+        }
+        /**
+         * @return OrgChartSpec
+         */
+        public function getOrgChart()
+        {
+        }
+        /**
+         * A pie chart specification.
+         *
+         * @param PieChartSpec $pieChart
+         */
+        public function setPieChart(PieChartSpec $pieChart)
+        {
+        }
+        /**
+         * @return PieChartSpec
+         */
+        public function getPieChart()
+        {
+        }
+        /**
+         * A scorecard chart specification.
+         *
+         * @param ScorecardChartSpec $scorecardChart
+         */
+        public function setScorecardChart(ScorecardChartSpec $scorecardChart)
+        {
+        }
+        /**
+         * @return ScorecardChartSpec
+         */
+        public function getScorecardChart()
+        {
+        }
+        /**
+         * The order to sort the chart data by. Only a single sort spec is supported.
+         * Only supported for data source charts.
+         *
+         * @param SortSpec[] $sortSpecs
+         */
+        public function setSortSpecs($sortSpecs)
+        {
+        }
+        /**
+         * @return SortSpec[]
+         */
+        public function getSortSpecs()
+        {
+        }
+        /**
+         * The subtitle of the chart.
+         *
+         * @param string $subtitle
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * The subtitle text format. Strikethrough, underline, and link are not
+         * supported.
+         *
+         * @param TextFormat $subtitleTextFormat
+         */
+        public function setSubtitleTextFormat(TextFormat $subtitleTextFormat)
+        {
+        }
+        /**
+         * @return TextFormat
+         */
+        public function getSubtitleTextFormat()
+        {
+        }
+        /**
+         * The subtitle text position. This field is optional.
+         *
+         * @param TextPosition $subtitleTextPosition
+         */
+        public function setSubtitleTextPosition(TextPosition $subtitleTextPosition)
+        {
+        }
+        /**
+         * @return TextPosition
+         */
+        public function getSubtitleTextPosition()
+        {
+        }
+        /**
+         * The title of the chart.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The title text format. Strikethrough, underline, and link are not
+         * supported.
+         *
+         * @param TextFormat $titleTextFormat
+         */
+        public function setTitleTextFormat(TextFormat $titleTextFormat)
+        {
+        }
+        /**
+         * @return TextFormat
+         */
+        public function getTitleTextFormat()
+        {
+        }
+        /**
+         * The title text position. This field is optional.
+         *
+         * @param TextPosition $titleTextPosition
+         */
+        public function setTitleTextPosition(TextPosition $titleTextPosition)
+        {
+        }
+        /**
+         * @return TextPosition
+         */
+        public function getTitleTextPosition()
+        {
+        }
+        /**
+         * A treemap chart specification.
+         *
+         * @param TreemapChartSpec $treemapChart
+         */
+        public function setTreemapChart(TreemapChartSpec $treemapChart)
+        {
+        }
+        /**
+         * @return TreemapChartSpec
+         */
+        public function getTreemapChart()
+        {
+        }
+        /**
+         * A waterfall chart specification.
+         *
+         * @param WaterfallChartSpec $waterfallChart
+         */
+        public function setWaterfallChart(WaterfallChartSpec $waterfallChart)
+        {
+        }
+        /**
+         * @return WaterfallChartSpec
+         */
+        public function getWaterfallChart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\ChartSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * The background color of the entire chart. Not applicable to Org charts.
-     * Deprecated: Use background_color_style.
-     *
-     * @deprecated
-     * @param Color $backgroundColor
-     */
-    public function setBackgroundColor(Color $backgroundColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * The background color of the entire chart. Not applicable to Org charts. If
-     * background_color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $backgroundColorStyle
-     */
-    public function setBackgroundColorStyle(ColorStyle $backgroundColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getBackgroundColorStyle()
-    {
-    }
-    /**
-     * A basic chart specification, can be one of many kinds of charts. See
-     * BasicChartType for the list of all charts this supports.
-     *
-     * @param BasicChartSpec $basicChart
-     */
-    public function setBasicChart(BasicChartSpec $basicChart)
-    {
-    }
-    /**
-     * @return BasicChartSpec
-     */
-    public function getBasicChart()
-    {
-    }
-    /**
-     * A bubble chart specification.
-     *
-     * @param BubbleChartSpec $bubbleChart
-     */
-    public function setBubbleChart(BubbleChartSpec $bubbleChart)
-    {
-    }
-    /**
-     * @return BubbleChartSpec
-     */
-    public function getBubbleChart()
-    {
-    }
-    /**
-     * A candlestick chart specification.
-     *
-     * @param CandlestickChartSpec $candlestickChart
-     */
-    public function setCandlestickChart(CandlestickChartSpec $candlestickChart)
-    {
-    }
-    /**
-     * @return CandlestickChartSpec
-     */
-    public function getCandlestickChart()
-    {
-    }
-    /**
-     * If present, the field contains data source chart specific properties.
-     *
-     * @param DataSourceChartProperties $dataSourceChartProperties
-     */
-    public function setDataSourceChartProperties(DataSourceChartProperties $dataSourceChartProperties)
-    {
-    }
-    /**
-     * @return DataSourceChartProperties
-     */
-    public function getDataSourceChartProperties()
-    {
-    }
-    /**
-     * The filters applied to the source data of the chart. Only supported for
-     * data source charts.
-     *
-     * @param FilterSpec[] $filterSpecs
-     */
-    public function setFilterSpecs($filterSpecs)
-    {
-    }
-    /**
-     * @return FilterSpec[]
-     */
-    public function getFilterSpecs()
-    {
-    }
-    /**
-     * The name of the font to use by default for all chart text (e.g. title, axis
-     * labels, legend). If a font is specified for a specific part of the chart it
-     * will override this font name.
-     *
-     * @param string $fontName
-     */
-    public function setFontName($fontName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFontName()
-    {
-    }
-    /**
-     * Determines how the charts will use hidden rows or columns.
-     *
-     * Accepted values: CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED,
-     * SKIP_HIDDEN_ROWS_AND_COLUMNS, SKIP_HIDDEN_ROWS, SKIP_HIDDEN_COLUMNS,
-     * SHOW_ALL
-     *
-     * @param self::HIDDEN_DIMENSION_STRATEGY_* $hiddenDimensionStrategy
-     */
-    public function setHiddenDimensionStrategy($hiddenDimensionStrategy)
-    {
-    }
-    /**
-     * @return self::HIDDEN_DIMENSION_STRATEGY_*
-     */
-    public function getHiddenDimensionStrategy()
-    {
-    }
-    /**
-     * A histogram chart specification.
-     *
-     * @param HistogramChartSpec $histogramChart
-     */
-    public function setHistogramChart(HistogramChartSpec $histogramChart)
-    {
-    }
-    /**
-     * @return HistogramChartSpec
-     */
-    public function getHistogramChart()
-    {
-    }
-    /**
-     * True to make a chart fill the entire space in which it's rendered with
-     * minimum padding. False to use the default padding. (Not applicable to Geo
-     * and Org charts.)
-     *
-     * @param bool $maximized
-     */
-    public function setMaximized($maximized)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMaximized()
-    {
-    }
-    /**
-     * An org chart specification.
-     *
-     * @param OrgChartSpec $orgChart
-     */
-    public function setOrgChart(OrgChartSpec $orgChart)
-    {
-    }
-    /**
-     * @return OrgChartSpec
-     */
-    public function getOrgChart()
-    {
-    }
-    /**
-     * A pie chart specification.
-     *
-     * @param PieChartSpec $pieChart
-     */
-    public function setPieChart(PieChartSpec $pieChart)
-    {
-    }
-    /**
-     * @return PieChartSpec
-     */
-    public function getPieChart()
-    {
-    }
-    /**
-     * A scorecard chart specification.
-     *
-     * @param ScorecardChartSpec $scorecardChart
-     */
-    public function setScorecardChart(ScorecardChartSpec $scorecardChart)
-    {
-    }
-    /**
-     * @return ScorecardChartSpec
-     */
-    public function getScorecardChart()
-    {
-    }
-    /**
-     * The order to sort the chart data by. Only a single sort spec is supported.
-     * Only supported for data source charts.
-     *
-     * @param SortSpec[] $sortSpecs
-     */
-    public function setSortSpecs($sortSpecs)
-    {
-    }
-    /**
-     * @return SortSpec[]
-     */
-    public function getSortSpecs()
-    {
-    }
-    /**
-     * The subtitle of the chart.
-     *
-     * @param string $subtitle
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * The subtitle text format. Strikethrough, underline, and link are not
-     * supported.
-     *
-     * @param TextFormat $subtitleTextFormat
-     */
-    public function setSubtitleTextFormat(TextFormat $subtitleTextFormat)
-    {
-    }
-    /**
-     * @return TextFormat
-     */
-    public function getSubtitleTextFormat()
-    {
-    }
-    /**
-     * The subtitle text position. This field is optional.
-     *
-     * @param TextPosition $subtitleTextPosition
-     */
-    public function setSubtitleTextPosition(TextPosition $subtitleTextPosition)
-    {
-    }
-    /**
-     * @return TextPosition
-     */
-    public function getSubtitleTextPosition()
-    {
-    }
-    /**
-     * The title of the chart.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The title text format. Strikethrough, underline, and link are not
-     * supported.
-     *
-     * @param TextFormat $titleTextFormat
-     */
-    public function setTitleTextFormat(TextFormat $titleTextFormat)
-    {
-    }
-    /**
-     * @return TextFormat
-     */
-    public function getTitleTextFormat()
-    {
-    }
-    /**
-     * The title text position. This field is optional.
-     *
-     * @param TextPosition $titleTextPosition
-     */
-    public function setTitleTextPosition(TextPosition $titleTextPosition)
-    {
-    }
-    /**
-     * @return TextPosition
-     */
-    public function getTitleTextPosition()
-    {
-    }
-    /**
-     * A treemap chart specification.
-     *
-     * @param TreemapChartSpec $treemapChart
-     */
-    public function setTreemapChart(TreemapChartSpec $treemapChart)
-    {
-    }
-    /**
-     * @return TreemapChartSpec
-     */
-    public function getTreemapChart()
-    {
-    }
-    /**
-     * A waterfall chart specification.
-     *
-     * @param WaterfallChartSpec $waterfallChart
-     */
-    public function setWaterfallChart(WaterfallChartSpec $waterfallChart)
-    {
-    }
-    /**
-     * @return WaterfallChartSpec
-     */
-    public function getWaterfallChart()
+    class Google_Service_Sheets_ChartSpec extends \Google\Service\Sheets\ChartSpec
     {
     }
 }

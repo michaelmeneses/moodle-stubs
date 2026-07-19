@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UngroupObjectsRequest extends \Google\Collection
-{
-    protected $collection_key = 'objectIds';
-    /**
-     * The object IDs of the objects to ungroup. Only groups that are not inside
-     * other groups can be ungrouped. All the groups should be on the same page.
-     * The group itself is deleted. The visual sizes and positions of all the
-     * children are preserved.
-     *
-     * @var string[]
-     */
-    public $objectIds;
-    /**
-     * The object IDs of the objects to ungroup. Only groups that are not inside
-     * other groups can be ungrouped. All the groups should be on the same page.
-     * The group itself is deleted. The visual sizes and positions of all the
-     * children are preserved.
-     *
-     * @param string[] $objectIds
-     */
-    public function setObjectIds($objectIds)
+namespace Google\Service\Slides {
+    class UngroupObjectsRequest extends \Google\Collection
     {
+        protected $collection_key = 'objectIds';
+        /**
+         * The object IDs of the objects to ungroup. Only groups that are not inside
+         * other groups can be ungrouped. All the groups should be on the same page.
+         * The group itself is deleted. The visual sizes and positions of all the
+         * children are preserved.
+         *
+         * @var string[]
+         */
+        public $objectIds;
+        /**
+         * The object IDs of the objects to ungroup. Only groups that are not inside
+         * other groups can be ungrouped. All the groups should be on the same page.
+         * The group itself is deleted. The visual sizes and positions of all the
+         * children are preserved.
+         *
+         * @param string[] $objectIds
+         */
+        public function setObjectIds($objectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getObjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Slides\UngroupObjectsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectIds()
+    class Google_Service_Slides_UngroupObjectsRequest extends \Google\Service\Slides\UngroupObjectsRequest
     {
     }
 }

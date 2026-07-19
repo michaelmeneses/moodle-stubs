@@ -21,54 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller\Resource;
-
-/**
- * The "resellernotify" collection of methods.
- * Typical usage is:
- *  <code>
- *   $resellerService = new Google\Service\Reseller(...);
- *   $resellernotify = $resellerService->resellernotify;
- *  </code>
- */
-class Resellernotify extends \Google\Service\Resource
-{
+namespace Google\Service\Reseller\Resource {
+    use Google\Service\Reseller\ResellernotifyGetwatchdetailsResponse;
+    use Google\Service\Reseller\ResellernotifyResource;
     /**
-     * Returns all the details of the watch corresponding to the reseller.
-     * (resellernotify.getwatchdetails)
-     *
-     * @param array $optParams Optional parameters.
-     * @return ResellernotifyGetwatchdetailsResponse
-     * @throws \Google\Service\Exception
+     * The "resellernotify" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $resellerService = new Google\Service\Reseller(...);
+     *   $resellernotify = $resellerService->resellernotify;
+     *  </code>
      */
-    public function getwatchdetails($optParams = [])
+    class Resellernotify extends \Google\Service\Resource
     {
+        /**
+         * Returns all the details of the watch corresponding to the reseller.
+         * (resellernotify.getwatchdetails)
+         *
+         * @param array $optParams Optional parameters.
+         * @return ResellernotifyGetwatchdetailsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getwatchdetails($optParams = [])
+        {
+        }
+        /**
+         * Registers a Reseller for receiving notifications. (resellernotify.register)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string serviceAccountEmailAddress The service account which will
+         * own the created Cloud-PubSub topic.
+         * @return ResellernotifyResource
+         * @throws \Google\Service\Exception
+         */
+        public function register($optParams = [])
+        {
+        }
+        /**
+         * Unregisters a Reseller for receiving notifications.
+         * (resellernotify.unregister)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string serviceAccountEmailAddress The service account which owns
+         * the Cloud-PubSub topic.
+         * @return ResellernotifyResource
+         * @throws \Google\Service\Exception
+         */
+        public function unregister($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Registers a Reseller for receiving notifications. (resellernotify.register)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string serviceAccountEmailAddress The service account which will
-     * own the created Cloud-PubSub topic.
-     * @return ResellernotifyResource
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Reseller\Resource\Resellernotify registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function register($optParams = [])
-    {
-    }
-    /**
-     * Unregisters a Reseller for receiving notifications.
-     * (resellernotify.unregister)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string serviceAccountEmailAddress The service account which owns
-     * the Cloud-PubSub topic.
-     * @return ResellernotifyResource
-     * @throws \Google\Service\Exception
-     */
-    public function unregister($optParams = [])
+    class Google_Service_Reseller_Resource_Resellernotify extends \Google\Service\Reseller\Resource\Resellernotify
     {
     }
 }

@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class JobMetadata extends \Google\Collection
-{
-    protected $collection_key = 'spannerDetails';
-    protected $bigTableDetailsType = BigTableIODetails::class;
-    protected $bigTableDetailsDataType = 'array';
-    protected $bigqueryDetailsType = BigQueryIODetails::class;
-    protected $bigqueryDetailsDataType = 'array';
-    protected $datastoreDetailsType = DatastoreIODetails::class;
-    protected $datastoreDetailsDataType = 'array';
-    protected $fileDetailsType = FileIODetails::class;
-    protected $fileDetailsDataType = 'array';
-    protected $pubsubDetailsType = PubSubIODetails::class;
-    protected $pubsubDetailsDataType = 'array';
-    protected $sdkVersionType = SdkVersion::class;
-    protected $sdkVersionDataType = '';
-    protected $spannerDetailsType = SpannerIODetails::class;
-    protected $spannerDetailsDataType = 'array';
-    /**
-     * List of display properties to help UI filter jobs.
-     *
-     * @var string[]
-     */
-    public $userDisplayProperties;
-    /**
-     * Identification of a Cloud Bigtable source used in the Dataflow job.
-     *
-     * @param BigTableIODetails[] $bigTableDetails
-     */
-    public function setBigTableDetails($bigTableDetails)
+namespace Google\Service\Dataflow {
+    class JobMetadata extends \Google\Collection
     {
+        protected $collection_key = 'spannerDetails';
+        protected $bigTableDetailsType = BigTableIODetails::class;
+        protected $bigTableDetailsDataType = 'array';
+        protected $bigqueryDetailsType = BigQueryIODetails::class;
+        protected $bigqueryDetailsDataType = 'array';
+        protected $datastoreDetailsType = DatastoreIODetails::class;
+        protected $datastoreDetailsDataType = 'array';
+        protected $fileDetailsType = FileIODetails::class;
+        protected $fileDetailsDataType = 'array';
+        protected $pubsubDetailsType = PubSubIODetails::class;
+        protected $pubsubDetailsDataType = 'array';
+        protected $sdkVersionType = SdkVersion::class;
+        protected $sdkVersionDataType = '';
+        protected $spannerDetailsType = SpannerIODetails::class;
+        protected $spannerDetailsDataType = 'array';
+        /**
+         * List of display properties to help UI filter jobs.
+         *
+         * @var string[]
+         */
+        public $userDisplayProperties;
+        /**
+         * Identification of a Cloud Bigtable source used in the Dataflow job.
+         *
+         * @param BigTableIODetails[] $bigTableDetails
+         */
+        public function setBigTableDetails($bigTableDetails)
+        {
+        }
+        /**
+         * @return BigTableIODetails[]
+         */
+        public function getBigTableDetails()
+        {
+        }
+        /**
+         * Identification of a BigQuery source used in the Dataflow job.
+         *
+         * @param BigQueryIODetails[] $bigqueryDetails
+         */
+        public function setBigqueryDetails($bigqueryDetails)
+        {
+        }
+        /**
+         * @return BigQueryIODetails[]
+         */
+        public function getBigqueryDetails()
+        {
+        }
+        /**
+         * Identification of a Datastore source used in the Dataflow job.
+         *
+         * @param DatastoreIODetails[] $datastoreDetails
+         */
+        public function setDatastoreDetails($datastoreDetails)
+        {
+        }
+        /**
+         * @return DatastoreIODetails[]
+         */
+        public function getDatastoreDetails()
+        {
+        }
+        /**
+         * Identification of a File source used in the Dataflow job.
+         *
+         * @param FileIODetails[] $fileDetails
+         */
+        public function setFileDetails($fileDetails)
+        {
+        }
+        /**
+         * @return FileIODetails[]
+         */
+        public function getFileDetails()
+        {
+        }
+        /**
+         * Identification of a Pub/Sub source used in the Dataflow job.
+         *
+         * @param PubSubIODetails[] $pubsubDetails
+         */
+        public function setPubsubDetails($pubsubDetails)
+        {
+        }
+        /**
+         * @return PubSubIODetails[]
+         */
+        public function getPubsubDetails()
+        {
+        }
+        /**
+         * The SDK version used to run the job.
+         *
+         * @param SdkVersion $sdkVersion
+         */
+        public function setSdkVersion(SdkVersion $sdkVersion)
+        {
+        }
+        /**
+         * @return SdkVersion
+         */
+        public function getSdkVersion()
+        {
+        }
+        /**
+         * Identification of a Spanner source used in the Dataflow job.
+         *
+         * @param SpannerIODetails[] $spannerDetails
+         */
+        public function setSpannerDetails($spannerDetails)
+        {
+        }
+        /**
+         * @return SpannerIODetails[]
+         */
+        public function getSpannerDetails()
+        {
+        }
+        /**
+         * List of display properties to help UI filter jobs.
+         *
+         * @param string[] $userDisplayProperties
+         */
+        public function setUserDisplayProperties($userDisplayProperties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserDisplayProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigTableIODetails[]
+     * Runtime class alias of \Google\Service\Dataflow\JobMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigTableDetails()
-    {
-    }
-    /**
-     * Identification of a BigQuery source used in the Dataflow job.
-     *
-     * @param BigQueryIODetails[] $bigqueryDetails
-     */
-    public function setBigqueryDetails($bigqueryDetails)
-    {
-    }
-    /**
-     * @return BigQueryIODetails[]
-     */
-    public function getBigqueryDetails()
-    {
-    }
-    /**
-     * Identification of a Datastore source used in the Dataflow job.
-     *
-     * @param DatastoreIODetails[] $datastoreDetails
-     */
-    public function setDatastoreDetails($datastoreDetails)
-    {
-    }
-    /**
-     * @return DatastoreIODetails[]
-     */
-    public function getDatastoreDetails()
-    {
-    }
-    /**
-     * Identification of a File source used in the Dataflow job.
-     *
-     * @param FileIODetails[] $fileDetails
-     */
-    public function setFileDetails($fileDetails)
-    {
-    }
-    /**
-     * @return FileIODetails[]
-     */
-    public function getFileDetails()
-    {
-    }
-    /**
-     * Identification of a Pub/Sub source used in the Dataflow job.
-     *
-     * @param PubSubIODetails[] $pubsubDetails
-     */
-    public function setPubsubDetails($pubsubDetails)
-    {
-    }
-    /**
-     * @return PubSubIODetails[]
-     */
-    public function getPubsubDetails()
-    {
-    }
-    /**
-     * The SDK version used to run the job.
-     *
-     * @param SdkVersion $sdkVersion
-     */
-    public function setSdkVersion(SdkVersion $sdkVersion)
-    {
-    }
-    /**
-     * @return SdkVersion
-     */
-    public function getSdkVersion()
-    {
-    }
-    /**
-     * Identification of a Spanner source used in the Dataflow job.
-     *
-     * @param SpannerIODetails[] $spannerDetails
-     */
-    public function setSpannerDetails($spannerDetails)
-    {
-    }
-    /**
-     * @return SpannerIODetails[]
-     */
-    public function getSpannerDetails()
-    {
-    }
-    /**
-     * List of display properties to help UI filter jobs.
-     *
-     * @param string[] $userDisplayProperties
-     */
-    public function setUserDisplayProperties($userDisplayProperties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserDisplayProperties()
+    class Google_Service_Dataflow_JobMetadata extends \Google\Service\Dataflow\JobMetadata
     {
     }
 }

@@ -29,6 +29,12 @@
  */
 namespace core_calendar\local\event\data_access;
 
+use core_calendar\local\event\entities\action_event_interface;
+use core_calendar\local\event\entities\event_interface;
+use core_calendar\local\event\exceptions\limit_invalid_parameter_exception;
+use core_calendar\local\event\factories\action_factory_interface;
+use core_calendar\local\event\factories\event_factory_interface;
+use core_calendar\local\event\strategies\raw_event_retrieval_strategy_interface;
 /**
  * Event vault class.
  *

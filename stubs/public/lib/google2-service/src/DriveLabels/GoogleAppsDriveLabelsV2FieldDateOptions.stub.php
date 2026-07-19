@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldDateOptions extends \Google\Model
-{
-    /**
-     * Date format unspecified.
-     */
-    public const DATE_FORMAT_TYPE_DATE_FORMAT_UNSPECIFIED = 'DATE_FORMAT_UNSPECIFIED';
-    /**
-     * Includes full month name. For example, January 12, 1999 (MMMM d, y)
-     */
-    public const DATE_FORMAT_TYPE_LONG_DATE = 'LONG_DATE';
-    /**
-     * Short, numeric, representation. For example, 12/13/99 (M/d/yy)
-     */
-    public const DATE_FORMAT_TYPE_SHORT_DATE = 'SHORT_DATE';
-    /**
-     * Output only. ICU date format.
-     *
-     * @var string
-     */
-    public $dateFormat;
-    /**
-     * Localized date formatting option. Field values are rendered in this format
-     * according to their locale.
-     *
-     * @var string
-     */
-    public $dateFormatType;
-    protected $maxValueType = GoogleTypeDate::class;
-    protected $maxValueDataType = '';
-    protected $minValueType = GoogleTypeDate::class;
-    protected $minValueDataType = '';
-    /**
-     * Output only. ICU date format.
-     *
-     * @param string $dateFormat
-     */
-    public function setDateFormat($dateFormat)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldDateOptions extends \Google\Model
     {
+        /**
+         * Date format unspecified.
+         */
+        public const DATE_FORMAT_TYPE_DATE_FORMAT_UNSPECIFIED = 'DATE_FORMAT_UNSPECIFIED';
+        /**
+         * Includes full month name. For example, January 12, 1999 (MMMM d, y)
+         */
+        public const DATE_FORMAT_TYPE_LONG_DATE = 'LONG_DATE';
+        /**
+         * Short, numeric, representation. For example, 12/13/99 (M/d/yy)
+         */
+        public const DATE_FORMAT_TYPE_SHORT_DATE = 'SHORT_DATE';
+        /**
+         * Output only. ICU date format.
+         *
+         * @var string
+         */
+        public $dateFormat;
+        /**
+         * Localized date formatting option. Field values are rendered in this format
+         * according to their locale.
+         *
+         * @var string
+         */
+        public $dateFormatType;
+        protected $maxValueType = GoogleTypeDate::class;
+        protected $maxValueDataType = '';
+        protected $minValueType = GoogleTypeDate::class;
+        protected $minValueDataType = '';
+        /**
+         * Output only. ICU date format.
+         *
+         * @param string $dateFormat
+         */
+        public function setDateFormat($dateFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDateFormat()
+        {
+        }
+        /**
+         * Localized date formatting option. Field values are rendered in this format
+         * according to their locale.
+         *
+         * Accepted values: DATE_FORMAT_UNSPECIFIED, LONG_DATE, SHORT_DATE
+         *
+         * @param self::DATE_FORMAT_TYPE_* $dateFormatType
+         */
+        public function setDateFormatType($dateFormatType)
+        {
+        }
+        /**
+         * @return self::DATE_FORMAT_TYPE_*
+         */
+        public function getDateFormatType()
+        {
+        }
+        /**
+         * Output only. Maximum valid value (year, month, day).
+         *
+         * @param GoogleTypeDate $maxValue
+         */
+        public function setMaxValue(GoogleTypeDate $maxValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Output only. Minimum valid value (year, month, day).
+         *
+         * @param GoogleTypeDate $minValue
+         */
+        public function setMinValue(GoogleTypeDate $minValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldDateOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateFormat()
-    {
-    }
-    /**
-     * Localized date formatting option. Field values are rendered in this format
-     * according to their locale.
-     *
-     * Accepted values: DATE_FORMAT_UNSPECIFIED, LONG_DATE, SHORT_DATE
-     *
-     * @param self::DATE_FORMAT_TYPE_* $dateFormatType
-     */
-    public function setDateFormatType($dateFormatType)
-    {
-    }
-    /**
-     * @return self::DATE_FORMAT_TYPE_*
-     */
-    public function getDateFormatType()
-    {
-    }
-    /**
-     * Output only. Maximum valid value (year, month, day).
-     *
-     * @param GoogleTypeDate $maxValue
-     */
-    public function setMaxValue(GoogleTypeDate $maxValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Output only. Minimum valid value (year, month, day).
-     *
-     * @param GoogleTypeDate $minValue
-     */
-    public function setMinValue(GoogleTypeDate $minValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getMinValue()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldDateOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldDateOptions
     {
     }
 }

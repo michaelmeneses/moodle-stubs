@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig extends \Google\Model
-{
-    /**
-     * The token size limit for each chunk. Supported values: 100-500 (inclusive).
-     * Default value: 500.
-     *
-     * @var int
-     */
-    public $chunkSize;
-    /**
-     * Whether to include appending different levels of headings to chunks from
-     * the middle of the document to prevent context loss. Default value: False.
-     *
-     * @var bool
-     */
-    public $includeAncestorHeadings;
-    /**
-     * The token size limit for each chunk. Supported values: 100-500 (inclusive).
-     * Default value: 500.
-     *
-     * @param int $chunkSize
-     */
-    public function setChunkSize($chunkSize)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig extends \Google\Model
     {
+        /**
+         * The token size limit for each chunk. Supported values: 100-500 (inclusive).
+         * Default value: 500.
+         *
+         * @var int
+         */
+        public $chunkSize;
+        /**
+         * Whether to include appending different levels of headings to chunks from
+         * the middle of the document to prevent context loss. Default value: False.
+         *
+         * @var bool
+         */
+        public $includeAncestorHeadings;
+        /**
+         * The token size limit for each chunk. Supported values: 100-500 (inclusive).
+         * Default value: 500.
+         *
+         * @param int $chunkSize
+         */
+        public function setChunkSize($chunkSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChunkSize()
+        {
+        }
+        /**
+         * Whether to include appending different levels of headings to chunks from
+         * the middle of the document to prevent context loss. Default value: False.
+         *
+         * @param bool $includeAncestorHeadings
+         */
+        public function setIncludeAncestorHeadings($includeAncestorHeadings)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeAncestorHeadings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkSize()
-    {
-    }
-    /**
-     * Whether to include appending different levels of headings to chunks from
-     * the middle of the document to prevent context loss. Default value: False.
-     *
-     * @param bool $includeAncestorHeadings
-     */
-    public function setIncludeAncestorHeadings($includeAncestorHeadings)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeAncestorHeadings()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig
     {
     }
 }

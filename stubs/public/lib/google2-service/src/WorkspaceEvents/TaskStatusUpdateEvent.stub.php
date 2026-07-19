@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class TaskStatusUpdateEvent extends \Google\Model
-{
-    /**
-     * The id of the context that the task belongs to
-     *
-     * @var string
-     */
-    public $contextId;
-    /**
-     * Whether this is the last status update expected for this task.
-     *
-     * @var bool
-     */
-    public $final;
-    /**
-     * Optional metadata to associate with the task update.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    protected $statusType = TaskStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The id of the task that is changed
-     *
-     * @var string
-     */
-    public $taskId;
-    /**
-     * The id of the context that the task belongs to
-     *
-     * @param string $contextId
-     */
-    public function setContextId($contextId)
+namespace Google\Service\WorkspaceEvents {
+    class TaskStatusUpdateEvent extends \Google\Model
     {
+        /**
+         * The id of the context that the task belongs to
+         *
+         * @var string
+         */
+        public $contextId;
+        /**
+         * Whether this is the last status update expected for this task.
+         *
+         * @var bool
+         */
+        public $final;
+        /**
+         * Optional metadata to associate with the task update.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        protected $statusType = TaskStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The id of the task that is changed
+         *
+         * @var string
+         */
+        public $taskId;
+        /**
+         * The id of the context that the task belongs to
+         *
+         * @param string $contextId
+         */
+        public function setContextId($contextId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContextId()
+        {
+        }
+        /**
+         * Whether this is the last status update expected for this task.
+         *
+         * @param bool $final
+         */
+        public function setFinal($final)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFinal()
+        {
+        }
+        /**
+         * Optional metadata to associate with the task update.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The new status of the task.
+         *
+         * @param TaskStatus $status
+         */
+        public function setStatus(TaskStatus $status)
+        {
+        }
+        /**
+         * @return TaskStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The id of the task that is changed
+         *
+         * @param string $taskId
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\TaskStatusUpdateEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextId()
-    {
-    }
-    /**
-     * Whether this is the last status update expected for this task.
-     *
-     * @param bool $final
-     */
-    public function setFinal($final)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFinal()
-    {
-    }
-    /**
-     * Optional metadata to associate with the task update.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The new status of the task.
-     *
-     * @param TaskStatus $status
-     */
-    public function setStatus(TaskStatus $status)
-    {
-    }
-    /**
-     * @return TaskStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The id of the task that is changed
-     *
-     * @param string $taskId
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
+    class Google_Service_WorkspaceEvents_TaskStatusUpdateEvent extends \Google\Service\WorkspaceEvents\TaskStatusUpdateEvent
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class TextLink extends \Google\Model
-{
-    /**
-     * Required. Display text for the URI.
-     *
-     * @var string
-     */
-    public $displayText;
-    /**
-     * Required. The URI.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. Display text for the URI.
-     *
-     * @param string $displayText
-     */
-    public function setDisplayText($displayText)
+namespace Google\Service\Forms {
+    class TextLink extends \Google\Model
     {
+        /**
+         * Required. Display text for the URI.
+         *
+         * @var string
+         */
+        public $displayText;
+        /**
+         * Required. The URI.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. Display text for the URI.
+         *
+         * @param string $displayText
+         */
+        public function setDisplayText($displayText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayText()
+        {
+        }
+        /**
+         * Required. The URI.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\TextLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayText()
-    {
-    }
-    /**
-     * Required. The URI.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Forms_TextLink extends \Google\Service\Forms\TextLink
     {
     }
 }

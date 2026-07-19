@@ -21,72 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Analytics (v3).
- *
- * <p>
- * Views and manages your Google Analytics data.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/analytics/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Analytics extends \Google\Service
-{
-    /** View and manage your Google Analytics data. */
-    const ANALYTICS = "https://www.googleapis.com/auth/analytics";
-    /** Edit Google Analytics management entities. */
-    const ANALYTICS_EDIT = "https://www.googleapis.com/auth/analytics.edit";
-    /** Manage Google Analytics Account users by email address. */
-    const ANALYTICS_MANAGE_USERS = "https://www.googleapis.com/auth/analytics.manage.users";
-    /** View Google Analytics user permissions. */
-    const ANALYTICS_MANAGE_USERS_READONLY = "https://www.googleapis.com/auth/analytics.manage.users.readonly";
-    /** Create a new Google Analytics account along with its default property and view. */
-    const ANALYTICS_PROVISION = "https://www.googleapis.com/auth/analytics.provision";
-    /** View your Google Analytics data. */
-    const ANALYTICS_READONLY = "https://www.googleapis.com/auth/analytics.readonly";
-    /** Manage Google Analytics user deletion requests. */
-    const ANALYTICS_USER_DELETION = "https://www.googleapis.com/auth/analytics.user.deletion";
-    public $data_ga;
-    public $data_mcf;
-    public $data_realtime;
-    public $management_accountSummaries;
-    public $management_accountUserLinks;
-    public $management_accounts;
-    public $management_clientId;
-    public $management_customDataSources;
-    public $management_customDimensions;
-    public $management_customMetrics;
-    public $management_experiments;
-    public $management_filters;
-    public $management_goals;
-    public $management_profileFilterLinks;
-    public $management_profileUserLinks;
-    public $management_profiles;
-    public $management_remarketingAudience;
-    public $management_segments;
-    public $management_unsampledReports;
-    public $management_uploads;
-    public $management_webPropertyAdWordsLinks;
-    public $management_webproperties;
-    public $management_webpropertyUserLinks;
-    public $metadata_columns;
-    public $provisioning;
-    public $userDeletion_userDeletionRequest;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Analytics service.
+     * Service definition for Analytics (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Views and manages your Google Analytics data.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/analytics/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Analytics extends \Google\Service
+    {
+        /** View and manage your Google Analytics data. */
+        const ANALYTICS = "https://www.googleapis.com/auth/analytics";
+        /** Edit Google Analytics management entities. */
+        const ANALYTICS_EDIT = "https://www.googleapis.com/auth/analytics.edit";
+        /** Manage Google Analytics Account users by email address. */
+        const ANALYTICS_MANAGE_USERS = "https://www.googleapis.com/auth/analytics.manage.users";
+        /** View Google Analytics user permissions. */
+        const ANALYTICS_MANAGE_USERS_READONLY = "https://www.googleapis.com/auth/analytics.manage.users.readonly";
+        /** Create a new Google Analytics account along with its default property and view. */
+        const ANALYTICS_PROVISION = "https://www.googleapis.com/auth/analytics.provision";
+        /** View your Google Analytics data. */
+        const ANALYTICS_READONLY = "https://www.googleapis.com/auth/analytics.readonly";
+        /** Manage Google Analytics user deletion requests. */
+        const ANALYTICS_USER_DELETION = "https://www.googleapis.com/auth/analytics.user.deletion";
+        public $data_ga;
+        public $data_mcf;
+        public $data_realtime;
+        public $management_accountSummaries;
+        public $management_accountUserLinks;
+        public $management_accounts;
+        public $management_clientId;
+        public $management_customDataSources;
+        public $management_customDimensions;
+        public $management_customMetrics;
+        public $management_experiments;
+        public $management_filters;
+        public $management_goals;
+        public $management_profileFilterLinks;
+        public $management_profileUserLinks;
+        public $management_profiles;
+        public $management_remarketingAudience;
+        public $management_segments;
+        public $management_unsampledReports;
+        public $management_uploads;
+        public $management_webPropertyAdWordsLinks;
+        public $management_webproperties;
+        public $management_webpropertyUserLinks;
+        public $metadata_columns;
+        public $provisioning;
+        public $userDeletion_userDeletionRequest;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Analytics service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics extends \Google\Service\Analytics
     {
     }
 }

@@ -21,180 +21,189 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class Event extends \Google\Model
-{
-    protected $containerKilledType = ContainerKilledEvent::class;
-    protected $containerKilledDataType = '';
-    protected $containerStartedType = ContainerStartedEvent::class;
-    protected $containerStartedDataType = '';
-    protected $containerStoppedType = ContainerStoppedEvent::class;
-    protected $containerStoppedDataType = '';
-    protected $delayedType = DelayedEvent::class;
-    protected $delayedDataType = '';
-    /**
-     * @var string
-     */
-    public $description;
-    protected $failedType = FailedEvent::class;
-    protected $failedDataType = '';
-    protected $pullStartedType = PullStartedEvent::class;
-    protected $pullStartedDataType = '';
-    protected $pullStoppedType = PullStoppedEvent::class;
-    protected $pullStoppedDataType = '';
-    /**
-     * @var string
-     */
-    public $timestamp;
-    protected $unexpectedExitStatusType = UnexpectedExitStatusEvent::class;
-    protected $unexpectedExitStatusDataType = '';
-    protected $workerAssignedType = WorkerAssignedEvent::class;
-    protected $workerAssignedDataType = '';
-    protected $workerReleasedType = WorkerReleasedEvent::class;
-    protected $workerReleasedDataType = '';
-    /**
-     * @param ContainerKilledEvent
-     */
-    public function setContainerKilled(ContainerKilledEvent $containerKilled)
+namespace Google\Service\CloudLifeSciences {
+    class Event extends \Google\Model
     {
+        protected $containerKilledType = ContainerKilledEvent::class;
+        protected $containerKilledDataType = '';
+        protected $containerStartedType = ContainerStartedEvent::class;
+        protected $containerStartedDataType = '';
+        protected $containerStoppedType = ContainerStoppedEvent::class;
+        protected $containerStoppedDataType = '';
+        protected $delayedType = DelayedEvent::class;
+        protected $delayedDataType = '';
+        /**
+         * @var string
+         */
+        public $description;
+        protected $failedType = FailedEvent::class;
+        protected $failedDataType = '';
+        protected $pullStartedType = PullStartedEvent::class;
+        protected $pullStartedDataType = '';
+        protected $pullStoppedType = PullStoppedEvent::class;
+        protected $pullStoppedDataType = '';
+        /**
+         * @var string
+         */
+        public $timestamp;
+        protected $unexpectedExitStatusType = UnexpectedExitStatusEvent::class;
+        protected $unexpectedExitStatusDataType = '';
+        protected $workerAssignedType = WorkerAssignedEvent::class;
+        protected $workerAssignedDataType = '';
+        protected $workerReleasedType = WorkerReleasedEvent::class;
+        protected $workerReleasedDataType = '';
+        /**
+         * @param ContainerKilledEvent
+         */
+        public function setContainerKilled(ContainerKilledEvent $containerKilled)
+        {
+        }
+        /**
+         * @return ContainerKilledEvent
+         */
+        public function getContainerKilled()
+        {
+        }
+        /**
+         * @param ContainerStartedEvent
+         */
+        public function setContainerStarted(ContainerStartedEvent $containerStarted)
+        {
+        }
+        /**
+         * @return ContainerStartedEvent
+         */
+        public function getContainerStarted()
+        {
+        }
+        /**
+         * @param ContainerStoppedEvent
+         */
+        public function setContainerStopped(ContainerStoppedEvent $containerStopped)
+        {
+        }
+        /**
+         * @return ContainerStoppedEvent
+         */
+        public function getContainerStopped()
+        {
+        }
+        /**
+         * @param DelayedEvent
+         */
+        public function setDelayed(DelayedEvent $delayed)
+        {
+        }
+        /**
+         * @return DelayedEvent
+         */
+        public function getDelayed()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param FailedEvent
+         */
+        public function setFailed(FailedEvent $failed)
+        {
+        }
+        /**
+         * @return FailedEvent
+         */
+        public function getFailed()
+        {
+        }
+        /**
+         * @param PullStartedEvent
+         */
+        public function setPullStarted(PullStartedEvent $pullStarted)
+        {
+        }
+        /**
+         * @return PullStartedEvent
+         */
+        public function getPullStarted()
+        {
+        }
+        /**
+         * @param PullStoppedEvent
+         */
+        public function setPullStopped(PullStoppedEvent $pullStopped)
+        {
+        }
+        /**
+         * @return PullStoppedEvent
+         */
+        public function getPullStopped()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * @param UnexpectedExitStatusEvent
+         */
+        public function setUnexpectedExitStatus(UnexpectedExitStatusEvent $unexpectedExitStatus)
+        {
+        }
+        /**
+         * @return UnexpectedExitStatusEvent
+         */
+        public function getUnexpectedExitStatus()
+        {
+        }
+        /**
+         * @param WorkerAssignedEvent
+         */
+        public function setWorkerAssigned(WorkerAssignedEvent $workerAssigned)
+        {
+        }
+        /**
+         * @return WorkerAssignedEvent
+         */
+        public function getWorkerAssigned()
+        {
+        }
+        /**
+         * @param WorkerReleasedEvent
+         */
+        public function setWorkerReleased(WorkerReleasedEvent $workerReleased)
+        {
+        }
+        /**
+         * @return WorkerReleasedEvent
+         */
+        public function getWorkerReleased()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContainerKilledEvent
+     * Runtime class alias of \Google\Service\CloudLifeSciences\Event registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerKilled()
-    {
-    }
-    /**
-     * @param ContainerStartedEvent
-     */
-    public function setContainerStarted(ContainerStartedEvent $containerStarted)
-    {
-    }
-    /**
-     * @return ContainerStartedEvent
-     */
-    public function getContainerStarted()
-    {
-    }
-    /**
-     * @param ContainerStoppedEvent
-     */
-    public function setContainerStopped(ContainerStoppedEvent $containerStopped)
-    {
-    }
-    /**
-     * @return ContainerStoppedEvent
-     */
-    public function getContainerStopped()
-    {
-    }
-    /**
-     * @param DelayedEvent
-     */
-    public function setDelayed(DelayedEvent $delayed)
-    {
-    }
-    /**
-     * @return DelayedEvent
-     */
-    public function getDelayed()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param FailedEvent
-     */
-    public function setFailed(FailedEvent $failed)
-    {
-    }
-    /**
-     * @return FailedEvent
-     */
-    public function getFailed()
-    {
-    }
-    /**
-     * @param PullStartedEvent
-     */
-    public function setPullStarted(PullStartedEvent $pullStarted)
-    {
-    }
-    /**
-     * @return PullStartedEvent
-     */
-    public function getPullStarted()
-    {
-    }
-    /**
-     * @param PullStoppedEvent
-     */
-    public function setPullStopped(PullStoppedEvent $pullStopped)
-    {
-    }
-    /**
-     * @return PullStoppedEvent
-     */
-    public function getPullStopped()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * @param UnexpectedExitStatusEvent
-     */
-    public function setUnexpectedExitStatus(UnexpectedExitStatusEvent $unexpectedExitStatus)
-    {
-    }
-    /**
-     * @return UnexpectedExitStatusEvent
-     */
-    public function getUnexpectedExitStatus()
-    {
-    }
-    /**
-     * @param WorkerAssignedEvent
-     */
-    public function setWorkerAssigned(WorkerAssignedEvent $workerAssigned)
-    {
-    }
-    /**
-     * @return WorkerAssignedEvent
-     */
-    public function getWorkerAssigned()
-    {
-    }
-    /**
-     * @param WorkerReleasedEvent
-     */
-    public function setWorkerReleased(WorkerReleasedEvent $workerReleased)
-    {
-    }
-    /**
-     * @return WorkerReleasedEvent
-     */
-    public function getWorkerReleased()
+    class Google_Service_CloudLifeSciences_Event extends \Google\Service\CloudLifeSciences\Event
     {
     }
 }

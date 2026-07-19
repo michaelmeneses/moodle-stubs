@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingStragglerInfo extends \Google\Model
-{
-    /**
-     * The event-time watermark lag at the time of the straggler detection.
-     *
-     * @var string
-     */
-    public $dataWatermarkLag;
-    /**
-     * End time of this straggler.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start time of this straggler.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The system watermark lag at the time of the straggler detection.
-     *
-     * @var string
-     */
-    public $systemWatermarkLag;
-    /**
-     * Name of the worker where the straggler was detected.
-     *
-     * @var string
-     */
-    public $workerName;
-    /**
-     * The event-time watermark lag at the time of the straggler detection.
-     *
-     * @param string $dataWatermarkLag
-     */
-    public function setDataWatermarkLag($dataWatermarkLag)
+namespace Google\Service\Dataflow {
+    class StreamingStragglerInfo extends \Google\Model
     {
+        /**
+         * The event-time watermark lag at the time of the straggler detection.
+         *
+         * @var string
+         */
+        public $dataWatermarkLag;
+        /**
+         * End time of this straggler.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start time of this straggler.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The system watermark lag at the time of the straggler detection.
+         *
+         * @var string
+         */
+        public $systemWatermarkLag;
+        /**
+         * Name of the worker where the straggler was detected.
+         *
+         * @var string
+         */
+        public $workerName;
+        /**
+         * The event-time watermark lag at the time of the straggler detection.
+         *
+         * @param string $dataWatermarkLag
+         */
+        public function setDataWatermarkLag($dataWatermarkLag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataWatermarkLag()
+        {
+        }
+        /**
+         * End time of this straggler.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start time of this straggler.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The system watermark lag at the time of the straggler detection.
+         *
+         * @param string $systemWatermarkLag
+         */
+        public function setSystemWatermarkLag($systemWatermarkLag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemWatermarkLag()
+        {
+        }
+        /**
+         * Name of the worker where the straggler was detected.
+         *
+         * @param string $workerName
+         */
+        public function setWorkerName($workerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingStragglerInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataWatermarkLag()
-    {
-    }
-    /**
-     * End time of this straggler.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start time of this straggler.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The system watermark lag at the time of the straggler detection.
-     *
-     * @param string $systemWatermarkLag
-     */
-    public function setSystemWatermarkLag($systemWatermarkLag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemWatermarkLag()
-    {
-    }
-    /**
-     * Name of the worker where the straggler was detected.
-     *
-     * @param string $workerName
-     */
-    public function setWorkerName($workerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerName()
+    class Google_Service_Dataflow_StreamingStragglerInfo extends \Google\Service\Dataflow\StreamingStragglerInfo
     {
     }
 }

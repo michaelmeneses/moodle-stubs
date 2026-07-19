@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata extends \Google\Model
-{
-    protected $photoIdType = AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId::class;
-    protected $photoIdDataType = '';
-    /**
-     * @var string
-     */
-    public $updateTimestampUsec;
-    /**
-     * @param AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId
-     */
-    public function setPhotoId(AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId $photoId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata extends \Google\Model
     {
+        protected $photoIdType = AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId::class;
+        protected $photoIdDataType = '';
+        /**
+         * @var string
+         */
+        public $updateTimestampUsec;
+        /**
+         * @param AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId
+         */
+        public function setPhotoId(AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId $photoId)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId
+         */
+        public function getPhotoId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTimestampUsec($updateTimestampUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTimestampUsec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadataPhotoId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhotoId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTimestampUsec($updateTimestampUsec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTimestampUsec()
+    class Google_Service_CloudSearch_AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata extends \Google\Service\CloudSearch\AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
     {
     }
 }

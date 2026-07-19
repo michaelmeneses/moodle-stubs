@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class IssuanceModes extends \Google\Model
-{
-    /**
-     * Optional. When true, allows callers to create Certificates by specifying a
-     * CertificateConfig.
-     *
-     * @var bool
-     */
-    public $allowConfigBasedIssuance;
-    /**
-     * Optional. When true, allows callers to create Certificates by specifying a
-     * CSR.
-     *
-     * @var bool
-     */
-    public $allowCsrBasedIssuance;
-    /**
-     * Optional. When true, allows callers to create Certificates by specifying a
-     * CertificateConfig.
-     *
-     * @param bool $allowConfigBasedIssuance
-     */
-    public function setAllowConfigBasedIssuance($allowConfigBasedIssuance)
+namespace Google\Service\CertificateAuthorityService {
+    class IssuanceModes extends \Google\Model
     {
+        /**
+         * Optional. When true, allows callers to create Certificates by specifying a
+         * CertificateConfig.
+         *
+         * @var bool
+         */
+        public $allowConfigBasedIssuance;
+        /**
+         * Optional. When true, allows callers to create Certificates by specifying a
+         * CSR.
+         *
+         * @var bool
+         */
+        public $allowCsrBasedIssuance;
+        /**
+         * Optional. When true, allows callers to create Certificates by specifying a
+         * CertificateConfig.
+         *
+         * @param bool $allowConfigBasedIssuance
+         */
+        public function setAllowConfigBasedIssuance($allowConfigBasedIssuance)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowConfigBasedIssuance()
+        {
+        }
+        /**
+         * Optional. When true, allows callers to create Certificates by specifying a
+         * CSR.
+         *
+         * @param bool $allowCsrBasedIssuance
+         */
+        public function setAllowCsrBasedIssuance($allowCsrBasedIssuance)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowCsrBasedIssuance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\IssuanceModes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowConfigBasedIssuance()
-    {
-    }
-    /**
-     * Optional. When true, allows callers to create Certificates by specifying a
-     * CSR.
-     *
-     * @param bool $allowCsrBasedIssuance
-     */
-    public function setAllowCsrBasedIssuance($allowCsrBasedIssuance)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowCsrBasedIssuance()
+    class Google_Service_CertificateAuthorityService_IssuanceModes extends \Google\Service\CertificateAuthorityService\IssuanceModes
     {
     }
 }

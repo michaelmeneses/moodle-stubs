@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BasicFilter extends \Google\Collection
-{
-    protected $collection_key = 'sortSpecs';
-    protected $criteriaType = FilterCriteria::class;
-    protected $criteriaDataType = 'map';
-    protected $filterSpecsType = FilterSpec::class;
-    protected $filterSpecsDataType = 'array';
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $sortSpecsType = SortSpec::class;
-    protected $sortSpecsDataType = 'array';
-    /**
-     * The table this filter is backed by, if any. When writing, only one of range
-     * or table_id may be set.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * The criteria for showing/hiding values per column. The map's key is the
-     * column index, and the value is the criteria for that column. This field is
-     * deprecated in favor of filter_specs.
-     *
-     * @deprecated
-     * @param FilterCriteria[] $criteria
-     */
-    public function setCriteria($criteria)
+namespace Google\Service\Sheets {
+    class BasicFilter extends \Google\Collection
     {
+        protected $collection_key = 'sortSpecs';
+        protected $criteriaType = FilterCriteria::class;
+        protected $criteriaDataType = 'map';
+        protected $filterSpecsType = FilterSpec::class;
+        protected $filterSpecsDataType = 'array';
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $sortSpecsType = SortSpec::class;
+        protected $sortSpecsDataType = 'array';
+        /**
+         * The table this filter is backed by, if any. When writing, only one of range
+         * or table_id may be set.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * The criteria for showing/hiding values per column. The map's key is the
+         * column index, and the value is the criteria for that column. This field is
+         * deprecated in favor of filter_specs.
+         *
+         * @deprecated
+         * @param FilterCriteria[] $criteria
+         */
+        public function setCriteria($criteria)
+        {
+        }
+        /**
+         * @deprecated
+         * @return FilterCriteria[]
+         */
+        public function getCriteria()
+        {
+        }
+        /**
+         * The filter criteria per column. Both criteria and filter_specs are
+         * populated in responses. If both fields are specified in an update request,
+         * this field takes precedence.
+         *
+         * @param FilterSpec[] $filterSpecs
+         */
+        public function setFilterSpecs($filterSpecs)
+        {
+        }
+        /**
+         * @return FilterSpec[]
+         */
+        public function getFilterSpecs()
+        {
+        }
+        /**
+         * The range the filter covers.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The sort order per column. Later specifications are used when values are
+         * equal in the earlier specifications.
+         *
+         * @param SortSpec[] $sortSpecs
+         */
+        public function setSortSpecs($sortSpecs)
+        {
+        }
+        /**
+         * @return SortSpec[]
+         */
+        public function getSortSpecs()
+        {
+        }
+        /**
+         * The table this filter is backed by, if any. When writing, only one of range
+         * or table_id may be set.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return FilterCriteria[]
+     * Runtime class alias of \Google\Service\Sheets\BasicFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCriteria()
-    {
-    }
-    /**
-     * The filter criteria per column. Both criteria and filter_specs are
-     * populated in responses. If both fields are specified in an update request,
-     * this field takes precedence.
-     *
-     * @param FilterSpec[] $filterSpecs
-     */
-    public function setFilterSpecs($filterSpecs)
-    {
-    }
-    /**
-     * @return FilterSpec[]
-     */
-    public function getFilterSpecs()
-    {
-    }
-    /**
-     * The range the filter covers.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The sort order per column. Later specifications are used when values are
-     * equal in the earlier specifications.
-     *
-     * @param SortSpec[] $sortSpecs
-     */
-    public function setSortSpecs($sortSpecs)
-    {
-    }
-    /**
-     * @return SortSpec[]
-     */
-    public function getSortSpecs()
-    {
-    }
-    /**
-     * The table this filter is backed by, if any. When writing, only one of range
-     * or table_id may be set.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_Sheets_BasicFilter extends \Google\Service\Sheets\BasicFilter
     {
     }
 }

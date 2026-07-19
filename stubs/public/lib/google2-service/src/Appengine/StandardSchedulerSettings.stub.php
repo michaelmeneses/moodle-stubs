@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class StandardSchedulerSettings extends \Google\Model
-{
-    /**
-     * Maximum number of instances to run for this version. Set to 2147483647 to
-     * disable max_instances configuration.
-     *
-     * @var int
-     */
-    public $maxInstances;
-    /**
-     * Minimum number of instances to run for this version. Set to zero to disable
-     * min_instances configuration.
-     *
-     * @var int
-     */
-    public $minInstances;
-    /**
-     * Target CPU utilization ratio to maintain when scaling.
-     *
-     * @var 
-     */
-    public $targetCpuUtilization;
-    /**
-     * Target throughput utilization ratio to maintain when scaling
-     *
-     * @var 
-     */
-    public $targetThroughputUtilization;
-    /**
-     * Maximum number of instances to run for this version. Set to 2147483647 to
-     * disable max_instances configuration.
-     *
-     * @param int $maxInstances
-     */
-    public function setMaxInstances($maxInstances)
+namespace Google\Service\Appengine {
+    class StandardSchedulerSettings extends \Google\Model
     {
+        /**
+         * Maximum number of instances to run for this version. Set to 2147483647 to
+         * disable max_instances configuration.
+         *
+         * @var int
+         */
+        public $maxInstances;
+        /**
+         * Minimum number of instances to run for this version. Set to zero to disable
+         * min_instances configuration.
+         *
+         * @var int
+         */
+        public $minInstances;
+        /**
+         * Target CPU utilization ratio to maintain when scaling.
+         *
+         * @var 
+         */
+        public $targetCpuUtilization;
+        /**
+         * Target throughput utilization ratio to maintain when scaling
+         *
+         * @var 
+         */
+        public $targetThroughputUtilization;
+        /**
+         * Maximum number of instances to run for this version. Set to 2147483647 to
+         * disable max_instances configuration.
+         *
+         * @param int $maxInstances
+         */
+        public function setMaxInstances($maxInstances)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxInstances()
+        {
+        }
+        /**
+         * Minimum number of instances to run for this version. Set to zero to disable
+         * min_instances configuration.
+         *
+         * @param int $minInstances
+         */
+        public function setMinInstances($minInstances)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinInstances()
+        {
+        }
+        public function setTargetCpuUtilization($targetCpuUtilization)
+        {
+        }
+        public function getTargetCpuUtilization()
+        {
+        }
+        public function setTargetThroughputUtilization($targetThroughputUtilization)
+        {
+        }
+        public function getTargetThroughputUtilization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Appengine\StandardSchedulerSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxInstances()
-    {
-    }
-    /**
-     * Minimum number of instances to run for this version. Set to zero to disable
-     * min_instances configuration.
-     *
-     * @param int $minInstances
-     */
-    public function setMinInstances($minInstances)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinInstances()
-    {
-    }
-    public function setTargetCpuUtilization($targetCpuUtilization)
-    {
-    }
-    public function getTargetCpuUtilization()
-    {
-    }
-    public function setTargetThroughputUtilization($targetThroughputUtilization)
-    {
-    }
-    public function getTargetThroughputUtilization()
+    class Google_Service_Appengine_StandardSchedulerSettings extends \Google\Service\Appengine\StandardSchedulerSettings
     {
     }
 }

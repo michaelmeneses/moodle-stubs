@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1OperationMetadataProgress extends \Google\Model
-{
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    public const STATE_NOT_STARTED = 'NOT_STARTED';
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    public const STATE_FINISHED = 'FINISHED';
-    /**
-     * Description of the operation's progress.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The additional details of the progress.
-     *
-     * @var array[]
-     */
-    public $details;
-    /**
-     * The percentage of the operation progress.
-     *
-     * @var int
-     */
-    public $percentDone;
-    /**
-     * State of the operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Description of the operation's progress.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1OperationMetadataProgress extends \Google\Model
     {
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        public const STATE_NOT_STARTED = 'NOT_STARTED';
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        public const STATE_FINISHED = 'FINISHED';
+        /**
+         * Description of the operation's progress.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The additional details of the progress.
+         *
+         * @var array[]
+         */
+        public $details;
+        /**
+         * The percentage of the operation progress.
+         *
+         * @var int
+         */
+        public $percentDone;
+        /**
+         * State of the operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Description of the operation's progress.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The additional details of the progress.
+         *
+         * @param array[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The percentage of the operation progress.
+         *
+         * @param int $percentDone
+         */
+        public function setPercentDone($percentDone)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentDone()
+        {
+        }
+        /**
+         * State of the operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, NOT_STARTED, IN_PROGRESS, FINISHED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1OperationMetadataProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The additional details of the progress.
-     *
-     * @param array[] $details
-     */
-    public function setDetails($details)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * The percentage of the operation progress.
-     *
-     * @param int $percentDone
-     */
-    public function setPercentDone($percentDone)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentDone()
-    {
-    }
-    /**
-     * State of the operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, NOT_STARTED, IN_PROGRESS, FINISHED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Apigee_GoogleCloudApigeeV1OperationMetadataProgress extends \Google\Service\Apigee\GoogleCloudApigeeV1OperationMetadataProgress
     {
     }
 }

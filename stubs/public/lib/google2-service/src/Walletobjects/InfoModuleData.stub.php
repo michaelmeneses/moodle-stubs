@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class InfoModuleData extends \Google\Collection
-{
-    protected $collection_key = 'labelValueRows';
-    protected $labelValueRowsType = LabelValueRow::class;
-    protected $labelValueRowsDataType = 'array';
-    /**
-     * @deprecated
-     * @var bool
-     */
-    public $showLastUpdateTime;
-    /**
-     * A list of collections of labels and values. These will be displayed one
-     * after the other in a singular column.
-     *
-     * @param LabelValueRow[] $labelValueRows
-     */
-    public function setLabelValueRows($labelValueRows)
+namespace Google\Service\Walletobjects {
+    class InfoModuleData extends \Google\Collection
     {
+        protected $collection_key = 'labelValueRows';
+        protected $labelValueRowsType = LabelValueRow::class;
+        protected $labelValueRowsDataType = 'array';
+        /**
+         * @deprecated
+         * @var bool
+         */
+        public $showLastUpdateTime;
+        /**
+         * A list of collections of labels and values. These will be displayed one
+         * after the other in a singular column.
+         *
+         * @param LabelValueRow[] $labelValueRows
+         */
+        public function setLabelValueRows($labelValueRows)
+        {
+        }
+        /**
+         * @return LabelValueRow[]
+         */
+        public function getLabelValueRows()
+        {
+        }
+        /**
+         * @deprecated
+         * @param bool $showLastUpdateTime
+         */
+        public function setShowLastUpdateTime($showLastUpdateTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getShowLastUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LabelValueRow[]
+     * Runtime class alias of \Google\Service\Walletobjects\InfoModuleData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelValueRows()
-    {
-    }
-    /**
-     * @deprecated
-     * @param bool $showLastUpdateTime
-     */
-    public function setShowLastUpdateTime($showLastUpdateTime)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getShowLastUpdateTime()
+    class Google_Service_Walletobjects_InfoModuleData extends \Google\Service\Walletobjects\InfoModuleData
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement;
-
-class ListInvitationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'invitations';
-    protected $invitationsType = Invitation::class;
-    protected $invitationsDataType = 'array';
-    /**
-     * A collection of invitations that are pending for the account. The number of
-     * invitations listed here cannot exceed 1000.
-     *
-     * @param Invitation[] $invitations
-     */
-    public function setInvitations($invitations)
+namespace Google\Service\MyBusinessAccountManagement {
+    class ListInvitationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'invitations';
+        protected $invitationsType = Invitation::class;
+        protected $invitationsDataType = 'array';
+        /**
+         * A collection of invitations that are pending for the account. The number of
+         * invitations listed here cannot exceed 1000.
+         *
+         * @param Invitation[] $invitations
+         */
+        public function setInvitations($invitations)
+        {
+        }
+        /**
+         * @return Invitation[]
+         */
+        public function getInvitations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Invitation[]
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\ListInvitationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvitations()
+    class Google_Service_MyBusinessAccountManagement_ListInvitationsResponse extends \Google\Service\MyBusinessAccountManagement\ListInvitationsResponse
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class AccessApprovalServiceAccount extends \Google\Model
-{
-    /**
-     * Email address of the service account.
-     *
-     * @var string
-     */
-    public $accountEmail;
-    /**
-     * The resource name of the Access Approval service account. Format is one of:
-     * * "projects/{project}/serviceAccount" * "folders/{folder}/serviceAccount" *
-     * "organizations/{organization}/serviceAccount"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Email address of the service account.
-     *
-     * @param string $accountEmail
-     */
-    public function setAccountEmail($accountEmail)
+namespace Google\Service\AccessApproval {
+    class AccessApprovalServiceAccount extends \Google\Model
     {
+        /**
+         * Email address of the service account.
+         *
+         * @var string
+         */
+        public $accountEmail;
+        /**
+         * The resource name of the Access Approval service account. Format is one of:
+         * * "projects/{project}/serviceAccount" * "folders/{folder}/serviceAccount" *
+         * "organizations/{organization}/serviceAccount"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Email address of the service account.
+         *
+         * @param string $accountEmail
+         */
+        public function setAccountEmail($accountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountEmail()
+        {
+        }
+        /**
+         * The resource name of the Access Approval service account. Format is one of:
+         * * "projects/{project}/serviceAccount" * "folders/{folder}/serviceAccount" *
+         * "organizations/{organization}/serviceAccount"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessApproval\AccessApprovalServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountEmail()
-    {
-    }
-    /**
-     * The resource name of the Access Approval service account. Format is one of:
-     * * "projects/{project}/serviceAccount" * "folders/{folder}/serviceAccount" *
-     * "organizations/{organization}/serviceAccount"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AccessApproval_AccessApprovalServiceAccount extends \Google\Service\AccessApproval\AccessApprovalServiceAccount
     {
     }
 }

@@ -21,103 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager\Resource;
-
-/**
- * The "dnsAuthorizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $certificatemanagerService = new Google\Service\CertificateManager(...);
- *   $dnsAuthorizations = $certificatemanagerService->projects_locations_dnsAuthorizations;
- *  </code>
- */
-class ProjectsLocationsDnsAuthorizations extends \Google\Service\Resource
-{
+namespace Google\Service\CertificateManager\Resource {
+    use Google\Service\CertificateManager\DnsAuthorization;
+    use Google\Service\CertificateManager\ListDnsAuthorizationsResponse;
+    use Google\Service\CertificateManager\Operation;
     /**
-     * Creates a new DnsAuthorization in a given project and location.
-     * (dnsAuthorizations.create)
-     *
-     * @param string $parent Required. The parent resource of the dns authorization.
-     * Must be in the format `projects/locations`.
-     * @param DnsAuthorization $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dnsAuthorizationId Required. A user-provided name of the
-     * dns authorization.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "dnsAuthorizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $certificatemanagerService = new Google\Service\CertificateManager(...);
+     *   $dnsAuthorizations = $certificatemanagerService->projects_locations_dnsAuthorizations;
+     *  </code>
      */
-    public function create($parent, DnsAuthorization $postBody, $optParams = [])
+    class ProjectsLocationsDnsAuthorizations extends \Google\Service\Resource
     {
+        /**
+         * Creates a new DnsAuthorization in a given project and location.
+         * (dnsAuthorizations.create)
+         *
+         * @param string $parent Required. The parent resource of the dns authorization.
+         * Must be in the format `projects/locations`.
+         * @param DnsAuthorization $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dnsAuthorizationId Required. A user-provided name of the
+         * dns authorization.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, DnsAuthorization $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single DnsAuthorization. (dnsAuthorizations.delete)
+         *
+         * @param string $name Required. A name of the dns authorization to delete. Must
+         * be in the format `projects/locations/dnsAuthorizations`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single DnsAuthorization. (dnsAuthorizations.get)
+         *
+         * @param string $name Required. A name of the dns authorization to describe.
+         * Must be in the format `projects/locations/dnsAuthorizations`.
+         * @param array $optParams Optional parameters.
+         * @return DnsAuthorization
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists DnsAuthorizations in a given project and location.
+         * (dnsAuthorizations.listProjectsLocationsDnsAuthorizations)
+         *
+         * @param string $parent Required. The project and location from which the dns
+         * authorizations should be listed, specified in the format
+         * `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression to restrict the Dns
+         * Authorizations returned.
+         * @opt_param string orderBy Optional. A list of Dns Authorization field names
+         * used to specify the order of the returned results. The default sorting order
+         * is ascending. To specify descending order for a field, add a suffix `"
+         * desc"`.
+         * @opt_param int pageSize Optional. Maximum number of dns authorizations to
+         * return per call.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListDnsAuthorizationsResponse`. Indicates that this is a continuation of a
+         * prior `ListDnsAuthorizations` call, and that the system should return the
+         * next page of data.
+         * @return ListDnsAuthorizationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDnsAuthorizations($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a DnsAuthorization. (dnsAuthorizations.patch)
+         *
+         * @param string $name Identifier. A user-defined name of the dns authorization.
+         * DnsAuthorization names must be unique globally and match pattern
+         * `projects/locations/dnsAuthorizations`.
+         * @param DnsAuthorization $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The update mask applies to the
+         * resource. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, DnsAuthorization $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single DnsAuthorization. (dnsAuthorizations.delete)
-     *
-     * @param string $name Required. A name of the dns authorization to delete. Must
-     * be in the format `projects/locations/dnsAuthorizations`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CertificateManager\Resource\ProjectsLocationsDnsAuthorizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single DnsAuthorization. (dnsAuthorizations.get)
-     *
-     * @param string $name Required. A name of the dns authorization to describe.
-     * Must be in the format `projects/locations/dnsAuthorizations`.
-     * @param array $optParams Optional parameters.
-     * @return DnsAuthorization
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists DnsAuthorizations in a given project and location.
-     * (dnsAuthorizations.listProjectsLocationsDnsAuthorizations)
-     *
-     * @param string $parent Required. The project and location from which the dns
-     * authorizations should be listed, specified in the format
-     * `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression to restrict the Dns
-     * Authorizations returned.
-     * @opt_param string orderBy Optional. A list of Dns Authorization field names
-     * used to specify the order of the returned results. The default sorting order
-     * is ascending. To specify descending order for a field, add a suffix `"
-     * desc"`.
-     * @opt_param int pageSize Optional. Maximum number of dns authorizations to
-     * return per call.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListDnsAuthorizationsResponse`. Indicates that this is a continuation of a
-     * prior `ListDnsAuthorizations` call, and that the system should return the
-     * next page of data.
-     * @return ListDnsAuthorizationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDnsAuthorizations($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a DnsAuthorization. (dnsAuthorizations.patch)
-     *
-     * @param string $name Identifier. A user-defined name of the dns authorization.
-     * DnsAuthorization names must be unique globally and match pattern
-     * `projects/locations/dnsAuthorizations`.
-     * @param DnsAuthorization $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The update mask applies to the
-     * resource. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, DnsAuthorization $postBody, $optParams = [])
+    class Google_Service_CertificateManager_Resource_ProjectsLocationsDnsAuthorizations extends \Google\Service\CertificateManager\Resource\ProjectsLocationsDnsAuthorizations
     {
     }
 }

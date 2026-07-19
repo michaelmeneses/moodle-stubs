@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub\Resource;
-
-/**
- * The "platforms" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ideahubService = new Google\Service\Ideahub(...);
- *   $platforms = $ideahubService->platforms;
- *  </code>
- */
-class Platforms extends \Google\Service\Resource
-{
+namespace Google\Service\Ideahub\Resource {
+    /**
+     * The "platforms" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ideahubService = new Google\Service\Ideahub(...);
+     *   $platforms = $ideahubService->platforms;
+     *  </code>
+     */
+    class Platforms extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\Resource\Platforms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_Resource_Platforms extends \Google\Service\Ideahub\Resource\Platforms
+    {
+    }
 }

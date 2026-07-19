@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InapplicabilityDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $inapplicableCount;
-    /**
-     * @var string
-     */
-    public $inapplicableReason;
-    /**
-     * @param string
-     */
-    public function setInapplicableCount($inapplicableCount)
+namespace Google\Service\ShoppingContent {
+    class InapplicabilityDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $inapplicableCount;
+        /**
+         * @var string
+         */
+        public $inapplicableReason;
+        /**
+         * @param string
+         */
+        public function setInapplicableCount($inapplicableCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInapplicableCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInapplicableReason($inapplicableReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInapplicableReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\InapplicabilityDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInapplicableCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInapplicableReason($inapplicableReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInapplicableReason()
+    class Google_Service_ShoppingContent_InapplicabilityDetails extends \Google\Service\ShoppingContent\InapplicabilityDetails
     {
     }
 }

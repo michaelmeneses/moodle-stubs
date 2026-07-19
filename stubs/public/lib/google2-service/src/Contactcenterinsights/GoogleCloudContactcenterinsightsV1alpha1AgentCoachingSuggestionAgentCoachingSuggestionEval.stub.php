@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actionActionSuggestionEval;
-    /**
-     * @var string
-     */
-    public $sampleResponseEval;
-    /**
-     * @param string
-     */
-    public function setActionActionSuggestionEval($actionActionSuggestionEval)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actionActionSuggestionEval;
+        /**
+         * @var string
+         */
+        public $sampleResponseEval;
+        /**
+         * @param string
+         */
+        public function setActionActionSuggestionEval($actionActionSuggestionEval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionActionSuggestionEval()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSampleResponseEval($sampleResponseEval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleResponseEval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionActionSuggestionEval()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSampleResponseEval($sampleResponseEval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleResponseEval()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval
     {
     }
 }

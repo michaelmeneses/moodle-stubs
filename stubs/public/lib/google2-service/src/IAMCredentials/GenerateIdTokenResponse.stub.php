@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials;
-
-class GenerateIdTokenResponse extends \Google\Model
-{
-    /**
-     * The OpenId Connect ID token. The token is a JSON Web Token (JWT) that
-     * contains a payload with claims. See the [JSON Web Token
-     * spec](https://tools.ietf.org/html/rfc7519) for more information. Here is an
-     * example of a decoded JWT payload: ``` { "iss":
-     * "https://accounts.google.com", "iat": 1496953245, "exp": 1496953245, "aud":
-     * "https://www.example.com", "sub": "107517467455664443765", "azp":
-     * "107517467455664443765", "email": "my-iam-account@my-
-     * project.iam.gserviceaccount.com", "email_verified": true, "google": {
-     * "organization_number": 123456 } } ```
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The OpenId Connect ID token. The token is a JSON Web Token (JWT) that
-     * contains a payload with claims. See the [JSON Web Token
-     * spec](https://tools.ietf.org/html/rfc7519) for more information. Here is an
-     * example of a decoded JWT payload: ``` { "iss":
-     * "https://accounts.google.com", "iat": 1496953245, "exp": 1496953245, "aud":
-     * "https://www.example.com", "sub": "107517467455664443765", "azp":
-     * "107517467455664443765", "email": "my-iam-account@my-
-     * project.iam.gserviceaccount.com", "email_verified": true, "google": {
-     * "organization_number": 123456 } } ```
-     *
-     * @param string $token
-     */
-    public function setToken($token)
+namespace Google\Service\IAMCredentials {
+    class GenerateIdTokenResponse extends \Google\Model
     {
+        /**
+         * The OpenId Connect ID token. The token is a JSON Web Token (JWT) that
+         * contains a payload with claims. See the [JSON Web Token
+         * spec](https://tools.ietf.org/html/rfc7519) for more information. Here is an
+         * example of a decoded JWT payload: ``` { "iss":
+         * "https://accounts.google.com", "iat": 1496953245, "exp": 1496953245, "aud":
+         * "https://www.example.com", "sub": "107517467455664443765", "azp":
+         * "107517467455664443765", "email": "my-iam-account@my-
+         * project.iam.gserviceaccount.com", "email_verified": true, "google": {
+         * "organization_number": 123456 } } ```
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The OpenId Connect ID token. The token is a JSON Web Token (JWT) that
+         * contains a payload with claims. See the [JSON Web Token
+         * spec](https://tools.ietf.org/html/rfc7519) for more information. Here is an
+         * example of a decoded JWT payload: ``` { "iss":
+         * "https://accounts.google.com", "iat": 1496953245, "exp": 1496953245, "aud":
+         * "https://www.example.com", "sub": "107517467455664443765", "azp":
+         * "107517467455664443765", "email": "my-iam-account@my-
+         * project.iam.gserviceaccount.com", "email_verified": true, "google": {
+         * "organization_number": 123456 } } ```
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IAMCredentials\GenerateIdTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
+    class Google_Service_IAMCredentials_GenerateIdTokenResponse extends \Google\Service\IAMCredentials\GenerateIdTokenResponse
     {
     }
 }

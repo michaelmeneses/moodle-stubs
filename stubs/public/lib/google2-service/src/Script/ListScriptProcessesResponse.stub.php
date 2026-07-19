@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ListScriptProcessesResponse extends \Google\Collection
-{
-    protected $collection_key = 'processes';
-    /**
-     * Token for the next page of results. If empty, there are no more pages
-     * remaining.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $processesType = GoogleAppsScriptTypeProcess::class;
-    protected $processesDataType = 'array';
-    /**
-     * Token for the next page of results. If empty, there are no more pages
-     * remaining.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Script {
+    class ListScriptProcessesResponse extends \Google\Collection
     {
+        protected $collection_key = 'processes';
+        /**
+         * Token for the next page of results. If empty, there are no more pages
+         * remaining.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $processesType = GoogleAppsScriptTypeProcess::class;
+        protected $processesDataType = 'array';
+        /**
+         * Token for the next page of results. If empty, there are no more pages
+         * remaining.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of processes matching request parameters.
+         *
+         * @param GoogleAppsScriptTypeProcess[] $processes
+         */
+        public function setProcesses($processes)
+        {
+        }
+        /**
+         * @return GoogleAppsScriptTypeProcess[]
+         */
+        public function getProcesses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\ListScriptProcessesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of processes matching request parameters.
-     *
-     * @param GoogleAppsScriptTypeProcess[] $processes
-     */
-    public function setProcesses($processes)
-    {
-    }
-    /**
-     * @return GoogleAppsScriptTypeProcess[]
-     */
-    public function getProcesses()
+    class Google_Service_Script_ListScriptProcessesResponse extends \Google\Service\Script\ListScriptProcessesResponse
     {
     }
 }

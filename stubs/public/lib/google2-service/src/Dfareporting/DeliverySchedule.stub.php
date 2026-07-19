@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DeliverySchedule extends \Google\Model
-{
-    public const PRIORITY_AD_PRIORITY_01 = 'AD_PRIORITY_01';
-    public const PRIORITY_AD_PRIORITY_02 = 'AD_PRIORITY_02';
-    public const PRIORITY_AD_PRIORITY_03 = 'AD_PRIORITY_03';
-    public const PRIORITY_AD_PRIORITY_04 = 'AD_PRIORITY_04';
-    public const PRIORITY_AD_PRIORITY_05 = 'AD_PRIORITY_05';
-    public const PRIORITY_AD_PRIORITY_06 = 'AD_PRIORITY_06';
-    public const PRIORITY_AD_PRIORITY_07 = 'AD_PRIORITY_07';
-    public const PRIORITY_AD_PRIORITY_08 = 'AD_PRIORITY_08';
-    public const PRIORITY_AD_PRIORITY_09 = 'AD_PRIORITY_09';
-    public const PRIORITY_AD_PRIORITY_10 = 'AD_PRIORITY_10';
-    public const PRIORITY_AD_PRIORITY_11 = 'AD_PRIORITY_11';
-    public const PRIORITY_AD_PRIORITY_12 = 'AD_PRIORITY_12';
-    public const PRIORITY_AD_PRIORITY_13 = 'AD_PRIORITY_13';
-    public const PRIORITY_AD_PRIORITY_14 = 'AD_PRIORITY_14';
-    public const PRIORITY_AD_PRIORITY_15 = 'AD_PRIORITY_15';
-    public const PRIORITY_AD_PRIORITY_16 = 'AD_PRIORITY_16';
-    protected $frequencyCapType = FrequencyCap::class;
-    protected $frequencyCapDataType = '';
-    /**
-     * Whether or not hard cutoff is enabled. If true, the ad will not serve after
-     * the end date and time. Otherwise the ad will continue to be served until it
-     * has reached its delivery goals.
-     *
-     * @var bool
-     */
-    public $hardCutoff;
-    /**
-     * Impression ratio for this ad. This ratio determines how often each ad is
-     * served relative to the others. For example, if ad A has an impression ratio
-     * of 1 and ad B has an impression ratio of 3, then Campaign Manager will
-     * serve ad B three times as often as ad A. Acceptable values are 1 to 10,
-     * inclusive.
-     *
-     * @var string
-     */
-    public $impressionRatio;
-    /**
-     * Serving priority of an ad, with respect to other ads. The lower the
-     * priority number, the greater the priority with which it is served.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * Limit on the number of times an individual user can be served the ad within
-     * a specified period of time.
-     *
-     * @param FrequencyCap $frequencyCap
-     */
-    public function setFrequencyCap(FrequencyCap $frequencyCap)
+namespace Google\Service\Dfareporting {
+    class DeliverySchedule extends \Google\Model
     {
+        public const PRIORITY_AD_PRIORITY_01 = 'AD_PRIORITY_01';
+        public const PRIORITY_AD_PRIORITY_02 = 'AD_PRIORITY_02';
+        public const PRIORITY_AD_PRIORITY_03 = 'AD_PRIORITY_03';
+        public const PRIORITY_AD_PRIORITY_04 = 'AD_PRIORITY_04';
+        public const PRIORITY_AD_PRIORITY_05 = 'AD_PRIORITY_05';
+        public const PRIORITY_AD_PRIORITY_06 = 'AD_PRIORITY_06';
+        public const PRIORITY_AD_PRIORITY_07 = 'AD_PRIORITY_07';
+        public const PRIORITY_AD_PRIORITY_08 = 'AD_PRIORITY_08';
+        public const PRIORITY_AD_PRIORITY_09 = 'AD_PRIORITY_09';
+        public const PRIORITY_AD_PRIORITY_10 = 'AD_PRIORITY_10';
+        public const PRIORITY_AD_PRIORITY_11 = 'AD_PRIORITY_11';
+        public const PRIORITY_AD_PRIORITY_12 = 'AD_PRIORITY_12';
+        public const PRIORITY_AD_PRIORITY_13 = 'AD_PRIORITY_13';
+        public const PRIORITY_AD_PRIORITY_14 = 'AD_PRIORITY_14';
+        public const PRIORITY_AD_PRIORITY_15 = 'AD_PRIORITY_15';
+        public const PRIORITY_AD_PRIORITY_16 = 'AD_PRIORITY_16';
+        protected $frequencyCapType = FrequencyCap::class;
+        protected $frequencyCapDataType = '';
+        /**
+         * Whether or not hard cutoff is enabled. If true, the ad will not serve after
+         * the end date and time. Otherwise the ad will continue to be served until it
+         * has reached its delivery goals.
+         *
+         * @var bool
+         */
+        public $hardCutoff;
+        /**
+         * Impression ratio for this ad. This ratio determines how often each ad is
+         * served relative to the others. For example, if ad A has an impression ratio
+         * of 1 and ad B has an impression ratio of 3, then Campaign Manager will
+         * serve ad B three times as often as ad A. Acceptable values are 1 to 10,
+         * inclusive.
+         *
+         * @var string
+         */
+        public $impressionRatio;
+        /**
+         * Serving priority of an ad, with respect to other ads. The lower the
+         * priority number, the greater the priority with which it is served.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * Limit on the number of times an individual user can be served the ad within
+         * a specified period of time.
+         *
+         * @param FrequencyCap $frequencyCap
+         */
+        public function setFrequencyCap(FrequencyCap $frequencyCap)
+        {
+        }
+        /**
+         * @return FrequencyCap
+         */
+        public function getFrequencyCap()
+        {
+        }
+        /**
+         * Whether or not hard cutoff is enabled. If true, the ad will not serve after
+         * the end date and time. Otherwise the ad will continue to be served until it
+         * has reached its delivery goals.
+         *
+         * @param bool $hardCutoff
+         */
+        public function setHardCutoff($hardCutoff)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHardCutoff()
+        {
+        }
+        /**
+         * Impression ratio for this ad. This ratio determines how often each ad is
+         * served relative to the others. For example, if ad A has an impression ratio
+         * of 1 and ad B has an impression ratio of 3, then Campaign Manager will
+         * serve ad B three times as often as ad A. Acceptable values are 1 to 10,
+         * inclusive.
+         *
+         * @param string $impressionRatio
+         */
+        public function setImpressionRatio($impressionRatio)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpressionRatio()
+        {
+        }
+        /**
+         * Serving priority of an ad, with respect to other ads. The lower the
+         * priority number, the greater the priority with which it is served.
+         *
+         * Accepted values: AD_PRIORITY_01, AD_PRIORITY_02, AD_PRIORITY_03,
+         * AD_PRIORITY_04, AD_PRIORITY_05, AD_PRIORITY_06, AD_PRIORITY_07,
+         * AD_PRIORITY_08, AD_PRIORITY_09, AD_PRIORITY_10, AD_PRIORITY_11,
+         * AD_PRIORITY_12, AD_PRIORITY_13, AD_PRIORITY_14, AD_PRIORITY_15,
+         * AD_PRIORITY_16
+         *
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FrequencyCap
+     * Runtime class alias of \Google\Service\Dfareporting\DeliverySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequencyCap()
-    {
-    }
-    /**
-     * Whether or not hard cutoff is enabled. If true, the ad will not serve after
-     * the end date and time. Otherwise the ad will continue to be served until it
-     * has reached its delivery goals.
-     *
-     * @param bool $hardCutoff
-     */
-    public function setHardCutoff($hardCutoff)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHardCutoff()
-    {
-    }
-    /**
-     * Impression ratio for this ad. This ratio determines how often each ad is
-     * served relative to the others. For example, if ad A has an impression ratio
-     * of 1 and ad B has an impression ratio of 3, then Campaign Manager will
-     * serve ad B three times as often as ad A. Acceptable values are 1 to 10,
-     * inclusive.
-     *
-     * @param string $impressionRatio
-     */
-    public function setImpressionRatio($impressionRatio)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImpressionRatio()
-    {
-    }
-    /**
-     * Serving priority of an ad, with respect to other ads. The lower the
-     * priority number, the greater the priority with which it is served.
-     *
-     * Accepted values: AD_PRIORITY_01, AD_PRIORITY_02, AD_PRIORITY_03,
-     * AD_PRIORITY_04, AD_PRIORITY_05, AD_PRIORITY_06, AD_PRIORITY_07,
-     * AD_PRIORITY_08, AD_PRIORITY_09, AD_PRIORITY_10, AD_PRIORITY_11,
-     * AD_PRIORITY_12, AD_PRIORITY_13, AD_PRIORITY_14, AD_PRIORITY_15,
-     * AD_PRIORITY_16
-     *
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return self::PRIORITY_*
-     */
-    public function getPriority()
+    class Google_Service_Dfareporting_DeliverySchedule extends \Google\Service\Dfareporting\DeliverySchedule
     {
     }
 }

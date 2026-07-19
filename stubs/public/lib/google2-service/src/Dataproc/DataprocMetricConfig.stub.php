@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class DataprocMetricConfig extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Required. Metrics sources to enable.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\Dataproc {
+    class DataprocMetricConfig extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Required. Metrics sources to enable.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Metric[]
+     * Runtime class alias of \Google\Service\Dataproc\DataprocMetricConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
+    class Google_Service_Dataproc_DataprocMetricConfig extends \Google\Service\Dataproc\DataprocMetricConfig
     {
     }
 }

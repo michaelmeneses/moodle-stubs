@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListNonBillableWinningBidsResponse extends \Google\Collection
-{
-    protected $collection_key = 'nonBillableWinningBidStatusRows';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListNonBillableWinningBidsRequest.pageToken field in the subsequent call to
-     * the nonBillableWinningBids.list method to retrieve the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $nonBillableWinningBidStatusRowsType = NonBillableWinningBidStatusRow::class;
-    protected $nonBillableWinningBidStatusRowsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListNonBillableWinningBidsRequest.pageToken field in the subsequent call to
-     * the nonBillableWinningBids.list method to retrieve the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListNonBillableWinningBidsResponse extends \Google\Collection
     {
+        protected $collection_key = 'nonBillableWinningBidStatusRows';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListNonBillableWinningBidsRequest.pageToken field in the subsequent call to
+         * the nonBillableWinningBids.list method to retrieve the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $nonBillableWinningBidStatusRowsType = NonBillableWinningBidStatusRow::class;
+        protected $nonBillableWinningBidStatusRowsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListNonBillableWinningBidsRequest.pageToken field in the subsequent call to
+         * the nonBillableWinningBids.list method to retrieve the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of rows, with counts of bids not billed aggregated by reason.
+         *
+         * @param NonBillableWinningBidStatusRow[] $nonBillableWinningBidStatusRows
+         */
+        public function setNonBillableWinningBidStatusRows($nonBillableWinningBidStatusRows)
+        {
+        }
+        /**
+         * @return NonBillableWinningBidStatusRow[]
+         */
+        public function getNonBillableWinningBidStatusRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListNonBillableWinningBidsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of rows, with counts of bids not billed aggregated by reason.
-     *
-     * @param NonBillableWinningBidStatusRow[] $nonBillableWinningBidStatusRows
-     */
-    public function setNonBillableWinningBidStatusRows($nonBillableWinningBidStatusRows)
-    {
-    }
-    /**
-     * @return NonBillableWinningBidStatusRow[]
-     */
-    public function getNonBillableWinningBidStatusRows()
+    class Google_Service_AdExchangeBuyerII_ListNonBillableWinningBidsResponse extends \Google\Service\AdExchangeBuyerII\ListNonBillableWinningBidsResponse
     {
     }
 }

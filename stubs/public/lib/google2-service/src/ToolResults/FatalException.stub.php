@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class FatalException extends \Google\Model
-{
-    protected $stackTraceType = StackTrace::class;
-    protected $stackTraceDataType = '';
-    /**
-     * The stack trace of the fatal exception. Optional.
-     *
-     * @param StackTrace $stackTrace
-     */
-    public function setStackTrace(StackTrace $stackTrace)
+namespace Google\Service\ToolResults {
+    class FatalException extends \Google\Model
     {
+        protected $stackTraceType = StackTrace::class;
+        protected $stackTraceDataType = '';
+        /**
+         * The stack trace of the fatal exception. Optional.
+         *
+         * @param StackTrace $stackTrace
+         */
+        public function setStackTrace(StackTrace $stackTrace)
+        {
+        }
+        /**
+         * @return StackTrace
+         */
+        public function getStackTrace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StackTrace
+     * Runtime class alias of \Google\Service\ToolResults\FatalException registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStackTrace()
+    class Google_Service_ToolResults_FatalException extends \Google\Service\ToolResults\FatalException
     {
     }
 }

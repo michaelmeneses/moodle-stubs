@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $advisorynotificationsService = new Google\Service\Advisorynotifications(...);
- *   $projects = $advisorynotificationsService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Advisorynotifications\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $advisorynotificationsService = new Google\Service\Advisorynotifications(...);
+     *   $projects = $advisorynotificationsService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Advisorynotifications\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Advisorynotifications_Resource_Projects extends \Google\Service\Advisorynotifications\Resource\Projects
+    {
+    }
 }

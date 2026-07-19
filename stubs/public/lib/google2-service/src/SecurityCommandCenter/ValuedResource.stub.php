@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ValuedResource extends \Google\Collection
-{
-    /**
-     * The resource value isn't specified.
-     */
-    public const RESOURCE_VALUE_RESOURCE_VALUE_UNSPECIFIED = 'RESOURCE_VALUE_UNSPECIFIED';
-    /**
-     * This is a low-value resource.
-     */
-    public const RESOURCE_VALUE_RESOURCE_VALUE_LOW = 'RESOURCE_VALUE_LOW';
-    /**
-     * This is a medium-value resource.
-     */
-    public const RESOURCE_VALUE_RESOURCE_VALUE_MEDIUM = 'RESOURCE_VALUE_MEDIUM';
-    /**
-     * This is a high-value resource.
-     */
-    public const RESOURCE_VALUE_RESOURCE_VALUE_HIGH = 'RESOURCE_VALUE_HIGH';
-    protected $collection_key = 'resourceValueConfigsUsed';
-    /**
-     * Human-readable name of the valued resource.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Exposed score for this valued resource. A value of 0 means no exposure was
-     * detected exposure.
-     *
-     * @var 
-     */
-    public $exposedScore;
-    /**
-     * Valued resource name, for example, e.g.:
-     * `organizations/123/simulations/456/valuedResources/789`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The [full resource name](https://cloud.google.com/apis/design/resource_name
-     * s#full_resource_name) of the valued resource.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The [resource type](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types) of the valued resource.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * How valuable this resource is.
-     *
-     * @var string
-     */
-    public $resourceValue;
-    protected $resourceValueConfigsUsedType = ResourceValueConfigMetadata::class;
-    protected $resourceValueConfigsUsedDataType = 'array';
-    /**
-     * Human-readable name of the valued resource.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class ValuedResource extends \Google\Collection
     {
+        /**
+         * The resource value isn't specified.
+         */
+        public const RESOURCE_VALUE_RESOURCE_VALUE_UNSPECIFIED = 'RESOURCE_VALUE_UNSPECIFIED';
+        /**
+         * This is a low-value resource.
+         */
+        public const RESOURCE_VALUE_RESOURCE_VALUE_LOW = 'RESOURCE_VALUE_LOW';
+        /**
+         * This is a medium-value resource.
+         */
+        public const RESOURCE_VALUE_RESOURCE_VALUE_MEDIUM = 'RESOURCE_VALUE_MEDIUM';
+        /**
+         * This is a high-value resource.
+         */
+        public const RESOURCE_VALUE_RESOURCE_VALUE_HIGH = 'RESOURCE_VALUE_HIGH';
+        protected $collection_key = 'resourceValueConfigsUsed';
+        /**
+         * Human-readable name of the valued resource.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Exposed score for this valued resource. A value of 0 means no exposure was
+         * detected exposure.
+         *
+         * @var 
+         */
+        public $exposedScore;
+        /**
+         * Valued resource name, for example, e.g.:
+         * `organizations/123/simulations/456/valuedResources/789`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The [full resource name](https://cloud.google.com/apis/design/resource_name
+         * s#full_resource_name) of the valued resource.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The [resource type](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types) of the valued resource.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * How valuable this resource is.
+         *
+         * @var string
+         */
+        public $resourceValue;
+        protected $resourceValueConfigsUsedType = ResourceValueConfigMetadata::class;
+        protected $resourceValueConfigsUsedDataType = 'array';
+        /**
+         * Human-readable name of the valued resource.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        public function setExposedScore($exposedScore)
+        {
+        }
+        public function getExposedScore()
+        {
+        }
+        /**
+         * Valued resource name, for example, e.g.:
+         * `organizations/123/simulations/456/valuedResources/789`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The [full resource name](https://cloud.google.com/apis/design/resource_name
+         * s#full_resource_name) of the valued resource.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The [resource type](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types) of the valued resource.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * How valuable this resource is.
+         *
+         * Accepted values: RESOURCE_VALUE_UNSPECIFIED, RESOURCE_VALUE_LOW,
+         * RESOURCE_VALUE_MEDIUM, RESOURCE_VALUE_HIGH
+         *
+         * @param self::RESOURCE_VALUE_* $resourceValue
+         */
+        public function setResourceValue($resourceValue)
+        {
+        }
+        /**
+         * @return self::RESOURCE_VALUE_*
+         */
+        public function getResourceValue()
+        {
+        }
+        /**
+         * List of resource value configurations' metadata used to determine the value
+         * of this resource. Maximum of 100.
+         *
+         * @param ResourceValueConfigMetadata[] $resourceValueConfigsUsed
+         */
+        public function setResourceValueConfigsUsed($resourceValueConfigsUsed)
+        {
+        }
+        /**
+         * @return ResourceValueConfigMetadata[]
+         */
+        public function getResourceValueConfigsUsed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ValuedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    public function setExposedScore($exposedScore)
-    {
-    }
-    public function getExposedScore()
-    {
-    }
-    /**
-     * Valued resource name, for example, e.g.:
-     * `organizations/123/simulations/456/valuedResources/789`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The [full resource name](https://cloud.google.com/apis/design/resource_name
-     * s#full_resource_name) of the valued resource.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The [resource type](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types) of the valued resource.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * How valuable this resource is.
-     *
-     * Accepted values: RESOURCE_VALUE_UNSPECIFIED, RESOURCE_VALUE_LOW,
-     * RESOURCE_VALUE_MEDIUM, RESOURCE_VALUE_HIGH
-     *
-     * @param self::RESOURCE_VALUE_* $resourceValue
-     */
-    public function setResourceValue($resourceValue)
-    {
-    }
-    /**
-     * @return self::RESOURCE_VALUE_*
-     */
-    public function getResourceValue()
-    {
-    }
-    /**
-     * List of resource value configurations' metadata used to determine the value
-     * of this resource. Maximum of 100.
-     *
-     * @param ResourceValueConfigMetadata[] $resourceValueConfigsUsed
-     */
-    public function setResourceValueConfigsUsed($resourceValueConfigsUsed)
-    {
-    }
-    /**
-     * @return ResourceValueConfigMetadata[]
-     */
-    public function getResourceValueConfigsUsed()
+    class Google_Service_SecurityCommandCenter_ValuedResource extends \Google\Service\SecurityCommandCenter\ValuedResource
     {
     }
 }

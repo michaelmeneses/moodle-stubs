@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class EnvironmentVariable extends \Google\Collection
-{
-    protected $collection_key = 'availability';
-    /**
-     * Optional. Where this variable should be made available. If left
-     * unspecified, will be available in both BUILD and BACKEND.
-     *
-     * @var string[]
-     */
-    public $availability;
-    /**
-     * A fully qualified secret version. The value of the secret will be accessed
-     * once while building the application and once per cold start of the
-     * container at runtime. The service account used by Cloud Build and by Cloud
-     * Run must each have the `secretmanager.versions.access` permission on the
-     * secret.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * A plaintext value. This value is encrypted at rest, but all project readers
-     * can view the value when reading your backend configuration.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The name of the environment variable. - Must be a valid
-     * environment variable name (e.g. A-Z or underscores). - May not start with
-     * "FIREBASE" or "GOOGLE". - May not be a reserved environment variable for
-     * KNative/Cloud Run
-     *
-     * @var string
-     */
-    public $variable;
-    /**
-     * Optional. Where this variable should be made available. If left
-     * unspecified, will be available in both BUILD and BACKEND.
-     *
-     * @param string[] $availability
-     */
-    public function setAvailability($availability)
+namespace Google\Service\FirebaseAppHosting {
+    class EnvironmentVariable extends \Google\Collection
     {
+        protected $collection_key = 'availability';
+        /**
+         * Optional. Where this variable should be made available. If left
+         * unspecified, will be available in both BUILD and BACKEND.
+         *
+         * @var string[]
+         */
+        public $availability;
+        /**
+         * A fully qualified secret version. The value of the secret will be accessed
+         * once while building the application and once per cold start of the
+         * container at runtime. The service account used by Cloud Build and by Cloud
+         * Run must each have the `secretmanager.versions.access` permission on the
+         * secret.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * A plaintext value. This value is encrypted at rest, but all project readers
+         * can view the value when reading your backend configuration.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The name of the environment variable. - Must be a valid
+         * environment variable name (e.g. A-Z or underscores). - May not start with
+         * "FIREBASE" or "GOOGLE". - May not be a reserved environment variable for
+         * KNative/Cloud Run
+         *
+         * @var string
+         */
+        public $variable;
+        /**
+         * Optional. Where this variable should be made available. If left
+         * unspecified, will be available in both BUILD and BACKEND.
+         *
+         * @param string[] $availability
+         */
+        public function setAvailability($availability)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailability()
+        {
+        }
+        /**
+         * A fully qualified secret version. The value of the secret will be accessed
+         * once while building the application and once per cold start of the
+         * container at runtime. The service account used by Cloud Build and by Cloud
+         * Run must each have the `secretmanager.versions.access` permission on the
+         * secret.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * A plaintext value. This value is encrypted at rest, but all project readers
+         * can view the value when reading your backend configuration.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Required. The name of the environment variable. - Must be a valid
+         * environment variable name (e.g. A-Z or underscores). - May not start with
+         * "FIREBASE" or "GOOGLE". - May not be a reserved environment variable for
+         * KNative/Cloud Run
+         *
+         * @param string $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\EnvironmentVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailability()
-    {
-    }
-    /**
-     * A fully qualified secret version. The value of the secret will be accessed
-     * once while building the application and once per cold start of the
-     * container at runtime. The service account used by Cloud Build and by Cloud
-     * Run must each have the `secretmanager.versions.access` permission on the
-     * secret.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
-    {
-    }
-    /**
-     * A plaintext value. This value is encrypted at rest, but all project readers
-     * can view the value when reading your backend configuration.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * Required. The name of the environment variable. - Must be a valid
-     * environment variable name (e.g. A-Z or underscores). - May not start with
-     * "FIREBASE" or "GOOGLE". - May not be a reserved environment variable for
-     * KNative/Cloud Run
-     *
-     * @param string $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariable()
+    class Google_Service_FirebaseAppHosting_EnvironmentVariable extends \Google\Service\FirebaseAppHosting\EnvironmentVariable
     {
     }
 }

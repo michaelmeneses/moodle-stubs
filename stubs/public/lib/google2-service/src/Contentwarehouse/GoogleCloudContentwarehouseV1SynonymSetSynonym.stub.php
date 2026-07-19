@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1SynonymSetSynonym extends \Google\Collection
-{
-    protected $collection_key = 'words';
-    /**
-     * For example: sale, invoice, bill, order
-     *
-     * @var string[]
-     */
-    public $words;
-    /**
-     * For example: sale, invoice, bill, order
-     *
-     * @param string[] $words
-     */
-    public function setWords($words)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1SynonymSetSynonym extends \Google\Collection
     {
+        protected $collection_key = 'words';
+        /**
+         * For example: sale, invoice, bill, order
+         *
+         * @var string[]
+         */
+        public $words;
+        /**
+         * For example: sale, invoice, bill, order
+         *
+         * @param string[] $words
+         */
+        public function setWords($words)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SynonymSetSynonym registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWords()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1SynonymSetSynonym extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SynonymSetSynonym
     {
     }
 }

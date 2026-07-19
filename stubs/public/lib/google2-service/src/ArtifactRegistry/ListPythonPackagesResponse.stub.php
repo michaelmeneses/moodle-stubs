@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListPythonPackagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'pythonPackages';
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pythonPackagesType = PythonPackage::class;
-    protected $pythonPackagesDataType = 'array';
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListPythonPackagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'pythonPackages';
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pythonPackagesType = PythonPackage::class;
+        protected $pythonPackagesDataType = 'array';
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The python packages returned.
+         *
+         * @param PythonPackage[] $pythonPackages
+         */
+        public function setPythonPackages($pythonPackages)
+        {
+        }
+        /**
+         * @return PythonPackage[]
+         */
+        public function getPythonPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListPythonPackagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The python packages returned.
-     *
-     * @param PythonPackage[] $pythonPackages
-     */
-    public function setPythonPackages($pythonPackages)
-    {
-    }
-    /**
-     * @return PythonPackage[]
-     */
-    public function getPythonPackages()
+    class Google_Service_ArtifactRegistry_ListPythonPackagesResponse extends \Google\Service\ArtifactRegistry\ListPythonPackagesResponse
     {
     }
 }

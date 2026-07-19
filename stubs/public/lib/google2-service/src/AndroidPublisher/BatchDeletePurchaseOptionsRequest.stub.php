@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchDeletePurchaseOptionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = DeletePurchaseOptionRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. A list of delete requests of up to 100 elements. All requests
-     * must delete purchase options from different one-time products.
-     *
-     * @param DeletePurchaseOptionRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AndroidPublisher {
+    class BatchDeletePurchaseOptionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = DeletePurchaseOptionRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. A list of delete requests of up to 100 elements. All requests
+         * must delete purchase options from different one-time products.
+         *
+         * @param DeletePurchaseOptionRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return DeletePurchaseOptionRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeletePurchaseOptionRequest[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchDeletePurchaseOptionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AndroidPublisher_BatchDeletePurchaseOptionsRequest extends \Google\Service\AndroidPublisher\BatchDeletePurchaseOptionsRequest
     {
     }
 }

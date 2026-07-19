@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyAssociation extends \Google\Collection
-{
-    protected $collection_key = 'excludedProjects';
-    /**
-     * The resource that the security policy is attached to.
-     *
-     * @var string
-     */
-    public $attachmentId;
-    /**
-     * Output only. [Output Only] The display name of the security policy of the
-     * association.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $displayName;
-    /**
-     * A list of folders to exclude from the security policy.
-     *
-     * @var string[]
-     */
-    public $excludedFolders;
-    /**
-     * A list of projects to exclude from the security policy.
-     *
-     * @var string[]
-     */
-    public $excludedProjects;
-    /**
-     * The name for an association.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] The security policy ID of the association.
-     *
-     * @var string
-     */
-    public $securityPolicyId;
-    /**
-     * Output only. [Output Only] The short name of the security policy of the
-     * association.
-     *
-     * @var string
-     */
-    public $shortName;
-    /**
-     * The resource that the security policy is attached to.
-     *
-     * @param string $attachmentId
-     */
-    public function setAttachmentId($attachmentId)
+namespace Google\Service\Compute {
+    class SecurityPolicyAssociation extends \Google\Collection
     {
+        protected $collection_key = 'excludedProjects';
+        /**
+         * The resource that the security policy is attached to.
+         *
+         * @var string
+         */
+        public $attachmentId;
+        /**
+         * Output only. [Output Only] The display name of the security policy of the
+         * association.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $displayName;
+        /**
+         * A list of folders to exclude from the security policy.
+         *
+         * @var string[]
+         */
+        public $excludedFolders;
+        /**
+         * A list of projects to exclude from the security policy.
+         *
+         * @var string[]
+         */
+        public $excludedProjects;
+        /**
+         * The name for an association.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] The security policy ID of the association.
+         *
+         * @var string
+         */
+        public $securityPolicyId;
+        /**
+         * Output only. [Output Only] The short name of the security policy of the
+         * association.
+         *
+         * @var string
+         */
+        public $shortName;
+        /**
+         * The resource that the security policy is attached to.
+         *
+         * @param string $attachmentId
+         */
+        public function setAttachmentId($attachmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentId()
+        {
+        }
+        /**
+         * Output only. [Output Only] The display name of the security policy of the
+         * association.
+         *
+         * @deprecated
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * A list of folders to exclude from the security policy.
+         *
+         * @param string[] $excludedFolders
+         */
+        public function setExcludedFolders($excludedFolders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedFolders()
+        {
+        }
+        /**
+         * A list of projects to exclude from the security policy.
+         *
+         * @param string[] $excludedProjects
+         */
+        public function setExcludedProjects($excludedProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedProjects()
+        {
+        }
+        /**
+         * The name for an association.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The security policy ID of the association.
+         *
+         * @param string $securityPolicyId
+         */
+        public function setSecurityPolicyId($securityPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityPolicyId()
+        {
+        }
+        /**
+         * Output only. [Output Only] The short name of the security policy of the
+         * association.
+         *
+         * @param string $shortName
+         */
+        public function setShortName($shortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentId()
-    {
-    }
-    /**
-     * Output only. [Output Only] The display name of the security policy of the
-     * association.
-     *
-     * @deprecated
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * A list of folders to exclude from the security policy.
-     *
-     * @param string[] $excludedFolders
-     */
-    public function setExcludedFolders($excludedFolders)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedFolders()
-    {
-    }
-    /**
-     * A list of projects to exclude from the security policy.
-     *
-     * @param string[] $excludedProjects
-     */
-    public function setExcludedProjects($excludedProjects)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedProjects()
-    {
-    }
-    /**
-     * The name for an association.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The security policy ID of the association.
-     *
-     * @param string $securityPolicyId
-     */
-    public function setSecurityPolicyId($securityPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurityPolicyId()
-    {
-    }
-    /**
-     * Output only. [Output Only] The short name of the security policy of the
-     * association.
-     *
-     * @param string $shortName
-     */
-    public function setShortName($shortName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortName()
+    class Google_Service_Compute_SecurityPolicyAssociation extends \Google\Service\Compute\SecurityPolicyAssociation
     {
     }
 }

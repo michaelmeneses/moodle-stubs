@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class UserList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = SingleUser::class;
-    protected $valuesDataType = 'array';
-    /**
-     * User values.
-     *
-     * @param SingleUser[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\DriveActivity {
+    class UserList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = SingleUser::class;
+        protected $valuesDataType = 'array';
+        /**
+         * User values.
+         *
+         * @param SingleUser[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return SingleUser[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SingleUser[]
+     * Runtime class alias of \Google\Service\DriveActivity\UserList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_DriveActivity_UserList extends \Google\Service\DriveActivity\UserList
     {
     }
 }

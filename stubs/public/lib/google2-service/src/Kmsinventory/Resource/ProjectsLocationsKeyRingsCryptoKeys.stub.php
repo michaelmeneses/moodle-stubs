@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Kmsinventory\Resource;
-
-/**
- * The "cryptoKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $kmsinventoryService = new Google\Service\Kmsinventory(...);
- *   $cryptoKeys = $kmsinventoryService->projects_locations_keyRings_cryptoKeys;
- *  </code>
- */
-class ProjectsLocationsKeyRingsCryptoKeys extends \Google\Service\Resource
-{
+namespace Google\Service\Kmsinventory\Resource {
+    use Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ProtectedResourcesSummary;
     /**
-     * Returns aggregate information about the resources protected by the given
-     * Cloud KMS CryptoKey. Only resources within the same Cloud organization as the
-     * key will be returned. The project that holds the key must be part of an
-     * organization in order for this call to succeed.
-     * (cryptoKeys.getProtectedResourcesSummary)
-     *
-     * @param string $name Required. The resource name of the CryptoKey.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudKmsInventoryV1ProtectedResourcesSummary
-     * @throws \Google\Service\Exception
+     * The "cryptoKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $kmsinventoryService = new Google\Service\Kmsinventory(...);
+     *   $cryptoKeys = $kmsinventoryService->projects_locations_keyRings_cryptoKeys;
+     *  </code>
      */
-    public function getProtectedResourcesSummary($name, $optParams = [])
+    class ProjectsLocationsKeyRingsCryptoKeys extends \Google\Service\Resource
+    {
+        /**
+         * Returns aggregate information about the resources protected by the given
+         * Cloud KMS CryptoKey. Only resources within the same Cloud organization as the
+         * key will be returned. The project that holds the key must be part of an
+         * organization in order for this call to succeed.
+         * (cryptoKeys.getProtectedResourcesSummary)
+         *
+         * @param string $name Required. The resource name of the CryptoKey.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudKmsInventoryV1ProtectedResourcesSummary
+         * @throws \Google\Service\Exception
+         */
+        public function getProtectedResourcesSummary($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Kmsinventory\Resource\ProjectsLocationsKeyRingsCryptoKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Kmsinventory_Resource_ProjectsLocationsKeyRingsCryptoKeys extends \Google\Service\Kmsinventory\Resource\ProjectsLocationsKeyRingsCryptoKeys
     {
     }
 }

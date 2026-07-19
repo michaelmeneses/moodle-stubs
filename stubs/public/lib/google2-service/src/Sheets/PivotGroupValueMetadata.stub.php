@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PivotGroupValueMetadata extends \Google\Model
-{
-    /**
-     * True if the data corresponding to the value is collapsed.
-     *
-     * @var bool
-     */
-    public $collapsed;
-    protected $valueType = ExtendedValue::class;
-    protected $valueDataType = '';
-    /**
-     * True if the data corresponding to the value is collapsed.
-     *
-     * @param bool $collapsed
-     */
-    public function setCollapsed($collapsed)
+namespace Google\Service\Sheets {
+    class PivotGroupValueMetadata extends \Google\Model
     {
+        /**
+         * True if the data corresponding to the value is collapsed.
+         *
+         * @var bool
+         */
+        public $collapsed;
+        protected $valueType = ExtendedValue::class;
+        protected $valueDataType = '';
+        /**
+         * True if the data corresponding to the value is collapsed.
+         *
+         * @param bool $collapsed
+         */
+        public function setCollapsed($collapsed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCollapsed()
+        {
+        }
+        /**
+         * The calculated value the metadata corresponds to. (Note that formulaValue
+         * is not valid, because the values will be calculated.)
+         *
+         * @param ExtendedValue $value
+         */
+        public function setValue(ExtendedValue $value)
+        {
+        }
+        /**
+         * @return ExtendedValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\PivotGroupValueMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollapsed()
-    {
-    }
-    /**
-     * The calculated value the metadata corresponds to. (Note that formulaValue
-     * is not valid, because the values will be calculated.)
-     *
-     * @param ExtendedValue $value
-     */
-    public function setValue(ExtendedValue $value)
-    {
-    }
-    /**
-     * @return ExtendedValue
-     */
-    public function getValue()
+    class Google_Service_Sheets_PivotGroupValueMetadata extends \Google\Service\Sheets\PivotGroupValueMetadata
     {
     }
 }

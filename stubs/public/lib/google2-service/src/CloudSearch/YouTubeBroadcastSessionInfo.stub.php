@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class YouTubeBroadcastSessionInfo extends \Google\Model
-{
-    protected $broadcastStatsType = YouTubeBroadcastStats::class;
-    protected $broadcastStatsDataType = '';
-    protected $sessionStateInfoType = SessionStateInfo::class;
-    protected $sessionStateInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $youTubeBroadcastSessionId;
-    protected $youTubeLiveBroadcastEventType = YouTubeLiveBroadcastEvent::class;
-    protected $youTubeLiveBroadcastEventDataType = '';
-    /**
-     * @param YouTubeBroadcastStats
-     */
-    public function setBroadcastStats(YouTubeBroadcastStats $broadcastStats)
+namespace Google\Service\CloudSearch {
+    class YouTubeBroadcastSessionInfo extends \Google\Model
     {
+        protected $broadcastStatsType = YouTubeBroadcastStats::class;
+        protected $broadcastStatsDataType = '';
+        protected $sessionStateInfoType = SessionStateInfo::class;
+        protected $sessionStateInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $youTubeBroadcastSessionId;
+        protected $youTubeLiveBroadcastEventType = YouTubeLiveBroadcastEvent::class;
+        protected $youTubeLiveBroadcastEventDataType = '';
+        /**
+         * @param YouTubeBroadcastStats
+         */
+        public function setBroadcastStats(YouTubeBroadcastStats $broadcastStats)
+        {
+        }
+        /**
+         * @return YouTubeBroadcastStats
+         */
+        public function getBroadcastStats()
+        {
+        }
+        /**
+         * @param SessionStateInfo
+         */
+        public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
+        {
+        }
+        /**
+         * @return SessionStateInfo
+         */
+        public function getSessionStateInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setYouTubeBroadcastSessionId($youTubeBroadcastSessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYouTubeBroadcastSessionId()
+        {
+        }
+        /**
+         * @param YouTubeLiveBroadcastEvent
+         */
+        public function setYouTubeLiveBroadcastEvent(YouTubeLiveBroadcastEvent $youTubeLiveBroadcastEvent)
+        {
+        }
+        /**
+         * @return YouTubeLiveBroadcastEvent
+         */
+        public function getYouTubeLiveBroadcastEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return YouTubeBroadcastStats
+     * Runtime class alias of \Google\Service\CloudSearch\YouTubeBroadcastSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBroadcastStats()
-    {
-    }
-    /**
-     * @param SessionStateInfo
-     */
-    public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
-    {
-    }
-    /**
-     * @return SessionStateInfo
-     */
-    public function getSessionStateInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setYouTubeBroadcastSessionId($youTubeBroadcastSessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYouTubeBroadcastSessionId()
-    {
-    }
-    /**
-     * @param YouTubeLiveBroadcastEvent
-     */
-    public function setYouTubeLiveBroadcastEvent(YouTubeLiveBroadcastEvent $youTubeLiveBroadcastEvent)
-    {
-    }
-    /**
-     * @return YouTubeLiveBroadcastEvent
-     */
-    public function getYouTubeLiveBroadcastEvent()
+    class Google_Service_CloudSearch_YouTubeBroadcastSessionInfo extends \Google\Service\CloudSearch\YouTubeBroadcastSessionInfo
     {
     }
 }

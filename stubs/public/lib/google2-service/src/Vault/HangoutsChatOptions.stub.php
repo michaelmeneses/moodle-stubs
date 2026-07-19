@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class HangoutsChatOptions extends \Google\Model
-{
-    /**
-     * For searches by account or organizational unit, set to **true** to include
-     * rooms.
-     *
-     * @var bool
-     */
-    public $includeRooms;
-    /**
-     * For searches by account or organizational unit, set to **true** to include
-     * rooms.
-     *
-     * @param bool $includeRooms
-     */
-    public function setIncludeRooms($includeRooms)
+namespace Google\Service\Vault {
+    class HangoutsChatOptions extends \Google\Model
     {
+        /**
+         * For searches by account or organizational unit, set to **true** to include
+         * rooms.
+         *
+         * @var bool
+         */
+        public $includeRooms;
+        /**
+         * For searches by account or organizational unit, set to **true** to include
+         * rooms.
+         *
+         * @param bool $includeRooms
+         */
+        public function setIncludeRooms($includeRooms)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeRooms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vault\HangoutsChatOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeRooms()
+    class Google_Service_Vault_HangoutsChatOptions extends \Google\Service\Vault\HangoutsChatOptions
     {
     }
 }

@@ -21,392 +21,401 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Invoice extends \Google\Collection
-{
-    public const INVOICE_TYPE_INVOICE_TYPE_UNSPECIFIED = 'INVOICE_TYPE_UNSPECIFIED';
-    public const INVOICE_TYPE_INVOICE_TYPE_CREDIT = 'INVOICE_TYPE_CREDIT';
-    public const INVOICE_TYPE_INVOICE_TYPE_INVOICE = 'INVOICE_TYPE_INVOICE';
-    protected $collection_key = 'replacedInvoiceIds';
-    protected $internal_gapi_mappings = ["campaignSummaries" => "campaign_summaries"];
-    protected $campaignSummariesType = CampaignSummary::class;
-    protected $campaignSummariesDataType = 'array';
-    /**
-     * The originally issued invoice that is being adjusted by this invoice, if
-     * applicable. May appear on invoice PDF as *Reference invoice number*.
-     *
-     * @var string
-     */
-    public $correctedInvoiceId;
-    /**
-     * Invoice currency code in ISO 4217 format.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * The invoice due date.
-     *
-     * @var string
-     */
-    public $dueDate;
-    /**
-     * ID of this invoice.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The type of invoice document.
-     *
-     * @var string
-     */
-    public $invoiceType;
-    /**
-     * The date when the invoice was issued.
-     *
-     * @var string
-     */
-    public $issueDate;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#invoice".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the payments account the invoice belongs to. Appears on the
-     * invoice PDF as *Billing Account Number*.
-     *
-     * @var string
-     */
-    public $paymentsAccountId;
-    /**
-     * The ID of the payments profile the invoice belongs to. Appears on the
-     * invoice PDF as *Billing ID*.
-     *
-     * @var string
-     */
-    public $paymentsProfileId;
-    /**
-     * The URL to download a PDF copy of the invoice. Note that this URL is user
-     * specific and requires a valid OAuth 2.0 access token to access. The access
-     * token must be provided in an *Authorization: Bearer* HTTP header. The URL
-     * will only be usable for 7 days from when the api is called.
-     *
-     * @var string
-     */
-    public $pdfUrl;
-    /**
-     * Purchase order number associated with the invoice.
-     *
-     * @var string
-     */
-    public $purchaseOrderNumber;
-    /**
-     * The originally issued invoice(s) that is being cancelled by this invoice,
-     * if applicable. May appear on invoice PDF as *Replaced invoice numbers*.
-     * Note: There may be multiple replaced invoices due to consolidation of
-     * multiple invoices into a single invoice.
-     *
-     * @var string[]
-     */
-    public $replacedInvoiceIds;
-    /**
-     * The invoice service end date.
-     *
-     * @var string
-     */
-    public $serviceEndDate;
-    /**
-     * The invoice service start date.
-     *
-     * @var string
-     */
-    public $serviceStartDate;
-    /**
-     * The pre-tax subtotal amount, in micros of the invoice's currency.
-     *
-     * @var string
-     */
-    public $subtotalAmountMicros;
-    /**
-     * The invoice total amount, in micros of the invoice's currency.
-     *
-     * @var string
-     */
-    public $totalAmountMicros;
-    /**
-     * The sum of all taxes in invoice, in micros of the invoice's currency.
-     *
-     * @var string
-     */
-    public $totalTaxAmountMicros;
-    /**
-     * The list of summarized campaign information associated with this invoice.
-     *
-     * @param CampaignSummary[] $campaignSummaries
-     */
-    public function setCampaignSummaries($campaignSummaries)
+namespace Google\Service\Dfareporting {
+    class Invoice extends \Google\Collection
     {
+        public const INVOICE_TYPE_INVOICE_TYPE_UNSPECIFIED = 'INVOICE_TYPE_UNSPECIFIED';
+        public const INVOICE_TYPE_INVOICE_TYPE_CREDIT = 'INVOICE_TYPE_CREDIT';
+        public const INVOICE_TYPE_INVOICE_TYPE_INVOICE = 'INVOICE_TYPE_INVOICE';
+        protected $collection_key = 'replacedInvoiceIds';
+        protected $internal_gapi_mappings = ["campaignSummaries" => "campaign_summaries"];
+        protected $campaignSummariesType = CampaignSummary::class;
+        protected $campaignSummariesDataType = 'array';
+        /**
+         * The originally issued invoice that is being adjusted by this invoice, if
+         * applicable. May appear on invoice PDF as *Reference invoice number*.
+         *
+         * @var string
+         */
+        public $correctedInvoiceId;
+        /**
+         * Invoice currency code in ISO 4217 format.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * The invoice due date.
+         *
+         * @var string
+         */
+        public $dueDate;
+        /**
+         * ID of this invoice.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The type of invoice document.
+         *
+         * @var string
+         */
+        public $invoiceType;
+        /**
+         * The date when the invoice was issued.
+         *
+         * @var string
+         */
+        public $issueDate;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#invoice".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the payments account the invoice belongs to. Appears on the
+         * invoice PDF as *Billing Account Number*.
+         *
+         * @var string
+         */
+        public $paymentsAccountId;
+        /**
+         * The ID of the payments profile the invoice belongs to. Appears on the
+         * invoice PDF as *Billing ID*.
+         *
+         * @var string
+         */
+        public $paymentsProfileId;
+        /**
+         * The URL to download a PDF copy of the invoice. Note that this URL is user
+         * specific and requires a valid OAuth 2.0 access token to access. The access
+         * token must be provided in an *Authorization: Bearer* HTTP header. The URL
+         * will only be usable for 7 days from when the api is called.
+         *
+         * @var string
+         */
+        public $pdfUrl;
+        /**
+         * Purchase order number associated with the invoice.
+         *
+         * @var string
+         */
+        public $purchaseOrderNumber;
+        /**
+         * The originally issued invoice(s) that is being cancelled by this invoice,
+         * if applicable. May appear on invoice PDF as *Replaced invoice numbers*.
+         * Note: There may be multiple replaced invoices due to consolidation of
+         * multiple invoices into a single invoice.
+         *
+         * @var string[]
+         */
+        public $replacedInvoiceIds;
+        /**
+         * The invoice service end date.
+         *
+         * @var string
+         */
+        public $serviceEndDate;
+        /**
+         * The invoice service start date.
+         *
+         * @var string
+         */
+        public $serviceStartDate;
+        /**
+         * The pre-tax subtotal amount, in micros of the invoice's currency.
+         *
+         * @var string
+         */
+        public $subtotalAmountMicros;
+        /**
+         * The invoice total amount, in micros of the invoice's currency.
+         *
+         * @var string
+         */
+        public $totalAmountMicros;
+        /**
+         * The sum of all taxes in invoice, in micros of the invoice's currency.
+         *
+         * @var string
+         */
+        public $totalTaxAmountMicros;
+        /**
+         * The list of summarized campaign information associated with this invoice.
+         *
+         * @param CampaignSummary[] $campaignSummaries
+         */
+        public function setCampaignSummaries($campaignSummaries)
+        {
+        }
+        /**
+         * @return CampaignSummary[]
+         */
+        public function getCampaignSummaries()
+        {
+        }
+        /**
+         * The originally issued invoice that is being adjusted by this invoice, if
+         * applicable. May appear on invoice PDF as *Reference invoice number*.
+         *
+         * @param string $correctedInvoiceId
+         */
+        public function setCorrectedInvoiceId($correctedInvoiceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedInvoiceId()
+        {
+        }
+        /**
+         * Invoice currency code in ISO 4217 format.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * The invoice due date.
+         *
+         * @param string $dueDate
+         */
+        public function setDueDate($dueDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDueDate()
+        {
+        }
+        /**
+         * ID of this invoice.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The type of invoice document.
+         *
+         * Accepted values: INVOICE_TYPE_UNSPECIFIED, INVOICE_TYPE_CREDIT,
+         * INVOICE_TYPE_INVOICE
+         *
+         * @param self::INVOICE_TYPE_* $invoiceType
+         */
+        public function setInvoiceType($invoiceType)
+        {
+        }
+        /**
+         * @return self::INVOICE_TYPE_*
+         */
+        public function getInvoiceType()
+        {
+        }
+        /**
+         * The date when the invoice was issued.
+         *
+         * @param string $issueDate
+         */
+        public function setIssueDate($issueDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueDate()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#invoice".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The ID of the payments account the invoice belongs to. Appears on the
+         * invoice PDF as *Billing Account Number*.
+         *
+         * @param string $paymentsAccountId
+         */
+        public function setPaymentsAccountId($paymentsAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPaymentsAccountId()
+        {
+        }
+        /**
+         * The ID of the payments profile the invoice belongs to. Appears on the
+         * invoice PDF as *Billing ID*.
+         *
+         * @param string $paymentsProfileId
+         */
+        public function setPaymentsProfileId($paymentsProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPaymentsProfileId()
+        {
+        }
+        /**
+         * The URL to download a PDF copy of the invoice. Note that this URL is user
+         * specific and requires a valid OAuth 2.0 access token to access. The access
+         * token must be provided in an *Authorization: Bearer* HTTP header. The URL
+         * will only be usable for 7 days from when the api is called.
+         *
+         * @param string $pdfUrl
+         */
+        public function setPdfUrl($pdfUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPdfUrl()
+        {
+        }
+        /**
+         * Purchase order number associated with the invoice.
+         *
+         * @param string $purchaseOrderNumber
+         */
+        public function setPurchaseOrderNumber($purchaseOrderNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurchaseOrderNumber()
+        {
+        }
+        /**
+         * The originally issued invoice(s) that is being cancelled by this invoice,
+         * if applicable. May appear on invoice PDF as *Replaced invoice numbers*.
+         * Note: There may be multiple replaced invoices due to consolidation of
+         * multiple invoices into a single invoice.
+         *
+         * @param string[] $replacedInvoiceIds
+         */
+        public function setReplacedInvoiceIds($replacedInvoiceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReplacedInvoiceIds()
+        {
+        }
+        /**
+         * The invoice service end date.
+         *
+         * @param string $serviceEndDate
+         */
+        public function setServiceEndDate($serviceEndDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceEndDate()
+        {
+        }
+        /**
+         * The invoice service start date.
+         *
+         * @param string $serviceStartDate
+         */
+        public function setServiceStartDate($serviceStartDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceStartDate()
+        {
+        }
+        /**
+         * The pre-tax subtotal amount, in micros of the invoice's currency.
+         *
+         * @param string $subtotalAmountMicros
+         */
+        public function setSubtotalAmountMicros($subtotalAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtotalAmountMicros()
+        {
+        }
+        /**
+         * The invoice total amount, in micros of the invoice's currency.
+         *
+         * @param string $totalAmountMicros
+         */
+        public function setTotalAmountMicros($totalAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalAmountMicros()
+        {
+        }
+        /**
+         * The sum of all taxes in invoice, in micros of the invoice's currency.
+         *
+         * @param string $totalTaxAmountMicros
+         */
+        public function setTotalTaxAmountMicros($totalTaxAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalTaxAmountMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CampaignSummary[]
+     * Runtime class alias of \Google\Service\Dfareporting\Invoice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCampaignSummaries()
-    {
-    }
-    /**
-     * The originally issued invoice that is being adjusted by this invoice, if
-     * applicable. May appear on invoice PDF as *Reference invoice number*.
-     *
-     * @param string $correctedInvoiceId
-     */
-    public function setCorrectedInvoiceId($correctedInvoiceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorrectedInvoiceId()
-    {
-    }
-    /**
-     * Invoice currency code in ISO 4217 format.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * The invoice due date.
-     *
-     * @param string $dueDate
-     */
-    public function setDueDate($dueDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDueDate()
-    {
-    }
-    /**
-     * ID of this invoice.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The type of invoice document.
-     *
-     * Accepted values: INVOICE_TYPE_UNSPECIFIED, INVOICE_TYPE_CREDIT,
-     * INVOICE_TYPE_INVOICE
-     *
-     * @param self::INVOICE_TYPE_* $invoiceType
-     */
-    public function setInvoiceType($invoiceType)
-    {
-    }
-    /**
-     * @return self::INVOICE_TYPE_*
-     */
-    public function getInvoiceType()
-    {
-    }
-    /**
-     * The date when the invoice was issued.
-     *
-     * @param string $issueDate
-     */
-    public function setIssueDate($issueDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssueDate()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#invoice".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The ID of the payments account the invoice belongs to. Appears on the
-     * invoice PDF as *Billing Account Number*.
-     *
-     * @param string $paymentsAccountId
-     */
-    public function setPaymentsAccountId($paymentsAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPaymentsAccountId()
-    {
-    }
-    /**
-     * The ID of the payments profile the invoice belongs to. Appears on the
-     * invoice PDF as *Billing ID*.
-     *
-     * @param string $paymentsProfileId
-     */
-    public function setPaymentsProfileId($paymentsProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPaymentsProfileId()
-    {
-    }
-    /**
-     * The URL to download a PDF copy of the invoice. Note that this URL is user
-     * specific and requires a valid OAuth 2.0 access token to access. The access
-     * token must be provided in an *Authorization: Bearer* HTTP header. The URL
-     * will only be usable for 7 days from when the api is called.
-     *
-     * @param string $pdfUrl
-     */
-    public function setPdfUrl($pdfUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPdfUrl()
-    {
-    }
-    /**
-     * Purchase order number associated with the invoice.
-     *
-     * @param string $purchaseOrderNumber
-     */
-    public function setPurchaseOrderNumber($purchaseOrderNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurchaseOrderNumber()
-    {
-    }
-    /**
-     * The originally issued invoice(s) that is being cancelled by this invoice,
-     * if applicable. May appear on invoice PDF as *Replaced invoice numbers*.
-     * Note: There may be multiple replaced invoices due to consolidation of
-     * multiple invoices into a single invoice.
-     *
-     * @param string[] $replacedInvoiceIds
-     */
-    public function setReplacedInvoiceIds($replacedInvoiceIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReplacedInvoiceIds()
-    {
-    }
-    /**
-     * The invoice service end date.
-     *
-     * @param string $serviceEndDate
-     */
-    public function setServiceEndDate($serviceEndDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceEndDate()
-    {
-    }
-    /**
-     * The invoice service start date.
-     *
-     * @param string $serviceStartDate
-     */
-    public function setServiceStartDate($serviceStartDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceStartDate()
-    {
-    }
-    /**
-     * The pre-tax subtotal amount, in micros of the invoice's currency.
-     *
-     * @param string $subtotalAmountMicros
-     */
-    public function setSubtotalAmountMicros($subtotalAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtotalAmountMicros()
-    {
-    }
-    /**
-     * The invoice total amount, in micros of the invoice's currency.
-     *
-     * @param string $totalAmountMicros
-     */
-    public function setTotalAmountMicros($totalAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalAmountMicros()
-    {
-    }
-    /**
-     * The sum of all taxes in invoice, in micros of the invoice's currency.
-     *
-     * @param string $totalTaxAmountMicros
-     */
-    public function setTotalTaxAmountMicros($totalTaxAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalTaxAmountMicros()
+    class Google_Service_Dfareporting_Invoice extends \Google\Service\Dfareporting\Invoice
     {
     }
 }

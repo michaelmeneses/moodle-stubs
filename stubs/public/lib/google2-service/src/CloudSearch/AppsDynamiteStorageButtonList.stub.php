@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageButtonList extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = AppsDynamiteStorageButton::class;
-    protected $buttonsDataType = 'array';
-    /**
-     * @param AppsDynamiteStorageButton[]
-     */
-    public function setButtons($buttons)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageButtonList extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = AppsDynamiteStorageButton::class;
+        protected $buttonsDataType = 'array';
+        /**
+         * @param AppsDynamiteStorageButton[]
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageButton[]
+         */
+        public function getButtons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageButton[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageButtonList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
+    class Google_Service_CloudSearch_AppsDynamiteStorageButtonList extends \Google\Service\CloudSearch\AppsDynamiteStorageButtonList
     {
     }
 }

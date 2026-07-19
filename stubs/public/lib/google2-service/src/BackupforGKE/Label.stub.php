@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class Label extends \Google\Model
-{
-    /**
-     * Optional. The key/name of the label.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. The value of the label.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. The key/name of the label.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\BackupforGKE {
+    class Label extends \Google\Model
     {
+        /**
+         * Optional. The key/name of the label.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. The value of the label.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. The key/name of the label.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. The value of the label.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\Label registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. The value of the label.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_BackupforGKE_Label extends \Google\Service\BackupforGKE\Label
     {
     }
 }

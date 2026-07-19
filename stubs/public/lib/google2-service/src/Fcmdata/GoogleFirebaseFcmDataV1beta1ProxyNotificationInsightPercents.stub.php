@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fcmdata;
-
-class GoogleFirebaseFcmDataV1beta1ProxyNotificationInsightPercents extends \Google\Model
-{
-    /**
-     * The percentage of accepted notifications that failed to be proxied. This is
-     * usually caused by exceptions that occurred while calling [notifyAsPackage](
-     * https://developer.android.com/reference/android/app/NotificationManager#not
-     * ifyAsPackage%28java.lang.String,%20java.lang.String,%20int,%20android.app.N
-     * otification%29).
-     *
-     * @var float
-     */
-    public $failed;
-    /**
-     * The percentage of accepted notifications that were successfully proxied by
-     * [Google Play
-     * services](https://developers.google.com/android/guides/overview).
-     *
-     * @var float
-     */
-    public $proxied;
-    /**
-     * The percentage of accepted notifications that were skipped because the
-     * messages were not throttled.
-     *
-     * @var float
-     */
-    public $skippedNotThrottled;
-    /**
-     * The percentage of accepted notifications that were skipped because the app
-     * disallowed these messages to be proxied.
-     *
-     * @var float
-     */
-    public $skippedOptedOut;
-    /**
-     * The percentage of accepted notifications that were skipped because
-     * configurations required for notifications to be proxied were missing.
-     *
-     * @var float
-     */
-    public $skippedUnconfigured;
-    /**
-     * The percentage of accepted notifications that were skipped because proxy
-     * notification is unsupported for the recipient.
-     *
-     * @var float
-     */
-    public $skippedUnsupported;
-    /**
-     * The percentage of accepted notifications that failed to be proxied. This is
-     * usually caused by exceptions that occurred while calling [notifyAsPackage](
-     * https://developer.android.com/reference/android/app/NotificationManager#not
-     * ifyAsPackage%28java.lang.String,%20java.lang.String,%20int,%20android.app.N
-     * otification%29).
-     *
-     * @param float $failed
-     */
-    public function setFailed($failed)
+namespace Google\Service\Fcmdata {
+    class GoogleFirebaseFcmDataV1beta1ProxyNotificationInsightPercents extends \Google\Model
     {
+        /**
+         * The percentage of accepted notifications that failed to be proxied. This is
+         * usually caused by exceptions that occurred while calling [notifyAsPackage](
+         * https://developer.android.com/reference/android/app/NotificationManager#not
+         * ifyAsPackage%28java.lang.String,%20java.lang.String,%20int,%20android.app.N
+         * otification%29).
+         *
+         * @var float
+         */
+        public $failed;
+        /**
+         * The percentage of accepted notifications that were successfully proxied by
+         * [Google Play
+         * services](https://developers.google.com/android/guides/overview).
+         *
+         * @var float
+         */
+        public $proxied;
+        /**
+         * The percentage of accepted notifications that were skipped because the
+         * messages were not throttled.
+         *
+         * @var float
+         */
+        public $skippedNotThrottled;
+        /**
+         * The percentage of accepted notifications that were skipped because the app
+         * disallowed these messages to be proxied.
+         *
+         * @var float
+         */
+        public $skippedOptedOut;
+        /**
+         * The percentage of accepted notifications that were skipped because
+         * configurations required for notifications to be proxied were missing.
+         *
+         * @var float
+         */
+        public $skippedUnconfigured;
+        /**
+         * The percentage of accepted notifications that were skipped because proxy
+         * notification is unsupported for the recipient.
+         *
+         * @var float
+         */
+        public $skippedUnsupported;
+        /**
+         * The percentage of accepted notifications that failed to be proxied. This is
+         * usually caused by exceptions that occurred while calling [notifyAsPackage](
+         * https://developer.android.com/reference/android/app/NotificationManager#not
+         * ifyAsPackage%28java.lang.String,%20java.lang.String,%20int,%20android.app.N
+         * otification%29).
+         *
+         * @param float $failed
+         */
+        public function setFailed($failed)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFailed()
+        {
+        }
+        /**
+         * The percentage of accepted notifications that were successfully proxied by
+         * [Google Play
+         * services](https://developers.google.com/android/guides/overview).
+         *
+         * @param float $proxied
+         */
+        public function setProxied($proxied)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getProxied()
+        {
+        }
+        /**
+         * The percentage of accepted notifications that were skipped because the
+         * messages were not throttled.
+         *
+         * @param float $skippedNotThrottled
+         */
+        public function setSkippedNotThrottled($skippedNotThrottled)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSkippedNotThrottled()
+        {
+        }
+        /**
+         * The percentage of accepted notifications that were skipped because the app
+         * disallowed these messages to be proxied.
+         *
+         * @param float $skippedOptedOut
+         */
+        public function setSkippedOptedOut($skippedOptedOut)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSkippedOptedOut()
+        {
+        }
+        /**
+         * The percentage of accepted notifications that were skipped because
+         * configurations required for notifications to be proxied were missing.
+         *
+         * @param float $skippedUnconfigured
+         */
+        public function setSkippedUnconfigured($skippedUnconfigured)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSkippedUnconfigured()
+        {
+        }
+        /**
+         * The percentage of accepted notifications that were skipped because proxy
+         * notification is unsupported for the recipient.
+         *
+         * @param float $skippedUnsupported
+         */
+        public function setSkippedUnsupported($skippedUnsupported)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSkippedUnsupported()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1ProxyNotificationInsightPercents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailed()
-    {
-    }
-    /**
-     * The percentage of accepted notifications that were successfully proxied by
-     * [Google Play
-     * services](https://developers.google.com/android/guides/overview).
-     *
-     * @param float $proxied
-     */
-    public function setProxied($proxied)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getProxied()
-    {
-    }
-    /**
-     * The percentage of accepted notifications that were skipped because the
-     * messages were not throttled.
-     *
-     * @param float $skippedNotThrottled
-     */
-    public function setSkippedNotThrottled($skippedNotThrottled)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSkippedNotThrottled()
-    {
-    }
-    /**
-     * The percentage of accepted notifications that were skipped because the app
-     * disallowed these messages to be proxied.
-     *
-     * @param float $skippedOptedOut
-     */
-    public function setSkippedOptedOut($skippedOptedOut)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSkippedOptedOut()
-    {
-    }
-    /**
-     * The percentage of accepted notifications that were skipped because
-     * configurations required for notifications to be proxied were missing.
-     *
-     * @param float $skippedUnconfigured
-     */
-    public function setSkippedUnconfigured($skippedUnconfigured)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSkippedUnconfigured()
-    {
-    }
-    /**
-     * The percentage of accepted notifications that were skipped because proxy
-     * notification is unsupported for the recipient.
-     *
-     * @param float $skippedUnsupported
-     */
-    public function setSkippedUnsupported($skippedUnsupported)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSkippedUnsupported()
+    class Google_Service_Fcmdata_GoogleFirebaseFcmDataV1beta1ProxyNotificationInsightPercents extends \Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1ProxyNotificationInsightPercents
     {
     }
 }

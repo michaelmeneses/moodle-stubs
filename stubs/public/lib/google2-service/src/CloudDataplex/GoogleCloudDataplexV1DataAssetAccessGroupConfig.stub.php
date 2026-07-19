@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataAssetAccessGroupConfig extends \Google\Collection
-{
-    protected $collection_key = 'iamRoles';
-    /**
-     * Optional. IAM roles granted on the resource to this access group. Role name
-     * follows https://cloud.google.com/iam/docs/reference/rest/v1/roles. Example:
-     * "roles/bigquery.dataViewer"
-     *
-     * @var string[]
-     */
-    public $iamRoles;
-    /**
-     * Optional. IAM roles granted on the resource to this access group. Role name
-     * follows https://cloud.google.com/iam/docs/reference/rest/v1/roles. Example:
-     * "roles/bigquery.dataViewer"
-     *
-     * @param string[] $iamRoles
-     */
-    public function setIamRoles($iamRoles)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataAssetAccessGroupConfig extends \Google\Collection
     {
+        protected $collection_key = 'iamRoles';
+        /**
+         * Optional. IAM roles granted on the resource to this access group. Role name
+         * follows https://cloud.google.com/iam/docs/reference/rest/v1/roles. Example:
+         * "roles/bigquery.dataViewer"
+         *
+         * @var string[]
+         */
+        public $iamRoles;
+        /**
+         * Optional. IAM roles granted on the resource to this access group. Role name
+         * follows https://cloud.google.com/iam/docs/reference/rest/v1/roles. Example:
+         * "roles/bigquery.dataViewer"
+         *
+         * @param string[] $iamRoles
+         */
+        public function setIamRoles($iamRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIamRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAssetAccessGroupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamRoles()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataAssetAccessGroupConfig extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAssetAccessGroupConfig
     {
     }
 }

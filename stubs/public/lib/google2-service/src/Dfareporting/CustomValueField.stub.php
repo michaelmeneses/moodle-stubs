@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CustomValueField extends \Google\Model
-{
-    /**
-     * Optional. Field ID in the element.
-     *
-     * @var int
-     */
-    public $fieldId;
-    /**
-     * Optional. Custom key used to match for auto filtering.
-     *
-     * @var string
-     */
-    public $requestKey;
-    /**
-     * Optional. Field ID in the element.
-     *
-     * @param int $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\Dfareporting {
+    class CustomValueField extends \Google\Model
     {
+        /**
+         * Optional. Field ID in the element.
+         *
+         * @var int
+         */
+        public $fieldId;
+        /**
+         * Optional. Custom key used to match for auto filtering.
+         *
+         * @var string
+         */
+        public $requestKey;
+        /**
+         * Optional. Field ID in the element.
+         *
+         * @param int $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Optional. Custom key used to match for auto filtering.
+         *
+         * @param string $requestKey
+         */
+        public function setRequestKey($requestKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dfareporting\CustomValueField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Optional. Custom key used to match for auto filtering.
-     *
-     * @param string $requestKey
-     */
-    public function setRequestKey($requestKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestKey()
+    class Google_Service_Dfareporting_CustomValueField extends \Google\Service\Dfareporting\CustomValueField
     {
     }
 }

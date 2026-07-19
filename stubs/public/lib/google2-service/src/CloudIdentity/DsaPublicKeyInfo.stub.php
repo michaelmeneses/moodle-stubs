@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class DsaPublicKeyInfo extends \Google\Model
-{
-    /**
-     * Key size in bits (size of parameter P).
-     *
-     * @var int
-     */
-    public $keySize;
-    /**
-     * Key size in bits (size of parameter P).
-     *
-     * @param int $keySize
-     */
-    public function setKeySize($keySize)
+namespace Google\Service\CloudIdentity {
+    class DsaPublicKeyInfo extends \Google\Model
     {
+        /**
+         * Key size in bits (size of parameter P).
+         *
+         * @var int
+         */
+        public $keySize;
+        /**
+         * Key size in bits (size of parameter P).
+         *
+         * @param int $keySize
+         */
+        public function setKeySize($keySize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getKeySize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudIdentity\DsaPublicKeyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeySize()
+    class Google_Service_CloudIdentity_DsaPublicKeyInfo extends \Google\Service\CloudIdentity\DsaPublicKeyInfo
     {
     }
 }

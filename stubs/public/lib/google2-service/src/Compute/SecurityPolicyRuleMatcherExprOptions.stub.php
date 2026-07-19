@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleMatcherExprOptions extends \Google\Model
-{
-    protected $recaptchaOptionsType = SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions::class;
-    protected $recaptchaOptionsDataType = '';
-    /**
-     * reCAPTCHA configuration options to be applied for the rule. If the rule
-     * does not evaluate reCAPTCHA tokens, this field has no effect.
-     *
-     * @param SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions $recaptchaOptions
-     */
-    public function setRecaptchaOptions(SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions $recaptchaOptions)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleMatcherExprOptions extends \Google\Model
     {
+        protected $recaptchaOptionsType = SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions::class;
+        protected $recaptchaOptionsDataType = '';
+        /**
+         * reCAPTCHA configuration options to be applied for the rule. If the rule
+         * does not evaluate reCAPTCHA tokens, this field has no effect.
+         *
+         * @param SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions $recaptchaOptions
+         */
+        public function setRecaptchaOptions(SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions $recaptchaOptions)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions
+         */
+        public function getRecaptchaOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPolicyRuleMatcherExprOptionsRecaptchaOptions
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleMatcherExprOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecaptchaOptions()
+    class Google_Service_Compute_SecurityPolicyRuleMatcherExprOptions extends \Google\Service\Compute\SecurityPolicyRuleMatcherExprOptions
     {
     }
 }

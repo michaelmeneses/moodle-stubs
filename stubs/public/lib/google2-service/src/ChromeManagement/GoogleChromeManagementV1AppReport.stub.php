@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1AppReport extends \Google\Collection
-{
-    protected $collection_key = 'usageData';
-    /**
-     * Timestamp when the report was collected.
-     *
-     * @var string
-     */
-    public $reportTime;
-    protected $usageDataType = GoogleChromeManagementV1AppUsageData::class;
-    protected $usageDataDataType = 'array';
-    /**
-     * Timestamp when the report was collected.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1AppReport extends \Google\Collection
     {
+        protected $collection_key = 'usageData';
+        /**
+         * Timestamp when the report was collected.
+         *
+         * @var string
+         */
+        public $reportTime;
+        protected $usageDataType = GoogleChromeManagementV1AppUsageData::class;
+        protected $usageDataDataType = 'array';
+        /**
+         * Timestamp when the report was collected.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * App usage data.
+         *
+         * @param GoogleChromeManagementV1AppUsageData[] $usageData
+         */
+        public function setUsageData($usageData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1AppUsageData[]
+         */
+        public function getUsageData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1AppReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportTime()
-    {
-    }
-    /**
-     * App usage data.
-     *
-     * @param GoogleChromeManagementV1AppUsageData[] $usageData
-     */
-    public function setUsageData($usageData)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1AppUsageData[]
-     */
-    public function getUsageData()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1AppReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1AppReport
     {
     }
 }

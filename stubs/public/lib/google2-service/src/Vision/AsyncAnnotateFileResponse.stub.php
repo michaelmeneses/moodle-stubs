@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class AsyncAnnotateFileResponse extends \Google\Model
-{
-    protected $outputConfigType = OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * The output location and metadata from AsyncAnnotateFileRequest.
-     *
-     * @param OutputConfig $outputConfig
-     */
-    public function setOutputConfig(OutputConfig $outputConfig)
+namespace Google\Service\Vision {
+    class AsyncAnnotateFileResponse extends \Google\Model
     {
+        protected $outputConfigType = OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * The output location and metadata from AsyncAnnotateFileRequest.
+         *
+         * @param OutputConfig $outputConfig
+         */
+        public function setOutputConfig(OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OutputConfig
+     * Runtime class alias of \Google\Service\Vision\AsyncAnnotateFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
+    class Google_Service_Vision_AsyncAnnotateFileResponse extends \Google\Service\Vision\AsyncAnnotateFileResponse
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ContainerSpec extends \Google\Model
-{
-    protected $defaultEnvironmentType = FlexTemplateRuntimeEnvironment::class;
-    protected $defaultEnvironmentDataType = '';
-    /**
-     * Name of the docker container image. E.g., gcr.io/project/some-image
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Cloud Storage path to self-signed certificate of private registry.
-     *
-     * @var string
-     */
-    public $imageRepositoryCertPath;
-    /**
-     * Secret Manager secret id for password to authenticate to private registry.
-     *
-     * @var string
-     */
-    public $imageRepositoryPasswordSecretId;
-    /**
-     * Secret Manager secret id for username to authenticate to private registry.
-     *
-     * @var string
-     */
-    public $imageRepositoryUsernameSecretId;
-    protected $metadataType = TemplateMetadata::class;
-    protected $metadataDataType = '';
-    protected $sdkInfoType = SDKInfo::class;
-    protected $sdkInfoDataType = '';
-    /**
-     * Default runtime environment for the job.
-     *
-     * @param FlexTemplateRuntimeEnvironment $defaultEnvironment
-     */
-    public function setDefaultEnvironment(FlexTemplateRuntimeEnvironment $defaultEnvironment)
+namespace Google\Service\Dataflow {
+    class ContainerSpec extends \Google\Model
     {
+        protected $defaultEnvironmentType = FlexTemplateRuntimeEnvironment::class;
+        protected $defaultEnvironmentDataType = '';
+        /**
+         * Name of the docker container image. E.g., gcr.io/project/some-image
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Cloud Storage path to self-signed certificate of private registry.
+         *
+         * @var string
+         */
+        public $imageRepositoryCertPath;
+        /**
+         * Secret Manager secret id for password to authenticate to private registry.
+         *
+         * @var string
+         */
+        public $imageRepositoryPasswordSecretId;
+        /**
+         * Secret Manager secret id for username to authenticate to private registry.
+         *
+         * @var string
+         */
+        public $imageRepositoryUsernameSecretId;
+        protected $metadataType = TemplateMetadata::class;
+        protected $metadataDataType = '';
+        protected $sdkInfoType = SDKInfo::class;
+        protected $sdkInfoDataType = '';
+        /**
+         * Default runtime environment for the job.
+         *
+         * @param FlexTemplateRuntimeEnvironment $defaultEnvironment
+         */
+        public function setDefaultEnvironment(FlexTemplateRuntimeEnvironment $defaultEnvironment)
+        {
+        }
+        /**
+         * @return FlexTemplateRuntimeEnvironment
+         */
+        public function getDefaultEnvironment()
+        {
+        }
+        /**
+         * Name of the docker container image. E.g., gcr.io/project/some-image
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Cloud Storage path to self-signed certificate of private registry.
+         *
+         * @param string $imageRepositoryCertPath
+         */
+        public function setImageRepositoryCertPath($imageRepositoryCertPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageRepositoryCertPath()
+        {
+        }
+        /**
+         * Secret Manager secret id for password to authenticate to private registry.
+         *
+         * @param string $imageRepositoryPasswordSecretId
+         */
+        public function setImageRepositoryPasswordSecretId($imageRepositoryPasswordSecretId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageRepositoryPasswordSecretId()
+        {
+        }
+        /**
+         * Secret Manager secret id for username to authenticate to private registry.
+         *
+         * @param string $imageRepositoryUsernameSecretId
+         */
+        public function setImageRepositoryUsernameSecretId($imageRepositoryUsernameSecretId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageRepositoryUsernameSecretId()
+        {
+        }
+        /**
+         * Metadata describing a template including description and validation rules.
+         *
+         * @param TemplateMetadata $metadata
+         */
+        public function setMetadata(TemplateMetadata $metadata)
+        {
+        }
+        /**
+         * @return TemplateMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Required. SDK info of the Flex Template.
+         *
+         * @param SDKInfo $sdkInfo
+         */
+        public function setSdkInfo(SDKInfo $sdkInfo)
+        {
+        }
+        /**
+         * @return SDKInfo
+         */
+        public function getSdkInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FlexTemplateRuntimeEnvironment
+     * Runtime class alias of \Google\Service\Dataflow\ContainerSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultEnvironment()
-    {
-    }
-    /**
-     * Name of the docker container image. E.g., gcr.io/project/some-image
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Cloud Storage path to self-signed certificate of private registry.
-     *
-     * @param string $imageRepositoryCertPath
-     */
-    public function setImageRepositoryCertPath($imageRepositoryCertPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageRepositoryCertPath()
-    {
-    }
-    /**
-     * Secret Manager secret id for password to authenticate to private registry.
-     *
-     * @param string $imageRepositoryPasswordSecretId
-     */
-    public function setImageRepositoryPasswordSecretId($imageRepositoryPasswordSecretId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageRepositoryPasswordSecretId()
-    {
-    }
-    /**
-     * Secret Manager secret id for username to authenticate to private registry.
-     *
-     * @param string $imageRepositoryUsernameSecretId
-     */
-    public function setImageRepositoryUsernameSecretId($imageRepositoryUsernameSecretId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageRepositoryUsernameSecretId()
-    {
-    }
-    /**
-     * Metadata describing a template including description and validation rules.
-     *
-     * @param TemplateMetadata $metadata
-     */
-    public function setMetadata(TemplateMetadata $metadata)
-    {
-    }
-    /**
-     * @return TemplateMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Required. SDK info of the Flex Template.
-     *
-     * @param SDKInfo $sdkInfo
-     */
-    public function setSdkInfo(SDKInfo $sdkInfo)
-    {
-    }
-    /**
-     * @return SDKInfo
-     */
-    public function getSdkInfo()
+    class Google_Service_Dataflow_ContainerSpec extends \Google\Service\Dataflow\ContainerSpec
     {
     }
 }

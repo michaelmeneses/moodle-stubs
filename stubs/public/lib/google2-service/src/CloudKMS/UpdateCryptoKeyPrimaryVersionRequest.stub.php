@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class UpdateCryptoKeyPrimaryVersionRequest extends \Google\Model
-{
-    /**
-     * Required. The id of the child CryptoKeyVersion to use as primary.
-     *
-     * @var string
-     */
-    public $cryptoKeyVersionId;
-    /**
-     * Required. The id of the child CryptoKeyVersion to use as primary.
-     *
-     * @param string $cryptoKeyVersionId
-     */
-    public function setCryptoKeyVersionId($cryptoKeyVersionId)
+namespace Google\Service\CloudKMS {
+    class UpdateCryptoKeyPrimaryVersionRequest extends \Google\Model
     {
+        /**
+         * Required. The id of the child CryptoKeyVersion to use as primary.
+         *
+         * @var string
+         */
+        public $cryptoKeyVersionId;
+        /**
+         * Required. The id of the child CryptoKeyVersion to use as primary.
+         *
+         * @param string $cryptoKeyVersionId
+         */
+        public function setCryptoKeyVersionId($cryptoKeyVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKeyVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\UpdateCryptoKeyPrimaryVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeyVersionId()
+    class Google_Service_CloudKMS_UpdateCryptoKeyPrimaryVersionRequest extends \Google\Service\CloudKMS\UpdateCryptoKeyPrimaryVersionRequest
     {
     }
 }

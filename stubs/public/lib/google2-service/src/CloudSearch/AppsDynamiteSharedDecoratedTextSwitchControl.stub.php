@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedDecoratedTextSwitchControl extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $controlType;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onChangeActionType = AppsDynamiteSharedAction::class;
-    protected $onChangeActionDataType = '';
-    public $onChangeAction;
-    /**
-     * @var bool
-     */
-    public $selected;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setControlType($controlType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedDecoratedTextSwitchControl extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $controlType;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onChangeActionType = AppsDynamiteSharedAction::class;
+        protected $onChangeActionDataType = '';
+        public $onChangeAction;
+        /**
+         * @var bool
+         */
+        public $selected;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setControlType($controlType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAction
+         */
+        public function setOnChangeAction(AppsDynamiteSharedAction $onChangeAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAction
+         */
+        public function getOnChangeAction()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSelected($selected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSelected()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedDecoratedTextSwitchControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAction
-     */
-    public function setOnChangeAction(AppsDynamiteSharedAction $onChangeAction)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAction
-     */
-    public function getOnChangeAction()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSelected($selected)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSelected()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_AppsDynamiteSharedDecoratedTextSwitchControl extends \Google\Service\CloudSearch\AppsDynamiteSharedDecoratedTextSwitchControl
     {
     }
 }

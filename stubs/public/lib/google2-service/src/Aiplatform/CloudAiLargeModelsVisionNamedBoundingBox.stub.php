@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionNamedBoundingBox extends \Google\Collection
-{
-    protected $collection_key = 'scores';
-    /**
-     * @var string[]
-     */
-    public $classes;
-    /**
-     * @var string[]
-     */
-    public $entities;
-    /**
-     * @var float[]
-     */
-    public $scores;
-    /**
-     * @var float
-     */
-    public $x1;
-    /**
-     * @var float
-     */
-    public $x2;
-    /**
-     * @var float
-     */
-    public $y1;
-    /**
-     * @var float
-     */
-    public $y2;
-    /**
-     * @param string[] $classes
-     */
-    public function setClasses($classes)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionNamedBoundingBox extends \Google\Collection
     {
+        protected $collection_key = 'scores';
+        /**
+         * @var string[]
+         */
+        public $classes;
+        /**
+         * @var string[]
+         */
+        public $entities;
+        /**
+         * @var float[]
+         */
+        public $scores;
+        /**
+         * @var float
+         */
+        public $x1;
+        /**
+         * @var float
+         */
+        public $x2;
+        /**
+         * @var float
+         */
+        public $y1;
+        /**
+         * @var float
+         */
+        public $y2;
+        /**
+         * @param string[] $classes
+         */
+        public function setClasses($classes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClasses()
+        {
+        }
+        /**
+         * @param string[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * @param float[] $scores
+         */
+        public function setScores($scores)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getScores()
+        {
+        }
+        /**
+         * @param float $x1
+         */
+        public function setX1($x1)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getX1()
+        {
+        }
+        /**
+         * @param float $x2
+         */
+        public function setX2($x2)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getX2()
+        {
+        }
+        /**
+         * @param float $y1
+         */
+        public function setY1($y1)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getY1()
+        {
+        }
+        /**
+         * @param float $y2
+         */
+        public function setY2($y2)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getY2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionNamedBoundingBox registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClasses()
-    {
-    }
-    /**
-     * @param string[] $entities
-     */
-    public function setEntities($entities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEntities()
-    {
-    }
-    /**
-     * @param float[] $scores
-     */
-    public function setScores($scores)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getScores()
-    {
-    }
-    /**
-     * @param float $x1
-     */
-    public function setX1($x1)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getX1()
-    {
-    }
-    /**
-     * @param float $x2
-     */
-    public function setX2($x2)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getX2()
-    {
-    }
-    /**
-     * @param float $y1
-     */
-    public function setY1($y1)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getY1()
-    {
-    }
-    /**
-     * @param float $y2
-     */
-    public function setY2($y2)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getY2()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionNamedBoundingBox extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionNamedBoundingBox
     {
     }
 }

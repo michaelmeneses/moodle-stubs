@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickCommonPersonBirthday extends \Google\Model
-{
-    /**
-     * Unstructured birthday.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Unstructured birthday.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickCommonPersonBirthday extends \Google\Model
     {
+        /**
+         * Unstructured birthday.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Unstructured birthday.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickCommonPersonBirthday registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickCommonPersonBirthday extends \Google\Service\CloudSearch\EnterpriseTopazSidekickCommonPersonBirthday
     {
     }
 }

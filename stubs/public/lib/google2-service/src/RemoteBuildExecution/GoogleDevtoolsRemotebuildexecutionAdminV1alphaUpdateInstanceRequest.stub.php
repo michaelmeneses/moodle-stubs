@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest extends \Google\Model
-{
-    protected $instanceType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance::class;
-    protected $instanceDataType = '';
-    public $loggingEnabled;
-    public $name;
-    public $updateMask;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest extends \Google\Model
+    {
+        protected $instanceType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance::class;
+        protected $instanceDataType = '';
+        public $loggingEnabled;
+        public $name;
+        public $updateMask;
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
+         */
+        public function setInstance(GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
+         */
+        public function getInstance()
+        {
+        }
+        public function setLoggingEnabled($loggingEnabled)
+        {
+        }
+        public function getLoggingEnabled()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setUpdateMask($updateMask)
+        {
+        }
+        public function getUpdateMask()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setInstance(GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance $instance)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
-     */
-    public function getInstance()
-    {
-    }
-    public function setLoggingEnabled($loggingEnabled)
-    {
-    }
-    public function getLoggingEnabled()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setUpdateMask($updateMask)
-    {
-    }
-    public function getUpdateMask()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest
     {
     }
 }

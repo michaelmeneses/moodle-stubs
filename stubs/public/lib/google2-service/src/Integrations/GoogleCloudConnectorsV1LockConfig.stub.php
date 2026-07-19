@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1LockConfig extends \Google\Model
-{
-    /**
-     * Optional. Indicates whether or not the connection is locked.
-     *
-     * @var bool
-     */
-    public $locked;
-    /**
-     * Optional. Describes why a connection is locked.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Optional. Indicates whether or not the connection is locked.
-     *
-     * @param bool $locked
-     */
-    public function setLocked($locked)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1LockConfig extends \Google\Model
     {
+        /**
+         * Optional. Indicates whether or not the connection is locked.
+         *
+         * @var bool
+         */
+        public $locked;
+        /**
+         * Optional. Describes why a connection is locked.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Optional. Indicates whether or not the connection is locked.
+         *
+         * @param bool $locked
+         */
+        public function setLocked($locked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLocked()
+        {
+        }
+        /**
+         * Optional. Describes why a connection is locked.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1LockConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocked()
-    {
-    }
-    /**
-     * Optional. Describes why a connection is locked.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1LockConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1LockConfig
     {
     }
 }

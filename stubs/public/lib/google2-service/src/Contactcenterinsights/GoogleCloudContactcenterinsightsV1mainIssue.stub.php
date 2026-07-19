@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainIssue extends \Google\Collection
-{
-    protected $collection_key = 'sampleUtterances';
-    /**
-     * Output only. The time at which this issue was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Representative description of the issue.
-     *
-     * @var string
-     */
-    public $displayDescription;
-    /**
-     * The representative name for the issue.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Immutable. The resource name of the issue. Format: projects/{project}/locat
-     * ions/{location}/issueModels/{issue_model}/issues/{issue}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Resource names of the sample representative utterances that
-     * match to this issue.
-     *
-     * @var string[]
-     */
-    public $sampleUtterances;
-    /**
-     * Output only. The most recent time that this issue was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time at which this issue was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainIssue extends \Google\Collection
     {
+        protected $collection_key = 'sampleUtterances';
+        /**
+         * Output only. The time at which this issue was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Representative description of the issue.
+         *
+         * @var string
+         */
+        public $displayDescription;
+        /**
+         * The representative name for the issue.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Immutable. The resource name of the issue. Format: projects/{project}/locat
+         * ions/{location}/issueModels/{issue_model}/issues/{issue}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Resource names of the sample representative utterances that
+         * match to this issue.
+         *
+         * @var string[]
+         */
+        public $sampleUtterances;
+        /**
+         * Output only. The most recent time that this issue was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time at which this issue was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Representative description of the issue.
+         *
+         * @param string $displayDescription
+         */
+        public function setDisplayDescription($displayDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayDescription()
+        {
+        }
+        /**
+         * The representative name for the issue.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Immutable. The resource name of the issue. Format: projects/{project}/locat
+         * ions/{location}/issueModels/{issue_model}/issues/{issue}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Resource names of the sample representative utterances that
+         * match to this issue.
+         *
+         * @param string[] $sampleUtterances
+         */
+        public function setSampleUtterances($sampleUtterances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSampleUtterances()
+        {
+        }
+        /**
+         * Output only. The most recent time that this issue was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Representative description of the issue.
-     *
-     * @param string $displayDescription
-     */
-    public function setDisplayDescription($displayDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayDescription()
-    {
-    }
-    /**
-     * The representative name for the issue.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Immutable. The resource name of the issue. Format: projects/{project}/locat
-     * ions/{location}/issueModels/{issue_model}/issues/{issue}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Resource names of the sample representative utterances that
-     * match to this issue.
-     *
-     * @param string[] $sampleUtterances
-     */
-    public function setSampleUtterances($sampleUtterances)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSampleUtterances()
-    {
-    }
-    /**
-     * Output only. The most recent time that this issue was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainIssue extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssue
     {
     }
 }

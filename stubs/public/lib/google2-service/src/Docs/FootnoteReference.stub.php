@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class FootnoteReference extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    /**
-     * The ID of the footnote that contains the content of this footnote
-     * reference.
-     *
-     * @var string
-     */
-    public $footnoteId;
-    /**
-     * The rendered number of this footnote.
-     *
-     * @var string
-     */
-    public $footnoteNumber;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A FootnoteReference may have multiple
-     * insertion IDs if it's a nested suggested change. If empty, then this is not
-     * a suggested insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
-    protected $suggestedTextStyleChangesDataType = 'map';
-    protected $textStyleType = TextStyle::class;
-    protected $textStyleDataType = '';
-    /**
-     * The ID of the footnote that contains the content of this footnote
-     * reference.
-     *
-     * @param string $footnoteId
-     */
-    public function setFootnoteId($footnoteId)
+namespace Google\Service\Docs {
+    class FootnoteReference extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        /**
+         * The ID of the footnote that contains the content of this footnote
+         * reference.
+         *
+         * @var string
+         */
+        public $footnoteId;
+        /**
+         * The rendered number of this footnote.
+         *
+         * @var string
+         */
+        public $footnoteNumber;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A FootnoteReference may have multiple
+         * insertion IDs if it's a nested suggested change. If empty, then this is not
+         * a suggested insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
+        protected $suggestedTextStyleChangesDataType = 'map';
+        protected $textStyleType = TextStyle::class;
+        protected $textStyleDataType = '';
+        /**
+         * The ID of the footnote that contains the content of this footnote
+         * reference.
+         *
+         * @param string $footnoteId
+         */
+        public function setFootnoteId($footnoteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFootnoteId()
+        {
+        }
+        /**
+         * The rendered number of this footnote.
+         *
+         * @param string $footnoteNumber
+         */
+        public function setFootnoteNumber($footnoteNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFootnoteNumber()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A FootnoteReference may have multiple
+         * insertion IDs if it's a nested suggested change. If empty, then this is not
+         * a suggested insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The suggested text style changes to this FootnoteReference, keyed by
+         * suggestion ID.
+         *
+         * @param SuggestedTextStyle[] $suggestedTextStyleChanges
+         */
+        public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedTextStyle[]
+         */
+        public function getSuggestedTextStyleChanges()
+        {
+        }
+        /**
+         * The text style of this FootnoteReference.
+         *
+         * @param TextStyle $textStyle
+         */
+        public function setTextStyle(TextStyle $textStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getTextStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\FootnoteReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFootnoteId()
-    {
-    }
-    /**
-     * The rendered number of this footnote.
-     *
-     * @param string $footnoteNumber
-     */
-    public function setFootnoteNumber($footnoteNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFootnoteNumber()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A FootnoteReference may have multiple
-     * insertion IDs if it's a nested suggested change. If empty, then this is not
-     * a suggested insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The suggested text style changes to this FootnoteReference, keyed by
-     * suggestion ID.
-     *
-     * @param SuggestedTextStyle[] $suggestedTextStyleChanges
-     */
-    public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedTextStyle[]
-     */
-    public function getSuggestedTextStyleChanges()
-    {
-    }
-    /**
-     * The text style of this FootnoteReference.
-     *
-     * @param TextStyle $textStyle
-     */
-    public function setTextStyle(TextStyle $textStyle)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getTextStyle()
+    class Google_Service_Docs_FootnoteReference extends \Google\Service\Docs\FootnoteReference
     {
     }
 }

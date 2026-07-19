@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer extends \Google\Model
-{
-    /**
-     * Answer record that uniquely identifies the suggestion. This can be used to
-     * provide suggestion feedback.
-     *
-     * @var string
-     */
-    public $answerRecord;
-    protected $generatorSuggestionType = GoogleCloudDialogflowV2GeneratorSuggestion::class;
-    protected $generatorSuggestionDataType = '';
-    /**
-     * The name of the generator used to generate this suggestion. Format:
-     * `projects//locations//generators/`.
-     *
-     * @var string
-     */
-    public $sourceGenerator;
-    /**
-     * Answer record that uniquely identifies the suggestion. This can be used to
-     * provide suggestion feedback.
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer extends \Google\Model
     {
+        /**
+         * Answer record that uniquely identifies the suggestion. This can be used to
+         * provide suggestion feedback.
+         *
+         * @var string
+         */
+        public $answerRecord;
+        protected $generatorSuggestionType = GoogleCloudDialogflowV2GeneratorSuggestion::class;
+        protected $generatorSuggestionDataType = '';
+        /**
+         * The name of the generator used to generate this suggestion. Format:
+         * `projects//locations//generators/`.
+         *
+         * @var string
+         */
+        public $sourceGenerator;
+        /**
+         * Answer record that uniquely identifies the suggestion. This can be used to
+         * provide suggestion feedback.
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * Suggestion details.
+         *
+         * @param GoogleCloudDialogflowV2GeneratorSuggestion $generatorSuggestion
+         */
+        public function setGeneratorSuggestion(GoogleCloudDialogflowV2GeneratorSuggestion $generatorSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2GeneratorSuggestion
+         */
+        public function getGeneratorSuggestion()
+        {
+        }
+        /**
+         * The name of the generator used to generate this suggestion. Format:
+         * `projects//locations//generators/`.
+         *
+         * @param string $sourceGenerator
+         */
+        public function setSourceGenerator($sourceGenerator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceGenerator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * Suggestion details.
-     *
-     * @param GoogleCloudDialogflowV2GeneratorSuggestion $generatorSuggestion
-     */
-    public function setGeneratorSuggestion(GoogleCloudDialogflowV2GeneratorSuggestion $generatorSuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2GeneratorSuggestion
-     */
-    public function getGeneratorSuggestion()
-    {
-    }
-    /**
-     * The name of the generator used to generate this suggestion. Format:
-     * `projects//locations//generators/`.
-     *
-     * @param string $sourceGenerator
-     */
-    public function setSourceGenerator($sourceGenerator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceGenerator()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer
     {
     }
 }

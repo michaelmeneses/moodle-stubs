@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class VoicemailMisconfiguration extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = VoicemailRecipientError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Issue(s) with voicemail recipients.
-     *
-     * @param VoicemailRecipientError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\AlertCenter {
+    class VoicemailMisconfiguration extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = VoicemailRecipientError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Issue(s) with voicemail recipients.
+         *
+         * @param VoicemailRecipientError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return VoicemailRecipientError[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VoicemailRecipientError[]
+     * Runtime class alias of \Google\Service\AlertCenter\VoicemailMisconfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_AlertCenter_VoicemailMisconfiguration extends \Google\Service\AlertCenter\VoicemailMisconfiguration
     {
     }
 }

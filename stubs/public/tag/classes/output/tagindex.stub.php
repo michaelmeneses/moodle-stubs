@@ -29,6 +29,12 @@
  */
 namespace core_tag\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use core_tag_tag;
 /**
  * Class to display items tagged with a specific tag
  *

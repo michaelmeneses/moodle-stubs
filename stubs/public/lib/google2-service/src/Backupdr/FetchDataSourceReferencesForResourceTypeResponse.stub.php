@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class FetchDataSourceReferencesForResourceTypeResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataSourceReferences';
-    protected $dataSourceReferencesType = DataSourceReference::class;
-    protected $dataSourceReferencesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The DataSourceReferences from the specified parent.
-     *
-     * @param DataSourceReference[] $dataSourceReferences
-     */
-    public function setDataSourceReferences($dataSourceReferences)
+namespace Google\Service\Backupdr {
+    class FetchDataSourceReferencesForResourceTypeResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataSourceReferences';
+        protected $dataSourceReferencesType = DataSourceReference::class;
+        protected $dataSourceReferencesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The DataSourceReferences from the specified parent.
+         *
+         * @param DataSourceReference[] $dataSourceReferences
+         */
+        public function setDataSourceReferences($dataSourceReferences)
+        {
+        }
+        /**
+         * @return DataSourceReference[]
+         */
+        public function getDataSourceReferences()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceReference[]
+     * Runtime class alias of \Google\Service\Backupdr\FetchDataSourceReferencesForResourceTypeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceReferences()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Backupdr_FetchDataSourceReferencesForResourceTypeResponse extends \Google\Service\Backupdr\FetchDataSourceReferencesForResourceTypeResponse
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RewrittenQueries extends \Google\Collection
-{
-    protected $collection_key = 'rewrittenQueries';
-    protected $rewrittenQueriesType = RewrittenQuery::class;
-    protected $rewrittenQueriesDataType = 'array';
-    /**
-     * @var int
-     */
-    public $selectedQueryIndex;
-    /**
-     * @param RewrittenQuery[]
-     */
-    public function setRewrittenQueries($rewrittenQueries)
+namespace Google\Service\CloudSearch {
+    class RewrittenQueries extends \Google\Collection
     {
+        protected $collection_key = 'rewrittenQueries';
+        protected $rewrittenQueriesType = RewrittenQuery::class;
+        protected $rewrittenQueriesDataType = 'array';
+        /**
+         * @var int
+         */
+        public $selectedQueryIndex;
+        /**
+         * @param RewrittenQuery[]
+         */
+        public function setRewrittenQueries($rewrittenQueries)
+        {
+        }
+        /**
+         * @return RewrittenQuery[]
+         */
+        public function getRewrittenQueries()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSelectedQueryIndex($selectedQueryIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSelectedQueryIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RewrittenQuery[]
+     * Runtime class alias of \Google\Service\CloudSearch\RewrittenQueries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRewrittenQueries()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSelectedQueryIndex($selectedQueryIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSelectedQueryIndex()
+    class Google_Service_CloudSearch_RewrittenQueries extends \Google\Service\CloudSearch\RewrittenQueries
     {
     }
 }

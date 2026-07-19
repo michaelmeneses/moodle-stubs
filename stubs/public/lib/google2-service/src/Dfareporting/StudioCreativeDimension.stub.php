@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class StudioCreativeDimension extends \Google\Model
-{
-    /**
-     * Height of the studio creative.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Width of the studio creative.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Height of the studio creative.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\Dfareporting {
+    class StudioCreativeDimension extends \Google\Model
     {
+        /**
+         * Height of the studio creative.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Width of the studio creative.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Height of the studio creative.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Width of the studio creative.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dfareporting\StudioCreativeDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Width of the studio creative.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Dfareporting_StudioCreativeDimension extends \Google\Service\Dfareporting\StudioCreativeDimension
     {
     }
 }

@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class GlueRecord extends \Google\Collection
-{
-    protected $collection_key = 'ipv6Addresses';
-    /**
-     * Required. Domain name of the host in Punycode format.
-     *
-     * @var string
-     */
-    public $hostName;
-    /**
-     * List of IPv4 addresses corresponding to this host in the standard decimal
-     * format (e.g. `198.51.100.1`). At least one of `ipv4_address` and
-     * `ipv6_address` must be set.
-     *
-     * @var string[]
-     */
-    public $ipv4Addresses;
-    /**
-     * List of IPv6 addresses corresponding to this host in the standard
-     * hexadecimal format (e.g. `2001:db8::`). At least one of `ipv4_address` and
-     * `ipv6_address` must be set.
-     *
-     * @var string[]
-     */
-    public $ipv6Addresses;
-    /**
-     * Required. Domain name of the host in Punycode format.
-     *
-     * @param string $hostName
-     */
-    public function setHostName($hostName)
+namespace Google\Service\CloudDomains {
+    class GlueRecord extends \Google\Collection
     {
+        protected $collection_key = 'ipv6Addresses';
+        /**
+         * Required. Domain name of the host in Punycode format.
+         *
+         * @var string
+         */
+        public $hostName;
+        /**
+         * List of IPv4 addresses corresponding to this host in the standard decimal
+         * format (e.g. `198.51.100.1`). At least one of `ipv4_address` and
+         * `ipv6_address` must be set.
+         *
+         * @var string[]
+         */
+        public $ipv4Addresses;
+        /**
+         * List of IPv6 addresses corresponding to this host in the standard
+         * hexadecimal format (e.g. `2001:db8::`). At least one of `ipv4_address` and
+         * `ipv6_address` must be set.
+         *
+         * @var string[]
+         */
+        public $ipv6Addresses;
+        /**
+         * Required. Domain name of the host in Punycode format.
+         *
+         * @param string $hostName
+         */
+        public function setHostName($hostName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostName()
+        {
+        }
+        /**
+         * List of IPv4 addresses corresponding to this host in the standard decimal
+         * format (e.g. `198.51.100.1`). At least one of `ipv4_address` and
+         * `ipv6_address` must be set.
+         *
+         * @param string[] $ipv4Addresses
+         */
+        public function setIpv4Addresses($ipv4Addresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpv4Addresses()
+        {
+        }
+        /**
+         * List of IPv6 addresses corresponding to this host in the standard
+         * hexadecimal format (e.g. `2001:db8::`). At least one of `ipv4_address` and
+         * `ipv6_address` must be set.
+         *
+         * @param string[] $ipv6Addresses
+         */
+        public function setIpv6Addresses($ipv6Addresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpv6Addresses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\GlueRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostName()
-    {
-    }
-    /**
-     * List of IPv4 addresses corresponding to this host in the standard decimal
-     * format (e.g. `198.51.100.1`). At least one of `ipv4_address` and
-     * `ipv6_address` must be set.
-     *
-     * @param string[] $ipv4Addresses
-     */
-    public function setIpv4Addresses($ipv4Addresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpv4Addresses()
-    {
-    }
-    /**
-     * List of IPv6 addresses corresponding to this host in the standard
-     * hexadecimal format (e.g. `2001:db8::`). At least one of `ipv4_address` and
-     * `ipv6_address` must be set.
-     *
-     * @param string[] $ipv6Addresses
-     */
-    public function setIpv6Addresses($ipv6Addresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpv6Addresses()
+    class Google_Service_CloudDomains_GlueRecord extends \Google\Service\CloudDomains\GlueRecord
     {
     }
 }

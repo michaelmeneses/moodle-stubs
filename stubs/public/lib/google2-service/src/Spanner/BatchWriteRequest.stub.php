@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BatchWriteRequest extends \Google\Collection
-{
-    protected $collection_key = 'mutationGroups';
-    /**
-     * Optional. If you don't set the `exclude_txn_from_change_streams` option or
-     * if it's set to `false`, then any change streams monitoring columns modified
-     * by transactions will capture the updates made within that transaction.
-     *
-     * @var bool
-     */
-    public $excludeTxnFromChangeStreams;
-    protected $mutationGroupsType = MutationGroup::class;
-    protected $mutationGroupsDataType = 'array';
-    protected $requestOptionsType = RequestOptions::class;
-    protected $requestOptionsDataType = '';
-    /**
-     * Optional. If you don't set the `exclude_txn_from_change_streams` option or
-     * if it's set to `false`, then any change streams monitoring columns modified
-     * by transactions will capture the updates made within that transaction.
-     *
-     * @param bool $excludeTxnFromChangeStreams
-     */
-    public function setExcludeTxnFromChangeStreams($excludeTxnFromChangeStreams)
+namespace Google\Service\Spanner {
+    class BatchWriteRequest extends \Google\Collection
     {
+        protected $collection_key = 'mutationGroups';
+        /**
+         * Optional. If you don't set the `exclude_txn_from_change_streams` option or
+         * if it's set to `false`, then any change streams monitoring columns modified
+         * by transactions will capture the updates made within that transaction.
+         *
+         * @var bool
+         */
+        public $excludeTxnFromChangeStreams;
+        protected $mutationGroupsType = MutationGroup::class;
+        protected $mutationGroupsDataType = 'array';
+        protected $requestOptionsType = RequestOptions::class;
+        protected $requestOptionsDataType = '';
+        /**
+         * Optional. If you don't set the `exclude_txn_from_change_streams` option or
+         * if it's set to `false`, then any change streams monitoring columns modified
+         * by transactions will capture the updates made within that transaction.
+         *
+         * @param bool $excludeTxnFromChangeStreams
+         */
+        public function setExcludeTxnFromChangeStreams($excludeTxnFromChangeStreams)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExcludeTxnFromChangeStreams()
+        {
+        }
+        /**
+         * Required. The groups of mutations to be applied.
+         *
+         * @param MutationGroup[] $mutationGroups
+         */
+        public function setMutationGroups($mutationGroups)
+        {
+        }
+        /**
+         * @return MutationGroup[]
+         */
+        public function getMutationGroups()
+        {
+        }
+        /**
+         * Common options for this request.
+         *
+         * @param RequestOptions $requestOptions
+         */
+        public function setRequestOptions(RequestOptions $requestOptions)
+        {
+        }
+        /**
+         * @return RequestOptions
+         */
+        public function getRequestOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\BatchWriteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeTxnFromChangeStreams()
-    {
-    }
-    /**
-     * Required. The groups of mutations to be applied.
-     *
-     * @param MutationGroup[] $mutationGroups
-     */
-    public function setMutationGroups($mutationGroups)
-    {
-    }
-    /**
-     * @return MutationGroup[]
-     */
-    public function getMutationGroups()
-    {
-    }
-    /**
-     * Common options for this request.
-     *
-     * @param RequestOptions $requestOptions
-     */
-    public function setRequestOptions(RequestOptions $requestOptions)
-    {
-    }
-    /**
-     * @return RequestOptions
-     */
-    public function getRequestOptions()
+    class Google_Service_Spanner_BatchWriteRequest extends \Google\Service\Spanner\BatchWriteRequest
     {
     }
 }

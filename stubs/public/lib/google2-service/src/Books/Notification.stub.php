@@ -21,274 +21,283 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Notification extends \Google\Collection
-{
-    protected $collection_key = 'crmExperimentIds';
-    protected $internal_gapi_mappings = ["docId" => "doc_id", "docType" => "doc_type", "dontShowNotification" => "dont_show_notification", "isDocumentMature" => "is_document_mature", "notificationType" => "notification_type", "pcampaignId" => "pcampaign_id", "showNotificationSettingsAction" => "show_notification_settings_action"];
-    /**
-     * @var string
-     */
-    public $body;
-    /**
-     * The list of crm experiment ids.
-     *
-     * @var string[]
-     */
-    public $crmExperimentIds;
-    /**
-     * @var string
-     */
-    public $docId;
-    /**
-     * @var string
-     */
-    public $docType;
-    /**
-     * @var bool
-     */
-    public $dontShowNotification;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var bool
-     */
-    public $isDocumentMature;
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $notificationGroup;
-    /**
-     * @var string
-     */
-    public $notificationType;
-    /**
-     * @var string
-     */
-    public $pcampaignId;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var bool
-     */
-    public $showNotificationSettingsAction;
-    /**
-     * @var string
-     */
-    public $targetUrl;
-    /**
-     * @var string
-     */
-    public $timeToExpireMs;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\Books {
+    class Notification extends \Google\Collection
     {
+        protected $collection_key = 'crmExperimentIds';
+        protected $internal_gapi_mappings = ["docId" => "doc_id", "docType" => "doc_type", "dontShowNotification" => "dont_show_notification", "isDocumentMature" => "is_document_mature", "notificationType" => "notification_type", "pcampaignId" => "pcampaign_id", "showNotificationSettingsAction" => "show_notification_settings_action"];
+        /**
+         * @var string
+         */
+        public $body;
+        /**
+         * The list of crm experiment ids.
+         *
+         * @var string[]
+         */
+        public $crmExperimentIds;
+        /**
+         * @var string
+         */
+        public $docId;
+        /**
+         * @var string
+         */
+        public $docType;
+        /**
+         * @var bool
+         */
+        public $dontShowNotification;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var bool
+         */
+        public $isDocumentMature;
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $notificationGroup;
+        /**
+         * @var string
+         */
+        public $notificationType;
+        /**
+         * @var string
+         */
+        public $pcampaignId;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var bool
+         */
+        public $showNotificationSettingsAction;
+        /**
+         * @var string
+         */
+        public $targetUrl;
+        /**
+         * @var string
+         */
+        public $timeToExpireMs;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * The list of crm experiment ids.
+         *
+         * @param string[] $crmExperimentIds
+         */
+        public function setCrmExperimentIds($crmExperimentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCrmExperimentIds()
+        {
+        }
+        /**
+         * @param string $docId
+         */
+        public function setDocId($docId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocId()
+        {
+        }
+        /**
+         * @param string $docType
+         */
+        public function setDocType($docType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocType()
+        {
+        }
+        /**
+         * @param bool $dontShowNotification
+         */
+        public function setDontShowNotification($dontShowNotification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDontShowNotification()
+        {
+        }
+        /**
+         * @param string $iconUrl
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param bool $isDocumentMature
+         */
+        public function setIsDocumentMature($isDocumentMature)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDocumentMature()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string $notificationGroup
+         */
+        public function setNotificationGroup($notificationGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotificationGroup()
+        {
+        }
+        /**
+         * @param string $notificationType
+         */
+        public function setNotificationType($notificationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotificationType()
+        {
+        }
+        /**
+         * @param string $pcampaignId
+         */
+        public function setPcampaignId($pcampaignId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPcampaignId()
+        {
+        }
+        /**
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param bool $showNotificationSettingsAction
+         */
+        public function setShowNotificationSettingsAction($showNotificationSettingsAction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowNotificationSettingsAction()
+        {
+        }
+        /**
+         * @param string $targetUrl
+         */
+        public function setTargetUrl($targetUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetUrl()
+        {
+        }
+        /**
+         * @param string $timeToExpireMs
+         */
+        public function setTimeToExpireMs($timeToExpireMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeToExpireMs()
+        {
+        }
+        /**
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Notification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * The list of crm experiment ids.
-     *
-     * @param string[] $crmExperimentIds
-     */
-    public function setCrmExperimentIds($crmExperimentIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCrmExperimentIds()
-    {
-    }
-    /**
-     * @param string $docId
-     */
-    public function setDocId($docId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocId()
-    {
-    }
-    /**
-     * @param string $docType
-     */
-    public function setDocType($docType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocType()
-    {
-    }
-    /**
-     * @param bool $dontShowNotification
-     */
-    public function setDontShowNotification($dontShowNotification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDontShowNotification()
-    {
-    }
-    /**
-     * @param string $iconUrl
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param bool $isDocumentMature
-     */
-    public function setIsDocumentMature($isDocumentMature)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDocumentMature()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string $notificationGroup
-     */
-    public function setNotificationGroup($notificationGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotificationGroup()
-    {
-    }
-    /**
-     * @param string $notificationType
-     */
-    public function setNotificationType($notificationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotificationType()
-    {
-    }
-    /**
-     * @param string $pcampaignId
-     */
-    public function setPcampaignId($pcampaignId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPcampaignId()
-    {
-    }
-    /**
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param bool $showNotificationSettingsAction
-     */
-    public function setShowNotificationSettingsAction($showNotificationSettingsAction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowNotificationSettingsAction()
-    {
-    }
-    /**
-     * @param string $targetUrl
-     */
-    public function setTargetUrl($targetUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetUrl()
-    {
-    }
-    /**
-     * @param string $timeToExpireMs
-     */
-    public function setTimeToExpireMs($timeToExpireMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeToExpireMs()
-    {
-    }
-    /**
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Books_Notification extends \Google\Service\Books\Notification
     {
     }
 }

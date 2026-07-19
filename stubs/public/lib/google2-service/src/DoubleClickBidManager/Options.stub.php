@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class Options extends \Google\Model
-{
-    /**
-     * Whether to include data for audience lists specifically targeted by
-     * filtered line items or insertion orders. Requires the use of
-     * `FILTER_INSERTION_ORDER` or `FILTER_LINE_ITEM` filters.
-     *
-     * @var bool
-     */
-    public $includeOnlyTargetedUserLists;
-    /**
-     * Whether to include data for audience lists specifically targeted by
-     * filtered line items or insertion orders. Requires the use of
-     * `FILTER_INSERTION_ORDER` or `FILTER_LINE_ITEM` filters.
-     *
-     * @param bool $includeOnlyTargetedUserLists
-     */
-    public function setIncludeOnlyTargetedUserLists($includeOnlyTargetedUserLists)
+namespace Google\Service\DoubleClickBidManager {
+    class Options extends \Google\Model
     {
+        /**
+         * Whether to include data for audience lists specifically targeted by
+         * filtered line items or insertion orders. Requires the use of
+         * `FILTER_INSERTION_ORDER` or `FILTER_LINE_ITEM` filters.
+         *
+         * @var bool
+         */
+        public $includeOnlyTargetedUserLists;
+        /**
+         * Whether to include data for audience lists specifically targeted by
+         * filtered line items or insertion orders. Requires the use of
+         * `FILTER_INSERTION_ORDER` or `FILTER_LINE_ITEM` filters.
+         *
+         * @param bool $includeOnlyTargetedUserLists
+         */
+        public function setIncludeOnlyTargetedUserLists($includeOnlyTargetedUserLists)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeOnlyTargetedUserLists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\Options registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeOnlyTargetedUserLists()
+    class Google_Service_DoubleClickBidManager_Options extends \Google\Service\DoubleClickBidManager\Options
     {
     }
 }

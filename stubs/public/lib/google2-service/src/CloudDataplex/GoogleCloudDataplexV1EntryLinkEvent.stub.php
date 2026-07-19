@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntryLinkEvent extends \Google\Model
-{
-    /**
-     * An unspecified event type.
-     */
-    public const EVENT_TYPE_EVENT_TYPE_UNSPECIFIED = 'EVENT_TYPE_UNSPECIFIED';
-    /**
-     * EntryLink create event.
-     */
-    public const EVENT_TYPE_ENTRY_LINK_CREATE = 'ENTRY_LINK_CREATE';
-    /**
-     * EntryLink delete event.
-     */
-    public const EVENT_TYPE_ENTRY_LINK_DELETE = 'ENTRY_LINK_DELETE';
-    /**
-     * The type of the event.
-     *
-     * @var string
-     */
-    public $eventType;
-    /**
-     * The log message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Name of the resource.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The type of the event.
-     *
-     * Accepted values: EVENT_TYPE_UNSPECIFIED, ENTRY_LINK_CREATE,
-     * ENTRY_LINK_DELETE
-     *
-     * @param self::EVENT_TYPE_* $eventType
-     */
-    public function setEventType($eventType)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntryLinkEvent extends \Google\Model
     {
+        /**
+         * An unspecified event type.
+         */
+        public const EVENT_TYPE_EVENT_TYPE_UNSPECIFIED = 'EVENT_TYPE_UNSPECIFIED';
+        /**
+         * EntryLink create event.
+         */
+        public const EVENT_TYPE_ENTRY_LINK_CREATE = 'ENTRY_LINK_CREATE';
+        /**
+         * EntryLink delete event.
+         */
+        public const EVENT_TYPE_ENTRY_LINK_DELETE = 'ENTRY_LINK_DELETE';
+        /**
+         * The type of the event.
+         *
+         * @var string
+         */
+        public $eventType;
+        /**
+         * The log message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Name of the resource.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The type of the event.
+         *
+         * Accepted values: EVENT_TYPE_UNSPECIFIED, ENTRY_LINK_CREATE,
+         * ENTRY_LINK_DELETE
+         *
+         * @param self::EVENT_TYPE_* $eventType
+         */
+        public function setEventType($eventType)
+        {
+        }
+        /**
+         * @return self::EVENT_TYPE_*
+         */
+        public function getEventType()
+        {
+        }
+        /**
+         * The log message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Name of the resource.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EVENT_TYPE_*
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryLinkEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventType()
-    {
-    }
-    /**
-     * The log message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Name of the resource.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntryLinkEvent extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryLinkEvent
     {
     }
 }

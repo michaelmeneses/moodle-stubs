@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ListOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    public $nextPageToken;
-    protected $operationsType = Operation::class;
-    protected $operationsDataType = 'array';
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ContainerAnalysis {
+    class ListOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        public $nextPageToken;
+        protected $operationsType = Operation::class;
+        protected $operationsDataType = 'array';
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Operation[]
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return Operation[]
+         */
+        public function getOperations()
+        {
+        }
     }
-    public function getNextPageToken()
-    {
-    }
+}
+namespace {
     /**
-     * @param Operation[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ListOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return Operation[]
-     */
-    public function getOperations()
+    class Google_Service_ContainerAnalysis_ListOperationsResponse extends \Google\Service\ContainerAnalysis\ListOperationsResponse
     {
     }
 }

@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureResourcesSpec extends \Google\Model
-{
-    /**
-     * The reserved capacity is made up of densely deployed reservation blocks.
-     */
-    public const DEPLOYMENT_TYPE_DENSE = 'DENSE';
-    public const DEPLOYMENT_TYPE_DEPLOYMENT_TYPE_UNSPECIFIED = 'DEPLOYMENT_TYPE_UNSPECIFIED';
-    /**
-     * Indicates if the reservation allocation strategy is static (DENSE) or
-     * dynamic (STANDARD). Defaults to DENSE.
-     *
-     * @var string
-     */
-    public $deploymentType;
-    protected $locationPolicyType = FutureResourcesSpecLocationPolicy::class;
-    protected $locationPolicyDataType = '';
-    protected $targetResourcesType = FutureResourcesSpecTargetResources::class;
-    protected $targetResourcesDataType = '';
-    protected $timeRangeSpecType = FlexibleTimeRange::class;
-    protected $timeRangeSpecDataType = '';
-    /**
-     * Indicates if the reservation allocation strategy is static (DENSE) or
-     * dynamic (STANDARD). Defaults to DENSE.
-     *
-     * Accepted values: DENSE, DEPLOYMENT_TYPE_UNSPECIFIED
-     *
-     * @param self::DEPLOYMENT_TYPE_* $deploymentType
-     */
-    public function setDeploymentType($deploymentType)
+namespace Google\Service\Compute {
+    class FutureResourcesSpec extends \Google\Model
     {
+        /**
+         * The reserved capacity is made up of densely deployed reservation blocks.
+         */
+        public const DEPLOYMENT_TYPE_DENSE = 'DENSE';
+        public const DEPLOYMENT_TYPE_DEPLOYMENT_TYPE_UNSPECIFIED = 'DEPLOYMENT_TYPE_UNSPECIFIED';
+        /**
+         * Indicates if the reservation allocation strategy is static (DENSE) or
+         * dynamic (STANDARD). Defaults to DENSE.
+         *
+         * @var string
+         */
+        public $deploymentType;
+        protected $locationPolicyType = FutureResourcesSpecLocationPolicy::class;
+        protected $locationPolicyDataType = '';
+        protected $targetResourcesType = FutureResourcesSpecTargetResources::class;
+        protected $targetResourcesDataType = '';
+        protected $timeRangeSpecType = FlexibleTimeRange::class;
+        protected $timeRangeSpecDataType = '';
+        /**
+         * Indicates if the reservation allocation strategy is static (DENSE) or
+         * dynamic (STANDARD). Defaults to DENSE.
+         *
+         * Accepted values: DENSE, DEPLOYMENT_TYPE_UNSPECIFIED
+         *
+         * @param self::DEPLOYMENT_TYPE_* $deploymentType
+         */
+        public function setDeploymentType($deploymentType)
+        {
+        }
+        /**
+         * @return self::DEPLOYMENT_TYPE_*
+         */
+        public function getDeploymentType()
+        {
+        }
+        /**
+         * Optional location policy allowing to exclude some zone(s) in which the
+         * resources must not be created.
+         *
+         * @param FutureResourcesSpecLocationPolicy $locationPolicy
+         */
+        public function setLocationPolicy(FutureResourcesSpecLocationPolicy $locationPolicy)
+        {
+        }
+        /**
+         * @return FutureResourcesSpecLocationPolicy
+         */
+        public function getLocationPolicy()
+        {
+        }
+        /**
+         * Specification of the reserved resources.
+         *
+         * @param FutureResourcesSpecTargetResources $targetResources
+         */
+        public function setTargetResources(FutureResourcesSpecTargetResources $targetResources)
+        {
+        }
+        /**
+         * @return FutureResourcesSpecTargetResources
+         */
+        public function getTargetResources()
+        {
+        }
+        /**
+         * Specification of a time range in which the resources may be created. The
+         * time range specifies start of resource use and planned end of resource use.
+         *
+         * @param FlexibleTimeRange $timeRangeSpec
+         */
+        public function setTimeRangeSpec(FlexibleTimeRange $timeRangeSpec)
+        {
+        }
+        /**
+         * @return FlexibleTimeRange
+         */
+        public function getTimeRangeSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DEPLOYMENT_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\FutureResourcesSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentType()
-    {
-    }
-    /**
-     * Optional location policy allowing to exclude some zone(s) in which the
-     * resources must not be created.
-     *
-     * @param FutureResourcesSpecLocationPolicy $locationPolicy
-     */
-    public function setLocationPolicy(FutureResourcesSpecLocationPolicy $locationPolicy)
-    {
-    }
-    /**
-     * @return FutureResourcesSpecLocationPolicy
-     */
-    public function getLocationPolicy()
-    {
-    }
-    /**
-     * Specification of the reserved resources.
-     *
-     * @param FutureResourcesSpecTargetResources $targetResources
-     */
-    public function setTargetResources(FutureResourcesSpecTargetResources $targetResources)
-    {
-    }
-    /**
-     * @return FutureResourcesSpecTargetResources
-     */
-    public function getTargetResources()
-    {
-    }
-    /**
-     * Specification of a time range in which the resources may be created. The
-     * time range specifies start of resource use and planned end of resource use.
-     *
-     * @param FlexibleTimeRange $timeRangeSpec
-     */
-    public function setTimeRangeSpec(FlexibleTimeRange $timeRangeSpec)
-    {
-    }
-    /**
-     * @return FlexibleTimeRange
-     */
-    public function getTimeRangeSpec()
+    class Google_Service_Compute_FutureResourcesSpec extends \Google\Service\Compute\FutureResourcesSpec
     {
     }
 }

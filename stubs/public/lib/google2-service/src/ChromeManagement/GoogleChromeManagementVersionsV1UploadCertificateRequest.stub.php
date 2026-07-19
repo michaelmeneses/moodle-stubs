@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1UploadCertificateRequest extends \Google\Model
-{
-    /**
-     * Required. The issued certificate in PEM format.
-     *
-     * @var string
-     */
-    public $certificatePem;
-    /**
-     * Required. The issued certificate in PEM format.
-     *
-     * @param string $certificatePem
-     */
-    public function setCertificatePem($certificatePem)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1UploadCertificateRequest extends \Google\Model
     {
+        /**
+         * Required. The issued certificate in PEM format.
+         *
+         * @var string
+         */
+        public $certificatePem;
+        /**
+         * Required. The issued certificate in PEM format.
+         *
+         * @param string $certificatePem
+         */
+        public function setCertificatePem($certificatePem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificatePem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1UploadCertificateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificatePem()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1UploadCertificateRequest extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1UploadCertificateRequest
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class GcsBackupSource extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    /**
-     * Optional. URIs of the Cloud Storage objects to import. Example:
-     * gs://bucket1/object1, gs://bucket2/folder2/object2
-     *
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * Optional. URIs of the Cloud Storage objects to import. Example:
-     * gs://bucket1/object1, gs://bucket2/folder2/object2
-     *
-     * @param string[] $uris
-     */
-    public function setUris($uris)
+namespace Google\Service\CloudRedis {
+    class GcsBackupSource extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        /**
+         * Optional. URIs of the Cloud Storage objects to import. Example:
+         * gs://bucket1/object1, gs://bucket2/folder2/object2
+         *
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * Optional. URIs of the Cloud Storage objects to import. Example:
+         * gs://bucket1/object1, gs://bucket2/folder2/object2
+         *
+         * @param string[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRedis\GcsBackupSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUris()
+    class Google_Service_CloudRedis_GcsBackupSource extends \Google\Service\CloudRedis\GcsBackupSource
     {
     }
 }

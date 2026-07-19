@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DetectionRule extends \Google\Model
-{
-    protected $hotwordRuleType = GooglePrivacyDlpV2HotwordRule::class;
-    protected $hotwordRuleDataType = '';
-    /**
-     * Hotword-based detection rule.
-     *
-     * @param GooglePrivacyDlpV2HotwordRule $hotwordRule
-     */
-    public function setHotwordRule(GooglePrivacyDlpV2HotwordRule $hotwordRule)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DetectionRule extends \Google\Model
     {
+        protected $hotwordRuleType = GooglePrivacyDlpV2HotwordRule::class;
+        protected $hotwordRuleDataType = '';
+        /**
+         * Hotword-based detection rule.
+         *
+         * @param GooglePrivacyDlpV2HotwordRule $hotwordRule
+         */
+        public function setHotwordRule(GooglePrivacyDlpV2HotwordRule $hotwordRule)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2HotwordRule
+         */
+        public function getHotwordRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2HotwordRule
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DetectionRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotwordRule()
+    class Google_Service_DLP_GooglePrivacyDlpV2DetectionRule extends \Google\Service\DLP\GooglePrivacyDlpV2DetectionRule
     {
     }
 }

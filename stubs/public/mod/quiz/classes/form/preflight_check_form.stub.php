@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\form;
 
+use moodleform;
 /**
  * A form that limits student's access to attempt a quiz.
  *

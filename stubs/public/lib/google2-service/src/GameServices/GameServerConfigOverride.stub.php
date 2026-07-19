@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class GameServerConfigOverride extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $configVersion;
-    protected $realmsSelectorType = RealmSelector::class;
-    protected $realmsSelectorDataType = '';
-    /**
-     * @param string
-     */
-    public function setConfigVersion($configVersion)
+namespace Google\Service\GameServices {
+    class GameServerConfigOverride extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $configVersion;
+        protected $realmsSelectorType = RealmSelector::class;
+        protected $realmsSelectorDataType = '';
+        /**
+         * @param string
+         */
+        public function setConfigVersion($configVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigVersion()
+        {
+        }
+        /**
+         * @param RealmSelector
+         */
+        public function setRealmsSelector(RealmSelector $realmsSelector)
+        {
+        }
+        /**
+         * @return RealmSelector
+         */
+        public function getRealmsSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\GameServerConfigOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigVersion()
-    {
-    }
-    /**
-     * @param RealmSelector
-     */
-    public function setRealmsSelector(RealmSelector $realmsSelector)
-    {
-    }
-    /**
-     * @return RealmSelector
-     */
-    public function getRealmsSelector()
+    class Google_Service_GameServices_GameServerConfigOverride extends \Google\Service\GameServices\GameServerConfigOverride
     {
     }
 }

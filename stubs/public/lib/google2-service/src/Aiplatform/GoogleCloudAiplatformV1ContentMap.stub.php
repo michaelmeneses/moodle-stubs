@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ContentMap extends \Google\Model
-{
-    protected $valuesType = GoogleCloudAiplatformV1ContentMapContents::class;
-    protected $valuesDataType = 'map';
-    /**
-     * Optional. Map of placeholder to contents.
-     *
-     * @param GoogleCloudAiplatformV1ContentMapContents[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ContentMap extends \Google\Model
     {
+        protected $valuesType = GoogleCloudAiplatformV1ContentMapContents::class;
+        protected $valuesDataType = 'map';
+        /**
+         * Optional. Map of placeholder to contents.
+         *
+         * @param GoogleCloudAiplatformV1ContentMapContents[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ContentMapContents[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ContentMapContents[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ContentMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ContentMap extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ContentMap
     {
     }
 }

@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class InvideoBranding extends \Google\Model
-{
-    /**
-     * The bytes the uploaded image. Only used in api to youtube communication.
-     *
-     * @var string
-     */
-    public $imageBytes;
-    /**
-     * The url of the uploaded image. Only used in apiary to api communication.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    protected $positionType = InvideoPosition::class;
-    protected $positionDataType = '';
-    /**
-     * The channel to which this branding links. If not present it defaults to the
-     * current channel.
-     *
-     * @var string
-     */
-    public $targetChannelId;
-    protected $timingType = InvideoTiming::class;
-    protected $timingDataType = '';
-    /**
-     * The bytes the uploaded image. Only used in api to youtube communication.
-     *
-     * @param string $imageBytes
-     */
-    public function setImageBytes($imageBytes)
+namespace Google\Service\YouTube {
+    class InvideoBranding extends \Google\Model
     {
+        /**
+         * The bytes the uploaded image. Only used in api to youtube communication.
+         *
+         * @var string
+         */
+        public $imageBytes;
+        /**
+         * The url of the uploaded image. Only used in apiary to api communication.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        protected $positionType = InvideoPosition::class;
+        protected $positionDataType = '';
+        /**
+         * The channel to which this branding links. If not present it defaults to the
+         * current channel.
+         *
+         * @var string
+         */
+        public $targetChannelId;
+        protected $timingType = InvideoTiming::class;
+        protected $timingDataType = '';
+        /**
+         * The bytes the uploaded image. Only used in api to youtube communication.
+         *
+         * @param string $imageBytes
+         */
+        public function setImageBytes($imageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageBytes()
+        {
+        }
+        /**
+         * The url of the uploaded image. Only used in apiary to api communication.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * The spatial position within the video where the branding watermark will be
+         * displayed.
+         *
+         * @deprecated
+         * @param InvideoPosition $position
+         */
+        public function setPosition(InvideoPosition $position)
+        {
+        }
+        /**
+         * @deprecated
+         * @return InvideoPosition
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * The channel to which this branding links. If not present it defaults to the
+         * current channel.
+         *
+         * @param string $targetChannelId
+         */
+        public function setTargetChannelId($targetChannelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetChannelId()
+        {
+        }
+        /**
+         * The temporal position within the video where watermark will be displayed.
+         *
+         * @param InvideoTiming $timing
+         */
+        public function setTiming(InvideoTiming $timing)
+        {
+        }
+        /**
+         * @return InvideoTiming
+         */
+        public function getTiming()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\InvideoBranding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageBytes()
-    {
-    }
-    /**
-     * The url of the uploaded image. Only used in apiary to api communication.
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * The spatial position within the video where the branding watermark will be
-     * displayed.
-     *
-     * @deprecated
-     * @param InvideoPosition $position
-     */
-    public function setPosition(InvideoPosition $position)
-    {
-    }
-    /**
-     * @deprecated
-     * @return InvideoPosition
-     */
-    public function getPosition()
-    {
-    }
-    /**
-     * The channel to which this branding links. If not present it defaults to the
-     * current channel.
-     *
-     * @param string $targetChannelId
-     */
-    public function setTargetChannelId($targetChannelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetChannelId()
-    {
-    }
-    /**
-     * The temporal position within the video where watermark will be displayed.
-     *
-     * @param InvideoTiming $timing
-     */
-    public function setTiming(InvideoTiming $timing)
-    {
-    }
-    /**
-     * @return InvideoTiming
-     */
-    public function getTiming()
+    class Google_Service_YouTube_InvideoBranding extends \Google\Service\YouTube\InvideoBranding
     {
     }
 }

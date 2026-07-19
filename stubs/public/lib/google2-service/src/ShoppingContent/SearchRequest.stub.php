@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SearchRequest extends \Google\Model
-{
-    /**
-     * Number of ReportRows to retrieve in a single page. Defaults to 1000. Values
-     * above 5000 are coerced to 5000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Token of the page to retrieve. If not specified, the first page of results
-     * is returned. In order to request the next page of results, the value
-     * obtained from `next_page_token` in the previous response should be used.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. Query that defines performance metrics to retrieve and dimensions
-     * according to which the metrics are to be segmented. For details on how to
-     * construct your query, see the [Query Language
-     * guide](https://developers.google.com/shopping-content/guides/reports/query-
-     * language/overview).
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Number of ReportRows to retrieve in a single page. Defaults to 1000. Values
-     * above 5000 are coerced to 5000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\ShoppingContent {
+    class SearchRequest extends \Google\Model
     {
+        /**
+         * Number of ReportRows to retrieve in a single page. Defaults to 1000. Values
+         * above 5000 are coerced to 5000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Token of the page to retrieve. If not specified, the first page of results
+         * is returned. In order to request the next page of results, the value
+         * obtained from `next_page_token` in the previous response should be used.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. Query that defines performance metrics to retrieve and dimensions
+         * according to which the metrics are to be segmented. For details on how to
+         * construct your query, see the [Query Language
+         * guide](https://developers.google.com/shopping-content/guides/reports/query-
+         * language/overview).
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Number of ReportRows to retrieve in a single page. Defaults to 1000. Values
+         * above 5000 are coerced to 5000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Token of the page to retrieve. If not specified, the first page of results
+         * is returned. In order to request the next page of results, the value
+         * obtained from `next_page_token` in the previous response should be used.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. Query that defines performance metrics to retrieve and dimensions
+         * according to which the metrics are to be segmented. For details on how to
+         * construct your query, see the [Query Language
+         * guide](https://developers.google.com/shopping-content/guides/reports/query-
+         * language/overview).
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ShoppingContent\SearchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Token of the page to retrieve. If not specified, the first page of results
-     * is returned. In order to request the next page of results, the value
-     * obtained from `next_page_token` in the previous response should be used.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. Query that defines performance metrics to retrieve and dimensions
-     * according to which the metrics are to be segmented. For details on how to
-     * construct your query, see the [Query Language
-     * guide](https://developers.google.com/shopping-content/guides/reports/query-
-     * language/overview).
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_ShoppingContent_SearchRequest extends \Google\Service\ShoppingContent\SearchRequest
     {
     }
 }

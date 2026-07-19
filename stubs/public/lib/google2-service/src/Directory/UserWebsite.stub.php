@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserWebsite extends \Google\Model
-{
-    /**
-     * Custom Type.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * If this is user's primary website or not.
-     *
-     * @var bool
-     */
-    public $primary;
-    /**
-     * Each entry can have a type which indicates standard types of that entry.
-     * For example website could be of home work blog etc. In addition to the
-     * standard type an entry can have a custom type and can give it any name.
-     * Such types should have the CUSTOM value as type and also have a customType
-     * value.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Website.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Custom Type.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
+namespace Google\Service\Directory {
+    class UserWebsite extends \Google\Model
     {
+        /**
+         * Custom Type.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * If this is user's primary website or not.
+         *
+         * @var bool
+         */
+        public $primary;
+        /**
+         * Each entry can have a type which indicates standard types of that entry.
+         * For example website could be of home work blog etc. In addition to the
+         * standard type an entry can have a custom type and can give it any name.
+         * Such types should have the CUSTOM value as type and also have a customType
+         * value.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Website.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Custom Type.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * If this is user's primary website or not.
+         *
+         * @param bool $primary
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * Each entry can have a type which indicates standard types of that entry.
+         * For example website could be of home work blog etc. In addition to the
+         * standard type an entry can have a custom type and can give it any name.
+         * Such types should have the CUSTOM value as type and also have a customType
+         * value.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Website.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserWebsite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomType()
-    {
-    }
-    /**
-     * If this is user's primary website or not.
-     *
-     * @param bool $primary
-     */
-    public function setPrimary($primary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrimary()
-    {
-    }
-    /**
-     * Each entry can have a type which indicates standard types of that entry.
-     * For example website could be of home work blog etc. In addition to the
-     * standard type an entry can have a custom type and can give it any name.
-     * Such types should have the CUSTOM value as type and also have a customType
-     * value.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Website.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Directory_UserWebsite extends \Google\Service\Directory\UserWebsite
     {
     }
 }

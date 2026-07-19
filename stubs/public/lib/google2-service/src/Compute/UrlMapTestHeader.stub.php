@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class UrlMapTestHeader extends \Google\Model
-{
-    /**
-     * Header name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Header value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Header name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class UrlMapTestHeader extends \Google\Model
     {
+        /**
+         * Header name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Header value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Header name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Header value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\UrlMapTestHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Header value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Compute_UrlMapTestHeader extends \Google\Service\Compute\UrlMapTestHeader
     {
     }
 }

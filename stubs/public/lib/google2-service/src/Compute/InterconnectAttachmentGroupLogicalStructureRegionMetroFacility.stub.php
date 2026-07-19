@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupLogicalStructureRegionMetroFacility extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * Output only. [Output Only] The name of a facility, like "iad-1234".
-     *
-     * @var string
-     */
-    public $facility;
-    protected $zonesType = InterconnectAttachmentGroupLogicalStructureRegionMetroFacilityZone::class;
-    protected $zonesDataType = 'array';
-    /**
-     * Output only. [Output Only] The name of a facility, like "iad-1234".
-     *
-     * @param string $facility
-     */
-    public function setFacility($facility)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupLogicalStructureRegionMetroFacility extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * Output only. [Output Only] The name of a facility, like "iad-1234".
+         *
+         * @var string
+         */
+        public $facility;
+        protected $zonesType = InterconnectAttachmentGroupLogicalStructureRegionMetroFacilityZone::class;
+        protected $zonesDataType = 'array';
+        /**
+         * Output only. [Output Only] The name of a facility, like "iad-1234".
+         *
+         * @param string $facility
+         */
+        public function setFacility($facility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFacility()
+        {
+        }
+        /**
+         * @param InterconnectAttachmentGroupLogicalStructureRegionMetroFacilityZone[] $zones
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupLogicalStructureRegionMetroFacilityZone[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructureRegionMetroFacility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacility()
-    {
-    }
-    /**
-     * @param InterconnectAttachmentGroupLogicalStructureRegionMetroFacilityZone[] $zones
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return InterconnectAttachmentGroupLogicalStructureRegionMetroFacilityZone[]
-     */
-    public function getZones()
+    class Google_Service_Compute_InterconnectAttachmentGroupLogicalStructureRegionMetroFacility extends \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructureRegionMetroFacility
     {
     }
 }

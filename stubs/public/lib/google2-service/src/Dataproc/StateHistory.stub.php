@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StateHistory extends \Google\Model
-{
-    /**
-     * The batch state is unknown.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The batch is created before running.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The batch is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The batch is cancelling.
-     */
-    public const STATE_CANCELLING = 'CANCELLING';
-    /**
-     * The batch cancellation was successful.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The batch completed successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The batch is no longer running due to an error.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Output only. The state of the batch at this point in history.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Details about the state at this point in history.
-     *
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * Output only. The time when the batch entered the historical state.
-     *
-     * @var string
-     */
-    public $stateStartTime;
-    /**
-     * Output only. The state of the batch at this point in history.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, RUNNING, CANCELLING,
-     * CANCELLED, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Dataproc {
+    class StateHistory extends \Google\Model
     {
+        /**
+         * The batch state is unknown.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The batch is created before running.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The batch is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The batch is cancelling.
+         */
+        public const STATE_CANCELLING = 'CANCELLING';
+        /**
+         * The batch cancellation was successful.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The batch completed successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The batch is no longer running due to an error.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Output only. The state of the batch at this point in history.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Details about the state at this point in history.
+         *
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * Output only. The time when the batch entered the historical state.
+         *
+         * @var string
+         */
+        public $stateStartTime;
+        /**
+         * Output only. The state of the batch at this point in history.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, RUNNING, CANCELLING,
+         * CANCELLED, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Details about the state at this point in history.
+         *
+         * @param string $stateMessage
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
+        /**
+         * Output only. The time when the batch entered the historical state.
+         *
+         * @param string $stateStartTime
+         */
+        public function setStateStartTime($stateStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Dataproc\StateHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Details about the state at this point in history.
-     *
-     * @param string $stateMessage
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
-    {
-    }
-    /**
-     * Output only. The time when the batch entered the historical state.
-     *
-     * @param string $stateStartTime
-     */
-    public function setStateStartTime($stateStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateStartTime()
+    class Google_Service_Dataproc_StateHistory extends \Google\Service\Dataproc\StateHistory
     {
     }
 }

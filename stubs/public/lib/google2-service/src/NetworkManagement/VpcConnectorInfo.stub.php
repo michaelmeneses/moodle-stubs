@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class VpcConnectorInfo extends \Google\Model
-{
-    /**
-     * Name of a VPC connector.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Location in which the VPC connector is deployed.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * URI of a VPC connector.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a VPC connector.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class VpcConnectorInfo extends \Google\Model
     {
+        /**
+         * Name of a VPC connector.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Location in which the VPC connector is deployed.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * URI of a VPC connector.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a VPC connector.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Location in which the VPC connector is deployed.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * URI of a VPC connector.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\VpcConnectorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Location in which the VPC connector is deployed.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * URI of a VPC connector.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_VpcConnectorInfo extends \Google\Service\NetworkManagement\VpcConnectorInfo
     {
     }
 }

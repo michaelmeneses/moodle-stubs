@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SuggestDialogflowAssistsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dialogflowAssistAnswers';
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the
-     * SuggestDialogflowAssistsRequest.context_size field in the request if there
-     * aren't that many messages in the conversation.
-     *
-     * @var int
-     */
-    public $contextSize;
-    protected $dialogflowAssistAnswersType = GoogleCloudDialogflowV2beta1DialogflowAssistAnswer::class;
-    protected $dialogflowAssistAnswersDataType = 'array';
-    /**
-     * The name of the latest conversation message used to suggest answer. Format:
-     * `projects//locations//conversations//messages/`.
-     *
-     * @var string
-     */
-    public $latestMessage;
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the
-     * SuggestDialogflowAssistsRequest.context_size field in the request if there
-     * aren't that many messages in the conversation.
-     *
-     * @param int $contextSize
-     */
-    public function setContextSize($contextSize)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SuggestDialogflowAssistsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dialogflowAssistAnswers';
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the
+         * SuggestDialogflowAssistsRequest.context_size field in the request if there
+         * aren't that many messages in the conversation.
+         *
+         * @var int
+         */
+        public $contextSize;
+        protected $dialogflowAssistAnswersType = GoogleCloudDialogflowV2beta1DialogflowAssistAnswer::class;
+        protected $dialogflowAssistAnswersDataType = 'array';
+        /**
+         * The name of the latest conversation message used to suggest answer. Format:
+         * `projects//locations//conversations//messages/`.
+         *
+         * @var string
+         */
+        public $latestMessage;
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the
+         * SuggestDialogflowAssistsRequest.context_size field in the request if there
+         * aren't that many messages in the conversation.
+         *
+         * @param int $contextSize
+         */
+        public function setContextSize($contextSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContextSize()
+        {
+        }
+        /**
+         * Output only. Multiple reply options provided by Dialogflow assist service.
+         * The order is based on the rank of the model prediction.
+         *
+         * @param GoogleCloudDialogflowV2beta1DialogflowAssistAnswer[] $dialogflowAssistAnswers
+         */
+        public function setDialogflowAssistAnswers($dialogflowAssistAnswers)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1DialogflowAssistAnswer[]
+         */
+        public function getDialogflowAssistAnswers()
+        {
+        }
+        /**
+         * The name of the latest conversation message used to suggest answer. Format:
+         * `projects//locations//conversations//messages/`.
+         *
+         * @param string $latestMessage
+         */
+        public function setLatestMessage($latestMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SuggestDialogflowAssistsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextSize()
-    {
-    }
-    /**
-     * Output only. Multiple reply options provided by Dialogflow assist service.
-     * The order is based on the rank of the model prediction.
-     *
-     * @param GoogleCloudDialogflowV2beta1DialogflowAssistAnswer[] $dialogflowAssistAnswers
-     */
-    public function setDialogflowAssistAnswers($dialogflowAssistAnswers)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1DialogflowAssistAnswer[]
-     */
-    public function getDialogflowAssistAnswers()
-    {
-    }
-    /**
-     * The name of the latest conversation message used to suggest answer. Format:
-     * `projects//locations//conversations//messages/`.
-     *
-     * @param string $latestMessage
-     */
-    public function setLatestMessage($latestMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestMessage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SuggestDialogflowAssistsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SuggestDialogflowAssistsResponse
     {
     }
 }

@@ -21,178 +21,187 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CalculateStatsResponse extends \Google\Model
-{
-    /**
-     * The average duration of all conversations. The average is calculated using
-     * only conversations that have a time duration.
-     *
-     * @var string
-     */
-    public $averageDuration;
-    /**
-     * The average number of turns per conversation.
-     *
-     * @var int
-     */
-    public $averageTurnCount;
-    /**
-     * The total number of conversations.
-     *
-     * @var int
-     */
-    public $conversationCount;
-    protected $conversationCountTimeSeriesType = GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries::class;
-    protected $conversationCountTimeSeriesDataType = '';
-    /**
-     * A map associating each custom highlighter resource name with its respective
-     * number of matches in the set of conversations.
-     *
-     * @var int[]
-     */
-    public $customHighlighterMatches;
-    /**
-     * A map associating each issue resource name with its respective number of
-     * matches in the set of conversations. Key has the format:
-     * `projects//locations//issueModels//issues/` Deprecated, use
-     * `issue_matches_stats` field instead.
-     *
-     * @deprecated
-     * @var int[]
-     */
-    public $issueMatches;
-    protected $issueMatchesStatsType = GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats::class;
-    protected $issueMatchesStatsDataType = 'map';
-    /**
-     * A map associating each smart highlighter display name with its respective
-     * number of matches in the set of conversations.
-     *
-     * @var int[]
-     */
-    public $smartHighlighterMatches;
-    /**
-     * The average duration of all conversations. The average is calculated using
-     * only conversations that have a time duration.
-     *
-     * @param string $averageDuration
-     */
-    public function setAverageDuration($averageDuration)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CalculateStatsResponse extends \Google\Model
     {
+        /**
+         * The average duration of all conversations. The average is calculated using
+         * only conversations that have a time duration.
+         *
+         * @var string
+         */
+        public $averageDuration;
+        /**
+         * The average number of turns per conversation.
+         *
+         * @var int
+         */
+        public $averageTurnCount;
+        /**
+         * The total number of conversations.
+         *
+         * @var int
+         */
+        public $conversationCount;
+        protected $conversationCountTimeSeriesType = GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries::class;
+        protected $conversationCountTimeSeriesDataType = '';
+        /**
+         * A map associating each custom highlighter resource name with its respective
+         * number of matches in the set of conversations.
+         *
+         * @var int[]
+         */
+        public $customHighlighterMatches;
+        /**
+         * A map associating each issue resource name with its respective number of
+         * matches in the set of conversations. Key has the format:
+         * `projects//locations//issueModels//issues/` Deprecated, use
+         * `issue_matches_stats` field instead.
+         *
+         * @deprecated
+         * @var int[]
+         */
+        public $issueMatches;
+        protected $issueMatchesStatsType = GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats::class;
+        protected $issueMatchesStatsDataType = 'map';
+        /**
+         * A map associating each smart highlighter display name with its respective
+         * number of matches in the set of conversations.
+         *
+         * @var int[]
+         */
+        public $smartHighlighterMatches;
+        /**
+         * The average duration of all conversations. The average is calculated using
+         * only conversations that have a time duration.
+         *
+         * @param string $averageDuration
+         */
+        public function setAverageDuration($averageDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAverageDuration()
+        {
+        }
+        /**
+         * The average number of turns per conversation.
+         *
+         * @param int $averageTurnCount
+         */
+        public function setAverageTurnCount($averageTurnCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAverageTurnCount()
+        {
+        }
+        /**
+         * The total number of conversations.
+         *
+         * @param int $conversationCount
+         */
+        public function setConversationCount($conversationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConversationCount()
+        {
+        }
+        /**
+         * A time series representing the count of conversations created over time
+         * that match that requested filter criteria.
+         *
+         * @param GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries $conversationCountTimeSeries
+         */
+        public function setConversationCountTimeSeries(GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries $conversationCountTimeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries
+         */
+        public function getConversationCountTimeSeries()
+        {
+        }
+        /**
+         * A map associating each custom highlighter resource name with its respective
+         * number of matches in the set of conversations.
+         *
+         * @param int[] $customHighlighterMatches
+         */
+        public function setCustomHighlighterMatches($customHighlighterMatches)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getCustomHighlighterMatches()
+        {
+        }
+        /**
+         * A map associating each issue resource name with its respective number of
+         * matches in the set of conversations. Key has the format:
+         * `projects//locations//issueModels//issues/` Deprecated, use
+         * `issue_matches_stats` field instead.
+         *
+         * @deprecated
+         * @param int[] $issueMatches
+         */
+        public function setIssueMatches($issueMatches)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int[]
+         */
+        public function getIssueMatches()
+        {
+        }
+        /**
+         * A map associating each issue resource name with its respective number of
+         * matches in the set of conversations. Key has the format:
+         * `projects//locations//issueModels//issues/`
+         *
+         * @param GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats[] $issueMatchesStats
+         */
+        public function setIssueMatchesStats($issueMatchesStats)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats[]
+         */
+        public function getIssueMatchesStats()
+        {
+        }
+        /**
+         * A map associating each smart highlighter display name with its respective
+         * number of matches in the set of conversations.
+         *
+         * @param int[] $smartHighlighterMatches
+         */
+        public function setSmartHighlighterMatches($smartHighlighterMatches)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getSmartHighlighterMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageDuration()
-    {
-    }
-    /**
-     * The average number of turns per conversation.
-     *
-     * @param int $averageTurnCount
-     */
-    public function setAverageTurnCount($averageTurnCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAverageTurnCount()
-    {
-    }
-    /**
-     * The total number of conversations.
-     *
-     * @param int $conversationCount
-     */
-    public function setConversationCount($conversationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getConversationCount()
-    {
-    }
-    /**
-     * A time series representing the count of conversations created over time
-     * that match that requested filter criteria.
-     *
-     * @param GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries $conversationCountTimeSeries
-     */
-    public function setConversationCountTimeSeries(GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries $conversationCountTimeSeries)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries
-     */
-    public function getConversationCountTimeSeries()
-    {
-    }
-    /**
-     * A map associating each custom highlighter resource name with its respective
-     * number of matches in the set of conversations.
-     *
-     * @param int[] $customHighlighterMatches
-     */
-    public function setCustomHighlighterMatches($customHighlighterMatches)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getCustomHighlighterMatches()
-    {
-    }
-    /**
-     * A map associating each issue resource name with its respective number of
-     * matches in the set of conversations. Key has the format:
-     * `projects//locations//issueModels//issues/` Deprecated, use
-     * `issue_matches_stats` field instead.
-     *
-     * @deprecated
-     * @param int[] $issueMatches
-     */
-    public function setIssueMatches($issueMatches)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int[]
-     */
-    public function getIssueMatches()
-    {
-    }
-    /**
-     * A map associating each issue resource name with its respective number of
-     * matches in the set of conversations. Key has the format:
-     * `projects//locations//issueModels//issues/`
-     *
-     * @param GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats[] $issueMatchesStats
-     */
-    public function setIssueMatchesStats($issueMatchesStats)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats[]
-     */
-    public function getIssueMatchesStats()
-    {
-    }
-    /**
-     * A map associating each smart highlighter display name with its respective
-     * number of matches in the set of conversations.
-     *
-     * @param int[] $smartHighlighterMatches
-     */
-    public function setSmartHighlighterMatches($smartHighlighterMatches)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getSmartHighlighterMatches()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CalculateStatsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponse
     {
     }
 }

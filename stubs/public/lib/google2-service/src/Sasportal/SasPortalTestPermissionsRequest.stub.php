@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalTestPermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * The set of permissions to check for the `resource`.
-     *
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * Required. The resource for which the permissions are being requested.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The set of permissions to check for the `resource`.
-     *
-     * @param string[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\Sasportal {
+    class SasPortalTestPermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * The set of permissions to check for the `resource`.
+         *
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * Required. The resource for which the permissions are being requested.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The set of permissions to check for the `resource`.
+         *
+         * @param string[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * Required. The resource for which the permissions are being requested.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalTestPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
-    {
-    }
-    /**
-     * Required. The resource for which the permissions are being requested.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_Sasportal_SasPortalTestPermissionsRequest extends \Google\Service\Sasportal\SasPortalTestPermissionsRequest
     {
     }
 }

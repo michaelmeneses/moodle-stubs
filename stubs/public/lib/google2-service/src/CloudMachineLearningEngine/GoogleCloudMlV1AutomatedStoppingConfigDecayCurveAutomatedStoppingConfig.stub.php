@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig extends \Google\Model
-{
-    /**
-     * If true, measurement.elapsed_time is used as the x-axis of each Trials
-     * Decay Curve. Otherwise, Measurement.steps will be used as the x-axis.
-     *
-     * @var bool
-     */
-    public $useElapsedTime;
-    /**
-     * If true, measurement.elapsed_time is used as the x-axis of each Trials
-     * Decay Curve. Otherwise, Measurement.steps will be used as the x-axis.
-     *
-     * @param bool $useElapsedTime
-     */
-    public function setUseElapsedTime($useElapsedTime)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig extends \Google\Model
     {
+        /**
+         * If true, measurement.elapsed_time is used as the x-axis of each Trials
+         * Decay Curve. Otherwise, Measurement.steps will be used as the x-axis.
+         *
+         * @var bool
+         */
+        public $useElapsedTime;
+        /**
+         * If true, measurement.elapsed_time is used as the x-axis of each Trials
+         * Decay Curve. Otherwise, Measurement.steps will be used as the x-axis.
+         *
+         * @param bool $useElapsedTime
+         */
+        public function setUseElapsedTime($useElapsedTime)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseElapsedTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseElapsedTime()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class ListPretargetingConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'pretargetingConfigs';
-    /**
-     * A token which can be passed to a subsequent call to the
-     * `ListPretargetingConfigs` method to retrieve the next page of results in
-     * ListPretargetingConfigsRequest.pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pretargetingConfigsType = PretargetingConfig::class;
-    protected $pretargetingConfigsDataType = 'array';
-    /**
-     * A token which can be passed to a subsequent call to the
-     * `ListPretargetingConfigs` method to retrieve the next page of results in
-     * ListPretargetingConfigsRequest.pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\RealTimeBidding {
+    class ListPretargetingConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'pretargetingConfigs';
+        /**
+         * A token which can be passed to a subsequent call to the
+         * `ListPretargetingConfigs` method to retrieve the next page of results in
+         * ListPretargetingConfigsRequest.pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pretargetingConfigsType = PretargetingConfig::class;
+        protected $pretargetingConfigsDataType = 'array';
+        /**
+         * A token which can be passed to a subsequent call to the
+         * `ListPretargetingConfigs` method to retrieve the next page of results in
+         * ListPretargetingConfigsRequest.pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of pretargeting configurations.
+         *
+         * @param PretargetingConfig[] $pretargetingConfigs
+         */
+        public function setPretargetingConfigs($pretargetingConfigs)
+        {
+        }
+        /**
+         * @return PretargetingConfig[]
+         */
+        public function getPretargetingConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\ListPretargetingConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of pretargeting configurations.
-     *
-     * @param PretargetingConfig[] $pretargetingConfigs
-     */
-    public function setPretargetingConfigs($pretargetingConfigs)
-    {
-    }
-    /**
-     * @return PretargetingConfig[]
-     */
-    public function getPretargetingConfigs()
+    class Google_Service_RealTimeBidding_ListPretargetingConfigsResponse extends \Google\Service\RealTimeBidding\ListPretargetingConfigsResponse
     {
     }
 }

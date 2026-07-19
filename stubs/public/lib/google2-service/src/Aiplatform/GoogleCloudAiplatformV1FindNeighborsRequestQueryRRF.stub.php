@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FindNeighborsRequestQueryRRF extends \Google\Model
-{
-    /**
-     * Required. Users can provide an alpha value to give more weight to dense vs
-     * sparse results. For example, if the alpha is 0, we only return sparse and
-     * if the alpha is 1, we only return dense.
-     *
-     * @var float
-     */
-    public $alpha;
-    /**
-     * Required. Users can provide an alpha value to give more weight to dense vs
-     * sparse results. For example, if the alpha is 0, we only return sparse and
-     * if the alpha is 1, we only return dense.
-     *
-     * @param float $alpha
-     */
-    public function setAlpha($alpha)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FindNeighborsRequestQueryRRF extends \Google\Model
     {
+        /**
+         * Required. Users can provide an alpha value to give more weight to dense vs
+         * sparse results. For example, if the alpha is 0, we only return sparse and
+         * if the alpha is 1, we only return dense.
+         *
+         * @var float
+         */
+        public $alpha;
+        /**
+         * Required. Users can provide an alpha value to give more weight to dense vs
+         * sparse results. For example, if the alpha is 0, we only return sparse and
+         * if the alpha is 1, we only return dense.
+         *
+         * @param float $alpha
+         */
+        public function setAlpha($alpha)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAlpha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsRequestQueryRRF registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlpha()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FindNeighborsRequestQueryRRF extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsRequestQueryRRF
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ManualSharding extends \Google\Collection
-{
-    protected $collection_key = 'testTargetsForShard';
-    protected $testTargetsForShardType = TestTargetsForShard::class;
-    protected $testTargetsForShardDataType = 'array';
-    /**
-     * Required. Group of packages, classes, and/or test methods to be run for
-     * each manually-created shard. You must specify at least one shard if this
-     * field is present. When you select one or more physical devices, the number
-     * of repeated test_targets_for_shard must be <= 50. When you select one or
-     * more ARM virtual devices, it must be <= 200. When you select only x86
-     * virtual devices, it must be <= 500.
-     *
-     * @param TestTargetsForShard[] $testTargetsForShard
-     */
-    public function setTestTargetsForShard($testTargetsForShard)
+namespace Google\Service\Testing {
+    class ManualSharding extends \Google\Collection
     {
+        protected $collection_key = 'testTargetsForShard';
+        protected $testTargetsForShardType = TestTargetsForShard::class;
+        protected $testTargetsForShardDataType = 'array';
+        /**
+         * Required. Group of packages, classes, and/or test methods to be run for
+         * each manually-created shard. You must specify at least one shard if this
+         * field is present. When you select one or more physical devices, the number
+         * of repeated test_targets_for_shard must be <= 50. When you select one or
+         * more ARM virtual devices, it must be <= 200. When you select only x86
+         * virtual devices, it must be <= 500.
+         *
+         * @param TestTargetsForShard[] $testTargetsForShard
+         */
+        public function setTestTargetsForShard($testTargetsForShard)
+        {
+        }
+        /**
+         * @return TestTargetsForShard[]
+         */
+        public function getTestTargetsForShard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TestTargetsForShard[]
+     * Runtime class alias of \Google\Service\Testing\ManualSharding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestTargetsForShard()
+    class Google_Service_Testing_ManualSharding extends \Google\Service\Testing\ManualSharding
     {
     }
 }

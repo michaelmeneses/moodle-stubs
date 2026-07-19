@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AcceleratorConfig extends \Google\Model
-{
-    /**
-     * The number of the guest accelerator cards exposed to this instance.
-     *
-     * @var int
-     */
-    public $acceleratorCount;
-    /**
-     * Full or partial URL of the accelerator type resource to attach to this
-     * instance. For example:projects/my-project/zones/us-
-     * central1-c/acceleratorTypes/nvidia-tesla-p100 If you are creating an
-     * instance template, specify only the accelerator name. See GPUs on Compute
-     * Engine for a full list of accelerator types.
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    /**
-     * The number of the guest accelerator cards exposed to this instance.
-     *
-     * @param int $acceleratorCount
-     */
-    public function setAcceleratorCount($acceleratorCount)
+namespace Google\Service\Compute {
+    class AcceleratorConfig extends \Google\Model
     {
+        /**
+         * The number of the guest accelerator cards exposed to this instance.
+         *
+         * @var int
+         */
+        public $acceleratorCount;
+        /**
+         * Full or partial URL of the accelerator type resource to attach to this
+         * instance. For example:projects/my-project/zones/us-
+         * central1-c/acceleratorTypes/nvidia-tesla-p100 If you are creating an
+         * instance template, specify only the accelerator name. See GPUs on Compute
+         * Engine for a full list of accelerator types.
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        /**
+         * The number of the guest accelerator cards exposed to this instance.
+         *
+         * @param int $acceleratorCount
+         */
+        public function setAcceleratorCount($acceleratorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcceleratorCount()
+        {
+        }
+        /**
+         * Full or partial URL of the accelerator type resource to attach to this
+         * instance. For example:projects/my-project/zones/us-
+         * central1-c/acceleratorTypes/nvidia-tesla-p100 If you are creating an
+         * instance template, specify only the accelerator name. See GPUs on Compute
+         * Engine for a full list of accelerator types.
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\AcceleratorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorCount()
-    {
-    }
-    /**
-     * Full or partial URL of the accelerator type resource to attach to this
-     * instance. For example:projects/my-project/zones/us-
-     * central1-c/acceleratorTypes/nvidia-tesla-p100 If you are creating an
-     * instance template, specify only the accelerator name. See GPUs on Compute
-     * Engine for a full list of accelerator types.
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAcceleratorType()
+    class Google_Service_Compute_AcceleratorConfig extends \Google\Service\Compute\AcceleratorConfig
     {
     }
 }

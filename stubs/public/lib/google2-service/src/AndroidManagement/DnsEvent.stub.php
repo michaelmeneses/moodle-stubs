@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class DnsEvent extends \Google\Collection
-{
-    protected $collection_key = 'ipAddresses';
-    /**
-     * The hostname that was looked up.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * The (possibly truncated) list of the IP addresses returned for DNS lookup
-     * (max 10 IPv4 or IPv6 addresses).
-     *
-     * @var string[]
-     */
-    public $ipAddresses;
-    /**
-     * The package name of the UID that performed the DNS lookup.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The number of IP addresses returned from the DNS lookup event. May be
-     * higher than the amount of ip_addresses if there were too many addresses to
-     * log.
-     *
-     * @var string
-     */
-    public $totalIpAddressesReturned;
-    /**
-     * The hostname that was looked up.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\AndroidManagement {
+    class DnsEvent extends \Google\Collection
     {
+        protected $collection_key = 'ipAddresses';
+        /**
+         * The hostname that was looked up.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * The (possibly truncated) list of the IP addresses returned for DNS lookup
+         * (max 10 IPv4 or IPv6 addresses).
+         *
+         * @var string[]
+         */
+        public $ipAddresses;
+        /**
+         * The package name of the UID that performed the DNS lookup.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The number of IP addresses returned from the DNS lookup event. May be
+         * higher than the amount of ip_addresses if there were too many addresses to
+         * log.
+         *
+         * @var string
+         */
+        public $totalIpAddressesReturned;
+        /**
+         * The hostname that was looked up.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * The (possibly truncated) list of the IP addresses returned for DNS lookup
+         * (max 10 IPv4 or IPv6 addresses).
+         *
+         * @param string[] $ipAddresses
+         */
+        public function setIpAddresses($ipAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpAddresses()
+        {
+        }
+        /**
+         * The package name of the UID that performed the DNS lookup.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * The number of IP addresses returned from the DNS lookup event. May be
+         * higher than the amount of ip_addresses if there were too many addresses to
+         * log.
+         *
+         * @param string $totalIpAddressesReturned
+         */
+        public function setTotalIpAddressesReturned($totalIpAddressesReturned)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalIpAddressesReturned()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\DnsEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * The (possibly truncated) list of the IP addresses returned for DNS lookup
-     * (max 10 IPv4 or IPv6 addresses).
-     *
-     * @param string[] $ipAddresses
-     */
-    public function setIpAddresses($ipAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpAddresses()
-    {
-    }
-    /**
-     * The package name of the UID that performed the DNS lookup.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * The number of IP addresses returned from the DNS lookup event. May be
-     * higher than the amount of ip_addresses if there were too many addresses to
-     * log.
-     *
-     * @param string $totalIpAddressesReturned
-     */
-    public function setTotalIpAddressesReturned($totalIpAddressesReturned)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalIpAddressesReturned()
+    class Google_Service_AndroidManagement_DnsEvent extends \Google\Service\AndroidManagement\DnsEvent
     {
     }
 }

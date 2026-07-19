@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RevenueShareRange extends \Google\Model
-{
-    /**
-     * Ending value of the range. Set to 0 or `null` for the last range of values.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * Percentage of the revenue to be shared with the developer. For example, to
-     * share 21 percent of the total revenue with the developer, set this value to
-     * 21. Specify a decimal number with a maximum of two digits following the
-     * decimal point.
-     *
-     * @var 
-     */
-    public $sharePercentage;
-    /**
-     * Starting value of the range. Set to 0 or `null` for the initial range of
-     * values.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Ending value of the range. Set to 0 or `null` for the last range of values.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RevenueShareRange extends \Google\Model
     {
+        /**
+         * Ending value of the range. Set to 0 or `null` for the last range of values.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * Percentage of the revenue to be shared with the developer. For example, to
+         * share 21 percent of the total revenue with the developer, set this value to
+         * 21. Specify a decimal number with a maximum of two digits following the
+         * decimal point.
+         *
+         * @var 
+         */
+        public $sharePercentage;
+        /**
+         * Starting value of the range. Set to 0 or `null` for the initial range of
+         * values.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Ending value of the range. Set to 0 or `null` for the last range of values.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        public function setSharePercentage($sharePercentage)
+        {
+        }
+        public function getSharePercentage()
+        {
+        }
+        /**
+         * Starting value of the range. Set to 0 or `null` for the initial range of
+         * values.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RevenueShareRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    public function setSharePercentage($sharePercentage)
-    {
-    }
-    public function getSharePercentage()
-    {
-    }
-    /**
-     * Starting value of the range. Set to 0 or `null` for the initial range of
-     * values.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RevenueShareRange extends \Google\Service\Apigee\GoogleCloudApigeeV1RevenueShareRange
     {
     }
 }

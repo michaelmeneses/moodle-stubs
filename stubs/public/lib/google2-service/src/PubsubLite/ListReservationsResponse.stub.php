@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ListReservationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'reservations';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reservationsType = Reservation::class;
-    protected $reservationsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PubsubLite {
+    class ListReservationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'reservations';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reservationsType = Reservation::class;
+        protected $reservationsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of reservation in the requested parent. The order of the
+         * reservations is unspecified.
+         *
+         * @param Reservation[] $reservations
+         */
+        public function setReservations($reservations)
+        {
+        }
+        /**
+         * @return Reservation[]
+         */
+        public function getReservations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ListReservationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of reservation in the requested parent. The order of the
-     * reservations is unspecified.
-     *
-     * @param Reservation[] $reservations
-     */
-    public function setReservations($reservations)
-    {
-    }
-    /**
-     * @return Reservation[]
-     */
-    public function getReservations()
+    class Google_Service_PubsubLite_ListReservationsResponse extends \Google\Service\PubsubLite\ListReservationsResponse
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebasestorage;
-
-class DefaultBucket extends \Google\Model
-{
-    protected $bucketType = Bucket::class;
-    protected $bucketDataType = '';
-    /**
-     * Immutable. Location of the default bucket.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Identifier. Resource name of the default bucket.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. Storage class of the default bucket. Supported values are
-     * available at https://cloud.google.com/storage/docs/storage-classes#classes.
-     *
-     * @var string
-     */
-    public $storageClass;
-    /**
-     * Output only. Underlying bucket resource.
-     *
-     * @param Bucket $bucket
-     */
-    public function setBucket(Bucket $bucket)
+namespace Google\Service\Firebasestorage {
+    class DefaultBucket extends \Google\Model
     {
+        protected $bucketType = Bucket::class;
+        protected $bucketDataType = '';
+        /**
+         * Immutable. Location of the default bucket.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Identifier. Resource name of the default bucket.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. Storage class of the default bucket. Supported values are
+         * available at https://cloud.google.com/storage/docs/storage-classes#classes.
+         *
+         * @var string
+         */
+        public $storageClass;
+        /**
+         * Output only. Underlying bucket resource.
+         *
+         * @param Bucket $bucket
+         */
+        public function setBucket(Bucket $bucket)
+        {
+        }
+        /**
+         * @return Bucket
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Immutable. Location of the default bucket.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Identifier. Resource name of the default bucket.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. Storage class of the default bucket. Supported values are
+         * available at https://cloud.google.com/storage/docs/storage-classes#classes.
+         *
+         * @param string $storageClass
+         */
+        public function setStorageClass($storageClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageClass()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bucket
+     * Runtime class alias of \Google\Service\Firebasestorage\DefaultBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Immutable. Location of the default bucket.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Identifier. Resource name of the default bucket.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. Storage class of the default bucket. Supported values are
-     * available at https://cloud.google.com/storage/docs/storage-classes#classes.
-     *
-     * @param string $storageClass
-     */
-    public function setStorageClass($storageClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageClass()
+    class Google_Service_Firebasestorage_DefaultBucket extends \Google\Service\Firebasestorage\DefaultBucket
     {
     }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch\Resource;
-
-/**
- * The "taskGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $batchService = new Google\Service\Batch(...);
- *   $taskGroups = $batchService->projects_locations_jobs_taskGroups;
- *  </code>
- */
-class ProjectsLocationsJobsTaskGroups extends \Google\Service\Resource
-{
+namespace Google\Service\Batch\Resource {
+    /**
+     * The "taskGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $batchService = new Google\Service\Batch(...);
+     *   $taskGroups = $batchService->projects_locations_jobs_taskGroups;
+     *  </code>
+     */
+    class ProjectsLocationsJobsTaskGroups extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Batch\Resource\ProjectsLocationsJobsTaskGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Batch_Resource_ProjectsLocationsJobsTaskGroups extends \Google\Service\Batch\Resource\ProjectsLocationsJobsTaskGroups
+    {
+    }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkEndpointWithHealthStatus extends \Google\Collection
-{
-    protected $collection_key = 'healths';
-    protected $healthsType = HealthStatusForNetworkEndpoint::class;
-    protected $healthsDataType = 'array';
-    protected $networkEndpointType = NetworkEndpoint::class;
-    protected $networkEndpointDataType = '';
-    /**
-     * Output only. [Output only] The health status of network endpoint.
-     *
-     * Optional. Displayed only if the network endpoint has centralized health
-     * checking configured.
-     *
-     * @param HealthStatusForNetworkEndpoint[] $healths
-     */
-    public function setHealths($healths)
+namespace Google\Service\Compute {
+    class NetworkEndpointWithHealthStatus extends \Google\Collection
     {
+        protected $collection_key = 'healths';
+        protected $healthsType = HealthStatusForNetworkEndpoint::class;
+        protected $healthsDataType = 'array';
+        protected $networkEndpointType = NetworkEndpoint::class;
+        protected $networkEndpointDataType = '';
+        /**
+         * Output only. [Output only] The health status of network endpoint.
+         *
+         * Optional. Displayed only if the network endpoint has centralized health
+         * checking configured.
+         *
+         * @param HealthStatusForNetworkEndpoint[] $healths
+         */
+        public function setHealths($healths)
+        {
+        }
+        /**
+         * @return HealthStatusForNetworkEndpoint[]
+         */
+        public function getHealths()
+        {
+        }
+        /**
+         * Output only. [Output only] The network endpoint.
+         *
+         * @param NetworkEndpoint $networkEndpoint
+         */
+        public function setNetworkEndpoint(NetworkEndpoint $networkEndpoint)
+        {
+        }
+        /**
+         * @return NetworkEndpoint
+         */
+        public function getNetworkEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HealthStatusForNetworkEndpoint[]
+     * Runtime class alias of \Google\Service\Compute\NetworkEndpointWithHealthStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealths()
-    {
-    }
-    /**
-     * Output only. [Output only] The network endpoint.
-     *
-     * @param NetworkEndpoint $networkEndpoint
-     */
-    public function setNetworkEndpoint(NetworkEndpoint $networkEndpoint)
-    {
-    }
-    /**
-     * @return NetworkEndpoint
-     */
-    public function getNetworkEndpoint()
+    class Google_Service_Compute_NetworkEndpointWithHealthStatus extends \Google\Service\Compute\NetworkEndpointWithHealthStatus
     {
     }
 }

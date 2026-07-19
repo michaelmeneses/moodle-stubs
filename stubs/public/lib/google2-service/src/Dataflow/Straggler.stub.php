@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Straggler extends \Google\Model
-{
-    protected $batchStragglerType = StragglerInfo::class;
-    protected $batchStragglerDataType = '';
-    protected $streamingStragglerType = StreamingStragglerInfo::class;
-    protected $streamingStragglerDataType = '';
-    /**
-     * Batch straggler identification and debugging information.
-     *
-     * @param StragglerInfo $batchStraggler
-     */
-    public function setBatchStraggler(StragglerInfo $batchStraggler)
+namespace Google\Service\Dataflow {
+    class Straggler extends \Google\Model
     {
+        protected $batchStragglerType = StragglerInfo::class;
+        protected $batchStragglerDataType = '';
+        protected $streamingStragglerType = StreamingStragglerInfo::class;
+        protected $streamingStragglerDataType = '';
+        /**
+         * Batch straggler identification and debugging information.
+         *
+         * @param StragglerInfo $batchStraggler
+         */
+        public function setBatchStraggler(StragglerInfo $batchStraggler)
+        {
+        }
+        /**
+         * @return StragglerInfo
+         */
+        public function getBatchStraggler()
+        {
+        }
+        /**
+         * Streaming straggler identification and debugging information.
+         *
+         * @param StreamingStragglerInfo $streamingStraggler
+         */
+        public function setStreamingStraggler(StreamingStragglerInfo $streamingStraggler)
+        {
+        }
+        /**
+         * @return StreamingStragglerInfo
+         */
+        public function getStreamingStraggler()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StragglerInfo
+     * Runtime class alias of \Google\Service\Dataflow\Straggler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchStraggler()
-    {
-    }
-    /**
-     * Streaming straggler identification and debugging information.
-     *
-     * @param StreamingStragglerInfo $streamingStraggler
-     */
-    public function setStreamingStraggler(StreamingStragglerInfo $streamingStraggler)
-    {
-    }
-    /**
-     * @return StreamingStragglerInfo
-     */
-    public function getStreamingStraggler()
+    class Google_Service_Dataflow_Straggler extends \Google\Service\Dataflow\Straggler
     {
     }
 }

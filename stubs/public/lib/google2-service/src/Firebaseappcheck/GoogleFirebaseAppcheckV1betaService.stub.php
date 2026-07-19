@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaService extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $enforcementMode;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setEnforcementMode($enforcementMode)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaService extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $enforcementMode;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setEnforcementMode($enforcementMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnforcementMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnforcementMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaService extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaService
     {
     }
 }

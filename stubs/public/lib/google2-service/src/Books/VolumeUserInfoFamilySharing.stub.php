@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeUserInfoFamilySharing extends \Google\Model
-{
-    /**
-     * The role of the user in the family.
-     *
-     * @var string
-     */
-    public $familyRole;
-    /**
-     * Whether or not this volume can be shared with the family by the user. This
-     * includes sharing eligibility of both the volume and the user. If the value
-     * is true, the user can initiate a family sharing action.
-     *
-     * @var bool
-     */
-    public $isSharingAllowed;
-    /**
-     * Whether or not sharing this volume is temporarily disabled due to issues
-     * with the Family Wallet.
-     *
-     * @var bool
-     */
-    public $isSharingDisabledByFop;
-    /**
-     * The role of the user in the family.
-     *
-     * @param string $familyRole
-     */
-    public function setFamilyRole($familyRole)
+namespace Google\Service\Books {
+    class VolumeUserInfoFamilySharing extends \Google\Model
     {
+        /**
+         * The role of the user in the family.
+         *
+         * @var string
+         */
+        public $familyRole;
+        /**
+         * Whether or not this volume can be shared with the family by the user. This
+         * includes sharing eligibility of both the volume and the user. If the value
+         * is true, the user can initiate a family sharing action.
+         *
+         * @var bool
+         */
+        public $isSharingAllowed;
+        /**
+         * Whether or not sharing this volume is temporarily disabled due to issues
+         * with the Family Wallet.
+         *
+         * @var bool
+         */
+        public $isSharingDisabledByFop;
+        /**
+         * The role of the user in the family.
+         *
+         * @param string $familyRole
+         */
+        public function setFamilyRole($familyRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyRole()
+        {
+        }
+        /**
+         * Whether or not this volume can be shared with the family by the user. This
+         * includes sharing eligibility of both the volume and the user. If the value
+         * is true, the user can initiate a family sharing action.
+         *
+         * @param bool $isSharingAllowed
+         */
+        public function setIsSharingAllowed($isSharingAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSharingAllowed()
+        {
+        }
+        /**
+         * Whether or not sharing this volume is temporarily disabled due to issues
+         * with the Family Wallet.
+         *
+         * @param bool $isSharingDisabledByFop
+         */
+        public function setIsSharingDisabledByFop($isSharingDisabledByFop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSharingDisabledByFop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeUserInfoFamilySharing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilyRole()
-    {
-    }
-    /**
-     * Whether or not this volume can be shared with the family by the user. This
-     * includes sharing eligibility of both the volume and the user. If the value
-     * is true, the user can initiate a family sharing action.
-     *
-     * @param bool $isSharingAllowed
-     */
-    public function setIsSharingAllowed($isSharingAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSharingAllowed()
-    {
-    }
-    /**
-     * Whether or not sharing this volume is temporarily disabled due to issues
-     * with the Family Wallet.
-     *
-     * @param bool $isSharingDisabledByFop
-     */
-    public function setIsSharingDisabledByFop($isSharingDisabledByFop)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSharingDisabledByFop()
+    class Google_Service_Books_VolumeUserInfoFamilySharing extends \Google\Service\Books\VolumeUserInfoFamilySharing
     {
     }
 }

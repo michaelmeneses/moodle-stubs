@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class CloudSQLMigrationConfig extends \Google\Model
-{
-    protected $cdcConfigType = CdcConfig::class;
-    protected $cdcConfigDataType = '';
-    protected $cloudSqlConnectionConfigType = CloudSQLConnectionConfig::class;
-    protected $cloudSqlConnectionConfigDataType = '';
-    /**
-     * @param CdcConfig
-     */
-    public function setCdcConfig(CdcConfig $cdcConfig)
+namespace Google\Service\DataprocMetastore {
+    class CloudSQLMigrationConfig extends \Google\Model
     {
+        protected $cdcConfigType = CdcConfig::class;
+        protected $cdcConfigDataType = '';
+        protected $cloudSqlConnectionConfigType = CloudSQLConnectionConfig::class;
+        protected $cloudSqlConnectionConfigDataType = '';
+        /**
+         * @param CdcConfig
+         */
+        public function setCdcConfig(CdcConfig $cdcConfig)
+        {
+        }
+        /**
+         * @return CdcConfig
+         */
+        public function getCdcConfig()
+        {
+        }
+        /**
+         * @param CloudSQLConnectionConfig
+         */
+        public function setCloudSqlConnectionConfig(CloudSQLConnectionConfig $cloudSqlConnectionConfig)
+        {
+        }
+        /**
+         * @return CloudSQLConnectionConfig
+         */
+        public function getCloudSqlConnectionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CdcConfig
+     * Runtime class alias of \Google\Service\DataprocMetastore\CloudSQLMigrationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCdcConfig()
-    {
-    }
-    /**
-     * @param CloudSQLConnectionConfig
-     */
-    public function setCloudSqlConnectionConfig(CloudSQLConnectionConfig $cloudSqlConnectionConfig)
-    {
-    }
-    /**
-     * @return CloudSQLConnectionConfig
-     */
-    public function getCloudSqlConnectionConfig()
+    class Google_Service_DataprocMetastore_CloudSQLMigrationConfig extends \Google\Service\DataprocMetastore\CloudSQLMigrationConfig
     {
     }
 }

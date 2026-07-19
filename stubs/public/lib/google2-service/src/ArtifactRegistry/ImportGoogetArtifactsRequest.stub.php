@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImportGoogetArtifactsRequest extends \Google\Model
-{
-    protected $gcsSourceType = ImportGoogetArtifactsGcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Google Cloud Storage location where input content is located.
-     *
-     * @param ImportGoogetArtifactsGcsSource $gcsSource
-     */
-    public function setGcsSource(ImportGoogetArtifactsGcsSource $gcsSource)
+namespace Google\Service\ArtifactRegistry {
+    class ImportGoogetArtifactsRequest extends \Google\Model
     {
+        protected $gcsSourceType = ImportGoogetArtifactsGcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Google Cloud Storage location where input content is located.
+         *
+         * @param ImportGoogetArtifactsGcsSource $gcsSource
+         */
+        public function setGcsSource(ImportGoogetArtifactsGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return ImportGoogetArtifactsGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportGoogetArtifactsGcsSource
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImportGoogetArtifactsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_ArtifactRegistry_ImportGoogetArtifactsRequest extends \Google\Service\ArtifactRegistry\ImportGoogetArtifactsRequest
     {
     }
 }

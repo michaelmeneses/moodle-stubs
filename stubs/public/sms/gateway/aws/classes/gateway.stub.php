@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_aws;
 
+use core_sms\manager;
+use core_sms\message;
+use MoodleQuickForm;
 /**
  * AWS SMS gateway.
  *

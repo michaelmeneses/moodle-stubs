@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1RunPipelineResponse extends \Google\Model
-{
-    protected $jobType = GoogleCloudDatapipelinesV1Job::class;
-    protected $jobDataType = '';
-    /**
-     * Job that was created as part of RunPipeline operation.
-     *
-     * @param GoogleCloudDatapipelinesV1Job $job
-     */
-    public function setJob(GoogleCloudDatapipelinesV1Job $job)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1RunPipelineResponse extends \Google\Model
     {
+        protected $jobType = GoogleCloudDatapipelinesV1Job::class;
+        protected $jobDataType = '';
+        /**
+         * Job that was created as part of RunPipeline operation.
+         *
+         * @param GoogleCloudDatapipelinesV1Job $job
+         */
+        public function setJob(GoogleCloudDatapipelinesV1Job $job)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Job
+         */
+        public function getJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1Job
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1RunPipelineResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1RunPipelineResponse extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1RunPipelineResponse
     {
     }
 }

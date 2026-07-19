@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SBOMStatus extends \Google\Model
-{
-    /**
-     * Default unknown state.
-     */
-    public const SBOM_STATE_SBOM_STATE_UNSPECIFIED = 'SBOM_STATE_UNSPECIFIED';
-    /**
-     * SBOM scanning is pending.
-     */
-    public const SBOM_STATE_PENDING = 'PENDING';
-    /**
-     * SBOM scanning has completed.
-     */
-    public const SBOM_STATE_COMPLETE = 'COMPLETE';
-    /**
-     * If there was an error generating an SBOM, this will indicate what that
-     * error was.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * The progress of the SBOM generation.
-     *
-     * @var string
-     */
-    public $sbomState;
-    /**
-     * If there was an error generating an SBOM, this will indicate what that
-     * error was.
-     *
-     * @param string $error
-     */
-    public function setError($error)
+namespace Google\Service\ContainerAnalysis {
+    class SBOMStatus extends \Google\Model
     {
+        /**
+         * Default unknown state.
+         */
+        public const SBOM_STATE_SBOM_STATE_UNSPECIFIED = 'SBOM_STATE_UNSPECIFIED';
+        /**
+         * SBOM scanning is pending.
+         */
+        public const SBOM_STATE_PENDING = 'PENDING';
+        /**
+         * SBOM scanning has completed.
+         */
+        public const SBOM_STATE_COMPLETE = 'COMPLETE';
+        /**
+         * If there was an error generating an SBOM, this will indicate what that
+         * error was.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * The progress of the SBOM generation.
+         *
+         * @var string
+         */
+        public $sbomState;
+        /**
+         * If there was an error generating an SBOM, this will indicate what that
+         * error was.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The progress of the SBOM generation.
+         *
+         * Accepted values: SBOM_STATE_UNSPECIFIED, PENDING, COMPLETE
+         *
+         * @param self::SBOM_STATE_* $sbomState
+         */
+        public function setSbomState($sbomState)
+        {
+        }
+        /**
+         * @return self::SBOM_STATE_*
+         */
+        public function getSbomState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SBOMStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The progress of the SBOM generation.
-     *
-     * Accepted values: SBOM_STATE_UNSPECIFIED, PENDING, COMPLETE
-     *
-     * @param self::SBOM_STATE_* $sbomState
-     */
-    public function setSbomState($sbomState)
-    {
-    }
-    /**
-     * @return self::SBOM_STATE_*
-     */
-    public function getSbomState()
+    class Google_Service_ContainerAnalysis_SBOMStatus extends \Google\Service\ContainerAnalysis\SBOMStatus
     {
     }
 }

@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListTimeSeriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $executionErrorsType = Status::class;
-    protected $executionErrorsDataType = 'array';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $timeSeriesType = TimeSeries::class;
-    protected $timeSeriesDataType = 'array';
-    /**
-     * The unit in which all time_series point values are reported. unit follows
-     * the UCUM format for units as seen in https://unitsofmeasure.org/ucum.html.
-     * If different time_series have different units (for example, because they
-     * come from different metric types, or a unit is absent), then unit will be
-     * "{not_a_unit}".
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Cloud regions that were unreachable which may have caused incomplete data
-     * to be returned.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Query execution errors that may have caused the time series data returned
-     * to be incomplete.
-     *
-     * @param Status[] $executionErrors
-     */
-    public function setExecutionErrors($executionErrors)
+namespace Google\Service\Monitoring {
+    class ListTimeSeriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $executionErrorsType = Status::class;
+        protected $executionErrorsDataType = 'array';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $timeSeriesType = TimeSeries::class;
+        protected $timeSeriesDataType = 'array';
+        /**
+         * The unit in which all time_series point values are reported. unit follows
+         * the UCUM format for units as seen in https://unitsofmeasure.org/ucum.html.
+         * If different time_series have different units (for example, because they
+         * come from different metric types, or a unit is absent), then unit will be
+         * "{not_a_unit}".
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Cloud regions that were unreachable which may have caused incomplete data
+         * to be returned.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Query execution errors that may have caused the time series data returned
+         * to be incomplete.
+         *
+         * @param Status[] $executionErrors
+         */
+        public function setExecutionErrors($executionErrors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getExecutionErrors()
+        {
+        }
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * One or more time series that match the filter included in the request.
+         *
+         * @param TimeSeries[] $timeSeries
+         */
+        public function setTimeSeries($timeSeries)
+        {
+        }
+        /**
+         * @return TimeSeries[]
+         */
+        public function getTimeSeries()
+        {
+        }
+        /**
+         * The unit in which all time_series point values are reported. unit follows
+         * the UCUM format for units as seen in https://unitsofmeasure.org/ucum.html.
+         * If different time_series have different units (for example, because they
+         * come from different metric types, or a unit is absent), then unit will be
+         * "{not_a_unit}".
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * Cloud regions that were unreachable which may have caused incomplete data
+         * to be returned.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\Monitoring\ListTimeSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionErrors()
-    {
-    }
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * One or more time series that match the filter included in the request.
-     *
-     * @param TimeSeries[] $timeSeries
-     */
-    public function setTimeSeries($timeSeries)
-    {
-    }
-    /**
-     * @return TimeSeries[]
-     */
-    public function getTimeSeries()
-    {
-    }
-    /**
-     * The unit in which all time_series point values are reported. unit follows
-     * the UCUM format for units as seen in https://unitsofmeasure.org/ucum.html.
-     * If different time_series have different units (for example, because they
-     * come from different metric types, or a unit is absent), then unit will be
-     * "{not_a_unit}".
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
-    {
-    }
-    /**
-     * Cloud regions that were unreachable which may have caused incomplete data
-     * to be returned.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Monitoring_ListTimeSeriesResponse extends \Google\Service\Monitoring\ListTimeSeriesResponse
     {
     }
 }

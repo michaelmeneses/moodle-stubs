@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryPrecisionResults extends \Google\Collection
-{
-    protected $collection_key = 'trajectoryPrecisionMetricValues';
-    protected $trajectoryPrecisionMetricValuesType = GoogleCloudAiplatformV1TrajectoryPrecisionMetricValue::class;
-    protected $trajectoryPrecisionMetricValuesDataType = 'array';
-    /**
-     * Output only. TrajectoryPrecision metric values.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryPrecisionMetricValue[] $trajectoryPrecisionMetricValues
-     */
-    public function setTrajectoryPrecisionMetricValues($trajectoryPrecisionMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryPrecisionResults extends \Google\Collection
     {
+        protected $collection_key = 'trajectoryPrecisionMetricValues';
+        protected $trajectoryPrecisionMetricValuesType = GoogleCloudAiplatformV1TrajectoryPrecisionMetricValue::class;
+        protected $trajectoryPrecisionMetricValuesDataType = 'array';
+        /**
+         * Output only. TrajectoryPrecision metric values.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryPrecisionMetricValue[] $trajectoryPrecisionMetricValues
+         */
+        public function setTrajectoryPrecisionMetricValues($trajectoryPrecisionMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryPrecisionMetricValue[]
+         */
+        public function getTrajectoryPrecisionMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryPrecisionMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryPrecisionResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrajectoryPrecisionMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryPrecisionResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryPrecisionResults
     {
     }
 }

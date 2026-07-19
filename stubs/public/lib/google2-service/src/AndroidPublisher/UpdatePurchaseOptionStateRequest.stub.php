@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UpdatePurchaseOptionStateRequest extends \Google\Model
-{
-    protected $activatePurchaseOptionRequestType = ActivatePurchaseOptionRequest::class;
-    protected $activatePurchaseOptionRequestDataType = '';
-    protected $deactivatePurchaseOptionRequestType = DeactivatePurchaseOptionRequest::class;
-    protected $deactivatePurchaseOptionRequestDataType = '';
-    /**
-     * Activates a purchase option. Once activated, the purchase option will be
-     * available.
-     *
-     * @param ActivatePurchaseOptionRequest $activatePurchaseOptionRequest
-     */
-    public function setActivatePurchaseOptionRequest(ActivatePurchaseOptionRequest $activatePurchaseOptionRequest)
+namespace Google\Service\AndroidPublisher {
+    class UpdatePurchaseOptionStateRequest extends \Google\Model
     {
+        protected $activatePurchaseOptionRequestType = ActivatePurchaseOptionRequest::class;
+        protected $activatePurchaseOptionRequestDataType = '';
+        protected $deactivatePurchaseOptionRequestType = DeactivatePurchaseOptionRequest::class;
+        protected $deactivatePurchaseOptionRequestDataType = '';
+        /**
+         * Activates a purchase option. Once activated, the purchase option will be
+         * available.
+         *
+         * @param ActivatePurchaseOptionRequest $activatePurchaseOptionRequest
+         */
+        public function setActivatePurchaseOptionRequest(ActivatePurchaseOptionRequest $activatePurchaseOptionRequest)
+        {
+        }
+        /**
+         * @return ActivatePurchaseOptionRequest
+         */
+        public function getActivatePurchaseOptionRequest()
+        {
+        }
+        /**
+         * Deactivates a purchase option. Once deactivated, the purchase option will
+         * become unavailable.
+         *
+         * @param DeactivatePurchaseOptionRequest $deactivatePurchaseOptionRequest
+         */
+        public function setDeactivatePurchaseOptionRequest(DeactivatePurchaseOptionRequest $deactivatePurchaseOptionRequest)
+        {
+        }
+        /**
+         * @return DeactivatePurchaseOptionRequest
+         */
+        public function getDeactivatePurchaseOptionRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivatePurchaseOptionRequest
+     * Runtime class alias of \Google\Service\AndroidPublisher\UpdatePurchaseOptionStateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivatePurchaseOptionRequest()
-    {
-    }
-    /**
-     * Deactivates a purchase option. Once deactivated, the purchase option will
-     * become unavailable.
-     *
-     * @param DeactivatePurchaseOptionRequest $deactivatePurchaseOptionRequest
-     */
-    public function setDeactivatePurchaseOptionRequest(DeactivatePurchaseOptionRequest $deactivatePurchaseOptionRequest)
-    {
-    }
-    /**
-     * @return DeactivatePurchaseOptionRequest
-     */
-    public function getDeactivatePurchaseOptionRequest()
+    class Google_Service_AndroidPublisher_UpdatePurchaseOptionStateRequest extends \Google\Service\AndroidPublisher\UpdatePurchaseOptionStateRequest
     {
     }
 }

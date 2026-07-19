@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class OrgPolicyConstraint extends \Google\Collection
-{
-    protected $collection_key = 'policyRules';
-    /**
-     * Required. A unique identifier for the constraint.
-     *
-     * @var string
-     */
-    public $cannedConstraintId;
-    protected $policyRulesType = GoogleCloudSecuritypostureV1PolicyRule::class;
-    protected $policyRulesDataType = 'array';
-    /**
-     * Required. A unique identifier for the constraint.
-     *
-     * @param string $cannedConstraintId
-     */
-    public function setCannedConstraintId($cannedConstraintId)
+namespace Google\Service\SecurityPosture {
+    class OrgPolicyConstraint extends \Google\Collection
     {
+        protected $collection_key = 'policyRules';
+        /**
+         * Required. A unique identifier for the constraint.
+         *
+         * @var string
+         */
+        public $cannedConstraintId;
+        protected $policyRulesType = GoogleCloudSecuritypostureV1PolicyRule::class;
+        protected $policyRulesDataType = 'array';
+        /**
+         * Required. A unique identifier for the constraint.
+         *
+         * @param string $cannedConstraintId
+         */
+        public function setCannedConstraintId($cannedConstraintId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCannedConstraintId()
+        {
+        }
+        /**
+         * Required. The rules enforced by the constraint.
+         *
+         * @param GoogleCloudSecuritypostureV1PolicyRule[] $policyRules
+         */
+        public function setPolicyRules($policyRules)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritypostureV1PolicyRule[]
+         */
+        public function getPolicyRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\OrgPolicyConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCannedConstraintId()
-    {
-    }
-    /**
-     * Required. The rules enforced by the constraint.
-     *
-     * @param GoogleCloudSecuritypostureV1PolicyRule[] $policyRules
-     */
-    public function setPolicyRules($policyRules)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritypostureV1PolicyRule[]
-     */
-    public function getPolicyRules()
+    class Google_Service_SecurityPosture_OrgPolicyConstraint extends \Google\Service\SecurityPosture\OrgPolicyConstraint
     {
     }
 }

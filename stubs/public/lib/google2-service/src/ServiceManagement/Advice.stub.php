@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Advice extends \Google\Model
-{
-    /**
-     * Useful description for why this advice was applied and what actions should
-     * be taken to mitigate any implied risks.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Useful description for why this advice was applied and what actions should
-     * be taken to mitigate any implied risks.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\ServiceManagement {
+    class Advice extends \Google\Model
     {
+        /**
+         * Useful description for why this advice was applied and what actions should
+         * be taken to mitigate any implied risks.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Useful description for why this advice was applied and what actions should
+         * be taken to mitigate any implied risks.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\Advice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
+    class Google_Service_ServiceManagement_Advice extends \Google\Service\ServiceManagement\Advice
     {
     }
 }

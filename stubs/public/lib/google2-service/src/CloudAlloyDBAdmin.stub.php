@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudAlloyDBAdmin (v1).
- *
- * <p>
- * AlloyDB for PostgreSQL is an open source-compatible database service that
- * provides a powerful option for migrating, modernizing, or building
- * commercial-grade applications. It offers full compatibility with standard
- * PostgreSQL, and is more than 4x faster for transactional workloads and up to
- * 100x faster for analytical queries than standard PostgreSQL in our
- * performance tests. AlloyDB for PostgreSQL offers a 99.99 percent availability
- * SLA inclusive of maintenance. AlloyDB is optimized for the most demanding use
- * cases, allowing you to build new applications that require high transaction
- * throughput, large database sizes, or multiple read resources; scale existing
- * PostgreSQL workloads with no application changes; and modernize legacy
- * proprietary databases.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/alloydb/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudAlloyDBAdmin extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_backups;
-    public $projects_locations_clusters;
-    public $projects_locations_clusters_instances;
-    public $projects_locations_clusters_users;
-    public $projects_locations_operations;
-    public $projects_locations_supportedDatabaseFlags;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudAlloyDBAdmin service.
+     * Service definition for CloudAlloyDBAdmin (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * AlloyDB for PostgreSQL is an open source-compatible database service that
+     * provides a powerful option for migrating, modernizing, or building
+     * commercial-grade applications. It offers full compatibility with standard
+     * PostgreSQL, and is more than 4x faster for transactional workloads and up to
+     * 100x faster for analytical queries than standard PostgreSQL in our
+     * performance tests. AlloyDB for PostgreSQL offers a 99.99 percent availability
+     * SLA inclusive of maintenance. AlloyDB is optimized for the most demanding use
+     * cases, allowing you to build new applications that require high transaction
+     * throughput, large database sizes, or multiple read resources; scale existing
+     * PostgreSQL workloads with no application changes; and modernize legacy
+     * proprietary databases.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/alloydb/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudAlloyDBAdmin extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_backups;
+        public $projects_locations_clusters;
+        public $projects_locations_clusters_instances;
+        public $projects_locations_clusters_users;
+        public $projects_locations_operations;
+        public $projects_locations_supportedDatabaseFlags;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudAlloyDBAdmin service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudAlloyDBAdmin extends \Google\Service\CloudAlloyDBAdmin
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class AutomatedDnsCreationSpec extends \Google\Model
-{
-    /**
-     * Required. The DNS suffix to use for the DNS record. Must end with a dot.
-     * This should be a valid DNS domain name as per RFC 1035. Each label (between
-     * dots) can contain letters, digits, and hyphens, and must not start or end
-     * with a hyphen. Example: "my-service.example.com.", "internal."
-     *
-     * @var string
-     */
-    public $dnsSuffix;
-    /**
-     * Required. The hostname (the first label of the FQDN) to use for the DNS
-     * record. This should be a valid DNS label as per RFC 1035. Generally, this
-     * means the hostname can contain letters, digits, and hyphens, and must not
-     * start or end with a hyphen. Example: "my-instance", "db-1"
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Optional. The Time To Live for the DNS record, in seconds. If not provided,
-     * a default of 30 seconds will be used.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Required. The DNS suffix to use for the DNS record. Must end with a dot.
-     * This should be a valid DNS domain name as per RFC 1035. Each label (between
-     * dots) can contain letters, digits, and hyphens, and must not start or end
-     * with a hyphen. Example: "my-service.example.com.", "internal."
-     *
-     * @param string $dnsSuffix
-     */
-    public function setDnsSuffix($dnsSuffix)
+namespace Google\Service\Networkconnectivity {
+    class AutomatedDnsCreationSpec extends \Google\Model
     {
+        /**
+         * Required. The DNS suffix to use for the DNS record. Must end with a dot.
+         * This should be a valid DNS domain name as per RFC 1035. Each label (between
+         * dots) can contain letters, digits, and hyphens, and must not start or end
+         * with a hyphen. Example: "my-service.example.com.", "internal."
+         *
+         * @var string
+         */
+        public $dnsSuffix;
+        /**
+         * Required. The hostname (the first label of the FQDN) to use for the DNS
+         * record. This should be a valid DNS label as per RFC 1035. Generally, this
+         * means the hostname can contain letters, digits, and hyphens, and must not
+         * start or end with a hyphen. Example: "my-instance", "db-1"
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Optional. The Time To Live for the DNS record, in seconds. If not provided,
+         * a default of 30 seconds will be used.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Required. The DNS suffix to use for the DNS record. Must end with a dot.
+         * This should be a valid DNS domain name as per RFC 1035. Each label (between
+         * dots) can contain letters, digits, and hyphens, and must not start or end
+         * with a hyphen. Example: "my-service.example.com.", "internal."
+         *
+         * @param string $dnsSuffix
+         */
+        public function setDnsSuffix($dnsSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDnsSuffix()
+        {
+        }
+        /**
+         * Required. The hostname (the first label of the FQDN) to use for the DNS
+         * record. This should be a valid DNS label as per RFC 1035. Generally, this
+         * means the hostname can contain letters, digits, and hyphens, and must not
+         * start or end with a hyphen. Example: "my-instance", "db-1"
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Optional. The Time To Live for the DNS record, in seconds. If not provided,
+         * a default of 30 seconds will be used.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\AutomatedDnsCreationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsSuffix()
-    {
-    }
-    /**
-     * Required. The hostname (the first label of the FQDN) to use for the DNS
-     * record. This should be a valid DNS label as per RFC 1035. Generally, this
-     * means the hostname can contain letters, digits, and hyphens, and must not
-     * start or end with a hyphen. Example: "my-instance", "db-1"
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Optional. The Time To Live for the DNS record, in seconds. If not provided,
-     * a default of 30 seconds will be used.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Networkconnectivity_AutomatedDnsCreationSpec extends \Google\Service\Networkconnectivity\AutomatedDnsCreationSpec
     {
     }
 }

@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig extends \Google\Model
-{
-    /**
-     * Required. The name of [Service Directory](https://cloud.google.com/service-
-     * directory) service. Format: `projects//locations//namespaces//services/`.
-     * `LocationID` of the service directory must be the same as the location of
-     * the agent.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Required. The name of [Service Directory](https://cloud.google.com/service-
-     * directory) service. Format: `projects//locations//namespaces//services/`.
-     * `LocationID` of the service directory must be the same as the location of
-     * the agent.
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig extends \Google\Model
     {
+        /**
+         * Required. The name of [Service Directory](https://cloud.google.com/service-
+         * directory) service. Format: `projects//locations//namespaces//services/`.
+         * `LocationID` of the service directory must be the same as the location of
+         * the agent.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Required. The name of [Service Directory](https://cloud.google.com/service-
+         * directory) service. Format: `projects//locations//namespaces//services/`.
+         * `LocationID` of the service directory must be the same as the location of
+         * the agent.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig
     {
     }
 }

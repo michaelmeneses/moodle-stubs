@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class QueuedProvisioning extends \Google\Model
-{
-    /**
-     * Denotes that this nodepool is QRM specific, meaning nodes can be only
-     * obtained through queuing via the Cluster Autoscaler ProvisioningRequest
-     * API.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Denotes that this nodepool is QRM specific, meaning nodes can be only
-     * obtained through queuing via the Cluster Autoscaler ProvisioningRequest
-     * API.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class QueuedProvisioning extends \Google\Model
     {
+        /**
+         * Denotes that this nodepool is QRM specific, meaning nodes can be only
+         * obtained through queuing via the Cluster Autoscaler ProvisioningRequest
+         * API.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Denotes that this nodepool is QRM specific, meaning nodes can be only
+         * obtained through queuing via the Cluster Autoscaler ProvisioningRequest
+         * API.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\QueuedProvisioning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_QueuedProvisioning extends \Google\Service\Container\QueuedProvisioning
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1SearchTextRequestEVOptions extends \Google\Collection
-{
-    protected $collection_key = 'connectorTypes';
-    /**
-     * Optional. The list of preferred EV connector types. A place that does not
-     * support any of the listed connector types is filtered out.
-     *
-     * @var string[]
-     */
-    public $connectorTypes;
-    /**
-     * Optional. Minimum required charging rate in kilowatts. A place with a
-     * charging rate less than the specified rate is filtered out.
-     *
-     * @var 
-     */
-    public $minimumChargingRateKw;
-    /**
-     * Optional. The list of preferred EV connector types. A place that does not
-     * support any of the listed connector types is filtered out.
-     *
-     * @param string[] $connectorTypes
-     */
-    public function setConnectorTypes($connectorTypes)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1SearchTextRequestEVOptions extends \Google\Collection
     {
+        protected $collection_key = 'connectorTypes';
+        /**
+         * Optional. The list of preferred EV connector types. A place that does not
+         * support any of the listed connector types is filtered out.
+         *
+         * @var string[]
+         */
+        public $connectorTypes;
+        /**
+         * Optional. Minimum required charging rate in kilowatts. A place with a
+         * charging rate less than the specified rate is filtered out.
+         *
+         * @var 
+         */
+        public $minimumChargingRateKw;
+        /**
+         * Optional. The list of preferred EV connector types. A place that does not
+         * support any of the listed connector types is filtered out.
+         *
+         * @param string[] $connectorTypes
+         */
+        public function setConnectorTypes($connectorTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConnectorTypes()
+        {
+        }
+        public function setMinimumChargingRateKw($minimumChargingRateKw)
+        {
+        }
+        public function getMinimumChargingRateKw()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestEVOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorTypes()
-    {
-    }
-    public function setMinimumChargingRateKw($minimumChargingRateKw)
-    {
-    }
-    public function getMinimumChargingRateKw()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1SearchTextRequestEVOptions extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestEVOptions
     {
     }
 }

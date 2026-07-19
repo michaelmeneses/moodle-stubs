@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Writer\Common\Manager;
 
+use OpenSpout\Common\Helper\StringHelper;
+use OpenSpout\Writer\Common\Entity\Sheet;
+use OpenSpout\Writer\Exception\InvalidSheetNameException;
 /**
  * @internal
  */

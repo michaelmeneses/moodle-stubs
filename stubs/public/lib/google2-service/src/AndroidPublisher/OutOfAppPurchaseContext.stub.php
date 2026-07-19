@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OutOfAppPurchaseContext extends \Google\Model
-{
-    protected $expiredExternalAccountIdentifiersType = ExternalAccountIdentifiers::class;
-    protected $expiredExternalAccountIdentifiersDataType = '';
-    /**
-     * The purchase token of the last expired subscription. This purchase token
-     * must only be used to help identify the user if the link between the
-     * purchaseToken and user is stored in your database. This cannot be used to
-     * call the Google Developer API if it has been more than 60 days since
-     * expiry.
-     *
-     * @var string
-     */
-    public $expiredPurchaseToken;
-    /**
-     * User account identifier from the last expired subscription for this SKU.
-     *
-     * @param ExternalAccountIdentifiers $expiredExternalAccountIdentifiers
-     */
-    public function setExpiredExternalAccountIdentifiers(ExternalAccountIdentifiers $expiredExternalAccountIdentifiers)
+namespace Google\Service\AndroidPublisher {
+    class OutOfAppPurchaseContext extends \Google\Model
     {
+        protected $expiredExternalAccountIdentifiersType = ExternalAccountIdentifiers::class;
+        protected $expiredExternalAccountIdentifiersDataType = '';
+        /**
+         * The purchase token of the last expired subscription. This purchase token
+         * must only be used to help identify the user if the link between the
+         * purchaseToken and user is stored in your database. This cannot be used to
+         * call the Google Developer API if it has been more than 60 days since
+         * expiry.
+         *
+         * @var string
+         */
+        public $expiredPurchaseToken;
+        /**
+         * User account identifier from the last expired subscription for this SKU.
+         *
+         * @param ExternalAccountIdentifiers $expiredExternalAccountIdentifiers
+         */
+        public function setExpiredExternalAccountIdentifiers(ExternalAccountIdentifiers $expiredExternalAccountIdentifiers)
+        {
+        }
+        /**
+         * @return ExternalAccountIdentifiers
+         */
+        public function getExpiredExternalAccountIdentifiers()
+        {
+        }
+        /**
+         * The purchase token of the last expired subscription. This purchase token
+         * must only be used to help identify the user if the link between the
+         * purchaseToken and user is stored in your database. This cannot be used to
+         * call the Google Developer API if it has been more than 60 days since
+         * expiry.
+         *
+         * @param string $expiredPurchaseToken
+         */
+        public function setExpiredPurchaseToken($expiredPurchaseToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiredPurchaseToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExternalAccountIdentifiers
+     * Runtime class alias of \Google\Service\AndroidPublisher\OutOfAppPurchaseContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiredExternalAccountIdentifiers()
-    {
-    }
-    /**
-     * The purchase token of the last expired subscription. This purchase token
-     * must only be used to help identify the user if the link between the
-     * purchaseToken and user is stored in your database. This cannot be used to
-     * call the Google Developer API if it has been more than 60 days since
-     * expiry.
-     *
-     * @param string $expiredPurchaseToken
-     */
-    public function setExpiredPurchaseToken($expiredPurchaseToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiredPurchaseToken()
+    class Google_Service_AndroidPublisher_OutOfAppPurchaseContext extends \Google\Service\AndroidPublisher\OutOfAppPurchaseContext
     {
     }
 }

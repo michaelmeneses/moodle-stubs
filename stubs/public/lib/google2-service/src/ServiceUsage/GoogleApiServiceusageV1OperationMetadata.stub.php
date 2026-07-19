@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV1OperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * The full name of the resources that this operation is directly associated
-     * with.
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * The full name of the resources that this operation is directly associated
-     * with.
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV1OperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * The full name of the resources that this operation is directly associated
+         * with.
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * The full name of the resources that this operation is directly associated
+         * with.
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV1OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceNames()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV1OperationMetadata extends \Google\Service\ServiceUsage\GoogleApiServiceusageV1OperationMetadata
     {
     }
 }

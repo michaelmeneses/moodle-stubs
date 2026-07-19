@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeVolumeInfoReadingModes extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $image;
-    /**
-     * @var bool
-     */
-    public $text;
-    /**
-     * @param bool $image
-     */
-    public function setImage($image)
+namespace Google\Service\Books {
+    class VolumeVolumeInfoReadingModes extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $image;
+        /**
+         * @var bool
+         */
+        public $text;
+        /**
+         * @param bool $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param bool $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Books\VolumeVolumeInfoReadingModes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * @param bool $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getText()
+    class Google_Service_Books_VolumeVolumeInfoReadingModes extends \Google\Service\Books\VolumeVolumeInfoReadingModes
     {
     }
 }

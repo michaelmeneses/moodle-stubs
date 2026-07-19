@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareDhcpIpConfig extends \Google\Model
-{
-    /**
-     * enabled is a flag to mark if DHCP IP allocation is used for VMware user
-     * clusters.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * enabled is a flag to mark if DHCP IP allocation is used for VMware user
-     * clusters.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEOnPrem {
+    class VmwareDhcpIpConfig extends \Google\Model
     {
+        /**
+         * enabled is a flag to mark if DHCP IP allocation is used for VMware user
+         * clusters.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * enabled is a flag to mark if DHCP IP allocation is used for VMware user
+         * clusters.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareDhcpIpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_GKEOnPrem_VmwareDhcpIpConfig extends \Google\Service\GKEOnPrem\VmwareDhcpIpConfig
     {
     }
 }

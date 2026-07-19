@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class EncryptionConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * @param string
-     */
-    public function setKmsKey($kmsKey)
+namespace Google\Service\AIPlatformNotebooks {
+    class EncryptionConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * @param string
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\EncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKey()
+    class Google_Service_AIPlatformNotebooks_EncryptionConfig extends \Google\Service\AIPlatformNotebooks\EncryptionConfig
     {
     }
 }

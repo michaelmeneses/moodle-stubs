@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SettlementReport extends \Google\Collection
-{
-    protected $collection_key = 'transferIds';
-    /**
-     * @var string
-     */
-    public $endDate;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $previousBalanceType = Price::class;
-    protected $previousBalanceDataType = '';
-    /**
-     * @var string
-     */
-    public $settlementId;
-    /**
-     * @var string
-     */
-    public $startDate;
-    protected $transferAmountType = Price::class;
-    protected $transferAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $transferDate;
-    /**
-     * @var string[]
-     */
-    public $transferIds;
-    /**
-     * @param string
-     */
-    public function setEndDate($endDate)
+namespace Google\Service\ShoppingContent {
+    class SettlementReport extends \Google\Collection
     {
+        protected $collection_key = 'transferIds';
+        /**
+         * @var string
+         */
+        public $endDate;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $previousBalanceType = Price::class;
+        protected $previousBalanceDataType = '';
+        /**
+         * @var string
+         */
+        public $settlementId;
+        /**
+         * @var string
+         */
+        public $startDate;
+        protected $transferAmountType = Price::class;
+        protected $transferAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $transferDate;
+        /**
+         * @var string[]
+         */
+        public $transferIds;
+        /**
+         * @param string
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPreviousBalance(Price $previousBalance)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPreviousBalance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSettlementId($settlementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSettlementId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTransferAmount(Price $transferAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTransferAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTransferDate($transferDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransferDate()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTransferIds($transferIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTransferIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\SettlementReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPreviousBalance(Price $previousBalance)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPreviousBalance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSettlementId($settlementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSettlementId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTransferAmount(Price $transferAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTransferAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTransferDate($transferDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransferDate()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTransferIds($transferIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTransferIds()
+    class Google_Service_ShoppingContent_SettlementReport extends \Google\Service\ShoppingContent\SettlementReport
     {
     }
 }

@@ -21,62 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $operations = $sqladminService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\Operation;
+    use Google\Service\SQLAdmin\OperationsListResponse;
+    use Google\Service\SQLAdmin\SqladminEmpty;
     /**
-     * Cancels an instance operation that has been performed on an instance.
-     * (operations.cancel)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $operation Instance operation ID.
-     * @param array $optParams Optional parameters.
-     * @return SqladminEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $operations = $sqladminService->operations;
+     *  </code>
      */
-    public function cancel($project, $operation, $optParams = [])
+    class Operations extends \Google\Service\Resource
     {
+        /**
+         * Cancels an instance operation that has been performed on an instance.
+         * (operations.cancel)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $operation Instance operation ID.
+         * @param array $optParams Optional parameters.
+         * @return SqladminEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($project, $operation, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves an instance operation that has been performed on an instance.
+         * (operations.get)
+         *
+         * @param string $project Required. Project ID of the project that contains the
+         * instance.
+         * @param string $operation Required. Instance operation ID.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $operation, $optParams = [])
+        {
+        }
+        /**
+         * Lists all instance operations that have been performed on the given Cloud SQL
+         * instance in the reverse chronological order of the start time.
+         * (operations.listOperations)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @opt_param string maxResults Maximum number of operations per response.
+         * @opt_param string pageToken A previously-returned page token representing
+         * part of the larger set of results to view.
+         * @return OperationsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOperations($project, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves an instance operation that has been performed on an instance.
-     * (operations.get)
-     *
-     * @param string $project Required. Project ID of the project that contains the
-     * instance.
-     * @param string $operation Required. Instance operation ID.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($project, $operation, $optParams = [])
-    {
-    }
-    /**
-     * Lists all instance operations that have been performed on the given Cloud SQL
-     * instance in the reverse chronological order of the start time.
-     * (operations.listOperations)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @opt_param string maxResults Maximum number of operations per response.
-     * @opt_param string pageToken A previously-returned page token representing
-     * part of the larger set of results to view.
-     * @return OperationsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOperations($project, $optParams = [])
+    class Google_Service_SQLAdmin_Resource_Operations extends \Google\Service\SQLAdmin\Resource\Operations
     {
     }
 }

@@ -21,211 +21,220 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Environment extends \Google\Collection
-{
-    protected $collection_key = 'shardSummaries';
-    protected $completionTimeType = Timestamp::class;
-    protected $completionTimeDataType = '';
-    protected $creationTimeType = Timestamp::class;
-    protected $creationTimeDataType = '';
-    protected $dimensionValueType = EnvironmentDimensionValueEntry::class;
-    protected $dimensionValueDataType = 'array';
-    /**
-     * A short human-readable name to display in the UI. Maximum of 100
-     * characters. For example: Nexus 5, API 27.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. An Environment id.
-     *
-     * @var string
-     */
-    public $environmentId;
-    protected $environmentResultType = MergedResult::class;
-    protected $environmentResultDataType = '';
-    /**
-     * Output only. An Execution id.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * Output only. A History id.
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * Output only. A Project id.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $resultsStorageType = ResultsStorage::class;
-    protected $resultsStorageDataType = '';
-    protected $shardSummariesType = ShardSummary::class;
-    protected $shardSummariesDataType = 'array';
-    /**
-     * Output only. The time when the Environment status was set to complete. This
-     * value will be set automatically when state transitions to COMPLETE.
-     *
-     * @param Timestamp $completionTime
-     */
-    public function setCompletionTime(Timestamp $completionTime)
+namespace Google\Service\ToolResults {
+    class Environment extends \Google\Collection
     {
+        protected $collection_key = 'shardSummaries';
+        protected $completionTimeType = Timestamp::class;
+        protected $completionTimeDataType = '';
+        protected $creationTimeType = Timestamp::class;
+        protected $creationTimeDataType = '';
+        protected $dimensionValueType = EnvironmentDimensionValueEntry::class;
+        protected $dimensionValueDataType = 'array';
+        /**
+         * A short human-readable name to display in the UI. Maximum of 100
+         * characters. For example: Nexus 5, API 27.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. An Environment id.
+         *
+         * @var string
+         */
+        public $environmentId;
+        protected $environmentResultType = MergedResult::class;
+        protected $environmentResultDataType = '';
+        /**
+         * Output only. An Execution id.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * Output only. A History id.
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * Output only. A Project id.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $resultsStorageType = ResultsStorage::class;
+        protected $resultsStorageDataType = '';
+        protected $shardSummariesType = ShardSummary::class;
+        protected $shardSummariesDataType = 'array';
+        /**
+         * Output only. The time when the Environment status was set to complete. This
+         * value will be set automatically when state transitions to COMPLETE.
+         *
+         * @param Timestamp $completionTime
+         */
+        public function setCompletionTime(Timestamp $completionTime)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getCompletionTime()
+        {
+        }
+        /**
+         * Output only. The time when the Environment was created.
+         *
+         * @param Timestamp $creationTime
+         */
+        public function setCreationTime(Timestamp $creationTime)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * Dimension values describing the environment. Dimension values always
+         * consist of "Model", "Version", "Locale", and "Orientation". - In response:
+         * always set - In create request: always set - In update request: never set
+         *
+         * @param EnvironmentDimensionValueEntry[] $dimensionValue
+         */
+        public function setDimensionValue($dimensionValue)
+        {
+        }
+        /**
+         * @return EnvironmentDimensionValueEntry[]
+         */
+        public function getDimensionValue()
+        {
+        }
+        /**
+         * A short human-readable name to display in the UI. Maximum of 100
+         * characters. For example: Nexus 5, API 27.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. An Environment id.
+         *
+         * @param string $environmentId
+         */
+        public function setEnvironmentId($environmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentId()
+        {
+        }
+        /**
+         * Merged result of the environment.
+         *
+         * @param MergedResult $environmentResult
+         */
+        public function setEnvironmentResult(MergedResult $environmentResult)
+        {
+        }
+        /**
+         * @return MergedResult
+         */
+        public function getEnvironmentResult()
+        {
+        }
+        /**
+         * Output only. An Execution id.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * Output only. A History id.
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * Output only. A Project id.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * The location where output files are stored in the user bucket.
+         *
+         * @param ResultsStorage $resultsStorage
+         */
+        public function setResultsStorage(ResultsStorage $resultsStorage)
+        {
+        }
+        /**
+         * @return ResultsStorage
+         */
+        public function getResultsStorage()
+        {
+        }
+        /**
+         * Output only. Summaries of shards. Only one shard will present unless
+         * sharding feature is enabled in TestExecutionService.
+         *
+         * @param ShardSummary[] $shardSummaries
+         */
+        public function setShardSummaries($shardSummaries)
+        {
+        }
+        /**
+         * @return ShardSummary[]
+         */
+        public function getShardSummaries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Timestamp
+     * Runtime class alias of \Google\Service\ToolResults\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionTime()
-    {
-    }
-    /**
-     * Output only. The time when the Environment was created.
-     *
-     * @param Timestamp $creationTime
-     */
-    public function setCreationTime(Timestamp $creationTime)
-    {
-    }
-    /**
-     * @return Timestamp
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * Dimension values describing the environment. Dimension values always
-     * consist of "Model", "Version", "Locale", and "Orientation". - In response:
-     * always set - In create request: always set - In update request: never set
-     *
-     * @param EnvironmentDimensionValueEntry[] $dimensionValue
-     */
-    public function setDimensionValue($dimensionValue)
-    {
-    }
-    /**
-     * @return EnvironmentDimensionValueEntry[]
-     */
-    public function getDimensionValue()
-    {
-    }
-    /**
-     * A short human-readable name to display in the UI. Maximum of 100
-     * characters. For example: Nexus 5, API 27.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. An Environment id.
-     *
-     * @param string $environmentId
-     */
-    public function setEnvironmentId($environmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentId()
-    {
-    }
-    /**
-     * Merged result of the environment.
-     *
-     * @param MergedResult $environmentResult
-     */
-    public function setEnvironmentResult(MergedResult $environmentResult)
-    {
-    }
-    /**
-     * @return MergedResult
-     */
-    public function getEnvironmentResult()
-    {
-    }
-    /**
-     * Output only. An Execution id.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * Output only. A History id.
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * Output only. A Project id.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * The location where output files are stored in the user bucket.
-     *
-     * @param ResultsStorage $resultsStorage
-     */
-    public function setResultsStorage(ResultsStorage $resultsStorage)
-    {
-    }
-    /**
-     * @return ResultsStorage
-     */
-    public function getResultsStorage()
-    {
-    }
-    /**
-     * Output only. Summaries of shards. Only one shard will present unless
-     * sharding feature is enabled in TestExecutionService.
-     *
-     * @param ShardSummary[] $shardSummaries
-     */
-    public function setShardSummaries($shardSummaries)
-    {
-    }
-    /**
-     * @return ShardSummary[]
-     */
-    public function getShardSummaries()
+    class Google_Service_ToolResults_Environment extends \Google\Service\ToolResults\Environment
     {
     }
 }

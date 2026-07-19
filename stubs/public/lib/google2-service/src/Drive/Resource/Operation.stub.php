@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "operation" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $operation = $driveService->operation;
- *  </code>
- */
-class Operation extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
     /**
-     * Starts asynchronous cancellation on a long-running operation. The server
-     * makes a best effort to cancel the operation, but success is not guaranteed.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of `1`, corresponding to
-     * `Code.CANCELLED`. (operation.cancel)
-     *
-     * @param string $name The name of the operation resource to be cancelled.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "operation" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $operation = $driveService->operation;
+     *  </code>
      */
-    public function cancel($name, $optParams = [])
+    class Operation extends \Google\Service\Resource
     {
+        /**
+         * Starts asynchronous cancellation on a long-running operation. The server
+         * makes a best effort to cancel the operation, but success is not guaranteed.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of `1`, corresponding to
+         * `Code.CANCELLED`. (operation.cancel)
+         *
+         * @param string $name The name of the operation resource to be cancelled.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a long-running operation. This method indicates that the client is no
+         * longer interested in the operation result. It does not cancel the operation.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. (operation.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a long-running operation. This method indicates that the client is no
-     * longer interested in the operation result. It does not cancel the operation.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. (operation.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Drive\Resource\Operation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
+    class Google_Service_Drive_Resource_Operation extends \Google\Service\Drive\Resource\Operation
     {
     }
 }

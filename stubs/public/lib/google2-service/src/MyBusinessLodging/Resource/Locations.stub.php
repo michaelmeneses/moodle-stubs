@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinesslodgingService = new Google\Service\MyBusinessLodging(...);
- *   $locations = $mybusinesslodgingService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessLodging\Resource {
+    use Google\Service\MyBusinessLodging\Lodging;
     /**
-     * Returns the Lodging of a specific location. (locations.getLodging)
-     *
-     * @param string $name Required. Google identifier for this location in the
-     * form: `locations/{location_id}/lodging`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string readMask Required. The specific fields to return. Use "*"
-     * to include all fields. Repeated field items cannot be individually specified.
-     * @return Lodging
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinesslodgingService = new Google\Service\MyBusinessLodging(...);
+     *   $locations = $mybusinesslodgingService->locations;
+     *  </code>
      */
-    public function getLodging($name, $optParams = [])
+    class Locations extends \Google\Service\Resource
     {
+        /**
+         * Returns the Lodging of a specific location. (locations.getLodging)
+         *
+         * @param string $name Required. Google identifier for this location in the
+         * form: `locations/{location_id}/lodging`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string readMask Required. The specific fields to return. Use "*"
+         * to include all fields. Repeated field items cannot be individually specified.
+         * @return Lodging
+         * @throws \Google\Service\Exception
+         */
+        public function getLodging($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the Lodging of a specific location. (locations.updateLodging)
+         *
+         * @param string $name Required. Google identifier for this location in the
+         * form: `locations/{location_id}/lodging`
+         * @param Lodging $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The specific fields to update. Use "*"
+         * to update all fields, which may include unsetting empty fields in the
+         * request. Repeated field items cannot be individually updated.
+         * @return Lodging
+         * @throws \Google\Service\Exception
+         */
+        public function updateLodging($name, Lodging $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the Lodging of a specific location. (locations.updateLodging)
-     *
-     * @param string $name Required. Google identifier for this location in the
-     * form: `locations/{location_id}/lodging`
-     * @param Lodging $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The specific fields to update. Use "*"
-     * to update all fields, which may include unsetting empty fields in the
-     * request. Repeated field items cannot be individually updated.
-     * @return Lodging
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessLodging\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateLodging($name, Lodging $postBody, $optParams = [])
+    class Google_Service_MyBusinessLodging_Resource_Locations extends \Google\Service\MyBusinessLodging\Resource\Locations
     {
     }
 }

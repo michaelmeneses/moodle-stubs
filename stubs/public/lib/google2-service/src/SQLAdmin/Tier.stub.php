@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class Tier extends \Google\Collection
-{
-    protected $collection_key = 'region';
-    protected $internal_gapi_mappings = ["diskQuota" => "DiskQuota", "rAM" => "RAM"];
-    /**
-     * The maximum disk size of this tier in bytes.
-     *
-     * @var string
-     */
-    public $diskQuota;
-    /**
-     * The maximum RAM usage of this tier in bytes.
-     *
-     * @var string
-     */
-    public $rAM;
-    /**
-     * This is always `sql#tier`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The applicable regions for this tier.
-     *
-     * @var string[]
-     */
-    public $region;
-    /**
-     * An identifier for the machine type, for example, `db-custom-1-3840`. For
-     * related information, see [Pricing](/sql/pricing).
-     *
-     * @var string
-     */
-    public $tier;
-    /**
-     * The maximum disk size of this tier in bytes.
-     *
-     * @param string $diskQuota
-     */
-    public function setDiskQuota($diskQuota)
+namespace Google\Service\SQLAdmin {
+    class Tier extends \Google\Collection
     {
+        protected $collection_key = 'region';
+        protected $internal_gapi_mappings = ["diskQuota" => "DiskQuota", "rAM" => "RAM"];
+        /**
+         * The maximum disk size of this tier in bytes.
+         *
+         * @var string
+         */
+        public $diskQuota;
+        /**
+         * The maximum RAM usage of this tier in bytes.
+         *
+         * @var string
+         */
+        public $rAM;
+        /**
+         * This is always `sql#tier`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The applicable regions for this tier.
+         *
+         * @var string[]
+         */
+        public $region;
+        /**
+         * An identifier for the machine type, for example, `db-custom-1-3840`. For
+         * related information, see [Pricing](/sql/pricing).
+         *
+         * @var string
+         */
+        public $tier;
+        /**
+         * The maximum disk size of this tier in bytes.
+         *
+         * @param string $diskQuota
+         */
+        public function setDiskQuota($diskQuota)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskQuota()
+        {
+        }
+        /**
+         * The maximum RAM usage of this tier in bytes.
+         *
+         * @param string $rAM
+         */
+        public function setRAM($rAM)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRAM()
+        {
+        }
+        /**
+         * This is always `sql#tier`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The applicable regions for this tier.
+         *
+         * @param string[] $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * An identifier for the machine type, for example, `db-custom-1-3840`. For
+         * related information, see [Pricing](/sql/pricing).
+         *
+         * @param string $tier
+         */
+        public function setTier($tier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\Tier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskQuota()
-    {
-    }
-    /**
-     * The maximum RAM usage of this tier in bytes.
-     *
-     * @param string $rAM
-     */
-    public function setRAM($rAM)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRAM()
-    {
-    }
-    /**
-     * This is always `sql#tier`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The applicable regions for this tier.
-     *
-     * @param string[] $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * An identifier for the machine type, for example, `db-custom-1-3840`. For
-     * related information, see [Pricing](/sql/pricing).
-     *
-     * @param string $tier
-     */
-    public function setTier($tier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTier()
+    class Google_Service_SQLAdmin_Tier extends \Google\Service\SQLAdmin\Tier
     {
     }
 }

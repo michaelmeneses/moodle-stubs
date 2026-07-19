@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BoundingBox extends \Google\Model
-{
-    /**
-     * Height of the bounding box in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Left coordinate of the bounding box. (0,0) is upper left.
-     *
-     * @var int
-     */
-    public $left;
-    /**
-     * Top coordinate of the bounding box. (0,0) is upper left.
-     *
-     * @var int
-     */
-    public $top;
-    /**
-     * Width of the bounding box in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Height of the bounding box in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BoundingBox extends \Google\Model
     {
+        /**
+         * Height of the bounding box in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Left coordinate of the bounding box. (0,0) is upper left.
+         *
+         * @var int
+         */
+        public $left;
+        /**
+         * Top coordinate of the bounding box. (0,0) is upper left.
+         *
+         * @var int
+         */
+        public $top;
+        /**
+         * Width of the bounding box in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Height of the bounding box in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Left coordinate of the bounding box. (0,0) is upper left.
+         *
+         * @param int $left
+         */
+        public function setLeft($left)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeft()
+        {
+        }
+        /**
+         * Top coordinate of the bounding box. (0,0) is upper left.
+         *
+         * @param int $top
+         */
+        public function setTop($top)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTop()
+        {
+        }
+        /**
+         * Width of the bounding box in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BoundingBox registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Left coordinate of the bounding box. (0,0) is upper left.
-     *
-     * @param int $left
-     */
-    public function setLeft($left)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLeft()
-    {
-    }
-    /**
-     * Top coordinate of the bounding box. (0,0) is upper left.
-     *
-     * @param int $top
-     */
-    public function setTop($top)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTop()
-    {
-    }
-    /**
-     * Width of the bounding box in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_DLP_GooglePrivacyDlpV2BoundingBox extends \Google\Service\DLP\GooglePrivacyDlpV2BoundingBox
     {
     }
 }

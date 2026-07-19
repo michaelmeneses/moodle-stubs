@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1StorageInfo extends \Google\Collection
-{
-    protected $collection_key = 'volume';
-    /**
-     * The available space for user data storage in the device in bytes.
-     *
-     * @var string
-     */
-    public $availableDiskBytes;
-    /**
-     * The total space for user data storage in the device in bytes.
-     *
-     * @var string
-     */
-    public $totalDiskBytes;
-    protected $volumeType = GoogleChromeManagementV1StorageInfoDiskVolume::class;
-    protected $volumeDataType = 'array';
-    /**
-     * The available space for user data storage in the device in bytes.
-     *
-     * @param string $availableDiskBytes
-     */
-    public function setAvailableDiskBytes($availableDiskBytes)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1StorageInfo extends \Google\Collection
     {
+        protected $collection_key = 'volume';
+        /**
+         * The available space for user data storage in the device in bytes.
+         *
+         * @var string
+         */
+        public $availableDiskBytes;
+        /**
+         * The total space for user data storage in the device in bytes.
+         *
+         * @var string
+         */
+        public $totalDiskBytes;
+        protected $volumeType = GoogleChromeManagementV1StorageInfoDiskVolume::class;
+        protected $volumeDataType = 'array';
+        /**
+         * The available space for user data storage in the device in bytes.
+         *
+         * @param string $availableDiskBytes
+         */
+        public function setAvailableDiskBytes($availableDiskBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvailableDiskBytes()
+        {
+        }
+        /**
+         * The total space for user data storage in the device in bytes.
+         *
+         * @param string $totalDiskBytes
+         */
+        public function setTotalDiskBytes($totalDiskBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalDiskBytes()
+        {
+        }
+        /**
+         * Information for disk volumes
+         *
+         * @param GoogleChromeManagementV1StorageInfoDiskVolume[] $volume
+         */
+        public function setVolume($volume)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1StorageInfoDiskVolume[]
+         */
+        public function getVolume()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1StorageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableDiskBytes()
-    {
-    }
-    /**
-     * The total space for user data storage in the device in bytes.
-     *
-     * @param string $totalDiskBytes
-     */
-    public function setTotalDiskBytes($totalDiskBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalDiskBytes()
-    {
-    }
-    /**
-     * Information for disk volumes
-     *
-     * @param GoogleChromeManagementV1StorageInfoDiskVolume[] $volume
-     */
-    public function setVolume($volume)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1StorageInfoDiskVolume[]
-     */
-    public function getVolume()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1StorageInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1StorageInfo
     {
     }
 }

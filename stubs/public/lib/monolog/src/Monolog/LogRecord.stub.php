@@ -16,6 +16,7 @@
  */
 namespace Monolog;
 
+use ArrayAccess;
 /**
  * Monolog log record
  *

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportDocumentsRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    protected $documentsType = GoogleCloudDiscoveryengineV1Document::class;
-    protected $documentsDataType = 'array';
-    /**
-     * Required. A list of documents to update/create. Each document must have a
-     * valid Document.id. Recommended max of 100 items.
-     *
-     * @param GoogleCloudDiscoveryengineV1Document[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportDocumentsRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        protected $documentsType = GoogleCloudDiscoveryengineV1Document::class;
+        protected $documentsDataType = 'array';
+        /**
+         * Required. A list of documents to update/create. Each document must have a
+         * valid Document.id. Recommended max of 100 items.
+         *
+         * @param GoogleCloudDiscoveryengineV1Document[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Document[]
+         */
+        public function getDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Document[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportDocumentsRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportDocumentsRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportDocumentsRequestInlineSource
     {
     }
 }

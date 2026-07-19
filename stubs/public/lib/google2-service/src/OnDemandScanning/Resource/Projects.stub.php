@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
- *   $projects = $ondemandscanningService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\OnDemandScanning\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
+     *   $projects = $ondemandscanningService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OnDemandScanning\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OnDemandScanning_Resource_Projects extends \Google\Service\OnDemandScanning\Resource\Projects
+    {
+    }
 }

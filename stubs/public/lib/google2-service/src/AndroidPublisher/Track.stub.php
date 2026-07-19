@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Track extends \Google\Collection
-{
-    protected $collection_key = 'releases';
-    protected $releasesType = TrackRelease::class;
-    protected $releasesDataType = 'array';
-    /**
-     * Identifier of the track. Form factor tracks have a special prefix as an
-     * identifier, for example `wear:production`, `automotive:production`. [More
-     * on track name](https://developers.google.com/android-publisher/tracks#ff-
-     * track-name)
-     *
-     * @var string
-     */
-    public $track;
-    /**
-     * In a read request, represents all active releases in the track. In an
-     * update request, represents desired changes.
-     *
-     * @param TrackRelease[] $releases
-     */
-    public function setReleases($releases)
+namespace Google\Service\AndroidPublisher {
+    class Track extends \Google\Collection
     {
+        protected $collection_key = 'releases';
+        protected $releasesType = TrackRelease::class;
+        protected $releasesDataType = 'array';
+        /**
+         * Identifier of the track. Form factor tracks have a special prefix as an
+         * identifier, for example `wear:production`, `automotive:production`. [More
+         * on track name](https://developers.google.com/android-publisher/tracks#ff-
+         * track-name)
+         *
+         * @var string
+         */
+        public $track;
+        /**
+         * In a read request, represents all active releases in the track. In an
+         * update request, represents desired changes.
+         *
+         * @param TrackRelease[] $releases
+         */
+        public function setReleases($releases)
+        {
+        }
+        /**
+         * @return TrackRelease[]
+         */
+        public function getReleases()
+        {
+        }
+        /**
+         * Identifier of the track. Form factor tracks have a special prefix as an
+         * identifier, for example `wear:production`, `automotive:production`. [More
+         * on track name](https://developers.google.com/android-publisher/tracks#ff-
+         * track-name)
+         *
+         * @param string $track
+         */
+        public function setTrack($track)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrack()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TrackRelease[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\Track registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReleases()
-    {
-    }
-    /**
-     * Identifier of the track. Form factor tracks have a special prefix as an
-     * identifier, for example `wear:production`, `automotive:production`. [More
-     * on track name](https://developers.google.com/android-publisher/tracks#ff-
-     * track-name)
-     *
-     * @param string $track
-     */
-    public function setTrack($track)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrack()
+    class Google_Service_AndroidPublisher_Track extends \Google\Service\AndroidPublisher\Track
     {
     }
 }

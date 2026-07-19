@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentProvenanceParent extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $id;
-    /**
-     * @var int
-     */
-    public $index;
-    /**
-     * @var int
-     */
-    public $revision;
-    /**
-     * @param int
-     */
-    public function setId($id)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentProvenanceParent extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $id;
+        /**
+         * @var int
+         */
+        public $index;
+        /**
+         * @var int
+         */
+        public $revision;
+        /**
+         * @param int
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentProvenanceParent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRevision()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentProvenanceParent extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentProvenanceParent
     {
     }
 }

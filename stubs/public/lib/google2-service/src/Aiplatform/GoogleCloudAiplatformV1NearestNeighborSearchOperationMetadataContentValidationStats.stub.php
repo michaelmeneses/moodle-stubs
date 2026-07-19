@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats extends \Google\Collection
-{
-    protected $collection_key = 'partialErrors';
-    /**
-     * Number of records in this file we skipped due to validate errors.
-     *
-     * @var string
-     */
-    public $invalidRecordCount;
-    /**
-     * Number of sparse records in this file we skipped due to validate errors.
-     *
-     * @var string
-     */
-    public $invalidSparseRecordCount;
-    protected $partialErrorsType = GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataRecordError::class;
-    protected $partialErrorsDataType = 'array';
-    /**
-     * Cloud Storage URI pointing to the original file in user's bucket.
-     *
-     * @var string
-     */
-    public $sourceGcsUri;
-    /**
-     * Number of records in this file that were successfully processed.
-     *
-     * @var string
-     */
-    public $validRecordCount;
-    /**
-     * Number of sparse records in this file that were successfully processed.
-     *
-     * @var string
-     */
-    public $validSparseRecordCount;
-    /**
-     * Number of records in this file we skipped due to validate errors.
-     *
-     * @param string $invalidRecordCount
-     */
-    public function setInvalidRecordCount($invalidRecordCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats extends \Google\Collection
     {
+        protected $collection_key = 'partialErrors';
+        /**
+         * Number of records in this file we skipped due to validate errors.
+         *
+         * @var string
+         */
+        public $invalidRecordCount;
+        /**
+         * Number of sparse records in this file we skipped due to validate errors.
+         *
+         * @var string
+         */
+        public $invalidSparseRecordCount;
+        protected $partialErrorsType = GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataRecordError::class;
+        protected $partialErrorsDataType = 'array';
+        /**
+         * Cloud Storage URI pointing to the original file in user's bucket.
+         *
+         * @var string
+         */
+        public $sourceGcsUri;
+        /**
+         * Number of records in this file that were successfully processed.
+         *
+         * @var string
+         */
+        public $validRecordCount;
+        /**
+         * Number of sparse records in this file that were successfully processed.
+         *
+         * @var string
+         */
+        public $validSparseRecordCount;
+        /**
+         * Number of records in this file we skipped due to validate errors.
+         *
+         * @param string $invalidRecordCount
+         */
+        public function setInvalidRecordCount($invalidRecordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvalidRecordCount()
+        {
+        }
+        /**
+         * Number of sparse records in this file we skipped due to validate errors.
+         *
+         * @param string $invalidSparseRecordCount
+         */
+        public function setInvalidSparseRecordCount($invalidSparseRecordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvalidSparseRecordCount()
+        {
+        }
+        /**
+         * The detail information of the partial failures encountered for those
+         * invalid records that couldn't be parsed. Up to 50 partial errors will be
+         * reported.
+         *
+         * @param GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataRecordError[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataRecordError[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * Cloud Storage URI pointing to the original file in user's bucket.
+         *
+         * @param string $sourceGcsUri
+         */
+        public function setSourceGcsUri($sourceGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceGcsUri()
+        {
+        }
+        /**
+         * Number of records in this file that were successfully processed.
+         *
+         * @param string $validRecordCount
+         */
+        public function setValidRecordCount($validRecordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidRecordCount()
+        {
+        }
+        /**
+         * Number of sparse records in this file that were successfully processed.
+         *
+         * @param string $validSparseRecordCount
+         */
+        public function setValidSparseRecordCount($validSparseRecordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidSparseRecordCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvalidRecordCount()
-    {
-    }
-    /**
-     * Number of sparse records in this file we skipped due to validate errors.
-     *
-     * @param string $invalidSparseRecordCount
-     */
-    public function setInvalidSparseRecordCount($invalidSparseRecordCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvalidSparseRecordCount()
-    {
-    }
-    /**
-     * The detail information of the partial failures encountered for those
-     * invalid records that couldn't be parsed. Up to 50 partial errors will be
-     * reported.
-     *
-     * @param GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataRecordError[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataRecordError[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * Cloud Storage URI pointing to the original file in user's bucket.
-     *
-     * @param string $sourceGcsUri
-     */
-    public function setSourceGcsUri($sourceGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceGcsUri()
-    {
-    }
-    /**
-     * Number of records in this file that were successfully processed.
-     *
-     * @param string $validRecordCount
-     */
-    public function setValidRecordCount($validRecordCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidRecordCount()
-    {
-    }
-    /**
-     * Number of sparse records in this file that were successfully processed.
-     *
-     * @param string $validSparseRecordCount
-     */
-    public function setValidSparseRecordCount($validSparseRecordCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidSparseRecordCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats
     {
     }
 }

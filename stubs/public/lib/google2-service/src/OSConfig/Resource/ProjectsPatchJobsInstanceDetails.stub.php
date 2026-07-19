@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig\Resource;
-
-/**
- * The "instanceDetails" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osconfigService = new Google\Service\OSConfig(...);
- *   $instanceDetails = $osconfigService->projects_patchJobs_instanceDetails;
- *  </code>
- */
-class ProjectsPatchJobsInstanceDetails extends \Google\Service\Resource
-{
+namespace Google\Service\OSConfig\Resource {
+    use Google\Service\OSConfig\ListPatchJobInstanceDetailsResponse;
     /**
-     * Get a list of instance details for a given patch job.
-     * (instanceDetails.listProjectsPatchJobsInstanceDetails)
-     *
-     * @param string $parent Required. The parent for the instances are in the form
-     * of `projects/patchJobs`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A filter expression that filters results listed in
-     * the response. This field supports filtering results by instance zone, name,
-     * state, or `failure_reason`.
-     * @opt_param int pageSize The maximum number of instance details records to
-     * return. Default is 100.
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * that indicates where this listing should continue from.
-     * @return ListPatchJobInstanceDetailsResponse
-     * @throws \Google\Service\Exception
+     * The "instanceDetails" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osconfigService = new Google\Service\OSConfig(...);
+     *   $instanceDetails = $osconfigService->projects_patchJobs_instanceDetails;
+     *  </code>
      */
-    public function listProjectsPatchJobsInstanceDetails($parent, $optParams = [])
+    class ProjectsPatchJobsInstanceDetails extends \Google\Service\Resource
+    {
+        /**
+         * Get a list of instance details for a given patch job.
+         * (instanceDetails.listProjectsPatchJobsInstanceDetails)
+         *
+         * @param string $parent Required. The parent for the instances are in the form
+         * of `projects/patchJobs`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A filter expression that filters results listed in
+         * the response. This field supports filtering results by instance zone, name,
+         * state, or `failure_reason`.
+         * @opt_param int pageSize The maximum number of instance details records to
+         * return. Default is 100.
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * that indicates where this listing should continue from.
+         * @return ListPatchJobInstanceDetailsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsPatchJobsInstanceDetails($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OSConfig\Resource\ProjectsPatchJobsInstanceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OSConfig_Resource_ProjectsPatchJobsInstanceDetails extends \Google\Service\OSConfig\Resource\ProjectsPatchJobsInstanceDetails
     {
     }
 }

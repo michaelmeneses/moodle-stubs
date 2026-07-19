@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine\Resource;
-
-/**
- * The "global" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vmwareengineService = new Google\Service\VMwareEngine(...);
- *   $global = $vmwareengineService->projects_locations_global;
- *  </code>
- */
-class ProjectsLocationsVmwareengineGlobal extends \Google\Service\Resource
-{
+namespace Google\Service\VMwareEngine\Resource {
+    use Google\Service\VMwareEngine\DnsBindPermission;
     /**
-     * Gets all the principals having bind permission on the intranet VPC associated
-     * with the consumer project granted by the Grant API.
-     * (global.getDnsBindPermission)
-     *
-     * @param string $name Required. The name of the resource which stores the
-     * users/service accounts having the permission to bind to the corresponding
-     * intranet VPC of the consumer project. DnsBindPermission is a global resource.
-     * Resource names are schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/global/dnsBindPermission`
-     * @param array $optParams Optional parameters.
-     * @return DnsBindPermission
+     * The "global" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vmwareengineService = new Google\Service\VMwareEngine(...);
+     *   $global = $vmwareengineService->projects_locations_global;
+     *  </code>
      */
-    public function getDnsBindPermission($name, $optParams = [])
+    class ProjectsLocationsVmwareengineGlobal extends \Google\Service\Resource
+    {
+        /**
+         * Gets all the principals having bind permission on the intranet VPC associated
+         * with the consumer project granted by the Grant API.
+         * (global.getDnsBindPermission)
+         *
+         * @param string $name Required. The name of the resource which stores the
+         * users/service accounts having the permission to bind to the corresponding
+         * intranet VPC of the consumer project. DnsBindPermission is a global resource.
+         * Resource names are schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/global/dnsBindPermission`
+         * @param array $optParams Optional parameters.
+         * @return DnsBindPermission
+         */
+        public function getDnsBindPermission($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\VMwareEngine\Resource\ProjectsLocationsVmwareengineGlobal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_VMwareEngine_Resource_ProjectsLocationsVmwareengineGlobal extends \Google\Service\VMwareEngine\Resource\ProjectsLocationsVmwareengineGlobal
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class ExpressionReport extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $childrenType = ExpressionReport::class;
-    protected $childrenDataType = 'array';
-    protected $sourcePositionType = SourcePosition::class;
-    protected $sourcePositionDataType = '';
-    protected $valuesType = ValueCount::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Subexpressions
-     *
-     * @param ExpressionReport[] $children
-     */
-    public function setChildren($children)
+namespace Google\Service\FirebaseRules {
+    class ExpressionReport extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $childrenType = ExpressionReport::class;
+        protected $childrenDataType = 'array';
+        protected $sourcePositionType = SourcePosition::class;
+        protected $sourcePositionDataType = '';
+        protected $valuesType = ValueCount::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Subexpressions
+         *
+         * @param ExpressionReport[] $children
+         */
+        public function setChildren($children)
+        {
+        }
+        /**
+         * @return ExpressionReport[]
+         */
+        public function getChildren()
+        {
+        }
+        /**
+         * Position of expression in original rules source.
+         *
+         * @param SourcePosition $sourcePosition
+         */
+        public function setSourcePosition(SourcePosition $sourcePosition)
+        {
+        }
+        /**
+         * @return SourcePosition
+         */
+        public function getSourcePosition()
+        {
+        }
+        /**
+         * Values that this expression evaluated to when encountered.
+         *
+         * @param ValueCount[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return ValueCount[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExpressionReport[]
+     * Runtime class alias of \Google\Service\FirebaseRules\ExpressionReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildren()
-    {
-    }
-    /**
-     * Position of expression in original rules source.
-     *
-     * @param SourcePosition $sourcePosition
-     */
-    public function setSourcePosition(SourcePosition $sourcePosition)
-    {
-    }
-    /**
-     * @return SourcePosition
-     */
-    public function getSourcePosition()
-    {
-    }
-    /**
-     * Values that this expression evaluated to when encountered.
-     *
-     * @param ValueCount[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return ValueCount[]
-     */
-    public function getValues()
+    class Google_Service_FirebaseRules_ExpressionReport extends \Google\Service\FirebaseRules\ExpressionReport
     {
     }
 }

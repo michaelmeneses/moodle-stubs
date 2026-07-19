@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class WidgetMarkup extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = Button::class;
-    protected $buttonsDataType = 'array';
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    protected $keyValueType = KeyValue::class;
-    protected $keyValueDataType = '';
-    protected $textParagraphType = TextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * A list of buttons. Buttons is also `oneof data` and only one of these
-     * fields should be set.
-     *
-     * @param Button[] $buttons
-     */
-    public function setButtons($buttons)
+namespace Google\Service\HangoutsChat {
+    class WidgetMarkup extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = Button::class;
+        protected $buttonsDataType = 'array';
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        protected $keyValueType = KeyValue::class;
+        protected $keyValueDataType = '';
+        protected $textParagraphType = TextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * A list of buttons. Buttons is also `oneof data` and only one of these
+         * fields should be set.
+         *
+         * @param Button[] $buttons
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return Button[]
+         */
+        public function getButtons()
+        {
+        }
+        /**
+         * Display an image in this widget.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Display a key value item in this widget.
+         *
+         * @param KeyValue $keyValue
+         */
+        public function setKeyValue(KeyValue $keyValue)
+        {
+        }
+        /**
+         * @return KeyValue
+         */
+        public function getKeyValue()
+        {
+        }
+        /**
+         * Display a text paragraph in this widget.
+         *
+         * @param TextParagraph $textParagraph
+         */
+        public function setTextParagraph(TextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return TextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Button[]
+     * Runtime class alias of \Google\Service\HangoutsChat\WidgetMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
-    {
-    }
-    /**
-     * Display an image in this widget.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Display a key value item in this widget.
-     *
-     * @param KeyValue $keyValue
-     */
-    public function setKeyValue(KeyValue $keyValue)
-    {
-    }
-    /**
-     * @return KeyValue
-     */
-    public function getKeyValue()
-    {
-    }
-    /**
-     * Display a text paragraph in this widget.
-     *
-     * @param TextParagraph $textParagraph
-     */
-    public function setTextParagraph(TextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return TextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_HangoutsChat_WidgetMarkup extends \Google\Service\HangoutsChat\WidgetMarkup
     {
     }
 }

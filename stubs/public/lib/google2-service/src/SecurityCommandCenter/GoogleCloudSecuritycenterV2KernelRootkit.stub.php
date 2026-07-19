@@ -21,202 +21,211 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2KernelRootkit extends \Google\Model
-{
-    /**
-     * Rootkit name, when available.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * True if unexpected modifications of kernel code memory are present.
-     *
-     * @var bool
-     */
-    public $unexpectedCodeModification;
-    /**
-     * True if `ftrace` points are present with callbacks pointing to regions that
-     * are not in the expected kernel or module code range.
-     *
-     * @var bool
-     */
-    public $unexpectedFtraceHandler;
-    /**
-     * True if interrupt handlers that are are not in the expected kernel or
-     * module code regions are present.
-     *
-     * @var bool
-     */
-    public $unexpectedInterruptHandler;
-    /**
-     * True if kernel code pages that are not in the expected kernel or module
-     * code regions are present.
-     *
-     * @var bool
-     */
-    public $unexpectedKernelCodePages;
-    /**
-     * True if `kprobe` points are present with callbacks pointing to regions that
-     * are not in the expected kernel or module code range.
-     *
-     * @var bool
-     */
-    public $unexpectedKprobeHandler;
-    /**
-     * True if unexpected processes in the scheduler run queue are present. Such
-     * processes are in the run queue, but not in the process task list.
-     *
-     * @var bool
-     */
-    public $unexpectedProcessesInRunqueue;
-    /**
-     * True if unexpected modifications of kernel read-only data memory are
-     * present.
-     *
-     * @var bool
-     */
-    public $unexpectedReadOnlyDataModification;
-    /**
-     * True if system call handlers that are are not in the expected kernel or
-     * module code regions are present.
-     *
-     * @var bool
-     */
-    public $unexpectedSystemCallHandler;
-    /**
-     * Rootkit name, when available.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2KernelRootkit extends \Google\Model
     {
+        /**
+         * Rootkit name, when available.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * True if unexpected modifications of kernel code memory are present.
+         *
+         * @var bool
+         */
+        public $unexpectedCodeModification;
+        /**
+         * True if `ftrace` points are present with callbacks pointing to regions that
+         * are not in the expected kernel or module code range.
+         *
+         * @var bool
+         */
+        public $unexpectedFtraceHandler;
+        /**
+         * True if interrupt handlers that are are not in the expected kernel or
+         * module code regions are present.
+         *
+         * @var bool
+         */
+        public $unexpectedInterruptHandler;
+        /**
+         * True if kernel code pages that are not in the expected kernel or module
+         * code regions are present.
+         *
+         * @var bool
+         */
+        public $unexpectedKernelCodePages;
+        /**
+         * True if `kprobe` points are present with callbacks pointing to regions that
+         * are not in the expected kernel or module code range.
+         *
+         * @var bool
+         */
+        public $unexpectedKprobeHandler;
+        /**
+         * True if unexpected processes in the scheduler run queue are present. Such
+         * processes are in the run queue, but not in the process task list.
+         *
+         * @var bool
+         */
+        public $unexpectedProcessesInRunqueue;
+        /**
+         * True if unexpected modifications of kernel read-only data memory are
+         * present.
+         *
+         * @var bool
+         */
+        public $unexpectedReadOnlyDataModification;
+        /**
+         * True if system call handlers that are are not in the expected kernel or
+         * module code regions are present.
+         *
+         * @var bool
+         */
+        public $unexpectedSystemCallHandler;
+        /**
+         * Rootkit name, when available.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * True if unexpected modifications of kernel code memory are present.
+         *
+         * @param bool $unexpectedCodeModification
+         */
+        public function setUnexpectedCodeModification($unexpectedCodeModification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedCodeModification()
+        {
+        }
+        /**
+         * True if `ftrace` points are present with callbacks pointing to regions that
+         * are not in the expected kernel or module code range.
+         *
+         * @param bool $unexpectedFtraceHandler
+         */
+        public function setUnexpectedFtraceHandler($unexpectedFtraceHandler)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedFtraceHandler()
+        {
+        }
+        /**
+         * True if interrupt handlers that are are not in the expected kernel or
+         * module code regions are present.
+         *
+         * @param bool $unexpectedInterruptHandler
+         */
+        public function setUnexpectedInterruptHandler($unexpectedInterruptHandler)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedInterruptHandler()
+        {
+        }
+        /**
+         * True if kernel code pages that are not in the expected kernel or module
+         * code regions are present.
+         *
+         * @param bool $unexpectedKernelCodePages
+         */
+        public function setUnexpectedKernelCodePages($unexpectedKernelCodePages)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedKernelCodePages()
+        {
+        }
+        /**
+         * True if `kprobe` points are present with callbacks pointing to regions that
+         * are not in the expected kernel or module code range.
+         *
+         * @param bool $unexpectedKprobeHandler
+         */
+        public function setUnexpectedKprobeHandler($unexpectedKprobeHandler)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedKprobeHandler()
+        {
+        }
+        /**
+         * True if unexpected processes in the scheduler run queue are present. Such
+         * processes are in the run queue, but not in the process task list.
+         *
+         * @param bool $unexpectedProcessesInRunqueue
+         */
+        public function setUnexpectedProcessesInRunqueue($unexpectedProcessesInRunqueue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedProcessesInRunqueue()
+        {
+        }
+        /**
+         * True if unexpected modifications of kernel read-only data memory are
+         * present.
+         *
+         * @param bool $unexpectedReadOnlyDataModification
+         */
+        public function setUnexpectedReadOnlyDataModification($unexpectedReadOnlyDataModification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedReadOnlyDataModification()
+        {
+        }
+        /**
+         * True if system call handlers that are are not in the expected kernel or
+         * module code regions are present.
+         *
+         * @param bool $unexpectedSystemCallHandler
+         */
+        public function setUnexpectedSystemCallHandler($unexpectedSystemCallHandler)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnexpectedSystemCallHandler()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2KernelRootkit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * True if unexpected modifications of kernel code memory are present.
-     *
-     * @param bool $unexpectedCodeModification
-     */
-    public function setUnexpectedCodeModification($unexpectedCodeModification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedCodeModification()
-    {
-    }
-    /**
-     * True if `ftrace` points are present with callbacks pointing to regions that
-     * are not in the expected kernel or module code range.
-     *
-     * @param bool $unexpectedFtraceHandler
-     */
-    public function setUnexpectedFtraceHandler($unexpectedFtraceHandler)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedFtraceHandler()
-    {
-    }
-    /**
-     * True if interrupt handlers that are are not in the expected kernel or
-     * module code regions are present.
-     *
-     * @param bool $unexpectedInterruptHandler
-     */
-    public function setUnexpectedInterruptHandler($unexpectedInterruptHandler)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedInterruptHandler()
-    {
-    }
-    /**
-     * True if kernel code pages that are not in the expected kernel or module
-     * code regions are present.
-     *
-     * @param bool $unexpectedKernelCodePages
-     */
-    public function setUnexpectedKernelCodePages($unexpectedKernelCodePages)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedKernelCodePages()
-    {
-    }
-    /**
-     * True if `kprobe` points are present with callbacks pointing to regions that
-     * are not in the expected kernel or module code range.
-     *
-     * @param bool $unexpectedKprobeHandler
-     */
-    public function setUnexpectedKprobeHandler($unexpectedKprobeHandler)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedKprobeHandler()
-    {
-    }
-    /**
-     * True if unexpected processes in the scheduler run queue are present. Such
-     * processes are in the run queue, but not in the process task list.
-     *
-     * @param bool $unexpectedProcessesInRunqueue
-     */
-    public function setUnexpectedProcessesInRunqueue($unexpectedProcessesInRunqueue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedProcessesInRunqueue()
-    {
-    }
-    /**
-     * True if unexpected modifications of kernel read-only data memory are
-     * present.
-     *
-     * @param bool $unexpectedReadOnlyDataModification
-     */
-    public function setUnexpectedReadOnlyDataModification($unexpectedReadOnlyDataModification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedReadOnlyDataModification()
-    {
-    }
-    /**
-     * True if system call handlers that are are not in the expected kernel or
-     * module code regions are present.
-     *
-     * @param bool $unexpectedSystemCallHandler
-     */
-    public function setUnexpectedSystemCallHandler($unexpectedSystemCallHandler)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnexpectedSystemCallHandler()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2KernelRootkit extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2KernelRootkit
     {
     }
 }

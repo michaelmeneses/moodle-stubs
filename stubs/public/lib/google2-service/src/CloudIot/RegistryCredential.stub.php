@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class RegistryCredential extends \Google\Model
-{
-    protected $publicKeyCertificateType = PublicKeyCertificate::class;
-    protected $publicKeyCertificateDataType = '';
-    /**
-     * @param PublicKeyCertificate
-     */
-    public function setPublicKeyCertificate(PublicKeyCertificate $publicKeyCertificate)
+namespace Google\Service\CloudIot {
+    class RegistryCredential extends \Google\Model
     {
+        protected $publicKeyCertificateType = PublicKeyCertificate::class;
+        protected $publicKeyCertificateDataType = '';
+        /**
+         * @param PublicKeyCertificate
+         */
+        public function setPublicKeyCertificate(PublicKeyCertificate $publicKeyCertificate)
+        {
+        }
+        /**
+         * @return PublicKeyCertificate
+         */
+        public function getPublicKeyCertificate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublicKeyCertificate
+     * Runtime class alias of \Google\Service\CloudIot\RegistryCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublicKeyCertificate()
+    class Google_Service_CloudIot_RegistryCredential extends \Google\Service\CloudIot\RegistryCredential
     {
     }
 }

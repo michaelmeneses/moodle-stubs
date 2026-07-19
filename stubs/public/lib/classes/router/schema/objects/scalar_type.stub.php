@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\objects;
 
+use core\param;
+use core\router\schema\specification;
 /**
  * A scalar type.
  *

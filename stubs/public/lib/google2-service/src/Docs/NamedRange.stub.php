@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class NamedRange extends \Google\Collection
-{
-    protected $collection_key = 'ranges';
-    /**
-     * The name of the named range.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The ID of the named range.
-     *
-     * @var string
-     */
-    public $namedRangeId;
-    protected $rangesType = Range::class;
-    protected $rangesDataType = 'array';
-    /**
-     * The name of the named range.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Docs {
+    class NamedRange extends \Google\Collection
     {
+        protected $collection_key = 'ranges';
+        /**
+         * The name of the named range.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The ID of the named range.
+         *
+         * @var string
+         */
+        public $namedRangeId;
+        protected $rangesType = Range::class;
+        protected $rangesDataType = 'array';
+        /**
+         * The name of the named range.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The ID of the named range.
+         *
+         * @param string $namedRangeId
+         */
+        public function setNamedRangeId($namedRangeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamedRangeId()
+        {
+        }
+        /**
+         * The ranges that belong to this named range.
+         *
+         * @param Range[] $ranges
+         */
+        public function setRanges($ranges)
+        {
+        }
+        /**
+         * @return Range[]
+         */
+        public function getRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\NamedRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The ID of the named range.
-     *
-     * @param string $namedRangeId
-     */
-    public function setNamedRangeId($namedRangeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamedRangeId()
-    {
-    }
-    /**
-     * The ranges that belong to this named range.
-     *
-     * @param Range[] $ranges
-     */
-    public function setRanges($ranges)
-    {
-    }
-    /**
-     * @return Range[]
-     */
-    public function getRanges()
+    class Google_Service_Docs_NamedRange extends \Google\Service\Docs\NamedRange
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeFieldValuesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'creativeFieldValues';
-    protected $creativeFieldValuesType = CreativeFieldValue::class;
-    protected $creativeFieldValuesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeFieldValuesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Creative field value collection.
-     *
-     * @param CreativeFieldValue[] $creativeFieldValues
-     */
-    public function setCreativeFieldValues($creativeFieldValues)
+namespace Google\Service\Dfareporting {
+    class CreativeFieldValuesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'creativeFieldValues';
+        protected $creativeFieldValuesType = CreativeFieldValue::class;
+        protected $creativeFieldValuesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeFieldValuesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Creative field value collection.
+         *
+         * @param CreativeFieldValue[] $creativeFieldValues
+         */
+        public function setCreativeFieldValues($creativeFieldValues)
+        {
+        }
+        /**
+         * @return CreativeFieldValue[]
+         */
+        public function getCreativeFieldValues()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeFieldValuesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreativeFieldValue[]
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeFieldValuesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeFieldValues()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeFieldValuesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_CreativeFieldValuesListResponse extends \Google\Service\Dfareporting\CreativeFieldValuesListResponse
     {
     }
 }

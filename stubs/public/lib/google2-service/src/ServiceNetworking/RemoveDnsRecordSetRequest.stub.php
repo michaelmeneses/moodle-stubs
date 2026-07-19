@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class RemoveDnsRecordSetRequest extends \Google\Model
-{
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is the project number, as in '12345' {network} is the network
-     * name.
-     *
-     * @var string
-     */
-    public $consumerNetwork;
-    protected $dnsRecordSetType = DnsRecordSet::class;
-    protected $dnsRecordSetDataType = '';
-    /**
-     * Required. The name of the private DNS zone in the shared producer host
-     * project from which the record set will be removed.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is the project number, as in '12345' {network} is the network
-     * name.
-     *
-     * @param string $consumerNetwork
-     */
-    public function setConsumerNetwork($consumerNetwork)
+namespace Google\Service\ServiceNetworking {
+    class RemoveDnsRecordSetRequest extends \Google\Model
     {
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is the project number, as in '12345' {network} is the network
+         * name.
+         *
+         * @var string
+         */
+        public $consumerNetwork;
+        protected $dnsRecordSetType = DnsRecordSet::class;
+        protected $dnsRecordSetDataType = '';
+        /**
+         * Required. The name of the private DNS zone in the shared producer host
+         * project from which the record set will be removed.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is the project number, as in '12345' {network} is the network
+         * name.
+         *
+         * @param string $consumerNetwork
+         */
+        public function setConsumerNetwork($consumerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetwork()
+        {
+        }
+        /**
+         * Required. The DNS record set to remove.
+         *
+         * @param DnsRecordSet $dnsRecordSet
+         */
+        public function setDnsRecordSet(DnsRecordSet $dnsRecordSet)
+        {
+        }
+        /**
+         * @return DnsRecordSet
+         */
+        public function getDnsRecordSet()
+        {
+        }
+        /**
+         * Required. The name of the private DNS zone in the shared producer host
+         * project from which the record set will be removed.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\RemoveDnsRecordSetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerNetwork()
-    {
-    }
-    /**
-     * Required. The DNS record set to remove.
-     *
-     * @param DnsRecordSet $dnsRecordSet
-     */
-    public function setDnsRecordSet(DnsRecordSet $dnsRecordSet)
-    {
-    }
-    /**
-     * @return DnsRecordSet
-     */
-    public function getDnsRecordSet()
-    {
-    }
-    /**
-     * Required. The name of the private DNS zone in the shared producer host
-     * project from which the record set will be removed.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_ServiceNetworking_RemoveDnsRecordSetRequest extends \Google\Service\ServiceNetworking\RemoveDnsRecordSetRequest
     {
     }
 }

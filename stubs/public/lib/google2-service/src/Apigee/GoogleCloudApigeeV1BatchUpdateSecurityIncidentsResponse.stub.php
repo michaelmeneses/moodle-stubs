@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchUpdateSecurityIncidentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'securityIncidents';
-    protected $securityIncidentsType = GoogleCloudApigeeV1SecurityIncident::class;
-    protected $securityIncidentsDataType = 'array';
-    /**
-     * Output only. Updated security incidents
-     *
-     * @param GoogleCloudApigeeV1SecurityIncident[] $securityIncidents
-     */
-    public function setSecurityIncidents($securityIncidents)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchUpdateSecurityIncidentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'securityIncidents';
+        protected $securityIncidentsType = GoogleCloudApigeeV1SecurityIncident::class;
+        protected $securityIncidentsDataType = 'array';
+        /**
+         * Output only. Updated security incidents
+         *
+         * @param GoogleCloudApigeeV1SecurityIncident[] $securityIncidents
+         */
+        public function setSecurityIncidents($securityIncidents)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityIncident[]
+         */
+        public function getSecurityIncidents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1SecurityIncident[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchUpdateSecurityIncidentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityIncidents()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchUpdateSecurityIncidentsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchUpdateSecurityIncidentsResponse
     {
     }
 }

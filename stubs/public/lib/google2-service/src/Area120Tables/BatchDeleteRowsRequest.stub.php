@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class BatchDeleteRowsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Required. The names of the rows to delete. All rows must belong to the
-     * parent table or else the entire batch will fail. A maximum of 500 rows can
-     * be deleted in a batch. Format: tables/{table}/rows/{row}
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Required. The names of the rows to delete. All rows must belong to the
-     * parent table or else the entire batch will fail. A maximum of 500 rows can
-     * be deleted in a batch. Format: tables/{table}/rows/{row}
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Area120Tables {
+    class BatchDeleteRowsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Required. The names of the rows to delete. All rows must belong to the
+         * parent table or else the entire batch will fail. A maximum of 500 rows can
+         * be deleted in a batch. Format: tables/{table}/rows/{row}
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Required. The names of the rows to delete. All rows must belong to the
+         * parent table or else the entire batch will fail. A maximum of 500 rows can
+         * be deleted in a batch. Format: tables/{table}/rows/{row}
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Area120Tables\BatchDeleteRowsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Area120Tables_BatchDeleteRowsRequest extends \Google\Service\Area120Tables\BatchDeleteRowsRequest
     {
     }
 }

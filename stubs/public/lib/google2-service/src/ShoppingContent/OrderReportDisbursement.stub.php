@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderReportDisbursement extends \Google\Model
-{
-    protected $disbursementAmountType = Price::class;
-    protected $disbursementAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $disbursementCreationDate;
-    /**
-     * @var string
-     */
-    public $disbursementDate;
-    /**
-     * @var string
-     */
-    public $disbursementId;
-    /**
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * @param Price
-     */
-    public function setDisbursementAmount(Price $disbursementAmount)
+namespace Google\Service\ShoppingContent {
+    class OrderReportDisbursement extends \Google\Model
     {
+        protected $disbursementAmountType = Price::class;
+        protected $disbursementAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $disbursementCreationDate;
+        /**
+         * @var string
+         */
+        public $disbursementDate;
+        /**
+         * @var string
+         */
+        public $disbursementId;
+        /**
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * @param Price
+         */
+        public function setDisbursementAmount(Price $disbursementAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getDisbursementAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisbursementCreationDate($disbursementCreationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisbursementCreationDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisbursementDate($disbursementDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisbursementDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisbursementId($disbursementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisbursementId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderReportDisbursement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisbursementAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisbursementCreationDate($disbursementCreationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisbursementCreationDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisbursementDate($disbursementDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisbursementDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisbursementId($disbursementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisbursementId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
+    class Google_Service_ShoppingContent_OrderReportDisbursement extends \Google\Service\ShoppingContent\OrderReportDisbursement
     {
     }
 }

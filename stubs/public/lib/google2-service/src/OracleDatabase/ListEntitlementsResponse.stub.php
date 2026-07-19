@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListEntitlementsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entitlements';
-    protected $entitlementsType = Entitlement::class;
-    protected $entitlementsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Entitlements
-     *
-     * @param Entitlement[] $entitlements
-     */
-    public function setEntitlements($entitlements)
+namespace Google\Service\OracleDatabase {
+    class ListEntitlementsResponse extends \Google\Collection
     {
+        protected $collection_key = 'entitlements';
+        protected $entitlementsType = Entitlement::class;
+        protected $entitlementsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Entitlements
+         *
+         * @param Entitlement[] $entitlements
+         */
+        public function setEntitlements($entitlements)
+        {
+        }
+        /**
+         * @return Entitlement[]
+         */
+        public function getEntitlements()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entitlement[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListEntitlementsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlements()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListEntitlementsResponse extends \Google\Service\OracleDatabase\ListEntitlementsResponse
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListEntitiesWithACLsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entitiesWithAcl';
-    protected $entitiesWithAclType = EntityWithACL::class;
-    protected $entitiesWithAclDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param EntityWithACL[]
-     */
-    public function setEntitiesWithAcl($entitiesWithAcl)
+namespace Google\Service\Connectors {
+    class ListEntitiesWithACLsResponse extends \Google\Collection
     {
+        protected $collection_key = 'entitiesWithAcl';
+        protected $entitiesWithAclType = EntityWithACL::class;
+        protected $entitiesWithAclDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param EntityWithACL[]
+         */
+        public function setEntitiesWithAcl($entitiesWithAcl)
+        {
+        }
+        /**
+         * @return EntityWithACL[]
+         */
+        public function getEntitiesWithAcl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EntityWithACL[]
+     * Runtime class alias of \Google\Service\Connectors\ListEntitiesWithACLsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitiesWithAcl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Connectors_ListEntitiesWithACLsResponse extends \Google\Service\Connectors\ListEntitiesWithACLsResponse
     {
     }
 }

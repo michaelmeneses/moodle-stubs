@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DynamicFeedsInsertRequest extends \Google\Model
-{
-    protected $dynamicFeedType = DynamicFeed::class;
-    protected $dynamicFeedDataType = '';
-    /**
-     * Required. Dynamic profile ID of the inserted dynamic feed.
-     *
-     * @var string
-     */
-    public $dynamicProfileId;
-    /**
-     * Required. Dynamic feed to insert.
-     *
-     * @param DynamicFeed $dynamicFeed
-     */
-    public function setDynamicFeed(DynamicFeed $dynamicFeed)
+namespace Google\Service\Dfareporting {
+    class DynamicFeedsInsertRequest extends \Google\Model
     {
+        protected $dynamicFeedType = DynamicFeed::class;
+        protected $dynamicFeedDataType = '';
+        /**
+         * Required. Dynamic profile ID of the inserted dynamic feed.
+         *
+         * @var string
+         */
+        public $dynamicProfileId;
+        /**
+         * Required. Dynamic feed to insert.
+         *
+         * @param DynamicFeed $dynamicFeed
+         */
+        public function setDynamicFeed(DynamicFeed $dynamicFeed)
+        {
+        }
+        /**
+         * @return DynamicFeed
+         */
+        public function getDynamicFeed()
+        {
+        }
+        /**
+         * Required. Dynamic profile ID of the inserted dynamic feed.
+         *
+         * @param string $dynamicProfileId
+         */
+        public function setDynamicProfileId($dynamicProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDynamicProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicFeed
+     * Runtime class alias of \Google\Service\Dfareporting\DynamicFeedsInsertRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicFeed()
-    {
-    }
-    /**
-     * Required. Dynamic profile ID of the inserted dynamic feed.
-     *
-     * @param string $dynamicProfileId
-     */
-    public function setDynamicProfileId($dynamicProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDynamicProfileId()
+    class Google_Service_Dfareporting_DynamicFeedsInsertRequest extends \Google\Service\Dfareporting\DynamicFeedsInsertRequest
     {
     }
 }

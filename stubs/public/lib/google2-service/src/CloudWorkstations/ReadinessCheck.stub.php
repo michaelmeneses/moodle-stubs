@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class ReadinessCheck extends \Google\Model
-{
-    /**
-     * Optional. Path to which the request should be sent.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. Port to which the request should be sent.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional. Path to which the request should be sent.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudWorkstations {
+    class ReadinessCheck extends \Google\Model
     {
+        /**
+         * Optional. Path to which the request should be sent.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. Port to which the request should be sent.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional. Path to which the request should be sent.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Optional. Port to which the request should be sent.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\ReadinessCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Optional. Port to which the request should be sent.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_CloudWorkstations_ReadinessCheck extends \Google\Service\CloudWorkstations\ReadinessCheck
     {
     }
 }

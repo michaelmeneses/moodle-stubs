@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "organizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $organizations = $securitycenterService->organizations;
- *  </code>
- */
-class Organizations extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    use Google\Service\SecurityCommandCenter\OrganizationSettings;
     /**
-     * Gets the settings for an organization.
-     * (organizations.getOrganizationSettings)
-     *
-     * @param string $name Required. Name of the organization to get organization
-     * settings for. Its format is
-     * `organizations/[organization_id]/organizationSettings`.
-     * @param array $optParams Optional parameters.
-     * @return OrganizationSettings
-     * @throws \Google\Service\Exception
+     * The "organizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $organizations = $securitycenterService->organizations;
+     *  </code>
      */
-    public function getOrganizationSettings($name, $optParams = [])
+    class Organizations extends \Google\Service\Resource
     {
+        /**
+         * Gets the settings for an organization.
+         * (organizations.getOrganizationSettings)
+         *
+         * @param string $name Required. Name of the organization to get organization
+         * settings for. Its format is
+         * `organizations/[organization_id]/organizationSettings`.
+         * @param array $optParams Optional parameters.
+         * @return OrganizationSettings
+         * @throws \Google\Service\Exception
+         */
+        public function getOrganizationSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates an organization's settings.
+         * (organizations.updateOrganizationSettings)
+         *
+         * @param string $name The relative resource name of the settings. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example: "organizations/{organization_id}/organizationSettings".
+         * @param OrganizationSettings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The FieldMask to use when updating the settings
+         * resource. If empty all mutable fields will be updated.
+         * @return OrganizationSettings
+         * @throws \Google\Service\Exception
+         */
+        public function updateOrganizationSettings($name, OrganizationSettings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates an organization's settings.
-     * (organizations.updateOrganizationSettings)
-     *
-     * @param string $name The relative resource name of the settings. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example: "organizations/{organization_id}/organizationSettings".
-     * @param OrganizationSettings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The FieldMask to use when updating the settings
-     * resource. If empty all mutable fields will be updated.
-     * @return OrganizationSettings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\Organizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateOrganizationSettings($name, OrganizationSettings $postBody, $optParams = [])
+    class Google_Service_SecurityCommandCenter_Resource_Organizations extends \Google\Service\SecurityCommandCenter\Resource\Organizations
     {
     }
 }

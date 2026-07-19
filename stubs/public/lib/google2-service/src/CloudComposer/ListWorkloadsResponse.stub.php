@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ListWorkloadsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workloads';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workloadsType = ComposerWorkload::class;
-    protected $workloadsDataType = 'array';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudComposer {
+    class ListWorkloadsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workloads';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workloadsType = ComposerWorkload::class;
+        protected $workloadsDataType = 'array';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of environment workloads.
+         *
+         * @param ComposerWorkload[] $workloads
+         */
+        public function setWorkloads($workloads)
+        {
+        }
+        /**
+         * @return ComposerWorkload[]
+         */
+        public function getWorkloads()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\ListWorkloadsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of environment workloads.
-     *
-     * @param ComposerWorkload[] $workloads
-     */
-    public function setWorkloads($workloads)
-    {
-    }
-    /**
-     * @return ComposerWorkload[]
-     */
-    public function getWorkloads()
+    class Google_Service_CloudComposer_ListWorkloadsResponse extends \Google\Service\CloudComposer\ListWorkloadsResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDocumentationResultQuery extends \Google\Model
-{
-    /**
-     * Output only. The description for the query.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. The SQL query string which can be executed.
-     *
-     * @var string
-     */
-    public $sql;
-    /**
-     * Output only. The description for the query.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDocumentationResultQuery extends \Google\Model
     {
+        /**
+         * Output only. The description for the query.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. The SQL query string which can be executed.
+         *
+         * @var string
+         */
+        public $sql;
+        /**
+         * Output only. The description for the query.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The SQL query string which can be executed.
+         *
+         * @param string $sql
+         */
+        public function setSql($sql)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSql()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The SQL query string which can be executed.
-     *
-     * @param string $sql
-     */
-    public function setSql($sql)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSql()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDocumentationResultQuery extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultQuery
     {
     }
 }

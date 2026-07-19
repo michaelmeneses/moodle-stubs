@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1ConnectionStatus extends \Google\Model
-{
-    /**
-     * Connection does not have a state yet.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Connection is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Connection is running and ready for requests.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Connection is stopped.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    /**
-     * Connection is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Connection is being updated.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * Connection is not running due to an error.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Connection is not running because the authorization configuration is not
-     * complete.
-     */
-    public const STATE_AUTHORIZATION_REQUIRED = 'AUTHORIZATION_REQUIRED';
-    /**
-     * Description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * State.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Status provides detailed information for the state.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1ConnectionStatus extends \Google\Model
     {
+        /**
+         * Connection does not have a state yet.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Connection is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Connection is running and ready for requests.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Connection is stopped.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        /**
+         * Connection is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Connection is being updated.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * Connection is not running due to an error.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Connection is not running because the authorization configuration is not
+         * complete.
+         */
+        public const STATE_AUTHORIZATION_REQUIRED = 'AUTHORIZATION_REQUIRED';
+        /**
+         * Description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * State.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Status provides detailed information for the state.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * State.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, INACTIVE, DELETING,
+         * UPDATING, ERROR, AUTHORIZATION_REQUIRED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Status provides detailed information for the state.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1ConnectionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * State.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, INACTIVE, DELETING,
-     * UPDATING, ERROR, AUTHORIZATION_REQUIRED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Status provides detailed information for the state.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1ConnectionStatus extends \Google\Service\Integrations\GoogleCloudConnectorsV1ConnectionStatus
     {
     }
 }

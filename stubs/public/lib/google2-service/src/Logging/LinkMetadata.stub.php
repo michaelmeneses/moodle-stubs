@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LinkMetadata extends \Google\Model
-{
-    /**
-     * Should not be used.
-     */
-    public const STATE_OPERATION_STATE_UNSPECIFIED = 'OPERATION_STATE_UNSPECIFIED';
-    /**
-     * The operation is scheduled.
-     */
-    public const STATE_OPERATION_STATE_SCHEDULED = 'OPERATION_STATE_SCHEDULED';
-    /**
-     * Waiting for necessary permissions.
-     */
-    public const STATE_OPERATION_STATE_WAITING_FOR_PERMISSIONS = 'OPERATION_STATE_WAITING_FOR_PERMISSIONS';
-    /**
-     * The operation is running.
-     */
-    public const STATE_OPERATION_STATE_RUNNING = 'OPERATION_STATE_RUNNING';
-    /**
-     * The operation was completed successfully.
-     */
-    public const STATE_OPERATION_STATE_SUCCEEDED = 'OPERATION_STATE_SUCCEEDED';
-    /**
-     * The operation failed.
-     */
-    public const STATE_OPERATION_STATE_FAILED = 'OPERATION_STATE_FAILED';
-    /**
-     * The operation was cancelled by the user.
-     */
-    public const STATE_OPERATION_STATE_CANCELLED = 'OPERATION_STATE_CANCELLED';
-    /**
-     * The operation is waiting for quota.
-     */
-    public const STATE_OPERATION_STATE_PENDING = 'OPERATION_STATE_PENDING';
-    protected $createLinkRequestType = CreateLinkRequest::class;
-    protected $createLinkRequestDataType = '';
-    protected $deleteLinkRequestType = DeleteLinkRequest::class;
-    protected $deleteLinkRequestDataType = '';
-    /**
-     * The end time of an operation.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The start time of an operation.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. State of an operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * CreateLink RPC request.
-     *
-     * @param CreateLinkRequest $createLinkRequest
-     */
-    public function setCreateLinkRequest(CreateLinkRequest $createLinkRequest)
+namespace Google\Service\Logging {
+    class LinkMetadata extends \Google\Model
     {
+        /**
+         * Should not be used.
+         */
+        public const STATE_OPERATION_STATE_UNSPECIFIED = 'OPERATION_STATE_UNSPECIFIED';
+        /**
+         * The operation is scheduled.
+         */
+        public const STATE_OPERATION_STATE_SCHEDULED = 'OPERATION_STATE_SCHEDULED';
+        /**
+         * Waiting for necessary permissions.
+         */
+        public const STATE_OPERATION_STATE_WAITING_FOR_PERMISSIONS = 'OPERATION_STATE_WAITING_FOR_PERMISSIONS';
+        /**
+         * The operation is running.
+         */
+        public const STATE_OPERATION_STATE_RUNNING = 'OPERATION_STATE_RUNNING';
+        /**
+         * The operation was completed successfully.
+         */
+        public const STATE_OPERATION_STATE_SUCCEEDED = 'OPERATION_STATE_SUCCEEDED';
+        /**
+         * The operation failed.
+         */
+        public const STATE_OPERATION_STATE_FAILED = 'OPERATION_STATE_FAILED';
+        /**
+         * The operation was cancelled by the user.
+         */
+        public const STATE_OPERATION_STATE_CANCELLED = 'OPERATION_STATE_CANCELLED';
+        /**
+         * The operation is waiting for quota.
+         */
+        public const STATE_OPERATION_STATE_PENDING = 'OPERATION_STATE_PENDING';
+        protected $createLinkRequestType = CreateLinkRequest::class;
+        protected $createLinkRequestDataType = '';
+        protected $deleteLinkRequestType = DeleteLinkRequest::class;
+        protected $deleteLinkRequestDataType = '';
+        /**
+         * The end time of an operation.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The start time of an operation.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. State of an operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * CreateLink RPC request.
+         *
+         * @param CreateLinkRequest $createLinkRequest
+         */
+        public function setCreateLinkRequest(CreateLinkRequest $createLinkRequest)
+        {
+        }
+        /**
+         * @return CreateLinkRequest
+         */
+        public function getCreateLinkRequest()
+        {
+        }
+        /**
+         * DeleteLink RPC request.
+         *
+         * @param DeleteLinkRequest $deleteLinkRequest
+         */
+        public function setDeleteLinkRequest(DeleteLinkRequest $deleteLinkRequest)
+        {
+        }
+        /**
+         * @return DeleteLinkRequest
+         */
+        public function getDeleteLinkRequest()
+        {
+        }
+        /**
+         * The end time of an operation.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The start time of an operation.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. State of an operation.
+         *
+         * Accepted values: OPERATION_STATE_UNSPECIFIED, OPERATION_STATE_SCHEDULED,
+         * OPERATION_STATE_WAITING_FOR_PERMISSIONS, OPERATION_STATE_RUNNING,
+         * OPERATION_STATE_SUCCEEDED, OPERATION_STATE_FAILED,
+         * OPERATION_STATE_CANCELLED, OPERATION_STATE_PENDING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateLinkRequest
+     * Runtime class alias of \Google\Service\Logging\LinkMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateLinkRequest()
-    {
-    }
-    /**
-     * DeleteLink RPC request.
-     *
-     * @param DeleteLinkRequest $deleteLinkRequest
-     */
-    public function setDeleteLinkRequest(DeleteLinkRequest $deleteLinkRequest)
-    {
-    }
-    /**
-     * @return DeleteLinkRequest
-     */
-    public function getDeleteLinkRequest()
-    {
-    }
-    /**
-     * The end time of an operation.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The start time of an operation.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. State of an operation.
-     *
-     * Accepted values: OPERATION_STATE_UNSPECIFIED, OPERATION_STATE_SCHEDULED,
-     * OPERATION_STATE_WAITING_FOR_PERMISSIONS, OPERATION_STATE_RUNNING,
-     * OPERATION_STATE_SUCCEEDED, OPERATION_STATE_FAILED,
-     * OPERATION_STATE_CANCELLED, OPERATION_STATE_PENDING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Logging_LinkMetadata extends \Google\Service\Logging\LinkMetadata
     {
     }
 }

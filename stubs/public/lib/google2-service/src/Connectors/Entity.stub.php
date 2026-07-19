@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Entity extends \Google\Model
-{
-    /**
-     * Fields of the entity. The key is name of the field and the value contains
-     * the applicable `google.protobuf.Value` entry for this field.
-     *
-     * @var array[]
-     */
-    public $fields;
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Output only. Resource name of the Entity. Format: projects/{project}/locati
-     * ons/{location}/connections/{connection}/entityTypes/{type}/entities/{id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Fields of the entity. The key is name of the field and the value contains
-     * the applicable `google.protobuf.Value` entry for this field.
-     *
-     * @param array[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Connectors {
+    class Entity extends \Google\Model
     {
+        /**
+         * Fields of the entity. The key is name of the field and the value contains
+         * the applicable `google.protobuf.Value` entry for this field.
+         *
+         * @var array[]
+         */
+        public $fields;
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Output only. Resource name of the Entity. Format: projects/{project}/locati
+         * ons/{location}/connections/{connection}/entityTypes/{type}/entities/{id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Fields of the entity. The key is name of the field and the value contains
+         * the applicable `google.protobuf.Value` entry for this field.
+         *
+         * @param array[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. Resource name of the Entity. Format: projects/{project}/locati
+         * ons/{location}/connections/{connection}/entityTypes/{type}/entities/{id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. Resource name of the Entity. Format: projects/{project}/locati
-     * ons/{location}/connections/{connection}/entityTypes/{type}/entities/{id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Connectors_Entity extends \Google\Service\Connectors\Entity
     {
     }
 }

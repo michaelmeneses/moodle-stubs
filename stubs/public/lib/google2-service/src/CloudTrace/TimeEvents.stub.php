@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class TimeEvents extends \Google\Collection
-{
-    protected $collection_key = 'timeEvent';
-    /**
-     * The number of dropped annotations in all the included time events. If the
-     * value is 0, then no annotations were dropped.
-     *
-     * @var int
-     */
-    public $droppedAnnotationsCount;
-    /**
-     * The number of dropped message events in all the included time events. If
-     * the value is 0, then no message events were dropped.
-     *
-     * @var int
-     */
-    public $droppedMessageEventsCount;
-    protected $timeEventType = TimeEvent::class;
-    protected $timeEventDataType = 'array';
-    /**
-     * The number of dropped annotations in all the included time events. If the
-     * value is 0, then no annotations were dropped.
-     *
-     * @param int $droppedAnnotationsCount
-     */
-    public function setDroppedAnnotationsCount($droppedAnnotationsCount)
+namespace Google\Service\CloudTrace {
+    class TimeEvents extends \Google\Collection
     {
+        protected $collection_key = 'timeEvent';
+        /**
+         * The number of dropped annotations in all the included time events. If the
+         * value is 0, then no annotations were dropped.
+         *
+         * @var int
+         */
+        public $droppedAnnotationsCount;
+        /**
+         * The number of dropped message events in all the included time events. If
+         * the value is 0, then no message events were dropped.
+         *
+         * @var int
+         */
+        public $droppedMessageEventsCount;
+        protected $timeEventType = TimeEvent::class;
+        protected $timeEventDataType = 'array';
+        /**
+         * The number of dropped annotations in all the included time events. If the
+         * value is 0, then no annotations were dropped.
+         *
+         * @param int $droppedAnnotationsCount
+         */
+        public function setDroppedAnnotationsCount($droppedAnnotationsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDroppedAnnotationsCount()
+        {
+        }
+        /**
+         * The number of dropped message events in all the included time events. If
+         * the value is 0, then no message events were dropped.
+         *
+         * @param int $droppedMessageEventsCount
+         */
+        public function setDroppedMessageEventsCount($droppedMessageEventsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDroppedMessageEventsCount()
+        {
+        }
+        /**
+         * A collection of `TimeEvent`s.
+         *
+         * @param TimeEvent[] $timeEvent
+         */
+        public function setTimeEvent($timeEvent)
+        {
+        }
+        /**
+         * @return TimeEvent[]
+         */
+        public function getTimeEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudTrace\TimeEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDroppedAnnotationsCount()
-    {
-    }
-    /**
-     * The number of dropped message events in all the included time events. If
-     * the value is 0, then no message events were dropped.
-     *
-     * @param int $droppedMessageEventsCount
-     */
-    public function setDroppedMessageEventsCount($droppedMessageEventsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDroppedMessageEventsCount()
-    {
-    }
-    /**
-     * A collection of `TimeEvent`s.
-     *
-     * @param TimeEvent[] $timeEvent
-     */
-    public function setTimeEvent($timeEvent)
-    {
-    }
-    /**
-     * @return TimeEvent[]
-     */
-    public function getTimeEvent()
+    class Google_Service_CloudTrace_TimeEvents extends \Google\Service\CloudTrace\TimeEvents
     {
     }
 }

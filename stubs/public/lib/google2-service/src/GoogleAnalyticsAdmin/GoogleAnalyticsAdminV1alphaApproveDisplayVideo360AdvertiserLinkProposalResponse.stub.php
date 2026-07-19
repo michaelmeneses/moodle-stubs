@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaApproveDisplayVideo360AdvertiserLinkProposalResponse extends \Google\Model
-{
-    protected $displayVideo360AdvertiserLinkType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink::class;
-    protected $displayVideo360AdvertiserLinkDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
-     */
-    public function setDisplayVideo360AdvertiserLink(GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink $displayVideo360AdvertiserLink)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaApproveDisplayVideo360AdvertiserLinkProposalResponse extends \Google\Model
     {
+        protected $displayVideo360AdvertiserLinkType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink::class;
+        protected $displayVideo360AdvertiserLinkDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
+         */
+        public function setDisplayVideo360AdvertiserLink(GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink $displayVideo360AdvertiserLink)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
+         */
+        public function getDisplayVideo360AdvertiserLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaApproveDisplayVideo360AdvertiserLinkProposalResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayVideo360AdvertiserLink()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaApproveDisplayVideo360AdvertiserLinkProposalResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaApproveDisplayVideo360AdvertiserLinkProposalResponse
     {
     }
 }

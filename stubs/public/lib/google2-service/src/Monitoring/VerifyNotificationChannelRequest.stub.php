@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class VerifyNotificationChannelRequest extends \Google\Model
-{
-    /**
-     * Required. The verification code that was delivered to the channel as a
-     * result of invoking the SendNotificationChannelVerificationCode API method
-     * or that was retrieved from a verified channel via
-     * GetNotificationChannelVerificationCode. For example, one might have
-     * "G-123456" or "TKNZGhhd2EyN3I1MnRnMjRv" (in general, one is only guaranteed
-     * that the code is valid UTF-8; one should not make any assumptions regarding
-     * the structure or format of the code).
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Required. The verification code that was delivered to the channel as a
-     * result of invoking the SendNotificationChannelVerificationCode API method
-     * or that was retrieved from a verified channel via
-     * GetNotificationChannelVerificationCode. For example, one might have
-     * "G-123456" or "TKNZGhhd2EyN3I1MnRnMjRv" (in general, one is only guaranteed
-     * that the code is valid UTF-8; one should not make any assumptions regarding
-     * the structure or format of the code).
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Monitoring {
+    class VerifyNotificationChannelRequest extends \Google\Model
     {
+        /**
+         * Required. The verification code that was delivered to the channel as a
+         * result of invoking the SendNotificationChannelVerificationCode API method
+         * or that was retrieved from a verified channel via
+         * GetNotificationChannelVerificationCode. For example, one might have
+         * "G-123456" or "TKNZGhhd2EyN3I1MnRnMjRv" (in general, one is only guaranteed
+         * that the code is valid UTF-8; one should not make any assumptions regarding
+         * the structure or format of the code).
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Required. The verification code that was delivered to the channel as a
+         * result of invoking the SendNotificationChannelVerificationCode API method
+         * or that was retrieved from a verified channel via
+         * GetNotificationChannelVerificationCode. For example, one might have
+         * "G-123456" or "TKNZGhhd2EyN3I1MnRnMjRv" (in general, one is only guaranteed
+         * that the code is valid UTF-8; one should not make any assumptions regarding
+         * the structure or format of the code).
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\VerifyNotificationChannelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_Monitoring_VerifyNotificationChannelRequest extends \Google\Service\Monitoring\VerifyNotificationChannelRequest
     {
     }
 }

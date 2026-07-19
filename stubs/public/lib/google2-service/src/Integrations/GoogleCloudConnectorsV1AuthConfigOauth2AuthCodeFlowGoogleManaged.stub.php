@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlowGoogleManaged extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Optional. Authorization code to be exchanged for access and refresh tokens.
-     *
-     * @var string
-     */
-    public $authCode;
-    /**
-     * Optional. Redirect URI to be provided during the auth code exchange.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * Required. Scopes the connection will request when the user performs the
-     * auth code flow.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Optional. Authorization code to be exchanged for access and refresh tokens.
-     *
-     * @param string $authCode
-     */
-    public function setAuthCode($authCode)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlowGoogleManaged extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Optional. Authorization code to be exchanged for access and refresh tokens.
+         *
+         * @var string
+         */
+        public $authCode;
+        /**
+         * Optional. Redirect URI to be provided during the auth code exchange.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * Required. Scopes the connection will request when the user performs the
+         * auth code flow.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Optional. Authorization code to be exchanged for access and refresh tokens.
+         *
+         * @param string $authCode
+         */
+        public function setAuthCode($authCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthCode()
+        {
+        }
+        /**
+         * Optional. Redirect URI to be provided during the auth code exchange.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
+        /**
+         * Required. Scopes the connection will request when the user performs the
+         * auth code flow.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlowGoogleManaged registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthCode()
-    {
-    }
-    /**
-     * Optional. Redirect URI to be provided during the auth code exchange.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
-    {
-    }
-    /**
-     * Required. Scopes the connection will request when the user performs the
-     * auth code flow.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlowGoogleManaged extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlowGoogleManaged
     {
     }
 }

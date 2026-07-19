@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ExecAction extends \Google\Collection
-{
-    protected $collection_key = 'command';
-    /**
-     * Optional. Command is the command line to execute inside the container, the
-     * working directory for the command is root ('/') in the container's
-     * filesystem. The command is simply exec'd, it is not run inside a shell, so
-     * traditional shell instructions ('|', etc) won't work. To use a shell, you
-     * need to explicitly call out to that shell. Exit status of 0 is treated as
-     * live/healthy and non-zero is unhealthy. +optional
-     *
-     * @var string[]
-     */
-    public $command;
-    /**
-     * Optional. Command is the command line to execute inside the container, the
-     * working directory for the command is root ('/') in the container's
-     * filesystem. The command is simply exec'd, it is not run inside a shell, so
-     * traditional shell instructions ('|', etc) won't work. To use a shell, you
-     * need to explicitly call out to that shell. Exit status of 0 is treated as
-     * live/healthy and non-zero is unhealthy. +optional
-     *
-     * @param string[] $command
-     */
-    public function setCommand($command)
+namespace Google\Service\CloudBuild {
+    class ExecAction extends \Google\Collection
     {
+        protected $collection_key = 'command';
+        /**
+         * Optional. Command is the command line to execute inside the container, the
+         * working directory for the command is root ('/') in the container's
+         * filesystem. The command is simply exec'd, it is not run inside a shell, so
+         * traditional shell instructions ('|', etc) won't work. To use a shell, you
+         * need to explicitly call out to that shell. Exit status of 0 is treated as
+         * live/healthy and non-zero is unhealthy. +optional
+         *
+         * @var string[]
+         */
+        public $command;
+        /**
+         * Optional. Command is the command line to execute inside the container, the
+         * working directory for the command is root ('/') in the container's
+         * filesystem. The command is simply exec'd, it is not run inside a shell, so
+         * traditional shell instructions ('|', etc) won't work. To use a shell, you
+         * need to explicitly call out to that shell. Exit status of 0 is treated as
+         * live/healthy and non-zero is unhealthy. +optional
+         *
+         * @param string[] $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommand()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\ExecAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
+    class Google_Service_CloudBuild_ExecAction extends \Google\Service\CloudBuild\ExecAction
     {
     }
 }

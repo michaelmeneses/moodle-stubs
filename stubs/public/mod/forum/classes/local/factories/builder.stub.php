@@ -29,6 +29,14 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\local\builders\exported_posts as exported_posts_builder;
+use mod_forum\local\builders\exported_discussion_summaries as exported_discussion_summaries_builder;
+use mod_forum\local\builders\exported_discussion as exported_discussion_builder;
+use mod_forum\local\factories\vault as vault_factory;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use mod_forum\local\factories\exporter as exporter_factory;
+use mod_forum\local\factories\manager as manager_factory;
+use renderer_base;
 /**
  * Builder factory to construct any builders for forum.
  *

@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "certificates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $certificates = $integrationsService->projects_locations_products_certificates;
- *  </code>
- */
-class ProjectsLocationsProductsCertificates extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCertificate;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListCertificatesResponse;
+    use Google\Service\Integrations\GoogleProtobufEmpty;
     /**
-     * Creates a new certificate. The certificate will be registered to the trawler
-     * service and will be encrypted using cloud KMS and stored in Spanner Returns
-     * the certificate. (certificates.create)
-     *
-     * @param string $parent Required. "projects/{project}/locations/{location}"
-     * format.
-     * @param GoogleCloudIntegrationsV1alphaCertificate $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaCertificate
-     * @throws \Google\Service\Exception
+     * The "certificates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $certificates = $integrationsService->projects_locations_products_certificates;
+     *  </code>
      */
-    public function create($parent, GoogleCloudIntegrationsV1alphaCertificate $postBody, $optParams = [])
+    class ProjectsLocationsProductsCertificates extends \Google\Service\Resource
     {
+        /**
+         * Creates a new certificate. The certificate will be registered to the trawler
+         * service and will be encrypted using cloud KMS and stored in Spanner Returns
+         * the certificate. (certificates.create)
+         *
+         * @param string $parent Required. "projects/{project}/locations/{location}"
+         * format.
+         * @param GoogleCloudIntegrationsV1alphaCertificate $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudIntegrationsV1alphaCertificate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a certificate (certificates.delete)
+         *
+         * @param string $name Required. The name that is associated with the
+         * Certificate.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get a certificates in the specified project. (certificates.get)
+         *
+         * @param string $name Required. The certificate to retrieve. Format:
+         * projects/{project}/locations/{location}/certificates/{certificate}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List all the certificates that match the filter. Restrict to certificate of
+         * current client only. (certificates.listProjectsLocationsProductsCertificates)
+         *
+         * @param string $parent Required. The client, which owns this collection of
+         * Certificates.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filtering as supported in
+         * https://developers.google.com/authorized-buyers/apis/guides/list-filters.
+         * @opt_param int pageSize The size of entries in the response. If unspecified,
+         * defaults to 100.
+         * @opt_param string pageToken The token returned in the previous response.
+         * @opt_param string readMask The mask which specifies fields that need to be
+         * returned in the Certificate's response.
+         * @return GoogleCloudIntegrationsV1alphaListCertificatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsProductsCertificates($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the certificate by id. If new certificate file is updated, it will
+         * register with the trawler service, re-encrypt with cloud KMS and update the
+         * Spanner record. Other fields will directly update the Spanner record. Returns
+         * the Certificate. (certificates.patch)
+         *
+         * @param string $name Output only. Auto generated primary key
+         * @param GoogleCloudIntegrationsV1alphaCertificate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Field mask specifying the fields in the above
+         * Certificate that have been modified and need to be updated.
+         * @return GoogleCloudIntegrationsV1alphaCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudIntegrationsV1alphaCertificate $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a certificate (certificates.delete)
-     *
-     * @param string $name Required. The name that is associated with the
-     * Certificate.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsProductsCertificates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get a certificates in the specified project. (certificates.get)
-     *
-     * @param string $name Required. The certificate to retrieve. Format:
-     * projects/{project}/locations/{location}/certificates/{certificate}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaCertificate
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List all the certificates that match the filter. Restrict to certificate of
-     * current client only. (certificates.listProjectsLocationsProductsCertificates)
-     *
-     * @param string $parent Required. The client, which owns this collection of
-     * Certificates.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filtering as supported in
-     * https://developers.google.com/authorized-buyers/apis/guides/list-filters.
-     * @opt_param int pageSize The size of entries in the response. If unspecified,
-     * defaults to 100.
-     * @opt_param string pageToken The token returned in the previous response.
-     * @opt_param string readMask The mask which specifies fields that need to be
-     * returned in the Certificate's response.
-     * @return GoogleCloudIntegrationsV1alphaListCertificatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsProductsCertificates($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the certificate by id. If new certificate file is updated, it will
-     * register with the trawler service, re-encrypt with cloud KMS and update the
-     * Spanner record. Other fields will directly update the Spanner record. Returns
-     * the Certificate. (certificates.patch)
-     *
-     * @param string $name Output only. Auto generated primary key
-     * @param GoogleCloudIntegrationsV1alphaCertificate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Field mask specifying the fields in the above
-     * Certificate that have been modified and need to be updated.
-     * @return GoogleCloudIntegrationsV1alphaCertificate
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudIntegrationsV1alphaCertificate $postBody, $optParams = [])
+    class Google_Service_Integrations_Resource_ProjectsLocationsProductsCertificates extends \Google\Service\Integrations\Resource\ProjectsLocationsProductsCertificates
     {
     }
 }

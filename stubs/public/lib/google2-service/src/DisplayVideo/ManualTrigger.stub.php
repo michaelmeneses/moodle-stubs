@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ManualTrigger extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $activationDurationMinutes;
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $latestActivationTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * @param string
-     */
-    public function setActivationDurationMinutes($activationDurationMinutes)
+namespace Google\Service\DisplayVideo {
+    class ManualTrigger extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $activationDurationMinutes;
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $latestActivationTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * @param string
+         */
+        public function setActivationDurationMinutes($activationDurationMinutes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivationDurationMinutes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLatestActivationTime($latestActivationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestActivationTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ManualTrigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationDurationMinutes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLatestActivationTime($latestActivationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestActivationTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerId()
+    class Google_Service_DisplayVideo_ManualTrigger extends \Google\Service\DisplayVideo\ManualTrigger
     {
     }
 }

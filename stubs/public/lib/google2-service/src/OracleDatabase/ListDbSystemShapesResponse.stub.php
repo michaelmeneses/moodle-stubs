@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListDbSystemShapesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dbSystemShapes';
-    protected $dbSystemShapesType = DbSystemShape::class;
-    protected $dbSystemShapesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Database System shapes.
-     *
-     * @param DbSystemShape[] $dbSystemShapes
-     */
-    public function setDbSystemShapes($dbSystemShapes)
+namespace Google\Service\OracleDatabase {
+    class ListDbSystemShapesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dbSystemShapes';
+        protected $dbSystemShapesType = DbSystemShape::class;
+        protected $dbSystemShapesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Database System shapes.
+         *
+         * @param DbSystemShape[] $dbSystemShapes
+         */
+        public function setDbSystemShapes($dbSystemShapes)
+        {
+        }
+        /**
+         * @return DbSystemShape[]
+         */
+        public function getDbSystemShapes()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DbSystemShape[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListDbSystemShapesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbSystemShapes()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListDbSystemShapesResponse extends \Google\Service\OracleDatabase\ListDbSystemShapesResponse
     {
     }
 }

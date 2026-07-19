@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDeleteSelectionChoiceRequest extends \Google\Model
-{
-    /**
-     * Required. The selection field from which a choice will be deleted.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Required. Choice to delete.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. The selection field from which a choice will be deleted.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDeleteSelectionChoiceRequest extends \Google\Model
     {
+        /**
+         * Required. The selection field from which a choice will be deleted.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Required. Choice to delete.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. The selection field from which a choice will be deleted.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Required. Choice to delete.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDeleteSelectionChoiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Required. Choice to delete.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDeleteSelectionChoiceRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDeleteSelectionChoiceRequest
     {
     }
 }

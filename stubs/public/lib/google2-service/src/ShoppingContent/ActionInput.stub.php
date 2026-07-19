@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ActionInput extends \Google\Collection
-{
-    protected $collection_key = 'inputValues';
-    /**
-     * Required. Id of the selected action flow.
-     *
-     * @var string
-     */
-    public $actionFlowId;
-    protected $inputValuesType = InputValue::class;
-    protected $inputValuesDataType = 'array';
-    /**
-     * Required. Id of the selected action flow.
-     *
-     * @param string $actionFlowId
-     */
-    public function setActionFlowId($actionFlowId)
+namespace Google\Service\ShoppingContent {
+    class ActionInput extends \Google\Collection
     {
+        protected $collection_key = 'inputValues';
+        /**
+         * Required. Id of the selected action flow.
+         *
+         * @var string
+         */
+        public $actionFlowId;
+        protected $inputValuesType = InputValue::class;
+        protected $inputValuesDataType = 'array';
+        /**
+         * Required. Id of the selected action flow.
+         *
+         * @param string $actionFlowId
+         */
+        public function setActionFlowId($actionFlowId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionFlowId()
+        {
+        }
+        /**
+         * Required. Values for input fields.
+         *
+         * @param InputValue[] $inputValues
+         */
+        public function setInputValues($inputValues)
+        {
+        }
+        /**
+         * @return InputValue[]
+         */
+        public function getInputValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ActionInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionFlowId()
-    {
-    }
-    /**
-     * Required. Values for input fields.
-     *
-     * @param InputValue[] $inputValues
-     */
-    public function setInputValues($inputValues)
-    {
-    }
-    /**
-     * @return InputValue[]
-     */
-    public function getInputValues()
+    class Google_Service_ShoppingContent_ActionInput extends \Google\Service\ShoppingContent\ActionInput
     {
     }
 }

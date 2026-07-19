@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2CloneKeyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $keyId;
-    /**
-     * @param string
-     */
-    public function setKeyId($keyId)
+namespace Google\Service\ApiKeysService {
+    class V2CloneKeyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $keyId;
+        /**
+         * @param string
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApiKeysService\V2CloneKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyId()
+    class Google_Service_ApiKeysService_V2CloneKeyRequest extends \Google\Service\ApiKeysService\V2CloneKeyRequest
     {
     }
 }

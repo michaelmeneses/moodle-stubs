@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class UpdateConsumerConfigRequest extends \Google\Model
-{
-    protected $consumerConfigType = ConsumerConfig::class;
-    protected $consumerConfigDataType = '';
-    /**
-     * Required. The updated peering config.
-     *
-     * @param ConsumerConfig $consumerConfig
-     */
-    public function setConsumerConfig(ConsumerConfig $consumerConfig)
+namespace Google\Service\ServiceNetworking {
+    class UpdateConsumerConfigRequest extends \Google\Model
     {
+        protected $consumerConfigType = ConsumerConfig::class;
+        protected $consumerConfigDataType = '';
+        /**
+         * Required. The updated peering config.
+         *
+         * @param ConsumerConfig $consumerConfig
+         */
+        public function setConsumerConfig(ConsumerConfig $consumerConfig)
+        {
+        }
+        /**
+         * @return ConsumerConfig
+         */
+        public function getConsumerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsumerConfig
+     * Runtime class alias of \Google\Service\ServiceNetworking\UpdateConsumerConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerConfig()
+    class Google_Service_ServiceNetworking_UpdateConsumerConfigRequest extends \Google\Service\ServiceNetworking\UpdateConsumerConfigRequest
     {
     }
 }

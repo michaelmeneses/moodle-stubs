@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1MapValue extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleCloudDatapipelinesV1MapValueEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * @param GoogleCloudDatapipelinesV1MapValueEntry[]
-     */
-    public function setEntries($entries)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1MapValue extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleCloudDatapipelinesV1MapValueEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * @param GoogleCloudDatapipelinesV1MapValueEntry[]
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1MapValueEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1MapValueEntry[]
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1MapValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1MapValue extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1MapValue
     {
     }
 }

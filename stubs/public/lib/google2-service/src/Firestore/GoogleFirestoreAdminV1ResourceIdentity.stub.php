@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ResourceIdentity extends \Google\Model
-{
-    /**
-     * Output only. Principal identifier string. See:
-     * https://cloud.google.com/iam/docs/principal-identifiers
-     *
-     * @var string
-     */
-    public $principal;
-    /**
-     * Output only. Principal identifier string. See:
-     * https://cloud.google.com/iam/docs/principal-identifiers
-     *
-     * @param string $principal
-     */
-    public function setPrincipal($principal)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ResourceIdentity extends \Google\Model
     {
+        /**
+         * Output only. Principal identifier string. See:
+         * https://cloud.google.com/iam/docs/principal-identifiers
+         *
+         * @var string
+         */
+        public $principal;
+        /**
+         * Output only. Principal identifier string. See:
+         * https://cloud.google.com/iam/docs/principal-identifiers
+         *
+         * @param string $principal
+         */
+        public function setPrincipal($principal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ResourceIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrincipal()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ResourceIdentity extends \Google\Service\Firestore\GoogleFirestoreAdminV1ResourceIdentity
     {
     }
 }

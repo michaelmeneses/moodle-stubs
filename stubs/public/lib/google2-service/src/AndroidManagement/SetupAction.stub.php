@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class SetupAction extends \Google\Model
-{
-    protected $descriptionType = UserFacingMessage::class;
-    protected $descriptionDataType = '';
-    protected $launchAppType = LaunchAppAction::class;
-    protected $launchAppDataType = '';
-    protected $titleType = UserFacingMessage::class;
-    protected $titleDataType = '';
-    /**
-     * Description of this action.
-     *
-     * @param UserFacingMessage $description
-     */
-    public function setDescription(UserFacingMessage $description)
+namespace Google\Service\AndroidManagement {
+    class SetupAction extends \Google\Model
     {
+        protected $descriptionType = UserFacingMessage::class;
+        protected $descriptionDataType = '';
+        protected $launchAppType = LaunchAppAction::class;
+        protected $launchAppDataType = '';
+        protected $titleType = UserFacingMessage::class;
+        protected $titleDataType = '';
+        /**
+         * Description of this action.
+         *
+         * @param UserFacingMessage $description
+         */
+        public function setDescription(UserFacingMessage $description)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * An action to launch an app. The app will be launched with an intent
+         * containing an extra with key
+         * com.google.android.apps.work.clouddpc.EXTRA_LAUNCHED_AS_SETUP_ACTION set to
+         * the boolean value true to indicate that this is a setup action flow. If
+         * SetupAction references an app, the corresponding installType in the
+         * application policy must be set as REQUIRED_FOR_SETUP or said setup will
+         * fail.
+         *
+         * @param LaunchAppAction $launchApp
+         */
+        public function setLaunchApp(LaunchAppAction $launchApp)
+        {
+        }
+        /**
+         * @return LaunchAppAction
+         */
+        public function getLaunchApp()
+        {
+        }
+        /**
+         * Title of this action.
+         *
+         * @param UserFacingMessage $title
+         */
+        public function setTitle(UserFacingMessage $title)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserFacingMessage
+     * Runtime class alias of \Google\Service\AndroidManagement\SetupAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * An action to launch an app. The app will be launched with an intent
-     * containing an extra with key
-     * com.google.android.apps.work.clouddpc.EXTRA_LAUNCHED_AS_SETUP_ACTION set to
-     * the boolean value true to indicate that this is a setup action flow. If
-     * SetupAction references an app, the corresponding installType in the
-     * application policy must be set as REQUIRED_FOR_SETUP or said setup will
-     * fail.
-     *
-     * @param LaunchAppAction $launchApp
-     */
-    public function setLaunchApp(LaunchAppAction $launchApp)
-    {
-    }
-    /**
-     * @return LaunchAppAction
-     */
-    public function getLaunchApp()
-    {
-    }
-    /**
-     * Title of this action.
-     *
-     * @param UserFacingMessage $title
-     */
-    public function setTitle(UserFacingMessage $title)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getTitle()
+    class Google_Service_AndroidManagement_SetupAction extends \Google\Service\AndroidManagement\SetupAction
     {
     }
 }

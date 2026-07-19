@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Video extends \Google\Model
-{
-    protected $propertiesType = MediaProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Required. A YouTube URI.
-     *
-     * @var string
-     */
-    public $youtubeUri;
-    /**
-     * Properties of a video.
-     *
-     * @param MediaProperties $properties
-     */
-    public function setProperties(MediaProperties $properties)
+namespace Google\Service\Forms {
+    class Video extends \Google\Model
     {
+        protected $propertiesType = MediaProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Required. A YouTube URI.
+         *
+         * @var string
+         */
+        public $youtubeUri;
+        /**
+         * Properties of a video.
+         *
+         * @param MediaProperties $properties
+         */
+        public function setProperties(MediaProperties $properties)
+        {
+        }
+        /**
+         * @return MediaProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Required. A YouTube URI.
+         *
+         * @param string $youtubeUri
+         */
+        public function setYoutubeUri($youtubeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MediaProperties
+     * Runtime class alias of \Google\Service\Forms\Video registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
-    {
-    }
-    /**
-     * Required. A YouTube URI.
-     *
-     * @param string $youtubeUri
-     */
-    public function setYoutubeUri($youtubeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYoutubeUri()
+    class Google_Service_Forms_Video extends \Google\Service\Forms\Video
     {
     }
 }

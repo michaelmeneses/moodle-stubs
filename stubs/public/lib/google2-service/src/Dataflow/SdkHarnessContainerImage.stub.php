@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SdkHarnessContainerImage extends \Google\Collection
-{
-    protected $collection_key = 'capabilities';
-    /**
-     * The set of capabilities enumerated in the above Environment proto. See also
-     * [beam_runner_api.proto](https://github.com/apache/beam/blob/master/model/pi
-     * peline/src/main/proto/org/apache/beam/model/pipeline/v1/beam_runner_api.pro
-     * to)
-     *
-     * @var string[]
-     */
-    public $capabilities;
-    /**
-     * A docker container image that resides in Google Container Registry.
-     *
-     * @var string
-     */
-    public $containerImage;
-    /**
-     * Environment ID for the Beam runner API proto Environment that corresponds
-     * to the current SDK Harness.
-     *
-     * @var string
-     */
-    public $environmentId;
-    /**
-     * If true, recommends the Dataflow service to use only one core per SDK
-     * container instance with this image. If false (or unset) recommends using
-     * more than one core per SDK container instance with this image for
-     * efficiency. Note that Dataflow service may choose to override this property
-     * if needed.
-     *
-     * @var bool
-     */
-    public $useSingleCorePerContainer;
-    /**
-     * The set of capabilities enumerated in the above Environment proto. See also
-     * [beam_runner_api.proto](https://github.com/apache/beam/blob/master/model/pi
-     * peline/src/main/proto/org/apache/beam/model/pipeline/v1/beam_runner_api.pro
-     * to)
-     *
-     * @param string[] $capabilities
-     */
-    public function setCapabilities($capabilities)
+namespace Google\Service\Dataflow {
+    class SdkHarnessContainerImage extends \Google\Collection
     {
+        protected $collection_key = 'capabilities';
+        /**
+         * The set of capabilities enumerated in the above Environment proto. See also
+         * [beam_runner_api.proto](https://github.com/apache/beam/blob/master/model/pi
+         * peline/src/main/proto/org/apache/beam/model/pipeline/v1/beam_runner_api.pro
+         * to)
+         *
+         * @var string[]
+         */
+        public $capabilities;
+        /**
+         * A docker container image that resides in Google Container Registry.
+         *
+         * @var string
+         */
+        public $containerImage;
+        /**
+         * Environment ID for the Beam runner API proto Environment that corresponds
+         * to the current SDK Harness.
+         *
+         * @var string
+         */
+        public $environmentId;
+        /**
+         * If true, recommends the Dataflow service to use only one core per SDK
+         * container instance with this image. If false (or unset) recommends using
+         * more than one core per SDK container instance with this image for
+         * efficiency. Note that Dataflow service may choose to override this property
+         * if needed.
+         *
+         * @var bool
+         */
+        public $useSingleCorePerContainer;
+        /**
+         * The set of capabilities enumerated in the above Environment proto. See also
+         * [beam_runner_api.proto](https://github.com/apache/beam/blob/master/model/pi
+         * peline/src/main/proto/org/apache/beam/model/pipeline/v1/beam_runner_api.pro
+         * to)
+         *
+         * @param string[] $capabilities
+         */
+        public function setCapabilities($capabilities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCapabilities()
+        {
+        }
+        /**
+         * A docker container image that resides in Google Container Registry.
+         *
+         * @param string $containerImage
+         */
+        public function setContainerImage($containerImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerImage()
+        {
+        }
+        /**
+         * Environment ID for the Beam runner API proto Environment that corresponds
+         * to the current SDK Harness.
+         *
+         * @param string $environmentId
+         */
+        public function setEnvironmentId($environmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentId()
+        {
+        }
+        /**
+         * If true, recommends the Dataflow service to use only one core per SDK
+         * container instance with this image. If false (or unset) recommends using
+         * more than one core per SDK container instance with this image for
+         * efficiency. Note that Dataflow service may choose to override this property
+         * if needed.
+         *
+         * @param bool $useSingleCorePerContainer
+         */
+        public function setUseSingleCorePerContainer($useSingleCorePerContainer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseSingleCorePerContainer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\SdkHarnessContainerImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapabilities()
-    {
-    }
-    /**
-     * A docker container image that resides in Google Container Registry.
-     *
-     * @param string $containerImage
-     */
-    public function setContainerImage($containerImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerImage()
-    {
-    }
-    /**
-     * Environment ID for the Beam runner API proto Environment that corresponds
-     * to the current SDK Harness.
-     *
-     * @param string $environmentId
-     */
-    public function setEnvironmentId($environmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentId()
-    {
-    }
-    /**
-     * If true, recommends the Dataflow service to use only one core per SDK
-     * container instance with this image. If false (or unset) recommends using
-     * more than one core per SDK container instance with this image for
-     * efficiency. Note that Dataflow service may choose to override this property
-     * if needed.
-     *
-     * @param bool $useSingleCorePerContainer
-     */
-    public function setUseSingleCorePerContainer($useSingleCorePerContainer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseSingleCorePerContainer()
+    class Google_Service_Dataflow_SdkHarnessContainerImage extends \Google\Service\Dataflow\SdkHarnessContainerImage
     {
     }
 }

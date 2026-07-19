@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ExecutionResponse extends \Google\Model
-{
-    /**
-     * The return value of the script function. The type matches the object type
-     * returned in Apps Script. Functions called using the Apps Script API cannot
-     * return Apps Script-specific objects (such as a `Document` or a `Calendar`);
-     * they can only return primitive types such as a `string`, `number`, `array`,
-     * `object`, or `boolean`.
-     *
-     * @var array
-     */
-    public $result;
-    /**
-     * The return value of the script function. The type matches the object type
-     * returned in Apps Script. Functions called using the Apps Script API cannot
-     * return Apps Script-specific objects (such as a `Document` or a `Calendar`);
-     * they can only return primitive types such as a `string`, `number`, `array`,
-     * `object`, or `boolean`.
-     *
-     * @param array $result
-     */
-    public function setResult($result)
+namespace Google\Service\Script {
+    class ExecutionResponse extends \Google\Model
     {
+        /**
+         * The return value of the script function. The type matches the object type
+         * returned in Apps Script. Functions called using the Apps Script API cannot
+         * return Apps Script-specific objects (such as a `Document` or a `Calendar`);
+         * they can only return primitive types such as a `string`, `number`, `array`,
+         * `object`, or `boolean`.
+         *
+         * @var array
+         */
+        public $result;
+        /**
+         * The return value of the script function. The type matches the object type
+         * returned in Apps Script. Functions called using the Apps Script API cannot
+         * return Apps Script-specific objects (such as a `Document` or a `Calendar`);
+         * they can only return primitive types such as a `string`, `number`, `array`,
+         * `object`, or `boolean`.
+         *
+         * @param array $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\Script\ExecutionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Script_ExecutionResponse extends \Google\Service\Script\ExecutionResponse
     {
     }
 }

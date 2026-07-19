@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryHttpsLatencyChangeEvent extends \Google\Model
-{
-    /**
-     * HTTPS latency state is unspecified.
-     */
-    public const HTTPS_LATENCY_STATE_HTTPS_LATENCY_STATE_UNSPECIFIED = 'HTTPS_LATENCY_STATE_UNSPECIFIED';
-    /**
-     * HTTPS latency recovered from a problem.
-     */
-    public const HTTPS_LATENCY_STATE_RECOVERY = 'RECOVERY';
-    /**
-     * HTTPS latency problem.
-     */
-    public const HTTPS_LATENCY_STATE_PROBLEM = 'PROBLEM';
-    protected $httpsLatencyRoutineDataType = GoogleChromeManagementV1HttpsLatencyRoutineData::class;
-    protected $httpsLatencyRoutineDataDataType = '';
-    /**
-     * Current HTTPS latency state.
-     *
-     * @var string
-     */
-    public $httpsLatencyState;
-    /**
-     * HTTPS latency routine data that triggered the event.
-     *
-     * @param GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyRoutineData
-     */
-    public function setHttpsLatencyRoutineData(GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyRoutineData)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryHttpsLatencyChangeEvent extends \Google\Model
     {
+        /**
+         * HTTPS latency state is unspecified.
+         */
+        public const HTTPS_LATENCY_STATE_HTTPS_LATENCY_STATE_UNSPECIFIED = 'HTTPS_LATENCY_STATE_UNSPECIFIED';
+        /**
+         * HTTPS latency recovered from a problem.
+         */
+        public const HTTPS_LATENCY_STATE_RECOVERY = 'RECOVERY';
+        /**
+         * HTTPS latency problem.
+         */
+        public const HTTPS_LATENCY_STATE_PROBLEM = 'PROBLEM';
+        protected $httpsLatencyRoutineDataType = GoogleChromeManagementV1HttpsLatencyRoutineData::class;
+        protected $httpsLatencyRoutineDataDataType = '';
+        /**
+         * Current HTTPS latency state.
+         *
+         * @var string
+         */
+        public $httpsLatencyState;
+        /**
+         * HTTPS latency routine data that triggered the event.
+         *
+         * @param GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyRoutineData
+         */
+        public function setHttpsLatencyRoutineData(GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyRoutineData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1HttpsLatencyRoutineData
+         */
+        public function getHttpsLatencyRoutineData()
+        {
+        }
+        /**
+         * Current HTTPS latency state.
+         *
+         * Accepted values: HTTPS_LATENCY_STATE_UNSPECIFIED, RECOVERY, PROBLEM
+         *
+         * @param self::HTTPS_LATENCY_STATE_* $httpsLatencyState
+         */
+        public function setHttpsLatencyState($httpsLatencyState)
+        {
+        }
+        /**
+         * @return self::HTTPS_LATENCY_STATE_*
+         */
+        public function getHttpsLatencyState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1HttpsLatencyRoutineData
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryHttpsLatencyChangeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpsLatencyRoutineData()
-    {
-    }
-    /**
-     * Current HTTPS latency state.
-     *
-     * Accepted values: HTTPS_LATENCY_STATE_UNSPECIFIED, RECOVERY, PROBLEM
-     *
-     * @param self::HTTPS_LATENCY_STATE_* $httpsLatencyState
-     */
-    public function setHttpsLatencyState($httpsLatencyState)
-    {
-    }
-    /**
-     * @return self::HTTPS_LATENCY_STATE_*
-     */
-    public function getHttpsLatencyState()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryHttpsLatencyChangeEvent extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryHttpsLatencyChangeEvent
     {
     }
 }

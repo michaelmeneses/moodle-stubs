@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Common\Entity\Cell;
 
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Style\Style;
 final class StringCell extends Cell
 {
     private readonly string $value;

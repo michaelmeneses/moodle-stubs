@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1QueryMetricsMetadata extends \Google\Model
-{
-    /**
-     * Whether the result rows were truncated because the result row size is too
-     * large to materialize.
-     *
-     * @var bool
-     */
-    public $resultIsTruncated;
-    /**
-     * Whether the result rows were truncated because the result row size is too
-     * large to materialize.
-     *
-     * @param bool $resultIsTruncated
-     */
-    public function setResultIsTruncated($resultIsTruncated)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1QueryMetricsMetadata extends \Google\Model
     {
+        /**
+         * Whether the result rows were truncated because the result row size is too
+         * large to materialize.
+         *
+         * @var bool
+         */
+        public $resultIsTruncated;
+        /**
+         * Whether the result rows were truncated because the result row size is too
+         * large to materialize.
+         *
+         * @param bool $resultIsTruncated
+         */
+        public function setResultIsTruncated($resultIsTruncated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResultIsTruncated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1QueryMetricsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResultIsTruncated()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1QueryMetricsMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1QueryMetricsMetadata
     {
     }
 }

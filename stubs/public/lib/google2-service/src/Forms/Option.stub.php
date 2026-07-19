@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Option extends \Google\Model
-{
-    /**
-     * Default value. Unused.
-     */
-    public const GO_TO_ACTION_GO_TO_ACTION_UNSPECIFIED = 'GO_TO_ACTION_UNSPECIFIED';
-    /**
-     * Go to the next section.
-     */
-    public const GO_TO_ACTION_NEXT_SECTION = 'NEXT_SECTION';
-    /**
-     * Go back to the beginning of the form.
-     */
-    public const GO_TO_ACTION_RESTART_FORM = 'RESTART_FORM';
-    /**
-     * Submit form immediately.
-     */
-    public const GO_TO_ACTION_SUBMIT_FORM = 'SUBMIT_FORM';
-    /**
-     * Section navigation type.
-     *
-     * @var string
-     */
-    public $goToAction;
-    /**
-     * Item ID of section header to go to.
-     *
-     * @var string
-     */
-    public $goToSectionId;
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * Whether the option is "other". Currently only applies to `RADIO` and
-     * `CHECKBOX` choice types, but is not allowed in a QuestionGroupItem.
-     *
-     * @var bool
-     */
-    public $isOther;
-    /**
-     * Required. The choice as presented to the user.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Section navigation type.
-     *
-     * Accepted values: GO_TO_ACTION_UNSPECIFIED, NEXT_SECTION, RESTART_FORM,
-     * SUBMIT_FORM
-     *
-     * @param self::GO_TO_ACTION_* $goToAction
-     */
-    public function setGoToAction($goToAction)
+namespace Google\Service\Forms {
+    class Option extends \Google\Model
     {
+        /**
+         * Default value. Unused.
+         */
+        public const GO_TO_ACTION_GO_TO_ACTION_UNSPECIFIED = 'GO_TO_ACTION_UNSPECIFIED';
+        /**
+         * Go to the next section.
+         */
+        public const GO_TO_ACTION_NEXT_SECTION = 'NEXT_SECTION';
+        /**
+         * Go back to the beginning of the form.
+         */
+        public const GO_TO_ACTION_RESTART_FORM = 'RESTART_FORM';
+        /**
+         * Submit form immediately.
+         */
+        public const GO_TO_ACTION_SUBMIT_FORM = 'SUBMIT_FORM';
+        /**
+         * Section navigation type.
+         *
+         * @var string
+         */
+        public $goToAction;
+        /**
+         * Item ID of section header to go to.
+         *
+         * @var string
+         */
+        public $goToSectionId;
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * Whether the option is "other". Currently only applies to `RADIO` and
+         * `CHECKBOX` choice types, but is not allowed in a QuestionGroupItem.
+         *
+         * @var bool
+         */
+        public $isOther;
+        /**
+         * Required. The choice as presented to the user.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Section navigation type.
+         *
+         * Accepted values: GO_TO_ACTION_UNSPECIFIED, NEXT_SECTION, RESTART_FORM,
+         * SUBMIT_FORM
+         *
+         * @param self::GO_TO_ACTION_* $goToAction
+         */
+        public function setGoToAction($goToAction)
+        {
+        }
+        /**
+         * @return self::GO_TO_ACTION_*
+         */
+        public function getGoToAction()
+        {
+        }
+        /**
+         * Item ID of section header to go to.
+         *
+         * @param string $goToSectionId
+         */
+        public function setGoToSectionId($goToSectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoToSectionId()
+        {
+        }
+        /**
+         * Display image as an option.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Whether the option is "other". Currently only applies to `RADIO` and
+         * `CHECKBOX` choice types, but is not allowed in a QuestionGroupItem.
+         *
+         * @param bool $isOther
+         */
+        public function setIsOther($isOther)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsOther()
+        {
+        }
+        /**
+         * Required. The choice as presented to the user.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GO_TO_ACTION_*
+     * Runtime class alias of \Google\Service\Forms\Option registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoToAction()
-    {
-    }
-    /**
-     * Item ID of section header to go to.
-     *
-     * @param string $goToSectionId
-     */
-    public function setGoToSectionId($goToSectionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoToSectionId()
-    {
-    }
-    /**
-     * Display image as an option.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Whether the option is "other". Currently only applies to `RADIO` and
-     * `CHECKBOX` choice types, but is not allowed in a QuestionGroupItem.
-     *
-     * @param bool $isOther
-     */
-    public function setIsOther($isOther)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsOther()
-    {
-    }
-    /**
-     * Required. The choice as presented to the user.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Forms_Option extends \Google\Service\Forms\Option
     {
     }
 }

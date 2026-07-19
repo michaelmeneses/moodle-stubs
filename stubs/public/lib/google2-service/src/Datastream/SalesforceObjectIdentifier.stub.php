@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SalesforceObjectIdentifier extends \Google\Model
-{
-    /**
-     * Required. The object name.
-     *
-     * @var string
-     */
-    public $objectName;
-    /**
-     * Required. The object name.
-     *
-     * @param string $objectName
-     */
-    public function setObjectName($objectName)
+namespace Google\Service\Datastream {
+    class SalesforceObjectIdentifier extends \Google\Model
     {
+        /**
+         * Required. The object name.
+         *
+         * @var string
+         */
+        public $objectName;
+        /**
+         * Required. The object name.
+         *
+         * @param string $objectName
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SalesforceObjectIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectName()
+    class Google_Service_Datastream_SalesforceObjectIdentifier extends \Google\Service\Datastream\SalesforceObjectIdentifier
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1Hub extends \Google\Model
-{
-    protected $internetGatewayType = GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway::class;
-    protected $internetGatewayDataType = '';
-    /**
-     * Optional. Internet Gateway configuration.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway $internetGateway
-     */
-    public function setInternetGateway(GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway $internetGateway)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1Hub extends \Google\Model
     {
+        protected $internetGatewayType = GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway::class;
+        protected $internetGatewayDataType = '';
+        /**
+         * Optional. Internet Gateway configuration.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway $internetGateway
+         */
+        public function setInternetGateway(GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway $internetGateway)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway
+         */
+        public function getInternetGateway()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Hub registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInternetGateway()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1Hub extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Hub
     {
     }
 }

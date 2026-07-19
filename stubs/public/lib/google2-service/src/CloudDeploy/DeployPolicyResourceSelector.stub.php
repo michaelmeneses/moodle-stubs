@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class DeployPolicyResourceSelector extends \Google\Model
-{
-    protected $deliveryPipelineType = DeliveryPipelineAttribute::class;
-    protected $deliveryPipelineDataType = '';
-    protected $targetType = TargetAttribute::class;
-    protected $targetDataType = '';
-    /**
-     * Optional. Contains attributes about a delivery pipeline.
-     *
-     * @param DeliveryPipelineAttribute $deliveryPipeline
-     */
-    public function setDeliveryPipeline(DeliveryPipelineAttribute $deliveryPipeline)
+namespace Google\Service\CloudDeploy {
+    class DeployPolicyResourceSelector extends \Google\Model
     {
+        protected $deliveryPipelineType = DeliveryPipelineAttribute::class;
+        protected $deliveryPipelineDataType = '';
+        protected $targetType = TargetAttribute::class;
+        protected $targetDataType = '';
+        /**
+         * Optional. Contains attributes about a delivery pipeline.
+         *
+         * @param DeliveryPipelineAttribute $deliveryPipeline
+         */
+        public function setDeliveryPipeline(DeliveryPipelineAttribute $deliveryPipeline)
+        {
+        }
+        /**
+         * @return DeliveryPipelineAttribute
+         */
+        public function getDeliveryPipeline()
+        {
+        }
+        /**
+         * Optional. Contains attributes about a target.
+         *
+         * @param TargetAttribute $target
+         */
+        public function setTarget(TargetAttribute $target)
+        {
+        }
+        /**
+         * @return TargetAttribute
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeliveryPipelineAttribute
+     * Runtime class alias of \Google\Service\CloudDeploy\DeployPolicyResourceSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliveryPipeline()
-    {
-    }
-    /**
-     * Optional. Contains attributes about a target.
-     *
-     * @param TargetAttribute $target
-     */
-    public function setTarget(TargetAttribute $target)
-    {
-    }
-    /**
-     * @return TargetAttribute
-     */
-    public function getTarget()
+    class Google_Service_CloudDeploy_DeployPolicyResourceSelector extends \Google\Service\CloudDeploy\DeployPolicyResourceSelector
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class FunctionalType extends \Google\Model
-{
-    /**
-     * Unspecified type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Agent type.
-     */
-    public const TYPE_AGENT = 'AGENT';
-    /**
-     * MCP Server type.
-     */
-    public const TYPE_MCP_SERVER = 'MCP_SERVER';
-    /**
-     * Output only. The functional type of a service or workload.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The functional type of a service or workload.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, AGENT, MCP_SERVER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\AppHub {
+    class FunctionalType extends \Google\Model
     {
+        /**
+         * Unspecified type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Agent type.
+         */
+        public const TYPE_AGENT = 'AGENT';
+        /**
+         * MCP Server type.
+         */
+        public const TYPE_MCP_SERVER = 'MCP_SERVER';
+        /**
+         * Output only. The functional type of a service or workload.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The functional type of a service or workload.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, AGENT, MCP_SERVER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\AppHub\FunctionalType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_AppHub_FunctionalType extends \Google\Service\AppHub\FunctionalType
     {
     }
 }

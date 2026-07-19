@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class UserMetadata extends \Google\Model
-{
-    /**
-     * Optional. The number of additional developer users the instance owner has
-     * purchased.
-     *
-     * @var int
-     */
-    public $additionalDeveloperUserCount;
-    /**
-     * Optional. The number of additional standard users the instance owner has
-     * purchased.
-     *
-     * @var int
-     */
-    public $additionalStandardUserCount;
-    /**
-     * Optional. The number of additional viewer users the instance owner has
-     * purchased.
-     *
-     * @var int
-     */
-    public $additionalViewerUserCount;
-    /**
-     * Optional. The number of additional developer users the instance owner has
-     * purchased.
-     *
-     * @param int $additionalDeveloperUserCount
-     */
-    public function setAdditionalDeveloperUserCount($additionalDeveloperUserCount)
+namespace Google\Service\Looker {
+    class UserMetadata extends \Google\Model
     {
+        /**
+         * Optional. The number of additional developer users the instance owner has
+         * purchased.
+         *
+         * @var int
+         */
+        public $additionalDeveloperUserCount;
+        /**
+         * Optional. The number of additional standard users the instance owner has
+         * purchased.
+         *
+         * @var int
+         */
+        public $additionalStandardUserCount;
+        /**
+         * Optional. The number of additional viewer users the instance owner has
+         * purchased.
+         *
+         * @var int
+         */
+        public $additionalViewerUserCount;
+        /**
+         * Optional. The number of additional developer users the instance owner has
+         * purchased.
+         *
+         * @param int $additionalDeveloperUserCount
+         */
+        public function setAdditionalDeveloperUserCount($additionalDeveloperUserCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAdditionalDeveloperUserCount()
+        {
+        }
+        /**
+         * Optional. The number of additional standard users the instance owner has
+         * purchased.
+         *
+         * @param int $additionalStandardUserCount
+         */
+        public function setAdditionalStandardUserCount($additionalStandardUserCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAdditionalStandardUserCount()
+        {
+        }
+        /**
+         * Optional. The number of additional viewer users the instance owner has
+         * purchased.
+         *
+         * @param int $additionalViewerUserCount
+         */
+        public function setAdditionalViewerUserCount($additionalViewerUserCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAdditionalViewerUserCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Looker\UserMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalDeveloperUserCount()
-    {
-    }
-    /**
-     * Optional. The number of additional standard users the instance owner has
-     * purchased.
-     *
-     * @param int $additionalStandardUserCount
-     */
-    public function setAdditionalStandardUserCount($additionalStandardUserCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAdditionalStandardUserCount()
-    {
-    }
-    /**
-     * Optional. The number of additional viewer users the instance owner has
-     * purchased.
-     *
-     * @param int $additionalViewerUserCount
-     */
-    public function setAdditionalViewerUserCount($additionalViewerUserCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAdditionalViewerUserCount()
+    class Google_Service_Looker_UserMetadata extends \Google\Service\Looker\UserMetadata
     {
     }
 }

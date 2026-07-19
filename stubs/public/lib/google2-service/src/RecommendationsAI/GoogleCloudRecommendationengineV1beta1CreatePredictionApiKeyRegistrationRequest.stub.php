@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest extends \Google\Model
-{
-    protected $predictionApiKeyRegistrationType = GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration::class;
-    protected $predictionApiKeyRegistrationDataType = '';
-    /**
-     * Required. The prediction API key registration.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration $predictionApiKeyRegistration
-     */
-    public function setPredictionApiKeyRegistration(GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration $predictionApiKeyRegistration)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest extends \Google\Model
     {
+        protected $predictionApiKeyRegistrationType = GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration::class;
+        protected $predictionApiKeyRegistrationDataType = '';
+        /**
+         * Required. The prediction API key registration.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration $predictionApiKeyRegistration
+         */
+        public function setPredictionApiKeyRegistration(GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration $predictionApiKeyRegistration)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration
+         */
+        public function getPredictionApiKeyRegistration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredictionApiKeyRegistration()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class SpokeSummary extends \Google\Collection
-{
-    protected $collection_key = 'spokeTypeCounts';
-    protected $spokeStateCountsType = SpokeStateCount::class;
-    protected $spokeStateCountsDataType = 'array';
-    protected $spokeStateReasonCountsType = SpokeStateReasonCount::class;
-    protected $spokeStateReasonCountsDataType = 'array';
-    protected $spokeTypeCountsType = SpokeTypeCount::class;
-    protected $spokeTypeCountsDataType = 'array';
-    /**
-     * Output only. Counts the number of spokes that are in each state and
-     * associated with a given hub.
-     *
-     * @param SpokeStateCount[] $spokeStateCounts
-     */
-    public function setSpokeStateCounts($spokeStateCounts)
+namespace Google\Service\Networkconnectivity {
+    class SpokeSummary extends \Google\Collection
     {
+        protected $collection_key = 'spokeTypeCounts';
+        protected $spokeStateCountsType = SpokeStateCount::class;
+        protected $spokeStateCountsDataType = 'array';
+        protected $spokeStateReasonCountsType = SpokeStateReasonCount::class;
+        protected $spokeStateReasonCountsDataType = 'array';
+        protected $spokeTypeCountsType = SpokeTypeCount::class;
+        protected $spokeTypeCountsDataType = 'array';
+        /**
+         * Output only. Counts the number of spokes that are in each state and
+         * associated with a given hub.
+         *
+         * @param SpokeStateCount[] $spokeStateCounts
+         */
+        public function setSpokeStateCounts($spokeStateCounts)
+        {
+        }
+        /**
+         * @return SpokeStateCount[]
+         */
+        public function getSpokeStateCounts()
+        {
+        }
+        /**
+         * Output only. Counts the number of spokes that are inactive for each
+         * possible reason and associated with a given hub.
+         *
+         * @param SpokeStateReasonCount[] $spokeStateReasonCounts
+         */
+        public function setSpokeStateReasonCounts($spokeStateReasonCounts)
+        {
+        }
+        /**
+         * @return SpokeStateReasonCount[]
+         */
+        public function getSpokeStateReasonCounts()
+        {
+        }
+        /**
+         * Output only. Counts the number of spokes of each type that are associated
+         * with a specific hub.
+         *
+         * @param SpokeTypeCount[] $spokeTypeCounts
+         */
+        public function setSpokeTypeCounts($spokeTypeCounts)
+        {
+        }
+        /**
+         * @return SpokeTypeCount[]
+         */
+        public function getSpokeTypeCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SpokeStateCount[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\SpokeSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpokeStateCounts()
-    {
-    }
-    /**
-     * Output only. Counts the number of spokes that are inactive for each
-     * possible reason and associated with a given hub.
-     *
-     * @param SpokeStateReasonCount[] $spokeStateReasonCounts
-     */
-    public function setSpokeStateReasonCounts($spokeStateReasonCounts)
-    {
-    }
-    /**
-     * @return SpokeStateReasonCount[]
-     */
-    public function getSpokeStateReasonCounts()
-    {
-    }
-    /**
-     * Output only. Counts the number of spokes of each type that are associated
-     * with a specific hub.
-     *
-     * @param SpokeTypeCount[] $spokeTypeCounts
-     */
-    public function setSpokeTypeCounts($spokeTypeCounts)
-    {
-    }
-    /**
-     * @return SpokeTypeCount[]
-     */
-    public function getSpokeTypeCounts()
+    class Google_Service_Networkconnectivity_SpokeSummary extends \Google\Service\Networkconnectivity\SpokeSummary
     {
     }
 }

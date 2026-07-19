@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FindNeighborsResponseNeighbor extends \Google\Model
-{
-    protected $datapointType = GoogleCloudAiplatformV1IndexDatapoint::class;
-    protected $datapointDataType = '';
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FindNeighborsResponseNeighbor extends \Google\Model
+    {
+        protected $datapointType = GoogleCloudAiplatformV1IndexDatapoint::class;
+        protected $datapointDataType = '';
+        /**
+         * The distance between the neighbor and the dense embedding query.
+         *
+         * @var 
+         */
+        public $distance;
+        /**
+         * The distance between the neighbor and the query sparse_embedding.
+         *
+         * @var 
+         */
+        public $sparseDistance;
+        /**
+         * The datapoint of the neighbor. Note that full datapoints are returned only
+         * when "return_full_datapoint" is set to true. Otherwise, only the
+         * "datapoint_id" and "crowding_tag" fields are populated.
+         *
+         * @param GoogleCloudAiplatformV1IndexDatapoint $datapoint
+         */
+        public function setDatapoint(GoogleCloudAiplatformV1IndexDatapoint $datapoint)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1IndexDatapoint
+         */
+        public function getDatapoint()
+        {
+        }
+        public function setDistance($distance)
+        {
+        }
+        public function getDistance()
+        {
+        }
+        public function setSparseDistance($sparseDistance)
+        {
+        }
+        public function getSparseDistance()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The distance between the neighbor and the dense embedding query.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponseNeighbor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $distance;
-    /**
-     * The distance between the neighbor and the query sparse_embedding.
-     *
-     * @var 
-     */
-    public $sparseDistance;
-    /**
-     * The datapoint of the neighbor. Note that full datapoints are returned only
-     * when "return_full_datapoint" is set to true. Otherwise, only the
-     * "datapoint_id" and "crowding_tag" fields are populated.
-     *
-     * @param GoogleCloudAiplatformV1IndexDatapoint $datapoint
-     */
-    public function setDatapoint(GoogleCloudAiplatformV1IndexDatapoint $datapoint)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1IndexDatapoint
-     */
-    public function getDatapoint()
-    {
-    }
-    public function setDistance($distance)
-    {
-    }
-    public function getDistance()
-    {
-    }
-    public function setSparseDistance($sparseDistance)
-    {
-    }
-    public function getSparseDistance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FindNeighborsResponseNeighbor extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponseNeighbor
     {
     }
 }

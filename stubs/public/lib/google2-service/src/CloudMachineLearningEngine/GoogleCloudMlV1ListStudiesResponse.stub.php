@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ListStudiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'studies';
-    protected $studiesType = GoogleCloudMlV1Study::class;
-    protected $studiesDataType = 'array';
-    /**
-     * The studies associated with the project.
-     *
-     * @param GoogleCloudMlV1Study[] $studies
-     */
-    public function setStudies($studies)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ListStudiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'studies';
+        protected $studiesType = GoogleCloudMlV1Study::class;
+        protected $studiesDataType = 'array';
+        /**
+         * The studies associated with the project.
+         *
+         * @param GoogleCloudMlV1Study[] $studies
+         */
+        public function setStudies($studies)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Study[]
+         */
+        public function getStudies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Study[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListStudiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStudies()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListStudiesResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListStudiesResponse
     {
     }
 }

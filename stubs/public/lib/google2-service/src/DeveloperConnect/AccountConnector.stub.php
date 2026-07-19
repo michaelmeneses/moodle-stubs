@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class AccountConnector extends \Google\Model
-{
-    /**
-     * Optional. Allows users to store small amounts of arbitrary data.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Output only. The timestamp when the accountConnector was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. Labels as key value pairs
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name of the accountConnector, in the format `proje
-     * cts/{project}/locations/{location}/accountConnectors/{account_connector_id}
-     * `.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Start OAuth flow by clicking on this URL.
-     *
-     * @var string
-     */
-    public $oauthStartUri;
-    protected $providerOauthConfigType = ProviderOAuthConfig::class;
-    protected $providerOauthConfigDataType = '';
-    /**
-     * Output only. The timestamp when the accountConnector was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Allows users to store small amounts of arbitrary data.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\DeveloperConnect {
+    class AccountConnector extends \Google\Model
     {
+        /**
+         * Optional. Allows users to store small amounts of arbitrary data.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Output only. The timestamp when the accountConnector was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. Labels as key value pairs
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name of the accountConnector, in the format `proje
+         * cts/{project}/locations/{location}/accountConnectors/{account_connector_id}
+         * `.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Start OAuth flow by clicking on this URL.
+         *
+         * @var string
+         */
+        public $oauthStartUri;
+        protected $providerOauthConfigType = ProviderOAuthConfig::class;
+        protected $providerOauthConfigDataType = '';
+        /**
+         * Output only. The timestamp when the accountConnector was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Allows users to store small amounts of arbitrary data.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. The timestamp when the accountConnector was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. Labels as key value pairs
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name of the accountConnector, in the format `proje
+         * cts/{project}/locations/{location}/accountConnectors/{account_connector_id}
+         * `.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Start OAuth flow by clicking on this URL.
+         *
+         * @param string $oauthStartUri
+         */
+        public function setOauthStartUri($oauthStartUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthStartUri()
+        {
+        }
+        /**
+         * Provider OAuth config.
+         *
+         * @param ProviderOAuthConfig $providerOauthConfig
+         */
+        public function setProviderOauthConfig(ProviderOAuthConfig $providerOauthConfig)
+        {
+        }
+        /**
+         * @return ProviderOAuthConfig
+         */
+        public function getProviderOauthConfig()
+        {
+        }
+        /**
+         * Output only. The timestamp when the accountConnector was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\AccountConnector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. The timestamp when the accountConnector was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. Labels as key value pairs
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name of the accountConnector, in the format `proje
-     * cts/{project}/locations/{location}/accountConnectors/{account_connector_id}
-     * `.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Start OAuth flow by clicking on this URL.
-     *
-     * @param string $oauthStartUri
-     */
-    public function setOauthStartUri($oauthStartUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthStartUri()
-    {
-    }
-    /**
-     * Provider OAuth config.
-     *
-     * @param ProviderOAuthConfig $providerOauthConfig
-     */
-    public function setProviderOauthConfig(ProviderOAuthConfig $providerOauthConfig)
-    {
-    }
-    /**
-     * @return ProviderOAuthConfig
-     */
-    public function getProviderOauthConfig()
-    {
-    }
-    /**
-     * Output only. The timestamp when the accountConnector was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DeveloperConnect_AccountConnector extends \Google\Service\DeveloperConnect\AccountConnector
     {
     }
 }

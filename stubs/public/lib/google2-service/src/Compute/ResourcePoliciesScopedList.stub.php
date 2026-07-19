@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePoliciesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'resourcePolicies';
-    protected $resourcePoliciesType = ResourcePolicy::class;
-    protected $resourcePoliciesDataType = 'array';
-    protected $warningType = ResourcePoliciesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of resourcePolicies contained in this scope.
-     *
-     * @param ResourcePolicy[] $resourcePolicies
-     */
-    public function setResourcePolicies($resourcePolicies)
+namespace Google\Service\Compute {
+    class ResourcePoliciesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'resourcePolicies';
+        protected $resourcePoliciesType = ResourcePolicy::class;
+        protected $resourcePoliciesDataType = 'array';
+        protected $warningType = ResourcePoliciesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of resourcePolicies contained in this scope.
+         *
+         * @param ResourcePolicy[] $resourcePolicies
+         */
+        public function setResourcePolicies($resourcePolicies)
+        {
+        }
+        /**
+         * @return ResourcePolicy[]
+         */
+        public function getResourcePolicies()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of resourcePolicies when the
+         * list is empty.
+         *
+         * @param ResourcePoliciesScopedListWarning $warning
+         */
+        public function setWarning(ResourcePoliciesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return ResourcePoliciesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourcePolicy[]
+     * Runtime class alias of \Google\Service\Compute\ResourcePoliciesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourcePolicies()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of resourcePolicies when the
-     * list is empty.
-     *
-     * @param ResourcePoliciesScopedListWarning $warning
-     */
-    public function setWarning(ResourcePoliciesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return ResourcePoliciesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_ResourcePoliciesScopedList extends \Google\Service\Compute\ResourcePoliciesScopedList
     {
     }
 }

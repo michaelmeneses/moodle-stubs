@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class WebLabel extends \Google\Model
-{
-    /**
-     * Label for extra metadata.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The BCP-47 language code for `label`, such as "en-US" or "sr-Latn". For
-     * more information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Label for extra metadata.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\Vision {
+    class WebLabel extends \Google\Model
     {
+        /**
+         * Label for extra metadata.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The BCP-47 language code for `label`, such as "en-US" or "sr-Latn". For
+         * more information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Label for extra metadata.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * The BCP-47 language code for `label`, such as "en-US" or "sr-Latn". For
+         * more information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\WebLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * The BCP-47 language code for `label`, such as "en-US" or "sr-Latn". For
-     * more information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_Vision_WebLabel extends \Google\Service\Vision\WebLabel
     {
     }
 }

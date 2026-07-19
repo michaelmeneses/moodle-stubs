@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class EmailPreferences extends \Google\Model
-{
-    /**
-     * If true, email notifications will be sent on transfer run failures.
-     *
-     * @var bool
-     */
-    public $enableFailureEmail;
-    /**
-     * If true, email notifications will be sent on transfer run failures.
-     *
-     * @param bool $enableFailureEmail
-     */
-    public function setEnableFailureEmail($enableFailureEmail)
+namespace Google\Service\BigQueryDataTransfer {
+    class EmailPreferences extends \Google\Model
     {
+        /**
+         * If true, email notifications will be sent on transfer run failures.
+         *
+         * @var bool
+         */
+        public $enableFailureEmail;
+        /**
+         * If true, email notifications will be sent on transfer run failures.
+         *
+         * @param bool $enableFailureEmail
+         */
+        public function setEnableFailureEmail($enableFailureEmail)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableFailureEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\EmailPreferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableFailureEmail()
+    class Google_Service_BigQueryDataTransfer_EmailPreferences extends \Google\Service\BigQueryDataTransfer\EmailPreferences
     {
     }
 }

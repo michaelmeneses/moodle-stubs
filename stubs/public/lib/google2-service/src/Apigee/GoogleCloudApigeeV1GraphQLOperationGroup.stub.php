@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GraphQLOperationGroup extends \Google\Collection
-{
-    protected $collection_key = 'operationConfigs';
-    /**
-     * Flag that specifies whether the configuration is for Apigee API proxy or a
-     * remote service. Valid values include `proxy` or `remoteservice`. Defaults
-     * to `proxy`. Set to `proxy` when Apigee API proxies are associated with the
-     * API product. Set to `remoteservice` when non-Apigee proxies like Istio-
-     * Envoy are associated with the API product.
-     *
-     * @var string
-     */
-    public $operationConfigType;
-    protected $operationConfigsType = GoogleCloudApigeeV1GraphQLOperationConfig::class;
-    protected $operationConfigsDataType = 'array';
-    /**
-     * Flag that specifies whether the configuration is for Apigee API proxy or a
-     * remote service. Valid values include `proxy` or `remoteservice`. Defaults
-     * to `proxy`. Set to `proxy` when Apigee API proxies are associated with the
-     * API product. Set to `remoteservice` when non-Apigee proxies like Istio-
-     * Envoy are associated with the API product.
-     *
-     * @param string $operationConfigType
-     */
-    public function setOperationConfigType($operationConfigType)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GraphQLOperationGroup extends \Google\Collection
     {
+        protected $collection_key = 'operationConfigs';
+        /**
+         * Flag that specifies whether the configuration is for Apigee API proxy or a
+         * remote service. Valid values include `proxy` or `remoteservice`. Defaults
+         * to `proxy`. Set to `proxy` when Apigee API proxies are associated with the
+         * API product. Set to `remoteservice` when non-Apigee proxies like Istio-
+         * Envoy are associated with the API product.
+         *
+         * @var string
+         */
+        public $operationConfigType;
+        protected $operationConfigsType = GoogleCloudApigeeV1GraphQLOperationConfig::class;
+        protected $operationConfigsDataType = 'array';
+        /**
+         * Flag that specifies whether the configuration is for Apigee API proxy or a
+         * remote service. Valid values include `proxy` or `remoteservice`. Defaults
+         * to `proxy`. Set to `proxy` when Apigee API proxies are associated with the
+         * API product. Set to `remoteservice` when non-Apigee proxies like Istio-
+         * Envoy are associated with the API product.
+         *
+         * @param string $operationConfigType
+         */
+        public function setOperationConfigType($operationConfigType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationConfigType()
+        {
+        }
+        /**
+         * Required. List of operation configurations for either Apigee API proxies or
+         * other remote services that are associated with this API product.
+         *
+         * @param GoogleCloudApigeeV1GraphQLOperationConfig[] $operationConfigs
+         */
+        public function setOperationConfigs($operationConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1GraphQLOperationConfig[]
+         */
+        public function getOperationConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GraphQLOperationGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationConfigType()
-    {
-    }
-    /**
-     * Required. List of operation configurations for either Apigee API proxies or
-     * other remote services that are associated with this API product.
-     *
-     * @param GoogleCloudApigeeV1GraphQLOperationConfig[] $operationConfigs
-     */
-    public function setOperationConfigs($operationConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1GraphQLOperationConfig[]
-     */
-    public function getOperationConfigs()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GraphQLOperationGroup extends \Google\Service\Apigee\GoogleCloudApigeeV1GraphQLOperationGroup
     {
     }
 }

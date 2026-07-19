@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode extends \Google\Model
-{
-    protected $flowType = GoogleCloudDialogflowCxV3Flow::class;
-    protected $flowDataType = '';
-    protected $pageType = GoogleCloudDialogflowCxV3Page::class;
-    protected $pageDataType = '';
-    /**
-     * Indicates a transition to a Flow. Only some fields such as name and
-     * displayname will be set.
-     *
-     * @param GoogleCloudDialogflowCxV3Flow $flow
-     */
-    public function setFlow(GoogleCloudDialogflowCxV3Flow $flow)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode extends \Google\Model
     {
+        protected $flowType = GoogleCloudDialogflowCxV3Flow::class;
+        protected $flowDataType = '';
+        protected $pageType = GoogleCloudDialogflowCxV3Page::class;
+        protected $pageDataType = '';
+        /**
+         * Indicates a transition to a Flow. Only some fields such as name and
+         * displayname will be set.
+         *
+         * @param GoogleCloudDialogflowCxV3Flow $flow
+         */
+        public function setFlow(GoogleCloudDialogflowCxV3Flow $flow)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Flow
+         */
+        public function getFlow()
+        {
+        }
+        /**
+         * Indicates a transition to a Page. Only some fields such as name and
+         * displayname will be set.
+         *
+         * @param GoogleCloudDialogflowCxV3Page $page
+         */
+        public function setPage(GoogleCloudDialogflowCxV3Page $page)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Page
+         */
+        public function getPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Flow
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlow()
-    {
-    }
-    /**
-     * Indicates a transition to a Page. Only some fields such as name and
-     * displayname will be set.
-     *
-     * @param GoogleCloudDialogflowCxV3Page $page
-     */
-    public function setPage(GoogleCloudDialogflowCxV3Page $page)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Page
-     */
-    public function getPage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode
     {
     }
 }

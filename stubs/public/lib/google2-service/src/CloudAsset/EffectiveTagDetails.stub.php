@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class EffectiveTagDetails extends \Google\Collection
-{
-    protected $collection_key = 'effectiveTags';
-    /**
-     * The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the ancestor from which
-     * effective_tags are inherited, according to [tag
-     * inheritance](https://cloud.google.com/resource-manager/docs/tags/tags-
-     * overview#inheritance).
-     *
-     * @var string
-     */
-    public $attachedResource;
-    protected $effectiveTagsType = Tag::class;
-    protected $effectiveTagsDataType = 'array';
-    /**
-     * The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the ancestor from which
-     * effective_tags are inherited, according to [tag
-     * inheritance](https://cloud.google.com/resource-manager/docs/tags/tags-
-     * overview#inheritance).
-     *
-     * @param string $attachedResource
-     */
-    public function setAttachedResource($attachedResource)
+namespace Google\Service\CloudAsset {
+    class EffectiveTagDetails extends \Google\Collection
     {
+        protected $collection_key = 'effectiveTags';
+        /**
+         * The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the ancestor from which
+         * effective_tags are inherited, according to [tag
+         * inheritance](https://cloud.google.com/resource-manager/docs/tags/tags-
+         * overview#inheritance).
+         *
+         * @var string
+         */
+        public $attachedResource;
+        protected $effectiveTagsType = Tag::class;
+        protected $effectiveTagsDataType = 'array';
+        /**
+         * The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the ancestor from which
+         * effective_tags are inherited, according to [tag
+         * inheritance](https://cloud.google.com/resource-manager/docs/tags/tags-
+         * overview#inheritance).
+         *
+         * @param string $attachedResource
+         */
+        public function setAttachedResource($attachedResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachedResource()
+        {
+        }
+        /**
+         * The effective tags inherited from the attached_resource. Note that tags
+         * with the same key but different values may attach to resources at a
+         * different hierarchy levels. The lower hierarchy tag value will overwrite
+         * the higher hierarchy tag value of the same tag key. In this case, the tag
+         * value at the higher hierarchy level will be removed. For more information,
+         * see [tag inheritance](https://cloud.google.com/resource-
+         * manager/docs/tags/tags-overview#inheritance).
+         *
+         * @param Tag[] $effectiveTags
+         */
+        public function setEffectiveTags($effectiveTags)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getEffectiveTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\EffectiveTagDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachedResource()
-    {
-    }
-    /**
-     * The effective tags inherited from the attached_resource. Note that tags
-     * with the same key but different values may attach to resources at a
-     * different hierarchy levels. The lower hierarchy tag value will overwrite
-     * the higher hierarchy tag value of the same tag key. In this case, the tag
-     * value at the higher hierarchy level will be removed. For more information,
-     * see [tag inheritance](https://cloud.google.com/resource-
-     * manager/docs/tags/tags-overview#inheritance).
-     *
-     * @param Tag[] $effectiveTags
-     */
-    public function setEffectiveTags($effectiveTags)
-    {
-    }
-    /**
-     * @return Tag[]
-     */
-    public function getEffectiveTags()
+    class Google_Service_CloudAsset_EffectiveTagDetails extends \Google\Service\CloudAsset\EffectiveTagDetails
     {
     }
 }

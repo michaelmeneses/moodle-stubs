@@ -21,66 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense\Resource;
-
-/**
- * The "adclients" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseService = new Google\Service\Adsense(...);
- *   $adclients = $adsenseService->accounts_adclients;
- *  </code>
- */
-class AccountsAdclients extends \Google\Service\Resource
-{
+namespace Google\Service\Adsense\Resource {
+    use Google\Service\Adsense\AdClient;
+    use Google\Service\Adsense\AdClientAdCode;
+    use Google\Service\Adsense\ListAdClientsResponse;
     /**
-     * Gets the ad client from the given resource name. (adclients.get)
-     *
-     * @param string $name Required. The name of the ad client to retrieve. Format:
-     * accounts/{account}/adclients/{adclient}
-     * @param array $optParams Optional parameters.
-     * @return AdClient
-     * @throws \Google\Service\Exception
+     * The "adclients" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseService = new Google\Service\Adsense(...);
+     *   $adclients = $adsenseService->accounts_adclients;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class AccountsAdclients extends \Google\Service\Resource
     {
+        /**
+         * Gets the ad client from the given resource name. (adclients.get)
+         *
+         * @param string $name Required. The name of the ad client to retrieve. Format:
+         * accounts/{account}/adclients/{adclient}
+         * @param array $optParams Optional parameters.
+         * @return AdClient
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the AdSense code for a given ad client. This returns what was previously
+         * known as the 'auto ad code'. This is only supported for ad clients with a
+         * product_code of AFC. For more information, see [About the AdSense
+         * code](https://support.google.com/adsense/answer/9274634).
+         * (adclients.getAdcode)
+         *
+         * @param string $name Required. Name of the ad client for which to get the
+         * adcode. Format: accounts/{account}/adclients/{adclient}
+         * @param array $optParams Optional parameters.
+         * @return AdClientAdCode
+         * @throws \Google\Service\Exception
+         */
+        public function getAdcode($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the ad clients available in an account.
+         * (adclients.listAccountsAdclients)
+         *
+         * @param string $parent Required. The account which owns the collection of ad
+         * clients. Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of ad clients to include in the
+         * response, used for paging. If unspecified, at most 10000 ad clients will be
+         * returned. The maximum value is 10000; values above 10000 will be coerced to
+         * 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListAdClients` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListAdClients` must match the
+         * call that provided the page token.
+         * @return ListAdClientsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdclients($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the AdSense code for a given ad client. This returns what was previously
-     * known as the 'auto ad code'. This is only supported for ad clients with a
-     * product_code of AFC. For more information, see [About the AdSense
-     * code](https://support.google.com/adsense/answer/9274634).
-     * (adclients.getAdcode)
-     *
-     * @param string $name Required. Name of the ad client for which to get the
-     * adcode. Format: accounts/{account}/adclients/{adclient}
-     * @param array $optParams Optional parameters.
-     * @return AdClientAdCode
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Adsense\Resource\AccountsAdclients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdcode($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the ad clients available in an account.
-     * (adclients.listAccountsAdclients)
-     *
-     * @param string $parent Required. The account which owns the collection of ad
-     * clients. Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of ad clients to include in the
-     * response, used for paging. If unspecified, at most 10000 ad clients will be
-     * returned. The maximum value is 10000; values above 10000 will be coerced to
-     * 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListAdClients` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListAdClients` must match the
-     * call that provided the page token.
-     * @return ListAdClientsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsAdclients($parent, $optParams = [])
+    class Google_Service_Adsense_Resource_AccountsAdclients extends \Google\Service\Adsense\Resource\AccountsAdclients
     {
     }
 }

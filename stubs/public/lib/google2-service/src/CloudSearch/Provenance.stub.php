@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Provenance extends \Google\Collection
-{
-    protected $collection_key = 'itemtype';
-    /**
-     * @var string
-     */
-    public $annotationBlob;
-    /**
-     * @var string
-     */
-    public $canonicalUrl;
-    /**
-     * @var string
-     */
-    public $inputUrl;
-    /**
-     * @var string[]
-     */
-    public $itemtype;
-    /**
-     * @var string
-     */
-    public $retrievedTimestampMsec;
-    /**
-     * @var string
-     */
-    public $retrievedUrl;
-    /**
-     * @param string
-     */
-    public function setAnnotationBlob($annotationBlob)
+namespace Google\Service\CloudSearch {
+    class Provenance extends \Google\Collection
     {
+        protected $collection_key = 'itemtype';
+        /**
+         * @var string
+         */
+        public $annotationBlob;
+        /**
+         * @var string
+         */
+        public $canonicalUrl;
+        /**
+         * @var string
+         */
+        public $inputUrl;
+        /**
+         * @var string[]
+         */
+        public $itemtype;
+        /**
+         * @var string
+         */
+        public $retrievedTimestampMsec;
+        /**
+         * @var string
+         */
+        public $retrievedUrl;
+        /**
+         * @param string
+         */
+        public function setAnnotationBlob($annotationBlob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationBlob()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCanonicalUrl($canonicalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInputUrl($inputUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputUrl()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setItemtype($itemtype)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getItemtype()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRetrievedTimestampMsec($retrievedTimestampMsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetrievedTimestampMsec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRetrievedUrl($retrievedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetrievedUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Provenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationBlob()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCanonicalUrl($canonicalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanonicalUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInputUrl($inputUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputUrl()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setItemtype($itemtype)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getItemtype()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRetrievedTimestampMsec($retrievedTimestampMsec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetrievedTimestampMsec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRetrievedUrl($retrievedUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetrievedUrl()
+    class Google_Service_CloudSearch_Provenance extends \Google\Service\CloudSearch\Provenance
     {
     }
 }

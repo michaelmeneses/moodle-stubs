@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse extends \Google\Collection
-{
-    protected $collection_key = 'exampleComparisons';
-    protected $exampleComparisonsType = GoogleCloudDatalabelingV1beta1ExampleComparison::class;
-    protected $exampleComparisonsDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of example comparisons matching the search criteria.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ExampleComparison[] $exampleComparisons
-     */
-    public function setExampleComparisons($exampleComparisons)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse extends \Google\Collection
     {
+        protected $collection_key = 'exampleComparisons';
+        protected $exampleComparisonsType = GoogleCloudDatalabelingV1beta1ExampleComparison::class;
+        protected $exampleComparisonsDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of example comparisons matching the search criteria.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ExampleComparison[] $exampleComparisons
+         */
+        public function setExampleComparisons($exampleComparisons)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ExampleComparison[]
+         */
+        public function getExampleComparisons()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1ExampleComparison[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleComparisons()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AssignedInventorySource extends \Google\Model
-{
-    /**
-     * Output only. The unique ID of the assigned inventory source. The ID is only
-     * unique within a given inventory source group. It may be reused in other
-     * contexts.
-     *
-     * @var string
-     */
-    public $assignedInventorySourceId;
-    /**
-     * Required. The ID of the inventory source entity being targeted.
-     *
-     * @var string
-     */
-    public $inventorySourceId;
-    /**
-     * Output only. The resource name of the assigned inventory source.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The unique ID of the assigned inventory source. The ID is only
-     * unique within a given inventory source group. It may be reused in other
-     * contexts.
-     *
-     * @param string $assignedInventorySourceId
-     */
-    public function setAssignedInventorySourceId($assignedInventorySourceId)
+namespace Google\Service\DisplayVideo {
+    class AssignedInventorySource extends \Google\Model
     {
+        /**
+         * Output only. The unique ID of the assigned inventory source. The ID is only
+         * unique within a given inventory source group. It may be reused in other
+         * contexts.
+         *
+         * @var string
+         */
+        public $assignedInventorySourceId;
+        /**
+         * Required. The ID of the inventory source entity being targeted.
+         *
+         * @var string
+         */
+        public $inventorySourceId;
+        /**
+         * Output only. The resource name of the assigned inventory source.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The unique ID of the assigned inventory source. The ID is only
+         * unique within a given inventory source group. It may be reused in other
+         * contexts.
+         *
+         * @param string $assignedInventorySourceId
+         */
+        public function setAssignedInventorySourceId($assignedInventorySourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssignedInventorySourceId()
+        {
+        }
+        /**
+         * Required. The ID of the inventory source entity being targeted.
+         *
+         * @param string $inventorySourceId
+         */
+        public function setInventorySourceId($inventorySourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventorySourceId()
+        {
+        }
+        /**
+         * Output only. The resource name of the assigned inventory source.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AssignedInventorySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedInventorySourceId()
-    {
-    }
-    /**
-     * Required. The ID of the inventory source entity being targeted.
-     *
-     * @param string $inventorySourceId
-     */
-    public function setInventorySourceId($inventorySourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInventorySourceId()
-    {
-    }
-    /**
-     * Output only. The resource name of the assigned inventory source.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DisplayVideo_AssignedInventorySource extends \Google\Service\DisplayVideo\AssignedInventorySource
     {
     }
 }

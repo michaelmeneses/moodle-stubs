@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkUpdateLineItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'updatedLineItemIds';
-    protected $errorsType = Status::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The IDs of line items that failed to update.
-     *
-     * @var string[]
-     */
-    public $failedLineItemIds;
-    /**
-     * The IDs of line items that are skipped for updates. For example,
-     * unnecessary mutates that will result in effectively no changes to line
-     * items will be skipped and corresponding line item IDs can be tracked here.
-     *
-     * @var string[]
-     */
-    public $skippedLineItemIds;
-    /**
-     * The IDs of successfully updated line items.
-     *
-     * @var string[]
-     */
-    public $updatedLineItemIds;
-    /**
-     * Errors returned by line items that failed to update.
-     *
-     * @param Status[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\DisplayVideo {
+    class BulkUpdateLineItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'updatedLineItemIds';
+        protected $errorsType = Status::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The IDs of line items that failed to update.
+         *
+         * @var string[]
+         */
+        public $failedLineItemIds;
+        /**
+         * The IDs of line items that are skipped for updates. For example,
+         * unnecessary mutates that will result in effectively no changes to line
+         * items will be skipped and corresponding line item IDs can be tracked here.
+         *
+         * @var string[]
+         */
+        public $skippedLineItemIds;
+        /**
+         * The IDs of successfully updated line items.
+         *
+         * @var string[]
+         */
+        public $updatedLineItemIds;
+        /**
+         * Errors returned by line items that failed to update.
+         *
+         * @param Status[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The IDs of line items that failed to update.
+         *
+         * @param string[] $failedLineItemIds
+         */
+        public function setFailedLineItemIds($failedLineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedLineItemIds()
+        {
+        }
+        /**
+         * The IDs of line items that are skipped for updates. For example,
+         * unnecessary mutates that will result in effectively no changes to line
+         * items will be skipped and corresponding line item IDs can be tracked here.
+         *
+         * @param string[] $skippedLineItemIds
+         */
+        public function setSkippedLineItemIds($skippedLineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSkippedLineItemIds()
+        {
+        }
+        /**
+         * The IDs of successfully updated line items.
+         *
+         * @param string[] $updatedLineItemIds
+         */
+        public function setUpdatedLineItemIds($updatedLineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUpdatedLineItemIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkUpdateLineItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The IDs of line items that failed to update.
-     *
-     * @param string[] $failedLineItemIds
-     */
-    public function setFailedLineItemIds($failedLineItemIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFailedLineItemIds()
-    {
-    }
-    /**
-     * The IDs of line items that are skipped for updates. For example,
-     * unnecessary mutates that will result in effectively no changes to line
-     * items will be skipped and corresponding line item IDs can be tracked here.
-     *
-     * @param string[] $skippedLineItemIds
-     */
-    public function setSkippedLineItemIds($skippedLineItemIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSkippedLineItemIds()
-    {
-    }
-    /**
-     * The IDs of successfully updated line items.
-     *
-     * @param string[] $updatedLineItemIds
-     */
-    public function setUpdatedLineItemIds($updatedLineItemIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUpdatedLineItemIds()
+    class Google_Service_DisplayVideo_BulkUpdateLineItemsResponse extends \Google\Service\DisplayVideo\BulkUpdateLineItemsResponse
     {
     }
 }

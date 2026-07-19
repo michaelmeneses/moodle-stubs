@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class FileDiff extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * The file was added.
-     */
-    public const ACTION_ADDED = 'ADDED';
-    /**
-     * The file was modified.
-     */
-    public const ACTION_MODIFIED = 'MODIFIED';
-    /**
-     * The file was deleted.
-     */
-    public const ACTION_DELETED = 'DELETED';
-    /**
-     * Output only. The action taken on the file (eg. added, modified, deleted).
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Output only. The name of the file.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The git patch containing the file changes.
-     *
-     * @var string
-     */
-    public $patch;
-    /**
-     * Output only. The commit pointing to the file changes.
-     *
-     * @var string
-     */
-    public $sha;
-    /**
-     * Output only. The action taken on the file (eg. added, modified, deleted).
-     *
-     * Accepted values: ACTION_UNSPECIFIED, ADDED, MODIFIED, DELETED
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\SecureSourceManager {
+    class FileDiff extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * The file was added.
+         */
+        public const ACTION_ADDED = 'ADDED';
+        /**
+         * The file was modified.
+         */
+        public const ACTION_MODIFIED = 'MODIFIED';
+        /**
+         * The file was deleted.
+         */
+        public const ACTION_DELETED = 'DELETED';
+        /**
+         * Output only. The action taken on the file (eg. added, modified, deleted).
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Output only. The name of the file.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The git patch containing the file changes.
+         *
+         * @var string
+         */
+        public $patch;
+        /**
+         * Output only. The commit pointing to the file changes.
+         *
+         * @var string
+         */
+        public $sha;
+        /**
+         * Output only. The action taken on the file (eg. added, modified, deleted).
+         *
+         * Accepted values: ACTION_UNSPECIFIED, ADDED, MODIFIED, DELETED
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Output only. The name of the file.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The git patch containing the file changes.
+         *
+         * @param string $patch
+         */
+        public function setPatch($patch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatch()
+        {
+        }
+        /**
+         * Output only. The commit pointing to the file changes.
+         *
+         * @param string $sha
+         */
+        public function setSha($sha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\SecureSourceManager\FileDiff registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Output only. The name of the file.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The git patch containing the file changes.
-     *
-     * @param string $patch
-     */
-    public function setPatch($patch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatch()
-    {
-    }
-    /**
-     * Output only. The commit pointing to the file changes.
-     *
-     * @param string $sha
-     */
-    public function setSha($sha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha()
+    class Google_Service_SecureSourceManager_FileDiff extends \Google\Service\SecureSourceManager\FileDiff
     {
     }
 }

@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class FinancialAnalysis extends \Google\Model
-{
-    /**
-     * How much electricity the house uses in an average month, based on the bill
-     * size and the local electricity rates.
-     *
-     * @var float
-     */
-    public $averageKwhPerMonth;
-    protected $cashPurchaseSavingsType = CashPurchaseSavings::class;
-    protected $cashPurchaseSavingsDataType = '';
-    /**
-     * Whether this is the bill size selected to be the default bill for the area
-     * this building is in. Exactly one `FinancialAnalysis` in
-     * `BuildingSolarPotential` should have `default_bill` set.
-     *
-     * @var bool
-     */
-    public $defaultBill;
-    protected $financedPurchaseSavingsType = FinancedPurchaseSavings::class;
-    protected $financedPurchaseSavingsDataType = '';
-    protected $financialDetailsType = FinancialDetails::class;
-    protected $financialDetailsDataType = '';
-    protected $leasingSavingsType = LeasingSavings::class;
-    protected $leasingSavingsDataType = '';
-    protected $monthlyBillType = Money::class;
-    protected $monthlyBillDataType = '';
-    /**
-     * Index in solar_panel_configs of the optimum solar layout for this bill
-     * size. This can be -1 indicating that there is no layout. In this case, the
-     * remaining submessages will be omitted.
-     *
-     * @var int
-     */
-    public $panelConfigIndex;
-    /**
-     * How much electricity the house uses in an average month, based on the bill
-     * size and the local electricity rates.
-     *
-     * @param float $averageKwhPerMonth
-     */
-    public function setAverageKwhPerMonth($averageKwhPerMonth)
+namespace Google\Service\Solar {
+    class FinancialAnalysis extends \Google\Model
     {
+        /**
+         * How much electricity the house uses in an average month, based on the bill
+         * size and the local electricity rates.
+         *
+         * @var float
+         */
+        public $averageKwhPerMonth;
+        protected $cashPurchaseSavingsType = CashPurchaseSavings::class;
+        protected $cashPurchaseSavingsDataType = '';
+        /**
+         * Whether this is the bill size selected to be the default bill for the area
+         * this building is in. Exactly one `FinancialAnalysis` in
+         * `BuildingSolarPotential` should have `default_bill` set.
+         *
+         * @var bool
+         */
+        public $defaultBill;
+        protected $financedPurchaseSavingsType = FinancedPurchaseSavings::class;
+        protected $financedPurchaseSavingsDataType = '';
+        protected $financialDetailsType = FinancialDetails::class;
+        protected $financialDetailsDataType = '';
+        protected $leasingSavingsType = LeasingSavings::class;
+        protected $leasingSavingsDataType = '';
+        protected $monthlyBillType = Money::class;
+        protected $monthlyBillDataType = '';
+        /**
+         * Index in solar_panel_configs of the optimum solar layout for this bill
+         * size. This can be -1 indicating that there is no layout. In this case, the
+         * remaining submessages will be omitted.
+         *
+         * @var int
+         */
+        public $panelConfigIndex;
+        /**
+         * How much electricity the house uses in an average month, based on the bill
+         * size and the local electricity rates.
+         *
+         * @param float $averageKwhPerMonth
+         */
+        public function setAverageKwhPerMonth($averageKwhPerMonth)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageKwhPerMonth()
+        {
+        }
+        /**
+         * Cost and benefit of buying the solar panels with cash.
+         *
+         * @param CashPurchaseSavings $cashPurchaseSavings
+         */
+        public function setCashPurchaseSavings(CashPurchaseSavings $cashPurchaseSavings)
+        {
+        }
+        /**
+         * @return CashPurchaseSavings
+         */
+        public function getCashPurchaseSavings()
+        {
+        }
+        /**
+         * Whether this is the bill size selected to be the default bill for the area
+         * this building is in. Exactly one `FinancialAnalysis` in
+         * `BuildingSolarPotential` should have `default_bill` set.
+         *
+         * @param bool $defaultBill
+         */
+        public function setDefaultBill($defaultBill)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefaultBill()
+        {
+        }
+        /**
+         * Cost and benefit of buying the solar panels by financing the purchase.
+         *
+         * @param FinancedPurchaseSavings $financedPurchaseSavings
+         */
+        public function setFinancedPurchaseSavings(FinancedPurchaseSavings $financedPurchaseSavings)
+        {
+        }
+        /**
+         * @return FinancedPurchaseSavings
+         */
+        public function getFinancedPurchaseSavings()
+        {
+        }
+        /**
+         * Financial information that applies regardless of the financing method used.
+         *
+         * @param FinancialDetails $financialDetails
+         */
+        public function setFinancialDetails(FinancialDetails $financialDetails)
+        {
+        }
+        /**
+         * @return FinancialDetails
+         */
+        public function getFinancialDetails()
+        {
+        }
+        /**
+         * Cost and benefit of leasing the solar panels.
+         *
+         * @param LeasingSavings $leasingSavings
+         */
+        public function setLeasingSavings(LeasingSavings $leasingSavings)
+        {
+        }
+        /**
+         * @return LeasingSavings
+         */
+        public function getLeasingSavings()
+        {
+        }
+        /**
+         * The monthly electric bill this analysis assumes.
+         *
+         * @param Money $monthlyBill
+         */
+        public function setMonthlyBill(Money $monthlyBill)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyBill()
+        {
+        }
+        /**
+         * Index in solar_panel_configs of the optimum solar layout for this bill
+         * size. This can be -1 indicating that there is no layout. In this case, the
+         * remaining submessages will be omitted.
+         *
+         * @param int $panelConfigIndex
+         */
+        public function setPanelConfigIndex($panelConfigIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPanelConfigIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Solar\FinancialAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageKwhPerMonth()
-    {
-    }
-    /**
-     * Cost and benefit of buying the solar panels with cash.
-     *
-     * @param CashPurchaseSavings $cashPurchaseSavings
-     */
-    public function setCashPurchaseSavings(CashPurchaseSavings $cashPurchaseSavings)
-    {
-    }
-    /**
-     * @return CashPurchaseSavings
-     */
-    public function getCashPurchaseSavings()
-    {
-    }
-    /**
-     * Whether this is the bill size selected to be the default bill for the area
-     * this building is in. Exactly one `FinancialAnalysis` in
-     * `BuildingSolarPotential` should have `default_bill` set.
-     *
-     * @param bool $defaultBill
-     */
-    public function setDefaultBill($defaultBill)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDefaultBill()
-    {
-    }
-    /**
-     * Cost and benefit of buying the solar panels by financing the purchase.
-     *
-     * @param FinancedPurchaseSavings $financedPurchaseSavings
-     */
-    public function setFinancedPurchaseSavings(FinancedPurchaseSavings $financedPurchaseSavings)
-    {
-    }
-    /**
-     * @return FinancedPurchaseSavings
-     */
-    public function getFinancedPurchaseSavings()
-    {
-    }
-    /**
-     * Financial information that applies regardless of the financing method used.
-     *
-     * @param FinancialDetails $financialDetails
-     */
-    public function setFinancialDetails(FinancialDetails $financialDetails)
-    {
-    }
-    /**
-     * @return FinancialDetails
-     */
-    public function getFinancialDetails()
-    {
-    }
-    /**
-     * Cost and benefit of leasing the solar panels.
-     *
-     * @param LeasingSavings $leasingSavings
-     */
-    public function setLeasingSavings(LeasingSavings $leasingSavings)
-    {
-    }
-    /**
-     * @return LeasingSavings
-     */
-    public function getLeasingSavings()
-    {
-    }
-    /**
-     * The monthly electric bill this analysis assumes.
-     *
-     * @param Money $monthlyBill
-     */
-    public function setMonthlyBill(Money $monthlyBill)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyBill()
-    {
-    }
-    /**
-     * Index in solar_panel_configs of the optimum solar layout for this bill
-     * size. This can be -1 indicating that there is no layout. In this case, the
-     * remaining submessages will be omitted.
-     *
-     * @param int $panelConfigIndex
-     */
-    public function setPanelConfigIndex($panelConfigIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPanelConfigIndex()
+    class Google_Service_Solar_FinancialAnalysis extends \Google\Service\Solar\FinancialAnalysis
     {
     }
 }

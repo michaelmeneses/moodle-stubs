@@ -21,260 +21,269 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataAttribute extends \Google\Model
-{
-    /**
-     * Output only. The number of child attributes present for this attribute.
-     *
-     * @var int
-     */
-    public $attributeCount;
-    /**
-     * Output only. The time when the DataAttribute was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $dataAccessSpecType = GoogleCloudDataplexV1DataAccessSpec::class;
-    protected $dataAccessSpecDataType = '';
-    /**
-     * Optional. Description of the DataAttribute.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User friendly display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. User-defined labels for the DataAttribute.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The relative resource name of the dataAttribute, of the form:
-     * projects/{project_number}/locations/{location_id}/dataTaxonomies/{dataTaxon
-     * omy}/attributes/{data_attribute_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The ID of the parent DataAttribute resource, should belong to the
-     * same data taxonomy. Circular dependency in parent chain is not valid.
-     * Maximum depth of the hierarchy allowed is 4. a -> b -> c -> d -> e, depth =
-     * 4
-     *
-     * @var string
-     */
-    public $parentId;
-    protected $resourceAccessSpecType = GoogleCloudDataplexV1ResourceAccessSpec::class;
-    protected $resourceAccessSpecDataType = '';
-    /**
-     * Output only. System generated globally unique ID for the DataAttribute.
-     * This ID will be different if the DataAttribute is deleted and re-created
-     * with the same name.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time when the DataAttribute was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The number of child attributes present for this attribute.
-     *
-     * @param int $attributeCount
-     */
-    public function setAttributeCount($attributeCount)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataAttribute extends \Google\Model
     {
+        /**
+         * Output only. The number of child attributes present for this attribute.
+         *
+         * @var int
+         */
+        public $attributeCount;
+        /**
+         * Output only. The time when the DataAttribute was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $dataAccessSpecType = GoogleCloudDataplexV1DataAccessSpec::class;
+        protected $dataAccessSpecDataType = '';
+        /**
+         * Optional. Description of the DataAttribute.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User friendly display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. User-defined labels for the DataAttribute.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The relative resource name of the dataAttribute, of the form:
+         * projects/{project_number}/locations/{location_id}/dataTaxonomies/{dataTaxon
+         * omy}/attributes/{data_attribute_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The ID of the parent DataAttribute resource, should belong to the
+         * same data taxonomy. Circular dependency in parent chain is not valid.
+         * Maximum depth of the hierarchy allowed is 4. a -> b -> c -> d -> e, depth =
+         * 4
+         *
+         * @var string
+         */
+        public $parentId;
+        protected $resourceAccessSpecType = GoogleCloudDataplexV1ResourceAccessSpec::class;
+        protected $resourceAccessSpecDataType = '';
+        /**
+         * Output only. System generated globally unique ID for the DataAttribute.
+         * This ID will be different if the DataAttribute is deleted and re-created
+         * with the same name.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time when the DataAttribute was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The number of child attributes present for this attribute.
+         *
+         * @param int $attributeCount
+         */
+        public function setAttributeCount($attributeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAttributeCount()
+        {
+        }
+        /**
+         * Output only. The time when the DataAttribute was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Specified when applied to data stored on the resource (eg: rows,
+         * columns in BigQuery Tables).
+         *
+         * @param GoogleCloudDataplexV1DataAccessSpec $dataAccessSpec
+         */
+        public function setDataAccessSpec(GoogleCloudDataplexV1DataAccessSpec $dataAccessSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataAccessSpec
+         */
+        public function getDataAccessSpec()
+        {
+        }
+        /**
+         * Optional. Description of the DataAttribute.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User friendly display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. User-defined labels for the DataAttribute.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The relative resource name of the dataAttribute, of the form:
+         * projects/{project_number}/locations/{location_id}/dataTaxonomies/{dataTaxon
+         * omy}/attributes/{data_attribute_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The ID of the parent DataAttribute resource, should belong to the
+         * same data taxonomy. Circular dependency in parent chain is not valid.
+         * Maximum depth of the hierarchy allowed is 4. a -> b -> c -> d -> e, depth =
+         * 4
+         *
+         * @param string $parentId
+         */
+        public function setParentId($parentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentId()
+        {
+        }
+        /**
+         * Optional. Specified when applied to a resource (eg: Cloud Storage bucket,
+         * BigQuery dataset, BigQuery table).
+         *
+         * @param GoogleCloudDataplexV1ResourceAccessSpec $resourceAccessSpec
+         */
+        public function setResourceAccessSpec(GoogleCloudDataplexV1ResourceAccessSpec $resourceAccessSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1ResourceAccessSpec
+         */
+        public function getResourceAccessSpec()
+        {
+        }
+        /**
+         * Output only. System generated globally unique ID for the DataAttribute.
+         * This ID will be different if the DataAttribute is deleted and re-created
+         * with the same name.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time when the DataAttribute was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeCount()
-    {
-    }
-    /**
-     * Output only. The time when the DataAttribute was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Specified when applied to data stored on the resource (eg: rows,
-     * columns in BigQuery Tables).
-     *
-     * @param GoogleCloudDataplexV1DataAccessSpec $dataAccessSpec
-     */
-    public function setDataAccessSpec(GoogleCloudDataplexV1DataAccessSpec $dataAccessSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataAccessSpec
-     */
-    public function getDataAccessSpec()
-    {
-    }
-    /**
-     * Optional. Description of the DataAttribute.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User friendly display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. User-defined labels for the DataAttribute.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The relative resource name of the dataAttribute, of the form:
-     * projects/{project_number}/locations/{location_id}/dataTaxonomies/{dataTaxon
-     * omy}/attributes/{data_attribute_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The ID of the parent DataAttribute resource, should belong to the
-     * same data taxonomy. Circular dependency in parent chain is not valid.
-     * Maximum depth of the hierarchy allowed is 4. a -> b -> c -> d -> e, depth =
-     * 4
-     *
-     * @param string $parentId
-     */
-    public function setParentId($parentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentId()
-    {
-    }
-    /**
-     * Optional. Specified when applied to a resource (eg: Cloud Storage bucket,
-     * BigQuery dataset, BigQuery table).
-     *
-     * @param GoogleCloudDataplexV1ResourceAccessSpec $resourceAccessSpec
-     */
-    public function setResourceAccessSpec(GoogleCloudDataplexV1ResourceAccessSpec $resourceAccessSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1ResourceAccessSpec
-     */
-    public function getResourceAccessSpec()
-    {
-    }
-    /**
-     * Output only. System generated globally unique ID for the DataAttribute.
-     * This ID will be different if the DataAttribute is deleted and re-created
-     * with the same name.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time when the DataAttribute was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataAttribute extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAttribute
     {
     }
 }

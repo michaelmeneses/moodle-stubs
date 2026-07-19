@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\external\reports;
 
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\helpers\report;
+use core_reportbuilder\local\models\report as report_model;
 /**
  * External method for deleting reports
  *

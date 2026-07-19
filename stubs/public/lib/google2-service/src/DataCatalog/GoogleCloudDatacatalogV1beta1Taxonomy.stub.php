@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1Taxonomy extends \Google\Collection
-{
-    protected $collection_key = 'activatedPolicyTypes';
-    public $activatedPolicyTypes;
-    public $description;
-    public $displayName;
-    public $name;
-    public $policyTagCount;
-    protected $taxonomyTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
-    protected $taxonomyTimestampsDataType = '';
-    public function setActivatedPolicyTypes($activatedPolicyTypes)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1Taxonomy extends \Google\Collection
     {
+        protected $collection_key = 'activatedPolicyTypes';
+        public $activatedPolicyTypes;
+        public $description;
+        public $displayName;
+        public $name;
+        public $policyTagCount;
+        protected $taxonomyTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
+        protected $taxonomyTimestampsDataType = '';
+        public function setActivatedPolicyTypes($activatedPolicyTypes)
+        {
+        }
+        public function getActivatedPolicyTypes()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setPolicyTagCount($policyTagCount)
+        {
+        }
+        public function getPolicyTagCount()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function setTaxonomyTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $taxonomyTimestamps)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function getTaxonomyTimestamps()
+        {
+        }
     }
-    public function getActivatedPolicyTypes()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setPolicyTagCount($policyTagCount)
-    {
-    }
-    public function getPolicyTagCount()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Taxonomy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTaxonomyTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $taxonomyTimestamps)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
-     */
-    public function getTaxonomyTimestamps()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1Taxonomy extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Taxonomy
     {
     }
 }

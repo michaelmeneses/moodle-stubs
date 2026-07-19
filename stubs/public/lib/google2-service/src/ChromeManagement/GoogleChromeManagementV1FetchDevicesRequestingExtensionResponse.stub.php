@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceDetails';
-    protected $deviceDetailsType = GoogleChromeManagementV1DeviceRequestingExtensionDetails::class;
-    protected $deviceDetailsDataType = 'array';
-    /**
-     * Optional. Token to specify the next page in the list. Token expires after 1
-     * day.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Optional. Total number of devices in response.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Details of devices that have requested the queried extension.
-     *
-     * @param GoogleChromeManagementV1DeviceRequestingExtensionDetails[] $deviceDetails
-     */
-    public function setDeviceDetails($deviceDetails)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceDetails';
+        protected $deviceDetailsType = GoogleChromeManagementV1DeviceRequestingExtensionDetails::class;
+        protected $deviceDetailsDataType = 'array';
+        /**
+         * Optional. Token to specify the next page in the list. Token expires after 1
+         * day.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Optional. Total number of devices in response.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Details of devices that have requested the queried extension.
+         *
+         * @param GoogleChromeManagementV1DeviceRequestingExtensionDetails[] $deviceDetails
+         */
+        public function setDeviceDetails($deviceDetails)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceRequestingExtensionDetails[]
+         */
+        public function getDeviceDetails()
+        {
+        }
+        /**
+         * Optional. Token to specify the next page in the list. Token expires after 1
+         * day.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Optional. Total number of devices in response.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1DeviceRequestingExtensionDetails[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceDetails()
-    {
-    }
-    /**
-     * Optional. Token to specify the next page in the list. Token expires after 1
-     * day.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Optional. Total number of devices in response.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse
     {
     }
 }

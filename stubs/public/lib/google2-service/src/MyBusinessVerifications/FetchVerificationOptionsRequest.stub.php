@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class FetchVerificationOptionsRequest extends \Google\Model
-{
-    protected $contextType = ServiceBusinessContext::class;
-    protected $contextDataType = '';
-    /**
-     * Required. The BCP 47 language code representing the language that is to be
-     * used for the verification process. Available options vary by language.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Optional. Extra context information for the verification of service
-     * businesses. Can only be applied to the locations whose business type is
-     * CUSTOMER_LOCATION_ONLY. Specifying an accurate address could enable more
-     * options. INVALID_ARGUMENT will be thrown if it is set for other business
-     * types of locations.
-     *
-     * @param ServiceBusinessContext $context
-     */
-    public function setContext(ServiceBusinessContext $context)
+namespace Google\Service\MyBusinessVerifications {
+    class FetchVerificationOptionsRequest extends \Google\Model
     {
+        protected $contextType = ServiceBusinessContext::class;
+        protected $contextDataType = '';
+        /**
+         * Required. The BCP 47 language code representing the language that is to be
+         * used for the verification process. Available options vary by language.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Optional. Extra context information for the verification of service
+         * businesses. Can only be applied to the locations whose business type is
+         * CUSTOMER_LOCATION_ONLY. Specifying an accurate address could enable more
+         * options. INVALID_ARGUMENT will be thrown if it is set for other business
+         * types of locations.
+         *
+         * @param ServiceBusinessContext $context
+         */
+        public function setContext(ServiceBusinessContext $context)
+        {
+        }
+        /**
+         * @return ServiceBusinessContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Required. The BCP 47 language code representing the language that is to be
+         * used for the verification process. Available options vary by language.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceBusinessContext
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\FetchVerificationOptionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Required. The BCP 47 language code representing the language that is to be
-     * used for the verification process. Available options vary by language.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_MyBusinessVerifications_FetchVerificationOptionsRequest extends \Google\Service\MyBusinessVerifications\FetchVerificationOptionsRequest
     {
     }
 }

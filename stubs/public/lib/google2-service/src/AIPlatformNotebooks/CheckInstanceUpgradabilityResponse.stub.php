@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class CheckInstanceUpgradabilityResponse extends \Google\Model
-{
-    /**
-     * The new image self link this instance will be upgraded to if calling the
-     * upgrade endpoint. This field will only be populated if field upgradeable is
-     * true.
-     *
-     * @var string
-     */
-    public $upgradeImage;
-    /**
-     * Additional information about upgrade.
-     *
-     * @var string
-     */
-    public $upgradeInfo;
-    /**
-     * The version this instance will be upgraded to if calling the upgrade
-     * endpoint. This field will only be populated if field upgradeable is true.
-     *
-     * @var string
-     */
-    public $upgradeVersion;
-    /**
-     * If an instance is upgradeable.
-     *
-     * @var bool
-     */
-    public $upgradeable;
-    /**
-     * The new image self link this instance will be upgraded to if calling the
-     * upgrade endpoint. This field will only be populated if field upgradeable is
-     * true.
-     *
-     * @param string $upgradeImage
-     */
-    public function setUpgradeImage($upgradeImage)
+namespace Google\Service\AIPlatformNotebooks {
+    class CheckInstanceUpgradabilityResponse extends \Google\Model
     {
+        /**
+         * The new image self link this instance will be upgraded to if calling the
+         * upgrade endpoint. This field will only be populated if field upgradeable is
+         * true.
+         *
+         * @var string
+         */
+        public $upgradeImage;
+        /**
+         * Additional information about upgrade.
+         *
+         * @var string
+         */
+        public $upgradeInfo;
+        /**
+         * The version this instance will be upgraded to if calling the upgrade
+         * endpoint. This field will only be populated if field upgradeable is true.
+         *
+         * @var string
+         */
+        public $upgradeVersion;
+        /**
+         * If an instance is upgradeable.
+         *
+         * @var bool
+         */
+        public $upgradeable;
+        /**
+         * The new image self link this instance will be upgraded to if calling the
+         * upgrade endpoint. This field will only be populated if field upgradeable is
+         * true.
+         *
+         * @param string $upgradeImage
+         */
+        public function setUpgradeImage($upgradeImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeImage()
+        {
+        }
+        /**
+         * Additional information about upgrade.
+         *
+         * @param string $upgradeInfo
+         */
+        public function setUpgradeInfo($upgradeInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeInfo()
+        {
+        }
+        /**
+         * The version this instance will be upgraded to if calling the upgrade
+         * endpoint. This field will only be populated if field upgradeable is true.
+         *
+         * @param string $upgradeVersion
+         */
+        public function setUpgradeVersion($upgradeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeVersion()
+        {
+        }
+        /**
+         * If an instance is upgradeable.
+         *
+         * @param bool $upgradeable
+         */
+        public function setUpgradeable($upgradeable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpgradeable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\CheckInstanceUpgradabilityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpgradeImage()
-    {
-    }
-    /**
-     * Additional information about upgrade.
-     *
-     * @param string $upgradeInfo
-     */
-    public function setUpgradeInfo($upgradeInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeInfo()
-    {
-    }
-    /**
-     * The version this instance will be upgraded to if calling the upgrade
-     * endpoint. This field will only be populated if field upgradeable is true.
-     *
-     * @param string $upgradeVersion
-     */
-    public function setUpgradeVersion($upgradeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeVersion()
-    {
-    }
-    /**
-     * If an instance is upgradeable.
-     *
-     * @param bool $upgradeable
-     */
-    public function setUpgradeable($upgradeable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpgradeable()
+    class Google_Service_AIPlatformNotebooks_CheckInstanceUpgradabilityResponse extends \Google\Service\AIPlatformNotebooks\CheckInstanceUpgradabilityResponse
     {
     }
 }

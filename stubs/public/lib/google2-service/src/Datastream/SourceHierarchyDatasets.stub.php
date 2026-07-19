@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SourceHierarchyDatasets extends \Google\Model
-{
-    protected $datasetTemplateType = DatasetTemplate::class;
-    protected $datasetTemplateDataType = '';
-    /**
-     * Optional. The project id of the BigQuery dataset. If not specified, the
-     * project will be inferred from the stream resource.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The dataset template to use for dynamic dataset creation.
-     *
-     * @param DatasetTemplate $datasetTemplate
-     */
-    public function setDatasetTemplate(DatasetTemplate $datasetTemplate)
+namespace Google\Service\Datastream {
+    class SourceHierarchyDatasets extends \Google\Model
     {
+        protected $datasetTemplateType = DatasetTemplate::class;
+        protected $datasetTemplateDataType = '';
+        /**
+         * Optional. The project id of the BigQuery dataset. If not specified, the
+         * project will be inferred from the stream resource.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The dataset template to use for dynamic dataset creation.
+         *
+         * @param DatasetTemplate $datasetTemplate
+         */
+        public function setDatasetTemplate(DatasetTemplate $datasetTemplate)
+        {
+        }
+        /**
+         * @return DatasetTemplate
+         */
+        public function getDatasetTemplate()
+        {
+        }
+        /**
+         * Optional. The project id of the BigQuery dataset. If not specified, the
+         * project will be inferred from the stream resource.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatasetTemplate
+     * Runtime class alias of \Google\Service\Datastream\SourceHierarchyDatasets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetTemplate()
-    {
-    }
-    /**
-     * Optional. The project id of the BigQuery dataset. If not specified, the
-     * project will be inferred from the stream resource.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_Datastream_SourceHierarchyDatasets extends \Google\Service\Datastream\SourceHierarchyDatasets
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PartMediaResolution extends \Google\Model
-{
-    /**
-     * Media resolution has not been set.
-     */
-    public const LEVEL_MEDIA_RESOLUTION_UNSPECIFIED = 'MEDIA_RESOLUTION_UNSPECIFIED';
-    /**
-     * Media resolution set to low.
-     */
-    public const LEVEL_MEDIA_RESOLUTION_LOW = 'MEDIA_RESOLUTION_LOW';
-    /**
-     * Media resolution set to medium.
-     */
-    public const LEVEL_MEDIA_RESOLUTION_MEDIUM = 'MEDIA_RESOLUTION_MEDIUM';
-    /**
-     * Media resolution set to high.
-     */
-    public const LEVEL_MEDIA_RESOLUTION_HIGH = 'MEDIA_RESOLUTION_HIGH';
-    /**
-     * The tokenization quality used for given media.
-     *
-     * @var string
-     */
-    public $level;
-    /**
-     * The tokenization quality used for given media.
-     *
-     * Accepted values: MEDIA_RESOLUTION_UNSPECIFIED, MEDIA_RESOLUTION_LOW,
-     * MEDIA_RESOLUTION_MEDIUM, MEDIA_RESOLUTION_HIGH
-     *
-     * @param self::LEVEL_* $level
-     */
-    public function setLevel($level)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PartMediaResolution extends \Google\Model
     {
+        /**
+         * Media resolution has not been set.
+         */
+        public const LEVEL_MEDIA_RESOLUTION_UNSPECIFIED = 'MEDIA_RESOLUTION_UNSPECIFIED';
+        /**
+         * Media resolution set to low.
+         */
+        public const LEVEL_MEDIA_RESOLUTION_LOW = 'MEDIA_RESOLUTION_LOW';
+        /**
+         * Media resolution set to medium.
+         */
+        public const LEVEL_MEDIA_RESOLUTION_MEDIUM = 'MEDIA_RESOLUTION_MEDIUM';
+        /**
+         * Media resolution set to high.
+         */
+        public const LEVEL_MEDIA_RESOLUTION_HIGH = 'MEDIA_RESOLUTION_HIGH';
+        /**
+         * The tokenization quality used for given media.
+         *
+         * @var string
+         */
+        public $level;
+        /**
+         * The tokenization quality used for given media.
+         *
+         * Accepted values: MEDIA_RESOLUTION_UNSPECIFIED, MEDIA_RESOLUTION_LOW,
+         * MEDIA_RESOLUTION_MEDIUM, MEDIA_RESOLUTION_HIGH
+         *
+         * @param self::LEVEL_* $level
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return self::LEVEL_*
+         */
+        public function getLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::LEVEL_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PartMediaResolution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLevel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PartMediaResolution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PartMediaResolution
     {
     }
 }

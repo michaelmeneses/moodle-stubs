@@ -21,73 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Script (v1).
- *
- * <p>
- * Manages and executes Google Apps Script projects.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/apps-script/api/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Script extends \Google\Service
-{
-    /** Read, compose, send, and permanently delete all your email from Gmail. */
-    const MAIL_GOOGLE_COM = "https://mail.google.com/";
-    /** See, edit, share, and permanently delete all the calendars you can access using Google Calendar. */
-    const WWW_GOOGLE_COM_CALENDAR_FEEDS = "https://www.google.com/calendar/feeds";
-    /** See, edit, download, and permanently delete your contacts. */
-    const WWW_GOOGLE_COM_M8_FEEDS = "https://www.google.com/m8/feeds";
-    /** View and manage the provisioning of groups on your domain. */
-    const ADMIN_DIRECTORY_GROUP = "https://www.googleapis.com/auth/admin.directory.group";
-    /** View and manage the provisioning of users on your domain. */
-    const ADMIN_DIRECTORY_USER = "https://www.googleapis.com/auth/admin.directory.user";
-    /** See, edit, create, and delete all your Google Docs documents. */
-    const DOCUMENTS = "https://www.googleapis.com/auth/documents";
-    /** See, edit, create, and delete all of your Google Drive files. */
-    const DRIVE = "https://www.googleapis.com/auth/drive";
-    /** View and manage your forms in Google Drive. */
-    const FORMS = "https://www.googleapis.com/auth/forms";
-    /** View and manage forms that this application has been installed in. */
-    const FORMS_CURRENTONLY = "https://www.googleapis.com/auth/forms.currentonly";
-    /** View and manage your Google Groups. */
-    const GROUPS = "https://www.googleapis.com/auth/groups";
-    /** Create and update Google Apps Script deployments. */
-    const SCRIPT_DEPLOYMENTS = "https://www.googleapis.com/auth/script.deployments";
-    /** View Google Apps Script deployments. */
-    const SCRIPT_DEPLOYMENTS_READONLY = "https://www.googleapis.com/auth/script.deployments.readonly";
-    /** View Google Apps Script project's metrics. */
-    const SCRIPT_METRICS = "https://www.googleapis.com/auth/script.metrics";
-    /** View Google Apps Script processes. */
-    const SCRIPT_PROCESSES = "https://www.googleapis.com/auth/script.processes";
-    /** Create and update Google Apps Script projects. */
-    const SCRIPT_PROJECTS = "https://www.googleapis.com/auth/script.projects";
-    /** View Google Apps Script projects. */
-    const SCRIPT_PROJECTS_READONLY = "https://www.googleapis.com/auth/script.projects.readonly";
-    /** See, edit, create, and delete all your Google Sheets spreadsheets. */
-    const SPREADSHEETS = "https://www.googleapis.com/auth/spreadsheets";
-    /** See your primary Google Account email address. */
-    const USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
-    public $processes;
-    public $projects;
-    public $projects_deployments;
-    public $projects_versions;
-    public $scripts;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Script service.
+     * Service definition for Script (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manages and executes Google Apps Script projects.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/apps-script/api/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Script extends \Google\Service
+    {
+        /** Read, compose, send, and permanently delete all your email from Gmail. */
+        const MAIL_GOOGLE_COM = "https://mail.google.com/";
+        /** See, edit, share, and permanently delete all the calendars you can access using Google Calendar. */
+        const WWW_GOOGLE_COM_CALENDAR_FEEDS = "https://www.google.com/calendar/feeds";
+        /** See, edit, download, and permanently delete your contacts. */
+        const WWW_GOOGLE_COM_M8_FEEDS = "https://www.google.com/m8/feeds";
+        /** View and manage the provisioning of groups on your domain. */
+        const ADMIN_DIRECTORY_GROUP = "https://www.googleapis.com/auth/admin.directory.group";
+        /** View and manage the provisioning of users on your domain. */
+        const ADMIN_DIRECTORY_USER = "https://www.googleapis.com/auth/admin.directory.user";
+        /** See, edit, create, and delete all your Google Docs documents. */
+        const DOCUMENTS = "https://www.googleapis.com/auth/documents";
+        /** See, edit, create, and delete all of your Google Drive files. */
+        const DRIVE = "https://www.googleapis.com/auth/drive";
+        /** View and manage your forms in Google Drive. */
+        const FORMS = "https://www.googleapis.com/auth/forms";
+        /** View and manage forms that this application has been installed in. */
+        const FORMS_CURRENTONLY = "https://www.googleapis.com/auth/forms.currentonly";
+        /** View and manage your Google Groups. */
+        const GROUPS = "https://www.googleapis.com/auth/groups";
+        /** Create and update Google Apps Script deployments. */
+        const SCRIPT_DEPLOYMENTS = "https://www.googleapis.com/auth/script.deployments";
+        /** View Google Apps Script deployments. */
+        const SCRIPT_DEPLOYMENTS_READONLY = "https://www.googleapis.com/auth/script.deployments.readonly";
+        /** View Google Apps Script project's metrics. */
+        const SCRIPT_METRICS = "https://www.googleapis.com/auth/script.metrics";
+        /** View Google Apps Script processes. */
+        const SCRIPT_PROCESSES = "https://www.googleapis.com/auth/script.processes";
+        /** Create and update Google Apps Script projects. */
+        const SCRIPT_PROJECTS = "https://www.googleapis.com/auth/script.projects";
+        /** View Google Apps Script projects. */
+        const SCRIPT_PROJECTS_READONLY = "https://www.googleapis.com/auth/script.projects.readonly";
+        /** See, edit, create, and delete all your Google Sheets spreadsheets. */
+        const SPREADSHEETS = "https://www.googleapis.com/auth/spreadsheets";
+        /** See your primary Google Account email address. */
+        const USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
+        public $processes;
+        public $projects;
+        public $projects_deployments;
+        public $projects_versions;
+        public $scripts;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Script service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Script registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Script extends \Google\Service\Script
     {
     }
 }

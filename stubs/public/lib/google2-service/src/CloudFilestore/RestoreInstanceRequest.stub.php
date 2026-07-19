@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class RestoreInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. Name of the file share in the Filestore instance that the backup
-     * is being restored to.
-     *
-     * @var string
-     */
-    public $fileShare;
-    /**
-     * The resource name of the backup, in the format
-     * `projects/{project_number}/locations/{location_id}/backups/{backup_id}`.
-     *
-     * @var string
-     */
-    public $sourceBackup;
-    /**
-     * Required. Name of the file share in the Filestore instance that the backup
-     * is being restored to.
-     *
-     * @param string $fileShare
-     */
-    public function setFileShare($fileShare)
+namespace Google\Service\CloudFilestore {
+    class RestoreInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. Name of the file share in the Filestore instance that the backup
+         * is being restored to.
+         *
+         * @var string
+         */
+        public $fileShare;
+        /**
+         * The resource name of the backup, in the format
+         * `projects/{project_number}/locations/{location_id}/backups/{backup_id}`.
+         *
+         * @var string
+         */
+        public $sourceBackup;
+        /**
+         * Required. Name of the file share in the Filestore instance that the backup
+         * is being restored to.
+         *
+         * @param string $fileShare
+         */
+        public function setFileShare($fileShare)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileShare()
+        {
+        }
+        /**
+         * The resource name of the backup, in the format
+         * `projects/{project_number}/locations/{location_id}/backups/{backup_id}`.
+         *
+         * @param string $sourceBackup
+         */
+        public function setSourceBackup($sourceBackup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceBackup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\RestoreInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileShare()
-    {
-    }
-    /**
-     * The resource name of the backup, in the format
-     * `projects/{project_number}/locations/{location_id}/backups/{backup_id}`.
-     *
-     * @param string $sourceBackup
-     */
-    public function setSourceBackup($sourceBackup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceBackup()
+    class Google_Service_CloudFilestore_RestoreInstanceRequest extends \Google\Service\CloudFilestore\RestoreInstanceRequest
     {
     }
 }

@@ -21,235 +21,244 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV5HashList extends \Google\Model
-{
-    protected $additionsEightBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit::class;
-    protected $additionsEightBytesDataType = '';
-    protected $additionsFourBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit::class;
-    protected $additionsFourBytesDataType = '';
-    protected $additionsSixteenBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit::class;
-    protected $additionsSixteenBytesDataType = '';
-    protected $additionsThirtyTwoBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit::class;
-    protected $additionsThirtyTwoBytesDataType = '';
-    protected $compressedRemovalsType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit::class;
-    protected $compressedRemovalsDataType = '';
-    protected $metadataType = GoogleSecuritySafebrowsingV5HashListMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Clients should wait at least this long to get the hash list again. If
-     * omitted or zero, clients SHOULD fetch immediately because it indicates that
-     * the server has an additional update to be sent to the client, but could not
-     * due to the client-specified constraints.
-     *
-     * @var string
-     */
-    public $minimumWaitDuration;
-    /**
-     * The name of the hash list. Note that the Global Cache is also just a hash
-     * list and can be referred to here.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * When true, this is a partial diff containing additions and removals based
-     * on what the client already has. When false, this is the complete hash list.
-     * When false, the client MUST delete any locally stored version for this hash
-     * list. This means that either the version possessed by the client is
-     * seriously out-of-date or the client data is believed to be corrupt. The
-     * `compressed_removals` field will be empty. When true, the client MUST apply
-     * an incremental update by applying removals and then additions.
-     *
-     * @var bool
-     */
-    public $partialUpdate;
-    /**
-     * The sorted list of all hashes, hashed again with SHA256. This is the
-     * checksum for the sorted list of all hashes present in the database after
-     * applying the provided update. In the case that no updates were provided,
-     * the server will omit this field to indicate that the client should use the
-     * existing checksum.
-     *
-     * @var string
-     */
-    public $sha256Checksum;
-    /**
-     * The version of the hash list. The client MUST NOT manipulate those bytes.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The 8-byte additions.
-     *
-     * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit $additionsEightBytes
-     */
-    public function setAdditionsEightBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit $additionsEightBytes)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV5HashList extends \Google\Model
     {
+        protected $additionsEightBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit::class;
+        protected $additionsEightBytesDataType = '';
+        protected $additionsFourBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit::class;
+        protected $additionsFourBytesDataType = '';
+        protected $additionsSixteenBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit::class;
+        protected $additionsSixteenBytesDataType = '';
+        protected $additionsThirtyTwoBytesType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit::class;
+        protected $additionsThirtyTwoBytesDataType = '';
+        protected $compressedRemovalsType = GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit::class;
+        protected $compressedRemovalsDataType = '';
+        protected $metadataType = GoogleSecuritySafebrowsingV5HashListMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Clients should wait at least this long to get the hash list again. If
+         * omitted or zero, clients SHOULD fetch immediately because it indicates that
+         * the server has an additional update to be sent to the client, but could not
+         * due to the client-specified constraints.
+         *
+         * @var string
+         */
+        public $minimumWaitDuration;
+        /**
+         * The name of the hash list. Note that the Global Cache is also just a hash
+         * list and can be referred to here.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * When true, this is a partial diff containing additions and removals based
+         * on what the client already has. When false, this is the complete hash list.
+         * When false, the client MUST delete any locally stored version for this hash
+         * list. This means that either the version possessed by the client is
+         * seriously out-of-date or the client data is believed to be corrupt. The
+         * `compressed_removals` field will be empty. When true, the client MUST apply
+         * an incremental update by applying removals and then additions.
+         *
+         * @var bool
+         */
+        public $partialUpdate;
+        /**
+         * The sorted list of all hashes, hashed again with SHA256. This is the
+         * checksum for the sorted list of all hashes present in the database after
+         * applying the provided update. In the case that no updates were provided,
+         * the server will omit this field to indicate that the client should use the
+         * existing checksum.
+         *
+         * @var string
+         */
+        public $sha256Checksum;
+        /**
+         * The version of the hash list. The client MUST NOT manipulate those bytes.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The 8-byte additions.
+         *
+         * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit $additionsEightBytes
+         */
+        public function setAdditionsEightBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit $additionsEightBytes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit
+         */
+        public function getAdditionsEightBytes()
+        {
+        }
+        /**
+         * The 4-byte additions.
+         *
+         * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $additionsFourBytes
+         */
+        public function setAdditionsFourBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $additionsFourBytes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit
+         */
+        public function getAdditionsFourBytes()
+        {
+        }
+        /**
+         * The 16-byte additions.
+         *
+         * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit $additionsSixteenBytes
+         */
+        public function setAdditionsSixteenBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit $additionsSixteenBytes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit
+         */
+        public function getAdditionsSixteenBytes()
+        {
+        }
+        /**
+         * The 32-byte additions.
+         *
+         * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit $additionsThirtyTwoBytes
+         */
+        public function setAdditionsThirtyTwoBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit $additionsThirtyTwoBytes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit
+         */
+        public function getAdditionsThirtyTwoBytes()
+        {
+        }
+        /**
+         * The Rice-delta encoded version of removal indices. Since each hash list
+         * definitely has less than 2^32 entries, the indices are treated as 32-bit
+         * integers and encoded.
+         *
+         * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $compressedRemovals
+         */
+        public function setCompressedRemovals(GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $compressedRemovals)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit
+         */
+        public function getCompressedRemovals()
+        {
+        }
+        /**
+         * Metadata about the hash list. This is not populated by the `GetHashList`
+         * method, but this is populated by the `ListHashLists` method.
+         *
+         * @param GoogleSecuritySafebrowsingV5HashListMetadata $metadata
+         */
+        public function setMetadata(GoogleSecuritySafebrowsingV5HashListMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5HashListMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Clients should wait at least this long to get the hash list again. If
+         * omitted or zero, clients SHOULD fetch immediately because it indicates that
+         * the server has an additional update to be sent to the client, but could not
+         * due to the client-specified constraints.
+         *
+         * @param string $minimumWaitDuration
+         */
+        public function setMinimumWaitDuration($minimumWaitDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimumWaitDuration()
+        {
+        }
+        /**
+         * The name of the hash list. Note that the Global Cache is also just a hash
+         * list and can be referred to here.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * When true, this is a partial diff containing additions and removals based
+         * on what the client already has. When false, this is the complete hash list.
+         * When false, the client MUST delete any locally stored version for this hash
+         * list. This means that either the version possessed by the client is
+         * seriously out-of-date or the client data is believed to be corrupt. The
+         * `compressed_removals` field will be empty. When true, the client MUST apply
+         * an incremental update by applying removals and then additions.
+         *
+         * @param bool $partialUpdate
+         */
+        public function setPartialUpdate($partialUpdate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPartialUpdate()
+        {
+        }
+        /**
+         * The sorted list of all hashes, hashed again with SHA256. This is the
+         * checksum for the sorted list of all hashes present in the database after
+         * applying the provided update. In the case that no updates were provided,
+         * the server will omit this field to indicate that the client should use the
+         * existing checksum.
+         *
+         * @param string $sha256Checksum
+         */
+        public function setSha256Checksum($sha256Checksum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256Checksum()
+        {
+        }
+        /**
+         * The version of the hash list. The client MUST NOT manipulate those bytes.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded64Bit
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5HashList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionsEightBytes()
-    {
-    }
-    /**
-     * The 4-byte additions.
-     *
-     * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $additionsFourBytes
-     */
-    public function setAdditionsFourBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $additionsFourBytes)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit
-     */
-    public function getAdditionsFourBytes()
-    {
-    }
-    /**
-     * The 16-byte additions.
-     *
-     * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit $additionsSixteenBytes
-     */
-    public function setAdditionsSixteenBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit $additionsSixteenBytes)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit
-     */
-    public function getAdditionsSixteenBytes()
-    {
-    }
-    /**
-     * The 32-byte additions.
-     *
-     * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit $additionsThirtyTwoBytes
-     */
-    public function setAdditionsThirtyTwoBytes(GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit $additionsThirtyTwoBytes)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded256Bit
-     */
-    public function getAdditionsThirtyTwoBytes()
-    {
-    }
-    /**
-     * The Rice-delta encoded version of removal indices. Since each hash list
-     * definitely has less than 2^32 entries, the indices are treated as 32-bit
-     * integers and encoded.
-     *
-     * @param GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $compressedRemovals
-     */
-    public function setCompressedRemovals(GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit $compressedRemovals)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5RiceDeltaEncoded32Bit
-     */
-    public function getCompressedRemovals()
-    {
-    }
-    /**
-     * Metadata about the hash list. This is not populated by the `GetHashList`
-     * method, but this is populated by the `ListHashLists` method.
-     *
-     * @param GoogleSecuritySafebrowsingV5HashListMetadata $metadata
-     */
-    public function setMetadata(GoogleSecuritySafebrowsingV5HashListMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5HashListMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Clients should wait at least this long to get the hash list again. If
-     * omitted or zero, clients SHOULD fetch immediately because it indicates that
-     * the server has an additional update to be sent to the client, but could not
-     * due to the client-specified constraints.
-     *
-     * @param string $minimumWaitDuration
-     */
-    public function setMinimumWaitDuration($minimumWaitDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimumWaitDuration()
-    {
-    }
-    /**
-     * The name of the hash list. Note that the Global Cache is also just a hash
-     * list and can be referred to here.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * When true, this is a partial diff containing additions and removals based
-     * on what the client already has. When false, this is the complete hash list.
-     * When false, the client MUST delete any locally stored version for this hash
-     * list. This means that either the version possessed by the client is
-     * seriously out-of-date or the client data is believed to be corrupt. The
-     * `compressed_removals` field will be empty. When true, the client MUST apply
-     * an incremental update by applying removals and then additions.
-     *
-     * @param bool $partialUpdate
-     */
-    public function setPartialUpdate($partialUpdate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPartialUpdate()
-    {
-    }
-    /**
-     * The sorted list of all hashes, hashed again with SHA256. This is the
-     * checksum for the sorted list of all hashes present in the database after
-     * applying the provided update. In the case that no updates were provided,
-     * the server will omit this field to indicate that the client should use the
-     * existing checksum.
-     *
-     * @param string $sha256Checksum
-     */
-    public function setSha256Checksum($sha256Checksum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256Checksum()
-    {
-    }
-    /**
-     * The version of the hash list. The client MUST NOT manipulate those bytes.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV5HashList extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5HashList
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences extends \Google\Model
-{
-    protected $fieldType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
-    protected $fieldDataType = '';
-    /**
-     * @var string
-     */
-    public $maxOccurrences;
-    /**
-     * Min and max occurrences of the field. If not set, there is limit set. The
-     * defined interval is a closed-closed interval, i.e. [min, max].
-     *
-     * @var string
-     */
-    public $minOccurrences;
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field
-     */
-    public function setField(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences extends \Google\Model
     {
+        protected $fieldType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
+        protected $fieldDataType = '';
+        /**
+         * @var string
+         */
+        public $maxOccurrences;
+        /**
+         * Min and max occurrences of the field. If not set, there is limit set. The
+         * defined interval is a closed-closed interval, i.e. [min, max].
+         *
+         * @var string
+         */
+        public $minOccurrences;
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field
+         */
+        public function setField(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param string $maxOccurrences
+         */
+        public function setMaxOccurrences($maxOccurrences)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxOccurrences()
+        {
+        }
+        /**
+         * Min and max occurrences of the field. If not set, there is limit set. The
+         * defined interval is a closed-closed interval, i.e. [min, max].
+         *
+         * @param string $minOccurrences
+         */
+        public function setMinOccurrences($minOccurrences)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinOccurrences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * @param string $maxOccurrences
-     */
-    public function setMaxOccurrences($maxOccurrences)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxOccurrences()
-    {
-    }
-    /**
-     * Min and max occurrences of the field. If not set, there is limit set. The
-     * defined interval is a closed-closed interval, i.e. [min, max].
-     *
-     * @param string $minOccurrences
-     */
-    public function setMinOccurrences($minOccurrences)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinOccurrences()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences
     {
     }
 }

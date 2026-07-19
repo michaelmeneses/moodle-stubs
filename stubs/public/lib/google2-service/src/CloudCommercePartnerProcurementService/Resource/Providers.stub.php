@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService\Resource;
-
-/**
- * The "providers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcommerceprocurementService = new Google\Service\CloudCommercePartnerProcurementService(...);
- *   $providers = $cloudcommerceprocurementService->providers;
- *  </code>
- */
-class Providers extends \Google\Service\Resource
-{
+namespace Google\Service\CloudCommercePartnerProcurementService\Resource {
+    /**
+     * The "providers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcommerceprocurementService = new Google\Service\CloudCommercePartnerProcurementService(...);
+     *   $providers = $cloudcommerceprocurementService->providers;
+     *  </code>
+     */
+    class Providers extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\Resource\Providers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudCommercePartnerProcurementService_Resource_Providers extends \Google\Service\CloudCommercePartnerProcurementService\Resource\Providers
+    {
+    }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class CommitServicePerimetersRequest extends \Google\Model
-{
-    /**
-     * Optional. The etag for the version of the Access Policy that this commit
-     * operation is to be performed on. If, at the time of commit, the etag for
-     * the Access Policy stored in Access Context Manager is different from the
-     * specified etag, then the commit operation will not be performed and the
-     * call will fail. This field is not required. If etag is not provided, the
-     * operation will be performed as if a valid etag is provided.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. The etag for the version of the Access Policy that this commit
-     * operation is to be performed on. If, at the time of commit, the etag for
-     * the Access Policy stored in Access Context Manager is different from the
-     * specified etag, then the commit operation will not be performed and the
-     * call will fail. This field is not required. If etag is not provided, the
-     * operation will be performed as if a valid etag is provided.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\AccessContextManager {
+    class CommitServicePerimetersRequest extends \Google\Model
     {
+        /**
+         * Optional. The etag for the version of the Access Policy that this commit
+         * operation is to be performed on. If, at the time of commit, the etag for
+         * the Access Policy stored in Access Context Manager is different from the
+         * specified etag, then the commit operation will not be performed and the
+         * call will fail. This field is not required. If etag is not provided, the
+         * operation will be performed as if a valid etag is provided.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. The etag for the version of the Access Policy that this commit
+         * operation is to be performed on. If, at the time of commit, the etag for
+         * the Access Policy stored in Access Context Manager is different from the
+         * specified etag, then the commit operation will not be performed and the
+         * call will fail. This field is not required. If etag is not provided, the
+         * operation will be performed as if a valid etag is provided.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\CommitServicePerimetersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
+    class Google_Service_AccessContextManager_CommitServicePerimetersRequest extends \Google\Service\AccessContextManager\CommitServicePerimetersRequest
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectorConfigurationPrivateServiceConnect extends \Google\Model
-{
-    /**
-     * Required. Network Attachment name in the format of `projects/{project}/regi
-     * ons/{region}/networkAttachments/{networkattachment}`.
-     *
-     * @var string
-     */
-    public $networkAttachment;
-    /**
-     * Required. Network Attachment name in the format of `projects/{project}/regi
-     * ons/{region}/networkAttachments/{networkattachment}`.
-     *
-     * @param string $networkAttachment
-     */
-    public function setNetworkAttachment($networkAttachment)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectorConfigurationPrivateServiceConnect extends \Google\Model
     {
+        /**
+         * Required. Network Attachment name in the format of `projects/{project}/regi
+         * ons/{region}/networkAttachments/{networkattachment}`.
+         *
+         * @var string
+         */
+        public $networkAttachment;
+        /**
+         * Required. Network Attachment name in the format of `projects/{project}/regi
+         * ons/{region}/networkAttachments/{networkattachment}`.
+         *
+         * @param string $networkAttachment
+         */
+        public function setNetworkAttachment($networkAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectorConfigurationPrivateServiceConnect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkAttachment()
+    class Google_Service_BigQueryConnectionService_ConnectorConfigurationPrivateServiceConnect extends \Google\Service\BigQueryConnectionService\ConnectorConfigurationPrivateServiceConnect
     {
     }
 }

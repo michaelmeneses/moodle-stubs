@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatEntryMetadata extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = MetadataEntry::class;
-    protected $entriesDataType = 'array';
-    public $entries;
-    /**
-     * @param MetadataEntry[]
-     */
-    public function setEntries($entries)
+namespace Google\Service\Safebrowsing {
+    class ThreatEntryMetadata extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = MetadataEntry::class;
+        protected $entriesDataType = 'array';
+        public $entries;
+        /**
+         * @param MetadataEntry[]
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return MetadataEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetadataEntry[]
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatEntryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_Safebrowsing_ThreatEntryMetadata extends \Google\Service\Safebrowsing\ThreatEntryMetadata
     {
     }
 }

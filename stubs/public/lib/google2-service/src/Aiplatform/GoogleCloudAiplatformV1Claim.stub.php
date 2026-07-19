@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Claim extends \Google\Collection
-{
-    protected $collection_key = 'factIndexes';
-    /**
-     * Index in the input text where the claim ends (exclusive).
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * Indexes of the facts supporting this claim.
-     *
-     * @var int[]
-     */
-    public $factIndexes;
-    /**
-     * Confidence score of this corroboration.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Index in the input text where the claim starts (inclusive).
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * Index in the input text where the claim ends (exclusive).
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Claim extends \Google\Collection
     {
+        protected $collection_key = 'factIndexes';
+        /**
+         * Index in the input text where the claim ends (exclusive).
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * Indexes of the facts supporting this claim.
+         *
+         * @var int[]
+         */
+        public $factIndexes;
+        /**
+         * Confidence score of this corroboration.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Index in the input text where the claim starts (inclusive).
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * Index in the input text where the claim ends (exclusive).
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Indexes of the facts supporting this claim.
+         *
+         * @param int[] $factIndexes
+         */
+        public function setFactIndexes($factIndexes)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getFactIndexes()
+        {
+        }
+        /**
+         * Confidence score of this corroboration.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * Index in the input text where the claim starts (inclusive).
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Claim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Indexes of the facts supporting this claim.
-     *
-     * @param int[] $factIndexes
-     */
-    public function setFactIndexes($factIndexes)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getFactIndexes()
-    {
-    }
-    /**
-     * Confidence score of this corroboration.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * Index in the input text where the claim starts (inclusive).
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Claim extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Claim
     {
     }
 }

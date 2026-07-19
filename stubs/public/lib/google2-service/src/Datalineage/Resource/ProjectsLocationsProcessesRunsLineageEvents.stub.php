@@ -21,80 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage\Resource;
-
-/**
- * The "lineageEvents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalineageService = new Google\Service\Datalineage(...);
- *   $lineageEvents = $datalineageService->projects_locations_processes_runs_lineageEvents;
- *  </code>
- */
-class ProjectsLocationsProcessesRunsLineageEvents extends \Google\Service\Resource
-{
+namespace Google\Service\Datalineage\Resource {
+    use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1LineageEvent;
+    use Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListLineageEventsResponse;
+    use Google\Service\Datalineage\GoogleProtobufEmpty;
     /**
-     * Creates a new lineage event. (lineageEvents.create)
-     *
-     * @param string $parent Required. The name of the run that should own the
-     * lineage event.
-     * @param GoogleCloudDatacatalogLineageV1LineageEvent $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. A unique identifier for this request.
-     * Restricted to 36 ASCII characters. A random UUID is recommended. This request
-     * is idempotent only if a `request_id` is provided.
-     * @return GoogleCloudDatacatalogLineageV1LineageEvent
-     * @throws \Google\Service\Exception
+     * The "lineageEvents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalineageService = new Google\Service\Datalineage(...);
+     *   $lineageEvents = $datalineageService->projects_locations_processes_runs_lineageEvents;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDatacatalogLineageV1LineageEvent $postBody, $optParams = [])
+    class ProjectsLocationsProcessesRunsLineageEvents extends \Google\Service\Resource
     {
+        /**
+         * Creates a new lineage event. (lineageEvents.create)
+         *
+         * @param string $parent Required. The name of the run that should own the
+         * lineage event.
+         * @param GoogleCloudDatacatalogLineageV1LineageEvent $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. A unique identifier for this request.
+         * Restricted to 36 ASCII characters. A random UUID is recommended. This request
+         * is idempotent only if a `request_id` is provided.
+         * @return GoogleCloudDatacatalogLineageV1LineageEvent
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDatacatalogLineageV1LineageEvent $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the lineage event with the specified name. (lineageEvents.delete)
+         *
+         * @param string $name Required. The name of the lineage event to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool allowMissing If set to true and the lineage event is not
+         * found, the request succeeds but the server doesn't perform any actions.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a specified lineage event. (lineageEvents.get)
+         *
+         * @param string $name Required. The name of the lineage event to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatacatalogLineageV1LineageEvent
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists lineage events in the given project and location. The list order is not
+         * defined. (lineageEvents.listProjectsLocationsProcessesRunsLineageEvents)
+         *
+         * @param string $parent Required. The name of the run that owns the collection
+         * of lineage events to get.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of lineage events to return. The
+         * service may return fewer events than this value. If unspecified, at most 50
+         * events are returned. The maximum value is 100; values greater than 100 are
+         * cut to 100.
+         * @opt_param string pageToken The page token received from a previous
+         * `ListLineageEvents` call. Specify it to get the next page. When paginating,
+         * all other parameters specified in this call must match the parameters of the
+         * call that provided the page token.
+         * @return GoogleCloudDatacatalogLineageV1ListLineageEventsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsProcessesRunsLineageEvents($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the lineage event with the specified name. (lineageEvents.delete)
-     *
-     * @param string $name Required. The name of the lineage event to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool allowMissing If set to true and the lineage event is not
-     * found, the request succeeds but the server doesn't perform any actions.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Datalineage\Resource\ProjectsLocationsProcessesRunsLineageEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a specified lineage event. (lineageEvents.get)
-     *
-     * @param string $name Required. The name of the lineage event to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatacatalogLineageV1LineageEvent
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists lineage events in the given project and location. The list order is not
-     * defined. (lineageEvents.listProjectsLocationsProcessesRunsLineageEvents)
-     *
-     * @param string $parent Required. The name of the run that owns the collection
-     * of lineage events to get.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of lineage events to return. The
-     * service may return fewer events than this value. If unspecified, at most 50
-     * events are returned. The maximum value is 100; values greater than 100 are
-     * cut to 100.
-     * @opt_param string pageToken The page token received from a previous
-     * `ListLineageEvents` call. Specify it to get the next page. When paginating,
-     * all other parameters specified in this call must match the parameters of the
-     * call that provided the page token.
-     * @return GoogleCloudDatacatalogLineageV1ListLineageEventsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsProcessesRunsLineageEvents($parent, $optParams = [])
+    class Google_Service_Datalineage_Resource_ProjectsLocationsProcessesRunsLineageEvents extends \Google\Service\Datalineage\Resource\ProjectsLocationsProcessesRunsLineageEvents
     {
     }
 }

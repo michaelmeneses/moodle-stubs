@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1DeviceRequestingExtensionDetails extends \Google\Model
-{
-    /**
-     * The name of a device that has requested the extension.
-     *
-     * @var string
-     */
-    public $deviceName;
-    /**
-     * Request justification as entered by the user.
-     *
-     * @var string
-     */
-    public $justification;
-    /**
-     * The name of a device that has requested the extension.
-     *
-     * @param string $deviceName
-     */
-    public function setDeviceName($deviceName)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1DeviceRequestingExtensionDetails extends \Google\Model
     {
+        /**
+         * The name of a device that has requested the extension.
+         *
+         * @var string
+         */
+        public $deviceName;
+        /**
+         * Request justification as entered by the user.
+         *
+         * @var string
+         */
+        public $justification;
+        /**
+         * The name of a device that has requested the extension.
+         *
+         * @param string $deviceName
+         */
+        public function setDeviceName($deviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceName()
+        {
+        }
+        /**
+         * Request justification as entered by the user.
+         *
+         * @param string $justification
+         */
+        public function setJustification($justification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJustification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1DeviceRequestingExtensionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceName()
-    {
-    }
-    /**
-     * Request justification as entered by the user.
-     *
-     * @param string $justification
-     */
-    public function setJustification($justification)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJustification()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1DeviceRequestingExtensionDetails extends \Google\Service\ChromeManagement\GoogleChromeManagementV1DeviceRequestingExtensionDetails
     {
     }
 }

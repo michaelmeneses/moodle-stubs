@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateDeveloperMetadataRequest extends \Google\Collection
-{
-    protected $collection_key = 'dataFilters';
-    protected $dataFiltersType = DataFilter::class;
-    protected $dataFiltersDataType = 'array';
-    protected $developerMetadataType = DeveloperMetadata::class;
-    protected $developerMetadataDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `developerMetadata` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The filters matching the developer metadata entries to update.
-     *
-     * @param DataFilter[] $dataFilters
-     */
-    public function setDataFilters($dataFilters)
+namespace Google\Service\Sheets {
+    class UpdateDeveloperMetadataRequest extends \Google\Collection
     {
+        protected $collection_key = 'dataFilters';
+        protected $dataFiltersType = DataFilter::class;
+        protected $dataFiltersDataType = 'array';
+        protected $developerMetadataType = DeveloperMetadata::class;
+        protected $developerMetadataDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `developerMetadata` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The filters matching the developer metadata entries to update.
+         *
+         * @param DataFilter[] $dataFilters
+         */
+        public function setDataFilters($dataFilters)
+        {
+        }
+        /**
+         * @return DataFilter[]
+         */
+        public function getDataFilters()
+        {
+        }
+        /**
+         * The value that all metadata matched by the data filters will be updated to.
+         *
+         * @param DeveloperMetadata $developerMetadata
+         */
+        public function setDeveloperMetadata(DeveloperMetadata $developerMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata
+         */
+        public function getDeveloperMetadata()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `developerMetadata` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter[]
+     * Runtime class alias of \Google\Service\Sheets\UpdateDeveloperMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilters()
-    {
-    }
-    /**
-     * The value that all metadata matched by the data filters will be updated to.
-     *
-     * @param DeveloperMetadata $developerMetadata
-     */
-    public function setDeveloperMetadata(DeveloperMetadata $developerMetadata)
-    {
-    }
-    /**
-     * @return DeveloperMetadata
-     */
-    public function getDeveloperMetadata()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `developerMetadata` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
+    class Google_Service_Sheets_UpdateDeveloperMetadataRequest extends \Google\Service\Sheets\UpdateDeveloperMetadataRequest
     {
     }
 }

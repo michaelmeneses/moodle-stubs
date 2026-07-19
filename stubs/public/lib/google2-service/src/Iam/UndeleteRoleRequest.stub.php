@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class UndeleteRoleRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
+namespace Google\Service\Iam {
+    class UndeleteRoleRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\UndeleteRoleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
+    class Google_Service_Iam_UndeleteRoleRequest extends \Google\Service\Iam\UndeleteRoleRequest
     {
     }
 }

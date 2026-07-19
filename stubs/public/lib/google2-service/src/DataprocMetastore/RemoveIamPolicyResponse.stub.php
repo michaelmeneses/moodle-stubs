@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class RemoveIamPolicyResponse extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $success;
-    /**
-     * @param bool
-     */
-    public function setSuccess($success)
+namespace Google\Service\DataprocMetastore {
+    class RemoveIamPolicyResponse extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $success;
+        /**
+         * @param bool
+         */
+        public function setSuccess($success)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataprocMetastore\RemoveIamPolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuccess()
+    class Google_Service_DataprocMetastore_RemoveIamPolicyResponse extends \Google\Service\DataprocMetastore\RemoveIamPolicyResponse
     {
     }
 }

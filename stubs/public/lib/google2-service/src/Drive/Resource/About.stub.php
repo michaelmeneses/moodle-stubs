@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "about" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $about = $driveService->about;
- *  </code>
- */
-class About extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\About as AboutModel;
     /**
-     * Gets information about the user, the user's Drive, and system capabilities.
-     * For more information, see [Return user
-     * info](https://developers.google.com/workspace/drive/api/guides/user-info).
-     * Required: The `fields` parameter must be set. To return the exact fields you
-     * need, see [Return specific
-     * fields](https://developers.google.com/workspace/drive/api/guides/fields-
-     * parameter). (about.get)
-     *
-     * @param array $optParams Optional parameters.
-     * @return AboutModel
-     * @throws \Google\Service\Exception
+     * The "about" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $about = $driveService->about;
+     *  </code>
      */
-    public function get($optParams = [])
+    class About extends \Google\Service\Resource
+    {
+        /**
+         * Gets information about the user, the user's Drive, and system capabilities.
+         * For more information, see [Return user
+         * info](https://developers.google.com/workspace/drive/api/guides/user-info).
+         * Required: The `fields` parameter must be set. To return the exact fields you
+         * need, see [Return specific
+         * fields](https://developers.google.com/workspace/drive/api/guides/fields-
+         * parameter). (about.get)
+         *
+         * @param array $optParams Optional parameters.
+         * @return AboutModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Drive\Resource\About registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Drive_Resource_About extends \Google\Service\Drive\Resource\About
     {
     }
 }

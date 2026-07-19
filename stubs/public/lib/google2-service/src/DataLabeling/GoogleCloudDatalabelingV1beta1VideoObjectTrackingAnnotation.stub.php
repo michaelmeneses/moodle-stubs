@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'objectTrackingFrames';
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    protected $objectTrackingFramesType = GoogleCloudDatalabelingV1beta1ObjectTrackingFrame::class;
-    protected $objectTrackingFramesDataType = 'array';
-    protected $timeSegmentType = GoogleCloudDatalabelingV1beta1TimeSegment::class;
-    protected $timeSegmentDataType = '';
-    /**
-     * Label of the object tracked in this annotation.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'objectTrackingFrames';
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        protected $objectTrackingFramesType = GoogleCloudDatalabelingV1beta1ObjectTrackingFrame::class;
+        protected $objectTrackingFramesDataType = 'array';
+        protected $timeSegmentType = GoogleCloudDatalabelingV1beta1TimeSegment::class;
+        protected $timeSegmentDataType = '';
+        /**
+         * Label of the object tracked in this annotation.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * The list of frames where this object track appears.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ObjectTrackingFrame[] $objectTrackingFrames
+         */
+        public function setObjectTrackingFrames($objectTrackingFrames)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ObjectTrackingFrame[]
+         */
+        public function getObjectTrackingFrames()
+        {
+        }
+        /**
+         * The time segment of the video to which object tracking applies.
+         *
+         * @param GoogleCloudDatalabelingV1beta1TimeSegment $timeSegment
+         */
+        public function setTimeSegment(GoogleCloudDatalabelingV1beta1TimeSegment $timeSegment)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1TimeSegment
+         */
+        public function getTimeSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * The list of frames where this object track appears.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ObjectTrackingFrame[] $objectTrackingFrames
-     */
-    public function setObjectTrackingFrames($objectTrackingFrames)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ObjectTrackingFrame[]
-     */
-    public function getObjectTrackingFrames()
-    {
-    }
-    /**
-     * The time segment of the video to which object tracking applies.
-     *
-     * @param GoogleCloudDatalabelingV1beta1TimeSegment $timeSegment
-     */
-    public function setTimeSegment(GoogleCloudDatalabelingV1beta1TimeSegment $timeSegment)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1TimeSegment
-     */
-    public function getTimeSegment()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation
     {
     }
 }

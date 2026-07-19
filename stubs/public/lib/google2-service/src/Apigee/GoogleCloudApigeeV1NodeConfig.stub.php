@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1NodeConfig extends \Google\Model
-{
-    /**
-     * Output only. The current total number of gateway nodes that each
-     * environment currently has across all instances.
-     *
-     * @var string
-     */
-    public $currentAggregateNodeCount;
-    /**
-     * Optional. The maximum total number of gateway nodes that the is reserved
-     * for all instances that has the specified environment. If not specified, the
-     * default is determined by the recommended maximum number of nodes for that
-     * gateway.
-     *
-     * @var string
-     */
-    public $maxNodeCount;
-    /**
-     * Optional. The minimum total number of gateway nodes that the is reserved
-     * for all instances that has the specified environment. If not specified, the
-     * default is determined by the recommended minimum number of nodes for that
-     * gateway.
-     *
-     * @var string
-     */
-    public $minNodeCount;
-    /**
-     * Output only. The current total number of gateway nodes that each
-     * environment currently has across all instances.
-     *
-     * @param string $currentAggregateNodeCount
-     */
-    public function setCurrentAggregateNodeCount($currentAggregateNodeCount)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1NodeConfig extends \Google\Model
     {
+        /**
+         * Output only. The current total number of gateway nodes that each
+         * environment currently has across all instances.
+         *
+         * @var string
+         */
+        public $currentAggregateNodeCount;
+        /**
+         * Optional. The maximum total number of gateway nodes that the is reserved
+         * for all instances that has the specified environment. If not specified, the
+         * default is determined by the recommended maximum number of nodes for that
+         * gateway.
+         *
+         * @var string
+         */
+        public $maxNodeCount;
+        /**
+         * Optional. The minimum total number of gateway nodes that the is reserved
+         * for all instances that has the specified environment. If not specified, the
+         * default is determined by the recommended minimum number of nodes for that
+         * gateway.
+         *
+         * @var string
+         */
+        public $minNodeCount;
+        /**
+         * Output only. The current total number of gateway nodes that each
+         * environment currently has across all instances.
+         *
+         * @param string $currentAggregateNodeCount
+         */
+        public function setCurrentAggregateNodeCount($currentAggregateNodeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentAggregateNodeCount()
+        {
+        }
+        /**
+         * Optional. The maximum total number of gateway nodes that the is reserved
+         * for all instances that has the specified environment. If not specified, the
+         * default is determined by the recommended maximum number of nodes for that
+         * gateway.
+         *
+         * @param string $maxNodeCount
+         */
+        public function setMaxNodeCount($maxNodeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxNodeCount()
+        {
+        }
+        /**
+         * Optional. The minimum total number of gateway nodes that the is reserved
+         * for all instances that has the specified environment. If not specified, the
+         * default is determined by the recommended minimum number of nodes for that
+         * gateway.
+         *
+         * @param string $minNodeCount
+         */
+        public function setMinNodeCount($minNodeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1NodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentAggregateNodeCount()
-    {
-    }
-    /**
-     * Optional. The maximum total number of gateway nodes that the is reserved
-     * for all instances that has the specified environment. If not specified, the
-     * default is determined by the recommended maximum number of nodes for that
-     * gateway.
-     *
-     * @param string $maxNodeCount
-     */
-    public function setMaxNodeCount($maxNodeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxNodeCount()
-    {
-    }
-    /**
-     * Optional. The minimum total number of gateway nodes that the is reserved
-     * for all instances that has the specified environment. If not specified, the
-     * default is determined by the recommended minimum number of nodes for that
-     * gateway.
-     *
-     * @param string $minNodeCount
-     */
-    public function setMinNodeCount($minNodeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinNodeCount()
+    class Google_Service_Apigee_GoogleCloudApigeeV1NodeConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1NodeConfig
     {
     }
 }

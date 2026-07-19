@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BinaryClassificationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'binaryConfusionMatrixList';
-    protected $aggregateClassificationMetricsType = AggregateClassificationMetrics::class;
-    protected $aggregateClassificationMetricsDataType = '';
-    protected $binaryConfusionMatrixListType = BinaryConfusionMatrix::class;
-    protected $binaryConfusionMatrixListDataType = 'array';
-    /**
-     * Label representing the negative class.
-     *
-     * @var string
-     */
-    public $negativeLabel;
-    /**
-     * Label representing the positive class.
-     *
-     * @var string
-     */
-    public $positiveLabel;
-    /**
-     * Aggregate classification metrics.
-     *
-     * @param AggregateClassificationMetrics $aggregateClassificationMetrics
-     */
-    public function setAggregateClassificationMetrics(AggregateClassificationMetrics $aggregateClassificationMetrics)
+namespace Google\Service\Bigquery {
+    class BinaryClassificationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'binaryConfusionMatrixList';
+        protected $aggregateClassificationMetricsType = AggregateClassificationMetrics::class;
+        protected $aggregateClassificationMetricsDataType = '';
+        protected $binaryConfusionMatrixListType = BinaryConfusionMatrix::class;
+        protected $binaryConfusionMatrixListDataType = 'array';
+        /**
+         * Label representing the negative class.
+         *
+         * @var string
+         */
+        public $negativeLabel;
+        /**
+         * Label representing the positive class.
+         *
+         * @var string
+         */
+        public $positiveLabel;
+        /**
+         * Aggregate classification metrics.
+         *
+         * @param AggregateClassificationMetrics $aggregateClassificationMetrics
+         */
+        public function setAggregateClassificationMetrics(AggregateClassificationMetrics $aggregateClassificationMetrics)
+        {
+        }
+        /**
+         * @return AggregateClassificationMetrics
+         */
+        public function getAggregateClassificationMetrics()
+        {
+        }
+        /**
+         * Binary confusion matrix at multiple thresholds.
+         *
+         * @param BinaryConfusionMatrix[] $binaryConfusionMatrixList
+         */
+        public function setBinaryConfusionMatrixList($binaryConfusionMatrixList)
+        {
+        }
+        /**
+         * @return BinaryConfusionMatrix[]
+         */
+        public function getBinaryConfusionMatrixList()
+        {
+        }
+        /**
+         * Label representing the negative class.
+         *
+         * @param string $negativeLabel
+         */
+        public function setNegativeLabel($negativeLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegativeLabel()
+        {
+        }
+        /**
+         * Label representing the positive class.
+         *
+         * @param string $positiveLabel
+         */
+        public function setPositiveLabel($positiveLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPositiveLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregateClassificationMetrics
+     * Runtime class alias of \Google\Service\Bigquery\BinaryClassificationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateClassificationMetrics()
-    {
-    }
-    /**
-     * Binary confusion matrix at multiple thresholds.
-     *
-     * @param BinaryConfusionMatrix[] $binaryConfusionMatrixList
-     */
-    public function setBinaryConfusionMatrixList($binaryConfusionMatrixList)
-    {
-    }
-    /**
-     * @return BinaryConfusionMatrix[]
-     */
-    public function getBinaryConfusionMatrixList()
-    {
-    }
-    /**
-     * Label representing the negative class.
-     *
-     * @param string $negativeLabel
-     */
-    public function setNegativeLabel($negativeLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNegativeLabel()
-    {
-    }
-    /**
-     * Label representing the positive class.
-     *
-     * @param string $positiveLabel
-     */
-    public function setPositiveLabel($positiveLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPositiveLabel()
+    class Google_Service_Bigquery_BinaryClassificationMetrics extends \Google\Service\Bigquery\BinaryClassificationMetrics
     {
     }
 }

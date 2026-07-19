@@ -21,265 +21,274 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Transport extends \Google\Collection
-{
-    protected $collection_key = 'advertisedRoutes';
-    /**
-     * @var bool
-     */
-    public $adminEnabled;
-    /**
-     * @var string[]
-     */
-    public $advertisedRoutes;
-    /**
-     * @var string
-     */
-    public $bandwidth;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $generatedActivationKey;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var int
-     */
-    public $mtuLimit;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $network;
-    /**
-     * @var string
-     */
-    public $providedActivationKey;
-    /**
-     * @var string
-     */
-    public $region;
-    /**
-     * @var string
-     */
-    public $remoteProfile;
-    /**
-     * @var string
-     */
-    public $stackType;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param bool
-     */
-    public function setAdminEnabled($adminEnabled)
+namespace Google\Service\Networkconnectivity {
+    class Transport extends \Google\Collection
     {
+        protected $collection_key = 'advertisedRoutes';
+        /**
+         * @var bool
+         */
+        public $adminEnabled;
+        /**
+         * @var string[]
+         */
+        public $advertisedRoutes;
+        /**
+         * @var string
+         */
+        public $bandwidth;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $generatedActivationKey;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var int
+         */
+        public $mtuLimit;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $network;
+        /**
+         * @var string
+         */
+        public $providedActivationKey;
+        /**
+         * @var string
+         */
+        public $region;
+        /**
+         * @var string
+         */
+        public $remoteProfile;
+        /**
+         * @var string
+         */
+        public $stackType;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param bool
+         */
+        public function setAdminEnabled($adminEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdminEnabled()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAdvertisedRoutes($advertisedRoutes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdvertisedRoutes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBandwidth($bandwidth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBandwidth()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGeneratedActivationKey($generatedActivationKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedActivationKey()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMtuLimit($mtuLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMtuLimit()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProvidedActivationKey($providedActivationKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvidedActivationKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRemoteProfile($remoteProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteProfile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStackType($stackType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStackType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Networkconnectivity\Transport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminEnabled()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAdvertisedRoutes($advertisedRoutes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAdvertisedRoutes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBandwidth($bandwidth)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBandwidth()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGeneratedActivationKey($generatedActivationKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneratedActivationKey()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMtuLimit($mtuLimit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMtuLimit()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProvidedActivationKey($providedActivationKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvidedActivationKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRemoteProfile($remoteProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteProfile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStackType($stackType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStackType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Networkconnectivity_Transport extends \Google\Service\Networkconnectivity\Transport
     {
     }
 }

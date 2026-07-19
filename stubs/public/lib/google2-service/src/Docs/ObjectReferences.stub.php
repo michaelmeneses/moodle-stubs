@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class ObjectReferences extends \Google\Collection
-{
-    protected $collection_key = 'objectIds';
-    /**
-     * The object IDs.
-     *
-     * @var string[]
-     */
-    public $objectIds;
-    /**
-     * The object IDs.
-     *
-     * @param string[] $objectIds
-     */
-    public function setObjectIds($objectIds)
+namespace Google\Service\Docs {
+    class ObjectReferences extends \Google\Collection
     {
+        protected $collection_key = 'objectIds';
+        /**
+         * The object IDs.
+         *
+         * @var string[]
+         */
+        public $objectIds;
+        /**
+         * The object IDs.
+         *
+         * @param string[] $objectIds
+         */
+        public function setObjectIds($objectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getObjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Docs\ObjectReferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectIds()
+    class Google_Service_Docs_ObjectReferences extends \Google\Service\Docs\ObjectReferences
     {
     }
 }

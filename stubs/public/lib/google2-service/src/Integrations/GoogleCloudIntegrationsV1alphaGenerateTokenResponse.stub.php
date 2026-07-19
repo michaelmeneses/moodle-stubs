@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGenerateTokenResponse extends \Google\Model
-{
-    /**
-     * The message that notifies the user if the request succeeded or not.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The message that notifies the user if the request succeeded or not.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGenerateTokenResponse extends \Google\Model
     {
+        /**
+         * The message that notifies the user if the request succeeded or not.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The message that notifies the user if the request succeeded or not.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGenerateTokenResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateTokenResponse
     {
     }
 }

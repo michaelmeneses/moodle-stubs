@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataPolicyService\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigquerydatapolicyService = new Google\Service\BigQueryDataPolicyService(...);
- *   $projects = $bigquerydatapolicyService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryDataPolicyService\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigquerydatapolicyService = new Google\Service\BigQueryDataPolicyService(...);
+     *   $projects = $bigquerydatapolicyService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigQueryDataPolicyService\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigQueryDataPolicyService_Resource_Projects extends \Google\Service\BigQueryDataPolicyService\Resource\Projects
+    {
+    }
 }

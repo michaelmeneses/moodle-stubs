@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class AchievementSetStepsAtLeastResponse extends \Google\Model
-{
-    /**
-     * The current steps recorded for this incremental achievement.
-     *
-     * @var int
-     */
-    public $currentSteps;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementSetStepsAtLeastResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Whether the current steps for the achievement has reached the number of
-     * steps required to unlock.
-     *
-     * @var bool
-     */
-    public $newlyUnlocked;
-    /**
-     * The current steps recorded for this incremental achievement.
-     *
-     * @param int $currentSteps
-     */
-    public function setCurrentSteps($currentSteps)
+namespace Google\Service\Games {
+    class AchievementSetStepsAtLeastResponse extends \Google\Model
     {
+        /**
+         * The current steps recorded for this incremental achievement.
+         *
+         * @var int
+         */
+        public $currentSteps;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementSetStepsAtLeastResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Whether the current steps for the achievement has reached the number of
+         * steps required to unlock.
+         *
+         * @var bool
+         */
+        public $newlyUnlocked;
+        /**
+         * The current steps recorded for this incremental achievement.
+         *
+         * @param int $currentSteps
+         */
+        public function setCurrentSteps($currentSteps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentSteps()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementSetStepsAtLeastResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Whether the current steps for the achievement has reached the number of
+         * steps required to unlock.
+         *
+         * @param bool $newlyUnlocked
+         */
+        public function setNewlyUnlocked($newlyUnlocked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNewlyUnlocked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Games\AchievementSetStepsAtLeastResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentSteps()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementSetStepsAtLeastResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Whether the current steps for the achievement has reached the number of
-     * steps required to unlock.
-     *
-     * @param bool $newlyUnlocked
-     */
-    public function setNewlyUnlocked($newlyUnlocked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNewlyUnlocked()
+    class Google_Service_Games_AchievementSetStepsAtLeastResponse extends \Google\Service\Games\AchievementSetStepsAtLeastResponse
     {
     }
 }

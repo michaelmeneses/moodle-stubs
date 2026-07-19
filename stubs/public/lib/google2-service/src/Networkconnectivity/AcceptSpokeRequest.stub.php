@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class AcceptSpokeRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\Networkconnectivity {
+    class AcceptSpokeRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\AcceptSpokeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
+    class Google_Service_Networkconnectivity_AcceptSpokeRequest extends \Google\Service\Networkconnectivity\AcceptSpokeRequest
     {
     }
 }

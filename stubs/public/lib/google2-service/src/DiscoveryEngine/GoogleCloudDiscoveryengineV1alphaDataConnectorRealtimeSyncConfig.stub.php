@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfig extends \Google\Model
-{
-    /**
-     * Optional. The ID of the Secret Manager secret used for webhook secret.
-     *
-     * @var string
-     */
-    public $realtimeSyncSecret;
-    protected $streamingErrorType = GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError::class;
-    protected $streamingErrorDataType = '';
-    /**
-     * Optional. Webhook url for the connector to specify additional params for
-     * realtime sync.
-     *
-     * @var string
-     */
-    public $webhookUri;
-    /**
-     * Optional. The ID of the Secret Manager secret used for webhook secret.
-     *
-     * @param string $realtimeSyncSecret
-     */
-    public function setRealtimeSyncSecret($realtimeSyncSecret)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfig extends \Google\Model
     {
+        /**
+         * Optional. The ID of the Secret Manager secret used for webhook secret.
+         *
+         * @var string
+         */
+        public $realtimeSyncSecret;
+        protected $streamingErrorType = GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError::class;
+        protected $streamingErrorDataType = '';
+        /**
+         * Optional. Webhook url for the connector to specify additional params for
+         * realtime sync.
+         *
+         * @var string
+         */
+        public $webhookUri;
+        /**
+         * Optional. The ID of the Secret Manager secret used for webhook secret.
+         *
+         * @param string $realtimeSyncSecret
+         */
+        public function setRealtimeSyncSecret($realtimeSyncSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRealtimeSyncSecret()
+        {
+        }
+        /**
+         * Optional. Streaming error details.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError $streamingError
+         */
+        public function setStreamingError(GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError $streamingError)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError
+         */
+        public function getStreamingError()
+        {
+        }
+        /**
+         * Optional. Webhook url for the connector to specify additional params for
+         * realtime sync.
+         *
+         * @param string $webhookUri
+         */
+        public function setWebhookUri($webhookUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRealtimeSyncSecret()
-    {
-    }
-    /**
-     * Optional. Streaming error details.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError $streamingError
-     */
-    public function setStreamingError(GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError $streamingError)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfigStreamingError
-     */
-    public function getStreamingError()
-    {
-    }
-    /**
-     * Optional. Webhook url for the connector to specify additional params for
-     * realtime sync.
-     *
-     * @param string $webhookUri
-     */
-    public function setWebhookUri($webhookUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDataConnectorRealtimeSyncConfig
     {
     }
 }

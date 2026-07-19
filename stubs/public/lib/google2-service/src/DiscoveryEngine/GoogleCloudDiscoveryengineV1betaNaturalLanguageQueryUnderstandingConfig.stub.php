@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaNaturalLanguageQueryUnderstandingConfig extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Natural Language Query Understanding is disabled.
-     */
-    public const MODE_DISABLED = 'DISABLED';
-    /**
-     * Natural Language Query Understanding is enabled.
-     */
-    public const MODE_ENABLED = 'ENABLED';
-    /**
-     * Mode of Natural Language Query Understanding. If this field is unset, the
-     * behavior defaults to NaturalLanguageQueryUnderstandingConfig.Mode.DISABLED.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Mode of Natural Language Query Understanding. If this field is unset, the
-     * behavior defaults to NaturalLanguageQueryUnderstandingConfig.Mode.DISABLED.
-     *
-     * Accepted values: MODE_UNSPECIFIED, DISABLED, ENABLED
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaNaturalLanguageQueryUnderstandingConfig extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Natural Language Query Understanding is disabled.
+         */
+        public const MODE_DISABLED = 'DISABLED';
+        /**
+         * Natural Language Query Understanding is enabled.
+         */
+        public const MODE_ENABLED = 'ENABLED';
+        /**
+         * Mode of Natural Language Query Understanding. If this field is unset, the
+         * behavior defaults to NaturalLanguageQueryUnderstandingConfig.Mode.DISABLED.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Mode of Natural Language Query Understanding. If this field is unset, the
+         * behavior defaults to NaturalLanguageQueryUnderstandingConfig.Mode.DISABLED.
+         *
+         * Accepted values: MODE_UNSPECIFIED, DISABLED, ENABLED
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaNaturalLanguageQueryUnderstandingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaNaturalLanguageQueryUnderstandingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaNaturalLanguageQueryUnderstandingConfig
     {
     }
 }

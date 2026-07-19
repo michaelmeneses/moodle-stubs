@@ -21,266 +21,275 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class Pets extends \Google\Model
-{
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const CATS_ALLOWED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const CATS_ALLOWED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const CATS_ALLOWED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const CATS_ALLOWED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const DOGS_ALLOWED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const DOGS_ALLOWED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const DOGS_ALLOWED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const DOGS_ALLOWED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const PETS_ALLOWED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const PETS_ALLOWED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const PETS_ALLOWED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const PETS_ALLOWED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const PETS_ALLOWED_FREE_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const PETS_ALLOWED_FREE_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const PETS_ALLOWED_FREE_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const PETS_ALLOWED_FREE_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Cats allowed. Domesticated felines are permitted at the property and
-     * allowed to stay in the guest room of their owner. May or may not require a
-     * fee.
-     *
-     * @var bool
-     */
-    public $catsAllowed;
-    /**
-     * Cats allowed exception.
-     *
-     * @var string
-     */
-    public $catsAllowedException;
-    /**
-     * Dogs allowed. Domesticated canines are permitted at the property and
-     * allowed to stay in the guest room of their owner. May or may not require a
-     * fee.
-     *
-     * @var bool
-     */
-    public $dogsAllowed;
-    /**
-     * Dogs allowed exception.
-     *
-     * @var string
-     */
-    public $dogsAllowedException;
-    /**
-     * Pets allowed. Household animals are allowed at the property and in the
-     * specific guest room of their owner. May or may not include dogs, cats,
-     * reptiles and/or fish. May or may not require a fee. Service animals are not
-     * considered to be pets, so not governed by this policy.
-     *
-     * @var bool
-     */
-    public $petsAllowed;
-    /**
-     * Pets allowed exception.
-     *
-     * @var string
-     */
-    public $petsAllowedException;
-    /**
-     * Pets allowed free. Household animals are allowed at the property and in the
-     * specific guest room of their owner for free. May or may not include dogs,
-     * cats, reptiles, and/or fish.
-     *
-     * @var bool
-     */
-    public $petsAllowedFree;
-    /**
-     * Pets allowed free exception.
-     *
-     * @var string
-     */
-    public $petsAllowedFreeException;
-    /**
-     * Cats allowed. Domesticated felines are permitted at the property and
-     * allowed to stay in the guest room of their owner. May or may not require a
-     * fee.
-     *
-     * @param bool $catsAllowed
-     */
-    public function setCatsAllowed($catsAllowed)
+namespace Google\Service\MyBusinessLodging {
+    class Pets extends \Google\Model
     {
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const CATS_ALLOWED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const CATS_ALLOWED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const CATS_ALLOWED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const CATS_ALLOWED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const DOGS_ALLOWED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const DOGS_ALLOWED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const DOGS_ALLOWED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const DOGS_ALLOWED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const PETS_ALLOWED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const PETS_ALLOWED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const PETS_ALLOWED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const PETS_ALLOWED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const PETS_ALLOWED_FREE_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const PETS_ALLOWED_FREE_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const PETS_ALLOWED_FREE_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const PETS_ALLOWED_FREE_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Cats allowed. Domesticated felines are permitted at the property and
+         * allowed to stay in the guest room of their owner. May or may not require a
+         * fee.
+         *
+         * @var bool
+         */
+        public $catsAllowed;
+        /**
+         * Cats allowed exception.
+         *
+         * @var string
+         */
+        public $catsAllowedException;
+        /**
+         * Dogs allowed. Domesticated canines are permitted at the property and
+         * allowed to stay in the guest room of their owner. May or may not require a
+         * fee.
+         *
+         * @var bool
+         */
+        public $dogsAllowed;
+        /**
+         * Dogs allowed exception.
+         *
+         * @var string
+         */
+        public $dogsAllowedException;
+        /**
+         * Pets allowed. Household animals are allowed at the property and in the
+         * specific guest room of their owner. May or may not include dogs, cats,
+         * reptiles and/or fish. May or may not require a fee. Service animals are not
+         * considered to be pets, so not governed by this policy.
+         *
+         * @var bool
+         */
+        public $petsAllowed;
+        /**
+         * Pets allowed exception.
+         *
+         * @var string
+         */
+        public $petsAllowedException;
+        /**
+         * Pets allowed free. Household animals are allowed at the property and in the
+         * specific guest room of their owner for free. May or may not include dogs,
+         * cats, reptiles, and/or fish.
+         *
+         * @var bool
+         */
+        public $petsAllowedFree;
+        /**
+         * Pets allowed free exception.
+         *
+         * @var string
+         */
+        public $petsAllowedFreeException;
+        /**
+         * Cats allowed. Domesticated felines are permitted at the property and
+         * allowed to stay in the guest room of their owner. May or may not require a
+         * fee.
+         *
+         * @param bool $catsAllowed
+         */
+        public function setCatsAllowed($catsAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCatsAllowed()
+        {
+        }
+        /**
+         * Cats allowed exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::CATS_ALLOWED_EXCEPTION_* $catsAllowedException
+         */
+        public function setCatsAllowedException($catsAllowedException)
+        {
+        }
+        /**
+         * @return self::CATS_ALLOWED_EXCEPTION_*
+         */
+        public function getCatsAllowedException()
+        {
+        }
+        /**
+         * Dogs allowed. Domesticated canines are permitted at the property and
+         * allowed to stay in the guest room of their owner. May or may not require a
+         * fee.
+         *
+         * @param bool $dogsAllowed
+         */
+        public function setDogsAllowed($dogsAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDogsAllowed()
+        {
+        }
+        /**
+         * Dogs allowed exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::DOGS_ALLOWED_EXCEPTION_* $dogsAllowedException
+         */
+        public function setDogsAllowedException($dogsAllowedException)
+        {
+        }
+        /**
+         * @return self::DOGS_ALLOWED_EXCEPTION_*
+         */
+        public function getDogsAllowedException()
+        {
+        }
+        /**
+         * Pets allowed. Household animals are allowed at the property and in the
+         * specific guest room of their owner. May or may not include dogs, cats,
+         * reptiles and/or fish. May or may not require a fee. Service animals are not
+         * considered to be pets, so not governed by this policy.
+         *
+         * @param bool $petsAllowed
+         */
+        public function setPetsAllowed($petsAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPetsAllowed()
+        {
+        }
+        /**
+         * Pets allowed exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::PETS_ALLOWED_EXCEPTION_* $petsAllowedException
+         */
+        public function setPetsAllowedException($petsAllowedException)
+        {
+        }
+        /**
+         * @return self::PETS_ALLOWED_EXCEPTION_*
+         */
+        public function getPetsAllowedException()
+        {
+        }
+        /**
+         * Pets allowed free. Household animals are allowed at the property and in the
+         * specific guest room of their owner for free. May or may not include dogs,
+         * cats, reptiles, and/or fish.
+         *
+         * @param bool $petsAllowedFree
+         */
+        public function setPetsAllowedFree($petsAllowedFree)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPetsAllowedFree()
+        {
+        }
+        /**
+         * Pets allowed free exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::PETS_ALLOWED_FREE_EXCEPTION_* $petsAllowedFreeException
+         */
+        public function setPetsAllowedFreeException($petsAllowedFreeException)
+        {
+        }
+        /**
+         * @return self::PETS_ALLOWED_FREE_EXCEPTION_*
+         */
+        public function getPetsAllowedFreeException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MyBusinessLodging\Pets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatsAllowed()
-    {
-    }
-    /**
-     * Cats allowed exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::CATS_ALLOWED_EXCEPTION_* $catsAllowedException
-     */
-    public function setCatsAllowedException($catsAllowedException)
-    {
-    }
-    /**
-     * @return self::CATS_ALLOWED_EXCEPTION_*
-     */
-    public function getCatsAllowedException()
-    {
-    }
-    /**
-     * Dogs allowed. Domesticated canines are permitted at the property and
-     * allowed to stay in the guest room of their owner. May or may not require a
-     * fee.
-     *
-     * @param bool $dogsAllowed
-     */
-    public function setDogsAllowed($dogsAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDogsAllowed()
-    {
-    }
-    /**
-     * Dogs allowed exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::DOGS_ALLOWED_EXCEPTION_* $dogsAllowedException
-     */
-    public function setDogsAllowedException($dogsAllowedException)
-    {
-    }
-    /**
-     * @return self::DOGS_ALLOWED_EXCEPTION_*
-     */
-    public function getDogsAllowedException()
-    {
-    }
-    /**
-     * Pets allowed. Household animals are allowed at the property and in the
-     * specific guest room of their owner. May or may not include dogs, cats,
-     * reptiles and/or fish. May or may not require a fee. Service animals are not
-     * considered to be pets, so not governed by this policy.
-     *
-     * @param bool $petsAllowed
-     */
-    public function setPetsAllowed($petsAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPetsAllowed()
-    {
-    }
-    /**
-     * Pets allowed exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::PETS_ALLOWED_EXCEPTION_* $petsAllowedException
-     */
-    public function setPetsAllowedException($petsAllowedException)
-    {
-    }
-    /**
-     * @return self::PETS_ALLOWED_EXCEPTION_*
-     */
-    public function getPetsAllowedException()
-    {
-    }
-    /**
-     * Pets allowed free. Household animals are allowed at the property and in the
-     * specific guest room of their owner for free. May or may not include dogs,
-     * cats, reptiles, and/or fish.
-     *
-     * @param bool $petsAllowedFree
-     */
-    public function setPetsAllowedFree($petsAllowedFree)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPetsAllowedFree()
-    {
-    }
-    /**
-     * Pets allowed free exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::PETS_ALLOWED_FREE_EXCEPTION_* $petsAllowedFreeException
-     */
-    public function setPetsAllowedFreeException($petsAllowedFreeException)
-    {
-    }
-    /**
-     * @return self::PETS_ALLOWED_FREE_EXCEPTION_*
-     */
-    public function getPetsAllowedFreeException()
+    class Google_Service_MyBusinessLodging_Pets extends \Google\Service\MyBusinessLodging\Pets
     {
     }
 }

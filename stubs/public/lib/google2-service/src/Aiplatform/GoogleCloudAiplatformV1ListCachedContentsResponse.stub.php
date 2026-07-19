@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListCachedContentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'cachedContents';
-    protected $cachedContentsType = GoogleCloudAiplatformV1CachedContent::class;
-    protected $cachedContentsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of cached contents.
-     *
-     * @param GoogleCloudAiplatformV1CachedContent[] $cachedContents
-     */
-    public function setCachedContents($cachedContents)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListCachedContentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'cachedContents';
+        protected $cachedContentsType = GoogleCloudAiplatformV1CachedContent::class;
+        protected $cachedContentsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of cached contents.
+         *
+         * @param GoogleCloudAiplatformV1CachedContent[] $cachedContents
+         */
+        public function setCachedContents($cachedContents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CachedContent[]
+         */
+        public function getCachedContents()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CachedContent[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListCachedContentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCachedContents()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListCachedContentsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListCachedContentsResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSparkApplicationStageAttemptResponse extends \Google\Model
-{
-    protected $stageDataType = StageData::class;
-    protected $stageDataDataType = '';
-    /**
-     * Output only. Data corresponding to a stage.
-     *
-     * @param StageData $stageData
-     */
-    public function setStageData(StageData $stageData)
+namespace Google\Service\Dataproc {
+    class AccessSparkApplicationStageAttemptResponse extends \Google\Model
     {
+        protected $stageDataType = StageData::class;
+        protected $stageDataDataType = '';
+        /**
+         * Output only. Data corresponding to a stage.
+         *
+         * @param StageData $stageData
+         */
+        public function setStageData(StageData $stageData)
+        {
+        }
+        /**
+         * @return StageData
+         */
+        public function getStageData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StageData
+     * Runtime class alias of \Google\Service\Dataproc\AccessSparkApplicationStageAttemptResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStageData()
+    class Google_Service_Dataproc_AccessSparkApplicationStageAttemptResponse extends \Google\Service\Dataproc\AccessSparkApplicationStageAttemptResponse
     {
     }
 }

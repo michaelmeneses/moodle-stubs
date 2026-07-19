@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class TableFieldSchema extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    public $description;
-    protected $fieldsType = TableFieldSchema::class;
-    protected $fieldsDataType = 'array';
-    public $mode;
-    public $name;
-    public $type;
-    public function setDescription($description)
+namespace Google\Service\Logging {
+    class TableFieldSchema extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        public $description;
+        protected $fieldsType = TableFieldSchema::class;
+        protected $fieldsDataType = 'array';
+        public $mode;
+        public $name;
+        public $type;
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        /**
+         * @param TableFieldSchema[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return TableFieldSchema[]
+         */
+        public function getFields()
+        {
+        }
+        public function setMode($mode)
+        {
+        }
+        public function getMode()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getDescription()
-    {
-    }
+}
+namespace {
     /**
-     * @param TableFieldSchema[]
+     * Runtime class alias of \Google\Service\Logging\TableFieldSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return TableFieldSchema[]
-     */
-    public function getFields()
-    {
-    }
-    public function setMode($mode)
-    {
-    }
-    public function getMode()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+    class Google_Service_Logging_TableFieldSchema extends \Google\Service\Logging\TableFieldSchema
     {
     }
 }

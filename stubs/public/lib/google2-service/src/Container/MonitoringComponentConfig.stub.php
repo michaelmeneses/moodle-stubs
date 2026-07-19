@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MonitoringComponentConfig extends \Google\Collection
-{
-    protected $collection_key = 'enableComponents';
-    /**
-     * Select components to collect metrics. An empty set would disable all
-     * monitoring.
-     *
-     * @var string[]
-     */
-    public $enableComponents;
-    /**
-     * Select components to collect metrics. An empty set would disable all
-     * monitoring.
-     *
-     * @param string[] $enableComponents
-     */
-    public function setEnableComponents($enableComponents)
+namespace Google\Service\Container {
+    class MonitoringComponentConfig extends \Google\Collection
     {
+        protected $collection_key = 'enableComponents';
+        /**
+         * Select components to collect metrics. An empty set would disable all
+         * monitoring.
+         *
+         * @var string[]
+         */
+        public $enableComponents;
+        /**
+         * Select components to collect metrics. An empty set would disable all
+         * monitoring.
+         *
+         * @param string[] $enableComponents
+         */
+        public function setEnableComponents($enableComponents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnableComponents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\MonitoringComponentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableComponents()
+    class Google_Service_Container_MonitoringComponentConfig extends \Google\Service\Container\MonitoringComponentConfig
     {
     }
 }

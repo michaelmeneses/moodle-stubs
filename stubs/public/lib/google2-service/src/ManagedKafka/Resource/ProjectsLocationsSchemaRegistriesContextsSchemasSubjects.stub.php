@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "subjects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $subjects = $managedkafkaService->projects_locations_schemaRegistries_contexts_schemas_subjects;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesContextsSchemasSubjects extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\HttpBody;
     /**
-     * List subjects which reference a particular schema id. The response will be an
-     * array of subject names.
-     * (subjects.listProjectsLocationsSchemaRegistriesContextsSchemasSubjects)
-     *
-     * @param string $parent Required. The schema resource whose associated subjects
-     * are to be listed. Structured like: `projects/{project}/locations/{location}/s
-     * chemaRegistries/{schema_registry}/schemas/ids/{schema}` or `projects/{project
-     * }/locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/
-     * schemas/ids/{schema}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleted Optional. If true, the response will include soft-
-     * deleted subjects. The default is false.
-     * @opt_param string subject Optional. The subject to filter the subjects by.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "subjects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $subjects = $managedkafkaService->projects_locations_schemaRegistries_contexts_schemas_subjects;
+     *  </code>
      */
-    public function listProjectsLocationsSchemaRegistriesContextsSchemasSubjects($parent, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesContextsSchemasSubjects extends \Google\Service\Resource
+    {
+        /**
+         * List subjects which reference a particular schema id. The response will be an
+         * array of subject names.
+         * (subjects.listProjectsLocationsSchemaRegistriesContextsSchemasSubjects)
+         *
+         * @param string $parent Required. The schema resource whose associated subjects
+         * are to be listed. Structured like: `projects/{project}/locations/{location}/s
+         * chemaRegistries/{schema_registry}/schemas/ids/{schema}` or `projects/{project
+         * }/locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/
+         * schemas/ids/{schema}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleted Optional. If true, the response will include soft-
+         * deleted subjects. The default is false.
+         * @opt_param string subject Optional. The subject to filter the subjects by.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesContextsSchemasSubjects($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesContextsSchemasSubjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesContextsSchemasSubjects extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesContextsSchemasSubjects
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DownloadRestrictionsMetadata extends \Google\Model
-{
-    protected $effectiveDownloadRestrictionWithContextType = DownloadRestriction::class;
-    protected $effectiveDownloadRestrictionWithContextDataType = '';
-    protected $itemDownloadRestrictionType = DownloadRestriction::class;
-    protected $itemDownloadRestrictionDataType = '';
-    /**
-     * Output only. The effective download restriction applied to this file. This
-     * considers all restriction settings and DLP rules.
-     *
-     * @param DownloadRestriction $effectiveDownloadRestrictionWithContext
-     */
-    public function setEffectiveDownloadRestrictionWithContext(DownloadRestriction $effectiveDownloadRestrictionWithContext)
+namespace Google\Service\Drive {
+    class DownloadRestrictionsMetadata extends \Google\Model
     {
+        protected $effectiveDownloadRestrictionWithContextType = DownloadRestriction::class;
+        protected $effectiveDownloadRestrictionWithContextDataType = '';
+        protected $itemDownloadRestrictionType = DownloadRestriction::class;
+        protected $itemDownloadRestrictionDataType = '';
+        /**
+         * Output only. The effective download restriction applied to this file. This
+         * considers all restriction settings and DLP rules.
+         *
+         * @param DownloadRestriction $effectiveDownloadRestrictionWithContext
+         */
+        public function setEffectiveDownloadRestrictionWithContext(DownloadRestriction $effectiveDownloadRestrictionWithContext)
+        {
+        }
+        /**
+         * @return DownloadRestriction
+         */
+        public function getEffectiveDownloadRestrictionWithContext()
+        {
+        }
+        /**
+         * The download restriction of the file applied directly by the owner or
+         * organizer. This doesn't take into account shared drive settings or DLP
+         * rules.
+         *
+         * @param DownloadRestriction $itemDownloadRestriction
+         */
+        public function setItemDownloadRestriction(DownloadRestriction $itemDownloadRestriction)
+        {
+        }
+        /**
+         * @return DownloadRestriction
+         */
+        public function getItemDownloadRestriction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DownloadRestriction
+     * Runtime class alias of \Google\Service\Drive\DownloadRestrictionsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveDownloadRestrictionWithContext()
-    {
-    }
-    /**
-     * The download restriction of the file applied directly by the owner or
-     * organizer. This doesn't take into account shared drive settings or DLP
-     * rules.
-     *
-     * @param DownloadRestriction $itemDownloadRestriction
-     */
-    public function setItemDownloadRestriction(DownloadRestriction $itemDownloadRestriction)
-    {
-    }
-    /**
-     * @return DownloadRestriction
-     */
-    public function getItemDownloadRestriction()
+    class Google_Service_Drive_DownloadRestrictionsMetadata extends \Google\Service\Drive\DownloadRestrictionsMetadata
     {
     }
 }

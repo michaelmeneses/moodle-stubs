@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryVersionedPackage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $architecture;
-    /**
-     * @var string
-     */
-    public $packageName;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\OSConfig {
+    class InventoryVersionedPackage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $architecture;
+        /**
+         * @var string
+         */
+        public $packageName;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\InventoryVersionedPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OSConfig_InventoryVersionedPackage extends \Google\Service\OSConfig\InventoryVersionedPackage
     {
     }
 }

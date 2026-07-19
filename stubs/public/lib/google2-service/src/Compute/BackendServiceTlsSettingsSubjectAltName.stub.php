@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceTlsSettingsSubjectAltName extends \Google\Model
-{
-    /**
-     * The SAN specified as a DNS Name.
-     *
-     * @var string
-     */
-    public $dnsName;
-    /**
-     * The SAN specified as a URI.
-     *
-     * @var string
-     */
-    public $uniformResourceIdentifier;
-    /**
-     * The SAN specified as a DNS Name.
-     *
-     * @param string $dnsName
-     */
-    public function setDnsName($dnsName)
+namespace Google\Service\Compute {
+    class BackendServiceTlsSettingsSubjectAltName extends \Google\Model
     {
+        /**
+         * The SAN specified as a DNS Name.
+         *
+         * @var string
+         */
+        public $dnsName;
+        /**
+         * The SAN specified as a URI.
+         *
+         * @var string
+         */
+        public $uniformResourceIdentifier;
+        /**
+         * The SAN specified as a DNS Name.
+         *
+         * @param string $dnsName
+         */
+        public function setDnsName($dnsName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDnsName()
+        {
+        }
+        /**
+         * The SAN specified as a URI.
+         *
+         * @param string $uniformResourceIdentifier
+         */
+        public function setUniformResourceIdentifier($uniformResourceIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniformResourceIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendServiceTlsSettingsSubjectAltName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsName()
-    {
-    }
-    /**
-     * The SAN specified as a URI.
-     *
-     * @param string $uniformResourceIdentifier
-     */
-    public function setUniformResourceIdentifier($uniformResourceIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniformResourceIdentifier()
+    class Google_Service_Compute_BackendServiceTlsSettingsSubjectAltName extends \Google\Service\Compute\BackendServiceTlsSettingsSubjectAltName
     {
     }
 }

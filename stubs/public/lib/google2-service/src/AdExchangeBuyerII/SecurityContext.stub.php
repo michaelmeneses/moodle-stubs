@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class SecurityContext extends \Google\Collection
-{
-    protected $collection_key = 'securities';
-    /**
-     * The security types in this context.
-     *
-     * @var string[]
-     */
-    public $securities;
-    /**
-     * The security types in this context.
-     *
-     * @param string[] $securities
-     */
-    public function setSecurities($securities)
+namespace Google\Service\AdExchangeBuyerII {
+    class SecurityContext extends \Google\Collection
     {
+        protected $collection_key = 'securities';
+        /**
+         * The security types in this context.
+         *
+         * @var string[]
+         */
+        public $securities;
+        /**
+         * The security types in this context.
+         *
+         * @param string[] $securities
+         */
+        public function setSecurities($securities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecurities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\SecurityContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurities()
+    class Google_Service_AdExchangeBuyerII_SecurityContext extends \Google\Service\AdExchangeBuyerII\SecurityContext
     {
     }
 }

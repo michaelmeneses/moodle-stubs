@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseQuerySuggestion extends \Google\Collection
-{
-    protected $collection_key = 'dataStore';
-    /**
-     * The unique document field paths that serve as the source of this suggestion
-     * if it was generated from completable fields. This field is only populated
-     * for the document-completable model.
-     *
-     * @var string[]
-     */
-    public $completableFieldPaths;
-    /**
-     * The name of the dataStore that this suggestion belongs to.
-     *
-     * @var string[]
-     */
-    public $dataStore;
-    /**
-     * The score of each suggestion. The score is in the range of [0, 1].
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * The suggestion for the query.
-     *
-     * @var string
-     */
-    public $suggestion;
-    /**
-     * The unique document field paths that serve as the source of this suggestion
-     * if it was generated from completable fields. This field is only populated
-     * for the document-completable model.
-     *
-     * @param string[] $completableFieldPaths
-     */
-    public function setCompletableFieldPaths($completableFieldPaths)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseQuerySuggestion extends \Google\Collection
     {
+        protected $collection_key = 'dataStore';
+        /**
+         * The unique document field paths that serve as the source of this suggestion
+         * if it was generated from completable fields. This field is only populated
+         * for the document-completable model.
+         *
+         * @var string[]
+         */
+        public $completableFieldPaths;
+        /**
+         * The name of the dataStore that this suggestion belongs to.
+         *
+         * @var string[]
+         */
+        public $dataStore;
+        /**
+         * The score of each suggestion. The score is in the range of [0, 1].
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * The suggestion for the query.
+         *
+         * @var string
+         */
+        public $suggestion;
+        /**
+         * The unique document field paths that serve as the source of this suggestion
+         * if it was generated from completable fields. This field is only populated
+         * for the document-completable model.
+         *
+         * @param string[] $completableFieldPaths
+         */
+        public function setCompletableFieldPaths($completableFieldPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCompletableFieldPaths()
+        {
+        }
+        /**
+         * The name of the dataStore that this suggestion belongs to.
+         *
+         * @param string[] $dataStore
+         */
+        public function setDataStore($dataStore)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataStore()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * The suggestion for the query.
+         *
+         * @param string $suggestion
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseQuerySuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletableFieldPaths()
-    {
-    }
-    /**
-     * The name of the dataStore that this suggestion belongs to.
-     *
-     * @param string[] $dataStore
-     */
-    public function setDataStore($dataStore)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDataStore()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * The suggestion for the query.
-     *
-     * @param string $suggestion
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseQuerySuggestion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseQuerySuggestion
     {
     }
 }

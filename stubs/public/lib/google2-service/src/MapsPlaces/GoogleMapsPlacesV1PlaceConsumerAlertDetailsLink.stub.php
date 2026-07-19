@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink extends \Google\Model
-{
-    /**
-     * The title to show for the link.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The uri of the link.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The title to show for the link.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink extends \Google\Model
     {
+        /**
+         * The title to show for the link.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The uri of the link.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The title to show for the link.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The uri of the link.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
-    {
-    }
-    /**
-     * The uri of the link.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink
     {
     }
 }

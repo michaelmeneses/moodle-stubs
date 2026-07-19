@@ -21,62 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for NetworkSecurity (v1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://cloud.google.com/networking" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class NetworkSecurity extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $organizations_locations_addressGroups;
-    public $organizations_locations_firewallEndpoints;
-    public $organizations_locations_operations;
-    public $organizations_locations_securityProfileGroups;
-    public $organizations_locations_securityProfiles;
-    public $projects_locations;
-    public $projects_locations_addressGroups;
-    public $projects_locations_authorizationPolicies;
-    public $projects_locations_authzPolicies;
-    public $projects_locations_backendAuthenticationConfigs;
-    public $projects_locations_clientTlsPolicies;
-    public $projects_locations_dnsThreatDetectors;
-    public $projects_locations_firewallEndpointAssociations;
-    public $projects_locations_firewallEndpoints;
-    public $projects_locations_gatewaySecurityPolicies;
-    public $projects_locations_gatewaySecurityPolicies_rules;
-    public $projects_locations_interceptDeploymentGroups;
-    public $projects_locations_interceptDeployments;
-    public $projects_locations_interceptEndpointGroupAssociations;
-    public $projects_locations_interceptEndpointGroups;
-    public $projects_locations_mirroringDeploymentGroups;
-    public $projects_locations_mirroringDeployments;
-    public $projects_locations_mirroringEndpointGroupAssociations;
-    public $projects_locations_mirroringEndpointGroups;
-    public $projects_locations_operations;
-    public $projects_locations_serverTlsPolicies;
-    public $projects_locations_tlsInspectionPolicies;
-    public $projects_locations_urlLists;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the NetworkSecurity service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for NetworkSecurity (v1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://cloud.google.com/networking" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class NetworkSecurity extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $organizations_locations_addressGroups;
+        public $organizations_locations_firewallEndpoints;
+        public $organizations_locations_operations;
+        public $organizations_locations_securityProfileGroups;
+        public $organizations_locations_securityProfiles;
+        public $projects_locations;
+        public $projects_locations_addressGroups;
+        public $projects_locations_authorizationPolicies;
+        public $projects_locations_authzPolicies;
+        public $projects_locations_backendAuthenticationConfigs;
+        public $projects_locations_clientTlsPolicies;
+        public $projects_locations_dnsThreatDetectors;
+        public $projects_locations_firewallEndpointAssociations;
+        public $projects_locations_firewallEndpoints;
+        public $projects_locations_gatewaySecurityPolicies;
+        public $projects_locations_gatewaySecurityPolicies_rules;
+        public $projects_locations_interceptDeploymentGroups;
+        public $projects_locations_interceptDeployments;
+        public $projects_locations_interceptEndpointGroupAssociations;
+        public $projects_locations_interceptEndpointGroups;
+        public $projects_locations_mirroringDeploymentGroups;
+        public $projects_locations_mirroringDeployments;
+        public $projects_locations_mirroringEndpointGroupAssociations;
+        public $projects_locations_mirroringEndpointGroups;
+        public $projects_locations_operations;
+        public $projects_locations_serverTlsPolicies;
+        public $projects_locations_tlsInspectionPolicies;
+        public $projects_locations_urlLists;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the NetworkSecurity service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetworkSecurity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_NetworkSecurity extends \Google\Service\NetworkSecurity
     {
     }
 }

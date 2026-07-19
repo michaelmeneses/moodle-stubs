@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class FileNote extends \Google\Collection
-{
-    protected $collection_key = 'checksum';
-    public $checksum;
-    public $fileType;
-    public $title;
-    public function setChecksum($checksum)
+namespace Google\Service\ContainerAnalysis {
+    class FileNote extends \Google\Collection
     {
+        protected $collection_key = 'checksum';
+        public $checksum;
+        public $fileType;
+        public $title;
+        public function setChecksum($checksum)
+        {
+        }
+        public function getChecksum()
+        {
+        }
+        public function setFileType($fileType)
+        {
+        }
+        public function getFileType()
+        {
+        }
+        public function setTitle($title)
+        {
+        }
+        public function getTitle()
+        {
+        }
     }
-    public function getChecksum()
-    {
-    }
-    public function setFileType($fileType)
-    {
-    }
-    public function getFileType()
-    {
-    }
-    public function setTitle($title)
-    {
-    }
-    public function getTitle()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\FileNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_FileNote extends \Google\Service\ContainerAnalysis\FileNote
     {
     }
 }

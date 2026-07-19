@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateInstanceMetadata extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const EXPECTED_FULFILLMENT_PERIOD_FULFILLMENT_PERIOD_UNSPECIFIED = 'FULFILLMENT_PERIOD_UNSPECIFIED';
-    /**
-     * Normal fulfillment period. The operation is expected to complete within
-     * minutes.
-     */
-    public const EXPECTED_FULFILLMENT_PERIOD_FULFILLMENT_PERIOD_NORMAL = 'FULFILLMENT_PERIOD_NORMAL';
-    /**
-     * Extended fulfillment period. It can take up to an hour for the operation to
-     * complete.
-     */
-    public const EXPECTED_FULFILLMENT_PERIOD_FULFILLMENT_PERIOD_EXTENDED = 'FULFILLMENT_PERIOD_EXTENDED';
-    /**
-     * The time at which this operation was cancelled. If set, this operation is
-     * in the process of undoing itself (which is guaranteed to succeed) and
-     * cannot be cancelled again.
-     *
-     * @var string
-     */
-    public $cancelTime;
-    /**
-     * The time at which this operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The expected fulfillment period of this update operation.
-     *
-     * @var string
-     */
-    public $expectedFulfillmentPeriod;
-    protected $instanceType = Instance::class;
-    protected $instanceDataType = '';
-    /**
-     * The time at which UpdateInstance request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The time at which this operation was cancelled. If set, this operation is
-     * in the process of undoing itself (which is guaranteed to succeed) and
-     * cannot be cancelled again.
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Spanner {
+    class UpdateInstanceMetadata extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const EXPECTED_FULFILLMENT_PERIOD_FULFILLMENT_PERIOD_UNSPECIFIED = 'FULFILLMENT_PERIOD_UNSPECIFIED';
+        /**
+         * Normal fulfillment period. The operation is expected to complete within
+         * minutes.
+         */
+        public const EXPECTED_FULFILLMENT_PERIOD_FULFILLMENT_PERIOD_NORMAL = 'FULFILLMENT_PERIOD_NORMAL';
+        /**
+         * Extended fulfillment period. It can take up to an hour for the operation to
+         * complete.
+         */
+        public const EXPECTED_FULFILLMENT_PERIOD_FULFILLMENT_PERIOD_EXTENDED = 'FULFILLMENT_PERIOD_EXTENDED';
+        /**
+         * The time at which this operation was cancelled. If set, this operation is
+         * in the process of undoing itself (which is guaranteed to succeed) and
+         * cannot be cancelled again.
+         *
+         * @var string
+         */
+        public $cancelTime;
+        /**
+         * The time at which this operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The expected fulfillment period of this update operation.
+         *
+         * @var string
+         */
+        public $expectedFulfillmentPeriod;
+        protected $instanceType = Instance::class;
+        protected $instanceDataType = '';
+        /**
+         * The time at which UpdateInstance request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The time at which this operation was cancelled. If set, this operation is
+         * in the process of undoing itself (which is guaranteed to succeed) and
+         * cannot be cancelled again.
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * The time at which this operation failed or was completed successfully.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The expected fulfillment period of this update operation.
+         *
+         * Accepted values: FULFILLMENT_PERIOD_UNSPECIFIED, FULFILLMENT_PERIOD_NORMAL,
+         * FULFILLMENT_PERIOD_EXTENDED
+         *
+         * @param self::EXPECTED_FULFILLMENT_PERIOD_* $expectedFulfillmentPeriod
+         */
+        public function setExpectedFulfillmentPeriod($expectedFulfillmentPeriod)
+        {
+        }
+        /**
+         * @return self::EXPECTED_FULFILLMENT_PERIOD_*
+         */
+        public function getExpectedFulfillmentPeriod()
+        {
+        }
+        /**
+         * The desired end state of the update.
+         *
+         * @param Instance $instance
+         */
+        public function setInstance(Instance $instance)
+        {
+        }
+        /**
+         * @return Instance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * The time at which UpdateInstance request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\UpdateInstanceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * The time at which this operation failed or was completed successfully.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The expected fulfillment period of this update operation.
-     *
-     * Accepted values: FULFILLMENT_PERIOD_UNSPECIFIED, FULFILLMENT_PERIOD_NORMAL,
-     * FULFILLMENT_PERIOD_EXTENDED
-     *
-     * @param self::EXPECTED_FULFILLMENT_PERIOD_* $expectedFulfillmentPeriod
-     */
-    public function setExpectedFulfillmentPeriod($expectedFulfillmentPeriod)
-    {
-    }
-    /**
-     * @return self::EXPECTED_FULFILLMENT_PERIOD_*
-     */
-    public function getExpectedFulfillmentPeriod()
-    {
-    }
-    /**
-     * The desired end state of the update.
-     *
-     * @param Instance $instance
-     */
-    public function setInstance(Instance $instance)
-    {
-    }
-    /**
-     * @return Instance
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * The time at which UpdateInstance request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Spanner_UpdateInstanceMetadata extends \Google\Service\Spanner\UpdateInstanceMetadata
     {
     }
 }

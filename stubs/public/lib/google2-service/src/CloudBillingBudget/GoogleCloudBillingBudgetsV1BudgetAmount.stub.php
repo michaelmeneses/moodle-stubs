@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBillingBudget;
-
-class GoogleCloudBillingBudgetsV1BudgetAmount extends \Google\Model
-{
-    protected $lastPeriodAmountType = GoogleCloudBillingBudgetsV1LastPeriodAmount::class;
-    protected $lastPeriodAmountDataType = '';
-    protected $specifiedAmountType = GoogleTypeMoney::class;
-    protected $specifiedAmountDataType = '';
-    /**
-     * Use the last period's actual spend as the budget for the present period.
-     * LastPeriodAmount can only be set when the budget's time period is a
-     * Filter.calendar_period. It cannot be set in combination with
-     * Filter.custom_period.
-     *
-     * @param GoogleCloudBillingBudgetsV1LastPeriodAmount $lastPeriodAmount
-     */
-    public function setLastPeriodAmount(GoogleCloudBillingBudgetsV1LastPeriodAmount $lastPeriodAmount)
+namespace Google\Service\CloudBillingBudget {
+    class GoogleCloudBillingBudgetsV1BudgetAmount extends \Google\Model
     {
+        protected $lastPeriodAmountType = GoogleCloudBillingBudgetsV1LastPeriodAmount::class;
+        protected $lastPeriodAmountDataType = '';
+        protected $specifiedAmountType = GoogleTypeMoney::class;
+        protected $specifiedAmountDataType = '';
+        /**
+         * Use the last period's actual spend as the budget for the present period.
+         * LastPeriodAmount can only be set when the budget's time period is a
+         * Filter.calendar_period. It cannot be set in combination with
+         * Filter.custom_period.
+         *
+         * @param GoogleCloudBillingBudgetsV1LastPeriodAmount $lastPeriodAmount
+         */
+        public function setLastPeriodAmount(GoogleCloudBillingBudgetsV1LastPeriodAmount $lastPeriodAmount)
+        {
+        }
+        /**
+         * @return GoogleCloudBillingBudgetsV1LastPeriodAmount
+         */
+        public function getLastPeriodAmount()
+        {
+        }
+        /**
+         * A specified amount to use as the budget. `currency_code` is optional. If
+         * specified when creating a budget, it must match the currency of the billing
+         * account. If specified when updating a budget, it must match the
+         * currency_code of the existing budget. The `currency_code` is provided on
+         * output.
+         *
+         * @param GoogleTypeMoney $specifiedAmount
+         */
+        public function setSpecifiedAmount(GoogleTypeMoney $specifiedAmount)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getSpecifiedAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBillingBudgetsV1LastPeriodAmount
+     * Runtime class alias of \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1BudgetAmount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastPeriodAmount()
-    {
-    }
-    /**
-     * A specified amount to use as the budget. `currency_code` is optional. If
-     * specified when creating a budget, it must match the currency of the billing
-     * account. If specified when updating a budget, it must match the
-     * currency_code of the existing budget. The `currency_code` is provided on
-     * output.
-     *
-     * @param GoogleTypeMoney $specifiedAmount
-     */
-    public function setSpecifiedAmount(GoogleTypeMoney $specifiedAmount)
-    {
-    }
-    /**
-     * @return GoogleTypeMoney
-     */
-    public function getSpecifiedAmount()
+    class Google_Service_CloudBillingBudget_GoogleCloudBillingBudgetsV1BudgetAmount extends \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1BudgetAmount
     {
     }
 }

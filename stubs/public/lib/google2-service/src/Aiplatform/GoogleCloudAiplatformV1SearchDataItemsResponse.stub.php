@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SearchDataItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataItemViews';
-    protected $dataItemViewsType = GoogleCloudAiplatformV1DataItemView::class;
-    protected $dataItemViewsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * SearchDataItemsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The DataItemViews read.
-     *
-     * @param GoogleCloudAiplatformV1DataItemView[] $dataItemViews
-     */
-    public function setDataItemViews($dataItemViews)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SearchDataItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataItemViews';
+        protected $dataItemViewsType = GoogleCloudAiplatformV1DataItemView::class;
+        protected $dataItemViewsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * SearchDataItemsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The DataItemViews read.
+         *
+         * @param GoogleCloudAiplatformV1DataItemView[] $dataItemViews
+         */
+        public function setDataItemViews($dataItemViews)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DataItemView[]
+         */
+        public function getDataItemViews()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass to
+         * SearchDataItemsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DataItemView[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchDataItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataItemViews()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass to
-     * SearchDataItemsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SearchDataItemsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchDataItemsResponse
     {
     }
 }

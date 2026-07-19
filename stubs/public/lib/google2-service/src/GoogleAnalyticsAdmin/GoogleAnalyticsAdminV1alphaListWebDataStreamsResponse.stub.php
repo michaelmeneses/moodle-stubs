@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse extends \Google\Collection
-{
-    protected $collection_key = 'webDataStreams';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $webDataStreamsType = GoogleAnalyticsAdminV1alphaWebDataStream::class;
-    protected $webDataStreamsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse extends \Google\Collection
     {
+        protected $collection_key = 'webDataStreams';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $webDataStreamsType = GoogleAnalyticsAdminV1alphaWebDataStream::class;
+        protected $webDataStreamsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaWebDataStream[]
+         */
+        public function setWebDataStreams($webDataStreams)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaWebDataStream[]
+         */
+        public function getWebDataStreams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaWebDataStream[]
-     */
-    public function setWebDataStreams($webDataStreams)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaWebDataStream[]
-     */
-    public function getWebDataStreams()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse
     {
     }
 }

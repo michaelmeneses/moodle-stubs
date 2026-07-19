@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class UserList extends \Google\Model
-{
-    /**
-     * Default value that should never be used.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * New users can be added to the user list.
-     */
-    public const STATUS_OPEN = 'OPEN';
-    /**
-     * New users cannot be added to the user list.
-     */
-    public const STATUS_CLOSED = 'CLOSED';
-    /**
-     * The description for the user list.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Display name of the user list. This must be unique across all
-     * user lists for a given account.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The number of days a user's cookie stays on the user list. The
-     * field must be between 0 and 540 inclusive.
-     *
-     * @var string
-     */
-    public $membershipDurationDays;
-    /**
-     * Output only. Name of the user list that must follow the pattern
-     * `buyers/{buyer}/userLists/{user_list}`, where `{buyer}` represents the
-     * account ID of the buyer who owns the user list. For a bidder accessing user
-     * lists on behalf of a child seat buyer, `{buyer}` represents the account ID
-     * of the child seat buyer. `{user_list}` is an int64 identifier assigned by
-     * Google to uniquely identify a user list.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The status of the user list. A new user list starts out as
-     * open.
-     *
-     * @var string
-     */
-    public $status;
-    protected $urlRestrictionType = UrlRestriction::class;
-    protected $urlRestrictionDataType = '';
-    /**
-     * The description for the user list.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\RealTimeBidding {
+    class UserList extends \Google\Model
     {
+        /**
+         * Default value that should never be used.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * New users can be added to the user list.
+         */
+        public const STATUS_OPEN = 'OPEN';
+        /**
+         * New users cannot be added to the user list.
+         */
+        public const STATUS_CLOSED = 'CLOSED';
+        /**
+         * The description for the user list.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Display name of the user list. This must be unique across all
+         * user lists for a given account.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The number of days a user's cookie stays on the user list. The
+         * field must be between 0 and 540 inclusive.
+         *
+         * @var string
+         */
+        public $membershipDurationDays;
+        /**
+         * Output only. Name of the user list that must follow the pattern
+         * `buyers/{buyer}/userLists/{user_list}`, where `{buyer}` represents the
+         * account ID of the buyer who owns the user list. For a bidder accessing user
+         * lists on behalf of a child seat buyer, `{buyer}` represents the account ID
+         * of the child seat buyer. `{user_list}` is an int64 identifier assigned by
+         * Google to uniquely identify a user list.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The status of the user list. A new user list starts out as
+         * open.
+         *
+         * @var string
+         */
+        public $status;
+        protected $urlRestrictionType = UrlRestriction::class;
+        protected $urlRestrictionDataType = '';
+        /**
+         * The description for the user list.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Display name of the user list. This must be unique across all
+         * user lists for a given account.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The number of days a user's cookie stays on the user list. The
+         * field must be between 0 and 540 inclusive.
+         *
+         * @param string $membershipDurationDays
+         */
+        public function setMembershipDurationDays($membershipDurationDays)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembershipDurationDays()
+        {
+        }
+        /**
+         * Output only. Name of the user list that must follow the pattern
+         * `buyers/{buyer}/userLists/{user_list}`, where `{buyer}` represents the
+         * account ID of the buyer who owns the user list. For a bidder accessing user
+         * lists on behalf of a child seat buyer, `{buyer}` represents the account ID
+         * of the child seat buyer. `{user_list}` is an int64 identifier assigned by
+         * Google to uniquely identify a user list.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The status of the user list. A new user list starts out as
+         * open.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, OPEN, CLOSED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Required. Deprecated. This will be removed in October 2023. For more
+         * information, see the release notes:
+         * https://developers.google.com/authorized-buyers/apis/relnotes#real-time-
+         * bidding-api The URL restriction for the user list.
+         *
+         * @param UrlRestriction $urlRestriction
+         */
+        public function setUrlRestriction(UrlRestriction $urlRestriction)
+        {
+        }
+        /**
+         * @return UrlRestriction
+         */
+        public function getUrlRestriction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\UserList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Display name of the user list. This must be unique across all
-     * user lists for a given account.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The number of days a user's cookie stays on the user list. The
-     * field must be between 0 and 540 inclusive.
-     *
-     * @param string $membershipDurationDays
-     */
-    public function setMembershipDurationDays($membershipDurationDays)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMembershipDurationDays()
-    {
-    }
-    /**
-     * Output only. Name of the user list that must follow the pattern
-     * `buyers/{buyer}/userLists/{user_list}`, where `{buyer}` represents the
-     * account ID of the buyer who owns the user list. For a bidder accessing user
-     * lists on behalf of a child seat buyer, `{buyer}` represents the account ID
-     * of the child seat buyer. `{user_list}` is an int64 identifier assigned by
-     * Google to uniquely identify a user list.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The status of the user list. A new user list starts out as
-     * open.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, OPEN, CLOSED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Required. Deprecated. This will be removed in October 2023. For more
-     * information, see the release notes:
-     * https://developers.google.com/authorized-buyers/apis/relnotes#real-time-
-     * bidding-api The URL restriction for the user list.
-     *
-     * @param UrlRestriction $urlRestriction
-     */
-    public function setUrlRestriction(UrlRestriction $urlRestriction)
-    {
-    }
-    /**
-     * @return UrlRestriction
-     */
-    public function getUrlRestriction()
+    class Google_Service_RealTimeBidding_UserList extends \Google\Service\RealTimeBidding\UserList
     {
     }
 }

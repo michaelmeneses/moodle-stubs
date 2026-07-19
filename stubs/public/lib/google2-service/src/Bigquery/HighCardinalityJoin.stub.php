@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class HighCardinalityJoin extends \Google\Model
-{
-    /**
-     * Output only. Count of left input rows.
-     *
-     * @var string
-     */
-    public $leftRows;
-    /**
-     * Output only. Count of the output rows.
-     *
-     * @var string
-     */
-    public $outputRows;
-    /**
-     * Output only. Count of right input rows.
-     *
-     * @var string
-     */
-    public $rightRows;
-    /**
-     * Output only. The index of the join operator in the ExplainQueryStep lists.
-     *
-     * @var int
-     */
-    public $stepIndex;
-    /**
-     * Output only. Count of left input rows.
-     *
-     * @param string $leftRows
-     */
-    public function setLeftRows($leftRows)
+namespace Google\Service\Bigquery {
+    class HighCardinalityJoin extends \Google\Model
     {
+        /**
+         * Output only. Count of left input rows.
+         *
+         * @var string
+         */
+        public $leftRows;
+        /**
+         * Output only. Count of the output rows.
+         *
+         * @var string
+         */
+        public $outputRows;
+        /**
+         * Output only. Count of right input rows.
+         *
+         * @var string
+         */
+        public $rightRows;
+        /**
+         * Output only. The index of the join operator in the ExplainQueryStep lists.
+         *
+         * @var int
+         */
+        public $stepIndex;
+        /**
+         * Output only. Count of left input rows.
+         *
+         * @param string $leftRows
+         */
+        public function setLeftRows($leftRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeftRows()
+        {
+        }
+        /**
+         * Output only. Count of the output rows.
+         *
+         * @param string $outputRows
+         */
+        public function setOutputRows($outputRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputRows()
+        {
+        }
+        /**
+         * Output only. Count of right input rows.
+         *
+         * @param string $rightRows
+         */
+        public function setRightRows($rightRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRightRows()
+        {
+        }
+        /**
+         * Output only. The index of the join operator in the ExplainQueryStep lists.
+         *
+         * @param int $stepIndex
+         */
+        public function setStepIndex($stepIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStepIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\HighCardinalityJoin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeftRows()
-    {
-    }
-    /**
-     * Output only. Count of the output rows.
-     *
-     * @param string $outputRows
-     */
-    public function setOutputRows($outputRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputRows()
-    {
-    }
-    /**
-     * Output only. Count of right input rows.
-     *
-     * @param string $rightRows
-     */
-    public function setRightRows($rightRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRightRows()
-    {
-    }
-    /**
-     * Output only. The index of the join operator in the ExplainQueryStep lists.
-     *
-     * @param int $stepIndex
-     */
-    public function setStepIndex($stepIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStepIndex()
+    class Google_Service_Bigquery_HighCardinalityJoin extends \Google\Service\Bigquery\HighCardinalityJoin
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CreateNotebookExecutionJobRequest extends \Google\Model
-{
-    protected $notebookExecutionJobType = GoogleCloudAiplatformV1NotebookExecutionJob::class;
-    protected $notebookExecutionJobDataType = '';
-    /**
-     * Optional. User specified ID for the NotebookExecutionJob.
-     *
-     * @var string
-     */
-    public $notebookExecutionJobId;
-    /**
-     * Required. The resource name of the Location to create the
-     * NotebookExecutionJob. Format: `projects/{project}/locations/{location}`
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The NotebookExecutionJob to create.
-     *
-     * @param GoogleCloudAiplatformV1NotebookExecutionJob $notebookExecutionJob
-     */
-    public function setNotebookExecutionJob(GoogleCloudAiplatformV1NotebookExecutionJob $notebookExecutionJob)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CreateNotebookExecutionJobRequest extends \Google\Model
     {
+        protected $notebookExecutionJobType = GoogleCloudAiplatformV1NotebookExecutionJob::class;
+        protected $notebookExecutionJobDataType = '';
+        /**
+         * Optional. User specified ID for the NotebookExecutionJob.
+         *
+         * @var string
+         */
+        public $notebookExecutionJobId;
+        /**
+         * Required. The resource name of the Location to create the
+         * NotebookExecutionJob. Format: `projects/{project}/locations/{location}`
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The NotebookExecutionJob to create.
+         *
+         * @param GoogleCloudAiplatformV1NotebookExecutionJob $notebookExecutionJob
+         */
+        public function setNotebookExecutionJob(GoogleCloudAiplatformV1NotebookExecutionJob $notebookExecutionJob)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookExecutionJob
+         */
+        public function getNotebookExecutionJob()
+        {
+        }
+        /**
+         * Optional. User specified ID for the NotebookExecutionJob.
+         *
+         * @param string $notebookExecutionJobId
+         */
+        public function setNotebookExecutionJobId($notebookExecutionJobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookExecutionJobId()
+        {
+        }
+        /**
+         * Required. The resource name of the Location to create the
+         * NotebookExecutionJob. Format: `projects/{project}/locations/{location}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NotebookExecutionJob
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateNotebookExecutionJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebookExecutionJob()
-    {
-    }
-    /**
-     * Optional. User specified ID for the NotebookExecutionJob.
-     *
-     * @param string $notebookExecutionJobId
-     */
-    public function setNotebookExecutionJobId($notebookExecutionJobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebookExecutionJobId()
-    {
-    }
-    /**
-     * Required. The resource name of the Location to create the
-     * NotebookExecutionJob. Format: `projects/{project}/locations/{location}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CreateNotebookExecutionJobRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateNotebookExecutionJobRequest
     {
     }
 }

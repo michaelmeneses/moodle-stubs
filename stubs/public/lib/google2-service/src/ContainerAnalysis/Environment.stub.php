@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Environment extends \Google\Model
-{
-    public $customValues;
-    public function setCustomValues($customValues)
+namespace Google\Service\ContainerAnalysis {
+    class Environment extends \Google\Model
     {
+        public $customValues;
+        public function setCustomValues($customValues)
+        {
+        }
+        public function getCustomValues()
+        {
+        }
     }
-    public function getCustomValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_Environment extends \Google\Service\ContainerAnalysis\Environment
     {
     }
 }

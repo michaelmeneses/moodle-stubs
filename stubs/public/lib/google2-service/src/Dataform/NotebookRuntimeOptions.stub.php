@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class NotebookRuntimeOptions extends \Google\Model
-{
-    /**
-     * Optional. The resource name of the [Colab runtime template]
-     * (https://cloud.google.com/colab/docs/runtimes), from which a runtime is
-     * created for notebook executions. If not specified, a runtime is created
-     * with Colab's default specifications.
-     *
-     * @var string
-     */
-    public $aiPlatformNotebookRuntimeTemplate;
-    /**
-     * Optional. The Google Cloud Storage location to upload the result to.
-     * Format: `gs://bucket-name`.
-     *
-     * @var string
-     */
-    public $gcsOutputBucket;
-    /**
-     * Optional. The resource name of the [Colab runtime template]
-     * (https://cloud.google.com/colab/docs/runtimes), from which a runtime is
-     * created for notebook executions. If not specified, a runtime is created
-     * with Colab's default specifications.
-     *
-     * @param string $aiPlatformNotebookRuntimeTemplate
-     */
-    public function setAiPlatformNotebookRuntimeTemplate($aiPlatformNotebookRuntimeTemplate)
+namespace Google\Service\Dataform {
+    class NotebookRuntimeOptions extends \Google\Model
     {
+        /**
+         * Optional. The resource name of the [Colab runtime template]
+         * (https://cloud.google.com/colab/docs/runtimes), from which a runtime is
+         * created for notebook executions. If not specified, a runtime is created
+         * with Colab's default specifications.
+         *
+         * @var string
+         */
+        public $aiPlatformNotebookRuntimeTemplate;
+        /**
+         * Optional. The Google Cloud Storage location to upload the result to.
+         * Format: `gs://bucket-name`.
+         *
+         * @var string
+         */
+        public $gcsOutputBucket;
+        /**
+         * Optional. The resource name of the [Colab runtime template]
+         * (https://cloud.google.com/colab/docs/runtimes), from which a runtime is
+         * created for notebook executions. If not specified, a runtime is created
+         * with Colab's default specifications.
+         *
+         * @param string $aiPlatformNotebookRuntimeTemplate
+         */
+        public function setAiPlatformNotebookRuntimeTemplate($aiPlatformNotebookRuntimeTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAiPlatformNotebookRuntimeTemplate()
+        {
+        }
+        /**
+         * Optional. The Google Cloud Storage location to upload the result to.
+         * Format: `gs://bucket-name`.
+         *
+         * @param string $gcsOutputBucket
+         */
+        public function setGcsOutputBucket($gcsOutputBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsOutputBucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\NotebookRuntimeOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAiPlatformNotebookRuntimeTemplate()
-    {
-    }
-    /**
-     * Optional. The Google Cloud Storage location to upload the result to.
-     * Format: `gs://bucket-name`.
-     *
-     * @param string $gcsOutputBucket
-     */
-    public function setGcsOutputBucket($gcsOutputBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsOutputBucket()
+    class Google_Service_Dataform_NotebookRuntimeOptions extends \Google\Service\Dataform\NotebookRuntimeOptions
     {
     }
 }

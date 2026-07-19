@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DistributionUpdate extends \Google\Model
-{
-    protected $countType = SplitInt64::class;
-    protected $countDataType = '';
-    protected $histogramType = Histogram::class;
-    protected $histogramDataType = '';
-    protected $maxType = SplitInt64::class;
-    protected $maxDataType = '';
-    protected $minType = SplitInt64::class;
-    protected $minDataType = '';
-    protected $sumType = SplitInt64::class;
-    protected $sumDataType = '';
-    /**
-     * Use a double since the sum of squares is likely to overflow int64.
-     *
-     * @var 
-     */
-    public $sumOfSquares;
-    /**
-     * The count of the number of elements present in the distribution.
-     *
-     * @param SplitInt64 $count
-     */
-    public function setCount(SplitInt64 $count)
+namespace Google\Service\Dataflow {
+    class DistributionUpdate extends \Google\Model
     {
+        protected $countType = SplitInt64::class;
+        protected $countDataType = '';
+        protected $histogramType = Histogram::class;
+        protected $histogramDataType = '';
+        protected $maxType = SplitInt64::class;
+        protected $maxDataType = '';
+        protected $minType = SplitInt64::class;
+        protected $minDataType = '';
+        protected $sumType = SplitInt64::class;
+        protected $sumDataType = '';
+        /**
+         * Use a double since the sum of squares is likely to overflow int64.
+         *
+         * @var 
+         */
+        public $sumOfSquares;
+        /**
+         * The count of the number of elements present in the distribution.
+         *
+         * @param SplitInt64 $count
+         */
+        public function setCount(SplitInt64 $count)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * (Optional) Histogram of value counts for the distribution.
+         *
+         * @param Histogram $histogram
+         */
+        public function setHistogram(Histogram $histogram)
+        {
+        }
+        /**
+         * @return Histogram
+         */
+        public function getHistogram()
+        {
+        }
+        /**
+         * The maximum value present in the distribution.
+         *
+         * @param SplitInt64 $max
+         */
+        public function setMax(SplitInt64 $max)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * The minimum value present in the distribution.
+         *
+         * @param SplitInt64 $min
+         */
+        public function setMin(SplitInt64 $min)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getMin()
+        {
+        }
+        /**
+         * Use an int64 since we'd prefer the added precision. If overflow is a common
+         * problem we can detect it and use an additional int64 or a double.
+         *
+         * @param SplitInt64 $sum
+         */
+        public function setSum(SplitInt64 $sum)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getSum()
+        {
+        }
+        public function setSumOfSquares($sumOfSquares)
+        {
+        }
+        public function getSumOfSquares()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SplitInt64
+     * Runtime class alias of \Google\Service\Dataflow\DistributionUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * (Optional) Histogram of value counts for the distribution.
-     *
-     * @param Histogram $histogram
-     */
-    public function setHistogram(Histogram $histogram)
-    {
-    }
-    /**
-     * @return Histogram
-     */
-    public function getHistogram()
-    {
-    }
-    /**
-     * The maximum value present in the distribution.
-     *
-     * @param SplitInt64 $max
-     */
-    public function setMax(SplitInt64 $max)
-    {
-    }
-    /**
-     * @return SplitInt64
-     */
-    public function getMax()
-    {
-    }
-    /**
-     * The minimum value present in the distribution.
-     *
-     * @param SplitInt64 $min
-     */
-    public function setMin(SplitInt64 $min)
-    {
-    }
-    /**
-     * @return SplitInt64
-     */
-    public function getMin()
-    {
-    }
-    /**
-     * Use an int64 since we'd prefer the added precision. If overflow is a common
-     * problem we can detect it and use an additional int64 or a double.
-     *
-     * @param SplitInt64 $sum
-     */
-    public function setSum(SplitInt64 $sum)
-    {
-    }
-    /**
-     * @return SplitInt64
-     */
-    public function getSum()
-    {
-    }
-    public function setSumOfSquares($sumOfSquares)
-    {
-    }
-    public function getSumOfSquares()
+    class Google_Service_Dataflow_DistributionUpdate extends \Google\Service\Dataflow\DistributionUpdate
     {
     }
 }

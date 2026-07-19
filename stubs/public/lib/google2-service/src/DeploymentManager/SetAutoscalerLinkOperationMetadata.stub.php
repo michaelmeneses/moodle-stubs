@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class SetAutoscalerLinkOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'zonalIgmIds';
-    /**
-     * List of zonal IGM IDs part of the RMIG.
-     *
-     * @var string[]
-     */
-    public $zonalIgmIds;
-    /**
-     * Map of zone to an ID of the zonal IGM belonging to the RMIG.
-     *
-     * @var string[]
-     */
-    public $zoneToIgmIds;
-    /**
-     * List of zonal IGM IDs part of the RMIG.
-     *
-     * @param string[] $zonalIgmIds
-     */
-    public function setZonalIgmIds($zonalIgmIds)
+namespace Google\Service\DeploymentManager {
+    class SetAutoscalerLinkOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'zonalIgmIds';
+        /**
+         * List of zonal IGM IDs part of the RMIG.
+         *
+         * @var string[]
+         */
+        public $zonalIgmIds;
+        /**
+         * Map of zone to an ID of the zonal IGM belonging to the RMIG.
+         *
+         * @var string[]
+         */
+        public $zoneToIgmIds;
+        /**
+         * List of zonal IGM IDs part of the RMIG.
+         *
+         * @param string[] $zonalIgmIds
+         */
+        public function setZonalIgmIds($zonalIgmIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZonalIgmIds()
+        {
+        }
+        /**
+         * Map of zone to an ID of the zonal IGM belonging to the RMIG.
+         *
+         * @param string[] $zoneToIgmIds
+         */
+        public function setZoneToIgmIds($zoneToIgmIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZoneToIgmIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DeploymentManager\SetAutoscalerLinkOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZonalIgmIds()
-    {
-    }
-    /**
-     * Map of zone to an ID of the zonal IGM belonging to the RMIG.
-     *
-     * @param string[] $zoneToIgmIds
-     */
-    public function setZoneToIgmIds($zoneToIgmIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getZoneToIgmIds()
+    class Google_Service_DeploymentManager_SetAutoscalerLinkOperationMetadata extends \Google\Service\DeploymentManager\SetAutoscalerLinkOperationMetadata
     {
     }
 }

@@ -21,66 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "revisions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $revisions = $runService->projects_locations_workerPools_revisions;
- *  </code>
- */
-class ProjectsLocationsWorkerPoolsRevisions extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\GoogleCloudRunV2ListRevisionsResponse;
+    use Google\Service\CloudRun\GoogleCloudRunV2Revision;
+    use Google\Service\CloudRun\GoogleLongrunningOperation;
     /**
-     * Deletes a Revision. (revisions.delete)
-     *
-     * @param string $name Required. The name of the Revision to delete. Format: pro
-     * jects/{project}/locations/{location}/services/{service}/revisions/{revision}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string etag A system-generated fingerprint for this version of the
-     * resource. This may be used to detect modification conflict during updates.
-     * @opt_param bool validateOnly Indicates that the request should be validated
-     * without actually deleting any resources.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "revisions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $revisions = $runService->projects_locations_workerPools_revisions;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsWorkerPoolsRevisions extends \Google\Service\Resource
     {
+        /**
+         * Deletes a Revision. (revisions.delete)
+         *
+         * @param string $name Required. The name of the Revision to delete. Format: pro
+         * jects/{project}/locations/{location}/services/{service}/revisions/{revision}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string etag A system-generated fingerprint for this version of the
+         * resource. This may be used to detect modification conflict during updates.
+         * @opt_param bool validateOnly Indicates that the request should be validated
+         * without actually deleting any resources.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about a Revision. (revisions.get)
+         *
+         * @param string $name Required. The full name of the Revision. Format: projects
+         * /{project}/locations/{location}/services/{service}/revisions/{revision}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2Revision
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Revisions from a given Service, or from a given location. Results are
+         * sorted by creation time, descending.
+         * (revisions.listProjectsLocationsWorkerPoolsRevisions)
+         *
+         * @param string $parent Required. The Service from which the Revisions should
+         * be listed. To list all Revisions across Services, use "-" instead of Service
+         * name. Format: projects/{project}/locations/{location}/services/{service}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of revisions to return in this call.
+         * @opt_param string pageToken A page token received from a previous call to
+         * ListRevisions. All other parameters must match.
+         * @opt_param bool showDeleted If true, returns deleted (but unexpired)
+         * resources along with active ones.
+         * @return GoogleCloudRunV2ListRevisionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsWorkerPoolsRevisions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about a Revision. (revisions.get)
-     *
-     * @param string $name Required. The full name of the Revision. Format: projects
-     * /{project}/locations/{location}/services/{service}/revisions/{revision}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2Revision
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudRun\Resource\ProjectsLocationsWorkerPoolsRevisions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Revisions from a given Service, or from a given location. Results are
-     * sorted by creation time, descending.
-     * (revisions.listProjectsLocationsWorkerPoolsRevisions)
-     *
-     * @param string $parent Required. The Service from which the Revisions should
-     * be listed. To list all Revisions across Services, use "-" instead of Service
-     * name. Format: projects/{project}/locations/{location}/services/{service}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of revisions to return in this call.
-     * @opt_param string pageToken A page token received from a previous call to
-     * ListRevisions. All other parameters must match.
-     * @opt_param bool showDeleted If true, returns deleted (but unexpired)
-     * resources along with active ones.
-     * @return GoogleCloudRunV2ListRevisionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsWorkerPoolsRevisions($parent, $optParams = [])
+    class Google_Service_CloudRun_Resource_ProjectsLocationsWorkerPoolsRevisions extends \Google\Service\CloudRun\Resource\ProjectsLocationsWorkerPoolsRevisions
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1AccountDefenderAssessment extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * Output only. Labels for this request.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Labels for this request.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1AccountDefenderAssessment extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * Output only. Labels for this request.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Labels for this request.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AccountDefenderAssessment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1AccountDefenderAssessment extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AccountDefenderAssessment
     {
     }
 }

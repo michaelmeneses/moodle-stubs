@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageObjectDetectionEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'boundingBoxMetricsEntries';
-    /**
-     * The single metric for bounding boxes evaluation: the mean_average_precision
-     * averaged over all bounding_box_metrics_entries.
-     *
-     * @var float
-     */
-    public $boundingBoxMeanAveragePrecision;
-    protected $boundingBoxMetricsEntriesType = XPSBoundingBoxMetricsEntry::class;
-    protected $boundingBoxMetricsEntriesDataType = 'array';
-    /**
-     * The total number of bounding boxes (i.e. summed over all images) the ground
-     * truth used to create this evaluation had.
-     *
-     * @var int
-     */
-    public $evaluatedBoundingBoxCount;
-    /**
-     * The single metric for bounding boxes evaluation: the mean_average_precision
-     * averaged over all bounding_box_metrics_entries.
-     *
-     * @param float $boundingBoxMeanAveragePrecision
-     */
-    public function setBoundingBoxMeanAveragePrecision($boundingBoxMeanAveragePrecision)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageObjectDetectionEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'boundingBoxMetricsEntries';
+        /**
+         * The single metric for bounding boxes evaluation: the mean_average_precision
+         * averaged over all bounding_box_metrics_entries.
+         *
+         * @var float
+         */
+        public $boundingBoxMeanAveragePrecision;
+        protected $boundingBoxMetricsEntriesType = XPSBoundingBoxMetricsEntry::class;
+        protected $boundingBoxMetricsEntriesDataType = 'array';
+        /**
+         * The total number of bounding boxes (i.e. summed over all images) the ground
+         * truth used to create this evaluation had.
+         *
+         * @var int
+         */
+        public $evaluatedBoundingBoxCount;
+        /**
+         * The single metric for bounding boxes evaluation: the mean_average_precision
+         * averaged over all bounding_box_metrics_entries.
+         *
+         * @param float $boundingBoxMeanAveragePrecision
+         */
+        public function setBoundingBoxMeanAveragePrecision($boundingBoxMeanAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBoundingBoxMeanAveragePrecision()
+        {
+        }
+        /**
+         * The bounding boxes match metrics for each Intersection-over-union threshold
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 and each label confidence threshold
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 pair.
+         *
+         * @param XPSBoundingBoxMetricsEntry[] $boundingBoxMetricsEntries
+         */
+        public function setBoundingBoxMetricsEntries($boundingBoxMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSBoundingBoxMetricsEntry[]
+         */
+        public function getBoundingBoxMetricsEntries()
+        {
+        }
+        /**
+         * The total number of bounding boxes (i.e. summed over all images) the ground
+         * truth used to create this evaluation had.
+         *
+         * @param int $evaluatedBoundingBoxCount
+         */
+        public function setEvaluatedBoundingBoxCount($evaluatedBoundingBoxCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEvaluatedBoundingBoxCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageObjectDetectionEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBoxMeanAveragePrecision()
-    {
-    }
-    /**
-     * The bounding boxes match metrics for each Intersection-over-union threshold
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 and each label confidence threshold
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 pair.
-     *
-     * @param XPSBoundingBoxMetricsEntry[] $boundingBoxMetricsEntries
-     */
-    public function setBoundingBoxMetricsEntries($boundingBoxMetricsEntries)
-    {
-    }
-    /**
-     * @return XPSBoundingBoxMetricsEntry[]
-     */
-    public function getBoundingBoxMetricsEntries()
-    {
-    }
-    /**
-     * The total number of bounding boxes (i.e. summed over all images) the ground
-     * truth used to create this evaluation had.
-     *
-     * @param int $evaluatedBoundingBoxCount
-     */
-    public function setEvaluatedBoundingBoxCount($evaluatedBoundingBoxCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEvaluatedBoundingBoxCount()
+    class Google_Service_CloudNaturalLanguage_XPSImageObjectDetectionEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSImageObjectDetectionEvaluationMetrics
     {
     }
 }

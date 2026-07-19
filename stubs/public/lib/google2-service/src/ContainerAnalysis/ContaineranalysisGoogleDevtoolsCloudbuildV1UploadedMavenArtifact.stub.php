@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1UploadedMavenArtifact extends \Google\Model
-{
-    /**
-     * Output only. Path to the artifact in Artifact Registry.
-     *
-     * @var string
-     */
-    public $artifactRegistryPackage;
-    protected $fileHashesType = ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes::class;
-    protected $fileHashesDataType = '';
-    protected $pushTimingType = ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan::class;
-    protected $pushTimingDataType = '';
-    /**
-     * URI of the uploaded artifact.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. Path to the artifact in Artifact Registry.
-     *
-     * @param string $artifactRegistryPackage
-     */
-    public function setArtifactRegistryPackage($artifactRegistryPackage)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1UploadedMavenArtifact extends \Google\Model
     {
+        /**
+         * Output only. Path to the artifact in Artifact Registry.
+         *
+         * @var string
+         */
+        public $artifactRegistryPackage;
+        protected $fileHashesType = ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes::class;
+        protected $fileHashesDataType = '';
+        protected $pushTimingType = ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan::class;
+        protected $pushTimingDataType = '';
+        /**
+         * URI of the uploaded artifact.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. Path to the artifact in Artifact Registry.
+         *
+         * @param string $artifactRegistryPackage
+         */
+        public function setArtifactRegistryPackage($artifactRegistryPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactRegistryPackage()
+        {
+        }
+        /**
+         * Hash types and values of the Maven Artifact.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes $fileHashes
+         */
+        public function setFileHashes(ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes $fileHashes)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes
+         */
+        public function getFileHashes()
+        {
+        }
+        /**
+         * Output only. Stores timing information for pushing the specified artifact.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming
+         */
+        public function setPushTiming(ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan
+         */
+        public function getPushTiming()
+        {
+        }
+        /**
+         * URI of the uploaded artifact.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1UploadedMavenArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactRegistryPackage()
-    {
-    }
-    /**
-     * Hash types and values of the Maven Artifact.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes $fileHashes
-     */
-    public function setFileHashes(ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes $fileHashes)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes
-     */
-    public function getFileHashes()
-    {
-    }
-    /**
-     * Output only. Stores timing information for pushing the specified artifact.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming
-     */
-    public function setPushTiming(ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan
-     */
-    public function getPushTiming()
-    {
-    }
-    /**
-     * URI of the uploaded artifact.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1UploadedMavenArtifact extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1UploadedMavenArtifact
     {
     }
 }

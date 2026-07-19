@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceInfraSpannerConfig extends \Google\Model
-{
-    protected $createDatabaseOptionsType = CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions::class;
-    protected $createDatabaseOptionsDataType = '';
-    /**
-     * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
-     * encryption. Only set this field when provisioning new Infra Spanner
-     * databases. For existing Infra Spanner databases, this field will be ignored
-     * because CMEK re-encryption is not supported. For example,
-     * projects//locations//keyRings//cryptoKeys/
-     *
-     * @var string
-     */
-    public $kmsKeyReference;
-    /**
-     * Input [Required]. The file path to the spanner SDL bundle.
-     *
-     * @var string
-     */
-    public $sdlBundlePath;
-    /**
-     * Input [Optional]. The spanner borg service account for delegating the kms
-     * key to. For example, spanner-infra-cmek-nonprod@system.gserviceaccount.com,
-     * for the nonprod universe.
-     *
-     * @var string
-     */
-    public $spannerBorgServiceAccount;
-    /**
-     * @var string
-     */
-    public $spannerLocalNamePrefix;
-    /**
-     * @var string
-     */
-    public $spannerNamespace;
-    /**
-     * Input [Required]. Every database in Spanner can be identified by the
-     * following path name: /span//:
-     *
-     * @var string
-     */
-    public $spannerUniverse;
-    /**
-     * Input [Optional]. The options to create a spanner database. Note: give the
-     * right options to ensure the right KMS key access audit logging and AxT
-     * logging in expected logging category.
-     *
-     * @param CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions $createDatabaseOptions
-     */
-    public function setCreateDatabaseOptions(CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions $createDatabaseOptions)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceInfraSpannerConfig extends \Google\Model
     {
+        protected $createDatabaseOptionsType = CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions::class;
+        protected $createDatabaseOptionsDataType = '';
+        /**
+         * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
+         * encryption. Only set this field when provisioning new Infra Spanner
+         * databases. For existing Infra Spanner databases, this field will be ignored
+         * because CMEK re-encryption is not supported. For example,
+         * projects//locations//keyRings//cryptoKeys/
+         *
+         * @var string
+         */
+        public $kmsKeyReference;
+        /**
+         * Input [Required]. The file path to the spanner SDL bundle.
+         *
+         * @var string
+         */
+        public $sdlBundlePath;
+        /**
+         * Input [Optional]. The spanner borg service account for delegating the kms
+         * key to. For example, spanner-infra-cmek-nonprod@system.gserviceaccount.com,
+         * for the nonprod universe.
+         *
+         * @var string
+         */
+        public $spannerBorgServiceAccount;
+        /**
+         * @var string
+         */
+        public $spannerLocalNamePrefix;
+        /**
+         * @var string
+         */
+        public $spannerNamespace;
+        /**
+         * Input [Required]. Every database in Spanner can be identified by the
+         * following path name: /span//:
+         *
+         * @var string
+         */
+        public $spannerUniverse;
+        /**
+         * Input [Optional]. The options to create a spanner database. Note: give the
+         * right options to ensure the right KMS key access audit logging and AxT
+         * logging in expected logging category.
+         *
+         * @param CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions $createDatabaseOptions
+         */
+        public function setCreateDatabaseOptions(CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions $createDatabaseOptions)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions
+         */
+        public function getCreateDatabaseOptions()
+        {
+        }
+        /**
+         * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
+         * encryption. Only set this field when provisioning new Infra Spanner
+         * databases. For existing Infra Spanner databases, this field will be ignored
+         * because CMEK re-encryption is not supported. For example,
+         * projects//locations//keyRings//cryptoKeys/
+         *
+         * @param string $kmsKeyReference
+         */
+        public function setKmsKeyReference($kmsKeyReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyReference()
+        {
+        }
+        /**
+         * Input [Required]. The file path to the spanner SDL bundle.
+         *
+         * @param string $sdlBundlePath
+         */
+        public function setSdlBundlePath($sdlBundlePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSdlBundlePath()
+        {
+        }
+        /**
+         * Input [Optional]. The spanner borg service account for delegating the kms
+         * key to. For example, spanner-infra-cmek-nonprod@system.gserviceaccount.com,
+         * for the nonprod universe.
+         *
+         * @param string $spannerBorgServiceAccount
+         */
+        public function setSpannerBorgServiceAccount($spannerBorgServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpannerBorgServiceAccount()
+        {
+        }
+        /**
+         * @param string $spannerLocalNamePrefix
+         */
+        public function setSpannerLocalNamePrefix($spannerLocalNamePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpannerLocalNamePrefix()
+        {
+        }
+        /**
+         * @param string $spannerNamespace
+         */
+        public function setSpannerNamespace($spannerNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpannerNamespace()
+        {
+        }
+        /**
+         * Input [Required]. Every database in Spanner can be identified by the
+         * following path name: /span//:
+         *
+         * @param string $spannerUniverse
+         */
+        public function setSpannerUniverse($spannerUniverse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpannerUniverse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceInfraSpannerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateDatabaseOptions()
-    {
-    }
-    /**
-     * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
-     * encryption. Only set this field when provisioning new Infra Spanner
-     * databases. For existing Infra Spanner databases, this field will be ignored
-     * because CMEK re-encryption is not supported. For example,
-     * projects//locations//keyRings//cryptoKeys/
-     *
-     * @param string $kmsKeyReference
-     */
-    public function setKmsKeyReference($kmsKeyReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyReference()
-    {
-    }
-    /**
-     * Input [Required]. The file path to the spanner SDL bundle.
-     *
-     * @param string $sdlBundlePath
-     */
-    public function setSdlBundlePath($sdlBundlePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSdlBundlePath()
-    {
-    }
-    /**
-     * Input [Optional]. The spanner borg service account for delegating the kms
-     * key to. For example, spanner-infra-cmek-nonprod@system.gserviceaccount.com,
-     * for the nonprod universe.
-     *
-     * @param string $spannerBorgServiceAccount
-     */
-    public function setSpannerBorgServiceAccount($spannerBorgServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpannerBorgServiceAccount()
-    {
-    }
-    /**
-     * @param string $spannerLocalNamePrefix
-     */
-    public function setSpannerLocalNamePrefix($spannerLocalNamePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpannerLocalNamePrefix()
-    {
-    }
-    /**
-     * @param string $spannerNamespace
-     */
-    public function setSpannerNamespace($spannerNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpannerNamespace()
-    {
-    }
-    /**
-     * Input [Required]. Every database in Spanner can be identified by the
-     * following path name: /span//:
-     *
-     * @param string $spannerUniverse
-     */
-    public function setSpannerUniverse($spannerUniverse)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpannerUniverse()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceInfraSpannerConfig extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceInfraSpannerConfig
     {
     }
 }

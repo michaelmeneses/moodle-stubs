@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ReplaceAllShapesWithSheetsChartResponse extends \Google\Model
-{
-    /**
-     * The number of shapes replaced with charts.
-     *
-     * @var int
-     */
-    public $occurrencesChanged;
-    /**
-     * The number of shapes replaced with charts.
-     *
-     * @param int $occurrencesChanged
-     */
-    public function setOccurrencesChanged($occurrencesChanged)
+namespace Google\Service\Slides {
+    class ReplaceAllShapesWithSheetsChartResponse extends \Google\Model
     {
+        /**
+         * The number of shapes replaced with charts.
+         *
+         * @var int
+         */
+        public $occurrencesChanged;
+        /**
+         * The number of shapes replaced with charts.
+         *
+         * @param int $occurrencesChanged
+         */
+        public function setOccurrencesChanged($occurrencesChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOccurrencesChanged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\ReplaceAllShapesWithSheetsChartResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOccurrencesChanged()
+    class Google_Service_Slides_ReplaceAllShapesWithSheetsChartResponse extends \Google\Service\Slides\ReplaceAllShapesWithSheetsChartResponse
     {
     }
 }

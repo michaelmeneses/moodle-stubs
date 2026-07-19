@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class NotesProperties extends \Google\Model
-{
-    /**
-     * The object ID of the shape on this notes page that contains the speaker
-     * notes for the corresponding slide. The actual shape may not always exist on
-     * the notes page. Inserting text using this object ID will automatically
-     * create the shape. In this case, the actual shape may have different object
-     * ID. The `GetPresentation` or `GetPage` action will always return the latest
-     * object ID.
-     *
-     * @var string
-     */
-    public $speakerNotesObjectId;
-    /**
-     * The object ID of the shape on this notes page that contains the speaker
-     * notes for the corresponding slide. The actual shape may not always exist on
-     * the notes page. Inserting text using this object ID will automatically
-     * create the shape. In this case, the actual shape may have different object
-     * ID. The `GetPresentation` or `GetPage` action will always return the latest
-     * object ID.
-     *
-     * @param string $speakerNotesObjectId
-     */
-    public function setSpeakerNotesObjectId($speakerNotesObjectId)
+namespace Google\Service\Slides {
+    class NotesProperties extends \Google\Model
     {
+        /**
+         * The object ID of the shape on this notes page that contains the speaker
+         * notes for the corresponding slide. The actual shape may not always exist on
+         * the notes page. Inserting text using this object ID will automatically
+         * create the shape. In this case, the actual shape may have different object
+         * ID. The `GetPresentation` or `GetPage` action will always return the latest
+         * object ID.
+         *
+         * @var string
+         */
+        public $speakerNotesObjectId;
+        /**
+         * The object ID of the shape on this notes page that contains the speaker
+         * notes for the corresponding slide. The actual shape may not always exist on
+         * the notes page. Inserting text using this object ID will automatically
+         * create the shape. In this case, the actual shape may have different object
+         * ID. The `GetPresentation` or `GetPage` action will always return the latest
+         * object ID.
+         *
+         * @param string $speakerNotesObjectId
+         */
+        public function setSpeakerNotesObjectId($speakerNotesObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeakerNotesObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\NotesProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeakerNotesObjectId()
+    class Google_Service_Slides_NotesProperties extends \Google\Service\Slides\NotesProperties
     {
     }
 }

@@ -21,103 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "roles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $roles = $adminService->roles;
- *  </code>
- */
-class Roles extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Role;
+    use Google\Service\Directory\Roles as RolesModel;
     /**
-     * Deletes a role. (roles.delete)
-     *
-     * @param string $customer Immutable ID of the Google Workspace account.
-     * @param string $roleId Immutable ID of the role.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "roles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $roles = $adminService->roles;
+     *  </code>
      */
-    public function delete($customer, $roleId, $optParams = [])
+    class Roles extends \Google\Service\Resource
     {
+        /**
+         * Deletes a role. (roles.delete)
+         *
+         * @param string $customer Immutable ID of the Google Workspace account.
+         * @param string $roleId Immutable ID of the role.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customer, $roleId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a role. (roles.get)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param string $roleId Immutable ID of the role.
+         * @param array $optParams Optional parameters.
+         * @return Role
+         * @throws \Google\Service\Exception
+         */
+        public function get($customer, $roleId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a role. (roles.insert)
+         *
+         * @param string $customer Immutable ID of the Google Workspace account.
+         * @param Role $postBody
+         * @param array $optParams Optional parameters.
+         * @return Role
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customer, Role $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a paginated list of all the roles in a domain. (roles.listRoles)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Token to specify the next page in the list.
+         * @return RolesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listRoles($customer, $optParams = [])
+        {
+        }
+        /**
+         * Patches a role. (roles.patch)
+         *
+         * @param string $customer Immutable ID of the Google Workspace account.
+         * @param string $roleId Immutable ID of the role.
+         * @param Role $postBody
+         * @param array $optParams Optional parameters.
+         * @return Role
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customer, $roleId, Role $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a role. (roles.update)
+         *
+         * @param string $customer Immutable ID of the Google Workspace account.
+         * @param string $roleId Immutable ID of the role.
+         * @param Role $postBody
+         * @param array $optParams Optional parameters.
+         * @return Role
+         * @throws \Google\Service\Exception
+         */
+        public function update($customer, $roleId, Role $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a role. (roles.get)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param string $roleId Immutable ID of the role.
-     * @param array $optParams Optional parameters.
-     * @return Role
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Roles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customer, $roleId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a role. (roles.insert)
-     *
-     * @param string $customer Immutable ID of the Google Workspace account.
-     * @param Role $postBody
-     * @param array $optParams Optional parameters.
-     * @return Role
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customer, Role $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a paginated list of all the roles in a domain. (roles.listRoles)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Token to specify the next page in the list.
-     * @return RolesModel
-     * @throws \Google\Service\Exception
-     */
-    public function listRoles($customer, $optParams = [])
-    {
-    }
-    /**
-     * Patches a role. (roles.patch)
-     *
-     * @param string $customer Immutable ID of the Google Workspace account.
-     * @param string $roleId Immutable ID of the role.
-     * @param Role $postBody
-     * @param array $optParams Optional parameters.
-     * @return Role
-     * @throws \Google\Service\Exception
-     */
-    public function patch($customer, $roleId, Role $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a role. (roles.update)
-     *
-     * @param string $customer Immutable ID of the Google Workspace account.
-     * @param string $roleId Immutable ID of the role.
-     * @param Role $postBody
-     * @param array $optParams Optional parameters.
-     * @return Role
-     * @throws \Google\Service\Exception
-     */
-    public function update($customer, $roleId, Role $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_Roles extends \Google\Service\Directory\Resource\Roles
     {
     }
 }

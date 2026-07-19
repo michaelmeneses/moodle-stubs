@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ListPullRequestsResponse extends \Google\Collection
-{
-    protected $collection_key = 'pullRequests';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pullRequestsType = PullRequest::class;
-    protected $pullRequestsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecureSourceManager {
+    class ListPullRequestsResponse extends \Google\Collection
     {
+        protected $collection_key = 'pullRequests';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pullRequestsType = PullRequest::class;
+        protected $pullRequestsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of pull requests.
+         *
+         * @param PullRequest[] $pullRequests
+         */
+        public function setPullRequests($pullRequests)
+        {
+        }
+        /**
+         * @return PullRequest[]
+         */
+        public function getPullRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\ListPullRequestsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of pull requests.
-     *
-     * @param PullRequest[] $pullRequests
-     */
-    public function setPullRequests($pullRequests)
-    {
-    }
-    /**
-     * @return PullRequest[]
-     */
-    public function getPullRequests()
+    class Google_Service_SecureSourceManager_ListPullRequestsResponse extends \Google\Service\SecureSourceManager\ListPullRequestsResponse
     {
     }
 }

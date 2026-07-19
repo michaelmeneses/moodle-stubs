@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class LinkedDatasetSource extends \Google\Model
-{
-    protected $sourceDatasetType = DatasetReference::class;
-    protected $sourceDatasetDataType = '';
-    /**
-     * The source dataset reference contains project numbers and not project ids.
-     *
-     * @param DatasetReference $sourceDataset
-     */
-    public function setSourceDataset(DatasetReference $sourceDataset)
+namespace Google\Service\Bigquery {
+    class LinkedDatasetSource extends \Google\Model
     {
+        protected $sourceDatasetType = DatasetReference::class;
+        protected $sourceDatasetDataType = '';
+        /**
+         * The source dataset reference contains project numbers and not project ids.
+         *
+         * @param DatasetReference $sourceDataset
+         */
+        public function setSourceDataset(DatasetReference $sourceDataset)
+        {
+        }
+        /**
+         * @return DatasetReference
+         */
+        public function getSourceDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatasetReference
+     * Runtime class alias of \Google\Service\Bigquery\LinkedDatasetSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceDataset()
+    class Google_Service_Bigquery_LinkedDatasetSource extends \Google\Service\Bigquery\LinkedDatasetSource
     {
     }
 }

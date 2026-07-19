@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksAccountV1alphaApp extends \Google\Model
-{
-    /**
-     * The resource name of the app. Example: `accounts/123/apps/456`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The app's title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The resource name of the app. Example: `accounts/123/apps/456`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ChecksService {
+    class GoogleChecksAccountV1alphaApp extends \Google\Model
     {
+        /**
+         * The resource name of the app. Example: `accounts/123/apps/456`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The app's title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The resource name of the app. Example: `accounts/123/apps/456`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The app's title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksAccountV1alphaApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The app's title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_ChecksService_GoogleChecksAccountV1alphaApp extends \Google\Service\ChecksService\GoogleChecksAccountV1alphaApp
     {
     }
 }

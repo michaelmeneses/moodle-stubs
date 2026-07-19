@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountIssueImpact extends \Google\Collection
-{
-    /**
-     * Default value. Will never be provided by the API.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Causes either an account suspension or an item disapproval. Errors should
-     * be resolved as soon as possible to ensure items are eligible to appear in
-     * results again.
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * Warnings can negatively impact the performance of ads and can lead to item
-     * or account suspensions in the future unless the issue is resolved.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * Infos are suggested optimizations to increase data quality. Resolving these
-     * issues is recommended, but not required.
-     */
-    public const SEVERITY_INFO = 'INFO';
-    protected $collection_key = 'breakdowns';
-    protected $breakdownsType = Breakdown::class;
-    protected $breakdownsDataType = 'array';
-    /**
-     * Optional. Message summarizing the overall impact of the issue. If present,
-     * it should be rendered to the merchant. For example: "Disapproves 90k offers
-     * in 25 countries"
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The severity of the issue.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Detailed impact breakdown. Explains the types of restriction the issue has
-     * in different shopping destinations and territory. If present, it should be
-     * rendered to the merchant. Can be shown as a mouse over dropdown or a
-     * dialog. Each breakdown item represents a group of regions with the same
-     * impact details.
-     *
-     * @param Breakdown[] $breakdowns
-     */
-    public function setBreakdowns($breakdowns)
+namespace Google\Service\ShoppingContent {
+    class AccountIssueImpact extends \Google\Collection
     {
+        /**
+         * Default value. Will never be provided by the API.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Causes either an account suspension or an item disapproval. Errors should
+         * be resolved as soon as possible to ensure items are eligible to appear in
+         * results again.
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * Warnings can negatively impact the performance of ads and can lead to item
+         * or account suspensions in the future unless the issue is resolved.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * Infos are suggested optimizations to increase data quality. Resolving these
+         * issues is recommended, but not required.
+         */
+        public const SEVERITY_INFO = 'INFO';
+        protected $collection_key = 'breakdowns';
+        protected $breakdownsType = Breakdown::class;
+        protected $breakdownsDataType = 'array';
+        /**
+         * Optional. Message summarizing the overall impact of the issue. If present,
+         * it should be rendered to the merchant. For example: "Disapproves 90k offers
+         * in 25 countries"
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The severity of the issue.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Detailed impact breakdown. Explains the types of restriction the issue has
+         * in different shopping destinations and territory. If present, it should be
+         * rendered to the merchant. Can be shown as a mouse over dropdown or a
+         * dialog. Each breakdown item represents a group of regions with the same
+         * impact details.
+         *
+         * @param Breakdown[] $breakdowns
+         */
+        public function setBreakdowns($breakdowns)
+        {
+        }
+        /**
+         * @return Breakdown[]
+         */
+        public function getBreakdowns()
+        {
+        }
+        /**
+         * Optional. Message summarizing the overall impact of the issue. If present,
+         * it should be rendered to the merchant. For example: "Disapproves 90k offers
+         * in 25 countries"
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The severity of the issue.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARNING, INFO
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Breakdown[]
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountIssueImpact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakdowns()
-    {
-    }
-    /**
-     * Optional. Message summarizing the overall impact of the issue. If present,
-     * it should be rendered to the merchant. For example: "Disapproves 90k offers
-     * in 25 countries"
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The severity of the issue.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARNING, INFO
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_ShoppingContent_AccountIssueImpact extends \Google\Service\ShoppingContent\AccountIssueImpact
     {
     }
 }

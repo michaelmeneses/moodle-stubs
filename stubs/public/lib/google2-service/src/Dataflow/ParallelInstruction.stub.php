@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ParallelInstruction extends \Google\Collection
-{
-    protected $collection_key = 'outputs';
-    protected $flattenType = FlattenInstruction::class;
-    protected $flattenDataType = '';
-    /**
-     * User-provided name of this operation.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * System-defined name for the operation in the original workflow graph.
-     *
-     * @var string
-     */
-    public $originalName;
-    protected $outputsType = InstructionOutput::class;
-    protected $outputsDataType = 'array';
-    protected $parDoType = ParDoInstruction::class;
-    protected $parDoDataType = '';
-    protected $partialGroupByKeyType = PartialGroupByKeyInstruction::class;
-    protected $partialGroupByKeyDataType = '';
-    protected $readType = ReadInstruction::class;
-    protected $readDataType = '';
-    /**
-     * System-defined name of this operation. Unique across the workflow.
-     *
-     * @var string
-     */
-    public $systemName;
-    protected $writeType = WriteInstruction::class;
-    protected $writeDataType = '';
-    /**
-     * Additional information for Flatten instructions.
-     *
-     * @param FlattenInstruction $flatten
-     */
-    public function setFlatten(FlattenInstruction $flatten)
+namespace Google\Service\Dataflow {
+    class ParallelInstruction extends \Google\Collection
     {
+        protected $collection_key = 'outputs';
+        protected $flattenType = FlattenInstruction::class;
+        protected $flattenDataType = '';
+        /**
+         * User-provided name of this operation.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * System-defined name for the operation in the original workflow graph.
+         *
+         * @var string
+         */
+        public $originalName;
+        protected $outputsType = InstructionOutput::class;
+        protected $outputsDataType = 'array';
+        protected $parDoType = ParDoInstruction::class;
+        protected $parDoDataType = '';
+        protected $partialGroupByKeyType = PartialGroupByKeyInstruction::class;
+        protected $partialGroupByKeyDataType = '';
+        protected $readType = ReadInstruction::class;
+        protected $readDataType = '';
+        /**
+         * System-defined name of this operation. Unique across the workflow.
+         *
+         * @var string
+         */
+        public $systemName;
+        protected $writeType = WriteInstruction::class;
+        protected $writeDataType = '';
+        /**
+         * Additional information for Flatten instructions.
+         *
+         * @param FlattenInstruction $flatten
+         */
+        public function setFlatten(FlattenInstruction $flatten)
+        {
+        }
+        /**
+         * @return FlattenInstruction
+         */
+        public function getFlatten()
+        {
+        }
+        /**
+         * User-provided name of this operation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * System-defined name for the operation in the original workflow graph.
+         *
+         * @param string $originalName
+         */
+        public function setOriginalName($originalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalName()
+        {
+        }
+        /**
+         * Describes the outputs of the instruction.
+         *
+         * @param InstructionOutput[] $outputs
+         */
+        public function setOutputs($outputs)
+        {
+        }
+        /**
+         * @return InstructionOutput[]
+         */
+        public function getOutputs()
+        {
+        }
+        /**
+         * Additional information for ParDo instructions.
+         *
+         * @param ParDoInstruction $parDo
+         */
+        public function setParDo(ParDoInstruction $parDo)
+        {
+        }
+        /**
+         * @return ParDoInstruction
+         */
+        public function getParDo()
+        {
+        }
+        /**
+         * Additional information for PartialGroupByKey instructions.
+         *
+         * @param PartialGroupByKeyInstruction $partialGroupByKey
+         */
+        public function setPartialGroupByKey(PartialGroupByKeyInstruction $partialGroupByKey)
+        {
+        }
+        /**
+         * @return PartialGroupByKeyInstruction
+         */
+        public function getPartialGroupByKey()
+        {
+        }
+        /**
+         * Additional information for Read instructions.
+         *
+         * @param ReadInstruction $read
+         */
+        public function setRead(ReadInstruction $read)
+        {
+        }
+        /**
+         * @return ReadInstruction
+         */
+        public function getRead()
+        {
+        }
+        /**
+         * System-defined name of this operation. Unique across the workflow.
+         *
+         * @param string $systemName
+         */
+        public function setSystemName($systemName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemName()
+        {
+        }
+        /**
+         * Additional information for Write instructions.
+         *
+         * @param WriteInstruction $write
+         */
+        public function setWrite(WriteInstruction $write)
+        {
+        }
+        /**
+         * @return WriteInstruction
+         */
+        public function getWrite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FlattenInstruction
+     * Runtime class alias of \Google\Service\Dataflow\ParallelInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlatten()
-    {
-    }
-    /**
-     * User-provided name of this operation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * System-defined name for the operation in the original workflow graph.
-     *
-     * @param string $originalName
-     */
-    public function setOriginalName($originalName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalName()
-    {
-    }
-    /**
-     * Describes the outputs of the instruction.
-     *
-     * @param InstructionOutput[] $outputs
-     */
-    public function setOutputs($outputs)
-    {
-    }
-    /**
-     * @return InstructionOutput[]
-     */
-    public function getOutputs()
-    {
-    }
-    /**
-     * Additional information for ParDo instructions.
-     *
-     * @param ParDoInstruction $parDo
-     */
-    public function setParDo(ParDoInstruction $parDo)
-    {
-    }
-    /**
-     * @return ParDoInstruction
-     */
-    public function getParDo()
-    {
-    }
-    /**
-     * Additional information for PartialGroupByKey instructions.
-     *
-     * @param PartialGroupByKeyInstruction $partialGroupByKey
-     */
-    public function setPartialGroupByKey(PartialGroupByKeyInstruction $partialGroupByKey)
-    {
-    }
-    /**
-     * @return PartialGroupByKeyInstruction
-     */
-    public function getPartialGroupByKey()
-    {
-    }
-    /**
-     * Additional information for Read instructions.
-     *
-     * @param ReadInstruction $read
-     */
-    public function setRead(ReadInstruction $read)
-    {
-    }
-    /**
-     * @return ReadInstruction
-     */
-    public function getRead()
-    {
-    }
-    /**
-     * System-defined name of this operation. Unique across the workflow.
-     *
-     * @param string $systemName
-     */
-    public function setSystemName($systemName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemName()
-    {
-    }
-    /**
-     * Additional information for Write instructions.
-     *
-     * @param WriteInstruction $write
-     */
-    public function setWrite(WriteInstruction $write)
-    {
-    }
-    /**
-     * @return WriteInstruction
-     */
-    public function getWrite()
+    class Google_Service_Dataflow_ParallelInstruction extends \Google\Service\Dataflow\ParallelInstruction
     {
     }
 }

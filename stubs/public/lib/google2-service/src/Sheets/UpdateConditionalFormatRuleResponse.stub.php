@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateConditionalFormatRuleResponse extends \Google\Model
-{
-    /**
-     * The index of the new rule.
-     *
-     * @var int
-     */
-    public $newIndex;
-    protected $newRuleType = ConditionalFormatRule::class;
-    protected $newRuleDataType = '';
-    /**
-     * The old index of the rule. Not set if a rule was replaced (because it is
-     * the same as new_index).
-     *
-     * @var int
-     */
-    public $oldIndex;
-    protected $oldRuleType = ConditionalFormatRule::class;
-    protected $oldRuleDataType = '';
-    /**
-     * The index of the new rule.
-     *
-     * @param int $newIndex
-     */
-    public function setNewIndex($newIndex)
+namespace Google\Service\Sheets {
+    class UpdateConditionalFormatRuleResponse extends \Google\Model
     {
+        /**
+         * The index of the new rule.
+         *
+         * @var int
+         */
+        public $newIndex;
+        protected $newRuleType = ConditionalFormatRule::class;
+        protected $newRuleDataType = '';
+        /**
+         * The old index of the rule. Not set if a rule was replaced (because it is
+         * the same as new_index).
+         *
+         * @var int
+         */
+        public $oldIndex;
+        protected $oldRuleType = ConditionalFormatRule::class;
+        protected $oldRuleDataType = '';
+        /**
+         * The index of the new rule.
+         *
+         * @param int $newIndex
+         */
+        public function setNewIndex($newIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNewIndex()
+        {
+        }
+        /**
+         * The new rule that replaced the old rule (if replacing), or the rule that
+         * was moved (if moved)
+         *
+         * @param ConditionalFormatRule $newRule
+         */
+        public function setNewRule(ConditionalFormatRule $newRule)
+        {
+        }
+        /**
+         * @return ConditionalFormatRule
+         */
+        public function getNewRule()
+        {
+        }
+        /**
+         * The old index of the rule. Not set if a rule was replaced (because it is
+         * the same as new_index).
+         *
+         * @param int $oldIndex
+         */
+        public function setOldIndex($oldIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOldIndex()
+        {
+        }
+        /**
+         * The old (deleted) rule. Not set if a rule was moved (because it is the same
+         * as new_rule).
+         *
+         * @param ConditionalFormatRule $oldRule
+         */
+        public function setOldRule(ConditionalFormatRule $oldRule)
+        {
+        }
+        /**
+         * @return ConditionalFormatRule
+         */
+        public function getOldRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\UpdateConditionalFormatRuleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewIndex()
-    {
-    }
-    /**
-     * The new rule that replaced the old rule (if replacing), or the rule that
-     * was moved (if moved)
-     *
-     * @param ConditionalFormatRule $newRule
-     */
-    public function setNewRule(ConditionalFormatRule $newRule)
-    {
-    }
-    /**
-     * @return ConditionalFormatRule
-     */
-    public function getNewRule()
-    {
-    }
-    /**
-     * The old index of the rule. Not set if a rule was replaced (because it is
-     * the same as new_index).
-     *
-     * @param int $oldIndex
-     */
-    public function setOldIndex($oldIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOldIndex()
-    {
-    }
-    /**
-     * The old (deleted) rule. Not set if a rule was moved (because it is the same
-     * as new_rule).
-     *
-     * @param ConditionalFormatRule $oldRule
-     */
-    public function setOldRule(ConditionalFormatRule $oldRule)
-    {
-    }
-    /**
-     * @return ConditionalFormatRule
-     */
-    public function getOldRule()
+    class Google_Service_Sheets_UpdateConditionalFormatRuleResponse extends \Google\Service\Sheets\UpdateConditionalFormatRuleResponse
     {
     }
 }

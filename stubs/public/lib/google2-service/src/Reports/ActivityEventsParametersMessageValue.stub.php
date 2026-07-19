@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ActivityEventsParametersMessageValue extends \Google\Collection
-{
-    protected $collection_key = 'parameter';
-    protected $parameterType = NestedParameter::class;
-    protected $parameterDataType = 'array';
-    /**
-     * Parameter values
-     *
-     * @param NestedParameter[] $parameter
-     */
-    public function setParameter($parameter)
+namespace Google\Service\Reports {
+    class ActivityEventsParametersMessageValue extends \Google\Collection
     {
+        protected $collection_key = 'parameter';
+        protected $parameterType = NestedParameter::class;
+        protected $parameterDataType = 'array';
+        /**
+         * Parameter values
+         *
+         * @param NestedParameter[] $parameter
+         */
+        public function setParameter($parameter)
+        {
+        }
+        /**
+         * @return NestedParameter[]
+         */
+        public function getParameter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NestedParameter[]
+     * Runtime class alias of \Google\Service\Reports\ActivityEventsParametersMessageValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameter()
+    class Google_Service_Reports_ActivityEventsParametersMessageValue extends \Google\Service\Reports\ActivityEventsParametersMessageValue
     {
     }
 }

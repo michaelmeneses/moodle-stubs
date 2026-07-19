@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class WorkforceDemand extends \Google\Model
-{
-    /**
-     * Optional. Number of employees needed to cover the demand for this interval.
-     *
-     * @var int
-     */
-    public $employeeCount;
-    protected $endTimeType = DateTime::class;
-    protected $endTimeDataType = '';
-    protected $startTimeType = DateTime::class;
-    protected $startTimeDataType = '';
-    /**
-     * Optional. Number of employees needed to cover the demand for this interval.
-     *
-     * @param int $employeeCount
-     */
-    public function setEmployeeCount($employeeCount)
+namespace Google\Service\CCAIPlatform {
+    class WorkforceDemand extends \Google\Model
     {
+        /**
+         * Optional. Number of employees needed to cover the demand for this interval.
+         *
+         * @var int
+         */
+        public $employeeCount;
+        protected $endTimeType = DateTime::class;
+        protected $endTimeDataType = '';
+        protected $startTimeType = DateTime::class;
+        protected $startTimeDataType = '';
+        /**
+         * Optional. Number of employees needed to cover the demand for this interval.
+         *
+         * @param int $employeeCount
+         */
+        public function setEmployeeCount($employeeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEmployeeCount()
+        {
+        }
+        /**
+         * Required. End of the time interval for the given demand (exclusive). These
+         * values are read down to the minute; seconds and all smaller units are
+         * ignored.
+         *
+         * @param DateTime $endTime
+         */
+        public function setEndTime(DateTime $endTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. Start of the time interval for the given demand (inclusive).
+         * These values are read down to the minute; seconds and all smaller units are
+         * ignored.
+         *
+         * @param DateTime $startTime
+         */
+        public function setStartTime(DateTime $startTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CCAIPlatform\WorkforceDemand registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmployeeCount()
-    {
-    }
-    /**
-     * Required. End of the time interval for the given demand (exclusive). These
-     * values are read down to the minute; seconds and all smaller units are
-     * ignored.
-     *
-     * @param DateTime $endTime
-     */
-    public function setEndTime(DateTime $endTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. Start of the time interval for the given demand (inclusive).
-     * These values are read down to the minute; seconds and all smaller units are
-     * ignored.
-     *
-     * @param DateTime $startTime
-     */
-    public function setStartTime(DateTime $startTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getStartTime()
+    class Google_Service_CCAIPlatform_WorkforceDemand extends \Google\Service\CCAIPlatform\WorkforceDemand
     {
     }
 }

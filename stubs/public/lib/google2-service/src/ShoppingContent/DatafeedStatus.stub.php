@@ -21,235 +21,244 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class DatafeedStatus extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    /**
-     * The country for which the status is reported, represented as a CLDR
-     * territory code.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The ID of the feed for which the status is reported.
-     *
-     * @var string
-     */
-    public $datafeedId;
-    protected $errorsType = DatafeedStatusError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The feed label status is reported for.
-     *
-     * @var string
-     */
-    public $feedLabel;
-    /**
-     * The number of items in the feed that were processed.
-     *
-     * @var string
-     */
-    public $itemsTotal;
-    /**
-     * The number of items in the feed that were valid.
-     *
-     * @var string
-     */
-    public $itemsValid;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#datafeedStatus`"
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The two-letter ISO 639-1 language for which the status is reported.
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * The last date at which the feed was uploaded.
-     *
-     * @var string
-     */
-    public $lastUploadDate;
-    /**
-     * The processing status of the feed. Acceptable values are: - "`"`failure`":
-     * The feed could not be processed or all items had errors.`" - "`in
-     * progress`": The feed is being processed. - "`none`": The feed has not yet
-     * been processed. For example, a feed that has never been uploaded will have
-     * this processing status. - "`success`": The feed was processed successfully,
-     * though some items might have had errors.
-     *
-     * @var string
-     */
-    public $processingStatus;
-    protected $warningsType = DatafeedStatusError::class;
-    protected $warningsDataType = 'array';
-    /**
-     * The country for which the status is reported, represented as a CLDR
-     * territory code.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class DatafeedStatus extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        /**
+         * The country for which the status is reported, represented as a CLDR
+         * territory code.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The ID of the feed for which the status is reported.
+         *
+         * @var string
+         */
+        public $datafeedId;
+        protected $errorsType = DatafeedStatusError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The feed label status is reported for.
+         *
+         * @var string
+         */
+        public $feedLabel;
+        /**
+         * The number of items in the feed that were processed.
+         *
+         * @var string
+         */
+        public $itemsTotal;
+        /**
+         * The number of items in the feed that were valid.
+         *
+         * @var string
+         */
+        public $itemsValid;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#datafeedStatus`"
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The two-letter ISO 639-1 language for which the status is reported.
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * The last date at which the feed was uploaded.
+         *
+         * @var string
+         */
+        public $lastUploadDate;
+        /**
+         * The processing status of the feed. Acceptable values are: - "`"`failure`":
+         * The feed could not be processed or all items had errors.`" - "`in
+         * progress`": The feed is being processed. - "`none`": The feed has not yet
+         * been processed. For example, a feed that has never been uploaded will have
+         * this processing status. - "`success`": The feed was processed successfully,
+         * though some items might have had errors.
+         *
+         * @var string
+         */
+        public $processingStatus;
+        protected $warningsType = DatafeedStatusError::class;
+        protected $warningsDataType = 'array';
+        /**
+         * The country for which the status is reported, represented as a CLDR
+         * territory code.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The ID of the feed for which the status is reported.
+         *
+         * @param string $datafeedId
+         */
+        public function setDatafeedId($datafeedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatafeedId()
+        {
+        }
+        /**
+         * The list of errors occurring in the feed.
+         *
+         * @param DatafeedStatusError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return DatafeedStatusError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The feed label status is reported for.
+         *
+         * @param string $feedLabel
+         */
+        public function setFeedLabel($feedLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeedLabel()
+        {
+        }
+        /**
+         * The number of items in the feed that were processed.
+         *
+         * @param string $itemsTotal
+         */
+        public function setItemsTotal($itemsTotal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemsTotal()
+        {
+        }
+        /**
+         * The number of items in the feed that were valid.
+         *
+         * @param string $itemsValid
+         */
+        public function setItemsValid($itemsValid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemsValid()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#datafeedStatus`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The two-letter ISO 639-1 language for which the status is reported.
+         *
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * The last date at which the feed was uploaded.
+         *
+         * @param string $lastUploadDate
+         */
+        public function setLastUploadDate($lastUploadDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUploadDate()
+        {
+        }
+        /**
+         * The processing status of the feed. Acceptable values are: - "`"`failure`":
+         * The feed could not be processed or all items had errors.`" - "`in
+         * progress`": The feed is being processed. - "`none`": The feed has not yet
+         * been processed. For example, a feed that has never been uploaded will have
+         * this processing status. - "`success`": The feed was processed successfully,
+         * though some items might have had errors.
+         *
+         * @param string $processingStatus
+         */
+        public function setProcessingStatus($processingStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessingStatus()
+        {
+        }
+        /**
+         * The list of errors occurring in the feed.
+         *
+         * @param DatafeedStatusError[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return DatafeedStatusError[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\DatafeedStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * The ID of the feed for which the status is reported.
-     *
-     * @param string $datafeedId
-     */
-    public function setDatafeedId($datafeedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatafeedId()
-    {
-    }
-    /**
-     * The list of errors occurring in the feed.
-     *
-     * @param DatafeedStatusError[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return DatafeedStatusError[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The feed label status is reported for.
-     *
-     * @param string $feedLabel
-     */
-    public function setFeedLabel($feedLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeedLabel()
-    {
-    }
-    /**
-     * The number of items in the feed that were processed.
-     *
-     * @param string $itemsTotal
-     */
-    public function setItemsTotal($itemsTotal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemsTotal()
-    {
-    }
-    /**
-     * The number of items in the feed that were valid.
-     *
-     * @param string $itemsValid
-     */
-    public function setItemsValid($itemsValid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemsValid()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#datafeedStatus`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The two-letter ISO 639-1 language for which the status is reported.
-     *
-     * @param string $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * The last date at which the feed was uploaded.
-     *
-     * @param string $lastUploadDate
-     */
-    public function setLastUploadDate($lastUploadDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUploadDate()
-    {
-    }
-    /**
-     * The processing status of the feed. Acceptable values are: - "`"`failure`":
-     * The feed could not be processed or all items had errors.`" - "`in
-     * progress`": The feed is being processed. - "`none`": The feed has not yet
-     * been processed. For example, a feed that has never been uploaded will have
-     * this processing status. - "`success`": The feed was processed successfully,
-     * though some items might have had errors.
-     *
-     * @param string $processingStatus
-     */
-    public function setProcessingStatus($processingStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessingStatus()
-    {
-    }
-    /**
-     * The list of errors occurring in the feed.
-     *
-     * @param DatafeedStatusError[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return DatafeedStatusError[]
-     */
-    public function getWarnings()
+    class Google_Service_ShoppingContent_DatafeedStatus extends \Google\Service\ShoppingContent\DatafeedStatus
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalLvpShareConfig extends \Google\Model
-{
-    protected $lvpConfigType = BareMetalLvpConfig::class;
-    protected $lvpConfigDataType = '';
-    /**
-     * The number of subdirectories to create under path.
-     *
-     * @var int
-     */
-    public $sharedPathPvCount;
-    /**
-     * Required. Defines the machine path and storage class for the LVP Share.
-     *
-     * @param BareMetalLvpConfig $lvpConfig
-     */
-    public function setLvpConfig(BareMetalLvpConfig $lvpConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalLvpShareConfig extends \Google\Model
     {
+        protected $lvpConfigType = BareMetalLvpConfig::class;
+        protected $lvpConfigDataType = '';
+        /**
+         * The number of subdirectories to create under path.
+         *
+         * @var int
+         */
+        public $sharedPathPvCount;
+        /**
+         * Required. Defines the machine path and storage class for the LVP Share.
+         *
+         * @param BareMetalLvpConfig $lvpConfig
+         */
+        public function setLvpConfig(BareMetalLvpConfig $lvpConfig)
+        {
+        }
+        /**
+         * @return BareMetalLvpConfig
+         */
+        public function getLvpConfig()
+        {
+        }
+        /**
+         * The number of subdirectories to create under path.
+         *
+         * @param int $sharedPathPvCount
+         */
+        public function setSharedPathPvCount($sharedPathPvCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSharedPathPvCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalLvpConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalLvpShareConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLvpConfig()
-    {
-    }
-    /**
-     * The number of subdirectories to create under path.
-     *
-     * @param int $sharedPathPvCount
-     */
-    public function setSharedPathPvCount($sharedPathPvCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSharedPathPvCount()
+    class Google_Service_GKEOnPrem_BareMetalLvpShareConfig extends \Google\Service\GKEOnPrem\BareMetalLvpShareConfig
     {
     }
 }

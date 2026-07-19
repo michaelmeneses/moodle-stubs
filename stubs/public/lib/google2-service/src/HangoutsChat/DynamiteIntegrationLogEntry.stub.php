@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class DynamiteIntegrationLogEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deployment;
-    /**
-     * @var string
-     */
-    public $deploymentFunction;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * @param string
-     */
-    public function setDeployment($deployment)
+namespace Google\Service\HangoutsChat {
+    class DynamiteIntegrationLogEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deployment;
+        /**
+         * @var string
+         */
+        public $deploymentFunction;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * @param string
+         */
+        public function setDeployment($deployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeploymentFunction($deploymentFunction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentFunction()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\DynamiteIntegrationLogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeploymentFunction($deploymentFunction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentFunction()
-    {
-    }
-    /**
-     * @param Status
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
+    class Google_Service_HangoutsChat_DynamiteIntegrationLogEntry extends \Google\Service\HangoutsChat\DynamiteIntegrationLogEntry
     {
     }
 }

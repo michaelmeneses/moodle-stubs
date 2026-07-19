@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI\Resource;
-
-/**
- * The "folders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $orgpolicyService = new Google\Service\OrgPolicyAPI(...);
- *   $folders = $orgpolicyService->folders;
- *  </code>
- */
-class Folders extends \Google\Service\Resource
-{
+namespace Google\Service\OrgPolicyAPI\Resource {
+    /**
+     * The "folders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $orgpolicyService = new Google\Service\OrgPolicyAPI(...);
+     *   $folders = $orgpolicyService->folders;
+     *  </code>
+     */
+    class Folders extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\Resource\Folders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OrgPolicyAPI_Resource_Folders extends \Google\Service\OrgPolicyAPI\Resource\Folders
+    {
+    }
 }

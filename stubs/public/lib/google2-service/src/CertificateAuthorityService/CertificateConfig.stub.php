@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class CertificateConfig extends \Google\Model
-{
-    protected $publicKeyType = PublicKey::class;
-    protected $publicKeyDataType = '';
-    protected $subjectConfigType = SubjectConfig::class;
-    protected $subjectConfigDataType = '';
-    protected $subjectKeyIdType = CertificateConfigKeyId::class;
-    protected $subjectKeyIdDataType = '';
-    protected $x509ConfigType = X509Parameters::class;
-    protected $x509ConfigDataType = '';
-    /**
-     * Optional. The public key that corresponds to this config. This is, for
-     * example, used when issuing Certificates, but not when creating a self-
-     * signed CertificateAuthority or CertificateAuthority CSR.
-     *
-     * @param PublicKey $publicKey
-     */
-    public function setPublicKey(PublicKey $publicKey)
+namespace Google\Service\CertificateAuthorityService {
+    class CertificateConfig extends \Google\Model
     {
+        protected $publicKeyType = PublicKey::class;
+        protected $publicKeyDataType = '';
+        protected $subjectConfigType = SubjectConfig::class;
+        protected $subjectConfigDataType = '';
+        protected $subjectKeyIdType = CertificateConfigKeyId::class;
+        protected $subjectKeyIdDataType = '';
+        protected $x509ConfigType = X509Parameters::class;
+        protected $x509ConfigDataType = '';
+        /**
+         * Optional. The public key that corresponds to this config. This is, for
+         * example, used when issuing Certificates, but not when creating a self-
+         * signed CertificateAuthority or CertificateAuthority CSR.
+         *
+         * @param PublicKey $publicKey
+         */
+        public function setPublicKey(PublicKey $publicKey)
+        {
+        }
+        /**
+         * @return PublicKey
+         */
+        public function getPublicKey()
+        {
+        }
+        /**
+         * Required. Specifies some of the values in a certificate that are related to
+         * the subject.
+         *
+         * @param SubjectConfig $subjectConfig
+         */
+        public function setSubjectConfig(SubjectConfig $subjectConfig)
+        {
+        }
+        /**
+         * @return SubjectConfig
+         */
+        public function getSubjectConfig()
+        {
+        }
+        /**
+         * Optional. When specified this provides a custom SKI to be used in the
+         * certificate. This should only be used to maintain a SKI of an existing CA
+         * originally created outside CA service, which was not generated using method
+         * (1) described in RFC 5280 section 4.2.1.2.
+         *
+         * @param CertificateConfigKeyId $subjectKeyId
+         */
+        public function setSubjectKeyId(CertificateConfigKeyId $subjectKeyId)
+        {
+        }
+        /**
+         * @return CertificateConfigKeyId
+         */
+        public function getSubjectKeyId()
+        {
+        }
+        /**
+         * Required. Describes how some of the technical X.509 fields in a certificate
+         * should be populated.
+         *
+         * @param X509Parameters $x509Config
+         */
+        public function setX509Config(X509Parameters $x509Config)
+        {
+        }
+        /**
+         * @return X509Parameters
+         */
+        public function getX509Config()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublicKey
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\CertificateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublicKey()
-    {
-    }
-    /**
-     * Required. Specifies some of the values in a certificate that are related to
-     * the subject.
-     *
-     * @param SubjectConfig $subjectConfig
-     */
-    public function setSubjectConfig(SubjectConfig $subjectConfig)
-    {
-    }
-    /**
-     * @return SubjectConfig
-     */
-    public function getSubjectConfig()
-    {
-    }
-    /**
-     * Optional. When specified this provides a custom SKI to be used in the
-     * certificate. This should only be used to maintain a SKI of an existing CA
-     * originally created outside CA service, which was not generated using method
-     * (1) described in RFC 5280 section 4.2.1.2.
-     *
-     * @param CertificateConfigKeyId $subjectKeyId
-     */
-    public function setSubjectKeyId(CertificateConfigKeyId $subjectKeyId)
-    {
-    }
-    /**
-     * @return CertificateConfigKeyId
-     */
-    public function getSubjectKeyId()
-    {
-    }
-    /**
-     * Required. Describes how some of the technical X.509 fields in a certificate
-     * should be populated.
-     *
-     * @param X509Parameters $x509Config
-     */
-    public function setX509Config(X509Parameters $x509Config)
-    {
-    }
-    /**
-     * @return X509Parameters
-     */
-    public function getX509Config()
+    class Google_Service_CertificateAuthorityService_CertificateConfig extends \Google\Service\CertificateAuthorityService\CertificateConfig
     {
     }
 }

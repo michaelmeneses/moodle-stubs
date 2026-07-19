@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareStaticIpConfig extends \Google\Collection
-{
-    protected $collection_key = 'ipBlocks';
-    protected $ipBlocksType = VmwareIpBlock::class;
-    protected $ipBlocksDataType = 'array';
-    /**
-     * Represents the configuration values for static IP allocation to nodes.
-     *
-     * @param VmwareIpBlock[] $ipBlocks
-     */
-    public function setIpBlocks($ipBlocks)
+namespace Google\Service\GKEOnPrem {
+    class VmwareStaticIpConfig extends \Google\Collection
     {
+        protected $collection_key = 'ipBlocks';
+        protected $ipBlocksType = VmwareIpBlock::class;
+        protected $ipBlocksDataType = 'array';
+        /**
+         * Represents the configuration values for static IP allocation to nodes.
+         *
+         * @param VmwareIpBlock[] $ipBlocks
+         */
+        public function setIpBlocks($ipBlocks)
+        {
+        }
+        /**
+         * @return VmwareIpBlock[]
+         */
+        public function getIpBlocks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareIpBlock[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareStaticIpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpBlocks()
+    class Google_Service_GKEOnPrem_VmwareStaticIpConfig extends \Google\Service\GKEOnPrem\VmwareStaticIpConfig
     {
     }
 }

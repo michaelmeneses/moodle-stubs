@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUploadTestCaseResponse extends \Google\Model
-{
-    protected $testCaseType = GoogleCloudIntegrationsV1alphaTestCase::class;
-    protected $testCaseDataType = '';
-    /**
-     * The uploaded TestCase
-     *
-     * @param GoogleCloudIntegrationsV1alphaTestCase $testCase
-     */
-    public function setTestCase(GoogleCloudIntegrationsV1alphaTestCase $testCase)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUploadTestCaseResponse extends \Google\Model
     {
+        protected $testCaseType = GoogleCloudIntegrationsV1alphaTestCase::class;
+        protected $testCaseDataType = '';
+        /**
+         * The uploaded TestCase
+         *
+         * @param GoogleCloudIntegrationsV1alphaTestCase $testCase
+         */
+        public function setTestCase(GoogleCloudIntegrationsV1alphaTestCase $testCase)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaTestCase
+         */
+        public function getTestCase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaTestCase
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTestCaseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestCase()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUploadTestCaseResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTestCaseResponse
     {
     }
 }

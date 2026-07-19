@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class MediaUnmountEvent extends \Google\Model
-{
-    /**
-     * Mount point.
-     *
-     * @var string
-     */
-    public $mountPoint;
-    /**
-     * Volume label. Redacted to empty string on organization-owned managed
-     * profile devices.
-     *
-     * @var string
-     */
-    public $volumeLabel;
-    /**
-     * Mount point.
-     *
-     * @param string $mountPoint
-     */
-    public function setMountPoint($mountPoint)
+namespace Google\Service\AndroidManagement {
+    class MediaUnmountEvent extends \Google\Model
     {
+        /**
+         * Mount point.
+         *
+         * @var string
+         */
+        public $mountPoint;
+        /**
+         * Volume label. Redacted to empty string on organization-owned managed
+         * profile devices.
+         *
+         * @var string
+         */
+        public $volumeLabel;
+        /**
+         * Mount point.
+         *
+         * @param string $mountPoint
+         */
+        public function setMountPoint($mountPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPoint()
+        {
+        }
+        /**
+         * Volume label. Redacted to empty string on organization-owned managed
+         * profile devices.
+         *
+         * @param string $volumeLabel
+         */
+        public function setVolumeLabel($volumeLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\MediaUnmountEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMountPoint()
-    {
-    }
-    /**
-     * Volume label. Redacted to empty string on organization-owned managed
-     * profile devices.
-     *
-     * @param string $volumeLabel
-     */
-    public function setVolumeLabel($volumeLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeLabel()
+    class Google_Service_AndroidManagement_MediaUnmountEvent extends \Google\Service\AndroidManagement\MediaUnmountEvent
     {
     }
 }

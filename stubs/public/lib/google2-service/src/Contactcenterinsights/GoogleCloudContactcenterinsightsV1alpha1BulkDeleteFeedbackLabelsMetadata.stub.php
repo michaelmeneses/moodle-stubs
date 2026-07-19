@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialErrors';
-    protected $partialErrorsType = GoogleRpcStatus::class;
-    protected $partialErrorsDataType = 'array';
-    protected $requestType = GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Partial errors during deletion operation that might cause the operation
-     * output to be incomplete.
-     *
-     * @param GoogleRpcStatus[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialErrors';
+        protected $partialErrorsType = GoogleRpcStatus::class;
+        protected $partialErrorsDataType = 'array';
+        protected $requestType = GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Partial errors during deletion operation that might cause the operation
+         * output to be incomplete.
+         *
+         * @param GoogleRpcStatus[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * Output only. The original request for delete.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * Output only. The original request for delete.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsRequest
-     */
-    public function getRequest()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1BulkDeleteFeedbackLabelsMetadata
     {
     }
 }

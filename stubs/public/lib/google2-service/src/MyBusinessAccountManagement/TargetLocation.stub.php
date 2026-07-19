@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement;
-
-class TargetLocation extends \Google\Model
-{
-    /**
-     * The address of the location to which the user is invited.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * The name of the location to which the user is invited.
-     *
-     * @var string
-     */
-    public $locationName;
-    /**
-     * The address of the location to which the user is invited.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\MyBusinessAccountManagement {
+    class TargetLocation extends \Google\Model
     {
+        /**
+         * The address of the location to which the user is invited.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * The name of the location to which the user is invited.
+         *
+         * @var string
+         */
+        public $locationName;
+        /**
+         * The address of the location to which the user is invited.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * The name of the location to which the user is invited.
+         *
+         * @param string $locationName
+         */
+        public function setLocationName($locationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\TargetLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * The name of the location to which the user is invited.
-     *
-     * @param string $locationName
-     */
-    public function setLocationName($locationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationName()
+    class Google_Service_MyBusinessAccountManagement_TargetLocation extends \Google\Service\MyBusinessAccountManagement\TargetLocation
     {
     }
 }

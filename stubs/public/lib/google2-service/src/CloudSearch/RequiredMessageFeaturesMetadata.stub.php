@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RequiredMessageFeaturesMetadata extends \Google\Collection
-{
-    protected $collection_key = 'requiredFeatures';
-    /**
-     * @var string[]
-     */
-    public $requiredFeatures;
-    /**
-     * @param string[]
-     */
-    public function setRequiredFeatures($requiredFeatures)
+namespace Google\Service\CloudSearch {
+    class RequiredMessageFeaturesMetadata extends \Google\Collection
     {
+        protected $collection_key = 'requiredFeatures';
+        /**
+         * @var string[]
+         */
+        public $requiredFeatures;
+        /**
+         * @param string[]
+         */
+        public function setRequiredFeatures($requiredFeatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequiredFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\RequiredMessageFeaturesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequiredFeatures()
+    class Google_Service_CloudSearch_RequiredMessageFeaturesMetadata extends \Google\Service\CloudSearch\RequiredMessageFeaturesMetadata
     {
     }
 }

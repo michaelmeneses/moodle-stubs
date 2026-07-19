@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class DivisionSearchResult extends \Google\Collection
-{
-    protected $collection_key = 'aliases';
-    /**
-     * @var string[]
-     */
-    public $aliases;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $ocdId;
-    /**
-     * @param string[]
-     */
-    public function setAliases($aliases)
+namespace Google\Service\CivicInfo {
+    class DivisionSearchResult extends \Google\Collection
     {
+        protected $collection_key = 'aliases';
+        /**
+         * @var string[]
+         */
+        public $aliases;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $ocdId;
+        /**
+         * @param string[]
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOcdId($ocdId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOcdId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CivicInfo\DivisionSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOcdId($ocdId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOcdId()
+    class Google_Service_CivicInfo_DivisionSearchResult extends \Google\Service\CivicInfo\DivisionSearchResult
     {
     }
 }

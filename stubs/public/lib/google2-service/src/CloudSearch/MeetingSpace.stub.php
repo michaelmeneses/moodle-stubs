@@ -21,203 +21,212 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MeetingSpace extends \Google\Collection
-{
-    protected $collection_key = 'phoneAccess';
-    /**
-     * @var string[]
-     */
-    public $acceptedNumberClass;
-    protected $broadcastAccessType = BroadcastAccess::class;
-    protected $broadcastAccessDataType = '';
-    protected $callInfoType = CallInfo::class;
-    protected $callInfoDataType = '';
-    protected $gatewayAccessType = GatewayAccess::class;
-    protected $gatewayAccessDataType = '';
-    protected $gatewaySipAccessType = GatewaySipAccess::class;
-    protected $gatewaySipAccessDataType = 'array';
-    /**
-     * @var string
-     */
-    public $meetingAlias;
-    /**
-     * @var string
-     */
-    public $meetingCode;
-    /**
-     * @var string
-     */
-    public $meetingSpaceId;
-    /**
-     * @var string
-     */
-    public $meetingUrl;
-    /**
-     * @var string
-     */
-    public $moreJoinUrl;
-    protected $phoneAccessType = PhoneAccess::class;
-    protected $phoneAccessDataType = 'array';
-    protected $settingsType = Settings::class;
-    protected $settingsDataType = '';
-    protected $universalPhoneAccessType = UniversalPhoneAccess::class;
-    protected $universalPhoneAccessDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setAcceptedNumberClass($acceptedNumberClass)
+namespace Google\Service\CloudSearch {
+    class MeetingSpace extends \Google\Collection
     {
+        protected $collection_key = 'phoneAccess';
+        /**
+         * @var string[]
+         */
+        public $acceptedNumberClass;
+        protected $broadcastAccessType = BroadcastAccess::class;
+        protected $broadcastAccessDataType = '';
+        protected $callInfoType = CallInfo::class;
+        protected $callInfoDataType = '';
+        protected $gatewayAccessType = GatewayAccess::class;
+        protected $gatewayAccessDataType = '';
+        protected $gatewaySipAccessType = GatewaySipAccess::class;
+        protected $gatewaySipAccessDataType = 'array';
+        /**
+         * @var string
+         */
+        public $meetingAlias;
+        /**
+         * @var string
+         */
+        public $meetingCode;
+        /**
+         * @var string
+         */
+        public $meetingSpaceId;
+        /**
+         * @var string
+         */
+        public $meetingUrl;
+        /**
+         * @var string
+         */
+        public $moreJoinUrl;
+        protected $phoneAccessType = PhoneAccess::class;
+        protected $phoneAccessDataType = 'array';
+        protected $settingsType = Settings::class;
+        protected $settingsDataType = '';
+        protected $universalPhoneAccessType = UniversalPhoneAccess::class;
+        protected $universalPhoneAccessDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setAcceptedNumberClass($acceptedNumberClass)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAcceptedNumberClass()
+        {
+        }
+        /**
+         * @param BroadcastAccess
+         */
+        public function setBroadcastAccess(BroadcastAccess $broadcastAccess)
+        {
+        }
+        /**
+         * @return BroadcastAccess
+         */
+        public function getBroadcastAccess()
+        {
+        }
+        /**
+         * @param CallInfo
+         */
+        public function setCallInfo(CallInfo $callInfo)
+        {
+        }
+        /**
+         * @return CallInfo
+         */
+        public function getCallInfo()
+        {
+        }
+        /**
+         * @param GatewayAccess
+         */
+        public function setGatewayAccess(GatewayAccess $gatewayAccess)
+        {
+        }
+        /**
+         * @return GatewayAccess
+         */
+        public function getGatewayAccess()
+        {
+        }
+        /**
+         * @param GatewaySipAccess[]
+         */
+        public function setGatewaySipAccess($gatewaySipAccess)
+        {
+        }
+        /**
+         * @return GatewaySipAccess[]
+         */
+        public function getGatewaySipAccess()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingAlias($meetingAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingAlias()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingCode($meetingCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingSpaceId($meetingSpaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingSpaceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingUrl($meetingUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMoreJoinUrl($moreJoinUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMoreJoinUrl()
+        {
+        }
+        /**
+         * @param PhoneAccess[]
+         */
+        public function setPhoneAccess($phoneAccess)
+        {
+        }
+        /**
+         * @return PhoneAccess[]
+         */
+        public function getPhoneAccess()
+        {
+        }
+        /**
+         * @param Settings
+         */
+        public function setSettings(Settings $settings)
+        {
+        }
+        /**
+         * @return Settings
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * @param UniversalPhoneAccess
+         */
+        public function setUniversalPhoneAccess(UniversalPhoneAccess $universalPhoneAccess)
+        {
+        }
+        /**
+         * @return UniversalPhoneAccess
+         */
+        public function getUniversalPhoneAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\MeetingSpace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptedNumberClass()
-    {
-    }
-    /**
-     * @param BroadcastAccess
-     */
-    public function setBroadcastAccess(BroadcastAccess $broadcastAccess)
-    {
-    }
-    /**
-     * @return BroadcastAccess
-     */
-    public function getBroadcastAccess()
-    {
-    }
-    /**
-     * @param CallInfo
-     */
-    public function setCallInfo(CallInfo $callInfo)
-    {
-    }
-    /**
-     * @return CallInfo
-     */
-    public function getCallInfo()
-    {
-    }
-    /**
-     * @param GatewayAccess
-     */
-    public function setGatewayAccess(GatewayAccess $gatewayAccess)
-    {
-    }
-    /**
-     * @return GatewayAccess
-     */
-    public function getGatewayAccess()
-    {
-    }
-    /**
-     * @param GatewaySipAccess[]
-     */
-    public function setGatewaySipAccess($gatewaySipAccess)
-    {
-    }
-    /**
-     * @return GatewaySipAccess[]
-     */
-    public function getGatewaySipAccess()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingAlias($meetingAlias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingAlias()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingCode($meetingCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingSpaceId($meetingSpaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingSpaceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingUrl($meetingUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMoreJoinUrl($moreJoinUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMoreJoinUrl()
-    {
-    }
-    /**
-     * @param PhoneAccess[]
-     */
-    public function setPhoneAccess($phoneAccess)
-    {
-    }
-    /**
-     * @return PhoneAccess[]
-     */
-    public function getPhoneAccess()
-    {
-    }
-    /**
-     * @param Settings
-     */
-    public function setSettings(Settings $settings)
-    {
-    }
-    /**
-     * @return Settings
-     */
-    public function getSettings()
-    {
-    }
-    /**
-     * @param UniversalPhoneAccess
-     */
-    public function setUniversalPhoneAccess(UniversalPhoneAccess $universalPhoneAccess)
-    {
-    }
-    /**
-     * @return UniversalPhoneAccess
-     */
-    public function getUniversalPhoneAccess()
+    class Google_Service_CloudSearch_MeetingSpace extends \Google\Service\CloudSearch\MeetingSpace
     {
     }
 }

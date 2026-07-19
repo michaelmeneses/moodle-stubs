@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ScopedPlayerIds extends \Google\Model
-{
-    /**
-     * Identifier of the player across all games of the given developer. Every
-     * player has the same developer_player_key in all games of one developer.
-     * Developer player key changes for the game if the game is transferred to
-     * another developer. Note that game_player_id will stay unchanged.
-     *
-     * @var string
-     */
-    public $developerPlayerKey;
-    /**
-     * Game-scoped player identifier. This is the same id that is returned in
-     * GetPlayer game_player_id field.
-     *
-     * @var string
-     */
-    public $gamePlayerId;
-    /**
-     * Identifier of the player across all games of the given developer. Every
-     * player has the same developer_player_key in all games of one developer.
-     * Developer player key changes for the game if the game is transferred to
-     * another developer. Note that game_player_id will stay unchanged.
-     *
-     * @param string $developerPlayerKey
-     */
-    public function setDeveloperPlayerKey($developerPlayerKey)
+namespace Google\Service\Games {
+    class ScopedPlayerIds extends \Google\Model
     {
+        /**
+         * Identifier of the player across all games of the given developer. Every
+         * player has the same developer_player_key in all games of one developer.
+         * Developer player key changes for the game if the game is transferred to
+         * another developer. Note that game_player_id will stay unchanged.
+         *
+         * @var string
+         */
+        public $developerPlayerKey;
+        /**
+         * Game-scoped player identifier. This is the same id that is returned in
+         * GetPlayer game_player_id field.
+         *
+         * @var string
+         */
+        public $gamePlayerId;
+        /**
+         * Identifier of the player across all games of the given developer. Every
+         * player has the same developer_player_key in all games of one developer.
+         * Developer player key changes for the game if the game is transferred to
+         * another developer. Note that game_player_id will stay unchanged.
+         *
+         * @param string $developerPlayerKey
+         */
+        public function setDeveloperPlayerKey($developerPlayerKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperPlayerKey()
+        {
+        }
+        /**
+         * Game-scoped player identifier. This is the same id that is returned in
+         * GetPlayer game_player_id field.
+         *
+         * @param string $gamePlayerId
+         */
+        public function setGamePlayerId($gamePlayerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGamePlayerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\ScopedPlayerIds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperPlayerKey()
-    {
-    }
-    /**
-     * Game-scoped player identifier. This is the same id that is returned in
-     * GetPlayer game_player_id field.
-     *
-     * @param string $gamePlayerId
-     */
-    public function setGamePlayerId($gamePlayerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGamePlayerId()
+    class Google_Service_Games_ScopedPlayerIds extends \Google\Service\Games\ScopedPlayerIds
     {
     }
 }

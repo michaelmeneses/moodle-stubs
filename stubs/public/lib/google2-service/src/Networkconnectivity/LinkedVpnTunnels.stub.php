@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LinkedVpnTunnels extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    /**
-     * Optional. Hub routes fully encompassed by include import ranges are
-     * included during import from hub.
-     *
-     * @var string[]
-     */
-    public $includeImportRanges;
-    /**
-     * A value that controls whether site-to-site data transfer is enabled for
-     * these resources. Data transfer is available only in [supported
-     * locations](https://cloud.google.com/network-connectivity/docs/network-
-     * connectivity-center/concepts/locations).
-     *
-     * @var bool
-     */
-    public $siteToSiteDataTransfer;
-    /**
-     * The URIs of linked VPN tunnel resources.
-     *
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * Output only. The VPC network where these VPN tunnels are located.
-     *
-     * @var string
-     */
-    public $vpcNetwork;
-    /**
-     * Optional. Hub routes fully encompassed by include import ranges are
-     * included during import from hub.
-     *
-     * @param string[] $includeImportRanges
-     */
-    public function setIncludeImportRanges($includeImportRanges)
+namespace Google\Service\Networkconnectivity {
+    class LinkedVpnTunnels extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        /**
+         * Optional. Hub routes fully encompassed by include import ranges are
+         * included during import from hub.
+         *
+         * @var string[]
+         */
+        public $includeImportRanges;
+        /**
+         * A value that controls whether site-to-site data transfer is enabled for
+         * these resources. Data transfer is available only in [supported
+         * locations](https://cloud.google.com/network-connectivity/docs/network-
+         * connectivity-center/concepts/locations).
+         *
+         * @var bool
+         */
+        public $siteToSiteDataTransfer;
+        /**
+         * The URIs of linked VPN tunnel resources.
+         *
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * Output only. The VPC network where these VPN tunnels are located.
+         *
+         * @var string
+         */
+        public $vpcNetwork;
+        /**
+         * Optional. Hub routes fully encompassed by include import ranges are
+         * included during import from hub.
+         *
+         * @param string[] $includeImportRanges
+         */
+        public function setIncludeImportRanges($includeImportRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludeImportRanges()
+        {
+        }
+        /**
+         * A value that controls whether site-to-site data transfer is enabled for
+         * these resources. Data transfer is available only in [supported
+         * locations](https://cloud.google.com/network-connectivity/docs/network-
+         * connectivity-center/concepts/locations).
+         *
+         * @param bool $siteToSiteDataTransfer
+         */
+        public function setSiteToSiteDataTransfer($siteToSiteDataTransfer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSiteToSiteDataTransfer()
+        {
+        }
+        /**
+         * The URIs of linked VPN tunnel resources.
+         *
+         * @param string[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
+        /**
+         * Output only. The VPC network where these VPN tunnels are located.
+         *
+         * @param string $vpcNetwork
+         */
+        public function setVpcNetwork($vpcNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\LinkedVpnTunnels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeImportRanges()
-    {
-    }
-    /**
-     * A value that controls whether site-to-site data transfer is enabled for
-     * these resources. Data transfer is available only in [supported
-     * locations](https://cloud.google.com/network-connectivity/docs/network-
-     * connectivity-center/concepts/locations).
-     *
-     * @param bool $siteToSiteDataTransfer
-     */
-    public function setSiteToSiteDataTransfer($siteToSiteDataTransfer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSiteToSiteDataTransfer()
-    {
-    }
-    /**
-     * The URIs of linked VPN tunnel resources.
-     *
-     * @param string[] $uris
-     */
-    public function setUris($uris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUris()
-    {
-    }
-    /**
-     * Output only. The VPC network where these VPN tunnels are located.
-     *
-     * @param string $vpcNetwork
-     */
-    public function setVpcNetwork($vpcNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcNetwork()
+    class Google_Service_Networkconnectivity_LinkedVpnTunnels extends \Google\Service\Networkconnectivity\LinkedVpnTunnels
     {
     }
 }

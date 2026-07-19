@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListAccountSummariesResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountSummaries';
-    protected $accountSummariesType = GoogleAnalyticsAdminV1betaAccountSummary::class;
-    protected $accountSummariesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Account summaries of all accounts the caller has access to.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccountSummary[] $accountSummaries
-     */
-    public function setAccountSummaries($accountSummaries)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListAccountSummariesResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountSummaries';
+        protected $accountSummariesType = GoogleAnalyticsAdminV1betaAccountSummary::class;
+        protected $accountSummariesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Account summaries of all accounts the caller has access to.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccountSummary[] $accountSummaries
+         */
+        public function setAccountSummaries($accountSummaries)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccountSummary[]
+         */
+        public function getAccountSummaries()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccountSummary[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountSummariesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountSummaries()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListAccountSummariesResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountSummariesResponse
     {
     }
 }

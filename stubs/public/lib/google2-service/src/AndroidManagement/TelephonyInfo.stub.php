@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class TelephonyInfo extends \Google\Model
-{
-    /**
-     * Activation state is not specified.
-     */
-    public const ACTIVATION_STATE_ACTIVATION_STATE_UNSPECIFIED = 'ACTIVATION_STATE_UNSPECIFIED';
-    /**
-     * The SIM card is activated.
-     */
-    public const ACTIVATION_STATE_ACTIVATED = 'ACTIVATED';
-    /**
-     * The SIM card is not activated.
-     */
-    public const ACTIVATION_STATE_NOT_ACTIVATED = 'NOT_ACTIVATED';
-    /**
-     * The configuration mode is unspecified.
-     */
-    public const CONFIG_MODE_CONFIG_MODE_UNSPECIFIED = 'CONFIG_MODE_UNSPECIFIED';
-    /**
-     * The admin has configured this SIM.
-     */
-    public const CONFIG_MODE_ADMIN_CONFIGURED = 'ADMIN_CONFIGURED';
-    /**
-     * The user has configured this SIM.
-     */
-    public const CONFIG_MODE_USER_CONFIGURED = 'USER_CONFIGURED';
-    /**
-     * Output only. Activation state of the SIM card on the device. This is
-     * applicable for eSIMs only. This is supported on all devices for API level
-     * 35 and above. This is always ACTIVATION_STATE_UNSPECIFIED for physical SIMs
-     * and for devices below API level 35.
-     *
-     * @var string
-     */
-    public $activationState;
-    /**
-     * The carrier name associated with this SIM card.
-     *
-     * @var string
-     */
-    public $carrierName;
-    /**
-     * Output only. The configuration mode of the SIM card on the device. This is
-     * applicable for eSIMs only. This is supported on all devices for API level
-     * 35 and above. This is always CONFIG_MODE_UNSPECIFIED for physical SIMs and
-     * for devices below API level 35.
-     *
-     * @var string
-     */
-    public $configMode;
-    /**
-     * Output only. The ICCID associated with this SIM card.
-     *
-     * @var string
-     */
-    public $iccId;
-    /**
-     * The phone number associated with this SIM card.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Output only. Activation state of the SIM card on the device. This is
-     * applicable for eSIMs only. This is supported on all devices for API level
-     * 35 and above. This is always ACTIVATION_STATE_UNSPECIFIED for physical SIMs
-     * and for devices below API level 35.
-     *
-     * Accepted values: ACTIVATION_STATE_UNSPECIFIED, ACTIVATED, NOT_ACTIVATED
-     *
-     * @param self::ACTIVATION_STATE_* $activationState
-     */
-    public function setActivationState($activationState)
+namespace Google\Service\AndroidManagement {
+    class TelephonyInfo extends \Google\Model
     {
+        /**
+         * Activation state is not specified.
+         */
+        public const ACTIVATION_STATE_ACTIVATION_STATE_UNSPECIFIED = 'ACTIVATION_STATE_UNSPECIFIED';
+        /**
+         * The SIM card is activated.
+         */
+        public const ACTIVATION_STATE_ACTIVATED = 'ACTIVATED';
+        /**
+         * The SIM card is not activated.
+         */
+        public const ACTIVATION_STATE_NOT_ACTIVATED = 'NOT_ACTIVATED';
+        /**
+         * The configuration mode is unspecified.
+         */
+        public const CONFIG_MODE_CONFIG_MODE_UNSPECIFIED = 'CONFIG_MODE_UNSPECIFIED';
+        /**
+         * The admin has configured this SIM.
+         */
+        public const CONFIG_MODE_ADMIN_CONFIGURED = 'ADMIN_CONFIGURED';
+        /**
+         * The user has configured this SIM.
+         */
+        public const CONFIG_MODE_USER_CONFIGURED = 'USER_CONFIGURED';
+        /**
+         * Output only. Activation state of the SIM card on the device. This is
+         * applicable for eSIMs only. This is supported on all devices for API level
+         * 35 and above. This is always ACTIVATION_STATE_UNSPECIFIED for physical SIMs
+         * and for devices below API level 35.
+         *
+         * @var string
+         */
+        public $activationState;
+        /**
+         * The carrier name associated with this SIM card.
+         *
+         * @var string
+         */
+        public $carrierName;
+        /**
+         * Output only. The configuration mode of the SIM card on the device. This is
+         * applicable for eSIMs only. This is supported on all devices for API level
+         * 35 and above. This is always CONFIG_MODE_UNSPECIFIED for physical SIMs and
+         * for devices below API level 35.
+         *
+         * @var string
+         */
+        public $configMode;
+        /**
+         * Output only. The ICCID associated with this SIM card.
+         *
+         * @var string
+         */
+        public $iccId;
+        /**
+         * The phone number associated with this SIM card.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Output only. Activation state of the SIM card on the device. This is
+         * applicable for eSIMs only. This is supported on all devices for API level
+         * 35 and above. This is always ACTIVATION_STATE_UNSPECIFIED for physical SIMs
+         * and for devices below API level 35.
+         *
+         * Accepted values: ACTIVATION_STATE_UNSPECIFIED, ACTIVATED, NOT_ACTIVATED
+         *
+         * @param self::ACTIVATION_STATE_* $activationState
+         */
+        public function setActivationState($activationState)
+        {
+        }
+        /**
+         * @return self::ACTIVATION_STATE_*
+         */
+        public function getActivationState()
+        {
+        }
+        /**
+         * The carrier name associated with this SIM card.
+         *
+         * @param string $carrierName
+         */
+        public function setCarrierName($carrierName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrierName()
+        {
+        }
+        /**
+         * Output only. The configuration mode of the SIM card on the device. This is
+         * applicable for eSIMs only. This is supported on all devices for API level
+         * 35 and above. This is always CONFIG_MODE_UNSPECIFIED for physical SIMs and
+         * for devices below API level 35.
+         *
+         * Accepted values: CONFIG_MODE_UNSPECIFIED, ADMIN_CONFIGURED, USER_CONFIGURED
+         *
+         * @param self::CONFIG_MODE_* $configMode
+         */
+        public function setConfigMode($configMode)
+        {
+        }
+        /**
+         * @return self::CONFIG_MODE_*
+         */
+        public function getConfigMode()
+        {
+        }
+        /**
+         * Output only. The ICCID associated with this SIM card.
+         *
+         * @param string $iccId
+         */
+        public function setIccId($iccId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIccId()
+        {
+        }
+        /**
+         * The phone number associated with this SIM card.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTIVATION_STATE_*
+     * Runtime class alias of \Google\Service\AndroidManagement\TelephonyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationState()
-    {
-    }
-    /**
-     * The carrier name associated with this SIM card.
-     *
-     * @param string $carrierName
-     */
-    public function setCarrierName($carrierName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCarrierName()
-    {
-    }
-    /**
-     * Output only. The configuration mode of the SIM card on the device. This is
-     * applicable for eSIMs only. This is supported on all devices for API level
-     * 35 and above. This is always CONFIG_MODE_UNSPECIFIED for physical SIMs and
-     * for devices below API level 35.
-     *
-     * Accepted values: CONFIG_MODE_UNSPECIFIED, ADMIN_CONFIGURED, USER_CONFIGURED
-     *
-     * @param self::CONFIG_MODE_* $configMode
-     */
-    public function setConfigMode($configMode)
-    {
-    }
-    /**
-     * @return self::CONFIG_MODE_*
-     */
-    public function getConfigMode()
-    {
-    }
-    /**
-     * Output only. The ICCID associated with this SIM card.
-     *
-     * @param string $iccId
-     */
-    public function setIccId($iccId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIccId()
-    {
-    }
-    /**
-     * The phone number associated with this SIM card.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
+    class Google_Service_AndroidManagement_TelephonyInfo extends \Google\Service\AndroidManagement\TelephonyInfo
     {
     }
 }

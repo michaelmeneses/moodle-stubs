@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $matchesType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange::class;
-    protected $matchesDataType = 'array';
-    /**
-     * Text that may be used as is or formatted with `matches`.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * A list of string ranges identifying where the input request matched in
-     * `text`. The ranges can be used to format specific parts of `text`. The
-     * substrings may not be exact matches of `input` if the matching was
-     * determined by criteria other than string matching (for example, spell
-     * corrections or transliterations). These values are Unicode character
-     * offsets of `text`. The ranges are guaranteed to be ordered in increasing
-     * offset values.
-     *
-     * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange[] $matches
-     */
-    public function setMatches($matches)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $matchesType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange::class;
+        protected $matchesDataType = 'array';
+        /**
+         * Text that may be used as is or formatted with `matches`.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * A list of string ranges identifying where the input request matched in
+         * `text`. The ranges can be used to format specific parts of `text`. The
+         * substrings may not be exact matches of `input` if the matching was
+         * determined by criteria other than string matching (for example, spell
+         * corrections or transliterations). These values are Unicode character
+         * offsets of `text`. The ranges are guaranteed to be ordered in increasing
+         * offset values.
+         *
+         * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange[] $matches
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange[]
+         */
+        public function getMatches()
+        {
+        }
+        /**
+         * Text that may be used as is or formatted with `matches`.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatches()
-    {
-    }
-    /**
-     * Text that may be used as is or formatted with `matches`.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText
     {
     }
 }

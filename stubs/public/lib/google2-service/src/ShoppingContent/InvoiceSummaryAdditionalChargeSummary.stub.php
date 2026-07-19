@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InvoiceSummaryAdditionalChargeSummary extends \Google\Model
-{
-    protected $totalAmountType = Amount::class;
-    protected $totalAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param Amount
-     */
-    public function setTotalAmount(Amount $totalAmount)
+namespace Google\Service\ShoppingContent {
+    class InvoiceSummaryAdditionalChargeSummary extends \Google\Model
     {
+        protected $totalAmountType = Amount::class;
+        protected $totalAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param Amount
+         */
+        public function setTotalAmount(Amount $totalAmount)
+        {
+        }
+        /**
+         * @return Amount
+         */
+        public function getTotalAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Amount
+     * Runtime class alias of \Google\Service\ShoppingContent\InvoiceSummaryAdditionalChargeSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_InvoiceSummaryAdditionalChargeSummary extends \Google\Service\ShoppingContent\InvoiceSummaryAdditionalChargeSummary
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class PartitionOptions extends \Google\Model
-{
-    /**
-     * **Note:** This hint is currently ignored by `PartitionQuery` and
-     * `PartitionRead` requests. The desired maximum number of partitions to
-     * return. For example, this might be set to the number of workers available.
-     * The default for this option is currently 10,000. The maximum value is
-     * currently 200,000. This is only a hint. The actual number of partitions
-     * returned can be smaller or larger than this maximum count request.
-     *
-     * @var string
-     */
-    public $maxPartitions;
-    /**
-     * **Note:** This hint is currently ignored by `PartitionQuery` and
-     * `PartitionRead` requests. The desired data size for each partition
-     * generated. The default for this option is currently 1 GiB. This is only a
-     * hint. The actual size of each partition can be smaller or larger than this
-     * size request.
-     *
-     * @var string
-     */
-    public $partitionSizeBytes;
-    /**
-     * **Note:** This hint is currently ignored by `PartitionQuery` and
-     * `PartitionRead` requests. The desired maximum number of partitions to
-     * return. For example, this might be set to the number of workers available.
-     * The default for this option is currently 10,000. The maximum value is
-     * currently 200,000. This is only a hint. The actual number of partitions
-     * returned can be smaller or larger than this maximum count request.
-     *
-     * @param string $maxPartitions
-     */
-    public function setMaxPartitions($maxPartitions)
+namespace Google\Service\Spanner {
+    class PartitionOptions extends \Google\Model
     {
+        /**
+         * **Note:** This hint is currently ignored by `PartitionQuery` and
+         * `PartitionRead` requests. The desired maximum number of partitions to
+         * return. For example, this might be set to the number of workers available.
+         * The default for this option is currently 10,000. The maximum value is
+         * currently 200,000. This is only a hint. The actual number of partitions
+         * returned can be smaller or larger than this maximum count request.
+         *
+         * @var string
+         */
+        public $maxPartitions;
+        /**
+         * **Note:** This hint is currently ignored by `PartitionQuery` and
+         * `PartitionRead` requests. The desired data size for each partition
+         * generated. The default for this option is currently 1 GiB. This is only a
+         * hint. The actual size of each partition can be smaller or larger than this
+         * size request.
+         *
+         * @var string
+         */
+        public $partitionSizeBytes;
+        /**
+         * **Note:** This hint is currently ignored by `PartitionQuery` and
+         * `PartitionRead` requests. The desired maximum number of partitions to
+         * return. For example, this might be set to the number of workers available.
+         * The default for this option is currently 10,000. The maximum value is
+         * currently 200,000. This is only a hint. The actual number of partitions
+         * returned can be smaller or larger than this maximum count request.
+         *
+         * @param string $maxPartitions
+         */
+        public function setMaxPartitions($maxPartitions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxPartitions()
+        {
+        }
+        /**
+         * **Note:** This hint is currently ignored by `PartitionQuery` and
+         * `PartitionRead` requests. The desired data size for each partition
+         * generated. The default for this option is currently 1 GiB. This is only a
+         * hint. The actual size of each partition can be smaller or larger than this
+         * size request.
+         *
+         * @param string $partitionSizeBytes
+         */
+        public function setPartitionSizeBytes($partitionSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartitionSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\PartitionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxPartitions()
-    {
-    }
-    /**
-     * **Note:** This hint is currently ignored by `PartitionQuery` and
-     * `PartitionRead` requests. The desired data size for each partition
-     * generated. The default for this option is currently 1 GiB. This is only a
-     * hint. The actual size of each partition can be smaller or larger than this
-     * size request.
-     *
-     * @param string $partitionSizeBytes
-     */
-    public function setPartitionSizeBytes($partitionSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartitionSizeBytes()
+    class Google_Service_Spanner_PartitionOptions extends \Google\Service\Spanner\PartitionOptions
     {
     }
 }

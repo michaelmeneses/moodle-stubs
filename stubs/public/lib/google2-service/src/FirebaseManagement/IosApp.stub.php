@@ -21,320 +21,329 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class IosApp extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The App is active.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The App has been soft-deleted. After an App has been in the `DELETED` state
-     * for more than 30 days, it is considered expired and will be permanently
-     * deleted. Up until this time, you can restore the App by calling `Undelete`
-     * ([Android](projects.androidApps/undelete) |
-     * [iOS](projects.iosApps/undelete) | [web](projects.webApps/undelete)).
-     */
-    public const STATE_DELETED = 'DELETED';
-    /**
-     * The globally unique, Google-assigned identifier (UID) for the Firebase API
-     * key associated with the `IosApp`. Be aware that this value is the UID of
-     * the API key, _not_ the [`keyString`](https://cloud.google.com/api-
-     * keys/docs/reference/rest/v2/projects.locations.keys#Key.FIELDS.key_string)
-     * of the API key. The `keyString` is the value that can be found in the App's
-     * [configuration artifact](../../rest/v1beta1/projects.iosApps/getConfig). If
-     * `api_key_id` is not set in requests to
-     * [`iosApps.Create`](../../rest/v1beta1/projects.iosApps/create), then
-     * Firebase automatically associates an `api_key_id` with the `IosApp`. This
-     * auto-associated key may be an existing valid key or, if no valid key
-     * exists, a new one will be provisioned. In patch requests, `api_key_id`
-     * cannot be set to an empty value, and the new UID must have no restrictions
-     * or only have restrictions that are valid for the associated `IosApp`. We
-     * recommend using the [Google Cloud
-     * Console](https://console.cloud.google.com/apis/credentials) to manage API
-     * keys.
-     *
-     * @var string
-     */
-    public $apiKeyId;
-    /**
-     * Output only. Immutable. The globally unique, Firebase-assigned identifier
-     * for the `IosApp`. This identifier should be treated as an opaque token, as
-     * the data format is not specified.
-     *
-     * @var string
-     */
-    public $appId;
-    /**
-     * The automatically generated Apple ID assigned to the iOS app by Apple in
-     * the iOS App Store.
-     *
-     * @var string
-     */
-    public $appStoreId;
-    /**
-     * Immutable. The canonical bundle ID of the iOS app as it would appear in the
-     * iOS AppStore.
-     *
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * The user-assigned display name for the `IosApp`.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and it may be sent with update requests to ensure the client has an up-to-
-     * date value before proceeding. Learn more about `etag` in Google's [AIP-154
-     * standard](https://google.aip.dev/154#declarative-friendly-resources). This
-     * etag is strongly validated.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. If the App has been removed from the Project, this is the
-     * timestamp of when the App is considered expired and will be permanently
-     * deleted. After this time, the App cannot be undeleted (that is, restored to
-     * the Project). This value is only provided if the App is in the `DELETED`
-     * state.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The resource name of the IosApp, in the format: projects/PROJECT_IDENTIFIER
-     * /iosApps/APP_ID * PROJECT_IDENTIFIER: the parent Project's
-     * [`ProjectNumber`](../projects#FirebaseProject.FIELDS.project_number)
-     * ***(recommended)*** or its
-     * [`ProjectId`](../projects#FirebaseProject.FIELDS.project_id). Learn more
-     * about using project identifiers in Google's [AIP 2510
-     * standard](https://google.aip.dev/cloud/2510). Note that the value for
-     * PROJECT_IDENTIFIER in any response body will be the `ProjectId`. * APP_ID:
-     * the globally unique, Firebase-assigned identifier for the App (see
-     * [`appId`](../projects.iosApps#IosApp.FIELDS.app_id)).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Immutable. A user-assigned unique identifier of the parent
-     * FirebaseProject for the `IosApp`.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Output only. The lifecycle state of the App.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The Apple Developer Team ID associated with the App in the App Store.
-     *
-     * @var string
-     */
-    public $teamId;
-    /**
-     * The globally unique, Google-assigned identifier (UID) for the Firebase API
-     * key associated with the `IosApp`. Be aware that this value is the UID of
-     * the API key, _not_ the [`keyString`](https://cloud.google.com/api-
-     * keys/docs/reference/rest/v2/projects.locations.keys#Key.FIELDS.key_string)
-     * of the API key. The `keyString` is the value that can be found in the App's
-     * [configuration artifact](../../rest/v1beta1/projects.iosApps/getConfig). If
-     * `api_key_id` is not set in requests to
-     * [`iosApps.Create`](../../rest/v1beta1/projects.iosApps/create), then
-     * Firebase automatically associates an `api_key_id` with the `IosApp`. This
-     * auto-associated key may be an existing valid key or, if no valid key
-     * exists, a new one will be provisioned. In patch requests, `api_key_id`
-     * cannot be set to an empty value, and the new UID must have no restrictions
-     * or only have restrictions that are valid for the associated `IosApp`. We
-     * recommend using the [Google Cloud
-     * Console](https://console.cloud.google.com/apis/credentials) to manage API
-     * keys.
-     *
-     * @param string $apiKeyId
-     */
-    public function setApiKeyId($apiKeyId)
+namespace Google\Service\FirebaseManagement {
+    class IosApp extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The App is active.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The App has been soft-deleted. After an App has been in the `DELETED` state
+         * for more than 30 days, it is considered expired and will be permanently
+         * deleted. Up until this time, you can restore the App by calling `Undelete`
+         * ([Android](projects.androidApps/undelete) |
+         * [iOS](projects.iosApps/undelete) | [web](projects.webApps/undelete)).
+         */
+        public const STATE_DELETED = 'DELETED';
+        /**
+         * The globally unique, Google-assigned identifier (UID) for the Firebase API
+         * key associated with the `IosApp`. Be aware that this value is the UID of
+         * the API key, _not_ the [`keyString`](https://cloud.google.com/api-
+         * keys/docs/reference/rest/v2/projects.locations.keys#Key.FIELDS.key_string)
+         * of the API key. The `keyString` is the value that can be found in the App's
+         * [configuration artifact](../../rest/v1beta1/projects.iosApps/getConfig). If
+         * `api_key_id` is not set in requests to
+         * [`iosApps.Create`](../../rest/v1beta1/projects.iosApps/create), then
+         * Firebase automatically associates an `api_key_id` with the `IosApp`. This
+         * auto-associated key may be an existing valid key or, if no valid key
+         * exists, a new one will be provisioned. In patch requests, `api_key_id`
+         * cannot be set to an empty value, and the new UID must have no restrictions
+         * or only have restrictions that are valid for the associated `IosApp`. We
+         * recommend using the [Google Cloud
+         * Console](https://console.cloud.google.com/apis/credentials) to manage API
+         * keys.
+         *
+         * @var string
+         */
+        public $apiKeyId;
+        /**
+         * Output only. Immutable. The globally unique, Firebase-assigned identifier
+         * for the `IosApp`. This identifier should be treated as an opaque token, as
+         * the data format is not specified.
+         *
+         * @var string
+         */
+        public $appId;
+        /**
+         * The automatically generated Apple ID assigned to the iOS app by Apple in
+         * the iOS App Store.
+         *
+         * @var string
+         */
+        public $appStoreId;
+        /**
+         * Immutable. The canonical bundle ID of the iOS app as it would appear in the
+         * iOS AppStore.
+         *
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * The user-assigned display name for the `IosApp`.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and it may be sent with update requests to ensure the client has an up-to-
+         * date value before proceeding. Learn more about `etag` in Google's [AIP-154
+         * standard](https://google.aip.dev/154#declarative-friendly-resources). This
+         * etag is strongly validated.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. If the App has been removed from the Project, this is the
+         * timestamp of when the App is considered expired and will be permanently
+         * deleted. After this time, the App cannot be undeleted (that is, restored to
+         * the Project). This value is only provided if the App is in the `DELETED`
+         * state.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The resource name of the IosApp, in the format: projects/PROJECT_IDENTIFIER
+         * /iosApps/APP_ID * PROJECT_IDENTIFIER: the parent Project's
+         * [`ProjectNumber`](../projects#FirebaseProject.FIELDS.project_number)
+         * ***(recommended)*** or its
+         * [`ProjectId`](../projects#FirebaseProject.FIELDS.project_id). Learn more
+         * about using project identifiers in Google's [AIP 2510
+         * standard](https://google.aip.dev/cloud/2510). Note that the value for
+         * PROJECT_IDENTIFIER in any response body will be the `ProjectId`. * APP_ID:
+         * the globally unique, Firebase-assigned identifier for the App (see
+         * [`appId`](../projects.iosApps#IosApp.FIELDS.app_id)).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Immutable. A user-assigned unique identifier of the parent
+         * FirebaseProject for the `IosApp`.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Output only. The lifecycle state of the App.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The Apple Developer Team ID associated with the App in the App Store.
+         *
+         * @var string
+         */
+        public $teamId;
+        /**
+         * The globally unique, Google-assigned identifier (UID) for the Firebase API
+         * key associated with the `IosApp`. Be aware that this value is the UID of
+         * the API key, _not_ the [`keyString`](https://cloud.google.com/api-
+         * keys/docs/reference/rest/v2/projects.locations.keys#Key.FIELDS.key_string)
+         * of the API key. The `keyString` is the value that can be found in the App's
+         * [configuration artifact](../../rest/v1beta1/projects.iosApps/getConfig). If
+         * `api_key_id` is not set in requests to
+         * [`iosApps.Create`](../../rest/v1beta1/projects.iosApps/create), then
+         * Firebase automatically associates an `api_key_id` with the `IosApp`. This
+         * auto-associated key may be an existing valid key or, if no valid key
+         * exists, a new one will be provisioned. In patch requests, `api_key_id`
+         * cannot be set to an empty value, and the new UID must have no restrictions
+         * or only have restrictions that are valid for the associated `IosApp`. We
+         * recommend using the [Google Cloud
+         * Console](https://console.cloud.google.com/apis/credentials) to manage API
+         * keys.
+         *
+         * @param string $apiKeyId
+         */
+        public function setApiKeyId($apiKeyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKeyId()
+        {
+        }
+        /**
+         * Output only. Immutable. The globally unique, Firebase-assigned identifier
+         * for the `IosApp`. This identifier should be treated as an opaque token, as
+         * the data format is not specified.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * The automatically generated Apple ID assigned to the iOS app by Apple in
+         * the iOS App Store.
+         *
+         * @param string $appStoreId
+         */
+        public function setAppStoreId($appStoreId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppStoreId()
+        {
+        }
+        /**
+         * Immutable. The canonical bundle ID of the iOS app as it would appear in the
+         * iOS AppStore.
+         *
+         * @param string $bundleId
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * The user-assigned display name for the `IosApp`.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and it may be sent with update requests to ensure the client has an up-to-
+         * date value before proceeding. Learn more about `etag` in Google's [AIP-154
+         * standard](https://google.aip.dev/154#declarative-friendly-resources). This
+         * etag is strongly validated.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. If the App has been removed from the Project, this is the
+         * timestamp of when the App is considered expired and will be permanently
+         * deleted. After this time, the App cannot be undeleted (that is, restored to
+         * the Project). This value is only provided if the App is in the `DELETED`
+         * state.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The resource name of the IosApp, in the format: projects/PROJECT_IDENTIFIER
+         * /iosApps/APP_ID * PROJECT_IDENTIFIER: the parent Project's
+         * [`ProjectNumber`](../projects#FirebaseProject.FIELDS.project_number)
+         * ***(recommended)*** or its
+         * [`ProjectId`](../projects#FirebaseProject.FIELDS.project_id). Learn more
+         * about using project identifiers in Google's [AIP 2510
+         * standard](https://google.aip.dev/cloud/2510). Note that the value for
+         * PROJECT_IDENTIFIER in any response body will be the `ProjectId`. * APP_ID:
+         * the globally unique, Firebase-assigned identifier for the App (see
+         * [`appId`](../projects.iosApps#IosApp.FIELDS.app_id)).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Immutable. A user-assigned unique identifier of the parent
+         * FirebaseProject for the `IosApp`.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Output only. The lifecycle state of the App.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, DELETED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The Apple Developer Team ID associated with the App in the App Store.
+         *
+         * @param string $teamId
+         */
+        public function setTeamId($teamId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTeamId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\IosApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeyId()
-    {
-    }
-    /**
-     * Output only. Immutable. The globally unique, Firebase-assigned identifier
-     * for the `IosApp`. This identifier should be treated as an opaque token, as
-     * the data format is not specified.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * The automatically generated Apple ID assigned to the iOS app by Apple in
-     * the iOS App Store.
-     *
-     * @param string $appStoreId
-     */
-    public function setAppStoreId($appStoreId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppStoreId()
-    {
-    }
-    /**
-     * Immutable. The canonical bundle ID of the iOS app as it would appear in the
-     * iOS AppStore.
-     *
-     * @param string $bundleId
-     */
-    public function setBundleId($bundleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBundleId()
-    {
-    }
-    /**
-     * The user-assigned display name for the `IosApp`.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and it may be sent with update requests to ensure the client has an up-to-
-     * date value before proceeding. Learn more about `etag` in Google's [AIP-154
-     * standard](https://google.aip.dev/154#declarative-friendly-resources). This
-     * etag is strongly validated.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. If the App has been removed from the Project, this is the
-     * timestamp of when the App is considered expired and will be permanently
-     * deleted. After this time, the App cannot be undeleted (that is, restored to
-     * the Project). This value is only provided if the App is in the `DELETED`
-     * state.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The resource name of the IosApp, in the format: projects/PROJECT_IDENTIFIER
-     * /iosApps/APP_ID * PROJECT_IDENTIFIER: the parent Project's
-     * [`ProjectNumber`](../projects#FirebaseProject.FIELDS.project_number)
-     * ***(recommended)*** or its
-     * [`ProjectId`](../projects#FirebaseProject.FIELDS.project_id). Learn more
-     * about using project identifiers in Google's [AIP 2510
-     * standard](https://google.aip.dev/cloud/2510). Note that the value for
-     * PROJECT_IDENTIFIER in any response body will be the `ProjectId`. * APP_ID:
-     * the globally unique, Firebase-assigned identifier for the App (see
-     * [`appId`](../projects.iosApps#IosApp.FIELDS.app_id)).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Immutable. A user-assigned unique identifier of the parent
-     * FirebaseProject for the `IosApp`.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Output only. The lifecycle state of the App.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, DELETED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The Apple Developer Team ID associated with the App in the App Store.
-     *
-     * @param string $teamId
-     */
-    public function setTeamId($teamId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTeamId()
+    class Google_Service_FirebaseManagement_IosApp extends \Google\Service\FirebaseManagement\IosApp
     {
     }
 }

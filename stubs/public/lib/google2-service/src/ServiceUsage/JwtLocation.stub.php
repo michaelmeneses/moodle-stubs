@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class JwtLocation extends \Google\Model
-{
-    /**
-     * Specifies cookie name to extract JWT token.
-     *
-     * @var string
-     */
-    public $cookie;
-    /**
-     * Specifies HTTP header name to extract JWT token.
-     *
-     * @var string
-     */
-    public $header;
-    /**
-     * Specifies URL query parameter name to extract JWT token.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * The value prefix. The value format is "value_prefix{token}" Only applies to
-     * "in" header type. Must be empty for "in" query type. If not empty, the
-     * header value has to match (case sensitive) this prefix. If not matched, JWT
-     * will not be extracted. If matched, JWT will be extracted after the prefix
-     * is removed. For example, for "Authorization: Bearer {JWT}",
-     * value_prefix="Bearer " with a space at the end.
-     *
-     * @var string
-     */
-    public $valuePrefix;
-    /**
-     * Specifies cookie name to extract JWT token.
-     *
-     * @param string $cookie
-     */
-    public function setCookie($cookie)
+namespace Google\Service\ServiceUsage {
+    class JwtLocation extends \Google\Model
     {
+        /**
+         * Specifies cookie name to extract JWT token.
+         *
+         * @var string
+         */
+        public $cookie;
+        /**
+         * Specifies HTTP header name to extract JWT token.
+         *
+         * @var string
+         */
+        public $header;
+        /**
+         * Specifies URL query parameter name to extract JWT token.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * The value prefix. The value format is "value_prefix{token}" Only applies to
+         * "in" header type. Must be empty for "in" query type. If not empty, the
+         * header value has to match (case sensitive) this prefix. If not matched, JWT
+         * will not be extracted. If matched, JWT will be extracted after the prefix
+         * is removed. For example, for "Authorization: Bearer {JWT}",
+         * value_prefix="Bearer " with a space at the end.
+         *
+         * @var string
+         */
+        public $valuePrefix;
+        /**
+         * Specifies cookie name to extract JWT token.
+         *
+         * @param string $cookie
+         */
+        public function setCookie($cookie)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCookie()
+        {
+        }
+        /**
+         * Specifies HTTP header name to extract JWT token.
+         *
+         * @param string $header
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * Specifies URL query parameter name to extract JWT token.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * The value prefix. The value format is "value_prefix{token}" Only applies to
+         * "in" header type. Must be empty for "in" query type. If not empty, the
+         * header value has to match (case sensitive) this prefix. If not matched, JWT
+         * will not be extracted. If matched, JWT will be extracted after the prefix
+         * is removed. For example, for "Authorization: Bearer {JWT}",
+         * value_prefix="Bearer " with a space at the end.
+         *
+         * @param string $valuePrefix
+         */
+        public function setValuePrefix($valuePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValuePrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\JwtLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCookie()
-    {
-    }
-    /**
-     * Specifies HTTP header name to extract JWT token.
-     *
-     * @param string $header
-     */
-    public function setHeader($header)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * Specifies URL query parameter name to extract JWT token.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * The value prefix. The value format is "value_prefix{token}" Only applies to
-     * "in" header type. Must be empty for "in" query type. If not empty, the
-     * header value has to match (case sensitive) this prefix. If not matched, JWT
-     * will not be extracted. If matched, JWT will be extracted after the prefix
-     * is removed. For example, for "Authorization: Bearer {JWT}",
-     * value_prefix="Bearer " with a space at the end.
-     *
-     * @param string $valuePrefix
-     */
-    public function setValuePrefix($valuePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValuePrefix()
+    class Google_Service_ServiceUsage_JwtLocation extends \Google\Service\ServiceUsage\JwtLocation
     {
     }
 }

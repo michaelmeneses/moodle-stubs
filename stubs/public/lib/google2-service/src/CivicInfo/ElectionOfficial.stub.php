@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class ElectionOfficial extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * @var string
-     */
-    public $faxNumber;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $officePhoneNumber;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\CivicInfo {
+    class ElectionOfficial extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * @var string
+         */
+        public $faxNumber;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $officePhoneNumber;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFaxNumber($faxNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFaxNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOfficePhoneNumber($officePhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfficePhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\ElectionOfficial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFaxNumber($faxNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFaxNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOfficePhoneNumber($officePhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfficePhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CivicInfo_ElectionOfficial extends \Google\Service\CivicInfo\ElectionOfficial
     {
     }
 }

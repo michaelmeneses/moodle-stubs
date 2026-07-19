@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class QueryRequestInput extends \Google\Model
-{
-    protected $payloadType = QueryRequestPayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Payload containing third-party device IDs.
-     *
-     * @param QueryRequestPayload $payload
-     */
-    public function setPayload(QueryRequestPayload $payload)
+namespace Google\Service\HomeGraphService {
+    class QueryRequestInput extends \Google\Model
     {
+        protected $payloadType = QueryRequestPayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Payload containing third-party device IDs.
+         *
+         * @param QueryRequestPayload $payload
+         */
+        public function setPayload(QueryRequestPayload $payload)
+        {
+        }
+        /**
+         * @return QueryRequestPayload
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryRequestPayload
+     * Runtime class alias of \Google\Service\HomeGraphService\QueryRequestInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
+    class Google_Service_HomeGraphService_QueryRequestInput extends \Google\Service\HomeGraphService\QueryRequestInput
     {
     }
 }

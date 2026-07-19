@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends \Google\Model
-{
-    protected $featurePolicyType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy::class;
-    protected $featurePolicyDataType = '';
-    public $location;
-    public $loggingEnabled;
-    public $name;
-    public $state;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends \Google\Model
+    {
+        protected $featurePolicyType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy::class;
+        protected $featurePolicyDataType = '';
+        public $location;
+        public $loggingEnabled;
+        public $name;
+        public $state;
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy
+         */
+        public function setFeaturePolicy(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy $featurePolicy)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy
+         */
+        public function getFeaturePolicy()
+        {
+        }
+        public function setLocation($location)
+        {
+        }
+        public function getLocation()
+        {
+        }
+        public function setLoggingEnabled($loggingEnabled)
+        {
+        }
+        public function getLoggingEnabled()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setState($state)
+        {
+        }
+        public function getState()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFeaturePolicy(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy $featurePolicy)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy
-     */
-    public function getFeaturePolicy()
-    {
-    }
-    public function setLocation($location)
-    {
-    }
-    public function getLocation()
-    {
-    }
-    public function setLoggingEnabled($loggingEnabled)
-    {
-    }
-    public function getLoggingEnabled()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setState($state)
-    {
-    }
-    public function getState()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
     {
     }
 }

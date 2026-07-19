@@ -21,55 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "remarketingListShares" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $remarketingListShares = $dfareportingService->remarketingListShares;
- *  </code>
- */
-class RemarketingListShares extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\RemarketingListShare;
     /**
-     * Gets one remarketing list share by remarketing list ID.
-     * (remarketingListShares.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $remarketingListId Remarketing list ID.
-     * @param array $optParams Optional parameters.
-     * @return RemarketingListShare
-     * @throws \Google\Service\Exception
+     * The "remarketingListShares" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $remarketingListShares = $dfareportingService->remarketingListShares;
+     *  </code>
      */
-    public function get($profileId, $remarketingListId, $optParams = [])
+    class RemarketingListShares extends \Google\Service\Resource
     {
+        /**
+         * Gets one remarketing list share by remarketing list ID.
+         * (remarketingListShares.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $remarketingListId Remarketing list ID.
+         * @param array $optParams Optional parameters.
+         * @return RemarketingListShare
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $remarketingListId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing remarketing list share. This method supports patch
+         * semantics. (remarketingListShares.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Required. RemarketingList ID.
+         * @param RemarketingListShare $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemarketingListShare
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, RemarketingListShare $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing remarketing list share. (remarketingListShares.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param RemarketingListShare $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemarketingListShare
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, RemarketingListShare $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates an existing remarketing list share. This method supports patch
-     * semantics. (remarketingListShares.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Required. RemarketingList ID.
-     * @param RemarketingListShare $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemarketingListShare
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\RemarketingListShares registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($profileId, $id, RemarketingListShare $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing remarketing list share. (remarketingListShares.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param RemarketingListShare $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemarketingListShare
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, RemarketingListShare $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_RemarketingListShares extends \Google\Service\Dfareporting\Resource\RemarketingListShares
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ColorStop extends \Google\Model
-{
-    /**
-     * The alpha value of this color in the gradient band. Defaults to 1.0, fully
-     * opaque.
-     *
-     * @var float
-     */
-    public $alpha;
-    protected $colorType = OpaqueColor::class;
-    protected $colorDataType = '';
-    /**
-     * The relative position of the color stop in the gradient band measured in
-     * percentage. The value should be in the interval [0.0, 1.0].
-     *
-     * @var float
-     */
-    public $position;
-    /**
-     * The alpha value of this color in the gradient band. Defaults to 1.0, fully
-     * opaque.
-     *
-     * @param float $alpha
-     */
-    public function setAlpha($alpha)
+namespace Google\Service\Slides {
+    class ColorStop extends \Google\Model
     {
+        /**
+         * The alpha value of this color in the gradient band. Defaults to 1.0, fully
+         * opaque.
+         *
+         * @var float
+         */
+        public $alpha;
+        protected $colorType = OpaqueColor::class;
+        protected $colorDataType = '';
+        /**
+         * The relative position of the color stop in the gradient band measured in
+         * percentage. The value should be in the interval [0.0, 1.0].
+         *
+         * @var float
+         */
+        public $position;
+        /**
+         * The alpha value of this color in the gradient band. Defaults to 1.0, fully
+         * opaque.
+         *
+         * @param float $alpha
+         */
+        public function setAlpha($alpha)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAlpha()
+        {
+        }
+        /**
+         * The color of the gradient stop.
+         *
+         * @param OpaqueColor $color
+         */
+        public function setColor(OpaqueColor $color)
+        {
+        }
+        /**
+         * @return OpaqueColor
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * The relative position of the color stop in the gradient band measured in
+         * percentage. The value should be in the interval [0.0, 1.0].
+         *
+         * @param float $position
+         */
+        public function setPosition($position)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Slides\ColorStop registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlpha()
-    {
-    }
-    /**
-     * The color of the gradient stop.
-     *
-     * @param OpaqueColor $color
-     */
-    public function setColor(OpaqueColor $color)
-    {
-    }
-    /**
-     * @return OpaqueColor
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * The relative position of the color stop in the gradient band measured in
-     * percentage. The value should be in the interval [0.0, 1.0].
-     *
-     * @param float $position
-     */
-    public function setPosition($position)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPosition()
+    class Google_Service_Slides_ColorStop extends \Google\Service\Slides\ColorStop
     {
     }
 }

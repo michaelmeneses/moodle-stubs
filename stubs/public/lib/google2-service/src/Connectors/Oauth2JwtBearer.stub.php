@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Oauth2JwtBearer extends \Google\Model
-{
-    protected $clientKeyType = Secret::class;
-    protected $clientKeyDataType = '';
-    protected $jwtClaimsType = JwtClaims::class;
-    protected $jwtClaimsDataType = '';
-    /**
-     * @param Secret
-     */
-    public function setClientKey(Secret $clientKey)
+namespace Google\Service\Connectors {
+    class Oauth2JwtBearer extends \Google\Model
     {
+        protected $clientKeyType = Secret::class;
+        protected $clientKeyDataType = '';
+        protected $jwtClaimsType = JwtClaims::class;
+        protected $jwtClaimsDataType = '';
+        /**
+         * @param Secret
+         */
+        public function setClientKey(Secret $clientKey)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getClientKey()
+        {
+        }
+        /**
+         * @param JwtClaims
+         */
+        public function setJwtClaims(JwtClaims $jwtClaims)
+        {
+        }
+        /**
+         * @return JwtClaims
+         */
+        public function getJwtClaims()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Secret
+     * Runtime class alias of \Google\Service\Connectors\Oauth2JwtBearer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientKey()
-    {
-    }
-    /**
-     * @param JwtClaims
-     */
-    public function setJwtClaims(JwtClaims $jwtClaims)
-    {
-    }
-    /**
-     * @return JwtClaims
-     */
-    public function getJwtClaims()
+    class Google_Service_Connectors_Oauth2JwtBearer extends \Google\Service\Connectors\Oauth2JwtBearer
     {
     }
 }

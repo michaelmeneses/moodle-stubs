@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class EventType extends \Google\Collection
-{
-    protected $collection_key = 'filteringAttributes';
-    /**
-     * Output only. Human friendly description of what the event type is about.
-     * For example "Bucket created in Cloud Storage".
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. URI for the event schema. For example
-     * "https://github.com/googleapis/google-
-     * cloudevents/blob/master/proto/google/events/cloud/storage/v1/events.proto"
-     *
-     * @var string
-     */
-    public $eventSchemaUri;
-    protected $filteringAttributesType = FilteringAttribute::class;
-    protected $filteringAttributesDataType = 'array';
-    /**
-     * Output only. The full name of the event type (for example,
-     * "google.cloud.storage.object.v1.finalized"). In the form of {provider-
-     * specific-prefix}.{resource}.{version}.{verb}. Types MUST be versioned and
-     * event schemas are guaranteed to remain backward compatible within one
-     * version. Note that event type versions and API versions do not need to
-     * match.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Human friendly description of what the event type is about.
-     * For example "Bucket created in Cloud Storage".
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Eventarc {
+    class EventType extends \Google\Collection
     {
+        protected $collection_key = 'filteringAttributes';
+        /**
+         * Output only. Human friendly description of what the event type is about.
+         * For example "Bucket created in Cloud Storage".
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. URI for the event schema. For example
+         * "https://github.com/googleapis/google-
+         * cloudevents/blob/master/proto/google/events/cloud/storage/v1/events.proto"
+         *
+         * @var string
+         */
+        public $eventSchemaUri;
+        protected $filteringAttributesType = FilteringAttribute::class;
+        protected $filteringAttributesDataType = 'array';
+        /**
+         * Output only. The full name of the event type (for example,
+         * "google.cloud.storage.object.v1.finalized"). In the form of {provider-
+         * specific-prefix}.{resource}.{version}.{verb}. Types MUST be versioned and
+         * event schemas are guaranteed to remain backward compatible within one
+         * version. Note that event type versions and API versions do not need to
+         * match.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Human friendly description of what the event type is about.
+         * For example "Bucket created in Cloud Storage".
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. URI for the event schema. For example
+         * "https://github.com/googleapis/google-
+         * cloudevents/blob/master/proto/google/events/cloud/storage/v1/events.proto"
+         *
+         * @param string $eventSchemaUri
+         */
+        public function setEventSchemaUri($eventSchemaUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventSchemaUri()
+        {
+        }
+        /**
+         * Output only. Filtering attributes for the event type.
+         *
+         * @param FilteringAttribute[] $filteringAttributes
+         */
+        public function setFilteringAttributes($filteringAttributes)
+        {
+        }
+        /**
+         * @return FilteringAttribute[]
+         */
+        public function getFilteringAttributes()
+        {
+        }
+        /**
+         * Output only. The full name of the event type (for example,
+         * "google.cloud.storage.object.v1.finalized"). In the form of {provider-
+         * specific-prefix}.{resource}.{version}.{verb}. Types MUST be versioned and
+         * event schemas are guaranteed to remain backward compatible within one
+         * version. Note that event type versions and API versions do not need to
+         * match.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\EventType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. URI for the event schema. For example
-     * "https://github.com/googleapis/google-
-     * cloudevents/blob/master/proto/google/events/cloud/storage/v1/events.proto"
-     *
-     * @param string $eventSchemaUri
-     */
-    public function setEventSchemaUri($eventSchemaUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventSchemaUri()
-    {
-    }
-    /**
-     * Output only. Filtering attributes for the event type.
-     *
-     * @param FilteringAttribute[] $filteringAttributes
-     */
-    public function setFilteringAttributes($filteringAttributes)
-    {
-    }
-    /**
-     * @return FilteringAttribute[]
-     */
-    public function getFilteringAttributes()
-    {
-    }
-    /**
-     * Output only. The full name of the event type (for example,
-     * "google.cloud.storage.object.v1.finalized"). In the form of {provider-
-     * specific-prefix}.{resource}.{version}.{verb}. Types MUST be versioned and
-     * event schemas are guaranteed to remain backward compatible within one
-     * version. Note that event type versions and API versions do not need to
-     * match.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Eventarc_EventType extends \Google\Service\Eventarc\EventType
     {
     }
 }

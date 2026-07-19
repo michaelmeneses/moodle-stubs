@@ -21,92 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "tools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $tools = $dialogflowService->projects_locations_agents_tools;
- *  </code>
- */
-class ProjectsLocationsAgentsTools extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListToolsResponse;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Tool;
+    use Google\Service\Dialogflow\GoogleProtobufEmpty;
     /**
-     * Creates a Tool in the specified agent. (tools.create)
-     *
-     * @param string $parent Required. The agent to create a Tool for. Format:
-     * `projects//locations//agents/`.
-     * @param GoogleCloudDialogflowCxV3Tool $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Tool
-     * @throws \Google\Service\Exception
+     * The "tools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $tools = $dialogflowService->projects_locations_agents_tools;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDialogflowCxV3Tool $postBody, $optParams = [])
+    class ProjectsLocationsAgentsTools extends \Google\Service\Resource
     {
+        /**
+         * Creates a Tool in the specified agent. (tools.create)
+         *
+         * @param string $parent Required. The agent to create a Tool for. Format:
+         * `projects//locations//agents/`.
+         * @param GoogleCloudDialogflowCxV3Tool $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Tool
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDialogflowCxV3Tool $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a specified Tool. (tools.delete)
+         *
+         * @param string $name Required. The name of the Tool to be deleted. Format:
+         * `projects//locations//agents//tools/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool force This field has no effect for Tools not being used. For
+         * Tools that are used: * If `force` is set to false, an error will be returned
+         * with message indicating the referenced resources. * If `force` is set to
+         * true, Dialogflow will remove the tool, as well as any references to the tool.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the specified Tool. (tools.get)
+         *
+         * @param string $name Required. The name of the Tool. Format:
+         * `projects//locations//agents//tools/`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Tool
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of Tools in the specified agent.
+         * (tools.listProjectsLocationsAgentsTools)
+         *
+         * @param string $parent Required. The agent to list the Tools from. Format:
+         * `projects//locations//agents/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 100 and at most 1000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListToolsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsTools($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update the specified Tool. (tools.patch)
+         *
+         * @param string $name The unique identifier of the Tool. Format:
+         * `projects//locations//agents//tools/`.
+         * @param GoogleCloudDialogflowCxV3Tool $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The mask to control which fields get updated. If
+         * the mask is not present, all fields will be updated.
+         * @return GoogleCloudDialogflowCxV3Tool
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDialogflowCxV3Tool $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a specified Tool. (tools.delete)
-     *
-     * @param string $name Required. The name of the Tool to be deleted. Format:
-     * `projects//locations//agents//tools/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool force This field has no effect for Tools not being used. For
-     * Tools that are used: * If `force` is set to false, an error will be returned
-     * with message indicating the referenced resources. * If `force` is set to
-     * true, Dialogflow will remove the tool, as well as any references to the tool.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsTools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the specified Tool. (tools.get)
-     *
-     * @param string $name Required. The name of the Tool. Format:
-     * `projects//locations//agents//tools/`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Tool
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of Tools in the specified agent.
-     * (tools.listProjectsLocationsAgentsTools)
-     *
-     * @param string $parent Required. The agent to list the Tools from. Format:
-     * `projects//locations//agents/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 100 and at most 1000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListToolsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsAgentsTools($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update the specified Tool. (tools.patch)
-     *
-     * @param string $name The unique identifier of the Tool. Format:
-     * `projects//locations//agents//tools/`.
-     * @param GoogleCloudDialogflowCxV3Tool $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The mask to control which fields get updated. If
-     * the mask is not present, all fields will be updated.
-     * @return GoogleCloudDialogflowCxV3Tool
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudDialogflowCxV3Tool $postBody, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsTools extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsTools
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListSkusResponse extends \Google\Collection
-{
-    protected $collection_key = 'skus';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $skusType = GoogleCloudChannelV1Sku::class;
-    protected $skusDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListSkusResponse extends \Google\Collection
     {
+        protected $collection_key = 'skus';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $skusType = GoogleCloudChannelV1Sku::class;
+        protected $skusDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of SKUs requested.
+         *
+         * @param GoogleCloudChannelV1Sku[] $skus
+         */
+        public function setSkus($skus)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Sku[]
+         */
+        public function getSkus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of SKUs requested.
-     *
-     * @param GoogleCloudChannelV1Sku[] $skus
-     */
-    public function setSkus($skus)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Sku[]
-     */
-    public function getSkus()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListSkusResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkusResponse
     {
     }
 }

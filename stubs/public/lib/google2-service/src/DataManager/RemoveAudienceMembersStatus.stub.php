@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class RemoveAudienceMembersStatus extends \Google\Model
-{
-    protected $mobileDataRemovalStatusType = RemoveMobileDataStatus::class;
-    protected $mobileDataRemovalStatusDataType = '';
-    protected $pairDataRemovalStatusType = RemovePairDataStatus::class;
-    protected $pairDataRemovalStatusDataType = '';
-    protected $userDataRemovalStatusType = RemoveUserDataStatus::class;
-    protected $userDataRemovalStatusDataType = '';
-    /**
-     * The status of the mobile data removal from the destination.
-     *
-     * @param RemoveMobileDataStatus $mobileDataRemovalStatus
-     */
-    public function setMobileDataRemovalStatus(RemoveMobileDataStatus $mobileDataRemovalStatus)
+namespace Google\Service\DataManager {
+    class RemoveAudienceMembersStatus extends \Google\Model
     {
+        protected $mobileDataRemovalStatusType = RemoveMobileDataStatus::class;
+        protected $mobileDataRemovalStatusDataType = '';
+        protected $pairDataRemovalStatusType = RemovePairDataStatus::class;
+        protected $pairDataRemovalStatusDataType = '';
+        protected $userDataRemovalStatusType = RemoveUserDataStatus::class;
+        protected $userDataRemovalStatusDataType = '';
+        /**
+         * The status of the mobile data removal from the destination.
+         *
+         * @param RemoveMobileDataStatus $mobileDataRemovalStatus
+         */
+        public function setMobileDataRemovalStatus(RemoveMobileDataStatus $mobileDataRemovalStatus)
+        {
+        }
+        /**
+         * @return RemoveMobileDataStatus
+         */
+        public function getMobileDataRemovalStatus()
+        {
+        }
+        /**
+         * The status of the pair data removal from the destination.
+         *
+         * @param RemovePairDataStatus $pairDataRemovalStatus
+         */
+        public function setPairDataRemovalStatus(RemovePairDataStatus $pairDataRemovalStatus)
+        {
+        }
+        /**
+         * @return RemovePairDataStatus
+         */
+        public function getPairDataRemovalStatus()
+        {
+        }
+        /**
+         * The status of the user data removal from the destination.
+         *
+         * @param RemoveUserDataStatus $userDataRemovalStatus
+         */
+        public function setUserDataRemovalStatus(RemoveUserDataStatus $userDataRemovalStatus)
+        {
+        }
+        /**
+         * @return RemoveUserDataStatus
+         */
+        public function getUserDataRemovalStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RemoveMobileDataStatus
+     * Runtime class alias of \Google\Service\DataManager\RemoveAudienceMembersStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileDataRemovalStatus()
-    {
-    }
-    /**
-     * The status of the pair data removal from the destination.
-     *
-     * @param RemovePairDataStatus $pairDataRemovalStatus
-     */
-    public function setPairDataRemovalStatus(RemovePairDataStatus $pairDataRemovalStatus)
-    {
-    }
-    /**
-     * @return RemovePairDataStatus
-     */
-    public function getPairDataRemovalStatus()
-    {
-    }
-    /**
-     * The status of the user data removal from the destination.
-     *
-     * @param RemoveUserDataStatus $userDataRemovalStatus
-     */
-    public function setUserDataRemovalStatus(RemoveUserDataStatus $userDataRemovalStatus)
-    {
-    }
-    /**
-     * @return RemoveUserDataStatus
-     */
-    public function getUserDataRemovalStatus()
+    class Google_Service_DataManager_RemoveAudienceMembersStatus extends \Google\Service\DataManager\RemoveAudienceMembersStatus
     {
     }
 }

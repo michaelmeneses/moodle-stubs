@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PeoplePromotionCard extends \Google\Collection
-{
-    protected $collection_key = 'people';
-    protected $peopleType = PersonCore::class;
-    protected $peopleDataType = 'array';
-    /**
-     * @param PersonCore[] $people
-     */
-    public function setPeople($people)
+namespace Google\Service\CloudSearch {
+    class PeoplePromotionCard extends \Google\Collection
     {
+        protected $collection_key = 'people';
+        protected $peopleType = PersonCore::class;
+        protected $peopleDataType = 'array';
+        /**
+         * @param PersonCore[] $people
+         */
+        public function setPeople($people)
+        {
+        }
+        /**
+         * @return PersonCore[]
+         */
+        public function getPeople()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersonCore[]
+     * Runtime class alias of \Google\Service\CloudSearch\PeoplePromotionCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeople()
+    class Google_Service_CloudSearch_PeoplePromotionCard extends \Google\Service\CloudSearch\PeoplePromotionCard
     {
     }
 }

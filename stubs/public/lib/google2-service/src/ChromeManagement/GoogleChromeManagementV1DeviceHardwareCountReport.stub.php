@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1DeviceHardwareCountReport extends \Google\Model
-{
-    /**
-     * Public name of the hardware specification.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Count of devices with a unique hardware specification.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Public name of the hardware specification.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1DeviceHardwareCountReport extends \Google\Model
     {
+        /**
+         * Public name of the hardware specification.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Count of devices with a unique hardware specification.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Public name of the hardware specification.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Count of devices with a unique hardware specification.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1DeviceHardwareCountReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Count of devices with a unique hardware specification.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1DeviceHardwareCountReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1DeviceHardwareCountReport
     {
     }
 }

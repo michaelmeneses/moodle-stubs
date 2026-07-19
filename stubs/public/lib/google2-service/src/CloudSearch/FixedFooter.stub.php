@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FixedFooter extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = Button::class;
-    protected $buttonsDataType = 'array';
-    protected $primaryButtonType = TextButton::class;
-    protected $primaryButtonDataType = '';
-    protected $secondaryButtonType = TextButton::class;
-    protected $secondaryButtonDataType = '';
-    /**
-     * @param Button[]
-     */
-    public function setButtons($buttons)
+namespace Google\Service\CloudSearch {
+    class FixedFooter extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = Button::class;
+        protected $buttonsDataType = 'array';
+        protected $primaryButtonType = TextButton::class;
+        protected $primaryButtonDataType = '';
+        protected $secondaryButtonType = TextButton::class;
+        protected $secondaryButtonDataType = '';
+        /**
+         * @param Button[]
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return Button[]
+         */
+        public function getButtons()
+        {
+        }
+        /**
+         * @param TextButton
+         */
+        public function setPrimaryButton(TextButton $primaryButton)
+        {
+        }
+        /**
+         * @return TextButton
+         */
+        public function getPrimaryButton()
+        {
+        }
+        /**
+         * @param TextButton
+         */
+        public function setSecondaryButton(TextButton $secondaryButton)
+        {
+        }
+        /**
+         * @return TextButton
+         */
+        public function getSecondaryButton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Button[]
+     * Runtime class alias of \Google\Service\CloudSearch\FixedFooter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
-    {
-    }
-    /**
-     * @param TextButton
-     */
-    public function setPrimaryButton(TextButton $primaryButton)
-    {
-    }
-    /**
-     * @return TextButton
-     */
-    public function getPrimaryButton()
-    {
-    }
-    /**
-     * @param TextButton
-     */
-    public function setSecondaryButton(TextButton $secondaryButton)
-    {
-    }
-    /**
-     * @return TextButton
-     */
-    public function getSecondaryButton()
+    class Google_Service_CloudSearch_FixedFooter extends \Google\Service\CloudSearch\FixedFooter
     {
     }
 }

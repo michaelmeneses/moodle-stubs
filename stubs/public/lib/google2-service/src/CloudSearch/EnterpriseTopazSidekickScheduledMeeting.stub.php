@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickScheduledMeeting extends \Google\Model
-{
-    /**
-     * The meeting location.
-     *
-     * @var string
-     */
-    public $meetingLocation;
-    protected $meetingTimeType = EnterpriseTopazSidekickTimeSlot::class;
-    protected $meetingTimeDataType = '';
-    /**
-     * The meeting title.
-     *
-     * @var string
-     */
-    public $meetingTitle;
-    /**
-     * The meeting location.
-     *
-     * @param string $meetingLocation
-     */
-    public function setMeetingLocation($meetingLocation)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickScheduledMeeting extends \Google\Model
     {
+        /**
+         * The meeting location.
+         *
+         * @var string
+         */
+        public $meetingLocation;
+        protected $meetingTimeType = EnterpriseTopazSidekickTimeSlot::class;
+        protected $meetingTimeDataType = '';
+        /**
+         * The meeting title.
+         *
+         * @var string
+         */
+        public $meetingTitle;
+        /**
+         * The meeting location.
+         *
+         * @param string $meetingLocation
+         */
+        public function setMeetingLocation($meetingLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingLocation()
+        {
+        }
+        /**
+         * The meeting time slot.
+         *
+         * @param EnterpriseTopazSidekickTimeSlot $meetingTime
+         */
+        public function setMeetingTime(EnterpriseTopazSidekickTimeSlot $meetingTime)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickTimeSlot
+         */
+        public function getMeetingTime()
+        {
+        }
+        /**
+         * The meeting title.
+         *
+         * @param string $meetingTitle
+         */
+        public function setMeetingTitle($meetingTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickScheduledMeeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeetingLocation()
-    {
-    }
-    /**
-     * The meeting time slot.
-     *
-     * @param EnterpriseTopazSidekickTimeSlot $meetingTime
-     */
-    public function setMeetingTime(EnterpriseTopazSidekickTimeSlot $meetingTime)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickTimeSlot
-     */
-    public function getMeetingTime()
-    {
-    }
-    /**
-     * The meeting title.
-     *
-     * @param string $meetingTitle
-     */
-    public function setMeetingTitle($meetingTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingTitle()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickScheduledMeeting extends \Google\Service\CloudSearch\EnterpriseTopazSidekickScheduledMeeting
     {
     }
 }

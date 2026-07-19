@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ImportMessagesRequest extends \Google\Model
-{
-    protected $gcsSourceType = GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Cloud Storage source data location and import configuration. The Cloud
-     * Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud
-     * IAM roles on the Cloud Storage location.
-     *
-     * @param GcsSource $gcsSource
-     */
-    public function setGcsSource(GcsSource $gcsSource)
+namespace Google\Service\CloudHealthcare {
+    class ImportMessagesRequest extends \Google\Model
     {
+        protected $gcsSourceType = GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Cloud Storage source data location and import configuration. The Cloud
+         * Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud
+         * IAM roles on the Cloud Storage location.
+         *
+         * @param GcsSource $gcsSource
+         */
+        public function setGcsSource(GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsSource
+     * Runtime class alias of \Google\Service\CloudHealthcare\ImportMessagesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_CloudHealthcare_ImportMessagesRequest extends \Google\Service\CloudHealthcare\ImportMessagesRequest
     {
     }
 }

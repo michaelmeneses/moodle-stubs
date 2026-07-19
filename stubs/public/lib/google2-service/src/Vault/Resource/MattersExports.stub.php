@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault\Resource;
-
-/**
- * The "exports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vaultService = new Google\Service\Vault(...);
- *   $exports = $vaultService->matters_exports;
- *  </code>
- */
-class MattersExports extends \Google\Service\Resource
-{
+namespace Google\Service\Vault\Resource {
+    use Google\Service\Vault\Export;
+    use Google\Service\Vault\ListExportsResponse;
+    use Google\Service\Vault\VaultEmpty;
     /**
-     * Creates an export. (exports.create)
-     *
-     * @param string $matterId The matter ID.
-     * @param Export $postBody
-     * @param array $optParams Optional parameters.
-     * @return Export
-     * @throws \Google\Service\Exception
+     * The "exports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vaultService = new Google\Service\Vault(...);
+     *   $exports = $vaultService->matters_exports;
+     *  </code>
      */
-    public function create($matterId, Export $postBody, $optParams = [])
+    class MattersExports extends \Google\Service\Resource
     {
+        /**
+         * Creates an export. (exports.create)
+         *
+         * @param string $matterId The matter ID.
+         * @param Export $postBody
+         * @param array $optParams Optional parameters.
+         * @return Export
+         * @throws \Google\Service\Exception
+         */
+        public function create($matterId, Export $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an export. (exports.delete)
+         *
+         * @param string $matterId The matter ID.
+         * @param string $exportId The export ID.
+         * @param array $optParams Optional parameters.
+         * @return VaultEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($matterId, $exportId, $optParams = [])
+        {
+        }
+        /**
+         * Gets an export. (exports.get)
+         *
+         * @param string $matterId The matter ID.
+         * @param string $exportId The export ID.
+         * @param array $optParams Optional parameters.
+         * @return Export
+         * @throws \Google\Service\Exception
+         */
+        public function get($matterId, $exportId, $optParams = [])
+        {
+        }
+        /**
+         * Lists details about the exports in the specified matter.
+         * (exports.listMattersExports)
+         *
+         * @param string $matterId The matter ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The number of exports to return in the response.
+         * @opt_param string pageToken The pagination token as returned in the response.
+         * @return ListExportsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMattersExports($matterId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an export. (exports.delete)
-     *
-     * @param string $matterId The matter ID.
-     * @param string $exportId The export ID.
-     * @param array $optParams Optional parameters.
-     * @return VaultEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Vault\Resource\MattersExports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($matterId, $exportId, $optParams = [])
-    {
-    }
-    /**
-     * Gets an export. (exports.get)
-     *
-     * @param string $matterId The matter ID.
-     * @param string $exportId The export ID.
-     * @param array $optParams Optional parameters.
-     * @return Export
-     * @throws \Google\Service\Exception
-     */
-    public function get($matterId, $exportId, $optParams = [])
-    {
-    }
-    /**
-     * Lists details about the exports in the specified matter.
-     * (exports.listMattersExports)
-     *
-     * @param string $matterId The matter ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The number of exports to return in the response.
-     * @opt_param string pageToken The pagination token as returned in the response.
-     * @return ListExportsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listMattersExports($matterId, $optParams = [])
+    class Google_Service_Vault_Resource_MattersExports extends \Google\Service\Vault\Resource\MattersExports
     {
     }
 }

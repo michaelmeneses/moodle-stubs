@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class RelationDescriptor extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    /**
-     * A set of BigQuery labels that should be applied to the relation.
-     *
-     * @var string[]
-     */
-    public $bigqueryLabels;
-    protected $columnsType = ColumnDescriptor::class;
-    protected $columnsDataType = 'array';
-    /**
-     * A text description of the relation.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A set of BigQuery labels that should be applied to the relation.
-     *
-     * @param string[] $bigqueryLabels
-     */
-    public function setBigqueryLabels($bigqueryLabels)
+namespace Google\Service\Dataform {
+    class RelationDescriptor extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        /**
+         * A set of BigQuery labels that should be applied to the relation.
+         *
+         * @var string[]
+         */
+        public $bigqueryLabels;
+        protected $columnsType = ColumnDescriptor::class;
+        protected $columnsDataType = 'array';
+        /**
+         * A text description of the relation.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A set of BigQuery labels that should be applied to the relation.
+         *
+         * @param string[] $bigqueryLabels
+         */
+        public function setBigqueryLabels($bigqueryLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBigqueryLabels()
+        {
+        }
+        /**
+         * A list of descriptions of columns within the relation.
+         *
+         * @param ColumnDescriptor[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return ColumnDescriptor[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * A text description of the relation.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataform\RelationDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryLabels()
-    {
-    }
-    /**
-     * A list of descriptions of columns within the relation.
-     *
-     * @param ColumnDescriptor[] $columns
-     */
-    public function setColumns($columns)
-    {
-    }
-    /**
-     * @return ColumnDescriptor[]
-     */
-    public function getColumns()
-    {
-    }
-    /**
-     * A text description of the relation.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_Dataform_RelationDescriptor extends \Google\Service\Dataform\RelationDescriptor
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupManagersSetTemplateRequest extends \Google\Model
-{
-    /**
-     * URL of the InstanceTemplate resource from which all new instances will be
-     * created.
-     *
-     * @var string
-     */
-    public $instanceTemplate;
-    /**
-     * URL of the InstanceTemplate resource from which all new instances will be
-     * created.
-     *
-     * @param string $instanceTemplate
-     */
-    public function setInstanceTemplate($instanceTemplate)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupManagersSetTemplateRequest extends \Google\Model
     {
+        /**
+         * URL of the InstanceTemplate resource from which all new instances will be
+         * created.
+         *
+         * @var string
+         */
+        public $instanceTemplate;
+        /**
+         * URL of the InstanceTemplate resource from which all new instances will be
+         * created.
+         *
+         * @param string $instanceTemplate
+         */
+        public function setInstanceTemplate($instanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupManagersSetTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceTemplate()
+    class Google_Service_Compute_RegionInstanceGroupManagersSetTemplateRequest extends \Google\Service\Compute\RegionInstanceGroupManagersSetTemplateRequest
     {
     }
 }

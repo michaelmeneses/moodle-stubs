@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RegionalinventoryCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    /**
-     * The ID of the managing account.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * Method of the batch request entry. Acceptable values are: - "`insert`"
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * The ID of the product for which to update price and availability.
-     *
-     * @var string
-     */
-    public $productId;
-    protected $regionalInventoryType = RegionalInventory::class;
-    protected $regionalInventoryDataType = '';
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class RegionalinventoryCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        /**
+         * The ID of the managing account.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * Method of the batch request entry. Acceptable values are: - "`insert`"
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * The ID of the product for which to update price and availability.
+         *
+         * @var string
+         */
+        public $productId;
+        protected $regionalInventoryType = RegionalInventory::class;
+        protected $regionalInventoryDataType = '';
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * The ID of the managing account.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * Method of the batch request entry. Acceptable values are: - "`insert`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The ID of the product for which to update price and availability.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Price and availability of the product.
+         *
+         * @param RegionalInventory $regionalInventory
+         */
+        public function setRegionalInventory(RegionalInventory $regionalInventory)
+        {
+        }
+        /**
+         * @return RegionalInventory
+         */
+        public function getRegionalInventory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RegionalinventoryCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * The ID of the managing account.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * Method of the batch request entry. Acceptable values are: - "`insert`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * The ID of the product for which to update price and availability.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Price and availability of the product.
-     *
-     * @param RegionalInventory $regionalInventory
-     */
-    public function setRegionalInventory(RegionalInventory $regionalInventory)
-    {
-    }
-    /**
-     * @return RegionalInventory
-     */
-    public function getRegionalInventory()
+    class Google_Service_ShoppingContent_RegionalinventoryCustomBatchRequestEntry extends \Google\Service\ShoppingContent\RegionalinventoryCustomBatchRequestEntry
     {
     }
 }

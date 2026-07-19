@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class InstanceConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enableHealthMonitoring;
-    /**
-     * @var string
-     */
-    public $notebookUpgradeSchedule;
-    /**
-     * @param bool
-     */
-    public function setEnableHealthMonitoring($enableHealthMonitoring)
+namespace Google\Service\AIPlatformNotebooks {
+    class InstanceConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enableHealthMonitoring;
+        /**
+         * @var string
+         */
+        public $notebookUpgradeSchedule;
+        /**
+         * @param bool
+         */
+        public function setEnableHealthMonitoring($enableHealthMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableHealthMonitoring()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotebookUpgradeSchedule($notebookUpgradeSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookUpgradeSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\InstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableHealthMonitoring()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotebookUpgradeSchedule($notebookUpgradeSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebookUpgradeSchedule()
+    class Google_Service_AIPlatformNotebooks_InstanceConfig extends \Google\Service\AIPlatformNotebooks\InstanceConfig
     {
     }
 }

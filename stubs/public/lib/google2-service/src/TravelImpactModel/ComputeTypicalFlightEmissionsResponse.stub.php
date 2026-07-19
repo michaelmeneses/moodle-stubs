@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class ComputeTypicalFlightEmissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'typicalFlightEmissions';
-    protected $modelVersionType = ModelVersion::class;
-    protected $modelVersionDataType = '';
-    protected $typicalFlightEmissionsType = TypicalFlightEmissions::class;
-    protected $typicalFlightEmissionsDataType = 'array';
-    /**
-     * The model version under which typical flight emission estimates for all
-     * flights in this response were computed.
-     *
-     * @param ModelVersion $modelVersion
-     */
-    public function setModelVersion(ModelVersion $modelVersion)
+namespace Google\Service\TravelImpactModel {
+    class ComputeTypicalFlightEmissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'typicalFlightEmissions';
+        protected $modelVersionType = ModelVersion::class;
+        protected $modelVersionDataType = '';
+        protected $typicalFlightEmissionsType = TypicalFlightEmissions::class;
+        protected $typicalFlightEmissionsDataType = 'array';
+        /**
+         * The model version under which typical flight emission estimates for all
+         * flights in this response were computed.
+         *
+         * @param ModelVersion $modelVersion
+         */
+        public function setModelVersion(ModelVersion $modelVersion)
+        {
+        }
+        /**
+         * @return ModelVersion
+         */
+        public function getModelVersion()
+        {
+        }
+        /**
+         * Market's Typical Flight Emissions requested.
+         *
+         * @param TypicalFlightEmissions[] $typicalFlightEmissions
+         */
+        public function setTypicalFlightEmissions($typicalFlightEmissions)
+        {
+        }
+        /**
+         * @return TypicalFlightEmissions[]
+         */
+        public function getTypicalFlightEmissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ModelVersion
+     * Runtime class alias of \Google\Service\TravelImpactModel\ComputeTypicalFlightEmissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelVersion()
-    {
-    }
-    /**
-     * Market's Typical Flight Emissions requested.
-     *
-     * @param TypicalFlightEmissions[] $typicalFlightEmissions
-     */
-    public function setTypicalFlightEmissions($typicalFlightEmissions)
-    {
-    }
-    /**
-     * @return TypicalFlightEmissions[]
-     */
-    public function getTypicalFlightEmissions()
+    class Google_Service_TravelImpactModel_ComputeTypicalFlightEmissionsResponse extends \Google\Service\TravelImpactModel\ComputeTypicalFlightEmissionsResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class YoutubeUserProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $youtubeUserId;
-    /**
-     * @param string
-     */
-    public function setYoutubeUserId($youtubeUserId)
+namespace Google\Service\CloudSearch {
+    class YoutubeUserProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $youtubeUserId;
+        /**
+         * @param string
+         */
+        public function setYoutubeUserId($youtubeUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\YoutubeUserProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getYoutubeUserId()
+    class Google_Service_CloudSearch_YoutubeUserProto extends \Google\Service\CloudSearch\YoutubeUserProto
     {
     }
 }

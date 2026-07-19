@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupTextButton extends \Google\Model
-{
-    protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param GoogleChatV1WidgetMarkupOnClick
-     */
-    public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupTextButton extends \Google\Model
     {
+        protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param GoogleChatV1WidgetMarkupOnClick
+         */
+        public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1WidgetMarkupOnClick
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupTextButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupTextButton extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupTextButton
     {
     }
 }

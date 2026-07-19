@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PerformanceConfig extends \Google\Model
-{
-    /**
-     * Unknown dump parallel level. Will be defaulted to OPTIMAL.
-     */
-    public const DUMP_PARALLEL_LEVEL_DUMP_PARALLEL_LEVEL_UNSPECIFIED = 'DUMP_PARALLEL_LEVEL_UNSPECIFIED';
-    /**
-     * Minimal parallel level.
-     */
-    public const DUMP_PARALLEL_LEVEL_MIN = 'MIN';
-    /**
-     * Optimal parallel level.
-     */
-    public const DUMP_PARALLEL_LEVEL_OPTIMAL = 'OPTIMAL';
-    /**
-     * Maximum parallel level.
-     */
-    public const DUMP_PARALLEL_LEVEL_MAX = 'MAX';
-    /**
-     * Initial dump parallelism level.
-     *
-     * @var string
-     */
-    public $dumpParallelLevel;
-    /**
-     * Initial dump parallelism level.
-     *
-     * Accepted values: DUMP_PARALLEL_LEVEL_UNSPECIFIED, MIN, OPTIMAL, MAX
-     *
-     * @param self::DUMP_PARALLEL_LEVEL_* $dumpParallelLevel
-     */
-    public function setDumpParallelLevel($dumpParallelLevel)
+namespace Google\Service\DatabaseMigrationService {
+    class PerformanceConfig extends \Google\Model
     {
+        /**
+         * Unknown dump parallel level. Will be defaulted to OPTIMAL.
+         */
+        public const DUMP_PARALLEL_LEVEL_DUMP_PARALLEL_LEVEL_UNSPECIFIED = 'DUMP_PARALLEL_LEVEL_UNSPECIFIED';
+        /**
+         * Minimal parallel level.
+         */
+        public const DUMP_PARALLEL_LEVEL_MIN = 'MIN';
+        /**
+         * Optimal parallel level.
+         */
+        public const DUMP_PARALLEL_LEVEL_OPTIMAL = 'OPTIMAL';
+        /**
+         * Maximum parallel level.
+         */
+        public const DUMP_PARALLEL_LEVEL_MAX = 'MAX';
+        /**
+         * Initial dump parallelism level.
+         *
+         * @var string
+         */
+        public $dumpParallelLevel;
+        /**
+         * Initial dump parallelism level.
+         *
+         * Accepted values: DUMP_PARALLEL_LEVEL_UNSPECIFIED, MIN, OPTIMAL, MAX
+         *
+         * @param self::DUMP_PARALLEL_LEVEL_* $dumpParallelLevel
+         */
+        public function setDumpParallelLevel($dumpParallelLevel)
+        {
+        }
+        /**
+         * @return self::DUMP_PARALLEL_LEVEL_*
+         */
+        public function getDumpParallelLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DUMP_PARALLEL_LEVEL_*
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PerformanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDumpParallelLevel()
+    class Google_Service_DatabaseMigrationService_PerformanceConfig extends \Google\Service\DatabaseMigrationService\PerformanceConfig
     {
     }
 }

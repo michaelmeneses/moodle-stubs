@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class DataBoostIsolationReadOnly extends \Google\Model
-{
-    /**
-     * Unspecified value.
-     */
-    public const COMPUTE_BILLING_OWNER_COMPUTE_BILLING_OWNER_UNSPECIFIED = 'COMPUTE_BILLING_OWNER_UNSPECIFIED';
-    /**
-     * The host Cloud Project containing the targeted Bigtable Instance / Table
-     * pays for compute.
-     */
-    public const COMPUTE_BILLING_OWNER_HOST_PAYS = 'HOST_PAYS';
-    /**
-     * The Compute Billing Owner for this Data Boost App Profile.
-     *
-     * @var string
-     */
-    public $computeBillingOwner;
-    /**
-     * The Compute Billing Owner for this Data Boost App Profile.
-     *
-     * Accepted values: COMPUTE_BILLING_OWNER_UNSPECIFIED, HOST_PAYS
-     *
-     * @param self::COMPUTE_BILLING_OWNER_* $computeBillingOwner
-     */
-    public function setComputeBillingOwner($computeBillingOwner)
+namespace Google\Service\BigtableAdmin {
+    class DataBoostIsolationReadOnly extends \Google\Model
     {
+        /**
+         * Unspecified value.
+         */
+        public const COMPUTE_BILLING_OWNER_COMPUTE_BILLING_OWNER_UNSPECIFIED = 'COMPUTE_BILLING_OWNER_UNSPECIFIED';
+        /**
+         * The host Cloud Project containing the targeted Bigtable Instance / Table
+         * pays for compute.
+         */
+        public const COMPUTE_BILLING_OWNER_HOST_PAYS = 'HOST_PAYS';
+        /**
+         * The Compute Billing Owner for this Data Boost App Profile.
+         *
+         * @var string
+         */
+        public $computeBillingOwner;
+        /**
+         * The Compute Billing Owner for this Data Boost App Profile.
+         *
+         * Accepted values: COMPUTE_BILLING_OWNER_UNSPECIFIED, HOST_PAYS
+         *
+         * @param self::COMPUTE_BILLING_OWNER_* $computeBillingOwner
+         */
+        public function setComputeBillingOwner($computeBillingOwner)
+        {
+        }
+        /**
+         * @return self::COMPUTE_BILLING_OWNER_*
+         */
+        public function getComputeBillingOwner()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPUTE_BILLING_OWNER_*
+     * Runtime class alias of \Google\Service\BigtableAdmin\DataBoostIsolationReadOnly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputeBillingOwner()
+    class Google_Service_BigtableAdmin_DataBoostIsolationReadOnly extends \Google\Service\BigtableAdmin\DataBoostIsolationReadOnly
     {
     }
 }

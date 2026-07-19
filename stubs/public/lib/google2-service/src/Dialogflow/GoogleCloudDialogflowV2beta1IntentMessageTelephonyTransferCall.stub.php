@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall extends \Google\Model
-{
-    /**
-     * Required. The phone number to transfer the call to in [E.164
-     * format](https://en.wikipedia.org/wiki/E.164). We currently only allow
-     * transferring to US numbers (+1xxxyyyzzzz).
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Required. The phone number to transfer the call to in [E.164
-     * format](https://en.wikipedia.org/wiki/E.164). We currently only allow
-     * transferring to US numbers (+1xxxyyyzzzz).
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall extends \Google\Model
     {
+        /**
+         * Required. The phone number to transfer the call to in [E.164
+         * format](https://en.wikipedia.org/wiki/E.164). We currently only allow
+         * transferring to US numbers (+1xxxyyyzzzz).
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Required. The phone number to transfer the call to in [E.164
+         * format](https://en.wikipedia.org/wiki/E.164). We currently only allow
+         * transferring to US numbers (+1xxxyyyzzzz).
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneNumber()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall
     {
     }
 }

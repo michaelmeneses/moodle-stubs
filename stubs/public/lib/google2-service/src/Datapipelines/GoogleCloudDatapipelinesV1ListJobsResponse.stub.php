@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1ListJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobs';
-    protected $jobsType = GoogleCloudDatapipelinesV1Job::class;
-    protected $jobsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Results that were accessible to the caller. Results are always in
-     * descending order of job creation date.
-     *
-     * @param GoogleCloudDatapipelinesV1Job[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1ListJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobs';
+        protected $jobsType = GoogleCloudDatapipelinesV1Job::class;
+        protected $jobsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Results that were accessible to the caller. Results are always in
+         * descending order of job creation date.
+         *
+         * @param GoogleCloudDatapipelinesV1Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Job[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1Job[]
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1ListJobsResponse extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListJobsResponse
     {
     }
 }

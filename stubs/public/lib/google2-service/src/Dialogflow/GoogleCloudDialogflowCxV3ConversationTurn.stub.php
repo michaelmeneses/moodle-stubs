@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ConversationTurn extends \Google\Model
-{
-    protected $userInputType = GoogleCloudDialogflowCxV3ConversationTurnUserInput::class;
-    protected $userInputDataType = '';
-    protected $virtualAgentOutputType = GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput::class;
-    protected $virtualAgentOutputDataType = '';
-    /**
-     * The user input.
-     *
-     * @param GoogleCloudDialogflowCxV3ConversationTurnUserInput $userInput
-     */
-    public function setUserInput(GoogleCloudDialogflowCxV3ConversationTurnUserInput $userInput)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ConversationTurn extends \Google\Model
     {
+        protected $userInputType = GoogleCloudDialogflowCxV3ConversationTurnUserInput::class;
+        protected $userInputDataType = '';
+        protected $virtualAgentOutputType = GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput::class;
+        protected $virtualAgentOutputDataType = '';
+        /**
+         * The user input.
+         *
+         * @param GoogleCloudDialogflowCxV3ConversationTurnUserInput $userInput
+         */
+        public function setUserInput(GoogleCloudDialogflowCxV3ConversationTurnUserInput $userInput)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ConversationTurnUserInput
+         */
+        public function getUserInput()
+        {
+        }
+        /**
+         * The virtual agent output.
+         *
+         * @param GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput $virtualAgentOutput
+         */
+        public function setVirtualAgentOutput(GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput $virtualAgentOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput
+         */
+        public function getVirtualAgentOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ConversationTurnUserInput
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ConversationTurn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserInput()
-    {
-    }
-    /**
-     * The virtual agent output.
-     *
-     * @param GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput $virtualAgentOutput
-     */
-    public function setVirtualAgentOutput(GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput $virtualAgentOutput)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput
-     */
-    public function getVirtualAgentOutput()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ConversationTurn extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ConversationTurn
     {
     }
 }

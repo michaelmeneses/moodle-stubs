@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlRdbms extends \Google\Collection
-{
-    protected $collection_key = 'mysqlDatabases';
-    protected $mysqlDatabasesType = MysqlDatabase::class;
-    protected $mysqlDatabasesDataType = 'array';
-    /**
-     * Mysql databases on the server
-     *
-     * @param MysqlDatabase[] $mysqlDatabases
-     */
-    public function setMysqlDatabases($mysqlDatabases)
+namespace Google\Service\Datastream {
+    class MysqlRdbms extends \Google\Collection
     {
+        protected $collection_key = 'mysqlDatabases';
+        protected $mysqlDatabasesType = MysqlDatabase::class;
+        protected $mysqlDatabasesDataType = 'array';
+        /**
+         * Mysql databases on the server
+         *
+         * @param MysqlDatabase[] $mysqlDatabases
+         */
+        public function setMysqlDatabases($mysqlDatabases)
+        {
+        }
+        /**
+         * @return MysqlDatabase[]
+         */
+        public function getMysqlDatabases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MysqlDatabase[]
+     * Runtime class alias of \Google\Service\Datastream\MysqlRdbms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMysqlDatabases()
+    class Google_Service_Datastream_MysqlRdbms extends \Google\Service\Datastream\MysqlRdbms
     {
     }
 }

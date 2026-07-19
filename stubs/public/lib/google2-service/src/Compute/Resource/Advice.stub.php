@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute\Resource;
-
-/**
- * The "advice" collection of methods.
- * Typical usage is:
- *  <code>
- *   $computeService = new Google\Service\Compute(...);
- *   $advice = $computeService->advice;
- *  </code>
- */
-class Advice extends \Google\Service\Resource
-{
+namespace Google\Service\Compute\Resource {
+    use Google\Service\Compute\CalendarModeAdviceRequest;
+    use Google\Service\Compute\CalendarModeAdviceResponse;
     /**
-     * Advise how, where and when to create the requested amount of instances with
-     * specified accelerators, within the specified time and location limits. The
-     * method recommends creating future reservations for the requested resources.
-     * (advice.calendarMode)
-     *
-     * @param string $project Project ID for this request.
-     * @param string $region Name of the region for this request.
-     * @param CalendarModeAdviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CalendarModeAdviceResponse
-     * @throws \Google\Service\Exception
+     * The "advice" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $computeService = new Google\Service\Compute(...);
+     *   $advice = $computeService->advice;
+     *  </code>
      */
-    public function calendarMode($project, $region, CalendarModeAdviceRequest $postBody, $optParams = [])
+    class Advice extends \Google\Service\Resource
+    {
+        /**
+         * Advise how, where and when to create the requested amount of instances with
+         * specified accelerators, within the specified time and location limits. The
+         * method recommends creating future reservations for the requested resources.
+         * (advice.calendarMode)
+         *
+         * @param string $project Project ID for this request.
+         * @param string $region Name of the region for this request.
+         * @param CalendarModeAdviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CalendarModeAdviceResponse
+         * @throws \Google\Service\Exception
+         */
+        public function calendarMode($project, $region, CalendarModeAdviceRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Compute\Resource\Advice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Compute_Resource_Advice extends \Google\Service\Compute\Resource\Advice
     {
     }
 }

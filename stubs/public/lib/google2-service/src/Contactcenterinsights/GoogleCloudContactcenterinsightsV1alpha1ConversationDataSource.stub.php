@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1ConversationDataSource extends \Google\Model
-{
-    protected $dialogflowSourceType = GoogleCloudContactcenterinsightsV1alpha1DialogflowSource::class;
-    protected $dialogflowSourceDataType = '';
-    protected $gcsSourceType = GoogleCloudContactcenterinsightsV1alpha1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Cloud Storage URI that points to a file that contains the conversation
-     * metadata.
-     *
-     * @var string
-     */
-    public $metadataUri;
-    /**
-     * The source when the conversation comes from Dialogflow.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1DialogflowSource $dialogflowSource
-     */
-    public function setDialogflowSource(GoogleCloudContactcenterinsightsV1alpha1DialogflowSource $dialogflowSource)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1ConversationDataSource extends \Google\Model
     {
+        protected $dialogflowSourceType = GoogleCloudContactcenterinsightsV1alpha1DialogflowSource::class;
+        protected $dialogflowSourceDataType = '';
+        protected $gcsSourceType = GoogleCloudContactcenterinsightsV1alpha1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Cloud Storage URI that points to a file that contains the conversation
+         * metadata.
+         *
+         * @var string
+         */
+        public $metadataUri;
+        /**
+         * The source when the conversation comes from Dialogflow.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1DialogflowSource $dialogflowSource
+         */
+        public function setDialogflowSource(GoogleCloudContactcenterinsightsV1alpha1DialogflowSource $dialogflowSource)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1DialogflowSource
+         */
+        public function getDialogflowSource()
+        {
+        }
+        /**
+         * A Cloud Storage location specification for the audio and transcript.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudContactcenterinsightsV1alpha1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * Cloud Storage URI that points to a file that contains the conversation
+         * metadata.
+         *
+         * @param string $metadataUri
+         */
+        public function setMetadataUri($metadataUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadataUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1DialogflowSource
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ConversationDataSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDialogflowSource()
-    {
-    }
-    /**
-     * A Cloud Storage location specification for the audio and transcript.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudContactcenterinsightsV1alpha1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * Cloud Storage URI that points to a file that contains the conversation
-     * metadata.
-     *
-     * @param string $metadataUri
-     */
-    public function setMetadataUri($metadataUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetadataUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1ConversationDataSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ConversationDataSource
     {
     }
 }

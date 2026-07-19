@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataBlobstore2Info extends \Google\Model
-{
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $blobGeneration;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $blobId;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $downloadExternalReadToken;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $downloadReadHandle;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $readToken;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $uploadMetadataContainer;
-    /**
-     * gdata
-     *
-     * @param string $blobGeneration
-     */
-    public function setBlobGeneration($blobGeneration)
+namespace Google\Service\YouTubeReporting {
+    class GdataBlobstore2Info extends \Google\Model
     {
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $blobGeneration;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $blobId;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $downloadExternalReadToken;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $downloadReadHandle;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $readToken;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $uploadMetadataContainer;
+        /**
+         * gdata
+         *
+         * @param string $blobGeneration
+         */
+        public function setBlobGeneration($blobGeneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobGeneration()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $blobId
+         */
+        public function setBlobId($blobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobId()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $downloadExternalReadToken
+         */
+        public function setDownloadExternalReadToken($downloadExternalReadToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadExternalReadToken()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $downloadReadHandle
+         */
+        public function setDownloadReadHandle($downloadReadHandle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadReadHandle()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $readToken
+         */
+        public function setReadToken($readToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadToken()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $uploadMetadataContainer
+         */
+        public function setUploadMetadataContainer($uploadMetadataContainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadMetadataContainer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataBlobstore2Info registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobGeneration()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $blobId
-     */
-    public function setBlobId($blobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBlobId()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $downloadExternalReadToken
-     */
-    public function setDownloadExternalReadToken($downloadExternalReadToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadExternalReadToken()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $downloadReadHandle
-     */
-    public function setDownloadReadHandle($downloadReadHandle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadReadHandle()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $readToken
-     */
-    public function setReadToken($readToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadToken()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $uploadMetadataContainer
-     */
-    public function setUploadMetadataContainer($uploadMetadataContainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadMetadataContainer()
+    class Google_Service_YouTubeReporting_GdataBlobstore2Info extends \Google\Service\YouTubeReporting\GdataBlobstore2Info
     {
     }
 }

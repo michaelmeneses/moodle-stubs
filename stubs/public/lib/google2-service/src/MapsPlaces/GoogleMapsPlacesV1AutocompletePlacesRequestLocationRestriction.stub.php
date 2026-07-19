@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction extends \Google\Model
-{
-    protected $circleType = GoogleMapsPlacesV1Circle::class;
-    protected $circleDataType = '';
-    protected $rectangleType = GoogleGeoTypeViewport::class;
-    protected $rectangleDataType = '';
-    /**
-     * A circle defined by a center point and radius.
-     *
-     * @param GoogleMapsPlacesV1Circle $circle
-     */
-    public function setCircle(GoogleMapsPlacesV1Circle $circle)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction extends \Google\Model
     {
+        protected $circleType = GoogleMapsPlacesV1Circle::class;
+        protected $circleDataType = '';
+        protected $rectangleType = GoogleGeoTypeViewport::class;
+        protected $rectangleDataType = '';
+        /**
+         * A circle defined by a center point and radius.
+         *
+         * @param GoogleMapsPlacesV1Circle $circle
+         */
+        public function setCircle(GoogleMapsPlacesV1Circle $circle)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Circle
+         */
+        public function getCircle()
+        {
+        }
+        /**
+         * A viewport defined by a northeast and a southwest corner.
+         *
+         * @param GoogleGeoTypeViewport $rectangle
+         */
+        public function setRectangle(GoogleGeoTypeViewport $rectangle)
+        {
+        }
+        /**
+         * @return GoogleGeoTypeViewport
+         */
+        public function getRectangle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1Circle
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCircle()
-    {
-    }
-    /**
-     * A viewport defined by a northeast and a southwest corner.
-     *
-     * @param GoogleGeoTypeViewport $rectangle
-     */
-    public function setRectangle(GoogleGeoTypeViewport $rectangle)
-    {
-    }
-    /**
-     * @return GoogleGeoTypeViewport
-     */
-    public function getRectangle()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesRequestLocationRestriction
     {
     }
 }

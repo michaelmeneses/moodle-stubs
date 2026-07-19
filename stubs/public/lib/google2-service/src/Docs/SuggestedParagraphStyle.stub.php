@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedParagraphStyle extends \Google\Model
-{
-    protected $paragraphStyleType = ParagraphStyle::class;
-    protected $paragraphStyleDataType = '';
-    protected $paragraphStyleSuggestionStateType = ParagraphStyleSuggestionState::class;
-    protected $paragraphStyleSuggestionStateDataType = '';
-    /**
-     * A ParagraphStyle that only includes the changes made in this suggestion.
-     * This can be used along with the paragraph_style_suggestion_state to see
-     * which fields have changed and their new values.
-     *
-     * @param ParagraphStyle $paragraphStyle
-     */
-    public function setParagraphStyle(ParagraphStyle $paragraphStyle)
+namespace Google\Service\Docs {
+    class SuggestedParagraphStyle extends \Google\Model
     {
+        protected $paragraphStyleType = ParagraphStyle::class;
+        protected $paragraphStyleDataType = '';
+        protected $paragraphStyleSuggestionStateType = ParagraphStyleSuggestionState::class;
+        protected $paragraphStyleSuggestionStateDataType = '';
+        /**
+         * A ParagraphStyle that only includes the changes made in this suggestion.
+         * This can be used along with the paragraph_style_suggestion_state to see
+         * which fields have changed and their new values.
+         *
+         * @param ParagraphStyle $paragraphStyle
+         */
+        public function setParagraphStyle(ParagraphStyle $paragraphStyle)
+        {
+        }
+        /**
+         * @return ParagraphStyle
+         */
+        public function getParagraphStyle()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base ParagraphStyle have
+         * been changed in this suggestion.
+         *
+         * @param ParagraphStyleSuggestionState $paragraphStyleSuggestionState
+         */
+        public function setParagraphStyleSuggestionState(ParagraphStyleSuggestionState $paragraphStyleSuggestionState)
+        {
+        }
+        /**
+         * @return ParagraphStyleSuggestionState
+         */
+        public function getParagraphStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ParagraphStyle
+     * Runtime class alias of \Google\Service\Docs\SuggestedParagraphStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParagraphStyle()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base ParagraphStyle have
-     * been changed in this suggestion.
-     *
-     * @param ParagraphStyleSuggestionState $paragraphStyleSuggestionState
-     */
-    public function setParagraphStyleSuggestionState(ParagraphStyleSuggestionState $paragraphStyleSuggestionState)
-    {
-    }
-    /**
-     * @return ParagraphStyleSuggestionState
-     */
-    public function getParagraphStyleSuggestionState()
+    class Google_Service_Docs_SuggestedParagraphStyle extends \Google\Service\Docs\SuggestedParagraphStyle
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class GetWorkerStacktracesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sdks';
-    protected $sdksType = Sdk::class;
-    protected $sdksDataType = 'array';
-    /**
-     * Repeated as unified worker may have multiple SDK processes.
-     *
-     * @param Sdk[] $sdks
-     */
-    public function setSdks($sdks)
+namespace Google\Service\Dataflow {
+    class GetWorkerStacktracesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sdks';
+        protected $sdksType = Sdk::class;
+        protected $sdksDataType = 'array';
+        /**
+         * Repeated as unified worker may have multiple SDK processes.
+         *
+         * @param Sdk[] $sdks
+         */
+        public function setSdks($sdks)
+        {
+        }
+        /**
+         * @return Sdk[]
+         */
+        public function getSdks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Sdk[]
+     * Runtime class alias of \Google\Service\Dataflow\GetWorkerStacktracesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdks()
+    class Google_Service_Dataflow_GetWorkerStacktracesResponse extends \Google\Service\Dataflow\GetWorkerStacktracesResponse
     {
     }
 }

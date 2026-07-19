@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class RunQueryRequest extends \Google\Model
-{
-    protected $explainOptionsType = ExplainOptions::class;
-    protected $explainOptionsDataType = '';
-    protected $newTransactionType = TransactionOptions::class;
-    protected $newTransactionDataType = '';
-    /**
-     * Reads documents as they were at the given time. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @var string
-     */
-    public $readTime;
-    protected $structuredQueryType = StructuredQuery::class;
-    protected $structuredQueryDataType = '';
-    /**
-     * Run the query within an already active transaction. The value here is the
-     * opaque transaction ID to execute the query in.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * Optional. Explain options for the query. If set, additional query
-     * statistics will be returned. If not, only query results will be returned.
-     *
-     * @param ExplainOptions $explainOptions
-     */
-    public function setExplainOptions(ExplainOptions $explainOptions)
+namespace Google\Service\Firestore {
+    class RunQueryRequest extends \Google\Model
     {
+        protected $explainOptionsType = ExplainOptions::class;
+        protected $explainOptionsDataType = '';
+        protected $newTransactionType = TransactionOptions::class;
+        protected $newTransactionDataType = '';
+        /**
+         * Reads documents as they were at the given time. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @var string
+         */
+        public $readTime;
+        protected $structuredQueryType = StructuredQuery::class;
+        protected $structuredQueryDataType = '';
+        /**
+         * Run the query within an already active transaction. The value here is the
+         * opaque transaction ID to execute the query in.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * Optional. Explain options for the query. If set, additional query
+         * statistics will be returned. If not, only query results will be returned.
+         *
+         * @param ExplainOptions $explainOptions
+         */
+        public function setExplainOptions(ExplainOptions $explainOptions)
+        {
+        }
+        /**
+         * @return ExplainOptions
+         */
+        public function getExplainOptions()
+        {
+        }
+        /**
+         * Starts a new transaction and reads the documents. Defaults to a read-only
+         * transaction. The new transaction ID will be returned as the first response
+         * in the stream.
+         *
+         * @param TransactionOptions $newTransaction
+         */
+        public function setNewTransaction(TransactionOptions $newTransaction)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getNewTransaction()
+        {
+        }
+        /**
+         * Reads documents as they were at the given time. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * A structured query.
+         *
+         * @param StructuredQuery $structuredQuery
+         */
+        public function setStructuredQuery(StructuredQuery $structuredQuery)
+        {
+        }
+        /**
+         * @return StructuredQuery
+         */
+        public function getStructuredQuery()
+        {
+        }
+        /**
+         * Run the query within an already active transaction. The value here is the
+         * opaque transaction ID to execute the query in.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExplainOptions
+     * Runtime class alias of \Google\Service\Firestore\RunQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplainOptions()
-    {
-    }
-    /**
-     * Starts a new transaction and reads the documents. Defaults to a read-only
-     * transaction. The new transaction ID will be returned as the first response
-     * in the stream.
-     *
-     * @param TransactionOptions $newTransaction
-     */
-    public function setNewTransaction(TransactionOptions $newTransaction)
-    {
-    }
-    /**
-     * @return TransactionOptions
-     */
-    public function getNewTransaction()
-    {
-    }
-    /**
-     * Reads documents as they were at the given time. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * A structured query.
-     *
-     * @param StructuredQuery $structuredQuery
-     */
-    public function setStructuredQuery(StructuredQuery $structuredQuery)
-    {
-    }
-    /**
-     * @return StructuredQuery
-     */
-    public function getStructuredQuery()
-    {
-    }
-    /**
-     * Run the query within an already active transaction. The value here is the
-     * opaque transaction ID to execute the query in.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransaction()
+    class Google_Service_Firestore_RunQueryRequest extends \Google\Service\Firestore\RunQueryRequest
     {
     }
 }

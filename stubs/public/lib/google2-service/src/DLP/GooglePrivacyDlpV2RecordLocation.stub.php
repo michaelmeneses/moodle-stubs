@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RecordLocation extends \Google\Model
-{
-    protected $fieldIdType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldIdDataType = '';
-    protected $recordKeyType = GooglePrivacyDlpV2RecordKey::class;
-    protected $recordKeyDataType = '';
-    protected $tableLocationType = GooglePrivacyDlpV2TableLocation::class;
-    protected $tableLocationDataType = '';
-    /**
-     * Field id of the field containing the finding.
-     *
-     * @param GooglePrivacyDlpV2FieldId $fieldId
-     */
-    public function setFieldId(GooglePrivacyDlpV2FieldId $fieldId)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RecordLocation extends \Google\Model
     {
+        protected $fieldIdType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldIdDataType = '';
+        protected $recordKeyType = GooglePrivacyDlpV2RecordKey::class;
+        protected $recordKeyDataType = '';
+        protected $tableLocationType = GooglePrivacyDlpV2TableLocation::class;
+        protected $tableLocationDataType = '';
+        /**
+         * Field id of the field containing the finding.
+         *
+         * @param GooglePrivacyDlpV2FieldId $fieldId
+         */
+        public function setFieldId(GooglePrivacyDlpV2FieldId $fieldId)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Key of the finding.
+         *
+         * @param GooglePrivacyDlpV2RecordKey $recordKey
+         */
+        public function setRecordKey(GooglePrivacyDlpV2RecordKey $recordKey)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RecordKey
+         */
+        public function getRecordKey()
+        {
+        }
+        /**
+         * Location within a `ContentItem.Table`.
+         *
+         * @param GooglePrivacyDlpV2TableLocation $tableLocation
+         */
+        public function setTableLocation(GooglePrivacyDlpV2TableLocation $tableLocation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TableLocation
+         */
+        public function getTableLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RecordLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Key of the finding.
-     *
-     * @param GooglePrivacyDlpV2RecordKey $recordKey
-     */
-    public function setRecordKey(GooglePrivacyDlpV2RecordKey $recordKey)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RecordKey
-     */
-    public function getRecordKey()
-    {
-    }
-    /**
-     * Location within a `ContentItem.Table`.
-     *
-     * @param GooglePrivacyDlpV2TableLocation $tableLocation
-     */
-    public function setTableLocation(GooglePrivacyDlpV2TableLocation $tableLocation)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TableLocation
-     */
-    public function getTableLocation()
+    class Google_Service_DLP_GooglePrivacyDlpV2RecordLocation extends \Google\Service\DLP\GooglePrivacyDlpV2RecordLocation
     {
     }
 }

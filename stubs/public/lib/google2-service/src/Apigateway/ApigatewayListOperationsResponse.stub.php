@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayListOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $operationsType = ApigatewayOperation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * Unordered list. Unreachable resources. Populated when the request sets
-     * `ListOperationsRequest.return_partial_success` and reads across collections
-     * e.g. when attempting to list all resources across all supported locations.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigateway {
+    class ApigatewayListOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $operationsType = ApigatewayOperation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * Unordered list. Unreachable resources. Populated when the request sets
+         * `ListOperationsRequest.return_partial_success` and reads across collections
+         * e.g. when attempting to list all resources across all supported locations.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of operations that matches the specified filter in the request.
+         *
+         * @param ApigatewayOperation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return ApigatewayOperation[]
+         */
+        public function getOperations()
+        {
+        }
+        /**
+         * Unordered list. Unreachable resources. Populated when the request sets
+         * `ListOperationsRequest.return_partial_success` and reads across collections
+         * e.g. when attempting to list all resources across all supported locations.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayListOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of operations that matches the specified filter in the request.
-     *
-     * @param ApigatewayOperation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return ApigatewayOperation[]
-     */
-    public function getOperations()
-    {
-    }
-    /**
-     * Unordered list. Unreachable resources. Populated when the request sets
-     * `ListOperationsRequest.return_partial_success` and reads across collections
-     * e.g. when attempting to list all resources across all supported locations.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Apigateway_ApigatewayListOperationsResponse extends \Google\Service\Apigateway\ApigatewayListOperationsResponse
     {
     }
 }

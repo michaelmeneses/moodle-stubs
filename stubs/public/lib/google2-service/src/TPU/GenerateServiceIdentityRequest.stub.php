@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class GenerateServiceIdentityRequest extends \Google\Model
-{
+namespace Google\Service\TPU {
+    class GenerateServiceIdentityRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\TPU\GenerateServiceIdentityRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_TPU_GenerateServiceIdentityRequest extends \Google\Service\TPU\GenerateServiceIdentityRequest
+    {
+    }
 }

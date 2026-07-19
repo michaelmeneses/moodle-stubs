@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessFilterExpression extends \Google\Model
-{
-    protected $accessFilterType = GoogleAnalyticsAdminV1alphaAccessFilter::class;
-    protected $accessFilterDataType = '';
-    protected $andGroupType = GoogleAnalyticsAdminV1alphaAccessFilterExpressionList::class;
-    protected $andGroupDataType = '';
-    protected $notExpressionType = GoogleAnalyticsAdminV1alphaAccessFilterExpression::class;
-    protected $notExpressionDataType = '';
-    protected $orGroupType = GoogleAnalyticsAdminV1alphaAccessFilterExpressionList::class;
-    protected $orGroupDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessFilter
-     */
-    public function setAccessFilter(GoogleAnalyticsAdminV1alphaAccessFilter $accessFilter)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessFilterExpression extends \Google\Model
     {
+        protected $accessFilterType = GoogleAnalyticsAdminV1alphaAccessFilter::class;
+        protected $accessFilterDataType = '';
+        protected $andGroupType = GoogleAnalyticsAdminV1alphaAccessFilterExpressionList::class;
+        protected $andGroupDataType = '';
+        protected $notExpressionType = GoogleAnalyticsAdminV1alphaAccessFilterExpression::class;
+        protected $notExpressionDataType = '';
+        protected $orGroupType = GoogleAnalyticsAdminV1alphaAccessFilterExpressionList::class;
+        protected $orGroupDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessFilter
+         */
+        public function setAccessFilter(GoogleAnalyticsAdminV1alphaAccessFilter $accessFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessFilter
+         */
+        public function getAccessFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
+         */
+        public function setAndGroup(GoogleAnalyticsAdminV1alphaAccessFilterExpressionList $andGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
+         */
+        public function getAndGroup()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessFilterExpression
+         */
+        public function setNotExpression(GoogleAnalyticsAdminV1alphaAccessFilterExpression $notExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessFilterExpression
+         */
+        public function getNotExpression()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
+         */
+        public function setOrGroup(GoogleAnalyticsAdminV1alphaAccessFilterExpressionList $orGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
+         */
+        public function getOrGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccessFilter
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessFilterExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
-     */
-    public function setAndGroup(GoogleAnalyticsAdminV1alphaAccessFilterExpressionList $andGroup)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
-     */
-    public function getAndGroup()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessFilterExpression
-     */
-    public function setNotExpression(GoogleAnalyticsAdminV1alphaAccessFilterExpression $notExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessFilterExpression
-     */
-    public function getNotExpression()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
-     */
-    public function setOrGroup(GoogleAnalyticsAdminV1alphaAccessFilterExpressionList $orGroup)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessFilterExpressionList
-     */
-    public function getOrGroup()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessFilterExpression extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessFilterExpression
     {
     }
 }

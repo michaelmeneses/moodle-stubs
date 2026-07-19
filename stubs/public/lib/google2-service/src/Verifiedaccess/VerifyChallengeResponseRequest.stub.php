@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Verifiedaccess;
-
-class VerifyChallengeResponseRequest extends \Google\Model
-{
-    /**
-     * Required. The generated response to the challenge, the bytes representation
-     * of SignedData.
-     *
-     * @var string
-     */
-    public $challengeResponse;
-    /**
-     * Optional. Service can optionally provide identity information about the
-     * device or user associated with the key. For an EMK, this value is the
-     * enrolled domain. For an EUK, this value is the user's email address. If
-     * present, this value will be checked against contents of the response, and
-     * verification will fail if there is no match.
-     *
-     * @var string
-     */
-    public $expectedIdentity;
-    /**
-     * Required. The generated response to the challenge, the bytes representation
-     * of SignedData.
-     *
-     * @param string $challengeResponse
-     */
-    public function setChallengeResponse($challengeResponse)
+namespace Google\Service\Verifiedaccess {
+    class VerifyChallengeResponseRequest extends \Google\Model
     {
+        /**
+         * Required. The generated response to the challenge, the bytes representation
+         * of SignedData.
+         *
+         * @var string
+         */
+        public $challengeResponse;
+        /**
+         * Optional. Service can optionally provide identity information about the
+         * device or user associated with the key. For an EMK, this value is the
+         * enrolled domain. For an EUK, this value is the user's email address. If
+         * present, this value will be checked against contents of the response, and
+         * verification will fail if there is no match.
+         *
+         * @var string
+         */
+        public $expectedIdentity;
+        /**
+         * Required. The generated response to the challenge, the bytes representation
+         * of SignedData.
+         *
+         * @param string $challengeResponse
+         */
+        public function setChallengeResponse($challengeResponse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallengeResponse()
+        {
+        }
+        /**
+         * Optional. Service can optionally provide identity information about the
+         * device or user associated with the key. For an EMK, this value is the
+         * enrolled domain. For an EUK, this value is the user's email address. If
+         * present, this value will be checked against contents of the response, and
+         * verification will fail if there is no match.
+         *
+         * @param string $expectedIdentity
+         */
+        public function setExpectedIdentity($expectedIdentity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpectedIdentity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Verifiedaccess\VerifyChallengeResponseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChallengeResponse()
-    {
-    }
-    /**
-     * Optional. Service can optionally provide identity information about the
-     * device or user associated with the key. For an EMK, this value is the
-     * enrolled domain. For an EUK, this value is the user's email address. If
-     * present, this value will be checked against contents of the response, and
-     * verification will fail if there is no match.
-     *
-     * @param string $expectedIdentity
-     */
-    public function setExpectedIdentity($expectedIdentity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpectedIdentity()
+    class Google_Service_Verifiedaccess_VerifyChallengeResponseRequest extends \Google\Service\Verifiedaccess\VerifyChallengeResponseRequest
     {
     }
 }

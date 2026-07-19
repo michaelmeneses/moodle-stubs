@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SlackSourceSlackChannels extends \Google\Collection
-{
-    protected $collection_key = 'channels';
-    protected $apiKeyConfigType = GoogleCloudAiplatformV1ApiAuthApiKeyConfig::class;
-    protected $apiKeyConfigDataType = '';
-    protected $channelsType = GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel::class;
-    protected $channelsDataType = 'array';
-    /**
-     * Required. The SecretManager secret version resource name (e.g.
-     * projects/{project}/secrets/{secret}/versions/{version}) storing the Slack
-     * channel access token that has access to the slack channel IDs. See:
-     * https://api.slack.com/tutorials/tracks/getting-a-token.
-     *
-     * @param GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig
-     */
-    public function setApiKeyConfig(GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SlackSourceSlackChannels extends \Google\Collection
     {
+        protected $collection_key = 'channels';
+        protected $apiKeyConfigType = GoogleCloudAiplatformV1ApiAuthApiKeyConfig::class;
+        protected $apiKeyConfigDataType = '';
+        protected $channelsType = GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel::class;
+        protected $channelsDataType = 'array';
+        /**
+         * Required. The SecretManager secret version resource name (e.g.
+         * projects/{project}/secrets/{secret}/versions/{version}) storing the Slack
+         * channel access token that has access to the slack channel IDs. See:
+         * https://api.slack.com/tutorials/tracks/getting-a-token.
+         *
+         * @param GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig
+         */
+        public function setApiKeyConfig(GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ApiAuthApiKeyConfig
+         */
+        public function getApiKeyConfig()
+        {
+        }
+        /**
+         * Required. The Slack channel IDs.
+         *
+         * @param GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel[] $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel[]
+         */
+        public function getChannels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ApiAuthApiKeyConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SlackSourceSlackChannels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeyConfig()
-    {
-    }
-    /**
-     * Required. The Slack channel IDs.
-     *
-     * @param GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel[] $channels
-     */
-    public function setChannels($channels)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel[]
-     */
-    public function getChannels()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SlackSourceSlackChannels extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SlackSourceSlackChannels
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CreateDeidentifyTemplateRequest extends \Google\Model
-{
-    protected $deidentifyTemplateType = GooglePrivacyDlpV2DeidentifyTemplate::class;
-    protected $deidentifyTemplateDataType = '';
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * The template id can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @var string
-     */
-    public $templateId;
-    /**
-     * Required. The DeidentifyTemplate to create.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate
-     */
-    public function setDeidentifyTemplate(GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CreateDeidentifyTemplateRequest extends \Google\Model
     {
+        protected $deidentifyTemplateType = GooglePrivacyDlpV2DeidentifyTemplate::class;
+        protected $deidentifyTemplateDataType = '';
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * The template id can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @var string
+         */
+        public $templateId;
+        /**
+         * Required. The DeidentifyTemplate to create.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate
+         */
+        public function setDeidentifyTemplate(GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyTemplate
+         */
+        public function getDeidentifyTemplate()
+        {
+        }
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * The template id can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @param string $templateId
+         */
+        public function setTemplateId($templateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemplateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeidentifyTemplate
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CreateDeidentifyTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyTemplate()
-    {
-    }
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * The template id can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @param string $templateId
-     */
-    public function setTemplateId($templateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemplateId()
+    class Google_Service_DLP_GooglePrivacyDlpV2CreateDeidentifyTemplateRequest extends \Google\Service\DLP\GooglePrivacyDlpV2CreateDeidentifyTemplateRequest
     {
     }
 }

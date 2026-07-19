@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class FlightClassAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = FlightClass::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated FlightClass resource.
-     *
-     * @param FlightClass $resource
-     */
-    public function setResource(FlightClass $resource)
+namespace Google\Service\Walletobjects {
+    class FlightClassAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = FlightClass::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated FlightClass resource.
+         *
+         * @param FlightClass $resource
+         */
+        public function setResource(FlightClass $resource)
+        {
+        }
+        /**
+         * @return FlightClass
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FlightClass
+     * Runtime class alias of \Google\Service\Walletobjects\FlightClassAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_FlightClassAddMessageResponse extends \Google\Service\Walletobjects\FlightClassAddMessageResponse
     {
     }
 }

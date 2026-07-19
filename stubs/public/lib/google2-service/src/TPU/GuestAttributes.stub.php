@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class GuestAttributes extends \Google\Model
-{
-    /**
-     * The path to be queried. This can be the default namespace ('/') or a nested
-     * namespace ('/\/') or a specified key ('/\/\')
-     *
-     * @var string
-     */
-    public $queryPath;
-    protected $queryValueType = GuestAttributesValue::class;
-    protected $queryValueDataType = '';
-    /**
-     * The path to be queried. This can be the default namespace ('/') or a nested
-     * namespace ('/\/') or a specified key ('/\/\')
-     *
-     * @param string $queryPath
-     */
-    public function setQueryPath($queryPath)
+namespace Google\Service\TPU {
+    class GuestAttributes extends \Google\Model
     {
+        /**
+         * The path to be queried. This can be the default namespace ('/') or a nested
+         * namespace ('/\/') or a specified key ('/\/\')
+         *
+         * @var string
+         */
+        public $queryPath;
+        protected $queryValueType = GuestAttributesValue::class;
+        protected $queryValueDataType = '';
+        /**
+         * The path to be queried. This can be the default namespace ('/') or a nested
+         * namespace ('/\/') or a specified key ('/\/\')
+         *
+         * @param string $queryPath
+         */
+        public function setQueryPath($queryPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryPath()
+        {
+        }
+        /**
+         * The value of the requested queried path.
+         *
+         * @param GuestAttributesValue $queryValue
+         */
+        public function setQueryValue(GuestAttributesValue $queryValue)
+        {
+        }
+        /**
+         * @return GuestAttributesValue
+         */
+        public function getQueryValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\GuestAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryPath()
-    {
-    }
-    /**
-     * The value of the requested queried path.
-     *
-     * @param GuestAttributesValue $queryValue
-     */
-    public function setQueryValue(GuestAttributesValue $queryValue)
-    {
-    }
-    /**
-     * @return GuestAttributesValue
-     */
-    public function getQueryValue()
+    class Google_Service_TPU_GuestAttributes extends \Google\Service\TPU\GuestAttributes
     {
     }
 }

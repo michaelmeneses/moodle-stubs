@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class AgentStatusConfigValue extends \Google\Model
-{
-    /**
-     * Output only. Whether the configuration value is the default value or
-     * overridden.
-     *
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * Output only. The name of the configuration value.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The value of the configuration value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. Whether the configuration value is the default value or
-     * overridden.
-     *
-     * @param bool $isDefault
-     */
-    public function setIsDefault($isDefault)
+namespace Google\Service\WorkloadManager {
+    class AgentStatusConfigValue extends \Google\Model
     {
+        /**
+         * Output only. Whether the configuration value is the default value or
+         * overridden.
+         *
+         * @var bool
+         */
+        public $isDefault;
+        /**
+         * Output only. The name of the configuration value.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The value of the configuration value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. Whether the configuration value is the default value or
+         * overridden.
+         *
+         * @param bool $isDefault
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * Output only. The name of the configuration value.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The value of the configuration value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\WorkloadManager\AgentStatusConfigValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * Output only. The name of the configuration value.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The value of the configuration value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_WorkloadManager_AgentStatusConfigValue extends \Google\Service\WorkloadManager\AgentStatusConfigValue
     {
     }
 }

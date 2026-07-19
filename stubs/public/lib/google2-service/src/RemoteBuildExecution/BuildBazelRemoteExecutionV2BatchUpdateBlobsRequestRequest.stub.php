@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest extends \Google\Model
-{
-    public $data;
-    protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $digestDataType = '';
-    public function setData($data)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest extends \Google\Model
     {
+        public $data;
+        protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $digestDataType = '';
+        public function setData($data)
+        {
+        }
+        public function getData()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getDigest()
+        {
+        }
     }
-    public function getData()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getDigest()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest
     {
     }
 }

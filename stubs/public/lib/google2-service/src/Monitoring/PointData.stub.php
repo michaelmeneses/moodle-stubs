@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class PointData extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $timeIntervalType = TimeInterval::class;
-    protected $timeIntervalDataType = '';
-    protected $valuesType = TypedValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * The time interval associated with the point.
-     *
-     * @param TimeInterval $timeInterval
-     */
-    public function setTimeInterval(TimeInterval $timeInterval)
+namespace Google\Service\Monitoring {
+    class PointData extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $timeIntervalType = TimeInterval::class;
+        protected $timeIntervalDataType = '';
+        protected $valuesType = TypedValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * The time interval associated with the point.
+         *
+         * @param TimeInterval $timeInterval
+         */
+        public function setTimeInterval(TimeInterval $timeInterval)
+        {
+        }
+        /**
+         * @return TimeInterval
+         */
+        public function getTimeInterval()
+        {
+        }
+        /**
+         * The values that make up the point.
+         *
+         * @param TypedValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return TypedValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeInterval
+     * Runtime class alias of \Google\Service\Monitoring\PointData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeInterval()
-    {
-    }
-    /**
-     * The values that make up the point.
-     *
-     * @param TypedValue[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return TypedValue[]
-     */
-    public function getValues()
+    class Google_Service_Monitoring_PointData extends \Google\Service\Monitoring\PointData
     {
     }
 }

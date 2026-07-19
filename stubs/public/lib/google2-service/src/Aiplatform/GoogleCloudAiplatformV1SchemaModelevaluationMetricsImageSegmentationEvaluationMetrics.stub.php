@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $confidenceMetricsEntriesType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetricsConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * Metrics for each confidenceThreshold in
-     * 0.00,0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 Precision-recall curve can be
-     * derived from it.
-     *
-     * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetricsConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $confidenceMetricsEntriesType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetricsConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * Metrics for each confidenceThreshold in
+         * 0.00,0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 Precision-recall curve can be
+         * derived from it.
+         *
+         * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetricsConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetricsConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetricsConfidenceMetricsEntry[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetricsEntries()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageSegmentationEvaluationMetrics
     {
     }
 }

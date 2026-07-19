@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1KeyValueEntry extends \Google\Model
-{
-    /**
-     * Resource URI that can be used to identify the scope of the key value map
-     * entries.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Data or payload that is being retrieved and associated with the
-     * unique key.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Resource URI that can be used to identify the scope of the key value map
-     * entries.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1KeyValueEntry extends \Google\Model
     {
+        /**
+         * Resource URI that can be used to identify the scope of the key value map
+         * entries.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Data or payload that is being retrieved and associated with the
+         * unique key.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Resource URI that can be used to identify the scope of the key value map
+         * entries.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Data or payload that is being retrieved and associated with the
+         * unique key.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1KeyValueEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Data or payload that is being retrieved and associated with the
-     * unique key.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Apigee_GoogleCloudApigeeV1KeyValueEntry extends \Google\Service\Apigee\GoogleCloudApigeeV1KeyValueEntry
     {
     }
 }

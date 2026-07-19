@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1OutputFieldSpec extends \Google\Model
-{
-    /**
-     * Field type is unspecified.
-     */
-    public const FIELD_TYPE_FIELD_TYPE_UNSPECIFIED = 'FIELD_TYPE_UNSPECIFIED';
-    /**
-     * Arbitrary content field type.
-     */
-    public const FIELD_TYPE_CONTENT = 'CONTENT';
-    /**
-     * Text field type.
-     */
-    public const FIELD_TYPE_TEXT = 'TEXT';
-    /**
-     * Image field type.
-     */
-    public const FIELD_TYPE_IMAGE = 'IMAGE';
-    /**
-     * Audio field type.
-     */
-    public const FIELD_TYPE_AUDIO = 'AUDIO';
-    /**
-     * Required. The name of the output field.
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * Optional. The data type of the field. Defaults to CONTENT if not set.
-     *
-     * @var string
-     */
-    public $fieldType;
-    /**
-     * Optional. Optional, but recommended. Additional guidance specific to this
-     * field to provide targeted instructions for the LLM to generate the content
-     * of a single output field. While the LLM can sometimes infer content from
-     * the field name, providing explicit guidance is preferred.
-     *
-     * @var string
-     */
-    public $guidance;
-    /**
-     * Required. The name of the output field.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1OutputFieldSpec extends \Google\Model
     {
+        /**
+         * Field type is unspecified.
+         */
+        public const FIELD_TYPE_FIELD_TYPE_UNSPECIFIED = 'FIELD_TYPE_UNSPECIFIED';
+        /**
+         * Arbitrary content field type.
+         */
+        public const FIELD_TYPE_CONTENT = 'CONTENT';
+        /**
+         * Text field type.
+         */
+        public const FIELD_TYPE_TEXT = 'TEXT';
+        /**
+         * Image field type.
+         */
+        public const FIELD_TYPE_IMAGE = 'IMAGE';
+        /**
+         * Audio field type.
+         */
+        public const FIELD_TYPE_AUDIO = 'AUDIO';
+        /**
+         * Required. The name of the output field.
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * Optional. The data type of the field. Defaults to CONTENT if not set.
+         *
+         * @var string
+         */
+        public $fieldType;
+        /**
+         * Optional. Optional, but recommended. Additional guidance specific to this
+         * field to provide targeted instructions for the LLM to generate the content
+         * of a single output field. While the LLM can sometimes infer content from
+         * the field name, providing explicit guidance is preferred.
+         *
+         * @var string
+         */
+        public $guidance;
+        /**
+         * Required. The name of the output field.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * Optional. The data type of the field. Defaults to CONTENT if not set.
+         *
+         * Accepted values: FIELD_TYPE_UNSPECIFIED, CONTENT, TEXT, IMAGE, AUDIO
+         *
+         * @param self::FIELD_TYPE_* $fieldType
+         */
+        public function setFieldType($fieldType)
+        {
+        }
+        /**
+         * @return self::FIELD_TYPE_*
+         */
+        public function getFieldType()
+        {
+        }
+        /**
+         * Optional. Optional, but recommended. Additional guidance specific to this
+         * field to provide targeted instructions for the LLM to generate the content
+         * of a single output field. While the LLM can sometimes infer content from
+         * the field name, providing explicit guidance is preferred.
+         *
+         * @param string $guidance
+         */
+        public function setGuidance($guidance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGuidance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1OutputFieldSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldName()
-    {
-    }
-    /**
-     * Optional. The data type of the field. Defaults to CONTENT if not set.
-     *
-     * Accepted values: FIELD_TYPE_UNSPECIFIED, CONTENT, TEXT, IMAGE, AUDIO
-     *
-     * @param self::FIELD_TYPE_* $fieldType
-     */
-    public function setFieldType($fieldType)
-    {
-    }
-    /**
-     * @return self::FIELD_TYPE_*
-     */
-    public function getFieldType()
-    {
-    }
-    /**
-     * Optional. Optional, but recommended. Additional guidance specific to this
-     * field to provide targeted instructions for the LLM to generate the content
-     * of a single output field. While the LLM can sometimes infer content from
-     * the field name, providing explicit guidance is preferred.
-     *
-     * @param string $guidance
-     */
-    public function setGuidance($guidance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGuidance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1OutputFieldSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1OutputFieldSpec
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2HTTPHeader extends \Google\Model
-{
-    /**
-     * Required. The header field name
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The header field value
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The header field name
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2HTTPHeader extends \Google\Model
     {
+        /**
+         * Required. The header field name
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The header field value
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The header field name
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The header field value
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2HTTPHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The header field value
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudRun_GoogleCloudRunV2HTTPHeader extends \Google\Service\CloudRun\GoogleCloudRunV2HTTPHeader
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanExecutionStatus extends \Google\Model
-{
-    /**
-     * Optional. The time when the DataScanJob execution was created.
-     *
-     * @var string
-     */
-    public $latestJobCreateTime;
-    /**
-     * Optional. The time when the latest DataScanJob ended.
-     *
-     * @var string
-     */
-    public $latestJobEndTime;
-    /**
-     * Optional. The time when the latest DataScanJob started.
-     *
-     * @var string
-     */
-    public $latestJobStartTime;
-    /**
-     * Optional. The time when the DataScanJob execution was created.
-     *
-     * @param string $latestJobCreateTime
-     */
-    public function setLatestJobCreateTime($latestJobCreateTime)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanExecutionStatus extends \Google\Model
     {
+        /**
+         * Optional. The time when the DataScanJob execution was created.
+         *
+         * @var string
+         */
+        public $latestJobCreateTime;
+        /**
+         * Optional. The time when the latest DataScanJob ended.
+         *
+         * @var string
+         */
+        public $latestJobEndTime;
+        /**
+         * Optional. The time when the latest DataScanJob started.
+         *
+         * @var string
+         */
+        public $latestJobStartTime;
+        /**
+         * Optional. The time when the DataScanJob execution was created.
+         *
+         * @param string $latestJobCreateTime
+         */
+        public function setLatestJobCreateTime($latestJobCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestJobCreateTime()
+        {
+        }
+        /**
+         * Optional. The time when the latest DataScanJob ended.
+         *
+         * @param string $latestJobEndTime
+         */
+        public function setLatestJobEndTime($latestJobEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestJobEndTime()
+        {
+        }
+        /**
+         * Optional. The time when the latest DataScanJob started.
+         *
+         * @param string $latestJobStartTime
+         */
+        public function setLatestJobStartTime($latestJobStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestJobStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanExecutionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatestJobCreateTime()
-    {
-    }
-    /**
-     * Optional. The time when the latest DataScanJob ended.
-     *
-     * @param string $latestJobEndTime
-     */
-    public function setLatestJobEndTime($latestJobEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestJobEndTime()
-    {
-    }
-    /**
-     * Optional. The time when the latest DataScanJob started.
-     *
-     * @param string $latestJobStartTime
-     */
-    public function setLatestJobStartTime($latestJobStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestJobStartTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanExecutionStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanExecutionStatus
     {
     }
 }

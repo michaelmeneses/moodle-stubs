@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class CreateVersionResponse extends \Google\Model
-{
-    /**
-     * The unique identifier of the schema created.
-     *
-     * @var int
-     */
-    public $id;
-    /**
-     * The unique identifier of the schema created.
-     *
-     * @param int $id
-     */
-    public function setId($id)
+namespace Google\Service\ManagedKafka {
+    class CreateVersionResponse extends \Google\Model
     {
+        /**
+         * The unique identifier of the schema created.
+         *
+         * @var int
+         */
+        public $id;
+        /**
+         * The unique identifier of the schema created.
+         *
+         * @param int $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ManagedKafka\CreateVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_ManagedKafka_CreateVersionResponse extends \Google\Service\ManagedKafka\CreateVersionResponse
     {
     }
 }

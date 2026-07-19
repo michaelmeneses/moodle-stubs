@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class PayloadOptions extends \Google\Model
-{
-    /**
-     * Optional. If `include_resource` is set to `true`, the list of fields to
-     * include in the event payload. Separate fields with a comma. For example, to
-     * include a Google Chat message's sender and create time, enter
-     * `message.sender,message.createTime`. If omitted, the payload includes all
-     * fields for the resource. If you specify a field that doesn't exist for the
-     * resource, the system ignores the field.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    /**
-     * Optional. Whether the event payload includes data about the resource that
-     * changed. For example, for an event where a Google Chat message was created,
-     * whether the payload contains data about the [`Message`](https://developers.
-     * google.com/chat/api/reference/rest/v1/spaces.messages) resource. If false,
-     * the event payload only includes the name of the changed resource.
-     *
-     * @var bool
-     */
-    public $includeResource;
-    /**
-     * Optional. If `include_resource` is set to `true`, the list of fields to
-     * include in the event payload. Separate fields with a comma. For example, to
-     * include a Google Chat message's sender and create time, enter
-     * `message.sender,message.createTime`. If omitted, the payload includes all
-     * fields for the resource. If you specify a field that doesn't exist for the
-     * resource, the system ignores the field.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
+namespace Google\Service\WorkspaceEvents {
+    class PayloadOptions extends \Google\Model
     {
+        /**
+         * Optional. If `include_resource` is set to `true`, the list of fields to
+         * include in the event payload. Separate fields with a comma. For example, to
+         * include a Google Chat message's sender and create time, enter
+         * `message.sender,message.createTime`. If omitted, the payload includes all
+         * fields for the resource. If you specify a field that doesn't exist for the
+         * resource, the system ignores the field.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        /**
+         * Optional. Whether the event payload includes data about the resource that
+         * changed. For example, for an event where a Google Chat message was created,
+         * whether the payload contains data about the [`Message`](https://developers.
+         * google.com/chat/api/reference/rest/v1/spaces.messages) resource. If false,
+         * the event payload only includes the name of the changed resource.
+         *
+         * @var bool
+         */
+        public $includeResource;
+        /**
+         * Optional. If `include_resource` is set to `true`, the list of fields to
+         * include in the event payload. Separate fields with a comma. For example, to
+         * include a Google Chat message's sender and create time, enter
+         * `message.sender,message.createTime`. If omitted, the payload includes all
+         * fields for the resource. If you specify a field that doesn't exist for the
+         * resource, the system ignores the field.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * Optional. Whether the event payload includes data about the resource that
+         * changed. For example, for an event where a Google Chat message was created,
+         * whether the payload contains data about the [`Message`](https://developers.
+         * google.com/chat/api/reference/rest/v1/spaces.messages) resource. If false,
+         * the event payload only includes the name of the changed resource.
+         *
+         * @param bool $includeResource
+         */
+        public function setIncludeResource($includeResource)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\PayloadOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * Optional. Whether the event payload includes data about the resource that
-     * changed. For example, for an event where a Google Chat message was created,
-     * whether the payload contains data about the [`Message`](https://developers.
-     * google.com/chat/api/reference/rest/v1/spaces.messages) resource. If false,
-     * the event payload only includes the name of the changed resource.
-     *
-     * @param bool $includeResource
-     */
-    public function setIncludeResource($includeResource)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeResource()
+    class Google_Service_WorkspaceEvents_PayloadOptions extends \Google\Service\WorkspaceEvents\PayloadOptions
     {
     }
 }

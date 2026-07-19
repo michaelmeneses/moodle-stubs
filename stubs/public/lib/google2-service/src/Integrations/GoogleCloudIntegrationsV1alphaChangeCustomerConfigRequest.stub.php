@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest extends \Google\Model
-{
-    protected $customerConfigType = GoogleCloudIntegrationsV1alphaCustomerConfig::class;
-    protected $customerConfigDataType = '';
-    /**
-     * Required. Field mask specifying the fields in the customer config that have
-     * been modified and must be updated. If absent or empty, no fields are
-     * updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Optional. The customer configuration to be updated.
-     *
-     * @param GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig
-     */
-    public function setCustomerConfig(GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest extends \Google\Model
     {
+        protected $customerConfigType = GoogleCloudIntegrationsV1alphaCustomerConfig::class;
+        protected $customerConfigDataType = '';
+        /**
+         * Required. Field mask specifying the fields in the customer config that have
+         * been modified and must be updated. If absent or empty, no fields are
+         * updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Optional. The customer configuration to be updated.
+         *
+         * @param GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig
+         */
+        public function setCustomerConfig(GoogleCloudIntegrationsV1alphaCustomerConfig $customerConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaCustomerConfig
+         */
+        public function getCustomerConfig()
+        {
+        }
+        /**
+         * Required. Field mask specifying the fields in the customer config that have
+         * been modified and must be updated. If absent or empty, no fields are
+         * updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaCustomerConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerConfig()
-    {
-    }
-    /**
-     * Required. Field mask specifying the fields in the customer config that have
-     * been modified and must be updated. If absent or empty, no fields are
-     * updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest
     {
     }
 }

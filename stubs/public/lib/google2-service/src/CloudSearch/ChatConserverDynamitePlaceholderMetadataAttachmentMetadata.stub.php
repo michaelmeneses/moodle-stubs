@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ChatConserverDynamitePlaceholderMetadataAttachmentMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $filename;
-    /**
-     * @param string
-     */
-    public function setFilename($filename)
+namespace Google\Service\CloudSearch {
+    class ChatConserverDynamitePlaceholderMetadataAttachmentMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $filename;
+        /**
+         * @param string
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ChatConserverDynamitePlaceholderMetadataAttachmentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilename()
+    class Google_Service_CloudSearch_ChatConserverDynamitePlaceholderMetadataAttachmentMetadata extends \Google\Service\CloudSearch\ChatConserverDynamitePlaceholderMetadataAttachmentMetadata
     {
     }
 }

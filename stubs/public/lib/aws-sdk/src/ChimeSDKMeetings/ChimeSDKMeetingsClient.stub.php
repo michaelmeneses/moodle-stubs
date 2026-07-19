@@ -8,6 +8,7 @@
  */
 namespace Aws\ChimeSDKMeetings;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Chime SDK Meetings** service.
  * @method \Aws\Result batchCreateAttendee(array $args = [])

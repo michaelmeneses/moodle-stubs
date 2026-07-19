@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class RerunConnectivityTestRequest extends \Google\Model
-{
+namespace Google\Service\NetworkManagement {
+    class RerunConnectivityTestRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetworkManagement\RerunConnectivityTestRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetworkManagement_RerunConnectivityTestRequest extends \Google\Service\NetworkManagement\RerunConnectivityTestRequest
+    {
+    }
 }

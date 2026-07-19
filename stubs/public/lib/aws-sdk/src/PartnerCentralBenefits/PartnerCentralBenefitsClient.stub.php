@@ -8,6 +8,7 @@
  */
 namespace Aws\PartnerCentralBenefits;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Partner Central Benefits API** service.
  * @method \Aws\Result amendBenefitApplication(array $args = [])

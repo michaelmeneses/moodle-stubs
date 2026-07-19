@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class ReportFiles extends \Google\Model
-{
-    /**
-     * The size of this report file in bytes.
-     *
-     * @var string
-     */
-    public $byteCount;
-    /**
-     * Use this url to download the report file.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The size of this report file in bytes.
-     *
-     * @param string $byteCount
-     */
-    public function setByteCount($byteCount)
+namespace Google\Service\Doubleclicksearch {
+    class ReportFiles extends \Google\Model
     {
+        /**
+         * The size of this report file in bytes.
+         *
+         * @var string
+         */
+        public $byteCount;
+        /**
+         * Use this url to download the report file.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The size of this report file in bytes.
+         *
+         * @param string $byteCount
+         */
+        public function setByteCount($byteCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getByteCount()
+        {
+        }
+        /**
+         * Use this url to download the report file.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\ReportFiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByteCount()
-    {
-    }
-    /**
-     * Use this url to download the report file.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Doubleclicksearch_ReportFiles extends \Google\Service\Doubleclicksearch\ReportFiles
     {
     }
 }

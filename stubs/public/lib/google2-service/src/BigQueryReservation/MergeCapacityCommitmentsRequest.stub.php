@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class MergeCapacityCommitmentsRequest extends \Google\Collection
-{
-    protected $collection_key = 'capacityCommitmentIds';
-    /**
-     * Optional. The optional resulting capacity commitment ID. Capacity
-     * commitment name will be generated automatically if this field is empty.
-     * This field must only contain lower case alphanumeric characters or dashes.
-     * The first and last character cannot be a dash. Max length is 64 characters.
-     *
-     * @var string
-     */
-    public $capacityCommitmentId;
-    /**
-     * Ids of capacity commitments to merge. These capacity commitments must exist
-     * under admin project and location specified in the parent. ID is the last
-     * portion of capacity commitment name e.g., 'abc' for
-     * projects/myproject/locations/US/capacityCommitments/abc
-     *
-     * @var string[]
-     */
-    public $capacityCommitmentIds;
-    /**
-     * Optional. The optional resulting capacity commitment ID. Capacity
-     * commitment name will be generated automatically if this field is empty.
-     * This field must only contain lower case alphanumeric characters or dashes.
-     * The first and last character cannot be a dash. Max length is 64 characters.
-     *
-     * @param string $capacityCommitmentId
-     */
-    public function setCapacityCommitmentId($capacityCommitmentId)
+namespace Google\Service\BigQueryReservation {
+    class MergeCapacityCommitmentsRequest extends \Google\Collection
     {
+        protected $collection_key = 'capacityCommitmentIds';
+        /**
+         * Optional. The optional resulting capacity commitment ID. Capacity
+         * commitment name will be generated automatically if this field is empty.
+         * This field must only contain lower case alphanumeric characters or dashes.
+         * The first and last character cannot be a dash. Max length is 64 characters.
+         *
+         * @var string
+         */
+        public $capacityCommitmentId;
+        /**
+         * Ids of capacity commitments to merge. These capacity commitments must exist
+         * under admin project and location specified in the parent. ID is the last
+         * portion of capacity commitment name e.g., 'abc' for
+         * projects/myproject/locations/US/capacityCommitments/abc
+         *
+         * @var string[]
+         */
+        public $capacityCommitmentIds;
+        /**
+         * Optional. The optional resulting capacity commitment ID. Capacity
+         * commitment name will be generated automatically if this field is empty.
+         * This field must only contain lower case alphanumeric characters or dashes.
+         * The first and last character cannot be a dash. Max length is 64 characters.
+         *
+         * @param string $capacityCommitmentId
+         */
+        public function setCapacityCommitmentId($capacityCommitmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCapacityCommitmentId()
+        {
+        }
+        /**
+         * Ids of capacity commitments to merge. These capacity commitments must exist
+         * under admin project and location specified in the parent. ID is the last
+         * portion of capacity commitment name e.g., 'abc' for
+         * projects/myproject/locations/US/capacityCommitments/abc
+         *
+         * @param string[] $capacityCommitmentIds
+         */
+        public function setCapacityCommitmentIds($capacityCommitmentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCapacityCommitmentIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\MergeCapacityCommitmentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacityCommitmentId()
-    {
-    }
-    /**
-     * Ids of capacity commitments to merge. These capacity commitments must exist
-     * under admin project and location specified in the parent. ID is the last
-     * portion of capacity commitment name e.g., 'abc' for
-     * projects/myproject/locations/US/capacityCommitments/abc
-     *
-     * @param string[] $capacityCommitmentIds
-     */
-    public function setCapacityCommitmentIds($capacityCommitmentIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCapacityCommitmentIds()
+    class Google_Service_BigQueryReservation_MergeCapacityCommitmentsRequest extends \Google\Service\BigQueryReservation\MergeCapacityCommitmentsRequest
     {
     }
 }

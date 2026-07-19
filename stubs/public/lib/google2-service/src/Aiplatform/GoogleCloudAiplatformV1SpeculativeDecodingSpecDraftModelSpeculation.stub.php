@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation extends \Google\Model
-{
-    /**
-     * Required. The resource name of the draft model.
-     *
-     * @var string
-     */
-    public $draftModel;
-    /**
-     * Required. The resource name of the draft model.
-     *
-     * @param string $draftModel
-     */
-    public function setDraftModel($draftModel)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation extends \Google\Model
     {
+        /**
+         * Required. The resource name of the draft model.
+         *
+         * @var string
+         */
+        public $draftModel;
+        /**
+         * Required. The resource name of the draft model.
+         *
+         * @param string $draftModel
+         */
+        public function setDraftModel($draftModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDraftModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDraftModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation
     {
     }
 }

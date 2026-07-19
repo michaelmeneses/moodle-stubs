@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class TestIamPermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * The set of permissions to check for the `resource`. Permissions with
-     * wildcards (such as `*` or `storage.*`) are not allowed. For more
-     * information see [IAM
-     * Overview](https://cloud.google.com/iam/docs/overview#permissions).
-     *
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * The set of permissions to check for the `resource`. Permissions with
-     * wildcards (such as `*` or `storage.*`) are not allowed. For more
-     * information see [IAM
-     * Overview](https://cloud.google.com/iam/docs/overview#permissions).
-     *
-     * @param string[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\AccessContextManager {
+    class TestIamPermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * The set of permissions to check for the `resource`. Permissions with
+         * wildcards (such as `*` or `storage.*`) are not allowed. For more
+         * information see [IAM
+         * Overview](https://cloud.google.com/iam/docs/overview#permissions).
+         *
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * The set of permissions to check for the `resource`. Permissions with
+         * wildcards (such as `*` or `storage.*`) are not allowed. For more
+         * information see [IAM
+         * Overview](https://cloud.google.com/iam/docs/overview#permissions).
+         *
+         * @param string[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AccessContextManager\TestIamPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_AccessContextManager_TestIamPermissionsRequest extends \Google\Service\AccessContextManager\TestIamPermissionsRequest
     {
     }
 }

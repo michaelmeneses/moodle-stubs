@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class PolyFile extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $contentType;
-    /**
-     * @var string
-     */
-    public $relativePath;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
+namespace Google\Service\PolyService {
+    class PolyFile extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $contentType;
+        /**
+         * @var string
+         */
+        public $relativePath;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRelativePath($relativePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativePath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolyService\PolyFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRelativePath($relativePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativePath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_PolyService_PolyFile extends \Google\Service\PolyService\PolyFile
     {
     }
 }

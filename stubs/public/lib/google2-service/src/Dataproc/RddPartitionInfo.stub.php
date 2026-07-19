@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RddPartitionInfo extends \Google\Collection
-{
-    protected $collection_key = 'executors';
-    /**
-     * @var string
-     */
-    public $blockName;
-    /**
-     * @var string
-     */
-    public $diskUsed;
-    /**
-     * @var string[]
-     */
-    public $executors;
-    /**
-     * @var string
-     */
-    public $memoryUsed;
-    /**
-     * @var string
-     */
-    public $storageLevel;
-    /**
-     * @param string $blockName
-     */
-    public function setBlockName($blockName)
+namespace Google\Service\Dataproc {
+    class RddPartitionInfo extends \Google\Collection
     {
+        protected $collection_key = 'executors';
+        /**
+         * @var string
+         */
+        public $blockName;
+        /**
+         * @var string
+         */
+        public $diskUsed;
+        /**
+         * @var string[]
+         */
+        public $executors;
+        /**
+         * @var string
+         */
+        public $memoryUsed;
+        /**
+         * @var string
+         */
+        public $storageLevel;
+        /**
+         * @param string $blockName
+         */
+        public function setBlockName($blockName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlockName()
+        {
+        }
+        /**
+         * @param string $diskUsed
+         */
+        public function setDiskUsed($diskUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskUsed()
+        {
+        }
+        /**
+         * @param string[] $executors
+         */
+        public function setExecutors($executors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExecutors()
+        {
+        }
+        /**
+         * @param string $memoryUsed
+         */
+        public function setMemoryUsed($memoryUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryUsed()
+        {
+        }
+        /**
+         * @param string $storageLevel
+         */
+        public function setStorageLevel($storageLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\RddPartitionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockName()
-    {
-    }
-    /**
-     * @param string $diskUsed
-     */
-    public function setDiskUsed($diskUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskUsed()
-    {
-    }
-    /**
-     * @param string[] $executors
-     */
-    public function setExecutors($executors)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExecutors()
-    {
-    }
-    /**
-     * @param string $memoryUsed
-     */
-    public function setMemoryUsed($memoryUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryUsed()
-    {
-    }
-    /**
-     * @param string $storageLevel
-     */
-    public function setStorageLevel($storageLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageLevel()
+    class Google_Service_Dataproc_RddPartitionInfo extends \Google\Service\Dataproc\RddPartitionInfo
     {
     }
 }

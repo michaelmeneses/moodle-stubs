@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ExecutionError extends \Google\Collection
-{
-    protected $collection_key = 'scriptStackTraceElements';
-    /**
-     * The error message thrown by Apps Script, usually localized into the user's
-     * language.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The error type, for example `TypeError` or `ReferenceError`. If the error
-     * type is unavailable, this field is not included.
-     *
-     * @var string
-     */
-    public $errorType;
-    protected $scriptStackTraceElementsType = ScriptStackTraceElement::class;
-    protected $scriptStackTraceElementsDataType = 'array';
-    /**
-     * The error message thrown by Apps Script, usually localized into the user's
-     * language.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\Script {
+    class ExecutionError extends \Google\Collection
     {
+        protected $collection_key = 'scriptStackTraceElements';
+        /**
+         * The error message thrown by Apps Script, usually localized into the user's
+         * language.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The error type, for example `TypeError` or `ReferenceError`. If the error
+         * type is unavailable, this field is not included.
+         *
+         * @var string
+         */
+        public $errorType;
+        protected $scriptStackTraceElementsType = ScriptStackTraceElement::class;
+        protected $scriptStackTraceElementsDataType = 'array';
+        /**
+         * The error message thrown by Apps Script, usually localized into the user's
+         * language.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * The error type, for example `TypeError` or `ReferenceError`. If the error
+         * type is unavailable, this field is not included.
+         *
+         * @param string $errorType
+         */
+        public function setErrorType($errorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorType()
+        {
+        }
+        /**
+         * An array of objects that provide a stack trace through the script to show
+         * where the execution failed, with the deepest call first.
+         *
+         * @param ScriptStackTraceElement[] $scriptStackTraceElements
+         */
+        public function setScriptStackTraceElements($scriptStackTraceElements)
+        {
+        }
+        /**
+         * @return ScriptStackTraceElement[]
+         */
+        public function getScriptStackTraceElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\ExecutionError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * The error type, for example `TypeError` or `ReferenceError`. If the error
-     * type is unavailable, this field is not included.
-     *
-     * @param string $errorType
-     */
-    public function setErrorType($errorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorType()
-    {
-    }
-    /**
-     * An array of objects that provide a stack trace through the script to show
-     * where the execution failed, with the deepest call first.
-     *
-     * @param ScriptStackTraceElement[] $scriptStackTraceElements
-     */
-    public function setScriptStackTraceElements($scriptStackTraceElements)
-    {
-    }
-    /**
-     * @return ScriptStackTraceElement[]
-     */
-    public function getScriptStackTraceElements()
+    class Google_Service_Script_ExecutionError extends \Google\Service\Script\ExecutionError
     {
     }
 }

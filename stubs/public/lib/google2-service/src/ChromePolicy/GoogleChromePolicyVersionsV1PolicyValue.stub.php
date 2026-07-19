@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicyValue extends \Google\Model
-{
-    /**
-     * The fully qualified name of the policy schema associated with this policy.
-     *
-     * @var string
-     */
-    public $policySchema;
-    /**
-     * The value of the policy that is compatible with the schema that it is
-     * associated with.
-     *
-     * @var array[]
-     */
-    public $value;
-    /**
-     * The fully qualified name of the policy schema associated with this policy.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicyValue extends \Google\Model
     {
+        /**
+         * The fully qualified name of the policy schema associated with this policy.
+         *
+         * @var string
+         */
+        public $policySchema;
+        /**
+         * The value of the policy that is compatible with the schema that it is
+         * associated with.
+         *
+         * @var array[]
+         */
+        public $value;
+        /**
+         * The fully qualified name of the policy schema associated with this policy.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * The value of the policy that is compatible with the schema that it is
+         * associated with.
+         *
+         * @param array[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * The value of the policy that is compatible with the schema that it is
-     * associated with.
-     *
-     * @param array[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicyValue extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyValue
     {
     }
 }

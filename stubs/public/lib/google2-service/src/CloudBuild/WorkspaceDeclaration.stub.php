@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class WorkspaceDeclaration extends \Google\Model
-{
-    /**
-     * Description is a human readable description of this volume.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * MountPath overrides the directory that the volume will be made available
-     * at.
-     *
-     * @var string
-     */
-    public $mountPath;
-    /**
-     * Name is the name by which you can bind the volume at runtime.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Optional marks a Workspace as not being required in TaskRuns. By
-     * default this field is false and so declared workspaces are required.
-     *
-     * @var bool
-     */
-    public $optional;
-    /**
-     * ReadOnly dictates whether a mounted volume is writable.
-     *
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * Description is a human readable description of this volume.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudBuild {
+    class WorkspaceDeclaration extends \Google\Model
     {
+        /**
+         * Description is a human readable description of this volume.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * MountPath overrides the directory that the volume will be made available
+         * at.
+         *
+         * @var string
+         */
+        public $mountPath;
+        /**
+         * Name is the name by which you can bind the volume at runtime.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Optional marks a Workspace as not being required in TaskRuns. By
+         * default this field is false and so declared workspaces are required.
+         *
+         * @var bool
+         */
+        public $optional;
+        /**
+         * ReadOnly dictates whether a mounted volume is writable.
+         *
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * Description is a human readable description of this volume.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * MountPath overrides the directory that the volume will be made available
+         * at.
+         *
+         * @param string $mountPath
+         */
+        public function setMountPath($mountPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPath()
+        {
+        }
+        /**
+         * Name is the name by which you can bind the volume at runtime.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Optional marks a Workspace as not being required in TaskRuns. By
+         * default this field is false and so declared workspaces are required.
+         *
+         * @param bool $optional
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
+        /**
+         * ReadOnly dictates whether a mounted volume is writable.
+         *
+         * @param bool $readOnly
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\WorkspaceDeclaration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * MountPath overrides the directory that the volume will be made available
-     * at.
-     *
-     * @param string $mountPath
-     */
-    public function setMountPath($mountPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMountPath()
-    {
-    }
-    /**
-     * Name is the name by which you can bind the volume at runtime.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Optional marks a Workspace as not being required in TaskRuns. By
-     * default this field is false and so declared workspaces are required.
-     *
-     * @param bool $optional
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
-    {
-    }
-    /**
-     * ReadOnly dictates whether a mounted volume is writable.
-     *
-     * @param bool $readOnly
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
+    class Google_Service_CloudBuild_WorkspaceDeclaration extends \Google\Service\CloudBuild\WorkspaceDeclaration
     {
     }
 }

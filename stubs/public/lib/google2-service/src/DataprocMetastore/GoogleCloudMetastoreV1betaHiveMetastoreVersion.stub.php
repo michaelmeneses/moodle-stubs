@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1betaHiveMetastoreVersion extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param bool
-     */
-    public function setIsDefault($isDefault)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1betaHiveMetastoreVersion extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $isDefault;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param bool
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1betaHiveMetastoreVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1betaHiveMetastoreVersion extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1betaHiveMetastoreVersion
     {
     }
 }

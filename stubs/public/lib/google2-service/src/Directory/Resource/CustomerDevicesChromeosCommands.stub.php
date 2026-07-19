@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "commands" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $commands = $adminService->customer_devices_chromeos_commands;
- *  </code>
- */
-class CustomerDevicesChromeosCommands extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\DirectoryChromeosdevicesCommand;
     /**
-     * Gets command data a specific command issued to the device. (commands.get)
-     *
-     * @param string $customerId Immutable. ID of the Google Workspace account.
-     * @param string $deviceId Immutable. ID of Chrome OS Device.
-     * @param string $commandId Immutable. ID of Chrome OS Device Command.
-     * @param array $optParams Optional parameters.
-     * @return DirectoryChromeosdevicesCommand
-     * @throws \Google\Service\Exception
+     * The "commands" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $commands = $adminService->customer_devices_chromeos_commands;
+     *  </code>
      */
-    public function get($customerId, $deviceId, $commandId, $optParams = [])
+    class CustomerDevicesChromeosCommands extends \Google\Service\Resource
+    {
+        /**
+         * Gets command data a specific command issued to the device. (commands.get)
+         *
+         * @param string $customerId Immutable. ID of the Google Workspace account.
+         * @param string $deviceId Immutable. ID of Chrome OS Device.
+         * @param string $commandId Immutable. ID of Chrome OS Device Command.
+         * @param array $optParams Optional parameters.
+         * @return DirectoryChromeosdevicesCommand
+         * @throws \Google\Service\Exception
+         */
+        public function get($customerId, $deviceId, $commandId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\CustomerDevicesChromeosCommands registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_CustomerDevicesChromeosCommands extends \Google\Service\Directory\Resource\CustomerDevicesChromeosCommands
     {
     }
 }

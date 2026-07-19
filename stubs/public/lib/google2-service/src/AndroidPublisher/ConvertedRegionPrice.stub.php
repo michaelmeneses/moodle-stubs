@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ConvertedRegionPrice extends \Google\Model
-{
-    protected $priceType = Money::class;
-    protected $priceDataType = '';
-    /**
-     * The region code of the region.
-     *
-     * @var string
-     */
-    public $regionCode;
-    protected $taxAmountType = Money::class;
-    protected $taxAmountDataType = '';
-    /**
-     * The converted price tax inclusive.
-     *
-     * @param Money $price
-     */
-    public function setPrice(Money $price)
+namespace Google\Service\AndroidPublisher {
+    class ConvertedRegionPrice extends \Google\Model
     {
+        protected $priceType = Money::class;
+        protected $priceDataType = '';
+        /**
+         * The region code of the region.
+         *
+         * @var string
+         */
+        public $regionCode;
+        protected $taxAmountType = Money::class;
+        protected $taxAmountDataType = '';
+        /**
+         * The converted price tax inclusive.
+         *
+         * @param Money $price
+         */
+        public function setPrice(Money $price)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * The region code of the region.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * The tax amount of the converted price.
+         *
+         * @param Money $taxAmount
+         */
+        public function setTaxAmount(Money $taxAmount)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getTaxAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\ConvertedRegionPrice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrice()
-    {
-    }
-    /**
-     * The region code of the region.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * The tax amount of the converted price.
-     *
-     * @param Money $taxAmount
-     */
-    public function setTaxAmount(Money $taxAmount)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getTaxAmount()
+    class Google_Service_AndroidPublisher_ConvertedRegionPrice extends \Google\Service\AndroidPublisher\ConvertedRegionPrice
     {
     }
 }

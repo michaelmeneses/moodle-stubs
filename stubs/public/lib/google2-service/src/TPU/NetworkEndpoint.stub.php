@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class NetworkEndpoint extends \Google\Model
-{
-    protected $accessConfigType = AccessConfig::class;
-    protected $accessConfigDataType = '';
-    /**
-     * The internal IP address of this network endpoint.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The port of this network endpoint.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * The access config for the TPU worker.
-     *
-     * @param AccessConfig $accessConfig
-     */
-    public function setAccessConfig(AccessConfig $accessConfig)
+namespace Google\Service\TPU {
+    class NetworkEndpoint extends \Google\Model
     {
+        protected $accessConfigType = AccessConfig::class;
+        protected $accessConfigDataType = '';
+        /**
+         * The internal IP address of this network endpoint.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The port of this network endpoint.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * The access config for the TPU worker.
+         *
+         * @param AccessConfig $accessConfig
+         */
+        public function setAccessConfig(AccessConfig $accessConfig)
+        {
+        }
+        /**
+         * @return AccessConfig
+         */
+        public function getAccessConfig()
+        {
+        }
+        /**
+         * The internal IP address of this network endpoint.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The port of this network endpoint.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessConfig
+     * Runtime class alias of \Google\Service\TPU\NetworkEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessConfig()
-    {
-    }
-    /**
-     * The internal IP address of this network endpoint.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The port of this network endpoint.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_TPU_NetworkEndpoint extends \Google\Service\TPU\NetworkEndpoint
     {
     }
 }

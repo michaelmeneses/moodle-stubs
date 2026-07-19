@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SourceInstanceParams extends \Google\Collection
-{
-    protected $collection_key = 'diskConfigs';
-    protected $diskConfigsType = DiskInstantiationConfig::class;
-    protected $diskConfigsDataType = 'array';
-    /**
-     * Attached disks configuration. If not provided, defaults are applied: For
-     * boot disk and any other R/W disks, the source images for each disk will be
-     * used. For read-only disks, they will be attached in read-only mode. Local
-     * SSD disks will be created as blank volumes.
-     *
-     * @param DiskInstantiationConfig[] $diskConfigs
-     */
-    public function setDiskConfigs($diskConfigs)
+namespace Google\Service\Compute {
+    class SourceInstanceParams extends \Google\Collection
     {
+        protected $collection_key = 'diskConfigs';
+        protected $diskConfigsType = DiskInstantiationConfig::class;
+        protected $diskConfigsDataType = 'array';
+        /**
+         * Attached disks configuration. If not provided, defaults are applied: For
+         * boot disk and any other R/W disks, the source images for each disk will be
+         * used. For read-only disks, they will be attached in read-only mode. Local
+         * SSD disks will be created as blank volumes.
+         *
+         * @param DiskInstantiationConfig[] $diskConfigs
+         */
+        public function setDiskConfigs($diskConfigs)
+        {
+        }
+        /**
+         * @return DiskInstantiationConfig[]
+         */
+        public function getDiskConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskInstantiationConfig[]
+     * Runtime class alias of \Google\Service\Compute\SourceInstanceParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskConfigs()
+    class Google_Service_Compute_SourceInstanceParams extends \Google\Service\Compute\SourceInstanceParams
     {
     }
 }

@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class BlogList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $blogUserInfosType = BlogUserInfo::class;
-    protected $blogUserInfosDataType = 'array';
-    protected $itemsType = Blog::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of this entity. Always blogger#blogList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Admin level list of blog per-user information.
-     *
-     * @param BlogUserInfo[] $blogUserInfos
-     */
-    public function setBlogUserInfos($blogUserInfos)
+namespace Google\Service\Blogger {
+    class BlogList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $blogUserInfosType = BlogUserInfo::class;
+        protected $blogUserInfosDataType = 'array';
+        protected $itemsType = Blog::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of this entity. Always blogger#blogList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Admin level list of blog per-user information.
+         *
+         * @param BlogUserInfo[] $blogUserInfos
+         */
+        public function setBlogUserInfos($blogUserInfos)
+        {
+        }
+        /**
+         * @return BlogUserInfo[]
+         */
+        public function getBlogUserInfos()
+        {
+        }
+        /**
+         * The list of Blogs this user has Authorship or Admin rights over.
+         *
+         * @param Blog[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Blog[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#blogList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlogUserInfo[]
+     * Runtime class alias of \Google\Service\Blogger\BlogList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlogUserInfos()
-    {
-    }
-    /**
-     * The list of Blogs this user has Authorship or Admin rights over.
-     *
-     * @param Blog[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Blog[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#blogList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Blogger_BlogList extends \Google\Service\Blogger\BlogList
     {
     }
 }

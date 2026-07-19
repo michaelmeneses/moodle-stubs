@@ -21,41 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $projects = $aiplatformService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1CacheConfig;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Gets a GenAI cache config. (projects.getCacheConfig)
-     *
-     * @param string $name Required. Name of the cache config. Format: -
-     * `projects/{project}/cacheConfig`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1CacheConfig
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $projects = $aiplatformService->projects;
+     *  </code>
      */
-    public function getCacheConfig($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Gets a GenAI cache config. (projects.getCacheConfig)
+         *
+         * @param string $name Required. Name of the cache config. Format: -
+         * `projects/{project}/cacheConfig`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1CacheConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getCacheConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates a cache config. (projects.updateCacheConfig)
+         *
+         * @param string $name Identifier. Name of the cache config. Format: -
+         * `projects/{project}/cacheConfig`.
+         * @param GoogleCloudAiplatformV1CacheConfig $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function updateCacheConfig($name, GoogleCloudAiplatformV1CacheConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates a cache config. (projects.updateCacheConfig)
-     *
-     * @param string $name Identifier. Name of the cache config. Format: -
-     * `projects/{project}/cacheConfig`.
-     * @param GoogleCloudAiplatformV1CacheConfig $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateCacheConfig($name, GoogleCloudAiplatformV1CacheConfig $postBody, $optParams = [])
+    class Google_Service_Aiplatform_Resource_Projects extends \Google\Service\Aiplatform\Resource\Projects
     {
     }
 }

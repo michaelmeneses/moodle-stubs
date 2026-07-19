@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class AndroidInstrumentationTest extends \Google\Collection
-{
-    /**
-     * Default value: the server will choose the mode. Currently implies that the
-     * test will run without the orchestrator. In the future, all instrumentation
-     * tests will be run with the orchestrator. Using the orchestrator is highly
-     * encouraged because of all the benefits it offers.
-     */
-    public const ORCHESTRATOR_OPTION_ORCHESTRATOR_OPTION_UNSPECIFIED = 'ORCHESTRATOR_OPTION_UNSPECIFIED';
-    /**
-     * Run test using orchestrator. ** Only compatible with AndroidJUnitRunner
-     * version 1.1 or higher! ** Recommended.
-     */
-    public const ORCHESTRATOR_OPTION_USE_ORCHESTRATOR = 'USE_ORCHESTRATOR';
-    /**
-     * Run test without using orchestrator.
-     */
-    public const ORCHESTRATOR_OPTION_DO_NOT_USE_ORCHESTRATOR = 'DO_NOT_USE_ORCHESTRATOR';
-    protected $collection_key = 'testTargets';
-    protected $appApkType = FileReference::class;
-    protected $appApkDataType = '';
-    protected $appBundleType = AppBundle::class;
-    protected $appBundleDataType = '';
-    /**
-     * The java package for the application under test. The default value is
-     * determined by examining the application's manifest.
-     *
-     * @var string
-     */
-    public $appPackageId;
-    /**
-     * The option of whether running each test within its own invocation of
-     * instrumentation with Android Test Orchestrator or not. ** Orchestrator is
-     * only compatible with AndroidJUnitRunner version 1.1 or higher! **
-     * Orchestrator offers the following benefits: - No shared state - Crashes are
-     * isolated - Logs are scoped per test See for more information about Android
-     * Test Orchestrator. If not set, the test will be run without the
-     * orchestrator.
-     *
-     * @var string
-     */
-    public $orchestratorOption;
-    protected $shardingOptionType = ShardingOption::class;
-    protected $shardingOptionDataType = '';
-    protected $testApkType = FileReference::class;
-    protected $testApkDataType = '';
-    /**
-     * The java package for the test to be executed. The default value is
-     * determined by examining the application's manifest.
-     *
-     * @var string
-     */
-    public $testPackageId;
-    /**
-     * The InstrumentationTestRunner class. The default value is determined by
-     * examining the application's manifest.
-     *
-     * @var string
-     */
-    public $testRunnerClass;
-    /**
-     * Each target must be fully qualified with the package name or class name, in
-     * one of these formats: - "package package_name" - "class
-     * package_name.class_name" - "class package_name.class_name#method_name" If
-     * empty, all targets in the module will be run.
-     *
-     * @var string[]
-     */
-    public $testTargets;
-    /**
-     * The APK for the application under test.
-     *
-     * @param FileReference $appApk
-     */
-    public function setAppApk(FileReference $appApk)
+namespace Google\Service\Testing {
+    class AndroidInstrumentationTest extends \Google\Collection
     {
+        /**
+         * Default value: the server will choose the mode. Currently implies that the
+         * test will run without the orchestrator. In the future, all instrumentation
+         * tests will be run with the orchestrator. Using the orchestrator is highly
+         * encouraged because of all the benefits it offers.
+         */
+        public const ORCHESTRATOR_OPTION_ORCHESTRATOR_OPTION_UNSPECIFIED = 'ORCHESTRATOR_OPTION_UNSPECIFIED';
+        /**
+         * Run test using orchestrator. ** Only compatible with AndroidJUnitRunner
+         * version 1.1 or higher! ** Recommended.
+         */
+        public const ORCHESTRATOR_OPTION_USE_ORCHESTRATOR = 'USE_ORCHESTRATOR';
+        /**
+         * Run test without using orchestrator.
+         */
+        public const ORCHESTRATOR_OPTION_DO_NOT_USE_ORCHESTRATOR = 'DO_NOT_USE_ORCHESTRATOR';
+        protected $collection_key = 'testTargets';
+        protected $appApkType = FileReference::class;
+        protected $appApkDataType = '';
+        protected $appBundleType = AppBundle::class;
+        protected $appBundleDataType = '';
+        /**
+         * The java package for the application under test. The default value is
+         * determined by examining the application's manifest.
+         *
+         * @var string
+         */
+        public $appPackageId;
+        /**
+         * The option of whether running each test within its own invocation of
+         * instrumentation with Android Test Orchestrator or not. ** Orchestrator is
+         * only compatible with AndroidJUnitRunner version 1.1 or higher! **
+         * Orchestrator offers the following benefits: - No shared state - Crashes are
+         * isolated - Logs are scoped per test See for more information about Android
+         * Test Orchestrator. If not set, the test will be run without the
+         * orchestrator.
+         *
+         * @var string
+         */
+        public $orchestratorOption;
+        protected $shardingOptionType = ShardingOption::class;
+        protected $shardingOptionDataType = '';
+        protected $testApkType = FileReference::class;
+        protected $testApkDataType = '';
+        /**
+         * The java package for the test to be executed. The default value is
+         * determined by examining the application's manifest.
+         *
+         * @var string
+         */
+        public $testPackageId;
+        /**
+         * The InstrumentationTestRunner class. The default value is determined by
+         * examining the application's manifest.
+         *
+         * @var string
+         */
+        public $testRunnerClass;
+        /**
+         * Each target must be fully qualified with the package name or class name, in
+         * one of these formats: - "package package_name" - "class
+         * package_name.class_name" - "class package_name.class_name#method_name" If
+         * empty, all targets in the module will be run.
+         *
+         * @var string[]
+         */
+        public $testTargets;
+        /**
+         * The APK for the application under test.
+         *
+         * @param FileReference $appApk
+         */
+        public function setAppApk(FileReference $appApk)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getAppApk()
+        {
+        }
+        /**
+         * A multi-apk app bundle for the application under test.
+         *
+         * @param AppBundle $appBundle
+         */
+        public function setAppBundle(AppBundle $appBundle)
+        {
+        }
+        /**
+         * @return AppBundle
+         */
+        public function getAppBundle()
+        {
+        }
+        /**
+         * The java package for the application under test. The default value is
+         * determined by examining the application's manifest.
+         *
+         * @param string $appPackageId
+         */
+        public function setAppPackageId($appPackageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppPackageId()
+        {
+        }
+        /**
+         * The option of whether running each test within its own invocation of
+         * instrumentation with Android Test Orchestrator or not. ** Orchestrator is
+         * only compatible with AndroidJUnitRunner version 1.1 or higher! **
+         * Orchestrator offers the following benefits: - No shared state - Crashes are
+         * isolated - Logs are scoped per test See for more information about Android
+         * Test Orchestrator. If not set, the test will be run without the
+         * orchestrator.
+         *
+         * Accepted values: ORCHESTRATOR_OPTION_UNSPECIFIED, USE_ORCHESTRATOR,
+         * DO_NOT_USE_ORCHESTRATOR
+         *
+         * @param self::ORCHESTRATOR_OPTION_* $orchestratorOption
+         */
+        public function setOrchestratorOption($orchestratorOption)
+        {
+        }
+        /**
+         * @return self::ORCHESTRATOR_OPTION_*
+         */
+        public function getOrchestratorOption()
+        {
+        }
+        /**
+         * The option to run tests in multiple shards in parallel.
+         *
+         * @param ShardingOption $shardingOption
+         */
+        public function setShardingOption(ShardingOption $shardingOption)
+        {
+        }
+        /**
+         * @return ShardingOption
+         */
+        public function getShardingOption()
+        {
+        }
+        /**
+         * Required. The APK containing the test code to be executed.
+         *
+         * @param FileReference $testApk
+         */
+        public function setTestApk(FileReference $testApk)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getTestApk()
+        {
+        }
+        /**
+         * The java package for the test to be executed. The default value is
+         * determined by examining the application's manifest.
+         *
+         * @param string $testPackageId
+         */
+        public function setTestPackageId($testPackageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestPackageId()
+        {
+        }
+        /**
+         * The InstrumentationTestRunner class. The default value is determined by
+         * examining the application's manifest.
+         *
+         * @param string $testRunnerClass
+         */
+        public function setTestRunnerClass($testRunnerClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestRunnerClass()
+        {
+        }
+        /**
+         * Each target must be fully qualified with the package name or class name, in
+         * one of these formats: - "package package_name" - "class
+         * package_name.class_name" - "class package_name.class_name#method_name" If
+         * empty, all targets in the module will be run.
+         *
+         * @param string[] $testTargets
+         */
+        public function setTestTargets($testTargets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTestTargets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference
+     * Runtime class alias of \Google\Service\Testing\AndroidInstrumentationTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppApk()
-    {
-    }
-    /**
-     * A multi-apk app bundle for the application under test.
-     *
-     * @param AppBundle $appBundle
-     */
-    public function setAppBundle(AppBundle $appBundle)
-    {
-    }
-    /**
-     * @return AppBundle
-     */
-    public function getAppBundle()
-    {
-    }
-    /**
-     * The java package for the application under test. The default value is
-     * determined by examining the application's manifest.
-     *
-     * @param string $appPackageId
-     */
-    public function setAppPackageId($appPackageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppPackageId()
-    {
-    }
-    /**
-     * The option of whether running each test within its own invocation of
-     * instrumentation with Android Test Orchestrator or not. ** Orchestrator is
-     * only compatible with AndroidJUnitRunner version 1.1 or higher! **
-     * Orchestrator offers the following benefits: - No shared state - Crashes are
-     * isolated - Logs are scoped per test See for more information about Android
-     * Test Orchestrator. If not set, the test will be run without the
-     * orchestrator.
-     *
-     * Accepted values: ORCHESTRATOR_OPTION_UNSPECIFIED, USE_ORCHESTRATOR,
-     * DO_NOT_USE_ORCHESTRATOR
-     *
-     * @param self::ORCHESTRATOR_OPTION_* $orchestratorOption
-     */
-    public function setOrchestratorOption($orchestratorOption)
-    {
-    }
-    /**
-     * @return self::ORCHESTRATOR_OPTION_*
-     */
-    public function getOrchestratorOption()
-    {
-    }
-    /**
-     * The option to run tests in multiple shards in parallel.
-     *
-     * @param ShardingOption $shardingOption
-     */
-    public function setShardingOption(ShardingOption $shardingOption)
-    {
-    }
-    /**
-     * @return ShardingOption
-     */
-    public function getShardingOption()
-    {
-    }
-    /**
-     * Required. The APK containing the test code to be executed.
-     *
-     * @param FileReference $testApk
-     */
-    public function setTestApk(FileReference $testApk)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getTestApk()
-    {
-    }
-    /**
-     * The java package for the test to be executed. The default value is
-     * determined by examining the application's manifest.
-     *
-     * @param string $testPackageId
-     */
-    public function setTestPackageId($testPackageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestPackageId()
-    {
-    }
-    /**
-     * The InstrumentationTestRunner class. The default value is determined by
-     * examining the application's manifest.
-     *
-     * @param string $testRunnerClass
-     */
-    public function setTestRunnerClass($testRunnerClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestRunnerClass()
-    {
-    }
-    /**
-     * Each target must be fully qualified with the package name or class name, in
-     * one of these formats: - "package package_name" - "class
-     * package_name.class_name" - "class package_name.class_name#method_name" If
-     * empty, all targets in the module will be run.
-     *
-     * @param string[] $testTargets
-     */
-    public function setTestTargets($testTargets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTestTargets()
+    class Google_Service_Testing_AndroidInstrumentationTest extends \Google\Service\Testing\AndroidInstrumentationTest
     {
     }
 }

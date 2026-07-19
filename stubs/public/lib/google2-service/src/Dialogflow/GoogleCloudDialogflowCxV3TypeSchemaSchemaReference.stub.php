@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TypeSchemaSchemaReference extends \Google\Model
-{
-    /**
-     * The name of the schema.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * The tool that contains this schema definition. Format:
-     * `projects//locations//agents//tools/`.
-     *
-     * @var string
-     */
-    public $tool;
-    /**
-     * The name of the schema.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TypeSchemaSchemaReference extends \Google\Model
     {
+        /**
+         * The name of the schema.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * The tool that contains this schema definition. Format:
+         * `projects//locations//agents//tools/`.
+         *
+         * @var string
+         */
+        public $tool;
+        /**
+         * The name of the schema.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * The tool that contains this schema definition. Format:
+         * `projects//locations//agents//tools/`.
+         *
+         * @param string $tool
+         */
+        public function setTool($tool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TypeSchemaSchemaReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema()
-    {
-    }
-    /**
-     * The tool that contains this schema definition. Format:
-     * `projects//locations//agents//tools/`.
-     *
-     * @param string $tool
-     */
-    public function setTool($tool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTool()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TypeSchemaSchemaReference extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TypeSchemaSchemaReference
     {
     }
 }

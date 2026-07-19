@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ImageFallbackLocation extends \Google\Model
-{
-    protected $globalProcessingType = GooglePrivacyDlpV2GlobalProcessing::class;
-    protected $globalProcessingDataType = '';
-    protected $multiRegionProcessingType = GooglePrivacyDlpV2MultiRegionProcessing::class;
-    protected $multiRegionProcessingDataType = '';
-    /**
-     * Processing occurs in the global region.
-     *
-     * @param GooglePrivacyDlpV2GlobalProcessing $globalProcessing
-     */
-    public function setGlobalProcessing(GooglePrivacyDlpV2GlobalProcessing $globalProcessing)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ImageFallbackLocation extends \Google\Model
     {
+        protected $globalProcessingType = GooglePrivacyDlpV2GlobalProcessing::class;
+        protected $globalProcessingDataType = '';
+        protected $multiRegionProcessingType = GooglePrivacyDlpV2MultiRegionProcessing::class;
+        protected $multiRegionProcessingDataType = '';
+        /**
+         * Processing occurs in the global region.
+         *
+         * @param GooglePrivacyDlpV2GlobalProcessing $globalProcessing
+         */
+        public function setGlobalProcessing(GooglePrivacyDlpV2GlobalProcessing $globalProcessing)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2GlobalProcessing
+         */
+        public function getGlobalProcessing()
+        {
+        }
+        /**
+         * Processing occurs in a multi-region that contains the current region if
+         * available.
+         *
+         * @param GooglePrivacyDlpV2MultiRegionProcessing $multiRegionProcessing
+         */
+        public function setMultiRegionProcessing(GooglePrivacyDlpV2MultiRegionProcessing $multiRegionProcessing)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2MultiRegionProcessing
+         */
+        public function getMultiRegionProcessing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2GlobalProcessing
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ImageFallbackLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGlobalProcessing()
-    {
-    }
-    /**
-     * Processing occurs in a multi-region that contains the current region if
-     * available.
-     *
-     * @param GooglePrivacyDlpV2MultiRegionProcessing $multiRegionProcessing
-     */
-    public function setMultiRegionProcessing(GooglePrivacyDlpV2MultiRegionProcessing $multiRegionProcessing)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2MultiRegionProcessing
-     */
-    public function getMultiRegionProcessing()
+    class Google_Service_DLP_GooglePrivacyDlpV2ImageFallbackLocation extends \Google\Service\DLP\GooglePrivacyDlpV2ImageFallbackLocation
     {
     }
 }

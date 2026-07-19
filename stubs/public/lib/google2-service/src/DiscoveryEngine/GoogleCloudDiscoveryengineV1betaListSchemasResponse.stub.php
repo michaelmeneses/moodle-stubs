@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaListSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemasType = GoogleCloudDiscoveryengineV1betaSchema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaListSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemasType = GoogleCloudDiscoveryengineV1betaSchema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSchema[]
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSchema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSchema[]
-     */
-    public function setSchemas($schemas)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSchema[]
-     */
-    public function getSchemas()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaListSchemasResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListSchemasResponse
     {
     }
 }

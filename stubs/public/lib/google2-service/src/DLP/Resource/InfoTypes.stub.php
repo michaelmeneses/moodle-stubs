@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP\Resource;
-
-/**
- * The "infoTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dlpService = new Google\Service\DLP(...);
- *   $infoTypes = $dlpService->infoTypes;
- *  </code>
- */
-class InfoTypes extends \Google\Service\Resource
-{
+namespace Google\Service\DLP\Resource {
+    use Google\Service\DLP\GooglePrivacyDlpV2ListInfoTypesResponse;
     /**
-     * Returns a list of the sensitive information types that the DLP API supports.
-     * See https://cloud.google.com/sensitive-data-protection/docs/infotypes-
-     * reference to learn more. (infoTypes.listInfoTypes)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter filter to only return infoTypes supported by certain
-     * parts of the API. Defaults to supported_by=INSPECT.
-     * @opt_param string languageCode BCP-47 language code for localized infoType
-     * friendly names. If omitted, or if localized strings are not available, en-US
-     * strings will be returned.
-     * @opt_param string locationId Deprecated. This field has no effect.
-     * @opt_param string parent The parent resource name. The format of this value
-     * is as follows: `locations/{location_id}`
-     * @return GooglePrivacyDlpV2ListInfoTypesResponse
-     * @throws \Google\Service\Exception
+     * The "infoTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dlpService = new Google\Service\DLP(...);
+     *   $infoTypes = $dlpService->infoTypes;
+     *  </code>
      */
-    public function listInfoTypes($optParams = [])
+    class InfoTypes extends \Google\Service\Resource
+    {
+        /**
+         * Returns a list of the sensitive information types that the DLP API supports.
+         * See https://cloud.google.com/sensitive-data-protection/docs/infotypes-
+         * reference to learn more. (infoTypes.listInfoTypes)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter filter to only return infoTypes supported by certain
+         * parts of the API. Defaults to supported_by=INSPECT.
+         * @opt_param string languageCode BCP-47 language code for localized infoType
+         * friendly names. If omitted, or if localized strings are not available, en-US
+         * strings will be returned.
+         * @opt_param string locationId Deprecated. This field has no effect.
+         * @opt_param string parent The parent resource name. The format of this value
+         * is as follows: `locations/{location_id}`
+         * @return GooglePrivacyDlpV2ListInfoTypesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listInfoTypes($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DLP\Resource\InfoTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DLP_Resource_InfoTypes extends \Google\Service\DLP\Resource\InfoTypes
     {
     }
 }

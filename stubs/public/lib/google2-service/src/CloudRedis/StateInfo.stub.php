@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class StateInfo extends \Google\Model
-{
-    protected $updateInfoType = UpdateInfo::class;
-    protected $updateInfoDataType = '';
-    /**
-     * Describes ongoing update on the cluster when cluster state is UPDATING.
-     *
-     * @param UpdateInfo $updateInfo
-     */
-    public function setUpdateInfo(UpdateInfo $updateInfo)
+namespace Google\Service\CloudRedis {
+    class StateInfo extends \Google\Model
     {
+        protected $updateInfoType = UpdateInfo::class;
+        protected $updateInfoDataType = '';
+        /**
+         * Describes ongoing update on the cluster when cluster state is UPDATING.
+         *
+         * @param UpdateInfo $updateInfo
+         */
+        public function setUpdateInfo(UpdateInfo $updateInfo)
+        {
+        }
+        /**
+         * @return UpdateInfo
+         */
+        public function getUpdateInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdateInfo
+     * Runtime class alias of \Google\Service\CloudRedis\StateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateInfo()
+    class Google_Service_CloudRedis_StateInfo extends \Google\Service\CloudRedis\StateInfo
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class Config extends \Google\Model
-{
-    /**
-     * Required. The Customer Managed Encryption Key (CMEK) used for data
-     * encryption. The CMEK name should follow the format of
-     * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
-     * where the `location` must match InstanceConfig.location.
-     *
-     * @var string
-     */
-    public $cmekKeyName;
-    /**
-     * Output only. The GCP location where the Instance resides.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. The Customer Managed Encryption Key (CMEK) used for data
-     * encryption. The CMEK name should follow the format of
-     * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
-     * where the `location` must match InstanceConfig.location.
-     *
-     * @param string $cmekKeyName
-     */
-    public function setCmekKeyName($cmekKeyName)
+namespace Google\Service\ApigeeRegistry {
+    class Config extends \Google\Model
     {
+        /**
+         * Required. The Customer Managed Encryption Key (CMEK) used for data
+         * encryption. The CMEK name should follow the format of
+         * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
+         * where the `location` must match InstanceConfig.location.
+         *
+         * @var string
+         */
+        public $cmekKeyName;
+        /**
+         * Output only. The GCP location where the Instance resides.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. The Customer Managed Encryption Key (CMEK) used for data
+         * encryption. The CMEK name should follow the format of
+         * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
+         * where the `location` must match InstanceConfig.location.
+         *
+         * @param string $cmekKeyName
+         */
+        public function setCmekKeyName($cmekKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmekKeyName()
+        {
+        }
+        /**
+         * Output only. The GCP location where the Instance resides.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApigeeRegistry\Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmekKeyName()
-    {
-    }
-    /**
-     * Output only. The GCP location where the Instance resides.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_ApigeeRegistry_Config extends \Google\Service\ApigeeRegistry\Config
     {
     }
 }

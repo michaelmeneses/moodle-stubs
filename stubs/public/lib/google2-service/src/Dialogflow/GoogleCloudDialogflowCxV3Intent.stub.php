@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Intent extends \Google\Collection
-{
-    protected $collection_key = 'trainingPhrases';
-    /**
-     * Human readable description for better understanding an intent like its
-     * scope, content, result etc. Maximum character limit: 140 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The human-readable name of the intent, unique within the agent.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Indicates whether this is a fallback intent. Currently only default
-     * fallback intent is allowed in the agent, which is added upon agent
-     * creation. Adding training phrases to fallback intent is useful in the case
-     * of requests that are mistakenly matched, since training phrases assigned to
-     * fallback intents act as negative examples that triggers no-match event.
-     *
-     * @var bool
-     */
-    public $isFallback;
-    /**
-     * The key/value metadata to label an intent. Labels can contain lowercase
-     * letters, digits and the symbols '-' and '_'. International characters are
-     * allowed, including letters from unicase alphabets. Keys must start with a
-     * letter. Keys and values can be no longer than 63 characters and no more
-     * than 128 bytes. Prefix "sys-" is reserved for Dialogflow defined labels.
-     * Currently allowed Dialogflow defined labels include: * sys-head * sys-
-     * contextual The above labels do not require value. "sys-head" means the
-     * intent is a head intent. "sys.contextual" means the intent is a contextual
-     * intent.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The unique identifier of the intent. Required for the Intents.UpdateIntent
-     * method. Intents.CreateIntent populates the name automatically. Format:
-     * `projects//locations//agents//intents/`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parametersType = GoogleCloudDialogflowCxV3IntentParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * The priority of this intent. Higher numbers represent higher priorities. -
-     * If the supplied value is unspecified or 0, the service translates the value
-     * to 500,000, which corresponds to the `Normal` priority in the console. - If
-     * the supplied value is negative, the intent is ignored in runtime detect
-     * intent requests.
-     *
-     * @var int
-     */
-    public $priority;
-    protected $trainingPhrasesType = GoogleCloudDialogflowCxV3IntentTrainingPhrase::class;
-    protected $trainingPhrasesDataType = 'array';
-    /**
-     * Human readable description for better understanding an intent like its
-     * scope, content, result etc. Maximum character limit: 140 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Intent extends \Google\Collection
     {
+        protected $collection_key = 'trainingPhrases';
+        /**
+         * Human readable description for better understanding an intent like its
+         * scope, content, result etc. Maximum character limit: 140 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The human-readable name of the intent, unique within the agent.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Indicates whether this is a fallback intent. Currently only default
+         * fallback intent is allowed in the agent, which is added upon agent
+         * creation. Adding training phrases to fallback intent is useful in the case
+         * of requests that are mistakenly matched, since training phrases assigned to
+         * fallback intents act as negative examples that triggers no-match event.
+         *
+         * @var bool
+         */
+        public $isFallback;
+        /**
+         * The key/value metadata to label an intent. Labels can contain lowercase
+         * letters, digits and the symbols '-' and '_'. International characters are
+         * allowed, including letters from unicase alphabets. Keys must start with a
+         * letter. Keys and values can be no longer than 63 characters and no more
+         * than 128 bytes. Prefix "sys-" is reserved for Dialogflow defined labels.
+         * Currently allowed Dialogflow defined labels include: * sys-head * sys-
+         * contextual The above labels do not require value. "sys-head" means the
+         * intent is a head intent. "sys.contextual" means the intent is a contextual
+         * intent.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The unique identifier of the intent. Required for the Intents.UpdateIntent
+         * method. Intents.CreateIntent populates the name automatically. Format:
+         * `projects//locations//agents//intents/`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parametersType = GoogleCloudDialogflowCxV3IntentParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * The priority of this intent. Higher numbers represent higher priorities. -
+         * If the supplied value is unspecified or 0, the service translates the value
+         * to 500,000, which corresponds to the `Normal` priority in the console. - If
+         * the supplied value is negative, the intent is ignored in runtime detect
+         * intent requests.
+         *
+         * @var int
+         */
+        public $priority;
+        protected $trainingPhrasesType = GoogleCloudDialogflowCxV3IntentTrainingPhrase::class;
+        protected $trainingPhrasesDataType = 'array';
+        /**
+         * Human readable description for better understanding an intent like its
+         * scope, content, result etc. Maximum character limit: 140 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The human-readable name of the intent, unique within the agent.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Indicates whether this is a fallback intent. Currently only default
+         * fallback intent is allowed in the agent, which is added upon agent
+         * creation. Adding training phrases to fallback intent is useful in the case
+         * of requests that are mistakenly matched, since training phrases assigned to
+         * fallback intents act as negative examples that triggers no-match event.
+         *
+         * @param bool $isFallback
+         */
+        public function setIsFallback($isFallback)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsFallback()
+        {
+        }
+        /**
+         * The key/value metadata to label an intent. Labels can contain lowercase
+         * letters, digits and the symbols '-' and '_'. International characters are
+         * allowed, including letters from unicase alphabets. Keys must start with a
+         * letter. Keys and values can be no longer than 63 characters and no more
+         * than 128 bytes. Prefix "sys-" is reserved for Dialogflow defined labels.
+         * Currently allowed Dialogflow defined labels include: * sys-head * sys-
+         * contextual The above labels do not require value. "sys-head" means the
+         * intent is a head intent. "sys.contextual" means the intent is a contextual
+         * intent.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The unique identifier of the intent. Required for the Intents.UpdateIntent
+         * method. Intents.CreateIntent populates the name automatically. Format:
+         * `projects//locations//agents//intents/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The collection of parameters associated with the intent.
+         *
+         * @param GoogleCloudDialogflowCxV3IntentParameter[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3IntentParameter[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * The priority of this intent. Higher numbers represent higher priorities. -
+         * If the supplied value is unspecified or 0, the service translates the value
+         * to 500,000, which corresponds to the `Normal` priority in the console. - If
+         * the supplied value is negative, the intent is ignored in runtime detect
+         * intent requests.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * The collection of training phrases the agent is trained on to identify the
+         * intent.
+         *
+         * @param GoogleCloudDialogflowCxV3IntentTrainingPhrase[] $trainingPhrases
+         */
+        public function setTrainingPhrases($trainingPhrases)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3IntentTrainingPhrase[]
+         */
+        public function getTrainingPhrases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Intent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The human-readable name of the intent, unique within the agent.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Indicates whether this is a fallback intent. Currently only default
-     * fallback intent is allowed in the agent, which is added upon agent
-     * creation. Adding training phrases to fallback intent is useful in the case
-     * of requests that are mistakenly matched, since training phrases assigned to
-     * fallback intents act as negative examples that triggers no-match event.
-     *
-     * @param bool $isFallback
-     */
-    public function setIsFallback($isFallback)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsFallback()
-    {
-    }
-    /**
-     * The key/value metadata to label an intent. Labels can contain lowercase
-     * letters, digits and the symbols '-' and '_'. International characters are
-     * allowed, including letters from unicase alphabets. Keys must start with a
-     * letter. Keys and values can be no longer than 63 characters and no more
-     * than 128 bytes. Prefix "sys-" is reserved for Dialogflow defined labels.
-     * Currently allowed Dialogflow defined labels include: * sys-head * sys-
-     * contextual The above labels do not require value. "sys-head" means the
-     * intent is a head intent. "sys.contextual" means the intent is a contextual
-     * intent.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The unique identifier of the intent. Required for the Intents.UpdateIntent
-     * method. Intents.CreateIntent populates the name automatically. Format:
-     * `projects//locations//agents//intents/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The collection of parameters associated with the intent.
-     *
-     * @param GoogleCloudDialogflowCxV3IntentParameter[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3IntentParameter[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * The priority of this intent. Higher numbers represent higher priorities. -
-     * If the supplied value is unspecified or 0, the service translates the value
-     * to 500,000, which corresponds to the `Normal` priority in the console. - If
-     * the supplied value is negative, the intent is ignored in runtime detect
-     * intent requests.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * The collection of training phrases the agent is trained on to identify the
-     * intent.
-     *
-     * @param GoogleCloudDialogflowCxV3IntentTrainingPhrase[] $trainingPhrases
-     */
-    public function setTrainingPhrases($trainingPhrases)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3IntentTrainingPhrase[]
-     */
-    public function getTrainingPhrases()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Intent extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Intent
     {
     }
 }

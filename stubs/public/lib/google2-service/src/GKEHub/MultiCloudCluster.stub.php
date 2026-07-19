@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MultiCloudCluster extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $clusterMissing;
-    /**
-     * @var string
-     */
-    public $resourceLink;
-    /**
-     * @param bool
-     */
-    public function setClusterMissing($clusterMissing)
+namespace Google\Service\GKEHub {
+    class MultiCloudCluster extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $clusterMissing;
+        /**
+         * @var string
+         */
+        public $resourceLink;
+        /**
+         * @param bool
+         */
+        public function setClusterMissing($clusterMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClusterMissing()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceLink($resourceLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\MultiCloudCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterMissing()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceLink($resourceLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceLink()
+    class Google_Service_GKEHub_MultiCloudCluster extends \Google\Service\GKEHub\MultiCloudCluster
     {
     }
 }

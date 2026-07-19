@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class QueryPlan extends \Google\Model
-{
-    /**
-     * @var array[]
-     */
-    public $planInfo;
-    /**
-     * @param array[]
-     */
-    public function setPlanInfo($planInfo)
+namespace Google\Service\Datastore {
+    class QueryPlan extends \Google\Model
     {
+        /**
+         * @var array[]
+         */
+        public $planInfo;
+        /**
+         * @param array[]
+         */
+        public function setPlanInfo($planInfo)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPlanInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Datastore\QueryPlan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlanInfo()
+    class Google_Service_Datastore_QueryPlan extends \Google\Service\Datastore\QueryPlan
     {
     }
 }

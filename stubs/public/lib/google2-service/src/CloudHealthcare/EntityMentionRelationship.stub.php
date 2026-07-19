@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class EntityMentionRelationship extends \Google\Model
-{
-    /**
-     * The model's confidence in this annotation. A number between 0 and 1.
-     *
-     * @var 
-     */
-    public $confidence;
-    /**
-     * object_id is the id of the object entity mention.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * subject_id is the id of the subject entity mention.
-     *
-     * @var string
-     */
-    public $subjectId;
-    public function setConfidence($confidence)
+namespace Google\Service\CloudHealthcare {
+    class EntityMentionRelationship extends \Google\Model
     {
+        /**
+         * The model's confidence in this annotation. A number between 0 and 1.
+         *
+         * @var 
+         */
+        public $confidence;
+        /**
+         * object_id is the id of the object entity mention.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * subject_id is the id of the subject entity mention.
+         *
+         * @var string
+         */
+        public $subjectId;
+        public function setConfidence($confidence)
+        {
+        }
+        public function getConfidence()
+        {
+        }
+        /**
+         * object_id is the id of the object entity mention.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * subject_id is the id of the subject entity mention.
+         *
+         * @param string $subjectId
+         */
+        public function setSubjectId($subjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectId()
+        {
+        }
     }
-    public function getConfidence()
-    {
-    }
+}
+namespace {
     /**
-     * object_id is the id of the object entity mention.
-     *
-     * @param string $objectId
+     * Runtime class alias of \Google\Service\CloudHealthcare\EntityMentionRelationship registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * subject_id is the id of the subject entity mention.
-     *
-     * @param string $subjectId
-     */
-    public function setSubjectId($subjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectId()
+    class Google_Service_CloudHealthcare_EntityMentionRelationship extends \Google\Service\CloudHealthcare\EntityMentionRelationship
     {
     }
 }

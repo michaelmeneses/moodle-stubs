@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource extends \Google\Collection
-{
-    protected $collection_key = 'uri';
-    /**
-     * Cloud Storage URI of one or more files. Only CSV files are supported. The
-     * first line of the CSV file is used as the header. If there are multiple
-     * files, the header is the first line of the lexicographically first file,
-     * the other files must either contain the exact same header or omit the
-     * header.
-     *
-     * @var string[]
-     */
-    public $uri;
-    /**
-     * Cloud Storage URI of one or more files. Only CSV files are supported. The
-     * first line of the CSV file is used as the header. If there are multiple
-     * files, the header is the first line of the lexicographically first file,
-     * the other files must either contain the exact same header or omit the
-     * header.
-     *
-     * @param string[] $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource extends \Google\Collection
     {
+        protected $collection_key = 'uri';
+        /**
+         * Cloud Storage URI of one or more files. Only CSV files are supported. The
+         * first line of the CSV file is used as the header. If there are multiple
+         * files, the header is the first line of the lexicographically first file,
+         * the other files must either contain the exact same header or omit the
+         * header.
+         *
+         * @var string[]
+         */
+        public $uri;
+        /**
+         * Cloud Storage URI of one or more files. Only CSV files are supported. The
+         * first line of the CSV file is used as the header. If there are multiple
+         * files, the header is the first line of the lexicographically first file,
+         * the other files must either contain the exact same header or omit the
+         * header.
+         *
+         * @param string[] $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadataGcsSource
     {
     }
 }

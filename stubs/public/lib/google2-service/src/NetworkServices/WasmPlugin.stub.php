@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class WasmPlugin extends \Google\Collection
-{
-    protected $collection_key = 'usedBy';
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. A human-readable description of the resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Set of labels associated with the `WasmPlugin` resource. The
-     * format must comply with [the following
-     * requirements](/compute/docs/labeling-resources#requirements).
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $logConfigType = WasmPluginLogConfig::class;
-    protected $logConfigDataType = '';
-    /**
-     * Optional. The ID of the `WasmPluginVersion` resource that is the currently
-     * serving one. The version referred to must be a child of this `WasmPlugin`
-     * resource.
-     *
-     * @var string
-     */
-    public $mainVersionId;
-    /**
-     * Identifier. Name of the `WasmPlugin` resource in the following format:
-     * `projects/{project}/locations/{location}/wasmPlugins/{wasm_plugin}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $usedByType = WasmPluginUsedBy::class;
-    protected $usedByDataType = 'array';
-    protected $versionsType = WasmPluginVersionDetails::class;
-    protected $versionsDataType = 'map';
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkServices {
+    class WasmPlugin extends \Google\Collection
     {
+        protected $collection_key = 'usedBy';
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. A human-readable description of the resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Set of labels associated with the `WasmPlugin` resource. The
+         * format must comply with [the following
+         * requirements](/compute/docs/labeling-resources#requirements).
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $logConfigType = WasmPluginLogConfig::class;
+        protected $logConfigDataType = '';
+        /**
+         * Optional. The ID of the `WasmPluginVersion` resource that is the currently
+         * serving one. The version referred to must be a child of this `WasmPlugin`
+         * resource.
+         *
+         * @var string
+         */
+        public $mainVersionId;
+        /**
+         * Identifier. Name of the `WasmPlugin` resource in the following format:
+         * `projects/{project}/locations/{location}/wasmPlugins/{wasm_plugin}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $usedByType = WasmPluginUsedBy::class;
+        protected $usedByDataType = 'array';
+        protected $versionsType = WasmPluginVersionDetails::class;
+        protected $versionsDataType = 'map';
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. A human-readable description of the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Set of labels associated with the `WasmPlugin` resource. The
+         * format must comply with [the following
+         * requirements](/compute/docs/labeling-resources#requirements).
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. Specifies the logging options for the activity performed by this
+         * plugin. If logging is enabled, plugin logs are exported to Cloud Logging.
+         * Note that the settings relate to the logs generated by using logging
+         * statements in your Wasm code.
+         *
+         * @param WasmPluginLogConfig $logConfig
+         */
+        public function setLogConfig(WasmPluginLogConfig $logConfig)
+        {
+        }
+        /**
+         * @return WasmPluginLogConfig
+         */
+        public function getLogConfig()
+        {
+        }
+        /**
+         * Optional. The ID of the `WasmPluginVersion` resource that is the currently
+         * serving one. The version referred to must be a child of this `WasmPlugin`
+         * resource.
+         *
+         * @param string $mainVersionId
+         */
+        public function setMainVersionId($mainVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMainVersionId()
+        {
+        }
+        /**
+         * Identifier. Name of the `WasmPlugin` resource in the following format:
+         * `projects/{project}/locations/{location}/wasmPlugins/{wasm_plugin}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. List of all [extensions](https://cloud.google.com/service-
+         * extensions/docs/overview) that use this `WasmPlugin` resource.
+         *
+         * @param WasmPluginUsedBy[] $usedBy
+         */
+        public function setUsedBy($usedBy)
+        {
+        }
+        /**
+         * @return WasmPluginUsedBy[]
+         */
+        public function getUsedBy()
+        {
+        }
+        /**
+         * Optional. All versions of this `WasmPlugin` resource in the key-value
+         * format. The key is the resource ID, and the value is the `VersionDetails`
+         * object. Lets you create or update a `WasmPlugin` resource and its versions
+         * in a single request. When the `main_version_id` field is not empty, it must
+         * point to one of the `VersionDetails` objects in the map. If provided in a
+         * `PATCH` request, the new versions replace the previous set. Any version
+         * omitted from the `versions` field is removed. Because the
+         * `WasmPluginVersion` resource is immutable, if a `WasmPluginVersion`
+         * resource with the same name already exists and differs, the request fails.
+         * Note: In a `GET` request, this field is populated only if the field
+         * `GetWasmPluginRequest.view` is set to `WASM_PLUGIN_VIEW_FULL`.
+         *
+         * @param WasmPluginVersionDetails[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return WasmPluginVersionDetails[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\WasmPlugin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. A human-readable description of the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Set of labels associated with the `WasmPlugin` resource. The
-     * format must comply with [the following
-     * requirements](/compute/docs/labeling-resources#requirements).
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. Specifies the logging options for the activity performed by this
-     * plugin. If logging is enabled, plugin logs are exported to Cloud Logging.
-     * Note that the settings relate to the logs generated by using logging
-     * statements in your Wasm code.
-     *
-     * @param WasmPluginLogConfig $logConfig
-     */
-    public function setLogConfig(WasmPluginLogConfig $logConfig)
-    {
-    }
-    /**
-     * @return WasmPluginLogConfig
-     */
-    public function getLogConfig()
-    {
-    }
-    /**
-     * Optional. The ID of the `WasmPluginVersion` resource that is the currently
-     * serving one. The version referred to must be a child of this `WasmPlugin`
-     * resource.
-     *
-     * @param string $mainVersionId
-     */
-    public function setMainVersionId($mainVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMainVersionId()
-    {
-    }
-    /**
-     * Identifier. Name of the `WasmPlugin` resource in the following format:
-     * `projects/{project}/locations/{location}/wasmPlugins/{wasm_plugin}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. List of all [extensions](https://cloud.google.com/service-
-     * extensions/docs/overview) that use this `WasmPlugin` resource.
-     *
-     * @param WasmPluginUsedBy[] $usedBy
-     */
-    public function setUsedBy($usedBy)
-    {
-    }
-    /**
-     * @return WasmPluginUsedBy[]
-     */
-    public function getUsedBy()
-    {
-    }
-    /**
-     * Optional. All versions of this `WasmPlugin` resource in the key-value
-     * format. The key is the resource ID, and the value is the `VersionDetails`
-     * object. Lets you create or update a `WasmPlugin` resource and its versions
-     * in a single request. When the `main_version_id` field is not empty, it must
-     * point to one of the `VersionDetails` objects in the map. If provided in a
-     * `PATCH` request, the new versions replace the previous set. Any version
-     * omitted from the `versions` field is removed. Because the
-     * `WasmPluginVersion` resource is immutable, if a `WasmPluginVersion`
-     * resource with the same name already exists and differs, the request fails.
-     * Note: In a `GET` request, this field is populated only if the field
-     * `GetWasmPluginRequest.view` is set to `WASM_PLUGIN_VIEW_FULL`.
-     *
-     * @param WasmPluginVersionDetails[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return WasmPluginVersionDetails[]
-     */
-    public function getVersions()
+    class Google_Service_NetworkServices_WasmPlugin extends \Google\Service\NetworkServices\WasmPlugin
     {
     }
 }

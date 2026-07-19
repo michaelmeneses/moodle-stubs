@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceObjectReferences extends \Google\Collection
-{
-    protected $collection_key = 'references';
-    protected $referencesType = DataSourceObjectReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * The references.
-     *
-     * @param DataSourceObjectReference[] $references
-     */
-    public function setReferences($references)
+namespace Google\Service\Sheets {
+    class DataSourceObjectReferences extends \Google\Collection
     {
+        protected $collection_key = 'references';
+        protected $referencesType = DataSourceObjectReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * The references.
+         *
+         * @param DataSourceObjectReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return DataSourceObjectReference[]
+         */
+        public function getReferences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceObjectReference[]
+     * Runtime class alias of \Google\Service\Sheets\DataSourceObjectReferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferences()
+    class Google_Service_Sheets_DataSourceObjectReferences extends \Google\Service\Sheets\DataSourceObjectReferences
     {
     }
 }

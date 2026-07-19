@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1Key extends \Google\Model
-{
-    protected $androidSettingsType = GoogleCloudRecaptchaenterpriseV1AndroidKeySettings::class;
-    protected $androidSettingsDataType = '';
-    /**
-     * Output only. The timestamp corresponding to the creation of this key.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. Human-readable display name of this key. Modifiable by user.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $expressSettingsType = GoogleCloudRecaptchaenterpriseV1ExpressKeySettings::class;
-    protected $expressSettingsDataType = '';
-    protected $iosSettingsType = GoogleCloudRecaptchaenterpriseV1IOSKeySettings::class;
-    protected $iosSettingsDataType = '';
-    /**
-     * Optional. See [Creating and managing labels]
-     * (https://cloud.google.com/recaptcha/docs/labels).
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name for the Key in the format
-     * `projects/{project}/keys/{key}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $testingOptionsType = GoogleCloudRecaptchaenterpriseV1TestingOptions::class;
-    protected $testingOptionsDataType = '';
-    protected $wafSettingsType = GoogleCloudRecaptchaenterpriseV1WafSettings::class;
-    protected $wafSettingsDataType = '';
-    protected $webSettingsType = GoogleCloudRecaptchaenterpriseV1WebKeySettings::class;
-    protected $webSettingsDataType = '';
-    /**
-     * Settings for keys that can be used by Android apps.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1AndroidKeySettings $androidSettings
-     */
-    public function setAndroidSettings(GoogleCloudRecaptchaenterpriseV1AndroidKeySettings $androidSettings)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1Key extends \Google\Model
     {
+        protected $androidSettingsType = GoogleCloudRecaptchaenterpriseV1AndroidKeySettings::class;
+        protected $androidSettingsDataType = '';
+        /**
+         * Output only. The timestamp corresponding to the creation of this key.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. Human-readable display name of this key. Modifiable by user.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $expressSettingsType = GoogleCloudRecaptchaenterpriseV1ExpressKeySettings::class;
+        protected $expressSettingsDataType = '';
+        protected $iosSettingsType = GoogleCloudRecaptchaenterpriseV1IOSKeySettings::class;
+        protected $iosSettingsDataType = '';
+        /**
+         * Optional. See [Creating and managing labels]
+         * (https://cloud.google.com/recaptcha/docs/labels).
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name for the Key in the format
+         * `projects/{project}/keys/{key}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $testingOptionsType = GoogleCloudRecaptchaenterpriseV1TestingOptions::class;
+        protected $testingOptionsDataType = '';
+        protected $wafSettingsType = GoogleCloudRecaptchaenterpriseV1WafSettings::class;
+        protected $wafSettingsDataType = '';
+        protected $webSettingsType = GoogleCloudRecaptchaenterpriseV1WebKeySettings::class;
+        protected $webSettingsDataType = '';
+        /**
+         * Settings for keys that can be used by Android apps.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1AndroidKeySettings $androidSettings
+         */
+        public function setAndroidSettings(GoogleCloudRecaptchaenterpriseV1AndroidKeySettings $androidSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1AndroidKeySettings
+         */
+        public function getAndroidSettings()
+        {
+        }
+        /**
+         * Output only. The timestamp corresponding to the creation of this key.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. Human-readable display name of this key. Modifiable by user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Settings for keys that can be used by reCAPTCHA Express.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1ExpressKeySettings $expressSettings
+         */
+        public function setExpressSettings(GoogleCloudRecaptchaenterpriseV1ExpressKeySettings $expressSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1ExpressKeySettings
+         */
+        public function getExpressSettings()
+        {
+        }
+        /**
+         * Settings for keys that can be used by iOS apps.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1IOSKeySettings $iosSettings
+         */
+        public function setIosSettings(GoogleCloudRecaptchaenterpriseV1IOSKeySettings $iosSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1IOSKeySettings
+         */
+        public function getIosSettings()
+        {
+        }
+        /**
+         * Optional. See [Creating and managing labels]
+         * (https://cloud.google.com/recaptcha/docs/labels).
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name for the Key in the format
+         * `projects/{project}/keys/{key}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Options for user acceptance testing.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1TestingOptions $testingOptions
+         */
+        public function setTestingOptions(GoogleCloudRecaptchaenterpriseV1TestingOptions $testingOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1TestingOptions
+         */
+        public function getTestingOptions()
+        {
+        }
+        /**
+         * Optional. Settings for Web Application Firewall (WAF).
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1WafSettings $wafSettings
+         */
+        public function setWafSettings(GoogleCloudRecaptchaenterpriseV1WafSettings $wafSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1WafSettings
+         */
+        public function getWafSettings()
+        {
+        }
+        /**
+         * Settings for keys that can be used by websites.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1WebKeySettings $webSettings
+         */
+        public function setWebSettings(GoogleCloudRecaptchaenterpriseV1WebKeySettings $webSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1WebKeySettings
+         */
+        public function getWebSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1AndroidKeySettings
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Key registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidSettings()
-    {
-    }
-    /**
-     * Output only. The timestamp corresponding to the creation of this key.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. Human-readable display name of this key. Modifiable by user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Settings for keys that can be used by reCAPTCHA Express.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1ExpressKeySettings $expressSettings
-     */
-    public function setExpressSettings(GoogleCloudRecaptchaenterpriseV1ExpressKeySettings $expressSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1ExpressKeySettings
-     */
-    public function getExpressSettings()
-    {
-    }
-    /**
-     * Settings for keys that can be used by iOS apps.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1IOSKeySettings $iosSettings
-     */
-    public function setIosSettings(GoogleCloudRecaptchaenterpriseV1IOSKeySettings $iosSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1IOSKeySettings
-     */
-    public function getIosSettings()
-    {
-    }
-    /**
-     * Optional. See [Creating and managing labels]
-     * (https://cloud.google.com/recaptcha/docs/labels).
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name for the Key in the format
-     * `projects/{project}/keys/{key}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Options for user acceptance testing.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1TestingOptions $testingOptions
-     */
-    public function setTestingOptions(GoogleCloudRecaptchaenterpriseV1TestingOptions $testingOptions)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1TestingOptions
-     */
-    public function getTestingOptions()
-    {
-    }
-    /**
-     * Optional. Settings for Web Application Firewall (WAF).
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1WafSettings $wafSettings
-     */
-    public function setWafSettings(GoogleCloudRecaptchaenterpriseV1WafSettings $wafSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1WafSettings
-     */
-    public function getWafSettings()
-    {
-    }
-    /**
-     * Settings for keys that can be used by websites.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1WebKeySettings $webSettings
-     */
-    public function setWebSettings(GoogleCloudRecaptchaenterpriseV1WebKeySettings $webSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1WebKeySettings
-     */
-    public function getWebSettings()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1Key extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Key
     {
     }
 }

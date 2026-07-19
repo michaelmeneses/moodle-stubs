@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class AppAccessRiskVerdict extends \Google\Collection
-{
-    protected $collection_key = 'appsDetected';
-    /**
-     * List of detected app types signalled for App Access Risk.
-     *
-     * @var string[]
-     */
-    public $appsDetected;
-    /**
-     * List of detected app types signalled for App Access Risk.
-     *
-     * @param string[] $appsDetected
-     */
-    public function setAppsDetected($appsDetected)
+namespace Google\Service\PlayIntegrity {
+    class AppAccessRiskVerdict extends \Google\Collection
     {
+        protected $collection_key = 'appsDetected';
+        /**
+         * List of detected app types signalled for App Access Risk.
+         *
+         * @var string[]
+         */
+        public $appsDetected;
+        /**
+         * List of detected app types signalled for App Access Risk.
+         *
+         * @param string[] $appsDetected
+         */
+        public function setAppsDetected($appsDetected)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAppsDetected()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PlayIntegrity\AppAccessRiskVerdict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppsDetected()
+    class Google_Service_PlayIntegrity_AppAccessRiskVerdict extends \Google\Service\PlayIntegrity\AppAccessRiskVerdict
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FileContentBuffer extends \Google\Model
-{
-    public const FILE_TYPE_BIN = 'BIN';
-    public const FILE_TYPE_UNDEFINED = 'UNDEFINED';
-    public const FILE_TYPE_X509 = 'X509';
-    /**
-     * The raw content in the secure keys file.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The file type of source file.
-     *
-     * @var string
-     */
-    public $fileType;
-    /**
-     * The raw content in the secure keys file.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Compute {
+    class FileContentBuffer extends \Google\Model
     {
+        public const FILE_TYPE_BIN = 'BIN';
+        public const FILE_TYPE_UNDEFINED = 'UNDEFINED';
+        public const FILE_TYPE_X509 = 'X509';
+        /**
+         * The raw content in the secure keys file.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The file type of source file.
+         *
+         * @var string
+         */
+        public $fileType;
+        /**
+         * The raw content in the secure keys file.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The file type of source file.
+         *
+         * Accepted values: BIN, UNDEFINED, X509
+         *
+         * @param self::FILE_TYPE_* $fileType
+         */
+        public function setFileType($fileType)
+        {
+        }
+        /**
+         * @return self::FILE_TYPE_*
+         */
+        public function getFileType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FileContentBuffer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The file type of source file.
-     *
-     * Accepted values: BIN, UNDEFINED, X509
-     *
-     * @param self::FILE_TYPE_* $fileType
-     */
-    public function setFileType($fileType)
-    {
-    }
-    /**
-     * @return self::FILE_TYPE_*
-     */
-    public function getFileType()
+    class Google_Service_Compute_FileContentBuffer extends \Google\Service\Compute\FileContentBuffer
     {
     }
 }

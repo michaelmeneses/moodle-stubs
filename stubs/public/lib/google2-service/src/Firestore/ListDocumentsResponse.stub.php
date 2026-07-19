@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ListDocumentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    protected $documentsType = Document::class;
-    protected $documentsDataType = 'array';
-    /**
-     * A token to retrieve the next page of documents. If this field is omitted,
-     * there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Documents found.
-     *
-     * @param Document[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\Firestore {
+    class ListDocumentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        protected $documentsType = Document::class;
+        protected $documentsDataType = 'array';
+        /**
+         * A token to retrieve the next page of documents. If this field is omitted,
+         * there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Documents found.
+         *
+         * @param Document[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return Document[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * A token to retrieve the next page of documents. If this field is omitted,
+         * there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Document[]
+     * Runtime class alias of \Google\Service\Firestore\ListDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
-    {
-    }
-    /**
-     * A token to retrieve the next page of documents. If this field is omitted,
-     * there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firestore_ListDocumentsResponse extends \Google\Service\Firestore\ListDocumentsResponse
     {
     }
 }

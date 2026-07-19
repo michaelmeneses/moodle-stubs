@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions extends \Google\Model
-{
-    /**
-     * Optional. Allow partner to view support case details for an AXT log
-     *
-     * @var bool
-     */
-    public $accessTransparencyLogsSupportCaseViewer;
-    /**
-     * Optional. Allow partner to view violation alerts.
-     *
-     * @var bool
-     */
-    public $assuredWorkloadsMonitoring;
-    /**
-     * Optional. Allow the partner to view inspectability logs and monitoring
-     * violations.
-     *
-     * @var bool
-     */
-    public $dataLogsViewer;
-    /**
-     * Optional. Allow partner to view access approval logs.
-     *
-     * @var bool
-     */
-    public $serviceAccessApprover;
-    /**
-     * Optional. Allow partner to view support case details for an AXT log
-     *
-     * @param bool $accessTransparencyLogsSupportCaseViewer
-     */
-    public function setAccessTransparencyLogsSupportCaseViewer($accessTransparencyLogsSupportCaseViewer)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions extends \Google\Model
     {
+        /**
+         * Optional. Allow partner to view support case details for an AXT log
+         *
+         * @var bool
+         */
+        public $accessTransparencyLogsSupportCaseViewer;
+        /**
+         * Optional. Allow partner to view violation alerts.
+         *
+         * @var bool
+         */
+        public $assuredWorkloadsMonitoring;
+        /**
+         * Optional. Allow the partner to view inspectability logs and monitoring
+         * violations.
+         *
+         * @var bool
+         */
+        public $dataLogsViewer;
+        /**
+         * Optional. Allow partner to view access approval logs.
+         *
+         * @var bool
+         */
+        public $serviceAccessApprover;
+        /**
+         * Optional. Allow partner to view support case details for an AXT log
+         *
+         * @param bool $accessTransparencyLogsSupportCaseViewer
+         */
+        public function setAccessTransparencyLogsSupportCaseViewer($accessTransparencyLogsSupportCaseViewer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAccessTransparencyLogsSupportCaseViewer()
+        {
+        }
+        /**
+         * Optional. Allow partner to view violation alerts.
+         *
+         * @param bool $assuredWorkloadsMonitoring
+         */
+        public function setAssuredWorkloadsMonitoring($assuredWorkloadsMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAssuredWorkloadsMonitoring()
+        {
+        }
+        /**
+         * Optional. Allow the partner to view inspectability logs and monitoring
+         * violations.
+         *
+         * @param bool $dataLogsViewer
+         */
+        public function setDataLogsViewer($dataLogsViewer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDataLogsViewer()
+        {
+        }
+        /**
+         * Optional. Allow partner to view access approval logs.
+         *
+         * @param bool $serviceAccessApprover
+         */
+        public function setServiceAccessApprover($serviceAccessApprover)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getServiceAccessApprover()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessTransparencyLogsSupportCaseViewer()
-    {
-    }
-    /**
-     * Optional. Allow partner to view violation alerts.
-     *
-     * @param bool $assuredWorkloadsMonitoring
-     */
-    public function setAssuredWorkloadsMonitoring($assuredWorkloadsMonitoring)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAssuredWorkloadsMonitoring()
-    {
-    }
-    /**
-     * Optional. Allow the partner to view inspectability logs and monitoring
-     * violations.
-     *
-     * @param bool $dataLogsViewer
-     */
-    public function setDataLogsViewer($dataLogsViewer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDataLogsViewer()
-    {
-    }
-    /**
-     * Optional. Allow partner to view access approval logs.
-     *
-     * @param bool $serviceAccessApprover
-     */
-    public function setServiceAccessApprover($serviceAccessApprover)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getServiceAccessApprover()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions
     {
     }
 }

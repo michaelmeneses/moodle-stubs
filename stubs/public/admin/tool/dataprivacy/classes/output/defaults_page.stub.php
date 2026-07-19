@@ -29,6 +29,17 @@
  */
 namespace tool_dataprivacy\output;
 
+use action_menu_link_primary;
+use coding_exception;
+use moodle_exception;
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use tool_dataprivacy\data_registry;
+use tool_dataprivacy\external\category_exporter;
+use tool_dataprivacy\external\purpose_exporter;
 /**
  * Class containing data for the data registry defaults.
  *

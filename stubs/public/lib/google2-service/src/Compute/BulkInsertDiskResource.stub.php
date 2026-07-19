@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BulkInsertDiskResource extends \Google\Model
-{
-    /**
-     * The URL of the DiskConsistencyGroupPolicy for the group of disks to clone.
-     * This may be a full or partial URL, such as:              -         https://
-     * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
-     * ies/resourcePolicy            -
-     * projects/project/regions/region/resourcePolicies/resourcePolicy
-     * -         regions/region/resourcePolicies/resourcePolicy
-     *
-     * @var string
-     */
-    public $sourceConsistencyGroupPolicy;
-    /**
-     * The URL of the DiskConsistencyGroupPolicy for the group of disks to clone.
-     * This may be a full or partial URL, such as:              -         https://
-     * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
-     * ies/resourcePolicy            -
-     * projects/project/regions/region/resourcePolicies/resourcePolicy
-     * -         regions/region/resourcePolicies/resourcePolicy
-     *
-     * @param string $sourceConsistencyGroupPolicy
-     */
-    public function setSourceConsistencyGroupPolicy($sourceConsistencyGroupPolicy)
+namespace Google\Service\Compute {
+    class BulkInsertDiskResource extends \Google\Model
     {
+        /**
+         * The URL of the DiskConsistencyGroupPolicy for the group of disks to clone.
+         * This may be a full or partial URL, such as:              -         https://
+         * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
+         * ies/resourcePolicy            -
+         * projects/project/regions/region/resourcePolicies/resourcePolicy
+         * -         regions/region/resourcePolicies/resourcePolicy
+         *
+         * @var string
+         */
+        public $sourceConsistencyGroupPolicy;
+        /**
+         * The URL of the DiskConsistencyGroupPolicy for the group of disks to clone.
+         * This may be a full or partial URL, such as:              -         https://
+         * www.googleapis.com/compute/v1/projects/project/regions/region/resourcePolic
+         * ies/resourcePolicy            -
+         * projects/project/regions/region/resourcePolicies/resourcePolicy
+         * -         regions/region/resourcePolicies/resourcePolicy
+         *
+         * @param string $sourceConsistencyGroupPolicy
+         */
+        public function setSourceConsistencyGroupPolicy($sourceConsistencyGroupPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceConsistencyGroupPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BulkInsertDiskResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceConsistencyGroupPolicy()
+    class Google_Service_Compute_BulkInsertDiskResource extends \Google\Service\Compute\BulkInsertDiskResource
     {
     }
 }

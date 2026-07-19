@@ -8,6 +8,17 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\Escaper\XLSX;
+use OpenSpout\Reader\AbstractReader;
+use OpenSpout\Reader\Exception\NoSheetsFoundException;
+use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactoryInterface;
+use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\MemoryLimit;
+use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use OpenSpout\Reader\XLSX\Manager\SheetManager;
+use OpenSpout\Reader\XLSX\Manager\WorkbookRelationshipsManager;
+use ZipArchive;
 /**
  * @extends AbstractReader<SheetIterator>
  */

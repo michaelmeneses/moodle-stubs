@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HttpFaultDelay extends \Google\Model
-{
-    protected $fixedDelayType = Duration::class;
-    protected $fixedDelayDataType = '';
-    /**
-     * The percentage of traffic for connections, operations, or requests for
-     * which a delay is introduced as part of fault injection.
-     *
-     * The value must be from 0.0 to 100.0 inclusive.
-     *
-     * @var 
-     */
-    public $percentage;
-    /**
-     * Specifies the value of the fixed delay interval.
-     *
-     * @param Duration $fixedDelay
-     */
-    public function setFixedDelay(Duration $fixedDelay)
+namespace Google\Service\Compute {
+    class HttpFaultDelay extends \Google\Model
     {
+        protected $fixedDelayType = Duration::class;
+        protected $fixedDelayDataType = '';
+        /**
+         * The percentage of traffic for connections, operations, or requests for
+         * which a delay is introduced as part of fault injection.
+         *
+         * The value must be from 0.0 to 100.0 inclusive.
+         *
+         * @var 
+         */
+        public $percentage;
+        /**
+         * Specifies the value of the fixed delay interval.
+         *
+         * @param Duration $fixedDelay
+         */
+        public function setFixedDelay(Duration $fixedDelay)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getFixedDelay()
+        {
+        }
+        public function setPercentage($percentage)
+        {
+        }
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\Compute\HttpFaultDelay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedDelay()
-    {
-    }
-    public function setPercentage($percentage)
-    {
-    }
-    public function getPercentage()
+    class Google_Service_Compute_HttpFaultDelay extends \Google\Service\Compute\HttpFaultDelay
     {
     }
 }

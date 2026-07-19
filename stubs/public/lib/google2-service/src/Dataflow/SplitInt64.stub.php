@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SplitInt64 extends \Google\Model
-{
-    /**
-     * The high order bits, including the sign: n >> 32.
-     *
-     * @var int
-     */
-    public $highBits;
-    /**
-     * The low order bits: n & 0xffffffff.
-     *
-     * @var string
-     */
-    public $lowBits;
-    /**
-     * The high order bits, including the sign: n >> 32.
-     *
-     * @param int $highBits
-     */
-    public function setHighBits($highBits)
+namespace Google\Service\Dataflow {
+    class SplitInt64 extends \Google\Model
     {
+        /**
+         * The high order bits, including the sign: n >> 32.
+         *
+         * @var int
+         */
+        public $highBits;
+        /**
+         * The low order bits: n & 0xffffffff.
+         *
+         * @var string
+         */
+        public $lowBits;
+        /**
+         * The high order bits, including the sign: n >> 32.
+         *
+         * @param int $highBits
+         */
+        public function setHighBits($highBits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHighBits()
+        {
+        }
+        /**
+         * The low order bits: n & 0xffffffff.
+         *
+         * @param string $lowBits
+         */
+        public function setLowBits($lowBits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLowBits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\SplitInt64 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHighBits()
-    {
-    }
-    /**
-     * The low order bits: n & 0xffffffff.
-     *
-     * @param string $lowBits
-     */
-    public function setLowBits($lowBits)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLowBits()
+    class Google_Service_Dataflow_SplitInt64 extends \Google\Service\Dataflow\SplitInt64
     {
     }
 }

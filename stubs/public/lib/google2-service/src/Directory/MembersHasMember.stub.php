@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class MembersHasMember extends \Google\Model
-{
-    /**
-     * Output only. Identifies whether the given user is a member of the group.
-     * Membership can be direct or nested.
-     *
-     * @var bool
-     */
-    public $isMember;
-    /**
-     * Output only. Identifies whether the given user is a member of the group.
-     * Membership can be direct or nested.
-     *
-     * @param bool $isMember
-     */
-    public function setIsMember($isMember)
+namespace Google\Service\Directory {
+    class MembersHasMember extends \Google\Model
     {
+        /**
+         * Output only. Identifies whether the given user is a member of the group.
+         * Membership can be direct or nested.
+         *
+         * @var bool
+         */
+        public $isMember;
+        /**
+         * Output only. Identifies whether the given user is a member of the group.
+         * Membership can be direct or nested.
+         *
+         * @param bool $isMember
+         */
+        public function setIsMember($isMember)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsMember()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Directory\MembersHasMember registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsMember()
+    class Google_Service_Directory_MembersHasMember extends \Google\Service\Directory\MembersHasMember
     {
     }
 }

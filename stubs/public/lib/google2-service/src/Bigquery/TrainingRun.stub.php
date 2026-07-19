@@ -21,204 +21,213 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TrainingRun extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $classLevelGlobalExplanationsType = GlobalExplanation::class;
-    protected $classLevelGlobalExplanationsDataType = 'array';
-    protected $dataSplitResultType = DataSplitResult::class;
-    protected $dataSplitResultDataType = '';
-    protected $evaluationMetricsType = EvaluationMetrics::class;
-    protected $evaluationMetricsDataType = '';
-    protected $modelLevelGlobalExplanationType = GlobalExplanation::class;
-    protected $modelLevelGlobalExplanationDataType = '';
-    protected $resultsType = IterationResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Output only. The start time of this training run.
-     *
-     * @var string
-     */
-    public $startTime;
-    protected $trainingOptionsType = TrainingOptions::class;
-    protected $trainingOptionsDataType = '';
-    /**
-     * Output only. The start time of this training run, in milliseconds since
-     * epoch.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $trainingStartTime;
-    /**
-     * The model id in the [Vertex AI Model
-     * Registry](https://cloud.google.com/vertex-ai/docs/model-
-     * registry/introduction) for this training run.
-     *
-     * @var string
-     */
-    public $vertexAiModelId;
-    /**
-     * Output only. The model version in the [Vertex AI Model
-     * Registry](https://cloud.google.com/vertex-ai/docs/model-
-     * registry/introduction) for this training run.
-     *
-     * @var string
-     */
-    public $vertexAiModelVersion;
-    /**
-     * Output only. Global explanation contains the explanation of top features on
-     * the class level. Applies to classification models only.
-     *
-     * @param GlobalExplanation[] $classLevelGlobalExplanations
-     */
-    public function setClassLevelGlobalExplanations($classLevelGlobalExplanations)
+namespace Google\Service\Bigquery {
+    class TrainingRun extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $classLevelGlobalExplanationsType = GlobalExplanation::class;
+        protected $classLevelGlobalExplanationsDataType = 'array';
+        protected $dataSplitResultType = DataSplitResult::class;
+        protected $dataSplitResultDataType = '';
+        protected $evaluationMetricsType = EvaluationMetrics::class;
+        protected $evaluationMetricsDataType = '';
+        protected $modelLevelGlobalExplanationType = GlobalExplanation::class;
+        protected $modelLevelGlobalExplanationDataType = '';
+        protected $resultsType = IterationResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Output only. The start time of this training run.
+         *
+         * @var string
+         */
+        public $startTime;
+        protected $trainingOptionsType = TrainingOptions::class;
+        protected $trainingOptionsDataType = '';
+        /**
+         * Output only. The start time of this training run, in milliseconds since
+         * epoch.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $trainingStartTime;
+        /**
+         * The model id in the [Vertex AI Model
+         * Registry](https://cloud.google.com/vertex-ai/docs/model-
+         * registry/introduction) for this training run.
+         *
+         * @var string
+         */
+        public $vertexAiModelId;
+        /**
+         * Output only. The model version in the [Vertex AI Model
+         * Registry](https://cloud.google.com/vertex-ai/docs/model-
+         * registry/introduction) for this training run.
+         *
+         * @var string
+         */
+        public $vertexAiModelVersion;
+        /**
+         * Output only. Global explanation contains the explanation of top features on
+         * the class level. Applies to classification models only.
+         *
+         * @param GlobalExplanation[] $classLevelGlobalExplanations
+         */
+        public function setClassLevelGlobalExplanations($classLevelGlobalExplanations)
+        {
+        }
+        /**
+         * @return GlobalExplanation[]
+         */
+        public function getClassLevelGlobalExplanations()
+        {
+        }
+        /**
+         * Output only. Data split result of the training run. Only set when the input
+         * data is actually split.
+         *
+         * @param DataSplitResult $dataSplitResult
+         */
+        public function setDataSplitResult(DataSplitResult $dataSplitResult)
+        {
+        }
+        /**
+         * @return DataSplitResult
+         */
+        public function getDataSplitResult()
+        {
+        }
+        /**
+         * Output only. The evaluation metrics over training/eval data that were
+         * computed at the end of training.
+         *
+         * @param EvaluationMetrics $evaluationMetrics
+         */
+        public function setEvaluationMetrics(EvaluationMetrics $evaluationMetrics)
+        {
+        }
+        /**
+         * @return EvaluationMetrics
+         */
+        public function getEvaluationMetrics()
+        {
+        }
+        /**
+         * Output only. Global explanation contains the explanation of top features on
+         * the model level. Applies to both regression and classification models.
+         *
+         * @param GlobalExplanation $modelLevelGlobalExplanation
+         */
+        public function setModelLevelGlobalExplanation(GlobalExplanation $modelLevelGlobalExplanation)
+        {
+        }
+        /**
+         * @return GlobalExplanation
+         */
+        public function getModelLevelGlobalExplanation()
+        {
+        }
+        /**
+         * Output only. Output of each iteration run, results.size() <=
+         * max_iterations.
+         *
+         * @param IterationResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return IterationResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Output only. The start time of this training run.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. Options that were used for this training run, includes user
+         * specified and default options that were used.
+         *
+         * @param TrainingOptions $trainingOptions
+         */
+        public function setTrainingOptions(TrainingOptions $trainingOptions)
+        {
+        }
+        /**
+         * @return TrainingOptions
+         */
+        public function getTrainingOptions()
+        {
+        }
+        /**
+         * Output only. The start time of this training run, in milliseconds since
+         * epoch.
+         *
+         * @deprecated
+         * @param string $trainingStartTime
+         */
+        public function setTrainingStartTime($trainingStartTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getTrainingStartTime()
+        {
+        }
+        /**
+         * The model id in the [Vertex AI Model
+         * Registry](https://cloud.google.com/vertex-ai/docs/model-
+         * registry/introduction) for this training run.
+         *
+         * @param string $vertexAiModelId
+         */
+        public function setVertexAiModelId($vertexAiModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVertexAiModelId()
+        {
+        }
+        /**
+         * Output only. The model version in the [Vertex AI Model
+         * Registry](https://cloud.google.com/vertex-ai/docs/model-
+         * registry/introduction) for this training run.
+         *
+         * @param string $vertexAiModelVersion
+         */
+        public function setVertexAiModelVersion($vertexAiModelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVertexAiModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GlobalExplanation[]
+     * Runtime class alias of \Google\Service\Bigquery\TrainingRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassLevelGlobalExplanations()
-    {
-    }
-    /**
-     * Output only. Data split result of the training run. Only set when the input
-     * data is actually split.
-     *
-     * @param DataSplitResult $dataSplitResult
-     */
-    public function setDataSplitResult(DataSplitResult $dataSplitResult)
-    {
-    }
-    /**
-     * @return DataSplitResult
-     */
-    public function getDataSplitResult()
-    {
-    }
-    /**
-     * Output only. The evaluation metrics over training/eval data that were
-     * computed at the end of training.
-     *
-     * @param EvaluationMetrics $evaluationMetrics
-     */
-    public function setEvaluationMetrics(EvaluationMetrics $evaluationMetrics)
-    {
-    }
-    /**
-     * @return EvaluationMetrics
-     */
-    public function getEvaluationMetrics()
-    {
-    }
-    /**
-     * Output only. Global explanation contains the explanation of top features on
-     * the model level. Applies to both regression and classification models.
-     *
-     * @param GlobalExplanation $modelLevelGlobalExplanation
-     */
-    public function setModelLevelGlobalExplanation(GlobalExplanation $modelLevelGlobalExplanation)
-    {
-    }
-    /**
-     * @return GlobalExplanation
-     */
-    public function getModelLevelGlobalExplanation()
-    {
-    }
-    /**
-     * Output only. Output of each iteration run, results.size() <=
-     * max_iterations.
-     *
-     * @param IterationResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return IterationResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Output only. The start time of this training run.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. Options that were used for this training run, includes user
-     * specified and default options that were used.
-     *
-     * @param TrainingOptions $trainingOptions
-     */
-    public function setTrainingOptions(TrainingOptions $trainingOptions)
-    {
-    }
-    /**
-     * @return TrainingOptions
-     */
-    public function getTrainingOptions()
-    {
-    }
-    /**
-     * Output only. The start time of this training run, in milliseconds since
-     * epoch.
-     *
-     * @deprecated
-     * @param string $trainingStartTime
-     */
-    public function setTrainingStartTime($trainingStartTime)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getTrainingStartTime()
-    {
-    }
-    /**
-     * The model id in the [Vertex AI Model
-     * Registry](https://cloud.google.com/vertex-ai/docs/model-
-     * registry/introduction) for this training run.
-     *
-     * @param string $vertexAiModelId
-     */
-    public function setVertexAiModelId($vertexAiModelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVertexAiModelId()
-    {
-    }
-    /**
-     * Output only. The model version in the [Vertex AI Model
-     * Registry](https://cloud.google.com/vertex-ai/docs/model-
-     * registry/introduction) for this training run.
-     *
-     * @param string $vertexAiModelVersion
-     */
-    public function setVertexAiModelVersion($vertexAiModelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVertexAiModelVersion()
+    class Google_Service_Bigquery_TrainingRun extends \Google\Service\Bigquery\TrainingRun
     {
     }
 }

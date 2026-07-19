@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AutomaticResources extends \Google\Model
-{
-    /**
-     * Immutable. The maximum number of replicas that may be deployed on when the
-     * traffic against it increases. If the requested value is too large, the
-     * deployment will error, but if deployment succeeds then the ability to scale
-     * to that many replicas is guaranteed (barring service outages). If traffic
-     * increases beyond what its replicas at maximum may handle, a portion of the
-     * traffic will be dropped. If this value is not provided, a no upper bound
-     * for scaling under heavy traffic will be assume, though Vertex AI may be
-     * unable to scale beyond certain replica number.
-     *
-     * @var int
-     */
-    public $maxReplicaCount;
-    /**
-     * Immutable. The minimum number of replicas that will be always deployed on.
-     * If traffic against it increases, it may dynamically be deployed onto more
-     * replicas up to max_replica_count, and as traffic decreases, some of these
-     * extra replicas may be freed. If the requested value is too large, the
-     * deployment will error.
-     *
-     * @var int
-     */
-    public $minReplicaCount;
-    /**
-     * Immutable. The maximum number of replicas that may be deployed on when the
-     * traffic against it increases. If the requested value is too large, the
-     * deployment will error, but if deployment succeeds then the ability to scale
-     * to that many replicas is guaranteed (barring service outages). If traffic
-     * increases beyond what its replicas at maximum may handle, a portion of the
-     * traffic will be dropped. If this value is not provided, a no upper bound
-     * for scaling under heavy traffic will be assume, though Vertex AI may be
-     * unable to scale beyond certain replica number.
-     *
-     * @param int $maxReplicaCount
-     */
-    public function setMaxReplicaCount($maxReplicaCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AutomaticResources extends \Google\Model
     {
+        /**
+         * Immutable. The maximum number of replicas that may be deployed on when the
+         * traffic against it increases. If the requested value is too large, the
+         * deployment will error, but if deployment succeeds then the ability to scale
+         * to that many replicas is guaranteed (barring service outages). If traffic
+         * increases beyond what its replicas at maximum may handle, a portion of the
+         * traffic will be dropped. If this value is not provided, a no upper bound
+         * for scaling under heavy traffic will be assume, though Vertex AI may be
+         * unable to scale beyond certain replica number.
+         *
+         * @var int
+         */
+        public $maxReplicaCount;
+        /**
+         * Immutable. The minimum number of replicas that will be always deployed on.
+         * If traffic against it increases, it may dynamically be deployed onto more
+         * replicas up to max_replica_count, and as traffic decreases, some of these
+         * extra replicas may be freed. If the requested value is too large, the
+         * deployment will error.
+         *
+         * @var int
+         */
+        public $minReplicaCount;
+        /**
+         * Immutable. The maximum number of replicas that may be deployed on when the
+         * traffic against it increases. If the requested value is too large, the
+         * deployment will error, but if deployment succeeds then the ability to scale
+         * to that many replicas is guaranteed (barring service outages). If traffic
+         * increases beyond what its replicas at maximum may handle, a portion of the
+         * traffic will be dropped. If this value is not provided, a no upper bound
+         * for scaling under heavy traffic will be assume, though Vertex AI may be
+         * unable to scale beyond certain replica number.
+         *
+         * @param int $maxReplicaCount
+         */
+        public function setMaxReplicaCount($maxReplicaCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxReplicaCount()
+        {
+        }
+        /**
+         * Immutable. The minimum number of replicas that will be always deployed on.
+         * If traffic against it increases, it may dynamically be deployed onto more
+         * replicas up to max_replica_count, and as traffic decreases, some of these
+         * extra replicas may be freed. If the requested value is too large, the
+         * deployment will error.
+         *
+         * @param int $minReplicaCount
+         */
+        public function setMinReplicaCount($minReplicaCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinReplicaCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AutomaticResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxReplicaCount()
-    {
-    }
-    /**
-     * Immutable. The minimum number of replicas that will be always deployed on.
-     * If traffic against it increases, it may dynamically be deployed onto more
-     * replicas up to max_replica_count, and as traffic decreases, some of these
-     * extra replicas may be freed. If the requested value is too large, the
-     * deployment will error.
-     *
-     * @param int $minReplicaCount
-     */
-    public function setMinReplicaCount($minReplicaCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinReplicaCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AutomaticResources extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AutomaticResources
     {
     }
 }

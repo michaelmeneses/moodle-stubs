@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class Location extends \Google\Model
-{
-    protected $addressType = PostalAddress::class;
-    protected $addressDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $primaryCategoryId;
-    /**
-     * @var string
-     */
-    public $primaryPhone;
-    /**
-     * @var string
-     */
-    public $websiteUri;
-    /**
-     * @param PostalAddress
-     */
-    public function setAddress(PostalAddress $address)
+namespace Google\Service\MyBusinessVerifications {
+    class Location extends \Google\Model
     {
+        protected $addressType = PostalAddress::class;
+        protected $addressDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $primaryCategoryId;
+        /**
+         * @var string
+         */
+        public $primaryPhone;
+        /**
+         * @var string
+         */
+        public $websiteUri;
+        /**
+         * @param PostalAddress
+         */
+        public function setAddress(PostalAddress $address)
+        {
+        }
+        /**
+         * @return PostalAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryCategoryId($primaryCategoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryCategoryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryPhone($primaryPhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryPhone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebsiteUri($websiteUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostalAddress
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryCategoryId($primaryCategoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryCategoryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryPhone($primaryPhone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryPhone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebsiteUri($websiteUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteUri()
+    class Google_Service_MyBusinessVerifications_Location extends \Google\Service\MyBusinessVerifications\Location
     {
     }
 }

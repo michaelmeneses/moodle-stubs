@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageTableCardRow extends \Google\Collection
-{
-    protected $collection_key = 'cells';
-    protected $cellsType = GoogleCloudDialogflowV2IntentMessageTableCardCell::class;
-    protected $cellsDataType = 'array';
-    /**
-     * Optional. Whether to add a visual divider after this row.
-     *
-     * @var bool
-     */
-    public $dividerAfter;
-    /**
-     * Optional. List of cells that make up this row.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageTableCardCell[] $cells
-     */
-    public function setCells($cells)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageTableCardRow extends \Google\Collection
     {
+        protected $collection_key = 'cells';
+        protected $cellsType = GoogleCloudDialogflowV2IntentMessageTableCardCell::class;
+        protected $cellsDataType = 'array';
+        /**
+         * Optional. Whether to add a visual divider after this row.
+         *
+         * @var bool
+         */
+        public $dividerAfter;
+        /**
+         * Optional. List of cells that make up this row.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageTableCardCell[] $cells
+         */
+        public function setCells($cells)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageTableCardCell[]
+         */
+        public function getCells()
+        {
+        }
+        /**
+         * Optional. Whether to add a visual divider after this row.
+         *
+         * @param bool $dividerAfter
+         */
+        public function setDividerAfter($dividerAfter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDividerAfter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageTableCardCell[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageTableCardRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCells()
-    {
-    }
-    /**
-     * Optional. Whether to add a visual divider after this row.
-     *
-     * @param bool $dividerAfter
-     */
-    public function setDividerAfter($dividerAfter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDividerAfter()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageTableCardRow extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageTableCardRow
     {
     }
 }

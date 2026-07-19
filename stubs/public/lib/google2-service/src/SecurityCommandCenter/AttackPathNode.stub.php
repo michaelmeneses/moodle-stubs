@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AttackPathNode extends \Google\Collection
-{
-    protected $collection_key = 'attackSteps';
-    protected $associatedFindingsType = PathNodeAssociatedFinding::class;
-    protected $associatedFindingsDataType = 'array';
-    protected $attackStepsType = AttackStepNode::class;
-    protected $attackStepsDataType = 'array';
-    /**
-     * Human-readable name of this resource.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The name of the resource at this point in the attack path. The format of
-     * the name follows the Cloud Asset Inventory [resource name
-     * format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The [supported resource type](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types)
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Unique id of the attack path node.
-     *
-     * @var string
-     */
-    public $uuid;
-    /**
-     * The findings associated with this node in the attack path.
-     *
-     * @param PathNodeAssociatedFinding[] $associatedFindings
-     */
-    public function setAssociatedFindings($associatedFindings)
+namespace Google\Service\SecurityCommandCenter {
+    class AttackPathNode extends \Google\Collection
     {
+        protected $collection_key = 'attackSteps';
+        protected $associatedFindingsType = PathNodeAssociatedFinding::class;
+        protected $associatedFindingsDataType = 'array';
+        protected $attackStepsType = AttackStepNode::class;
+        protected $attackStepsDataType = 'array';
+        /**
+         * Human-readable name of this resource.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The name of the resource at this point in the attack path. The format of
+         * the name follows the Cloud Asset Inventory [resource name
+         * format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The [supported resource type](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types)
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Unique id of the attack path node.
+         *
+         * @var string
+         */
+        public $uuid;
+        /**
+         * The findings associated with this node in the attack path.
+         *
+         * @param PathNodeAssociatedFinding[] $associatedFindings
+         */
+        public function setAssociatedFindings($associatedFindings)
+        {
+        }
+        /**
+         * @return PathNodeAssociatedFinding[]
+         */
+        public function getAssociatedFindings()
+        {
+        }
+        /**
+         * A list of attack step nodes that exist in this attack path node.
+         *
+         * @param AttackStepNode[] $attackSteps
+         */
+        public function setAttackSteps($attackSteps)
+        {
+        }
+        /**
+         * @return AttackStepNode[]
+         */
+        public function getAttackSteps()
+        {
+        }
+        /**
+         * Human-readable name of this resource.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The name of the resource at this point in the attack path. The format of
+         * the name follows the Cloud Asset Inventory [resource name
+         * format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The [supported resource type](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types)
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * Unique id of the attack path node.
+         *
+         * @param string $uuid
+         */
+        public function setUuid($uuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PathNodeAssociatedFinding[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AttackPathNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssociatedFindings()
-    {
-    }
-    /**
-     * A list of attack step nodes that exist in this attack path node.
-     *
-     * @param AttackStepNode[] $attackSteps
-     */
-    public function setAttackSteps($attackSteps)
-    {
-    }
-    /**
-     * @return AttackStepNode[]
-     */
-    public function getAttackSteps()
-    {
-    }
-    /**
-     * Human-readable name of this resource.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The name of the resource at this point in the attack path. The format of
-     * the name follows the Cloud Asset Inventory [resource name
-     * format](https://cloud.google.com/asset-inventory/docs/resource-name-format)
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The [supported resource type](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types)
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * Unique id of the attack path node.
-     *
-     * @param string $uuid
-     */
-    public function setUuid($uuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUuid()
+    class Google_Service_SecurityCommandCenter_AttackPathNode extends \Google\Service\SecurityCommandCenter\AttackPathNode
     {
     }
 }

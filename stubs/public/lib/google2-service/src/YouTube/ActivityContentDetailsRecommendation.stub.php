@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetailsRecommendation extends \Google\Model
-{
-    public const REASON_reasonUnspecified = 'reasonUnspecified';
-    public const REASON_videoFavorited = 'videoFavorited';
-    public const REASON_videoLiked = 'videoLiked';
-    public const REASON_videoWatched = 'videoWatched';
-    /**
-     * The reason that the resource is recommended to the user.
-     *
-     * @var string
-     */
-    public $reason;
-    protected $resourceIdType = ResourceId::class;
-    protected $resourceIdDataType = '';
-    protected $seedResourceIdType = ResourceId::class;
-    protected $seedResourceIdDataType = '';
-    /**
-     * The reason that the resource is recommended to the user.
-     *
-     * Accepted values: reasonUnspecified, videoFavorited, videoLiked,
-     * videoWatched
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\YouTube {
+    class ActivityContentDetailsRecommendation extends \Google\Model
     {
+        public const REASON_reasonUnspecified = 'reasonUnspecified';
+        public const REASON_videoFavorited = 'videoFavorited';
+        public const REASON_videoLiked = 'videoLiked';
+        public const REASON_videoWatched = 'videoWatched';
+        /**
+         * The reason that the resource is recommended to the user.
+         *
+         * @var string
+         */
+        public $reason;
+        protected $resourceIdType = ResourceId::class;
+        protected $resourceIdDataType = '';
+        protected $seedResourceIdType = ResourceId::class;
+        protected $seedResourceIdDataType = '';
+        /**
+         * The reason that the resource is recommended to the user.
+         *
+         * Accepted values: reasonUnspecified, videoFavorited, videoLiked,
+         * videoWatched
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * The resourceId object contains information that identifies the recommended
+         * resource.
+         *
+         * @param ResourceId $resourceId
+         */
+        public function setResourceId(ResourceId $resourceId)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * The seedResourceId object contains information about the resource that
+         * caused the recommendation.
+         *
+         * @param ResourceId $seedResourceId
+         */
+        public function setSeedResourceId(ResourceId $seedResourceId)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getSeedResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::REASON_*
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetailsRecommendation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
-    {
-    }
-    /**
-     * The resourceId object contains information that identifies the recommended
-     * resource.
-     *
-     * @param ResourceId $resourceId
-     */
-    public function setResourceId(ResourceId $resourceId)
-    {
-    }
-    /**
-     * @return ResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * The seedResourceId object contains information about the resource that
-     * caused the recommendation.
-     *
-     * @param ResourceId $seedResourceId
-     */
-    public function setSeedResourceId(ResourceId $seedResourceId)
-    {
-    }
-    /**
-     * @return ResourceId
-     */
-    public function getSeedResourceId()
+    class Google_Service_YouTube_ActivityContentDetailsRecommendation extends \Google\Service\YouTube\ActivityContentDetailsRecommendation
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1GcsSource extends \Google\Model
-{
-    /**
-     * Required. The input URI of source file. This must be a Cloud Storage path
-     * (`gs://...`).
-     *
-     * @var string
-     */
-    public $inputUri;
-    /**
-     * Required. The format of the source file. Only "text/csv" is supported.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. The input URI of source file. This must be a Cloud Storage path
-     * (`gs://...`).
-     *
-     * @param string $inputUri
-     */
-    public function setInputUri($inputUri)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1GcsSource extends \Google\Model
     {
+        /**
+         * Required. The input URI of source file. This must be a Cloud Storage path
+         * (`gs://...`).
+         *
+         * @var string
+         */
+        public $inputUri;
+        /**
+         * Required. The format of the source file. Only "text/csv" is supported.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. The input URI of source file. This must be a Cloud Storage path
+         * (`gs://...`).
+         *
+         * @param string $inputUri
+         */
+        public function setInputUri($inputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputUri()
+        {
+        }
+        /**
+         * Required. The format of the source file. Only "text/csv" is supported.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1GcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputUri()
-    {
-    }
-    /**
-     * Required. The format of the source file. Only "text/csv" is supported.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1GcsSource extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1GcsSource
     {
     }
 }

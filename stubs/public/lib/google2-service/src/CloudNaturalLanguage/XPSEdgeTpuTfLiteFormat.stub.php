@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSEdgeTpuTfLiteFormat extends \Google\Model
-{
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSEdgeTpuTfLiteFormat extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSEdgeTpuTfLiteFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudNaturalLanguage_XPSEdgeTpuTfLiteFormat extends \Google\Service\CloudNaturalLanguage\XPSEdgeTpuTfLiteFormat
+    {
+    }
 }

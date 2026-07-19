@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupPhysicalStructure extends \Google\Collection
-{
-    protected $collection_key = 'metros';
-    protected $metrosType = InterconnectGroupPhysicalStructureMetros::class;
-    protected $metrosDataType = 'array';
-    /**
-     * @param InterconnectGroupPhysicalStructureMetros[] $metros
-     */
-    public function setMetros($metros)
+namespace Google\Service\Compute {
+    class InterconnectGroupPhysicalStructure extends \Google\Collection
     {
+        protected $collection_key = 'metros';
+        protected $metrosType = InterconnectGroupPhysicalStructureMetros::class;
+        protected $metrosDataType = 'array';
+        /**
+         * @param InterconnectGroupPhysicalStructureMetros[] $metros
+         */
+        public function setMetros($metros)
+        {
+        }
+        /**
+         * @return InterconnectGroupPhysicalStructureMetros[]
+         */
+        public function getMetros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectGroupPhysicalStructureMetros[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupPhysicalStructure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetros()
+    class Google_Service_Compute_InterconnectGroupPhysicalStructure extends \Google\Service\Compute\InterconnectGroupPhysicalStructure
     {
     }
 }

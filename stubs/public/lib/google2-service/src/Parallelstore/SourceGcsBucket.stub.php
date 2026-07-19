@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Parallelstore;
-
-class SourceGcsBucket extends \Google\Model
-{
-    /**
-     * Required. URI to a Cloud Storage bucket in the format: `gs:`. The path
-     * inside the bucket is optional.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. URI to a Cloud Storage bucket in the format: `gs:`. The path
-     * inside the bucket is optional.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Parallelstore {
+    class SourceGcsBucket extends \Google\Model
     {
+        /**
+         * Required. URI to a Cloud Storage bucket in the format: `gs:`. The path
+         * inside the bucket is optional.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. URI to a Cloud Storage bucket in the format: `gs:`. The path
+         * inside the bucket is optional.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Parallelstore\SourceGcsBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Parallelstore_SourceGcsBucket extends \Google\Service\Parallelstore\SourceGcsBucket
     {
     }
 }

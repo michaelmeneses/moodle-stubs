@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaTransformedUserEventsMetadata extends \Google\Model
-{
-    /**
-     * Count of entries in the source user events BigQuery table.
-     *
-     * @var string
-     */
-    public $sourceEventsCount;
-    /**
-     * Count of entries in the transformed user events BigQuery table, which could
-     * be different from the actually imported number of user events.
-     *
-     * @var string
-     */
-    public $transformedEventsCount;
-    /**
-     * Count of entries in the source user events BigQuery table.
-     *
-     * @param string $sourceEventsCount
-     */
-    public function setSourceEventsCount($sourceEventsCount)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaTransformedUserEventsMetadata extends \Google\Model
     {
+        /**
+         * Count of entries in the source user events BigQuery table.
+         *
+         * @var string
+         */
+        public $sourceEventsCount;
+        /**
+         * Count of entries in the transformed user events BigQuery table, which could
+         * be different from the actually imported number of user events.
+         *
+         * @var string
+         */
+        public $transformedEventsCount;
+        /**
+         * Count of entries in the source user events BigQuery table.
+         *
+         * @param string $sourceEventsCount
+         */
+        public function setSourceEventsCount($sourceEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceEventsCount()
+        {
+        }
+        /**
+         * Count of entries in the transformed user events BigQuery table, which could
+         * be different from the actually imported number of user events.
+         *
+         * @param string $transformedEventsCount
+         */
+        public function setTransformedEventsCount($transformedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformedEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaTransformedUserEventsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceEventsCount()
-    {
-    }
-    /**
-     * Count of entries in the transformed user events BigQuery table, which could
-     * be different from the actually imported number of user events.
-     *
-     * @param string $transformedEventsCount
-     */
-    public function setTransformedEventsCount($transformedEventsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransformedEventsCount()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaTransformedUserEventsMetadata extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaTransformedUserEventsMetadata
     {
     }
 }

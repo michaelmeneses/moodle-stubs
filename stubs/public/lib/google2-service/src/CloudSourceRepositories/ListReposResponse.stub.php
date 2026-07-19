@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class ListReposResponse extends \Google\Collection
-{
-    protected $collection_key = 'repos';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reposType = Repo::class;
-    protected $reposDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudSourceRepositories {
+    class ListReposResponse extends \Google\Collection
     {
+        protected $collection_key = 'repos';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reposType = Repo::class;
+        protected $reposDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Repo[]
+         */
+        public function setRepos($repos)
+        {
+        }
+        /**
+         * @return Repo[]
+         */
+        public function getRepos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\ListReposResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Repo[]
-     */
-    public function setRepos($repos)
-    {
-    }
-    /**
-     * @return Repo[]
-     */
-    public function getRepos()
+    class Google_Service_CloudSourceRepositories_ListReposResponse extends \Google\Service\CloudSourceRepositories\ListReposResponse
     {
     }
 }

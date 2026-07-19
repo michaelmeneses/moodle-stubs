@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslPoliciesListAvailableFeaturesResponse extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    /**
-     * @var string[]
-     */
-    public $features;
-    /**
-     * @param string[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\Compute {
+    class SslPoliciesListAvailableFeaturesResponse extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        /**
+         * @var string[]
+         */
+        public $features;
+        /**
+         * @param string[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\SslPoliciesListAvailableFeaturesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
+    class Google_Service_Compute_SslPoliciesListAvailableFeaturesResponse extends \Google\Service\Compute\SslPoliciesListAvailableFeaturesResponse
     {
     }
 }

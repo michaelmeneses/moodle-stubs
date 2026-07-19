@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkup extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = GoogleChatV1WidgetMarkupButton::class;
-    protected $buttonsDataType = 'array';
-    protected $imageType = GoogleChatV1WidgetMarkupImage::class;
-    protected $imageDataType = '';
-    protected $keyValueType = GoogleChatV1WidgetMarkupKeyValue::class;
-    protected $keyValueDataType = '';
-    protected $textParagraphType = GoogleChatV1WidgetMarkupTextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * @param GoogleChatV1WidgetMarkupButton[]
-     */
-    public function setButtons($buttons)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkup extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = GoogleChatV1WidgetMarkupButton::class;
+        protected $buttonsDataType = 'array';
+        protected $imageType = GoogleChatV1WidgetMarkupImage::class;
+        protected $imageDataType = '';
+        protected $keyValueType = GoogleChatV1WidgetMarkupKeyValue::class;
+        protected $keyValueDataType = '';
+        protected $textParagraphType = GoogleChatV1WidgetMarkupTextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * @param GoogleChatV1WidgetMarkupButton[]
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupButton[]
+         */
+        public function getButtons()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupImage
+         */
+        public function setImage(GoogleChatV1WidgetMarkupImage $image)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupKeyValue
+         */
+        public function setKeyValue(GoogleChatV1WidgetMarkupKeyValue $keyValue)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupKeyValue
+         */
+        public function getKeyValue()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupTextParagraph
+         */
+        public function setTextParagraph(GoogleChatV1WidgetMarkupTextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupTextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1WidgetMarkupButton[]
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupImage
-     */
-    public function setImage(GoogleChatV1WidgetMarkupImage $image)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupKeyValue
-     */
-    public function setKeyValue(GoogleChatV1WidgetMarkupKeyValue $keyValue)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupKeyValue
-     */
-    public function getKeyValue()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupTextParagraph
-     */
-    public function setTextParagraph(GoogleChatV1WidgetMarkupTextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupTextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkup extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkup
     {
     }
 }

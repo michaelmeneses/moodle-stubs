@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceIAP extends \Google\Model
-{
-    /**
-     * Whether the serving infrastructure will authenticate and authorize all
-     * incoming requests.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * OAuth2 client ID to use for the authentication flow.
-     *
-     * @var string
-     */
-    public $oauth2ClientId;
-    /**
-     * OAuth2 client secret to use for the authentication flow. For security
-     * reasons, this value cannot be retrieved via the API. Instead, the SHA-256
-     * hash of the value is returned in the oauth2ClientSecretSha256 field.
-     *
-     * @InputOnly
-     *
-     * @var string
-     */
-    public $oauth2ClientSecret;
-    /**
-     * Output only. [Output Only] SHA256 hash value for the field
-     * oauth2_client_secret above.
-     *
-     * @var string
-     */
-    public $oauth2ClientSecretSha256;
-    /**
-     * Whether the serving infrastructure will authenticate and authorize all
-     * incoming requests.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Compute {
+    class BackendServiceIAP extends \Google\Model
     {
+        /**
+         * Whether the serving infrastructure will authenticate and authorize all
+         * incoming requests.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * OAuth2 client ID to use for the authentication flow.
+         *
+         * @var string
+         */
+        public $oauth2ClientId;
+        /**
+         * OAuth2 client secret to use for the authentication flow. For security
+         * reasons, this value cannot be retrieved via the API. Instead, the SHA-256
+         * hash of the value is returned in the oauth2ClientSecretSha256 field.
+         *
+         * @InputOnly
+         *
+         * @var string
+         */
+        public $oauth2ClientSecret;
+        /**
+         * Output only. [Output Only] SHA256 hash value for the field
+         * oauth2_client_secret above.
+         *
+         * @var string
+         */
+        public $oauth2ClientSecretSha256;
+        /**
+         * Whether the serving infrastructure will authenticate and authorize all
+         * incoming requests.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * OAuth2 client ID to use for the authentication flow.
+         *
+         * @param string $oauth2ClientId
+         */
+        public function setOauth2ClientId($oauth2ClientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauth2ClientId()
+        {
+        }
+        /**
+         * OAuth2 client secret to use for the authentication flow. For security
+         * reasons, this value cannot be retrieved via the API. Instead, the SHA-256
+         * hash of the value is returned in the oauth2ClientSecretSha256 field.
+         *
+         * @InputOnly
+         *
+         * @param string $oauth2ClientSecret
+         */
+        public function setOauth2ClientSecret($oauth2ClientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauth2ClientSecret()
+        {
+        }
+        /**
+         * Output only. [Output Only] SHA256 hash value for the field
+         * oauth2_client_secret above.
+         *
+         * @param string $oauth2ClientSecretSha256
+         */
+        public function setOauth2ClientSecretSha256($oauth2ClientSecretSha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauth2ClientSecretSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\BackendServiceIAP registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * OAuth2 client ID to use for the authentication flow.
-     *
-     * @param string $oauth2ClientId
-     */
-    public function setOauth2ClientId($oauth2ClientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauth2ClientId()
-    {
-    }
-    /**
-     * OAuth2 client secret to use for the authentication flow. For security
-     * reasons, this value cannot be retrieved via the API. Instead, the SHA-256
-     * hash of the value is returned in the oauth2ClientSecretSha256 field.
-     *
-     * @InputOnly
-     *
-     * @param string $oauth2ClientSecret
-     */
-    public function setOauth2ClientSecret($oauth2ClientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauth2ClientSecret()
-    {
-    }
-    /**
-     * Output only. [Output Only] SHA256 hash value for the field
-     * oauth2_client_secret above.
-     *
-     * @param string $oauth2ClientSecretSha256
-     */
-    public function setOauth2ClientSecretSha256($oauth2ClientSecretSha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauth2ClientSecretSha256()
+    class Google_Service_Compute_BackendServiceIAP extends \Google\Service\Compute\BackendServiceIAP
     {
     }
 }

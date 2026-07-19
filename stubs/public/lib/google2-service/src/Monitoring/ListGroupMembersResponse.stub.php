@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListGroupMembersResponse extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    protected $membersType = MonitoredResource::class;
-    protected $membersDataType = 'array';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of elements matching this request.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * A set of monitored resources in the group.
-     *
-     * @param MonitoredResource[] $members
-     */
-    public function setMembers($members)
+namespace Google\Service\Monitoring {
+    class ListGroupMembersResponse extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        protected $membersType = MonitoredResource::class;
+        protected $membersDataType = 'array';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of elements matching this request.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * A set of monitored resources in the group.
+         *
+         * @param MonitoredResource[] $members
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return MonitoredResource[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of elements matching this request.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MonitoredResource[]
+     * Runtime class alias of \Google\Service\Monitoring\ListGroupMembersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembers()
-    {
-    }
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of elements matching this request.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Monitoring_ListGroupMembersResponse extends \Google\Service\Monitoring\ListGroupMembersResponse
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2GetTreeResponse extends \Google\Collection
-{
-    protected $collection_key = 'directories';
-    protected $directoriesType = BuildBazelRemoteExecutionV2Directory::class;
-    protected $directoriesDataType = 'array';
-    public $nextPageToken;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2GetTreeResponse extends \Google\Collection
+    {
+        protected $collection_key = 'directories';
+        protected $directoriesType = BuildBazelRemoteExecutionV2Directory::class;
+        protected $directoriesDataType = 'array';
+        public $nextPageToken;
+        /**
+         * @param BuildBazelRemoteExecutionV2Directory[]
+         */
+        public function setDirectories($directories)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Directory[]
+         */
+        public function getDirectories()
+        {
+        }
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Directory[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2GetTreeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDirectories($directories)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Directory[]
-     */
-    public function getDirectories()
-    {
-    }
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    public function getNextPageToken()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2GetTreeResponse extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2GetTreeResponse
     {
     }
 }

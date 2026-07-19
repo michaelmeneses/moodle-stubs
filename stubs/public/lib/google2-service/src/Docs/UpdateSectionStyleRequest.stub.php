@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class UpdateSectionStyleRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `section_style` is implied and must not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the left margin, set `fields` to `"margin_left"`.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $rangeType = Range::class;
-    protected $rangeDataType = '';
-    protected $sectionStyleType = SectionStyle::class;
-    protected $sectionStyleDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `section_style` is implied and must not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the left margin, set `fields` to `"margin_left"`.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Docs {
+    class UpdateSectionStyleRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `section_style` is implied and must not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the left margin, set `fields` to `"margin_left"`.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $rangeType = Range::class;
+        protected $rangeDataType = '';
+        protected $sectionStyleType = SectionStyle::class;
+        protected $sectionStyleDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `section_style` is implied and must not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the left margin, set `fields` to `"margin_left"`.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The range overlapping the sections to style. Because section breaks can
+         * only be inserted inside the body, the segment ID field must be empty.
+         *
+         * @param Range $range
+         */
+        public function setRange(Range $range)
+        {
+        }
+        /**
+         * @return Range
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The styles to be set on the section. Certain section style changes may
+         * cause other changes in order to mirror the behavior of the Docs editor. See
+         * the documentation of SectionStyle for more information.
+         *
+         * @param SectionStyle $sectionStyle
+         */
+        public function setSectionStyle(SectionStyle $sectionStyle)
+        {
+        }
+        /**
+         * @return SectionStyle
+         */
+        public function getSectionStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\UpdateSectionStyleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The range overlapping the sections to style. Because section breaks can
-     * only be inserted inside the body, the segment ID field must be empty.
-     *
-     * @param Range $range
-     */
-    public function setRange(Range $range)
-    {
-    }
-    /**
-     * @return Range
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The styles to be set on the section. Certain section style changes may
-     * cause other changes in order to mirror the behavior of the Docs editor. See
-     * the documentation of SectionStyle for more information.
-     *
-     * @param SectionStyle $sectionStyle
-     */
-    public function setSectionStyle(SectionStyle $sectionStyle)
-    {
-    }
-    /**
-     * @return SectionStyle
-     */
-    public function getSectionStyle()
+    class Google_Service_Docs_UpdateSectionStyleRequest extends \Google\Service\Docs\UpdateSectionStyleRequest
     {
     }
 }

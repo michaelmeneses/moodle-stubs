@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequestBigQueryDestination extends \Google\Model
-{
-    /**
-     * Required. The name of the BigQuery dataset that the snapshot result should
-     * be exported to. If this dataset does not exist, the export call returns an
-     * INVALID_ARGUMENT error.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * A project ID or number. If specified, then export will attempt to write
-     * data to this project instead of the resource project. Otherwise, the
-     * resource project will be used.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The BigQuery table name to which the insights data should be written. If
-     * this table does not exist, the export call returns an INVALID_ARGUMENT
-     * error.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Required. The name of the BigQuery dataset that the snapshot result should
-     * be exported to. If this dataset does not exist, the export call returns an
-     * INVALID_ARGUMENT error.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequestBigQueryDestination extends \Google\Model
     {
+        /**
+         * Required. The name of the BigQuery dataset that the snapshot result should
+         * be exported to. If this dataset does not exist, the export call returns an
+         * INVALID_ARGUMENT error.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * A project ID or number. If specified, then export will attempt to write
+         * data to this project instead of the resource project. Otherwise, the
+         * resource project will be used.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The BigQuery table name to which the insights data should be written. If
+         * this table does not exist, the export call returns an INVALID_ARGUMENT
+         * error.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Required. The name of the BigQuery dataset that the snapshot result should
+         * be exported to. If this dataset does not exist, the export call returns an
+         * INVALID_ARGUMENT error.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * A project ID or number. If specified, then export will attempt to write
+         * data to this project instead of the resource project. Otherwise, the
+         * resource project will be used.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * The BigQuery table name to which the insights data should be written. If
+         * this table does not exist, the export call returns an INVALID_ARGUMENT
+         * error.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequestBigQueryDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * A project ID or number. If specified, then export will attempt to write
-     * data to this project instead of the resource project. Otherwise, the
-     * resource project will be used.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * The BigQuery table name to which the insights data should be written. If
-     * this table does not exist, the export call returns an INVALID_ARGUMENT
-     * error.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequestBigQueryDestination extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequestBigQueryDestination
     {
     }
 }

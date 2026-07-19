@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class KeyUsage extends \Google\Collection
-{
-    protected $collection_key = 'unknownExtendedKeyUsages';
-    protected $baseKeyUsageType = KeyUsageOptions::class;
-    protected $baseKeyUsageDataType = '';
-    protected $extendedKeyUsageType = ExtendedKeyUsageOptions::class;
-    protected $extendedKeyUsageDataType = '';
-    protected $unknownExtendedKeyUsagesType = ObjectId::class;
-    protected $unknownExtendedKeyUsagesDataType = 'array';
-    /**
-     * Describes high-level ways in which a key may be used.
-     *
-     * @param KeyUsageOptions $baseKeyUsage
-     */
-    public function setBaseKeyUsage(KeyUsageOptions $baseKeyUsage)
+namespace Google\Service\CertificateAuthorityService {
+    class KeyUsage extends \Google\Collection
     {
+        protected $collection_key = 'unknownExtendedKeyUsages';
+        protected $baseKeyUsageType = KeyUsageOptions::class;
+        protected $baseKeyUsageDataType = '';
+        protected $extendedKeyUsageType = ExtendedKeyUsageOptions::class;
+        protected $extendedKeyUsageDataType = '';
+        protected $unknownExtendedKeyUsagesType = ObjectId::class;
+        protected $unknownExtendedKeyUsagesDataType = 'array';
+        /**
+         * Describes high-level ways in which a key may be used.
+         *
+         * @param KeyUsageOptions $baseKeyUsage
+         */
+        public function setBaseKeyUsage(KeyUsageOptions $baseKeyUsage)
+        {
+        }
+        /**
+         * @return KeyUsageOptions
+         */
+        public function getBaseKeyUsage()
+        {
+        }
+        /**
+         * Detailed scenarios in which a key may be used.
+         *
+         * @param ExtendedKeyUsageOptions $extendedKeyUsage
+         */
+        public function setExtendedKeyUsage(ExtendedKeyUsageOptions $extendedKeyUsage)
+        {
+        }
+        /**
+         * @return ExtendedKeyUsageOptions
+         */
+        public function getExtendedKeyUsage()
+        {
+        }
+        /**
+         * Used to describe extended key usages that are not listed in the
+         * KeyUsage.ExtendedKeyUsageOptions message.
+         *
+         * @param ObjectId[] $unknownExtendedKeyUsages
+         */
+        public function setUnknownExtendedKeyUsages($unknownExtendedKeyUsages)
+        {
+        }
+        /**
+         * @return ObjectId[]
+         */
+        public function getUnknownExtendedKeyUsages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyUsageOptions
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\KeyUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseKeyUsage()
-    {
-    }
-    /**
-     * Detailed scenarios in which a key may be used.
-     *
-     * @param ExtendedKeyUsageOptions $extendedKeyUsage
-     */
-    public function setExtendedKeyUsage(ExtendedKeyUsageOptions $extendedKeyUsage)
-    {
-    }
-    /**
-     * @return ExtendedKeyUsageOptions
-     */
-    public function getExtendedKeyUsage()
-    {
-    }
-    /**
-     * Used to describe extended key usages that are not listed in the
-     * KeyUsage.ExtendedKeyUsageOptions message.
-     *
-     * @param ObjectId[] $unknownExtendedKeyUsages
-     */
-    public function setUnknownExtendedKeyUsages($unknownExtendedKeyUsages)
-    {
-    }
-    /**
-     * @return ObjectId[]
-     */
-    public function getUnknownExtendedKeyUsages()
+    class Google_Service_CertificateAuthorityService_KeyUsage extends \Google\Service\CertificateAuthorityService\KeyUsage
     {
     }
 }

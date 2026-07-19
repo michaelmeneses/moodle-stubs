@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListInboundSamlSsoProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'inboundSamlSsoProfiles';
-    protected $inboundSamlSsoProfilesType = InboundSamlSsoProfile::class;
-    protected $inboundSamlSsoProfilesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of InboundSamlSsoProfiles.
-     *
-     * @param InboundSamlSsoProfile[] $inboundSamlSsoProfiles
-     */
-    public function setInboundSamlSsoProfiles($inboundSamlSsoProfiles)
+namespace Google\Service\CloudIdentity {
+    class ListInboundSamlSsoProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'inboundSamlSsoProfiles';
+        protected $inboundSamlSsoProfilesType = InboundSamlSsoProfile::class;
+        protected $inboundSamlSsoProfilesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of InboundSamlSsoProfiles.
+         *
+         * @param InboundSamlSsoProfile[] $inboundSamlSsoProfiles
+         */
+        public function setInboundSamlSsoProfiles($inboundSamlSsoProfiles)
+        {
+        }
+        /**
+         * @return InboundSamlSsoProfile[]
+         */
+        public function getInboundSamlSsoProfiles()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InboundSamlSsoProfile[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ListInboundSamlSsoProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundSamlSsoProfiles()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_ListInboundSamlSsoProfilesResponse extends \Google\Service\CloudIdentity\ListInboundSamlSsoProfilesResponse
     {
     }
 }

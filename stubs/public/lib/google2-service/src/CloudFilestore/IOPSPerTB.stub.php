@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class IOPSPerTB extends \Google\Model
-{
-    /**
-     * Required. Maximum IOPS per TiB.
-     *
-     * @var string
-     */
-    public $maxIopsPerTb;
-    /**
-     * Required. Maximum IOPS per TiB.
-     *
-     * @param string $maxIopsPerTb
-     */
-    public function setMaxIopsPerTb($maxIopsPerTb)
+namespace Google\Service\CloudFilestore {
+    class IOPSPerTB extends \Google\Model
     {
+        /**
+         * Required. Maximum IOPS per TiB.
+         *
+         * @var string
+         */
+        public $maxIopsPerTb;
+        /**
+         * Required. Maximum IOPS per TiB.
+         *
+         * @param string $maxIopsPerTb
+         */
+        public function setMaxIopsPerTb($maxIopsPerTb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxIopsPerTb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\IOPSPerTB registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxIopsPerTb()
+    class Google_Service_CloudFilestore_IOPSPerTB extends \Google\Service\CloudFilestore\IOPSPerTB
     {
     }
 }

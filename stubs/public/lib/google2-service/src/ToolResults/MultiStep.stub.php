@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class MultiStep extends \Google\Model
-{
-    /**
-     * Unique int given to each step. Ranges from 0(inclusive) to total number of
-     * steps(exclusive). The primary step is 0.
-     *
-     * @var int
-     */
-    public $multistepNumber;
-    protected $primaryStepType = PrimaryStep::class;
-    protected $primaryStepDataType = '';
-    /**
-     * Step Id of the primary (original) step, which might be this step.
-     *
-     * @var string
-     */
-    public $primaryStepId;
-    /**
-     * Unique int given to each step. Ranges from 0(inclusive) to total number of
-     * steps(exclusive). The primary step is 0.
-     *
-     * @param int $multistepNumber
-     */
-    public function setMultistepNumber($multistepNumber)
+namespace Google\Service\ToolResults {
+    class MultiStep extends \Google\Model
     {
+        /**
+         * Unique int given to each step. Ranges from 0(inclusive) to total number of
+         * steps(exclusive). The primary step is 0.
+         *
+         * @var int
+         */
+        public $multistepNumber;
+        protected $primaryStepType = PrimaryStep::class;
+        protected $primaryStepDataType = '';
+        /**
+         * Step Id of the primary (original) step, which might be this step.
+         *
+         * @var string
+         */
+        public $primaryStepId;
+        /**
+         * Unique int given to each step. Ranges from 0(inclusive) to total number of
+         * steps(exclusive). The primary step is 0.
+         *
+         * @param int $multistepNumber
+         */
+        public function setMultistepNumber($multistepNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMultistepNumber()
+        {
+        }
+        /**
+         * Present if it is a primary (original) step.
+         *
+         * @param PrimaryStep $primaryStep
+         */
+        public function setPrimaryStep(PrimaryStep $primaryStep)
+        {
+        }
+        /**
+         * @return PrimaryStep
+         */
+        public function getPrimaryStep()
+        {
+        }
+        /**
+         * Step Id of the primary (original) step, which might be this step.
+         *
+         * @param string $primaryStepId
+         */
+        public function setPrimaryStepId($primaryStepId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryStepId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\MultiStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultistepNumber()
-    {
-    }
-    /**
-     * Present if it is a primary (original) step.
-     *
-     * @param PrimaryStep $primaryStep
-     */
-    public function setPrimaryStep(PrimaryStep $primaryStep)
-    {
-    }
-    /**
-     * @return PrimaryStep
-     */
-    public function getPrimaryStep()
-    {
-    }
-    /**
-     * Step Id of the primary (original) step, which might be this step.
-     *
-     * @param string $primaryStepId
-     */
-    public function setPrimaryStepId($primaryStepId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryStepId()
+    class Google_Service_ToolResults_MultiStep extends \Google\Service\ToolResults\MultiStep
     {
     }
 }

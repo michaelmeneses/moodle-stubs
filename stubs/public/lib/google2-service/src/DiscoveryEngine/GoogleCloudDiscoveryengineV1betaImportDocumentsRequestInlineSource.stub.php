@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaImportDocumentsRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    protected $documentsType = GoogleCloudDiscoveryengineV1betaDocument::class;
-    protected $documentsDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDocument[]
-     */
-    public function setDocuments($documents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaImportDocumentsRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        protected $documentsType = GoogleCloudDiscoveryengineV1betaDocument::class;
+        protected $documentsDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDocument[]
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDocument[]
+         */
+        public function getDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaDocument[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportDocumentsRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaImportDocumentsRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportDocumentsRequestInlineSource
     {
     }
 }

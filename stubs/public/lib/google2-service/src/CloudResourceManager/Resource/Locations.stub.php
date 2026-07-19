@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
- *   $locations = $cloudresourcemanagerService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudResourceManager\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
+     *   $locations = $cloudresourcemanagerService->locations;
+     *  </code>
+     */
+    class Locations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudResourceManager\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudResourceManager_Resource_Locations extends \Google\Service\CloudResourceManager\Resource\Locations
+    {
+    }
 }

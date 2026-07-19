@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupLock extends \Google\Model
-{
-    protected $backupApplianceLockInfoType = BackupApplianceLockInfo::class;
-    protected $backupApplianceLockInfoDataType = '';
-    /**
-     * Required. The time after which this lock is not considered valid and will
-     * no longer protect the Backup from deletion.
-     *
-     * @var string
-     */
-    public $lockUntilTime;
-    protected $serviceLockInfoType = ServiceLockInfo::class;
-    protected $serviceLockInfoDataType = '';
-    /**
-     * If the client is a backup and recovery appliance, this contains metadata
-     * about why the lock exists.
-     *
-     * @param BackupApplianceLockInfo $backupApplianceLockInfo
-     */
-    public function setBackupApplianceLockInfo(BackupApplianceLockInfo $backupApplianceLockInfo)
+namespace Google\Service\Backupdr {
+    class BackupLock extends \Google\Model
     {
+        protected $backupApplianceLockInfoType = BackupApplianceLockInfo::class;
+        protected $backupApplianceLockInfoDataType = '';
+        /**
+         * Required. The time after which this lock is not considered valid and will
+         * no longer protect the Backup from deletion.
+         *
+         * @var string
+         */
+        public $lockUntilTime;
+        protected $serviceLockInfoType = ServiceLockInfo::class;
+        protected $serviceLockInfoDataType = '';
+        /**
+         * If the client is a backup and recovery appliance, this contains metadata
+         * about why the lock exists.
+         *
+         * @param BackupApplianceLockInfo $backupApplianceLockInfo
+         */
+        public function setBackupApplianceLockInfo(BackupApplianceLockInfo $backupApplianceLockInfo)
+        {
+        }
+        /**
+         * @return BackupApplianceLockInfo
+         */
+        public function getBackupApplianceLockInfo()
+        {
+        }
+        /**
+         * Required. The time after which this lock is not considered valid and will
+         * no longer protect the Backup from deletion.
+         *
+         * @param string $lockUntilTime
+         */
+        public function setLockUntilTime($lockUntilTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLockUntilTime()
+        {
+        }
+        /**
+         * Output only. Contains metadata about the lock exist for Google Cloud native
+         * backups.
+         *
+         * @param ServiceLockInfo $serviceLockInfo
+         */
+        public function setServiceLockInfo(ServiceLockInfo $serviceLockInfo)
+        {
+        }
+        /**
+         * @return ServiceLockInfo
+         */
+        public function getServiceLockInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupApplianceLockInfo
+     * Runtime class alias of \Google\Service\Backupdr\BackupLock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupApplianceLockInfo()
-    {
-    }
-    /**
-     * Required. The time after which this lock is not considered valid and will
-     * no longer protect the Backup from deletion.
-     *
-     * @param string $lockUntilTime
-     */
-    public function setLockUntilTime($lockUntilTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLockUntilTime()
-    {
-    }
-    /**
-     * Output only. Contains metadata about the lock exist for Google Cloud native
-     * backups.
-     *
-     * @param ServiceLockInfo $serviceLockInfo
-     */
-    public function setServiceLockInfo(ServiceLockInfo $serviceLockInfo)
-    {
-    }
-    /**
-     * @return ServiceLockInfo
-     */
-    public function getServiceLockInfo()
+    class Google_Service_Backupdr_BackupLock extends \Google\Service\Backupdr\BackupLock
     {
     }
 }

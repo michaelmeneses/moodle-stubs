@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class AllocatedConnection extends \Google\Model
-{
-    /**
-     * Required. The ingress port of an allocated connection
-     *
-     * @var int
-     */
-    public $ingressPort;
-    /**
-     * Required. The PSC uri of an allocated connection
-     *
-     * @var string
-     */
-    public $pscUri;
-    /**
-     * Required. The ingress port of an allocated connection
-     *
-     * @param int $ingressPort
-     */
-    public function setIngressPort($ingressPort)
+namespace Google\Service\BeyondCorp {
+    class AllocatedConnection extends \Google\Model
     {
+        /**
+         * Required. The ingress port of an allocated connection
+         *
+         * @var int
+         */
+        public $ingressPort;
+        /**
+         * Required. The PSC uri of an allocated connection
+         *
+         * @var string
+         */
+        public $pscUri;
+        /**
+         * Required. The ingress port of an allocated connection
+         *
+         * @param int $ingressPort
+         */
+        public function setIngressPort($ingressPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIngressPort()
+        {
+        }
+        /**
+         * Required. The PSC uri of an allocated connection
+         *
+         * @param string $pscUri
+         */
+        public function setPscUri($pscUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPscUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\BeyondCorp\AllocatedConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngressPort()
-    {
-    }
-    /**
-     * Required. The PSC uri of an allocated connection
-     *
-     * @param string $pscUri
-     */
-    public function setPscUri($pscUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPscUri()
+    class Google_Service_BeyondCorp_AllocatedConnection extends \Google\Service\BeyondCorp\AllocatedConnection
     {
     }
 }

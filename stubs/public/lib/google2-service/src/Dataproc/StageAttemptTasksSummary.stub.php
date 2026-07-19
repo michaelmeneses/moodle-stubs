@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StageAttemptTasksSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $applicationId;
-    /**
-     * @var int
-     */
-    public $numFailedTasks;
-    /**
-     * @var int
-     */
-    public $numKilledTasks;
-    /**
-     * @var int
-     */
-    public $numPendingTasks;
-    /**
-     * @var int
-     */
-    public $numRunningTasks;
-    /**
-     * @var int
-     */
-    public $numSuccessTasks;
-    /**
-     * @var int
-     */
-    public $numTasks;
-    /**
-     * @var int
-     */
-    public $stageAttemptId;
-    /**
-     * @var string
-     */
-    public $stageId;
-    /**
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\Dataproc {
+    class StageAttemptTasksSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $applicationId;
+        /**
+         * @var int
+         */
+        public $numFailedTasks;
+        /**
+         * @var int
+         */
+        public $numKilledTasks;
+        /**
+         * @var int
+         */
+        public $numPendingTasks;
+        /**
+         * @var int
+         */
+        public $numRunningTasks;
+        /**
+         * @var int
+         */
+        public $numSuccessTasks;
+        /**
+         * @var int
+         */
+        public $numTasks;
+        /**
+         * @var int
+         */
+        public $stageAttemptId;
+        /**
+         * @var string
+         */
+        public $stageId;
+        /**
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * @param int $numFailedTasks
+         */
+        public function setNumFailedTasks($numFailedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFailedTasks()
+        {
+        }
+        /**
+         * @param int $numKilledTasks
+         */
+        public function setNumKilledTasks($numKilledTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumKilledTasks()
+        {
+        }
+        /**
+         * @param int $numPendingTasks
+         */
+        public function setNumPendingTasks($numPendingTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumPendingTasks()
+        {
+        }
+        /**
+         * @param int $numRunningTasks
+         */
+        public function setNumRunningTasks($numRunningTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumRunningTasks()
+        {
+        }
+        /**
+         * @param int $numSuccessTasks
+         */
+        public function setNumSuccessTasks($numSuccessTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumSuccessTasks()
+        {
+        }
+        /**
+         * @param int $numTasks
+         */
+        public function setNumTasks($numTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumTasks()
+        {
+        }
+        /**
+         * @param int $stageAttemptId
+         */
+        public function setStageAttemptId($stageAttemptId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStageAttemptId()
+        {
+        }
+        /**
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StageAttemptTasksSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * @param int $numFailedTasks
-     */
-    public function setNumFailedTasks($numFailedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFailedTasks()
-    {
-    }
-    /**
-     * @param int $numKilledTasks
-     */
-    public function setNumKilledTasks($numKilledTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumKilledTasks()
-    {
-    }
-    /**
-     * @param int $numPendingTasks
-     */
-    public function setNumPendingTasks($numPendingTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumPendingTasks()
-    {
-    }
-    /**
-     * @param int $numRunningTasks
-     */
-    public function setNumRunningTasks($numRunningTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumRunningTasks()
-    {
-    }
-    /**
-     * @param int $numSuccessTasks
-     */
-    public function setNumSuccessTasks($numSuccessTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumSuccessTasks()
-    {
-    }
-    /**
-     * @param int $numTasks
-     */
-    public function setNumTasks($numTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumTasks()
-    {
-    }
-    /**
-     * @param int $stageAttemptId
-     */
-    public function setStageAttemptId($stageAttemptId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStageAttemptId()
-    {
-    }
-    /**
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
+    class Google_Service_Dataproc_StageAttemptTasksSummary extends \Google\Service\Dataproc\StageAttemptTasksSummary
     {
     }
 }

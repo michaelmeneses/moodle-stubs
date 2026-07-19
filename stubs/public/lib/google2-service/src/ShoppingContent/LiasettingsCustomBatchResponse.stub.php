@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiasettingsCustomBatchResponse extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = LiasettingsCustomBatchResponseEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#liasettingsCustomBatchResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The result of the execution of the batch requests.
-     *
-     * @param LiasettingsCustomBatchResponseEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\ShoppingContent {
+    class LiasettingsCustomBatchResponse extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = LiasettingsCustomBatchResponseEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#liasettingsCustomBatchResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The result of the execution of the batch requests.
+         *
+         * @param LiasettingsCustomBatchResponseEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return LiasettingsCustomBatchResponseEntry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#liasettingsCustomBatchResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiasettingsCustomBatchResponseEntry[]
+     * Runtime class alias of \Google\Service\ShoppingContent\LiasettingsCustomBatchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#liasettingsCustomBatchResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_LiasettingsCustomBatchResponse extends \Google\Service\ShoppingContent\LiasettingsCustomBatchResponse
     {
     }
 }

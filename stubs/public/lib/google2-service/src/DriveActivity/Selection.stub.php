@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Selection extends \Google\Model
-{
-    /**
-     * Selection value as human-readable display string.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Selection value as Field Choice ID.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Selection value as human-readable display string.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DriveActivity {
+    class Selection extends \Google\Model
     {
+        /**
+         * Selection value as human-readable display string.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Selection value as Field Choice ID.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Selection value as human-readable display string.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Selection value as Field Choice ID.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\Selection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Selection value as Field Choice ID.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DriveActivity_Selection extends \Google\Service\DriveActivity\Selection
     {
     }
 }

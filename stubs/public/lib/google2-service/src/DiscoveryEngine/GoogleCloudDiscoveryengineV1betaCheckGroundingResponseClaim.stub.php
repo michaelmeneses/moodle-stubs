@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim extends \Google\Collection
-{
-    protected $collection_key = 'citationIndices';
-    /**
-     * @var int[]
-     */
-    public $citationIndices;
-    /**
-     * @var string
-     */
-    public $claimText;
-    /**
-     * @var int
-     */
-    public $endPos;
-    /**
-     * @var int
-     */
-    public $startPos;
-    /**
-     * @param int[]
-     */
-    public function setCitationIndices($citationIndices)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim extends \Google\Collection
     {
+        protected $collection_key = 'citationIndices';
+        /**
+         * @var int[]
+         */
+        public $citationIndices;
+        /**
+         * @var string
+         */
+        public $claimText;
+        /**
+         * @var int
+         */
+        public $endPos;
+        /**
+         * @var int
+         */
+        public $startPos;
+        /**
+         * @param int[]
+         */
+        public function setCitationIndices($citationIndices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getCitationIndices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClaimText($claimText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClaimText()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setEndPos($endPos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndPos()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStartPos($startPos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartPos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitationIndices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClaimText($claimText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClaimText()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setEndPos($endPos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndPos()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStartPos($startPos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartPos()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim
     {
     }
 }

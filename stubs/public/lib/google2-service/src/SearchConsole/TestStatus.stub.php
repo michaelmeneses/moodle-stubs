@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class TestStatus extends \Google\Model
-{
-    /**
-     * Internal error when running this test. Please try running the test again.
-     */
-    public const STATUS_TEST_STATUS_UNSPECIFIED = 'TEST_STATUS_UNSPECIFIED';
-    /**
-     * Inspection has completed without errors.
-     */
-    public const STATUS_COMPLETE = 'COMPLETE';
-    /**
-     * Inspection terminated in an error state. This indicates a problem in
-     * Google's infrastructure, not a user error. Please try again later.
-     */
-    public const STATUS_INTERNAL_ERROR = 'INTERNAL_ERROR';
-    /**
-     * Google can not access the URL because of a user error such as a robots.txt
-     * blockage, a 403 or 500 code etc. Please make sure that the URL provided is
-     * accessible by Googlebot and is not password protected.
-     */
-    public const STATUS_PAGE_UNREACHABLE = 'PAGE_UNREACHABLE';
-    /**
-     * Error details if applicable.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * Status of the test.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Error details if applicable.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\SearchConsole {
+    class TestStatus extends \Google\Model
     {
+        /**
+         * Internal error when running this test. Please try running the test again.
+         */
+        public const STATUS_TEST_STATUS_UNSPECIFIED = 'TEST_STATUS_UNSPECIFIED';
+        /**
+         * Inspection has completed without errors.
+         */
+        public const STATUS_COMPLETE = 'COMPLETE';
+        /**
+         * Inspection terminated in an error state. This indicates a problem in
+         * Google's infrastructure, not a user error. Please try again later.
+         */
+        public const STATUS_INTERNAL_ERROR = 'INTERNAL_ERROR';
+        /**
+         * Google can not access the URL because of a user error such as a robots.txt
+         * blockage, a 403 or 500 code etc. Please make sure that the URL provided is
+         * accessible by Googlebot and is not password protected.
+         */
+        public const STATUS_PAGE_UNREACHABLE = 'PAGE_UNREACHABLE';
+        /**
+         * Error details if applicable.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * Status of the test.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Error details if applicable.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Status of the test.
+         *
+         * Accepted values: TEST_STATUS_UNSPECIFIED, COMPLETE, INTERNAL_ERROR,
+         * PAGE_UNREACHABLE
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SearchConsole\TestStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Status of the test.
-     *
-     * Accepted values: TEST_STATUS_UNSPECIFIED, COMPLETE, INTERNAL_ERROR,
-     * PAGE_UNREACHABLE
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_SearchConsole_TestStatus extends \Google\Service\SearchConsole\TestStatus
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DtmfInput extends \Google\Model
-{
-    /**
-     * The dtmf digits.
-     *
-     * @var string
-     */
-    public $digits;
-    /**
-     * The finish digit (if any).
-     *
-     * @var string
-     */
-    public $finishDigit;
-    /**
-     * The dtmf digits.
-     *
-     * @param string $digits
-     */
-    public function setDigits($digits)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DtmfInput extends \Google\Model
     {
+        /**
+         * The dtmf digits.
+         *
+         * @var string
+         */
+        public $digits;
+        /**
+         * The finish digit (if any).
+         *
+         * @var string
+         */
+        public $finishDigit;
+        /**
+         * The dtmf digits.
+         *
+         * @param string $digits
+         */
+        public function setDigits($digits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigits()
+        {
+        }
+        /**
+         * The finish digit (if any).
+         *
+         * @param string $finishDigit
+         */
+        public function setFinishDigit($finishDigit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishDigit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DtmfInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigits()
-    {
-    }
-    /**
-     * The finish digit (if any).
-     *
-     * @param string $finishDigit
-     */
-    public function setFinishDigit($finishDigit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinishDigit()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DtmfInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DtmfInput
     {
     }
 }

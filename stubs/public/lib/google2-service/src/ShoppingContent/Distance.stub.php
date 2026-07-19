@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Distance extends \Google\Model
-{
-    /**
-     * The distance unit. Acceptable values are `None`, `Miles`, and `Kilometers`.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The distance represented as a number.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The distance unit. Acceptable values are `None`, `Miles`, and `Kilometers`.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\ShoppingContent {
+    class Distance extends \Google\Model
     {
+        /**
+         * The distance unit. Acceptable values are `None`, `Miles`, and `Kilometers`.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The distance represented as a number.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The distance unit. Acceptable values are `None`, `Miles`, and `Kilometers`.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * The distance represented as a number.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Distance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    /**
-     * The distance represented as a number.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ShoppingContent_Distance extends \Google\Service\ShoppingContent\Distance
     {
     }
 }

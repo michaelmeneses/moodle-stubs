@@ -21,259 +21,268 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo extends \Google\Collection
-{
-    /**
-     * Participant's role is not set.
-     */
-    public const AGENT_TYPE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * Participant is a human agent.
-     */
-    public const AGENT_TYPE_HUMAN_AGENT = 'HUMAN_AGENT';
-    /**
-     * Participant is an automated agent.
-     */
-    public const AGENT_TYPE_AUTOMATED_AGENT = 'AUTOMATED_AGENT';
-    /**
-     * Participant is an end user who conversed with the contact center.
-     */
-    public const AGENT_TYPE_END_USER = 'END_USER';
-    /**
-     * Participant is either a human or automated agent.
-     */
-    public const AGENT_TYPE_ANY_AGENT = 'ANY_AGENT';
-    protected $collection_key = 'teams';
-    /**
-     * A user-specified string representing the agent.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * The agent type, e.g. HUMAN_AGENT.
-     *
-     * @var string
-     */
-    public $agentType;
-    /**
-     * The agent's deployment display name. Only applicable to automated agents.
-     *
-     * @var string
-     */
-    public $deploymentDisplayName;
-    /**
-     * The agent's deployment ID. Only applicable to automated agents.
-     *
-     * @var string
-     */
-    public $deploymentId;
-    /**
-     * The agent's name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * A user-provided string indicating the outcome of the agent's segment of the
-     * call.
-     *
-     * @var string
-     */
-    public $dispositionCode;
-    /**
-     * The agent's location.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * A user-specified string representing the agent's team. Deprecated in favor
-     * of the `teams` field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $team;
-    /**
-     * User-specified strings representing the agent's teams.
-     *
-     * @var string[]
-     */
-    public $teams;
-    /**
-     * The agent's version display name. Only applicable to automated agents.
-     *
-     * @var string
-     */
-    public $versionDisplayName;
-    /**
-     * The agent's version ID. Only applicable to automated agents.
-     *
-     * @var string
-     */
-    public $versionId;
-    /**
-     * A user-specified string representing the agent.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo extends \Google\Collection
     {
+        /**
+         * Participant's role is not set.
+         */
+        public const AGENT_TYPE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * Participant is a human agent.
+         */
+        public const AGENT_TYPE_HUMAN_AGENT = 'HUMAN_AGENT';
+        /**
+         * Participant is an automated agent.
+         */
+        public const AGENT_TYPE_AUTOMATED_AGENT = 'AUTOMATED_AGENT';
+        /**
+         * Participant is an end user who conversed with the contact center.
+         */
+        public const AGENT_TYPE_END_USER = 'END_USER';
+        /**
+         * Participant is either a human or automated agent.
+         */
+        public const AGENT_TYPE_ANY_AGENT = 'ANY_AGENT';
+        protected $collection_key = 'teams';
+        /**
+         * A user-specified string representing the agent.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * The agent type, e.g. HUMAN_AGENT.
+         *
+         * @var string
+         */
+        public $agentType;
+        /**
+         * The agent's deployment display name. Only applicable to automated agents.
+         *
+         * @var string
+         */
+        public $deploymentDisplayName;
+        /**
+         * The agent's deployment ID. Only applicable to automated agents.
+         *
+         * @var string
+         */
+        public $deploymentId;
+        /**
+         * The agent's name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * A user-provided string indicating the outcome of the agent's segment of the
+         * call.
+         *
+         * @var string
+         */
+        public $dispositionCode;
+        /**
+         * The agent's location.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * A user-specified string representing the agent's team. Deprecated in favor
+         * of the `teams` field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $team;
+        /**
+         * User-specified strings representing the agent's teams.
+         *
+         * @var string[]
+         */
+        public $teams;
+        /**
+         * The agent's version display name. Only applicable to automated agents.
+         *
+         * @var string
+         */
+        public $versionDisplayName;
+        /**
+         * The agent's version ID. Only applicable to automated agents.
+         *
+         * @var string
+         */
+        public $versionId;
+        /**
+         * A user-specified string representing the agent.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * The agent type, e.g. HUMAN_AGENT.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, HUMAN_AGENT, AUTOMATED_AGENT, END_USER,
+         * ANY_AGENT
+         *
+         * @param self::AGENT_TYPE_* $agentType
+         */
+        public function setAgentType($agentType)
+        {
+        }
+        /**
+         * @return self::AGENT_TYPE_*
+         */
+        public function getAgentType()
+        {
+        }
+        /**
+         * The agent's deployment display name. Only applicable to automated agents.
+         *
+         * @param string $deploymentDisplayName
+         */
+        public function setDeploymentDisplayName($deploymentDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentDisplayName()
+        {
+        }
+        /**
+         * The agent's deployment ID. Only applicable to automated agents.
+         *
+         * @param string $deploymentId
+         */
+        public function setDeploymentId($deploymentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentId()
+        {
+        }
+        /**
+         * The agent's name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * A user-provided string indicating the outcome of the agent's segment of the
+         * call.
+         *
+         * @param string $dispositionCode
+         */
+        public function setDispositionCode($dispositionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDispositionCode()
+        {
+        }
+        /**
+         * The agent's location.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * A user-specified string representing the agent's team. Deprecated in favor
+         * of the `teams` field.
+         *
+         * @deprecated
+         * @param string $team
+         */
+        public function setTeam($team)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getTeam()
+        {
+        }
+        /**
+         * User-specified strings representing the agent's teams.
+         *
+         * @param string[] $teams
+         */
+        public function setTeams($teams)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTeams()
+        {
+        }
+        /**
+         * The agent's version display name. Only applicable to automated agents.
+         *
+         * @param string $versionDisplayName
+         */
+        public function setVersionDisplayName($versionDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionDisplayName()
+        {
+        }
+        /**
+         * The agent's version ID. Only applicable to automated agents.
+         *
+         * @param string $versionId
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentId()
-    {
-    }
-    /**
-     * The agent type, e.g. HUMAN_AGENT.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, HUMAN_AGENT, AUTOMATED_AGENT, END_USER,
-     * ANY_AGENT
-     *
-     * @param self::AGENT_TYPE_* $agentType
-     */
-    public function setAgentType($agentType)
-    {
-    }
-    /**
-     * @return self::AGENT_TYPE_*
-     */
-    public function getAgentType()
-    {
-    }
-    /**
-     * The agent's deployment display name. Only applicable to automated agents.
-     *
-     * @param string $deploymentDisplayName
-     */
-    public function setDeploymentDisplayName($deploymentDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentDisplayName()
-    {
-    }
-    /**
-     * The agent's deployment ID. Only applicable to automated agents.
-     *
-     * @param string $deploymentId
-     */
-    public function setDeploymentId($deploymentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentId()
-    {
-    }
-    /**
-     * The agent's name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * A user-provided string indicating the outcome of the agent's segment of the
-     * call.
-     *
-     * @param string $dispositionCode
-     */
-    public function setDispositionCode($dispositionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDispositionCode()
-    {
-    }
-    /**
-     * The agent's location.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * A user-specified string representing the agent's team. Deprecated in favor
-     * of the `teams` field.
-     *
-     * @deprecated
-     * @param string $team
-     */
-    public function setTeam($team)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getTeam()
-    {
-    }
-    /**
-     * User-specified strings representing the agent's teams.
-     *
-     * @param string[] $teams
-     */
-    public function setTeams($teams)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTeams()
-    {
-    }
-    /**
-     * The agent's version display name. Only applicable to automated agents.
-     *
-     * @param string $versionDisplayName
-     */
-    public function setVersionDisplayName($versionDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionDisplayName()
-    {
-    }
-    /**
-     * The agent's version ID. Only applicable to automated agents.
-     *
-     * @param string $versionId
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo
     {
     }
 }

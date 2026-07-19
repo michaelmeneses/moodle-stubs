@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class OperationDnsKeyContext extends \Google\Model
-{
-    protected $newValueType = DnsKey::class;
-    protected $newValueDataType = '';
-    protected $oldValueType = DnsKey::class;
-    protected $oldValueDataType = '';
-    /**
-     * The post-operation DnsKey resource.
-     *
-     * @param DnsKey $newValue
-     */
-    public function setNewValue(DnsKey $newValue)
+namespace Google\Service\Dns {
+    class OperationDnsKeyContext extends \Google\Model
     {
+        protected $newValueType = DnsKey::class;
+        protected $newValueDataType = '';
+        protected $oldValueType = DnsKey::class;
+        protected $oldValueDataType = '';
+        /**
+         * The post-operation DnsKey resource.
+         *
+         * @param DnsKey $newValue
+         */
+        public function setNewValue(DnsKey $newValue)
+        {
+        }
+        /**
+         * @return DnsKey
+         */
+        public function getNewValue()
+        {
+        }
+        /**
+         * The pre-operation DnsKey resource.
+         *
+         * @param DnsKey $oldValue
+         */
+        public function setOldValue(DnsKey $oldValue)
+        {
+        }
+        /**
+         * @return DnsKey
+         */
+        public function getOldValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsKey
+     * Runtime class alias of \Google\Service\Dns\OperationDnsKeyContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewValue()
-    {
-    }
-    /**
-     * The pre-operation DnsKey resource.
-     *
-     * @param DnsKey $oldValue
-     */
-    public function setOldValue(DnsKey $oldValue)
-    {
-    }
-    /**
-     * @return DnsKey
-     */
-    public function getOldValue()
+    class Google_Service_Dns_OperationDnsKeyContext extends \Google\Service\Dns\OperationDnsKeyContext
     {
     }
 }

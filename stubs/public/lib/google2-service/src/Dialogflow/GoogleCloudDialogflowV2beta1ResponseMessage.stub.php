@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ResponseMessage extends \Google\Model
-{
-    protected $endInteractionType = GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction::class;
-    protected $endInteractionDataType = '';
-    protected $liveAgentHandoffType = GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff::class;
-    protected $liveAgentHandoffDataType = '';
-    protected $mixedAudioType = GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio::class;
-    protected $mixedAudioDataType = '';
-    /**
-     * Returns a response containing a custom, platform-specific payload.
-     *
-     * @var array[]
-     */
-    public $payload;
-    protected $telephonyTransferCallType = GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall::class;
-    protected $telephonyTransferCallDataType = '';
-    protected $textType = GoogleCloudDialogflowV2beta1ResponseMessageText::class;
-    protected $textDataType = '';
-    /**
-     * A signal that indicates the interaction with the Dialogflow agent has
-     * ended.
-     *
-     * @param GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction $endInteraction
-     */
-    public function setEndInteraction(GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction $endInteraction)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ResponseMessage extends \Google\Model
     {
+        protected $endInteractionType = GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction::class;
+        protected $endInteractionDataType = '';
+        protected $liveAgentHandoffType = GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff::class;
+        protected $liveAgentHandoffDataType = '';
+        protected $mixedAudioType = GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio::class;
+        protected $mixedAudioDataType = '';
+        /**
+         * Returns a response containing a custom, platform-specific payload.
+         *
+         * @var array[]
+         */
+        public $payload;
+        protected $telephonyTransferCallType = GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall::class;
+        protected $telephonyTransferCallDataType = '';
+        protected $textType = GoogleCloudDialogflowV2beta1ResponseMessageText::class;
+        protected $textDataType = '';
+        /**
+         * A signal that indicates the interaction with the Dialogflow agent has
+         * ended.
+         *
+         * @param GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction $endInteraction
+         */
+        public function setEndInteraction(GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction $endInteraction)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction
+         */
+        public function getEndInteraction()
+        {
+        }
+        /**
+         * Hands off conversation to a live agent.
+         *
+         * @param GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff $liveAgentHandoff
+         */
+        public function setLiveAgentHandoff(GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff $liveAgentHandoff)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff
+         */
+        public function getLiveAgentHandoff()
+        {
+        }
+        /**
+         * An audio response message composed of both the synthesized Dialogflow agent
+         * responses and the audios hosted in places known to the client.
+         *
+         * @param GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio $mixedAudio
+         */
+        public function setMixedAudio(GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio $mixedAudio)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio
+         */
+        public function getMixedAudio()
+        {
+        }
+        /**
+         * Returns a response containing a custom, platform-specific payload.
+         *
+         * @param array[] $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * A signal that the client should transfer the phone call connected to this
+         * agent to a third-party endpoint.
+         *
+         * @param GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall $telephonyTransferCall
+         */
+        public function setTelephonyTransferCall(GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall $telephonyTransferCall)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall
+         */
+        public function getTelephonyTransferCall()
+        {
+        }
+        /**
+         * Returns a text response.
+         *
+         * @param GoogleCloudDialogflowV2beta1ResponseMessageText $text
+         */
+        public function setText(GoogleCloudDialogflowV2beta1ResponseMessageText $text)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ResponseMessageText
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndInteraction()
-    {
-    }
-    /**
-     * Hands off conversation to a live agent.
-     *
-     * @param GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff $liveAgentHandoff
-     */
-    public function setLiveAgentHandoff(GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff $liveAgentHandoff)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1ResponseMessageLiveAgentHandoff
-     */
-    public function getLiveAgentHandoff()
-    {
-    }
-    /**
-     * An audio response message composed of both the synthesized Dialogflow agent
-     * responses and the audios hosted in places known to the client.
-     *
-     * @param GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio $mixedAudio
-     */
-    public function setMixedAudio(GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio $mixedAudio)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio
-     */
-    public function getMixedAudio()
-    {
-    }
-    /**
-     * Returns a response containing a custom, platform-specific payload.
-     *
-     * @param array[] $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * A signal that the client should transfer the phone call connected to this
-     * agent to a third-party endpoint.
-     *
-     * @param GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall $telephonyTransferCall
-     */
-    public function setTelephonyTransferCall(GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall $telephonyTransferCall)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall
-     */
-    public function getTelephonyTransferCall()
-    {
-    }
-    /**
-     * Returns a text response.
-     *
-     * @param GoogleCloudDialogflowV2beta1ResponseMessageText $text
-     */
-    public function setText(GoogleCloudDialogflowV2beta1ResponseMessageText $text)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1ResponseMessageText
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ResponseMessage extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessage
     {
     }
 }

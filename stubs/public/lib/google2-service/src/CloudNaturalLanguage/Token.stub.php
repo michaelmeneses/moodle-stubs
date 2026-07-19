@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class Token extends \Google\Model
-{
-    protected $dependencyEdgeType = DependencyEdge::class;
-    protected $dependencyEdgeDataType = '';
-    /**
-     * @var string
-     */
-    public $lemma;
-    protected $partOfSpeechType = PartOfSpeech::class;
-    protected $partOfSpeechDataType = '';
-    protected $textType = TextSpan::class;
-    protected $textDataType = '';
-    /**
-     * @param DependencyEdge
-     */
-    public function setDependencyEdge(DependencyEdge $dependencyEdge)
+namespace Google\Service\CloudNaturalLanguage {
+    class Token extends \Google\Model
     {
+        protected $dependencyEdgeType = DependencyEdge::class;
+        protected $dependencyEdgeDataType = '';
+        /**
+         * @var string
+         */
+        public $lemma;
+        protected $partOfSpeechType = PartOfSpeech::class;
+        protected $partOfSpeechDataType = '';
+        protected $textType = TextSpan::class;
+        protected $textDataType = '';
+        /**
+         * @param DependencyEdge
+         */
+        public function setDependencyEdge(DependencyEdge $dependencyEdge)
+        {
+        }
+        /**
+         * @return DependencyEdge
+         */
+        public function getDependencyEdge()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLemma($lemma)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLemma()
+        {
+        }
+        /**
+         * @param PartOfSpeech
+         */
+        public function setPartOfSpeech(PartOfSpeech $partOfSpeech)
+        {
+        }
+        /**
+         * @return PartOfSpeech
+         */
+        public function getPartOfSpeech()
+        {
+        }
+        /**
+         * @param TextSpan
+         */
+        public function setText(TextSpan $text)
+        {
+        }
+        /**
+         * @return TextSpan
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DependencyEdge
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\Token registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencyEdge()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLemma($lemma)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLemma()
-    {
-    }
-    /**
-     * @param PartOfSpeech
-     */
-    public function setPartOfSpeech(PartOfSpeech $partOfSpeech)
-    {
-    }
-    /**
-     * @return PartOfSpeech
-     */
-    public function getPartOfSpeech()
-    {
-    }
-    /**
-     * @param TextSpan
-     */
-    public function setText(TextSpan $text)
-    {
-    }
-    /**
-     * @return TextSpan
-     */
-    public function getText()
+    class Google_Service_CloudNaturalLanguage_Token extends \Google\Service\CloudNaturalLanguage\Token
     {
     }
 }

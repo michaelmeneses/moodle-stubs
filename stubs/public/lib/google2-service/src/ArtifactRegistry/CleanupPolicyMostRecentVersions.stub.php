@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class CleanupPolicyMostRecentVersions extends \Google\Collection
-{
-    protected $collection_key = 'packageNamePrefixes';
-    /**
-     * Minimum number of versions to keep.
-     *
-     * @var int
-     */
-    public $keepCount;
-    /**
-     * List of package name prefixes that will apply this rule.
-     *
-     * @var string[]
-     */
-    public $packageNamePrefixes;
-    /**
-     * Minimum number of versions to keep.
-     *
-     * @param int $keepCount
-     */
-    public function setKeepCount($keepCount)
+namespace Google\Service\ArtifactRegistry {
+    class CleanupPolicyMostRecentVersions extends \Google\Collection
     {
+        protected $collection_key = 'packageNamePrefixes';
+        /**
+         * Minimum number of versions to keep.
+         *
+         * @var int
+         */
+        public $keepCount;
+        /**
+         * List of package name prefixes that will apply this rule.
+         *
+         * @var string[]
+         */
+        public $packageNamePrefixes;
+        /**
+         * Minimum number of versions to keep.
+         *
+         * @param int $keepCount
+         */
+        public function setKeepCount($keepCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getKeepCount()
+        {
+        }
+        /**
+         * List of package name prefixes that will apply this rule.
+         *
+         * @param string[] $packageNamePrefixes
+         */
+        public function setPackageNamePrefixes($packageNamePrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNamePrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ArtifactRegistry\CleanupPolicyMostRecentVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeepCount()
-    {
-    }
-    /**
-     * List of package name prefixes that will apply this rule.
-     *
-     * @param string[] $packageNamePrefixes
-     */
-    public function setPackageNamePrefixes($packageNamePrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPackageNamePrefixes()
+    class Google_Service_ArtifactRegistry_CleanupPolicyMostRecentVersions extends \Google\Service\ArtifactRegistry\CleanupPolicyMostRecentVersions
     {
     }
 }

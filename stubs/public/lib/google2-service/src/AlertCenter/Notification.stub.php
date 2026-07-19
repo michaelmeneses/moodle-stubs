@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class Notification extends \Google\Model
-{
-    protected $cloudPubsubTopicType = CloudPubsubTopic::class;
-    protected $cloudPubsubTopicDataType = '';
-    /**
-     * A Google Cloud Pub/sub topic destination.
-     *
-     * @param CloudPubsubTopic $cloudPubsubTopic
-     */
-    public function setCloudPubsubTopic(CloudPubsubTopic $cloudPubsubTopic)
+namespace Google\Service\AlertCenter {
+    class Notification extends \Google\Model
     {
+        protected $cloudPubsubTopicType = CloudPubsubTopic::class;
+        protected $cloudPubsubTopicDataType = '';
+        /**
+         * A Google Cloud Pub/sub topic destination.
+         *
+         * @param CloudPubsubTopic $cloudPubsubTopic
+         */
+        public function setCloudPubsubTopic(CloudPubsubTopic $cloudPubsubTopic)
+        {
+        }
+        /**
+         * @return CloudPubsubTopic
+         */
+        public function getCloudPubsubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudPubsubTopic
+     * Runtime class alias of \Google\Service\AlertCenter\Notification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudPubsubTopic()
+    class Google_Service_AlertCenter_Notification extends \Google\Service\AlertCenter\Notification
     {
     }
 }

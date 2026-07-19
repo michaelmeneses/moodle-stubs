@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PipelineTaskExecutorDetail extends \Google\Model
-{
-    protected $containerDetailType = GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail::class;
-    protected $containerDetailDataType = '';
-    protected $customJobDetailType = GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail::class;
-    protected $customJobDetailDataType = '';
-    /**
-     * Output only. The detailed info for a container executor.
-     *
-     * @param GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail $containerDetail
-     */
-    public function setContainerDetail(GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail $containerDetail)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PipelineTaskExecutorDetail extends \Google\Model
     {
+        protected $containerDetailType = GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail::class;
+        protected $containerDetailDataType = '';
+        protected $customJobDetailType = GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail::class;
+        protected $customJobDetailDataType = '';
+        /**
+         * Output only. The detailed info for a container executor.
+         *
+         * @param GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail $containerDetail
+         */
+        public function setContainerDetail(GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail $containerDetail)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail
+         */
+        public function getContainerDetail()
+        {
+        }
+        /**
+         * Output only. The detailed info for a custom job executor.
+         *
+         * @param GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail $customJobDetail
+         */
+        public function setCustomJobDetail(GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail $customJobDetail)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail
+         */
+        public function getCustomJobDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PipelineTaskExecutorDetailContainerDetail
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineTaskExecutorDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerDetail()
-    {
-    }
-    /**
-     * Output only. The detailed info for a custom job executor.
-     *
-     * @param GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail $customJobDetail
-     */
-    public function setCustomJobDetail(GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail $customJobDetail)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail
-     */
-    public function getCustomJobDetail()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PipelineTaskExecutorDetail extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineTaskExecutorDetail
     {
     }
 }

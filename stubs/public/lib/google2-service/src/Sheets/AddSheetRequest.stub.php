@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddSheetRequest extends \Google\Model
-{
-    protected $propertiesType = SheetProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * The properties the new sheet should have. All properties are optional. The
-     * sheetId field is optional; if one is not set, an id will be randomly
-     * generated. (It is an error to specify the ID of a sheet that already
-     * exists.)
-     *
-     * @param SheetProperties $properties
-     */
-    public function setProperties(SheetProperties $properties)
+namespace Google\Service\Sheets {
+    class AddSheetRequest extends \Google\Model
     {
+        protected $propertiesType = SheetProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * The properties the new sheet should have. All properties are optional. The
+         * sheetId field is optional; if one is not set, an id will be randomly
+         * generated. (It is an error to specify the ID of a sheet that already
+         * exists.)
+         *
+         * @param SheetProperties $properties
+         */
+        public function setProperties(SheetProperties $properties)
+        {
+        }
+        /**
+         * @return SheetProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SheetProperties
+     * Runtime class alias of \Google\Service\Sheets\AddSheetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_Sheets_AddSheetRequest extends \Google\Service\Sheets\AddSheetRequest
     {
     }
 }

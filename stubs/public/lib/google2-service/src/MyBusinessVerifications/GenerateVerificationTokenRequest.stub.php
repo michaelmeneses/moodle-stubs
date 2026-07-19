@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class GenerateVerificationTokenRequest extends \Google\Model
-{
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * @param Location
-     */
-    public function setLocation(Location $location)
+namespace Google\Service\MyBusinessVerifications {
+    class GenerateVerificationTokenRequest extends \Google\Model
     {
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * @param Location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\GenerateVerificationTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
+    class Google_Service_MyBusinessVerifications_GenerateVerificationTokenRequest extends \Google\Service\MyBusinessVerifications\GenerateVerificationTokenRequest
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersRefundOrderRequest extends \Google\Model
-{
-    protected $amountType = MonetaryAmount::class;
-    protected $amountDataType = '';
-    /**
-     * @var bool
-     */
-    public $fullRefund;
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $reasonText;
-    /**
-     * @param MonetaryAmount
-     */
-    public function setAmount(MonetaryAmount $amount)
+namespace Google\Service\ShoppingContent {
+    class OrdersRefundOrderRequest extends \Google\Model
     {
+        protected $amountType = MonetaryAmount::class;
+        protected $amountDataType = '';
+        /**
+         * @var bool
+         */
+        public $fullRefund;
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $reasonText;
+        /**
+         * @param MonetaryAmount
+         */
+        public function setAmount(MonetaryAmount $amount)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setFullRefund($fullRefund)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullRefund()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReasonText($reasonText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MonetaryAmount
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersRefundOrderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setFullRefund($fullRefund)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullRefund()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReasonText($reasonText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReasonText()
+    class Google_Service_ShoppingContent_OrdersRefundOrderRequest extends \Google\Service\ShoppingContent\OrdersRefundOrderRequest
     {
     }
 }

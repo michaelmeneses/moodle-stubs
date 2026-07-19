@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class TestRulesetRequest extends \Google\Model
-{
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    protected $testSuiteType = TestSuite::class;
-    protected $testSuiteDataType = '';
-    /**
-     * Optional. Optional `Source` to be checked for correctness. This field must
-     * not be set when the resource name refers to a `Ruleset`.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
+namespace Google\Service\FirebaseRules {
+    class TestRulesetRequest extends \Google\Model
     {
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        protected $testSuiteType = TestSuite::class;
+        protected $testSuiteDataType = '';
+        /**
+         * Optional. Optional `Source` to be checked for correctness. This field must
+         * not be set when the resource name refers to a `Ruleset`.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Required. The tests to execute against the `Source`. When `Source` is
+         * provided inline, the test cases will only be run if the `Source` is
+         * syntactically and semantically valid. Inline `TestSuite` to run.
+         *
+         * @param TestSuite $testSuite
+         */
+        public function setTestSuite(TestSuite $testSuite)
+        {
+        }
+        /**
+         * @return TestSuite
+         */
+        public function getTestSuite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Source
+     * Runtime class alias of \Google\Service\FirebaseRules\TestRulesetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * Required. The tests to execute against the `Source`. When `Source` is
-     * provided inline, the test cases will only be run if the `Source` is
-     * syntactically and semantically valid. Inline `TestSuite` to run.
-     *
-     * @param TestSuite $testSuite
-     */
-    public function setTestSuite(TestSuite $testSuite)
-    {
-    }
-    /**
-     * @return TestSuite
-     */
-    public function getTestSuite()
+    class Google_Service_FirebaseRules_TestRulesetRequest extends \Google\Service\FirebaseRules\TestRulesetRequest
     {
     }
 }

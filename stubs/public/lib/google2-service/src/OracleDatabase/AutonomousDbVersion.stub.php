@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class AutonomousDbVersion extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const DB_WORKLOAD_DB_WORKLOAD_UNSPECIFIED = 'DB_WORKLOAD_UNSPECIFIED';
-    /**
-     * Autonomous Transaction Processing database.
-     */
-    public const DB_WORKLOAD_OLTP = 'OLTP';
-    /**
-     * Autonomous Data Warehouse database.
-     */
-    public const DB_WORKLOAD_DW = 'DW';
-    /**
-     * Autonomous JSON Database.
-     */
-    public const DB_WORKLOAD_AJD = 'AJD';
-    /**
-     * Autonomous Database with the Oracle APEX Application Development workload
-     * type.
-     */
-    public const DB_WORKLOAD_APEX = 'APEX';
-    /**
-     * Output only. The Autonomous Database workload type.
-     *
-     * @var string
-     */
-    public $dbWorkload;
-    /**
-     * Identifier. The name of the Autonomous Database Version resource with the
-     * format: projects/{project}/locations/{region}/autonomousDbVersions/{autonom
-     * ous_db_version}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. An Oracle Database version for Autonomous Database.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. A URL that points to a detailed description of the Autonomous
-     * Database version.
-     *
-     * @var string
-     */
-    public $workloadUri;
-    /**
-     * Output only. The Autonomous Database workload type.
-     *
-     * Accepted values: DB_WORKLOAD_UNSPECIFIED, OLTP, DW, AJD, APEX
-     *
-     * @param self::DB_WORKLOAD_* $dbWorkload
-     */
-    public function setDbWorkload($dbWorkload)
+namespace Google\Service\OracleDatabase {
+    class AutonomousDbVersion extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const DB_WORKLOAD_DB_WORKLOAD_UNSPECIFIED = 'DB_WORKLOAD_UNSPECIFIED';
+        /**
+         * Autonomous Transaction Processing database.
+         */
+        public const DB_WORKLOAD_OLTP = 'OLTP';
+        /**
+         * Autonomous Data Warehouse database.
+         */
+        public const DB_WORKLOAD_DW = 'DW';
+        /**
+         * Autonomous JSON Database.
+         */
+        public const DB_WORKLOAD_AJD = 'AJD';
+        /**
+         * Autonomous Database with the Oracle APEX Application Development workload
+         * type.
+         */
+        public const DB_WORKLOAD_APEX = 'APEX';
+        /**
+         * Output only. The Autonomous Database workload type.
+         *
+         * @var string
+         */
+        public $dbWorkload;
+        /**
+         * Identifier. The name of the Autonomous Database Version resource with the
+         * format: projects/{project}/locations/{region}/autonomousDbVersions/{autonom
+         * ous_db_version}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. An Oracle Database version for Autonomous Database.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. A URL that points to a detailed description of the Autonomous
+         * Database version.
+         *
+         * @var string
+         */
+        public $workloadUri;
+        /**
+         * Output only. The Autonomous Database workload type.
+         *
+         * Accepted values: DB_WORKLOAD_UNSPECIFIED, OLTP, DW, AJD, APEX
+         *
+         * @param self::DB_WORKLOAD_* $dbWorkload
+         */
+        public function setDbWorkload($dbWorkload)
+        {
+        }
+        /**
+         * @return self::DB_WORKLOAD_*
+         */
+        public function getDbWorkload()
+        {
+        }
+        /**
+         * Identifier. The name of the Autonomous Database Version resource with the
+         * format: projects/{project}/locations/{region}/autonomousDbVersions/{autonom
+         * ous_db_version}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. An Oracle Database version for Autonomous Database.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * Output only. A URL that points to a detailed description of the Autonomous
+         * Database version.
+         *
+         * @param string $workloadUri
+         */
+        public function setWorkloadUri($workloadUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkloadUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DB_WORKLOAD_*
+     * Runtime class alias of \Google\Service\OracleDatabase\AutonomousDbVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbWorkload()
-    {
-    }
-    /**
-     * Identifier. The name of the Autonomous Database Version resource with the
-     * format: projects/{project}/locations/{region}/autonomousDbVersions/{autonom
-     * ous_db_version}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. An Oracle Database version for Autonomous Database.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * Output only. A URL that points to a detailed description of the Autonomous
-     * Database version.
-     *
-     * @param string $workloadUri
-     */
-    public function setWorkloadUri($workloadUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkloadUri()
+    class Google_Service_OracleDatabase_AutonomousDbVersion extends \Google\Service\OracleDatabase\AutonomousDbVersion
     {
     }
 }

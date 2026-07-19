@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RemoveFromFolderAction extends \Google\Model
-{
-    /**
-     * Condition of the action to be executed.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * Name of the folder under which new document is to be added. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     *
-     * @var string
-     */
-    public $folder;
-    /**
-     * Condition of the action to be executed.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RemoveFromFolderAction extends \Google\Model
     {
+        /**
+         * Condition of the action to be executed.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * Name of the folder under which new document is to be added. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         *
+         * @var string
+         */
+        public $folder;
+        /**
+         * Condition of the action to be executed.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Name of the folder under which new document is to be added. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         *
+         * @param string $folder
+         */
+        public function setFolder($folder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RemoveFromFolderAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Name of the folder under which new document is to be added. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     *
-     * @param string $folder
-     */
-    public function setFolder($folder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFolder()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RemoveFromFolderAction extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RemoveFromFolderAction
     {
     }
 }

@@ -21,109 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
- *   $users = $authorizedbuyersmarketplaceService->buyers_clients_users;
- *  </code>
- */
-class BuyersClientsUsers extends \Google\Service\Resource
-{
+namespace Google\Service\AuthorizedBuyersMarketplace\Resource {
+    use Google\Service\AuthorizedBuyersMarketplace\ActivateClientUserRequest;
+    use Google\Service\AuthorizedBuyersMarketplace\AuthorizedbuyersmarketplaceEmpty;
+    use Google\Service\AuthorizedBuyersMarketplace\ClientUser;
+    use Google\Service\AuthorizedBuyersMarketplace\DeactivateClientUserRequest;
+    use Google\Service\AuthorizedBuyersMarketplace\ListClientUsersResponse;
     /**
-     * Activates an existing client user. The state of the client user will be
-     * updated from "INACTIVE" to "ACTIVE". This method has no effect if the client
-     * user is already in "ACTIVE" state. An error will be returned if the client
-     * user to activate is still in "INVITED" state. (users.activate)
-     *
-     * @param string $name Required. Format:
-     * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
-     * @param ActivateClientUserRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ClientUser
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
+     *   $users = $authorizedbuyersmarketplaceService->buyers_clients_users;
+     *  </code>
      */
-    public function activate($name, ActivateClientUserRequest $postBody, $optParams = [])
+    class BuyersClientsUsers extends \Google\Service\Resource
     {
+        /**
+         * Activates an existing client user. The state of the client user will be
+         * updated from "INACTIVE" to "ACTIVE". This method has no effect if the client
+         * user is already in "ACTIVE" state. An error will be returned if the client
+         * user to activate is still in "INVITED" state. (users.activate)
+         *
+         * @param string $name Required. Format:
+         * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
+         * @param ActivateClientUserRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ClientUser
+         * @throws \Google\Service\Exception
+         */
+        public function activate($name, ActivateClientUserRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new client user in "INVITED" state. An email invitation will be
+         * sent to the new user, once accepted the user will become active.
+         * (users.create)
+         *
+         * @param string $parent Required. The name of the client. Format:
+         * `buyers/{accountId}/clients/{clientAccountId}`
+         * @param ClientUser $postBody
+         * @param array $optParams Optional parameters.
+         * @return ClientUser
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ClientUser $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deactivates an existing client user. The state of the client user will be
+         * updated from "ACTIVE" to "INACTIVE". This method has no effect if the client
+         * user is already in "INACTIVE" state. An error will be returned if the client
+         * user to deactivate is still in "INVITED" state. (users.deactivate)
+         *
+         * @param string $name Required. Format:
+         * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
+         * @param DeactivateClientUserRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ClientUser
+         * @throws \Google\Service\Exception
+         */
+        public function deactivate($name, DeactivateClientUserRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an existing client user. The client user will lose access to the
+         * Authorized Buyers UI. Note that if a client user is deleted, the user's
+         * access to the UI can't be restored unless a new client user is created and
+         * activated. (users.delete)
+         *
+         * @param string $name Required. Format:
+         * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
+         * @param array $optParams Optional parameters.
+         * @return AuthorizedbuyersmarketplaceEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves an existing client user. (users.get)
+         *
+         * @param string $name Required. Format:
+         * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
+         * @param array $optParams Optional parameters.
+         * @return ClientUser
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all client users for a specified client. (users.listBuyersClientsUsers)
+         *
+         * @param string $parent Required. The name of the client. Format:
+         * `buyers/{buyerAccountId}/clients/{clientAccountId}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. If left blank, a default page
+         * size of 500 will be applied.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of
+         * ListClientUsersResponse.nextPageToken returned from the previous call to the
+         * list method.
+         * @return ListClientUsersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBuyersClientsUsers($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a new client user in "INVITED" state. An email invitation will be
-     * sent to the new user, once accepted the user will become active.
-     * (users.create)
-     *
-     * @param string $parent Required. The name of the client. Format:
-     * `buyers/{accountId}/clients/{clientAccountId}`
-     * @param ClientUser $postBody
-     * @param array $optParams Optional parameters.
-     * @return ClientUser
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\Resource\BuyersClientsUsers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, ClientUser $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deactivates an existing client user. The state of the client user will be
-     * updated from "ACTIVE" to "INACTIVE". This method has no effect if the client
-     * user is already in "INACTIVE" state. An error will be returned if the client
-     * user to deactivate is still in "INVITED" state. (users.deactivate)
-     *
-     * @param string $name Required. Format:
-     * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
-     * @param DeactivateClientUserRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ClientUser
-     * @throws \Google\Service\Exception
-     */
-    public function deactivate($name, DeactivateClientUserRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes an existing client user. The client user will lose access to the
-     * Authorized Buyers UI. Note that if a client user is deleted, the user's
-     * access to the UI can't be restored unless a new client user is created and
-     * activated. (users.delete)
-     *
-     * @param string $name Required. Format:
-     * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
-     * @param array $optParams Optional parameters.
-     * @return AuthorizedbuyersmarketplaceEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves an existing client user. (users.get)
-     *
-     * @param string $name Required. Format:
-     * `buyers/{buyerAccountId}/clients/{clientAccountId}/clientUsers/{userId}`
-     * @param array $optParams Optional parameters.
-     * @return ClientUser
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all client users for a specified client. (users.listBuyersClientsUsers)
-     *
-     * @param string $parent Required. The name of the client. Format:
-     * `buyers/{buyerAccountId}/clients/{clientAccountId}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. If left blank, a default page
-     * size of 500 will be applied.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of
-     * ListClientUsersResponse.nextPageToken returned from the previous call to the
-     * list method.
-     * @return ListClientUsersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listBuyersClientsUsers($parent, $optParams = [])
+    class Google_Service_AuthorizedBuyersMarketplace_Resource_BuyersClientsUsers extends \Google\Service\AuthorizedBuyersMarketplace\Resource\BuyersClientsUsers
     {
     }
 }

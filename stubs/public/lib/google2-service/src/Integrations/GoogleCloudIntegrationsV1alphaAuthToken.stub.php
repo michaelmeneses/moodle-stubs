@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaAuthToken extends \Google\Model
-{
-    /**
-     * The token for the auth type.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * Authentication type, e.g. "Basic", "Bearer", etc.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The token for the auth type.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaAuthToken extends \Google\Model
     {
+        /**
+         * The token for the auth type.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * Authentication type, e.g. "Basic", "Bearer", etc.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The token for the auth type.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * Authentication type, e.g. "Basic", "Bearer", etc.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAuthToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
-    {
-    }
-    /**
-     * Authentication type, e.g. "Basic", "Bearer", etc.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaAuthToken extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAuthToken
     {
     }
 }

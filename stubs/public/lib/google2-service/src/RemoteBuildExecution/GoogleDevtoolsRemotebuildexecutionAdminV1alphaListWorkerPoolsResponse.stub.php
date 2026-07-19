@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workerPools';
-    protected $workerPoolsType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool::class;
-    protected $workerPoolsDataType = 'array';
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool[]
-     */
-    public function setWorkerPools($workerPools)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workerPools';
+        protected $workerPoolsType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool::class;
+        protected $workerPoolsDataType = 'array';
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool[]
+         */
+        public function setWorkerPools($workerPools)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool[]
+         */
+        public function getWorkerPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkerPools()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse
     {
     }
 }

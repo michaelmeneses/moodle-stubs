@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class AccountsList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Account::class;
-    protected $itemsDataType = 'array';
-    public $kind;
+namespace Google\Service\AdExchangeBuyer {
+    class AccountsList extends \Google\Collection
+    {
+        protected $collection_key = 'items';
+        protected $itemsType = Account::class;
+        protected $itemsDataType = 'array';
+        public $kind;
+        /**
+         * @param Account[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getItems()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Account[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\AccountsList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Account[]
-     */
-    public function getItems()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
+    class Google_Service_AdExchangeBuyer_AccountsList extends \Google\Service\AdExchangeBuyer\AccountsList
     {
     }
 }

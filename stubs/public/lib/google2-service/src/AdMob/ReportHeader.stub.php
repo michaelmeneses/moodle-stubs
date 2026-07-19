@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ReportHeader extends \Google\Model
-{
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $localizationSettingsType = LocalizationSettings::class;
-    protected $localizationSettingsDataType = '';
-    /**
-     * The report time zone. The value is a time-zone ID as specified by the CLDR
-     * project, for example, "America/Los_Angeles".
-     *
-     * @var string
-     */
-    public $reportingTimeZone;
-    /**
-     * The date range for which the report is generated. This is identical to the
-     * range specified in the report request.
-     *
-     * @param DateRange $dateRange
-     */
-    public function setDateRange(DateRange $dateRange)
+namespace Google\Service\AdMob {
+    class ReportHeader extends \Google\Model
     {
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $localizationSettingsType = LocalizationSettings::class;
+        protected $localizationSettingsDataType = '';
+        /**
+         * The report time zone. The value is a time-zone ID as specified by the CLDR
+         * project, for example, "America/Los_Angeles".
+         *
+         * @var string
+         */
+        public $reportingTimeZone;
+        /**
+         * The date range for which the report is generated. This is identical to the
+         * range specified in the report request.
+         *
+         * @param DateRange $dateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * Localization settings of the report. This is identical to the settings in
+         * the report request.
+         *
+         * @param LocalizationSettings $localizationSettings
+         */
+        public function setLocalizationSettings(LocalizationSettings $localizationSettings)
+        {
+        }
+        /**
+         * @return LocalizationSettings
+         */
+        public function getLocalizationSettings()
+        {
+        }
+        /**
+         * The report time zone. The value is a time-zone ID as specified by the CLDR
+         * project, for example, "America/Los_Angeles".
+         *
+         * @param string $reportingTimeZone
+         */
+        public function setReportingTimeZone($reportingTimeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateRange
+     * Runtime class alias of \Google\Service\AdMob\ReportHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateRange()
-    {
-    }
-    /**
-     * Localization settings of the report. This is identical to the settings in
-     * the report request.
-     *
-     * @param LocalizationSettings $localizationSettings
-     */
-    public function setLocalizationSettings(LocalizationSettings $localizationSettings)
-    {
-    }
-    /**
-     * @return LocalizationSettings
-     */
-    public function getLocalizationSettings()
-    {
-    }
-    /**
-     * The report time zone. The value is a time-zone ID as specified by the CLDR
-     * project, for example, "America/Los_Angeles".
-     *
-     * @param string $reportingTimeZone
-     */
-    public function setReportingTimeZone($reportingTimeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingTimeZone()
+    class Google_Service_AdMob_ReportHeader extends \Google\Service\AdMob\ReportHeader
     {
     }
 }

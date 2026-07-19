@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class GetDebugConfigResponse extends \Google\Model
-{
-    /**
-     * The encoded debug configuration for the requested component.
-     *
-     * @var string
-     */
-    public $config;
-    /**
-     * The encoded debug configuration for the requested component.
-     *
-     * @param string $config
-     */
-    public function setConfig($config)
+namespace Google\Service\Dataflow {
+    class GetDebugConfigResponse extends \Google\Model
     {
+        /**
+         * The encoded debug configuration for the requested component.
+         *
+         * @var string
+         */
+        public $config;
+        /**
+         * The encoded debug configuration for the requested component.
+         *
+         * @param string $config
+         */
+        public function setConfig($config)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\GetDebugConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_Dataflow_GetDebugConfigResponse extends \Google\Service\Dataflow\GetDebugConfigResponse
     {
     }
 }

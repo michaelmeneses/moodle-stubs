@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListHotTabletsResponse extends \Google\Collection
-{
-    protected $collection_key = 'hotTablets';
-    protected $hotTabletsType = HotTablet::class;
-    protected $hotTabletsDataType = 'array';
-    /**
-     * Set if not all hot tablets could be returned in a single response. Pass
-     * this value to `page_token` in another request to get the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of hot tablets in the tables of the requested cluster that fall within
-     * the requested time range. Hot tablets are ordered by node cpu usage
-     * percent. If there are multiple hot tablets that correspond to the same
-     * tablet within a 15-minute interval, only the hot tablet with the highest
-     * node cpu usage will be included in the response.
-     *
-     * @param HotTablet[] $hotTablets
-     */
-    public function setHotTablets($hotTablets)
+namespace Google\Service\BigtableAdmin {
+    class ListHotTabletsResponse extends \Google\Collection
     {
+        protected $collection_key = 'hotTablets';
+        protected $hotTabletsType = HotTablet::class;
+        protected $hotTabletsDataType = 'array';
+        /**
+         * Set if not all hot tablets could be returned in a single response. Pass
+         * this value to `page_token` in another request to get the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of hot tablets in the tables of the requested cluster that fall within
+         * the requested time range. Hot tablets are ordered by node cpu usage
+         * percent. If there are multiple hot tablets that correspond to the same
+         * tablet within a 15-minute interval, only the hot tablet with the highest
+         * node cpu usage will be included in the response.
+         *
+         * @param HotTablet[] $hotTablets
+         */
+        public function setHotTablets($hotTablets)
+        {
+        }
+        /**
+         * @return HotTablet[]
+         */
+        public function getHotTablets()
+        {
+        }
+        /**
+         * Set if not all hot tablets could be returned in a single response. Pass
+         * this value to `page_token` in another request to get the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HotTablet[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListHotTabletsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotTablets()
-    {
-    }
-    /**
-     * Set if not all hot tablets could be returned in a single response. Pass
-     * this value to `page_token` in another request to get the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListHotTabletsResponse extends \Google\Service\BigtableAdmin\ListHotTabletsResponse
     {
     }
 }

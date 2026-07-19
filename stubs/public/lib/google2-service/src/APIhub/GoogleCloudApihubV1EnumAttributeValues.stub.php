@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1EnumAttributeValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = GoogleCloudApihubV1AllowedValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Required. The attribute values in case attribute data type is enum.
-     *
-     * @param GoogleCloudApihubV1AllowedValue[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1EnumAttributeValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = GoogleCloudApihubV1AllowedValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Required. The attribute values in case attribute data type is enum.
+         *
+         * @param GoogleCloudApihubV1AllowedValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AllowedValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AllowedValue[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1EnumAttributeValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_APIhub_GoogleCloudApihubV1EnumAttributeValues extends \Google\Service\APIhub\GoogleCloudApihubV1EnumAttributeValues
     {
     }
 }

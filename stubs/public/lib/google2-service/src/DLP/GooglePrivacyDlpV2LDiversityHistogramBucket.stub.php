@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2LDiversityHistogramBucket extends \Google\Collection
-{
-    protected $collection_key = 'bucketValues';
-    /**
-     * Total number of equivalence classes in this bucket.
-     *
-     * @var string
-     */
-    public $bucketSize;
-    /**
-     * Total number of distinct equivalence classes in this bucket.
-     *
-     * @var string
-     */
-    public $bucketValueCount;
-    protected $bucketValuesType = GooglePrivacyDlpV2LDiversityEquivalenceClass::class;
-    protected $bucketValuesDataType = 'array';
-    /**
-     * Lower bound on the sensitive value frequencies of the equivalence classes
-     * in this bucket.
-     *
-     * @var string
-     */
-    public $sensitiveValueFrequencyLowerBound;
-    /**
-     * Upper bound on the sensitive value frequencies of the equivalence classes
-     * in this bucket.
-     *
-     * @var string
-     */
-    public $sensitiveValueFrequencyUpperBound;
-    /**
-     * Total number of equivalence classes in this bucket.
-     *
-     * @param string $bucketSize
-     */
-    public function setBucketSize($bucketSize)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2LDiversityHistogramBucket extends \Google\Collection
     {
+        protected $collection_key = 'bucketValues';
+        /**
+         * Total number of equivalence classes in this bucket.
+         *
+         * @var string
+         */
+        public $bucketSize;
+        /**
+         * Total number of distinct equivalence classes in this bucket.
+         *
+         * @var string
+         */
+        public $bucketValueCount;
+        protected $bucketValuesType = GooglePrivacyDlpV2LDiversityEquivalenceClass::class;
+        protected $bucketValuesDataType = 'array';
+        /**
+         * Lower bound on the sensitive value frequencies of the equivalence classes
+         * in this bucket.
+         *
+         * @var string
+         */
+        public $sensitiveValueFrequencyLowerBound;
+        /**
+         * Upper bound on the sensitive value frequencies of the equivalence classes
+         * in this bucket.
+         *
+         * @var string
+         */
+        public $sensitiveValueFrequencyUpperBound;
+        /**
+         * Total number of equivalence classes in this bucket.
+         *
+         * @param string $bucketSize
+         */
+        public function setBucketSize($bucketSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketSize()
+        {
+        }
+        /**
+         * Total number of distinct equivalence classes in this bucket.
+         *
+         * @param string $bucketValueCount
+         */
+        public function setBucketValueCount($bucketValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketValueCount()
+        {
+        }
+        /**
+         * Sample of equivalence classes in this bucket. The total number of classes
+         * returned per bucket is capped at 20.
+         *
+         * @param GooglePrivacyDlpV2LDiversityEquivalenceClass[] $bucketValues
+         */
+        public function setBucketValues($bucketValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LDiversityEquivalenceClass[]
+         */
+        public function getBucketValues()
+        {
+        }
+        /**
+         * Lower bound on the sensitive value frequencies of the equivalence classes
+         * in this bucket.
+         *
+         * @param string $sensitiveValueFrequencyLowerBound
+         */
+        public function setSensitiveValueFrequencyLowerBound($sensitiveValueFrequencyLowerBound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSensitiveValueFrequencyLowerBound()
+        {
+        }
+        /**
+         * Upper bound on the sensitive value frequencies of the equivalence classes
+         * in this bucket.
+         *
+         * @param string $sensitiveValueFrequencyUpperBound
+         */
+        public function setSensitiveValueFrequencyUpperBound($sensitiveValueFrequencyUpperBound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSensitiveValueFrequencyUpperBound()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2LDiversityHistogramBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketSize()
-    {
-    }
-    /**
-     * Total number of distinct equivalence classes in this bucket.
-     *
-     * @param string $bucketValueCount
-     */
-    public function setBucketValueCount($bucketValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucketValueCount()
-    {
-    }
-    /**
-     * Sample of equivalence classes in this bucket. The total number of classes
-     * returned per bucket is capped at 20.
-     *
-     * @param GooglePrivacyDlpV2LDiversityEquivalenceClass[] $bucketValues
-     */
-    public function setBucketValues($bucketValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2LDiversityEquivalenceClass[]
-     */
-    public function getBucketValues()
-    {
-    }
-    /**
-     * Lower bound on the sensitive value frequencies of the equivalence classes
-     * in this bucket.
-     *
-     * @param string $sensitiveValueFrequencyLowerBound
-     */
-    public function setSensitiveValueFrequencyLowerBound($sensitiveValueFrequencyLowerBound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSensitiveValueFrequencyLowerBound()
-    {
-    }
-    /**
-     * Upper bound on the sensitive value frequencies of the equivalence classes
-     * in this bucket.
-     *
-     * @param string $sensitiveValueFrequencyUpperBound
-     */
-    public function setSensitiveValueFrequencyUpperBound($sensitiveValueFrequencyUpperBound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSensitiveValueFrequencyUpperBound()
+    class Google_Service_DLP_GooglePrivacyDlpV2LDiversityHistogramBucket extends \Google\Service\DLP\GooglePrivacyDlpV2LDiversityHistogramBucket
     {
     }
 }

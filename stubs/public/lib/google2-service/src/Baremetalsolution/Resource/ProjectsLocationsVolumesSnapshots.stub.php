@@ -21,87 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "snapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $snapshots = $baremetalsolutionService->projects_locations_volumes_snapshots;
- *  </code>
- */
-class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\BaremetalsolutionEmpty;
+    use Google\Service\Baremetalsolution\ListVolumeSnapshotsResponse;
+    use Google\Service\Baremetalsolution\Operation;
+    use Google\Service\Baremetalsolution\RestoreVolumeSnapshotRequest;
+    use Google\Service\Baremetalsolution\VolumeSnapshot;
     /**
-     * Takes a snapshot of a boot volume. Returns INVALID_ARGUMENT if called for a
-     * non-boot volume. (snapshots.create)
-     *
-     * @param string $parent Required. The volume to snapshot.
-     * @param VolumeSnapshot $postBody
-     * @param array $optParams Optional parameters.
-     * @return VolumeSnapshot
-     * @throws \Google\Service\Exception
+     * The "snapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $snapshots = $baremetalsolutionService->projects_locations_volumes_snapshots;
+     *  </code>
      */
-    public function create($parent, VolumeSnapshot $postBody, $optParams = [])
+    class ProjectsLocationsVolumesSnapshots extends \Google\Service\Resource
     {
+        /**
+         * Takes a snapshot of a boot volume. Returns INVALID_ARGUMENT if called for a
+         * non-boot volume. (snapshots.create)
+         *
+         * @param string $parent Required. The volume to snapshot.
+         * @param VolumeSnapshot $postBody
+         * @param array $optParams Optional parameters.
+         * @return VolumeSnapshot
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, VolumeSnapshot $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a volume snapshot. Returns INVALID_ARGUMENT if called for a non-boot
+         * volume. (snapshots.delete)
+         *
+         * @param string $name Required. The name of the snapshot to delete.
+         * @param array $optParams Optional parameters.
+         * @return BaremetalsolutionEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the specified snapshot resource. Returns INVALID_ARGUMENT if called
+         * for a non-boot volume. (snapshots.get)
+         *
+         * @param string $name Required. The name of the snapshot.
+         * @param array $optParams Optional parameters.
+         * @return VolumeSnapshot
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the list of snapshots for the specified volume. Returns a response
+         * with an empty list of snapshots if called for a non-boot volume.
+         * (snapshots.listProjectsLocationsVolumesSnapshots)
+         *
+         * @param string $parent Required. Parent value for ListVolumesRequest.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. The server might return fewer
+         * items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken A token identifying a page of results from the
+         * server.
+         * @return ListVolumeSnapshotsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsVolumesSnapshots($parent, $optParams = [])
+        {
+        }
+        /**
+         * Uses the specified snapshot to restore its parent volume. Returns
+         * INVALID_ARGUMENT if called for a non-boot volume.
+         * (snapshots.restoreVolumeSnapshot)
+         *
+         * @param string $volumeSnapshot Required. Name of the snapshot which will be
+         * used to restore its parent volume.
+         * @param RestoreVolumeSnapshotRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function restoreVolumeSnapshot($volumeSnapshot, RestoreVolumeSnapshotRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a volume snapshot. Returns INVALID_ARGUMENT if called for a non-boot
-     * volume. (snapshots.delete)
-     *
-     * @param string $name Required. The name of the snapshot to delete.
-     * @param array $optParams Optional parameters.
-     * @return BaremetalsolutionEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsVolumesSnapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the specified snapshot resource. Returns INVALID_ARGUMENT if called
-     * for a non-boot volume. (snapshots.get)
-     *
-     * @param string $name Required. The name of the snapshot.
-     * @param array $optParams Optional parameters.
-     * @return VolumeSnapshot
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the list of snapshots for the specified volume. Returns a response
-     * with an empty list of snapshots if called for a non-boot volume.
-     * (snapshots.listProjectsLocationsVolumesSnapshots)
-     *
-     * @param string $parent Required. Parent value for ListVolumesRequest.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. The server might return fewer
-     * items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken A token identifying a page of results from the
-     * server.
-     * @return ListVolumeSnapshotsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsVolumesSnapshots($parent, $optParams = [])
-    {
-    }
-    /**
-     * Uses the specified snapshot to restore its parent volume. Returns
-     * INVALID_ARGUMENT if called for a non-boot volume.
-     * (snapshots.restoreVolumeSnapshot)
-     *
-     * @param string $volumeSnapshot Required. Name of the snapshot which will be
-     * used to restore its parent volume.
-     * @param RestoreVolumeSnapshotRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function restoreVolumeSnapshot($volumeSnapshot, RestoreVolumeSnapshotRequest $postBody, $optParams = [])
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsVolumesSnapshots extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsVolumesSnapshots
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class BootDisk extends \Google\Model
-{
-    /**
-     * Disk type of the boot disk. (i.e. Hyperdisk-Balanced, PD-Balanced, etc.)
-     *
-     * @var string
-     */
-    public $diskType;
-    /**
-     * For Hyperdisk-Balanced only, the provisioned IOPS config value.
-     *
-     * @var string
-     */
-    public $provisionedIops;
-    /**
-     * For Hyperdisk-Balanced only, the provisioned throughput config value.
-     *
-     * @var string
-     */
-    public $provisionedThroughput;
-    /**
-     * Disk size in GB. Replaces NodeConfig.disk_size_gb
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * Disk type of the boot disk. (i.e. Hyperdisk-Balanced, PD-Balanced, etc.)
-     *
-     * @param string $diskType
-     */
-    public function setDiskType($diskType)
+namespace Google\Service\Container {
+    class BootDisk extends \Google\Model
     {
+        /**
+         * Disk type of the boot disk. (i.e. Hyperdisk-Balanced, PD-Balanced, etc.)
+         *
+         * @var string
+         */
+        public $diskType;
+        /**
+         * For Hyperdisk-Balanced only, the provisioned IOPS config value.
+         *
+         * @var string
+         */
+        public $provisionedIops;
+        /**
+         * For Hyperdisk-Balanced only, the provisioned throughput config value.
+         *
+         * @var string
+         */
+        public $provisionedThroughput;
+        /**
+         * Disk size in GB. Replaces NodeConfig.disk_size_gb
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * Disk type of the boot disk. (i.e. Hyperdisk-Balanced, PD-Balanced, etc.)
+         *
+         * @param string $diskType
+         */
+        public function setDiskType($diskType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskType()
+        {
+        }
+        /**
+         * For Hyperdisk-Balanced only, the provisioned IOPS config value.
+         *
+         * @param string $provisionedIops
+         */
+        public function setProvisionedIops($provisionedIops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisionedIops()
+        {
+        }
+        /**
+         * For Hyperdisk-Balanced only, the provisioned throughput config value.
+         *
+         * @param string $provisionedThroughput
+         */
+        public function setProvisionedThroughput($provisionedThroughput)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisionedThroughput()
+        {
+        }
+        /**
+         * Disk size in GB. Replaces NodeConfig.disk_size_gb
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\BootDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskType()
-    {
-    }
-    /**
-     * For Hyperdisk-Balanced only, the provisioned IOPS config value.
-     *
-     * @param string $provisionedIops
-     */
-    public function setProvisionedIops($provisionedIops)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisionedIops()
-    {
-    }
-    /**
-     * For Hyperdisk-Balanced only, the provisioned throughput config value.
-     *
-     * @param string $provisionedThroughput
-     */
-    public function setProvisionedThroughput($provisionedThroughput)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisionedThroughput()
-    {
-    }
-    /**
-     * Disk size in GB. Replaces NodeConfig.disk_size_gb
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGb()
+    class Google_Service_Container_BootDisk extends \Google\Service\Container\BootDisk
     {
     }
 }

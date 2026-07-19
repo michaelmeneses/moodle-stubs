@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FirewallPolicyAssociation extends \Google\Model
-{
-    /**
-     * The target that the firewall policy is attached to.
-     *
-     * @var string
-     */
-    public $attachmentTarget;
-    /**
-     * [Output Only] Deprecated, please use short name instead. The display name
-     * of the firewall policy of the association.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. [Output Only] The firewall policy ID of the association.
-     *
-     * @var string
-     */
-    public $firewallPolicyId;
-    /**
-     * The name for an association.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] The short name of the firewall policy of the
-     * association.
-     *
-     * @var string
-     */
-    public $shortName;
-    /**
-     * The target that the firewall policy is attached to.
-     *
-     * @param string $attachmentTarget
-     */
-    public function setAttachmentTarget($attachmentTarget)
+namespace Google\Service\Compute {
+    class FirewallPolicyAssociation extends \Google\Model
     {
+        /**
+         * The target that the firewall policy is attached to.
+         *
+         * @var string
+         */
+        public $attachmentTarget;
+        /**
+         * [Output Only] Deprecated, please use short name instead. The display name
+         * of the firewall policy of the association.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. [Output Only] The firewall policy ID of the association.
+         *
+         * @var string
+         */
+        public $firewallPolicyId;
+        /**
+         * The name for an association.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] The short name of the firewall policy of the
+         * association.
+         *
+         * @var string
+         */
+        public $shortName;
+        /**
+         * The target that the firewall policy is attached to.
+         *
+         * @param string $attachmentTarget
+         */
+        public function setAttachmentTarget($attachmentTarget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentTarget()
+        {
+        }
+        /**
+         * [Output Only] Deprecated, please use short name instead. The display name
+         * of the firewall policy of the association.
+         *
+         * @deprecated
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The firewall policy ID of the association.
+         *
+         * @param string $firewallPolicyId
+         */
+        public function setFirewallPolicyId($firewallPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirewallPolicyId()
+        {
+        }
+        /**
+         * The name for an association.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The short name of the firewall policy of the
+         * association.
+         *
+         * @param string $shortName
+         */
+        public function setShortName($shortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FirewallPolicyAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentTarget()
-    {
-    }
-    /**
-     * [Output Only] Deprecated, please use short name instead. The display name
-     * of the firewall policy of the association.
-     *
-     * @deprecated
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The firewall policy ID of the association.
-     *
-     * @param string $firewallPolicyId
-     */
-    public function setFirewallPolicyId($firewallPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirewallPolicyId()
-    {
-    }
-    /**
-     * The name for an association.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The short name of the firewall policy of the
-     * association.
-     *
-     * @param string $shortName
-     */
-    public function setShortName($shortName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortName()
+    class Google_Service_Compute_FirewallPolicyAssociation extends \Google\Service\Compute\FirewallPolicyAssociation
     {
     }
 }

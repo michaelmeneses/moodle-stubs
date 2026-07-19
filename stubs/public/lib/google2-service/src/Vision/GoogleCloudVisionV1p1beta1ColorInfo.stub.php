@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p1beta1ColorInfo extends \Google\Model
-{
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    /**
-     * The fraction of pixels the color occupies in the image. Value in range [0,
-     * 1].
-     *
-     * @var float
-     */
-    public $pixelFraction;
-    /**
-     * Image-specific score for this color. Value in range [0, 1].
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * RGB components of the color.
-     *
-     * @param Color $color
-     */
-    public function setColor(Color $color)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p1beta1ColorInfo extends \Google\Model
     {
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        /**
+         * The fraction of pixels the color occupies in the image. Value in range [0,
+         * 1].
+         *
+         * @var float
+         */
+        public $pixelFraction;
+        /**
+         * Image-specific score for this color. Value in range [0, 1].
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * RGB components of the color.
+         *
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * The fraction of pixels the color occupies in the image. Value in range [0,
+         * 1].
+         *
+         * @param float $pixelFraction
+         */
+        public function setPixelFraction($pixelFraction)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPixelFraction()
+        {
+        }
+        /**
+         * Image-specific score for this color. Value in range [0, 1].
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Color
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p1beta1ColorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * The fraction of pixels the color occupies in the image. Value in range [0,
-     * 1].
-     *
-     * @param float $pixelFraction
-     */
-    public function setPixelFraction($pixelFraction)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPixelFraction()
-    {
-    }
-    /**
-     * Image-specific score for this color. Value in range [0, 1].
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Vision_GoogleCloudVisionV1p1beta1ColorInfo extends \Google\Service\Vision\GoogleCloudVisionV1p1beta1ColorInfo
     {
     }
 }

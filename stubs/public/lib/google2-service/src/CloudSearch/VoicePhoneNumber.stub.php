@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class VoicePhoneNumber extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $e164;
-    protected $i18nDataType = VoicePhoneNumberI18nData::class;
-    protected $i18nDataDataType = '';
-    /**
-     * @param string
-     */
-    public function setE164($e164)
+namespace Google\Service\CloudSearch {
+    class VoicePhoneNumber extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $e164;
+        protected $i18nDataType = VoicePhoneNumberI18nData::class;
+        protected $i18nDataDataType = '';
+        /**
+         * @param string
+         */
+        public function setE164($e164)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getE164()
+        {
+        }
+        /**
+         * @param VoicePhoneNumberI18nData
+         */
+        public function setI18nData(VoicePhoneNumberI18nData $i18nData)
+        {
+        }
+        /**
+         * @return VoicePhoneNumberI18nData
+         */
+        public function getI18nData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\VoicePhoneNumber registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getE164()
-    {
-    }
-    /**
-     * @param VoicePhoneNumberI18nData
-     */
-    public function setI18nData(VoicePhoneNumberI18nData $i18nData)
-    {
-    }
-    /**
-     * @return VoicePhoneNumberI18nData
-     */
-    public function getI18nData()
+    class Google_Service_CloudSearch_VoicePhoneNumber extends \Google\Service\CloudSearch\VoicePhoneNumber
     {
     }
 }

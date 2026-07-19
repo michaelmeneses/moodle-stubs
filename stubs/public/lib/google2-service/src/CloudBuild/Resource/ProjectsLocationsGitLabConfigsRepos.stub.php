@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "repos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $repos = $cloudbuildService->projects_locations_gitLabConfigs_repos;
- *  </code>
- */
-class ProjectsLocationsGitLabConfigsRepos extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\ListGitLabRepositoriesResponse;
     /**
-     * List all repositories for a given `GitLabConfig`. This API is experimental
-     * (repos.listProjectsLocationsGitLabConfigsRepos)
-     *
-     * @param string $parent Required. Name of the parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of repositories to return. The
-     * service may return fewer than this value.
-     * @opt_param string pageToken A page token, received from a previous
-     * ListGitLabRepositoriesRequest` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to
-     * `ListGitLabRepositoriesRequest` must match the call that provided the page
-     * token.
-     * @return ListGitLabRepositoriesResponse
+     * The "repos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $repos = $cloudbuildService->projects_locations_gitLabConfigs_repos;
+     *  </code>
      */
-    public function listProjectsLocationsGitLabConfigsRepos($parent, $optParams = [])
+    class ProjectsLocationsGitLabConfigsRepos extends \Google\Service\Resource
+    {
+        /**
+         * List all repositories for a given `GitLabConfig`. This API is experimental
+         * (repos.listProjectsLocationsGitLabConfigsRepos)
+         *
+         * @param string $parent Required. Name of the parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of repositories to return. The
+         * service may return fewer than this value.
+         * @opt_param string pageToken A page token, received from a previous
+         * ListGitLabRepositoriesRequest` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to
+         * `ListGitLabRepositoriesRequest` must match the call that provided the page
+         * token.
+         * @return ListGitLabRepositoriesResponse
+         */
+        public function listProjectsLocationsGitLabConfigsRepos($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsGitLabConfigsRepos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsGitLabConfigsRepos extends \Google\Service\CloudBuild\Resource\ProjectsLocationsGitLabConfigsRepos
     {
     }
 }

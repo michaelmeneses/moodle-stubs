@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "executionsnapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $executionsnapshots = $integrationsService->projects_locations_integrations_executionsnapshots;
- *  </code>
- */
-class ProjectsLocationsIntegrationsExecutionsnapshots extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse;
     /**
-     * Lists the snapshots of a given integration executions. This RPC is not being
-     * used.
-     * (executionsnapshots.listProjectsLocationsIntegrationsExecutionsnapshots)
-     *
-     * @param string $parent Required. The parent resource name of the integration
-     * execution.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Currently supports filter by `execution_info_id` or
-     * `execution_snapshot_id`.
-     * @opt_param int pageSize Number of entries to be returned in a page.
-     * @opt_param string pageToken The token used to retrieve the next page results.
-     * @opt_param string readMask View mask for the response data. If set, only the
-     * field specified will be returned as part of the result. If not set, all
-     * fields in event execution snapshot will be filled and returned.
-     * @return GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse
+     * The "executionsnapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $executionsnapshots = $integrationsService->projects_locations_integrations_executionsnapshots;
+     *  </code>
      */
-    public function listProjectsLocationsIntegrationsExecutionsnapshots($parent, $optParams = [])
+    class ProjectsLocationsIntegrationsExecutionsnapshots extends \Google\Service\Resource
+    {
+        /**
+         * Lists the snapshots of a given integration executions. This RPC is not being
+         * used.
+         * (executionsnapshots.listProjectsLocationsIntegrationsExecutionsnapshots)
+         *
+         * @param string $parent Required. The parent resource name of the integration
+         * execution.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Currently supports filter by `execution_info_id` or
+         * `execution_snapshot_id`.
+         * @opt_param int pageSize Number of entries to be returned in a page.
+         * @opt_param string pageToken The token used to retrieve the next page results.
+         * @opt_param string readMask View mask for the response data. If set, only the
+         * field specified will be returned as part of the result. If not set, all
+         * fields in event execution snapshot will be filled and returned.
+         * @return GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse
+         */
+        public function listProjectsLocationsIntegrationsExecutionsnapshots($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsIntegrationsExecutionsnapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsIntegrationsExecutionsnapshots extends \Google\Service\Integrations\Resource\ProjectsLocationsIntegrationsExecutionsnapshots
     {
     }
 }

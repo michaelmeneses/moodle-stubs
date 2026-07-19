@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PointwiseMetricResult extends \Google\Model
-{
-    protected $customOutputType = GoogleCloudAiplatformV1CustomOutput::class;
-    protected $customOutputDataType = '';
-    /**
-     * Output only. Explanation for pointwise metric score.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Output only. Pointwise metric score.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. Spec for custom output.
-     *
-     * @param GoogleCloudAiplatformV1CustomOutput $customOutput
-     */
-    public function setCustomOutput(GoogleCloudAiplatformV1CustomOutput $customOutput)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PointwiseMetricResult extends \Google\Model
     {
+        protected $customOutputType = GoogleCloudAiplatformV1CustomOutput::class;
+        protected $customOutputDataType = '';
+        /**
+         * Output only. Explanation for pointwise metric score.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Output only. Pointwise metric score.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. Spec for custom output.
+         *
+         * @param GoogleCloudAiplatformV1CustomOutput $customOutput
+         */
+        public function setCustomOutput(GoogleCloudAiplatformV1CustomOutput $customOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CustomOutput
+         */
+        public function getCustomOutput()
+        {
+        }
+        /**
+         * Output only. Explanation for pointwise metric score.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Output only. Pointwise metric score.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CustomOutput
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PointwiseMetricResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomOutput()
-    {
-    }
-    /**
-     * Output only. Explanation for pointwise metric score.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Output only. Pointwise metric score.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PointwiseMetricResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PointwiseMetricResult
     {
     }
 }

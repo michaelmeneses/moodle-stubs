@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class AddNoteRequest extends \Google\Model
-{
-    protected $noteType = Note::class;
-    protected $noteDataType = '';
-    /**
-     * The note to add.
-     *
-     * @param Note $note
-     */
-    public function setNote(Note $note)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class AddNoteRequest extends \Google\Model
     {
+        protected $noteType = Note::class;
+        protected $noteDataType = '';
+        /**
+         * The note to add.
+         *
+         * @param Note $note
+         */
+        public function setNote(Note $note)
+        {
+        }
+        /**
+         * @return Note
+         */
+        public function getNote()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Note
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\AddNoteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNote()
+    class Google_Service_AuthorizedBuyersMarketplace_AddNoteRequest extends \Google\Service\AuthorizedBuyersMarketplace\AddNoteRequest
     {
     }
 }

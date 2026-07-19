@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatPollDetails extends \Google\Model
-{
-    public const STATUS_unknown = 'unknown';
-    public const STATUS_active = 'active';
-    public const STATUS_closed = 'closed';
-    protected $metadataType = LiveChatPollDetailsPollMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param LiveChatPollDetailsPollMetadata $metadata
-     */
-    public function setMetadata(LiveChatPollDetailsPollMetadata $metadata)
+namespace Google\Service\YouTube {
+    class LiveChatPollDetails extends \Google\Model
     {
+        public const STATUS_unknown = 'unknown';
+        public const STATUS_active = 'active';
+        public const STATUS_closed = 'closed';
+        protected $metadataType = LiveChatPollDetailsPollMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param LiveChatPollDetailsPollMetadata $metadata
+         */
+        public function setMetadata(LiveChatPollDetailsPollMetadata $metadata)
+        {
+        }
+        /**
+         * @return LiveChatPollDetailsPollMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiveChatPollDetailsPollMetadata
+     * Runtime class alias of \Google\Service\YouTube\LiveChatPollDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_YouTube_LiveChatPollDetails extends \Google\Service\YouTube\LiveChatPollDetails
     {
     }
 }

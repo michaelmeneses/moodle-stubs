@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class I18n extends \Google\Model
-{
-    protected $rendererFormattedStringsType = RendererFormattedStrings::class;
-    protected $rendererFormattedStringsDataType = '';
-    /**
-     * Internationalized strings that are formatted to the locale in
-     * configSettings.
-     *
-     * @param RendererFormattedStrings $rendererFormattedStrings
-     */
-    public function setRendererFormattedStrings(RendererFormattedStrings $rendererFormattedStrings)
+namespace Google\Service\PagespeedInsights {
+    class I18n extends \Google\Model
     {
+        protected $rendererFormattedStringsType = RendererFormattedStrings::class;
+        protected $rendererFormattedStringsDataType = '';
+        /**
+         * Internationalized strings that are formatted to the locale in
+         * configSettings.
+         *
+         * @param RendererFormattedStrings $rendererFormattedStrings
+         */
+        public function setRendererFormattedStrings(RendererFormattedStrings $rendererFormattedStrings)
+        {
+        }
+        /**
+         * @return RendererFormattedStrings
+         */
+        public function getRendererFormattedStrings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RendererFormattedStrings
+     * Runtime class alias of \Google\Service\PagespeedInsights\I18n registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRendererFormattedStrings()
+    class Google_Service_PagespeedInsights_I18n extends \Google\Service\PagespeedInsights\I18n
     {
     }
 }

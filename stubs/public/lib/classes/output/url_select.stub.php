@@ -20,141 +20,153 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Simple URL selection widget description.
- *
- * @copyright 2009 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class url_select implements renderable, templatable
-{
+namespace core\output {
+    use core\exception\coding_exception;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var array $urls associative array value=>label ex.: array(1=>'One, 2=>Two)
-     *     it is also possible to specify optgroup as complex label array ex.:
-     *         array(array('Odd'=>array(1=>'One', 3=>'Three)), array('Even'=>array(2=>'Two')))
-     *         array(1=>'One', '--1uniquekey'=>array('More'=>array(2=>'Two', 3=>'Three')))
+     * Simple URL selection widget description.
+     *
+     * @copyright 2009 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public $urls;
-    /**
-     * @var string Selected option
-     */
-    public $selected;
-    /**
-     * @var array Nothing selected
-     */
-    public $nothing;
-    /**
-     * @var array Extra select field attributes
-     */
-    public $attributes = [];
-    /**
-     * @var string Button label
-     */
-    public $label = '';
-    /**
-     * @var array Button label's attributes
-     */
-    public $labelattributes = [];
-    /**
-     * @var string Wrapping div class
-     */
-    public $class = 'urlselect';
-    /**
-     * @var bool True if button disabled, false if normal
-     */
-    public $disabled = false;
-    /**
-     * @var string Button tooltip
-     */
-    public $tooltip = null;
-    /**
-     * @var string Form id
-     */
-    public $formid = null;
-    /**
-     * @var help_icon The help icon for this element.
-     */
-    public $helpicon = null;
-    /**
-     * @var string If set, makes button visible with given name for button
-     */
-    public $showbutton = null;
-    /**
-     * @var array $disabledoptions array of disabled options
-     */
-    public $disabledoptions = [];
-    /**
-     * Constructor
-     * @param array $urls list of options
-     * @param string $selected selected element
-     * @param array $nothing
-     * @param string $formid
-     * @param string $showbutton Set to text of button if it should be visible
-     *   or null if it should be hidden (hidden version always has text 'go')
-     */
-    public function __construct(array $urls, $selected = '', $nothing = ['' => 'choosedots'], $formid = null, $showbutton = null)
+    class url_select implements renderable, templatable
     {
+        /**
+         * @var array $urls associative array value=>label ex.: array(1=>'One, 2=>Two)
+         *     it is also possible to specify optgroup as complex label array ex.:
+         *         array(array('Odd'=>array(1=>'One', 3=>'Three)), array('Even'=>array(2=>'Two')))
+         *         array(1=>'One', '--1uniquekey'=>array('More'=>array(2=>'Two', 3=>'Three')))
+         */
+        public $urls;
+        /**
+         * @var string Selected option
+         */
+        public $selected;
+        /**
+         * @var array Nothing selected
+         */
+        public $nothing;
+        /**
+         * @var array Extra select field attributes
+         */
+        public $attributes = [];
+        /**
+         * @var string Button label
+         */
+        public $label = '';
+        /**
+         * @var array Button label's attributes
+         */
+        public $labelattributes = [];
+        /**
+         * @var string Wrapping div class
+         */
+        public $class = 'urlselect';
+        /**
+         * @var bool True if button disabled, false if normal
+         */
+        public $disabled = false;
+        /**
+         * @var string Button tooltip
+         */
+        public $tooltip = null;
+        /**
+         * @var string Form id
+         */
+        public $formid = null;
+        /**
+         * @var help_icon The help icon for this element.
+         */
+        public $helpicon = null;
+        /**
+         * @var string If set, makes button visible with given name for button
+         */
+        public $showbutton = null;
+        /**
+         * @var array $disabledoptions array of disabled options
+         */
+        public $disabledoptions = [];
+        /**
+         * Constructor
+         * @param array $urls list of options
+         * @param string $selected selected element
+         * @param array $nothing
+         * @param string $formid
+         * @param string $showbutton Set to text of button if it should be visible
+         *   or null if it should be hidden (hidden version always has text 'go')
+         */
+        public function __construct(array $urls, $selected = '', $nothing = ['' => 'choosedots'], $formid = null, $showbutton = null)
+        {
+        }
+        /**
+         * Disable the option(url).
+         *
+         * @param string $urlkey
+         * @param bool $disabled
+         */
+        public function set_option_disabled(string $urlkey, bool $disabled = true)
+        {
+        }
+        /**
+         * Adds help icon.
+         *
+         * @param string $identifier The keyword that defines a help page
+         * @param string $component
+         */
+        public function set_help_icon($identifier, $component = 'moodle')
+        {
+        }
+        /**
+         * Sets select's label
+         *
+         * @param string $label
+         * @param array $attributes (optional)
+         */
+        public function set_label($label, $attributes = [])
+        {
+        }
+        /**
+         * Clean a URL.
+         *
+         * @param string $value The URL.
+         * @return string The cleaned URL.
+         */
+        protected function clean_url($value)
+        {
+        }
+        /**
+         * Flatten the options for Mustache.
+         *
+         * This also cleans the URLs.
+         *
+         * @param array $options The options.
+         * @param array $nothing The nothing option.
+         * @return array
+         */
+        protected function flatten_options($options, $nothing)
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output Renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Disable the option(url).
-     *
-     * @param string $urlkey
-     * @param bool $disabled
+     * Runtime class alias of \core\output\url_select registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function set_option_disabled(string $urlkey, bool $disabled = true)
-    {
-    }
-    /**
-     * Adds help icon.
-     *
-     * @param string $identifier The keyword that defines a help page
-     * @param string $component
-     */
-    public function set_help_icon($identifier, $component = 'moodle')
-    {
-    }
-    /**
-     * Sets select's label
-     *
-     * @param string $label
-     * @param array $attributes (optional)
-     */
-    public function set_label($label, $attributes = [])
-    {
-    }
-    /**
-     * Clean a URL.
-     *
-     * @param string $value The URL.
-     * @return string The cleaned URL.
-     */
-    protected function clean_url($value)
-    {
-    }
-    /**
-     * Flatten the options for Mustache.
-     *
-     * This also cleans the URLs.
-     *
-     * @param array $options The options.
-     * @param array $nothing The nothing option.
-     * @return array
-     */
-    protected function flatten_options($options, $nothing)
-    {
-    }
-    /**
-     * Export for template.
-     *
-     * @param renderer_base $output Renderer.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
+    class url_select extends \core\output\url_select
     {
     }
 }

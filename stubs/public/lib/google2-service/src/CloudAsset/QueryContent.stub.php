@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class QueryContent extends \Google\Model
-{
-    protected $iamPolicyAnalysisQueryType = IamPolicyAnalysisQuery::class;
-    protected $iamPolicyAnalysisQueryDataType = '';
-    /**
-     * An IAM Policy Analysis query, which could be used in the
-     * AssetService.AnalyzeIamPolicy RPC or the
-     * AssetService.AnalyzeIamPolicyLongrunning RPC.
-     *
-     * @param IamPolicyAnalysisQuery $iamPolicyAnalysisQuery
-     */
-    public function setIamPolicyAnalysisQuery(IamPolicyAnalysisQuery $iamPolicyAnalysisQuery)
+namespace Google\Service\CloudAsset {
+    class QueryContent extends \Google\Model
     {
+        protected $iamPolicyAnalysisQueryType = IamPolicyAnalysisQuery::class;
+        protected $iamPolicyAnalysisQueryDataType = '';
+        /**
+         * An IAM Policy Analysis query, which could be used in the
+         * AssetService.AnalyzeIamPolicy RPC or the
+         * AssetService.AnalyzeIamPolicyLongrunning RPC.
+         *
+         * @param IamPolicyAnalysisQuery $iamPolicyAnalysisQuery
+         */
+        public function setIamPolicyAnalysisQuery(IamPolicyAnalysisQuery $iamPolicyAnalysisQuery)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisQuery
+         */
+        public function getIamPolicyAnalysisQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IamPolicyAnalysisQuery
+     * Runtime class alias of \Google\Service\CloudAsset\QueryContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamPolicyAnalysisQuery()
+    class Google_Service_CloudAsset_QueryContent extends \Google\Service\CloudAsset\QueryContent
     {
     }
 }

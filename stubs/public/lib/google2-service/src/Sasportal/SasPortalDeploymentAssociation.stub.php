@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalDeploymentAssociation extends \Google\Model
-{
-    /**
-     * GCP project id of the associated project.
-     *
-     * @var string
-     */
-    public $gcpProjectId;
-    /**
-     * User id of the deployment.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * GCP project id of the associated project.
-     *
-     * @param string $gcpProjectId
-     */
-    public function setGcpProjectId($gcpProjectId)
+namespace Google\Service\Sasportal {
+    class SasPortalDeploymentAssociation extends \Google\Model
     {
+        /**
+         * GCP project id of the associated project.
+         *
+         * @var string
+         */
+        public $gcpProjectId;
+        /**
+         * User id of the deployment.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * GCP project id of the associated project.
+         *
+         * @param string $gcpProjectId
+         */
+        public function setGcpProjectId($gcpProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpProjectId()
+        {
+        }
+        /**
+         * User id of the deployment.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalDeploymentAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpProjectId()
-    {
-    }
-    /**
-     * User id of the deployment.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Sasportal_SasPortalDeploymentAssociation extends \Google\Service\Sasportal\SasPortalDeploymentAssociation
     {
     }
 }

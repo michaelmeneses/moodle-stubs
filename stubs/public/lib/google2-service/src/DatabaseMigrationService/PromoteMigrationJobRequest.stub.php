@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PromoteMigrationJobRequest extends \Google\Model
-{
-    protected $objectsFilterType = MigrationJobObjectsConfig::class;
-    protected $objectsFilterDataType = '';
-    /**
-     * Optional. The object filter to apply to the migration job.
-     *
-     * @param MigrationJobObjectsConfig $objectsFilter
-     */
-    public function setObjectsFilter(MigrationJobObjectsConfig $objectsFilter)
+namespace Google\Service\DatabaseMigrationService {
+    class PromoteMigrationJobRequest extends \Google\Model
     {
+        protected $objectsFilterType = MigrationJobObjectsConfig::class;
+        protected $objectsFilterDataType = '';
+        /**
+         * Optional. The object filter to apply to the migration job.
+         *
+         * @param MigrationJobObjectsConfig $objectsFilter
+         */
+        public function setObjectsFilter(MigrationJobObjectsConfig $objectsFilter)
+        {
+        }
+        /**
+         * @return MigrationJobObjectsConfig
+         */
+        public function getObjectsFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationJobObjectsConfig
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PromoteMigrationJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectsFilter()
+    class Google_Service_DatabaseMigrationService_PromoteMigrationJobRequest extends \Google\Service\DatabaseMigrationService\PromoteMigrationJobRequest
     {
     }
 }

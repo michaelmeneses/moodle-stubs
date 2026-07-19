@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListAppProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'failedLocations';
-    protected $appProfilesType = AppProfile::class;
-    protected $appProfilesDataType = 'array';
-    /**
-     * Locations from which AppProfile information could not be retrieved, due to
-     * an outage or some other transient condition. AppProfiles from these
-     * locations may be missing from `app_profiles`. Values are of the form
-     * `projects//locations/`
-     *
-     * @var string[]
-     */
-    public $failedLocations;
-    /**
-     * Set if not all app profiles could be returned in a single response. Pass
-     * this value to `page_token` in another request to get the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of requested app profiles.
-     *
-     * @param AppProfile[] $appProfiles
-     */
-    public function setAppProfiles($appProfiles)
+namespace Google\Service\BigtableAdmin {
+    class ListAppProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'failedLocations';
+        protected $appProfilesType = AppProfile::class;
+        protected $appProfilesDataType = 'array';
+        /**
+         * Locations from which AppProfile information could not be retrieved, due to
+         * an outage or some other transient condition. AppProfiles from these
+         * locations may be missing from `app_profiles`. Values are of the form
+         * `projects//locations/`
+         *
+         * @var string[]
+         */
+        public $failedLocations;
+        /**
+         * Set if not all app profiles could be returned in a single response. Pass
+         * this value to `page_token` in another request to get the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of requested app profiles.
+         *
+         * @param AppProfile[] $appProfiles
+         */
+        public function setAppProfiles($appProfiles)
+        {
+        }
+        /**
+         * @return AppProfile[]
+         */
+        public function getAppProfiles()
+        {
+        }
+        /**
+         * Locations from which AppProfile information could not be retrieved, due to
+         * an outage or some other transient condition. AppProfiles from these
+         * locations may be missing from `app_profiles`. Values are of the form
+         * `projects//locations/`
+         *
+         * @param string[] $failedLocations
+         */
+        public function setFailedLocations($failedLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedLocations()
+        {
+        }
+        /**
+         * Set if not all app profiles could be returned in a single response. Pass
+         * this value to `page_token` in another request to get the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppProfile[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListAppProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppProfiles()
-    {
-    }
-    /**
-     * Locations from which AppProfile information could not be retrieved, due to
-     * an outage or some other transient condition. AppProfiles from these
-     * locations may be missing from `app_profiles`. Values are of the form
-     * `projects//locations/`
-     *
-     * @param string[] $failedLocations
-     */
-    public function setFailedLocations($failedLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFailedLocations()
-    {
-    }
-    /**
-     * Set if not all app profiles could be returned in a single response. Pass
-     * this value to `page_token` in another request to get the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListAppProfilesResponse extends \Google\Service\BigtableAdmin\ListAppProfilesResponse
     {
     }
 }

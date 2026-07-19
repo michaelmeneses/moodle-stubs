@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class Schema extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * A Protocol Buffer schema definition.
-     */
-    public const TYPE_PROTOCOL_BUFFER = 'PROTOCOL_BUFFER';
-    /**
-     * An Avro schema definition.
-     */
-    public const TYPE_AVRO = 'AVRO';
-    /**
-     * The definition of the schema. This should contain a string representing the
-     * full definition of the schema that is a valid schema definition of the type
-     * specified in `type`.
-     *
-     * @var string
-     */
-    public $definition;
-    /**
-     * Required. Name of the schema. Format is
-     * `projects/{project}/schemas/{schema}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp that the revision was created.
-     *
-     * @var string
-     */
-    public $revisionCreateTime;
-    /**
-     * Output only. Immutable. The revision ID of the schema.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * The type of the schema definition.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The definition of the schema. This should contain a string representing the
-     * full definition of the schema that is a valid schema definition of the type
-     * specified in `type`.
-     *
-     * @param string $definition
-     */
-    public function setDefinition($definition)
+namespace Google\Service\Pubsub {
+    class Schema extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * A Protocol Buffer schema definition.
+         */
+        public const TYPE_PROTOCOL_BUFFER = 'PROTOCOL_BUFFER';
+        /**
+         * An Avro schema definition.
+         */
+        public const TYPE_AVRO = 'AVRO';
+        /**
+         * The definition of the schema. This should contain a string representing the
+         * full definition of the schema that is a valid schema definition of the type
+         * specified in `type`.
+         *
+         * @var string
+         */
+        public $definition;
+        /**
+         * Required. Name of the schema. Format is
+         * `projects/{project}/schemas/{schema}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp that the revision was created.
+         *
+         * @var string
+         */
+        public $revisionCreateTime;
+        /**
+         * Output only. Immutable. The revision ID of the schema.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * The type of the schema definition.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The definition of the schema. This should contain a string representing the
+         * full definition of the schema that is a valid schema definition of the type
+         * specified in `type`.
+         *
+         * @param string $definition
+         */
+        public function setDefinition($definition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinition()
+        {
+        }
+        /**
+         * Required. Name of the schema. Format is
+         * `projects/{project}/schemas/{schema}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The timestamp that the revision was created.
+         *
+         * @param string $revisionCreateTime
+         */
+        public function setRevisionCreateTime($revisionCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCreateTime()
+        {
+        }
+        /**
+         * Output only. Immutable. The revision ID of the schema.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * The type of the schema definition.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, PROTOCOL_BUFFER, AVRO
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefinition()
-    {
-    }
-    /**
-     * Required. Name of the schema. Format is
-     * `projects/{project}/schemas/{schema}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The timestamp that the revision was created.
-     *
-     * @param string $revisionCreateTime
-     */
-    public function setRevisionCreateTime($revisionCreateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCreateTime()
-    {
-    }
-    /**
-     * Output only. Immutable. The revision ID of the schema.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * The type of the schema definition.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, PROTOCOL_BUFFER, AVRO
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Pubsub_Schema extends \Google\Service\Pubsub\Schema
     {
     }
 }

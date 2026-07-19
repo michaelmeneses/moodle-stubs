@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1InstanceDeploymentStatus extends \Google\Collection
-{
-    protected $collection_key = 'deployedRoutes';
-    protected $deployedRevisionsType = GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision::class;
-    protected $deployedRevisionsDataType = 'array';
-    protected $deployedRoutesType = GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute::class;
-    protected $deployedRoutesDataType = 'array';
-    /**
-     * ID of the instance reporting the status.
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * Revisions currently deployed in MPs.
-     *
-     * @param GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision[] $deployedRevisions
-     */
-    public function setDeployedRevisions($deployedRevisions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1InstanceDeploymentStatus extends \Google\Collection
     {
+        protected $collection_key = 'deployedRoutes';
+        protected $deployedRevisionsType = GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision::class;
+        protected $deployedRevisionsDataType = 'array';
+        protected $deployedRoutesType = GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute::class;
+        protected $deployedRoutesDataType = 'array';
+        /**
+         * ID of the instance reporting the status.
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * Revisions currently deployed in MPs.
+         *
+         * @param GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision[] $deployedRevisions
+         */
+        public function setDeployedRevisions($deployedRevisions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision[]
+         */
+        public function getDeployedRevisions()
+        {
+        }
+        /**
+         * Current routes deployed in the ingress routing table. A route which is
+         * missing will appear in `missing_routes`.
+         *
+         * @param GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute[] $deployedRoutes
+         */
+        public function setDeployedRoutes($deployedRoutes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute[]
+         */
+        public function getDeployedRoutes()
+        {
+        }
+        /**
+         * ID of the instance reporting the status.
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1InstanceDeploymentStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedRevisions()
-    {
-    }
-    /**
-     * Current routes deployed in the ingress routing table. A route which is
-     * missing will appear in `missing_routes`.
-     *
-     * @param GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute[] $deployedRoutes
-     */
-    public function setDeployedRoutes($deployedRoutes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute[]
-     */
-    public function getDeployedRoutes()
-    {
-    }
-    /**
-     * ID of the instance reporting the status.
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
+    class Google_Service_Apigee_GoogleCloudApigeeV1InstanceDeploymentStatus extends \Google\Service\Apigee\GoogleCloudApigeeV1InstanceDeploymentStatus
     {
     }
 }

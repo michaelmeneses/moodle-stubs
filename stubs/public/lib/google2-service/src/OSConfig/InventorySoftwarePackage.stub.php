@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventorySoftwarePackage extends \Google\Model
-{
-    protected $aptPackageType = InventoryVersionedPackage::class;
-    protected $aptPackageDataType = '';
-    protected $cosPackageType = InventoryVersionedPackage::class;
-    protected $cosPackageDataType = '';
-    protected $googetPackageType = InventoryVersionedPackage::class;
-    protected $googetPackageDataType = '';
-    protected $qfePackageType = InventoryWindowsQuickFixEngineeringPackage::class;
-    protected $qfePackageDataType = '';
-    protected $windowsApplicationType = InventoryWindowsApplication::class;
-    protected $windowsApplicationDataType = '';
-    protected $wuaPackageType = InventoryWindowsUpdatePackage::class;
-    protected $wuaPackageDataType = '';
-    protected $yumPackageType = InventoryVersionedPackage::class;
-    protected $yumPackageDataType = '';
-    protected $zypperPackageType = InventoryVersionedPackage::class;
-    protected $zypperPackageDataType = '';
-    protected $zypperPatchType = InventoryZypperPatch::class;
-    protected $zypperPatchDataType = '';
-    /**
-     * @param InventoryVersionedPackage
-     */
-    public function setAptPackage(InventoryVersionedPackage $aptPackage)
+namespace Google\Service\OSConfig {
+    class InventorySoftwarePackage extends \Google\Model
     {
+        protected $aptPackageType = InventoryVersionedPackage::class;
+        protected $aptPackageDataType = '';
+        protected $cosPackageType = InventoryVersionedPackage::class;
+        protected $cosPackageDataType = '';
+        protected $googetPackageType = InventoryVersionedPackage::class;
+        protected $googetPackageDataType = '';
+        protected $qfePackageType = InventoryWindowsQuickFixEngineeringPackage::class;
+        protected $qfePackageDataType = '';
+        protected $windowsApplicationType = InventoryWindowsApplication::class;
+        protected $windowsApplicationDataType = '';
+        protected $wuaPackageType = InventoryWindowsUpdatePackage::class;
+        protected $wuaPackageDataType = '';
+        protected $yumPackageType = InventoryVersionedPackage::class;
+        protected $yumPackageDataType = '';
+        protected $zypperPackageType = InventoryVersionedPackage::class;
+        protected $zypperPackageDataType = '';
+        protected $zypperPatchType = InventoryZypperPatch::class;
+        protected $zypperPatchDataType = '';
+        /**
+         * @param InventoryVersionedPackage
+         */
+        public function setAptPackage(InventoryVersionedPackage $aptPackage)
+        {
+        }
+        /**
+         * @return InventoryVersionedPackage
+         */
+        public function getAptPackage()
+        {
+        }
+        /**
+         * @param InventoryVersionedPackage
+         */
+        public function setCosPackage(InventoryVersionedPackage $cosPackage)
+        {
+        }
+        /**
+         * @return InventoryVersionedPackage
+         */
+        public function getCosPackage()
+        {
+        }
+        /**
+         * @param InventoryVersionedPackage
+         */
+        public function setGoogetPackage(InventoryVersionedPackage $googetPackage)
+        {
+        }
+        /**
+         * @return InventoryVersionedPackage
+         */
+        public function getGoogetPackage()
+        {
+        }
+        /**
+         * @param InventoryWindowsQuickFixEngineeringPackage
+         */
+        public function setQfePackage(InventoryWindowsQuickFixEngineeringPackage $qfePackage)
+        {
+        }
+        /**
+         * @return InventoryWindowsQuickFixEngineeringPackage
+         */
+        public function getQfePackage()
+        {
+        }
+        /**
+         * @param InventoryWindowsApplication
+         */
+        public function setWindowsApplication(InventoryWindowsApplication $windowsApplication)
+        {
+        }
+        /**
+         * @return InventoryWindowsApplication
+         */
+        public function getWindowsApplication()
+        {
+        }
+        /**
+         * @param InventoryWindowsUpdatePackage
+         */
+        public function setWuaPackage(InventoryWindowsUpdatePackage $wuaPackage)
+        {
+        }
+        /**
+         * @return InventoryWindowsUpdatePackage
+         */
+        public function getWuaPackage()
+        {
+        }
+        /**
+         * @param InventoryVersionedPackage
+         */
+        public function setYumPackage(InventoryVersionedPackage $yumPackage)
+        {
+        }
+        /**
+         * @return InventoryVersionedPackage
+         */
+        public function getYumPackage()
+        {
+        }
+        /**
+         * @param InventoryVersionedPackage
+         */
+        public function setZypperPackage(InventoryVersionedPackage $zypperPackage)
+        {
+        }
+        /**
+         * @return InventoryVersionedPackage
+         */
+        public function getZypperPackage()
+        {
+        }
+        /**
+         * @param InventoryZypperPatch
+         */
+        public function setZypperPatch(InventoryZypperPatch $zypperPatch)
+        {
+        }
+        /**
+         * @return InventoryZypperPatch
+         */
+        public function getZypperPatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventoryVersionedPackage
+     * Runtime class alias of \Google\Service\OSConfig\InventorySoftwarePackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAptPackage()
-    {
-    }
-    /**
-     * @param InventoryVersionedPackage
-     */
-    public function setCosPackage(InventoryVersionedPackage $cosPackage)
-    {
-    }
-    /**
-     * @return InventoryVersionedPackage
-     */
-    public function getCosPackage()
-    {
-    }
-    /**
-     * @param InventoryVersionedPackage
-     */
-    public function setGoogetPackage(InventoryVersionedPackage $googetPackage)
-    {
-    }
-    /**
-     * @return InventoryVersionedPackage
-     */
-    public function getGoogetPackage()
-    {
-    }
-    /**
-     * @param InventoryWindowsQuickFixEngineeringPackage
-     */
-    public function setQfePackage(InventoryWindowsQuickFixEngineeringPackage $qfePackage)
-    {
-    }
-    /**
-     * @return InventoryWindowsQuickFixEngineeringPackage
-     */
-    public function getQfePackage()
-    {
-    }
-    /**
-     * @param InventoryWindowsApplication
-     */
-    public function setWindowsApplication(InventoryWindowsApplication $windowsApplication)
-    {
-    }
-    /**
-     * @return InventoryWindowsApplication
-     */
-    public function getWindowsApplication()
-    {
-    }
-    /**
-     * @param InventoryWindowsUpdatePackage
-     */
-    public function setWuaPackage(InventoryWindowsUpdatePackage $wuaPackage)
-    {
-    }
-    /**
-     * @return InventoryWindowsUpdatePackage
-     */
-    public function getWuaPackage()
-    {
-    }
-    /**
-     * @param InventoryVersionedPackage
-     */
-    public function setYumPackage(InventoryVersionedPackage $yumPackage)
-    {
-    }
-    /**
-     * @return InventoryVersionedPackage
-     */
-    public function getYumPackage()
-    {
-    }
-    /**
-     * @param InventoryVersionedPackage
-     */
-    public function setZypperPackage(InventoryVersionedPackage $zypperPackage)
-    {
-    }
-    /**
-     * @return InventoryVersionedPackage
-     */
-    public function getZypperPackage()
-    {
-    }
-    /**
-     * @param InventoryZypperPatch
-     */
-    public function setZypperPatch(InventoryZypperPatch $zypperPatch)
-    {
-    }
-    /**
-     * @return InventoryZypperPatch
-     */
-    public function getZypperPatch()
+    class Google_Service_OSConfig_InventorySoftwarePackage extends \Google\Service\OSConfig\InventorySoftwarePackage
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment extends \Google\Model
-{
-    /**
-     * Output only. Whether the playback of this segment can be interrupted by the
-     * end user's speech and the client should then start the next Dialogflow
-     * request.
-     *
-     * @var bool
-     */
-    public $allowPlaybackInterruption;
-    /**
-     * Raw audio synthesized from the Dialogflow agent's response using the output
-     * config specified in the request.
-     *
-     * @var string
-     */
-    public $audio;
-    /**
-     * Client-specific URI that points to an audio clip accessible to the client.
-     * Dialogflow does not impose any validation on it.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. Whether the playback of this segment can be interrupted by the
-     * end user's speech and the client should then start the next Dialogflow
-     * request.
-     *
-     * @param bool $allowPlaybackInterruption
-     */
-    public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment extends \Google\Model
     {
+        /**
+         * Output only. Whether the playback of this segment can be interrupted by the
+         * end user's speech and the client should then start the next Dialogflow
+         * request.
+         *
+         * @var bool
+         */
+        public $allowPlaybackInterruption;
+        /**
+         * Raw audio synthesized from the Dialogflow agent's response using the output
+         * config specified in the request.
+         *
+         * @var string
+         */
+        public $audio;
+        /**
+         * Client-specific URI that points to an audio clip accessible to the client.
+         * Dialogflow does not impose any validation on it.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. Whether the playback of this segment can be interrupted by the
+         * end user's speech and the client should then start the next Dialogflow
+         * request.
+         *
+         * @param bool $allowPlaybackInterruption
+         */
+        public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowPlaybackInterruption()
+        {
+        }
+        /**
+         * Raw audio synthesized from the Dialogflow agent's response using the output
+         * config specified in the request.
+         *
+         * @param string $audio
+         */
+        public function setAudio($audio)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudio()
+        {
+        }
+        /**
+         * Client-specific URI that points to an audio clip accessible to the client.
+         * Dialogflow does not impose any validation on it.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPlaybackInterruption()
-    {
-    }
-    /**
-     * Raw audio synthesized from the Dialogflow agent's response using the output
-     * config specified in the request.
-     *
-     * @param string $audio
-     */
-    public function setAudio($audio)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAudio()
-    {
-    }
-    /**
-     * Client-specific URI that points to an audio clip accessible to the client.
-     * Dialogflow does not impose any validation on it.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment
     {
     }
 }

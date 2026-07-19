@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainExportIssueModelRequest extends \Google\Model
-{
-    protected $gcsDestinationType = GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Required. The issue model to export.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Google Cloud Storage URI to export the issue model to.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination $gcsDestination)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainExportIssueModelRequest extends \Google\Model
     {
+        protected $gcsDestinationType = GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Required. The issue model to export.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Google Cloud Storage URI to export the issue model to.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
+        /**
+         * Required. The issue model to export.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainExportIssueModelRequestGcsDestination
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainExportIssueModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
-    {
-    }
-    /**
-     * Required. The issue model to export.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainExportIssueModelRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainExportIssueModelRequest
     {
     }
 }

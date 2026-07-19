@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Command extends \Google\Model
-{
-    protected $agentCommandType = AgentCommand::class;
-    protected $agentCommandDataType = '';
-    protected $shellCommandType = ShellCommand::class;
-    protected $shellCommandDataType = '';
-    /**
-     * AgentCommand specifies a one-time executable program for the agent to run.
-     *
-     * @param AgentCommand $agentCommand
-     */
-    public function setAgentCommand(AgentCommand $agentCommand)
+namespace Google\Service\WorkloadManager {
+    class Command extends \Google\Model
     {
+        protected $agentCommandType = AgentCommand::class;
+        protected $agentCommandDataType = '';
+        protected $shellCommandType = ShellCommand::class;
+        protected $shellCommandDataType = '';
+        /**
+         * AgentCommand specifies a one-time executable program for the agent to run.
+         *
+         * @param AgentCommand $agentCommand
+         */
+        public function setAgentCommand(AgentCommand $agentCommand)
+        {
+        }
+        /**
+         * @return AgentCommand
+         */
+        public function getAgentCommand()
+        {
+        }
+        /**
+         * ShellCommand is invoked via the agent's command line executor.
+         *
+         * @param ShellCommand $shellCommand
+         */
+        public function setShellCommand(ShellCommand $shellCommand)
+        {
+        }
+        /**
+         * @return ShellCommand
+         */
+        public function getShellCommand()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentCommand
+     * Runtime class alias of \Google\Service\WorkloadManager\Command registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentCommand()
-    {
-    }
-    /**
-     * ShellCommand is invoked via the agent's command line executor.
-     *
-     * @param ShellCommand $shellCommand
-     */
-    public function setShellCommand(ShellCommand $shellCommand)
-    {
-    }
-    /**
-     * @return ShellCommand
-     */
-    public function getShellCommand()
+    class Google_Service_WorkloadManager_Command extends \Google\Service\WorkloadManager\Command
     {
     }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class SitesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'siteEntry';
-    protected $siteEntryType = WmxSite::class;
-    protected $siteEntryDataType = 'array';
-    /**
-     * Contains permission level information about a Search Console site. For more
-     * information, see [Permissions in Search
-     * Console](https://support.google.com/webmasters/answer/2451999).
-     *
-     * @param WmxSite[] $siteEntry
-     */
-    public function setSiteEntry($siteEntry)
+namespace Google\Service\SearchConsole {
+    class SitesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'siteEntry';
+        protected $siteEntryType = WmxSite::class;
+        protected $siteEntryDataType = 'array';
+        /**
+         * Contains permission level information about a Search Console site. For more
+         * information, see [Permissions in Search
+         * Console](https://support.google.com/webmasters/answer/2451999).
+         *
+         * @param WmxSite[] $siteEntry
+         */
+        public function setSiteEntry($siteEntry)
+        {
+        }
+        /**
+         * @return WmxSite[]
+         */
+        public function getSiteEntry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WmxSite[]
+     * Runtime class alias of \Google\Service\SearchConsole\SitesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSiteEntry()
+    class Google_Service_SearchConsole_SitesListResponse extends \Google\Service\SearchConsole\SitesListResponse
     {
     }
 }

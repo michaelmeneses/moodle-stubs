@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class TimeSeriesData extends \Google\Collection
-{
-    protected $collection_key = 'pointData';
-    protected $labelValuesType = LabelValue::class;
-    protected $labelValuesDataType = 'array';
-    protected $pointDataType = PointData::class;
-    protected $pointDataDataType = 'array';
-    /**
-     * The values of the labels in the time series identifier, given in the same
-     * order as the label_descriptors field of the TimeSeriesDescriptor associated
-     * with this object. Each value must have a value of the type given in the
-     * corresponding entry of label_descriptors.
-     *
-     * @param LabelValue[] $labelValues
-     */
-    public function setLabelValues($labelValues)
+namespace Google\Service\Monitoring {
+    class TimeSeriesData extends \Google\Collection
     {
+        protected $collection_key = 'pointData';
+        protected $labelValuesType = LabelValue::class;
+        protected $labelValuesDataType = 'array';
+        protected $pointDataType = PointData::class;
+        protected $pointDataDataType = 'array';
+        /**
+         * The values of the labels in the time series identifier, given in the same
+         * order as the label_descriptors field of the TimeSeriesDescriptor associated
+         * with this object. Each value must have a value of the type given in the
+         * corresponding entry of label_descriptors.
+         *
+         * @param LabelValue[] $labelValues
+         */
+        public function setLabelValues($labelValues)
+        {
+        }
+        /**
+         * @return LabelValue[]
+         */
+        public function getLabelValues()
+        {
+        }
+        /**
+         * The points in the time series.
+         *
+         * @param PointData[] $pointData
+         */
+        public function setPointData($pointData)
+        {
+        }
+        /**
+         * @return PointData[]
+         */
+        public function getPointData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LabelValue[]
+     * Runtime class alias of \Google\Service\Monitoring\TimeSeriesData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelValues()
-    {
-    }
-    /**
-     * The points in the time series.
-     *
-     * @param PointData[] $pointData
-     */
-    public function setPointData($pointData)
-    {
-    }
-    /**
-     * @return PointData[]
-     */
-    public function getPointData()
+    class Google_Service_Monitoring_TimeSeriesData extends \Google\Service\Monitoring\TimeSeriesData
     {
     }
 }

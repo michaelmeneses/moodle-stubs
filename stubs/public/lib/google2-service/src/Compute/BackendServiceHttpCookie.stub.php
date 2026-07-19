@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceHttpCookie extends \Google\Model
-{
-    /**
-     * Name of the cookie.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Path to set for the cookie.
-     *
-     * @var string
-     */
-    public $path;
-    protected $ttlType = Duration::class;
-    protected $ttlDataType = '';
-    /**
-     * Name of the cookie.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class BackendServiceHttpCookie extends \Google\Model
     {
+        /**
+         * Name of the cookie.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Path to set for the cookie.
+         *
+         * @var string
+         */
+        public $path;
+        protected $ttlType = Duration::class;
+        protected $ttlDataType = '';
+        /**
+         * Name of the cookie.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Path to set for the cookie.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Lifetime of the cookie.
+         *
+         * @param Duration $ttl
+         */
+        public function setTtl(Duration $ttl)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendServiceHttpCookie registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Path to set for the cookie.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Lifetime of the cookie.
-     *
-     * @param Duration $ttl
-     */
-    public function setTtl(Duration $ttl)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getTtl()
+    class Google_Service_Compute_BackendServiceHttpCookie extends \Google\Service\Compute\BackendServiceHttpCookie
     {
     }
 }

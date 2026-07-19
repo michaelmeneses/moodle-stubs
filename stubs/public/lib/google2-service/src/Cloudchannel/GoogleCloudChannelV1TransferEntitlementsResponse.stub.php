@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1TransferEntitlementsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entitlements';
-    protected $entitlementsType = GoogleCloudChannelV1Entitlement::class;
-    protected $entitlementsDataType = 'array';
-    /**
-     * The transferred entitlements.
-     *
-     * @param GoogleCloudChannelV1Entitlement[] $entitlements
-     */
-    public function setEntitlements($entitlements)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1TransferEntitlementsResponse extends \Google\Collection
     {
+        protected $collection_key = 'entitlements';
+        protected $entitlementsType = GoogleCloudChannelV1Entitlement::class;
+        protected $entitlementsDataType = 'array';
+        /**
+         * The transferred entitlements.
+         *
+         * @param GoogleCloudChannelV1Entitlement[] $entitlements
+         */
+        public function setEntitlements($entitlements)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Entitlement[]
+         */
+        public function getEntitlements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Entitlement[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlements()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1TransferEntitlementsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1TransferEntitlementsResponse
     {
     }
 }

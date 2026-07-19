@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class BuildInfo extends \Google\Model
-{
-    /**
-     * Optional. Build key.
-     *
-     * @var string
-     */
-    public $buildKey;
-    /**
-     * Optional. Build value.
-     *
-     * @var string
-     */
-    public $buildValue;
-    /**
-     * Optional. Build key.
-     *
-     * @param string $buildKey
-     */
-    public function setBuildKey($buildKey)
+namespace Google\Service\Dataproc {
+    class BuildInfo extends \Google\Model
     {
+        /**
+         * Optional. Build key.
+         *
+         * @var string
+         */
+        public $buildKey;
+        /**
+         * Optional. Build value.
+         *
+         * @var string
+         */
+        public $buildValue;
+        /**
+         * Optional. Build key.
+         *
+         * @param string $buildKey
+         */
+        public function setBuildKey($buildKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildKey()
+        {
+        }
+        /**
+         * Optional. Build value.
+         *
+         * @param string $buildValue
+         */
+        public function setBuildValue($buildValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\BuildInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildKey()
-    {
-    }
-    /**
-     * Optional. Build value.
-     *
-     * @param string $buildValue
-     */
-    public function setBuildValue($buildValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildValue()
+    class Google_Service_Dataproc_BuildInfo extends \Google\Service\Dataproc\BuildInfo
     {
     }
 }

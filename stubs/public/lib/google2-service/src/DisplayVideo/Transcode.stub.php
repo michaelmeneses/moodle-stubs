@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Transcode extends \Google\Model
-{
-    /**
-     * Optional. The bit rate for the audio stream of the transcoded video, or the
-     * bit rate for the transcoded audio, in kilobits per second.
-     *
-     * @var string
-     */
-    public $audioBitRateKbps;
-    /**
-     * Optional. The sample rate for the audio stream of the transcoded video, or
-     * the sample rate for the transcoded audio, in hertz.
-     *
-     * @var string
-     */
-    public $audioSampleRateHz;
-    /**
-     * Optional. The transcoding bit rate of the transcoded video, in kilobits per
-     * second.
-     *
-     * @var string
-     */
-    public $bitRateKbps;
-    protected $dimensionsType = Dimensions::class;
-    protected $dimensionsDataType = '';
-    /**
-     * Optional. The size of the transcoded file, in bytes.
-     *
-     * @var string
-     */
-    public $fileSizeBytes;
-    /**
-     * Optional. The frame rate of the transcoded video, in frames per second.
-     *
-     * @var float
-     */
-    public $frameRate;
-    /**
-     * Optional. The MIME type of the transcoded file.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Optional. The name of the transcoded file.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Indicates if the transcoding was successful.
-     *
-     * @var bool
-     */
-    public $transcoded;
-    /**
-     * Optional. The bit rate for the audio stream of the transcoded video, or the
-     * bit rate for the transcoded audio, in kilobits per second.
-     *
-     * @param string $audioBitRateKbps
-     */
-    public function setAudioBitRateKbps($audioBitRateKbps)
+namespace Google\Service\DisplayVideo {
+    class Transcode extends \Google\Model
     {
+        /**
+         * Optional. The bit rate for the audio stream of the transcoded video, or the
+         * bit rate for the transcoded audio, in kilobits per second.
+         *
+         * @var string
+         */
+        public $audioBitRateKbps;
+        /**
+         * Optional. The sample rate for the audio stream of the transcoded video, or
+         * the sample rate for the transcoded audio, in hertz.
+         *
+         * @var string
+         */
+        public $audioSampleRateHz;
+        /**
+         * Optional. The transcoding bit rate of the transcoded video, in kilobits per
+         * second.
+         *
+         * @var string
+         */
+        public $bitRateKbps;
+        protected $dimensionsType = Dimensions::class;
+        protected $dimensionsDataType = '';
+        /**
+         * Optional. The size of the transcoded file, in bytes.
+         *
+         * @var string
+         */
+        public $fileSizeBytes;
+        /**
+         * Optional. The frame rate of the transcoded video, in frames per second.
+         *
+         * @var float
+         */
+        public $frameRate;
+        /**
+         * Optional. The MIME type of the transcoded file.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Optional. The name of the transcoded file.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Indicates if the transcoding was successful.
+         *
+         * @var bool
+         */
+        public $transcoded;
+        /**
+         * Optional. The bit rate for the audio stream of the transcoded video, or the
+         * bit rate for the transcoded audio, in kilobits per second.
+         *
+         * @param string $audioBitRateKbps
+         */
+        public function setAudioBitRateKbps($audioBitRateKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioBitRateKbps()
+        {
+        }
+        /**
+         * Optional. The sample rate for the audio stream of the transcoded video, or
+         * the sample rate for the transcoded audio, in hertz.
+         *
+         * @param string $audioSampleRateHz
+         */
+        public function setAudioSampleRateHz($audioSampleRateHz)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioSampleRateHz()
+        {
+        }
+        /**
+         * Optional. The transcoding bit rate of the transcoded video, in kilobits per
+         * second.
+         *
+         * @param string $bitRateKbps
+         */
+        public function setBitRateKbps($bitRateKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBitRateKbps()
+        {
+        }
+        /**
+         * Optional. The dimensions of the transcoded video.
+         *
+         * @param Dimensions $dimensions
+         */
+        public function setDimensions(Dimensions $dimensions)
+        {
+        }
+        /**
+         * @return Dimensions
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Optional. The size of the transcoded file, in bytes.
+         *
+         * @param string $fileSizeBytes
+         */
+        public function setFileSizeBytes($fileSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSizeBytes()
+        {
+        }
+        /**
+         * Optional. The frame rate of the transcoded video, in frames per second.
+         *
+         * @param float $frameRate
+         */
+        public function setFrameRate($frameRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFrameRate()
+        {
+        }
+        /**
+         * Optional. The MIME type of the transcoded file.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Optional. The name of the transcoded file.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Indicates if the transcoding was successful.
+         *
+         * @param bool $transcoded
+         */
+        public function setTranscoded($transcoded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTranscoded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\Transcode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioBitRateKbps()
-    {
-    }
-    /**
-     * Optional. The sample rate for the audio stream of the transcoded video, or
-     * the sample rate for the transcoded audio, in hertz.
-     *
-     * @param string $audioSampleRateHz
-     */
-    public function setAudioSampleRateHz($audioSampleRateHz)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAudioSampleRateHz()
-    {
-    }
-    /**
-     * Optional. The transcoding bit rate of the transcoded video, in kilobits per
-     * second.
-     *
-     * @param string $bitRateKbps
-     */
-    public function setBitRateKbps($bitRateKbps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBitRateKbps()
-    {
-    }
-    /**
-     * Optional. The dimensions of the transcoded video.
-     *
-     * @param Dimensions $dimensions
-     */
-    public function setDimensions(Dimensions $dimensions)
-    {
-    }
-    /**
-     * @return Dimensions
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Optional. The size of the transcoded file, in bytes.
-     *
-     * @param string $fileSizeBytes
-     */
-    public function setFileSizeBytes($fileSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileSizeBytes()
-    {
-    }
-    /**
-     * Optional. The frame rate of the transcoded video, in frames per second.
-     *
-     * @param float $frameRate
-     */
-    public function setFrameRate($frameRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFrameRate()
-    {
-    }
-    /**
-     * Optional. The MIME type of the transcoded file.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Optional. The name of the transcoded file.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Indicates if the transcoding was successful.
-     *
-     * @param bool $transcoded
-     */
-    public function setTranscoded($transcoded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTranscoded()
+    class Google_Service_DisplayVideo_Transcode extends \Google\Service\DisplayVideo\Transcode
     {
     }
 }

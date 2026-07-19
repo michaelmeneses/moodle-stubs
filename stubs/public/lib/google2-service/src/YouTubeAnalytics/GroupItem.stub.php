@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class GroupItem extends \Google\Model
-{
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * The Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the group that contains the
-     * item.
-     *
-     * @var string
-     */
-    public $groupId;
-    /**
-     * The ID that YouTube uses to uniquely identify the `channel`, `video`,
-     * `playlist`, or `asset` resource that is included in the group. Note that
-     * this ID refers specifically to the inclusion of that resource in a
-     * particular group and is different than the channel ID, video ID, playlist
-     * ID, or asset ID that uniquely identifies the resource itself. The
-     * `resource.id` property's value specifies the unique channel, video,
-     * playlist, or asset ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies the API resource's type. The value will be `youtube#groupItem`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $resourceType = GroupItemResource::class;
-    protected $resourceDataType = '';
-    /**
-     * Apiary error details
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
+namespace Google\Service\YouTubeAnalytics {
+    class GroupItem extends \Google\Model
     {
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * The Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the group that contains the
+         * item.
+         *
+         * @var string
+         */
+        public $groupId;
+        /**
+         * The ID that YouTube uses to uniquely identify the `channel`, `video`,
+         * `playlist`, or `asset` resource that is included in the group. Note that
+         * this ID refers specifically to the inclusion of that resource in a
+         * particular group and is different than the channel ID, video ID, playlist
+         * ID, or asset ID that uniquely identifies the resource itself. The
+         * `resource.id` property's value specifies the unique channel, video,
+         * playlist, or asset ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies the API resource's type. The value will be `youtube#groupItem`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $resourceType = GroupItemResource::class;
+        protected $resourceDataType = '';
+        /**
+         * Apiary error details
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the group that contains the
+         * item.
+         *
+         * @param string $groupId
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the `channel`, `video`,
+         * `playlist`, or `asset` resource that is included in the group. Note that
+         * this ID refers specifically to the inclusion of that resource in a
+         * particular group and is different than the channel ID, video ID, playlist
+         * ID, or asset ID that uniquely identifies the resource itself. The
+         * `resource.id` property's value specifies the unique channel, video,
+         * playlist, or asset ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies the API resource's type. The value will be `youtube#groupItem`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The `resource` object contains information that identifies the item being
+         * added to the group.
+         *
+         * @param GroupItemResource $resource
+         */
+        public function setResource(GroupItemResource $resource)
+        {
+        }
+        /**
+         * @return GroupItemResource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Errors
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\GroupItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the group that contains the
-     * item.
-     *
-     * @param string $groupId
-     */
-    public function setGroupId($groupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the `channel`, `video`,
-     * `playlist`, or `asset` resource that is included in the group. Note that
-     * this ID refers specifically to the inclusion of that resource in a
-     * particular group and is different than the channel ID, video ID, playlist
-     * ID, or asset ID that uniquely identifies the resource itself. The
-     * `resource.id` property's value specifies the unique channel, video,
-     * playlist, or asset ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies the API resource's type. The value will be `youtube#groupItem`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The `resource` object contains information that identifies the item being
-     * added to the group.
-     *
-     * @param GroupItemResource $resource
-     */
-    public function setResource(GroupItemResource $resource)
-    {
-    }
-    /**
-     * @return GroupItemResource
-     */
-    public function getResource()
+    class Google_Service_YouTubeAnalytics_GroupItem extends \Google\Service\YouTubeAnalytics\GroupItem
     {
     }
 }

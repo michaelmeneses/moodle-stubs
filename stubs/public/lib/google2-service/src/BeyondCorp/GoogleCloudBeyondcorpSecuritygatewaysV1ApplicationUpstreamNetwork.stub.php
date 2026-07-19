@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork extends \Google\Model
-{
-    /**
-     * Required. Network name is of the format:
-     * `projects/{project}/global/networks/{network}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Network name is of the format:
-     * `projects/{project}/global/networks/{network}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork extends \Google\Model
     {
+        /**
+         * Required. Network name is of the format:
+         * `projects/{project}/global/networks/{network}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Network name is of the format:
+         * `projects/{project}/global/networks/{network}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork
     {
     }
 }

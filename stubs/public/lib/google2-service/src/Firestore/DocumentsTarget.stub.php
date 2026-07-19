@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class DocumentsTarget extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    /**
-     * The names of the documents to retrieve. In the format:
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-     * The request will fail if any of the document is not a child resource of the
-     * given `database`. Duplicate names will be elided.
-     *
-     * @var string[]
-     */
-    public $documents;
-    /**
-     * The names of the documents to retrieve. In the format:
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-     * The request will fail if any of the document is not a child resource of the
-     * given `database`. Duplicate names will be elided.
-     *
-     * @param string[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\Firestore {
+    class DocumentsTarget extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        /**
+         * The names of the documents to retrieve. In the format:
+         * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+         * The request will fail if any of the document is not a child resource of the
+         * given `database`. Duplicate names will be elided.
+         *
+         * @var string[]
+         */
+        public $documents;
+        /**
+         * The names of the documents to retrieve. In the format:
+         * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+         * The request will fail if any of the document is not a child resource of the
+         * given `database`. Duplicate names will be elided.
+         *
+         * @param string[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Firestore\DocumentsTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
+    class Google_Service_Firestore_DocumentsTarget extends \Google\Service\Firestore\DocumentsTarget
     {
     }
 }

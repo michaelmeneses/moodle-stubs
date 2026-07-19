@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PreferenceOptimizationDataStats extends \Google\Collection
-{
-    protected $collection_key = 'userDatasetExamples';
-    /**
-     * Output only. A partial sample of the indices (starting from 1) of the
-     * dropped examples.
-     *
-     * @var string[]
-     */
-    public $droppedExampleIndices;
-    /**
-     * Output only. For each index in `dropped_example_indices`, the user-facing
-     * reason why the example was dropped.
-     *
-     * @var string[]
-     */
-    public $droppedExampleReasons;
-    protected $scoreVariancePerExampleDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $scoreVariancePerExampleDistributionDataType = '';
-    protected $scoresDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $scoresDistributionDataType = '';
-    /**
-     * Output only. Number of billable tokens in the tuning dataset.
-     *
-     * @var string
-     */
-    public $totalBillableTokenCount;
-    /**
-     * Output only. Number of examples in the tuning dataset.
-     *
-     * @var string
-     */
-    public $tuningDatasetExampleCount;
-    /**
-     * Output only. Number of tuning steps for this Tuning Job.
-     *
-     * @var string
-     */
-    public $tuningStepCount;
-    protected $userDatasetExamplesType = GoogleCloudAiplatformV1GeminiPreferenceExample::class;
-    protected $userDatasetExamplesDataType = 'array';
-    protected $userInputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $userInputTokenDistributionDataType = '';
-    protected $userOutputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $userOutputTokenDistributionDataType = '';
-    /**
-     * Output only. A partial sample of the indices (starting from 1) of the
-     * dropped examples.
-     *
-     * @param string[] $droppedExampleIndices
-     */
-    public function setDroppedExampleIndices($droppedExampleIndices)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PreferenceOptimizationDataStats extends \Google\Collection
     {
+        protected $collection_key = 'userDatasetExamples';
+        /**
+         * Output only. A partial sample of the indices (starting from 1) of the
+         * dropped examples.
+         *
+         * @var string[]
+         */
+        public $droppedExampleIndices;
+        /**
+         * Output only. For each index in `dropped_example_indices`, the user-facing
+         * reason why the example was dropped.
+         *
+         * @var string[]
+         */
+        public $droppedExampleReasons;
+        protected $scoreVariancePerExampleDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $scoreVariancePerExampleDistributionDataType = '';
+        protected $scoresDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $scoresDistributionDataType = '';
+        /**
+         * Output only. Number of billable tokens in the tuning dataset.
+         *
+         * @var string
+         */
+        public $totalBillableTokenCount;
+        /**
+         * Output only. Number of examples in the tuning dataset.
+         *
+         * @var string
+         */
+        public $tuningDatasetExampleCount;
+        /**
+         * Output only. Number of tuning steps for this Tuning Job.
+         *
+         * @var string
+         */
+        public $tuningStepCount;
+        protected $userDatasetExamplesType = GoogleCloudAiplatformV1GeminiPreferenceExample::class;
+        protected $userDatasetExamplesDataType = 'array';
+        protected $userInputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $userInputTokenDistributionDataType = '';
+        protected $userOutputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $userOutputTokenDistributionDataType = '';
+        /**
+         * Output only. A partial sample of the indices (starting from 1) of the
+         * dropped examples.
+         *
+         * @param string[] $droppedExampleIndices
+         */
+        public function setDroppedExampleIndices($droppedExampleIndices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDroppedExampleIndices()
+        {
+        }
+        /**
+         * Output only. For each index in `dropped_example_indices`, the user-facing
+         * reason why the example was dropped.
+         *
+         * @param string[] $droppedExampleReasons
+         */
+        public function setDroppedExampleReasons($droppedExampleReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDroppedExampleReasons()
+        {
+        }
+        /**
+         * Output only. Dataset distributions for scores variance per example.
+         *
+         * @param GoogleCloudAiplatformV1DatasetDistribution $scoreVariancePerExampleDistribution
+         */
+        public function setScoreVariancePerExampleDistribution(GoogleCloudAiplatformV1DatasetDistribution $scoreVariancePerExampleDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getScoreVariancePerExampleDistribution()
+        {
+        }
+        /**
+         * Output only. Dataset distributions for scores.
+         *
+         * @param GoogleCloudAiplatformV1DatasetDistribution $scoresDistribution
+         */
+        public function setScoresDistribution(GoogleCloudAiplatformV1DatasetDistribution $scoresDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getScoresDistribution()
+        {
+        }
+        /**
+         * Output only. Number of billable tokens in the tuning dataset.
+         *
+         * @param string $totalBillableTokenCount
+         */
+        public function setTotalBillableTokenCount($totalBillableTokenCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBillableTokenCount()
+        {
+        }
+        /**
+         * Output only. Number of examples in the tuning dataset.
+         *
+         * @param string $tuningDatasetExampleCount
+         */
+        public function setTuningDatasetExampleCount($tuningDatasetExampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningDatasetExampleCount()
+        {
+        }
+        /**
+         * Output only. Number of tuning steps for this Tuning Job.
+         *
+         * @param string $tuningStepCount
+         */
+        public function setTuningStepCount($tuningStepCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningStepCount()
+        {
+        }
+        /**
+         * Output only. Sample user examples in the training dataset.
+         *
+         * @param GoogleCloudAiplatformV1GeminiPreferenceExample[] $userDatasetExamples
+         */
+        public function setUserDatasetExamples($userDatasetExamples)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GeminiPreferenceExample[]
+         */
+        public function getUserDatasetExamples()
+        {
+        }
+        /**
+         * Output only. Dataset distributions for the user input tokens.
+         *
+         * @param GoogleCloudAiplatformV1DatasetDistribution $userInputTokenDistribution
+         */
+        public function setUserInputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userInputTokenDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getUserInputTokenDistribution()
+        {
+        }
+        /**
+         * Output only. Dataset distributions for the user output tokens.
+         *
+         * @param GoogleCloudAiplatformV1DatasetDistribution $userOutputTokenDistribution
+         */
+        public function setUserOutputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userOutputTokenDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getUserOutputTokenDistribution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PreferenceOptimizationDataStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDroppedExampleIndices()
-    {
-    }
-    /**
-     * Output only. For each index in `dropped_example_indices`, the user-facing
-     * reason why the example was dropped.
-     *
-     * @param string[] $droppedExampleReasons
-     */
-    public function setDroppedExampleReasons($droppedExampleReasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDroppedExampleReasons()
-    {
-    }
-    /**
-     * Output only. Dataset distributions for scores variance per example.
-     *
-     * @param GoogleCloudAiplatformV1DatasetDistribution $scoreVariancePerExampleDistribution
-     */
-    public function setScoreVariancePerExampleDistribution(GoogleCloudAiplatformV1DatasetDistribution $scoreVariancePerExampleDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getScoreVariancePerExampleDistribution()
-    {
-    }
-    /**
-     * Output only. Dataset distributions for scores.
-     *
-     * @param GoogleCloudAiplatformV1DatasetDistribution $scoresDistribution
-     */
-    public function setScoresDistribution(GoogleCloudAiplatformV1DatasetDistribution $scoresDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getScoresDistribution()
-    {
-    }
-    /**
-     * Output only. Number of billable tokens in the tuning dataset.
-     *
-     * @param string $totalBillableTokenCount
-     */
-    public function setTotalBillableTokenCount($totalBillableTokenCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBillableTokenCount()
-    {
-    }
-    /**
-     * Output only. Number of examples in the tuning dataset.
-     *
-     * @param string $tuningDatasetExampleCount
-     */
-    public function setTuningDatasetExampleCount($tuningDatasetExampleCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningDatasetExampleCount()
-    {
-    }
-    /**
-     * Output only. Number of tuning steps for this Tuning Job.
-     *
-     * @param string $tuningStepCount
-     */
-    public function setTuningStepCount($tuningStepCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningStepCount()
-    {
-    }
-    /**
-     * Output only. Sample user examples in the training dataset.
-     *
-     * @param GoogleCloudAiplatformV1GeminiPreferenceExample[] $userDatasetExamples
-     */
-    public function setUserDatasetExamples($userDatasetExamples)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GeminiPreferenceExample[]
-     */
-    public function getUserDatasetExamples()
-    {
-    }
-    /**
-     * Output only. Dataset distributions for the user input tokens.
-     *
-     * @param GoogleCloudAiplatformV1DatasetDistribution $userInputTokenDistribution
-     */
-    public function setUserInputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userInputTokenDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getUserInputTokenDistribution()
-    {
-    }
-    /**
-     * Output only. Dataset distributions for the user output tokens.
-     *
-     * @param GoogleCloudAiplatformV1DatasetDistribution $userOutputTokenDistribution
-     */
-    public function setUserOutputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userOutputTokenDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getUserOutputTokenDistribution()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PreferenceOptimizationDataStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PreferenceOptimizationDataStats
     {
     }
 }

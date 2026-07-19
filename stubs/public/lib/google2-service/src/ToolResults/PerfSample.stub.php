@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PerfSample extends \Google\Model
-{
-    protected $sampleTimeType = Timestamp::class;
-    protected $sampleTimeDataType = '';
-    /**
-     * Value observed
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Timestamp of collection.
-     *
-     * @param Timestamp $sampleTime
-     */
-    public function setSampleTime(Timestamp $sampleTime)
+namespace Google\Service\ToolResults {
+    class PerfSample extends \Google\Model
     {
+        protected $sampleTimeType = Timestamp::class;
+        protected $sampleTimeDataType = '';
+        /**
+         * Value observed
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Timestamp of collection.
+         *
+         * @param Timestamp $sampleTime
+         */
+        public function setSampleTime(Timestamp $sampleTime)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getSampleTime()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Timestamp
+     * Runtime class alias of \Google\Service\ToolResults\PerfSample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSampleTime()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_ToolResults_PerfSample extends \Google\Service\ToolResults\PerfSample
     {
     }
 }

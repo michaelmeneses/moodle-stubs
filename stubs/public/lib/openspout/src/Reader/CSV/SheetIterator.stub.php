@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\CSV;
 
+use OpenSpout\Reader\SheetIteratorInterface;
 /**
  * @implements SheetIteratorInterface<Sheet>
  */

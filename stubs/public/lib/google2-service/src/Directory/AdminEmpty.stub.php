@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class AdminEmpty extends \Google\Model
-{
+namespace Google\Service\Directory {
+    class AdminEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\AdminEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_AdminEmpty extends \Google\Service\Directory\AdminEmpty
+    {
+    }
 }

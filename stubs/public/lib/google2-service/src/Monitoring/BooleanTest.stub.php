@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class BooleanTest extends \Google\Model
-{
-    /**
-     * Required. The name of the column containing the boolean value. If the value
-     * in a row is NULL, that row is ignored.
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * Required. The name of the column containing the boolean value. If the value
-     * in a row is NULL, that row is ignored.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\Monitoring {
+    class BooleanTest extends \Google\Model
     {
+        /**
+         * Required. The name of the column containing the boolean value. If the value
+         * in a row is NULL, that row is ignored.
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * Required. The name of the column containing the boolean value. If the value
+         * in a row is NULL, that row is ignored.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\BooleanTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
+    class Google_Service_Monitoring_BooleanTest extends \Google\Service\Monitoring\BooleanTest
     {
     }
 }

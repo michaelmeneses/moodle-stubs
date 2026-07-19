@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RuleActionsPair extends \Google\Collection
-{
-    protected $collection_key = 'actionOutputs';
-    protected $actionOutputsType = GoogleCloudContentwarehouseV1ActionOutput::class;
-    protected $actionOutputsDataType = 'array';
-    protected $ruleType = GoogleCloudContentwarehouseV1Rule::class;
-    protected $ruleDataType = '';
-    /**
-     * Outputs of executing the actions associated with the above rule.
-     *
-     * @param GoogleCloudContentwarehouseV1ActionOutput[] $actionOutputs
-     */
-    public function setActionOutputs($actionOutputs)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RuleActionsPair extends \Google\Collection
     {
+        protected $collection_key = 'actionOutputs';
+        protected $actionOutputsType = GoogleCloudContentwarehouseV1ActionOutput::class;
+        protected $actionOutputsDataType = 'array';
+        protected $ruleType = GoogleCloudContentwarehouseV1Rule::class;
+        protected $ruleDataType = '';
+        /**
+         * Outputs of executing the actions associated with the above rule.
+         *
+         * @param GoogleCloudContentwarehouseV1ActionOutput[] $actionOutputs
+         */
+        public function setActionOutputs($actionOutputs)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ActionOutput[]
+         */
+        public function getActionOutputs()
+        {
+        }
+        /**
+         * Represents the rule.
+         *
+         * @param GoogleCloudContentwarehouseV1Rule $rule
+         */
+        public function setRule(GoogleCloudContentwarehouseV1Rule $rule)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Rule
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1ActionOutput[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleActionsPair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionOutputs()
-    {
-    }
-    /**
-     * Represents the rule.
-     *
-     * @param GoogleCloudContentwarehouseV1Rule $rule
-     */
-    public function setRule(GoogleCloudContentwarehouseV1Rule $rule)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1Rule
-     */
-    public function getRule()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RuleActionsPair extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleActionsPair
     {
     }
 }

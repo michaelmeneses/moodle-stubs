@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class PrivateText extends \Google\Model
-{
-    protected $bodyType = LocalizedString::class;
-    protected $bodyDataType = '';
-    protected $headerType = LocalizedString::class;
-    protected $headerDataType = '';
-    /**
-     * @param LocalizedString
-     */
-    public function setBody(LocalizedString $body)
+namespace Google\Service\Walletobjects {
+    class PrivateText extends \Google\Model
     {
+        protected $bodyType = LocalizedString::class;
+        protected $bodyDataType = '';
+        protected $headerType = LocalizedString::class;
+        protected $headerDataType = '';
+        /**
+         * @param LocalizedString
+         */
+        public function setBody(LocalizedString $body)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * @param LocalizedString
+         */
+        public function setHeader(LocalizedString $header)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\PrivateText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * @param LocalizedString
-     */
-    public function setHeader(LocalizedString $header)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getHeader()
+    class Google_Service_Walletobjects_PrivateText extends \Google\Service\Walletobjects\PrivateText
     {
     }
 }

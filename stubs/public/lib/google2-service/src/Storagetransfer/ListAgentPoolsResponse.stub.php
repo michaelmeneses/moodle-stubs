@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ListAgentPoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'agentPools';
-    protected $agentPoolsType = AgentPool::class;
-    protected $agentPoolsDataType = 'array';
-    /**
-     * The list next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of agent pools.
-     *
-     * @param AgentPool[] $agentPools
-     */
-    public function setAgentPools($agentPools)
+namespace Google\Service\Storagetransfer {
+    class ListAgentPoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'agentPools';
+        protected $agentPoolsType = AgentPool::class;
+        protected $agentPoolsDataType = 'array';
+        /**
+         * The list next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of agent pools.
+         *
+         * @param AgentPool[] $agentPools
+         */
+        public function setAgentPools($agentPools)
+        {
+        }
+        /**
+         * @return AgentPool[]
+         */
+        public function getAgentPools()
+        {
+        }
+        /**
+         * The list next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentPool[]
+     * Runtime class alias of \Google\Service\Storagetransfer\ListAgentPoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentPools()
-    {
-    }
-    /**
-     * The list next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Storagetransfer_ListAgentPoolsResponse extends \Google\Service\Storagetransfer\ListAgentPoolsResponse
     {
     }
 }

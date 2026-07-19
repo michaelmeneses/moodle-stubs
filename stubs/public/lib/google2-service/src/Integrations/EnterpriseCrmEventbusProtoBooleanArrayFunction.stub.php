@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBooleanArrayFunction extends \Google\Model
-{
-    public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
-    public const FUNCTION_NAME_GET = 'GET';
-    public const FUNCTION_NAME_APPEND = 'APPEND';
-    public const FUNCTION_NAME_SIZE = 'SIZE';
-    public const FUNCTION_NAME_TO_SET = 'TO_SET';
-    public const FUNCTION_NAME_APPEND_ALL = 'APPEND_ALL';
-    public const FUNCTION_NAME_TO_JSON = 'TO_JSON';
-    public const FUNCTION_NAME_SET = 'SET';
-    public const FUNCTION_NAME_REMOVE = 'REMOVE';
-    public const FUNCTION_NAME_REMOVE_AT = 'REMOVE_AT';
-    public const FUNCTION_NAME_CONTAINS = 'CONTAINS';
-    public const FUNCTION_NAME_FOR_EACH = 'FOR_EACH';
-    public const FUNCTION_NAME_FILTER = 'FILTER';
-    /**
-     * @var string
-     */
-    public $functionName;
-    /**
-     * @param self::FUNCTION_NAME_* $functionName
-     */
-    public function setFunctionName($functionName)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBooleanArrayFunction extends \Google\Model
     {
+        public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
+        public const FUNCTION_NAME_GET = 'GET';
+        public const FUNCTION_NAME_APPEND = 'APPEND';
+        public const FUNCTION_NAME_SIZE = 'SIZE';
+        public const FUNCTION_NAME_TO_SET = 'TO_SET';
+        public const FUNCTION_NAME_APPEND_ALL = 'APPEND_ALL';
+        public const FUNCTION_NAME_TO_JSON = 'TO_JSON';
+        public const FUNCTION_NAME_SET = 'SET';
+        public const FUNCTION_NAME_REMOVE = 'REMOVE';
+        public const FUNCTION_NAME_REMOVE_AT = 'REMOVE_AT';
+        public const FUNCTION_NAME_CONTAINS = 'CONTAINS';
+        public const FUNCTION_NAME_FOR_EACH = 'FOR_EACH';
+        public const FUNCTION_NAME_FILTER = 'FILTER';
+        /**
+         * @var string
+         */
+        public $functionName;
+        /**
+         * @param self::FUNCTION_NAME_* $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return self::FUNCTION_NAME_*
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FUNCTION_NAME_*
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBooleanArrayFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBooleanArrayFunction extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBooleanArrayFunction
     {
     }
 }

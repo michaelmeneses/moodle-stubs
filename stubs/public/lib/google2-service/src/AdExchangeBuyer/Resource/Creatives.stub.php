@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "creatives" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $creatives = $adexchangebuyerService->creatives;
- *  </code>
- */
-class Creatives extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\Creative;
+    use Google\Service\AdExchangeBuyer\CreativeDealIds;
+    use Google\Service\AdExchangeBuyer\CreativesList;
     /**
-     * Add a deal id association for the creative. (creatives.addDeal)
-     *
-     * @param int $accountId The id for the account that will serve this creative.
-     * @param string $buyerCreativeId The buyer-specific id for this creative.
-     * @param string $dealId The id of the deal id to associate with this creative.
-     * @param array $optParams Optional parameters.
+     * The "creatives" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $creatives = $adexchangebuyerService->creatives;
+     *  </code>
      */
-    public function addDeal($accountId, $buyerCreativeId, $dealId, $optParams = [])
+    class Creatives extends \Google\Service\Resource
     {
+        /**
+         * Add a deal id association for the creative. (creatives.addDeal)
+         *
+         * @param int $accountId The id for the account that will serve this creative.
+         * @param string $buyerCreativeId The buyer-specific id for this creative.
+         * @param string $dealId The id of the deal id to associate with this creative.
+         * @param array $optParams Optional parameters.
+         */
+        public function addDeal($accountId, $buyerCreativeId, $dealId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the status for a single creative. A creative will be available 30-40
+         * minutes after submission. (creatives.get)
+         *
+         * @param int $accountId The id for the account that will serve this creative.
+         * @param string $buyerCreativeId The buyer-specific id for this creative.
+         * @param array $optParams Optional parameters.
+         * @return Creative
+         */
+        public function get($accountId, $buyerCreativeId, $optParams = [])
+        {
+        }
+        /**
+         * Submit a new creative. (creatives.insert)
+         *
+         * @param Creative $postBody
+         * @param array $optParams Optional parameters.
+         * @return Creative
+         */
+        public function insert(Creative $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of the authenticated user's active creatives. A creative
+         * will be available 30-40 minutes after submission. (creatives.listCreatives)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int accountId When specified, only creatives for the given account
+         * ids are returned.
+         * @opt_param string buyerCreativeId When specified, only creatives for the
+         * given buyer creative ids are returned.
+         * @opt_param string dealsStatusFilter When specified, only creatives having the
+         * given deals status are returned.
+         * @opt_param string maxResults Maximum number of entries returned on one result
+         * page. If not set, the default is 100. Optional.
+         * @opt_param string openAuctionStatusFilter When specified, only creatives
+         * having the given open auction status are returned.
+         * @opt_param string pageToken A continuation token, used to page through ad
+         * clients. To retrieve the next page, set this parameter to the value of
+         * "nextPageToken" from the previous response. Optional.
+         * @return CreativesList
+         */
+        public function listCreatives($optParams = [])
+        {
+        }
+        /**
+         * Lists the external deal ids associated with the creative.
+         * (creatives.listDeals)
+         *
+         * @param int $accountId The id for the account that will serve this creative.
+         * @param string $buyerCreativeId The buyer-specific id for this creative.
+         * @param array $optParams Optional parameters.
+         * @return CreativeDealIds
+         */
+        public function listDeals($accountId, $buyerCreativeId, $optParams = [])
+        {
+        }
+        /**
+         * Remove a deal id associated with the creative. (creatives.removeDeal)
+         *
+         * @param int $accountId The id for the account that will serve this creative.
+         * @param string $buyerCreativeId The buyer-specific id for this creative.
+         * @param string $dealId The id of the deal id to disassociate with this
+         * creative.
+         * @param array $optParams Optional parameters.
+         */
+        public function removeDeal($accountId, $buyerCreativeId, $dealId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the status for a single creative. A creative will be available 30-40
-     * minutes after submission. (creatives.get)
-     *
-     * @param int $accountId The id for the account that will serve this creative.
-     * @param string $buyerCreativeId The buyer-specific id for this creative.
-     * @param array $optParams Optional parameters.
-     * @return Creative
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Creatives registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $buyerCreativeId, $optParams = [])
-    {
-    }
-    /**
-     * Submit a new creative. (creatives.insert)
-     *
-     * @param Creative $postBody
-     * @param array $optParams Optional parameters.
-     * @return Creative
-     */
-    public function insert(Creative $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of the authenticated user's active creatives. A creative
-     * will be available 30-40 minutes after submission. (creatives.listCreatives)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int accountId When specified, only creatives for the given account
-     * ids are returned.
-     * @opt_param string buyerCreativeId When specified, only creatives for the
-     * given buyer creative ids are returned.
-     * @opt_param string dealsStatusFilter When specified, only creatives having the
-     * given deals status are returned.
-     * @opt_param string maxResults Maximum number of entries returned on one result
-     * page. If not set, the default is 100. Optional.
-     * @opt_param string openAuctionStatusFilter When specified, only creatives
-     * having the given open auction status are returned.
-     * @opt_param string pageToken A continuation token, used to page through ad
-     * clients. To retrieve the next page, set this parameter to the value of
-     * "nextPageToken" from the previous response. Optional.
-     * @return CreativesList
-     */
-    public function listCreatives($optParams = [])
-    {
-    }
-    /**
-     * Lists the external deal ids associated with the creative.
-     * (creatives.listDeals)
-     *
-     * @param int $accountId The id for the account that will serve this creative.
-     * @param string $buyerCreativeId The buyer-specific id for this creative.
-     * @param array $optParams Optional parameters.
-     * @return CreativeDealIds
-     */
-    public function listDeals($accountId, $buyerCreativeId, $optParams = [])
-    {
-    }
-    /**
-     * Remove a deal id associated with the creative. (creatives.removeDeal)
-     *
-     * @param int $accountId The id for the account that will serve this creative.
-     * @param string $buyerCreativeId The buyer-specific id for this creative.
-     * @param string $dealId The id of the deal id to disassociate with this
-     * creative.
-     * @param array $optParams Optional parameters.
-     */
-    public function removeDeal($accountId, $buyerCreativeId, $dealId, $optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_Creatives extends \Google\Service\AdExchangeBuyer\Resource\Creatives
     {
     }
 }

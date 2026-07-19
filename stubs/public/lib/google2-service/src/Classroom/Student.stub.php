@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Student extends \Google\Model
-{
-    /**
-     * Identifier of the course. Read-only.
-     *
-     * @var string
-     */
-    public $courseId;
-    protected $profileType = UserProfile::class;
-    protected $profileDataType = '';
-    protected $studentWorkFolderType = DriveFolder::class;
-    protected $studentWorkFolderDataType = '';
-    /**
-     * Identifier of the user. When specified as a parameter of a request, this
-     * identifier can be one of the following: * the numeric identifier for the
-     * user * the email address of the user * the string literal `"me"`,
-     * indicating the requesting user
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Identifier of the course. Read-only.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
+namespace Google\Service\Classroom {
+    class Student extends \Google\Model
     {
+        /**
+         * Identifier of the course. Read-only.
+         *
+         * @var string
+         */
+        public $courseId;
+        protected $profileType = UserProfile::class;
+        protected $profileDataType = '';
+        protected $studentWorkFolderType = DriveFolder::class;
+        protected $studentWorkFolderDataType = '';
+        /**
+         * Identifier of the user. When specified as a parameter of a request, this
+         * identifier can be one of the following: * the numeric identifier for the
+         * user * the email address of the user * the string literal `"me"`,
+         * indicating the requesting user
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Identifier of the course. Read-only.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
+        /**
+         * Global user information for the student. Read-only.
+         *
+         * @param UserProfile $profile
+         */
+        public function setProfile(UserProfile $profile)
+        {
+        }
+        /**
+         * @return UserProfile
+         */
+        public function getProfile()
+        {
+        }
+        /**
+         * Information about a Drive Folder for this student's work in this course.
+         * Only visible to the student and domain administrators. Read-only.
+         *
+         * @param DriveFolder $studentWorkFolder
+         */
+        public function setStudentWorkFolder(DriveFolder $studentWorkFolder)
+        {
+        }
+        /**
+         * @return DriveFolder
+         */
+        public function getStudentWorkFolder()
+        {
+        }
+        /**
+         * Identifier of the user. When specified as a parameter of a request, this
+         * identifier can be one of the following: * the numeric identifier for the
+         * user * the email address of the user * the string literal `"me"`,
+         * indicating the requesting user
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Student registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourseId()
-    {
-    }
-    /**
-     * Global user information for the student. Read-only.
-     *
-     * @param UserProfile $profile
-     */
-    public function setProfile(UserProfile $profile)
-    {
-    }
-    /**
-     * @return UserProfile
-     */
-    public function getProfile()
-    {
-    }
-    /**
-     * Information about a Drive Folder for this student's work in this course.
-     * Only visible to the student and domain administrators. Read-only.
-     *
-     * @param DriveFolder $studentWorkFolder
-     */
-    public function setStudentWorkFolder(DriveFolder $studentWorkFolder)
-    {
-    }
-    /**
-     * @return DriveFolder
-     */
-    public function getStudentWorkFolder()
-    {
-    }
-    /**
-     * Identifier of the user. When specified as a parameter of a request, this
-     * identifier can be one of the following: * the numeric identifier for the
-     * user * the email address of the user * the string literal `"me"`,
-     * indicating the requesting user
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Classroom_Student extends \Google\Service\Classroom\Student
     {
     }
 }

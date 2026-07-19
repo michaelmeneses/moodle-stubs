@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class FormAction extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * The method name is used to identify which part of the form triggered the
-     * form submission. This information is echoed back to the Chat app as part of
-     * the card click event. You can use the same method name for several elements
-     * that trigger a common behavior.
-     *
-     * @var string
-     */
-    public $actionMethodName;
-    protected $parametersType = ActionParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * The method name is used to identify which part of the form triggered the
-     * form submission. This information is echoed back to the Chat app as part of
-     * the card click event. You can use the same method name for several elements
-     * that trigger a common behavior.
-     *
-     * @param string $actionMethodName
-     */
-    public function setActionMethodName($actionMethodName)
+namespace Google\Service\HangoutsChat {
+    class FormAction extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * The method name is used to identify which part of the form triggered the
+         * form submission. This information is echoed back to the Chat app as part of
+         * the card click event. You can use the same method name for several elements
+         * that trigger a common behavior.
+         *
+         * @var string
+         */
+        public $actionMethodName;
+        protected $parametersType = ActionParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * The method name is used to identify which part of the form triggered the
+         * form submission. This information is echoed back to the Chat app as part of
+         * the card click event. You can use the same method name for several elements
+         * that trigger a common behavior.
+         *
+         * @param string $actionMethodName
+         */
+        public function setActionMethodName($actionMethodName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionMethodName()
+        {
+        }
+        /**
+         * List of action parameters.
+         *
+         * @param ActionParameter[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return ActionParameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\FormAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionMethodName()
-    {
-    }
-    /**
-     * List of action parameters.
-     *
-     * @param ActionParameter[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return ActionParameter[]
-     */
-    public function getParameters()
+    class Google_Service_HangoutsChat_FormAction extends \Google\Service\HangoutsChat\FormAction
     {
     }
 }

@@ -21,148 +21,168 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine\Resource;
-
-/**
- * The "trials" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mlService = new Google\Service\CloudMachineLearningEngine(...);
- *   $trials = $mlService->projects_locations_studies_trials;
- *  </code>
- */
-class ProjectsLocationsStudiesTrials extends \Google\Service\Resource
-{
+namespace Google\Service\CloudMachineLearningEngine\Resource {
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AddTrialMeasurementRequest;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CheckTrialEarlyStoppingStateRequest;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CompleteTrialRequest;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListOptimalTrialsRequest;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListOptimalTrialsResponse;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListTrialsResponse;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StopTrialRequest;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SuggestTrialsRequest;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Trial;
+    use Google\Service\CloudMachineLearningEngine\GoogleLongrunningOperation;
+    use Google\Service\CloudMachineLearningEngine\GoogleProtobufEmpty;
     /**
-     * Adds a measurement of the objective metrics to a trial. This measurement is
-     * assumed to have been taken before the trial is complete.
-     * (trials.addMeasurement)
-     *
-     * @param string $name Required. The trial name.
-     * @param GoogleCloudMlV1AddTrialMeasurementRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1Trial
-     * @throws \Google\Service\Exception
+     * The "trials" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mlService = new Google\Service\CloudMachineLearningEngine(...);
+     *   $trials = $mlService->projects_locations_studies_trials;
+     *  </code>
      */
-    public function addMeasurement($name, GoogleCloudMlV1AddTrialMeasurementRequest $postBody, $optParams = [])
+    class ProjectsLocationsStudiesTrials extends \Google\Service\Resource
     {
+        /**
+         * Adds a measurement of the objective metrics to a trial. This measurement is
+         * assumed to have been taken before the trial is complete.
+         * (trials.addMeasurement)
+         *
+         * @param string $name Required. The trial name.
+         * @param GoogleCloudMlV1AddTrialMeasurementRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1Trial
+         * @throws \Google\Service\Exception
+         */
+        public function addMeasurement($name, GoogleCloudMlV1AddTrialMeasurementRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Checks whether a trial should stop or not. Returns a long-running operation.
+         * When the operation is successful, it will contain a
+         * CheckTrialEarlyStoppingStateResponse. (trials.checkEarlyStoppingState)
+         *
+         * @param string $name Required. The trial name.
+         * @param GoogleCloudMlV1CheckTrialEarlyStoppingStateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function checkEarlyStoppingState($name, GoogleCloudMlV1CheckTrialEarlyStoppingStateRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Marks a trial as complete. (trials.complete)
+         *
+         * @param string $name Required. The trial name.metat
+         * @param GoogleCloudMlV1CompleteTrialRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1Trial
+         * @throws \Google\Service\Exception
+         */
+        public function complete($name, GoogleCloudMlV1CompleteTrialRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Adds a user provided trial to a study. (trials.create)
+         *
+         * @param string $parent Required. The name of the study that the trial belongs
+         * to.
+         * @param GoogleCloudMlV1Trial $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1Trial
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudMlV1Trial $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a trial. (trials.delete)
+         *
+         * @param string $name Required. The trial name.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a trial. (trials.get)
+         *
+         * @param string $name Required. The trial name.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1Trial
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the trials associated with a study.
+         * (trials.listProjectsLocationsStudiesTrials)
+         *
+         * @param string $parent Required. The name of the study that the trial belongs
+         * to.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1ListTrialsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsStudiesTrials($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists the pareto-optimal trials for multi-objective study or the optimal
+         * trials for single-objective study. The definition of pareto-optimal can be
+         * checked in wiki page. https://en.wikipedia.org/wiki/Pareto_efficiency
+         * (trials.listOptimalTrials)
+         *
+         * @param string $parent Required. The name of the study that the pareto-optimal
+         * trial belongs to.
+         * @param GoogleCloudMlV1ListOptimalTrialsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1ListOptimalTrialsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOptimalTrials($parent, GoogleCloudMlV1ListOptimalTrialsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Stops a trial. (trials.stop)
+         *
+         * @param string $name Required. The trial name.
+         * @param GoogleCloudMlV1StopTrialRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1Trial
+         * @throws \Google\Service\Exception
+         */
+        public function stop($name, GoogleCloudMlV1StopTrialRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Adds one or more trials to a study, with parameter values suggested by AI
+         * Platform Vizier. Returns a long-running operation associated with the
+         * generation of trial suggestions. When this long-running operation succeeds,
+         * it will contain a SuggestTrialsResponse. (trials.suggest)
+         *
+         * @param string $parent Required. The name of the study that the trial belongs
+         * to.
+         * @param GoogleCloudMlV1SuggestTrialsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function suggest($parent, GoogleCloudMlV1SuggestTrialsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Checks whether a trial should stop or not. Returns a long-running operation.
-     * When the operation is successful, it will contain a
-     * CheckTrialEarlyStoppingStateResponse. (trials.checkEarlyStoppingState)
-     *
-     * @param string $name Required. The trial name.
-     * @param GoogleCloudMlV1CheckTrialEarlyStoppingStateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\Resource\ProjectsLocationsStudiesTrials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function checkEarlyStoppingState($name, GoogleCloudMlV1CheckTrialEarlyStoppingStateRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Marks a trial as complete. (trials.complete)
-     *
-     * @param string $name Required. The trial name.metat
-     * @param GoogleCloudMlV1CompleteTrialRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1Trial
-     * @throws \Google\Service\Exception
-     */
-    public function complete($name, GoogleCloudMlV1CompleteTrialRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Adds a user provided trial to a study. (trials.create)
-     *
-     * @param string $parent Required. The name of the study that the trial belongs
-     * to.
-     * @param GoogleCloudMlV1Trial $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1Trial
-     * @throws \Google\Service\Exception
-     */
-    public function create($parent, GoogleCloudMlV1Trial $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a trial. (trials.delete)
-     *
-     * @param string $name Required. The trial name.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a trial. (trials.get)
-     *
-     * @param string $name Required. The trial name.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1Trial
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the trials associated with a study.
-     * (trials.listProjectsLocationsStudiesTrials)
-     *
-     * @param string $parent Required. The name of the study that the trial belongs
-     * to.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1ListTrialsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsStudiesTrials($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists the pareto-optimal trials for multi-objective study or the optimal
-     * trials for single-objective study. The definition of pareto-optimal can be
-     * checked in wiki page. https://en.wikipedia.org/wiki/Pareto_efficiency
-     * (trials.listOptimalTrials)
-     *
-     * @param string $parent Required. The name of the study that the pareto-optimal
-     * trial belongs to.
-     * @param GoogleCloudMlV1ListOptimalTrialsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1ListOptimalTrialsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOptimalTrials($parent, GoogleCloudMlV1ListOptimalTrialsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Stops a trial. (trials.stop)
-     *
-     * @param string $name Required. The trial name.
-     * @param GoogleCloudMlV1StopTrialRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1Trial
-     * @throws \Google\Service\Exception
-     */
-    public function stop($name, GoogleCloudMlV1StopTrialRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Adds one or more trials to a study, with parameter values suggested by AI
-     * Platform Vizier. Returns a long-running operation associated with the
-     * generation of trial suggestions. When this long-running operation succeeds,
-     * it will contain a SuggestTrialsResponse. (trials.suggest)
-     *
-     * @param string $parent Required. The name of the study that the trial belongs
-     * to.
-     * @param GoogleCloudMlV1SuggestTrialsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function suggest($parent, GoogleCloudMlV1SuggestTrialsRequest $postBody, $optParams = [])
+    class Google_Service_CloudMachineLearningEngine_Resource_ProjectsLocationsStudiesTrials extends \Google\Service\CloudMachineLearningEngine\Resource\ProjectsLocationsStudiesTrials
     {
     }
 }

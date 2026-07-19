@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub\Resource;
-
-/**
- * The "dataExchanges" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticshubService = new Google\Service\AnalyticsHub(...);
- *   $dataExchanges = $analyticshubService->organizations_locations_dataExchanges;
- *  </code>
- */
-class OrganizationsLocationsDataExchanges extends \Google\Service\Resource
-{
+namespace Google\Service\AnalyticsHub\Resource {
+    use Google\Service\AnalyticsHub\ListOrgDataExchangesResponse;
     /**
-     * Lists all data exchanges from projects in a given organization and location.
-     * (dataExchanges.listOrganizationsLocationsDataExchanges)
-     *
-     * @param string $organization Required. The organization resource path of the
-     * projects containing DataExchanges. e.g. `organizations/myorg/locations/us`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of results to return in a single
-     * response page. Leverage the page tokens to iterate through the entire
-     * collection.
-     * @opt_param string pageToken Page token, returned by a previous call, to
-     * request the next page of results.
-     * @return ListOrgDataExchangesResponse
-     * @throws \Google\Service\Exception
+     * The "dataExchanges" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticshubService = new Google\Service\AnalyticsHub(...);
+     *   $dataExchanges = $analyticshubService->organizations_locations_dataExchanges;
+     *  </code>
      */
-    public function listOrganizationsLocationsDataExchanges($organization, $optParams = [])
+    class OrganizationsLocationsDataExchanges extends \Google\Service\Resource
+    {
+        /**
+         * Lists all data exchanges from projects in a given organization and location.
+         * (dataExchanges.listOrganizationsLocationsDataExchanges)
+         *
+         * @param string $organization Required. The organization resource path of the
+         * projects containing DataExchanges. e.g. `organizations/myorg/locations/us`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of results to return in a single
+         * response page. Leverage the page tokens to iterate through the entire
+         * collection.
+         * @opt_param string pageToken Page token, returned by a previous call, to
+         * request the next page of results.
+         * @return ListOrgDataExchangesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsDataExchanges($organization, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AnalyticsHub\Resource\OrganizationsLocationsDataExchanges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AnalyticsHub_Resource_OrganizationsLocationsDataExchanges extends \Google\Service\AnalyticsHub\Resource\OrganizationsLocationsDataExchanges
     {
     }
 }

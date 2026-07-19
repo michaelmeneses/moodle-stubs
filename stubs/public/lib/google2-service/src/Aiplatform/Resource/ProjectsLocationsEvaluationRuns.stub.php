@@ -21,95 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "evaluationRuns" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $evaluationRuns = $aiplatformService->projects_locations_evaluationRuns;
- *  </code>
- */
-class ProjectsLocationsEvaluationRuns extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1CancelEvaluationRunRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRun;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationRunsResponse;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
+    use Google\Service\Aiplatform\GoogleProtobufEmpty;
     /**
-     * Cancels an Evaluation Run. Attempts to cancel a running Evaluation Run
-     * asynchronously. Status of run can be checked via GetEvaluationRun.
-     * (evaluationRuns.cancel)
-     *
-     * @param string $name Required. The name of the EvaluationRun resource to be
-     * cancelled. Format:
-     * `projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}`
-     * @param GoogleCloudAiplatformV1CancelEvaluationRunRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "evaluationRuns" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $evaluationRuns = $aiplatformService->projects_locations_evaluationRuns;
+     *  </code>
      */
-    public function cancel($name, GoogleCloudAiplatformV1CancelEvaluationRunRequest $postBody, $optParams = [])
+    class ProjectsLocationsEvaluationRuns extends \Google\Service\Resource
     {
+        /**
+         * Cancels an Evaluation Run. Attempts to cancel a running Evaluation Run
+         * asynchronously. Status of run can be checked via GetEvaluationRun.
+         * (evaluationRuns.cancel)
+         *
+         * @param string $name Required. The name of the EvaluationRun resource to be
+         * cancelled. Format:
+         * `projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}`
+         * @param GoogleCloudAiplatformV1CancelEvaluationRunRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, GoogleCloudAiplatformV1CancelEvaluationRunRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates an Evaluation Run. (evaluationRuns.create)
+         *
+         * @param string $parent Required. The resource name of the Location to create
+         * the Evaluation Run in. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudAiplatformV1EvaluationRun $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EvaluationRun
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudAiplatformV1EvaluationRun $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an Evaluation Run. (evaluationRuns.delete)
+         *
+         * @param string $name Required. The name of the EvaluationRun resource to be
+         * deleted. Format:
+         * `projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an Evaluation Run. (evaluationRuns.get)
+         *
+         * @param string $name Required. The name of the EvaluationRun resource. Format:
+         * `projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EvaluationRun
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Evaluation Runs. (evaluationRuns.listProjectsLocationsEvaluationRuns)
+         *
+         * @param string $parent Required. The resource name of the Location from which
+         * to list the Evaluation Runs. Format:
+         * `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression that matches a subset of
+         * the EvaluationRuns to show. For field names both snake_case and camelCase are
+         * supported. For more information about filter syntax, see
+         * [AIP-160](https://google.aip.dev/160).
+         * @opt_param string orderBy Optional. A comma-separated list of fields to order
+         * by, sorted in ascending order by default. Use `desc` after a field name for
+         * descending.
+         * @opt_param int pageSize Optional. The maximum number of Evaluation Runs to
+         * return.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListEvaluationRuns` call. Provide this to retrieve the subsequent page.
+         * @return GoogleCloudAiplatformV1ListEvaluationRunsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEvaluationRuns($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates an Evaluation Run. (evaluationRuns.create)
-     *
-     * @param string $parent Required. The resource name of the Location to create
-     * the Evaluation Run in. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudAiplatformV1EvaluationRun $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EvaluationRun
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsEvaluationRuns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, GoogleCloudAiplatformV1EvaluationRun $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes an Evaluation Run. (evaluationRuns.delete)
-     *
-     * @param string $name Required. The name of the EvaluationRun resource to be
-     * deleted. Format:
-     * `projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an Evaluation Run. (evaluationRuns.get)
-     *
-     * @param string $name Required. The name of the EvaluationRun resource. Format:
-     * `projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EvaluationRun
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Evaluation Runs. (evaluationRuns.listProjectsLocationsEvaluationRuns)
-     *
-     * @param string $parent Required. The resource name of the Location from which
-     * to list the Evaluation Runs. Format:
-     * `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression that matches a subset of
-     * the EvaluationRuns to show. For field names both snake_case and camelCase are
-     * supported. For more information about filter syntax, see
-     * [AIP-160](https://google.aip.dev/160).
-     * @opt_param string orderBy Optional. A comma-separated list of fields to order
-     * by, sorted in ascending order by default. Use `desc` after a field name for
-     * descending.
-     * @opt_param int pageSize Optional. The maximum number of Evaluation Runs to
-     * return.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListEvaluationRuns` call. Provide this to retrieve the subsequent page.
-     * @return GoogleCloudAiplatformV1ListEvaluationRunsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsEvaluationRuns($parent, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsEvaluationRuns extends \Google\Service\Aiplatform\Resource\ProjectsLocationsEvaluationRuns
     {
     }
 }

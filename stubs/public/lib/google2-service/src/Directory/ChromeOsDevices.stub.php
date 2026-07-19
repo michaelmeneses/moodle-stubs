@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDevices extends \Google\Collection
-{
-    protected $collection_key = 'chromeosdevices';
-    protected $chromeosdevicesType = ChromeOsDevice::class;
-    protected $chromeosdevicesDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token used to access the next page of this result. To access the next page,
-     * use this token's value in the `pageToken` query string of this request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of Chrome OS Device objects.
-     *
-     * @param ChromeOsDevice[] $chromeosdevices
-     */
-    public function setChromeosdevices($chromeosdevices)
+namespace Google\Service\Directory {
+    class ChromeOsDevices extends \Google\Collection
     {
+        protected $collection_key = 'chromeosdevices';
+        protected $chromeosdevicesType = ChromeOsDevice::class;
+        protected $chromeosdevicesDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token used to access the next page of this result. To access the next page,
+         * use this token's value in the `pageToken` query string of this request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of Chrome OS Device objects.
+         *
+         * @param ChromeOsDevice[] $chromeosdevices
+         */
+        public function setChromeosdevices($chromeosdevices)
+        {
+        }
+        /**
+         * @return ChromeOsDevice[]
+         */
+        public function getChromeosdevices()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token used to access the next page of this result. To access the next page,
+         * use this token's value in the `pageToken` query string of this request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChromeOsDevice[]
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDevices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChromeosdevices()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token used to access the next page of this result. To access the next page,
-     * use this token's value in the `pageToken` query string of this request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Directory_ChromeOsDevices extends \Google\Service\Directory\ChromeOsDevices
     {
     }
 }

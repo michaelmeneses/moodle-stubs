@@ -21,159 +21,168 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RegionalTaxConfig extends \Google\Model
-{
-    /**
-     * No telecommunications tax collected.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_UNSPECIFIED = 'STREAMING_TAX_TYPE_UNSPECIFIED';
-    /**
-     * US-specific telecommunications tax tier for video streaming, on demand,
-     * rentals / subscriptions / pay-per-view.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL = 'STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL';
-    /**
-     * US-specific telecommunications tax tier for video streaming of pre-recorded
-     * content like movies, tv shows.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_VIDEO_SALES = 'STREAMING_TAX_TYPE_TELCO_VIDEO_SALES';
-    /**
-     * US-specific telecommunications tax tier for video streaming of multi-
-     * channel programming.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL = 'STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL';
-    /**
-     * US-specific telecommunications tax tier for audio streaming, rental /
-     * subscription.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL = 'STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL';
-    /**
-     * US-specific telecommunications tax tier for audio streaming, sale /
-     * permanent download.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_AUDIO_SALES = 'STREAMING_TAX_TYPE_TELCO_AUDIO_SALES';
-    /**
-     * US-specific telecommunications tax tier for multi channel audio streaming
-     * like radio.
-     */
-    public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL = 'STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL';
-    public const TAX_TIER_TAX_TIER_UNSPECIFIED = 'TAX_TIER_UNSPECIFIED';
-    public const TAX_TIER_TAX_TIER_BOOKS_1 = 'TAX_TIER_BOOKS_1';
-    public const TAX_TIER_TAX_TIER_NEWS_1 = 'TAX_TIER_NEWS_1';
-    public const TAX_TIER_TAX_TIER_NEWS_2 = 'TAX_TIER_NEWS_2';
-    public const TAX_TIER_TAX_TIER_MUSIC_OR_AUDIO_1 = 'TAX_TIER_MUSIC_OR_AUDIO_1';
-    public const TAX_TIER_TAX_TIER_LIVE_OR_BROADCAST_1 = 'TAX_TIER_LIVE_OR_BROADCAST_1';
-    /**
-     * You must tell us if your app contains streaming products to correctly
-     * charge US state and local sales tax. Field only supported in the United
-     * States.
-     *
-     * @var bool
-     */
-    public $eligibleForStreamingServiceTaxRate;
-    /**
-     * Required. Region code this configuration applies to, as defined by ISO
-     * 3166-2, e.g. "US".
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * To collect communications or amusement taxes in the United States, choose
-     * the appropriate tax category. [Learn
-     * more](https://support.google.com/googleplay/android-
-     * developer/answer/10463498#streaming_tax).
-     *
-     * @var string
-     */
-    public $streamingTaxType;
-    /**
-     * Tax tier to specify reduced tax rate. Developers who sell digital news,
-     * magazines, newspapers, books, or audiobooks in various regions may be
-     * eligible for reduced tax rates. [Learn
-     * more](https://support.google.com/googleplay/android-
-     * developer/answer/10463498).
-     *
-     * @var string
-     */
-    public $taxTier;
-    /**
-     * You must tell us if your app contains streaming products to correctly
-     * charge US state and local sales tax. Field only supported in the United
-     * States.
-     *
-     * @param bool $eligibleForStreamingServiceTaxRate
-     */
-    public function setEligibleForStreamingServiceTaxRate($eligibleForStreamingServiceTaxRate)
+namespace Google\Service\AndroidPublisher {
+    class RegionalTaxConfig extends \Google\Model
     {
+        /**
+         * No telecommunications tax collected.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_UNSPECIFIED = 'STREAMING_TAX_TYPE_UNSPECIFIED';
+        /**
+         * US-specific telecommunications tax tier for video streaming, on demand,
+         * rentals / subscriptions / pay-per-view.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL = 'STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL';
+        /**
+         * US-specific telecommunications tax tier for video streaming of pre-recorded
+         * content like movies, tv shows.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_VIDEO_SALES = 'STREAMING_TAX_TYPE_TELCO_VIDEO_SALES';
+        /**
+         * US-specific telecommunications tax tier for video streaming of multi-
+         * channel programming.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL = 'STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL';
+        /**
+         * US-specific telecommunications tax tier for audio streaming, rental /
+         * subscription.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL = 'STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL';
+        /**
+         * US-specific telecommunications tax tier for audio streaming, sale /
+         * permanent download.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_AUDIO_SALES = 'STREAMING_TAX_TYPE_TELCO_AUDIO_SALES';
+        /**
+         * US-specific telecommunications tax tier for multi channel audio streaming
+         * like radio.
+         */
+        public const STREAMING_TAX_TYPE_STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL = 'STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL';
+        public const TAX_TIER_TAX_TIER_UNSPECIFIED = 'TAX_TIER_UNSPECIFIED';
+        public const TAX_TIER_TAX_TIER_BOOKS_1 = 'TAX_TIER_BOOKS_1';
+        public const TAX_TIER_TAX_TIER_NEWS_1 = 'TAX_TIER_NEWS_1';
+        public const TAX_TIER_TAX_TIER_NEWS_2 = 'TAX_TIER_NEWS_2';
+        public const TAX_TIER_TAX_TIER_MUSIC_OR_AUDIO_1 = 'TAX_TIER_MUSIC_OR_AUDIO_1';
+        public const TAX_TIER_TAX_TIER_LIVE_OR_BROADCAST_1 = 'TAX_TIER_LIVE_OR_BROADCAST_1';
+        /**
+         * You must tell us if your app contains streaming products to correctly
+         * charge US state and local sales tax. Field only supported in the United
+         * States.
+         *
+         * @var bool
+         */
+        public $eligibleForStreamingServiceTaxRate;
+        /**
+         * Required. Region code this configuration applies to, as defined by ISO
+         * 3166-2, e.g. "US".
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * To collect communications or amusement taxes in the United States, choose
+         * the appropriate tax category. [Learn
+         * more](https://support.google.com/googleplay/android-
+         * developer/answer/10463498#streaming_tax).
+         *
+         * @var string
+         */
+        public $streamingTaxType;
+        /**
+         * Tax tier to specify reduced tax rate. Developers who sell digital news,
+         * magazines, newspapers, books, or audiobooks in various regions may be
+         * eligible for reduced tax rates. [Learn
+         * more](https://support.google.com/googleplay/android-
+         * developer/answer/10463498).
+         *
+         * @var string
+         */
+        public $taxTier;
+        /**
+         * You must tell us if your app contains streaming products to correctly
+         * charge US state and local sales tax. Field only supported in the United
+         * States.
+         *
+         * @param bool $eligibleForStreamingServiceTaxRate
+         */
+        public function setEligibleForStreamingServiceTaxRate($eligibleForStreamingServiceTaxRate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEligibleForStreamingServiceTaxRate()
+        {
+        }
+        /**
+         * Required. Region code this configuration applies to, as defined by ISO
+         * 3166-2, e.g. "US".
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * To collect communications or amusement taxes in the United States, choose
+         * the appropriate tax category. [Learn
+         * more](https://support.google.com/googleplay/android-
+         * developer/answer/10463498#streaming_tax).
+         *
+         * Accepted values: STREAMING_TAX_TYPE_UNSPECIFIED,
+         * STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL,
+         * STREAMING_TAX_TYPE_TELCO_VIDEO_SALES,
+         * STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL,
+         * STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL,
+         * STREAMING_TAX_TYPE_TELCO_AUDIO_SALES,
+         * STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL
+         *
+         * @param self::STREAMING_TAX_TYPE_* $streamingTaxType
+         */
+        public function setStreamingTaxType($streamingTaxType)
+        {
+        }
+        /**
+         * @return self::STREAMING_TAX_TYPE_*
+         */
+        public function getStreamingTaxType()
+        {
+        }
+        /**
+         * Tax tier to specify reduced tax rate. Developers who sell digital news,
+         * magazines, newspapers, books, or audiobooks in various regions may be
+         * eligible for reduced tax rates. [Learn
+         * more](https://support.google.com/googleplay/android-
+         * developer/answer/10463498).
+         *
+         * Accepted values: TAX_TIER_UNSPECIFIED, TAX_TIER_BOOKS_1, TAX_TIER_NEWS_1,
+         * TAX_TIER_NEWS_2, TAX_TIER_MUSIC_OR_AUDIO_1, TAX_TIER_LIVE_OR_BROADCAST_1
+         *
+         * @param self::TAX_TIER_* $taxTier
+         */
+        public function setTaxTier($taxTier)
+        {
+        }
+        /**
+         * @return self::TAX_TIER_*
+         */
+        public function getTaxTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\RegionalTaxConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEligibleForStreamingServiceTaxRate()
-    {
-    }
-    /**
-     * Required. Region code this configuration applies to, as defined by ISO
-     * 3166-2, e.g. "US".
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * To collect communications or amusement taxes in the United States, choose
-     * the appropriate tax category. [Learn
-     * more](https://support.google.com/googleplay/android-
-     * developer/answer/10463498#streaming_tax).
-     *
-     * Accepted values: STREAMING_TAX_TYPE_UNSPECIFIED,
-     * STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL,
-     * STREAMING_TAX_TYPE_TELCO_VIDEO_SALES,
-     * STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL,
-     * STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL,
-     * STREAMING_TAX_TYPE_TELCO_AUDIO_SALES,
-     * STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL
-     *
-     * @param self::STREAMING_TAX_TYPE_* $streamingTaxType
-     */
-    public function setStreamingTaxType($streamingTaxType)
-    {
-    }
-    /**
-     * @return self::STREAMING_TAX_TYPE_*
-     */
-    public function getStreamingTaxType()
-    {
-    }
-    /**
-     * Tax tier to specify reduced tax rate. Developers who sell digital news,
-     * magazines, newspapers, books, or audiobooks in various regions may be
-     * eligible for reduced tax rates. [Learn
-     * more](https://support.google.com/googleplay/android-
-     * developer/answer/10463498).
-     *
-     * Accepted values: TAX_TIER_UNSPECIFIED, TAX_TIER_BOOKS_1, TAX_TIER_NEWS_1,
-     * TAX_TIER_NEWS_2, TAX_TIER_MUSIC_OR_AUDIO_1, TAX_TIER_LIVE_OR_BROADCAST_1
-     *
-     * @param self::TAX_TIER_* $taxTier
-     */
-    public function setTaxTier($taxTier)
-    {
-    }
-    /**
-     * @return self::TAX_TIER_*
-     */
-    public function getTaxTier()
+    class Google_Service_AndroidPublisher_RegionalTaxConfig extends \Google\Service\AndroidPublisher\RegionalTaxConfig
     {
     }
 }

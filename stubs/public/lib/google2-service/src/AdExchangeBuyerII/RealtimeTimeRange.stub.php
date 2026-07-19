@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class RealtimeTimeRange extends \Google\Model
-{
-    /**
-     * The start timestamp of the real-time RTB metrics aggregation.
-     *
-     * @var string
-     */
-    public $startTimestamp;
-    /**
-     * The start timestamp of the real-time RTB metrics aggregation.
-     *
-     * @param string $startTimestamp
-     */
-    public function setStartTimestamp($startTimestamp)
+namespace Google\Service\AdExchangeBuyerII {
+    class RealtimeTimeRange extends \Google\Model
     {
+        /**
+         * The start timestamp of the real-time RTB metrics aggregation.
+         *
+         * @var string
+         */
+        public $startTimestamp;
+        /**
+         * The start timestamp of the real-time RTB metrics aggregation.
+         *
+         * @param string $startTimestamp
+         */
+        public function setStartTimestamp($startTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\RealtimeTimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTimestamp()
+    class Google_Service_AdExchangeBuyerII_RealtimeTimeRange extends \Google\Service\AdExchangeBuyerII\RealtimeTimeRange
     {
     }
 }

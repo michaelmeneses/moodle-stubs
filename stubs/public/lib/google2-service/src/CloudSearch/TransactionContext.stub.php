@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TransactionContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endingRecordId;
-    /**
-     * @var string
-     */
-    public $startingRecordId;
-    /**
-     * @var string
-     */
-    public $writeTimestampUs;
-    /**
-     * @param string
-     */
-    public function setEndingRecordId($endingRecordId)
+namespace Google\Service\CloudSearch {
+    class TransactionContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endingRecordId;
+        /**
+         * @var string
+         */
+        public $startingRecordId;
+        /**
+         * @var string
+         */
+        public $writeTimestampUs;
+        /**
+         * @param string
+         */
+        public function setEndingRecordId($endingRecordId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndingRecordId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartingRecordId($startingRecordId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartingRecordId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWriteTimestampUs($writeTimestampUs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteTimestampUs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\TransactionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndingRecordId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartingRecordId($startingRecordId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartingRecordId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWriteTimestampUs($writeTimestampUs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteTimestampUs()
+    class Google_Service_CloudSearch_TransactionContext extends \Google\Service\CloudSearch\TransactionContext
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ClusterSlots extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $endSlotsExclusive;
-    /**
-     * @var int
-     */
-    public $memorySizeGb;
-    /**
-     * @var int
-     */
-    public $replicaCount;
-    /**
-     * @var int
-     */
-    public $startSlotsInclusive;
-    /**
-     * @param int
-     */
-    public function setEndSlotsExclusive($endSlotsExclusive)
+namespace Google\Service\CloudRedis {
+    class ClusterSlots extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $endSlotsExclusive;
+        /**
+         * @var int
+         */
+        public $memorySizeGb;
+        /**
+         * @var int
+         */
+        public $replicaCount;
+        /**
+         * @var int
+         */
+        public $startSlotsInclusive;
+        /**
+         * @param int
+         */
+        public function setEndSlotsExclusive($endSlotsExclusive)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndSlotsExclusive()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMemorySizeGb($memorySizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemorySizeGb()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setReplicaCount($replicaCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReplicaCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStartSlotsInclusive($startSlotsInclusive)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartSlotsInclusive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRedis\ClusterSlots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndSlotsExclusive()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMemorySizeGb($memorySizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemorySizeGb()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setReplicaCount($replicaCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReplicaCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStartSlotsInclusive($startSlotsInclusive)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartSlotsInclusive()
+    class Google_Service_CloudRedis_ClusterSlots extends \Google\Service\CloudRedis\ClusterSlots
     {
     }
 }

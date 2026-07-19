@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubGatewayArray extends \Google\Collection
-{
-    protected $collection_key = 'gateways';
-    /**
-     * Required. The array of API Hub Gateway IDs. Format: `projects/{project}/loc
-     * ations/{location}/plugins/{plugin}/instances/{instance}`
-     *
-     * @var string[]
-     */
-    public $gateways;
-    /**
-     * Required. The array of API Hub Gateway IDs. Format: `projects/{project}/loc
-     * ations/{location}/plugins/{plugin}/instances/{instance}`
-     *
-     * @param string[] $gateways
-     */
-    public function setGateways($gateways)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubGatewayArray extends \Google\Collection
     {
+        protected $collection_key = 'gateways';
+        /**
+         * Required. The array of API Hub Gateway IDs. Format: `projects/{project}/loc
+         * ations/{location}/plugins/{plugin}/instances/{instance}`
+         *
+         * @var string[]
+         */
+        public $gateways;
+        /**
+         * Required. The array of API Hub Gateway IDs. Format: `projects/{project}/loc
+         * ations/{location}/plugins/{plugin}/instances/{instance}`
+         *
+         * @param string[] $gateways
+         */
+        public function setGateways($gateways)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGateways()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubGatewayArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGateways()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubGatewayArray extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubGatewayArray
     {
     }
 }

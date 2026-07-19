@@ -8,6 +8,13 @@
  */
 namespace Aws\S3;
 
+use Aws\Api\Parser\AbstractParser;
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Aws\S3\Exception\S3Exception;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Decorates a parser for the S3 service to validate the response checksum.
  */

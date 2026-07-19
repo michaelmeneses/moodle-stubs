@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZonePeeringConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $targetNetworkType = ManagedZonePeeringConfigTargetNetwork::class;
-    protected $targetNetworkDataType = '';
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class ManagedZonePeeringConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $targetNetworkType = ManagedZonePeeringConfigTargetNetwork::class;
+        protected $targetNetworkDataType = '';
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The network with which to peer.
+         *
+         * @param ManagedZonePeeringConfigTargetNetwork $targetNetwork
+         */
+        public function setTargetNetwork(ManagedZonePeeringConfigTargetNetwork $targetNetwork)
+        {
+        }
+        /**
+         * @return ManagedZonePeeringConfigTargetNetwork
+         */
+        public function getTargetNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZonePeeringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The network with which to peer.
-     *
-     * @param ManagedZonePeeringConfigTargetNetwork $targetNetwork
-     */
-    public function setTargetNetwork(ManagedZonePeeringConfigTargetNetwork $targetNetwork)
-    {
-    }
-    /**
-     * @return ManagedZonePeeringConfigTargetNetwork
-     */
-    public function getTargetNetwork()
+    class Google_Service_Dns_ManagedZonePeeringConfig extends \Google\Service\Dns\ManagedZonePeeringConfig
     {
     }
 }

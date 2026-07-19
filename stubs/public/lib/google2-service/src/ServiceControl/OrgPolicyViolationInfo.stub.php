@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class OrgPolicyViolationInfo extends \Google\Collection
-{
-    protected $collection_key = 'violationInfo';
-    /**
-     * Optional. Deprecated. Resource payload that is currently in scope and is
-     * subjected to orgpolicy conditions. This payload may be the subset of the
-     * actual Resource that may come in the request.
-     *
-     * @deprecated
-     * @var array[]
-     */
-    public $payload;
-    /**
-     * Optional. Deprecated. Tags referenced on the resource at the time of
-     * evaluation.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $resourceTags;
-    /**
-     * Optional. Resource type that the orgpolicy is checked against. Example:
-     * compute.googleapis.com/Instance, store.googleapis.com/bucket
-     *
-     * @var string
-     */
-    public $resourceType;
-    protected $violationInfoType = ViolationInfo::class;
-    protected $violationInfoDataType = 'array';
-    /**
-     * Optional. Deprecated. Resource payload that is currently in scope and is
-     * subjected to orgpolicy conditions. This payload may be the subset of the
-     * actual Resource that may come in the request.
-     *
-     * @deprecated
-     * @param array[] $payload
-     */
-    public function setPayload($payload)
+namespace Google\Service\ServiceControl {
+    class OrgPolicyViolationInfo extends \Google\Collection
     {
+        protected $collection_key = 'violationInfo';
+        /**
+         * Optional. Deprecated. Resource payload that is currently in scope and is
+         * subjected to orgpolicy conditions. This payload may be the subset of the
+         * actual Resource that may come in the request.
+         *
+         * @deprecated
+         * @var array[]
+         */
+        public $payload;
+        /**
+         * Optional. Deprecated. Tags referenced on the resource at the time of
+         * evaluation.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $resourceTags;
+        /**
+         * Optional. Resource type that the orgpolicy is checked against. Example:
+         * compute.googleapis.com/Instance, store.googleapis.com/bucket
+         *
+         * @var string
+         */
+        public $resourceType;
+        protected $violationInfoType = ViolationInfo::class;
+        protected $violationInfoDataType = 'array';
+        /**
+         * Optional. Deprecated. Resource payload that is currently in scope and is
+         * subjected to orgpolicy conditions. This payload may be the subset of the
+         * actual Resource that may come in the request.
+         *
+         * @deprecated
+         * @param array[] $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @deprecated
+         * @return array[]
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Optional. Deprecated. Tags referenced on the resource at the time of
+         * evaluation.
+         *
+         * @deprecated
+         * @param string[] $resourceTags
+         */
+        public function setResourceTags($resourceTags)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getResourceTags()
+        {
+        }
+        /**
+         * Optional. Resource type that the orgpolicy is checked against. Example:
+         * compute.googleapis.com/Instance, store.googleapis.com/bucket
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * Optional. Policy violations
+         *
+         * @param ViolationInfo[] $violationInfo
+         */
+        public function setViolationInfo($violationInfo)
+        {
+        }
+        /**
+         * @return ViolationInfo[]
+         */
+        public function getViolationInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return array[]
+     * Runtime class alias of \Google\Service\ServiceControl\OrgPolicyViolationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
-    {
-    }
-    /**
-     * Optional. Deprecated. Tags referenced on the resource at the time of
-     * evaluation.
-     *
-     * @deprecated
-     * @param string[] $resourceTags
-     */
-    public function setResourceTags($resourceTags)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getResourceTags()
-    {
-    }
-    /**
-     * Optional. Resource type that the orgpolicy is checked against. Example:
-     * compute.googleapis.com/Instance, store.googleapis.com/bucket
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * Optional. Policy violations
-     *
-     * @param ViolationInfo[] $violationInfo
-     */
-    public function setViolationInfo($violationInfo)
-    {
-    }
-    /**
-     * @return ViolationInfo[]
-     */
-    public function getViolationInfo()
+    class Google_Service_ServiceControl_OrgPolicyViolationInfo extends \Google\Service\ServiceControl\OrgPolicyViolationInfo
     {
     }
 }

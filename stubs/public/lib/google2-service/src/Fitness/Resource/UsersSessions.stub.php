@@ -21,74 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness\Resource;
-
-/**
- * The "sessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fitnessService = new Google\Service\Fitness(...);
- *   $sessions = $fitnessService->users_sessions;
- *  </code>
- */
-class UsersSessions extends \Google\Service\Resource
-{
+namespace Google\Service\Fitness\Resource {
+    use Google\Service\Fitness\ListSessionsResponse;
+    use Google\Service\Fitness\Session;
     /**
-     * Deletes a session specified by the given session ID. (sessions.delete)
-     *
-     * @param string $userId Delete a session for the person identified. Use me to
-     * indicate the authenticated user. Only me is supported at this time.
-     * @param string $sessionId The ID of the session to be deleted.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "sessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fitnessService = new Google\Service\Fitness(...);
+     *   $sessions = $fitnessService->users_sessions;
+     *  </code>
      */
-    public function delete($userId, $sessionId, $optParams = [])
+    class UsersSessions extends \Google\Service\Resource
     {
+        /**
+         * Deletes a session specified by the given session ID. (sessions.delete)
+         *
+         * @param string $userId Delete a session for the person identified. Use me to
+         * indicate the authenticated user. Only me is supported at this time.
+         * @param string $sessionId The ID of the session to be deleted.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userId, $sessionId, $optParams = [])
+        {
+        }
+        /**
+         * Lists sessions previously created. (sessions.listUsersSessions)
+         *
+         * @param string $userId List sessions for the person identified. Use me to
+         * indicate the authenticated user. Only me is supported at this time.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int activityType If non-empty, only sessions with these activity
+         * types should be returned.
+         * @opt_param string endTime An RFC3339 timestamp. Only sessions starting before
+         * endTime and ending after startTime up to (endTime + 1 day) will be included
+         * in the response. If this time is omitted but startTime is specified, all
+         * sessions ending after startTime to the end of time will be returned.
+         * @opt_param bool includeDeleted If true, and if both startTime and endTime are
+         * omitted, session deletions will be returned.
+         * @opt_param string pageToken The continuation token, which is used for
+         * incremental syncing. To get the next batch of changes, set this parameter to
+         * the value of nextPageToken from the previous response. The page token is
+         * ignored if either start or end time is specified. If none of start time, end
+         * time, and the page token is specified, sessions modified in the last 30 days
+         * are returned.
+         * @opt_param string startTime An RFC3339 timestamp. Only sessions starting
+         * before endTime and ending after startTime up to (endTime + 1 day) will be
+         * included in the response. If this time is omitted but endTime is specified,
+         * all sessions starting before endTime and ending after the start of time up to
+         * (endTime + 1 day) will be returned.
+         * @return ListSessionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsersSessions($userId, $optParams = [])
+        {
+        }
+        /**
+         * Updates or insert a given session. (sessions.update)
+         *
+         * @param string $userId Create sessions for the person identified. Use me to
+         * indicate the authenticated user. Only me is supported at this time.
+         * @param string $sessionId The ID of the session to be created.
+         * @param Session $postBody
+         * @param array $optParams Optional parameters.
+         * @return Session
+         * @throws \Google\Service\Exception
+         */
+        public function update($userId, $sessionId, Session $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists sessions previously created. (sessions.listUsersSessions)
-     *
-     * @param string $userId List sessions for the person identified. Use me to
-     * indicate the authenticated user. Only me is supported at this time.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int activityType If non-empty, only sessions with these activity
-     * types should be returned.
-     * @opt_param string endTime An RFC3339 timestamp. Only sessions starting before
-     * endTime and ending after startTime up to (endTime + 1 day) will be included
-     * in the response. If this time is omitted but startTime is specified, all
-     * sessions ending after startTime to the end of time will be returned.
-     * @opt_param bool includeDeleted If true, and if both startTime and endTime are
-     * omitted, session deletions will be returned.
-     * @opt_param string pageToken The continuation token, which is used for
-     * incremental syncing. To get the next batch of changes, set this parameter to
-     * the value of nextPageToken from the previous response. The page token is
-     * ignored if either start or end time is specified. If none of start time, end
-     * time, and the page token is specified, sessions modified in the last 30 days
-     * are returned.
-     * @opt_param string startTime An RFC3339 timestamp. Only sessions starting
-     * before endTime and ending after startTime up to (endTime + 1 day) will be
-     * included in the response. If this time is omitted but endTime is specified,
-     * all sessions starting before endTime and ending after the start of time up to
-     * (endTime + 1 day) will be returned.
-     * @return ListSessionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Fitness\Resource\UsersSessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listUsersSessions($userId, $optParams = [])
-    {
-    }
-    /**
-     * Updates or insert a given session. (sessions.update)
-     *
-     * @param string $userId Create sessions for the person identified. Use me to
-     * indicate the authenticated user. Only me is supported at this time.
-     * @param string $sessionId The ID of the session to be created.
-     * @param Session $postBody
-     * @param array $optParams Optional parameters.
-     * @return Session
-     * @throws \Google\Service\Exception
-     */
-    public function update($userId, $sessionId, Session $postBody, $optParams = [])
+    class Google_Service_Fitness_Resource_UsersSessions extends \Google\Service\Fitness\Resource\UsersSessions
     {
     }
 }

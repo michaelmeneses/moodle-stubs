@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class Date extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $day;
-    /**
-     * @var int
-     */
-    public $month;
-    /**
-     * @var int
-     */
-    public $year;
-    /**
-     * @param int
-     */
-    public function setDay($day)
+namespace Google\Service\ChecksService {
+    class Date extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $day;
+        /**
+         * @var int
+         */
+        public $month;
+        /**
+         * @var int
+         */
+        public $year;
+        /**
+         * @param int
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMonth($month)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonth()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setYear($year)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ChecksService\Date registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMonth($month)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMonth()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setYear($year)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYear()
+    class Google_Service_ChecksService_Date extends \Google\Service\ChecksService\Date
     {
     }
 }

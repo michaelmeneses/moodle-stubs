@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class MapValue extends \Google\Model
-{
-    /**
-     * Floating point value.
-     *
-     * @var 
-     */
-    public $fpVal;
-    public function setFpVal($fpVal)
+namespace Google\Service\Fitness {
+    class MapValue extends \Google\Model
     {
+        /**
+         * Floating point value.
+         *
+         * @var 
+         */
+        public $fpVal;
+        public function setFpVal($fpVal)
+        {
+        }
+        public function getFpVal()
+        {
+        }
     }
-    public function getFpVal()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Fitness\MapValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Fitness_MapValue extends \Google\Service\Fitness\MapValue
     {
     }
 }

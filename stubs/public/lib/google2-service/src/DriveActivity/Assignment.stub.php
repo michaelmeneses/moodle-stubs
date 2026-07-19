@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Assignment extends \Google\Model
-{
-    /**
-     * Subtype not available.
-     */
-    public const SUBTYPE_SUBTYPE_UNSPECIFIED = 'SUBTYPE_UNSPECIFIED';
-    /**
-     * An assignment was added.
-     */
-    public const SUBTYPE_ADDED = 'ADDED';
-    /**
-     * An assignment was deleted.
-     */
-    public const SUBTYPE_DELETED = 'DELETED';
-    /**
-     * An assignment reply was added.
-     */
-    public const SUBTYPE_REPLY_ADDED = 'REPLY_ADDED';
-    /**
-     * An assignment reply was deleted.
-     */
-    public const SUBTYPE_REPLY_DELETED = 'REPLY_DELETED';
-    /**
-     * An assignment was resolved.
-     */
-    public const SUBTYPE_RESOLVED = 'RESOLVED';
-    /**
-     * A resolved assignment was reopened.
-     */
-    public const SUBTYPE_REOPENED = 'REOPENED';
-    /**
-     * An assignment was reassigned.
-     */
-    public const SUBTYPE_REASSIGNED = 'REASSIGNED';
-    protected $assignedUserType = User::class;
-    protected $assignedUserDataType = '';
-    /**
-     * The sub-type of this event.
-     *
-     * @var string
-     */
-    public $subtype;
-    /**
-     * The user to whom the comment was assigned.
-     *
-     * @param User $assignedUser
-     */
-    public function setAssignedUser(User $assignedUser)
+namespace Google\Service\DriveActivity {
+    class Assignment extends \Google\Model
     {
+        /**
+         * Subtype not available.
+         */
+        public const SUBTYPE_SUBTYPE_UNSPECIFIED = 'SUBTYPE_UNSPECIFIED';
+        /**
+         * An assignment was added.
+         */
+        public const SUBTYPE_ADDED = 'ADDED';
+        /**
+         * An assignment was deleted.
+         */
+        public const SUBTYPE_DELETED = 'DELETED';
+        /**
+         * An assignment reply was added.
+         */
+        public const SUBTYPE_REPLY_ADDED = 'REPLY_ADDED';
+        /**
+         * An assignment reply was deleted.
+         */
+        public const SUBTYPE_REPLY_DELETED = 'REPLY_DELETED';
+        /**
+         * An assignment was resolved.
+         */
+        public const SUBTYPE_RESOLVED = 'RESOLVED';
+        /**
+         * A resolved assignment was reopened.
+         */
+        public const SUBTYPE_REOPENED = 'REOPENED';
+        /**
+         * An assignment was reassigned.
+         */
+        public const SUBTYPE_REASSIGNED = 'REASSIGNED';
+        protected $assignedUserType = User::class;
+        protected $assignedUserDataType = '';
+        /**
+         * The sub-type of this event.
+         *
+         * @var string
+         */
+        public $subtype;
+        /**
+         * The user to whom the comment was assigned.
+         *
+         * @param User $assignedUser
+         */
+        public function setAssignedUser(User $assignedUser)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getAssignedUser()
+        {
+        }
+        /**
+         * The sub-type of this event.
+         *
+         * Accepted values: SUBTYPE_UNSPECIFIED, ADDED, DELETED, REPLY_ADDED,
+         * REPLY_DELETED, RESOLVED, REOPENED, REASSIGNED
+         *
+         * @param self::SUBTYPE_* $subtype
+         */
+        public function setSubtype($subtype)
+        {
+        }
+        /**
+         * @return self::SUBTYPE_*
+         */
+        public function getSubtype()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return User
+     * Runtime class alias of \Google\Service\DriveActivity\Assignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedUser()
-    {
-    }
-    /**
-     * The sub-type of this event.
-     *
-     * Accepted values: SUBTYPE_UNSPECIFIED, ADDED, DELETED, REPLY_ADDED,
-     * REPLY_DELETED, RESOLVED, REOPENED, REASSIGNED
-     *
-     * @param self::SUBTYPE_* $subtype
-     */
-    public function setSubtype($subtype)
-    {
-    }
-    /**
-     * @return self::SUBTYPE_*
-     */
-    public function getSubtype()
+    class Google_Service_DriveActivity_Assignment extends \Google\Service\DriveActivity\Assignment
     {
     }
 }

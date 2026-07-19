@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class CustomerManagedEncryptionStatus extends \Google\Model
-{
-    /**
-     * Required. The resource name of the Cloud KMS CryptoKeyVersion used to
-     * encrypt the secret payload, in the following format:
-     * `projects/locations/keyRings/cryptoKeys/versions`.
-     *
-     * @var string
-     */
-    public $kmsKeyVersionName;
-    /**
-     * Required. The resource name of the Cloud KMS CryptoKeyVersion used to
-     * encrypt the secret payload, in the following format:
-     * `projects/locations/keyRings/cryptoKeys/versions`.
-     *
-     * @param string $kmsKeyVersionName
-     */
-    public function setKmsKeyVersionName($kmsKeyVersionName)
+namespace Google\Service\SecretManager {
+    class CustomerManagedEncryptionStatus extends \Google\Model
     {
+        /**
+         * Required. The resource name of the Cloud KMS CryptoKeyVersion used to
+         * encrypt the secret payload, in the following format:
+         * `projects/locations/keyRings/cryptoKeys/versions`.
+         *
+         * @var string
+         */
+        public $kmsKeyVersionName;
+        /**
+         * Required. The resource name of the Cloud KMS CryptoKeyVersion used to
+         * encrypt the secret payload, in the following format:
+         * `projects/locations/keyRings/cryptoKeys/versions`.
+         *
+         * @param string $kmsKeyVersionName
+         */
+        public function setKmsKeyVersionName($kmsKeyVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\CustomerManagedEncryptionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyVersionName()
+    class Google_Service_SecretManager_CustomerManagedEncryptionStatus extends \Google\Service\SecretManager\CustomerManagedEncryptionStatus
     {
     }
 }

@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality\Resource;
-
-/**
- * The "forecast" collection of methods.
- * Typical usage is:
- *  <code>
- *   $airqualityService = new Google\Service\AirQuality(...);
- *   $forecast = $airqualityService->forecast;
- *  </code>
- */
-class Forecast extends \Google\Service\Resource
-{
+namespace Google\Service\AirQuality\Resource {
+    use Google\Service\AirQuality\LookupForecastRequest;
+    use Google\Service\AirQuality\LookupForecastResponse;
     /**
-     * Returns air quality forecast for a specific location for a given time range.
-     * (forecast.lookup)
-     *
-     * @param LookupForecastRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LookupForecastResponse
-     * @throws \Google\Service\Exception
+     * The "forecast" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $airqualityService = new Google\Service\AirQuality(...);
+     *   $forecast = $airqualityService->forecast;
+     *  </code>
      */
-    public function lookup(LookupForecastRequest $postBody, $optParams = [])
+    class Forecast extends \Google\Service\Resource
+    {
+        /**
+         * Returns air quality forecast for a specific location for a given time range.
+         * (forecast.lookup)
+         *
+         * @param LookupForecastRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LookupForecastResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookup(LookupForecastRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AirQuality\Resource\Forecast registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AirQuality_Resource_Forecast extends \Google\Service\AirQuality\Resource\Forecast
     {
     }
 }

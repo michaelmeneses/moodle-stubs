@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Token which can be sent as `page_token` to retrieve the next page. If
-     * omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = ReportRow::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Token which can be sent as `page_token` to retrieve the next page. If
-     * omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ShoppingContent {
+    class SearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Token which can be sent as `page_token` to retrieve the next page. If
+         * omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = ReportRow::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Token which can be sent as `page_token` to retrieve the next page. If
+         * omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Rows that matched the search query.
+         *
+         * @param ReportRow[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return ReportRow[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\SearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Rows that matched the search query.
-     *
-     * @param ReportRow[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return ReportRow[]
-     */
-    public function getResults()
+    class Google_Service_ShoppingContent_SearchResponse extends \Google\Service\ShoppingContent\SearchResponse
     {
     }
 }

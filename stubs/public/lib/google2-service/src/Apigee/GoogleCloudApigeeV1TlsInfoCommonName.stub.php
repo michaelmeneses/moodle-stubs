@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1TlsInfoCommonName extends \Google\Model
-{
-    /**
-     * The TLS Common Name string of the certificate.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Indicates whether the cert should be matched against as a wildcard cert.
-     *
-     * @var bool
-     */
-    public $wildcardMatch;
-    /**
-     * The TLS Common Name string of the certificate.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1TlsInfoCommonName extends \Google\Model
     {
+        /**
+         * The TLS Common Name string of the certificate.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Indicates whether the cert should be matched against as a wildcard cert.
+         *
+         * @var bool
+         */
+        public $wildcardMatch;
+        /**
+         * The TLS Common Name string of the certificate.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Indicates whether the cert should be matched against as a wildcard cert.
+         *
+         * @param bool $wildcardMatch
+         */
+        public function setWildcardMatch($wildcardMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWildcardMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1TlsInfoCommonName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
-    {
-    }
-    /**
-     * Indicates whether the cert should be matched against as a wildcard cert.
-     *
-     * @param bool $wildcardMatch
-     */
-    public function setWildcardMatch($wildcardMatch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWildcardMatch()
+    class Google_Service_Apigee_GoogleCloudApigeeV1TlsInfoCommonName extends \Google\Service\Apigee\GoogleCloudApigeeV1TlsInfoCommonName
     {
     }
 }

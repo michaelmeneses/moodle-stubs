@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2ImportConversationDataOperationResponse extends \Google\Model
-{
-    /**
-     * The resource name of the imported conversation dataset. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @var string
-     */
-    public $conversationDataset;
-    /**
-     * Number of conversations imported successfully.
-     *
-     * @var int
-     */
-    public $importCount;
-    /**
-     * The resource name of the imported conversation dataset. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @param string $conversationDataset
-     */
-    public function setConversationDataset($conversationDataset)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2ImportConversationDataOperationResponse extends \Google\Model
     {
+        /**
+         * The resource name of the imported conversation dataset. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @var string
+         */
+        public $conversationDataset;
+        /**
+         * Number of conversations imported successfully.
+         *
+         * @var int
+         */
+        public $importCount;
+        /**
+         * The resource name of the imported conversation dataset. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @param string $conversationDataset
+         */
+        public function setConversationDataset($conversationDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationDataset()
+        {
+        }
+        /**
+         * Number of conversations imported successfully.
+         *
+         * @param int $importCount
+         */
+        public function setImportCount($importCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getImportCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2ImportConversationDataOperationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationDataset()
-    {
-    }
-    /**
-     * Number of conversations imported successfully.
-     *
-     * @param int $importCount
-     */
-    public function setImportCount($importCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getImportCount()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2ImportConversationDataOperationResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2ImportConversationDataOperationResponse
     {
     }
 }

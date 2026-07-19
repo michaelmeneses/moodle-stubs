@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1BillingConfig extends \Google\Model
-{
-    /**
-     * Billing category is not specified.
-     */
-    public const BILLING_CATEGORY_BILLING_CATEGORY_UNSPECIFIED = 'BILLING_CATEGORY_UNSPECIFIED';
-    /**
-     * GCP/Technical connector.
-     */
-    public const BILLING_CATEGORY_GCP_AND_TECHNICAL_CONNECTOR = 'GCP_AND_TECHNICAL_CONNECTOR';
-    /**
-     * Non-GCP connector.
-     */
-    public const BILLING_CATEGORY_NON_GCP_CONNECTOR = 'NON_GCP_CONNECTOR';
-    /**
-     * Output only. Billing category for the connector.
-     *
-     * @var string
-     */
-    public $billingCategory;
-    /**
-     * Output only. Billing category for the connector.
-     *
-     * Accepted values: BILLING_CATEGORY_UNSPECIFIED, GCP_AND_TECHNICAL_CONNECTOR,
-     * NON_GCP_CONNECTOR
-     *
-     * @param self::BILLING_CATEGORY_* $billingCategory
-     */
-    public function setBillingCategory($billingCategory)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1BillingConfig extends \Google\Model
     {
+        /**
+         * Billing category is not specified.
+         */
+        public const BILLING_CATEGORY_BILLING_CATEGORY_UNSPECIFIED = 'BILLING_CATEGORY_UNSPECIFIED';
+        /**
+         * GCP/Technical connector.
+         */
+        public const BILLING_CATEGORY_GCP_AND_TECHNICAL_CONNECTOR = 'GCP_AND_TECHNICAL_CONNECTOR';
+        /**
+         * Non-GCP connector.
+         */
+        public const BILLING_CATEGORY_NON_GCP_CONNECTOR = 'NON_GCP_CONNECTOR';
+        /**
+         * Output only. Billing category for the connector.
+         *
+         * @var string
+         */
+        public $billingCategory;
+        /**
+         * Output only. Billing category for the connector.
+         *
+         * Accepted values: BILLING_CATEGORY_UNSPECIFIED, GCP_AND_TECHNICAL_CONNECTOR,
+         * NON_GCP_CONNECTOR
+         *
+         * @param self::BILLING_CATEGORY_* $billingCategory
+         */
+        public function setBillingCategory($billingCategory)
+        {
+        }
+        /**
+         * @return self::BILLING_CATEGORY_*
+         */
+        public function getBillingCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BILLING_CATEGORY_*
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1BillingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingCategory()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1BillingConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1BillingConfig
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1SkuGroup extends \Google\Model
-{
-    /**
-     * Unique human readable identifier for the SKU group.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name of SKU group. Format:
-     * accounts/{account}/skuGroups/{sku_group}. Example:
-     * "accounts/C01234/skuGroups/3d50fd57-3157-4577-a5a9-a219b8490041".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Unique human readable identifier for the SKU group.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1SkuGroup extends \Google\Model
     {
+        /**
+         * Unique human readable identifier for the SKU group.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name of SKU group. Format:
+         * accounts/{account}/skuGroups/{sku_group}. Example:
+         * "accounts/C01234/skuGroups/3d50fd57-3157-4577-a5a9-a219b8490041".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Unique human readable identifier for the SKU group.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name of SKU group. Format:
+         * accounts/{account}/skuGroups/{sku_group}. Example:
+         * "accounts/C01234/skuGroups/3d50fd57-3157-4577-a5a9-a219b8490041".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1SkuGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name of SKU group. Format:
-     * accounts/{account}/skuGroups/{sku_group}. Example:
-     * "accounts/C01234/skuGroups/3d50fd57-3157-4577-a5a9-a219b8490041".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1SkuGroup extends \Google\Service\Cloudchannel\GoogleCloudChannelV1SkuGroup
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Bullet extends \Google\Model
-{
-    protected $bulletStyleType = TextStyle::class;
-    protected $bulletStyleDataType = '';
-    /**
-     * The rendered bullet glyph for this paragraph.
-     *
-     * @var string
-     */
-    public $glyph;
-    /**
-     * The ID of the list this paragraph belongs to.
-     *
-     * @var string
-     */
-    public $listId;
-    /**
-     * The nesting level of this paragraph in the list.
-     *
-     * @var int
-     */
-    public $nestingLevel;
-    /**
-     * The paragraph specific text style applied to this bullet.
-     *
-     * @param TextStyle $bulletStyle
-     */
-    public function setBulletStyle(TextStyle $bulletStyle)
+namespace Google\Service\Slides {
+    class Bullet extends \Google\Model
     {
+        protected $bulletStyleType = TextStyle::class;
+        protected $bulletStyleDataType = '';
+        /**
+         * The rendered bullet glyph for this paragraph.
+         *
+         * @var string
+         */
+        public $glyph;
+        /**
+         * The ID of the list this paragraph belongs to.
+         *
+         * @var string
+         */
+        public $listId;
+        /**
+         * The nesting level of this paragraph in the list.
+         *
+         * @var int
+         */
+        public $nestingLevel;
+        /**
+         * The paragraph specific text style applied to this bullet.
+         *
+         * @param TextStyle $bulletStyle
+         */
+        public function setBulletStyle(TextStyle $bulletStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getBulletStyle()
+        {
+        }
+        /**
+         * The rendered bullet glyph for this paragraph.
+         *
+         * @param string $glyph
+         */
+        public function setGlyph($glyph)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGlyph()
+        {
+        }
+        /**
+         * The ID of the list this paragraph belongs to.
+         *
+         * @param string $listId
+         */
+        public function setListId($listId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListId()
+        {
+        }
+        /**
+         * The nesting level of this paragraph in the list.
+         *
+         * @param int $nestingLevel
+         */
+        public function setNestingLevel($nestingLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNestingLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextStyle
+     * Runtime class alias of \Google\Service\Slides\Bullet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBulletStyle()
-    {
-    }
-    /**
-     * The rendered bullet glyph for this paragraph.
-     *
-     * @param string $glyph
-     */
-    public function setGlyph($glyph)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGlyph()
-    {
-    }
-    /**
-     * The ID of the list this paragraph belongs to.
-     *
-     * @param string $listId
-     */
-    public function setListId($listId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getListId()
-    {
-    }
-    /**
-     * The nesting level of this paragraph in the list.
-     *
-     * @param int $nestingLevel
-     */
-    public function setNestingLevel($nestingLevel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNestingLevel()
+    class Google_Service_Slides_Bullet extends \Google\Service\Slides\Bullet
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityActionsConfig extends \Google\Model
-{
-    /**
-     * The flag that controls whether this feature is enabled. This is `unset` by
-     * default. When this flag is `false`, even if individual rules are enabled,
-     * no SecurityActions will be enforced.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * This is a singleton resource, the name will always be set by
-     * SecurityActions and any user input will be ignored. The name is always:
-     * `organizations/{org}/environments/{env}/security_actions_config`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The update time for configuration.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The flag that controls whether this feature is enabled. This is `unset` by
-     * default. When this flag is `false`, even if individual rules are enabled,
-     * no SecurityActions will be enforced.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityActionsConfig extends \Google\Model
     {
+        /**
+         * The flag that controls whether this feature is enabled. This is `unset` by
+         * default. When this flag is `false`, even if individual rules are enabled,
+         * no SecurityActions will be enforced.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * This is a singleton resource, the name will always be set by
+         * SecurityActions and any user input will be ignored. The name is always:
+         * `organizations/{org}/environments/{env}/security_actions_config`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The update time for configuration.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The flag that controls whether this feature is enabled. This is `unset` by
+         * default. When this flag is `false`, even if individual rules are enabled,
+         * no SecurityActions will be enforced.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * This is a singleton resource, the name will always be set by
+         * SecurityActions and any user input will be ignored. The name is always:
+         * `organizations/{org}/environments/{env}/security_actions_config`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The update time for configuration.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * This is a singleton resource, the name will always be set by
-     * SecurityActions and any user input will be ignored. The name is always:
-     * `organizations/{org}/environments/{env}/security_actions_config`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The update time for configuration.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityActionsConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionsConfig
     {
     }
 }

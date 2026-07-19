@@ -21,203 +21,212 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class Certificate extends \Google\Collection
-{
-    protected $collection_key = 'subjectAlternativeDnsNames';
-    /**
-     * Output only. The issuer distinguished name in RFC 2253 format. Only present
-     * if parsed is true.
-     *
-     * @var string
-     */
-    public $issuer;
-    /**
-     * Output only. The certificate is not valid after this time. Only present if
-     * parsed is true.
-     *
-     * @var string
-     */
-    public $notAfterTime;
-    /**
-     * Output only. The certificate is not valid before this time. Only present if
-     * parsed is true.
-     *
-     * @var string
-     */
-    public $notBeforeTime;
-    /**
-     * Output only. True if the certificate was parsed successfully.
-     *
-     * @var bool
-     */
-    public $parsed;
-    /**
-     * Required. The raw certificate bytes in DER format.
-     *
-     * @var string
-     */
-    public $rawDer;
-    /**
-     * Output only. The certificate serial number as a hex string. Only present if
-     * parsed is true.
-     *
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * Output only. The SHA-256 certificate fingerprint as a hex string. Only
-     * present if parsed is true.
-     *
-     * @var string
-     */
-    public $sha256Fingerprint;
-    /**
-     * Output only. The subject distinguished name in RFC 2253 format. Only
-     * present if parsed is true.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * Output only. The subject Alternative DNS names. Only present if parsed is
-     * true.
-     *
-     * @var string[]
-     */
-    public $subjectAlternativeDnsNames;
-    /**
-     * Output only. The issuer distinguished name in RFC 2253 format. Only present
-     * if parsed is true.
-     *
-     * @param string $issuer
-     */
-    public function setIssuer($issuer)
+namespace Google\Service\CloudKMS {
+    class Certificate extends \Google\Collection
     {
+        protected $collection_key = 'subjectAlternativeDnsNames';
+        /**
+         * Output only. The issuer distinguished name in RFC 2253 format. Only present
+         * if parsed is true.
+         *
+         * @var string
+         */
+        public $issuer;
+        /**
+         * Output only. The certificate is not valid after this time. Only present if
+         * parsed is true.
+         *
+         * @var string
+         */
+        public $notAfterTime;
+        /**
+         * Output only. The certificate is not valid before this time. Only present if
+         * parsed is true.
+         *
+         * @var string
+         */
+        public $notBeforeTime;
+        /**
+         * Output only. True if the certificate was parsed successfully.
+         *
+         * @var bool
+         */
+        public $parsed;
+        /**
+         * Required. The raw certificate bytes in DER format.
+         *
+         * @var string
+         */
+        public $rawDer;
+        /**
+         * Output only. The certificate serial number as a hex string. Only present if
+         * parsed is true.
+         *
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * Output only. The SHA-256 certificate fingerprint as a hex string. Only
+         * present if parsed is true.
+         *
+         * @var string
+         */
+        public $sha256Fingerprint;
+        /**
+         * Output only. The subject distinguished name in RFC 2253 format. Only
+         * present if parsed is true.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * Output only. The subject Alternative DNS names. Only present if parsed is
+         * true.
+         *
+         * @var string[]
+         */
+        public $subjectAlternativeDnsNames;
+        /**
+         * Output only. The issuer distinguished name in RFC 2253 format. Only present
+         * if parsed is true.
+         *
+         * @param string $issuer
+         */
+        public function setIssuer($issuer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuer()
+        {
+        }
+        /**
+         * Output only. The certificate is not valid after this time. Only present if
+         * parsed is true.
+         *
+         * @param string $notAfterTime
+         */
+        public function setNotAfterTime($notAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotAfterTime()
+        {
+        }
+        /**
+         * Output only. The certificate is not valid before this time. Only present if
+         * parsed is true.
+         *
+         * @param string $notBeforeTime
+         */
+        public function setNotBeforeTime($notBeforeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotBeforeTime()
+        {
+        }
+        /**
+         * Output only. True if the certificate was parsed successfully.
+         *
+         * @param bool $parsed
+         */
+        public function setParsed($parsed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getParsed()
+        {
+        }
+        /**
+         * Required. The raw certificate bytes in DER format.
+         *
+         * @param string $rawDer
+         */
+        public function setRawDer($rawDer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawDer()
+        {
+        }
+        /**
+         * Output only. The certificate serial number as a hex string. Only present if
+         * parsed is true.
+         *
+         * @param string $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
+        /**
+         * Output only. The SHA-256 certificate fingerprint as a hex string. Only
+         * present if parsed is true.
+         *
+         * @param string $sha256Fingerprint
+         */
+        public function setSha256Fingerprint($sha256Fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256Fingerprint()
+        {
+        }
+        /**
+         * Output only. The subject distinguished name in RFC 2253 format. Only
+         * present if parsed is true.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * Output only. The subject Alternative DNS names. Only present if parsed is
+         * true.
+         *
+         * @param string[] $subjectAlternativeDnsNames
+         */
+        public function setSubjectAlternativeDnsNames($subjectAlternativeDnsNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubjectAlternativeDnsNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\Certificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssuer()
-    {
-    }
-    /**
-     * Output only. The certificate is not valid after this time. Only present if
-     * parsed is true.
-     *
-     * @param string $notAfterTime
-     */
-    public function setNotAfterTime($notAfterTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotAfterTime()
-    {
-    }
-    /**
-     * Output only. The certificate is not valid before this time. Only present if
-     * parsed is true.
-     *
-     * @param string $notBeforeTime
-     */
-    public function setNotBeforeTime($notBeforeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotBeforeTime()
-    {
-    }
-    /**
-     * Output only. True if the certificate was parsed successfully.
-     *
-     * @param bool $parsed
-     */
-    public function setParsed($parsed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getParsed()
-    {
-    }
-    /**
-     * Required. The raw certificate bytes in DER format.
-     *
-     * @param string $rawDer
-     */
-    public function setRawDer($rawDer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawDer()
-    {
-    }
-    /**
-     * Output only. The certificate serial number as a hex string. Only present if
-     * parsed is true.
-     *
-     * @param string $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
-    {
-    }
-    /**
-     * Output only. The SHA-256 certificate fingerprint as a hex string. Only
-     * present if parsed is true.
-     *
-     * @param string $sha256Fingerprint
-     */
-    public function setSha256Fingerprint($sha256Fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256Fingerprint()
-    {
-    }
-    /**
-     * Output only. The subject distinguished name in RFC 2253 format. Only
-     * present if parsed is true.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
-    {
-    }
-    /**
-     * Output only. The subject Alternative DNS names. Only present if parsed is
-     * true.
-     *
-     * @param string[] $subjectAlternativeDnsNames
-     */
-    public function setSubjectAlternativeDnsNames($subjectAlternativeDnsNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubjectAlternativeDnsNames()
+    class Google_Service_CloudKMS_Certificate extends \Google\Service\CloudKMS\Certificate
     {
     }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValueRequestPlatformTargeting extends \Google\Collection
-{
-    protected $collection_key = 'requestPlatforms';
-    public $requestPlatforms;
-    public function setRequestPlatforms($requestPlatforms)
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValueRequestPlatformTargeting extends \Google\Collection
     {
+        protected $collection_key = 'requestPlatforms';
+        public $requestPlatforms;
+        public function setRequestPlatforms($requestPlatforms)
+        {
+        }
+        public function getRequestPlatforms()
+        {
+        }
     }
-    public function getRequestPlatforms()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValueRequestPlatformTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_TargetingValueRequestPlatformTargeting extends \Google\Service\AdExchangeBuyer\TargetingValueRequestPlatformTargeting
     {
     }
 }

@@ -21,254 +21,263 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DynamicProfile extends \Google\Model
-{
-    /**
-     * The dynamic profile archive status is unknown. This value is unused.
-     */
-    public const ARCHIVE_STATUS_ARCHIVE_STATUS_UNKNOWN = 'ARCHIVE_STATUS_UNKNOWN';
-    /**
-     * The dynamic profile archive status is unarchived.
-     */
-    public const ARCHIVE_STATUS_UNARCHIVED = 'UNARCHIVED';
-    /**
-     * The dynamic profile archive status is archived.
-     */
-    public const ARCHIVE_STATUS_ARCHIVED = 'ARCHIVED';
-    /**
-     * The dynamic profile status is unknown. This value is unused.
-     */
-    public const STATUS_STATUS_UNKNOWN = 'STATUS_UNKNOWN';
-    /**
-     * The dynamic profile is active.
-     */
-    public const STATUS_ACTIVE = 'ACTIVE';
-    /**
-     * The dynamic profile is inactive.
-     */
-    public const STATUS_INACTIVE = 'INACTIVE';
-    /**
-     * The dynamic profile is deleted.
-     */
-    public const STATUS_DELETED = 'DELETED';
-    protected $activeType = DynamicProfileVersion::class;
-    protected $activeDataType = '';
-    /**
-     * Optional. Archive status of this dynamic profile.
-     *
-     * @var string
-     */
-    public $archiveStatus;
-    protected $createInfoType = LastModifiedInfo::class;
-    protected $createInfoDataType = '';
-    /**
-     * Optional. Description of this dynamic profile.
-     *
-     * @var string
-     */
-    public $description;
-    protected $draftType = DynamicProfileVersion::class;
-    protected $draftDataType = '';
-    /**
-     * Output only. Unique ID of this dynamic profile. This is a read-only, auto-
-     * generated field.
-     *
-     * @var string
-     */
-    public $dynamicProfileId;
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "dfareporting#dynamicProfile".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $lastModifiedInfoType = LastModifiedInfo::class;
-    protected $lastModifiedInfoDataType = '';
-    /**
-     * Required. Identifier. Name of this dynamic profile. This is a required
-     * field and must be less than 256 characters long.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Status of this dynamic profile.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Required. Advertiser ID of this dynamic profile. This is a required field
-     * on insertion.
-     *
-     * @var string
-     */
-    public $studioAdvertiserId;
-    /**
-     * Optional. Active version of the dynamic profile.
-     *
-     * @param DynamicProfileVersion $active
-     */
-    public function setActive(DynamicProfileVersion $active)
+namespace Google\Service\Dfareporting {
+    class DynamicProfile extends \Google\Model
     {
+        /**
+         * The dynamic profile archive status is unknown. This value is unused.
+         */
+        public const ARCHIVE_STATUS_ARCHIVE_STATUS_UNKNOWN = 'ARCHIVE_STATUS_UNKNOWN';
+        /**
+         * The dynamic profile archive status is unarchived.
+         */
+        public const ARCHIVE_STATUS_UNARCHIVED = 'UNARCHIVED';
+        /**
+         * The dynamic profile archive status is archived.
+         */
+        public const ARCHIVE_STATUS_ARCHIVED = 'ARCHIVED';
+        /**
+         * The dynamic profile status is unknown. This value is unused.
+         */
+        public const STATUS_STATUS_UNKNOWN = 'STATUS_UNKNOWN';
+        /**
+         * The dynamic profile is active.
+         */
+        public const STATUS_ACTIVE = 'ACTIVE';
+        /**
+         * The dynamic profile is inactive.
+         */
+        public const STATUS_INACTIVE = 'INACTIVE';
+        /**
+         * The dynamic profile is deleted.
+         */
+        public const STATUS_DELETED = 'DELETED';
+        protected $activeType = DynamicProfileVersion::class;
+        protected $activeDataType = '';
+        /**
+         * Optional. Archive status of this dynamic profile.
+         *
+         * @var string
+         */
+        public $archiveStatus;
+        protected $createInfoType = LastModifiedInfo::class;
+        protected $createInfoDataType = '';
+        /**
+         * Optional. Description of this dynamic profile.
+         *
+         * @var string
+         */
+        public $description;
+        protected $draftType = DynamicProfileVersion::class;
+        protected $draftDataType = '';
+        /**
+         * Output only. Unique ID of this dynamic profile. This is a read-only, auto-
+         * generated field.
+         *
+         * @var string
+         */
+        public $dynamicProfileId;
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "dfareporting#dynamicProfile".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $lastModifiedInfoType = LastModifiedInfo::class;
+        protected $lastModifiedInfoDataType = '';
+        /**
+         * Required. Identifier. Name of this dynamic profile. This is a required
+         * field and must be less than 256 characters long.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Status of this dynamic profile.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Required. Advertiser ID of this dynamic profile. This is a required field
+         * on insertion.
+         *
+         * @var string
+         */
+        public $studioAdvertiserId;
+        /**
+         * Optional. Active version of the dynamic profile.
+         *
+         * @param DynamicProfileVersion $active
+         */
+        public function setActive(DynamicProfileVersion $active)
+        {
+        }
+        /**
+         * @return DynamicProfileVersion
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Optional. Archive status of this dynamic profile.
+         *
+         * Accepted values: ARCHIVE_STATUS_UNKNOWN, UNARCHIVED, ARCHIVED
+         *
+         * @param self::ARCHIVE_STATUS_* $archiveStatus
+         */
+        public function setArchiveStatus($archiveStatus)
+        {
+        }
+        /**
+         * @return self::ARCHIVE_STATUS_*
+         */
+        public function getArchiveStatus()
+        {
+        }
+        /**
+         * Output only. The creation timestamp of the dynamic profile. This is a read-
+         * only field.
+         *
+         * @param LastModifiedInfo $createInfo
+         */
+        public function setCreateInfo(LastModifiedInfo $createInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getCreateInfo()
+        {
+        }
+        /**
+         * Optional. Description of this dynamic profile.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Draft version of the dynamic profile.
+         *
+         * @param DynamicProfileVersion $draft
+         */
+        public function setDraft(DynamicProfileVersion $draft)
+        {
+        }
+        /**
+         * @return DynamicProfileVersion
+         */
+        public function getDraft()
+        {
+        }
+        /**
+         * Output only. Unique ID of this dynamic profile. This is a read-only, auto-
+         * generated field.
+         *
+         * @param string $dynamicProfileId
+         */
+        public function setDynamicProfileId($dynamicProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDynamicProfileId()
+        {
+        }
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "dfareporting#dynamicProfile".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. The last modified timestamp of the dynamic profile. This is a
+         * read-only field.
+         *
+         * @param LastModifiedInfo $lastModifiedInfo
+         */
+        public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getLastModifiedInfo()
+        {
+        }
+        /**
+         * Required. Identifier. Name of this dynamic profile. This is a required
+         * field and must be less than 256 characters long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Status of this dynamic profile.
+         *
+         * Accepted values: STATUS_UNKNOWN, ACTIVE, INACTIVE, DELETED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Required. Advertiser ID of this dynamic profile. This is a required field
+         * on insertion.
+         *
+         * @param string $studioAdvertiserId
+         */
+        public function setStudioAdvertiserId($studioAdvertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioAdvertiserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicProfileVersion
+     * Runtime class alias of \Google\Service\Dfareporting\DynamicProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * Optional. Archive status of this dynamic profile.
-     *
-     * Accepted values: ARCHIVE_STATUS_UNKNOWN, UNARCHIVED, ARCHIVED
-     *
-     * @param self::ARCHIVE_STATUS_* $archiveStatus
-     */
-    public function setArchiveStatus($archiveStatus)
-    {
-    }
-    /**
-     * @return self::ARCHIVE_STATUS_*
-     */
-    public function getArchiveStatus()
-    {
-    }
-    /**
-     * Output only. The creation timestamp of the dynamic profile. This is a read-
-     * only field.
-     *
-     * @param LastModifiedInfo $createInfo
-     */
-    public function setCreateInfo(LastModifiedInfo $createInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getCreateInfo()
-    {
-    }
-    /**
-     * Optional. Description of this dynamic profile.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Draft version of the dynamic profile.
-     *
-     * @param DynamicProfileVersion $draft
-     */
-    public function setDraft(DynamicProfileVersion $draft)
-    {
-    }
-    /**
-     * @return DynamicProfileVersion
-     */
-    public function getDraft()
-    {
-    }
-    /**
-     * Output only. Unique ID of this dynamic profile. This is a read-only, auto-
-     * generated field.
-     *
-     * @param string $dynamicProfileId
-     */
-    public function setDynamicProfileId($dynamicProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDynamicProfileId()
-    {
-    }
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "dfareporting#dynamicProfile".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. The last modified timestamp of the dynamic profile. This is a
-     * read-only field.
-     *
-     * @param LastModifiedInfo $lastModifiedInfo
-     */
-    public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getLastModifiedInfo()
-    {
-    }
-    /**
-     * Required. Identifier. Name of this dynamic profile. This is a required
-     * field and must be less than 256 characters long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Status of this dynamic profile.
-     *
-     * Accepted values: STATUS_UNKNOWN, ACTIVE, INACTIVE, DELETED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Required. Advertiser ID of this dynamic profile. This is a required field
-     * on insertion.
-     *
-     * @param string $studioAdvertiserId
-     */
-    public function setStudioAdvertiserId($studioAdvertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudioAdvertiserId()
+    class Google_Service_Dfareporting_DynamicProfile extends \Google\Service\Dfareporting\DynamicProfile
     {
     }
 }

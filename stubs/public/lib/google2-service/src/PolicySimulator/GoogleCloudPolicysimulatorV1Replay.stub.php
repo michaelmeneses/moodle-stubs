@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1Replay extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The `Replay` has not started yet.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The `Replay` is currently running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The `Replay` has successfully completed.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The `Replay` has finished with an error.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $configType = GoogleCloudPolicysimulatorV1ReplayConfig::class;
-    protected $configDataType = '';
-    /**
-     * Output only. The resource name of the `Replay`, which has the following
-     * format: `{projects|folders|organizations}/{resource-
-     * id}/locations/global/replays/{replay-id}`, where `{resource-id}` is the ID
-     * of the project, folder, or organization that owns the Replay. Example:
-     * `projects/my-example-
-     * project/locations/global/replays/506a5f7f-38ce-4d7d-8e03-479ce1833c36`
-     *
-     * @var string
-     */
-    public $name;
-    protected $resultsSummaryType = GoogleCloudPolicysimulatorV1ReplayResultsSummary::class;
-    protected $resultsSummaryDataType = '';
-    /**
-     * Output only. The current state of the `Replay`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Required. The configuration used for the `Replay`.
-     *
-     * @param GoogleCloudPolicysimulatorV1ReplayConfig $config
-     */
-    public function setConfig(GoogleCloudPolicysimulatorV1ReplayConfig $config)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1Replay extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The `Replay` has not started yet.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The `Replay` is currently running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The `Replay` has successfully completed.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The `Replay` has finished with an error.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $configType = GoogleCloudPolicysimulatorV1ReplayConfig::class;
+        protected $configDataType = '';
+        /**
+         * Output only. The resource name of the `Replay`, which has the following
+         * format: `{projects|folders|organizations}/{resource-
+         * id}/locations/global/replays/{replay-id}`, where `{resource-id}` is the ID
+         * of the project, folder, or organization that owns the Replay. Example:
+         * `projects/my-example-
+         * project/locations/global/replays/506a5f7f-38ce-4d7d-8e03-479ce1833c36`
+         *
+         * @var string
+         */
+        public $name;
+        protected $resultsSummaryType = GoogleCloudPolicysimulatorV1ReplayResultsSummary::class;
+        protected $resultsSummaryDataType = '';
+        /**
+         * Output only. The current state of the `Replay`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Required. The configuration used for the `Replay`.
+         *
+         * @param GoogleCloudPolicysimulatorV1ReplayConfig $config
+         */
+        public function setConfig(GoogleCloudPolicysimulatorV1ReplayConfig $config)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1ReplayConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Output only. The resource name of the `Replay`, which has the following
+         * format: `{projects|folders|organizations}/{resource-
+         * id}/locations/global/replays/{replay-id}`, where `{resource-id}` is the ID
+         * of the project, folder, or organization that owns the Replay. Example:
+         * `projects/my-example-
+         * project/locations/global/replays/506a5f7f-38ce-4d7d-8e03-479ce1833c36`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Summary statistics about the replayed log entries.
+         *
+         * @param GoogleCloudPolicysimulatorV1ReplayResultsSummary $resultsSummary
+         */
+        public function setResultsSummary(GoogleCloudPolicysimulatorV1ReplayResultsSummary $resultsSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1ReplayResultsSummary
+         */
+        public function getResultsSummary()
+        {
+        }
+        /**
+         * Output only. The current state of the `Replay`.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, RUNNING, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicysimulatorV1ReplayConfig
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1Replay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Output only. The resource name of the `Replay`, which has the following
-     * format: `{projects|folders|organizations}/{resource-
-     * id}/locations/global/replays/{replay-id}`, where `{resource-id}` is the ID
-     * of the project, folder, or organization that owns the Replay. Example:
-     * `projects/my-example-
-     * project/locations/global/replays/506a5f7f-38ce-4d7d-8e03-479ce1833c36`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Summary statistics about the replayed log entries.
-     *
-     * @param GoogleCloudPolicysimulatorV1ReplayResultsSummary $resultsSummary
-     */
-    public function setResultsSummary(GoogleCloudPolicysimulatorV1ReplayResultsSummary $resultsSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1ReplayResultsSummary
-     */
-    public function getResultsSummary()
-    {
-    }
-    /**
-     * Output only. The current state of the `Replay`.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, RUNNING, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1Replay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1Replay
     {
     }
 }

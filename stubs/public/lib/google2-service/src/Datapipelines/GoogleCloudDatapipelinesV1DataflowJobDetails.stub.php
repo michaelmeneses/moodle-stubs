@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1DataflowJobDetails extends \Google\Model
-{
-    /**
-     * Output only. The current number of workers used to run the jobs. Only set
-     * to a value if the job is still running.
-     *
-     * @var int
-     */
-    public $currentWorkers;
-    /**
-     * Cached version of all the metrics of interest for the job. This value gets
-     * stored here when the job is terminated. As long as the job is running, this
-     * field is populated from the Dataflow API.
-     *
-     * @var []
-     */
-    public $resourceInfo;
-    protected $sdkVersionType = GoogleCloudDatapipelinesV1SdkVersion::class;
-    protected $sdkVersionDataType = '';
-    /**
-     * Output only. The current number of workers used to run the jobs. Only set
-     * to a value if the job is still running.
-     *
-     * @param int $currentWorkers
-     */
-    public function setCurrentWorkers($currentWorkers)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1DataflowJobDetails extends \Google\Model
     {
+        /**
+         * Output only. The current number of workers used to run the jobs. Only set
+         * to a value if the job is still running.
+         *
+         * @var int
+         */
+        public $currentWorkers;
+        /**
+         * Cached version of all the metrics of interest for the job. This value gets
+         * stored here when the job is terminated. As long as the job is running, this
+         * field is populated from the Dataflow API.
+         *
+         * @var []
+         */
+        public $resourceInfo;
+        protected $sdkVersionType = GoogleCloudDatapipelinesV1SdkVersion::class;
+        protected $sdkVersionDataType = '';
+        /**
+         * Output only. The current number of workers used to run the jobs. Only set
+         * to a value if the job is still running.
+         *
+         * @param int $currentWorkers
+         */
+        public function setCurrentWorkers($currentWorkers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentWorkers()
+        {
+        }
+        public function setResourceInfo($resourceInfo)
+        {
+        }
+        public function getResourceInfo()
+        {
+        }
+        /**
+         * Output only. The SDK version used to run the job.
+         *
+         * @param GoogleCloudDatapipelinesV1SdkVersion $sdkVersion
+         */
+        public function setSdkVersion(GoogleCloudDatapipelinesV1SdkVersion $sdkVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1SdkVersion
+         */
+        public function getSdkVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1DataflowJobDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentWorkers()
-    {
-    }
-    public function setResourceInfo($resourceInfo)
-    {
-    }
-    public function getResourceInfo()
-    {
-    }
-    /**
-     * Output only. The SDK version used to run the job.
-     *
-     * @param GoogleCloudDatapipelinesV1SdkVersion $sdkVersion
-     */
-    public function setSdkVersion(GoogleCloudDatapipelinesV1SdkVersion $sdkVersion)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1SdkVersion
-     */
-    public function getSdkVersion()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1DataflowJobDetails extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1DataflowJobDetails
     {
     }
 }

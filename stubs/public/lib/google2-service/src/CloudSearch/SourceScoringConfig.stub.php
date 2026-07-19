@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SourceScoringConfig extends \Google\Model
-{
-    public const SOURCE_IMPORTANCE_DEFAULT = 'DEFAULT';
-    public const SOURCE_IMPORTANCE_LOW = 'LOW';
-    public const SOURCE_IMPORTANCE_HIGH = 'HIGH';
-    /**
-     * Importance of the source.
-     *
-     * @var string
-     */
-    public $sourceImportance;
-    /**
-     * Importance of the source.
-     *
-     * Accepted values: DEFAULT, LOW, HIGH
-     *
-     * @param self::SOURCE_IMPORTANCE_* $sourceImportance
-     */
-    public function setSourceImportance($sourceImportance)
+namespace Google\Service\CloudSearch {
+    class SourceScoringConfig extends \Google\Model
     {
+        public const SOURCE_IMPORTANCE_DEFAULT = 'DEFAULT';
+        public const SOURCE_IMPORTANCE_LOW = 'LOW';
+        public const SOURCE_IMPORTANCE_HIGH = 'HIGH';
+        /**
+         * Importance of the source.
+         *
+         * @var string
+         */
+        public $sourceImportance;
+        /**
+         * Importance of the source.
+         *
+         * Accepted values: DEFAULT, LOW, HIGH
+         *
+         * @param self::SOURCE_IMPORTANCE_* $sourceImportance
+         */
+        public function setSourceImportance($sourceImportance)
+        {
+        }
+        /**
+         * @return self::SOURCE_IMPORTANCE_*
+         */
+        public function getSourceImportance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SOURCE_IMPORTANCE_*
+     * Runtime class alias of \Google\Service\CloudSearch\SourceScoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceImportance()
+    class Google_Service_CloudSearch_SourceScoringConfig extends \Google\Service\CloudSearch\SourceScoringConfig
     {
     }
 }

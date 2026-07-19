@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Region extends \Google\Model
-{
-    /**
-     * Country code of the country to which this region belongs.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * DART ID of the country to which this region belongs.
-     *
-     * @var string
-     */
-    public $countryDartId;
-    /**
-     * DART ID of this region.
-     *
-     * @var string
-     */
-    public $dartId;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#region".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this region.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Region code.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Country code of the country to which this region belongs.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
+namespace Google\Service\Dfareporting {
+    class Region extends \Google\Model
     {
+        /**
+         * Country code of the country to which this region belongs.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * DART ID of the country to which this region belongs.
+         *
+         * @var string
+         */
+        public $countryDartId;
+        /**
+         * DART ID of this region.
+         *
+         * @var string
+         */
+        public $dartId;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#region".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this region.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Region code.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Country code of the country to which this region belongs.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * DART ID of the country to which this region belongs.
+         *
+         * @param string $countryDartId
+         */
+        public function setCountryDartId($countryDartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryDartId()
+        {
+        }
+        /**
+         * DART ID of this region.
+         *
+         * @param string $dartId
+         */
+        public function setDartId($dartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDartId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#region".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this region.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Region code.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Region registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * DART ID of the country to which this region belongs.
-     *
-     * @param string $countryDartId
-     */
-    public function setCountryDartId($countryDartId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryDartId()
-    {
-    }
-    /**
-     * DART ID of this region.
-     *
-     * @param string $dartId
-     */
-    public function setDartId($dartId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDartId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#region".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this region.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Region code.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_Dfareporting_Region extends \Google\Service\Dfareporting\Region
     {
     }
 }

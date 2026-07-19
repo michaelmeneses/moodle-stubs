@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class CloneStep extends \Google\Model
-{
-    protected $adaptingOsType = AdaptingOSStep::class;
-    protected $adaptingOsDataType = '';
-    /**
-     * The time the step has ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $instantiatingMigratedVmType = InstantiatingMigratedVMStep::class;
-    protected $instantiatingMigratedVmDataType = '';
-    protected $preparingVmDisksType = PreparingVMDisksStep::class;
-    protected $preparingVmDisksDataType = '';
-    /**
-     * The time the step has started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Adapting OS step.
-     *
-     * @param AdaptingOSStep $adaptingOs
-     */
-    public function setAdaptingOs(AdaptingOSStep $adaptingOs)
+namespace Google\Service\VMMigrationService {
+    class CloneStep extends \Google\Model
     {
+        protected $adaptingOsType = AdaptingOSStep::class;
+        protected $adaptingOsDataType = '';
+        /**
+         * The time the step has ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $instantiatingMigratedVmType = InstantiatingMigratedVMStep::class;
+        protected $instantiatingMigratedVmDataType = '';
+        protected $preparingVmDisksType = PreparingVMDisksStep::class;
+        protected $preparingVmDisksDataType = '';
+        /**
+         * The time the step has started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Adapting OS step.
+         *
+         * @param AdaptingOSStep $adaptingOs
+         */
+        public function setAdaptingOs(AdaptingOSStep $adaptingOs)
+        {
+        }
+        /**
+         * @return AdaptingOSStep
+         */
+        public function getAdaptingOs()
+        {
+        }
+        /**
+         * The time the step has ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Instantiating migrated VM step.
+         *
+         * @param InstantiatingMigratedVMStep $instantiatingMigratedVm
+         */
+        public function setInstantiatingMigratedVm(InstantiatingMigratedVMStep $instantiatingMigratedVm)
+        {
+        }
+        /**
+         * @return InstantiatingMigratedVMStep
+         */
+        public function getInstantiatingMigratedVm()
+        {
+        }
+        /**
+         * Preparing VM disks step.
+         *
+         * @param PreparingVMDisksStep $preparingVmDisks
+         */
+        public function setPreparingVmDisks(PreparingVMDisksStep $preparingVmDisks)
+        {
+        }
+        /**
+         * @return PreparingVMDisksStep
+         */
+        public function getPreparingVmDisks()
+        {
+        }
+        /**
+         * The time the step has started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptingOSStep
+     * Runtime class alias of \Google\Service\VMMigrationService\CloneStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptingOs()
-    {
-    }
-    /**
-     * The time the step has ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Instantiating migrated VM step.
-     *
-     * @param InstantiatingMigratedVMStep $instantiatingMigratedVm
-     */
-    public function setInstantiatingMigratedVm(InstantiatingMigratedVMStep $instantiatingMigratedVm)
-    {
-    }
-    /**
-     * @return InstantiatingMigratedVMStep
-     */
-    public function getInstantiatingMigratedVm()
-    {
-    }
-    /**
-     * Preparing VM disks step.
-     *
-     * @param PreparingVMDisksStep $preparingVmDisks
-     */
-    public function setPreparingVmDisks(PreparingVMDisksStep $preparingVmDisks)
-    {
-    }
-    /**
-     * @return PreparingVMDisksStep
-     */
-    public function getPreparingVmDisks()
-    {
-    }
-    /**
-     * The time the step has started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_VMMigrationService_CloneStep extends \Google\Service\VMMigrationService\CloneStep
     {
     }
 }

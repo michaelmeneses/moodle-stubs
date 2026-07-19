@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class NpmPackage extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Output only. Time the package was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. registry_location, project_id, repository_name and npm_package
-     * forms a unique package For example, "projects/test-project/locations/us-
-     * west4/repositories/test-repo/npmPackages/ npm_test:1.0.0", where "us-west4"
-     * is the registry_location, "test-project" is the project_id, "test-repo" is
-     * the repository_name and npm_test:1.0.0" is the npm package.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Package for the artifact.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Tags attached to this package.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Output only. Time the package was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Version of this package.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Time the package was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ArtifactRegistry {
+    class NpmPackage extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Output only. Time the package was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. registry_location, project_id, repository_name and npm_package
+         * forms a unique package For example, "projects/test-project/locations/us-
+         * west4/repositories/test-repo/npmPackages/ npm_test:1.0.0", where "us-west4"
+         * is the registry_location, "test-project" is the project_id, "test-repo" is
+         * the repository_name and npm_test:1.0.0" is the npm package.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Package for the artifact.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Tags attached to this package.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Output only. Time the package was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Version of this package.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Time the package was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. registry_location, project_id, repository_name and npm_package
+         * forms a unique package For example, "projects/test-project/locations/us-
+         * west4/repositories/test-repo/npmPackages/ npm_test:1.0.0", where "us-west4"
+         * is the registry_location, "test-project" is the project_id, "test-repo" is
+         * the repository_name and npm_test:1.0.0" is the npm package.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Package for the artifact.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Tags attached to this package.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Output only. Time the package was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Version of this package.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\NpmPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. registry_location, project_id, repository_name and npm_package
-     * forms a unique package For example, "projects/test-project/locations/us-
-     * west4/repositories/test-repo/npmPackages/ npm_test:1.0.0", where "us-west4"
-     * is the registry_location, "test-project" is the project_id, "test-repo" is
-     * the repository_name and npm_test:1.0.0" is the npm package.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Package for the artifact.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Tags attached to this package.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Output only. Time the package was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Version of this package.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ArtifactRegistry_NpmPackage extends \Google\Service\ArtifactRegistry\NpmPackage
     {
     }
 }

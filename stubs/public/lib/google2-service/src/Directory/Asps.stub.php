@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Asps extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Asp::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The type of the API resource. This is always `admin#directory#aspList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class Asps extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Asp::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The type of the API resource. This is always `admin#directory#aspList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of ASP resources.
+         *
+         * @param Asp[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Asp[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#aspList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Asps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of ASP resources.
-     *
-     * @param Asp[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Asp[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#aspList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Directory_Asps extends \Google\Service\Directory\Asps
     {
     }
 }

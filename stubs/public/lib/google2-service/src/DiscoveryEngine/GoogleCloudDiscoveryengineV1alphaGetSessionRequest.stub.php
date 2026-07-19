@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaGetSessionRequest extends \Google\Model
-{
-    /**
-     * Optional. If set to true, the full session including all answer details
-     * will be returned.
-     *
-     * @var bool
-     */
-    public $includeAnswerDetails;
-    /**
-     * Required. The resource name of the Session to get. Format: `projects/{proje
-     * ct}/locations/{location}/collections/{collection}/dataStores/{data_store_id
-     * }/sessions/{session_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. If set to true, the full session including all answer details
-     * will be returned.
-     *
-     * @param bool $includeAnswerDetails
-     */
-    public function setIncludeAnswerDetails($includeAnswerDetails)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaGetSessionRequest extends \Google\Model
     {
+        /**
+         * Optional. If set to true, the full session including all answer details
+         * will be returned.
+         *
+         * @var bool
+         */
+        public $includeAnswerDetails;
+        /**
+         * Required. The resource name of the Session to get. Format: `projects/{proje
+         * ct}/locations/{location}/collections/{collection}/dataStores/{data_store_id
+         * }/sessions/{session_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. If set to true, the full session including all answer details
+         * will be returned.
+         *
+         * @param bool $includeAnswerDetails
+         */
+        public function setIncludeAnswerDetails($includeAnswerDetails)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeAnswerDetails()
+        {
+        }
+        /**
+         * Required. The resource name of the Session to get. Format: `projects/{proje
+         * ct}/locations/{location}/collections/{collection}/dataStores/{data_store_id
+         * }/sessions/{session_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaGetSessionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeAnswerDetails()
-    {
-    }
-    /**
-     * Required. The resource name of the Session to get. Format: `projects/{proje
-     * ct}/locations/{location}/collections/{collection}/dataStores/{data_store_id
-     * }/sessions/{session_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaGetSessionRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaGetSessionRequest
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ExampleComparison extends \Google\Collection
-{
-    protected $collection_key = 'modelCreatedExamples';
-    protected $groundTruthExampleType = GoogleCloudDatalabelingV1beta1Example::class;
-    protected $groundTruthExampleDataType = '';
-    protected $modelCreatedExamplesType = GoogleCloudDatalabelingV1beta1Example::class;
-    protected $modelCreatedExamplesDataType = 'array';
-    /**
-     * The ground truth output for the input.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Example $groundTruthExample
-     */
-    public function setGroundTruthExample(GoogleCloudDatalabelingV1beta1Example $groundTruthExample)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ExampleComparison extends \Google\Collection
     {
+        protected $collection_key = 'modelCreatedExamples';
+        protected $groundTruthExampleType = GoogleCloudDatalabelingV1beta1Example::class;
+        protected $groundTruthExampleDataType = '';
+        protected $modelCreatedExamplesType = GoogleCloudDatalabelingV1beta1Example::class;
+        protected $modelCreatedExamplesDataType = 'array';
+        /**
+         * The ground truth output for the input.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Example $groundTruthExample
+         */
+        public function setGroundTruthExample(GoogleCloudDatalabelingV1beta1Example $groundTruthExample)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Example
+         */
+        public function getGroundTruthExample()
+        {
+        }
+        /**
+         * Predictions by the model for the input.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Example[] $modelCreatedExamples
+         */
+        public function setModelCreatedExamples($modelCreatedExamples)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Example[]
+         */
+        public function getModelCreatedExamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Example
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExampleComparison registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroundTruthExample()
-    {
-    }
-    /**
-     * Predictions by the model for the input.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Example[] $modelCreatedExamples
-     */
-    public function setModelCreatedExamples($modelCreatedExamples)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1Example[]
-     */
-    public function getModelCreatedExamples()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ExampleComparison extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExampleComparison
     {
     }
 }

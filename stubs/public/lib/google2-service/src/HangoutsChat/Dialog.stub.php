@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Dialog extends \Google\Model
-{
-    protected $bodyType = GoogleAppsCardV1Card::class;
-    protected $bodyDataType = '';
-    /**
-     * Input only. Body of the dialog, which is rendered in a modal. Google Chat
-     * apps don't support the following card entities: `DateTimePicker`,
-     * `OnChangeAction`.
-     *
-     * @param GoogleAppsCardV1Card $body
-     */
-    public function setBody(GoogleAppsCardV1Card $body)
+namespace Google\Service\HangoutsChat {
+    class Dialog extends \Google\Model
     {
+        protected $bodyType = GoogleAppsCardV1Card::class;
+        protected $bodyDataType = '';
+        /**
+         * Input only. Body of the dialog, which is rendered in a modal. Google Chat
+         * apps don't support the following card entities: `DateTimePicker`,
+         * `OnChangeAction`.
+         *
+         * @param GoogleAppsCardV1Card $body
+         */
+        public function setBody(GoogleAppsCardV1Card $body)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Card
+         */
+        public function getBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Card
+     * Runtime class alias of \Google\Service\HangoutsChat\Dialog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
+    class Google_Service_HangoutsChat_Dialog extends \Google\Service\HangoutsChat\Dialog
     {
     }
 }

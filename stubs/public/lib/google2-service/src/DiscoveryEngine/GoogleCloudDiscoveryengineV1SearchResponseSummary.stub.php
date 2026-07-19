@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSummary extends \Google\Collection
-{
-    protected $collection_key = 'summarySkippedReasons';
-    protected $safetyAttributesType = GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes::class;
-    protected $safetyAttributesDataType = '';
-    /**
-     * Additional summary-skipped reasons. This provides the reason for ignored
-     * cases. If nothing is skipped, this field is not set.
-     *
-     * @var string[]
-     */
-    public $summarySkippedReasons;
-    /**
-     * The summary content.
-     *
-     * @var string
-     */
-    public $summaryText;
-    protected $summaryWithMetadataType = GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata::class;
-    protected $summaryWithMetadataDataType = '';
-    /**
-     * A collection of Safety Attribute categories and their associated confidence
-     * scores.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes $safetyAttributes
-     */
-    public function setSafetyAttributes(GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes $safetyAttributes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSummary extends \Google\Collection
     {
+        protected $collection_key = 'summarySkippedReasons';
+        protected $safetyAttributesType = GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes::class;
+        protected $safetyAttributesDataType = '';
+        /**
+         * Additional summary-skipped reasons. This provides the reason for ignored
+         * cases. If nothing is skipped, this field is not set.
+         *
+         * @var string[]
+         */
+        public $summarySkippedReasons;
+        /**
+         * The summary content.
+         *
+         * @var string
+         */
+        public $summaryText;
+        protected $summaryWithMetadataType = GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata::class;
+        protected $summaryWithMetadataDataType = '';
+        /**
+         * A collection of Safety Attribute categories and their associated confidence
+         * scores.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes $safetyAttributes
+         */
+        public function setSafetyAttributes(GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes $safetyAttributes)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes
+         */
+        public function getSafetyAttributes()
+        {
+        }
+        /**
+         * Additional summary-skipped reasons. This provides the reason for ignored
+         * cases. If nothing is skipped, this field is not set.
+         *
+         * @param string[] $summarySkippedReasons
+         */
+        public function setSummarySkippedReasons($summarySkippedReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSummarySkippedReasons()
+        {
+        }
+        /**
+         * The summary content.
+         *
+         * @param string $summaryText
+         */
+        public function setSummaryText($summaryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummaryText()
+        {
+        }
+        /**
+         * Summary with metadata information.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata $summaryWithMetadata
+         */
+        public function setSummaryWithMetadata(GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata $summaryWithMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata
+         */
+        public function getSummaryWithMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSafetyAttributes()
-    {
-    }
-    /**
-     * Additional summary-skipped reasons. This provides the reason for ignored
-     * cases. If nothing is skipped, this field is not set.
-     *
-     * @param string[] $summarySkippedReasons
-     */
-    public function setSummarySkippedReasons($summarySkippedReasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSummarySkippedReasons()
-    {
-    }
-    /**
-     * The summary content.
-     *
-     * @param string $summaryText
-     */
-    public function setSummaryText($summaryText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummaryText()
-    {
-    }
-    /**
-     * Summary with metadata information.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata $summaryWithMetadata
-     */
-    public function setSummaryWithMetadata(GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata $summaryWithMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata
-     */
-    public function getSummaryWithMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSummary extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummary
     {
     }
 }

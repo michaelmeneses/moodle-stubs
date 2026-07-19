@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1Setting extends \Google\Model
-{
-    protected $effectiveValueType = GoogleCloudResourcesettingsV1Value::class;
-    protected $effectiveValueDataType = '';
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $localValueType = GoogleCloudResourcesettingsV1Value::class;
-    protected $localValueDataType = '';
-    protected $metadataType = GoogleCloudResourcesettingsV1SettingMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param GoogleCloudResourcesettingsV1Value
-     */
-    public function setEffectiveValue(GoogleCloudResourcesettingsV1Value $effectiveValue)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1Setting extends \Google\Model
     {
+        protected $effectiveValueType = GoogleCloudResourcesettingsV1Value::class;
+        protected $effectiveValueDataType = '';
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $localValueType = GoogleCloudResourcesettingsV1Value::class;
+        protected $localValueDataType = '';
+        protected $metadataType = GoogleCloudResourcesettingsV1SettingMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param GoogleCloudResourcesettingsV1Value
+         */
+        public function setEffectiveValue(GoogleCloudResourcesettingsV1Value $effectiveValue)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1Value
+         */
+        public function getEffectiveValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1Value
+         */
+        public function setLocalValue(GoogleCloudResourcesettingsV1Value $localValue)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1Value
+         */
+        public function getLocalValue()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1SettingMetadata
+         */
+        public function setMetadata(GoogleCloudResourcesettingsV1SettingMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1SettingMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudResourcesettingsV1Value
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1Setting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1Value
-     */
-    public function setLocalValue(GoogleCloudResourcesettingsV1Value $localValue)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1Value
-     */
-    public function getLocalValue()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1SettingMetadata
-     */
-    public function setMetadata(GoogleCloudResourcesettingsV1SettingMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1SettingMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1Setting extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1Setting
     {
     }
 }

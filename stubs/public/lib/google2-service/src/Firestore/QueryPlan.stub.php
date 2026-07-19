@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class QueryPlan extends \Google\Model
-{
-    /**
-     * @var array[]
-     */
-    public $planInfo;
-    /**
-     * @param array[]
-     */
-    public function setPlanInfo($planInfo)
+namespace Google\Service\Firestore {
+    class QueryPlan extends \Google\Model
     {
+        /**
+         * @var array[]
+         */
+        public $planInfo;
+        /**
+         * @param array[]
+         */
+        public function setPlanInfo($planInfo)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPlanInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Firestore\QueryPlan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlanInfo()
+    class Google_Service_Firestore_QueryPlan extends \Google\Service\Firestore\QueryPlan
     {
     }
 }

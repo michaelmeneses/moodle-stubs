@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseFacet extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Whether the facet is dynamically generated.
-     *
-     * @var bool
-     */
-    public $dynamicFacet;
-    /**
-     * The key for this facet. For example, `"colors"` or `"price"`. It matches
-     * SearchRequest.FacetSpec.FacetKey.key.
-     *
-     * @var string
-     */
-    public $key;
-    protected $valuesType = GoogleCloudDiscoveryengineV1SearchResponseFacetFacetValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Whether the facet is dynamically generated.
-     *
-     * @param bool $dynamicFacet
-     */
-    public function setDynamicFacet($dynamicFacet)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseFacet extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Whether the facet is dynamically generated.
+         *
+         * @var bool
+         */
+        public $dynamicFacet;
+        /**
+         * The key for this facet. For example, `"colors"` or `"price"`. It matches
+         * SearchRequest.FacetSpec.FacetKey.key.
+         *
+         * @var string
+         */
+        public $key;
+        protected $valuesType = GoogleCloudDiscoveryengineV1SearchResponseFacetFacetValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Whether the facet is dynamically generated.
+         *
+         * @param bool $dynamicFacet
+         */
+        public function setDynamicFacet($dynamicFacet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDynamicFacet()
+        {
+        }
+        /**
+         * The key for this facet. For example, `"colors"` or `"price"`. It matches
+         * SearchRequest.FacetSpec.FacetKey.key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The facet values for this field.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseFacetFacetValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseFacetFacetValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseFacet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicFacet()
-    {
-    }
-    /**
-     * The key for this facet. For example, `"colors"` or `"price"`. It matches
-     * SearchRequest.FacetSpec.FacetKey.key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The facet values for this field.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseFacetFacetValue[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseFacetFacetValue[]
-     */
-    public function getValues()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseFacet extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseFacet
     {
     }
 }

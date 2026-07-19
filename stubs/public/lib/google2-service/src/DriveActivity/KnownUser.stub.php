@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class KnownUser extends \Google\Model
-{
-    /**
-     * True if this is the user making the request.
-     *
-     * @var bool
-     */
-    public $isCurrentUser;
-    /**
-     * The identifier for this user that can be used with the People API to get
-     * more information. The format is `people/ACCOUNT_ID`. See
-     * https://developers.google.com/people/.
-     *
-     * @var string
-     */
-    public $personName;
-    /**
-     * True if this is the user making the request.
-     *
-     * @param bool $isCurrentUser
-     */
-    public function setIsCurrentUser($isCurrentUser)
+namespace Google\Service\DriveActivity {
+    class KnownUser extends \Google\Model
     {
+        /**
+         * True if this is the user making the request.
+         *
+         * @var bool
+         */
+        public $isCurrentUser;
+        /**
+         * The identifier for this user that can be used with the People API to get
+         * more information. The format is `people/ACCOUNT_ID`. See
+         * https://developers.google.com/people/.
+         *
+         * @var string
+         */
+        public $personName;
+        /**
+         * True if this is the user making the request.
+         *
+         * @param bool $isCurrentUser
+         */
+        public function setIsCurrentUser($isCurrentUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsCurrentUser()
+        {
+        }
+        /**
+         * The identifier for this user that can be used with the People API to get
+         * more information. The format is `people/ACCOUNT_ID`. See
+         * https://developers.google.com/people/.
+         *
+         * @param string $personName
+         */
+        public function setPersonName($personName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPersonName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveActivity\KnownUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsCurrentUser()
-    {
-    }
-    /**
-     * The identifier for this user that can be used with the People API to get
-     * more information. The format is `people/ACCOUNT_ID`. See
-     * https://developers.google.com/people/.
-     *
-     * @param string $personName
-     */
-    public function setPersonName($personName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPersonName()
+    class Google_Service_DriveActivity_KnownUser extends \Google\Service\DriveActivity\KnownUser
     {
     }
 }

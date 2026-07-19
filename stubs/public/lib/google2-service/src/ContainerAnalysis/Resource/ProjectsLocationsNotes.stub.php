@@ -21,167 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis\Resource;
-
-/**
- * The "notes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
- *   $notes = $containeranalysisService->projects_locations_notes;
- *  </code>
- */
-class ProjectsLocationsNotes extends \Google\Service\Resource
-{
+namespace Google\Service\ContainerAnalysis\Resource {
+    use Google\Service\ContainerAnalysis\BatchCreateNotesRequest;
+    use Google\Service\ContainerAnalysis\BatchCreateNotesResponse;
+    use Google\Service\ContainerAnalysis\ContaineranalysisEmpty;
+    use Google\Service\ContainerAnalysis\GetIamPolicyRequest;
+    use Google\Service\ContainerAnalysis\ListNotesResponse;
+    use Google\Service\ContainerAnalysis\Note;
+    use Google\Service\ContainerAnalysis\Policy;
+    use Google\Service\ContainerAnalysis\SetIamPolicyRequest;
+    use Google\Service\ContainerAnalysis\TestIamPermissionsRequest;
+    use Google\Service\ContainerAnalysis\TestIamPermissionsResponse;
     /**
-     * Creates new notes in batch. (notes.batchCreate)
-     *
-     * @param string $parent Required. The name of the project in the form of
-     * `projects/[PROJECT_ID]`, under which the notes are to be created.
-     * @param BatchCreateNotesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchCreateNotesResponse
-     * @throws \Google\Service\Exception
+     * The "notes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
+     *   $notes = $containeranalysisService->projects_locations_notes;
+     *  </code>
      */
-    public function batchCreate($parent, BatchCreateNotesRequest $postBody, $optParams = [])
+    class ProjectsLocationsNotes extends \Google\Service\Resource
     {
+        /**
+         * Creates new notes in batch. (notes.batchCreate)
+         *
+         * @param string $parent Required. The name of the project in the form of
+         * `projects/[PROJECT_ID]`, under which the notes are to be created.
+         * @param BatchCreateNotesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchCreateNotesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchCreate($parent, BatchCreateNotesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new note. (notes.create)
+         *
+         * @param string $parent Required. The name of the project in the form of
+         * `projects/[PROJECT_ID]`, under which the note is to be created.
+         * @param Note $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string noteId Required. The ID to use for this note.
+         * @return Note
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Note $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified note. (notes.delete)
+         *
+         * @param string $name Required. The name of the note in the form of
+         * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
+         * @param array $optParams Optional parameters.
+         * @return ContaineranalysisEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified note. (notes.get)
+         *
+         * @param string $name Required. The name of the note in the form of
+         * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
+         * @param array $optParams Optional parameters.
+         * @return Note
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the access control policy for a note or an occurrence resource. Requires
+         * `containeranalysis.notes.setIamPolicy` or
+         * `containeranalysis.occurrences.setIamPolicy` permission if the resource is a
+         * note or occurrence, respectively. The resource takes the format
+         * `projects/[PROJECT_ID]/notes/[NOTE_ID]` for notes and
+         * `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]` for occurrences.
+         * (notes.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists notes for the specified project. (notes.listProjectsLocationsNotes)
+         *
+         * @param string $parent Required. The name of the project to list notes for in
+         * the form of `projects/[PROJECT_ID]`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression.
+         * @opt_param int pageSize Number of notes to return in the list. Must be
+         * positive. Max allowed page size is 1000. If not specified, page size defaults
+         * to 20.
+         * @opt_param string pageToken Token to provide to skip to a particular spot in
+         * the list.
+         * @opt_param bool returnPartialSuccess If set, the request will return all
+         * reachable Notes and report all unreachable regions in the `unreachable` field
+         * in the response. Only applicable for requests in the global region.
+         * @return ListNotesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNotes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified note. (notes.patch)
+         *
+         * @param string $name Required. The name of the note in the form of
+         * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
+         * @param Note $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The fields to update.
+         * @return Note
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Note $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified note or occurrence. Requires
+         * `containeranalysis.notes.setIamPolicy` or
+         * `containeranalysis.occurrences.setIamPolicy` permission if the resource is a
+         * note or an occurrence, respectively. The resource takes the format
+         * `projects/[PROJECT_ID]/notes/[NOTE_ID]` for notes and
+         * `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]` for occurrences.
+         * (notes.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns the permissions that a caller has on the specified note or
+         * occurrence. Requires list permission on the project (for example,
+         * `containeranalysis.notes.list`). The resource takes the format
+         * `projects/[PROJECT_ID]/notes/[NOTE_ID]` for notes and
+         * `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]` for occurrences.
+         * (notes.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a new note. (notes.create)
-     *
-     * @param string $parent Required. The name of the project in the form of
-     * `projects/[PROJECT_ID]`, under which the note is to be created.
-     * @param Note $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string noteId Required. The ID to use for this note.
-     * @return Note
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Resource\ProjectsLocationsNotes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, Note $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes the specified note. (notes.delete)
-     *
-     * @param string $name Required. The name of the note in the form of
-     * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
-     * @param array $optParams Optional parameters.
-     * @return ContaineranalysisEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified note. (notes.get)
-     *
-     * @param string $name Required. The name of the note in the form of
-     * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
-     * @param array $optParams Optional parameters.
-     * @return Note
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the access control policy for a note or an occurrence resource. Requires
-     * `containeranalysis.notes.setIamPolicy` or
-     * `containeranalysis.occurrences.setIamPolicy` permission if the resource is a
-     * note or occurrence, respectively. The resource takes the format
-     * `projects/[PROJECT_ID]/notes/[NOTE_ID]` for notes and
-     * `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]` for occurrences.
-     * (notes.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists notes for the specified project. (notes.listProjectsLocationsNotes)
-     *
-     * @param string $parent Required. The name of the project to list notes for in
-     * the form of `projects/[PROJECT_ID]`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression.
-     * @opt_param int pageSize Number of notes to return in the list. Must be
-     * positive. Max allowed page size is 1000. If not specified, page size defaults
-     * to 20.
-     * @opt_param string pageToken Token to provide to skip to a particular spot in
-     * the list.
-     * @opt_param bool returnPartialSuccess If set, the request will return all
-     * reachable Notes and report all unreachable regions in the `unreachable` field
-     * in the response. Only applicable for requests in the global region.
-     * @return ListNotesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsNotes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified note. (notes.patch)
-     *
-     * @param string $name Required. The name of the note in the form of
-     * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
-     * @param Note $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The fields to update.
-     * @return Note
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Note $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the access control policy on the specified note or occurrence. Requires
-     * `containeranalysis.notes.setIamPolicy` or
-     * `containeranalysis.occurrences.setIamPolicy` permission if the resource is a
-     * note or an occurrence, respectively. The resource takes the format
-     * `projects/[PROJECT_ID]/notes/[NOTE_ID]` for notes and
-     * `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]` for occurrences.
-     * (notes.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns the permissions that a caller has on the specified note or
-     * occurrence. Requires list permission on the project (for example,
-     * `containeranalysis.notes.list`). The resource takes the format
-     * `projects/[PROJECT_ID]/notes/[NOTE_ID]` for notes and
-     * `projects/[PROJECT_ID]/occurrences/[OCCURRENCE_ID]` for occurrences.
-     * (notes.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_ContainerAnalysis_Resource_ProjectsLocationsNotes extends \Google\Service\ContainerAnalysis\Resource\ProjectsLocationsNotes
     {
     }
 }

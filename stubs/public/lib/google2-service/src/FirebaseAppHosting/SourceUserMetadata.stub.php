@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class SourceUserMetadata extends \Google\Model
-{
-    /**
-     * Output only. The user-chosen displayname. May be empty.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The account email linked to the EUC that created the build.
-     * May be a service account or other robot account.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. The URI of a profile photo associated with the user who
-     * created the build.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * Output only. The user-chosen displayname. May be empty.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\FirebaseAppHosting {
+    class SourceUserMetadata extends \Google\Model
     {
+        /**
+         * Output only. The user-chosen displayname. May be empty.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The account email linked to the EUC that created the build.
+         * May be a service account or other robot account.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. The URI of a profile photo associated with the user who
+         * created the build.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * Output only. The user-chosen displayname. May be empty.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The account email linked to the EUC that created the build.
+         * May be a service account or other robot account.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. The URI of a profile photo associated with the user who
+         * created the build.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\SourceUserMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The account email linked to the EUC that created the build.
-     * May be a service account or other robot account.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. The URI of a profile photo associated with the user who
-     * created the build.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
+    class Google_Service_FirebaseAppHosting_SourceUserMetadata extends \Google\Service\FirebaseAppHosting\SourceUserMetadata
     {
     }
 }

@@ -21,163 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PerformanceReport extends \Google\Collection
-{
-    protected $collection_key = 'hostedMatchStatusRate';
-    public $bidRate;
-    public $bidRequestRate;
-    public $calloutStatusRate;
-    public $cookieMatcherStatusRate;
-    public $creativeStatusRate;
-    public $filteredBidRate;
-    public $hostedMatchStatusRate;
-    public $inventoryMatchRate;
-    public $kind;
-    public $latency50thPercentile;
-    public $latency85thPercentile;
-    public $latency95thPercentile;
-    public $noQuotaInRegion;
-    public $outOfQuota;
-    public $pixelMatchRequests;
-    public $pixelMatchResponses;
-    public $quotaConfiguredLimit;
-    public $quotaThrottledLimit;
-    public $region;
-    public $successfulRequestRate;
-    public $timestamp;
-    public $unsuccessfulRequestRate;
-    public function setBidRate($bidRate)
+namespace Google\Service\AdExchangeBuyer {
+    class PerformanceReport extends \Google\Collection
     {
+        protected $collection_key = 'hostedMatchStatusRate';
+        public $bidRate;
+        public $bidRequestRate;
+        public $calloutStatusRate;
+        public $cookieMatcherStatusRate;
+        public $creativeStatusRate;
+        public $filteredBidRate;
+        public $hostedMatchStatusRate;
+        public $inventoryMatchRate;
+        public $kind;
+        public $latency50thPercentile;
+        public $latency85thPercentile;
+        public $latency95thPercentile;
+        public $noQuotaInRegion;
+        public $outOfQuota;
+        public $pixelMatchRequests;
+        public $pixelMatchResponses;
+        public $quotaConfiguredLimit;
+        public $quotaThrottledLimit;
+        public $region;
+        public $successfulRequestRate;
+        public $timestamp;
+        public $unsuccessfulRequestRate;
+        public function setBidRate($bidRate)
+        {
+        }
+        public function getBidRate()
+        {
+        }
+        public function setBidRequestRate($bidRequestRate)
+        {
+        }
+        public function getBidRequestRate()
+        {
+        }
+        public function setCalloutStatusRate($calloutStatusRate)
+        {
+        }
+        public function getCalloutStatusRate()
+        {
+        }
+        public function setCookieMatcherStatusRate($cookieMatcherStatusRate)
+        {
+        }
+        public function getCookieMatcherStatusRate()
+        {
+        }
+        public function setCreativeStatusRate($creativeStatusRate)
+        {
+        }
+        public function getCreativeStatusRate()
+        {
+        }
+        public function setFilteredBidRate($filteredBidRate)
+        {
+        }
+        public function getFilteredBidRate()
+        {
+        }
+        public function setHostedMatchStatusRate($hostedMatchStatusRate)
+        {
+        }
+        public function getHostedMatchStatusRate()
+        {
+        }
+        public function setInventoryMatchRate($inventoryMatchRate)
+        {
+        }
+        public function getInventoryMatchRate()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        public function setLatency50thPercentile($latency50thPercentile)
+        {
+        }
+        public function getLatency50thPercentile()
+        {
+        }
+        public function setLatency85thPercentile($latency85thPercentile)
+        {
+        }
+        public function getLatency85thPercentile()
+        {
+        }
+        public function setLatency95thPercentile($latency95thPercentile)
+        {
+        }
+        public function getLatency95thPercentile()
+        {
+        }
+        public function setNoQuotaInRegion($noQuotaInRegion)
+        {
+        }
+        public function getNoQuotaInRegion()
+        {
+        }
+        public function setOutOfQuota($outOfQuota)
+        {
+        }
+        public function getOutOfQuota()
+        {
+        }
+        public function setPixelMatchRequests($pixelMatchRequests)
+        {
+        }
+        public function getPixelMatchRequests()
+        {
+        }
+        public function setPixelMatchResponses($pixelMatchResponses)
+        {
+        }
+        public function getPixelMatchResponses()
+        {
+        }
+        public function setQuotaConfiguredLimit($quotaConfiguredLimit)
+        {
+        }
+        public function getQuotaConfiguredLimit()
+        {
+        }
+        public function setQuotaThrottledLimit($quotaThrottledLimit)
+        {
+        }
+        public function getQuotaThrottledLimit()
+        {
+        }
+        public function setRegion($region)
+        {
+        }
+        public function getRegion()
+        {
+        }
+        public function setSuccessfulRequestRate($successfulRequestRate)
+        {
+        }
+        public function getSuccessfulRequestRate()
+        {
+        }
+        public function setTimestamp($timestamp)
+        {
+        }
+        public function getTimestamp()
+        {
+        }
+        public function setUnsuccessfulRequestRate($unsuccessfulRequestRate)
+        {
+        }
+        public function getUnsuccessfulRequestRate()
+        {
+        }
     }
-    public function getBidRate()
-    {
-    }
-    public function setBidRequestRate($bidRequestRate)
-    {
-    }
-    public function getBidRequestRate()
-    {
-    }
-    public function setCalloutStatusRate($calloutStatusRate)
-    {
-    }
-    public function getCalloutStatusRate()
-    {
-    }
-    public function setCookieMatcherStatusRate($cookieMatcherStatusRate)
-    {
-    }
-    public function getCookieMatcherStatusRate()
-    {
-    }
-    public function setCreativeStatusRate($creativeStatusRate)
-    {
-    }
-    public function getCreativeStatusRate()
-    {
-    }
-    public function setFilteredBidRate($filteredBidRate)
-    {
-    }
-    public function getFilteredBidRate()
-    {
-    }
-    public function setHostedMatchStatusRate($hostedMatchStatusRate)
-    {
-    }
-    public function getHostedMatchStatusRate()
-    {
-    }
-    public function setInventoryMatchRate($inventoryMatchRate)
-    {
-    }
-    public function getInventoryMatchRate()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    public function setLatency50thPercentile($latency50thPercentile)
-    {
-    }
-    public function getLatency50thPercentile()
-    {
-    }
-    public function setLatency85thPercentile($latency85thPercentile)
-    {
-    }
-    public function getLatency85thPercentile()
-    {
-    }
-    public function setLatency95thPercentile($latency95thPercentile)
-    {
-    }
-    public function getLatency95thPercentile()
-    {
-    }
-    public function setNoQuotaInRegion($noQuotaInRegion)
-    {
-    }
-    public function getNoQuotaInRegion()
-    {
-    }
-    public function setOutOfQuota($outOfQuota)
-    {
-    }
-    public function getOutOfQuota()
-    {
-    }
-    public function setPixelMatchRequests($pixelMatchRequests)
-    {
-    }
-    public function getPixelMatchRequests()
-    {
-    }
-    public function setPixelMatchResponses($pixelMatchResponses)
-    {
-    }
-    public function getPixelMatchResponses()
-    {
-    }
-    public function setQuotaConfiguredLimit($quotaConfiguredLimit)
-    {
-    }
-    public function getQuotaConfiguredLimit()
-    {
-    }
-    public function setQuotaThrottledLimit($quotaThrottledLimit)
-    {
-    }
-    public function getQuotaThrottledLimit()
-    {
-    }
-    public function setRegion($region)
-    {
-    }
-    public function getRegion()
-    {
-    }
-    public function setSuccessfulRequestRate($successfulRequestRate)
-    {
-    }
-    public function getSuccessfulRequestRate()
-    {
-    }
-    public function setTimestamp($timestamp)
-    {
-    }
-    public function getTimestamp()
-    {
-    }
-    public function setUnsuccessfulRequestRate($unsuccessfulRequestRate)
-    {
-    }
-    public function getUnsuccessfulRequestRate()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PerformanceReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_PerformanceReport extends \Google\Service\AdExchangeBuyer\PerformanceReport
     {
     }
 }

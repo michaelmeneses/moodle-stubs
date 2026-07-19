@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class NonSdkApiUsageViolation extends \Google\Collection
-{
-    protected $collection_key = 'apiSignatures';
-    /**
-     * Signatures of a subset of those hidden API's.
-     *
-     * @var string[]
-     */
-    public $apiSignatures;
-    /**
-     * Total number of unique hidden API's accessed.
-     *
-     * @var int
-     */
-    public $uniqueApis;
-    /**
-     * Signatures of a subset of those hidden API's.
-     *
-     * @param string[] $apiSignatures
-     */
-    public function setApiSignatures($apiSignatures)
+namespace Google\Service\ToolResults {
+    class NonSdkApiUsageViolation extends \Google\Collection
     {
+        protected $collection_key = 'apiSignatures';
+        /**
+         * Signatures of a subset of those hidden API's.
+         *
+         * @var string[]
+         */
+        public $apiSignatures;
+        /**
+         * Total number of unique hidden API's accessed.
+         *
+         * @var int
+         */
+        public $uniqueApis;
+        /**
+         * Signatures of a subset of those hidden API's.
+         *
+         * @param string[] $apiSignatures
+         */
+        public function setApiSignatures($apiSignatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApiSignatures()
+        {
+        }
+        /**
+         * Total number of unique hidden API's accessed.
+         *
+         * @param int $uniqueApis
+         */
+        public function setUniqueApis($uniqueApis)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUniqueApis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ToolResults\NonSdkApiUsageViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiSignatures()
-    {
-    }
-    /**
-     * Total number of unique hidden API's accessed.
-     *
-     * @param int $uniqueApis
-     */
-    public function setUniqueApis($uniqueApis)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUniqueApis()
+    class Google_Service_ToolResults_NonSdkApiUsageViolation extends \Google\Service\ToolResults\NonSdkApiUsageViolation
     {
     }
 }

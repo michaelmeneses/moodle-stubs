@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class FeatureIdProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cellId;
-    /**
-     * @var string
-     */
-    public $fprint;
-    protected $temporaryDataType = MessageSet::class;
-    protected $temporaryDataDataType = '';
-    /**
-     * @param string
-     */
-    public function setCellId($cellId)
+namespace Google\Service\CivicInfo {
+    class FeatureIdProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cellId;
+        /**
+         * @var string
+         */
+        public $fprint;
+        protected $temporaryDataType = MessageSet::class;
+        protected $temporaryDataDataType = '';
+        /**
+         * @param string
+         */
+        public function setCellId($cellId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCellId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFprint($fprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFprint()
+        {
+        }
+        /**
+         * @param MessageSet
+         */
+        public function setTemporaryData(MessageSet $temporaryData)
+        {
+        }
+        /**
+         * @return MessageSet
+         */
+        public function getTemporaryData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\FeatureIdProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCellId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFprint($fprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFprint()
-    {
-    }
-    /**
-     * @param MessageSet
-     */
-    public function setTemporaryData(MessageSet $temporaryData)
-    {
-    }
-    /**
-     * @return MessageSet
-     */
-    public function getTemporaryData()
+    class Google_Service_CivicInfo_FeatureIdProto extends \Google\Service\CivicInfo\FeatureIdProto
     {
     }
 }

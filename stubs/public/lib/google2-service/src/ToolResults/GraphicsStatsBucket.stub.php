@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class GraphicsStatsBucket extends \Google\Model
-{
-    /**
-     * Number of frames in the bucket.
-     *
-     * @var string
-     */
-    public $frameCount;
-    /**
-     * Lower bound of render time in milliseconds.
-     *
-     * @var string
-     */
-    public $renderMillis;
-    /**
-     * Number of frames in the bucket.
-     *
-     * @param string $frameCount
-     */
-    public function setFrameCount($frameCount)
+namespace Google\Service\ToolResults {
+    class GraphicsStatsBucket extends \Google\Model
     {
+        /**
+         * Number of frames in the bucket.
+         *
+         * @var string
+         */
+        public $frameCount;
+        /**
+         * Lower bound of render time in milliseconds.
+         *
+         * @var string
+         */
+        public $renderMillis;
+        /**
+         * Number of frames in the bucket.
+         *
+         * @param string $frameCount
+         */
+        public function setFrameCount($frameCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFrameCount()
+        {
+        }
+        /**
+         * Lower bound of render time in milliseconds.
+         *
+         * @param string $renderMillis
+         */
+        public function setRenderMillis($renderMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\GraphicsStatsBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrameCount()
-    {
-    }
-    /**
-     * Lower bound of render time in milliseconds.
-     *
-     * @param string $renderMillis
-     */
-    public function setRenderMillis($renderMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenderMillis()
+    class Google_Service_ToolResults_GraphicsStatsBucket extends \Google\Service\ToolResults\GraphicsStatsBucket
     {
     }
 }

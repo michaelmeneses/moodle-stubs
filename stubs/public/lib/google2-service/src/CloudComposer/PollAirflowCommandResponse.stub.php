@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class PollAirflowCommandResponse extends \Google\Collection
-{
-    protected $collection_key = 'output';
-    protected $exitInfoType = ExitInfo::class;
-    protected $exitInfoDataType = '';
-    protected $outputType = Line::class;
-    protected $outputDataType = 'array';
-    /**
-     * Whether the command execution has finished and there is no more output.
-     *
-     * @var bool
-     */
-    public $outputEnd;
-    /**
-     * The result exit status of the command.
-     *
-     * @param ExitInfo $exitInfo
-     */
-    public function setExitInfo(ExitInfo $exitInfo)
+namespace Google\Service\CloudComposer {
+    class PollAirflowCommandResponse extends \Google\Collection
     {
+        protected $collection_key = 'output';
+        protected $exitInfoType = ExitInfo::class;
+        protected $exitInfoDataType = '';
+        protected $outputType = Line::class;
+        protected $outputDataType = 'array';
+        /**
+         * Whether the command execution has finished and there is no more output.
+         *
+         * @var bool
+         */
+        public $outputEnd;
+        /**
+         * The result exit status of the command.
+         *
+         * @param ExitInfo $exitInfo
+         */
+        public function setExitInfo(ExitInfo $exitInfo)
+        {
+        }
+        /**
+         * @return ExitInfo
+         */
+        public function getExitInfo()
+        {
+        }
+        /**
+         * Output from the command execution. It may not contain the full output and
+         * the caller may need to poll for more lines.
+         *
+         * @param Line[] $output
+         */
+        public function setOutput($output)
+        {
+        }
+        /**
+         * @return Line[]
+         */
+        public function getOutput()
+        {
+        }
+        /**
+         * Whether the command execution has finished and there is no more output.
+         *
+         * @param bool $outputEnd
+         */
+        public function setOutputEnd($outputEnd)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOutputEnd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExitInfo
+     * Runtime class alias of \Google\Service\CloudComposer\PollAirflowCommandResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExitInfo()
-    {
-    }
-    /**
-     * Output from the command execution. It may not contain the full output and
-     * the caller may need to poll for more lines.
-     *
-     * @param Line[] $output
-     */
-    public function setOutput($output)
-    {
-    }
-    /**
-     * @return Line[]
-     */
-    public function getOutput()
-    {
-    }
-    /**
-     * Whether the command execution has finished and there is no more output.
-     *
-     * @param bool $outputEnd
-     */
-    public function setOutputEnd($outputEnd)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOutputEnd()
+    class Google_Service_CloudComposer_PollAirflowCommandResponse extends \Google\Service\CloudComposer\PollAirflowCommandResponse
     {
     }
 }

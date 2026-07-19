@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1PriceTier extends \Google\Model
-{
-    /**
-     * First resource for which the tier price applies.
-     *
-     * @var int
-     */
-    public $firstResource;
-    /**
-     * Last resource for which the tier price applies.
-     *
-     * @var int
-     */
-    public $lastResource;
-    protected $priceType = GoogleCloudChannelV1Price::class;
-    protected $priceDataType = '';
-    /**
-     * First resource for which the tier price applies.
-     *
-     * @param int $firstResource
-     */
-    public function setFirstResource($firstResource)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1PriceTier extends \Google\Model
     {
+        /**
+         * First resource for which the tier price applies.
+         *
+         * @var int
+         */
+        public $firstResource;
+        /**
+         * Last resource for which the tier price applies.
+         *
+         * @var int
+         */
+        public $lastResource;
+        protected $priceType = GoogleCloudChannelV1Price::class;
+        protected $priceDataType = '';
+        /**
+         * First resource for which the tier price applies.
+         *
+         * @param int $firstResource
+         */
+        public function setFirstResource($firstResource)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFirstResource()
+        {
+        }
+        /**
+         * Last resource for which the tier price applies.
+         *
+         * @param int $lastResource
+         */
+        public function setLastResource($lastResource)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLastResource()
+        {
+        }
+        /**
+         * Price of the tier.
+         *
+         * @param GoogleCloudChannelV1Price $price
+         */
+        public function setPrice(GoogleCloudChannelV1Price $price)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Price
+         */
+        public function getPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1PriceTier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstResource()
-    {
-    }
-    /**
-     * Last resource for which the tier price applies.
-     *
-     * @param int $lastResource
-     */
-    public function setLastResource($lastResource)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLastResource()
-    {
-    }
-    /**
-     * Price of the tier.
-     *
-     * @param GoogleCloudChannelV1Price $price
-     */
-    public function setPrice(GoogleCloudChannelV1Price $price)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Price
-     */
-    public function getPrice()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1PriceTier extends \Google\Service\Cloudchannel\GoogleCloudChannelV1PriceTier
     {
     }
 }

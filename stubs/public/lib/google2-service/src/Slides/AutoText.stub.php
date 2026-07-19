@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class AutoText extends \Google\Model
-{
-    /**
-     * An unspecified autotext type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Type for autotext that represents the current slide number.
-     */
-    public const TYPE_SLIDE_NUMBER = 'SLIDE_NUMBER';
-    /**
-     * The rendered content of this auto text, if available.
-     *
-     * @var string
-     */
-    public $content;
-    protected $styleType = TextStyle::class;
-    protected $styleDataType = '';
-    /**
-     * The type of this auto text.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The rendered content of this auto text, if available.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Slides {
+    class AutoText extends \Google\Model
     {
+        /**
+         * An unspecified autotext type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Type for autotext that represents the current slide number.
+         */
+        public const TYPE_SLIDE_NUMBER = 'SLIDE_NUMBER';
+        /**
+         * The rendered content of this auto text, if available.
+         *
+         * @var string
+         */
+        public $content;
+        protected $styleType = TextStyle::class;
+        protected $styleDataType = '';
+        /**
+         * The type of this auto text.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The rendered content of this auto text, if available.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The styling applied to this auto text.
+         *
+         * @param TextStyle $style
+         */
+        public function setStyle(TextStyle $style)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * The type of this auto text.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, SLIDE_NUMBER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\AutoText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The styling applied to this auto text.
-     *
-     * @param TextStyle $style
-     */
-    public function setStyle(TextStyle $style)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * The type of this auto text.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, SLIDE_NUMBER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Slides_AutoText extends \Google\Service\Slides\AutoText
     {
     }
 }

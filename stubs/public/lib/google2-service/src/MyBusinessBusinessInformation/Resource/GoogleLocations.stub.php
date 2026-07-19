@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation\Resource;
-
-/**
- * The "googleLocations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
- *   $googleLocations = $mybusinessbusinessinformationService->googleLocations;
- *  </code>
- */
-class GoogleLocations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessBusinessInformation\Resource {
+    use Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsRequest;
+    use Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsResponse;
     /**
-     * Search all of the possible locations that are a match to the specified
-     * request. (googleLocations.search)
-     *
-     * @param SearchGoogleLocationsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchGoogleLocationsResponse
-     * @throws \Google\Service\Exception
+     * The "googleLocations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
+     *   $googleLocations = $mybusinessbusinessinformationService->googleLocations;
+     *  </code>
      */
-    public function search(SearchGoogleLocationsRequest $postBody, $optParams = [])
+    class GoogleLocations extends \Google\Service\Resource
+    {
+        /**
+         * Search all of the possible locations that are a match to the specified
+         * request. (googleLocations.search)
+         *
+         * @param SearchGoogleLocationsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchGoogleLocationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search(SearchGoogleLocationsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Resource\GoogleLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessBusinessInformation_Resource_GoogleLocations extends \Google\Service\MyBusinessBusinessInformation\Resource\GoogleLocations
     {
     }
 }

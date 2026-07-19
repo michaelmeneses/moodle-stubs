@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ListExecutionResultsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executionResults';
-    protected $executionResultsType = ExecutionResult::class;
-    protected $executionResultsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The versions from the specified publisher.
-     *
-     * @param ExecutionResult[] $executionResults
-     */
-    public function setExecutionResults($executionResults)
+namespace Google\Service\WorkloadManager {
+    class ListExecutionResultsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executionResults';
+        protected $executionResultsType = ExecutionResult::class;
+        protected $executionResultsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The versions from the specified publisher.
+         *
+         * @param ExecutionResult[] $executionResults
+         */
+        public function setExecutionResults($executionResults)
+        {
+        }
+        /**
+         * @return ExecutionResult[]
+         */
+        public function getExecutionResults()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecutionResult[]
+     * Runtime class alias of \Google\Service\WorkloadManager\ListExecutionResultsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionResults()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_WorkloadManager_ListExecutionResultsResponse extends \Google\Service\WorkloadManager\ListExecutionResultsResponse
     {
     }
 }

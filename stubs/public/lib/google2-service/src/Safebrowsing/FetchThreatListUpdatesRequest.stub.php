@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class FetchThreatListUpdatesRequest extends \Google\Collection
-{
-    protected $collection_key = 'listUpdateRequests';
-    protected $clientType = ClientInfo::class;
-    protected $clientDataType = '';
-    public $client;
-    protected $listUpdateRequestsType = ListUpdateRequest::class;
-    protected $listUpdateRequestsDataType = 'array';
-    public $listUpdateRequests;
-    /**
-     * @param ClientInfo
-     */
-    public function setClient(ClientInfo $client)
+namespace Google\Service\Safebrowsing {
+    class FetchThreatListUpdatesRequest extends \Google\Collection
     {
+        protected $collection_key = 'listUpdateRequests';
+        protected $clientType = ClientInfo::class;
+        protected $clientDataType = '';
+        public $client;
+        protected $listUpdateRequestsType = ListUpdateRequest::class;
+        protected $listUpdateRequestsDataType = 'array';
+        public $listUpdateRequests;
+        /**
+         * @param ClientInfo
+         */
+        public function setClient(ClientInfo $client)
+        {
+        }
+        /**
+         * @return ClientInfo
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param ListUpdateRequest[]
+         */
+        public function setListUpdateRequests($listUpdateRequests)
+        {
+        }
+        /**
+         * @return ListUpdateRequest[]
+         */
+        public function getListUpdateRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\FetchThreatListUpdatesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClient()
-    {
-    }
-    /**
-     * @param ListUpdateRequest[]
-     */
-    public function setListUpdateRequests($listUpdateRequests)
-    {
-    }
-    /**
-     * @return ListUpdateRequest[]
-     */
-    public function getListUpdateRequests()
+    class Google_Service_Safebrowsing_FetchThreatListUpdatesRequest extends \Google\Service\Safebrowsing\FetchThreatListUpdatesRequest
     {
     }
 }

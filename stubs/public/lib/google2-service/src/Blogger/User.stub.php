@@ -21,180 +21,189 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class User extends \Google\Model
-{
-    /**
-     * Profile summary information.
-     *
-     * @var string
-     */
-    public $about;
-    protected $blogsType = UserBlogs::class;
-    protected $blogsDataType = '';
-    /**
-     * The timestamp of when this profile was created, in seconds since epoch.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * The display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The identifier for this User.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of this entity. Always blogger#user.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $localeType = UserLocale::class;
-    protected $localeDataType = '';
-    /**
-     * The API REST URL to fetch this resource from.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The user's profile page.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Profile summary information.
-     *
-     * @param string $about
-     */
-    public function setAbout($about)
+namespace Google\Service\Blogger {
+    class User extends \Google\Model
     {
+        /**
+         * Profile summary information.
+         *
+         * @var string
+         */
+        public $about;
+        protected $blogsType = UserBlogs::class;
+        protected $blogsDataType = '';
+        /**
+         * The timestamp of when this profile was created, in seconds since epoch.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * The display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The identifier for this User.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of this entity. Always blogger#user.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $localeType = UserLocale::class;
+        protected $localeDataType = '';
+        /**
+         * The API REST URL to fetch this resource from.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The user's profile page.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Profile summary information.
+         *
+         * @param string $about
+         */
+        public function setAbout($about)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAbout()
+        {
+        }
+        /**
+         * The container of blogs for this user.
+         *
+         * @param UserBlogs $blogs
+         */
+        public function setBlogs(UserBlogs $blogs)
+        {
+        }
+        /**
+         * @return UserBlogs
+         */
+        public function getBlogs()
+        {
+        }
+        /**
+         * The timestamp of when this profile was created, in seconds since epoch.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * The display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The identifier for this User.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#user.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * This user's locale
+         *
+         * @param UserLocale $locale
+         */
+        public function setLocale(UserLocale $locale)
+        {
+        }
+        /**
+         * @return UserLocale
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * The API REST URL to fetch this resource from.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The user's profile page.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbout()
-    {
-    }
-    /**
-     * The container of blogs for this user.
-     *
-     * @param UserBlogs $blogs
-     */
-    public function setBlogs(UserBlogs $blogs)
-    {
-    }
-    /**
-     * @return UserBlogs
-     */
-    public function getBlogs()
-    {
-    }
-    /**
-     * The timestamp of when this profile was created, in seconds since epoch.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * The display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The identifier for this User.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#user.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * This user's locale
-     *
-     * @param UserLocale $locale
-     */
-    public function setLocale(UserLocale $locale)
-    {
-    }
-    /**
-     * @return UserLocale
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * The API REST URL to fetch this resource from.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The user's profile page.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Blogger_User extends \Google\Service\Blogger\User
     {
     }
 }

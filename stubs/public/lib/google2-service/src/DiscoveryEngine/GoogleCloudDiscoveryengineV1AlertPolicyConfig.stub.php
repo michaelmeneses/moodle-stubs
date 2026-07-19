@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AlertPolicyConfig extends \Google\Collection
-{
-    protected $collection_key = 'alertEnrollments';
-    protected $alertEnrollmentsType = GoogleCloudDiscoveryengineV1AlertPolicyConfigAlertEnrollment::class;
-    protected $alertEnrollmentsDataType = 'array';
-    /**
-     * Immutable. The fully qualified resource name of the AlertPolicy.
-     *
-     * @var string
-     */
-    public $alertPolicyName;
-    /**
-     * Optional. The enrollment states of each alert.
-     *
-     * @param GoogleCloudDiscoveryengineV1AlertPolicyConfigAlertEnrollment[] $alertEnrollments
-     */
-    public function setAlertEnrollments($alertEnrollments)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AlertPolicyConfig extends \Google\Collection
     {
+        protected $collection_key = 'alertEnrollments';
+        protected $alertEnrollmentsType = GoogleCloudDiscoveryengineV1AlertPolicyConfigAlertEnrollment::class;
+        protected $alertEnrollmentsDataType = 'array';
+        /**
+         * Immutable. The fully qualified resource name of the AlertPolicy.
+         *
+         * @var string
+         */
+        public $alertPolicyName;
+        /**
+         * Optional. The enrollment states of each alert.
+         *
+         * @param GoogleCloudDiscoveryengineV1AlertPolicyConfigAlertEnrollment[] $alertEnrollments
+         */
+        public function setAlertEnrollments($alertEnrollments)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AlertPolicyConfigAlertEnrollment[]
+         */
+        public function getAlertEnrollments()
+        {
+        }
+        /**
+         * Immutable. The fully qualified resource name of the AlertPolicy.
+         *
+         * @param string $alertPolicyName
+         */
+        public function setAlertPolicyName($alertPolicyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlertPolicyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AlertPolicyConfigAlertEnrollment[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlertPolicyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertEnrollments()
-    {
-    }
-    /**
-     * Immutable. The fully qualified resource name of the AlertPolicy.
-     *
-     * @param string $alertPolicyName
-     */
-    public function setAlertPolicyName($alertPolicyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAlertPolicyName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AlertPolicyConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlertPolicyConfig
     {
     }
 }

@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class JobNotification extends \Google\Model
-{
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * The Pub/Sub topic where notifications for the job, like state changes, will
-     * be published. If undefined, no Pub/Sub notifications are sent for this job.
-     * Specify the topic using the following format:
-     * `projects/{project}/topics/{topic}`. Notably, if you want to specify a
-     * Pub/Sub topic that is in a different project than the job, your
-     * administrator must grant your project's Batch service agent permission to
-     * publish to that topic. For more information about configuring Pub/Sub
-     * notifications for a job, see https://cloud.google.com/batch/docs/enable-
-     * notifications.
-     *
-     * @var string
-     */
-    public $pubsubTopic;
-    /**
-     * The attribute requirements of messages to be sent to this Pub/Sub topic.
-     * Without this field, no message will be sent.
-     *
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
+namespace Google\Service\Batch {
+    class JobNotification extends \Google\Model
     {
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * The Pub/Sub topic where notifications for the job, like state changes, will
+         * be published. If undefined, no Pub/Sub notifications are sent for this job.
+         * Specify the topic using the following format:
+         * `projects/{project}/topics/{topic}`. Notably, if you want to specify a
+         * Pub/Sub topic that is in a different project than the job, your
+         * administrator must grant your project's Batch service agent permission to
+         * publish to that topic. For more information about configuring Pub/Sub
+         * notifications for a job, see https://cloud.google.com/batch/docs/enable-
+         * notifications.
+         *
+         * @var string
+         */
+        public $pubsubTopic;
+        /**
+         * The attribute requirements of messages to be sent to this Pub/Sub topic.
+         * Without this field, no message will be sent.
+         *
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The Pub/Sub topic where notifications for the job, like state changes, will
+         * be published. If undefined, no Pub/Sub notifications are sent for this job.
+         * Specify the topic using the following format:
+         * `projects/{project}/topics/{topic}`. Notably, if you want to specify a
+         * Pub/Sub topic that is in a different project than the job, your
+         * administrator must grant your project's Batch service agent permission to
+         * publish to that topic. For more information about configuring Pub/Sub
+         * notifications for a job, see https://cloud.google.com/batch/docs/enable-
+         * notifications.
+         *
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message
+     * Runtime class alias of \Google\Service\Batch\JobNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * The Pub/Sub topic where notifications for the job, like state changes, will
-     * be published. If undefined, no Pub/Sub notifications are sent for this job.
-     * Specify the topic using the following format:
-     * `projects/{project}/topics/{topic}`. Notably, if you want to specify a
-     * Pub/Sub topic that is in a different project than the job, your
-     * administrator must grant your project's Batch service agent permission to
-     * publish to that topic. For more information about configuring Pub/Sub
-     * notifications for a job, see https://cloud.google.com/batch/docs/enable-
-     * notifications.
-     *
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubsubTopic()
+    class Google_Service_Batch_JobNotification extends \Google\Service\Batch\JobNotification
     {
     }
 }

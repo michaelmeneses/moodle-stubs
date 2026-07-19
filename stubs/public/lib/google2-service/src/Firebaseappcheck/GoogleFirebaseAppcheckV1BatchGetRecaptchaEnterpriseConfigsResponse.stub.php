@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * RecaptchaEnterpriseConfigs retrieved.
-     *
-     * @param GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * RecaptchaEnterpriseConfigs retrieved.
+         *
+         * @param GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1RecaptchaEnterpriseConfig[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetRecaptchaEnterpriseConfigsResponse
     {
     }
 }

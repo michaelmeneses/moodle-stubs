@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class ResourcesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * A token used to continue a truncated list request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = DeploymentmanagerResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * A token used to continue a truncated list request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DeploymentManager {
+    class ResourcesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * A token used to continue a truncated list request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = DeploymentmanagerResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * A token used to continue a truncated list request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Resources contained in this list response.
+         *
+         * @param DeploymentmanagerResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return DeploymentmanagerResource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\ResourcesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Resources contained in this list response.
-     *
-     * @param DeploymentmanagerResource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return DeploymentmanagerResource[]
-     */
-    public function getResources()
+    class Google_Service_DeploymentManager_ResourcesListResponse extends \Google\Service\DeploymentManager\ResourcesListResponse
     {
     }
 }

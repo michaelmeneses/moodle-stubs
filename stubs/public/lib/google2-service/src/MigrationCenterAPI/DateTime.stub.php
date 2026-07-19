@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DateTime extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $day;
-    /**
-     * @var int
-     */
-    public $hours;
-    /**
-     * @var int
-     */
-    public $minutes;
-    /**
-     * @var int
-     */
-    public $month;
-    /**
-     * @var int
-     */
-    public $nanos;
-    /**
-     * @var int
-     */
-    public $seconds;
-    protected $timeZoneType = TimeZone::class;
-    protected $timeZoneDataType = '';
-    /**
-     * @var string
-     */
-    public $utcOffset;
-    /**
-     * @var int
-     */
-    public $year;
-    /**
-     * @param int
-     */
-    public function setDay($day)
+namespace Google\Service\MigrationCenterAPI {
+    class DateTime extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $day;
+        /**
+         * @var int
+         */
+        public $hours;
+        /**
+         * @var int
+         */
+        public $minutes;
+        /**
+         * @var int
+         */
+        public $month;
+        /**
+         * @var int
+         */
+        public $nanos;
+        /**
+         * @var int
+         */
+        public $seconds;
+        protected $timeZoneType = TimeZone::class;
+        protected $timeZoneDataType = '';
+        /**
+         * @var string
+         */
+        public $utcOffset;
+        /**
+         * @var int
+         */
+        public $year;
+        /**
+         * @param int
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setHours($hours)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHours()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinutes($minutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinutes()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMonth($month)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonth()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSeconds()
+        {
+        }
+        /**
+         * @param TimeZone
+         */
+        public function setTimeZone(TimeZone $timeZone)
+        {
+        }
+        /**
+         * @return TimeZone
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUtcOffset($utcOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtcOffset()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setYear($year)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DateTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setHours($hours)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHours()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinutes($minutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinutes()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMonth($month)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMonth()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNanos($nanos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNanos()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSeconds()
-    {
-    }
-    /**
-     * @param TimeZone
-     */
-    public function setTimeZone(TimeZone $timeZone)
-    {
-    }
-    /**
-     * @return TimeZone
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUtcOffset($utcOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtcOffset()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setYear($year)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYear()
+    class Google_Service_MigrationCenterAPI_DateTime extends \Google\Service\MigrationCenterAPI\DateTime
     {
     }
 }

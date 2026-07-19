@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class InstallationState extends \Google\Model
-{
-    /**
-     * No stage specified.
-     */
-    public const STAGE_STAGE_UNSPECIFIED = 'STAGE_UNSPECIFIED';
-    /**
-     * Only for GitHub Enterprise. An App creation has been requested. The user
-     * needs to confirm the creation in their GitHub enterprise host.
-     */
-    public const STAGE_PENDING_CREATE_APP = 'PENDING_CREATE_APP';
-    /**
-     * User needs to authorize the GitHub (or Enterprise) App via OAuth.
-     */
-    public const STAGE_PENDING_USER_OAUTH = 'PENDING_USER_OAUTH';
-    /**
-     * User needs to follow the link to install the GitHub (or Enterprise) App.
-     */
-    public const STAGE_PENDING_INSTALL_APP = 'PENDING_INSTALL_APP';
-    /**
-     * Installation process has been completed.
-     */
-    public const STAGE_COMPLETE = 'COMPLETE';
-    /**
-     * Output only. Link to follow for next action. Empty string if the
-     * installation is already complete.
-     *
-     * @var string
-     */
-    public $actionUri;
-    /**
-     * Output only. Message of what the user should do next to continue the
-     * installation. Empty string if the installation is already complete.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. Current step of the installation process.
-     *
-     * @var string
-     */
-    public $stage;
-    /**
-     * Output only. Link to follow for next action. Empty string if the
-     * installation is already complete.
-     *
-     * @param string $actionUri
-     */
-    public function setActionUri($actionUri)
+namespace Google\Service\DeveloperConnect {
+    class InstallationState extends \Google\Model
     {
+        /**
+         * No stage specified.
+         */
+        public const STAGE_STAGE_UNSPECIFIED = 'STAGE_UNSPECIFIED';
+        /**
+         * Only for GitHub Enterprise. An App creation has been requested. The user
+         * needs to confirm the creation in their GitHub enterprise host.
+         */
+        public const STAGE_PENDING_CREATE_APP = 'PENDING_CREATE_APP';
+        /**
+         * User needs to authorize the GitHub (or Enterprise) App via OAuth.
+         */
+        public const STAGE_PENDING_USER_OAUTH = 'PENDING_USER_OAUTH';
+        /**
+         * User needs to follow the link to install the GitHub (or Enterprise) App.
+         */
+        public const STAGE_PENDING_INSTALL_APP = 'PENDING_INSTALL_APP';
+        /**
+         * Installation process has been completed.
+         */
+        public const STAGE_COMPLETE = 'COMPLETE';
+        /**
+         * Output only. Link to follow for next action. Empty string if the
+         * installation is already complete.
+         *
+         * @var string
+         */
+        public $actionUri;
+        /**
+         * Output only. Message of what the user should do next to continue the
+         * installation. Empty string if the installation is already complete.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. Current step of the installation process.
+         *
+         * @var string
+         */
+        public $stage;
+        /**
+         * Output only. Link to follow for next action. Empty string if the
+         * installation is already complete.
+         *
+         * @param string $actionUri
+         */
+        public function setActionUri($actionUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionUri()
+        {
+        }
+        /**
+         * Output only. Message of what the user should do next to continue the
+         * installation. Empty string if the installation is already complete.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Output only. Current step of the installation process.
+         *
+         * Accepted values: STAGE_UNSPECIFIED, PENDING_CREATE_APP, PENDING_USER_OAUTH,
+         * PENDING_INSTALL_APP, COMPLETE
+         *
+         * @param self::STAGE_* $stage
+         */
+        public function setStage($stage)
+        {
+        }
+        /**
+         * @return self::STAGE_*
+         */
+        public function getStage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\InstallationState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionUri()
-    {
-    }
-    /**
-     * Output only. Message of what the user should do next to continue the
-     * installation. Empty string if the installation is already complete.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Output only. Current step of the installation process.
-     *
-     * Accepted values: STAGE_UNSPECIFIED, PENDING_CREATE_APP, PENDING_USER_OAUTH,
-     * PENDING_INSTALL_APP, COMPLETE
-     *
-     * @param self::STAGE_* $stage
-     */
-    public function setStage($stage)
-    {
-    }
-    /**
-     * @return self::STAGE_*
-     */
-    public function getStage()
+    class Google_Service_DeveloperConnect_InstallationState extends \Google\Service\DeveloperConnect\InstallationState
     {
     }
 }

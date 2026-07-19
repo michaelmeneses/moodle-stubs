@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class FileOccurrence extends \Google\Collection
-{
-    protected $collection_key = 'filesLicenseInfo';
-    public $attributions;
-    public $comment;
-    public $contributors;
-    public $copyright;
-    public $filesLicenseInfo;
-    public $id;
-    public $licenseComments;
-    public $licenseConcluded;
-    public $notice;
-    public function setAttributions($attributions)
+namespace Google\Service\ContainerAnalysis {
+    class FileOccurrence extends \Google\Collection
     {
+        protected $collection_key = 'filesLicenseInfo';
+        public $attributions;
+        public $comment;
+        public $contributors;
+        public $copyright;
+        public $filesLicenseInfo;
+        public $id;
+        public $licenseComments;
+        public $licenseConcluded;
+        public $notice;
+        public function setAttributions($attributions)
+        {
+        }
+        public function getAttributions()
+        {
+        }
+        public function setComment($comment)
+        {
+        }
+        public function getComment()
+        {
+        }
+        public function setContributors($contributors)
+        {
+        }
+        public function getContributors()
+        {
+        }
+        public function setCopyright($copyright)
+        {
+        }
+        public function getCopyright()
+        {
+        }
+        public function setFilesLicenseInfo($filesLicenseInfo)
+        {
+        }
+        public function getFilesLicenseInfo()
+        {
+        }
+        public function setId($id)
+        {
+        }
+        public function getId()
+        {
+        }
+        public function setLicenseComments($licenseComments)
+        {
+        }
+        public function getLicenseComments()
+        {
+        }
+        public function setLicenseConcluded($licenseConcluded)
+        {
+        }
+        public function getLicenseConcluded()
+        {
+        }
+        public function setNotice($notice)
+        {
+        }
+        public function getNotice()
+        {
+        }
     }
-    public function getAttributions()
-    {
-    }
-    public function setComment($comment)
-    {
-    }
-    public function getComment()
-    {
-    }
-    public function setContributors($contributors)
-    {
-    }
-    public function getContributors()
-    {
-    }
-    public function setCopyright($copyright)
-    {
-    }
-    public function getCopyright()
-    {
-    }
-    public function setFilesLicenseInfo($filesLicenseInfo)
-    {
-    }
-    public function getFilesLicenseInfo()
-    {
-    }
-    public function setId($id)
-    {
-    }
-    public function getId()
-    {
-    }
-    public function setLicenseComments($licenseComments)
-    {
-    }
-    public function getLicenseComments()
-    {
-    }
-    public function setLicenseConcluded($licenseConcluded)
-    {
-    }
-    public function getLicenseConcluded()
-    {
-    }
-    public function setNotice($notice)
-    {
-    }
-    public function getNotice()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\FileOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_FileOccurrence extends \Google\Service\ContainerAnalysis\FileOccurrence
     {
     }
 }

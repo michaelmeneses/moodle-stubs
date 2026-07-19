@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteHeaderMatch extends \Google\Model
-{
-    /**
-     * The value of the header should match exactly the content of exact_match.
-     *
-     * @var string
-     */
-    public $exactMatch;
-    /**
-     * The name of the HTTP header to match against.
-     *
-     * @var string
-     */
-    public $header;
-    /**
-     * If specified, the match result will be inverted before checking. Default
-     * value is set to false.
-     *
-     * @var bool
-     */
-    public $invertMatch;
-    /**
-     * The value of the header must start with the contents of prefix_match.
-     *
-     * @var string
-     */
-    public $prefixMatch;
-    /**
-     * A header with header_name must exist. The match takes place whether or not
-     * the header has a value.
-     *
-     * @var bool
-     */
-    public $presentMatch;
-    protected $rangeMatchType = HttpRouteHeaderMatchIntegerRange::class;
-    protected $rangeMatchDataType = '';
-    /**
-     * The value of the header must match the regular expression specified in
-     * regex_match. For regular expression grammar, please see:
-     * https://github.com/google/re2/wiki/Syntax
-     *
-     * @var string
-     */
-    public $regexMatch;
-    /**
-     * The value of the header must end with the contents of suffix_match.
-     *
-     * @var string
-     */
-    public $suffixMatch;
-    /**
-     * The value of the header should match exactly the content of exact_match.
-     *
-     * @param string $exactMatch
-     */
-    public function setExactMatch($exactMatch)
+namespace Google\Service\NetworkServices {
+    class HttpRouteHeaderMatch extends \Google\Model
     {
+        /**
+         * The value of the header should match exactly the content of exact_match.
+         *
+         * @var string
+         */
+        public $exactMatch;
+        /**
+         * The name of the HTTP header to match against.
+         *
+         * @var string
+         */
+        public $header;
+        /**
+         * If specified, the match result will be inverted before checking. Default
+         * value is set to false.
+         *
+         * @var bool
+         */
+        public $invertMatch;
+        /**
+         * The value of the header must start with the contents of prefix_match.
+         *
+         * @var string
+         */
+        public $prefixMatch;
+        /**
+         * A header with header_name must exist. The match takes place whether or not
+         * the header has a value.
+         *
+         * @var bool
+         */
+        public $presentMatch;
+        protected $rangeMatchType = HttpRouteHeaderMatchIntegerRange::class;
+        protected $rangeMatchDataType = '';
+        /**
+         * The value of the header must match the regular expression specified in
+         * regex_match. For regular expression grammar, please see:
+         * https://github.com/google/re2/wiki/Syntax
+         *
+         * @var string
+         */
+        public $regexMatch;
+        /**
+         * The value of the header must end with the contents of suffix_match.
+         *
+         * @var string
+         */
+        public $suffixMatch;
+        /**
+         * The value of the header should match exactly the content of exact_match.
+         *
+         * @param string $exactMatch
+         */
+        public function setExactMatch($exactMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExactMatch()
+        {
+        }
+        /**
+         * The name of the HTTP header to match against.
+         *
+         * @param string $header
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * If specified, the match result will be inverted before checking. Default
+         * value is set to false.
+         *
+         * @param bool $invertMatch
+         */
+        public function setInvertMatch($invertMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvertMatch()
+        {
+        }
+        /**
+         * The value of the header must start with the contents of prefix_match.
+         *
+         * @param string $prefixMatch
+         */
+        public function setPrefixMatch($prefixMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefixMatch()
+        {
+        }
+        /**
+         * A header with header_name must exist. The match takes place whether or not
+         * the header has a value.
+         *
+         * @param bool $presentMatch
+         */
+        public function setPresentMatch($presentMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPresentMatch()
+        {
+        }
+        /**
+         * If specified, the rule will match if the request header value is within the
+         * range.
+         *
+         * @param HttpRouteHeaderMatchIntegerRange $rangeMatch
+         */
+        public function setRangeMatch(HttpRouteHeaderMatchIntegerRange $rangeMatch)
+        {
+        }
+        /**
+         * @return HttpRouteHeaderMatchIntegerRange
+         */
+        public function getRangeMatch()
+        {
+        }
+        /**
+         * The value of the header must match the regular expression specified in
+         * regex_match. For regular expression grammar, please see:
+         * https://github.com/google/re2/wiki/Syntax
+         *
+         * @param string $regexMatch
+         */
+        public function setRegexMatch($regexMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegexMatch()
+        {
+        }
+        /**
+         * The value of the header must end with the contents of suffix_match.
+         *
+         * @param string $suffixMatch
+         */
+        public function setSuffixMatch($suffixMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuffixMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteHeaderMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExactMatch()
-    {
-    }
-    /**
-     * The name of the HTTP header to match against.
-     *
-     * @param string $header
-     */
-    public function setHeader($header)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * If specified, the match result will be inverted before checking. Default
-     * value is set to false.
-     *
-     * @param bool $invertMatch
-     */
-    public function setInvertMatch($invertMatch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvertMatch()
-    {
-    }
-    /**
-     * The value of the header must start with the contents of prefix_match.
-     *
-     * @param string $prefixMatch
-     */
-    public function setPrefixMatch($prefixMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefixMatch()
-    {
-    }
-    /**
-     * A header with header_name must exist. The match takes place whether or not
-     * the header has a value.
-     *
-     * @param bool $presentMatch
-     */
-    public function setPresentMatch($presentMatch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPresentMatch()
-    {
-    }
-    /**
-     * If specified, the rule will match if the request header value is within the
-     * range.
-     *
-     * @param HttpRouteHeaderMatchIntegerRange $rangeMatch
-     */
-    public function setRangeMatch(HttpRouteHeaderMatchIntegerRange $rangeMatch)
-    {
-    }
-    /**
-     * @return HttpRouteHeaderMatchIntegerRange
-     */
-    public function getRangeMatch()
-    {
-    }
-    /**
-     * The value of the header must match the regular expression specified in
-     * regex_match. For regular expression grammar, please see:
-     * https://github.com/google/re2/wiki/Syntax
-     *
-     * @param string $regexMatch
-     */
-    public function setRegexMatch($regexMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegexMatch()
-    {
-    }
-    /**
-     * The value of the header must end with the contents of suffix_match.
-     *
-     * @param string $suffixMatch
-     */
-    public function setSuffixMatch($suffixMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuffixMatch()
+    class Google_Service_NetworkServices_HttpRouteHeaderMatch extends \Google\Service\NetworkServices\HttpRouteHeaderMatch
     {
     }
 }

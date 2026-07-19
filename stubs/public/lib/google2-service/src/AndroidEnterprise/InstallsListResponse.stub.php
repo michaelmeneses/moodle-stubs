@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class InstallsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'install';
-    protected $installType = Install::class;
-    protected $installDataType = 'array';
-    /**
-     * An installation of an app for a user on a specific device. The existence of
-     * an install implies that the user must have an entitlement to the app.
-     *
-     * @param Install[] $install
-     */
-    public function setInstall($install)
+namespace Google\Service\AndroidEnterprise {
+    class InstallsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'install';
+        protected $installType = Install::class;
+        protected $installDataType = 'array';
+        /**
+         * An installation of an app for a user on a specific device. The existence of
+         * an install implies that the user must have an entitlement to the app.
+         *
+         * @param Install[] $install
+         */
+        public function setInstall($install)
+        {
+        }
+        /**
+         * @return Install[]
+         */
+        public function getInstall()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Install[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\InstallsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstall()
+    class Google_Service_AndroidEnterprise_InstallsListResponse extends \Google\Service\AndroidEnterprise\InstallsListResponse
     {
     }
 }

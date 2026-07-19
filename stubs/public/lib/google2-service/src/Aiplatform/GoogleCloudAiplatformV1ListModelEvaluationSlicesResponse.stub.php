@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'modelEvaluationSlices';
-    protected $modelEvaluationSlicesType = GoogleCloudAiplatformV1ModelEvaluationSlice::class;
-    protected $modelEvaluationSlicesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListModelEvaluationSlicesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of ModelEvaluations in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1ModelEvaluationSlice[] $modelEvaluationSlices
-     */
-    public function setModelEvaluationSlices($modelEvaluationSlices)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'modelEvaluationSlices';
+        protected $modelEvaluationSlicesType = GoogleCloudAiplatformV1ModelEvaluationSlice::class;
+        protected $modelEvaluationSlicesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListModelEvaluationSlicesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of ModelEvaluations in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1ModelEvaluationSlice[] $modelEvaluationSlices
+         */
+        public function setModelEvaluationSlices($modelEvaluationSlices)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelEvaluationSlice[]
+         */
+        public function getModelEvaluationSlices()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListModelEvaluationSlicesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelEvaluationSlice[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelEvaluationSlices()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListModelEvaluationSlicesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class AttributeTypeAndValue extends \Google\Model
-{
-    /**
-     * Attribute type is unspecified.
-     */
-    public const TYPE_ATTRIBUTE_TYPE_UNSPECIFIED = 'ATTRIBUTE_TYPE_UNSPECIFIED';
-    /**
-     * The "common name" of the subject.
-     */
-    public const TYPE_COMMON_NAME = 'COMMON_NAME';
-    /**
-     * The country code of the subject.
-     */
-    public const TYPE_COUNTRY_CODE = 'COUNTRY_CODE';
-    /**
-     * The organization of the subject.
-     */
-    public const TYPE_ORGANIZATION = 'ORGANIZATION';
-    /**
-     * The organizational unit of the subject.
-     */
-    public const TYPE_ORGANIZATIONAL_UNIT = 'ORGANIZATIONAL_UNIT';
-    /**
-     * The locality or city of the subject.
-     */
-    public const TYPE_LOCALITY = 'LOCALITY';
-    /**
-     * The province, territory, or regional state of the subject.
-     */
-    public const TYPE_PROVINCE = 'PROVINCE';
-    /**
-     * The street address of the subject.
-     */
-    public const TYPE_STREET_ADDRESS = 'STREET_ADDRESS';
-    /**
-     * The postal code of the subject.
-     */
-    public const TYPE_POSTAL_CODE = 'POSTAL_CODE';
-    protected $objectIdType = ObjectId::class;
-    protected $objectIdDataType = '';
-    /**
-     * The attribute type of the attribute and value pair.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The value for the attribute type.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Object ID for an attribute type of an attribute and value pair.
-     *
-     * @param ObjectId $objectId
-     */
-    public function setObjectId(ObjectId $objectId)
+namespace Google\Service\CertificateAuthorityService {
+    class AttributeTypeAndValue extends \Google\Model
     {
+        /**
+         * Attribute type is unspecified.
+         */
+        public const TYPE_ATTRIBUTE_TYPE_UNSPECIFIED = 'ATTRIBUTE_TYPE_UNSPECIFIED';
+        /**
+         * The "common name" of the subject.
+         */
+        public const TYPE_COMMON_NAME = 'COMMON_NAME';
+        /**
+         * The country code of the subject.
+         */
+        public const TYPE_COUNTRY_CODE = 'COUNTRY_CODE';
+        /**
+         * The organization of the subject.
+         */
+        public const TYPE_ORGANIZATION = 'ORGANIZATION';
+        /**
+         * The organizational unit of the subject.
+         */
+        public const TYPE_ORGANIZATIONAL_UNIT = 'ORGANIZATIONAL_UNIT';
+        /**
+         * The locality or city of the subject.
+         */
+        public const TYPE_LOCALITY = 'LOCALITY';
+        /**
+         * The province, territory, or regional state of the subject.
+         */
+        public const TYPE_PROVINCE = 'PROVINCE';
+        /**
+         * The street address of the subject.
+         */
+        public const TYPE_STREET_ADDRESS = 'STREET_ADDRESS';
+        /**
+         * The postal code of the subject.
+         */
+        public const TYPE_POSTAL_CODE = 'POSTAL_CODE';
+        protected $objectIdType = ObjectId::class;
+        protected $objectIdDataType = '';
+        /**
+         * The attribute type of the attribute and value pair.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The value for the attribute type.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Object ID for an attribute type of an attribute and value pair.
+         *
+         * @param ObjectId $objectId
+         */
+        public function setObjectId(ObjectId $objectId)
+        {
+        }
+        /**
+         * @return ObjectId
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The attribute type of the attribute and value pair.
+         *
+         * Accepted values: ATTRIBUTE_TYPE_UNSPECIFIED, COMMON_NAME, COUNTRY_CODE,
+         * ORGANIZATION, ORGANIZATIONAL_UNIT, LOCALITY, PROVINCE, STREET_ADDRESS,
+         * POSTAL_CODE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The value for the attribute type.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectId
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\AttributeTypeAndValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The attribute type of the attribute and value pair.
-     *
-     * Accepted values: ATTRIBUTE_TYPE_UNSPECIFIED, COMMON_NAME, COUNTRY_CODE,
-     * ORGANIZATION, ORGANIZATIONAL_UNIT, LOCALITY, PROVINCE, STREET_ADDRESS,
-     * POSTAL_CODE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The value for the attribute type.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CertificateAuthorityService_AttributeTypeAndValue extends \Google\Service\CertificateAuthorityService\AttributeTypeAndValue
     {
     }
 }

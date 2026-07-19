@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ImageTransformation extends \Google\Model
-{
-    protected $allInfoTypesType = GooglePrivacyDlpV2AllInfoTypes::class;
-    protected $allInfoTypesDataType = '';
-    protected $allTextType = GooglePrivacyDlpV2AllText::class;
-    protected $allTextDataType = '';
-    protected $redactionColorType = GooglePrivacyDlpV2Color::class;
-    protected $redactionColorDataType = '';
-    protected $selectedInfoTypesType = GooglePrivacyDlpV2SelectedInfoTypes::class;
-    protected $selectedInfoTypesDataType = '';
-    /**
-     * Apply transformation to all findings not specified in other
-     * ImageTransformation's selected_info_types. Only one instance is allowed
-     * within the ImageTransformations message.
-     *
-     * @param GooglePrivacyDlpV2AllInfoTypes $allInfoTypes
-     */
-    public function setAllInfoTypes(GooglePrivacyDlpV2AllInfoTypes $allInfoTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ImageTransformation extends \Google\Model
     {
+        protected $allInfoTypesType = GooglePrivacyDlpV2AllInfoTypes::class;
+        protected $allInfoTypesDataType = '';
+        protected $allTextType = GooglePrivacyDlpV2AllText::class;
+        protected $allTextDataType = '';
+        protected $redactionColorType = GooglePrivacyDlpV2Color::class;
+        protected $redactionColorDataType = '';
+        protected $selectedInfoTypesType = GooglePrivacyDlpV2SelectedInfoTypes::class;
+        protected $selectedInfoTypesDataType = '';
+        /**
+         * Apply transformation to all findings not specified in other
+         * ImageTransformation's selected_info_types. Only one instance is allowed
+         * within the ImageTransformations message.
+         *
+         * @param GooglePrivacyDlpV2AllInfoTypes $allInfoTypes
+         */
+        public function setAllInfoTypes(GooglePrivacyDlpV2AllInfoTypes $allInfoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AllInfoTypes
+         */
+        public function getAllInfoTypes()
+        {
+        }
+        /**
+         * Apply transformation to all text that doesn't match an infoType. Only one
+         * instance is allowed within the ImageTransformations message.
+         *
+         * @param GooglePrivacyDlpV2AllText $allText
+         */
+        public function setAllText(GooglePrivacyDlpV2AllText $allText)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AllText
+         */
+        public function getAllText()
+        {
+        }
+        /**
+         * The color to use when redacting content from an image. If not specified,
+         * the default is black.
+         *
+         * @param GooglePrivacyDlpV2Color $redactionColor
+         */
+        public function setRedactionColor(GooglePrivacyDlpV2Color $redactionColor)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Color
+         */
+        public function getRedactionColor()
+        {
+        }
+        /**
+         * Apply transformation to the selected info_types.
+         *
+         * @param GooglePrivacyDlpV2SelectedInfoTypes $selectedInfoTypes
+         */
+        public function setSelectedInfoTypes(GooglePrivacyDlpV2SelectedInfoTypes $selectedInfoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SelectedInfoTypes
+         */
+        public function getSelectedInfoTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AllInfoTypes
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ImageTransformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllInfoTypes()
-    {
-    }
-    /**
-     * Apply transformation to all text that doesn't match an infoType. Only one
-     * instance is allowed within the ImageTransformations message.
-     *
-     * @param GooglePrivacyDlpV2AllText $allText
-     */
-    public function setAllText(GooglePrivacyDlpV2AllText $allText)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2AllText
-     */
-    public function getAllText()
-    {
-    }
-    /**
-     * The color to use when redacting content from an image. If not specified,
-     * the default is black.
-     *
-     * @param GooglePrivacyDlpV2Color $redactionColor
-     */
-    public function setRedactionColor(GooglePrivacyDlpV2Color $redactionColor)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Color
-     */
-    public function getRedactionColor()
-    {
-    }
-    /**
-     * Apply transformation to the selected info_types.
-     *
-     * @param GooglePrivacyDlpV2SelectedInfoTypes $selectedInfoTypes
-     */
-    public function setSelectedInfoTypes(GooglePrivacyDlpV2SelectedInfoTypes $selectedInfoTypes)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SelectedInfoTypes
-     */
-    public function getSelectedInfoTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2ImageTransformation extends \Google\Service\DLP\GooglePrivacyDlpV2ImageTransformation
     {
     }
 }

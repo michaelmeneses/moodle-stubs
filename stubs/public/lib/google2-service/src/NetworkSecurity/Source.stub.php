@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class Source extends \Google\Collection
-{
-    protected $collection_key = 'principals';
-    /**
-     * Optional. List of CIDR ranges to match based on source IP address. At least
-     * one IP block should match. Single IP (e.g., "1.2.3.4") and CIDR (e.g.,
-     * "1.2.3.0/24") are supported. Authorization based on source IP alone should
-     * be avoided. The IP addresses of any load balancers or proxies should be
-     * considered untrusted.
-     *
-     * @var string[]
-     */
-    public $ipBlocks;
-    /**
-     * Optional. List of peer identities to match for authorization. At least one
-     * principal should match. Each peer can be an exact match, or a prefix match
-     * (example, "namespace") or a suffix match (example, "service-account") or a
-     * presence match "*". Authorization based on the principal name without
-     * certificate validation (configured by ServerTlsPolicy resource) is
-     * considered insecure.
-     *
-     * @var string[]
-     */
-    public $principals;
-    /**
-     * Optional. List of CIDR ranges to match based on source IP address. At least
-     * one IP block should match. Single IP (e.g., "1.2.3.4") and CIDR (e.g.,
-     * "1.2.3.0/24") are supported. Authorization based on source IP alone should
-     * be avoided. The IP addresses of any load balancers or proxies should be
-     * considered untrusted.
-     *
-     * @param string[] $ipBlocks
-     */
-    public function setIpBlocks($ipBlocks)
+namespace Google\Service\NetworkSecurity {
+    class Source extends \Google\Collection
     {
+        protected $collection_key = 'principals';
+        /**
+         * Optional. List of CIDR ranges to match based on source IP address. At least
+         * one IP block should match. Single IP (e.g., "1.2.3.4") and CIDR (e.g.,
+         * "1.2.3.0/24") are supported. Authorization based on source IP alone should
+         * be avoided. The IP addresses of any load balancers or proxies should be
+         * considered untrusted.
+         *
+         * @var string[]
+         */
+        public $ipBlocks;
+        /**
+         * Optional. List of peer identities to match for authorization. At least one
+         * principal should match. Each peer can be an exact match, or a prefix match
+         * (example, "namespace") or a suffix match (example, "service-account") or a
+         * presence match "*". Authorization based on the principal name without
+         * certificate validation (configured by ServerTlsPolicy resource) is
+         * considered insecure.
+         *
+         * @var string[]
+         */
+        public $principals;
+        /**
+         * Optional. List of CIDR ranges to match based on source IP address. At least
+         * one IP block should match. Single IP (e.g., "1.2.3.4") and CIDR (e.g.,
+         * "1.2.3.0/24") are supported. Authorization based on source IP alone should
+         * be avoided. The IP addresses of any load balancers or proxies should be
+         * considered untrusted.
+         *
+         * @param string[] $ipBlocks
+         */
+        public function setIpBlocks($ipBlocks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpBlocks()
+        {
+        }
+        /**
+         * Optional. List of peer identities to match for authorization. At least one
+         * principal should match. Each peer can be an exact match, or a prefix match
+         * (example, "namespace") or a suffix match (example, "service-account") or a
+         * presence match "*". Authorization based on the principal name without
+         * certificate validation (configured by ServerTlsPolicy resource) is
+         * considered insecure.
+         *
+         * @param string[] $principals
+         */
+        public function setPrincipals($principals)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrincipals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpBlocks()
-    {
-    }
-    /**
-     * Optional. List of peer identities to match for authorization. At least one
-     * principal should match. Each peer can be an exact match, or a prefix match
-     * (example, "namespace") or a suffix match (example, "service-account") or a
-     * presence match "*". Authorization based on the principal name without
-     * certificate validation (configured by ServerTlsPolicy resource) is
-     * considered insecure.
-     *
-     * @param string[] $principals
-     */
-    public function setPrincipals($principals)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrincipals()
+    class Google_Service_NetworkSecurity_Source extends \Google\Service\NetworkSecurity\Source
     {
     }
 }

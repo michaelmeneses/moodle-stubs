@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ScheduledMaintenance extends \Google\Model
-{
-    /**
-     * Output only. The start time (UTC) of the scheduled maintenance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The start time (UTC) of the scheduled maintenance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ScheduledMaintenance extends \Google\Model
     {
+        /**
+         * Output only. The start time (UTC) of the scheduled maintenance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The start time (UTC) of the scheduled maintenance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ScheduledMaintenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ScheduledMaintenance extends \Google\Service\Apigee\GoogleCloudApigeeV1ScheduledMaintenance
     {
     }
 }

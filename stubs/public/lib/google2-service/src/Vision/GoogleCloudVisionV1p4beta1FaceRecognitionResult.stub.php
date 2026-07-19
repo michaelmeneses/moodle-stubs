@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p4beta1FaceRecognitionResult extends \Google\Model
-{
-    protected $celebrityType = GoogleCloudVisionV1p4beta1Celebrity::class;
-    protected $celebrityDataType = '';
-    /**
-     * Recognition confidence. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The Celebrity that this face was matched to.
-     *
-     * @param GoogleCloudVisionV1p4beta1Celebrity $celebrity
-     */
-    public function setCelebrity(GoogleCloudVisionV1p4beta1Celebrity $celebrity)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p4beta1FaceRecognitionResult extends \Google\Model
     {
+        protected $celebrityType = GoogleCloudVisionV1p4beta1Celebrity::class;
+        protected $celebrityDataType = '';
+        /**
+         * Recognition confidence. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The Celebrity that this face was matched to.
+         *
+         * @param GoogleCloudVisionV1p4beta1Celebrity $celebrity
+         */
+        public function setCelebrity(GoogleCloudVisionV1p4beta1Celebrity $celebrity)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p4beta1Celebrity
+         */
+        public function getCelebrity()
+        {
+        }
+        /**
+         * Recognition confidence. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p4beta1Celebrity
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p4beta1FaceRecognitionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCelebrity()
-    {
-    }
-    /**
-     * Recognition confidence. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
+    class Google_Service_Vision_GoogleCloudVisionV1p4beta1FaceRecognitionResult extends \Google\Service\Vision\GoogleCloudVisionV1p4beta1FaceRecognitionResult
     {
     }
 }

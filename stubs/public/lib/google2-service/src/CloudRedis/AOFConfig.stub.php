@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class AOFConfig extends \Google\Model
-{
-    /**
-     * Not set. Default: EVERYSEC
-     */
-    public const APPEND_FSYNC_APPEND_FSYNC_UNSPECIFIED = 'APPEND_FSYNC_UNSPECIFIED';
-    /**
-     * Never fsync. Normally Linux will flush data every 30 seconds with this
-     * configuration, but it's up to the kernel's exact tuning.
-     */
-    public const APPEND_FSYNC_NO = 'NO';
-    /**
-     * fsync every second. Fast enough, and you may lose 1 second of data if there
-     * is a disaster
-     */
-    public const APPEND_FSYNC_EVERYSEC = 'EVERYSEC';
-    /**
-     * fsync every time new write commands are appended to the AOF. It has the
-     * best data loss protection at the cost of performance
-     */
-    public const APPEND_FSYNC_ALWAYS = 'ALWAYS';
-    /**
-     * Optional. fsync configuration.
-     *
-     * @var string
-     */
-    public $appendFsync;
-    /**
-     * Optional. fsync configuration.
-     *
-     * Accepted values: APPEND_FSYNC_UNSPECIFIED, NO, EVERYSEC, ALWAYS
-     *
-     * @param self::APPEND_FSYNC_* $appendFsync
-     */
-    public function setAppendFsync($appendFsync)
+namespace Google\Service\CloudRedis {
+    class AOFConfig extends \Google\Model
     {
+        /**
+         * Not set. Default: EVERYSEC
+         */
+        public const APPEND_FSYNC_APPEND_FSYNC_UNSPECIFIED = 'APPEND_FSYNC_UNSPECIFIED';
+        /**
+         * Never fsync. Normally Linux will flush data every 30 seconds with this
+         * configuration, but it's up to the kernel's exact tuning.
+         */
+        public const APPEND_FSYNC_NO = 'NO';
+        /**
+         * fsync every second. Fast enough, and you may lose 1 second of data if there
+         * is a disaster
+         */
+        public const APPEND_FSYNC_EVERYSEC = 'EVERYSEC';
+        /**
+         * fsync every time new write commands are appended to the AOF. It has the
+         * best data loss protection at the cost of performance
+         */
+        public const APPEND_FSYNC_ALWAYS = 'ALWAYS';
+        /**
+         * Optional. fsync configuration.
+         *
+         * @var string
+         */
+        public $appendFsync;
+        /**
+         * Optional. fsync configuration.
+         *
+         * Accepted values: APPEND_FSYNC_UNSPECIFIED, NO, EVERYSEC, ALWAYS
+         *
+         * @param self::APPEND_FSYNC_* $appendFsync
+         */
+        public function setAppendFsync($appendFsync)
+        {
+        }
+        /**
+         * @return self::APPEND_FSYNC_*
+         */
+        public function getAppendFsync()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::APPEND_FSYNC_*
+     * Runtime class alias of \Google\Service\CloudRedis\AOFConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppendFsync()
+    class Google_Service_CloudRedis_AOFConfig extends \Google\Service\CloudRedis\AOFConfig
     {
     }
 }

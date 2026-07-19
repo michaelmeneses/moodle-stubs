@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExecuteToolResponse extends \Google\Model
-{
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Output from the tool execution.
-     *
-     * @var array[]
-     */
-    public $result;
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Connectors {
+    class ExecuteToolResponse extends \Google\Model
     {
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Output from the tool execution.
+         *
+         * @var array[]
+         */
+        public $result;
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output from the tool execution.
+         *
+         * @param array[] $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ExecuteToolResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output from the tool execution.
-     *
-     * @param array[] $result
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResult()
+    class Google_Service_Connectors_ExecuteToolResponse extends \Google\Service\Connectors\ExecuteToolResponse
     {
     }
 }

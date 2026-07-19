@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2PubSubExpressions extends \Google\Collection
-{
-    /**
-     * Unused.
-     */
-    public const LOGICAL_OPERATOR_LOGICAL_OPERATOR_UNSPECIFIED = 'LOGICAL_OPERATOR_UNSPECIFIED';
-    /**
-     * Conditional OR.
-     */
-    public const LOGICAL_OPERATOR_OR = 'OR';
-    /**
-     * Conditional AND.
-     */
-    public const LOGICAL_OPERATOR_AND = 'AND';
-    protected $collection_key = 'conditions';
-    protected $conditionsType = GooglePrivacyDlpV2PubSubCondition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * The operator to apply to the collection of conditions.
-     *
-     * @var string
-     */
-    public $logicalOperator;
-    /**
-     * Conditions to apply to the expression.
-     *
-     * @param GooglePrivacyDlpV2PubSubCondition[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2PubSubExpressions extends \Google\Collection
     {
+        /**
+         * Unused.
+         */
+        public const LOGICAL_OPERATOR_LOGICAL_OPERATOR_UNSPECIFIED = 'LOGICAL_OPERATOR_UNSPECIFIED';
+        /**
+         * Conditional OR.
+         */
+        public const LOGICAL_OPERATOR_OR = 'OR';
+        /**
+         * Conditional AND.
+         */
+        public const LOGICAL_OPERATOR_AND = 'AND';
+        protected $collection_key = 'conditions';
+        protected $conditionsType = GooglePrivacyDlpV2PubSubCondition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * The operator to apply to the collection of conditions.
+         *
+         * @var string
+         */
+        public $logicalOperator;
+        /**
+         * Conditions to apply to the expression.
+         *
+         * @param GooglePrivacyDlpV2PubSubCondition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PubSubCondition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * The operator to apply to the collection of conditions.
+         *
+         * Accepted values: LOGICAL_OPERATOR_UNSPECIFIED, OR, AND
+         *
+         * @param self::LOGICAL_OPERATOR_* $logicalOperator
+         */
+        public function setLogicalOperator($logicalOperator)
+        {
+        }
+        /**
+         * @return self::LOGICAL_OPERATOR_*
+         */
+        public function getLogicalOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2PubSubCondition[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2PubSubExpressions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * The operator to apply to the collection of conditions.
-     *
-     * Accepted values: LOGICAL_OPERATOR_UNSPECIFIED, OR, AND
-     *
-     * @param self::LOGICAL_OPERATOR_* $logicalOperator
-     */
-    public function setLogicalOperator($logicalOperator)
-    {
-    }
-    /**
-     * @return self::LOGICAL_OPERATOR_*
-     */
-    public function getLogicalOperator()
+    class Google_Service_DLP_GooglePrivacyDlpV2PubSubExpressions extends \Google\Service\DLP\GooglePrivacyDlpV2PubSubExpressions
     {
     }
 }

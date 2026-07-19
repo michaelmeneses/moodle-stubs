@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectorConfigurationEndpoint extends \Google\Model
-{
-    /**
-     * Host and port in a format of `hostname:port` as defined in
-     * https://www.ietf.org/rfc/rfc3986.html#section-3.2.2 and
-     * https://www.ietf.org/rfc/rfc3986.html#section-3.2.3.
-     *
-     * @var string
-     */
-    public $hostPort;
-    /**
-     * Host and port in a format of `hostname:port` as defined in
-     * https://www.ietf.org/rfc/rfc3986.html#section-3.2.2 and
-     * https://www.ietf.org/rfc/rfc3986.html#section-3.2.3.
-     *
-     * @param string $hostPort
-     */
-    public function setHostPort($hostPort)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectorConfigurationEndpoint extends \Google\Model
     {
+        /**
+         * Host and port in a format of `hostname:port` as defined in
+         * https://www.ietf.org/rfc/rfc3986.html#section-3.2.2 and
+         * https://www.ietf.org/rfc/rfc3986.html#section-3.2.3.
+         *
+         * @var string
+         */
+        public $hostPort;
+        /**
+         * Host and port in a format of `hostname:port` as defined in
+         * https://www.ietf.org/rfc/rfc3986.html#section-3.2.2 and
+         * https://www.ietf.org/rfc/rfc3986.html#section-3.2.3.
+         *
+         * @param string $hostPort
+         */
+        public function setHostPort($hostPort)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectorConfigurationEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostPort()
+    class Google_Service_BigQueryConnectionService_ConnectorConfigurationEndpoint extends \Google\Service\BigQueryConnectionService\ConnectorConfigurationEndpoint
     {
     }
 }

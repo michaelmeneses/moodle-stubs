@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1ImageProperties extends \Google\Model
-{
-    protected $dominantColorsType = GoogleCloudVisionV1p2beta1DominantColorsAnnotation::class;
-    protected $dominantColorsDataType = '';
-    /**
-     * If present, dominant colors completed successfully.
-     *
-     * @param GoogleCloudVisionV1p2beta1DominantColorsAnnotation $dominantColors
-     */
-    public function setDominantColors(GoogleCloudVisionV1p2beta1DominantColorsAnnotation $dominantColors)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1ImageProperties extends \Google\Model
     {
+        protected $dominantColorsType = GoogleCloudVisionV1p2beta1DominantColorsAnnotation::class;
+        protected $dominantColorsDataType = '';
+        /**
+         * If present, dominant colors completed successfully.
+         *
+         * @param GoogleCloudVisionV1p2beta1DominantColorsAnnotation $dominantColors
+         */
+        public function setDominantColors(GoogleCloudVisionV1p2beta1DominantColorsAnnotation $dominantColors)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1DominantColorsAnnotation
+         */
+        public function getDominantColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p2beta1DominantColorsAnnotation
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1ImageProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDominantColors()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1ImageProperties extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1ImageProperties
     {
     }
 }

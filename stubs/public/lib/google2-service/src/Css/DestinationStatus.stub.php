@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class DestinationStatus extends \Google\Collection
-{
-    protected $collection_key = 'pendingCountries';
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
-     * approved.
-     *
-     * @var string[]
-     */
-    public $approvedCountries;
-    /**
-     * The name of the destination
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
-     * disapproved.
-     *
-     * @var string[]
-     */
-    public $disapprovedCountries;
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is pending
-     * approval.
-     *
-     * @var string[]
-     */
-    public $pendingCountries;
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
-     * approved.
-     *
-     * @param string[] $approvedCountries
-     */
-    public function setApprovedCountries($approvedCountries)
+namespace Google\Service\Css {
+    class DestinationStatus extends \Google\Collection
     {
+        protected $collection_key = 'pendingCountries';
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
+         * approved.
+         *
+         * @var string[]
+         */
+        public $approvedCountries;
+        /**
+         * The name of the destination
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
+         * disapproved.
+         *
+         * @var string[]
+         */
+        public $disapprovedCountries;
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is pending
+         * approval.
+         *
+         * @var string[]
+         */
+        public $pendingCountries;
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
+         * approved.
+         *
+         * @param string[] $approvedCountries
+         */
+        public function setApprovedCountries($approvedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApprovedCountries()
+        {
+        }
+        /**
+         * The name of the destination
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
+         * disapproved.
+         *
+         * @param string[] $disapprovedCountries
+         */
+        public function setDisapprovedCountries($disapprovedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisapprovedCountries()
+        {
+        }
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is pending
+         * approval.
+         *
+         * @param string[] $pendingCountries
+         */
+        public function setPendingCountries($pendingCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPendingCountries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Css\DestinationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovedCountries()
-    {
-    }
-    /**
-     * The name of the destination
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
-     * disapproved.
-     *
-     * @param string[] $disapprovedCountries
-     */
-    public function setDisapprovedCountries($disapprovedCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisapprovedCountries()
-    {
-    }
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the CSS Product is pending
-     * approval.
-     *
-     * @param string[] $pendingCountries
-     */
-    public function setPendingCountries($pendingCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPendingCountries()
+    class Google_Service_Css_DestinationStatus extends \Google\Service\Css\DestinationStatus
     {
     }
 }

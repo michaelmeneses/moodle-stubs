@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class BoundedTrie extends \Google\Collection
-{
-    protected $collection_key = 'singleton';
-    /**
-     * The maximum number of elements to store before truncation.
-     *
-     * @var int
-     */
-    public $bound;
-    protected $rootType = BoundedTrieNode::class;
-    protected $rootDataType = '';
-    /**
-     * A more efficient representation for metrics consisting of a single value.
-     *
-     * @var string[]
-     */
-    public $singleton;
-    /**
-     * The maximum number of elements to store before truncation.
-     *
-     * @param int $bound
-     */
-    public function setBound($bound)
+namespace Google\Service\Dataflow {
+    class BoundedTrie extends \Google\Collection
     {
+        protected $collection_key = 'singleton';
+        /**
+         * The maximum number of elements to store before truncation.
+         *
+         * @var int
+         */
+        public $bound;
+        protected $rootType = BoundedTrieNode::class;
+        protected $rootDataType = '';
+        /**
+         * A more efficient representation for metrics consisting of a single value.
+         *
+         * @var string[]
+         */
+        public $singleton;
+        /**
+         * The maximum number of elements to store before truncation.
+         *
+         * @param int $bound
+         */
+        public function setBound($bound)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBound()
+        {
+        }
+        /**
+         * A compact representation of all the elements in this trie.
+         *
+         * @param BoundedTrieNode $root
+         */
+        public function setRoot(BoundedTrieNode $root)
+        {
+        }
+        /**
+         * @return BoundedTrieNode
+         */
+        public function getRoot()
+        {
+        }
+        /**
+         * A more efficient representation for metrics consisting of a single value.
+         *
+         * @param string[] $singleton
+         */
+        public function setSingleton($singleton)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSingleton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\BoundedTrie registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBound()
-    {
-    }
-    /**
-     * A compact representation of all the elements in this trie.
-     *
-     * @param BoundedTrieNode $root
-     */
-    public function setRoot(BoundedTrieNode $root)
-    {
-    }
-    /**
-     * @return BoundedTrieNode
-     */
-    public function getRoot()
-    {
-    }
-    /**
-     * A more efficient representation for metrics consisting of a single value.
-     *
-     * @param string[] $singleton
-     */
-    public function setSingleton($singleton)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSingleton()
+    class Google_Service_Dataflow_BoundedTrie extends \Google\Service\Dataflow\BoundedTrie
     {
     }
 }

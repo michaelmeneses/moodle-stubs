@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateConditionalFormatRuleRequest extends \Google\Model
-{
-    /**
-     * The zero-based index of the rule that should be replaced or moved.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * The zero-based new index the rule should end up at.
-     *
-     * @var int
-     */
-    public $newIndex;
-    protected $ruleType = ConditionalFormatRule::class;
-    protected $ruleDataType = '';
-    /**
-     * The sheet of the rule to move. Required if new_index is set, unused
-     * otherwise.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The zero-based index of the rule that should be replaced or moved.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Sheets {
+    class UpdateConditionalFormatRuleRequest extends \Google\Model
     {
+        /**
+         * The zero-based index of the rule that should be replaced or moved.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * The zero-based new index the rule should end up at.
+         *
+         * @var int
+         */
+        public $newIndex;
+        protected $ruleType = ConditionalFormatRule::class;
+        protected $ruleDataType = '';
+        /**
+         * The sheet of the rule to move. Required if new_index is set, unused
+         * otherwise.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The zero-based index of the rule that should be replaced or moved.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The zero-based new index the rule should end up at.
+         *
+         * @param int $newIndex
+         */
+        public function setNewIndex($newIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNewIndex()
+        {
+        }
+        /**
+         * The rule that should replace the rule at the given index.
+         *
+         * @param ConditionalFormatRule $rule
+         */
+        public function setRule(ConditionalFormatRule $rule)
+        {
+        }
+        /**
+         * @return ConditionalFormatRule
+         */
+        public function getRule()
+        {
+        }
+        /**
+         * The sheet of the rule to move. Required if new_index is set, unused
+         * otherwise.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\UpdateConditionalFormatRuleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * The zero-based new index the rule should end up at.
-     *
-     * @param int $newIndex
-     */
-    public function setNewIndex($newIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNewIndex()
-    {
-    }
-    /**
-     * The rule that should replace the rule at the given index.
-     *
-     * @param ConditionalFormatRule $rule
-     */
-    public function setRule(ConditionalFormatRule $rule)
-    {
-    }
-    /**
-     * @return ConditionalFormatRule
-     */
-    public function getRule()
-    {
-    }
-    /**
-     * The sheet of the rule to move. Required if new_index is set, unused
-     * otherwise.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_UpdateConditionalFormatRuleRequest extends \Google\Service\Sheets\UpdateConditionalFormatRuleRequest
     {
     }
 }

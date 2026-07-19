@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class UserRewardedContentTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * User rewarded content is not specified or is unknown in this version.
-     */
-    public const USER_REWARDED_CONTENT_USER_REWARDED_CONTENT_UNSPECIFIED = 'USER_REWARDED_CONTENT_UNSPECIFIED';
-    /**
-     * Represents ads where the user will see a reward after viewing.
-     */
-    public const USER_REWARDED_CONTENT_USER_REWARDED_CONTENT_USER_REWARDED = 'USER_REWARDED_CONTENT_USER_REWARDED';
-    /**
-     * Represents all other ads besides user-rewarded.
-     */
-    public const USER_REWARDED_CONTENT_USER_REWARDED_CONTENT_NOT_USER_REWARDED = 'USER_REWARDED_CONTENT_NOT_USER_REWARDED';
-    /**
-     * Output only. User rewarded content status for video ads.
-     *
-     * @var string
-     */
-    public $userRewardedContent;
-    /**
-     * Output only. User rewarded content status for video ads.
-     *
-     * Accepted values: USER_REWARDED_CONTENT_UNSPECIFIED,
-     * USER_REWARDED_CONTENT_USER_REWARDED,
-     * USER_REWARDED_CONTENT_NOT_USER_REWARDED
-     *
-     * @param self::USER_REWARDED_CONTENT_* $userRewardedContent
-     */
-    public function setUserRewardedContent($userRewardedContent)
+namespace Google\Service\DisplayVideo {
+    class UserRewardedContentTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * User rewarded content is not specified or is unknown in this version.
+         */
+        public const USER_REWARDED_CONTENT_USER_REWARDED_CONTENT_UNSPECIFIED = 'USER_REWARDED_CONTENT_UNSPECIFIED';
+        /**
+         * Represents ads where the user will see a reward after viewing.
+         */
+        public const USER_REWARDED_CONTENT_USER_REWARDED_CONTENT_USER_REWARDED = 'USER_REWARDED_CONTENT_USER_REWARDED';
+        /**
+         * Represents all other ads besides user-rewarded.
+         */
+        public const USER_REWARDED_CONTENT_USER_REWARDED_CONTENT_NOT_USER_REWARDED = 'USER_REWARDED_CONTENT_NOT_USER_REWARDED';
+        /**
+         * Output only. User rewarded content status for video ads.
+         *
+         * @var string
+         */
+        public $userRewardedContent;
+        /**
+         * Output only. User rewarded content status for video ads.
+         *
+         * Accepted values: USER_REWARDED_CONTENT_UNSPECIFIED,
+         * USER_REWARDED_CONTENT_USER_REWARDED,
+         * USER_REWARDED_CONTENT_NOT_USER_REWARDED
+         *
+         * @param self::USER_REWARDED_CONTENT_* $userRewardedContent
+         */
+        public function setUserRewardedContent($userRewardedContent)
+        {
+        }
+        /**
+         * @return self::USER_REWARDED_CONTENT_*
+         */
+        public function getUserRewardedContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::USER_REWARDED_CONTENT_*
+     * Runtime class alias of \Google\Service\DisplayVideo\UserRewardedContentTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserRewardedContent()
+    class Google_Service_DisplayVideo_UserRewardedContentTargetingOptionDetails extends \Google\Service\DisplayVideo\UserRewardedContentTargetingOptionDetails
     {
     }
 }

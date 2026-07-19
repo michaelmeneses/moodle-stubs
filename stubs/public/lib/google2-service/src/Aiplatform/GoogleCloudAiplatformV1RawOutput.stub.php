@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RawOutput extends \Google\Collection
-{
-    protected $collection_key = 'rawOutput';
-    /**
-     * Output only. Raw output string.
-     *
-     * @var string[]
-     */
-    public $rawOutput;
-    /**
-     * Output only. Raw output string.
-     *
-     * @param string[] $rawOutput
-     */
-    public function setRawOutput($rawOutput)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RawOutput extends \Google\Collection
     {
+        protected $collection_key = 'rawOutput';
+        /**
+         * Output only. Raw output string.
+         *
+         * @var string[]
+         */
+        public $rawOutput;
+        /**
+         * Output only. Raw output string.
+         *
+         * @param string[] $rawOutput
+         */
+        public function setRawOutput($rawOutput)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRawOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RawOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRawOutput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RawOutput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RawOutput
     {
     }
 }

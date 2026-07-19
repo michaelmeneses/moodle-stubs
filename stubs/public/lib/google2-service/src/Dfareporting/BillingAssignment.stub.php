@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class BillingAssignment extends \Google\Model
-{
-    /**
-     * ID of the account associated with the billing assignment.This is a read-
-     * only, auto-generated field.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * ID of the advertiser associated with the billing assignment.Wildcard (*)
-     * means this assignment is not limited to a single advertiser
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * ID of the campaign associated with the billing assignment. Wildcard (*)
-     * means this assignment is not limited to a single campaign
-     *
-     * @var string
-     */
-    public $campaignId;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#billingAssignment".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ID of the subaccount associated with the billing assignment.Wildcard (*)
-     * means this assignment is not limited to a single subaccountThis is a read-
-     * only, auto-generated field.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * ID of the account associated with the billing assignment.This is a read-
-     * only, auto-generated field.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class BillingAssignment extends \Google\Model
     {
+        /**
+         * ID of the account associated with the billing assignment.This is a read-
+         * only, auto-generated field.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * ID of the advertiser associated with the billing assignment.Wildcard (*)
+         * means this assignment is not limited to a single advertiser
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * ID of the campaign associated with the billing assignment. Wildcard (*)
+         * means this assignment is not limited to a single campaign
+         *
+         * @var string
+         */
+        public $campaignId;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#billingAssignment".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ID of the subaccount associated with the billing assignment.Wildcard (*)
+         * means this assignment is not limited to a single subaccountThis is a read-
+         * only, auto-generated field.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * ID of the account associated with the billing assignment.This is a read-
+         * only, auto-generated field.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * ID of the advertiser associated with the billing assignment.Wildcard (*)
+         * means this assignment is not limited to a single advertiser
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * ID of the campaign associated with the billing assignment. Wildcard (*)
+         * means this assignment is not limited to a single campaign
+         *
+         * @param string $campaignId
+         */
+        public function setCampaignId($campaignId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCampaignId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#billingAssignment".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * ID of the subaccount associated with the billing assignment.Wildcard (*)
+         * means this assignment is not limited to a single subaccountThis is a read-
+         * only, auto-generated field.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\BillingAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * ID of the advertiser associated with the billing assignment.Wildcard (*)
-     * means this assignment is not limited to a single advertiser
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * ID of the campaign associated with the billing assignment. Wildcard (*)
-     * means this assignment is not limited to a single campaign
-     *
-     * @param string $campaignId
-     */
-    public function setCampaignId($campaignId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCampaignId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#billingAssignment".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * ID of the subaccount associated with the billing assignment.Wildcard (*)
-     * means this assignment is not limited to a single subaccountThis is a read-
-     * only, auto-generated field.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
+    class Google_Service_Dfareporting_BillingAssignment extends \Google\Service\Dfareporting\BillingAssignment
     {
     }
 }

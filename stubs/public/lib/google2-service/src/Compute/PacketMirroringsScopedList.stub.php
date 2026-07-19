@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PacketMirroringsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'packetMirrorings';
-    protected $packetMirroringsType = PacketMirroring::class;
-    protected $packetMirroringsDataType = 'array';
-    protected $warningType = PacketMirroringsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of packetMirrorings contained in this scope.
-     *
-     * @param PacketMirroring[] $packetMirrorings
-     */
-    public function setPacketMirrorings($packetMirrorings)
+namespace Google\Service\Compute {
+    class PacketMirroringsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'packetMirrorings';
+        protected $packetMirroringsType = PacketMirroring::class;
+        protected $packetMirroringsDataType = 'array';
+        protected $warningType = PacketMirroringsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of packetMirrorings contained in this scope.
+         *
+         * @param PacketMirroring[] $packetMirrorings
+         */
+        public function setPacketMirrorings($packetMirrorings)
+        {
+        }
+        /**
+         * @return PacketMirroring[]
+         */
+        public function getPacketMirrorings()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of packetMirrorings when the
+         * list is empty.
+         *
+         * @param PacketMirroringsScopedListWarning $warning
+         */
+        public function setWarning(PacketMirroringsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return PacketMirroringsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PacketMirroring[]
+     * Runtime class alias of \Google\Service\Compute\PacketMirroringsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPacketMirrorings()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of packetMirrorings when the
-     * list is empty.
-     *
-     * @param PacketMirroringsScopedListWarning $warning
-     */
-    public function setWarning(PacketMirroringsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return PacketMirroringsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_PacketMirroringsScopedList extends \Google\Service\Compute\PacketMirroringsScopedList
     {
     }
 }

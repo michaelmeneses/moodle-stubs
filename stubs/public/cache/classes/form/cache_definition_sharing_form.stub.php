@@ -20,40 +20,52 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache\form;
-
-/**
- * Form to set definition sharing option
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2013 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class cache_definition_sharing_form extends moodleform
-{
+namespace core_cache\form {
+    use core_cache\administration_helper;
+    use core_cache\definition;
+    use moodleform;
     /**
-     * The definition of the form
-     */
-    final protected function definition()
-    {
-    }
-    /**
-     * Sets the data for this form.
+     * Form to set definition sharing option
      *
-     * @param array $data
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2013 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function set_data($data)
+    class cache_definition_sharing_form extends moodleform
     {
+        /**
+         * The definition of the form
+         */
+        final protected function definition()
+        {
+        }
+        /**
+         * Sets the data for this form.
+         *
+         * @param array $data
+         */
+        public function set_data($data)
+        {
+        }
+        /**
+         * Validates this form
+         *
+         * @param array $data
+         * @param array $files
+         * @return array
+         */
+        public function validation($data, $files)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Validates this form
-     *
-     * @param array $data
-     * @param array $files
-     * @return array
+     * Runtime class alias of \core_cache\form\cache_definition_sharing_form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function validation($data, $files)
+    class cache_definition_sharing_form extends \core_cache\form\cache_definition_sharing_form
     {
     }
 }

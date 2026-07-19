@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "liveChatBans" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $liveChatBans = $youtubeService->liveChatBans;
- *  </code>
- */
-class LiveChatBans extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\LiveChatBan;
     /**
-     * Deletes a chat ban. (liveChatBans.delete)
-     *
-     * @param string $id
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "liveChatBans" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $liveChatBans = $youtubeService->liveChatBans;
+     *  </code>
      */
-    public function delete($id, $optParams = [])
+    class LiveChatBans extends \Google\Service\Resource
     {
+        /**
+         * Deletes a chat ban. (liveChatBans.delete)
+         *
+         * @param string $id
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new resource into this collection. (liveChatBans.insert)
+         *
+         * @param string|array $part The *part* parameter serves two purposes in this
+         * operation. It identifies the properties that the write operation will set as
+         * well as the properties that the API response returns. Set the parameter value
+         * to snippet.
+         * @param LiveChatBan $postBody
+         * @param array $optParams Optional parameters.
+         * @return LiveChatBan
+         * @throws \Google\Service\Exception
+         */
+        public function insert($part, LiveChatBan $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new resource into this collection. (liveChatBans.insert)
-     *
-     * @param string|array $part The *part* parameter serves two purposes in this
-     * operation. It identifies the properties that the write operation will set as
-     * well as the properties that the API response returns. Set the parameter value
-     * to snippet.
-     * @param LiveChatBan $postBody
-     * @param array $optParams Optional parameters.
-     * @return LiveChatBan
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTube\Resource\LiveChatBans registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($part, LiveChatBan $postBody, $optParams = [])
+    class Google_Service_YouTube_Resource_LiveChatBans extends \Google\Service\YouTube\Resource\LiveChatBans
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ListAppGatewaysResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $appGatewaysType = AppGateway::class;
-    protected $appGatewaysDataType = 'array';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of BeyondCorp AppGateways in the project.
-     *
-     * @param AppGateway[] $appGateways
-     */
-    public function setAppGateways($appGateways)
+namespace Google\Service\BeyondCorp {
+    class ListAppGatewaysResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $appGatewaysType = AppGateway::class;
+        protected $appGatewaysDataType = 'array';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of BeyondCorp AppGateways in the project.
+         *
+         * @param AppGateway[] $appGateways
+         */
+        public function setAppGateways($appGateways)
+        {
+        }
+        /**
+         * @return AppGateway[]
+         */
+        public function getAppGateways()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppGateway[]
+     * Runtime class alias of \Google\Service\BeyondCorp\ListAppGatewaysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppGateways()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_ListAppGatewaysResponse extends \Google\Service\BeyondCorp\ListAppGatewaysResponse
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ResourceMaintenanceInfo extends \Google\Collection
-{
-    protected $collection_key = 'denyMaintenanceSchedules';
-    protected $denyMaintenanceSchedulesType = ResourceMaintenanceDenySchedule::class;
-    protected $denyMaintenanceSchedulesDataType = 'array';
-    protected $maintenanceScheduleType = ResourceMaintenanceSchedule::class;
-    protected $maintenanceScheduleDataType = '';
-    /**
-     * Optional. Current Maintenance version of the database resource. Example:
-     * "MYSQL_8_0_41.R20250531.01_15"
-     *
-     * @var string
-     */
-    public $maintenanceVersion;
-    /**
-     * Optional. List of Deny maintenance period for the database resource.
-     *
-     * @param ResourceMaintenanceDenySchedule[] $denyMaintenanceSchedules
-     */
-    public function setDenyMaintenanceSchedules($denyMaintenanceSchedules)
+namespace Google\Service\CloudRedis {
+    class ResourceMaintenanceInfo extends \Google\Collection
     {
+        protected $collection_key = 'denyMaintenanceSchedules';
+        protected $denyMaintenanceSchedulesType = ResourceMaintenanceDenySchedule::class;
+        protected $denyMaintenanceSchedulesDataType = 'array';
+        protected $maintenanceScheduleType = ResourceMaintenanceSchedule::class;
+        protected $maintenanceScheduleDataType = '';
+        /**
+         * Optional. Current Maintenance version of the database resource. Example:
+         * "MYSQL_8_0_41.R20250531.01_15"
+         *
+         * @var string
+         */
+        public $maintenanceVersion;
+        /**
+         * Optional. List of Deny maintenance period for the database resource.
+         *
+         * @param ResourceMaintenanceDenySchedule[] $denyMaintenanceSchedules
+         */
+        public function setDenyMaintenanceSchedules($denyMaintenanceSchedules)
+        {
+        }
+        /**
+         * @return ResourceMaintenanceDenySchedule[]
+         */
+        public function getDenyMaintenanceSchedules()
+        {
+        }
+        /**
+         * Optional. Maintenance window for the database resource.
+         *
+         * @param ResourceMaintenanceSchedule $maintenanceSchedule
+         */
+        public function setMaintenanceSchedule(ResourceMaintenanceSchedule $maintenanceSchedule)
+        {
+        }
+        /**
+         * @return ResourceMaintenanceSchedule
+         */
+        public function getMaintenanceSchedule()
+        {
+        }
+        /**
+         * Optional. Current Maintenance version of the database resource. Example:
+         * "MYSQL_8_0_41.R20250531.01_15"
+         *
+         * @param string $maintenanceVersion
+         */
+        public function setMaintenanceVersion($maintenanceVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaintenanceVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceMaintenanceDenySchedule[]
+     * Runtime class alias of \Google\Service\CloudRedis\ResourceMaintenanceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDenyMaintenanceSchedules()
-    {
-    }
-    /**
-     * Optional. Maintenance window for the database resource.
-     *
-     * @param ResourceMaintenanceSchedule $maintenanceSchedule
-     */
-    public function setMaintenanceSchedule(ResourceMaintenanceSchedule $maintenanceSchedule)
-    {
-    }
-    /**
-     * @return ResourceMaintenanceSchedule
-     */
-    public function getMaintenanceSchedule()
-    {
-    }
-    /**
-     * Optional. Current Maintenance version of the database resource. Example:
-     * "MYSQL_8_0_41.R20250531.01_15"
-     *
-     * @param string $maintenanceVersion
-     */
-    public function setMaintenanceVersion($maintenanceVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaintenanceVersion()
+    class Google_Service_CloudRedis_ResourceMaintenanceInfo extends \Google\Service\CloudRedis\ResourceMaintenanceInfo
     {
     }
 }

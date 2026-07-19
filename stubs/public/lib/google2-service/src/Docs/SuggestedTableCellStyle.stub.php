@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedTableCellStyle extends \Google\Model
-{
-    protected $tableCellStyleType = TableCellStyle::class;
-    protected $tableCellStyleDataType = '';
-    protected $tableCellStyleSuggestionStateType = TableCellStyleSuggestionState::class;
-    protected $tableCellStyleSuggestionStateDataType = '';
-    /**
-     * A TableCellStyle that only includes the changes made in this suggestion.
-     * This can be used along with the table_cell_style_suggestion_state to see
-     * which fields have changed and their new values.
-     *
-     * @param TableCellStyle $tableCellStyle
-     */
-    public function setTableCellStyle(TableCellStyle $tableCellStyle)
+namespace Google\Service\Docs {
+    class SuggestedTableCellStyle extends \Google\Model
     {
+        protected $tableCellStyleType = TableCellStyle::class;
+        protected $tableCellStyleDataType = '';
+        protected $tableCellStyleSuggestionStateType = TableCellStyleSuggestionState::class;
+        protected $tableCellStyleSuggestionStateDataType = '';
+        /**
+         * A TableCellStyle that only includes the changes made in this suggestion.
+         * This can be used along with the table_cell_style_suggestion_state to see
+         * which fields have changed and their new values.
+         *
+         * @param TableCellStyle $tableCellStyle
+         */
+        public function setTableCellStyle(TableCellStyle $tableCellStyle)
+        {
+        }
+        /**
+         * @return TableCellStyle
+         */
+        public function getTableCellStyle()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base TableCellStyle have
+         * been changed in this suggestion.
+         *
+         * @param TableCellStyleSuggestionState $tableCellStyleSuggestionState
+         */
+        public function setTableCellStyleSuggestionState(TableCellStyleSuggestionState $tableCellStyleSuggestionState)
+        {
+        }
+        /**
+         * @return TableCellStyleSuggestionState
+         */
+        public function getTableCellStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellStyle
+     * Runtime class alias of \Google\Service\Docs\SuggestedTableCellStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableCellStyle()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base TableCellStyle have
-     * been changed in this suggestion.
-     *
-     * @param TableCellStyleSuggestionState $tableCellStyleSuggestionState
-     */
-    public function setTableCellStyleSuggestionState(TableCellStyleSuggestionState $tableCellStyleSuggestionState)
-    {
-    }
-    /**
-     * @return TableCellStyleSuggestionState
-     */
-    public function getTableCellStyleSuggestionState()
+    class Google_Service_Docs_SuggestedTableCellStyle extends \Google\Service\Docs\SuggestedTableCellStyle
     {
     }
 }

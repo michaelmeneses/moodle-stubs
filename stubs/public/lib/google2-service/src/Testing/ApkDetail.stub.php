@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ApkDetail extends \Google\Model
-{
-    protected $apkManifestType = ApkManifest::class;
-    protected $apkManifestDataType = '';
-    /**
-     * @param ApkManifest $apkManifest
-     */
-    public function setApkManifest(ApkManifest $apkManifest)
+namespace Google\Service\Testing {
+    class ApkDetail extends \Google\Model
     {
+        protected $apkManifestType = ApkManifest::class;
+        protected $apkManifestDataType = '';
+        /**
+         * @param ApkManifest $apkManifest
+         */
+        public function setApkManifest(ApkManifest $apkManifest)
+        {
+        }
+        /**
+         * @return ApkManifest
+         */
+        public function getApkManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApkManifest
+     * Runtime class alias of \Google\Service\Testing\ApkDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApkManifest()
+    class Google_Service_Testing_ApkDetail extends \Google\Service\Testing\ApkDetail
     {
     }
 }

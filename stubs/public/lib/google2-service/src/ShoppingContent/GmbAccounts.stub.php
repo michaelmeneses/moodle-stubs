@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class GmbAccounts extends \Google\Collection
-{
-    protected $collection_key = 'gmbAccounts';
-    /**
-     * The ID of the Merchant Center account.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $gmbAccountsType = GmbAccountsGmbAccount::class;
-    protected $gmbAccountsDataType = 'array';
-    /**
-     * The ID of the Merchant Center account.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class GmbAccounts extends \Google\Collection
     {
+        protected $collection_key = 'gmbAccounts';
+        /**
+         * The ID of the Merchant Center account.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $gmbAccountsType = GmbAccountsGmbAccount::class;
+        protected $gmbAccountsDataType = 'array';
+        /**
+         * The ID of the Merchant Center account.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * A list of Business Profiles which are available to the merchant.
+         *
+         * @param GmbAccountsGmbAccount[] $gmbAccounts
+         */
+        public function setGmbAccounts($gmbAccounts)
+        {
+        }
+        /**
+         * @return GmbAccountsGmbAccount[]
+         */
+        public function getGmbAccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\GmbAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * A list of Business Profiles which are available to the merchant.
-     *
-     * @param GmbAccountsGmbAccount[] $gmbAccounts
-     */
-    public function setGmbAccounts($gmbAccounts)
-    {
-    }
-    /**
-     * @return GmbAccountsGmbAccount[]
-     */
-    public function getGmbAccounts()
+    class Google_Service_ShoppingContent_GmbAccounts extends \Google\Service\ShoppingContent\GmbAccounts
     {
     }
 }

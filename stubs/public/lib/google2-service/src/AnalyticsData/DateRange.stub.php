@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class DateRange extends \Google\Model
-{
-    /**
-     * The inclusive end date for the query in the format `YYYY-MM-DD`. Cannot be
-     * before `start_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
-     * accepted, and in that case, the date is inferred based on the property's
-     * reporting time zone.
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Assigns a name to this date range. The dimension `dateRange` is valued to
-     * this name in a report response. If set, cannot begin with `date_range_` or
-     * `RESERVED_`. If not set, date ranges are named by their zero based index in
-     * the request: `date_range_0`, `date_range_1`, etc.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The inclusive start date for the query in the format `YYYY-MM-DD`. Cannot
-     * be after `end_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
-     * accepted, and in that case, the date is inferred based on the property's
-     * reporting time zone.
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * The inclusive end date for the query in the format `YYYY-MM-DD`. Cannot be
-     * before `start_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
-     * accepted, and in that case, the date is inferred based on the property's
-     * reporting time zone.
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
+namespace Google\Service\AnalyticsData {
+    class DateRange extends \Google\Model
     {
+        /**
+         * The inclusive end date for the query in the format `YYYY-MM-DD`. Cannot be
+         * before `start_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
+         * accepted, and in that case, the date is inferred based on the property's
+         * reporting time zone.
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Assigns a name to this date range. The dimension `dateRange` is valued to
+         * this name in a report response. If set, cannot begin with `date_range_` or
+         * `RESERVED_`. If not set, date ranges are named by their zero based index in
+         * the request: `date_range_0`, `date_range_1`, etc.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The inclusive start date for the query in the format `YYYY-MM-DD`. Cannot
+         * be after `end_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
+         * accepted, and in that case, the date is inferred based on the property's
+         * reporting time zone.
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * The inclusive end date for the query in the format `YYYY-MM-DD`. Cannot be
+         * before `start_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
+         * accepted, and in that case, the date is inferred based on the property's
+         * reporting time zone.
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Assigns a name to this date range. The dimension `dateRange` is valued to
+         * this name in a report response. If set, cannot begin with `date_range_` or
+         * `RESERVED_`. If not set, date ranges are named by their zero based index in
+         * the request: `date_range_0`, `date_range_1`, etc.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The inclusive start date for the query in the format `YYYY-MM-DD`. Cannot
+         * be after `end_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
+         * accepted, and in that case, the date is inferred based on the property's
+         * reporting time zone.
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\DateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Assigns a name to this date range. The dimension `dateRange` is valued to
-     * this name in a report response. If set, cannot begin with `date_range_` or
-     * `RESERVED_`. If not set, date ranges are named by their zero based index in
-     * the request: `date_range_0`, `date_range_1`, etc.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The inclusive start date for the query in the format `YYYY-MM-DD`. Cannot
-     * be after `end_date`. The format `NdaysAgo`, `yesterday`, or `today` is also
-     * accepted, and in that case, the date is inferred based on the property's
-     * reporting time zone.
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
+    class Google_Service_AnalyticsData_DateRange extends \Google\Service\AnalyticsData\DateRange
     {
     }
 }

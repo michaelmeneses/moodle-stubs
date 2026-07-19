@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BabelPlaceholderMetadata extends \Google\Model
-{
-    protected $deleteMetadataType = DeleteMetadata::class;
-    protected $deleteMetadataDataType = '';
-    protected $editMetadataType = EditMetadata::class;
-    protected $editMetadataDataType = '';
-    protected $hangoutVideoMetadataType = HangoutVideoEventMetadata::class;
-    protected $hangoutVideoMetadataDataType = '';
-    /**
-     * @param DeleteMetadata
-     */
-    public function setDeleteMetadata(DeleteMetadata $deleteMetadata)
+namespace Google\Service\CloudSearch {
+    class BabelPlaceholderMetadata extends \Google\Model
     {
+        protected $deleteMetadataType = DeleteMetadata::class;
+        protected $deleteMetadataDataType = '';
+        protected $editMetadataType = EditMetadata::class;
+        protected $editMetadataDataType = '';
+        protected $hangoutVideoMetadataType = HangoutVideoEventMetadata::class;
+        protected $hangoutVideoMetadataDataType = '';
+        /**
+         * @param DeleteMetadata
+         */
+        public function setDeleteMetadata(DeleteMetadata $deleteMetadata)
+        {
+        }
+        /**
+         * @return DeleteMetadata
+         */
+        public function getDeleteMetadata()
+        {
+        }
+        /**
+         * @param EditMetadata
+         */
+        public function setEditMetadata(EditMetadata $editMetadata)
+        {
+        }
+        /**
+         * @return EditMetadata
+         */
+        public function getEditMetadata()
+        {
+        }
+        /**
+         * @param HangoutVideoEventMetadata
+         */
+        public function setHangoutVideoMetadata(HangoutVideoEventMetadata $hangoutVideoMetadata)
+        {
+        }
+        /**
+         * @return HangoutVideoEventMetadata
+         */
+        public function getHangoutVideoMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeleteMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\BabelPlaceholderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteMetadata()
-    {
-    }
-    /**
-     * @param EditMetadata
-     */
-    public function setEditMetadata(EditMetadata $editMetadata)
-    {
-    }
-    /**
-     * @return EditMetadata
-     */
-    public function getEditMetadata()
-    {
-    }
-    /**
-     * @param HangoutVideoEventMetadata
-     */
-    public function setHangoutVideoMetadata(HangoutVideoEventMetadata $hangoutVideoMetadata)
-    {
-    }
-    /**
-     * @return HangoutVideoEventMetadata
-     */
-    public function getHangoutVideoMetadata()
+    class Google_Service_CloudSearch_BabelPlaceholderMetadata extends \Google\Service\CloudSearch\BabelPlaceholderMetadata
     {
     }
 }

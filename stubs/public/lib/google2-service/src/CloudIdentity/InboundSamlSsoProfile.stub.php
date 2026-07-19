@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class InboundSamlSsoProfile extends \Google\Model
-{
-    /**
-     * Immutable. The customer. For example: `customers/C0123abc`.
-     *
-     * @var string
-     */
-    public $customer;
-    /**
-     * Human-readable name of the SAML SSO profile.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $idpConfigType = SamlIdpConfig::class;
-    protected $idpConfigDataType = '';
-    /**
-     * Output only. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the SAML SSO
-     * profile.
-     *
-     * @var string
-     */
-    public $name;
-    protected $spConfigType = SamlSpConfig::class;
-    protected $spConfigDataType = '';
-    /**
-     * Immutable. The customer. For example: `customers/C0123abc`.
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\CloudIdentity {
+    class InboundSamlSsoProfile extends \Google\Model
     {
+        /**
+         * Immutable. The customer. For example: `customers/C0123abc`.
+         *
+         * @var string
+         */
+        public $customer;
+        /**
+         * Human-readable name of the SAML SSO profile.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $idpConfigType = SamlIdpConfig::class;
+        protected $idpConfigDataType = '';
+        /**
+         * Output only. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the SAML SSO
+         * profile.
+         *
+         * @var string
+         */
+        public $name;
+        protected $spConfigType = SamlSpConfig::class;
+        protected $spConfigDataType = '';
+        /**
+         * Immutable. The customer. For example: `customers/C0123abc`.
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * Human-readable name of the SAML SSO profile.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * SAML identity provider configuration.
+         *
+         * @param SamlIdpConfig $idpConfig
+         */
+        public function setIdpConfig(SamlIdpConfig $idpConfig)
+        {
+        }
+        /**
+         * @return SamlIdpConfig
+         */
+        public function getIdpConfig()
+        {
+        }
+        /**
+         * Output only. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the SAML SSO
+         * profile.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * SAML service provider configuration for this SAML SSO profile. These are
+         * the service provider details provided by Google that should be configured
+         * on the corresponding identity provider.
+         *
+         * @param SamlSpConfig $spConfig
+         */
+        public function setSpConfig(SamlSpConfig $spConfig)
+        {
+        }
+        /**
+         * @return SamlSpConfig
+         */
+        public function getSpConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\InboundSamlSsoProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
-    {
-    }
-    /**
-     * Human-readable name of the SAML SSO profile.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * SAML identity provider configuration.
-     *
-     * @param SamlIdpConfig $idpConfig
-     */
-    public function setIdpConfig(SamlIdpConfig $idpConfig)
-    {
-    }
-    /**
-     * @return SamlIdpConfig
-     */
-    public function getIdpConfig()
-    {
-    }
-    /**
-     * Output only. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the SAML SSO
-     * profile.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * SAML service provider configuration for this SAML SSO profile. These are
-     * the service provider details provided by Google that should be configured
-     * on the corresponding identity provider.
-     *
-     * @param SamlSpConfig $spConfig
-     */
-    public function setSpConfig(SamlSpConfig $spConfig)
-    {
-    }
-    /**
-     * @return SamlSpConfig
-     */
-    public function getSpConfig()
+    class Google_Service_CloudIdentity_InboundSamlSsoProfile extends \Google\Service\CloudIdentity\InboundSamlSsoProfile
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SearchBackgroundJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobs';
-    protected $jobsType = BackgroundJobLogEntry::class;
-    protected $jobsDataType = 'array';
-    /**
-     * The list of conversion workspace mapping rules.
-     *
-     * @param BackgroundJobLogEntry[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\DatabaseMigrationService {
+    class SearchBackgroundJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobs';
+        protected $jobsType = BackgroundJobLogEntry::class;
+        protected $jobsDataType = 'array';
+        /**
+         * The list of conversion workspace mapping rules.
+         *
+         * @param BackgroundJobLogEntry[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return BackgroundJobLogEntry[]
+         */
+        public function getJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackgroundJobLogEntry[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SearchBackgroundJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
+    class Google_Service_DatabaseMigrationService_SearchBackgroundJobsResponse extends \Google\Service\DatabaseMigrationService\SearchBackgroundJobsResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1ProcessLinks extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    protected $linksType = GoogleCloudDatacatalogLineageV1ProcessLinkInfo::class;
-    protected $linksDataType = 'array';
-    /**
-     * The process name in the format of
-     * `projects/{project}/locations/{location}/processes/{process}`.
-     *
-     * @var string
-     */
-    public $process;
-    /**
-     * An array containing link details objects of the links provided in the
-     * original request. A single process can result in creating multiple links.
-     * If any of the links you provide in the request are created by the same
-     * process, they all are included in this array.
-     *
-     * @param GoogleCloudDatacatalogLineageV1ProcessLinkInfo[] $links
-     */
-    public function setLinks($links)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1ProcessLinks extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        protected $linksType = GoogleCloudDatacatalogLineageV1ProcessLinkInfo::class;
+        protected $linksDataType = 'array';
+        /**
+         * The process name in the format of
+         * `projects/{project}/locations/{location}/processes/{process}`.
+         *
+         * @var string
+         */
+        public $process;
+        /**
+         * An array containing link details objects of the links provided in the
+         * original request. A single process can result in creating multiple links.
+         * If any of the links you provide in the request are created by the same
+         * process, they all are included in this array.
+         *
+         * @param GoogleCloudDatacatalogLineageV1ProcessLinkInfo[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1ProcessLinkInfo[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * The process name in the format of
+         * `projects/{project}/locations/{location}/processes/{process}`.
+         *
+         * @param string $process
+         */
+        public function setProcess($process)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogLineageV1ProcessLinkInfo[]
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinks()
-    {
-    }
-    /**
-     * The process name in the format of
-     * `projects/{project}/locations/{location}/processes/{process}`.
-     *
-     * @param string $process
-     */
-    public function setProcess($process)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcess()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1ProcessLinks extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessLinks
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListOfDevelopersResponse extends \Google\Collection
-{
-    protected $collection_key = 'developer';
-    protected $developerType = GoogleCloudApigeeV1Developer::class;
-    protected $developerDataType = 'array';
-    /**
-     * List of developers.
-     *
-     * @param GoogleCloudApigeeV1Developer[] $developer
-     */
-    public function setDeveloper($developer)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListOfDevelopersResponse extends \Google\Collection
     {
+        protected $collection_key = 'developer';
+        protected $developerType = GoogleCloudApigeeV1Developer::class;
+        protected $developerDataType = 'array';
+        /**
+         * List of developers.
+         *
+         * @param GoogleCloudApigeeV1Developer[] $developer
+         */
+        public function setDeveloper($developer)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Developer[]
+         */
+        public function getDeveloper()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Developer[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListOfDevelopersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloper()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListOfDevelopersResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListOfDevelopersResponse
     {
     }
 }

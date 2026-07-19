@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ListReservationTopicsResponse extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The names of topics attached to the reservation. The order of the topics is
-     * unspecified.
-     *
-     * @var string[]
-     */
-    public $topics;
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PubsubLite {
+    class ListReservationTopicsResponse extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The names of topics attached to the reservation. The order of the topics is
+         * unspecified.
+         *
+         * @var string[]
+         */
+        public $topics;
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The names of topics attached to the reservation. The order of the topics is
+         * unspecified.
+         *
+         * @param string[] $topics
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ListReservationTopicsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The names of topics attached to the reservation. The order of the topics is
-     * unspecified.
-     *
-     * @param string[] $topics
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTopics()
+    class Google_Service_PubsubLite_ListReservationTopicsResponse extends \Google\Service\PubsubLite\ListReservationTopicsResponse
     {
     }
 }

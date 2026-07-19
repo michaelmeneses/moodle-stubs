@@ -21,35 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "assets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $assets = $displayvideoService->advertisers_assets;
- *  </code>
- */
-class AdvertisersAssets extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\CreateAssetRequest;
+    use Google\Service\DisplayVideo\CreateAssetResponse;
     /**
-     * Uploads an asset. Returns the ID of the newly uploaded asset if successful.
-     * The asset file size should be no more than 10 MB for images, 200 MB for ZIP
-     * files, and 1 GB for videos. Must be used within the [multipart media upload
-     * process](/display-video/api/guides/how-tos/upload#multipart). Examples using
-     * provided client libraries can be found in our [Creating Creatives
-     * guide](/display-video/api/guides/creating-
-     * creatives/overview#upload_an_asset). (assets.upload)
-     *
-     * @param string $advertiserId Required. The ID of the advertiser this asset
-     * belongs to.
-     * @param CreateAssetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreateAssetResponse
-     * @throws \Google\Service\Exception
+     * The "assets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $assets = $displayvideoService->advertisers_assets;
+     *  </code>
      */
-    public function upload($advertiserId, CreateAssetRequest $postBody, $optParams = [])
+    class AdvertisersAssets extends \Google\Service\Resource
+    {
+        /**
+         * Uploads an asset. Returns the ID of the newly uploaded asset if successful.
+         * The asset file size should be no more than 10 MB for images, 200 MB for ZIP
+         * files, and 1 GB for videos. Must be used within the [multipart media upload
+         * process](/display-video/api/guides/how-tos/upload#multipart). Examples using
+         * provided client libraries can be found in our [Creating Creatives
+         * guide](/display-video/api/guides/creating-
+         * creatives/overview#upload_an_asset). (assets.upload)
+         *
+         * @param string $advertiserId Required. The ID of the advertiser this asset
+         * belongs to.
+         * @param CreateAssetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreateAssetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($advertiserId, CreateAssetRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\AdvertisersAssets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DisplayVideo_Resource_AdvertisersAssets extends \Google\Service\DisplayVideo\Resource\AdvertisersAssets
     {
     }
 }

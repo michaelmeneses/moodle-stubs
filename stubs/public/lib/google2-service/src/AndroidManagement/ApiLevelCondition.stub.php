@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ApiLevelCondition extends \Google\Model
-{
-    /**
-     * The minimum desired Android Framework API level. If the device doesn't meet
-     * the minimum requirement, this condition is satisfied. Must be greater than
-     * zero.
-     *
-     * @var int
-     */
-    public $minApiLevel;
-    /**
-     * The minimum desired Android Framework API level. If the device doesn't meet
-     * the minimum requirement, this condition is satisfied. Must be greater than
-     * zero.
-     *
-     * @param int $minApiLevel
-     */
-    public function setMinApiLevel($minApiLevel)
+namespace Google\Service\AndroidManagement {
+    class ApiLevelCondition extends \Google\Model
     {
+        /**
+         * The minimum desired Android Framework API level. If the device doesn't meet
+         * the minimum requirement, this condition is satisfied. Must be greater than
+         * zero.
+         *
+         * @var int
+         */
+        public $minApiLevel;
+        /**
+         * The minimum desired Android Framework API level. If the device doesn't meet
+         * the minimum requirement, this condition is satisfied. Must be greater than
+         * zero.
+         *
+         * @param int $minApiLevel
+         */
+        public function setMinApiLevel($minApiLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinApiLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidManagement\ApiLevelCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinApiLevel()
+    class Google_Service_AndroidManagement_ApiLevelCondition extends \Google\Service\AndroidManagement\ApiLevelCondition
     {
     }
 }

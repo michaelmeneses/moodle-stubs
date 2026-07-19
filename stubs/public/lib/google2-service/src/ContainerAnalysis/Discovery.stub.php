@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Discovery extends \Google\Model
-{
-    public $analysisKind;
-    public function setAnalysisKind($analysisKind)
+namespace Google\Service\ContainerAnalysis {
+    class Discovery extends \Google\Model
     {
+        public $analysisKind;
+        public function setAnalysisKind($analysisKind)
+        {
+        }
+        public function getAnalysisKind()
+        {
+        }
     }
-    public function getAnalysisKind()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Discovery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_Discovery extends \Google\Service\ContainerAnalysis\Discovery
     {
     }
 }

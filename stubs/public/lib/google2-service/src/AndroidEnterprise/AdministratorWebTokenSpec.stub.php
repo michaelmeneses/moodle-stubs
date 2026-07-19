@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AdministratorWebTokenSpec extends \Google\Collection
-{
-    protected $collection_key = 'permission';
-    protected $managedConfigurationsType = AdministratorWebTokenSpecManagedConfigurations::class;
-    protected $managedConfigurationsDataType = '';
-    /**
-     * The URI of the parent frame hosting the iframe. To prevent XSS, the iframe
-     * may not be hosted at other URIs. This URI must be https. Use whitespaces to
-     * separate multiple parent URIs.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Deprecated. Use PlaySearch.approveApps.
-     *
-     * @var string[]
-     */
-    public $permission;
-    protected $playSearchType = AdministratorWebTokenSpecPlaySearch::class;
-    protected $playSearchDataType = '';
-    protected $privateAppsType = AdministratorWebTokenSpecPrivateApps::class;
-    protected $privateAppsDataType = '';
-    protected $storeBuilderType = AdministratorWebTokenSpecStoreBuilder::class;
-    protected $storeBuilderDataType = '';
-    protected $webAppsType = AdministratorWebTokenSpecWebApps::class;
-    protected $webAppsDataType = '';
-    protected $zeroTouchType = AdministratorWebTokenSpecZeroTouch::class;
-    protected $zeroTouchDataType = '';
-    /**
-     * Options for displaying the Managed Configuration page.
-     *
-     * @param AdministratorWebTokenSpecManagedConfigurations $managedConfigurations
-     */
-    public function setManagedConfigurations(AdministratorWebTokenSpecManagedConfigurations $managedConfigurations)
+namespace Google\Service\AndroidEnterprise {
+    class AdministratorWebTokenSpec extends \Google\Collection
     {
+        protected $collection_key = 'permission';
+        protected $managedConfigurationsType = AdministratorWebTokenSpecManagedConfigurations::class;
+        protected $managedConfigurationsDataType = '';
+        /**
+         * The URI of the parent frame hosting the iframe. To prevent XSS, the iframe
+         * may not be hosted at other URIs. This URI must be https. Use whitespaces to
+         * separate multiple parent URIs.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Deprecated. Use PlaySearch.approveApps.
+         *
+         * @var string[]
+         */
+        public $permission;
+        protected $playSearchType = AdministratorWebTokenSpecPlaySearch::class;
+        protected $playSearchDataType = '';
+        protected $privateAppsType = AdministratorWebTokenSpecPrivateApps::class;
+        protected $privateAppsDataType = '';
+        protected $storeBuilderType = AdministratorWebTokenSpecStoreBuilder::class;
+        protected $storeBuilderDataType = '';
+        protected $webAppsType = AdministratorWebTokenSpecWebApps::class;
+        protected $webAppsDataType = '';
+        protected $zeroTouchType = AdministratorWebTokenSpecZeroTouch::class;
+        protected $zeroTouchDataType = '';
+        /**
+         * Options for displaying the Managed Configuration page.
+         *
+         * @param AdministratorWebTokenSpecManagedConfigurations $managedConfigurations
+         */
+        public function setManagedConfigurations(AdministratorWebTokenSpecManagedConfigurations $managedConfigurations)
+        {
+        }
+        /**
+         * @return AdministratorWebTokenSpecManagedConfigurations
+         */
+        public function getManagedConfigurations()
+        {
+        }
+        /**
+         * The URI of the parent frame hosting the iframe. To prevent XSS, the iframe
+         * may not be hosted at other URIs. This URI must be https. Use whitespaces to
+         * separate multiple parent URIs.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Deprecated. Use PlaySearch.approveApps.
+         *
+         * @param string[] $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermission()
+        {
+        }
+        /**
+         * Options for displaying the managed Play Search apps page.
+         *
+         * @param AdministratorWebTokenSpecPlaySearch $playSearch
+         */
+        public function setPlaySearch(AdministratorWebTokenSpecPlaySearch $playSearch)
+        {
+        }
+        /**
+         * @return AdministratorWebTokenSpecPlaySearch
+         */
+        public function getPlaySearch()
+        {
+        }
+        /**
+         * Options for displaying the Private Apps page.
+         *
+         * @param AdministratorWebTokenSpecPrivateApps $privateApps
+         */
+        public function setPrivateApps(AdministratorWebTokenSpecPrivateApps $privateApps)
+        {
+        }
+        /**
+         * @return AdministratorWebTokenSpecPrivateApps
+         */
+        public function getPrivateApps()
+        {
+        }
+        /**
+         * Options for displaying the Organize apps page.
+         *
+         * @param AdministratorWebTokenSpecStoreBuilder $storeBuilder
+         */
+        public function setStoreBuilder(AdministratorWebTokenSpecStoreBuilder $storeBuilder)
+        {
+        }
+        /**
+         * @return AdministratorWebTokenSpecStoreBuilder
+         */
+        public function getStoreBuilder()
+        {
+        }
+        /**
+         * Options for displaying the Web Apps page.
+         *
+         * @param AdministratorWebTokenSpecWebApps $webApps
+         */
+        public function setWebApps(AdministratorWebTokenSpecWebApps $webApps)
+        {
+        }
+        /**
+         * @return AdministratorWebTokenSpecWebApps
+         */
+        public function getWebApps()
+        {
+        }
+        /**
+         * Options for displaying the Zero Touch page.
+         *
+         * @param AdministratorWebTokenSpecZeroTouch $zeroTouch
+         */
+        public function setZeroTouch(AdministratorWebTokenSpecZeroTouch $zeroTouch)
+        {
+        }
+        /**
+         * @return AdministratorWebTokenSpecZeroTouch
+         */
+        public function getZeroTouch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdministratorWebTokenSpecManagedConfigurations
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AdministratorWebTokenSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedConfigurations()
-    {
-    }
-    /**
-     * The URI of the parent frame hosting the iframe. To prevent XSS, the iframe
-     * may not be hosted at other URIs. This URI must be https. Use whitespaces to
-     * separate multiple parent URIs.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Deprecated. Use PlaySearch.approveApps.
-     *
-     * @param string[] $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermission()
-    {
-    }
-    /**
-     * Options for displaying the managed Play Search apps page.
-     *
-     * @param AdministratorWebTokenSpecPlaySearch $playSearch
-     */
-    public function setPlaySearch(AdministratorWebTokenSpecPlaySearch $playSearch)
-    {
-    }
-    /**
-     * @return AdministratorWebTokenSpecPlaySearch
-     */
-    public function getPlaySearch()
-    {
-    }
-    /**
-     * Options for displaying the Private Apps page.
-     *
-     * @param AdministratorWebTokenSpecPrivateApps $privateApps
-     */
-    public function setPrivateApps(AdministratorWebTokenSpecPrivateApps $privateApps)
-    {
-    }
-    /**
-     * @return AdministratorWebTokenSpecPrivateApps
-     */
-    public function getPrivateApps()
-    {
-    }
-    /**
-     * Options for displaying the Organize apps page.
-     *
-     * @param AdministratorWebTokenSpecStoreBuilder $storeBuilder
-     */
-    public function setStoreBuilder(AdministratorWebTokenSpecStoreBuilder $storeBuilder)
-    {
-    }
-    /**
-     * @return AdministratorWebTokenSpecStoreBuilder
-     */
-    public function getStoreBuilder()
-    {
-    }
-    /**
-     * Options for displaying the Web Apps page.
-     *
-     * @param AdministratorWebTokenSpecWebApps $webApps
-     */
-    public function setWebApps(AdministratorWebTokenSpecWebApps $webApps)
-    {
-    }
-    /**
-     * @return AdministratorWebTokenSpecWebApps
-     */
-    public function getWebApps()
-    {
-    }
-    /**
-     * Options for displaying the Zero Touch page.
-     *
-     * @param AdministratorWebTokenSpecZeroTouch $zeroTouch
-     */
-    public function setZeroTouch(AdministratorWebTokenSpecZeroTouch $zeroTouch)
-    {
-    }
-    /**
-     * @return AdministratorWebTokenSpecZeroTouch
-     */
-    public function getZeroTouch()
+    class Google_Service_AndroidEnterprise_AdministratorWebTokenSpec extends \Google\Service\AndroidEnterprise\AdministratorWebTokenSpec
     {
     }
 }

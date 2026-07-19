@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class EncryptionConfig extends \Google\Model
-{
-    /**
-     * The fully-qualified resource name of the KMS key. Each Cloud KMS key is
-     * regionalized and has the following format:
-     * projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * The fully-qualified resource name of the KMS key. Each Cloud KMS key is
-     * regionalized and has the following format:
-     * projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\DatabaseMigrationService {
+    class EncryptionConfig extends \Google\Model
     {
+        /**
+         * The fully-qualified resource name of the KMS key. Each Cloud KMS key is
+         * regionalized and has the following format:
+         * projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * The fully-qualified resource name of the KMS key. Each Cloud KMS key is
+         * regionalized and has the following format:
+         * projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\EncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_DatabaseMigrationService_EncryptionConfig extends \Google\Service\DatabaseMigrationService\EncryptionConfig
     {
     }
 }

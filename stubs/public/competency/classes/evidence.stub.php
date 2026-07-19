@@ -29,6 +29,12 @@
  */
 namespace core_competency;
 
+use coding_exception;
+use context;
+use context_user;
+use lang_string;
+use moodle_exception;
+use stdClass;
 /**
  * Evidence persistent class.
  *

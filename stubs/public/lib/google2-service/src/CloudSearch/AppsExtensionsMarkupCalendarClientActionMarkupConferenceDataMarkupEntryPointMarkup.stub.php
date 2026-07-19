@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    /**
-     * @var string
-     */
-    public $accessCode;
-    /**
-     * @var string[]
-     */
-    public $features;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $meetingCode;
-    /**
-     * @var string
-     */
-    public $passcode;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $pin;
-    /**
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setAccessCode($accessCode)
+namespace Google\Service\CloudSearch {
+    class AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        /**
+         * @var string
+         */
+        public $accessCode;
+        /**
+         * @var string[]
+         */
+        public $features;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $meetingCode;
+        /**
+         * @var string
+         */
+        public $passcode;
+        /**
+         * @var string
+         */
+        public $password;
+        /**
+         * @var string
+         */
+        public $pin;
+        /**
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setAccessCode($accessCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessCode()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingCode($meetingCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPasscode($passcode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasscode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPin($pin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPin()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessCode()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFeatures($features)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingCode($meetingCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPasscode($passcode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPasscode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPin($pin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPin()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudSearch_AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup extends \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup
     {
     }
 }

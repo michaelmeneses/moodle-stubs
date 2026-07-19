@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkehubService = new Google\Service\GKEHub(...);
- *   $locations = $gkehubService->organizations_locations;
- *  </code>
- */
-class OrganizationsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\GKEHub\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkehubService = new Google\Service\GKEHub(...);
+     *   $locations = $gkehubService->organizations_locations;
+     *  </code>
+     */
+    class OrganizationsLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEHub\Resource\OrganizationsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEHub_Resource_OrganizationsLocations extends \Google\Service\GKEHub\Resource\OrganizationsLocations
+    {
+    }
 }

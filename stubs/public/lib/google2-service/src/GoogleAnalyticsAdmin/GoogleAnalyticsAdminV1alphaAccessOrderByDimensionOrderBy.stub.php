@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * @var string
-     */
-    public $orderType;
-    /**
-     * @param string
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * @var string
+         */
+        public $orderType;
+        /**
+         * @param string
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderType($orderType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderType($orderType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderType()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy
     {
     }
 }

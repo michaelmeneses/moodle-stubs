@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1AssetMoveAnalysis extends \Google\Collection
-{
-    protected $collection_key = 'analysisGroups';
-    protected $analysisGroupsType = GoogleCloudAssuredworkloadsV1MoveAnalysisGroup::class;
-    protected $analysisGroupsDataType = 'array';
-    /**
-     * The full resource name of the asset being analyzed. Example: //compute.goog
-     * leapis.com/projects/my_project_123/zones/zone1/instances/instance1
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Type of the asset being analyzed. Possible values will be among the ones
-     * listed [here](https://cloud.google.com/asset-inventory/docs/supported-
-     * asset-types).
-     *
-     * @var string
-     */
-    public $assetType;
-    /**
-     * List of eligible analyses performed for the asset.
-     *
-     * @param GoogleCloudAssuredworkloadsV1MoveAnalysisGroup[] $analysisGroups
-     */
-    public function setAnalysisGroups($analysisGroups)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1AssetMoveAnalysis extends \Google\Collection
     {
+        protected $collection_key = 'analysisGroups';
+        protected $analysisGroupsType = GoogleCloudAssuredworkloadsV1MoveAnalysisGroup::class;
+        protected $analysisGroupsDataType = 'array';
+        /**
+         * The full resource name of the asset being analyzed. Example: //compute.goog
+         * leapis.com/projects/my_project_123/zones/zone1/instances/instance1
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Type of the asset being analyzed. Possible values will be among the ones
+         * listed [here](https://cloud.google.com/asset-inventory/docs/supported-
+         * asset-types).
+         *
+         * @var string
+         */
+        public $assetType;
+        /**
+         * List of eligible analyses performed for the asset.
+         *
+         * @param GoogleCloudAssuredworkloadsV1MoveAnalysisGroup[] $analysisGroups
+         */
+        public function setAnalysisGroups($analysisGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1MoveAnalysisGroup[]
+         */
+        public function getAnalysisGroups()
+        {
+        }
+        /**
+         * The full resource name of the asset being analyzed. Example: //compute.goog
+         * leapis.com/projects/my_project_123/zones/zone1/instances/instance1
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Type of the asset being analyzed. Possible values will be among the ones
+         * listed [here](https://cloud.google.com/asset-inventory/docs/supported-
+         * asset-types).
+         *
+         * @param string $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1MoveAnalysisGroup[]
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AssetMoveAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisGroups()
-    {
-    }
-    /**
-     * The full resource name of the asset being analyzed. Example: //compute.goog
-     * leapis.com/projects/my_project_123/zones/zone1/instances/instance1
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAsset()
-    {
-    }
-    /**
-     * Type of the asset being analyzed. Possible values will be among the ones
-     * listed [here](https://cloud.google.com/asset-inventory/docs/supported-
-     * asset-types).
-     *
-     * @param string $assetType
-     */
-    public function setAssetType($assetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetType()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1AssetMoveAnalysis extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AssetMoveAnalysis
     {
     }
 }

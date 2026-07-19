@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryComponentReplicationSite extends \Google\Model
-{
-    protected $componentType = SapDiscoveryComponent::class;
-    protected $componentDataType = '';
-    /**
-     * Optional. The name of the source site from which this one replicates.
-     *
-     * @var string
-     */
-    public $sourceSite;
-    /**
-     * Optional. The system component for the site.
-     *
-     * @param SapDiscoveryComponent $component
-     */
-    public function setComponent(SapDiscoveryComponent $component)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryComponentReplicationSite extends \Google\Model
     {
+        protected $componentType = SapDiscoveryComponent::class;
+        protected $componentDataType = '';
+        /**
+         * Optional. The name of the source site from which this one replicates.
+         *
+         * @var string
+         */
+        public $sourceSite;
+        /**
+         * Optional. The system component for the site.
+         *
+         * @param SapDiscoveryComponent $component
+         */
+        public function setComponent(SapDiscoveryComponent $component)
+        {
+        }
+        /**
+         * @return SapDiscoveryComponent
+         */
+        public function getComponent()
+        {
+        }
+        /**
+         * Optional. The name of the source site from which this one replicates.
+         *
+         * @param string $sourceSite
+         */
+        public function setSourceSite($sourceSite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceSite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SapDiscoveryComponent
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryComponentReplicationSite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponent()
-    {
-    }
-    /**
-     * Optional. The name of the source site from which this one replicates.
-     *
-     * @param string $sourceSite
-     */
-    public function setSourceSite($sourceSite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceSite()
+    class Google_Service_WorkloadManager_SapDiscoveryComponentReplicationSite extends \Google\Service\WorkloadManager\SapDiscoveryComponentReplicationSite
     {
     }
 }

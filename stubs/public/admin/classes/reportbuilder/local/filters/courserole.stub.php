@@ -8,6 +8,11 @@
  */
 namespace core_admin\reportbuilder\local\filters;
 
+use core\context\system;
+use core_course_category;
+use MoodleQuickForm;
+use core_reportbuilder\local\filters\base;
+use core_reportbuilder\local\helpers\database;
 /**
  * Course role report filter (by role, category, course)
  *

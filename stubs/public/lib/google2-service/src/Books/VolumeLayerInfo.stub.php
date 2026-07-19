@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeLayerInfo extends \Google\Collection
-{
-    protected $collection_key = 'layers';
-    protected $layersType = VolumeLayerInfoLayers::class;
-    protected $layersDataType = 'array';
-    /**
-     * A layer should appear here if and only if the layer exists for this book.
-     *
-     * @param VolumeLayerInfoLayers[] $layers
-     */
-    public function setLayers($layers)
+namespace Google\Service\Books {
+    class VolumeLayerInfo extends \Google\Collection
     {
+        protected $collection_key = 'layers';
+        protected $layersType = VolumeLayerInfoLayers::class;
+        protected $layersDataType = 'array';
+        /**
+         * A layer should appear here if and only if the layer exists for this book.
+         *
+         * @param VolumeLayerInfoLayers[] $layers
+         */
+        public function setLayers($layers)
+        {
+        }
+        /**
+         * @return VolumeLayerInfoLayers[]
+         */
+        public function getLayers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VolumeLayerInfoLayers[]
+     * Runtime class alias of \Google\Service\Books\VolumeLayerInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayers()
+    class Google_Service_Books_VolumeLayerInfo extends \Google\Service\Books\VolumeLayerInfo
     {
     }
 }

@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class Extension extends \Google\Collection
-{
-    protected $collection_key = 'typeUrls';
-    /**
-     * Category of the extension. Extension category names use reverse DNS
-     * notation. For instance "envoy.filters.listener" for Envoy's built-in
-     * listener filters or "com.acme.filters.http" for HTTP filters from acme.com
-     * vendor. [#comment:
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Indicates that the extension is present but was disabled via dynamic
-     * configuration.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * This is the name of the Envoy filter as specified in the Envoy
-     * configuration, e.g. envoy.filters.http.router, com.acme.widget.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * [#not-implemented-hide:] Type descriptor of extension configuration proto.
-     * [#comment:
-     *
-     * @deprecated
-     * @var string
-     */
-    public $typeDescriptor;
-    /**
-     * Type URLs of extension configuration protos.
-     *
-     * @var string[]
-     */
-    public $typeUrls;
-    protected $versionType = BuildVersion::class;
-    protected $versionDataType = '';
-    /**
-     * Category of the extension. Extension category names use reverse DNS
-     * notation. For instance "envoy.filters.listener" for Envoy's built-in
-     * listener filters or "com.acme.filters.http" for HTTP filters from acme.com
-     * vendor. [#comment:
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\TrafficDirectorService {
+    class Extension extends \Google\Collection
     {
+        protected $collection_key = 'typeUrls';
+        /**
+         * Category of the extension. Extension category names use reverse DNS
+         * notation. For instance "envoy.filters.listener" for Envoy's built-in
+         * listener filters or "com.acme.filters.http" for HTTP filters from acme.com
+         * vendor. [#comment:
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Indicates that the extension is present but was disabled via dynamic
+         * configuration.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * This is the name of the Envoy filter as specified in the Envoy
+         * configuration, e.g. envoy.filters.http.router, com.acme.widget.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * [#not-implemented-hide:] Type descriptor of extension configuration proto.
+         * [#comment:
+         *
+         * @deprecated
+         * @var string
+         */
+        public $typeDescriptor;
+        /**
+         * Type URLs of extension configuration protos.
+         *
+         * @var string[]
+         */
+        public $typeUrls;
+        protected $versionType = BuildVersion::class;
+        protected $versionDataType = '';
+        /**
+         * Category of the extension. Extension category names use reverse DNS
+         * notation. For instance "envoy.filters.listener" for Envoy's built-in
+         * listener filters or "com.acme.filters.http" for HTTP filters from acme.com
+         * vendor. [#comment:
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Indicates that the extension is present but was disabled via dynamic
+         * configuration.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * This is the name of the Envoy filter as specified in the Envoy
+         * configuration, e.g. envoy.filters.http.router, com.acme.widget.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * [#not-implemented-hide:] Type descriptor of extension configuration proto.
+         * [#comment:
+         *
+         * @deprecated
+         * @param string $typeDescriptor
+         */
+        public function setTypeDescriptor($typeDescriptor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getTypeDescriptor()
+        {
+        }
+        /**
+         * Type URLs of extension configuration protos.
+         *
+         * @param string[] $typeUrls
+         */
+        public function setTypeUrls($typeUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypeUrls()
+        {
+        }
+        /**
+         * The version is a property of the extension and maintained independently of
+         * other extensions and the Envoy API. This field is not set when extension
+         * did not provide version information.
+         *
+         * @param BuildVersion $version
+         */
+        public function setVersion(BuildVersion $version)
+        {
+        }
+        /**
+         * @return BuildVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\Extension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Indicates that the extension is present but was disabled via dynamic
-     * configuration.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * This is the name of the Envoy filter as specified in the Envoy
-     * configuration, e.g. envoy.filters.http.router, com.acme.widget.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * [#not-implemented-hide:] Type descriptor of extension configuration proto.
-     * [#comment:
-     *
-     * @deprecated
-     * @param string $typeDescriptor
-     */
-    public function setTypeDescriptor($typeDescriptor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getTypeDescriptor()
-    {
-    }
-    /**
-     * Type URLs of extension configuration protos.
-     *
-     * @param string[] $typeUrls
-     */
-    public function setTypeUrls($typeUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypeUrls()
-    {
-    }
-    /**
-     * The version is a property of the extension and maintained independently of
-     * other extensions and the Envoy API. This field is not set when extension
-     * did not provide version information.
-     *
-     * @param BuildVersion $version
-     */
-    public function setVersion(BuildVersion $version)
-    {
-    }
-    /**
-     * @return BuildVersion
-     */
-    public function getVersion()
+    class Google_Service_TrafficDirectorService_Extension extends \Google\Service\TrafficDirectorService\Extension
     {
     }
 }

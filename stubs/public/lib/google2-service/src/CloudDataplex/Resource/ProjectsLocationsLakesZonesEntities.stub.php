@@ -21,112 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex\Resource;
-
-/**
- * The "entities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataplexService = new Google\Service\CloudDataplex(...);
- *   $entities = $dataplexService->projects_locations_lakes_zones_entities;
- *  </code>
- */
-class ProjectsLocationsLakesZonesEntities extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDataplex\Resource {
+    use Google\Service\CloudDataplex\DataplexEmpty;
+    use Google\Service\CloudDataplex\GoogleCloudDataplexV1Entity;
+    use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntitiesResponse;
     /**
-     * Create a metadata entity. (entities.create)
-     *
-     * @param string $parent Required. The resource name of the parent zone: project
-     * s/{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}.
-     * @param GoogleCloudDataplexV1Entity $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool validateOnly Optional. Only validate the request, but do not
-     * perform mutations. The default is false.
-     * @return GoogleCloudDataplexV1Entity
-     * @throws \Google\Service\Exception
+     * The "entities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataplexService = new Google\Service\CloudDataplex(...);
+     *   $entities = $dataplexService->projects_locations_lakes_zones_entities;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDataplexV1Entity $postBody, $optParams = [])
+    class ProjectsLocationsLakesZonesEntities extends \Google\Service\Resource
     {
+        /**
+         * Create a metadata entity. (entities.create)
+         *
+         * @param string $parent Required. The resource name of the parent zone: project
+         * s/{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}.
+         * @param GoogleCloudDataplexV1Entity $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool validateOnly Optional. Only validate the request, but do not
+         * perform mutations. The default is false.
+         * @return GoogleCloudDataplexV1Entity
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDataplexV1Entity $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a metadata entity. (entities.delete)
+         *
+         * @param string $name Required. The resource name of the entity: projects/{proj
+         * ect_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/
+         * {entity_id}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string etag Required. The etag associated with the entity, which
+         * can be retrieved with a GetEntity request.
+         * @return DataplexEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get a metadata entity. (entities.get)
+         *
+         * @param string $name Required. The resource name of the entity: projects/{proj
+         * ect_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/
+         * {entity_id}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Optional. Used to select the subset of entity
+         * information to return. Defaults to BASIC.
+         * @return GoogleCloudDataplexV1Entity
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List metadata entities in a zone.
+         * (entities.listProjectsLocationsLakesZonesEntities)
+         *
+         * @param string $parent Required. The resource name of the parent zone: project
+         * s/{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. The following filter parameters can be
+         * added to the URL to limit the entities returned by the API: Entity ID:
+         * ?filter="id=entityID" Asset ID: ?filter="asset=assetID" Data path
+         * ?filter="data_path=gs://my-bucket" Is HIVE compatible:
+         * ?filter="hive_compatible=true" Is BigQuery compatible:
+         * ?filter="bigquery_compatible=true"
+         * @opt_param int pageSize Optional. Maximum number of entities to return. The
+         * service may return fewer than this value. If unspecified, 100 entities will
+         * be returned by default. The maximum value is 500; larger values will will be
+         * truncated to 500.
+         * @opt_param string pageToken Optional. Page token received from a previous
+         * ListEntities call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to ListEntities must match the call
+         * that provided the page token.
+         * @opt_param string view Required. Specify the entity view to make a partial
+         * list request.
+         * @return GoogleCloudDataplexV1ListEntitiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsLakesZonesEntities($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update a metadata entity. Only supports full resource update.
+         * (entities.update)
+         *
+         * @param string $name Output only. The resource name of the entity, of the
+         * form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/zones
+         * /{zone_id}/entities/{id}.
+         * @param GoogleCloudDataplexV1Entity $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool validateOnly Optional. Only validate the request, but do not
+         * perform mutations. The default is false.
+         * @return GoogleCloudDataplexV1Entity
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, GoogleCloudDataplexV1Entity $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a metadata entity. (entities.delete)
-     *
-     * @param string $name Required. The resource name of the entity: projects/{proj
-     * ect_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/
-     * {entity_id}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string etag Required. The etag associated with the entity, which
-     * can be retrieved with a GetEntity request.
-     * @return DataplexEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudDataplex\Resource\ProjectsLocationsLakesZonesEntities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get a metadata entity. (entities.get)
-     *
-     * @param string $name Required. The resource name of the entity: projects/{proj
-     * ect_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/
-     * {entity_id}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Optional. Used to select the subset of entity
-     * information to return. Defaults to BASIC.
-     * @return GoogleCloudDataplexV1Entity
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List metadata entities in a zone.
-     * (entities.listProjectsLocationsLakesZonesEntities)
-     *
-     * @param string $parent Required. The resource name of the parent zone: project
-     * s/{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. The following filter parameters can be
-     * added to the URL to limit the entities returned by the API: Entity ID:
-     * ?filter="id=entityID" Asset ID: ?filter="asset=assetID" Data path
-     * ?filter="data_path=gs://my-bucket" Is HIVE compatible:
-     * ?filter="hive_compatible=true" Is BigQuery compatible:
-     * ?filter="bigquery_compatible=true"
-     * @opt_param int pageSize Optional. Maximum number of entities to return. The
-     * service may return fewer than this value. If unspecified, 100 entities will
-     * be returned by default. The maximum value is 500; larger values will will be
-     * truncated to 500.
-     * @opt_param string pageToken Optional. Page token received from a previous
-     * ListEntities call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to ListEntities must match the call
-     * that provided the page token.
-     * @opt_param string view Required. Specify the entity view to make a partial
-     * list request.
-     * @return GoogleCloudDataplexV1ListEntitiesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsLakesZonesEntities($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update a metadata entity. Only supports full resource update.
-     * (entities.update)
-     *
-     * @param string $name Output only. The resource name of the entity, of the
-     * form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/zones
-     * /{zone_id}/entities/{id}.
-     * @param GoogleCloudDataplexV1Entity $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool validateOnly Optional. Only validate the request, but do not
-     * perform mutations. The default is false.
-     * @return GoogleCloudDataplexV1Entity
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, GoogleCloudDataplexV1Entity $postBody, $optParams = [])
+    class Google_Service_CloudDataplex_Resource_ProjectsLocationsLakesZonesEntities extends \Google\Service\CloudDataplex\Resource\ProjectsLocationsLakesZonesEntities
     {
     }
 }

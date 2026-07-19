@@ -21,241 +21,250 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class Asset extends \Google\Collection
-{
-    protected $collection_key = 'formats';
-    /**
-     * @var string
-     */
-    public $authorName;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var Format[]
-     */
-    public $formats;
-    protected $formatsType = Format::class;
-    protected $formatsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $isCurated;
-    /**
-     * @var string
-     */
-    public $license;
-    /**
-     * @var string
-     */
-    public $metadata;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var PresentationParams
-     */
-    public $presentationParams;
-    protected $presentationParamsType = PresentationParams::class;
-    protected $presentationParamsDataType = '';
-    /**
-     * @var RemixInfo
-     */
-    public $remixInfo;
-    protected $remixInfoType = RemixInfo::class;
-    protected $remixInfoDataType = '';
-    /**
-     * @var PolyFile
-     */
-    public $thumbnail;
-    protected $thumbnailType = PolyFile::class;
-    protected $thumbnailDataType = '';
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var string
-     */
-    public $visibility;
-    /**
-     * @param string
-     */
-    public function setAuthorName($authorName)
+namespace Google\Service\PolyService {
+    class Asset extends \Google\Collection
     {
+        protected $collection_key = 'formats';
+        /**
+         * @var string
+         */
+        public $authorName;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var Format[]
+         */
+        public $formats;
+        protected $formatsType = Format::class;
+        protected $formatsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $isCurated;
+        /**
+         * @var string
+         */
+        public $license;
+        /**
+         * @var string
+         */
+        public $metadata;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var PresentationParams
+         */
+        public $presentationParams;
+        protected $presentationParamsType = PresentationParams::class;
+        protected $presentationParamsDataType = '';
+        /**
+         * @var RemixInfo
+         */
+        public $remixInfo;
+        protected $remixInfoType = RemixInfo::class;
+        protected $remixInfoDataType = '';
+        /**
+         * @var PolyFile
+         */
+        public $thumbnail;
+        protected $thumbnailType = PolyFile::class;
+        protected $thumbnailDataType = '';
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var string
+         */
+        public $visibility;
+        /**
+         * @param string
+         */
+        public function setAuthorName($authorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param Format[]
+         */
+        public function setFormats($formats)
+        {
+        }
+        /**
+         * @return Format[]
+         */
+        public function getFormats()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsCurated($isCurated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsCurated()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLicense($license)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLicense()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param PresentationParams
+         */
+        public function setPresentationParams(PresentationParams $presentationParams)
+        {
+        }
+        /**
+         * @return PresentationParams
+         */
+        public function getPresentationParams()
+        {
+        }
+        /**
+         * @param RemixInfo
+         */
+        public function setRemixInfo(RemixInfo $remixInfo)
+        {
+        }
+        /**
+         * @return RemixInfo
+         */
+        public function getRemixInfo()
+        {
+        }
+        /**
+         * @param PolyFile
+         */
+        public function setThumbnail(PolyFile $thumbnail)
+        {
+        }
+        /**
+         * @return PolyFile
+         */
+        public function getThumbnail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolyService\Asset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param Format[]
-     */
-    public function setFormats($formats)
-    {
-    }
-    /**
-     * @return Format[]
-     */
-    public function getFormats()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsCurated($isCurated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsCurated()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLicense($license)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLicense()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param PresentationParams
-     */
-    public function setPresentationParams(PresentationParams $presentationParams)
-    {
-    }
-    /**
-     * @return PresentationParams
-     */
-    public function getPresentationParams()
-    {
-    }
-    /**
-     * @param RemixInfo
-     */
-    public function setRemixInfo(RemixInfo $remixInfo)
-    {
-    }
-    /**
-     * @return RemixInfo
-     */
-    public function getRemixInfo()
-    {
-    }
-    /**
-     * @param PolyFile
-     */
-    public function setThumbnail(PolyFile $thumbnail)
-    {
-    }
-    /**
-     * @return PolyFile
-     */
-    public function getThumbnail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVisibility($visibility)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVisibility()
+    class Google_Service_PolyService_Asset extends \Google\Service\PolyService\Asset
     {
     }
 }

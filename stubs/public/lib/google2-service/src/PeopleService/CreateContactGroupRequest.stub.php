@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class CreateContactGroupRequest extends \Google\Model
-{
-    protected $contactGroupType = ContactGroup::class;
-    protected $contactGroupDataType = '';
-    /**
-     * Optional. A field mask to restrict which fields on the group are returned.
-     * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
-     * Valid fields are: * clientData * groupType * metadata * name
-     *
-     * @var string
-     */
-    public $readGroupFields;
-    /**
-     * Required. The contact group to create.
-     *
-     * @param ContactGroup $contactGroup
-     */
-    public function setContactGroup(ContactGroup $contactGroup)
+namespace Google\Service\PeopleService {
+    class CreateContactGroupRequest extends \Google\Model
     {
+        protected $contactGroupType = ContactGroup::class;
+        protected $contactGroupDataType = '';
+        /**
+         * Optional. A field mask to restrict which fields on the group are returned.
+         * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
+         * Valid fields are: * clientData * groupType * metadata * name
+         *
+         * @var string
+         */
+        public $readGroupFields;
+        /**
+         * Required. The contact group to create.
+         *
+         * @param ContactGroup $contactGroup
+         */
+        public function setContactGroup(ContactGroup $contactGroup)
+        {
+        }
+        /**
+         * @return ContactGroup
+         */
+        public function getContactGroup()
+        {
+        }
+        /**
+         * Optional. A field mask to restrict which fields on the group are returned.
+         * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
+         * Valid fields are: * clientData * groupType * metadata * name
+         *
+         * @param string $readGroupFields
+         */
+        public function setReadGroupFields($readGroupFields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadGroupFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactGroup
+     * Runtime class alias of \Google\Service\PeopleService\CreateContactGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactGroup()
-    {
-    }
-    /**
-     * Optional. A field mask to restrict which fields on the group are returned.
-     * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
-     * Valid fields are: * clientData * groupType * metadata * name
-     *
-     * @param string $readGroupFields
-     */
-    public function setReadGroupFields($readGroupFields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadGroupFields()
+    class Google_Service_PeopleService_CreateContactGroupRequest extends \Google\Service\PeopleService\CreateContactGroupRequest
     {
     }
 }

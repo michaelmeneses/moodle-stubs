@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListCustomMetricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customMetrics';
-    protected $customMetricsType = GoogleAnalyticsAdminV1betaCustomMetric::class;
-    protected $customMetricsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of CustomMetrics.
-     *
-     * @param GoogleAnalyticsAdminV1betaCustomMetric[] $customMetrics
-     */
-    public function setCustomMetrics($customMetrics)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListCustomMetricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customMetrics';
+        protected $customMetricsType = GoogleAnalyticsAdminV1betaCustomMetric::class;
+        protected $customMetricsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of CustomMetrics.
+         *
+         * @param GoogleAnalyticsAdminV1betaCustomMetric[] $customMetrics
+         */
+        public function setCustomMetrics($customMetrics)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaCustomMetric[]
+         */
+        public function getCustomMetrics()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaCustomMetric[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListCustomMetricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomMetrics()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListCustomMetricsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListCustomMetricsResponse
     {
     }
 }

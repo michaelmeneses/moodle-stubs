@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceFormula extends \Google\Model
-{
-    protected $dataExecutionStatusType = DataExecutionStatus::class;
-    protected $dataExecutionStatusDataType = '';
-    /**
-     * The ID of the data source the formula is associated with.
-     *
-     * @var string
-     */
-    public $dataSourceId;
-    /**
-     * Output only. The data execution status.
-     *
-     * @param DataExecutionStatus $dataExecutionStatus
-     */
-    public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+namespace Google\Service\Sheets {
+    class DataSourceFormula extends \Google\Model
     {
+        protected $dataExecutionStatusType = DataExecutionStatus::class;
+        protected $dataExecutionStatusDataType = '';
+        /**
+         * The ID of the data source the formula is associated with.
+         *
+         * @var string
+         */
+        public $dataSourceId;
+        /**
+         * Output only. The data execution status.
+         *
+         * @param DataExecutionStatus $dataExecutionStatus
+         */
+        public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+        {
+        }
+        /**
+         * @return DataExecutionStatus
+         */
+        public function getDataExecutionStatus()
+        {
+        }
+        /**
+         * The ID of the data source the formula is associated with.
+         *
+         * @param string $dataSourceId
+         */
+        public function setDataSourceId($dataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataExecutionStatus
+     * Runtime class alias of \Google\Service\Sheets\DataSourceFormula registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataExecutionStatus()
-    {
-    }
-    /**
-     * The ID of the data source the formula is associated with.
-     *
-     * @param string $dataSourceId
-     */
-    public function setDataSourceId($dataSourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataSourceId()
+    class Google_Service_Sheets_DataSourceFormula extends \Google\Service\Sheets\DataSourceFormula
     {
     }
 }

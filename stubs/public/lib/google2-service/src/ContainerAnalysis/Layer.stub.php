@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Layer extends \Google\Model
-{
-    /**
-     * The recovered arguments to the Dockerfile directive.
-     *
-     * @var string
-     */
-    public $arguments;
-    /**
-     * Required. The recovered Dockerfile directive used to construct this layer.
-     * See https://docs.docker.com/engine/reference/builder/ for more information.
-     *
-     * @var string
-     */
-    public $directive;
-    /**
-     * The recovered arguments to the Dockerfile directive.
-     *
-     * @param string $arguments
-     */
-    public function setArguments($arguments)
+namespace Google\Service\ContainerAnalysis {
+    class Layer extends \Google\Model
     {
+        /**
+         * The recovered arguments to the Dockerfile directive.
+         *
+         * @var string
+         */
+        public $arguments;
+        /**
+         * Required. The recovered Dockerfile directive used to construct this layer.
+         * See https://docs.docker.com/engine/reference/builder/ for more information.
+         *
+         * @var string
+         */
+        public $directive;
+        /**
+         * The recovered arguments to the Dockerfile directive.
+         *
+         * @param string $arguments
+         */
+        public function setArguments($arguments)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArguments()
+        {
+        }
+        /**
+         * Required. The recovered Dockerfile directive used to construct this layer.
+         * See https://docs.docker.com/engine/reference/builder/ for more information.
+         *
+         * @param string $directive
+         */
+        public function setDirective($directive)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirective()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Layer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArguments()
-    {
-    }
-    /**
-     * Required. The recovered Dockerfile directive used to construct this layer.
-     * See https://docs.docker.com/engine/reference/builder/ for more information.
-     *
-     * @param string $directive
-     */
-    public function setDirective($directive)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirective()
+    class Google_Service_ContainerAnalysis_Layer extends \Google\Service\ContainerAnalysis\Layer
     {
     }
 }

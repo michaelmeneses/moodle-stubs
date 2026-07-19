@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery extends \Google\Model
-{
-    /**
-     * The original entity query inputed by the user.
-     *
-     * @var string
-     */
-    public $userEntityQuery;
-    /**
-     * The original entity query inputed by the user.
-     *
-     * @param string $userEntityQuery
-     */
-    public function setUserEntityQuery($userEntityQuery)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery extends \Google\Model
     {
+        /**
+         * The original entity query inputed by the user.
+         *
+         * @var string
+         */
+        public $userEntityQuery;
+        /**
+         * The original entity query inputed by the user.
+         *
+         * @param string $userEntityQuery
+         */
+        public function setUserEntityQuery($userEntityQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEntityQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserEntityQuery()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery
     {
     }
 }

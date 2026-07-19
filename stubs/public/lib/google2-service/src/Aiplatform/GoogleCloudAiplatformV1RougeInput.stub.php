@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RougeInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1RougeInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1RougeSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated rouge instances.
-     *
-     * @param GoogleCloudAiplatformV1RougeInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RougeInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1RougeInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1RougeSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated rouge instances.
+         *
+         * @param GoogleCloudAiplatformV1RougeInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RougeInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for rouge score metric.
+         *
+         * @param GoogleCloudAiplatformV1RougeSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1RougeSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RougeSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RougeInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RougeInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for rouge score metric.
-     *
-     * @param GoogleCloudAiplatformV1RougeSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1RougeSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RougeSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RougeInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RougeInput
     {
     }
 }

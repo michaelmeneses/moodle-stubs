@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ParameterValidation extends \Google\Model
-{
-    protected $regexType = RegexValidation::class;
-    protected $regexDataType = '';
-    protected $valuesType = ValueValidation::class;
-    protected $valuesDataType = '';
-    /**
-     * Validation based on regular expressions.
-     *
-     * @param RegexValidation $regex
-     */
-    public function setRegex(RegexValidation $regex)
+namespace Google\Service\Dataproc {
+    class ParameterValidation extends \Google\Model
     {
+        protected $regexType = RegexValidation::class;
+        protected $regexDataType = '';
+        protected $valuesType = ValueValidation::class;
+        protected $valuesDataType = '';
+        /**
+         * Validation based on regular expressions.
+         *
+         * @param RegexValidation $regex
+         */
+        public function setRegex(RegexValidation $regex)
+        {
+        }
+        /**
+         * @return RegexValidation
+         */
+        public function getRegex()
+        {
+        }
+        /**
+         * Validation based on a list of allowed values.
+         *
+         * @param ValueValidation $values
+         */
+        public function setValues(ValueValidation $values)
+        {
+        }
+        /**
+         * @return ValueValidation
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegexValidation
+     * Runtime class alias of \Google\Service\Dataproc\ParameterValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegex()
-    {
-    }
-    /**
-     * Validation based on a list of allowed values.
-     *
-     * @param ValueValidation $values
-     */
-    public function setValues(ValueValidation $values)
-    {
-    }
-    /**
-     * @return ValueValidation
-     */
-    public function getValues()
+    class Google_Service_Dataproc_ParameterValidation extends \Google\Service\Dataproc\ParameterValidation
     {
     }
 }

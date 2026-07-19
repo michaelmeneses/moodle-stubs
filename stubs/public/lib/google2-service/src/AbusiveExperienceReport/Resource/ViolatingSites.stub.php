@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AbusiveExperienceReport\Resource;
-
-/**
- * The "violatingSites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $abusiveexperiencereportService = new Google\Service\AbusiveExperienceReport(...);
- *   $violatingSites = $abusiveexperiencereportService->violatingSites;
- *  </code>
- */
-class ViolatingSites extends \Google\Service\Resource
-{
+namespace Google\Service\AbusiveExperienceReport\Resource {
+    use Google\Service\AbusiveExperienceReport\ViolatingSitesResponse;
     /**
-     * Lists sites that are failing in the Abusive Experience Report.
-     * (violatingSites.listViolatingSites)
-     *
-     * @param array $optParams Optional parameters.
-     * @return ViolatingSitesResponse
-     * @throws \Google\Service\Exception
+     * The "violatingSites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $abusiveexperiencereportService = new Google\Service\AbusiveExperienceReport(...);
+     *   $violatingSites = $abusiveexperiencereportService->violatingSites;
+     *  </code>
      */
-    public function listViolatingSites($optParams = [])
+    class ViolatingSites extends \Google\Service\Resource
+    {
+        /**
+         * Lists sites that are failing in the Abusive Experience Report.
+         * (violatingSites.listViolatingSites)
+         *
+         * @param array $optParams Optional parameters.
+         * @return ViolatingSitesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listViolatingSites($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AbusiveExperienceReport\Resource\ViolatingSites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AbusiveExperienceReport_Resource_ViolatingSites extends \Google\Service\AbusiveExperienceReport\Resource\ViolatingSites
     {
     }
 }

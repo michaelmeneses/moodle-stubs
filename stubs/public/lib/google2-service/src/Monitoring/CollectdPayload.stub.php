@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CollectdPayload extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The end time of the interval.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $metadataType = TypedValue::class;
-    protected $metadataDataType = 'map';
-    /**
-     * The name of the plugin. Example: "disk".
-     *
-     * @var string
-     */
-    public $plugin;
-    /**
-     * The instance name of the plugin Example: "hdcl".
-     *
-     * @var string
-     */
-    public $pluginInstance;
-    /**
-     * The start time of the interval.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The measurement type. Example: "memory".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The measurement type instance. Example: "used".
-     *
-     * @var string
-     */
-    public $typeInstance;
-    protected $valuesType = CollectdValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * The end time of the interval.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Monitoring {
+    class CollectdPayload extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The end time of the interval.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $metadataType = TypedValue::class;
+        protected $metadataDataType = 'map';
+        /**
+         * The name of the plugin. Example: "disk".
+         *
+         * @var string
+         */
+        public $plugin;
+        /**
+         * The instance name of the plugin Example: "hdcl".
+         *
+         * @var string
+         */
+        public $pluginInstance;
+        /**
+         * The start time of the interval.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The measurement type. Example: "memory".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The measurement type instance. Example: "used".
+         *
+         * @var string
+         */
+        public $typeInstance;
+        protected $valuesType = CollectdValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * The end time of the interval.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The measurement metadata. Example: "process_id" -> 12345
+         *
+         * @param TypedValue[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return TypedValue[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the plugin. Example: "disk".
+         *
+         * @param string $plugin
+         */
+        public function setPlugin($plugin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlugin()
+        {
+        }
+        /**
+         * The instance name of the plugin Example: "hdcl".
+         *
+         * @param string $pluginInstance
+         */
+        public function setPluginInstance($pluginInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPluginInstance()
+        {
+        }
+        /**
+         * The start time of the interval.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The measurement type. Example: "memory".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The measurement type instance. Example: "used".
+         *
+         * @param string $typeInstance
+         */
+        public function setTypeInstance($typeInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTypeInstance()
+        {
+        }
+        /**
+         * The measured values during this time interval. Each value must have a
+         * different data_source_name.
+         *
+         * @param CollectdValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return CollectdValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\CollectdPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The measurement metadata. Example: "process_id" -> 12345
-     *
-     * @param TypedValue[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return TypedValue[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the plugin. Example: "disk".
-     *
-     * @param string $plugin
-     */
-    public function setPlugin($plugin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlugin()
-    {
-    }
-    /**
-     * The instance name of the plugin Example: "hdcl".
-     *
-     * @param string $pluginInstance
-     */
-    public function setPluginInstance($pluginInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPluginInstance()
-    {
-    }
-    /**
-     * The start time of the interval.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The measurement type. Example: "memory".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The measurement type instance. Example: "used".
-     *
-     * @param string $typeInstance
-     */
-    public function setTypeInstance($typeInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTypeInstance()
-    {
-    }
-    /**
-     * The measured values during this time interval. Each value must have a
-     * different data_source_name.
-     *
-     * @param CollectdValue[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return CollectdValue[]
-     */
-    public function getValues()
+    class Google_Service_Monitoring_CollectdPayload extends \Google\Service\Monitoring\CollectdPayload
     {
     }
 }

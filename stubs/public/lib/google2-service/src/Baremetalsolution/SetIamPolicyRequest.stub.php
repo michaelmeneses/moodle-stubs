@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class SetIamPolicyRequest extends \Google\Model
-{
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * @param Policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\Baremetalsolution {
+    class SetIamPolicyRequest extends \Google\Model
     {
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * @param Policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\Baremetalsolution\SetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
+    class Google_Service_Baremetalsolution_SetIamPolicyRequest extends \Google\Service\Baremetalsolution\SetIamPolicyRequest
     {
     }
 }

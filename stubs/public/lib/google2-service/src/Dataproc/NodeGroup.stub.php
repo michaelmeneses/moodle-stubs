@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class NodeGroup extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * Optional. Node group labels. Label keys must consist of from 1 to 63
-     * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
-     * Label values can be empty. If specified, they must consist of from 1 to 63
-     * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
-     * The node group must have no more than 32 labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The Node group resource name (https://aip.dev/122).
-     *
-     * @var string
-     */
-    public $name;
-    protected $nodeGroupConfigType = InstanceGroupConfig::class;
-    protected $nodeGroupConfigDataType = '';
-    /**
-     * Required. Node group roles.
-     *
-     * @var string[]
-     */
-    public $roles;
-    /**
-     * Optional. Node group labels. Label keys must consist of from 1 to 63
-     * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
-     * Label values can be empty. If specified, they must consist of from 1 to 63
-     * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
-     * The node group must have no more than 32 labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Dataproc {
+    class NodeGroup extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * Optional. Node group labels. Label keys must consist of from 1 to 63
+         * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
+         * Label values can be empty. If specified, they must consist of from 1 to 63
+         * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
+         * The node group must have no more than 32 labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The Node group resource name (https://aip.dev/122).
+         *
+         * @var string
+         */
+        public $name;
+        protected $nodeGroupConfigType = InstanceGroupConfig::class;
+        protected $nodeGroupConfigDataType = '';
+        /**
+         * Required. Node group roles.
+         *
+         * @var string[]
+         */
+        public $roles;
+        /**
+         * Optional. Node group labels. Label keys must consist of from 1 to 63
+         * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
+         * Label values can be empty. If specified, they must consist of from 1 to 63
+         * characters and conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
+         * The node group must have no more than 32 labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The Node group resource name (https://aip.dev/122).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The node group instance group configuration.
+         *
+         * @param InstanceGroupConfig $nodeGroupConfig
+         */
+        public function setNodeGroupConfig(InstanceGroupConfig $nodeGroupConfig)
+        {
+        }
+        /**
+         * @return InstanceGroupConfig
+         */
+        public function getNodeGroupConfig()
+        {
+        }
+        /**
+         * Required. Node group roles.
+         *
+         * @param string[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\NodeGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The Node group resource name (https://aip.dev/122).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The node group instance group configuration.
-     *
-     * @param InstanceGroupConfig $nodeGroupConfig
-     */
-    public function setNodeGroupConfig(InstanceGroupConfig $nodeGroupConfig)
-    {
-    }
-    /**
-     * @return InstanceGroupConfig
-     */
-    public function getNodeGroupConfig()
-    {
-    }
-    /**
-     * Required. Node group roles.
-     *
-     * @param string[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
+    class Google_Service_Dataproc_NodeGroup extends \Google\Service\Dataproc\NodeGroup
     {
     }
 }

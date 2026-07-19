@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeFleetSpec extends \Google\Collection
-{
-    protected $collection_key = 'upstreamFleets';
-    protected $gkeUpgradeOverridesType = ClusterUpgradeGKEUpgradeOverride::class;
-    protected $gkeUpgradeOverridesDataType = 'array';
-    protected $postConditionsType = ClusterUpgradePostConditions::class;
-    protected $postConditionsDataType = '';
-    /**
-     * @var string[]
-     */
-    public $upstreamFleets;
-    /**
-     * @param ClusterUpgradeGKEUpgradeOverride[]
-     */
-    public function setGkeUpgradeOverrides($gkeUpgradeOverrides)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeFleetSpec extends \Google\Collection
     {
+        protected $collection_key = 'upstreamFleets';
+        protected $gkeUpgradeOverridesType = ClusterUpgradeGKEUpgradeOverride::class;
+        protected $gkeUpgradeOverridesDataType = 'array';
+        protected $postConditionsType = ClusterUpgradePostConditions::class;
+        protected $postConditionsDataType = '';
+        /**
+         * @var string[]
+         */
+        public $upstreamFleets;
+        /**
+         * @param ClusterUpgradeGKEUpgradeOverride[]
+         */
+        public function setGkeUpgradeOverrides($gkeUpgradeOverrides)
+        {
+        }
+        /**
+         * @return ClusterUpgradeGKEUpgradeOverride[]
+         */
+        public function getGkeUpgradeOverrides()
+        {
+        }
+        /**
+         * @param ClusterUpgradePostConditions
+         */
+        public function setPostConditions(ClusterUpgradePostConditions $postConditions)
+        {
+        }
+        /**
+         * @return ClusterUpgradePostConditions
+         */
+        public function getPostConditions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUpstreamFleets($upstreamFleets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUpstreamFleets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUpgradeGKEUpgradeOverride[]
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeFleetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGkeUpgradeOverrides()
-    {
-    }
-    /**
-     * @param ClusterUpgradePostConditions
-     */
-    public function setPostConditions(ClusterUpgradePostConditions $postConditions)
-    {
-    }
-    /**
-     * @return ClusterUpgradePostConditions
-     */
-    public function getPostConditions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUpstreamFleets($upstreamFleets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUpstreamFleets()
+    class Google_Service_GKEHub_ClusterUpgradeFleetSpec extends \Google\Service\GKEHub\ClusterUpgradeFleetSpec
     {
     }
 }

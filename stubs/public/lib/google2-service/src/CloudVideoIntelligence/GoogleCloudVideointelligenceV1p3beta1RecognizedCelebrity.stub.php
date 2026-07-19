@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity extends \Google\Model
-{
-    protected $celebrityType = GoogleCloudVideointelligenceV1p3beta1Celebrity::class;
-    protected $celebrityDataType = '';
-    /**
-     * Recognition confidence. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The recognized celebrity.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1Celebrity $celebrity
-     */
-    public function setCelebrity(GoogleCloudVideointelligenceV1p3beta1Celebrity $celebrity)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity extends \Google\Model
     {
+        protected $celebrityType = GoogleCloudVideointelligenceV1p3beta1Celebrity::class;
+        protected $celebrityDataType = '';
+        /**
+         * Recognition confidence. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The recognized celebrity.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1Celebrity $celebrity
+         */
+        public function setCelebrity(GoogleCloudVideointelligenceV1p3beta1Celebrity $celebrity)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1Celebrity
+         */
+        public function getCelebrity()
+        {
+        }
+        /**
+         * Recognition confidence. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p3beta1Celebrity
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCelebrity()
-    {
-    }
-    /**
-     * Recognition confidence. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity
     {
     }
 }

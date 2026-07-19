@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ImportContextSqlImportOptions extends \Google\Model
-{
-    /**
-     * Optional. Whether or not the import should be parallel.
-     *
-     * @var bool
-     */
-    public $parallel;
-    protected $postgresImportOptionsType = ImportContextSqlImportOptionsPostgresImportOptions::class;
-    protected $postgresImportOptionsDataType = '';
-    /**
-     * Optional. The number of threads to use for parallel import.
-     *
-     * @var int
-     */
-    public $threads;
-    /**
-     * Optional. Whether or not the import should be parallel.
-     *
-     * @param bool $parallel
-     */
-    public function setParallel($parallel)
+namespace Google\Service\SQLAdmin {
+    class ImportContextSqlImportOptions extends \Google\Model
     {
+        /**
+         * Optional. Whether or not the import should be parallel.
+         *
+         * @var bool
+         */
+        public $parallel;
+        protected $postgresImportOptionsType = ImportContextSqlImportOptionsPostgresImportOptions::class;
+        protected $postgresImportOptionsDataType = '';
+        /**
+         * Optional. The number of threads to use for parallel import.
+         *
+         * @var int
+         */
+        public $threads;
+        /**
+         * Optional. Whether or not the import should be parallel.
+         *
+         * @param bool $parallel
+         */
+        public function setParallel($parallel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getParallel()
+        {
+        }
+        /**
+         * Optional. Options for importing from a Cloud SQL for PostgreSQL instance.
+         *
+         * @param ImportContextSqlImportOptionsPostgresImportOptions $postgresImportOptions
+         */
+        public function setPostgresImportOptions(ImportContextSqlImportOptionsPostgresImportOptions $postgresImportOptions)
+        {
+        }
+        /**
+         * @return ImportContextSqlImportOptionsPostgresImportOptions
+         */
+        public function getPostgresImportOptions()
+        {
+        }
+        /**
+         * Optional. The number of threads to use for parallel import.
+         *
+         * @param int $threads
+         */
+        public function setThreads($threads)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThreads()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\ImportContextSqlImportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParallel()
-    {
-    }
-    /**
-     * Optional. Options for importing from a Cloud SQL for PostgreSQL instance.
-     *
-     * @param ImportContextSqlImportOptionsPostgresImportOptions $postgresImportOptions
-     */
-    public function setPostgresImportOptions(ImportContextSqlImportOptionsPostgresImportOptions $postgresImportOptions)
-    {
-    }
-    /**
-     * @return ImportContextSqlImportOptionsPostgresImportOptions
-     */
-    public function getPostgresImportOptions()
-    {
-    }
-    /**
-     * Optional. The number of threads to use for parallel import.
-     *
-     * @param int $threads
-     */
-    public function setThreads($threads)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThreads()
+    class Google_Service_SQLAdmin_ImportContextSqlImportOptions extends \Google\Service\SQLAdmin\ImportContextSqlImportOptions
     {
     }
 }

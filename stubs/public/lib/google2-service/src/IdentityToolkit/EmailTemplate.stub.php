@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class EmailTemplate extends \Google\Model
-{
-    /**
-     * Email body.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Email body format.
-     *
-     * @var string
-     */
-    public $format;
-    /**
-     * From address of the email.
-     *
-     * @var string
-     */
-    public $from;
-    /**
-     * From display name.
-     *
-     * @var string
-     */
-    public $fromDisplayName;
-    /**
-     * Reply-to address.
-     *
-     * @var string
-     */
-    public $replyTo;
-    /**
-     * Subject of the email.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * Email body.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\IdentityToolkit {
+    class EmailTemplate extends \Google\Model
     {
+        /**
+         * Email body.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Email body format.
+         *
+         * @var string
+         */
+        public $format;
+        /**
+         * From address of the email.
+         *
+         * @var string
+         */
+        public $from;
+        /**
+         * From display name.
+         *
+         * @var string
+         */
+        public $fromDisplayName;
+        /**
+         * Reply-to address.
+         *
+         * @var string
+         */
+        public $replyTo;
+        /**
+         * Subject of the email.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * Email body.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Email body format.
+         *
+         * @param string $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * From address of the email.
+         *
+         * @param string $from
+         */
+        public function setFrom($from)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFrom()
+        {
+        }
+        /**
+         * From display name.
+         *
+         * @param string $fromDisplayName
+         */
+        public function setFromDisplayName($fromDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromDisplayName()
+        {
+        }
+        /**
+         * Reply-to address.
+         *
+         * @param string $replyTo
+         */
+        public function setReplyTo($replyTo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplyTo()
+        {
+        }
+        /**
+         * Subject of the email.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\EmailTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * Email body format.
-     *
-     * @param string $format
-     */
-    public function setFormat($format)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormat()
-    {
-    }
-    /**
-     * From address of the email.
-     *
-     * @param string $from
-     */
-    public function setFrom($from)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFrom()
-    {
-    }
-    /**
-     * From display name.
-     *
-     * @param string $fromDisplayName
-     */
-    public function setFromDisplayName($fromDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromDisplayName()
-    {
-    }
-    /**
-     * Reply-to address.
-     *
-     * @param string $replyTo
-     */
-    public function setReplyTo($replyTo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplyTo()
-    {
-    }
-    /**
-     * Subject of the email.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
+    class Google_Service_IdentityToolkit_EmailTemplate extends \Google\Service\IdentityToolkit\EmailTemplate
     {
     }
 }

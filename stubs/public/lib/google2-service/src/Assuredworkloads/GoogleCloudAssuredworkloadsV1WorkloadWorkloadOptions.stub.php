@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1WorkloadWorkloadOptions extends \Google\Model
-{
-    /**
-     * KAJ Enrollment type is unspecified
-     */
-    public const KAJ_ENROLLMENT_TYPE_KAJ_ENROLLMENT_TYPE_UNSPECIFIED = 'KAJ_ENROLLMENT_TYPE_UNSPECIFIED';
-    /**
-     * KAT sets External, Hardware, and Software key feature logging only to TRUE.
-     */
-    public const KAJ_ENROLLMENT_TYPE_KEY_ACCESS_TRANSPARENCY_OFF = 'KEY_ACCESS_TRANSPARENCY_OFF';
-    /**
-     * Optional. Specifies type of KAJ Enrollment if provided.
-     *
-     * @var string
-     */
-    public $kajEnrollmentType;
-    /**
-     * Optional. Specifies type of KAJ Enrollment if provided.
-     *
-     * Accepted values: KAJ_ENROLLMENT_TYPE_UNSPECIFIED,
-     * KEY_ACCESS_TRANSPARENCY_OFF
-     *
-     * @param self::KAJ_ENROLLMENT_TYPE_* $kajEnrollmentType
-     */
-    public function setKajEnrollmentType($kajEnrollmentType)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1WorkloadWorkloadOptions extends \Google\Model
     {
+        /**
+         * KAJ Enrollment type is unspecified
+         */
+        public const KAJ_ENROLLMENT_TYPE_KAJ_ENROLLMENT_TYPE_UNSPECIFIED = 'KAJ_ENROLLMENT_TYPE_UNSPECIFIED';
+        /**
+         * KAT sets External, Hardware, and Software key feature logging only to TRUE.
+         */
+        public const KAJ_ENROLLMENT_TYPE_KEY_ACCESS_TRANSPARENCY_OFF = 'KEY_ACCESS_TRANSPARENCY_OFF';
+        /**
+         * Optional. Specifies type of KAJ Enrollment if provided.
+         *
+         * @var string
+         */
+        public $kajEnrollmentType;
+        /**
+         * Optional. Specifies type of KAJ Enrollment if provided.
+         *
+         * Accepted values: KAJ_ENROLLMENT_TYPE_UNSPECIFIED,
+         * KEY_ACCESS_TRANSPARENCY_OFF
+         *
+         * @param self::KAJ_ENROLLMENT_TYPE_* $kajEnrollmentType
+         */
+        public function setKajEnrollmentType($kajEnrollmentType)
+        {
+        }
+        /**
+         * @return self::KAJ_ENROLLMENT_TYPE_*
+         */
+        public function getKajEnrollmentType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::KAJ_ENROLLMENT_TYPE_*
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadWorkloadOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKajEnrollmentType()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1WorkloadWorkloadOptions extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadWorkloadOptions
     {
     }
 }

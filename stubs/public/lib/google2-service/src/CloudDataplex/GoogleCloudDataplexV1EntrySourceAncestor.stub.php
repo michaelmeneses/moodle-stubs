@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntrySourceAncestor extends \Google\Model
-{
-    /**
-     * Optional. The name of the ancestor resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The type of the ancestor resource.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. The name of the ancestor resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntrySourceAncestor extends \Google\Model
     {
+        /**
+         * Optional. The name of the ancestor resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The type of the ancestor resource.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. The name of the ancestor resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The type of the ancestor resource.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntrySourceAncestor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The type of the ancestor resource.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntrySourceAncestor extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntrySourceAncestor
     {
     }
 }

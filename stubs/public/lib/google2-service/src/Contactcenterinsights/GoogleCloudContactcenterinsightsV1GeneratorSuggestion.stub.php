@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1GeneratorSuggestion extends \Google\Model
-{
-    protected $agentCoachingSuggestionType = GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion::class;
-    protected $agentCoachingSuggestionDataType = '';
-    protected $freeFormSuggestionType = GoogleCloudContactcenterinsightsV1FreeFormSuggestion::class;
-    protected $freeFormSuggestionDataType = '';
-    protected $summarySuggestionType = GoogleCloudContactcenterinsightsV1SummarySuggestion::class;
-    protected $summarySuggestionDataType = '';
-    /**
-     * @param GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion
-     */
-    public function setAgentCoachingSuggestion(GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion $agentCoachingSuggestion)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1GeneratorSuggestion extends \Google\Model
     {
+        protected $agentCoachingSuggestionType = GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion::class;
+        protected $agentCoachingSuggestionDataType = '';
+        protected $freeFormSuggestionType = GoogleCloudContactcenterinsightsV1FreeFormSuggestion::class;
+        protected $freeFormSuggestionDataType = '';
+        protected $summarySuggestionType = GoogleCloudContactcenterinsightsV1SummarySuggestion::class;
+        protected $summarySuggestionDataType = '';
+        /**
+         * @param GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion
+         */
+        public function setAgentCoachingSuggestion(GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion $agentCoachingSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion
+         */
+        public function getAgentCoachingSuggestion()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1FreeFormSuggestion
+         */
+        public function setFreeFormSuggestion(GoogleCloudContactcenterinsightsV1FreeFormSuggestion $freeFormSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1FreeFormSuggestion
+         */
+        public function getFreeFormSuggestion()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1SummarySuggestion
+         */
+        public function setSummarySuggestion(GoogleCloudContactcenterinsightsV1SummarySuggestion $summarySuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1SummarySuggestion
+         */
+        public function getSummarySuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1AgentCoachingSuggestion
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GeneratorSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentCoachingSuggestion()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1FreeFormSuggestion
-     */
-    public function setFreeFormSuggestion(GoogleCloudContactcenterinsightsV1FreeFormSuggestion $freeFormSuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1FreeFormSuggestion
-     */
-    public function getFreeFormSuggestion()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1SummarySuggestion
-     */
-    public function setSummarySuggestion(GoogleCloudContactcenterinsightsV1SummarySuggestion $summarySuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1SummarySuggestion
-     */
-    public function getSummarySuggestion()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1GeneratorSuggestion extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GeneratorSuggestion
     {
     }
 }

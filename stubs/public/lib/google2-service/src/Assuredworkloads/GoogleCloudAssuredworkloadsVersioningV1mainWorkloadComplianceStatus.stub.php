@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $acknowledgedViolationCount;
-    /**
-     * @var int
-     */
-    public $activeViolationCount;
-    /**
-     * @param int
-     */
-    public function setAcknowledgedViolationCount($acknowledgedViolationCount)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $acknowledgedViolationCount;
+        /**
+         * @var int
+         */
+        public $activeViolationCount;
+        /**
+         * @param int
+         */
+        public function setAcknowledgedViolationCount($acknowledgedViolationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcknowledgedViolationCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setActiveViolationCount($activeViolationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveViolationCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgedViolationCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setActiveViolationCount($activeViolationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getActiveViolationCount()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadComplianceStatus
     {
     }
 }

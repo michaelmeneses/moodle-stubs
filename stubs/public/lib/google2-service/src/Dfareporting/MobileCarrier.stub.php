@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class MobileCarrier extends \Google\Model
-{
-    /**
-     * Country code of the country to which this mobile carrier belongs.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * DART ID of the country to which this mobile carrier belongs.
-     *
-     * @var string
-     */
-    public $countryDartId;
-    /**
-     * ID of this mobile carrier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileCarrier".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this mobile carrier.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Country code of the country to which this mobile carrier belongs.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
+namespace Google\Service\Dfareporting {
+    class MobileCarrier extends \Google\Model
     {
+        /**
+         * Country code of the country to which this mobile carrier belongs.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * DART ID of the country to which this mobile carrier belongs.
+         *
+         * @var string
+         */
+        public $countryDartId;
+        /**
+         * ID of this mobile carrier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileCarrier".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this mobile carrier.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Country code of the country to which this mobile carrier belongs.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * DART ID of the country to which this mobile carrier belongs.
+         *
+         * @param string $countryDartId
+         */
+        public function setCountryDartId($countryDartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryDartId()
+        {
+        }
+        /**
+         * ID of this mobile carrier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileCarrier".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this mobile carrier.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\MobileCarrier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * DART ID of the country to which this mobile carrier belongs.
-     *
-     * @param string $countryDartId
-     */
-    public function setCountryDartId($countryDartId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryDartId()
-    {
-    }
-    /**
-     * ID of this mobile carrier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileCarrier".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this mobile carrier.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_MobileCarrier extends \Google\Service\Dfareporting\MobileCarrier
     {
     }
 }

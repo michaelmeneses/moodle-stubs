@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HostProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $hostName;
-    /**
-     * @var string
-     */
-    public $hostOwner;
-    /**
-     * @param string
-     */
-    public function setHostName($hostName)
+namespace Google\Service\CloudSearch {
+    class HostProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $hostName;
+        /**
+         * @var string
+         */
+        public $hostOwner;
+        /**
+         * @param string
+         */
+        public function setHostName($hostName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostOwner($hostOwner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostOwner()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\HostProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostOwner($hostOwner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostOwner()
+    class Google_Service_CloudSearch_HostProto extends \Google\Service\CloudSearch\HostProto
     {
     }
 }

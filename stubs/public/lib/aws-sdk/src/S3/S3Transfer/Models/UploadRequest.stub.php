@@ -8,6 +8,10 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Aws\S3\S3ClientInterface;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use InvalidArgumentException;
+use Psr\Http\Message\StreamInterface;
 final class UploadRequest extends AbstractTransferRequest
 {
     public static array $configKeys = ['multipart_upload_threshold_bytes' => 'int', 'target_part_size_bytes' => 'int', 'track_progress' => 'bool', 'concurrency' => 'int', 'request_checksum_calculation' => 'string'];

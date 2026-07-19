@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SslCertsCreateEphemeralRequest extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["accessToken" => "access_token", "publicKey" => "public_key"];
-    /**
-     * Access token to include in the signed certificate.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * PEM encoded public key to include in the signed certificate.
-     *
-     * @var string
-     */
-    public $publicKey;
-    /**
-     * Access token to include in the signed certificate.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\SQLAdmin {
+    class SslCertsCreateEphemeralRequest extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["accessToken" => "access_token", "publicKey" => "public_key"];
+        /**
+         * Access token to include in the signed certificate.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * PEM encoded public key to include in the signed certificate.
+         *
+         * @var string
+         */
+        public $publicKey;
+        /**
+         * Access token to include in the signed certificate.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * PEM encoded public key to include in the signed certificate.
+         *
+         * @param string $publicKey
+         */
+        public function setPublicKey($publicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SslCertsCreateEphemeralRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * PEM encoded public key to include in the signed certificate.
-     *
-     * @param string $publicKey
-     */
-    public function setPublicKey($publicKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKey()
+    class Google_Service_SQLAdmin_SslCertsCreateEphemeralRequest extends \Google\Service\SQLAdmin\SslCertsCreateEphemeralRequest
     {
     }
 }

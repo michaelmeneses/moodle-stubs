@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupManagersSetTargetPoolsRequest extends \Google\Collection
-{
-    protected $collection_key = 'targetPools';
-    /**
-     * Fingerprint of the target pools information, which is a hash of the
-     * contents. This field is used for optimistic locking when you update the
-     * target pool entries. This field is optional.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * The URL of all TargetPool resources to which instances in theinstanceGroup
-     * field are added. The target pools automatically apply to all of the
-     * instances in the managed instance group.
-     *
-     * @var string[]
-     */
-    public $targetPools;
-    /**
-     * Fingerprint of the target pools information, which is a hash of the
-     * contents. This field is used for optimistic locking when you update the
-     * target pool entries. This field is optional.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupManagersSetTargetPoolsRequest extends \Google\Collection
     {
+        protected $collection_key = 'targetPools';
+        /**
+         * Fingerprint of the target pools information, which is a hash of the
+         * contents. This field is used for optimistic locking when you update the
+         * target pool entries. This field is optional.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * The URL of all TargetPool resources to which instances in theinstanceGroup
+         * field are added. The target pools automatically apply to all of the
+         * instances in the managed instance group.
+         *
+         * @var string[]
+         */
+        public $targetPools;
+        /**
+         * Fingerprint of the target pools information, which is a hash of the
+         * contents. This field is used for optimistic locking when you update the
+         * target pool entries. This field is optional.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The URL of all TargetPool resources to which instances in theinstanceGroup
+         * field are added. The target pools automatically apply to all of the
+         * instances in the managed instance group.
+         *
+         * @param string[] $targetPools
+         */
+        public function setTargetPools($targetPools)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupManagersSetTargetPoolsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The URL of all TargetPool resources to which instances in theinstanceGroup
-     * field are added. The target pools automatically apply to all of the
-     * instances in the managed instance group.
-     *
-     * @param string[] $targetPools
-     */
-    public function setTargetPools($targetPools)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetPools()
+    class Google_Service_Compute_RegionInstanceGroupManagersSetTargetPoolsRequest extends \Google\Service\Compute\RegionInstanceGroupManagersSetTargetPoolsRequest
     {
     }
 }

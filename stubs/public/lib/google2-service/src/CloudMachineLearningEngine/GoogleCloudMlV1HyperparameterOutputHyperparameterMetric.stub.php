@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends \Google\Model
-{
-    /**
-     * The objective value at this training step.
-     *
-     * @var 
-     */
-    public $objectiveValue;
-    /**
-     * The global training step for this metric.
-     *
-     * @var string
-     */
-    public $trainingStep;
-    public function setObjectiveValue($objectiveValue)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends \Google\Model
     {
+        /**
+         * The objective value at this training step.
+         *
+         * @var 
+         */
+        public $objectiveValue;
+        /**
+         * The global training step for this metric.
+         *
+         * @var string
+         */
+        public $trainingStep;
+        public function setObjectiveValue($objectiveValue)
+        {
+        }
+        public function getObjectiveValue()
+        {
+        }
+        /**
+         * The global training step for this metric.
+         *
+         * @param string $trainingStep
+         */
+        public function setTrainingStep($trainingStep)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainingStep()
+        {
+        }
     }
-    public function getObjectiveValue()
-    {
-    }
+}
+namespace {
     /**
-     * The global training step for this metric.
-     *
-     * @param string $trainingStep
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1HyperparameterOutputHyperparameterMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTrainingStep($trainingStep)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainingStep()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1HyperparameterOutputHyperparameterMetric
     {
     }
 }

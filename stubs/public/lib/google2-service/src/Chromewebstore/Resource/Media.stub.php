@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromewebstoreService = new Google\Service\Chromewebstore(...);
- *   $media = $chromewebstoreService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\Chromewebstore\Resource {
+    use Google\Service\Chromewebstore\UploadItemPackageRequest;
+    use Google\Service\Chromewebstore\UploadItemPackageResponse;
     /**
-     * Upload a new package to an existing item. (media.upload)
-     *
-     * @param string $name Required. Name of the item to upload the new package to
-     * in the form `publishers/{publisherId}/items/{itemId}`
-     * @param UploadItemPackageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UploadItemPackageResponse
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromewebstoreService = new Google\Service\Chromewebstore(...);
+     *   $media = $chromewebstoreService->media;
+     *  </code>
      */
-    public function upload($name, UploadItemPackageRequest $postBody, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Upload a new package to an existing item. (media.upload)
+         *
+         * @param string $name Required. Name of the item to upload the new package to
+         * in the form `publishers/{publisherId}/items/{itemId}`
+         * @param UploadItemPackageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UploadItemPackageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($name, UploadItemPackageRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Chromewebstore\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Chromewebstore_Resource_Media extends \Google\Service\Chromewebstore\Resource\Media
     {
     }
 }

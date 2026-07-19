@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class Section extends \Google\Model
-{
-    protected $listType = ListContent::class;
-    protected $listDataType = '';
-    protected $textType = TextContent::class;
-    protected $textDataType = '';
-    /**
-     * Used if this section's content is a list.
-     *
-     * @param ListContent $list
-     */
-    public function setList(ListContent $list)
+namespace Google\Service\Keep {
+    class Section extends \Google\Model
     {
+        protected $listType = ListContent::class;
+        protected $listDataType = '';
+        protected $textType = TextContent::class;
+        protected $textDataType = '';
+        /**
+         * Used if this section's content is a list.
+         *
+         * @param ListContent $list
+         */
+        public function setList(ListContent $list)
+        {
+        }
+        /**
+         * @return ListContent
+         */
+        public function getList()
+        {
+        }
+        /**
+         * Used if this section's content is a block of text. The length of the text
+         * content must be less than 20,000 characters.
+         *
+         * @param TextContent $text
+         */
+        public function setText(TextContent $text)
+        {
+        }
+        /**
+         * @return TextContent
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListContent
+     * Runtime class alias of \Google\Service\Keep\Section registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getList()
-    {
-    }
-    /**
-     * Used if this section's content is a block of text. The length of the text
-     * content must be less than 20,000 characters.
-     *
-     * @param TextContent $text
-     */
-    public function setText(TextContent $text)
-    {
-    }
-    /**
-     * @return TextContent
-     */
-    public function getText()
+    class Google_Service_Keep_Section extends \Google\Service\Keep\Section
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class EventNotificationConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $pubsubTopicName;
-    /**
-     * @var string
-     */
-    public $subfolderMatches;
-    /**
-     * @param string
-     */
-    public function setPubsubTopicName($pubsubTopicName)
+namespace Google\Service\CloudIot {
+    class EventNotificationConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $pubsubTopicName;
+        /**
+         * @var string
+         */
+        public $subfolderMatches;
+        /**
+         * @param string
+         */
+        public function setPubsubTopicName($pubsubTopicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopicName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubfolderMatches($subfolderMatches)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubfolderMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\EventNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubTopicName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubfolderMatches($subfolderMatches)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubfolderMatches()
+    class Google_Service_CloudIot_EventNotificationConfig extends \Google\Service\CloudIot\EventNotificationConfig
     {
     }
 }

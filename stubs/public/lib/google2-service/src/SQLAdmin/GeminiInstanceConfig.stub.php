@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class GeminiInstanceConfig extends \Google\Model
-{
-    /**
-     * Output only. Whether the active query is enabled.
-     *
-     * @var bool
-     */
-    public $activeQueryEnabled;
-    /**
-     * Output only. Whether Gemini is enabled.
-     *
-     * @var bool
-     */
-    public $entitled;
-    /**
-     * Output only. Whether the flag recommender is enabled.
-     *
-     * @var bool
-     */
-    public $flagRecommenderEnabled;
-    /**
-     * Output only. Whether the vacuum management is enabled.
-     *
-     * @var bool
-     */
-    public $googleVacuumMgmtEnabled;
-    /**
-     * Output only. Whether the index advisor is enabled.
-     *
-     * @var bool
-     */
-    public $indexAdvisorEnabled;
-    /**
-     * Output only. Whether canceling the out-of-memory (OOM) session is enabled.
-     *
-     * @var bool
-     */
-    public $oomSessionCancelEnabled;
-    /**
-     * Output only. Whether the active query is enabled.
-     *
-     * @param bool $activeQueryEnabled
-     */
-    public function setActiveQueryEnabled($activeQueryEnabled)
+namespace Google\Service\SQLAdmin {
+    class GeminiInstanceConfig extends \Google\Model
     {
+        /**
+         * Output only. Whether the active query is enabled.
+         *
+         * @var bool
+         */
+        public $activeQueryEnabled;
+        /**
+         * Output only. Whether Gemini is enabled.
+         *
+         * @var bool
+         */
+        public $entitled;
+        /**
+         * Output only. Whether the flag recommender is enabled.
+         *
+         * @var bool
+         */
+        public $flagRecommenderEnabled;
+        /**
+         * Output only. Whether the vacuum management is enabled.
+         *
+         * @var bool
+         */
+        public $googleVacuumMgmtEnabled;
+        /**
+         * Output only. Whether the index advisor is enabled.
+         *
+         * @var bool
+         */
+        public $indexAdvisorEnabled;
+        /**
+         * Output only. Whether canceling the out-of-memory (OOM) session is enabled.
+         *
+         * @var bool
+         */
+        public $oomSessionCancelEnabled;
+        /**
+         * Output only. Whether the active query is enabled.
+         *
+         * @param bool $activeQueryEnabled
+         */
+        public function setActiveQueryEnabled($activeQueryEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActiveQueryEnabled()
+        {
+        }
+        /**
+         * Output only. Whether Gemini is enabled.
+         *
+         * @param bool $entitled
+         */
+        public function setEntitled($entitled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEntitled()
+        {
+        }
+        /**
+         * Output only. Whether the flag recommender is enabled.
+         *
+         * @param bool $flagRecommenderEnabled
+         */
+        public function setFlagRecommenderEnabled($flagRecommenderEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFlagRecommenderEnabled()
+        {
+        }
+        /**
+         * Output only. Whether the vacuum management is enabled.
+         *
+         * @param bool $googleVacuumMgmtEnabled
+         */
+        public function setGoogleVacuumMgmtEnabled($googleVacuumMgmtEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGoogleVacuumMgmtEnabled()
+        {
+        }
+        /**
+         * Output only. Whether the index advisor is enabled.
+         *
+         * @param bool $indexAdvisorEnabled
+         */
+        public function setIndexAdvisorEnabled($indexAdvisorEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIndexAdvisorEnabled()
+        {
+        }
+        /**
+         * Output only. Whether canceling the out-of-memory (OOM) session is enabled.
+         *
+         * @param bool $oomSessionCancelEnabled
+         */
+        public function setOomSessionCancelEnabled($oomSessionCancelEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOomSessionCancelEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\GeminiInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveQueryEnabled()
-    {
-    }
-    /**
-     * Output only. Whether Gemini is enabled.
-     *
-     * @param bool $entitled
-     */
-    public function setEntitled($entitled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEntitled()
-    {
-    }
-    /**
-     * Output only. Whether the flag recommender is enabled.
-     *
-     * @param bool $flagRecommenderEnabled
-     */
-    public function setFlagRecommenderEnabled($flagRecommenderEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFlagRecommenderEnabled()
-    {
-    }
-    /**
-     * Output only. Whether the vacuum management is enabled.
-     *
-     * @param bool $googleVacuumMgmtEnabled
-     */
-    public function setGoogleVacuumMgmtEnabled($googleVacuumMgmtEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGoogleVacuumMgmtEnabled()
-    {
-    }
-    /**
-     * Output only. Whether the index advisor is enabled.
-     *
-     * @param bool $indexAdvisorEnabled
-     */
-    public function setIndexAdvisorEnabled($indexAdvisorEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIndexAdvisorEnabled()
-    {
-    }
-    /**
-     * Output only. Whether canceling the out-of-memory (OOM) session is enabled.
-     *
-     * @param bool $oomSessionCancelEnabled
-     */
-    public function setOomSessionCancelEnabled($oomSessionCancelEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOomSessionCancelEnabled()
+    class Google_Service_SQLAdmin_GeminiInstanceConfig extends \Google\Service\SQLAdmin\GeminiInstanceConfig
     {
     }
 }

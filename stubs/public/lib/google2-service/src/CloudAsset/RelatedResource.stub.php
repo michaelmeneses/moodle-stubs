@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class RelatedResource extends \Google\Model
-{
-    /**
-     * The type of the asset. Example: `compute.googleapis.com/Instance`
-     *
-     * @var string
-     */
-    public $assetType;
-    /**
-     * The full resource name of the related resource. Example:
-     * `//compute.googleapis.com/projects/my_proj_123/zones/instance/instance123`
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * The type of the asset. Example: `compute.googleapis.com/Instance`
-     *
-     * @param string $assetType
-     */
-    public function setAssetType($assetType)
+namespace Google\Service\CloudAsset {
+    class RelatedResource extends \Google\Model
     {
+        /**
+         * The type of the asset. Example: `compute.googleapis.com/Instance`
+         *
+         * @var string
+         */
+        public $assetType;
+        /**
+         * The full resource name of the related resource. Example:
+         * `//compute.googleapis.com/projects/my_proj_123/zones/instance/instance123`
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * The type of the asset. Example: `compute.googleapis.com/Instance`
+         *
+         * @param string $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
+        /**
+         * The full resource name of the related resource. Example:
+         * `//compute.googleapis.com/projects/my_proj_123/zones/instance/instance123`
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\RelatedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetType()
-    {
-    }
-    /**
-     * The full resource name of the related resource. Example:
-     * `//compute.googleapis.com/projects/my_proj_123/zones/instance/instance123`
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
+    class Google_Service_CloudAsset_RelatedResource extends \Google\Service\CloudAsset\RelatedResource
     {
     }
 }

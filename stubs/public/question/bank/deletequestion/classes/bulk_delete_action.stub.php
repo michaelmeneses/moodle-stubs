@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_deletequestion;
 
+use core_question\local\bank\view;
 /**
  * Class bulk_delete_action is the base class for delete bulk actions ui.
  *

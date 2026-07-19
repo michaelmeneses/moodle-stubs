@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventFocusTimeProperties extends \Google\Model
-{
-    /**
-     * Whether to decline meeting invitations which overlap Focus Time events.
-     * Valid values are declineNone, meaning that no meeting invitations are
-     * declined; declineAllConflictingInvitations, meaning that all conflicting
-     * meeting invitations that conflict with the event are declined; and
-     * declineOnlyNewConflictingInvitations, meaning that only new conflicting
-     * meeting invitations which arrive while the Focus Time event is present are
-     * to be declined.
-     *
-     * @var string
-     */
-    public $autoDeclineMode;
-    /**
-     * The status to mark the user in Chat and related products. This can be
-     * available or doNotDisturb.
-     *
-     * @var string
-     */
-    public $chatStatus;
-    /**
-     * Response message to set if an existing event or new invitation is
-     * automatically declined by Calendar.
-     *
-     * @var string
-     */
-    public $declineMessage;
-    /**
-     * Whether to decline meeting invitations which overlap Focus Time events.
-     * Valid values are declineNone, meaning that no meeting invitations are
-     * declined; declineAllConflictingInvitations, meaning that all conflicting
-     * meeting invitations that conflict with the event are declined; and
-     * declineOnlyNewConflictingInvitations, meaning that only new conflicting
-     * meeting invitations which arrive while the Focus Time event is present are
-     * to be declined.
-     *
-     * @param string $autoDeclineMode
-     */
-    public function setAutoDeclineMode($autoDeclineMode)
+namespace Google\Service\Calendar {
+    class EventFocusTimeProperties extends \Google\Model
     {
+        /**
+         * Whether to decline meeting invitations which overlap Focus Time events.
+         * Valid values are declineNone, meaning that no meeting invitations are
+         * declined; declineAllConflictingInvitations, meaning that all conflicting
+         * meeting invitations that conflict with the event are declined; and
+         * declineOnlyNewConflictingInvitations, meaning that only new conflicting
+         * meeting invitations which arrive while the Focus Time event is present are
+         * to be declined.
+         *
+         * @var string
+         */
+        public $autoDeclineMode;
+        /**
+         * The status to mark the user in Chat and related products. This can be
+         * available or doNotDisturb.
+         *
+         * @var string
+         */
+        public $chatStatus;
+        /**
+         * Response message to set if an existing event or new invitation is
+         * automatically declined by Calendar.
+         *
+         * @var string
+         */
+        public $declineMessage;
+        /**
+         * Whether to decline meeting invitations which overlap Focus Time events.
+         * Valid values are declineNone, meaning that no meeting invitations are
+         * declined; declineAllConflictingInvitations, meaning that all conflicting
+         * meeting invitations that conflict with the event are declined; and
+         * declineOnlyNewConflictingInvitations, meaning that only new conflicting
+         * meeting invitations which arrive while the Focus Time event is present are
+         * to be declined.
+         *
+         * @param string $autoDeclineMode
+         */
+        public function setAutoDeclineMode($autoDeclineMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoDeclineMode()
+        {
+        }
+        /**
+         * The status to mark the user in Chat and related products. This can be
+         * available or doNotDisturb.
+         *
+         * @param string $chatStatus
+         */
+        public function setChatStatus($chatStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChatStatus()
+        {
+        }
+        /**
+         * Response message to set if an existing event or new invitation is
+         * automatically declined by Calendar.
+         *
+         * @param string $declineMessage
+         */
+        public function setDeclineMessage($declineMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeclineMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventFocusTimeProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoDeclineMode()
-    {
-    }
-    /**
-     * The status to mark the user in Chat and related products. This can be
-     * available or doNotDisturb.
-     *
-     * @param string $chatStatus
-     */
-    public function setChatStatus($chatStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChatStatus()
-    {
-    }
-    /**
-     * Response message to set if an existing event or new invitation is
-     * automatically declined by Calendar.
-     *
-     * @param string $declineMessage
-     */
-    public function setDeclineMessage($declineMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeclineMessage()
+    class Google_Service_Calendar_EventFocusTimeProperties extends \Google\Service\Calendar\EventFocusTimeProperties
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Group extends \Google\Model
-{
-    /**
-     * The email address of the group.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The title of the group.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The email address of the group.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\DriveActivity {
+    class Group extends \Google\Model
     {
+        /**
+         * The email address of the group.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The title of the group.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The email address of the group.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The title of the group.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The title of the group.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DriveActivity_Group extends \Google\Service\DriveActivity\Group
     {
     }
 }

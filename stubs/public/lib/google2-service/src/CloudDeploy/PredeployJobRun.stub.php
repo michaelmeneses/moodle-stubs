@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PredeployJobRun extends \Google\Model
-{
-    /**
-     * No reason for failure is specified.
-     */
-    public const FAILURE_CAUSE_FAILURE_CAUSE_UNSPECIFIED = 'FAILURE_CAUSE_UNSPECIFIED';
-    /**
-     * Cloud Build is not available, either because it is not enabled or because
-     * Cloud Deploy has insufficient permissions. See [required
-     * permission](https://cloud.google.com/deploy/docs/cloud-deploy-service-
-     * account#required_permissions).
-     */
-    public const FAILURE_CAUSE_CLOUD_BUILD_UNAVAILABLE = 'CLOUD_BUILD_UNAVAILABLE';
-    /**
-     * The predeploy operation did not complete successfully; check Cloud Build
-     * logs.
-     */
-    public const FAILURE_CAUSE_EXECUTION_FAILED = 'EXECUTION_FAILED';
-    /**
-     * The predeploy job run did not complete within the allotted time.
-     */
-    public const FAILURE_CAUSE_DEADLINE_EXCEEDED = 'DEADLINE_EXCEEDED';
-    /**
-     * Cloud Build failed to fulfill Cloud Deploy's request. See failure_message
-     * for additional details.
-     */
-    public const FAILURE_CAUSE_CLOUD_BUILD_REQUEST_FAILED = 'CLOUD_BUILD_REQUEST_FAILED';
-    /**
-     * Output only. The resource name of the Cloud Build `Build` object that is
-     * used to execute the custom actions associated with the predeploy Job.
-     * Format is `projects/{project}/locations/{location}/builds/{build}`.
-     *
-     * @var string
-     */
-    public $build;
-    /**
-     * Output only. The reason the predeploy failed. This will always be
-     * unspecified while the predeploy is in progress or if it succeeded.
-     *
-     * @var string
-     */
-    public $failureCause;
-    /**
-     * Output only. Additional information about the predeploy failure, if
-     * available.
-     *
-     * @var string
-     */
-    public $failureMessage;
-    /**
-     * Output only. The resource name of the Cloud Build `Build` object that is
-     * used to execute the custom actions associated with the predeploy Job.
-     * Format is `projects/{project}/locations/{location}/builds/{build}`.
-     *
-     * @param string $build
-     */
-    public function setBuild($build)
+namespace Google\Service\CloudDeploy {
+    class PredeployJobRun extends \Google\Model
     {
+        /**
+         * No reason for failure is specified.
+         */
+        public const FAILURE_CAUSE_FAILURE_CAUSE_UNSPECIFIED = 'FAILURE_CAUSE_UNSPECIFIED';
+        /**
+         * Cloud Build is not available, either because it is not enabled or because
+         * Cloud Deploy has insufficient permissions. See [required
+         * permission](https://cloud.google.com/deploy/docs/cloud-deploy-service-
+         * account#required_permissions).
+         */
+        public const FAILURE_CAUSE_CLOUD_BUILD_UNAVAILABLE = 'CLOUD_BUILD_UNAVAILABLE';
+        /**
+         * The predeploy operation did not complete successfully; check Cloud Build
+         * logs.
+         */
+        public const FAILURE_CAUSE_EXECUTION_FAILED = 'EXECUTION_FAILED';
+        /**
+         * The predeploy job run did not complete within the allotted time.
+         */
+        public const FAILURE_CAUSE_DEADLINE_EXCEEDED = 'DEADLINE_EXCEEDED';
+        /**
+         * Cloud Build failed to fulfill Cloud Deploy's request. See failure_message
+         * for additional details.
+         */
+        public const FAILURE_CAUSE_CLOUD_BUILD_REQUEST_FAILED = 'CLOUD_BUILD_REQUEST_FAILED';
+        /**
+         * Output only. The resource name of the Cloud Build `Build` object that is
+         * used to execute the custom actions associated with the predeploy Job.
+         * Format is `projects/{project}/locations/{location}/builds/{build}`.
+         *
+         * @var string
+         */
+        public $build;
+        /**
+         * Output only. The reason the predeploy failed. This will always be
+         * unspecified while the predeploy is in progress or if it succeeded.
+         *
+         * @var string
+         */
+        public $failureCause;
+        /**
+         * Output only. Additional information about the predeploy failure, if
+         * available.
+         *
+         * @var string
+         */
+        public $failureMessage;
+        /**
+         * Output only. The resource name of the Cloud Build `Build` object that is
+         * used to execute the custom actions associated with the predeploy Job.
+         * Format is `projects/{project}/locations/{location}/builds/{build}`.
+         *
+         * @param string $build
+         */
+        public function setBuild($build)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * Output only. The reason the predeploy failed. This will always be
+         * unspecified while the predeploy is in progress or if it succeeded.
+         *
+         * Accepted values: FAILURE_CAUSE_UNSPECIFIED, CLOUD_BUILD_UNAVAILABLE,
+         * EXECUTION_FAILED, DEADLINE_EXCEEDED, CLOUD_BUILD_REQUEST_FAILED
+         *
+         * @param self::FAILURE_CAUSE_* $failureCause
+         */
+        public function setFailureCause($failureCause)
+        {
+        }
+        /**
+         * @return self::FAILURE_CAUSE_*
+         */
+        public function getFailureCause()
+        {
+        }
+        /**
+         * Output only. Additional information about the predeploy failure, if
+         * available.
+         *
+         * @param string $failureMessage
+         */
+        public function setFailureMessage($failureMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\PredeployJobRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuild()
-    {
-    }
-    /**
-     * Output only. The reason the predeploy failed. This will always be
-     * unspecified while the predeploy is in progress or if it succeeded.
-     *
-     * Accepted values: FAILURE_CAUSE_UNSPECIFIED, CLOUD_BUILD_UNAVAILABLE,
-     * EXECUTION_FAILED, DEADLINE_EXCEEDED, CLOUD_BUILD_REQUEST_FAILED
-     *
-     * @param self::FAILURE_CAUSE_* $failureCause
-     */
-    public function setFailureCause($failureCause)
-    {
-    }
-    /**
-     * @return self::FAILURE_CAUSE_*
-     */
-    public function getFailureCause()
-    {
-    }
-    /**
-     * Output only. Additional information about the predeploy failure, if
-     * available.
-     *
-     * @param string $failureMessage
-     */
-    public function setFailureMessage($failureMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureMessage()
+    class Google_Service_CloudDeploy_PredeployJobRun extends \Google\Service\CloudDeploy\PredeployJobRun
     {
     }
 }

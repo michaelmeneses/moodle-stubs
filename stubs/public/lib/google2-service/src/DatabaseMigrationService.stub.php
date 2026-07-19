@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DatabaseMigrationService (v1).
- *
- * <p>
- * Manage Cloud Database Migration Service resources on Google Cloud Platform.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/database-migration/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DatabaseMigrationService extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_connectionProfiles;
-    public $projects_locations_conversionWorkspaces;
-    public $projects_locations_conversionWorkspaces_mappingRules;
-    public $projects_locations_migrationJobs;
-    public $projects_locations_migrationJobs_objects;
-    public $projects_locations_operations;
-    public $projects_locations_privateConnections;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DatabaseMigrationService
-     * service.
+     * Service definition for DatabaseMigrationService (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manage Cloud Database Migration Service resources on Google Cloud Platform.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/database-migration/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DatabaseMigrationService extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_connectionProfiles;
+        public $projects_locations_conversionWorkspaces;
+        public $projects_locations_conversionWorkspaces_mappingRules;
+        public $projects_locations_migrationJobs;
+        public $projects_locations_migrationJobs_objects;
+        public $projects_locations_operations;
+        public $projects_locations_privateConnections;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DatabaseMigrationService
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DatabaseMigrationService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DatabaseMigrationService extends \Google\Service\DatabaseMigrationService
     {
     }
 }

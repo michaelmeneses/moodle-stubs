@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GcsOutputDestination extends \Google\Model
-{
-    /**
-     * Required. Google Cloud Storage URI to output directory. For example,
-     * `gs://bucket/directory`. The requesting user must have write permission to
-     * the bucket. The directory will be created if it doesn't exist.
-     *
-     * @var string
-     */
-    public $outputUriPrefix;
-    /**
-     * Required. Google Cloud Storage URI to output directory. For example,
-     * `gs://bucket/directory`. The requesting user must have write permission to
-     * the bucket. The directory will be created if it doesn't exist.
-     *
-     * @param string $outputUriPrefix
-     */
-    public function setOutputUriPrefix($outputUriPrefix)
+namespace Google\Service\Translate {
+    class GcsOutputDestination extends \Google\Model
     {
+        /**
+         * Required. Google Cloud Storage URI to output directory. For example,
+         * `gs://bucket/directory`. The requesting user must have write permission to
+         * the bucket. The directory will be created if it doesn't exist.
+         *
+         * @var string
+         */
+        public $outputUriPrefix;
+        /**
+         * Required. Google Cloud Storage URI to output directory. For example,
+         * `gs://bucket/directory`. The requesting user must have write permission to
+         * the bucket. The directory will be created if it doesn't exist.
+         *
+         * @param string $outputUriPrefix
+         */
+        public function setOutputUriPrefix($outputUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\GcsOutputDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUriPrefix()
+    class Google_Service_Translate_GcsOutputDestination extends \Google\Service\Translate\GcsOutputDestination
     {
     }
 }

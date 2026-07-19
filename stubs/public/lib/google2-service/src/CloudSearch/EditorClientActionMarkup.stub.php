@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EditorClientActionMarkup extends \Google\Model
-{
-    protected $requestFileScopeForActiveDocumentType = RequestFileScopeForActiveDocument::class;
-    protected $requestFileScopeForActiveDocumentDataType = '';
-    /**
-     * @param RequestFileScopeForActiveDocument
-     */
-    public function setRequestFileScopeForActiveDocument(RequestFileScopeForActiveDocument $requestFileScopeForActiveDocument)
+namespace Google\Service\CloudSearch {
+    class EditorClientActionMarkup extends \Google\Model
     {
+        protected $requestFileScopeForActiveDocumentType = RequestFileScopeForActiveDocument::class;
+        protected $requestFileScopeForActiveDocumentDataType = '';
+        /**
+         * @param RequestFileScopeForActiveDocument
+         */
+        public function setRequestFileScopeForActiveDocument(RequestFileScopeForActiveDocument $requestFileScopeForActiveDocument)
+        {
+        }
+        /**
+         * @return RequestFileScopeForActiveDocument
+         */
+        public function getRequestFileScopeForActiveDocument()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RequestFileScopeForActiveDocument
+     * Runtime class alias of \Google\Service\CloudSearch\EditorClientActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestFileScopeForActiveDocument()
+    class Google_Service_CloudSearch_EditorClientActionMarkup extends \Google\Service\CloudSearch\EditorClientActionMarkup
     {
     }
 }

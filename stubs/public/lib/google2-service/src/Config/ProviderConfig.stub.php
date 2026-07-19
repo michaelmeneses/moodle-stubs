@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ProviderConfig extends \Google\Model
-{
-    /**
-     * Unspecified source type, default to public sources.
-     */
-    public const SOURCE_TYPE_PROVIDER_SOURCE_UNSPECIFIED = 'PROVIDER_SOURCE_UNSPECIFIED';
-    /**
-     * Service maintained provider source type.
-     */
-    public const SOURCE_TYPE_SERVICE_MAINTAINED = 'SERVICE_MAINTAINED';
-    /**
-     * Optional. ProviderSource specifies the source type of the provider.
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * Optional. ProviderSource specifies the source type of the provider.
-     *
-     * Accepted values: PROVIDER_SOURCE_UNSPECIFIED, SERVICE_MAINTAINED
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
+namespace Google\Service\Config {
+    class ProviderConfig extends \Google\Model
     {
+        /**
+         * Unspecified source type, default to public sources.
+         */
+        public const SOURCE_TYPE_PROVIDER_SOURCE_UNSPECIFIED = 'PROVIDER_SOURCE_UNSPECIFIED';
+        /**
+         * Service maintained provider source type.
+         */
+        public const SOURCE_TYPE_SERVICE_MAINTAINED = 'SERVICE_MAINTAINED';
+        /**
+         * Optional. ProviderSource specifies the source type of the provider.
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * Optional. ProviderSource specifies the source type of the provider.
+         *
+         * Accepted values: PROVIDER_SOURCE_UNSPECIFIED, SERVICE_MAINTAINED
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SOURCE_TYPE_*
+     * Runtime class alias of \Google\Service\Config\ProviderConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceType()
+    class Google_Service_Config_ProviderConfig extends \Google\Service\Config\ProviderConfig
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class ListLocationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    protected $locationsType = Location::class;
-    protected $locationsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param Location[]
-     */
-    public function setLocations($locations)
+namespace Google\Service\GameServices {
+    class ListLocationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        protected $locationsType = Location::class;
+        protected $locationsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param Location[]
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return Location[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location[]
+     * Runtime class alias of \Google\Service\GameServices\ListLocationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GameServices_ListLocationsResponse extends \Google\Service\GameServices\ListLocationsResponse
     {
     }
 }

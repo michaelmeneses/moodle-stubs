@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExternalApiElasticSearchParams extends \Google\Model
-{
-    /**
-     * The ElasticSearch index to use.
-     *
-     * @var string
-     */
-    public $index;
-    /**
-     * Optional. Number of hits (chunks) to request. When specified, it is passed
-     * to Elasticsearch as the `num_hits` param.
-     *
-     * @var int
-     */
-    public $numHits;
-    /**
-     * The ElasticSearch search template to use.
-     *
-     * @var string
-     */
-    public $searchTemplate;
-    /**
-     * The ElasticSearch index to use.
-     *
-     * @param string $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExternalApiElasticSearchParams extends \Google\Model
     {
+        /**
+         * The ElasticSearch index to use.
+         *
+         * @var string
+         */
+        public $index;
+        /**
+         * Optional. Number of hits (chunks) to request. When specified, it is passed
+         * to Elasticsearch as the `num_hits` param.
+         *
+         * @var int
+         */
+        public $numHits;
+        /**
+         * The ElasticSearch search template to use.
+         *
+         * @var string
+         */
+        public $searchTemplate;
+        /**
+         * The ElasticSearch index to use.
+         *
+         * @param string $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Optional. Number of hits (chunks) to request. When specified, it is passed
+         * to Elasticsearch as the `num_hits` param.
+         *
+         * @param int $numHits
+         */
+        public function setNumHits($numHits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumHits()
+        {
+        }
+        /**
+         * The ElasticSearch search template to use.
+         *
+         * @param string $searchTemplate
+         */
+        public function setSearchTemplate($searchTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExternalApiElasticSearchParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * Optional. Number of hits (chunks) to request. When specified, it is passed
-     * to Elasticsearch as the `num_hits` param.
-     *
-     * @param int $numHits
-     */
-    public function setNumHits($numHits)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumHits()
-    {
-    }
-    /**
-     * The ElasticSearch search template to use.
-     *
-     * @param string $searchTemplate
-     */
-    public function setSearchTemplate($searchTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchTemplate()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExternalApiElasticSearchParams extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExternalApiElasticSearchParams
     {
     }
 }

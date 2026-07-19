@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1FreeFormSuggestion extends \Google\Model
-{
-    /**
-     * Required. Free form suggestion.
-     *
-     * @var string
-     */
-    public $response;
-    /**
-     * Required. Free form suggestion.
-     *
-     * @param string $response
-     */
-    public function setResponse($response)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1FreeFormSuggestion extends \Google\Model
     {
+        /**
+         * Required. Free form suggestion.
+         *
+         * @var string
+         */
+        public $response;
+        /**
+         * Required. Free form suggestion.
+         *
+         * @param string $response
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1FreeFormSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponse()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1FreeFormSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1FreeFormSuggestion
     {
     }
 }

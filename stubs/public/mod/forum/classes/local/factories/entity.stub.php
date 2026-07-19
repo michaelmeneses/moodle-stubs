@@ -29,6 +29,19 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\local\entities\author as author_entity;
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\discussion_summary as discussion_summary_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\entities\post_read_receipt_collection as post_read_receipt_collection_entity;
+use mod_forum\local\entities\sorter as sorter_entity;
+use stdClass;
+use context;
+use cm_info;
+use user_picture;
+use moodle_url;
+use core_user;
 /**
  * Entity factory to create the forum entities.
  *

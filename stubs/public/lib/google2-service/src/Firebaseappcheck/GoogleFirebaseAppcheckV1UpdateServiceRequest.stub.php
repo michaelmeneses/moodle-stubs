@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1UpdateServiceRequest extends \Google\Model
-{
-    protected $serviceType = GoogleFirebaseAppcheckV1Service::class;
-    protected $serviceDataType = '';
-    /**
-     * Required. A comma-separated list of names of fields in the Service to
-     * update. Example: `enforcement_mode`.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The Service to update. The Service's `name` field is used to
-     * identify the Service to be updated, in the format: ```
-     * projects/{project_number}/services/{service_id} ``` Note that the
-     * `service_id` element must be a supported service ID. Currently, the
-     * following service IDs are supported: * `firebasestorage.googleapis.com`
-     * (Cloud Storage for Firebase) * `firebasedatabase.googleapis.com` (Firebase
-     * Realtime Database) * `firestore.googleapis.com` (Cloud Firestore) *
-     * `oauth2.googleapis.com` (Google Identity for iOS)
-     *
-     * @param GoogleFirebaseAppcheckV1Service $service
-     */
-    public function setService(GoogleFirebaseAppcheckV1Service $service)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1UpdateServiceRequest extends \Google\Model
     {
+        protected $serviceType = GoogleFirebaseAppcheckV1Service::class;
+        protected $serviceDataType = '';
+        /**
+         * Required. A comma-separated list of names of fields in the Service to
+         * update. Example: `enforcement_mode`.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The Service to update. The Service's `name` field is used to
+         * identify the Service to be updated, in the format: ```
+         * projects/{project_number}/services/{service_id} ``` Note that the
+         * `service_id` element must be a supported service ID. Currently, the
+         * following service IDs are supported: * `firebasestorage.googleapis.com`
+         * (Cloud Storage for Firebase) * `firebasedatabase.googleapis.com` (Firebase
+         * Realtime Database) * `firestore.googleapis.com` (Cloud Firestore) *
+         * `oauth2.googleapis.com` (Google Identity for iOS)
+         *
+         * @param GoogleFirebaseAppcheckV1Service $service
+         */
+        public function setService(GoogleFirebaseAppcheckV1Service $service)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1Service
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Required. A comma-separated list of names of fields in the Service to
+         * update. Example: `enforcement_mode`.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1Service
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1UpdateServiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
-    {
-    }
-    /**
-     * Required. A comma-separated list of names of fields in the Service to
-     * update. Example: `enforcement_mode`.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1UpdateServiceRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1UpdateServiceRequest
     {
     }
 }

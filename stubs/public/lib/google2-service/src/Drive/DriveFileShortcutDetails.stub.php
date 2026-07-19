@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileShortcutDetails extends \Google\Model
-{
-    /**
-     * The ID of the file that this shortcut points to. Can only be set on
-     * `files.create` requests.
-     *
-     * @var string
-     */
-    public $targetId;
-    /**
-     * Output only. The MIME type of the file that this shortcut points to. The
-     * value of this field is a snapshot of the target's MIME type, captured when
-     * the shortcut is created.
-     *
-     * @var string
-     */
-    public $targetMimeType;
-    /**
-     * Output only. The `resourceKey` for the target file.
-     *
-     * @var string
-     */
-    public $targetResourceKey;
-    /**
-     * The ID of the file that this shortcut points to. Can only be set on
-     * `files.create` requests.
-     *
-     * @param string $targetId
-     */
-    public function setTargetId($targetId)
+namespace Google\Service\Drive {
+    class DriveFileShortcutDetails extends \Google\Model
     {
+        /**
+         * The ID of the file that this shortcut points to. Can only be set on
+         * `files.create` requests.
+         *
+         * @var string
+         */
+        public $targetId;
+        /**
+         * Output only. The MIME type of the file that this shortcut points to. The
+         * value of this field is a snapshot of the target's MIME type, captured when
+         * the shortcut is created.
+         *
+         * @var string
+         */
+        public $targetMimeType;
+        /**
+         * Output only. The `resourceKey` for the target file.
+         *
+         * @var string
+         */
+        public $targetResourceKey;
+        /**
+         * The ID of the file that this shortcut points to. Can only be set on
+         * `files.create` requests.
+         *
+         * @param string $targetId
+         */
+        public function setTargetId($targetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetId()
+        {
+        }
+        /**
+         * Output only. The MIME type of the file that this shortcut points to. The
+         * value of this field is a snapshot of the target's MIME type, captured when
+         * the shortcut is created.
+         *
+         * @param string $targetMimeType
+         */
+        public function setTargetMimeType($targetMimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetMimeType()
+        {
+        }
+        /**
+         * Output only. The `resourceKey` for the target file.
+         *
+         * @param string $targetResourceKey
+         */
+        public function setTargetResourceKey($targetResourceKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResourceKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\DriveFileShortcutDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetId()
-    {
-    }
-    /**
-     * Output only. The MIME type of the file that this shortcut points to. The
-     * value of this field is a snapshot of the target's MIME type, captured when
-     * the shortcut is created.
-     *
-     * @param string $targetMimeType
-     */
-    public function setTargetMimeType($targetMimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetMimeType()
-    {
-    }
-    /**
-     * Output only. The `resourceKey` for the target file.
-     *
-     * @param string $targetResourceKey
-     */
-    public function setTargetResourceKey($targetResourceKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResourceKey()
+    class Google_Service_Drive_DriveFileShortcutDetails extends \Google\Service\Drive\DriveFileShortcutDetails
     {
     }
 }

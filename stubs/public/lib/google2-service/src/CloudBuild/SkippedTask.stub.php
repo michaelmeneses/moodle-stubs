@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class SkippedTask extends \Google\Collection
-{
-    protected $collection_key = 'whenExpressions';
-    /**
-     * Name is the Pipeline Task name
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Reason is the cause of the PipelineTask being skipped.
-     *
-     * @var string
-     */
-    public $reason;
-    protected $whenExpressionsType = WhenExpression::class;
-    protected $whenExpressionsDataType = 'array';
-    /**
-     * Name is the Pipeline Task name
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class SkippedTask extends \Google\Collection
     {
+        protected $collection_key = 'whenExpressions';
+        /**
+         * Name is the Pipeline Task name
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Reason is the cause of the PipelineTask being skipped.
+         *
+         * @var string
+         */
+        public $reason;
+        protected $whenExpressionsType = WhenExpression::class;
+        protected $whenExpressionsDataType = 'array';
+        /**
+         * Name is the Pipeline Task name
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Reason is the cause of the PipelineTask being skipped.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * WhenExpressions is the list of checks guarding the execution of the
+         * PipelineTask
+         *
+         * @param WhenExpression[] $whenExpressions
+         */
+        public function setWhenExpressions($whenExpressions)
+        {
+        }
+        /**
+         * @return WhenExpression[]
+         */
+        public function getWhenExpressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\SkippedTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Reason is the cause of the PipelineTask being skipped.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * WhenExpressions is the list of checks guarding the execution of the
-     * PipelineTask
-     *
-     * @param WhenExpression[] $whenExpressions
-     */
-    public function setWhenExpressions($whenExpressions)
-    {
-    }
-    /**
-     * @return WhenExpression[]
-     */
-    public function getWhenExpressions()
+    class Google_Service_CloudBuild_SkippedTask extends \Google\Service\CloudBuild\SkippedTask
     {
     }
 }

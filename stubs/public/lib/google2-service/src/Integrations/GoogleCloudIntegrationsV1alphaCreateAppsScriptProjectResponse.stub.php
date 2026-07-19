@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse extends \Google\Model
-{
-    /**
-     * The created AppsScriptProject ID.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The created AppsScriptProject ID.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse extends \Google\Model
     {
+        /**
+         * The created AppsScriptProject ID.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The created AppsScriptProject ID.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse
     {
     }
 }

@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Css extends \Google\Collection
-{
-    protected $collection_key = 'labelIds';
-    /**
-     * Output only. Immutable. The CSS domain ID.
-     *
-     * @var string
-     */
-    public $cssDomainId;
-    /**
-     * Output only. Immutable. The ID of the CSS group this CSS domain is
-     * affiliated with. Only populated for CSS group users.
-     *
-     * @var string
-     */
-    public $cssGroupId;
-    /**
-     * Output only. Immutable. The CSS domain's display name, used when space is
-     * constrained.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Immutable. The CSS domain's full name.
-     *
-     * @var string
-     */
-    public $fullName;
-    /**
-     * Output only. Immutable. The CSS domain's homepage.
-     *
-     * @var string
-     */
-    public $homepageUri;
-    /**
-     * A list of label IDs that are assigned to this CSS domain by its CSS group.
-     * Only populated for CSS group users.
-     *
-     * @var string[]
-     */
-    public $labelIds;
-    /**
-     * Output only. Immutable. The CSS domain ID.
-     *
-     * @param string $cssDomainId
-     */
-    public function setCssDomainId($cssDomainId)
+namespace Google\Service\ShoppingContent {
+    class Css extends \Google\Collection
     {
+        protected $collection_key = 'labelIds';
+        /**
+         * Output only. Immutable. The CSS domain ID.
+         *
+         * @var string
+         */
+        public $cssDomainId;
+        /**
+         * Output only. Immutable. The ID of the CSS group this CSS domain is
+         * affiliated with. Only populated for CSS group users.
+         *
+         * @var string
+         */
+        public $cssGroupId;
+        /**
+         * Output only. Immutable. The CSS domain's display name, used when space is
+         * constrained.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Immutable. The CSS domain's full name.
+         *
+         * @var string
+         */
+        public $fullName;
+        /**
+         * Output only. Immutable. The CSS domain's homepage.
+         *
+         * @var string
+         */
+        public $homepageUri;
+        /**
+         * A list of label IDs that are assigned to this CSS domain by its CSS group.
+         * Only populated for CSS group users.
+         *
+         * @var string[]
+         */
+        public $labelIds;
+        /**
+         * Output only. Immutable. The CSS domain ID.
+         *
+         * @param string $cssDomainId
+         */
+        public function setCssDomainId($cssDomainId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCssDomainId()
+        {
+        }
+        /**
+         * Output only. Immutable. The ID of the CSS group this CSS domain is
+         * affiliated with. Only populated for CSS group users.
+         *
+         * @param string $cssGroupId
+         */
+        public function setCssGroupId($cssGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCssGroupId()
+        {
+        }
+        /**
+         * Output only. Immutable. The CSS domain's display name, used when space is
+         * constrained.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Immutable. The CSS domain's full name.
+         *
+         * @param string $fullName
+         */
+        public function setFullName($fullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullName()
+        {
+        }
+        /**
+         * Output only. Immutable. The CSS domain's homepage.
+         *
+         * @param string $homepageUri
+         */
+        public function setHomepageUri($homepageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHomepageUri()
+        {
+        }
+        /**
+         * A list of label IDs that are assigned to this CSS domain by its CSS group.
+         * Only populated for CSS group users.
+         *
+         * @param string[] $labelIds
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Css registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCssDomainId()
-    {
-    }
-    /**
-     * Output only. Immutable. The ID of the CSS group this CSS domain is
-     * affiliated with. Only populated for CSS group users.
-     *
-     * @param string $cssGroupId
-     */
-    public function setCssGroupId($cssGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCssGroupId()
-    {
-    }
-    /**
-     * Output only. Immutable. The CSS domain's display name, used when space is
-     * constrained.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Immutable. The CSS domain's full name.
-     *
-     * @param string $fullName
-     */
-    public function setFullName($fullName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullName()
-    {
-    }
-    /**
-     * Output only. Immutable. The CSS domain's homepage.
-     *
-     * @param string $homepageUri
-     */
-    public function setHomepageUri($homepageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHomepageUri()
-    {
-    }
-    /**
-     * A list of label IDs that are assigned to this CSS domain by its CSS group.
-     * Only populated for CSS group users.
-     *
-     * @param string[] $labelIds
-     */
-    public function setLabelIds($labelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabelIds()
+    class Google_Service_ShoppingContent_Css extends \Google\Service\ShoppingContent\Css
     {
     }
 }

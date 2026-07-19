@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1UploadedFileConstraints extends \Google\Collection
-{
-    protected $collection_key = 'supportedContentTypes';
-    /**
-     * The size limit of uploaded files for a setting, in bytes.
-     *
-     * @var string
-     */
-    public $sizeLimitBytes;
-    /**
-     * File types that can be uploaded for a setting.
-     *
-     * @var string[]
-     */
-    public $supportedContentTypes;
-    /**
-     * The size limit of uploaded files for a setting, in bytes.
-     *
-     * @param string $sizeLimitBytes
-     */
-    public function setSizeLimitBytes($sizeLimitBytes)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1UploadedFileConstraints extends \Google\Collection
     {
+        protected $collection_key = 'supportedContentTypes';
+        /**
+         * The size limit of uploaded files for a setting, in bytes.
+         *
+         * @var string
+         */
+        public $sizeLimitBytes;
+        /**
+         * File types that can be uploaded for a setting.
+         *
+         * @var string[]
+         */
+        public $supportedContentTypes;
+        /**
+         * The size limit of uploaded files for a setting, in bytes.
+         *
+         * @param string $sizeLimitBytes
+         */
+        public function setSizeLimitBytes($sizeLimitBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeLimitBytes()
+        {
+        }
+        /**
+         * File types that can be uploaded for a setting.
+         *
+         * @param string[] $supportedContentTypes
+         */
+        public function setSupportedContentTypes($supportedContentTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedContentTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadedFileConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeLimitBytes()
-    {
-    }
-    /**
-     * File types that can be uploaded for a setting.
-     *
-     * @param string[] $supportedContentTypes
-     */
-    public function setSupportedContentTypes($supportedContentTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedContentTypes()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1UploadedFileConstraints extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadedFileConstraints
     {
     }
 }

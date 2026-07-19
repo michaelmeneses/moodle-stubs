@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "webapps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $webapps = $androidenterpriseService->webapps;
- *  </code>
- */
-class Webapps extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\WebApp;
+    use Google\Service\AndroidEnterprise\WebAppsListResponse;
     /**
-     * Deletes an existing web app. (webapps.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $webAppId The ID of the web app.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "webapps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $webapps = $androidenterpriseService->webapps;
+     *  </code>
      */
-    public function delete($enterpriseId, $webAppId, $optParams = [])
+    class Webapps extends \Google\Service\Resource
     {
+        /**
+         * Deletes an existing web app. (webapps.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $webAppId The ID of the web app.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $webAppId, $optParams = [])
+        {
+        }
+        /**
+         * Gets an existing web app. (webapps.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $webAppId The ID of the web app.
+         * @param array $optParams Optional parameters.
+         * @return WebApp
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $webAppId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new web app for the enterprise. (webapps.insert)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param WebApp $postBody
+         * @param array $optParams Optional parameters.
+         * @return WebApp
+         * @throws \Google\Service\Exception
+         */
+        public function insert($enterpriseId, WebApp $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the details of all web apps for a given enterprise.
+         * (webapps.listWebapps)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param array $optParams Optional parameters.
+         * @return WebAppsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listWebapps($enterpriseId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing web app. (webapps.update)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $webAppId The ID of the web app.
+         * @param WebApp $postBody
+         * @param array $optParams Optional parameters.
+         * @return WebApp
+         * @throws \Google\Service\Exception
+         */
+        public function update($enterpriseId, $webAppId, WebApp $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets an existing web app. (webapps.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $webAppId The ID of the web app.
-     * @param array $optParams Optional parameters.
-     * @return WebApp
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Webapps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($enterpriseId, $webAppId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new web app for the enterprise. (webapps.insert)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param WebApp $postBody
-     * @param array $optParams Optional parameters.
-     * @return WebApp
-     * @throws \Google\Service\Exception
-     */
-    public function insert($enterpriseId, WebApp $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the details of all web apps for a given enterprise.
-     * (webapps.listWebapps)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param array $optParams Optional parameters.
-     * @return WebAppsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listWebapps($enterpriseId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing web app. (webapps.update)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $webAppId The ID of the web app.
-     * @param WebApp $postBody
-     * @param array $optParams Optional parameters.
-     * @return WebApp
-     * @throws \Google\Service\Exception
-     */
-    public function update($enterpriseId, $webAppId, WebApp $postBody, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Webapps extends \Google\Service\AndroidEnterprise\Resource\Webapps
     {
     }
 }

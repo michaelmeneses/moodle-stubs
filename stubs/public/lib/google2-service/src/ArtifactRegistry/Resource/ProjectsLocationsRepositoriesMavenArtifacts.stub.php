@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "mavenArtifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $mavenArtifacts = $artifactregistryService->projects_locations_repositories_mavenArtifacts;
- *  </code>
- */
-class ProjectsLocationsRepositoriesMavenArtifacts extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ListMavenArtifactsResponse;
+    use Google\Service\ArtifactRegistry\MavenArtifact;
     /**
-     * Gets a maven artifact. (mavenArtifacts.get)
-     *
-     * @param string $name Required. The name of the maven artifact.
-     * @param array $optParams Optional parameters.
-     * @return MavenArtifact
-     * @throws \Google\Service\Exception
+     * The "mavenArtifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $mavenArtifacts = $artifactregistryService->projects_locations_repositories_mavenArtifacts;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRepositoriesMavenArtifacts extends \Google\Service\Resource
     {
+        /**
+         * Gets a maven artifact. (mavenArtifacts.get)
+         *
+         * @param string $name Required. The name of the maven artifact.
+         * @param array $optParams Optional parameters.
+         * @return MavenArtifact
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists maven artifacts.
+         * (mavenArtifacts.listProjectsLocationsRepositoriesMavenArtifacts)
+         *
+         * @param string $parent Required. The name of the parent resource whose maven
+         * artifacts will be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of artifacts to return. Maximum
+         * page size is 1,000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request, if any.
+         * @return ListMavenArtifactsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesMavenArtifacts($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists maven artifacts.
-     * (mavenArtifacts.listProjectsLocationsRepositoriesMavenArtifacts)
-     *
-     * @param string $parent Required. The name of the parent resource whose maven
-     * artifacts will be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of artifacts to return. Maximum
-     * page size is 1,000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request, if any.
-     * @return ListMavenArtifactsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesMavenArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRepositoriesMavenArtifacts($parent, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesMavenArtifacts extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesMavenArtifacts
     {
     }
 }

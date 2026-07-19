@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications;
-
-class GoogleCloudAdvisorynotificationsV1NotificationSettings extends \Google\Model
-{
-    /**
-     * Whether the associated NotificationType is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether the associated NotificationType is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Advisorynotifications {
+    class GoogleCloudAdvisorynotificationsV1NotificationSettings extends \Google\Model
     {
+        /**
+         * Whether the associated NotificationType is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether the associated NotificationType is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1NotificationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Advisorynotifications_GoogleCloudAdvisorynotificationsV1NotificationSettings extends \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1NotificationSettings
     {
     }
 }

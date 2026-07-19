@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    /**
-     * String representation of the requested file.
-     *
-     * @var string
-     */
-    public $content;
-    protected $filesType = GoogleCloudIntegrationsV1alphaSerializedFile::class;
-    protected $filesDataType = 'array';
-    /**
-     * String representation of the requested file.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        /**
+         * String representation of the requested file.
+         *
+         * @var string
+         */
+        public $content;
+        protected $filesType = GoogleCloudIntegrationsV1alphaSerializedFile::class;
+        protected $filesDataType = 'array';
+        /**
+         * String representation of the requested file.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * List containing String represendation for multiple file with type.
+         *
+         * @param GoogleCloudIntegrationsV1alphaSerializedFile[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaSerializedFile[]
+         */
+        public function getFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * List containing String represendation for multiple file with type.
-     *
-     * @param GoogleCloudIntegrationsV1alphaSerializedFile[] $files
-     */
-    public function setFiles($files)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaSerializedFile[]
-     */
-    public function getFiles()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse
     {
     }
 }

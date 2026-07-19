@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductsGenerateApprovalUrlResponse extends \Google\Model
-{
-    /**
-     * A URL that can be rendered in an iframe to display the permissions (if any)
-     * of a product. This URL can be used to approve the product only once and
-     * only within 24 hours of being generated, using the Products.approve call.
-     * If the product is currently unapproved and has no permissions, this URL
-     * will point to an empty page. If the product is currently approved, a URL
-     * will only be generated if that product has added permissions since it was
-     * last approved, and the URL will only display those new permissions that
-     * have not yet been accepted.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * A URL that can be rendered in an iframe to display the permissions (if any)
-     * of a product. This URL can be used to approve the product only once and
-     * only within 24 hours of being generated, using the Products.approve call.
-     * If the product is currently unapproved and has no permissions, this URL
-     * will point to an empty page. If the product is currently approved, a URL
-     * will only be generated if that product has added permissions since it was
-     * last approved, and the URL will only display those new permissions that
-     * have not yet been accepted.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\AndroidEnterprise {
+    class ProductsGenerateApprovalUrlResponse extends \Google\Model
     {
+        /**
+         * A URL that can be rendered in an iframe to display the permissions (if any)
+         * of a product. This URL can be used to approve the product only once and
+         * only within 24 hours of being generated, using the Products.approve call.
+         * If the product is currently unapproved and has no permissions, this URL
+         * will point to an empty page. If the product is currently approved, a URL
+         * will only be generated if that product has added permissions since it was
+         * last approved, and the URL will only display those new permissions that
+         * have not yet been accepted.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * A URL that can be rendered in an iframe to display the permissions (if any)
+         * of a product. This URL can be used to approve the product only once and
+         * only within 24 hours of being generated, using the Products.approve call.
+         * If the product is currently unapproved and has no permissions, this URL
+         * will point to an empty page. If the product is currently approved, a URL
+         * will only be generated if that product has added permissions since it was
+         * last approved, and the URL will only display those new permissions that
+         * have not yet been accepted.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductsGenerateApprovalUrlResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_AndroidEnterprise_ProductsGenerateApprovalUrlResponse extends \Google\Service\AndroidEnterprise\ProductsGenerateApprovalUrlResponse
     {
     }
 }

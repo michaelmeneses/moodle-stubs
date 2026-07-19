@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class Attachment extends \Google\Model
-{
-    protected $csvType = Csv::class;
-    protected $csvDataType = '';
-    /**
-     * A CSV file attachment.
-     *
-     * @param Csv $csv
-     */
-    public function setCsv(Csv $csv)
+namespace Google\Service\AlertCenter {
+    class Attachment extends \Google\Model
     {
+        protected $csvType = Csv::class;
+        protected $csvDataType = '';
+        /**
+         * A CSV file attachment.
+         *
+         * @param Csv $csv
+         */
+        public function setCsv(Csv $csv)
+        {
+        }
+        /**
+         * @return Csv
+         */
+        public function getCsv()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Csv
+     * Runtime class alias of \Google\Service\AlertCenter\Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsv()
+    class Google_Service_AlertCenter_Attachment extends \Google\Service\AlertCenter\Attachment
     {
     }
 }

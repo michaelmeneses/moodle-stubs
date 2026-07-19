@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AnthosVMSubFeatureSpec extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enabled;
-    protected $migrateSpecType = MigrateSpec::class;
-    protected $migrateSpecDataType = '';
-    protected $serviceMeshSpecType = ServiceMeshSpec::class;
-    protected $serviceMeshSpecDataType = '';
-    /**
-     * @param bool
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEHub {
+    class AnthosVMSubFeatureSpec extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enabled;
+        protected $migrateSpecType = MigrateSpec::class;
+        protected $migrateSpecDataType = '';
+        protected $serviceMeshSpecType = ServiceMeshSpec::class;
+        protected $serviceMeshSpecDataType = '';
+        /**
+         * @param bool
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * @param MigrateSpec
+         */
+        public function setMigrateSpec(MigrateSpec $migrateSpec)
+        {
+        }
+        /**
+         * @return MigrateSpec
+         */
+        public function getMigrateSpec()
+        {
+        }
+        /**
+         * @param ServiceMeshSpec
+         */
+        public function setServiceMeshSpec(ServiceMeshSpec $serviceMeshSpec)
+        {
+        }
+        /**
+         * @return ServiceMeshSpec
+         */
+        public function getServiceMeshSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\AnthosVMSubFeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * @param MigrateSpec
-     */
-    public function setMigrateSpec(MigrateSpec $migrateSpec)
-    {
-    }
-    /**
-     * @return MigrateSpec
-     */
-    public function getMigrateSpec()
-    {
-    }
-    /**
-     * @param ServiceMeshSpec
-     */
-    public function setServiceMeshSpec(ServiceMeshSpec $serviceMeshSpec)
-    {
-    }
-    /**
-     * @return ServiceMeshSpec
-     */
-    public function getServiceMeshSpec()
+    class Google_Service_GKEHub_AnthosVMSubFeatureSpec extends \Google\Service\GKEHub\AnthosVMSubFeatureSpec
     {
     }
 }

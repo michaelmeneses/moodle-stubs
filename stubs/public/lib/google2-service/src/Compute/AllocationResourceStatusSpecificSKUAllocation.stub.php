@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationResourceStatusSpecificSKUAllocation extends \Google\Model
-{
-    /**
-     * ID of the instance template used to populate reservation properties.
-     *
-     * @var string
-     */
-    public $sourceInstanceTemplateId;
-    /**
-     * Per service utilization breakdown. The Key is the Google Cloud managed
-     * service name.
-     *
-     * @var string[]
-     */
-    public $utilizations;
-    /**
-     * ID of the instance template used to populate reservation properties.
-     *
-     * @param string $sourceInstanceTemplateId
-     */
-    public function setSourceInstanceTemplateId($sourceInstanceTemplateId)
+namespace Google\Service\Compute {
+    class AllocationResourceStatusSpecificSKUAllocation extends \Google\Model
     {
+        /**
+         * ID of the instance template used to populate reservation properties.
+         *
+         * @var string
+         */
+        public $sourceInstanceTemplateId;
+        /**
+         * Per service utilization breakdown. The Key is the Google Cloud managed
+         * service name.
+         *
+         * @var string[]
+         */
+        public $utilizations;
+        /**
+         * ID of the instance template used to populate reservation properties.
+         *
+         * @param string $sourceInstanceTemplateId
+         */
+        public function setSourceInstanceTemplateId($sourceInstanceTemplateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceInstanceTemplateId()
+        {
+        }
+        /**
+         * Per service utilization breakdown. The Key is the Google Cloud managed
+         * service name.
+         *
+         * @param string[] $utilizations
+         */
+        public function setUtilizations($utilizations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUtilizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\AllocationResourceStatusSpecificSKUAllocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceInstanceTemplateId()
-    {
-    }
-    /**
-     * Per service utilization breakdown. The Key is the Google Cloud managed
-     * service name.
-     *
-     * @param string[] $utilizations
-     */
-    public function setUtilizations($utilizations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUtilizations()
+    class Google_Service_Compute_AllocationResourceStatusSpecificSKUAllocation extends \Google\Service\Compute\AllocationResourceStatusSpecificSKUAllocation
     {
     }
 }

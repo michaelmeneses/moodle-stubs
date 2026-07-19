@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductDeliveryTimeAreaDeliveryTimeDeliveryTime extends \Google\Model
-{
-    /**
-     * Required. The maximum number of business days (inclusive) between when an
-     * order is placed and when the product ships. If a product ships in the same
-     * day, set this value to 0.
-     *
-     * @var int
-     */
-    public $maxHandlingTimeDays;
-    /**
-     * Required. The maximum number of business days (inclusive) between when the
-     * product ships and when the product is delivered.
-     *
-     * @var int
-     */
-    public $maxTransitTimeDays;
-    /**
-     * Required. The minimum number of business days (inclusive) between when an
-     * order is placed and when the product ships. If a product ships in the same
-     * day, set this value to 0.
-     *
-     * @var int
-     */
-    public $minHandlingTimeDays;
-    /**
-     * Required. The minimum number of business days (inclusive) between when the
-     * product ships and when the product is delivered.
-     *
-     * @var int
-     */
-    public $minTransitTimeDays;
-    /**
-     * Required. The maximum number of business days (inclusive) between when an
-     * order is placed and when the product ships. If a product ships in the same
-     * day, set this value to 0.
-     *
-     * @param int $maxHandlingTimeDays
-     */
-    public function setMaxHandlingTimeDays($maxHandlingTimeDays)
+namespace Google\Service\ShoppingContent {
+    class ProductDeliveryTimeAreaDeliveryTimeDeliveryTime extends \Google\Model
     {
+        /**
+         * Required. The maximum number of business days (inclusive) between when an
+         * order is placed and when the product ships. If a product ships in the same
+         * day, set this value to 0.
+         *
+         * @var int
+         */
+        public $maxHandlingTimeDays;
+        /**
+         * Required. The maximum number of business days (inclusive) between when the
+         * product ships and when the product is delivered.
+         *
+         * @var int
+         */
+        public $maxTransitTimeDays;
+        /**
+         * Required. The minimum number of business days (inclusive) between when an
+         * order is placed and when the product ships. If a product ships in the same
+         * day, set this value to 0.
+         *
+         * @var int
+         */
+        public $minHandlingTimeDays;
+        /**
+         * Required. The minimum number of business days (inclusive) between when the
+         * product ships and when the product is delivered.
+         *
+         * @var int
+         */
+        public $minTransitTimeDays;
+        /**
+         * Required. The maximum number of business days (inclusive) between when an
+         * order is placed and when the product ships. If a product ships in the same
+         * day, set this value to 0.
+         *
+         * @param int $maxHandlingTimeDays
+         */
+        public function setMaxHandlingTimeDays($maxHandlingTimeDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxHandlingTimeDays()
+        {
+        }
+        /**
+         * Required. The maximum number of business days (inclusive) between when the
+         * product ships and when the product is delivered.
+         *
+         * @param int $maxTransitTimeDays
+         */
+        public function setMaxTransitTimeDays($maxTransitTimeDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxTransitTimeDays()
+        {
+        }
+        /**
+         * Required. The minimum number of business days (inclusive) between when an
+         * order is placed and when the product ships. If a product ships in the same
+         * day, set this value to 0.
+         *
+         * @param int $minHandlingTimeDays
+         */
+        public function setMinHandlingTimeDays($minHandlingTimeDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinHandlingTimeDays()
+        {
+        }
+        /**
+         * Required. The minimum number of business days (inclusive) between when the
+         * product ships and when the product is delivered.
+         *
+         * @param int $minTransitTimeDays
+         */
+        public function setMinTransitTimeDays($minTransitTimeDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinTransitTimeDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductDeliveryTimeAreaDeliveryTimeDeliveryTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxHandlingTimeDays()
-    {
-    }
-    /**
-     * Required. The maximum number of business days (inclusive) between when the
-     * product ships and when the product is delivered.
-     *
-     * @param int $maxTransitTimeDays
-     */
-    public function setMaxTransitTimeDays($maxTransitTimeDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxTransitTimeDays()
-    {
-    }
-    /**
-     * Required. The minimum number of business days (inclusive) between when an
-     * order is placed and when the product ships. If a product ships in the same
-     * day, set this value to 0.
-     *
-     * @param int $minHandlingTimeDays
-     */
-    public function setMinHandlingTimeDays($minHandlingTimeDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinHandlingTimeDays()
-    {
-    }
-    /**
-     * Required. The minimum number of business days (inclusive) between when the
-     * product ships and when the product is delivered.
-     *
-     * @param int $minTransitTimeDays
-     */
-    public function setMinTransitTimeDays($minTransitTimeDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinTransitTimeDays()
+    class Google_Service_ShoppingContent_ProductDeliveryTimeAreaDeliveryTimeDeliveryTime extends \Google\Service\ShoppingContent\ProductDeliveryTimeAreaDeliveryTimeDeliveryTime
     {
     }
 }

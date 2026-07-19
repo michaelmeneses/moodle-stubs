@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
- *   $projects = $binaryauthorizationService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\BinaryAuthorization\Resource {
+    use Google\Service\BinaryAuthorization\Policy;
     /**
-     * A policy specifies the attestors that must attest to a container image,
-     * before the project is allowed to deploy that image. There is at most one
-     * policy per project. All image admission requests are permitted if a project
-     * has no policy. Gets the policy for this project. Returns a default policy if
-     * the project does not have one. (projects.getPolicy)
-     *
-     * @param string $name Required. The resource name of the policy to retrieve, in
-     * the format `projects/policy`.
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
+     *   $projects = $binaryauthorizationService->projects;
+     *  </code>
      */
-    public function getPolicy($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * A policy specifies the attestors that must attest to a container image,
+         * before the project is allowed to deploy that image. There is at most one
+         * policy per project. All image admission requests are permitted if a project
+         * has no policy. Gets the policy for this project. Returns a default policy if
+         * the project does not have one. (projects.getPolicy)
+         *
+         * @param string $name Required. The resource name of the policy to retrieve, in
+         * the format `projects/policy`.
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getPolicy($name, $optParams = [])
+        {
+        }
+        /**
+         * Creates or updates a project's policy, and returns a copy of the new policy.
+         * A policy is always updated as a whole, to avoid race conditions with
+         * concurrent policy enforcement (or management!) requests. Returns `NOT_FOUND`
+         * if the project does not exist, `INVALID_ARGUMENT` if the request is
+         * malformed. (projects.updatePolicy)
+         *
+         * @param string $name Output only. The resource name, in the format
+         * `projects/policy`. There is at most one policy per project.
+         * @param Policy $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function updatePolicy($name, Policy $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates or updates a project's policy, and returns a copy of the new policy.
-     * A policy is always updated as a whole, to avoid race conditions with
-     * concurrent policy enforcement (or management!) requests. Returns `NOT_FOUND`
-     * if the project does not exist, `INVALID_ARGUMENT` if the request is
-     * malformed. (projects.updatePolicy)
-     *
-     * @param string $name Output only. The resource name, in the format
-     * `projects/policy`. There is at most one policy per project.
-     * @param Policy $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updatePolicy($name, Policy $postBody, $optParams = [])
+    class Google_Service_BinaryAuthorization_Resource_Projects extends \Google\Service\BinaryAuthorization\Resource\Projects
     {
     }
 }

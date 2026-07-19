@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountStatusStatistics extends \Google\Model
-{
-    /**
-     * Number of active offers.
-     *
-     * @var string
-     */
-    public $active;
-    /**
-     * Number of disapproved offers.
-     *
-     * @var string
-     */
-    public $disapproved;
-    /**
-     * Number of expiring offers.
-     *
-     * @var string
-     */
-    public $expiring;
-    /**
-     * Number of pending offers.
-     *
-     * @var string
-     */
-    public $pending;
-    /**
-     * Number of active offers.
-     *
-     * @param string $active
-     */
-    public function setActive($active)
+namespace Google\Service\ShoppingContent {
+    class AccountStatusStatistics extends \Google\Model
     {
+        /**
+         * Number of active offers.
+         *
+         * @var string
+         */
+        public $active;
+        /**
+         * Number of disapproved offers.
+         *
+         * @var string
+         */
+        public $disapproved;
+        /**
+         * Number of expiring offers.
+         *
+         * @var string
+         */
+        public $expiring;
+        /**
+         * Number of pending offers.
+         *
+         * @var string
+         */
+        public $pending;
+        /**
+         * Number of active offers.
+         *
+         * @param string $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Number of disapproved offers.
+         *
+         * @param string $disapproved
+         */
+        public function setDisapproved($disapproved)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisapproved()
+        {
+        }
+        /**
+         * Number of expiring offers.
+         *
+         * @param string $expiring
+         */
+        public function setExpiring($expiring)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiring()
+        {
+        }
+        /**
+         * Number of pending offers.
+         *
+         * @param string $pending
+         */
+        public function setPending($pending)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPending()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountStatusStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * Number of disapproved offers.
-     *
-     * @param string $disapproved
-     */
-    public function setDisapproved($disapproved)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisapproved()
-    {
-    }
-    /**
-     * Number of expiring offers.
-     *
-     * @param string $expiring
-     */
-    public function setExpiring($expiring)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiring()
-    {
-    }
-    /**
-     * Number of pending offers.
-     *
-     * @param string $pending
-     */
-    public function setPending($pending)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPending()
+    class Google_Service_ShoppingContent_AccountStatusStatistics extends \Google\Service\ShoppingContent\AccountStatusStatistics
     {
     }
 }

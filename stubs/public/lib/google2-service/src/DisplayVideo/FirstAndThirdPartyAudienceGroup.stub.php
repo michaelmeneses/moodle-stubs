@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class FirstAndThirdPartyAudienceGroup extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    protected $settingsType = FirstAndThirdPartyAudienceTargetingSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * @param FirstAndThirdPartyAudienceTargetingSetting[]
-     */
-    public function setSettings($settings)
+namespace Google\Service\DisplayVideo {
+    class FirstAndThirdPartyAudienceGroup extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        protected $settingsType = FirstAndThirdPartyAudienceTargetingSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * @param FirstAndThirdPartyAudienceTargetingSetting[]
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return FirstAndThirdPartyAudienceTargetingSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirstAndThirdPartyAudienceTargetingSetting[]
+     * Runtime class alias of \Google\Service\DisplayVideo\FirstAndThirdPartyAudienceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings()
+    class Google_Service_DisplayVideo_FirstAndThirdPartyAudienceGroup extends \Google\Service\DisplayVideo\FirstAndThirdPartyAudienceGroup
     {
     }
 }

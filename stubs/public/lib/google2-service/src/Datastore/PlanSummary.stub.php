@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class PlanSummary extends \Google\Collection
-{
-    protected $collection_key = 'indexesUsed';
-    /**
-     * The indexes selected for the query. For example: [ {"query_scope":
-     * "Collection", "properties": "(foo ASC, __name__ ASC)"}, {"query_scope":
-     * "Collection", "properties": "(bar ASC, __name__ ASC)"} ]
-     *
-     * @var array[]
-     */
-    public $indexesUsed;
-    /**
-     * The indexes selected for the query. For example: [ {"query_scope":
-     * "Collection", "properties": "(foo ASC, __name__ ASC)"}, {"query_scope":
-     * "Collection", "properties": "(bar ASC, __name__ ASC)"} ]
-     *
-     * @param array[] $indexesUsed
-     */
-    public function setIndexesUsed($indexesUsed)
+namespace Google\Service\Datastore {
+    class PlanSummary extends \Google\Collection
     {
+        protected $collection_key = 'indexesUsed';
+        /**
+         * The indexes selected for the query. For example: [ {"query_scope":
+         * "Collection", "properties": "(foo ASC, __name__ ASC)"}, {"query_scope":
+         * "Collection", "properties": "(bar ASC, __name__ ASC)"} ]
+         *
+         * @var array[]
+         */
+        public $indexesUsed;
+        /**
+         * The indexes selected for the query. For example: [ {"query_scope":
+         * "Collection", "properties": "(foo ASC, __name__ ASC)"}, {"query_scope":
+         * "Collection", "properties": "(bar ASC, __name__ ASC)"} ]
+         *
+         * @param array[] $indexesUsed
+         */
+        public function setIndexesUsed($indexesUsed)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getIndexesUsed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Datastore\PlanSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexesUsed()
+    class Google_Service_Datastore_PlanSummary extends \Google\Service\Datastore\PlanSummary
     {
     }
 }

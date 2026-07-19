@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AudioChannelInput extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $channel;
-    public $gainDb;
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var int
-     */
-    public $track;
-    /**
-     * @param int
-     */
-    public function setChannel($channel)
+namespace Google\Service\Transcoder {
+    class AudioChannelInput extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $channel;
+        public $gainDb;
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var int
+         */
+        public $track;
+        /**
+         * @param int
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChannel()
+        {
+        }
+        public function setGainDb($gainDb)
+        {
+        }
+        public function getGainDb()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTrack($track)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrack()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Transcoder\AudioChannelInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannel()
-    {
-    }
-    public function setGainDb($gainDb)
-    {
-    }
-    public function getGainDb()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTrack($track)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrack()
+    class Google_Service_Transcoder_AudioChannelInput extends \Google\Service\Transcoder\AudioChannelInput
     {
     }
 }

@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkRBatch extends \Google\Collection
-{
-    protected $collection_key = 'fileUris';
-    /**
-     * Optional. HCFS URIs of archives to be extracted into the working directory
-     * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
-     * .zip.
-     *
-     * @var string[]
-     */
-    public $archiveUris;
-    /**
-     * Optional. The arguments to pass to the Spark driver. Do not include
-     * arguments that can be set as batch properties, such as --conf, since a
-     * collision can occur that causes an incorrect batch submission.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * Optional. HCFS URIs of files to be placed in the working directory of each
-     * executor.
-     *
-     * @var string[]
-     */
-    public $fileUris;
-    /**
-     * Required. The HCFS URI of the main R file to use as the driver. Must be a
-     * .R or .r file.
-     *
-     * @var string
-     */
-    public $mainRFileUri;
-    /**
-     * Optional. HCFS URIs of archives to be extracted into the working directory
-     * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
-     * .zip.
-     *
-     * @param string[] $archiveUris
-     */
-    public function setArchiveUris($archiveUris)
+namespace Google\Service\Dataproc {
+    class SparkRBatch extends \Google\Collection
     {
+        protected $collection_key = 'fileUris';
+        /**
+         * Optional. HCFS URIs of archives to be extracted into the working directory
+         * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
+         * .zip.
+         *
+         * @var string[]
+         */
+        public $archiveUris;
+        /**
+         * Optional. The arguments to pass to the Spark driver. Do not include
+         * arguments that can be set as batch properties, such as --conf, since a
+         * collision can occur that causes an incorrect batch submission.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * Optional. HCFS URIs of files to be placed in the working directory of each
+         * executor.
+         *
+         * @var string[]
+         */
+        public $fileUris;
+        /**
+         * Required. The HCFS URI of the main R file to use as the driver. Must be a
+         * .R or .r file.
+         *
+         * @var string
+         */
+        public $mainRFileUri;
+        /**
+         * Optional. HCFS URIs of archives to be extracted into the working directory
+         * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
+         * .zip.
+         *
+         * @param string[] $archiveUris
+         */
+        public function setArchiveUris($archiveUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArchiveUris()
+        {
+        }
+        /**
+         * Optional. The arguments to pass to the Spark driver. Do not include
+         * arguments that can be set as batch properties, such as --conf, since a
+         * collision can occur that causes an incorrect batch submission.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Optional. HCFS URIs of files to be placed in the working directory of each
+         * executor.
+         *
+         * @param string[] $fileUris
+         */
+        public function setFileUris($fileUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFileUris()
+        {
+        }
+        /**
+         * Required. The HCFS URI of the main R file to use as the driver. Must be a
+         * .R or .r file.
+         *
+         * @param string $mainRFileUri
+         */
+        public function setMainRFileUri($mainRFileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMainRFileUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\SparkRBatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveUris()
-    {
-    }
-    /**
-     * Optional. The arguments to pass to the Spark driver. Do not include
-     * arguments that can be set as batch properties, such as --conf, since a
-     * collision can occur that causes an incorrect batch submission.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getArgs()
-    {
-    }
-    /**
-     * Optional. HCFS URIs of files to be placed in the working directory of each
-     * executor.
-     *
-     * @param string[] $fileUris
-     */
-    public function setFileUris($fileUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFileUris()
-    {
-    }
-    /**
-     * Required. The HCFS URI of the main R file to use as the driver. Must be a
-     * .R or .r file.
-     *
-     * @param string $mainRFileUri
-     */
-    public function setMainRFileUri($mainRFileUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMainRFileUri()
+    class Google_Service_Dataproc_SparkRBatch extends \Google\Service\Dataproc\SparkRBatch
     {
     }
 }

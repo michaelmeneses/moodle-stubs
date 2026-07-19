@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class AppHub extends \Google\Model
-{
-    protected $applicationType = AppHubApplication::class;
-    protected $applicationDataType = '';
-    protected $serviceType = AppHubService::class;
-    protected $serviceDataType = '';
-    protected $workloadType = AppHubWorkload::class;
-    protected $workloadDataType = '';
-    /**
-     * Metadata associated with the application.
-     *
-     * @param AppHubApplication $application
-     */
-    public function setApplication(AppHubApplication $application)
+namespace Google\Service\Logging {
+    class AppHub extends \Google\Model
     {
+        protected $applicationType = AppHubApplication::class;
+        protected $applicationDataType = '';
+        protected $serviceType = AppHubService::class;
+        protected $serviceDataType = '';
+        protected $workloadType = AppHubWorkload::class;
+        protected $workloadDataType = '';
+        /**
+         * Metadata associated with the application.
+         *
+         * @param AppHubApplication $application
+         */
+        public function setApplication(AppHubApplication $application)
+        {
+        }
+        /**
+         * @return AppHubApplication
+         */
+        public function getApplication()
+        {
+        }
+        /**
+         * Metadata associated with the service.
+         *
+         * @param AppHubService $service
+         */
+        public function setService(AppHubService $service)
+        {
+        }
+        /**
+         * @return AppHubService
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Metadata associated with the workload.
+         *
+         * @param AppHubWorkload $workload
+         */
+        public function setWorkload(AppHubWorkload $workload)
+        {
+        }
+        /**
+         * @return AppHubWorkload
+         */
+        public function getWorkload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppHubApplication
+     * Runtime class alias of \Google\Service\Logging\AppHub registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplication()
-    {
-    }
-    /**
-     * Metadata associated with the service.
-     *
-     * @param AppHubService $service
-     */
-    public function setService(AppHubService $service)
-    {
-    }
-    /**
-     * @return AppHubService
-     */
-    public function getService()
-    {
-    }
-    /**
-     * Metadata associated with the workload.
-     *
-     * @param AppHubWorkload $workload
-     */
-    public function setWorkload(AppHubWorkload $workload)
-    {
-    }
-    /**
-     * @return AppHubWorkload
-     */
-    public function getWorkload()
+    class Google_Service_Logging_AppHub extends \Google\Service\Logging\AppHub
     {
     }
 }

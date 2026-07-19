@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ExclusionRule extends \Google\Model
-{
-    /**
-     * Invalid.
-     */
-    public const MATCHING_TYPE_MATCHING_TYPE_UNSPECIFIED = 'MATCHING_TYPE_UNSPECIFIED';
-    /**
-     * Full match. - Dictionary: join of Dictionary results matched the complete
-     * finding quote - Regex: all regex matches fill a finding quote from start to
-     * end - Exclude infoType: completely inside affecting infoTypes findings
-     */
-    public const MATCHING_TYPE_MATCHING_TYPE_FULL_MATCH = 'MATCHING_TYPE_FULL_MATCH';
-    /**
-     * Partial match. - Dictionary: at least one of the tokens in the finding
-     * matches - Regex: substring of the finding matches - Exclude infoType:
-     * intersects with affecting infoTypes findings
-     */
-    public const MATCHING_TYPE_MATCHING_TYPE_PARTIAL_MATCH = 'MATCHING_TYPE_PARTIAL_MATCH';
-    /**
-     * Inverse match. - Dictionary: no tokens in the finding match the dictionary
-     * - Regex: finding doesn't match the regex - Exclude infoType: no
-     * intersection with affecting infoTypes findings
-     */
-    public const MATCHING_TYPE_MATCHING_TYPE_INVERSE_MATCH = 'MATCHING_TYPE_INVERSE_MATCH';
-    protected $dictionaryType = GooglePrivacyDlpV2Dictionary::class;
-    protected $dictionaryDataType = '';
-    protected $excludeByHotwordType = GooglePrivacyDlpV2ExcludeByHotword::class;
-    protected $excludeByHotwordDataType = '';
-    protected $excludeInfoTypesType = GooglePrivacyDlpV2ExcludeInfoTypes::class;
-    protected $excludeInfoTypesDataType = '';
-    /**
-     * How the rule is applied, see MatchingType documentation for details.
-     *
-     * @var string
-     */
-    public $matchingType;
-    protected $regexType = GooglePrivacyDlpV2Regex::class;
-    protected $regexDataType = '';
-    /**
-     * Dictionary which defines the rule.
-     *
-     * @param GooglePrivacyDlpV2Dictionary $dictionary
-     */
-    public function setDictionary(GooglePrivacyDlpV2Dictionary $dictionary)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ExclusionRule extends \Google\Model
     {
+        /**
+         * Invalid.
+         */
+        public const MATCHING_TYPE_MATCHING_TYPE_UNSPECIFIED = 'MATCHING_TYPE_UNSPECIFIED';
+        /**
+         * Full match. - Dictionary: join of Dictionary results matched the complete
+         * finding quote - Regex: all regex matches fill a finding quote from start to
+         * end - Exclude infoType: completely inside affecting infoTypes findings
+         */
+        public const MATCHING_TYPE_MATCHING_TYPE_FULL_MATCH = 'MATCHING_TYPE_FULL_MATCH';
+        /**
+         * Partial match. - Dictionary: at least one of the tokens in the finding
+         * matches - Regex: substring of the finding matches - Exclude infoType:
+         * intersects with affecting infoTypes findings
+         */
+        public const MATCHING_TYPE_MATCHING_TYPE_PARTIAL_MATCH = 'MATCHING_TYPE_PARTIAL_MATCH';
+        /**
+         * Inverse match. - Dictionary: no tokens in the finding match the dictionary
+         * - Regex: finding doesn't match the regex - Exclude infoType: no
+         * intersection with affecting infoTypes findings
+         */
+        public const MATCHING_TYPE_MATCHING_TYPE_INVERSE_MATCH = 'MATCHING_TYPE_INVERSE_MATCH';
+        protected $dictionaryType = GooglePrivacyDlpV2Dictionary::class;
+        protected $dictionaryDataType = '';
+        protected $excludeByHotwordType = GooglePrivacyDlpV2ExcludeByHotword::class;
+        protected $excludeByHotwordDataType = '';
+        protected $excludeInfoTypesType = GooglePrivacyDlpV2ExcludeInfoTypes::class;
+        protected $excludeInfoTypesDataType = '';
+        /**
+         * How the rule is applied, see MatchingType documentation for details.
+         *
+         * @var string
+         */
+        public $matchingType;
+        protected $regexType = GooglePrivacyDlpV2Regex::class;
+        protected $regexDataType = '';
+        /**
+         * Dictionary which defines the rule.
+         *
+         * @param GooglePrivacyDlpV2Dictionary $dictionary
+         */
+        public function setDictionary(GooglePrivacyDlpV2Dictionary $dictionary)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Dictionary
+         */
+        public function getDictionary()
+        {
+        }
+        /**
+         * Drop if the hotword rule is contained in the proximate context. For tabular
+         * data, the context includes the column name.
+         *
+         * @param GooglePrivacyDlpV2ExcludeByHotword $excludeByHotword
+         */
+        public function setExcludeByHotword(GooglePrivacyDlpV2ExcludeByHotword $excludeByHotword)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ExcludeByHotword
+         */
+        public function getExcludeByHotword()
+        {
+        }
+        /**
+         * Set of infoTypes for which findings would affect this rule.
+         *
+         * @param GooglePrivacyDlpV2ExcludeInfoTypes $excludeInfoTypes
+         */
+        public function setExcludeInfoTypes(GooglePrivacyDlpV2ExcludeInfoTypes $excludeInfoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ExcludeInfoTypes
+         */
+        public function getExcludeInfoTypes()
+        {
+        }
+        /**
+         * How the rule is applied, see MatchingType documentation for details.
+         *
+         * Accepted values: MATCHING_TYPE_UNSPECIFIED, MATCHING_TYPE_FULL_MATCH,
+         * MATCHING_TYPE_PARTIAL_MATCH, MATCHING_TYPE_INVERSE_MATCH
+         *
+         * @param self::MATCHING_TYPE_* $matchingType
+         */
+        public function setMatchingType($matchingType)
+        {
+        }
+        /**
+         * @return self::MATCHING_TYPE_*
+         */
+        public function getMatchingType()
+        {
+        }
+        /**
+         * Regular expression which defines the rule.
+         *
+         * @param GooglePrivacyDlpV2Regex $regex
+         */
+        public function setRegex(GooglePrivacyDlpV2Regex $regex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Regex
+         */
+        public function getRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Dictionary
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ExclusionRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDictionary()
-    {
-    }
-    /**
-     * Drop if the hotword rule is contained in the proximate context. For tabular
-     * data, the context includes the column name.
-     *
-     * @param GooglePrivacyDlpV2ExcludeByHotword $excludeByHotword
-     */
-    public function setExcludeByHotword(GooglePrivacyDlpV2ExcludeByHotword $excludeByHotword)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ExcludeByHotword
-     */
-    public function getExcludeByHotword()
-    {
-    }
-    /**
-     * Set of infoTypes for which findings would affect this rule.
-     *
-     * @param GooglePrivacyDlpV2ExcludeInfoTypes $excludeInfoTypes
-     */
-    public function setExcludeInfoTypes(GooglePrivacyDlpV2ExcludeInfoTypes $excludeInfoTypes)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ExcludeInfoTypes
-     */
-    public function getExcludeInfoTypes()
-    {
-    }
-    /**
-     * How the rule is applied, see MatchingType documentation for details.
-     *
-     * Accepted values: MATCHING_TYPE_UNSPECIFIED, MATCHING_TYPE_FULL_MATCH,
-     * MATCHING_TYPE_PARTIAL_MATCH, MATCHING_TYPE_INVERSE_MATCH
-     *
-     * @param self::MATCHING_TYPE_* $matchingType
-     */
-    public function setMatchingType($matchingType)
-    {
-    }
-    /**
-     * @return self::MATCHING_TYPE_*
-     */
-    public function getMatchingType()
-    {
-    }
-    /**
-     * Regular expression which defines the rule.
-     *
-     * @param GooglePrivacyDlpV2Regex $regex
-     */
-    public function setRegex(GooglePrivacyDlpV2Regex $regex)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Regex
-     */
-    public function getRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2ExclusionRule extends \Google\Service\DLP\GooglePrivacyDlpV2ExclusionRule
     {
     }
 }

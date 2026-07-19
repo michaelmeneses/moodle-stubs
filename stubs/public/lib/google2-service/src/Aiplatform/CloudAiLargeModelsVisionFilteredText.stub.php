@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionFilteredText extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $prompt;
-    public $score;
-    /**
-     * @param string
-     */
-    public function setCategory($category)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionFilteredText extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $category;
+        /**
+         * @var string
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $prompt;
+        public $score;
+        /**
+         * @param string
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrompt($prompt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrompt()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionFilteredText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrompt($prompt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrompt()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionFilteredText extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionFilteredText
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class RemovePolicyApplicationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'packageNames';
-    /**
-     * Required. Package names to be removed. Entries that are not found are
-     * ignored. There must be at least one entry in package_names.
-     *
-     * @var string[]
-     */
-    public $packageNames;
-    /**
-     * Required. Package names to be removed. Entries that are not found are
-     * ignored. There must be at least one entry in package_names.
-     *
-     * @param string[] $packageNames
-     */
-    public function setPackageNames($packageNames)
+namespace Google\Service\AndroidManagement {
+    class RemovePolicyApplicationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'packageNames';
+        /**
+         * Required. Package names to be removed. Entries that are not found are
+         * ignored. There must be at least one entry in package_names.
+         *
+         * @var string[]
+         */
+        public $packageNames;
+        /**
+         * Required. Package names to be removed. Entries that are not found are
+         * ignored. There must be at least one entry in package_names.
+         *
+         * @param string[] $packageNames
+         */
+        public function setPackageNames($packageNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\RemovePolicyApplicationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageNames()
+    class Google_Service_AndroidManagement_RemovePolicyApplicationsRequest extends \Google\Service\AndroidManagement\RemovePolicyApplicationsRequest
     {
     }
 }

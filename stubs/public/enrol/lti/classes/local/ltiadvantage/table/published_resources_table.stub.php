@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\table;
 
+use enrol_lti\helper;
 /**
  * Class which displays a list of resources published over LTI Advantage.
  *

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnnotateTextRequestFeatures extends \Google\Model
-{
-    /**
-     * Optional. Classify the full document into categories.
-     *
-     * @var bool
-     */
-    public $classifyText;
-    /**
-     * Optional. Extract document-level sentiment.
-     *
-     * @var bool
-     */
-    public $extractDocumentSentiment;
-    /**
-     * Optional. Extract entities.
-     *
-     * @var bool
-     */
-    public $extractEntities;
-    /**
-     * Optional. Moderate the document for harmful and sensitive categories.
-     *
-     * @var bool
-     */
-    public $moderateText;
-    /**
-     * Optional. Classify the full document into categories.
-     *
-     * @param bool $classifyText
-     */
-    public function setClassifyText($classifyText)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnnotateTextRequestFeatures extends \Google\Model
     {
+        /**
+         * Optional. Classify the full document into categories.
+         *
+         * @var bool
+         */
+        public $classifyText;
+        /**
+         * Optional. Extract document-level sentiment.
+         *
+         * @var bool
+         */
+        public $extractDocumentSentiment;
+        /**
+         * Optional. Extract entities.
+         *
+         * @var bool
+         */
+        public $extractEntities;
+        /**
+         * Optional. Moderate the document for harmful and sensitive categories.
+         *
+         * @var bool
+         */
+        public $moderateText;
+        /**
+         * Optional. Classify the full document into categories.
+         *
+         * @param bool $classifyText
+         */
+        public function setClassifyText($classifyText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClassifyText()
+        {
+        }
+        /**
+         * Optional. Extract document-level sentiment.
+         *
+         * @param bool $extractDocumentSentiment
+         */
+        public function setExtractDocumentSentiment($extractDocumentSentiment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExtractDocumentSentiment()
+        {
+        }
+        /**
+         * Optional. Extract entities.
+         *
+         * @param bool $extractEntities
+         */
+        public function setExtractEntities($extractEntities)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExtractEntities()
+        {
+        }
+        /**
+         * Optional. Moderate the document for harmful and sensitive categories.
+         *
+         * @param bool $moderateText
+         */
+        public function setModerateText($moderateText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getModerateText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnnotateTextRequestFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassifyText()
-    {
-    }
-    /**
-     * Optional. Extract document-level sentiment.
-     *
-     * @param bool $extractDocumentSentiment
-     */
-    public function setExtractDocumentSentiment($extractDocumentSentiment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExtractDocumentSentiment()
-    {
-    }
-    /**
-     * Optional. Extract entities.
-     *
-     * @param bool $extractEntities
-     */
-    public function setExtractEntities($extractEntities)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExtractEntities()
-    {
-    }
-    /**
-     * Optional. Moderate the document for harmful and sensitive categories.
-     *
-     * @param bool $moderateText
-     */
-    public function setModerateText($moderateText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getModerateText()
+    class Google_Service_CloudNaturalLanguage_AnnotateTextRequestFeatures extends \Google\Service\CloudNaturalLanguage\AnnotateTextRequestFeatures
     {
     }
 }

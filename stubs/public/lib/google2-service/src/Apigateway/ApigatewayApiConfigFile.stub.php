@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayApiConfigFile extends \Google\Model
-{
-    /**
-     * The bytes that constitute the file.
-     *
-     * @var string
-     */
-    public $contents;
-    /**
-     * The file path (full or relative path). This is typically the path of the
-     * file when it is uploaded.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * The bytes that constitute the file.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Apigateway {
+    class ApigatewayApiConfigFile extends \Google\Model
     {
+        /**
+         * The bytes that constitute the file.
+         *
+         * @var string
+         */
+        public $contents;
+        /**
+         * The file path (full or relative path). This is typically the path of the
+         * file when it is uploaded.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * The bytes that constitute the file.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * The file path (full or relative path). This is typically the path of the
+         * file when it is uploaded.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayApiConfigFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * The file path (full or relative path). This is typically the path of the
-     * file when it is uploaded.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Apigateway_ApigatewayApiConfigFile extends \Google\Service\Apigateway\ApigatewayApiConfigFile
     {
     }
 }

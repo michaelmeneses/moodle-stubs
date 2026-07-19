@@ -21,73 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $deployments = $apigeeService->organizations_environments_apis_revisions_deployments;
- *  </code>
- */
-class OrganizationsEnvironmentsApisRevisionsDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReport;
     /**
-     * Generates a report for a dry run analysis of a DeployApiProxy request without
-     * committing the deployment. In addition to the standard validations performed
-     * when adding deployments, additional analysis will be done to detect possible
-     * traffic routing changes that would result from this deployment being created.
-     * Any potential routing conflicts or unsafe changes will be reported in the
-     * response. This routing analysis is not performed for a non-dry-run
-     * DeployApiProxy request. For a request path `organizations/{org}/environments/
-     * {env}/apis/{api}/revisions/{rev}/deployments:generateDeployChangeReport`, two
-     * permissions are required: * `apigee.deployments.create` on the resource
-     * `organizations/{org}/environments/{env}` * `apigee.proxyrevisions.deploy` on
-     * the resource `organizations/{org}/apis/{api}/revisions/{rev}`
-     * (deployments.generateDeployChangeReport)
-     *
-     * @param string $name Name of the API proxy revision deployment in the
-     * following format:
-     * `organizations/{org}/environments/{env}/apis/{api}/revisions/{rev}` If the
-     * API proxy resource has the `space` attribute set, IAM permissions are checked
-     * differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool override Flag that specifies whether to force the deployment
-     * of the new revision over the currently deployed revision by overriding
-     * conflict checks.
-     * @return GoogleCloudApigeeV1DeploymentChangeReport
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $deployments = $apigeeService->organizations_environments_apis_revisions_deployments;
+     *  </code>
      */
-    public function generateDeployChangeReport($name, $optParams = [])
+    class OrganizationsEnvironmentsApisRevisionsDeployments extends \Google\Service\Resource
     {
+        /**
+         * Generates a report for a dry run analysis of a DeployApiProxy request without
+         * committing the deployment. In addition to the standard validations performed
+         * when adding deployments, additional analysis will be done to detect possible
+         * traffic routing changes that would result from this deployment being created.
+         * Any potential routing conflicts or unsafe changes will be reported in the
+         * response. This routing analysis is not performed for a non-dry-run
+         * DeployApiProxy request. For a request path `organizations/{org}/environments/
+         * {env}/apis/{api}/revisions/{rev}/deployments:generateDeployChangeReport`, two
+         * permissions are required: * `apigee.deployments.create` on the resource
+         * `organizations/{org}/environments/{env}` * `apigee.proxyrevisions.deploy` on
+         * the resource `organizations/{org}/apis/{api}/revisions/{rev}`
+         * (deployments.generateDeployChangeReport)
+         *
+         * @param string $name Name of the API proxy revision deployment in the
+         * following format:
+         * `organizations/{org}/environments/{env}/apis/{api}/revisions/{rev}` If the
+         * API proxy resource has the `space` attribute set, IAM permissions are checked
+         * differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool override Flag that specifies whether to force the deployment
+         * of the new revision over the currently deployed revision by overriding
+         * conflict checks.
+         * @return GoogleCloudApigeeV1DeploymentChangeReport
+         * @throws \Google\Service\Exception
+         */
+        public function generateDeployChangeReport($name, $optParams = [])
+        {
+        }
+        /**
+         * Generates a report for a dry run analysis of an UndeployApiProxy request
+         * without committing the undeploy. In addition to the standard validations
+         * performed when removing deployments, additional analysis will be done to
+         * detect possible traffic routing changes that would result from this
+         * deployment being removed. Any potential routing conflicts or unsafe changes
+         * will be reported in the response. This routing analysis is not performed for
+         * a non-dry-run UndeployApiProxy request. For a request path `organizations/{or
+         * g}/environments/{env}/apis/{api}/revisions/{rev}/deployments:generateUndeploy
+         * ChangeReport`, two permissions are required: * `apigee.deployments.delete` on
+         * the resource `organizations/{org}/environments/{env}` *
+         * `apigee.proxyrevisions.undeploy` on the resource
+         * `organizations/{org}/apis/{api}/revisions/{rev}`
+         * (deployments.generateUndeployChangeReport)
+         *
+         * @param string $name Name of the API proxy revision deployment in the
+         * following format:
+         * `organizations/{org}/environments/{env}/apis/{api}/revisions/{rev}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeploymentChangeReport
+         * @throws \Google\Service\Exception
+         */
+        public function generateUndeployChangeReport($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Generates a report for a dry run analysis of an UndeployApiProxy request
-     * without committing the undeploy. In addition to the standard validations
-     * performed when removing deployments, additional analysis will be done to
-     * detect possible traffic routing changes that would result from this
-     * deployment being removed. Any potential routing conflicts or unsafe changes
-     * will be reported in the response. This routing analysis is not performed for
-     * a non-dry-run UndeployApiProxy request. For a request path `organizations/{or
-     * g}/environments/{env}/apis/{api}/revisions/{rev}/deployments:generateUndeploy
-     * ChangeReport`, two permissions are required: * `apigee.deployments.delete` on
-     * the resource `organizations/{org}/environments/{env}` *
-     * `apigee.proxyrevisions.undeploy` on the resource
-     * `organizations/{org}/apis/{api}/revisions/{rev}`
-     * (deployments.generateUndeployChangeReport)
-     *
-     * @param string $name Name of the API proxy revision deployment in the
-     * following format:
-     * `organizations/{org}/environments/{env}/apis/{api}/revisions/{rev}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeploymentChangeReport
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApisRevisionsDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function generateUndeployChangeReport($name, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsApisRevisionsDeployments extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApisRevisionsDeployments
     {
     }
 }

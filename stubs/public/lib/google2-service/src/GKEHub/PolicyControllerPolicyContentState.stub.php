@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerPolicyContentState extends \Google\Model
-{
-    protected $bundleStatesType = PolicyControllerOnClusterState::class;
-    protected $bundleStatesDataType = 'map';
-    protected $referentialSyncConfigStateType = PolicyControllerOnClusterState::class;
-    protected $referentialSyncConfigStateDataType = '';
-    protected $templateLibraryStateType = PolicyControllerOnClusterState::class;
-    protected $templateLibraryStateDataType = '';
-    /**
-     * The state of the any bundles included in the chosen version of the manifest
-     *
-     * @param PolicyControllerOnClusterState[] $bundleStates
-     */
-    public function setBundleStates($bundleStates)
+namespace Google\Service\GKEHub {
+    class PolicyControllerPolicyContentState extends \Google\Model
     {
+        protected $bundleStatesType = PolicyControllerOnClusterState::class;
+        protected $bundleStatesDataType = 'map';
+        protected $referentialSyncConfigStateType = PolicyControllerOnClusterState::class;
+        protected $referentialSyncConfigStateDataType = '';
+        protected $templateLibraryStateType = PolicyControllerOnClusterState::class;
+        protected $templateLibraryStateDataType = '';
+        /**
+         * The state of the any bundles included in the chosen version of the manifest
+         *
+         * @param PolicyControllerOnClusterState[] $bundleStates
+         */
+        public function setBundleStates($bundleStates)
+        {
+        }
+        /**
+         * @return PolicyControllerOnClusterState[]
+         */
+        public function getBundleStates()
+        {
+        }
+        /**
+         * The state of the referential data sync configuration. This could represent
+         * the state of either the syncSet object(s) or the config object, depending
+         * on the version of PoCo configured by the user.
+         *
+         * @param PolicyControllerOnClusterState $referentialSyncConfigState
+         */
+        public function setReferentialSyncConfigState(PolicyControllerOnClusterState $referentialSyncConfigState)
+        {
+        }
+        /**
+         * @return PolicyControllerOnClusterState
+         */
+        public function getReferentialSyncConfigState()
+        {
+        }
+        /**
+         * The state of the template library
+         *
+         * @param PolicyControllerOnClusterState $templateLibraryState
+         */
+        public function setTemplateLibraryState(PolicyControllerOnClusterState $templateLibraryState)
+        {
+        }
+        /**
+         * @return PolicyControllerOnClusterState
+         */
+        public function getTemplateLibraryState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyControllerOnClusterState[]
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerPolicyContentState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleStates()
-    {
-    }
-    /**
-     * The state of the referential data sync configuration. This could represent
-     * the state of either the syncSet object(s) or the config object, depending
-     * on the version of PoCo configured by the user.
-     *
-     * @param PolicyControllerOnClusterState $referentialSyncConfigState
-     */
-    public function setReferentialSyncConfigState(PolicyControllerOnClusterState $referentialSyncConfigState)
-    {
-    }
-    /**
-     * @return PolicyControllerOnClusterState
-     */
-    public function getReferentialSyncConfigState()
-    {
-    }
-    /**
-     * The state of the template library
-     *
-     * @param PolicyControllerOnClusterState $templateLibraryState
-     */
-    public function setTemplateLibraryState(PolicyControllerOnClusterState $templateLibraryState)
-    {
-    }
-    /**
-     * @return PolicyControllerOnClusterState
-     */
-    public function getTemplateLibraryState()
+    class Google_Service_GKEHub_PolicyControllerPolicyContentState extends \Google\Service\GKEHub\PolicyControllerPolicyContentState
     {
     }
 }

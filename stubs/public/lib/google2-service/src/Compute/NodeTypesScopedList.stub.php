@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeTypesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'nodeTypes';
-    protected $nodeTypesType = NodeType::class;
-    protected $nodeTypesDataType = 'array';
-    protected $warningType = NodeTypesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of node types contained in this scope.
-     *
-     * @param NodeType[] $nodeTypes
-     */
-    public function setNodeTypes($nodeTypes)
+namespace Google\Service\Compute {
+    class NodeTypesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'nodeTypes';
+        protected $nodeTypesType = NodeType::class;
+        protected $nodeTypesDataType = 'array';
+        protected $warningType = NodeTypesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of node types contained in this scope.
+         *
+         * @param NodeType[] $nodeTypes
+         */
+        public function setNodeTypes($nodeTypes)
+        {
+        }
+        /**
+         * @return NodeType[]
+         */
+        public function getNodeTypes()
+        {
+        }
+        /**
+         * [Output Only] An informational warning that appears when the node types
+         * list is empty.
+         *
+         * @param NodeTypesScopedListWarning $warning
+         */
+        public function setWarning(NodeTypesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return NodeTypesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeType[]
+     * Runtime class alias of \Google\Service\Compute\NodeTypesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeTypes()
-    {
-    }
-    /**
-     * [Output Only] An informational warning that appears when the node types
-     * list is empty.
-     *
-     * @param NodeTypesScopedListWarning $warning
-     */
-    public function setWarning(NodeTypesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return NodeTypesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_NodeTypesScopedList extends \Google\Service\Compute\NodeTypesScopedList
     {
     }
 }

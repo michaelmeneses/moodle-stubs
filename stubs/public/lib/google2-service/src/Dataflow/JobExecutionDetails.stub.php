@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class JobExecutionDetails extends \Google\Collection
-{
-    protected $collection_key = 'stages';
-    /**
-     * If present, this response does not contain all requested tasks. To obtain
-     * the next page of results, repeat the request with page_token set to this
-     * value.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $stagesType = StageSummary::class;
-    protected $stagesDataType = 'array';
-    /**
-     * If present, this response does not contain all requested tasks. To obtain
-     * the next page of results, repeat the request with page_token set to this
-     * value.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataflow {
+    class JobExecutionDetails extends \Google\Collection
     {
+        protected $collection_key = 'stages';
+        /**
+         * If present, this response does not contain all requested tasks. To obtain
+         * the next page of results, repeat the request with page_token set to this
+         * value.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $stagesType = StageSummary::class;
+        protected $stagesDataType = 'array';
+        /**
+         * If present, this response does not contain all requested tasks. To obtain
+         * the next page of results, repeat the request with page_token set to this
+         * value.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The stages of the job execution.
+         *
+         * @param StageSummary[] $stages
+         */
+        public function setStages($stages)
+        {
+        }
+        /**
+         * @return StageSummary[]
+         */
+        public function getStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\JobExecutionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The stages of the job execution.
-     *
-     * @param StageSummary[] $stages
-     */
-    public function setStages($stages)
-    {
-    }
-    /**
-     * @return StageSummary[]
-     */
-    public function getStages()
+    class Google_Service_Dataflow_JobExecutionDetails extends \Google\Service\Dataflow\JobExecutionDetails
     {
     }
 }

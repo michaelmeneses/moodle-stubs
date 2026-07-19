@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDataConnectorFederatedConfig extends \Google\Model
-{
-    /**
-     * Optional. Any additional parameters needed for FEDERATED.
-     *
-     * @var array[]
-     */
-    public $additionalParams;
-    /**
-     * Optional. Any authentication parameters specific to FEDERATED connectors.
-     *
-     * @var array[]
-     */
-    public $authParams;
-    /**
-     * Optional. Any authentication parameters specific to FEDERATED connectors in
-     * json string format.
-     *
-     * @var string
-     */
-    public $jsonAuthParams;
-    /**
-     * Optional. Any additional parameters needed for FEDERATED.
-     *
-     * @param array[] $additionalParams
-     */
-    public function setAdditionalParams($additionalParams)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDataConnectorFederatedConfig extends \Google\Model
     {
+        /**
+         * Optional. Any additional parameters needed for FEDERATED.
+         *
+         * @var array[]
+         */
+        public $additionalParams;
+        /**
+         * Optional. Any authentication parameters specific to FEDERATED connectors.
+         *
+         * @var array[]
+         */
+        public $authParams;
+        /**
+         * Optional. Any authentication parameters specific to FEDERATED connectors in
+         * json string format.
+         *
+         * @var string
+         */
+        public $jsonAuthParams;
+        /**
+         * Optional. Any additional parameters needed for FEDERATED.
+         *
+         * @param array[] $additionalParams
+         */
+        public function setAdditionalParams($additionalParams)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAdditionalParams()
+        {
+        }
+        /**
+         * Optional. Any authentication parameters specific to FEDERATED connectors.
+         *
+         * @param array[] $authParams
+         */
+        public function setAuthParams($authParams)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAuthParams()
+        {
+        }
+        /**
+         * Optional. Any authentication parameters specific to FEDERATED connectors in
+         * json string format.
+         *
+         * @param string $jsonAuthParams
+         */
+        public function setJsonAuthParams($jsonAuthParams)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonAuthParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDataConnectorFederatedConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalParams()
-    {
-    }
-    /**
-     * Optional. Any authentication parameters specific to FEDERATED connectors.
-     *
-     * @param array[] $authParams
-     */
-    public function setAuthParams($authParams)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getAuthParams()
-    {
-    }
-    /**
-     * Optional. Any authentication parameters specific to FEDERATED connectors in
-     * json string format.
-     *
-     * @param string $jsonAuthParams
-     */
-    public function setJsonAuthParams($jsonAuthParams)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonAuthParams()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDataConnectorFederatedConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDataConnectorFederatedConfig
     {
     }
 }

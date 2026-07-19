@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class LeaderboardConfigurationDetail extends \Google\Model
-{
-    /**
-     * The icon url of this leaderboard. Writes to this field are ignored.
-     *
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#leaderboardConfigurationDetail`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $nameType = LocalizedStringBundle::class;
-    protected $nameDataType = '';
-    protected $scoreFormatType = GamesNumberFormatConfiguration::class;
-    protected $scoreFormatDataType = '';
-    /**
-     * The sort rank of this leaderboard. Writes to this field are ignored.
-     *
-     * @var int
-     */
-    public $sortRank;
-    /**
-     * The icon url of this leaderboard. Writes to this field are ignored.
-     *
-     * @param string $iconUrl
-     */
-    public function setIconUrl($iconUrl)
+namespace Google\Service\GamesConfiguration {
+    class LeaderboardConfigurationDetail extends \Google\Model
     {
+        /**
+         * The icon url of this leaderboard. Writes to this field are ignored.
+         *
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#leaderboardConfigurationDetail`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $nameType = LocalizedStringBundle::class;
+        protected $nameDataType = '';
+        protected $scoreFormatType = GamesNumberFormatConfiguration::class;
+        protected $scoreFormatDataType = '';
+        /**
+         * The sort rank of this leaderboard. Writes to this field are ignored.
+         *
+         * @var int
+         */
+        public $sortRank;
+        /**
+         * The icon url of this leaderboard. Writes to this field are ignored.
+         *
+         * @param string $iconUrl
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#leaderboardConfigurationDetail`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Localized strings for the leaderboard name.
+         *
+         * @param LocalizedStringBundle $name
+         */
+        public function setName(LocalizedStringBundle $name)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The score formatting for the leaderboard.
+         *
+         * @param GamesNumberFormatConfiguration $scoreFormat
+         */
+        public function setScoreFormat(GamesNumberFormatConfiguration $scoreFormat)
+        {
+        }
+        /**
+         * @return GamesNumberFormatConfiguration
+         */
+        public function getScoreFormat()
+        {
+        }
+        /**
+         * The sort rank of this leaderboard. Writes to this field are ignored.
+         *
+         * @param int $sortRank
+         */
+        public function setSortRank($sortRank)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSortRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesConfiguration\LeaderboardConfigurationDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#leaderboardConfigurationDetail`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Localized strings for the leaderboard name.
-     *
-     * @param LocalizedStringBundle $name
-     */
-    public function setName(LocalizedStringBundle $name)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The score formatting for the leaderboard.
-     *
-     * @param GamesNumberFormatConfiguration $scoreFormat
-     */
-    public function setScoreFormat(GamesNumberFormatConfiguration $scoreFormat)
-    {
-    }
-    /**
-     * @return GamesNumberFormatConfiguration
-     */
-    public function getScoreFormat()
-    {
-    }
-    /**
-     * The sort rank of this leaderboard. Writes to this field are ignored.
-     *
-     * @param int $sortRank
-     */
-    public function setSortRank($sortRank)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSortRank()
+    class Google_Service_GamesConfiguration_LeaderboardConfigurationDetail extends \Google\Service\GamesConfiguration\LeaderboardConfigurationDetail
     {
     }
 }

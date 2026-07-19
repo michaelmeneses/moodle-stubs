@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ChatClientDataSourceMarkup extends \Google\Model
-{
-    protected $spaceDataSourceType = SpaceDataSource::class;
-    protected $spaceDataSourceDataType = '';
-    /**
-     * Google Chat spaces that the user is a member of.
-     *
-     * @param SpaceDataSource $spaceDataSource
-     */
-    public function setSpaceDataSource(SpaceDataSource $spaceDataSource)
+namespace Google\Service\HangoutsChat {
+    class ChatClientDataSourceMarkup extends \Google\Model
     {
+        protected $spaceDataSourceType = SpaceDataSource::class;
+        protected $spaceDataSourceDataType = '';
+        /**
+         * Google Chat spaces that the user is a member of.
+         *
+         * @param SpaceDataSource $spaceDataSource
+         */
+        public function setSpaceDataSource(SpaceDataSource $spaceDataSource)
+        {
+        }
+        /**
+         * @return SpaceDataSource
+         */
+        public function getSpaceDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SpaceDataSource
+     * Runtime class alias of \Google\Service\HangoutsChat\ChatClientDataSourceMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpaceDataSource()
+    class Google_Service_HangoutsChat_ChatClientDataSourceMarkup extends \Google\Service\HangoutsChat\ChatClientDataSourceMarkup
     {
     }
 }

@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransformationSummary extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    protected $fieldTransformationsType = GooglePrivacyDlpV2FieldTransformation::class;
-    protected $fieldTransformationsDataType = 'array';
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    protected $recordSuppressType = GooglePrivacyDlpV2RecordSuppression::class;
-    protected $recordSuppressDataType = '';
-    protected $resultsType = GooglePrivacyDlpV2SummaryResult::class;
-    protected $resultsDataType = 'array';
-    protected $transformationType = GooglePrivacyDlpV2PrimitiveTransformation::class;
-    protected $transformationDataType = '';
-    /**
-     * Total size in bytes that were transformed in some way.
-     *
-     * @var string
-     */
-    public $transformedBytes;
-    /**
-     * Set if the transformation was limited to a specific FieldId.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransformationSummary extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        protected $fieldTransformationsType = GooglePrivacyDlpV2FieldTransformation::class;
+        protected $fieldTransformationsDataType = 'array';
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        protected $recordSuppressType = GooglePrivacyDlpV2RecordSuppression::class;
+        protected $recordSuppressDataType = '';
+        protected $resultsType = GooglePrivacyDlpV2SummaryResult::class;
+        protected $resultsDataType = 'array';
+        protected $transformationType = GooglePrivacyDlpV2PrimitiveTransformation::class;
+        protected $transformationDataType = '';
+        /**
+         * Total size in bytes that were transformed in some way.
+         *
+         * @var string
+         */
+        public $transformedBytes;
+        /**
+         * Set if the transformation was limited to a specific FieldId.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
+        /**
+         * The field transformation that was applied. If multiple field
+         * transformations are requested for a single field, this list will contain
+         * all of them; otherwise, only one is supplied.
+         *
+         * @param GooglePrivacyDlpV2FieldTransformation[] $fieldTransformations
+         */
+        public function setFieldTransformations($fieldTransformations)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldTransformation[]
+         */
+        public function getFieldTransformations()
+        {
+        }
+        /**
+         * Set if the transformation was limited to a specific InfoType.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
+        /**
+         * The specific suppression option these stats apply to.
+         *
+         * @param GooglePrivacyDlpV2RecordSuppression $recordSuppress
+         */
+        public function setRecordSuppress(GooglePrivacyDlpV2RecordSuppression $recordSuppress)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RecordSuppression
+         */
+        public function getRecordSuppress()
+        {
+        }
+        /**
+         * Collection of all transformations that took place or had an error.
+         *
+         * @param GooglePrivacyDlpV2SummaryResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SummaryResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * The specific transformation these stats apply to.
+         *
+         * @param GooglePrivacyDlpV2PrimitiveTransformation $transformation
+         */
+        public function setTransformation(GooglePrivacyDlpV2PrimitiveTransformation $transformation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PrimitiveTransformation
+         */
+        public function getTransformation()
+        {
+        }
+        /**
+         * Total size in bytes that were transformed in some way.
+         *
+         * @param string $transformedBytes
+         */
+        public function setTransformedBytes($transformedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransformationSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * The field transformation that was applied. If multiple field
-     * transformations are requested for a single field, this list will contain
-     * all of them; otherwise, only one is supplied.
-     *
-     * @param GooglePrivacyDlpV2FieldTransformation[] $fieldTransformations
-     */
-    public function setFieldTransformations($fieldTransformations)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldTransformation[]
-     */
-    public function getFieldTransformations()
-    {
-    }
-    /**
-     * Set if the transformation was limited to a specific InfoType.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoType
-     */
-    public function getInfoType()
-    {
-    }
-    /**
-     * The specific suppression option these stats apply to.
-     *
-     * @param GooglePrivacyDlpV2RecordSuppression $recordSuppress
-     */
-    public function setRecordSuppress(GooglePrivacyDlpV2RecordSuppression $recordSuppress)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RecordSuppression
-     */
-    public function getRecordSuppress()
-    {
-    }
-    /**
-     * Collection of all transformations that took place or had an error.
-     *
-     * @param GooglePrivacyDlpV2SummaryResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SummaryResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * The specific transformation these stats apply to.
-     *
-     * @param GooglePrivacyDlpV2PrimitiveTransformation $transformation
-     */
-    public function setTransformation(GooglePrivacyDlpV2PrimitiveTransformation $transformation)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2PrimitiveTransformation
-     */
-    public function getTransformation()
-    {
-    }
-    /**
-     * Total size in bytes that were transformed in some way.
-     *
-     * @param string $transformedBytes
-     */
-    public function setTransformedBytes($transformedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransformedBytes()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransformationSummary extends \Google\Service\DLP\GooglePrivacyDlpV2TransformationSummary
     {
     }
 }

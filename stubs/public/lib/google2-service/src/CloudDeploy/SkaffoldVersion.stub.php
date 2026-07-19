@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class SkaffoldVersion extends \Google\Model
-{
-    /**
-     * The time at which this version of Skaffold will enter maintenance mode.
-     *
-     * @var string
-     */
-    public $maintenanceModeTime;
-    protected $supportEndDateType = Date::class;
-    protected $supportEndDateDataType = '';
-    /**
-     * The time at which this version of Skaffold will no longer be supported.
-     *
-     * @var string
-     */
-    public $supportExpirationTime;
-    /**
-     * Release version number. For example, "1.20.3".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The time at which this version of Skaffold will enter maintenance mode.
-     *
-     * @param string $maintenanceModeTime
-     */
-    public function setMaintenanceModeTime($maintenanceModeTime)
+namespace Google\Service\CloudDeploy {
+    class SkaffoldVersion extends \Google\Model
     {
+        /**
+         * The time at which this version of Skaffold will enter maintenance mode.
+         *
+         * @var string
+         */
+        public $maintenanceModeTime;
+        protected $supportEndDateType = Date::class;
+        protected $supportEndDateDataType = '';
+        /**
+         * The time at which this version of Skaffold will no longer be supported.
+         *
+         * @var string
+         */
+        public $supportExpirationTime;
+        /**
+         * Release version number. For example, "1.20.3".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The time at which this version of Skaffold will enter maintenance mode.
+         *
+         * @param string $maintenanceModeTime
+         */
+        public function setMaintenanceModeTime($maintenanceModeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaintenanceModeTime()
+        {
+        }
+        /**
+         * Date when this version is expected to no longer be supported.
+         *
+         * @param Date $supportEndDate
+         */
+        public function setSupportEndDate(Date $supportEndDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getSupportEndDate()
+        {
+        }
+        /**
+         * The time at which this version of Skaffold will no longer be supported.
+         *
+         * @param string $supportExpirationTime
+         */
+        public function setSupportExpirationTime($supportExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportExpirationTime()
+        {
+        }
+        /**
+         * Release version number. For example, "1.20.3".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\SkaffoldVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaintenanceModeTime()
-    {
-    }
-    /**
-     * Date when this version is expected to no longer be supported.
-     *
-     * @param Date $supportEndDate
-     */
-    public function setSupportEndDate(Date $supportEndDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getSupportEndDate()
-    {
-    }
-    /**
-     * The time at which this version of Skaffold will no longer be supported.
-     *
-     * @param string $supportExpirationTime
-     */
-    public function setSupportExpirationTime($supportExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportExpirationTime()
-    {
-    }
-    /**
-     * Release version number. For example, "1.20.3".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudDeploy_SkaffoldVersion extends \Google\Service\CloudDeploy\SkaffoldVersion
     {
     }
 }

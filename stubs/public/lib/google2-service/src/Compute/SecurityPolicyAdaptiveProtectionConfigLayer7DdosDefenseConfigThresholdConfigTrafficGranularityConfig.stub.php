@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigTrafficGranularityConfig extends \Google\Model
-{
-    public const TYPE_HTTP_HEADER_HOST = 'HTTP_HEADER_HOST';
-    public const TYPE_HTTP_PATH = 'HTTP_PATH';
-    public const TYPE_UNSPECIFIED_TYPE = 'UNSPECIFIED_TYPE';
-    /**
-     * If enabled, traffic matching each unique value for the specified type
-     * constitutes a separate traffic unit. It can only be set to true if `value`
-     * is empty.
-     *
-     * @var bool
-     */
-    public $enableEachUniqueValue;
-    /**
-     * Type of this configuration.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Requests that match this value constitute a granular traffic unit.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * If enabled, traffic matching each unique value for the specified type
-     * constitutes a separate traffic unit. It can only be set to true if `value`
-     * is empty.
-     *
-     * @param bool $enableEachUniqueValue
-     */
-    public function setEnableEachUniqueValue($enableEachUniqueValue)
+namespace Google\Service\Compute {
+    class SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigTrafficGranularityConfig extends \Google\Model
     {
+        public const TYPE_HTTP_HEADER_HOST = 'HTTP_HEADER_HOST';
+        public const TYPE_HTTP_PATH = 'HTTP_PATH';
+        public const TYPE_UNSPECIFIED_TYPE = 'UNSPECIFIED_TYPE';
+        /**
+         * If enabled, traffic matching each unique value for the specified type
+         * constitutes a separate traffic unit. It can only be set to true if `value`
+         * is empty.
+         *
+         * @var bool
+         */
+        public $enableEachUniqueValue;
+        /**
+         * Type of this configuration.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Requests that match this value constitute a granular traffic unit.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * If enabled, traffic matching each unique value for the specified type
+         * constitutes a separate traffic unit. It can only be set to true if `value`
+         * is empty.
+         *
+         * @param bool $enableEachUniqueValue
+         */
+        public function setEnableEachUniqueValue($enableEachUniqueValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableEachUniqueValue()
+        {
+        }
+        /**
+         * Type of this configuration.
+         *
+         * Accepted values: HTTP_HEADER_HOST, HTTP_PATH, UNSPECIFIED_TYPE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Requests that match this value constitute a granular traffic unit.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigTrafficGranularityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableEachUniqueValue()
-    {
-    }
-    /**
-     * Type of this configuration.
-     *
-     * Accepted values: HTTP_HEADER_HOST, HTTP_PATH, UNSPECIFIED_TYPE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Requests that match this value constitute a granular traffic unit.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Compute_SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigTrafficGranularityConfig extends \Google\Service\Compute\SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigTrafficGranularityConfig
     {
     }
 }

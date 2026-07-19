@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo extends \Google\Collection
-{
-    protected $collection_key = 'quartiles';
-    /**
-     * Output only. Average of non-null values in the scanned data. NaN, if the
-     * field has a NaN.
-     *
-     * @var 
-     */
-    public $average;
-    /**
-     * Output only. Maximum of non-null values in the scanned data. NaN, if the
-     * field has a NaN.
-     *
-     * @var string
-     */
-    public $max;
-    /**
-     * Output only. Minimum of non-null values in the scanned data. NaN, if the
-     * field has a NaN.
-     *
-     * @var string
-     */
-    public $min;
-    /**
-     * Output only. A quartile divides the number of data points into four parts,
-     * or quarters, of more-or-less equal size. Three main quartiles used are: The
-     * first quartile (Q1) splits off the lowest 25% of data from the highest 75%.
-     * It is also known as the lower or 25th empirical quartile, as 25% of the
-     * data is below this point. The second quartile (Q2) is the median of a data
-     * set. So, 50% of the data lies below this point. The third quartile (Q3)
-     * splits off the highest 25% of data from the lowest 75%. It is known as the
-     * upper or 75th empirical quartile, as 75% of the data lies below this point.
-     * Here, the quartiles is provided as an ordered list of approximate quartile
-     * values for the scanned data, occurring in order Q1, median, Q3.
-     *
-     * @var string[]
-     */
-    public $quartiles;
-    /**
-     * Output only. Standard deviation of non-null values in the scanned data.
-     * NaN, if the field has a NaN.
-     *
-     * @var 
-     */
-    public $standardDeviation;
-    public function setAverage($average)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo extends \Google\Collection
     {
+        protected $collection_key = 'quartiles';
+        /**
+         * Output only. Average of non-null values in the scanned data. NaN, if the
+         * field has a NaN.
+         *
+         * @var 
+         */
+        public $average;
+        /**
+         * Output only. Maximum of non-null values in the scanned data. NaN, if the
+         * field has a NaN.
+         *
+         * @var string
+         */
+        public $max;
+        /**
+         * Output only. Minimum of non-null values in the scanned data. NaN, if the
+         * field has a NaN.
+         *
+         * @var string
+         */
+        public $min;
+        /**
+         * Output only. A quartile divides the number of data points into four parts,
+         * or quarters, of more-or-less equal size. Three main quartiles used are: The
+         * first quartile (Q1) splits off the lowest 25% of data from the highest 75%.
+         * It is also known as the lower or 25th empirical quartile, as 25% of the
+         * data is below this point. The second quartile (Q2) is the median of a data
+         * set. So, 50% of the data lies below this point. The third quartile (Q3)
+         * splits off the highest 25% of data from the lowest 75%. It is known as the
+         * upper or 75th empirical quartile, as 75% of the data lies below this point.
+         * Here, the quartiles is provided as an ordered list of approximate quartile
+         * values for the scanned data, occurring in order Q1, median, Q3.
+         *
+         * @var string[]
+         */
+        public $quartiles;
+        /**
+         * Output only. Standard deviation of non-null values in the scanned data.
+         * NaN, if the field has a NaN.
+         *
+         * @var 
+         */
+        public $standardDeviation;
+        public function setAverage($average)
+        {
+        }
+        public function getAverage()
+        {
+        }
+        /**
+         * Output only. Maximum of non-null values in the scanned data. NaN, if the
+         * field has a NaN.
+         *
+         * @param string $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Output only. Minimum of non-null values in the scanned data. NaN, if the
+         * field has a NaN.
+         *
+         * @param string $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMin()
+        {
+        }
+        /**
+         * Output only. A quartile divides the number of data points into four parts,
+         * or quarters, of more-or-less equal size. Three main quartiles used are: The
+         * first quartile (Q1) splits off the lowest 25% of data from the highest 75%.
+         * It is also known as the lower or 25th empirical quartile, as 25% of the
+         * data is below this point. The second quartile (Q2) is the median of a data
+         * set. So, 50% of the data lies below this point. The third quartile (Q3)
+         * splits off the highest 25% of data from the lowest 75%. It is known as the
+         * upper or 75th empirical quartile, as 75% of the data lies below this point.
+         * Here, the quartiles is provided as an ordered list of approximate quartile
+         * values for the scanned data, occurring in order Q1, median, Q3.
+         *
+         * @param string[] $quartiles
+         */
+        public function setQuartiles($quartiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQuartiles()
+        {
+        }
+        public function setStandardDeviation($standardDeviation)
+        {
+        }
+        public function getStandardDeviation()
+        {
+        }
     }
-    public function getAverage()
-    {
-    }
+}
+namespace {
     /**
-     * Output only. Maximum of non-null values in the scanned data. NaN, if the
-     * field has a NaN.
-     *
-     * @param string $max
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMax($max)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMax()
-    {
-    }
-    /**
-     * Output only. Minimum of non-null values in the scanned data. NaN, if the
-     * field has a NaN.
-     *
-     * @param string $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMin()
-    {
-    }
-    /**
-     * Output only. A quartile divides the number of data points into four parts,
-     * or quarters, of more-or-less equal size. Three main quartiles used are: The
-     * first quartile (Q1) splits off the lowest 25% of data from the highest 75%.
-     * It is also known as the lower or 25th empirical quartile, as 25% of the
-     * data is below this point. The second quartile (Q2) is the median of a data
-     * set. So, 50% of the data lies below this point. The third quartile (Q3)
-     * splits off the highest 25% of data from the lowest 75%. It is known as the
-     * upper or 75th empirical quartile, as 75% of the data lies below this point.
-     * Here, the quartiles is provided as an ordered list of approximate quartile
-     * values for the scanned data, occurring in order Q1, median, Q3.
-     *
-     * @param string[] $quartiles
-     */
-    public function setQuartiles($quartiles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQuartiles()
-    {
-    }
-    public function setStandardDeviation($standardDeviation)
-    {
-    }
-    public function getStandardDeviation()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo
     {
     }
 }

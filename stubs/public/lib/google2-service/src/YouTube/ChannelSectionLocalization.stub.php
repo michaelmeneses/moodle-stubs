@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelSectionLocalization extends \Google\Model
-{
-    /**
-     * The localized strings for channel section's title.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $title;
-    /**
-     * The localized strings for channel section's title.
-     *
-     * @deprecated
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\YouTube {
+    class ChannelSectionLocalization extends \Google\Model
     {
+        /**
+         * The localized strings for channel section's title.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $title;
+        /**
+         * The localized strings for channel section's title.
+         *
+         * @deprecated
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelSectionLocalization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
+    class Google_Service_YouTube_ChannelSectionLocalization extends \Google\Service\YouTube\ChannelSectionLocalization
     {
     }
 }

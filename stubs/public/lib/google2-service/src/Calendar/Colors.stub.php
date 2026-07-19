@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class Colors extends \Google\Model
-{
-    protected $calendarType = ColorDefinition::class;
-    protected $calendarDataType = 'map';
-    protected $eventType = ColorDefinition::class;
-    protected $eventDataType = 'map';
-    /**
-     * Type of the resource ("calendar#colors").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Last modification time of the color palette (as a RFC3339 timestamp). Read-
-     * only.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * A global palette of calendar colors, mapping from the color ID to its
-     * definition. A calendarListEntry resource refers to one of these color IDs
-     * in its colorId field. Read-only.
-     *
-     * @param ColorDefinition[] $calendar
-     */
-    public function setCalendar($calendar)
+namespace Google\Service\Calendar {
+    class Colors extends \Google\Model
     {
+        protected $calendarType = ColorDefinition::class;
+        protected $calendarDataType = 'map';
+        protected $eventType = ColorDefinition::class;
+        protected $eventDataType = 'map';
+        /**
+         * Type of the resource ("calendar#colors").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Last modification time of the color palette (as a RFC3339 timestamp). Read-
+         * only.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * A global palette of calendar colors, mapping from the color ID to its
+         * definition. A calendarListEntry resource refers to one of these color IDs
+         * in its colorId field. Read-only.
+         *
+         * @param ColorDefinition[] $calendar
+         */
+        public function setCalendar($calendar)
+        {
+        }
+        /**
+         * @return ColorDefinition[]
+         */
+        public function getCalendar()
+        {
+        }
+        /**
+         * A global palette of event colors, mapping from the color ID to its
+         * definition. An event resource may refer to one of these color IDs in its
+         * colorId field. Read-only.
+         *
+         * @param ColorDefinition[] $event
+         */
+        public function setEvent($event)
+        {
+        }
+        /**
+         * @return ColorDefinition[]
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * Type of the resource ("calendar#colors").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Last modification time of the color palette (as a RFC3339 timestamp). Read-
+         * only.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColorDefinition[]
+     * Runtime class alias of \Google\Service\Calendar\Colors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendar()
-    {
-    }
-    /**
-     * A global palette of event colors, mapping from the color ID to its
-     * definition. An event resource may refer to one of these color IDs in its
-     * colorId field. Read-only.
-     *
-     * @param ColorDefinition[] $event
-     */
-    public function setEvent($event)
-    {
-    }
-    /**
-     * @return ColorDefinition[]
-     */
-    public function getEvent()
-    {
-    }
-    /**
-     * Type of the resource ("calendar#colors").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Last modification time of the color palette (as a RFC3339 timestamp). Read-
-     * only.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Calendar_Colors extends \Google\Service\Calendar\Colors
     {
     }
 }

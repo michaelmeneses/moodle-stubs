@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListRepricingRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'repricingRules';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var RepricingRule[]
-     */
-    public $repricingRules;
-    protected $repricingRulesType = RepricingRule::class;
-    protected $repricingRulesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ShoppingContent {
+    class ListRepricingRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'repricingRules';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var RepricingRule[]
+         */
+        public $repricingRules;
+        protected $repricingRulesType = RepricingRule::class;
+        protected $repricingRulesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RepricingRule[]
+         */
+        public function setRepricingRules($repricingRules)
+        {
+        }
+        /**
+         * @return RepricingRule[]
+         */
+        public function getRepricingRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ListRepricingRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RepricingRule[]
-     */
-    public function setRepricingRules($repricingRules)
-    {
-    }
-    /**
-     * @return RepricingRule[]
-     */
-    public function getRepricingRules()
+    class Google_Service_ShoppingContent_ListRepricingRulesResponse extends \Google\Service\ShoppingContent\ListRepricingRulesResponse
     {
     }
 }

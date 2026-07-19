@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse extends \Google\Collection
-{
-    protected $collection_key = 'cloudIdentityAccounts';
-    protected $cloudIdentityAccountsType = GoogleCloudChannelV1CloudIdentityCustomerAccount::class;
-    protected $cloudIdentityAccountsDataType = 'array';
-    /**
-     * The Cloud Identity accounts associated with the domain.
-     *
-     * @param GoogleCloudChannelV1CloudIdentityCustomerAccount[] $cloudIdentityAccounts
-     */
-    public function setCloudIdentityAccounts($cloudIdentityAccounts)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse extends \Google\Collection
     {
+        protected $collection_key = 'cloudIdentityAccounts';
+        protected $cloudIdentityAccountsType = GoogleCloudChannelV1CloudIdentityCustomerAccount::class;
+        protected $cloudIdentityAccountsDataType = 'array';
+        /**
+         * The Cloud Identity accounts associated with the domain.
+         *
+         * @param GoogleCloudChannelV1CloudIdentityCustomerAccount[] $cloudIdentityAccounts
+         */
+        public function setCloudIdentityAccounts($cloudIdentityAccounts)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1CloudIdentityCustomerAccount[]
+         */
+        public function getCloudIdentityAccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1CloudIdentityCustomerAccount[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudIdentityAccounts()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1CheckCloudIdentityAccountsExistResponse
     {
     }
 }

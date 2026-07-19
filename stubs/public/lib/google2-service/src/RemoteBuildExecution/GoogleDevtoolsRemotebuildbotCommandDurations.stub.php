@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildbotCommandDurations extends \Google\Model
-{
-    public $casRelease;
-    public $cmWaitForAssignment;
-    public $dockerPrep;
-    public $dockerPrepStartTime;
-    public $download;
-    public $downloadStartTime;
-    public $execStartTime;
-    public $execution;
-    public $isoPrepDone;
-    public $overall;
-    public $stdout;
-    public $upload;
-    public $uploadStartTime;
-    public function setCasRelease($casRelease)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildbotCommandDurations extends \Google\Model
     {
+        public $casRelease;
+        public $cmWaitForAssignment;
+        public $dockerPrep;
+        public $dockerPrepStartTime;
+        public $download;
+        public $downloadStartTime;
+        public $execStartTime;
+        public $execution;
+        public $isoPrepDone;
+        public $overall;
+        public $stdout;
+        public $upload;
+        public $uploadStartTime;
+        public function setCasRelease($casRelease)
+        {
+        }
+        public function getCasRelease()
+        {
+        }
+        public function setCmWaitForAssignment($cmWaitForAssignment)
+        {
+        }
+        public function getCmWaitForAssignment()
+        {
+        }
+        public function setDockerPrep($dockerPrep)
+        {
+        }
+        public function getDockerPrep()
+        {
+        }
+        public function setDockerPrepStartTime($dockerPrepStartTime)
+        {
+        }
+        public function getDockerPrepStartTime()
+        {
+        }
+        public function setDownload($download)
+        {
+        }
+        public function getDownload()
+        {
+        }
+        public function setDownloadStartTime($downloadStartTime)
+        {
+        }
+        public function getDownloadStartTime()
+        {
+        }
+        public function setExecStartTime($execStartTime)
+        {
+        }
+        public function getExecStartTime()
+        {
+        }
+        public function setExecution($execution)
+        {
+        }
+        public function getExecution()
+        {
+        }
+        public function setIsoPrepDone($isoPrepDone)
+        {
+        }
+        public function getIsoPrepDone()
+        {
+        }
+        public function setOverall($overall)
+        {
+        }
+        public function getOverall()
+        {
+        }
+        public function setStdout($stdout)
+        {
+        }
+        public function getStdout()
+        {
+        }
+        public function setUpload($upload)
+        {
+        }
+        public function getUpload()
+        {
+        }
+        public function setUploadStartTime($uploadStartTime)
+        {
+        }
+        public function getUploadStartTime()
+        {
+        }
     }
-    public function getCasRelease()
-    {
-    }
-    public function setCmWaitForAssignment($cmWaitForAssignment)
-    {
-    }
-    public function getCmWaitForAssignment()
-    {
-    }
-    public function setDockerPrep($dockerPrep)
-    {
-    }
-    public function getDockerPrep()
-    {
-    }
-    public function setDockerPrepStartTime($dockerPrepStartTime)
-    {
-    }
-    public function getDockerPrepStartTime()
-    {
-    }
-    public function setDownload($download)
-    {
-    }
-    public function getDownload()
-    {
-    }
-    public function setDownloadStartTime($downloadStartTime)
-    {
-    }
-    public function getDownloadStartTime()
-    {
-    }
-    public function setExecStartTime($execStartTime)
-    {
-    }
-    public function getExecStartTime()
-    {
-    }
-    public function setExecution($execution)
-    {
-    }
-    public function getExecution()
-    {
-    }
-    public function setIsoPrepDone($isoPrepDone)
-    {
-    }
-    public function getIsoPrepDone()
-    {
-    }
-    public function setOverall($overall)
-    {
-    }
-    public function getOverall()
-    {
-    }
-    public function setStdout($stdout)
-    {
-    }
-    public function getStdout()
-    {
-    }
-    public function setUpload($upload)
-    {
-    }
-    public function getUpload()
-    {
-    }
-    public function setUploadStartTime($uploadStartTime)
-    {
-    }
-    public function getUploadStartTime()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotCommandDurations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildbotCommandDurations extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotCommandDurations
     {
     }
 }

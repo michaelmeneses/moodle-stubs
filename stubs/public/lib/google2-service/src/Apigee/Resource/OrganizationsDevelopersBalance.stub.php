@@ -21,46 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "balance" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $balance = $apigeeService->organizations_developers_balance;
- *  </code>
- */
-class OrganizationsDevelopersBalance extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1AdjustDeveloperBalanceRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1CreditDeveloperBalanceRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalance;
     /**
-     * Adjust the prepaid balance for the developer. This API will be used in
-     * scenarios where the developer has been under-charged or over-charged.
-     * (balance.adjust)
-     *
-     * @param string $name Required. Account balance for the developer. Use the
-     * following structure in your request:
-     * `organizations/{org}/developers/{developer}/balance`
-     * @param GoogleCloudApigeeV1AdjustDeveloperBalanceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperBalance
-     * @throws \Google\Service\Exception
+     * The "balance" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $balance = $apigeeService->organizations_developers_balance;
+     *  </code>
      */
-    public function adjust($name, GoogleCloudApigeeV1AdjustDeveloperBalanceRequest $postBody, $optParams = [])
+    class OrganizationsDevelopersBalance extends \Google\Service\Resource
     {
+        /**
+         * Adjust the prepaid balance for the developer. This API will be used in
+         * scenarios where the developer has been under-charged or over-charged.
+         * (balance.adjust)
+         *
+         * @param string $name Required. Account balance for the developer. Use the
+         * following structure in your request:
+         * `organizations/{org}/developers/{developer}/balance`
+         * @param GoogleCloudApigeeV1AdjustDeveloperBalanceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperBalance
+         * @throws \Google\Service\Exception
+         */
+        public function adjust($name, GoogleCloudApigeeV1AdjustDeveloperBalanceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Credits the account balance for the developer. (balance.credit)
+         *
+         * @param string $name Required. Account balance for the developer. Use the
+         * following structure in your request:
+         * `organizations/{org}/developers/{developer}/balance`
+         * @param GoogleCloudApigeeV1CreditDeveloperBalanceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperBalance
+         * @throws \Google\Service\Exception
+         */
+        public function credit($name, GoogleCloudApigeeV1CreditDeveloperBalanceRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Credits the account balance for the developer. (balance.credit)
-     *
-     * @param string $name Required. Account balance for the developer. Use the
-     * following structure in your request:
-     * `organizations/{org}/developers/{developer}/balance`
-     * @param GoogleCloudApigeeV1CreditDeveloperBalanceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperBalance
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsDevelopersBalance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function credit($name, GoogleCloudApigeeV1CreditDeveloperBalanceRequest $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsDevelopersBalance extends \Google\Service\Apigee\Resource\OrganizationsDevelopersBalance
     {
     }
 }

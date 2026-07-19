@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse extends \Google\Collection
-{
-    protected $collection_key = 'documentsMetadata';
-    protected $documentsMetadataType = GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadata::class;
-    protected $documentsMetadataDataType = 'array';
-    /**
-     * The metadata of the Documents.
-     *
-     * @param GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadata[] $documentsMetadata
-     */
-    public function setDocumentsMetadata($documentsMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse extends \Google\Collection
     {
+        protected $collection_key = 'documentsMetadata';
+        protected $documentsMetadataType = GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadata::class;
+        protected $documentsMetadataDataType = 'array';
+        /**
+         * The metadata of the Documents.
+         *
+         * @param GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadata[] $documentsMetadata
+         */
+        public function setDocumentsMetadata($documentsMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadata[]
+         */
+        public function getDocumentsMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadata[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentsMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse
     {
     }
 }

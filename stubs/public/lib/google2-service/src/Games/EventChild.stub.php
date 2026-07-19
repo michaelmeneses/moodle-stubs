@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventChild extends \Google\Model
-{
-    /**
-     * The ID of the child event.
-     *
-     * @var string
-     */
-    public $childId;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventChild`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the child event.
-     *
-     * @param string $childId
-     */
-    public function setChildId($childId)
+namespace Google\Service\Games {
+    class EventChild extends \Google\Model
     {
+        /**
+         * The ID of the child event.
+         *
+         * @var string
+         */
+        public $childId;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventChild`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the child event.
+         *
+         * @param string $childId
+         */
+        public function setChildId($childId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChildId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventChild`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\EventChild registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventChild`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Games_EventChild extends \Google\Service\Games\EventChild
     {
     }
 }

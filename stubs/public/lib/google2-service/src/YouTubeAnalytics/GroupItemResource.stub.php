@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class GroupItemResource extends \Google\Model
-{
-    /**
-     * The channel, video, playlist, or asset ID that YouTube uses to uniquely
-     * identify the item that is being added to the group.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies the type of resource being added to the group. Valid values for
-     * this property are: * `youtube#channel` * `youtube#playlist` *
-     * `youtube#video` * `youtubePartner#asset`
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The channel, video, playlist, or asset ID that YouTube uses to uniquely
-     * identify the item that is being added to the group.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\YouTubeAnalytics {
+    class GroupItemResource extends \Google\Model
     {
+        /**
+         * The channel, video, playlist, or asset ID that YouTube uses to uniquely
+         * identify the item that is being added to the group.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies the type of resource being added to the group. Valid values for
+         * this property are: * `youtube#channel` * `youtube#playlist` *
+         * `youtube#video` * `youtubePartner#asset`
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The channel, video, playlist, or asset ID that YouTube uses to uniquely
+         * identify the item that is being added to the group.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies the type of resource being added to the group. Valid values for
+         * this property are: * `youtube#channel` * `youtube#playlist` *
+         * `youtube#video` * `youtubePartner#asset`
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\GroupItemResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies the type of resource being added to the group. Valid values for
-     * this property are: * `youtube#channel` * `youtube#playlist` *
-     * `youtube#video` * `youtubePartner#asset`
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_YouTubeAnalytics_GroupItemResource extends \Google\Service\YouTubeAnalytics\GroupItemResource
     {
     }
 }

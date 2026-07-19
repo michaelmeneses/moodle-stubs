@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RevocationContext extends \Google\Model
-{
-    protected $fullRefundType = RevocationContextFullRefund::class;
-    protected $fullRefundDataType = '';
-    protected $itemBasedRefundType = RevocationContextItemBasedRefund::class;
-    protected $itemBasedRefundDataType = '';
-    protected $proratedRefundType = RevocationContextProratedRefund::class;
-    protected $proratedRefundDataType = '';
-    /**
-     * Optional. Used when users should be refunded the full amount of latest
-     * charge on each item in the subscription.
-     *
-     * @param RevocationContextFullRefund $fullRefund
-     */
-    public function setFullRefund(RevocationContextFullRefund $fullRefund)
+namespace Google\Service\AndroidPublisher {
+    class RevocationContext extends \Google\Model
     {
+        protected $fullRefundType = RevocationContextFullRefund::class;
+        protected $fullRefundDataType = '';
+        protected $itemBasedRefundType = RevocationContextItemBasedRefund::class;
+        protected $itemBasedRefundDataType = '';
+        protected $proratedRefundType = RevocationContextProratedRefund::class;
+        protected $proratedRefundDataType = '';
+        /**
+         * Optional. Used when users should be refunded the full amount of latest
+         * charge on each item in the subscription.
+         *
+         * @param RevocationContextFullRefund $fullRefund
+         */
+        public function setFullRefund(RevocationContextFullRefund $fullRefund)
+        {
+        }
+        /**
+         * @return RevocationContextFullRefund
+         */
+        public function getFullRefund()
+        {
+        }
+        /**
+         * Optional. Used when a specific item should be refunded in a subscription
+         * with add-on items.
+         *
+         * @param RevocationContextItemBasedRefund $itemBasedRefund
+         */
+        public function setItemBasedRefund(RevocationContextItemBasedRefund $itemBasedRefund)
+        {
+        }
+        /**
+         * @return RevocationContextItemBasedRefund
+         */
+        public function getItemBasedRefund()
+        {
+        }
+        /**
+         * Optional. Used when users should be refunded a prorated amount they paid
+         * for their subscription based on the amount of time remaining in a
+         * subscription.
+         *
+         * @param RevocationContextProratedRefund $proratedRefund
+         */
+        public function setProratedRefund(RevocationContextProratedRefund $proratedRefund)
+        {
+        }
+        /**
+         * @return RevocationContextProratedRefund
+         */
+        public function getProratedRefund()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RevocationContextFullRefund
+     * Runtime class alias of \Google\Service\AndroidPublisher\RevocationContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullRefund()
-    {
-    }
-    /**
-     * Optional. Used when a specific item should be refunded in a subscription
-     * with add-on items.
-     *
-     * @param RevocationContextItemBasedRefund $itemBasedRefund
-     */
-    public function setItemBasedRefund(RevocationContextItemBasedRefund $itemBasedRefund)
-    {
-    }
-    /**
-     * @return RevocationContextItemBasedRefund
-     */
-    public function getItemBasedRefund()
-    {
-    }
-    /**
-     * Optional. Used when users should be refunded a prorated amount they paid
-     * for their subscription based on the amount of time remaining in a
-     * subscription.
-     *
-     * @param RevocationContextProratedRefund $proratedRefund
-     */
-    public function setProratedRefund(RevocationContextProratedRefund $proratedRefund)
-    {
-    }
-    /**
-     * @return RevocationContextProratedRefund
-     */
-    public function getProratedRefund()
+    class Google_Service_AndroidPublisher_RevocationContext extends \Google\Service\AndroidPublisher\RevocationContext
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HttpHeaderOption extends \Google\Model
-{
-    /**
-     * The name of the header.
-     *
-     * @var string
-     */
-    public $headerName;
-    /**
-     * The value of the header to add.
-     *
-     * @var string
-     */
-    public $headerValue;
-    /**
-     * If false, headerValue is appended to any values that already exist for the
-     * header. If true, headerValue is set for the header, discarding any values
-     * that were set for that header.
-     *
-     * The default value is true, unless a variable is present in headerValue, in
-     * which case the default value is false. .
-     *
-     * @var bool
-     */
-    public $replace;
-    /**
-     * The name of the header.
-     *
-     * @param string $headerName
-     */
-    public function setHeaderName($headerName)
+namespace Google\Service\Compute {
+    class HttpHeaderOption extends \Google\Model
     {
+        /**
+         * The name of the header.
+         *
+         * @var string
+         */
+        public $headerName;
+        /**
+         * The value of the header to add.
+         *
+         * @var string
+         */
+        public $headerValue;
+        /**
+         * If false, headerValue is appended to any values that already exist for the
+         * header. If true, headerValue is set for the header, discarding any values
+         * that were set for that header.
+         *
+         * The default value is true, unless a variable is present in headerValue, in
+         * which case the default value is false. .
+         *
+         * @var bool
+         */
+        public $replace;
+        /**
+         * The name of the header.
+         *
+         * @param string $headerName
+         */
+        public function setHeaderName($headerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderName()
+        {
+        }
+        /**
+         * The value of the header to add.
+         *
+         * @param string $headerValue
+         */
+        public function setHeaderValue($headerValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderValue()
+        {
+        }
+        /**
+         * If false, headerValue is appended to any values that already exist for the
+         * header. If true, headerValue is set for the header, discarding any values
+         * that were set for that header.
+         *
+         * The default value is true, unless a variable is present in headerValue, in
+         * which case the default value is false. .
+         *
+         * @param bool $replace
+         */
+        public function setReplace($replace)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReplace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\HttpHeaderOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderName()
-    {
-    }
-    /**
-     * The value of the header to add.
-     *
-     * @param string $headerValue
-     */
-    public function setHeaderValue($headerValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeaderValue()
-    {
-    }
-    /**
-     * If false, headerValue is appended to any values that already exist for the
-     * header. If true, headerValue is set for the header, discarding any values
-     * that were set for that header.
-     *
-     * The default value is true, unless a variable is present in headerValue, in
-     * which case the default value is false. .
-     *
-     * @param bool $replace
-     */
-    public function setReplace($replace)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReplace()
+    class Google_Service_Compute_HttpHeaderOption extends \Google\Service\Compute\HttpHeaderOption
     {
     }
 }

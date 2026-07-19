@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ShellCommand extends \Google\Model
-{
-    /**
-     * args is a string of arguments to be passed to the command.
-     *
-     * @var string
-     */
-    public $args;
-    /**
-     * command is the name of the command to be executed.
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * Optional. If not specified, the default timeout is 60 seconds.
-     *
-     * @var int
-     */
-    public $timeoutSeconds;
-    /**
-     * args is a string of arguments to be passed to the command.
-     *
-     * @param string $args
-     */
-    public function setArgs($args)
+namespace Google\Service\WorkloadManager {
+    class ShellCommand extends \Google\Model
     {
+        /**
+         * args is a string of arguments to be passed to the command.
+         *
+         * @var string
+         */
+        public $args;
+        /**
+         * command is the name of the command to be executed.
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * Optional. If not specified, the default timeout is 60 seconds.
+         *
+         * @var int
+         */
+        public $timeoutSeconds;
+        /**
+         * args is a string of arguments to be passed to the command.
+         *
+         * @param string $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * command is the name of the command to be executed.
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * Optional. If not specified, the default timeout is 60 seconds.
+         *
+         * @param int $timeoutSeconds
+         */
+        public function setTimeoutSeconds($timeoutSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTimeoutSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ShellCommand registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * command is the name of the command to be executed.
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommand()
-    {
-    }
-    /**
-     * Optional. If not specified, the default timeout is 60 seconds.
-     *
-     * @param int $timeoutSeconds
-     */
-    public function setTimeoutSeconds($timeoutSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTimeoutSeconds()
+    class Google_Service_WorkloadManager_ShellCommand extends \Google\Service\WorkloadManager\ShellCommand
     {
     }
 }

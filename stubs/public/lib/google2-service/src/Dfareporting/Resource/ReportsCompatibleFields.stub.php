@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "compatibleFields" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $compatibleFields = $dfareportingService->reports_compatibleFields;
- *  </code>
- */
-class ReportsCompatibleFields extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CompatibleFields;
+    use Google\Service\Dfareporting\Report;
     /**
-     * Returns the fields that are compatible to be selected in the respective
-     * sections of a report criteria, given the fields already selected in the input
-     * report and user permissions. (compatibleFields.query)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param Report $postBody
-     * @param array $optParams Optional parameters.
-     * @return CompatibleFields
-     * @throws \Google\Service\Exception
+     * The "compatibleFields" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $compatibleFields = $dfareportingService->reports_compatibleFields;
+     *  </code>
      */
-    public function query($profileId, Report $postBody, $optParams = [])
+    class ReportsCompatibleFields extends \Google\Service\Resource
+    {
+        /**
+         * Returns the fields that are compatible to be selected in the respective
+         * sections of a report criteria, given the fields already selected in the input
+         * report and user permissions. (compatibleFields.query)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param Report $postBody
+         * @param array $optParams Optional parameters.
+         * @return CompatibleFields
+         * @throws \Google\Service\Exception
+         */
+        public function query($profileId, Report $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\ReportsCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_ReportsCompatibleFields extends \Google\Service\Dfareporting\Resource\ReportsCompatibleFields
     {
     }
 }

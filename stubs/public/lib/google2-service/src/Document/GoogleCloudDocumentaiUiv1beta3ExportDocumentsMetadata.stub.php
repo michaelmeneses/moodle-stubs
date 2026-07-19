@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'splitExportStats';
-    protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    protected $individualExportStatusesType = GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus::class;
-    protected $individualExportStatusesDataType = 'array';
-    protected $splitExportStatsType = GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat::class;
-    protected $splitExportStatsDataType = 'array';
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'splitExportStats';
+        protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        protected $individualExportStatusesType = GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus::class;
+        protected $individualExportStatusesDataType = 'array';
+        protected $splitExportStatsType = GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat::class;
+        protected $splitExportStatsDataType = 'array';
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
+        /**
+         * The list of response details of each document.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus[] $individualExportStatuses
+         */
+        public function setIndividualExportStatuses($individualExportStatuses)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus[]
+         */
+        public function getIndividualExportStatuses()
+        {
+        }
+        /**
+         * The list of statistics for each dataset split type.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat[] $splitExportStats
+         */
+        public function setSplitExportStats($splitExportStats)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat[]
+         */
+        public function getSplitExportStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
-    {
-    }
-    /**
-     * The list of response details of each document.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus[] $individualExportStatuses
-     */
-    public function setIndividualExportStatuses($individualExportStatuses)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus[]
-     */
-    public function getIndividualExportStatuses()
-    {
-    }
-    /**
-     * The list of statistics for each dataset split type.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat[] $splitExportStats
-     */
-    public function setSplitExportStats($splitExportStats)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat[]
-     */
-    public function getSplitExportStats()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadata
     {
     }
 }

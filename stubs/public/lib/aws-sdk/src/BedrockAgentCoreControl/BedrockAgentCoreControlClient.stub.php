@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockAgentCoreControl;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Bedrock Agent Core Control Plane Fronting Layer** service.
  * @method \Aws\Result createAgentRuntime(array $args = [])

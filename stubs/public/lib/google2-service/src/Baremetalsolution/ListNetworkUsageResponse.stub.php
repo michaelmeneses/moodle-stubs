@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListNetworkUsageResponse extends \Google\Collection
-{
-    protected $collection_key = 'networks';
-    protected $networksType = NetworkUsage::class;
-    protected $networksDataType = 'array';
-    /**
-     * Networks with IPs.
-     *
-     * @param NetworkUsage[] $networks
-     */
-    public function setNetworks($networks)
+namespace Google\Service\Baremetalsolution {
+    class ListNetworkUsageResponse extends \Google\Collection
     {
+        protected $collection_key = 'networks';
+        protected $networksType = NetworkUsage::class;
+        protected $networksDataType = 'array';
+        /**
+         * Networks with IPs.
+         *
+         * @param NetworkUsage[] $networks
+         */
+        public function setNetworks($networks)
+        {
+        }
+        /**
+         * @return NetworkUsage[]
+         */
+        public function getNetworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkUsage[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListNetworkUsageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworks()
+    class Google_Service_Baremetalsolution_ListNetworkUsageResponse extends \Google\Service\Baremetalsolution\ListNetworkUsageResponse
     {
     }
 }

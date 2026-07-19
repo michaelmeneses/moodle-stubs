@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class RowDimensions extends \Google\Model
-{
-    /**
-     * The publisher identifier for this row, if a breakdown by [BreakdownDimensio
-     * n.PUBLISHER_IDENTIFIER](https://developers.google.com/authorized-buyers/api
-     * s/reference/rest/v2beta1/bidders.accounts.filterSets#FilterSet.BreakdownDim
-     * ension) was requested.
-     *
-     * @var string
-     */
-    public $publisherIdentifier;
-    protected $timeIntervalType = TimeInterval::class;
-    protected $timeIntervalDataType = '';
-    /**
-     * The publisher identifier for this row, if a breakdown by [BreakdownDimensio
-     * n.PUBLISHER_IDENTIFIER](https://developers.google.com/authorized-buyers/api
-     * s/reference/rest/v2beta1/bidders.accounts.filterSets#FilterSet.BreakdownDim
-     * ension) was requested.
-     *
-     * @param string $publisherIdentifier
-     */
-    public function setPublisherIdentifier($publisherIdentifier)
+namespace Google\Service\AdExchangeBuyerII {
+    class RowDimensions extends \Google\Model
     {
+        /**
+         * The publisher identifier for this row, if a breakdown by [BreakdownDimensio
+         * n.PUBLISHER_IDENTIFIER](https://developers.google.com/authorized-buyers/api
+         * s/reference/rest/v2beta1/bidders.accounts.filterSets#FilterSet.BreakdownDim
+         * ension) was requested.
+         *
+         * @var string
+         */
+        public $publisherIdentifier;
+        protected $timeIntervalType = TimeInterval::class;
+        protected $timeIntervalDataType = '';
+        /**
+         * The publisher identifier for this row, if a breakdown by [BreakdownDimensio
+         * n.PUBLISHER_IDENTIFIER](https://developers.google.com/authorized-buyers/api
+         * s/reference/rest/v2beta1/bidders.accounts.filterSets#FilterSet.BreakdownDim
+         * ension) was requested.
+         *
+         * @param string $publisherIdentifier
+         */
+        public function setPublisherIdentifier($publisherIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisherIdentifier()
+        {
+        }
+        /**
+         * The time interval that this row represents.
+         *
+         * @param TimeInterval $timeInterval
+         */
+        public function setTimeInterval(TimeInterval $timeInterval)
+        {
+        }
+        /**
+         * @return TimeInterval
+         */
+        public function getTimeInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\RowDimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublisherIdentifier()
-    {
-    }
-    /**
-     * The time interval that this row represents.
-     *
-     * @param TimeInterval $timeInterval
-     */
-    public function setTimeInterval(TimeInterval $timeInterval)
-    {
-    }
-    /**
-     * @return TimeInterval
-     */
-    public function getTimeInterval()
+    class Google_Service_AdExchangeBuyerII_RowDimensions extends \Google\Service\AdExchangeBuyerII\RowDimensions
     {
     }
 }

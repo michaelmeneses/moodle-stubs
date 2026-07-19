@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class BasicSli extends \Google\Collection
-{
-    protected $collection_key = 'version';
-    protected $availabilityType = AvailabilityCriteria::class;
-    protected $availabilityDataType = '';
-    protected $latencyType = LatencyCriteria::class;
-    protected $latencyDataType = '';
-    /**
-     * OPTIONAL: The set of locations to which this SLI is relevant. Telemetry
-     * from other locations will not be used to calculate performance for this
-     * SLI. If omitted, this SLI applies to all locations in which the Service has
-     * activity. For service types that don't support breaking down by location,
-     * setting this field will result in an error.
-     *
-     * @var string[]
-     */
-    public $location;
-    /**
-     * OPTIONAL: The set of RPCs to which this SLI is relevant. Telemetry from
-     * other methods will not be used to calculate performance for this SLI. If
-     * omitted, this SLI applies to all the Service's methods. For service types
-     * that don't support breaking down by method, setting this field will result
-     * in an error.
-     *
-     * @var string[]
-     */
-    public $method;
-    /**
-     * OPTIONAL: The set of API versions to which this SLI is relevant. Telemetry
-     * from other API versions will not be used to calculate performance for this
-     * SLI. If omitted, this SLI applies to all API versions. For service types
-     * that don't support breaking down by version, setting this field will result
-     * in an error.
-     *
-     * @var string[]
-     */
-    public $version;
-    /**
-     * Good service is defined to be the count of requests made to this service
-     * that return successfully.
-     *
-     * @param AvailabilityCriteria $availability
-     */
-    public function setAvailability(AvailabilityCriteria $availability)
+namespace Google\Service\Monitoring {
+    class BasicSli extends \Google\Collection
     {
+        protected $collection_key = 'version';
+        protected $availabilityType = AvailabilityCriteria::class;
+        protected $availabilityDataType = '';
+        protected $latencyType = LatencyCriteria::class;
+        protected $latencyDataType = '';
+        /**
+         * OPTIONAL: The set of locations to which this SLI is relevant. Telemetry
+         * from other locations will not be used to calculate performance for this
+         * SLI. If omitted, this SLI applies to all locations in which the Service has
+         * activity. For service types that don't support breaking down by location,
+         * setting this field will result in an error.
+         *
+         * @var string[]
+         */
+        public $location;
+        /**
+         * OPTIONAL: The set of RPCs to which this SLI is relevant. Telemetry from
+         * other methods will not be used to calculate performance for this SLI. If
+         * omitted, this SLI applies to all the Service's methods. For service types
+         * that don't support breaking down by method, setting this field will result
+         * in an error.
+         *
+         * @var string[]
+         */
+        public $method;
+        /**
+         * OPTIONAL: The set of API versions to which this SLI is relevant. Telemetry
+         * from other API versions will not be used to calculate performance for this
+         * SLI. If omitted, this SLI applies to all API versions. For service types
+         * that don't support breaking down by version, setting this field will result
+         * in an error.
+         *
+         * @var string[]
+         */
+        public $version;
+        /**
+         * Good service is defined to be the count of requests made to this service
+         * that return successfully.
+         *
+         * @param AvailabilityCriteria $availability
+         */
+        public function setAvailability(AvailabilityCriteria $availability)
+        {
+        }
+        /**
+         * @return AvailabilityCriteria
+         */
+        public function getAvailability()
+        {
+        }
+        /**
+         * Good service is defined to be the count of requests made to this service
+         * that are fast enough with respect to latency.threshold.
+         *
+         * @param LatencyCriteria $latency
+         */
+        public function setLatency(LatencyCriteria $latency)
+        {
+        }
+        /**
+         * @return LatencyCriteria
+         */
+        public function getLatency()
+        {
+        }
+        /**
+         * OPTIONAL: The set of locations to which this SLI is relevant. Telemetry
+         * from other locations will not be used to calculate performance for this
+         * SLI. If omitted, this SLI applies to all locations in which the Service has
+         * activity. For service types that don't support breaking down by location,
+         * setting this field will result in an error.
+         *
+         * @param string[] $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * OPTIONAL: The set of RPCs to which this SLI is relevant. Telemetry from
+         * other methods will not be used to calculate performance for this SLI. If
+         * omitted, this SLI applies to all the Service's methods. For service types
+         * that don't support breaking down by method, setting this field will result
+         * in an error.
+         *
+         * @param string[] $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * OPTIONAL: The set of API versions to which this SLI is relevant. Telemetry
+         * from other API versions will not be used to calculate performance for this
+         * SLI. If omitted, this SLI applies to all API versions. For service types
+         * that don't support breaking down by version, setting this field will result
+         * in an error.
+         *
+         * @param string[] $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AvailabilityCriteria
+     * Runtime class alias of \Google\Service\Monitoring\BasicSli registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailability()
-    {
-    }
-    /**
-     * Good service is defined to be the count of requests made to this service
-     * that are fast enough with respect to latency.threshold.
-     *
-     * @param LatencyCriteria $latency
-     */
-    public function setLatency(LatencyCriteria $latency)
-    {
-    }
-    /**
-     * @return LatencyCriteria
-     */
-    public function getLatency()
-    {
-    }
-    /**
-     * OPTIONAL: The set of locations to which this SLI is relevant. Telemetry
-     * from other locations will not be used to calculate performance for this
-     * SLI. If omitted, this SLI applies to all locations in which the Service has
-     * activity. For service types that don't support breaking down by location,
-     * setting this field will result in an error.
-     *
-     * @param string[] $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * OPTIONAL: The set of RPCs to which this SLI is relevant. Telemetry from
-     * other methods will not be used to calculate performance for this SLI. If
-     * omitted, this SLI applies to all the Service's methods. For service types
-     * that don't support breaking down by method, setting this field will result
-     * in an error.
-     *
-     * @param string[] $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * OPTIONAL: The set of API versions to which this SLI is relevant. Telemetry
-     * from other API versions will not be used to calculate performance for this
-     * SLI. If omitted, this SLI applies to all API versions. For service types
-     * that don't support breaking down by version, setting this field will result
-     * in an error.
-     *
-     * @param string[] $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVersion()
+    class Google_Service_Monitoring_BasicSli extends \Google\Service\Monitoring\BasicSli
     {
     }
 }

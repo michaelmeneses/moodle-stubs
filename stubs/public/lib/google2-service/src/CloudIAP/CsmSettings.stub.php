@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class CsmSettings extends \Google\Model
-{
-    /**
-     * Audience claim set in the generated RCToken. This value is not validated by
-     * IAP.
-     *
-     * @var string
-     */
-    public $rctokenAud;
-    /**
-     * Audience claim set in the generated RCToken. This value is not validated by
-     * IAP.
-     *
-     * @param string $rctokenAud
-     */
-    public function setRctokenAud($rctokenAud)
+namespace Google\Service\CloudIAP {
+    class CsmSettings extends \Google\Model
     {
+        /**
+         * Audience claim set in the generated RCToken. This value is not validated by
+         * IAP.
+         *
+         * @var string
+         */
+        public $rctokenAud;
+        /**
+         * Audience claim set in the generated RCToken. This value is not validated by
+         * IAP.
+         *
+         * @param string $rctokenAud
+         */
+        public function setRctokenAud($rctokenAud)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRctokenAud()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\CsmSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRctokenAud()
+    class Google_Service_CloudIAP_CsmSettings extends \Google\Service\CloudIAP\CsmSettings
     {
     }
 }

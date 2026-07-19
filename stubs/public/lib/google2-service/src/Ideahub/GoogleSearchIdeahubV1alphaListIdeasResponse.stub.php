@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1alphaListIdeasResponse extends \Google\Collection
-{
-    protected $collection_key = 'ideas';
-    protected $ideasType = GoogleSearchIdeahubV1alphaIdea::class;
-    protected $ideasDataType = 'array';
-    public $nextPageToken;
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1alphaListIdeasResponse extends \Google\Collection
+    {
+        protected $collection_key = 'ideas';
+        protected $ideasType = GoogleSearchIdeahubV1alphaIdea::class;
+        protected $ideasDataType = 'array';
+        public $nextPageToken;
+        /**
+         * @param GoogleSearchIdeahubV1alphaIdea[]
+         */
+        public function setIdeas($ideas)
+        {
+        }
+        /**
+         * @return GoogleSearchIdeahubV1alphaIdea[]
+         */
+        public function getIdeas()
+        {
+        }
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleSearchIdeahubV1alphaIdea[]
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaListIdeasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIdeas($ideas)
-    {
-    }
-    /**
-     * @return GoogleSearchIdeahubV1alphaIdea[]
-     */
-    public function getIdeas()
-    {
-    }
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    public function getNextPageToken()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1alphaListIdeasResponse extends \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaListIdeasResponse
     {
     }
 }

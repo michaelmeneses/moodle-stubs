@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2PrimitiveTransformation extends \Google\Model
-{
-    protected $bucketingConfigType = GooglePrivacyDlpV2BucketingConfig::class;
-    protected $bucketingConfigDataType = '';
-    protected $characterMaskConfigType = GooglePrivacyDlpV2CharacterMaskConfig::class;
-    protected $characterMaskConfigDataType = '';
-    protected $cryptoDeterministicConfigType = GooglePrivacyDlpV2CryptoDeterministicConfig::class;
-    protected $cryptoDeterministicConfigDataType = '';
-    protected $cryptoHashConfigType = GooglePrivacyDlpV2CryptoHashConfig::class;
-    protected $cryptoHashConfigDataType = '';
-    protected $cryptoReplaceFfxFpeConfigType = GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig::class;
-    protected $cryptoReplaceFfxFpeConfigDataType = '';
-    protected $dateShiftConfigType = GooglePrivacyDlpV2DateShiftConfig::class;
-    protected $dateShiftConfigDataType = '';
-    protected $fixedSizeBucketingConfigType = GooglePrivacyDlpV2FixedSizeBucketingConfig::class;
-    protected $fixedSizeBucketingConfigDataType = '';
-    protected $redactConfigType = GooglePrivacyDlpV2RedactConfig::class;
-    protected $redactConfigDataType = '';
-    protected $replaceConfigType = GooglePrivacyDlpV2ReplaceValueConfig::class;
-    protected $replaceConfigDataType = '';
-    protected $replaceDictionaryConfigType = GooglePrivacyDlpV2ReplaceDictionaryConfig::class;
-    protected $replaceDictionaryConfigDataType = '';
-    protected $replaceWithInfoTypeConfigType = GooglePrivacyDlpV2ReplaceWithInfoTypeConfig::class;
-    protected $replaceWithInfoTypeConfigDataType = '';
-    protected $timePartConfigType = GooglePrivacyDlpV2TimePartConfig::class;
-    protected $timePartConfigDataType = '';
-    /**
-     * Bucketing
-     *
-     * @param GooglePrivacyDlpV2BucketingConfig $bucketingConfig
-     */
-    public function setBucketingConfig(GooglePrivacyDlpV2BucketingConfig $bucketingConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2PrimitiveTransformation extends \Google\Model
     {
+        protected $bucketingConfigType = GooglePrivacyDlpV2BucketingConfig::class;
+        protected $bucketingConfigDataType = '';
+        protected $characterMaskConfigType = GooglePrivacyDlpV2CharacterMaskConfig::class;
+        protected $characterMaskConfigDataType = '';
+        protected $cryptoDeterministicConfigType = GooglePrivacyDlpV2CryptoDeterministicConfig::class;
+        protected $cryptoDeterministicConfigDataType = '';
+        protected $cryptoHashConfigType = GooglePrivacyDlpV2CryptoHashConfig::class;
+        protected $cryptoHashConfigDataType = '';
+        protected $cryptoReplaceFfxFpeConfigType = GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig::class;
+        protected $cryptoReplaceFfxFpeConfigDataType = '';
+        protected $dateShiftConfigType = GooglePrivacyDlpV2DateShiftConfig::class;
+        protected $dateShiftConfigDataType = '';
+        protected $fixedSizeBucketingConfigType = GooglePrivacyDlpV2FixedSizeBucketingConfig::class;
+        protected $fixedSizeBucketingConfigDataType = '';
+        protected $redactConfigType = GooglePrivacyDlpV2RedactConfig::class;
+        protected $redactConfigDataType = '';
+        protected $replaceConfigType = GooglePrivacyDlpV2ReplaceValueConfig::class;
+        protected $replaceConfigDataType = '';
+        protected $replaceDictionaryConfigType = GooglePrivacyDlpV2ReplaceDictionaryConfig::class;
+        protected $replaceDictionaryConfigDataType = '';
+        protected $replaceWithInfoTypeConfigType = GooglePrivacyDlpV2ReplaceWithInfoTypeConfig::class;
+        protected $replaceWithInfoTypeConfigDataType = '';
+        protected $timePartConfigType = GooglePrivacyDlpV2TimePartConfig::class;
+        protected $timePartConfigDataType = '';
+        /**
+         * Bucketing
+         *
+         * @param GooglePrivacyDlpV2BucketingConfig $bucketingConfig
+         */
+        public function setBucketingConfig(GooglePrivacyDlpV2BucketingConfig $bucketingConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BucketingConfig
+         */
+        public function getBucketingConfig()
+        {
+        }
+        /**
+         * Mask
+         *
+         * @param GooglePrivacyDlpV2CharacterMaskConfig $characterMaskConfig
+         */
+        public function setCharacterMaskConfig(GooglePrivacyDlpV2CharacterMaskConfig $characterMaskConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CharacterMaskConfig
+         */
+        public function getCharacterMaskConfig()
+        {
+        }
+        /**
+         * Deterministic Crypto
+         *
+         * @param GooglePrivacyDlpV2CryptoDeterministicConfig $cryptoDeterministicConfig
+         */
+        public function setCryptoDeterministicConfig(GooglePrivacyDlpV2CryptoDeterministicConfig $cryptoDeterministicConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CryptoDeterministicConfig
+         */
+        public function getCryptoDeterministicConfig()
+        {
+        }
+        /**
+         * Crypto
+         *
+         * @param GooglePrivacyDlpV2CryptoHashConfig $cryptoHashConfig
+         */
+        public function setCryptoHashConfig(GooglePrivacyDlpV2CryptoHashConfig $cryptoHashConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CryptoHashConfig
+         */
+        public function getCryptoHashConfig()
+        {
+        }
+        /**
+         * Ffx-Fpe. Strongly discouraged, consider using CryptoDeterministicConfig
+         * instead. Fpe is computationally expensive incurring latency costs.
+         *
+         * @param GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig $cryptoReplaceFfxFpeConfig
+         */
+        public function setCryptoReplaceFfxFpeConfig(GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig $cryptoReplaceFfxFpeConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig
+         */
+        public function getCryptoReplaceFfxFpeConfig()
+        {
+        }
+        /**
+         * Date Shift
+         *
+         * @param GooglePrivacyDlpV2DateShiftConfig $dateShiftConfig
+         */
+        public function setDateShiftConfig(GooglePrivacyDlpV2DateShiftConfig $dateShiftConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DateShiftConfig
+         */
+        public function getDateShiftConfig()
+        {
+        }
+        /**
+         * Fixed size bucketing
+         *
+         * @param GooglePrivacyDlpV2FixedSizeBucketingConfig $fixedSizeBucketingConfig
+         */
+        public function setFixedSizeBucketingConfig(GooglePrivacyDlpV2FixedSizeBucketingConfig $fixedSizeBucketingConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FixedSizeBucketingConfig
+         */
+        public function getFixedSizeBucketingConfig()
+        {
+        }
+        /**
+         * Redact
+         *
+         * @param GooglePrivacyDlpV2RedactConfig $redactConfig
+         */
+        public function setRedactConfig(GooglePrivacyDlpV2RedactConfig $redactConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RedactConfig
+         */
+        public function getRedactConfig()
+        {
+        }
+        /**
+         * Replace with a specified value.
+         *
+         * @param GooglePrivacyDlpV2ReplaceValueConfig $replaceConfig
+         */
+        public function setReplaceConfig(GooglePrivacyDlpV2ReplaceValueConfig $replaceConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ReplaceValueConfig
+         */
+        public function getReplaceConfig()
+        {
+        }
+        /**
+         * Replace with a value randomly drawn (with replacement) from a dictionary.
+         *
+         * @param GooglePrivacyDlpV2ReplaceDictionaryConfig $replaceDictionaryConfig
+         */
+        public function setReplaceDictionaryConfig(GooglePrivacyDlpV2ReplaceDictionaryConfig $replaceDictionaryConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ReplaceDictionaryConfig
+         */
+        public function getReplaceDictionaryConfig()
+        {
+        }
+        /**
+         * Replace with infotype
+         *
+         * @param GooglePrivacyDlpV2ReplaceWithInfoTypeConfig $replaceWithInfoTypeConfig
+         */
+        public function setReplaceWithInfoTypeConfig(GooglePrivacyDlpV2ReplaceWithInfoTypeConfig $replaceWithInfoTypeConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ReplaceWithInfoTypeConfig
+         */
+        public function getReplaceWithInfoTypeConfig()
+        {
+        }
+        /**
+         * Time extraction
+         *
+         * @param GooglePrivacyDlpV2TimePartConfig $timePartConfig
+         */
+        public function setTimePartConfig(GooglePrivacyDlpV2TimePartConfig $timePartConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TimePartConfig
+         */
+        public function getTimePartConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BucketingConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2PrimitiveTransformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketingConfig()
-    {
-    }
-    /**
-     * Mask
-     *
-     * @param GooglePrivacyDlpV2CharacterMaskConfig $characterMaskConfig
-     */
-    public function setCharacterMaskConfig(GooglePrivacyDlpV2CharacterMaskConfig $characterMaskConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CharacterMaskConfig
-     */
-    public function getCharacterMaskConfig()
-    {
-    }
-    /**
-     * Deterministic Crypto
-     *
-     * @param GooglePrivacyDlpV2CryptoDeterministicConfig $cryptoDeterministicConfig
-     */
-    public function setCryptoDeterministicConfig(GooglePrivacyDlpV2CryptoDeterministicConfig $cryptoDeterministicConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CryptoDeterministicConfig
-     */
-    public function getCryptoDeterministicConfig()
-    {
-    }
-    /**
-     * Crypto
-     *
-     * @param GooglePrivacyDlpV2CryptoHashConfig $cryptoHashConfig
-     */
-    public function setCryptoHashConfig(GooglePrivacyDlpV2CryptoHashConfig $cryptoHashConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CryptoHashConfig
-     */
-    public function getCryptoHashConfig()
-    {
-    }
-    /**
-     * Ffx-Fpe. Strongly discouraged, consider using CryptoDeterministicConfig
-     * instead. Fpe is computationally expensive incurring latency costs.
-     *
-     * @param GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig $cryptoReplaceFfxFpeConfig
-     */
-    public function setCryptoReplaceFfxFpeConfig(GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig $cryptoReplaceFfxFpeConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig
-     */
-    public function getCryptoReplaceFfxFpeConfig()
-    {
-    }
-    /**
-     * Date Shift
-     *
-     * @param GooglePrivacyDlpV2DateShiftConfig $dateShiftConfig
-     */
-    public function setDateShiftConfig(GooglePrivacyDlpV2DateShiftConfig $dateShiftConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DateShiftConfig
-     */
-    public function getDateShiftConfig()
-    {
-    }
-    /**
-     * Fixed size bucketing
-     *
-     * @param GooglePrivacyDlpV2FixedSizeBucketingConfig $fixedSizeBucketingConfig
-     */
-    public function setFixedSizeBucketingConfig(GooglePrivacyDlpV2FixedSizeBucketingConfig $fixedSizeBucketingConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FixedSizeBucketingConfig
-     */
-    public function getFixedSizeBucketingConfig()
-    {
-    }
-    /**
-     * Redact
-     *
-     * @param GooglePrivacyDlpV2RedactConfig $redactConfig
-     */
-    public function setRedactConfig(GooglePrivacyDlpV2RedactConfig $redactConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RedactConfig
-     */
-    public function getRedactConfig()
-    {
-    }
-    /**
-     * Replace with a specified value.
-     *
-     * @param GooglePrivacyDlpV2ReplaceValueConfig $replaceConfig
-     */
-    public function setReplaceConfig(GooglePrivacyDlpV2ReplaceValueConfig $replaceConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ReplaceValueConfig
-     */
-    public function getReplaceConfig()
-    {
-    }
-    /**
-     * Replace with a value randomly drawn (with replacement) from a dictionary.
-     *
-     * @param GooglePrivacyDlpV2ReplaceDictionaryConfig $replaceDictionaryConfig
-     */
-    public function setReplaceDictionaryConfig(GooglePrivacyDlpV2ReplaceDictionaryConfig $replaceDictionaryConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ReplaceDictionaryConfig
-     */
-    public function getReplaceDictionaryConfig()
-    {
-    }
-    /**
-     * Replace with infotype
-     *
-     * @param GooglePrivacyDlpV2ReplaceWithInfoTypeConfig $replaceWithInfoTypeConfig
-     */
-    public function setReplaceWithInfoTypeConfig(GooglePrivacyDlpV2ReplaceWithInfoTypeConfig $replaceWithInfoTypeConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ReplaceWithInfoTypeConfig
-     */
-    public function getReplaceWithInfoTypeConfig()
-    {
-    }
-    /**
-     * Time extraction
-     *
-     * @param GooglePrivacyDlpV2TimePartConfig $timePartConfig
-     */
-    public function setTimePartConfig(GooglePrivacyDlpV2TimePartConfig $timePartConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TimePartConfig
-     */
-    public function getTimePartConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2PrimitiveTransformation extends \Google\Service\DLP\GooglePrivacyDlpV2PrimitiveTransformation
     {
     }
 }

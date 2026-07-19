@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\question\bank;
 
+use core_question\local\bank\view;
+use mod_quiz\question\bank\filter\custom_category_condition;
 /**
  * Class quiz_managecategories_feature
  *

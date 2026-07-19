@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform\Resource;
-
-/**
- * The "releaseConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataformService = new Google\Service\Dataform(...);
- *   $releaseConfigs = $dataformService->projects_locations_repositories_releaseConfigs;
- *  </code>
- */
-class ProjectsLocationsRepositoriesReleaseConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\Dataform\Resource {
+    use Google\Service\Dataform\DataformEmpty;
+    use Google\Service\Dataform\ListReleaseConfigsResponse;
+    use Google\Service\Dataform\ReleaseConfig;
     /**
-     * Creates a new ReleaseConfig in a given Repository. (releaseConfigs.create)
-     *
-     * @param string $parent Required. The repository in which to create the release
-     * config. Must be in the format `projects/locations/repositories`.
-     * @param ReleaseConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string releaseConfigId Required. The ID to use for the release
-     * config, which will become the final component of the release config's
-     * resource name.
-     * @return ReleaseConfig
-     * @throws \Google\Service\Exception
+     * The "releaseConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataformService = new Google\Service\Dataform(...);
+     *   $releaseConfigs = $dataformService->projects_locations_repositories_releaseConfigs;
+     *  </code>
      */
-    public function create($parent, ReleaseConfig $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesReleaseConfigs extends \Google\Service\Resource
     {
+        /**
+         * Creates a new ReleaseConfig in a given Repository. (releaseConfigs.create)
+         *
+         * @param string $parent Required. The repository in which to create the release
+         * config. Must be in the format `projects/locations/repositories`.
+         * @param ReleaseConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string releaseConfigId Required. The ID to use for the release
+         * config, which will become the final component of the release config's
+         * resource name.
+         * @return ReleaseConfig
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ReleaseConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single ReleaseConfig. (releaseConfigs.delete)
+         *
+         * @param string $name Required. The release config's name.
+         * @param array $optParams Optional parameters.
+         * @return DataformEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Fetches a single ReleaseConfig. (releaseConfigs.get)
+         *
+         * @param string $name Required. The release config's name.
+         * @param array $optParams Optional parameters.
+         * @return ReleaseConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists ReleaseConfigs in a given Repository.
+         * (releaseConfigs.listProjectsLocationsRepositoriesReleaseConfigs)
+         *
+         * @param string $parent Required. The repository in which to list release
+         * configs. Must be in the format `projects/locations/repositories`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of release configs to
+         * return. The server may return fewer items than requested. If unspecified, the
+         * server will pick an appropriate default.
+         * @opt_param string pageToken Optional. Page token received from a previous
+         * `ListReleaseConfigs` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListReleaseConfigs`, with the
+         * exception of `page_size`, must match the call that provided the page token.
+         * @return ListReleaseConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesReleaseConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a single ReleaseConfig. **Note:** *This method does not fully
+         * implement [AIP/134](https://google.aip.dev/134). The wildcard entry () is
+         * treated as a bad request, and when the `field_mask` is omitted, the request
+         * is treated as a full update on all modifiable fields.* (releaseConfigs.patch)
+         *
+         * @param string $name Identifier. The release config's name.
+         * @param ReleaseConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Specifies the fields to be updated in
+         * the release config. If left unset, all fields will be updated.
+         * @return ReleaseConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, ReleaseConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single ReleaseConfig. (releaseConfigs.delete)
-     *
-     * @param string $name Required. The release config's name.
-     * @param array $optParams Optional parameters.
-     * @return DataformEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataform\Resource\ProjectsLocationsRepositoriesReleaseConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Fetches a single ReleaseConfig. (releaseConfigs.get)
-     *
-     * @param string $name Required. The release config's name.
-     * @param array $optParams Optional parameters.
-     * @return ReleaseConfig
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists ReleaseConfigs in a given Repository.
-     * (releaseConfigs.listProjectsLocationsRepositoriesReleaseConfigs)
-     *
-     * @param string $parent Required. The repository in which to list release
-     * configs. Must be in the format `projects/locations/repositories`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of release configs to
-     * return. The server may return fewer items than requested. If unspecified, the
-     * server will pick an appropriate default.
-     * @opt_param string pageToken Optional. Page token received from a previous
-     * `ListReleaseConfigs` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListReleaseConfigs`, with the
-     * exception of `page_size`, must match the call that provided the page token.
-     * @return ListReleaseConfigsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesReleaseConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a single ReleaseConfig. **Note:** *This method does not fully
-     * implement [AIP/134](https://google.aip.dev/134). The wildcard entry () is
-     * treated as a bad request, and when the `field_mask` is omitted, the request
-     * is treated as a full update on all modifiable fields.* (releaseConfigs.patch)
-     *
-     * @param string $name Identifier. The release config's name.
-     * @param ReleaseConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Specifies the fields to be updated in
-     * the release config. If left unset, all fields will be updated.
-     * @return ReleaseConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, ReleaseConfig $postBody, $optParams = [])
+    class Google_Service_Dataform_Resource_ProjectsLocationsRepositoriesReleaseConfigs extends \Google\Service\Dataform\Resource\ProjectsLocationsRepositoriesReleaseConfigs
     {
     }
 }

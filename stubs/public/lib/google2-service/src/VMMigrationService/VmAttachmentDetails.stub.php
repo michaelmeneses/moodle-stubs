@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmAttachmentDetails extends \Google\Model
-{
-    /**
-     * Optional. Specifies a unique device name of your choice that is reflected
-     * into the /dev/disk/by-id/google-* tree of a Linux operating system running
-     * within the instance. If not specified, the server chooses a default device
-     * name to apply to this disk, in the form persistent-disk-x, where x is a
-     * number assigned by Google Compute Engine. This field is only applicable for
-     * persistent disks.
-     *
-     * @var string
-     */
-    public $deviceName;
-    /**
-     * Optional. Specifies a unique device name of your choice that is reflected
-     * into the /dev/disk/by-id/google-* tree of a Linux operating system running
-     * within the instance. If not specified, the server chooses a default device
-     * name to apply to this disk, in the form persistent-disk-x, where x is a
-     * number assigned by Google Compute Engine. This field is only applicable for
-     * persistent disks.
-     *
-     * @param string $deviceName
-     */
-    public function setDeviceName($deviceName)
+namespace Google\Service\VMMigrationService {
+    class VmAttachmentDetails extends \Google\Model
     {
+        /**
+         * Optional. Specifies a unique device name of your choice that is reflected
+         * into the /dev/disk/by-id/google-* tree of a Linux operating system running
+         * within the instance. If not specified, the server chooses a default device
+         * name to apply to this disk, in the form persistent-disk-x, where x is a
+         * number assigned by Google Compute Engine. This field is only applicable for
+         * persistent disks.
+         *
+         * @var string
+         */
+        public $deviceName;
+        /**
+         * Optional. Specifies a unique device name of your choice that is reflected
+         * into the /dev/disk/by-id/google-* tree of a Linux operating system running
+         * within the instance. If not specified, the server chooses a default device
+         * name to apply to this disk, in the form persistent-disk-x, where x is a
+         * number assigned by Google Compute Engine. This field is only applicable for
+         * persistent disks.
+         *
+         * @param string $deviceName
+         */
+        public function setDeviceName($deviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\VmAttachmentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceName()
+    class Google_Service_VMMigrationService_VmAttachmentDetails extends \Google\Service\VMMigrationService\VmAttachmentDetails
     {
     }
 }

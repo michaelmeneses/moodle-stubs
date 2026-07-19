@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SecretEnvVar extends \Google\Model
-{
-    /**
-     * Required. Name of the secret environment variable.
-     *
-     * @var string
-     */
-    public $name;
-    protected $secretRefType = GoogleCloudAiplatformV1SecretRef::class;
-    protected $secretRefDataType = '';
-    /**
-     * Required. Name of the secret environment variable.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SecretEnvVar extends \Google\Model
     {
+        /**
+         * Required. Name of the secret environment variable.
+         *
+         * @var string
+         */
+        public $name;
+        protected $secretRefType = GoogleCloudAiplatformV1SecretRef::class;
+        protected $secretRefDataType = '';
+        /**
+         * Required. Name of the secret environment variable.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Reference to a secret stored in the Cloud Secret Manager that
+         * will provide the value for this environment variable.
+         *
+         * @param GoogleCloudAiplatformV1SecretRef $secretRef
+         */
+        public function setSecretRef(GoogleCloudAiplatformV1SecretRef $secretRef)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SecretRef
+         */
+        public function getSecretRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SecretEnvVar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Reference to a secret stored in the Cloud Secret Manager that
-     * will provide the value for this environment variable.
-     *
-     * @param GoogleCloudAiplatformV1SecretRef $secretRef
-     */
-    public function setSecretRef(GoogleCloudAiplatformV1SecretRef $secretRef)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SecretRef
-     */
-    public function getSecretRef()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SecretEnvVar extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SecretEnvVar
     {
     }
 }

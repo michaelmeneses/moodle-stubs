@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class ReportStateAndNotificationDevice extends \Google\Model
-{
-    /**
-     * Notifications metadata for devices. See the **Device NOTIFICATIONS**
-     * section of the individual trait [reference
-     * guides](https://developers.home.google.com/cloud-to-cloud/traits).
-     *
-     * @var array[]
-     */
-    public $notifications;
-    /**
-     * States of devices to update. See the **Device STATES** section of the
-     * individual trait [reference
-     * guides](https://developers.home.google.com/cloud-to-cloud/traits).
-     *
-     * @var array[]
-     */
-    public $states;
-    /**
-     * Notifications metadata for devices. See the **Device NOTIFICATIONS**
-     * section of the individual trait [reference
-     * guides](https://developers.home.google.com/cloud-to-cloud/traits).
-     *
-     * @param array[] $notifications
-     */
-    public function setNotifications($notifications)
+namespace Google\Service\HomeGraphService {
+    class ReportStateAndNotificationDevice extends \Google\Model
     {
+        /**
+         * Notifications metadata for devices. See the **Device NOTIFICATIONS**
+         * section of the individual trait [reference
+         * guides](https://developers.home.google.com/cloud-to-cloud/traits).
+         *
+         * @var array[]
+         */
+        public $notifications;
+        /**
+         * States of devices to update. See the **Device STATES** section of the
+         * individual trait [reference
+         * guides](https://developers.home.google.com/cloud-to-cloud/traits).
+         *
+         * @var array[]
+         */
+        public $states;
+        /**
+         * Notifications metadata for devices. See the **Device NOTIFICATIONS**
+         * section of the individual trait [reference
+         * guides](https://developers.home.google.com/cloud-to-cloud/traits).
+         *
+         * @param array[] $notifications
+         */
+        public function setNotifications($notifications)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getNotifications()
+        {
+        }
+        /**
+         * States of devices to update. See the **Device STATES** section of the
+         * individual trait [reference
+         * guides](https://developers.home.google.com/cloud-to-cloud/traits).
+         *
+         * @param array[] $states
+         */
+        public function setStates($states)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\HomeGraphService\ReportStateAndNotificationDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotifications()
-    {
-    }
-    /**
-     * States of devices to update. See the **Device STATES** section of the
-     * individual trait [reference
-     * guides](https://developers.home.google.com/cloud-to-cloud/traits).
-     *
-     * @param array[] $states
-     */
-    public function setStates($states)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStates()
+    class Google_Service_HomeGraphService_ReportStateAndNotificationDevice extends \Google\Service\HomeGraphService\ReportStateAndNotificationDevice
     {
     }
 }

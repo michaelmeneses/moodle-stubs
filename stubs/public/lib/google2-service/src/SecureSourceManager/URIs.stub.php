@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class URIs extends \Google\Model
-{
-    /**
-     * Output only. API is the URI for API access.
-     *
-     * @var string
-     */
-    public $api;
-    /**
-     * Output only. git_https is the git HTTPS URI for git operations.
-     *
-     * @var string
-     */
-    public $gitHttps;
-    /**
-     * Output only. HTML is the URI for user to view the repository in a browser.
-     *
-     * @var string
-     */
-    public $html;
-    /**
-     * Output only. API is the URI for API access.
-     *
-     * @param string $api
-     */
-    public function setApi($api)
+namespace Google\Service\SecureSourceManager {
+    class URIs extends \Google\Model
     {
+        /**
+         * Output only. API is the URI for API access.
+         *
+         * @var string
+         */
+        public $api;
+        /**
+         * Output only. git_https is the git HTTPS URI for git operations.
+         *
+         * @var string
+         */
+        public $gitHttps;
+        /**
+         * Output only. HTML is the URI for user to view the repository in a browser.
+         *
+         * @var string
+         */
+        public $html;
+        /**
+         * Output only. API is the URI for API access.
+         *
+         * @param string $api
+         */
+        public function setApi($api)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApi()
+        {
+        }
+        /**
+         * Output only. git_https is the git HTTPS URI for git operations.
+         *
+         * @param string $gitHttps
+         */
+        public function setGitHttps($gitHttps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitHttps()
+        {
+        }
+        /**
+         * Output only. HTML is the URI for user to view the repository in a browser.
+         *
+         * @param string $html
+         */
+        public function setHtml($html)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\URIs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApi()
-    {
-    }
-    /**
-     * Output only. git_https is the git HTTPS URI for git operations.
-     *
-     * @param string $gitHttps
-     */
-    public function setGitHttps($gitHttps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitHttps()
-    {
-    }
-    /**
-     * Output only. HTML is the URI for user to view the repository in a browser.
-     *
-     * @param string $html
-     */
-    public function setHtml($html)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHtml()
+    class Google_Service_SecureSourceManager_URIs extends \Google\Service\SecureSourceManager\URIs
     {
     }
 }

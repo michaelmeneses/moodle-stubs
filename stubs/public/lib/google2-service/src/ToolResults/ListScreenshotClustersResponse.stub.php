@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListScreenshotClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'clusters';
-    protected $clustersType = ScreenshotCluster::class;
-    protected $clustersDataType = 'array';
-    /**
-     * The set of clusters associated with an execution Always set
-     *
-     * @param ScreenshotCluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\ToolResults {
+    class ListScreenshotClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'clusters';
+        protected $clustersType = ScreenshotCluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * The set of clusters associated with an execution Always set
+         *
+         * @param ScreenshotCluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return ScreenshotCluster[]
+         */
+        public function getClusters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ScreenshotCluster[]
+     * Runtime class alias of \Google\Service\ToolResults\ListScreenshotClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
+    class Google_Service_ToolResults_ListScreenshotClustersResponse extends \Google\Service\ToolResults\ListScreenshotClustersResponse
     {
     }
 }

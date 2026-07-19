@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlServerEntraIdConfig extends \Google\Model
-{
-    /**
-     * Optional. The application ID for the Entra ID configuration.
-     *
-     * @var string
-     */
-    public $applicationId;
-    /**
-     * Output only. This is always sql#sqlServerEntraIdConfig
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Optional. The tenant ID for the Entra ID configuration.
-     *
-     * @var string
-     */
-    public $tenantId;
-    /**
-     * Optional. The application ID for the Entra ID configuration.
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\SQLAdmin {
+    class SqlServerEntraIdConfig extends \Google\Model
     {
+        /**
+         * Optional. The application ID for the Entra ID configuration.
+         *
+         * @var string
+         */
+        public $applicationId;
+        /**
+         * Output only. This is always sql#sqlServerEntraIdConfig
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Optional. The tenant ID for the Entra ID configuration.
+         *
+         * @var string
+         */
+        public $tenantId;
+        /**
+         * Optional. The application ID for the Entra ID configuration.
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * Output only. This is always sql#sqlServerEntraIdConfig
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Optional. The tenant ID for the Entra ID configuration.
+         *
+         * @param string $tenantId
+         */
+        public function setTenantId($tenantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlServerEntraIdConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * Output only. This is always sql#sqlServerEntraIdConfig
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Optional. The tenant ID for the Entra ID configuration.
-     *
-     * @param string $tenantId
-     */
-    public function setTenantId($tenantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantId()
+    class Google_Service_SQLAdmin_SqlServerEntraIdConfig extends \Google\Service\SQLAdmin\SqlServerEntraIdConfig
     {
     }
 }

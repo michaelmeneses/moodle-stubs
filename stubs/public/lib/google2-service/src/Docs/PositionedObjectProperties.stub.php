@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class PositionedObjectProperties extends \Google\Model
-{
-    protected $embeddedObjectType = EmbeddedObject::class;
-    protected $embeddedObjectDataType = '';
-    protected $positioningType = PositionedObjectPositioning::class;
-    protected $positioningDataType = '';
-    /**
-     * The embedded object of this positioned object.
-     *
-     * @param EmbeddedObject $embeddedObject
-     */
-    public function setEmbeddedObject(EmbeddedObject $embeddedObject)
+namespace Google\Service\Docs {
+    class PositionedObjectProperties extends \Google\Model
     {
+        protected $embeddedObjectType = EmbeddedObject::class;
+        protected $embeddedObjectDataType = '';
+        protected $positioningType = PositionedObjectPositioning::class;
+        protected $positioningDataType = '';
+        /**
+         * The embedded object of this positioned object.
+         *
+         * @param EmbeddedObject $embeddedObject
+         */
+        public function setEmbeddedObject(EmbeddedObject $embeddedObject)
+        {
+        }
+        /**
+         * @return EmbeddedObject
+         */
+        public function getEmbeddedObject()
+        {
+        }
+        /**
+         * The positioning of this positioned object relative to the newline of the
+         * Paragraph that references this positioned object.
+         *
+         * @param PositionedObjectPositioning $positioning
+         */
+        public function setPositioning(PositionedObjectPositioning $positioning)
+        {
+        }
+        /**
+         * @return PositionedObjectPositioning
+         */
+        public function getPositioning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObject
+     * Runtime class alias of \Google\Service\Docs\PositionedObjectProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbeddedObject()
-    {
-    }
-    /**
-     * The positioning of this positioned object relative to the newline of the
-     * Paragraph that references this positioned object.
-     *
-     * @param PositionedObjectPositioning $positioning
-     */
-    public function setPositioning(PositionedObjectPositioning $positioning)
-    {
-    }
-    /**
-     * @return PositionedObjectPositioning
-     */
-    public function getPositioning()
+    class Google_Service_Docs_PositionedObjectProperties extends \Google\Service\Docs\PositionedObjectProperties
     {
     }
 }

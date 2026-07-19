@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Service extends \Google\Collection
-{
-    protected $collection_key = 'intentFilter';
-    protected $intentFilterType = IntentFilter::class;
-    protected $intentFilterDataType = 'array';
-    /**
-     * The android:name value
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Intent filters in the service
-     *
-     * @param IntentFilter[] $intentFilter
-     */
-    public function setIntentFilter($intentFilter)
+namespace Google\Service\Testing {
+    class Service extends \Google\Collection
     {
+        protected $collection_key = 'intentFilter';
+        protected $intentFilterType = IntentFilter::class;
+        protected $intentFilterDataType = 'array';
+        /**
+         * The android:name value
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Intent filters in the service
+         *
+         * @param IntentFilter[] $intentFilter
+         */
+        public function setIntentFilter($intentFilter)
+        {
+        }
+        /**
+         * @return IntentFilter[]
+         */
+        public function getIntentFilter()
+        {
+        }
+        /**
+         * The android:name value
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IntentFilter[]
+     * Runtime class alias of \Google\Service\Testing\Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntentFilter()
-    {
-    }
-    /**
-     * The android:name value
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Testing_Service extends \Google\Service\Testing\Service
     {
     }
 }

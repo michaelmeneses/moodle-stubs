@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\task;
 
+use core\task\adhoc_task;
 /**
  * Ad-hoc task to recalculate penalties for users in an assignment.
  *

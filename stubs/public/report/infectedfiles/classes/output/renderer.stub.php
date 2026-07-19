@@ -30,6 +30,7 @@
  */
 namespace report_infectedfiles\output;
 
+use report_infectedfiles\table\infectedfiles_table;
 /**
  * Infected file report renderer
  *

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CloudStoragePath extends \Google\Model
-{
-    /**
-     * A URL representing a file or path (no wildcards) in Cloud Storage. Example:
-     * `gs://[BUCKET_NAME]/dictionary.txt`
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * A URL representing a file or path (no wildcards) in Cloud Storage. Example:
-     * `gs://[BUCKET_NAME]/dictionary.txt`
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CloudStoragePath extends \Google\Model
     {
+        /**
+         * A URL representing a file or path (no wildcards) in Cloud Storage. Example:
+         * `gs://[BUCKET_NAME]/dictionary.txt`
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * A URL representing a file or path (no wildcards) in Cloud Storage. Example:
+         * `gs://[BUCKET_NAME]/dictionary.txt`
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CloudStoragePath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
+    class Google_Service_DLP_GooglePrivacyDlpV2CloudStoragePath extends \Google\Service\DLP\GooglePrivacyDlpV2CloudStoragePath
     {
     }
 }

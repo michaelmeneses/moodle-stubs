@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ListOneTimeProductOffersResponse extends \Google\Collection
-{
-    protected $collection_key = 'oneTimeProductOffers';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $oneTimeProductOffersType = OneTimeProductOffer::class;
-    protected $oneTimeProductOffersDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AndroidPublisher {
+    class ListOneTimeProductOffersResponse extends \Google\Collection
     {
+        protected $collection_key = 'oneTimeProductOffers';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $oneTimeProductOffersType = OneTimeProductOffer::class;
+        protected $oneTimeProductOffersDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The one_time_product offers from the specified request.
+         *
+         * @param OneTimeProductOffer[] $oneTimeProductOffers
+         */
+        public function setOneTimeProductOffers($oneTimeProductOffers)
+        {
+        }
+        /**
+         * @return OneTimeProductOffer[]
+         */
+        public function getOneTimeProductOffers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ListOneTimeProductOffersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The one_time_product offers from the specified request.
-     *
-     * @param OneTimeProductOffer[] $oneTimeProductOffers
-     */
-    public function setOneTimeProductOffers($oneTimeProductOffers)
-    {
-    }
-    /**
-     * @return OneTimeProductOffer[]
-     */
-    public function getOneTimeProductOffers()
+    class Google_Service_AndroidPublisher_ListOneTimeProductOffersResponse extends \Google\Service\AndroidPublisher\ListOneTimeProductOffersResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class UploadAttachmentRequest extends \Google\Model
-{
-    /**
-     * Required. The filename of the attachment, including the file extension.
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * Required. The filename of the attachment, including the file extension.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
+namespace Google\Service\HangoutsChat {
+    class UploadAttachmentRequest extends \Google\Model
     {
+        /**
+         * Required. The filename of the attachment, including the file extension.
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * Required. The filename of the attachment, including the file extension.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\UploadAttachmentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilename()
+    class Google_Service_HangoutsChat_UploadAttachmentRequest extends \Google\Service\HangoutsChat\UploadAttachmentRequest
     {
     }
 }

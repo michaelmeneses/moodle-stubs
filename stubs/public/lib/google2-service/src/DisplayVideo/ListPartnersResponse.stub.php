@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListPartnersResponse extends \Google\Collection
-{
-    protected $collection_key = 'partners';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListPartners` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $partnersType = Partner::class;
-    protected $partnersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListPartners` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DisplayVideo {
+    class ListPartnersResponse extends \Google\Collection
     {
+        protected $collection_key = 'partners';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListPartners` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $partnersType = Partner::class;
+        protected $partnersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListPartners` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of partners. This list will be absent if empty.
+         *
+         * @param Partner[] $partners
+         */
+        public function setPartners($partners)
+        {
+        }
+        /**
+         * @return Partner[]
+         */
+        public function getPartners()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ListPartnersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of partners. This list will be absent if empty.
-     *
-     * @param Partner[] $partners
-     */
-    public function setPartners($partners)
-    {
-    }
-    /**
-     * @return Partner[]
-     */
-    public function getPartners()
+    class Google_Service_DisplayVideo_ListPartnersResponse extends \Google\Service\DisplayVideo\ListPartnersResponse
     {
     }
 }

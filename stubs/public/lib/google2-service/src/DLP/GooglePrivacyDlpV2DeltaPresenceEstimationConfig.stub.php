@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeltaPresenceEstimationConfig extends \Google\Collection
-{
-    protected $collection_key = 'quasiIds';
-    protected $auxiliaryTablesType = GooglePrivacyDlpV2StatisticalTable::class;
-    protected $auxiliaryTablesDataType = 'array';
-    protected $quasiIdsType = GooglePrivacyDlpV2QuasiId::class;
-    protected $quasiIdsDataType = 'array';
-    /**
-     * ISO 3166-1 alpha-2 region code to use in the statistical modeling. Set if
-     * no column is tagged with a region-specific InfoType (like US_ZIP_5) or a
-     * region code.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Several auxiliary tables can be used in the analysis. Each custom_tag used
-     * to tag a quasi-identifiers field must appear in exactly one field of one
-     * auxiliary table.
-     *
-     * @param GooglePrivacyDlpV2StatisticalTable[] $auxiliaryTables
-     */
-    public function setAuxiliaryTables($auxiliaryTables)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeltaPresenceEstimationConfig extends \Google\Collection
     {
+        protected $collection_key = 'quasiIds';
+        protected $auxiliaryTablesType = GooglePrivacyDlpV2StatisticalTable::class;
+        protected $auxiliaryTablesDataType = 'array';
+        protected $quasiIdsType = GooglePrivacyDlpV2QuasiId::class;
+        protected $quasiIdsDataType = 'array';
+        /**
+         * ISO 3166-1 alpha-2 region code to use in the statistical modeling. Set if
+         * no column is tagged with a region-specific InfoType (like US_ZIP_5) or a
+         * region code.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Several auxiliary tables can be used in the analysis. Each custom_tag used
+         * to tag a quasi-identifiers field must appear in exactly one field of one
+         * auxiliary table.
+         *
+         * @param GooglePrivacyDlpV2StatisticalTable[] $auxiliaryTables
+         */
+        public function setAuxiliaryTables($auxiliaryTables)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StatisticalTable[]
+         */
+        public function getAuxiliaryTables()
+        {
+        }
+        /**
+         * Required. Fields considered to be quasi-identifiers. No two fields can have
+         * the same tag.
+         *
+         * @param GooglePrivacyDlpV2QuasiId[] $quasiIds
+         */
+        public function setQuasiIds($quasiIds)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2QuasiId[]
+         */
+        public function getQuasiIds()
+        {
+        }
+        /**
+         * ISO 3166-1 alpha-2 region code to use in the statistical modeling. Set if
+         * no column is tagged with a region-specific InfoType (like US_ZIP_5) or a
+         * region code.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2StatisticalTable[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeltaPresenceEstimationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuxiliaryTables()
-    {
-    }
-    /**
-     * Required. Fields considered to be quasi-identifiers. No two fields can have
-     * the same tag.
-     *
-     * @param GooglePrivacyDlpV2QuasiId[] $quasiIds
-     */
-    public function setQuasiIds($quasiIds)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2QuasiId[]
-     */
-    public function getQuasiIds()
-    {
-    }
-    /**
-     * ISO 3166-1 alpha-2 region code to use in the statistical modeling. Set if
-     * no column is tagged with a region-specific InfoType (like US_ZIP_5) or a
-     * region code.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeltaPresenceEstimationConfig extends \Google\Service\DLP\GooglePrivacyDlpV2DeltaPresenceEstimationConfig
     {
     }
 }

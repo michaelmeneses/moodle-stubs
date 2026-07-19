@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleSslConfig extends \Google\Model
-{
-    /**
-     * Input only. PEM-encoded certificate of the CA that signed the source
-     * database server's certificate.
-     *
-     * @var string
-     */
-    public $caCertificate;
-    /**
-     * Output only. Indicates whether the ca_certificate field has been set for
-     * this Connection-Profile.
-     *
-     * @var bool
-     */
-    public $caCertificateSet;
-    /**
-     * Optional. The distinguished name (DN) mentioned in the server certificate.
-     * This corresponds to SSL_SERVER_CERT_DN sqlnet parameter. Refer
-     * https://docs.oracle.com/en/database/oracle/oracle-database/19/netrf/local-
-     * naming-parameters-in-tns-ora-
-     * file.html#GUID-70AB0695-A9AA-4A94-B141-4C605236EEB7 If this field is not
-     * provided, the DN matching is not enforced.
-     *
-     * @var string
-     */
-    public $serverCertificateDistinguishedName;
-    /**
-     * Input only. PEM-encoded certificate of the CA that signed the source
-     * database server's certificate.
-     *
-     * @param string $caCertificate
-     */
-    public function setCaCertificate($caCertificate)
+namespace Google\Service\Datastream {
+    class OracleSslConfig extends \Google\Model
     {
+        /**
+         * Input only. PEM-encoded certificate of the CA that signed the source
+         * database server's certificate.
+         *
+         * @var string
+         */
+        public $caCertificate;
+        /**
+         * Output only. Indicates whether the ca_certificate field has been set for
+         * this Connection-Profile.
+         *
+         * @var bool
+         */
+        public $caCertificateSet;
+        /**
+         * Optional. The distinguished name (DN) mentioned in the server certificate.
+         * This corresponds to SSL_SERVER_CERT_DN sqlnet parameter. Refer
+         * https://docs.oracle.com/en/database/oracle/oracle-database/19/netrf/local-
+         * naming-parameters-in-tns-ora-
+         * file.html#GUID-70AB0695-A9AA-4A94-B141-4C605236EEB7 If this field is not
+         * provided, the DN matching is not enforced.
+         *
+         * @var string
+         */
+        public $serverCertificateDistinguishedName;
+        /**
+         * Input only. PEM-encoded certificate of the CA that signed the source
+         * database server's certificate.
+         *
+         * @param string $caCertificate
+         */
+        public function setCaCertificate($caCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertificate()
+        {
+        }
+        /**
+         * Output only. Indicates whether the ca_certificate field has been set for
+         * this Connection-Profile.
+         *
+         * @param bool $caCertificateSet
+         */
+        public function setCaCertificateSet($caCertificateSet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaCertificateSet()
+        {
+        }
+        /**
+         * Optional. The distinguished name (DN) mentioned in the server certificate.
+         * This corresponds to SSL_SERVER_CERT_DN sqlnet parameter. Refer
+         * https://docs.oracle.com/en/database/oracle/oracle-database/19/netrf/local-
+         * naming-parameters-in-tns-ora-
+         * file.html#GUID-70AB0695-A9AA-4A94-B141-4C605236EEB7 If this field is not
+         * provided, the DN matching is not enforced.
+         *
+         * @param string $serverCertificateDistinguishedName
+         */
+        public function setServerCertificateDistinguishedName($serverCertificateDistinguishedName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerCertificateDistinguishedName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\OracleSslConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCertificate()
-    {
-    }
-    /**
-     * Output only. Indicates whether the ca_certificate field has been set for
-     * this Connection-Profile.
-     *
-     * @param bool $caCertificateSet
-     */
-    public function setCaCertificateSet($caCertificateSet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCaCertificateSet()
-    {
-    }
-    /**
-     * Optional. The distinguished name (DN) mentioned in the server certificate.
-     * This corresponds to SSL_SERVER_CERT_DN sqlnet parameter. Refer
-     * https://docs.oracle.com/en/database/oracle/oracle-database/19/netrf/local-
-     * naming-parameters-in-tns-ora-
-     * file.html#GUID-70AB0695-A9AA-4A94-B141-4C605236EEB7 If this field is not
-     * provided, the DN matching is not enforced.
-     *
-     * @param string $serverCertificateDistinguishedName
-     */
-    public function setServerCertificateDistinguishedName($serverCertificateDistinguishedName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerCertificateDistinguishedName()
+    class Google_Service_Datastream_OracleSslConfig extends \Google\Service\Datastream\OracleSslConfig
     {
     }
 }

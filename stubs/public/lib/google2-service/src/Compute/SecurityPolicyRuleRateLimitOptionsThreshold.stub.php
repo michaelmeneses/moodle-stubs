@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleRateLimitOptionsThreshold extends \Google\Model
-{
-    /**
-     * Number of HTTP(S) requests for calculating the threshold.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * Interval over which the threshold is computed.
-     *
-     * @var int
-     */
-    public $intervalSec;
-    /**
-     * Number of HTTP(S) requests for calculating the threshold.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleRateLimitOptionsThreshold extends \Google\Model
     {
+        /**
+         * Number of HTTP(S) requests for calculating the threshold.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * Interval over which the threshold is computed.
+         *
+         * @var int
+         */
+        public $intervalSec;
+        /**
+         * Number of HTTP(S) requests for calculating the threshold.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Interval over which the threshold is computed.
+         *
+         * @param int $intervalSec
+         */
+        public function setIntervalSec($intervalSec)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntervalSec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleRateLimitOptionsThreshold registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Interval over which the threshold is computed.
-     *
-     * @param int $intervalSec
-     */
-    public function setIntervalSec($intervalSec)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntervalSec()
+    class Google_Service_Compute_SecurityPolicyRuleRateLimitOptionsThreshold extends \Google\Service\Compute\SecurityPolicyRuleRateLimitOptionsThreshold
     {
     }
 }

@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class Report extends \Google\Model
-{
-    /**
-     * The date/time when this report was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The URL from which the report can be downloaded (max. 1000 characters).
-     *
-     * @var string
-     */
-    public $downloadUrl;
-    /**
-     * The end of the time period that the report instance covers. The value is
-     * exclusive.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The server-generated ID of the report.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The date/time when the job this report belongs to will expire/expired.
-     *
-     * @var string
-     */
-    public $jobExpireTime;
-    /**
-     * The ID of the job that created this report.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * The start of the time period that the report instance covers. The value is
-     * inclusive.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The date/time when this report was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\YouTubeReporting {
+    class Report extends \Google\Model
     {
+        /**
+         * The date/time when this report was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The URL from which the report can be downloaded (max. 1000 characters).
+         *
+         * @var string
+         */
+        public $downloadUrl;
+        /**
+         * The end of the time period that the report instance covers. The value is
+         * exclusive.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The server-generated ID of the report.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The date/time when the job this report belongs to will expire/expired.
+         *
+         * @var string
+         */
+        public $jobExpireTime;
+        /**
+         * The ID of the job that created this report.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * The start of the time period that the report instance covers. The value is
+         * inclusive.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The date/time when this report was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The URL from which the report can be downloaded (max. 1000 characters).
+         *
+         * @param string $downloadUrl
+         */
+        public function setDownloadUrl($downloadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUrl()
+        {
+        }
+        /**
+         * The end of the time period that the report instance covers. The value is
+         * exclusive.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The server-generated ID of the report.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The date/time when the job this report belongs to will expire/expired.
+         *
+         * @param string $jobExpireTime
+         */
+        public function setJobExpireTime($jobExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobExpireTime()
+        {
+        }
+        /**
+         * The ID of the job that created this report.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * The start of the time period that the report instance covers. The value is
+         * inclusive.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\Report registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The URL from which the report can be downloaded (max. 1000 characters).
-     *
-     * @param string $downloadUrl
-     */
-    public function setDownloadUrl($downloadUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadUrl()
-    {
-    }
-    /**
-     * The end of the time period that the report instance covers. The value is
-     * exclusive.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The server-generated ID of the report.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The date/time when the job this report belongs to will expire/expired.
-     *
-     * @param string $jobExpireTime
-     */
-    public function setJobExpireTime($jobExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobExpireTime()
-    {
-    }
-    /**
-     * The ID of the job that created this report.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
-    {
-    }
-    /**
-     * The start of the time period that the report instance covers. The value is
-     * inclusive.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_YouTubeReporting_Report extends \Google\Service\YouTubeReporting\Report
     {
     }
 }

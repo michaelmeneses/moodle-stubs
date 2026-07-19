@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Breakdown extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * Human readable, localized description of issue's effect on different
-     * targets. Should be rendered as a list. For example: * "Products not showing
-     * in ads" * "Products not showing organically"
-     *
-     * @var string[]
-     */
-    public $details;
-    protected $regionsType = BreakdownRegion::class;
-    protected $regionsDataType = 'array';
-    /**
-     * Human readable, localized description of issue's effect on different
-     * targets. Should be rendered as a list. For example: * "Products not showing
-     * in ads" * "Products not showing organically"
-     *
-     * @param string[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\ShoppingContent {
+    class Breakdown extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * Human readable, localized description of issue's effect on different
+         * targets. Should be rendered as a list. For example: * "Products not showing
+         * in ads" * "Products not showing organically"
+         *
+         * @var string[]
+         */
+        public $details;
+        protected $regionsType = BreakdownRegion::class;
+        protected $regionsDataType = 'array';
+        /**
+         * Human readable, localized description of issue's effect on different
+         * targets. Should be rendered as a list. For example: * "Products not showing
+         * in ads" * "Products not showing organically"
+         *
+         * @param string[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Lists of regions. Should be rendered as a title for this group of details.
+         * The full list should be shown to merchant. If the list is too long, it is
+         * recommended to make it expandable.
+         *
+         * @param BreakdownRegion[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return BreakdownRegion[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\Breakdown registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Lists of regions. Should be rendered as a title for this group of details.
-     * The full list should be shown to merchant. If the list is too long, it is
-     * recommended to make it expandable.
-     *
-     * @param BreakdownRegion[] $regions
-     */
-    public function setRegions($regions)
-    {
-    }
-    /**
-     * @return BreakdownRegion[]
-     */
-    public function getRegions()
+    class Google_Service_ShoppingContent_Breakdown extends \Google\Service\ShoppingContent\Breakdown
     {
     }
 }

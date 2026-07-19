@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class PackageVersion extends \Google\Collection
-{
-    protected $collection_key = 'licenses';
-    /**
-     * The licenses associated with this package. Note that this has to go on the
-     * PackageVersion level, because we can have cases with images with the same
-     * source having different licences. E.g. in Alpine, musl and musl-utils both
-     * have the same origin musl, but have different sets of licenses.
-     *
-     * @var string[]
-     */
-    public $licenses;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * The licenses associated with this package. Note that this has to go on the
-     * PackageVersion level, because we can have cases with images with the same
-     * source having different licences. E.g. in Alpine, musl and musl-utils both
-     * have the same origin musl, but have different sets of licenses.
-     *
-     * @param string[] $licenses
-     */
-    public function setLicenses($licenses)
+namespace Google\Service\OnDemandScanning {
+    class PackageVersion extends \Google\Collection
     {
+        protected $collection_key = 'licenses';
+        /**
+         * The licenses associated with this package. Note that this has to go on the
+         * PackageVersion level, because we can have cases with images with the same
+         * source having different licences. E.g. in Alpine, musl and musl-utils both
+         * have the same origin musl, but have different sets of licenses.
+         *
+         * @var string[]
+         */
+        public $licenses;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * The licenses associated with this package. Note that this has to go on the
+         * PackageVersion level, because we can have cases with images with the same
+         * source having different licences. E.g. in Alpine, musl and musl-utils both
+         * have the same origin musl, but have different sets of licenses.
+         *
+         * @param string[] $licenses
+         */
+        public function setLicenses($licenses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLicenses()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\PackageVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLicenses()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OnDemandScanning_PackageVersion extends \Google\Service\OnDemandScanning\PackageVersion
     {
     }
 }

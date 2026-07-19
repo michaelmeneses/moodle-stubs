@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class AdaptiveMtTranslateResponse extends \Google\Collection
-{
-    protected $collection_key = 'translations';
-    protected $glossaryTranslationsType = AdaptiveMtTranslation::class;
-    protected $glossaryTranslationsDataType = 'array';
-    /**
-     * Output only. The translation's language code.
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $translationsType = AdaptiveMtTranslation::class;
-    protected $translationsDataType = 'array';
-    /**
-     * Text translation response if a glossary is provided in the request. This
-     * could be the same as 'translation' above if no terms apply.
-     *
-     * @param AdaptiveMtTranslation[] $glossaryTranslations
-     */
-    public function setGlossaryTranslations($glossaryTranslations)
+namespace Google\Service\Translate {
+    class AdaptiveMtTranslateResponse extends \Google\Collection
     {
+        protected $collection_key = 'translations';
+        protected $glossaryTranslationsType = AdaptiveMtTranslation::class;
+        protected $glossaryTranslationsDataType = 'array';
+        /**
+         * Output only. The translation's language code.
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $translationsType = AdaptiveMtTranslation::class;
+        protected $translationsDataType = 'array';
+        /**
+         * Text translation response if a glossary is provided in the request. This
+         * could be the same as 'translation' above if no terms apply.
+         *
+         * @param AdaptiveMtTranslation[] $glossaryTranslations
+         */
+        public function setGlossaryTranslations($glossaryTranslations)
+        {
+        }
+        /**
+         * @return AdaptiveMtTranslation[]
+         */
+        public function getGlossaryTranslations()
+        {
+        }
+        /**
+         * Output only. The translation's language code.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Output only. The translation.
+         *
+         * @param AdaptiveMtTranslation[] $translations
+         */
+        public function setTranslations($translations)
+        {
+        }
+        /**
+         * @return AdaptiveMtTranslation[]
+         */
+        public function getTranslations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptiveMtTranslation[]
+     * Runtime class alias of \Google\Service\Translate\AdaptiveMtTranslateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGlossaryTranslations()
-    {
-    }
-    /**
-     * Output only. The translation's language code.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Output only. The translation.
-     *
-     * @param AdaptiveMtTranslation[] $translations
-     */
-    public function setTranslations($translations)
-    {
-    }
-    /**
-     * @return AdaptiveMtTranslation[]
-     */
-    public function getTranslations()
+    class Google_Service_Translate_AdaptiveMtTranslateResponse extends \Google\Service\Translate\AdaptiveMtTranslateResponse
     {
     }
 }

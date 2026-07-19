@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectApplicationAwareInterconnectBandwidthPercentage extends \Google\Model
-{
-    /**
-     * Traffic Class 1, corresponding to DSCP ranges (0-7) 000xxx.
-     */
-    public const TRAFFIC_CLASS_TC1 = 'TC1';
-    /**
-     * Traffic Class 2, corresponding to DSCP ranges (8-15) 001xxx.
-     */
-    public const TRAFFIC_CLASS_TC2 = 'TC2';
-    /**
-     * Traffic Class 3, corresponding to DSCP ranges (16-23) 010xxx.
-     */
-    public const TRAFFIC_CLASS_TC3 = 'TC3';
-    /**
-     * Traffic Class 4, corresponding to DSCP ranges (24-31) 011xxx.
-     */
-    public const TRAFFIC_CLASS_TC4 = 'TC4';
-    /**
-     * Traffic Class 5, corresponding to DSCP ranges (32-47) 10xxxx.
-     */
-    public const TRAFFIC_CLASS_TC5 = 'TC5';
-    /**
-     * Traffic Class 6, corresponding to DSCP ranges (48-63) 11xxxx.
-     */
-    public const TRAFFIC_CLASS_TC6 = 'TC6';
-    /**
-     * Bandwidth percentage for a specific traffic class.
-     *
-     * @var string
-     */
-    public $percentage;
-    /**
-     * TrafficClass whose bandwidth percentage is being specified.
-     *
-     * @var string
-     */
-    public $trafficClass;
-    /**
-     * Bandwidth percentage for a specific traffic class.
-     *
-     * @param string $percentage
-     */
-    public function setPercentage($percentage)
+namespace Google\Service\Compute {
+    class InterconnectApplicationAwareInterconnectBandwidthPercentage extends \Google\Model
     {
+        /**
+         * Traffic Class 1, corresponding to DSCP ranges (0-7) 000xxx.
+         */
+        public const TRAFFIC_CLASS_TC1 = 'TC1';
+        /**
+         * Traffic Class 2, corresponding to DSCP ranges (8-15) 001xxx.
+         */
+        public const TRAFFIC_CLASS_TC2 = 'TC2';
+        /**
+         * Traffic Class 3, corresponding to DSCP ranges (16-23) 010xxx.
+         */
+        public const TRAFFIC_CLASS_TC3 = 'TC3';
+        /**
+         * Traffic Class 4, corresponding to DSCP ranges (24-31) 011xxx.
+         */
+        public const TRAFFIC_CLASS_TC4 = 'TC4';
+        /**
+         * Traffic Class 5, corresponding to DSCP ranges (32-47) 10xxxx.
+         */
+        public const TRAFFIC_CLASS_TC5 = 'TC5';
+        /**
+         * Traffic Class 6, corresponding to DSCP ranges (48-63) 11xxxx.
+         */
+        public const TRAFFIC_CLASS_TC6 = 'TC6';
+        /**
+         * Bandwidth percentage for a specific traffic class.
+         *
+         * @var string
+         */
+        public $percentage;
+        /**
+         * TrafficClass whose bandwidth percentage is being specified.
+         *
+         * @var string
+         */
+        public $trafficClass;
+        /**
+         * Bandwidth percentage for a specific traffic class.
+         *
+         * @param string $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPercentage()
+        {
+        }
+        /**
+         * TrafficClass whose bandwidth percentage is being specified.
+         *
+         * Accepted values: TC1, TC2, TC3, TC4, TC5, TC6
+         *
+         * @param self::TRAFFIC_CLASS_* $trafficClass
+         */
+        public function setTrafficClass($trafficClass)
+        {
+        }
+        /**
+         * @return self::TRAFFIC_CLASS_*
+         */
+        public function getTrafficClass()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectApplicationAwareInterconnectBandwidthPercentage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentage()
-    {
-    }
-    /**
-     * TrafficClass whose bandwidth percentage is being specified.
-     *
-     * Accepted values: TC1, TC2, TC3, TC4, TC5, TC6
-     *
-     * @param self::TRAFFIC_CLASS_* $trafficClass
-     */
-    public function setTrafficClass($trafficClass)
-    {
-    }
-    /**
-     * @return self::TRAFFIC_CLASS_*
-     */
-    public function getTrafficClass()
+    class Google_Service_Compute_InterconnectApplicationAwareInterconnectBandwidthPercentage extends \Google\Service\Compute\InterconnectApplicationAwareInterconnectBandwidthPercentage
     {
     }
 }

@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class RollbackFhirResourcesRequest extends \Google\Collection
-{
-    /**
-     * When unspecified, revert all transactions
-     */
-    public const CHANGE_TYPE_CHANGE_TYPE_UNSPECIFIED = 'CHANGE_TYPE_UNSPECIFIED';
-    /**
-     * All transactions
-     */
-    public const CHANGE_TYPE_ALL = 'ALL';
-    /**
-     * Revert only CREATE transactions
-     */
-    public const CHANGE_TYPE_CREATE = 'CREATE';
-    /**
-     * Revert only Update transactions
-     */
-    public const CHANGE_TYPE_UPDATE = 'UPDATE';
-    /**
-     * Revert only Delete transactions
-     */
-    public const CHANGE_TYPE_DELETE = 'DELETE';
-    protected $collection_key = 'type';
-    /**
-     * Optional. CREATE/UPDATE/DELETE/ALL for reverting all txns of a certain
-     * type.
-     *
-     * @var string
-     */
-    public $changeType;
-    /**
-     * Optional. Specifies whether to exclude earlier rollbacks.
-     *
-     * @var bool
-     */
-    public $excludeRollbacks;
-    protected $filteringFieldsType = RollbackFhirResourceFilteringFields::class;
-    protected $filteringFieldsDataType = '';
-    /**
-     * Optional. When enabled, changes will be reverted without explicit
-     * confirmation
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Optional. Cloud Storage object containing list of
-     * {resourceType}/{resourceId} lines, identifying resources to be reverted
-     *
-     * @var string
-     */
-    public $inputGcsObject;
-    /**
-     * Required. Bucket to deposit result
-     *
-     * @var string
-     */
-    public $resultGcsBucket;
-    /**
-     * Required. Time point to rollback to.
-     *
-     * @var string
-     */
-    public $rollbackTime;
-    /**
-     * Optional. If specified, revert only resources of these types
-     *
-     * @var string[]
-     */
-    public $type;
-    /**
-     * Optional. CREATE/UPDATE/DELETE/ALL for reverting all txns of a certain
-     * type.
-     *
-     * Accepted values: CHANGE_TYPE_UNSPECIFIED, ALL, CREATE, UPDATE, DELETE
-     *
-     * @param self::CHANGE_TYPE_* $changeType
-     */
-    public function setChangeType($changeType)
+namespace Google\Service\CloudHealthcare {
+    class RollbackFhirResourcesRequest extends \Google\Collection
     {
+        /**
+         * When unspecified, revert all transactions
+         */
+        public const CHANGE_TYPE_CHANGE_TYPE_UNSPECIFIED = 'CHANGE_TYPE_UNSPECIFIED';
+        /**
+         * All transactions
+         */
+        public const CHANGE_TYPE_ALL = 'ALL';
+        /**
+         * Revert only CREATE transactions
+         */
+        public const CHANGE_TYPE_CREATE = 'CREATE';
+        /**
+         * Revert only Update transactions
+         */
+        public const CHANGE_TYPE_UPDATE = 'UPDATE';
+        /**
+         * Revert only Delete transactions
+         */
+        public const CHANGE_TYPE_DELETE = 'DELETE';
+        protected $collection_key = 'type';
+        /**
+         * Optional. CREATE/UPDATE/DELETE/ALL for reverting all txns of a certain
+         * type.
+         *
+         * @var string
+         */
+        public $changeType;
+        /**
+         * Optional. Specifies whether to exclude earlier rollbacks.
+         *
+         * @var bool
+         */
+        public $excludeRollbacks;
+        protected $filteringFieldsType = RollbackFhirResourceFilteringFields::class;
+        protected $filteringFieldsDataType = '';
+        /**
+         * Optional. When enabled, changes will be reverted without explicit
+         * confirmation
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Optional. Cloud Storage object containing list of
+         * {resourceType}/{resourceId} lines, identifying resources to be reverted
+         *
+         * @var string
+         */
+        public $inputGcsObject;
+        /**
+         * Required. Bucket to deposit result
+         *
+         * @var string
+         */
+        public $resultGcsBucket;
+        /**
+         * Required. Time point to rollback to.
+         *
+         * @var string
+         */
+        public $rollbackTime;
+        /**
+         * Optional. If specified, revert only resources of these types
+         *
+         * @var string[]
+         */
+        public $type;
+        /**
+         * Optional. CREATE/UPDATE/DELETE/ALL for reverting all txns of a certain
+         * type.
+         *
+         * Accepted values: CHANGE_TYPE_UNSPECIFIED, ALL, CREATE, UPDATE, DELETE
+         *
+         * @param self::CHANGE_TYPE_* $changeType
+         */
+        public function setChangeType($changeType)
+        {
+        }
+        /**
+         * @return self::CHANGE_TYPE_*
+         */
+        public function getChangeType()
+        {
+        }
+        /**
+         * Optional. Specifies whether to exclude earlier rollbacks.
+         *
+         * @param bool $excludeRollbacks
+         */
+        public function setExcludeRollbacks($excludeRollbacks)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExcludeRollbacks()
+        {
+        }
+        /**
+         * Optional. Parameters for filtering resources
+         *
+         * @param RollbackFhirResourceFilteringFields $filteringFields
+         */
+        public function setFilteringFields(RollbackFhirResourceFilteringFields $filteringFields)
+        {
+        }
+        /**
+         * @return RollbackFhirResourceFilteringFields
+         */
+        public function getFilteringFields()
+        {
+        }
+        /**
+         * Optional. When enabled, changes will be reverted without explicit
+         * confirmation
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Optional. Cloud Storage object containing list of
+         * {resourceType}/{resourceId} lines, identifying resources to be reverted
+         *
+         * @param string $inputGcsObject
+         */
+        public function setInputGcsObject($inputGcsObject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputGcsObject()
+        {
+        }
+        /**
+         * Required. Bucket to deposit result
+         *
+         * @param string $resultGcsBucket
+         */
+        public function setResultGcsBucket($resultGcsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultGcsBucket()
+        {
+        }
+        /**
+         * Required. Time point to rollback to.
+         *
+         * @param string $rollbackTime
+         */
+        public function setRollbackTime($rollbackTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRollbackTime()
+        {
+        }
+        /**
+         * Optional. If specified, revert only resources of these types
+         *
+         * @param string[] $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANGE_TYPE_*
+     * Runtime class alias of \Google\Service\CloudHealthcare\RollbackFhirResourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeType()
-    {
-    }
-    /**
-     * Optional. Specifies whether to exclude earlier rollbacks.
-     *
-     * @param bool $excludeRollbacks
-     */
-    public function setExcludeRollbacks($excludeRollbacks)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExcludeRollbacks()
-    {
-    }
-    /**
-     * Optional. Parameters for filtering resources
-     *
-     * @param RollbackFhirResourceFilteringFields $filteringFields
-     */
-    public function setFilteringFields(RollbackFhirResourceFilteringFields $filteringFields)
-    {
-    }
-    /**
-     * @return RollbackFhirResourceFilteringFields
-     */
-    public function getFilteringFields()
-    {
-    }
-    /**
-     * Optional. When enabled, changes will be reverted without explicit
-     * confirmation
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * Optional. Cloud Storage object containing list of
-     * {resourceType}/{resourceId} lines, identifying resources to be reverted
-     *
-     * @param string $inputGcsObject
-     */
-    public function setInputGcsObject($inputGcsObject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputGcsObject()
-    {
-    }
-    /**
-     * Required. Bucket to deposit result
-     *
-     * @param string $resultGcsBucket
-     */
-    public function setResultGcsBucket($resultGcsBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultGcsBucket()
-    {
-    }
-    /**
-     * Required. Time point to rollback to.
-     *
-     * @param string $rollbackTime
-     */
-    public function setRollbackTime($rollbackTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRollbackTime()
-    {
-    }
-    /**
-     * Optional. If specified, revert only resources of these types
-     *
-     * @param string[] $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getType()
+    class Google_Service_CloudHealthcare_RollbackFhirResourcesRequest extends \Google\Service\CloudHealthcare\RollbackFhirResourcesRequest
     {
     }
 }

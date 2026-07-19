@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaUpdateSessionRequest extends \Google\Model
-{
-    protected $sessionType = GoogleCloudDiscoveryengineV1alphaSession::class;
-    protected $sessionDataType = '';
-    /**
-     * Indicates which fields in the provided Session to update. The following are
-     * NOT supported: * Session.name If not set or empty, all supported fields are
-     * updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The Session to update.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaSession $session
-     */
-    public function setSession(GoogleCloudDiscoveryengineV1alphaSession $session)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaUpdateSessionRequest extends \Google\Model
     {
+        protected $sessionType = GoogleCloudDiscoveryengineV1alphaSession::class;
+        protected $sessionDataType = '';
+        /**
+         * Indicates which fields in the provided Session to update. The following are
+         * NOT supported: * Session.name If not set or empty, all supported fields are
+         * updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The Session to update.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaSession $session
+         */
+        public function setSession(GoogleCloudDiscoveryengineV1alphaSession $session)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaSession
+         */
+        public function getSession()
+        {
+        }
+        /**
+         * Indicates which fields in the provided Session to update. The following are
+         * NOT supported: * Session.name If not set or empty, all supported fields are
+         * updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaSession
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaUpdateSessionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSession()
-    {
-    }
-    /**
-     * Indicates which fields in the provided Session to update. The following are
-     * NOT supported: * Session.name If not set or empty, all supported fields are
-     * updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaUpdateSessionRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaUpdateSessionRequest
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OperatingSystem extends \Google\Model
-{
-    /**
-     * DART ID of this operating system. This is the ID used for targeting.
-     *
-     * @var string
-     */
-    public $dartId;
-    /**
-     * Whether this operating system is for desktop.
-     *
-     * @var bool
-     */
-    public $desktop;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#operatingSystem".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Whether this operating system is for mobile.
-     *
-     * @var bool
-     */
-    public $mobile;
-    /**
-     * Name of this operating system.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * DART ID of this operating system. This is the ID used for targeting.
-     *
-     * @param string $dartId
-     */
-    public function setDartId($dartId)
+namespace Google\Service\Dfareporting {
+    class OperatingSystem extends \Google\Model
     {
+        /**
+         * DART ID of this operating system. This is the ID used for targeting.
+         *
+         * @var string
+         */
+        public $dartId;
+        /**
+         * Whether this operating system is for desktop.
+         *
+         * @var bool
+         */
+        public $desktop;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#operatingSystem".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Whether this operating system is for mobile.
+         *
+         * @var bool
+         */
+        public $mobile;
+        /**
+         * Name of this operating system.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * DART ID of this operating system. This is the ID used for targeting.
+         *
+         * @param string $dartId
+         */
+        public function setDartId($dartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDartId()
+        {
+        }
+        /**
+         * Whether this operating system is for desktop.
+         *
+         * @param bool $desktop
+         */
+        public function setDesktop($desktop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDesktop()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#operatingSystem".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Whether this operating system is for mobile.
+         *
+         * @param bool $mobile
+         */
+        public function setMobile($mobile)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMobile()
+        {
+        }
+        /**
+         * Name of this operating system.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OperatingSystem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDartId()
-    {
-    }
-    /**
-     * Whether this operating system is for desktop.
-     *
-     * @param bool $desktop
-     */
-    public function setDesktop($desktop)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDesktop()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#operatingSystem".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Whether this operating system is for mobile.
-     *
-     * @param bool $mobile
-     */
-    public function setMobile($mobile)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMobile()
-    {
-    }
-    /**
-     * Name of this operating system.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_OperatingSystem extends \Google\Service\Dfareporting\OperatingSystem
     {
     }
 }

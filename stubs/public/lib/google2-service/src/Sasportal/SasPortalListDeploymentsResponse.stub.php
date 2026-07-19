@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalListDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployments';
-    protected $deploymentsType = SasPortalDeployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to ListDeployments that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there are no more deployments.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The deployments that match the request.
-     *
-     * @param SasPortalDeployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\Sasportal {
+    class SasPortalListDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployments';
+        protected $deploymentsType = SasPortalDeployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to ListDeployments that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there are no more deployments.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The deployments that match the request.
+         *
+         * @param SasPortalDeployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return SasPortalDeployment[]
+         */
+        public function getDeployments()
+        {
+        }
+        /**
+         * A pagination token returned from a previous call to ListDeployments that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there are no more deployments.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalDeployment[]
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalListDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
-    {
-    }
-    /**
-     * A pagination token returned from a previous call to ListDeployments that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there are no more deployments.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Sasportal_SasPortalListDeploymentsResponse extends \Google\Service\Sasportal\SasPortalListDeploymentsResponse
     {
     }
 }

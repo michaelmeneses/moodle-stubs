@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class GcsData extends \Google\Model
-{
-    /**
-     * Required. Cloud Storage bucket name. Must meet [Bucket Name
-     * Requirements](/storage/docs/naming#requirements).
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * Preview. Enables the transfer of managed folders between Cloud Storage
-     * buckets. Set this option on the gcs_data_source. If set to true: - Managed
-     * folders in the source bucket are transferred to the destination bucket. -
-     * Managed folders in the destination bucket are overwritten. Other OVERWRITE
-     * options are not supported. See [Transfer Cloud Storage managed
-     * folders](/storage-transfer/docs/managed-folders).
-     *
-     * @var bool
-     */
-    public $managedFolderTransferEnabled;
-    /**
-     * Root path to transfer objects. Must be an empty string or full path name
-     * that ends with a '/'. This field is treated as an object prefix. As such,
-     * it should generally not begin with a '/'. The root path value must meet
-     * [Object Name Requirements](/storage/docs/naming#objectnames).
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. Cloud Storage bucket name. Must meet [Bucket Name
-     * Requirements](/storage/docs/naming#requirements).
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Storagetransfer {
+    class GcsData extends \Google\Model
     {
+        /**
+         * Required. Cloud Storage bucket name. Must meet [Bucket Name
+         * Requirements](/storage/docs/naming#requirements).
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * Preview. Enables the transfer of managed folders between Cloud Storage
+         * buckets. Set this option on the gcs_data_source. If set to true: - Managed
+         * folders in the source bucket are transferred to the destination bucket. -
+         * Managed folders in the destination bucket are overwritten. Other OVERWRITE
+         * options are not supported. See [Transfer Cloud Storage managed
+         * folders](/storage-transfer/docs/managed-folders).
+         *
+         * @var bool
+         */
+        public $managedFolderTransferEnabled;
+        /**
+         * Root path to transfer objects. Must be an empty string or full path name
+         * that ends with a '/'. This field is treated as an object prefix. As such,
+         * it should generally not begin with a '/'. The root path value must meet
+         * [Object Name Requirements](/storage/docs/naming#objectnames).
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. Cloud Storage bucket name. Must meet [Bucket Name
+         * Requirements](/storage/docs/naming#requirements).
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * Preview. Enables the transfer of managed folders between Cloud Storage
+         * buckets. Set this option on the gcs_data_source. If set to true: - Managed
+         * folders in the source bucket are transferred to the destination bucket. -
+         * Managed folders in the destination bucket are overwritten. Other OVERWRITE
+         * options are not supported. See [Transfer Cloud Storage managed
+         * folders](/storage-transfer/docs/managed-folders).
+         *
+         * @param bool $managedFolderTransferEnabled
+         */
+        public function setManagedFolderTransferEnabled($managedFolderTransferEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getManagedFolderTransferEnabled()
+        {
+        }
+        /**
+         * Root path to transfer objects. Must be an empty string or full path name
+         * that ends with a '/'. This field is treated as an object prefix. As such,
+         * it should generally not begin with a '/'. The root path value must meet
+         * [Object Name Requirements](/storage/docs/naming#objectnames).
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\GcsData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * Preview. Enables the transfer of managed folders between Cloud Storage
-     * buckets. Set this option on the gcs_data_source. If set to true: - Managed
-     * folders in the source bucket are transferred to the destination bucket. -
-     * Managed folders in the destination bucket are overwritten. Other OVERWRITE
-     * options are not supported. See [Transfer Cloud Storage managed
-     * folders](/storage-transfer/docs/managed-folders).
-     *
-     * @param bool $managedFolderTransferEnabled
-     */
-    public function setManagedFolderTransferEnabled($managedFolderTransferEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getManagedFolderTransferEnabled()
-    {
-    }
-    /**
-     * Root path to transfer objects. Must be an empty string or full path name
-     * that ends with a '/'. This field is treated as an object prefix. As such,
-     * it should generally not begin with a '/'. The root path value must meet
-     * [Object Name Requirements](/storage/docs/naming#objectnames).
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Storagetransfer_GcsData extends \Google\Service\Storagetransfer\GcsData
     {
     }
 }

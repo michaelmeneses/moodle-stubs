@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RoomUpdatedMetadata extends \Google\Model
-{
-    protected $groupDetailsMetadataType = GroupDetailsUpdatedMetadata::class;
-    protected $groupDetailsMetadataDataType = '';
-    /**
-     * @var bool
-     */
-    public $groupLinkSharingEnabled;
-    protected $initiatorDataType = '';
-    /**
-     * @var string
-     */
-    public $initiatorType;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $renameMetadataType = RoomRenameMetadata::class;
-    protected $renameMetadataDataType = '';
-    protected $visibilityType = AppsDynamiteSharedGroupVisibility::class;
-    protected $visibilityDataType = '';
-    /**
-     * @param GroupDetailsUpdatedMetadata
-     */
-    public function setGroupDetailsMetadata(GroupDetailsUpdatedMetadata $groupDetailsMetadata)
+namespace Google\Service\CloudSearch {
+    class RoomUpdatedMetadata extends \Google\Model
     {
+        protected $groupDetailsMetadataType = GroupDetailsUpdatedMetadata::class;
+        protected $groupDetailsMetadataDataType = '';
+        /**
+         * @var bool
+         */
+        public $groupLinkSharingEnabled;
+        protected $initiatorDataType = '';
+        /**
+         * @var string
+         */
+        public $initiatorType;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $renameMetadataType = RoomRenameMetadata::class;
+        protected $renameMetadataDataType = '';
+        protected $visibilityType = AppsDynamiteSharedGroupVisibility::class;
+        protected $visibilityDataType = '';
+        /**
+         * @param GroupDetailsUpdatedMetadata
+         */
+        public function setGroupDetailsMetadata(GroupDetailsUpdatedMetadata $groupDetailsMetadata)
+        {
+        }
+        /**
+         * @return GroupDetailsUpdatedMetadata
+         */
+        public function getGroupDetailsMetadata()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setGroupLinkSharingEnabled($groupLinkSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGroupLinkSharingEnabled()
+        {
+        }
+        /**
+         * @param User
+         */
+        public function setInitiator(User $initiator)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInitiatorType($initiatorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitiatorType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param RoomRenameMetadata
+         */
+        public function setRenameMetadata(RoomRenameMetadata $renameMetadata)
+        {
+        }
+        /**
+         * @return RoomRenameMetadata
+         */
+        public function getRenameMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedGroupVisibility
+         */
+        public function setVisibility(AppsDynamiteSharedGroupVisibility $visibility)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedGroupVisibility
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupDetailsUpdatedMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\RoomUpdatedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupDetailsMetadata()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setGroupLinkSharingEnabled($groupLinkSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGroupLinkSharingEnabled()
-    {
-    }
-    /**
-     * @param User
-     */
-    public function setInitiator(User $initiator)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInitiatorType($initiatorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitiatorType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param RoomRenameMetadata
-     */
-    public function setRenameMetadata(RoomRenameMetadata $renameMetadata)
-    {
-    }
-    /**
-     * @return RoomRenameMetadata
-     */
-    public function getRenameMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedGroupVisibility
-     */
-    public function setVisibility(AppsDynamiteSharedGroupVisibility $visibility)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedGroupVisibility
-     */
-    public function getVisibility()
+    class Google_Service_CloudSearch_RoomUpdatedMetadata extends \Google\Service\CloudSearch\RoomUpdatedMetadata
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class RepoId extends \Google\Model
-{
-    protected $projectRepoIdType = ProjectRepoId::class;
-    protected $projectRepoIdDataType = '';
-    /**
-     * A server-assigned, globally unique identifier.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * A combination of a project ID and a repo name.
-     *
-     * @param ProjectRepoId $projectRepoId
-     */
-    public function setProjectRepoId(ProjectRepoId $projectRepoId)
+namespace Google\Service\ContainerAnalysis {
+    class RepoId extends \Google\Model
     {
+        protected $projectRepoIdType = ProjectRepoId::class;
+        protected $projectRepoIdDataType = '';
+        /**
+         * A server-assigned, globally unique identifier.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * A combination of a project ID and a repo name.
+         *
+         * @param ProjectRepoId $projectRepoId
+         */
+        public function setProjectRepoId(ProjectRepoId $projectRepoId)
+        {
+        }
+        /**
+         * @return ProjectRepoId
+         */
+        public function getProjectRepoId()
+        {
+        }
+        /**
+         * A server-assigned, globally unique identifier.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProjectRepoId
+     * Runtime class alias of \Google\Service\ContainerAnalysis\RepoId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectRepoId()
-    {
-    }
-    /**
-     * A server-assigned, globally unique identifier.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_ContainerAnalysis_RepoId extends \Google\Service\ContainerAnalysis\RepoId
     {
     }
 }

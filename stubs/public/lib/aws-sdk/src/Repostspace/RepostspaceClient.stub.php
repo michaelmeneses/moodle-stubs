@@ -8,6 +8,7 @@
  */
 namespace Aws\Repostspace;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS re:Post Private** service.
  * @method \Aws\Result batchAddChannelRoleToAccessors(array $args = [])

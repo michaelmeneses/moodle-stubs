@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Common\Entity\Style;
 
+use OpenSpout\Common\Exception\InvalidArgumentException;
 /**
  * Represents a style to be applied to a cell.
  */

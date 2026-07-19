@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class FreeBusyResponse extends \Google\Model
-{
-    protected $calendarsType = FreeBusyCalendar::class;
-    protected $calendarsDataType = 'map';
-    protected $groupsType = FreeBusyGroup::class;
-    protected $groupsDataType = 'map';
-    /**
-     * Type of the resource ("calendar#freeBusy").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The end of the interval.
-     *
-     * @var string
-     */
-    public $timeMax;
-    /**
-     * The start of the interval.
-     *
-     * @var string
-     */
-    public $timeMin;
-    /**
-     * List of free/busy information for calendars.
-     *
-     * @param FreeBusyCalendar[] $calendars
-     */
-    public function setCalendars($calendars)
+namespace Google\Service\Calendar {
+    class FreeBusyResponse extends \Google\Model
     {
+        protected $calendarsType = FreeBusyCalendar::class;
+        protected $calendarsDataType = 'map';
+        protected $groupsType = FreeBusyGroup::class;
+        protected $groupsDataType = 'map';
+        /**
+         * Type of the resource ("calendar#freeBusy").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The end of the interval.
+         *
+         * @var string
+         */
+        public $timeMax;
+        /**
+         * The start of the interval.
+         *
+         * @var string
+         */
+        public $timeMin;
+        /**
+         * List of free/busy information for calendars.
+         *
+         * @param FreeBusyCalendar[] $calendars
+         */
+        public function setCalendars($calendars)
+        {
+        }
+        /**
+         * @return FreeBusyCalendar[]
+         */
+        public function getCalendars()
+        {
+        }
+        /**
+         * Expansion of groups.
+         *
+         * @param FreeBusyGroup[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return FreeBusyGroup[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * Type of the resource ("calendar#freeBusy").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The end of the interval.
+         *
+         * @param string $timeMax
+         */
+        public function setTimeMax($timeMax)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeMax()
+        {
+        }
+        /**
+         * The start of the interval.
+         *
+         * @param string $timeMin
+         */
+        public function setTimeMin($timeMin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FreeBusyCalendar[]
+     * Runtime class alias of \Google\Service\Calendar\FreeBusyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendars()
-    {
-    }
-    /**
-     * Expansion of groups.
-     *
-     * @param FreeBusyGroup[] $groups
-     */
-    public function setGroups($groups)
-    {
-    }
-    /**
-     * @return FreeBusyGroup[]
-     */
-    public function getGroups()
-    {
-    }
-    /**
-     * Type of the resource ("calendar#freeBusy").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The end of the interval.
-     *
-     * @param string $timeMax
-     */
-    public function setTimeMax($timeMax)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeMax()
-    {
-    }
-    /**
-     * The start of the interval.
-     *
-     * @param string $timeMin
-     */
-    public function setTimeMin($timeMin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeMin()
+    class Google_Service_Calendar_FreeBusyResponse extends \Google\Service\Calendar\FreeBusyResponse
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class SaveSnapshotResponse extends \Google\Model
-{
-    /**
-     * The fully-resolved Cloud Storage path of the created snapshot, e.g.:
-     * "gs://my-bucket/snapshots/project_location_environment_timestamp". This
-     * field is populated only if the snapshot creation was successful.
-     *
-     * @var string
-     */
-    public $snapshotPath;
-    /**
-     * The fully-resolved Cloud Storage path of the created snapshot, e.g.:
-     * "gs://my-bucket/snapshots/project_location_environment_timestamp". This
-     * field is populated only if the snapshot creation was successful.
-     *
-     * @param string $snapshotPath
-     */
-    public function setSnapshotPath($snapshotPath)
+namespace Google\Service\CloudComposer {
+    class SaveSnapshotResponse extends \Google\Model
     {
+        /**
+         * The fully-resolved Cloud Storage path of the created snapshot, e.g.:
+         * "gs://my-bucket/snapshots/project_location_environment_timestamp". This
+         * field is populated only if the snapshot creation was successful.
+         *
+         * @var string
+         */
+        public $snapshotPath;
+        /**
+         * The fully-resolved Cloud Storage path of the created snapshot, e.g.:
+         * "gs://my-bucket/snapshots/project_location_environment_timestamp". This
+         * field is populated only if the snapshot creation was successful.
+         *
+         * @param string $snapshotPath
+         */
+        public function setSnapshotPath($snapshotPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\SaveSnapshotResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshotPath()
+    class Google_Service_CloudComposer_SaveSnapshotResponse extends \Google\Service\CloudComposer\SaveSnapshotResponse
     {
     }
 }

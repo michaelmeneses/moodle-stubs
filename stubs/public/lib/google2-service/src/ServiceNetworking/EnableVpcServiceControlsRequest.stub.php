@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class EnableVpcServiceControlsRequest extends \Google\Model
-{
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is a project number, as in '12345' {network} is network name.
-     *
-     * @var string
-     */
-    public $consumerNetwork;
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is a project number, as in '12345' {network} is network name.
-     *
-     * @param string $consumerNetwork
-     */
-    public function setConsumerNetwork($consumerNetwork)
+namespace Google\Service\ServiceNetworking {
+    class EnableVpcServiceControlsRequest extends \Google\Model
     {
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is a project number, as in '12345' {network} is network name.
+         *
+         * @var string
+         */
+        public $consumerNetwork;
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is a project number, as in '12345' {network} is network name.
+         *
+         * @param string $consumerNetwork
+         */
+        public function setConsumerNetwork($consumerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\EnableVpcServiceControlsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerNetwork()
+    class Google_Service_ServiceNetworking_EnableVpcServiceControlsRequest extends \Google\Service\ServiceNetworking\EnableVpcServiceControlsRequest
     {
     }
 }

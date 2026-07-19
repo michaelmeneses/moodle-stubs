@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class SkewSource extends \Google\Model
-{
-    /**
-     * Output only. Stage id of the skew source stage.
-     *
-     * @var string
-     */
-    public $stageId;
-    /**
-     * Output only. Stage id of the skew source stage.
-     *
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
+namespace Google\Service\Bigquery {
+    class SkewSource extends \Google\Model
     {
+        /**
+         * Output only. Stage id of the skew source stage.
+         *
+         * @var string
+         */
+        public $stageId;
+        /**
+         * Output only. Stage id of the skew source stage.
+         *
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\SkewSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStageId()
+    class Google_Service_Bigquery_SkewSource extends \Google\Service\Bigquery\SkewSource
     {
     }
 }

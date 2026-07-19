@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ProductMatchDimension extends \Google\Model
-{
-    protected $customLabelType = CustomLabel::class;
-    protected $customLabelDataType = '';
-    /**
-     * The ID of the product offer to match with a product with the same offer ID.
-     *
-     * @var string
-     */
-    public $productOfferId;
-    /**
-     * The custom label to match all the products with the label.
-     *
-     * @param CustomLabel $customLabel
-     */
-    public function setCustomLabel(CustomLabel $customLabel)
+namespace Google\Service\DisplayVideo {
+    class ProductMatchDimension extends \Google\Model
     {
+        protected $customLabelType = CustomLabel::class;
+        protected $customLabelDataType = '';
+        /**
+         * The ID of the product offer to match with a product with the same offer ID.
+         *
+         * @var string
+         */
+        public $productOfferId;
+        /**
+         * The custom label to match all the products with the label.
+         *
+         * @param CustomLabel $customLabel
+         */
+        public function setCustomLabel(CustomLabel $customLabel)
+        {
+        }
+        /**
+         * @return CustomLabel
+         */
+        public function getCustomLabel()
+        {
+        }
+        /**
+         * The ID of the product offer to match with a product with the same offer ID.
+         *
+         * @param string $productOfferId
+         */
+        public function setProductOfferId($productOfferId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductOfferId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomLabel
+     * Runtime class alias of \Google\Service\DisplayVideo\ProductMatchDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomLabel()
-    {
-    }
-    /**
-     * The ID of the product offer to match with a product with the same offer ID.
-     *
-     * @param string $productOfferId
-     */
-    public function setProductOfferId($productOfferId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductOfferId()
+    class Google_Service_DisplayVideo_ProductMatchDimension extends \Google\Service\DisplayVideo\ProductMatchDimension
     {
     }
 }

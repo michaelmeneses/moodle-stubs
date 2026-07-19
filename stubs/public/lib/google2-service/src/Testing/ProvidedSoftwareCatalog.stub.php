@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ProvidedSoftwareCatalog extends \Google\Model
-{
-    /**
-     * A string representing the current version of AndroidX Test Orchestrator
-     * that is used in the environment. The package is available at
-     * https://maven.google.com/web/index.html#androidx.test:orchestrator.
-     *
-     * @var string
-     */
-    public $androidxOrchestratorVersion;
-    /**
-     * Deprecated: Use AndroidX Test Orchestrator going forward. A string
-     * representing the current version of Android Test Orchestrator that is used
-     * in the environment. The package is available at https://maven.google.com/we
-     * b/index.html#com.android.support.test:orchestrator.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $orchestratorVersion;
-    /**
-     * A string representing the current version of AndroidX Test Orchestrator
-     * that is used in the environment. The package is available at
-     * https://maven.google.com/web/index.html#androidx.test:orchestrator.
-     *
-     * @param string $androidxOrchestratorVersion
-     */
-    public function setAndroidxOrchestratorVersion($androidxOrchestratorVersion)
+namespace Google\Service\Testing {
+    class ProvidedSoftwareCatalog extends \Google\Model
     {
+        /**
+         * A string representing the current version of AndroidX Test Orchestrator
+         * that is used in the environment. The package is available at
+         * https://maven.google.com/web/index.html#androidx.test:orchestrator.
+         *
+         * @var string
+         */
+        public $androidxOrchestratorVersion;
+        /**
+         * Deprecated: Use AndroidX Test Orchestrator going forward. A string
+         * representing the current version of Android Test Orchestrator that is used
+         * in the environment. The package is available at https://maven.google.com/we
+         * b/index.html#com.android.support.test:orchestrator.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $orchestratorVersion;
+        /**
+         * A string representing the current version of AndroidX Test Orchestrator
+         * that is used in the environment. The package is available at
+         * https://maven.google.com/web/index.html#androidx.test:orchestrator.
+         *
+         * @param string $androidxOrchestratorVersion
+         */
+        public function setAndroidxOrchestratorVersion($androidxOrchestratorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidxOrchestratorVersion()
+        {
+        }
+        /**
+         * Deprecated: Use AndroidX Test Orchestrator going forward. A string
+         * representing the current version of Android Test Orchestrator that is used
+         * in the environment. The package is available at https://maven.google.com/we
+         * b/index.html#com.android.support.test:orchestrator.
+         *
+         * @deprecated
+         * @param string $orchestratorVersion
+         */
+        public function setOrchestratorVersion($orchestratorVersion)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getOrchestratorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\ProvidedSoftwareCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidxOrchestratorVersion()
-    {
-    }
-    /**
-     * Deprecated: Use AndroidX Test Orchestrator going forward. A string
-     * representing the current version of Android Test Orchestrator that is used
-     * in the environment. The package is available at https://maven.google.com/we
-     * b/index.html#com.android.support.test:orchestrator.
-     *
-     * @deprecated
-     * @param string $orchestratorVersion
-     */
-    public function setOrchestratorVersion($orchestratorVersion)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getOrchestratorVersion()
+    class Google_Service_Testing_ProvidedSoftwareCatalog extends \Google\Service\Testing\ProvidedSoftwareCatalog
     {
     }
 }

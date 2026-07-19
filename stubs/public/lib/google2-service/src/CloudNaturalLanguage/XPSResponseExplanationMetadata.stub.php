@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSResponseExplanationMetadata extends \Google\Model
-{
-    protected $inputsType = XPSResponseExplanationMetadataInputMetadata::class;
-    protected $inputsDataType = 'map';
-    protected $outputsType = XPSResponseExplanationMetadataOutputMetadata::class;
-    protected $outputsDataType = 'map';
-    /**
-     * Metadata of the input.
-     *
-     * @param XPSResponseExplanationMetadataInputMetadata[] $inputs
-     */
-    public function setInputs($inputs)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSResponseExplanationMetadata extends \Google\Model
     {
+        protected $inputsType = XPSResponseExplanationMetadataInputMetadata::class;
+        protected $inputsDataType = 'map';
+        protected $outputsType = XPSResponseExplanationMetadataOutputMetadata::class;
+        protected $outputsDataType = 'map';
+        /**
+         * Metadata of the input.
+         *
+         * @param XPSResponseExplanationMetadataInputMetadata[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return XPSResponseExplanationMetadataInputMetadata[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * Metadata of the output.
+         *
+         * @param XPSResponseExplanationMetadataOutputMetadata[] $outputs
+         */
+        public function setOutputs($outputs)
+        {
+        }
+        /**
+         * @return XPSResponseExplanationMetadataOutputMetadata[]
+         */
+        public function getOutputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSResponseExplanationMetadataInputMetadata[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSResponseExplanationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * Metadata of the output.
-     *
-     * @param XPSResponseExplanationMetadataOutputMetadata[] $outputs
-     */
-    public function setOutputs($outputs)
-    {
-    }
-    /**
-     * @return XPSResponseExplanationMetadataOutputMetadata[]
-     */
-    public function getOutputs()
+    class Google_Service_CloudNaturalLanguage_XPSResponseExplanationMetadata extends \Google\Service\CloudNaturalLanguage\XPSResponseExplanationMetadata
     {
     }
 }

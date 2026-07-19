@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoSerializedObjectParameter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $objectValue;
-    /**
-     * @param string $objectValue
-     */
-    public function setObjectValue($objectValue)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoSerializedObjectParameter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $objectValue;
+        /**
+         * @param string $objectValue
+         */
+        public function setObjectValue($objectValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoSerializedObjectParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoSerializedObjectParameter extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoSerializedObjectParameter
     {
     }
 }

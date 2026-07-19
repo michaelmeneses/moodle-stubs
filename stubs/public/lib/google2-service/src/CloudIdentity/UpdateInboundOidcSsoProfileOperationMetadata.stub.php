@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class UpdateInboundOidcSsoProfileOperationMetadata extends \Google\Model
-{
-    /**
-     * State of this Operation Will be "awaiting-multi-party-approval" when the
-     * operation is deferred due to the target customer having enabled [Multi-
-     * party approval for sensitive
-     * actions](https://support.google.com/a/answer/13790448).
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * State of this Operation Will be "awaiting-multi-party-approval" when the
-     * operation is deferred due to the target customer having enabled [Multi-
-     * party approval for sensitive
-     * actions](https://support.google.com/a/answer/13790448).
-     *
-     * @param string $state
-     */
-    public function setState($state)
+namespace Google\Service\CloudIdentity {
+    class UpdateInboundOidcSsoProfileOperationMetadata extends \Google\Model
     {
+        /**
+         * State of this Operation Will be "awaiting-multi-party-approval" when the
+         * operation is deferred due to the target customer having enabled [Multi-
+         * party approval for sensitive
+         * actions](https://support.google.com/a/answer/13790448).
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * State of this Operation Will be "awaiting-multi-party-approval" when the
+         * operation is deferred due to the target customer having enabled [Multi-
+         * party approval for sensitive
+         * actions](https://support.google.com/a/answer/13790448).
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\UpdateInboundOidcSsoProfileOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_CloudIdentity_UpdateInboundOidcSsoProfileOperationMetadata extends \Google\Service\CloudIdentity\UpdateInboundOidcSsoProfileOperationMetadata
     {
     }
 }

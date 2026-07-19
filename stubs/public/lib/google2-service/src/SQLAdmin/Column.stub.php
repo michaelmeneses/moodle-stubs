@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class Column extends \Google\Model
-{
-    /**
-     * Name of the column.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Datatype of the column.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Name of the column.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SQLAdmin {
+    class Column extends \Google\Model
     {
+        /**
+         * Name of the column.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Datatype of the column.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Name of the column.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Datatype of the column.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\Column registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Datatype of the column.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_SQLAdmin_Column extends \Google\Service\SQLAdmin\Column
     {
     }
 }

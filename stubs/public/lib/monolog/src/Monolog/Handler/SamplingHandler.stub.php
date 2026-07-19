@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Closure;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Sampling handler
  *

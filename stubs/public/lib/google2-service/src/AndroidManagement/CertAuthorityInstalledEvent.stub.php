@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class CertAuthorityInstalledEvent extends \Google\Model
-{
-    /**
-     * Subject of the certificate.
-     *
-     * @var string
-     */
-    public $certificate;
-    /**
-     * Whether the installation event succeeded.
-     *
-     * @var bool
-     */
-    public $success;
-    /**
-     * The user in which the certificate install event happened. Only available
-     * for devices running Android 11 and above.
-     *
-     * @var int
-     */
-    public $userId;
-    /**
-     * Subject of the certificate.
-     *
-     * @param string $certificate
-     */
-    public function setCertificate($certificate)
+namespace Google\Service\AndroidManagement {
+    class CertAuthorityInstalledEvent extends \Google\Model
     {
+        /**
+         * Subject of the certificate.
+         *
+         * @var string
+         */
+        public $certificate;
+        /**
+         * Whether the installation event succeeded.
+         *
+         * @var bool
+         */
+        public $success;
+        /**
+         * The user in which the certificate install event happened. Only available
+         * for devices running Android 11 and above.
+         *
+         * @var int
+         */
+        public $userId;
+        /**
+         * Subject of the certificate.
+         *
+         * @param string $certificate
+         */
+        public function setCertificate($certificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * Whether the installation event succeeded.
+         *
+         * @param bool $success
+         */
+        public function setSuccess($success)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuccess()
+        {
+        }
+        /**
+         * The user in which the certificate install event happened. Only available
+         * for devices running Android 11 and above.
+         *
+         * @param int $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\CertAuthorityInstalledEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificate()
-    {
-    }
-    /**
-     * Whether the installation event succeeded.
-     *
-     * @param bool $success
-     */
-    public function setSuccess($success)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSuccess()
-    {
-    }
-    /**
-     * The user in which the certificate install event happened. Only available
-     * for devices running Android 11 and above.
-     *
-     * @param int $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUserId()
+    class Google_Service_AndroidManagement_CertAuthorityInstalledEvent extends \Google\Service\AndroidManagement\CertAuthorityInstalledEvent
     {
     }
 }

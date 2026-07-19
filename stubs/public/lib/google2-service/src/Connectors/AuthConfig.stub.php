@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class AuthConfig extends \Google\Collection
-{
-    protected $collection_key = 'additionalVariables';
-    protected $additionalVariablesType = ConfigVariable::class;
-    protected $additionalVariablesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $authType;
-    protected $oauth2ClientCredentialsType = Oauth2ClientCredentials::class;
-    protected $oauth2ClientCredentialsDataType = '';
-    protected $oauth2JwtBearerType = Oauth2JwtBearer::class;
-    protected $oauth2JwtBearerDataType = '';
-    protected $sshPublicKeyType = SshPublicKey::class;
-    protected $sshPublicKeyDataType = '';
-    protected $userPasswordType = UserPassword::class;
-    protected $userPasswordDataType = '';
-    /**
-     * @param ConfigVariable[]
-     */
-    public function setAdditionalVariables($additionalVariables)
+namespace Google\Service\Connectors {
+    class AuthConfig extends \Google\Collection
     {
+        protected $collection_key = 'additionalVariables';
+        protected $additionalVariablesType = ConfigVariable::class;
+        protected $additionalVariablesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $authType;
+        protected $oauth2ClientCredentialsType = Oauth2ClientCredentials::class;
+        protected $oauth2ClientCredentialsDataType = '';
+        protected $oauth2JwtBearerType = Oauth2JwtBearer::class;
+        protected $oauth2JwtBearerDataType = '';
+        protected $sshPublicKeyType = SshPublicKey::class;
+        protected $sshPublicKeyDataType = '';
+        protected $userPasswordType = UserPassword::class;
+        protected $userPasswordDataType = '';
+        /**
+         * @param ConfigVariable[]
+         */
+        public function setAdditionalVariables($additionalVariables)
+        {
+        }
+        /**
+         * @return ConfigVariable[]
+         */
+        public function getAdditionalVariables()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAuthType($authType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthType()
+        {
+        }
+        /**
+         * @param Oauth2ClientCredentials
+         */
+        public function setOauth2ClientCredentials(Oauth2ClientCredentials $oauth2ClientCredentials)
+        {
+        }
+        /**
+         * @return Oauth2ClientCredentials
+         */
+        public function getOauth2ClientCredentials()
+        {
+        }
+        /**
+         * @param Oauth2JwtBearer
+         */
+        public function setOauth2JwtBearer(Oauth2JwtBearer $oauth2JwtBearer)
+        {
+        }
+        /**
+         * @return Oauth2JwtBearer
+         */
+        public function getOauth2JwtBearer()
+        {
+        }
+        /**
+         * @param SshPublicKey
+         */
+        public function setSshPublicKey(SshPublicKey $sshPublicKey)
+        {
+        }
+        /**
+         * @return SshPublicKey
+         */
+        public function getSshPublicKey()
+        {
+        }
+        /**
+         * @param UserPassword
+         */
+        public function setUserPassword(UserPassword $userPassword)
+        {
+        }
+        /**
+         * @return UserPassword
+         */
+        public function getUserPassword()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigVariable[]
+     * Runtime class alias of \Google\Service\Connectors\AuthConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalVariables()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAuthType($authType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthType()
-    {
-    }
-    /**
-     * @param Oauth2ClientCredentials
-     */
-    public function setOauth2ClientCredentials(Oauth2ClientCredentials $oauth2ClientCredentials)
-    {
-    }
-    /**
-     * @return Oauth2ClientCredentials
-     */
-    public function getOauth2ClientCredentials()
-    {
-    }
-    /**
-     * @param Oauth2JwtBearer
-     */
-    public function setOauth2JwtBearer(Oauth2JwtBearer $oauth2JwtBearer)
-    {
-    }
-    /**
-     * @return Oauth2JwtBearer
-     */
-    public function getOauth2JwtBearer()
-    {
-    }
-    /**
-     * @param SshPublicKey
-     */
-    public function setSshPublicKey(SshPublicKey $sshPublicKey)
-    {
-    }
-    /**
-     * @return SshPublicKey
-     */
-    public function getSshPublicKey()
-    {
-    }
-    /**
-     * @param UserPassword
-     */
-    public function setUserPassword(UserPassword $userPassword)
-    {
-    }
-    /**
-     * @return UserPassword
-     */
-    public function getUserPassword()
+    class Google_Service_Connectors_AuthConfig extends \Google\Service\Connectors\AuthConfig
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class AccountWarning extends \Google\Model
-{
-    /**
-     * Required. The email of the user that this event belongs to.
-     *
-     * @var string
-     */
-    public $email;
-    protected $loginDetailsType = LoginDetails::class;
-    protected $loginDetailsDataType = '';
-    /**
-     * Required. The email of the user that this event belongs to.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AlertCenter {
+    class AccountWarning extends \Google\Model
     {
+        /**
+         * Required. The email of the user that this event belongs to.
+         *
+         * @var string
+         */
+        public $email;
+        protected $loginDetailsType = LoginDetails::class;
+        protected $loginDetailsDataType = '';
+        /**
+         * Required. The email of the user that this event belongs to.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Optional. Details of the login action associated with the warning event.
+         * This is only available for: * Suspicious login * Suspicious login (less
+         * secure app) * Suspicious programmatic login * User suspended (suspicious
+         * activity)
+         *
+         * @param LoginDetails $loginDetails
+         */
+        public function setLoginDetails(LoginDetails $loginDetails)
+        {
+        }
+        /**
+         * @return LoginDetails
+         */
+        public function getLoginDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\AccountWarning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Optional. Details of the login action associated with the warning event.
-     * This is only available for: * Suspicious login * Suspicious login (less
-     * secure app) * Suspicious programmatic login * User suspended (suspicious
-     * activity)
-     *
-     * @param LoginDetails $loginDetails
-     */
-    public function setLoginDetails(LoginDetails $loginDetails)
-    {
-    }
-    /**
-     * @return LoginDetails
-     */
-    public function getLoginDetails()
+    class Google_Service_AlertCenter_AccountWarning extends \Google\Service\AlertCenter\AccountWarning
     {
     }
 }

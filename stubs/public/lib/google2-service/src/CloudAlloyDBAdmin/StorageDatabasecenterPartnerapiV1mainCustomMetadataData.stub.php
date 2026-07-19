@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainCustomMetadataData extends \Google\Collection
-{
-    protected $collection_key = 'internalResourceMetadata';
-    protected $internalResourceMetadataType = StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata::class;
-    protected $internalResourceMetadataDataType = 'array';
-    /**
-     * Metadata for individual internal resources in an instance. e.g. spanner
-     * instance can have multiple databases with unique configuration.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata[] $internalResourceMetadata
-     */
-    public function setInternalResourceMetadata($internalResourceMetadata)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainCustomMetadataData extends \Google\Collection
     {
+        protected $collection_key = 'internalResourceMetadata';
+        protected $internalResourceMetadataType = StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata::class;
+        protected $internalResourceMetadataDataType = 'array';
+        /**
+         * Metadata for individual internal resources in an instance. e.g. spanner
+         * instance can have multiple databases with unique configuration.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata[] $internalResourceMetadata
+         */
+        public function setInternalResourceMetadata($internalResourceMetadata)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata[]
+         */
+        public function getInternalResourceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainCustomMetadataData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInternalResourceMetadata()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainCustomMetadataData extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainCustomMetadataData
     {
     }
 }

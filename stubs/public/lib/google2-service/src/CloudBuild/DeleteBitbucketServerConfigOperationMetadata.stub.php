@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class DeleteBitbucketServerConfigOperationMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bitbucketServerConfig;
-    /**
-     * @var string
-     */
-    public $completeTime;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @param string
-     */
-    public function setBitbucketServerConfig($bitbucketServerConfig)
+namespace Google\Service\CloudBuild {
+    class DeleteBitbucketServerConfigOperationMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bitbucketServerConfig;
+        /**
+         * @var string
+         */
+        public $completeTime;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @param string
+         */
+        public function setBitbucketServerConfig($bitbucketServerConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBitbucketServerConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\DeleteBitbucketServerConfigOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCompleteTime($completeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
+    class Google_Service_CloudBuild_DeleteBitbucketServerConfigOperationMetadata extends \Google\Service\CloudBuild\DeleteBitbucketServerConfigOperationMetadata
     {
     }
 }

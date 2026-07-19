@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class Component extends \Google\Collection
-{
-    protected $collection_key = 'serviceAttachmentNames';
-    /**
-     * Name of the component.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Associated service attachments. The service attachment names that will be
-     * used for sending private traffic to the CCAIP tenant project. Example
-     * service attachment name: "projects/${TENANT_PROJECT_ID}/regions/${REGION}/s
-     * erviceAttachments/ingress-default".
-     *
-     * @var string[]
-     */
-    public $serviceAttachmentNames;
-    /**
-     * Name of the component.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CCAIPlatform {
+    class Component extends \Google\Collection
     {
+        protected $collection_key = 'serviceAttachmentNames';
+        /**
+         * Name of the component.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Associated service attachments. The service attachment names that will be
+         * used for sending private traffic to the CCAIP tenant project. Example
+         * service attachment name: "projects/${TENANT_PROJECT_ID}/regions/${REGION}/s
+         * erviceAttachments/ingress-default".
+         *
+         * @var string[]
+         */
+        public $serviceAttachmentNames;
+        /**
+         * Name of the component.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Associated service attachments. The service attachment names that will be
+         * used for sending private traffic to the CCAIP tenant project. Example
+         * service attachment name: "projects/${TENANT_PROJECT_ID}/regions/${REGION}/s
+         * erviceAttachments/ingress-default".
+         *
+         * @param string[] $serviceAttachmentNames
+         */
+        public function setServiceAttachmentNames($serviceAttachmentNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceAttachmentNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CCAIPlatform\Component registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Associated service attachments. The service attachment names that will be
-     * used for sending private traffic to the CCAIP tenant project. Example
-     * service attachment name: "projects/${TENANT_PROJECT_ID}/regions/${REGION}/s
-     * erviceAttachments/ingress-default".
-     *
-     * @param string[] $serviceAttachmentNames
-     */
-    public function setServiceAttachmentNames($serviceAttachmentNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServiceAttachmentNames()
+    class Google_Service_CCAIPlatform_Component extends \Google\Service\CCAIPlatform\Component
     {
     }
 }

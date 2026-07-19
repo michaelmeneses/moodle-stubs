@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SecurityCenterProperties extends \Google\Collection
-{
-    protected $collection_key = 'resourceOwners';
-    protected $foldersType = Folder::class;
-    protected $foldersDataType = 'array';
-    /**
-     * The user defined display name for this resource.
-     *
-     * @var string
-     */
-    public $resourceDisplayName;
-    /**
-     * The full resource name of the Google Cloud resource this asset represents.
-     * This field is immutable after create time. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Owners of the Google Cloud resource.
-     *
-     * @var string[]
-     */
-    public $resourceOwners;
-    /**
-     * The full resource name of the immediate parent of the resource. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @var string
-     */
-    public $resourceParent;
-    /**
-     * The user defined display name for the parent of this resource.
-     *
-     * @var string
-     */
-    public $resourceParentDisplayName;
-    /**
-     * The full resource name of the project the resource belongs to. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @var string
-     */
-    public $resourceProject;
-    /**
-     * The user defined display name for the project of this resource.
-     *
-     * @var string
-     */
-    public $resourceProjectDisplayName;
-    /**
-     * The type of the Google Cloud resource. Examples include: APPLICATION,
-     * PROJECT, and ORGANIZATION. This is a case insensitive field defined by
-     * Security Command Center and/or the producer of the resource and is
-     * immutable after create time.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Contains a Folder message for each folder in the assets ancestry. The first
-     * folder is the deepest nested folder, and the last folder is the folder
-     * directly under the Organization.
-     *
-     * @param Folder[] $folders
-     */
-    public function setFolders($folders)
+namespace Google\Service\SecurityCommandCenter {
+    class SecurityCenterProperties extends \Google\Collection
     {
+        protected $collection_key = 'resourceOwners';
+        protected $foldersType = Folder::class;
+        protected $foldersDataType = 'array';
+        /**
+         * The user defined display name for this resource.
+         *
+         * @var string
+         */
+        public $resourceDisplayName;
+        /**
+         * The full resource name of the Google Cloud resource this asset represents.
+         * This field is immutable after create time. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Owners of the Google Cloud resource.
+         *
+         * @var string[]
+         */
+        public $resourceOwners;
+        /**
+         * The full resource name of the immediate parent of the resource. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @var string
+         */
+        public $resourceParent;
+        /**
+         * The user defined display name for the parent of this resource.
+         *
+         * @var string
+         */
+        public $resourceParentDisplayName;
+        /**
+         * The full resource name of the project the resource belongs to. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @var string
+         */
+        public $resourceProject;
+        /**
+         * The user defined display name for the project of this resource.
+         *
+         * @var string
+         */
+        public $resourceProjectDisplayName;
+        /**
+         * The type of the Google Cloud resource. Examples include: APPLICATION,
+         * PROJECT, and ORGANIZATION. This is a case insensitive field defined by
+         * Security Command Center and/or the producer of the resource and is
+         * immutable after create time.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Contains a Folder message for each folder in the assets ancestry. The first
+         * folder is the deepest nested folder, and the last folder is the folder
+         * directly under the Organization.
+         *
+         * @param Folder[] $folders
+         */
+        public function setFolders($folders)
+        {
+        }
+        /**
+         * @return Folder[]
+         */
+        public function getFolders()
+        {
+        }
+        /**
+         * The user defined display name for this resource.
+         *
+         * @param string $resourceDisplayName
+         */
+        public function setResourceDisplayName($resourceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceDisplayName()
+        {
+        }
+        /**
+         * The full resource name of the Google Cloud resource this asset represents.
+         * This field is immutable after create time. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Owners of the Google Cloud resource.
+         *
+         * @param string[] $resourceOwners
+         */
+        public function setResourceOwners($resourceOwners)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceOwners()
+        {
+        }
+        /**
+         * The full resource name of the immediate parent of the resource. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @param string $resourceParent
+         */
+        public function setResourceParent($resourceParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceParent()
+        {
+        }
+        /**
+         * The user defined display name for the parent of this resource.
+         *
+         * @param string $resourceParentDisplayName
+         */
+        public function setResourceParentDisplayName($resourceParentDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceParentDisplayName()
+        {
+        }
+        /**
+         * The full resource name of the project the resource belongs to. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @param string $resourceProject
+         */
+        public function setResourceProject($resourceProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceProject()
+        {
+        }
+        /**
+         * The user defined display name for the project of this resource.
+         *
+         * @param string $resourceProjectDisplayName
+         */
+        public function setResourceProjectDisplayName($resourceProjectDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceProjectDisplayName()
+        {
+        }
+        /**
+         * The type of the Google Cloud resource. Examples include: APPLICATION,
+         * PROJECT, and ORGANIZATION. This is a case insensitive field defined by
+         * Security Command Center and/or the producer of the resource and is
+         * immutable after create time.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Folder[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SecurityCenterProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolders()
-    {
-    }
-    /**
-     * The user defined display name for this resource.
-     *
-     * @param string $resourceDisplayName
-     */
-    public function setResourceDisplayName($resourceDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceDisplayName()
-    {
-    }
-    /**
-     * The full resource name of the Google Cloud resource this asset represents.
-     * This field is immutable after create time. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Owners of the Google Cloud resource.
-     *
-     * @param string[] $resourceOwners
-     */
-    public function setResourceOwners($resourceOwners)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceOwners()
-    {
-    }
-    /**
-     * The full resource name of the immediate parent of the resource. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @param string $resourceParent
-     */
-    public function setResourceParent($resourceParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceParent()
-    {
-    }
-    /**
-     * The user defined display name for the parent of this resource.
-     *
-     * @param string $resourceParentDisplayName
-     */
-    public function setResourceParentDisplayName($resourceParentDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceParentDisplayName()
-    {
-    }
-    /**
-     * The full resource name of the project the resource belongs to. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @param string $resourceProject
-     */
-    public function setResourceProject($resourceProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceProject()
-    {
-    }
-    /**
-     * The user defined display name for the project of this resource.
-     *
-     * @param string $resourceProjectDisplayName
-     */
-    public function setResourceProjectDisplayName($resourceProjectDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceProjectDisplayName()
-    {
-    }
-    /**
-     * The type of the Google Cloud resource. Examples include: APPLICATION,
-     * PROJECT, and ORGANIZATION. This is a case insensitive field defined by
-     * Security Command Center and/or the producer of the resource and is
-     * immutable after create time.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_SecurityCommandCenter_SecurityCenterProperties extends \Google\Service\SecurityCommandCenter\SecurityCenterProperties
     {
     }
 }

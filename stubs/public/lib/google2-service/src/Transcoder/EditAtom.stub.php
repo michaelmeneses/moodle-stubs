@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class EditAtom extends \Google\Collection
-{
-    protected $collection_key = 'inputs';
-    /**
-     * End time in seconds for the atom, relative to the input file timeline. When
-     * `end_time_offset` is not specified, the `inputs` are used until the end of
-     * the atom.
-     *
-     * @var string
-     */
-    public $endTimeOffset;
-    /**
-     * List of Input.key values identifying files that should be used in this
-     * atom. The listed `inputs` must have the same timeline.
-     *
-     * @var string[]
-     */
-    public $inputs;
-    /**
-     * A unique key for this atom. Must be specified when using advanced mapping.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Start time in seconds for the atom, relative to the input file timeline.
-     * The default is `0s`.
-     *
-     * @var string
-     */
-    public $startTimeOffset;
-    /**
-     * End time in seconds for the atom, relative to the input file timeline. When
-     * `end_time_offset` is not specified, the `inputs` are used until the end of
-     * the atom.
-     *
-     * @param string $endTimeOffset
-     */
-    public function setEndTimeOffset($endTimeOffset)
+namespace Google\Service\Transcoder {
+    class EditAtom extends \Google\Collection
     {
+        protected $collection_key = 'inputs';
+        /**
+         * End time in seconds for the atom, relative to the input file timeline. When
+         * `end_time_offset` is not specified, the `inputs` are used until the end of
+         * the atom.
+         *
+         * @var string
+         */
+        public $endTimeOffset;
+        /**
+         * List of Input.key values identifying files that should be used in this
+         * atom. The listed `inputs` must have the same timeline.
+         *
+         * @var string[]
+         */
+        public $inputs;
+        /**
+         * A unique key for this atom. Must be specified when using advanced mapping.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Start time in seconds for the atom, relative to the input file timeline.
+         * The default is `0s`.
+         *
+         * @var string
+         */
+        public $startTimeOffset;
+        /**
+         * End time in seconds for the atom, relative to the input file timeline. When
+         * `end_time_offset` is not specified, the `inputs` are used until the end of
+         * the atom.
+         *
+         * @param string $endTimeOffset
+         */
+        public function setEndTimeOffset($endTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeOffset()
+        {
+        }
+        /**
+         * List of Input.key values identifying files that should be used in this
+         * atom. The listed `inputs` must have the same timeline.
+         *
+         * @param string[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * A unique key for this atom. Must be specified when using advanced mapping.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Start time in seconds for the atom, relative to the input file timeline.
+         * The default is `0s`.
+         *
+         * @param string $startTimeOffset
+         */
+        public function setStartTimeOffset($startTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\EditAtom registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTimeOffset()
-    {
-    }
-    /**
-     * List of Input.key values identifying files that should be used in this
-     * atom. The listed `inputs` must have the same timeline.
-     *
-     * @param string[] $inputs
-     */
-    public function setInputs($inputs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInputs()
-    {
-    }
-    /**
-     * A unique key for this atom. Must be specified when using advanced mapping.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Start time in seconds for the atom, relative to the input file timeline.
-     * The default is `0s`.
-     *
-     * @param string $startTimeOffset
-     */
-    public function setStartTimeOffset($startTimeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeOffset()
+    class Google_Service_Transcoder_EditAtom extends \Google\Service\Transcoder\EditAtom
     {
     }
 }

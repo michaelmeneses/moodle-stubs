@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class ErrorContext extends \Google\Collection
-{
-    protected $collection_key = 'sourceReferences';
-    protected $httpRequestType = HttpRequestContext::class;
-    protected $httpRequestDataType = '';
-    protected $reportLocationType = SourceLocation::class;
-    protected $reportLocationDataType = '';
-    protected $sourceReferencesType = SourceReference::class;
-    protected $sourceReferencesDataType = 'array';
-    /**
-     * The user who caused or was affected by the crash. This can be a user ID, an
-     * email address, or an arbitrary token that uniquely identifies the user.
-     * When sending an error report, leave this field empty if the user was not
-     * logged in. In this case the Error Reporting system will use other data,
-     * such as remote IP address, to distinguish affected users. See
-     * `affected_users_count` in `ErrorGroupStats`.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * The HTTP request which was processed when the error was triggered.
-     *
-     * @param HttpRequestContext $httpRequest
-     */
-    public function setHttpRequest(HttpRequestContext $httpRequest)
+namespace Google\Service\Clouderrorreporting {
+    class ErrorContext extends \Google\Collection
     {
+        protected $collection_key = 'sourceReferences';
+        protected $httpRequestType = HttpRequestContext::class;
+        protected $httpRequestDataType = '';
+        protected $reportLocationType = SourceLocation::class;
+        protected $reportLocationDataType = '';
+        protected $sourceReferencesType = SourceReference::class;
+        protected $sourceReferencesDataType = 'array';
+        /**
+         * The user who caused or was affected by the crash. This can be a user ID, an
+         * email address, or an arbitrary token that uniquely identifies the user.
+         * When sending an error report, leave this field empty if the user was not
+         * logged in. In this case the Error Reporting system will use other data,
+         * such as remote IP address, to distinguish affected users. See
+         * `affected_users_count` in `ErrorGroupStats`.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * The HTTP request which was processed when the error was triggered.
+         *
+         * @param HttpRequestContext $httpRequest
+         */
+        public function setHttpRequest(HttpRequestContext $httpRequest)
+        {
+        }
+        /**
+         * @return HttpRequestContext
+         */
+        public function getHttpRequest()
+        {
+        }
+        /**
+         * The location in the source code where the decision was made to report the
+         * error, usually the place where it was logged. For a logged exception this
+         * would be the source line where the exception is logged, usually close to
+         * the place where it was caught.
+         *
+         * @param SourceLocation $reportLocation
+         */
+        public function setReportLocation(SourceLocation $reportLocation)
+        {
+        }
+        /**
+         * @return SourceLocation
+         */
+        public function getReportLocation()
+        {
+        }
+        /**
+         * Source code that was used to build the executable which has caused the
+         * given error message.
+         *
+         * @param SourceReference[] $sourceReferences
+         */
+        public function setSourceReferences($sourceReferences)
+        {
+        }
+        /**
+         * @return SourceReference[]
+         */
+        public function getSourceReferences()
+        {
+        }
+        /**
+         * The user who caused or was affected by the crash. This can be a user ID, an
+         * email address, or an arbitrary token that uniquely identifies the user.
+         * When sending an error report, leave this field empty if the user was not
+         * logged in. In this case the Error Reporting system will use other data,
+         * such as remote IP address, to distinguish affected users. See
+         * `affected_users_count` in `ErrorGroupStats`.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpRequestContext
+     * Runtime class alias of \Google\Service\Clouderrorreporting\ErrorContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpRequest()
-    {
-    }
-    /**
-     * The location in the source code where the decision was made to report the
-     * error, usually the place where it was logged. For a logged exception this
-     * would be the source line where the exception is logged, usually close to
-     * the place where it was caught.
-     *
-     * @param SourceLocation $reportLocation
-     */
-    public function setReportLocation(SourceLocation $reportLocation)
-    {
-    }
-    /**
-     * @return SourceLocation
-     */
-    public function getReportLocation()
-    {
-    }
-    /**
-     * Source code that was used to build the executable which has caused the
-     * given error message.
-     *
-     * @param SourceReference[] $sourceReferences
-     */
-    public function setSourceReferences($sourceReferences)
-    {
-    }
-    /**
-     * @return SourceReference[]
-     */
-    public function getSourceReferences()
-    {
-    }
-    /**
-     * The user who caused or was affected by the crash. This can be a user ID, an
-     * email address, or an arbitrary token that uniquely identifies the user.
-     * When sending an error report, leave this field empty if the user was not
-     * logged in. In this case the Error Reporting system will use other data,
-     * such as remote IP address, to distinguish affected users. See
-     * `affected_users_count` in `ErrorGroupStats`.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_Clouderrorreporting_ErrorContext extends \Google\Service\Clouderrorreporting\ErrorContext
     {
     }
 }

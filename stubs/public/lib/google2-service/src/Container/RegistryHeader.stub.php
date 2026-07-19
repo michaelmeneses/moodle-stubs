@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RegistryHeader extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * Key configures the header key.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value configures the header value.
-     *
-     * @var string[]
-     */
-    public $value;
-    /**
-     * Key configures the header key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Container {
+    class RegistryHeader extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * Key configures the header key.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value configures the header value.
+         *
+         * @var string[]
+         */
+        public $value;
+        /**
+         * Key configures the header key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value configures the header value.
+         *
+         * @param string[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\RegistryHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Value configures the header value.
-     *
-     * @param string[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValue()
+    class Google_Service_Container_RegistryHeader extends \Google\Service\Container\RegistryHeader
     {
     }
 }

@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequestSheetsSource extends \Google\Model
-{
-    /**
-     * Required. The Google Sheets document to write the feedback labels to.
-     * Retrieved from Google Sheets URI. E.g.
-     * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
-     * shared with the Insights P4SA.
-     *
-     * @var string
-     */
-    public $spreadsheetUri;
-    /**
-     * Required. The Google Sheets document to write the feedback labels to.
-     * Retrieved from Google Sheets URI. E.g.
-     * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
-     * shared with the Insights P4SA.
-     *
-     * @param string $spreadsheetUri
-     */
-    public function setSpreadsheetUri($spreadsheetUri)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequestSheetsSource extends \Google\Model
     {
+        /**
+         * Required. The Google Sheets document to write the feedback labels to.
+         * Retrieved from Google Sheets URI. E.g.
+         * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
+         * shared with the Insights P4SA.
+         *
+         * @var string
+         */
+        public $spreadsheetUri;
+        /**
+         * Required. The Google Sheets document to write the feedback labels to.
+         * Retrieved from Google Sheets URI. E.g.
+         * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
+         * shared with the Insights P4SA.
+         *
+         * @param string $spreadsheetUri
+         */
+        public function setSpreadsheetUri($spreadsheetUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequestSheetsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpreadsheetUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequestSheetsSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkUploadFeedbackLabelsRequestSheetsSource
     {
     }
 }

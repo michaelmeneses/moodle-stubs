@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * List pagination support.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * List pagination support.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * List pagination support.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * List pagination support.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of matching products at their head revision number.
+         *
+         * @param Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of matching products at their head revision number.
-     *
-     * @param Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return Product[]
-     */
-    public function getProducts()
+    class Google_Service_AdExchangeBuyerII_ListProductsResponse extends \Google\Service\AdExchangeBuyerII\ListProductsResponse
     {
     }
 }

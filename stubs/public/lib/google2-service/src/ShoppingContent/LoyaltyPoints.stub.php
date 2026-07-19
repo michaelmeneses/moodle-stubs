@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LoyaltyPoints extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $pointsValue;
-    public $ratio;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\ShoppingContent {
+    class LoyaltyPoints extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $pointsValue;
+        public $ratio;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPointsValue($pointsValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPointsValue()
+        {
+        }
+        public function setRatio($ratio)
+        {
+        }
+        public function getRatio()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LoyaltyPoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPointsValue($pointsValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPointsValue()
-    {
-    }
-    public function setRatio($ratio)
-    {
-    }
-    public function getRatio()
+    class Google_Service_ShoppingContent_LoyaltyPoints extends \Google\Service\ShoppingContent\LoyaltyPoints
     {
     }
 }

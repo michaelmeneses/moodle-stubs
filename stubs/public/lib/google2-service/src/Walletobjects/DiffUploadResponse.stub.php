@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DiffUploadResponse extends \Google\Model
-{
-    /**
-     * The object version of the object at the server. Must be included in the end
-     * notification response. The version in the end notification response must
-     * correspond to the new version of the object that is now stored at the
-     * server, after the upload.
-     *
-     * @var string
-     */
-    public $objectVersion;
-    protected $originalObjectType = CompositeMedia::class;
-    protected $originalObjectDataType = '';
-    /**
-     * The object version of the object at the server. Must be included in the end
-     * notification response. The version in the end notification response must
-     * correspond to the new version of the object that is now stored at the
-     * server, after the upload.
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
+namespace Google\Service\Walletobjects {
+    class DiffUploadResponse extends \Google\Model
     {
+        /**
+         * The object version of the object at the server. Must be included in the end
+         * notification response. The version in the end notification response must
+         * correspond to the new version of the object that is now stored at the
+         * server, after the upload.
+         *
+         * @var string
+         */
+        public $objectVersion;
+        protected $originalObjectType = CompositeMedia::class;
+        protected $originalObjectDataType = '';
+        /**
+         * The object version of the object at the server. Must be included in the end
+         * notification response. The version in the end notification response must
+         * correspond to the new version of the object that is now stored at the
+         * server, after the upload.
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
+        /**
+         * The location of the original file for a diff upload request. Must be filled
+         * in if responding to an upload start notification.
+         *
+         * @param CompositeMedia $originalObject
+         */
+        public function setOriginalObject(CompositeMedia $originalObject)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getOriginalObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\DiffUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectVersion()
-    {
-    }
-    /**
-     * The location of the original file for a diff upload request. Must be filled
-     * in if responding to an upload start notification.
-     *
-     * @param CompositeMedia $originalObject
-     */
-    public function setOriginalObject(CompositeMedia $originalObject)
-    {
-    }
-    /**
-     * @return CompositeMedia
-     */
-    public function getOriginalObject()
+    class Google_Service_Walletobjects_DiffUploadResponse extends \Google\Service\Walletobjects\DiffUploadResponse
     {
     }
 }

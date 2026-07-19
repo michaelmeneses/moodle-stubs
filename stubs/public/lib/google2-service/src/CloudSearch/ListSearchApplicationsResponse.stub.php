@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ListSearchApplicationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'searchApplications';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $searchApplicationsType = SearchApplication::class;
-    protected $searchApplicationsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudSearch {
+    class ListSearchApplicationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'searchApplications';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $searchApplicationsType = SearchApplication::class;
+        protected $searchApplicationsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param SearchApplication[] $searchApplications
+         */
+        public function setSearchApplications($searchApplications)
+        {
+        }
+        /**
+         * @return SearchApplication[]
+         */
+        public function getSearchApplications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ListSearchApplicationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param SearchApplication[] $searchApplications
-     */
-    public function setSearchApplications($searchApplications)
-    {
-    }
-    /**
-     * @return SearchApplication[]
-     */
-    public function getSearchApplications()
+    class Google_Service_CloudSearch_ListSearchApplicationsResponse extends \Google\Service\CloudSearch\ListSearchApplicationsResponse
     {
     }
 }

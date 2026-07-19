@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class KeyIntegrityViolationEvent extends \Google\Model
-{
-    /**
-     * UID of the application which owns the key
-     *
-     * @var int
-     */
-    public $applicationUid;
-    /**
-     * Alias of the key.
-     *
-     * @var string
-     */
-    public $keyAlias;
-    /**
-     * UID of the application which owns the key
-     *
-     * @param int $applicationUid
-     */
-    public function setApplicationUid($applicationUid)
+namespace Google\Service\AndroidManagement {
+    class KeyIntegrityViolationEvent extends \Google\Model
     {
+        /**
+         * UID of the application which owns the key
+         *
+         * @var int
+         */
+        public $applicationUid;
+        /**
+         * Alias of the key.
+         *
+         * @var string
+         */
+        public $keyAlias;
+        /**
+         * UID of the application which owns the key
+         *
+         * @param int $applicationUid
+         */
+        public function setApplicationUid($applicationUid)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getApplicationUid()
+        {
+        }
+        /**
+         * Alias of the key.
+         *
+         * @param string $keyAlias
+         */
+        public function setKeyAlias($keyAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyAlias()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidManagement\KeyIntegrityViolationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationUid()
-    {
-    }
-    /**
-     * Alias of the key.
-     *
-     * @param string $keyAlias
-     */
-    public function setKeyAlias($keyAlias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyAlias()
+    class Google_Service_AndroidManagement_KeyIntegrityViolationEvent extends \Google\Service\AndroidManagement\KeyIntegrityViolationEvent
     {
     }
 }

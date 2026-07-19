@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ContactDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * @param string
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ContactDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * @param string
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ContactDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ContactDetails extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ContactDetails
     {
     }
 }

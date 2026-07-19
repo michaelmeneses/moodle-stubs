@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class MendelDebugInput extends \Google\Model
-{
-    protected $namespacedDebugInputType = NamespacedDebugInput::class;
-    protected $namespacedDebugInputDataType = 'map';
-    /**
-     * @param NamespacedDebugInput[]
-     */
-    public function setNamespacedDebugInput($namespacedDebugInput)
+namespace Google\Service\CloudTalentSolution {
+    class MendelDebugInput extends \Google\Model
     {
+        protected $namespacedDebugInputType = NamespacedDebugInput::class;
+        protected $namespacedDebugInputDataType = 'map';
+        /**
+         * @param NamespacedDebugInput[]
+         */
+        public function setNamespacedDebugInput($namespacedDebugInput)
+        {
+        }
+        /**
+         * @return NamespacedDebugInput[]
+         */
+        public function getNamespacedDebugInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamespacedDebugInput[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\MendelDebugInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespacedDebugInput()
+    class Google_Service_CloudTalentSolution_MendelDebugInput extends \Google\Service\CloudTalentSolution\MendelDebugInput
     {
     }
 }

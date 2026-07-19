@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class RemoveProductFromProductSetRequest extends \Google\Model
-{
-    /**
-     * Required. The resource name for the Product to be removed from this
-     * ProductSet. Format is:
-     * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`
-     *
-     * @var string
-     */
-    public $product;
-    /**
-     * Required. The resource name for the Product to be removed from this
-     * ProductSet. Format is:
-     * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`
-     *
-     * @param string $product
-     */
-    public function setProduct($product)
+namespace Google\Service\Vision {
+    class RemoveProductFromProductSetRequest extends \Google\Model
     {
+        /**
+         * Required. The resource name for the Product to be removed from this
+         * ProductSet. Format is:
+         * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`
+         *
+         * @var string
+         */
+        public $product;
+        /**
+         * Required. The resource name for the Product to be removed from this
+         * ProductSet. Format is:
+         * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`
+         *
+         * @param string $product
+         */
+        public function setProduct($product)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProduct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\RemoveProductFromProductSetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProduct()
+    class Google_Service_Vision_RemoveProductFromProductSetRequest extends \Google\Service\Vision\RemoveProductFromProductSetRequest
     {
     }
 }

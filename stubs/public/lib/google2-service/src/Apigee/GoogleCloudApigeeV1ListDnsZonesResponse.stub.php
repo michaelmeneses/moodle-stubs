@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListDnsZonesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dnsZones';
-    protected $dnsZonesType = GoogleCloudApigeeV1DnsZone::class;
-    protected $dnsZonesDataType = 'array';
-    /**
-     * Page token that you can include in an `ListDnsZones` request to retrieve
-     * the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * DNS zones in a given organization.
-     *
-     * @param GoogleCloudApigeeV1DnsZone[] $dnsZones
-     */
-    public function setDnsZones($dnsZones)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListDnsZonesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dnsZones';
+        protected $dnsZonesType = GoogleCloudApigeeV1DnsZone::class;
+        protected $dnsZonesDataType = 'array';
+        /**
+         * Page token that you can include in an `ListDnsZones` request to retrieve
+         * the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * DNS zones in a given organization.
+         *
+         * @param GoogleCloudApigeeV1DnsZone[] $dnsZones
+         */
+        public function setDnsZones($dnsZones)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DnsZone[]
+         */
+        public function getDnsZones()
+        {
+        }
+        /**
+         * Page token that you can include in an `ListDnsZones` request to retrieve
+         * the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DnsZone[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListDnsZonesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsZones()
-    {
-    }
-    /**
-     * Page token that you can include in an `ListDnsZones` request to retrieve
-     * the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListDnsZonesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListDnsZonesResponse
     {
     }
 }

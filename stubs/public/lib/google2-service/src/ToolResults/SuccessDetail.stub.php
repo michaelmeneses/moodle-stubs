@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class SuccessDetail extends \Google\Model
-{
-    /**
-     * If a native process other than the app crashed.
-     *
-     * @var bool
-     */
-    public $otherNativeCrash;
-    /**
-     * If a native process other than the app crashed.
-     *
-     * @param bool $otherNativeCrash
-     */
-    public function setOtherNativeCrash($otherNativeCrash)
+namespace Google\Service\ToolResults {
+    class SuccessDetail extends \Google\Model
     {
+        /**
+         * If a native process other than the app crashed.
+         *
+         * @var bool
+         */
+        public $otherNativeCrash;
+        /**
+         * If a native process other than the app crashed.
+         *
+         * @param bool $otherNativeCrash
+         */
+        public function setOtherNativeCrash($otherNativeCrash)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOtherNativeCrash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ToolResults\SuccessDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOtherNativeCrash()
+    class Google_Service_ToolResults_SuccessDetail extends \Google\Service\ToolResults\SuccessDetail
     {
     }
 }

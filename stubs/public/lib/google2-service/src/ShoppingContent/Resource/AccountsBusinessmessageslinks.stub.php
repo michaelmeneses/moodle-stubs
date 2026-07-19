@@ -21,72 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "businessmessageslinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $businessmessageslinks = $contentService->accounts_businessmessageslinks;
- *  </code>
- */
-class AccountsBusinessmessageslinks extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\BusinessMessagesLink;
+    use Google\Service\ShoppingContent\ListBusinessMessagesLinksResponse;
     /**
-     * Creates a `BusinessMessagesLink` in Merchant Center account.
-     * (businessmessageslinks.create)
-     *
-     * @param string $accountId Required. The ID of the Merchant Center account.
-     * @param BusinessMessagesLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return BusinessMessagesLink
+     * The "businessmessageslinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $businessmessageslinks = $contentService->accounts_businessmessageslinks;
+     *  </code>
      */
-    public function create($accountId, BusinessMessagesLink $postBody, $optParams = [])
+    class AccountsBusinessmessageslinks extends \Google\Service\Resource
     {
+        /**
+         * Creates a `BusinessMessagesLink` in Merchant Center account.
+         * (businessmessageslinks.create)
+         *
+         * @param string $accountId Required. The ID of the Merchant Center account.
+         * @param BusinessMessagesLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return BusinessMessagesLink
+         */
+        public function create($accountId, BusinessMessagesLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified `BusinessMessagesLink` resource from Merchant Center
+         * account. (businessmessageslinks.delete)
+         *
+         * @param string $accountId Required. The ID of the Merchant Center account.
+         * @param string $businessMessagesLinkId Required. The identifier for the
+         * Business Messages Link.
+         * @param array $optParams Optional parameters.
+         */
+        public function delete($accountId, $businessMessagesLinkId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves `BusinessMessagesLink` in Merchant Center account.
+         * (businessmessageslinks.get)
+         *
+         * @param string $accountId Required. The ID of the Merchant Center account.
+         * @param string $businessMessagesLinkId Required. The identifier for the
+         * Business Messages Link.
+         * @param array $optParams Optional parameters.
+         * @return BusinessMessagesLink
+         */
+        public function get($accountId, $businessMessagesLinkId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the `BusinessMessagesLink` resources for Merchant Center account.
+         * (businessmessageslinks.listAccountsBusinessmessageslinks)
+         *
+         * @param string $accountId Required. The ID of the account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of
+         * `BusinessMessagesLink` resources for the Merchant Center account to return.
+         * Defaults to 50; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListBusinessMessagesLinks` call. Provide the page token to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListBusinessMessagesLinks` must match the call that provided the page token.
+         * @return ListBusinessMessagesLinksResponse
+         */
+        public function listAccountsBusinessmessageslinks($accountId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified `BusinessMessagesLink` resource from Merchant Center
-     * account. (businessmessageslinks.delete)
-     *
-     * @param string $accountId Required. The ID of the Merchant Center account.
-     * @param string $businessMessagesLinkId Required. The identifier for the
-     * Business Messages Link.
-     * @param array $optParams Optional parameters.
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\AccountsBusinessmessageslinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($accountId, $businessMessagesLinkId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves `BusinessMessagesLink` in Merchant Center account.
-     * (businessmessageslinks.get)
-     *
-     * @param string $accountId Required. The ID of the Merchant Center account.
-     * @param string $businessMessagesLinkId Required. The identifier for the
-     * Business Messages Link.
-     * @param array $optParams Optional parameters.
-     * @return BusinessMessagesLink
-     */
-    public function get($accountId, $businessMessagesLinkId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the `BusinessMessagesLink` resources for Merchant Center account.
-     * (businessmessageslinks.listAccountsBusinessmessageslinks)
-     *
-     * @param string $accountId Required. The ID of the account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of
-     * `BusinessMessagesLink` resources for the Merchant Center account to return.
-     * Defaults to 50; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListBusinessMessagesLinks` call. Provide the page token to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListBusinessMessagesLinks` must match the call that provided the page token.
-     * @return ListBusinessMessagesLinksResponse
-     */
-    public function listAccountsBusinessmessageslinks($accountId, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_AccountsBusinessmessageslinks extends \Google\Service\ShoppingContent\Resource\AccountsBusinessmessageslinks
     {
     }
 }

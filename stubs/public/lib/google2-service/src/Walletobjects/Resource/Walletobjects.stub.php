@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "walletobjects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $walletobjects = $walletobjectsService->walletobjects;
- *  </code>
- */
-class Walletobjects extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    /**
+     * The "walletobjects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $walletobjects = $walletobjectsService->walletobjects;
+     *  </code>
+     */
+    class Walletobjects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Walletobjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Walletobjects_Resource_Walletobjects extends \Google\Service\Walletobjects\Resource\Walletobjects
+    {
+    }
 }

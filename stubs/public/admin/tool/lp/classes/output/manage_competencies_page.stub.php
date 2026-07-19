@@ -29,6 +29,17 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use single_button;
+use stdClass;
+use moodle_url;
+use context_system;
+use core_competency\api;
+use core_competency\competency;
+use core_competency\competency_framework;
+use core_competency\external\competency_framework_exporter;
 /**
  * Class containing data for managecompetencies page
  *

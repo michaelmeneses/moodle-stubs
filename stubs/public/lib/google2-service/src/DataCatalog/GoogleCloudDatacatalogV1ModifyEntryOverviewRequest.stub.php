@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ModifyEntryOverviewRequest extends \Google\Model
-{
-    protected $entryOverviewType = GoogleCloudDatacatalogV1EntryOverview::class;
-    protected $entryOverviewDataType = '';
-    /**
-     * Required. The new value for the Entry Overview.
-     *
-     * @param GoogleCloudDatacatalogV1EntryOverview $entryOverview
-     */
-    public function setEntryOverview(GoogleCloudDatacatalogV1EntryOverview $entryOverview)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ModifyEntryOverviewRequest extends \Google\Model
     {
+        protected $entryOverviewType = GoogleCloudDatacatalogV1EntryOverview::class;
+        protected $entryOverviewDataType = '';
+        /**
+         * Required. The new value for the Entry Overview.
+         *
+         * @param GoogleCloudDatacatalogV1EntryOverview $entryOverview
+         */
+        public function setEntryOverview(GoogleCloudDatacatalogV1EntryOverview $entryOverview)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1EntryOverview
+         */
+        public function getEntryOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1EntryOverview
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntryOverview()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ModifyEntryOverviewRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryOverviewRequest
     {
     }
 }

@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RuntimeConfig extends \Google\Model
-{
-    /**
-     * Cloud Storage bucket used for uploading Analytics records.
-     *
-     * @var string
-     */
-    public $analyticsBucket;
-    /**
-     * Name of the resource in the following format:
-     * `organizations/{org}/runtimeConfig`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Tenant project ID associated with the Apigee organization. The
-     * tenant project is used to host Google-managed resources that are dedicated
-     * to this Apigee organization. Clients have limited access to resources
-     * within the tenant project used to support Apigee runtime instances. Access
-     * to the tenant project is managed using SetSyncAuthorization. It can be
-     * empty if the tenant project hasn't been created yet.
-     *
-     * @var string
-     */
-    public $tenantProjectId;
-    /**
-     * Cloud Storage bucket used for uploading Trace records.
-     *
-     * @var string
-     */
-    public $traceBucket;
-    /**
-     * Cloud Storage bucket used for uploading Analytics records.
-     *
-     * @param string $analyticsBucket
-     */
-    public function setAnalyticsBucket($analyticsBucket)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RuntimeConfig extends \Google\Model
     {
+        /**
+         * Cloud Storage bucket used for uploading Analytics records.
+         *
+         * @var string
+         */
+        public $analyticsBucket;
+        /**
+         * Name of the resource in the following format:
+         * `organizations/{org}/runtimeConfig`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Tenant project ID associated with the Apigee organization. The
+         * tenant project is used to host Google-managed resources that are dedicated
+         * to this Apigee organization. Clients have limited access to resources
+         * within the tenant project used to support Apigee runtime instances. Access
+         * to the tenant project is managed using SetSyncAuthorization. It can be
+         * empty if the tenant project hasn't been created yet.
+         *
+         * @var string
+         */
+        public $tenantProjectId;
+        /**
+         * Cloud Storage bucket used for uploading Trace records.
+         *
+         * @var string
+         */
+        public $traceBucket;
+        /**
+         * Cloud Storage bucket used for uploading Analytics records.
+         *
+         * @param string $analyticsBucket
+         */
+        public function setAnalyticsBucket($analyticsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsBucket()
+        {
+        }
+        /**
+         * Name of the resource in the following format:
+         * `organizations/{org}/runtimeConfig`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Tenant project ID associated with the Apigee organization. The
+         * tenant project is used to host Google-managed resources that are dedicated
+         * to this Apigee organization. Clients have limited access to resources
+         * within the tenant project used to support Apigee runtime instances. Access
+         * to the tenant project is managed using SetSyncAuthorization. It can be
+         * empty if the tenant project hasn't been created yet.
+         *
+         * @param string $tenantProjectId
+         */
+        public function setTenantProjectId($tenantProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantProjectId()
+        {
+        }
+        /**
+         * Cloud Storage bucket used for uploading Trace records.
+         *
+         * @param string $traceBucket
+         */
+        public function setTraceBucket($traceBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTraceBucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsBucket()
-    {
-    }
-    /**
-     * Name of the resource in the following format:
-     * `organizations/{org}/runtimeConfig`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Tenant project ID associated with the Apigee organization. The
-     * tenant project is used to host Google-managed resources that are dedicated
-     * to this Apigee organization. Clients have limited access to resources
-     * within the tenant project used to support Apigee runtime instances. Access
-     * to the tenant project is managed using SetSyncAuthorization. It can be
-     * empty if the tenant project hasn't been created yet.
-     *
-     * @param string $tenantProjectId
-     */
-    public function setTenantProjectId($tenantProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantProjectId()
-    {
-    }
-    /**
-     * Cloud Storage bucket used for uploading Trace records.
-     *
-     * @param string $traceBucket
-     */
-    public function setTraceBucket($traceBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTraceBucket()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RuntimeConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeConfig
     {
     }
 }

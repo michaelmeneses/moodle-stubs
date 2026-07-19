@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PredictRequestResponseLoggingConfig extends \Google\Model
-{
-    protected $bigqueryDestinationType = GoogleCloudAiplatformV1BigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    /**
-     * If logging is enabled or not.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Percentage of requests to be logged, expressed as a fraction in range(0,1].
-     *
-     * @var 
-     */
-    public $samplingRate;
-    /**
-     * BigQuery table for logging. If only given a project, a new dataset will be
-     * created with name `logging__` where will be made BigQuery-dataset-name
-     * compatible (e.g. most special characters will become underscores). If no
-     * table name is given, a new table will be created with name
-     * `request_response_logging`
-     *
-     * @param GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PredictRequestResponseLoggingConfig extends \Google\Model
     {
+        protected $bigqueryDestinationType = GoogleCloudAiplatformV1BigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        /**
+         * If logging is enabled or not.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Percentage of requests to be logged, expressed as a fraction in range(0,1].
+         *
+         * @var 
+         */
+        public $samplingRate;
+        /**
+         * BigQuery table for logging. If only given a project, a new dataset will be
+         * created with name `logging__` where will be made BigQuery-dataset-name
+         * compatible (e.g. most special characters will become underscores). If no
+         * table name is given, a new table will be created with name
+         * `request_response_logging`
+         *
+         * @param GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * If logging is enabled or not.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        public function setSamplingRate($samplingRate)
+        {
+        }
+        public function getSamplingRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQueryDestination
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictRequestResponseLoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * If logging is enabled or not.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    public function setSamplingRate($samplingRate)
-    {
-    }
-    public function getSamplingRate()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PredictRequestResponseLoggingConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictRequestResponseLoggingConfig
     {
     }
 }

@@ -21,54 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub\Resource;
-
-/**
- * The "discoveredApiOperations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apihubService = new Google\Service\APIhub(...);
- *   $discoveredApiOperations = $apihubService->projects_locations_discoveredApiObservations_discoveredApiOperations;
- *  </code>
- */
-class ProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations extends \Google\Service\Resource
-{
+namespace Google\Service\APIhub\Resource {
+    use Google\Service\APIhub\GoogleCloudApihubV1DiscoveredApiOperation;
+    use Google\Service\APIhub\GoogleCloudApihubV1ListDiscoveredApiOperationsResponse;
     /**
-     * Gets a DiscoveredAPIOperation in a given project, location, ApiObservation
-     * and ApiOperation. (discoveredApiOperations.get)
-     *
-     * @param string $name Required. The name of the DiscoveredApiOperation to
-     * retrieve. Format: projects/{project}/locations/{location}/discoveredApiObserv
-     * ations/{discovered_api_observation}/discoveredApiOperations/{discovered_api_o
-     * peration}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApihubV1DiscoveredApiOperation
-     * @throws \Google\Service\Exception
+     * The "discoveredApiOperations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apihubService = new Google\Service\APIhub(...);
+     *   $discoveredApiOperations = $apihubService->projects_locations_discoveredApiObservations_discoveredApiOperations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations extends \Google\Service\Resource
     {
+        /**
+         * Gets a DiscoveredAPIOperation in a given project, location, ApiObservation
+         * and ApiOperation. (discoveredApiOperations.get)
+         *
+         * @param string $name Required. The name of the DiscoveredApiOperation to
+         * retrieve. Format: projects/{project}/locations/{location}/discoveredApiObserv
+         * ations/{discovered_api_observation}/discoveredApiOperations/{discovered_api_o
+         * peration}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApihubV1DiscoveredApiOperation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the DiscoveredAPIOperations in a given project, location and
+         * ApiObservation. (discoveredApiOperations.listProjectsLocationsDiscoveredApiOb
+         * servationsDiscoveredApiOperations)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * DiscoveredApiOperations. Format: projects/{project}/locations/{location}/disc
+         * overedApiObservations/{discovered_api_observation}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. DiscoveredApiOperations will be returned.
+         * The maximum value is 1000; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListDiscoveredApiApiOperations` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListDiscoveredApiApiOperations` must match the call that provided the page
+         * token.
+         * @return GoogleCloudApihubV1ListDiscoveredApiOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the DiscoveredAPIOperations in a given project, location and
-     * ApiObservation. (discoveredApiOperations.listProjectsLocationsDiscoveredApiOb
-     * servationsDiscoveredApiOperations)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * DiscoveredApiOperations. Format: projects/{project}/locations/{location}/disc
-     * overedApiObservations/{discovered_api_observation}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. DiscoveredApiOperations will be returned.
-     * The maximum value is 1000; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListDiscoveredApiApiOperations` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListDiscoveredApiApiOperations` must match the call that provided the page
-     * token.
-     * @return GoogleCloudApihubV1ListDiscoveredApiOperationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\APIhub\Resource\ProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations($parent, $optParams = [])
+    class Google_Service_APIhub_Resource_ProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations extends \Google\Service\APIhub\Resource\ProjectsLocationsDiscoveredApiObservationsDiscoveredApiOperations
     {
     }
 }

@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class RuntimeConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $conndSubscription;
-    /**
-     * @var string
-     */
-    public $conndTopic;
-    /**
-     * @var string
-     */
-    public $controlPlaneSubscription;
-    /**
-     * @var string
-     */
-    public $controlPlaneTopic;
-    /**
-     * @var string
-     */
-    public $locationId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $runtimeEndpoint;
-    /**
-     * @var string
-     */
-    public $schemaGcsBucket;
-    /**
-     * @var string
-     */
-    public $serviceDirectory;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setConndSubscription($conndSubscription)
+namespace Google\Service\Connectors {
+    class RuntimeConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $conndSubscription;
+        /**
+         * @var string
+         */
+        public $conndTopic;
+        /**
+         * @var string
+         */
+        public $controlPlaneSubscription;
+        /**
+         * @var string
+         */
+        public $controlPlaneTopic;
+        /**
+         * @var string
+         */
+        public $locationId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $runtimeEndpoint;
+        /**
+         * @var string
+         */
+        public $schemaGcsBucket;
+        /**
+         * @var string
+         */
+        public $serviceDirectory;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setConndSubscription($conndSubscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConndSubscription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConndTopic($conndTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConndTopic()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setControlPlaneSubscription($controlPlaneSubscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlaneSubscription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setControlPlaneTopic($controlPlaneTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlaneTopic()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRuntimeEndpoint($runtimeEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeEndpoint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSchemaGcsBucket($schemaGcsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaGcsBucket()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceDirectory($serviceDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceDirectory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\RuntimeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConndSubscription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConndTopic($conndTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConndTopic()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setControlPlaneSubscription($controlPlaneSubscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getControlPlaneSubscription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setControlPlaneTopic($controlPlaneTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getControlPlaneTopic()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRuntimeEndpoint($runtimeEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeEndpoint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSchemaGcsBucket($schemaGcsBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaGcsBucket()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceDirectory($serviceDirectory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceDirectory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Connectors_RuntimeConfig extends \Google\Service\Connectors\RuntimeConfig
     {
     }
 }

@@ -16,6 +16,7 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\LogRecord;
 /**
  * Base Handler class providing the Handler structure, including processors and formatters
  *

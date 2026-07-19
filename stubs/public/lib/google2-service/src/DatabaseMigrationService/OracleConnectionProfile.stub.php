@@ -21,220 +21,229 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class OracleConnectionProfile extends \Google\Model
-{
-    /**
-     * Required. Database service for the Oracle connection.
-     *
-     * @var string
-     */
-    public $databaseService;
-    protected $forwardSshConnectivityType = ForwardSshTunnelConnectivity::class;
-    protected $forwardSshConnectivityDataType = '';
-    /**
-     * Required. The IP or hostname of the source Oracle database.
-     *
-     * @var string
-     */
-    public $host;
-    protected $oracleAsmConfigType = OracleAsmConfig::class;
-    protected $oracleAsmConfigDataType = '';
-    /**
-     * Required. Input only. The password for the user that Database Migration
-     * Service will be using to connect to the database. This field is not
-     * returned on request, and the value is encrypted when stored in Database
-     * Migration Service.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Output only. Indicates whether a new password is included in the request.
-     *
-     * @var bool
-     */
-    public $passwordSet;
-    /**
-     * Required. The network port of the source Oracle database.
-     *
-     * @var int
-     */
-    public $port;
-    protected $privateConnectivityType = PrivateConnectivity::class;
-    protected $privateConnectivityDataType = '';
-    protected $sslType = SslConfig::class;
-    protected $sslDataType = '';
-    protected $staticServiceIpConnectivityType = StaticServiceIpConnectivity::class;
-    protected $staticServiceIpConnectivityDataType = '';
-    /**
-     * Required. The username that Database Migration Service will use to connect
-     * to the database. The value is encrypted when stored in Database Migration
-     * Service.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. Database service for the Oracle connection.
-     *
-     * @param string $databaseService
-     */
-    public function setDatabaseService($databaseService)
+namespace Google\Service\DatabaseMigrationService {
+    class OracleConnectionProfile extends \Google\Model
     {
+        /**
+         * Required. Database service for the Oracle connection.
+         *
+         * @var string
+         */
+        public $databaseService;
+        protected $forwardSshConnectivityType = ForwardSshTunnelConnectivity::class;
+        protected $forwardSshConnectivityDataType = '';
+        /**
+         * Required. The IP or hostname of the source Oracle database.
+         *
+         * @var string
+         */
+        public $host;
+        protected $oracleAsmConfigType = OracleAsmConfig::class;
+        protected $oracleAsmConfigDataType = '';
+        /**
+         * Required. Input only. The password for the user that Database Migration
+         * Service will be using to connect to the database. This field is not
+         * returned on request, and the value is encrypted when stored in Database
+         * Migration Service.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Output only. Indicates whether a new password is included in the request.
+         *
+         * @var bool
+         */
+        public $passwordSet;
+        /**
+         * Required. The network port of the source Oracle database.
+         *
+         * @var int
+         */
+        public $port;
+        protected $privateConnectivityType = PrivateConnectivity::class;
+        protected $privateConnectivityDataType = '';
+        protected $sslType = SslConfig::class;
+        protected $sslDataType = '';
+        protected $staticServiceIpConnectivityType = StaticServiceIpConnectivity::class;
+        protected $staticServiceIpConnectivityDataType = '';
+        /**
+         * Required. The username that Database Migration Service will use to connect
+         * to the database. The value is encrypted when stored in Database Migration
+         * Service.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. Database service for the Oracle connection.
+         *
+         * @param string $databaseService
+         */
+        public function setDatabaseService($databaseService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseService()
+        {
+        }
+        /**
+         * Forward SSH tunnel connectivity.
+         *
+         * @param ForwardSshTunnelConnectivity $forwardSshConnectivity
+         */
+        public function setForwardSshConnectivity(ForwardSshTunnelConnectivity $forwardSshConnectivity)
+        {
+        }
+        /**
+         * @return ForwardSshTunnelConnectivity
+         */
+        public function getForwardSshConnectivity()
+        {
+        }
+        /**
+         * Required. The IP or hostname of the source Oracle database.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * Optional. Configuration for Oracle ASM connection.
+         *
+         * @param OracleAsmConfig $oracleAsmConfig
+         */
+        public function setOracleAsmConfig(OracleAsmConfig $oracleAsmConfig)
+        {
+        }
+        /**
+         * @return OracleAsmConfig
+         */
+        public function getOracleAsmConfig()
+        {
+        }
+        /**
+         * Required. Input only. The password for the user that Database Migration
+         * Service will be using to connect to the database. This field is not
+         * returned on request, and the value is encrypted when stored in Database
+         * Migration Service.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Output only. Indicates whether a new password is included in the request.
+         *
+         * @param bool $passwordSet
+         */
+        public function setPasswordSet($passwordSet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPasswordSet()
+        {
+        }
+        /**
+         * Required. The network port of the source Oracle database.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Private connectivity.
+         *
+         * @param PrivateConnectivity $privateConnectivity
+         */
+        public function setPrivateConnectivity(PrivateConnectivity $privateConnectivity)
+        {
+        }
+        /**
+         * @return PrivateConnectivity
+         */
+        public function getPrivateConnectivity()
+        {
+        }
+        /**
+         * SSL configuration for the connection to the source Oracle database. * Only
+         * `SERVER_ONLY` configuration is supported for Oracle SSL. * SSL is supported
+         * for Oracle versions 12 and above.
+         *
+         * @param SslConfig $ssl
+         */
+        public function setSsl(SslConfig $ssl)
+        {
+        }
+        /**
+         * @return SslConfig
+         */
+        public function getSsl()
+        {
+        }
+        /**
+         * Static Service IP connectivity.
+         *
+         * @param StaticServiceIpConnectivity $staticServiceIpConnectivity
+         */
+        public function setStaticServiceIpConnectivity(StaticServiceIpConnectivity $staticServiceIpConnectivity)
+        {
+        }
+        /**
+         * @return StaticServiceIpConnectivity
+         */
+        public function getStaticServiceIpConnectivity()
+        {
+        }
+        /**
+         * Required. The username that Database Migration Service will use to connect
+         * to the database. The value is encrypted when stored in Database Migration
+         * Service.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\OracleConnectionProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseService()
-    {
-    }
-    /**
-     * Forward SSH tunnel connectivity.
-     *
-     * @param ForwardSshTunnelConnectivity $forwardSshConnectivity
-     */
-    public function setForwardSshConnectivity(ForwardSshTunnelConnectivity $forwardSshConnectivity)
-    {
-    }
-    /**
-     * @return ForwardSshTunnelConnectivity
-     */
-    public function getForwardSshConnectivity()
-    {
-    }
-    /**
-     * Required. The IP or hostname of the source Oracle database.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * Optional. Configuration for Oracle ASM connection.
-     *
-     * @param OracleAsmConfig $oracleAsmConfig
-     */
-    public function setOracleAsmConfig(OracleAsmConfig $oracleAsmConfig)
-    {
-    }
-    /**
-     * @return OracleAsmConfig
-     */
-    public function getOracleAsmConfig()
-    {
-    }
-    /**
-     * Required. Input only. The password for the user that Database Migration
-     * Service will be using to connect to the database. This field is not
-     * returned on request, and the value is encrypted when stored in Database
-     * Migration Service.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Output only. Indicates whether a new password is included in the request.
-     *
-     * @param bool $passwordSet
-     */
-    public function setPasswordSet($passwordSet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPasswordSet()
-    {
-    }
-    /**
-     * Required. The network port of the source Oracle database.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * Private connectivity.
-     *
-     * @param PrivateConnectivity $privateConnectivity
-     */
-    public function setPrivateConnectivity(PrivateConnectivity $privateConnectivity)
-    {
-    }
-    /**
-     * @return PrivateConnectivity
-     */
-    public function getPrivateConnectivity()
-    {
-    }
-    /**
-     * SSL configuration for the connection to the source Oracle database. * Only
-     * `SERVER_ONLY` configuration is supported for Oracle SSL. * SSL is supported
-     * for Oracle versions 12 and above.
-     *
-     * @param SslConfig $ssl
-     */
-    public function setSsl(SslConfig $ssl)
-    {
-    }
-    /**
-     * @return SslConfig
-     */
-    public function getSsl()
-    {
-    }
-    /**
-     * Static Service IP connectivity.
-     *
-     * @param StaticServiceIpConnectivity $staticServiceIpConnectivity
-     */
-    public function setStaticServiceIpConnectivity(StaticServiceIpConnectivity $staticServiceIpConnectivity)
-    {
-    }
-    /**
-     * @return StaticServiceIpConnectivity
-     */
-    public function getStaticServiceIpConnectivity()
-    {
-    }
-    /**
-     * Required. The username that Database Migration Service will use to connect
-     * to the database. The value is encrypted when stored in Database Migration
-     * Service.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_DatabaseMigrationService_OracleConnectionProfile extends \Google\Service\DatabaseMigrationService\OracleConnectionProfile
     {
     }
 }

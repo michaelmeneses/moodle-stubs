@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MasterAuth extends \Google\Model
-{
-    /**
-     * Output only. Base64-encoded public certificate used by clients to
-     * authenticate to the cluster endpoint. Issued only if
-     * client_certificate_config is set.
-     *
-     * @var string
-     */
-    public $clientCertificate;
-    protected $clientCertificateConfigType = ClientCertificateConfig::class;
-    protected $clientCertificateConfigDataType = '';
-    /**
-     * Output only. Base64-encoded private key used by clients to authenticate to
-     * the cluster endpoint.
-     *
-     * @var string
-     */
-    public $clientKey;
-    /**
-     * Output only. Base64-encoded public certificate that is the root of trust
-     * for the cluster.
-     *
-     * @var string
-     */
-    public $clusterCaCertificate;
-    /**
-     * The password to use for HTTP basic authentication to the master endpoint.
-     * Because the master endpoint is open to the Internet, you should create a
-     * strong password. If a password is provided for cluster creation, username
-     * must be non-empty. Warning: basic authentication is deprecated, and will be
-     * removed in GKE control plane versions 1.19 and newer. For a list of
-     * recommended authentication methods, see:
-     * https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-
-     * authentication
-     *
-     * @deprecated
-     * @var string
-     */
-    public $password;
-    /**
-     * The username to use for HTTP basic authentication to the master endpoint.
-     * For clusters v1.6.0 and later, basic authentication can be disabled by
-     * leaving username unspecified (or setting it to the empty string). Warning:
-     * basic authentication is deprecated, and will be removed in GKE control
-     * plane versions 1.19 and newer. For a list of recommended authentication
-     * methods, see: https://cloud.google.com/kubernetes-engine/docs/how-to/api-
-     * server-authentication
-     *
-     * @deprecated
-     * @var string
-     */
-    public $username;
-    /**
-     * Output only. Base64-encoded public certificate used by clients to
-     * authenticate to the cluster endpoint. Issued only if
-     * client_certificate_config is set.
-     *
-     * @param string $clientCertificate
-     */
-    public function setClientCertificate($clientCertificate)
+namespace Google\Service\Container {
+    class MasterAuth extends \Google\Model
     {
+        /**
+         * Output only. Base64-encoded public certificate used by clients to
+         * authenticate to the cluster endpoint. Issued only if
+         * client_certificate_config is set.
+         *
+         * @var string
+         */
+        public $clientCertificate;
+        protected $clientCertificateConfigType = ClientCertificateConfig::class;
+        protected $clientCertificateConfigDataType = '';
+        /**
+         * Output only. Base64-encoded private key used by clients to authenticate to
+         * the cluster endpoint.
+         *
+         * @var string
+         */
+        public $clientKey;
+        /**
+         * Output only. Base64-encoded public certificate that is the root of trust
+         * for the cluster.
+         *
+         * @var string
+         */
+        public $clusterCaCertificate;
+        /**
+         * The password to use for HTTP basic authentication to the master endpoint.
+         * Because the master endpoint is open to the Internet, you should create a
+         * strong password. If a password is provided for cluster creation, username
+         * must be non-empty. Warning: basic authentication is deprecated, and will be
+         * removed in GKE control plane versions 1.19 and newer. For a list of
+         * recommended authentication methods, see:
+         * https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-
+         * authentication
+         *
+         * @deprecated
+         * @var string
+         */
+        public $password;
+        /**
+         * The username to use for HTTP basic authentication to the master endpoint.
+         * For clusters v1.6.0 and later, basic authentication can be disabled by
+         * leaving username unspecified (or setting it to the empty string). Warning:
+         * basic authentication is deprecated, and will be removed in GKE control
+         * plane versions 1.19 and newer. For a list of recommended authentication
+         * methods, see: https://cloud.google.com/kubernetes-engine/docs/how-to/api-
+         * server-authentication
+         *
+         * @deprecated
+         * @var string
+         */
+        public $username;
+        /**
+         * Output only. Base64-encoded public certificate used by clients to
+         * authenticate to the cluster endpoint. Issued only if
+         * client_certificate_config is set.
+         *
+         * @param string $clientCertificate
+         */
+        public function setClientCertificate($clientCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientCertificate()
+        {
+        }
+        /**
+         * Configuration for client certificate authentication on the cluster. For
+         * clusters before v1.12, if no configuration is specified, a client
+         * certificate is issued.
+         *
+         * @param ClientCertificateConfig $clientCertificateConfig
+         */
+        public function setClientCertificateConfig(ClientCertificateConfig $clientCertificateConfig)
+        {
+        }
+        /**
+         * @return ClientCertificateConfig
+         */
+        public function getClientCertificateConfig()
+        {
+        }
+        /**
+         * Output only. Base64-encoded private key used by clients to authenticate to
+         * the cluster endpoint.
+         *
+         * @param string $clientKey
+         */
+        public function setClientKey($clientKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientKey()
+        {
+        }
+        /**
+         * Output only. Base64-encoded public certificate that is the root of trust
+         * for the cluster.
+         *
+         * @param string $clusterCaCertificate
+         */
+        public function setClusterCaCertificate($clusterCaCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterCaCertificate()
+        {
+        }
+        /**
+         * The password to use for HTTP basic authentication to the master endpoint.
+         * Because the master endpoint is open to the Internet, you should create a
+         * strong password. If a password is provided for cluster creation, username
+         * must be non-empty. Warning: basic authentication is deprecated, and will be
+         * removed in GKE control plane versions 1.19 and newer. For a list of
+         * recommended authentication methods, see:
+         * https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-
+         * authentication
+         *
+         * @deprecated
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * The username to use for HTTP basic authentication to the master endpoint.
+         * For clusters v1.6.0 and later, basic authentication can be disabled by
+         * leaving username unspecified (or setting it to the empty string). Warning:
+         * basic authentication is deprecated, and will be removed in GKE control
+         * plane versions 1.19 and newer. For a list of recommended authentication
+         * methods, see: https://cloud.google.com/kubernetes-engine/docs/how-to/api-
+         * server-authentication
+         *
+         * @deprecated
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\MasterAuth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientCertificate()
-    {
-    }
-    /**
-     * Configuration for client certificate authentication on the cluster. For
-     * clusters before v1.12, if no configuration is specified, a client
-     * certificate is issued.
-     *
-     * @param ClientCertificateConfig $clientCertificateConfig
-     */
-    public function setClientCertificateConfig(ClientCertificateConfig $clientCertificateConfig)
-    {
-    }
-    /**
-     * @return ClientCertificateConfig
-     */
-    public function getClientCertificateConfig()
-    {
-    }
-    /**
-     * Output only. Base64-encoded private key used by clients to authenticate to
-     * the cluster endpoint.
-     *
-     * @param string $clientKey
-     */
-    public function setClientKey($clientKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientKey()
-    {
-    }
-    /**
-     * Output only. Base64-encoded public certificate that is the root of trust
-     * for the cluster.
-     *
-     * @param string $clusterCaCertificate
-     */
-    public function setClusterCaCertificate($clusterCaCertificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterCaCertificate()
-    {
-    }
-    /**
-     * The password to use for HTTP basic authentication to the master endpoint.
-     * Because the master endpoint is open to the Internet, you should create a
-     * strong password. If a password is provided for cluster creation, username
-     * must be non-empty. Warning: basic authentication is deprecated, and will be
-     * removed in GKE control plane versions 1.19 and newer. For a list of
-     * recommended authentication methods, see:
-     * https://cloud.google.com/kubernetes-engine/docs/how-to/api-server-
-     * authentication
-     *
-     * @deprecated
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * The username to use for HTTP basic authentication to the master endpoint.
-     * For clusters v1.6.0 and later, basic authentication can be disabled by
-     * leaving username unspecified (or setting it to the empty string). Warning:
-     * basic authentication is deprecated, and will be removed in GKE control
-     * plane versions 1.19 and newer. For a list of recommended authentication
-     * methods, see: https://cloud.google.com/kubernetes-engine/docs/how-to/api-
-     * server-authentication
-     *
-     * @deprecated
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Container_MasterAuth extends \Google\Service\Container\MasterAuth
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AttackPathEdge extends \Google\Model
-{
-    /**
-     * The attack node uuid of the destination node.
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * The attack node uuid of the source node.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * The attack node uuid of the destination node.
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
+namespace Google\Service\SecurityCommandCenter {
+    class AttackPathEdge extends \Google\Model
     {
+        /**
+         * The attack node uuid of the destination node.
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * The attack node uuid of the source node.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * The attack node uuid of the destination node.
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * The attack node uuid of the source node.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AttackPathEdge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
-    {
-    }
-    /**
-     * The attack node uuid of the source node.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_SecurityCommandCenter_AttackPathEdge extends \Google\Service\SecurityCommandCenter\AttackPathEdge
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Source extends \Google\Model
-{
-    protected $connectedRepositoryType = ConnectedRepository::class;
-    protected $connectedRepositoryDataType = '';
-    protected $gitSourceType = GitSource::class;
-    protected $gitSourceDataType = '';
-    protected $repoSourceType = RepoSource::class;
-    protected $repoSourceDataType = '';
-    protected $storageSourceType = StorageSource::class;
-    protected $storageSourceDataType = '';
-    protected $storageSourceManifestType = StorageSourceManifest::class;
-    protected $storageSourceManifestDataType = '';
-    /**
-     * @param ConnectedRepository
-     */
-    public function setConnectedRepository(ConnectedRepository $connectedRepository)
+namespace Google\Service\CloudBuild {
+    class Source extends \Google\Model
     {
+        protected $connectedRepositoryType = ConnectedRepository::class;
+        protected $connectedRepositoryDataType = '';
+        protected $gitSourceType = GitSource::class;
+        protected $gitSourceDataType = '';
+        protected $repoSourceType = RepoSource::class;
+        protected $repoSourceDataType = '';
+        protected $storageSourceType = StorageSource::class;
+        protected $storageSourceDataType = '';
+        protected $storageSourceManifestType = StorageSourceManifest::class;
+        protected $storageSourceManifestDataType = '';
+        /**
+         * @param ConnectedRepository
+         */
+        public function setConnectedRepository(ConnectedRepository $connectedRepository)
+        {
+        }
+        /**
+         * @return ConnectedRepository
+         */
+        public function getConnectedRepository()
+        {
+        }
+        /**
+         * @param GitSource
+         */
+        public function setGitSource(GitSource $gitSource)
+        {
+        }
+        /**
+         * @return GitSource
+         */
+        public function getGitSource()
+        {
+        }
+        /**
+         * @param RepoSource
+         */
+        public function setRepoSource(RepoSource $repoSource)
+        {
+        }
+        /**
+         * @return RepoSource
+         */
+        public function getRepoSource()
+        {
+        }
+        /**
+         * @param StorageSource
+         */
+        public function setStorageSource(StorageSource $storageSource)
+        {
+        }
+        /**
+         * @return StorageSource
+         */
+        public function getStorageSource()
+        {
+        }
+        /**
+         * @param StorageSourceManifest
+         */
+        public function setStorageSourceManifest(StorageSourceManifest $storageSourceManifest)
+        {
+        }
+        /**
+         * @return StorageSourceManifest
+         */
+        public function getStorageSourceManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectedRepository
+     * Runtime class alias of \Google\Service\CloudBuild\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedRepository()
-    {
-    }
-    /**
-     * @param GitSource
-     */
-    public function setGitSource(GitSource $gitSource)
-    {
-    }
-    /**
-     * @return GitSource
-     */
-    public function getGitSource()
-    {
-    }
-    /**
-     * @param RepoSource
-     */
-    public function setRepoSource(RepoSource $repoSource)
-    {
-    }
-    /**
-     * @return RepoSource
-     */
-    public function getRepoSource()
-    {
-    }
-    /**
-     * @param StorageSource
-     */
-    public function setStorageSource(StorageSource $storageSource)
-    {
-    }
-    /**
-     * @return StorageSource
-     */
-    public function getStorageSource()
-    {
-    }
-    /**
-     * @param StorageSourceManifest
-     */
-    public function setStorageSourceManifest(StorageSourceManifest $storageSourceManifest)
-    {
-    }
-    /**
-     * @return StorageSourceManifest
-     */
-    public function getStorageSourceManifest()
+    class Google_Service_CloudBuild_Source extends \Google\Service\CloudBuild\Source
     {
     }
 }

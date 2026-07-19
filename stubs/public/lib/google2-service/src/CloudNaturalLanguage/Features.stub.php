@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class Features extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $classifyText;
-    /**
-     * @var bool
-     */
-    public $extractDocumentSentiment;
-    /**
-     * @var bool
-     */
-    public $extractEntities;
-    /**
-     * @var bool
-     */
-    public $moderateText;
-    /**
-     * @param bool
-     */
-    public function setClassifyText($classifyText)
+namespace Google\Service\CloudNaturalLanguage {
+    class Features extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $classifyText;
+        /**
+         * @var bool
+         */
+        public $extractDocumentSentiment;
+        /**
+         * @var bool
+         */
+        public $extractEntities;
+        /**
+         * @var bool
+         */
+        public $moderateText;
+        /**
+         * @param bool
+         */
+        public function setClassifyText($classifyText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClassifyText()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setExtractDocumentSentiment($extractDocumentSentiment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExtractDocumentSentiment()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setExtractEntities($extractEntities)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExtractEntities()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setModerateText($moderateText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getModerateText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\Features registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassifyText()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setExtractDocumentSentiment($extractDocumentSentiment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExtractDocumentSentiment()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setExtractEntities($extractEntities)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExtractEntities()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setModerateText($moderateText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getModerateText()
+    class Google_Service_CloudNaturalLanguage_Features extends \Google\Service\CloudNaturalLanguage\Features
     {
     }
 }

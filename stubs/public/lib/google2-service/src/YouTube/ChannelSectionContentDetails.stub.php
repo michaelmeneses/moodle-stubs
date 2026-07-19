@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelSectionContentDetails extends \Google\Collection
-{
-    protected $collection_key = 'playlists';
-    /**
-     * The channel ids for type multiple_channels.
-     *
-     * @var string[]
-     */
-    public $channels;
-    /**
-     * The playlist ids for type single_playlist and multiple_playlists. For
-     * singlePlaylist, only one playlistId is allowed.
-     *
-     * @var string[]
-     */
-    public $playlists;
-    /**
-     * The channel ids for type multiple_channels.
-     *
-     * @param string[] $channels
-     */
-    public function setChannels($channels)
+namespace Google\Service\YouTube {
+    class ChannelSectionContentDetails extends \Google\Collection
     {
+        protected $collection_key = 'playlists';
+        /**
+         * The channel ids for type multiple_channels.
+         *
+         * @var string[]
+         */
+        public $channels;
+        /**
+         * The playlist ids for type single_playlist and multiple_playlists. For
+         * singlePlaylist, only one playlistId is allowed.
+         *
+         * @var string[]
+         */
+        public $playlists;
+        /**
+         * The channel ids for type multiple_channels.
+         *
+         * @param string[] $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * The playlist ids for type single_playlist and multiple_playlists. For
+         * singlePlaylist, only one playlistId is allowed.
+         *
+         * @param string[] $playlists
+         */
+        public function setPlaylists($playlists)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPlaylists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\ChannelSectionContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
-    {
-    }
-    /**
-     * The playlist ids for type single_playlist and multiple_playlists. For
-     * singlePlaylist, only one playlistId is allowed.
-     *
-     * @param string[] $playlists
-     */
-    public function setPlaylists($playlists)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPlaylists()
+    class Google_Service_YouTube_ChannelSectionContentDetails extends \Google\Service\YouTube\ChannelSectionContentDetails
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class UrlTargeting extends \Google\Collection
-{
-    protected $collection_key = 'targetedUrls';
-    /**
-     * A list of URLs to be excluded.
-     *
-     * @var string[]
-     */
-    public $excludedUrls;
-    /**
-     * A list of URLs to be included.
-     *
-     * @var string[]
-     */
-    public $targetedUrls;
-    /**
-     * A list of URLs to be excluded.
-     *
-     * @param string[] $excludedUrls
-     */
-    public function setExcludedUrls($excludedUrls)
+namespace Google\Service\AdExchangeBuyerII {
+    class UrlTargeting extends \Google\Collection
     {
+        protected $collection_key = 'targetedUrls';
+        /**
+         * A list of URLs to be excluded.
+         *
+         * @var string[]
+         */
+        public $excludedUrls;
+        /**
+         * A list of URLs to be included.
+         *
+         * @var string[]
+         */
+        public $targetedUrls;
+        /**
+         * A list of URLs to be excluded.
+         *
+         * @param string[] $excludedUrls
+         */
+        public function setExcludedUrls($excludedUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedUrls()
+        {
+        }
+        /**
+         * A list of URLs to be included.
+         *
+         * @param string[] $targetedUrls
+         */
+        public function setTargetedUrls($targetedUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetedUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\UrlTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedUrls()
-    {
-    }
-    /**
-     * A list of URLs to be included.
-     *
-     * @param string[] $targetedUrls
-     */
-    public function setTargetedUrls($targetedUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetedUrls()
+    class Google_Service_AdExchangeBuyerII_UrlTargeting extends \Google\Service\AdExchangeBuyerII\UrlTargeting
     {
     }
 }

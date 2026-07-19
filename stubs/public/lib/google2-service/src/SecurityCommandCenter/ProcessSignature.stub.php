@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ProcessSignature extends \Google\Model
-{
-    /**
-     * The default signature type.
-     */
-    public const SIGNATURE_TYPE_SIGNATURE_TYPE_UNSPECIFIED = 'SIGNATURE_TYPE_UNSPECIFIED';
-    /**
-     * Used for signatures concerning processes.
-     */
-    public const SIGNATURE_TYPE_SIGNATURE_TYPE_PROCESS = 'SIGNATURE_TYPE_PROCESS';
-    /**
-     * Used for signatures concerning disks.
-     */
-    public const SIGNATURE_TYPE_SIGNATURE_TYPE_FILE = 'SIGNATURE_TYPE_FILE';
-    protected $memoryHashSignatureType = MemoryHashSignature::class;
-    protected $memoryHashSignatureDataType = '';
-    /**
-     * Describes the type of resource associated with the signature.
-     *
-     * @var string
-     */
-    public $signatureType;
-    protected $yaraRuleSignatureType = YaraRuleSignature::class;
-    protected $yaraRuleSignatureDataType = '';
-    /**
-     * Signature indicating that a binary family was matched.
-     *
-     * @param MemoryHashSignature $memoryHashSignature
-     */
-    public function setMemoryHashSignature(MemoryHashSignature $memoryHashSignature)
+namespace Google\Service\SecurityCommandCenter {
+    class ProcessSignature extends \Google\Model
     {
+        /**
+         * The default signature type.
+         */
+        public const SIGNATURE_TYPE_SIGNATURE_TYPE_UNSPECIFIED = 'SIGNATURE_TYPE_UNSPECIFIED';
+        /**
+         * Used for signatures concerning processes.
+         */
+        public const SIGNATURE_TYPE_SIGNATURE_TYPE_PROCESS = 'SIGNATURE_TYPE_PROCESS';
+        /**
+         * Used for signatures concerning disks.
+         */
+        public const SIGNATURE_TYPE_SIGNATURE_TYPE_FILE = 'SIGNATURE_TYPE_FILE';
+        protected $memoryHashSignatureType = MemoryHashSignature::class;
+        protected $memoryHashSignatureDataType = '';
+        /**
+         * Describes the type of resource associated with the signature.
+         *
+         * @var string
+         */
+        public $signatureType;
+        protected $yaraRuleSignatureType = YaraRuleSignature::class;
+        protected $yaraRuleSignatureDataType = '';
+        /**
+         * Signature indicating that a binary family was matched.
+         *
+         * @param MemoryHashSignature $memoryHashSignature
+         */
+        public function setMemoryHashSignature(MemoryHashSignature $memoryHashSignature)
+        {
+        }
+        /**
+         * @return MemoryHashSignature
+         */
+        public function getMemoryHashSignature()
+        {
+        }
+        /**
+         * Describes the type of resource associated with the signature.
+         *
+         * Accepted values: SIGNATURE_TYPE_UNSPECIFIED, SIGNATURE_TYPE_PROCESS,
+         * SIGNATURE_TYPE_FILE
+         *
+         * @param self::SIGNATURE_TYPE_* $signatureType
+         */
+        public function setSignatureType($signatureType)
+        {
+        }
+        /**
+         * @return self::SIGNATURE_TYPE_*
+         */
+        public function getSignatureType()
+        {
+        }
+        /**
+         * Signature indicating that a YARA rule was matched.
+         *
+         * @param YaraRuleSignature $yaraRuleSignature
+         */
+        public function setYaraRuleSignature(YaraRuleSignature $yaraRuleSignature)
+        {
+        }
+        /**
+         * @return YaraRuleSignature
+         */
+        public function getYaraRuleSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MemoryHashSignature
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ProcessSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryHashSignature()
-    {
-    }
-    /**
-     * Describes the type of resource associated with the signature.
-     *
-     * Accepted values: SIGNATURE_TYPE_UNSPECIFIED, SIGNATURE_TYPE_PROCESS,
-     * SIGNATURE_TYPE_FILE
-     *
-     * @param self::SIGNATURE_TYPE_* $signatureType
-     */
-    public function setSignatureType($signatureType)
-    {
-    }
-    /**
-     * @return self::SIGNATURE_TYPE_*
-     */
-    public function getSignatureType()
-    {
-    }
-    /**
-     * Signature indicating that a YARA rule was matched.
-     *
-     * @param YaraRuleSignature $yaraRuleSignature
-     */
-    public function setYaraRuleSignature(YaraRuleSignature $yaraRuleSignature)
-    {
-    }
-    /**
-     * @return YaraRuleSignature
-     */
-    public function getYaraRuleSignature()
+    class Google_Service_SecurityCommandCenter_ProcessSignature extends \Google\Service\SecurityCommandCenter\ProcessSignature
     {
     }
 }

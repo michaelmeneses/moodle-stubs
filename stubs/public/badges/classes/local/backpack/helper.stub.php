@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\local\backpack;
 
+use core_badges\achievement_credential;
 /**
  * Helper class for Open Badges, used for methods that are common.
  *

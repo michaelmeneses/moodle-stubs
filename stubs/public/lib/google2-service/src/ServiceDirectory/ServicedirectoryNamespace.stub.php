@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceDirectory;
-
-class ServicedirectoryNamespace extends \Google\Model
-{
-    /**
-     * Optional. Resource labels associated with this namespace. No more than 64
-     * user labels can be associated with a given resource. Label keys and values
-     * can be no longer than 63 characters.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. The resource name for the namespace in the format
-     * `projects/locations/namespaces`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The globally unique identifier of the namespace in the UUID4
-     * format.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Optional. Resource labels associated with this namespace. No more than 64
-     * user labels can be associated with a given resource. Label keys and values
-     * can be no longer than 63 characters.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\ServiceDirectory {
+    class ServicedirectoryNamespace extends \Google\Model
     {
+        /**
+         * Optional. Resource labels associated with this namespace. No more than 64
+         * user labels can be associated with a given resource. Label keys and values
+         * can be no longer than 63 characters.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. The resource name for the namespace in the format
+         * `projects/locations/namespaces`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The globally unique identifier of the namespace in the UUID4
+         * format.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Optional. Resource labels associated with this namespace. No more than 64
+         * user labels can be associated with a given resource. Label keys and values
+         * can be no longer than 63 characters.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. The resource name for the namespace in the format
+         * `projects/locations/namespaces`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The globally unique identifier of the namespace in the UUID4
+         * format.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceDirectory\ServicedirectoryNamespace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. The resource name for the namespace in the format
-     * `projects/locations/namespaces`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The globally unique identifier of the namespace in the UUID4
-     * format.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_ServiceDirectory_ServicedirectoryNamespace extends \Google\Service\ServiceDirectory\ServicedirectoryNamespace
     {
     }
 }

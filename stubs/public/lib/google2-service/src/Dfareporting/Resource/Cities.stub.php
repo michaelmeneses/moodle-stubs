@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "cities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $cities = $dfareportingService->cities;
- *  </code>
- */
-class Cities extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CitiesListResponse;
     /**
-     * Retrieves a list of cities, possibly filtered. (cities.listCities)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string countryDartIds Select only cities from these countries.
-     * @opt_param string dartIds Select only cities with these DART IDs.
-     * @opt_param string namePrefix Select only cities with names starting with this
-     * prefix.
-     * @opt_param string regionDartIds Select only cities from these regions.
-     * @return CitiesListResponse
-     * @throws \Google\Service\Exception
+     * The "cities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $cities = $dfareportingService->cities;
+     *  </code>
      */
-    public function listCities($profileId, $optParams = [])
+    class Cities extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of cities, possibly filtered. (cities.listCities)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string countryDartIds Select only cities from these countries.
+         * @opt_param string dartIds Select only cities with these DART IDs.
+         * @opt_param string namePrefix Select only cities with names starting with this
+         * prefix.
+         * @opt_param string regionDartIds Select only cities from these regions.
+         * @return CitiesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCities($profileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Cities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_Cities extends \Google\Service\Dfareporting\Resource\Cities
     {
     }
 }

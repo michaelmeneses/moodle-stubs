@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class ExistingDisk extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $disk;
-    /**
-     * @param string
-     */
-    public function setDisk($disk)
+namespace Google\Service\Genomics {
+    class ExistingDisk extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $disk;
+        /**
+         * @param string
+         */
+        public function setDisk($disk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\ExistingDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisk()
+    class Google_Service_Genomics_ExistingDisk extends \Google\Service\Genomics\ExistingDisk
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class UnlockDeploymentRequest extends \Google\Model
-{
-    /**
-     * Required. Lock ID of the lock file to be unlocked.
-     *
-     * @var string
-     */
-    public $lockId;
-    /**
-     * Required. Lock ID of the lock file to be unlocked.
-     *
-     * @param string $lockId
-     */
-    public function setLockId($lockId)
+namespace Google\Service\Config {
+    class UnlockDeploymentRequest extends \Google\Model
     {
+        /**
+         * Required. Lock ID of the lock file to be unlocked.
+         *
+         * @var string
+         */
+        public $lockId;
+        /**
+         * Required. Lock ID of the lock file to be unlocked.
+         *
+         * @param string $lockId
+         */
+        public function setLockId($lockId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLockId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\UnlockDeploymentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLockId()
+    class Google_Service_Config_UnlockDeploymentRequest extends \Google\Service\Config\UnlockDeploymentRequest
     {
     }
 }

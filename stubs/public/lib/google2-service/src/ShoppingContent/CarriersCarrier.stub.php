@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CarriersCarrier extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * The CLDR country code of the carrier (for example, "US"). Always present.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * A list of services supported for EDD (Estimated Delivery Date) calculation.
-     * This is the list of valid values for
-     * WarehouseBasedDeliveryTime.carrierService.
-     *
-     * @var string[]
-     */
-    public $eddServices;
-    /**
-     * The name of the carrier (for example, `"UPS"`). Always present.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A list of supported services (for example, `"ground"`) for that carrier.
-     * Contains at least one service. This is the list of valid values for
-     * CarrierRate.carrierService.
-     *
-     * @var string[]
-     */
-    public $services;
-    /**
-     * The CLDR country code of the carrier (for example, "US"). Always present.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class CarriersCarrier extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * The CLDR country code of the carrier (for example, "US"). Always present.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * A list of services supported for EDD (Estimated Delivery Date) calculation.
+         * This is the list of valid values for
+         * WarehouseBasedDeliveryTime.carrierService.
+         *
+         * @var string[]
+         */
+        public $eddServices;
+        /**
+         * The name of the carrier (for example, `"UPS"`). Always present.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A list of supported services (for example, `"ground"`) for that carrier.
+         * Contains at least one service. This is the list of valid values for
+         * CarrierRate.carrierService.
+         *
+         * @var string[]
+         */
+        public $services;
+        /**
+         * The CLDR country code of the carrier (for example, "US"). Always present.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * A list of services supported for EDD (Estimated Delivery Date) calculation.
+         * This is the list of valid values for
+         * WarehouseBasedDeliveryTime.carrierService.
+         *
+         * @param string[] $eddServices
+         */
+        public function setEddServices($eddServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEddServices()
+        {
+        }
+        /**
+         * The name of the carrier (for example, `"UPS"`). Always present.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of supported services (for example, `"ground"`) for that carrier.
+         * Contains at least one service. This is the list of valid values for
+         * CarrierRate.carrierService.
+         *
+         * @param string[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\CarriersCarrier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * A list of services supported for EDD (Estimated Delivery Date) calculation.
-     * This is the list of valid values for
-     * WarehouseBasedDeliveryTime.carrierService.
-     *
-     * @param string[] $eddServices
-     */
-    public function setEddServices($eddServices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEddServices()
-    {
-    }
-    /**
-     * The name of the carrier (for example, `"UPS"`). Always present.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A list of supported services (for example, `"ground"`) for that carrier.
-     * Contains at least one service. This is the list of valid values for
-     * CarrierRate.carrierService.
-     *
-     * @param string[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServices()
+    class Google_Service_ShoppingContent_CarriersCarrier extends \Google\Service\ShoppingContent\CarriersCarrier
     {
     }
 }

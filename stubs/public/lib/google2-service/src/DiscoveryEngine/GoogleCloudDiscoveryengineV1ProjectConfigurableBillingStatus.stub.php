@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ProjectConfigurableBillingStatus extends \Google\Model
-{
-    /**
-     * Optional. The currently effective Indexing Core threshold. This is the
-     * threshold against which Indexing Core usage is compared for overage
-     * calculations.
-     *
-     * @var string
-     */
-    public $effectiveIndexingCoreThreshold;
-    /**
-     * Optional. The currently effective Search QPM threshold in queries per
-     * minute. This is the threshold against which QPM usage is compared for
-     * overage calculations.
-     *
-     * @var string
-     */
-    public $effectiveSearchQpmThreshold;
-    /**
-     * Optional. The start time of the currently active billing subscription.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. The currently effective Indexing Core threshold. This is the
-     * threshold against which Indexing Core usage is compared for overage
-     * calculations.
-     *
-     * @param string $effectiveIndexingCoreThreshold
-     */
-    public function setEffectiveIndexingCoreThreshold($effectiveIndexingCoreThreshold)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ProjectConfigurableBillingStatus extends \Google\Model
     {
+        /**
+         * Optional. The currently effective Indexing Core threshold. This is the
+         * threshold against which Indexing Core usage is compared for overage
+         * calculations.
+         *
+         * @var string
+         */
+        public $effectiveIndexingCoreThreshold;
+        /**
+         * Optional. The currently effective Search QPM threshold in queries per
+         * minute. This is the threshold against which QPM usage is compared for
+         * overage calculations.
+         *
+         * @var string
+         */
+        public $effectiveSearchQpmThreshold;
+        /**
+         * Optional. The start time of the currently active billing subscription.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. The currently effective Indexing Core threshold. This is the
+         * threshold against which Indexing Core usage is compared for overage
+         * calculations.
+         *
+         * @param string $effectiveIndexingCoreThreshold
+         */
+        public function setEffectiveIndexingCoreThreshold($effectiveIndexingCoreThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveIndexingCoreThreshold()
+        {
+        }
+        /**
+         * Optional. The currently effective Search QPM threshold in queries per
+         * minute. This is the threshold against which QPM usage is compared for
+         * overage calculations.
+         *
+         * @param string $effectiveSearchQpmThreshold
+         */
+        public function setEffectiveSearchQpmThreshold($effectiveSearchQpmThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveSearchQpmThreshold()
+        {
+        }
+        /**
+         * Optional. The start time of the currently active billing subscription.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProjectConfigurableBillingStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveIndexingCoreThreshold()
-    {
-    }
-    /**
-     * Optional. The currently effective Search QPM threshold in queries per
-     * minute. This is the threshold against which QPM usage is compared for
-     * overage calculations.
-     *
-     * @param string $effectiveSearchQpmThreshold
-     */
-    public function setEffectiveSearchQpmThreshold($effectiveSearchQpmThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEffectiveSearchQpmThreshold()
-    {
-    }
-    /**
-     * Optional. The start time of the currently active billing subscription.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ProjectConfigurableBillingStatus extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProjectConfigurableBillingStatus
     {
     }
 }

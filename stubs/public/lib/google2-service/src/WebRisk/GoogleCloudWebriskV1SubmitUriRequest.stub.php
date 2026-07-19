@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1SubmitUriRequest extends \Google\Model
-{
-    protected $submissionType = GoogleCloudWebriskV1Submission::class;
-    protected $submissionDataType = '';
-    /**
-     * @param GoogleCloudWebriskV1Submission
-     */
-    public function setSubmission(GoogleCloudWebriskV1Submission $submission)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1SubmitUriRequest extends \Google\Model
     {
+        protected $submissionType = GoogleCloudWebriskV1Submission::class;
+        protected $submissionDataType = '';
+        /**
+         * @param GoogleCloudWebriskV1Submission
+         */
+        public function setSubmission(GoogleCloudWebriskV1Submission $submission)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1Submission
+         */
+        public function getSubmission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudWebriskV1Submission
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1SubmitUriRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubmission()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1SubmitUriRequest extends \Google\Service\WebRisk\GoogleCloudWebriskV1SubmitUriRequest
     {
     }
 }

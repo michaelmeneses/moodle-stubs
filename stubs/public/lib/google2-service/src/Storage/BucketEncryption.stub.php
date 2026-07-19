@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketEncryption extends \Google\Model
-{
-    protected $customerManagedEncryptionEnforcementConfigType = BucketEncryptionCustomerManagedEncryptionEnforcementConfig::class;
-    protected $customerManagedEncryptionEnforcementConfigDataType = '';
-    protected $customerSuppliedEncryptionEnforcementConfigType = BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig::class;
-    protected $customerSuppliedEncryptionEnforcementConfigDataType = '';
-    /**
-     * A Cloud KMS key that will be used to encrypt objects inserted into this
-     * bucket, if no encryption method is specified.
-     *
-     * @var string
-     */
-    public $defaultKmsKeyName;
-    protected $googleManagedEncryptionEnforcementConfigType = BucketEncryptionGoogleManagedEncryptionEnforcementConfig::class;
-    protected $googleManagedEncryptionEnforcementConfigDataType = '';
-    /**
-     * If set, the new objects created in this bucket must comply with this
-     * enforcement config. Changing this has no effect on existing objects; it
-     * applies to new objects only. If omitted, the new objects are allowed to be
-     * encrypted with Customer Managed Encryption type by default.
-     *
-     * @param BucketEncryptionCustomerManagedEncryptionEnforcementConfig $customerManagedEncryptionEnforcementConfig
-     */
-    public function setCustomerManagedEncryptionEnforcementConfig(BucketEncryptionCustomerManagedEncryptionEnforcementConfig $customerManagedEncryptionEnforcementConfig)
+namespace Google\Service\Storage {
+    class BucketEncryption extends \Google\Model
     {
+        protected $customerManagedEncryptionEnforcementConfigType = BucketEncryptionCustomerManagedEncryptionEnforcementConfig::class;
+        protected $customerManagedEncryptionEnforcementConfigDataType = '';
+        protected $customerSuppliedEncryptionEnforcementConfigType = BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig::class;
+        protected $customerSuppliedEncryptionEnforcementConfigDataType = '';
+        /**
+         * A Cloud KMS key that will be used to encrypt objects inserted into this
+         * bucket, if no encryption method is specified.
+         *
+         * @var string
+         */
+        public $defaultKmsKeyName;
+        protected $googleManagedEncryptionEnforcementConfigType = BucketEncryptionGoogleManagedEncryptionEnforcementConfig::class;
+        protected $googleManagedEncryptionEnforcementConfigDataType = '';
+        /**
+         * If set, the new objects created in this bucket must comply with this
+         * enforcement config. Changing this has no effect on existing objects; it
+         * applies to new objects only. If omitted, the new objects are allowed to be
+         * encrypted with Customer Managed Encryption type by default.
+         *
+         * @param BucketEncryptionCustomerManagedEncryptionEnforcementConfig $customerManagedEncryptionEnforcementConfig
+         */
+        public function setCustomerManagedEncryptionEnforcementConfig(BucketEncryptionCustomerManagedEncryptionEnforcementConfig $customerManagedEncryptionEnforcementConfig)
+        {
+        }
+        /**
+         * @return BucketEncryptionCustomerManagedEncryptionEnforcementConfig
+         */
+        public function getCustomerManagedEncryptionEnforcementConfig()
+        {
+        }
+        /**
+         * If set, the new objects created in this bucket must comply with this
+         * enforcement config. Changing this has no effect on existing objects; it
+         * applies to new objects only. If omitted, the new objects are allowed to be
+         * encrypted with Customer Supplied Encryption type by default.
+         *
+         * @param BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig $customerSuppliedEncryptionEnforcementConfig
+         */
+        public function setCustomerSuppliedEncryptionEnforcementConfig(BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig $customerSuppliedEncryptionEnforcementConfig)
+        {
+        }
+        /**
+         * @return BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig
+         */
+        public function getCustomerSuppliedEncryptionEnforcementConfig()
+        {
+        }
+        /**
+         * A Cloud KMS key that will be used to encrypt objects inserted into this
+         * bucket, if no encryption method is specified.
+         *
+         * @param string $defaultKmsKeyName
+         */
+        public function setDefaultKmsKeyName($defaultKmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultKmsKeyName()
+        {
+        }
+        /**
+         * If set, the new objects created in this bucket must comply with this
+         * enforcement config. Changing this has no effect on existing objects; it
+         * applies to new objects only. If omitted, the new objects are allowed to be
+         * encrypted with Google Managed Encryption type by default.
+         *
+         * @param BucketEncryptionGoogleManagedEncryptionEnforcementConfig $googleManagedEncryptionEnforcementConfig
+         */
+        public function setGoogleManagedEncryptionEnforcementConfig(BucketEncryptionGoogleManagedEncryptionEnforcementConfig $googleManagedEncryptionEnforcementConfig)
+        {
+        }
+        /**
+         * @return BucketEncryptionGoogleManagedEncryptionEnforcementConfig
+         */
+        public function getGoogleManagedEncryptionEnforcementConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BucketEncryptionCustomerManagedEncryptionEnforcementConfig
+     * Runtime class alias of \Google\Service\Storage\BucketEncryption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerManagedEncryptionEnforcementConfig()
-    {
-    }
-    /**
-     * If set, the new objects created in this bucket must comply with this
-     * enforcement config. Changing this has no effect on existing objects; it
-     * applies to new objects only. If omitted, the new objects are allowed to be
-     * encrypted with Customer Supplied Encryption type by default.
-     *
-     * @param BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig $customerSuppliedEncryptionEnforcementConfig
-     */
-    public function setCustomerSuppliedEncryptionEnforcementConfig(BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig $customerSuppliedEncryptionEnforcementConfig)
-    {
-    }
-    /**
-     * @return BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig
-     */
-    public function getCustomerSuppliedEncryptionEnforcementConfig()
-    {
-    }
-    /**
-     * A Cloud KMS key that will be used to encrypt objects inserted into this
-     * bucket, if no encryption method is specified.
-     *
-     * @param string $defaultKmsKeyName
-     */
-    public function setDefaultKmsKeyName($defaultKmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultKmsKeyName()
-    {
-    }
-    /**
-     * If set, the new objects created in this bucket must comply with this
-     * enforcement config. Changing this has no effect on existing objects; it
-     * applies to new objects only. If omitted, the new objects are allowed to be
-     * encrypted with Google Managed Encryption type by default.
-     *
-     * @param BucketEncryptionGoogleManagedEncryptionEnforcementConfig $googleManagedEncryptionEnforcementConfig
-     */
-    public function setGoogleManagedEncryptionEnforcementConfig(BucketEncryptionGoogleManagedEncryptionEnforcementConfig $googleManagedEncryptionEnforcementConfig)
-    {
-    }
-    /**
-     * @return BucketEncryptionGoogleManagedEncryptionEnforcementConfig
-     */
-    public function getGoogleManagedEncryptionEnforcementConfig()
+    class Google_Service_Storage_BucketEncryption extends \Google\Service\Storage\BucketEncryption
     {
     }
 }

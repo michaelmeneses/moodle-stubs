@@ -21,279 +21,288 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItem extends \Google\Collection
-{
-    protected $collection_key = 'returns';
-    protected $adjustmentsType = OrderLineItemAdjustment::class;
-    protected $adjustmentsDataType = 'array';
-    protected $annotationsType = OrderMerchantProvidedAnnotation::class;
-    protected $annotationsDataType = 'array';
-    protected $cancellationsType = OrderCancellation::class;
-    protected $cancellationsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $id;
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    protected $productType = OrderLineItemProduct::class;
-    protected $productDataType = '';
-    /**
-     * @var string
-     */
-    public $quantityCanceled;
-    /**
-     * @var string
-     */
-    public $quantityDelivered;
-    /**
-     * @var string
-     */
-    public $quantityOrdered;
-    /**
-     * @var string
-     */
-    public $quantityPending;
-    /**
-     * @var string
-     */
-    public $quantityReadyForPickup;
-    /**
-     * @var string
-     */
-    public $quantityReturned;
-    /**
-     * @var string
-     */
-    public $quantityShipped;
-    /**
-     * @var string
-     */
-    public $quantityUndeliverable;
-    protected $returnInfoType = OrderLineItemReturnInfo::class;
-    protected $returnInfoDataType = '';
-    protected $returnsType = OrderReturn::class;
-    protected $returnsDataType = 'array';
-    protected $shippingDetailsType = OrderLineItemShippingDetails::class;
-    protected $shippingDetailsDataType = '';
-    protected $taxType = Price::class;
-    protected $taxDataType = '';
-    /**
-     * @param OrderLineItemAdjustment[]
-     */
-    public function setAdjustments($adjustments)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItem extends \Google\Collection
     {
+        protected $collection_key = 'returns';
+        protected $adjustmentsType = OrderLineItemAdjustment::class;
+        protected $adjustmentsDataType = 'array';
+        protected $annotationsType = OrderMerchantProvidedAnnotation::class;
+        protected $annotationsDataType = 'array';
+        protected $cancellationsType = OrderCancellation::class;
+        protected $cancellationsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $id;
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        protected $productType = OrderLineItemProduct::class;
+        protected $productDataType = '';
+        /**
+         * @var string
+         */
+        public $quantityCanceled;
+        /**
+         * @var string
+         */
+        public $quantityDelivered;
+        /**
+         * @var string
+         */
+        public $quantityOrdered;
+        /**
+         * @var string
+         */
+        public $quantityPending;
+        /**
+         * @var string
+         */
+        public $quantityReadyForPickup;
+        /**
+         * @var string
+         */
+        public $quantityReturned;
+        /**
+         * @var string
+         */
+        public $quantityShipped;
+        /**
+         * @var string
+         */
+        public $quantityUndeliverable;
+        protected $returnInfoType = OrderLineItemReturnInfo::class;
+        protected $returnInfoDataType = '';
+        protected $returnsType = OrderReturn::class;
+        protected $returnsDataType = 'array';
+        protected $shippingDetailsType = OrderLineItemShippingDetails::class;
+        protected $shippingDetailsDataType = '';
+        protected $taxType = Price::class;
+        protected $taxDataType = '';
+        /**
+         * @param OrderLineItemAdjustment[]
+         */
+        public function setAdjustments($adjustments)
+        {
+        }
+        /**
+         * @return OrderLineItemAdjustment[]
+         */
+        public function getAdjustments()
+        {
+        }
+        /**
+         * @param OrderMerchantProvidedAnnotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return OrderMerchantProvidedAnnotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param OrderCancellation[]
+         */
+        public function setCancellations($cancellations)
+        {
+        }
+        /**
+         * @return OrderCancellation[]
+         */
+        public function getCancellations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * @param OrderLineItemProduct
+         */
+        public function setProduct(OrderLineItemProduct $product)
+        {
+        }
+        /**
+         * @return OrderLineItemProduct
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityCanceled($quantityCanceled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityCanceled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityDelivered($quantityDelivered)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityDelivered()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityOrdered($quantityOrdered)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityOrdered()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityPending($quantityPending)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityPending()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityReadyForPickup($quantityReadyForPickup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityReadyForPickup()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityReturned($quantityReturned)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityReturned()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityShipped($quantityShipped)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityShipped()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityUndeliverable($quantityUndeliverable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityUndeliverable()
+        {
+        }
+        /**
+         * @param OrderLineItemReturnInfo
+         */
+        public function setReturnInfo(OrderLineItemReturnInfo $returnInfo)
+        {
+        }
+        /**
+         * @return OrderLineItemReturnInfo
+         */
+        public function getReturnInfo()
+        {
+        }
+        /**
+         * @param OrderReturn[]
+         */
+        public function setReturns($returns)
+        {
+        }
+        /**
+         * @return OrderReturn[]
+         */
+        public function getReturns()
+        {
+        }
+        /**
+         * @param OrderLineItemShippingDetails
+         */
+        public function setShippingDetails(OrderLineItemShippingDetails $shippingDetails)
+        {
+        }
+        /**
+         * @return OrderLineItemShippingDetails
+         */
+        public function getShippingDetails()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTax(Price $tax)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderLineItemAdjustment[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdjustments()
-    {
-    }
-    /**
-     * @param OrderMerchantProvidedAnnotation[]
-     */
-    public function setAnnotations($annotations)
-    {
-    }
-    /**
-     * @return OrderMerchantProvidedAnnotation[]
-     */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param OrderCancellation[]
-     */
-    public function setCancellations($cancellations)
-    {
-    }
-    /**
-     * @return OrderCancellation[]
-     */
-    public function getCancellations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * @param OrderLineItemProduct
-     */
-    public function setProduct(OrderLineItemProduct $product)
-    {
-    }
-    /**
-     * @return OrderLineItemProduct
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityCanceled($quantityCanceled)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityCanceled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityDelivered($quantityDelivered)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityDelivered()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityOrdered($quantityOrdered)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityOrdered()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityPending($quantityPending)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityPending()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityReadyForPickup($quantityReadyForPickup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityReadyForPickup()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityReturned($quantityReturned)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityReturned()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityShipped($quantityShipped)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityShipped()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityUndeliverable($quantityUndeliverable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityUndeliverable()
-    {
-    }
-    /**
-     * @param OrderLineItemReturnInfo
-     */
-    public function setReturnInfo(OrderLineItemReturnInfo $returnInfo)
-    {
-    }
-    /**
-     * @return OrderLineItemReturnInfo
-     */
-    public function getReturnInfo()
-    {
-    }
-    /**
-     * @param OrderReturn[]
-     */
-    public function setReturns($returns)
-    {
-    }
-    /**
-     * @return OrderReturn[]
-     */
-    public function getReturns()
-    {
-    }
-    /**
-     * @param OrderLineItemShippingDetails
-     */
-    public function setShippingDetails(OrderLineItemShippingDetails $shippingDetails)
-    {
-    }
-    /**
-     * @return OrderLineItemShippingDetails
-     */
-    public function getShippingDetails()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTax(Price $tax)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTax()
+    class Google_Service_ShoppingContent_OrderLineItem extends \Google\Service\ShoppingContent\OrderLineItem
     {
     }
 }

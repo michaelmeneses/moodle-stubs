@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class PublishContainerVersionResponse extends \Google\Model
-{
-    /**
-     * Compiler errors or not.
-     *
-     * @var bool
-     */
-    public $compilerError;
-    protected $containerVersionType = ContainerVersion::class;
-    protected $containerVersionDataType = '';
-    /**
-     * Compiler errors or not.
-     *
-     * @param bool $compilerError
-     */
-    public function setCompilerError($compilerError)
+namespace Google\Service\TagManager {
+    class PublishContainerVersionResponse extends \Google\Model
     {
+        /**
+         * Compiler errors or not.
+         *
+         * @var bool
+         */
+        public $compilerError;
+        protected $containerVersionType = ContainerVersion::class;
+        protected $containerVersionDataType = '';
+        /**
+         * Compiler errors or not.
+         *
+         * @param bool $compilerError
+         */
+        public function setCompilerError($compilerError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompilerError()
+        {
+        }
+        /**
+         * The container version created.
+         *
+         * @param ContainerVersion $containerVersion
+         */
+        public function setContainerVersion(ContainerVersion $containerVersion)
+        {
+        }
+        /**
+         * @return ContainerVersion
+         */
+        public function getContainerVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\PublishContainerVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompilerError()
-    {
-    }
-    /**
-     * The container version created.
-     *
-     * @param ContainerVersion $containerVersion
-     */
-    public function setContainerVersion(ContainerVersion $containerVersion)
-    {
-    }
-    /**
-     * @return ContainerVersion
-     */
-    public function getContainerVersion()
+    class Google_Service_TagManager_PublishContainerVersionResponse extends \Google\Service\TagManager\PublishContainerVersionResponse
     {
     }
 }

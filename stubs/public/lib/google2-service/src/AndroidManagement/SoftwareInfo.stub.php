@@ -21,232 +21,241 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class SoftwareInfo extends \Google\Model
-{
-    /**
-     * Android build ID string meant for displaying to the user. For example,
-     * shamu-userdebug 6.0.1 MOB30I 2756745 dev-keys.
-     *
-     * @var string
-     */
-    public $androidBuildNumber;
-    /**
-     * Build time.
-     *
-     * @var string
-     */
-    public $androidBuildTime;
-    /**
-     * The Android Device Policy app version code.
-     *
-     * @var int
-     */
-    public $androidDevicePolicyVersionCode;
-    /**
-     * The Android Device Policy app version as displayed to the user.
-     *
-     * @var string
-     */
-    public $androidDevicePolicyVersionName;
-    /**
-     * The user-visible Android version string. For example, 6.0.1.
-     *
-     * @var string
-     */
-    public $androidVersion;
-    /**
-     * The system bootloader version number, e.g. 0.6.7.
-     *
-     * @var string
-     */
-    public $bootloaderVersion;
-    /**
-     * SHA-256 hash of android.content.pm.Signature
-     * (https://developer.android.com/reference/android/content/pm/Signature.html)
-     * associated with the system package, which can be used to verify that the
-     * system build hasn't been modified.
-     *
-     * @var string
-     */
-    public $deviceBuildSignature;
-    /**
-     * Kernel version, for example, 2.6.32.9-g103d848.
-     *
-     * @var string
-     */
-    public $deviceKernelVersion;
-    /**
-     * An IETF BCP 47 language code for the primary locale on the device.
-     *
-     * @var string
-     */
-    public $primaryLanguageCode;
-    /**
-     * Security patch level, e.g. 2016-05-01.
-     *
-     * @var string
-     */
-    public $securityPatchLevel;
-    protected $systemUpdateInfoType = SystemUpdateInfo::class;
-    protected $systemUpdateInfoDataType = '';
-    /**
-     * Android build ID string meant for displaying to the user. For example,
-     * shamu-userdebug 6.0.1 MOB30I 2756745 dev-keys.
-     *
-     * @param string $androidBuildNumber
-     */
-    public function setAndroidBuildNumber($androidBuildNumber)
+namespace Google\Service\AndroidManagement {
+    class SoftwareInfo extends \Google\Model
     {
+        /**
+         * Android build ID string meant for displaying to the user. For example,
+         * shamu-userdebug 6.0.1 MOB30I 2756745 dev-keys.
+         *
+         * @var string
+         */
+        public $androidBuildNumber;
+        /**
+         * Build time.
+         *
+         * @var string
+         */
+        public $androidBuildTime;
+        /**
+         * The Android Device Policy app version code.
+         *
+         * @var int
+         */
+        public $androidDevicePolicyVersionCode;
+        /**
+         * The Android Device Policy app version as displayed to the user.
+         *
+         * @var string
+         */
+        public $androidDevicePolicyVersionName;
+        /**
+         * The user-visible Android version string. For example, 6.0.1.
+         *
+         * @var string
+         */
+        public $androidVersion;
+        /**
+         * The system bootloader version number, e.g. 0.6.7.
+         *
+         * @var string
+         */
+        public $bootloaderVersion;
+        /**
+         * SHA-256 hash of android.content.pm.Signature
+         * (https://developer.android.com/reference/android/content/pm/Signature.html)
+         * associated with the system package, which can be used to verify that the
+         * system build hasn't been modified.
+         *
+         * @var string
+         */
+        public $deviceBuildSignature;
+        /**
+         * Kernel version, for example, 2.6.32.9-g103d848.
+         *
+         * @var string
+         */
+        public $deviceKernelVersion;
+        /**
+         * An IETF BCP 47 language code for the primary locale on the device.
+         *
+         * @var string
+         */
+        public $primaryLanguageCode;
+        /**
+         * Security patch level, e.g. 2016-05-01.
+         *
+         * @var string
+         */
+        public $securityPatchLevel;
+        protected $systemUpdateInfoType = SystemUpdateInfo::class;
+        protected $systemUpdateInfoDataType = '';
+        /**
+         * Android build ID string meant for displaying to the user. For example,
+         * shamu-userdebug 6.0.1 MOB30I 2756745 dev-keys.
+         *
+         * @param string $androidBuildNumber
+         */
+        public function setAndroidBuildNumber($androidBuildNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidBuildNumber()
+        {
+        }
+        /**
+         * Build time.
+         *
+         * @param string $androidBuildTime
+         */
+        public function setAndroidBuildTime($androidBuildTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidBuildTime()
+        {
+        }
+        /**
+         * The Android Device Policy app version code.
+         *
+         * @param int $androidDevicePolicyVersionCode
+         */
+        public function setAndroidDevicePolicyVersionCode($androidDevicePolicyVersionCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAndroidDevicePolicyVersionCode()
+        {
+        }
+        /**
+         * The Android Device Policy app version as displayed to the user.
+         *
+         * @param string $androidDevicePolicyVersionName
+         */
+        public function setAndroidDevicePolicyVersionName($androidDevicePolicyVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidDevicePolicyVersionName()
+        {
+        }
+        /**
+         * The user-visible Android version string. For example, 6.0.1.
+         *
+         * @param string $androidVersion
+         */
+        public function setAndroidVersion($androidVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidVersion()
+        {
+        }
+        /**
+         * The system bootloader version number, e.g. 0.6.7.
+         *
+         * @param string $bootloaderVersion
+         */
+        public function setBootloaderVersion($bootloaderVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBootloaderVersion()
+        {
+        }
+        /**
+         * SHA-256 hash of android.content.pm.Signature
+         * (https://developer.android.com/reference/android/content/pm/Signature.html)
+         * associated with the system package, which can be used to verify that the
+         * system build hasn't been modified.
+         *
+         * @param string $deviceBuildSignature
+         */
+        public function setDeviceBuildSignature($deviceBuildSignature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceBuildSignature()
+        {
+        }
+        /**
+         * Kernel version, for example, 2.6.32.9-g103d848.
+         *
+         * @param string $deviceKernelVersion
+         */
+        public function setDeviceKernelVersion($deviceKernelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceKernelVersion()
+        {
+        }
+        /**
+         * An IETF BCP 47 language code for the primary locale on the device.
+         *
+         * @param string $primaryLanguageCode
+         */
+        public function setPrimaryLanguageCode($primaryLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryLanguageCode()
+        {
+        }
+        /**
+         * Security patch level, e.g. 2016-05-01.
+         *
+         * @param string $securityPatchLevel
+         */
+        public function setSecurityPatchLevel($securityPatchLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityPatchLevel()
+        {
+        }
+        /**
+         * Information about a potential pending system update.
+         *
+         * @param SystemUpdateInfo $systemUpdateInfo
+         */
+        public function setSystemUpdateInfo(SystemUpdateInfo $systemUpdateInfo)
+        {
+        }
+        /**
+         * @return SystemUpdateInfo
+         */
+        public function getSystemUpdateInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\SoftwareInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidBuildNumber()
-    {
-    }
-    /**
-     * Build time.
-     *
-     * @param string $androidBuildTime
-     */
-    public function setAndroidBuildTime($androidBuildTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAndroidBuildTime()
-    {
-    }
-    /**
-     * The Android Device Policy app version code.
-     *
-     * @param int $androidDevicePolicyVersionCode
-     */
-    public function setAndroidDevicePolicyVersionCode($androidDevicePolicyVersionCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAndroidDevicePolicyVersionCode()
-    {
-    }
-    /**
-     * The Android Device Policy app version as displayed to the user.
-     *
-     * @param string $androidDevicePolicyVersionName
-     */
-    public function setAndroidDevicePolicyVersionName($androidDevicePolicyVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAndroidDevicePolicyVersionName()
-    {
-    }
-    /**
-     * The user-visible Android version string. For example, 6.0.1.
-     *
-     * @param string $androidVersion
-     */
-    public function setAndroidVersion($androidVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAndroidVersion()
-    {
-    }
-    /**
-     * The system bootloader version number, e.g. 0.6.7.
-     *
-     * @param string $bootloaderVersion
-     */
-    public function setBootloaderVersion($bootloaderVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBootloaderVersion()
-    {
-    }
-    /**
-     * SHA-256 hash of android.content.pm.Signature
-     * (https://developer.android.com/reference/android/content/pm/Signature.html)
-     * associated with the system package, which can be used to verify that the
-     * system build hasn't been modified.
-     *
-     * @param string $deviceBuildSignature
-     */
-    public function setDeviceBuildSignature($deviceBuildSignature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceBuildSignature()
-    {
-    }
-    /**
-     * Kernel version, for example, 2.6.32.9-g103d848.
-     *
-     * @param string $deviceKernelVersion
-     */
-    public function setDeviceKernelVersion($deviceKernelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceKernelVersion()
-    {
-    }
-    /**
-     * An IETF BCP 47 language code for the primary locale on the device.
-     *
-     * @param string $primaryLanguageCode
-     */
-    public function setPrimaryLanguageCode($primaryLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryLanguageCode()
-    {
-    }
-    /**
-     * Security patch level, e.g. 2016-05-01.
-     *
-     * @param string $securityPatchLevel
-     */
-    public function setSecurityPatchLevel($securityPatchLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurityPatchLevel()
-    {
-    }
-    /**
-     * Information about a potential pending system update.
-     *
-     * @param SystemUpdateInfo $systemUpdateInfo
-     */
-    public function setSystemUpdateInfo(SystemUpdateInfo $systemUpdateInfo)
-    {
-    }
-    /**
-     * @return SystemUpdateInfo
-     */
-    public function getSystemUpdateInfo()
+    class Google_Service_AndroidManagement_SoftwareInfo extends \Google\Service\AndroidManagement\SoftwareInfo
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class PropertyMask extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    /**
-     * The paths to the properties covered by this mask. A path is a list of
-     * property names separated by dots (`.`), for example `foo.bar` means the
-     * property `bar` inside the entity property `foo` inside the entity
-     * associated with this path. If a property name contains a dot `.` or a
-     * backslash `\`, then that name must be escaped. A path must not be empty,
-     * and may not reference a value inside an array value.
-     *
-     * @var string[]
-     */
-    public $paths;
-    /**
-     * The paths to the properties covered by this mask. A path is a list of
-     * property names separated by dots (`.`), for example `foo.bar` means the
-     * property `bar` inside the entity property `foo` inside the entity
-     * associated with this path. If a property name contains a dot `.` or a
-     * backslash `\`, then that name must be escaped. A path must not be empty,
-     * and may not reference a value inside an array value.
-     *
-     * @param string[] $paths
-     */
-    public function setPaths($paths)
+namespace Google\Service\Datastore {
+    class PropertyMask extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        /**
+         * The paths to the properties covered by this mask. A path is a list of
+         * property names separated by dots (`.`), for example `foo.bar` means the
+         * property `bar` inside the entity property `foo` inside the entity
+         * associated with this path. If a property name contains a dot `.` or a
+         * backslash `\`, then that name must be escaped. A path must not be empty,
+         * and may not reference a value inside an array value.
+         *
+         * @var string[]
+         */
+        public $paths;
+        /**
+         * The paths to the properties covered by this mask. A path is a list of
+         * property names separated by dots (`.`), for example `foo.bar` means the
+         * property `bar` inside the entity property `foo` inside the entity
+         * associated with this path. If a property name contains a dot `.` or a
+         * backslash `\`, then that name must be escaped. A path must not be empty,
+         * and may not reference a value inside an array value.
+         *
+         * @param string[] $paths
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datastore\PropertyMask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPaths()
+    class Google_Service_Datastore_PropertyMask extends \Google\Service\Datastore\PropertyMask
     {
     }
 }

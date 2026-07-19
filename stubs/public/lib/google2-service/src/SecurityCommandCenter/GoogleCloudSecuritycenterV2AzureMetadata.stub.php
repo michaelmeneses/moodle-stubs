@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AzureMetadata extends \Google\Collection
-{
-    protected $collection_key = 'managementGroups';
-    protected $managementGroupsType = GoogleCloudSecuritycenterV2AzureManagementGroup::class;
-    protected $managementGroupsDataType = 'array';
-    protected $resourceGroupType = GoogleCloudSecuritycenterV2AzureResourceGroup::class;
-    protected $resourceGroupDataType = '';
-    protected $subscriptionType = GoogleCloudSecuritycenterV2AzureSubscription::class;
-    protected $subscriptionDataType = '';
-    protected $tenantType = GoogleCloudSecuritycenterV2AzureTenant::class;
-    protected $tenantDataType = '';
-    /**
-     * A list of Azure management groups associated with the resource, ordered
-     * from lowest level (closest to the subscription) to highest level.
-     *
-     * @param GoogleCloudSecuritycenterV2AzureManagementGroup[] $managementGroups
-     */
-    public function setManagementGroups($managementGroups)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AzureMetadata extends \Google\Collection
     {
+        protected $collection_key = 'managementGroups';
+        protected $managementGroupsType = GoogleCloudSecuritycenterV2AzureManagementGroup::class;
+        protected $managementGroupsDataType = 'array';
+        protected $resourceGroupType = GoogleCloudSecuritycenterV2AzureResourceGroup::class;
+        protected $resourceGroupDataType = '';
+        protected $subscriptionType = GoogleCloudSecuritycenterV2AzureSubscription::class;
+        protected $subscriptionDataType = '';
+        protected $tenantType = GoogleCloudSecuritycenterV2AzureTenant::class;
+        protected $tenantDataType = '';
+        /**
+         * A list of Azure management groups associated with the resource, ordered
+         * from lowest level (closest to the subscription) to highest level.
+         *
+         * @param GoogleCloudSecuritycenterV2AzureManagementGroup[] $managementGroups
+         */
+        public function setManagementGroups($managementGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AzureManagementGroup[]
+         */
+        public function getManagementGroups()
+        {
+        }
+        /**
+         * The Azure resource group associated with the resource.
+         *
+         * @param GoogleCloudSecuritycenterV2AzureResourceGroup $resourceGroup
+         */
+        public function setResourceGroup(GoogleCloudSecuritycenterV2AzureResourceGroup $resourceGroup)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AzureResourceGroup
+         */
+        public function getResourceGroup()
+        {
+        }
+        /**
+         * The Azure subscription associated with the resource.
+         *
+         * @param GoogleCloudSecuritycenterV2AzureSubscription $subscription
+         */
+        public function setSubscription(GoogleCloudSecuritycenterV2AzureSubscription $subscription)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AzureSubscription
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * The Azure Entra tenant associated with the resource.
+         *
+         * @param GoogleCloudSecuritycenterV2AzureTenant $tenant
+         */
+        public function setTenant(GoogleCloudSecuritycenterV2AzureTenant $tenant)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AzureTenant
+         */
+        public function getTenant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2AzureManagementGroup[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AzureMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagementGroups()
-    {
-    }
-    /**
-     * The Azure resource group associated with the resource.
-     *
-     * @param GoogleCloudSecuritycenterV2AzureResourceGroup $resourceGroup
-     */
-    public function setResourceGroup(GoogleCloudSecuritycenterV2AzureResourceGroup $resourceGroup)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2AzureResourceGroup
-     */
-    public function getResourceGroup()
-    {
-    }
-    /**
-     * The Azure subscription associated with the resource.
-     *
-     * @param GoogleCloudSecuritycenterV2AzureSubscription $subscription
-     */
-    public function setSubscription(GoogleCloudSecuritycenterV2AzureSubscription $subscription)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2AzureSubscription
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * The Azure Entra tenant associated with the resource.
-     *
-     * @param GoogleCloudSecuritycenterV2AzureTenant $tenant
-     */
-    public function setTenant(GoogleCloudSecuritycenterV2AzureTenant $tenant)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2AzureTenant
-     */
-    public function getTenant()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AzureMetadata extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AzureMetadata
     {
     }
 }

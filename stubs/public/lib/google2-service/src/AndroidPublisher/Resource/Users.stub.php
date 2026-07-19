@@ -21,73 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $users = $androidpublisherService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ListUsersResponse;
+    use Google\Service\AndroidPublisher\User;
     /**
-     * Grant access for a user to the given developer account. (users.create)
-     *
-     * @param string $parent Required. The developer account to add the user to.
-     * Format: developers/{developer}
-     * @param User $postBody
-     * @param array $optParams Optional parameters.
-     * @return User
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $users = $androidpublisherService->users;
+     *  </code>
      */
-    public function create($parent, User $postBody, $optParams = [])
+    class Users extends \Google\Service\Resource
     {
+        /**
+         * Grant access for a user to the given developer account. (users.create)
+         *
+         * @param string $parent Required. The developer account to add the user to.
+         * Format: developers/{developer}
+         * @param User $postBody
+         * @param array $optParams Optional parameters.
+         * @return User
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, User $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes all access for the user to the given developer account.
+         * (users.delete)
+         *
+         * @param string $name Required. The name of the user to delete. Format:
+         * developers/{developer}/users/{email}
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all users with access to a developer account. (users.listUsers)
+         *
+         * @param string $parent Required. The developer account to fetch users from.
+         * Format: developers/{developer}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of results to return. This must be
+         * set to -1 to disable pagination.
+         * @opt_param string pageToken A token received from a previous call to this
+         * method, in order to retrieve further results.
+         * @return ListUsersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsers($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates access for the user to the developer account. (users.patch)
+         *
+         * @param string $name Required. Resource name for this user, following the
+         * pattern "developers/{developer}/users/{email}".
+         * @param User $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to be updated.
+         * @return User
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, User $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes all access for the user to the given developer account.
-     * (users.delete)
-     *
-     * @param string $name Required. The name of the user to delete. Format:
-     * developers/{developer}/users/{email}
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all users with access to a developer account. (users.listUsers)
-     *
-     * @param string $parent Required. The developer account to fetch users from.
-     * Format: developers/{developer}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of results to return. This must be
-     * set to -1 to disable pagination.
-     * @opt_param string pageToken A token received from a previous call to this
-     * method, in order to retrieve further results.
-     * @return ListUsersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listUsers($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates access for the user to the developer account. (users.patch)
-     *
-     * @param string $name Required. Resource name for this user, following the
-     * pattern "developers/{developer}/users/{email}".
-     * @param User $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to be updated.
-     * @return User
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, User $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Users extends \Google\Service\AndroidPublisher\Resource\Users
     {
     }
 }

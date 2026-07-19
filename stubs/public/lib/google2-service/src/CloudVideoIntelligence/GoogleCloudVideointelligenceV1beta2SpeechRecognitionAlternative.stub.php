@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2SpeechRecognitionAlternative extends \Google\Collection
-{
-    protected $collection_key = 'words';
-    /**
-     * Output only. The confidence estimate between 0.0 and 1.0. A higher number
-     * indicates an estimated greater likelihood that the recognized words are
-     * correct. This field is set only for the top alternative. This field is not
-     * guaranteed to be accurate and users should not rely on it to be always
-     * provided. The default of 0.0 is a sentinel value indicating `confidence`
-     * was not set.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Transcript text representing the words that the user spoke.
-     *
-     * @var string
-     */
-    public $transcript;
-    protected $wordsType = GoogleCloudVideointelligenceV1beta2WordInfo::class;
-    protected $wordsDataType = 'array';
-    /**
-     * Output only. The confidence estimate between 0.0 and 1.0. A higher number
-     * indicates an estimated greater likelihood that the recognized words are
-     * correct. This field is set only for the top alternative. This field is not
-     * guaranteed to be accurate and users should not rely on it to be always
-     * provided. The default of 0.0 is a sentinel value indicating `confidence`
-     * was not set.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2SpeechRecognitionAlternative extends \Google\Collection
     {
+        protected $collection_key = 'words';
+        /**
+         * Output only. The confidence estimate between 0.0 and 1.0. A higher number
+         * indicates an estimated greater likelihood that the recognized words are
+         * correct. This field is set only for the top alternative. This field is not
+         * guaranteed to be accurate and users should not rely on it to be always
+         * provided. The default of 0.0 is a sentinel value indicating `confidence`
+         * was not set.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Transcript text representing the words that the user spoke.
+         *
+         * @var string
+         */
+        public $transcript;
+        protected $wordsType = GoogleCloudVideointelligenceV1beta2WordInfo::class;
+        protected $wordsDataType = 'array';
+        /**
+         * Output only. The confidence estimate between 0.0 and 1.0. A higher number
+         * indicates an estimated greater likelihood that the recognized words are
+         * correct. This field is set only for the top alternative. This field is not
+         * guaranteed to be accurate and users should not rely on it to be always
+         * provided. The default of 0.0 is a sentinel value indicating `confidence`
+         * was not set.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Transcript text representing the words that the user spoke.
+         *
+         * @param string $transcript
+         */
+        public function setTranscript($transcript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTranscript()
+        {
+        }
+        /**
+         * Output only. A list of word-specific information for each recognized word.
+         * Note: When `enable_speaker_diarization` is set to true, you will see all
+         * the words from the beginning of the audio.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2WordInfo[] $words
+         */
+        public function setWords($words)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2WordInfo[]
+         */
+        public function getWords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2SpeechRecognitionAlternative registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Transcript text representing the words that the user spoke.
-     *
-     * @param string $transcript
-     */
-    public function setTranscript($transcript)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTranscript()
-    {
-    }
-    /**
-     * Output only. A list of word-specific information for each recognized word.
-     * Note: When `enable_speaker_diarization` is set to true, you will see all
-     * the words from the beginning of the audio.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2WordInfo[] $words
-     */
-    public function setWords($words)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1beta2WordInfo[]
-     */
-    public function getWords()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2SpeechRecognitionAlternative extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2SpeechRecognitionAlternative
     {
     }
 }

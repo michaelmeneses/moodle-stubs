@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock::class;
-    protected $blocksDataType = 'array';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock::class;
+        protected $blocksDataType = 'array';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaIdea extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $text;
-    protected $topicsType = GoogleSearchIdeahubV1betaTopic::class;
-    protected $topicsDataType = 'array';
-    public $topics;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaIdea extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $text;
+        protected $topicsType = GoogleSearchIdeahubV1betaTopic::class;
+        protected $topicsDataType = 'array';
+        public $topics;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param GoogleSearchIdeahubV1betaTopic[]
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return GoogleSearchIdeahubV1betaTopic[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param GoogleSearchIdeahubV1betaTopic[]
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return GoogleSearchIdeahubV1betaTopic[]
-     */
-    public function getTopics()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaIdea extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdea
     {
     }
 }

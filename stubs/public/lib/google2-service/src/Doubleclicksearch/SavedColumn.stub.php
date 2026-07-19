@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class SavedColumn extends \Google\Model
-{
-    /**
-     * Identifies this as a SavedColumn resource. Value: the fixed string
-     * doubleclicksearch#savedColumn.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the saved column.
-     *
-     * @var string
-     */
-    public $savedColumnName;
-    /**
-     * The type of data this saved column will produce.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Identifies this as a SavedColumn resource. Value: the fixed string
-     * doubleclicksearch#savedColumn.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Doubleclicksearch {
+    class SavedColumn extends \Google\Model
     {
+        /**
+         * Identifies this as a SavedColumn resource. Value: the fixed string
+         * doubleclicksearch#savedColumn.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the saved column.
+         *
+         * @var string
+         */
+        public $savedColumnName;
+        /**
+         * The type of data this saved column will produce.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Identifies this as a SavedColumn resource. Value: the fixed string
+         * doubleclicksearch#savedColumn.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the saved column.
+         *
+         * @param string $savedColumnName
+         */
+        public function setSavedColumnName($savedColumnName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSavedColumnName()
+        {
+        }
+        /**
+         * The type of data this saved column will produce.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\SavedColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the saved column.
-     *
-     * @param string $savedColumnName
-     */
-    public function setSavedColumnName($savedColumnName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSavedColumnName()
-    {
-    }
-    /**
-     * The type of data this saved column will produce.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Doubleclicksearch_SavedColumn extends \Google\Service\Doubleclicksearch\SavedColumn
     {
     }
 }

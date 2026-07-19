@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class EnterpriseAccount extends \Google\Model
-{
-    /**
-     * The email address of the service account.
-     *
-     * @var string
-     */
-    public $accountEmail;
-    /**
-     * The email address of the service account.
-     *
-     * @param string $accountEmail
-     */
-    public function setAccountEmail($accountEmail)
+namespace Google\Service\AndroidEnterprise {
+    class EnterpriseAccount extends \Google\Model
     {
+        /**
+         * The email address of the service account.
+         *
+         * @var string
+         */
+        public $accountEmail;
+        /**
+         * The email address of the service account.
+         *
+         * @param string $accountEmail
+         */
+        public function setAccountEmail($accountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\EnterpriseAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountEmail()
+    class Google_Service_AndroidEnterprise_EnterpriseAccount extends \Google\Service\AndroidEnterprise\EnterpriseAccount
     {
     }
 }

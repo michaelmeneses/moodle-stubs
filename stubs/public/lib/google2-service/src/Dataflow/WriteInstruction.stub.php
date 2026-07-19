@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WriteInstruction extends \Google\Model
-{
-    protected $inputType = InstructionInput::class;
-    protected $inputDataType = '';
-    protected $sinkType = Sink::class;
-    protected $sinkDataType = '';
-    /**
-     * The input.
-     *
-     * @param InstructionInput $input
-     */
-    public function setInput(InstructionInput $input)
+namespace Google\Service\Dataflow {
+    class WriteInstruction extends \Google\Model
     {
+        protected $inputType = InstructionInput::class;
+        protected $inputDataType = '';
+        protected $sinkType = Sink::class;
+        protected $sinkDataType = '';
+        /**
+         * The input.
+         *
+         * @param InstructionInput $input
+         */
+        public function setInput(InstructionInput $input)
+        {
+        }
+        /**
+         * @return InstructionInput
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * The sink to write to.
+         *
+         * @param Sink $sink
+         */
+        public function setSink(Sink $sink)
+        {
+        }
+        /**
+         * @return Sink
+         */
+        public function getSink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstructionInput
+     * Runtime class alias of \Google\Service\Dataflow\WriteInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInput()
-    {
-    }
-    /**
-     * The sink to write to.
-     *
-     * @param Sink $sink
-     */
-    public function setSink(Sink $sink)
-    {
-    }
-    /**
-     * @return Sink
-     */
-    public function getSink()
+    class Google_Service_Dataflow_WriteInstruction extends \Google\Service\Dataflow\WriteInstruction
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class MarketplaceTargeting extends \Google\Model
-{
-    protected $geoTargetingType = CriteriaTargeting::class;
-    protected $geoTargetingDataType = '';
-    protected $inventorySizeTargetingType = InventorySizeTargeting::class;
-    protected $inventorySizeTargetingDataType = '';
-    protected $placementTargetingType = PlacementTargeting::class;
-    protected $placementTargetingDataType = '';
-    protected $technologyTargetingType = TechnologyTargeting::class;
-    protected $technologyTargetingDataType = '';
-    protected $videoTargetingType = VideoTargeting::class;
-    protected $videoTargetingDataType = '';
-    /**
-     * Geo criteria IDs to be included/excluded.
-     *
-     * @param CriteriaTargeting $geoTargeting
-     */
-    public function setGeoTargeting(CriteriaTargeting $geoTargeting)
+namespace Google\Service\AdExchangeBuyerII {
+    class MarketplaceTargeting extends \Google\Model
     {
+        protected $geoTargetingType = CriteriaTargeting::class;
+        protected $geoTargetingDataType = '';
+        protected $inventorySizeTargetingType = InventorySizeTargeting::class;
+        protected $inventorySizeTargetingDataType = '';
+        protected $placementTargetingType = PlacementTargeting::class;
+        protected $placementTargetingDataType = '';
+        protected $technologyTargetingType = TechnologyTargeting::class;
+        protected $technologyTargetingDataType = '';
+        protected $videoTargetingType = VideoTargeting::class;
+        protected $videoTargetingDataType = '';
+        /**
+         * Geo criteria IDs to be included/excluded.
+         *
+         * @param CriteriaTargeting $geoTargeting
+         */
+        public function setGeoTargeting(CriteriaTargeting $geoTargeting)
+        {
+        }
+        /**
+         * @return CriteriaTargeting
+         */
+        public function getGeoTargeting()
+        {
+        }
+        /**
+         * Inventory sizes to be included/excluded.
+         *
+         * @param InventorySizeTargeting $inventorySizeTargeting
+         */
+        public function setInventorySizeTargeting(InventorySizeTargeting $inventorySizeTargeting)
+        {
+        }
+        /**
+         * @return InventorySizeTargeting
+         */
+        public function getInventorySizeTargeting()
+        {
+        }
+        /**
+         * Placement targeting information, for example, URL, mobile applications.
+         *
+         * @param PlacementTargeting $placementTargeting
+         */
+        public function setPlacementTargeting(PlacementTargeting $placementTargeting)
+        {
+        }
+        /**
+         * @return PlacementTargeting
+         */
+        public function getPlacementTargeting()
+        {
+        }
+        /**
+         * Technology targeting information, for example, operating system, device
+         * category.
+         *
+         * @param TechnologyTargeting $technologyTargeting
+         */
+        public function setTechnologyTargeting(TechnologyTargeting $technologyTargeting)
+        {
+        }
+        /**
+         * @return TechnologyTargeting
+         */
+        public function getTechnologyTargeting()
+        {
+        }
+        /**
+         * Video targeting information.
+         *
+         * @param VideoTargeting $videoTargeting
+         */
+        public function setVideoTargeting(VideoTargeting $videoTargeting)
+        {
+        }
+        /**
+         * @return VideoTargeting
+         */
+        public function getVideoTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CriteriaTargeting
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\MarketplaceTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeoTargeting()
-    {
-    }
-    /**
-     * Inventory sizes to be included/excluded.
-     *
-     * @param InventorySizeTargeting $inventorySizeTargeting
-     */
-    public function setInventorySizeTargeting(InventorySizeTargeting $inventorySizeTargeting)
-    {
-    }
-    /**
-     * @return InventorySizeTargeting
-     */
-    public function getInventorySizeTargeting()
-    {
-    }
-    /**
-     * Placement targeting information, for example, URL, mobile applications.
-     *
-     * @param PlacementTargeting $placementTargeting
-     */
-    public function setPlacementTargeting(PlacementTargeting $placementTargeting)
-    {
-    }
-    /**
-     * @return PlacementTargeting
-     */
-    public function getPlacementTargeting()
-    {
-    }
-    /**
-     * Technology targeting information, for example, operating system, device
-     * category.
-     *
-     * @param TechnologyTargeting $technologyTargeting
-     */
-    public function setTechnologyTargeting(TechnologyTargeting $technologyTargeting)
-    {
-    }
-    /**
-     * @return TechnologyTargeting
-     */
-    public function getTechnologyTargeting()
-    {
-    }
-    /**
-     * Video targeting information.
-     *
-     * @param VideoTargeting $videoTargeting
-     */
-    public function setVideoTargeting(VideoTargeting $videoTargeting)
-    {
-    }
-    /**
-     * @return VideoTargeting
-     */
-    public function getVideoTargeting()
+    class Google_Service_AdExchangeBuyerII_MarketplaceTargeting extends \Google\Service\AdExchangeBuyerII\MarketplaceTargeting
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class FulfillmentOption extends \Google\Collection
-{
-    protected $collection_key = 'availableDay';
-    protected $availableDayType = AvailableDay::class;
-    protected $availableDayDataType = 'array';
-    protected $feeDetailsType = FeeDetails::class;
-    protected $feeDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $fulfillmentType;
-    protected $minimumOrderType = Money::class;
-    protected $minimumOrderDataType = '';
-    /**
-     * @param AvailableDay[]
-     */
-    public function setAvailableDay($availableDay)
+namespace Google\Service\MyBusinessPlaceActions {
+    class FulfillmentOption extends \Google\Collection
     {
+        protected $collection_key = 'availableDay';
+        protected $availableDayType = AvailableDay::class;
+        protected $availableDayDataType = 'array';
+        protected $feeDetailsType = FeeDetails::class;
+        protected $feeDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $fulfillmentType;
+        protected $minimumOrderType = Money::class;
+        protected $minimumOrderDataType = '';
+        /**
+         * @param AvailableDay[]
+         */
+        public function setAvailableDay($availableDay)
+        {
+        }
+        /**
+         * @return AvailableDay[]
+         */
+        public function getAvailableDay()
+        {
+        }
+        /**
+         * @param FeeDetails
+         */
+        public function setFeeDetails(FeeDetails $feeDetails)
+        {
+        }
+        /**
+         * @return FeeDetails
+         */
+        public function getFeeDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFulfillmentType($fulfillmentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFulfillmentType()
+        {
+        }
+        /**
+         * @param Money
+         */
+        public function setMinimumOrder(Money $minimumOrder)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMinimumOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AvailableDay[]
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\FulfillmentOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableDay()
-    {
-    }
-    /**
-     * @param FeeDetails
-     */
-    public function setFeeDetails(FeeDetails $feeDetails)
-    {
-    }
-    /**
-     * @return FeeDetails
-     */
-    public function getFeeDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFulfillmentType($fulfillmentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFulfillmentType()
-    {
-    }
-    /**
-     * @param Money
-     */
-    public function setMinimumOrder(Money $minimumOrder)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMinimumOrder()
+    class Google_Service_MyBusinessPlaceActions_FulfillmentOption extends \Google\Service\MyBusinessPlaceActions\FulfillmentOption
     {
     }
 }

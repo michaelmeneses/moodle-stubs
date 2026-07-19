@@ -21,61 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "reviews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $reviews = $androidpublisherService->reviews;
- *  </code>
- */
-class Reviews extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\Review;
+    use Google\Service\AndroidPublisher\ReviewsListResponse;
+    use Google\Service\AndroidPublisher\ReviewsReplyRequest;
+    use Google\Service\AndroidPublisher\ReviewsReplyResponse;
     /**
-     * Gets a single review. (reviews.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $reviewId Unique identifier for a review.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string translationLanguage Language localization code.
-     * @return Review
-     * @throws \Google\Service\Exception
+     * The "reviews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $reviews = $androidpublisherService->reviews;
+     *  </code>
      */
-    public function get($packageName, $reviewId, $optParams = [])
+    class Reviews extends \Google\Service\Resource
     {
+        /**
+         * Gets a single review. (reviews.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $reviewId Unique identifier for a review.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string translationLanguage Language localization code.
+         * @return Review
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $reviewId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all reviews. (reviews.listReviews)
+         *
+         * @param string $packageName Package name of the app.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults How many results the list operation should
+         * return.
+         * @opt_param string startIndex The index of the first element to return.
+         * @opt_param string token Pagination token. If empty, list starts at the first
+         * review.
+         * @opt_param string translationLanguage Language localization code.
+         * @return ReviewsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listReviews($packageName, $optParams = [])
+        {
+        }
+        /**
+         * Replies to a single review, or updates an existing reply. (reviews.reply)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $reviewId Unique identifier for a review.
+         * @param ReviewsReplyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReviewsReplyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reply($packageName, $reviewId, ReviewsReplyRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all reviews. (reviews.listReviews)
-     *
-     * @param string $packageName Package name of the app.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults How many results the list operation should
-     * return.
-     * @opt_param string startIndex The index of the first element to return.
-     * @opt_param string token Pagination token. If empty, list starts at the first
-     * review.
-     * @opt_param string translationLanguage Language localization code.
-     * @return ReviewsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Reviews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listReviews($packageName, $optParams = [])
-    {
-    }
-    /**
-     * Replies to a single review, or updates an existing reply. (reviews.reply)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $reviewId Unique identifier for a review.
-     * @param ReviewsReplyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReviewsReplyResponse
-     * @throws \Google\Service\Exception
-     */
-    public function reply($packageName, $reviewId, ReviewsReplyRequest $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Reviews extends \Google\Service\AndroidPublisher\Resource\Reviews
     {
     }
 }

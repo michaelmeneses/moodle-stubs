@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion extends \Google\Model
-{
-    /**
-     * Output only. The answer record id of the past duplicate suggestion.
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * Output only. The similarity score of between the past and current
-     * suggestion.
-     *
-     * @var float
-     */
-    public $similarityScore;
-    protected $sourcesType = GoogleCloudDialogflowV2AgentCoachingSuggestionSources::class;
-    protected $sourcesDataType = '';
-    /**
-     * Output only. The index of the duplicate suggestion in the past suggestion
-     * list.
-     *
-     * @var int
-     */
-    public $suggestionIndex;
-    /**
-     * Output only. The answer record id of the past duplicate suggestion.
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion extends \Google\Model
     {
+        /**
+         * Output only. The answer record id of the past duplicate suggestion.
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * Output only. The similarity score of between the past and current
+         * suggestion.
+         *
+         * @var float
+         */
+        public $similarityScore;
+        protected $sourcesType = GoogleCloudDialogflowV2AgentCoachingSuggestionSources::class;
+        protected $sourcesDataType = '';
+        /**
+         * Output only. The index of the duplicate suggestion in the past suggestion
+         * list.
+         *
+         * @var int
+         */
+        public $suggestionIndex;
+        /**
+         * Output only. The answer record id of the past duplicate suggestion.
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * Output only. The similarity score of between the past and current
+         * suggestion.
+         *
+         * @param float $similarityScore
+         */
+        public function setSimilarityScore($similarityScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSimilarityScore()
+        {
+        }
+        /**
+         * Output only. Sources for the suggestion.
+         *
+         * @param GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources
+         */
+        public function setSources(GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2AgentCoachingSuggestionSources
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * Output only. The index of the duplicate suggestion in the past suggestion
+         * list.
+         *
+         * @param int $suggestionIndex
+         */
+        public function setSuggestionIndex($suggestionIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuggestionIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * Output only. The similarity score of between the past and current
-     * suggestion.
-     *
-     * @param float $similarityScore
-     */
-    public function setSimilarityScore($similarityScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSimilarityScore()
-    {
-    }
-    /**
-     * Output only. Sources for the suggestion.
-     *
-     * @param GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources
-     */
-    public function setSources(GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2AgentCoachingSuggestionSources
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * Output only. The index of the duplicate suggestion in the past suggestion
-     * list.
-     *
-     * @param int $suggestionIndex
-     */
-    public function setSuggestionIndex($suggestionIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuggestionIndex()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResultDuplicateSuggestion
     {
     }
 }

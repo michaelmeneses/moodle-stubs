@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class PerformanceLimits extends \Google\Model
-{
-    /**
-     * Output only. The maximum IOPS.
-     *
-     * @var string
-     */
-    public $maxIops;
-    /**
-     * Output only. The maximum read IOPS.
-     *
-     * @var string
-     */
-    public $maxReadIops;
-    /**
-     * Output only. The maximum read throughput in bytes per second.
-     *
-     * @var string
-     */
-    public $maxReadThroughputBps;
-    /**
-     * Output only. The maximum write IOPS.
-     *
-     * @var string
-     */
-    public $maxWriteIops;
-    /**
-     * Output only. The maximum write throughput in bytes per second.
-     *
-     * @var string
-     */
-    public $maxWriteThroughputBps;
-    /**
-     * Output only. The maximum IOPS.
-     *
-     * @param string $maxIops
-     */
-    public function setMaxIops($maxIops)
+namespace Google\Service\CloudFilestore {
+    class PerformanceLimits extends \Google\Model
     {
+        /**
+         * Output only. The maximum IOPS.
+         *
+         * @var string
+         */
+        public $maxIops;
+        /**
+         * Output only. The maximum read IOPS.
+         *
+         * @var string
+         */
+        public $maxReadIops;
+        /**
+         * Output only. The maximum read throughput in bytes per second.
+         *
+         * @var string
+         */
+        public $maxReadThroughputBps;
+        /**
+         * Output only. The maximum write IOPS.
+         *
+         * @var string
+         */
+        public $maxWriteIops;
+        /**
+         * Output only. The maximum write throughput in bytes per second.
+         *
+         * @var string
+         */
+        public $maxWriteThroughputBps;
+        /**
+         * Output only. The maximum IOPS.
+         *
+         * @param string $maxIops
+         */
+        public function setMaxIops($maxIops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxIops()
+        {
+        }
+        /**
+         * Output only. The maximum read IOPS.
+         *
+         * @param string $maxReadIops
+         */
+        public function setMaxReadIops($maxReadIops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxReadIops()
+        {
+        }
+        /**
+         * Output only. The maximum read throughput in bytes per second.
+         *
+         * @param string $maxReadThroughputBps
+         */
+        public function setMaxReadThroughputBps($maxReadThroughputBps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxReadThroughputBps()
+        {
+        }
+        /**
+         * Output only. The maximum write IOPS.
+         *
+         * @param string $maxWriteIops
+         */
+        public function setMaxWriteIops($maxWriteIops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxWriteIops()
+        {
+        }
+        /**
+         * Output only. The maximum write throughput in bytes per second.
+         *
+         * @param string $maxWriteThroughputBps
+         */
+        public function setMaxWriteThroughputBps($maxWriteThroughputBps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxWriteThroughputBps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\PerformanceLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxIops()
-    {
-    }
-    /**
-     * Output only. The maximum read IOPS.
-     *
-     * @param string $maxReadIops
-     */
-    public function setMaxReadIops($maxReadIops)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxReadIops()
-    {
-    }
-    /**
-     * Output only. The maximum read throughput in bytes per second.
-     *
-     * @param string $maxReadThroughputBps
-     */
-    public function setMaxReadThroughputBps($maxReadThroughputBps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxReadThroughputBps()
-    {
-    }
-    /**
-     * Output only. The maximum write IOPS.
-     *
-     * @param string $maxWriteIops
-     */
-    public function setMaxWriteIops($maxWriteIops)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxWriteIops()
-    {
-    }
-    /**
-     * Output only. The maximum write throughput in bytes per second.
-     *
-     * @param string $maxWriteThroughputBps
-     */
-    public function setMaxWriteThroughputBps($maxWriteThroughputBps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxWriteThroughputBps()
+    class Google_Service_CloudFilestore_PerformanceLimits extends \Google\Service\CloudFilestore\PerformanceLimits
     {
     }
 }

@@ -8,6 +8,11 @@
  */
 namespace Aws;
 
+use Aws\Exception\AwsException;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\RejectedPromise;
+use Psr\Http\Message\RequestInterface;
+use Exception;
 /**
  * Returns promises that are rejected or fulfilled using a queue of
  * Aws\ResultInterface and Aws\Exception\AwsException objects.

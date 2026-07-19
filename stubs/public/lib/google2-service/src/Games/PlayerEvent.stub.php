@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerEvent extends \Google\Model
-{
-    /**
-     * The ID of the event definition.
-     *
-     * @var string
-     */
-    public $definitionId;
-    /**
-     * The current number of times this event has occurred, as a string. The
-     * formatting of this string depends on the configuration of your event in the
-     * Play Games Developer Console.
-     *
-     * @var string
-     */
-    public $formattedNumEvents;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerEvent`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The current number of times this event has occurred.
-     *
-     * @var string
-     */
-    public $numEvents;
-    /**
-     * The ID of the player.
-     *
-     * @var string
-     */
-    public $playerId;
-    /**
-     * The ID of the event definition.
-     *
-     * @param string $definitionId
-     */
-    public function setDefinitionId($definitionId)
+namespace Google\Service\Games {
+    class PlayerEvent extends \Google\Model
     {
+        /**
+         * The ID of the event definition.
+         *
+         * @var string
+         */
+        public $definitionId;
+        /**
+         * The current number of times this event has occurred, as a string. The
+         * formatting of this string depends on the configuration of your event in the
+         * Play Games Developer Console.
+         *
+         * @var string
+         */
+        public $formattedNumEvents;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerEvent`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The current number of times this event has occurred.
+         *
+         * @var string
+         */
+        public $numEvents;
+        /**
+         * The ID of the player.
+         *
+         * @var string
+         */
+        public $playerId;
+        /**
+         * The ID of the event definition.
+         *
+         * @param string $definitionId
+         */
+        public function setDefinitionId($definitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinitionId()
+        {
+        }
+        /**
+         * The current number of times this event has occurred, as a string. The
+         * formatting of this string depends on the configuration of your event in the
+         * Play Games Developer Console.
+         *
+         * @param string $formattedNumEvents
+         */
+        public function setFormattedNumEvents($formattedNumEvents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedNumEvents()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerEvent`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The current number of times this event has occurred.
+         *
+         * @param string $numEvents
+         */
+        public function setNumEvents($numEvents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumEvents()
+        {
+        }
+        /**
+         * The ID of the player.
+         *
+         * @param string $playerId
+         */
+        public function setPlayerId($playerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlayerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\PlayerEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefinitionId()
-    {
-    }
-    /**
-     * The current number of times this event has occurred, as a string. The
-     * formatting of this string depends on the configuration of your event in the
-     * Play Games Developer Console.
-     *
-     * @param string $formattedNumEvents
-     */
-    public function setFormattedNumEvents($formattedNumEvents)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedNumEvents()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerEvent`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The current number of times this event has occurred.
-     *
-     * @param string $numEvents
-     */
-    public function setNumEvents($numEvents)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumEvents()
-    {
-    }
-    /**
-     * The ID of the player.
-     *
-     * @param string $playerId
-     */
-    public function setPlayerId($playerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlayerId()
+    class Google_Service_Games_PlayerEvent extends \Google\Service\Games\PlayerEvent
     {
     }
 }

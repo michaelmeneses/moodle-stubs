@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class AchievementUnlockResponse extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUnlockResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Whether this achievement was newly unlocked (that is, whether the unlock
-     * request for the achievement was the first for the player).
-     *
-     * @var bool
-     */
-    public $newlyUnlocked;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUnlockResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class AchievementUnlockResponse extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUnlockResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Whether this achievement was newly unlocked (that is, whether the unlock
+         * request for the achievement was the first for the player).
+         *
+         * @var bool
+         */
+        public $newlyUnlocked;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUnlockResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Whether this achievement was newly unlocked (that is, whether the unlock
+         * request for the achievement was the first for the player).
+         *
+         * @param bool $newlyUnlocked
+         */
+        public function setNewlyUnlocked($newlyUnlocked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNewlyUnlocked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\AchievementUnlockResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Whether this achievement was newly unlocked (that is, whether the unlock
-     * request for the achievement was the first for the player).
-     *
-     * @param bool $newlyUnlocked
-     */
-    public function setNewlyUnlocked($newlyUnlocked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNewlyUnlocked()
+    class Google_Service_Games_AchievementUnlockResponse extends \Google\Service\Games\AchievementUnlockResponse
     {
     }
 }

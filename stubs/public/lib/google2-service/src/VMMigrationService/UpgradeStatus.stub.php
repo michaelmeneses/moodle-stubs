@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class UpgradeStatus extends \Google\Model
-{
-    /**
-     * The state was not sampled by the health checks yet.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The upgrade has started.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The upgrade failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The upgrade finished successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * The version from which we upgraded.
-     *
-     * @var string
-     */
-    public $previousVersion;
-    /**
-     * The time the operation was started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The state of the upgradeAppliance operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The version to upgrade to.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Provides details on the state of the upgrade operation in case
-     * of an error.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\VMMigrationService {
+    class UpgradeStatus extends \Google\Model
     {
+        /**
+         * The state was not sampled by the health checks yet.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The upgrade has started.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The upgrade failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The upgrade finished successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * The version from which we upgraded.
+         *
+         * @var string
+         */
+        public $previousVersion;
+        /**
+         * The time the operation was started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The state of the upgradeAppliance operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The version to upgrade to.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Provides details on the state of the upgrade operation in case
+         * of an error.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The version from which we upgraded.
+         *
+         * @param string $previousVersion
+         */
+        public function setPreviousVersion($previousVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousVersion()
+        {
+        }
+        /**
+         * The time the operation was started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The state of the upgradeAppliance operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, RUNNING, FAILED, SUCCEEDED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The version to upgrade to.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\VMMigrationService\UpgradeStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The version from which we upgraded.
-     *
-     * @param string $previousVersion
-     */
-    public function setPreviousVersion($previousVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousVersion()
-    {
-    }
-    /**
-     * The time the operation was started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The state of the upgradeAppliance operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, RUNNING, FAILED, SUCCEEDED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The version to upgrade to.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_VMMigrationService_UpgradeStatus extends \Google\Service\VMMigrationService\UpgradeStatus
     {
     }
 }

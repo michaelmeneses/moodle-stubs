@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateSchemaBundleMetadata extends \Google\Model
-{
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    /**
-     * The unique name identifying this schema bundle. Values are of the form `pro
-     * jects/{project}/instances/{instance}/tables/{table}/schemaBundles/{schema_b
-     * undle}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
+namespace Google\Service\BigtableAdmin {
+    class CreateSchemaBundleMetadata extends \Google\Model
     {
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        /**
+         * The unique name identifying this schema bundle. Values are of the form `pro
+         * jects/{project}/instances/{instance}/tables/{table}/schemaBundles/{schema_b
+         * undle}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The unique name identifying this schema bundle. Values are of the form `pro
+         * jects/{project}/instances/{instance}/tables/{table}/schemaBundles/{schema_b
+         * undle}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateSchemaBundleMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The unique name identifying this schema bundle. Values are of the form `pro
-     * jects/{project}/instances/{instance}/tables/{table}/schemaBundles/{schema_b
-     * undle}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
+    class Google_Service_BigtableAdmin_CreateSchemaBundleMetadata extends \Google\Service\BigtableAdmin\CreateSchemaBundleMetadata
     {
     }
 }

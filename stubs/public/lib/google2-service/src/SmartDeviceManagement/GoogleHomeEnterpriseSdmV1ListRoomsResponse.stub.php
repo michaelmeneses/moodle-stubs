@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1ListRoomsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rooms';
-    protected $roomsType = GoogleHomeEnterpriseSdmV1Room::class;
-    protected $roomsDataType = 'array';
-    /**
-     * The list of rooms.
-     *
-     * @param GoogleHomeEnterpriseSdmV1Room[] $rooms
-     */
-    public function setRooms($rooms)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1ListRoomsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rooms';
+        protected $roomsType = GoogleHomeEnterpriseSdmV1Room::class;
+        protected $roomsDataType = 'array';
+        /**
+         * The list of rooms.
+         *
+         * @param GoogleHomeEnterpriseSdmV1Room[] $rooms
+         */
+        public function setRooms($rooms)
+        {
+        }
+        /**
+         * @return GoogleHomeEnterpriseSdmV1Room[]
+         */
+        public function getRooms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleHomeEnterpriseSdmV1Room[]
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListRoomsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRooms()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1ListRoomsResponse extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListRoomsResponse
     {
     }
 }

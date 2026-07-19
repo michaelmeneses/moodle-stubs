@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class CreateSnapshotRequest extends \Google\Model
-{
-    /**
-     * Optional. See [Creating and managing
-     * labels](https://cloud.google.com/pubsub/docs/labels).
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. The subscription whose backlog the snapshot retains.
-     * Specifically, the created snapshot is guaranteed to retain: (a) The
-     * existing backlog on the subscription. More precisely, this is defined as
-     * the messages in the subscription's backlog that are unacknowledged upon the
-     * successful completion of the `CreateSnapshot` request; as well as: (b) Any
-     * messages published to the subscription's topic following the successful
-     * completion of the CreateSnapshot request. Format is
-     * `projects/{project}/subscriptions/{sub}`.
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * Optional. Input only. Immutable. Tag keys/values directly bound to this
-     * resource. For example: "123/environment": "production", "123/costCenter":
-     * "marketing"
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Optional. See [Creating and managing
-     * labels](https://cloud.google.com/pubsub/docs/labels).
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Pubsub {
+    class CreateSnapshotRequest extends \Google\Model
     {
+        /**
+         * Optional. See [Creating and managing
+         * labels](https://cloud.google.com/pubsub/docs/labels).
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. The subscription whose backlog the snapshot retains.
+         * Specifically, the created snapshot is guaranteed to retain: (a) The
+         * existing backlog on the subscription. More precisely, this is defined as
+         * the messages in the subscription's backlog that are unacknowledged upon the
+         * successful completion of the `CreateSnapshot` request; as well as: (b) Any
+         * messages published to the subscription's topic following the successful
+         * completion of the CreateSnapshot request. Format is
+         * `projects/{project}/subscriptions/{sub}`.
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * Optional. Input only. Immutable. Tag keys/values directly bound to this
+         * resource. For example: "123/environment": "production", "123/costCenter":
+         * "marketing"
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Optional. See [Creating and managing
+         * labels](https://cloud.google.com/pubsub/docs/labels).
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The subscription whose backlog the snapshot retains.
+         * Specifically, the created snapshot is guaranteed to retain: (a) The
+         * existing backlog on the subscription. More precisely, this is defined as
+         * the messages in the subscription's backlog that are unacknowledged upon the
+         * successful completion of the `CreateSnapshot` request; as well as: (b) Any
+         * messages published to the subscription's topic following the successful
+         * completion of the CreateSnapshot request. Format is
+         * `projects/{project}/subscriptions/{sub}`.
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * Optional. Input only. Immutable. Tag keys/values directly bound to this
+         * resource. For example: "123/environment": "production", "123/costCenter":
+         * "marketing"
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Pubsub\CreateSnapshotRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The subscription whose backlog the snapshot retains.
-     * Specifically, the created snapshot is guaranteed to retain: (a) The
-     * existing backlog on the subscription. More precisely, this is defined as
-     * the messages in the subscription's backlog that are unacknowledged upon the
-     * successful completion of the `CreateSnapshot` request; as well as: (b) Any
-     * messages published to the subscription's topic following the successful
-     * completion of the CreateSnapshot request. Format is
-     * `projects/{project}/subscriptions/{sub}`.
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * Optional. Input only. Immutable. Tag keys/values directly bound to this
-     * resource. For example: "123/environment": "production", "123/costCenter":
-     * "marketing"
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Pubsub_CreateSnapshotRequest extends \Google\Service\Pubsub\CreateSnapshotRequest
     {
     }
 }

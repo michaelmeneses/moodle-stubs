@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $disable;
-    /**
-     * @var int
-     */
-    public $maxRephraseSteps;
-    /**
-     * @param bool
-     */
-    public function setDisable($disable)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $disable;
+        /**
+         * @var int
+         */
+        public $maxRephraseSteps;
+        /**
+         * @param bool
+         */
+        public function setDisable($disable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisable()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxRephraseSteps($maxRephraseSteps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxRephraseSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisable()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxRephraseSteps($maxRephraseSteps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxRephraseSteps()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
     {
     }
 }

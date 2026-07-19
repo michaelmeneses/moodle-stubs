@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class DiagnoseInstanceRequest extends \Google\Model
-{
-    protected $diagnosticConfigType = DiagnosticConfig::class;
-    protected $diagnosticConfigDataType = '';
-    /**
-     * Optional. Maximum amount of time in minutes before the operation times out.
-     *
-     * @var int
-     */
-    public $timeoutMinutes;
-    /**
-     * Required. Defines flags that are used to run the diagnostic tool
-     *
-     * @param DiagnosticConfig $diagnosticConfig
-     */
-    public function setDiagnosticConfig(DiagnosticConfig $diagnosticConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class DiagnoseInstanceRequest extends \Google\Model
     {
+        protected $diagnosticConfigType = DiagnosticConfig::class;
+        protected $diagnosticConfigDataType = '';
+        /**
+         * Optional. Maximum amount of time in minutes before the operation times out.
+         *
+         * @var int
+         */
+        public $timeoutMinutes;
+        /**
+         * Required. Defines flags that are used to run the diagnostic tool
+         *
+         * @param DiagnosticConfig $diagnosticConfig
+         */
+        public function setDiagnosticConfig(DiagnosticConfig $diagnosticConfig)
+        {
+        }
+        /**
+         * @return DiagnosticConfig
+         */
+        public function getDiagnosticConfig()
+        {
+        }
+        /**
+         * Optional. Maximum amount of time in minutes before the operation times out.
+         *
+         * @param int $timeoutMinutes
+         */
+        public function setTimeoutMinutes($timeoutMinutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTimeoutMinutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiagnosticConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\DiagnoseInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiagnosticConfig()
-    {
-    }
-    /**
-     * Optional. Maximum amount of time in minutes before the operation times out.
-     *
-     * @param int $timeoutMinutes
-     */
-    public function setTimeoutMinutes($timeoutMinutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTimeoutMinutes()
+    class Google_Service_AIPlatformNotebooks_DiagnoseInstanceRequest extends \Google\Service\AIPlatformNotebooks\DiagnoseInstanceRequest
     {
     }
 }

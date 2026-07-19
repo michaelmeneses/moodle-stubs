@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookRuntimeTemplateRef extends \Google\Model
-{
-    /**
-     * Immutable. A resource name of the NotebookRuntimeTemplate.
-     *
-     * @var string
-     */
-    public $notebookRuntimeTemplate;
-    /**
-     * Immutable. A resource name of the NotebookRuntimeTemplate.
-     *
-     * @param string $notebookRuntimeTemplate
-     */
-    public function setNotebookRuntimeTemplate($notebookRuntimeTemplate)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookRuntimeTemplateRef extends \Google\Model
     {
+        /**
+         * Immutable. A resource name of the NotebookRuntimeTemplate.
+         *
+         * @var string
+         */
+        public $notebookRuntimeTemplate;
+        /**
+         * Immutable. A resource name of the NotebookRuntimeTemplate.
+         *
+         * @param string $notebookRuntimeTemplate
+         */
+        public function setNotebookRuntimeTemplate($notebookRuntimeTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookRuntimeTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookRuntimeTemplateRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebookRuntimeTemplate()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookRuntimeTemplateRef extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookRuntimeTemplateRef
     {
     }
 }

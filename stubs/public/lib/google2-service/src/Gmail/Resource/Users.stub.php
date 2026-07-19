@@ -21,53 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $users = $gmailService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    use Google\Service\Gmail\Profile;
+    use Google\Service\Gmail\WatchRequest;
+    use Google\Service\Gmail\WatchResponse;
     /**
-     * Gets the current user's Gmail profile. (users.getProfile)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param array $optParams Optional parameters.
-     * @return Profile
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $users = $gmailService->users;
+     *  </code>
      */
-    public function getProfile($userId, $optParams = [])
+    class Users extends \Google\Service\Resource
     {
+        /**
+         * Gets the current user's Gmail profile. (users.getProfile)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param array $optParams Optional parameters.
+         * @return Profile
+         * @throws \Google\Service\Exception
+         */
+        public function getProfile($userId, $optParams = [])
+        {
+        }
+        /**
+         * Stop receiving push notifications for the given user mailbox. (users.stop)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function stop($userId, $optParams = [])
+        {
+        }
+        /**
+         * Set up or update a push notification watch on the given user mailbox.
+         * (users.watch)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param WatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return WatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function watch($userId, WatchRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Stop receiving push notifications for the given user mailbox. (users.stop)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Gmail\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function stop($userId, $optParams = [])
-    {
-    }
-    /**
-     * Set up or update a push notification watch on the given user mailbox.
-     * (users.watch)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param WatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return WatchResponse
-     * @throws \Google\Service\Exception
-     */
-    public function watch($userId, WatchRequest $postBody, $optParams = [])
+    class Google_Service_Gmail_Resource_Users extends \Google\Service\Gmail\Resource\Users
     {
     }
 }

@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Review extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
-    /**
-     * A general review comment.
-     */
-    public const ACTION_TYPE_COMMENT = 'COMMENT';
-    /**
-     * Change required from this review.
-     */
-    public const ACTION_TYPE_CHANGE_REQUESTED = 'CHANGE_REQUESTED';
-    /**
-     * Change approved from this review.
-     */
-    public const ACTION_TYPE_APPROVED = 'APPROVED';
-    /**
-     * Required. The review action type.
-     *
-     * @var string
-     */
-    public $actionType;
-    /**
-     * Optional. The comment body.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Output only. The effective commit sha this review is pointing to.
-     *
-     * @var string
-     */
-    public $effectiveCommitSha;
-    /**
-     * Required. The review action type.
-     *
-     * Accepted values: ACTION_TYPE_UNSPECIFIED, COMMENT, CHANGE_REQUESTED,
-     * APPROVED
-     *
-     * @param self::ACTION_TYPE_* $actionType
-     */
-    public function setActionType($actionType)
+namespace Google\Service\SecureSourceManager {
+    class Review extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
+        /**
+         * A general review comment.
+         */
+        public const ACTION_TYPE_COMMENT = 'COMMENT';
+        /**
+         * Change required from this review.
+         */
+        public const ACTION_TYPE_CHANGE_REQUESTED = 'CHANGE_REQUESTED';
+        /**
+         * Change approved from this review.
+         */
+        public const ACTION_TYPE_APPROVED = 'APPROVED';
+        /**
+         * Required. The review action type.
+         *
+         * @var string
+         */
+        public $actionType;
+        /**
+         * Optional. The comment body.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Output only. The effective commit sha this review is pointing to.
+         *
+         * @var string
+         */
+        public $effectiveCommitSha;
+        /**
+         * Required. The review action type.
+         *
+         * Accepted values: ACTION_TYPE_UNSPECIFIED, COMMENT, CHANGE_REQUESTED,
+         * APPROVED
+         *
+         * @param self::ACTION_TYPE_* $actionType
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return self::ACTION_TYPE_*
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * Optional. The comment body.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Output only. The effective commit sha this review is pointing to.
+         *
+         * @param string $effectiveCommitSha
+         */
+        public function setEffectiveCommitSha($effectiveCommitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveCommitSha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_TYPE_*
+     * Runtime class alias of \Google\Service\SecureSourceManager\Review registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * Optional. The comment body.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBody()
-    {
-    }
-    /**
-     * Output only. The effective commit sha this review is pointing to.
-     *
-     * @param string $effectiveCommitSha
-     */
-    public function setEffectiveCommitSha($effectiveCommitSha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEffectiveCommitSha()
+    class Google_Service_SecureSourceManager_Review extends \Google\Service\SecureSourceManager\Review
     {
     }
 }

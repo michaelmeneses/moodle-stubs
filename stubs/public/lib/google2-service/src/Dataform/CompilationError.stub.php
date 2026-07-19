@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CompilationError extends \Google\Model
-{
-    protected $actionTargetType = Target::class;
-    protected $actionTargetDataType = '';
-    /**
-     * Output only. The error's top level message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. The path of the file where this error occurred, if available,
-     * relative to the project root.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. The error's full stack trace.
-     *
-     * @var string
-     */
-    public $stack;
-    /**
-     * Output only. The identifier of the action where this error occurred, if
-     * available.
-     *
-     * @param Target $actionTarget
-     */
-    public function setActionTarget(Target $actionTarget)
+namespace Google\Service\Dataform {
+    class CompilationError extends \Google\Model
     {
+        protected $actionTargetType = Target::class;
+        protected $actionTargetDataType = '';
+        /**
+         * Output only. The error's top level message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. The path of the file where this error occurred, if available,
+         * relative to the project root.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. The error's full stack trace.
+         *
+         * @var string
+         */
+        public $stack;
+        /**
+         * Output only. The identifier of the action where this error occurred, if
+         * available.
+         *
+         * @param Target $actionTarget
+         */
+        public function setActionTarget(Target $actionTarget)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getActionTarget()
+        {
+        }
+        /**
+         * Output only. The error's top level message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Output only. The path of the file where this error occurred, if available,
+         * relative to the project root.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Output only. The error's full stack trace.
+         *
+         * @param string $stack
+         */
+        public function setStack($stack)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStack()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Target
+     * Runtime class alias of \Google\Service\Dataform\CompilationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionTarget()
-    {
-    }
-    /**
-     * Output only. The error's top level message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Output only. The path of the file where this error occurred, if available,
-     * relative to the project root.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Output only. The error's full stack trace.
-     *
-     * @param string $stack
-     */
-    public function setStack($stack)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStack()
+    class Google_Service_Dataform_CompilationError extends \Google\Service\Dataform\CompilationError
     {
     }
 }

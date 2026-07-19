@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest extends \Google\Model
-{
-    /**
-     * Required. The instance id of the caller.
-     *
-     * @var string
-     */
-    public $callerInstanceId;
-    /**
-     * Required. The instance id of the caller.
-     *
-     * @param string $callerInstanceId
-     */
-    public function setCallerInstanceId($callerInstanceId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest extends \Google\Model
     {
+        /**
+         * Required. The instance id of the caller.
+         *
+         * @var string
+         */
+        public $callerInstanceId;
+        /**
+         * Required. The instance id of the caller.
+         *
+         * @param string $callerInstanceId
+         */
+        public function setCallerInstanceId($callerInstanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallerInstanceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCallerInstanceId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest
     {
     }
 }

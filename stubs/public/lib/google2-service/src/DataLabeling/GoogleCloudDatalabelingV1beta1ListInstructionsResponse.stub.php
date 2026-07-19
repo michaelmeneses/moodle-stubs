@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ListInstructionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'instructions';
-    protected $instructionsType = GoogleCloudDatalabelingV1beta1Instruction::class;
-    protected $instructionsDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Instructions to return.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Instruction[] $instructions
-     */
-    public function setInstructions($instructions)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ListInstructionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'instructions';
+        protected $instructionsType = GoogleCloudDatalabelingV1beta1Instruction::class;
+        protected $instructionsDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Instructions to return.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Instruction[] $instructions
+         */
+        public function setInstructions($instructions)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Instruction[]
+         */
+        public function getInstructions()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Instruction[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListInstructionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstructions()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ListInstructionsResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListInstructionsResponse
     {
     }
 }

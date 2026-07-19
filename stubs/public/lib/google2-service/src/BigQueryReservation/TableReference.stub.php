@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class TableReference extends \Google\Model
-{
-    /**
-     * Optional. The ID of the dataset in the above project.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * Optional. The assigned project ID of the project.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Optional. The ID of the table in the above dataset.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Optional. The ID of the dataset in the above project.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\BigQueryReservation {
+    class TableReference extends \Google\Model
     {
+        /**
+         * Optional. The ID of the dataset in the above project.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * Optional. The assigned project ID of the project.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Optional. The ID of the table in the above dataset.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Optional. The ID of the dataset in the above project.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * Optional. The assigned project ID of the project.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Optional. The ID of the table in the above dataset.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\TableReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * Optional. The assigned project ID of the project.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Optional. The ID of the table in the above dataset.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_BigQueryReservation_TableReference extends \Google\Service\BigQueryReservation\TableReference
     {
     }
 }

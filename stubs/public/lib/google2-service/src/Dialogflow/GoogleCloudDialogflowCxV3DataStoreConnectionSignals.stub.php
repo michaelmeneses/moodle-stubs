@@ -21,163 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DataStoreConnectionSignals extends \Google\Collection
-{
-    protected $collection_key = 'searchSnippets';
-    /**
-     * Optional. The final compiled answer.
-     *
-     * @var string
-     */
-    public $answer;
-    protected $answerGenerationModelCallSignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals::class;
-    protected $answerGenerationModelCallSignalsDataType = '';
-    protected $answerPartsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart::class;
-    protected $answerPartsDataType = 'array';
-    protected $citedSnippetsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet::class;
-    protected $citedSnippetsDataType = 'array';
-    protected $groundingSignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals::class;
-    protected $groundingSignalsDataType = '';
-    protected $rewriterModelCallSignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals::class;
-    protected $rewriterModelCallSignalsDataType = '';
-    /**
-     * Optional. Rewritten string query used for search.
-     *
-     * @var string
-     */
-    public $rewrittenQuery;
-    protected $safetySignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals::class;
-    protected $safetySignalsDataType = '';
-    protected $searchSnippetsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet::class;
-    protected $searchSnippetsDataType = 'array';
-    /**
-     * Optional. The final compiled answer.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DataStoreConnectionSignals extends \Google\Collection
     {
+        protected $collection_key = 'searchSnippets';
+        /**
+         * Optional. The final compiled answer.
+         *
+         * @var string
+         */
+        public $answer;
+        protected $answerGenerationModelCallSignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals::class;
+        protected $answerGenerationModelCallSignalsDataType = '';
+        protected $answerPartsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart::class;
+        protected $answerPartsDataType = 'array';
+        protected $citedSnippetsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet::class;
+        protected $citedSnippetsDataType = 'array';
+        protected $groundingSignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals::class;
+        protected $groundingSignalsDataType = '';
+        protected $rewriterModelCallSignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals::class;
+        protected $rewriterModelCallSignalsDataType = '';
+        /**
+         * Optional. Rewritten string query used for search.
+         *
+         * @var string
+         */
+        public $rewrittenQuery;
+        protected $safetySignalsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals::class;
+        protected $safetySignalsDataType = '';
+        protected $searchSnippetsType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet::class;
+        protected $searchSnippetsDataType = 'array';
+        /**
+         * Optional. The final compiled answer.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * Optional. Diagnostic info related to the answer generation model call.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals $answerGenerationModelCallSignals
+         */
+        public function setAnswerGenerationModelCallSignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals $answerGenerationModelCallSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals
+         */
+        public function getAnswerGenerationModelCallSignals()
+        {
+        }
+        /**
+         * Optional. Answer parts with relevant citations. Concatenation of texts
+         * should add up the `answer` (not counting whitespaces).
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart[] $answerParts
+         */
+        public function setAnswerParts($answerParts)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart[]
+         */
+        public function getAnswerParts()
+        {
+        }
+        /**
+         * Optional. Snippets cited by the answer generation model from the most to
+         * least relevant.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet[] $citedSnippets
+         */
+        public function setCitedSnippets($citedSnippets)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet[]
+         */
+        public function getCitedSnippets()
+        {
+        }
+        /**
+         * Optional. Grounding signals.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals $groundingSignals
+         */
+        public function setGroundingSignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals $groundingSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals
+         */
+        public function getGroundingSignals()
+        {
+        }
+        /**
+         * Optional. Diagnostic info related to the rewriter model call.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals $rewriterModelCallSignals
+         */
+        public function setRewriterModelCallSignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals $rewriterModelCallSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals
+         */
+        public function getRewriterModelCallSignals()
+        {
+        }
+        /**
+         * Optional. Rewritten string query used for search.
+         *
+         * @param string $rewrittenQuery
+         */
+        public function setRewrittenQuery($rewrittenQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRewrittenQuery()
+        {
+        }
+        /**
+         * Optional. Safety check result.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals $safetySignals
+         */
+        public function setSafetySignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals $safetySignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals
+         */
+        public function getSafetySignals()
+        {
+        }
+        /**
+         * Optional. Search snippets included in the answer generation prompt.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet[] $searchSnippets
+         */
+        public function setSearchSnippets($searchSnippets)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet[]
+         */
+        public function getSearchSnippets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * Optional. Diagnostic info related to the answer generation model call.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals $answerGenerationModelCallSignals
-     */
-    public function setAnswerGenerationModelCallSignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals $answerGenerationModelCallSignals)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals
-     */
-    public function getAnswerGenerationModelCallSignals()
-    {
-    }
-    /**
-     * Optional. Answer parts with relevant citations. Concatenation of texts
-     * should add up the `answer` (not counting whitespaces).
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart[] $answerParts
-     */
-    public function setAnswerParts($answerParts)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerPart[]
-     */
-    public function getAnswerParts()
-    {
-    }
-    /**
-     * Optional. Snippets cited by the answer generation model from the most to
-     * least relevant.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet[] $citedSnippets
-     */
-    public function setCitedSnippets($citedSnippets)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet[]
-     */
-    public function getCitedSnippets()
-    {
-    }
-    /**
-     * Optional. Grounding signals.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals $groundingSignals
-     */
-    public function setGroundingSignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals $groundingSignals)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsGroundingSignals
-     */
-    public function getGroundingSignals()
-    {
-    }
-    /**
-     * Optional. Diagnostic info related to the rewriter model call.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals $rewriterModelCallSignals
-     */
-    public function setRewriterModelCallSignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals $rewriterModelCallSignals)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsRewriterModelCallSignals
-     */
-    public function getRewriterModelCallSignals()
-    {
-    }
-    /**
-     * Optional. Rewritten string query used for search.
-     *
-     * @param string $rewrittenQuery
-     */
-    public function setRewrittenQuery($rewrittenQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRewrittenQuery()
-    {
-    }
-    /**
-     * Optional. Safety check result.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals $safetySignals
-     */
-    public function setSafetySignals(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals $safetySignals)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals
-     */
-    public function getSafetySignals()
-    {
-    }
-    /**
-     * Optional. Search snippets included in the answer generation prompt.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet[] $searchSnippets
-     */
-    public function setSearchSnippets($searchSnippets)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet[]
-     */
-    public function getSearchSnippets()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DataStoreConnectionSignals extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignals
     {
     }
 }

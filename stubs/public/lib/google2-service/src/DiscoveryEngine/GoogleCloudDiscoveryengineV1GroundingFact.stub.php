@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GroundingFact extends \Google\Model
-{
-    /**
-     * Attributes associated with the fact. Common attributes include `source`
-     * (indicating where the fact was sourced from), `author` (indicating the
-     * author of the fact), and so on.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Text content of the fact. Can be at most 10K characters long.
-     *
-     * @var string
-     */
-    public $factText;
-    /**
-     * Attributes associated with the fact. Common attributes include `source`
-     * (indicating where the fact was sourced from), `author` (indicating the
-     * author of the fact), and so on.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GroundingFact extends \Google\Model
     {
+        /**
+         * Attributes associated with the fact. Common attributes include `source`
+         * (indicating where the fact was sourced from), `author` (indicating the
+         * author of the fact), and so on.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Text content of the fact. Can be at most 10K characters long.
+         *
+         * @var string
+         */
+        public $factText;
+        /**
+         * Attributes associated with the fact. Common attributes include `source`
+         * (indicating where the fact was sourced from), `author` (indicating the
+         * author of the fact), and so on.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Text content of the fact. Can be at most 10K characters long.
+         *
+         * @param string $factText
+         */
+        public function setFactText($factText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFactText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GroundingFact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Text content of the fact. Can be at most 10K characters long.
-     *
-     * @param string $factText
-     */
-    public function setFactText($factText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFactText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GroundingFact extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GroundingFact
     {
     }
 }

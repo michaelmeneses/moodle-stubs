@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class BucketBySession extends \Google\Model
-{
-    /**
-     * Specifies that only sessions of duration longer than minDurationMillis are
-     * considered and used as a container for aggregated data.
-     *
-     * @var string
-     */
-    public $minDurationMillis;
-    /**
-     * Specifies that only sessions of duration longer than minDurationMillis are
-     * considered and used as a container for aggregated data.
-     *
-     * @param string $minDurationMillis
-     */
-    public function setMinDurationMillis($minDurationMillis)
+namespace Google\Service\Fitness {
+    class BucketBySession extends \Google\Model
     {
+        /**
+         * Specifies that only sessions of duration longer than minDurationMillis are
+         * considered and used as a container for aggregated data.
+         *
+         * @var string
+         */
+        public $minDurationMillis;
+        /**
+         * Specifies that only sessions of duration longer than minDurationMillis are
+         * considered and used as a container for aggregated data.
+         *
+         * @param string $minDurationMillis
+         */
+        public function setMinDurationMillis($minDurationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinDurationMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\BucketBySession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinDurationMillis()
+    class Google_Service_Fitness_BucketBySession extends \Google\Service\Fitness\BucketBySession
     {
     }
 }

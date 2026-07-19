@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class UnclaimDevicesRequest extends \Google\Collection
-{
-    protected $collection_key = 'unclaims';
-    protected $unclaimsType = PartnerUnclaim::class;
-    protected $unclaimsDataType = 'array';
-    /**
-     * Required. The list of devices to unclaim.
-     *
-     * @param PartnerUnclaim[] $unclaims
-     */
-    public function setUnclaims($unclaims)
+namespace Google\Service\AndroidProvisioningPartner {
+    class UnclaimDevicesRequest extends \Google\Collection
     {
+        protected $collection_key = 'unclaims';
+        protected $unclaimsType = PartnerUnclaim::class;
+        protected $unclaimsDataType = 'array';
+        /**
+         * Required. The list of devices to unclaim.
+         *
+         * @param PartnerUnclaim[] $unclaims
+         */
+        public function setUnclaims($unclaims)
+        {
+        }
+        /**
+         * @return PartnerUnclaim[]
+         */
+        public function getUnclaims()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PartnerUnclaim[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\UnclaimDevicesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnclaims()
+    class Google_Service_AndroidProvisioningPartner_UnclaimDevicesRequest extends \Google\Service\AndroidProvisioningPartner\UnclaimDevicesRequest
     {
     }
 }

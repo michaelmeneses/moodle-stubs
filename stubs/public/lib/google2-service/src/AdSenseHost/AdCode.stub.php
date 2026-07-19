@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdCode extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $adCode;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param string
-     */
-    public function setAdCode($adCode)
+namespace Google\Service\AdSenseHost {
+    class AdCode extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $adCode;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param string
+         */
+        public function setAdCode($adCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_AdSenseHost_AdCode extends \Google\Service\AdSenseHost\AdCode
     {
     }
 }

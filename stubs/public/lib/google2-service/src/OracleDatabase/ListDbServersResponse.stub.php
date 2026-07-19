@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListDbServersResponse extends \Google\Collection
-{
-    protected $collection_key = 'dbServers';
-    protected $dbServersType = DbServer::class;
-    protected $dbServersDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of database servers.
-     *
-     * @param DbServer[] $dbServers
-     */
-    public function setDbServers($dbServers)
+namespace Google\Service\OracleDatabase {
+    class ListDbServersResponse extends \Google\Collection
     {
+        protected $collection_key = 'dbServers';
+        protected $dbServersType = DbServer::class;
+        protected $dbServersDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of database servers.
+         *
+         * @param DbServer[] $dbServers
+         */
+        public function setDbServers($dbServers)
+        {
+        }
+        /**
+         * @return DbServer[]
+         */
+        public function getDbServers()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DbServer[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListDbServersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbServers()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListDbServersResponse extends \Google\Service\OracleDatabase\ListDbServersResponse
     {
     }
 }

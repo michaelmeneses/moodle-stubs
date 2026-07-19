@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3HandlerLifecycleHandler extends \Google\Model
-{
-    /**
-     * Optional. The condition that must be satisfied to trigger this handler.
-     *
-     * @var string
-     */
-    public $condition;
-    protected $fulfillmentType = GoogleCloudDialogflowCxV3Fulfillment::class;
-    protected $fulfillmentDataType = '';
-    /**
-     * Required. The name of the lifecycle stage that triggers this handler.
-     * Supported values: * `playbook-start` * `pre-action-selection` * `pre-
-     * action-execution`
-     *
-     * @var string
-     */
-    public $lifecycleStage;
-    /**
-     * Optional. The condition that must be satisfied to trigger this handler.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3HandlerLifecycleHandler extends \Google\Model
     {
+        /**
+         * Optional. The condition that must be satisfied to trigger this handler.
+         *
+         * @var string
+         */
+        public $condition;
+        protected $fulfillmentType = GoogleCloudDialogflowCxV3Fulfillment::class;
+        protected $fulfillmentDataType = '';
+        /**
+         * Required. The name of the lifecycle stage that triggers this handler.
+         * Supported values: * `playbook-start` * `pre-action-selection` * `pre-
+         * action-execution`
+         *
+         * @var string
+         */
+        public $lifecycleStage;
+        /**
+         * Optional. The condition that must be satisfied to trigger this handler.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Required. The fulfillment to call when this handler is triggered.
+         *
+         * @param GoogleCloudDialogflowCxV3Fulfillment $fulfillment
+         */
+        public function setFulfillment(GoogleCloudDialogflowCxV3Fulfillment $fulfillment)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Fulfillment
+         */
+        public function getFulfillment()
+        {
+        }
+        /**
+         * Required. The name of the lifecycle stage that triggers this handler.
+         * Supported values: * `playbook-start` * `pre-action-selection` * `pre-
+         * action-execution`
+         *
+         * @param string $lifecycleStage
+         */
+        public function setLifecycleStage($lifecycleStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLifecycleStage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3HandlerLifecycleHandler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Required. The fulfillment to call when this handler is triggered.
-     *
-     * @param GoogleCloudDialogflowCxV3Fulfillment $fulfillment
-     */
-    public function setFulfillment(GoogleCloudDialogflowCxV3Fulfillment $fulfillment)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Fulfillment
-     */
-    public function getFulfillment()
-    {
-    }
-    /**
-     * Required. The name of the lifecycle stage that triggers this handler.
-     * Supported values: * `playbook-start` * `pre-action-selection` * `pre-
-     * action-execution`
-     *
-     * @param string $lifecycleStage
-     */
-    public function setLifecycleStage($lifecycleStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLifecycleStage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3HandlerLifecycleHandler extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3HandlerLifecycleHandler
     {
     }
 }

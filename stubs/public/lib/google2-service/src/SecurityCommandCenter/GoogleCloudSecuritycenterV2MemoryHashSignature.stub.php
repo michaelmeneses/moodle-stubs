@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2MemoryHashSignature extends \Google\Collection
-{
-    protected $collection_key = 'detections';
-    /**
-     * The binary family.
-     *
-     * @var string
-     */
-    public $binaryFamily;
-    protected $detectionsType = GoogleCloudSecuritycenterV2Detection::class;
-    protected $detectionsDataType = 'array';
-    /**
-     * The binary family.
-     *
-     * @param string $binaryFamily
-     */
-    public function setBinaryFamily($binaryFamily)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2MemoryHashSignature extends \Google\Collection
     {
+        protected $collection_key = 'detections';
+        /**
+         * The binary family.
+         *
+         * @var string
+         */
+        public $binaryFamily;
+        protected $detectionsType = GoogleCloudSecuritycenterV2Detection::class;
+        protected $detectionsDataType = 'array';
+        /**
+         * The binary family.
+         *
+         * @param string $binaryFamily
+         */
+        public function setBinaryFamily($binaryFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinaryFamily()
+        {
+        }
+        /**
+         * The list of memory hash detections contributing to the binary family match.
+         *
+         * @param GoogleCloudSecuritycenterV2Detection[] $detections
+         */
+        public function setDetections($detections)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Detection[]
+         */
+        public function getDetections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2MemoryHashSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryFamily()
-    {
-    }
-    /**
-     * The list of memory hash detections contributing to the binary family match.
-     *
-     * @param GoogleCloudSecuritycenterV2Detection[] $detections
-     */
-    public function setDetections($detections)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Detection[]
-     */
-    public function getDetections()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2MemoryHashSignature extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2MemoryHashSignature
     {
     }
 }

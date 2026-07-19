@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question;
 
+use stdClass;
+use core\exception\moodle_exception;
+use core\context;
 /**
  * Category manager class, used for CRUD operations on question categories and related utility methods.
  *
@@ -186,6 +189,20 @@ class category_manager
      * @todo Deprecate in 6.0 MDL-87844 for Removal in 7.0 MDL-87845.
      */
     public static function fix_restored_category_parents(): void
+    {
+    }
+    /**
+     * Upgrade step to find questions with no category and delete them.
+     *
+     * Due to MDL-86154, there may be questions left in the database after a restore, whose category has been deleted. This will
+     * find any questions like that and delete them. These questions will always be unused.
+     *
+     * Now that we have prevented this occurring, this function is used by the upgrade process to clean up these questions.
+     *
+     * @return int A count of deleted questions.
+     * @todo Deprecate in 6.0 MDL-87844 for Removal in 7.0 MDL-87845.
+     */
+    public static function cleanup_questions_without_categories(): int
     {
     }
 }

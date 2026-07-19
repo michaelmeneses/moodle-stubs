@@ -21,198 +21,207 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Customer extends \Google\Model
-{
-    /**
-     * The customer's secondary contact email address. This email address cannot
-     * be on the same domain as the `customerDomain`
-     *
-     * @var string
-     */
-    public $alternateEmail;
-    /**
-     * The customer's creation time (Readonly)
-     *
-     * @var string
-     */
-    public $customerCreationTime;
-    /**
-     * The customer's primary domain name string. Do not include the `www` prefix
-     * when creating a new customer.
-     *
-     * @var string
-     */
-    public $customerDomain;
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The unique ID for the customer's Google Workspace account. (Readonly)
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies the resource as a customer. Value: `admin#directory#customer`
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The customer's ISO 639-2 language code. See the [Language Codes](https://de
-     * velopers.google.com/workspace/admin/directory/v1/languages) page for the
-     * list of supported codes. Valid language codes outside the supported set
-     * will be accepted by the API but may lead to unexpected behavior. The
-     * default value is `en`.
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * The customer's contact phone number in
-     * [E.164](https://en.wikipedia.org/wiki/E.164) format.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    protected $postalAddressType = CustomerPostalAddress::class;
-    protected $postalAddressDataType = '';
-    /**
-     * The customer's secondary contact email address. This email address cannot
-     * be on the same domain as the `customerDomain`
-     *
-     * @param string $alternateEmail
-     */
-    public function setAlternateEmail($alternateEmail)
+namespace Google\Service\Directory {
+    class Customer extends \Google\Model
     {
+        /**
+         * The customer's secondary contact email address. This email address cannot
+         * be on the same domain as the `customerDomain`
+         *
+         * @var string
+         */
+        public $alternateEmail;
+        /**
+         * The customer's creation time (Readonly)
+         *
+         * @var string
+         */
+        public $customerCreationTime;
+        /**
+         * The customer's primary domain name string. Do not include the `www` prefix
+         * when creating a new customer.
+         *
+         * @var string
+         */
+        public $customerDomain;
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The unique ID for the customer's Google Workspace account. (Readonly)
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies the resource as a customer. Value: `admin#directory#customer`
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The customer's ISO 639-2 language code. See the [Language Codes](https://de
+         * velopers.google.com/workspace/admin/directory/v1/languages) page for the
+         * list of supported codes. Valid language codes outside the supported set
+         * will be accepted by the API but may lead to unexpected behavior. The
+         * default value is `en`.
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * The customer's contact phone number in
+         * [E.164](https://en.wikipedia.org/wiki/E.164) format.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        protected $postalAddressType = CustomerPostalAddress::class;
+        protected $postalAddressDataType = '';
+        /**
+         * The customer's secondary contact email address. This email address cannot
+         * be on the same domain as the `customerDomain`
+         *
+         * @param string $alternateEmail
+         */
+        public function setAlternateEmail($alternateEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlternateEmail()
+        {
+        }
+        /**
+         * The customer's creation time (Readonly)
+         *
+         * @param string $customerCreationTime
+         */
+        public function setCustomerCreationTime($customerCreationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerCreationTime()
+        {
+        }
+        /**
+         * The customer's primary domain name string. Do not include the `www` prefix
+         * when creating a new customer.
+         *
+         * @param string $customerDomain
+         */
+        public function setCustomerDomain($customerDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerDomain()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The unique ID for the customer's Google Workspace account. (Readonly)
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies the resource as a customer. Value: `admin#directory#customer`
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The customer's ISO 639-2 language code. See the [Language Codes](https://de
+         * velopers.google.com/workspace/admin/directory/v1/languages) page for the
+         * list of supported codes. Valid language codes outside the supported set
+         * will be accepted by the API but may lead to unexpected behavior. The
+         * default value is `en`.
+         *
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * The customer's contact phone number in
+         * [E.164](https://en.wikipedia.org/wiki/E.164) format.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * The customer's postal address information.
+         *
+         * @param CustomerPostalAddress $postalAddress
+         */
+        public function setPostalAddress(CustomerPostalAddress $postalAddress)
+        {
+        }
+        /**
+         * @return CustomerPostalAddress
+         */
+        public function getPostalAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Customer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternateEmail()
-    {
-    }
-    /**
-     * The customer's creation time (Readonly)
-     *
-     * @param string $customerCreationTime
-     */
-    public function setCustomerCreationTime($customerCreationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerCreationTime()
-    {
-    }
-    /**
-     * The customer's primary domain name string. Do not include the `www` prefix
-     * when creating a new customer.
-     *
-     * @param string $customerDomain
-     */
-    public function setCustomerDomain($customerDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerDomain()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The unique ID for the customer's Google Workspace account. (Readonly)
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies the resource as a customer. Value: `admin#directory#customer`
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The customer's ISO 639-2 language code. See the [Language Codes](https://de
-     * velopers.google.com/workspace/admin/directory/v1/languages) page for the
-     * list of supported codes. Valid language codes outside the supported set
-     * will be accepted by the API but may lead to unexpected behavior. The
-     * default value is `en`.
-     *
-     * @param string $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * The customer's contact phone number in
-     * [E.164](https://en.wikipedia.org/wiki/E.164) format.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * The customer's postal address information.
-     *
-     * @param CustomerPostalAddress $postalAddress
-     */
-    public function setPostalAddress(CustomerPostalAddress $postalAddress)
-    {
-    }
-    /**
-     * @return CustomerPostalAddress
-     */
-    public function getPostalAddress()
+    class Google_Service_Directory_Customer extends \Google\Service\Directory\Customer
     {
     }
 }

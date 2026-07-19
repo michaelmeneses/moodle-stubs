@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainDataset extends \Google\Model
-{
-    /**
-     * Default value for unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * For evals only.
-     */
-    public const TYPE_EVAL = 'EVAL';
-    /**
-     * Dataset with new conversations coming in regularly (Insights legacy
-     * conversations and AI trainer)
-     */
-    public const TYPE_LIVE = 'LIVE';
-    /**
-     * Output only. Dataset create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Dataset description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display name for the dataaset
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Immutable. Identifier. Resource name of the dataset. Format:
-     * projects/{project}/locations/{location}/datasets/{dataset}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Option TTL for the dataset.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Dataset usage type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Dataset update time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Dataset create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainDataset extends \Google\Model
     {
+        /**
+         * Default value for unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * For evals only.
+         */
+        public const TYPE_EVAL = 'EVAL';
+        /**
+         * Dataset with new conversations coming in regularly (Insights legacy
+         * conversations and AI trainer)
+         */
+        public const TYPE_LIVE = 'LIVE';
+        /**
+         * Output only. Dataset create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Dataset description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display name for the dataaset
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Immutable. Identifier. Resource name of the dataset. Format:
+         * projects/{project}/locations/{location}/datasets/{dataset}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Option TTL for the dataset.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Dataset usage type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Dataset update time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Dataset create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Dataset description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display name for the dataaset
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Immutable. Identifier. Resource name of the dataset. Format:
+         * projects/{project}/locations/{location}/datasets/{dataset}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Option TTL for the dataset.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
+        /**
+         * Dataset usage type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, EVAL, LIVE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Dataset update time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Dataset description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display name for the dataaset
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Immutable. Identifier. Resource name of the dataset. Format:
-     * projects/{project}/locations/{location}/datasets/{dataset}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Option TTL for the dataset.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
-    {
-    }
-    /**
-     * Dataset usage type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, EVAL, LIVE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Dataset update time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainDataset extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDataset
     {
     }
 }

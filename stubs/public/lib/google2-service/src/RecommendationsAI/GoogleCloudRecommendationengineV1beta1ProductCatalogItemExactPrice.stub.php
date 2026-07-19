@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends \Google\Model
-{
-    /**
-     * Optional. Display price of the product.
-     *
-     * @var float
-     */
-    public $displayPrice;
-    /**
-     * Optional. Price of the product without any discount. If zero, by default
-     * set to be the 'displayPrice'.
-     *
-     * @var float
-     */
-    public $originalPrice;
-    /**
-     * Optional. Display price of the product.
-     *
-     * @param float $displayPrice
-     */
-    public function setDisplayPrice($displayPrice)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends \Google\Model
     {
+        /**
+         * Optional. Display price of the product.
+         *
+         * @var float
+         */
+        public $displayPrice;
+        /**
+         * Optional. Price of the product without any discount. If zero, by default
+         * set to be the 'displayPrice'.
+         *
+         * @var float
+         */
+        public $originalPrice;
+        /**
+         * Optional. Display price of the product.
+         *
+         * @param float $displayPrice
+         */
+        public function setDisplayPrice($displayPrice)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDisplayPrice()
+        {
+        }
+        /**
+         * Optional. Price of the product without any discount. If zero, by default
+         * set to be the 'displayPrice'.
+         *
+         * @param float $originalPrice
+         */
+        public function setOriginalPrice($originalPrice)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOriginalPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayPrice()
-    {
-    }
-    /**
-     * Optional. Price of the product without any discount. If zero, by default
-     * set to be the 'displayPrice'.
-     *
-     * @param float $originalPrice
-     */
-    public function setOriginalPrice($originalPrice)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOriginalPrice()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class HeldOrgUnit extends \Google\Model
-{
-    /**
-     * When the organizational unit was put on hold. This property is immutable.
-     *
-     * @var string
-     */
-    public $holdTime;
-    /**
-     * The organizational unit's immutable ID as provided by the [Admin
-     * SDK](https://developers.google.com/admin-sdk/).
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * When the organizational unit was put on hold. This property is immutable.
-     *
-     * @param string $holdTime
-     */
-    public function setHoldTime($holdTime)
+namespace Google\Service\Vault {
+    class HeldOrgUnit extends \Google\Model
     {
+        /**
+         * When the organizational unit was put on hold. This property is immutable.
+         *
+         * @var string
+         */
+        public $holdTime;
+        /**
+         * The organizational unit's immutable ID as provided by the [Admin
+         * SDK](https://developers.google.com/admin-sdk/).
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * When the organizational unit was put on hold. This property is immutable.
+         *
+         * @param string $holdTime
+         */
+        public function setHoldTime($holdTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHoldTime()
+        {
+        }
+        /**
+         * The organizational unit's immutable ID as provided by the [Admin
+         * SDK](https://developers.google.com/admin-sdk/).
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\HeldOrgUnit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHoldTime()
-    {
-    }
-    /**
-     * The organizational unit's immutable ID as provided by the [Admin
-     * SDK](https://developers.google.com/admin-sdk/).
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
+    class Google_Service_Vault_HeldOrgUnit extends \Google\Service\Vault\HeldOrgUnit
     {
     }
 }

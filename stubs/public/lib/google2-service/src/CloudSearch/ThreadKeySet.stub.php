@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ThreadKeySet extends \Google\Collection
-{
-    protected $collection_key = 'messageKeys';
-    protected $messageKeysType = MultiKey::class;
-    protected $messageKeysDataType = 'array';
-    protected $newThreadKeyType = MultiKey::class;
-    protected $newThreadKeyDataType = '';
-    /**
-     * @param MultiKey[]
-     */
-    public function setMessageKeys($messageKeys)
+namespace Google\Service\CloudSearch {
+    class ThreadKeySet extends \Google\Collection
     {
+        protected $collection_key = 'messageKeys';
+        protected $messageKeysType = MultiKey::class;
+        protected $messageKeysDataType = 'array';
+        protected $newThreadKeyType = MultiKey::class;
+        protected $newThreadKeyDataType = '';
+        /**
+         * @param MultiKey[]
+         */
+        public function setMessageKeys($messageKeys)
+        {
+        }
+        /**
+         * @return MultiKey[]
+         */
+        public function getMessageKeys()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setNewThreadKey(MultiKey $newThreadKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getNewThreadKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MultiKey[]
+     * Runtime class alias of \Google\Service\CloudSearch\ThreadKeySet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageKeys()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setNewThreadKey(MultiKey $newThreadKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getNewThreadKey()
+    class Google_Service_CloudSearch_ThreadKeySet extends \Google\Service\CloudSearch\ThreadKeySet
     {
     }
 }

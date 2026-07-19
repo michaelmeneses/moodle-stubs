@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use coding_exception;
+use core_text;
 /**
  * Helper functions for DB manipulations
  *

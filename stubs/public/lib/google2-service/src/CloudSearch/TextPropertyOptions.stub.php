@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TextPropertyOptions extends \Google\Model
-{
-    protected $operatorOptionsType = TextOperatorOptions::class;
-    protected $operatorOptionsDataType = '';
-    protected $retrievalImportanceType = RetrievalImportance::class;
-    protected $retrievalImportanceDataType = '';
-    /**
-     * If set, describes how the property should be used as a search operator.
-     *
-     * @param TextOperatorOptions $operatorOptions
-     */
-    public function setOperatorOptions(TextOperatorOptions $operatorOptions)
+namespace Google\Service\CloudSearch {
+    class TextPropertyOptions extends \Google\Model
     {
+        protected $operatorOptionsType = TextOperatorOptions::class;
+        protected $operatorOptionsDataType = '';
+        protected $retrievalImportanceType = RetrievalImportance::class;
+        protected $retrievalImportanceDataType = '';
+        /**
+         * If set, describes how the property should be used as a search operator.
+         *
+         * @param TextOperatorOptions $operatorOptions
+         */
+        public function setOperatorOptions(TextOperatorOptions $operatorOptions)
+        {
+        }
+        /**
+         * @return TextOperatorOptions
+         */
+        public function getOperatorOptions()
+        {
+        }
+        /**
+         * Indicates the search quality importance of the tokens within the field when
+         * used for retrieval.
+         *
+         * @param RetrievalImportance $retrievalImportance
+         */
+        public function setRetrievalImportance(RetrievalImportance $retrievalImportance)
+        {
+        }
+        /**
+         * @return RetrievalImportance
+         */
+        public function getRetrievalImportance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextOperatorOptions
+     * Runtime class alias of \Google\Service\CloudSearch\TextPropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorOptions()
-    {
-    }
-    /**
-     * Indicates the search quality importance of the tokens within the field when
-     * used for retrieval.
-     *
-     * @param RetrievalImportance $retrievalImportance
-     */
-    public function setRetrievalImportance(RetrievalImportance $retrievalImportance)
-    {
-    }
-    /**
-     * @return RetrievalImportance
-     */
-    public function getRetrievalImportance()
+    class Google_Service_CloudSearch_TextPropertyOptions extends \Google\Service\CloudSearch\TextPropertyOptions
     {
     }
 }

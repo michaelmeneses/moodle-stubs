@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SuggestRequest extends \Google\Collection
-{
-    protected $collection_key = 'dataSourceRestrictions';
-    protected $dataSourceRestrictionsType = DataSourceRestriction::class;
-    protected $dataSourceRestrictionsDataType = 'array';
-    /**
-     * Partial query for which autocomplete suggestions will be shown. For
-     * example, if the query is "sea", then the server might return "season",
-     * "search", "seagull" and so on.
-     *
-     * @var string
-     */
-    public $query;
-    protected $requestOptionsType = RequestOptions::class;
-    protected $requestOptionsDataType = '';
-    /**
-     * The sources to use for suggestions. If not specified, the data sources are
-     * taken from the current search application. NOTE: Suggestions are only
-     * supported for the following sources: * Third-party data sources *
-     * PredefinedSource.PERSON * PredefinedSource.GOOGLE_DRIVE
-     *
-     * @param DataSourceRestriction[] $dataSourceRestrictions
-     */
-    public function setDataSourceRestrictions($dataSourceRestrictions)
+namespace Google\Service\CloudSearch {
+    class SuggestRequest extends \Google\Collection
     {
+        protected $collection_key = 'dataSourceRestrictions';
+        protected $dataSourceRestrictionsType = DataSourceRestriction::class;
+        protected $dataSourceRestrictionsDataType = 'array';
+        /**
+         * Partial query for which autocomplete suggestions will be shown. For
+         * example, if the query is "sea", then the server might return "season",
+         * "search", "seagull" and so on.
+         *
+         * @var string
+         */
+        public $query;
+        protected $requestOptionsType = RequestOptions::class;
+        protected $requestOptionsDataType = '';
+        /**
+         * The sources to use for suggestions. If not specified, the data sources are
+         * taken from the current search application. NOTE: Suggestions are only
+         * supported for the following sources: * Third-party data sources *
+         * PredefinedSource.PERSON * PredefinedSource.GOOGLE_DRIVE
+         *
+         * @param DataSourceRestriction[] $dataSourceRestrictions
+         */
+        public function setDataSourceRestrictions($dataSourceRestrictions)
+        {
+        }
+        /**
+         * @return DataSourceRestriction[]
+         */
+        public function getDataSourceRestrictions()
+        {
+        }
+        /**
+         * Partial query for which autocomplete suggestions will be shown. For
+         * example, if the query is "sea", then the server might return "season",
+         * "search", "seagull" and so on.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Request options, such as the search application and user timezone.
+         *
+         * @param RequestOptions $requestOptions
+         */
+        public function setRequestOptions(RequestOptions $requestOptions)
+        {
+        }
+        /**
+         * @return RequestOptions
+         */
+        public function getRequestOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceRestriction[]
+     * Runtime class alias of \Google\Service\CloudSearch\SuggestRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceRestrictions()
-    {
-    }
-    /**
-     * Partial query for which autocomplete suggestions will be shown. For
-     * example, if the query is "sea", then the server might return "season",
-     * "search", "seagull" and so on.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Request options, such as the search application and user timezone.
-     *
-     * @param RequestOptions $requestOptions
-     */
-    public function setRequestOptions(RequestOptions $requestOptions)
-    {
-    }
-    /**
-     * @return RequestOptions
-     */
-    public function getRequestOptions()
+    class Google_Service_CloudSearch_SuggestRequest extends \Google\Service\CloudSearch\SuggestRequest
     {
     }
 }

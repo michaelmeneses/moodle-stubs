@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1ButtonList extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = GoogleAppsCardV1Button::class;
-    protected $buttonsDataType = 'array';
-    /**
-     * An array of buttons.
-     *
-     * @param GoogleAppsCardV1Button[] $buttons
-     */
-    public function setButtons($buttons)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1ButtonList extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = GoogleAppsCardV1Button::class;
+        protected $buttonsDataType = 'array';
+        /**
+         * An array of buttons.
+         *
+         * @param GoogleAppsCardV1Button[] $buttons
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Button[]
+         */
+        public function getButtons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Button[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1ButtonList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1ButtonList extends \Google\Service\HangoutsChat\GoogleAppsCardV1ButtonList
     {
     }
 }

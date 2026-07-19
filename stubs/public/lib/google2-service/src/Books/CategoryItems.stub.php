@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class CategoryItems extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $badgeUrl;
-    /**
-     * @var string
-     */
-    public $categoryId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string $badgeUrl
-     */
-    public function setBadgeUrl($badgeUrl)
+namespace Google\Service\Books {
+    class CategoryItems extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $badgeUrl;
+        /**
+         * @var string
+         */
+        public $categoryId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string $badgeUrl
+         */
+        public function setBadgeUrl($badgeUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBadgeUrl()
+        {
+        }
+        /**
+         * @param string $categoryId
+         */
+        public function setCategoryId($categoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryId()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\CategoryItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBadgeUrl()
-    {
-    }
-    /**
-     * @param string $categoryId
-     */
-    public function setCategoryId($categoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryId()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Books_CategoryItems extends \Google\Service\Books\CategoryItems
     {
     }
 }

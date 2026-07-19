@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1ExchangeOauthTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clientId;
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @var string
-     */
-    public $codeVerifier;
-    /**
-     * @var string
-     */
-    public $grantType;
-    /**
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @param string
-     */
-    public function setClientId($clientId)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1ExchangeOauthTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clientId;
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @var string
+         */
+        public $codeVerifier;
+        /**
+         * @var string
+         */
+        public $grantType;
+        /**
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @param string
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCodeVerifier($codeVerifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodeVerifier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGrantType($grantType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGrantType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeOauthTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCodeVerifier($codeVerifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCodeVerifier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGrantType($grantType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGrantType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1ExchangeOauthTokenRequest extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeOauthTokenRequest
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1Location extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * @param string
-     */
-    public function setPostalCode($postalCode)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1Location extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * @param string
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1Location extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Location
     {
     }
 }

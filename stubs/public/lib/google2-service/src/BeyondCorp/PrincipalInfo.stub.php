@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class PrincipalInfo extends \Google\Model
-{
-    protected $serviceAccountType = ServiceAccount::class;
-    protected $serviceAccountDataType = '';
-    /**
-     * @param ServiceAccount
-     */
-    public function setServiceAccount(ServiceAccount $serviceAccount)
+namespace Google\Service\BeyondCorp {
+    class PrincipalInfo extends \Google\Model
     {
+        protected $serviceAccountType = ServiceAccount::class;
+        protected $serviceAccountDataType = '';
+        /**
+         * @param ServiceAccount
+         */
+        public function setServiceAccount(ServiceAccount $serviceAccount)
+        {
+        }
+        /**
+         * @return ServiceAccount
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccount
+     * Runtime class alias of \Google\Service\BeyondCorp\PrincipalInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
+    class Google_Service_BeyondCorp_PrincipalInfo extends \Google\Service\BeyondCorp\PrincipalInfo
     {
     }
 }

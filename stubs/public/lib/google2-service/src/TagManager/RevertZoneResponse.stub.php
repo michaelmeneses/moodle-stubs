@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertZoneResponse extends \Google\Model
-{
-    protected $zoneType = Zone::class;
-    protected $zoneDataType = '';
-    /**
-     * Zone as it appears in the latest container version since the last workspace
-     * synchronization operation. If no zone is present, that means the zone was
-     * deleted in the latest container version.
-     *
-     * @param Zone $zone
-     */
-    public function setZone(Zone $zone)
+namespace Google\Service\TagManager {
+    class RevertZoneResponse extends \Google\Model
     {
+        protected $zoneType = Zone::class;
+        protected $zoneDataType = '';
+        /**
+         * Zone as it appears in the latest container version since the last workspace
+         * synchronization operation. If no zone is present, that means the zone was
+         * deleted in the latest container version.
+         *
+         * @param Zone $zone
+         */
+        public function setZone(Zone $zone)
+        {
+        }
+        /**
+         * @return Zone
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Zone
+     * Runtime class alias of \Google\Service\TagManager\RevertZoneResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZone()
+    class Google_Service_TagManager_RevertZoneResponse extends \Google\Service\TagManager\RevertZoneResponse
     {
     }
 }

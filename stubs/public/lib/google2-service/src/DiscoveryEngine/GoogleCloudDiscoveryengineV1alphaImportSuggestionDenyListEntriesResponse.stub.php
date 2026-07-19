@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaImportSuggestionDenyListEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * Count of deny list entries that failed to be imported.
-     *
-     * @var string
-     */
-    public $failedEntriesCount;
-    /**
-     * Count of deny list entries successfully imported.
-     *
-     * @var string
-     */
-    public $importedEntriesCount;
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaImportSuggestionDenyListEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * Count of deny list entries that failed to be imported.
+         *
+         * @var string
+         */
+        public $failedEntriesCount;
+        /**
+         * Count of deny list entries successfully imported.
+         *
+         * @var string
+         */
+        public $importedEntriesCount;
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Count of deny list entries that failed to be imported.
+         *
+         * @param string $failedEntriesCount
+         */
+        public function setFailedEntriesCount($failedEntriesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailedEntriesCount()
+        {
+        }
+        /**
+         * Count of deny list entries successfully imported.
+         *
+         * @param string $importedEntriesCount
+         */
+        public function setImportedEntriesCount($importedEntriesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportedEntriesCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaImportSuggestionDenyListEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Count of deny list entries that failed to be imported.
-     *
-     * @param string $failedEntriesCount
-     */
-    public function setFailedEntriesCount($failedEntriesCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailedEntriesCount()
-    {
-    }
-    /**
-     * Count of deny list entries successfully imported.
-     *
-     * @param string $importedEntriesCount
-     */
-    public function setImportedEntriesCount($importedEntriesCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImportedEntriesCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaImportSuggestionDenyListEntriesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaImportSuggestionDenyListEntriesResponse
     {
     }
 }

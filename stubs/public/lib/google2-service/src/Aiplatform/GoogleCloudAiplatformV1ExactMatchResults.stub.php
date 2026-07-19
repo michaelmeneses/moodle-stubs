@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExactMatchResults extends \Google\Collection
-{
-    protected $collection_key = 'exactMatchMetricValues';
-    protected $exactMatchMetricValuesType = GoogleCloudAiplatformV1ExactMatchMetricValue::class;
-    protected $exactMatchMetricValuesDataType = 'array';
-    /**
-     * Output only. Exact match metric values.
-     *
-     * @param GoogleCloudAiplatformV1ExactMatchMetricValue[] $exactMatchMetricValues
-     */
-    public function setExactMatchMetricValues($exactMatchMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExactMatchResults extends \Google\Collection
     {
+        protected $collection_key = 'exactMatchMetricValues';
+        protected $exactMatchMetricValuesType = GoogleCloudAiplatformV1ExactMatchMetricValue::class;
+        protected $exactMatchMetricValuesDataType = 'array';
+        /**
+         * Output only. Exact match metric values.
+         *
+         * @param GoogleCloudAiplatformV1ExactMatchMetricValue[] $exactMatchMetricValues
+         */
+        public function setExactMatchMetricValues($exactMatchMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExactMatchMetricValue[]
+         */
+        public function getExactMatchMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExactMatchMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExactMatchResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExactMatchMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExactMatchResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExactMatchResults
     {
     }
 }

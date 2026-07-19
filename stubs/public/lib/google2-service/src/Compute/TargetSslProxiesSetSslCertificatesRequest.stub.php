@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetSslProxiesSetSslCertificatesRequest extends \Google\Collection
-{
-    protected $collection_key = 'sslCertificates';
-    /**
-     * New set of URLs to SslCertificate resources to associate with this
-     * TargetSslProxy. At least one SSL certificate must be specified. Currently,
-     * you may specify up to 15 SSL certificates.
-     *
-     * @var string[]
-     */
-    public $sslCertificates;
-    /**
-     * New set of URLs to SslCertificate resources to associate with this
-     * TargetSslProxy. At least one SSL certificate must be specified. Currently,
-     * you may specify up to 15 SSL certificates.
-     *
-     * @param string[] $sslCertificates
-     */
-    public function setSslCertificates($sslCertificates)
+namespace Google\Service\Compute {
+    class TargetSslProxiesSetSslCertificatesRequest extends \Google\Collection
     {
+        protected $collection_key = 'sslCertificates';
+        /**
+         * New set of URLs to SslCertificate resources to associate with this
+         * TargetSslProxy. At least one SSL certificate must be specified. Currently,
+         * you may specify up to 15 SSL certificates.
+         *
+         * @var string[]
+         */
+        public $sslCertificates;
+        /**
+         * New set of URLs to SslCertificate resources to associate with this
+         * TargetSslProxy. At least one SSL certificate must be specified. Currently,
+         * you may specify up to 15 SSL certificates.
+         *
+         * @param string[] $sslCertificates
+         */
+        public function setSslCertificates($sslCertificates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSslCertificates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\TargetSslProxiesSetSslCertificatesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSslCertificates()
+    class Google_Service_Compute_TargetSslProxiesSetSslCertificatesRequest extends \Google\Service\Compute\TargetSslProxiesSetSslCertificatesRequest
     {
     }
 }

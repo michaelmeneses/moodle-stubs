@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo extends \Google\Model
-{
-    /**
-     * Whether finetuning is allowed for this base processor version.
-     *
-     * @var bool
-     */
-    public $finetuningAllowed;
-    /**
-     * The minimum number of labeled documents in the training dataset required
-     * for finetuning.
-     *
-     * @var int
-     */
-    public $minTrainLabeledDocuments;
-    /**
-     * Whether finetuning is allowed for this base processor version.
-     *
-     * @param bool $finetuningAllowed
-     */
-    public function setFinetuningAllowed($finetuningAllowed)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo extends \Google\Model
     {
+        /**
+         * Whether finetuning is allowed for this base processor version.
+         *
+         * @var bool
+         */
+        public $finetuningAllowed;
+        /**
+         * The minimum number of labeled documents in the training dataset required
+         * for finetuning.
+         *
+         * @var int
+         */
+        public $minTrainLabeledDocuments;
+        /**
+         * Whether finetuning is allowed for this base processor version.
+         *
+         * @param bool $finetuningAllowed
+         */
+        public function setFinetuningAllowed($finetuningAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFinetuningAllowed()
+        {
+        }
+        /**
+         * The minimum number of labeled documents in the training dataset required
+         * for finetuning.
+         *
+         * @param int $minTrainLabeledDocuments
+         */
+        public function setMinTrainLabeledDocuments($minTrainLabeledDocuments)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinTrainLabeledDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinetuningAllowed()
-    {
-    }
-    /**
-     * The minimum number of labeled documents in the training dataset required
-     * for finetuning.
-     *
-     * @param int $minTrainLabeledDocuments
-     */
-    public function setMinTrainLabeledDocuments($minTrainLabeledDocuments)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinTrainLabeledDocuments()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo
     {
     }
 }

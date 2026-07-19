@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class ExtrudedArea extends \Google\Model
-{
-    protected $areaType = Area::class;
-    protected $areaDataType = '';
-    public $maxZ;
-    public $minZ;
+namespace Google\Service\SemanticTile {
+    class ExtrudedArea extends \Google\Model
+    {
+        protected $areaType = Area::class;
+        protected $areaDataType = '';
+        public $maxZ;
+        public $minZ;
+        /**
+         * @param Area
+         */
+        public function setArea(Area $area)
+        {
+        }
+        /**
+         * @return Area
+         */
+        public function getArea()
+        {
+        }
+        public function setMaxZ($maxZ)
+        {
+        }
+        public function getMaxZ()
+        {
+        }
+        public function setMinZ($minZ)
+        {
+        }
+        public function getMinZ()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Area
+     * Runtime class alias of \Google\Service\SemanticTile\ExtrudedArea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setArea(Area $area)
-    {
-    }
-    /**
-     * @return Area
-     */
-    public function getArea()
-    {
-    }
-    public function setMaxZ($maxZ)
-    {
-    }
-    public function getMaxZ()
-    {
-    }
-    public function setMinZ($minZ)
-    {
-    }
-    public function getMinZ()
+    class Google_Service_SemanticTile_ExtrudedArea extends \Google\Service\SemanticTile\ExtrudedArea
     {
     }
 }

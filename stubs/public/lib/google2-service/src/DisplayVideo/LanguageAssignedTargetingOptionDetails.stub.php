@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class LanguageAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Output only. The display name of the language (e.g., "French").
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Indicates if this option is being negatively targeted. All assigned
-     * language targeting options on the same resource must have the same value
-     * for this field.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * Required. The targeting_option_id of a TargetingOption of type
-     * `TARGETING_TYPE_LANGUAGE`.
-     *
-     * @var string
-     */
-    public $targetingOptionId;
-    /**
-     * Output only. The display name of the language (e.g., "French").
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class LanguageAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Output only. The display name of the language (e.g., "French").
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Indicates if this option is being negatively targeted. All assigned
+         * language targeting options on the same resource must have the same value
+         * for this field.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * Required. The targeting_option_id of a TargetingOption of type
+         * `TARGETING_TYPE_LANGUAGE`.
+         *
+         * @var string
+         */
+        public $targetingOptionId;
+        /**
+         * Output only. The display name of the language (e.g., "French").
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Indicates if this option is being negatively targeted. All assigned
+         * language targeting options on the same resource must have the same value
+         * for this field.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
+        /**
+         * Required. The targeting_option_id of a TargetingOption of type
+         * `TARGETING_TYPE_LANGUAGE`.
+         *
+         * @param string $targetingOptionId
+         */
+        public function setTargetingOptionId($targetingOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\LanguageAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Indicates if this option is being negatively targeted. All assigned
-     * language targeting options on the same resource must have the same value
-     * for this field.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNegative()
-    {
-    }
-    /**
-     * Required. The targeting_option_id of a TargetingOption of type
-     * `TARGETING_TYPE_LANGUAGE`.
-     *
-     * @param string $targetingOptionId
-     */
-    public function setTargetingOptionId($targetingOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetingOptionId()
+    class Google_Service_DisplayVideo_LanguageAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\LanguageAssignedTargetingOptionDetails
     {
     }
 }

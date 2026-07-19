@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequest extends \Google\Model
-{
-    protected $gcsSourceType = GoogleCloudDiscoveryengineV1betaGcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaGcsSource
-     */
-    public function setGcsSource(GoogleCloudDiscoveryengineV1betaGcsSource $gcsSource)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequest extends \Google\Model
     {
+        protected $gcsSourceType = GoogleCloudDiscoveryengineV1betaGcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaGcsSource
+         */
+        public function setGcsSource(GoogleCloudDiscoveryengineV1betaGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaGcsSource
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportSuggestionDenyListEntriesRequest
     {
     }
 }

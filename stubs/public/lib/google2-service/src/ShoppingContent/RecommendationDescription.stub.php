@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RecommendationDescription extends \Google\Model
-{
-    /**
-     * Default value. Will never be provided by the API.
-     */
-    public const TYPE_DESCRIPTION_TYPE_UNSPECIFIED = 'DESCRIPTION_TYPE_UNSPECIFIED';
-    /**
-     * Short description.
-     */
-    public const TYPE_SHORT = 'SHORT';
-    /**
-     * Long description.
-     */
-    public const TYPE_LONG = 'LONG';
-    /**
-     * Output only. Text of the description.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Output only. Type of the description.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Text of the description.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\ShoppingContent {
+    class RecommendationDescription extends \Google\Model
     {
+        /**
+         * Default value. Will never be provided by the API.
+         */
+        public const TYPE_DESCRIPTION_TYPE_UNSPECIFIED = 'DESCRIPTION_TYPE_UNSPECIFIED';
+        /**
+         * Short description.
+         */
+        public const TYPE_SHORT = 'SHORT';
+        /**
+         * Long description.
+         */
+        public const TYPE_LONG = 'LONG';
+        /**
+         * Output only. Text of the description.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Output only. Type of the description.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Text of the description.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Output only. Type of the description.
+         *
+         * Accepted values: DESCRIPTION_TYPE_UNSPECIFIED, SHORT, LONG
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RecommendationDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
-    {
-    }
-    /**
-     * Output only. Type of the description.
-     *
-     * Accepted values: DESCRIPTION_TYPE_UNSPECIFIED, SHORT, LONG
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_RecommendationDescription extends \Google\Service\ShoppingContent\RecommendationDescription
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1EntryGroup extends \Google\Model
-{
-    protected $dataCatalogTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
-    protected $dataCatalogTimestampsDataType = '';
-    public $description;
-    public $displayName;
-    public $name;
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1EntryGroup extends \Google\Model
+    {
+        protected $dataCatalogTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
+        protected $dataCatalogTimestampsDataType = '';
+        public $description;
+        public $displayName;
+        public $name;
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function setDataCatalogTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $dataCatalogTimestamps)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function getDataCatalogTimestamps()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1EntryGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDataCatalogTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $dataCatalogTimestamps)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
-     */
-    public function getDataCatalogTimestamps()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1EntryGroup extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1EntryGroup
     {
     }
 }

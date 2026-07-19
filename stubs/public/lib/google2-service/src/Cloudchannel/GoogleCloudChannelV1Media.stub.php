@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Media extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const TYPE_MEDIA_TYPE_UNSPECIFIED = 'MEDIA_TYPE_UNSPECIFIED';
-    /**
-     * Type of image.
-     */
-    public const TYPE_MEDIA_TYPE_IMAGE = 'MEDIA_TYPE_IMAGE';
-    /**
-     * URL of the media.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Title of the media.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Type of the media.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * URL of the media.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Media extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const TYPE_MEDIA_TYPE_UNSPECIFIED = 'MEDIA_TYPE_UNSPECIFIED';
+        /**
+         * Type of image.
+         */
+        public const TYPE_MEDIA_TYPE_IMAGE = 'MEDIA_TYPE_IMAGE';
+        /**
+         * URL of the media.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Title of the media.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Type of the media.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * URL of the media.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Title of the media.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Type of the media.
+         *
+         * Accepted values: MEDIA_TYPE_UNSPECIFIED, MEDIA_TYPE_IMAGE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Title of the media.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Type of the media.
-     *
-     * Accepted values: MEDIA_TYPE_UNSPECIFIED, MEDIA_TYPE_IMAGE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Media extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Media
     {
     }
 }

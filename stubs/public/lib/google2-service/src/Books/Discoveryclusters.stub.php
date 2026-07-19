@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Discoveryclusters extends \Google\Collection
-{
-    protected $collection_key = 'clusters';
-    protected $clustersType = DiscoveryclustersClusters::class;
-    protected $clustersDataType = 'array';
-    /**
-     * Resorce type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var int
-     */
-    public $totalClusters;
-    /**
-     * @param DiscoveryclustersClusters[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\Books {
+    class Discoveryclusters extends \Google\Collection
     {
+        protected $collection_key = 'clusters';
+        protected $clustersType = DiscoveryclustersClusters::class;
+        protected $clustersDataType = 'array';
+        /**
+         * Resorce type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var int
+         */
+        public $totalClusters;
+        /**
+         * @param DiscoveryclustersClusters[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return DiscoveryclustersClusters[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * Resorce type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param int $totalClusters
+         */
+        public function setTotalClusters($totalClusters)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalClusters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveryclustersClusters[]
+     * Runtime class alias of \Google\Service\Books\Discoveryclusters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * Resorce type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param int $totalClusters
-     */
-    public function setTotalClusters($totalClusters)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalClusters()
+    class Google_Service_Books_Discoveryclusters extends \Google\Service\Books\Discoveryclusters
     {
     }
 }

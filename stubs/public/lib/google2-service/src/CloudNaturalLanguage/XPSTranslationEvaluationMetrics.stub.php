@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTranslationEvaluationMetrics extends \Google\Model
-{
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTranslationEvaluationMetrics extends \Google\Model
+    {
+        /**
+         * BLEU score for base model.
+         *
+         * @var 
+         */
+        public $baseBleuScore;
+        /**
+         * BLEU score.
+         *
+         * @var 
+         */
+        public $bleuScore;
+        public function setBaseBleuScore($baseBleuScore)
+        {
+        }
+        public function getBaseBleuScore()
+        {
+        }
+        public function setBleuScore($bleuScore)
+        {
+        }
+        public function getBleuScore()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * BLEU score for base model.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTranslationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $baseBleuScore;
-    /**
-     * BLEU score.
-     *
-     * @var 
-     */
-    public $bleuScore;
-    public function setBaseBleuScore($baseBleuScore)
-    {
-    }
-    public function getBaseBleuScore()
-    {
-    }
-    public function setBleuScore($bleuScore)
-    {
-    }
-    public function getBleuScore()
+    class Google_Service_CloudNaturalLanguage_XPSTranslationEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSTranslationEvaluationMetrics
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceFork extends \Google\Model
-{
-    protected $primaryType = SourceSplitShard::class;
-    protected $primaryDataType = '';
-    protected $primarySourceType = DerivedSource::class;
-    protected $primarySourceDataType = '';
-    protected $residualType = SourceSplitShard::class;
-    protected $residualDataType = '';
-    protected $residualSourceType = DerivedSource::class;
-    protected $residualSourceDataType = '';
-    /**
-     * DEPRECATED
-     *
-     * @param SourceSplitShard $primary
-     */
-    public function setPrimary(SourceSplitShard $primary)
+namespace Google\Service\Dataflow {
+    class SourceFork extends \Google\Model
     {
+        protected $primaryType = SourceSplitShard::class;
+        protected $primaryDataType = '';
+        protected $primarySourceType = DerivedSource::class;
+        protected $primarySourceDataType = '';
+        protected $residualType = SourceSplitShard::class;
+        protected $residualDataType = '';
+        protected $residualSourceType = DerivedSource::class;
+        protected $residualSourceDataType = '';
+        /**
+         * DEPRECATED
+         *
+         * @param SourceSplitShard $primary
+         */
+        public function setPrimary(SourceSplitShard $primary)
+        {
+        }
+        /**
+         * @return SourceSplitShard
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * DEPRECATED
+         *
+         * @param DerivedSource $primarySource
+         */
+        public function setPrimarySource(DerivedSource $primarySource)
+        {
+        }
+        /**
+         * @return DerivedSource
+         */
+        public function getPrimarySource()
+        {
+        }
+        /**
+         * DEPRECATED
+         *
+         * @param SourceSplitShard $residual
+         */
+        public function setResidual(SourceSplitShard $residual)
+        {
+        }
+        /**
+         * @return SourceSplitShard
+         */
+        public function getResidual()
+        {
+        }
+        /**
+         * DEPRECATED
+         *
+         * @param DerivedSource $residualSource
+         */
+        public function setResidualSource(DerivedSource $residualSource)
+        {
+        }
+        /**
+         * @return DerivedSource
+         */
+        public function getResidualSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceSplitShard
+     * Runtime class alias of \Google\Service\Dataflow\SourceFork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimary()
-    {
-    }
-    /**
-     * DEPRECATED
-     *
-     * @param DerivedSource $primarySource
-     */
-    public function setPrimarySource(DerivedSource $primarySource)
-    {
-    }
-    /**
-     * @return DerivedSource
-     */
-    public function getPrimarySource()
-    {
-    }
-    /**
-     * DEPRECATED
-     *
-     * @param SourceSplitShard $residual
-     */
-    public function setResidual(SourceSplitShard $residual)
-    {
-    }
-    /**
-     * @return SourceSplitShard
-     */
-    public function getResidual()
-    {
-    }
-    /**
-     * DEPRECATED
-     *
-     * @param DerivedSource $residualSource
-     */
-    public function setResidualSource(DerivedSource $residualSource)
-    {
-    }
-    /**
-     * @return DerivedSource
-     */
-    public function getResidualSource()
+    class Google_Service_Dataflow_SourceFork extends \Google\Service\Dataflow\SourceFork
     {
     }
 }

@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountTaxTaxRule extends \Google\Model
-{
-    /**
-     * Country code in which tax is applicable.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * Required. State (or province) is which the tax is applicable, described by
-     * its location ID (also called criteria ID).
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * Explicit tax rate in percent, represented as a floating point number
-     * without the percentage character. Must not be negative.
-     *
-     * @var string
-     */
-    public $ratePercent;
-    /**
-     * If true, shipping charges are also taxed.
-     *
-     * @var bool
-     */
-    public $shippingTaxed;
-    /**
-     * Whether the tax rate is taken from a global tax table or specified
-     * explicitly.
-     *
-     * @var bool
-     */
-    public $useGlobalRate;
-    /**
-     * Country code in which tax is applicable.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class AccountTaxTaxRule extends \Google\Model
     {
+        /**
+         * Country code in which tax is applicable.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * Required. State (or province) is which the tax is applicable, described by
+         * its location ID (also called criteria ID).
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * Explicit tax rate in percent, represented as a floating point number
+         * without the percentage character. Must not be negative.
+         *
+         * @var string
+         */
+        public $ratePercent;
+        /**
+         * If true, shipping charges are also taxed.
+         *
+         * @var bool
+         */
+        public $shippingTaxed;
+        /**
+         * Whether the tax rate is taken from a global tax table or specified
+         * explicitly.
+         *
+         * @var bool
+         */
+        public $useGlobalRate;
+        /**
+         * Country code in which tax is applicable.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * Required. State (or province) is which the tax is applicable, described by
+         * its location ID (also called criteria ID).
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * Explicit tax rate in percent, represented as a floating point number
+         * without the percentage character. Must not be negative.
+         *
+         * @param string $ratePercent
+         */
+        public function setRatePercent($ratePercent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRatePercent()
+        {
+        }
+        /**
+         * If true, shipping charges are also taxed.
+         *
+         * @param bool $shippingTaxed
+         */
+        public function setShippingTaxed($shippingTaxed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShippingTaxed()
+        {
+        }
+        /**
+         * Whether the tax rate is taken from a global tax table or specified
+         * explicitly.
+         *
+         * @param bool $useGlobalRate
+         */
+        public function setUseGlobalRate($useGlobalRate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseGlobalRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountTaxTaxRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * Required. State (or province) is which the tax is applicable, described by
-     * its location ID (also called criteria ID).
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * Explicit tax rate in percent, represented as a floating point number
-     * without the percentage character. Must not be negative.
-     *
-     * @param string $ratePercent
-     */
-    public function setRatePercent($ratePercent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRatePercent()
-    {
-    }
-    /**
-     * If true, shipping charges are also taxed.
-     *
-     * @param bool $shippingTaxed
-     */
-    public function setShippingTaxed($shippingTaxed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShippingTaxed()
-    {
-    }
-    /**
-     * Whether the tax rate is taken from a global tax table or specified
-     * explicitly.
-     *
-     * @param bool $useGlobalRate
-     */
-    public function setUseGlobalRate($useGlobalRate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseGlobalRate()
+    class Google_Service_ShoppingContent_AccountTaxTaxRule extends \Google\Service\ShoppingContent\AccountTaxTaxRule
     {
     }
 }

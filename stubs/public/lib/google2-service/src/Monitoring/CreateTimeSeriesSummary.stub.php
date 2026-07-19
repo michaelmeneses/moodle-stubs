@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CreateTimeSeriesSummary extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The number of points that were successfully written.
-     *
-     * @var int
-     */
-    public $successPointCount;
-    /**
-     * The number of points in the request.
-     *
-     * @var int
-     */
-    public $totalPointCount;
-    /**
-     * The number of points that failed to be written. Order is not guaranteed.
-     *
-     * @param Error[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Monitoring {
+    class CreateTimeSeriesSummary extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The number of points that were successfully written.
+         *
+         * @var int
+         */
+        public $successPointCount;
+        /**
+         * The number of points in the request.
+         *
+         * @var int
+         */
+        public $totalPointCount;
+        /**
+         * The number of points that failed to be written. Order is not guaranteed.
+         *
+         * @param Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The number of points that were successfully written.
+         *
+         * @param int $successPointCount
+         */
+        public function setSuccessPointCount($successPointCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessPointCount()
+        {
+        }
+        /**
+         * The number of points in the request.
+         *
+         * @param int $totalPointCount
+         */
+        public function setTotalPointCount($totalPointCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalPointCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Error[]
+     * Runtime class alias of \Google\Service\Monitoring\CreateTimeSeriesSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The number of points that were successfully written.
-     *
-     * @param int $successPointCount
-     */
-    public function setSuccessPointCount($successPointCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessPointCount()
-    {
-    }
-    /**
-     * The number of points in the request.
-     *
-     * @param int $totalPointCount
-     */
-    public function setTotalPointCount($totalPointCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalPointCount()
+    class Google_Service_Monitoring_CreateTimeSeriesSummary extends \Google\Service\Monitoring\CreateTimeSeriesSummary
     {
     }
 }

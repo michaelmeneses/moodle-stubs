@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1EndpointVerificationSpecificAttributes extends \Google\Collection
-{
-    protected $collection_key = 'certificateAttributes';
-    /**
-     * [Additional signals](https://cloud.google.com/endpoint-
-     * verification/docs/device-information) reported by Endpoint Verification. It
-     * includes the following attributes: * Non-configurable attributes: hotfixes,
-     * av_installed, av_enabled, windows_domain_name,
-     * is_os_native_firewall_enabled, and is_secure_boot_enabled. * [Configurable
-     * attributes](https://cloud.google.com/endpoint-verification/docs/collect-
-     * config-attributes): file, folder, and binary attributes; registry entries;
-     * and properties in a plist.
-     *
-     * @var array[]
-     */
-    public $additionalSignals;
-    protected $browserAttributesType = GoogleAppsCloudidentityDevicesV1BrowserAttributes::class;
-    protected $browserAttributesDataType = 'array';
-    protected $certificateAttributesType = GoogleAppsCloudidentityDevicesV1CertificateAttributes::class;
-    protected $certificateAttributesDataType = 'array';
-    /**
-     * [Additional signals](https://cloud.google.com/endpoint-
-     * verification/docs/device-information) reported by Endpoint Verification. It
-     * includes the following attributes: * Non-configurable attributes: hotfixes,
-     * av_installed, av_enabled, windows_domain_name,
-     * is_os_native_firewall_enabled, and is_secure_boot_enabled. * [Configurable
-     * attributes](https://cloud.google.com/endpoint-verification/docs/collect-
-     * config-attributes): file, folder, and binary attributes; registry entries;
-     * and properties in a plist.
-     *
-     * @param array[] $additionalSignals
-     */
-    public function setAdditionalSignals($additionalSignals)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1EndpointVerificationSpecificAttributes extends \Google\Collection
     {
+        protected $collection_key = 'certificateAttributes';
+        /**
+         * [Additional signals](https://cloud.google.com/endpoint-
+         * verification/docs/device-information) reported by Endpoint Verification. It
+         * includes the following attributes: * Non-configurable attributes: hotfixes,
+         * av_installed, av_enabled, windows_domain_name,
+         * is_os_native_firewall_enabled, and is_secure_boot_enabled. * [Configurable
+         * attributes](https://cloud.google.com/endpoint-verification/docs/collect-
+         * config-attributes): file, folder, and binary attributes; registry entries;
+         * and properties in a plist.
+         *
+         * @var array[]
+         */
+        public $additionalSignals;
+        protected $browserAttributesType = GoogleAppsCloudidentityDevicesV1BrowserAttributes::class;
+        protected $browserAttributesDataType = 'array';
+        protected $certificateAttributesType = GoogleAppsCloudidentityDevicesV1CertificateAttributes::class;
+        protected $certificateAttributesDataType = 'array';
+        /**
+         * [Additional signals](https://cloud.google.com/endpoint-
+         * verification/docs/device-information) reported by Endpoint Verification. It
+         * includes the following attributes: * Non-configurable attributes: hotfixes,
+         * av_installed, av_enabled, windows_domain_name,
+         * is_os_native_firewall_enabled, and is_secure_boot_enabled. * [Configurable
+         * attributes](https://cloud.google.com/endpoint-verification/docs/collect-
+         * config-attributes): file, folder, and binary attributes; registry entries;
+         * and properties in a plist.
+         *
+         * @param array[] $additionalSignals
+         */
+        public function setAdditionalSignals($additionalSignals)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAdditionalSignals()
+        {
+        }
+        /**
+         * Details of browser profiles reported by Endpoint Verification.
+         *
+         * @param GoogleAppsCloudidentityDevicesV1BrowserAttributes[] $browserAttributes
+         */
+        public function setBrowserAttributes($browserAttributes)
+        {
+        }
+        /**
+         * @return GoogleAppsCloudidentityDevicesV1BrowserAttributes[]
+         */
+        public function getBrowserAttributes()
+        {
+        }
+        /**
+         * Details of certificates.
+         *
+         * @param GoogleAppsCloudidentityDevicesV1CertificateAttributes[] $certificateAttributes
+         */
+        public function setCertificateAttributes($certificateAttributes)
+        {
+        }
+        /**
+         * @return GoogleAppsCloudidentityDevicesV1CertificateAttributes[]
+         */
+        public function getCertificateAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1EndpointVerificationSpecificAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalSignals()
-    {
-    }
-    /**
-     * Details of browser profiles reported by Endpoint Verification.
-     *
-     * @param GoogleAppsCloudidentityDevicesV1BrowserAttributes[] $browserAttributes
-     */
-    public function setBrowserAttributes($browserAttributes)
-    {
-    }
-    /**
-     * @return GoogleAppsCloudidentityDevicesV1BrowserAttributes[]
-     */
-    public function getBrowserAttributes()
-    {
-    }
-    /**
-     * Details of certificates.
-     *
-     * @param GoogleAppsCloudidentityDevicesV1CertificateAttributes[] $certificateAttributes
-     */
-    public function setCertificateAttributes($certificateAttributes)
-    {
-    }
-    /**
-     * @return GoogleAppsCloudidentityDevicesV1CertificateAttributes[]
-     */
-    public function getCertificateAttributes()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1EndpointVerificationSpecificAttributes extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1EndpointVerificationSpecificAttributes
     {
     }
 }

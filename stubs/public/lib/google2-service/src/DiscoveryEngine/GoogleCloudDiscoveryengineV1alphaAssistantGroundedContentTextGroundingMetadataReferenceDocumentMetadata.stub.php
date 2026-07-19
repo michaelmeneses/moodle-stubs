@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata extends \Google\Model
-{
-    /**
-     * Document resource name.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Domain name from the document URI. Note that the `uri` field may contain a
-     * URL that redirects to the actual website, in which case this will contain
-     * the domain name of the target site.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * The mime type of the document. https://www.iana.org/assignments/media-
-     * types/media-types.xhtml.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Page identifier.
-     *
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * Title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URI for the document. It may contain a URL that redirects to the actual
-     * website.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Document resource name.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata extends \Google\Model
     {
+        /**
+         * Document resource name.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Domain name from the document URI. Note that the `uri` field may contain a
+         * URL that redirects to the actual website, in which case this will contain
+         * the domain name of the target site.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * The mime type of the document. https://www.iana.org/assignments/media-
+         * types/media-types.xhtml.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Page identifier.
+         *
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * Title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URI for the document. It may contain a URL that redirects to the actual
+         * website.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Document resource name.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Domain name from the document URI. Note that the `uri` field may contain a
+         * URL that redirects to the actual website, in which case this will contain
+         * the domain name of the target site.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * The mime type of the document. https://www.iana.org/assignments/media-
+         * types/media-types.xhtml.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Page identifier.
+         *
+         * @param string $pageIdentifier
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
+        /**
+         * Title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URI for the document. It may contain a URL that redirects to the actual
+         * website.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Domain name from the document URI. Note that the `uri` field may contain a
-     * URL that redirects to the actual website, in which case this will contain
-     * the domain name of the target site.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    /**
-     * The mime type of the document. https://www.iana.org/assignments/media-
-     * types/media-types.xhtml.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Page identifier.
-     *
-     * @param string $pageIdentifier
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
-    {
-    }
-    /**
-     * Title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URI for the document. It may contain a URL that redirects to the actual
-     * website.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata
     {
     }
 }

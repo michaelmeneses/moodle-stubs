@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudidentityService = new Google\Service\CloudIdentity(...);
- *   $customers = $cloudidentityService->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\CloudIdentity\Resource {
+    /**
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudidentityService = new Google\Service\CloudIdentity(...);
+     *   $customers = $cloudidentityService->customers;
+     *  </code>
+     */
+    class Customers extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIdentity\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIdentity_Resource_Customers extends \Google\Service\CloudIdentity\Resource\Customers
+    {
+    }
 }

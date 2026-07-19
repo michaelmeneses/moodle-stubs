@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class SelectedResource extends \Google\Model
-{
-    /**
-     * Optional. Format: For routine:
-     * `projects/{projectId}/datasets/{datasetId}/routines/{routineId}`
-     * Example:"projects/test_project/datasets/test_dataset/routines/test_routine"
-     *
-     * @var string
-     */
-    public $routine;
-    /**
-     * Optional. Format: For table:
-     * `projects/{projectId}/datasets/{datasetId}/tables/{tableId}`
-     * Example:"projects/test_project/datasets/test_dataset/tables/test_table"
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Optional. Format: For routine:
-     * `projects/{projectId}/datasets/{datasetId}/routines/{routineId}`
-     * Example:"projects/test_project/datasets/test_dataset/routines/test_routine"
-     *
-     * @param string $routine
-     */
-    public function setRoutine($routine)
+namespace Google\Service\AnalyticsHub {
+    class SelectedResource extends \Google\Model
     {
+        /**
+         * Optional. Format: For routine:
+         * `projects/{projectId}/datasets/{datasetId}/routines/{routineId}`
+         * Example:"projects/test_project/datasets/test_dataset/routines/test_routine"
+         *
+         * @var string
+         */
+        public $routine;
+        /**
+         * Optional. Format: For table:
+         * `projects/{projectId}/datasets/{datasetId}/tables/{tableId}`
+         * Example:"projects/test_project/datasets/test_dataset/tables/test_table"
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Optional. Format: For routine:
+         * `projects/{projectId}/datasets/{datasetId}/routines/{routineId}`
+         * Example:"projects/test_project/datasets/test_dataset/routines/test_routine"
+         *
+         * @param string $routine
+         */
+        public function setRoutine($routine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoutine()
+        {
+        }
+        /**
+         * Optional. Format: For table:
+         * `projects/{projectId}/datasets/{datasetId}/tables/{tableId}`
+         * Example:"projects/test_project/datasets/test_dataset/tables/test_table"
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\SelectedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoutine()
-    {
-    }
-    /**
-     * Optional. Format: For table:
-     * `projects/{projectId}/datasets/{datasetId}/tables/{tableId}`
-     * Example:"projects/test_project/datasets/test_dataset/tables/test_table"
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_AnalyticsHub_SelectedResource extends \Google\Service\AnalyticsHub\SelectedResource
     {
     }
 }

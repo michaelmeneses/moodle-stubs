@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryEventNotificationFilter extends \Google\Collection
-{
-    protected $collection_key = 'eventTypes';
-    /**
-     * Only sends the notifications for events of these types. Must not be empty.
-     *
-     * @var string[]
-     */
-    public $eventTypes;
-    /**
-     * Only sends the notifications for events of these types. Must not be empty.
-     *
-     * @param string[] $eventTypes
-     */
-    public function setEventTypes($eventTypes)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryEventNotificationFilter extends \Google\Collection
     {
+        protected $collection_key = 'eventTypes';
+        /**
+         * Only sends the notifications for events of these types. Must not be empty.
+         *
+         * @var string[]
+         */
+        public $eventTypes;
+        /**
+         * Only sends the notifications for events of these types. Must not be empty.
+         *
+         * @param string[] $eventTypes
+         */
+        public function setEventTypes($eventTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEventTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryEventNotificationFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTypes()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryEventNotificationFilter extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryEventNotificationFilter
     {
     }
 }

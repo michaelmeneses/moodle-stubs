@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceDiskVolumeReportsVolumeInfo extends \Google\Model
-{
-    /**
-     * Free disk space [in bytes]
-     *
-     * @var string
-     */
-    public $storageFree;
-    /**
-     * Total disk space [in bytes]
-     *
-     * @var string
-     */
-    public $storageTotal;
-    /**
-     * Volume id
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * Free disk space [in bytes]
-     *
-     * @param string $storageFree
-     */
-    public function setStorageFree($storageFree)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceDiskVolumeReportsVolumeInfo extends \Google\Model
     {
+        /**
+         * Free disk space [in bytes]
+         *
+         * @var string
+         */
+        public $storageFree;
+        /**
+         * Total disk space [in bytes]
+         *
+         * @var string
+         */
+        public $storageTotal;
+        /**
+         * Volume id
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * Free disk space [in bytes]
+         *
+         * @param string $storageFree
+         */
+        public function setStorageFree($storageFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageFree()
+        {
+        }
+        /**
+         * Total disk space [in bytes]
+         *
+         * @param string $storageTotal
+         */
+        public function setStorageTotal($storageTotal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageTotal()
+        {
+        }
+        /**
+         * Volume id
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceDiskVolumeReportsVolumeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageFree()
-    {
-    }
-    /**
-     * Total disk space [in bytes]
-     *
-     * @param string $storageTotal
-     */
-    public function setStorageTotal($storageTotal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageTotal()
-    {
-    }
-    /**
-     * Volume id
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Directory_ChromeOsDeviceDiskVolumeReportsVolumeInfo extends \Google\Service\Directory\ChromeOsDeviceDiskVolumeReportsVolumeInfo
     {
     }
 }

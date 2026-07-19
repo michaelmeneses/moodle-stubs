@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedMessageInfo extends \Google\Model
-{
-    protected $messageIdType = MessageId::class;
-    protected $messageIdDataType = '';
-    /**
-     * @var string
-     */
-    public $messageType;
-    /**
-     * @var string
-     */
-    public $topicReadTimeUsec;
-    /**
-     * @param MessageId
-     */
-    public function setMessageId(MessageId $messageId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedMessageInfo extends \Google\Model
     {
+        protected $messageIdType = MessageId::class;
+        protected $messageIdDataType = '';
+        /**
+         * @var string
+         */
+        public $messageType;
+        /**
+         * @var string
+         */
+        public $topicReadTimeUsec;
+        /**
+         * @param MessageId
+         */
+        public function setMessageId(MessageId $messageId)
+        {
+        }
+        /**
+         * @return MessageId
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopicReadTimeUsec($topicReadTimeUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicReadTimeUsec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MessageId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedMessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopicReadTimeUsec($topicReadTimeUsec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicReadTimeUsec()
+    class Google_Service_CloudSearch_AppsDynamiteSharedMessageInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedMessageInfo
     {
     }
 }

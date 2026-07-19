@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class StackFrame extends \Google\Collection
-{
-    protected $collection_key = 'locals';
-    protected $argumentsType = Variable::class;
-    protected $argumentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $function;
-    protected $localsType = Variable::class;
-    protected $localsDataType = 'array';
-    protected $locationType = SourceLocation::class;
-    protected $locationDataType = '';
-    /**
-     * @param Variable[]
-     */
-    public function setArguments($arguments)
+namespace Google\Service\CloudDebugger {
+    class StackFrame extends \Google\Collection
     {
+        protected $collection_key = 'locals';
+        protected $argumentsType = Variable::class;
+        protected $argumentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $function;
+        protected $localsType = Variable::class;
+        protected $localsDataType = 'array';
+        protected $locationType = SourceLocation::class;
+        protected $locationDataType = '';
+        /**
+         * @param Variable[]
+         */
+        public function setArguments($arguments)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getArguments()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * @param Variable[]
+         */
+        public function setLocals($locals)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getLocals()
+        {
+        }
+        /**
+         * @param SourceLocation
+         */
+        public function setLocation(SourceLocation $location)
+        {
+        }
+        /**
+         * @return SourceLocation
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Variable[]
+     * Runtime class alias of \Google\Service\CloudDebugger\StackFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArguments()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFunction($function)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunction()
-    {
-    }
-    /**
-     * @param Variable[]
-     */
-    public function setLocals($locals)
-    {
-    }
-    /**
-     * @return Variable[]
-     */
-    public function getLocals()
-    {
-    }
-    /**
-     * @param SourceLocation
-     */
-    public function setLocation(SourceLocation $location)
-    {
-    }
-    /**
-     * @return SourceLocation
-     */
-    public function getLocation()
+    class Google_Service_CloudDebugger_StackFrame extends \Google\Service\CloudDebugger\StackFrame
     {
     }
 }

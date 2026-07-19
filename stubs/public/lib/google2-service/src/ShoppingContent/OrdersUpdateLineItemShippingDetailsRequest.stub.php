@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersUpdateLineItemShippingDetailsRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deliverByDate;
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @var string
-     */
-    public $shipByDate;
-    /**
-     * @param string
-     */
-    public function setDeliverByDate($deliverByDate)
+namespace Google\Service\ShoppingContent {
+    class OrdersUpdateLineItemShippingDetailsRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deliverByDate;
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @var string
+         */
+        public $shipByDate;
+        /**
+         * @param string
+         */
+        public function setDeliverByDate($deliverByDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeliverByDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipByDate($shipByDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipByDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersUpdateLineItemShippingDetailsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliverByDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipByDate($shipByDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipByDate()
+    class Google_Service_ShoppingContent_OrdersUpdateLineItemShippingDetailsRequest extends \Google\Service\ShoppingContent\OrdersUpdateLineItemShippingDetailsRequest
     {
     }
 }

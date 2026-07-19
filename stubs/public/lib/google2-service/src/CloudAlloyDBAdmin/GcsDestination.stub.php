@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class GcsDestination extends \Google\Model
-{
-    /**
-     * Required. The path to the file in Google Cloud Storage where the export
-     * will be stored. The URI is in the form `gs://bucketName/fileName`.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The path to the file in Google Cloud Storage where the export
-     * will be stored. The URI is in the form `gs://bucketName/fileName`.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class GcsDestination extends \Google\Model
     {
+        /**
+         * Required. The path to the file in Google Cloud Storage where the export
+         * will be stored. The URI is in the form `gs://bucketName/fileName`.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The path to the file in Google Cloud Storage where the export
+         * will be stored. The URI is in the form `gs://bucketName/fileName`.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_CloudAlloyDBAdmin_GcsDestination extends \Google\Service\CloudAlloyDBAdmin\GcsDestination
     {
     }
 }

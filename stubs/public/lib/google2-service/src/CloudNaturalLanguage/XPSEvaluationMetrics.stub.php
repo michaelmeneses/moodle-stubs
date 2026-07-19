@@ -21,296 +21,305 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSEvaluationMetrics extends \Google\Model
-{
-    /**
-     * The annotation_spec for which this evaluation metrics instance had been
-     * created. Empty iff this is an overall model evaluation (like Tables
-     * evaluation metrics), i.e. aggregated across all labels. The value comes
-     * from the input annotations in AnnotatedExample. For MVP product or for text
-     * sentiment models where annotation_spec_id_token is not available, set label
-     * instead.
-     *
-     * @var string
-     */
-    public $annotationSpecIdToken;
-    /**
-     * The integer category label for which this evaluation metric instance had
-     * been created. Valid categories are 0 or higher. Overall model evaluation
-     * should set this to negative values (rather than implicit zero). Only used
-     * for Image Segmentation (prefer to set annotation_spec_id_token instead).
-     * Note: uCAIP Image Segmentation should use annotation_spec_id_token.
-     *
-     * @var int
-     */
-    public $category;
-    /**
-     * The number of examples used to create this evaluation metrics instance.
-     *
-     * @var int
-     */
-    public $evaluatedExampleCount;
-    protected $imageClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
-    protected $imageClassificationEvalMetricsDataType = '';
-    protected $imageObjectDetectionEvalMetricsType = XPSImageObjectDetectionEvaluationMetrics::class;
-    protected $imageObjectDetectionEvalMetricsDataType = '';
-    protected $imageSegmentationEvalMetricsType = XPSImageSegmentationEvaluationMetrics::class;
-    protected $imageSegmentationEvalMetricsDataType = '';
-    /**
-     * The label for which this evaluation metrics instance had been created.
-     * Empty iff this is an overall model evaluation (like Tables evaluation
-     * metrics), i.e. aggregated across all labels. The label maps to
-     * AnnotationSpec.display_name in Public API protos. Only used by MVP
-     * implementation and text sentiment FULL implementation.
-     *
-     * @var string
-     */
-    public $label;
-    protected $regressionEvalMetricsType = XPSRegressionEvaluationMetrics::class;
-    protected $regressionEvalMetricsDataType = '';
-    protected $tablesClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
-    protected $tablesClassificationEvalMetricsDataType = '';
-    protected $tablesEvalMetricsType = XPSTablesEvaluationMetrics::class;
-    protected $tablesEvalMetricsDataType = '';
-    protected $textClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
-    protected $textClassificationEvalMetricsDataType = '';
-    protected $textExtractionEvalMetricsType = XPSTextExtractionEvaluationMetrics::class;
-    protected $textExtractionEvalMetricsDataType = '';
-    protected $textSentimentEvalMetricsType = XPSTextSentimentEvaluationMetrics::class;
-    protected $textSentimentEvalMetricsDataType = '';
-    protected $translationEvalMetricsType = XPSTranslationEvaluationMetrics::class;
-    protected $translationEvalMetricsDataType = '';
-    protected $videoActionRecognitionEvalMetricsType = XPSVideoActionRecognitionEvaluationMetrics::class;
-    protected $videoActionRecognitionEvalMetricsDataType = '';
-    protected $videoClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
-    protected $videoClassificationEvalMetricsDataType = '';
-    protected $videoObjectTrackingEvalMetricsType = XPSVideoObjectTrackingEvaluationMetrics::class;
-    protected $videoObjectTrackingEvalMetricsDataType = '';
-    /**
-     * The annotation_spec for which this evaluation metrics instance had been
-     * created. Empty iff this is an overall model evaluation (like Tables
-     * evaluation metrics), i.e. aggregated across all labels. The value comes
-     * from the input annotations in AnnotatedExample. For MVP product or for text
-     * sentiment models where annotation_spec_id_token is not available, set label
-     * instead.
-     *
-     * @param string $annotationSpecIdToken
-     */
-    public function setAnnotationSpecIdToken($annotationSpecIdToken)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSEvaluationMetrics extends \Google\Model
     {
+        /**
+         * The annotation_spec for which this evaluation metrics instance had been
+         * created. Empty iff this is an overall model evaluation (like Tables
+         * evaluation metrics), i.e. aggregated across all labels. The value comes
+         * from the input annotations in AnnotatedExample. For MVP product or for text
+         * sentiment models where annotation_spec_id_token is not available, set label
+         * instead.
+         *
+         * @var string
+         */
+        public $annotationSpecIdToken;
+        /**
+         * The integer category label for which this evaluation metric instance had
+         * been created. Valid categories are 0 or higher. Overall model evaluation
+         * should set this to negative values (rather than implicit zero). Only used
+         * for Image Segmentation (prefer to set annotation_spec_id_token instead).
+         * Note: uCAIP Image Segmentation should use annotation_spec_id_token.
+         *
+         * @var int
+         */
+        public $category;
+        /**
+         * The number of examples used to create this evaluation metrics instance.
+         *
+         * @var int
+         */
+        public $evaluatedExampleCount;
+        protected $imageClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
+        protected $imageClassificationEvalMetricsDataType = '';
+        protected $imageObjectDetectionEvalMetricsType = XPSImageObjectDetectionEvaluationMetrics::class;
+        protected $imageObjectDetectionEvalMetricsDataType = '';
+        protected $imageSegmentationEvalMetricsType = XPSImageSegmentationEvaluationMetrics::class;
+        protected $imageSegmentationEvalMetricsDataType = '';
+        /**
+         * The label for which this evaluation metrics instance had been created.
+         * Empty iff this is an overall model evaluation (like Tables evaluation
+         * metrics), i.e. aggregated across all labels. The label maps to
+         * AnnotationSpec.display_name in Public API protos. Only used by MVP
+         * implementation and text sentiment FULL implementation.
+         *
+         * @var string
+         */
+        public $label;
+        protected $regressionEvalMetricsType = XPSRegressionEvaluationMetrics::class;
+        protected $regressionEvalMetricsDataType = '';
+        protected $tablesClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
+        protected $tablesClassificationEvalMetricsDataType = '';
+        protected $tablesEvalMetricsType = XPSTablesEvaluationMetrics::class;
+        protected $tablesEvalMetricsDataType = '';
+        protected $textClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
+        protected $textClassificationEvalMetricsDataType = '';
+        protected $textExtractionEvalMetricsType = XPSTextExtractionEvaluationMetrics::class;
+        protected $textExtractionEvalMetricsDataType = '';
+        protected $textSentimentEvalMetricsType = XPSTextSentimentEvaluationMetrics::class;
+        protected $textSentimentEvalMetricsDataType = '';
+        protected $translationEvalMetricsType = XPSTranslationEvaluationMetrics::class;
+        protected $translationEvalMetricsDataType = '';
+        protected $videoActionRecognitionEvalMetricsType = XPSVideoActionRecognitionEvaluationMetrics::class;
+        protected $videoActionRecognitionEvalMetricsDataType = '';
+        protected $videoClassificationEvalMetricsType = XPSClassificationEvaluationMetrics::class;
+        protected $videoClassificationEvalMetricsDataType = '';
+        protected $videoObjectTrackingEvalMetricsType = XPSVideoObjectTrackingEvaluationMetrics::class;
+        protected $videoObjectTrackingEvalMetricsDataType = '';
+        /**
+         * The annotation_spec for which this evaluation metrics instance had been
+         * created. Empty iff this is an overall model evaluation (like Tables
+         * evaluation metrics), i.e. aggregated across all labels. The value comes
+         * from the input annotations in AnnotatedExample. For MVP product or for text
+         * sentiment models where annotation_spec_id_token is not available, set label
+         * instead.
+         *
+         * @param string $annotationSpecIdToken
+         */
+        public function setAnnotationSpecIdToken($annotationSpecIdToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecIdToken()
+        {
+        }
+        /**
+         * The integer category label for which this evaluation metric instance had
+         * been created. Valid categories are 0 or higher. Overall model evaluation
+         * should set this to negative values (rather than implicit zero). Only used
+         * for Image Segmentation (prefer to set annotation_spec_id_token instead).
+         * Note: uCAIP Image Segmentation should use annotation_spec_id_token.
+         *
+         * @param int $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The number of examples used to create this evaluation metrics instance.
+         *
+         * @param int $evaluatedExampleCount
+         */
+        public function setEvaluatedExampleCount($evaluatedExampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEvaluatedExampleCount()
+        {
+        }
+        /**
+         * @param XPSClassificationEvaluationMetrics $imageClassificationEvalMetrics
+         */
+        public function setImageClassificationEvalMetrics(XPSClassificationEvaluationMetrics $imageClassificationEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSClassificationEvaluationMetrics
+         */
+        public function getImageClassificationEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSImageObjectDetectionEvaluationMetrics $imageObjectDetectionEvalMetrics
+         */
+        public function setImageObjectDetectionEvalMetrics(XPSImageObjectDetectionEvaluationMetrics $imageObjectDetectionEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSImageObjectDetectionEvaluationMetrics
+         */
+        public function getImageObjectDetectionEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSImageSegmentationEvaluationMetrics $imageSegmentationEvalMetrics
+         */
+        public function setImageSegmentationEvalMetrics(XPSImageSegmentationEvaluationMetrics $imageSegmentationEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSImageSegmentationEvaluationMetrics
+         */
+        public function getImageSegmentationEvalMetrics()
+        {
+        }
+        /**
+         * The label for which this evaluation metrics instance had been created.
+         * Empty iff this is an overall model evaluation (like Tables evaluation
+         * metrics), i.e. aggregated across all labels. The label maps to
+         * AnnotationSpec.display_name in Public API protos. Only used by MVP
+         * implementation and text sentiment FULL implementation.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param XPSRegressionEvaluationMetrics $regressionEvalMetrics
+         */
+        public function setRegressionEvalMetrics(XPSRegressionEvaluationMetrics $regressionEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSRegressionEvaluationMetrics
+         */
+        public function getRegressionEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSClassificationEvaluationMetrics $tablesClassificationEvalMetrics
+         */
+        public function setTablesClassificationEvalMetrics(XPSClassificationEvaluationMetrics $tablesClassificationEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSClassificationEvaluationMetrics
+         */
+        public function getTablesClassificationEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSTablesEvaluationMetrics $tablesEvalMetrics
+         */
+        public function setTablesEvalMetrics(XPSTablesEvaluationMetrics $tablesEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSTablesEvaluationMetrics
+         */
+        public function getTablesEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSClassificationEvaluationMetrics $textClassificationEvalMetrics
+         */
+        public function setTextClassificationEvalMetrics(XPSClassificationEvaluationMetrics $textClassificationEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSClassificationEvaluationMetrics
+         */
+        public function getTextClassificationEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSTextExtractionEvaluationMetrics $textExtractionEvalMetrics
+         */
+        public function setTextExtractionEvalMetrics(XPSTextExtractionEvaluationMetrics $textExtractionEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSTextExtractionEvaluationMetrics
+         */
+        public function getTextExtractionEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSTextSentimentEvaluationMetrics $textSentimentEvalMetrics
+         */
+        public function setTextSentimentEvalMetrics(XPSTextSentimentEvaluationMetrics $textSentimentEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSTextSentimentEvaluationMetrics
+         */
+        public function getTextSentimentEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSTranslationEvaluationMetrics $translationEvalMetrics
+         */
+        public function setTranslationEvalMetrics(XPSTranslationEvaluationMetrics $translationEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSTranslationEvaluationMetrics
+         */
+        public function getTranslationEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSVideoActionRecognitionEvaluationMetrics $videoActionRecognitionEvalMetrics
+         */
+        public function setVideoActionRecognitionEvalMetrics(XPSVideoActionRecognitionEvaluationMetrics $videoActionRecognitionEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSVideoActionRecognitionEvaluationMetrics
+         */
+        public function getVideoActionRecognitionEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSClassificationEvaluationMetrics $videoClassificationEvalMetrics
+         */
+        public function setVideoClassificationEvalMetrics(XPSClassificationEvaluationMetrics $videoClassificationEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSClassificationEvaluationMetrics
+         */
+        public function getVideoClassificationEvalMetrics()
+        {
+        }
+        /**
+         * @param XPSVideoObjectTrackingEvaluationMetrics $videoObjectTrackingEvalMetrics
+         */
+        public function setVideoObjectTrackingEvalMetrics(XPSVideoObjectTrackingEvaluationMetrics $videoObjectTrackingEvalMetrics)
+        {
+        }
+        /**
+         * @return XPSVideoObjectTrackingEvaluationMetrics
+         */
+        public function getVideoObjectTrackingEvalMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecIdToken()
-    {
-    }
-    /**
-     * The integer category label for which this evaluation metric instance had
-     * been created. Valid categories are 0 or higher. Overall model evaluation
-     * should set this to negative values (rather than implicit zero). Only used
-     * for Image Segmentation (prefer to set annotation_spec_id_token instead).
-     * Note: uCAIP Image Segmentation should use annotation_spec_id_token.
-     *
-     * @param int $category
-     */
-    public function setCategory($category)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * The number of examples used to create this evaluation metrics instance.
-     *
-     * @param int $evaluatedExampleCount
-     */
-    public function setEvaluatedExampleCount($evaluatedExampleCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEvaluatedExampleCount()
-    {
-    }
-    /**
-     * @param XPSClassificationEvaluationMetrics $imageClassificationEvalMetrics
-     */
-    public function setImageClassificationEvalMetrics(XPSClassificationEvaluationMetrics $imageClassificationEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSClassificationEvaluationMetrics
-     */
-    public function getImageClassificationEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSImageObjectDetectionEvaluationMetrics $imageObjectDetectionEvalMetrics
-     */
-    public function setImageObjectDetectionEvalMetrics(XPSImageObjectDetectionEvaluationMetrics $imageObjectDetectionEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSImageObjectDetectionEvaluationMetrics
-     */
-    public function getImageObjectDetectionEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSImageSegmentationEvaluationMetrics $imageSegmentationEvalMetrics
-     */
-    public function setImageSegmentationEvalMetrics(XPSImageSegmentationEvaluationMetrics $imageSegmentationEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSImageSegmentationEvaluationMetrics
-     */
-    public function getImageSegmentationEvalMetrics()
-    {
-    }
-    /**
-     * The label for which this evaluation metrics instance had been created.
-     * Empty iff this is an overall model evaluation (like Tables evaluation
-     * metrics), i.e. aggregated across all labels. The label maps to
-     * AnnotationSpec.display_name in Public API protos. Only used by MVP
-     * implementation and text sentiment FULL implementation.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param XPSRegressionEvaluationMetrics $regressionEvalMetrics
-     */
-    public function setRegressionEvalMetrics(XPSRegressionEvaluationMetrics $regressionEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSRegressionEvaluationMetrics
-     */
-    public function getRegressionEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSClassificationEvaluationMetrics $tablesClassificationEvalMetrics
-     */
-    public function setTablesClassificationEvalMetrics(XPSClassificationEvaluationMetrics $tablesClassificationEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSClassificationEvaluationMetrics
-     */
-    public function getTablesClassificationEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSTablesEvaluationMetrics $tablesEvalMetrics
-     */
-    public function setTablesEvalMetrics(XPSTablesEvaluationMetrics $tablesEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSTablesEvaluationMetrics
-     */
-    public function getTablesEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSClassificationEvaluationMetrics $textClassificationEvalMetrics
-     */
-    public function setTextClassificationEvalMetrics(XPSClassificationEvaluationMetrics $textClassificationEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSClassificationEvaluationMetrics
-     */
-    public function getTextClassificationEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSTextExtractionEvaluationMetrics $textExtractionEvalMetrics
-     */
-    public function setTextExtractionEvalMetrics(XPSTextExtractionEvaluationMetrics $textExtractionEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSTextExtractionEvaluationMetrics
-     */
-    public function getTextExtractionEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSTextSentimentEvaluationMetrics $textSentimentEvalMetrics
-     */
-    public function setTextSentimentEvalMetrics(XPSTextSentimentEvaluationMetrics $textSentimentEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSTextSentimentEvaluationMetrics
-     */
-    public function getTextSentimentEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSTranslationEvaluationMetrics $translationEvalMetrics
-     */
-    public function setTranslationEvalMetrics(XPSTranslationEvaluationMetrics $translationEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSTranslationEvaluationMetrics
-     */
-    public function getTranslationEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSVideoActionRecognitionEvaluationMetrics $videoActionRecognitionEvalMetrics
-     */
-    public function setVideoActionRecognitionEvalMetrics(XPSVideoActionRecognitionEvaluationMetrics $videoActionRecognitionEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSVideoActionRecognitionEvaluationMetrics
-     */
-    public function getVideoActionRecognitionEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSClassificationEvaluationMetrics $videoClassificationEvalMetrics
-     */
-    public function setVideoClassificationEvalMetrics(XPSClassificationEvaluationMetrics $videoClassificationEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSClassificationEvaluationMetrics
-     */
-    public function getVideoClassificationEvalMetrics()
-    {
-    }
-    /**
-     * @param XPSVideoObjectTrackingEvaluationMetrics $videoObjectTrackingEvalMetrics
-     */
-    public function setVideoObjectTrackingEvalMetrics(XPSVideoObjectTrackingEvaluationMetrics $videoObjectTrackingEvalMetrics)
-    {
-    }
-    /**
-     * @return XPSVideoObjectTrackingEvaluationMetrics
-     */
-    public function getVideoObjectTrackingEvalMetrics()
+    class Google_Service_CloudNaturalLanguage_XPSEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSEvaluationMetrics
     {
     }
 }

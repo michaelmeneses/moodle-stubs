@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Image extends \Google\Model
-{
-    /**
-     * Target image opacity. Valid values are from `1.0` (solid, default) to `0.0`
-     * (transparent), exclusive. Set this to a value greater than `0.0`.
-     *
-     * @var 
-     */
-    public $alpha;
-    protected $resolutionType = NormalizedCoordinate::class;
-    protected $resolutionDataType = '';
-    /**
-     * Required. URI of the image in Cloud Storage. For example,
-     * `gs://bucket/inputs/image.png`. Only PNG and JPEG images are supported.
-     *
-     * @var string
-     */
-    public $uri;
-    public function setAlpha($alpha)
+namespace Google\Service\Transcoder {
+    class Image extends \Google\Model
     {
+        /**
+         * Target image opacity. Valid values are from `1.0` (solid, default) to `0.0`
+         * (transparent), exclusive. Set this to a value greater than `0.0`.
+         *
+         * @var 
+         */
+        public $alpha;
+        protected $resolutionType = NormalizedCoordinate::class;
+        protected $resolutionDataType = '';
+        /**
+         * Required. URI of the image in Cloud Storage. For example,
+         * `gs://bucket/inputs/image.png`. Only PNG and JPEG images are supported.
+         *
+         * @var string
+         */
+        public $uri;
+        public function setAlpha($alpha)
+        {
+        }
+        public function getAlpha()
+        {
+        }
+        /**
+         * Normalized image resolution, based on output video resolution. Valid
+         * values: `0.0`–`1.0`. To respect the original image aspect ratio, set either
+         * `x` or `y` to `0.0`. To use the original image resolution, set both `x` and
+         * `y` to `0.0`.
+         *
+         * @param NormalizedCoordinate $resolution
+         */
+        public function setResolution(NormalizedCoordinate $resolution)
+        {
+        }
+        /**
+         * @return NormalizedCoordinate
+         */
+        public function getResolution()
+        {
+        }
+        /**
+         * Required. URI of the image in Cloud Storage. For example,
+         * `gs://bucket/inputs/image.png`. Only PNG and JPEG images are supported.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
-    public function getAlpha()
-    {
-    }
+}
+namespace {
     /**
-     * Normalized image resolution, based on output video resolution. Valid
-     * values: `0.0`–`1.0`. To respect the original image aspect ratio, set either
-     * `x` or `y` to `0.0`. To use the original image resolution, set both `x` and
-     * `y` to `0.0`.
-     *
-     * @param NormalizedCoordinate $resolution
+     * Runtime class alias of \Google\Service\Transcoder\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setResolution(NormalizedCoordinate $resolution)
-    {
-    }
-    /**
-     * @return NormalizedCoordinate
-     */
-    public function getResolution()
-    {
-    }
-    /**
-     * Required. URI of the image in Cloud Storage. For example,
-     * `gs://bucket/inputs/image.png`. Only PNG and JPEG images are supported.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Transcoder_Image extends \Google\Service\Transcoder\Image
     {
     }
 }

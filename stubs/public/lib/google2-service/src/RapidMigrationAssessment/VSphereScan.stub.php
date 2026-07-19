@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RapidMigrationAssessment;
-
-class VSphereScan extends \Google\Model
-{
-    /**
-     * reference to the corresponding VSphere Scan in MC Source.
-     *
-     * @var string
-     */
-    public $coreSource;
-    /**
-     * reference to the corresponding VSphere Scan in MC Source.
-     *
-     * @param string $coreSource
-     */
-    public function setCoreSource($coreSource)
+namespace Google\Service\RapidMigrationAssessment {
+    class VSphereScan extends \Google\Model
     {
+        /**
+         * reference to the corresponding VSphere Scan in MC Source.
+         *
+         * @var string
+         */
+        public $coreSource;
+        /**
+         * reference to the corresponding VSphere Scan in MC Source.
+         *
+         * @param string $coreSource
+         */
+        public function setCoreSource($coreSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoreSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RapidMigrationAssessment\VSphereScan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoreSource()
+    class Google_Service_RapidMigrationAssessment_VSphereScan extends \Google\Service\RapidMigrationAssessment\VSphereScan
     {
     }
 }

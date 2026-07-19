@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\external;
 
+use core\external\exporter;
+use core_courseformat\output\local\overview\overviewdialog;
 /**
  * Class to export overview dialog data for external use.
  *

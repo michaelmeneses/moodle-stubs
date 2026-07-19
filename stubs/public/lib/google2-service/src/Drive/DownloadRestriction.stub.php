@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DownloadRestriction extends \Google\Model
-{
-    /**
-     * Whether download and copy is restricted for readers.
-     *
-     * @var bool
-     */
-    public $restrictedForReaders;
-    /**
-     * Whether download and copy is restricted for writers. If `true`, download is
-     * also restricted for readers.
-     *
-     * @var bool
-     */
-    public $restrictedForWriters;
-    /**
-     * Whether download and copy is restricted for readers.
-     *
-     * @param bool $restrictedForReaders
-     */
-    public function setRestrictedForReaders($restrictedForReaders)
+namespace Google\Service\Drive {
+    class DownloadRestriction extends \Google\Model
     {
+        /**
+         * Whether download and copy is restricted for readers.
+         *
+         * @var bool
+         */
+        public $restrictedForReaders;
+        /**
+         * Whether download and copy is restricted for writers. If `true`, download is
+         * also restricted for readers.
+         *
+         * @var bool
+         */
+        public $restrictedForWriters;
+        /**
+         * Whether download and copy is restricted for readers.
+         *
+         * @param bool $restrictedForReaders
+         */
+        public function setRestrictedForReaders($restrictedForReaders)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRestrictedForReaders()
+        {
+        }
+        /**
+         * Whether download and copy is restricted for writers. If `true`, download is
+         * also restricted for readers.
+         *
+         * @param bool $restrictedForWriters
+         */
+        public function setRestrictedForWriters($restrictedForWriters)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRestrictedForWriters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Drive\DownloadRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRestrictedForReaders()
-    {
-    }
-    /**
-     * Whether download and copy is restricted for writers. If `true`, download is
-     * also restricted for readers.
-     *
-     * @param bool $restrictedForWriters
-     */
-    public function setRestrictedForWriters($restrictedForWriters)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRestrictedForWriters()
+    class Google_Service_Drive_DownloadRestriction extends \Google\Service\Drive\DownloadRestriction
     {
     }
 }

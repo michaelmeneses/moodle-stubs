@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1RetrieveLegacySecretKeyResponse extends \Google\Model
-{
-    /**
-     * The secret key (also known as shared secret) authorizes communication
-     * between your application backend and the reCAPTCHA Enterprise server to
-     * create an assessment. The secret key needs to be kept safe for security
-     * purposes.
-     *
-     * @var string
-     */
-    public $legacySecretKey;
-    /**
-     * The secret key (also known as shared secret) authorizes communication
-     * between your application backend and the reCAPTCHA Enterprise server to
-     * create an assessment. The secret key needs to be kept safe for security
-     * purposes.
-     *
-     * @param string $legacySecretKey
-     */
-    public function setLegacySecretKey($legacySecretKey)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1RetrieveLegacySecretKeyResponse extends \Google\Model
     {
+        /**
+         * The secret key (also known as shared secret) authorizes communication
+         * between your application backend and the reCAPTCHA Enterprise server to
+         * create an assessment. The secret key needs to be kept safe for security
+         * purposes.
+         *
+         * @var string
+         */
+        public $legacySecretKey;
+        /**
+         * The secret key (also known as shared secret) authorizes communication
+         * between your application backend and the reCAPTCHA Enterprise server to
+         * create an assessment. The secret key needs to be kept safe for security
+         * purposes.
+         *
+         * @param string $legacySecretKey
+         */
+        public function setLegacySecretKey($legacySecretKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegacySecretKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RetrieveLegacySecretKeyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacySecretKey()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1RetrieveLegacySecretKeyResponse extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RetrieveLegacySecretKeyResponse
     {
     }
 }

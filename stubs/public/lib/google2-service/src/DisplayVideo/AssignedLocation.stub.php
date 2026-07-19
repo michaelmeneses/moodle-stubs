@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AssignedLocation extends \Google\Model
-{
-    /**
-     * Output only. The unique ID of the assigned location. The ID is only unique
-     * within a location list. It may be reused in other contexts.
-     *
-     * @var string
-     */
-    public $assignedLocationId;
-    /**
-     * Output only. The resource name of the assigned location.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The ID of the targeting option assigned to the location list.
-     *
-     * @var string
-     */
-    public $targetingOptionId;
-    /**
-     * Output only. The unique ID of the assigned location. The ID is only unique
-     * within a location list. It may be reused in other contexts.
-     *
-     * @param string $assignedLocationId
-     */
-    public function setAssignedLocationId($assignedLocationId)
+namespace Google\Service\DisplayVideo {
+    class AssignedLocation extends \Google\Model
     {
+        /**
+         * Output only. The unique ID of the assigned location. The ID is only unique
+         * within a location list. It may be reused in other contexts.
+         *
+         * @var string
+         */
+        public $assignedLocationId;
+        /**
+         * Output only. The resource name of the assigned location.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The ID of the targeting option assigned to the location list.
+         *
+         * @var string
+         */
+        public $targetingOptionId;
+        /**
+         * Output only. The unique ID of the assigned location. The ID is only unique
+         * within a location list. It may be reused in other contexts.
+         *
+         * @param string $assignedLocationId
+         */
+        public function setAssignedLocationId($assignedLocationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssignedLocationId()
+        {
+        }
+        /**
+         * Output only. The resource name of the assigned location.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The ID of the targeting option assigned to the location list.
+         *
+         * @param string $targetingOptionId
+         */
+        public function setTargetingOptionId($targetingOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AssignedLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedLocationId()
-    {
-    }
-    /**
-     * Output only. The resource name of the assigned location.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The ID of the targeting option assigned to the location list.
-     *
-     * @param string $targetingOptionId
-     */
-    public function setTargetingOptionId($targetingOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetingOptionId()
+    class Google_Service_DisplayVideo_AssignedLocation extends \Google\Service\DisplayVideo\AssignedLocation
     {
     }
 }

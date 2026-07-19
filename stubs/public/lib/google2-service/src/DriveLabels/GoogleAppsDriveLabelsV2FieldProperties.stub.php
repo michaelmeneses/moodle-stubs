@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldProperties extends \Google\Model
-{
-    /**
-     * Required. The display text to show in the UI identifying this field.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Input only. Insert or move this field before the indicated field. If empty,
-     * the field is placed at the end of the list.
-     *
-     * @var string
-     */
-    public $insertBeforeField;
-    /**
-     * Whether the field should be marked as required.
-     *
-     * @var bool
-     */
-    public $required;
-    /**
-     * Required. The display text to show in the UI identifying this field.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldProperties extends \Google\Model
     {
+        /**
+         * Required. The display text to show in the UI identifying this field.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Input only. Insert or move this field before the indicated field. If empty,
+         * the field is placed at the end of the list.
+         *
+         * @var string
+         */
+        public $insertBeforeField;
+        /**
+         * Whether the field should be marked as required.
+         *
+         * @var bool
+         */
+        public $required;
+        /**
+         * Required. The display text to show in the UI identifying this field.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Input only. Insert or move this field before the indicated field. If empty,
+         * the field is placed at the end of the list.
+         *
+         * @param string $insertBeforeField
+         */
+        public function setInsertBeforeField($insertBeforeField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertBeforeField()
+        {
+        }
+        /**
+         * Whether the field should be marked as required.
+         *
+         * @param bool $required
+         */
+        public function setRequired($required)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Input only. Insert or move this field before the indicated field. If empty,
-     * the field is placed at the end of the list.
-     *
-     * @param string $insertBeforeField
-     */
-    public function setInsertBeforeField($insertBeforeField)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertBeforeField()
-    {
-    }
-    /**
-     * Whether the field should be marked as required.
-     *
-     * @param bool $required
-     */
-    public function setRequired($required)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequired()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldProperties extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldProperties
     {
     }
 }

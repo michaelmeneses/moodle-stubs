@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class FindReplaceResponse extends \Google\Model
-{
-    /**
-     * The number of formula cells changed.
-     *
-     * @var int
-     */
-    public $formulasChanged;
-    /**
-     * The number of occurrences (possibly multiple within a cell) changed. For
-     * example, if replacing `"e"` with `"o"` in `"Google Sheets"`, this would be
-     * `"3"` because `"Google Sheets"` -> `"Googlo Shoots"`.
-     *
-     * @var int
-     */
-    public $occurrencesChanged;
-    /**
-     * The number of rows changed.
-     *
-     * @var int
-     */
-    public $rowsChanged;
-    /**
-     * The number of sheets changed.
-     *
-     * @var int
-     */
-    public $sheetsChanged;
-    /**
-     * The number of non-formula cells changed.
-     *
-     * @var int
-     */
-    public $valuesChanged;
-    /**
-     * The number of formula cells changed.
-     *
-     * @param int $formulasChanged
-     */
-    public function setFormulasChanged($formulasChanged)
+namespace Google\Service\Sheets {
+    class FindReplaceResponse extends \Google\Model
     {
+        /**
+         * The number of formula cells changed.
+         *
+         * @var int
+         */
+        public $formulasChanged;
+        /**
+         * The number of occurrences (possibly multiple within a cell) changed. For
+         * example, if replacing `"e"` with `"o"` in `"Google Sheets"`, this would be
+         * `"3"` because `"Google Sheets"` -> `"Googlo Shoots"`.
+         *
+         * @var int
+         */
+        public $occurrencesChanged;
+        /**
+         * The number of rows changed.
+         *
+         * @var int
+         */
+        public $rowsChanged;
+        /**
+         * The number of sheets changed.
+         *
+         * @var int
+         */
+        public $sheetsChanged;
+        /**
+         * The number of non-formula cells changed.
+         *
+         * @var int
+         */
+        public $valuesChanged;
+        /**
+         * The number of formula cells changed.
+         *
+         * @param int $formulasChanged
+         */
+        public function setFormulasChanged($formulasChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFormulasChanged()
+        {
+        }
+        /**
+         * The number of occurrences (possibly multiple within a cell) changed. For
+         * example, if replacing `"e"` with `"o"` in `"Google Sheets"`, this would be
+         * `"3"` because `"Google Sheets"` -> `"Googlo Shoots"`.
+         *
+         * @param int $occurrencesChanged
+         */
+        public function setOccurrencesChanged($occurrencesChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOccurrencesChanged()
+        {
+        }
+        /**
+         * The number of rows changed.
+         *
+         * @param int $rowsChanged
+         */
+        public function setRowsChanged($rowsChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowsChanged()
+        {
+        }
+        /**
+         * The number of sheets changed.
+         *
+         * @param int $sheetsChanged
+         */
+        public function setSheetsChanged($sheetsChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetsChanged()
+        {
+        }
+        /**
+         * The number of non-formula cells changed.
+         *
+         * @param int $valuesChanged
+         */
+        public function setValuesChanged($valuesChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValuesChanged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\FindReplaceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormulasChanged()
-    {
-    }
-    /**
-     * The number of occurrences (possibly multiple within a cell) changed. For
-     * example, if replacing `"e"` with `"o"` in `"Google Sheets"`, this would be
-     * `"3"` because `"Google Sheets"` -> `"Googlo Shoots"`.
-     *
-     * @param int $occurrencesChanged
-     */
-    public function setOccurrencesChanged($occurrencesChanged)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOccurrencesChanged()
-    {
-    }
-    /**
-     * The number of rows changed.
-     *
-     * @param int $rowsChanged
-     */
-    public function setRowsChanged($rowsChanged)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowsChanged()
-    {
-    }
-    /**
-     * The number of sheets changed.
-     *
-     * @param int $sheetsChanged
-     */
-    public function setSheetsChanged($sheetsChanged)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetsChanged()
-    {
-    }
-    /**
-     * The number of non-formula cells changed.
-     *
-     * @param int $valuesChanged
-     */
-    public function setValuesChanged($valuesChanged)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValuesChanged()
+    class Google_Service_Sheets_FindReplaceResponse extends \Google\Service\Sheets\FindReplaceResponse
     {
     }
 }

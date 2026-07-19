@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale extends \Google\Model
-{
-    public $maxSize;
-    public $minSize;
-    public function setMaxSize($maxSize)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale extends \Google\Model
     {
+        public $maxSize;
+        public $minSize;
+        public function setMaxSize($maxSize)
+        {
+        }
+        public function getMaxSize()
+        {
+        }
+        public function setMinSize($minSize)
+        {
+        }
+        public function getMinSize()
+        {
+        }
     }
-    public function getMaxSize()
-    {
-    }
-    public function setMinSize($minSize)
-    {
-    }
-    public function getMinSize()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale
     {
     }
 }

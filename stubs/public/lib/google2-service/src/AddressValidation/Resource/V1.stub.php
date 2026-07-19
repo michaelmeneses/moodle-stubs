@@ -21,42 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AddressValidation\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $addressvalidationService = new Google\Service\AddressValidation(...);
- *   $v1 = $addressvalidationService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\AddressValidation\Resource {
+    use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ProvideValidationFeedbackRequest;
+    use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse;
+    use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ValidateAddressRequest;
+    use Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ValidateAddressResponse;
     /**
-     * Feedback about the outcome of the sequence of validation attempts. This
-     * should be the last call made after a sequence of validation calls for the
-     * same address, and should be called once the transaction is concluded. This
-     * should only be sent once for the sequence of `ValidateAddress` requests
-     * needed to validate an address fully. (v1.provideValidationFeedback)
-     *
-     * @param GoogleMapsAddressvalidationV1ProvideValidationFeedbackRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse
-     * @throws \Google\Service\Exception
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $addressvalidationService = new Google\Service\AddressValidation(...);
+     *   $v1 = $addressvalidationService->v1;
+     *  </code>
      */
-    public function provideValidationFeedback(GoogleMapsAddressvalidationV1ProvideValidationFeedbackRequest $postBody, $optParams = [])
+    class V1 extends \Google\Service\Resource
     {
+        /**
+         * Feedback about the outcome of the sequence of validation attempts. This
+         * should be the last call made after a sequence of validation calls for the
+         * same address, and should be called once the transaction is concluded. This
+         * should only be sent once for the sequence of `ValidateAddress` requests
+         * needed to validate an address fully. (v1.provideValidationFeedback)
+         *
+         * @param GoogleMapsAddressvalidationV1ProvideValidationFeedbackRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse
+         * @throws \Google\Service\Exception
+         */
+        public function provideValidationFeedback(GoogleMapsAddressvalidationV1ProvideValidationFeedbackRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Validates an address. (v1.validateAddress)
+         *
+         * @param GoogleMapsAddressvalidationV1ValidateAddressRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleMapsAddressvalidationV1ValidateAddressResponse
+         * @throws \Google\Service\Exception
+         */
+        public function validateAddress(GoogleMapsAddressvalidationV1ValidateAddressRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Validates an address. (v1.validateAddress)
-     *
-     * @param GoogleMapsAddressvalidationV1ValidateAddressRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleMapsAddressvalidationV1ValidateAddressResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AddressValidation\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function validateAddress(GoogleMapsAddressvalidationV1ValidateAddressRequest $postBody, $optParams = [])
+    class Google_Service_AddressValidation_Resource_V1 extends \Google\Service\AddressValidation\Resource\V1
     {
     }
 }

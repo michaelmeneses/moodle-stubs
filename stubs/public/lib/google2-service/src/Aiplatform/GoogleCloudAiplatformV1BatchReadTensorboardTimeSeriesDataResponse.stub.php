@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchReadTensorboardTimeSeriesDataResponse extends \Google\Collection
-{
-    protected $collection_key = 'timeSeriesData';
-    protected $timeSeriesDataType = GoogleCloudAiplatformV1TimeSeriesData::class;
-    protected $timeSeriesDataDataType = 'array';
-    /**
-     * The returned time series data.
-     *
-     * @param GoogleCloudAiplatformV1TimeSeriesData[] $timeSeriesData
-     */
-    public function setTimeSeriesData($timeSeriesData)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchReadTensorboardTimeSeriesDataResponse extends \Google\Collection
     {
+        protected $collection_key = 'timeSeriesData';
+        protected $timeSeriesDataType = GoogleCloudAiplatformV1TimeSeriesData::class;
+        protected $timeSeriesDataDataType = 'array';
+        /**
+         * The returned time series data.
+         *
+         * @param GoogleCloudAiplatformV1TimeSeriesData[] $timeSeriesData
+         */
+        public function setTimeSeriesData($timeSeriesData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TimeSeriesData[]
+         */
+        public function getTimeSeriesData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TimeSeriesData[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadTensorboardTimeSeriesDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeSeriesData()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchReadTensorboardTimeSeriesDataResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadTensorboardTimeSeriesDataResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoExecutionTraceInfo extends \Google\Model
-{
-    /**
-     * Parent event execution info id that triggers the current execution through
-     * SubWorkflowExecutorTask.
-     *
-     * @var string
-     */
-    public $parentEventExecutionInfoId;
-    /**
-     * Used to aggregate ExecutionTraceInfo.
-     *
-     * @var string
-     */
-    public $traceId;
-    /**
-     * Parent event execution info id that triggers the current execution through
-     * SubWorkflowExecutorTask.
-     *
-     * @param string $parentEventExecutionInfoId
-     */
-    public function setParentEventExecutionInfoId($parentEventExecutionInfoId)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoExecutionTraceInfo extends \Google\Model
     {
+        /**
+         * Parent event execution info id that triggers the current execution through
+         * SubWorkflowExecutorTask.
+         *
+         * @var string
+         */
+        public $parentEventExecutionInfoId;
+        /**
+         * Used to aggregate ExecutionTraceInfo.
+         *
+         * @var string
+         */
+        public $traceId;
+        /**
+         * Parent event execution info id that triggers the current execution through
+         * SubWorkflowExecutorTask.
+         *
+         * @param string $parentEventExecutionInfoId
+         */
+        public function setParentEventExecutionInfoId($parentEventExecutionInfoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentEventExecutionInfoId()
+        {
+        }
+        /**
+         * Used to aggregate ExecutionTraceInfo.
+         *
+         * @param string $traceId
+         */
+        public function setTraceId($traceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTraceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoExecutionTraceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParentEventExecutionInfoId()
-    {
-    }
-    /**
-     * Used to aggregate ExecutionTraceInfo.
-     *
-     * @param string $traceId
-     */
-    public function setTraceId($traceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTraceId()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoExecutionTraceInfo extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoExecutionTraceInfo
     {
     }
 }

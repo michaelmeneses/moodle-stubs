@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ListTelemetryUsersResponse extends \Google\Collection
-{
-    protected $collection_key = 'telemetryUsers';
-    /**
-     * Token to specify next page in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $telemetryUsersType = GoogleChromeManagementV1TelemetryUser::class;
-    protected $telemetryUsersDataType = 'array';
-    /**
-     * Token to specify next page in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ListTelemetryUsersResponse extends \Google\Collection
     {
+        protected $collection_key = 'telemetryUsers';
+        /**
+         * Token to specify next page in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $telemetryUsersType = GoogleChromeManagementV1TelemetryUser::class;
+        protected $telemetryUsersDataType = 'array';
+        /**
+         * Token to specify next page in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Telemetry users returned in the response.
+         *
+         * @param GoogleChromeManagementV1TelemetryUser[] $telemetryUsers
+         */
+        public function setTelemetryUsers($telemetryUsers)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryUser[]
+         */
+        public function getTelemetryUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryUsersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Telemetry users returned in the response.
-     *
-     * @param GoogleChromeManagementV1TelemetryUser[] $telemetryUsers
-     */
-    public function setTelemetryUsers($telemetryUsers)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1TelemetryUser[]
-     */
-    public function getTelemetryUsers()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ListTelemetryUsersResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryUsersResponse
     {
     }
 }

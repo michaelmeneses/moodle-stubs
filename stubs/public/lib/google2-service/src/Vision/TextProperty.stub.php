@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class TextProperty extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedBreakType = DetectedBreak::class;
-    protected $detectedBreakDataType = '';
-    protected $detectedLanguagesType = DetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    /**
-     * Detected start or end of a text segment.
-     *
-     * @param DetectedBreak $detectedBreak
-     */
-    public function setDetectedBreak(DetectedBreak $detectedBreak)
+namespace Google\Service\Vision {
+    class TextProperty extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedBreakType = DetectedBreak::class;
+        protected $detectedBreakDataType = '';
+        protected $detectedLanguagesType = DetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        /**
+         * Detected start or end of a text segment.
+         *
+         * @param DetectedBreak $detectedBreak
+         */
+        public function setDetectedBreak(DetectedBreak $detectedBreak)
+        {
+        }
+        /**
+         * @return DetectedBreak
+         */
+        public function getDetectedBreak()
+        {
+        }
+        /**
+         * A list of detected languages together with confidence.
+         *
+         * @param DetectedLanguage[] $detectedLanguages
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return DetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DetectedBreak
+     * Runtime class alias of \Google\Service\Vision\TextProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedBreak()
-    {
-    }
-    /**
-     * A list of detected languages together with confidence.
-     *
-     * @param DetectedLanguage[] $detectedLanguages
-     */
-    public function setDetectedLanguages($detectedLanguages)
-    {
-    }
-    /**
-     * @return DetectedLanguage[]
-     */
-    public function getDetectedLanguages()
+    class Google_Service_Vision_TextProperty extends \Google\Service\Vision\TextProperty
     {
     }
 }

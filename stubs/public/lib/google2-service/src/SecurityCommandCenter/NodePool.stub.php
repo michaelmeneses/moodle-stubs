@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class NodePool extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    /**
-     * Kubernetes node pool name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $nodesType = Node::class;
-    protected $nodesDataType = 'array';
-    /**
-     * Kubernetes node pool name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class NodePool extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        /**
+         * Kubernetes node pool name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $nodesType = Node::class;
+        protected $nodesDataType = 'array';
+        /**
+         * Kubernetes node pool name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Nodes associated with the finding.
+         *
+         * @param Node[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return Node[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\NodePool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Nodes associated with the finding.
-     *
-     * @param Node[] $nodes
-     */
-    public function setNodes($nodes)
-    {
-    }
-    /**
-     * @return Node[]
-     */
-    public function getNodes()
+    class Google_Service_SecurityCommandCenter_NodePool extends \Google\Service\SecurityCommandCenter\NodePool
     {
     }
 }

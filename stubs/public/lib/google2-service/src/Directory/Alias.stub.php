@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Alias extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $alias;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $primaryEmail;
-    /**
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\Directory {
+    class Alias extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $alias;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $primaryEmail;
+        /**
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string $primaryEmail
+         */
+        public function setPrimaryEmail($primaryEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Alias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string $primaryEmail
-     */
-    public function setPrimaryEmail($primaryEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryEmail()
+    class Google_Service_Directory_Alias extends \Google\Service\Directory\Alias
     {
     }
 }

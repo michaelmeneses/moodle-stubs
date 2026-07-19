@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2AuthorizedViewFamilySubsets extends \Google\Collection
-{
-    protected $collection_key = 'qualifiers';
-    /**
-     * Prefixes for qualifiers to be included in the AuthorizedView. Every
-     * qualifier starting with one of these prefixes is included in the
-     * AuthorizedView. To provide access to all qualifiers, include the empty
-     * string as a prefix ("").
-     *
-     * @var string[]
-     */
-    public $qualifierPrefixes;
-    /**
-     * Individual exact column qualifiers to be included in the AuthorizedView.
-     *
-     * @var string[]
-     */
-    public $qualifiers;
-    /**
-     * Prefixes for qualifiers to be included in the AuthorizedView. Every
-     * qualifier starting with one of these prefixes is included in the
-     * AuthorizedView. To provide access to all qualifiers, include the empty
-     * string as a prefix ("").
-     *
-     * @param string[] $qualifierPrefixes
-     */
-    public function setQualifierPrefixes($qualifierPrefixes)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2AuthorizedViewFamilySubsets extends \Google\Collection
     {
+        protected $collection_key = 'qualifiers';
+        /**
+         * Prefixes for qualifiers to be included in the AuthorizedView. Every
+         * qualifier starting with one of these prefixes is included in the
+         * AuthorizedView. To provide access to all qualifiers, include the empty
+         * string as a prefix ("").
+         *
+         * @var string[]
+         */
+        public $qualifierPrefixes;
+        /**
+         * Individual exact column qualifiers to be included in the AuthorizedView.
+         *
+         * @var string[]
+         */
+        public $qualifiers;
+        /**
+         * Prefixes for qualifiers to be included in the AuthorizedView. Every
+         * qualifier starting with one of these prefixes is included in the
+         * AuthorizedView. To provide access to all qualifiers, include the empty
+         * string as a prefix ("").
+         *
+         * @param string[] $qualifierPrefixes
+         */
+        public function setQualifierPrefixes($qualifierPrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQualifierPrefixes()
+        {
+        }
+        /**
+         * Individual exact column qualifiers to be included in the AuthorizedView.
+         *
+         * @param string[] $qualifiers
+         */
+        public function setQualifiers($qualifiers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQualifiers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2AuthorizedViewFamilySubsets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQualifierPrefixes()
-    {
-    }
-    /**
-     * Individual exact column qualifiers to be included in the AuthorizedView.
-     *
-     * @param string[] $qualifiers
-     */
-    public function setQualifiers($qualifiers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQualifiers()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2AuthorizedViewFamilySubsets extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2AuthorizedViewFamilySubsets
     {
     }
 }

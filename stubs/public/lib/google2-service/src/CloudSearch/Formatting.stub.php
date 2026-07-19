@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Formatting extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $bold;
-    /**
-     * @var bool
-     */
-    public $highlight;
-    /**
-     * @var bool
-     */
-    public $italics;
-    /**
-     * @var bool
-     */
-    public $strikethrough;
-    /**
-     * @var string
-     */
-    public $style;
-    /**
-     * @var bool
-     */
-    public $underline;
-    /**
-     * @param bool
-     */
-    public function setBold($bold)
+namespace Google\Service\CloudSearch {
+    class Formatting extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $bold;
+        /**
+         * @var bool
+         */
+        public $highlight;
+        /**
+         * @var bool
+         */
+        public $italics;
+        /**
+         * @var bool
+         */
+        public $strikethrough;
+        /**
+         * @var string
+         */
+        public $style;
+        /**
+         * @var bool
+         */
+        public $underline;
+        /**
+         * @param bool
+         */
+        public function setBold($bold)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBold()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setHighlight($highlight)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHighlight()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setItalics($italics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getItalics()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setStrikethrough($strikethrough)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrikethrough()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStyle($style)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUnderline($underline)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnderline()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\Formatting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBold()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setHighlight($highlight)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHighlight()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setItalics($italics)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getItalics()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setStrikethrough($strikethrough)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrikethrough()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStyle($style)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUnderline($underline)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnderline()
+    class Google_Service_CloudSearch_Formatting extends \Google\Service\CloudSearch\Formatting
     {
     }
 }

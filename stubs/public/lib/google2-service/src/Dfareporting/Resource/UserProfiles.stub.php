@@ -21,37 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "userProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $userProfiles = $dfareportingService->userProfiles;
- *  </code>
- */
-class UserProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\UserProfile;
+    use Google\Service\Dfareporting\UserProfileList;
     /**
-     * Gets one user profile by ID. (userProfiles.get)
-     *
-     * @param string $profileId The user profile ID.
-     * @param array $optParams Optional parameters.
-     * @return UserProfile
-     * @throws \Google\Service\Exception
+     * The "userProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $userProfiles = $dfareportingService->userProfiles;
+     *  </code>
      */
-    public function get($profileId, $optParams = [])
+    class UserProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets one user profile by ID. (userProfiles.get)
+         *
+         * @param string $profileId The user profile ID.
+         * @param array $optParams Optional parameters.
+         * @return UserProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves list of user profiles for a user. (userProfiles.listUserProfiles)
+         *
+         * @param array $optParams Optional parameters.
+         * @return UserProfileList
+         * @throws \Google\Service\Exception
+         */
+        public function listUserProfiles($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves list of user profiles for a user. (userProfiles.listUserProfiles)
-     *
-     * @param array $optParams Optional parameters.
-     * @return UserProfileList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\UserProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listUserProfiles($optParams = [])
+    class Google_Service_Dfareporting_Resource_UserProfiles extends \Google\Service\Dfareporting\Resource\UserProfiles
     {
     }
 }

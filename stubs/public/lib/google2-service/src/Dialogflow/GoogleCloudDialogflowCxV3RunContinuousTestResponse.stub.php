@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RunContinuousTestResponse extends \Google\Model
-{
-    protected $continuousTestResultType = GoogleCloudDialogflowCxV3ContinuousTestResult::class;
-    protected $continuousTestResultDataType = '';
-    /**
-     * The result for a continuous test run.
-     *
-     * @param GoogleCloudDialogflowCxV3ContinuousTestResult $continuousTestResult
-     */
-    public function setContinuousTestResult(GoogleCloudDialogflowCxV3ContinuousTestResult $continuousTestResult)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RunContinuousTestResponse extends \Google\Model
     {
+        protected $continuousTestResultType = GoogleCloudDialogflowCxV3ContinuousTestResult::class;
+        protected $continuousTestResultDataType = '';
+        /**
+         * The result for a continuous test run.
+         *
+         * @param GoogleCloudDialogflowCxV3ContinuousTestResult $continuousTestResult
+         */
+        public function setContinuousTestResult(GoogleCloudDialogflowCxV3ContinuousTestResult $continuousTestResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ContinuousTestResult
+         */
+        public function getContinuousTestResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ContinuousTestResult
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunContinuousTestResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContinuousTestResult()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RunContinuousTestResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunContinuousTestResponse
     {
     }
 }

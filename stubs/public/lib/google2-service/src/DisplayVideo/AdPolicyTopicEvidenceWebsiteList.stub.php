@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceWebsiteList extends \Google\Collection
-{
-    protected $collection_key = 'websites';
-    /**
-     * Websites that caused the policy finding.
-     *
-     * @var string[]
-     */
-    public $websites;
-    /**
-     * Websites that caused the policy finding.
-     *
-     * @param string[] $websites
-     */
-    public function setWebsites($websites)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceWebsiteList extends \Google\Collection
     {
+        protected $collection_key = 'websites';
+        /**
+         * Websites that caused the policy finding.
+         *
+         * @var string[]
+         */
+        public $websites;
+        /**
+         * Websites that caused the policy finding.
+         *
+         * @param string[] $websites
+         */
+        public function setWebsites($websites)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWebsites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceWebsiteList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebsites()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceWebsiteList extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceWebsiteList
     {
     }
 }

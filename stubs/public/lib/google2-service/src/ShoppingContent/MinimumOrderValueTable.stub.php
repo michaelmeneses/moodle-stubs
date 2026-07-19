@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class MinimumOrderValueTable extends \Google\Collection
-{
-    protected $collection_key = 'storeCodeSetWithMovs';
-    protected $storeCodeSetWithMovsType = MinimumOrderValueTableStoreCodeSetWithMov::class;
-    protected $storeCodeSetWithMovsDataType = 'array';
-    /**
-     * @param MinimumOrderValueTableStoreCodeSetWithMov[] $storeCodeSetWithMovs
-     */
-    public function setStoreCodeSetWithMovs($storeCodeSetWithMovs)
+namespace Google\Service\ShoppingContent {
+    class MinimumOrderValueTable extends \Google\Collection
     {
+        protected $collection_key = 'storeCodeSetWithMovs';
+        protected $storeCodeSetWithMovsType = MinimumOrderValueTableStoreCodeSetWithMov::class;
+        protected $storeCodeSetWithMovsDataType = 'array';
+        /**
+         * @param MinimumOrderValueTableStoreCodeSetWithMov[] $storeCodeSetWithMovs
+         */
+        public function setStoreCodeSetWithMovs($storeCodeSetWithMovs)
+        {
+        }
+        /**
+         * @return MinimumOrderValueTableStoreCodeSetWithMov[]
+         */
+        public function getStoreCodeSetWithMovs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MinimumOrderValueTableStoreCodeSetWithMov[]
+     * Runtime class alias of \Google\Service\ShoppingContent\MinimumOrderValueTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStoreCodeSetWithMovs()
+    class Google_Service_ShoppingContent_MinimumOrderValueTable extends \Google\Service\ShoppingContent\MinimumOrderValueTable
     {
     }
 }

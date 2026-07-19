@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ComputeHeadCursorRequest extends \Google\Model
-{
-    /**
-     * Required. The partition for which we should compute the head cursor.
-     *
-     * @var string
-     */
-    public $partition;
-    /**
-     * Required. The partition for which we should compute the head cursor.
-     *
-     * @param string $partition
-     */
-    public function setPartition($partition)
+namespace Google\Service\PubsubLite {
+    class ComputeHeadCursorRequest extends \Google\Model
     {
+        /**
+         * Required. The partition for which we should compute the head cursor.
+         *
+         * @var string
+         */
+        public $partition;
+        /**
+         * Required. The partition for which we should compute the head cursor.
+         *
+         * @param string $partition
+         */
+        public function setPartition($partition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ComputeHeadCursorRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartition()
+    class Google_Service_PubsubLite_ComputeHeadCursorRequest extends \Google\Service\PubsubLite\ComputeHeadCursorRequest
     {
     }
 }

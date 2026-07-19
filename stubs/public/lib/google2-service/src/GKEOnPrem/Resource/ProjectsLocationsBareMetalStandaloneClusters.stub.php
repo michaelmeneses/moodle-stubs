@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem\Resource;
-
-/**
- * The "bareMetalStandaloneClusters" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkeonpremService = new Google\Service\GKEOnPrem(...);
- *   $bareMetalStandaloneClusters = $gkeonpremService->projects_locations_bareMetalStandaloneClusters;
- *  </code>
- */
-class ProjectsLocationsBareMetalStandaloneClusters extends \Google\Service\Resource
-{
+namespace Google\Service\GKEOnPrem\Resource {
+    /**
+     * The "bareMetalStandaloneClusters" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkeonpremService = new Google\Service\GKEOnPrem(...);
+     *   $bareMetalStandaloneClusters = $gkeonpremService->projects_locations_bareMetalStandaloneClusters;
+     *  </code>
+     */
+    class ProjectsLocationsBareMetalStandaloneClusters extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEOnPrem\Resource\ProjectsLocationsBareMetalStandaloneClusters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEOnPrem_Resource_ProjectsLocationsBareMetalStandaloneClusters extends \Google\Service\GKEOnPrem\Resource\ProjectsLocationsBareMetalStandaloneClusters
+    {
+    }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ListEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleCloudDatacatalogV1Entry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Pagination token of the next results page. Empty if there are no more items
-     * in results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Entry details.
-     *
-     * @param GoogleCloudDatacatalogV1Entry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ListEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleCloudDatacatalogV1Entry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Pagination token of the next results page. Empty if there are no more items
+         * in results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Entry details.
+         *
+         * @param GoogleCloudDatacatalogV1Entry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Entry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * Pagination token of the next results page. Empty if there are no more items
+         * in results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1Entry[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * Pagination token of the next results page. Empty if there are no more items
-     * in results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ListEntriesResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntriesResponse
     {
     }
 }

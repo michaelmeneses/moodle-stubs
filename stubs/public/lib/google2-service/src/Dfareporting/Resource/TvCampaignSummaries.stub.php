@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "tvCampaignSummaries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $tvCampaignSummaries = $dfareportingService->tvCampaignSummaries;
- *  </code>
- */
-class TvCampaignSummaries extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\TvCampaignSummariesListResponse;
     /**
-     * Retrieves a list of TV campaign summaries.
-     * (tvCampaignSummaries.listTvCampaignSummaries)
-     *
-     * @param string $profileId Required. User profile ID associated with this
-     * request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string accountId Required. Account ID associated with this
-     * request.
-     * @opt_param string name Required. Search string to filter the list of TV
-     * campaign summaries. Matches any substring. Required field.
-     * @return TvCampaignSummariesListResponse
-     * @throws \Google\Service\Exception
+     * The "tvCampaignSummaries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $tvCampaignSummaries = $dfareportingService->tvCampaignSummaries;
+     *  </code>
      */
-    public function listTvCampaignSummaries($profileId, $optParams = [])
+    class TvCampaignSummaries extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of TV campaign summaries.
+         * (tvCampaignSummaries.listTvCampaignSummaries)
+         *
+         * @param string $profileId Required. User profile ID associated with this
+         * request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string accountId Required. Account ID associated with this
+         * request.
+         * @opt_param string name Required. Search string to filter the list of TV
+         * campaign summaries. Matches any substring. Required field.
+         * @return TvCampaignSummariesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listTvCampaignSummaries($profileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\TvCampaignSummaries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_TvCampaignSummaries extends \Google\Service\Dfareporting\Resource\TvCampaignSummaries
     {
     }
 }

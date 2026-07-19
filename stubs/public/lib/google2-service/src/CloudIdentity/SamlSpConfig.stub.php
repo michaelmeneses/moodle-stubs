@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class SamlSpConfig extends \Google\Model
-{
-    /**
-     * Output only. The SAML **Assertion Consumer Service (ACS) URL** to be used
-     * for the IDP-initiated login. Assumed to accept response messages via the
-     * `HTTP-POST` binding.
-     *
-     * @var string
-     */
-    public $assertionConsumerServiceUri;
-    /**
-     * Output only. The SAML **Entity ID** for this service provider.
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * Output only. The SAML **Assertion Consumer Service (ACS) URL** to be used
-     * for the IDP-initiated login. Assumed to accept response messages via the
-     * `HTTP-POST` binding.
-     *
-     * @param string $assertionConsumerServiceUri
-     */
-    public function setAssertionConsumerServiceUri($assertionConsumerServiceUri)
+namespace Google\Service\CloudIdentity {
+    class SamlSpConfig extends \Google\Model
     {
+        /**
+         * Output only. The SAML **Assertion Consumer Service (ACS) URL** to be used
+         * for the IDP-initiated login. Assumed to accept response messages via the
+         * `HTTP-POST` binding.
+         *
+         * @var string
+         */
+        public $assertionConsumerServiceUri;
+        /**
+         * Output only. The SAML **Entity ID** for this service provider.
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * Output only. The SAML **Assertion Consumer Service (ACS) URL** to be used
+         * for the IDP-initiated login. Assumed to accept response messages via the
+         * `HTTP-POST` binding.
+         *
+         * @param string $assertionConsumerServiceUri
+         */
+        public function setAssertionConsumerServiceUri($assertionConsumerServiceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssertionConsumerServiceUri()
+        {
+        }
+        /**
+         * Output only. The SAML **Entity ID** for this service provider.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\SamlSpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssertionConsumerServiceUri()
-    {
-    }
-    /**
-     * Output only. The SAML **Entity ID** for this service provider.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
+    class Google_Service_CloudIdentity_SamlSpConfig extends \Google\Service\CloudIdentity\SamlSpConfig
     {
     }
 }

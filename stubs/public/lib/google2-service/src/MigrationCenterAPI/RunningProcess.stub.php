@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class RunningProcess extends \Google\Model
-{
-    /**
-     * Process extended attributes.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Process full command line.
-     *
-     * @var string
-     */
-    public $cmdline;
-    /**
-     * Process binary path.
-     *
-     * @var string
-     */
-    public $exePath;
-    /**
-     * Process ID.
-     *
-     * @var string
-     */
-    public $pid;
-    /**
-     * User running the process.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * Process extended attributes.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\MigrationCenterAPI {
+    class RunningProcess extends \Google\Model
     {
+        /**
+         * Process extended attributes.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Process full command line.
+         *
+         * @var string
+         */
+        public $cmdline;
+        /**
+         * Process binary path.
+         *
+         * @var string
+         */
+        public $exePath;
+        /**
+         * Process ID.
+         *
+         * @var string
+         */
+        public $pid;
+        /**
+         * User running the process.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * Process extended attributes.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Process full command line.
+         *
+         * @param string $cmdline
+         */
+        public function setCmdline($cmdline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmdline()
+        {
+        }
+        /**
+         * Process binary path.
+         *
+         * @param string $exePath
+         */
+        public function setExePath($exePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExePath()
+        {
+        }
+        /**
+         * Process ID.
+         *
+         * @param string $pid
+         */
+        public function setPid($pid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPid()
+        {
+        }
+        /**
+         * User running the process.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\RunningProcess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Process full command line.
-     *
-     * @param string $cmdline
-     */
-    public function setCmdline($cmdline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCmdline()
-    {
-    }
-    /**
-     * Process binary path.
-     *
-     * @param string $exePath
-     */
-    public function setExePath($exePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExePath()
-    {
-    }
-    /**
-     * Process ID.
-     *
-     * @param string $pid
-     */
-    public function setPid($pid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPid()
-    {
-    }
-    /**
-     * User running the process.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_MigrationCenterAPI_RunningProcess extends \Google\Service\MigrationCenterAPI\RunningProcess
     {
     }
 }

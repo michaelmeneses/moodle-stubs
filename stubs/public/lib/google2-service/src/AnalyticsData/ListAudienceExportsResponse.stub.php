@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class ListAudienceExportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'audienceExports';
-    protected $audienceExportsType = AudienceExport::class;
-    protected $audienceExportsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Each audience export for a property.
-     *
-     * @param AudienceExport[] $audienceExports
-     */
-    public function setAudienceExports($audienceExports)
+namespace Google\Service\AnalyticsData {
+    class ListAudienceExportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'audienceExports';
+        protected $audienceExportsType = AudienceExport::class;
+        protected $audienceExportsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Each audience export for a property.
+         *
+         * @param AudienceExport[] $audienceExports
+         */
+        public function setAudienceExports($audienceExports)
+        {
+        }
+        /**
+         * @return AudienceExport[]
+         */
+        public function getAudienceExports()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudienceExport[]
+     * Runtime class alias of \Google\Service\AnalyticsData\ListAudienceExportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudienceExports()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AnalyticsData_ListAudienceExportsResponse extends \Google\Service\AnalyticsData\ListAudienceExportsResponse
     {
     }
 }

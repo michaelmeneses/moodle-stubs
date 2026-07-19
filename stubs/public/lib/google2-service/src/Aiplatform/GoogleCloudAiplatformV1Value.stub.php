@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Value extends \Google\Model
-{
-    /**
-     * A double value.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * An integer value.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * A string value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    public function setDoubleValue($doubleValue)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Value extends \Google\Model
     {
+        /**
+         * A double value.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * An integer value.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * A string value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * An integer value.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * A string value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * An integer value.
-     *
-     * @param string $intValue
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * A string value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Value extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Value
     {
     }
 }

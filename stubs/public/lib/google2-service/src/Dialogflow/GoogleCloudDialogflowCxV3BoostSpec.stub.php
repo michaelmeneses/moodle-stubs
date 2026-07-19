@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3BoostSpec extends \Google\Collection
-{
-    protected $collection_key = 'conditionBoostSpecs';
-    protected $conditionBoostSpecsType = GoogleCloudDialogflowCxV3BoostSpecConditionBoostSpec::class;
-    protected $conditionBoostSpecsDataType = 'array';
-    /**
-     * Optional. Condition boost specifications. If a document matches multiple
-     * conditions in the specifications, boost scores from these specifications
-     * are all applied and combined in a non-linear way. Maximum number of
-     * specifications is 20.
-     *
-     * @param GoogleCloudDialogflowCxV3BoostSpecConditionBoostSpec[] $conditionBoostSpecs
-     */
-    public function setConditionBoostSpecs($conditionBoostSpecs)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3BoostSpec extends \Google\Collection
     {
+        protected $collection_key = 'conditionBoostSpecs';
+        protected $conditionBoostSpecsType = GoogleCloudDialogflowCxV3BoostSpecConditionBoostSpec::class;
+        protected $conditionBoostSpecsDataType = 'array';
+        /**
+         * Optional. Condition boost specifications. If a document matches multiple
+         * conditions in the specifications, boost scores from these specifications
+         * are all applied and combined in a non-linear way. Maximum number of
+         * specifications is 20.
+         *
+         * @param GoogleCloudDialogflowCxV3BoostSpecConditionBoostSpec[] $conditionBoostSpecs
+         */
+        public function setConditionBoostSpecs($conditionBoostSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3BoostSpecConditionBoostSpec[]
+         */
+        public function getConditionBoostSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3BoostSpecConditionBoostSpec[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BoostSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditionBoostSpecs()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3BoostSpec extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BoostSpec
     {
     }
 }

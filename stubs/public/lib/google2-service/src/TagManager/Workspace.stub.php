@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Workspace extends \Google\Model
-{
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * Workspace description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The fingerprint of the GTM Workspace as computed at storage time. This
-     * value is recomputed whenever the workspace is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Workspace display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * GTM Workspace's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * The Workspace ID uniquely identifies the GTM Workspace.
-     *
-     * @var string
-     */
-    public $workspaceId;
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Workspace extends \Google\Model
     {
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * Workspace description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The fingerprint of the GTM Workspace as computed at storage time. This
+         * value is recomputed whenever the workspace is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Workspace display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * GTM Workspace's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * The Workspace ID uniquely identifies the GTM Workspace.
+         *
+         * @var string
+         */
+        public $workspaceId;
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * Workspace description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The fingerprint of the GTM Workspace as computed at storage time. This
+         * value is recomputed whenever the workspace is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Workspace display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * GTM Workspace's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * The Workspace ID uniquely identifies the GTM Workspace.
+         *
+         * @param string $workspaceId
+         */
+        public function setWorkspaceId($workspaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Workspace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * Workspace description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The fingerprint of the GTM Workspace as computed at storage time. This
-     * value is recomputed whenever the workspace is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Workspace display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * GTM Workspace's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * The Workspace ID uniquely identifies the GTM Workspace.
-     *
-     * @param string $workspaceId
-     */
-    public function setWorkspaceId($workspaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspaceId()
+    class Google_Service_TagManager_Workspace extends \Google\Service\TagManager\Workspace
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentInstanceFilter extends \Google\Collection
-{
-    protected $collection_key = 'inventories';
-    /**
-     * Target all VMs in the project. If true, no other criteria is permitted.
-     *
-     * @var bool
-     */
-    public $all;
-    protected $exclusionLabelsType = OSPolicyAssignmentLabelSet::class;
-    protected $exclusionLabelsDataType = 'array';
-    protected $inclusionLabelsType = OSPolicyAssignmentLabelSet::class;
-    protected $inclusionLabelsDataType = 'array';
-    protected $inventoriesType = OSPolicyAssignmentInstanceFilterInventory::class;
-    protected $inventoriesDataType = 'array';
-    /**
-     * Target all VMs in the project. If true, no other criteria is permitted.
-     *
-     * @param bool $all
-     */
-    public function setAll($all)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentInstanceFilter extends \Google\Collection
     {
+        protected $collection_key = 'inventories';
+        /**
+         * Target all VMs in the project. If true, no other criteria is permitted.
+         *
+         * @var bool
+         */
+        public $all;
+        protected $exclusionLabelsType = OSPolicyAssignmentLabelSet::class;
+        protected $exclusionLabelsDataType = 'array';
+        protected $inclusionLabelsType = OSPolicyAssignmentLabelSet::class;
+        protected $inclusionLabelsDataType = 'array';
+        protected $inventoriesType = OSPolicyAssignmentInstanceFilterInventory::class;
+        protected $inventoriesDataType = 'array';
+        /**
+         * Target all VMs in the project. If true, no other criteria is permitted.
+         *
+         * @param bool $all
+         */
+        public function setAll($all)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAll()
+        {
+        }
+        /**
+         * List of label sets used for VM exclusion. If the list has more than one
+         * label set, the VM is excluded if any of the label sets are applicable for
+         * the VM.
+         *
+         * @param OSPolicyAssignmentLabelSet[] $exclusionLabels
+         */
+        public function setExclusionLabels($exclusionLabels)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentLabelSet[]
+         */
+        public function getExclusionLabels()
+        {
+        }
+        /**
+         * List of label sets used for VM inclusion. If the list has more than one
+         * `LabelSet`, the VM is included if any of the label sets are applicable for
+         * the VM.
+         *
+         * @param OSPolicyAssignmentLabelSet[] $inclusionLabels
+         */
+        public function setInclusionLabels($inclusionLabels)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentLabelSet[]
+         */
+        public function getInclusionLabels()
+        {
+        }
+        /**
+         * List of inventories to select VMs. A VM is selected if its inventory data
+         * matches at least one of the following inventories.
+         *
+         * @param OSPolicyAssignmentInstanceFilterInventory[] $inventories
+         */
+        public function setInventories($inventories)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentInstanceFilterInventory[]
+         */
+        public function getInventories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentInstanceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAll()
-    {
-    }
-    /**
-     * List of label sets used for VM exclusion. If the list has more than one
-     * label set, the VM is excluded if any of the label sets are applicable for
-     * the VM.
-     *
-     * @param OSPolicyAssignmentLabelSet[] $exclusionLabels
-     */
-    public function setExclusionLabels($exclusionLabels)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentLabelSet[]
-     */
-    public function getExclusionLabels()
-    {
-    }
-    /**
-     * List of label sets used for VM inclusion. If the list has more than one
-     * `LabelSet`, the VM is included if any of the label sets are applicable for
-     * the VM.
-     *
-     * @param OSPolicyAssignmentLabelSet[] $inclusionLabels
-     */
-    public function setInclusionLabels($inclusionLabels)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentLabelSet[]
-     */
-    public function getInclusionLabels()
-    {
-    }
-    /**
-     * List of inventories to select VMs. A VM is selected if its inventory data
-     * matches at least one of the following inventories.
-     *
-     * @param OSPolicyAssignmentInstanceFilterInventory[] $inventories
-     */
-    public function setInventories($inventories)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentInstanceFilterInventory[]
-     */
-    public function getInventories()
+    class Google_Service_OSConfig_OSPolicyAssignmentInstanceFilter extends \Google\Service\OSConfig\OSPolicyAssignmentInstanceFilter
     {
     }
 }

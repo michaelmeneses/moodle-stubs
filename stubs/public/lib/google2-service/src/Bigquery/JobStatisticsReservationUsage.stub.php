@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobStatisticsReservationUsage extends \Google\Model
-{
-    /**
-     * Reservation name or "unreserved" for on-demand resource usage and multi-
-     * statement queries.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Total slot milliseconds used by the reservation for a particular job.
-     *
-     * @var string
-     */
-    public $slotMs;
-    /**
-     * Reservation name or "unreserved" for on-demand resource usage and multi-
-     * statement queries.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Bigquery {
+    class JobStatisticsReservationUsage extends \Google\Model
     {
+        /**
+         * Reservation name or "unreserved" for on-demand resource usage and multi-
+         * statement queries.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Total slot milliseconds used by the reservation for a particular job.
+         *
+         * @var string
+         */
+        public $slotMs;
+        /**
+         * Reservation name or "unreserved" for on-demand resource usage and multi-
+         * statement queries.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Total slot milliseconds used by the reservation for a particular job.
+         *
+         * @param string $slotMs
+         */
+        public function setSlotMs($slotMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlotMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\JobStatisticsReservationUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Total slot milliseconds used by the reservation for a particular job.
-     *
-     * @param string $slotMs
-     */
-    public function setSlotMs($slotMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlotMs()
+    class Google_Service_Bigquery_JobStatisticsReservationUsage extends \Google\Service\Bigquery\JobStatisticsReservationUsage
     {
     }
 }

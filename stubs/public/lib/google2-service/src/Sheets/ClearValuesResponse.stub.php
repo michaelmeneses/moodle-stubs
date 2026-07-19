@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ClearValuesResponse extends \Google\Model
-{
-    /**
-     * The range (in A1 notation) that was cleared. (If the request was for an
-     * unbounded range or a ranger larger than the bounds of the sheet, this will
-     * be the actual range that was cleared, bounded to the sheet's limits.)
-     *
-     * @var string
-     */
-    public $clearedRange;
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The range (in A1 notation) that was cleared. (If the request was for an
-     * unbounded range or a ranger larger than the bounds of the sheet, this will
-     * be the actual range that was cleared, bounded to the sheet's limits.)
-     *
-     * @param string $clearedRange
-     */
-    public function setClearedRange($clearedRange)
+namespace Google\Service\Sheets {
+    class ClearValuesResponse extends \Google\Model
     {
+        /**
+         * The range (in A1 notation) that was cleared. (If the request was for an
+         * unbounded range or a ranger larger than the bounds of the sheet, this will
+         * be the actual range that was cleared, bounded to the sheet's limits.)
+         *
+         * @var string
+         */
+        public $clearedRange;
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The range (in A1 notation) that was cleared. (If the request was for an
+         * unbounded range or a ranger larger than the bounds of the sheet, this will
+         * be the actual range that was cleared, bounded to the sheet's limits.)
+         *
+         * @param string $clearedRange
+         */
+        public function setClearedRange($clearedRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClearedRange()
+        {
+        }
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\ClearValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClearedRange()
-    {
-    }
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetId()
+    class Google_Service_Sheets_ClearValuesResponse extends \Google\Service\Sheets\ClearValuesResponse
     {
     }
 }

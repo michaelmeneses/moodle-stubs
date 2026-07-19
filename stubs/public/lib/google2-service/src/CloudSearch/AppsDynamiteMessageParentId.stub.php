@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMessageParentId extends \Google\Model
-{
-    protected $topicIdType = AppsDynamiteTopicId::class;
-    protected $topicIdDataType = '';
-    /**
-     * @param AppsDynamiteTopicId
-     */
-    public function setTopicId(AppsDynamiteTopicId $topicId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMessageParentId extends \Google\Model
     {
+        protected $topicIdType = AppsDynamiteTopicId::class;
+        protected $topicIdDataType = '';
+        /**
+         * @param AppsDynamiteTopicId
+         */
+        public function setTopicId(AppsDynamiteTopicId $topicId)
+        {
+        }
+        /**
+         * @return AppsDynamiteTopicId
+         */
+        public function getTopicId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteTopicId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMessageParentId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicId()
+    class Google_Service_CloudSearch_AppsDynamiteMessageParentId extends \Google\Service\CloudSearch\AppsDynamiteMessageParentId
     {
     }
 }

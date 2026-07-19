@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteV1ApiCompatV1Field extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $short;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param bool
-     */
-    public function setShort($short)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteV1ApiCompatV1Field extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $short;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param bool
+         */
+        public function setShort($short)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShort()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1Field registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShort()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_AppsDynamiteV1ApiCompatV1Field extends \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1Field
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class MetricValue extends \Google\Model
-{
-    /**
-     * Measurement value. See MetricHeader for type.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Measurement value. See MetricHeader for type.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\AnalyticsData {
+    class MetricValue extends \Google\Model
     {
+        /**
+         * Measurement value. See MetricHeader for type.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Measurement value. See MetricHeader for type.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\MetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_AnalyticsData_MetricValue extends \Google\Service\AnalyticsData\MetricValue
     {
     }
 }

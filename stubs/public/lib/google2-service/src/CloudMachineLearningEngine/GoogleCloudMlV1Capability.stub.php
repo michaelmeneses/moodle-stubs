@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1Capability extends \Google\Collection
-{
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    public const TYPE_TRAINING = 'TRAINING';
-    public const TYPE_BATCH_PREDICTION = 'BATCH_PREDICTION';
-    public const TYPE_ONLINE_PREDICTION = 'ONLINE_PREDICTION';
-    protected $collection_key = 'availableAccelerators';
-    /**
-     * Available accelerators for the capability.
-     *
-     * @var string[]
-     */
-    public $availableAccelerators;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * Available accelerators for the capability.
-     *
-     * @param string[] $availableAccelerators
-     */
-    public function setAvailableAccelerators($availableAccelerators)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1Capability extends \Google\Collection
     {
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        public const TYPE_TRAINING = 'TRAINING';
+        public const TYPE_BATCH_PREDICTION = 'BATCH_PREDICTION';
+        public const TYPE_ONLINE_PREDICTION = 'ONLINE_PREDICTION';
+        protected $collection_key = 'availableAccelerators';
+        /**
+         * Available accelerators for the capability.
+         *
+         * @var string[]
+         */
+        public $availableAccelerators;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * Available accelerators for the capability.
+         *
+         * @param string[] $availableAccelerators
+         */
+        public function setAvailableAccelerators($availableAccelerators)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailableAccelerators()
+        {
+        }
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Capability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableAccelerators()
-    {
-    }
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Capability extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Capability
     {
     }
 }

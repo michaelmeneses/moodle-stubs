@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class MutationResult extends \Google\Collection
-{
-    protected $collection_key = 'transformResults';
-    /**
-     * Whether a conflict was detected for this mutation. Always false when a
-     * conflict detection strategy field is not set in the mutation.
-     *
-     * @var bool
-     */
-    public $conflictDetected;
-    /**
-     * The create time of the entity. This field will not be set after a 'delete'.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $keyType = Key::class;
-    protected $keyDataType = '';
-    protected $transformResultsType = Value::class;
-    protected $transformResultsDataType = 'array';
-    /**
-     * The update time of the entity on the server after processing the mutation.
-     * If the mutation doesn't change anything on the server, then the timestamp
-     * will be the update timestamp of the current entity. This field will not be
-     * set after a 'delete'.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The version of the entity on the server after processing the mutation. If
-     * the mutation doesn't change anything on the server, then the version will
-     * be the version of the current entity or, if no entity is present, a version
-     * that is strictly greater than the version of any previous entity and less
-     * than the version of any possible future entity.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Whether a conflict was detected for this mutation. Always false when a
-     * conflict detection strategy field is not set in the mutation.
-     *
-     * @param bool $conflictDetected
-     */
-    public function setConflictDetected($conflictDetected)
+namespace Google\Service\Datastore {
+    class MutationResult extends \Google\Collection
     {
+        protected $collection_key = 'transformResults';
+        /**
+         * Whether a conflict was detected for this mutation. Always false when a
+         * conflict detection strategy field is not set in the mutation.
+         *
+         * @var bool
+         */
+        public $conflictDetected;
+        /**
+         * The create time of the entity. This field will not be set after a 'delete'.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $keyType = Key::class;
+        protected $keyDataType = '';
+        protected $transformResultsType = Value::class;
+        protected $transformResultsDataType = 'array';
+        /**
+         * The update time of the entity on the server after processing the mutation.
+         * If the mutation doesn't change anything on the server, then the timestamp
+         * will be the update timestamp of the current entity. This field will not be
+         * set after a 'delete'.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The version of the entity on the server after processing the mutation. If
+         * the mutation doesn't change anything on the server, then the version will
+         * be the version of the current entity or, if no entity is present, a version
+         * that is strictly greater than the version of any previous entity and less
+         * than the version of any possible future entity.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Whether a conflict was detected for this mutation. Always false when a
+         * conflict detection strategy field is not set in the mutation.
+         *
+         * @param bool $conflictDetected
+         */
+        public function setConflictDetected($conflictDetected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConflictDetected()
+        {
+        }
+        /**
+         * The create time of the entity. This field will not be set after a 'delete'.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The automatically allocated key. Set only when the mutation allocated a
+         * key.
+         *
+         * @param Key $key
+         */
+        public function setKey(Key $key)
+        {
+        }
+        /**
+         * @return Key
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The results of applying each PropertyTransform, in the same order of the
+         * request.
+         *
+         * @param Value[] $transformResults
+         */
+        public function setTransformResults($transformResults)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getTransformResults()
+        {
+        }
+        /**
+         * The update time of the entity on the server after processing the mutation.
+         * If the mutation doesn't change anything on the server, then the timestamp
+         * will be the update timestamp of the current entity. This field will not be
+         * set after a 'delete'.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The version of the entity on the server after processing the mutation. If
+         * the mutation doesn't change anything on the server, then the version will
+         * be the version of the current entity or, if no entity is present, a version
+         * that is strictly greater than the version of any previous entity and less
+         * than the version of any possible future entity.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Datastore\MutationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConflictDetected()
-    {
-    }
-    /**
-     * The create time of the entity. This field will not be set after a 'delete'.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The automatically allocated key. Set only when the mutation allocated a
-     * key.
-     *
-     * @param Key $key
-     */
-    public function setKey(Key $key)
-    {
-    }
-    /**
-     * @return Key
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The results of applying each PropertyTransform, in the same order of the
-     * request.
-     *
-     * @param Value[] $transformResults
-     */
-    public function setTransformResults($transformResults)
-    {
-    }
-    /**
-     * @return Value[]
-     */
-    public function getTransformResults()
-    {
-    }
-    /**
-     * The update time of the entity on the server after processing the mutation.
-     * If the mutation doesn't change anything on the server, then the timestamp
-     * will be the update timestamp of the current entity. This field will not be
-     * set after a 'delete'.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The version of the entity on the server after processing the mutation. If
-     * the mutation doesn't change anything on the server, then the version will
-     * be the version of the current entity or, if no entity is present, a version
-     * that is strictly greater than the version of any previous entity and less
-     * than the version of any possible future entity.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Datastore_MutationResult extends \Google\Service\Datastore\MutationResult
     {
     }
 }

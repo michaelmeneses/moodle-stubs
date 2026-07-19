@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class Versions extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    protected $versionsType = Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * Shows the mapping of a given version to the number of machines under this
-     * version.
-     *
-     * @param Version[] $versions
-     */
-    public function setVersions($versions)
+namespace Google\Service\GKEOnPrem {
+    class Versions extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        protected $versionsType = Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * Shows the mapping of a given version to the number of machines under this
+         * version.
+         *
+         * @param Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Version[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\Versions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersions()
+    class Google_Service_GKEOnPrem_Versions extends \Google\Service\GKEOnPrem\Versions
     {
     }
 }

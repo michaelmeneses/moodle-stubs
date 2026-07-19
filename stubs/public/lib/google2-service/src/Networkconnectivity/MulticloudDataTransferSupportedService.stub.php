@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class MulticloudDataTransferSupportedService extends \Google\Collection
-{
-    protected $collection_key = 'serviceConfigs';
-    /**
-     * Identifier. The name of the service.
-     *
-     * @var string
-     */
-    public $name;
-    protected $serviceConfigsType = ServiceConfig::class;
-    protected $serviceConfigsDataType = 'array';
-    /**
-     * Identifier. The name of the service.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Networkconnectivity {
+    class MulticloudDataTransferSupportedService extends \Google\Collection
     {
+        protected $collection_key = 'serviceConfigs';
+        /**
+         * Identifier. The name of the service.
+         *
+         * @var string
+         */
+        public $name;
+        protected $serviceConfigsType = ServiceConfig::class;
+        protected $serviceConfigsDataType = 'array';
+        /**
+         * Identifier. The name of the service.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The network service tier or regional endpoint supported for
+         * the service.
+         *
+         * @param ServiceConfig[] $serviceConfigs
+         */
+        public function setServiceConfigs($serviceConfigs)
+        {
+        }
+        /**
+         * @return ServiceConfig[]
+         */
+        public function getServiceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\MulticloudDataTransferSupportedService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The network service tier or regional endpoint supported for
-     * the service.
-     *
-     * @param ServiceConfig[] $serviceConfigs
-     */
-    public function setServiceConfigs($serviceConfigs)
-    {
-    }
-    /**
-     * @return ServiceConfig[]
-     */
-    public function getServiceConfigs()
+    class Google_Service_Networkconnectivity_MulticloudDataTransferSupportedService extends \Google\Service\Networkconnectivity\MulticloudDataTransferSupportedService
     {
     }
 }

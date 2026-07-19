@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class AddDealAssociationRequest extends \Google\Model
-{
-    protected $associationType = CreativeDealAssociation::class;
-    protected $associationDataType = '';
-    /**
-     * The association between a creative and a deal that should be added.
-     *
-     * @param CreativeDealAssociation $association
-     */
-    public function setAssociation(CreativeDealAssociation $association)
+namespace Google\Service\AdExchangeBuyerII {
+    class AddDealAssociationRequest extends \Google\Model
     {
+        protected $associationType = CreativeDealAssociation::class;
+        protected $associationDataType = '';
+        /**
+         * The association between a creative and a deal that should be added.
+         *
+         * @param CreativeDealAssociation $association
+         */
+        public function setAssociation(CreativeDealAssociation $association)
+        {
+        }
+        /**
+         * @return CreativeDealAssociation
+         */
+        public function getAssociation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreativeDealAssociation
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\AddDealAssociationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssociation()
+    class Google_Service_AdExchangeBuyerII_AddDealAssociationRequest extends \Google\Service\AdExchangeBuyerII\AddDealAssociationRequest
     {
     }
 }

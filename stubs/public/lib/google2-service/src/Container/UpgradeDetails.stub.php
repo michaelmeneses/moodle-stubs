@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class UpgradeDetails extends \Google\Model
-{
-    /**
-     * Upgrade start type is unspecified.
-     */
-    public const START_TYPE_START_TYPE_UNSPECIFIED = 'START_TYPE_UNSPECIFIED';
-    /**
-     * Upgrade started automatically.
-     */
-    public const START_TYPE_AUTOMATIC = 'AUTOMATIC';
-    /**
-     * Upgrade started manually.
-     */
-    public const START_TYPE_MANUAL = 'MANUAL';
-    /**
-     * Upgrade state is unknown.
-     */
-    public const STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Upgrade has failed with an error.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Upgrade has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Upgrade has been canceled.
-     */
-    public const STATE_CANCELED = 'CANCELED';
-    /**
-     * Upgrade is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The end timestamp of the upgrade.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The version before the upgrade.
-     *
-     * @var string
-     */
-    public $initialVersion;
-    /**
-     * The start timestamp of the upgrade.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The start type of the upgrade.
-     *
-     * @var string
-     */
-    public $startType;
-    /**
-     * Output only. The state of the upgrade.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The version after the upgrade.
-     *
-     * @var string
-     */
-    public $targetVersion;
-    /**
-     * The end timestamp of the upgrade.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Container {
+    class UpgradeDetails extends \Google\Model
     {
+        /**
+         * Upgrade start type is unspecified.
+         */
+        public const START_TYPE_START_TYPE_UNSPECIFIED = 'START_TYPE_UNSPECIFIED';
+        /**
+         * Upgrade started automatically.
+         */
+        public const START_TYPE_AUTOMATIC = 'AUTOMATIC';
+        /**
+         * Upgrade started manually.
+         */
+        public const START_TYPE_MANUAL = 'MANUAL';
+        /**
+         * Upgrade state is unknown.
+         */
+        public const STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Upgrade has failed with an error.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Upgrade has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Upgrade has been canceled.
+         */
+        public const STATE_CANCELED = 'CANCELED';
+        /**
+         * Upgrade is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The end timestamp of the upgrade.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The version before the upgrade.
+         *
+         * @var string
+         */
+        public $initialVersion;
+        /**
+         * The start timestamp of the upgrade.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The start type of the upgrade.
+         *
+         * @var string
+         */
+        public $startType;
+        /**
+         * Output only. The state of the upgrade.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The version after the upgrade.
+         *
+         * @var string
+         */
+        public $targetVersion;
+        /**
+         * The end timestamp of the upgrade.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The version before the upgrade.
+         *
+         * @param string $initialVersion
+         */
+        public function setInitialVersion($initialVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitialVersion()
+        {
+        }
+        /**
+         * The start timestamp of the upgrade.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The start type of the upgrade.
+         *
+         * Accepted values: START_TYPE_UNSPECIFIED, AUTOMATIC, MANUAL
+         *
+         * @param self::START_TYPE_* $startType
+         */
+        public function setStartType($startType)
+        {
+        }
+        /**
+         * @return self::START_TYPE_*
+         */
+        public function getStartType()
+        {
+        }
+        /**
+         * Output only. The state of the upgrade.
+         *
+         * Accepted values: UNKNOWN, FAILED, SUCCEEDED, CANCELED, RUNNING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The version after the upgrade.
+         *
+         * @param string $targetVersion
+         */
+        public function setTargetVersion($targetVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\UpgradeDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The version before the upgrade.
-     *
-     * @param string $initialVersion
-     */
-    public function setInitialVersion($initialVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitialVersion()
-    {
-    }
-    /**
-     * The start timestamp of the upgrade.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The start type of the upgrade.
-     *
-     * Accepted values: START_TYPE_UNSPECIFIED, AUTOMATIC, MANUAL
-     *
-     * @param self::START_TYPE_* $startType
-     */
-    public function setStartType($startType)
-    {
-    }
-    /**
-     * @return self::START_TYPE_*
-     */
-    public function getStartType()
-    {
-    }
-    /**
-     * Output only. The state of the upgrade.
-     *
-     * Accepted values: UNKNOWN, FAILED, SUCCEEDED, CANCELED, RUNNING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The version after the upgrade.
-     *
-     * @param string $targetVersion
-     */
-    public function setTargetVersion($targetVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetVersion()
+    class Google_Service_Container_UpgradeDetails extends \Google\Service\Container\UpgradeDetails
     {
     }
 }

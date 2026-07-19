@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UploadRagFileConfig extends \Google\Model
-{
-    protected $ragFileTransformationConfigType = GoogleCloudAiplatformV1RagFileTransformationConfig::class;
-    protected $ragFileTransformationConfigDataType = '';
-    /**
-     * Specifies the transformation config for RagFiles.
-     *
-     * @param GoogleCloudAiplatformV1RagFileTransformationConfig $ragFileTransformationConfig
-     */
-    public function setRagFileTransformationConfig(GoogleCloudAiplatformV1RagFileTransformationConfig $ragFileTransformationConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UploadRagFileConfig extends \Google\Model
     {
+        protected $ragFileTransformationConfigType = GoogleCloudAiplatformV1RagFileTransformationConfig::class;
+        protected $ragFileTransformationConfigDataType = '';
+        /**
+         * Specifies the transformation config for RagFiles.
+         *
+         * @param GoogleCloudAiplatformV1RagFileTransformationConfig $ragFileTransformationConfig
+         */
+        public function setRagFileTransformationConfig(GoogleCloudAiplatformV1RagFileTransformationConfig $ragFileTransformationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFileTransformationConfig
+         */
+        public function getRagFileTransformationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagFileTransformationConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagFileTransformationConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UploadRagFileConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileConfig
     {
     }
 }

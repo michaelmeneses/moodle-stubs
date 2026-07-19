@@ -21,109 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity\Resource;
-
-/**
- * The "tlsInspectionPolicies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networksecurityService = new Google\Service\NetworkSecurity(...);
- *   $tlsInspectionPolicies = $networksecurityService->projects_locations_tlsInspectionPolicies;
- *  </code>
- */
-class ProjectsLocationsTlsInspectionPolicies extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkSecurity\Resource {
+    use Google\Service\NetworkSecurity\ListTlsInspectionPoliciesResponse;
+    use Google\Service\NetworkSecurity\Operation;
+    use Google\Service\NetworkSecurity\TlsInspectionPolicy;
     /**
-     * Creates a new TlsInspectionPolicy in a given project and location.
-     * (tlsInspectionPolicies.create)
-     *
-     * @param string $parent Required. The parent resource of the
-     * TlsInspectionPolicy. Must be in the format
-     * `projects/{project}/locations/{location}`.
-     * @param TlsInspectionPolicy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string tlsInspectionPolicyId Required. Short name of the
-     * TlsInspectionPolicy resource to be created. This value should be 1-63
-     * characters long, containing only letters, numbers, hyphens, and underscores,
-     * and should not start with a number. E.g. "tls_inspection_policy1".
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "tlsInspectionPolicies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networksecurityService = new Google\Service\NetworkSecurity(...);
+     *   $tlsInspectionPolicies = $networksecurityService->projects_locations_tlsInspectionPolicies;
+     *  </code>
      */
-    public function create($parent, TlsInspectionPolicy $postBody, $optParams = [])
+    class ProjectsLocationsTlsInspectionPolicies extends \Google\Service\Resource
     {
+        /**
+         * Creates a new TlsInspectionPolicy in a given project and location.
+         * (tlsInspectionPolicies.create)
+         *
+         * @param string $parent Required. The parent resource of the
+         * TlsInspectionPolicy. Must be in the format
+         * `projects/{project}/locations/{location}`.
+         * @param TlsInspectionPolicy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string tlsInspectionPolicyId Required. Short name of the
+         * TlsInspectionPolicy resource to be created. This value should be 1-63
+         * characters long, containing only letters, numbers, hyphens, and underscores,
+         * and should not start with a number. E.g. "tls_inspection_policy1".
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, TlsInspectionPolicy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single TlsInspectionPolicy. (tlsInspectionPolicies.delete)
+         *
+         * @param string $name Required. A name of the TlsInspectionPolicy to delete.
+         * Must be in the format `projects/{project}/locations/{location}/tlsInspectionP
+         * olicies/{tls_inspection_policy}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool force If set to true, any rules for this TlsInspectionPolicy
+         * will also be deleted. (Otherwise, the request will only work if the
+         * TlsInspectionPolicy has no rules.)
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single TlsInspectionPolicy. (tlsInspectionPolicies.get)
+         *
+         * @param string $name Required. A name of the TlsInspectionPolicy to get. Must
+         * be in the format `projects/{project}/locations/{location}/tlsInspectionPolici
+         * es/{tls_inspection_policy}`.
+         * @param array $optParams Optional parameters.
+         * @return TlsInspectionPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists TlsInspectionPolicies in a given project and location.
+         * (tlsInspectionPolicies.listProjectsLocationsTlsInspectionPolicies)
+         *
+         * @param string $parent Required. The project and location from which the
+         * TlsInspectionPolicies should be listed, specified in the format
+         * `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of TlsInspectionPolicies to return per
+         * call.
+         * @opt_param string pageToken The value returned by the last
+         * 'ListTlsInspectionPoliciesResponse' Indicates that this is a continuation of
+         * a prior 'ListTlsInspectionPolicies' call, and that the system should return
+         * the next page of data.
+         * @return ListTlsInspectionPoliciesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsTlsInspectionPolicies($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single TlsInspectionPolicy.
+         * (tlsInspectionPolicies.patch)
+         *
+         * @param string $name Required. Name of the resource. Name is of the form proje
+         * cts/{project}/locations/{location}/tlsInspectionPolicies/{tls_inspection_poli
+         * cy} tls_inspection_policy should match the
+         * pattern:(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$).
+         * @param TlsInspectionPolicy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the TlsInspectionPolicy resource by the update.
+         * The fields specified in the update_mask are relative to the resource, not the
+         * full request. A field will be overwritten if it is in the mask. If the user
+         * does not provide a mask then all fields will be overwritten.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, TlsInspectionPolicy $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single TlsInspectionPolicy. (tlsInspectionPolicies.delete)
-     *
-     * @param string $name Required. A name of the TlsInspectionPolicy to delete.
-     * Must be in the format `projects/{project}/locations/{location}/tlsInspectionP
-     * olicies/{tls_inspection_policy}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool force If set to true, any rules for this TlsInspectionPolicy
-     * will also be deleted. (Otherwise, the request will only work if the
-     * TlsInspectionPolicy has no rules.)
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkSecurity\Resource\ProjectsLocationsTlsInspectionPolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single TlsInspectionPolicy. (tlsInspectionPolicies.get)
-     *
-     * @param string $name Required. A name of the TlsInspectionPolicy to get. Must
-     * be in the format `projects/{project}/locations/{location}/tlsInspectionPolici
-     * es/{tls_inspection_policy}`.
-     * @param array $optParams Optional parameters.
-     * @return TlsInspectionPolicy
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists TlsInspectionPolicies in a given project and location.
-     * (tlsInspectionPolicies.listProjectsLocationsTlsInspectionPolicies)
-     *
-     * @param string $parent Required. The project and location from which the
-     * TlsInspectionPolicies should be listed, specified in the format
-     * `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of TlsInspectionPolicies to return per
-     * call.
-     * @opt_param string pageToken The value returned by the last
-     * 'ListTlsInspectionPoliciesResponse' Indicates that this is a continuation of
-     * a prior 'ListTlsInspectionPolicies' call, and that the system should return
-     * the next page of data.
-     * @return ListTlsInspectionPoliciesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsTlsInspectionPolicies($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the parameters of a single TlsInspectionPolicy.
-     * (tlsInspectionPolicies.patch)
-     *
-     * @param string $name Required. Name of the resource. Name is of the form proje
-     * cts/{project}/locations/{location}/tlsInspectionPolicies/{tls_inspection_poli
-     * cy} tls_inspection_policy should match the
-     * pattern:(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$).
-     * @param TlsInspectionPolicy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the TlsInspectionPolicy resource by the update.
-     * The fields specified in the update_mask are relative to the resource, not the
-     * full request. A field will be overwritten if it is in the mask. If the user
-     * does not provide a mask then all fields will be overwritten.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, TlsInspectionPolicy $postBody, $optParams = [])
+    class Google_Service_NetworkSecurity_Resource_ProjectsLocationsTlsInspectionPolicies extends \Google\Service\NetworkSecurity\Resource\ProjectsLocationsTlsInspectionPolicies
     {
     }
 }

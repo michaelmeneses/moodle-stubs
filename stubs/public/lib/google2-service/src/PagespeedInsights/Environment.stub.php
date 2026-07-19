@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class Environment extends \Google\Model
-{
-    /**
-     * The benchmark index number that indicates rough device class.
-     *
-     * @var 
-     */
-    public $benchmarkIndex;
-    /**
-     * The version of libraries with which these results were generated. Ex: axe-
-     * core.
-     *
-     * @var string[]
-     */
-    public $credits;
-    /**
-     * The user agent string of the version of Chrome used.
-     *
-     * @var string
-     */
-    public $hostUserAgent;
-    /**
-     * The user agent string that was sent over the network.
-     *
-     * @var string
-     */
-    public $networkUserAgent;
-    public function setBenchmarkIndex($benchmarkIndex)
+namespace Google\Service\PagespeedInsights {
+    class Environment extends \Google\Model
     {
+        /**
+         * The benchmark index number that indicates rough device class.
+         *
+         * @var 
+         */
+        public $benchmarkIndex;
+        /**
+         * The version of libraries with which these results were generated. Ex: axe-
+         * core.
+         *
+         * @var string[]
+         */
+        public $credits;
+        /**
+         * The user agent string of the version of Chrome used.
+         *
+         * @var string
+         */
+        public $hostUserAgent;
+        /**
+         * The user agent string that was sent over the network.
+         *
+         * @var string
+         */
+        public $networkUserAgent;
+        public function setBenchmarkIndex($benchmarkIndex)
+        {
+        }
+        public function getBenchmarkIndex()
+        {
+        }
+        /**
+         * The version of libraries with which these results were generated. Ex: axe-
+         * core.
+         *
+         * @param string[] $credits
+         */
+        public function setCredits($credits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCredits()
+        {
+        }
+        /**
+         * The user agent string of the version of Chrome used.
+         *
+         * @param string $hostUserAgent
+         */
+        public function setHostUserAgent($hostUserAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUserAgent()
+        {
+        }
+        /**
+         * The user agent string that was sent over the network.
+         *
+         * @param string $networkUserAgent
+         */
+        public function setNetworkUserAgent($networkUserAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUserAgent()
+        {
+        }
     }
-    public function getBenchmarkIndex()
-    {
-    }
+}
+namespace {
     /**
-     * The version of libraries with which these results were generated. Ex: axe-
-     * core.
-     *
-     * @param string[] $credits
+     * Runtime class alias of \Google\Service\PagespeedInsights\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCredits($credits)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCredits()
-    {
-    }
-    /**
-     * The user agent string of the version of Chrome used.
-     *
-     * @param string $hostUserAgent
-     */
-    public function setHostUserAgent($hostUserAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUserAgent()
-    {
-    }
-    /**
-     * The user agent string that was sent over the network.
-     *
-     * @param string $networkUserAgent
-     */
-    public function setNetworkUserAgent($networkUserAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUserAgent()
+    class Google_Service_PagespeedInsights_Environment extends \Google\Service\PagespeedInsights\Environment
     {
     }
 }

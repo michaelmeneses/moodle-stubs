@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageDecoratedText extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bottomLabel;
-    protected $buttonType = AppsDynamiteStorageButton::class;
-    protected $buttonDataType = '';
-    protected $endIconType = AppsDynamiteStorageIcon::class;
-    protected $endIconDataType = '';
-    protected $iconType = AppsDynamiteStorageIcon::class;
-    protected $iconDataType = '';
-    protected $onClickType = AppsDynamiteStorageOnClick::class;
-    protected $onClickDataType = '';
-    protected $startIconType = AppsDynamiteStorageIcon::class;
-    protected $startIconDataType = '';
-    protected $switchControlType = AppsDynamiteStorageDecoratedTextSwitchControl::class;
-    protected $switchControlDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $topLabel;
-    /**
-     * @var bool
-     */
-    public $wrapText;
-    /**
-     * @param string
-     */
-    public function setBottomLabel($bottomLabel)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageDecoratedText extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bottomLabel;
+        protected $buttonType = AppsDynamiteStorageButton::class;
+        protected $buttonDataType = '';
+        protected $endIconType = AppsDynamiteStorageIcon::class;
+        protected $endIconDataType = '';
+        protected $iconType = AppsDynamiteStorageIcon::class;
+        protected $iconDataType = '';
+        protected $onClickType = AppsDynamiteStorageOnClick::class;
+        protected $onClickDataType = '';
+        protected $startIconType = AppsDynamiteStorageIcon::class;
+        protected $startIconDataType = '';
+        protected $switchControlType = AppsDynamiteStorageDecoratedTextSwitchControl::class;
+        protected $switchControlDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $topLabel;
+        /**
+         * @var bool
+         */
+        public $wrapText;
+        /**
+         * @param string
+         */
+        public function setBottomLabel($bottomLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBottomLabel()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageButton
+         */
+        public function setButton(AppsDynamiteStorageButton $button)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageButton
+         */
+        public function getButton()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageIcon
+         */
+        public function setEndIcon(AppsDynamiteStorageIcon $endIcon)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageIcon
+         */
+        public function getEndIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageIcon
+         */
+        public function setIcon(AppsDynamiteStorageIcon $icon)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageIcon
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageOnClick
+         */
+        public function setOnClick(AppsDynamiteStorageOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageIcon
+         */
+        public function setStartIcon(AppsDynamiteStorageIcon $startIcon)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageIcon
+         */
+        public function getStartIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageDecoratedTextSwitchControl
+         */
+        public function setSwitchControl(AppsDynamiteStorageDecoratedTextSwitchControl $switchControl)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageDecoratedTextSwitchControl
+         */
+        public function getSwitchControl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopLabel($topLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopLabel()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWrapText($wrapText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWrapText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageDecoratedText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottomLabel()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageButton
-     */
-    public function setButton(AppsDynamiteStorageButton $button)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageButton
-     */
-    public function getButton()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageIcon
-     */
-    public function setEndIcon(AppsDynamiteStorageIcon $endIcon)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageIcon
-     */
-    public function getEndIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageIcon
-     */
-    public function setIcon(AppsDynamiteStorageIcon $icon)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageIcon
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageOnClick
-     */
-    public function setOnClick(AppsDynamiteStorageOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageIcon
-     */
-    public function setStartIcon(AppsDynamiteStorageIcon $startIcon)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageIcon
-     */
-    public function getStartIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageDecoratedTextSwitchControl
-     */
-    public function setSwitchControl(AppsDynamiteStorageDecoratedTextSwitchControl $switchControl)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageDecoratedTextSwitchControl
-     */
-    public function getSwitchControl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopLabel($topLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopLabel()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWrapText($wrapText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWrapText()
+    class Google_Service_CloudSearch_AppsDynamiteStorageDecoratedText extends \Google\Service\CloudSearch\AppsDynamiteStorageDecoratedText
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureReservationTimeWindow extends \Google\Model
-{
-    protected $durationType = Duration::class;
-    protected $durationDataType = '';
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start time of the Future Reservation. The start_time is an RFC3339 string.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @param Duration $duration
-     */
-    public function setDuration(Duration $duration)
+namespace Google\Service\Compute {
+    class FutureReservationTimeWindow extends \Google\Model
     {
+        protected $durationType = Duration::class;
+        protected $durationDataType = '';
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start time of the Future Reservation. The start_time is an RFC3339 string.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @param Duration $duration
+         */
+        public function setDuration(Duration $duration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start time of the Future Reservation. The start_time is an RFC3339 string.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\Compute\FutureReservationTimeWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start time of the Future Reservation. The start_time is an RFC3339 string.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Compute_FutureReservationTimeWindow extends \Google\Service\Compute\FutureReservationTimeWindow
     {
     }
 }

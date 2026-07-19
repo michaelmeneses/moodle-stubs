@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadata extends \Google\Model
-{
-    protected $inputConfigType = GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * The column name of the time column that identifies time order in the time
-     * series.
-     *
-     * @var string
-     */
-    public $timeColumn;
-    /**
-     * The column name of the time series identifier column that identifies the
-     * time series.
-     *
-     * @var string
-     */
-    public $timeSeriesIdentifierColumn;
-    /**
-     * @param GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig $inputConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadata extends \Google\Model
     {
+        protected $inputConfigType = GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * The column name of the time column that identifies time order in the time
+         * series.
+         *
+         * @var string
+         */
+        public $timeColumn;
+        /**
+         * The column name of the time series identifier column that identifies the
+         * time series.
+         *
+         * @var string
+         */
+        public $timeSeriesIdentifierColumn;
+        /**
+         * @param GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * The column name of the time column that identifies time order in the time
+         * series.
+         *
+         * @param string $timeColumn
+         */
+        public function setTimeColumn($timeColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeColumn()
+        {
+        }
+        /**
+         * The column name of the time series identifier column that identifies the
+         * time series.
+         *
+         * @param string $timeSeriesIdentifierColumn
+         */
+        public function setTimeSeriesIdentifierColumn($timeSeriesIdentifierColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeSeriesIdentifierColumn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadataInputConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * The column name of the time column that identifies time order in the time
-     * series.
-     *
-     * @param string $timeColumn
-     */
-    public function setTimeColumn($timeColumn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeColumn()
-    {
-    }
-    /**
-     * The column name of the time series identifier column that identifies the
-     * time series.
-     *
-     * @param string $timeSeriesIdentifierColumn
-     */
-    public function setTimeSeriesIdentifierColumn($timeSeriesIdentifierColumn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeSeriesIdentifierColumn()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTimeSeriesDatasetMetadata
     {
     }
 }

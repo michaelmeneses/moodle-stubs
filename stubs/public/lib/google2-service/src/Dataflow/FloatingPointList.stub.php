@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class FloatingPointList extends \Google\Collection
-{
-    protected $collection_key = 'elements';
-    /**
-     * Elements of the list.
-     *
-     * @var []
-     */
-    public $elements;
-    public function setElements($elements)
+namespace Google\Service\Dataflow {
+    class FloatingPointList extends \Google\Collection
     {
+        protected $collection_key = 'elements';
+        /**
+         * Elements of the list.
+         *
+         * @var []
+         */
+        public $elements;
+        public function setElements($elements)
+        {
+        }
+        public function getElements()
+        {
+        }
     }
-    public function getElements()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\FloatingPointList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_FloatingPointList extends \Google\Service\Dataflow\FloatingPointList
     {
     }
 }

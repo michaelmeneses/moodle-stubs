@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class PerformanceCaptureConfig extends \Google\Model
-{
-    /**
-     * Optional. Enable or disable the Performance Capture feature.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Optional. The minimum number of consecutive readings above threshold that
-     * triggers instance state capture.
-     *
-     * @var int
-     */
-    public $probeThreshold;
-    /**
-     * Optional. The time interval in seconds between any two probes.
-     *
-     * @var int
-     */
-    public $probingIntervalSeconds;
-    /**
-     * Optional. The minimum number of server threads running to trigger the
-     * capture on primary.
-     *
-     * @var int
-     */
-    public $runningThreadsThreshold;
-    /**
-     * Optional. The minimum number of seconds replica must be lagging behind
-     * primary to trigger capture on replica.
-     *
-     * @var int
-     */
-    public $secondsBehindSourceThreshold;
-    /**
-     * Optional. The amount of time in seconds that a transaction needs to have
-     * been open before the watcher starts recording it.
-     *
-     * @var int
-     */
-    public $transactionDurationThreshold;
-    /**
-     * Optional. Enable or disable the Performance Capture feature.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\SQLAdmin {
+    class PerformanceCaptureConfig extends \Google\Model
     {
+        /**
+         * Optional. Enable or disable the Performance Capture feature.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Optional. The minimum number of consecutive readings above threshold that
+         * triggers instance state capture.
+         *
+         * @var int
+         */
+        public $probeThreshold;
+        /**
+         * Optional. The time interval in seconds between any two probes.
+         *
+         * @var int
+         */
+        public $probingIntervalSeconds;
+        /**
+         * Optional. The minimum number of server threads running to trigger the
+         * capture on primary.
+         *
+         * @var int
+         */
+        public $runningThreadsThreshold;
+        /**
+         * Optional. The minimum number of seconds replica must be lagging behind
+         * primary to trigger capture on replica.
+         *
+         * @var int
+         */
+        public $secondsBehindSourceThreshold;
+        /**
+         * Optional. The amount of time in seconds that a transaction needs to have
+         * been open before the watcher starts recording it.
+         *
+         * @var int
+         */
+        public $transactionDurationThreshold;
+        /**
+         * Optional. Enable or disable the Performance Capture feature.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. The minimum number of consecutive readings above threshold that
+         * triggers instance state capture.
+         *
+         * @param int $probeThreshold
+         */
+        public function setProbeThreshold($probeThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProbeThreshold()
+        {
+        }
+        /**
+         * Optional. The time interval in seconds between any two probes.
+         *
+         * @param int $probingIntervalSeconds
+         */
+        public function setProbingIntervalSeconds($probingIntervalSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProbingIntervalSeconds()
+        {
+        }
+        /**
+         * Optional. The minimum number of server threads running to trigger the
+         * capture on primary.
+         *
+         * @param int $runningThreadsThreshold
+         */
+        public function setRunningThreadsThreshold($runningThreadsThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRunningThreadsThreshold()
+        {
+        }
+        /**
+         * Optional. The minimum number of seconds replica must be lagging behind
+         * primary to trigger capture on replica.
+         *
+         * @param int $secondsBehindSourceThreshold
+         */
+        public function setSecondsBehindSourceThreshold($secondsBehindSourceThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSecondsBehindSourceThreshold()
+        {
+        }
+        /**
+         * Optional. The amount of time in seconds that a transaction needs to have
+         * been open before the watcher starts recording it.
+         *
+         * @param int $transactionDurationThreshold
+         */
+        public function setTransactionDurationThreshold($transactionDurationThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTransactionDurationThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\PerformanceCaptureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. The minimum number of consecutive readings above threshold that
-     * triggers instance state capture.
-     *
-     * @param int $probeThreshold
-     */
-    public function setProbeThreshold($probeThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProbeThreshold()
-    {
-    }
-    /**
-     * Optional. The time interval in seconds between any two probes.
-     *
-     * @param int $probingIntervalSeconds
-     */
-    public function setProbingIntervalSeconds($probingIntervalSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProbingIntervalSeconds()
-    {
-    }
-    /**
-     * Optional. The minimum number of server threads running to trigger the
-     * capture on primary.
-     *
-     * @param int $runningThreadsThreshold
-     */
-    public function setRunningThreadsThreshold($runningThreadsThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRunningThreadsThreshold()
-    {
-    }
-    /**
-     * Optional. The minimum number of seconds replica must be lagging behind
-     * primary to trigger capture on replica.
-     *
-     * @param int $secondsBehindSourceThreshold
-     */
-    public function setSecondsBehindSourceThreshold($secondsBehindSourceThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSecondsBehindSourceThreshold()
-    {
-    }
-    /**
-     * Optional. The amount of time in seconds that a transaction needs to have
-     * been open before the watcher starts recording it.
-     *
-     * @param int $transactionDurationThreshold
-     */
-    public function setTransactionDurationThreshold($transactionDurationThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTransactionDurationThreshold()
+    class Google_Service_SQLAdmin_PerformanceCaptureConfig extends \Google\Service\SQLAdmin\PerformanceCaptureConfig
     {
     }
 }

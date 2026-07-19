@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GlossaryEntry extends \Google\Model
-{
-    /**
-     * Describes the glossary entry.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Identifier. The resource name of the entry. Format:
-     * `projects/locations/glossaries/glossaryEntries`
-     *
-     * @var string
-     */
-    public $name;
-    protected $termsPairType = GlossaryTermsPair::class;
-    protected $termsPairDataType = '';
-    protected $termsSetType = GlossaryTermsSet::class;
-    protected $termsSetDataType = '';
-    /**
-     * Describes the glossary entry.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Translate {
+    class GlossaryEntry extends \Google\Model
     {
+        /**
+         * Describes the glossary entry.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Identifier. The resource name of the entry. Format:
+         * `projects/locations/glossaries/glossaryEntries`
+         *
+         * @var string
+         */
+        public $name;
+        protected $termsPairType = GlossaryTermsPair::class;
+        protected $termsPairDataType = '';
+        protected $termsSetType = GlossaryTermsSet::class;
+        protected $termsSetDataType = '';
+        /**
+         * Describes the glossary entry.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Identifier. The resource name of the entry. Format:
+         * `projects/locations/glossaries/glossaryEntries`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Used for an unidirectional glossary.
+         *
+         * @param GlossaryTermsPair $termsPair
+         */
+        public function setTermsPair(GlossaryTermsPair $termsPair)
+        {
+        }
+        /**
+         * @return GlossaryTermsPair
+         */
+        public function getTermsPair()
+        {
+        }
+        /**
+         * Used for an equivalent term sets glossary.
+         *
+         * @param GlossaryTermsSet $termsSet
+         */
+        public function setTermsSet(GlossaryTermsSet $termsSet)
+        {
+        }
+        /**
+         * @return GlossaryTermsSet
+         */
+        public function getTermsSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\GlossaryEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Identifier. The resource name of the entry. Format:
-     * `projects/locations/glossaries/glossaryEntries`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Used for an unidirectional glossary.
-     *
-     * @param GlossaryTermsPair $termsPair
-     */
-    public function setTermsPair(GlossaryTermsPair $termsPair)
-    {
-    }
-    /**
-     * @return GlossaryTermsPair
-     */
-    public function getTermsPair()
-    {
-    }
-    /**
-     * Used for an equivalent term sets glossary.
-     *
-     * @param GlossaryTermsSet $termsSet
-     */
-    public function setTermsSet(GlossaryTermsSet $termsSet)
-    {
-    }
-    /**
-     * @return GlossaryTermsSet
-     */
-    public function getTermsSet()
+    class Google_Service_Translate_GlossaryEntry extends \Google\Service\Translate\GlossaryEntry
     {
     }
 }

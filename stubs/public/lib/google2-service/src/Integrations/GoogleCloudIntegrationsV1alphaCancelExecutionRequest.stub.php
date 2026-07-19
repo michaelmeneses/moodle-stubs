@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCancelExecutionRequest extends \Google\Model
-{
-    /**
-     * Required. Reason for cancelling the execution. This is provided by the
-     * client requesting the cancellation, and is not used by the Platform.
-     *
-     * @var string
-     */
-    public $cancelReason;
-    /**
-     * Required. Reason for cancelling the execution. This is provided by the
-     * client requesting the cancellation, and is not used by the Platform.
-     *
-     * @param string $cancelReason
-     */
-    public function setCancelReason($cancelReason)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCancelExecutionRequest extends \Google\Model
     {
+        /**
+         * Required. Reason for cancelling the execution. This is provided by the
+         * client requesting the cancellation, and is not used by the Platform.
+         *
+         * @var string
+         */
+        public $cancelReason;
+        /**
+         * Required. Reason for cancelling the execution. This is provided by the
+         * client requesting the cancellation, and is not used by the Platform.
+         *
+         * @param string $cancelReason
+         */
+        public function setCancelReason($cancelReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCancelExecutionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelReason()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCancelExecutionRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCancelExecutionRequest
     {
     }
 }

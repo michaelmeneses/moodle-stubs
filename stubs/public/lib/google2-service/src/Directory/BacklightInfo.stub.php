@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BacklightInfo extends \Google\Model
-{
-    /**
-     * Output only. Current brightness of the backlight, between 0 and
-     * max_brightness.
-     *
-     * @var int
-     */
-    public $brightness;
-    /**
-     * Output only. Maximum brightness for the backlight.
-     *
-     * @var int
-     */
-    public $maxBrightness;
-    /**
-     * Output only. Path to this backlight on the system. Useful if the caller
-     * needs to correlate with other information.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. Current brightness of the backlight, between 0 and
-     * max_brightness.
-     *
-     * @param int $brightness
-     */
-    public function setBrightness($brightness)
+namespace Google\Service\Directory {
+    class BacklightInfo extends \Google\Model
     {
+        /**
+         * Output only. Current brightness of the backlight, between 0 and
+         * max_brightness.
+         *
+         * @var int
+         */
+        public $brightness;
+        /**
+         * Output only. Maximum brightness for the backlight.
+         *
+         * @var int
+         */
+        public $maxBrightness;
+        /**
+         * Output only. Path to this backlight on the system. Useful if the caller
+         * needs to correlate with other information.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. Current brightness of the backlight, between 0 and
+         * max_brightness.
+         *
+         * @param int $brightness
+         */
+        public function setBrightness($brightness)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBrightness()
+        {
+        }
+        /**
+         * Output only. Maximum brightness for the backlight.
+         *
+         * @param int $maxBrightness
+         */
+        public function setMaxBrightness($maxBrightness)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxBrightness()
+        {
+        }
+        /**
+         * Output only. Path to this backlight on the system. Useful if the caller
+         * needs to correlate with other information.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Directory\BacklightInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrightness()
-    {
-    }
-    /**
-     * Output only. Maximum brightness for the backlight.
-     *
-     * @param int $maxBrightness
-     */
-    public function setMaxBrightness($maxBrightness)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxBrightness()
-    {
-    }
-    /**
-     * Output only. Path to this backlight on the system. Useful if the caller
-     * needs to correlate with other information.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Directory_BacklightInfo extends \Google\Service\Directory\BacklightInfo
     {
     }
 }

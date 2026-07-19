@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GlossaryTermsPair extends \Google\Model
-{
-    protected $sourceTermType = GlossaryTerm::class;
-    protected $sourceTermDataType = '';
-    protected $targetTermType = GlossaryTerm::class;
-    protected $targetTermDataType = '';
-    /**
-     * The source term is the term that will get match in the text,
-     *
-     * @param GlossaryTerm $sourceTerm
-     */
-    public function setSourceTerm(GlossaryTerm $sourceTerm)
+namespace Google\Service\Translate {
+    class GlossaryTermsPair extends \Google\Model
     {
+        protected $sourceTermType = GlossaryTerm::class;
+        protected $sourceTermDataType = '';
+        protected $targetTermType = GlossaryTerm::class;
+        protected $targetTermDataType = '';
+        /**
+         * The source term is the term that will get match in the text,
+         *
+         * @param GlossaryTerm $sourceTerm
+         */
+        public function setSourceTerm(GlossaryTerm $sourceTerm)
+        {
+        }
+        /**
+         * @return GlossaryTerm
+         */
+        public function getSourceTerm()
+        {
+        }
+        /**
+         * The term that will replace the match source term.
+         *
+         * @param GlossaryTerm $targetTerm
+         */
+        public function setTargetTerm(GlossaryTerm $targetTerm)
+        {
+        }
+        /**
+         * @return GlossaryTerm
+         */
+        public function getTargetTerm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GlossaryTerm
+     * Runtime class alias of \Google\Service\Translate\GlossaryTermsPair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceTerm()
-    {
-    }
-    /**
-     * The term that will replace the match source term.
-     *
-     * @param GlossaryTerm $targetTerm
-     */
-    public function setTargetTerm(GlossaryTerm $targetTerm)
-    {
-    }
-    /**
-     * @return GlossaryTerm
-     */
-    public function getTargetTerm()
+    class Google_Service_Translate_GlossaryTermsPair extends \Google\Service\Translate\GlossaryTermsPair
     {
     }
 }

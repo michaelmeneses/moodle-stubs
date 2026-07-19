@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedTasksAnnotationDataAssigneeChange extends \Google\Model
-{
-    protected $oldAssigneeType = UserId::class;
-    protected $oldAssigneeDataType = '';
-    /**
-     * @param UserId
-     */
-    public function setOldAssignee(UserId $oldAssignee)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedTasksAnnotationDataAssigneeChange extends \Google\Model
     {
+        protected $oldAssigneeType = UserId::class;
+        protected $oldAssigneeDataType = '';
+        /**
+         * @param UserId
+         */
+        public function setOldAssignee(UserId $oldAssignee)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getOldAssignee()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedTasksAnnotationDataAssigneeChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOldAssignee()
+    class Google_Service_CloudSearch_AppsDynamiteSharedTasksAnnotationDataAssigneeChange extends \Google\Service\CloudSearch\AppsDynamiteSharedTasksAnnotationDataAssigneeChange
     {
     }
 }

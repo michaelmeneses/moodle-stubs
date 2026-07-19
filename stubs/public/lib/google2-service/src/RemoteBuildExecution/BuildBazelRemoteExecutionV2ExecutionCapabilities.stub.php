@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ExecutionCapabilities extends \Google\Collection
-{
-    protected $collection_key = 'supportedNodeProperties';
-    public $digestFunction;
-    public $execEnabled;
-    protected $executionPriorityCapabilitiesType = BuildBazelRemoteExecutionV2PriorityCapabilities::class;
-    protected $executionPriorityCapabilitiesDataType = '';
-    public $supportedNodeProperties;
-    public function setDigestFunction($digestFunction)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ExecutionCapabilities extends \Google\Collection
     {
+        protected $collection_key = 'supportedNodeProperties';
+        public $digestFunction;
+        public $execEnabled;
+        protected $executionPriorityCapabilitiesType = BuildBazelRemoteExecutionV2PriorityCapabilities::class;
+        protected $executionPriorityCapabilitiesDataType = '';
+        public $supportedNodeProperties;
+        public function setDigestFunction($digestFunction)
+        {
+        }
+        public function getDigestFunction()
+        {
+        }
+        public function setExecEnabled($execEnabled)
+        {
+        }
+        public function getExecEnabled()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2PriorityCapabilities
+         */
+        public function setExecutionPriorityCapabilities(BuildBazelRemoteExecutionV2PriorityCapabilities $executionPriorityCapabilities)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2PriorityCapabilities
+         */
+        public function getExecutionPriorityCapabilities()
+        {
+        }
+        public function setSupportedNodeProperties($supportedNodeProperties)
+        {
+        }
+        public function getSupportedNodeProperties()
+        {
+        }
     }
-    public function getDigestFunction()
-    {
-    }
-    public function setExecEnabled($execEnabled)
-    {
-    }
-    public function getExecEnabled()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2PriorityCapabilities
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecutionCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setExecutionPriorityCapabilities(BuildBazelRemoteExecutionV2PriorityCapabilities $executionPriorityCapabilities)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2PriorityCapabilities
-     */
-    public function getExecutionPriorityCapabilities()
-    {
-    }
-    public function setSupportedNodeProperties($supportedNodeProperties)
-    {
-    }
-    public function getSupportedNodeProperties()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ExecutionCapabilities extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecutionCapabilities
     {
     }
 }

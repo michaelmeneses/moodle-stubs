@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductAmount extends \Google\Model
-{
-    protected $priceAmountType = Price::class;
-    protected $priceAmountDataType = '';
-    protected $remittedTaxAmountType = Price::class;
-    protected $remittedTaxAmountDataType = '';
-    protected $taxAmountType = Price::class;
-    protected $taxAmountDataType = '';
-    /**
-     * @param Price
-     */
-    public function setPriceAmount(Price $priceAmount)
+namespace Google\Service\ShoppingContent {
+    class ProductAmount extends \Google\Model
     {
+        protected $priceAmountType = Price::class;
+        protected $priceAmountDataType = '';
+        protected $remittedTaxAmountType = Price::class;
+        protected $remittedTaxAmountDataType = '';
+        protected $taxAmountType = Price::class;
+        protected $taxAmountDataType = '';
+        /**
+         * @param Price
+         */
+        public function setPriceAmount(Price $priceAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPriceAmount()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setRemittedTaxAmount(Price $remittedTaxAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getRemittedTaxAmount()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTaxAmount(Price $taxAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTaxAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductAmount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriceAmount()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setRemittedTaxAmount(Price $remittedTaxAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getRemittedTaxAmount()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTaxAmount(Price $taxAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTaxAmount()
+    class Google_Service_ShoppingContent_ProductAmount extends \Google\Service\ShoppingContent\ProductAmount
     {
     }
 }

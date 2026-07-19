@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstance extends \Google\Model
-{
-    protected $agentDataType = GoogleCloudAiplatformV1EvaluationInstanceAgentData::class;
-    protected $agentDataDataType = '';
-    protected $otherDataType = GoogleCloudAiplatformV1EvaluationInstanceMapInstance::class;
-    protected $otherDataDataType = '';
-    protected $promptType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
-    protected $promptDataType = '';
-    protected $referenceType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
-    protected $referenceDataType = '';
-    protected $responseType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
-    protected $responseDataType = '';
-    protected $rubricGroupsType = GoogleCloudAiplatformV1RubricGroup::class;
-    protected $rubricGroupsDataType = 'map';
-    /**
-     * Optional. Data used for agent evaluation.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceAgentData $agentData
-     */
-    public function setAgentData(GoogleCloudAiplatformV1EvaluationInstanceAgentData $agentData)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstance extends \Google\Model
     {
+        protected $agentDataType = GoogleCloudAiplatformV1EvaluationInstanceAgentData::class;
+        protected $agentDataDataType = '';
+        protected $otherDataType = GoogleCloudAiplatformV1EvaluationInstanceMapInstance::class;
+        protected $otherDataDataType = '';
+        protected $promptType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
+        protected $promptDataType = '';
+        protected $referenceType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
+        protected $referenceDataType = '';
+        protected $responseType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
+        protected $responseDataType = '';
+        protected $rubricGroupsType = GoogleCloudAiplatformV1RubricGroup::class;
+        protected $rubricGroupsDataType = 'map';
+        /**
+         * Optional. Data used for agent evaluation.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceAgentData $agentData
+         */
+        public function setAgentData(GoogleCloudAiplatformV1EvaluationInstanceAgentData $agentData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceAgentData
+         */
+        public function getAgentData()
+        {
+        }
+        /**
+         * Optional. Other data used to populate placeholders based on their key.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceMapInstance $otherData
+         */
+        public function setOtherData(GoogleCloudAiplatformV1EvaluationInstanceMapInstance $otherData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceMapInstance
+         */
+        public function getOtherData()
+        {
+        }
+        /**
+         * Optional. Data used to populate placeholder `prompt` in a metric prompt
+         * template.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $prompt
+         */
+        public function setPrompt(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $prompt)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
+         */
+        public function getPrompt()
+        {
+        }
+        /**
+         * Optional. Data used to populate placeholder `reference` in a metric prompt
+         * template.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $reference
+         */
+        public function setReference(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $reference)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
+         */
+        public function getReference()
+        {
+        }
+        /**
+         * Optional. Data used to populate placeholder `response` in a metric prompt
+         * template.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $response
+         */
+        public function setResponse(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $response)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
+         */
+        public function getResponse()
+        {
+        }
+        /**
+         * Optional. Named groups of rubrics associated with the prompt. This is used
+         * for rubric-based evaluations where rubrics can be referenced by a key. The
+         * key could represent versions, associated metrics, etc.
+         *
+         * @param GoogleCloudAiplatformV1RubricGroup[] $rubricGroups
+         */
+        public function setRubricGroups($rubricGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricGroup[]
+         */
+        public function getRubricGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceAgentData
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentData()
-    {
-    }
-    /**
-     * Optional. Other data used to populate placeholders based on their key.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceMapInstance $otherData
-     */
-    public function setOtherData(GoogleCloudAiplatformV1EvaluationInstanceMapInstance $otherData)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceMapInstance
-     */
-    public function getOtherData()
-    {
-    }
-    /**
-     * Optional. Data used to populate placeholder `prompt` in a metric prompt
-     * template.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $prompt
-     */
-    public function setPrompt(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $prompt)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
-     */
-    public function getPrompt()
-    {
-    }
-    /**
-     * Optional. Data used to populate placeholder `reference` in a metric prompt
-     * template.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $reference
-     */
-    public function setReference(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $reference)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
-     */
-    public function getReference()
-    {
-    }
-    /**
-     * Optional. Data used to populate placeholder `response` in a metric prompt
-     * template.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $response
-     */
-    public function setResponse(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $response)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
-     */
-    public function getResponse()
-    {
-    }
-    /**
-     * Optional. Named groups of rubrics associated with the prompt. This is used
-     * for rubric-based evaluations where rubrics can be referenced by a key. The
-     * key could represent versions, associated metrics, etc.
-     *
-     * @param GoogleCloudAiplatformV1RubricGroup[] $rubricGroups
-     */
-    public function setRubricGroups($rubricGroups)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricGroup[]
-     */
-    public function getRubricGroups()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstance
     {
     }
 }

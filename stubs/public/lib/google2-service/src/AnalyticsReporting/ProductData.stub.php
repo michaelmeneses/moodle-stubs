@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class ProductData extends \Google\Model
-{
-    public $itemRevenue;
-    /**
-     * @var string
-     */
-    public $productName;
-    /**
-     * @var string
-     */
-    public $productQuantity;
-    /**
-     * @var string
-     */
-    public $productSku;
-    public function setItemRevenue($itemRevenue)
+namespace Google\Service\AnalyticsReporting {
+    class ProductData extends \Google\Model
     {
+        public $itemRevenue;
+        /**
+         * @var string
+         */
+        public $productName;
+        /**
+         * @var string
+         */
+        public $productQuantity;
+        /**
+         * @var string
+         */
+        public $productSku;
+        public function setItemRevenue($itemRevenue)
+        {
+        }
+        public function getItemRevenue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductName($productName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductQuantity($productQuantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductQuantity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductSku($productSku)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductSku()
+        {
+        }
     }
-    public function getItemRevenue()
-    {
-    }
+}
+namespace {
     /**
-     * @param string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\ProductData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setProductName($productName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductQuantity($productQuantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductQuantity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductSku($productSku)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductSku()
+    class Google_Service_AnalyticsReporting_ProductData extends \Google\Service\AnalyticsReporting\ProductData
     {
     }
 }

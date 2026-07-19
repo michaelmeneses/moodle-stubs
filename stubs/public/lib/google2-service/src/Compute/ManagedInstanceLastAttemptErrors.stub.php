@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ManagedInstanceLastAttemptErrors extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = ManagedInstanceLastAttemptErrorsErrors::class;
-    protected $errorsDataType = 'array';
-    /**
-     * [Output Only] The array of errors encountered while processing this
-     * operation.
-     *
-     * @param ManagedInstanceLastAttemptErrorsErrors[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Compute {
+    class ManagedInstanceLastAttemptErrors extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = ManagedInstanceLastAttemptErrorsErrors::class;
+        protected $errorsDataType = 'array';
+        /**
+         * [Output Only] The array of errors encountered while processing this
+         * operation.
+         *
+         * @param ManagedInstanceLastAttemptErrorsErrors[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ManagedInstanceLastAttemptErrorsErrors[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedInstanceLastAttemptErrorsErrors[]
+     * Runtime class alias of \Google\Service\Compute\ManagedInstanceLastAttemptErrors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Compute_ManagedInstanceLastAttemptErrors extends \Google\Service\Compute\ManagedInstanceLastAttemptErrors
     {
     }
 }

@@ -30,6 +30,7 @@
  */
 namespace tool_brickfield\local\tool;
 
+use tool_brickfield\accessibility;
 /**
  * tool_brickfield bfpdf
  *

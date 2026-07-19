@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse extends \Google\Model
-{
-    protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $digestDataType = '';
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @param BuildBazelRemoteExecutionV2Digest
-     */
-    public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse extends \Google\Model
     {
+        protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $digestDataType = '';
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse
     {
     }
 }

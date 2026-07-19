@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class LeaseWorkItemResponse extends \Google\Collection
-{
-    protected $collection_key = 'workItems';
-    /**
-     * Untranslated bag-of-bytes WorkResponse for UnifiedWorker.
-     *
-     * @var array[]
-     */
-    public $unifiedWorkerResponse;
-    protected $workItemsType = WorkItem::class;
-    protected $workItemsDataType = 'array';
-    /**
-     * Untranslated bag-of-bytes WorkResponse for UnifiedWorker.
-     *
-     * @param array[] $unifiedWorkerResponse
-     */
-    public function setUnifiedWorkerResponse($unifiedWorkerResponse)
+namespace Google\Service\Dataflow {
+    class LeaseWorkItemResponse extends \Google\Collection
     {
+        protected $collection_key = 'workItems';
+        /**
+         * Untranslated bag-of-bytes WorkResponse for UnifiedWorker.
+         *
+         * @var array[]
+         */
+        public $unifiedWorkerResponse;
+        protected $workItemsType = WorkItem::class;
+        protected $workItemsDataType = 'array';
+        /**
+         * Untranslated bag-of-bytes WorkResponse for UnifiedWorker.
+         *
+         * @param array[] $unifiedWorkerResponse
+         */
+        public function setUnifiedWorkerResponse($unifiedWorkerResponse)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getUnifiedWorkerResponse()
+        {
+        }
+        /**
+         * A list of the leased WorkItems.
+         *
+         * @param WorkItem[] $workItems
+         */
+        public function setWorkItems($workItems)
+        {
+        }
+        /**
+         * @return WorkItem[]
+         */
+        public function getWorkItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dataflow\LeaseWorkItemResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnifiedWorkerResponse()
-    {
-    }
-    /**
-     * A list of the leased WorkItems.
-     *
-     * @param WorkItem[] $workItems
-     */
-    public function setWorkItems($workItems)
-    {
-    }
-    /**
-     * @return WorkItem[]
-     */
-    public function getWorkItems()
+    class Google_Service_Dataflow_LeaseWorkItemResponse extends \Google\Service\Dataflow\LeaseWorkItemResponse
     {
     }
 }

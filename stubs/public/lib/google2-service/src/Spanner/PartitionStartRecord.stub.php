@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class PartitionStartRecord extends \Google\Collection
-{
-    protected $collection_key = 'partitionTokens';
-    /**
-     * Unique partition identifiers to be used in queries.
-     *
-     * @var string[]
-     */
-    public $partitionTokens;
-    /**
-     * Record sequence numbers are unique and monotonically increasing (but not
-     * necessarily contiguous) for a specific timestamp across record types in the
-     * same partition. To guarantee ordered processing, the reader should process
-     * records (of potentially different types) in record_sequence order for a
-     * specific timestamp in the same partition.
-     *
-     * @var string
-     */
-    public $recordSequence;
-    /**
-     * Start timestamp at which the partitions should be queried to return change
-     * stream records with timestamps >= start_timestamp.
-     * DataChangeRecord.commit_timestamps, PartitionStartRecord.start_timestamps,
-     * PartitionEventRecord.commit_timestamps, and
-     * PartitionEndRecord.end_timestamps can have the same value in the same
-     * partition.
-     *
-     * @var string
-     */
-    public $startTimestamp;
-    /**
-     * Unique partition identifiers to be used in queries.
-     *
-     * @param string[] $partitionTokens
-     */
-    public function setPartitionTokens($partitionTokens)
+namespace Google\Service\Spanner {
+    class PartitionStartRecord extends \Google\Collection
     {
+        protected $collection_key = 'partitionTokens';
+        /**
+         * Unique partition identifiers to be used in queries.
+         *
+         * @var string[]
+         */
+        public $partitionTokens;
+        /**
+         * Record sequence numbers are unique and monotonically increasing (but not
+         * necessarily contiguous) for a specific timestamp across record types in the
+         * same partition. To guarantee ordered processing, the reader should process
+         * records (of potentially different types) in record_sequence order for a
+         * specific timestamp in the same partition.
+         *
+         * @var string
+         */
+        public $recordSequence;
+        /**
+         * Start timestamp at which the partitions should be queried to return change
+         * stream records with timestamps >= start_timestamp.
+         * DataChangeRecord.commit_timestamps, PartitionStartRecord.start_timestamps,
+         * PartitionEventRecord.commit_timestamps, and
+         * PartitionEndRecord.end_timestamps can have the same value in the same
+         * partition.
+         *
+         * @var string
+         */
+        public $startTimestamp;
+        /**
+         * Unique partition identifiers to be used in queries.
+         *
+         * @param string[] $partitionTokens
+         */
+        public function setPartitionTokens($partitionTokens)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPartitionTokens()
+        {
+        }
+        /**
+         * Record sequence numbers are unique and monotonically increasing (but not
+         * necessarily contiguous) for a specific timestamp across record types in the
+         * same partition. To guarantee ordered processing, the reader should process
+         * records (of potentially different types) in record_sequence order for a
+         * specific timestamp in the same partition.
+         *
+         * @param string $recordSequence
+         */
+        public function setRecordSequence($recordSequence)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordSequence()
+        {
+        }
+        /**
+         * Start timestamp at which the partitions should be queried to return change
+         * stream records with timestamps >= start_timestamp.
+         * DataChangeRecord.commit_timestamps, PartitionStartRecord.start_timestamps,
+         * PartitionEventRecord.commit_timestamps, and
+         * PartitionEndRecord.end_timestamps can have the same value in the same
+         * partition.
+         *
+         * @param string $startTimestamp
+         */
+        public function setStartTimestamp($startTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Spanner\PartitionStartRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitionTokens()
-    {
-    }
-    /**
-     * Record sequence numbers are unique and monotonically increasing (but not
-     * necessarily contiguous) for a specific timestamp across record types in the
-     * same partition. To guarantee ordered processing, the reader should process
-     * records (of potentially different types) in record_sequence order for a
-     * specific timestamp in the same partition.
-     *
-     * @param string $recordSequence
-     */
-    public function setRecordSequence($recordSequence)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordSequence()
-    {
-    }
-    /**
-     * Start timestamp at which the partitions should be queried to return change
-     * stream records with timestamps >= start_timestamp.
-     * DataChangeRecord.commit_timestamps, PartitionStartRecord.start_timestamps,
-     * PartitionEventRecord.commit_timestamps, and
-     * PartitionEndRecord.end_timestamps can have the same value in the same
-     * partition.
-     *
-     * @param string $startTimestamp
-     */
-    public function setStartTimestamp($startTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimestamp()
+    class Google_Service_Spanner_PartitionStartRecord extends \Google\Service\Spanner\PartitionStartRecord
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class CloudBuildSpec extends \Google\Model
-{
-    /**
-     * Unspecified policy
-     */
-    public const SECURITY_POLICY_SECURITY_POLICY_UNSPECIFIED = 'SECURITY_POLICY_UNSPECIFIED';
-    /**
-     * Privileged build pods are disallowed
-     */
-    public const SECURITY_POLICY_NON_PRIVILEGED = 'NON_PRIVILEGED';
-    /**
-     * Privileged build pods are allowed
-     */
-    public const SECURITY_POLICY_PRIVILEGED = 'PRIVILEGED';
-    /**
-     * Whether it is allowed to run the privileged builds on the cluster or not.
-     *
-     * @var string
-     */
-    public $securityPolicy;
-    /**
-     * Version of the cloud build software on the cluster.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Whether it is allowed to run the privileged builds on the cluster or not.
-     *
-     * Accepted values: SECURITY_POLICY_UNSPECIFIED, NON_PRIVILEGED, PRIVILEGED
-     *
-     * @param self::SECURITY_POLICY_* $securityPolicy
-     */
-    public function setSecurityPolicy($securityPolicy)
+namespace Google\Service\GKEHub {
+    class CloudBuildSpec extends \Google\Model
     {
+        /**
+         * Unspecified policy
+         */
+        public const SECURITY_POLICY_SECURITY_POLICY_UNSPECIFIED = 'SECURITY_POLICY_UNSPECIFIED';
+        /**
+         * Privileged build pods are disallowed
+         */
+        public const SECURITY_POLICY_NON_PRIVILEGED = 'NON_PRIVILEGED';
+        /**
+         * Privileged build pods are allowed
+         */
+        public const SECURITY_POLICY_PRIVILEGED = 'PRIVILEGED';
+        /**
+         * Whether it is allowed to run the privileged builds on the cluster or not.
+         *
+         * @var string
+         */
+        public $securityPolicy;
+        /**
+         * Version of the cloud build software on the cluster.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Whether it is allowed to run the privileged builds on the cluster or not.
+         *
+         * Accepted values: SECURITY_POLICY_UNSPECIFIED, NON_PRIVILEGED, PRIVILEGED
+         *
+         * @param self::SECURITY_POLICY_* $securityPolicy
+         */
+        public function setSecurityPolicy($securityPolicy)
+        {
+        }
+        /**
+         * @return self::SECURITY_POLICY_*
+         */
+        public function getSecurityPolicy()
+        {
+        }
+        /**
+         * Version of the cloud build software on the cluster.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SECURITY_POLICY_*
+     * Runtime class alias of \Google\Service\GKEHub\CloudBuildSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityPolicy()
-    {
-    }
-    /**
-     * Version of the cloud build software on the cluster.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_CloudBuildSpec extends \Google\Service\GKEHub\CloudBuildSpec
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class PrivateClusterConfig extends \Google\Model
-{
-    /**
-     * Optional. If `true`, access to the public endpoint of the GKE cluster is
-     * denied.
-     *
-     * @var bool
-     */
-    public $enablePrivateEndpoint;
-    /**
-     * Optional. The CIDR block from which IPv4 range for GKE master will be
-     * reserved. If left blank, the default value of '172.16.0.0/23' is used.
-     *
-     * @var string
-     */
-    public $masterIpv4CidrBlock;
-    /**
-     * Output only. The IP range in CIDR notation to use for the hosted master
-     * network. This range is used for assigning internal IP addresses to the GKE
-     * cluster master or set of masters and to the internal load balancer virtual
-     * IP. This range must not overlap with any other ranges in use within the
-     * cluster's network.
-     *
-     * @var string
-     */
-    public $masterIpv4ReservedRange;
-    /**
-     * Optional. If `true`, access to the public endpoint of the GKE cluster is
-     * denied.
-     *
-     * @param bool $enablePrivateEndpoint
-     */
-    public function setEnablePrivateEndpoint($enablePrivateEndpoint)
+namespace Google\Service\CloudComposer {
+    class PrivateClusterConfig extends \Google\Model
     {
+        /**
+         * Optional. If `true`, access to the public endpoint of the GKE cluster is
+         * denied.
+         *
+         * @var bool
+         */
+        public $enablePrivateEndpoint;
+        /**
+         * Optional. The CIDR block from which IPv4 range for GKE master will be
+         * reserved. If left blank, the default value of '172.16.0.0/23' is used.
+         *
+         * @var string
+         */
+        public $masterIpv4CidrBlock;
+        /**
+         * Output only. The IP range in CIDR notation to use for the hosted master
+         * network. This range is used for assigning internal IP addresses to the GKE
+         * cluster master or set of masters and to the internal load balancer virtual
+         * IP. This range must not overlap with any other ranges in use within the
+         * cluster's network.
+         *
+         * @var string
+         */
+        public $masterIpv4ReservedRange;
+        /**
+         * Optional. If `true`, access to the public endpoint of the GKE cluster is
+         * denied.
+         *
+         * @param bool $enablePrivateEndpoint
+         */
+        public function setEnablePrivateEndpoint($enablePrivateEndpoint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePrivateEndpoint()
+        {
+        }
+        /**
+         * Optional. The CIDR block from which IPv4 range for GKE master will be
+         * reserved. If left blank, the default value of '172.16.0.0/23' is used.
+         *
+         * @param string $masterIpv4CidrBlock
+         */
+        public function setMasterIpv4CidrBlock($masterIpv4CidrBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterIpv4CidrBlock()
+        {
+        }
+        /**
+         * Output only. The IP range in CIDR notation to use for the hosted master
+         * network. This range is used for assigning internal IP addresses to the GKE
+         * cluster master or set of masters and to the internal load balancer virtual
+         * IP. This range must not overlap with any other ranges in use within the
+         * cluster's network.
+         *
+         * @param string $masterIpv4ReservedRange
+         */
+        public function setMasterIpv4ReservedRange($masterIpv4ReservedRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterIpv4ReservedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudComposer\PrivateClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablePrivateEndpoint()
-    {
-    }
-    /**
-     * Optional. The CIDR block from which IPv4 range for GKE master will be
-     * reserved. If left blank, the default value of '172.16.0.0/23' is used.
-     *
-     * @param string $masterIpv4CidrBlock
-     */
-    public function setMasterIpv4CidrBlock($masterIpv4CidrBlock)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterIpv4CidrBlock()
-    {
-    }
-    /**
-     * Output only. The IP range in CIDR notation to use for the hosted master
-     * network. This range is used for assigning internal IP addresses to the GKE
-     * cluster master or set of masters and to the internal load balancer virtual
-     * IP. This range must not overlap with any other ranges in use within the
-     * cluster's network.
-     *
-     * @param string $masterIpv4ReservedRange
-     */
-    public function setMasterIpv4ReservedRange($masterIpv4ReservedRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterIpv4ReservedRange()
+    class Google_Service_CloudComposer_PrivateClusterConfig extends \Google\Service\CloudComposer\PrivateClusterConfig
     {
     }
 }

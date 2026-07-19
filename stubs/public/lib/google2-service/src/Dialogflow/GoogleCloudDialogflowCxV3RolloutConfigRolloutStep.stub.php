@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RolloutConfigRolloutStep extends \Google\Model
-{
-    /**
-     * The name of the rollout step;
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The minimum time that this step should last. Should be longer than 1 hour.
-     * If not set, the default minimum duration for each step will be 1 hour.
-     *
-     * @var string
-     */
-    public $minDuration;
-    /**
-     * The percentage of traffic allocated to the flow version of this rollout
-     * step. (0%, 100%].
-     *
-     * @var int
-     */
-    public $trafficPercent;
-    /**
-     * The name of the rollout step;
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RolloutConfigRolloutStep extends \Google\Model
     {
+        /**
+         * The name of the rollout step;
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The minimum time that this step should last. Should be longer than 1 hour.
+         * If not set, the default minimum duration for each step will be 1 hour.
+         *
+         * @var string
+         */
+        public $minDuration;
+        /**
+         * The percentage of traffic allocated to the flow version of this rollout
+         * step. (0%, 100%].
+         *
+         * @var int
+         */
+        public $trafficPercent;
+        /**
+         * The name of the rollout step;
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The minimum time that this step should last. Should be longer than 1 hour.
+         * If not set, the default minimum duration for each step will be 1 hour.
+         *
+         * @param string $minDuration
+         */
+        public function setMinDuration($minDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinDuration()
+        {
+        }
+        /**
+         * The percentage of traffic allocated to the flow version of this rollout
+         * step. (0%, 100%].
+         *
+         * @param int $trafficPercent
+         */
+        public function setTrafficPercent($trafficPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrafficPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RolloutConfigRolloutStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The minimum time that this step should last. Should be longer than 1 hour.
-     * If not set, the default minimum duration for each step will be 1 hour.
-     *
-     * @param string $minDuration
-     */
-    public function setMinDuration($minDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinDuration()
-    {
-    }
-    /**
-     * The percentage of traffic allocated to the flow version of this rollout
-     * step. (0%, 100%].
-     *
-     * @param int $trafficPercent
-     */
-    public function setTrafficPercent($trafficPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrafficPercent()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RolloutConfigRolloutStep extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RolloutConfigRolloutStep
     {
     }
 }

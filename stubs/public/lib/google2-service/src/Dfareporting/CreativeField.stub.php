@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeField extends \Google\Model
-{
-    /**
-     * Account ID of this creative field. This is a read-only field that can be
-     * left blank.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Advertiser ID of this creative field. This is a required field on
-     * insertion.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $advertiserIdDimensionValueType = DimensionValue::class;
-    protected $advertiserIdDimensionValueDataType = '';
-    /**
-     * ID of this creative field. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeField".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this creative field. This is a required field and must be less than
-     * 256 characters long and unique among creative fields of the same
-     * advertiser.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Subaccount ID of this creative field. This is a read-only field that can be
-     * left blank.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * Account ID of this creative field. This is a read-only field that can be
-     * left blank.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class CreativeField extends \Google\Model
     {
+        /**
+         * Account ID of this creative field. This is a read-only field that can be
+         * left blank.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Advertiser ID of this creative field. This is a required field on
+         * insertion.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $advertiserIdDimensionValueType = DimensionValue::class;
+        protected $advertiserIdDimensionValueDataType = '';
+        /**
+         * ID of this creative field. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeField".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this creative field. This is a required field and must be less than
+         * 256 characters long and unique among creative fields of the same
+         * advertiser.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Subaccount ID of this creative field. This is a read-only field that can be
+         * left blank.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * Account ID of this creative field. This is a read-only field that can be
+         * left blank.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Advertiser ID of this creative field. This is a required field on
+         * insertion.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the advertiser. This is a read-only, auto-
+         * generated field.
+         *
+         * @param DimensionValue $advertiserIdDimensionValue
+         */
+        public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getAdvertiserIdDimensionValue()
+        {
+        }
+        /**
+         * ID of this creative field. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeField".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this creative field. This is a required field and must be less than
+         * 256 characters long and unique among creative fields of the same
+         * advertiser.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Subaccount ID of this creative field. This is a read-only field that can be
+         * left blank.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Advertiser ID of this creative field. This is a required field on
-     * insertion.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the advertiser. This is a read-only, auto-
-     * generated field.
-     *
-     * @param DimensionValue $advertiserIdDimensionValue
-     */
-    public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getAdvertiserIdDimensionValue()
-    {
-    }
-    /**
-     * ID of this creative field. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeField".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this creative field. This is a required field and must be less than
-     * 256 characters long and unique among creative fields of the same
-     * advertiser.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Subaccount ID of this creative field. This is a read-only field that can be
-     * left blank.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
+    class Google_Service_Dfareporting_CreativeField extends \Google\Service\Dfareporting\CreativeField
     {
     }
 }

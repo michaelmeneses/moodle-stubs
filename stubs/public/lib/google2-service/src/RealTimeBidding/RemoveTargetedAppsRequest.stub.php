@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class RemoveTargetedAppsRequest extends \Google\Collection
-{
-    protected $collection_key = 'appIds';
-    /**
-     * A list of app IDs to stop targeting in the pretargeting configuration.
-     * These values will be removed from the list of targeted app IDs in
-     * PretargetingConfig.appTargeting.mobileAppTargeting.values.
-     *
-     * @var string[]
-     */
-    public $appIds;
-    /**
-     * A list of app IDs to stop targeting in the pretargeting configuration.
-     * These values will be removed from the list of targeted app IDs in
-     * PretargetingConfig.appTargeting.mobileAppTargeting.values.
-     *
-     * @param string[] $appIds
-     */
-    public function setAppIds($appIds)
+namespace Google\Service\RealTimeBidding {
+    class RemoveTargetedAppsRequest extends \Google\Collection
     {
+        protected $collection_key = 'appIds';
+        /**
+         * A list of app IDs to stop targeting in the pretargeting configuration.
+         * These values will be removed from the list of targeted app IDs in
+         * PretargetingConfig.appTargeting.mobileAppTargeting.values.
+         *
+         * @var string[]
+         */
+        public $appIds;
+        /**
+         * A list of app IDs to stop targeting in the pretargeting configuration.
+         * These values will be removed from the list of targeted app IDs in
+         * PretargetingConfig.appTargeting.mobileAppTargeting.values.
+         *
+         * @param string[] $appIds
+         */
+        public function setAppIds($appIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAppIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\RemoveTargetedAppsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppIds()
+    class Google_Service_RealTimeBidding_RemoveTargetedAppsRequest extends \Google\Service\RealTimeBidding\RemoveTargetedAppsRequest
     {
     }
 }

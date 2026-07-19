@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2LabelSegment extends \Google\Model
-{
-    /**
-     * Confidence that the label is accurate. Range: [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $segmentType = GoogleCloudVideointelligenceV1beta2VideoSegment::class;
-    protected $segmentDataType = '';
-    /**
-     * Confidence that the label is accurate. Range: [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2LabelSegment extends \Google\Model
     {
+        /**
+         * Confidence that the label is accurate. Range: [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $segmentType = GoogleCloudVideointelligenceV1beta2VideoSegment::class;
+        protected $segmentDataType = '';
+        /**
+         * Confidence that the label is accurate. Range: [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Video segment where a label was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2VideoSegment $segment
+         */
+        public function setSegment(GoogleCloudVideointelligenceV1beta2VideoSegment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2VideoSegment
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2LabelSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Video segment where a label was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2VideoSegment $segment
-     */
-    public function setSegment(GoogleCloudVideointelligenceV1beta2VideoSegment $segment)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1beta2VideoSegment
-     */
-    public function getSegment()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2LabelSegment extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2LabelSegment
     {
     }
 }

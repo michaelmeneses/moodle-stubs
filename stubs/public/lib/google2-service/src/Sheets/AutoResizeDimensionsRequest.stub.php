@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AutoResizeDimensionsRequest extends \Google\Model
-{
-    protected $dataSourceSheetDimensionsType = DataSourceSheetDimensionRange::class;
-    protected $dataSourceSheetDimensionsDataType = '';
-    protected $dimensionsType = DimensionRange::class;
-    protected $dimensionsDataType = '';
-    /**
-     * The dimensions on a data source sheet to automatically resize.
-     *
-     * @param DataSourceSheetDimensionRange $dataSourceSheetDimensions
-     */
-    public function setDataSourceSheetDimensions(DataSourceSheetDimensionRange $dataSourceSheetDimensions)
+namespace Google\Service\Sheets {
+    class AutoResizeDimensionsRequest extends \Google\Model
     {
+        protected $dataSourceSheetDimensionsType = DataSourceSheetDimensionRange::class;
+        protected $dataSourceSheetDimensionsDataType = '';
+        protected $dimensionsType = DimensionRange::class;
+        protected $dimensionsDataType = '';
+        /**
+         * The dimensions on a data source sheet to automatically resize.
+         *
+         * @param DataSourceSheetDimensionRange $dataSourceSheetDimensions
+         */
+        public function setDataSourceSheetDimensions(DataSourceSheetDimensionRange $dataSourceSheetDimensions)
+        {
+        }
+        /**
+         * @return DataSourceSheetDimensionRange
+         */
+        public function getDataSourceSheetDimensions()
+        {
+        }
+        /**
+         * The dimensions to automatically resize.
+         *
+         * @param DimensionRange $dimensions
+         */
+        public function setDimensions(DimensionRange $dimensions)
+        {
+        }
+        /**
+         * @return DimensionRange
+         */
+        public function getDimensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceSheetDimensionRange
+     * Runtime class alias of \Google\Service\Sheets\AutoResizeDimensionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceSheetDimensions()
-    {
-    }
-    /**
-     * The dimensions to automatically resize.
-     *
-     * @param DimensionRange $dimensions
-     */
-    public function setDimensions(DimensionRange $dimensions)
-    {
-    }
-    /**
-     * @return DimensionRange
-     */
-    public function getDimensions()
+    class Google_Service_Sheets_AutoResizeDimensionsRequest extends \Google\Service\Sheets\AutoResizeDimensionsRequest
     {
     }
 }

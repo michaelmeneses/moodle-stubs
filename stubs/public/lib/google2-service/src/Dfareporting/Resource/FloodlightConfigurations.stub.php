@@ -21,70 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "floodlightConfigurations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $floodlightConfigurations = $dfareportingService->floodlightConfigurations;
- *  </code>
- */
-class FloodlightConfigurations extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\FloodlightConfiguration;
+    use Google\Service\Dfareporting\FloodlightConfigurationsListResponse;
     /**
-     * Gets one floodlight configuration by ID. (floodlightConfigurations.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Floodlight configuration ID.
-     * @param array $optParams Optional parameters.
-     * @return FloodlightConfiguration
-     * @throws \Google\Service\Exception
+     * The "floodlightConfigurations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $floodlightConfigurations = $dfareportingService->floodlightConfigurations;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class FloodlightConfigurations extends \Google\Service\Resource
     {
+        /**
+         * Gets one floodlight configuration by ID. (floodlightConfigurations.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Floodlight configuration ID.
+         * @param array $optParams Optional parameters.
+         * @return FloodlightConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of floodlight configurations, possibly filtered.
+         * (floodlightConfigurations.listFloodlightConfigurations)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ids Set of IDs of floodlight configurations to retrieve.
+         * Required field; otherwise an empty list will be returned.
+         * @return FloodlightConfigurationsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listFloodlightConfigurations($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing floodlight configuration. This method supports patch
+         * semantics. (floodlightConfigurations.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Required. EventTag ID.
+         * @param FloodlightConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return FloodlightConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, FloodlightConfiguration $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing floodlight configuration.
+         * (floodlightConfigurations.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param FloodlightConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return FloodlightConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, FloodlightConfiguration $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of floodlight configurations, possibly filtered.
-     * (floodlightConfigurations.listFloodlightConfigurations)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ids Set of IDs of floodlight configurations to retrieve.
-     * Required field; otherwise an empty list will be returned.
-     * @return FloodlightConfigurationsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\FloodlightConfigurations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listFloodlightConfigurations($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing floodlight configuration. This method supports patch
-     * semantics. (floodlightConfigurations.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Required. EventTag ID.
-     * @param FloodlightConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return FloodlightConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function patch($profileId, $id, FloodlightConfiguration $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing floodlight configuration.
-     * (floodlightConfigurations.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param FloodlightConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return FloodlightConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, FloodlightConfiguration $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_FloodlightConfigurations extends \Google\Service\Dfareporting\Resource\FloodlightConfigurations
     {
     }
 }

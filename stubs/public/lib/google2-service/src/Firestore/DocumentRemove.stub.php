@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class DocumentRemove extends \Google\Collection
-{
-    protected $collection_key = 'removedTargetIds';
-    /**
-     * The resource name of the Document that has gone out of view.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * The read timestamp at which the remove was observed. Greater or equal to
-     * the `commit_time` of the change/delete/remove.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * A set of target IDs for targets that previously matched this document.
-     *
-     * @var int[]
-     */
-    public $removedTargetIds;
-    /**
-     * The resource name of the Document that has gone out of view.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\Firestore {
+    class DocumentRemove extends \Google\Collection
     {
+        protected $collection_key = 'removedTargetIds';
+        /**
+         * The resource name of the Document that has gone out of view.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * The read timestamp at which the remove was observed. Greater or equal to
+         * the `commit_time` of the change/delete/remove.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * A set of target IDs for targets that previously matched this document.
+         *
+         * @var int[]
+         */
+        public $removedTargetIds;
+        /**
+         * The resource name of the Document that has gone out of view.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * The read timestamp at which the remove was observed. Greater or equal to
+         * the `commit_time` of the change/delete/remove.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * A set of target IDs for targets that previously matched this document.
+         *
+         * @param int[] $removedTargetIds
+         */
+        public function setRemovedTargetIds($removedTargetIds)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getRemovedTargetIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\DocumentRemove registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * The read timestamp at which the remove was observed. Greater or equal to
-     * the `commit_time` of the change/delete/remove.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * A set of target IDs for targets that previously matched this document.
-     *
-     * @param int[] $removedTargetIds
-     */
-    public function setRemovedTargetIds($removedTargetIds)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getRemovedTargetIds()
+    class Google_Service_Firestore_DocumentRemove extends \Google\Service\Firestore\DocumentRemove
     {
     }
 }

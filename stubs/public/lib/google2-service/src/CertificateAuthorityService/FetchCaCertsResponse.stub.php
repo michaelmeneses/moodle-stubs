@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class FetchCaCertsResponse extends \Google\Collection
-{
-    protected $collection_key = 'caCerts';
-    protected $caCertsType = CertChain::class;
-    protected $caCertsDataType = 'array';
-    /**
-     * The PEM encoded CA certificate chains of all certificate authorities in
-     * this CaPool in the ENABLED, DISABLED, or STAGED states.
-     *
-     * @param CertChain[] $caCerts
-     */
-    public function setCaCerts($caCerts)
+namespace Google\Service\CertificateAuthorityService {
+    class FetchCaCertsResponse extends \Google\Collection
     {
+        protected $collection_key = 'caCerts';
+        protected $caCertsType = CertChain::class;
+        protected $caCertsDataType = 'array';
+        /**
+         * The PEM encoded CA certificate chains of all certificate authorities in
+         * this CaPool in the ENABLED, DISABLED, or STAGED states.
+         *
+         * @param CertChain[] $caCerts
+         */
+        public function setCaCerts($caCerts)
+        {
+        }
+        /**
+         * @return CertChain[]
+         */
+        public function getCaCerts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertChain[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\FetchCaCertsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCerts()
+    class Google_Service_CertificateAuthorityService_FetchCaCertsResponse extends \Google\Service\CertificateAuthorityService\FetchCaCertsResponse
     {
     }
 }

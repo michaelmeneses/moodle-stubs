@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartySignOutUserRequest extends \Google\Model
-{
-    /**
-     * Instance id token of the app.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * The local ID of the user.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * Instance id token of the app.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartySignOutUserRequest extends \Google\Model
     {
+        /**
+         * Instance id token of the app.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * The local ID of the user.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * Instance id token of the app.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * The local ID of the user.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignOutUserRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * The local ID of the user.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignOutUserRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignOutUserRequest
     {
     }
 }

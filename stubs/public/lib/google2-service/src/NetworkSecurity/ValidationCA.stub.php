@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ValidationCA extends \Google\Model
-{
-    protected $certificateProviderInstanceType = CertificateProviderInstance::class;
-    protected $certificateProviderInstanceDataType = '';
-    protected $grpcEndpointType = GoogleCloudNetworksecurityV1GrpcEndpoint::class;
-    protected $grpcEndpointDataType = '';
-    /**
-     * The certificate provider instance specification that will be passed to the
-     * data plane, which will be used to load necessary credential information.
-     *
-     * @param CertificateProviderInstance $certificateProviderInstance
-     */
-    public function setCertificateProviderInstance(CertificateProviderInstance $certificateProviderInstance)
+namespace Google\Service\NetworkSecurity {
+    class ValidationCA extends \Google\Model
     {
+        protected $certificateProviderInstanceType = CertificateProviderInstance::class;
+        protected $certificateProviderInstanceDataType = '';
+        protected $grpcEndpointType = GoogleCloudNetworksecurityV1GrpcEndpoint::class;
+        protected $grpcEndpointDataType = '';
+        /**
+         * The certificate provider instance specification that will be passed to the
+         * data plane, which will be used to load necessary credential information.
+         *
+         * @param CertificateProviderInstance $certificateProviderInstance
+         */
+        public function setCertificateProviderInstance(CertificateProviderInstance $certificateProviderInstance)
+        {
+        }
+        /**
+         * @return CertificateProviderInstance
+         */
+        public function getCertificateProviderInstance()
+        {
+        }
+        /**
+         * gRPC specific configuration to access the gRPC server to obtain the CA
+         * certificate.
+         *
+         * @param GoogleCloudNetworksecurityV1GrpcEndpoint $grpcEndpoint
+         */
+        public function setGrpcEndpoint(GoogleCloudNetworksecurityV1GrpcEndpoint $grpcEndpoint)
+        {
+        }
+        /**
+         * @return GoogleCloudNetworksecurityV1GrpcEndpoint
+         */
+        public function getGrpcEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateProviderInstance
+     * Runtime class alias of \Google\Service\NetworkSecurity\ValidationCA registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateProviderInstance()
-    {
-    }
-    /**
-     * gRPC specific configuration to access the gRPC server to obtain the CA
-     * certificate.
-     *
-     * @param GoogleCloudNetworksecurityV1GrpcEndpoint $grpcEndpoint
-     */
-    public function setGrpcEndpoint(GoogleCloudNetworksecurityV1GrpcEndpoint $grpcEndpoint)
-    {
-    }
-    /**
-     * @return GoogleCloudNetworksecurityV1GrpcEndpoint
-     */
-    public function getGrpcEndpoint()
+    class Google_Service_NetworkSecurity_ValidationCA extends \Google\Service\NetworkSecurity\ValidationCA
     {
     }
 }

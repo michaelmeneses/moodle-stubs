@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementBinauthzVersion extends \Google\Model
-{
-    /**
-     * The version of the binauthz webhook.
-     *
-     * @var string
-     */
-    public $webhookVersion;
-    /**
-     * The version of the binauthz webhook.
-     *
-     * @param string $webhookVersion
-     */
-    public function setWebhookVersion($webhookVersion)
+namespace Google\Service\GKEHub {
+    class ConfigManagementBinauthzVersion extends \Google\Model
     {
+        /**
+         * The version of the binauthz webhook.
+         *
+         * @var string
+         */
+        public $webhookVersion;
+        /**
+         * The version of the binauthz webhook.
+         *
+         * @param string $webhookVersion
+         */
+        public function setWebhookVersion($webhookVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementBinauthzVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebhookVersion()
+    class Google_Service_GKEHub_ConfigManagementBinauthzVersion extends \Google\Service\GKEHub\ConfigManagementBinauthzVersion
     {
     }
 }

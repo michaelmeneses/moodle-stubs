@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1TextSegment extends \Google\Collection
-{
-    protected $collection_key = 'frames';
-    /**
-     * Confidence for the track of detected text. It is calculated as the highest
-     * over all frames where OCR detected text appears.
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $framesType = GoogleCloudVideointelligenceV1TextFrame::class;
-    protected $framesDataType = 'array';
-    protected $segmentType = GoogleCloudVideointelligenceV1VideoSegment::class;
-    protected $segmentDataType = '';
-    /**
-     * Confidence for the track of detected text. It is calculated as the highest
-     * over all frames where OCR detected text appears.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1TextSegment extends \Google\Collection
     {
+        protected $collection_key = 'frames';
+        /**
+         * Confidence for the track of detected text. It is calculated as the highest
+         * over all frames where OCR detected text appears.
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $framesType = GoogleCloudVideointelligenceV1TextFrame::class;
+        protected $framesDataType = 'array';
+        protected $segmentType = GoogleCloudVideointelligenceV1VideoSegment::class;
+        protected $segmentDataType = '';
+        /**
+         * Confidence for the track of detected text. It is calculated as the highest
+         * over all frames where OCR detected text appears.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Information related to the frames where OCR detected text appears.
+         *
+         * @param GoogleCloudVideointelligenceV1TextFrame[] $frames
+         */
+        public function setFrames($frames)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1TextFrame[]
+         */
+        public function getFrames()
+        {
+        }
+        /**
+         * Video segment where a text snippet was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1VideoSegment $segment
+         */
+        public function setSegment(GoogleCloudVideointelligenceV1VideoSegment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1VideoSegment
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1TextSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Information related to the frames where OCR detected text appears.
-     *
-     * @param GoogleCloudVideointelligenceV1TextFrame[] $frames
-     */
-    public function setFrames($frames)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1TextFrame[]
-     */
-    public function getFrames()
-    {
-    }
-    /**
-     * Video segment where a text snippet was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1VideoSegment $segment
-     */
-    public function setSegment(GoogleCloudVideointelligenceV1VideoSegment $segment)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1VideoSegment
-     */
-    public function getSegment()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1TextSegment extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1TextSegment
     {
     }
 }

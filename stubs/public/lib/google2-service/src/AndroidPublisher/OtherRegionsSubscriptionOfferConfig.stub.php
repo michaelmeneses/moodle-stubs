@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OtherRegionsSubscriptionOfferConfig extends \Google\Model
-{
-    /**
-     * Whether the subscription offer in any new locations Play may launch in the
-     * future. If not specified, this will default to false.
-     *
-     * @var bool
-     */
-    public $otherRegionsNewSubscriberAvailability;
-    /**
-     * Whether the subscription offer in any new locations Play may launch in the
-     * future. If not specified, this will default to false.
-     *
-     * @param bool $otherRegionsNewSubscriberAvailability
-     */
-    public function setOtherRegionsNewSubscriberAvailability($otherRegionsNewSubscriberAvailability)
+namespace Google\Service\AndroidPublisher {
+    class OtherRegionsSubscriptionOfferConfig extends \Google\Model
     {
+        /**
+         * Whether the subscription offer in any new locations Play may launch in the
+         * future. If not specified, this will default to false.
+         *
+         * @var bool
+         */
+        public $otherRegionsNewSubscriberAvailability;
+        /**
+         * Whether the subscription offer in any new locations Play may launch in the
+         * future. If not specified, this will default to false.
+         *
+         * @param bool $otherRegionsNewSubscriberAvailability
+         */
+        public function setOtherRegionsNewSubscriberAvailability($otherRegionsNewSubscriberAvailability)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOtherRegionsNewSubscriberAvailability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\OtherRegionsSubscriptionOfferConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOtherRegionsNewSubscriberAvailability()
+    class Google_Service_AndroidPublisher_OtherRegionsSubscriptionOfferConfig extends \Google\Service\AndroidPublisher\OtherRegionsSubscriptionOfferConfig
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse extends \Google\Model
-{
-    /**
-     * Number of user events that were joined with latest catalog items.
-     *
-     * @var string
-     */
-    public $rejoinedUserEventsCount;
-    /**
-     * Number of user events that were joined with latest catalog items.
-     *
-     * @param string $rejoinedUserEventsCount
-     */
-    public function setRejoinedUserEventsCount($rejoinedUserEventsCount)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse extends \Google\Model
     {
+        /**
+         * Number of user events that were joined with latest catalog items.
+         *
+         * @var string
+         */
+        public $rejoinedUserEventsCount;
+        /**
+         * Number of user events that were joined with latest catalog items.
+         *
+         * @param string $rejoinedUserEventsCount
+         */
+        public function setRejoinedUserEventsCount($rejoinedUserEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRejoinedUserEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRejoinedUserEventsCount()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse
     {
     }
 }

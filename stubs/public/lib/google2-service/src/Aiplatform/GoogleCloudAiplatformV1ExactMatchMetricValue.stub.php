@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExactMatchMetricValue extends \Google\Model
-{
-    /**
-     * Output only. Exact match score.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. Exact match score.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExactMatchMetricValue extends \Google\Model
     {
+        /**
+         * Output only. Exact match score.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. Exact match score.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExactMatchMetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExactMatchMetricValue extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExactMatchMetricValue
     {
     }
 }

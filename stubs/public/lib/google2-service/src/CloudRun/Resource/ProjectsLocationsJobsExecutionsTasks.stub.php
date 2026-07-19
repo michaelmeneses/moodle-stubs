@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "tasks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $tasks = $runService->projects_locations_jobs_executions_tasks;
- *  </code>
- */
-class ProjectsLocationsJobsExecutionsTasks extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\GoogleCloudRunV2ListTasksResponse;
+    use Google\Service\CloudRun\GoogleCloudRunV2Task;
     /**
-     * Gets information about a Task. (tasks.get)
-     *
-     * @param string $name Required. The full name of the Task. Format: projects/{pr
-     * oject}/locations/{location}/jobs/{job}/executions/{execution}/tasks/{task}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2Task
-     * @throws \Google\Service\Exception
+     * The "tasks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $tasks = $runService->projects_locations_jobs_executions_tasks;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsJobsExecutionsTasks extends \Google\Service\Resource
     {
+        /**
+         * Gets information about a Task. (tasks.get)
+         *
+         * @param string $name Required. The full name of the Task. Format: projects/{pr
+         * oject}/locations/{location}/jobs/{job}/executions/{execution}/tasks/{task}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2Task
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Tasks from an Execution of a Job.
+         * (tasks.listProjectsLocationsJobsExecutionsTasks)
+         *
+         * @param string $parent Required. The Execution from which the Tasks should be
+         * listed. To list all Tasks across Executions of a Job, use "-" instead of
+         * Execution name. To list all Tasks across Jobs, use "-" instead of Job name.
+         * Format:
+         * projects/{project}/locations/{location}/jobs/{job}/executions/{execution}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of Tasks to return in this call.
+         * @opt_param string pageToken A page token received from a previous call to
+         * ListTasks. All other parameters must match.
+         * @opt_param bool showDeleted If true, returns deleted (but unexpired)
+         * resources along with active ones.
+         * @return GoogleCloudRunV2ListTasksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsJobsExecutionsTasks($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Tasks from an Execution of a Job.
-     * (tasks.listProjectsLocationsJobsExecutionsTasks)
-     *
-     * @param string $parent Required. The Execution from which the Tasks should be
-     * listed. To list all Tasks across Executions of a Job, use "-" instead of
-     * Execution name. To list all Tasks across Jobs, use "-" instead of Job name.
-     * Format:
-     * projects/{project}/locations/{location}/jobs/{job}/executions/{execution}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of Tasks to return in this call.
-     * @opt_param string pageToken A page token received from a previous call to
-     * ListTasks. All other parameters must match.
-     * @opt_param bool showDeleted If true, returns deleted (but unexpired)
-     * resources along with active ones.
-     * @return GoogleCloudRunV2ListTasksResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudRun\Resource\ProjectsLocationsJobsExecutionsTasks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsJobsExecutionsTasks($parent, $optParams = [])
+    class Google_Service_CloudRun_Resource_ProjectsLocationsJobsExecutionsTasks extends \Google\Service\CloudRun\Resource\ProjectsLocationsJobsExecutionsTasks
     {
     }
 }

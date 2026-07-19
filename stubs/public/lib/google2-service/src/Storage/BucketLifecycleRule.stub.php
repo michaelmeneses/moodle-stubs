@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketLifecycleRule extends \Google\Model
-{
-    protected $actionType = BucketLifecycleRuleAction::class;
-    protected $actionDataType = '';
-    protected $conditionType = BucketLifecycleRuleCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * The action to take.
-     *
-     * @param BucketLifecycleRuleAction $action
-     */
-    public function setAction(BucketLifecycleRuleAction $action)
+namespace Google\Service\Storage {
+    class BucketLifecycleRule extends \Google\Model
     {
+        protected $actionType = BucketLifecycleRuleAction::class;
+        protected $actionDataType = '';
+        protected $conditionType = BucketLifecycleRuleCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * The action to take.
+         *
+         * @param BucketLifecycleRuleAction $action
+         */
+        public function setAction(BucketLifecycleRuleAction $action)
+        {
+        }
+        /**
+         * @return BucketLifecycleRuleAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The condition(s) under which the action will be taken.
+         *
+         * @param BucketLifecycleRuleCondition $condition
+         */
+        public function setCondition(BucketLifecycleRuleCondition $condition)
+        {
+        }
+        /**
+         * @return BucketLifecycleRuleCondition
+         */
+        public function getCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BucketLifecycleRuleAction
+     * Runtime class alias of \Google\Service\Storage\BucketLifecycleRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The condition(s) under which the action will be taken.
-     *
-     * @param BucketLifecycleRuleCondition $condition
-     */
-    public function setCondition(BucketLifecycleRuleCondition $condition)
-    {
-    }
-    /**
-     * @return BucketLifecycleRuleCondition
-     */
-    public function getCondition()
+    class Google_Service_Storage_BucketLifecycleRule extends \Google\Service\Storage\BucketLifecycleRule
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Widgets extends \Google\Model
-{
-    protected $buttonListType = GoogleAppsCardV1ButtonList::class;
-    protected $buttonListDataType = '';
-    protected $chipListType = GoogleAppsCardV1ChipList::class;
-    protected $chipListDataType = '';
-    protected $dateTimePickerType = GoogleAppsCardV1DateTimePicker::class;
-    protected $dateTimePickerDataType = '';
-    protected $decoratedTextType = GoogleAppsCardV1DecoratedText::class;
-    protected $decoratedTextDataType = '';
-    protected $imageType = GoogleAppsCardV1Image::class;
-    protected $imageDataType = '';
-    protected $selectionInputType = GoogleAppsCardV1SelectionInput::class;
-    protected $selectionInputDataType = '';
-    protected $textInputType = GoogleAppsCardV1TextInput::class;
-    protected $textInputDataType = '';
-    protected $textParagraphType = GoogleAppsCardV1TextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * ButtonList widget.
-     *
-     * @param GoogleAppsCardV1ButtonList $buttonList
-     */
-    public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Widgets extends \Google\Model
     {
+        protected $buttonListType = GoogleAppsCardV1ButtonList::class;
+        protected $buttonListDataType = '';
+        protected $chipListType = GoogleAppsCardV1ChipList::class;
+        protected $chipListDataType = '';
+        protected $dateTimePickerType = GoogleAppsCardV1DateTimePicker::class;
+        protected $dateTimePickerDataType = '';
+        protected $decoratedTextType = GoogleAppsCardV1DecoratedText::class;
+        protected $decoratedTextDataType = '';
+        protected $imageType = GoogleAppsCardV1Image::class;
+        protected $imageDataType = '';
+        protected $selectionInputType = GoogleAppsCardV1SelectionInput::class;
+        protected $selectionInputDataType = '';
+        protected $textInputType = GoogleAppsCardV1TextInput::class;
+        protected $textInputDataType = '';
+        protected $textParagraphType = GoogleAppsCardV1TextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * ButtonList widget.
+         *
+         * @param GoogleAppsCardV1ButtonList $buttonList
+         */
+        public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ButtonList
+         */
+        public function getButtonList()
+        {
+        }
+        /**
+         * ChipList widget.
+         *
+         * @param GoogleAppsCardV1ChipList $chipList
+         */
+        public function setChipList(GoogleAppsCardV1ChipList $chipList)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ChipList
+         */
+        public function getChipList()
+        {
+        }
+        /**
+         * DateTimePicker widget.
+         *
+         * @param GoogleAppsCardV1DateTimePicker $dateTimePicker
+         */
+        public function setDateTimePicker(GoogleAppsCardV1DateTimePicker $dateTimePicker)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1DateTimePicker
+         */
+        public function getDateTimePicker()
+        {
+        }
+        /**
+         * DecoratedText widget.
+         *
+         * @param GoogleAppsCardV1DecoratedText $decoratedText
+         */
+        public function setDecoratedText(GoogleAppsCardV1DecoratedText $decoratedText)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1DecoratedText
+         */
+        public function getDecoratedText()
+        {
+        }
+        /**
+         * Image widget.
+         *
+         * @param GoogleAppsCardV1Image $image
+         */
+        public function setImage(GoogleAppsCardV1Image $image)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * SelectionInput widget.
+         *
+         * @param GoogleAppsCardV1SelectionInput $selectionInput
+         */
+        public function setSelectionInput(GoogleAppsCardV1SelectionInput $selectionInput)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1SelectionInput
+         */
+        public function getSelectionInput()
+        {
+        }
+        /**
+         * TextInput widget.
+         *
+         * @param GoogleAppsCardV1TextInput $textInput
+         */
+        public function setTextInput(GoogleAppsCardV1TextInput $textInput)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1TextInput
+         */
+        public function getTextInput()
+        {
+        }
+        /**
+         * TextParagraph widget.
+         *
+         * @param GoogleAppsCardV1TextParagraph $textParagraph
+         */
+        public function setTextParagraph(GoogleAppsCardV1TextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1TextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1ButtonList
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Widgets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtonList()
-    {
-    }
-    /**
-     * ChipList widget.
-     *
-     * @param GoogleAppsCardV1ChipList $chipList
-     */
-    public function setChipList(GoogleAppsCardV1ChipList $chipList)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1ChipList
-     */
-    public function getChipList()
-    {
-    }
-    /**
-     * DateTimePicker widget.
-     *
-     * @param GoogleAppsCardV1DateTimePicker $dateTimePicker
-     */
-    public function setDateTimePicker(GoogleAppsCardV1DateTimePicker $dateTimePicker)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1DateTimePicker
-     */
-    public function getDateTimePicker()
-    {
-    }
-    /**
-     * DecoratedText widget.
-     *
-     * @param GoogleAppsCardV1DecoratedText $decoratedText
-     */
-    public function setDecoratedText(GoogleAppsCardV1DecoratedText $decoratedText)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1DecoratedText
-     */
-    public function getDecoratedText()
-    {
-    }
-    /**
-     * Image widget.
-     *
-     * @param GoogleAppsCardV1Image $image
-     */
-    public function setImage(GoogleAppsCardV1Image $image)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * SelectionInput widget.
-     *
-     * @param GoogleAppsCardV1SelectionInput $selectionInput
-     */
-    public function setSelectionInput(GoogleAppsCardV1SelectionInput $selectionInput)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1SelectionInput
-     */
-    public function getSelectionInput()
-    {
-    }
-    /**
-     * TextInput widget.
-     *
-     * @param GoogleAppsCardV1TextInput $textInput
-     */
-    public function setTextInput(GoogleAppsCardV1TextInput $textInput)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1TextInput
-     */
-    public function getTextInput()
-    {
-    }
-    /**
-     * TextParagraph widget.
-     *
-     * @param GoogleAppsCardV1TextParagraph $textParagraph
-     */
-    public function setTextParagraph(GoogleAppsCardV1TextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1TextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Widgets extends \Google\Service\HangoutsChat\GoogleAppsCardV1Widgets
     {
     }
 }

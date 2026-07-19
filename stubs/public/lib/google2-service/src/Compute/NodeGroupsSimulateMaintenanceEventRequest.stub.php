@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupsSimulateMaintenanceEventRequest extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    /**
-     * Names of the nodes to go under maintenance simulation.
-     *
-     * @var string[]
-     */
-    public $nodes;
-    /**
-     * Names of the nodes to go under maintenance simulation.
-     *
-     * @param string[] $nodes
-     */
-    public function setNodes($nodes)
+namespace Google\Service\Compute {
+    class NodeGroupsSimulateMaintenanceEventRequest extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        /**
+         * Names of the nodes to go under maintenance simulation.
+         *
+         * @var string[]
+         */
+        public $nodes;
+        /**
+         * Names of the nodes to go under maintenance simulation.
+         *
+         * @param string[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\NodeGroupsSimulateMaintenanceEventRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodes()
+    class Google_Service_Compute_NodeGroupsSimulateMaintenanceEventRequest extends \Google\Service\Compute\NodeGroupsSimulateMaintenanceEventRequest
     {
     }
 }

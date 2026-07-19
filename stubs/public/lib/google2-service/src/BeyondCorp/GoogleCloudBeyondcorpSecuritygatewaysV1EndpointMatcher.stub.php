@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher extends \Google\Collection
-{
-    protected $collection_key = 'ports';
-    /**
-     * Required. Hostname of the application.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Required. The ports of the application.
-     *
-     * @var int[]
-     */
-    public $ports;
-    /**
-     * Required. Hostname of the application.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher extends \Google\Collection
     {
+        protected $collection_key = 'ports';
+        /**
+         * Required. Hostname of the application.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Required. The ports of the application.
+         *
+         * @var int[]
+         */
+        public $ports;
+        /**
+         * Required. Hostname of the application.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Required. The ports of the application.
+         *
+         * @param int[] $ports
+         */
+        public function setPorts($ports)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getPorts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * Required. The ports of the application.
-     *
-     * @param int[] $ports
-     */
-    public function setPorts($ports)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getPorts()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class AnnotateFileRequest extends \Google\Collection
-{
-    protected $collection_key = 'pages';
-    protected $featuresType = Feature::class;
-    protected $featuresDataType = 'array';
-    protected $imageContextType = ImageContext::class;
-    protected $imageContextDataType = '';
-    protected $inputConfigType = InputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Pages of the file to perform image annotation. Pages starts from 1, we
-     * assume the first page of the file is page 1. At most 5 pages are supported
-     * per request. Pages can be negative. Page 1 means the first page. Page 2
-     * means the second page. Page -1 means the last page. Page -2 means the
-     * second to the last page. If the file is GIF instead of PDF or TIFF, page
-     * refers to GIF frames. If this field is empty, by default the service
-     * performs image annotation for the first 5 pages of the file.
-     *
-     * @var int[]
-     */
-    public $pages;
-    /**
-     * Required. Requested features.
-     *
-     * @param Feature[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\Vision {
+    class AnnotateFileRequest extends \Google\Collection
     {
+        protected $collection_key = 'pages';
+        protected $featuresType = Feature::class;
+        protected $featuresDataType = 'array';
+        protected $imageContextType = ImageContext::class;
+        protected $imageContextDataType = '';
+        protected $inputConfigType = InputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Pages of the file to perform image annotation. Pages starts from 1, we
+         * assume the first page of the file is page 1. At most 5 pages are supported
+         * per request. Pages can be negative. Page 1 means the first page. Page 2
+         * means the second page. Page -1 means the last page. Page -2 means the
+         * second to the last page. If the file is GIF instead of PDF or TIFF, page
+         * refers to GIF frames. If this field is empty, by default the service
+         * performs image annotation for the first 5 pages of the file.
+         *
+         * @var int[]
+         */
+        public $pages;
+        /**
+         * Required. Requested features.
+         *
+         * @param Feature[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return Feature[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * Additional context that may accompany the image(s) in the file.
+         *
+         * @param ImageContext $imageContext
+         */
+        public function setImageContext(ImageContext $imageContext)
+        {
+        }
+        /**
+         * @return ImageContext
+         */
+        public function getImageContext()
+        {
+        }
+        /**
+         * Required. Information about the input file.
+         *
+         * @param InputConfig $inputConfig
+         */
+        public function setInputConfig(InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Pages of the file to perform image annotation. Pages starts from 1, we
+         * assume the first page of the file is page 1. At most 5 pages are supported
+         * per request. Pages can be negative. Page 1 means the first page. Page 2
+         * means the second page. Page -1 means the last page. Page -2 means the
+         * second to the last page. If the file is GIF instead of PDF or TIFF, page
+         * refers to GIF frames. If this field is empty, by default the service
+         * performs image annotation for the first 5 pages of the file.
+         *
+         * @param int[] $pages
+         */
+        public function setPages($pages)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getPages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feature[]
+     * Runtime class alias of \Google\Service\Vision\AnnotateFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
-    {
-    }
-    /**
-     * Additional context that may accompany the image(s) in the file.
-     *
-     * @param ImageContext $imageContext
-     */
-    public function setImageContext(ImageContext $imageContext)
-    {
-    }
-    /**
-     * @return ImageContext
-     */
-    public function getImageContext()
-    {
-    }
-    /**
-     * Required. Information about the input file.
-     *
-     * @param InputConfig $inputConfig
-     */
-    public function setInputConfig(InputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return InputConfig
-     */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Pages of the file to perform image annotation. Pages starts from 1, we
-     * assume the first page of the file is page 1. At most 5 pages are supported
-     * per request. Pages can be negative. Page 1 means the first page. Page 2
-     * means the second page. Page -1 means the last page. Page -2 means the
-     * second to the last page. If the file is GIF instead of PDF or TIFF, page
-     * refers to GIF frames. If this field is empty, by default the service
-     * performs image annotation for the first 5 pages of the file.
-     *
-     * @param int[] $pages
-     */
-    public function setPages($pages)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getPages()
+    class Google_Service_Vision_AnnotateFileRequest extends \Google\Service\Vision\AnnotateFileRequest
     {
     }
 }

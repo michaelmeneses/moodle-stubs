@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTableSpec extends \Google\Model
-{
-    protected $columnSpecsType = XPSColumnSpec::class;
-    protected $columnSpecsDataType = 'map';
-    /**
-     * The total size of imported data of the table.
-     *
-     * @var string
-     */
-    public $importedDataSizeInBytes;
-    /**
-     * The number of rows in the table.
-     *
-     * @var string
-     */
-    public $rowCount;
-    /**
-     * The id of the time column.
-     *
-     * @var int
-     */
-    public $timeColumnId;
-    /**
-     * The number of valid rows.
-     *
-     * @var string
-     */
-    public $validRowCount;
-    /**
-     * Mapping from column id to column spec.
-     *
-     * @param XPSColumnSpec[] $columnSpecs
-     */
-    public function setColumnSpecs($columnSpecs)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTableSpec extends \Google\Model
     {
+        protected $columnSpecsType = XPSColumnSpec::class;
+        protected $columnSpecsDataType = 'map';
+        /**
+         * The total size of imported data of the table.
+         *
+         * @var string
+         */
+        public $importedDataSizeInBytes;
+        /**
+         * The number of rows in the table.
+         *
+         * @var string
+         */
+        public $rowCount;
+        /**
+         * The id of the time column.
+         *
+         * @var int
+         */
+        public $timeColumnId;
+        /**
+         * The number of valid rows.
+         *
+         * @var string
+         */
+        public $validRowCount;
+        /**
+         * Mapping from column id to column spec.
+         *
+         * @param XPSColumnSpec[] $columnSpecs
+         */
+        public function setColumnSpecs($columnSpecs)
+        {
+        }
+        /**
+         * @return XPSColumnSpec[]
+         */
+        public function getColumnSpecs()
+        {
+        }
+        /**
+         * The total size of imported data of the table.
+         *
+         * @param string $importedDataSizeInBytes
+         */
+        public function setImportedDataSizeInBytes($importedDataSizeInBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportedDataSizeInBytes()
+        {
+        }
+        /**
+         * The number of rows in the table.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * The id of the time column.
+         *
+         * @param int $timeColumnId
+         */
+        public function setTimeColumnId($timeColumnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTimeColumnId()
+        {
+        }
+        /**
+         * The number of valid rows.
+         *
+         * @param string $validRowCount
+         */
+        public function setValidRowCount($validRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSColumnSpec[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnSpecs()
-    {
-    }
-    /**
-     * The total size of imported data of the table.
-     *
-     * @param string $importedDataSizeInBytes
-     */
-    public function setImportedDataSizeInBytes($importedDataSizeInBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImportedDataSizeInBytes()
-    {
-    }
-    /**
-     * The number of rows in the table.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * The id of the time column.
-     *
-     * @param int $timeColumnId
-     */
-    public function setTimeColumnId($timeColumnId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTimeColumnId()
-    {
-    }
-    /**
-     * The number of valid rows.
-     *
-     * @param string $validRowCount
-     */
-    public function setValidRowCount($validRowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidRowCount()
+    class Google_Service_CloudNaturalLanguage_XPSTableSpec extends \Google\Service\CloudNaturalLanguage\XPSTableSpec
     {
     }
 }

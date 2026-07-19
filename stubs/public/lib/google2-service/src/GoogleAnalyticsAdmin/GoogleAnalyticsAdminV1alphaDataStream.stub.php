@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaDataStream extends \Google\Model
-{
-    protected $androidAppStreamDataType = GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData::class;
-    protected $androidAppStreamDataDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $iosAppStreamDataType = GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData::class;
-    protected $iosAppStreamDataDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    protected $webStreamDataType = GoogleAnalyticsAdminV1alphaDataStreamWebStreamData::class;
-    protected $webStreamDataDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData
-     */
-    public function setAndroidAppStreamData(GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData $androidAppStreamData)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaDataStream extends \Google\Model
     {
+        protected $androidAppStreamDataType = GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData::class;
+        protected $androidAppStreamDataDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $iosAppStreamDataType = GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData::class;
+        protected $iosAppStreamDataDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        protected $webStreamDataType = GoogleAnalyticsAdminV1alphaDataStreamWebStreamData::class;
+        protected $webStreamDataDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData
+         */
+        public function setAndroidAppStreamData(GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData $androidAppStreamData)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData
+         */
+        public function getAndroidAppStreamData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData
+         */
+        public function setIosAppStreamData(GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData $iosAppStreamData)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData
+         */
+        public function getIosAppStreamData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDataStreamWebStreamData
+         */
+        public function setWebStreamData(GoogleAnalyticsAdminV1alphaDataStreamWebStreamData $webStreamData)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDataStreamWebStreamData
+         */
+        public function getWebStreamData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidAppStreamData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData
-     */
-    public function setIosAppStreamData(GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData $iosAppStreamData)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData
-     */
-    public function getIosAppStreamData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDataStreamWebStreamData
-     */
-    public function setWebStreamData(GoogleAnalyticsAdminV1alphaDataStreamWebStreamData $webStreamData)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaDataStreamWebStreamData
-     */
-    public function getWebStreamData()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaDataStream extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataStream
     {
     }
 }

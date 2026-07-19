@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ListSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * A token, which can be sent as page_token, to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionsType = Session::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * A token, which can be sent as page_token, to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class ListSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * A token, which can be sent as page_token, to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionsType = Session::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * A token, which can be sent as page_token, to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. The sessions from the specified collection.
+         *
+         * @param Session[] $sessions
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return Session[]
+         */
+        public function getSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ListSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. The sessions from the specified collection.
-     *
-     * @param Session[] $sessions
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return Session[]
-     */
-    public function getSessions()
+    class Google_Service_Dataproc_ListSessionsResponse extends \Google\Service\Dataproc\ListSessionsResponse
     {
     }
 }

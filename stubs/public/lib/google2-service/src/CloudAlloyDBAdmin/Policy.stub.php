@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class Policy extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $coolDownPeriodSec;
-    protected $cpuUtilizationType = CpuUtilization::class;
-    protected $cpuUtilizationDataType = '';
-    /**
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * @var string
-     */
-    public $maxNodeCount;
-    /**
-     * @param string
-     */
-    public function setCoolDownPeriodSec($coolDownPeriodSec)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class Policy extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $coolDownPeriodSec;
+        protected $cpuUtilizationType = CpuUtilization::class;
+        protected $cpuUtilizationDataType = '';
+        /**
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * @var string
+         */
+        public $maxNodeCount;
+        /**
+         * @param string
+         */
+        public function setCoolDownPeriodSec($coolDownPeriodSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoolDownPeriodSec()
+        {
+        }
+        /**
+         * @param CpuUtilization
+         */
+        public function setCpuUtilization(CpuUtilization $cpuUtilization)
+        {
+        }
+        /**
+         * @return CpuUtilization
+         */
+        public function getCpuUtilization()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMaxNodeCount($maxNodeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoolDownPeriodSec()
-    {
-    }
-    /**
-     * @param CpuUtilization
-     */
-    public function setCpuUtilization(CpuUtilization $cpuUtilization)
-    {
-    }
-    /**
-     * @return CpuUtilization
-     */
-    public function getCpuUtilization()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMaxNodeCount($maxNodeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxNodeCount()
+    class Google_Service_CloudAlloyDBAdmin_Policy extends \Google\Service\CloudAlloyDBAdmin\Policy
     {
     }
 }

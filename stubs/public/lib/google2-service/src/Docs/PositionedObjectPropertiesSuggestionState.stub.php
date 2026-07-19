@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class PositionedObjectPropertiesSuggestionState extends \Google\Model
-{
-    protected $embeddedObjectSuggestionStateType = EmbeddedObjectSuggestionState::class;
-    protected $embeddedObjectSuggestionStateDataType = '';
-    protected $positioningSuggestionStateType = PositionedObjectPositioningSuggestionState::class;
-    protected $positioningSuggestionStateDataType = '';
-    /**
-     * A mask that indicates which of the fields in embedded_object have been
-     * changed in this suggestion.
-     *
-     * @param EmbeddedObjectSuggestionState $embeddedObjectSuggestionState
-     */
-    public function setEmbeddedObjectSuggestionState(EmbeddedObjectSuggestionState $embeddedObjectSuggestionState)
+namespace Google\Service\Docs {
+    class PositionedObjectPropertiesSuggestionState extends \Google\Model
     {
+        protected $embeddedObjectSuggestionStateType = EmbeddedObjectSuggestionState::class;
+        protected $embeddedObjectSuggestionStateDataType = '';
+        protected $positioningSuggestionStateType = PositionedObjectPositioningSuggestionState::class;
+        protected $positioningSuggestionStateDataType = '';
+        /**
+         * A mask that indicates which of the fields in embedded_object have been
+         * changed in this suggestion.
+         *
+         * @param EmbeddedObjectSuggestionState $embeddedObjectSuggestionState
+         */
+        public function setEmbeddedObjectSuggestionState(EmbeddedObjectSuggestionState $embeddedObjectSuggestionState)
+        {
+        }
+        /**
+         * @return EmbeddedObjectSuggestionState
+         */
+        public function getEmbeddedObjectSuggestionState()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields in positioning have been changed
+         * in this suggestion.
+         *
+         * @param PositionedObjectPositioningSuggestionState $positioningSuggestionState
+         */
+        public function setPositioningSuggestionState(PositionedObjectPositioningSuggestionState $positioningSuggestionState)
+        {
+        }
+        /**
+         * @return PositionedObjectPositioningSuggestionState
+         */
+        public function getPositioningSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObjectSuggestionState
+     * Runtime class alias of \Google\Service\Docs\PositionedObjectPropertiesSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbeddedObjectSuggestionState()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields in positioning have been changed
-     * in this suggestion.
-     *
-     * @param PositionedObjectPositioningSuggestionState $positioningSuggestionState
-     */
-    public function setPositioningSuggestionState(PositionedObjectPositioningSuggestionState $positioningSuggestionState)
-    {
-    }
-    /**
-     * @return PositionedObjectPositioningSuggestionState
-     */
-    public function getPositioningSuggestionState()
+    class Google_Service_Docs_PositionedObjectPropertiesSuggestionState extends \Google\Service\Docs\PositionedObjectPropertiesSuggestionState
     {
     }
 }

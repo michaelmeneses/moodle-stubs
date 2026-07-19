@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'tracks';
-    protected $tracksType = GoogleCloudVideointelligenceV1beta2Track::class;
-    protected $tracksDataType = 'array';
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The detected tracks of a person.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2Track[] $tracks
-     */
-    public function setTracks($tracks)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'tracks';
+        protected $tracksType = GoogleCloudVideointelligenceV1beta2Track::class;
+        protected $tracksDataType = 'array';
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The detected tracks of a person.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2Track[] $tracks
+         */
+        public function setTracks($tracks)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2Track[]
+         */
+        public function getTracks()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2Track[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTracks()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation
     {
     }
 }

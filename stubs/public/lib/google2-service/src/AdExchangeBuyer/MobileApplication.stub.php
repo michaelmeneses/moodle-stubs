@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class MobileApplication extends \Google\Model
-{
-    public $appStore;
-    public $externalAppId;
-    public function setAppStore($appStore)
+namespace Google\Service\AdExchangeBuyer {
+    class MobileApplication extends \Google\Model
     {
+        public $appStore;
+        public $externalAppId;
+        public function setAppStore($appStore)
+        {
+        }
+        public function getAppStore()
+        {
+        }
+        public function setExternalAppId($externalAppId)
+        {
+        }
+        public function getExternalAppId()
+        {
+        }
     }
-    public function getAppStore()
-    {
-    }
-    public function setExternalAppId($externalAppId)
-    {
-    }
-    public function getExternalAppId()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\MobileApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_MobileApplication extends \Google\Service\AdExchangeBuyer\MobileApplication
     {
     }
 }

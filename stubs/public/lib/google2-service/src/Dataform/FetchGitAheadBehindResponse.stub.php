@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class FetchGitAheadBehindResponse extends \Google\Model
-{
-    /**
-     * The number of commits in the remote branch that are not in the workspace.
-     *
-     * @var int
-     */
-    public $commitsAhead;
-    /**
-     * The number of commits in the workspace that are not in the remote branch.
-     *
-     * @var int
-     */
-    public $commitsBehind;
-    /**
-     * The number of commits in the remote branch that are not in the workspace.
-     *
-     * @param int $commitsAhead
-     */
-    public function setCommitsAhead($commitsAhead)
+namespace Google\Service\Dataform {
+    class FetchGitAheadBehindResponse extends \Google\Model
     {
+        /**
+         * The number of commits in the remote branch that are not in the workspace.
+         *
+         * @var int
+         */
+        public $commitsAhead;
+        /**
+         * The number of commits in the workspace that are not in the remote branch.
+         *
+         * @var int
+         */
+        public $commitsBehind;
+        /**
+         * The number of commits in the remote branch that are not in the workspace.
+         *
+         * @param int $commitsAhead
+         */
+        public function setCommitsAhead($commitsAhead)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCommitsAhead()
+        {
+        }
+        /**
+         * The number of commits in the workspace that are not in the remote branch.
+         *
+         * @param int $commitsBehind
+         */
+        public function setCommitsBehind($commitsBehind)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCommitsBehind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataform\FetchGitAheadBehindResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitsAhead()
-    {
-    }
-    /**
-     * The number of commits in the workspace that are not in the remote branch.
-     *
-     * @param int $commitsBehind
-     */
-    public function setCommitsBehind($commitsBehind)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCommitsBehind()
+    class Google_Service_Dataform_FetchGitAheadBehindResponse extends \Google\Service\Dataform\FetchGitAheadBehindResponse
     {
     }
 }

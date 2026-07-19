@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudShell;
-
-class AuthorizeEnvironmentResponse extends \Google\Model
-{
+namespace Google\Service\CloudShell {
+    class AuthorizeEnvironmentResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudShell\AuthorizeEnvironmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudShell_AuthorizeEnvironmentResponse extends \Google\Service\CloudShell\AuthorizeEnvironmentResponse
+    {
+    }
 }

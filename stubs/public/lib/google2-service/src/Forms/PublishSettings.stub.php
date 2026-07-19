@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class PublishSettings extends \Google\Model
-{
-    protected $publishStateType = PublishState::class;
-    protected $publishStateDataType = '';
-    /**
-     * Optional. The publishing state of a form. When updating `publish_state`,
-     * both `is_published` and `is_accepting_responses` must be set. However,
-     * setting `is_accepting_responses` to `true` and `is_published` to `false`
-     * isn't supported and returns an error.
-     *
-     * @param PublishState $publishState
-     */
-    public function setPublishState(PublishState $publishState)
+namespace Google\Service\Forms {
+    class PublishSettings extends \Google\Model
     {
+        protected $publishStateType = PublishState::class;
+        protected $publishStateDataType = '';
+        /**
+         * Optional. The publishing state of a form. When updating `publish_state`,
+         * both `is_published` and `is_accepting_responses` must be set. However,
+         * setting `is_accepting_responses` to `true` and `is_published` to `false`
+         * isn't supported and returns an error.
+         *
+         * @param PublishState $publishState
+         */
+        public function setPublishState(PublishState $publishState)
+        {
+        }
+        /**
+         * @return PublishState
+         */
+        public function getPublishState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublishState
+     * Runtime class alias of \Google\Service\Forms\PublishSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublishState()
+    class Google_Service_Forms_PublishSettings extends \Google\Service\Forms\PublishSettings
     {
     }
 }

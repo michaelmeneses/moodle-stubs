@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SingleTargetDataset extends \Google\Model
-{
-    /**
-     * The dataset ID of the target dataset. DatasetIds allowed characters: https:
-     * //cloud.google.com/bigquery/docs/reference/rest/v2/datasets#datasetreferenc
-     * e.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * The dataset ID of the target dataset. DatasetIds allowed characters: https:
-     * //cloud.google.com/bigquery/docs/reference/rest/v2/datasets#datasetreferenc
-     * e.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\Datastream {
+    class SingleTargetDataset extends \Google\Model
     {
+        /**
+         * The dataset ID of the target dataset. DatasetIds allowed characters: https:
+         * //cloud.google.com/bigquery/docs/reference/rest/v2/datasets#datasetreferenc
+         * e.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * The dataset ID of the target dataset. DatasetIds allowed characters: https:
+         * //cloud.google.com/bigquery/docs/reference/rest/v2/datasets#datasetreferenc
+         * e.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SingleTargetDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
+    class Google_Service_Datastream_SingleTargetDataset extends \Google\Service\Datastream\SingleTargetDataset
     {
     }
 }

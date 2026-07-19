@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class DumpFlag extends \Google\Model
-{
-    /**
-     * The name of the flag
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The value of the flag.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The name of the flag
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DatabaseMigrationService {
+    class DumpFlag extends \Google\Model
     {
+        /**
+         * The name of the flag
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The value of the flag.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The name of the flag
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The value of the flag.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\DumpFlag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The value of the flag.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DatabaseMigrationService_DumpFlag extends \Google\Service\DatabaseMigrationService\DumpFlag
     {
     }
 }

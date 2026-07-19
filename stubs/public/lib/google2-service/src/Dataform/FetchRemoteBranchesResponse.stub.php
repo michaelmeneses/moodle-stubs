@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class FetchRemoteBranchesResponse extends \Google\Collection
-{
-    protected $collection_key = 'branches';
-    /**
-     * The remote repository's branch names.
-     *
-     * @var string[]
-     */
-    public $branches;
-    /**
-     * The remote repository's branch names.
-     *
-     * @param string[] $branches
-     */
-    public function setBranches($branches)
+namespace Google\Service\Dataform {
+    class FetchRemoteBranchesResponse extends \Google\Collection
     {
+        protected $collection_key = 'branches';
+        /**
+         * The remote repository's branch names.
+         *
+         * @var string[]
+         */
+        public $branches;
+        /**
+         * The remote repository's branch names.
+         *
+         * @param string[] $branches
+         */
+        public function setBranches($branches)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBranches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataform\FetchRemoteBranchesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranches()
+    class Google_Service_Dataform_FetchRemoteBranchesResponse extends \Google\Service\Dataform\FetchRemoteBranchesResponse
     {
     }
 }

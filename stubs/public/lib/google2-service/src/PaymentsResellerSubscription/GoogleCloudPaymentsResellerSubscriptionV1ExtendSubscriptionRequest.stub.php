@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest extends \Google\Model
-{
-    protected $extensionType = GoogleCloudPaymentsResellerSubscriptionV1Extension::class;
-    protected $extensionDataType = '';
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Extension
-     */
-    public function setExtension(GoogleCloudPaymentsResellerSubscriptionV1Extension $extension)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest extends \Google\Model
     {
+        protected $extensionType = GoogleCloudPaymentsResellerSubscriptionV1Extension::class;
+        protected $extensionDataType = '';
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Extension
+         */
+        public function setExtension(GoogleCloudPaymentsResellerSubscriptionV1Extension $extension)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Extension
+         */
+        public function getExtension()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Extension
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtension()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionRequest
     {
     }
 }

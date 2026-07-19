@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class UsedBy extends \Google\Model
-{
-    /**
-     * Output only. Full name of the resource https://google.aip.dev/122#full-
-     * resource-names, e.g. `//certificatemanager.googleapis.com/projects/location
-     * s/certificateMaps/certificateMapEntries` or
-     * `//compute.googleapis.com/projects/locations/targetHttpsProxies`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Full name of the resource https://google.aip.dev/122#full-
-     * resource-names, e.g. `//certificatemanager.googleapis.com/projects/location
-     * s/certificateMaps/certificateMapEntries` or
-     * `//compute.googleapis.com/projects/locations/targetHttpsProxies`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CertificateManager {
+    class UsedBy extends \Google\Model
     {
+        /**
+         * Output only. Full name of the resource https://google.aip.dev/122#full-
+         * resource-names, e.g. `//certificatemanager.googleapis.com/projects/location
+         * s/certificateMaps/certificateMapEntries` or
+         * `//compute.googleapis.com/projects/locations/targetHttpsProxies`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Full name of the resource https://google.aip.dev/122#full-
+         * resource-names, e.g. `//certificatemanager.googleapis.com/projects/location
+         * s/certificateMaps/certificateMapEntries` or
+         * `//compute.googleapis.com/projects/locations/targetHttpsProxies`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\UsedBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_CertificateManager_UsedBy extends \Google\Service\CertificateManager\UsedBy
     {
     }
 }

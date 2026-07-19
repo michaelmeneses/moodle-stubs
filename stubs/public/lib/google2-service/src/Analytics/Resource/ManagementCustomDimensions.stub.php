@@ -21,104 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "customDimensions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $customDimensions = $analyticsService->management_customDimensions;
- *  </code>
- */
-class ManagementCustomDimensions extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\CustomDimension;
+    use Google\Service\Analytics\CustomDimensions;
     /**
-     * Get a custom dimension to which the user has access. (customDimensions.get)
-     *
-     * @param string $accountId Account ID for the custom dimension to retrieve.
-     * @param string $webPropertyId Web property ID for the custom dimension to
-     * retrieve.
-     * @param string $customDimensionId The ID of the custom dimension to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return CustomDimension
-     * @throws \Google\Service\Exception
+     * The "customDimensions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $customDimensions = $analyticsService->management_customDimensions;
+     *  </code>
      */
-    public function get($accountId, $webPropertyId, $customDimensionId, $optParams = [])
+    class ManagementCustomDimensions extends \Google\Service\Resource
     {
+        /**
+         * Get a custom dimension to which the user has access. (customDimensions.get)
+         *
+         * @param string $accountId Account ID for the custom dimension to retrieve.
+         * @param string $webPropertyId Web property ID for the custom dimension to
+         * retrieve.
+         * @param string $customDimensionId The ID of the custom dimension to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return CustomDimension
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $customDimensionId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new custom dimension. (customDimensions.insert)
+         *
+         * @param string $accountId Account ID for the custom dimension to create.
+         * @param string $webPropertyId Web property ID for the custom dimension to
+         * create.
+         * @param CustomDimension $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomDimension
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, CustomDimension $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists custom dimensions to which the user has access.
+         * (customDimensions.listManagementCustomDimensions)
+         *
+         * @param string $accountId Account ID for the custom dimensions to retrieve.
+         * @param string $webPropertyId Web property ID for the custom dimensions to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of custom dimensions to include
+         * in this response.
+         * @opt_param int start-index An index of the first entity to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @return CustomDimensions
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementCustomDimensions($accountId, $webPropertyId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing custom dimension. This method supports patch semantics.
+         * (customDimensions.patch)
+         *
+         * @param string $accountId Account ID for the custom dimension to update.
+         * @param string $webPropertyId Web property ID for the custom dimension to
+         * update.
+         * @param string $customDimensionId Custom dimension ID for the custom dimension
+         * to update.
+         * @param CustomDimension $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
+         * warnings related to the custom dimension being linked to a custom data source
+         * / data set.
+         * @return CustomDimension
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $webPropertyId, $customDimensionId, CustomDimension $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing custom dimension. (customDimensions.update)
+         *
+         * @param string $accountId Account ID for the custom dimension to update.
+         * @param string $webPropertyId Web property ID for the custom dimension to
+         * update.
+         * @param string $customDimensionId Custom dimension ID for the custom dimension
+         * to update.
+         * @param CustomDimension $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
+         * warnings related to the custom dimension being linked to a custom data source
+         * / data set.
+         * @return CustomDimension
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, $customDimensionId, CustomDimension $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Create a new custom dimension. (customDimensions.insert)
-     *
-     * @param string $accountId Account ID for the custom dimension to create.
-     * @param string $webPropertyId Web property ID for the custom dimension to
-     * create.
-     * @param CustomDimension $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomDimension
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementCustomDimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($accountId, $webPropertyId, CustomDimension $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists custom dimensions to which the user has access.
-     * (customDimensions.listManagementCustomDimensions)
-     *
-     * @param string $accountId Account ID for the custom dimensions to retrieve.
-     * @param string $webPropertyId Web property ID for the custom dimensions to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of custom dimensions to include
-     * in this response.
-     * @opt_param int start-index An index of the first entity to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @return CustomDimensions
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementCustomDimensions($accountId, $webPropertyId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing custom dimension. This method supports patch semantics.
-     * (customDimensions.patch)
-     *
-     * @param string $accountId Account ID for the custom dimension to update.
-     * @param string $webPropertyId Web property ID for the custom dimension to
-     * update.
-     * @param string $customDimensionId Custom dimension ID for the custom dimension
-     * to update.
-     * @param CustomDimension $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
-     * warnings related to the custom dimension being linked to a custom data source
-     * / data set.
-     * @return CustomDimension
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $webPropertyId, $customDimensionId, CustomDimension $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing custom dimension. (customDimensions.update)
-     *
-     * @param string $accountId Account ID for the custom dimension to update.
-     * @param string $webPropertyId Web property ID for the custom dimension to
-     * update.
-     * @param string $customDimensionId Custom dimension ID for the custom dimension
-     * to update.
-     * @param CustomDimension $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
-     * warnings related to the custom dimension being linked to a custom data source
-     * / data set.
-     * @return CustomDimension
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, $customDimensionId, CustomDimension $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementCustomDimensions extends \Google\Service\Analytics\Resource\ManagementCustomDimensions
     {
     }
 }

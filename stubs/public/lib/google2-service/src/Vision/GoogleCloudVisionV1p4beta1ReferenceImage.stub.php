@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p4beta1ReferenceImage extends \Google\Collection
-{
-    protected $collection_key = 'boundingPolys';
-    protected $boundingPolysType = GoogleCloudVisionV1p4beta1BoundingPoly::class;
-    protected $boundingPolysDataType = 'array';
-    /**
-     * The resource name of the reference image. Format is: `projects/PROJECT_ID/l
-     * ocations/LOC_ID/products/PRODUCT_ID/referenceImages/IMAGE_ID`. This field
-     * is ignored when creating a reference image.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The Google Cloud Storage URI of the reference image. The URI must
-     * start with `gs://`.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional. Bounding polygons around the areas of interest in the reference
-     * image. If this field is empty, the system will try to detect regions of
-     * interest. At most 10 bounding polygons will be used. The provided shape is
-     * converted into a non-rotated rectangle. Once converted, the small edge of
-     * the rectangle must be greater than or equal to 300 pixels. The aspect ratio
-     * must be 1:4 or less (i.e. 1:3 is ok; 1:5 is not).
-     *
-     * @param GoogleCloudVisionV1p4beta1BoundingPoly[] $boundingPolys
-     */
-    public function setBoundingPolys($boundingPolys)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p4beta1ReferenceImage extends \Google\Collection
     {
+        protected $collection_key = 'boundingPolys';
+        protected $boundingPolysType = GoogleCloudVisionV1p4beta1BoundingPoly::class;
+        protected $boundingPolysDataType = 'array';
+        /**
+         * The resource name of the reference image. Format is: `projects/PROJECT_ID/l
+         * ocations/LOC_ID/products/PRODUCT_ID/referenceImages/IMAGE_ID`. This field
+         * is ignored when creating a reference image.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The Google Cloud Storage URI of the reference image. The URI must
+         * start with `gs://`.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional. Bounding polygons around the areas of interest in the reference
+         * image. If this field is empty, the system will try to detect regions of
+         * interest. At most 10 bounding polygons will be used. The provided shape is
+         * converted into a non-rotated rectangle. Once converted, the small edge of
+         * the rectangle must be greater than or equal to 300 pixels. The aspect ratio
+         * must be 1:4 or less (i.e. 1:3 is ok; 1:5 is not).
+         *
+         * @param GoogleCloudVisionV1p4beta1BoundingPoly[] $boundingPolys
+         */
+        public function setBoundingPolys($boundingPolys)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p4beta1BoundingPoly[]
+         */
+        public function getBoundingPolys()
+        {
+        }
+        /**
+         * The resource name of the reference image. Format is: `projects/PROJECT_ID/l
+         * ocations/LOC_ID/products/PRODUCT_ID/referenceImages/IMAGE_ID`. This field
+         * is ignored when creating a reference image.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The Google Cloud Storage URI of the reference image. The URI must
+         * start with `gs://`.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p4beta1BoundingPoly[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p4beta1ReferenceImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPolys()
-    {
-    }
-    /**
-     * The resource name of the reference image. Format is: `projects/PROJECT_ID/l
-     * ocations/LOC_ID/products/PRODUCT_ID/referenceImages/IMAGE_ID`. This field
-     * is ignored when creating a reference image.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The Google Cloud Storage URI of the reference image. The URI must
-     * start with `gs://`.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Vision_GoogleCloudVisionV1p4beta1ReferenceImage extends \Google\Service\Vision\GoogleCloudVisionV1p4beta1ReferenceImage
     {
     }
 }

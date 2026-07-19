@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class BooksAnnotationsRange extends \Google\Model
-{
-    /**
-     * The offset from the ending position.
-     *
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * The ending position for the range.
-     *
-     * @var string
-     */
-    public $endPosition;
-    /**
-     * The offset from the starting position.
-     *
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * The starting position for the range.
-     *
-     * @var string
-     */
-    public $startPosition;
-    /**
-     * The offset from the ending position.
-     *
-     * @param string $endOffset
-     */
-    public function setEndOffset($endOffset)
+namespace Google\Service\Books {
+    class BooksAnnotationsRange extends \Google\Model
     {
+        /**
+         * The offset from the ending position.
+         *
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * The ending position for the range.
+         *
+         * @var string
+         */
+        public $endPosition;
+        /**
+         * The offset from the starting position.
+         *
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * The starting position for the range.
+         *
+         * @var string
+         */
+        public $startPosition;
+        /**
+         * The offset from the ending position.
+         *
+         * @param string $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * The ending position for the range.
+         *
+         * @param string $endPosition
+         */
+        public function setEndPosition($endPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndPosition()
+        {
+        }
+        /**
+         * The offset from the starting position.
+         *
+         * @param string $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * The starting position for the range.
+         *
+         * @param string $startPosition
+         */
+        public function setStartPosition($startPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\BooksAnnotationsRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * The ending position for the range.
-     *
-     * @param string $endPosition
-     */
-    public function setEndPosition($endPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndPosition()
-    {
-    }
-    /**
-     * The offset from the starting position.
-     *
-     * @param string $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * The starting position for the range.
-     *
-     * @param string $startPosition
-     */
-    public function setStartPosition($startPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartPosition()
+    class Google_Service_Books_BooksAnnotationsRange extends \Google\Service\Books\BooksAnnotationsRange
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $alignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule::class;
-    protected $alignmentRuleDataType = '';
-    protected $fieldsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * The alignment rule to apply to the fields.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule
-     */
-    public function setAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $alignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule::class;
+        protected $alignmentRuleDataType = '';
+        protected $fieldsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * The alignment rule to apply to the fields.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule
+         */
+        public function setAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule
+         */
+        public function getAlignmentRule()
+        {
+        }
+        /**
+         * The fields to be aligned.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlignmentRule()
-    {
-    }
-    /**
-     * The fields to be aligned.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[]
-     */
-    public function getFields()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule
     {
     }
 }

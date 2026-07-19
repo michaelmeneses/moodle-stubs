@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class AttestationOccurrence extends \Google\Collection
-{
-    protected $collection_key = 'signatures';
-    protected $jwtsType = Jwt::class;
-    protected $jwtsDataType = 'array';
-    /**
-     * Required. The serialized payload that is verified by one or more
-     * `signatures`.
-     *
-     * @var string
-     */
-    public $serializedPayload;
-    protected $signaturesType = Signature::class;
-    protected $signaturesDataType = 'array';
-    /**
-     * One or more JWTs encoding a self-contained attestation. Each JWT encodes
-     * the payload that it verifies within the JWT itself. Verifier implementation
-     * SHOULD ignore the `serialized_payload` field when verifying these JWTs. If
-     * only JWTs are present on this AttestationOccurrence, then the
-     * `serialized_payload` SHOULD be left empty. Each JWT SHOULD encode a claim
-     * specific to the `resource_uri` of this Occurrence, but this is not
-     * validated by Grafeas metadata API implementations. The JWT itself is opaque
-     * to Grafeas.
-     *
-     * @param Jwt[] $jwts
-     */
-    public function setJwts($jwts)
+namespace Google\Service\BinaryAuthorization {
+    class AttestationOccurrence extends \Google\Collection
     {
+        protected $collection_key = 'signatures';
+        protected $jwtsType = Jwt::class;
+        protected $jwtsDataType = 'array';
+        /**
+         * Required. The serialized payload that is verified by one or more
+         * `signatures`.
+         *
+         * @var string
+         */
+        public $serializedPayload;
+        protected $signaturesType = Signature::class;
+        protected $signaturesDataType = 'array';
+        /**
+         * One or more JWTs encoding a self-contained attestation. Each JWT encodes
+         * the payload that it verifies within the JWT itself. Verifier implementation
+         * SHOULD ignore the `serialized_payload` field when verifying these JWTs. If
+         * only JWTs are present on this AttestationOccurrence, then the
+         * `serialized_payload` SHOULD be left empty. Each JWT SHOULD encode a claim
+         * specific to the `resource_uri` of this Occurrence, but this is not
+         * validated by Grafeas metadata API implementations. The JWT itself is opaque
+         * to Grafeas.
+         *
+         * @param Jwt[] $jwts
+         */
+        public function setJwts($jwts)
+        {
+        }
+        /**
+         * @return Jwt[]
+         */
+        public function getJwts()
+        {
+        }
+        /**
+         * Required. The serialized payload that is verified by one or more
+         * `signatures`.
+         *
+         * @param string $serializedPayload
+         */
+        public function setSerializedPayload($serializedPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerializedPayload()
+        {
+        }
+        /**
+         * One or more signatures over `serialized_payload`. Verifier implementations
+         * should consider this attestation message verified if at least one
+         * `signature` verifies `serialized_payload`. See `Signature` in common.proto
+         * for more details on signature structure and verification.
+         *
+         * @param Signature[] $signatures
+         */
+        public function setSignatures($signatures)
+        {
+        }
+        /**
+         * @return Signature[]
+         */
+        public function getSignatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Jwt[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\AttestationOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJwts()
-    {
-    }
-    /**
-     * Required. The serialized payload that is verified by one or more
-     * `signatures`.
-     *
-     * @param string $serializedPayload
-     */
-    public function setSerializedPayload($serializedPayload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerializedPayload()
-    {
-    }
-    /**
-     * One or more signatures over `serialized_payload`. Verifier implementations
-     * should consider this attestation message verified if at least one
-     * `signature` verifies `serialized_payload`. See `Signature` in common.proto
-     * for more details on signature structure and verification.
-     *
-     * @param Signature[] $signatures
-     */
-    public function setSignatures($signatures)
-    {
-    }
-    /**
-     * @return Signature[]
-     */
-    public function getSignatures()
+    class Google_Service_BinaryAuthorization_AttestationOccurrence extends \Google\Service\BinaryAuthorization\AttestationOccurrence
     {
     }
 }

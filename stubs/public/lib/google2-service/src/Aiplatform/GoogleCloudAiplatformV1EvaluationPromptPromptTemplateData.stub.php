@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData extends \Google\Model
-{
-    protected $valuesType = GoogleCloudAiplatformV1Content::class;
-    protected $valuesDataType = 'map';
-    /**
-     * The values for fields in the prompt template.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData extends \Google\Model
     {
+        protected $valuesType = GoogleCloudAiplatformV1Content::class;
+        protected $valuesDataType = 'map';
+        /**
+         * The values for fields in the prompt template.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData
     {
     }
 }

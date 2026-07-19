@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableColumnProperties extends \Google\Model
-{
-    /**
-     * The column width type is unspecified.
-     */
-    public const WIDTH_TYPE_WIDTH_TYPE_UNSPECIFIED = 'WIDTH_TYPE_UNSPECIFIED';
-    /**
-     * The column width is evenly distributed among the other evenly distributed
-     * columns. The width of the column is automatically determined and will have
-     * an equal portion of the width remaining for the table after accounting for
-     * all columns with specified widths.
-     */
-    public const WIDTH_TYPE_EVENLY_DISTRIBUTED = 'EVENLY_DISTRIBUTED';
-    /**
-     * A fixed column width. The width property contains the column's width.
-     */
-    public const WIDTH_TYPE_FIXED_WIDTH = 'FIXED_WIDTH';
-    protected $widthDataType = '';
-    /**
-     * The width type of the column.
-     *
-     * @var string
-     */
-    public $widthType;
-    /**
-     * The width of the column. Set when the column's `width_type` is FIXED_WIDTH.
-     *
-     * @param Dimension $width
-     */
-    public function setWidth(Dimension $width)
+namespace Google\Service\Docs {
+    class TableColumnProperties extends \Google\Model
     {
+        /**
+         * The column width type is unspecified.
+         */
+        public const WIDTH_TYPE_WIDTH_TYPE_UNSPECIFIED = 'WIDTH_TYPE_UNSPECIFIED';
+        /**
+         * The column width is evenly distributed among the other evenly distributed
+         * columns. The width of the column is automatically determined and will have
+         * an equal portion of the width remaining for the table after accounting for
+         * all columns with specified widths.
+         */
+        public const WIDTH_TYPE_EVENLY_DISTRIBUTED = 'EVENLY_DISTRIBUTED';
+        /**
+         * A fixed column width. The width property contains the column's width.
+         */
+        public const WIDTH_TYPE_FIXED_WIDTH = 'FIXED_WIDTH';
+        protected $widthDataType = '';
+        /**
+         * The width type of the column.
+         *
+         * @var string
+         */
+        public $widthType;
+        /**
+         * The width of the column. Set when the column's `width_type` is FIXED_WIDTH.
+         *
+         * @param Dimension $width
+         */
+        public function setWidth(Dimension $width)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getWidth()
+        {
+        }
+        /**
+         * The width type of the column.
+         *
+         * Accepted values: WIDTH_TYPE_UNSPECIFIED, EVENLY_DISTRIBUTED, FIXED_WIDTH
+         *
+         * @param self::WIDTH_TYPE_* $widthType
+         */
+        public function setWidthType($widthType)
+        {
+        }
+        /**
+         * @return self::WIDTH_TYPE_*
+         */
+        public function getWidthType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Docs\TableColumnProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWidth()
-    {
-    }
-    /**
-     * The width type of the column.
-     *
-     * Accepted values: WIDTH_TYPE_UNSPECIFIED, EVENLY_DISTRIBUTED, FIXED_WIDTH
-     *
-     * @param self::WIDTH_TYPE_* $widthType
-     */
-    public function setWidthType($widthType)
-    {
-    }
-    /**
-     * @return self::WIDTH_TYPE_*
-     */
-    public function getWidthType()
+    class Google_Service_Docs_TableColumnProperties extends \Google\Service\Docs\TableColumnProperties
     {
     }
 }

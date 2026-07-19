@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FetchPredictOperationRequest extends \Google\Model
-{
-    /**
-     * Required. The server-assigned name for the operation.
-     *
-     * @var string
-     */
-    public $operationName;
-    /**
-     * Required. The server-assigned name for the operation.
-     *
-     * @param string $operationName
-     */
-    public function setOperationName($operationName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FetchPredictOperationRequest extends \Google\Model
     {
+        /**
+         * Required. The server-assigned name for the operation.
+         *
+         * @var string
+         */
+        public $operationName;
+        /**
+         * Required. The server-assigned name for the operation.
+         *
+         * @param string $operationName
+         */
+        public function setOperationName($operationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchPredictOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FetchPredictOperationRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchPredictOperationRequest
     {
     }
 }

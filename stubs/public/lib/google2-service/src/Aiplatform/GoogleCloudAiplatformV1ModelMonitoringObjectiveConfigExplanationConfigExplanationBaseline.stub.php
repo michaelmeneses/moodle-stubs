@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigExplanationConfigExplanationBaseline extends \Google\Model
-{
-    /**
-     * Should not be set.
-     */
-    public const PREDICTION_FORMAT_PREDICTION_FORMAT_UNSPECIFIED = 'PREDICTION_FORMAT_UNSPECIFIED';
-    /**
-     * Predictions are in JSONL files.
-     */
-    public const PREDICTION_FORMAT_JSONL = 'JSONL';
-    /**
-     * Predictions are in BigQuery.
-     */
-    public const PREDICTION_FORMAT_BIGQUERY = 'BIGQUERY';
-    protected $bigqueryType = GoogleCloudAiplatformV1BigQueryDestination::class;
-    protected $bigqueryDataType = '';
-    protected $gcsType = GoogleCloudAiplatformV1GcsDestination::class;
-    protected $gcsDataType = '';
-    /**
-     * The storage format of the predictions generated BatchPrediction job.
-     *
-     * @var string
-     */
-    public $predictionFormat;
-    /**
-     * BigQuery location for BatchExplain output.
-     *
-     * @param GoogleCloudAiplatformV1BigQueryDestination $bigquery
-     */
-    public function setBigquery(GoogleCloudAiplatformV1BigQueryDestination $bigquery)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigExplanationConfigExplanationBaseline extends \Google\Model
     {
+        /**
+         * Should not be set.
+         */
+        public const PREDICTION_FORMAT_PREDICTION_FORMAT_UNSPECIFIED = 'PREDICTION_FORMAT_UNSPECIFIED';
+        /**
+         * Predictions are in JSONL files.
+         */
+        public const PREDICTION_FORMAT_JSONL = 'JSONL';
+        /**
+         * Predictions are in BigQuery.
+         */
+        public const PREDICTION_FORMAT_BIGQUERY = 'BIGQUERY';
+        protected $bigqueryType = GoogleCloudAiplatformV1BigQueryDestination::class;
+        protected $bigqueryDataType = '';
+        protected $gcsType = GoogleCloudAiplatformV1GcsDestination::class;
+        protected $gcsDataType = '';
+        /**
+         * The storage format of the predictions generated BatchPrediction job.
+         *
+         * @var string
+         */
+        public $predictionFormat;
+        /**
+         * BigQuery location for BatchExplain output.
+         *
+         * @param GoogleCloudAiplatformV1BigQueryDestination $bigquery
+         */
+        public function setBigquery(GoogleCloudAiplatformV1BigQueryDestination $bigquery)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQueryDestination
+         */
+        public function getBigquery()
+        {
+        }
+        /**
+         * Cloud Storage location for BatchExplain output.
+         *
+         * @param GoogleCloudAiplatformV1GcsDestination $gcs
+         */
+        public function setGcs(GoogleCloudAiplatformV1GcsDestination $gcs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsDestination
+         */
+        public function getGcs()
+        {
+        }
+        /**
+         * The storage format of the predictions generated BatchPrediction job.
+         *
+         * Accepted values: PREDICTION_FORMAT_UNSPECIFIED, JSONL, BIGQUERY
+         *
+         * @param self::PREDICTION_FORMAT_* $predictionFormat
+         */
+        public function setPredictionFormat($predictionFormat)
+        {
+        }
+        /**
+         * @return self::PREDICTION_FORMAT_*
+         */
+        public function getPredictionFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQueryDestination
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigExplanationConfigExplanationBaseline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquery()
-    {
-    }
-    /**
-     * Cloud Storage location for BatchExplain output.
-     *
-     * @param GoogleCloudAiplatformV1GcsDestination $gcs
-     */
-    public function setGcs(GoogleCloudAiplatformV1GcsDestination $gcs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsDestination
-     */
-    public function getGcs()
-    {
-    }
-    /**
-     * The storage format of the predictions generated BatchPrediction job.
-     *
-     * Accepted values: PREDICTION_FORMAT_UNSPECIFIED, JSONL, BIGQUERY
-     *
-     * @param self::PREDICTION_FORMAT_* $predictionFormat
-     */
-    public function setPredictionFormat($predictionFormat)
-    {
-    }
-    /**
-     * @return self::PREDICTION_FORMAT_*
-     */
-    public function getPredictionFormat()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigExplanationConfigExplanationBaseline extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigExplanationConfigExplanationBaseline
     {
     }
 }

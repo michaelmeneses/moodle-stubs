@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListToolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tools';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $toolsType = Tool::class;
-    protected $toolsDataType = 'array';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Connectors {
+    class ListToolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tools';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $toolsType = Tool::class;
+        protected $toolsDataType = 'array';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of available tools.
+         *
+         * @param Tool[] $tools
+         */
+        public function setTools($tools)
+        {
+        }
+        /**
+         * @return Tool[]
+         */
+        public function getTools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ListToolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of available tools.
-     *
-     * @param Tool[] $tools
-     */
-    public function setTools($tools)
-    {
-    }
-    /**
-     * @return Tool[]
-     */
-    public function getTools()
+    class Google_Service_Connectors_ListToolsResponse extends \Google\Service\Connectors\ListToolsResponse
     {
     }
 }

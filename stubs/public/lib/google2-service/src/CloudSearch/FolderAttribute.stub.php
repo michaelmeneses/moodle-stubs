@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FolderAttribute extends \Google\Collection
-{
-    protected $collection_key = 'folder';
-    protected $folderType = Folder::class;
-    protected $folderDataType = 'array';
-    /**
-     * @param Folder[]
-     */
-    public function setFolder($folder)
+namespace Google\Service\CloudSearch {
+    class FolderAttribute extends \Google\Collection
     {
+        protected $collection_key = 'folder';
+        protected $folderType = Folder::class;
+        protected $folderDataType = 'array';
+        /**
+         * @param Folder[]
+         */
+        public function setFolder($folder)
+        {
+        }
+        /**
+         * @return Folder[]
+         */
+        public function getFolder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Folder[]
+     * Runtime class alias of \Google\Service\CloudSearch\FolderAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolder()
+    class Google_Service_CloudSearch_FolderAttribute extends \Google\Service\CloudSearch\FolderAttribute
     {
     }
 }

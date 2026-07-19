@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class EmailAddress extends \Google\Model
-{
-    /**
-     * The display name of the email.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The type of the email address translated and formatted in the
-     * viewer's account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @var string
-     */
-    public $formattedType;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The type of the email address. The type can be custom or one of these
-     * predefined values: * `home` * `work` * `other`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The email address.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The display name of the email.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\PeopleService {
+    class EmailAddress extends \Google\Model
     {
+        /**
+         * The display name of the email.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The type of the email address translated and formatted in the
+         * viewer's account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @var string
+         */
+        public $formattedType;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The type of the email address. The type can be custom or one of these
+         * predefined values: * `home` * `work` * `other`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The email address.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The display name of the email.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The type of the email address translated and formatted in the
+         * viewer's account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @param string $formattedType
+         */
+        public function setFormattedType($formattedType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedType()
+        {
+        }
+        /**
+         * Metadata about the email address.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The type of the email address. The type can be custom or one of these
+         * predefined values: * `home` * `work` * `other`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The email address.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\EmailAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The type of the email address translated and formatted in the
-     * viewer's account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @param string $formattedType
-     */
-    public function setFormattedType($formattedType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedType()
-    {
-    }
-    /**
-     * Metadata about the email address.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The type of the email address. The type can be custom or one of these
-     * predefined values: * `home` * `work` * `other`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The email address.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_EmailAddress extends \Google\Service\PeopleService\EmailAddress
     {
     }
 }

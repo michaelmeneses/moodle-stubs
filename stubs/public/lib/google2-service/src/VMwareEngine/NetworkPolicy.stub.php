@@ -21,226 +21,235 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class NetworkPolicy extends \Google\Model
-{
-    /**
-     * Output only. Creation time of this resource.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. User-provided description for this network policy.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. IP address range in CIDR notation used to create internet access
-     * and external IP access. An RFC 1918 CIDR block, with a "/26" prefix, is
-     * required. The range cannot overlap with any prefixes either in the consumer
-     * VPC network or in use by the private clouds attached to that VPC network.
-     *
-     * @var string
-     */
-    public $edgeServicesCidr;
-    protected $externalIpType = NetworkService::class;
-    protected $externalIpDataType = '';
-    protected $internetAccessType = NetworkService::class;
-    protected $internetAccessDataType = '';
-    /**
-     * Output only. Identifier. The resource name of this network policy. Resource
-     * names are schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-central1/networkPolicies/my-network-
-     * policy`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. System-generated unique identifier for the resource.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Last update time of this resource.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The relative resource name of the VMware Engine network. Specify
-     * the name in the following form: `projects/{project}/locations/{location}/vm
-     * wareEngineNetworks/{vmware_engine_network_id}` where `{project}` can either
-     * be a project number or a project ID.
-     *
-     * @var string
-     */
-    public $vmwareEngineNetwork;
-    /**
-     * Output only. The canonical name of the VMware Engine network in the form: `
-     * projects/{project_number}/locations/{location}/vmwareEngineNetworks/{vmware
-     * _engine_network_id}`
-     *
-     * @var string
-     */
-    public $vmwareEngineNetworkCanonical;
-    /**
-     * Output only. Creation time of this resource.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\VMwareEngine {
+    class NetworkPolicy extends \Google\Model
     {
+        /**
+         * Output only. Creation time of this resource.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. User-provided description for this network policy.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. IP address range in CIDR notation used to create internet access
+         * and external IP access. An RFC 1918 CIDR block, with a "/26" prefix, is
+         * required. The range cannot overlap with any prefixes either in the consumer
+         * VPC network or in use by the private clouds attached to that VPC network.
+         *
+         * @var string
+         */
+        public $edgeServicesCidr;
+        protected $externalIpType = NetworkService::class;
+        protected $externalIpDataType = '';
+        protected $internetAccessType = NetworkService::class;
+        protected $internetAccessDataType = '';
+        /**
+         * Output only. Identifier. The resource name of this network policy. Resource
+         * names are schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-central1/networkPolicies/my-network-
+         * policy`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. System-generated unique identifier for the resource.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Last update time of this resource.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The relative resource name of the VMware Engine network. Specify
+         * the name in the following form: `projects/{project}/locations/{location}/vm
+         * wareEngineNetworks/{vmware_engine_network_id}` where `{project}` can either
+         * be a project number or a project ID.
+         *
+         * @var string
+         */
+        public $vmwareEngineNetwork;
+        /**
+         * Output only. The canonical name of the VMware Engine network in the form: `
+         * projects/{project_number}/locations/{location}/vmwareEngineNetworks/{vmware
+         * _engine_network_id}`
+         *
+         * @var string
+         */
+        public $vmwareEngineNetworkCanonical;
+        /**
+         * Output only. Creation time of this resource.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. User-provided description for this network policy.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. IP address range in CIDR notation used to create internet access
+         * and external IP access. An RFC 1918 CIDR block, with a "/26" prefix, is
+         * required. The range cannot overlap with any prefixes either in the consumer
+         * VPC network or in use by the private clouds attached to that VPC network.
+         *
+         * @param string $edgeServicesCidr
+         */
+        public function setEdgeServicesCidr($edgeServicesCidr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEdgeServicesCidr()
+        {
+        }
+        /**
+         * Network service that allows External IP addresses to be assigned to VMware
+         * workloads. This service can only be enabled when `internet_access` is also
+         * enabled.
+         *
+         * @param NetworkService $externalIp
+         */
+        public function setExternalIp(NetworkService $externalIp)
+        {
+        }
+        /**
+         * @return NetworkService
+         */
+        public function getExternalIp()
+        {
+        }
+        /**
+         * Network service that allows VMware workloads to access the internet.
+         *
+         * @param NetworkService $internetAccess
+         */
+        public function setInternetAccess(NetworkService $internetAccess)
+        {
+        }
+        /**
+         * @return NetworkService
+         */
+        public function getInternetAccess()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource name of this network policy. Resource
+         * names are schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-central1/networkPolicies/my-network-
+         * policy`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. System-generated unique identifier for the resource.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Last update time of this resource.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. The relative resource name of the VMware Engine network. Specify
+         * the name in the following form: `projects/{project}/locations/{location}/vm
+         * wareEngineNetworks/{vmware_engine_network_id}` where `{project}` can either
+         * be a project number or a project ID.
+         *
+         * @param string $vmwareEngineNetwork
+         */
+        public function setVmwareEngineNetwork($vmwareEngineNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmwareEngineNetwork()
+        {
+        }
+        /**
+         * Output only. The canonical name of the VMware Engine network in the form: `
+         * projects/{project_number}/locations/{location}/vmwareEngineNetworks/{vmware
+         * _engine_network_id}`
+         *
+         * @param string $vmwareEngineNetworkCanonical
+         */
+        public function setVmwareEngineNetworkCanonical($vmwareEngineNetworkCanonical)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmwareEngineNetworkCanonical()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\NetworkPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. User-provided description for this network policy.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. IP address range in CIDR notation used to create internet access
-     * and external IP access. An RFC 1918 CIDR block, with a "/26" prefix, is
-     * required. The range cannot overlap with any prefixes either in the consumer
-     * VPC network or in use by the private clouds attached to that VPC network.
-     *
-     * @param string $edgeServicesCidr
-     */
-    public function setEdgeServicesCidr($edgeServicesCidr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEdgeServicesCidr()
-    {
-    }
-    /**
-     * Network service that allows External IP addresses to be assigned to VMware
-     * workloads. This service can only be enabled when `internet_access` is also
-     * enabled.
-     *
-     * @param NetworkService $externalIp
-     */
-    public function setExternalIp(NetworkService $externalIp)
-    {
-    }
-    /**
-     * @return NetworkService
-     */
-    public function getExternalIp()
-    {
-    }
-    /**
-     * Network service that allows VMware workloads to access the internet.
-     *
-     * @param NetworkService $internetAccess
-     */
-    public function setInternetAccess(NetworkService $internetAccess)
-    {
-    }
-    /**
-     * @return NetworkService
-     */
-    public function getInternetAccess()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource name of this network policy. Resource
-     * names are schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-central1/networkPolicies/my-network-
-     * policy`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. System-generated unique identifier for the resource.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Last update time of this resource.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. The relative resource name of the VMware Engine network. Specify
-     * the name in the following form: `projects/{project}/locations/{location}/vm
-     * wareEngineNetworks/{vmware_engine_network_id}` where `{project}` can either
-     * be a project number or a project ID.
-     *
-     * @param string $vmwareEngineNetwork
-     */
-    public function setVmwareEngineNetwork($vmwareEngineNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmwareEngineNetwork()
-    {
-    }
-    /**
-     * Output only. The canonical name of the VMware Engine network in the form: `
-     * projects/{project_number}/locations/{location}/vmwareEngineNetworks/{vmware
-     * _engine_network_id}`
-     *
-     * @param string $vmwareEngineNetworkCanonical
-     */
-    public function setVmwareEngineNetworkCanonical($vmwareEngineNetworkCanonical)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmwareEngineNetworkCanonical()
+    class Google_Service_VMwareEngine_NetworkPolicy extends \Google\Service\VMwareEngine\NetworkPolicy
     {
     }
 }

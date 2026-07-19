@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadGoogetArtifactResponse extends \Google\Collection
-{
-    protected $collection_key = 'googetArtifacts';
-    protected $googetArtifactsType = GoogetArtifact::class;
-    protected $googetArtifactsDataType = 'array';
-    /**
-     * The GooGet artifacts updated.
-     *
-     * @param GoogetArtifact[] $googetArtifacts
-     */
-    public function setGoogetArtifacts($googetArtifacts)
+namespace Google\Service\ArtifactRegistry {
+    class UploadGoogetArtifactResponse extends \Google\Collection
     {
+        protected $collection_key = 'googetArtifacts';
+        protected $googetArtifactsType = GoogetArtifact::class;
+        protected $googetArtifactsDataType = 'array';
+        /**
+         * The GooGet artifacts updated.
+         *
+         * @param GoogetArtifact[] $googetArtifacts
+         */
+        public function setGoogetArtifacts($googetArtifacts)
+        {
+        }
+        /**
+         * @return GoogetArtifact[]
+         */
+        public function getGoogetArtifacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogetArtifact[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadGoogetArtifactResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogetArtifacts()
+    class Google_Service_ArtifactRegistry_UploadGoogetArtifactResponse extends \Google\Service\ArtifactRegistry\UploadGoogetArtifactResponse
     {
     }
 }

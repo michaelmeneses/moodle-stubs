@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class RelevantLocation extends \Google\Model
-{
-    /**
-     * Type unspecified.
-     */
-    public const RELATION_TYPE_RELATION_TYPE_UNSPECIFIED = 'RELATION_TYPE_UNSPECIFIED';
-    /**
-     * This represents a relation between 2 locations which share one physical
-     * area, same brand/upper management/organization, but with different key
-     * attributes like store hours or phone numbers. For example, Costco Pharmacy
-     * is a department in Costco Wholesale.
-     */
-    public const RELATION_TYPE_DEPARTMENT_OF = 'DEPARTMENT_OF';
-    /**
-     * This represents the cases where 2 locations are co-located in the same
-     * physical location, but from different companies (e.g. Starbucks in a
-     * Safeway, shops in a mall).
-     */
-    public const RELATION_TYPE_INDEPENDENT_ESTABLISHMENT_IN = 'INDEPENDENT_ESTABLISHMENT_IN';
-    /**
-     * Required. Specify the location that is on the other side of the relation by
-     * its placeID.
-     *
-     * @var string
-     */
-    public $placeId;
-    /**
-     * Required. The type of the relationship.
-     *
-     * @var string
-     */
-    public $relationType;
-    /**
-     * Required. Specify the location that is on the other side of the relation by
-     * its placeID.
-     *
-     * @param string $placeId
-     */
-    public function setPlaceId($placeId)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class RelevantLocation extends \Google\Model
     {
+        /**
+         * Type unspecified.
+         */
+        public const RELATION_TYPE_RELATION_TYPE_UNSPECIFIED = 'RELATION_TYPE_UNSPECIFIED';
+        /**
+         * This represents a relation between 2 locations which share one physical
+         * area, same brand/upper management/organization, but with different key
+         * attributes like store hours or phone numbers. For example, Costco Pharmacy
+         * is a department in Costco Wholesale.
+         */
+        public const RELATION_TYPE_DEPARTMENT_OF = 'DEPARTMENT_OF';
+        /**
+         * This represents the cases where 2 locations are co-located in the same
+         * physical location, but from different companies (e.g. Starbucks in a
+         * Safeway, shops in a mall).
+         */
+        public const RELATION_TYPE_INDEPENDENT_ESTABLISHMENT_IN = 'INDEPENDENT_ESTABLISHMENT_IN';
+        /**
+         * Required. Specify the location that is on the other side of the relation by
+         * its placeID.
+         *
+         * @var string
+         */
+        public $placeId;
+        /**
+         * Required. The type of the relationship.
+         *
+         * @var string
+         */
+        public $relationType;
+        /**
+         * Required. Specify the location that is on the other side of the relation by
+         * its placeID.
+         *
+         * @param string $placeId
+         */
+        public function setPlaceId($placeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceId()
+        {
+        }
+        /**
+         * Required. The type of the relationship.
+         *
+         * Accepted values: RELATION_TYPE_UNSPECIFIED, DEPARTMENT_OF,
+         * INDEPENDENT_ESTABLISHMENT_IN
+         *
+         * @param self::RELATION_TYPE_* $relationType
+         */
+        public function setRelationType($relationType)
+        {
+        }
+        /**
+         * @return self::RELATION_TYPE_*
+         */
+        public function getRelationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\RelevantLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceId()
-    {
-    }
-    /**
-     * Required. The type of the relationship.
-     *
-     * Accepted values: RELATION_TYPE_UNSPECIFIED, DEPARTMENT_OF,
-     * INDEPENDENT_ESTABLISHMENT_IN
-     *
-     * @param self::RELATION_TYPE_* $relationType
-     */
-    public function setRelationType($relationType)
-    {
-    }
-    /**
-     * @return self::RELATION_TYPE_*
-     */
-    public function getRelationType()
+    class Google_Service_MyBusinessBusinessInformation_RelevantLocation extends \Google\Service\MyBusinessBusinessInformation\RelevantLocation
     {
     }
 }

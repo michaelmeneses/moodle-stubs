@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class Header extends \Google\Model
-{
-    /**
-     * Unspecified header.
-     */
-    public const TYPE_HEADER_TYPE_UNSPECIFIED = 'HEADER_TYPE_UNSPECIFIED';
-    /**
-     * Dimension header type.
-     */
-    public const TYPE_DIMENSION = 'DIMENSION';
-    /**
-     * Tally header type.
-     */
-    public const TYPE_METRIC_TALLY = 'METRIC_TALLY';
-    /**
-     * Ratio header type.
-     */
-    public const TYPE_METRIC_RATIO = 'METRIC_RATIO';
-    /**
-     * Currency header type.
-     */
-    public const TYPE_METRIC_CURRENCY = 'METRIC_CURRENCY';
-    /**
-     * Milliseconds header type.
-     */
-    public const TYPE_METRIC_MILLISECONDS = 'METRIC_MILLISECONDS';
-    /**
-     * Decimal header type.
-     */
-    public const TYPE_METRIC_DECIMAL = 'METRIC_DECIMAL';
-    /**
-     * The [ISO-4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) of
-     * this column. Only present if the header type is METRIC_CURRENCY.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Required. Name of the header.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Type of the header.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The [ISO-4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) of
-     * this column. Only present if the header type is METRIC_CURRENCY.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\Adsense {
+    class Header extends \Google\Model
     {
+        /**
+         * Unspecified header.
+         */
+        public const TYPE_HEADER_TYPE_UNSPECIFIED = 'HEADER_TYPE_UNSPECIFIED';
+        /**
+         * Dimension header type.
+         */
+        public const TYPE_DIMENSION = 'DIMENSION';
+        /**
+         * Tally header type.
+         */
+        public const TYPE_METRIC_TALLY = 'METRIC_TALLY';
+        /**
+         * Ratio header type.
+         */
+        public const TYPE_METRIC_RATIO = 'METRIC_RATIO';
+        /**
+         * Currency header type.
+         */
+        public const TYPE_METRIC_CURRENCY = 'METRIC_CURRENCY';
+        /**
+         * Milliseconds header type.
+         */
+        public const TYPE_METRIC_MILLISECONDS = 'METRIC_MILLISECONDS';
+        /**
+         * Decimal header type.
+         */
+        public const TYPE_METRIC_DECIMAL = 'METRIC_DECIMAL';
+        /**
+         * The [ISO-4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) of
+         * this column. Only present if the header type is METRIC_CURRENCY.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Required. Name of the header.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Type of the header.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The [ISO-4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) of
+         * this column. Only present if the header type is METRIC_CURRENCY.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * Required. Name of the header.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Type of the header.
+         *
+         * Accepted values: HEADER_TYPE_UNSPECIFIED, DIMENSION, METRIC_TALLY,
+         * METRIC_RATIO, METRIC_CURRENCY, METRIC_MILLISECONDS, METRIC_DECIMAL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\Header registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * Required. Name of the header.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Type of the header.
-     *
-     * Accepted values: HEADER_TYPE_UNSPECIFIED, DIMENSION, METRIC_TALLY,
-     * METRIC_RATIO, METRIC_CURRENCY, METRIC_MILLISECONDS, METRIC_DECIMAL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Adsense_Header extends \Google\Service\Adsense\Header
     {
     }
 }

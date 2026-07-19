@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "targetingTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $targetingTypes = $displayvideoService->partners_targetingTypes;
- *  </code>
- */
-class PartnersTargetingTypes extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    /**
+     * The "targetingTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $targetingTypes = $displayvideoService->partners_targetingTypes;
+     *  </code>
+     */
+    class PartnersTargetingTypes extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\PartnersTargetingTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DisplayVideo_Resource_PartnersTargetingTypes extends \Google\Service\DisplayVideo\Resource\PartnersTargetingTypes
+    {
+    }
 }

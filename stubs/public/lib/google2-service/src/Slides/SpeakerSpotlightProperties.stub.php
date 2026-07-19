@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class SpeakerSpotlightProperties extends \Google\Model
-{
-    protected $outlineType = Outline::class;
-    protected $outlineDataType = '';
-    protected $shadowType = Shadow::class;
-    protected $shadowDataType = '';
-    /**
-     * The outline of the Speaker Spotlight. If not set, it has no outline.
-     *
-     * @param Outline $outline
-     */
-    public function setOutline(Outline $outline)
+namespace Google\Service\Slides {
+    class SpeakerSpotlightProperties extends \Google\Model
     {
+        protected $outlineType = Outline::class;
+        protected $outlineDataType = '';
+        protected $shadowType = Shadow::class;
+        protected $shadowDataType = '';
+        /**
+         * The outline of the Speaker Spotlight. If not set, it has no outline.
+         *
+         * @param Outline $outline
+         */
+        public function setOutline(Outline $outline)
+        {
+        }
+        /**
+         * @return Outline
+         */
+        public function getOutline()
+        {
+        }
+        /**
+         * The shadow of the Speaker Spotlight. If not set, it has no shadow.
+         *
+         * @param Shadow $shadow
+         */
+        public function setShadow(Shadow $shadow)
+        {
+        }
+        /**
+         * @return Shadow
+         */
+        public function getShadow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Outline
+     * Runtime class alias of \Google\Service\Slides\SpeakerSpotlightProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutline()
-    {
-    }
-    /**
-     * The shadow of the Speaker Spotlight. If not set, it has no shadow.
-     *
-     * @param Shadow $shadow
-     */
-    public function setShadow(Shadow $shadow)
-    {
-    }
-    /**
-     * @return Shadow
-     */
-    public function getShadow()
+    class Google_Service_Slides_SpeakerSpotlightProperties extends \Google\Service\Slides\SpeakerSpotlightProperties
     {
     }
 }

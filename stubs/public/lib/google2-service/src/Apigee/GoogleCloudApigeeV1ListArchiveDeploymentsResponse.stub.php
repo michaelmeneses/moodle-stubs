@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListArchiveDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'archiveDeployments';
-    protected $archiveDeploymentsType = GoogleCloudApigeeV1ArchiveDeployment::class;
-    protected $archiveDeploymentsDataType = 'array';
-    /**
-     * Page token that you can include in a ListArchiveDeployments request to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Archive Deployments in the specified environment.
-     *
-     * @param GoogleCloudApigeeV1ArchiveDeployment[] $archiveDeployments
-     */
-    public function setArchiveDeployments($archiveDeployments)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListArchiveDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'archiveDeployments';
+        protected $archiveDeploymentsType = GoogleCloudApigeeV1ArchiveDeployment::class;
+        protected $archiveDeploymentsDataType = 'array';
+        /**
+         * Page token that you can include in a ListArchiveDeployments request to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Archive Deployments in the specified environment.
+         *
+         * @param GoogleCloudApigeeV1ArchiveDeployment[] $archiveDeployments
+         */
+        public function setArchiveDeployments($archiveDeployments)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ArchiveDeployment[]
+         */
+        public function getArchiveDeployments()
+        {
+        }
+        /**
+         * Page token that you can include in a ListArchiveDeployments request to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ArchiveDeployment[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListArchiveDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveDeployments()
-    {
-    }
-    /**
-     * Page token that you can include in a ListArchiveDeployments request to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListArchiveDeploymentsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListArchiveDeploymentsResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Media extends \Google\Model
-{
-    /**
-     * Name of the media resource.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Name of the media resource.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\HangoutsChat {
+    class Media extends \Google\Model
     {
+        /**
+         * Name of the media resource.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Name of the media resource.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_HangoutsChat_Media extends \Google\Service\HangoutsChat\Media
     {
     }
 }

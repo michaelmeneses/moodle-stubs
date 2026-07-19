@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRecaptchaOptionsConfig extends \Google\Model
-{
-    /**
-     * An optional field to supply a reCAPTCHA site key to be used for all the
-     * rules using the redirect action with the type of GOOGLE_RECAPTCHA under the
-     * security policy. The specified site key needs to be created from the
-     * reCAPTCHA API. The user is responsible for the validity of the specified
-     * site key. If not specified, a Google-managed site key is used. This field
-     * is only supported in Global Security Policies of type CLOUD_ARMOR.
-     *
-     * @var string
-     */
-    public $redirectSiteKey;
-    /**
-     * An optional field to supply a reCAPTCHA site key to be used for all the
-     * rules using the redirect action with the type of GOOGLE_RECAPTCHA under the
-     * security policy. The specified site key needs to be created from the
-     * reCAPTCHA API. The user is responsible for the validity of the specified
-     * site key. If not specified, a Google-managed site key is used. This field
-     * is only supported in Global Security Policies of type CLOUD_ARMOR.
-     *
-     * @param string $redirectSiteKey
-     */
-    public function setRedirectSiteKey($redirectSiteKey)
+namespace Google\Service\Compute {
+    class SecurityPolicyRecaptchaOptionsConfig extends \Google\Model
     {
+        /**
+         * An optional field to supply a reCAPTCHA site key to be used for all the
+         * rules using the redirect action with the type of GOOGLE_RECAPTCHA under the
+         * security policy. The specified site key needs to be created from the
+         * reCAPTCHA API. The user is responsible for the validity of the specified
+         * site key. If not specified, a Google-managed site key is used. This field
+         * is only supported in Global Security Policies of type CLOUD_ARMOR.
+         *
+         * @var string
+         */
+        public $redirectSiteKey;
+        /**
+         * An optional field to supply a reCAPTCHA site key to be used for all the
+         * rules using the redirect action with the type of GOOGLE_RECAPTCHA under the
+         * security policy. The specified site key needs to be created from the
+         * reCAPTCHA API. The user is responsible for the validity of the specified
+         * site key. If not specified, a Google-managed site key is used. This field
+         * is only supported in Global Security Policies of type CLOUD_ARMOR.
+         *
+         * @param string $redirectSiteKey
+         */
+        public function setRedirectSiteKey($redirectSiteKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectSiteKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRecaptchaOptionsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRedirectSiteKey()
+    class Google_Service_Compute_SecurityPolicyRecaptchaOptionsConfig extends \Google\Service\Compute\SecurityPolicyRecaptchaOptionsConfig
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGetClientMetadataResponse extends \Google\Model
-{
-    protected $propertiesType = GoogleCloudIntegrationsV1alphaProjectProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Required. Required: The client configuration that was requested
-     *
-     * @param GoogleCloudIntegrationsV1alphaProjectProperties $properties
-     */
-    public function setProperties(GoogleCloudIntegrationsV1alphaProjectProperties $properties)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGetClientMetadataResponse extends \Google\Model
     {
+        protected $propertiesType = GoogleCloudIntegrationsV1alphaProjectProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Required. Required: The client configuration that was requested
+         *
+         * @param GoogleCloudIntegrationsV1alphaProjectProperties $properties
+         */
+        public function setProperties(GoogleCloudIntegrationsV1alphaProjectProperties $properties)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaProjectProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaProjectProperties
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetClientMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGetClientMetadataResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetClientMetadataResponse
     {
     }
 }

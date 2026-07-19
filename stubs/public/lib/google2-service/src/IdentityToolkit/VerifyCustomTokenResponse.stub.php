@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class VerifyCustomTokenResponse extends \Google\Model
-{
-    /**
-     * If idToken is STS id token, then this field will be expiration time of STS
-     * id token in seconds.
-     *
-     * @var string
-     */
-    public $expiresIn;
-    /**
-     * The GITKit token for authenticated user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * True if it's a new user sign-in, false if it's a returning user.
-     *
-     * @var bool
-     */
-    public $isNewUser;
-    /**
-     * The fixed string "identitytoolkit#VerifyCustomTokenResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * If idToken is STS id token, then this field will be refresh token.
-     *
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * If idToken is STS id token, then this field will be expiration time of STS
-     * id token in seconds.
-     *
-     * @param string $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
+namespace Google\Service\IdentityToolkit {
+    class VerifyCustomTokenResponse extends \Google\Model
     {
+        /**
+         * If idToken is STS id token, then this field will be expiration time of STS
+         * id token in seconds.
+         *
+         * @var string
+         */
+        public $expiresIn;
+        /**
+         * The GITKit token for authenticated user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * True if it's a new user sign-in, false if it's a returning user.
+         *
+         * @var bool
+         */
+        public $isNewUser;
+        /**
+         * The fixed string "identitytoolkit#VerifyCustomTokenResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * If idToken is STS id token, then this field will be refresh token.
+         *
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * If idToken is STS id token, then this field will be expiration time of STS
+         * id token in seconds.
+         *
+         * @param string $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * The GITKit token for authenticated user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * True if it's a new user sign-in, false if it's a returning user.
+         *
+         * @param bool $isNewUser
+         */
+        public function setIsNewUser($isNewUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsNewUser()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#VerifyCustomTokenResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * If idToken is STS id token, then this field will be refresh token.
+         *
+         * @param string $refreshToken
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\VerifyCustomTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * The GITKit token for authenticated user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * True if it's a new user sign-in, false if it's a returning user.
-     *
-     * @param bool $isNewUser
-     */
-    public function setIsNewUser($isNewUser)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsNewUser()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#VerifyCustomTokenResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * If idToken is STS id token, then this field will be refresh token.
-     *
-     * @param string $refreshToken
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
+    class Google_Service_IdentityToolkit_VerifyCustomTokenResponse extends \Google\Service\IdentityToolkit\VerifyCustomTokenResponse
     {
     }
 }

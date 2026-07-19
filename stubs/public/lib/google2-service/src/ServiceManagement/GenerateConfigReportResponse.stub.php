@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class GenerateConfigReportResponse extends \Google\Collection
-{
-    protected $collection_key = 'diagnostics';
-    protected $changeReportsType = ChangeReport::class;
-    protected $changeReportsDataType = 'array';
-    protected $diagnosticsType = Diagnostic::class;
-    protected $diagnosticsDataType = 'array';
-    /**
-     * ID of the service configuration this report belongs to.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of the service this report belongs to.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * list of ChangeReport, each corresponding to comparison between two service
-     * configurations.
-     *
-     * @param ChangeReport[] $changeReports
-     */
-    public function setChangeReports($changeReports)
+namespace Google\Service\ServiceManagement {
+    class GenerateConfigReportResponse extends \Google\Collection
     {
+        protected $collection_key = 'diagnostics';
+        protected $changeReportsType = ChangeReport::class;
+        protected $changeReportsDataType = 'array';
+        protected $diagnosticsType = Diagnostic::class;
+        protected $diagnosticsDataType = 'array';
+        /**
+         * ID of the service configuration this report belongs to.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of the service this report belongs to.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * list of ChangeReport, each corresponding to comparison between two service
+         * configurations.
+         *
+         * @param ChangeReport[] $changeReports
+         */
+        public function setChangeReports($changeReports)
+        {
+        }
+        /**
+         * @return ChangeReport[]
+         */
+        public function getChangeReports()
+        {
+        }
+        /**
+         * Errors / Linter warnings associated with the service definition this report
+         * belongs to.
+         *
+         * @param Diagnostic[] $diagnostics
+         */
+        public function setDiagnostics($diagnostics)
+        {
+        }
+        /**
+         * @return Diagnostic[]
+         */
+        public function getDiagnostics()
+        {
+        }
+        /**
+         * ID of the service configuration this report belongs to.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of the service this report belongs to.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChangeReport[]
+     * Runtime class alias of \Google\Service\ServiceManagement\GenerateConfigReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeReports()
-    {
-    }
-    /**
-     * Errors / Linter warnings associated with the service definition this report
-     * belongs to.
-     *
-     * @param Diagnostic[] $diagnostics
-     */
-    public function setDiagnostics($diagnostics)
-    {
-    }
-    /**
-     * @return Diagnostic[]
-     */
-    public function getDiagnostics()
-    {
-    }
-    /**
-     * ID of the service configuration this report belongs to.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Name of the service this report belongs to.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_ServiceManagement_GenerateConfigReportResponse extends \Google\Service\ServiceManagement\GenerateConfigReportResponse
     {
     }
 }

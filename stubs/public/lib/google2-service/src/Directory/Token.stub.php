@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Token extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Whether the application is registered with Google. The value is `true` if
-     * the application has an anonymous Client ID.
-     *
-     * @var bool
-     */
-    public $anonymous;
-    /**
-     * The Client ID of the application the token is issued to.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * The displayable name of the application the token is issued to.
-     *
-     * @var string
-     */
-    public $displayText;
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The type of the API resource. This is always `admin#directory#token`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Whether the token is issued to an installed application. The value is
-     * `true` if the application is installed to a desktop or mobile device.
-     *
-     * @var bool
-     */
-    public $nativeApp;
-    /**
-     * A list of authorization scopes the application is granted.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * The unique ID of the user that issued the token.
-     *
-     * @var string
-     */
-    public $userKey;
-    /**
-     * Whether the application is registered with Google. The value is `true` if
-     * the application has an anonymous Client ID.
-     *
-     * @param bool $anonymous
-     */
-    public function setAnonymous($anonymous)
+namespace Google\Service\Directory {
+    class Token extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Whether the application is registered with Google. The value is `true` if
+         * the application has an anonymous Client ID.
+         *
+         * @var bool
+         */
+        public $anonymous;
+        /**
+         * The Client ID of the application the token is issued to.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * The displayable name of the application the token is issued to.
+         *
+         * @var string
+         */
+        public $displayText;
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The type of the API resource. This is always `admin#directory#token`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Whether the token is issued to an installed application. The value is
+         * `true` if the application is installed to a desktop or mobile device.
+         *
+         * @var bool
+         */
+        public $nativeApp;
+        /**
+         * A list of authorization scopes the application is granted.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * The unique ID of the user that issued the token.
+         *
+         * @var string
+         */
+        public $userKey;
+        /**
+         * Whether the application is registered with Google. The value is `true` if
+         * the application has an anonymous Client ID.
+         *
+         * @param bool $anonymous
+         */
+        public function setAnonymous($anonymous)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAnonymous()
+        {
+        }
+        /**
+         * The Client ID of the application the token is issued to.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * The displayable name of the application the token is issued to.
+         *
+         * @param string $displayText
+         */
+        public function setDisplayText($displayText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayText()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#token`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Whether the token is issued to an installed application. The value is
+         * `true` if the application is installed to a desktop or mobile device.
+         *
+         * @param bool $nativeApp
+         */
+        public function setNativeApp($nativeApp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNativeApp()
+        {
+        }
+        /**
+         * A list of authorization scopes the application is granted.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * The unique ID of the user that issued the token.
+         *
+         * @param string $userKey
+         */
+        public function setUserKey($userKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Directory\Token registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnonymous()
-    {
-    }
-    /**
-     * The Client ID of the application the token is issued to.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * The displayable name of the application the token is issued to.
-     *
-     * @param string $displayText
-     */
-    public function setDisplayText($displayText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayText()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#token`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Whether the token is issued to an installed application. The value is
-     * `true` if the application is installed to a desktop or mobile device.
-     *
-     * @param bool $nativeApp
-     */
-    public function setNativeApp($nativeApp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNativeApp()
-    {
-    }
-    /**
-     * A list of authorization scopes the application is granted.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * The unique ID of the user that issued the token.
-     *
-     * @param string $userKey
-     */
-    public function setUserKey($userKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserKey()
+    class Google_Service_Directory_Token extends \Google\Service\Directory\Token
     {
     }
 }

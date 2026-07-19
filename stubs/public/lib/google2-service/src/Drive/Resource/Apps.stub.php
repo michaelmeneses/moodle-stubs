@@ -21,55 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "apps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $apps = $driveService->apps;
- *  </code>
- */
-class Apps extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\App;
+    use Google\Service\Drive\AppList;
     /**
-     * Gets a specific app. For more information, see [Return user
-     * info](https://developers.google.com/workspace/drive/api/guides/user-info).
-     * (apps.get)
-     *
-     * @param string $appId The ID of the app.
-     * @param array $optParams Optional parameters.
-     * @return App
-     * @throws \Google\Service\Exception
+     * The "apps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $apps = $driveService->apps;
+     *  </code>
      */
-    public function get($appId, $optParams = [])
+    class Apps extends \Google\Service\Resource
     {
+        /**
+         * Gets a specific app. For more information, see [Return user
+         * info](https://developers.google.com/workspace/drive/api/guides/user-info).
+         * (apps.get)
+         *
+         * @param string $appId The ID of the app.
+         * @param array $optParams Optional parameters.
+         * @return App
+         * @throws \Google\Service\Exception
+         */
+        public function get($appId, $optParams = [])
+        {
+        }
+        /**
+         * Lists a user's installed apps. For more information, see [Return user
+         * info](https://developers.google.com/workspace/drive/api/guides/user-info).
+         * (apps.listApps)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string appFilterExtensions A comma-separated list of file
+         * extensions to limit returned results. All results within the given app query
+         * scope which can open any of the given file extensions are included in the
+         * response. If `appFilterMimeTypes` are provided as well, the result is a union
+         * of the two resulting app lists.
+         * @opt_param string appFilterMimeTypes A comma-separated list of file
+         * extensions to limit returned results. All results within the given app query
+         * scope which can open any of the given MIME types will be included in the
+         * response. If `appFilterExtensions` are provided as well, the result is a
+         * union of the two resulting app lists.
+         * @opt_param string languageCode A language or locale code, as defined by BCP
+         * 47, with some extensions from Unicode's LDML format
+         * (http://www.unicode.org/reports/tr35/).
+         * @return AppList
+         * @throws \Google\Service\Exception
+         */
+        public function listApps($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists a user's installed apps. For more information, see [Return user
-     * info](https://developers.google.com/workspace/drive/api/guides/user-info).
-     * (apps.listApps)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string appFilterExtensions A comma-separated list of file
-     * extensions to limit returned results. All results within the given app query
-     * scope which can open any of the given file extensions are included in the
-     * response. If `appFilterMimeTypes` are provided as well, the result is a union
-     * of the two resulting app lists.
-     * @opt_param string appFilterMimeTypes A comma-separated list of file
-     * extensions to limit returned results. All results within the given app query
-     * scope which can open any of the given MIME types will be included in the
-     * response. If `appFilterExtensions` are provided as well, the result is a
-     * union of the two resulting app lists.
-     * @opt_param string languageCode A language or locale code, as defined by BCP
-     * 47, with some extensions from Unicode's LDML format
-     * (http://www.unicode.org/reports/tr35/).
-     * @return AppList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Drive\Resource\Apps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listApps($optParams = [])
+    class Google_Service_Drive_Resource_Apps extends \Google\Service\Drive\Resource\Apps
     {
     }
 }

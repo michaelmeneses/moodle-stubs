@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ListMonitoringPointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'monitoringPoints';
-    protected $monitoringPointsType = MonitoringPoint::class;
-    protected $monitoringPointsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param MonitoringPoint[]
-     */
-    public function setMonitoringPoints($monitoringPoints)
+namespace Google\Service\NetworkManagement {
+    class ListMonitoringPointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'monitoringPoints';
+        protected $monitoringPointsType = MonitoringPoint::class;
+        protected $monitoringPointsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param MonitoringPoint[]
+         */
+        public function setMonitoringPoints($monitoringPoints)
+        {
+        }
+        /**
+         * @return MonitoringPoint[]
+         */
+        public function getMonitoringPoints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MonitoringPoint[]
+     * Runtime class alias of \Google\Service\NetworkManagement\ListMonitoringPointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMonitoringPoints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_NetworkManagement_ListMonitoringPointsResponse extends \Google\Service\NetworkManagement\ListMonitoringPointsResponse
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class ListEndpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    protected $endpointsType = Endpoint::class;
-    protected $endpointsDataType = 'array';
-    /**
-     * A token which can be passed to a subsequent call to the `ListEndpoints`
-     * method to retrieve the next page of results in
-     * ListEndpointsRequest.pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of bidder endpoints.
-     *
-     * @param Endpoint[] $endpoints
-     */
-    public function setEndpoints($endpoints)
+namespace Google\Service\RealTimeBidding {
+    class ListEndpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        protected $endpointsType = Endpoint::class;
+        protected $endpointsDataType = 'array';
+        /**
+         * A token which can be passed to a subsequent call to the `ListEndpoints`
+         * method to retrieve the next page of results in
+         * ListEndpointsRequest.pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of bidder endpoints.
+         *
+         * @param Endpoint[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return Endpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * A token which can be passed to a subsequent call to the `ListEndpoints`
+         * method to retrieve the next page of results in
+         * ListEndpointsRequest.pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Endpoint[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\ListEndpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * A token which can be passed to a subsequent call to the `ListEndpoints`
-     * method to retrieve the next page of results in
-     * ListEndpointsRequest.pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RealTimeBidding_ListEndpointsResponse extends \Google\Service\RealTimeBidding\ListEndpointsResponse
     {
     }
 }

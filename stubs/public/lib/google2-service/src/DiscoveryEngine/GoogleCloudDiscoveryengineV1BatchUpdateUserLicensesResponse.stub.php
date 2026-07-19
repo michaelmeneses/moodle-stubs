@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesResponse extends \Google\Collection
-{
-    protected $collection_key = 'userLicenses';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $userLicensesType = GoogleCloudDiscoveryengineV1UserLicense::class;
-    protected $userLicensesDataType = 'array';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesResponse extends \Google\Collection
     {
+        protected $collection_key = 'userLicenses';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $userLicensesType = GoogleCloudDiscoveryengineV1UserLicense::class;
+        protected $userLicensesDataType = 'array';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * UserLicenses successfully updated.
+         *
+         * @param GoogleCloudDiscoveryengineV1UserLicense[] $userLicenses
+         */
+        public function setUserLicenses($userLicenses)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1UserLicense[]
+         */
+        public function getUserLicenses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * UserLicenses successfully updated.
-     *
-     * @param GoogleCloudDiscoveryengineV1UserLicense[] $userLicenses
-     */
-    public function setUserLicenses($userLicenses)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1UserLicense[]
-     */
-    public function getUserLicenses()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesResponse
     {
     }
 }

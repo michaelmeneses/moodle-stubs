@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecasting extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs::class;
-    protected $inputsDataType = '';
-    protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The input parameters of this TrainingJob.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs $inputs
-     */
-    public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs $inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecasting extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs::class;
+        protected $inputsDataType = '';
+        protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The input parameters of this TrainingJob.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs $inputs
+         */
+        public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs $inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * The metadata information.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputs
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecasting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * The metadata information.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecasting extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecasting
     {
     }
 }

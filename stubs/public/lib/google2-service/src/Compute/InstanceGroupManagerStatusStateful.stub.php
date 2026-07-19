@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerStatusStateful extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] A bit indicating whether the managed instance
-     * group has stateful configuration, that is, if you have configured any items
-     * in a stateful policy or in per-instance configs. The group might report
-     * that it has no stateful configuration even when there is still some
-     * preserved state on a managed instance, for example, if you have deleted all
-     * PICs but not yet applied those deletions.
-     *
-     * @var bool
-     */
-    public $hasStatefulConfig;
-    protected $perInstanceConfigsType = InstanceGroupManagerStatusStatefulPerInstanceConfigs::class;
-    protected $perInstanceConfigsDataType = '';
-    /**
-     * Output only. [Output Only] A bit indicating whether the managed instance
-     * group has stateful configuration, that is, if you have configured any items
-     * in a stateful policy or in per-instance configs. The group might report
-     * that it has no stateful configuration even when there is still some
-     * preserved state on a managed instance, for example, if you have deleted all
-     * PICs but not yet applied those deletions.
-     *
-     * @param bool $hasStatefulConfig
-     */
-    public function setHasStatefulConfig($hasStatefulConfig)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerStatusStateful extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] A bit indicating whether the managed instance
+         * group has stateful configuration, that is, if you have configured any items
+         * in a stateful policy or in per-instance configs. The group might report
+         * that it has no stateful configuration even when there is still some
+         * preserved state on a managed instance, for example, if you have deleted all
+         * PICs but not yet applied those deletions.
+         *
+         * @var bool
+         */
+        public $hasStatefulConfig;
+        protected $perInstanceConfigsType = InstanceGroupManagerStatusStatefulPerInstanceConfigs::class;
+        protected $perInstanceConfigsDataType = '';
+        /**
+         * Output only. [Output Only] A bit indicating whether the managed instance
+         * group has stateful configuration, that is, if you have configured any items
+         * in a stateful policy or in per-instance configs. The group might report
+         * that it has no stateful configuration even when there is still some
+         * preserved state on a managed instance, for example, if you have deleted all
+         * PICs but not yet applied those deletions.
+         *
+         * @param bool $hasStatefulConfig
+         */
+        public function setHasStatefulConfig($hasStatefulConfig)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasStatefulConfig()
+        {
+        }
+        /**
+         * Output only. [Output Only] Status of per-instance configurations on the
+         * instances.
+         *
+         * @param InstanceGroupManagerStatusStatefulPerInstanceConfigs $perInstanceConfigs
+         */
+        public function setPerInstanceConfigs(InstanceGroupManagerStatusStatefulPerInstanceConfigs $perInstanceConfigs)
+        {
+        }
+        /**
+         * @return InstanceGroupManagerStatusStatefulPerInstanceConfigs
+         */
+        public function getPerInstanceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerStatusStateful registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasStatefulConfig()
-    {
-    }
-    /**
-     * Output only. [Output Only] Status of per-instance configurations on the
-     * instances.
-     *
-     * @param InstanceGroupManagerStatusStatefulPerInstanceConfigs $perInstanceConfigs
-     */
-    public function setPerInstanceConfigs(InstanceGroupManagerStatusStatefulPerInstanceConfigs $perInstanceConfigs)
-    {
-    }
-    /**
-     * @return InstanceGroupManagerStatusStatefulPerInstanceConfigs
-     */
-    public function getPerInstanceConfigs()
+    class Google_Service_Compute_InstanceGroupManagerStatusStateful extends \Google\Service\Compute\InstanceGroupManagerStatusStateful
     {
     }
 }

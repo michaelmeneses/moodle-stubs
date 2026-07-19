@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks;
-
-class SpaceInfo extends \Google\Model
-{
-    /**
-     * Output only. The Chat space where this task originates from. The format is
-     * "spaces/{space}".
-     *
-     * @var string
-     */
-    public $space;
-    /**
-     * Output only. The Chat space where this task originates from. The format is
-     * "spaces/{space}".
-     *
-     * @param string $space
-     */
-    public function setSpace($space)
+namespace Google\Service\Tasks {
+    class SpaceInfo extends \Google\Model
     {
+        /**
+         * Output only. The Chat space where this task originates from. The format is
+         * "spaces/{space}".
+         *
+         * @var string
+         */
+        public $space;
+        /**
+         * Output only. The Chat space where this task originates from. The format is
+         * "spaces/{space}".
+         *
+         * @param string $space
+         */
+        public function setSpace($space)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Tasks\SpaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpace()
+    class Google_Service_Tasks_SpaceInfo extends \Google\Service\Tasks\SpaceInfo
     {
     }
 }

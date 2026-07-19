@@ -21,198 +21,207 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQaScorecardResult extends \Google\Collection
-{
-    protected $collection_key = 'scoreSources';
-    /**
-     * ID of the agent that handled the conversation.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * The conversation scored by this result.
-     *
-     * @var string
-     */
-    public $conversation;
-    /**
-     * Output only. The timestamp that the revision was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The name of the scorecard result. Format: projects/{project}/lo
-     * cations/{location}/qaScorecardResults/{qa_scorecard_result}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The normalized score, which is the score divided by the potential score.
-     * Any manual edits are included if they exist.
-     *
-     * @var 
-     */
-    public $normalizedScore;
-    /**
-     * The maximum potential overall score of the scorecard. Any questions
-     * answered using `na_value` are excluded from this calculation.
-     *
-     * @var 
-     */
-    public $potentialScore;
-    protected $qaAnswersType = GoogleCloudContactcenterinsightsV1mainQaAnswer::class;
-    protected $qaAnswersDataType = 'array';
-    /**
-     * The QaScorecardRevision scored by this result.
-     *
-     * @var string
-     */
-    public $qaScorecardRevision;
-    protected $qaTagResultsType = GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult::class;
-    protected $qaTagResultsDataType = 'array';
-    /**
-     * The overall numerical score of the result, incorporating any manual edits
-     * if they exist.
-     *
-     * @var 
-     */
-    public $score;
-    protected $scoreSourcesType = GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource::class;
-    protected $scoreSourcesDataType = 'array';
-    /**
-     * ID of the agent that handled the conversation.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQaScorecardResult extends \Google\Collection
     {
+        protected $collection_key = 'scoreSources';
+        /**
+         * ID of the agent that handled the conversation.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * The conversation scored by this result.
+         *
+         * @var string
+         */
+        public $conversation;
+        /**
+         * Output only. The timestamp that the revision was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The name of the scorecard result. Format: projects/{project}/lo
+         * cations/{location}/qaScorecardResults/{qa_scorecard_result}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The normalized score, which is the score divided by the potential score.
+         * Any manual edits are included if they exist.
+         *
+         * @var 
+         */
+        public $normalizedScore;
+        /**
+         * The maximum potential overall score of the scorecard. Any questions
+         * answered using `na_value` are excluded from this calculation.
+         *
+         * @var 
+         */
+        public $potentialScore;
+        protected $qaAnswersType = GoogleCloudContactcenterinsightsV1mainQaAnswer::class;
+        protected $qaAnswersDataType = 'array';
+        /**
+         * The QaScorecardRevision scored by this result.
+         *
+         * @var string
+         */
+        public $qaScorecardRevision;
+        protected $qaTagResultsType = GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult::class;
+        protected $qaTagResultsDataType = 'array';
+        /**
+         * The overall numerical score of the result, incorporating any manual edits
+         * if they exist.
+         *
+         * @var 
+         */
+        public $score;
+        protected $scoreSourcesType = GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource::class;
+        protected $scoreSourcesDataType = 'array';
+        /**
+         * ID of the agent that handled the conversation.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * The conversation scored by this result.
+         *
+         * @param string $conversation
+         */
+        public function setConversation($conversation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * Output only. The timestamp that the revision was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The name of the scorecard result. Format: projects/{project}/lo
+         * cations/{location}/qaScorecardResults/{qa_scorecard_result}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        public function setNormalizedScore($normalizedScore)
+        {
+        }
+        public function getNormalizedScore()
+        {
+        }
+        public function setPotentialScore($potentialScore)
+        {
+        }
+        public function getPotentialScore()
+        {
+        }
+        /**
+         * Set of QaAnswers represented in the result.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaAnswer[] $qaAnswers
+         */
+        public function setQaAnswers($qaAnswers)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaAnswer[]
+         */
+        public function getQaAnswers()
+        {
+        }
+        /**
+         * The QaScorecardRevision scored by this result.
+         *
+         * @param string $qaScorecardRevision
+         */
+        public function setQaScorecardRevision($qaScorecardRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQaScorecardRevision()
+        {
+        }
+        /**
+         * Collection of tags and their scores.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[] $qaTagResults
+         */
+        public function setQaTagResults($qaTagResults)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[]
+         */
+        public function getQaTagResults()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * List of all individual score sets.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource[] $scoreSources
+         */
+        public function setScoreSources($scoreSources)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource[]
+         */
+        public function getScoreSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaScorecardResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentId()
-    {
-    }
-    /**
-     * The conversation scored by this result.
-     *
-     * @param string $conversation
-     */
-    public function setConversation($conversation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversation()
-    {
-    }
-    /**
-     * Output only. The timestamp that the revision was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The name of the scorecard result. Format: projects/{project}/lo
-     * cations/{location}/qaScorecardResults/{qa_scorecard_result}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    public function setNormalizedScore($normalizedScore)
-    {
-    }
-    public function getNormalizedScore()
-    {
-    }
-    public function setPotentialScore($potentialScore)
-    {
-    }
-    public function getPotentialScore()
-    {
-    }
-    /**
-     * Set of QaAnswers represented in the result.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaAnswer[] $qaAnswers
-     */
-    public function setQaAnswers($qaAnswers)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaAnswer[]
-     */
-    public function getQaAnswers()
-    {
-    }
-    /**
-     * The QaScorecardRevision scored by this result.
-     *
-     * @param string $qaScorecardRevision
-     */
-    public function setQaScorecardRevision($qaScorecardRevision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQaScorecardRevision()
-    {
-    }
-    /**
-     * Collection of tags and their scores.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[] $qaTagResults
-     */
-    public function setQaTagResults($qaTagResults)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[]
-     */
-    public function getQaTagResults()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * List of all individual score sets.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource[] $scoreSources
-     */
-    public function setScoreSources($scoreSources)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource[]
-     */
-    public function getScoreSources()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQaScorecardResult extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaScorecardResult
     {
     }
 }

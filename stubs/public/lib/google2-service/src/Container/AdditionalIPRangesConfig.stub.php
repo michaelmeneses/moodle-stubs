@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AdditionalIPRangesConfig extends \Google\Collection
-{
-    protected $collection_key = 'podIpv4RangeNames';
-    /**
-     * List of secondary ranges names within this subnetwork that can be used for
-     * pod IPs. Example1: gke-pod-range1 Example2: gke-pod-range1,gke-pod-range2
-     *
-     * @var string[]
-     */
-    public $podIpv4RangeNames;
-    /**
-     * Name of the subnetwork. This can be the full path of the subnetwork or just
-     * the name. Example1: my-subnet Example2: projects/gke-project/regions/us-
-     * central1/subnetworks/my-subnet
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * List of secondary ranges names within this subnetwork that can be used for
-     * pod IPs. Example1: gke-pod-range1 Example2: gke-pod-range1,gke-pod-range2
-     *
-     * @param string[] $podIpv4RangeNames
-     */
-    public function setPodIpv4RangeNames($podIpv4RangeNames)
+namespace Google\Service\Container {
+    class AdditionalIPRangesConfig extends \Google\Collection
     {
+        protected $collection_key = 'podIpv4RangeNames';
+        /**
+         * List of secondary ranges names within this subnetwork that can be used for
+         * pod IPs. Example1: gke-pod-range1 Example2: gke-pod-range1,gke-pod-range2
+         *
+         * @var string[]
+         */
+        public $podIpv4RangeNames;
+        /**
+         * Name of the subnetwork. This can be the full path of the subnetwork or just
+         * the name. Example1: my-subnet Example2: projects/gke-project/regions/us-
+         * central1/subnetworks/my-subnet
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * List of secondary ranges names within this subnetwork that can be used for
+         * pod IPs. Example1: gke-pod-range1 Example2: gke-pod-range1,gke-pod-range2
+         *
+         * @param string[] $podIpv4RangeNames
+         */
+        public function setPodIpv4RangeNames($podIpv4RangeNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPodIpv4RangeNames()
+        {
+        }
+        /**
+         * Name of the subnetwork. This can be the full path of the subnetwork or just
+         * the name. Example1: my-subnet Example2: projects/gke-project/regions/us-
+         * central1/subnetworks/my-subnet
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\AdditionalIPRangesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPodIpv4RangeNames()
-    {
-    }
-    /**
-     * Name of the subnetwork. This can be the full path of the subnetwork or just
-     * the name. Example1: my-subnet Example2: projects/gke-project/regions/us-
-     * central1/subnetworks/my-subnet
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_Container_AdditionalIPRangesConfig extends \Google\Service\Container\AdditionalIPRangesConfig
     {
     }
 }

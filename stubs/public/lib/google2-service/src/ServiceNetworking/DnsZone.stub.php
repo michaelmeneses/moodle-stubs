@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class DnsZone extends \Google\Model
-{
-    /**
-     * The DNS name suffix of this zone e.g. `example.com.`. Cloud DNS requires
-     * that a DNS suffix ends with a trailing dot.
-     *
-     * @var string
-     */
-    public $dnsSuffix;
-    /**
-     * User assigned name for this resource. Must be unique within the project.
-     * The name must be 1-63 characters long, must begin with a letter, end with a
-     * letter or digit, and only contain lowercase letters, digits or dashes.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The DNS name suffix of this zone e.g. `example.com.`. Cloud DNS requires
-     * that a DNS suffix ends with a trailing dot.
-     *
-     * @param string $dnsSuffix
-     */
-    public function setDnsSuffix($dnsSuffix)
+namespace Google\Service\ServiceNetworking {
+    class DnsZone extends \Google\Model
     {
+        /**
+         * The DNS name suffix of this zone e.g. `example.com.`. Cloud DNS requires
+         * that a DNS suffix ends with a trailing dot.
+         *
+         * @var string
+         */
+        public $dnsSuffix;
+        /**
+         * User assigned name for this resource. Must be unique within the project.
+         * The name must be 1-63 characters long, must begin with a letter, end with a
+         * letter or digit, and only contain lowercase letters, digits or dashes.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The DNS name suffix of this zone e.g. `example.com.`. Cloud DNS requires
+         * that a DNS suffix ends with a trailing dot.
+         *
+         * @param string $dnsSuffix
+         */
+        public function setDnsSuffix($dnsSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDnsSuffix()
+        {
+        }
+        /**
+         * User assigned name for this resource. Must be unique within the project.
+         * The name must be 1-63 characters long, must begin with a letter, end with a
+         * letter or digit, and only contain lowercase letters, digits or dashes.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\DnsZone registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsSuffix()
-    {
-    }
-    /**
-     * User assigned name for this resource. Must be unique within the project.
-     * The name must be 1-63 characters long, must begin with a letter, end with a
-     * letter or digit, and only contain lowercase letters, digits or dashes.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ServiceNetworking_DnsZone extends \Google\Service\ServiceNetworking\DnsZone
     {
     }
 }

@@ -21,180 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "posts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $posts = $bloggerService->posts;
- *  </code>
- */
-class Posts extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\Post;
+    use Google\Service\Blogger\PostList;
     /**
-     * Deletes a post by blog id and post id. (posts.delete)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool useTrash Move to Trash if possible
-     * @throws \Google\Service\Exception
+     * The "posts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $posts = $bloggerService->posts;
+     *  </code>
      */
-    public function delete($blogId, $postId, $optParams = [])
+    class Posts extends \Google\Service\Resource
     {
+        /**
+         * Deletes a post by blog id and post id. (posts.delete)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool useTrash Move to Trash if possible
+         * @throws \Google\Service\Exception
+         */
+        public function delete($blogId, $postId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a post by blog id and post id (posts.get)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchBody
+         * @opt_param bool fetchImages
+         * @opt_param string maxComments
+         * @opt_param string view
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function get($blogId, $postId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a post by path. (posts.getByPath)
+         *
+         * @param string $blogId
+         * @param string $path
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxComments
+         * @opt_param string view
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function getByPath($blogId, $path, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a post. (posts.insert)
+         *
+         * @param string $blogId
+         * @param Post $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchBody
+         * @opt_param bool fetchImages
+         * @opt_param bool isDraft
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function insert($blogId, Post $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists posts. (posts.listPosts)
+         *
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endDate
+         * @opt_param bool fetchBodies
+         * @opt_param bool fetchImages
+         * @opt_param string labels
+         * @opt_param string maxResults
+         * @opt_param string orderBy
+         * @opt_param string pageToken
+         * @opt_param string sortOption Sort direction applied to post list.
+         * @opt_param string startDate
+         * @opt_param string status
+         * @opt_param string view
+         * @return PostList
+         * @throws \Google\Service\Exception
+         */
+        public function listPosts($blogId, $optParams = [])
+        {
+        }
+        /**
+         * Patches a post. (posts.patch)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param Post $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchBody
+         * @opt_param bool fetchImages
+         * @opt_param string maxComments
+         * @opt_param bool publish
+         * @opt_param bool revert
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function patch($blogId, $postId, Post $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Publishes a post. (posts.publish)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string publishDate
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function publish($blogId, $postId, $optParams = [])
+        {
+        }
+        /**
+         * Reverts a published or scheduled post to draft state. (posts.revert)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param array $optParams Optional parameters.
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function revert($blogId, $postId, $optParams = [])
+        {
+        }
+        /**
+         * Searches for posts matching given query terms in the specified blog.
+         * (posts.search)
+         *
+         * @param string $blogId
+         * @param string $q
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchBodies
+         * @opt_param string orderBy
+         * @return PostList
+         * @throws \Google\Service\Exception
+         */
+        public function search($blogId, $q, $optParams = [])
+        {
+        }
+        /**
+         * Updates a post by blog id and post id. (posts.update)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param Post $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchBody
+         * @opt_param bool fetchImages
+         * @opt_param string maxComments
+         * @opt_param bool publish
+         * @opt_param bool revert
+         * @return Post
+         * @throws \Google\Service\Exception
+         */
+        public function update($blogId, $postId, Post $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a post by blog id and post id (posts.get)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchBody
-     * @opt_param bool fetchImages
-     * @opt_param string maxComments
-     * @opt_param string view
-     * @return Post
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Blogger\Resource\Posts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($blogId, $postId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a post by path. (posts.getByPath)
-     *
-     * @param string $blogId
-     * @param string $path
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxComments
-     * @opt_param string view
-     * @return Post
-     * @throws \Google\Service\Exception
-     */
-    public function getByPath($blogId, $path, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a post. (posts.insert)
-     *
-     * @param string $blogId
-     * @param Post $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchBody
-     * @opt_param bool fetchImages
-     * @opt_param bool isDraft
-     * @return Post
-     * @throws \Google\Service\Exception
-     */
-    public function insert($blogId, Post $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists posts. (posts.listPosts)
-     *
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endDate
-     * @opt_param bool fetchBodies
-     * @opt_param bool fetchImages
-     * @opt_param string labels
-     * @opt_param string maxResults
-     * @opt_param string orderBy
-     * @opt_param string pageToken
-     * @opt_param string sortOption Sort direction applied to post list.
-     * @opt_param string startDate
-     * @opt_param string status
-     * @opt_param string view
-     * @return PostList
-     * @throws \Google\Service\Exception
-     */
-    public function listPosts($blogId, $optParams = [])
-    {
-    }
-    /**
-     * Patches a post. (posts.patch)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param Post $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchBody
-     * @opt_param bool fetchImages
-     * @opt_param string maxComments
-     * @opt_param bool publish
-     * @opt_param bool revert
-     * @return Post
-     * @throws \Google\Service\Exception
-     */
-    public function patch($blogId, $postId, Post $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Publishes a post. (posts.publish)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string publishDate
-     * @return Post
-     * @throws \Google\Service\Exception
-     */
-    public function publish($blogId, $postId, $optParams = [])
-    {
-    }
-    /**
-     * Reverts a published or scheduled post to draft state. (posts.revert)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param array $optParams Optional parameters.
-     * @return Post
-     * @throws \Google\Service\Exception
-     */
-    public function revert($blogId, $postId, $optParams = [])
-    {
-    }
-    /**
-     * Searches for posts matching given query terms in the specified blog.
-     * (posts.search)
-     *
-     * @param string $blogId
-     * @param string $q
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchBodies
-     * @opt_param string orderBy
-     * @return PostList
-     * @throws \Google\Service\Exception
-     */
-    public function search($blogId, $q, $optParams = [])
-    {
-    }
-    /**
-     * Updates a post by blog id and post id. (posts.update)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param Post $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchBody
-     * @opt_param bool fetchImages
-     * @opt_param string maxComments
-     * @opt_param bool publish
-     * @opt_param bool revert
-     * @return Post
-     * @throws \Google\Service\Exception
-     */
-    public function update($blogId, $postId, Post $postBody, $optParams = [])
+    class Google_Service_Blogger_Resource_Posts extends \Google\Service\Blogger\Resource\Posts
     {
     }
 }

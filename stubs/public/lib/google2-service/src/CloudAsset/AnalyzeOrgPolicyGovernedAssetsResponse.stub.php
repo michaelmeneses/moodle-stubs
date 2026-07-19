@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzeOrgPolicyGovernedAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'governedAssets';
-    protected $constraintType = AnalyzerOrgPolicyConstraint::class;
-    protected $constraintDataType = '';
-    protected $governedAssetsType = GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset::class;
-    protected $governedAssetsDataType = 'array';
-    /**
-     * The page token to fetch the next page for
-     * AnalyzeOrgPolicyGovernedAssetsResponse.governed_assets.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The definition of the constraint in the request.
-     *
-     * @param AnalyzerOrgPolicyConstraint $constraint
-     */
-    public function setConstraint(AnalyzerOrgPolicyConstraint $constraint)
+namespace Google\Service\CloudAsset {
+    class AnalyzeOrgPolicyGovernedAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'governedAssets';
+        protected $constraintType = AnalyzerOrgPolicyConstraint::class;
+        protected $constraintDataType = '';
+        protected $governedAssetsType = GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset::class;
+        protected $governedAssetsDataType = 'array';
+        /**
+         * The page token to fetch the next page for
+         * AnalyzeOrgPolicyGovernedAssetsResponse.governed_assets.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The definition of the constraint in the request.
+         *
+         * @param AnalyzerOrgPolicyConstraint $constraint
+         */
+        public function setConstraint(AnalyzerOrgPolicyConstraint $constraint)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicyConstraint
+         */
+        public function getConstraint()
+        {
+        }
+        /**
+         * The list of the analyzed governed assets.
+         *
+         * @param GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset[] $governedAssets
+         */
+        public function setGovernedAssets($governedAssets)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset[]
+         */
+        public function getGovernedAssets()
+        {
+        }
+        /**
+         * The page token to fetch the next page for
+         * AnalyzeOrgPolicyGovernedAssetsResponse.governed_assets.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyzerOrgPolicyConstraint
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzeOrgPolicyGovernedAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraint()
-    {
-    }
-    /**
-     * The list of the analyzed governed assets.
-     *
-     * @param GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset[] $governedAssets
-     */
-    public function setGovernedAssets($governedAssets)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset[]
-     */
-    public function getGovernedAssets()
-    {
-    }
-    /**
-     * The page token to fetch the next page for
-     * AnalyzeOrgPolicyGovernedAssetsResponse.governed_assets.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudAsset_AnalyzeOrgPolicyGovernedAssetsResponse extends \Google\Service\CloudAsset\AnalyzeOrgPolicyGovernedAssetsResponse
     {
     }
 }

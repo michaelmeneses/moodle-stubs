@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketIpFilterPublicNetworkSource extends \Google\Collection
-{
-    protected $collection_key = 'allowedIpCidrRanges';
-    /**
-     * The list of public IPv4, IPv6 cidr ranges that are allowed to access the
-     * bucket.
-     *
-     * @var string[]
-     */
-    public $allowedIpCidrRanges;
-    /**
-     * The list of public IPv4, IPv6 cidr ranges that are allowed to access the
-     * bucket.
-     *
-     * @param string[] $allowedIpCidrRanges
-     */
-    public function setAllowedIpCidrRanges($allowedIpCidrRanges)
+namespace Google\Service\Storage {
+    class BucketIpFilterPublicNetworkSource extends \Google\Collection
     {
+        protected $collection_key = 'allowedIpCidrRanges';
+        /**
+         * The list of public IPv4, IPv6 cidr ranges that are allowed to access the
+         * bucket.
+         *
+         * @var string[]
+         */
+        public $allowedIpCidrRanges;
+        /**
+         * The list of public IPv4, IPv6 cidr ranges that are allowed to access the
+         * bucket.
+         *
+         * @param string[] $allowedIpCidrRanges
+         */
+        public function setAllowedIpCidrRanges($allowedIpCidrRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedIpCidrRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Storage\BucketIpFilterPublicNetworkSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedIpCidrRanges()
+    class Google_Service_Storage_BucketIpFilterPublicNetworkSource extends \Google\Service\Storage\BucketIpFilterPublicNetworkSource
     {
     }
 }

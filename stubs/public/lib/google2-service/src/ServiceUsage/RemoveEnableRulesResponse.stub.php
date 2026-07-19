@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class RemoveEnableRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'removedValues';
-    /**
-     * The parent consumer policy. It can be
-     * `projects/12345/consumerPolicies/default`, or
-     * `folders/12345/consumerPolicies/default`, or
-     * `organizations/12345/consumerPolicies/default`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The values removed from the parent consumer policy.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $removedValues;
-    /**
-     * The parent consumer policy. It can be
-     * `projects/12345/consumerPolicies/default`, or
-     * `folders/12345/consumerPolicies/default`, or
-     * `organizations/12345/consumerPolicies/default`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\ServiceUsage {
+    class RemoveEnableRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'removedValues';
+        /**
+         * The parent consumer policy. It can be
+         * `projects/12345/consumerPolicies/default`, or
+         * `folders/12345/consumerPolicies/default`, or
+         * `organizations/12345/consumerPolicies/default`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The values removed from the parent consumer policy.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $removedValues;
+        /**
+         * The parent consumer policy. It can be
+         * `projects/12345/consumerPolicies/default`, or
+         * `folders/12345/consumerPolicies/default`, or
+         * `organizations/12345/consumerPolicies/default`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The values removed from the parent consumer policy.
+         *
+         * @deprecated
+         * @param string[] $removedValues
+         */
+        public function setRemovedValues($removedValues)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getRemovedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\RemoveEnableRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * The values removed from the parent consumer policy.
-     *
-     * @deprecated
-     * @param string[] $removedValues
-     */
-    public function setRemovedValues($removedValues)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getRemovedValues()
+    class Google_Service_ServiceUsage_RemoveEnableRulesResponse extends \Google\Service\ServiceUsage\RemoveEnableRulesResponse
     {
     }
 }

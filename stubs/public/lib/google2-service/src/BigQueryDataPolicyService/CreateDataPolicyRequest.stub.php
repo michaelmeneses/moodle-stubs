@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataPolicyService;
-
-class CreateDataPolicyRequest extends \Google\Model
-{
-    protected $dataPolicyType = DataPolicy::class;
-    protected $dataPolicyDataType = '';
-    /**
-     * Required. User-assigned (human readable) ID of the data policy that needs
-     * to be unique within a project. Used as {data_policy_id} in part of the
-     * resource name.
-     *
-     * @var string
-     */
-    public $dataPolicyId;
-    /**
-     * Required. The data policy to create. The `name` field does not need to be
-     * provided for the data policy creation.
-     *
-     * @param DataPolicy $dataPolicy
-     */
-    public function setDataPolicy(DataPolicy $dataPolicy)
+namespace Google\Service\BigQueryDataPolicyService {
+    class CreateDataPolicyRequest extends \Google\Model
     {
+        protected $dataPolicyType = DataPolicy::class;
+        protected $dataPolicyDataType = '';
+        /**
+         * Required. User-assigned (human readable) ID of the data policy that needs
+         * to be unique within a project. Used as {data_policy_id} in part of the
+         * resource name.
+         *
+         * @var string
+         */
+        public $dataPolicyId;
+        /**
+         * Required. The data policy to create. The `name` field does not need to be
+         * provided for the data policy creation.
+         *
+         * @param DataPolicy $dataPolicy
+         */
+        public function setDataPolicy(DataPolicy $dataPolicy)
+        {
+        }
+        /**
+         * @return DataPolicy
+         */
+        public function getDataPolicy()
+        {
+        }
+        /**
+         * Required. User-assigned (human readable) ID of the data policy that needs
+         * to be unique within a project. Used as {data_policy_id} in part of the
+         * resource name.
+         *
+         * @param string $dataPolicyId
+         */
+        public function setDataPolicyId($dataPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataPolicyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataPolicy
+     * Runtime class alias of \Google\Service\BigQueryDataPolicyService\CreateDataPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataPolicy()
-    {
-    }
-    /**
-     * Required. User-assigned (human readable) ID of the data policy that needs
-     * to be unique within a project. Used as {data_policy_id} in part of the
-     * resource name.
-     *
-     * @param string $dataPolicyId
-     */
-    public function setDataPolicyId($dataPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataPolicyId()
+    class Google_Service_BigQueryDataPolicyService_CreateDataPolicyRequest extends \Google\Service\BigQueryDataPolicyService\CreateDataPolicyRequest
     {
     }
 }

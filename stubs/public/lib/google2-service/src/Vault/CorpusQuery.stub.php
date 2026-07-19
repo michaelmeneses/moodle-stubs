@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class CorpusQuery extends \Google\Model
-{
-    protected $calendarQueryType = HeldCalendarQuery::class;
-    protected $calendarQueryDataType = '';
-    protected $driveQueryType = HeldDriveQuery::class;
-    protected $driveQueryDataType = '';
-    protected $groupsQueryType = HeldGroupsQuery::class;
-    protected $groupsQueryDataType = '';
-    protected $hangoutsChatQueryType = HeldHangoutsChatQuery::class;
-    protected $hangoutsChatQueryDataType = '';
-    protected $mailQueryType = HeldMailQuery::class;
-    protected $mailQueryDataType = '';
-    protected $voiceQueryType = HeldVoiceQuery::class;
-    protected $voiceQueryDataType = '';
-    /**
-     * Service-specific options for Calendar holds. If set, **CorpusType** must be
-     * **CALENDAR**.
-     *
-     * @param HeldCalendarQuery $calendarQuery
-     */
-    public function setCalendarQuery(HeldCalendarQuery $calendarQuery)
+namespace Google\Service\Vault {
+    class CorpusQuery extends \Google\Model
     {
+        protected $calendarQueryType = HeldCalendarQuery::class;
+        protected $calendarQueryDataType = '';
+        protected $driveQueryType = HeldDriveQuery::class;
+        protected $driveQueryDataType = '';
+        protected $groupsQueryType = HeldGroupsQuery::class;
+        protected $groupsQueryDataType = '';
+        protected $hangoutsChatQueryType = HeldHangoutsChatQuery::class;
+        protected $hangoutsChatQueryDataType = '';
+        protected $mailQueryType = HeldMailQuery::class;
+        protected $mailQueryDataType = '';
+        protected $voiceQueryType = HeldVoiceQuery::class;
+        protected $voiceQueryDataType = '';
+        /**
+         * Service-specific options for Calendar holds. If set, **CorpusType** must be
+         * **CALENDAR**.
+         *
+         * @param HeldCalendarQuery $calendarQuery
+         */
+        public function setCalendarQuery(HeldCalendarQuery $calendarQuery)
+        {
+        }
+        /**
+         * @return HeldCalendarQuery
+         */
+        public function getCalendarQuery()
+        {
+        }
+        /**
+         * Service-specific options for Drive holds. If set, **CorpusType** must be
+         * **DRIVE**.
+         *
+         * @param HeldDriveQuery $driveQuery
+         */
+        public function setDriveQuery(HeldDriveQuery $driveQuery)
+        {
+        }
+        /**
+         * @return HeldDriveQuery
+         */
+        public function getDriveQuery()
+        {
+        }
+        /**
+         * Service-specific options for Groups holds. If set, **CorpusType** must be
+         * **GROUPS**.
+         *
+         * @param HeldGroupsQuery $groupsQuery
+         */
+        public function setGroupsQuery(HeldGroupsQuery $groupsQuery)
+        {
+        }
+        /**
+         * @return HeldGroupsQuery
+         */
+        public function getGroupsQuery()
+        {
+        }
+        /**
+         * Service-specific options for Chat holds. If set, **CorpusType** must be
+         * **HANGOUTS_CHAT**.
+         *
+         * @param HeldHangoutsChatQuery $hangoutsChatQuery
+         */
+        public function setHangoutsChatQuery(HeldHangoutsChatQuery $hangoutsChatQuery)
+        {
+        }
+        /**
+         * @return HeldHangoutsChatQuery
+         */
+        public function getHangoutsChatQuery()
+        {
+        }
+        /**
+         * Service-specific options for Gmail holds. If set, **CorpusType** must be
+         * **MAIL**.
+         *
+         * @param HeldMailQuery $mailQuery
+         */
+        public function setMailQuery(HeldMailQuery $mailQuery)
+        {
+        }
+        /**
+         * @return HeldMailQuery
+         */
+        public function getMailQuery()
+        {
+        }
+        /**
+         * Service-specific options for Voice holds. If set, **CorpusType** must be
+         * **VOICE**.
+         *
+         * @param HeldVoiceQuery $voiceQuery
+         */
+        public function setVoiceQuery(HeldVoiceQuery $voiceQuery)
+        {
+        }
+        /**
+         * @return HeldVoiceQuery
+         */
+        public function getVoiceQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HeldCalendarQuery
+     * Runtime class alias of \Google\Service\Vault\CorpusQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendarQuery()
-    {
-    }
-    /**
-     * Service-specific options for Drive holds. If set, **CorpusType** must be
-     * **DRIVE**.
-     *
-     * @param HeldDriveQuery $driveQuery
-     */
-    public function setDriveQuery(HeldDriveQuery $driveQuery)
-    {
-    }
-    /**
-     * @return HeldDriveQuery
-     */
-    public function getDriveQuery()
-    {
-    }
-    /**
-     * Service-specific options for Groups holds. If set, **CorpusType** must be
-     * **GROUPS**.
-     *
-     * @param HeldGroupsQuery $groupsQuery
-     */
-    public function setGroupsQuery(HeldGroupsQuery $groupsQuery)
-    {
-    }
-    /**
-     * @return HeldGroupsQuery
-     */
-    public function getGroupsQuery()
-    {
-    }
-    /**
-     * Service-specific options for Chat holds. If set, **CorpusType** must be
-     * **HANGOUTS_CHAT**.
-     *
-     * @param HeldHangoutsChatQuery $hangoutsChatQuery
-     */
-    public function setHangoutsChatQuery(HeldHangoutsChatQuery $hangoutsChatQuery)
-    {
-    }
-    /**
-     * @return HeldHangoutsChatQuery
-     */
-    public function getHangoutsChatQuery()
-    {
-    }
-    /**
-     * Service-specific options for Gmail holds. If set, **CorpusType** must be
-     * **MAIL**.
-     *
-     * @param HeldMailQuery $mailQuery
-     */
-    public function setMailQuery(HeldMailQuery $mailQuery)
-    {
-    }
-    /**
-     * @return HeldMailQuery
-     */
-    public function getMailQuery()
-    {
-    }
-    /**
-     * Service-specific options for Voice holds. If set, **CorpusType** must be
-     * **VOICE**.
-     *
-     * @param HeldVoiceQuery $voiceQuery
-     */
-    public function setVoiceQuery(HeldVoiceQuery $voiceQuery)
-    {
-    }
-    /**
-     * @return HeldVoiceQuery
-     */
-    public function getVoiceQuery()
+    class Google_Service_Vault_CorpusQuery extends \Google\Service\Vault\CorpusQuery
     {
     }
 }

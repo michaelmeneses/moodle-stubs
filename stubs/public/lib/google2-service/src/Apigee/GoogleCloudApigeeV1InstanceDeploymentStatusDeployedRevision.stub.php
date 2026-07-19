@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision extends \Google\Model
-{
-    /**
-     * Percentage of MP replicas reporting this revision.
-     *
-     * @var int
-     */
-    public $percentage;
-    /**
-     * API proxy revision reported as deployed.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * Percentage of MP replicas reporting this revision.
-     *
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision extends \Google\Model
     {
+        /**
+         * Percentage of MP replicas reporting this revision.
+         *
+         * @var int
+         */
+        public $percentage;
+        /**
+         * API proxy revision reported as deployed.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * Percentage of MP replicas reporting this revision.
+         *
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
+        /**
+         * API proxy revision reported as deployed.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentage()
-    {
-    }
-    /**
-     * API proxy revision reported as deployed.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
+    class Google_Service_Apigee_GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision extends \Google\Service\Apigee\GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRevision
     {
     }
 }

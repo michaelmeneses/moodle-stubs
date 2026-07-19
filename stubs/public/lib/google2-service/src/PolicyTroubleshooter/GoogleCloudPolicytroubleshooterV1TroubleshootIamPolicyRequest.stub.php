@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyTroubleshooter;
-
-class GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest extends \Google\Model
-{
-    protected $accessTupleType = GoogleCloudPolicytroubleshooterV1AccessTuple::class;
-    protected $accessTupleDataType = '';
-    /**
-     * The information to use for checking whether a principal has a permission
-     * for a resource.
-     *
-     * @param GoogleCloudPolicytroubleshooterV1AccessTuple $accessTuple
-     */
-    public function setAccessTuple(GoogleCloudPolicytroubleshooterV1AccessTuple $accessTuple)
+namespace Google\Service\PolicyTroubleshooter {
+    class GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest extends \Google\Model
     {
+        protected $accessTupleType = GoogleCloudPolicytroubleshooterV1AccessTuple::class;
+        protected $accessTupleDataType = '';
+        /**
+         * The information to use for checking whether a principal has a permission
+         * for a resource.
+         *
+         * @param GoogleCloudPolicytroubleshooterV1AccessTuple $accessTuple
+         */
+        public function setAccessTuple(GoogleCloudPolicytroubleshooterV1AccessTuple $accessTuple)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicytroubleshooterV1AccessTuple
+         */
+        public function getAccessTuple()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicytroubleshooterV1AccessTuple
+     * Runtime class alias of \Google\Service\PolicyTroubleshooter\GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessTuple()
+    class Google_Service_PolicyTroubleshooter_GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest extends \Google\Service\PolicyTroubleshooter\GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest
     {
     }
 }

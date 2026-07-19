@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddNamedRangeRequest extends \Google\Model
-{
-    protected $namedRangeType = NamedRange::class;
-    protected $namedRangeDataType = '';
-    /**
-     * The named range to add. The namedRangeId field is optional; if one is not
-     * set, an id will be randomly generated. (It is an error to specify the ID of
-     * a range that already exists.)
-     *
-     * @param NamedRange $namedRange
-     */
-    public function setNamedRange(NamedRange $namedRange)
+namespace Google\Service\Sheets {
+    class AddNamedRangeRequest extends \Google\Model
     {
+        protected $namedRangeType = NamedRange::class;
+        protected $namedRangeDataType = '';
+        /**
+         * The named range to add. The namedRangeId field is optional; if one is not
+         * set, an id will be randomly generated. (It is an error to specify the ID of
+         * a range that already exists.)
+         *
+         * @param NamedRange $namedRange
+         */
+        public function setNamedRange(NamedRange $namedRange)
+        {
+        }
+        /**
+         * @return NamedRange
+         */
+        public function getNamedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamedRange
+     * Runtime class alias of \Google\Service\Sheets\AddNamedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedRange()
+    class Google_Service_Sheets_AddNamedRangeRequest extends \Google\Service\Sheets\AddNamedRangeRequest
     {
     }
 }

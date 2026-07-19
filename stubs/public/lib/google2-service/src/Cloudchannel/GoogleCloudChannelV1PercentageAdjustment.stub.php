@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1PercentageAdjustment extends \Google\Model
-{
-    protected $percentageType = GoogleTypeDecimal::class;
-    protected $percentageDataType = '';
-    /**
-     * The percentage of the bill to adjust. For example: Mark down by 1% =>
-     * "-1.00" Mark up by 1% => "1.00" Pass-Through => "0.00"
-     *
-     * @param GoogleTypeDecimal $percentage
-     */
-    public function setPercentage(GoogleTypeDecimal $percentage)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1PercentageAdjustment extends \Google\Model
     {
+        protected $percentageType = GoogleTypeDecimal::class;
+        protected $percentageDataType = '';
+        /**
+         * The percentage of the bill to adjust. For example: Mark down by 1% =>
+         * "-1.00" Mark up by 1% => "1.00" Pass-Through => "0.00"
+         *
+         * @param GoogleTypeDecimal $percentage
+         */
+        public function setPercentage(GoogleTypeDecimal $percentage)
+        {
+        }
+        /**
+         * @return GoogleTypeDecimal
+         */
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDecimal
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1PercentageAdjustment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentage()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1PercentageAdjustment extends \Google\Service\Cloudchannel\GoogleCloudChannelV1PercentageAdjustment
     {
     }
 }

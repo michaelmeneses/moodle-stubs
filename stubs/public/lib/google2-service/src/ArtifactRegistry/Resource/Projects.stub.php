@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $projects = $artifactregistryService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ProjectSettings;
     /**
-     * Retrieves the Settings for the Project. (projects.getProjectSettings)
-     *
-     * @param string $name Required. The name of the projectSettings resource.
-     * @param array $optParams Optional parameters.
-     * @return ProjectSettings
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $projects = $artifactregistryService->projects;
+     *  </code>
      */
-    public function getProjectSettings($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the Settings for the Project. (projects.getProjectSettings)
+         *
+         * @param string $name Required. The name of the projectSettings resource.
+         * @param array $optParams Optional parameters.
+         * @return ProjectSettings
+         * @throws \Google\Service\Exception
+         */
+        public function getProjectSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the Settings for the Project. (projects.updateProjectSettings)
+         *
+         * @param string $name The name of the project's settings. Always of the form:
+         * projects/{project-id}/projectSettings In update request: never set In
+         * response: always set
+         * @param ProjectSettings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Field mask to support partial updates.
+         * @return ProjectSettings
+         * @throws \Google\Service\Exception
+         */
+        public function updateProjectSettings($name, ProjectSettings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the Settings for the Project. (projects.updateProjectSettings)
-     *
-     * @param string $name The name of the project's settings. Always of the form:
-     * projects/{project-id}/projectSettings In update request: never set In
-     * response: always set
-     * @param ProjectSettings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Field mask to support partial updates.
-     * @return ProjectSettings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateProjectSettings($name, ProjectSettings $postBody, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_Projects extends \Google\Service\ArtifactRegistry\Resource\Projects
     {
     }
 }

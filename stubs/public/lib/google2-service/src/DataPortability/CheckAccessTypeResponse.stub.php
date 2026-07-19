@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataPortability;
-
-class CheckAccessTypeResponse extends \Google\Collection
-{
-    protected $collection_key = 'timeBasedResources';
-    /**
-     * Jobs initiated with this token will be one-time if any requested resources
-     * have one-time access.
-     *
-     * @var string[]
-     */
-    public $oneTimeResources;
-    /**
-     * Jobs initiated with this token will be time-based if all requested
-     * resources have time-based access.
-     *
-     * @var string[]
-     */
-    public $timeBasedResources;
-    /**
-     * Jobs initiated with this token will be one-time if any requested resources
-     * have one-time access.
-     *
-     * @param string[] $oneTimeResources
-     */
-    public function setOneTimeResources($oneTimeResources)
+namespace Google\Service\DataPortability {
+    class CheckAccessTypeResponse extends \Google\Collection
     {
+        protected $collection_key = 'timeBasedResources';
+        /**
+         * Jobs initiated with this token will be one-time if any requested resources
+         * have one-time access.
+         *
+         * @var string[]
+         */
+        public $oneTimeResources;
+        /**
+         * Jobs initiated with this token will be time-based if all requested
+         * resources have time-based access.
+         *
+         * @var string[]
+         */
+        public $timeBasedResources;
+        /**
+         * Jobs initiated with this token will be one-time if any requested resources
+         * have one-time access.
+         *
+         * @param string[] $oneTimeResources
+         */
+        public function setOneTimeResources($oneTimeResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOneTimeResources()
+        {
+        }
+        /**
+         * Jobs initiated with this token will be time-based if all requested
+         * resources have time-based access.
+         *
+         * @param string[] $timeBasedResources
+         */
+        public function setTimeBasedResources($timeBasedResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTimeBasedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataPortability\CheckAccessTypeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneTimeResources()
-    {
-    }
-    /**
-     * Jobs initiated with this token will be time-based if all requested
-     * resources have time-based access.
-     *
-     * @param string[] $timeBasedResources
-     */
-    public function setTimeBasedResources($timeBasedResources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTimeBasedResources()
+    class Google_Service_DataPortability_CheckAccessTypeResponse extends \Google\Service\DataPortability\CheckAccessTypeResponse
     {
     }
 }

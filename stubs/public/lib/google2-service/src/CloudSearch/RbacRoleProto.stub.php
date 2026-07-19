@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RbacRoleProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $objectId;
-    /**
-     * @var string
-     */
-    public $rbacNamespace;
-    /**
-     * @var string
-     */
-    public $rbacRoleName;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\CloudSearch {
+    class RbacRoleProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $objectId;
+        /**
+         * @var string
+         */
+        public $rbacNamespace;
+        /**
+         * @var string
+         */
+        public $rbacRoleName;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRbacNamespace($rbacNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRbacNamespace()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRbacRoleName($rbacRoleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRbacRoleName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\RbacRoleProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRbacNamespace($rbacNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRbacNamespace()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRbacRoleName($rbacRoleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRbacRoleName()
+    class Google_Service_CloudSearch_RbacRoleProto extends \Google\Service\CloudSearch\RbacRoleProto
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class BuildDefinition extends \Google\Collection
-{
-    protected $collection_key = 'resolvedDependencies';
-    /**
-     * @var string
-     */
-    public $buildType;
-    /**
-     * @var array[]
-     */
-    public $externalParameters;
-    /**
-     * @var array[]
-     */
-    public $internalParameters;
-    protected $resolvedDependenciesType = ResourceDescriptor::class;
-    protected $resolvedDependenciesDataType = 'array';
-    /**
-     * @param string $buildType
-     */
-    public function setBuildType($buildType)
+namespace Google\Service\OnDemandScanning {
+    class BuildDefinition extends \Google\Collection
     {
+        protected $collection_key = 'resolvedDependencies';
+        /**
+         * @var string
+         */
+        public $buildType;
+        /**
+         * @var array[]
+         */
+        public $externalParameters;
+        /**
+         * @var array[]
+         */
+        public $internalParameters;
+        protected $resolvedDependenciesType = ResourceDescriptor::class;
+        protected $resolvedDependenciesDataType = 'array';
+        /**
+         * @param string $buildType
+         */
+        public function setBuildType($buildType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildType()
+        {
+        }
+        /**
+         * @param array[] $externalParameters
+         */
+        public function setExternalParameters($externalParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getExternalParameters()
+        {
+        }
+        /**
+         * @param array[] $internalParameters
+         */
+        public function setInternalParameters($internalParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInternalParameters()
+        {
+        }
+        /**
+         * @param ResourceDescriptor[] $resolvedDependencies
+         */
+        public function setResolvedDependencies($resolvedDependencies)
+        {
+        }
+        /**
+         * @return ResourceDescriptor[]
+         */
+        public function getResolvedDependencies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\BuildDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildType()
-    {
-    }
-    /**
-     * @param array[] $externalParameters
-     */
-    public function setExternalParameters($externalParameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getExternalParameters()
-    {
-    }
-    /**
-     * @param array[] $internalParameters
-     */
-    public function setInternalParameters($internalParameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInternalParameters()
-    {
-    }
-    /**
-     * @param ResourceDescriptor[] $resolvedDependencies
-     */
-    public function setResolvedDependencies($resolvedDependencies)
-    {
-    }
-    /**
-     * @return ResourceDescriptor[]
-     */
-    public function getResolvedDependencies()
+    class Google_Service_OnDemandScanning_BuildDefinition extends \Google\Service\OnDemandScanning\BuildDefinition
     {
     }
 }

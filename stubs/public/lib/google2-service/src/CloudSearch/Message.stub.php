@@ -21,663 +21,672 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Message extends \Google\Collection
-{
-    protected $collection_key = 'uploadMetadata';
-    protected $annotationsType = Annotation::class;
-    protected $annotationsDataType = 'array';
-    protected $appProfileType = AppsDynamiteSharedAppProfile::class;
-    protected $appProfileDataType = '';
-    protected $attachmentsType = Attachment::class;
-    protected $attachmentsDataType = 'array';
-    protected $attributesType = MessageAttributes::class;
-    protected $attributesDataType = '';
-    protected $botResponsesType = BotResponse::class;
-    protected $botResponsesDataType = 'array';
-    protected $communalLabelsType = CommunalLabelTag::class;
-    protected $communalLabelsDataType = 'array';
-    protected $contentReportSummaryType = ContentReportSummary::class;
-    protected $contentReportSummaryDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $creatorIdType = UserId::class;
-    protected $creatorIdDataType = '';
-    /**
-     * @var string
-     */
-    public $deletableBy;
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * @var string
-     */
-    public $deleteTimeForRequester;
-    /**
-     * @var bool
-     */
-    public $deletedByVault;
-    protected $dlpScanSummaryType = DlpScanSummary::class;
-    protected $dlpScanSummaryDataType = '';
-    /**
-     * @var string
-     */
-    public $editableBy;
-    /**
-     * @var string
-     */
-    public $fallbackText;
-    protected $idType = MessageId::class;
-    protected $idDataType = '';
-    /**
-     * @var bool
-     */
-    public $isContentPurged;
-    /**
-     * @var bool
-     */
-    public $isInlineReply;
-    /**
-     * @var string
-     */
-    public $lastEditTime;
-    /**
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * @var string
-     */
-    public $localId;
-    protected $messageIntegrationPayloadType = AppsDynamiteSharedMessageIntegrationPayload::class;
-    protected $messageIntegrationPayloadDataType = '';
-    /**
-     * @var string
-     */
-    public $messageOrigin;
-    protected $messageReferenceType = MessageReference::class;
-    protected $messageReferenceDataType = '';
-    protected $messageSearchInfoType = AppsDynamiteSharedMessageSearchInfo::class;
-    protected $messageSearchInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $messageState;
-    /**
-     * @var int
-     */
-    public $numberOfUnicodeEmojis;
-    protected $originAppSuggestionsType = AppsDynamiteSharedOriginAppSuggestion::class;
-    protected $originAppSuggestionsDataType = 'array';
-    protected $personalLabelsType = PersonalLabelTag::class;
-    protected $personalLabelsDataType = 'array';
-    protected $privateMessageInfosType = PrivateMessageInfo::class;
-    protected $privateMessageInfosDataType = 'array';
-    protected $privateMessageViewerType = UserId::class;
-    protected $privateMessageViewerDataType = '';
-    protected $propsType = MessageProps::class;
-    protected $propsDataType = '';
-    /**
-     * @var string
-     */
-    public $quotedByState;
-    protected $quotedMessageMetadataType = QuotedMessageMetadata::class;
-    protected $quotedMessageMetadataDataType = '';
-    protected $reactionsType = AppsDynamiteSharedReaction::class;
-    protected $reactionsDataType = 'array';
-    protected $reportsType = ContentReport::class;
-    protected $reportsDataType = 'array';
-    protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
-    protected $retentionSettingsDataType = '';
-    /**
-     * @var string
-     */
-    public $richTextFormattingType;
-    /**
-     * @var string
-     */
-    public $secondaryMessageKey;
-    /**
-     * @var string
-     */
-    public $textBody;
-    protected $tombstoneMetadataType = TombstoneMetadata::class;
-    protected $tombstoneMetadataDataType = '';
-    protected $updaterIdType = UserId::class;
-    protected $updaterIdDataType = '';
-    protected $uploadMetadataType = UploadMetadata::class;
-    protected $uploadMetadataDataType = 'array';
-    /**
-     * @param Annotation[]
-     */
-    public function setAnnotations($annotations)
-    {
-    }
-    /**
-     * @return Annotation[]
-     */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAppProfile
-     */
-    public function setAppProfile(AppsDynamiteSharedAppProfile $appProfile)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAppProfile
-     */
-    public function getAppProfile()
-    {
-    }
-    /**
-     * @param Attachment[]
-     */
-    public function setAttachments($attachments)
-    {
-    }
-    /**
-     * @return Attachment[]
-     */
-    public function getAttachments()
-    {
-    }
-    /**
-     * @param MessageAttributes
-     */
-    public function setAttributes(MessageAttributes $attributes)
-    {
-    }
-    /**
-     * @return MessageAttributes
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param BotResponse[]
-     */
-    public function setBotResponses($botResponses)
-    {
-    }
-    /**
-     * @return BotResponse[]
-     */
-    public function getBotResponses()
-    {
-    }
-    /**
-     * @param CommunalLabelTag[]
-     */
-    public function setCommunalLabels($communalLabels)
-    {
-    }
-    /**
-     * @return CommunalLabelTag[]
-     */
-    public function getCommunalLabels()
-    {
-    }
-    /**
-     * @param ContentReportSummary
-     */
-    public function setContentReportSummary(ContentReportSummary $contentReportSummary)
-    {
-    }
-    /**
-     * @return ContentReportSummary
-     */
-    public function getContentReportSummary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setCreatorId(UserId $creatorId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getCreatorId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeletableBy($deletableBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeletableBy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTimeForRequester($deleteTimeForRequester)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTimeForRequester()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDeletedByVault($deletedByVault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeletedByVault()
-    {
-    }
-    /**
-     * @param DlpScanSummary
-     */
-    public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
-    {
-    }
-    /**
-     * @return DlpScanSummary
-     */
-    public function getDlpScanSummary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEditableBy($editableBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEditableBy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFallbackText($fallbackText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFallbackText()
-    {
-    }
-    /**
-     * @param MessageId
-     */
-    public function setId(MessageId $id)
-    {
-    }
-    /**
-     * @return MessageId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsContentPurged($isContentPurged)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsContentPurged()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsInlineReply($isInlineReply)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInlineReply()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastEditTime($lastEditTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastEditTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedMessageIntegrationPayload
-     */
-    public function setMessageIntegrationPayload(AppsDynamiteSharedMessageIntegrationPayload $messageIntegrationPayload)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedMessageIntegrationPayload
-     */
-    public function getMessageIntegrationPayload()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessageOrigin($messageOrigin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageOrigin()
-    {
-    }
-    /**
-     * @param MessageReference
-     */
-    public function setMessageReference(MessageReference $messageReference)
-    {
-    }
-    /**
-     * @return MessageReference
-     */
-    public function getMessageReference()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedMessageSearchInfo
-     */
-    public function setMessageSearchInfo(AppsDynamiteSharedMessageSearchInfo $messageSearchInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedMessageSearchInfo
-     */
-    public function getMessageSearchInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessageState($messageState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageState()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumberOfUnicodeEmojis($numberOfUnicodeEmojis)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumberOfUnicodeEmojis()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOriginAppSuggestion[]
-     */
-    public function setOriginAppSuggestions($originAppSuggestions)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOriginAppSuggestion[]
-     */
-    public function getOriginAppSuggestions()
-    {
-    }
-    /**
-     * @param PersonalLabelTag[]
-     */
-    public function setPersonalLabels($personalLabels)
-    {
-    }
-    /**
-     * @return PersonalLabelTag[]
-     */
-    public function getPersonalLabels()
-    {
-    }
-    /**
-     * @param PrivateMessageInfo[]
-     */
-    public function setPrivateMessageInfos($privateMessageInfos)
-    {
-    }
-    /**
-     * @return PrivateMessageInfo[]
-     */
-    public function getPrivateMessageInfos()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setPrivateMessageViewer(UserId $privateMessageViewer)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getPrivateMessageViewer()
-    {
-    }
-    /**
-     * @param MessageProps
-     */
-    public function setProps(MessageProps $props)
-    {
-    }
-    /**
-     * @return MessageProps
-     */
-    public function getProps()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuotedByState($quotedByState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotedByState()
-    {
-    }
-    /**
-     * @param QuotedMessageMetadata
-     */
-    public function setQuotedMessageMetadata(QuotedMessageMetadata $quotedMessageMetadata)
-    {
-    }
-    /**
-     * @return QuotedMessageMetadata
-     */
-    public function getQuotedMessageMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedReaction[]
-     */
-    public function setReactions($reactions)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedReaction[]
-     */
-    public function getReactions()
-    {
-    }
-    /**
-     * @param ContentReport[]
-     */
-    public function setReports($reports)
-    {
-    }
-    /**
-     * @return ContentReport[]
-     */
-    public function getReports()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedRetentionSettings
-     */
-    public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedRetentionSettings
-     */
-    public function getRetentionSettings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRichTextFormattingType($richTextFormattingType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRichTextFormattingType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSecondaryMessageKey($secondaryMessageKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondaryMessageKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextBody($textBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextBody()
-    {
-    }
-    /**
-     * @param TombstoneMetadata
-     */
-    public function setTombstoneMetadata(TombstoneMetadata $tombstoneMetadata)
-    {
-    }
-    /**
-     * @return TombstoneMetadata
-     */
-    public function getTombstoneMetadata()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUpdaterId(UserId $updaterId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUpdaterId()
-    {
-    }
-    /**
-     * @param UploadMetadata[]
-     */
-    public function setUploadMetadata($uploadMetadata)
-    {
-    }
-    /**
-     * @return UploadMetadata[]
-     */
-    public function getUploadMetadata()
+namespace Google\Service\CloudSearch {
+    class Message extends \Google\Collection
+    {
+        protected $collection_key = 'uploadMetadata';
+        protected $annotationsType = Annotation::class;
+        protected $annotationsDataType = 'array';
+        protected $appProfileType = AppsDynamiteSharedAppProfile::class;
+        protected $appProfileDataType = '';
+        protected $attachmentsType = Attachment::class;
+        protected $attachmentsDataType = 'array';
+        protected $attributesType = MessageAttributes::class;
+        protected $attributesDataType = '';
+        protected $botResponsesType = BotResponse::class;
+        protected $botResponsesDataType = 'array';
+        protected $communalLabelsType = CommunalLabelTag::class;
+        protected $communalLabelsDataType = 'array';
+        protected $contentReportSummaryType = ContentReportSummary::class;
+        protected $contentReportSummaryDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $creatorIdType = UserId::class;
+        protected $creatorIdDataType = '';
+        /**
+         * @var string
+         */
+        public $deletableBy;
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * @var string
+         */
+        public $deleteTimeForRequester;
+        /**
+         * @var bool
+         */
+        public $deletedByVault;
+        protected $dlpScanSummaryType = DlpScanSummary::class;
+        protected $dlpScanSummaryDataType = '';
+        /**
+         * @var string
+         */
+        public $editableBy;
+        /**
+         * @var string
+         */
+        public $fallbackText;
+        protected $idType = MessageId::class;
+        protected $idDataType = '';
+        /**
+         * @var bool
+         */
+        public $isContentPurged;
+        /**
+         * @var bool
+         */
+        public $isInlineReply;
+        /**
+         * @var string
+         */
+        public $lastEditTime;
+        /**
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * @var string
+         */
+        public $localId;
+        protected $messageIntegrationPayloadType = AppsDynamiteSharedMessageIntegrationPayload::class;
+        protected $messageIntegrationPayloadDataType = '';
+        /**
+         * @var string
+         */
+        public $messageOrigin;
+        protected $messageReferenceType = MessageReference::class;
+        protected $messageReferenceDataType = '';
+        protected $messageSearchInfoType = AppsDynamiteSharedMessageSearchInfo::class;
+        protected $messageSearchInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $messageState;
+        /**
+         * @var int
+         */
+        public $numberOfUnicodeEmojis;
+        protected $originAppSuggestionsType = AppsDynamiteSharedOriginAppSuggestion::class;
+        protected $originAppSuggestionsDataType = 'array';
+        protected $personalLabelsType = PersonalLabelTag::class;
+        protected $personalLabelsDataType = 'array';
+        protected $privateMessageInfosType = PrivateMessageInfo::class;
+        protected $privateMessageInfosDataType = 'array';
+        protected $privateMessageViewerType = UserId::class;
+        protected $privateMessageViewerDataType = '';
+        protected $propsType = MessageProps::class;
+        protected $propsDataType = '';
+        /**
+         * @var string
+         */
+        public $quotedByState;
+        protected $quotedMessageMetadataType = QuotedMessageMetadata::class;
+        protected $quotedMessageMetadataDataType = '';
+        protected $reactionsType = AppsDynamiteSharedReaction::class;
+        protected $reactionsDataType = 'array';
+        protected $reportsType = ContentReport::class;
+        protected $reportsDataType = 'array';
+        protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
+        protected $retentionSettingsDataType = '';
+        /**
+         * @var string
+         */
+        public $richTextFormattingType;
+        /**
+         * @var string
+         */
+        public $secondaryMessageKey;
+        /**
+         * @var string
+         */
+        public $textBody;
+        protected $tombstoneMetadataType = TombstoneMetadata::class;
+        protected $tombstoneMetadataDataType = '';
+        protected $updaterIdType = UserId::class;
+        protected $updaterIdDataType = '';
+        protected $uploadMetadataType = UploadMetadata::class;
+        protected $uploadMetadataDataType = 'array';
+        /**
+         * @param Annotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return Annotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAppProfile
+         */
+        public function setAppProfile(AppsDynamiteSharedAppProfile $appProfile)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAppProfile
+         */
+        public function getAppProfile()
+        {
+        }
+        /**
+         * @param Attachment[]
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * @param MessageAttributes
+         */
+        public function setAttributes(MessageAttributes $attributes)
+        {
+        }
+        /**
+         * @return MessageAttributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param BotResponse[]
+         */
+        public function setBotResponses($botResponses)
+        {
+        }
+        /**
+         * @return BotResponse[]
+         */
+        public function getBotResponses()
+        {
+        }
+        /**
+         * @param CommunalLabelTag[]
+         */
+        public function setCommunalLabels($communalLabels)
+        {
+        }
+        /**
+         * @return CommunalLabelTag[]
+         */
+        public function getCommunalLabels()
+        {
+        }
+        /**
+         * @param ContentReportSummary
+         */
+        public function setContentReportSummary(ContentReportSummary $contentReportSummary)
+        {
+        }
+        /**
+         * @return ContentReportSummary
+         */
+        public function getContentReportSummary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setCreatorId(UserId $creatorId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getCreatorId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeletableBy($deletableBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletableBy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTimeForRequester($deleteTimeForRequester)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTimeForRequester()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDeletedByVault($deletedByVault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletedByVault()
+        {
+        }
+        /**
+         * @param DlpScanSummary
+         */
+        public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
+        {
+        }
+        /**
+         * @return DlpScanSummary
+         */
+        public function getDlpScanSummary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEditableBy($editableBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEditableBy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFallbackText($fallbackText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackText()
+        {
+        }
+        /**
+         * @param MessageId
+         */
+        public function setId(MessageId $id)
+        {
+        }
+        /**
+         * @return MessageId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsContentPurged($isContentPurged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsContentPurged()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsInlineReply($isInlineReply)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInlineReply()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastEditTime($lastEditTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastEditTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedMessageIntegrationPayload
+         */
+        public function setMessageIntegrationPayload(AppsDynamiteSharedMessageIntegrationPayload $messageIntegrationPayload)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedMessageIntegrationPayload
+         */
+        public function getMessageIntegrationPayload()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessageOrigin($messageOrigin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageOrigin()
+        {
+        }
+        /**
+         * @param MessageReference
+         */
+        public function setMessageReference(MessageReference $messageReference)
+        {
+        }
+        /**
+         * @return MessageReference
+         */
+        public function getMessageReference()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedMessageSearchInfo
+         */
+        public function setMessageSearchInfo(AppsDynamiteSharedMessageSearchInfo $messageSearchInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedMessageSearchInfo
+         */
+        public function getMessageSearchInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessageState($messageState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageState()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumberOfUnicodeEmojis($numberOfUnicodeEmojis)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberOfUnicodeEmojis()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOriginAppSuggestion[]
+         */
+        public function setOriginAppSuggestions($originAppSuggestions)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOriginAppSuggestion[]
+         */
+        public function getOriginAppSuggestions()
+        {
+        }
+        /**
+         * @param PersonalLabelTag[]
+         */
+        public function setPersonalLabels($personalLabels)
+        {
+        }
+        /**
+         * @return PersonalLabelTag[]
+         */
+        public function getPersonalLabels()
+        {
+        }
+        /**
+         * @param PrivateMessageInfo[]
+         */
+        public function setPrivateMessageInfos($privateMessageInfos)
+        {
+        }
+        /**
+         * @return PrivateMessageInfo[]
+         */
+        public function getPrivateMessageInfos()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setPrivateMessageViewer(UserId $privateMessageViewer)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getPrivateMessageViewer()
+        {
+        }
+        /**
+         * @param MessageProps
+         */
+        public function setProps(MessageProps $props)
+        {
+        }
+        /**
+         * @return MessageProps
+         */
+        public function getProps()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuotedByState($quotedByState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotedByState()
+        {
+        }
+        /**
+         * @param QuotedMessageMetadata
+         */
+        public function setQuotedMessageMetadata(QuotedMessageMetadata $quotedMessageMetadata)
+        {
+        }
+        /**
+         * @return QuotedMessageMetadata
+         */
+        public function getQuotedMessageMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedReaction[]
+         */
+        public function setReactions($reactions)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedReaction[]
+         */
+        public function getReactions()
+        {
+        }
+        /**
+         * @param ContentReport[]
+         */
+        public function setReports($reports)
+        {
+        }
+        /**
+         * @return ContentReport[]
+         */
+        public function getReports()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedRetentionSettings
+         */
+        public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedRetentionSettings
+         */
+        public function getRetentionSettings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRichTextFormattingType($richTextFormattingType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRichTextFormattingType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSecondaryMessageKey($secondaryMessageKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondaryMessageKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextBody($textBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextBody()
+        {
+        }
+        /**
+         * @param TombstoneMetadata
+         */
+        public function setTombstoneMetadata(TombstoneMetadata $tombstoneMetadata)
+        {
+        }
+        /**
+         * @return TombstoneMetadata
+         */
+        public function getTombstoneMetadata()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUpdaterId(UserId $updaterId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUpdaterId()
+        {
+        }
+        /**
+         * @param UploadMetadata[]
+         */
+        public function setUploadMetadata($uploadMetadata)
+        {
+        }
+        /**
+         * @return UploadMetadata[]
+         */
+        public function getUploadMetadata()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\Message registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_Message extends \Google\Service\CloudSearch\Message
     {
     }
 }

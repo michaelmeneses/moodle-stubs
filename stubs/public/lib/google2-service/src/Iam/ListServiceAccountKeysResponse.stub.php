@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class ListServiceAccountKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $keysType = ServiceAccountKey::class;
-    protected $keysDataType = 'array';
-    public $keys;
-    /**
-     * @param ServiceAccountKey[]
-     */
-    public function setKeys($keys)
+namespace Google\Service\Iam {
+    class ListServiceAccountKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $keysType = ServiceAccountKey::class;
+        protected $keysDataType = 'array';
+        public $keys;
+        /**
+         * @param ServiceAccountKey[]
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return ServiceAccountKey[]
+         */
+        public function getKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccountKey[]
+     * Runtime class alias of \Google\Service\Iam\ListServiceAccountKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
+    class Google_Service_Iam_ListServiceAccountKeysResponse extends \Google\Service\Iam\ListServiceAccountKeysResponse
     {
     }
 }

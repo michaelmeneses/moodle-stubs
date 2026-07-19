@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sourcerepoService = new Google\Service\CloudSourceRepositories(...);
- *   $projects = $sourcerepoService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSourceRepositories\Resource {
+    use Google\Service\CloudSourceRepositories\ProjectConfig;
+    use Google\Service\CloudSourceRepositories\UpdateProjectConfigRequest;
     /**
-     * Returns the Cloud Source Repositories configuration of the project.
-     * (projects.getConfig)
-     *
-     * @param string $name The name of the requested project. Values are of the form
-     * `projects/`.
-     * @param array $optParams Optional parameters.
-     * @return ProjectConfig
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sourcerepoService = new Google\Service\CloudSourceRepositories(...);
+     *   $projects = $sourcerepoService->projects;
+     *  </code>
      */
-    public function getConfig($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Returns the Cloud Source Repositories configuration of the project.
+         * (projects.getConfig)
+         *
+         * @param string $name The name of the requested project. Values are of the form
+         * `projects/`.
+         * @param array $optParams Optional parameters.
+         * @return ProjectConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the Cloud Source Repositories configuration of the project.
+         * (projects.updateConfig)
+         *
+         * @param string $name The name of the requested project. Values are of the form
+         * `projects/`.
+         * @param UpdateProjectConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ProjectConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateConfig($name, UpdateProjectConfigRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the Cloud Source Repositories configuration of the project.
-     * (projects.updateConfig)
-     *
-     * @param string $name The name of the requested project. Values are of the form
-     * `projects/`.
-     * @param UpdateProjectConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ProjectConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateConfig($name, UpdateProjectConfigRequest $postBody, $optParams = [])
+    class Google_Service_CloudSourceRepositories_Resource_Projects extends \Google\Service\CloudSourceRepositories\Resource\Projects
     {
     }
 }

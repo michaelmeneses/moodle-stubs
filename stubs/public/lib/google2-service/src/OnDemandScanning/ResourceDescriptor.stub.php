@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class ResourceDescriptor extends \Google\Model
-{
-    /**
-     * @var array[]
-     */
-    public $annotations;
-    /**
-     * @var string
-     */
-    public $content;
-    /**
-     * @var string[]
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $downloadLocation;
-    /**
-     * @var string
-     */
-    public $mediaType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param array[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\OnDemandScanning {
+    class ResourceDescriptor extends \Google\Model
     {
+        /**
+         * @var array[]
+         */
+        public $annotations;
+        /**
+         * @var string
+         */
+        public $content;
+        /**
+         * @var string[]
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $downloadLocation;
+        /**
+         * @var string
+         */
+        public $mediaType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param array[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param string[] $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string $downloadLocation
+         */
+        public function setDownloadLocation($downloadLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadLocation()
+        {
+        }
+        /**
+         * @param string $mediaType
+         */
+        public function setMediaType($mediaType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaType()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\ResourceDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * @param string[] $digest
-     */
-    public function setDigest($digest)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string $downloadLocation
-     */
-    public function setDownloadLocation($downloadLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadLocation()
-    {
-    }
-    /**
-     * @param string $mediaType
-     */
-    public function setMediaType($mediaType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMediaType()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_OnDemandScanning_ResourceDescriptor extends \Google\Service\OnDemandScanning\ResourceDescriptor
     {
     }
 }

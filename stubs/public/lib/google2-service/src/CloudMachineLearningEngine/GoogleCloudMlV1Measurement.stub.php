@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1Measurement extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Output only. Time that the trial has been running at the point of this
-     * measurement.
-     *
-     * @var string
-     */
-    public $elapsedTime;
-    protected $metricsType = GoogleCloudMlV1MeasurementMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * The number of steps a machine learning model has been trained for. Must be
-     * non-negative.
-     *
-     * @var string
-     */
-    public $stepCount;
-    /**
-     * Output only. Time that the trial has been running at the point of this
-     * measurement.
-     *
-     * @param string $elapsedTime
-     */
-    public function setElapsedTime($elapsedTime)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1Measurement extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Output only. Time that the trial has been running at the point of this
+         * measurement.
+         *
+         * @var string
+         */
+        public $elapsedTime;
+        protected $metricsType = GoogleCloudMlV1MeasurementMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * The number of steps a machine learning model has been trained for. Must be
+         * non-negative.
+         *
+         * @var string
+         */
+        public $stepCount;
+        /**
+         * Output only. Time that the trial has been running at the point of this
+         * measurement.
+         *
+         * @param string $elapsedTime
+         */
+        public function setElapsedTime($elapsedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElapsedTime()
+        {
+        }
+        /**
+         * Provides a list of metrics that act as inputs into the objective function.
+         *
+         * @param GoogleCloudMlV1MeasurementMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1MeasurementMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * The number of steps a machine learning model has been trained for. Must be
+         * non-negative.
+         *
+         * @param string $stepCount
+         */
+        public function setStepCount($stepCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStepCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Measurement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElapsedTime()
-    {
-    }
-    /**
-     * Provides a list of metrics that act as inputs into the objective function.
-     *
-     * @param GoogleCloudMlV1MeasurementMetric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1MeasurementMetric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * The number of steps a machine learning model has been trained for. Must be
-     * non-negative.
-     *
-     * @param string $stepCount
-     */
-    public function setStepCount($stepCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStepCount()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Measurement extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Measurement
     {
     }
 }

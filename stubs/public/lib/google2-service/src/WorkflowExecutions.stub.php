@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for WorkflowExecutions (v1).
- *
- * <p>
- * Execute workflows created with Workflows API.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/workflows" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class WorkflowExecutions extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations_workflows;
-    public $projects_locations_workflows_executions;
-    public $projects_locations_workflows_executions_callbacks;
-    public $projects_locations_workflows_executions_stepEntries;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the WorkflowExecutions service.
+     * Service definition for WorkflowExecutions (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Execute workflows created with Workflows API.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/workflows" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class WorkflowExecutions extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations_workflows;
+        public $projects_locations_workflows_executions;
+        public $projects_locations_workflows_executions_callbacks;
+        public $projects_locations_workflows_executions_stepEntries;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the WorkflowExecutions service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkflowExecutions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkflowExecutions extends \Google\Service\WorkflowExecutions
     {
     }
 }

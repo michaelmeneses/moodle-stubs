@@ -23,6 +23,10 @@
  */
 namespace Google;
 
+use Google\Exception as GoogleException;
+use ReflectionObject;
+use ReflectionProperty;
+use stdClass;
 /**
  * This class defines attributes, valid values, and usage which is generated
  * from a given json schema.

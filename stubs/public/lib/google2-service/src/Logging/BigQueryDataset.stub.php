@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class BigQueryDataset extends \Google\Model
-{
-    /**
-     * Output only. The full resource name of the BigQuery dataset. The DATASET_ID
-     * will match the ID of the link, so the link must match the naming
-     * restrictions of BigQuery datasets (alphanumeric characters and underscores
-     * only).The dataset will have a resource path of
-     * "bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID"
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * Output only. The full resource name of the BigQuery dataset. The DATASET_ID
-     * will match the ID of the link, so the link must match the naming
-     * restrictions of BigQuery datasets (alphanumeric characters and underscores
-     * only).The dataset will have a resource path of
-     * "bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID"
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\Logging {
+    class BigQueryDataset extends \Google\Model
     {
+        /**
+         * Output only. The full resource name of the BigQuery dataset. The DATASET_ID
+         * will match the ID of the link, so the link must match the naming
+         * restrictions of BigQuery datasets (alphanumeric characters and underscores
+         * only).The dataset will have a resource path of
+         * "bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID"
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * Output only. The full resource name of the BigQuery dataset. The DATASET_ID
+         * will match the ID of the link, so the link must match the naming
+         * restrictions of BigQuery datasets (alphanumeric characters and underscores
+         * only).The dataset will have a resource path of
+         * "bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID"
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\BigQueryDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
+    class Google_Service_Logging_BigQueryDataset extends \Google\Service\Logging\BigQueryDataset
     {
     }
 }

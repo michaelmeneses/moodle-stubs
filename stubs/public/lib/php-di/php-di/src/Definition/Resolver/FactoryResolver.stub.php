@@ -8,6 +8,18 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\FactoryDefinition;
+use DI\Invoker\FactoryParameterResolver;
+use Invoker\Exception\NotCallableException;
+use Invoker\Exception\NotEnoughParametersException;
+use Invoker\Invoker;
+use Invoker\ParameterResolver\AssociativeArrayResolver;
+use Invoker\ParameterResolver\DefaultValueResolver;
+use Invoker\ParameterResolver\NumericArrayResolver;
+use Invoker\ParameterResolver\ResolverChain;
+use Psr\Container\ContainerInterface;
 /**
  * Resolves a factory definition to a value.
  *

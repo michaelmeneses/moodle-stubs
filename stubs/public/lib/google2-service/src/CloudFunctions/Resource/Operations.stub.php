@@ -21,58 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudfunctionsService = new Google\Service\CloudFunctions(...);
- *   $operations = $cloudfunctionsService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudFunctions\Resource {
+    use Google\Service\CloudFunctions\ListOperationsResponse;
+    use Google\Service\CloudFunctions\Operation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudfunctionsService = new Google\Service\CloudFunctions(...);
+     *   $operations = $cloudfunctionsService->operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Operations extends \Google\Service\Resource
     {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the
+         * `name` binding allows API services to override the binding to use different
+         * resource name schemes, such as `users/operations`. To override the binding,
+         * API services can add a binding such as `"/v1/{name=users}/operations"` to
+         * their service configuration. For backwards compatibility, the default name
+         * includes the operations collection id, however overriding users must ensure
+         * the name binding is the parent resource, without the operations collection
+         * id. (operations.listOperations)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Required. A filter for matching the requested
+         * operations. The supported formats of *filter* are: To query for a specific
+         * function: project:*,location:*,function:* To query for all of the latest
+         * operations for a project: project:*,latest:true
+         * @opt_param string name Must not be set.
+         * @opt_param int pageSize The maximum number of records that should be
+         * returned. Requested page size cannot exceed 100. If not set, the default page
+         * size is 100. Pagination is only supported when querying for a specific
+         * function.
+         * @opt_param string pageToken Token identifying which result to start with,
+         * which is returned by a previous list call. Pagination is only supported when
+         * querying for a specific function.
+         * @return ListOperationsResponse
+         */
+        public function listOperations($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the
-     * `name` binding allows API services to override the binding to use different
-     * resource name schemes, such as `users/operations`. To override the binding,
-     * API services can add a binding such as `"/v1/{name=users}/operations"` to
-     * their service configuration. For backwards compatibility, the default name
-     * includes the operations collection id, however overriding users must ensure
-     * the name binding is the parent resource, without the operations collection
-     * id. (operations.listOperations)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Required. A filter for matching the requested
-     * operations. The supported formats of *filter* are: To query for a specific
-     * function: project:*,location:*,function:* To query for all of the latest
-     * operations for a project: project:*,latest:true
-     * @opt_param string name Must not be set.
-     * @opt_param int pageSize The maximum number of records that should be
-     * returned. Requested page size cannot exceed 100. If not set, the default page
-     * size is 100. Pagination is only supported when querying for a specific
-     * function.
-     * @opt_param string pageToken Token identifying which result to start with,
-     * which is returned by a previous list call. Pagination is only supported when
-     * querying for a specific function.
-     * @return ListOperationsResponse
+     * Runtime class alias of \Google\Service\CloudFunctions\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOperations($optParams = [])
+    class Google_Service_CloudFunctions_Resource_Operations extends \Google\Service\CloudFunctions\Resource\Operations
     {
     }
 }

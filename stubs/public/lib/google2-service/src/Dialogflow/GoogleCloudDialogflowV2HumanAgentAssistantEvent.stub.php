@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2HumanAgentAssistantEvent extends \Google\Collection
-{
-    protected $collection_key = 'suggestionResults';
-    /**
-     * The conversation this notification refers to. Format:
-     * `projects//conversations/`.
-     *
-     * @var string
-     */
-    public $conversation;
-    /**
-     * The participant that the suggestion is compiled for. Format:
-     * `projects//conversations//participants/`. It will not be set in legacy
-     * workflow.
-     *
-     * @var string
-     */
-    public $participant;
-    protected $suggestionResultsType = GoogleCloudDialogflowV2SuggestionResult::class;
-    protected $suggestionResultsDataType = 'array';
-    /**
-     * The conversation this notification refers to. Format:
-     * `projects//conversations/`.
-     *
-     * @param string $conversation
-     */
-    public function setConversation($conversation)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2HumanAgentAssistantEvent extends \Google\Collection
     {
+        protected $collection_key = 'suggestionResults';
+        /**
+         * The conversation this notification refers to. Format:
+         * `projects//conversations/`.
+         *
+         * @var string
+         */
+        public $conversation;
+        /**
+         * The participant that the suggestion is compiled for. Format:
+         * `projects//conversations//participants/`. It will not be set in legacy
+         * workflow.
+         *
+         * @var string
+         */
+        public $participant;
+        protected $suggestionResultsType = GoogleCloudDialogflowV2SuggestionResult::class;
+        protected $suggestionResultsDataType = 'array';
+        /**
+         * The conversation this notification refers to. Format:
+         * `projects//conversations/`.
+         *
+         * @param string $conversation
+         */
+        public function setConversation($conversation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * The participant that the suggestion is compiled for. Format:
+         * `projects//conversations//participants/`. It will not be set in legacy
+         * workflow.
+         *
+         * @param string $participant
+         */
+        public function setParticipant($participant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParticipant()
+        {
+        }
+        /**
+         * The suggestion results payload that this notification refers to.
+         *
+         * @param GoogleCloudDialogflowV2SuggestionResult[] $suggestionResults
+         */
+        public function setSuggestionResults($suggestionResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SuggestionResult[]
+         */
+        public function getSuggestionResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2HumanAgentAssistantEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversation()
-    {
-    }
-    /**
-     * The participant that the suggestion is compiled for. Format:
-     * `projects//conversations//participants/`. It will not be set in legacy
-     * workflow.
-     *
-     * @param string $participant
-     */
-    public function setParticipant($participant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParticipant()
-    {
-    }
-    /**
-     * The suggestion results payload that this notification refers to.
-     *
-     * @param GoogleCloudDialogflowV2SuggestionResult[] $suggestionResults
-     */
-    public function setSuggestionResults($suggestionResults)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SuggestionResult[]
-     */
-    public function getSuggestionResults()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2HumanAgentAssistantEvent extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2HumanAgentAssistantEvent
     {
     }
 }

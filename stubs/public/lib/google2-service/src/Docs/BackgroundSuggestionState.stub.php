@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class BackgroundSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates whether the current background color has been modified in this
-     * suggestion.
-     *
-     * @var bool
-     */
-    public $backgroundColorSuggested;
-    /**
-     * Indicates whether the current background color has been modified in this
-     * suggestion.
-     *
-     * @param bool $backgroundColorSuggested
-     */
-    public function setBackgroundColorSuggested($backgroundColorSuggested)
+namespace Google\Service\Docs {
+    class BackgroundSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates whether the current background color has been modified in this
+         * suggestion.
+         *
+         * @var bool
+         */
+        public $backgroundColorSuggested;
+        /**
+         * Indicates whether the current background color has been modified in this
+         * suggestion.
+         *
+         * @param bool $backgroundColorSuggested
+         */
+        public function setBackgroundColorSuggested($backgroundColorSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBackgroundColorSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\BackgroundSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColorSuggested()
+    class Google_Service_Docs_BackgroundSuggestionState extends \Google\Service\Docs\BackgroundSuggestionState
     {
     }
 }

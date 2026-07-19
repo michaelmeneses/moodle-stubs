@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareVsphereConfig extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * The name of the vCenter datastore. Inherited from the user cluster.
-     *
-     * @var string
-     */
-    public $datastore;
-    /**
-     * Vsphere host groups to apply to all VMs in the node pool
-     *
-     * @var string[]
-     */
-    public $hostGroups;
-    protected $tagsType = VmwareVsphereTag::class;
-    protected $tagsDataType = 'array';
-    /**
-     * The name of the vCenter datastore. Inherited from the user cluster.
-     *
-     * @param string $datastore
-     */
-    public function setDatastore($datastore)
+namespace Google\Service\GKEOnPrem {
+    class VmwareVsphereConfig extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * The name of the vCenter datastore. Inherited from the user cluster.
+         *
+         * @var string
+         */
+        public $datastore;
+        /**
+         * Vsphere host groups to apply to all VMs in the node pool
+         *
+         * @var string[]
+         */
+        public $hostGroups;
+        protected $tagsType = VmwareVsphereTag::class;
+        protected $tagsDataType = 'array';
+        /**
+         * The name of the vCenter datastore. Inherited from the user cluster.
+         *
+         * @param string $datastore
+         */
+        public function setDatastore($datastore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatastore()
+        {
+        }
+        /**
+         * Vsphere host groups to apply to all VMs in the node pool
+         *
+         * @param string[] $hostGroups
+         */
+        public function setHostGroups($hostGroups)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHostGroups()
+        {
+        }
+        /**
+         * Tags to apply to VMs.
+         *
+         * @param VmwareVsphereTag[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return VmwareVsphereTag[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareVsphereConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatastore()
-    {
-    }
-    /**
-     * Vsphere host groups to apply to all VMs in the node pool
-     *
-     * @param string[] $hostGroups
-     */
-    public function setHostGroups($hostGroups)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHostGroups()
-    {
-    }
-    /**
-     * Tags to apply to VMs.
-     *
-     * @param VmwareVsphereTag[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return VmwareVsphereTag[]
-     */
-    public function getTags()
+    class Google_Service_GKEOnPrem_VmwareVsphereConfig extends \Google\Service\GKEOnPrem\VmwareVsphereConfig
     {
     }
 }

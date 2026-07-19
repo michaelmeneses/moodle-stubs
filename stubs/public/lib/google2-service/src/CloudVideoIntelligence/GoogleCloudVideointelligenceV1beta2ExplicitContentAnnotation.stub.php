@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'frames';
-    protected $framesType = GoogleCloudVideointelligenceV1beta2ExplicitContentFrame::class;
-    protected $framesDataType = 'array';
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * All video frames where explicit content was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2ExplicitContentFrame[] $frames
-     */
-    public function setFrames($frames)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'frames';
+        protected $framesType = GoogleCloudVideointelligenceV1beta2ExplicitContentFrame::class;
+        protected $framesDataType = 'array';
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * All video frames where explicit content was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2ExplicitContentFrame[] $frames
+         */
+        public function setFrames($frames)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2ExplicitContentFrame[]
+         */
+        public function getFrames()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2ExplicitContentFrame[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrames()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2ExplicitContentAnnotation
     {
     }
 }

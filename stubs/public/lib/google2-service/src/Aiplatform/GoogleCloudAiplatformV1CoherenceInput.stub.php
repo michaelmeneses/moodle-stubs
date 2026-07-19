@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CoherenceInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1CoherenceInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1CoherenceSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Coherence instance.
-     *
-     * @param GoogleCloudAiplatformV1CoherenceInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1CoherenceInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CoherenceInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1CoherenceInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1CoherenceSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Coherence instance.
+         *
+         * @param GoogleCloudAiplatformV1CoherenceInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1CoherenceInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CoherenceInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for coherence score metric.
+         *
+         * @param GoogleCloudAiplatformV1CoherenceSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1CoherenceSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CoherenceSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CoherenceInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CoherenceInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for coherence score metric.
-     *
-     * @param GoogleCloudAiplatformV1CoherenceSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1CoherenceSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CoherenceSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CoherenceInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CoherenceInput
     {
     }
 }

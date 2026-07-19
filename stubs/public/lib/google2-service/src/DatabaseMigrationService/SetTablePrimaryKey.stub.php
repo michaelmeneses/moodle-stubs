@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SetTablePrimaryKey extends \Google\Collection
-{
-    protected $collection_key = 'primaryKeyColumns';
-    /**
-     * Optional. Name for the primary key
-     *
-     * @var string
-     */
-    public $primaryKey;
-    /**
-     * Required. List of column names for the primary key
-     *
-     * @var string[]
-     */
-    public $primaryKeyColumns;
-    /**
-     * Optional. Name for the primary key
-     *
-     * @param string $primaryKey
-     */
-    public function setPrimaryKey($primaryKey)
+namespace Google\Service\DatabaseMigrationService {
+    class SetTablePrimaryKey extends \Google\Collection
     {
+        protected $collection_key = 'primaryKeyColumns';
+        /**
+         * Optional. Name for the primary key
+         *
+         * @var string
+         */
+        public $primaryKey;
+        /**
+         * Required. List of column names for the primary key
+         *
+         * @var string[]
+         */
+        public $primaryKeyColumns;
+        /**
+         * Optional. Name for the primary key
+         *
+         * @param string $primaryKey
+         */
+        public function setPrimaryKey($primaryKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryKey()
+        {
+        }
+        /**
+         * Required. List of column names for the primary key
+         *
+         * @param string[] $primaryKeyColumns
+         */
+        public function setPrimaryKeyColumns($primaryKeyColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrimaryKeyColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SetTablePrimaryKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryKey()
-    {
-    }
-    /**
-     * Required. List of column names for the primary key
-     *
-     * @param string[] $primaryKeyColumns
-     */
-    public function setPrimaryKeyColumns($primaryKeyColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrimaryKeyColumns()
+    class Google_Service_DatabaseMigrationService_SetTablePrimaryKey extends \Google\Service\DatabaseMigrationService\SetTablePrimaryKey
     {
     }
 }

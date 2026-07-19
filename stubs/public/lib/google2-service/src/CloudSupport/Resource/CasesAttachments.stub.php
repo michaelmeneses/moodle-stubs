@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport\Resource;
-
-/**
- * The "attachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsupportService = new Google\Service\CloudSupport(...);
- *   $attachments = $cloudsupportService->cases_attachments;
- *  </code>
- */
-class CasesAttachments extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSupport\Resource {
+    use Google\Service\CloudSupport\ListAttachmentsResponse;
     /**
-     * List all the attachments associated with a support case. EXAMPLES: cURL:
-     * ```shell case="projects/some-project/cases/23598314" curl \ --header
-     * "Authorization: Bearer $(gcloud auth print-access-token)" \
-     * "https://cloudsupport.googleapis.com/v2/$case/attachments" ``` Python:
-     * ```python import googleapiclient.discovery api_version = "v2"
-     * supportApiService = googleapiclient.discovery.build(
-     * serviceName="cloudsupport", version=api_version, discoveryServiceUrl=f"https:
-     * //cloudsupport.googleapis.com/$discovery/rest?version={api_version}", )
-     * request = ( supportApiService.cases() .attachments()
-     * .list(parent="projects/some-project/cases/43595344") )
-     * print(request.execute()) ``` (attachments.listCasesAttachments)
-     *
-     * @param string $parent Required. The name of the case for which attachments
-     * should be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of attachments fetched with each
-     * request. If not provided, the default is 10. The maximum page size that will
-     * be returned is 100. The size of each page can be smaller than the requested
-     * page size and can include zero. For example, you could request 100
-     * attachments on one page, receive 0, and then on the next page, receive 90.
-     * @opt_param string pageToken A token identifying the page of results to
-     * return. If unspecified, the first page is retrieved.
-     * @return ListAttachmentsResponse
-     * @throws \Google\Service\Exception
+     * The "attachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsupportService = new Google\Service\CloudSupport(...);
+     *   $attachments = $cloudsupportService->cases_attachments;
+     *  </code>
      */
-    public function listCasesAttachments($parent, $optParams = [])
+    class CasesAttachments extends \Google\Service\Resource
+    {
+        /**
+         * List all the attachments associated with a support case. EXAMPLES: cURL:
+         * ```shell case="projects/some-project/cases/23598314" curl \ --header
+         * "Authorization: Bearer $(gcloud auth print-access-token)" \
+         * "https://cloudsupport.googleapis.com/v2/$case/attachments" ``` Python:
+         * ```python import googleapiclient.discovery api_version = "v2"
+         * supportApiService = googleapiclient.discovery.build(
+         * serviceName="cloudsupport", version=api_version, discoveryServiceUrl=f"https:
+         * //cloudsupport.googleapis.com/$discovery/rest?version={api_version}", )
+         * request = ( supportApiService.cases() .attachments()
+         * .list(parent="projects/some-project/cases/43595344") )
+         * print(request.execute()) ``` (attachments.listCasesAttachments)
+         *
+         * @param string $parent Required. The name of the case for which attachments
+         * should be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of attachments fetched with each
+         * request. If not provided, the default is 10. The maximum page size that will
+         * be returned is 100. The size of each page can be smaller than the requested
+         * page size and can include zero. For example, you could request 100
+         * attachments on one page, receive 0, and then on the next page, receive 90.
+         * @opt_param string pageToken A token identifying the page of results to
+         * return. If unspecified, the first page is retrieved.
+         * @return ListAttachmentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCasesAttachments($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSupport\Resource\CasesAttachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSupport_Resource_CasesAttachments extends \Google\Service\CloudSupport\Resource\CasesAttachments
     {
     }
 }

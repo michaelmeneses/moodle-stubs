@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkEndpointGroupCloudFunction extends \Google\Model
-{
-    /**
-     * A user-defined name of the Cloud Function.
-     *
-     * The function name is case-sensitive and must be 1-63 characters long.
-     *
-     * Example value: func1.
-     *
-     * @var string
-     */
-    public $function;
-    /**
-     * An URL mask is one of the main components of the Cloud Function.
-     *
-     * A template to parse function field from a request URL. URL mask allows for
-     * routing to multiple Cloud Functions without having to create multiple
-     * Network Endpoint Groups and backend services.
-     *
-     * For example, request URLs mydomain.com/function1 andmydomain.com/function2
-     * can be backed by the same Serverless NEG with URL mask /. The URL mask will
-     * parse them to { function = "function1" } and{ function = "function2" }
-     * respectively.
-     *
-     * @var string
-     */
-    public $urlMask;
-    /**
-     * A user-defined name of the Cloud Function.
-     *
-     * The function name is case-sensitive and must be 1-63 characters long.
-     *
-     * Example value: func1.
-     *
-     * @param string $function
-     */
-    public function setFunction($function)
+namespace Google\Service\Compute {
+    class NetworkEndpointGroupCloudFunction extends \Google\Model
     {
+        /**
+         * A user-defined name of the Cloud Function.
+         *
+         * The function name is case-sensitive and must be 1-63 characters long.
+         *
+         * Example value: func1.
+         *
+         * @var string
+         */
+        public $function;
+        /**
+         * An URL mask is one of the main components of the Cloud Function.
+         *
+         * A template to parse function field from a request URL. URL mask allows for
+         * routing to multiple Cloud Functions without having to create multiple
+         * Network Endpoint Groups and backend services.
+         *
+         * For example, request URLs mydomain.com/function1 andmydomain.com/function2
+         * can be backed by the same Serverless NEG with URL mask /. The URL mask will
+         * parse them to { function = "function1" } and{ function = "function2" }
+         * respectively.
+         *
+         * @var string
+         */
+        public $urlMask;
+        /**
+         * A user-defined name of the Cloud Function.
+         *
+         * The function name is case-sensitive and must be 1-63 characters long.
+         *
+         * Example value: func1.
+         *
+         * @param string $function
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * An URL mask is one of the main components of the Cloud Function.
+         *
+         * A template to parse function field from a request URL. URL mask allows for
+         * routing to multiple Cloud Functions without having to create multiple
+         * Network Endpoint Groups and backend services.
+         *
+         * For example, request URLs mydomain.com/function1 andmydomain.com/function2
+         * can be backed by the same Serverless NEG with URL mask /. The URL mask will
+         * parse them to { function = "function1" } and{ function = "function2" }
+         * respectively.
+         *
+         * @param string $urlMask
+         */
+        public function setUrlMask($urlMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NetworkEndpointGroupCloudFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunction()
-    {
-    }
-    /**
-     * An URL mask is one of the main components of the Cloud Function.
-     *
-     * A template to parse function field from a request URL. URL mask allows for
-     * routing to multiple Cloud Functions without having to create multiple
-     * Network Endpoint Groups and backend services.
-     *
-     * For example, request URLs mydomain.com/function1 andmydomain.com/function2
-     * can be backed by the same Serverless NEG with URL mask /. The URL mask will
-     * parse them to { function = "function1" } and{ function = "function2" }
-     * respectively.
-     *
-     * @param string $urlMask
-     */
-    public function setUrlMask($urlMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlMask()
+    class Google_Service_Compute_NetworkEndpointGroupCloudFunction extends \Google\Service\Compute\NetworkEndpointGroupCloudFunction
     {
     }
 }

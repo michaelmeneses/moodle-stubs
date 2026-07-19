@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CancelDataSourceRefreshStatus extends \Google\Model
-{
-    protected $referenceType = DataSourceObjectReference::class;
-    protected $referenceDataType = '';
-    protected $refreshCancellationStatusType = RefreshCancellationStatus::class;
-    protected $refreshCancellationStatusDataType = '';
-    /**
-     * Reference to the data source object whose refresh is being cancelled.
-     *
-     * @param DataSourceObjectReference $reference
-     */
-    public function setReference(DataSourceObjectReference $reference)
+namespace Google\Service\Sheets {
+    class CancelDataSourceRefreshStatus extends \Google\Model
     {
+        protected $referenceType = DataSourceObjectReference::class;
+        protected $referenceDataType = '';
+        protected $refreshCancellationStatusType = RefreshCancellationStatus::class;
+        protected $refreshCancellationStatusDataType = '';
+        /**
+         * Reference to the data source object whose refresh is being cancelled.
+         *
+         * @param DataSourceObjectReference $reference
+         */
+        public function setReference(DataSourceObjectReference $reference)
+        {
+        }
+        /**
+         * @return DataSourceObjectReference
+         */
+        public function getReference()
+        {
+        }
+        /**
+         * The cancellation status.
+         *
+         * @param RefreshCancellationStatus $refreshCancellationStatus
+         */
+        public function setRefreshCancellationStatus(RefreshCancellationStatus $refreshCancellationStatus)
+        {
+        }
+        /**
+         * @return RefreshCancellationStatus
+         */
+        public function getRefreshCancellationStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceObjectReference
+     * Runtime class alias of \Google\Service\Sheets\CancelDataSourceRefreshStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReference()
-    {
-    }
-    /**
-     * The cancellation status.
-     *
-     * @param RefreshCancellationStatus $refreshCancellationStatus
-     */
-    public function setRefreshCancellationStatus(RefreshCancellationStatus $refreshCancellationStatus)
-    {
-    }
-    /**
-     * @return RefreshCancellationStatus
-     */
-    public function getRefreshCancellationStatus()
+    class Google_Service_Sheets_CancelDataSourceRefreshStatus extends \Google\Service\Sheets\CancelDataSourceRefreshStatus
     {
     }
 }

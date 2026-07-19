@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentTaskUserAccount extends \Google\Model
-{
-    /**
-     * gid id an unique identifier of the POSIX account group corresponding to the
-     * user account.
-     *
-     * @var string
-     */
-    public $gid;
-    /**
-     * uid is an unique identifier of the POSIX account corresponding to the user
-     * account.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * gid id an unique identifier of the POSIX account group corresponding to the
-     * user account.
-     *
-     * @param string $gid
-     */
-    public function setGid($gid)
+namespace Google\Service\Batch {
+    class AgentTaskUserAccount extends \Google\Model
     {
+        /**
+         * gid id an unique identifier of the POSIX account group corresponding to the
+         * user account.
+         *
+         * @var string
+         */
+        public $gid;
+        /**
+         * uid is an unique identifier of the POSIX account corresponding to the user
+         * account.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * gid id an unique identifier of the POSIX account group corresponding to the
+         * user account.
+         *
+         * @param string $gid
+         */
+        public function setGid($gid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGid()
+        {
+        }
+        /**
+         * uid is an unique identifier of the POSIX account corresponding to the user
+         * account.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AgentTaskUserAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGid()
-    {
-    }
-    /**
-     * uid is an unique identifier of the POSIX account corresponding to the user
-     * account.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_Batch_AgentTaskUserAccount extends \Google\Service\Batch\AgentTaskUserAccount
     {
     }
 }

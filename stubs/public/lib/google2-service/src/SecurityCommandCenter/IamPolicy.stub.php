@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class IamPolicy extends \Google\Model
-{
-    /**
-     * The JSON representation of the Policy associated with the asset. See
-     * https://cloud.google.com/iam/reference/rest/v1/Policy for format details.
-     *
-     * @var string
-     */
-    public $policyBlob;
-    /**
-     * The JSON representation of the Policy associated with the asset. See
-     * https://cloud.google.com/iam/reference/rest/v1/Policy for format details.
-     *
-     * @param string $policyBlob
-     */
-    public function setPolicyBlob($policyBlob)
+namespace Google\Service\SecurityCommandCenter {
+    class IamPolicy extends \Google\Model
     {
+        /**
+         * The JSON representation of the Policy associated with the asset. See
+         * https://cloud.google.com/iam/reference/rest/v1/Policy for format details.
+         *
+         * @var string
+         */
+        public $policyBlob;
+        /**
+         * The JSON representation of the Policy associated with the asset. See
+         * https://cloud.google.com/iam/reference/rest/v1/Policy for format details.
+         *
+         * @param string $policyBlob
+         */
+        public function setPolicyBlob($policyBlob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyBlob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\IamPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyBlob()
+    class Google_Service_SecurityCommandCenter_IamPolicy extends \Google\Service\SecurityCommandCenter\IamPolicy
     {
     }
 }

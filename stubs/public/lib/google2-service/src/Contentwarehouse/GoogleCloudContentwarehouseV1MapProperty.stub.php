@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1MapProperty extends \Google\Model
-{
-    protected $fieldsType = GoogleCloudContentwarehouseV1Value::class;
-    protected $fieldsDataType = 'map';
-    /**
-     * Unordered map of dynamically typed values.
-     *
-     * @param GoogleCloudContentwarehouseV1Value[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1MapProperty extends \Google\Model
     {
+        protected $fieldsType = GoogleCloudContentwarehouseV1Value::class;
+        protected $fieldsDataType = 'map';
+        /**
+         * Unordered map of dynamically typed values.
+         *
+         * @param GoogleCloudContentwarehouseV1Value[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Value[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1Value[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1MapProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1MapProperty extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1MapProperty
     {
     }
 }

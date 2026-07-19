@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class GeolayerdataCommon extends \Google\Model
-{
-    /**
-     * The language of the information url and description.
-     *
-     * @var string
-     */
-    public $lang;
-    /**
-     * The URL for the preview image information.
-     *
-     * @var string
-     */
-    public $previewImageUrl;
-    /**
-     * The description for this location.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * The URL for information for this location. Ex: wikipedia link.
-     *
-     * @var string
-     */
-    public $snippetUrl;
-    /**
-     * The display title and localized canonical name to use when searching for
-     * this entity on Google search.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The language of the information url and description.
-     *
-     * @param string $lang
-     */
-    public function setLang($lang)
+namespace Google\Service\Books {
+    class GeolayerdataCommon extends \Google\Model
     {
+        /**
+         * The language of the information url and description.
+         *
+         * @var string
+         */
+        public $lang;
+        /**
+         * The URL for the preview image information.
+         *
+         * @var string
+         */
+        public $previewImageUrl;
+        /**
+         * The description for this location.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * The URL for information for this location. Ex: wikipedia link.
+         *
+         * @var string
+         */
+        public $snippetUrl;
+        /**
+         * The display title and localized canonical name to use when searching for
+         * this entity on Google search.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The language of the information url and description.
+         *
+         * @param string $lang
+         */
+        public function setLang($lang)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLang()
+        {
+        }
+        /**
+         * The URL for the preview image information.
+         *
+         * @param string $previewImageUrl
+         */
+        public function setPreviewImageUrl($previewImageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviewImageUrl()
+        {
+        }
+        /**
+         * The description for this location.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The URL for information for this location. Ex: wikipedia link.
+         *
+         * @param string $snippetUrl
+         */
+        public function setSnippetUrl($snippetUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippetUrl()
+        {
+        }
+        /**
+         * The display title and localized canonical name to use when searching for
+         * this entity on Google search.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\GeolayerdataCommon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLang()
-    {
-    }
-    /**
-     * The URL for the preview image information.
-     *
-     * @param string $previewImageUrl
-     */
-    public function setPreviewImageUrl($previewImageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviewImageUrl()
-    {
-    }
-    /**
-     * The description for this location.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The URL for information for this location. Ex: wikipedia link.
-     *
-     * @param string $snippetUrl
-     */
-    public function setSnippetUrl($snippetUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippetUrl()
-    {
-    }
-    /**
-     * The display title and localized canonical name to use when searching for
-     * this entity on Google search.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Books_GeolayerdataCommon extends \Google\Service\Books\GeolayerdataCommon
     {
     }
 }

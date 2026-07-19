@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class SnapshotSchedulePolicy extends \Google\Collection
-{
-    protected $collection_key = 'schedules';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $schedulesType = Schedule::class;
-    protected $schedulesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\Baremetalsolution {
+    class SnapshotSchedulePolicy extends \Google\Collection
     {
+        protected $collection_key = 'schedules';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $schedulesType = Schedule::class;
+        protected $schedulesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Schedule[]
+         */
+        public function setSchedules($schedules)
+        {
+        }
+        /**
+         * @return Schedule[]
+         */
+        public function getSchedules()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\SnapshotSchedulePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Schedule[]
-     */
-    public function setSchedules($schedules)
-    {
-    }
-    /**
-     * @return Schedule[]
-     */
-    public function getSchedules()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Baremetalsolution_SnapshotSchedulePolicy extends \Google\Service\Baremetalsolution\SnapshotSchedulePolicy
     {
     }
 }

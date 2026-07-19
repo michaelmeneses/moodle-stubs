@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Language extends \Google\Model
-{
-    /**
-     * Language ID of this language. This is the ID used for targeting and
-     * generating reports.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#language".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Format of language code is an ISO 639 two-letter language code optionally
-     * followed by an underscore followed by an ISO 3166 code. Examples are "en"
-     * for English or "zh_CN" for Simplified Chinese.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Name of this language.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Language ID of this language. This is the ID used for targeting and
-     * generating reports.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dfareporting {
+    class Language extends \Google\Model
     {
+        /**
+         * Language ID of this language. This is the ID used for targeting and
+         * generating reports.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#language".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Format of language code is an ISO 639 two-letter language code optionally
+         * followed by an underscore followed by an ISO 3166 code. Examples are "en"
+         * for English or "zh_CN" for Simplified Chinese.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Name of this language.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Language ID of this language. This is the ID used for targeting and
+         * generating reports.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#language".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Format of language code is an ISO 639 two-letter language code optionally
+         * followed by an underscore followed by an ISO 3166 code. Examples are "en"
+         * for English or "zh_CN" for Simplified Chinese.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Name of this language.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Language registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#language".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Format of language code is an ISO 639 two-letter language code optionally
-     * followed by an underscore followed by an ISO 3166 code. Examples are "en"
-     * for English or "zh_CN" for Simplified Chinese.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Name of this language.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_Language extends \Google\Service\Dfareporting\Language
     {
     }
 }

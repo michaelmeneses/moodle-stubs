@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AssetException extends \Google\Model
-{
-    /**
-     * exception_type is not applicable for the current asset.
-     */
-    public const EXCEPTION_TYPE_EXCEPTION_TYPE_UNSPECIFIED = 'EXCEPTION_TYPE_UNSPECIFIED';
-    /**
-     * The asset content is truncated.
-     */
-    public const EXCEPTION_TYPE_TRUNCATION = 'TRUNCATION';
-    /**
-     * The details of the exception.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * The type of exception.
-     *
-     * @var string
-     */
-    public $exceptionType;
-    /**
-     * The details of the exception.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\CloudAsset {
+    class AssetException extends \Google\Model
     {
+        /**
+         * exception_type is not applicable for the current asset.
+         */
+        public const EXCEPTION_TYPE_EXCEPTION_TYPE_UNSPECIFIED = 'EXCEPTION_TYPE_UNSPECIFIED';
+        /**
+         * The asset content is truncated.
+         */
+        public const EXCEPTION_TYPE_TRUNCATION = 'TRUNCATION';
+        /**
+         * The details of the exception.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * The type of exception.
+         *
+         * @var string
+         */
+        public $exceptionType;
+        /**
+         * The details of the exception.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The type of exception.
+         *
+         * Accepted values: EXCEPTION_TYPE_UNSPECIFIED, TRUNCATION
+         *
+         * @param self::EXCEPTION_TYPE_* $exceptionType
+         */
+        public function setExceptionType($exceptionType)
+        {
+        }
+        /**
+         * @return self::EXCEPTION_TYPE_*
+         */
+        public function getExceptionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\AssetException registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The type of exception.
-     *
-     * Accepted values: EXCEPTION_TYPE_UNSPECIFIED, TRUNCATION
-     *
-     * @param self::EXCEPTION_TYPE_* $exceptionType
-     */
-    public function setExceptionType($exceptionType)
-    {
-    }
-    /**
-     * @return self::EXCEPTION_TYPE_*
-     */
-    public function getExceptionType()
+    class Google_Service_CloudAsset_AssetException extends \Google\Service\CloudAsset\AssetException
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class IssueSeverityPerReportingContext extends \Google\Collection
-{
-    protected $collection_key = 'disapprovedCountries';
-    /**
-     * @var string[]
-     */
-    public $demotedCountries;
-    /**
-     * @var string[]
-     */
-    public $disapprovedCountries;
-    /**
-     * @var string
-     */
-    public $reportingContext;
-    /**
-     * @param string[]
-     */
-    public function setDemotedCountries($demotedCountries)
+namespace Google\Service\Merchant {
+    class IssueSeverityPerReportingContext extends \Google\Collection
     {
+        protected $collection_key = 'disapprovedCountries';
+        /**
+         * @var string[]
+         */
+        public $demotedCountries;
+        /**
+         * @var string[]
+         */
+        public $disapprovedCountries;
+        /**
+         * @var string
+         */
+        public $reportingContext;
+        /**
+         * @param string[]
+         */
+        public function setDemotedCountries($demotedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDemotedCountries()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDisapprovedCountries($disapprovedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisapprovedCountries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportingContext($reportingContext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Merchant\IssueSeverityPerReportingContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDemotedCountries()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDisapprovedCountries($disapprovedCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisapprovedCountries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportingContext($reportingContext)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingContext()
+    class Google_Service_Merchant_IssueSeverityPerReportingContext extends \Google\Service\Merchant\IssueSeverityPerReportingContext
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerSuggestedQuery extends \Google\Model
-{
-    /**
-     * Suggested query text.
-     *
-     * @var string
-     */
-    public $queryText;
-    /**
-     * Suggested query text.
-     *
-     * @param string $queryText
-     */
-    public function setQueryText($queryText)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerSuggestedQuery extends \Google\Model
     {
+        /**
+         * Suggested query text.
+         *
+         * @var string
+         */
+        public $queryText;
+        /**
+         * Suggested query text.
+         *
+         * @param string $queryText
+         */
+        public function setQueryText($queryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerSuggestedQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerSuggestedQuery extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerSuggestedQuery
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Credentials extends \Google\Model
-{
-    /**
-     * Initial password.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Initial username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Initial password.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\VMwareEngine {
+    class Credentials extends \Google\Model
     {
+        /**
+         * Initial password.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Initial username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Initial password.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Initial username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\Credentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Initial username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_VMwareEngine_Credentials extends \Google\Service\VMwareEngine\Credentials
     {
     }
 }

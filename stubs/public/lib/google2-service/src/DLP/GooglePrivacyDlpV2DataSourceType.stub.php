@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DataSourceType extends \Google\Model
-{
-    /**
-     * A string that identifies the type of resource being profiled. Current
-     * values: * google/bigquery/table * google/project * google/sql/table *
-     * google/gcs/bucket
-     *
-     * @var string
-     */
-    public $dataSource;
-    /**
-     * A string that identifies the type of resource being profiled. Current
-     * values: * google/bigquery/table * google/project * google/sql/table *
-     * google/gcs/bucket
-     *
-     * @param string $dataSource
-     */
-    public function setDataSource($dataSource)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DataSourceType extends \Google\Model
     {
+        /**
+         * A string that identifies the type of resource being profiled. Current
+         * values: * google/bigquery/table * google/project * google/sql/table *
+         * google/gcs/bucket
+         *
+         * @var string
+         */
+        public $dataSource;
+        /**
+         * A string that identifies the type of resource being profiled. Current
+         * values: * google/bigquery/table * google/project * google/sql/table *
+         * google/gcs/bucket
+         *
+         * @param string $dataSource
+         */
+        public function setDataSource($dataSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DataSourceType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSource()
+    class Google_Service_DLP_GooglePrivacyDlpV2DataSourceType extends \Google\Service\DLP\GooglePrivacyDlpV2DataSourceType
     {
     }
 }

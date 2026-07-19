@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Disk extends \Google\Collection
-{
-    protected $collection_key = 'licenses';
-    /**
-     * @var bool
-     */
-    public $autoDelete;
-    /**
-     * @var bool
-     */
-    public $boot;
-    /**
-     * @var string
-     */
-    public $deviceName;
-    /**
-     * @var string
-     */
-    public $diskSizeGb;
-    protected $guestOsFeaturesType = GuestOsFeature::class;
-    protected $guestOsFeaturesDataType = 'array';
-    public $guestOsFeatures = [];
-    /**
-     * @var string
-     */
-    public $index;
-    /**
-     * @var string
-     */
-    public $interface;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string[]
-     */
-    public $licenses = [];
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param bool
-     */
-    public function setAutoDelete($autoDelete)
+namespace Google\Service\AIPlatformNotebooks {
+    class Disk extends \Google\Collection
     {
+        protected $collection_key = 'licenses';
+        /**
+         * @var bool
+         */
+        public $autoDelete;
+        /**
+         * @var bool
+         */
+        public $boot;
+        /**
+         * @var string
+         */
+        public $deviceName;
+        /**
+         * @var string
+         */
+        public $diskSizeGb;
+        protected $guestOsFeaturesType = GuestOsFeature::class;
+        protected $guestOsFeaturesDataType = 'array';
+        public $guestOsFeatures = [];
+        /**
+         * @var string
+         */
+        public $index;
+        /**
+         * @var string
+         */
+        public $interface;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string[]
+         */
+        public $licenses = [];
+        /**
+         * @var string
+         */
+        public $mode;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param bool
+         */
+        public function setAutoDelete($autoDelete)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoDelete()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setBoot($boot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoot()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeviceName($deviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * @param GuestOsFeature[]
+         */
+        public function setGuestOsFeatures($guestOsFeatures)
+        {
+        }
+        /**
+         * @return GuestOsFeature[]
+         */
+        public function getGuestOsFeatures()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInterface($interface)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterface()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLicenses($licenses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLicenses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Disk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoDelete()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setBoot($boot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBoot()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeviceName($deviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiskSizeGb($diskSizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * @param GuestOsFeature[]
-     */
-    public function setGuestOsFeatures($guestOsFeatures)
-    {
-    }
-    /**
-     * @return GuestOsFeature[]
-     */
-    public function getGuestOsFeatures()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInterface($interface)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterface()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLicenses($licenses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLicenses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_AIPlatformNotebooks_Disk extends \Google\Service\AIPlatformNotebooks\Disk
     {
     }
 }

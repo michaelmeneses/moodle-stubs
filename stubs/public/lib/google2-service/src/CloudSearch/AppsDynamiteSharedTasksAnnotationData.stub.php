@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedTasksAnnotationData extends \Google\Model
-{
-    protected $assigneeChangeType = AppsDynamiteSharedTasksAnnotationDataAssigneeChange::class;
-    protected $assigneeChangeDataType = '';
-    protected $completionChangeType = AppsDynamiteSharedTasksAnnotationDataCompletionChange::class;
-    protected $completionChangeDataType = '';
-    protected $creationType = AppsDynamiteSharedTasksAnnotationDataCreation::class;
-    protected $creationDataType = '';
-    protected $deletionChangeType = AppsDynamiteSharedTasksAnnotationDataDeletionChange::class;
-    protected $deletionChangeDataType = '';
-    /**
-     * @var string
-     */
-    public $taskId;
-    protected $taskPropertiesType = AppsDynamiteSharedTasksAnnotationDataTaskProperties::class;
-    protected $taskPropertiesDataType = '';
-    protected $userDefinedMessageType = AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage::class;
-    protected $userDefinedMessageDataType = '';
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationDataAssigneeChange
-     */
-    public function setAssigneeChange(AppsDynamiteSharedTasksAnnotationDataAssigneeChange $assigneeChange)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedTasksAnnotationData extends \Google\Model
     {
+        protected $assigneeChangeType = AppsDynamiteSharedTasksAnnotationDataAssigneeChange::class;
+        protected $assigneeChangeDataType = '';
+        protected $completionChangeType = AppsDynamiteSharedTasksAnnotationDataCompletionChange::class;
+        protected $completionChangeDataType = '';
+        protected $creationType = AppsDynamiteSharedTasksAnnotationDataCreation::class;
+        protected $creationDataType = '';
+        protected $deletionChangeType = AppsDynamiteSharedTasksAnnotationDataDeletionChange::class;
+        protected $deletionChangeDataType = '';
+        /**
+         * @var string
+         */
+        public $taskId;
+        protected $taskPropertiesType = AppsDynamiteSharedTasksAnnotationDataTaskProperties::class;
+        protected $taskPropertiesDataType = '';
+        protected $userDefinedMessageType = AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage::class;
+        protected $userDefinedMessageDataType = '';
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationDataAssigneeChange
+         */
+        public function setAssigneeChange(AppsDynamiteSharedTasksAnnotationDataAssigneeChange $assigneeChange)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationDataAssigneeChange
+         */
+        public function getAssigneeChange()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationDataCompletionChange
+         */
+        public function setCompletionChange(AppsDynamiteSharedTasksAnnotationDataCompletionChange $completionChange)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationDataCompletionChange
+         */
+        public function getCompletionChange()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationDataCreation
+         */
+        public function setCreation(AppsDynamiteSharedTasksAnnotationDataCreation $creation)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationDataCreation
+         */
+        public function getCreation()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationDataDeletionChange
+         */
+        public function setDeletionChange(AppsDynamiteSharedTasksAnnotationDataDeletionChange $deletionChange)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationDataDeletionChange
+         */
+        public function getDeletionChange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationDataTaskProperties
+         */
+        public function setTaskProperties(AppsDynamiteSharedTasksAnnotationDataTaskProperties $taskProperties)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationDataTaskProperties
+         */
+        public function getTaskProperties()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage
+         */
+        public function setUserDefinedMessage(AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage $userDefinedMessage)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage
+         */
+        public function getUserDefinedMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedTasksAnnotationDataAssigneeChange
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedTasksAnnotationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssigneeChange()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationDataCompletionChange
-     */
-    public function setCompletionChange(AppsDynamiteSharedTasksAnnotationDataCompletionChange $completionChange)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksAnnotationDataCompletionChange
-     */
-    public function getCompletionChange()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationDataCreation
-     */
-    public function setCreation(AppsDynamiteSharedTasksAnnotationDataCreation $creation)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksAnnotationDataCreation
-     */
-    public function getCreation()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationDataDeletionChange
-     */
-    public function setDeletionChange(AppsDynamiteSharedTasksAnnotationDataDeletionChange $deletionChange)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksAnnotationDataDeletionChange
-     */
-    public function getDeletionChange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationDataTaskProperties
-     */
-    public function setTaskProperties(AppsDynamiteSharedTasksAnnotationDataTaskProperties $taskProperties)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksAnnotationDataTaskProperties
-     */
-    public function getTaskProperties()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage
-     */
-    public function setUserDefinedMessage(AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage $userDefinedMessage)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksAnnotationDataUserDefinedMessage
-     */
-    public function getUserDefinedMessage()
+    class Google_Service_CloudSearch_AppsDynamiteSharedTasksAnnotationData extends \Google\Service\CloudSearch\AppsDynamiteSharedTasksAnnotationData
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionNetworkEndpointGroupsAttachEndpointsRequest extends \Google\Collection
-{
-    protected $collection_key = 'networkEndpoints';
-    protected $networkEndpointsType = NetworkEndpoint::class;
-    protected $networkEndpointsDataType = 'array';
-    /**
-     * The list of network endpoints to be attached.
-     *
-     * @param NetworkEndpoint[] $networkEndpoints
-     */
-    public function setNetworkEndpoints($networkEndpoints)
+namespace Google\Service\Compute {
+    class RegionNetworkEndpointGroupsAttachEndpointsRequest extends \Google\Collection
     {
+        protected $collection_key = 'networkEndpoints';
+        protected $networkEndpointsType = NetworkEndpoint::class;
+        protected $networkEndpointsDataType = 'array';
+        /**
+         * The list of network endpoints to be attached.
+         *
+         * @param NetworkEndpoint[] $networkEndpoints
+         */
+        public function setNetworkEndpoints($networkEndpoints)
+        {
+        }
+        /**
+         * @return NetworkEndpoint[]
+         */
+        public function getNetworkEndpoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkEndpoint[]
+     * Runtime class alias of \Google\Service\Compute\RegionNetworkEndpointGroupsAttachEndpointsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkEndpoints()
+    class Google_Service_Compute_RegionNetworkEndpointGroupsAttachEndpointsRequest extends \Google\Service\Compute\RegionNetworkEndpointGroupsAttachEndpointsRequest
     {
     }
 }

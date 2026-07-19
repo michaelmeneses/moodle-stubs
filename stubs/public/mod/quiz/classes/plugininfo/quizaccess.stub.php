@@ -29,6 +29,7 @@
  */
 namespace mod_quiz\plugininfo;
 
+use core\plugininfo\base;
 class quizaccess extends base
 {
     public function is_uninstall_allowed()

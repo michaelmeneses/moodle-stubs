@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class Space extends \Google\Model
-{
-    protected $activeConferenceType = ActiveConference::class;
-    protected $activeConferenceDataType = '';
-    protected $configType = SpaceConfig::class;
-    protected $configDataType = '';
-    /**
-     * Output only. Type friendly unique string used to join the meeting. Format:
-     * `[a-z]+-[a-z]+-[a-z]+`. For example, `abc-mnop-xyz`. The maximum length is
-     * 128 characters. Can only be used as an alias of the space name to get the
-     * space.
-     *
-     * @var string
-     */
-    public $meetingCode;
-    /**
-     * Output only. URI used to join meetings consisting of
-     * `https://meet.google.com/` followed by the `meeting_code`. For example,
-     * `https://meet.google.com/abc-mnop-xyz`.
-     *
-     * @var string
-     */
-    public $meetingUri;
-    /**
-     * Immutable. Resource name of the space. Format: `spaces/{space}`. `{space}`
-     * is the resource identifier for the space. It's a unique, server-generated
-     * ID and is case sensitive. For example, `jQCFfuBOdN5z`. For more
-     * information, see [How Meet identifies a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#identify-meeting-space).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Active conference, if it exists.
-     *
-     * @param ActiveConference $activeConference
-     */
-    public function setActiveConference(ActiveConference $activeConference)
+namespace Google\Service\Meet {
+    class Space extends \Google\Model
     {
+        protected $activeConferenceType = ActiveConference::class;
+        protected $activeConferenceDataType = '';
+        protected $configType = SpaceConfig::class;
+        protected $configDataType = '';
+        /**
+         * Output only. Type friendly unique string used to join the meeting. Format:
+         * `[a-z]+-[a-z]+-[a-z]+`. For example, `abc-mnop-xyz`. The maximum length is
+         * 128 characters. Can only be used as an alias of the space name to get the
+         * space.
+         *
+         * @var string
+         */
+        public $meetingCode;
+        /**
+         * Output only. URI used to join meetings consisting of
+         * `https://meet.google.com/` followed by the `meeting_code`. For example,
+         * `https://meet.google.com/abc-mnop-xyz`.
+         *
+         * @var string
+         */
+        public $meetingUri;
+        /**
+         * Immutable. Resource name of the space. Format: `spaces/{space}`. `{space}`
+         * is the resource identifier for the space. It's a unique, server-generated
+         * ID and is case sensitive. For example, `jQCFfuBOdN5z`. For more
+         * information, see [How Meet identifies a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#identify-meeting-space).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Active conference, if it exists.
+         *
+         * @param ActiveConference $activeConference
+         */
+        public function setActiveConference(ActiveConference $activeConference)
+        {
+        }
+        /**
+         * @return ActiveConference
+         */
+        public function getActiveConference()
+        {
+        }
+        /**
+         * Configuration pertaining to the meeting space.
+         *
+         * @param SpaceConfig $config
+         */
+        public function setConfig(SpaceConfig $config)
+        {
+        }
+        /**
+         * @return SpaceConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Output only. Type friendly unique string used to join the meeting. Format:
+         * `[a-z]+-[a-z]+-[a-z]+`. For example, `abc-mnop-xyz`. The maximum length is
+         * 128 characters. Can only be used as an alias of the space name to get the
+         * space.
+         *
+         * @param string $meetingCode
+         */
+        public function setMeetingCode($meetingCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingCode()
+        {
+        }
+        /**
+         * Output only. URI used to join meetings consisting of
+         * `https://meet.google.com/` followed by the `meeting_code`. For example,
+         * `https://meet.google.com/abc-mnop-xyz`.
+         *
+         * @param string $meetingUri
+         */
+        public function setMeetingUri($meetingUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingUri()
+        {
+        }
+        /**
+         * Immutable. Resource name of the space. Format: `spaces/{space}`. `{space}`
+         * is the resource identifier for the space. It's a unique, server-generated
+         * ID and is case sensitive. For example, `jQCFfuBOdN5z`. For more
+         * information, see [How Meet identifies a meeting
+         * space](https://developers.google.com/workspace/meet/api/guides/meeting-
+         * spaces#identify-meeting-space).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActiveConference
+     * Runtime class alias of \Google\Service\Meet\Space registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveConference()
-    {
-    }
-    /**
-     * Configuration pertaining to the meeting space.
-     *
-     * @param SpaceConfig $config
-     */
-    public function setConfig(SpaceConfig $config)
-    {
-    }
-    /**
-     * @return SpaceConfig
-     */
-    public function getConfig()
-    {
-    }
-    /**
-     * Output only. Type friendly unique string used to join the meeting. Format:
-     * `[a-z]+-[a-z]+-[a-z]+`. For example, `abc-mnop-xyz`. The maximum length is
-     * 128 characters. Can only be used as an alias of the space name to get the
-     * space.
-     *
-     * @param string $meetingCode
-     */
-    public function setMeetingCode($meetingCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingCode()
-    {
-    }
-    /**
-     * Output only. URI used to join meetings consisting of
-     * `https://meet.google.com/` followed by the `meeting_code`. For example,
-     * `https://meet.google.com/abc-mnop-xyz`.
-     *
-     * @param string $meetingUri
-     */
-    public function setMeetingUri($meetingUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingUri()
-    {
-    }
-    /**
-     * Immutable. Resource name of the space. Format: `spaces/{space}`. `{space}`
-     * is the resource identifier for the space. It's a unique, server-generated
-     * ID and is case sensitive. For example, `jQCFfuBOdN5z`. For more
-     * information, see [How Meet identifies a meeting
-     * space](https://developers.google.com/workspace/meet/api/guides/meeting-
-     * spaces#identify-meeting-space).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Meet_Space extends \Google\Service\Meet\Space
     {
     }
 }

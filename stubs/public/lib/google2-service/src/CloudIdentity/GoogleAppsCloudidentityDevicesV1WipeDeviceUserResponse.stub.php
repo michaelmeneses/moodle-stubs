@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1WipeDeviceUserResponse extends \Google\Model
-{
-    protected $deviceUserType = GoogleAppsCloudidentityDevicesV1DeviceUser::class;
-    protected $deviceUserDataType = '';
-    /**
-     * Resultant DeviceUser object for the action.
-     *
-     * @param GoogleAppsCloudidentityDevicesV1DeviceUser $deviceUser
-     */
-    public function setDeviceUser(GoogleAppsCloudidentityDevicesV1DeviceUser $deviceUser)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1WipeDeviceUserResponse extends \Google\Model
     {
+        protected $deviceUserType = GoogleAppsCloudidentityDevicesV1DeviceUser::class;
+        protected $deviceUserDataType = '';
+        /**
+         * Resultant DeviceUser object for the action.
+         *
+         * @param GoogleAppsCloudidentityDevicesV1DeviceUser $deviceUser
+         */
+        public function setDeviceUser(GoogleAppsCloudidentityDevicesV1DeviceUser $deviceUser)
+        {
+        }
+        /**
+         * @return GoogleAppsCloudidentityDevicesV1DeviceUser
+         */
+        public function getDeviceUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCloudidentityDevicesV1DeviceUser
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceUserResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceUser()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1WipeDeviceUserResponse extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceUserResponse
     {
     }
 }

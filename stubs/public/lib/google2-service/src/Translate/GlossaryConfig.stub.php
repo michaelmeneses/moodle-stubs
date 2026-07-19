@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GlossaryConfig extends \Google\Model
-{
-    /**
-     * Optional. If set to true, the glossary will be used for contextual
-     * translation.
-     *
-     * @var bool
-     */
-    public $contextualTranslationEnabled;
-    /**
-     * Required. The `glossary` to be applied for this translation. The format
-     * depends on the glossary: - User-provided custom glossary:
-     * `projects/{project-number-or-id}/locations/{location-
-     * id}/glossaries/{glossary-id}`
-     *
-     * @var string
-     */
-    public $glossary;
-    /**
-     * Optional. Indicates match is case insensitive. The default value is `false`
-     * if missing.
-     *
-     * @var bool
-     */
-    public $ignoreCase;
-    /**
-     * Optional. If set to true, the glossary will be used for contextual
-     * translation.
-     *
-     * @param bool $contextualTranslationEnabled
-     */
-    public function setContextualTranslationEnabled($contextualTranslationEnabled)
+namespace Google\Service\Translate {
+    class GlossaryConfig extends \Google\Model
     {
+        /**
+         * Optional. If set to true, the glossary will be used for contextual
+         * translation.
+         *
+         * @var bool
+         */
+        public $contextualTranslationEnabled;
+        /**
+         * Required. The `glossary` to be applied for this translation. The format
+         * depends on the glossary: - User-provided custom glossary:
+         * `projects/{project-number-or-id}/locations/{location-
+         * id}/glossaries/{glossary-id}`
+         *
+         * @var string
+         */
+        public $glossary;
+        /**
+         * Optional. Indicates match is case insensitive. The default value is `false`
+         * if missing.
+         *
+         * @var bool
+         */
+        public $ignoreCase;
+        /**
+         * Optional. If set to true, the glossary will be used for contextual
+         * translation.
+         *
+         * @param bool $contextualTranslationEnabled
+         */
+        public function setContextualTranslationEnabled($contextualTranslationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContextualTranslationEnabled()
+        {
+        }
+        /**
+         * Required. The `glossary` to be applied for this translation. The format
+         * depends on the glossary: - User-provided custom glossary:
+         * `projects/{project-number-or-id}/locations/{location-
+         * id}/glossaries/{glossary-id}`
+         *
+         * @param string $glossary
+         */
+        public function setGlossary($glossary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGlossary()
+        {
+        }
+        /**
+         * Optional. Indicates match is case insensitive. The default value is `false`
+         * if missing.
+         *
+         * @param bool $ignoreCase
+         */
+        public function setIgnoreCase($ignoreCase)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreCase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Translate\GlossaryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextualTranslationEnabled()
-    {
-    }
-    /**
-     * Required. The `glossary` to be applied for this translation. The format
-     * depends on the glossary: - User-provided custom glossary:
-     * `projects/{project-number-or-id}/locations/{location-
-     * id}/glossaries/{glossary-id}`
-     *
-     * @param string $glossary
-     */
-    public function setGlossary($glossary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGlossary()
-    {
-    }
-    /**
-     * Optional. Indicates match is case insensitive. The default value is `false`
-     * if missing.
-     *
-     * @param bool $ignoreCase
-     */
-    public function setIgnoreCase($ignoreCase)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreCase()
+    class Google_Service_Translate_GlossaryConfig extends \Google\Service\Translate\GlossaryConfig
     {
     }
 }

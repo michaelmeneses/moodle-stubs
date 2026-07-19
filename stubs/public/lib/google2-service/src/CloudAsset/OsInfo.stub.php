@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class OsInfo extends \Google\Model
-{
-    /**
-     * The system architecture of the operating system.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * The VM hostname.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * The kernel release of the operating system.
-     *
-     * @var string
-     */
-    public $kernelRelease;
-    /**
-     * The kernel version of the operating system.
-     *
-     * @var string
-     */
-    public $kernelVersion;
-    /**
-     * The operating system long name. For example 'Debian GNU/Linux 9' or
-     * 'Microsoft Window Server 2019 Datacenter'.
-     *
-     * @var string
-     */
-    public $longName;
-    /**
-     * The current version of the OS Config agent running on the VM.
-     *
-     * @var string
-     */
-    public $osconfigAgentVersion;
-    /**
-     * The operating system short name. For example, 'windows' or 'debian'.
-     *
-     * @var string
-     */
-    public $shortName;
-    /**
-     * The version of the operating system.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The system architecture of the operating system.
-     *
-     * @param string $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\CloudAsset {
+    class OsInfo extends \Google\Model
     {
+        /**
+         * The system architecture of the operating system.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * The VM hostname.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * The kernel release of the operating system.
+         *
+         * @var string
+         */
+        public $kernelRelease;
+        /**
+         * The kernel version of the operating system.
+         *
+         * @var string
+         */
+        public $kernelVersion;
+        /**
+         * The operating system long name. For example 'Debian GNU/Linux 9' or
+         * 'Microsoft Window Server 2019 Datacenter'.
+         *
+         * @var string
+         */
+        public $longName;
+        /**
+         * The current version of the OS Config agent running on the VM.
+         *
+         * @var string
+         */
+        public $osconfigAgentVersion;
+        /**
+         * The operating system short name. For example, 'windows' or 'debian'.
+         *
+         * @var string
+         */
+        public $shortName;
+        /**
+         * The version of the operating system.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The system architecture of the operating system.
+         *
+         * @param string $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * The VM hostname.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * The kernel release of the operating system.
+         *
+         * @param string $kernelRelease
+         */
+        public function setKernelRelease($kernelRelease)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKernelRelease()
+        {
+        }
+        /**
+         * The kernel version of the operating system.
+         *
+         * @param string $kernelVersion
+         */
+        public function setKernelVersion($kernelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKernelVersion()
+        {
+        }
+        /**
+         * The operating system long name. For example 'Debian GNU/Linux 9' or
+         * 'Microsoft Window Server 2019 Datacenter'.
+         *
+         * @param string $longName
+         */
+        public function setLongName($longName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongName()
+        {
+        }
+        /**
+         * The current version of the OS Config agent running on the VM.
+         *
+         * @param string $osconfigAgentVersion
+         */
+        public function setOsconfigAgentVersion($osconfigAgentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsconfigAgentVersion()
+        {
+        }
+        /**
+         * The operating system short name. For example, 'windows' or 'debian'.
+         *
+         * @param string $shortName
+         */
+        public function setShortName($shortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortName()
+        {
+        }
+        /**
+         * The version of the operating system.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\OsInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * The VM hostname.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * The kernel release of the operating system.
-     *
-     * @param string $kernelRelease
-     */
-    public function setKernelRelease($kernelRelease)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKernelRelease()
-    {
-    }
-    /**
-     * The kernel version of the operating system.
-     *
-     * @param string $kernelVersion
-     */
-    public function setKernelVersion($kernelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKernelVersion()
-    {
-    }
-    /**
-     * The operating system long name. For example 'Debian GNU/Linux 9' or
-     * 'Microsoft Window Server 2019 Datacenter'.
-     *
-     * @param string $longName
-     */
-    public function setLongName($longName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongName()
-    {
-    }
-    /**
-     * The current version of the OS Config agent running on the VM.
-     *
-     * @param string $osconfigAgentVersion
-     */
-    public function setOsconfigAgentVersion($osconfigAgentVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsconfigAgentVersion()
-    {
-    }
-    /**
-     * The operating system short name. For example, 'windows' or 'debian'.
-     *
-     * @param string $shortName
-     */
-    public function setShortName($shortName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortName()
-    {
-    }
-    /**
-     * The version of the operating system.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudAsset_OsInfo extends \Google\Service\CloudAsset\OsInfo
     {
     }
 }

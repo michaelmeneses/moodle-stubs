@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListCourseAliasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'aliases';
-    protected $aliasesType = CourseAlias::class;
-    protected $aliasesDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The course aliases.
-     *
-     * @param CourseAlias[] $aliases
-     */
-    public function setAliases($aliases)
+namespace Google\Service\Classroom {
+    class ListCourseAliasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'aliases';
+        protected $aliasesType = CourseAlias::class;
+        protected $aliasesDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The course aliases.
+         *
+         * @param CourseAlias[] $aliases
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return CourseAlias[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CourseAlias[]
+     * Runtime class alias of \Google\Service\Classroom\ListCourseAliasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListCourseAliasesResponse extends \Google\Service\Classroom\ListCourseAliasesResponse
     {
     }
 }

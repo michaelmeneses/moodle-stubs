@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class RequestBasedSli extends \Google\Model
-{
-    protected $distributionCutType = DistributionCut::class;
-    protected $distributionCutDataType = '';
-    protected $goodTotalRatioType = TimeSeriesRatio::class;
-    protected $goodTotalRatioDataType = '';
-    /**
-     * distribution_cut is used when good_service is a count of values aggregated
-     * in a Distribution that fall into a good range. The total_service is the
-     * total count of all values aggregated in the Distribution.
-     *
-     * @param DistributionCut $distributionCut
-     */
-    public function setDistributionCut(DistributionCut $distributionCut)
+namespace Google\Service\Monitoring {
+    class RequestBasedSli extends \Google\Model
     {
+        protected $distributionCutType = DistributionCut::class;
+        protected $distributionCutDataType = '';
+        protected $goodTotalRatioType = TimeSeriesRatio::class;
+        protected $goodTotalRatioDataType = '';
+        /**
+         * distribution_cut is used when good_service is a count of values aggregated
+         * in a Distribution that fall into a good range. The total_service is the
+         * total count of all values aggregated in the Distribution.
+         *
+         * @param DistributionCut $distributionCut
+         */
+        public function setDistributionCut(DistributionCut $distributionCut)
+        {
+        }
+        /**
+         * @return DistributionCut
+         */
+        public function getDistributionCut()
+        {
+        }
+        /**
+         * good_total_ratio is used when the ratio of good_service to total_service is
+         * computed from two TimeSeries.
+         *
+         * @param TimeSeriesRatio $goodTotalRatio
+         */
+        public function setGoodTotalRatio(TimeSeriesRatio $goodTotalRatio)
+        {
+        }
+        /**
+         * @return TimeSeriesRatio
+         */
+        public function getGoodTotalRatio()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DistributionCut
+     * Runtime class alias of \Google\Service\Monitoring\RequestBasedSli registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistributionCut()
-    {
-    }
-    /**
-     * good_total_ratio is used when the ratio of good_service to total_service is
-     * computed from two TimeSeries.
-     *
-     * @param TimeSeriesRatio $goodTotalRatio
-     */
-    public function setGoodTotalRatio(TimeSeriesRatio $goodTotalRatio)
-    {
-    }
-    /**
-     * @return TimeSeriesRatio
-     */
-    public function getGoodTotalRatio()
+    class Google_Service_Monitoring_RequestBasedSli extends \Google\Service\Monitoring\RequestBasedSli
     {
     }
 }

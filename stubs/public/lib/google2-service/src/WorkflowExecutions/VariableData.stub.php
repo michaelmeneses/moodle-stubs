@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class VariableData extends \Google\Model
-{
-    /**
-     * Variables that are associated with this step.
-     *
-     * @var array[]
-     */
-    public $variables;
-    /**
-     * Variables that are associated with this step.
-     *
-     * @param array[] $variables
-     */
-    public function setVariables($variables)
+namespace Google\Service\WorkflowExecutions {
+    class VariableData extends \Google\Model
     {
+        /**
+         * Variables that are associated with this step.
+         *
+         * @var array[]
+         */
+        public $variables;
+        /**
+         * Variables that are associated with this step.
+         *
+         * @param array[] $variables
+         */
+        public function setVariables($variables)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\WorkflowExecutions\VariableData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVariables()
+    class Google_Service_WorkflowExecutions_VariableData extends \Google\Service\WorkflowExecutions\VariableData
     {
     }
 }

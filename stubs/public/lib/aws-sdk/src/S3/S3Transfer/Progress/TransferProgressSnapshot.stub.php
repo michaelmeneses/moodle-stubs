@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\S3Transfer\Progress;
 
+use Throwable;
 final class TransferProgressSnapshot
 {
     /** @var string */

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BatchCreateSessionsRequest extends \Google\Model
-{
-    /**
-     * Required. The number of sessions to be created in this batch call. At least
-     * one session is created. The API can return fewer than the requested number
-     * of sessions. If a specific number of sessions are desired, the client can
-     * make additional calls to `BatchCreateSessions` (adjusting session_count as
-     * necessary).
-     *
-     * @var int
-     */
-    public $sessionCount;
-    protected $sessionTemplateType = Session::class;
-    protected $sessionTemplateDataType = '';
-    /**
-     * Required. The number of sessions to be created in this batch call. At least
-     * one session is created. The API can return fewer than the requested number
-     * of sessions. If a specific number of sessions are desired, the client can
-     * make additional calls to `BatchCreateSessions` (adjusting session_count as
-     * necessary).
-     *
-     * @param int $sessionCount
-     */
-    public function setSessionCount($sessionCount)
+namespace Google\Service\Spanner {
+    class BatchCreateSessionsRequest extends \Google\Model
     {
+        /**
+         * Required. The number of sessions to be created in this batch call. At least
+         * one session is created. The API can return fewer than the requested number
+         * of sessions. If a specific number of sessions are desired, the client can
+         * make additional calls to `BatchCreateSessions` (adjusting session_count as
+         * necessary).
+         *
+         * @var int
+         */
+        public $sessionCount;
+        protected $sessionTemplateType = Session::class;
+        protected $sessionTemplateDataType = '';
+        /**
+         * Required. The number of sessions to be created in this batch call. At least
+         * one session is created. The API can return fewer than the requested number
+         * of sessions. If a specific number of sessions are desired, the client can
+         * make additional calls to `BatchCreateSessions` (adjusting session_count as
+         * necessary).
+         *
+         * @param int $sessionCount
+         */
+        public function setSessionCount($sessionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSessionCount()
+        {
+        }
+        /**
+         * Parameters to apply to each created session.
+         *
+         * @param Session $sessionTemplate
+         */
+        public function setSessionTemplate(Session $sessionTemplate)
+        {
+        }
+        /**
+         * @return Session
+         */
+        public function getSessionTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Spanner\BatchCreateSessionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSessionCount()
-    {
-    }
-    /**
-     * Parameters to apply to each created session.
-     *
-     * @param Session $sessionTemplate
-     */
-    public function setSessionTemplate(Session $sessionTemplate)
-    {
-    }
-    /**
-     * @return Session
-     */
-    public function getSessionTemplate()
+    class Google_Service_Spanner_BatchCreateSessionsRequest extends \Google\Service\Spanner\BatchCreateSessionsRequest
     {
     }
 }

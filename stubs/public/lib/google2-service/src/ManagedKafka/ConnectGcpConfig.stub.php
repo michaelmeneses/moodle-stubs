@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ConnectGcpConfig extends \Google\Collection
-{
-    protected $collection_key = 'secretPaths';
-    protected $accessConfigType = ConnectAccessConfig::class;
-    protected $accessConfigDataType = '';
-    /**
-     * Optional. Secrets to load into workers. Exact SecretVersions from Secret
-     * Manager must be provided -- aliases are not supported. Up to 32 secrets may
-     * be loaded into one cluster. Format: projects//secrets//versions/
-     *
-     * @var string[]
-     */
-    public $secretPaths;
-    /**
-     * Required. Access configuration for the Kafka Connect cluster.
-     *
-     * @param ConnectAccessConfig $accessConfig
-     */
-    public function setAccessConfig(ConnectAccessConfig $accessConfig)
+namespace Google\Service\ManagedKafka {
+    class ConnectGcpConfig extends \Google\Collection
     {
+        protected $collection_key = 'secretPaths';
+        protected $accessConfigType = ConnectAccessConfig::class;
+        protected $accessConfigDataType = '';
+        /**
+         * Optional. Secrets to load into workers. Exact SecretVersions from Secret
+         * Manager must be provided -- aliases are not supported. Up to 32 secrets may
+         * be loaded into one cluster. Format: projects//secrets//versions/
+         *
+         * @var string[]
+         */
+        public $secretPaths;
+        /**
+         * Required. Access configuration for the Kafka Connect cluster.
+         *
+         * @param ConnectAccessConfig $accessConfig
+         */
+        public function setAccessConfig(ConnectAccessConfig $accessConfig)
+        {
+        }
+        /**
+         * @return ConnectAccessConfig
+         */
+        public function getAccessConfig()
+        {
+        }
+        /**
+         * Optional. Secrets to load into workers. Exact SecretVersions from Secret
+         * Manager must be provided -- aliases are not supported. Up to 32 secrets may
+         * be loaded into one cluster. Format: projects//secrets//versions/
+         *
+         * @param string[] $secretPaths
+         */
+        public function setSecretPaths($secretPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecretPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectAccessConfig
+     * Runtime class alias of \Google\Service\ManagedKafka\ConnectGcpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessConfig()
-    {
-    }
-    /**
-     * Optional. Secrets to load into workers. Exact SecretVersions from Secret
-     * Manager must be provided -- aliases are not supported. Up to 32 secrets may
-     * be loaded into one cluster. Format: projects//secrets//versions/
-     *
-     * @param string[] $secretPaths
-     */
-    public function setSecretPaths($secretPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecretPaths()
+    class Google_Service_ManagedKafka_ConnectGcpConfig extends \Google\Service\ManagedKafka\ConnectGcpConfig
     {
     }
 }

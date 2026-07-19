@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class TestItem extends \Google\Model
-{
-    /**
-     * Etag for the resource. See https://en.wikipedia.org/wiki/HTTP_ETag.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var bool
-     */
-    public $featuredPart;
-    /**
-     * @var string
-     */
-    public $gaia;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $snippetType = TestItemTestItemSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag for the resource. See https://en.wikipedia.org/wiki/HTTP_ETag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class TestItem extends \Google\Model
     {
+        /**
+         * Etag for the resource. See https://en.wikipedia.org/wiki/HTTP_ETag.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var bool
+         */
+        public $featuredPart;
+        /**
+         * @var string
+         */
+        public $gaia;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $snippetType = TestItemTestItemSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag for the resource. See https://en.wikipedia.org/wiki/HTTP_ETag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param bool $featuredPart
+         */
+        public function setFeaturedPart($featuredPart)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFeaturedPart()
+        {
+        }
+        /**
+         * @param string $gaia
+         */
+        public function setGaia($gaia)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGaia()
+        {
+        }
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param TestItemTestItemSnippet $snippet
+         */
+        public function setSnippet(TestItemTestItemSnippet $snippet)
+        {
+        }
+        /**
+         * @return TestItemTestItemSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\TestItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param bool $featuredPart
-     */
-    public function setFeaturedPart($featuredPart)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFeaturedPart()
-    {
-    }
-    /**
-     * @param string $gaia
-     */
-    public function setGaia($gaia)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGaia()
-    {
-    }
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param TestItemTestItemSnippet $snippet
-     */
-    public function setSnippet(TestItemTestItemSnippet $snippet)
-    {
-    }
-    /**
-     * @return TestItemTestItemSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_TestItem extends \Google\Service\YouTube\TestItem
     {
     }
 }

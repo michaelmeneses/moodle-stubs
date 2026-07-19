@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ExtendedValue extends \Google\Model
-{
-    /**
-     * Represents a boolean value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    protected $errorValueType = ErrorValue::class;
-    protected $errorValueDataType = '';
-    /**
-     * Represents a formula.
-     *
-     * @var string
-     */
-    public $formulaValue;
-    /**
-     * Represents a double value. Note: Dates, Times and DateTimes are represented
-     * as doubles in SERIAL_NUMBER format.
-     *
-     * @var 
-     */
-    public $numberValue;
-    /**
-     * Represents a string value. Leading single quotes are not included. For
-     * example, if the user typed `'123` into the UI, this would be represented as
-     * a `stringValue` of `"123"`.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Represents a boolean value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Sheets {
+    class ExtendedValue extends \Google\Model
     {
+        /**
+         * Represents a boolean value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        protected $errorValueType = ErrorValue::class;
+        protected $errorValueDataType = '';
+        /**
+         * Represents a formula.
+         *
+         * @var string
+         */
+        public $formulaValue;
+        /**
+         * Represents a double value. Note: Dates, Times and DateTimes are represented
+         * as doubles in SERIAL_NUMBER format.
+         *
+         * @var 
+         */
+        public $numberValue;
+        /**
+         * Represents a string value. Leading single quotes are not included. For
+         * example, if the user typed `'123` into the UI, this would be represented as
+         * a `stringValue` of `"123"`.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Represents a boolean value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Represents an error. This field is read-only.
+         *
+         * @param ErrorValue $errorValue
+         */
+        public function setErrorValue(ErrorValue $errorValue)
+        {
+        }
+        /**
+         * @return ErrorValue
+         */
+        public function getErrorValue()
+        {
+        }
+        /**
+         * Represents a formula.
+         *
+         * @param string $formulaValue
+         */
+        public function setFormulaValue($formulaValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormulaValue()
+        {
+        }
+        public function setNumberValue($numberValue)
+        {
+        }
+        public function getNumberValue()
+        {
+        }
+        /**
+         * Represents a string value. Leading single quotes are not included. For
+         * example, if the user typed `'123` into the UI, this would be represented as
+         * a `stringValue` of `"123"`.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\ExtendedValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Represents an error. This field is read-only.
-     *
-     * @param ErrorValue $errorValue
-     */
-    public function setErrorValue(ErrorValue $errorValue)
-    {
-    }
-    /**
-     * @return ErrorValue
-     */
-    public function getErrorValue()
-    {
-    }
-    /**
-     * Represents a formula.
-     *
-     * @param string $formulaValue
-     */
-    public function setFormulaValue($formulaValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormulaValue()
-    {
-    }
-    public function setNumberValue($numberValue)
-    {
-    }
-    public function getNumberValue()
-    {
-    }
-    /**
-     * Represents a string value. Leading single quotes are not included. For
-     * example, if the user typed `'123` into the UI, this would be represented as
-     * a `stringValue` of `"123"`.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Sheets_ExtendedValue extends \Google\Service\Sheets\ExtendedValue
     {
     }
 }

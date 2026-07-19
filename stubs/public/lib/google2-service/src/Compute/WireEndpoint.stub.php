@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WireEndpoint extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $interconnect;
-    /**
-     * @var int
-     */
-    public $vlanTag;
-    /**
-     * @param string $interconnect
-     */
-    public function setInterconnect($interconnect)
+namespace Google\Service\Compute {
+    class WireEndpoint extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $interconnect;
+        /**
+         * @var int
+         */
+        public $vlanTag;
+        /**
+         * @param string $interconnect
+         */
+        public function setInterconnect($interconnect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterconnect()
+        {
+        }
+        /**
+         * @param int $vlanTag
+         */
+        public function setVlanTag($vlanTag)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVlanTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\WireEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnect()
-    {
-    }
-    /**
-     * @param int $vlanTag
-     */
-    public function setVlanTag($vlanTag)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVlanTag()
+    class Google_Service_Compute_WireEndpoint extends \Google\Service\Compute\WireEndpoint
     {
     }
 }

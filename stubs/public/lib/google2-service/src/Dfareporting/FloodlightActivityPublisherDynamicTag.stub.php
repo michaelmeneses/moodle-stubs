@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FloodlightActivityPublisherDynamicTag extends \Google\Model
-{
-    /**
-     * Whether this tag is applicable only for click-throughs.
-     *
-     * @var bool
-     */
-    public $clickThrough;
-    /**
-     * Directory site ID of this dynamic tag. This is a write-only field that can
-     * be used as an alternative to the siteId field. When this resource is
-     * retrieved, only the siteId field will be populated.
-     *
-     * @var string
-     */
-    public $directorySiteId;
-    protected $dynamicTagType = FloodlightActivityDynamicTag::class;
-    protected $dynamicTagDataType = '';
-    /**
-     * Site ID of this dynamic tag.
-     *
-     * @var string
-     */
-    public $siteId;
-    protected $siteIdDimensionValueType = DimensionValue::class;
-    protected $siteIdDimensionValueDataType = '';
-    /**
-     * Whether this tag is applicable only for view-throughs.
-     *
-     * @var bool
-     */
-    public $viewThrough;
-    /**
-     * Whether this tag is applicable only for click-throughs.
-     *
-     * @param bool $clickThrough
-     */
-    public function setClickThrough($clickThrough)
+namespace Google\Service\Dfareporting {
+    class FloodlightActivityPublisherDynamicTag extends \Google\Model
     {
+        /**
+         * Whether this tag is applicable only for click-throughs.
+         *
+         * @var bool
+         */
+        public $clickThrough;
+        /**
+         * Directory site ID of this dynamic tag. This is a write-only field that can
+         * be used as an alternative to the siteId field. When this resource is
+         * retrieved, only the siteId field will be populated.
+         *
+         * @var string
+         */
+        public $directorySiteId;
+        protected $dynamicTagType = FloodlightActivityDynamicTag::class;
+        protected $dynamicTagDataType = '';
+        /**
+         * Site ID of this dynamic tag.
+         *
+         * @var string
+         */
+        public $siteId;
+        protected $siteIdDimensionValueType = DimensionValue::class;
+        protected $siteIdDimensionValueDataType = '';
+        /**
+         * Whether this tag is applicable only for view-throughs.
+         *
+         * @var bool
+         */
+        public $viewThrough;
+        /**
+         * Whether this tag is applicable only for click-throughs.
+         *
+         * @param bool $clickThrough
+         */
+        public function setClickThrough($clickThrough)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClickThrough()
+        {
+        }
+        /**
+         * Directory site ID of this dynamic tag. This is a write-only field that can
+         * be used as an alternative to the siteId field. When this resource is
+         * retrieved, only the siteId field will be populated.
+         *
+         * @param string $directorySiteId
+         */
+        public function setDirectorySiteId($directorySiteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectorySiteId()
+        {
+        }
+        /**
+         * Dynamic floodlight tag.
+         *
+         * @param FloodlightActivityDynamicTag $dynamicTag
+         */
+        public function setDynamicTag(FloodlightActivityDynamicTag $dynamicTag)
+        {
+        }
+        /**
+         * @return FloodlightActivityDynamicTag
+         */
+        public function getDynamicTag()
+        {
+        }
+        /**
+         * Site ID of this dynamic tag.
+         *
+         * @param string $siteId
+         */
+        public function setSiteId($siteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSiteId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the site. This is a read-only, auto-generated
+         * field.
+         *
+         * @param DimensionValue $siteIdDimensionValue
+         */
+        public function setSiteIdDimensionValue(DimensionValue $siteIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getSiteIdDimensionValue()
+        {
+        }
+        /**
+         * Whether this tag is applicable only for view-throughs.
+         *
+         * @param bool $viewThrough
+         */
+        public function setViewThrough($viewThrough)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getViewThrough()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\FloodlightActivityPublisherDynamicTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClickThrough()
-    {
-    }
-    /**
-     * Directory site ID of this dynamic tag. This is a write-only field that can
-     * be used as an alternative to the siteId field. When this resource is
-     * retrieved, only the siteId field will be populated.
-     *
-     * @param string $directorySiteId
-     */
-    public function setDirectorySiteId($directorySiteId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirectorySiteId()
-    {
-    }
-    /**
-     * Dynamic floodlight tag.
-     *
-     * @param FloodlightActivityDynamicTag $dynamicTag
-     */
-    public function setDynamicTag(FloodlightActivityDynamicTag $dynamicTag)
-    {
-    }
-    /**
-     * @return FloodlightActivityDynamicTag
-     */
-    public function getDynamicTag()
-    {
-    }
-    /**
-     * Site ID of this dynamic tag.
-     *
-     * @param string $siteId
-     */
-    public function setSiteId($siteId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSiteId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the site. This is a read-only, auto-generated
-     * field.
-     *
-     * @param DimensionValue $siteIdDimensionValue
-     */
-    public function setSiteIdDimensionValue(DimensionValue $siteIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getSiteIdDimensionValue()
-    {
-    }
-    /**
-     * Whether this tag is applicable only for view-throughs.
-     *
-     * @param bool $viewThrough
-     */
-    public function setViewThrough($viewThrough)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getViewThrough()
+    class Google_Service_Dfareporting_FloodlightActivityPublisherDynamicTag extends \Google\Service\Dfareporting\FloodlightActivityPublisherDynamicTag
     {
     }
 }

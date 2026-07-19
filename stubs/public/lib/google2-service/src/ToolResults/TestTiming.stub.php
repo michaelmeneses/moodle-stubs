@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class TestTiming extends \Google\Model
-{
-    protected $testProcessDurationType = Duration::class;
-    protected $testProcessDurationDataType = '';
-    /**
-     * How long it took to run the test process. - In response: present if
-     * previously set. - In create/update request: optional
-     *
-     * @param Duration $testProcessDuration
-     */
-    public function setTestProcessDuration(Duration $testProcessDuration)
+namespace Google\Service\ToolResults {
+    class TestTiming extends \Google\Model
     {
+        protected $testProcessDurationType = Duration::class;
+        protected $testProcessDurationDataType = '';
+        /**
+         * How long it took to run the test process. - In response: present if
+         * previously set. - In create/update request: optional
+         *
+         * @param Duration $testProcessDuration
+         */
+        public function setTestProcessDuration(Duration $testProcessDuration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getTestProcessDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\ToolResults\TestTiming registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestProcessDuration()
+    class Google_Service_ToolResults_TestTiming extends \Google\Service\ToolResults\TestTiming
     {
     }
 }

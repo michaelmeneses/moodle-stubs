@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedImageCropStyle extends \Google\Model
-{
-    public $aspectRatio;
-    /**
-     * @var string
-     */
-    public $type;
-    public function setAspectRatio($aspectRatio)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedImageCropStyle extends \Google\Model
     {
+        public $aspectRatio;
+        /**
+         * @var string
+         */
+        public $type;
+        public function setAspectRatio($aspectRatio)
+        {
+        }
+        public function getAspectRatio()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
-    public function getAspectRatio()
-    {
-    }
+}
+namespace {
     /**
-     * @param string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedImageCropStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteSharedImageCropStyle extends \Google\Service\CloudSearch\AppsDynamiteSharedImageCropStyle
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class EventTicketClassAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = EventTicketClass::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated EventTicketClass resource.
-     *
-     * @param EventTicketClass $resource
-     */
-    public function setResource(EventTicketClass $resource)
+namespace Google\Service\Walletobjects {
+    class EventTicketClassAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = EventTicketClass::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated EventTicketClass resource.
+         *
+         * @param EventTicketClass $resource
+         */
+        public function setResource(EventTicketClass $resource)
+        {
+        }
+        /**
+         * @return EventTicketClass
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventTicketClass
+     * Runtime class alias of \Google\Service\Walletobjects\EventTicketClassAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_EventTicketClassAddMessageResponse extends \Google\Service\Walletobjects\EventTicketClassAddMessageResponse
     {
     }
 }

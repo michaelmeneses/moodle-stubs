@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WafExpressionSet extends \Google\Collection
-{
-    protected $collection_key = 'expressions';
-    /**
-     * A list of alternate IDs. The format should be: - E.g. XSS-stable Generic
-     * suffix like "stable" is particularly useful if a policy likes to avail
-     * newer set of expressions without having to change the policy. A given alias
-     * name can't be used for more than one entity set.
-     *
-     * @var string[]
-     */
-    public $aliases;
-    protected $expressionsType = WafExpressionSetExpression::class;
-    protected $expressionsDataType = 'array';
-    /**
-     * Google specified expression set ID. The format should be: - E.g.
-     * XSS-20170329 required
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A list of alternate IDs. The format should be: - E.g. XSS-stable Generic
-     * suffix like "stable" is particularly useful if a policy likes to avail
-     * newer set of expressions without having to change the policy. A given alias
-     * name can't be used for more than one entity set.
-     *
-     * @param string[] $aliases
-     */
-    public function setAliases($aliases)
+namespace Google\Service\Compute {
+    class WafExpressionSet extends \Google\Collection
     {
+        protected $collection_key = 'expressions';
+        /**
+         * A list of alternate IDs. The format should be: - E.g. XSS-stable Generic
+         * suffix like "stable" is particularly useful if a policy likes to avail
+         * newer set of expressions without having to change the policy. A given alias
+         * name can't be used for more than one entity set.
+         *
+         * @var string[]
+         */
+        public $aliases;
+        protected $expressionsType = WafExpressionSetExpression::class;
+        protected $expressionsDataType = 'array';
+        /**
+         * Google specified expression set ID. The format should be: - E.g.
+         * XSS-20170329 required
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A list of alternate IDs. The format should be: - E.g. XSS-stable Generic
+         * suffix like "stable" is particularly useful if a policy likes to avail
+         * newer set of expressions without having to change the policy. A given alias
+         * name can't be used for more than one entity set.
+         *
+         * @param string[] $aliases
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * List of available expressions.
+         *
+         * @param WafExpressionSetExpression[] $expressions
+         */
+        public function setExpressions($expressions)
+        {
+        }
+        /**
+         * @return WafExpressionSetExpression[]
+         */
+        public function getExpressions()
+        {
+        }
+        /**
+         * Google specified expression set ID. The format should be: - E.g.
+         * XSS-20170329 required
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\WafExpressionSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * List of available expressions.
-     *
-     * @param WafExpressionSetExpression[] $expressions
-     */
-    public function setExpressions($expressions)
-    {
-    }
-    /**
-     * @return WafExpressionSetExpression[]
-     */
-    public function getExpressions()
-    {
-    }
-    /**
-     * Google specified expression set ID. The format should be: - E.g.
-     * XSS-20170329 required
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Compute_WafExpressionSet extends \Google\Service\Compute\WafExpressionSet
     {
     }
 }

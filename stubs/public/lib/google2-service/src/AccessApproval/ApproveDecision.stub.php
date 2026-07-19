@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class ApproveDecision extends \Google\Model
-{
-    /**
-     * The time at which approval was granted.
-     *
-     * @var string
-     */
-    public $approveTime;
-    /**
-     * True when the request has been auto-approved.
-     *
-     * @var bool
-     */
-    public $autoApproved;
-    /**
-     * The time at which the approval expires.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * If set, denotes the timestamp at which the approval is invalidated.
-     *
-     * @var string
-     */
-    public $invalidateTime;
-    /**
-     * True when the request has been approved by the customer's defined policy.
-     *
-     * @var bool
-     */
-    public $policyApproved;
-    protected $signatureInfoType = SignatureInfo::class;
-    protected $signatureInfoDataType = '';
-    /**
-     * The time at which approval was granted.
-     *
-     * @param string $approveTime
-     */
-    public function setApproveTime($approveTime)
+namespace Google\Service\AccessApproval {
+    class ApproveDecision extends \Google\Model
     {
+        /**
+         * The time at which approval was granted.
+         *
+         * @var string
+         */
+        public $approveTime;
+        /**
+         * True when the request has been auto-approved.
+         *
+         * @var bool
+         */
+        public $autoApproved;
+        /**
+         * The time at which the approval expires.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * If set, denotes the timestamp at which the approval is invalidated.
+         *
+         * @var string
+         */
+        public $invalidateTime;
+        /**
+         * True when the request has been approved by the customer's defined policy.
+         *
+         * @var bool
+         */
+        public $policyApproved;
+        protected $signatureInfoType = SignatureInfo::class;
+        protected $signatureInfoDataType = '';
+        /**
+         * The time at which approval was granted.
+         *
+         * @param string $approveTime
+         */
+        public function setApproveTime($approveTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApproveTime()
+        {
+        }
+        /**
+         * True when the request has been auto-approved.
+         *
+         * @param bool $autoApproved
+         */
+        public function setAutoApproved($autoApproved)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoApproved()
+        {
+        }
+        /**
+         * The time at which the approval expires.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * If set, denotes the timestamp at which the approval is invalidated.
+         *
+         * @param string $invalidateTime
+         */
+        public function setInvalidateTime($invalidateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvalidateTime()
+        {
+        }
+        /**
+         * True when the request has been approved by the customer's defined policy.
+         *
+         * @param bool $policyApproved
+         */
+        public function setPolicyApproved($policyApproved)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPolicyApproved()
+        {
+        }
+        /**
+         * The signature for the ApprovalRequest and details on how it was signed.
+         *
+         * @param SignatureInfo $signatureInfo
+         */
+        public function setSignatureInfo(SignatureInfo $signatureInfo)
+        {
+        }
+        /**
+         * @return SignatureInfo
+         */
+        public function getSignatureInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessApproval\ApproveDecision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproveTime()
-    {
-    }
-    /**
-     * True when the request has been auto-approved.
-     *
-     * @param bool $autoApproved
-     */
-    public function setAutoApproved($autoApproved)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutoApproved()
-    {
-    }
-    /**
-     * The time at which the approval expires.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * If set, denotes the timestamp at which the approval is invalidated.
-     *
-     * @param string $invalidateTime
-     */
-    public function setInvalidateTime($invalidateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvalidateTime()
-    {
-    }
-    /**
-     * True when the request has been approved by the customer's defined policy.
-     *
-     * @param bool $policyApproved
-     */
-    public function setPolicyApproved($policyApproved)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPolicyApproved()
-    {
-    }
-    /**
-     * The signature for the ApprovalRequest and details on how it was signed.
-     *
-     * @param SignatureInfo $signatureInfo
-     */
-    public function setSignatureInfo(SignatureInfo $signatureInfo)
-    {
-    }
-    /**
-     * @return SignatureInfo
-     */
-    public function getSignatureInfo()
+    class Google_Service_AccessApproval_ApproveDecision extends \Google\Service\AccessApproval\ApproveDecision
     {
     }
 }

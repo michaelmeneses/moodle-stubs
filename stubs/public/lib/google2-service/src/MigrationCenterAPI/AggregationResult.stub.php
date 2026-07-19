@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AggregationResult extends \Google\Model
-{
-    protected $countType = AggregationResultCount::class;
-    protected $countDataType = '';
-    /**
-     * @var string
-     */
-    public $field;
-    protected $frequencyType = AggregationResultFrequency::class;
-    protected $frequencyDataType = '';
-    protected $histogramType = AggregationResultHistogram::class;
-    protected $histogramDataType = '';
-    protected $sumType = AggregationResultSum::class;
-    protected $sumDataType = '';
-    /**
-     * @param AggregationResultCount $count
-     */
-    public function setCount(AggregationResultCount $count)
+namespace Google\Service\MigrationCenterAPI {
+    class AggregationResult extends \Google\Model
     {
+        protected $countType = AggregationResultCount::class;
+        protected $countDataType = '';
+        /**
+         * @var string
+         */
+        public $field;
+        protected $frequencyType = AggregationResultFrequency::class;
+        protected $frequencyDataType = '';
+        protected $histogramType = AggregationResultHistogram::class;
+        protected $histogramDataType = '';
+        protected $sumType = AggregationResultSum::class;
+        protected $sumDataType = '';
+        /**
+         * @param AggregationResultCount $count
+         */
+        public function setCount(AggregationResultCount $count)
+        {
+        }
+        /**
+         * @return AggregationResultCount
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param AggregationResultFrequency $frequency
+         */
+        public function setFrequency(AggregationResultFrequency $frequency)
+        {
+        }
+        /**
+         * @return AggregationResultFrequency
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * @param AggregationResultHistogram $histogram
+         */
+        public function setHistogram(AggregationResultHistogram $histogram)
+        {
+        }
+        /**
+         * @return AggregationResultHistogram
+         */
+        public function getHistogram()
+        {
+        }
+        /**
+         * @param AggregationResultSum $sum
+         */
+        public function setSum(AggregationResultSum $sum)
+        {
+        }
+        /**
+         * @return AggregationResultSum
+         */
+        public function getSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregationResultCount
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AggregationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * @param AggregationResultFrequency $frequency
-     */
-    public function setFrequency(AggregationResultFrequency $frequency)
-    {
-    }
-    /**
-     * @return AggregationResultFrequency
-     */
-    public function getFrequency()
-    {
-    }
-    /**
-     * @param AggregationResultHistogram $histogram
-     */
-    public function setHistogram(AggregationResultHistogram $histogram)
-    {
-    }
-    /**
-     * @return AggregationResultHistogram
-     */
-    public function getHistogram()
-    {
-    }
-    /**
-     * @param AggregationResultSum $sum
-     */
-    public function setSum(AggregationResultSum $sum)
-    {
-    }
-    /**
-     * @return AggregationResultSum
-     */
-    public function getSum()
+    class Google_Service_MigrationCenterAPI_AggregationResult extends \Google\Service\MigrationCenterAPI\AggregationResult
     {
     }
 }

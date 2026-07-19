@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class NotifierMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $notifier;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class NotifierMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $notifier;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotifier($notifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\NotifierMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotifier($notifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotifier()
+    class Google_Service_CloudBuild_NotifierMetadata extends \Google\Service\CloudBuild\NotifierMetadata
     {
     }
 }

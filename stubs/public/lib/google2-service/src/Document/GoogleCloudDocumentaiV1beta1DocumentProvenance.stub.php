@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentProvenance extends \Google\Collection
-{
-    protected $collection_key = 'parents';
-    /**
-     * @var int
-     */
-    public $id;
-    protected $parentsType = GoogleCloudDocumentaiV1beta1DocumentProvenanceParent::class;
-    protected $parentsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $revision;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param int
-     */
-    public function setId($id)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentProvenance extends \Google\Collection
     {
+        protected $collection_key = 'parents';
+        /**
+         * @var int
+         */
+        public $id;
+        protected $parentsType = GoogleCloudDocumentaiV1beta1DocumentProvenanceParent::class;
+        protected $parentsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $revision;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param int
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentProvenanceParent[]
+         */
+        public function setParents($parents)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentProvenanceParent[]
+         */
+        public function getParents()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentProvenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentProvenanceParent[]
-     */
-    public function setParents($parents)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentProvenanceParent[]
-     */
-    public function getParents()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentProvenance extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentProvenance
     {
     }
 }

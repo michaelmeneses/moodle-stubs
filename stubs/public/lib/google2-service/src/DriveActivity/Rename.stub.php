@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Rename extends \Google\Model
-{
-    /**
-     * The new title of the drive object.
-     *
-     * @var string
-     */
-    public $newTitle;
-    /**
-     * The previous title of the drive object.
-     *
-     * @var string
-     */
-    public $oldTitle;
-    /**
-     * The new title of the drive object.
-     *
-     * @param string $newTitle
-     */
-    public function setNewTitle($newTitle)
+namespace Google\Service\DriveActivity {
+    class Rename extends \Google\Model
     {
+        /**
+         * The new title of the drive object.
+         *
+         * @var string
+         */
+        public $newTitle;
+        /**
+         * The previous title of the drive object.
+         *
+         * @var string
+         */
+        public $oldTitle;
+        /**
+         * The new title of the drive object.
+         *
+         * @param string $newTitle
+         */
+        public function setNewTitle($newTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewTitle()
+        {
+        }
+        /**
+         * The previous title of the drive object.
+         *
+         * @param string $oldTitle
+         */
+        public function setOldTitle($oldTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\Rename registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewTitle()
-    {
-    }
-    /**
-     * The previous title of the drive object.
-     *
-     * @param string $oldTitle
-     */
-    public function setOldTitle($oldTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldTitle()
+    class Google_Service_DriveActivity_Rename extends \Google\Service\DriveActivity\Rename
     {
     }
 }

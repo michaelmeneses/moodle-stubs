@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TimedPromoteReleaseCondition extends \Google\Collection
-{
-    protected $collection_key = 'targetsList';
-    /**
-     * Output only. When the next scheduled promotion(s) will occur.
-     *
-     * @var string
-     */
-    public $nextPromotionTime;
-    protected $targetsListType = Targets::class;
-    protected $targetsListDataType = 'array';
-    /**
-     * Output only. When the next scheduled promotion(s) will occur.
-     *
-     * @param string $nextPromotionTime
-     */
-    public function setNextPromotionTime($nextPromotionTime)
+namespace Google\Service\CloudDeploy {
+    class TimedPromoteReleaseCondition extends \Google\Collection
     {
+        protected $collection_key = 'targetsList';
+        /**
+         * Output only. When the next scheduled promotion(s) will occur.
+         *
+         * @var string
+         */
+        public $nextPromotionTime;
+        protected $targetsListType = Targets::class;
+        protected $targetsListDataType = 'array';
+        /**
+         * Output only. When the next scheduled promotion(s) will occur.
+         *
+         * @param string $nextPromotionTime
+         */
+        public function setNextPromotionTime($nextPromotionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPromotionTime()
+        {
+        }
+        /**
+         * Output only. A list of targets involved in the upcoming timed promotion(s).
+         *
+         * @param Targets[] $targetsList
+         */
+        public function setTargetsList($targetsList)
+        {
+        }
+        /**
+         * @return Targets[]
+         */
+        public function getTargetsList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\TimedPromoteReleaseCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPromotionTime()
-    {
-    }
-    /**
-     * Output only. A list of targets involved in the upcoming timed promotion(s).
-     *
-     * @param Targets[] $targetsList
-     */
-    public function setTargetsList($targetsList)
-    {
-    }
-    /**
-     * @return Targets[]
-     */
-    public function getTargetsList()
+    class Google_Service_CloudDeploy_TimedPromoteReleaseCondition extends \Google\Service\CloudDeploy\TimedPromoteReleaseCondition
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageMaterialIcon extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $fill;
-    /**
-     * @var int
-     */
-    public $grade;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var int
-     */
-    public $weight;
-    /**
-     * @param bool
-     */
-    public function setFill($fill)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageMaterialIcon extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $fill;
+        /**
+         * @var int
+         */
+        public $grade;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var int
+         */
+        public $weight;
+        /**
+         * @param bool
+         */
+        public function setFill($fill)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFill()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setGrade($grade)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGrade()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageMaterialIcon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFill()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setGrade($grade)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGrade()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeight()
+    class Google_Service_CloudSearch_AppsDynamiteStorageMaterialIcon extends \Google\Service\CloudSearch\AppsDynamiteStorageMaterialIcon
     {
     }
 }

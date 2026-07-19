@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStoreRagResource extends \Google\Collection
-{
-    protected $collection_key = 'ragFileIds';
-    /**
-     * Optional. RagCorpora resource name. Format:
-     * `projects/{project}/locations/{location}/ragCorpora/{rag_corpus}`
-     *
-     * @var string
-     */
-    public $ragCorpus;
-    /**
-     * Optional. rag_file_id. The files should be in the same rag_corpus set in
-     * rag_corpus field.
-     *
-     * @var string[]
-     */
-    public $ragFileIds;
-    /**
-     * Optional. RagCorpora resource name. Format:
-     * `projects/{project}/locations/{location}/ragCorpora/{rag_corpus}`
-     *
-     * @param string $ragCorpus
-     */
-    public function setRagCorpus($ragCorpus)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStoreRagResource extends \Google\Collection
     {
+        protected $collection_key = 'ragFileIds';
+        /**
+         * Optional. RagCorpora resource name. Format:
+         * `projects/{project}/locations/{location}/ragCorpora/{rag_corpus}`
+         *
+         * @var string
+         */
+        public $ragCorpus;
+        /**
+         * Optional. rag_file_id. The files should be in the same rag_corpus set in
+         * rag_corpus field.
+         *
+         * @var string[]
+         */
+        public $ragFileIds;
+        /**
+         * Optional. RagCorpora resource name. Format:
+         * `projects/{project}/locations/{location}/ragCorpora/{rag_corpus}`
+         *
+         * @param string $ragCorpus
+         */
+        public function setRagCorpus($ragCorpus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRagCorpus()
+        {
+        }
+        /**
+         * Optional. rag_file_id. The files should be in the same rag_corpus set in
+         * rag_corpus field.
+         *
+         * @param string[] $ragFileIds
+         */
+        public function setRagFileIds($ragFileIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRagFileIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStoreRagResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagCorpus()
-    {
-    }
-    /**
-     * Optional. rag_file_id. The files should be in the same rag_corpus set in
-     * rag_corpus field.
-     *
-     * @param string[] $ragFileIds
-     */
-    public function setRagFileIds($ragFileIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRagFileIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStoreRagResource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStoreRagResource
     {
     }
 }

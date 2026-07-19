@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StoredInfoTypeStats extends \Google\Model
-{
-    protected $largeCustomDictionaryType = GooglePrivacyDlpV2LargeCustomDictionaryStats::class;
-    protected $largeCustomDictionaryDataType = '';
-    /**
-     * StoredInfoType where findings are defined by a dictionary of phrases.
-     *
-     * @param GooglePrivacyDlpV2LargeCustomDictionaryStats $largeCustomDictionary
-     */
-    public function setLargeCustomDictionary(GooglePrivacyDlpV2LargeCustomDictionaryStats $largeCustomDictionary)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StoredInfoTypeStats extends \Google\Model
     {
+        protected $largeCustomDictionaryType = GooglePrivacyDlpV2LargeCustomDictionaryStats::class;
+        protected $largeCustomDictionaryDataType = '';
+        /**
+         * StoredInfoType where findings are defined by a dictionary of phrases.
+         *
+         * @param GooglePrivacyDlpV2LargeCustomDictionaryStats $largeCustomDictionary
+         */
+        public function setLargeCustomDictionary(GooglePrivacyDlpV2LargeCustomDictionaryStats $largeCustomDictionary)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LargeCustomDictionaryStats
+         */
+        public function getLargeCustomDictionary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2LargeCustomDictionaryStats
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StoredInfoTypeStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLargeCustomDictionary()
+    class Google_Service_DLP_GooglePrivacyDlpV2StoredInfoTypeStats extends \Google\Service\DLP\GooglePrivacyDlpV2StoredInfoTypeStats
     {
     }
 }

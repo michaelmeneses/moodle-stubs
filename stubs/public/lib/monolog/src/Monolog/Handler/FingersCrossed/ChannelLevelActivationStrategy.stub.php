@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler\FingersCrossed;
 
+use Monolog\Level;
+use Monolog\Logger;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Channel and Error level based monolog activation strategy. Allows to trigger activation
  * based on level per channel. e.g. trigger activation on level 'ERROR' by default, except

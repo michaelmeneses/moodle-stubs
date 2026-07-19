@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class PatientScope extends \Google\Collection
-{
-    protected $collection_key = 'patientIds';
-    /**
-     * Optional. The list of patient IDs whose Consent resources will be enforced.
-     * At most 10,000 patients can be specified. An empty list is equivalent to
-     * all patients (meaning the entire FHIR store).
-     *
-     * @var string[]
-     */
-    public $patientIds;
-    /**
-     * Optional. The list of patient IDs whose Consent resources will be enforced.
-     * At most 10,000 patients can be specified. An empty list is equivalent to
-     * all patients (meaning the entire FHIR store).
-     *
-     * @param string[] $patientIds
-     */
-    public function setPatientIds($patientIds)
+namespace Google\Service\CloudHealthcare {
+    class PatientScope extends \Google\Collection
     {
+        protected $collection_key = 'patientIds';
+        /**
+         * Optional. The list of patient IDs whose Consent resources will be enforced.
+         * At most 10,000 patients can be specified. An empty list is equivalent to
+         * all patients (meaning the entire FHIR store).
+         *
+         * @var string[]
+         */
+        public $patientIds;
+        /**
+         * Optional. The list of patient IDs whose Consent resources will be enforced.
+         * At most 10,000 patients can be specified. An empty list is equivalent to
+         * all patients (meaning the entire FHIR store).
+         *
+         * @param string[] $patientIds
+         */
+        public function setPatientIds($patientIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPatientIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\PatientScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPatientIds()
+    class Google_Service_CloudHealthcare_PatientScope extends \Google\Service\CloudHealthcare\PatientScope
     {
     }
 }

@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class QueryTimelineSample extends \Google\Model
-{
-    /**
-     * Total number of active workers. This does not correspond directly to slot
-     * usage. This is the largest value observed since the last sample.
-     *
-     * @var string
-     */
-    public $activeUnits;
-    /**
-     * Total parallel units of work completed by this query.
-     *
-     * @var string
-     */
-    public $completedUnits;
-    /**
-     * Milliseconds elapsed since the start of query execution.
-     *
-     * @var string
-     */
-    public $elapsedMs;
-    /**
-     * Units of work that can be scheduled immediately. Providing additional slots
-     * for these units of work will accelerate the query, if no other query in the
-     * reservation needs additional slots.
-     *
-     * @var string
-     */
-    public $estimatedRunnableUnits;
-    /**
-     * Total units of work remaining for the query. This number can be revised
-     * (increased or decreased) while the query is running.
-     *
-     * @var string
-     */
-    public $pendingUnits;
-    /**
-     * Total shuffle usage ratio in shuffle RAM per reservation of this query.
-     * This will be provided for reservation customers only.
-     *
-     * @var 
-     */
-    public $shuffleRamUsageRatio;
-    /**
-     * Cumulative slot-ms consumed by the query.
-     *
-     * @var string
-     */
-    public $totalSlotMs;
-    /**
-     * Total number of active workers. This does not correspond directly to slot
-     * usage. This is the largest value observed since the last sample.
-     *
-     * @param string $activeUnits
-     */
-    public function setActiveUnits($activeUnits)
+namespace Google\Service\Bigquery {
+    class QueryTimelineSample extends \Google\Model
     {
+        /**
+         * Total number of active workers. This does not correspond directly to slot
+         * usage. This is the largest value observed since the last sample.
+         *
+         * @var string
+         */
+        public $activeUnits;
+        /**
+         * Total parallel units of work completed by this query.
+         *
+         * @var string
+         */
+        public $completedUnits;
+        /**
+         * Milliseconds elapsed since the start of query execution.
+         *
+         * @var string
+         */
+        public $elapsedMs;
+        /**
+         * Units of work that can be scheduled immediately. Providing additional slots
+         * for these units of work will accelerate the query, if no other query in the
+         * reservation needs additional slots.
+         *
+         * @var string
+         */
+        public $estimatedRunnableUnits;
+        /**
+         * Total units of work remaining for the query. This number can be revised
+         * (increased or decreased) while the query is running.
+         *
+         * @var string
+         */
+        public $pendingUnits;
+        /**
+         * Total shuffle usage ratio in shuffle RAM per reservation of this query.
+         * This will be provided for reservation customers only.
+         *
+         * @var 
+         */
+        public $shuffleRamUsageRatio;
+        /**
+         * Cumulative slot-ms consumed by the query.
+         *
+         * @var string
+         */
+        public $totalSlotMs;
+        /**
+         * Total number of active workers. This does not correspond directly to slot
+         * usage. This is the largest value observed since the last sample.
+         *
+         * @param string $activeUnits
+         */
+        public function setActiveUnits($activeUnits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveUnits()
+        {
+        }
+        /**
+         * Total parallel units of work completed by this query.
+         *
+         * @param string $completedUnits
+         */
+        public function setCompletedUnits($completedUnits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletedUnits()
+        {
+        }
+        /**
+         * Milliseconds elapsed since the start of query execution.
+         *
+         * @param string $elapsedMs
+         */
+        public function setElapsedMs($elapsedMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElapsedMs()
+        {
+        }
+        /**
+         * Units of work that can be scheduled immediately. Providing additional slots
+         * for these units of work will accelerate the query, if no other query in the
+         * reservation needs additional slots.
+         *
+         * @param string $estimatedRunnableUnits
+         */
+        public function setEstimatedRunnableUnits($estimatedRunnableUnits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedRunnableUnits()
+        {
+        }
+        /**
+         * Total units of work remaining for the query. This number can be revised
+         * (increased or decreased) while the query is running.
+         *
+         * @param string $pendingUnits
+         */
+        public function setPendingUnits($pendingUnits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingUnits()
+        {
+        }
+        public function setShuffleRamUsageRatio($shuffleRamUsageRatio)
+        {
+        }
+        public function getShuffleRamUsageRatio()
+        {
+        }
+        /**
+         * Cumulative slot-ms consumed by the query.
+         *
+         * @param string $totalSlotMs
+         */
+        public function setTotalSlotMs($totalSlotMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSlotMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\QueryTimelineSample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveUnits()
-    {
-    }
-    /**
-     * Total parallel units of work completed by this query.
-     *
-     * @param string $completedUnits
-     */
-    public function setCompletedUnits($completedUnits)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompletedUnits()
-    {
-    }
-    /**
-     * Milliseconds elapsed since the start of query execution.
-     *
-     * @param string $elapsedMs
-     */
-    public function setElapsedMs($elapsedMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElapsedMs()
-    {
-    }
-    /**
-     * Units of work that can be scheduled immediately. Providing additional slots
-     * for these units of work will accelerate the query, if no other query in the
-     * reservation needs additional slots.
-     *
-     * @param string $estimatedRunnableUnits
-     */
-    public function setEstimatedRunnableUnits($estimatedRunnableUnits)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedRunnableUnits()
-    {
-    }
-    /**
-     * Total units of work remaining for the query. This number can be revised
-     * (increased or decreased) while the query is running.
-     *
-     * @param string $pendingUnits
-     */
-    public function setPendingUnits($pendingUnits)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingUnits()
-    {
-    }
-    public function setShuffleRamUsageRatio($shuffleRamUsageRatio)
-    {
-    }
-    public function getShuffleRamUsageRatio()
-    {
-    }
-    /**
-     * Cumulative slot-ms consumed by the query.
-     *
-     * @param string $totalSlotMs
-     */
-    public function setTotalSlotMs($totalSlotMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSlotMs()
+    class Google_Service_Bigquery_QueryTimelineSample extends \Google\Service\Bigquery\QueryTimelineSample
     {
     }
 }

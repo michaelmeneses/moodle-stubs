@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListNetworksResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $networksType = Network::class;
-    protected $networksDataType = 'array';
-    /**
-     * A token identifying a page of results from the server.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of networks.
-     *
-     * @param Network[] $networks
-     */
-    public function setNetworks($networks)
+namespace Google\Service\Baremetalsolution {
+    class ListNetworksResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $networksType = Network::class;
+        protected $networksDataType = 'array';
+        /**
+         * A token identifying a page of results from the server.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of networks.
+         *
+         * @param Network[] $networks
+         */
+        public function setNetworks($networks)
+        {
+        }
+        /**
+         * @return Network[]
+         */
+        public function getNetworks()
+        {
+        }
+        /**
+         * A token identifying a page of results from the server.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Network[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListNetworksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworks()
-    {
-    }
-    /**
-     * A token identifying a page of results from the server.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Baremetalsolution_ListNetworksResponse extends \Google\Service\Baremetalsolution\ListNetworksResponse
     {
     }
 }

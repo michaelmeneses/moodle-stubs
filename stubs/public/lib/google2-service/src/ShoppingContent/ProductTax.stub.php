@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductTax extends \Google\Model
-{
-    /**
-     * The country within which the item is taxed, specified as a CLDR territory
-     * code.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The numeric ID of a location that the tax rate applies to as defined in the
-     * Google Ads API.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * The postal code range that the tax rate applies to, represented by a ZIP
-     * code, a ZIP code prefix using * wildcard, a range between two ZIP codes or
-     * two ZIP code prefixes of equal length. Examples: 94114, 94*, 94002-95460,
-     * 94*-95*.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * The percentage of tax rate that applies to the item price.
-     *
-     * @var 
-     */
-    public $rate;
-    /**
-     * The geographic region to which the tax rate applies.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Should be set to true if tax is charged on shipping.
-     *
-     * @var bool
-     */
-    public $taxShip;
-    /**
-     * The country within which the item is taxed, specified as a CLDR territory
-     * code.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class ProductTax extends \Google\Model
     {
+        /**
+         * The country within which the item is taxed, specified as a CLDR territory
+         * code.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The numeric ID of a location that the tax rate applies to as defined in the
+         * Google Ads API.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * The postal code range that the tax rate applies to, represented by a ZIP
+         * code, a ZIP code prefix using * wildcard, a range between two ZIP codes or
+         * two ZIP code prefixes of equal length. Examples: 94114, 94*, 94002-95460,
+         * 94*-95*.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * The percentage of tax rate that applies to the item price.
+         *
+         * @var 
+         */
+        public $rate;
+        /**
+         * The geographic region to which the tax rate applies.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Should be set to true if tax is charged on shipping.
+         *
+         * @var bool
+         */
+        public $taxShip;
+        /**
+         * The country within which the item is taxed, specified as a CLDR territory
+         * code.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The numeric ID of a location that the tax rate applies to as defined in the
+         * Google Ads API.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * The postal code range that the tax rate applies to, represented by a ZIP
+         * code, a ZIP code prefix using * wildcard, a range between two ZIP codes or
+         * two ZIP code prefixes of equal length. Examples: 94114, 94*, 94002-95460,
+         * 94*-95*.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        public function setRate($rate)
+        {
+        }
+        public function getRate()
+        {
+        }
+        /**
+         * The geographic region to which the tax rate applies.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Should be set to true if tax is charged on shipping.
+         *
+         * @param bool $taxShip
+         */
+        public function setTaxShip($taxShip)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTaxShip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductTax registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * The numeric ID of a location that the tax rate applies to as defined in the
-     * Google Ads API.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * The postal code range that the tax rate applies to, represented by a ZIP
-     * code, a ZIP code prefix using * wildcard, a range between two ZIP codes or
-     * two ZIP code prefixes of equal length. Examples: 94114, 94*, 94002-95460,
-     * 94*-95*.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    public function setRate($rate)
-    {
-    }
-    public function getRate()
-    {
-    }
-    /**
-     * The geographic region to which the tax rate applies.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Should be set to true if tax is charged on shipping.
-     *
-     * @param bool $taxShip
-     */
-    public function setTaxShip($taxShip)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTaxShip()
+    class Google_Service_ShoppingContent_ProductTax extends \Google\Service\ShoppingContent\ProductTax
     {
     }
 }

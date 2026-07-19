@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class MaintenancePolicy extends \Google\Model
-{
-    protected $maintenanceExclusionWindowType = TimeWindow::class;
-    protected $maintenanceExclusionWindowDataType = '';
-    protected $maintenanceWindowType = MaintenanceWindow::class;
-    protected $maintenanceWindowDataType = '';
-    /**
-     * Optional. The maintenance exclusion window of the instance.
-     *
-     * @param TimeWindow $maintenanceExclusionWindow
-     */
-    public function setMaintenanceExclusionWindow(TimeWindow $maintenanceExclusionWindow)
+namespace Google\Service\DataFusion {
+    class MaintenancePolicy extends \Google\Model
     {
+        protected $maintenanceExclusionWindowType = TimeWindow::class;
+        protected $maintenanceExclusionWindowDataType = '';
+        protected $maintenanceWindowType = MaintenanceWindow::class;
+        protected $maintenanceWindowDataType = '';
+        /**
+         * Optional. The maintenance exclusion window of the instance.
+         *
+         * @param TimeWindow $maintenanceExclusionWindow
+         */
+        public function setMaintenanceExclusionWindow(TimeWindow $maintenanceExclusionWindow)
+        {
+        }
+        /**
+         * @return TimeWindow
+         */
+        public function getMaintenanceExclusionWindow()
+        {
+        }
+        /**
+         * Optional. The maintenance window of the instance.
+         *
+         * @param MaintenanceWindow $maintenanceWindow
+         */
+        public function setMaintenanceWindow(MaintenanceWindow $maintenanceWindow)
+        {
+        }
+        /**
+         * @return MaintenanceWindow
+         */
+        public function getMaintenanceWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeWindow
+     * Runtime class alias of \Google\Service\DataFusion\MaintenancePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaintenanceExclusionWindow()
-    {
-    }
-    /**
-     * Optional. The maintenance window of the instance.
-     *
-     * @param MaintenanceWindow $maintenanceWindow
-     */
-    public function setMaintenanceWindow(MaintenanceWindow $maintenanceWindow)
-    {
-    }
-    /**
-     * @return MaintenanceWindow
-     */
-    public function getMaintenanceWindow()
+    class Google_Service_DataFusion_MaintenancePolicy extends \Google\Service\DataFusion\MaintenancePolicy
     {
     }
 }

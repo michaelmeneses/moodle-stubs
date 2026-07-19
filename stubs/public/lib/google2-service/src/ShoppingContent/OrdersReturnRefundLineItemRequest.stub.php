@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersReturnRefundLineItemRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $operationId;
-    protected $priceAmountType = Price::class;
-    protected $priceAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @var string
-     */
-    public $quantity;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $reasonText;
-    protected $taxAmountType = Price::class;
-    protected $taxAmountDataType = '';
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
+namespace Google\Service\ShoppingContent {
+    class OrdersReturnRefundLineItemRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $operationId;
+        protected $priceAmountType = Price::class;
+        protected $priceAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @var string
+         */
+        public $quantity;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $reasonText;
+        protected $taxAmountType = Price::class;
+        protected $taxAmountDataType = '';
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPriceAmount(Price $priceAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPriceAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReasonText($reasonText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonText()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTaxAmount(Price $taxAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTaxAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersReturnRefundLineItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPriceAmount(Price $priceAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPriceAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReasonText($reasonText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReasonText()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTaxAmount(Price $taxAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTaxAmount()
+    class Google_Service_ShoppingContent_OrdersReturnRefundLineItemRequest extends \Google\Service\ShoppingContent\OrdersReturnRefundLineItemRequest
     {
     }
 }

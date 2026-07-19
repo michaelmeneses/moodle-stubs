@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1HeartbeatStatusReport extends \Google\Model
-{
-    /**
-     * State not specified
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Device is not eligible for heartbeat monitoring
-     */
-    public const STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Device is online
-     */
-    public const STATE_ONLINE = 'ONLINE';
-    /**
-     * Device is offline
-     */
-    public const STATE_OFFLINE = 'OFFLINE';
-    /**
-     * Device is outdated
-     */
-    public const STATE_DEVICE_OUTDATED = 'DEVICE_OUTDATED';
-    /**
-     * Timestamp of when status changed was detected
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * State the device changed to
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Timestamp of when status changed was detected
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1HeartbeatStatusReport extends \Google\Model
     {
+        /**
+         * State not specified
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Device is not eligible for heartbeat monitoring
+         */
+        public const STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Device is online
+         */
+        public const STATE_ONLINE = 'ONLINE';
+        /**
+         * Device is offline
+         */
+        public const STATE_OFFLINE = 'OFFLINE';
+        /**
+         * Device is outdated
+         */
+        public const STATE_DEVICE_OUTDATED = 'DEVICE_OUTDATED';
+        /**
+         * Timestamp of when status changed was detected
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * State the device changed to
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Timestamp of when status changed was detected
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * State the device changed to
+         *
+         * Accepted values: STATE_UNSPECIFIED, UNKNOWN, ONLINE, OFFLINE,
+         * DEVICE_OUTDATED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1HeartbeatStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportTime()
-    {
-    }
-    /**
-     * State the device changed to
-     *
-     * Accepted values: STATE_UNSPECIFIED, UNKNOWN, ONLINE, OFFLINE,
-     * DEVICE_OUTDATED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1HeartbeatStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1HeartbeatStatusReport
     {
     }
 }

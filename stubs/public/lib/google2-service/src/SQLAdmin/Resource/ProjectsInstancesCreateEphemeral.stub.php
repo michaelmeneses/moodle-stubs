@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "createEphemeral" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $createEphemeral = $sqladminService->createEphemeral;
- *  </code>
- */
-class ProjectsInstancesCreateEphemeral extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\SslCert;
+    use Google\Service\SQLAdmin\SslCertsCreateEphemeralRequest;
     /**
-     * Generates a short-lived X509 certificate containing the provided public key
-     * and signed by a private key specific to the target instance. Users may use
-     * the certificate to authenticate as themselves when connecting to the
-     * database. (createEphemeral.create)
-     *
-     * @param string $project Project ID of the Cloud SQL project.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param SslCertsCreateEphemeralRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SslCert
+     * The "createEphemeral" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $createEphemeral = $sqladminService->createEphemeral;
+     *  </code>
      */
-    public function create($project, $instance, SslCertsCreateEphemeralRequest $postBody, $optParams = [])
+    class ProjectsInstancesCreateEphemeral extends \Google\Service\Resource
+    {
+        /**
+         * Generates a short-lived X509 certificate containing the provided public key
+         * and signed by a private key specific to the target instance. Users may use
+         * the certificate to authenticate as themselves when connecting to the
+         * database. (createEphemeral.create)
+         *
+         * @param string $project Project ID of the Cloud SQL project.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param SslCertsCreateEphemeralRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SslCert
+         */
+        public function create($project, $instance, SslCertsCreateEphemeralRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\ProjectsInstancesCreateEphemeral registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SQLAdmin_Resource_ProjectsInstancesCreateEphemeral extends \Google\Service\SQLAdmin\Resource\ProjectsInstancesCreateEphemeral
     {
     }
 }

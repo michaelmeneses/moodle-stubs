@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class ErrorBudget extends \Google\Model
-{
-    /**
-     * Optional. The maximum number of failed units allowed in a location without
-     * pausing the rollout.
-     *
-     * @var int
-     */
-    public $allowedCount;
-    /**
-     * Optional. The maximum percentage of units allowed to fail (0, 100] within a
-     * location without pausing the rollout.
-     *
-     * @var int
-     */
-    public $allowedPercentage;
-    /**
-     * Optional. The maximum number of failed units allowed in a location without
-     * pausing the rollout.
-     *
-     * @param int $allowedCount
-     */
-    public function setAllowedCount($allowedCount)
+namespace Google\Service\SaaSServiceManagement {
+    class ErrorBudget extends \Google\Model
     {
+        /**
+         * Optional. The maximum number of failed units allowed in a location without
+         * pausing the rollout.
+         *
+         * @var int
+         */
+        public $allowedCount;
+        /**
+         * Optional. The maximum percentage of units allowed to fail (0, 100] within a
+         * location without pausing the rollout.
+         *
+         * @var int
+         */
+        public $allowedPercentage;
+        /**
+         * Optional. The maximum number of failed units allowed in a location without
+         * pausing the rollout.
+         *
+         * @param int $allowedCount
+         */
+        public function setAllowedCount($allowedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllowedCount()
+        {
+        }
+        /**
+         * Optional. The maximum percentage of units allowed to fail (0, 100] within a
+         * location without pausing the rollout.
+         *
+         * @param int $allowedPercentage
+         */
+        public function setAllowedPercentage($allowedPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllowedPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\ErrorBudget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedCount()
-    {
-    }
-    /**
-     * Optional. The maximum percentage of units allowed to fail (0, 100] within a
-     * location without pausing the rollout.
-     *
-     * @param int $allowedPercentage
-     */
-    public function setAllowedPercentage($allowedPercentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAllowedPercentage()
+    class Google_Service_SaaSServiceManagement_ErrorBudget extends \Google\Service\SaaSServiceManagement\ErrorBudget
     {
     }
 }

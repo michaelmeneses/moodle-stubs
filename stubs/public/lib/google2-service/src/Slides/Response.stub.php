@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Response extends \Google\Model
-{
-    protected $createImageType = CreateImageResponse::class;
-    protected $createImageDataType = '';
-    protected $createLineType = CreateLineResponse::class;
-    protected $createLineDataType = '';
-    protected $createShapeType = CreateShapeResponse::class;
-    protected $createShapeDataType = '';
-    protected $createSheetsChartType = CreateSheetsChartResponse::class;
-    protected $createSheetsChartDataType = '';
-    protected $createSlideType = CreateSlideResponse::class;
-    protected $createSlideDataType = '';
-    protected $createTableType = CreateTableResponse::class;
-    protected $createTableDataType = '';
-    protected $createVideoType = CreateVideoResponse::class;
-    protected $createVideoDataType = '';
-    protected $duplicateObjectType = DuplicateObjectResponse::class;
-    protected $duplicateObjectDataType = '';
-    protected $groupObjectsType = GroupObjectsResponse::class;
-    protected $groupObjectsDataType = '';
-    protected $replaceAllShapesWithImageType = ReplaceAllShapesWithImageResponse::class;
-    protected $replaceAllShapesWithImageDataType = '';
-    protected $replaceAllShapesWithSheetsChartType = ReplaceAllShapesWithSheetsChartResponse::class;
-    protected $replaceAllShapesWithSheetsChartDataType = '';
-    protected $replaceAllTextType = ReplaceAllTextResponse::class;
-    protected $replaceAllTextDataType = '';
-    /**
-     * The result of creating an image.
-     *
-     * @param CreateImageResponse $createImage
-     */
-    public function setCreateImage(CreateImageResponse $createImage)
+namespace Google\Service\Slides {
+    class Response extends \Google\Model
     {
+        protected $createImageType = CreateImageResponse::class;
+        protected $createImageDataType = '';
+        protected $createLineType = CreateLineResponse::class;
+        protected $createLineDataType = '';
+        protected $createShapeType = CreateShapeResponse::class;
+        protected $createShapeDataType = '';
+        protected $createSheetsChartType = CreateSheetsChartResponse::class;
+        protected $createSheetsChartDataType = '';
+        protected $createSlideType = CreateSlideResponse::class;
+        protected $createSlideDataType = '';
+        protected $createTableType = CreateTableResponse::class;
+        protected $createTableDataType = '';
+        protected $createVideoType = CreateVideoResponse::class;
+        protected $createVideoDataType = '';
+        protected $duplicateObjectType = DuplicateObjectResponse::class;
+        protected $duplicateObjectDataType = '';
+        protected $groupObjectsType = GroupObjectsResponse::class;
+        protected $groupObjectsDataType = '';
+        protected $replaceAllShapesWithImageType = ReplaceAllShapesWithImageResponse::class;
+        protected $replaceAllShapesWithImageDataType = '';
+        protected $replaceAllShapesWithSheetsChartType = ReplaceAllShapesWithSheetsChartResponse::class;
+        protected $replaceAllShapesWithSheetsChartDataType = '';
+        protected $replaceAllTextType = ReplaceAllTextResponse::class;
+        protected $replaceAllTextDataType = '';
+        /**
+         * The result of creating an image.
+         *
+         * @param CreateImageResponse $createImage
+         */
+        public function setCreateImage(CreateImageResponse $createImage)
+        {
+        }
+        /**
+         * @return CreateImageResponse
+         */
+        public function getCreateImage()
+        {
+        }
+        /**
+         * The result of creating a line.
+         *
+         * @param CreateLineResponse $createLine
+         */
+        public function setCreateLine(CreateLineResponse $createLine)
+        {
+        }
+        /**
+         * @return CreateLineResponse
+         */
+        public function getCreateLine()
+        {
+        }
+        /**
+         * The result of creating a shape.
+         *
+         * @param CreateShapeResponse $createShape
+         */
+        public function setCreateShape(CreateShapeResponse $createShape)
+        {
+        }
+        /**
+         * @return CreateShapeResponse
+         */
+        public function getCreateShape()
+        {
+        }
+        /**
+         * The result of creating a Google Sheets chart.
+         *
+         * @param CreateSheetsChartResponse $createSheetsChart
+         */
+        public function setCreateSheetsChart(CreateSheetsChartResponse $createSheetsChart)
+        {
+        }
+        /**
+         * @return CreateSheetsChartResponse
+         */
+        public function getCreateSheetsChart()
+        {
+        }
+        /**
+         * The result of creating a slide.
+         *
+         * @param CreateSlideResponse $createSlide
+         */
+        public function setCreateSlide(CreateSlideResponse $createSlide)
+        {
+        }
+        /**
+         * @return CreateSlideResponse
+         */
+        public function getCreateSlide()
+        {
+        }
+        /**
+         * The result of creating a table.
+         *
+         * @param CreateTableResponse $createTable
+         */
+        public function setCreateTable(CreateTableResponse $createTable)
+        {
+        }
+        /**
+         * @return CreateTableResponse
+         */
+        public function getCreateTable()
+        {
+        }
+        /**
+         * The result of creating a video.
+         *
+         * @param CreateVideoResponse $createVideo
+         */
+        public function setCreateVideo(CreateVideoResponse $createVideo)
+        {
+        }
+        /**
+         * @return CreateVideoResponse
+         */
+        public function getCreateVideo()
+        {
+        }
+        /**
+         * The result of duplicating an object.
+         *
+         * @param DuplicateObjectResponse $duplicateObject
+         */
+        public function setDuplicateObject(DuplicateObjectResponse $duplicateObject)
+        {
+        }
+        /**
+         * @return DuplicateObjectResponse
+         */
+        public function getDuplicateObject()
+        {
+        }
+        /**
+         * The result of grouping objects.
+         *
+         * @param GroupObjectsResponse $groupObjects
+         */
+        public function setGroupObjects(GroupObjectsResponse $groupObjects)
+        {
+        }
+        /**
+         * @return GroupObjectsResponse
+         */
+        public function getGroupObjects()
+        {
+        }
+        /**
+         * The result of replacing all shapes matching some criteria with an image.
+         *
+         * @param ReplaceAllShapesWithImageResponse $replaceAllShapesWithImage
+         */
+        public function setReplaceAllShapesWithImage(ReplaceAllShapesWithImageResponse $replaceAllShapesWithImage)
+        {
+        }
+        /**
+         * @return ReplaceAllShapesWithImageResponse
+         */
+        public function getReplaceAllShapesWithImage()
+        {
+        }
+        /**
+         * The result of replacing all shapes matching some criteria with a Google
+         * Sheets chart.
+         *
+         * @param ReplaceAllShapesWithSheetsChartResponse $replaceAllShapesWithSheetsChart
+         */
+        public function setReplaceAllShapesWithSheetsChart(ReplaceAllShapesWithSheetsChartResponse $replaceAllShapesWithSheetsChart)
+        {
+        }
+        /**
+         * @return ReplaceAllShapesWithSheetsChartResponse
+         */
+        public function getReplaceAllShapesWithSheetsChart()
+        {
+        }
+        /**
+         * The result of replacing text.
+         *
+         * @param ReplaceAllTextResponse $replaceAllText
+         */
+        public function setReplaceAllText(ReplaceAllTextResponse $replaceAllText)
+        {
+        }
+        /**
+         * @return ReplaceAllTextResponse
+         */
+        public function getReplaceAllText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateImageResponse
+     * Runtime class alias of \Google\Service\Slides\Response registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateImage()
-    {
-    }
-    /**
-     * The result of creating a line.
-     *
-     * @param CreateLineResponse $createLine
-     */
-    public function setCreateLine(CreateLineResponse $createLine)
-    {
-    }
-    /**
-     * @return CreateLineResponse
-     */
-    public function getCreateLine()
-    {
-    }
-    /**
-     * The result of creating a shape.
-     *
-     * @param CreateShapeResponse $createShape
-     */
-    public function setCreateShape(CreateShapeResponse $createShape)
-    {
-    }
-    /**
-     * @return CreateShapeResponse
-     */
-    public function getCreateShape()
-    {
-    }
-    /**
-     * The result of creating a Google Sheets chart.
-     *
-     * @param CreateSheetsChartResponse $createSheetsChart
-     */
-    public function setCreateSheetsChart(CreateSheetsChartResponse $createSheetsChart)
-    {
-    }
-    /**
-     * @return CreateSheetsChartResponse
-     */
-    public function getCreateSheetsChart()
-    {
-    }
-    /**
-     * The result of creating a slide.
-     *
-     * @param CreateSlideResponse $createSlide
-     */
-    public function setCreateSlide(CreateSlideResponse $createSlide)
-    {
-    }
-    /**
-     * @return CreateSlideResponse
-     */
-    public function getCreateSlide()
-    {
-    }
-    /**
-     * The result of creating a table.
-     *
-     * @param CreateTableResponse $createTable
-     */
-    public function setCreateTable(CreateTableResponse $createTable)
-    {
-    }
-    /**
-     * @return CreateTableResponse
-     */
-    public function getCreateTable()
-    {
-    }
-    /**
-     * The result of creating a video.
-     *
-     * @param CreateVideoResponse $createVideo
-     */
-    public function setCreateVideo(CreateVideoResponse $createVideo)
-    {
-    }
-    /**
-     * @return CreateVideoResponse
-     */
-    public function getCreateVideo()
-    {
-    }
-    /**
-     * The result of duplicating an object.
-     *
-     * @param DuplicateObjectResponse $duplicateObject
-     */
-    public function setDuplicateObject(DuplicateObjectResponse $duplicateObject)
-    {
-    }
-    /**
-     * @return DuplicateObjectResponse
-     */
-    public function getDuplicateObject()
-    {
-    }
-    /**
-     * The result of grouping objects.
-     *
-     * @param GroupObjectsResponse $groupObjects
-     */
-    public function setGroupObjects(GroupObjectsResponse $groupObjects)
-    {
-    }
-    /**
-     * @return GroupObjectsResponse
-     */
-    public function getGroupObjects()
-    {
-    }
-    /**
-     * The result of replacing all shapes matching some criteria with an image.
-     *
-     * @param ReplaceAllShapesWithImageResponse $replaceAllShapesWithImage
-     */
-    public function setReplaceAllShapesWithImage(ReplaceAllShapesWithImageResponse $replaceAllShapesWithImage)
-    {
-    }
-    /**
-     * @return ReplaceAllShapesWithImageResponse
-     */
-    public function getReplaceAllShapesWithImage()
-    {
-    }
-    /**
-     * The result of replacing all shapes matching some criteria with a Google
-     * Sheets chart.
-     *
-     * @param ReplaceAllShapesWithSheetsChartResponse $replaceAllShapesWithSheetsChart
-     */
-    public function setReplaceAllShapesWithSheetsChart(ReplaceAllShapesWithSheetsChartResponse $replaceAllShapesWithSheetsChart)
-    {
-    }
-    /**
-     * @return ReplaceAllShapesWithSheetsChartResponse
-     */
-    public function getReplaceAllShapesWithSheetsChart()
-    {
-    }
-    /**
-     * The result of replacing text.
-     *
-     * @param ReplaceAllTextResponse $replaceAllText
-     */
-    public function setReplaceAllText(ReplaceAllTextResponse $replaceAllText)
-    {
-    }
-    /**
-     * @return ReplaceAllTextResponse
-     */
-    public function getReplaceAllText()
+    class Google_Service_Slides_Response extends \Google\Service\Slides\Response
     {
     }
 }

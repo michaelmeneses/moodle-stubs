@@ -21,92 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServerlessVPCAccess\Resource;
-
-/**
- * The "connectors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vpcaccessService = new Google\Service\ServerlessVPCAccess(...);
- *   $connectors = $vpcaccessService->projects_locations_connectors;
- *  </code>
- */
-class ProjectsLocationsConnectors extends \Google\Service\Resource
-{
+namespace Google\Service\ServerlessVPCAccess\Resource {
+    use Google\Service\ServerlessVPCAccess\Connector;
+    use Google\Service\ServerlessVPCAccess\ListConnectorsResponse;
+    use Google\Service\ServerlessVPCAccess\Operation;
     /**
-     * Creates a Serverless VPC Access connector, returns an operation.
-     * (connectors.create)
-     *
-     * @param string $parent Required. The project ID and location in which the
-     * configuration should be created, specified in the format
-     * `projects/locations`.
-     * @param Connector $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string connectorId Required. The ID to use for this connector.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "connectors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vpcaccessService = new Google\Service\ServerlessVPCAccess(...);
+     *   $connectors = $vpcaccessService->projects_locations_connectors;
+     *  </code>
      */
-    public function create($parent, Connector $postBody, $optParams = [])
+    class ProjectsLocationsConnectors extends \Google\Service\Resource
     {
+        /**
+         * Creates a Serverless VPC Access connector, returns an operation.
+         * (connectors.create)
+         *
+         * @param string $parent Required. The project ID and location in which the
+         * configuration should be created, specified in the format
+         * `projects/locations`.
+         * @param Connector $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string connectorId Required. The ID to use for this connector.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Connector $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Serverless VPC Access connector. Returns NOT_FOUND if the resource
+         * does not exist. (connectors.delete)
+         *
+         * @param string $name Required. Name of a Serverless VPC Access connector to
+         * delete.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Serverless VPC Access connector. Returns NOT_FOUND if the resource
+         * does not exist. (connectors.get)
+         *
+         * @param string $name Required. Name of a Serverless VPC Access connector to
+         * get.
+         * @param array $optParams Optional parameters.
+         * @return Connector
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Serverless VPC Access connectors.
+         * (connectors.listProjectsLocationsConnectors)
+         *
+         * @param string $parent Required. The project and location from which the
+         * routes should be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of functions to return per call.
+         * @opt_param string pageToken Continuation token.
+         * @return ListConnectorsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectors($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Serverless VPC Access connector, returns an operation.
+         * (connectors.patch)
+         *
+         * @param string $name The resource name in the format
+         * `projects/locations/connectors`.
+         * @param Connector $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The fields to update on the entry group. If
+         * absent or empty, all modifiable fields are updated.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Connector $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a Serverless VPC Access connector. Returns NOT_FOUND if the resource
-     * does not exist. (connectors.delete)
-     *
-     * @param string $name Required. Name of a Serverless VPC Access connector to
-     * delete.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServerlessVPCAccess\Resource\ProjectsLocationsConnectors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a Serverless VPC Access connector. Returns NOT_FOUND if the resource
-     * does not exist. (connectors.get)
-     *
-     * @param string $name Required. Name of a Serverless VPC Access connector to
-     * get.
-     * @param array $optParams Optional parameters.
-     * @return Connector
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Serverless VPC Access connectors.
-     * (connectors.listProjectsLocationsConnectors)
-     *
-     * @param string $parent Required. The project and location from which the
-     * routes should be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of functions to return per call.
-     * @opt_param string pageToken Continuation token.
-     * @return ListConnectorsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsConnectors($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a Serverless VPC Access connector, returns an operation.
-     * (connectors.patch)
-     *
-     * @param string $name The resource name in the format
-     * `projects/locations/connectors`.
-     * @param Connector $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The fields to update on the entry group. If
-     * absent or empty, all modifiable fields are updated.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Connector $postBody, $optParams = [])
+    class Google_Service_ServerlessVPCAccess_Resource_ProjectsLocationsConnectors extends \Google\Service\ServerlessVPCAccess\Resource\ProjectsLocationsConnectors
     {
     }
 }

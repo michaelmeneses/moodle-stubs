@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class AppLinkDataAppLinkInfoAppTarget extends \Google\Model
-{
-    /**
-     * Package name for AppTarget. For example: com.google.android.gm
-     *
-     * @var string
-     */
-    public $packageName;
-    protected $targetUriType = Uri::class;
-    protected $targetUriDataType = '';
-    /**
-     * Package name for AppTarget. For example: com.google.android.gm
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
+namespace Google\Service\Walletobjects {
+    class AppLinkDataAppLinkInfoAppTarget extends \Google\Model
     {
+        /**
+         * Package name for AppTarget. For example: com.google.android.gm
+         *
+         * @var string
+         */
+        public $packageName;
+        protected $targetUriType = Uri::class;
+        protected $targetUriDataType = '';
+        /**
+         * Package name for AppTarget. For example: com.google.android.gm
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * URI for AppTarget. The description on the URI must be set. Prefer setting
+         * package field instead, if this target is defined for your application.
+         *
+         * @param Uri $targetUri
+         */
+        public function setTargetUri(Uri $targetUri)
+        {
+        }
+        /**
+         * @return Uri
+         */
+        public function getTargetUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\AppLinkDataAppLinkInfoAppTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageName()
-    {
-    }
-    /**
-     * URI for AppTarget. The description on the URI must be set. Prefer setting
-     * package field instead, if this target is defined for your application.
-     *
-     * @param Uri $targetUri
-     */
-    public function setTargetUri(Uri $targetUri)
-    {
-    }
-    /**
-     * @return Uri
-     */
-    public function getTargetUri()
+    class Google_Service_Walletobjects_AppLinkDataAppLinkInfoAppTarget extends \Google\Service\Walletobjects\AppLinkDataAppLinkInfoAppTarget
     {
     }
 }

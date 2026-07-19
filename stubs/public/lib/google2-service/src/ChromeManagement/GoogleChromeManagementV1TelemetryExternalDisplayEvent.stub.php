@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryExternalDisplayEvent extends \Google\Collection
-{
-    protected $collection_key = 'externalDisplayData';
-    protected $externalDisplayDataType = GoogleChromeManagementV1TelemetryExternalDisplayData::class;
-    protected $externalDisplayDataDataType = 'array';
-    /**
-     * List of external displays that were connected/disconnected.
-     *
-     * @param GoogleChromeManagementV1TelemetryExternalDisplayData[] $externalDisplayData
-     */
-    public function setExternalDisplayData($externalDisplayData)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryExternalDisplayEvent extends \Google\Collection
     {
+        protected $collection_key = 'externalDisplayData';
+        protected $externalDisplayDataType = GoogleChromeManagementV1TelemetryExternalDisplayData::class;
+        protected $externalDisplayDataDataType = 'array';
+        /**
+         * List of external displays that were connected/disconnected.
+         *
+         * @param GoogleChromeManagementV1TelemetryExternalDisplayData[] $externalDisplayData
+         */
+        public function setExternalDisplayData($externalDisplayData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryExternalDisplayData[]
+         */
+        public function getExternalDisplayData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1TelemetryExternalDisplayData[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryExternalDisplayEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalDisplayData()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryExternalDisplayEvent extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryExternalDisplayEvent
     {
     }
 }

@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine\Resource;
-
-/**
- * The "applications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $appengineService = new Google\Service\Appengine(...);
- *   $applications = $appengineService->projects_locations_applications;
- *  </code>
- */
-class ProjectsLocationsApplications extends \Google\Service\Resource
-{
+namespace Google\Service\Appengine\Resource {
+    use Google\Service\Appengine\Application;
+    use Google\Service\Appengine\Operation;
     /**
-     * Updates the specified Application resource. You can update the following
-     * fields: auth_domain - Google authentication domain for controlling user
-     * access to the application. default_cookie_expiration - Cookie expiration
-     * policy for the application. iap - Identity-Aware Proxy properties for the
-     * application. (applications.patch)
-     *
-     * @param string $projectsId Part of `name`. Required. Name of the Application
-     * resource to update. Example: apps/myapp.
-     * @param string $locationsId Part of `name`. See documentation of `projectsId`.
-     * @param string $applicationsId Part of `name`. See documentation of
-     * `projectsId`.
-     * @param Application $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Standard field mask for the set of
-     * fields to be updated.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "applications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $appengineService = new Google\Service\Appengine(...);
+     *   $applications = $appengineService->projects_locations_applications;
+     *  </code>
      */
-    public function patch($projectsId, $locationsId, $applicationsId, Application $postBody, $optParams = [])
+    class ProjectsLocationsApplications extends \Google\Service\Resource
+    {
+        /**
+         * Updates the specified Application resource. You can update the following
+         * fields: auth_domain - Google authentication domain for controlling user
+         * access to the application. default_cookie_expiration - Cookie expiration
+         * policy for the application. iap - Identity-Aware Proxy properties for the
+         * application. (applications.patch)
+         *
+         * @param string $projectsId Part of `name`. Required. Name of the Application
+         * resource to update. Example: apps/myapp.
+         * @param string $locationsId Part of `name`. See documentation of `projectsId`.
+         * @param string $applicationsId Part of `name`. See documentation of
+         * `projectsId`.
+         * @param Application $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Standard field mask for the set of
+         * fields to be updated.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($projectsId, $locationsId, $applicationsId, Application $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Appengine\Resource\ProjectsLocationsApplications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Appengine_Resource_ProjectsLocationsApplications extends \Google\Service\Appengine\Resource\ProjectsLocationsApplications
     {
     }
 }

@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2PanelInfo extends \Google\Collection
-{
-    protected $collection_key = 'productDetails';
-    /**
-     * Optional. The attribution token of the panel.
-     *
-     * @var string
-     */
-    public $attributionToken;
-    /**
-     * Optional. The display name of the panel.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The panel ID.
-     *
-     * @var string
-     */
-    public $panelId;
-    /**
-     * Optional. The ordered position of the panel, if shown to the user with
-     * other panels. If set, then total_panels must also be set.
-     *
-     * @var int
-     */
-    public $panelPosition;
-    protected $productDetailsType = GoogleCloudRetailV2ProductDetail::class;
-    protected $productDetailsDataType = 'array';
-    /**
-     * Optional. The total number of panels, including this one, shown to the
-     * user. Must be set if panel_position is set.
-     *
-     * @var int
-     */
-    public $totalPanels;
-    /**
-     * Optional. The attribution token of the panel.
-     *
-     * @param string $attributionToken
-     */
-    public function setAttributionToken($attributionToken)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2PanelInfo extends \Google\Collection
     {
+        protected $collection_key = 'productDetails';
+        /**
+         * Optional. The attribution token of the panel.
+         *
+         * @var string
+         */
+        public $attributionToken;
+        /**
+         * Optional. The display name of the panel.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The panel ID.
+         *
+         * @var string
+         */
+        public $panelId;
+        /**
+         * Optional. The ordered position of the panel, if shown to the user with
+         * other panels. If set, then total_panels must also be set.
+         *
+         * @var int
+         */
+        public $panelPosition;
+        protected $productDetailsType = GoogleCloudRetailV2ProductDetail::class;
+        protected $productDetailsDataType = 'array';
+        /**
+         * Optional. The total number of panels, including this one, shown to the
+         * user. Must be set if panel_position is set.
+         *
+         * @var int
+         */
+        public $totalPanels;
+        /**
+         * Optional. The attribution token of the panel.
+         *
+         * @param string $attributionToken
+         */
+        public function setAttributionToken($attributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionToken()
+        {
+        }
+        /**
+         * Optional. The display name of the panel.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The panel ID.
+         *
+         * @param string $panelId
+         */
+        public function setPanelId($panelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPanelId()
+        {
+        }
+        /**
+         * Optional. The ordered position of the panel, if shown to the user with
+         * other panels. If set, then total_panels must also be set.
+         *
+         * @param int $panelPosition
+         */
+        public function setPanelPosition($panelPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPanelPosition()
+        {
+        }
+        /**
+         * Optional. The product details associated with the panel.
+         *
+         * @param GoogleCloudRetailV2ProductDetail[] $productDetails
+         */
+        public function setProductDetails($productDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductDetail[]
+         */
+        public function getProductDetails()
+        {
+        }
+        /**
+         * Optional. The total number of panels, including this one, shown to the
+         * user. Must be set if panel_position is set.
+         *
+         * @param int $totalPanels
+         */
+        public function setTotalPanels($totalPanels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalPanels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2PanelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributionToken()
-    {
-    }
-    /**
-     * Optional. The display name of the panel.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The panel ID.
-     *
-     * @param string $panelId
-     */
-    public function setPanelId($panelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPanelId()
-    {
-    }
-    /**
-     * Optional. The ordered position of the panel, if shown to the user with
-     * other panels. If set, then total_panels must also be set.
-     *
-     * @param int $panelPosition
-     */
-    public function setPanelPosition($panelPosition)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPanelPosition()
-    {
-    }
-    /**
-     * Optional. The product details associated with the panel.
-     *
-     * @param GoogleCloudRetailV2ProductDetail[] $productDetails
-     */
-    public function setProductDetails($productDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ProductDetail[]
-     */
-    public function getProductDetails()
-    {
-    }
-    /**
-     * Optional. The total number of panels, including this one, shown to the
-     * user. Must be set if panel_position is set.
-     *
-     * @param int $totalPanels
-     */
-    public function setTotalPanels($totalPanels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalPanels()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2PanelInfo extends \Google\Service\CloudRetail\GoogleCloudRetailV2PanelInfo
     {
     }
 }

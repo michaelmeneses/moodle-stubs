@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class FilterTableColumns extends \Google\Collection
-{
-    protected $collection_key = 'includeColumns';
-    /**
-     * Optional. List of columns to be excluded for a particular table.
-     *
-     * @var string[]
-     */
-    public $excludeColumns;
-    /**
-     * Optional. List of columns to be included for a particular table.
-     *
-     * @var string[]
-     */
-    public $includeColumns;
-    /**
-     * Optional. List of columns to be excluded for a particular table.
-     *
-     * @param string[] $excludeColumns
-     */
-    public function setExcludeColumns($excludeColumns)
+namespace Google\Service\DatabaseMigrationService {
+    class FilterTableColumns extends \Google\Collection
     {
+        protected $collection_key = 'includeColumns';
+        /**
+         * Optional. List of columns to be excluded for a particular table.
+         *
+         * @var string[]
+         */
+        public $excludeColumns;
+        /**
+         * Optional. List of columns to be included for a particular table.
+         *
+         * @var string[]
+         */
+        public $includeColumns;
+        /**
+         * Optional. List of columns to be excluded for a particular table.
+         *
+         * @param string[] $excludeColumns
+         */
+        public function setExcludeColumns($excludeColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludeColumns()
+        {
+        }
+        /**
+         * Optional. List of columns to be included for a particular table.
+         *
+         * @param string[] $includeColumns
+         */
+        public function setIncludeColumns($includeColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludeColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\FilterTableColumns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeColumns()
-    {
-    }
-    /**
-     * Optional. List of columns to be included for a particular table.
-     *
-     * @param string[] $includeColumns
-     */
-    public function setIncludeColumns($includeColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludeColumns()
+    class Google_Service_DatabaseMigrationService_FilterTableColumns extends \Google\Service\DatabaseMigrationService\FilterTableColumns
     {
     }
 }

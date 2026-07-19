@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanExecutionSpec extends \Google\Model
-{
-    /**
-     * Immutable. The unnested field (of type Date or Timestamp) that contains
-     * values which monotonically increase over time.If not specified, a data scan
-     * will run for all data in the table.
-     *
-     * @var string
-     */
-    public $field;
-    protected $triggerType = GoogleCloudDataplexV1Trigger::class;
-    protected $triggerDataType = '';
-    /**
-     * Immutable. The unnested field (of type Date or Timestamp) that contains
-     * values which monotonically increase over time.If not specified, a data scan
-     * will run for all data in the table.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanExecutionSpec extends \Google\Model
     {
+        /**
+         * Immutable. The unnested field (of type Date or Timestamp) that contains
+         * values which monotonically increase over time.If not specified, a data scan
+         * will run for all data in the table.
+         *
+         * @var string
+         */
+        public $field;
+        protected $triggerType = GoogleCloudDataplexV1Trigger::class;
+        protected $triggerDataType = '';
+        /**
+         * Immutable. The unnested field (of type Date or Timestamp) that contains
+         * values which monotonically increase over time.If not specified, a data scan
+         * will run for all data in the table.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Optional. Spec related to how often and when a scan should be triggered.If
+         * not specified, the default is OnDemand, which means the scan will not run
+         * until the user calls RunDataScan API.
+         *
+         * @param GoogleCloudDataplexV1Trigger $trigger
+         */
+        public function setTrigger(GoogleCloudDataplexV1Trigger $trigger)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Trigger
+         */
+        public function getTrigger()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanExecutionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Optional. Spec related to how often and when a scan should be triggered.If
-     * not specified, the default is OnDemand, which means the scan will not run
-     * until the user calls RunDataScan API.
-     *
-     * @param GoogleCloudDataplexV1Trigger $trigger
-     */
-    public function setTrigger(GoogleCloudDataplexV1Trigger $trigger)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1Trigger
-     */
-    public function getTrigger()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanExecutionSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanExecutionSpec
     {
     }
 }

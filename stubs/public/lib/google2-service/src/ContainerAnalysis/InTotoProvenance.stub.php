@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class InTotoProvenance extends \Google\Collection
-{
-    protected $collection_key = 'materials';
-    protected $builderConfigType = BuilderConfig::class;
-    protected $builderConfigDataType = '';
-    /**
-     * The collection of artifacts that influenced the build including sources,
-     * dependencies, build tools, base images, and so on. This is considered to be
-     * incomplete unless metadata.completeness.materials is true. Unset or null is
-     * equivalent to empty.
-     *
-     * @var string[]
-     */
-    public $materials;
-    protected $metadataType = Metadata::class;
-    protected $metadataDataType = '';
-    protected $recipeType = Recipe::class;
-    protected $recipeDataType = '';
-    /**
-     * required
-     *
-     * @param BuilderConfig $builderConfig
-     */
-    public function setBuilderConfig(BuilderConfig $builderConfig)
+namespace Google\Service\ContainerAnalysis {
+    class InTotoProvenance extends \Google\Collection
     {
+        protected $collection_key = 'materials';
+        protected $builderConfigType = BuilderConfig::class;
+        protected $builderConfigDataType = '';
+        /**
+         * The collection of artifacts that influenced the build including sources,
+         * dependencies, build tools, base images, and so on. This is considered to be
+         * incomplete unless metadata.completeness.materials is true. Unset or null is
+         * equivalent to empty.
+         *
+         * @var string[]
+         */
+        public $materials;
+        protected $metadataType = Metadata::class;
+        protected $metadataDataType = '';
+        protected $recipeType = Recipe::class;
+        protected $recipeDataType = '';
+        /**
+         * required
+         *
+         * @param BuilderConfig $builderConfig
+         */
+        public function setBuilderConfig(BuilderConfig $builderConfig)
+        {
+        }
+        /**
+         * @return BuilderConfig
+         */
+        public function getBuilderConfig()
+        {
+        }
+        /**
+         * The collection of artifacts that influenced the build including sources,
+         * dependencies, build tools, base images, and so on. This is considered to be
+         * incomplete unless metadata.completeness.materials is true. Unset or null is
+         * equivalent to empty.
+         *
+         * @param string[] $materials
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * @param Metadata $metadata
+         */
+        public function setMetadata(Metadata $metadata)
+        {
+        }
+        /**
+         * @return Metadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Identifies the configuration used for the build. When combined with
+         * materials, this SHOULD fully describe the build, such that re-running this
+         * recipe results in bit-for-bit identical output (if the build is
+         * reproducible). required
+         *
+         * @param Recipe $recipe
+         */
+        public function setRecipe(Recipe $recipe)
+        {
+        }
+        /**
+         * @return Recipe
+         */
+        public function getRecipe()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuilderConfig
+     * Runtime class alias of \Google\Service\ContainerAnalysis\InTotoProvenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilderConfig()
-    {
-    }
-    /**
-     * The collection of artifacts that influenced the build including sources,
-     * dependencies, build tools, base images, and so on. This is considered to be
-     * incomplete unless metadata.completeness.materials is true. Unset or null is
-     * equivalent to empty.
-     *
-     * @param string[] $materials
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMaterials()
-    {
-    }
-    /**
-     * @param Metadata $metadata
-     */
-    public function setMetadata(Metadata $metadata)
-    {
-    }
-    /**
-     * @return Metadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Identifies the configuration used for the build. When combined with
-     * materials, this SHOULD fully describe the build, such that re-running this
-     * recipe results in bit-for-bit identical output (if the build is
-     * reproducible). required
-     *
-     * @param Recipe $recipe
-     */
-    public function setRecipe(Recipe $recipe)
-    {
-    }
-    /**
-     * @return Recipe
-     */
-    public function getRecipe()
+    class Google_Service_ContainerAnalysis_InTotoProvenance extends \Google\Service\ContainerAnalysis\InTotoProvenance
     {
     }
 }

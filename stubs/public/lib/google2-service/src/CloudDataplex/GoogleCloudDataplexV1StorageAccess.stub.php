@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1StorageAccess extends \Google\Model
-{
-    /**
-     * Access mode unspecified.
-     */
-    public const READ_ACCESS_MODE_UNSPECIFIED = 'ACCESS_MODE_UNSPECIFIED';
-    /**
-     * Default. Data is accessed directly using storage APIs.
-     */
-    public const READ_DIRECT = 'DIRECT';
-    /**
-     * Data is accessed through a managed interface using BigQuery APIs.
-     */
-    public const READ_MANAGED = 'MANAGED';
-    /**
-     * Output only. Describes the read access mechanism of the data. Not user
-     * settable.
-     *
-     * @var string
-     */
-    public $read;
-    /**
-     * Output only. Describes the read access mechanism of the data. Not user
-     * settable.
-     *
-     * Accepted values: ACCESS_MODE_UNSPECIFIED, DIRECT, MANAGED
-     *
-     * @param self::READ_* $read
-     */
-    public function setRead($read)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1StorageAccess extends \Google\Model
     {
+        /**
+         * Access mode unspecified.
+         */
+        public const READ_ACCESS_MODE_UNSPECIFIED = 'ACCESS_MODE_UNSPECIFIED';
+        /**
+         * Default. Data is accessed directly using storage APIs.
+         */
+        public const READ_DIRECT = 'DIRECT';
+        /**
+         * Data is accessed through a managed interface using BigQuery APIs.
+         */
+        public const READ_MANAGED = 'MANAGED';
+        /**
+         * Output only. Describes the read access mechanism of the data. Not user
+         * settable.
+         *
+         * @var string
+         */
+        public $read;
+        /**
+         * Output only. Describes the read access mechanism of the data. Not user
+         * settable.
+         *
+         * Accepted values: ACCESS_MODE_UNSPECIFIED, DIRECT, MANAGED
+         *
+         * @param self::READ_* $read
+         */
+        public function setRead($read)
+        {
+        }
+        /**
+         * @return self::READ_*
+         */
+        public function getRead()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::READ_*
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRead()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1StorageAccess extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageAccess
     {
     }
 }

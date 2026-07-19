@@ -8,6 +8,7 @@
  */
 namespace Aws\BCMDataExports;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Billing and Cost Management Data Exports** service.
  * @method \Aws\Result createExport(array $args = [])

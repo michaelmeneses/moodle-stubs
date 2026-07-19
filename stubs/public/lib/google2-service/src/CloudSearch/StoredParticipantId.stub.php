@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class StoredParticipantId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $gaiaId;
-    /**
-     * @param string
-     */
-    public function setGaiaId($gaiaId)
+namespace Google\Service\CloudSearch {
+    class StoredParticipantId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $gaiaId;
+        /**
+         * @param string
+         */
+        public function setGaiaId($gaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGaiaId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\StoredParticipantId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGaiaId()
+    class Google_Service_CloudSearch_StoredParticipantId extends \Google\Service\CloudSearch\StoredParticipantId
     {
     }
 }

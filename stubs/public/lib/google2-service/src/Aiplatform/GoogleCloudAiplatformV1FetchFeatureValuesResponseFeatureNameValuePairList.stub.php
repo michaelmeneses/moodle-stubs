@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    protected $featuresType = GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairListFeatureNameValuePair::class;
-    protected $featuresDataType = 'array';
-    /**
-     * List of feature names and values.
-     *
-     * @param GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairListFeatureNameValuePair[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        protected $featuresType = GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairListFeatureNameValuePair::class;
+        protected $featuresDataType = 'array';
+        /**
+         * List of feature names and values.
+         *
+         * @param GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairListFeatureNameValuePair[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairListFeatureNameValuePair[]
+         */
+        public function getFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairListFeatureNameValuePair[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList
     {
     }
 }

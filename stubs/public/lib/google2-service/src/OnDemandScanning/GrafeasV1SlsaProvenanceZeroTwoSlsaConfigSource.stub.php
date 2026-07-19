@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $entryPoint;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string[] $digest
-     */
-    public function setDigest($digest)
+namespace Google\Service\OnDemandScanning {
+    class GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $entryPoint;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string[] $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string $entryPoint
+         */
+        public function setEntryPoint($entryPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntryPoint()
+        {
+        }
+        /**
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string $entryPoint
-     */
-    public function setEntryPoint($entryPoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntryPoint()
-    {
-    }
-    /**
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_OnDemandScanning_GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource extends \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource
     {
     }
 }

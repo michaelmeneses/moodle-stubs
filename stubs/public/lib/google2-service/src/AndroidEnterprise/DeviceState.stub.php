@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class DeviceState extends \Google\Model
-{
-    public const ACCOUNT_STATE_enabled = 'enabled';
-    public const ACCOUNT_STATE_disabled = 'disabled';
-    /**
-     * The state of the Google account on the device. "enabled" indicates that the
-     * Google account on the device can be used to access Google services
-     * (including Google Play), while "disabled" means that it cannot. A new
-     * device is initially in the "disabled" state.
-     *
-     * @var string
-     */
-    public $accountState;
-    /**
-     * The state of the Google account on the device. "enabled" indicates that the
-     * Google account on the device can be used to access Google services
-     * (including Google Play), while "disabled" means that it cannot. A new
-     * device is initially in the "disabled" state.
-     *
-     * Accepted values: enabled, disabled
-     *
-     * @param self::ACCOUNT_STATE_* $accountState
-     */
-    public function setAccountState($accountState)
+namespace Google\Service\AndroidEnterprise {
+    class DeviceState extends \Google\Model
     {
+        public const ACCOUNT_STATE_enabled = 'enabled';
+        public const ACCOUNT_STATE_disabled = 'disabled';
+        /**
+         * The state of the Google account on the device. "enabled" indicates that the
+         * Google account on the device can be used to access Google services
+         * (including Google Play), while "disabled" means that it cannot. A new
+         * device is initially in the "disabled" state.
+         *
+         * @var string
+         */
+        public $accountState;
+        /**
+         * The state of the Google account on the device. "enabled" indicates that the
+         * Google account on the device can be used to access Google services
+         * (including Google Play), while "disabled" means that it cannot. A new
+         * device is initially in the "disabled" state.
+         *
+         * Accepted values: enabled, disabled
+         *
+         * @param self::ACCOUNT_STATE_* $accountState
+         */
+        public function setAccountState($accountState)
+        {
+        }
+        /**
+         * @return self::ACCOUNT_STATE_*
+         */
+        public function getAccountState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACCOUNT_STATE_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\DeviceState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountState()
+    class Google_Service_AndroidEnterprise_DeviceState extends \Google\Service\AndroidEnterprise\DeviceState
     {
     }
 }

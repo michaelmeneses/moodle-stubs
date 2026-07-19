@@ -21,148 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage\Resource;
-
-/**
- * The "objectAccessControls" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storageService = new Google\Service\Storage(...);
- *   $objectAccessControls = $storageService->objectAccessControls;
- *  </code>
- */
-class ObjectAccessControls extends \Google\Service\Resource
-{
+namespace Google\Service\Storage\Resource {
+    use Google\Service\Storage\ObjectAccessControl;
+    use Google\Service\Storage\ObjectAccessControls as ObjectAccessControlsModel;
     /**
-     * Permanently deletes the ACL entry for the specified entity on the specified
-     * object. (objectAccessControls.delete)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $object Name of the object. For information about how to URL
-     * encode object names to be path safe, see [Encoding URI Path
-     * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string generation If present, selects a specific revision of this
-     * object (as opposed to the latest version, the default).
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @throws \Google\Service\Exception
+     * The "objectAccessControls" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storageService = new Google\Service\Storage(...);
+     *   $objectAccessControls = $storageService->objectAccessControls;
+     *  </code>
      */
-    public function delete($bucket, $object, $entity, $optParams = [])
+    class ObjectAccessControls extends \Google\Service\Resource
     {
+        /**
+         * Permanently deletes the ACL entry for the specified entity on the specified
+         * object. (objectAccessControls.delete)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $object Name of the object. For information about how to URL
+         * encode object names to be path safe, see [Encoding URI Path
+         * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string generation If present, selects a specific revision of this
+         * object (as opposed to the latest version, the default).
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($bucket, $object, $entity, $optParams = [])
+        {
+        }
+        /**
+         * Returns the ACL entry for the specified entity on the specified object.
+         * (objectAccessControls.get)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $object Name of the object. For information about how to URL
+         * encode object names to be path safe, see [Encoding URI Path
+         * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string generation If present, selects a specific revision of this
+         * object (as opposed to the latest version, the default).
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function get($bucket, $object, $entity, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new ACL entry on the specified object.
+         * (objectAccessControls.insert)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $object Name of the object. For information about how to URL
+         * encode object names to be path safe, see [Encoding URI Path
+         * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
+         * @param ObjectAccessControl $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string generation If present, selects a specific revision of this
+         * object (as opposed to the latest version, the default).
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function insert($bucket, $object, ObjectAccessControl $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves ACL entries on the specified object.
+         * (objectAccessControls.listObjectAccessControls)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $object Name of the object. For information about how to URL
+         * encode object names to be path safe, see [Encoding URI Path
+         * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string generation If present, selects a specific revision of this
+         * object (as opposed to the latest version, the default).
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControlsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listObjectAccessControls($bucket, $object, $optParams = [])
+        {
+        }
+        /**
+         * Patches an ACL entry on the specified object. (objectAccessControls.patch)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $object Name of the object. For information about how to URL
+         * encode object names to be path safe, see [Encoding URI Path
+         * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param ObjectAccessControl $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string generation If present, selects a specific revision of this
+         * object (as opposed to the latest version, the default).
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function patch($bucket, $object, $entity, ObjectAccessControl $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an ACL entry on the specified object. (objectAccessControls.update)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $object Name of the object. For information about how to URL
+         * encode object names to be path safe, see [Encoding URI Path
+         * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param ObjectAccessControl $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string generation If present, selects a specific revision of this
+         * object (as opposed to the latest version, the default).
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function update($bucket, $object, $entity, ObjectAccessControl $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the ACL entry for the specified entity on the specified object.
-     * (objectAccessControls.get)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $object Name of the object. For information about how to URL
-     * encode object names to be path safe, see [Encoding URI Path
-     * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string generation If present, selects a specific revision of this
-     * object (as opposed to the latest version, the default).
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Storage\Resource\ObjectAccessControls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($bucket, $object, $entity, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new ACL entry on the specified object.
-     * (objectAccessControls.insert)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $object Name of the object. For information about how to URL
-     * encode object names to be path safe, see [Encoding URI Path
-     * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
-     * @param ObjectAccessControl $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string generation If present, selects a specific revision of this
-     * object (as opposed to the latest version, the default).
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
-     */
-    public function insert($bucket, $object, ObjectAccessControl $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves ACL entries on the specified object.
-     * (objectAccessControls.listObjectAccessControls)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $object Name of the object. For information about how to URL
-     * encode object names to be path safe, see [Encoding URI Path
-     * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string generation If present, selects a specific revision of this
-     * object (as opposed to the latest version, the default).
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControlsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listObjectAccessControls($bucket, $object, $optParams = [])
-    {
-    }
-    /**
-     * Patches an ACL entry on the specified object. (objectAccessControls.patch)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $object Name of the object. For information about how to URL
-     * encode object names to be path safe, see [Encoding URI Path
-     * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param ObjectAccessControl $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string generation If present, selects a specific revision of this
-     * object (as opposed to the latest version, the default).
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
-     */
-    public function patch($bucket, $object, $entity, ObjectAccessControl $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an ACL entry on the specified object. (objectAccessControls.update)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $object Name of the object. For information about how to URL
-     * encode object names to be path safe, see [Encoding URI Path
-     * Parts](https://cloud.google.com/storage/docs/request-endpoints#encoding).
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param ObjectAccessControl $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string generation If present, selects a specific revision of this
-     * object (as opposed to the latest version, the default).
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
-     */
-    public function update($bucket, $object, $entity, ObjectAccessControl $postBody, $optParams = [])
+    class Google_Service_Storage_Resource_ObjectAccessControls extends \Google\Service\Storage\Resource\ObjectAccessControls
     {
     }
 }

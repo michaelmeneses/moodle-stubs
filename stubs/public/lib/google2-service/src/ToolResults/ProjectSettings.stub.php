@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ProjectSettings extends \Google\Model
-{
-    /**
-     * The name of the Google Cloud Storage bucket to which results are written.
-     * By default, this is unset. In update request: optional In response:
-     * optional
-     *
-     * @var string
-     */
-    public $defaultBucket;
-    /**
-     * The name of the project's settings. Always of the form: projects/{project-
-     * id}/settings In update request: never set In response: always set
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the Google Cloud Storage bucket to which results are written.
-     * By default, this is unset. In update request: optional In response:
-     * optional
-     *
-     * @param string $defaultBucket
-     */
-    public function setDefaultBucket($defaultBucket)
+namespace Google\Service\ToolResults {
+    class ProjectSettings extends \Google\Model
     {
+        /**
+         * The name of the Google Cloud Storage bucket to which results are written.
+         * By default, this is unset. In update request: optional In response:
+         * optional
+         *
+         * @var string
+         */
+        public $defaultBucket;
+        /**
+         * The name of the project's settings. Always of the form: projects/{project-
+         * id}/settings In update request: never set In response: always set
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the Google Cloud Storage bucket to which results are written.
+         * By default, this is unset. In update request: optional In response:
+         * optional
+         *
+         * @param string $defaultBucket
+         */
+        public function setDefaultBucket($defaultBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultBucket()
+        {
+        }
+        /**
+         * The name of the project's settings. Always of the form: projects/{project-
+         * id}/settings In update request: never set In response: always set
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\ProjectSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultBucket()
-    {
-    }
-    /**
-     * The name of the project's settings. Always of the form: projects/{project-
-     * id}/settings In update request: never set In response: always set
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ToolResults_ProjectSettings extends \Google\Service\ToolResults\ProjectSettings
     {
     }
 }

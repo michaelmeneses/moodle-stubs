@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Kmsinventory\Resource;
-
-/**
- * The "keyRings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $kmsinventoryService = new Google\Service\Kmsinventory(...);
- *   $keyRings = $kmsinventoryService->projects_locations_keyRings;
- *  </code>
- */
-class ProjectsLocationsKeyRings extends \Google\Service\Resource
-{
+namespace Google\Service\Kmsinventory\Resource {
+    /**
+     * The "keyRings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $kmsinventoryService = new Google\Service\Kmsinventory(...);
+     *   $keyRings = $kmsinventoryService->projects_locations_keyRings;
+     *  </code>
+     */
+    class ProjectsLocationsKeyRings extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Kmsinventory\Resource\ProjectsLocationsKeyRings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Kmsinventory_Resource_ProjectsLocationsKeyRings extends \Google\Service\Kmsinventory\Resource\ProjectsLocationsKeyRings
+    {
+    }
 }

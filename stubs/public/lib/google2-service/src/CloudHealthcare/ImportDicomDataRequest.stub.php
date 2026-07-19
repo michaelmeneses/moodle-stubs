@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ImportDicomDataRequest extends \Google\Model
-{
-    protected $blobStorageSettingsType = BlobStorageSettings::class;
-    protected $blobStorageSettingsDataType = '';
-    protected $gcsSourceType = GoogleCloudHealthcareV1DicomGcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Optional. The blob storage settings for the data imported by this
-     * operation.
-     *
-     * @param BlobStorageSettings $blobStorageSettings
-     */
-    public function setBlobStorageSettings(BlobStorageSettings $blobStorageSettings)
+namespace Google\Service\CloudHealthcare {
+    class ImportDicomDataRequest extends \Google\Model
     {
+        protected $blobStorageSettingsType = BlobStorageSettings::class;
+        protected $blobStorageSettingsDataType = '';
+        protected $gcsSourceType = GoogleCloudHealthcareV1DicomGcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Optional. The blob storage settings for the data imported by this
+         * operation.
+         *
+         * @param BlobStorageSettings $blobStorageSettings
+         */
+        public function setBlobStorageSettings(BlobStorageSettings $blobStorageSettings)
+        {
+        }
+        /**
+         * @return BlobStorageSettings
+         */
+        public function getBlobStorageSettings()
+        {
+        }
+        /**
+         * Cloud Storage source data location and import configuration. The Cloud
+         * Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud
+         * IAM roles on the Cloud Storage location.
+         *
+         * @param GoogleCloudHealthcareV1DicomGcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudHealthcareV1DicomGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudHealthcareV1DicomGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlobStorageSettings
+     * Runtime class alias of \Google\Service\CloudHealthcare\ImportDicomDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobStorageSettings()
-    {
-    }
-    /**
-     * Cloud Storage source data location and import configuration. The Cloud
-     * Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud
-     * IAM roles on the Cloud Storage location.
-     *
-     * @param GoogleCloudHealthcareV1DicomGcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudHealthcareV1DicomGcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudHealthcareV1DicomGcsSource
-     */
-    public function getGcsSource()
+    class Google_Service_CloudHealthcare_ImportDicomDataRequest extends \Google\Service\CloudHealthcare\ImportDicomDataRequest
     {
     }
 }

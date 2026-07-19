@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptInstancePromptExecution extends \Google\Model
-{
-    protected $argumentsType = GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue::class;
-    protected $argumentsDataType = 'map';
-    /**
-     * Maps variable names to their value.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue[] $arguments
-     */
-    public function setArguments($arguments)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptInstancePromptExecution extends \Google\Model
     {
+        protected $argumentsType = GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue::class;
+        protected $argumentsDataType = 'map';
+        /**
+         * Maps variable names to their value.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue[] $arguments
+         */
+        public function setArguments($arguments)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue[]
+         */
+        public function getArguments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptInstanceVariableValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptInstancePromptExecution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArguments()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptInstancePromptExecution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptInstancePromptExecution
     {
     }
 }

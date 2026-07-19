@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1VideoMetadata extends \Google\Model
-{
-    /**
-     * Optional. The end offset of the video.
-     *
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * Optional. The frame rate of the video sent to the model. If not specified,
-     * the default value is 1.0. The valid range is (0.0, 24.0].
-     *
-     * @var 
-     */
-    public $fps;
-    /**
-     * Optional. The start offset of the video.
-     *
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * Optional. The end offset of the video.
-     *
-     * @param string $endOffset
-     */
-    public function setEndOffset($endOffset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1VideoMetadata extends \Google\Model
     {
+        /**
+         * Optional. The end offset of the video.
+         *
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * Optional. The frame rate of the video sent to the model. If not specified,
+         * the default value is 1.0. The valid range is (0.0, 24.0].
+         *
+         * @var 
+         */
+        public $fps;
+        /**
+         * Optional. The start offset of the video.
+         *
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * Optional. The end offset of the video.
+         *
+         * @param string $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        public function setFps($fps)
+        {
+        }
+        public function getFps()
+        {
+        }
+        /**
+         * Optional. The start offset of the video.
+         *
+         * @param string $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1VideoMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOffset()
-    {
-    }
-    public function setFps($fps)
-    {
-    }
-    public function getFps()
-    {
-    }
-    /**
-     * Optional. The start offset of the video.
-     *
-     * @param string $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1VideoMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1VideoMetadata
     {
     }
 }

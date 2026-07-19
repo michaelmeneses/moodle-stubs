@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteBotResponse extends \Google\Model
-{
-    protected $botIdType = AppsDynamiteUserId::class;
-    protected $botIdDataType = '';
-    /**
-     * @var string
-     */
-    public $requiredAction;
-    /**
-     * @var string
-     */
-    public $responseType;
-    /**
-     * @var string
-     */
-    public $setupUrl;
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setBotId(AppsDynamiteUserId $botId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteBotResponse extends \Google\Model
     {
+        protected $botIdType = AppsDynamiteUserId::class;
+        protected $botIdDataType = '';
+        /**
+         * @var string
+         */
+        public $requiredAction;
+        /**
+         * @var string
+         */
+        public $responseType;
+        /**
+         * @var string
+         */
+        public $setupUrl;
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setBotId(AppsDynamiteUserId $botId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getBotId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequiredAction($requiredAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResponseType($responseType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSetupUrl($setupUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetupUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteUserId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteBotResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBotId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequiredAction($requiredAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequiredAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResponseType($responseType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSetupUrl($setupUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetupUrl()
+    class Google_Service_CloudSearch_AppsDynamiteBotResponse extends \Google\Service\CloudSearch\AppsDynamiteBotResponse
     {
     }
 }

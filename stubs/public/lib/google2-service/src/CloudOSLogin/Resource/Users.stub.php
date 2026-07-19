@@ -21,55 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osloginService = new Google\Service\CloudOSLogin(...);
- *   $users = $osloginService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\CloudOSLogin\Resource {
+    use Google\Service\CloudOSLogin\ImportSshPublicKeyResponse;
+    use Google\Service\CloudOSLogin\LoginProfile;
+    use Google\Service\CloudOSLogin\SshPublicKey;
     /**
-     * Retrieves the profile information used for logging in to a virtual machine on
-     * Google Compute Engine. (users.getLoginProfile)
-     *
-     * @param string $name Required. The unique ID for the user in format
-     * `users/{user}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string projectId Required. The project ID of the Google Cloud
-     * Platform project.
-     * @opt_param string systemId Optional. A system ID for filtering the results of
-     * the request.
-     * @return LoginProfile
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osloginService = new Google\Service\CloudOSLogin(...);
+     *   $users = $osloginService->users;
+     *  </code>
      */
-    public function getLoginProfile($name, $optParams = [])
+    class Users extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the profile information used for logging in to a virtual machine on
+         * Google Compute Engine. (users.getLoginProfile)
+         *
+         * @param string $name Required. The unique ID for the user in format
+         * `users/{user}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string projectId Required. The project ID of the Google Cloud
+         * Platform project.
+         * @opt_param string systemId Optional. A system ID for filtering the results of
+         * the request.
+         * @return LoginProfile
+         * @throws \Google\Service\Exception
+         */
+        public function getLoginProfile($name, $optParams = [])
+        {
+        }
+        /**
+         * Adds an SSH public key and returns the profile information. Default POSIX
+         * account information is set when no username and UID exist as part of the
+         * login profile. (users.importSshPublicKey)
+         *
+         * @param string $parent Required. The unique ID for the user in format
+         * `users/{user}`.
+         * @param SshPublicKey $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string projectId The project ID of the Google Cloud Platform
+         * project.
+         * @opt_param string regions Optional. The regions to which to assert that the
+         * key was written. If unspecified, defaults to all regions. Regions are listed
+         * at https://cloud.google.com/about/locations#region.
+         * @return ImportSshPublicKeyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function importSshPublicKey($parent, SshPublicKey $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds an SSH public key and returns the profile information. Default POSIX
-     * account information is set when no username and UID exist as part of the
-     * login profile. (users.importSshPublicKey)
-     *
-     * @param string $parent Required. The unique ID for the user in format
-     * `users/{user}`.
-     * @param SshPublicKey $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string projectId The project ID of the Google Cloud Platform
-     * project.
-     * @opt_param string regions Optional. The regions to which to assert that the
-     * key was written. If unspecified, defaults to all regions. Regions are listed
-     * at https://cloud.google.com/about/locations#region.
-     * @return ImportSshPublicKeyResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudOSLogin\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function importSshPublicKey($parent, SshPublicKey $postBody, $optParams = [])
+    class Google_Service_CloudOSLogin_Resource_Users extends \Google\Service\CloudOSLogin\Resource\Users
     {
     }
 }

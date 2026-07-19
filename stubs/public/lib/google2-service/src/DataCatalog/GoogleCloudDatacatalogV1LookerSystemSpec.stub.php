@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1LookerSystemSpec extends \Google\Model
-{
-    /**
-     * Name of the parent Looker Instance. Empty if it does not exist.
-     *
-     * @var string
-     */
-    public $parentInstanceDisplayName;
-    /**
-     * ID of the parent Looker Instance. Empty if it does not exist. Example
-     * value: `someinstance.looker.com`
-     *
-     * @var string
-     */
-    public $parentInstanceId;
-    /**
-     * Name of the parent Model. Empty if it does not exist.
-     *
-     * @var string
-     */
-    public $parentModelDisplayName;
-    /**
-     * ID of the parent Model. Empty if it does not exist.
-     *
-     * @var string
-     */
-    public $parentModelId;
-    /**
-     * Name of the parent View. Empty if it does not exist.
-     *
-     * @var string
-     */
-    public $parentViewDisplayName;
-    /**
-     * ID of the parent View. Empty if it does not exist.
-     *
-     * @var string
-     */
-    public $parentViewId;
-    /**
-     * Name of the parent Looker Instance. Empty if it does not exist.
-     *
-     * @param string $parentInstanceDisplayName
-     */
-    public function setParentInstanceDisplayName($parentInstanceDisplayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1LookerSystemSpec extends \Google\Model
     {
+        /**
+         * Name of the parent Looker Instance. Empty if it does not exist.
+         *
+         * @var string
+         */
+        public $parentInstanceDisplayName;
+        /**
+         * ID of the parent Looker Instance. Empty if it does not exist. Example
+         * value: `someinstance.looker.com`
+         *
+         * @var string
+         */
+        public $parentInstanceId;
+        /**
+         * Name of the parent Model. Empty if it does not exist.
+         *
+         * @var string
+         */
+        public $parentModelDisplayName;
+        /**
+         * ID of the parent Model. Empty if it does not exist.
+         *
+         * @var string
+         */
+        public $parentModelId;
+        /**
+         * Name of the parent View. Empty if it does not exist.
+         *
+         * @var string
+         */
+        public $parentViewDisplayName;
+        /**
+         * ID of the parent View. Empty if it does not exist.
+         *
+         * @var string
+         */
+        public $parentViewId;
+        /**
+         * Name of the parent Looker Instance. Empty if it does not exist.
+         *
+         * @param string $parentInstanceDisplayName
+         */
+        public function setParentInstanceDisplayName($parentInstanceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentInstanceDisplayName()
+        {
+        }
+        /**
+         * ID of the parent Looker Instance. Empty if it does not exist. Example
+         * value: `someinstance.looker.com`
+         *
+         * @param string $parentInstanceId
+         */
+        public function setParentInstanceId($parentInstanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentInstanceId()
+        {
+        }
+        /**
+         * Name of the parent Model. Empty if it does not exist.
+         *
+         * @param string $parentModelDisplayName
+         */
+        public function setParentModelDisplayName($parentModelDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentModelDisplayName()
+        {
+        }
+        /**
+         * ID of the parent Model. Empty if it does not exist.
+         *
+         * @param string $parentModelId
+         */
+        public function setParentModelId($parentModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentModelId()
+        {
+        }
+        /**
+         * Name of the parent View. Empty if it does not exist.
+         *
+         * @param string $parentViewDisplayName
+         */
+        public function setParentViewDisplayName($parentViewDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentViewDisplayName()
+        {
+        }
+        /**
+         * ID of the parent View. Empty if it does not exist.
+         *
+         * @param string $parentViewId
+         */
+        public function setParentViewId($parentViewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentViewId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1LookerSystemSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParentInstanceDisplayName()
-    {
-    }
-    /**
-     * ID of the parent Looker Instance. Empty if it does not exist. Example
-     * value: `someinstance.looker.com`
-     *
-     * @param string $parentInstanceId
-     */
-    public function setParentInstanceId($parentInstanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentInstanceId()
-    {
-    }
-    /**
-     * Name of the parent Model. Empty if it does not exist.
-     *
-     * @param string $parentModelDisplayName
-     */
-    public function setParentModelDisplayName($parentModelDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentModelDisplayName()
-    {
-    }
-    /**
-     * ID of the parent Model. Empty if it does not exist.
-     *
-     * @param string $parentModelId
-     */
-    public function setParentModelId($parentModelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentModelId()
-    {
-    }
-    /**
-     * Name of the parent View. Empty if it does not exist.
-     *
-     * @param string $parentViewDisplayName
-     */
-    public function setParentViewDisplayName($parentViewDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentViewDisplayName()
-    {
-    }
-    /**
-     * ID of the parent View. Empty if it does not exist.
-     *
-     * @param string $parentViewId
-     */
-    public function setParentViewId($parentViewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentViewId()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1LookerSystemSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1LookerSystemSpec
     {
     }
 }

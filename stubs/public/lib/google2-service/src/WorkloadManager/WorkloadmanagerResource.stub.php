@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class WorkloadmanagerResource extends \Google\Model
-{
-    /**
-     * The name of the resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The service account associated with the resource.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * The type of resource.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The name of the resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\WorkloadManager {
+    class WorkloadmanagerResource extends \Google\Model
     {
+        /**
+         * The name of the resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The service account associated with the resource.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * The type of resource.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The name of the resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The service account associated with the resource.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * The type of resource.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\WorkloadmanagerResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The service account associated with the resource.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * The type of resource.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_WorkloadManager_WorkloadmanagerResource extends \Google\Service\WorkloadManager\WorkloadmanagerResource
     {
     }
 }

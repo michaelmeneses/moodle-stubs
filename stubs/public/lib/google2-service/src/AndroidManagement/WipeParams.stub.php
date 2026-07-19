@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class WipeParams extends \Google\Collection
-{
-    protected $collection_key = 'wipeDataFlags';
-    /**
-     * Optional. Flags to determine what data to wipe.
-     *
-     * @var string[]
-     */
-    public $wipeDataFlags;
-    protected $wipeReasonType = UserFacingMessage::class;
-    protected $wipeReasonDataType = '';
-    /**
-     * Optional. Flags to determine what data to wipe.
-     *
-     * @param string[] $wipeDataFlags
-     */
-    public function setWipeDataFlags($wipeDataFlags)
+namespace Google\Service\AndroidManagement {
+    class WipeParams extends \Google\Collection
     {
+        protected $collection_key = 'wipeDataFlags';
+        /**
+         * Optional. Flags to determine what data to wipe.
+         *
+         * @var string[]
+         */
+        public $wipeDataFlags;
+        protected $wipeReasonType = UserFacingMessage::class;
+        protected $wipeReasonDataType = '';
+        /**
+         * Optional. Flags to determine what data to wipe.
+         *
+         * @param string[] $wipeDataFlags
+         */
+        public function setWipeDataFlags($wipeDataFlags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWipeDataFlags()
+        {
+        }
+        /**
+         * Optional. A short message displayed to the user before wiping the work
+         * profile on personal devices. This has no effect on company owned devices.
+         * The maximum message length is 200 characters.
+         *
+         * @param UserFacingMessage $wipeReason
+         */
+        public function setWipeReason(UserFacingMessage $wipeReason)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getWipeReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\WipeParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWipeDataFlags()
-    {
-    }
-    /**
-     * Optional. A short message displayed to the user before wiping the work
-     * profile on personal devices. This has no effect on company owned devices.
-     * The maximum message length is 200 characters.
-     *
-     * @param UserFacingMessage $wipeReason
-     */
-    public function setWipeReason(UserFacingMessage $wipeReason)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getWipeReason()
+    class Google_Service_AndroidManagement_WipeParams extends \Google\Service\AndroidManagement\WipeParams
     {
     }
 }

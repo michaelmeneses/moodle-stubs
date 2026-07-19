@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class GamesNumberAffixConfiguration extends \Google\Model
-{
-    protected $fewType = LocalizedStringBundle::class;
-    protected $fewDataType = '';
-    protected $manyType = LocalizedStringBundle::class;
-    protected $manyDataType = '';
-    protected $oneType = LocalizedStringBundle::class;
-    protected $oneDataType = '';
-    protected $otherType = LocalizedStringBundle::class;
-    protected $otherDataType = '';
-    protected $twoType = LocalizedStringBundle::class;
-    protected $twoDataType = '';
-    protected $zeroType = LocalizedStringBundle::class;
-    protected $zeroDataType = '';
-    /**
-     * When the language requires special treatment of "small" numbers (as with 2,
-     * 3, and 4 in Czech; or numbers ending 2, 3, or 4 but not 12, 13, or 14 in
-     * Polish).
-     *
-     * @param LocalizedStringBundle $few
-     */
-    public function setFew(LocalizedStringBundle $few)
+namespace Google\Service\GamesConfiguration {
+    class GamesNumberAffixConfiguration extends \Google\Model
     {
+        protected $fewType = LocalizedStringBundle::class;
+        protected $fewDataType = '';
+        protected $manyType = LocalizedStringBundle::class;
+        protected $manyDataType = '';
+        protected $oneType = LocalizedStringBundle::class;
+        protected $oneDataType = '';
+        protected $otherType = LocalizedStringBundle::class;
+        protected $otherDataType = '';
+        protected $twoType = LocalizedStringBundle::class;
+        protected $twoDataType = '';
+        protected $zeroType = LocalizedStringBundle::class;
+        protected $zeroDataType = '';
+        /**
+         * When the language requires special treatment of "small" numbers (as with 2,
+         * 3, and 4 in Czech; or numbers ending 2, 3, or 4 but not 12, 13, or 14 in
+         * Polish).
+         *
+         * @param LocalizedStringBundle $few
+         */
+        public function setFew(LocalizedStringBundle $few)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getFew()
+        {
+        }
+        /**
+         * When the language requires special treatment of "large" numbers (as with
+         * numbers ending 11-99 in Maltese).
+         *
+         * @param LocalizedStringBundle $many
+         */
+        public function setMany(LocalizedStringBundle $many)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getMany()
+        {
+        }
+        /**
+         * When the language requires special treatment of numbers like one (as with
+         * the number 1 in English and most other languages; in Russian, any number
+         * ending in 1 but not ending in 11 is in this class).
+         *
+         * @param LocalizedStringBundle $one
+         */
+        public function setOne(LocalizedStringBundle $one)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getOne()
+        {
+        }
+        /**
+         * When the language does not require special treatment of the given quantity
+         * (as with all numbers in Chinese, or 42 in English).
+         *
+         * @param LocalizedStringBundle $other
+         */
+        public function setOther(LocalizedStringBundle $other)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getOther()
+        {
+        }
+        /**
+         * When the language requires special treatment of numbers like two (as with 2
+         * in Welsh, or 102 in Slovenian).
+         *
+         * @param LocalizedStringBundle $two
+         */
+        public function setTwo(LocalizedStringBundle $two)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getTwo()
+        {
+        }
+        /**
+         * When the language requires special treatment of the number 0 (as in
+         * Arabic).
+         *
+         * @param LocalizedStringBundle $zero
+         */
+        public function setZero(LocalizedStringBundle $zero)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getZero()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedStringBundle
+     * Runtime class alias of \Google\Service\GamesConfiguration\GamesNumberAffixConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFew()
-    {
-    }
-    /**
-     * When the language requires special treatment of "large" numbers (as with
-     * numbers ending 11-99 in Maltese).
-     *
-     * @param LocalizedStringBundle $many
-     */
-    public function setMany(LocalizedStringBundle $many)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getMany()
-    {
-    }
-    /**
-     * When the language requires special treatment of numbers like one (as with
-     * the number 1 in English and most other languages; in Russian, any number
-     * ending in 1 but not ending in 11 is in this class).
-     *
-     * @param LocalizedStringBundle $one
-     */
-    public function setOne(LocalizedStringBundle $one)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getOne()
-    {
-    }
-    /**
-     * When the language does not require special treatment of the given quantity
-     * (as with all numbers in Chinese, or 42 in English).
-     *
-     * @param LocalizedStringBundle $other
-     */
-    public function setOther(LocalizedStringBundle $other)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getOther()
-    {
-    }
-    /**
-     * When the language requires special treatment of numbers like two (as with 2
-     * in Welsh, or 102 in Slovenian).
-     *
-     * @param LocalizedStringBundle $two
-     */
-    public function setTwo(LocalizedStringBundle $two)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getTwo()
-    {
-    }
-    /**
-     * When the language requires special treatment of the number 0 (as in
-     * Arabic).
-     *
-     * @param LocalizedStringBundle $zero
-     */
-    public function setZero(LocalizedStringBundle $zero)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getZero()
+    class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends \Google\Service\GamesConfiguration\GamesNumberAffixConfiguration
     {
     }
 }

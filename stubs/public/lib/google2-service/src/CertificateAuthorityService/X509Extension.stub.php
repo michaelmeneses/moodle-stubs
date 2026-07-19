@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class X509Extension extends \Google\Model
-{
-    /**
-     * Optional. Indicates whether or not this extension is critical (i.e., if the
-     * client does not know how to handle this extension, the client should
-     * consider this to be an error).
-     *
-     * @var bool
-     */
-    public $critical;
-    protected $objectIdType = ObjectId::class;
-    protected $objectIdDataType = '';
-    /**
-     * Required. The value of this X.509 extension.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. Indicates whether or not this extension is critical (i.e., if the
-     * client does not know how to handle this extension, the client should
-     * consider this to be an error).
-     *
-     * @param bool $critical
-     */
-    public function setCritical($critical)
+namespace Google\Service\CertificateAuthorityService {
+    class X509Extension extends \Google\Model
     {
+        /**
+         * Optional. Indicates whether or not this extension is critical (i.e., if the
+         * client does not know how to handle this extension, the client should
+         * consider this to be an error).
+         *
+         * @var bool
+         */
+        public $critical;
+        protected $objectIdType = ObjectId::class;
+        protected $objectIdDataType = '';
+        /**
+         * Required. The value of this X.509 extension.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. Indicates whether or not this extension is critical (i.e., if the
+         * client does not know how to handle this extension, the client should
+         * consider this to be an error).
+         *
+         * @param bool $critical
+         */
+        public function setCritical($critical)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCritical()
+        {
+        }
+        /**
+         * Required. The OID for this X.509 extension.
+         *
+         * @param ObjectId $objectId
+         */
+        public function setObjectId(ObjectId $objectId)
+        {
+        }
+        /**
+         * @return ObjectId
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * Required. The value of this X.509 extension.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\X509Extension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCritical()
-    {
-    }
-    /**
-     * Required. The OID for this X.509 extension.
-     *
-     * @param ObjectId $objectId
-     */
-    public function setObjectId(ObjectId $objectId)
-    {
-    }
-    /**
-     * @return ObjectId
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * Required. The value of this X.509 extension.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CertificateAuthorityService_X509Extension extends \Google\Service\CertificateAuthorityService\X509Extension
     {
     }
 }

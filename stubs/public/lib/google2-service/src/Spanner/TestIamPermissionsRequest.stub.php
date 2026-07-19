@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class TestIamPermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * REQUIRED: The set of permissions to check for 'resource'. Permissions with
-     * wildcards (such as '*', 'spanner.*', 'spanner.instances.*') are not
-     * allowed.
-     *
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * REQUIRED: The set of permissions to check for 'resource'. Permissions with
-     * wildcards (such as '*', 'spanner.*', 'spanner.instances.*') are not
-     * allowed.
-     *
-     * @param string[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\Spanner {
+    class TestIamPermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * REQUIRED: The set of permissions to check for 'resource'. Permissions with
+         * wildcards (such as '*', 'spanner.*', 'spanner.instances.*') are not
+         * allowed.
+         *
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * REQUIRED: The set of permissions to check for 'resource'. Permissions with
+         * wildcards (such as '*', 'spanner.*', 'spanner.instances.*') are not
+         * allowed.
+         *
+         * @param string[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Spanner\TestIamPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_Spanner_TestIamPermissionsRequest extends \Google\Service\Spanner\TestIamPermissionsRequest
     {
     }
 }

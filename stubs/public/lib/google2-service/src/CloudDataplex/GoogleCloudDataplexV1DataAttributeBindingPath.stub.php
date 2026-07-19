@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataAttributeBindingPath extends \Google\Collection
-{
-    protected $collection_key = 'attributes';
-    /**
-     * Optional. List of attributes to be associated with the path of the
-     * resource, provided in the form: projects/{project}/locations/{location}/dat
-     * aTaxonomies/{dataTaxonomy}/attributes/{data_attribute_id}
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Required. The name identifier of the path. Nested columns should be of the
-     * form: 'address.city'.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. List of attributes to be associated with the path of the
-     * resource, provided in the form: projects/{project}/locations/{location}/dat
-     * aTaxonomies/{dataTaxonomy}/attributes/{data_attribute_id}
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataAttributeBindingPath extends \Google\Collection
     {
+        protected $collection_key = 'attributes';
+        /**
+         * Optional. List of attributes to be associated with the path of the
+         * resource, provided in the form: projects/{project}/locations/{location}/dat
+         * aTaxonomies/{dataTaxonomy}/attributes/{data_attribute_id}
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Required. The name identifier of the path. Nested columns should be of the
+         * form: 'address.city'.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. List of attributes to be associated with the path of the
+         * resource, provided in the form: projects/{project}/locations/{location}/dat
+         * aTaxonomies/{dataTaxonomy}/attributes/{data_attribute_id}
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Required. The name identifier of the path. Nested columns should be of the
+         * form: 'address.city'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAttributeBindingPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Required. The name identifier of the path. Nested columns should be of the
-     * form: 'address.city'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataAttributeBindingPath extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAttributeBindingPath
     {
     }
 }

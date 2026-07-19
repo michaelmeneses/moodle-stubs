@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageDeleted extends \Google\Collection
-{
-    protected $collection_key = 'wonderCardMappings';
-    protected $imapSyncMappingsType = ImapSyncDelete::class;
-    protected $imapSyncMappingsDataType = 'array';
-    protected $messageKeysType = MultiKey::class;
-    protected $messageKeysDataType = 'array';
-    protected $wonderCardMappingsType = WonderCardDelete::class;
-    protected $wonderCardMappingsDataType = 'array';
-    /**
-     * @param ImapSyncDelete[]
-     */
-    public function setImapSyncMappings($imapSyncMappings)
+namespace Google\Service\CloudSearch {
+    class MessageDeleted extends \Google\Collection
     {
+        protected $collection_key = 'wonderCardMappings';
+        protected $imapSyncMappingsType = ImapSyncDelete::class;
+        protected $imapSyncMappingsDataType = 'array';
+        protected $messageKeysType = MultiKey::class;
+        protected $messageKeysDataType = 'array';
+        protected $wonderCardMappingsType = WonderCardDelete::class;
+        protected $wonderCardMappingsDataType = 'array';
+        /**
+         * @param ImapSyncDelete[]
+         */
+        public function setImapSyncMappings($imapSyncMappings)
+        {
+        }
+        /**
+         * @return ImapSyncDelete[]
+         */
+        public function getImapSyncMappings()
+        {
+        }
+        /**
+         * @param MultiKey[]
+         */
+        public function setMessageKeys($messageKeys)
+        {
+        }
+        /**
+         * @return MultiKey[]
+         */
+        public function getMessageKeys()
+        {
+        }
+        /**
+         * @param WonderCardDelete[]
+         */
+        public function setWonderCardMappings($wonderCardMappings)
+        {
+        }
+        /**
+         * @return WonderCardDelete[]
+         */
+        public function getWonderCardMappings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImapSyncDelete[]
+     * Runtime class alias of \Google\Service\CloudSearch\MessageDeleted registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImapSyncMappings()
-    {
-    }
-    /**
-     * @param MultiKey[]
-     */
-    public function setMessageKeys($messageKeys)
-    {
-    }
-    /**
-     * @return MultiKey[]
-     */
-    public function getMessageKeys()
-    {
-    }
-    /**
-     * @param WonderCardDelete[]
-     */
-    public function setWonderCardMappings($wonderCardMappings)
-    {
-    }
-    /**
-     * @return WonderCardDelete[]
-     */
-    public function getWonderCardMappings()
+    class Google_Service_CloudSearch_MessageDeleted extends \Google\Service\CloudSearch\MessageDeleted
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CommunalLabelTag extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $creatorUserId;
-    /**
-     * @var string
-     */
-    public $labelId;
-    /**
-     * @param string
-     */
-    public function setCreatorUserId($creatorUserId)
+namespace Google\Service\CloudSearch {
+    class CommunalLabelTag extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $creatorUserId;
+        /**
+         * @var string
+         */
+        public $labelId;
+        /**
+         * @param string
+         */
+        public function setCreatorUserId($creatorUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CommunalLabelTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatorUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabelId($labelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelId()
+    class Google_Service_CloudSearch_CommunalLabelTag extends \Google\Service\CloudSearch\CommunalLabelTag
     {
     }
 }

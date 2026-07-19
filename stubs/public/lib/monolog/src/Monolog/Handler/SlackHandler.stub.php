@@ -16,6 +16,11 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Level;
+use Monolog\Utils;
+use Monolog\Handler\Slack\SlackRecord;
+use Monolog\LogRecord;
 /**
  * Sends notifications through Slack API
  *

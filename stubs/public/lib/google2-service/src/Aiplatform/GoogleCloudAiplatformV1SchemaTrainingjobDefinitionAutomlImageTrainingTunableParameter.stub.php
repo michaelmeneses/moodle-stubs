@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutomlImageTrainingTunableParameter extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const TRAINER_TYPE_TRAINER_TYPE_UNSPECIFIED = 'TRAINER_TYPE_UNSPECIFIED';
-    public const TRAINER_TYPE_AUTOML_TRAINER = 'AUTOML_TRAINER';
-    public const TRAINER_TYPE_MODEL_GARDEN_TRAINER = 'MODEL_GARDEN_TRAINER';
-    /**
-     * Optional. An unique name of pretrained model checkpoint provided in model
-     * garden, it will be mapped to a GCS location internally.
-     *
-     * @var string
-     */
-    public $checkpointName;
-    /**
-     * Customizable dataset settings, used in the `model_garden_trainer`.
-     *
-     * @var string[]
-     */
-    public $datasetConfig;
-    protected $studySpecType = GoogleCloudAiplatformV1StudySpec::class;
-    protected $studySpecDataType = '';
-    /**
-     * Customizable trainer settings, used in the `model_garden_trainer`.
-     *
-     * @var string[]
-     */
-    public $trainerConfig;
-    /**
-     * @var string
-     */
-    public $trainerType;
-    /**
-     * Optional. An unique name of pretrained model checkpoint provided in model
-     * garden, it will be mapped to a GCS location internally.
-     *
-     * @param string $checkpointName
-     */
-    public function setCheckpointName($checkpointName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutomlImageTrainingTunableParameter extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const TRAINER_TYPE_TRAINER_TYPE_UNSPECIFIED = 'TRAINER_TYPE_UNSPECIFIED';
+        public const TRAINER_TYPE_AUTOML_TRAINER = 'AUTOML_TRAINER';
+        public const TRAINER_TYPE_MODEL_GARDEN_TRAINER = 'MODEL_GARDEN_TRAINER';
+        /**
+         * Optional. An unique name of pretrained model checkpoint provided in model
+         * garden, it will be mapped to a GCS location internally.
+         *
+         * @var string
+         */
+        public $checkpointName;
+        /**
+         * Customizable dataset settings, used in the `model_garden_trainer`.
+         *
+         * @var string[]
+         */
+        public $datasetConfig;
+        protected $studySpecType = GoogleCloudAiplatformV1StudySpec::class;
+        protected $studySpecDataType = '';
+        /**
+         * Customizable trainer settings, used in the `model_garden_trainer`.
+         *
+         * @var string[]
+         */
+        public $trainerConfig;
+        /**
+         * @var string
+         */
+        public $trainerType;
+        /**
+         * Optional. An unique name of pretrained model checkpoint provided in model
+         * garden, it will be mapped to a GCS location internally.
+         *
+         * @param string $checkpointName
+         */
+        public function setCheckpointName($checkpointName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckpointName()
+        {
+        }
+        /**
+         * Customizable dataset settings, used in the `model_garden_trainer`.
+         *
+         * @param string[] $datasetConfig
+         */
+        public function setDatasetConfig($datasetConfig)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDatasetConfig()
+        {
+        }
+        /**
+         * Optioinal. StudySpec of hyperparameter tuning job. Required for
+         * `model_garden_trainer`.
+         *
+         * @param GoogleCloudAiplatformV1StudySpec $studySpec
+         */
+        public function setStudySpec(GoogleCloudAiplatformV1StudySpec $studySpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StudySpec
+         */
+        public function getStudySpec()
+        {
+        }
+        /**
+         * Customizable trainer settings, used in the `model_garden_trainer`.
+         *
+         * @param string[] $trainerConfig
+         */
+        public function setTrainerConfig($trainerConfig)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTrainerConfig()
+        {
+        }
+        /**
+         * @param self::TRAINER_TYPE_* $trainerType
+         */
+        public function setTrainerType($trainerType)
+        {
+        }
+        /**
+         * @return self::TRAINER_TYPE_*
+         */
+        public function getTrainerType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutomlImageTrainingTunableParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckpointName()
-    {
-    }
-    /**
-     * Customizable dataset settings, used in the `model_garden_trainer`.
-     *
-     * @param string[] $datasetConfig
-     */
-    public function setDatasetConfig($datasetConfig)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDatasetConfig()
-    {
-    }
-    /**
-     * Optioinal. StudySpec of hyperparameter tuning job. Required for
-     * `model_garden_trainer`.
-     *
-     * @param GoogleCloudAiplatformV1StudySpec $studySpec
-     */
-    public function setStudySpec(GoogleCloudAiplatformV1StudySpec $studySpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1StudySpec
-     */
-    public function getStudySpec()
-    {
-    }
-    /**
-     * Customizable trainer settings, used in the `model_garden_trainer`.
-     *
-     * @param string[] $trainerConfig
-     */
-    public function setTrainerConfig($trainerConfig)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTrainerConfig()
-    {
-    }
-    /**
-     * @param self::TRAINER_TYPE_* $trainerType
-     */
-    public function setTrainerType($trainerType)
-    {
-    }
-    /**
-     * @return self::TRAINER_TYPE_*
-     */
-    public function getTrainerType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutomlImageTrainingTunableParameter extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutomlImageTrainingTunableParameter
     {
     }
 }

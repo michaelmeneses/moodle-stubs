@@ -21,306 +21,315 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeAccessInfo extends \Google\Model
-{
-    /**
-     * Combines the access and viewability of this volume into a single status
-     * field for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN,
-     * SAMPLE or NONE. (In LITE projection.)
-     *
-     * @var string
-     */
-    public $accessViewStatus;
-    /**
-     * The two-letter ISO_3166-1 country code for which this access information is
-     * valid. (In LITE projection.)
-     *
-     * @var string
-     */
-    public $country;
-    protected $downloadAccessType = DownloadAccessRestriction::class;
-    protected $downloadAccessDataType = '';
-    /**
-     * URL to the Google Drive viewer if this volume is uploaded by the user by
-     * selecting the file from Google Drive.
-     *
-     * @var string
-     */
-    public $driveImportedContentLink;
-    /**
-     * Whether this volume can be embedded in a viewport using the Embedded Viewer
-     * API.
-     *
-     * @var bool
-     */
-    public $embeddable;
-    protected $epubType = VolumeAccessInfoEpub::class;
-    protected $epubDataType = '';
-    /**
-     * Whether this volume requires that the client explicitly request offline
-     * download license rather than have it done automatically when loading the
-     * content, if the client supports it.
-     *
-     * @var bool
-     */
-    public $explicitOfflineLicenseManagement;
-    protected $pdfType = VolumeAccessInfoPdf::class;
-    protected $pdfDataType = '';
-    /**
-     * Whether or not this book is public domain in the country listed above.
-     *
-     * @var bool
-     */
-    public $publicDomain;
-    /**
-     * Whether quote sharing is allowed for this volume.
-     *
-     * @var bool
-     */
-    public $quoteSharingAllowed;
-    /**
-     * Whether text-to-speech is permitted for this volume. Values can be ALLOWED,
-     * ALLOWED_FOR_ACCESSIBILITY, or NOT_ALLOWED.
-     *
-     * @var string
-     */
-    public $textToSpeechPermission;
-    /**
-     * For ordered but not yet processed orders, we give a URL that can be used to
-     * go to the appropriate Google Wallet page.
-     *
-     * @var string
-     */
-    public $viewOrderUrl;
-    /**
-     * The read access of a volume. Possible values are PARTIAL, ALL_PAGES,
-     * NO_PAGES or UNKNOWN. This value depends on the country listed above. A
-     * value of PARTIAL means that the publisher has allowed some portion of the
-     * volume to be viewed publicly, without purchase. This can apply to eBooks as
-     * well as non-eBooks. Public domain books will always have a value of
-     * ALL_PAGES.
-     *
-     * @var string
-     */
-    public $viewability;
-    /**
-     * URL to read this volume on the Google Books site. Link will not allow users
-     * to read non-viewable volumes.
-     *
-     * @var string
-     */
-    public $webReaderLink;
-    /**
-     * Combines the access and viewability of this volume into a single status
-     * field for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN,
-     * SAMPLE or NONE. (In LITE projection.)
-     *
-     * @param string $accessViewStatus
-     */
-    public function setAccessViewStatus($accessViewStatus)
+namespace Google\Service\Books {
+    class VolumeAccessInfo extends \Google\Model
     {
+        /**
+         * Combines the access and viewability of this volume into a single status
+         * field for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN,
+         * SAMPLE or NONE. (In LITE projection.)
+         *
+         * @var string
+         */
+        public $accessViewStatus;
+        /**
+         * The two-letter ISO_3166-1 country code for which this access information is
+         * valid. (In LITE projection.)
+         *
+         * @var string
+         */
+        public $country;
+        protected $downloadAccessType = DownloadAccessRestriction::class;
+        protected $downloadAccessDataType = '';
+        /**
+         * URL to the Google Drive viewer if this volume is uploaded by the user by
+         * selecting the file from Google Drive.
+         *
+         * @var string
+         */
+        public $driveImportedContentLink;
+        /**
+         * Whether this volume can be embedded in a viewport using the Embedded Viewer
+         * API.
+         *
+         * @var bool
+         */
+        public $embeddable;
+        protected $epubType = VolumeAccessInfoEpub::class;
+        protected $epubDataType = '';
+        /**
+         * Whether this volume requires that the client explicitly request offline
+         * download license rather than have it done automatically when loading the
+         * content, if the client supports it.
+         *
+         * @var bool
+         */
+        public $explicitOfflineLicenseManagement;
+        protected $pdfType = VolumeAccessInfoPdf::class;
+        protected $pdfDataType = '';
+        /**
+         * Whether or not this book is public domain in the country listed above.
+         *
+         * @var bool
+         */
+        public $publicDomain;
+        /**
+         * Whether quote sharing is allowed for this volume.
+         *
+         * @var bool
+         */
+        public $quoteSharingAllowed;
+        /**
+         * Whether text-to-speech is permitted for this volume. Values can be ALLOWED,
+         * ALLOWED_FOR_ACCESSIBILITY, or NOT_ALLOWED.
+         *
+         * @var string
+         */
+        public $textToSpeechPermission;
+        /**
+         * For ordered but not yet processed orders, we give a URL that can be used to
+         * go to the appropriate Google Wallet page.
+         *
+         * @var string
+         */
+        public $viewOrderUrl;
+        /**
+         * The read access of a volume. Possible values are PARTIAL, ALL_PAGES,
+         * NO_PAGES or UNKNOWN. This value depends on the country listed above. A
+         * value of PARTIAL means that the publisher has allowed some portion of the
+         * volume to be viewed publicly, without purchase. This can apply to eBooks as
+         * well as non-eBooks. Public domain books will always have a value of
+         * ALL_PAGES.
+         *
+         * @var string
+         */
+        public $viewability;
+        /**
+         * URL to read this volume on the Google Books site. Link will not allow users
+         * to read non-viewable volumes.
+         *
+         * @var string
+         */
+        public $webReaderLink;
+        /**
+         * Combines the access and viewability of this volume into a single status
+         * field for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN,
+         * SAMPLE or NONE. (In LITE projection.)
+         *
+         * @param string $accessViewStatus
+         */
+        public function setAccessViewStatus($accessViewStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessViewStatus()
+        {
+        }
+        /**
+         * The two-letter ISO_3166-1 country code for which this access information is
+         * valid. (In LITE projection.)
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * Information about a volume's download license access restrictions.
+         *
+         * @param DownloadAccessRestriction $downloadAccess
+         */
+        public function setDownloadAccess(DownloadAccessRestriction $downloadAccess)
+        {
+        }
+        /**
+         * @return DownloadAccessRestriction
+         */
+        public function getDownloadAccess()
+        {
+        }
+        /**
+         * URL to the Google Drive viewer if this volume is uploaded by the user by
+         * selecting the file from Google Drive.
+         *
+         * @param string $driveImportedContentLink
+         */
+        public function setDriveImportedContentLink($driveImportedContentLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveImportedContentLink()
+        {
+        }
+        /**
+         * Whether this volume can be embedded in a viewport using the Embedded Viewer
+         * API.
+         *
+         * @param bool $embeddable
+         */
+        public function setEmbeddable($embeddable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmbeddable()
+        {
+        }
+        /**
+         * Information about epub content. (In LITE projection.)
+         *
+         * @param VolumeAccessInfoEpub $epub
+         */
+        public function setEpub(VolumeAccessInfoEpub $epub)
+        {
+        }
+        /**
+         * @return VolumeAccessInfoEpub
+         */
+        public function getEpub()
+        {
+        }
+        /**
+         * Whether this volume requires that the client explicitly request offline
+         * download license rather than have it done automatically when loading the
+         * content, if the client supports it.
+         *
+         * @param bool $explicitOfflineLicenseManagement
+         */
+        public function setExplicitOfflineLicenseManagement($explicitOfflineLicenseManagement)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExplicitOfflineLicenseManagement()
+        {
+        }
+        /**
+         * Information about pdf content. (In LITE projection.)
+         *
+         * @param VolumeAccessInfoPdf $pdf
+         */
+        public function setPdf(VolumeAccessInfoPdf $pdf)
+        {
+        }
+        /**
+         * @return VolumeAccessInfoPdf
+         */
+        public function getPdf()
+        {
+        }
+        /**
+         * Whether or not this book is public domain in the country listed above.
+         *
+         * @param bool $publicDomain
+         */
+        public function setPublicDomain($publicDomain)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPublicDomain()
+        {
+        }
+        /**
+         * Whether quote sharing is allowed for this volume.
+         *
+         * @param bool $quoteSharingAllowed
+         */
+        public function setQuoteSharingAllowed($quoteSharingAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getQuoteSharingAllowed()
+        {
+        }
+        /**
+         * Whether text-to-speech is permitted for this volume. Values can be ALLOWED,
+         * ALLOWED_FOR_ACCESSIBILITY, or NOT_ALLOWED.
+         *
+         * @param string $textToSpeechPermission
+         */
+        public function setTextToSpeechPermission($textToSpeechPermission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextToSpeechPermission()
+        {
+        }
+        /**
+         * For ordered but not yet processed orders, we give a URL that can be used to
+         * go to the appropriate Google Wallet page.
+         *
+         * @param string $viewOrderUrl
+         */
+        public function setViewOrderUrl($viewOrderUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewOrderUrl()
+        {
+        }
+        /**
+         * The read access of a volume. Possible values are PARTIAL, ALL_PAGES,
+         * NO_PAGES or UNKNOWN. This value depends on the country listed above. A
+         * value of PARTIAL means that the publisher has allowed some portion of the
+         * volume to be viewed publicly, without purchase. This can apply to eBooks as
+         * well as non-eBooks. Public domain books will always have a value of
+         * ALL_PAGES.
+         *
+         * @param string $viewability
+         */
+        public function setViewability($viewability)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewability()
+        {
+        }
+        /**
+         * URL to read this volume on the Google Books site. Link will not allow users
+         * to read non-viewable volumes.
+         *
+         * @param string $webReaderLink
+         */
+        public function setWebReaderLink($webReaderLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebReaderLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeAccessInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessViewStatus()
-    {
-    }
-    /**
-     * The two-letter ISO_3166-1 country code for which this access information is
-     * valid. (In LITE projection.)
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountry()
-    {
-    }
-    /**
-     * Information about a volume's download license access restrictions.
-     *
-     * @param DownloadAccessRestriction $downloadAccess
-     */
-    public function setDownloadAccess(DownloadAccessRestriction $downloadAccess)
-    {
-    }
-    /**
-     * @return DownloadAccessRestriction
-     */
-    public function getDownloadAccess()
-    {
-    }
-    /**
-     * URL to the Google Drive viewer if this volume is uploaded by the user by
-     * selecting the file from Google Drive.
-     *
-     * @param string $driveImportedContentLink
-     */
-    public function setDriveImportedContentLink($driveImportedContentLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriveImportedContentLink()
-    {
-    }
-    /**
-     * Whether this volume can be embedded in a viewport using the Embedded Viewer
-     * API.
-     *
-     * @param bool $embeddable
-     */
-    public function setEmbeddable($embeddable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEmbeddable()
-    {
-    }
-    /**
-     * Information about epub content. (In LITE projection.)
-     *
-     * @param VolumeAccessInfoEpub $epub
-     */
-    public function setEpub(VolumeAccessInfoEpub $epub)
-    {
-    }
-    /**
-     * @return VolumeAccessInfoEpub
-     */
-    public function getEpub()
-    {
-    }
-    /**
-     * Whether this volume requires that the client explicitly request offline
-     * download license rather than have it done automatically when loading the
-     * content, if the client supports it.
-     *
-     * @param bool $explicitOfflineLicenseManagement
-     */
-    public function setExplicitOfflineLicenseManagement($explicitOfflineLicenseManagement)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExplicitOfflineLicenseManagement()
-    {
-    }
-    /**
-     * Information about pdf content. (In LITE projection.)
-     *
-     * @param VolumeAccessInfoPdf $pdf
-     */
-    public function setPdf(VolumeAccessInfoPdf $pdf)
-    {
-    }
-    /**
-     * @return VolumeAccessInfoPdf
-     */
-    public function getPdf()
-    {
-    }
-    /**
-     * Whether or not this book is public domain in the country listed above.
-     *
-     * @param bool $publicDomain
-     */
-    public function setPublicDomain($publicDomain)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPublicDomain()
-    {
-    }
-    /**
-     * Whether quote sharing is allowed for this volume.
-     *
-     * @param bool $quoteSharingAllowed
-     */
-    public function setQuoteSharingAllowed($quoteSharingAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getQuoteSharingAllowed()
-    {
-    }
-    /**
-     * Whether text-to-speech is permitted for this volume. Values can be ALLOWED,
-     * ALLOWED_FOR_ACCESSIBILITY, or NOT_ALLOWED.
-     *
-     * @param string $textToSpeechPermission
-     */
-    public function setTextToSpeechPermission($textToSpeechPermission)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextToSpeechPermission()
-    {
-    }
-    /**
-     * For ordered but not yet processed orders, we give a URL that can be used to
-     * go to the appropriate Google Wallet page.
-     *
-     * @param string $viewOrderUrl
-     */
-    public function setViewOrderUrl($viewOrderUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewOrderUrl()
-    {
-    }
-    /**
-     * The read access of a volume. Possible values are PARTIAL, ALL_PAGES,
-     * NO_PAGES or UNKNOWN. This value depends on the country listed above. A
-     * value of PARTIAL means that the publisher has allowed some portion of the
-     * volume to be viewed publicly, without purchase. This can apply to eBooks as
-     * well as non-eBooks. Public domain books will always have a value of
-     * ALL_PAGES.
-     *
-     * @param string $viewability
-     */
-    public function setViewability($viewability)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewability()
-    {
-    }
-    /**
-     * URL to read this volume on the Google Books site. Link will not allow users
-     * to read non-viewable volumes.
-     *
-     * @param string $webReaderLink
-     */
-    public function setWebReaderLink($webReaderLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebReaderLink()
+    class Google_Service_Books_VolumeAccessInfo extends \Google\Service\Books\VolumeAccessInfo
     {
     }
 }

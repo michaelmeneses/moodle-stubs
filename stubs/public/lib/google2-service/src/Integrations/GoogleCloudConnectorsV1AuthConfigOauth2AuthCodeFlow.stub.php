@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlow extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Optional. Authorization code to be exchanged for access and refresh tokens.
-     *
-     * @var string
-     */
-    public $authCode;
-    /**
-     * Optional. Auth URL for Authorization Code Flow
-     *
-     * @var string
-     */
-    public $authUri;
-    /**
-     * Optional. Client ID for user-provided OAuth app.
-     *
-     * @var string
-     */
-    public $clientId;
-    protected $clientSecretType = GoogleCloudConnectorsV1Secret::class;
-    protected $clientSecretDataType = '';
-    /**
-     * Optional. Whether to enable PKCE when the user performs the auth code flow.
-     *
-     * @var bool
-     */
-    public $enablePkce;
-    /**
-     * Optional. PKCE verifier to be used during the auth code exchange.
-     *
-     * @var string
-     */
-    public $pkceVerifier;
-    /**
-     * Optional. Redirect URI to be provided during the auth code exchange.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * Optional. Scopes the connection will request when the user performs the
-     * auth code flow.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Optional. Authorization code to be exchanged for access and refresh tokens.
-     *
-     * @param string $authCode
-     */
-    public function setAuthCode($authCode)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlow extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Optional. Authorization code to be exchanged for access and refresh tokens.
+         *
+         * @var string
+         */
+        public $authCode;
+        /**
+         * Optional. Auth URL for Authorization Code Flow
+         *
+         * @var string
+         */
+        public $authUri;
+        /**
+         * Optional. Client ID for user-provided OAuth app.
+         *
+         * @var string
+         */
+        public $clientId;
+        protected $clientSecretType = GoogleCloudConnectorsV1Secret::class;
+        protected $clientSecretDataType = '';
+        /**
+         * Optional. Whether to enable PKCE when the user performs the auth code flow.
+         *
+         * @var bool
+         */
+        public $enablePkce;
+        /**
+         * Optional. PKCE verifier to be used during the auth code exchange.
+         *
+         * @var string
+         */
+        public $pkceVerifier;
+        /**
+         * Optional. Redirect URI to be provided during the auth code exchange.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * Optional. Scopes the connection will request when the user performs the
+         * auth code flow.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Optional. Authorization code to be exchanged for access and refresh tokens.
+         *
+         * @param string $authCode
+         */
+        public function setAuthCode($authCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthCode()
+        {
+        }
+        /**
+         * Optional. Auth URL for Authorization Code Flow
+         *
+         * @param string $authUri
+         */
+        public function setAuthUri($authUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthUri()
+        {
+        }
+        /**
+         * Optional. Client ID for user-provided OAuth app.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Optional. Client secret for user-provided OAuth app.
+         *
+         * @param GoogleCloudConnectorsV1Secret $clientSecret
+         */
+        public function setClientSecret(GoogleCloudConnectorsV1Secret $clientSecret)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Optional. Whether to enable PKCE when the user performs the auth code flow.
+         *
+         * @param bool $enablePkce
+         */
+        public function setEnablePkce($enablePkce)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePkce()
+        {
+        }
+        /**
+         * Optional. PKCE verifier to be used during the auth code exchange.
+         *
+         * @param string $pkceVerifier
+         */
+        public function setPkceVerifier($pkceVerifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPkceVerifier()
+        {
+        }
+        /**
+         * Optional. Redirect URI to be provided during the auth code exchange.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
+        /**
+         * Optional. Scopes the connection will request when the user performs the
+         * auth code flow.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthCode()
-    {
-    }
-    /**
-     * Optional. Auth URL for Authorization Code Flow
-     *
-     * @param string $authUri
-     */
-    public function setAuthUri($authUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthUri()
-    {
-    }
-    /**
-     * Optional. Client ID for user-provided OAuth app.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * Optional. Client secret for user-provided OAuth app.
-     *
-     * @param GoogleCloudConnectorsV1Secret $clientSecret
-     */
-    public function setClientSecret(GoogleCloudConnectorsV1Secret $clientSecret)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1Secret
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Optional. Whether to enable PKCE when the user performs the auth code flow.
-     *
-     * @param bool $enablePkce
-     */
-    public function setEnablePkce($enablePkce)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePkce()
-    {
-    }
-    /**
-     * Optional. PKCE verifier to be used during the auth code exchange.
-     *
-     * @param string $pkceVerifier
-     */
-    public function setPkceVerifier($pkceVerifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPkceVerifier()
-    {
-    }
-    /**
-     * Optional. Redirect URI to be provided during the auth code exchange.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
-    {
-    }
-    /**
-     * Optional. Scopes the connection will request when the user performs the
-     * auth code flow.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlow extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2AuthCodeFlow
     {
     }
 }

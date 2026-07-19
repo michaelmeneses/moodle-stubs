@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class Buyer extends \Google\Model
-{
-    /**
-     * Authorized Buyers account ID of the buyer.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Authorized Buyers account ID of the buyer.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyerII {
+    class Buyer extends \Google\Model
     {
+        /**
+         * Authorized Buyers account ID of the buyer.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Authorized Buyers account ID of the buyer.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Buyer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
+    class Google_Service_AdExchangeBuyerII_Buyer extends \Google\Service\AdExchangeBuyerII\Buyer
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1ColumnSchema extends \Google\Collection
-{
-    protected $collection_key = 'subcolumns';
-    public $column;
-    public $description;
-    public $mode;
-    protected $subcolumnsType = GoogleCloudDatacatalogV1beta1ColumnSchema::class;
-    protected $subcolumnsDataType = 'array';
-    public $type;
-    public function setColumn($column)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1ColumnSchema extends \Google\Collection
     {
+        protected $collection_key = 'subcolumns';
+        public $column;
+        public $description;
+        public $mode;
+        protected $subcolumnsType = GoogleCloudDatacatalogV1beta1ColumnSchema::class;
+        protected $subcolumnsDataType = 'array';
+        public $type;
+        public function setColumn($column)
+        {
+        }
+        public function getColumn()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setMode($mode)
+        {
+        }
+        public function getMode()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1ColumnSchema[]
+         */
+        public function setSubcolumns($subcolumns)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1ColumnSchema[]
+         */
+        public function getSubcolumns()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getColumn()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setMode($mode)
-    {
-    }
-    public function getMode()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1ColumnSchema[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ColumnSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setSubcolumns($subcolumns)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1ColumnSchema[]
-     */
-    public function getSubcolumns()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1ColumnSchema extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ColumnSchema
     {
     }
 }

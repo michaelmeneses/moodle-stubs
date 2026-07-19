@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class MemoryInfo extends \Google\Model
-{
-    /**
-     * Maximum memory that can be allocated to the process in KiB
-     *
-     * @var string
-     */
-    public $memoryCapInKibibyte;
-    /**
-     * Total memory available on the device in KiB
-     *
-     * @var string
-     */
-    public $memoryTotalInKibibyte;
-    /**
-     * Maximum memory that can be allocated to the process in KiB
-     *
-     * @param string $memoryCapInKibibyte
-     */
-    public function setMemoryCapInKibibyte($memoryCapInKibibyte)
+namespace Google\Service\ToolResults {
+    class MemoryInfo extends \Google\Model
     {
+        /**
+         * Maximum memory that can be allocated to the process in KiB
+         *
+         * @var string
+         */
+        public $memoryCapInKibibyte;
+        /**
+         * Total memory available on the device in KiB
+         *
+         * @var string
+         */
+        public $memoryTotalInKibibyte;
+        /**
+         * Maximum memory that can be allocated to the process in KiB
+         *
+         * @param string $memoryCapInKibibyte
+         */
+        public function setMemoryCapInKibibyte($memoryCapInKibibyte)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryCapInKibibyte()
+        {
+        }
+        /**
+         * Total memory available on the device in KiB
+         *
+         * @param string $memoryTotalInKibibyte
+         */
+        public function setMemoryTotalInKibibyte($memoryTotalInKibibyte)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryTotalInKibibyte()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\MemoryInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryCapInKibibyte()
-    {
-    }
-    /**
-     * Total memory available on the device in KiB
-     *
-     * @param string $memoryTotalInKibibyte
-     */
-    public function setMemoryTotalInKibibyte($memoryTotalInKibibyte)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryTotalInKibibyte()
+    class Google_Service_ToolResults_MemoryInfo extends \Google\Service\ToolResults\MemoryInfo
     {
     }
 }

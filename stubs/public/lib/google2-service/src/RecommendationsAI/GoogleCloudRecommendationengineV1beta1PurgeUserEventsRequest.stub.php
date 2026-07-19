@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest extends \Google\Model
-{
-    /**
-     * Required. The filter string to specify the events to be deleted. Empty
-     * string filter is not allowed. The eligible fields for filtering are: *
-     * `eventType`: UserEvent.eventType field of type string. * `eventTime`: in
-     * ISO 8601 "zulu" format. * `visitorId`: field of type string. Specifying
-     * this will delete all events associated with a visitor. * `userId`: field of
-     * type string. Specifying this will delete all events associated with a user.
-     * Examples: * Deleting all events in a time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
-     * Deleting specific eventType in time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventType = "detail-page-view"` * Deleting all
-     * events for a specific visitor: `visitorId = "visitor1024"` The filtering
-     * fields are assumed to have an implicit AND.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. The default value is false. Override this flag to true to
-     * actually perform the purge. If the field is not set to true, a sampling of
-     * events to be deleted will be returned.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Required. The filter string to specify the events to be deleted. Empty
-     * string filter is not allowed. The eligible fields for filtering are: *
-     * `eventType`: UserEvent.eventType field of type string. * `eventTime`: in
-     * ISO 8601 "zulu" format. * `visitorId`: field of type string. Specifying
-     * this will delete all events associated with a visitor. * `userId`: field of
-     * type string. Specifying this will delete all events associated with a user.
-     * Examples: * Deleting all events in a time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
-     * Deleting specific eventType in time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventType = "detail-page-view"` * Deleting all
-     * events for a specific visitor: `visitorId = "visitor1024"` The filtering
-     * fields are assumed to have an implicit AND.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest extends \Google\Model
     {
+        /**
+         * Required. The filter string to specify the events to be deleted. Empty
+         * string filter is not allowed. The eligible fields for filtering are: *
+         * `eventType`: UserEvent.eventType field of type string. * `eventTime`: in
+         * ISO 8601 "zulu" format. * `visitorId`: field of type string. Specifying
+         * this will delete all events associated with a visitor. * `userId`: field of
+         * type string. Specifying this will delete all events associated with a user.
+         * Examples: * Deleting all events in a time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
+         * Deleting specific eventType in time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventType = "detail-page-view"` * Deleting all
+         * events for a specific visitor: `visitorId = "visitor1024"` The filtering
+         * fields are assumed to have an implicit AND.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. The default value is false. Override this flag to true to
+         * actually perform the purge. If the field is not set to true, a sampling of
+         * events to be deleted will be returned.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Required. The filter string to specify the events to be deleted. Empty
+         * string filter is not allowed. The eligible fields for filtering are: *
+         * `eventType`: UserEvent.eventType field of type string. * `eventTime`: in
+         * ISO 8601 "zulu" format. * `visitorId`: field of type string. Specifying
+         * this will delete all events associated with a visitor. * `userId`: field of
+         * type string. Specifying this will delete all events associated with a user.
+         * Examples: * Deleting all events in a time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
+         * Deleting specific eventType in time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventType = "detail-page-view"` * Deleting all
+         * events for a specific visitor: `visitorId = "visitor1024"` The filtering
+         * fields are assumed to have an implicit AND.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. The default value is false. Override this flag to true to
+         * actually perform the purge. If the field is not set to true, a sampling of
+         * events to be deleted will be returned.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. The default value is false. Override this flag to true to
-     * actually perform the purge. If the field is not set to true, a sampling of
-     * events to be deleted will be returned.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest
     {
     }
 }

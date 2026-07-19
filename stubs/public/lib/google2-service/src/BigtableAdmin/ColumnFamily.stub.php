@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ColumnFamily extends \Google\Model
-{
-    protected $gcRuleType = GcRule::class;
-    protected $gcRuleDataType = '';
-    protected $statsType = ColumnFamilyStats::class;
-    protected $statsDataType = '';
-    protected $valueTypeType = Type::class;
-    protected $valueTypeDataType = '';
-    /**
-     * Garbage collection rule specified as a protobuf. Must serialize to at most
-     * 500 bytes. NOTE: Garbage collection executes opportunistically in the
-     * background, and so it's possible for reads to return a cell even if it
-     * matches the active GC expression for its family.
-     *
-     * @param GcRule $gcRule
-     */
-    public function setGcRule(GcRule $gcRule)
+namespace Google\Service\BigtableAdmin {
+    class ColumnFamily extends \Google\Model
     {
+        protected $gcRuleType = GcRule::class;
+        protected $gcRuleDataType = '';
+        protected $statsType = ColumnFamilyStats::class;
+        protected $statsDataType = '';
+        protected $valueTypeType = Type::class;
+        protected $valueTypeDataType = '';
+        /**
+         * Garbage collection rule specified as a protobuf. Must serialize to at most
+         * 500 bytes. NOTE: Garbage collection executes opportunistically in the
+         * background, and so it's possible for reads to return a cell even if it
+         * matches the active GC expression for its family.
+         *
+         * @param GcRule $gcRule
+         */
+        public function setGcRule(GcRule $gcRule)
+        {
+        }
+        /**
+         * @return GcRule
+         */
+        public function getGcRule()
+        {
+        }
+        /**
+         * Output only. Only available with STATS_VIEW, this includes summary
+         * statistics about column family contents. For statistics over an entire
+         * table, see TableStats above.
+         *
+         * @param ColumnFamilyStats $stats
+         */
+        public function setStats(ColumnFamilyStats $stats)
+        {
+        }
+        /**
+         * @return ColumnFamilyStats
+         */
+        public function getStats()
+        {
+        }
+        /**
+         * The type of data stored in each of this family's cell values, including its
+         * full encoding. If omitted, the family only serves raw untyped bytes. For
+         * now, only the `Aggregate` type is supported. `Aggregate` can only be set at
+         * family creation and is immutable afterwards. This field is mutually
+         * exclusive with `sql_type`. If `value_type` is `Aggregate`, written data
+         * must be compatible with: * `value_type.input_type` for `AddInput` mutations
+         *
+         * @param Type $valueType
+         */
+        public function setValueType(Type $valueType)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcRule
+     * Runtime class alias of \Google\Service\BigtableAdmin\ColumnFamily registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcRule()
-    {
-    }
-    /**
-     * Output only. Only available with STATS_VIEW, this includes summary
-     * statistics about column family contents. For statistics over an entire
-     * table, see TableStats above.
-     *
-     * @param ColumnFamilyStats $stats
-     */
-    public function setStats(ColumnFamilyStats $stats)
-    {
-    }
-    /**
-     * @return ColumnFamilyStats
-     */
-    public function getStats()
-    {
-    }
-    /**
-     * The type of data stored in each of this family's cell values, including its
-     * full encoding. If omitted, the family only serves raw untyped bytes. For
-     * now, only the `Aggregate` type is supported. `Aggregate` can only be set at
-     * family creation and is immutable afterwards. This field is mutually
-     * exclusive with `sql_type`. If `value_type` is `Aggregate`, written data
-     * must be compatible with: * `value_type.input_type` for `AddInput` mutations
-     *
-     * @param Type $valueType
-     */
-    public function setValueType(Type $valueType)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getValueType()
+    class Google_Service_BigtableAdmin_ColumnFamily extends \Google\Service\BigtableAdmin\ColumnFamily
     {
     }
 }

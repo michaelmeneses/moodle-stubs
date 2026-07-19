@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails extends \Google\Collection
-{
-    protected $collection_key = 'introductoryPricingSpecs';
-    protected $introductoryPricingSpecsType = GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec::class;
-    protected $introductoryPricingSpecsDataType = 'array';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[]
-     */
-    public function setIntroductoryPricingSpecs($introductoryPricingSpecs)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails extends \Google\Collection
     {
+        protected $collection_key = 'introductoryPricingSpecs';
+        protected $introductoryPricingSpecsType = GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec::class;
+        protected $introductoryPricingSpecsDataType = 'array';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[]
+         */
+        public function setIntroductoryPricingSpecs($introductoryPricingSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[]
+         */
+        public function getIntroductoryPricingSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntroductoryPricingSpecs()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
     {
     }
 }

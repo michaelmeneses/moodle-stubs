@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class PreviewResult extends \Google\Model
-{
-    /**
-     * Output only. Plan binary signed URL
-     *
-     * @var string
-     */
-    public $binarySignedUri;
-    /**
-     * Output only. Plan JSON signed URL
-     *
-     * @var string
-     */
-    public $jsonSignedUri;
-    /**
-     * Output only. Plan binary signed URL
-     *
-     * @param string $binarySignedUri
-     */
-    public function setBinarySignedUri($binarySignedUri)
+namespace Google\Service\Config {
+    class PreviewResult extends \Google\Model
     {
+        /**
+         * Output only. Plan binary signed URL
+         *
+         * @var string
+         */
+        public $binarySignedUri;
+        /**
+         * Output only. Plan JSON signed URL
+         *
+         * @var string
+         */
+        public $jsonSignedUri;
+        /**
+         * Output only. Plan binary signed URL
+         *
+         * @param string $binarySignedUri
+         */
+        public function setBinarySignedUri($binarySignedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinarySignedUri()
+        {
+        }
+        /**
+         * Output only. Plan JSON signed URL
+         *
+         * @param string $jsonSignedUri
+         */
+        public function setJsonSignedUri($jsonSignedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonSignedUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\PreviewResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinarySignedUri()
-    {
-    }
-    /**
-     * Output only. Plan JSON signed URL
-     *
-     * @param string $jsonSignedUri
-     */
-    public function setJsonSignedUri($jsonSignedUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonSignedUri()
+    class Google_Service_Config_PreviewResult extends \Google\Service\Config\PreviewResult
     {
     }
 }

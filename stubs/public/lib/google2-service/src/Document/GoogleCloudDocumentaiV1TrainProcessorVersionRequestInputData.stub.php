@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1TrainProcessorVersionRequestInputData extends \Google\Model
-{
-    protected $testDocumentsType = GoogleCloudDocumentaiV1BatchDocumentsInputConfig::class;
-    protected $testDocumentsDataType = '';
-    protected $trainingDocumentsType = GoogleCloudDocumentaiV1BatchDocumentsInputConfig::class;
-    protected $trainingDocumentsDataType = '';
-    /**
-     * The documents used for testing the trained version.
-     *
-     * @param GoogleCloudDocumentaiV1BatchDocumentsInputConfig $testDocuments
-     */
-    public function setTestDocuments(GoogleCloudDocumentaiV1BatchDocumentsInputConfig $testDocuments)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1TrainProcessorVersionRequestInputData extends \Google\Model
     {
+        protected $testDocumentsType = GoogleCloudDocumentaiV1BatchDocumentsInputConfig::class;
+        protected $testDocumentsDataType = '';
+        protected $trainingDocumentsType = GoogleCloudDocumentaiV1BatchDocumentsInputConfig::class;
+        protected $trainingDocumentsDataType = '';
+        /**
+         * The documents used for testing the trained version.
+         *
+         * @param GoogleCloudDocumentaiV1BatchDocumentsInputConfig $testDocuments
+         */
+        public function setTestDocuments(GoogleCloudDocumentaiV1BatchDocumentsInputConfig $testDocuments)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1BatchDocumentsInputConfig
+         */
+        public function getTestDocuments()
+        {
+        }
+        /**
+         * The documents used for training the new version.
+         *
+         * @param GoogleCloudDocumentaiV1BatchDocumentsInputConfig $trainingDocuments
+         */
+        public function setTrainingDocuments(GoogleCloudDocumentaiV1BatchDocumentsInputConfig $trainingDocuments)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1BatchDocumentsInputConfig
+         */
+        public function getTrainingDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1BatchDocumentsInputConfig
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionRequestInputData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestDocuments()
-    {
-    }
-    /**
-     * The documents used for training the new version.
-     *
-     * @param GoogleCloudDocumentaiV1BatchDocumentsInputConfig $trainingDocuments
-     */
-    public function setTrainingDocuments(GoogleCloudDocumentaiV1BatchDocumentsInputConfig $trainingDocuments)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1BatchDocumentsInputConfig
-     */
-    public function getTrainingDocuments()
+    class Google_Service_Document_GoogleCloudDocumentaiV1TrainProcessorVersionRequestInputData extends \Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionRequestInputData
     {
     }
 }

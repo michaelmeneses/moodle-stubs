@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\data_mappers\legacy;
 
+use mod_forum\local\entities\forum as forum_entity;
+use stdClass;
 /**
  * Convert a forum entity into an stdClass.
  *

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class GoogleCloudHealthcareV1DeidentifyDeidentifyFhirStoreSummary extends \Google\Model
-{
+namespace Google\Service\CloudHealthcare {
+    class GoogleCloudHealthcareV1DeidentifyDeidentifyFhirStoreSummary extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare\GoogleCloudHealthcareV1DeidentifyDeidentifyFhirStoreSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare_GoogleCloudHealthcareV1DeidentifyDeidentifyFhirStoreSummary extends \Google\Service\CloudHealthcare\GoogleCloudHealthcareV1DeidentifyDeidentifyFhirStoreSummary
+    {
+    }
 }

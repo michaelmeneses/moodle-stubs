@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class ResourceQuotasRemaining extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $dailyQuotaTokensRemaining;
-    /**
-     * @var int
-     */
-    public $hourlyQuotaTokensRemaining;
-    /**
-     * @param int
-     */
-    public function setDailyQuotaTokensRemaining($dailyQuotaTokensRemaining)
+namespace Google\Service\AnalyticsReporting {
+    class ResourceQuotasRemaining extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $dailyQuotaTokensRemaining;
+        /**
+         * @var int
+         */
+        public $hourlyQuotaTokensRemaining;
+        /**
+         * @param int
+         */
+        public function setDailyQuotaTokensRemaining($dailyQuotaTokensRemaining)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDailyQuotaTokensRemaining()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setHourlyQuotaTokensRemaining($hourlyQuotaTokensRemaining)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHourlyQuotaTokensRemaining()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AnalyticsReporting\ResourceQuotasRemaining registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailyQuotaTokensRemaining()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setHourlyQuotaTokensRemaining($hourlyQuotaTokensRemaining)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHourlyQuotaTokensRemaining()
+    class Google_Service_AnalyticsReporting_ResourceQuotasRemaining extends \Google\Service\AnalyticsReporting\ResourceQuotasRemaining
     {
     }
 }

@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "ordertrackingsignals" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $ordertrackingsignals = $contentService->ordertrackingsignals;
- *  </code>
- */
-class Ordertrackingsignals extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\OrderTrackingSignal;
     /**
-     * Creates new order tracking signal. (ordertrackingsignals.create)
-     *
-     * @param string $merchantId The ID of the merchant for which the order signal
-     * is created.
-     * @param OrderTrackingSignal $postBody
-     * @param array $optParams Optional parameters.
-     * @return OrderTrackingSignal
-     * @throws \Google\Service\Exception
+     * The "ordertrackingsignals" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $ordertrackingsignals = $contentService->ordertrackingsignals;
+     *  </code>
      */
-    public function create($merchantId, OrderTrackingSignal $postBody, $optParams = [])
+    class Ordertrackingsignals extends \Google\Service\Resource
+    {
+        /**
+         * Creates new order tracking signal. (ordertrackingsignals.create)
+         *
+         * @param string $merchantId The ID of the merchant for which the order signal
+         * is created.
+         * @param OrderTrackingSignal $postBody
+         * @param array $optParams Optional parameters.
+         * @return OrderTrackingSignal
+         * @throws \Google\Service\Exception
+         */
+        public function create($merchantId, OrderTrackingSignal $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Ordertrackingsignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_Ordertrackingsignals extends \Google\Service\ShoppingContent\Resource\Ordertrackingsignals
     {
     }
 }

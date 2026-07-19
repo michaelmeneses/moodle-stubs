@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazFrontendTeamsPersonCorePhoneNumber extends \Google\Model
-{
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    public const TYPE_MOBILE = 'MOBILE';
-    public const TYPE_OFFICE = 'OFFICE';
-    public const TYPE_OTHER = 'OTHER';
-    /**
-     * Phone number in no particular format (as comes from the Focus profile).
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    protected $phoneUrlType = SafeUrlProto::class;
-    protected $phoneUrlDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * Phone number in no particular format (as comes from the Focus profile).
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazFrontendTeamsPersonCorePhoneNumber extends \Google\Model
     {
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        public const TYPE_MOBILE = 'MOBILE';
+        public const TYPE_OFFICE = 'OFFICE';
+        public const TYPE_OTHER = 'OTHER';
+        /**
+         * Phone number in no particular format (as comes from the Focus profile).
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        protected $phoneUrlType = SafeUrlProto::class;
+        protected $phoneUrlDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * Phone number in no particular format (as comes from the Focus profile).
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Phone number URL
+         *
+         * @param SafeUrlProto $phoneUrl
+         */
+        public function setPhoneUrl(SafeUrlProto $phoneUrl)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getPhoneUrl()
+        {
+        }
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazFrontendTeamsPersonCorePhoneNumber registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Phone number URL
-     *
-     * @param SafeUrlProto $phoneUrl
-     */
-    public function setPhoneUrl(SafeUrlProto $phoneUrl)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getPhoneUrl()
-    {
-    }
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudSearch_EnterpriseTopazFrontendTeamsPersonCorePhoneNumber extends \Google\Service\CloudSearch\EnterpriseTopazFrontendTeamsPersonCorePhoneNumber
     {
     }
 }

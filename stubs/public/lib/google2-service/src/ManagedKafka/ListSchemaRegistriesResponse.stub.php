@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ListSchemaRegistriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemaRegistries';
-    protected $schemaRegistriesType = SchemaRegistry::class;
-    protected $schemaRegistriesDataType = 'array';
-    /**
-     * The schema registry instances.
-     *
-     * @param SchemaRegistry[] $schemaRegistries
-     */
-    public function setSchemaRegistries($schemaRegistries)
+namespace Google\Service\ManagedKafka {
+    class ListSchemaRegistriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemaRegistries';
+        protected $schemaRegistriesType = SchemaRegistry::class;
+        protected $schemaRegistriesDataType = 'array';
+        /**
+         * The schema registry instances.
+         *
+         * @param SchemaRegistry[] $schemaRegistries
+         */
+        public function setSchemaRegistries($schemaRegistries)
+        {
+        }
+        /**
+         * @return SchemaRegistry[]
+         */
+        public function getSchemaRegistries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SchemaRegistry[]
+     * Runtime class alias of \Google\Service\ManagedKafka\ListSchemaRegistriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchemaRegistries()
+    class Google_Service_ManagedKafka_ListSchemaRegistriesResponse extends \Google\Service\ManagedKafka\ListSchemaRegistriesResponse
     {
     }
 }

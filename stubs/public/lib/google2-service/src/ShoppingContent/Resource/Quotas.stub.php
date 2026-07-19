@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "quotas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $quotas = $contentService->quotas;
- *  </code>
- */
-class Quotas extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\ListMethodQuotasResponse;
     /**
-     * Lists the daily call quota and usage per method for your Merchant Center
-     * account. (quotas.listQuotas)
-     *
-     * @param string $merchantId Required. The ID of the account that has quota.
-     * This account must be an admin.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of quotas to return in the
-     * response, used for paging. Defaults to 500; values above 1000 will be coerced
-     * to 1000.
-     * @opt_param string pageToken Token (if provided) to retrieve the subsequent
-     * page. All other parameters must match the original call that provided the
-     * page token.
-     * @return ListMethodQuotasResponse
-     * @throws \Google\Service\Exception
+     * The "quotas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $quotas = $contentService->quotas;
+     *  </code>
      */
-    public function listQuotas($merchantId, $optParams = [])
+    class Quotas extends \Google\Service\Resource
+    {
+        /**
+         * Lists the daily call quota and usage per method for your Merchant Center
+         * account. (quotas.listQuotas)
+         *
+         * @param string $merchantId Required. The ID of the account that has quota.
+         * This account must be an admin.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of quotas to return in the
+         * response, used for paging. Defaults to 500; values above 1000 will be coerced
+         * to 1000.
+         * @opt_param string pageToken Token (if provided) to retrieve the subsequent
+         * page. All other parameters must match the original call that provided the
+         * page token.
+         * @return ListMethodQuotasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listQuotas($merchantId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Quotas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_Quotas extends \Google\Service\ShoppingContent\Resource\Quotas
     {
     }
 }

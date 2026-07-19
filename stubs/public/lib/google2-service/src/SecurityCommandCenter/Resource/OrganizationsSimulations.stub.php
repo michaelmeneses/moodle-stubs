@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "simulations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $simulations = $securitycenterService->organizations_simulations;
- *  </code>
- */
-class OrganizationsSimulations extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    use Google\Service\SecurityCommandCenter\Simulation;
     /**
-     * Get the simulation by name or the latest simulation for the given
-     * organization. (simulations.get)
-     *
-     * @param string $name Required. The organization name or simulation name of
-     * this simulation Valid format:
-     * `organizations/{organization}/simulations/latest`
-     * `organizations/{organization}/simulations/{simulation}`
-     * @param array $optParams Optional parameters.
-     * @return Simulation
-     * @throws \Google\Service\Exception
+     * The "simulations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $simulations = $securitycenterService->organizations_simulations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class OrganizationsSimulations extends \Google\Service\Resource
+    {
+        /**
+         * Get the simulation by name or the latest simulation for the given
+         * organization. (simulations.get)
+         *
+         * @param string $name Required. The organization name or simulation name of
+         * this simulation Valid format:
+         * `organizations/{organization}/simulations/latest`
+         * `organizations/{organization}/simulations/{simulation}`
+         * @param array $optParams Optional parameters.
+         * @return Simulation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\OrganizationsSimulations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityCommandCenter_Resource_OrganizationsSimulations extends \Google\Service\SecurityCommandCenter\Resource\OrganizationsSimulations
     {
     }
 }

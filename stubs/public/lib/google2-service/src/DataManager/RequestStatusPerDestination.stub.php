@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class RequestStatusPerDestination extends \Google\Model
-{
-    /**
-     * The request status is unknown.
-     */
-    public const REQUEST_STATUS_REQUEST_STATUS_UNKNOWN = 'REQUEST_STATUS_UNKNOWN';
-    /**
-     * The request succeeded.
-     */
-    public const REQUEST_STATUS_SUCCESS = 'SUCCESS';
-    /**
-     * The request is processing.
-     */
-    public const REQUEST_STATUS_PROCESSING = 'PROCESSING';
-    /**
-     * The request failed.
-     */
-    public const REQUEST_STATUS_FAILED = 'FAILED';
-    /**
-     * The request partially succeeded.
-     */
-    public const REQUEST_STATUS_PARTIAL_SUCCESS = 'PARTIAL_SUCCESS';
-    protected $audienceMembersIngestionStatusType = IngestAudienceMembersStatus::class;
-    protected $audienceMembersIngestionStatusDataType = '';
-    protected $audienceMembersRemovalStatusType = RemoveAudienceMembersStatus::class;
-    protected $audienceMembersRemovalStatusDataType = '';
-    protected $destinationType = Destination::class;
-    protected $destinationDataType = '';
-    protected $errorInfoType = ErrorInfo::class;
-    protected $errorInfoDataType = '';
-    protected $eventsIngestionStatusType = IngestEventsStatus::class;
-    protected $eventsIngestionStatusDataType = '';
-    /**
-     * The request status of the destination.
-     *
-     * @var string
-     */
-    public $requestStatus;
-    protected $warningInfoType = WarningInfo::class;
-    protected $warningInfoDataType = '';
-    /**
-     * The status of the ingest audience members request.
-     *
-     * @param IngestAudienceMembersStatus $audienceMembersIngestionStatus
-     */
-    public function setAudienceMembersIngestionStatus(IngestAudienceMembersStatus $audienceMembersIngestionStatus)
+namespace Google\Service\DataManager {
+    class RequestStatusPerDestination extends \Google\Model
     {
+        /**
+         * The request status is unknown.
+         */
+        public const REQUEST_STATUS_REQUEST_STATUS_UNKNOWN = 'REQUEST_STATUS_UNKNOWN';
+        /**
+         * The request succeeded.
+         */
+        public const REQUEST_STATUS_SUCCESS = 'SUCCESS';
+        /**
+         * The request is processing.
+         */
+        public const REQUEST_STATUS_PROCESSING = 'PROCESSING';
+        /**
+         * The request failed.
+         */
+        public const REQUEST_STATUS_FAILED = 'FAILED';
+        /**
+         * The request partially succeeded.
+         */
+        public const REQUEST_STATUS_PARTIAL_SUCCESS = 'PARTIAL_SUCCESS';
+        protected $audienceMembersIngestionStatusType = IngestAudienceMembersStatus::class;
+        protected $audienceMembersIngestionStatusDataType = '';
+        protected $audienceMembersRemovalStatusType = RemoveAudienceMembersStatus::class;
+        protected $audienceMembersRemovalStatusDataType = '';
+        protected $destinationType = Destination::class;
+        protected $destinationDataType = '';
+        protected $errorInfoType = ErrorInfo::class;
+        protected $errorInfoDataType = '';
+        protected $eventsIngestionStatusType = IngestEventsStatus::class;
+        protected $eventsIngestionStatusDataType = '';
+        /**
+         * The request status of the destination.
+         *
+         * @var string
+         */
+        public $requestStatus;
+        protected $warningInfoType = WarningInfo::class;
+        protected $warningInfoDataType = '';
+        /**
+         * The status of the ingest audience members request.
+         *
+         * @param IngestAudienceMembersStatus $audienceMembersIngestionStatus
+         */
+        public function setAudienceMembersIngestionStatus(IngestAudienceMembersStatus $audienceMembersIngestionStatus)
+        {
+        }
+        /**
+         * @return IngestAudienceMembersStatus
+         */
+        public function getAudienceMembersIngestionStatus()
+        {
+        }
+        /**
+         * The status of the remove audience members request.
+         *
+         * @param RemoveAudienceMembersStatus $audienceMembersRemovalStatus
+         */
+        public function setAudienceMembersRemovalStatus(RemoveAudienceMembersStatus $audienceMembersRemovalStatus)
+        {
+        }
+        /**
+         * @return RemoveAudienceMembersStatus
+         */
+        public function getAudienceMembersRemovalStatus()
+        {
+        }
+        /**
+         * A destination within a DM API request.
+         *
+         * @param Destination $destination
+         */
+        public function setDestination(Destination $destination)
+        {
+        }
+        /**
+         * @return Destination
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * An error info error containing the error reason and error counts related to
+         * the upload.
+         *
+         * @param ErrorInfo $errorInfo
+         */
+        public function setErrorInfo(ErrorInfo $errorInfo)
+        {
+        }
+        /**
+         * @return ErrorInfo
+         */
+        public function getErrorInfo()
+        {
+        }
+        /**
+         * The status of the ingest events request.
+         *
+         * @param IngestEventsStatus $eventsIngestionStatus
+         */
+        public function setEventsIngestionStatus(IngestEventsStatus $eventsIngestionStatus)
+        {
+        }
+        /**
+         * @return IngestEventsStatus
+         */
+        public function getEventsIngestionStatus()
+        {
+        }
+        /**
+         * The request status of the destination.
+         *
+         * Accepted values: REQUEST_STATUS_UNKNOWN, SUCCESS, PROCESSING, FAILED,
+         * PARTIAL_SUCCESS
+         *
+         * @param self::REQUEST_STATUS_* $requestStatus
+         */
+        public function setRequestStatus($requestStatus)
+        {
+        }
+        /**
+         * @return self::REQUEST_STATUS_*
+         */
+        public function getRequestStatus()
+        {
+        }
+        /**
+         * A warning info containing the warning reason and warning counts related to
+         * the upload.
+         *
+         * @param WarningInfo $warningInfo
+         */
+        public function setWarningInfo(WarningInfo $warningInfo)
+        {
+        }
+        /**
+         * @return WarningInfo
+         */
+        public function getWarningInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IngestAudienceMembersStatus
+     * Runtime class alias of \Google\Service\DataManager\RequestStatusPerDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudienceMembersIngestionStatus()
-    {
-    }
-    /**
-     * The status of the remove audience members request.
-     *
-     * @param RemoveAudienceMembersStatus $audienceMembersRemovalStatus
-     */
-    public function setAudienceMembersRemovalStatus(RemoveAudienceMembersStatus $audienceMembersRemovalStatus)
-    {
-    }
-    /**
-     * @return RemoveAudienceMembersStatus
-     */
-    public function getAudienceMembersRemovalStatus()
-    {
-    }
-    /**
-     * A destination within a DM API request.
-     *
-     * @param Destination $destination
-     */
-    public function setDestination(Destination $destination)
-    {
-    }
-    /**
-     * @return Destination
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * An error info error containing the error reason and error counts related to
-     * the upload.
-     *
-     * @param ErrorInfo $errorInfo
-     */
-    public function setErrorInfo(ErrorInfo $errorInfo)
-    {
-    }
-    /**
-     * @return ErrorInfo
-     */
-    public function getErrorInfo()
-    {
-    }
-    /**
-     * The status of the ingest events request.
-     *
-     * @param IngestEventsStatus $eventsIngestionStatus
-     */
-    public function setEventsIngestionStatus(IngestEventsStatus $eventsIngestionStatus)
-    {
-    }
-    /**
-     * @return IngestEventsStatus
-     */
-    public function getEventsIngestionStatus()
-    {
-    }
-    /**
-     * The request status of the destination.
-     *
-     * Accepted values: REQUEST_STATUS_UNKNOWN, SUCCESS, PROCESSING, FAILED,
-     * PARTIAL_SUCCESS
-     *
-     * @param self::REQUEST_STATUS_* $requestStatus
-     */
-    public function setRequestStatus($requestStatus)
-    {
-    }
-    /**
-     * @return self::REQUEST_STATUS_*
-     */
-    public function getRequestStatus()
-    {
-    }
-    /**
-     * A warning info containing the warning reason and warning counts related to
-     * the upload.
-     *
-     * @param WarningInfo $warningInfo
-     */
-    public function setWarningInfo(WarningInfo $warningInfo)
-    {
-    }
-    /**
-     * @return WarningInfo
-     */
-    public function getWarningInfo()
+    class Google_Service_DataManager_RequestStatusPerDestination extends \Google\Service\DataManager\RequestStatusPerDestination
     {
     }
 }

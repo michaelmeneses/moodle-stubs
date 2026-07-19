@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateResponse extends \Google\Model
-{
-    /**
-     * True if the Trial should stop.
-     *
-     * @var bool
-     */
-    public $shouldStop;
-    /**
-     * True if the Trial should stop.
-     *
-     * @param bool $shouldStop
-     */
-    public function setShouldStop($shouldStop)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateResponse extends \Google\Model
     {
+        /**
+         * True if the Trial should stop.
+         *
+         * @var bool
+         */
+        public $shouldStop;
+        /**
+         * True if the Trial should stop.
+         *
+         * @param bool $shouldStop
+         */
+        public function setShouldStop($shouldStop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldStop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShouldStop()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateResponse
     {
     }
 }

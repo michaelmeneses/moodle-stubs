@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListNetworkPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $networkPoliciesType = NetworkPolicy::class;
-    protected $networkPoliciesDataType = 'array';
-    /**
-     * A token, which can be send as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached when making an aggregated query using
-     * wildcards.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of network policies.
-     *
-     * @param NetworkPolicy[] $networkPolicies
-     */
-    public function setNetworkPolicies($networkPolicies)
+namespace Google\Service\VMwareEngine {
+    class ListNetworkPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $networkPoliciesType = NetworkPolicy::class;
+        protected $networkPoliciesDataType = 'array';
+        /**
+         * A token, which can be send as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached when making an aggregated query using
+         * wildcards.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of network policies.
+         *
+         * @param NetworkPolicy[] $networkPolicies
+         */
+        public function setNetworkPolicies($networkPolicies)
+        {
+        }
+        /**
+         * @return NetworkPolicy[]
+         */
+        public function getNetworkPolicies()
+        {
+        }
+        /**
+         * A token, which can be send as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached when making an aggregated query using
+         * wildcards.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkPolicy[]
+     * Runtime class alias of \Google\Service\VMwareEngine\ListNetworkPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkPolicies()
-    {
-    }
-    /**
-     * A token, which can be send as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached when making an aggregated query using
-     * wildcards.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_VMwareEngine_ListNetworkPoliciesResponse extends \Google\Service\VMwareEngine\ListNetworkPoliciesResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworksSetPrivateIpGoogleAccessRequest extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $privateIpGoogleAccess;
-    /**
-     * @param bool $privateIpGoogleAccess
-     */
-    public function setPrivateIpGoogleAccess($privateIpGoogleAccess)
+namespace Google\Service\Compute {
+    class SubnetworksSetPrivateIpGoogleAccessRequest extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $privateIpGoogleAccess;
+        /**
+         * @param bool $privateIpGoogleAccess
+         */
+        public function setPrivateIpGoogleAccess($privateIpGoogleAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrivateIpGoogleAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\SubnetworksSetPrivateIpGoogleAccessRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateIpGoogleAccess()
+    class Google_Service_Compute_SubnetworksSetPrivateIpGoogleAccessRequest extends \Google\Service\Compute\SubnetworksSetPrivateIpGoogleAccessRequest
     {
     }
 }

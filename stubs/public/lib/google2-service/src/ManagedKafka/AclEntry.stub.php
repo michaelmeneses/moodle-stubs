@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class AclEntry extends \Google\Model
-{
-    /**
-     * Required. The host. Must be set to "*" for Managed Service for Apache
-     * Kafka.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * Required. The operation type. Allowed values are (case insensitive): ALL,
-     * READ, WRITE, CREATE, DELETE, ALTER, DESCRIBE, CLUSTER_ACTION,
-     * DESCRIBE_CONFIGS, ALTER_CONFIGS, and IDEMPOTENT_WRITE. See
-     * https://kafka.apache.org/documentation/#operations_resources_and_protocols
-     * for valid combinations of resource_type and operation for different Kafka
-     * API requests.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * Required. The permission type. Accepted values are (case insensitive):
-     * ALLOW, DENY.
-     *
-     * @var string
-     */
-    public $permissionType;
-    /**
-     * Required. The principal. Specified as Google Cloud account, with the Kafka
-     * StandardAuthorizer prefix "User:". For example: "User:test-kafka-
-     * client@test-project.iam.gserviceaccount.com". Can be the wildcard "User:*"
-     * to refer to all users.
-     *
-     * @var string
-     */
-    public $principal;
-    /**
-     * Required. The host. Must be set to "*" for Managed Service for Apache
-     * Kafka.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
+namespace Google\Service\ManagedKafka {
+    class AclEntry extends \Google\Model
     {
+        /**
+         * Required. The host. Must be set to "*" for Managed Service for Apache
+         * Kafka.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * Required. The operation type. Allowed values are (case insensitive): ALL,
+         * READ, WRITE, CREATE, DELETE, ALTER, DESCRIBE, CLUSTER_ACTION,
+         * DESCRIBE_CONFIGS, ALTER_CONFIGS, and IDEMPOTENT_WRITE. See
+         * https://kafka.apache.org/documentation/#operations_resources_and_protocols
+         * for valid combinations of resource_type and operation for different Kafka
+         * API requests.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * Required. The permission type. Accepted values are (case insensitive):
+         * ALLOW, DENY.
+         *
+         * @var string
+         */
+        public $permissionType;
+        /**
+         * Required. The principal. Specified as Google Cloud account, with the Kafka
+         * StandardAuthorizer prefix "User:". For example: "User:test-kafka-
+         * client@test-project.iam.gserviceaccount.com". Can be the wildcard "User:*"
+         * to refer to all users.
+         *
+         * @var string
+         */
+        public $principal;
+        /**
+         * Required. The host. Must be set to "*" for Managed Service for Apache
+         * Kafka.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * Required. The operation type. Allowed values are (case insensitive): ALL,
+         * READ, WRITE, CREATE, DELETE, ALTER, DESCRIBE, CLUSTER_ACTION,
+         * DESCRIBE_CONFIGS, ALTER_CONFIGS, and IDEMPOTENT_WRITE. See
+         * https://kafka.apache.org/documentation/#operations_resources_and_protocols
+         * for valid combinations of resource_type and operation for different Kafka
+         * API requests.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * Required. The permission type. Accepted values are (case insensitive):
+         * ALLOW, DENY.
+         *
+         * @param string $permissionType
+         */
+        public function setPermissionType($permissionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermissionType()
+        {
+        }
+        /**
+         * Required. The principal. Specified as Google Cloud account, with the Kafka
+         * StandardAuthorizer prefix "User:". For example: "User:test-kafka-
+         * client@test-project.iam.gserviceaccount.com". Can be the wildcard "User:*"
+         * to refer to all users.
+         *
+         * @param string $principal
+         */
+        public function setPrincipal($principal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\AclEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHost()
-    {
-    }
-    /**
-     * Required. The operation type. Allowed values are (case insensitive): ALL,
-     * READ, WRITE, CREATE, DELETE, ALTER, DESCRIBE, CLUSTER_ACTION,
-     * DESCRIBE_CONFIGS, ALTER_CONFIGS, and IDEMPOTENT_WRITE. See
-     * https://kafka.apache.org/documentation/#operations_resources_and_protocols
-     * for valid combinations of resource_type and operation for different Kafka
-     * API requests.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * Required. The permission type. Accepted values are (case insensitive):
-     * ALLOW, DENY.
-     *
-     * @param string $permissionType
-     */
-    public function setPermissionType($permissionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermissionType()
-    {
-    }
-    /**
-     * Required. The principal. Specified as Google Cloud account, with the Kafka
-     * StandardAuthorizer prefix "User:". For example: "User:test-kafka-
-     * client@test-project.iam.gserviceaccount.com". Can be the wildcard "User:*"
-     * to refer to all users.
-     *
-     * @param string $principal
-     */
-    public function setPrincipal($principal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipal()
+    class Google_Service_ManagedKafka_AclEntry extends \Google\Service\ManagedKafka\AclEntry
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PscAutomatedEndpoints extends \Google\Model
-{
-    /**
-     * Ip Address created by the automated forwarding rule.
-     *
-     * @var string
-     */
-    public $matchAddress;
-    /**
-     * Corresponding network in pscAutomationConfigs.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Corresponding project_id in pscAutomationConfigs
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Ip Address created by the automated forwarding rule.
-     *
-     * @param string $matchAddress
-     */
-    public function setMatchAddress($matchAddress)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PscAutomatedEndpoints extends \Google\Model
     {
+        /**
+         * Ip Address created by the automated forwarding rule.
+         *
+         * @var string
+         */
+        public $matchAddress;
+        /**
+         * Corresponding network in pscAutomationConfigs.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Corresponding project_id in pscAutomationConfigs
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Ip Address created by the automated forwarding rule.
+         *
+         * @param string $matchAddress
+         */
+        public function setMatchAddress($matchAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchAddress()
+        {
+        }
+        /**
+         * Corresponding network in pscAutomationConfigs.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Corresponding project_id in pscAutomationConfigs
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PscAutomatedEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchAddress()
-    {
-    }
-    /**
-     * Corresponding network in pscAutomationConfigs.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Corresponding project_id in pscAutomationConfigs
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PscAutomatedEndpoints extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PscAutomatedEndpoints
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementGroupVersionKind extends \Google\Model
-{
-    /**
-     * Kubernetes Group
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * Kubernetes Kind
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Kubernetes Version
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Kubernetes Group
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
+namespace Google\Service\GKEHub {
+    class ConfigManagementGroupVersionKind extends \Google\Model
     {
+        /**
+         * Kubernetes Group
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * Kubernetes Kind
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Kubernetes Version
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Kubernetes Group
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Kubernetes Kind
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Kubernetes Version
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementGroupVersionKind registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroup()
-    {
-    }
-    /**
-     * Kubernetes Kind
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Kubernetes Version
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_ConfigManagementGroupVersionKind extends \Google\Service\GKEHub\ConfigManagementGroupVersionKind
     {
     }
 }

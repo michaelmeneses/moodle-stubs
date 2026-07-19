@@ -21,103 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $versions = $tagmanagerService->accounts_containers_versions;
- *  </code>
- */
-class AccountsContainersVersions extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ContainerVersion;
+    use Google\Service\TagManager\PublishContainerVersionResponse;
     /**
-     * Deletes a Container Version. (versions.delete)
-     *
-     * @param string $path GTM ContainerVersion's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $versions = $tagmanagerService->accounts_containers_versions;
+     *  </code>
      */
-    public function delete($path, $optParams = [])
+    class AccountsContainersVersions extends \Google\Service\Resource
     {
+        /**
+         * Deletes a Container Version. (versions.delete)
+         *
+         * @param string $path GTM ContainerVersion's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Container Version. (versions.get)
+         *
+         * @param string $path GTM ContainerVersion's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string containerVersionId The GTM ContainerVersion ID. Specify
+         * published to retrieve the currently published version.
+         * @return ContainerVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets the live (i.e. published) container version (versions.live)
+         *
+         * @param string $parent GTM Container's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return ContainerVersion
+         * @throws \Google\Service\Exception
+         */
+        public function live($parent, $optParams = [])
+        {
+        }
+        /**
+         * Publishes a Container Version. (versions.publish)
+         *
+         * @param string $path GTM ContainerVersion's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the container version in storage.
+         * @return PublishContainerVersionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function publish($path, $optParams = [])
+        {
+        }
+        /**
+         * Sets the latest version used for synchronization of workspaces when detecting
+         * conflicts and errors. (versions.set_latest)
+         *
+         * @param string $path GTM ContainerVersion's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return ContainerVersion
+         * @throws \Google\Service\Exception
+         */
+        public function set_latest($path, $optParams = [])
+        {
+        }
+        /**
+         * Undeletes a Container Version. (versions.undelete)
+         *
+         * @param string $path GTM ContainerVersion's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return ContainerVersion
+         * @throws \Google\Service\Exception
+         */
+        public function undelete($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Container Version. (versions.update)
+         *
+         * @param string $path GTM ContainerVersion's API relative path.
+         * @param ContainerVersion $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the container version in storage.
+         * @return ContainerVersion
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, ContainerVersion $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a Container Version. (versions.get)
-     *
-     * @param string $path GTM ContainerVersion's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string containerVersionId The GTM ContainerVersion ID. Specify
-     * published to retrieve the currently published version.
-     * @return ContainerVersion
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets the live (i.e. published) container version (versions.live)
-     *
-     * @param string $parent GTM Container's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return ContainerVersion
-     * @throws \Google\Service\Exception
-     */
-    public function live($parent, $optParams = [])
-    {
-    }
-    /**
-     * Publishes a Container Version. (versions.publish)
-     *
-     * @param string $path GTM ContainerVersion's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the container version in storage.
-     * @return PublishContainerVersionResponse
-     * @throws \Google\Service\Exception
-     */
-    public function publish($path, $optParams = [])
-    {
-    }
-    /**
-     * Sets the latest version used for synchronization of workspaces when detecting
-     * conflicts and errors. (versions.set_latest)
-     *
-     * @param string $path GTM ContainerVersion's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return ContainerVersion
-     * @throws \Google\Service\Exception
-     */
-    public function set_latest($path, $optParams = [])
-    {
-    }
-    /**
-     * Undeletes a Container Version. (versions.undelete)
-     *
-     * @param string $path GTM ContainerVersion's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return ContainerVersion
-     * @throws \Google\Service\Exception
-     */
-    public function undelete($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a Container Version. (versions.update)
-     *
-     * @param string $path GTM ContainerVersion's API relative path.
-     * @param ContainerVersion $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the container version in storage.
-     * @return ContainerVersion
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, ContainerVersion $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersVersions extends \Google\Service\TagManager\Resource\AccountsContainersVersions
     {
     }
 }

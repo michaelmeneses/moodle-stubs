@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryNotificationFilter extends \Google\Model
-{
-    /**
-     * If set, only sends notifications for telemetry data coming from this
-     * device.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * If set, only sends notifications for telemetry data coming from devices in
-     * this org unit.
-     *
-     * @var string
-     */
-    public $deviceOrgUnitId;
-    protected $telemetryEventNotificationFilterType = GoogleChromeManagementV1TelemetryEventNotificationFilter::class;
-    protected $telemetryEventNotificationFilterDataType = '';
-    /**
-     * If set, only sends notifications for telemetry data coming from devices
-     * owned by this user.
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * If set, only sends notifications for telemetry data coming from devices
-     * owned by users in this org unit.
-     *
-     * @var string
-     */
-    public $userOrgUnitId;
-    /**
-     * If set, only sends notifications for telemetry data coming from this
-     * device.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryNotificationFilter extends \Google\Model
     {
+        /**
+         * If set, only sends notifications for telemetry data coming from this
+         * device.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * If set, only sends notifications for telemetry data coming from devices in
+         * this org unit.
+         *
+         * @var string
+         */
+        public $deviceOrgUnitId;
+        protected $telemetryEventNotificationFilterType = GoogleChromeManagementV1TelemetryEventNotificationFilter::class;
+        protected $telemetryEventNotificationFilterDataType = '';
+        /**
+         * If set, only sends notifications for telemetry data coming from devices
+         * owned by this user.
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * If set, only sends notifications for telemetry data coming from devices
+         * owned by users in this org unit.
+         *
+         * @var string
+         */
+        public $userOrgUnitId;
+        /**
+         * If set, only sends notifications for telemetry data coming from this
+         * device.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * If set, only sends notifications for telemetry data coming from devices in
+         * this org unit.
+         *
+         * @param string $deviceOrgUnitId
+         */
+        public function setDeviceOrgUnitId($deviceOrgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceOrgUnitId()
+        {
+        }
+        /**
+         * Only sends notifications for the telemetry events matching this filter.
+         *
+         * @param GoogleChromeManagementV1TelemetryEventNotificationFilter $telemetryEventNotificationFilter
+         */
+        public function setTelemetryEventNotificationFilter(GoogleChromeManagementV1TelemetryEventNotificationFilter $telemetryEventNotificationFilter)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryEventNotificationFilter
+         */
+        public function getTelemetryEventNotificationFilter()
+        {
+        }
+        /**
+         * If set, only sends notifications for telemetry data coming from devices
+         * owned by this user.
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
+        /**
+         * If set, only sends notifications for telemetry data coming from devices
+         * owned by users in this org unit.
+         *
+         * @param string $userOrgUnitId
+         */
+        public function setUserOrgUnitId($userOrgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNotificationFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * If set, only sends notifications for telemetry data coming from devices in
-     * this org unit.
-     *
-     * @param string $deviceOrgUnitId
-     */
-    public function setDeviceOrgUnitId($deviceOrgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceOrgUnitId()
-    {
-    }
-    /**
-     * Only sends notifications for the telemetry events matching this filter.
-     *
-     * @param GoogleChromeManagementV1TelemetryEventNotificationFilter $telemetryEventNotificationFilter
-     */
-    public function setTelemetryEventNotificationFilter(GoogleChromeManagementV1TelemetryEventNotificationFilter $telemetryEventNotificationFilter)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1TelemetryEventNotificationFilter
-     */
-    public function getTelemetryEventNotificationFilter()
-    {
-    }
-    /**
-     * If set, only sends notifications for telemetry data coming from devices
-     * owned by this user.
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
-    {
-    }
-    /**
-     * If set, only sends notifications for telemetry data coming from devices
-     * owned by users in this org unit.
-     *
-     * @param string $userOrgUnitId
-     */
-    public function setUserOrgUnitId($userOrgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserOrgUnitId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryNotificationFilter extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNotificationFilter
     {
     }
 }

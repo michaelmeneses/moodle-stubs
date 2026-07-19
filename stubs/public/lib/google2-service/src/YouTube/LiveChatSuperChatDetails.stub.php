@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatSuperChatDetails extends \Google\Model
-{
-    /**
-     * A rendered string that displays the fund amount and currency to the user.
-     *
-     * @var string
-     */
-    public $amountDisplayString;
-    /**
-     * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * The currency in which the purchase was made.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * The tier in which the amount belongs. Lower amounts belong to lower tiers.
-     * The lowest tier is 1.
-     *
-     * @var string
-     */
-    public $tier;
-    /**
-     * The comment added by the user to this Super Chat event.
-     *
-     * @var string
-     */
-    public $userComment;
-    /**
-     * A rendered string that displays the fund amount and currency to the user.
-     *
-     * @param string $amountDisplayString
-     */
-    public function setAmountDisplayString($amountDisplayString)
+namespace Google\Service\YouTube {
+    class LiveChatSuperChatDetails extends \Google\Model
     {
+        /**
+         * A rendered string that displays the fund amount and currency to the user.
+         *
+         * @var string
+         */
+        public $amountDisplayString;
+        /**
+         * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * The currency in which the purchase was made.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * The tier in which the amount belongs. Lower amounts belong to lower tiers.
+         * The lowest tier is 1.
+         *
+         * @var string
+         */
+        public $tier;
+        /**
+         * The comment added by the user to this Super Chat event.
+         *
+         * @var string
+         */
+        public $userComment;
+        /**
+         * A rendered string that displays the fund amount and currency to the user.
+         *
+         * @param string $amountDisplayString
+         */
+        public function setAmountDisplayString($amountDisplayString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountDisplayString()
+        {
+        }
+        /**
+         * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * The currency in which the purchase was made.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * The tier in which the amount belongs. Lower amounts belong to lower tiers.
+         * The lowest tier is 1.
+         *
+         * @param string $tier
+         */
+        public function setTier($tier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTier()
+        {
+        }
+        /**
+         * The comment added by the user to this Super Chat event.
+         *
+         * @param string $userComment
+         */
+        public function setUserComment($userComment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserComment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatSuperChatDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountDisplayString()
-    {
-    }
-    /**
-     * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * The currency in which the purchase was made.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * The tier in which the amount belongs. Lower amounts belong to lower tiers.
-     * The lowest tier is 1.
-     *
-     * @param string $tier
-     */
-    public function setTier($tier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTier()
-    {
-    }
-    /**
-     * The comment added by the user to this Super Chat event.
-     *
-     * @param string $userComment
-     */
-    public function setUserComment($userComment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserComment()
+    class Google_Service_YouTube_LiveChatSuperChatDetails extends \Google\Service\YouTube\LiveChatSuperChatDetails
     {
     }
 }

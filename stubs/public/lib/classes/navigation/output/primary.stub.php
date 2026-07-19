@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\navigation\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use custom_menu;
+use filter_manager;
 /**
  * Primary navigation renderable
  *

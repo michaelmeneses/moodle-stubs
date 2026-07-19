@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class Step extends \Google\Model
-{
-    /**
-     * Name of a routine within the workflow.
-     *
-     * @var string
-     */
-    public $routine;
-    /**
-     * Name of a step within the routine.
-     *
-     * @var string
-     */
-    public $step;
-    /**
-     * Name of a routine within the workflow.
-     *
-     * @param string $routine
-     */
-    public function setRoutine($routine)
+namespace Google\Service\WorkflowExecutions {
+    class Step extends \Google\Model
     {
+        /**
+         * Name of a routine within the workflow.
+         *
+         * @var string
+         */
+        public $routine;
+        /**
+         * Name of a step within the routine.
+         *
+         * @var string
+         */
+        public $step;
+        /**
+         * Name of a routine within the workflow.
+         *
+         * @param string $routine
+         */
+        public function setRoutine($routine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoutine()
+        {
+        }
+        /**
+         * Name of a step within the routine.
+         *
+         * @param string $step
+         */
+        public function setStep($step)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\Step registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoutine()
-    {
-    }
-    /**
-     * Name of a step within the routine.
-     *
-     * @param string $step
-     */
-    public function setStep($step)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStep()
+    class Google_Service_WorkflowExecutions_Step extends \Google\Service\WorkflowExecutions\Step
     {
     }
 }

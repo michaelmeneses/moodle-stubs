@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fcmdata;
-
-class GoogleFirebaseFcmDataV1beta1AndroidDeliveryData extends \Google\Model
-{
-    /**
-     * The analytics label associated with the messages sent. All messages sent
-     * without an analytics label will be grouped together in a single entry.
-     *
-     * @var string
-     */
-    public $analyticsLabel;
-    /**
-     * The app ID to which the messages were sent.
-     *
-     * @var string
-     */
-    public $appId;
-    protected $dataType = GoogleFirebaseFcmDataV1beta1Data::class;
-    protected $dataDataType = '';
-    protected $dateType = GoogleTypeDate::class;
-    protected $dateDataType = '';
-    /**
-     * The analytics label associated with the messages sent. All messages sent
-     * without an analytics label will be grouped together in a single entry.
-     *
-     * @param string $analyticsLabel
-     */
-    public function setAnalyticsLabel($analyticsLabel)
+namespace Google\Service\Fcmdata {
+    class GoogleFirebaseFcmDataV1beta1AndroidDeliveryData extends \Google\Model
     {
+        /**
+         * The analytics label associated with the messages sent. All messages sent
+         * without an analytics label will be grouped together in a single entry.
+         *
+         * @var string
+         */
+        public $analyticsLabel;
+        /**
+         * The app ID to which the messages were sent.
+         *
+         * @var string
+         */
+        public $appId;
+        protected $dataType = GoogleFirebaseFcmDataV1beta1Data::class;
+        protected $dataDataType = '';
+        protected $dateType = GoogleTypeDate::class;
+        protected $dateDataType = '';
+        /**
+         * The analytics label associated with the messages sent. All messages sent
+         * without an analytics label will be grouped together in a single entry.
+         *
+         * @param string $analyticsLabel
+         */
+        public function setAnalyticsLabel($analyticsLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsLabel()
+        {
+        }
+        /**
+         * The app ID to which the messages were sent.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * The data for the specified appId, date, and analyticsLabel.
+         *
+         * @param GoogleFirebaseFcmDataV1beta1Data $data
+         */
+        public function setData(GoogleFirebaseFcmDataV1beta1Data $data)
+        {
+        }
+        /**
+         * @return GoogleFirebaseFcmDataV1beta1Data
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The date represented by this entry.
+         *
+         * @param GoogleTypeDate $date
+         */
+        public function setDate(GoogleTypeDate $date)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1AndroidDeliveryData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsLabel()
-    {
-    }
-    /**
-     * The app ID to which the messages were sent.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * The data for the specified appId, date, and analyticsLabel.
-     *
-     * @param GoogleFirebaseFcmDataV1beta1Data $data
-     */
-    public function setData(GoogleFirebaseFcmDataV1beta1Data $data)
-    {
-    }
-    /**
-     * @return GoogleFirebaseFcmDataV1beta1Data
-     */
-    public function getData()
-    {
-    }
-    /**
-     * The date represented by this entry.
-     *
-     * @param GoogleTypeDate $date
-     */
-    public function setDate(GoogleTypeDate $date)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getDate()
+    class Google_Service_Fcmdata_GoogleFirebaseFcmDataV1beta1AndroidDeliveryData extends \Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1AndroidDeliveryData
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class StreamViewerStats extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $estimatedViewerCount;
-    /**
-     * @param string
-     */
-    public function setEstimatedViewerCount($estimatedViewerCount)
+namespace Google\Service\CloudSearch {
+    class StreamViewerStats extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $estimatedViewerCount;
+        /**
+         * @param string
+         */
+        public function setEstimatedViewerCount($estimatedViewerCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedViewerCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\StreamViewerStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedViewerCount()
+    class Google_Service_CloudSearch_StreamViewerStats extends \Google\Service\CloudSearch\StreamViewerStats
     {
     }
 }

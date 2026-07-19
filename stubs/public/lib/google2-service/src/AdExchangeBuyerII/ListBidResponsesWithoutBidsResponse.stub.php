@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListBidResponsesWithoutBidsResponse extends \Google\Collection
-{
-    protected $collection_key = 'bidResponseWithoutBidsStatusRows';
-    protected $bidResponseWithoutBidsStatusRowsType = BidResponseWithoutBidsStatusRow::class;
-    protected $bidResponseWithoutBidsStatusRowsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListBidResponsesWithoutBidsRequest.pageToken field in the subsequent call
-     * to the bidResponsesWithoutBids.list method to retrieve the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of rows, with counts of bid responses without bids aggregated by
-     * status.
-     *
-     * @param BidResponseWithoutBidsStatusRow[] $bidResponseWithoutBidsStatusRows
-     */
-    public function setBidResponseWithoutBidsStatusRows($bidResponseWithoutBidsStatusRows)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListBidResponsesWithoutBidsResponse extends \Google\Collection
     {
+        protected $collection_key = 'bidResponseWithoutBidsStatusRows';
+        protected $bidResponseWithoutBidsStatusRowsType = BidResponseWithoutBidsStatusRow::class;
+        protected $bidResponseWithoutBidsStatusRowsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListBidResponsesWithoutBidsRequest.pageToken field in the subsequent call
+         * to the bidResponsesWithoutBids.list method to retrieve the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of rows, with counts of bid responses without bids aggregated by
+         * status.
+         *
+         * @param BidResponseWithoutBidsStatusRow[] $bidResponseWithoutBidsStatusRows
+         */
+        public function setBidResponseWithoutBidsStatusRows($bidResponseWithoutBidsStatusRows)
+        {
+        }
+        /**
+         * @return BidResponseWithoutBidsStatusRow[]
+         */
+        public function getBidResponseWithoutBidsStatusRows()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListBidResponsesWithoutBidsRequest.pageToken field in the subsequent call
+         * to the bidResponsesWithoutBids.list method to retrieve the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BidResponseWithoutBidsStatusRow[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListBidResponsesWithoutBidsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBidResponseWithoutBidsStatusRows()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListBidResponsesWithoutBidsRequest.pageToken field in the subsequent call
-     * to the bidResponsesWithoutBids.list method to retrieve the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListBidResponsesWithoutBidsResponse extends \Google\Service\AdExchangeBuyerII\ListBidResponsesWithoutBidsResponse
     {
     }
 }

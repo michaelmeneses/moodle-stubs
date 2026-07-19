@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class CommentQuotedFileContent extends \Google\Model
-{
-    /**
-     * The MIME type of the quoted content.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The quoted content itself. This is interpreted as plain text if set through
-     * the API.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The MIME type of the quoted content.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\Drive {
+    class CommentQuotedFileContent extends \Google\Model
     {
+        /**
+         * The MIME type of the quoted content.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The quoted content itself. This is interpreted as plain text if set through
+         * the API.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The MIME type of the quoted content.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The quoted content itself. This is interpreted as plain text if set through
+         * the API.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\CommentQuotedFileContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The quoted content itself. This is interpreted as plain text if set through
-     * the API.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Drive_CommentQuotedFileContent extends \Google\Service\Drive\CommentQuotedFileContent
     {
     }
 }

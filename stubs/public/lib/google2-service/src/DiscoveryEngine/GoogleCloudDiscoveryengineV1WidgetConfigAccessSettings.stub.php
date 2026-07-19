@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigAccessSettings extends \Google\Collection
-{
-    protected $collection_key = 'allowlistedDomains';
-    /**
-     * Whether public unauthenticated access is allowed.
-     *
-     * @var bool
-     */
-    public $allowPublicAccess;
-    /**
-     * List of domains that are allowed to integrate the search widget.
-     *
-     * @var string[]
-     */
-    public $allowlistedDomains;
-    /**
-     * Whether web app access is enabled.
-     *
-     * @var bool
-     */
-    public $enableWebApp;
-    /**
-     * Optional. Language code for user interface. Use language tags defined by
-     * [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). If unset, the
-     * default language code is "en-US".
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Optional. The workforce identity pool provider used to access the widget.
-     *
-     * @var string
-     */
-    public $workforceIdentityPoolProvider;
-    /**
-     * Whether public unauthenticated access is allowed.
-     *
-     * @param bool $allowPublicAccess
-     */
-    public function setAllowPublicAccess($allowPublicAccess)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigAccessSettings extends \Google\Collection
     {
+        protected $collection_key = 'allowlistedDomains';
+        /**
+         * Whether public unauthenticated access is allowed.
+         *
+         * @var bool
+         */
+        public $allowPublicAccess;
+        /**
+         * List of domains that are allowed to integrate the search widget.
+         *
+         * @var string[]
+         */
+        public $allowlistedDomains;
+        /**
+         * Whether web app access is enabled.
+         *
+         * @var bool
+         */
+        public $enableWebApp;
+        /**
+         * Optional. Language code for user interface. Use language tags defined by
+         * [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). If unset, the
+         * default language code is "en-US".
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Optional. The workforce identity pool provider used to access the widget.
+         *
+         * @var string
+         */
+        public $workforceIdentityPoolProvider;
+        /**
+         * Whether public unauthenticated access is allowed.
+         *
+         * @param bool $allowPublicAccess
+         */
+        public function setAllowPublicAccess($allowPublicAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowPublicAccess()
+        {
+        }
+        /**
+         * List of domains that are allowed to integrate the search widget.
+         *
+         * @param string[] $allowlistedDomains
+         */
+        public function setAllowlistedDomains($allowlistedDomains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowlistedDomains()
+        {
+        }
+        /**
+         * Whether web app access is enabled.
+         *
+         * @param bool $enableWebApp
+         */
+        public function setEnableWebApp($enableWebApp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableWebApp()
+        {
+        }
+        /**
+         * Optional. Language code for user interface. Use language tags defined by
+         * [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). If unset, the
+         * default language code is "en-US".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Optional. The workforce identity pool provider used to access the widget.
+         *
+         * @param string $workforceIdentityPoolProvider
+         */
+        public function setWorkforceIdentityPoolProvider($workforceIdentityPoolProvider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkforceIdentityPoolProvider()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigAccessSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPublicAccess()
-    {
-    }
-    /**
-     * List of domains that are allowed to integrate the search widget.
-     *
-     * @param string[] $allowlistedDomains
-     */
-    public function setAllowlistedDomains($allowlistedDomains)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowlistedDomains()
-    {
-    }
-    /**
-     * Whether web app access is enabled.
-     *
-     * @param bool $enableWebApp
-     */
-    public function setEnableWebApp($enableWebApp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableWebApp()
-    {
-    }
-    /**
-     * Optional. Language code for user interface. Use language tags defined by
-     * [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). If unset, the
-     * default language code is "en-US".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Optional. The workforce identity pool provider used to access the widget.
-     *
-     * @param string $workforceIdentityPoolProvider
-     */
-    public function setWorkforceIdentityPoolProvider($workforceIdentityPoolProvider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkforceIdentityPoolProvider()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigAccessSettings extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigAccessSettings
     {
     }
 }

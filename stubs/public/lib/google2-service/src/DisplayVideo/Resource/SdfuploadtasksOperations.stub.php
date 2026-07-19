@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $operations = $displayvideoService->sdfuploadtasks_operations;
- *  </code>
- */
-class SdfuploadtasksOperations extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\Operation;
     /**
-     * Gets the latest state of an asynchronous SDF download task operation. Clients
-     * should poll this method at intervals of 30 seconds. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $operations = $displayvideoService->sdfuploadtasks_operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class SdfuploadtasksOperations extends \Google\Service\Resource
+    {
+        /**
+         * Gets the latest state of an asynchronous SDF download task operation. Clients
+         * should poll this method at intervals of 30 seconds. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\SdfuploadtasksOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DisplayVideo_Resource_SdfuploadtasksOperations extends \Google\Service\DisplayVideo\Resource\SdfuploadtasksOperations
     {
     }
 }

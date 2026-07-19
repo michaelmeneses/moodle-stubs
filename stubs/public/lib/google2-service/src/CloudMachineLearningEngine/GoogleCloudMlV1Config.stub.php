@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1Config extends \Google\Model
-{
-    /**
-     * The service account Cloud ML uses to run on TPU node.
-     *
-     * @var string
-     */
-    public $tpuServiceAccount;
-    /**
-     * The service account Cloud ML uses to run on TPU node.
-     *
-     * @param string $tpuServiceAccount
-     */
-    public function setTpuServiceAccount($tpuServiceAccount)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1Config extends \Google\Model
     {
+        /**
+         * The service account Cloud ML uses to run on TPU node.
+         *
+         * @var string
+         */
+        public $tpuServiceAccount;
+        /**
+         * The service account Cloud ML uses to run on TPU node.
+         *
+         * @param string $tpuServiceAccount
+         */
+        public function setTpuServiceAccount($tpuServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTpuServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTpuServiceAccount()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Config extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Config
     {
     }
 }

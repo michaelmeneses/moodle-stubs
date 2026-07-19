@@ -21,44 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessbusinesscallsService = new Google\Service\MyBusinessBusinessCalls(...);
- *   $locations = $mybusinessbusinesscallsService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessBusinessCalls\Resource {
+    use Google\Service\MyBusinessBusinessCalls\BusinessCallsSettings;
     /**
-     * Returns the Business calls settings resource for the given location.
-     * (locations.getBusinesscallssettings)
-     *
-     * @param string $name Required. The BusinessCallsSettings to get. The `name`
-     * field is used to identify the business call settings to get. Format:
-     * locations/{location_id}/businesscallssettings.
-     * @param array $optParams Optional parameters.
-     * @return BusinessCallsSettings
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessbusinesscallsService = new Google\Service\MyBusinessBusinessCalls(...);
+     *   $locations = $mybusinessbusinesscallsService->locations;
+     *  </code>
      */
-    public function getBusinesscallssettings($name, $optParams = [])
+    class Locations extends \Google\Service\Resource
     {
+        /**
+         * Returns the Business calls settings resource for the given location.
+         * (locations.getBusinesscallssettings)
+         *
+         * @param string $name Required. The BusinessCallsSettings to get. The `name`
+         * field is used to identify the business call settings to get. Format:
+         * locations/{location_id}/businesscallssettings.
+         * @param array $optParams Optional parameters.
+         * @return BusinessCallsSettings
+         */
+        public function getBusinesscallssettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the Business call settings for the specified location.
+         * (locations.updateBusinesscallssettings)
+         *
+         * @param string $name Required. The resource name of the calls settings.
+         * Format: locations/{location}/businesscallssettings
+         * @param BusinessCallsSettings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The list of fields to update.
+         * @return BusinessCallsSettings
+         */
+        public function updateBusinesscallssettings($name, BusinessCallsSettings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the Business call settings for the specified location.
-     * (locations.updateBusinesscallssettings)
-     *
-     * @param string $name Required. The resource name of the calls settings.
-     * Format: locations/{location}/businesscallssettings
-     * @param BusinessCallsSettings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The list of fields to update.
-     * @return BusinessCallsSettings
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateBusinesscallssettings($name, BusinessCallsSettings $postBody, $optParams = [])
+    class Google_Service_MyBusinessBusinessCalls_Resource_Locations extends \Google\Service\MyBusinessBusinessCalls\Resource\Locations
     {
     }
 }

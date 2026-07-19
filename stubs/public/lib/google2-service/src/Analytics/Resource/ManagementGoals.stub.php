@@ -21,98 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "goals" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $goals = $analyticsService->management_goals;
- *  </code>
- */
-class ManagementGoals extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\Goal;
+    use Google\Service\Analytics\Goals;
     /**
-     * Gets a goal to which the user has access. (goals.get)
-     *
-     * @param string $accountId Account ID to retrieve the goal for.
-     * @param string $webPropertyId Web property ID to retrieve the goal for.
-     * @param string $profileId View (Profile) ID to retrieve the goal for.
-     * @param string $goalId Goal ID to retrieve the goal for.
-     * @param array $optParams Optional parameters.
-     * @return Goal
-     * @throws \Google\Service\Exception
+     * The "goals" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $goals = $analyticsService->management_goals;
+     *  </code>
      */
-    public function get($accountId, $webPropertyId, $profileId, $goalId, $optParams = [])
+    class ManagementGoals extends \Google\Service\Resource
     {
+        /**
+         * Gets a goal to which the user has access. (goals.get)
+         *
+         * @param string $accountId Account ID to retrieve the goal for.
+         * @param string $webPropertyId Web property ID to retrieve the goal for.
+         * @param string $profileId View (Profile) ID to retrieve the goal for.
+         * @param string $goalId Goal ID to retrieve the goal for.
+         * @param array $optParams Optional parameters.
+         * @return Goal
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $profileId, $goalId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new goal. (goals.insert)
+         *
+         * @param string $accountId Account ID to create the goal for.
+         * @param string $webPropertyId Web property ID to create the goal for.
+         * @param string $profileId View (Profile) ID to create the goal for.
+         * @param Goal $postBody
+         * @param array $optParams Optional parameters.
+         * @return Goal
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, $profileId, Goal $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists goals to which the user has access. (goals.listManagementGoals)
+         *
+         * @param string $accountId Account ID to retrieve goals for. Can either be a
+         * specific account ID or '~all', which refers to all the accounts that user has
+         * access to.
+         * @param string $webPropertyId Web property ID to retrieve goals for. Can
+         * either be a specific web property ID or '~all', which refers to all the web
+         * properties that user has access to.
+         * @param string $profileId View (Profile) ID to retrieve goals for. Can either
+         * be a specific view (profile) ID or '~all', which refers to all the views
+         * (profiles) that user has access to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of goals to include in this
+         * response.
+         * @opt_param int start-index An index of the first goal to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @return Goals
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementGoals($accountId, $webPropertyId, $profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing goal. This method supports patch semantics. (goals.patch)
+         *
+         * @param string $accountId Account ID to update the goal.
+         * @param string $webPropertyId Web property ID to update the goal.
+         * @param string $profileId View (Profile) ID to update the goal.
+         * @param string $goalId Index of the goal to be updated.
+         * @param Goal $postBody
+         * @param array $optParams Optional parameters.
+         * @return Goal
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $webPropertyId, $profileId, $goalId, Goal $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing goal. (goals.update)
+         *
+         * @param string $accountId Account ID to update the goal.
+         * @param string $webPropertyId Web property ID to update the goal.
+         * @param string $profileId View (Profile) ID to update the goal.
+         * @param string $goalId Index of the goal to be updated.
+         * @param Goal $postBody
+         * @param array $optParams Optional parameters.
+         * @return Goal
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, $profileId, $goalId, Goal $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Create a new goal. (goals.insert)
-     *
-     * @param string $accountId Account ID to create the goal for.
-     * @param string $webPropertyId Web property ID to create the goal for.
-     * @param string $profileId View (Profile) ID to create the goal for.
-     * @param Goal $postBody
-     * @param array $optParams Optional parameters.
-     * @return Goal
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementGoals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($accountId, $webPropertyId, $profileId, Goal $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists goals to which the user has access. (goals.listManagementGoals)
-     *
-     * @param string $accountId Account ID to retrieve goals for. Can either be a
-     * specific account ID or '~all', which refers to all the accounts that user has
-     * access to.
-     * @param string $webPropertyId Web property ID to retrieve goals for. Can
-     * either be a specific web property ID or '~all', which refers to all the web
-     * properties that user has access to.
-     * @param string $profileId View (Profile) ID to retrieve goals for. Can either
-     * be a specific view (profile) ID or '~all', which refers to all the views
-     * (profiles) that user has access to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of goals to include in this
-     * response.
-     * @opt_param int start-index An index of the first goal to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @return Goals
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementGoals($accountId, $webPropertyId, $profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing goal. This method supports patch semantics. (goals.patch)
-     *
-     * @param string $accountId Account ID to update the goal.
-     * @param string $webPropertyId Web property ID to update the goal.
-     * @param string $profileId View (Profile) ID to update the goal.
-     * @param string $goalId Index of the goal to be updated.
-     * @param Goal $postBody
-     * @param array $optParams Optional parameters.
-     * @return Goal
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $webPropertyId, $profileId, $goalId, Goal $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing goal. (goals.update)
-     *
-     * @param string $accountId Account ID to update the goal.
-     * @param string $webPropertyId Web property ID to update the goal.
-     * @param string $profileId View (Profile) ID to update the goal.
-     * @param string $goalId Index of the goal to be updated.
-     * @param Goal $postBody
-     * @param array $optParams Optional parameters.
-     * @return Goal
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, $profileId, $goalId, Goal $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementGoals extends \Google\Service\Analytics\Resource\ManagementGoals
     {
     }
 }

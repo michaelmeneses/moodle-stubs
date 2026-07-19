@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PromoteReleaseOperation extends \Google\Model
-{
-    /**
-     * Output only. The starting phase of the rollout created by this operation.
-     *
-     * @var string
-     */
-    public $phase;
-    /**
-     * Output only. The name of the rollout that initiates the `AutomationRun`.
-     *
-     * @var string
-     */
-    public $rollout;
-    /**
-     * Output only. The ID of the target that represents the promotion stage to
-     * which the release will be promoted. The value of this field is the last
-     * segment of a target name.
-     *
-     * @var string
-     */
-    public $targetId;
-    /**
-     * Output only. How long the operation will be paused.
-     *
-     * @var string
-     */
-    public $wait;
-    /**
-     * Output only. The starting phase of the rollout created by this operation.
-     *
-     * @param string $phase
-     */
-    public function setPhase($phase)
+namespace Google\Service\CloudDeploy {
+    class PromoteReleaseOperation extends \Google\Model
     {
+        /**
+         * Output only. The starting phase of the rollout created by this operation.
+         *
+         * @var string
+         */
+        public $phase;
+        /**
+         * Output only. The name of the rollout that initiates the `AutomationRun`.
+         *
+         * @var string
+         */
+        public $rollout;
+        /**
+         * Output only. The ID of the target that represents the promotion stage to
+         * which the release will be promoted. The value of this field is the last
+         * segment of a target name.
+         *
+         * @var string
+         */
+        public $targetId;
+        /**
+         * Output only. How long the operation will be paused.
+         *
+         * @var string
+         */
+        public $wait;
+        /**
+         * Output only. The starting phase of the rollout created by this operation.
+         *
+         * @param string $phase
+         */
+        public function setPhase($phase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhase()
+        {
+        }
+        /**
+         * Output only. The name of the rollout that initiates the `AutomationRun`.
+         *
+         * @param string $rollout
+         */
+        public function setRollout($rollout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * Output only. The ID of the target that represents the promotion stage to
+         * which the release will be promoted. The value of this field is the last
+         * segment of a target name.
+         *
+         * @param string $targetId
+         */
+        public function setTargetId($targetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetId()
+        {
+        }
+        /**
+         * Output only. How long the operation will be paused.
+         *
+         * @param string $wait
+         */
+        public function setWait($wait)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWait()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\PromoteReleaseOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhase()
-    {
-    }
-    /**
-     * Output only. The name of the rollout that initiates the `AutomationRun`.
-     *
-     * @param string $rollout
-     */
-    public function setRollout($rollout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRollout()
-    {
-    }
-    /**
-     * Output only. The ID of the target that represents the promotion stage to
-     * which the release will be promoted. The value of this field is the last
-     * segment of a target name.
-     *
-     * @param string $targetId
-     */
-    public function setTargetId($targetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetId()
-    {
-    }
-    /**
-     * Output only. How long the operation will be paused.
-     *
-     * @param string $wait
-     */
-    public function setWait($wait)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWait()
+    class Google_Service_CloudDeploy_PromoteReleaseOperation extends \Google\Service\CloudDeploy\PromoteReleaseOperation
     {
     }
 }

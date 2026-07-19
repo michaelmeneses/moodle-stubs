@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ColorStyle extends \Google\Model
-{
-    /**
-     * Unspecified theme color
-     */
-    public const THEME_COLOR_THEME_COLOR_TYPE_UNSPECIFIED = 'THEME_COLOR_TYPE_UNSPECIFIED';
-    /**
-     * Represents the primary text color
-     */
-    public const THEME_COLOR_TEXT = 'TEXT';
-    /**
-     * Represents the primary background color
-     */
-    public const THEME_COLOR_BACKGROUND = 'BACKGROUND';
-    /**
-     * Represents the first accent color
-     */
-    public const THEME_COLOR_ACCENT1 = 'ACCENT1';
-    /**
-     * Represents the second accent color
-     */
-    public const THEME_COLOR_ACCENT2 = 'ACCENT2';
-    /**
-     * Represents the third accent color
-     */
-    public const THEME_COLOR_ACCENT3 = 'ACCENT3';
-    /**
-     * Represents the fourth accent color
-     */
-    public const THEME_COLOR_ACCENT4 = 'ACCENT4';
-    /**
-     * Represents the fifth accent color
-     */
-    public const THEME_COLOR_ACCENT5 = 'ACCENT5';
-    /**
-     * Represents the sixth accent color
-     */
-    public const THEME_COLOR_ACCENT6 = 'ACCENT6';
-    /**
-     * Represents the color to use for hyperlinks
-     */
-    public const THEME_COLOR_LINK = 'LINK';
-    protected $rgbColorType = Color::class;
-    protected $rgbColorDataType = '';
-    /**
-     * Theme color.
-     *
-     * @var string
-     */
-    public $themeColor;
-    /**
-     * RGB color. The [`alpha`](https://developers.google.com/workspace/sheets/api
-     * /reference/rest/v4/spreadsheets/other#Color.FIELDS.alpha) value in the [`Co
-     * lor`](https://developers.google.com/workspace/sheets/api/reference/rest/v4/
-     * spreadsheets/other#color) object isn't generally supported.
-     *
-     * @param Color $rgbColor
-     */
-    public function setRgbColor(Color $rgbColor)
+namespace Google\Service\Sheets {
+    class ColorStyle extends \Google\Model
     {
+        /**
+         * Unspecified theme color
+         */
+        public const THEME_COLOR_THEME_COLOR_TYPE_UNSPECIFIED = 'THEME_COLOR_TYPE_UNSPECIFIED';
+        /**
+         * Represents the primary text color
+         */
+        public const THEME_COLOR_TEXT = 'TEXT';
+        /**
+         * Represents the primary background color
+         */
+        public const THEME_COLOR_BACKGROUND = 'BACKGROUND';
+        /**
+         * Represents the first accent color
+         */
+        public const THEME_COLOR_ACCENT1 = 'ACCENT1';
+        /**
+         * Represents the second accent color
+         */
+        public const THEME_COLOR_ACCENT2 = 'ACCENT2';
+        /**
+         * Represents the third accent color
+         */
+        public const THEME_COLOR_ACCENT3 = 'ACCENT3';
+        /**
+         * Represents the fourth accent color
+         */
+        public const THEME_COLOR_ACCENT4 = 'ACCENT4';
+        /**
+         * Represents the fifth accent color
+         */
+        public const THEME_COLOR_ACCENT5 = 'ACCENT5';
+        /**
+         * Represents the sixth accent color
+         */
+        public const THEME_COLOR_ACCENT6 = 'ACCENT6';
+        /**
+         * Represents the color to use for hyperlinks
+         */
+        public const THEME_COLOR_LINK = 'LINK';
+        protected $rgbColorType = Color::class;
+        protected $rgbColorDataType = '';
+        /**
+         * Theme color.
+         *
+         * @var string
+         */
+        public $themeColor;
+        /**
+         * RGB color. The [`alpha`](https://developers.google.com/workspace/sheets/api
+         * /reference/rest/v4/spreadsheets/other#Color.FIELDS.alpha) value in the [`Co
+         * lor`](https://developers.google.com/workspace/sheets/api/reference/rest/v4/
+         * spreadsheets/other#color) object isn't generally supported.
+         *
+         * @param Color $rgbColor
+         */
+        public function setRgbColor(Color $rgbColor)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getRgbColor()
+        {
+        }
+        /**
+         * Theme color.
+         *
+         * Accepted values: THEME_COLOR_TYPE_UNSPECIFIED, TEXT, BACKGROUND, ACCENT1,
+         * ACCENT2, ACCENT3, ACCENT4, ACCENT5, ACCENT6, LINK
+         *
+         * @param self::THEME_COLOR_* $themeColor
+         */
+        public function setThemeColor($themeColor)
+        {
+        }
+        /**
+         * @return self::THEME_COLOR_*
+         */
+        public function getThemeColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\ColorStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRgbColor()
-    {
-    }
-    /**
-     * Theme color.
-     *
-     * Accepted values: THEME_COLOR_TYPE_UNSPECIFIED, TEXT, BACKGROUND, ACCENT1,
-     * ACCENT2, ACCENT3, ACCENT4, ACCENT5, ACCENT6, LINK
-     *
-     * @param self::THEME_COLOR_* $themeColor
-     */
-    public function setThemeColor($themeColor)
-    {
-    }
-    /**
-     * @return self::THEME_COLOR_*
-     */
-    public function getThemeColor()
+    class Google_Service_Sheets_ColorStyle extends \Google\Service\Sheets\ColorStyle
     {
     }
 }

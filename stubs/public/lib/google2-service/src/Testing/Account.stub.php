@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Account extends \Google\Model
-{
-    protected $googleAutoType = GoogleAuto::class;
-    protected $googleAutoDataType = '';
-    /**
-     * An automatic google login account.
-     *
-     * @param GoogleAuto $googleAuto
-     */
-    public function setGoogleAuto(GoogleAuto $googleAuto)
+namespace Google\Service\Testing {
+    class Account extends \Google\Model
     {
+        protected $googleAutoType = GoogleAuto::class;
+        protected $googleAutoDataType = '';
+        /**
+         * An automatic google login account.
+         *
+         * @param GoogleAuto $googleAuto
+         */
+        public function setGoogleAuto(GoogleAuto $googleAuto)
+        {
+        }
+        /**
+         * @return GoogleAuto
+         */
+        public function getGoogleAuto()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAuto
+     * Runtime class alias of \Google\Service\Testing\Account registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleAuto()
+    class Google_Service_Testing_Account extends \Google\Service\Testing\Account
     {
     }
 }

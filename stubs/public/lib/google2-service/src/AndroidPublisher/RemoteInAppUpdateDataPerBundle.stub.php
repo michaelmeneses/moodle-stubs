@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RemoteInAppUpdateDataPerBundle extends \Google\Model
-{
-    /**
-     * Total number of devices which have been rescued.
-     *
-     * @var string
-     */
-    public $recoveredDeviceCount;
-    /**
-     * Total number of devices affected by this recovery action associated with
-     * bundle of the app.
-     *
-     * @var string
-     */
-    public $totalDeviceCount;
-    /**
-     * Version Code corresponding to the target bundle.
-     *
-     * @var string
-     */
-    public $versionCode;
-    /**
-     * Total number of devices which have been rescued.
-     *
-     * @param string $recoveredDeviceCount
-     */
-    public function setRecoveredDeviceCount($recoveredDeviceCount)
+namespace Google\Service\AndroidPublisher {
+    class RemoteInAppUpdateDataPerBundle extends \Google\Model
     {
+        /**
+         * Total number of devices which have been rescued.
+         *
+         * @var string
+         */
+        public $recoveredDeviceCount;
+        /**
+         * Total number of devices affected by this recovery action associated with
+         * bundle of the app.
+         *
+         * @var string
+         */
+        public $totalDeviceCount;
+        /**
+         * Version Code corresponding to the target bundle.
+         *
+         * @var string
+         */
+        public $versionCode;
+        /**
+         * Total number of devices which have been rescued.
+         *
+         * @param string $recoveredDeviceCount
+         */
+        public function setRecoveredDeviceCount($recoveredDeviceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecoveredDeviceCount()
+        {
+        }
+        /**
+         * Total number of devices affected by this recovery action associated with
+         * bundle of the app.
+         *
+         * @param string $totalDeviceCount
+         */
+        public function setTotalDeviceCount($totalDeviceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalDeviceCount()
+        {
+        }
+        /**
+         * Version Code corresponding to the target bundle.
+         *
+         * @param string $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\RemoteInAppUpdateDataPerBundle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecoveredDeviceCount()
-    {
-    }
-    /**
-     * Total number of devices affected by this recovery action associated with
-     * bundle of the app.
-     *
-     * @param string $totalDeviceCount
-     */
-    public function setTotalDeviceCount($totalDeviceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalDeviceCount()
-    {
-    }
-    /**
-     * Version Code corresponding to the target bundle.
-     *
-     * @param string $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionCode()
+    class Google_Service_AndroidPublisher_RemoteInAppUpdateDataPerBundle extends \Google\Service\AndroidPublisher\RemoteInAppUpdateDataPerBundle
     {
     }
 }

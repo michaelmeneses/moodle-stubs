@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2EnvVar extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $value;
-    protected $valueSourceType = GoogleCloudRunOpV2EnvVarSource::class;
-    protected $valueSourceDataType = '';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2EnvVar extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $value;
+        protected $valueSourceType = GoogleCloudRunOpV2EnvVarSource::class;
+        protected $valueSourceDataType = '';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2EnvVarSource
+         */
+        public function setValueSource(GoogleCloudRunOpV2EnvVarSource $valueSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2EnvVarSource
+         */
+        public function getValueSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2EnvVar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2EnvVarSource
-     */
-    public function setValueSource(GoogleCloudRunOpV2EnvVarSource $valueSource)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2EnvVarSource
-     */
-    public function getValueSource()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2EnvVar extends \Google\Service\CloudRun\GoogleCloudRunOpV2EnvVar
     {
     }
 }

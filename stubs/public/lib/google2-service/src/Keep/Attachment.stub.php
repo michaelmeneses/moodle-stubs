@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class Attachment extends \Google\Collection
-{
-    protected $collection_key = 'mimeType';
-    /**
-     * The MIME types (IANA media types) in which the attachment is available.
-     *
-     * @var string[]
-     */
-    public $mimeType;
-    /**
-     * The resource name;
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The MIME types (IANA media types) in which the attachment is available.
-     *
-     * @param string[] $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\Keep {
+    class Attachment extends \Google\Collection
     {
+        protected $collection_key = 'mimeType';
+        /**
+         * The MIME types (IANA media types) in which the attachment is available.
+         *
+         * @var string[]
+         */
+        public $mimeType;
+        /**
+         * The resource name;
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The MIME types (IANA media types) in which the attachment is available.
+         *
+         * @param string[] $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The resource name;
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Keep\Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The resource name;
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Keep_Attachment extends \Google\Service\Keep\Attachment
     {
     }
 }

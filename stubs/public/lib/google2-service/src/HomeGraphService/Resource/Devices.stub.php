@@ -21,83 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService\Resource;
-
-/**
- * The "devices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $homegraphService = new Google\Service\HomeGraphService(...);
- *   $devices = $homegraphService->devices;
- *  </code>
- */
-class Devices extends \Google\Service\Resource
-{
+namespace Google\Service\HomeGraphService\Resource {
+    use Google\Service\HomeGraphService\QueryRequest;
+    use Google\Service\HomeGraphService\QueryResponse;
+    use Google\Service\HomeGraphService\ReportStateAndNotificationRequest;
+    use Google\Service\HomeGraphService\ReportStateAndNotificationResponse;
+    use Google\Service\HomeGraphService\RequestSyncDevicesRequest;
+    use Google\Service\HomeGraphService\RequestSyncDevicesResponse;
+    use Google\Service\HomeGraphService\SyncRequest;
+    use Google\Service\HomeGraphService\SyncResponse;
     /**
-     * Gets the current states in Home Graph for the given set of the third-party
-     * user's devices. The third-party user's identity is passed in via the
-     * `agent_user_id` (see QueryRequest). This request must be authorized using
-     * service account credentials from your Actions console project.
-     * (devices.query)
-     *
-     * @param QueryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryResponse
-     * @throws \Google\Service\Exception
+     * The "devices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $homegraphService = new Google\Service\HomeGraphService(...);
+     *   $devices = $homegraphService->devices;
+     *  </code>
      */
-    public function query(QueryRequest $postBody, $optParams = [])
+    class Devices extends \Google\Service\Resource
     {
+        /**
+         * Gets the current states in Home Graph for the given set of the third-party
+         * user's devices. The third-party user's identity is passed in via the
+         * `agent_user_id` (see QueryRequest). This request must be authorized using
+         * service account credentials from your Actions console project.
+         * (devices.query)
+         *
+         * @param QueryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query(QueryRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Reports device state and optionally sends device notifications. Called by
+         * your smart home Action when the state of a third-party device changes or you
+         * need to send a notification about the device. See [Implement Report
+         * State](https://developers.home.google.com/cloud-to-cloud/integration/report-
+         * state) for more information. This method updates the device state according
+         * to its declared [traits](https://developers.home.google.com/cloud-to-
+         * cloud/primer/device-types-and-traits). Publishing a new state value outside
+         * of these traits will result in an `INVALID_ARGUMENT` error response. The
+         * third-party user's identity is passed in via the `agent_user_id` (see
+         * ReportStateAndNotificationRequest). This request must be authorized using
+         * service account credentials from your Actions console project.
+         * (devices.reportStateAndNotification)
+         *
+         * @param ReportStateAndNotificationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReportStateAndNotificationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reportStateAndNotification(ReportStateAndNotificationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Requests Google to send an `action.devices.SYNC`
+         * [intent](https://developers.home.google.com/cloud-to-cloud/intents/sync) to
+         * your smart home Action to update device metadata for the given user. The
+         * third-party user's identity is passed via the `agent_user_id` (see
+         * RequestSyncDevicesRequest). This request must be authorized using service
+         * account credentials from your Actions console project. (devices.requestSync)
+         *
+         * @param RequestSyncDevicesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RequestSyncDevicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function requestSync(RequestSyncDevicesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets all the devices associated with the given third-party user. The third-
+         * party user's identity is passed in via the `agent_user_id` (see SyncRequest).
+         * This request must be authorized using service account credentials from your
+         * Actions console project. (devices.sync)
+         *
+         * @param SyncRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SyncResponse
+         * @throws \Google\Service\Exception
+         */
+        public function sync(SyncRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Reports device state and optionally sends device notifications. Called by
-     * your smart home Action when the state of a third-party device changes or you
-     * need to send a notification about the device. See [Implement Report
-     * State](https://developers.home.google.com/cloud-to-cloud/integration/report-
-     * state) for more information. This method updates the device state according
-     * to its declared [traits](https://developers.home.google.com/cloud-to-
-     * cloud/primer/device-types-and-traits). Publishing a new state value outside
-     * of these traits will result in an `INVALID_ARGUMENT` error response. The
-     * third-party user's identity is passed in via the `agent_user_id` (see
-     * ReportStateAndNotificationRequest). This request must be authorized using
-     * service account credentials from your Actions console project.
-     * (devices.reportStateAndNotification)
-     *
-     * @param ReportStateAndNotificationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReportStateAndNotificationResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\HomeGraphService\Resource\Devices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function reportStateAndNotification(ReportStateAndNotificationRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Requests Google to send an `action.devices.SYNC`
-     * [intent](https://developers.home.google.com/cloud-to-cloud/intents/sync) to
-     * your smart home Action to update device metadata for the given user. The
-     * third-party user's identity is passed via the `agent_user_id` (see
-     * RequestSyncDevicesRequest). This request must be authorized using service
-     * account credentials from your Actions console project. (devices.requestSync)
-     *
-     * @param RequestSyncDevicesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RequestSyncDevicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function requestSync(RequestSyncDevicesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets all the devices associated with the given third-party user. The third-
-     * party user's identity is passed in via the `agent_user_id` (see SyncRequest).
-     * This request must be authorized using service account credentials from your
-     * Actions console project. (devices.sync)
-     *
-     * @param SyncRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SyncResponse
-     * @throws \Google\Service\Exception
-     */
-    public function sync(SyncRequest $postBody, $optParams = [])
+    class Google_Service_HomeGraphService_Resource_Devices extends \Google\Service\HomeGraphService\Resource\Devices
     {
     }
 }

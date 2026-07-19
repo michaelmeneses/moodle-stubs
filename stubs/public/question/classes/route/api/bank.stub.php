@@ -22,6 +22,32 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\route\api;
 
+use core\context\course;
+use core\context\module;
+use core\param;
+use core\router\parameters\query_course;
+use core\router\parameters\query_coursemodule;
+use core\router\require_login;
+use core\router\route;
+use core\router\schema\example;
+use core\router\schema\objects\array_of_strings;
+use core\router\schema\objects\array_of_things;
+use core\router\schema\objects\schema_object;
+use core\router\schema\parameters\path_parameter;
+use core\router\schema\parameters\query_parameter;
+use core\router\schema\response\content\json_media_type;
+use core\router\schema\response\payload_response;
+use core\router\schema\response\response;
+use core_question\local\bank\formatted_bank;
+use core_question\local\bank\question_bank_helper;
+use core_question\local\bank\question_counts;
+use core_question\local\bank\question_edit_contexts;
+use core_question\local\bank\question_version_status;
+use core_question\output\question_category_selector;
+use core_question\question_category;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use stdClass;
 /**
  * Web service functions related to question banks
  *
@@ -55,7 +81,7 @@ class bank
      * @param question_bank_helper $helper Injected dependency.
      * @return payload_response A list of question banks with formatted names, and whether they are shared and recently used.
      */
-    #[route(path: '/banks', queryparams: [new query_course(required: true), new query_coursemodule('currentmodule'), new query_parameter(name: 'includeshared', type: param::BOOL, default: true), new query_parameter(name: 'includerecent', type: param::BOOL, default: false), new query_parameter(name: 'includeprivate', type: param::BOOL, default: false)], responses: [new response(statuscode: 200, description: 'OK', content: [new json_media_type(schema: new schema_object(content: ['banks' => new array_of_things(thingtype: formatted_bank::class)]))])], requirelogin: new require_login(true, courseattributename: 'course'))]
+    #[route(path: '/banks', queryparams: [new query_course(required: true), new query_coursemodule('currentmodule'), new query_parameter(name: 'includeshared', type: param::BOOL, default: true), new query_parameter(name: 'includerecent', type: param::BOOL, default: false)], responses: [new response(statuscode: 200, description: 'OK', content: [new json_media_type(schema: new schema_object(content: ['banks' => new array_of_things(thingtype: formatted_bank::class)]))])], requirelogin: new require_login(true, courseattributename: 'course'))]
     public function banks(ServerRequestInterface $request, ResponseInterface $response, course $coursecontext, module $currentmodulecontext, question_bank_helper $helper): payload_response
     {
     }

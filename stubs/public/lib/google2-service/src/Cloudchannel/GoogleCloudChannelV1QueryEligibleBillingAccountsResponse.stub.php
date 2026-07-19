@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1QueryEligibleBillingAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'skuPurchaseGroups';
-    protected $skuPurchaseGroupsType = GoogleCloudChannelV1SkuPurchaseGroup::class;
-    protected $skuPurchaseGroupsDataType = 'array';
-    /**
-     * List of SKU purchase groups where each group represents a set of SKUs that
-     * must be purchased using the same billing account. Each SKU from
-     * [QueryEligibleBillingAccountsRequest.skus] will appear in exactly one SKU
-     * group.
-     *
-     * @param GoogleCloudChannelV1SkuPurchaseGroup[] $skuPurchaseGroups
-     */
-    public function setSkuPurchaseGroups($skuPurchaseGroups)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1QueryEligibleBillingAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'skuPurchaseGroups';
+        protected $skuPurchaseGroupsType = GoogleCloudChannelV1SkuPurchaseGroup::class;
+        protected $skuPurchaseGroupsDataType = 'array';
+        /**
+         * List of SKU purchase groups where each group represents a set of SKUs that
+         * must be purchased using the same billing account. Each SKU from
+         * [QueryEligibleBillingAccountsRequest.skus] will appear in exactly one SKU
+         * group.
+         *
+         * @param GoogleCloudChannelV1SkuPurchaseGroup[] $skuPurchaseGroups
+         */
+        public function setSkuPurchaseGroups($skuPurchaseGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1SkuPurchaseGroup[]
+         */
+        public function getSkuPurchaseGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1SkuPurchaseGroup[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1QueryEligibleBillingAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSkuPurchaseGroups()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1QueryEligibleBillingAccountsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1QueryEligibleBillingAccountsResponse
     {
     }
 }

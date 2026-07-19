@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Secret extends \Google\Model
-{
-    /**
-     * Required. The resource name of the secret version in the format, format as:
-     * `projects/secrets/versions`.
-     *
-     * @var string
-     */
-    public $secretVersion;
-    /**
-     * Required. The resource name of the secret version in the format, format as:
-     * `projects/secrets/versions`.
-     *
-     * @param string $secretVersion
-     */
-    public function setSecretVersion($secretVersion)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Secret extends \Google\Model
     {
+        /**
+         * Required. The resource name of the secret version in the format, format as:
+         * `projects/secrets/versions`.
+         *
+         * @var string
+         */
+        public $secretVersion;
+        /**
+         * Required. The resource name of the secret version in the format, format as:
+         * `projects/secrets/versions`.
+         *
+         * @param string $secretVersion
+         */
+        public function setSecretVersion($secretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretVersion()
+    class Google_Service_APIhub_GoogleCloudApihubV1Secret extends \Google\Service\APIhub\GoogleCloudApihubV1Secret
     {
     }
 }

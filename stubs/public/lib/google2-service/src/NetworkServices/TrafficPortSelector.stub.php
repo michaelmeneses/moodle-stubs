@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class TrafficPortSelector extends \Google\Collection
-{
-    protected $collection_key = 'ports';
-    /**
-     * Optional. A list of ports. Can be port numbers or port range (example,
-     * [80-90] specifies all ports from 80 to 90, including 80 and 90) or named
-     * ports or * to specify all ports. If the list is empty, all ports are
-     * selected.
-     *
-     * @var string[]
-     */
-    public $ports;
-    /**
-     * Optional. A list of ports. Can be port numbers or port range (example,
-     * [80-90] specifies all ports from 80 to 90, including 80 and 90) or named
-     * ports or * to specify all ports. If the list is empty, all ports are
-     * selected.
-     *
-     * @param string[] $ports
-     */
-    public function setPorts($ports)
+namespace Google\Service\NetworkServices {
+    class TrafficPortSelector extends \Google\Collection
     {
+        protected $collection_key = 'ports';
+        /**
+         * Optional. A list of ports. Can be port numbers or port range (example,
+         * [80-90] specifies all ports from 80 to 90, including 80 and 90) or named
+         * ports or * to specify all ports. If the list is empty, all ports are
+         * selected.
+         *
+         * @var string[]
+         */
+        public $ports;
+        /**
+         * Optional. A list of ports. Can be port numbers or port range (example,
+         * [80-90] specifies all ports from 80 to 90, including 80 and 90) or named
+         * ports or * to specify all ports. If the list is empty, all ports are
+         * selected.
+         *
+         * @param string[] $ports
+         */
+        public function setPorts($ports)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPorts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetworkServices\TrafficPortSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPorts()
+    class Google_Service_NetworkServices_TrafficPortSelector extends \Google\Service\NetworkServices\TrafficPortSelector
     {
     }
 }

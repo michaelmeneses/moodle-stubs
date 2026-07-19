@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ImageModuleData extends \Google\Model
-{
-    /**
-     * The ID associated with an image module. This field is here to enable ease
-     * of management of image modules.
-     *
-     * @var string
-     */
-    public $id;
-    protected $mainImageType = Image::class;
-    protected $mainImageDataType = '';
-    /**
-     * The ID associated with an image module. This field is here to enable ease
-     * of management of image modules.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Walletobjects {
+    class ImageModuleData extends \Google\Model
     {
+        /**
+         * The ID associated with an image module. This field is here to enable ease
+         * of management of image modules.
+         *
+         * @var string
+         */
+        public $id;
+        protected $mainImageType = Image::class;
+        protected $mainImageDataType = '';
+        /**
+         * The ID associated with an image module. This field is here to enable ease
+         * of management of image modules.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A 100% width image.
+         *
+         * @param Image $mainImage
+         */
+        public function setMainImage(Image $mainImage)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getMainImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\ImageModuleData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A 100% width image.
-     *
-     * @param Image $mainImage
-     */
-    public function setMainImage(Image $mainImage)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getMainImage()
+    class Google_Service_Walletobjects_ImageModuleData extends \Google\Service\Walletobjects\ImageModuleData
     {
     }
 }

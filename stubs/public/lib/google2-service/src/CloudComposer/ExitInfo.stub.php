@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ExitInfo extends \Google\Model
-{
-    /**
-     * Error message. Empty if there was no error.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * The exit code from the command execution.
-     *
-     * @var int
-     */
-    public $exitCode;
-    /**
-     * Error message. Empty if there was no error.
-     *
-     * @param string $error
-     */
-    public function setError($error)
+namespace Google\Service\CloudComposer {
+    class ExitInfo extends \Google\Model
     {
+        /**
+         * Error message. Empty if there was no error.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * The exit code from the command execution.
+         *
+         * @var int
+         */
+        public $exitCode;
+        /**
+         * Error message. Empty if there was no error.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The exit code from the command execution.
+         *
+         * @param int $exitCode
+         */
+        public function setExitCode($exitCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExitCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\ExitInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The exit code from the command execution.
-     *
-     * @param int $exitCode
-     */
-    public function setExitCode($exitCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExitCode()
+    class Google_Service_CloudComposer_ExitInfo extends \Google\Service\CloudComposer\ExitInfo
     {
     }
 }

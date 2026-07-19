@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Color extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $alpha;
-    /**
-     * @var float
-     */
-    public $blue;
-    /**
-     * @var float
-     */
-    public $green;
-    /**
-     * @var float
-     */
-    public $red;
-    /**
-     * @param float
-     */
-    public function setAlpha($alpha)
+namespace Google\Service\CloudSearch {
+    class Color extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $alpha;
+        /**
+         * @var float
+         */
+        public $blue;
+        /**
+         * @var float
+         */
+        public $green;
+        /**
+         * @var float
+         */
+        public $red;
+        /**
+         * @param float
+         */
+        public function setAlpha($alpha)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAlpha()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setBlue($blue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBlue()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setGreen($green)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getGreen()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setRed($red)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudSearch\Color registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlpha()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setBlue($blue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBlue()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setGreen($green)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getGreen()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setRed($red)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRed()
+    class Google_Service_CloudSearch_Color extends \Google\Service\CloudSearch\Color
     {
     }
 }

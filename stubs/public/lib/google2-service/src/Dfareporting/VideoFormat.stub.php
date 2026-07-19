@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class VideoFormat extends \Google\Model
-{
-    public const FILE_TYPE_FLV = 'FLV';
-    public const FILE_TYPE_THREEGPP = 'THREEGPP';
-    public const FILE_TYPE_MP4 = 'MP4';
-    public const FILE_TYPE_WEBM = 'WEBM';
-    public const FILE_TYPE_M3U8 = 'M3U8';
-    /**
-     * File type of the video format.
-     *
-     * @var string
-     */
-    public $fileType;
-    /**
-     * ID of the video format.
-     *
-     * @var int
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#videoFormat".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $resolutionType = Size::class;
-    protected $resolutionDataType = '';
-    /**
-     * The target bit rate of this video format.
-     *
-     * @var int
-     */
-    public $targetBitRate;
-    /**
-     * File type of the video format.
-     *
-     * Accepted values: FLV, THREEGPP, MP4, WEBM, M3U8
-     *
-     * @param self::FILE_TYPE_* $fileType
-     */
-    public function setFileType($fileType)
+namespace Google\Service\Dfareporting {
+    class VideoFormat extends \Google\Model
     {
+        public const FILE_TYPE_FLV = 'FLV';
+        public const FILE_TYPE_THREEGPP = 'THREEGPP';
+        public const FILE_TYPE_MP4 = 'MP4';
+        public const FILE_TYPE_WEBM = 'WEBM';
+        public const FILE_TYPE_M3U8 = 'M3U8';
+        /**
+         * File type of the video format.
+         *
+         * @var string
+         */
+        public $fileType;
+        /**
+         * ID of the video format.
+         *
+         * @var int
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#videoFormat".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $resolutionType = Size::class;
+        protected $resolutionDataType = '';
+        /**
+         * The target bit rate of this video format.
+         *
+         * @var int
+         */
+        public $targetBitRate;
+        /**
+         * File type of the video format.
+         *
+         * Accepted values: FLV, THREEGPP, MP4, WEBM, M3U8
+         *
+         * @param self::FILE_TYPE_* $fileType
+         */
+        public function setFileType($fileType)
+        {
+        }
+        /**
+         * @return self::FILE_TYPE_*
+         */
+        public function getFileType()
+        {
+        }
+        /**
+         * ID of the video format.
+         *
+         * @param int $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#videoFormat".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The resolution of this video format.
+         *
+         * @param Size $resolution
+         */
+        public function setResolution(Size $resolution)
+        {
+        }
+        /**
+         * @return Size
+         */
+        public function getResolution()
+        {
+        }
+        /**
+         * The target bit rate of this video format.
+         *
+         * @param int $targetBitRate
+         */
+        public function setTargetBitRate($targetBitRate)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetBitRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FILE_TYPE_*
+     * Runtime class alias of \Google\Service\Dfareporting\VideoFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileType()
-    {
-    }
-    /**
-     * ID of the video format.
-     *
-     * @param int $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#videoFormat".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The resolution of this video format.
-     *
-     * @param Size $resolution
-     */
-    public function setResolution(Size $resolution)
-    {
-    }
-    /**
-     * @return Size
-     */
-    public function getResolution()
-    {
-    }
-    /**
-     * The target bit rate of this video format.
-     *
-     * @param int $targetBitRate
-     */
-    public function setTargetBitRate($targetBitRate)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetBitRate()
+    class Google_Service_Dfareporting_VideoFormat extends \Google\Service\Dfareporting\VideoFormat
     {
     }
 }

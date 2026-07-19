@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExplainResponse extends \Google\Collection
-{
-    protected $collection_key = 'predictions';
-    /**
-     * ID of the Endpoint's DeployedModel that served this explanation.
-     *
-     * @var string
-     */
-    public $deployedModelId;
-    protected $explanationsType = GoogleCloudAiplatformV1Explanation::class;
-    protected $explanationsDataType = 'array';
-    /**
-     * The predictions that are the output of the predictions call. Same as
-     * PredictResponse.predictions.
-     *
-     * @var array[]
-     */
-    public $predictions;
-    /**
-     * ID of the Endpoint's DeployedModel that served this explanation.
-     *
-     * @param string $deployedModelId
-     */
-    public function setDeployedModelId($deployedModelId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExplainResponse extends \Google\Collection
     {
+        protected $collection_key = 'predictions';
+        /**
+         * ID of the Endpoint's DeployedModel that served this explanation.
+         *
+         * @var string
+         */
+        public $deployedModelId;
+        protected $explanationsType = GoogleCloudAiplatformV1Explanation::class;
+        protected $explanationsDataType = 'array';
+        /**
+         * The predictions that are the output of the predictions call. Same as
+         * PredictResponse.predictions.
+         *
+         * @var array[]
+         */
+        public $predictions;
+        /**
+         * ID of the Endpoint's DeployedModel that served this explanation.
+         *
+         * @param string $deployedModelId
+         */
+        public function setDeployedModelId($deployedModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedModelId()
+        {
+        }
+        /**
+         * The explanations of the Model's PredictResponse.predictions. It has the
+         * same number of elements as instances to be explained.
+         *
+         * @param GoogleCloudAiplatformV1Explanation[] $explanations
+         */
+        public function setExplanations($explanations)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Explanation[]
+         */
+        public function getExplanations()
+        {
+        }
+        /**
+         * The predictions that are the output of the predictions call. Same as
+         * PredictResponse.predictions.
+         *
+         * @param array[] $predictions
+         */
+        public function setPredictions($predictions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPredictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModelId()
-    {
-    }
-    /**
-     * The explanations of the Model's PredictResponse.predictions. It has the
-     * same number of elements as instances to be explained.
-     *
-     * @param GoogleCloudAiplatformV1Explanation[] $explanations
-     */
-    public function setExplanations($explanations)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Explanation[]
-     */
-    public function getExplanations()
-    {
-    }
-    /**
-     * The predictions that are the output of the predictions call. Same as
-     * PredictResponse.predictions.
-     *
-     * @param array[] $predictions
-     */
-    public function setPredictions($predictions)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPredictions()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExplainResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplainResponse
     {
     }
 }

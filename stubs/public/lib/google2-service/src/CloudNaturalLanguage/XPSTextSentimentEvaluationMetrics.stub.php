@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTextSentimentEvaluationMetrics extends \Google\Model
-{
-    protected $confusionMatrixType = XPSConfusionMatrix::class;
-    protected $confusionMatrixDataType = '';
-    /**
-     * Output only. The harmonic mean of recall and precision.
-     *
-     * @var float
-     */
-    public $f1Score;
-    /**
-     * Output only. Linear weighted kappa. Only set for the overall model
-     * evaluation, not for evaluation of a single annotation spec.
-     *
-     * @var float
-     */
-    public $linearKappa;
-    /**
-     * Output only. Mean absolute error. Only set for the overall model
-     * evaluation, not for evaluation of a single annotation spec.
-     *
-     * @var float
-     */
-    public $meanAbsoluteError;
-    /**
-     * Output only. Mean squared error. Only set for the overall model evaluation,
-     * not for evaluation of a single annotation spec.
-     *
-     * @var float
-     */
-    public $meanSquaredError;
-    /**
-     * Output only. Precision.
-     *
-     * @var float
-     */
-    public $precision;
-    /**
-     * Output only. Quadratic weighted kappa. Only set for the overall model
-     * evaluation, not for evaluation of a single annotation spec.
-     *
-     * @var float
-     */
-    public $quadraticKappa;
-    /**
-     * Output only. Recall.
-     *
-     * @var float
-     */
-    public $recall;
-    /**
-     * Output only. Confusion matrix of the evaluation. Only set for the overall
-     * model evaluation, not for evaluation of a single annotation spec.
-     *
-     * @param XPSConfusionMatrix $confusionMatrix
-     */
-    public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTextSentimentEvaluationMetrics extends \Google\Model
     {
+        protected $confusionMatrixType = XPSConfusionMatrix::class;
+        protected $confusionMatrixDataType = '';
+        /**
+         * Output only. The harmonic mean of recall and precision.
+         *
+         * @var float
+         */
+        public $f1Score;
+        /**
+         * Output only. Linear weighted kappa. Only set for the overall model
+         * evaluation, not for evaluation of a single annotation spec.
+         *
+         * @var float
+         */
+        public $linearKappa;
+        /**
+         * Output only. Mean absolute error. Only set for the overall model
+         * evaluation, not for evaluation of a single annotation spec.
+         *
+         * @var float
+         */
+        public $meanAbsoluteError;
+        /**
+         * Output only. Mean squared error. Only set for the overall model evaluation,
+         * not for evaluation of a single annotation spec.
+         *
+         * @var float
+         */
+        public $meanSquaredError;
+        /**
+         * Output only. Precision.
+         *
+         * @var float
+         */
+        public $precision;
+        /**
+         * Output only. Quadratic weighted kappa. Only set for the overall model
+         * evaluation, not for evaluation of a single annotation spec.
+         *
+         * @var float
+         */
+        public $quadraticKappa;
+        /**
+         * Output only. Recall.
+         *
+         * @var float
+         */
+        public $recall;
+        /**
+         * Output only. Confusion matrix of the evaluation. Only set for the overall
+         * model evaluation, not for evaluation of a single annotation spec.
+         *
+         * @param XPSConfusionMatrix $confusionMatrix
+         */
+        public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
+        {
+        }
+        /**
+         * @return XPSConfusionMatrix
+         */
+        public function getConfusionMatrix()
+        {
+        }
+        /**
+         * Output only. The harmonic mean of recall and precision.
+         *
+         * @param float $f1Score
+         */
+        public function setF1Score($f1Score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getF1Score()
+        {
+        }
+        /**
+         * Output only. Linear weighted kappa. Only set for the overall model
+         * evaluation, not for evaluation of a single annotation spec.
+         *
+         * @param float $linearKappa
+         */
+        public function setLinearKappa($linearKappa)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLinearKappa()
+        {
+        }
+        /**
+         * Output only. Mean absolute error. Only set for the overall model
+         * evaluation, not for evaluation of a single annotation spec.
+         *
+         * @param float $meanAbsoluteError
+         */
+        public function setMeanAbsoluteError($meanAbsoluteError)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanAbsoluteError()
+        {
+        }
+        /**
+         * Output only. Mean squared error. Only set for the overall model evaluation,
+         * not for evaluation of a single annotation spec.
+         *
+         * @param float $meanSquaredError
+         */
+        public function setMeanSquaredError($meanSquaredError)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanSquaredError()
+        {
+        }
+        /**
+         * Output only. Precision.
+         *
+         * @param float $precision
+         */
+        public function setPrecision($precision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPrecision()
+        {
+        }
+        /**
+         * Output only. Quadratic weighted kappa. Only set for the overall model
+         * evaluation, not for evaluation of a single annotation spec.
+         *
+         * @param float $quadraticKappa
+         */
+        public function setQuadraticKappa($quadraticKappa)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getQuadraticKappa()
+        {
+        }
+        /**
+         * Output only. Recall.
+         *
+         * @param float $recall
+         */
+        public function setRecall($recall)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRecall()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSConfusionMatrix
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTextSentimentEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfusionMatrix()
-    {
-    }
-    /**
-     * Output only. The harmonic mean of recall and precision.
-     *
-     * @param float $f1Score
-     */
-    public function setF1Score($f1Score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getF1Score()
-    {
-    }
-    /**
-     * Output only. Linear weighted kappa. Only set for the overall model
-     * evaluation, not for evaluation of a single annotation spec.
-     *
-     * @param float $linearKappa
-     */
-    public function setLinearKappa($linearKappa)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLinearKappa()
-    {
-    }
-    /**
-     * Output only. Mean absolute error. Only set for the overall model
-     * evaluation, not for evaluation of a single annotation spec.
-     *
-     * @param float $meanAbsoluteError
-     */
-    public function setMeanAbsoluteError($meanAbsoluteError)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanAbsoluteError()
-    {
-    }
-    /**
-     * Output only. Mean squared error. Only set for the overall model evaluation,
-     * not for evaluation of a single annotation spec.
-     *
-     * @param float $meanSquaredError
-     */
-    public function setMeanSquaredError($meanSquaredError)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanSquaredError()
-    {
-    }
-    /**
-     * Output only. Precision.
-     *
-     * @param float $precision
-     */
-    public function setPrecision($precision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPrecision()
-    {
-    }
-    /**
-     * Output only. Quadratic weighted kappa. Only set for the overall model
-     * evaluation, not for evaluation of a single annotation spec.
-     *
-     * @param float $quadraticKappa
-     */
-    public function setQuadraticKappa($quadraticKappa)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getQuadraticKappa()
-    {
-    }
-    /**
-     * Output only. Recall.
-     *
-     * @param float $recall
-     */
-    public function setRecall($recall)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRecall()
+    class Google_Service_CloudNaturalLanguage_XPSTextSentimentEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSTextSentimentEvaluationMetrics
     {
     }
 }

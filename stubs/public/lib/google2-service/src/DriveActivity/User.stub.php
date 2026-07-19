@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class User extends \Google\Model
-{
-    protected $deletedUserType = DeletedUser::class;
-    protected $deletedUserDataType = '';
-    protected $knownUserType = KnownUser::class;
-    protected $knownUserDataType = '';
-    protected $unknownUserType = UnknownUser::class;
-    protected $unknownUserDataType = '';
-    /**
-     * A user whose account has since been deleted.
-     *
-     * @param DeletedUser $deletedUser
-     */
-    public function setDeletedUser(DeletedUser $deletedUser)
+namespace Google\Service\DriveActivity {
+    class User extends \Google\Model
     {
+        protected $deletedUserType = DeletedUser::class;
+        protected $deletedUserDataType = '';
+        protected $knownUserType = KnownUser::class;
+        protected $knownUserDataType = '';
+        protected $unknownUserType = UnknownUser::class;
+        protected $unknownUserDataType = '';
+        /**
+         * A user whose account has since been deleted.
+         *
+         * @param DeletedUser $deletedUser
+         */
+        public function setDeletedUser(DeletedUser $deletedUser)
+        {
+        }
+        /**
+         * @return DeletedUser
+         */
+        public function getDeletedUser()
+        {
+        }
+        /**
+         * A known user.
+         *
+         * @param KnownUser $knownUser
+         */
+        public function setKnownUser(KnownUser $knownUser)
+        {
+        }
+        /**
+         * @return KnownUser
+         */
+        public function getKnownUser()
+        {
+        }
+        /**
+         * A user about whom nothing is currently known.
+         *
+         * @param UnknownUser $unknownUser
+         */
+        public function setUnknownUser(UnknownUser $unknownUser)
+        {
+        }
+        /**
+         * @return UnknownUser
+         */
+        public function getUnknownUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeletedUser
+     * Runtime class alias of \Google\Service\DriveActivity\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletedUser()
-    {
-    }
-    /**
-     * A known user.
-     *
-     * @param KnownUser $knownUser
-     */
-    public function setKnownUser(KnownUser $knownUser)
-    {
-    }
-    /**
-     * @return KnownUser
-     */
-    public function getKnownUser()
-    {
-    }
-    /**
-     * A user about whom nothing is currently known.
-     *
-     * @param UnknownUser $unknownUser
-     */
-    public function setUnknownUser(UnknownUser $unknownUser)
-    {
-    }
-    /**
-     * @return UnknownUser
-     */
-    public function getUnknownUser()
+    class Google_Service_DriveActivity_User extends \Google\Service\DriveActivity\User
     {
     }
 }

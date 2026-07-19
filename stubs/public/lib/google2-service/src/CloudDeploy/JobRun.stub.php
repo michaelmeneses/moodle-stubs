@@ -21,319 +21,328 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class JobRun extends \Google\Model
-{
-    /**
-     * The `JobRun` has an unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The `JobRun` is in progress.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * The `JobRun` has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The `JobRun` has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The `JobRun` is terminating.
-     */
-    public const STATE_TERMINATING = 'TERMINATING';
-    /**
-     * The `JobRun` was terminated.
-     */
-    public const STATE_TERMINATED = 'TERMINATED';
-    protected $advanceChildRolloutJobRunType = AdvanceChildRolloutJobRun::class;
-    protected $advanceChildRolloutJobRunDataType = '';
-    protected $createChildRolloutJobRunType = CreateChildRolloutJobRun::class;
-    protected $createChildRolloutJobRunDataType = '';
-    /**
-     * Output only. Time at which the `JobRun` was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $deployJobRunType = DeployJobRun::class;
-    protected $deployJobRunDataType = '';
-    /**
-     * Output only. Time at which the `JobRun` ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. ID of the `Rollout` job this `JobRun` corresponds to.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Output only. Name of the `JobRun`. Format is `projects/{project}/locations/
-     * {location}/deliveryPipelines/{deliveryPipeline}/releases/{releases}/rollout
-     * s/{rollouts}/jobRuns/{uuid}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. ID of the `Rollout` phase this `JobRun` belongs in.
-     *
-     * @var string
-     */
-    public $phaseId;
-    protected $postdeployJobRunType = PostdeployJobRun::class;
-    protected $postdeployJobRunDataType = '';
-    protected $predeployJobRunType = PredeployJobRun::class;
-    protected $predeployJobRunDataType = '';
-    /**
-     * Output only. Time at which the `JobRun` was started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The current state of the `JobRun`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Unique identifier of the `JobRun`.
-     *
-     * @var string
-     */
-    public $uid;
-    protected $verifyJobRunType = VerifyJobRun::class;
-    protected $verifyJobRunDataType = '';
-    /**
-     * Output only. Information specific to an advanceChildRollout `JobRun`
-     *
-     * @param AdvanceChildRolloutJobRun $advanceChildRolloutJobRun
-     */
-    public function setAdvanceChildRolloutJobRun(AdvanceChildRolloutJobRun $advanceChildRolloutJobRun)
+namespace Google\Service\CloudDeploy {
+    class JobRun extends \Google\Model
     {
+        /**
+         * The `JobRun` has an unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The `JobRun` is in progress.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * The `JobRun` has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The `JobRun` has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The `JobRun` is terminating.
+         */
+        public const STATE_TERMINATING = 'TERMINATING';
+        /**
+         * The `JobRun` was terminated.
+         */
+        public const STATE_TERMINATED = 'TERMINATED';
+        protected $advanceChildRolloutJobRunType = AdvanceChildRolloutJobRun::class;
+        protected $advanceChildRolloutJobRunDataType = '';
+        protected $createChildRolloutJobRunType = CreateChildRolloutJobRun::class;
+        protected $createChildRolloutJobRunDataType = '';
+        /**
+         * Output only. Time at which the `JobRun` was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $deployJobRunType = DeployJobRun::class;
+        protected $deployJobRunDataType = '';
+        /**
+         * Output only. Time at which the `JobRun` ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. ID of the `Rollout` job this `JobRun` corresponds to.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Output only. Name of the `JobRun`. Format is `projects/{project}/locations/
+         * {location}/deliveryPipelines/{deliveryPipeline}/releases/{releases}/rollout
+         * s/{rollouts}/jobRuns/{uuid}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. ID of the `Rollout` phase this `JobRun` belongs in.
+         *
+         * @var string
+         */
+        public $phaseId;
+        protected $postdeployJobRunType = PostdeployJobRun::class;
+        protected $postdeployJobRunDataType = '';
+        protected $predeployJobRunType = PredeployJobRun::class;
+        protected $predeployJobRunDataType = '';
+        /**
+         * Output only. Time at which the `JobRun` was started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The current state of the `JobRun`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Unique identifier of the `JobRun`.
+         *
+         * @var string
+         */
+        public $uid;
+        protected $verifyJobRunType = VerifyJobRun::class;
+        protected $verifyJobRunDataType = '';
+        /**
+         * Output only. Information specific to an advanceChildRollout `JobRun`
+         *
+         * @param AdvanceChildRolloutJobRun $advanceChildRolloutJobRun
+         */
+        public function setAdvanceChildRolloutJobRun(AdvanceChildRolloutJobRun $advanceChildRolloutJobRun)
+        {
+        }
+        /**
+         * @return AdvanceChildRolloutJobRun
+         */
+        public function getAdvanceChildRolloutJobRun()
+        {
+        }
+        /**
+         * Output only. Information specific to a createChildRollout `JobRun`.
+         *
+         * @param CreateChildRolloutJobRun $createChildRolloutJobRun
+         */
+        public function setCreateChildRolloutJobRun(CreateChildRolloutJobRun $createChildRolloutJobRun)
+        {
+        }
+        /**
+         * @return CreateChildRolloutJobRun
+         */
+        public function getCreateChildRolloutJobRun()
+        {
+        }
+        /**
+         * Output only. Time at which the `JobRun` was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Information specific to a deploy `JobRun`.
+         *
+         * @param DeployJobRun $deployJobRun
+         */
+        public function setDeployJobRun(DeployJobRun $deployJobRun)
+        {
+        }
+        /**
+         * @return DeployJobRun
+         */
+        public function getDeployJobRun()
+        {
+        }
+        /**
+         * Output only. Time at which the `JobRun` ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. ID of the `Rollout` job this `JobRun` corresponds to.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Output only. Name of the `JobRun`. Format is `projects/{project}/locations/
+         * {location}/deliveryPipelines/{deliveryPipeline}/releases/{releases}/rollout
+         * s/{rollouts}/jobRuns/{uuid}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. ID of the `Rollout` phase this `JobRun` belongs in.
+         *
+         * @param string $phaseId
+         */
+        public function setPhaseId($phaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhaseId()
+        {
+        }
+        /**
+         * Output only. Information specific to a postdeploy `JobRun`.
+         *
+         * @param PostdeployJobRun $postdeployJobRun
+         */
+        public function setPostdeployJobRun(PostdeployJobRun $postdeployJobRun)
+        {
+        }
+        /**
+         * @return PostdeployJobRun
+         */
+        public function getPostdeployJobRun()
+        {
+        }
+        /**
+         * Output only. Information specific to a predeploy `JobRun`.
+         *
+         * @param PredeployJobRun $predeployJobRun
+         */
+        public function setPredeployJobRun(PredeployJobRun $predeployJobRun)
+        {
+        }
+        /**
+         * @return PredeployJobRun
+         */
+        public function getPredeployJobRun()
+        {
+        }
+        /**
+         * Output only. Time at which the `JobRun` was started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. The current state of the `JobRun`.
+         *
+         * Accepted values: STATE_UNSPECIFIED, IN_PROGRESS, SUCCEEDED, FAILED,
+         * TERMINATING, TERMINATED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Unique identifier of the `JobRun`.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Information specific to a verify `JobRun`.
+         *
+         * @param VerifyJobRun $verifyJobRun
+         */
+        public function setVerifyJobRun(VerifyJobRun $verifyJobRun)
+        {
+        }
+        /**
+         * @return VerifyJobRun
+         */
+        public function getVerifyJobRun()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdvanceChildRolloutJobRun
+     * Runtime class alias of \Google\Service\CloudDeploy\JobRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvanceChildRolloutJobRun()
-    {
-    }
-    /**
-     * Output only. Information specific to a createChildRollout `JobRun`.
-     *
-     * @param CreateChildRolloutJobRun $createChildRolloutJobRun
-     */
-    public function setCreateChildRolloutJobRun(CreateChildRolloutJobRun $createChildRolloutJobRun)
-    {
-    }
-    /**
-     * @return CreateChildRolloutJobRun
-     */
-    public function getCreateChildRolloutJobRun()
-    {
-    }
-    /**
-     * Output only. Time at which the `JobRun` was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Information specific to a deploy `JobRun`.
-     *
-     * @param DeployJobRun $deployJobRun
-     */
-    public function setDeployJobRun(DeployJobRun $deployJobRun)
-    {
-    }
-    /**
-     * @return DeployJobRun
-     */
-    public function getDeployJobRun()
-    {
-    }
-    /**
-     * Output only. Time at which the `JobRun` ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. ID of the `Rollout` job this `JobRun` corresponds to.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
-    {
-    }
-    /**
-     * Output only. Name of the `JobRun`. Format is `projects/{project}/locations/
-     * {location}/deliveryPipelines/{deliveryPipeline}/releases/{releases}/rollout
-     * s/{rollouts}/jobRuns/{uuid}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. ID of the `Rollout` phase this `JobRun` belongs in.
-     *
-     * @param string $phaseId
-     */
-    public function setPhaseId($phaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhaseId()
-    {
-    }
-    /**
-     * Output only. Information specific to a postdeploy `JobRun`.
-     *
-     * @param PostdeployJobRun $postdeployJobRun
-     */
-    public function setPostdeployJobRun(PostdeployJobRun $postdeployJobRun)
-    {
-    }
-    /**
-     * @return PostdeployJobRun
-     */
-    public function getPostdeployJobRun()
-    {
-    }
-    /**
-     * Output only. Information specific to a predeploy `JobRun`.
-     *
-     * @param PredeployJobRun $predeployJobRun
-     */
-    public function setPredeployJobRun(PredeployJobRun $predeployJobRun)
-    {
-    }
-    /**
-     * @return PredeployJobRun
-     */
-    public function getPredeployJobRun()
-    {
-    }
-    /**
-     * Output only. Time at which the `JobRun` was started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. The current state of the `JobRun`.
-     *
-     * Accepted values: STATE_UNSPECIFIED, IN_PROGRESS, SUCCEEDED, FAILED,
-     * TERMINATING, TERMINATED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Unique identifier of the `JobRun`.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Information specific to a verify `JobRun`.
-     *
-     * @param VerifyJobRun $verifyJobRun
-     */
-    public function setVerifyJobRun(VerifyJobRun $verifyJobRun)
-    {
-    }
-    /**
-     * @return VerifyJobRun
-     */
-    public function getVerifyJobRun()
+    class Google_Service_CloudDeploy_JobRun extends \Google\Service\CloudDeploy\JobRun
     {
     }
 }

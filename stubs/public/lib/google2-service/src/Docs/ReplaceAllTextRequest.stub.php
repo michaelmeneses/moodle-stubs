@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class ReplaceAllTextRequest extends \Google\Model
-{
-    protected $containsTextType = SubstringMatchCriteria::class;
-    protected $containsTextDataType = '';
-    /**
-     * The text that will replace the matched text.
-     *
-     * @var string
-     */
-    public $replaceText;
-    protected $tabsCriteriaType = TabsCriteria::class;
-    protected $tabsCriteriaDataType = '';
-    /**
-     * Finds text in the document matching this substring.
-     *
-     * @param SubstringMatchCriteria $containsText
-     */
-    public function setContainsText(SubstringMatchCriteria $containsText)
+namespace Google\Service\Docs {
+    class ReplaceAllTextRequest extends \Google\Model
     {
+        protected $containsTextType = SubstringMatchCriteria::class;
+        protected $containsTextDataType = '';
+        /**
+         * The text that will replace the matched text.
+         *
+         * @var string
+         */
+        public $replaceText;
+        protected $tabsCriteriaType = TabsCriteria::class;
+        protected $tabsCriteriaDataType = '';
+        /**
+         * Finds text in the document matching this substring.
+         *
+         * @param SubstringMatchCriteria $containsText
+         */
+        public function setContainsText(SubstringMatchCriteria $containsText)
+        {
+        }
+        /**
+         * @return SubstringMatchCriteria
+         */
+        public function getContainsText()
+        {
+        }
+        /**
+         * The text that will replace the matched text.
+         *
+         * @param string $replaceText
+         */
+        public function setReplaceText($replaceText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplaceText()
+        {
+        }
+        /**
+         * Optional. The criteria used to specify in which tabs the replacement
+         * occurs. When omitted, the replacement applies to all tabs. In a document
+         * containing a single tab: - If provided, must match the singular tab's ID. -
+         * If omitted, the replacement applies to the singular tab. In a document
+         * containing multiple tabs: - If provided, the replacement applies to the
+         * specified tabs. - If omitted, the replacement applies to all tabs.
+         *
+         * @param TabsCriteria $tabsCriteria
+         */
+        public function setTabsCriteria(TabsCriteria $tabsCriteria)
+        {
+        }
+        /**
+         * @return TabsCriteria
+         */
+        public function getTabsCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SubstringMatchCriteria
+     * Runtime class alias of \Google\Service\Docs\ReplaceAllTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainsText()
-    {
-    }
-    /**
-     * The text that will replace the matched text.
-     *
-     * @param string $replaceText
-     */
-    public function setReplaceText($replaceText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplaceText()
-    {
-    }
-    /**
-     * Optional. The criteria used to specify in which tabs the replacement
-     * occurs. When omitted, the replacement applies to all tabs. In a document
-     * containing a single tab: - If provided, must match the singular tab's ID. -
-     * If omitted, the replacement applies to the singular tab. In a document
-     * containing multiple tabs: - If provided, the replacement applies to the
-     * specified tabs. - If omitted, the replacement applies to all tabs.
-     *
-     * @param TabsCriteria $tabsCriteria
-     */
-    public function setTabsCriteria(TabsCriteria $tabsCriteria)
-    {
-    }
-    /**
-     * @return TabsCriteria
-     */
-    public function getTabsCriteria()
+    class Google_Service_Docs_ReplaceAllTextRequest extends \Google\Service\Docs\ReplaceAllTextRequest
     {
     }
 }

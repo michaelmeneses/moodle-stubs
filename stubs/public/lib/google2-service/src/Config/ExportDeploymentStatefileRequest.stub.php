@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ExportDeploymentStatefileRequest extends \Google\Model
-{
-    /**
-     * Optional. If this flag is set to true, the exported deployment state file
-     * will be the draft state. This will enable the draft file to be validated
-     * before copying it over to the working state on unlock.
-     *
-     * @var bool
-     */
-    public $draft;
-    /**
-     * Optional. If this flag is set to true, the exported deployment state file
-     * will be the draft state. This will enable the draft file to be validated
-     * before copying it over to the working state on unlock.
-     *
-     * @param bool $draft
-     */
-    public function setDraft($draft)
+namespace Google\Service\Config {
+    class ExportDeploymentStatefileRequest extends \Google\Model
     {
+        /**
+         * Optional. If this flag is set to true, the exported deployment state file
+         * will be the draft state. This will enable the draft file to be validated
+         * before copying it over to the working state on unlock.
+         *
+         * @var bool
+         */
+        public $draft;
+        /**
+         * Optional. If this flag is set to true, the exported deployment state file
+         * will be the draft state. This will enable the draft file to be validated
+         * before copying it over to the working state on unlock.
+         *
+         * @param bool $draft
+         */
+        public function setDraft($draft)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDraft()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Config\ExportDeploymentStatefileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDraft()
+    class Google_Service_Config_ExportDeploymentStatefileRequest extends \Google\Service\Config\ExportDeploymentStatefileRequest
     {
     }
 }

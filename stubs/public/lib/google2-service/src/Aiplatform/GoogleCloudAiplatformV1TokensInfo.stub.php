@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TokensInfo extends \Google\Collection
-{
-    protected $collection_key = 'tokens';
-    /**
-     * Optional. Optional fields for the role from the corresponding Content.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * A list of token ids from the input.
-     *
-     * @var string[]
-     */
-    public $tokenIds;
-    /**
-     * A list of tokens from the input.
-     *
-     * @var string[]
-     */
-    public $tokens;
-    /**
-     * Optional. Optional fields for the role from the corresponding Content.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TokensInfo extends \Google\Collection
     {
+        protected $collection_key = 'tokens';
+        /**
+         * Optional. Optional fields for the role from the corresponding Content.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * A list of token ids from the input.
+         *
+         * @var string[]
+         */
+        public $tokenIds;
+        /**
+         * A list of tokens from the input.
+         *
+         * @var string[]
+         */
+        public $tokens;
+        /**
+         * Optional. Optional fields for the role from the corresponding Content.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * A list of token ids from the input.
+         *
+         * @param string[] $tokenIds
+         */
+        public function setTokenIds($tokenIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTokenIds()
+        {
+        }
+        /**
+         * A list of tokens from the input.
+         *
+         * @param string[] $tokens
+         */
+        public function setTokens($tokens)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTokens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TokensInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRole()
-    {
-    }
-    /**
-     * A list of token ids from the input.
-     *
-     * @param string[] $tokenIds
-     */
-    public function setTokenIds($tokenIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTokenIds()
-    {
-    }
-    /**
-     * A list of tokens from the input.
-     *
-     * @param string[] $tokens
-     */
-    public function setTokens($tokens)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTokens()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TokensInfo extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TokensInfo
     {
     }
 }

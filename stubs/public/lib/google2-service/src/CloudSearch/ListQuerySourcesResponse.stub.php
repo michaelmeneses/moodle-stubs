@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ListQuerySourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sourcesType = QuerySource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudSearch {
+    class ListQuerySourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sourcesType = QuerySource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param QuerySource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return QuerySource[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ListQuerySourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param QuerySource[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return QuerySource[]
-     */
-    public function getSources()
+    class Google_Service_CloudSearch_ListQuerySourcesResponse extends \Google\Service\CloudSearch\ListQuerySourcesResponse
     {
     }
 }

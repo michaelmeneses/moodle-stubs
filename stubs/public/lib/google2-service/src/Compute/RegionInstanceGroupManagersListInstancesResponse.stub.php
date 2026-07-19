@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupManagersListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'managedInstances';
-    protected $managedInstancesType = ManagedInstance::class;
-    protected $managedInstancesDataType = 'array';
-    /**
-     * Output only. [Output Only] This token allows you to get the next page of
-     * results for list requests. If the number of results is larger
-     * thanmaxResults, use the nextPageToken as a value for the query parameter
-     * pageToken in the next list request. Subsequent list requests will have
-     * their own nextPageToken to continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of managed instances.
-     *
-     * @param ManagedInstance[] $managedInstances
-     */
-    public function setManagedInstances($managedInstances)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupManagersListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'managedInstances';
+        protected $managedInstancesType = ManagedInstance::class;
+        protected $managedInstancesDataType = 'array';
+        /**
+         * Output only. [Output Only] This token allows you to get the next page of
+         * results for list requests. If the number of results is larger
+         * thanmaxResults, use the nextPageToken as a value for the query parameter
+         * pageToken in the next list request. Subsequent list requests will have
+         * their own nextPageToken to continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of managed instances.
+         *
+         * @param ManagedInstance[] $managedInstances
+         */
+        public function setManagedInstances($managedInstances)
+        {
+        }
+        /**
+         * @return ManagedInstance[]
+         */
+        public function getManagedInstances()
+        {
+        }
+        /**
+         * Output only. [Output Only] This token allows you to get the next page of
+         * results for list requests. If the number of results is larger
+         * thanmaxResults, use the nextPageToken as a value for the query parameter
+         * pageToken in the next list request. Subsequent list requests will have
+         * their own nextPageToken to continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedInstance[]
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupManagersListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedInstances()
-    {
-    }
-    /**
-     * Output only. [Output Only] This token allows you to get the next page of
-     * results for list requests. If the number of results is larger
-     * thanmaxResults, use the nextPageToken as a value for the query parameter
-     * pageToken in the next list request. Subsequent list requests will have
-     * their own nextPageToken to continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Compute_RegionInstanceGroupManagersListInstancesResponse extends \Google\Service\Compute\RegionInstanceGroupManagersListInstancesResponse
     {
     }
 }

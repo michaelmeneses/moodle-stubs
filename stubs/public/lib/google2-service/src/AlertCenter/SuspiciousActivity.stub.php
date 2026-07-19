@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class SuspiciousActivity extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    /**
-     * The email of the user this alert was created for.
-     *
-     * @var string
-     */
-    public $email;
-    protected $eventsType = SuspiciousActivitySecurityDetail::class;
-    protected $eventsDataType = 'array';
-    /**
-     * The email of the user this alert was created for.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AlertCenter {
+    class SuspiciousActivity extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        /**
+         * The email of the user this alert was created for.
+         *
+         * @var string
+         */
+        public $email;
+        protected $eventsType = SuspiciousActivitySecurityDetail::class;
+        protected $eventsDataType = 'array';
+        /**
+         * The email of the user this alert was created for.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Required. The list of security events.
+         *
+         * @param SuspiciousActivitySecurityDetail[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return SuspiciousActivitySecurityDetail[]
+         */
+        public function getEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\SuspiciousActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Required. The list of security events.
-     *
-     * @param SuspiciousActivitySecurityDetail[] $events
-     */
-    public function setEvents($events)
-    {
-    }
-    /**
-     * @return SuspiciousActivitySecurityDetail[]
-     */
-    public function getEvents()
+    class Google_Service_AlertCenter_SuspiciousActivity extends \Google\Service\AlertCenter\SuspiciousActivity
     {
     }
 }

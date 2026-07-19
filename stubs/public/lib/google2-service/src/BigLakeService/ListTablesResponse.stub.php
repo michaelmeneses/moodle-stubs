@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class ListTablesResponse extends \Google\Collection
-{
-    protected $collection_key = 'tables';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tablesType = Table::class;
-    protected $tablesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BigLakeService {
+    class ListTablesResponse extends \Google\Collection
     {
+        protected $collection_key = 'tables';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tablesType = Table::class;
+        protected $tablesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The tables from the specified database.
+         *
+         * @param Table[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return Table[]
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\ListTablesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The tables from the specified database.
-     *
-     * @param Table[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return Table[]
-     */
-    public function getTables()
+    class Google_Service_BigLakeService_ListTablesResponse extends \Google\Service\BigLakeService\ListTablesResponse
     {
     }
 }

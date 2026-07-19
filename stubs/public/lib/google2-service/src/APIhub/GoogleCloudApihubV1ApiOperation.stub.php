@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApiOperation extends \Google\Collection
-{
-    protected $collection_key = 'sourceMetadata';
-    protected $attributesType = GoogleCloudApihubV1AttributeValues::class;
-    protected $attributesDataType = 'map';
-    /**
-     * Output only. The time at which the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $detailsType = GoogleCloudApihubV1OperationDetails::class;
-    protected $detailsDataType = '';
-    /**
-     * Identifier. The name of the operation. Format: `projects/{project}/location
-     * s/{location}/apis/{api}/versions/{version}/operations/{operation}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $sourceMetadataType = GoogleCloudApihubV1SourceMetadata::class;
-    protected $sourceMetadataDataType = 'array';
-    /**
-     * Output only. The name of the spec will be of the format: `projects/{project
-     * }/locations/{location}/apis/{api}/versions/{version}/specs/{spec}` Note:The
-     * name of the spec will be empty if the operation is created via
-     * CreateApiOperation API.
-     *
-     * @var string
-     */
-    public $spec;
-    /**
-     * Output only. The time at which the operation was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The list of user defined attributes associated with the API
-     * operation resource. The key is the attribute name. It will be of the
-     * format: `projects/{project}/locations/{location}/attributes/{attribute}`.
-     * The value is the attribute values associated with the resource.
-     *
-     * @param GoogleCloudApihubV1AttributeValues[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApiOperation extends \Google\Collection
     {
+        protected $collection_key = 'sourceMetadata';
+        protected $attributesType = GoogleCloudApihubV1AttributeValues::class;
+        protected $attributesDataType = 'map';
+        /**
+         * Output only. The time at which the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $detailsType = GoogleCloudApihubV1OperationDetails::class;
+        protected $detailsDataType = '';
+        /**
+         * Identifier. The name of the operation. Format: `projects/{project}/location
+         * s/{location}/apis/{api}/versions/{version}/operations/{operation}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $sourceMetadataType = GoogleCloudApihubV1SourceMetadata::class;
+        protected $sourceMetadataDataType = 'array';
+        /**
+         * Output only. The name of the spec will be of the format: `projects/{project
+         * }/locations/{location}/apis/{api}/versions/{version}/specs/{spec}` Note:The
+         * name of the spec will be empty if the operation is created via
+         * CreateApiOperation API.
+         *
+         * @var string
+         */
+        public $spec;
+        /**
+         * Output only. The time at which the operation was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The list of user defined attributes associated with the API
+         * operation resource. The key is the attribute name. It will be of the
+         * format: `projects/{project}/locations/{location}/attributes/{attribute}`.
+         * The value is the attribute values associated with the resource.
+         *
+         * @param GoogleCloudApihubV1AttributeValues[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AttributeValues[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Output only. The time at which the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Operation details. Note: Even though this field is optional, it
+         * is required for CreateApiOperation API and we will fail the request if not
+         * provided.
+         *
+         * @param GoogleCloudApihubV1OperationDetails $details
+         */
+        public function setDetails(GoogleCloudApihubV1OperationDetails $details)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1OperationDetails
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Identifier. The name of the operation. Format: `projects/{project}/location
+         * s/{location}/apis/{api}/versions/{version}/operations/{operation}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The list of sources and metadata from the sources of the API
+         * operation.
+         *
+         * @param GoogleCloudApihubV1SourceMetadata[] $sourceMetadata
+         */
+        public function setSourceMetadata($sourceMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1SourceMetadata[]
+         */
+        public function getSourceMetadata()
+        {
+        }
+        /**
+         * Output only. The name of the spec will be of the format: `projects/{project
+         * }/locations/{location}/apis/{api}/versions/{version}/specs/{spec}` Note:The
+         * name of the spec will be empty if the operation is created via
+         * CreateApiOperation API.
+         *
+         * @param string $spec
+         */
+        public function setSpec($spec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * Output only. The time at which the operation was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AttributeValues[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApiOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Output only. The time at which the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Operation details. Note: Even though this field is optional, it
-     * is required for CreateApiOperation API and we will fail the request if not
-     * provided.
-     *
-     * @param GoogleCloudApihubV1OperationDetails $details
-     */
-    public function setDetails(GoogleCloudApihubV1OperationDetails $details)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1OperationDetails
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * Identifier. The name of the operation. Format: `projects/{project}/location
-     * s/{location}/apis/{api}/versions/{version}/operations/{operation}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The list of sources and metadata from the sources of the API
-     * operation.
-     *
-     * @param GoogleCloudApihubV1SourceMetadata[] $sourceMetadata
-     */
-    public function setSourceMetadata($sourceMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1SourceMetadata[]
-     */
-    public function getSourceMetadata()
-    {
-    }
-    /**
-     * Output only. The name of the spec will be of the format: `projects/{project
-     * }/locations/{location}/apis/{api}/versions/{version}/specs/{spec}` Note:The
-     * name of the spec will be empty if the operation is created via
-     * CreateApiOperation API.
-     *
-     * @param string $spec
-     */
-    public function setSpec($spec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * Output only. The time at which the operation was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApiOperation extends \Google\Service\APIhub\GoogleCloudApihubV1ApiOperation
     {
     }
 }

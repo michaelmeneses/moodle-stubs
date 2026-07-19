@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class Money extends \Google\Model
-{
-    /**
-     * The three-letter currency code defined in ISO 4217.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Number of nano (10^-9) units of the amount. The value must be between
-     * -999,999,999 and +999,999,999 inclusive. If `units` is positive, `nanos`
-     * must be positive or zero. If `units` is zero, `nanos` can be positive,
-     * zero, or negative. If `units` is negative, `nanos` must be negative or
-     * zero. For example $-1.75 is represented as `units`=-1 and
-     * `nanos`=-750,000,000.
-     *
-     * @var int
-     */
-    public $nanos;
-    /**
-     * The whole units of the amount. For example if `currencyCode` is `"USD"`,
-     * then 1 unit is one US dollar.
-     *
-     * @var string
-     */
-    public $units;
-    /**
-     * The three-letter currency code defined in ISO 4217.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\CloudDomains {
+    class Money extends \Google\Model
     {
+        /**
+         * The three-letter currency code defined in ISO 4217.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Number of nano (10^-9) units of the amount. The value must be between
+         * -999,999,999 and +999,999,999 inclusive. If `units` is positive, `nanos`
+         * must be positive or zero. If `units` is zero, `nanos` can be positive,
+         * zero, or negative. If `units` is negative, `nanos` must be negative or
+         * zero. For example $-1.75 is represented as `units`=-1 and
+         * `nanos`=-750,000,000.
+         *
+         * @var int
+         */
+        public $nanos;
+        /**
+         * The whole units of the amount. For example if `currencyCode` is `"USD"`,
+         * then 1 unit is one US dollar.
+         *
+         * @var string
+         */
+        public $units;
+        /**
+         * The three-letter currency code defined in ISO 4217.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * Number of nano (10^-9) units of the amount. The value must be between
+         * -999,999,999 and +999,999,999 inclusive. If `units` is positive, `nanos`
+         * must be positive or zero. If `units` is zero, `nanos` can be positive,
+         * zero, or negative. If `units` is negative, `nanos` must be negative or
+         * zero. For example $-1.75 is represented as `units`=-1 and
+         * `nanos`=-750,000,000.
+         *
+         * @param int $nanos
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * The whole units of the amount. For example if `currencyCode` is `"USD"`,
+         * then 1 unit is one US dollar.
+         *
+         * @param string $units
+         */
+        public function setUnits($units)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\Money registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * Number of nano (10^-9) units of the amount. The value must be between
-     * -999,999,999 and +999,999,999 inclusive. If `units` is positive, `nanos`
-     * must be positive or zero. If `units` is zero, `nanos` can be positive,
-     * zero, or negative. If `units` is negative, `nanos` must be negative or
-     * zero. For example $-1.75 is represented as `units`=-1 and
-     * `nanos`=-750,000,000.
-     *
-     * @param int $nanos
-     */
-    public function setNanos($nanos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNanos()
-    {
-    }
-    /**
-     * The whole units of the amount. For example if `currencyCode` is `"USD"`,
-     * then 1 unit is one US dollar.
-     *
-     * @param string $units
-     */
-    public function setUnits($units)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnits()
+    class Google_Service_CloudDomains_Money extends \Google\Service\CloudDomains\Money
     {
     }
 }

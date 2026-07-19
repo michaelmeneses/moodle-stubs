@@ -21,93 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices\Resource;
-
-/**
- * The "gateways" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkservicesService = new Google\Service\NetworkServices(...);
- *   $gateways = $networkservicesService->projects_locations_gateways;
- *  </code>
- */
-class ProjectsLocationsGateways extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkServices\Resource {
+    use Google\Service\NetworkServices\Gateway;
+    use Google\Service\NetworkServices\ListGatewaysResponse;
+    use Google\Service\NetworkServices\Operation;
     /**
-     * Creates a new Gateway in a given project and location. (gateways.create)
-     *
-     * @param string $parent Required. The parent resource of the Gateway. Must be
-     * in the format `projects/locations`.
-     * @param Gateway $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string gatewayId Required. Short name of the Gateway resource to
-     * be created.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "gateways" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkservicesService = new Google\Service\NetworkServices(...);
+     *   $gateways = $networkservicesService->projects_locations_gateways;
+     *  </code>
      */
-    public function create($parent, Gateway $postBody, $optParams = [])
+    class ProjectsLocationsGateways extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Gateway in a given project and location. (gateways.create)
+         *
+         * @param string $parent Required. The parent resource of the Gateway. Must be
+         * in the format `projects/locations`.
+         * @param Gateway $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string gatewayId Required. Short name of the Gateway resource to
+         * be created.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Gateway $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single Gateway. (gateways.delete)
+         *
+         * @param string $name Required. A name of the Gateway to delete. Must be in the
+         * format `projects/locations/gateways`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single Gateway. (gateways.get)
+         *
+         * @param string $name Required. A name of the Gateway to get. Must be in the
+         * format `projects/locations/gateways`.
+         * @param array $optParams Optional parameters.
+         * @return Gateway
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Gateways in a given project and location.
+         * (gateways.listProjectsLocationsGateways)
+         *
+         * @param string $parent Required. The project and location from which the
+         * Gateways should be listed, specified in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of Gateways to return per call.
+         * @opt_param string pageToken The value returned by the last
+         * `ListGatewaysResponse` Indicates that this is a continuation of a prior
+         * `ListGateways` call, and that the system should return the next page of data.
+         * @return ListGatewaysResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsGateways($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single Gateway. (gateways.patch)
+         *
+         * @param string $name Identifier. Name of the Gateway resource. It matches
+         * pattern `projects/locations/gateways/`.
+         * @param Gateway $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the Gateway resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. If the user does
+         * not provide a mask then all fields will be overwritten.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Gateway $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single Gateway. (gateways.delete)
-     *
-     * @param string $name Required. A name of the Gateway to delete. Must be in the
-     * format `projects/locations/gateways`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkServices\Resource\ProjectsLocationsGateways registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single Gateway. (gateways.get)
-     *
-     * @param string $name Required. A name of the Gateway to get. Must be in the
-     * format `projects/locations/gateways`.
-     * @param array $optParams Optional parameters.
-     * @return Gateway
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Gateways in a given project and location.
-     * (gateways.listProjectsLocationsGateways)
-     *
-     * @param string $parent Required. The project and location from which the
-     * Gateways should be listed, specified in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of Gateways to return per call.
-     * @opt_param string pageToken The value returned by the last
-     * `ListGatewaysResponse` Indicates that this is a continuation of a prior
-     * `ListGateways` call, and that the system should return the next page of data.
-     * @return ListGatewaysResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsGateways($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the parameters of a single Gateway. (gateways.patch)
-     *
-     * @param string $name Identifier. Name of the Gateway resource. It matches
-     * pattern `projects/locations/gateways/`.
-     * @param Gateway $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the Gateway resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. If the user does
-     * not provide a mask then all fields will be overwritten.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Gateway $postBody, $optParams = [])
+    class Google_Service_NetworkServices_Resource_ProjectsLocationsGateways extends \Google\Service\NetworkServices\Resource\ProjectsLocationsGateways
     {
     }
 }

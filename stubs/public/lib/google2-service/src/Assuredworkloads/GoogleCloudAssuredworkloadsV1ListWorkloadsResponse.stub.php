@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ListWorkloadsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workloads';
-    /**
-     * The next page token. Return empty if reached the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workloadsType = GoogleCloudAssuredworkloadsV1Workload::class;
-    protected $workloadsDataType = 'array';
-    /**
-     * The next page token. Return empty if reached the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ListWorkloadsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workloads';
+        /**
+         * The next page token. Return empty if reached the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workloadsType = GoogleCloudAssuredworkloadsV1Workload::class;
+        protected $workloadsDataType = 'array';
+        /**
+         * The next page token. Return empty if reached the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Workloads under a given parent.
+         *
+         * @param GoogleCloudAssuredworkloadsV1Workload[] $workloads
+         */
+        public function setWorkloads($workloads)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1Workload[]
+         */
+        public function getWorkloads()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListWorkloadsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Workloads under a given parent.
-     *
-     * @param GoogleCloudAssuredworkloadsV1Workload[] $workloads
-     */
-    public function setWorkloads($workloads)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1Workload[]
-     */
-    public function getWorkloads()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ListWorkloadsResponse extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListWorkloadsResponse
     {
     }
 }

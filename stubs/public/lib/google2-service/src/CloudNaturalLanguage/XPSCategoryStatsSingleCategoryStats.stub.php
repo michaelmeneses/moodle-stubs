@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSCategoryStatsSingleCategoryStats extends \Google\Model
-{
-    /**
-     * The number of occurrences of this value in the series.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The CATEGORY value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The number of occurrences of this value in the series.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSCategoryStatsSingleCategoryStats extends \Google\Model
     {
+        /**
+         * The number of occurrences of this value in the series.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The CATEGORY value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The number of occurrences of this value in the series.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The CATEGORY value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSCategoryStatsSingleCategoryStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The CATEGORY value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudNaturalLanguage_XPSCategoryStatsSingleCategoryStats extends \Google\Service\CloudNaturalLanguage\XPSCategoryStatsSingleCategoryStats
     {
     }
 }

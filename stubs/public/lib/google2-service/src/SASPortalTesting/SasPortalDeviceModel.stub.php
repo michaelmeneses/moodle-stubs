@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalDeviceModel extends \Google\Model
-{
-    /**
-     * The firmware version of the device.
-     *
-     * @var string
-     */
-    public $firmwareVersion;
-    /**
-     * The hardware version of the device.
-     *
-     * @var string
-     */
-    public $hardwareVersion;
-    /**
-     * The name of the device model.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The software version of the device.
-     *
-     * @var string
-     */
-    public $softwareVersion;
-    /**
-     * The name of the device vendor.
-     *
-     * @var string
-     */
-    public $vendor;
-    /**
-     * The firmware version of the device.
-     *
-     * @param string $firmwareVersion
-     */
-    public function setFirmwareVersion($firmwareVersion)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalDeviceModel extends \Google\Model
     {
+        /**
+         * The firmware version of the device.
+         *
+         * @var string
+         */
+        public $firmwareVersion;
+        /**
+         * The hardware version of the device.
+         *
+         * @var string
+         */
+        public $hardwareVersion;
+        /**
+         * The name of the device model.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The software version of the device.
+         *
+         * @var string
+         */
+        public $softwareVersion;
+        /**
+         * The name of the device vendor.
+         *
+         * @var string
+         */
+        public $vendor;
+        /**
+         * The firmware version of the device.
+         *
+         * @param string $firmwareVersion
+         */
+        public function setFirmwareVersion($firmwareVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirmwareVersion()
+        {
+        }
+        /**
+         * The hardware version of the device.
+         *
+         * @param string $hardwareVersion
+         */
+        public function setHardwareVersion($hardwareVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHardwareVersion()
+        {
+        }
+        /**
+         * The name of the device model.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The software version of the device.
+         *
+         * @param string $softwareVersion
+         */
+        public function setSoftwareVersion($softwareVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSoftwareVersion()
+        {
+        }
+        /**
+         * The name of the device vendor.
+         *
+         * @param string $vendor
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVendor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalDeviceModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirmwareVersion()
-    {
-    }
-    /**
-     * The hardware version of the device.
-     *
-     * @param string $hardwareVersion
-     */
-    public function setHardwareVersion($hardwareVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHardwareVersion()
-    {
-    }
-    /**
-     * The name of the device model.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The software version of the device.
-     *
-     * @param string $softwareVersion
-     */
-    public function setSoftwareVersion($softwareVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSoftwareVersion()
-    {
-    }
-    /**
-     * The name of the device vendor.
-     *
-     * @param string $vendor
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVendor()
+    class Google_Service_SASPortalTesting_SasPortalDeviceModel extends \Google\Service\SASPortalTesting\SasPortalDeviceModel
     {
     }
 }

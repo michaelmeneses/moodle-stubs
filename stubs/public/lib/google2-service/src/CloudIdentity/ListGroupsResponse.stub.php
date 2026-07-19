@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'groups';
-    protected $groupsType = Group::class;
-    protected $groupsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results available for listing.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Groups returned in response to list request. The results are not sorted.
-     *
-     * @param Group[] $groups
-     */
-    public function setGroups($groups)
+namespace Google\Service\CloudIdentity {
+    class ListGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'groups';
+        protected $groupsType = Group::class;
+        protected $groupsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results available for listing.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Groups returned in response to list request. The results are not sorted.
+         *
+         * @param Group[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return Group[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results available for listing.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Group[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ListGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroups()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results available for listing.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_ListGroupsResponse extends \Google\Service\CloudIdentity\ListGroupsResponse
     {
     }
 }

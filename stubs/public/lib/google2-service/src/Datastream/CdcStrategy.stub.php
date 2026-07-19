@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class CdcStrategy extends \Google\Model
-{
-    protected $mostRecentStartPositionType = MostRecentStartPosition::class;
-    protected $mostRecentStartPositionDataType = '';
-    protected $nextAvailableStartPositionType = NextAvailableStartPosition::class;
-    protected $nextAvailableStartPositionDataType = '';
-    protected $specificStartPositionType = SpecificStartPosition::class;
-    protected $specificStartPositionDataType = '';
-    /**
-     * Optional. Start replicating from the most recent position in the source.
-     *
-     * @param MostRecentStartPosition $mostRecentStartPosition
-     */
-    public function setMostRecentStartPosition(MostRecentStartPosition $mostRecentStartPosition)
+namespace Google\Service\Datastream {
+    class CdcStrategy extends \Google\Model
     {
+        protected $mostRecentStartPositionType = MostRecentStartPosition::class;
+        protected $mostRecentStartPositionDataType = '';
+        protected $nextAvailableStartPositionType = NextAvailableStartPosition::class;
+        protected $nextAvailableStartPositionDataType = '';
+        protected $specificStartPositionType = SpecificStartPosition::class;
+        protected $specificStartPositionDataType = '';
+        /**
+         * Optional. Start replicating from the most recent position in the source.
+         *
+         * @param MostRecentStartPosition $mostRecentStartPosition
+         */
+        public function setMostRecentStartPosition(MostRecentStartPosition $mostRecentStartPosition)
+        {
+        }
+        /**
+         * @return MostRecentStartPosition
+         */
+        public function getMostRecentStartPosition()
+        {
+        }
+        /**
+         * Optional. Resume replication from the next available position in the
+         * source.
+         *
+         * @param NextAvailableStartPosition $nextAvailableStartPosition
+         */
+        public function setNextAvailableStartPosition(NextAvailableStartPosition $nextAvailableStartPosition)
+        {
+        }
+        /**
+         * @return NextAvailableStartPosition
+         */
+        public function getNextAvailableStartPosition()
+        {
+        }
+        /**
+         * Optional. Start replicating from a specific position in the source.
+         *
+         * @param SpecificStartPosition $specificStartPosition
+         */
+        public function setSpecificStartPosition(SpecificStartPosition $specificStartPosition)
+        {
+        }
+        /**
+         * @return SpecificStartPosition
+         */
+        public function getSpecificStartPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MostRecentStartPosition
+     * Runtime class alias of \Google\Service\Datastream\CdcStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMostRecentStartPosition()
-    {
-    }
-    /**
-     * Optional. Resume replication from the next available position in the
-     * source.
-     *
-     * @param NextAvailableStartPosition $nextAvailableStartPosition
-     */
-    public function setNextAvailableStartPosition(NextAvailableStartPosition $nextAvailableStartPosition)
-    {
-    }
-    /**
-     * @return NextAvailableStartPosition
-     */
-    public function getNextAvailableStartPosition()
-    {
-    }
-    /**
-     * Optional. Start replicating from a specific position in the source.
-     *
-     * @param SpecificStartPosition $specificStartPosition
-     */
-    public function setSpecificStartPosition(SpecificStartPosition $specificStartPosition)
-    {
-    }
-    /**
-     * @return SpecificStartPosition
-     */
-    public function getSpecificStartPosition()
+    class Google_Service_Datastream_CdcStrategy extends \Google\Service\Datastream\CdcStrategy
     {
     }
 }

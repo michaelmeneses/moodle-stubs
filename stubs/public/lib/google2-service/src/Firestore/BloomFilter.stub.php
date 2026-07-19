@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class BloomFilter extends \Google\Model
-{
-    protected $bitsType = BitSequence::class;
-    protected $bitsDataType = '';
-    /**
-     * The number of hashes used by the algorithm.
-     *
-     * @var int
-     */
-    public $hashCount;
-    /**
-     * The bloom filter data.
-     *
-     * @param BitSequence $bits
-     */
-    public function setBits(BitSequence $bits)
+namespace Google\Service\Firestore {
+    class BloomFilter extends \Google\Model
     {
+        protected $bitsType = BitSequence::class;
+        protected $bitsDataType = '';
+        /**
+         * The number of hashes used by the algorithm.
+         *
+         * @var int
+         */
+        public $hashCount;
+        /**
+         * The bloom filter data.
+         *
+         * @param BitSequence $bits
+         */
+        public function setBits(BitSequence $bits)
+        {
+        }
+        /**
+         * @return BitSequence
+         */
+        public function getBits()
+        {
+        }
+        /**
+         * The number of hashes used by the algorithm.
+         *
+         * @param int $hashCount
+         */
+        public function setHashCount($hashCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHashCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitSequence
+     * Runtime class alias of \Google\Service\Firestore\BloomFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBits()
-    {
-    }
-    /**
-     * The number of hashes used by the algorithm.
-     *
-     * @param int $hashCount
-     */
-    public function setHashCount($hashCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHashCount()
+    class Google_Service_Firestore_BloomFilter extends \Google\Service\Firestore\BloomFilter
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class VmSelectionConfig extends \Google\Model
-{
-    /**
-     * Required. The Google Cloud Platform zone the VM is located.
-     *
-     * @var string
-     */
-    public $vmZone;
-    /**
-     * Required. The Google Cloud Platform zone the VM is located.
-     *
-     * @param string $vmZone
-     */
-    public function setVmZone($vmZone)
+namespace Google\Service\DatabaseMigrationService {
+    class VmSelectionConfig extends \Google\Model
     {
+        /**
+         * Required. The Google Cloud Platform zone the VM is located.
+         *
+         * @var string
+         */
+        public $vmZone;
+        /**
+         * Required. The Google Cloud Platform zone the VM is located.
+         *
+         * @param string $vmZone
+         */
+        public function setVmZone($vmZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\VmSelectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVmZone()
+    class Google_Service_DatabaseMigrationService_VmSelectionConfig extends \Google\Service\DatabaseMigrationService\VmSelectionConfig
     {
     }
 }

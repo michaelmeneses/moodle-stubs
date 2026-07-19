@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceSplitRequest extends \Google\Model
-{
-    protected $optionsType = SourceSplitOptions::class;
-    protected $optionsDataType = '';
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * Hints for tuning the splitting process.
-     *
-     * @param SourceSplitOptions $options
-     */
-    public function setOptions(SourceSplitOptions $options)
+namespace Google\Service\Dataflow {
+    class SourceSplitRequest extends \Google\Model
     {
+        protected $optionsType = SourceSplitOptions::class;
+        protected $optionsDataType = '';
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * Hints for tuning the splitting process.
+         *
+         * @param SourceSplitOptions $options
+         */
+        public function setOptions(SourceSplitOptions $options)
+        {
+        }
+        /**
+         * @return SourceSplitOptions
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * Specification of the source to be split.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceSplitOptions
+     * Runtime class alias of \Google\Service\Dataflow\SourceSplitRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
-    {
-    }
-    /**
-     * Specification of the source to be split.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_Dataflow_SourceSplitRequest extends \Google\Service\Dataflow\SourceSplitRequest
     {
     }
 }

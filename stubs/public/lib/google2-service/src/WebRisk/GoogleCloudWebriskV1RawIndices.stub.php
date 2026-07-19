@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1RawIndices extends \Google\Collection
-{
-    protected $collection_key = 'indices';
-    /**
-     * The indices to remove from a lexicographically-sorted local list.
-     *
-     * @var int[]
-     */
-    public $indices;
-    /**
-     * The indices to remove from a lexicographically-sorted local list.
-     *
-     * @param int[] $indices
-     */
-    public function setIndices($indices)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1RawIndices extends \Google\Collection
     {
+        protected $collection_key = 'indices';
+        /**
+         * The indices to remove from a lexicographically-sorted local list.
+         *
+         * @var int[]
+         */
+        public $indices;
+        /**
+         * The indices to remove from a lexicographically-sorted local list.
+         *
+         * @param int[] $indices
+         */
+        public function setIndices($indices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getIndices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1RawIndices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndices()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1RawIndices extends \Google\Service\WebRisk\GoogleCloudWebriskV1RawIndices
     {
     }
 }

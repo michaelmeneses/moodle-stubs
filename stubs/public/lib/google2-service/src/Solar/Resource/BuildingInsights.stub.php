@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar\Resource;
-
-/**
- * The "buildingInsights" collection of methods.
- * Typical usage is:
- *  <code>
- *   $solarService = new Google\Service\Solar(...);
- *   $buildingInsights = $solarService->buildingInsights;
- *  </code>
- */
-class BuildingInsights extends \Google\Service\Resource
-{
+namespace Google\Service\Solar\Resource {
+    use Google\Service\Solar\BuildingInsights as BuildingInsightsModel;
     /**
-     * Locates the building whose centroid is closest to a query point. Returns an
-     * error with code `NOT_FOUND` if there are no buildings within approximately
-     * 50m of the query point. (buildingInsights.findClosest)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool exactQualityRequired Optional. Whether to require exact
-     * quality of the imagery. If set to false, the `required_quality` field is
-     * interpreted as the minimum required quality, such that HIGH quality imagery
-     * may be returned when `required_quality` is set to MEDIUM. If set to true,
-     * `required_quality` is interpreted as the exact required quality and only
-     * `MEDIUM` quality imagery is returned if `required_quality` is set to
-     * `MEDIUM`.
-     * @opt_param string experiments Optional. Specifies the pre-GA features to
-     * enable.
-     * @opt_param double location.latitude The latitude in degrees. It must be in
-     * the range [-90.0, +90.0].
-     * @opt_param double location.longitude The longitude in degrees. It must be in
-     * the range [-180.0, +180.0].
-     * @opt_param string requiredQuality Optional. The minimum quality level allowed
-     * in the results. No result with lower quality than this will be returned. Not
-     * specifying this is equivalent to restricting to HIGH quality only.
-     * @return BuildingInsightsModel
-     * @throws \Google\Service\Exception
+     * The "buildingInsights" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $solarService = new Google\Service\Solar(...);
+     *   $buildingInsights = $solarService->buildingInsights;
+     *  </code>
      */
-    public function findClosest($optParams = [])
+    class BuildingInsights extends \Google\Service\Resource
+    {
+        /**
+         * Locates the building whose centroid is closest to a query point. Returns an
+         * error with code `NOT_FOUND` if there are no buildings within approximately
+         * 50m of the query point. (buildingInsights.findClosest)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool exactQualityRequired Optional. Whether to require exact
+         * quality of the imagery. If set to false, the `required_quality` field is
+         * interpreted as the minimum required quality, such that HIGH quality imagery
+         * may be returned when `required_quality` is set to MEDIUM. If set to true,
+         * `required_quality` is interpreted as the exact required quality and only
+         * `MEDIUM` quality imagery is returned if `required_quality` is set to
+         * `MEDIUM`.
+         * @opt_param string experiments Optional. Specifies the pre-GA features to
+         * enable.
+         * @opt_param double location.latitude The latitude in degrees. It must be in
+         * the range [-90.0, +90.0].
+         * @opt_param double location.longitude The longitude in degrees. It must be in
+         * the range [-180.0, +180.0].
+         * @opt_param string requiredQuality Optional. The minimum quality level allowed
+         * in the results. No result with lower quality than this will be returned. Not
+         * specifying this is equivalent to restricting to HIGH quality only.
+         * @return BuildingInsightsModel
+         * @throws \Google\Service\Exception
+         */
+        public function findClosest($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Solar\Resource\BuildingInsights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Solar_Resource_BuildingInsights extends \Google\Service\Solar\Resource\BuildingInsights
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class Statefile extends \Google\Model
-{
-    /**
-     * Output only. Cloud Storage signed URI used for downloading or uploading the
-     * state file.
-     *
-     * @var string
-     */
-    public $signedUri;
-    /**
-     * Output only. Cloud Storage signed URI used for downloading or uploading the
-     * state file.
-     *
-     * @param string $signedUri
-     */
-    public function setSignedUri($signedUri)
+namespace Google\Service\Config {
+    class Statefile extends \Google\Model
     {
+        /**
+         * Output only. Cloud Storage signed URI used for downloading or uploading the
+         * state file.
+         *
+         * @var string
+         */
+        public $signedUri;
+        /**
+         * Output only. Cloud Storage signed URI used for downloading or uploading the
+         * state file.
+         *
+         * @param string $signedUri
+         */
+        public function setSignedUri($signedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\Statefile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSignedUri()
+    class Google_Service_Config_Statefile extends \Google\Service\Config\Statefile
     {
     }
 }

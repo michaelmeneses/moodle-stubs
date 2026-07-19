@@ -21,78 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "feedbackMessages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $feedbackMessages = $datalabelingService->projects_datasets_annotatedDatasets_feedbackThreads_feedbackMessages;
- *  </code>
- */
-class ProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackMessage;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListFeedbackMessagesResponse;
+    use Google\Service\DataLabeling\GoogleLongrunningOperation;
+    use Google\Service\DataLabeling\GoogleProtobufEmpty;
     /**
-     * Create a FeedbackMessage object. (feedbackMessages.create)
-     *
-     * @param string $parent Required. FeedbackMessage resource parent, format: proj
-     * ects/{project_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_
-     * id}/feedbackThreads/{feedback_thread_id}.
-     * @param GoogleCloudDatalabelingV1beta1FeedbackMessage $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "feedbackMessages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $feedbackMessages = $datalabelingService->projects_datasets_annotatedDatasets_feedbackThreads_feedbackMessages;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDatalabelingV1beta1FeedbackMessage $postBody, $optParams = [])
+    class ProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages extends \Google\Service\Resource
     {
+        /**
+         * Create a FeedbackMessage object. (feedbackMessages.create)
+         *
+         * @param string $parent Required. FeedbackMessage resource parent, format: proj
+         * ects/{project_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_
+         * id}/feedbackThreads/{feedback_thread_id}.
+         * @param GoogleCloudDatalabelingV1beta1FeedbackMessage $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDatalabelingV1beta1FeedbackMessage $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a FeedbackMessage. (feedbackMessages.delete)
+         *
+         * @param string $name Required. Name of the FeedbackMessage that is going to be
+         * deleted. Format: 'projects/{project_id}/datasets/{dataset_id}/annotatedDatase
+         * ts/{annotated_dataset_id}/feedbackThreads/{feedback_thread_id}/feedbackMessag
+         * es/{feedback_message_id}'.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get a FeedbackMessage object. (feedbackMessages.get)
+         *
+         * @param string $name Required. Name of the feedback. Format: 'projects/{projec
+         * t_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedback
+         * Threads/{feedback_thread_id}/feedbackMessages/{feedback_message_id}'.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1FeedbackMessage
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List FeedbackMessages with pagination. (feedbackMessages.listProjectsDatasets
+         * AnnotatedDatasetsFeedbackThreadsFeedbackMessages)
+         *
+         * @param string $parent Required. FeedbackMessage resource parent. Format: "pro
+         * jects/{project_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset
+         * _id}/feedbackThreads/{feedback_thread_id}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer results than requested. Default value is 100.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * for the server to return. Typically obtained by
+         * ListFeedbackMessages.next_page_token of the previous
+         * [DataLabelingService.ListFeedbackMessages] call. Return first page if empty.
+         * @return GoogleCloudDatalabelingV1beta1ListFeedbackMessagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a FeedbackMessage. (feedbackMessages.delete)
-     *
-     * @param string $name Required. Name of the FeedbackMessage that is going to be
-     * deleted. Format: 'projects/{project_id}/datasets/{dataset_id}/annotatedDatase
-     * ts/{annotated_dataset_id}/feedbackThreads/{feedback_thread_id}/feedbackMessag
-     * es/{feedback_message_id}'.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get a FeedbackMessage object. (feedbackMessages.get)
-     *
-     * @param string $name Required. Name of the feedback. Format: 'projects/{projec
-     * t_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedback
-     * Threads/{feedback_thread_id}/feedbackMessages/{feedback_message_id}'.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1FeedbackMessage
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List FeedbackMessages with pagination. (feedbackMessages.listProjectsDatasets
-     * AnnotatedDatasetsFeedbackThreadsFeedbackMessages)
-     *
-     * @param string $parent Required. FeedbackMessage resource parent. Format: "pro
-     * jects/{project_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset
-     * _id}/feedbackThreads/{feedback_thread_id}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer results than requested. Default value is 100.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * for the server to return. Typically obtained by
-     * ListFeedbackMessages.next_page_token of the previous
-     * [DataLabelingService.ListFeedbackMessages] call. Return first page if empty.
-     * @return GoogleCloudDatalabelingV1beta1ListFeedbackMessagesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages($parent, $optParams = [])
+    class Google_Service_DataLabeling_Resource_ProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages extends \Google\Service\DataLabeling\Resource\ProjectsDatasetsAnnotatedDatasetsFeedbackThreadsFeedbackMessages
     {
     }
 }

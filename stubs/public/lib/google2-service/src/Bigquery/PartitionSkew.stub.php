@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class PartitionSkew extends \Google\Collection
-{
-    protected $collection_key = 'skewSources';
-    protected $skewSourcesType = SkewSource::class;
-    protected $skewSourcesDataType = 'array';
-    /**
-     * Output only. Source stages which produce skewed data.
-     *
-     * @param SkewSource[] $skewSources
-     */
-    public function setSkewSources($skewSources)
+namespace Google\Service\Bigquery {
+    class PartitionSkew extends \Google\Collection
     {
+        protected $collection_key = 'skewSources';
+        protected $skewSourcesType = SkewSource::class;
+        protected $skewSourcesDataType = 'array';
+        /**
+         * Output only. Source stages which produce skewed data.
+         *
+         * @param SkewSource[] $skewSources
+         */
+        public function setSkewSources($skewSources)
+        {
+        }
+        /**
+         * @return SkewSource[]
+         */
+        public function getSkewSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SkewSource[]
+     * Runtime class alias of \Google\Service\Bigquery\PartitionSkew registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSkewSources()
+    class Google_Service_Bigquery_PartitionSkew extends \Google\Service\Bigquery\PartitionSkew
     {
     }
 }

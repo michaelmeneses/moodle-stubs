@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshState extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $analysisMessagesType = ServiceMeshAnalysisMessage::class;
-    protected $analysisMessagesDataType = 'array';
-    protected $conditionsType = ServiceMeshCondition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * The API version (i.e. Istio CRD version) for configuring service mesh in
-     * this cluster. This version is influenced by the `default_channel` field.
-     *
-     * @var string
-     */
-    public $configApiVersion;
-    protected $controlPlaneManagementType = ServiceMeshControlPlaneManagement::class;
-    protected $controlPlaneManagementDataType = '';
-    protected $dataPlaneManagementType = ServiceMeshDataPlaneManagement::class;
-    protected $dataPlaneManagementDataType = '';
-    /**
-     * Output only. Results of running Service Mesh analyzers.
-     *
-     * @param ServiceMeshAnalysisMessage[] $analysisMessages
-     */
-    public function setAnalysisMessages($analysisMessages)
+namespace Google\Service\GKEHub {
+    class ServiceMeshState extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $analysisMessagesType = ServiceMeshAnalysisMessage::class;
+        protected $analysisMessagesDataType = 'array';
+        protected $conditionsType = ServiceMeshCondition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * The API version (i.e. Istio CRD version) for configuring service mesh in
+         * this cluster. This version is influenced by the `default_channel` field.
+         *
+         * @var string
+         */
+        public $configApiVersion;
+        protected $controlPlaneManagementType = ServiceMeshControlPlaneManagement::class;
+        protected $controlPlaneManagementDataType = '';
+        protected $dataPlaneManagementType = ServiceMeshDataPlaneManagement::class;
+        protected $dataPlaneManagementDataType = '';
+        /**
+         * Output only. Results of running Service Mesh analyzers.
+         *
+         * @param ServiceMeshAnalysisMessage[] $analysisMessages
+         */
+        public function setAnalysisMessages($analysisMessages)
+        {
+        }
+        /**
+         * @return ServiceMeshAnalysisMessage[]
+         */
+        public function getAnalysisMessages()
+        {
+        }
+        /**
+         * Output only. List of conditions reported for this membership.
+         *
+         * @param ServiceMeshCondition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return ServiceMeshCondition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * The API version (i.e. Istio CRD version) for configuring service mesh in
+         * this cluster. This version is influenced by the `default_channel` field.
+         *
+         * @param string $configApiVersion
+         */
+        public function setConfigApiVersion($configApiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigApiVersion()
+        {
+        }
+        /**
+         * Output only. Status of control plane management
+         *
+         * @param ServiceMeshControlPlaneManagement $controlPlaneManagement
+         */
+        public function setControlPlaneManagement(ServiceMeshControlPlaneManagement $controlPlaneManagement)
+        {
+        }
+        /**
+         * @return ServiceMeshControlPlaneManagement
+         */
+        public function getControlPlaneManagement()
+        {
+        }
+        /**
+         * Output only. Status of data plane management.
+         *
+         * @param ServiceMeshDataPlaneManagement $dataPlaneManagement
+         */
+        public function setDataPlaneManagement(ServiceMeshDataPlaneManagement $dataPlaneManagement)
+        {
+        }
+        /**
+         * @return ServiceMeshDataPlaneManagement
+         */
+        public function getDataPlaneManagement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceMeshAnalysisMessage[]
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisMessages()
-    {
-    }
-    /**
-     * Output only. List of conditions reported for this membership.
-     *
-     * @param ServiceMeshCondition[] $conditions
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return ServiceMeshCondition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * The API version (i.e. Istio CRD version) for configuring service mesh in
-     * this cluster. This version is influenced by the `default_channel` field.
-     *
-     * @param string $configApiVersion
-     */
-    public function setConfigApiVersion($configApiVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfigApiVersion()
-    {
-    }
-    /**
-     * Output only. Status of control plane management
-     *
-     * @param ServiceMeshControlPlaneManagement $controlPlaneManagement
-     */
-    public function setControlPlaneManagement(ServiceMeshControlPlaneManagement $controlPlaneManagement)
-    {
-    }
-    /**
-     * @return ServiceMeshControlPlaneManagement
-     */
-    public function getControlPlaneManagement()
-    {
-    }
-    /**
-     * Output only. Status of data plane management.
-     *
-     * @param ServiceMeshDataPlaneManagement $dataPlaneManagement
-     */
-    public function setDataPlaneManagement(ServiceMeshDataPlaneManagement $dataPlaneManagement)
-    {
-    }
-    /**
-     * @return ServiceMeshDataPlaneManagement
-     */
-    public function getDataPlaneManagement()
+    class Google_Service_GKEHub_ServiceMeshState extends \Google\Service\GKEHub\ServiceMeshState
     {
     }
 }

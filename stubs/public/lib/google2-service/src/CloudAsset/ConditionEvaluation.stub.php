@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ConditionEvaluation extends \Google\Model
-{
-    /**
-     * Reserved for future use.
-     */
-    public const EVALUATION_VALUE_EVALUATION_VALUE_UNSPECIFIED = 'EVALUATION_VALUE_UNSPECIFIED';
-    /**
-     * The evaluation result is `true`.
-     */
-    public const EVALUATION_VALUE_TRUE = 'TRUE';
-    /**
-     * The evaluation result is `false`.
-     */
-    public const EVALUATION_VALUE_FALSE = 'FALSE';
-    /**
-     * The evaluation result is `conditional` when the condition expression
-     * contains variables that are either missing input values or have not been
-     * supported by Policy Analyzer yet.
-     */
-    public const EVALUATION_VALUE_CONDITIONAL = 'CONDITIONAL';
-    /**
-     * The evaluation result.
-     *
-     * @var string
-     */
-    public $evaluationValue;
-    /**
-     * The evaluation result.
-     *
-     * Accepted values: EVALUATION_VALUE_UNSPECIFIED, TRUE, FALSE, CONDITIONAL
-     *
-     * @param self::EVALUATION_VALUE_* $evaluationValue
-     */
-    public function setEvaluationValue($evaluationValue)
+namespace Google\Service\CloudAsset {
+    class ConditionEvaluation extends \Google\Model
     {
+        /**
+         * Reserved for future use.
+         */
+        public const EVALUATION_VALUE_EVALUATION_VALUE_UNSPECIFIED = 'EVALUATION_VALUE_UNSPECIFIED';
+        /**
+         * The evaluation result is `true`.
+         */
+        public const EVALUATION_VALUE_TRUE = 'TRUE';
+        /**
+         * The evaluation result is `false`.
+         */
+        public const EVALUATION_VALUE_FALSE = 'FALSE';
+        /**
+         * The evaluation result is `conditional` when the condition expression
+         * contains variables that are either missing input values or have not been
+         * supported by Policy Analyzer yet.
+         */
+        public const EVALUATION_VALUE_CONDITIONAL = 'CONDITIONAL';
+        /**
+         * The evaluation result.
+         *
+         * @var string
+         */
+        public $evaluationValue;
+        /**
+         * The evaluation result.
+         *
+         * Accepted values: EVALUATION_VALUE_UNSPECIFIED, TRUE, FALSE, CONDITIONAL
+         *
+         * @param self::EVALUATION_VALUE_* $evaluationValue
+         */
+        public function setEvaluationValue($evaluationValue)
+        {
+        }
+        /**
+         * @return self::EVALUATION_VALUE_*
+         */
+        public function getEvaluationValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EVALUATION_VALUE_*
+     * Runtime class alias of \Google\Service\CloudAsset\ConditionEvaluation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationValue()
+    class Google_Service_CloudAsset_ConditionEvaluation extends \Google\Service\CloudAsset\ConditionEvaluation
     {
     }
 }

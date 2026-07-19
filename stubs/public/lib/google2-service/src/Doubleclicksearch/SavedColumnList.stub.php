@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class SavedColumnList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = SavedColumn::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies this as a SavedColumnList resource. Value: the fixed string
-     * doubleclicksearch#savedColumnList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The saved columns being requested.
-     *
-     * @param SavedColumn[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Doubleclicksearch {
+    class SavedColumnList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = SavedColumn::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies this as a SavedColumnList resource. Value: the fixed string
+         * doubleclicksearch#savedColumnList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The saved columns being requested.
+         *
+         * @param SavedColumn[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return SavedColumn[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies this as a SavedColumnList resource. Value: the fixed string
+         * doubleclicksearch#savedColumnList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SavedColumn[]
+     * Runtime class alias of \Google\Service\Doubleclicksearch\SavedColumnList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies this as a SavedColumnList resource. Value: the fixed string
-     * doubleclicksearch#savedColumnList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Doubleclicksearch_SavedColumnList extends \Google\Service\Doubleclicksearch\SavedColumnList
     {
     }
 }

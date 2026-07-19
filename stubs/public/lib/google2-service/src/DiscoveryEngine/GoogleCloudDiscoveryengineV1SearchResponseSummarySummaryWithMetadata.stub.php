@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata extends \Google\Collection
-{
-    protected $collection_key = 'references';
-    protected $citationMetadataType = GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata::class;
-    protected $citationMetadataDataType = '';
-    protected $referencesType = GoogleCloudDiscoveryengineV1SearchResponseSummaryReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * Summary text with no citation information.
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * Citation metadata for given summary.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata $citationMetadata
-     */
-    public function setCitationMetadata(GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata $citationMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata extends \Google\Collection
     {
+        protected $collection_key = 'references';
+        protected $citationMetadataType = GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata::class;
+        protected $citationMetadataDataType = '';
+        protected $referencesType = GoogleCloudDiscoveryengineV1SearchResponseSummaryReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * Summary text with no citation information.
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * Citation metadata for given summary.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata $citationMetadata
+         */
+        public function setCitationMetadata(GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata $citationMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata
+         */
+        public function getCitationMetadata()
+        {
+        }
+        /**
+         * Document References.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Summary text with no citation information.
+         *
+         * @param string $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitationMetadata()
-    {
-    }
-    /**
-     * Document References.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryReference[] $references
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryReference[]
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * Summary text with no citation information.
-     *
-     * @param string $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummarySummaryWithMetadata
     {
     }
 }

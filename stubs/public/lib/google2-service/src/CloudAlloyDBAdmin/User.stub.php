@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class User extends \Google\Collection
-{
-    /**
-     * Unspecified user type.
-     */
-    public const USER_TYPE_USER_TYPE_UNSPECIFIED = 'USER_TYPE_UNSPECIFIED';
-    /**
-     * The default user type that authenticates via password-based authentication.
-     */
-    public const USER_TYPE_ALLOYDB_BUILT_IN = 'ALLOYDB_BUILT_IN';
-    /**
-     * Database user that can authenticate via IAM-Based authentication.
-     */
-    public const USER_TYPE_ALLOYDB_IAM_USER = 'ALLOYDB_IAM_USER';
-    protected $collection_key = 'databaseRoles';
-    /**
-     * Optional. List of database roles this user has. The database role strings
-     * are subject to the PostgreSQL naming conventions.
-     *
-     * @var string[]
-     */
-    public $databaseRoles;
-    /**
-     * Input only. If the user already exists and it has additional roles, keep
-     * them granted.
-     *
-     * @var bool
-     */
-    public $keepExtraRoles;
-    /**
-     * Output only. Name of the resource in the form of
-     * projects/{project}/locations/{location}/cluster/{cluster}/users/{user}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Input only. Password for the user.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Optional. Type of this user.
-     *
-     * @var string
-     */
-    public $userType;
-    /**
-     * Optional. List of database roles this user has. The database role strings
-     * are subject to the PostgreSQL naming conventions.
-     *
-     * @param string[] $databaseRoles
-     */
-    public function setDatabaseRoles($databaseRoles)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class User extends \Google\Collection
     {
+        /**
+         * Unspecified user type.
+         */
+        public const USER_TYPE_USER_TYPE_UNSPECIFIED = 'USER_TYPE_UNSPECIFIED';
+        /**
+         * The default user type that authenticates via password-based authentication.
+         */
+        public const USER_TYPE_ALLOYDB_BUILT_IN = 'ALLOYDB_BUILT_IN';
+        /**
+         * Database user that can authenticate via IAM-Based authentication.
+         */
+        public const USER_TYPE_ALLOYDB_IAM_USER = 'ALLOYDB_IAM_USER';
+        protected $collection_key = 'databaseRoles';
+        /**
+         * Optional. List of database roles this user has. The database role strings
+         * are subject to the PostgreSQL naming conventions.
+         *
+         * @var string[]
+         */
+        public $databaseRoles;
+        /**
+         * Input only. If the user already exists and it has additional roles, keep
+         * them granted.
+         *
+         * @var bool
+         */
+        public $keepExtraRoles;
+        /**
+         * Output only. Name of the resource in the form of
+         * projects/{project}/locations/{location}/cluster/{cluster}/users/{user}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Input only. Password for the user.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Optional. Type of this user.
+         *
+         * @var string
+         */
+        public $userType;
+        /**
+         * Optional. List of database roles this user has. The database role strings
+         * are subject to the PostgreSQL naming conventions.
+         *
+         * @param string[] $databaseRoles
+         */
+        public function setDatabaseRoles($databaseRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDatabaseRoles()
+        {
+        }
+        /**
+         * Input only. If the user already exists and it has additional roles, keep
+         * them granted.
+         *
+         * @param bool $keepExtraRoles
+         */
+        public function setKeepExtraRoles($keepExtraRoles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeepExtraRoles()
+        {
+        }
+        /**
+         * Output only. Name of the resource in the form of
+         * projects/{project}/locations/{location}/cluster/{cluster}/users/{user}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Input only. Password for the user.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Optional. Type of this user.
+         *
+         * Accepted values: USER_TYPE_UNSPECIFIED, ALLOYDB_BUILT_IN, ALLOYDB_IAM_USER
+         *
+         * @param self::USER_TYPE_* $userType
+         */
+        public function setUserType($userType)
+        {
+        }
+        /**
+         * @return self::USER_TYPE_*
+         */
+        public function getUserType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseRoles()
-    {
-    }
-    /**
-     * Input only. If the user already exists and it has additional roles, keep
-     * them granted.
-     *
-     * @param bool $keepExtraRoles
-     */
-    public function setKeepExtraRoles($keepExtraRoles)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeepExtraRoles()
-    {
-    }
-    /**
-     * Output only. Name of the resource in the form of
-     * projects/{project}/locations/{location}/cluster/{cluster}/users/{user}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Input only. Password for the user.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Optional. Type of this user.
-     *
-     * Accepted values: USER_TYPE_UNSPECIFIED, ALLOYDB_BUILT_IN, ALLOYDB_IAM_USER
-     *
-     * @param self::USER_TYPE_* $userType
-     */
-    public function setUserType($userType)
-    {
-    }
-    /**
-     * @return self::USER_TYPE_*
-     */
-    public function getUserType()
+    class Google_Service_CloudAlloyDBAdmin_User extends \Google\Service\CloudAlloyDBAdmin\User
     {
     }
 }

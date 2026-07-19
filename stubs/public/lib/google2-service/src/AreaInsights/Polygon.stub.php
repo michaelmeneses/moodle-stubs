@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class Polygon extends \Google\Collection
-{
-    protected $collection_key = 'coordinates';
-    protected $coordinatesType = LatLng::class;
-    protected $coordinatesDataType = 'array';
-    /**
-     * Optional. The coordinates that define the polygon.
-     *
-     * @param LatLng[] $coordinates
-     */
-    public function setCoordinates($coordinates)
+namespace Google\Service\AreaInsights {
+    class Polygon extends \Google\Collection
     {
+        protected $collection_key = 'coordinates';
+        protected $coordinatesType = LatLng::class;
+        protected $coordinatesDataType = 'array';
+        /**
+         * Optional. The coordinates that define the polygon.
+         *
+         * @param LatLng[] $coordinates
+         */
+        public function setCoordinates($coordinates)
+        {
+        }
+        /**
+         * @return LatLng[]
+         */
+        public function getCoordinates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng[]
+     * Runtime class alias of \Google\Service\AreaInsights\Polygon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoordinates()
+    class Google_Service_AreaInsights_Polygon extends \Google\Service\AreaInsights\Polygon
     {
     }
 }

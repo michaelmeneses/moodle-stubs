@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageQuickReplies extends \Google\Collection
-{
-    protected $collection_key = 'quickReplies';
-    /**
-     * Optional. The collection of quick replies.
-     *
-     * @var string[]
-     */
-    public $quickReplies;
-    /**
-     * Optional. The title of the collection of quick replies.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. The collection of quick replies.
-     *
-     * @param string[] $quickReplies
-     */
-    public function setQuickReplies($quickReplies)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageQuickReplies extends \Google\Collection
     {
+        protected $collection_key = 'quickReplies';
+        /**
+         * Optional. The collection of quick replies.
+         *
+         * @var string[]
+         */
+        public $quickReplies;
+        /**
+         * Optional. The title of the collection of quick replies.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. The collection of quick replies.
+         *
+         * @param string[] $quickReplies
+         */
+        public function setQuickReplies($quickReplies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQuickReplies()
+        {
+        }
+        /**
+         * Optional. The title of the collection of quick replies.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageQuickReplies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuickReplies()
-    {
-    }
-    /**
-     * Optional. The title of the collection of quick replies.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageQuickReplies extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageQuickReplies
     {
     }
 }

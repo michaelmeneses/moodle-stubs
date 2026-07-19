@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageSimpleResponse extends \Google\Model
-{
-    /**
-     * Optional. The text to display.
-     *
-     * @var string
-     */
-    public $displayText;
-    /**
-     * One of text_to_speech or ssml must be provided. Structured spoken response
-     * to the user in the SSML format. Mutually exclusive with text_to_speech.
-     *
-     * @var string
-     */
-    public $ssml;
-    /**
-     * One of text_to_speech or ssml must be provided. The plain text of the
-     * speech output. Mutually exclusive with ssml.
-     *
-     * @var string
-     */
-    public $textToSpeech;
-    /**
-     * Optional. The text to display.
-     *
-     * @param string $displayText
-     */
-    public function setDisplayText($displayText)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageSimpleResponse extends \Google\Model
     {
+        /**
+         * Optional. The text to display.
+         *
+         * @var string
+         */
+        public $displayText;
+        /**
+         * One of text_to_speech or ssml must be provided. Structured spoken response
+         * to the user in the SSML format. Mutually exclusive with text_to_speech.
+         *
+         * @var string
+         */
+        public $ssml;
+        /**
+         * One of text_to_speech or ssml must be provided. The plain text of the
+         * speech output. Mutually exclusive with ssml.
+         *
+         * @var string
+         */
+        public $textToSpeech;
+        /**
+         * Optional. The text to display.
+         *
+         * @param string $displayText
+         */
+        public function setDisplayText($displayText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayText()
+        {
+        }
+        /**
+         * One of text_to_speech or ssml must be provided. Structured spoken response
+         * to the user in the SSML format. Mutually exclusive with text_to_speech.
+         *
+         * @param string $ssml
+         */
+        public function setSsml($ssml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSsml()
+        {
+        }
+        /**
+         * One of text_to_speech or ssml must be provided. The plain text of the
+         * speech output. Mutually exclusive with ssml.
+         *
+         * @param string $textToSpeech
+         */
+        public function setTextToSpeech($textToSpeech)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextToSpeech()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageSimpleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayText()
-    {
-    }
-    /**
-     * One of text_to_speech or ssml must be provided. Structured spoken response
-     * to the user in the SSML format. Mutually exclusive with text_to_speech.
-     *
-     * @param string $ssml
-     */
-    public function setSsml($ssml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSsml()
-    {
-    }
-    /**
-     * One of text_to_speech or ssml must be provided. The plain text of the
-     * speech output. Mutually exclusive with ssml.
-     *
-     * @param string $textToSpeech
-     */
-    public function setTextToSpeech($textToSpeech)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextToSpeech()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageSimpleResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageSimpleResponse
     {
     }
 }

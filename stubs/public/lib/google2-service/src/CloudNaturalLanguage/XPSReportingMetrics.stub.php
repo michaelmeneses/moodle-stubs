@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSReportingMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metricEntries';
-    /**
-     * The effective time training used. If set, this is used for quota management
-     * and billing. Deprecated. AutoML BE doesn't use this. Don't set.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $effectiveTrainingDuration;
-    protected $metricEntriesType = XPSMetricEntry::class;
-    protected $metricEntriesDataType = 'array';
-    /**
-     * The effective time training used. If set, this is used for quota management
-     * and billing. Deprecated. AutoML BE doesn't use this. Don't set.
-     *
-     * @deprecated
-     * @param string $effectiveTrainingDuration
-     */
-    public function setEffectiveTrainingDuration($effectiveTrainingDuration)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSReportingMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metricEntries';
+        /**
+         * The effective time training used. If set, this is used for quota management
+         * and billing. Deprecated. AutoML BE doesn't use this. Don't set.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $effectiveTrainingDuration;
+        protected $metricEntriesType = XPSMetricEntry::class;
+        protected $metricEntriesDataType = 'array';
+        /**
+         * The effective time training used. If set, this is used for quota management
+         * and billing. Deprecated. AutoML BE doesn't use this. Don't set.
+         *
+         * @deprecated
+         * @param string $effectiveTrainingDuration
+         */
+        public function setEffectiveTrainingDuration($effectiveTrainingDuration)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEffectiveTrainingDuration()
+        {
+        }
+        /**
+         * One entry per metric name. The values must be aggregated per metric name.
+         *
+         * @param XPSMetricEntry[] $metricEntries
+         */
+        public function setMetricEntries($metricEntries)
+        {
+        }
+        /**
+         * @return XPSMetricEntry[]
+         */
+        public function getMetricEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSReportingMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveTrainingDuration()
-    {
-    }
-    /**
-     * One entry per metric name. The values must be aggregated per metric name.
-     *
-     * @param XPSMetricEntry[] $metricEntries
-     */
-    public function setMetricEntries($metricEntries)
-    {
-    }
-    /**
-     * @return XPSMetricEntry[]
-     */
-    public function getMetricEntries()
+    class Google_Service_CloudNaturalLanguage_XPSReportingMetrics extends \Google\Service\CloudNaturalLanguage\XPSReportingMetrics
     {
     }
 }

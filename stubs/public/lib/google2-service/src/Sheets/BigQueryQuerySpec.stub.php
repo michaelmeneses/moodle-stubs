@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BigQueryQuerySpec extends \Google\Model
-{
-    /**
-     * The raw query string.
-     *
-     * @var string
-     */
-    public $rawQuery;
-    /**
-     * The raw query string.
-     *
-     * @param string $rawQuery
-     */
-    public function setRawQuery($rawQuery)
+namespace Google\Service\Sheets {
+    class BigQueryQuerySpec extends \Google\Model
     {
+        /**
+         * The raw query string.
+         *
+         * @var string
+         */
+        public $rawQuery;
+        /**
+         * The raw query string.
+         *
+         * @param string $rawQuery
+         */
+        public function setRawQuery($rawQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\BigQueryQuerySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRawQuery()
+    class Google_Service_Sheets_BigQueryQuerySpec extends \Google\Service\Sheets\BigQueryQuerySpec
     {
     }
 }

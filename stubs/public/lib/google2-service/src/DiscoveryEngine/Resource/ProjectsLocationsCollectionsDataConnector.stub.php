@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "dataConnector" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $dataConnector = $discoveryengineService->projects_locations_collections_dataConnector;
- *  </code>
- */
-class ProjectsLocationsCollectionsDataConnector extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    /**
+     * The "dataConnector" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $dataConnector = $discoveryengineService->projects_locations_collections_dataConnector;
+     *  </code>
+     */
+    class ProjectsLocationsCollectionsDataConnector extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataConnector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsDataConnector extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataConnector
+    {
+    }
 }

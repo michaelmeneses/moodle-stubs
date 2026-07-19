@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PivotFilterSpec extends \Google\Model
-{
-    /**
-     * The zero-based column offset of the source range.
-     *
-     * @var int
-     */
-    public $columnOffsetIndex;
-    protected $dataSourceColumnReferenceType = DataSourceColumnReference::class;
-    protected $dataSourceColumnReferenceDataType = '';
-    protected $filterCriteriaType = PivotFilterCriteria::class;
-    protected $filterCriteriaDataType = '';
-    /**
-     * The zero-based column offset of the source range.
-     *
-     * @param int $columnOffsetIndex
-     */
-    public function setColumnOffsetIndex($columnOffsetIndex)
+namespace Google\Service\Sheets {
+    class PivotFilterSpec extends \Google\Model
     {
+        /**
+         * The zero-based column offset of the source range.
+         *
+         * @var int
+         */
+        public $columnOffsetIndex;
+        protected $dataSourceColumnReferenceType = DataSourceColumnReference::class;
+        protected $dataSourceColumnReferenceDataType = '';
+        protected $filterCriteriaType = PivotFilterCriteria::class;
+        protected $filterCriteriaDataType = '';
+        /**
+         * The zero-based column offset of the source range.
+         *
+         * @param int $columnOffsetIndex
+         */
+        public function setColumnOffsetIndex($columnOffsetIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnOffsetIndex()
+        {
+        }
+        /**
+         * The reference to the data source column.
+         *
+         * @param DataSourceColumnReference $dataSourceColumnReference
+         */
+        public function setDataSourceColumnReference(DataSourceColumnReference $dataSourceColumnReference)
+        {
+        }
+        /**
+         * @return DataSourceColumnReference
+         */
+        public function getDataSourceColumnReference()
+        {
+        }
+        /**
+         * The criteria for the column.
+         *
+         * @param PivotFilterCriteria $filterCriteria
+         */
+        public function setFilterCriteria(PivotFilterCriteria $filterCriteria)
+        {
+        }
+        /**
+         * @return PivotFilterCriteria
+         */
+        public function getFilterCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\PivotFilterSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnOffsetIndex()
-    {
-    }
-    /**
-     * The reference to the data source column.
-     *
-     * @param DataSourceColumnReference $dataSourceColumnReference
-     */
-    public function setDataSourceColumnReference(DataSourceColumnReference $dataSourceColumnReference)
-    {
-    }
-    /**
-     * @return DataSourceColumnReference
-     */
-    public function getDataSourceColumnReference()
-    {
-    }
-    /**
-     * The criteria for the column.
-     *
-     * @param PivotFilterCriteria $filterCriteria
-     */
-    public function setFilterCriteria(PivotFilterCriteria $filterCriteria)
-    {
-    }
-    /**
-     * @return PivotFilterCriteria
-     */
-    public function getFilterCriteria()
+    class Google_Service_Sheets_PivotFilterSpec extends \Google\Service\Sheets\PivotFilterSpec
     {
     }
 }

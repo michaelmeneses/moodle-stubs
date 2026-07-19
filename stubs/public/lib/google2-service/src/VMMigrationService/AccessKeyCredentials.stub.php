@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AccessKeyCredentials extends \Google\Model
-{
-    /**
-     * AWS access key ID.
-     *
-     * @var string
-     */
-    public $accessKeyId;
-    /**
-     * Input only. AWS secret access key.
-     *
-     * @var string
-     */
-    public $secretAccessKey;
-    /**
-     * Input only. AWS session token. Used only when AWS security token service
-     * (STS) is responsible for creating the temporary credentials.
-     *
-     * @var string
-     */
-    public $sessionToken;
-    /**
-     * AWS access key ID.
-     *
-     * @param string $accessKeyId
-     */
-    public function setAccessKeyId($accessKeyId)
+namespace Google\Service\VMMigrationService {
+    class AccessKeyCredentials extends \Google\Model
     {
+        /**
+         * AWS access key ID.
+         *
+         * @var string
+         */
+        public $accessKeyId;
+        /**
+         * Input only. AWS secret access key.
+         *
+         * @var string
+         */
+        public $secretAccessKey;
+        /**
+         * Input only. AWS session token. Used only when AWS security token service
+         * (STS) is responsible for creating the temporary credentials.
+         *
+         * @var string
+         */
+        public $sessionToken;
+        /**
+         * AWS access key ID.
+         *
+         * @param string $accessKeyId
+         */
+        public function setAccessKeyId($accessKeyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessKeyId()
+        {
+        }
+        /**
+         * Input only. AWS secret access key.
+         *
+         * @param string $secretAccessKey
+         */
+        public function setSecretAccessKey($secretAccessKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretAccessKey()
+        {
+        }
+        /**
+         * Input only. AWS session token. Used only when AWS security token service
+         * (STS) is responsible for creating the temporary credentials.
+         *
+         * @param string $sessionToken
+         */
+        public function setSessionToken($sessionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\AccessKeyCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessKeyId()
-    {
-    }
-    /**
-     * Input only. AWS secret access key.
-     *
-     * @param string $secretAccessKey
-     */
-    public function setSecretAccessKey($secretAccessKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretAccessKey()
-    {
-    }
-    /**
-     * Input only. AWS session token. Used only when AWS security token service
-     * (STS) is responsible for creating the temporary credentials.
-     *
-     * @param string $sessionToken
-     */
-    public function setSessionToken($sessionToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionToken()
+    class Google_Service_VMMigrationService_AccessKeyCredentials extends \Google\Service\VMMigrationService\AccessKeyCredentials
     {
     }
 }

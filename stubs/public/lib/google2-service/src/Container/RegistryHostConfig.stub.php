@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RegistryHostConfig extends \Google\Collection
-{
-    protected $collection_key = 'hosts';
-    protected $hostsType = HostConfig::class;
-    protected $hostsDataType = 'array';
-    /**
-     * Defines the host name of the registry server, which will be used to create
-     * configuration file as /etc/containerd/hosts.d//hosts.toml. It supports
-     * fully qualified domain names (FQDN) and IP addresses: Specifying port is
-     * supported. Wildcards are NOT supported. Examples: - my.customdomain.com -
-     * 10.0.1.2:5000
-     *
-     * @var string
-     */
-    public $server;
-    /**
-     * HostConfig configures a list of host-specific configurations for the
-     * server. Each server can have at most 10 host configurations.
-     *
-     * @param HostConfig[] $hosts
-     */
-    public function setHosts($hosts)
+namespace Google\Service\Container {
+    class RegistryHostConfig extends \Google\Collection
     {
+        protected $collection_key = 'hosts';
+        protected $hostsType = HostConfig::class;
+        protected $hostsDataType = 'array';
+        /**
+         * Defines the host name of the registry server, which will be used to create
+         * configuration file as /etc/containerd/hosts.d//hosts.toml. It supports
+         * fully qualified domain names (FQDN) and IP addresses: Specifying port is
+         * supported. Wildcards are NOT supported. Examples: - my.customdomain.com -
+         * 10.0.1.2:5000
+         *
+         * @var string
+         */
+        public $server;
+        /**
+         * HostConfig configures a list of host-specific configurations for the
+         * server. Each server can have at most 10 host configurations.
+         *
+         * @param HostConfig[] $hosts
+         */
+        public function setHosts($hosts)
+        {
+        }
+        /**
+         * @return HostConfig[]
+         */
+        public function getHosts()
+        {
+        }
+        /**
+         * Defines the host name of the registry server, which will be used to create
+         * configuration file as /etc/containerd/hosts.d//hosts.toml. It supports
+         * fully qualified domain names (FQDN) and IP addresses: Specifying port is
+         * supported. Wildcards are NOT supported. Examples: - my.customdomain.com -
+         * 10.0.1.2:5000
+         *
+         * @param string $server
+         */
+        public function setServer($server)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HostConfig[]
+     * Runtime class alias of \Google\Service\Container\RegistryHostConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHosts()
-    {
-    }
-    /**
-     * Defines the host name of the registry server, which will be used to create
-     * configuration file as /etc/containerd/hosts.d//hosts.toml. It supports
-     * fully qualified domain names (FQDN) and IP addresses: Specifying port is
-     * supported. Wildcards are NOT supported. Examples: - my.customdomain.com -
-     * 10.0.1.2:5000
-     *
-     * @param string $server
-     */
-    public function setServer($server)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServer()
+    class Google_Service_Container_RegistryHostConfig extends \Google\Service\Container\RegistryHostConfig
     {
     }
 }

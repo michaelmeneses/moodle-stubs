@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminLoadBalancerConfig extends \Google\Model
-{
-    protected $f5ConfigType = VmwareAdminF5BigIpConfig::class;
-    protected $f5ConfigDataType = '';
-    protected $manualLbConfigType = VmwareAdminManualLbConfig::class;
-    protected $manualLbConfigDataType = '';
-    protected $metalLbConfigType = VmwareAdminMetalLbConfig::class;
-    protected $metalLbConfigDataType = '';
-    protected $seesawConfigType = VmwareAdminSeesawConfig::class;
-    protected $seesawConfigDataType = '';
-    protected $vipConfigType = VmwareAdminVipConfig::class;
-    protected $vipConfigDataType = '';
-    /**
-     * Configuration for F5 Big IP typed load balancers.
-     *
-     * @param VmwareAdminF5BigIpConfig $f5Config
-     */
-    public function setF5Config(VmwareAdminF5BigIpConfig $f5Config)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminLoadBalancerConfig extends \Google\Model
     {
+        protected $f5ConfigType = VmwareAdminF5BigIpConfig::class;
+        protected $f5ConfigDataType = '';
+        protected $manualLbConfigType = VmwareAdminManualLbConfig::class;
+        protected $manualLbConfigDataType = '';
+        protected $metalLbConfigType = VmwareAdminMetalLbConfig::class;
+        protected $metalLbConfigDataType = '';
+        protected $seesawConfigType = VmwareAdminSeesawConfig::class;
+        protected $seesawConfigDataType = '';
+        protected $vipConfigType = VmwareAdminVipConfig::class;
+        protected $vipConfigDataType = '';
+        /**
+         * Configuration for F5 Big IP typed load balancers.
+         *
+         * @param VmwareAdminF5BigIpConfig $f5Config
+         */
+        public function setF5Config(VmwareAdminF5BigIpConfig $f5Config)
+        {
+        }
+        /**
+         * @return VmwareAdminF5BigIpConfig
+         */
+        public function getF5Config()
+        {
+        }
+        /**
+         * Manually configured load balancers.
+         *
+         * @param VmwareAdminManualLbConfig $manualLbConfig
+         */
+        public function setManualLbConfig(VmwareAdminManualLbConfig $manualLbConfig)
+        {
+        }
+        /**
+         * @return VmwareAdminManualLbConfig
+         */
+        public function getManualLbConfig()
+        {
+        }
+        /**
+         * MetalLB load balancers.
+         *
+         * @param VmwareAdminMetalLbConfig $metalLbConfig
+         */
+        public function setMetalLbConfig(VmwareAdminMetalLbConfig $metalLbConfig)
+        {
+        }
+        /**
+         * @return VmwareAdminMetalLbConfig
+         */
+        public function getMetalLbConfig()
+        {
+        }
+        /**
+         * Output only. Configuration for Seesaw typed load balancers.
+         *
+         * @param VmwareAdminSeesawConfig $seesawConfig
+         */
+        public function setSeesawConfig(VmwareAdminSeesawConfig $seesawConfig)
+        {
+        }
+        /**
+         * @return VmwareAdminSeesawConfig
+         */
+        public function getSeesawConfig()
+        {
+        }
+        /**
+         * The VIPs used by the load balancer.
+         *
+         * @param VmwareAdminVipConfig $vipConfig
+         */
+        public function setVipConfig(VmwareAdminVipConfig $vipConfig)
+        {
+        }
+        /**
+         * @return VmwareAdminVipConfig
+         */
+        public function getVipConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareAdminF5BigIpConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminLoadBalancerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getF5Config()
-    {
-    }
-    /**
-     * Manually configured load balancers.
-     *
-     * @param VmwareAdminManualLbConfig $manualLbConfig
-     */
-    public function setManualLbConfig(VmwareAdminManualLbConfig $manualLbConfig)
-    {
-    }
-    /**
-     * @return VmwareAdminManualLbConfig
-     */
-    public function getManualLbConfig()
-    {
-    }
-    /**
-     * MetalLB load balancers.
-     *
-     * @param VmwareAdminMetalLbConfig $metalLbConfig
-     */
-    public function setMetalLbConfig(VmwareAdminMetalLbConfig $metalLbConfig)
-    {
-    }
-    /**
-     * @return VmwareAdminMetalLbConfig
-     */
-    public function getMetalLbConfig()
-    {
-    }
-    /**
-     * Output only. Configuration for Seesaw typed load balancers.
-     *
-     * @param VmwareAdminSeesawConfig $seesawConfig
-     */
-    public function setSeesawConfig(VmwareAdminSeesawConfig $seesawConfig)
-    {
-    }
-    /**
-     * @return VmwareAdminSeesawConfig
-     */
-    public function getSeesawConfig()
-    {
-    }
-    /**
-     * The VIPs used by the load balancer.
-     *
-     * @param VmwareAdminVipConfig $vipConfig
-     */
-    public function setVipConfig(VmwareAdminVipConfig $vipConfig)
-    {
-    }
-    /**
-     * @return VmwareAdminVipConfig
-     */
-    public function getVipConfig()
+    class Google_Service_GKEOnPrem_VmwareAdminLoadBalancerConfig extends \Google\Service\GKEOnPrem\VmwareAdminLoadBalancerConfig
     {
     }
 }

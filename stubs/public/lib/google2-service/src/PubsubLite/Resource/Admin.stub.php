@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "admin" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $admin = $pubsubliteService->admin;
- *  </code>
- */
-class Admin extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    /**
+     * The "admin" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $admin = $pubsubliteService->admin;
+     *  </code>
+     */
+    class Admin extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\Admin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PubsubLite_Resource_Admin extends \Google\Service\PubsubLite\Resource\Admin
+    {
+    }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class TimeInput extends \Google\Model
-{
-    /**
-     * The hour on a 24-hour clock.
-     *
-     * @var int
-     */
-    public $hours;
-    /**
-     * The number of minutes past the hour. Valid values are 0 to 59.
-     *
-     * @var int
-     */
-    public $minutes;
-    /**
-     * The hour on a 24-hour clock.
-     *
-     * @param int $hours
-     */
-    public function setHours($hours)
+namespace Google\Service\HangoutsChat {
+    class TimeInput extends \Google\Model
     {
+        /**
+         * The hour on a 24-hour clock.
+         *
+         * @var int
+         */
+        public $hours;
+        /**
+         * The number of minutes past the hour. Valid values are 0 to 59.
+         *
+         * @var int
+         */
+        public $minutes;
+        /**
+         * The hour on a 24-hour clock.
+         *
+         * @param int $hours
+         */
+        public function setHours($hours)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHours()
+        {
+        }
+        /**
+         * The number of minutes past the hour. Valid values are 0 to 59.
+         *
+         * @param int $minutes
+         */
+        public function setMinutes($minutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\HangoutsChat\TimeInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHours()
-    {
-    }
-    /**
-     * The number of minutes past the hour. Valid values are 0 to 59.
-     *
-     * @param int $minutes
-     */
-    public function setMinutes($minutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinutes()
+    class Google_Service_HangoutsChat_TimeInput extends \Google\Service\HangoutsChat\TimeInput
     {
     }
 }

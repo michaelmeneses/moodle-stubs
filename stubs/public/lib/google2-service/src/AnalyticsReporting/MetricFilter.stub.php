@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class MetricFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $comparisonValue;
-    /**
-     * @var string
-     */
-    public $metricName;
-    /**
-     * @var bool
-     */
-    public $not;
-    /**
-     * @var string
-     */
-    public $operator;
-    /**
-     * @param string
-     */
-    public function setComparisonValue($comparisonValue)
+namespace Google\Service\AnalyticsReporting {
+    class MetricFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $comparisonValue;
+        /**
+         * @var string
+         */
+        public $metricName;
+        /**
+         * @var bool
+         */
+        public $not;
+        /**
+         * @var string
+         */
+        public $operator;
+        /**
+         * @param string
+         */
+        public function setComparisonValue($comparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparisonValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setNot($not)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNot()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\MetricFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisonValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetricName($metricName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setNot($not)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNot()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
+    class Google_Service_AnalyticsReporting_MetricFilter extends \Google\Service\AnalyticsReporting\MetricFilter
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AssetModuleMetadata extends \Google\Model
-{
-    /**
-     * Unspecified delivery type.
-     */
-    public const DELIVERY_TYPE_UNKNOWN_DELIVERY_TYPE = 'UNKNOWN_DELIVERY_TYPE';
-    /**
-     * This module will always be downloaded as part of the initial install of the
-     * app.
-     */
-    public const DELIVERY_TYPE_INSTALL_TIME = 'INSTALL_TIME';
-    /**
-     * This module is requested on-demand, which means it will not be part of the
-     * initial install, and will only be sent when requested by the client.
-     */
-    public const DELIVERY_TYPE_ON_DEMAND = 'ON_DEMAND';
-    /**
-     * This module will be downloaded immediately after initial install finishes.
-     * The app can be opened before these modules are downloaded.
-     */
-    public const DELIVERY_TYPE_FAST_FOLLOW = 'FAST_FOLLOW';
-    /**
-     * Indicates the delivery type for persistent install.
-     *
-     * @var string
-     */
-    public $deliveryType;
-    /**
-     * Module name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Indicates the delivery type for persistent install.
-     *
-     * Accepted values: UNKNOWN_DELIVERY_TYPE, INSTALL_TIME, ON_DEMAND,
-     * FAST_FOLLOW
-     *
-     * @param self::DELIVERY_TYPE_* $deliveryType
-     */
-    public function setDeliveryType($deliveryType)
+namespace Google\Service\AndroidPublisher {
+    class AssetModuleMetadata extends \Google\Model
     {
+        /**
+         * Unspecified delivery type.
+         */
+        public const DELIVERY_TYPE_UNKNOWN_DELIVERY_TYPE = 'UNKNOWN_DELIVERY_TYPE';
+        /**
+         * This module will always be downloaded as part of the initial install of the
+         * app.
+         */
+        public const DELIVERY_TYPE_INSTALL_TIME = 'INSTALL_TIME';
+        /**
+         * This module is requested on-demand, which means it will not be part of the
+         * initial install, and will only be sent when requested by the client.
+         */
+        public const DELIVERY_TYPE_ON_DEMAND = 'ON_DEMAND';
+        /**
+         * This module will be downloaded immediately after initial install finishes.
+         * The app can be opened before these modules are downloaded.
+         */
+        public const DELIVERY_TYPE_FAST_FOLLOW = 'FAST_FOLLOW';
+        /**
+         * Indicates the delivery type for persistent install.
+         *
+         * @var string
+         */
+        public $deliveryType;
+        /**
+         * Module name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Indicates the delivery type for persistent install.
+         *
+         * Accepted values: UNKNOWN_DELIVERY_TYPE, INSTALL_TIME, ON_DEMAND,
+         * FAST_FOLLOW
+         *
+         * @param self::DELIVERY_TYPE_* $deliveryType
+         */
+        public function setDeliveryType($deliveryType)
+        {
+        }
+        /**
+         * @return self::DELIVERY_TYPE_*
+         */
+        public function getDeliveryType()
+        {
+        }
+        /**
+         * Module name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DELIVERY_TYPE_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\AssetModuleMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliveryType()
-    {
-    }
-    /**
-     * Module name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidPublisher_AssetModuleMetadata extends \Google\Service\AndroidPublisher\AssetModuleMetadata
     {
     }
 }

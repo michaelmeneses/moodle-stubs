@@ -21,263 +21,272 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Container extends \Google\Collection
-{
-    protected $collection_key = 'volumeMounts';
-    /**
-     * @var string[]
-     */
-    public $args;
-    /**
-     * @var string[]
-     */
-    public $command;
-    protected $envType = EnvVar::class;
-    protected $envDataType = 'array';
-    protected $envFromType = EnvFromSource::class;
-    protected $envFromDataType = 'array';
-    /**
-     * @var string
-     */
-    public $image;
-    /**
-     * @var string
-     */
-    public $imagePullPolicy;
-    protected $livenessProbeType = Probe::class;
-    protected $livenessProbeDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $portsType = ContainerPort::class;
-    protected $portsDataType = 'array';
-    protected $readinessProbeType = Probe::class;
-    protected $readinessProbeDataType = '';
-    protected $resourcesType = ResourceRequirements::class;
-    protected $resourcesDataType = '';
-    protected $securityContextType = SecurityContext::class;
-    protected $securityContextDataType = '';
-    protected $startupProbeType = Probe::class;
-    protected $startupProbeDataType = '';
-    /**
-     * @var string
-     */
-    public $terminationMessagePath;
-    /**
-     * @var string
-     */
-    public $terminationMessagePolicy;
-    protected $volumeMountsType = VolumeMount::class;
-    protected $volumeMountsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $workingDir;
-    /**
-     * @param string[]
-     */
-    public function setArgs($args)
+namespace Google\Service\CloudRun {
+    class Container extends \Google\Collection
     {
+        protected $collection_key = 'volumeMounts';
+        /**
+         * @var string[]
+         */
+        public $args;
+        /**
+         * @var string[]
+         */
+        public $command;
+        protected $envType = EnvVar::class;
+        protected $envDataType = 'array';
+        protected $envFromType = EnvFromSource::class;
+        protected $envFromDataType = 'array';
+        /**
+         * @var string
+         */
+        public $image;
+        /**
+         * @var string
+         */
+        public $imagePullPolicy;
+        protected $livenessProbeType = Probe::class;
+        protected $livenessProbeDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $portsType = ContainerPort::class;
+        protected $portsDataType = 'array';
+        protected $readinessProbeType = Probe::class;
+        protected $readinessProbeDataType = '';
+        protected $resourcesType = ResourceRequirements::class;
+        protected $resourcesDataType = '';
+        protected $securityContextType = SecurityContext::class;
+        protected $securityContextDataType = '';
+        protected $startupProbeType = Probe::class;
+        protected $startupProbeDataType = '';
+        /**
+         * @var string
+         */
+        public $terminationMessagePath;
+        /**
+         * @var string
+         */
+        public $terminationMessagePolicy;
+        protected $volumeMountsType = VolumeMount::class;
+        protected $volumeMountsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $workingDir;
+        /**
+         * @param string[]
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * @param EnvVar[]
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return EnvVar[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * @param EnvFromSource[]
+         */
+        public function setEnvFrom($envFrom)
+        {
+        }
+        /**
+         * @return EnvFromSource[]
+         */
+        public function getEnvFrom()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImagePullPolicy($imagePullPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagePullPolicy()
+        {
+        }
+        /**
+         * @param Probe
+         */
+        public function setLivenessProbe(Probe $livenessProbe)
+        {
+        }
+        /**
+         * @return Probe
+         */
+        public function getLivenessProbe()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param ContainerPort[]
+         */
+        public function setPorts($ports)
+        {
+        }
+        /**
+         * @return ContainerPort[]
+         */
+        public function getPorts()
+        {
+        }
+        /**
+         * @param Probe
+         */
+        public function setReadinessProbe(Probe $readinessProbe)
+        {
+        }
+        /**
+         * @return Probe
+         */
+        public function getReadinessProbe()
+        {
+        }
+        /**
+         * @param ResourceRequirements
+         */
+        public function setResources(ResourceRequirements $resources)
+        {
+        }
+        /**
+         * @return ResourceRequirements
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param SecurityContext
+         */
+        public function setSecurityContext(SecurityContext $securityContext)
+        {
+        }
+        /**
+         * @return SecurityContext
+         */
+        public function getSecurityContext()
+        {
+        }
+        /**
+         * @param Probe
+         */
+        public function setStartupProbe(Probe $startupProbe)
+        {
+        }
+        /**
+         * @return Probe
+         */
+        public function getStartupProbe()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTerminationMessagePath($terminationMessagePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerminationMessagePath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTerminationMessagePolicy($terminationMessagePolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerminationMessagePolicy()
+        {
+        }
+        /**
+         * @param VolumeMount[]
+         */
+        public function setVolumeMounts($volumeMounts)
+        {
+        }
+        /**
+         * @return VolumeMount[]
+         */
+        public function getVolumeMounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWorkingDir($workingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkingDir()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\Container registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCommand($command)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCommand()
-    {
-    }
-    /**
-     * @param EnvVar[]
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return EnvVar[]
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * @param EnvFromSource[]
-     */
-    public function setEnvFrom($envFrom)
-    {
-    }
-    /**
-     * @return EnvFromSource[]
-     */
-    public function getEnvFrom()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImagePullPolicy($imagePullPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImagePullPolicy()
-    {
-    }
-    /**
-     * @param Probe
-     */
-    public function setLivenessProbe(Probe $livenessProbe)
-    {
-    }
-    /**
-     * @return Probe
-     */
-    public function getLivenessProbe()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param ContainerPort[]
-     */
-    public function setPorts($ports)
-    {
-    }
-    /**
-     * @return ContainerPort[]
-     */
-    public function getPorts()
-    {
-    }
-    /**
-     * @param Probe
-     */
-    public function setReadinessProbe(Probe $readinessProbe)
-    {
-    }
-    /**
-     * @return Probe
-     */
-    public function getReadinessProbe()
-    {
-    }
-    /**
-     * @param ResourceRequirements
-     */
-    public function setResources(ResourceRequirements $resources)
-    {
-    }
-    /**
-     * @return ResourceRequirements
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param SecurityContext
-     */
-    public function setSecurityContext(SecurityContext $securityContext)
-    {
-    }
-    /**
-     * @return SecurityContext
-     */
-    public function getSecurityContext()
-    {
-    }
-    /**
-     * @param Probe
-     */
-    public function setStartupProbe(Probe $startupProbe)
-    {
-    }
-    /**
-     * @return Probe
-     */
-    public function getStartupProbe()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTerminationMessagePath($terminationMessagePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerminationMessagePath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTerminationMessagePolicy($terminationMessagePolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerminationMessagePolicy()
-    {
-    }
-    /**
-     * @param VolumeMount[]
-     */
-    public function setVolumeMounts($volumeMounts)
-    {
-    }
-    /**
-     * @return VolumeMount[]
-     */
-    public function getVolumeMounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWorkingDir($workingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkingDir()
+    class Google_Service_CloudRun_Container extends \Google\Service\CloudRun\Container
     {
     }
 }

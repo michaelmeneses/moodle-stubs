@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceTierSet extends \Google\Collection
-{
-    protected $collection_key = 'deviceTiers';
-    protected $deviceTiersType = DeviceTier::class;
-    protected $deviceTiersDataType = 'array';
-    /**
-     * Device tiers belonging to the set.
-     *
-     * @param DeviceTier[] $deviceTiers
-     */
-    public function setDeviceTiers($deviceTiers)
+namespace Google\Service\AndroidPublisher {
+    class DeviceTierSet extends \Google\Collection
     {
+        protected $collection_key = 'deviceTiers';
+        protected $deviceTiersType = DeviceTier::class;
+        protected $deviceTiersDataType = 'array';
+        /**
+         * Device tiers belonging to the set.
+         *
+         * @param DeviceTier[] $deviceTiers
+         */
+        public function setDeviceTiers($deviceTiers)
+        {
+        }
+        /**
+         * @return DeviceTier[]
+         */
+        public function getDeviceTiers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceTier[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceTierSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceTiers()
+    class Google_Service_AndroidPublisher_DeviceTierSet extends \Google\Service\AndroidPublisher\DeviceTierSet
     {
     }
 }

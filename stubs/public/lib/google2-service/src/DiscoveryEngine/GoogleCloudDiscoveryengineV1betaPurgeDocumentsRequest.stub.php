@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaPurgeDocumentsRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $filter;
-    /**
-     * @var bool
-     */
-    public $force;
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaPurgeDocumentsRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $filter;
+        /**
+         * @var bool
+         */
+        public $force;
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPurgeDocumentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaPurgeDocumentsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPurgeDocumentsRequest
     {
     }
 }

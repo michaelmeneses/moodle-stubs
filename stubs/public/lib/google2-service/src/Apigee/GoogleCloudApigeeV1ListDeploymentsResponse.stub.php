@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployments';
-    protected $deploymentsType = GoogleCloudApigeeV1Deployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * List of deployments.
-     *
-     * @param GoogleCloudApigeeV1Deployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployments';
+        protected $deploymentsType = GoogleCloudApigeeV1Deployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * List of deployments.
+         *
+         * @param GoogleCloudApigeeV1Deployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Deployment[]
+         */
+        public function getDeployments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Deployment[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListDeploymentsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse
     {
     }
 }

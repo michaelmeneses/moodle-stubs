@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    /**
-     * Required. A list of full resource name of documents to purge. In the format
-     * `projects/locations/collections/dataStores/branches/documents`. Recommended
-     * max of 100 items.
-     *
-     * @var string[]
-     */
-    public $documents;
-    /**
-     * Required. A list of full resource name of documents to purge. In the format
-     * `projects/locations/collections/dataStores/branches/documents`. Recommended
-     * max of 100 items.
-     *
-     * @param string[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        /**
+         * Required. A list of full resource name of documents to purge. In the format
+         * `projects/locations/collections/dataStores/branches/documents`. Recommended
+         * max of 100 items.
+         *
+         * @var string[]
+         */
+        public $documents;
+        /**
+         * Required. A list of full resource name of documents to purge. In the format
+         * `projects/locations/collections/dataStores/branches/documents`. Recommended
+         * max of 100 items.
+         *
+         * @param string[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource
     {
     }
 }

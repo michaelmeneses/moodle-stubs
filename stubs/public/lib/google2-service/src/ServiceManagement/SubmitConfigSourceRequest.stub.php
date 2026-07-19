@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class SubmitConfigSourceRequest extends \Google\Model
-{
-    protected $configSourceType = ConfigSource::class;
-    protected $configSourceDataType = '';
-    /**
-     * Optional. If set, this will result in the generation of a
-     * `google.api.Service` configuration based on the `ConfigSource` provided,
-     * but the generated config and the sources will NOT be persisted.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. The source configuration for the service.
-     *
-     * @param ConfigSource $configSource
-     */
-    public function setConfigSource(ConfigSource $configSource)
+namespace Google\Service\ServiceManagement {
+    class SubmitConfigSourceRequest extends \Google\Model
     {
+        protected $configSourceType = ConfigSource::class;
+        protected $configSourceDataType = '';
+        /**
+         * Optional. If set, this will result in the generation of a
+         * `google.api.Service` configuration based on the `ConfigSource` provided,
+         * but the generated config and the sources will NOT be persisted.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. The source configuration for the service.
+         *
+         * @param ConfigSource $configSource
+         */
+        public function setConfigSource(ConfigSource $configSource)
+        {
+        }
+        /**
+         * @return ConfigSource
+         */
+        public function getConfigSource()
+        {
+        }
+        /**
+         * Optional. If set, this will result in the generation of a
+         * `google.api.Service` configuration based on the `ConfigSource` provided,
+         * but the generated config and the sources will NOT be persisted.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigSource
+     * Runtime class alias of \Google\Service\ServiceManagement\SubmitConfigSourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigSource()
-    {
-    }
-    /**
-     * Optional. If set, this will result in the generation of a
-     * `google.api.Service` configuration based on the `ConfigSource` provided,
-     * but the generated config and the sources will NOT be persisted.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_ServiceManagement_SubmitConfigSourceRequest extends \Google\Service\ServiceManagement\SubmitConfigSourceRequest
     {
     }
 }

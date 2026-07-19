@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunEvaluationConfigPromptTemplate extends \Google\Model
-{
-    /**
-     * Prompt template stored in Cloud Storage. Format: "gs://my-bucket/file-
-     * name.txt".
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Inline prompt template. Template variables should be in the format
-     * "{var_name}". Example: "Translate the following from {source_lang} to
-     * {target_lang}: {text}"
-     *
-     * @var string
-     */
-    public $promptTemplate;
-    /**
-     * Prompt template stored in Cloud Storage. Format: "gs://my-bucket/file-
-     * name.txt".
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunEvaluationConfigPromptTemplate extends \Google\Model
     {
+        /**
+         * Prompt template stored in Cloud Storage. Format: "gs://my-bucket/file-
+         * name.txt".
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Inline prompt template. Template variables should be in the format
+         * "{var_name}". Example: "Translate the following from {source_lang} to
+         * {target_lang}: {text}"
+         *
+         * @var string
+         */
+        public $promptTemplate;
+        /**
+         * Prompt template stored in Cloud Storage. Format: "gs://my-bucket/file-
+         * name.txt".
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * Inline prompt template. Template variables should be in the format
+         * "{var_name}". Example: "Translate the following from {source_lang} to
+         * {target_lang}: {text}"
+         *
+         * @param string $promptTemplate
+         */
+        public function setPromptTemplate($promptTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromptTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunEvaluationConfigPromptTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * Inline prompt template. Template variables should be in the format
-     * "{var_name}". Example: "Translate the following from {source_lang} to
-     * {target_lang}: {text}"
-     *
-     * @param string $promptTemplate
-     */
-    public function setPromptTemplate($promptTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromptTemplate()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunEvaluationConfigPromptTemplate extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunEvaluationConfigPromptTemplate
     {
     }
 }

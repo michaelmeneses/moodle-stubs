@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class SnapshotPolicy extends \Google\Model
-{
-    protected $dailyScheduleType = DailySchedule::class;
-    protected $dailyScheduleDataType = '';
-    /**
-     * If enabled, make snapshots automatically according to the schedules.
-     * Default is false.
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $hourlyScheduleType = HourlySchedule::class;
-    protected $hourlyScheduleDataType = '';
-    protected $monthlyScheduleType = MonthlySchedule::class;
-    protected $monthlyScheduleDataType = '';
-    protected $weeklyScheduleType = WeeklySchedule::class;
-    protected $weeklyScheduleDataType = '';
-    /**
-     * Daily schedule policy.
-     *
-     * @param DailySchedule $dailySchedule
-     */
-    public function setDailySchedule(DailySchedule $dailySchedule)
+namespace Google\Service\NetAppFiles {
+    class SnapshotPolicy extends \Google\Model
     {
+        protected $dailyScheduleType = DailySchedule::class;
+        protected $dailyScheduleDataType = '';
+        /**
+         * If enabled, make snapshots automatically according to the schedules.
+         * Default is false.
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $hourlyScheduleType = HourlySchedule::class;
+        protected $hourlyScheduleDataType = '';
+        protected $monthlyScheduleType = MonthlySchedule::class;
+        protected $monthlyScheduleDataType = '';
+        protected $weeklyScheduleType = WeeklySchedule::class;
+        protected $weeklyScheduleDataType = '';
+        /**
+         * Daily schedule policy.
+         *
+         * @param DailySchedule $dailySchedule
+         */
+        public function setDailySchedule(DailySchedule $dailySchedule)
+        {
+        }
+        /**
+         * @return DailySchedule
+         */
+        public function getDailySchedule()
+        {
+        }
+        /**
+         * If enabled, make snapshots automatically according to the schedules.
+         * Default is false.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Hourly schedule policy.
+         *
+         * @param HourlySchedule $hourlySchedule
+         */
+        public function setHourlySchedule(HourlySchedule $hourlySchedule)
+        {
+        }
+        /**
+         * @return HourlySchedule
+         */
+        public function getHourlySchedule()
+        {
+        }
+        /**
+         * Monthly schedule policy.
+         *
+         * @param MonthlySchedule $monthlySchedule
+         */
+        public function setMonthlySchedule(MonthlySchedule $monthlySchedule)
+        {
+        }
+        /**
+         * @return MonthlySchedule
+         */
+        public function getMonthlySchedule()
+        {
+        }
+        /**
+         * Weekly schedule policy.
+         *
+         * @param WeeklySchedule $weeklySchedule
+         */
+        public function setWeeklySchedule(WeeklySchedule $weeklySchedule)
+        {
+        }
+        /**
+         * @return WeeklySchedule
+         */
+        public function getWeeklySchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailySchedule
+     * Runtime class alias of \Google\Service\NetAppFiles\SnapshotPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailySchedule()
-    {
-    }
-    /**
-     * If enabled, make snapshots automatically according to the schedules.
-     * Default is false.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Hourly schedule policy.
-     *
-     * @param HourlySchedule $hourlySchedule
-     */
-    public function setHourlySchedule(HourlySchedule $hourlySchedule)
-    {
-    }
-    /**
-     * @return HourlySchedule
-     */
-    public function getHourlySchedule()
-    {
-    }
-    /**
-     * Monthly schedule policy.
-     *
-     * @param MonthlySchedule $monthlySchedule
-     */
-    public function setMonthlySchedule(MonthlySchedule $monthlySchedule)
-    {
-    }
-    /**
-     * @return MonthlySchedule
-     */
-    public function getMonthlySchedule()
-    {
-    }
-    /**
-     * Weekly schedule policy.
-     *
-     * @param WeeklySchedule $weeklySchedule
-     */
-    public function setWeeklySchedule(WeeklySchedule $weeklySchedule)
-    {
-    }
-    /**
-     * @return WeeklySchedule
-     */
-    public function getWeeklySchedule()
+    class Google_Service_NetAppFiles_SnapshotPolicy extends \Google\Service\NetAppFiles\SnapshotPolicy
     {
     }
 }

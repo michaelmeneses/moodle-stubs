@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class ApnsCertificateExpirationInfo extends \Google\Model
-{
-    /**
-     * The Apple ID used to create the certificate. It may be blank if admins
-     * didn't enter it.
-     *
-     * @var string
-     */
-    public $appleId;
-    /**
-     * The expiration date of the APNS certificate.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * The UID of the certificate.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * The Apple ID used to create the certificate. It may be blank if admins
-     * didn't enter it.
-     *
-     * @param string $appleId
-     */
-    public function setAppleId($appleId)
+namespace Google\Service\AlertCenter {
+    class ApnsCertificateExpirationInfo extends \Google\Model
     {
+        /**
+         * The Apple ID used to create the certificate. It may be blank if admins
+         * didn't enter it.
+         *
+         * @var string
+         */
+        public $appleId;
+        /**
+         * The expiration date of the APNS certificate.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * The UID of the certificate.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * The Apple ID used to create the certificate. It may be blank if admins
+         * didn't enter it.
+         *
+         * @param string $appleId
+         */
+        public function setAppleId($appleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppleId()
+        {
+        }
+        /**
+         * The expiration date of the APNS certificate.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * The UID of the certificate.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\ApnsCertificateExpirationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppleId()
-    {
-    }
-    /**
-     * The expiration date of the APNS certificate.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * The UID of the certificate.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_AlertCenter_ApnsCertificateExpirationInfo extends \Google\Service\AlertCenter\ApnsCertificateExpirationInfo
     {
     }
 }

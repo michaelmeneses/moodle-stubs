@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchRequestQueryExpansionSpec extends \Google\Model
-{
-    /**
-     * Unspecified query expansion condition. In this case, server behavior
-     * defaults to Condition.DISABLED.
-     */
-    public const CONDITION_CONDITION_UNSPECIFIED = 'CONDITION_UNSPECIFIED';
-    /**
-     * Disabled query expansion. Only the exact search query is used, even if
-     * SearchResponse.total_size is zero.
-     */
-    public const CONDITION_DISABLED = 'DISABLED';
-    /**
-     * Automatic query expansion built by Google Retail Search.
-     */
-    public const CONDITION_AUTO = 'AUTO';
-    /**
-     * The condition under which query expansion should occur. Default to
-     * Condition.DISABLED.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * Whether to pin unexpanded results. The default value is false. If this
-     * field is set to true, unexpanded products are always at the top of the
-     * search results, followed by the expanded results.
-     *
-     * @var bool
-     */
-    public $pinUnexpandedResults;
-    /**
-     * The condition under which query expansion should occur. Default to
-     * Condition.DISABLED.
-     *
-     * Accepted values: CONDITION_UNSPECIFIED, DISABLED, AUTO
-     *
-     * @param self::CONDITION_* $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchRequestQueryExpansionSpec extends \Google\Model
     {
+        /**
+         * Unspecified query expansion condition. In this case, server behavior
+         * defaults to Condition.DISABLED.
+         */
+        public const CONDITION_CONDITION_UNSPECIFIED = 'CONDITION_UNSPECIFIED';
+        /**
+         * Disabled query expansion. Only the exact search query is used, even if
+         * SearchResponse.total_size is zero.
+         */
+        public const CONDITION_DISABLED = 'DISABLED';
+        /**
+         * Automatic query expansion built by Google Retail Search.
+         */
+        public const CONDITION_AUTO = 'AUTO';
+        /**
+         * The condition under which query expansion should occur. Default to
+         * Condition.DISABLED.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * Whether to pin unexpanded results. The default value is false. If this
+         * field is set to true, unexpanded products are always at the top of the
+         * search results, followed by the expanded results.
+         *
+         * @var bool
+         */
+        public $pinUnexpandedResults;
+        /**
+         * The condition under which query expansion should occur. Default to
+         * Condition.DISABLED.
+         *
+         * Accepted values: CONDITION_UNSPECIFIED, DISABLED, AUTO
+         *
+         * @param self::CONDITION_* $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return self::CONDITION_*
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Whether to pin unexpanded results. The default value is false. If this
+         * field is set to true, unexpanded products are always at the top of the
+         * search results, followed by the expanded results.
+         *
+         * @param bool $pinUnexpandedResults
+         */
+        public function setPinUnexpandedResults($pinUnexpandedResults)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPinUnexpandedResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONDITION_*
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestQueryExpansionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Whether to pin unexpanded results. The default value is false. If this
-     * field is set to true, unexpanded products are always at the top of the
-     * search results, followed by the expanded results.
-     *
-     * @param bool $pinUnexpandedResults
-     */
-    public function setPinUnexpandedResults($pinUnexpandedResults)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPinUnexpandedResults()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchRequestQueryExpansionSpec extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestQueryExpansionSpec
     {
     }
 }

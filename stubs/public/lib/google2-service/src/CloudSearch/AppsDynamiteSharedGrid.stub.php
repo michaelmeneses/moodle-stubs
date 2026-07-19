@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedGrid extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $borderStyleType = AppsDynamiteSharedBorderStyle::class;
-    protected $borderStyleDataType = '';
-    public $borderStyle;
-    /**
-     * @var int
-     */
-    public $columnCount;
-    protected $itemsType = AppsDynamiteSharedGridGridItem::class;
-    protected $itemsDataType = 'array';
-    public $items;
-    protected $onClickType = AppsDynamiteSharedOnClick::class;
-    protected $onClickDataType = '';
-    public $onClick;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param AppsDynamiteSharedBorderStyle
-     */
-    public function setBorderStyle(AppsDynamiteSharedBorderStyle $borderStyle)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedGrid extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $borderStyleType = AppsDynamiteSharedBorderStyle::class;
+        protected $borderStyleDataType = '';
+        public $borderStyle;
+        /**
+         * @var int
+         */
+        public $columnCount;
+        protected $itemsType = AppsDynamiteSharedGridGridItem::class;
+        protected $itemsDataType = 'array';
+        public $items;
+        protected $onClickType = AppsDynamiteSharedOnClick::class;
+        protected $onClickDataType = '';
+        public $onClick;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param AppsDynamiteSharedBorderStyle
+         */
+        public function setBorderStyle(AppsDynamiteSharedBorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedBorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setColumnCount($columnCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnCount()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedGridGridItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedGridGridItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOnClick
+         */
+        public function setOnClick(AppsDynamiteSharedOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedBorderStyle
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedGrid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setColumnCount($columnCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getColumnCount()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedGridGridItem[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedGridGridItem[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOnClick
-     */
-    public function setOnClick(AppsDynamiteSharedOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteSharedGrid extends \Google\Service\CloudSearch\AppsDynamiteSharedGrid
     {
     }
 }

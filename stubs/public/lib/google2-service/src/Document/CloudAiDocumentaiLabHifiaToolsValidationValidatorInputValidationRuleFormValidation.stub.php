@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation extends \Google\Model
-{
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_EQ = 'OPERATION_TYPE_EQ';
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_NE = 'OPERATION_TYPE_NE';
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_LT = 'OPERATION_TYPE_LT';
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_LE = 'OPERATION_TYPE_LE';
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_GT = 'OPERATION_TYPE_GT';
-    public const VALIDATION_OPERATOR_OPERATION_TYPE_GE = 'OPERATION_TYPE_GE';
-    protected $leftOperandType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation::class;
-    protected $leftOperandDataType = '';
-    protected $rightOperandType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation::class;
-    protected $rightOperandDataType = '';
-    /**
-     * The relational operator to be applied to the operands.
-     *
-     * @var string
-     */
-    public $validationOperator;
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $leftOperand
-     */
-    public function setLeftOperand(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $leftOperand)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation extends \Google\Model
     {
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_EQ = 'OPERATION_TYPE_EQ';
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_NE = 'OPERATION_TYPE_NE';
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_LT = 'OPERATION_TYPE_LT';
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_LE = 'OPERATION_TYPE_LE';
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_GT = 'OPERATION_TYPE_GT';
+        public const VALIDATION_OPERATOR_OPERATION_TYPE_GE = 'OPERATION_TYPE_GE';
+        protected $leftOperandType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation::class;
+        protected $leftOperandDataType = '';
+        protected $rightOperandType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation::class;
+        protected $rightOperandDataType = '';
+        /**
+         * The relational operator to be applied to the operands.
+         *
+         * @var string
+         */
+        public $validationOperator;
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $leftOperand
+         */
+        public function setLeftOperand(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $leftOperand)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation
+         */
+        public function getLeftOperand()
+        {
+        }
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $rightOperand
+         */
+        public function setRightOperand(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $rightOperand)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation
+         */
+        public function getRightOperand()
+        {
+        }
+        /**
+         * The relational operator to be applied to the operands.
+         *
+         * Accepted values: OPERATION_TYPE_UNSPECIFIED, OPERATION_TYPE_EQ,
+         * OPERATION_TYPE_NE, OPERATION_TYPE_LT, OPERATION_TYPE_LE, OPERATION_TYPE_GT,
+         * OPERATION_TYPE_GE
+         *
+         * @param self::VALIDATION_OPERATOR_* $validationOperator
+         */
+        public function setValidationOperator($validationOperator)
+        {
+        }
+        /**
+         * @return self::VALIDATION_OPERATOR_*
+         */
+        public function getValidationOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeftOperand()
-    {
-    }
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $rightOperand
-     */
-    public function setRightOperand(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation $rightOperand)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation
-     */
-    public function getRightOperand()
-    {
-    }
-    /**
-     * The relational operator to be applied to the operands.
-     *
-     * Accepted values: OPERATION_TYPE_UNSPECIFIED, OPERATION_TYPE_EQ,
-     * OPERATION_TYPE_NE, OPERATION_TYPE_LT, OPERATION_TYPE_LE, OPERATION_TYPE_GT,
-     * OPERATION_TYPE_GE
-     *
-     * @param self::VALIDATION_OPERATOR_* $validationOperator
-     */
-    public function setValidationOperator($validationOperator)
-    {
-    }
-    /**
-     * @return self::VALIDATION_OPERATOR_*
-     */
-    public function getValidationOperator()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation
     {
     }
 }

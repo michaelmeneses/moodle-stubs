@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ExplainDataAccessConsentScope extends \Google\Collection
-{
-    /**
-     * Unspecified consent decision type.
-     */
-    public const DECISION_CONSENT_DECISION_TYPE_UNSPECIFIED = 'CONSENT_DECISION_TYPE_UNSPECIFIED';
-    /**
-     * Consent permitted access.
-     */
-    public const DECISION_CONSENT_DECISION_TYPE_PERMIT = 'CONSENT_DECISION_TYPE_PERMIT';
-    /**
-     * Consent denied access.
-     */
-    public const DECISION_CONSENT_DECISION_TYPE_DENY = 'CONSENT_DECISION_TYPE_DENY';
-    protected $collection_key = 'exceptions';
-    protected $accessorScopeType = ConsentAccessorScope::class;
-    protected $accessorScopeDataType = '';
-    /**
-     * Whether the current consent scope is permitted or denied access on the
-     * requested resource.
-     *
-     * @var string
-     */
-    public $decision;
-    protected $enforcingConsentsType = ExplainDataAccessConsentInfo::class;
-    protected $enforcingConsentsDataType = 'array';
-    protected $exceptionsType = ExplainDataAccessConsentScope::class;
-    protected $exceptionsDataType = 'array';
-    /**
-     * The accessor scope that describes who can access, for what purpose, and in
-     * which environment.
-     *
-     * @param ConsentAccessorScope $accessorScope
-     */
-    public function setAccessorScope(ConsentAccessorScope $accessorScope)
+namespace Google\Service\CloudHealthcare {
+    class ExplainDataAccessConsentScope extends \Google\Collection
     {
+        /**
+         * Unspecified consent decision type.
+         */
+        public const DECISION_CONSENT_DECISION_TYPE_UNSPECIFIED = 'CONSENT_DECISION_TYPE_UNSPECIFIED';
+        /**
+         * Consent permitted access.
+         */
+        public const DECISION_CONSENT_DECISION_TYPE_PERMIT = 'CONSENT_DECISION_TYPE_PERMIT';
+        /**
+         * Consent denied access.
+         */
+        public const DECISION_CONSENT_DECISION_TYPE_DENY = 'CONSENT_DECISION_TYPE_DENY';
+        protected $collection_key = 'exceptions';
+        protected $accessorScopeType = ConsentAccessorScope::class;
+        protected $accessorScopeDataType = '';
+        /**
+         * Whether the current consent scope is permitted or denied access on the
+         * requested resource.
+         *
+         * @var string
+         */
+        public $decision;
+        protected $enforcingConsentsType = ExplainDataAccessConsentInfo::class;
+        protected $enforcingConsentsDataType = 'array';
+        protected $exceptionsType = ExplainDataAccessConsentScope::class;
+        protected $exceptionsDataType = 'array';
+        /**
+         * The accessor scope that describes who can access, for what purpose, and in
+         * which environment.
+         *
+         * @param ConsentAccessorScope $accessorScope
+         */
+        public function setAccessorScope(ConsentAccessorScope $accessorScope)
+        {
+        }
+        /**
+         * @return ConsentAccessorScope
+         */
+        public function getAccessorScope()
+        {
+        }
+        /**
+         * Whether the current consent scope is permitted or denied access on the
+         * requested resource.
+         *
+         * Accepted values: CONSENT_DECISION_TYPE_UNSPECIFIED,
+         * CONSENT_DECISION_TYPE_PERMIT, CONSENT_DECISION_TYPE_DENY
+         *
+         * @param self::DECISION_* $decision
+         */
+        public function setDecision($decision)
+        {
+        }
+        /**
+         * @return self::DECISION_*
+         */
+        public function getDecision()
+        {
+        }
+        /**
+         * Metadata of the consent resources that enforce the consent scope's access.
+         *
+         * @param ExplainDataAccessConsentInfo[] $enforcingConsents
+         */
+        public function setEnforcingConsents($enforcingConsents)
+        {
+        }
+        /**
+         * @return ExplainDataAccessConsentInfo[]
+         */
+        public function getEnforcingConsents()
+        {
+        }
+        /**
+         * Other consent scopes that created exceptions within this scope.
+         *
+         * @param ExplainDataAccessConsentScope[] $exceptions
+         */
+        public function setExceptions($exceptions)
+        {
+        }
+        /**
+         * @return ExplainDataAccessConsentScope[]
+         */
+        public function getExceptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsentAccessorScope
+     * Runtime class alias of \Google\Service\CloudHealthcare\ExplainDataAccessConsentScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessorScope()
-    {
-    }
-    /**
-     * Whether the current consent scope is permitted or denied access on the
-     * requested resource.
-     *
-     * Accepted values: CONSENT_DECISION_TYPE_UNSPECIFIED,
-     * CONSENT_DECISION_TYPE_PERMIT, CONSENT_DECISION_TYPE_DENY
-     *
-     * @param self::DECISION_* $decision
-     */
-    public function setDecision($decision)
-    {
-    }
-    /**
-     * @return self::DECISION_*
-     */
-    public function getDecision()
-    {
-    }
-    /**
-     * Metadata of the consent resources that enforce the consent scope's access.
-     *
-     * @param ExplainDataAccessConsentInfo[] $enforcingConsents
-     */
-    public function setEnforcingConsents($enforcingConsents)
-    {
-    }
-    /**
-     * @return ExplainDataAccessConsentInfo[]
-     */
-    public function getEnforcingConsents()
-    {
-    }
-    /**
-     * Other consent scopes that created exceptions within this scope.
-     *
-     * @param ExplainDataAccessConsentScope[] $exceptions
-     */
-    public function setExceptions($exceptions)
-    {
-    }
-    /**
-     * @return ExplainDataAccessConsentScope[]
-     */
-    public function getExceptions()
+    class Google_Service_CloudHealthcare_ExplainDataAccessConsentScope extends \Google\Service\CloudHealthcare\ExplainDataAccessConsentScope
     {
     }
 }

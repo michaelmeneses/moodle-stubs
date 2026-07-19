@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class TransferManifest extends \Google\Model
-{
-    /**
-     * Specifies the path to the manifest in Cloud Storage. The Google-managed
-     * service account for the transfer must have `storage.objects.get` permission
-     * for this object. An example path is `gs://bucket_name/path/manifest.csv`.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Specifies the path to the manifest in Cloud Storage. The Google-managed
-     * service account for the transfer must have `storage.objects.get` permission
-     * for this object. An example path is `gs://bucket_name/path/manifest.csv`.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Storagetransfer {
+    class TransferManifest extends \Google\Model
     {
+        /**
+         * Specifies the path to the manifest in Cloud Storage. The Google-managed
+         * service account for the transfer must have `storage.objects.get` permission
+         * for this object. An example path is `gs://bucket_name/path/manifest.csv`.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Specifies the path to the manifest in Cloud Storage. The Google-managed
+         * service account for the transfer must have `storage.objects.get` permission
+         * for this object. An example path is `gs://bucket_name/path/manifest.csv`.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\TransferManifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
+    class Google_Service_Storagetransfer_TransferManifest extends \Google\Service\Storagetransfer\TransferManifest
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class ObjectRetention extends \Google\Model
-{
-    /**
-     * If set and retain_until_time is empty, clears the retention.
-     */
-    public const RETENTION_MODE_RETENTION_MODE_UNSPECIFIED = 'RETENTION_MODE_UNSPECIFIED';
-    /**
-     * Sets the retention mode to locked.
-     */
-    public const RETENTION_MODE_LOCKED = 'LOCKED';
-    /**
-     * Sets the retention mode to unlocked.
-     */
-    public const RETENTION_MODE_UNLOCKED = 'UNLOCKED';
-    /**
-     * Required. The time when the object will be retained until. UNSET will clear
-     * the retention. Must be specified in RFC 3339 format e.g. YYYY-MM-
-     * DD'T'HH:MM:SS.SS'Z' or YYYY-MM-DD'T'HH:MM:SS'Z'.
-     *
-     * @var string
-     */
-    public $retainUntilTime;
-    /**
-     * Required. The retention mode of the object.
-     *
-     * @var string
-     */
-    public $retentionMode;
-    /**
-     * Required. The time when the object will be retained until. UNSET will clear
-     * the retention. Must be specified in RFC 3339 format e.g. YYYY-MM-
-     * DD'T'HH:MM:SS.SS'Z' or YYYY-MM-DD'T'HH:MM:SS'Z'.
-     *
-     * @param string $retainUntilTime
-     */
-    public function setRetainUntilTime($retainUntilTime)
+namespace Google\Service\StorageBatchOperations {
+    class ObjectRetention extends \Google\Model
     {
+        /**
+         * If set and retain_until_time is empty, clears the retention.
+         */
+        public const RETENTION_MODE_RETENTION_MODE_UNSPECIFIED = 'RETENTION_MODE_UNSPECIFIED';
+        /**
+         * Sets the retention mode to locked.
+         */
+        public const RETENTION_MODE_LOCKED = 'LOCKED';
+        /**
+         * Sets the retention mode to unlocked.
+         */
+        public const RETENTION_MODE_UNLOCKED = 'UNLOCKED';
+        /**
+         * Required. The time when the object will be retained until. UNSET will clear
+         * the retention. Must be specified in RFC 3339 format e.g. YYYY-MM-
+         * DD'T'HH:MM:SS.SS'Z' or YYYY-MM-DD'T'HH:MM:SS'Z'.
+         *
+         * @var string
+         */
+        public $retainUntilTime;
+        /**
+         * Required. The retention mode of the object.
+         *
+         * @var string
+         */
+        public $retentionMode;
+        /**
+         * Required. The time when the object will be retained until. UNSET will clear
+         * the retention. Must be specified in RFC 3339 format e.g. YYYY-MM-
+         * DD'T'HH:MM:SS.SS'Z' or YYYY-MM-DD'T'HH:MM:SS'Z'.
+         *
+         * @param string $retainUntilTime
+         */
+        public function setRetainUntilTime($retainUntilTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetainUntilTime()
+        {
+        }
+        /**
+         * Required. The retention mode of the object.
+         *
+         * Accepted values: RETENTION_MODE_UNSPECIFIED, LOCKED, UNLOCKED
+         *
+         * @param self::RETENTION_MODE_* $retentionMode
+         */
+        public function setRetentionMode($retentionMode)
+        {
+        }
+        /**
+         * @return self::RETENTION_MODE_*
+         */
+        public function getRetentionMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StorageBatchOperations\ObjectRetention registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetainUntilTime()
-    {
-    }
-    /**
-     * Required. The retention mode of the object.
-     *
-     * Accepted values: RETENTION_MODE_UNSPECIFIED, LOCKED, UNLOCKED
-     *
-     * @param self::RETENTION_MODE_* $retentionMode
-     */
-    public function setRetentionMode($retentionMode)
-    {
-    }
-    /**
-     * @return self::RETENTION_MODE_*
-     */
-    public function getRetentionMode()
+    class Google_Service_StorageBatchOperations_ObjectRetention extends \Google\Service\StorageBatchOperations\ObjectRetention
     {
     }
 }

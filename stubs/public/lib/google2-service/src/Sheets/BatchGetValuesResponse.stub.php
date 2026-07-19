@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BatchGetValuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'valueRanges';
-    /**
-     * The ID of the spreadsheet the data was retrieved from.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    protected $valueRangesType = ValueRange::class;
-    protected $valueRangesDataType = 'array';
-    /**
-     * The ID of the spreadsheet the data was retrieved from.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
+namespace Google\Service\Sheets {
+    class BatchGetValuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'valueRanges';
+        /**
+         * The ID of the spreadsheet the data was retrieved from.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        protected $valueRangesType = ValueRange::class;
+        protected $valueRangesDataType = 'array';
+        /**
+         * The ID of the spreadsheet the data was retrieved from.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
+        /**
+         * The requested values. The order of the ValueRanges is the same as the order
+         * of the requested ranges.
+         *
+         * @param ValueRange[] $valueRanges
+         */
+        public function setValueRanges($valueRanges)
+        {
+        }
+        /**
+         * @return ValueRange[]
+         */
+        public function getValueRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\BatchGetValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpreadsheetId()
-    {
-    }
-    /**
-     * The requested values. The order of the ValueRanges is the same as the order
-     * of the requested ranges.
-     *
-     * @param ValueRange[] $valueRanges
-     */
-    public function setValueRanges($valueRanges)
-    {
-    }
-    /**
-     * @return ValueRange[]
-     */
-    public function getValueRanges()
+    class Google_Service_Sheets_BatchGetValuesResponse extends \Google\Service\Sheets\BatchGetValuesResponse
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class PersonMetadata extends \Google\Collection
-{
-    /**
-     * Unspecified.
-     */
-    public const OBJECT_TYPE_OBJECT_TYPE_UNSPECIFIED = 'OBJECT_TYPE_UNSPECIFIED';
-    /**
-     * Person.
-     */
-    public const OBJECT_TYPE_PERSON = 'PERSON';
-    /**
-     * [Currents Page.](https://workspace.google.com/products/currents/)
-     */
-    public const OBJECT_TYPE_PAGE = 'PAGE';
-    protected $collection_key = 'sources';
-    /**
-     * Output only. True if the person resource has been deleted. Populated only
-     * for `people.connections.list` and `otherContacts.list` sync requests.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * Output only. Resource names of people linked to this resource.
-     *
-     * @var string[]
-     */
-    public $linkedPeopleResourceNames;
-    /**
-     * Output only. **DEPRECATED** (Please use
-     * `person.metadata.sources.profileMetadata.objectType` instead) The type of
-     * the person object.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $objectType;
-    /**
-     * Output only. Any former resource names this person has had. Populated only
-     * for `people.connections.list` requests that include a sync token. The
-     * resource name may change when adding or removing fields that link a contact
-     * and profile such as a verified email, verified phone number, or profile
-     * URL.
-     *
-     * @var string[]
-     */
-    public $previousResourceNames;
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Output only. True if the person resource has been deleted. Populated only
-     * for `people.connections.list` and `otherContacts.list` sync requests.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
+namespace Google\Service\PeopleService {
+    class PersonMetadata extends \Google\Collection
     {
+        /**
+         * Unspecified.
+         */
+        public const OBJECT_TYPE_OBJECT_TYPE_UNSPECIFIED = 'OBJECT_TYPE_UNSPECIFIED';
+        /**
+         * Person.
+         */
+        public const OBJECT_TYPE_PERSON = 'PERSON';
+        /**
+         * [Currents Page.](https://workspace.google.com/products/currents/)
+         */
+        public const OBJECT_TYPE_PAGE = 'PAGE';
+        protected $collection_key = 'sources';
+        /**
+         * Output only. True if the person resource has been deleted. Populated only
+         * for `people.connections.list` and `otherContacts.list` sync requests.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * Output only. Resource names of people linked to this resource.
+         *
+         * @var string[]
+         */
+        public $linkedPeopleResourceNames;
+        /**
+         * Output only. **DEPRECATED** (Please use
+         * `person.metadata.sources.profileMetadata.objectType` instead) The type of
+         * the person object.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $objectType;
+        /**
+         * Output only. Any former resource names this person has had. Populated only
+         * for `people.connections.list` requests that include a sync token. The
+         * resource name may change when adding or removing fields that link a contact
+         * and profile such as a verified email, verified phone number, or profile
+         * URL.
+         *
+         * @var string[]
+         */
+        public $previousResourceNames;
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Output only. True if the person resource has been deleted. Populated only
+         * for `people.connections.list` and `otherContacts.list` sync requests.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Output only. Resource names of people linked to this resource.
+         *
+         * @param string[] $linkedPeopleResourceNames
+         */
+        public function setLinkedPeopleResourceNames($linkedPeopleResourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLinkedPeopleResourceNames()
+        {
+        }
+        /**
+         * Output only. **DEPRECATED** (Please use
+         * `person.metadata.sources.profileMetadata.objectType` instead) The type of
+         * the person object.
+         *
+         * Accepted values: OBJECT_TYPE_UNSPECIFIED, PERSON, PAGE
+         *
+         * @deprecated
+         * @param self::OBJECT_TYPE_* $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @deprecated
+         * @return self::OBJECT_TYPE_*
+         */
+        public function getObjectType()
+        {
+        }
+        /**
+         * Output only. Any former resource names this person has had. Populated only
+         * for `people.connections.list` requests that include a sync token. The
+         * resource name may change when adding or removing fields that link a contact
+         * and profile such as a verified email, verified phone number, or profile
+         * URL.
+         *
+         * @param string[] $previousResourceNames
+         */
+        public function setPreviousResourceNames($previousResourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPreviousResourceNames()
+        {
+        }
+        /**
+         * The sources of data for the person.
+         *
+         * @param Source[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PeopleService\PersonMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Output only. Resource names of people linked to this resource.
-     *
-     * @param string[] $linkedPeopleResourceNames
-     */
-    public function setLinkedPeopleResourceNames($linkedPeopleResourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLinkedPeopleResourceNames()
-    {
-    }
-    /**
-     * Output only. **DEPRECATED** (Please use
-     * `person.metadata.sources.profileMetadata.objectType` instead) The type of
-     * the person object.
-     *
-     * Accepted values: OBJECT_TYPE_UNSPECIFIED, PERSON, PAGE
-     *
-     * @deprecated
-     * @param self::OBJECT_TYPE_* $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @deprecated
-     * @return self::OBJECT_TYPE_*
-     */
-    public function getObjectType()
-    {
-    }
-    /**
-     * Output only. Any former resource names this person has had. Populated only
-     * for `people.connections.list` requests that include a sync token. The
-     * resource name may change when adding or removing fields that link a contact
-     * and profile such as a verified email, verified phone number, or profile
-     * URL.
-     *
-     * @param string[] $previousResourceNames
-     */
-    public function setPreviousResourceNames($previousResourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPreviousResourceNames()
-    {
-    }
-    /**
-     * The sources of data for the person.
-     *
-     * @param Source[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
+    class Google_Service_PeopleService_PersonMetadata extends \Google\Service\PeopleService\PersonMetadata
     {
     }
 }

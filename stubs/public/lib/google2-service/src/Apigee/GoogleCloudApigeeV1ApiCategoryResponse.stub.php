@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiCategoryResponse extends \Google\Model
-{
-    protected $dataType = GoogleCloudApigeeV1ApiCategory::class;
-    protected $dataDataType = '';
-    /**
-     * Unique error code for the request, if any.
-     *
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * Description of the operation.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Unique ID of the request.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Status of the operation.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The API category resource.
-     *
-     * @param GoogleCloudApigeeV1ApiCategory $data
-     */
-    public function setData(GoogleCloudApigeeV1ApiCategory $data)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiCategoryResponse extends \Google\Model
     {
+        protected $dataType = GoogleCloudApigeeV1ApiCategory::class;
+        protected $dataDataType = '';
+        /**
+         * Unique error code for the request, if any.
+         *
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * Description of the operation.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Unique ID of the request.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Status of the operation.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The API category resource.
+         *
+         * @param GoogleCloudApigeeV1ApiCategory $data
+         */
+        public function setData(GoogleCloudApigeeV1ApiCategory $data)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiCategory
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Unique error code for the request, if any.
+         *
+         * @param string $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * Description of the operation.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Unique ID of the request.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Status of the operation.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ApiCategory
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiCategoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Unique error code for the request, if any.
-     *
-     * @param string $errorCode
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * Description of the operation.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Unique ID of the request.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Status of the operation.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiCategoryResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiCategoryResponse
     {
     }
 }

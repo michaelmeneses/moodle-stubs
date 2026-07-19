@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class RoundToScale extends \Google\Model
-{
-    /**
-     * Required. Scale value to be used
-     *
-     * @var int
-     */
-    public $scale;
-    /**
-     * Required. Scale value to be used
-     *
-     * @param int $scale
-     */
-    public function setScale($scale)
+namespace Google\Service\DatabaseMigrationService {
+    class RoundToScale extends \Google\Model
     {
+        /**
+         * Required. Scale value to be used
+         *
+         * @var int
+         */
+        public $scale;
+        /**
+         * Required. Scale value to be used
+         *
+         * @param int $scale
+         */
+        public function setScale($scale)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScale()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\RoundToScale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScale()
+    class Google_Service_DatabaseMigrationService_RoundToScale extends \Google\Service\DatabaseMigrationService\RoundToScale
     {
     }
 }

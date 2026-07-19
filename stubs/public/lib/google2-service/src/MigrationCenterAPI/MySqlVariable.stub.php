@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MySqlVariable extends \Google\Model
-{
-    /**
-     * Required. The variable category.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Required. The variable value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The variable name.
-     *
-     * @var string
-     */
-    public $variable;
-    /**
-     * Required. The variable category.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\MigrationCenterAPI {
+    class MySqlVariable extends \Google\Model
     {
+        /**
+         * Required. The variable category.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Required. The variable value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The variable name.
+         *
+         * @var string
+         */
+        public $variable;
+        /**
+         * Required. The variable category.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Required. The variable value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Required. The variable name.
+         *
+         * @param string $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MySqlVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Required. The variable value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * Required. The variable name.
-     *
-     * @param string $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariable()
+    class Google_Service_MigrationCenterAPI_MySqlVariable extends \Google\Service\MigrationCenterAPI\MySqlVariable
     {
     }
 }

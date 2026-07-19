@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch\Resource;
-
-/**
- * The "tasks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $batchService = new Google\Service\Batch(...);
- *   $tasks = $batchService->projects_locations_jobs_taskGroups_tasks;
- *  </code>
- */
-class ProjectsLocationsJobsTaskGroupsTasks extends \Google\Service\Resource
-{
+namespace Google\Service\Batch\Resource {
+    use Google\Service\Batch\ListTasksResponse;
+    use Google\Service\Batch\Task;
     /**
-     * Return a single Task. (tasks.get)
-     *
-     * @param string $name Required. Task name.
-     * @param array $optParams Optional parameters.
-     * @return Task
-     * @throws \Google\Service\Exception
+     * The "tasks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $batchService = new Google\Service\Batch(...);
+     *   $tasks = $batchService->projects_locations_jobs_taskGroups_tasks;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsJobsTaskGroupsTasks extends \Google\Service\Resource
     {
+        /**
+         * Return a single Task. (tasks.get)
+         *
+         * @param string $name Required. Task name.
+         * @param array $optParams Optional parameters.
+         * @return Task
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List Tasks associated with a job.
+         * (tasks.listProjectsLocationsJobsTaskGroupsTasks)
+         *
+         * @param string $parent Required. Name of a TaskGroup from which Tasks are
+         * being requested. Pattern:
+         * "projects/{project}/locations/{location}/jobs/{job}/taskGroups/{task_group}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Task filter, null filter matches all Tasks. Filter
+         * string should be of the format State=TaskStatus.State e.g. State=RUNNING
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return ListTasksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsJobsTaskGroupsTasks($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List Tasks associated with a job.
-     * (tasks.listProjectsLocationsJobsTaskGroupsTasks)
-     *
-     * @param string $parent Required. Name of a TaskGroup from which Tasks are
-     * being requested. Pattern:
-     * "projects/{project}/locations/{location}/jobs/{job}/taskGroups/{task_group}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Task filter, null filter matches all Tasks. Filter
-     * string should be of the format State=TaskStatus.State e.g. State=RUNNING
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return ListTasksResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Batch\Resource\ProjectsLocationsJobsTaskGroupsTasks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsJobsTaskGroupsTasks($parent, $optParams = [])
+    class Google_Service_Batch_Resource_ProjectsLocationsJobsTaskGroupsTasks extends \Google\Service\Batch\Resource\ProjectsLocationsJobsTaskGroupsTasks
     {
     }
 }

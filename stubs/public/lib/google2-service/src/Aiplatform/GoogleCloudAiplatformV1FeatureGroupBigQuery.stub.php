@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureGroupBigQuery extends \Google\Collection
-{
-    protected $collection_key = 'entityIdColumns';
-    protected $bigQuerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
-    protected $bigQuerySourceDataType = '';
-    /**
-     * Optional. If set, all feature values will be fetched from a single row per
-     * unique entityId including nulls. If not set, will collapse all rows for
-     * each unique entityId into a singe row with any non-null values if present,
-     * if no non-null values are present will sync null. ex: If source has schema
-     * `(entity_id, feature_timestamp, f0, f1)` and the following rows: `(e1,
-     * 2020-01-01T10:00:00.123Z, 10, 15)` `(e1, 2020-02-01T10:00:00.123Z, 20,
-     * null)` If dense is set, `(e1, 20, null)` is synced to online stores. If
-     * dense is not set, `(e1, 20, 15)` is synced to online stores.
-     *
-     * @var bool
-     */
-    public $dense;
-    /**
-     * Optional. Columns to construct entity_id / row keys. If not provided
-     * defaults to `entity_id`.
-     *
-     * @var string[]
-     */
-    public $entityIdColumns;
-    /**
-     * Optional. Set if the data source is not a time-series.
-     *
-     * @var bool
-     */
-    public $staticDataSource;
-    protected $timeSeriesType = GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries::class;
-    protected $timeSeriesDataType = '';
-    /**
-     * Required. Immutable. The BigQuery source URI that points to either a
-     * BigQuery Table or View.
-     *
-     * @param GoogleCloudAiplatformV1BigQuerySource $bigQuerySource
-     */
-    public function setBigQuerySource(GoogleCloudAiplatformV1BigQuerySource $bigQuerySource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureGroupBigQuery extends \Google\Collection
     {
+        protected $collection_key = 'entityIdColumns';
+        protected $bigQuerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
+        protected $bigQuerySourceDataType = '';
+        /**
+         * Optional. If set, all feature values will be fetched from a single row per
+         * unique entityId including nulls. If not set, will collapse all rows for
+         * each unique entityId into a singe row with any non-null values if present,
+         * if no non-null values are present will sync null. ex: If source has schema
+         * `(entity_id, feature_timestamp, f0, f1)` and the following rows: `(e1,
+         * 2020-01-01T10:00:00.123Z, 10, 15)` `(e1, 2020-02-01T10:00:00.123Z, 20,
+         * null)` If dense is set, `(e1, 20, null)` is synced to online stores. If
+         * dense is not set, `(e1, 20, 15)` is synced to online stores.
+         *
+         * @var bool
+         */
+        public $dense;
+        /**
+         * Optional. Columns to construct entity_id / row keys. If not provided
+         * defaults to `entity_id`.
+         *
+         * @var string[]
+         */
+        public $entityIdColumns;
+        /**
+         * Optional. Set if the data source is not a time-series.
+         *
+         * @var bool
+         */
+        public $staticDataSource;
+        protected $timeSeriesType = GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries::class;
+        protected $timeSeriesDataType = '';
+        /**
+         * Required. Immutable. The BigQuery source URI that points to either a
+         * BigQuery Table or View.
+         *
+         * @param GoogleCloudAiplatformV1BigQuerySource $bigQuerySource
+         */
+        public function setBigQuerySource(GoogleCloudAiplatformV1BigQuerySource $bigQuerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQuerySource
+         */
+        public function getBigQuerySource()
+        {
+        }
+        /**
+         * Optional. If set, all feature values will be fetched from a single row per
+         * unique entityId including nulls. If not set, will collapse all rows for
+         * each unique entityId into a singe row with any non-null values if present,
+         * if no non-null values are present will sync null. ex: If source has schema
+         * `(entity_id, feature_timestamp, f0, f1)` and the following rows: `(e1,
+         * 2020-01-01T10:00:00.123Z, 10, 15)` `(e1, 2020-02-01T10:00:00.123Z, 20,
+         * null)` If dense is set, `(e1, 20, null)` is synced to online stores. If
+         * dense is not set, `(e1, 20, 15)` is synced to online stores.
+         *
+         * @param bool $dense
+         */
+        public function setDense($dense)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDense()
+        {
+        }
+        /**
+         * Optional. Columns to construct entity_id / row keys. If not provided
+         * defaults to `entity_id`.
+         *
+         * @param string[] $entityIdColumns
+         */
+        public function setEntityIdColumns($entityIdColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntityIdColumns()
+        {
+        }
+        /**
+         * Optional. Set if the data source is not a time-series.
+         *
+         * @param bool $staticDataSource
+         */
+        public function setStaticDataSource($staticDataSource)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStaticDataSource()
+        {
+        }
+        /**
+         * Optional. If the source is a time-series source, this can be set to control
+         * how downstream sources (ex: FeatureView ) will treat time-series sources.
+         * If not set, will treat the source as a time-series source with
+         * `feature_timestamp` as timestamp column and no scan boundary.
+         *
+         * @param GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries $timeSeries
+         */
+        public function setTimeSeries(GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries $timeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries
+         */
+        public function getTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQuerySource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureGroupBigQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQuerySource()
-    {
-    }
-    /**
-     * Optional. If set, all feature values will be fetched from a single row per
-     * unique entityId including nulls. If not set, will collapse all rows for
-     * each unique entityId into a singe row with any non-null values if present,
-     * if no non-null values are present will sync null. ex: If source has schema
-     * `(entity_id, feature_timestamp, f0, f1)` and the following rows: `(e1,
-     * 2020-01-01T10:00:00.123Z, 10, 15)` `(e1, 2020-02-01T10:00:00.123Z, 20,
-     * null)` If dense is set, `(e1, 20, null)` is synced to online stores. If
-     * dense is not set, `(e1, 20, 15)` is synced to online stores.
-     *
-     * @param bool $dense
-     */
-    public function setDense($dense)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDense()
-    {
-    }
-    /**
-     * Optional. Columns to construct entity_id / row keys. If not provided
-     * defaults to `entity_id`.
-     *
-     * @param string[] $entityIdColumns
-     */
-    public function setEntityIdColumns($entityIdColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEntityIdColumns()
-    {
-    }
-    /**
-     * Optional. Set if the data source is not a time-series.
-     *
-     * @param bool $staticDataSource
-     */
-    public function setStaticDataSource($staticDataSource)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStaticDataSource()
-    {
-    }
-    /**
-     * Optional. If the source is a time-series source, this can be set to control
-     * how downstream sources (ex: FeatureView ) will treat time-series sources.
-     * If not set, will treat the source as a time-series source with
-     * `feature_timestamp` as timestamp column and no scan boundary.
-     *
-     * @param GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries $timeSeries
-     */
-    public function setTimeSeries(GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries $timeSeries)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureGroupBigQueryTimeSeries
-     */
-    public function getTimeSeries()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureGroupBigQuery extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureGroupBigQuery
     {
     }
 }

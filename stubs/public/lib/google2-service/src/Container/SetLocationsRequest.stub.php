@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SetLocationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * Required. The desired list of Google Compute Engine
-     * [zones](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster's nodes should be located. Changing the locations a cluster is in
-     * will result in nodes being either created or removed from the cluster,
-     * depending on whether locations are being added or removed. This list must
-     * always include the cluster's primary zone.
-     *
-     * @var string[]
-     */
-    public $locations;
-    /**
-     * The name (project, location, cluster) of the cluster to set locations.
-     * Specified in the format `projects/locations/clusters`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $zone;
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\Container {
+    class SetLocationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * Required. The desired list of Google Compute Engine
+         * [zones](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster's nodes should be located. Changing the locations a cluster is in
+         * will result in nodes being either created or removed from the cluster,
+         * depending on whether locations are being added or removed. This list must
+         * always include the cluster's primary zone.
+         *
+         * @var string[]
+         */
+        public $locations;
+        /**
+         * The name (project, location, cluster) of the cluster to set locations.
+         * Specified in the format `projects/locations/clusters`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $zone;
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The desired list of Google Compute Engine
+         * [zones](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster's nodes should be located. Changing the locations a cluster is in
+         * will result in nodes being either created or removed from the cluster,
+         * depending on whether locations are being added or removed. This list must
+         * always include the cluster's primary zone.
+         *
+         * @param string[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * The name (project, location, cluster) of the cluster to set locations.
+         * Specified in the format `projects/locations/clusters`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Container\SetLocationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The desired list of Google Compute Engine
-     * [zones](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster's nodes should be located. Changing the locations a cluster is in
-     * will result in nodes being either created or removed from the cluster,
-     * depending on whether locations are being added or removed. This list must
-     * always include the cluster's primary zone.
-     *
-     * @param string[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocations()
-    {
-    }
-    /**
-     * The name (project, location, cluster) of the cluster to set locations.
-     * Specified in the format `projects/locations/clusters`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_SetLocationsRequest extends \Google\Service\Container\SetLocationsRequest
     {
     }
 }

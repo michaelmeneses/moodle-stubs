@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class SchedulingDuration extends \Google\Model
-{
-    /**
-     * Optional. Span of time that's a fraction of a second at nanosecond
-     * resolution.
-     *
-     * @var int
-     */
-    public $nanos;
-    /**
-     * Optional. Span of time at a resolution of a second.
-     *
-     * @var string
-     */
-    public $seconds;
-    /**
-     * Optional. Span of time that's a fraction of a second at nanosecond
-     * resolution.
-     *
-     * @param int $nanos
-     */
-    public function setNanos($nanos)
+namespace Google\Service\Backupdr {
+    class SchedulingDuration extends \Google\Model
     {
+        /**
+         * Optional. Span of time that's a fraction of a second at nanosecond
+         * resolution.
+         *
+         * @var int
+         */
+        public $nanos;
+        /**
+         * Optional. Span of time at a resolution of a second.
+         *
+         * @var string
+         */
+        public $seconds;
+        /**
+         * Optional. Span of time that's a fraction of a second at nanosecond
+         * resolution.
+         *
+         * @param int $nanos
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * Optional. Span of time at a resolution of a second.
+         *
+         * @param string $seconds
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Backupdr\SchedulingDuration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNanos()
-    {
-    }
-    /**
-     * Optional. Span of time at a resolution of a second.
-     *
-     * @param string $seconds
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeconds()
+    class Google_Service_Backupdr_SchedulingDuration extends \Google\Service\Backupdr\SchedulingDuration
     {
     }
 }

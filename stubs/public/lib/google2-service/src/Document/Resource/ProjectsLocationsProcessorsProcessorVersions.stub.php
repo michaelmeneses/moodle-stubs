@@ -21,150 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document\Resource;
-
-/**
- * The "processorVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $documentaiService = new Google\Service\Document(...);
- *   $processorVersions = $documentaiService->projects_locations_processors_processorVersions;
- *  </code>
- */
-class ProjectsLocationsProcessorsProcessorVersions extends \Google\Service\Resource
-{
+namespace Google\Service\Document\Resource {
+    use Google\Service\Document\GoogleCloudDocumentaiV1BatchProcessRequest;
+    use Google\Service\Document\GoogleCloudDocumentaiV1DeployProcessorVersionRequest;
+    use Google\Service\Document\GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest;
+    use Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorVersionsResponse;
+    use Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest;
+    use Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse;
+    use Google\Service\Document\GoogleCloudDocumentaiV1ProcessorVersion;
+    use Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionRequest;
+    use Google\Service\Document\GoogleCloudDocumentaiV1UndeployProcessorVersionRequest;
+    use Google\Service\Document\GoogleLongrunningOperation;
     /**
-     * LRO endpoint to batch process many documents. The output is written to Cloud
-     * Storage as JSON in the [Document] format. (processorVersions.batchProcess)
-     *
-     * @param string $name Required. The resource name of Processor or
-     * ProcessorVersion. Format:
-     * `projects/{project}/locations/{location}/processors/{processor}`, or `project
-     * s/{project}/locations/{location}/processors/{processor}/processorVersions/{pr
-     * ocessorVersion}`
-     * @param GoogleCloudDocumentaiV1BatchProcessRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "processorVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $documentaiService = new Google\Service\Document(...);
+     *   $processorVersions = $documentaiService->projects_locations_processors_processorVersions;
+     *  </code>
      */
-    public function batchProcess($name, GoogleCloudDocumentaiV1BatchProcessRequest $postBody, $optParams = [])
+    class ProjectsLocationsProcessorsProcessorVersions extends \Google\Service\Resource
     {
+        /**
+         * LRO endpoint to batch process many documents. The output is written to Cloud
+         * Storage as JSON in the [Document] format. (processorVersions.batchProcess)
+         *
+         * @param string $name Required. The resource name of Processor or
+         * ProcessorVersion. Format:
+         * `projects/{project}/locations/{location}/processors/{processor}`, or `project
+         * s/{project}/locations/{location}/processors/{processor}/processorVersions/{pr
+         * ocessorVersion}`
+         * @param GoogleCloudDocumentaiV1BatchProcessRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function batchProcess($name, GoogleCloudDocumentaiV1BatchProcessRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the processor version, all artifacts under the processor version will
+         * be deleted. (processorVersions.delete)
+         *
+         * @param string $name Required. The processor version resource name to be
+         * deleted.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Deploys the processor version. (processorVersions.deploy)
+         *
+         * @param string $name Required. The processor version resource name to be
+         * deployed.
+         * @param GoogleCloudDocumentaiV1DeployProcessorVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function deploy($name, GoogleCloudDocumentaiV1DeployProcessorVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Evaluates a ProcessorVersion against annotated documents, producing an
+         * Evaluation. (processorVersions.evaluateProcessorVersion)
+         *
+         * @param string $processorVersion Required. The resource name of the
+         * ProcessorVersion to evaluate. `projects/{project}/locations/{location}/proces
+         * sors/{processor}/processorVersions/{processorVersion}`
+         * @param GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function evaluateProcessorVersion($processorVersion, GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a processor version detail. (processorVersions.get)
+         *
+         * @param string $name Required. The processor resource name.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDocumentaiV1ProcessorVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all versions of a processor.
+         * (processorVersions.listProjectsLocationsProcessorsProcessorVersions)
+         *
+         * @param string $parent Required. The parent (project, location and processor)
+         * to list all versions. Format:
+         * `projects/{project}/locations/{location}/processors/{processor}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of processor versions to return.
+         * If unspecified, at most `10` processor versions will be returned. The maximum
+         * value is `20`. Values above `20` will be coerced to `20`.
+         * @opt_param string pageToken We will return the processor versions sorted by
+         * creation time. The page token will point to the next processor version.
+         * @return GoogleCloudDocumentaiV1ListProcessorVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsProcessorsProcessorVersions($parent, $optParams = [])
+        {
+        }
+        /**
+         * Processes a single document. (processorVersions.process)
+         *
+         * @param string $name Required. The resource name of the Processor or
+         * ProcessorVersion to use for processing. If a Processor is specified, the
+         * server will use its default version. Format:
+         * `projects/{project}/locations/{location}/processors/{processor}`, or `project
+         * s/{project}/locations/{location}/processors/{processor}/processorVersions/{pr
+         * ocessorVersion}`
+         * @param GoogleCloudDocumentaiV1ProcessRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDocumentaiV1ProcessResponse
+         * @throws \Google\Service\Exception
+         */
+        public function process($name, GoogleCloudDocumentaiV1ProcessRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Trains a new processor version. Operation metadata is returned as
+         * TrainProcessorVersionMetadata. (processorVersions.train)
+         *
+         * @param string $parent Required. The parent (project, location and processor)
+         * to create the new version for. Format:
+         * `projects/{project}/locations/{location}/processors/{processor}`.
+         * @param GoogleCloudDocumentaiV1TrainProcessorVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function train($parent, GoogleCloudDocumentaiV1TrainProcessorVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Undeploys the processor version. (processorVersions.undeploy)
+         *
+         * @param string $name Required. The processor version resource name to be
+         * undeployed.
+         * @param GoogleCloudDocumentaiV1UndeployProcessorVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function undeploy($name, GoogleCloudDocumentaiV1UndeployProcessorVersionRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the processor version, all artifacts under the processor version will
-     * be deleted. (processorVersions.delete)
-     *
-     * @param string $name Required. The processor version resource name to be
-     * deleted.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Document\Resource\ProjectsLocationsProcessorsProcessorVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Deploys the processor version. (processorVersions.deploy)
-     *
-     * @param string $name Required. The processor version resource name to be
-     * deployed.
-     * @param GoogleCloudDocumentaiV1DeployProcessorVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function deploy($name, GoogleCloudDocumentaiV1DeployProcessorVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Evaluates a ProcessorVersion against annotated documents, producing an
-     * Evaluation. (processorVersions.evaluateProcessorVersion)
-     *
-     * @param string $processorVersion Required. The resource name of the
-     * ProcessorVersion to evaluate. `projects/{project}/locations/{location}/proces
-     * sors/{processor}/processorVersions/{processorVersion}`
-     * @param GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function evaluateProcessorVersion($processorVersion, GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a processor version detail. (processorVersions.get)
-     *
-     * @param string $name Required. The processor resource name.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDocumentaiV1ProcessorVersion
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all versions of a processor.
-     * (processorVersions.listProjectsLocationsProcessorsProcessorVersions)
-     *
-     * @param string $parent Required. The parent (project, location and processor)
-     * to list all versions. Format:
-     * `projects/{project}/locations/{location}/processors/{processor}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of processor versions to return.
-     * If unspecified, at most `10` processor versions will be returned. The maximum
-     * value is `20`. Values above `20` will be coerced to `20`.
-     * @opt_param string pageToken We will return the processor versions sorted by
-     * creation time. The page token will point to the next processor version.
-     * @return GoogleCloudDocumentaiV1ListProcessorVersionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsProcessorsProcessorVersions($parent, $optParams = [])
-    {
-    }
-    /**
-     * Processes a single document. (processorVersions.process)
-     *
-     * @param string $name Required. The resource name of the Processor or
-     * ProcessorVersion to use for processing. If a Processor is specified, the
-     * server will use its default version. Format:
-     * `projects/{project}/locations/{location}/processors/{processor}`, or `project
-     * s/{project}/locations/{location}/processors/{processor}/processorVersions/{pr
-     * ocessorVersion}`
-     * @param GoogleCloudDocumentaiV1ProcessRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDocumentaiV1ProcessResponse
-     * @throws \Google\Service\Exception
-     */
-    public function process($name, GoogleCloudDocumentaiV1ProcessRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Trains a new processor version. Operation metadata is returned as
-     * TrainProcessorVersionMetadata. (processorVersions.train)
-     *
-     * @param string $parent Required. The parent (project, location and processor)
-     * to create the new version for. Format:
-     * `projects/{project}/locations/{location}/processors/{processor}`.
-     * @param GoogleCloudDocumentaiV1TrainProcessorVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function train($parent, GoogleCloudDocumentaiV1TrainProcessorVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Undeploys the processor version. (processorVersions.undeploy)
-     *
-     * @param string $name Required. The processor version resource name to be
-     * undeployed.
-     * @param GoogleCloudDocumentaiV1UndeployProcessorVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function undeploy($name, GoogleCloudDocumentaiV1UndeployProcessorVersionRequest $postBody, $optParams = [])
+    class Google_Service_Document_Resource_ProjectsLocationsProcessorsProcessorVersions extends \Google\Service\Document\Resource\ProjectsLocationsProcessorsProcessorVersions
     {
     }
 }

@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class IPAllocationPolicy extends \Google\Model
-{
-    /**
-     * Optional. The IP address range used to allocate IP addresses to pods in the
-     * GKE cluster. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
-     * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
-     * a specific netmask. Set to a
-     * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-     * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
-     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
-     * to use.
-     *
-     * @var string
-     */
-    public $clusterIpv4CidrBlock;
-    /**
-     * Optional. The name of the GKE cluster's secondary range used to allocate IP
-     * addresses to pods. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true.
-     *
-     * @var string
-     */
-    public $clusterSecondaryRangeName;
-    /**
-     * Optional. The IP address range of the services IP addresses in this GKE
-     * cluster. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
-     * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
-     * a specific netmask. Set to a
-     * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-     * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
-     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
-     * to use.
-     *
-     * @var string
-     */
-    public $servicesIpv4CidrBlock;
-    /**
-     * Optional. The name of the services' secondary range used to allocate IP
-     * addresses to the GKE cluster. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true.
-     *
-     * @var string
-     */
-    public $servicesSecondaryRangeName;
-    /**
-     * Optional. Whether or not to enable Alias IPs in the GKE cluster. If `true`,
-     * a VPC-native cluster is created. This field is only supported for Cloud
-     * Composer environments in versions composer-1.*.*-airflow-*.*.*.
-     * Environments in newer versions always use VPC-native GKE clusters.
-     *
-     * @var bool
-     */
-    public $useIpAliases;
-    /**
-     * Optional. The IP address range used to allocate IP addresses to pods in the
-     * GKE cluster. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
-     * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
-     * a specific netmask. Set to a
-     * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-     * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
-     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
-     * to use.
-     *
-     * @param string $clusterIpv4CidrBlock
-     */
-    public function setClusterIpv4CidrBlock($clusterIpv4CidrBlock)
+namespace Google\Service\CloudComposer {
+    class IPAllocationPolicy extends \Google\Model
     {
+        /**
+         * Optional. The IP address range used to allocate IP addresses to pods in the
+         * GKE cluster. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
+         * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
+         * a specific netmask. Set to a
+         * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+         * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
+         * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
+         * to use.
+         *
+         * @var string
+         */
+        public $clusterIpv4CidrBlock;
+        /**
+         * Optional. The name of the GKE cluster's secondary range used to allocate IP
+         * addresses to pods. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true.
+         *
+         * @var string
+         */
+        public $clusterSecondaryRangeName;
+        /**
+         * Optional. The IP address range of the services IP addresses in this GKE
+         * cluster. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
+         * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
+         * a specific netmask. Set to a
+         * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+         * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
+         * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
+         * to use.
+         *
+         * @var string
+         */
+        public $servicesIpv4CidrBlock;
+        /**
+         * Optional. The name of the services' secondary range used to allocate IP
+         * addresses to the GKE cluster. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true.
+         *
+         * @var string
+         */
+        public $servicesSecondaryRangeName;
+        /**
+         * Optional. Whether or not to enable Alias IPs in the GKE cluster. If `true`,
+         * a VPC-native cluster is created. This field is only supported for Cloud
+         * Composer environments in versions composer-1.*.*-airflow-*.*.*.
+         * Environments in newer versions always use VPC-native GKE clusters.
+         *
+         * @var bool
+         */
+        public $useIpAliases;
+        /**
+         * Optional. The IP address range used to allocate IP addresses to pods in the
+         * GKE cluster. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
+         * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
+         * a specific netmask. Set to a
+         * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+         * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
+         * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
+         * to use.
+         *
+         * @param string $clusterIpv4CidrBlock
+         */
+        public function setClusterIpv4CidrBlock($clusterIpv4CidrBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterIpv4CidrBlock()
+        {
+        }
+        /**
+         * Optional. The name of the GKE cluster's secondary range used to allocate IP
+         * addresses to pods. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true.
+         *
+         * @param string $clusterSecondaryRangeName
+         */
+        public function setClusterSecondaryRangeName($clusterSecondaryRangeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterSecondaryRangeName()
+        {
+        }
+        /**
+         * Optional. The IP address range of the services IP addresses in this GKE
+         * cluster. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
+         * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
+         * a specific netmask. Set to a
+         * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+         * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
+         * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
+         * to use.
+         *
+         * @param string $servicesIpv4CidrBlock
+         */
+        public function setServicesIpv4CidrBlock($servicesIpv4CidrBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServicesIpv4CidrBlock()
+        {
+        }
+        /**
+         * Optional. The name of the services' secondary range used to allocate IP
+         * addresses to the GKE cluster. For Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*, this field is applicable only when
+         * `use_ip_aliases` is true.
+         *
+         * @param string $servicesSecondaryRangeName
+         */
+        public function setServicesSecondaryRangeName($servicesSecondaryRangeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServicesSecondaryRangeName()
+        {
+        }
+        /**
+         * Optional. Whether or not to enable Alias IPs in the GKE cluster. If `true`,
+         * a VPC-native cluster is created. This field is only supported for Cloud
+         * Composer environments in versions composer-1.*.*-airflow-*.*.*.
+         * Environments in newer versions always use VPC-native GKE clusters.
+         *
+         * @param bool $useIpAliases
+         */
+        public function setUseIpAliases($useIpAliases)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseIpAliases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\IPAllocationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterIpv4CidrBlock()
-    {
-    }
-    /**
-     * Optional. The name of the GKE cluster's secondary range used to allocate IP
-     * addresses to pods. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true.
-     *
-     * @param string $clusterSecondaryRangeName
-     */
-    public function setClusterSecondaryRangeName($clusterSecondaryRangeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterSecondaryRangeName()
-    {
-    }
-    /**
-     * Optional. The IP address range of the services IP addresses in this GKE
-     * cluster. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true. Set to blank to have GKE choose a range with the
-     * default size. Set to /netmask (e.g. `/14`) to have GKE choose a range with
-     * a specific netmask. Set to a
-     * [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-     * notation (e.g. `10.96.0.0/14`) from the RFC-1918 private networks (e.g.
-     * `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`) to pick a specific range
-     * to use.
-     *
-     * @param string $servicesIpv4CidrBlock
-     */
-    public function setServicesIpv4CidrBlock($servicesIpv4CidrBlock)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServicesIpv4CidrBlock()
-    {
-    }
-    /**
-     * Optional. The name of the services' secondary range used to allocate IP
-     * addresses to the GKE cluster. For Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*, this field is applicable only when
-     * `use_ip_aliases` is true.
-     *
-     * @param string $servicesSecondaryRangeName
-     */
-    public function setServicesSecondaryRangeName($servicesSecondaryRangeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServicesSecondaryRangeName()
-    {
-    }
-    /**
-     * Optional. Whether or not to enable Alias IPs in the GKE cluster. If `true`,
-     * a VPC-native cluster is created. This field is only supported for Cloud
-     * Composer environments in versions composer-1.*.*-airflow-*.*.*.
-     * Environments in newer versions always use VPC-native GKE clusters.
-     *
-     * @param bool $useIpAliases
-     */
-    public function setUseIpAliases($useIpAliases)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseIpAliases()
+    class Google_Service_CloudComposer_IPAllocationPolicy extends \Google\Service\CloudComposer\IPAllocationPolicy
     {
     }
 }

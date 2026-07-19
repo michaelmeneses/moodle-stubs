@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UnwrappedCryptoKey extends \Google\Model
-{
-    /**
-     * Required. A 128/192/256 bit key.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Required. A 128/192/256 bit key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UnwrappedCryptoKey extends \Google\Model
     {
+        /**
+         * Required. A 128/192/256 bit key.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Required. A 128/192/256 bit key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UnwrappedCryptoKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
+    class Google_Service_DLP_GooglePrivacyDlpV2UnwrappedCryptoKey extends \Google\Service\DLP\GooglePrivacyDlpV2UnwrappedCryptoKey
     {
     }
 }

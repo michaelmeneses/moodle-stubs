@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\privacy;
 
+use core_privacy\local\request\writer;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
 /**
  * Implementation of the privacy subsystem plugin provider for the user tours feature.
  *

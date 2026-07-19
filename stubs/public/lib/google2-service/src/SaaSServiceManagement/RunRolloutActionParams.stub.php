@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class RunRolloutActionParams extends \Google\Model
-{
-    /**
-     * Required. If true, the rollout will retry failed operations when resumed.
-     * This is applicable only the current state of the Rollout is PAUSED and the
-     * requested action is RUN.
-     *
-     * @var bool
-     */
-    public $retryFailedOperations;
-    /**
-     * Required. If true, the rollout will retry failed operations when resumed.
-     * This is applicable only the current state of the Rollout is PAUSED and the
-     * requested action is RUN.
-     *
-     * @param bool $retryFailedOperations
-     */
-    public function setRetryFailedOperations($retryFailedOperations)
+namespace Google\Service\SaaSServiceManagement {
+    class RunRolloutActionParams extends \Google\Model
     {
+        /**
+         * Required. If true, the rollout will retry failed operations when resumed.
+         * This is applicable only the current state of the Rollout is PAUSED and the
+         * requested action is RUN.
+         *
+         * @var bool
+         */
+        public $retryFailedOperations;
+        /**
+         * Required. If true, the rollout will retry failed operations when resumed.
+         * This is applicable only the current state of the Rollout is PAUSED and the
+         * requested action is RUN.
+         *
+         * @param bool $retryFailedOperations
+         */
+        public function setRetryFailedOperations($retryFailedOperations)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRetryFailedOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\RunRolloutActionParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetryFailedOperations()
+    class Google_Service_SaaSServiceManagement_RunRolloutActionParams extends \Google\Service\SaaSServiceManagement\RunRolloutActionParams
     {
     }
 }

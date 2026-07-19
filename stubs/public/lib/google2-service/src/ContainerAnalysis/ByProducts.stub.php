@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ByProducts extends \Google\Model
-{
-    public $customValues;
-    public function setCustomValues($customValues)
+namespace Google\Service\ContainerAnalysis {
+    class ByProducts extends \Google\Model
     {
+        public $customValues;
+        public function setCustomValues($customValues)
+        {
+        }
+        public function getCustomValues()
+        {
+        }
     }
-    public function getCustomValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ByProducts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_ByProducts extends \Google\Service\ContainerAnalysis\ByProducts
     {
     }
 }

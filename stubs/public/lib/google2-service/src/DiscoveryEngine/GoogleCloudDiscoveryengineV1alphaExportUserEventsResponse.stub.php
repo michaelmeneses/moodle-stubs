@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaExportUserEventsResponse extends \Google\Model
-{
-    protected $outputResultType = GoogleCloudDiscoveryengineV1alphaOutputResult::class;
-    protected $outputResultDataType = '';
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1alphaOutputResult
-     */
-    public function setOutputResult(GoogleCloudDiscoveryengineV1alphaOutputResult $outputResult)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaExportUserEventsResponse extends \Google\Model
     {
+        protected $outputResultType = GoogleCloudDiscoveryengineV1alphaOutputResult::class;
+        protected $outputResultDataType = '';
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1alphaOutputResult
+         */
+        public function setOutputResult(GoogleCloudDiscoveryengineV1alphaOutputResult $outputResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaOutputResult
+         */
+        public function getOutputResult()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaOutputResult
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaExportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputResult()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaExportUserEventsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaExportUserEventsResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class SourceLocation extends \Google\Model
-{
-    /**
-     * Column number starting at 1.
-     *
-     * @var int
-     */
-    public $column;
-    /**
-     * Line number starting at 1.
-     *
-     * @var int
-     */
-    public $line;
-    /**
-     * Column number starting at 1.
-     *
-     * @param int $column
-     */
-    public function setColumn($column)
+namespace Google\Service\FirebaseDataConnect {
+    class SourceLocation extends \Google\Model
     {
+        /**
+         * Column number starting at 1.
+         *
+         * @var int
+         */
+        public $column;
+        /**
+         * Line number starting at 1.
+         *
+         * @var int
+         */
+        public $line;
+        /**
+         * Column number starting at 1.
+         *
+         * @param int $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Line number starting at 1.
+         *
+         * @param int $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\SourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Line number starting at 1.
-     *
-     * @param int $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLine()
+    class Google_Service_FirebaseDataConnect_SourceLocation extends \Google\Service\FirebaseDataConnect\SourceLocation
     {
     }
 }

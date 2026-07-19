@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsSensesSynonyms extends \Google\Model
-{
-    protected $sourceType = DictlayerdataDictWordsSensesSynonymsSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param DictlayerdataDictWordsSensesSynonymsSource $source
-     */
-    public function setSource(DictlayerdataDictWordsSensesSynonymsSource $source)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsSensesSynonyms extends \Google\Model
     {
+        protected $sourceType = DictlayerdataDictWordsSensesSynonymsSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param DictlayerdataDictWordsSensesSynonymsSource $source
+         */
+        public function setSource(DictlayerdataDictWordsSensesSynonymsSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesSynonymsSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictWordsSensesSynonymsSource
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsSensesSynonyms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Books_DictlayerdataDictWordsSensesSynonyms extends \Google\Service\Books\DictlayerdataDictWordsSensesSynonyms
     {
     }
 }

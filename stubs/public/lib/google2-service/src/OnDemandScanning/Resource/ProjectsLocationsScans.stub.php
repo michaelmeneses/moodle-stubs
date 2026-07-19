@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning\Resource;
-
-/**
- * The "scans" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
- *   $scans = $ondemandscanningService->projects_locations_scans;
- *  </code>
- */
-class ProjectsLocationsScans extends \Google\Service\Resource
-{
+namespace Google\Service\OnDemandScanning\Resource {
+    use Google\Service\OnDemandScanning\AnalyzePackagesRequestV1;
+    use Google\Service\OnDemandScanning\Operation;
     /**
-     * Initiates an analysis of the provided packages. (scans.analyzePackages)
-     *
-     * @param string $parent Required. The parent of the resource for which analysis
-     * is requested. Format: projects/[project_name]/locations/[location]
-     * @param AnalyzePackagesRequestV1 $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "scans" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ondemandscanningService = new Google\Service\OnDemandScanning(...);
+     *   $scans = $ondemandscanningService->projects_locations_scans;
+     *  </code>
      */
-    public function analyzePackages($parent, AnalyzePackagesRequestV1 $postBody, $optParams = [])
+    class ProjectsLocationsScans extends \Google\Service\Resource
+    {
+        /**
+         * Initiates an analysis of the provided packages. (scans.analyzePackages)
+         *
+         * @param string $parent Required. The parent of the resource for which analysis
+         * is requested. Format: projects/[project_name]/locations/[location]
+         * @param AnalyzePackagesRequestV1 $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function analyzePackages($parent, AnalyzePackagesRequestV1 $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OnDemandScanning\Resource\ProjectsLocationsScans registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OnDemandScanning_Resource_ProjectsLocationsScans extends \Google\Service\OnDemandScanning\Resource\ProjectsLocationsScans
     {
     }
 }

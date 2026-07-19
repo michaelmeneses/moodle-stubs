@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SinglePackageChange extends \Google\Model
-{
-    /**
-     * Optional. Sql code for package body
-     *
-     * @var string
-     */
-    public $packageBody;
-    /**
-     * Optional. Sql code for package description
-     *
-     * @var string
-     */
-    public $packageDescription;
-    /**
-     * Optional. Sql code for package body
-     *
-     * @param string $packageBody
-     */
-    public function setPackageBody($packageBody)
+namespace Google\Service\DatabaseMigrationService {
+    class SinglePackageChange extends \Google\Model
     {
+        /**
+         * Optional. Sql code for package body
+         *
+         * @var string
+         */
+        public $packageBody;
+        /**
+         * Optional. Sql code for package description
+         *
+         * @var string
+         */
+        public $packageDescription;
+        /**
+         * Optional. Sql code for package body
+         *
+         * @param string $packageBody
+         */
+        public function setPackageBody($packageBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageBody()
+        {
+        }
+        /**
+         * Optional. Sql code for package description
+         *
+         * @param string $packageDescription
+         */
+        public function setPackageDescription($packageDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SinglePackageChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageBody()
-    {
-    }
-    /**
-     * Optional. Sql code for package description
-     *
-     * @param string $packageDescription
-     */
-    public function setPackageDescription($packageDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageDescription()
+    class Google_Service_DatabaseMigrationService_SinglePackageChange extends \Google\Service\DatabaseMigrationService\SinglePackageChange
     {
     }
 }

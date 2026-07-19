@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class YumArtifact extends \Google\Model
-{
-    /**
-     * Package type is not specified.
-     */
-    public const PACKAGE_TYPE_PACKAGE_TYPE_UNSPECIFIED = 'PACKAGE_TYPE_UNSPECIFIED';
-    /**
-     * Binary package (.rpm).
-     */
-    public const PACKAGE_TYPE_BINARY = 'BINARY';
-    /**
-     * Source package (.srpm).
-     */
-    public const PACKAGE_TYPE_SOURCE = 'SOURCE';
-    /**
-     * Output only. Operating system architecture of the artifact.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * Output only. The Artifact Registry resource name of the artifact.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The yum package name of the artifact.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Output only. An artifact is a binary or source package.
-     *
-     * @var string
-     */
-    public $packageType;
-    /**
-     * Output only. Operating system architecture of the artifact.
-     *
-     * @param string $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\ArtifactRegistry {
+    class YumArtifact extends \Google\Model
     {
+        /**
+         * Package type is not specified.
+         */
+        public const PACKAGE_TYPE_PACKAGE_TYPE_UNSPECIFIED = 'PACKAGE_TYPE_UNSPECIFIED';
+        /**
+         * Binary package (.rpm).
+         */
+        public const PACKAGE_TYPE_BINARY = 'BINARY';
+        /**
+         * Source package (.srpm).
+         */
+        public const PACKAGE_TYPE_SOURCE = 'SOURCE';
+        /**
+         * Output only. Operating system architecture of the artifact.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * Output only. The Artifact Registry resource name of the artifact.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The yum package name of the artifact.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Output only. An artifact is a binary or source package.
+         *
+         * @var string
+         */
+        public $packageType;
+        /**
+         * Output only. Operating system architecture of the artifact.
+         *
+         * @param string $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * Output only. The Artifact Registry resource name of the artifact.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The yum package name of the artifact.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Output only. An artifact is a binary or source package.
+         *
+         * Accepted values: PACKAGE_TYPE_UNSPECIFIED, BINARY, SOURCE
+         *
+         * @param self::PACKAGE_TYPE_* $packageType
+         */
+        public function setPackageType($packageType)
+        {
+        }
+        /**
+         * @return self::PACKAGE_TYPE_*
+         */
+        public function getPackageType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\YumArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * Output only. The Artifact Registry resource name of the artifact.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The yum package name of the artifact.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Output only. An artifact is a binary or source package.
-     *
-     * Accepted values: PACKAGE_TYPE_UNSPECIFIED, BINARY, SOURCE
-     *
-     * @param self::PACKAGE_TYPE_* $packageType
-     */
-    public function setPackageType($packageType)
-    {
-    }
-    /**
-     * @return self::PACKAGE_TYPE_*
-     */
-    public function getPackageType()
+    class Google_Service_ArtifactRegistry_YumArtifact extends \Google\Service\ArtifactRegistry\YumArtifact
     {
     }
 }

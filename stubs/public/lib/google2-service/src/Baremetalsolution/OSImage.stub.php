@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class OSImage extends \Google\Collection
-{
-    protected $collection_key = 'supportedNetworkTemplates';
-    /**
-     * Instance types this image is applicable to. [Available
-     * types](https://cloud.google.com/bare-metal/docs/bms-
-     * planning#server_configurations)
-     *
-     * @var string[]
-     */
-    public $applicableInstanceTypes;
-    /**
-     * OS Image code.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * OS Image description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. OS Image's unique name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Network templates that can be used with this OS Image.
-     *
-     * @var string[]
-     */
-    public $supportedNetworkTemplates;
-    /**
-     * Instance types this image is applicable to. [Available
-     * types](https://cloud.google.com/bare-metal/docs/bms-
-     * planning#server_configurations)
-     *
-     * @param string[] $applicableInstanceTypes
-     */
-    public function setApplicableInstanceTypes($applicableInstanceTypes)
+namespace Google\Service\Baremetalsolution {
+    class OSImage extends \Google\Collection
     {
+        protected $collection_key = 'supportedNetworkTemplates';
+        /**
+         * Instance types this image is applicable to. [Available
+         * types](https://cloud.google.com/bare-metal/docs/bms-
+         * planning#server_configurations)
+         *
+         * @var string[]
+         */
+        public $applicableInstanceTypes;
+        /**
+         * OS Image code.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * OS Image description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. OS Image's unique name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Network templates that can be used with this OS Image.
+         *
+         * @var string[]
+         */
+        public $supportedNetworkTemplates;
+        /**
+         * Instance types this image is applicable to. [Available
+         * types](https://cloud.google.com/bare-metal/docs/bms-
+         * planning#server_configurations)
+         *
+         * @param string[] $applicableInstanceTypes
+         */
+        public function setApplicableInstanceTypes($applicableInstanceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApplicableInstanceTypes()
+        {
+        }
+        /**
+         * OS Image code.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * OS Image description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. OS Image's unique name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Network templates that can be used with this OS Image.
+         *
+         * @param string[] $supportedNetworkTemplates
+         */
+        public function setSupportedNetworkTemplates($supportedNetworkTemplates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedNetworkTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\OSImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicableInstanceTypes()
-    {
-    }
-    /**
-     * OS Image code.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
-    {
-    }
-    /**
-     * OS Image description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. OS Image's unique name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Network templates that can be used with this OS Image.
-     *
-     * @param string[] $supportedNetworkTemplates
-     */
-    public function setSupportedNetworkTemplates($supportedNetworkTemplates)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedNetworkTemplates()
+    class Google_Service_Baremetalsolution_OSImage extends \Google\Service\Baremetalsolution\OSImage
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class CreateContainerVersionResponse extends \Google\Model
-{
-    /**
-     * Compiler errors or not.
-     *
-     * @var bool
-     */
-    public $compilerError;
-    protected $containerVersionType = ContainerVersion::class;
-    protected $containerVersionDataType = '';
-    /**
-     * Auto generated workspace path created as a result of version creation. This
-     * field should only be populated if the created version was not a quick
-     * preview.
-     *
-     * @var string
-     */
-    public $newWorkspacePath;
-    protected $syncStatusType = SyncStatus::class;
-    protected $syncStatusDataType = '';
-    /**
-     * Compiler errors or not.
-     *
-     * @param bool $compilerError
-     */
-    public function setCompilerError($compilerError)
+namespace Google\Service\TagManager {
+    class CreateContainerVersionResponse extends \Google\Model
     {
+        /**
+         * Compiler errors or not.
+         *
+         * @var bool
+         */
+        public $compilerError;
+        protected $containerVersionType = ContainerVersion::class;
+        protected $containerVersionDataType = '';
+        /**
+         * Auto generated workspace path created as a result of version creation. This
+         * field should only be populated if the created version was not a quick
+         * preview.
+         *
+         * @var string
+         */
+        public $newWorkspacePath;
+        protected $syncStatusType = SyncStatus::class;
+        protected $syncStatusDataType = '';
+        /**
+         * Compiler errors or not.
+         *
+         * @param bool $compilerError
+         */
+        public function setCompilerError($compilerError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompilerError()
+        {
+        }
+        /**
+         * The container version created.
+         *
+         * @param ContainerVersion $containerVersion
+         */
+        public function setContainerVersion(ContainerVersion $containerVersion)
+        {
+        }
+        /**
+         * @return ContainerVersion
+         */
+        public function getContainerVersion()
+        {
+        }
+        /**
+         * Auto generated workspace path created as a result of version creation. This
+         * field should only be populated if the created version was not a quick
+         * preview.
+         *
+         * @param string $newWorkspacePath
+         */
+        public function setNewWorkspacePath($newWorkspacePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewWorkspacePath()
+        {
+        }
+        /**
+         * Whether version creation failed when syncing the workspace to the latest
+         * container version.
+         *
+         * @param SyncStatus $syncStatus
+         */
+        public function setSyncStatus(SyncStatus $syncStatus)
+        {
+        }
+        /**
+         * @return SyncStatus
+         */
+        public function getSyncStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\CreateContainerVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompilerError()
-    {
-    }
-    /**
-     * The container version created.
-     *
-     * @param ContainerVersion $containerVersion
-     */
-    public function setContainerVersion(ContainerVersion $containerVersion)
-    {
-    }
-    /**
-     * @return ContainerVersion
-     */
-    public function getContainerVersion()
-    {
-    }
-    /**
-     * Auto generated workspace path created as a result of version creation. This
-     * field should only be populated if the created version was not a quick
-     * preview.
-     *
-     * @param string $newWorkspacePath
-     */
-    public function setNewWorkspacePath($newWorkspacePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewWorkspacePath()
-    {
-    }
-    /**
-     * Whether version creation failed when syncing the workspace to the latest
-     * container version.
-     *
-     * @param SyncStatus $syncStatus
-     */
-    public function setSyncStatus(SyncStatus $syncStatus)
-    {
-    }
-    /**
-     * @return SyncStatus
-     */
-    public function getSyncStatus()
+    class Google_Service_TagManager_CreateContainerVersionResponse extends \Google\Service\TagManager\CreateContainerVersionResponse
     {
     }
 }

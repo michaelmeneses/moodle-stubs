@@ -21,214 +21,223 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExperienceReport;
-
-class PlatformSummary extends \Google\Collection
-{
-    /**
-     * Not reviewed.
-     */
-    public const BETTER_ADS_STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Passing.
-     */
-    public const BETTER_ADS_STATUS_PASSING = 'PASSING';
-    /**
-     * Warning. No longer a possible status.
-     *
-     * @deprecated
-     */
-    public const BETTER_ADS_STATUS_WARNING = 'WARNING';
-    /**
-     * Failing.
-     */
-    public const BETTER_ADS_STATUS_FAILING = 'FAILING';
-    /**
-     * N/A.
-     */
-    public const FILTER_STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Ad filtering is on.
-     */
-    public const FILTER_STATUS_ON = 'ON';
-    /**
-     * Ad filtering is off.
-     */
-    public const FILTER_STATUS_OFF = 'OFF';
-    /**
-     * Ad filtering is paused.
-     */
-    public const FILTER_STATUS_PAUSED = 'PAUSED';
-    /**
-     * Ad filtering is pending.
-     */
-    public const FILTER_STATUS_PENDING = 'PENDING';
-    protected $collection_key = 'region';
-    /**
-     * The site's Ad Experience Report status on this platform.
-     *
-     * @var string
-     */
-    public $betterAdsStatus;
-    /**
-     * The time at which
-     * [enforcement](https://support.google.com/webtools/answer/7308033) against
-     * the site began or will begin on this platform. Not set when the
-     * filter_status is OFF.
-     *
-     * @var string
-     */
-    public $enforcementTime;
-    /**
-     * The site's [enforcement
-     * status](https://support.google.com/webtools/answer/7308033) on this
-     * platform.
-     *
-     * @var string
-     */
-    public $filterStatus;
-    /**
-     * The time at which the site's status last changed on this platform.
-     *
-     * @var string
-     */
-    public $lastChangeTime;
-    /**
-     * The site's regions on this platform. No longer populated, because there is
-     * no longer any semantic difference between sites in different regions.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $region;
-    /**
-     * A link to the full Ad Experience Report for the site on this platform.. Not
-     * set in ViolatingSitesResponse. Note that you must complete the [Search
-     * Console verification
-     * process](https://support.google.com/webmasters/answer/9008080) for the site
-     * before you can access the full report.
-     *
-     * @var string
-     */
-    public $reportUrl;
-    /**
-     * Whether the site is currently under review on this platform.
-     *
-     * @var bool
-     */
-    public $underReview;
-    /**
-     * The site's Ad Experience Report status on this platform.
-     *
-     * Accepted values: UNKNOWN, PASSING, WARNING, FAILING
-     *
-     * @param self::BETTER_ADS_STATUS_* $betterAdsStatus
-     */
-    public function setBetterAdsStatus($betterAdsStatus)
+namespace Google\Service\AdExperienceReport {
+    class PlatformSummary extends \Google\Collection
     {
+        /**
+         * Not reviewed.
+         */
+        public const BETTER_ADS_STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Passing.
+         */
+        public const BETTER_ADS_STATUS_PASSING = 'PASSING';
+        /**
+         * Warning. No longer a possible status.
+         *
+         * @deprecated
+         */
+        public const BETTER_ADS_STATUS_WARNING = 'WARNING';
+        /**
+         * Failing.
+         */
+        public const BETTER_ADS_STATUS_FAILING = 'FAILING';
+        /**
+         * N/A.
+         */
+        public const FILTER_STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Ad filtering is on.
+         */
+        public const FILTER_STATUS_ON = 'ON';
+        /**
+         * Ad filtering is off.
+         */
+        public const FILTER_STATUS_OFF = 'OFF';
+        /**
+         * Ad filtering is paused.
+         */
+        public const FILTER_STATUS_PAUSED = 'PAUSED';
+        /**
+         * Ad filtering is pending.
+         */
+        public const FILTER_STATUS_PENDING = 'PENDING';
+        protected $collection_key = 'region';
+        /**
+         * The site's Ad Experience Report status on this platform.
+         *
+         * @var string
+         */
+        public $betterAdsStatus;
+        /**
+         * The time at which
+         * [enforcement](https://support.google.com/webtools/answer/7308033) against
+         * the site began or will begin on this platform. Not set when the
+         * filter_status is OFF.
+         *
+         * @var string
+         */
+        public $enforcementTime;
+        /**
+         * The site's [enforcement
+         * status](https://support.google.com/webtools/answer/7308033) on this
+         * platform.
+         *
+         * @var string
+         */
+        public $filterStatus;
+        /**
+         * The time at which the site's status last changed on this platform.
+         *
+         * @var string
+         */
+        public $lastChangeTime;
+        /**
+         * The site's regions on this platform. No longer populated, because there is
+         * no longer any semantic difference between sites in different regions.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $region;
+        /**
+         * A link to the full Ad Experience Report for the site on this platform.. Not
+         * set in ViolatingSitesResponse. Note that you must complete the [Search
+         * Console verification
+         * process](https://support.google.com/webmasters/answer/9008080) for the site
+         * before you can access the full report.
+         *
+         * @var string
+         */
+        public $reportUrl;
+        /**
+         * Whether the site is currently under review on this platform.
+         *
+         * @var bool
+         */
+        public $underReview;
+        /**
+         * The site's Ad Experience Report status on this platform.
+         *
+         * Accepted values: UNKNOWN, PASSING, WARNING, FAILING
+         *
+         * @param self::BETTER_ADS_STATUS_* $betterAdsStatus
+         */
+        public function setBetterAdsStatus($betterAdsStatus)
+        {
+        }
+        /**
+         * @return self::BETTER_ADS_STATUS_*
+         */
+        public function getBetterAdsStatus()
+        {
+        }
+        /**
+         * The time at which
+         * [enforcement](https://support.google.com/webtools/answer/7308033) against
+         * the site began or will begin on this platform. Not set when the
+         * filter_status is OFF.
+         *
+         * @param string $enforcementTime
+         */
+        public function setEnforcementTime($enforcementTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnforcementTime()
+        {
+        }
+        /**
+         * The site's [enforcement
+         * status](https://support.google.com/webtools/answer/7308033) on this
+         * platform.
+         *
+         * Accepted values: UNKNOWN, ON, OFF, PAUSED, PENDING
+         *
+         * @param self::FILTER_STATUS_* $filterStatus
+         */
+        public function setFilterStatus($filterStatus)
+        {
+        }
+        /**
+         * @return self::FILTER_STATUS_*
+         */
+        public function getFilterStatus()
+        {
+        }
+        /**
+         * The time at which the site's status last changed on this platform.
+         *
+         * @param string $lastChangeTime
+         */
+        public function setLastChangeTime($lastChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastChangeTime()
+        {
+        }
+        /**
+         * The site's regions on this platform. No longer populated, because there is
+         * no longer any semantic difference between sites in different regions.
+         *
+         * @deprecated
+         * @param string[] $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * A link to the full Ad Experience Report for the site on this platform.. Not
+         * set in ViolatingSitesResponse. Note that you must complete the [Search
+         * Console verification
+         * process](https://support.google.com/webmasters/answer/9008080) for the site
+         * before you can access the full report.
+         *
+         * @param string $reportUrl
+         */
+        public function setReportUrl($reportUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportUrl()
+        {
+        }
+        /**
+         * Whether the site is currently under review on this platform.
+         *
+         * @param bool $underReview
+         */
+        public function setUnderReview($underReview)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnderReview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BETTER_ADS_STATUS_*
+     * Runtime class alias of \Google\Service\AdExperienceReport\PlatformSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBetterAdsStatus()
-    {
-    }
-    /**
-     * The time at which
-     * [enforcement](https://support.google.com/webtools/answer/7308033) against
-     * the site began or will begin on this platform. Not set when the
-     * filter_status is OFF.
-     *
-     * @param string $enforcementTime
-     */
-    public function setEnforcementTime($enforcementTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnforcementTime()
-    {
-    }
-    /**
-     * The site's [enforcement
-     * status](https://support.google.com/webtools/answer/7308033) on this
-     * platform.
-     *
-     * Accepted values: UNKNOWN, ON, OFF, PAUSED, PENDING
-     *
-     * @param self::FILTER_STATUS_* $filterStatus
-     */
-    public function setFilterStatus($filterStatus)
-    {
-    }
-    /**
-     * @return self::FILTER_STATUS_*
-     */
-    public function getFilterStatus()
-    {
-    }
-    /**
-     * The time at which the site's status last changed on this platform.
-     *
-     * @param string $lastChangeTime
-     */
-    public function setLastChangeTime($lastChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastChangeTime()
-    {
-    }
-    /**
-     * The site's regions on this platform. No longer populated, because there is
-     * no longer any semantic difference between sites in different regions.
-     *
-     * @deprecated
-     * @param string[] $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * A link to the full Ad Experience Report for the site on this platform.. Not
-     * set in ViolatingSitesResponse. Note that you must complete the [Search
-     * Console verification
-     * process](https://support.google.com/webmasters/answer/9008080) for the site
-     * before you can access the full report.
-     *
-     * @param string $reportUrl
-     */
-    public function setReportUrl($reportUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportUrl()
-    {
-    }
-    /**
-     * Whether the site is currently under review on this platform.
-     *
-     * @param bool $underReview
-     */
-    public function setUnderReview($underReview)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnderReview()
+    class Google_Service_AdExperienceReport_PlatformSummary extends \Google\Service\AdExperienceReport\PlatformSummary
     {
     }
 }

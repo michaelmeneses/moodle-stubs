@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'citations';
-    protected $citationsType = GoogleCloudDiscoveryengineV1SearchResponseSummaryCitation::class;
-    protected $citationsDataType = 'array';
-    /**
-     * Citations for segments.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryCitation[] $citations
-     */
-    public function setCitations($citations)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'citations';
+        protected $citationsType = GoogleCloudDiscoveryengineV1SearchResponseSummaryCitation::class;
+        protected $citationsDataType = 'array';
+        /**
+         * Citations for segments.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryCitation[] $citations
+         */
+        public function setCitations($citations)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryCitation[]
+         */
+        public function getCitations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryCitation[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitations()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationMetadata
     {
     }
 }

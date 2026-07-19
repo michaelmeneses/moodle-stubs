@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeArray extends \Google\Model
-{
-    protected $elementTypeType = Type::class;
-    protected $elementTypeDataType = '';
-    /**
-     * The type of the elements in the array. This must not be `Array`.
-     *
-     * @param Type $elementType
-     */
-    public function setElementType(Type $elementType)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeArray extends \Google\Model
     {
+        protected $elementTypeType = Type::class;
+        protected $elementTypeDataType = '';
+        /**
+         * The type of the elements in the array. This must not be `Array`.
+         *
+         * @param Type $elementType
+         */
+        public function setElementType(Type $elementType)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getElementType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Type
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElementType()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeArray extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeArray
     {
     }
 }

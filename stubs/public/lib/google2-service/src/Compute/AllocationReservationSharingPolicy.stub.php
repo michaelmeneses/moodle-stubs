@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationReservationSharingPolicy extends \Google\Model
-{
-    /**
-     * Allow all Google Cloud managed services to share reservations.
-     */
-    public const SERVICE_SHARE_TYPE_ALLOW_ALL = 'ALLOW_ALL';
-    /**
-     * [Default] Disallow sharing with all Google Cloud services.
-     */
-    public const SERVICE_SHARE_TYPE_DISALLOW_ALL = 'DISALLOW_ALL';
-    public const SERVICE_SHARE_TYPE_SERVICE_SHARE_TYPE_UNSPECIFIED = 'SERVICE_SHARE_TYPE_UNSPECIFIED';
-    /**
-     * Sharing config for all Google Cloud services.
-     *
-     * @var string
-     */
-    public $serviceShareType;
-    /**
-     * Sharing config for all Google Cloud services.
-     *
-     * Accepted values: ALLOW_ALL, DISALLOW_ALL, SERVICE_SHARE_TYPE_UNSPECIFIED
-     *
-     * @param self::SERVICE_SHARE_TYPE_* $serviceShareType
-     */
-    public function setServiceShareType($serviceShareType)
+namespace Google\Service\Compute {
+    class AllocationReservationSharingPolicy extends \Google\Model
     {
+        /**
+         * Allow all Google Cloud managed services to share reservations.
+         */
+        public const SERVICE_SHARE_TYPE_ALLOW_ALL = 'ALLOW_ALL';
+        /**
+         * [Default] Disallow sharing with all Google Cloud services.
+         */
+        public const SERVICE_SHARE_TYPE_DISALLOW_ALL = 'DISALLOW_ALL';
+        public const SERVICE_SHARE_TYPE_SERVICE_SHARE_TYPE_UNSPECIFIED = 'SERVICE_SHARE_TYPE_UNSPECIFIED';
+        /**
+         * Sharing config for all Google Cloud services.
+         *
+         * @var string
+         */
+        public $serviceShareType;
+        /**
+         * Sharing config for all Google Cloud services.
+         *
+         * Accepted values: ALLOW_ALL, DISALLOW_ALL, SERVICE_SHARE_TYPE_UNSPECIFIED
+         *
+         * @param self::SERVICE_SHARE_TYPE_* $serviceShareType
+         */
+        public function setServiceShareType($serviceShareType)
+        {
+        }
+        /**
+         * @return self::SERVICE_SHARE_TYPE_*
+         */
+        public function getServiceShareType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SERVICE_SHARE_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\AllocationReservationSharingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceShareType()
+    class Google_Service_Compute_AllocationReservationSharingPolicy extends \Google\Service\Compute\AllocationReservationSharingPolicy
     {
     }
 }

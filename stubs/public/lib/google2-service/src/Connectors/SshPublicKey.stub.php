@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class SshPublicKey extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $certType;
-    protected $passwordType = Secret::class;
-    protected $passwordDataType = '';
-    protected $sshClientCertType = Secret::class;
-    protected $sshClientCertDataType = '';
-    protected $sshClientCertPassType = Secret::class;
-    protected $sshClientCertPassDataType = '';
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @param string
-     */
-    public function setCertType($certType)
+namespace Google\Service\Connectors {
+    class SshPublicKey extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $certType;
+        protected $passwordType = Secret::class;
+        protected $passwordDataType = '';
+        protected $sshClientCertType = Secret::class;
+        protected $sshClientCertDataType = '';
+        protected $sshClientCertPassType = Secret::class;
+        protected $sshClientCertPassDataType = '';
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @param string
+         */
+        public function setCertType($certType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertType()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setPassword(Secret $password)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setSshClientCert(Secret $sshClientCert)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getSshClientCert()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setSshClientCertPass(Secret $sshClientCertPass)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getSshClientCertPass()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\SshPublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertType()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setPassword(Secret $password)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setSshClientCert(Secret $sshClientCert)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getSshClientCert()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setSshClientCertPass(Secret $sshClientCertPass)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getSshClientCertPass()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Connectors_SshPublicKey extends \Google\Service\Connectors\SshPublicKey
     {
     }
 }

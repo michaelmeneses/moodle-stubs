@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class ApiDimensionFilterGroup extends \Google\Collection
-{
-    public const GROUP_TYPE_AND = 'AND';
-    protected $collection_key = 'filters';
-    protected $filtersType = ApiDimensionFilter::class;
-    protected $filtersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $groupType;
-    /**
-     * @param ApiDimensionFilter[] $filters
-     */
-    public function setFilters($filters)
+namespace Google\Service\SearchConsole {
+    class ApiDimensionFilterGroup extends \Google\Collection
     {
+        public const GROUP_TYPE_AND = 'AND';
+        protected $collection_key = 'filters';
+        protected $filtersType = ApiDimensionFilter::class;
+        protected $filtersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $groupType;
+        /**
+         * @param ApiDimensionFilter[] $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return ApiDimensionFilter[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * @param self::GROUP_TYPE_* $groupType
+         */
+        public function setGroupType($groupType)
+        {
+        }
+        /**
+         * @return self::GROUP_TYPE_*
+         */
+        public function getGroupType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiDimensionFilter[]
+     * Runtime class alias of \Google\Service\SearchConsole\ApiDimensionFilterGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * @param self::GROUP_TYPE_* $groupType
-     */
-    public function setGroupType($groupType)
-    {
-    }
-    /**
-     * @return self::GROUP_TYPE_*
-     */
-    public function getGroupType()
+    class Google_Service_SearchConsole_ApiDimensionFilterGroup extends \Google\Service\SearchConsole\ApiDimensionFilterGroup
     {
     }
 }

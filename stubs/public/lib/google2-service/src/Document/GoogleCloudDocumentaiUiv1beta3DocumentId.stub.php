@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DocumentId extends \Google\Model
-{
-    protected $gcsManagedDocIdType = GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId::class;
-    protected $gcsManagedDocIdDataType = '';
-    protected $revisionRefType = GoogleCloudDocumentaiUiv1beta3RevisionRef::class;
-    protected $revisionRefDataType = '';
-    protected $unmanagedDocIdType = GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId::class;
-    protected $unmanagedDocIdDataType = '';
-    /**
-     * A document id within user-managed Cloud Storage.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId $gcsManagedDocId
-     */
-    public function setGcsManagedDocId(GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId $gcsManagedDocId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DocumentId extends \Google\Model
     {
+        protected $gcsManagedDocIdType = GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId::class;
+        protected $gcsManagedDocIdDataType = '';
+        protected $revisionRefType = GoogleCloudDocumentaiUiv1beta3RevisionRef::class;
+        protected $revisionRefDataType = '';
+        protected $unmanagedDocIdType = GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId::class;
+        protected $unmanagedDocIdDataType = '';
+        /**
+         * A document id within user-managed Cloud Storage.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId $gcsManagedDocId
+         */
+        public function setGcsManagedDocId(GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId $gcsManagedDocId)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId
+         */
+        public function getGcsManagedDocId()
+        {
+        }
+        /**
+         * Points to a specific revision of the document if set.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3RevisionRef $revisionRef
+         */
+        public function setRevisionRef(GoogleCloudDocumentaiUiv1beta3RevisionRef $revisionRef)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3RevisionRef
+         */
+        public function getRevisionRef()
+        {
+        }
+        /**
+         * A document id within unmanaged dataset.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId $unmanagedDocId
+         */
+        public function setUnmanagedDocId(GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId $unmanagedDocId)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId
+         */
+        public function getUnmanagedDocId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3DocumentIdGCSManagedDocumentId
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsManagedDocId()
-    {
-    }
-    /**
-     * Points to a specific revision of the document if set.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3RevisionRef $revisionRef
-     */
-    public function setRevisionRef(GoogleCloudDocumentaiUiv1beta3RevisionRef $revisionRef)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3RevisionRef
-     */
-    public function getRevisionRef()
-    {
-    }
-    /**
-     * A document id within unmanaged dataset.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId $unmanagedDocId
-     */
-    public function setUnmanagedDocId(GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId $unmanagedDocId)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3DocumentIdUnmanagedDocumentId
-     */
-    public function getUnmanagedDocId()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DocumentId extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentId
     {
     }
 }

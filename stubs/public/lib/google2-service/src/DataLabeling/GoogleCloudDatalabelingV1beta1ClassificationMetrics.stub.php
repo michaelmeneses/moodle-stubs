@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ClassificationMetrics extends \Google\Model
-{
-    protected $confusionMatrixType = GoogleCloudDatalabelingV1beta1ConfusionMatrix::class;
-    protected $confusionMatrixDataType = '';
-    protected $prCurveType = GoogleCloudDatalabelingV1beta1PrCurve::class;
-    protected $prCurveDataType = '';
-    /**
-     * Confusion matrix of predicted labels vs. ground truth labels.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ConfusionMatrix $confusionMatrix
-     */
-    public function setConfusionMatrix(GoogleCloudDatalabelingV1beta1ConfusionMatrix $confusionMatrix)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ClassificationMetrics extends \Google\Model
     {
+        protected $confusionMatrixType = GoogleCloudDatalabelingV1beta1ConfusionMatrix::class;
+        protected $confusionMatrixDataType = '';
+        protected $prCurveType = GoogleCloudDatalabelingV1beta1PrCurve::class;
+        protected $prCurveDataType = '';
+        /**
+         * Confusion matrix of predicted labels vs. ground truth labels.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ConfusionMatrix $confusionMatrix
+         */
+        public function setConfusionMatrix(GoogleCloudDatalabelingV1beta1ConfusionMatrix $confusionMatrix)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ConfusionMatrix
+         */
+        public function getConfusionMatrix()
+        {
+        }
+        /**
+         * Precision-recall curve based on ground truth labels, predicted labels, and
+         * scores for the predicted labels.
+         *
+         * @param GoogleCloudDatalabelingV1beta1PrCurve $prCurve
+         */
+        public function setPrCurve(GoogleCloudDatalabelingV1beta1PrCurve $prCurve)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1PrCurve
+         */
+        public function getPrCurve()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1ConfusionMatrix
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ClassificationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfusionMatrix()
-    {
-    }
-    /**
-     * Precision-recall curve based on ground truth labels, predicted labels, and
-     * scores for the predicted labels.
-     *
-     * @param GoogleCloudDatalabelingV1beta1PrCurve $prCurve
-     */
-    public function setPrCurve(GoogleCloudDatalabelingV1beta1PrCurve $prCurve)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1PrCurve
-     */
-    public function getPrCurve()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ClassificationMetrics extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ClassificationMetrics
     {
     }
 }

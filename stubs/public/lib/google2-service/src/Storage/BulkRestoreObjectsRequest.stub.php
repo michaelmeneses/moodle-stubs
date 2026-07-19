@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BulkRestoreObjectsRequest extends \Google\Collection
-{
-    protected $collection_key = 'matchGlobs';
-    /**
-     * If false (default), the restore will not overwrite live objects with the
-     * same name at the destination. This means some deleted objects may be
-     * skipped. If true, live objects will be overwritten resulting in a
-     * noncurrent object (if versioning is enabled). If versioning is not enabled,
-     * overwriting the object will result in a soft-deleted object. In either
-     * case, if a noncurrent object already exists with the same name, a live
-     * version can be written without issue.
-     *
-     * @var bool
-     */
-    public $allowOverwrite;
-    /**
-     * If true, copies the source object's ACL; otherwise, uses the bucket's
-     * default object ACL. The default is false.
-     *
-     * @var bool
-     */
-    public $copySourceAcl;
-    /**
-     * Restores only the objects that were created after this time.
-     *
-     * @var string
-     */
-    public $createdAfterTime;
-    /**
-     * Restores only the objects that were created before this time.
-     *
-     * @var string
-     */
-    public $createdBeforeTime;
-    /**
-     * Restores only the objects matching any of the specified glob(s). If this
-     * parameter is not specified, all objects will be restored within the
-     * specified time range.
-     *
-     * @var string[]
-     */
-    public $matchGlobs;
-    /**
-     * Restores only the objects that were soft-deleted after this time.
-     *
-     * @var string
-     */
-    public $softDeletedAfterTime;
-    /**
-     * Restores only the objects that were soft-deleted before this time.
-     *
-     * @var string
-     */
-    public $softDeletedBeforeTime;
-    /**
-     * If false (default), the restore will not overwrite live objects with the
-     * same name at the destination. This means some deleted objects may be
-     * skipped. If true, live objects will be overwritten resulting in a
-     * noncurrent object (if versioning is enabled). If versioning is not enabled,
-     * overwriting the object will result in a soft-deleted object. In either
-     * case, if a noncurrent object already exists with the same name, a live
-     * version can be written without issue.
-     *
-     * @param bool $allowOverwrite
-     */
-    public function setAllowOverwrite($allowOverwrite)
+namespace Google\Service\Storage {
+    class BulkRestoreObjectsRequest extends \Google\Collection
     {
+        protected $collection_key = 'matchGlobs';
+        /**
+         * If false (default), the restore will not overwrite live objects with the
+         * same name at the destination. This means some deleted objects may be
+         * skipped. If true, live objects will be overwritten resulting in a
+         * noncurrent object (if versioning is enabled). If versioning is not enabled,
+         * overwriting the object will result in a soft-deleted object. In either
+         * case, if a noncurrent object already exists with the same name, a live
+         * version can be written without issue.
+         *
+         * @var bool
+         */
+        public $allowOverwrite;
+        /**
+         * If true, copies the source object's ACL; otherwise, uses the bucket's
+         * default object ACL. The default is false.
+         *
+         * @var bool
+         */
+        public $copySourceAcl;
+        /**
+         * Restores only the objects that were created after this time.
+         *
+         * @var string
+         */
+        public $createdAfterTime;
+        /**
+         * Restores only the objects that were created before this time.
+         *
+         * @var string
+         */
+        public $createdBeforeTime;
+        /**
+         * Restores only the objects matching any of the specified glob(s). If this
+         * parameter is not specified, all objects will be restored within the
+         * specified time range.
+         *
+         * @var string[]
+         */
+        public $matchGlobs;
+        /**
+         * Restores only the objects that were soft-deleted after this time.
+         *
+         * @var string
+         */
+        public $softDeletedAfterTime;
+        /**
+         * Restores only the objects that were soft-deleted before this time.
+         *
+         * @var string
+         */
+        public $softDeletedBeforeTime;
+        /**
+         * If false (default), the restore will not overwrite live objects with the
+         * same name at the destination. This means some deleted objects may be
+         * skipped. If true, live objects will be overwritten resulting in a
+         * noncurrent object (if versioning is enabled). If versioning is not enabled,
+         * overwriting the object will result in a soft-deleted object. In either
+         * case, if a noncurrent object already exists with the same name, a live
+         * version can be written without issue.
+         *
+         * @param bool $allowOverwrite
+         */
+        public function setAllowOverwrite($allowOverwrite)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowOverwrite()
+        {
+        }
+        /**
+         * If true, copies the source object's ACL; otherwise, uses the bucket's
+         * default object ACL. The default is false.
+         *
+         * @param bool $copySourceAcl
+         */
+        public function setCopySourceAcl($copySourceAcl)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCopySourceAcl()
+        {
+        }
+        /**
+         * Restores only the objects that were created after this time.
+         *
+         * @param string $createdAfterTime
+         */
+        public function setCreatedAfterTime($createdAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAfterTime()
+        {
+        }
+        /**
+         * Restores only the objects that were created before this time.
+         *
+         * @param string $createdBeforeTime
+         */
+        public function setCreatedBeforeTime($createdBeforeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedBeforeTime()
+        {
+        }
+        /**
+         * Restores only the objects matching any of the specified glob(s). If this
+         * parameter is not specified, all objects will be restored within the
+         * specified time range.
+         *
+         * @param string[] $matchGlobs
+         */
+        public function setMatchGlobs($matchGlobs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMatchGlobs()
+        {
+        }
+        /**
+         * Restores only the objects that were soft-deleted after this time.
+         *
+         * @param string $softDeletedAfterTime
+         */
+        public function setSoftDeletedAfterTime($softDeletedAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSoftDeletedAfterTime()
+        {
+        }
+        /**
+         * Restores only the objects that were soft-deleted before this time.
+         *
+         * @param string $softDeletedBeforeTime
+         */
+        public function setSoftDeletedBeforeTime($softDeletedBeforeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSoftDeletedBeforeTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\BulkRestoreObjectsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowOverwrite()
-    {
-    }
-    /**
-     * If true, copies the source object's ACL; otherwise, uses the bucket's
-     * default object ACL. The default is false.
-     *
-     * @param bool $copySourceAcl
-     */
-    public function setCopySourceAcl($copySourceAcl)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCopySourceAcl()
-    {
-    }
-    /**
-     * Restores only the objects that were created after this time.
-     *
-     * @param string $createdAfterTime
-     */
-    public function setCreatedAfterTime($createdAfterTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAfterTime()
-    {
-    }
-    /**
-     * Restores only the objects that were created before this time.
-     *
-     * @param string $createdBeforeTime
-     */
-    public function setCreatedBeforeTime($createdBeforeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedBeforeTime()
-    {
-    }
-    /**
-     * Restores only the objects matching any of the specified glob(s). If this
-     * parameter is not specified, all objects will be restored within the
-     * specified time range.
-     *
-     * @param string[] $matchGlobs
-     */
-    public function setMatchGlobs($matchGlobs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMatchGlobs()
-    {
-    }
-    /**
-     * Restores only the objects that were soft-deleted after this time.
-     *
-     * @param string $softDeletedAfterTime
-     */
-    public function setSoftDeletedAfterTime($softDeletedAfterTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSoftDeletedAfterTime()
-    {
-    }
-    /**
-     * Restores only the objects that were soft-deleted before this time.
-     *
-     * @param string $softDeletedBeforeTime
-     */
-    public function setSoftDeletedBeforeTime($softDeletedBeforeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSoftDeletedBeforeTime()
+    class Google_Service_Storage_BulkRestoreObjectsRequest extends \Google\Service\Storage\BulkRestoreObjectsRequest
     {
     }
 }

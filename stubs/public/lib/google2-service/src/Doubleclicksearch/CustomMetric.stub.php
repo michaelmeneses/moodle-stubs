@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class CustomMetric extends \Google\Model
-{
-    /**
-     * Custom metric name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Custom metric numeric value.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Custom metric name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Doubleclicksearch {
+    class CustomMetric extends \Google\Model
     {
+        /**
+         * Custom metric name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Custom metric numeric value.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Custom metric name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\CustomMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Doubleclicksearch_CustomMetric extends \Google\Service\Doubleclicksearch\CustomMetric
     {
     }
 }

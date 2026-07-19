@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $atAnyPointInTime;
-    protected $betweenFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter::class;
-    protected $betweenFilterDataType = '';
-    /**
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * @var int
-     */
-    public $inAnyNDayPeriod;
-    protected $inListFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter::class;
-    protected $inListFilterDataType = '';
-    protected $numericFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter::class;
-    protected $numericFilterDataType = '';
-    protected $stringFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter::class;
-    protected $stringFilterDataType = '';
-    /**
-     * @param bool
-     */
-    public function setAtAnyPointInTime($atAnyPointInTime)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $atAnyPointInTime;
+        protected $betweenFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter::class;
+        protected $betweenFilterDataType = '';
+        /**
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * @var int
+         */
+        public $inAnyNDayPeriod;
+        protected $inListFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter::class;
+        protected $inListFilterDataType = '';
+        protected $numericFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter::class;
+        protected $numericFilterDataType = '';
+        protected $stringFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter::class;
+        protected $stringFilterDataType = '';
+        /**
+         * @param bool
+         */
+        public function setAtAnyPointInTime($atAnyPointInTime)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAtAnyPointInTime()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter
+         */
+        public function setBetweenFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter $betweenFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter
+         */
+        public function getBetweenFilter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setInAnyNDayPeriod($inAnyNDayPeriod)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInAnyNDayPeriod()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter
+         */
+        public function setInListFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter $inListFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter
+         */
+        public function getInListFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter
+         */
+        public function setNumericFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter $numericFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter
+         */
+        public function getNumericFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter
+         */
+        public function setStringFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter $stringFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter
+         */
+        public function getStringFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAtAnyPointInTime()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter
-     */
-    public function setBetweenFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter $betweenFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter
-     */
-    public function getBetweenFilter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setInAnyNDayPeriod($inAnyNDayPeriod)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInAnyNDayPeriod()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter
-     */
-    public function setInListFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter $inListFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterInListFilter
-     */
-    public function getInListFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter
-     */
-    public function setNumericFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter $numericFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter
-     */
-    public function getNumericFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter
-     */
-    public function setStringFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter $stringFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter
-     */
-    public function getStringFilter()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter
     {
     }
 }

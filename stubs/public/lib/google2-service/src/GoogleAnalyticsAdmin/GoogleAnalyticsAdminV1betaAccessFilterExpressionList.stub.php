@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessFilterExpressionList extends \Google\Collection
-{
-    protected $collection_key = 'expressions';
-    protected $expressionsType = GoogleAnalyticsAdminV1betaAccessFilterExpression::class;
-    protected $expressionsDataType = 'array';
-    /**
-     * A list of filter expressions.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessFilterExpression[] $expressions
-     */
-    public function setExpressions($expressions)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessFilterExpressionList extends \Google\Collection
     {
+        protected $collection_key = 'expressions';
+        protected $expressionsType = GoogleAnalyticsAdminV1betaAccessFilterExpression::class;
+        protected $expressionsDataType = 'array';
+        /**
+         * A list of filter expressions.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessFilterExpression[] $expressions
+         */
+        public function setExpressions($expressions)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessFilterExpression[]
+         */
+        public function getExpressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccessFilterExpression[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessFilterExpressionList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpressions()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessFilterExpressionList extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessFilterExpressionList
     {
     }
 }

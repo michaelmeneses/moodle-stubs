@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AlgorithmRulesSignalComparison extends \Google\Model
-{
-    /**
-     * Unknown operator.
-     */
-    public const COMPARISON_OPERATOR_COMPARISON_OPERATOR_UNSPECIFIED = 'COMPARISON_OPERATOR_UNSPECIFIED';
-    /**
-     * Values are equal.
-     */
-    public const COMPARISON_OPERATOR_EQUAL = 'EQUAL';
-    /**
-     * Signal value is greater than the comparison value.
-     */
-    public const COMPARISON_OPERATOR_GREATER_THAN = 'GREATER_THAN';
-    /**
-     * Signal value is less than the second.
-     */
-    public const COMPARISON_OPERATOR_LESS_THAN = 'LESS_THAN';
-    /**
-     * Signal value is greater than or equal to the second.
-     */
-    public const COMPARISON_OPERATOR_GREATER_THAN_OR_EQUAL_TO = 'GREATER_THAN_OR_EQUAL_TO';
-    /**
-     * Signal value is less than or equal to the comparison value.
-     */
-    public const COMPARISON_OPERATOR_LESS_THAN_OR_EQUAL_TO = 'LESS_THAN_OR_EQUAL_TO';
-    /**
-     * Signal value is a list and contains the comparison value.
-     */
-    public const COMPARISON_OPERATOR_LIST_CONTAINS = 'LIST_CONTAINS';
-    /**
-     * Operator used to compare the two values. In the resulting experession, the
-     * `signal` will be the first value and the `comparisonValue will be the
-     * second.
-     *
-     * @var string
-     */
-    public $comparisonOperator;
-    protected $comparisonValueType = AlgorithmRulesComparisonValue::class;
-    protected $comparisonValueDataType = '';
-    protected $signalType = AlgorithmRulesSignal::class;
-    protected $signalDataType = '';
-    /**
-     * Operator used to compare the two values. In the resulting experession, the
-     * `signal` will be the first value and the `comparisonValue will be the
-     * second.
-     *
-     * Accepted values: COMPARISON_OPERATOR_UNSPECIFIED, EQUAL, GREATER_THAN,
-     * LESS_THAN, GREATER_THAN_OR_EQUAL_TO, LESS_THAN_OR_EQUAL_TO, LIST_CONTAINS
-     *
-     * @param self::COMPARISON_OPERATOR_* $comparisonOperator
-     */
-    public function setComparisonOperator($comparisonOperator)
+namespace Google\Service\DisplayVideo {
+    class AlgorithmRulesSignalComparison extends \Google\Model
     {
+        /**
+         * Unknown operator.
+         */
+        public const COMPARISON_OPERATOR_COMPARISON_OPERATOR_UNSPECIFIED = 'COMPARISON_OPERATOR_UNSPECIFIED';
+        /**
+         * Values are equal.
+         */
+        public const COMPARISON_OPERATOR_EQUAL = 'EQUAL';
+        /**
+         * Signal value is greater than the comparison value.
+         */
+        public const COMPARISON_OPERATOR_GREATER_THAN = 'GREATER_THAN';
+        /**
+         * Signal value is less than the second.
+         */
+        public const COMPARISON_OPERATOR_LESS_THAN = 'LESS_THAN';
+        /**
+         * Signal value is greater than or equal to the second.
+         */
+        public const COMPARISON_OPERATOR_GREATER_THAN_OR_EQUAL_TO = 'GREATER_THAN_OR_EQUAL_TO';
+        /**
+         * Signal value is less than or equal to the comparison value.
+         */
+        public const COMPARISON_OPERATOR_LESS_THAN_OR_EQUAL_TO = 'LESS_THAN_OR_EQUAL_TO';
+        /**
+         * Signal value is a list and contains the comparison value.
+         */
+        public const COMPARISON_OPERATOR_LIST_CONTAINS = 'LIST_CONTAINS';
+        /**
+         * Operator used to compare the two values. In the resulting experession, the
+         * `signal` will be the first value and the `comparisonValue will be the
+         * second.
+         *
+         * @var string
+         */
+        public $comparisonOperator;
+        protected $comparisonValueType = AlgorithmRulesComparisonValue::class;
+        protected $comparisonValueDataType = '';
+        protected $signalType = AlgorithmRulesSignal::class;
+        protected $signalDataType = '';
+        /**
+         * Operator used to compare the two values. In the resulting experession, the
+         * `signal` will be the first value and the `comparisonValue will be the
+         * second.
+         *
+         * Accepted values: COMPARISON_OPERATOR_UNSPECIFIED, EQUAL, GREATER_THAN,
+         * LESS_THAN, GREATER_THAN_OR_EQUAL_TO, LESS_THAN_OR_EQUAL_TO, LIST_CONTAINS
+         *
+         * @param self::COMPARISON_OPERATOR_* $comparisonOperator
+         */
+        public function setComparisonOperator($comparisonOperator)
+        {
+        }
+        /**
+         * @return self::COMPARISON_OPERATOR_*
+         */
+        public function getComparisonOperator()
+        {
+        }
+        /**
+         * Value to compare signal to.
+         *
+         * @param AlgorithmRulesComparisonValue $comparisonValue
+         */
+        public function setComparisonValue(AlgorithmRulesComparisonValue $comparisonValue)
+        {
+        }
+        /**
+         * @return AlgorithmRulesComparisonValue
+         */
+        public function getComparisonValue()
+        {
+        }
+        /**
+         * Signal to compare.
+         *
+         * @param AlgorithmRulesSignal $signal
+         */
+        public function setSignal(AlgorithmRulesSignal $signal)
+        {
+        }
+        /**
+         * @return AlgorithmRulesSignal
+         */
+        public function getSignal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPARISON_OPERATOR_*
+     * Runtime class alias of \Google\Service\DisplayVideo\AlgorithmRulesSignalComparison registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisonOperator()
-    {
-    }
-    /**
-     * Value to compare signal to.
-     *
-     * @param AlgorithmRulesComparisonValue $comparisonValue
-     */
-    public function setComparisonValue(AlgorithmRulesComparisonValue $comparisonValue)
-    {
-    }
-    /**
-     * @return AlgorithmRulesComparisonValue
-     */
-    public function getComparisonValue()
-    {
-    }
-    /**
-     * Signal to compare.
-     *
-     * @param AlgorithmRulesSignal $signal
-     */
-    public function setSignal(AlgorithmRulesSignal $signal)
-    {
-    }
-    /**
-     * @return AlgorithmRulesSignal
-     */
-    public function getSignal()
+    class Google_Service_DisplayVideo_AlgorithmRulesSignalComparison extends \Google\Service\DisplayVideo\AlgorithmRulesSignalComparison
     {
     }
 }

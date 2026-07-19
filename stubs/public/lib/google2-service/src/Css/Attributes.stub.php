@@ -21,1016 +21,1025 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class Attributes extends \Google\Collection
-{
-    protected $collection_key = 'sizeTypes';
-    /**
-     * Additional URL of images of the item.
-     *
-     * @var string[]
-     */
-    public $additionalImageLinks;
-    /**
-     * Set to true if the item is targeted towards adults.
-     *
-     * @var bool
-     */
-    public $adult;
-    /**
-     * Target age group of the item.
-     *
-     * @var string
-     */
-    public $ageGroup;
-    /**
-     * Product Related Attributes.[14-36] Brand of the item.
-     *
-     * @var string
-     */
-    public $brand;
-    protected $certificationsType = Certification::class;
-    protected $certificationsDataType = 'array';
-    /**
-     * Color of the item.
-     *
-     * @var string
-     */
-    public $color;
-    /**
-     * Allows advertisers to override the item URL when the product is shown
-     * within the context of Product Ads.
-     *
-     * @var string
-     */
-    public $cppAdsRedirect;
-    /**
-     * URL directly linking to your the Product Detail Page of the CSS.
-     *
-     * @var string
-     */
-    public $cppLink;
-    /**
-     * URL for the mobile-optimized version of the Product Detail Page of the CSS.
-     *
-     * @var string
-     */
-    public $cppMobileLink;
-    /**
-     * Custom label 0 for custom grouping of items in a Shopping campaign.
-     *
-     * @var string
-     */
-    public $customLabel0;
-    /**
-     * Custom label 1 for custom grouping of items in a Shopping campaign.
-     *
-     * @var string
-     */
-    public $customLabel1;
-    /**
-     * Custom label 2 for custom grouping of items in a Shopping campaign.
-     *
-     * @var string
-     */
-    public $customLabel2;
-    /**
-     * Custom label 3 for custom grouping of items in a Shopping campaign.
-     *
-     * @var string
-     */
-    public $customLabel3;
-    /**
-     * Custom label 4 for custom grouping of items in a Shopping campaign.
-     *
-     * @var string
-     */
-    public $customLabel4;
-    /**
-     * Description of the item.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The list of destinations to exclude for this target (corresponds to
-     * unchecked check boxes in Merchant Center).
-     *
-     * @var string[]
-     */
-    public $excludedDestinations;
-    /**
-     * Date on which the item should expire, as specified upon insertion, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format. The actual expiration
-     * date is exposed in `productstatuses` as
-     * [googleExpirationDate](https://support.google.com/merchants/answer/6324499)
-     * and might be earlier if `expirationDate` is too far in the future. Note: It
-     * may take 2+ days from the expiration date for the item to actually get
-     * deleted.
-     *
-     * @var string
-     */
-    public $expirationDate;
-    /**
-     * Target gender of the item.
-     *
-     * @var string
-     */
-    public $gender;
-    /**
-     * Google's category of the item (see [Google product
-     * taxonomy](https://support.google.com/merchants/answer/1705911)). When
-     * querying products, this field will contain the user provided value. There
-     * is currently no way to get back the auto assigned google product categories
-     * through the API.
-     *
-     * @var string
-     */
-    public $googleProductCategory;
-    /**
-     * Global Trade Item Number
-     * ([GTIN](https://support.google.com/merchants/answer/188494#gtin)) of the
-     * item.
-     *
-     * @var string
-     */
-    public $gtin;
-    /**
-     * Condition of the headline offer.
-     *
-     * @var string
-     */
-    public $headlineOfferCondition;
-    protected $headlineOfferInstallmentType = HeadlineOfferInstallment::class;
-    protected $headlineOfferInstallmentDataType = '';
-    /**
-     * Link to the headline offer.
-     *
-     * @var string
-     */
-    public $headlineOfferLink;
-    /**
-     * Mobile Link to the headline offer.
-     *
-     * @var string
-     */
-    public $headlineOfferMobileLink;
-    protected $headlineOfferPriceType = Price::class;
-    protected $headlineOfferPriceDataType = '';
-    protected $headlineOfferShippingPriceType = Price::class;
-    protected $headlineOfferShippingPriceDataType = '';
-    protected $headlineOfferSubscriptionCostType = HeadlineOfferSubscriptionCost::class;
-    protected $headlineOfferSubscriptionCostDataType = '';
-    protected $highPriceType = Price::class;
-    protected $highPriceDataType = '';
-    /**
-     * URL of an image of the item.
-     *
-     * @var string
-     */
-    public $imageLink;
-    /**
-     * The list of destinations to include for this target (corresponds to checked
-     * check boxes in Merchant Center). Default destinations are always included
-     * unless provided in `excludedDestinations`.
-     *
-     * @var string[]
-     */
-    public $includedDestinations;
-    /**
-     * Whether the item is a merchant-defined bundle. A bundle is a custom
-     * grouping of different products sold by a merchant for a single price.
-     *
-     * @var bool
-     */
-    public $isBundle;
-    /**
-     * Shared identifier for all variants of the same product.
-     *
-     * @var string
-     */
-    public $itemGroupId;
-    protected $lowPriceType = Price::class;
-    protected $lowPriceDataType = '';
-    /**
-     * The material of which the item is made.
-     *
-     * @var string
-     */
-    public $material;
-    /**
-     * Manufacturer Part Number
-     * ([MPN](https://support.google.com/merchants/answer/188494#mpn)) of the
-     * item.
-     *
-     * @var string
-     */
-    public $mpn;
-    /**
-     * The number of identical products in a merchant-defined multipack.
-     *
-     * @var string
-     */
-    public $multipack;
-    /**
-     * The number of CSS Products.
-     *
-     * @var string
-     */
-    public $numberOfOffers;
-    /**
-     * The item's pattern (e.g. polka dots).
-     *
-     * @var string
-     */
-    public $pattern;
-    /**
-     * Publication of this item will be temporarily paused.
-     *
-     * @var string
-     */
-    public $pause;
-    protected $productDetailsType = ProductDetail::class;
-    protected $productDetailsDataType = 'array';
-    protected $productHeightType = ProductDimension::class;
-    protected $productHeightDataType = '';
-    /**
-     * Bullet points describing the most relevant highlights of a product.
-     *
-     * @var string[]
-     */
-    public $productHighlights;
-    protected $productLengthType = ProductDimension::class;
-    protected $productLengthDataType = '';
-    /**
-     * Categories of the item (formatted as in [products data
-     * specification](https://support.google.com/merchants/answer/6324406)).
-     *
-     * @var string[]
-     */
-    public $productTypes;
-    protected $productWeightType = ProductWeight::class;
-    protected $productWeightDataType = '';
-    protected $productWidthType = ProductDimension::class;
-    protected $productWidthDataType = '';
-    /**
-     * Size of the item. Only one value is allowed. For variants with different
-     * sizes, insert a separate product for each size with the same `itemGroupId`
-     * value (see [https://support.google.com/merchants/answer/6324492](size
-     * definition)).
-     *
-     * @var string
-     */
-    public $size;
-    /**
-     * System in which the size is specified. Recommended for apparel items.
-     *
-     * @var string
-     */
-    public $sizeSystem;
-    /**
-     * The cut of the item. It can be used to represent combined size types for
-     * apparel items. Maximum two of size types can be provided (see
-     * [https://support.google.com/merchants/answer/6324497](size type)).
-     *
-     * @var string[]
-     */
-    public $sizeTypes;
-    /**
-     * Title of the item.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Additional URL of images of the item.
-     *
-     * @param string[] $additionalImageLinks
-     */
-    public function setAdditionalImageLinks($additionalImageLinks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAdditionalImageLinks()
-    {
-    }
-    /**
-     * Set to true if the item is targeted towards adults.
-     *
-     * @param bool $adult
-     */
-    public function setAdult($adult)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAdult()
-    {
-    }
-    /**
-     * Target age group of the item.
-     *
-     * @param string $ageGroup
-     */
-    public function setAgeGroup($ageGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgeGroup()
-    {
-    }
-    /**
-     * Product Related Attributes.[14-36] Brand of the item.
-     *
-     * @param string $brand
-     */
-    public function setBrand($brand)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBrand()
-    {
-    }
-    /**
-     * A list of certificates claimed by the CSS for the given product.
-     *
-     * @param Certification[] $certifications
-     */
-    public function setCertifications($certifications)
-    {
-    }
-    /**
-     * @return Certification[]
-     */
-    public function getCertifications()
-    {
-    }
-    /**
-     * Color of the item.
-     *
-     * @param string $color
-     */
-    public function setColor($color)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * Allows advertisers to override the item URL when the product is shown
-     * within the context of Product Ads.
-     *
-     * @param string $cppAdsRedirect
-     */
-    public function setCppAdsRedirect($cppAdsRedirect)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCppAdsRedirect()
-    {
-    }
-    /**
-     * URL directly linking to your the Product Detail Page of the CSS.
-     *
-     * @param string $cppLink
-     */
-    public function setCppLink($cppLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCppLink()
-    {
-    }
-    /**
-     * URL for the mobile-optimized version of the Product Detail Page of the CSS.
-     *
-     * @param string $cppMobileLink
-     */
-    public function setCppMobileLink($cppMobileLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCppMobileLink()
-    {
-    }
-    /**
-     * Custom label 0 for custom grouping of items in a Shopping campaign.
-     *
-     * @param string $customLabel0
-     */
-    public function setCustomLabel0($customLabel0)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel0()
-    {
-    }
-    /**
-     * Custom label 1 for custom grouping of items in a Shopping campaign.
-     *
-     * @param string $customLabel1
-     */
-    public function setCustomLabel1($customLabel1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel1()
-    {
-    }
-    /**
-     * Custom label 2 for custom grouping of items in a Shopping campaign.
-     *
-     * @param string $customLabel2
-     */
-    public function setCustomLabel2($customLabel2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel2()
-    {
-    }
-    /**
-     * Custom label 3 for custom grouping of items in a Shopping campaign.
-     *
-     * @param string $customLabel3
-     */
-    public function setCustomLabel3($customLabel3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel3()
-    {
-    }
-    /**
-     * Custom label 4 for custom grouping of items in a Shopping campaign.
-     *
-     * @param string $customLabel4
-     */
-    public function setCustomLabel4($customLabel4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel4()
-    {
-    }
-    /**
-     * Description of the item.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The list of destinations to exclude for this target (corresponds to
-     * unchecked check boxes in Merchant Center).
-     *
-     * @param string[] $excludedDestinations
-     */
-    public function setExcludedDestinations($excludedDestinations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedDestinations()
-    {
-    }
-    /**
-     * Date on which the item should expire, as specified upon insertion, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format. The actual expiration
-     * date is exposed in `productstatuses` as
-     * [googleExpirationDate](https://support.google.com/merchants/answer/6324499)
-     * and might be earlier if `expirationDate` is too far in the future. Note: It
-     * may take 2+ days from the expiration date for the item to actually get
-     * deleted.
-     *
-     * @param string $expirationDate
-     */
-    public function setExpirationDate($expirationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationDate()
-    {
-    }
-    /**
-     * Target gender of the item.
-     *
-     * @param string $gender
-     */
-    public function setGender($gender)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGender()
-    {
-    }
-    /**
-     * Google's category of the item (see [Google product
-     * taxonomy](https://support.google.com/merchants/answer/1705911)). When
-     * querying products, this field will contain the user provided value. There
-     * is currently no way to get back the auto assigned google product categories
-     * through the API.
-     *
-     * @param string $googleProductCategory
-     */
-    public function setGoogleProductCategory($googleProductCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleProductCategory()
-    {
-    }
-    /**
-     * Global Trade Item Number
-     * ([GTIN](https://support.google.com/merchants/answer/188494#gtin)) of the
-     * item.
-     *
-     * @param string $gtin
-     */
-    public function setGtin($gtin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGtin()
-    {
-    }
-    /**
-     * Condition of the headline offer.
-     *
-     * @param string $headlineOfferCondition
-     */
-    public function setHeadlineOfferCondition($headlineOfferCondition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadlineOfferCondition()
-    {
-    }
-    /**
-     * Number and amount of installments to pay for an item.
-     *
-     * @param HeadlineOfferInstallment $headlineOfferInstallment
-     */
-    public function setHeadlineOfferInstallment(HeadlineOfferInstallment $headlineOfferInstallment)
-    {
-    }
-    /**
-     * @return HeadlineOfferInstallment
-     */
-    public function getHeadlineOfferInstallment()
-    {
-    }
-    /**
-     * Link to the headline offer.
-     *
-     * @param string $headlineOfferLink
-     */
-    public function setHeadlineOfferLink($headlineOfferLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadlineOfferLink()
-    {
-    }
-    /**
-     * Mobile Link to the headline offer.
-     *
-     * @param string $headlineOfferMobileLink
-     */
-    public function setHeadlineOfferMobileLink($headlineOfferMobileLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadlineOfferMobileLink()
-    {
-    }
-    /**
-     * Headline Price of the CSS Product.
-     *
-     * @param Price $headlineOfferPrice
-     */
-    public function setHeadlineOfferPrice(Price $headlineOfferPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getHeadlineOfferPrice()
-    {
-    }
-    /**
-     * Headline Price of the CSS Product.
-     *
-     * @param Price $headlineOfferShippingPrice
-     */
-    public function setHeadlineOfferShippingPrice(Price $headlineOfferShippingPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getHeadlineOfferShippingPrice()
-    {
-    }
-    /**
-     * Number of periods (months or years) and amount of payment per period for an
-     * item with an associated subscription contract.
-     *
-     * @param HeadlineOfferSubscriptionCost $headlineOfferSubscriptionCost
-     */
-    public function setHeadlineOfferSubscriptionCost(HeadlineOfferSubscriptionCost $headlineOfferSubscriptionCost)
-    {
-    }
-    /**
-     * @return HeadlineOfferSubscriptionCost
-     */
-    public function getHeadlineOfferSubscriptionCost()
-    {
-    }
-    /**
-     * High Price of the CSS Product.
-     *
-     * @param Price $highPrice
-     */
-    public function setHighPrice(Price $highPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getHighPrice()
-    {
-    }
-    /**
-     * URL of an image of the item.
-     *
-     * @param string $imageLink
-     */
-    public function setImageLink($imageLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageLink()
-    {
-    }
-    /**
-     * The list of destinations to include for this target (corresponds to checked
-     * check boxes in Merchant Center). Default destinations are always included
-     * unless provided in `excludedDestinations`.
-     *
-     * @param string[] $includedDestinations
-     */
-    public function setIncludedDestinations($includedDestinations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedDestinations()
-    {
-    }
-    /**
-     * Whether the item is a merchant-defined bundle. A bundle is a custom
-     * grouping of different products sold by a merchant for a single price.
-     *
-     * @param bool $isBundle
-     */
-    public function setIsBundle($isBundle)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsBundle()
-    {
-    }
-    /**
-     * Shared identifier for all variants of the same product.
-     *
-     * @param string $itemGroupId
-     */
-    public function setItemGroupId($itemGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemGroupId()
-    {
-    }
-    /**
-     * Low Price of the CSS Product.
-     *
-     * @param Price $lowPrice
-     */
-    public function setLowPrice(Price $lowPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getLowPrice()
-    {
-    }
-    /**
-     * The material of which the item is made.
-     *
-     * @param string $material
-     */
-    public function setMaterial($material)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaterial()
-    {
-    }
-    /**
-     * Manufacturer Part Number
-     * ([MPN](https://support.google.com/merchants/answer/188494#mpn)) of the
-     * item.
-     *
-     * @param string $mpn
-     */
-    public function setMpn($mpn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMpn()
-    {
-    }
-    /**
-     * The number of identical products in a merchant-defined multipack.
-     *
-     * @param string $multipack
-     */
-    public function setMultipack($multipack)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMultipack()
-    {
-    }
-    /**
-     * The number of CSS Products.
-     *
-     * @param string $numberOfOffers
-     */
-    public function setNumberOfOffers($numberOfOffers)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumberOfOffers()
-    {
-    }
-    /**
-     * The item's pattern (e.g. polka dots).
-     *
-     * @param string $pattern
-     */
-    public function setPattern($pattern)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPattern()
-    {
-    }
-    /**
-     * Publication of this item will be temporarily paused.
-     *
-     * @param string $pause
-     */
-    public function setPause($pause)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPause()
-    {
-    }
-    /**
-     * Technical specification or additional product details.
-     *
-     * @param ProductDetail[] $productDetails
-     */
-    public function setProductDetails($productDetails)
-    {
-    }
-    /**
-     * @return ProductDetail[]
-     */
-    public function getProductDetails()
-    {
-    }
-    /**
-     * The height of the product in the units provided. The value must be between
-     * 0 (exclusive) and 3000 (inclusive).
-     *
-     * @param ProductDimension $productHeight
-     */
-    public function setProductHeight(ProductDimension $productHeight)
-    {
-    }
-    /**
-     * @return ProductDimension
-     */
-    public function getProductHeight()
-    {
-    }
-    /**
-     * Bullet points describing the most relevant highlights of a product.
-     *
-     * @param string[] $productHighlights
-     */
-    public function setProductHighlights($productHighlights)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProductHighlights()
-    {
-    }
-    /**
-     * The length of the product in the units provided. The value must be between
-     * 0 (exclusive) and 3000 (inclusive).
-     *
-     * @param ProductDimension $productLength
-     */
-    public function setProductLength(ProductDimension $productLength)
-    {
-    }
-    /**
-     * @return ProductDimension
-     */
-    public function getProductLength()
-    {
-    }
-    /**
-     * Categories of the item (formatted as in [products data
-     * specification](https://support.google.com/merchants/answer/6324406)).
-     *
-     * @param string[] $productTypes
-     */
-    public function setProductTypes($productTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProductTypes()
-    {
-    }
-    /**
-     * The weight of the product in the units provided. The value must be between
-     * 0 (exclusive) and 2000 (inclusive).
-     *
-     * @param ProductWeight $productWeight
-     */
-    public function setProductWeight(ProductWeight $productWeight)
-    {
-    }
-    /**
-     * @return ProductWeight
-     */
-    public function getProductWeight()
-    {
-    }
-    /**
-     * The width of the product in the units provided. The value must be between 0
-     * (exclusive) and 3000 (inclusive).
-     *
-     * @param ProductDimension $productWidth
-     */
-    public function setProductWidth(ProductDimension $productWidth)
-    {
-    }
-    /**
-     * @return ProductDimension
-     */
-    public function getProductWidth()
-    {
-    }
-    /**
-     * Size of the item. Only one value is allowed. For variants with different
-     * sizes, insert a separate product for each size with the same `itemGroupId`
-     * value (see [https://support.google.com/merchants/answer/6324492](size
-     * definition)).
-     *
-     * @param string $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * System in which the size is specified. Recommended for apparel items.
-     *
-     * @param string $sizeSystem
-     */
-    public function setSizeSystem($sizeSystem)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeSystem()
-    {
-    }
-    /**
-     * The cut of the item. It can be used to represent combined size types for
-     * apparel items. Maximum two of size types can be provided (see
-     * [https://support.google.com/merchants/answer/6324497](size type)).
-     *
-     * @param string[] $sizeTypes
-     */
-    public function setSizeTypes($sizeTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSizeTypes()
-    {
-    }
-    /**
-     * Title of the item.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+namespace Google\Service\Css {
+    class Attributes extends \Google\Collection
+    {
+        protected $collection_key = 'sizeTypes';
+        /**
+         * Additional URL of images of the item.
+         *
+         * @var string[]
+         */
+        public $additionalImageLinks;
+        /**
+         * Set to true if the item is targeted towards adults.
+         *
+         * @var bool
+         */
+        public $adult;
+        /**
+         * Target age group of the item.
+         *
+         * @var string
+         */
+        public $ageGroup;
+        /**
+         * Product Related Attributes.[14-36] Brand of the item.
+         *
+         * @var string
+         */
+        public $brand;
+        protected $certificationsType = Certification::class;
+        protected $certificationsDataType = 'array';
+        /**
+         * Color of the item.
+         *
+         * @var string
+         */
+        public $color;
+        /**
+         * Allows advertisers to override the item URL when the product is shown
+         * within the context of Product Ads.
+         *
+         * @var string
+         */
+        public $cppAdsRedirect;
+        /**
+         * URL directly linking to your the Product Detail Page of the CSS.
+         *
+         * @var string
+         */
+        public $cppLink;
+        /**
+         * URL for the mobile-optimized version of the Product Detail Page of the CSS.
+         *
+         * @var string
+         */
+        public $cppMobileLink;
+        /**
+         * Custom label 0 for custom grouping of items in a Shopping campaign.
+         *
+         * @var string
+         */
+        public $customLabel0;
+        /**
+         * Custom label 1 for custom grouping of items in a Shopping campaign.
+         *
+         * @var string
+         */
+        public $customLabel1;
+        /**
+         * Custom label 2 for custom grouping of items in a Shopping campaign.
+         *
+         * @var string
+         */
+        public $customLabel2;
+        /**
+         * Custom label 3 for custom grouping of items in a Shopping campaign.
+         *
+         * @var string
+         */
+        public $customLabel3;
+        /**
+         * Custom label 4 for custom grouping of items in a Shopping campaign.
+         *
+         * @var string
+         */
+        public $customLabel4;
+        /**
+         * Description of the item.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The list of destinations to exclude for this target (corresponds to
+         * unchecked check boxes in Merchant Center).
+         *
+         * @var string[]
+         */
+        public $excludedDestinations;
+        /**
+         * Date on which the item should expire, as specified upon insertion, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format. The actual expiration
+         * date is exposed in `productstatuses` as
+         * [googleExpirationDate](https://support.google.com/merchants/answer/6324499)
+         * and might be earlier if `expirationDate` is too far in the future. Note: It
+         * may take 2+ days from the expiration date for the item to actually get
+         * deleted.
+         *
+         * @var string
+         */
+        public $expirationDate;
+        /**
+         * Target gender of the item.
+         *
+         * @var string
+         */
+        public $gender;
+        /**
+         * Google's category of the item (see [Google product
+         * taxonomy](https://support.google.com/merchants/answer/1705911)). When
+         * querying products, this field will contain the user provided value. There
+         * is currently no way to get back the auto assigned google product categories
+         * through the API.
+         *
+         * @var string
+         */
+        public $googleProductCategory;
+        /**
+         * Global Trade Item Number
+         * ([GTIN](https://support.google.com/merchants/answer/188494#gtin)) of the
+         * item.
+         *
+         * @var string
+         */
+        public $gtin;
+        /**
+         * Condition of the headline offer.
+         *
+         * @var string
+         */
+        public $headlineOfferCondition;
+        protected $headlineOfferInstallmentType = HeadlineOfferInstallment::class;
+        protected $headlineOfferInstallmentDataType = '';
+        /**
+         * Link to the headline offer.
+         *
+         * @var string
+         */
+        public $headlineOfferLink;
+        /**
+         * Mobile Link to the headline offer.
+         *
+         * @var string
+         */
+        public $headlineOfferMobileLink;
+        protected $headlineOfferPriceType = Price::class;
+        protected $headlineOfferPriceDataType = '';
+        protected $headlineOfferShippingPriceType = Price::class;
+        protected $headlineOfferShippingPriceDataType = '';
+        protected $headlineOfferSubscriptionCostType = HeadlineOfferSubscriptionCost::class;
+        protected $headlineOfferSubscriptionCostDataType = '';
+        protected $highPriceType = Price::class;
+        protected $highPriceDataType = '';
+        /**
+         * URL of an image of the item.
+         *
+         * @var string
+         */
+        public $imageLink;
+        /**
+         * The list of destinations to include for this target (corresponds to checked
+         * check boxes in Merchant Center). Default destinations are always included
+         * unless provided in `excludedDestinations`.
+         *
+         * @var string[]
+         */
+        public $includedDestinations;
+        /**
+         * Whether the item is a merchant-defined bundle. A bundle is a custom
+         * grouping of different products sold by a merchant for a single price.
+         *
+         * @var bool
+         */
+        public $isBundle;
+        /**
+         * Shared identifier for all variants of the same product.
+         *
+         * @var string
+         */
+        public $itemGroupId;
+        protected $lowPriceType = Price::class;
+        protected $lowPriceDataType = '';
+        /**
+         * The material of which the item is made.
+         *
+         * @var string
+         */
+        public $material;
+        /**
+         * Manufacturer Part Number
+         * ([MPN](https://support.google.com/merchants/answer/188494#mpn)) of the
+         * item.
+         *
+         * @var string
+         */
+        public $mpn;
+        /**
+         * The number of identical products in a merchant-defined multipack.
+         *
+         * @var string
+         */
+        public $multipack;
+        /**
+         * The number of CSS Products.
+         *
+         * @var string
+         */
+        public $numberOfOffers;
+        /**
+         * The item's pattern (e.g. polka dots).
+         *
+         * @var string
+         */
+        public $pattern;
+        /**
+         * Publication of this item will be temporarily paused.
+         *
+         * @var string
+         */
+        public $pause;
+        protected $productDetailsType = ProductDetail::class;
+        protected $productDetailsDataType = 'array';
+        protected $productHeightType = ProductDimension::class;
+        protected $productHeightDataType = '';
+        /**
+         * Bullet points describing the most relevant highlights of a product.
+         *
+         * @var string[]
+         */
+        public $productHighlights;
+        protected $productLengthType = ProductDimension::class;
+        protected $productLengthDataType = '';
+        /**
+         * Categories of the item (formatted as in [products data
+         * specification](https://support.google.com/merchants/answer/6324406)).
+         *
+         * @var string[]
+         */
+        public $productTypes;
+        protected $productWeightType = ProductWeight::class;
+        protected $productWeightDataType = '';
+        protected $productWidthType = ProductDimension::class;
+        protected $productWidthDataType = '';
+        /**
+         * Size of the item. Only one value is allowed. For variants with different
+         * sizes, insert a separate product for each size with the same `itemGroupId`
+         * value (see [https://support.google.com/merchants/answer/6324492](size
+         * definition)).
+         *
+         * @var string
+         */
+        public $size;
+        /**
+         * System in which the size is specified. Recommended for apparel items.
+         *
+         * @var string
+         */
+        public $sizeSystem;
+        /**
+         * The cut of the item. It can be used to represent combined size types for
+         * apparel items. Maximum two of size types can be provided (see
+         * [https://support.google.com/merchants/answer/6324497](size type)).
+         *
+         * @var string[]
+         */
+        public $sizeTypes;
+        /**
+         * Title of the item.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Additional URL of images of the item.
+         *
+         * @param string[] $additionalImageLinks
+         */
+        public function setAdditionalImageLinks($additionalImageLinks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalImageLinks()
+        {
+        }
+        /**
+         * Set to true if the item is targeted towards adults.
+         *
+         * @param bool $adult
+         */
+        public function setAdult($adult)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdult()
+        {
+        }
+        /**
+         * Target age group of the item.
+         *
+         * @param string $ageGroup
+         */
+        public function setAgeGroup($ageGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgeGroup()
+        {
+        }
+        /**
+         * Product Related Attributes.[14-36] Brand of the item.
+         *
+         * @param string $brand
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * A list of certificates claimed by the CSS for the given product.
+         *
+         * @param Certification[] $certifications
+         */
+        public function setCertifications($certifications)
+        {
+        }
+        /**
+         * @return Certification[]
+         */
+        public function getCertifications()
+        {
+        }
+        /**
+         * Color of the item.
+         *
+         * @param string $color
+         */
+        public function setColor($color)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * Allows advertisers to override the item URL when the product is shown
+         * within the context of Product Ads.
+         *
+         * @param string $cppAdsRedirect
+         */
+        public function setCppAdsRedirect($cppAdsRedirect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCppAdsRedirect()
+        {
+        }
+        /**
+         * URL directly linking to your the Product Detail Page of the CSS.
+         *
+         * @param string $cppLink
+         */
+        public function setCppLink($cppLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCppLink()
+        {
+        }
+        /**
+         * URL for the mobile-optimized version of the Product Detail Page of the CSS.
+         *
+         * @param string $cppMobileLink
+         */
+        public function setCppMobileLink($cppMobileLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCppMobileLink()
+        {
+        }
+        /**
+         * Custom label 0 for custom grouping of items in a Shopping campaign.
+         *
+         * @param string $customLabel0
+         */
+        public function setCustomLabel0($customLabel0)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel0()
+        {
+        }
+        /**
+         * Custom label 1 for custom grouping of items in a Shopping campaign.
+         *
+         * @param string $customLabel1
+         */
+        public function setCustomLabel1($customLabel1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel1()
+        {
+        }
+        /**
+         * Custom label 2 for custom grouping of items in a Shopping campaign.
+         *
+         * @param string $customLabel2
+         */
+        public function setCustomLabel2($customLabel2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel2()
+        {
+        }
+        /**
+         * Custom label 3 for custom grouping of items in a Shopping campaign.
+         *
+         * @param string $customLabel3
+         */
+        public function setCustomLabel3($customLabel3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel3()
+        {
+        }
+        /**
+         * Custom label 4 for custom grouping of items in a Shopping campaign.
+         *
+         * @param string $customLabel4
+         */
+        public function setCustomLabel4($customLabel4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel4()
+        {
+        }
+        /**
+         * Description of the item.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The list of destinations to exclude for this target (corresponds to
+         * unchecked check boxes in Merchant Center).
+         *
+         * @param string[] $excludedDestinations
+         */
+        public function setExcludedDestinations($excludedDestinations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedDestinations()
+        {
+        }
+        /**
+         * Date on which the item should expire, as specified upon insertion, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format. The actual expiration
+         * date is exposed in `productstatuses` as
+         * [googleExpirationDate](https://support.google.com/merchants/answer/6324499)
+         * and might be earlier if `expirationDate` is too far in the future. Note: It
+         * may take 2+ days from the expiration date for the item to actually get
+         * deleted.
+         *
+         * @param string $expirationDate
+         */
+        public function setExpirationDate($expirationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationDate()
+        {
+        }
+        /**
+         * Target gender of the item.
+         *
+         * @param string $gender
+         */
+        public function setGender($gender)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGender()
+        {
+        }
+        /**
+         * Google's category of the item (see [Google product
+         * taxonomy](https://support.google.com/merchants/answer/1705911)). When
+         * querying products, this field will contain the user provided value. There
+         * is currently no way to get back the auto assigned google product categories
+         * through the API.
+         *
+         * @param string $googleProductCategory
+         */
+        public function setGoogleProductCategory($googleProductCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleProductCategory()
+        {
+        }
+        /**
+         * Global Trade Item Number
+         * ([GTIN](https://support.google.com/merchants/answer/188494#gtin)) of the
+         * item.
+         *
+         * @param string $gtin
+         */
+        public function setGtin($gtin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGtin()
+        {
+        }
+        /**
+         * Condition of the headline offer.
+         *
+         * @param string $headlineOfferCondition
+         */
+        public function setHeadlineOfferCondition($headlineOfferCondition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadlineOfferCondition()
+        {
+        }
+        /**
+         * Number and amount of installments to pay for an item.
+         *
+         * @param HeadlineOfferInstallment $headlineOfferInstallment
+         */
+        public function setHeadlineOfferInstallment(HeadlineOfferInstallment $headlineOfferInstallment)
+        {
+        }
+        /**
+         * @return HeadlineOfferInstallment
+         */
+        public function getHeadlineOfferInstallment()
+        {
+        }
+        /**
+         * Link to the headline offer.
+         *
+         * @param string $headlineOfferLink
+         */
+        public function setHeadlineOfferLink($headlineOfferLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadlineOfferLink()
+        {
+        }
+        /**
+         * Mobile Link to the headline offer.
+         *
+         * @param string $headlineOfferMobileLink
+         */
+        public function setHeadlineOfferMobileLink($headlineOfferMobileLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadlineOfferMobileLink()
+        {
+        }
+        /**
+         * Headline Price of the CSS Product.
+         *
+         * @param Price $headlineOfferPrice
+         */
+        public function setHeadlineOfferPrice(Price $headlineOfferPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getHeadlineOfferPrice()
+        {
+        }
+        /**
+         * Headline Price of the CSS Product.
+         *
+         * @param Price $headlineOfferShippingPrice
+         */
+        public function setHeadlineOfferShippingPrice(Price $headlineOfferShippingPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getHeadlineOfferShippingPrice()
+        {
+        }
+        /**
+         * Number of periods (months or years) and amount of payment per period for an
+         * item with an associated subscription contract.
+         *
+         * @param HeadlineOfferSubscriptionCost $headlineOfferSubscriptionCost
+         */
+        public function setHeadlineOfferSubscriptionCost(HeadlineOfferSubscriptionCost $headlineOfferSubscriptionCost)
+        {
+        }
+        /**
+         * @return HeadlineOfferSubscriptionCost
+         */
+        public function getHeadlineOfferSubscriptionCost()
+        {
+        }
+        /**
+         * High Price of the CSS Product.
+         *
+         * @param Price $highPrice
+         */
+        public function setHighPrice(Price $highPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getHighPrice()
+        {
+        }
+        /**
+         * URL of an image of the item.
+         *
+         * @param string $imageLink
+         */
+        public function setImageLink($imageLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageLink()
+        {
+        }
+        /**
+         * The list of destinations to include for this target (corresponds to checked
+         * check boxes in Merchant Center). Default destinations are always included
+         * unless provided in `excludedDestinations`.
+         *
+         * @param string[] $includedDestinations
+         */
+        public function setIncludedDestinations($includedDestinations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedDestinations()
+        {
+        }
+        /**
+         * Whether the item is a merchant-defined bundle. A bundle is a custom
+         * grouping of different products sold by a merchant for a single price.
+         *
+         * @param bool $isBundle
+         */
+        public function setIsBundle($isBundle)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsBundle()
+        {
+        }
+        /**
+         * Shared identifier for all variants of the same product.
+         *
+         * @param string $itemGroupId
+         */
+        public function setItemGroupId($itemGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemGroupId()
+        {
+        }
+        /**
+         * Low Price of the CSS Product.
+         *
+         * @param Price $lowPrice
+         */
+        public function setLowPrice(Price $lowPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getLowPrice()
+        {
+        }
+        /**
+         * The material of which the item is made.
+         *
+         * @param string $material
+         */
+        public function setMaterial($material)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaterial()
+        {
+        }
+        /**
+         * Manufacturer Part Number
+         * ([MPN](https://support.google.com/merchants/answer/188494#mpn)) of the
+         * item.
+         *
+         * @param string $mpn
+         */
+        public function setMpn($mpn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMpn()
+        {
+        }
+        /**
+         * The number of identical products in a merchant-defined multipack.
+         *
+         * @param string $multipack
+         */
+        public function setMultipack($multipack)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMultipack()
+        {
+        }
+        /**
+         * The number of CSS Products.
+         *
+         * @param string $numberOfOffers
+         */
+        public function setNumberOfOffers($numberOfOffers)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumberOfOffers()
+        {
+        }
+        /**
+         * The item's pattern (e.g. polka dots).
+         *
+         * @param string $pattern
+         */
+        public function setPattern($pattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPattern()
+        {
+        }
+        /**
+         * Publication of this item will be temporarily paused.
+         *
+         * @param string $pause
+         */
+        public function setPause($pause)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPause()
+        {
+        }
+        /**
+         * Technical specification or additional product details.
+         *
+         * @param ProductDetail[] $productDetails
+         */
+        public function setProductDetails($productDetails)
+        {
+        }
+        /**
+         * @return ProductDetail[]
+         */
+        public function getProductDetails()
+        {
+        }
+        /**
+         * The height of the product in the units provided. The value must be between
+         * 0 (exclusive) and 3000 (inclusive).
+         *
+         * @param ProductDimension $productHeight
+         */
+        public function setProductHeight(ProductDimension $productHeight)
+        {
+        }
+        /**
+         * @return ProductDimension
+         */
+        public function getProductHeight()
+        {
+        }
+        /**
+         * Bullet points describing the most relevant highlights of a product.
+         *
+         * @param string[] $productHighlights
+         */
+        public function setProductHighlights($productHighlights)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProductHighlights()
+        {
+        }
+        /**
+         * The length of the product in the units provided. The value must be between
+         * 0 (exclusive) and 3000 (inclusive).
+         *
+         * @param ProductDimension $productLength
+         */
+        public function setProductLength(ProductDimension $productLength)
+        {
+        }
+        /**
+         * @return ProductDimension
+         */
+        public function getProductLength()
+        {
+        }
+        /**
+         * Categories of the item (formatted as in [products data
+         * specification](https://support.google.com/merchants/answer/6324406)).
+         *
+         * @param string[] $productTypes
+         */
+        public function setProductTypes($productTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProductTypes()
+        {
+        }
+        /**
+         * The weight of the product in the units provided. The value must be between
+         * 0 (exclusive) and 2000 (inclusive).
+         *
+         * @param ProductWeight $productWeight
+         */
+        public function setProductWeight(ProductWeight $productWeight)
+        {
+        }
+        /**
+         * @return ProductWeight
+         */
+        public function getProductWeight()
+        {
+        }
+        /**
+         * The width of the product in the units provided. The value must be between 0
+         * (exclusive) and 3000 (inclusive).
+         *
+         * @param ProductDimension $productWidth
+         */
+        public function setProductWidth(ProductDimension $productWidth)
+        {
+        }
+        /**
+         * @return ProductDimension
+         */
+        public function getProductWidth()
+        {
+        }
+        /**
+         * Size of the item. Only one value is allowed. For variants with different
+         * sizes, insert a separate product for each size with the same `itemGroupId`
+         * value (see [https://support.google.com/merchants/answer/6324492](size
+         * definition)).
+         *
+         * @param string $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * System in which the size is specified. Recommended for apparel items.
+         *
+         * @param string $sizeSystem
+         */
+        public function setSizeSystem($sizeSystem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeSystem()
+        {
+        }
+        /**
+         * The cut of the item. It can be used to represent combined size types for
+         * apparel items. Maximum two of size types can be provided (see
+         * [https://support.google.com/merchants/answer/6324497](size type)).
+         *
+         * @param string[] $sizeTypes
+         */
+        public function setSizeTypes($sizeTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSizeTypes()
+        {
+        }
+        /**
+         * Title of the item.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Css\Attributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Css_Attributes extends \Google\Service\Css\Attributes
     {
     }
 }

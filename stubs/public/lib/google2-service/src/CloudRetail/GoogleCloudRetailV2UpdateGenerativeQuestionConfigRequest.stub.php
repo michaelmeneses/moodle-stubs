@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest extends \Google\Model
-{
-    protected $generativeQuestionConfigType = GoogleCloudRetailV2GenerativeQuestionConfig::class;
-    protected $generativeQuestionConfigDataType = '';
-    /**
-     * Optional. Indicates which fields in the provided GenerativeQuestionConfig
-     * to update. The following are NOT supported: *
-     * GenerativeQuestionConfig.frequency If not set or empty, all supported
-     * fields are updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The question to update.
-     *
-     * @param GoogleCloudRetailV2GenerativeQuestionConfig $generativeQuestionConfig
-     */
-    public function setGenerativeQuestionConfig(GoogleCloudRetailV2GenerativeQuestionConfig $generativeQuestionConfig)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest extends \Google\Model
     {
+        protected $generativeQuestionConfigType = GoogleCloudRetailV2GenerativeQuestionConfig::class;
+        protected $generativeQuestionConfigDataType = '';
+        /**
+         * Optional. Indicates which fields in the provided GenerativeQuestionConfig
+         * to update. The following are NOT supported: *
+         * GenerativeQuestionConfig.frequency If not set or empty, all supported
+         * fields are updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The question to update.
+         *
+         * @param GoogleCloudRetailV2GenerativeQuestionConfig $generativeQuestionConfig
+         */
+        public function setGenerativeQuestionConfig(GoogleCloudRetailV2GenerativeQuestionConfig $generativeQuestionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2GenerativeQuestionConfig
+         */
+        public function getGenerativeQuestionConfig()
+        {
+        }
+        /**
+         * Optional. Indicates which fields in the provided GenerativeQuestionConfig
+         * to update. The following are NOT supported: *
+         * GenerativeQuestionConfig.frequency If not set or empty, all supported
+         * fields are updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2GenerativeQuestionConfig
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenerativeQuestionConfig()
-    {
-    }
-    /**
-     * Optional. Indicates which fields in the provided GenerativeQuestionConfig
-     * to update. The following are NOT supported: *
-     * GenerativeQuestionConfig.frequency If not set or empty, all supported
-     * fields are updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest
     {
     }
 }

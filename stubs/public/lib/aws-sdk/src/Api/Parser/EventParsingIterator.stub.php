@@ -8,6 +8,11 @@
  */
 namespace Aws\Api\Parser;
 
+use Iterator;
+use Aws\Exception\EventStreamDataException;
+use Aws\Api\Parser\Exception\ParserException;
+use Aws\Api\StructureShape;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Implements a decoder for a binary encoded event stream that will
  * decode, validate, and provide individual events from the stream.

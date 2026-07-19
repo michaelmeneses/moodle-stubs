@@ -21,26 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "channels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $channels = $adminService->channels;
- *  </code>
- */
-class Channels extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Channel;
     /**
-     * Stops watching resources through this channel. (channels.stop)
-     *
-     * @param Channel $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "channels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $channels = $adminService->channels;
+     *  </code>
      */
-    public function stop(Channel $postBody, $optParams = [])
+    class Channels extends \Google\Service\Resource
+    {
+        /**
+         * Stops watching resources through this channel. (channels.stop)
+         *
+         * @param Channel $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function stop(Channel $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\Channels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_Channels extends \Google\Service\Directory\Resource\Channels
     {
     }
 }

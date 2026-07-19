@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1FeedbackMessage extends \Google\Model
-{
-    /**
-     * String content of the feedback. Maximum of 10000 characters.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The image storing this feedback if the feedback is an image representing
-     * operator's comments.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Name of the feedback message in a feedback thread. Format: 'project/{projec
-     * t_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedba
-     * ckThreads/{feedback_thread_id}/feedbackMessage/{feedback_message_id}'
-     *
-     * @var string
-     */
-    public $name;
-    protected $operatorFeedbackMetadataType = GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata::class;
-    protected $operatorFeedbackMetadataDataType = '';
-    protected $requesterFeedbackMetadataType = GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata::class;
-    protected $requesterFeedbackMetadataDataType = '';
-    /**
-     * String content of the feedback. Maximum of 10000 characters.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1FeedbackMessage extends \Google\Model
     {
+        /**
+         * String content of the feedback. Maximum of 10000 characters.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The image storing this feedback if the feedback is an image representing
+         * operator's comments.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Name of the feedback message in a feedback thread. Format: 'project/{projec
+         * t_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedba
+         * ckThreads/{feedback_thread_id}/feedbackMessage/{feedback_message_id}'
+         *
+         * @var string
+         */
+        public $name;
+        protected $operatorFeedbackMetadataType = GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata::class;
+        protected $operatorFeedbackMetadataDataType = '';
+        protected $requesterFeedbackMetadataType = GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata::class;
+        protected $requesterFeedbackMetadataDataType = '';
+        /**
+         * String content of the feedback. Maximum of 10000 characters.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The image storing this feedback if the feedback is an image representing
+         * operator's comments.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Name of the feedback message in a feedback thread. Format: 'project/{projec
+         * t_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedba
+         * ckThreads/{feedback_thread_id}/feedbackMessage/{feedback_message_id}'
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata $operatorFeedbackMetadata
+         */
+        public function setOperatorFeedbackMetadata(GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata $operatorFeedbackMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata
+         */
+        public function getOperatorFeedbackMetadata()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata $requesterFeedbackMetadata
+         */
+        public function setRequesterFeedbackMetadata(GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata $requesterFeedbackMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata
+         */
+        public function getRequesterFeedbackMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * Create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The image storing this feedback if the feedback is an image representing
-     * operator's comments.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Name of the feedback message in a feedback thread. Format: 'project/{projec
-     * t_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedba
-     * ckThreads/{feedback_thread_id}/feedbackMessage/{feedback_message_id}'
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata $operatorFeedbackMetadata
-     */
-    public function setOperatorFeedbackMetadata(GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata $operatorFeedbackMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1OperatorFeedbackMetadata
-     */
-    public function getOperatorFeedbackMetadata()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata $requesterFeedbackMetadata
-     */
-    public function setRequesterFeedbackMetadata(GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata $requesterFeedbackMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1RequesterFeedbackMetadata
-     */
-    public function getRequesterFeedbackMetadata()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1FeedbackMessage extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackMessage
     {
     }
 }

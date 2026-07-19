@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class DomainWideTakeoutInitiated extends \Google\Model
-{
-    /**
-     * The email of the admin who initiated the takeout.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The takeout request ID.
-     *
-     * @var string
-     */
-    public $takeoutRequestId;
-    /**
-     * The email of the admin who initiated the takeout.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AlertCenter {
+    class DomainWideTakeoutInitiated extends \Google\Model
     {
+        /**
+         * The email of the admin who initiated the takeout.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The takeout request ID.
+         *
+         * @var string
+         */
+        public $takeoutRequestId;
+        /**
+         * The email of the admin who initiated the takeout.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The takeout request ID.
+         *
+         * @param string $takeoutRequestId
+         */
+        public function setTakeoutRequestId($takeoutRequestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTakeoutRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\DomainWideTakeoutInitiated registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The takeout request ID.
-     *
-     * @param string $takeoutRequestId
-     */
-    public function setTakeoutRequestId($takeoutRequestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTakeoutRequestId()
+    class Google_Service_AlertCenter_DomainWideTakeoutInitiated extends \Google\Service\AlertCenter\DomainWideTakeoutInitiated
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2WorkerPoolScaling extends \Google\Model
-{
-    /**
-     * Optional. The total number of instances in manual scaling mode.
-     *
-     * @var int
-     */
-    public $manualInstanceCount;
-    /**
-     * Optional. The total number of instances in manual scaling mode.
-     *
-     * @param int $manualInstanceCount
-     */
-    public function setManualInstanceCount($manualInstanceCount)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2WorkerPoolScaling extends \Google\Model
     {
+        /**
+         * Optional. The total number of instances in manual scaling mode.
+         *
+         * @var int
+         */
+        public $manualInstanceCount;
+        /**
+         * Optional. The total number of instances in manual scaling mode.
+         *
+         * @param int $manualInstanceCount
+         */
+        public function setManualInstanceCount($manualInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getManualInstanceCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2WorkerPoolScaling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManualInstanceCount()
+    class Google_Service_CloudRun_GoogleCloudRunV2WorkerPoolScaling extends \Google\Service\CloudRun\GoogleCloudRunV2WorkerPoolScaling
     {
     }
 }

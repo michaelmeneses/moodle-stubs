@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict extends \Google\Collection
-{
-    protected $collection_key = 'reasons';
-    /**
-     * Output only. Reasons contributing to the SMS toll fraud verdict.
-     *
-     * @var string[]
-     */
-    public $reasons;
-    /**
-     * Output only. Probability of an SMS event being fraudulent. Values are from
-     * 0.0 (lowest) to 1.0 (highest).
-     *
-     * @var float
-     */
-    public $risk;
-    /**
-     * Output only. Reasons contributing to the SMS toll fraud verdict.
-     *
-     * @param string[] $reasons
-     */
-    public function setReasons($reasons)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict extends \Google\Collection
     {
+        protected $collection_key = 'reasons';
+        /**
+         * Output only. Reasons contributing to the SMS toll fraud verdict.
+         *
+         * @var string[]
+         */
+        public $reasons;
+        /**
+         * Output only. Probability of an SMS event being fraudulent. Values are from
+         * 0.0 (lowest) to 1.0 (highest).
+         *
+         * @var float
+         */
+        public $risk;
+        /**
+         * Output only. Reasons contributing to the SMS toll fraud verdict.
+         *
+         * @param string[] $reasons
+         */
+        public function setReasons($reasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReasons()
+        {
+        }
+        /**
+         * Output only. Probability of an SMS event being fraudulent. Values are from
+         * 0.0 (lowest) to 1.0 (highest).
+         *
+         * @param float $risk
+         */
+        public function setRisk($risk)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReasons()
-    {
-    }
-    /**
-     * Output only. Probability of an SMS event being fraudulent. Values are from
-     * 0.0 (lowest) to 1.0 (highest).
-     *
-     * @param float $risk
-     */
-    public function setRisk($risk)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRisk()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict
     {
     }
 }

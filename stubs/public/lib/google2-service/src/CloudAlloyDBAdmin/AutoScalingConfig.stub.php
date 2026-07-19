@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class AutoScalingConfig extends \Google\Collection
-{
-    protected $collection_key = 'schedules';
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    protected $schedulesType = Schedule::class;
-    protected $schedulesDataType = 'array';
-    /**
-     * @param Policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class AutoScalingConfig extends \Google\Collection
     {
+        protected $collection_key = 'schedules';
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        protected $schedulesType = Schedule::class;
+        protected $schedulesDataType = 'array';
+        /**
+         * @param Policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * @param Schedule[]
+         */
+        public function setSchedules($schedules)
+        {
+        }
+        /**
+         * @return Schedule[]
+         */
+        public function getSchedules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\AutoScalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
-    {
-    }
-    /**
-     * @param Schedule[]
-     */
-    public function setSchedules($schedules)
-    {
-    }
-    /**
-     * @return Schedule[]
-     */
-    public function getSchedules()
+    class Google_Service_CloudAlloyDBAdmin_AutoScalingConfig extends \Google\Service\CloudAlloyDBAdmin\AutoScalingConfig
     {
     }
 }

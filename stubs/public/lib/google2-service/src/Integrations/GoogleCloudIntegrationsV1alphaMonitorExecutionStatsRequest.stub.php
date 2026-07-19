@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $duration;
-    /**
-     * @var string
-     */
-    public $endTime;
-    protected $mashQueryType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery::class;
-    protected $mashQueryDataType = '';
-    /**
-     * @var bool
-     */
-    public $metricFieldTable;
-    /**
-     * @var string
-     */
-    public $outputPeriod;
-    /**
-     * @var string
-     */
-    public $responseTemplate;
-    /**
-     * @param string
-     */
-    public function setDuration($duration)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $duration;
+        /**
+         * @var string
+         */
+        public $endTime;
+        protected $mashQueryType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery::class;
+        protected $mashQueryDataType = '';
+        /**
+         * @var bool
+         */
+        public $metricFieldTable;
+        /**
+         * @var string
+         */
+        public $outputPeriod;
+        /**
+         * @var string
+         */
+        public $responseTemplate;
+        /**
+         * @param string
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery
+         */
+        public function setMashQuery(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery $mashQuery)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery
+         */
+        public function getMashQuery()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMetricFieldTable($metricFieldTable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMetricFieldTable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOutputPeriod($outputPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputPeriod()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResponseTemplate($responseTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery
-     */
-    public function setMashQuery(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery $mashQuery)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery
-     */
-    public function getMashQuery()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMetricFieldTable($metricFieldTable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMetricFieldTable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOutputPeriod($outputPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputPeriod()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResponseTemplate($responseTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseTemplate()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequest
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "goModules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $goModules = $artifactregistryService->projects_locations_repositories_goModules;
- *  </code>
- */
-class ProjectsLocationsRepositoriesGoModules extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\UploadGoModuleMediaResponse;
+    use Google\Service\ArtifactRegistry\UploadGoModuleRequest;
     /**
-     * Directly uploads a Go module. The returned Operation will complete once the
-     * Go module is uploaded. Package, Version, and File resources are created based
-     * on the uploaded Go module. (goModules.upload)
-     *
-     * @param string $parent The resource name of the repository where the Go module
-     * will be uploaded.
-     * @param UploadGoModuleRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UploadGoModuleMediaResponse
-     * @throws \Google\Service\Exception
+     * The "goModules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $goModules = $artifactregistryService->projects_locations_repositories_goModules;
+     *  </code>
      */
-    public function upload($parent, UploadGoModuleRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesGoModules extends \Google\Service\Resource
+    {
+        /**
+         * Directly uploads a Go module. The returned Operation will complete once the
+         * Go module is uploaded. Package, Version, and File resources are created based
+         * on the uploaded Go module. (goModules.upload)
+         *
+         * @param string $parent The resource name of the repository where the Go module
+         * will be uploaded.
+         * @param UploadGoModuleRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UploadGoModuleMediaResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($parent, UploadGoModuleRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesGoModules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesGoModules extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesGoModules
     {
     }
 }

@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditLineItemAssignedTargetingOptionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'deleteRequests';
-    protected $createRequestsType = CreateAssignedTargetingOptionsRequest::class;
-    protected $createRequestsDataType = 'array';
-    protected $deleteRequestsType = DeleteAssignedTargetingOptionsRequest::class;
-    protected $deleteRequestsDataType = 'array';
-    /**
-     * @param CreateAssignedTargetingOptionsRequest[]
-     */
-    public function setCreateRequests($createRequests)
+namespace Google\Service\DisplayVideo {
+    class BulkEditLineItemAssignedTargetingOptionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'deleteRequests';
+        protected $createRequestsType = CreateAssignedTargetingOptionsRequest::class;
+        protected $createRequestsDataType = 'array';
+        protected $deleteRequestsType = DeleteAssignedTargetingOptionsRequest::class;
+        protected $deleteRequestsDataType = 'array';
+        /**
+         * @param CreateAssignedTargetingOptionsRequest[]
+         */
+        public function setCreateRequests($createRequests)
+        {
+        }
+        /**
+         * @return CreateAssignedTargetingOptionsRequest[]
+         */
+        public function getCreateRequests()
+        {
+        }
+        /**
+         * @param DeleteAssignedTargetingOptionsRequest[]
+         */
+        public function setDeleteRequests($deleteRequests)
+        {
+        }
+        /**
+         * @return DeleteAssignedTargetingOptionsRequest[]
+         */
+        public function getDeleteRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateAssignedTargetingOptionsRequest[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditLineItemAssignedTargetingOptionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateRequests()
-    {
-    }
-    /**
-     * @param DeleteAssignedTargetingOptionsRequest[]
-     */
-    public function setDeleteRequests($deleteRequests)
-    {
-    }
-    /**
-     * @return DeleteAssignedTargetingOptionsRequest[]
-     */
-    public function getDeleteRequests()
+    class Google_Service_DisplayVideo_BulkEditLineItemAssignedTargetingOptionsRequest extends \Google\Service\DisplayVideo\BulkEditLineItemAssignedTargetingOptionsRequest
     {
     }
 }

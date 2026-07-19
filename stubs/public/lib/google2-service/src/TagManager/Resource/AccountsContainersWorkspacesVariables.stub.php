@@ -21,93 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "variables" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $variables = $tagmanagerService->accounts_containers_workspaces_variables;
- *  </code>
- */
-class AccountsContainersWorkspacesVariables extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ListVariablesResponse;
+    use Google\Service\TagManager\RevertVariableResponse;
+    use Google\Service\TagManager\Variable;
     /**
-     * Creates a GTM Variable. (variables.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param Variable $postBody
-     * @param array $optParams Optional parameters.
-     * @return Variable
-     * @throws \Google\Service\Exception
+     * The "variables" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $variables = $tagmanagerService->accounts_containers_workspaces_variables;
+     *  </code>
      */
-    public function create($parent, Variable $postBody, $optParams = [])
+    class AccountsContainersWorkspacesVariables extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Variable. (variables.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param Variable $postBody
+         * @param array $optParams Optional parameters.
+         * @return Variable
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Variable $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Variable. (variables.delete)
+         *
+         * @param string $path GTM Variable's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Variable. (variables.get)
+         *
+         * @param string $path GTM Variable's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Variable
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Variables of a Container.
+         * (variables.listAccountsContainersWorkspacesVariables)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListVariablesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesVariables($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Variable in a GTM Workspace. (variables.revert)
+         *
+         * @param string $path GTM Variable's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the variable in storage.
+         * @return RevertVariableResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Variable. (variables.update)
+         *
+         * @param string $path GTM Variable's API relative path.
+         * @param Variable $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the variable in storage.
+         * @return Variable
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Variable $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Variable. (variables.delete)
-     *
-     * @param string $path GTM Variable's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesVariables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Variable. (variables.get)
-     *
-     * @param string $path GTM Variable's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Variable
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Variables of a Container.
-     * (variables.listAccountsContainersWorkspacesVariables)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListVariablesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesVariables($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Variable in a GTM Workspace. (variables.revert)
-     *
-     * @param string $path GTM Variable's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the variable in storage.
-     * @return RevertVariableResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Variable. (variables.update)
-     *
-     * @param string $path GTM Variable's API relative path.
-     * @param Variable $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the variable in storage.
-     * @return Variable
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Variable $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesVariables extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesVariables
     {
     }
 }

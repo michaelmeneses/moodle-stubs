@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "video" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $video = $datalabelingService->projects_datasets_video;
- *  </code>
- */
-class ProjectsDatasetsVideo extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelVideoRequest;
+    use Google\Service\DataLabeling\GoogleLongrunningOperation;
     /**
-     * Starts a labeling task for video. The type of video labeling task is
-     * configured by feature in the request. (video.label)
-     *
-     * @param string $parent Required. Name of the dataset to request labeling task,
-     * format: projects/{project_id}/datasets/{dataset_id}
-     * @param GoogleCloudDatalabelingV1beta1LabelVideoRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "video" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $video = $datalabelingService->projects_datasets_video;
+     *  </code>
      */
-    public function label($parent, GoogleCloudDatalabelingV1beta1LabelVideoRequest $postBody, $optParams = [])
+    class ProjectsDatasetsVideo extends \Google\Service\Resource
+    {
+        /**
+         * Starts a labeling task for video. The type of video labeling task is
+         * configured by feature in the request. (video.label)
+         *
+         * @param string $parent Required. Name of the dataset to request labeling task,
+         * format: projects/{project_id}/datasets/{dataset_id}
+         * @param GoogleCloudDatalabelingV1beta1LabelVideoRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function label($parent, GoogleCloudDatalabelingV1beta1LabelVideoRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsDatasetsVideo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataLabeling_Resource_ProjectsDatasetsVideo extends \Google\Service\DataLabeling\Resource\ProjectsDatasetsVideo
     {
     }
 }

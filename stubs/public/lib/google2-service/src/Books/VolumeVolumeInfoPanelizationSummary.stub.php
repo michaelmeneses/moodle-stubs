@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeVolumeInfoPanelizationSummary extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $containsEpubBubbles;
-    /**
-     * @var bool
-     */
-    public $containsImageBubbles;
-    /**
-     * @var string
-     */
-    public $epubBubbleVersion;
-    /**
-     * @var string
-     */
-    public $imageBubbleVersion;
-    /**
-     * @param bool $containsEpubBubbles
-     */
-    public function setContainsEpubBubbles($containsEpubBubbles)
+namespace Google\Service\Books {
+    class VolumeVolumeInfoPanelizationSummary extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $containsEpubBubbles;
+        /**
+         * @var bool
+         */
+        public $containsImageBubbles;
+        /**
+         * @var string
+         */
+        public $epubBubbleVersion;
+        /**
+         * @var string
+         */
+        public $imageBubbleVersion;
+        /**
+         * @param bool $containsEpubBubbles
+         */
+        public function setContainsEpubBubbles($containsEpubBubbles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContainsEpubBubbles()
+        {
+        }
+        /**
+         * @param bool $containsImageBubbles
+         */
+        public function setContainsImageBubbles($containsImageBubbles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContainsImageBubbles()
+        {
+        }
+        /**
+         * @param string $epubBubbleVersion
+         */
+        public function setEpubBubbleVersion($epubBubbleVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEpubBubbleVersion()
+        {
+        }
+        /**
+         * @param string $imageBubbleVersion
+         */
+        public function setImageBubbleVersion($imageBubbleVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageBubbleVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Books\VolumeVolumeInfoPanelizationSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainsEpubBubbles()
-    {
-    }
-    /**
-     * @param bool $containsImageBubbles
-     */
-    public function setContainsImageBubbles($containsImageBubbles)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContainsImageBubbles()
-    {
-    }
-    /**
-     * @param string $epubBubbleVersion
-     */
-    public function setEpubBubbleVersion($epubBubbleVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEpubBubbleVersion()
-    {
-    }
-    /**
-     * @param string $imageBubbleVersion
-     */
-    public function setImageBubbleVersion($imageBubbleVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageBubbleVersion()
+    class Google_Service_Books_VolumeVolumeInfoPanelizationSummary extends \Google\Service\Books\VolumeVolumeInfoPanelizationSummary
     {
     }
 }

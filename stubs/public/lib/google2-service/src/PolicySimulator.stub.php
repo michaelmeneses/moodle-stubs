@@ -21,58 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for PolicySimulator (v1).
- *
- * <p>
- * Policy Simulator is a collection of endpoints for creating, running, and
- * viewing a Replay. A `Replay` is a type of simulation that lets you see how
- * your members' access to resources might change if you changed your IAM
- * policy. During a `Replay`, Policy Simulator re-evaluates, or replays, past
- * access attempts under both the current policy and your proposed policy, and
- * compares those results to determine how your members' access might change
- * under the proposed policy.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/iam/docs/simulating-access" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class PolicySimulator extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $folders_locations_accessPolicySimulations_operations;
-    public $folders_locations_orgPolicyViolationsPreviews_operations;
-    public $folders_locations_replays;
-    public $folders_locations_replays_operations;
-    public $folders_locations_replays_results;
-    public $operations;
-    public $organizations_locations_accessPolicySimulations_operations;
-    public $organizations_locations_orgPolicyViolationsPreviews;
-    public $organizations_locations_orgPolicyViolationsPreviews_operations;
-    public $organizations_locations_orgPolicyViolationsPreviews_orgPolicyViolations;
-    public $organizations_locations_replays;
-    public $organizations_locations_replays_operations;
-    public $organizations_locations_replays_results;
-    public $projects_locations_accessPolicySimulations_operations;
-    public $projects_locations_orgPolicyViolationsPreviews_operations;
-    public $projects_locations_replays;
-    public $projects_locations_replays_operations;
-    public $projects_locations_replays_results;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the PolicySimulator service.
+     * Service definition for PolicySimulator (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Policy Simulator is a collection of endpoints for creating, running, and
+     * viewing a Replay. A `Replay` is a type of simulation that lets you see how
+     * your members' access to resources might change if you changed your IAM
+     * policy. During a `Replay`, Policy Simulator re-evaluates, or replays, past
+     * access attempts under both the current policy and your proposed policy, and
+     * compares those results to determine how your members' access might change
+     * under the proposed policy.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/iam/docs/simulating-access" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class PolicySimulator extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $folders_locations_accessPolicySimulations_operations;
+        public $folders_locations_orgPolicyViolationsPreviews_operations;
+        public $folders_locations_replays;
+        public $folders_locations_replays_operations;
+        public $folders_locations_replays_results;
+        public $operations;
+        public $organizations_locations_accessPolicySimulations_operations;
+        public $organizations_locations_orgPolicyViolationsPreviews;
+        public $organizations_locations_orgPolicyViolationsPreviews_operations;
+        public $organizations_locations_orgPolicyViolationsPreviews_orgPolicyViolations;
+        public $organizations_locations_replays;
+        public $organizations_locations_replays_operations;
+        public $organizations_locations_replays_results;
+        public $projects_locations_accessPolicySimulations_operations;
+        public $projects_locations_orgPolicyViolationsPreviews_operations;
+        public $projects_locations_replays;
+        public $projects_locations_replays_operations;
+        public $projects_locations_replays_results;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the PolicySimulator service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolicySimulator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolicySimulator extends \Google\Service\PolicySimulator
     {
     }
 }

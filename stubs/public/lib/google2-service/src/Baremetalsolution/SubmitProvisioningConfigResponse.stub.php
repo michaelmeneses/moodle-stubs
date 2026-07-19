@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class SubmitProvisioningConfigResponse extends \Google\Model
-{
-    protected $provisioningConfigType = ProvisioningConfig::class;
-    protected $provisioningConfigDataType = '';
-    /**
-     * The submitted provisioning config.
-     *
-     * @param ProvisioningConfig $provisioningConfig
-     */
-    public function setProvisioningConfig(ProvisioningConfig $provisioningConfig)
+namespace Google\Service\Baremetalsolution {
+    class SubmitProvisioningConfigResponse extends \Google\Model
     {
+        protected $provisioningConfigType = ProvisioningConfig::class;
+        protected $provisioningConfigDataType = '';
+        /**
+         * The submitted provisioning config.
+         *
+         * @param ProvisioningConfig $provisioningConfig
+         */
+        public function setProvisioningConfig(ProvisioningConfig $provisioningConfig)
+        {
+        }
+        /**
+         * @return ProvisioningConfig
+         */
+        public function getProvisioningConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProvisioningConfig
+     * Runtime class alias of \Google\Service\Baremetalsolution\SubmitProvisioningConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProvisioningConfig()
+    class Google_Service_Baremetalsolution_SubmitProvisioningConfigResponse extends \Google\Service\Baremetalsolution\SubmitProvisioningConfigResponse
     {
     }
 }

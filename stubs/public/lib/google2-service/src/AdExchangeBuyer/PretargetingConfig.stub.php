@@ -21,226 +21,235 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PretargetingConfig extends \Google\Collection
-{
-    protected $collection_key = 'videoPlayerSizes';
-    public $billingId;
-    public $configId;
-    public $configName;
-    public $creativeType;
-    protected $dimensionsType = PretargetingConfigDimensions::class;
-    protected $dimensionsDataType = 'array';
-    public $excludedContentLabels;
-    public $excludedGeoCriteriaIds;
-    protected $excludedPlacementsType = PretargetingConfigExcludedPlacements::class;
-    protected $excludedPlacementsDataType = 'array';
-    public $excludedUserLists;
-    public $excludedVerticals;
-    public $geoCriteriaIds;
-    public $isActive;
-    public $kind;
-    public $languages;
-    public $maximumQps;
-    public $minimumViewabilityDecile;
-    public $mobileCarriers;
-    public $mobileDevices;
-    public $mobileOperatingSystemVersions;
-    protected $placementsType = PretargetingConfigPlacements::class;
-    protected $placementsDataType = 'array';
-    public $platforms;
-    public $supportedCreativeAttributes;
-    public $userIdentifierDataRequired;
-    public $userLists;
-    public $vendorTypes;
-    public $verticals;
-    protected $videoPlayerSizesType = PretargetingConfigVideoPlayerSizes::class;
-    protected $videoPlayerSizesDataType = 'array';
-    public function setBillingId($billingId)
+namespace Google\Service\AdExchangeBuyer {
+    class PretargetingConfig extends \Google\Collection
     {
+        protected $collection_key = 'videoPlayerSizes';
+        public $billingId;
+        public $configId;
+        public $configName;
+        public $creativeType;
+        protected $dimensionsType = PretargetingConfigDimensions::class;
+        protected $dimensionsDataType = 'array';
+        public $excludedContentLabels;
+        public $excludedGeoCriteriaIds;
+        protected $excludedPlacementsType = PretargetingConfigExcludedPlacements::class;
+        protected $excludedPlacementsDataType = 'array';
+        public $excludedUserLists;
+        public $excludedVerticals;
+        public $geoCriteriaIds;
+        public $isActive;
+        public $kind;
+        public $languages;
+        public $maximumQps;
+        public $minimumViewabilityDecile;
+        public $mobileCarriers;
+        public $mobileDevices;
+        public $mobileOperatingSystemVersions;
+        protected $placementsType = PretargetingConfigPlacements::class;
+        protected $placementsDataType = 'array';
+        public $platforms;
+        public $supportedCreativeAttributes;
+        public $userIdentifierDataRequired;
+        public $userLists;
+        public $vendorTypes;
+        public $verticals;
+        protected $videoPlayerSizesType = PretargetingConfigVideoPlayerSizes::class;
+        protected $videoPlayerSizesDataType = 'array';
+        public function setBillingId($billingId)
+        {
+        }
+        public function getBillingId()
+        {
+        }
+        public function setConfigId($configId)
+        {
+        }
+        public function getConfigId()
+        {
+        }
+        public function setConfigName($configName)
+        {
+        }
+        public function getConfigName()
+        {
+        }
+        public function setCreativeType($creativeType)
+        {
+        }
+        public function getCreativeType()
+        {
+        }
+        /**
+         * @param PretargetingConfigDimensions[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return PretargetingConfigDimensions[]
+         */
+        public function getDimensions()
+        {
+        }
+        public function setExcludedContentLabels($excludedContentLabels)
+        {
+        }
+        public function getExcludedContentLabels()
+        {
+        }
+        public function setExcludedGeoCriteriaIds($excludedGeoCriteriaIds)
+        {
+        }
+        public function getExcludedGeoCriteriaIds()
+        {
+        }
+        /**
+         * @param PretargetingConfigExcludedPlacements[]
+         */
+        public function setExcludedPlacements($excludedPlacements)
+        {
+        }
+        /**
+         * @return PretargetingConfigExcludedPlacements[]
+         */
+        public function getExcludedPlacements()
+        {
+        }
+        public function setExcludedUserLists($excludedUserLists)
+        {
+        }
+        public function getExcludedUserLists()
+        {
+        }
+        public function setExcludedVerticals($excludedVerticals)
+        {
+        }
+        public function getExcludedVerticals()
+        {
+        }
+        public function setGeoCriteriaIds($geoCriteriaIds)
+        {
+        }
+        public function getGeoCriteriaIds()
+        {
+        }
+        public function setIsActive($isActive)
+        {
+        }
+        public function getIsActive()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        public function setLanguages($languages)
+        {
+        }
+        public function getLanguages()
+        {
+        }
+        public function setMaximumQps($maximumQps)
+        {
+        }
+        public function getMaximumQps()
+        {
+        }
+        public function setMinimumViewabilityDecile($minimumViewabilityDecile)
+        {
+        }
+        public function getMinimumViewabilityDecile()
+        {
+        }
+        public function setMobileCarriers($mobileCarriers)
+        {
+        }
+        public function getMobileCarriers()
+        {
+        }
+        public function setMobileDevices($mobileDevices)
+        {
+        }
+        public function getMobileDevices()
+        {
+        }
+        public function setMobileOperatingSystemVersions($mobileOperatingSystemVersions)
+        {
+        }
+        public function getMobileOperatingSystemVersions()
+        {
+        }
+        /**
+         * @param PretargetingConfigPlacements[]
+         */
+        public function setPlacements($placements)
+        {
+        }
+        /**
+         * @return PretargetingConfigPlacements[]
+         */
+        public function getPlacements()
+        {
+        }
+        public function setPlatforms($platforms)
+        {
+        }
+        public function getPlatforms()
+        {
+        }
+        public function setSupportedCreativeAttributes($supportedCreativeAttributes)
+        {
+        }
+        public function getSupportedCreativeAttributes()
+        {
+        }
+        public function setUserIdentifierDataRequired($userIdentifierDataRequired)
+        {
+        }
+        public function getUserIdentifierDataRequired()
+        {
+        }
+        public function setUserLists($userLists)
+        {
+        }
+        public function getUserLists()
+        {
+        }
+        public function setVendorTypes($vendorTypes)
+        {
+        }
+        public function getVendorTypes()
+        {
+        }
+        public function setVerticals($verticals)
+        {
+        }
+        public function getVerticals()
+        {
+        }
+        /**
+         * @param PretargetingConfigVideoPlayerSizes[]
+         */
+        public function setVideoPlayerSizes($videoPlayerSizes)
+        {
+        }
+        /**
+         * @return PretargetingConfigVideoPlayerSizes[]
+         */
+        public function getVideoPlayerSizes()
+        {
+        }
     }
-    public function getBillingId()
-    {
-    }
-    public function setConfigId($configId)
-    {
-    }
-    public function getConfigId()
-    {
-    }
-    public function setConfigName($configName)
-    {
-    }
-    public function getConfigName()
-    {
-    }
-    public function setCreativeType($creativeType)
-    {
-    }
-    public function getCreativeType()
-    {
-    }
+}
+namespace {
     /**
-     * @param PretargetingConfigDimensions[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PretargetingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return PretargetingConfigDimensions[]
-     */
-    public function getDimensions()
-    {
-    }
-    public function setExcludedContentLabels($excludedContentLabels)
-    {
-    }
-    public function getExcludedContentLabels()
-    {
-    }
-    public function setExcludedGeoCriteriaIds($excludedGeoCriteriaIds)
-    {
-    }
-    public function getExcludedGeoCriteriaIds()
-    {
-    }
-    /**
-     * @param PretargetingConfigExcludedPlacements[]
-     */
-    public function setExcludedPlacements($excludedPlacements)
-    {
-    }
-    /**
-     * @return PretargetingConfigExcludedPlacements[]
-     */
-    public function getExcludedPlacements()
-    {
-    }
-    public function setExcludedUserLists($excludedUserLists)
-    {
-    }
-    public function getExcludedUserLists()
-    {
-    }
-    public function setExcludedVerticals($excludedVerticals)
-    {
-    }
-    public function getExcludedVerticals()
-    {
-    }
-    public function setGeoCriteriaIds($geoCriteriaIds)
-    {
-    }
-    public function getGeoCriteriaIds()
-    {
-    }
-    public function setIsActive($isActive)
-    {
-    }
-    public function getIsActive()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    public function setLanguages($languages)
-    {
-    }
-    public function getLanguages()
-    {
-    }
-    public function setMaximumQps($maximumQps)
-    {
-    }
-    public function getMaximumQps()
-    {
-    }
-    public function setMinimumViewabilityDecile($minimumViewabilityDecile)
-    {
-    }
-    public function getMinimumViewabilityDecile()
-    {
-    }
-    public function setMobileCarriers($mobileCarriers)
-    {
-    }
-    public function getMobileCarriers()
-    {
-    }
-    public function setMobileDevices($mobileDevices)
-    {
-    }
-    public function getMobileDevices()
-    {
-    }
-    public function setMobileOperatingSystemVersions($mobileOperatingSystemVersions)
-    {
-    }
-    public function getMobileOperatingSystemVersions()
-    {
-    }
-    /**
-     * @param PretargetingConfigPlacements[]
-     */
-    public function setPlacements($placements)
-    {
-    }
-    /**
-     * @return PretargetingConfigPlacements[]
-     */
-    public function getPlacements()
-    {
-    }
-    public function setPlatforms($platforms)
-    {
-    }
-    public function getPlatforms()
-    {
-    }
-    public function setSupportedCreativeAttributes($supportedCreativeAttributes)
-    {
-    }
-    public function getSupportedCreativeAttributes()
-    {
-    }
-    public function setUserIdentifierDataRequired($userIdentifierDataRequired)
-    {
-    }
-    public function getUserIdentifierDataRequired()
-    {
-    }
-    public function setUserLists($userLists)
-    {
-    }
-    public function getUserLists()
-    {
-    }
-    public function setVendorTypes($vendorTypes)
-    {
-    }
-    public function getVendorTypes()
-    {
-    }
-    public function setVerticals($verticals)
-    {
-    }
-    public function getVerticals()
-    {
-    }
-    /**
-     * @param PretargetingConfigVideoPlayerSizes[]
-     */
-    public function setVideoPlayerSizes($videoPlayerSizes)
-    {
-    }
-    /**
-     * @return PretargetingConfigVideoPlayerSizes[]
-     */
-    public function getVideoPlayerSizes()
+    class Google_Service_AdExchangeBuyer_PretargetingConfig extends \Google\Service\AdExchangeBuyer\PretargetingConfig
     {
     }
 }

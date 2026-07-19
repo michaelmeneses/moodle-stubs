@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainConversationQualityMetadata extends \Google\Collection
-{
-    protected $collection_key = 'feedbackLabels';
-    protected $agentInfoType = GoogleCloudContactcenterinsightsV1mainConversationQualityMetadataAgentInfo::class;
-    protected $agentInfoDataType = 'array';
-    /**
-     * An arbitrary integer value indicating the customer's satisfaction rating.
-     *
-     * @var int
-     */
-    public $customerSatisfactionRating;
-    protected $feedbackLabelsType = GoogleCloudContactcenterinsightsV1mainFeedbackLabel::class;
-    protected $feedbackLabelsDataType = 'array';
-    /**
-     * An arbitrary string value specifying the menu path the customer took.
-     *
-     * @var string
-     */
-    public $menuPath;
-    /**
-     * The amount of time the customer waited to connect with an agent.
-     *
-     * @var string
-     */
-    public $waitDuration;
-    /**
-     * Information about agents involved in the call.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainConversationQualityMetadataAgentInfo[] $agentInfo
-     */
-    public function setAgentInfo($agentInfo)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainConversationQualityMetadata extends \Google\Collection
     {
+        protected $collection_key = 'feedbackLabels';
+        protected $agentInfoType = GoogleCloudContactcenterinsightsV1mainConversationQualityMetadataAgentInfo::class;
+        protected $agentInfoDataType = 'array';
+        /**
+         * An arbitrary integer value indicating the customer's satisfaction rating.
+         *
+         * @var int
+         */
+        public $customerSatisfactionRating;
+        protected $feedbackLabelsType = GoogleCloudContactcenterinsightsV1mainFeedbackLabel::class;
+        protected $feedbackLabelsDataType = 'array';
+        /**
+         * An arbitrary string value specifying the menu path the customer took.
+         *
+         * @var string
+         */
+        public $menuPath;
+        /**
+         * The amount of time the customer waited to connect with an agent.
+         *
+         * @var string
+         */
+        public $waitDuration;
+        /**
+         * Information about agents involved in the call.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainConversationQualityMetadataAgentInfo[] $agentInfo
+         */
+        public function setAgentInfo($agentInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainConversationQualityMetadataAgentInfo[]
+         */
+        public function getAgentInfo()
+        {
+        }
+        /**
+         * An arbitrary integer value indicating the customer's satisfaction rating.
+         *
+         * @param int $customerSatisfactionRating
+         */
+        public function setCustomerSatisfactionRating($customerSatisfactionRating)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCustomerSatisfactionRating()
+        {
+        }
+        /**
+         * Input only. The feedback labels associated with the conversation.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainFeedbackLabel[] $feedbackLabels
+         */
+        public function setFeedbackLabels($feedbackLabels)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainFeedbackLabel[]
+         */
+        public function getFeedbackLabels()
+        {
+        }
+        /**
+         * An arbitrary string value specifying the menu path the customer took.
+         *
+         * @param string $menuPath
+         */
+        public function setMenuPath($menuPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMenuPath()
+        {
+        }
+        /**
+         * The amount of time the customer waited to connect with an agent.
+         *
+         * @param string $waitDuration
+         */
+        public function setWaitDuration($waitDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWaitDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainConversationQualityMetadataAgentInfo[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainConversationQualityMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentInfo()
-    {
-    }
-    /**
-     * An arbitrary integer value indicating the customer's satisfaction rating.
-     *
-     * @param int $customerSatisfactionRating
-     */
-    public function setCustomerSatisfactionRating($customerSatisfactionRating)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCustomerSatisfactionRating()
-    {
-    }
-    /**
-     * Input only. The feedback labels associated with the conversation.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainFeedbackLabel[] $feedbackLabels
-     */
-    public function setFeedbackLabels($feedbackLabels)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainFeedbackLabel[]
-     */
-    public function getFeedbackLabels()
-    {
-    }
-    /**
-     * An arbitrary string value specifying the menu path the customer took.
-     *
-     * @param string $menuPath
-     */
-    public function setMenuPath($menuPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMenuPath()
-    {
-    }
-    /**
-     * The amount of time the customer waited to connect with an agent.
-     *
-     * @param string $waitDuration
-     */
-    public function setWaitDuration($waitDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWaitDuration()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainConversationQualityMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainConversationQualityMetadata
     {
     }
 }

@@ -8,6 +8,9 @@
  */
 namespace PhpXmlRpc\Helper;
 
+use PhpXmlRpc\Exception\HttpException;
+use PhpXmlRpc\PhpXmlRpc;
+use PhpXmlRpc\Traits\LoggerAware;
 class Http
 {
     use LoggerAware;

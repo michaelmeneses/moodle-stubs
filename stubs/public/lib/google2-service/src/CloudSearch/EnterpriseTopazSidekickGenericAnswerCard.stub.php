@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickGenericAnswerCard extends \Google\Model
-{
-    /**
-     * The answer.
-     *
-     * @var string
-     */
-    public $answer;
-    /**
-     * Title or header of the card.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The answer.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickGenericAnswerCard extends \Google\Model
     {
+        /**
+         * The answer.
+         *
+         * @var string
+         */
+        public $answer;
+        /**
+         * Title or header of the card.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The answer.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * Title or header of the card.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickGenericAnswerCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * Title or header of the card.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickGenericAnswerCard extends \Google\Service\CloudSearch\EnterpriseTopazSidekickGenericAnswerCard
     {
     }
 }

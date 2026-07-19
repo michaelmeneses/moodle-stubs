@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class TeamDrive extends \Google\Model
-{
-    /**
-     * This field is deprecated; please see `Drive.name` instead.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rootType = DriveItem::class;
-    protected $rootDataType = '';
-    /**
-     * This field is deprecated; please see `Drive.title` instead.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * This field is deprecated; please see `Drive.name` instead.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DriveActivity {
+    class TeamDrive extends \Google\Model
     {
+        /**
+         * This field is deprecated; please see `Drive.name` instead.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rootType = DriveItem::class;
+        protected $rootDataType = '';
+        /**
+         * This field is deprecated; please see `Drive.title` instead.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * This field is deprecated; please see `Drive.name` instead.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * This field is deprecated; please see `Drive.root` instead.
+         *
+         * @param DriveItem $root
+         */
+        public function setRoot(DriveItem $root)
+        {
+        }
+        /**
+         * @return DriveItem
+         */
+        public function getRoot()
+        {
+        }
+        /**
+         * This field is deprecated; please see `Drive.title` instead.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\TeamDrive registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * This field is deprecated; please see `Drive.root` instead.
-     *
-     * @param DriveItem $root
-     */
-    public function setRoot(DriveItem $root)
-    {
-    }
-    /**
-     * @return DriveItem
-     */
-    public function getRoot()
-    {
-    }
-    /**
-     * This field is deprecated; please see `Drive.title` instead.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DriveActivity_TeamDrive extends \Google\Service\DriveActivity\TeamDrive
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec extends \Google\Model
-{
-    /**
-     * Unspecified database type.
-     */
-    public const TYPE_DATABASE_TYPE_UNSPECIFIED = 'DATABASE_TYPE_UNSPECIFIED';
-    /**
-     * Cloud SQL for PostgreSQL.
-     */
-    public const TYPE_POSTGRES = 'POSTGRES';
-    /**
-     * Cloud SQL for MySQL.
-     */
-    public const TYPE_MYSQL = 'MYSQL';
-    /**
-     * Database name.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Cloud SQL instance ID in the format of `project:location:instance`.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Type of the Cloud SQL database.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Database name.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec extends \Google\Model
     {
+        /**
+         * Unspecified database type.
+         */
+        public const TYPE_DATABASE_TYPE_UNSPECIFIED = 'DATABASE_TYPE_UNSPECIFIED';
+        /**
+         * Cloud SQL for PostgreSQL.
+         */
+        public const TYPE_POSTGRES = 'POSTGRES';
+        /**
+         * Cloud SQL for MySQL.
+         */
+        public const TYPE_MYSQL = 'MYSQL';
+        /**
+         * Database name.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Cloud SQL instance ID in the format of `project:location:instance`.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Type of the Cloud SQL database.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Database name.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Cloud SQL instance ID in the format of `project:location:instance`.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Type of the Cloud SQL database.
+         *
+         * Accepted values: DATABASE_TYPE_UNSPECIFIED, POSTGRES, MYSQL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Cloud SQL instance ID in the format of `project:location:instance`.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Type of the Cloud SQL database.
-     *
-     * Accepted values: DATABASE_TYPE_UNSPECIFIED, POSTGRES, MYSQL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec
     {
     }
 }

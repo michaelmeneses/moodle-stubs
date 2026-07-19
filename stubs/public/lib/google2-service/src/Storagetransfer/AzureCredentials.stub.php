@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class AzureCredentials extends \Google\Model
-{
-    /**
-     * Required. Azure shared access signature (SAS). For more information about
-     * SAS, see [Grant limited access to Azure Storage resources using shared
-     * access signatures (SAS)](https://docs.microsoft.com/en-
-     * us/azure/storage/common/storage-sas-overview).
-     *
-     * @var string
-     */
-    public $sasToken;
-    /**
-     * Required. Azure shared access signature (SAS). For more information about
-     * SAS, see [Grant limited access to Azure Storage resources using shared
-     * access signatures (SAS)](https://docs.microsoft.com/en-
-     * us/azure/storage/common/storage-sas-overview).
-     *
-     * @param string $sasToken
-     */
-    public function setSasToken($sasToken)
+namespace Google\Service\Storagetransfer {
+    class AzureCredentials extends \Google\Model
     {
+        /**
+         * Required. Azure shared access signature (SAS). For more information about
+         * SAS, see [Grant limited access to Azure Storage resources using shared
+         * access signatures (SAS)](https://docs.microsoft.com/en-
+         * us/azure/storage/common/storage-sas-overview).
+         *
+         * @var string
+         */
+        public $sasToken;
+        /**
+         * Required. Azure shared access signature (SAS). For more information about
+         * SAS, see [Grant limited access to Azure Storage resources using shared
+         * access signatures (SAS)](https://docs.microsoft.com/en-
+         * us/azure/storage/common/storage-sas-overview).
+         *
+         * @param string $sasToken
+         */
+        public function setSasToken($sasToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSasToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\AzureCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSasToken()
+    class Google_Service_Storagetransfer_AzureCredentials extends \Google\Service\Storagetransfer\AzureCredentials
     {
     }
 }

@@ -21,66 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom\Resource;
-
-/**
- * The "studentSubmissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $classroomService = new Google\Service\Classroom(...);
- *   $studentSubmissions = $classroomService->courses_posts_addOnAttachments_studentSubmissions;
- *  </code>
- */
-class CoursesPostsAddOnAttachmentsStudentSubmissions extends \Google\Service\Resource
-{
+namespace Google\Service\Classroom\Resource {
+    use Google\Service\Classroom\AddOnAttachmentStudentSubmission;
     /**
-     * Returns a student submission for an add-on attachment. This method returns
-     * the following error codes: * `PERMISSION_DENIED` for access errors. *
-     * `INVALID_ARGUMENT` if the request is malformed. * `NOT_FOUND` if one of the
-     * identified resources does not exist. (studentSubmissions.get)
-     *
-     * @param string $courseId Required. Identifier of the course.
-     * @param string $postId Optional. Deprecated, use `item_id` instead.
-     * @param string $attachmentId Required. Identifier of the attachment.
-     * @param string $submissionId Required. Identifier of the student’s submission.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string itemId Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached. This field is
-     * required, but is not marked as such while we are migrating from post_id.
-     * @return AddOnAttachmentStudentSubmission
-     * @throws \Google\Service\Exception
+     * The "studentSubmissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $classroomService = new Google\Service\Classroom(...);
+     *   $studentSubmissions = $classroomService->courses_posts_addOnAttachments_studentSubmissions;
+     *  </code>
      */
-    public function get($courseId, $postId, $attachmentId, $submissionId, $optParams = [])
+    class CoursesPostsAddOnAttachmentsStudentSubmissions extends \Google\Service\Resource
     {
+        /**
+         * Returns a student submission for an add-on attachment. This method returns
+         * the following error codes: * `PERMISSION_DENIED` for access errors. *
+         * `INVALID_ARGUMENT` if the request is malformed. * `NOT_FOUND` if one of the
+         * identified resources does not exist. (studentSubmissions.get)
+         *
+         * @param string $courseId Required. Identifier of the course.
+         * @param string $postId Optional. Deprecated, use `item_id` instead.
+         * @param string $attachmentId Required. Identifier of the attachment.
+         * @param string $submissionId Required. Identifier of the student’s submission.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string itemId Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached. This field is
+         * required, but is not marked as such while we are migrating from post_id.
+         * @return AddOnAttachmentStudentSubmission
+         * @throws \Google\Service\Exception
+         */
+        public function get($courseId, $postId, $attachmentId, $submissionId, $optParams = [])
+        {
+        }
+        /**
+         * Updates data associated with an add-on attachment submission. Requires the
+         * add-on to have been the original creator of the attachment and the attachment
+         * to have a positive `max_points` value set. This method returns the following
+         * error codes: * `PERMISSION_DENIED` for access errors. * `INVALID_ARGUMENT` if
+         * the request is malformed. * `NOT_FOUND` if one of the identified resources
+         * does not exist. (studentSubmissions.patch)
+         *
+         * @param string $courseId Required. Identifier of the course.
+         * @param string $postId Optional. Deprecated, use `item_id` instead.
+         * @param string $attachmentId Required. Identifier of the attachment.
+         * @param string $submissionId Required. Identifier of the student's submission.
+         * @param AddOnAttachmentStudentSubmission $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string itemId Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached. This field is
+         * required, but is not marked as such while we are migrating from post_id.
+         * @opt_param string updateMask Required. Mask that identifies which fields on
+         * the attachment to update. The update fails if invalid fields are specified.
+         * If a field supports empty values, it can be cleared by specifying it in the
+         * update mask and not in the `AddOnAttachmentStudentSubmission` object. The
+         * following fields may be specified by teachers: * `points_earned`
+         * @return AddOnAttachmentStudentSubmission
+         * @throws \Google\Service\Exception
+         */
+        public function patch($courseId, $postId, $attachmentId, $submissionId, AddOnAttachmentStudentSubmission $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates data associated with an add-on attachment submission. Requires the
-     * add-on to have been the original creator of the attachment and the attachment
-     * to have a positive `max_points` value set. This method returns the following
-     * error codes: * `PERMISSION_DENIED` for access errors. * `INVALID_ARGUMENT` if
-     * the request is malformed. * `NOT_FOUND` if one of the identified resources
-     * does not exist. (studentSubmissions.patch)
-     *
-     * @param string $courseId Required. Identifier of the course.
-     * @param string $postId Optional. Deprecated, use `item_id` instead.
-     * @param string $attachmentId Required. Identifier of the attachment.
-     * @param string $submissionId Required. Identifier of the student's submission.
-     * @param AddOnAttachmentStudentSubmission $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string itemId Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached. This field is
-     * required, but is not marked as such while we are migrating from post_id.
-     * @opt_param string updateMask Required. Mask that identifies which fields on
-     * the attachment to update. The update fails if invalid fields are specified.
-     * If a field supports empty values, it can be cleared by specifying it in the
-     * update mask and not in the `AddOnAttachmentStudentSubmission` object. The
-     * following fields may be specified by teachers: * `points_earned`
-     * @return AddOnAttachmentStudentSubmission
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Classroom\Resource\CoursesPostsAddOnAttachmentsStudentSubmissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($courseId, $postId, $attachmentId, $submissionId, AddOnAttachmentStudentSubmission $postBody, $optParams = [])
+    class Google_Service_Classroom_Resource_CoursesPostsAddOnAttachmentsStudentSubmissions extends \Google\Service\Classroom\Resource\CoursesPostsAddOnAttachmentsStudentSubmissions
     {
     }
 }

@@ -30,6 +30,7 @@
  */
 namespace tool_mfa\local\factor;
 
+use stdClass;
 interface object_factor
 {
     /**

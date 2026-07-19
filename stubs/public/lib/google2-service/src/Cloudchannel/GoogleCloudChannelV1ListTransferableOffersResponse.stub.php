@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListTransferableOffersResponse extends \Google\Collection
-{
-    protected $collection_key = 'transferableOffers';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTransferableOffersRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transferableOffersType = GoogleCloudChannelV1TransferableOffer::class;
-    protected $transferableOffersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTransferableOffersRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListTransferableOffersResponse extends \Google\Collection
     {
+        protected $collection_key = 'transferableOffers';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTransferableOffersRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transferableOffersType = GoogleCloudChannelV1TransferableOffer::class;
+        protected $transferableOffersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTransferableOffersRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Information about Offers for a customer that can be used for transfer.
+         *
+         * @param GoogleCloudChannelV1TransferableOffer[] $transferableOffers
+         */
+        public function setTransferableOffers($transferableOffers)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1TransferableOffer[]
+         */
+        public function getTransferableOffers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Information about Offers for a customer that can be used for transfer.
-     *
-     * @param GoogleCloudChannelV1TransferableOffer[] $transferableOffers
-     */
-    public function setTransferableOffers($transferableOffers)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1TransferableOffer[]
-     */
-    public function getTransferableOffers()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListTransferableOffersResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersResponse
     {
     }
 }

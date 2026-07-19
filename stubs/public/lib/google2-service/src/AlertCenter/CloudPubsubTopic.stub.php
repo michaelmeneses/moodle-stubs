@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class CloudPubsubTopic extends \Google\Model
-{
-    /**
-     * Payload format is not specified (will use JSON as default).
-     */
-    public const PAYLOAD_FORMAT_PAYLOAD_FORMAT_UNSPECIFIED = 'PAYLOAD_FORMAT_UNSPECIFIED';
-    /**
-     * Use JSON.
-     */
-    public const PAYLOAD_FORMAT_JSON = 'JSON';
-    /**
-     * Optional. The format of the payload that would be sent. If not specified
-     * the format will be JSON.
-     *
-     * @var string
-     */
-    public $payloadFormat;
-    /**
-     * The `name` field of a Cloud Pubsub [Topic] (https://cloud.google.com/pubsub
-     * /docs/reference/rest/v1/projects.topics#Topic).
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * Optional. The format of the payload that would be sent. If not specified
-     * the format will be JSON.
-     *
-     * Accepted values: PAYLOAD_FORMAT_UNSPECIFIED, JSON
-     *
-     * @param self::PAYLOAD_FORMAT_* $payloadFormat
-     */
-    public function setPayloadFormat($payloadFormat)
+namespace Google\Service\AlertCenter {
+    class CloudPubsubTopic extends \Google\Model
     {
+        /**
+         * Payload format is not specified (will use JSON as default).
+         */
+        public const PAYLOAD_FORMAT_PAYLOAD_FORMAT_UNSPECIFIED = 'PAYLOAD_FORMAT_UNSPECIFIED';
+        /**
+         * Use JSON.
+         */
+        public const PAYLOAD_FORMAT_JSON = 'JSON';
+        /**
+         * Optional. The format of the payload that would be sent. If not specified
+         * the format will be JSON.
+         *
+         * @var string
+         */
+        public $payloadFormat;
+        /**
+         * The `name` field of a Cloud Pubsub [Topic] (https://cloud.google.com/pubsub
+         * /docs/reference/rest/v1/projects.topics#Topic).
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * Optional. The format of the payload that would be sent. If not specified
+         * the format will be JSON.
+         *
+         * Accepted values: PAYLOAD_FORMAT_UNSPECIFIED, JSON
+         *
+         * @param self::PAYLOAD_FORMAT_* $payloadFormat
+         */
+        public function setPayloadFormat($payloadFormat)
+        {
+        }
+        /**
+         * @return self::PAYLOAD_FORMAT_*
+         */
+        public function getPayloadFormat()
+        {
+        }
+        /**
+         * The `name` field of a Cloud Pubsub [Topic] (https://cloud.google.com/pubsub
+         * /docs/reference/rest/v1/projects.topics#Topic).
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PAYLOAD_FORMAT_*
+     * Runtime class alias of \Google\Service\AlertCenter\CloudPubsubTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayloadFormat()
-    {
-    }
-    /**
-     * The `name` field of a Cloud Pubsub [Topic] (https://cloud.google.com/pubsub
-     * /docs/reference/rest/v1/projects.topics#Topic).
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicName()
+    class Google_Service_AlertCenter_CloudPubsubTopic extends \Google\Service\AlertCenter\CloudPubsubTopic
     {
     }
 }

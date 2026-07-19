@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ChromeBrowserProfileCommandCommandResult extends \Google\Model
-{
-    /**
-     * Represents an unspecified command result.
-     */
-    public const RESULT_TYPE_COMMAND_RESULT_TYPE_UNSPECIFIED = 'COMMAND_RESULT_TYPE_UNSPECIFIED';
-    /**
-     * Represents a command with an ignored result.
-     */
-    public const RESULT_TYPE_IGNORED = 'IGNORED';
-    /**
-     * Represents a failed command.
-     */
-    public const RESULT_TYPE_FAILURE = 'FAILURE';
-    /**
-     * Represents a succeeded command.
-     */
-    public const RESULT_TYPE_SUCCESS = 'SUCCESS';
-    /**
-     * Output only. Timestamp of the client execution of the remote command.
-     *
-     * @var string
-     */
-    public $clientExecutionTime;
-    /**
-     * Output only. Result code that indicates the type of error or success of the
-     * command.
-     *
-     * @var string
-     */
-    public $resultCode;
-    /**
-     * Output only. Result type of the remote command.
-     *
-     * @var string
-     */
-    public $resultType;
-    /**
-     * Output only. Timestamp of the client execution of the remote command.
-     *
-     * @param string $clientExecutionTime
-     */
-    public function setClientExecutionTime($clientExecutionTime)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ChromeBrowserProfileCommandCommandResult extends \Google\Model
     {
+        /**
+         * Represents an unspecified command result.
+         */
+        public const RESULT_TYPE_COMMAND_RESULT_TYPE_UNSPECIFIED = 'COMMAND_RESULT_TYPE_UNSPECIFIED';
+        /**
+         * Represents a command with an ignored result.
+         */
+        public const RESULT_TYPE_IGNORED = 'IGNORED';
+        /**
+         * Represents a failed command.
+         */
+        public const RESULT_TYPE_FAILURE = 'FAILURE';
+        /**
+         * Represents a succeeded command.
+         */
+        public const RESULT_TYPE_SUCCESS = 'SUCCESS';
+        /**
+         * Output only. Timestamp of the client execution of the remote command.
+         *
+         * @var string
+         */
+        public $clientExecutionTime;
+        /**
+         * Output only. Result code that indicates the type of error or success of the
+         * command.
+         *
+         * @var string
+         */
+        public $resultCode;
+        /**
+         * Output only. Result type of the remote command.
+         *
+         * @var string
+         */
+        public $resultType;
+        /**
+         * Output only. Timestamp of the client execution of the remote command.
+         *
+         * @param string $clientExecutionTime
+         */
+        public function setClientExecutionTime($clientExecutionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientExecutionTime()
+        {
+        }
+        /**
+         * Output only. Result code that indicates the type of error or success of the
+         * command.
+         *
+         * @param string $resultCode
+         */
+        public function setResultCode($resultCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultCode()
+        {
+        }
+        /**
+         * Output only. Result type of the remote command.
+         *
+         * Accepted values: COMMAND_RESULT_TYPE_UNSPECIFIED, IGNORED, FAILURE, SUCCESS
+         *
+         * @param self::RESULT_TYPE_* $resultType
+         */
+        public function setResultType($resultType)
+        {
+        }
+        /**
+         * @return self::RESULT_TYPE_*
+         */
+        public function getResultType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeBrowserProfileCommandCommandResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientExecutionTime()
-    {
-    }
-    /**
-     * Output only. Result code that indicates the type of error or success of the
-     * command.
-     *
-     * @param string $resultCode
-     */
-    public function setResultCode($resultCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultCode()
-    {
-    }
-    /**
-     * Output only. Result type of the remote command.
-     *
-     * Accepted values: COMMAND_RESULT_TYPE_UNSPECIFIED, IGNORED, FAILURE, SUCCESS
-     *
-     * @param self::RESULT_TYPE_* $resultType
-     */
-    public function setResultType($resultType)
-    {
-    }
-    /**
-     * @return self::RESULT_TYPE_*
-     */
-    public function getResultType()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ChromeBrowserProfileCommandCommandResult extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeBrowserProfileCommandCommandResult
     {
     }
 }

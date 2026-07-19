@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class OriginUri extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dash;
-    /**
-     * @var string
-     */
-    public $hls;
-    /**
-     * @param string
-     */
-    public function setDash($dash)
+namespace Google\Service\Transcoder {
+    class OriginUri extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dash;
+        /**
+         * @var string
+         */
+        public $hls;
+        /**
+         * @param string
+         */
+        public function setDash($dash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHls($hls)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\OriginUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHls($hls)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHls()
+    class Google_Service_Transcoder_OriginUri extends \Google\Service\Transcoder\OriginUri
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class Error extends \Google\Model
-{
-    /**
-     * Additional information about the error.
-     *
-     * @var string[]
-     */
-    public $details;
-    /**
-     * The time when the error occurred.
-     *
-     * @var string
-     */
-    public $errorTime;
-    /**
-     * A unique identifier for this specific error, allowing it to be traced
-     * throughout the system in logs and API responses.
-     *
-     * @var string
-     */
-    public $errorUuid;
-    /**
-     * A message containing more information about the error that occurred.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * A title that explains the reason for the error.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Additional information about the error.
-     *
-     * @param string[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\Datastream {
+    class Error extends \Google\Model
     {
+        /**
+         * Additional information about the error.
+         *
+         * @var string[]
+         */
+        public $details;
+        /**
+         * The time when the error occurred.
+         *
+         * @var string
+         */
+        public $errorTime;
+        /**
+         * A unique identifier for this specific error, allowing it to be traced
+         * throughout the system in logs and API responses.
+         *
+         * @var string
+         */
+        public $errorUuid;
+        /**
+         * A message containing more information about the error that occurred.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * A title that explains the reason for the error.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Additional information about the error.
+         *
+         * @param string[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The time when the error occurred.
+         *
+         * @param string $errorTime
+         */
+        public function setErrorTime($errorTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorTime()
+        {
+        }
+        /**
+         * A unique identifier for this specific error, allowing it to be traced
+         * throughout the system in logs and API responses.
+         *
+         * @param string $errorUuid
+         */
+        public function setErrorUuid($errorUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorUuid()
+        {
+        }
+        /**
+         * A message containing more information about the error that occurred.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * A title that explains the reason for the error.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datastream\Error registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The time when the error occurred.
-     *
-     * @param string $errorTime
-     */
-    public function setErrorTime($errorTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorTime()
-    {
-    }
-    /**
-     * A unique identifier for this specific error, allowing it to be traced
-     * throughout the system in logs and API responses.
-     *
-     * @param string $errorUuid
-     */
-    public function setErrorUuid($errorUuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorUuid()
-    {
-    }
-    /**
-     * A message containing more information about the error that occurred.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * A title that explains the reason for the error.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_Datastream_Error extends \Google\Service\Datastream\Error
     {
     }
 }

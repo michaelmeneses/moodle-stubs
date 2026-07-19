@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DataSamplingReport extends \Google\Model
-{
-    /**
-     * Optional. Delta of bytes written to file from previous report.
-     *
-     * @var string
-     */
-    public $bytesWrittenDelta;
-    /**
-     * Optional. Delta of bytes sampled from previous report.
-     *
-     * @var string
-     */
-    public $elementsSampledBytes;
-    /**
-     * Optional. Delta of number of elements sampled from previous report.
-     *
-     * @var string
-     */
-    public $elementsSampledCount;
-    /**
-     * Optional. Delta of number of samples taken from user code exceptions from
-     * previous report.
-     *
-     * @var string
-     */
-    public $exceptionsSampledCount;
-    /**
-     * Optional. Delta of number of PCollections sampled from previous report.
-     *
-     * @var string
-     */
-    public $pcollectionsSampledCount;
-    /**
-     * Optional. Delta of errors counts from persisting the samples from previous
-     * report.
-     *
-     * @var string
-     */
-    public $persistenceErrorsCount;
-    /**
-     * Optional. Delta of errors counts from retrieving, or translating the
-     * samples from previous report.
-     *
-     * @var string
-     */
-    public $translationErrorsCount;
-    /**
-     * Optional. Delta of bytes written to file from previous report.
-     *
-     * @param string $bytesWrittenDelta
-     */
-    public function setBytesWrittenDelta($bytesWrittenDelta)
+namespace Google\Service\Dataflow {
+    class DataSamplingReport extends \Google\Model
     {
+        /**
+         * Optional. Delta of bytes written to file from previous report.
+         *
+         * @var string
+         */
+        public $bytesWrittenDelta;
+        /**
+         * Optional. Delta of bytes sampled from previous report.
+         *
+         * @var string
+         */
+        public $elementsSampledBytes;
+        /**
+         * Optional. Delta of number of elements sampled from previous report.
+         *
+         * @var string
+         */
+        public $elementsSampledCount;
+        /**
+         * Optional. Delta of number of samples taken from user code exceptions from
+         * previous report.
+         *
+         * @var string
+         */
+        public $exceptionsSampledCount;
+        /**
+         * Optional. Delta of number of PCollections sampled from previous report.
+         *
+         * @var string
+         */
+        public $pcollectionsSampledCount;
+        /**
+         * Optional. Delta of errors counts from persisting the samples from previous
+         * report.
+         *
+         * @var string
+         */
+        public $persistenceErrorsCount;
+        /**
+         * Optional. Delta of errors counts from retrieving, or translating the
+         * samples from previous report.
+         *
+         * @var string
+         */
+        public $translationErrorsCount;
+        /**
+         * Optional. Delta of bytes written to file from previous report.
+         *
+         * @param string $bytesWrittenDelta
+         */
+        public function setBytesWrittenDelta($bytesWrittenDelta)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesWrittenDelta()
+        {
+        }
+        /**
+         * Optional. Delta of bytes sampled from previous report.
+         *
+         * @param string $elementsSampledBytes
+         */
+        public function setElementsSampledBytes($elementsSampledBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElementsSampledBytes()
+        {
+        }
+        /**
+         * Optional. Delta of number of elements sampled from previous report.
+         *
+         * @param string $elementsSampledCount
+         */
+        public function setElementsSampledCount($elementsSampledCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElementsSampledCount()
+        {
+        }
+        /**
+         * Optional. Delta of number of samples taken from user code exceptions from
+         * previous report.
+         *
+         * @param string $exceptionsSampledCount
+         */
+        public function setExceptionsSampledCount($exceptionsSampledCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExceptionsSampledCount()
+        {
+        }
+        /**
+         * Optional. Delta of number of PCollections sampled from previous report.
+         *
+         * @param string $pcollectionsSampledCount
+         */
+        public function setPcollectionsSampledCount($pcollectionsSampledCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPcollectionsSampledCount()
+        {
+        }
+        /**
+         * Optional. Delta of errors counts from persisting the samples from previous
+         * report.
+         *
+         * @param string $persistenceErrorsCount
+         */
+        public function setPersistenceErrorsCount($persistenceErrorsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPersistenceErrorsCount()
+        {
+        }
+        /**
+         * Optional. Delta of errors counts from retrieving, or translating the
+         * samples from previous report.
+         *
+         * @param string $translationErrorsCount
+         */
+        public function setTranslationErrorsCount($translationErrorsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTranslationErrorsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\DataSamplingReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesWrittenDelta()
-    {
-    }
-    /**
-     * Optional. Delta of bytes sampled from previous report.
-     *
-     * @param string $elementsSampledBytes
-     */
-    public function setElementsSampledBytes($elementsSampledBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElementsSampledBytes()
-    {
-    }
-    /**
-     * Optional. Delta of number of elements sampled from previous report.
-     *
-     * @param string $elementsSampledCount
-     */
-    public function setElementsSampledCount($elementsSampledCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElementsSampledCount()
-    {
-    }
-    /**
-     * Optional. Delta of number of samples taken from user code exceptions from
-     * previous report.
-     *
-     * @param string $exceptionsSampledCount
-     */
-    public function setExceptionsSampledCount($exceptionsSampledCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExceptionsSampledCount()
-    {
-    }
-    /**
-     * Optional. Delta of number of PCollections sampled from previous report.
-     *
-     * @param string $pcollectionsSampledCount
-     */
-    public function setPcollectionsSampledCount($pcollectionsSampledCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPcollectionsSampledCount()
-    {
-    }
-    /**
-     * Optional. Delta of errors counts from persisting the samples from previous
-     * report.
-     *
-     * @param string $persistenceErrorsCount
-     */
-    public function setPersistenceErrorsCount($persistenceErrorsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPersistenceErrorsCount()
-    {
-    }
-    /**
-     * Optional. Delta of errors counts from retrieving, or translating the
-     * samples from previous report.
-     *
-     * @param string $translationErrorsCount
-     */
-    public function setTranslationErrorsCount($translationErrorsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTranslationErrorsCount()
+    class Google_Service_Dataflow_DataSamplingReport extends \Google\Service\Dataflow\DataSamplingReport
     {
     }
 }

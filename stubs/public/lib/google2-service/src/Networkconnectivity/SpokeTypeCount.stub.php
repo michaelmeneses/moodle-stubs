@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class SpokeTypeCount extends \Google\Model
-{
-    /**
-     * Unspecified spoke type.
-     */
-    public const SPOKE_TYPE_SPOKE_TYPE_UNSPECIFIED = 'SPOKE_TYPE_UNSPECIFIED';
-    /**
-     * Spokes associated with VPN tunnels.
-     */
-    public const SPOKE_TYPE_VPN_TUNNEL = 'VPN_TUNNEL';
-    /**
-     * Spokes associated with VLAN attachments.
-     */
-    public const SPOKE_TYPE_INTERCONNECT_ATTACHMENT = 'INTERCONNECT_ATTACHMENT';
-    /**
-     * Spokes associated with router appliance instances.
-     */
-    public const SPOKE_TYPE_ROUTER_APPLIANCE = 'ROUTER_APPLIANCE';
-    /**
-     * Spokes associated with VPC networks.
-     */
-    public const SPOKE_TYPE_VPC_NETWORK = 'VPC_NETWORK';
-    /**
-     * Spokes that are backed by a producer VPC network.
-     */
-    public const SPOKE_TYPE_PRODUCER_VPC_NETWORK = 'PRODUCER_VPC_NETWORK';
-    /**
-     * Output only. The total number of spokes of this type that are associated
-     * with the hub.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Output only. The type of the spokes.
-     *
-     * @var string
-     */
-    public $spokeType;
-    /**
-     * Output only. The total number of spokes of this type that are associated
-     * with the hub.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\Networkconnectivity {
+    class SpokeTypeCount extends \Google\Model
     {
+        /**
+         * Unspecified spoke type.
+         */
+        public const SPOKE_TYPE_SPOKE_TYPE_UNSPECIFIED = 'SPOKE_TYPE_UNSPECIFIED';
+        /**
+         * Spokes associated with VPN tunnels.
+         */
+        public const SPOKE_TYPE_VPN_TUNNEL = 'VPN_TUNNEL';
+        /**
+         * Spokes associated with VLAN attachments.
+         */
+        public const SPOKE_TYPE_INTERCONNECT_ATTACHMENT = 'INTERCONNECT_ATTACHMENT';
+        /**
+         * Spokes associated with router appliance instances.
+         */
+        public const SPOKE_TYPE_ROUTER_APPLIANCE = 'ROUTER_APPLIANCE';
+        /**
+         * Spokes associated with VPC networks.
+         */
+        public const SPOKE_TYPE_VPC_NETWORK = 'VPC_NETWORK';
+        /**
+         * Spokes that are backed by a producer VPC network.
+         */
+        public const SPOKE_TYPE_PRODUCER_VPC_NETWORK = 'PRODUCER_VPC_NETWORK';
+        /**
+         * Output only. The total number of spokes of this type that are associated
+         * with the hub.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Output only. The type of the spokes.
+         *
+         * @var string
+         */
+        public $spokeType;
+        /**
+         * Output only. The total number of spokes of this type that are associated
+         * with the hub.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Output only. The type of the spokes.
+         *
+         * Accepted values: SPOKE_TYPE_UNSPECIFIED, VPN_TUNNEL,
+         * INTERCONNECT_ATTACHMENT, ROUTER_APPLIANCE, VPC_NETWORK,
+         * PRODUCER_VPC_NETWORK
+         *
+         * @param self::SPOKE_TYPE_* $spokeType
+         */
+        public function setSpokeType($spokeType)
+        {
+        }
+        /**
+         * @return self::SPOKE_TYPE_*
+         */
+        public function getSpokeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\SpokeTypeCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Output only. The type of the spokes.
-     *
-     * Accepted values: SPOKE_TYPE_UNSPECIFIED, VPN_TUNNEL,
-     * INTERCONNECT_ATTACHMENT, ROUTER_APPLIANCE, VPC_NETWORK,
-     * PRODUCER_VPC_NETWORK
-     *
-     * @param self::SPOKE_TYPE_* $spokeType
-     */
-    public function setSpokeType($spokeType)
-    {
-    }
-    /**
-     * @return self::SPOKE_TYPE_*
-     */
-    public function getSpokeType()
+    class Google_Service_Networkconnectivity_SpokeTypeCount extends \Google\Service\Networkconnectivity\SpokeTypeCount
     {
     }
 }

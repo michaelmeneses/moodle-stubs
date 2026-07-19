@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1EventingConfigDeadLetterConfig extends \Google\Model
-{
-    /**
-     * Optional. Project which has the topic given.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Optional. Topic to push events which couldn't be processed.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Optional. Project which has the topic given.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1EventingConfigDeadLetterConfig extends \Google\Model
     {
+        /**
+         * Optional. Project which has the topic given.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Optional. Topic to push events which couldn't be processed.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Optional. Project which has the topic given.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Optional. Topic to push events which couldn't be processed.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1EventingConfigDeadLetterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Optional. Topic to push events which couldn't be processed.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1EventingConfigDeadLetterConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1EventingConfigDeadLetterConfig
     {
     }
 }

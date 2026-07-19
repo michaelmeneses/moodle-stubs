@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1SignDataRequest extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const SIGNATURE_ALGORITHM_SIGNATURE_ALGORITHM_UNSPECIFIED = 'SIGNATURE_ALGORITHM_UNSPECIFIED';
-    /**
-     * The server-side builds the PKCS#1 DigestInfo and sends a SHA256 hash of it
-     * to the client. The client should sign using RSA with PKCS#1 v1.5 padding.
-     */
-    public const SIGNATURE_ALGORITHM_SIGNATURE_ALGORITHM_RSA_PKCS1_V1_5_SHA256 = 'SIGNATURE_ALGORITHM_RSA_PKCS1_V1_5_SHA256';
-    /**
-     * The server-side builds the PKCS#1 DigestInfo and sends it unhashed to the
-     * client. The client is responsible for signing and hashing using the P-256
-     * curve.
-     */
-    public const SIGNATURE_ALGORITHM_SIGNATURE_ALGORITHM_ECDSA_SHA256 = 'SIGNATURE_ALGORITHM_ECDSA_SHA256';
-    /**
-     * Required. The data that the client was asked to sign.
-     *
-     * @var string
-     */
-    public $signData;
-    /**
-     * Required. The signature algorithm that the adapter expects the client and
-     * backend components to use when processing `sign_data`.
-     *
-     * @var string
-     */
-    public $signatureAlgorithm;
-    /**
-     * Required. The data that the client was asked to sign.
-     *
-     * @param string $signData
-     */
-    public function setSignData($signData)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1SignDataRequest extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const SIGNATURE_ALGORITHM_SIGNATURE_ALGORITHM_UNSPECIFIED = 'SIGNATURE_ALGORITHM_UNSPECIFIED';
+        /**
+         * The server-side builds the PKCS#1 DigestInfo and sends a SHA256 hash of it
+         * to the client. The client should sign using RSA with PKCS#1 v1.5 padding.
+         */
+        public const SIGNATURE_ALGORITHM_SIGNATURE_ALGORITHM_RSA_PKCS1_V1_5_SHA256 = 'SIGNATURE_ALGORITHM_RSA_PKCS1_V1_5_SHA256';
+        /**
+         * The server-side builds the PKCS#1 DigestInfo and sends it unhashed to the
+         * client. The client is responsible for signing and hashing using the P-256
+         * curve.
+         */
+        public const SIGNATURE_ALGORITHM_SIGNATURE_ALGORITHM_ECDSA_SHA256 = 'SIGNATURE_ALGORITHM_ECDSA_SHA256';
+        /**
+         * Required. The data that the client was asked to sign.
+         *
+         * @var string
+         */
+        public $signData;
+        /**
+         * Required. The signature algorithm that the adapter expects the client and
+         * backend components to use when processing `sign_data`.
+         *
+         * @var string
+         */
+        public $signatureAlgorithm;
+        /**
+         * Required. The data that the client was asked to sign.
+         *
+         * @param string $signData
+         */
+        public function setSignData($signData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignData()
+        {
+        }
+        /**
+         * Required. The signature algorithm that the adapter expects the client and
+         * backend components to use when processing `sign_data`.
+         *
+         * Accepted values: SIGNATURE_ALGORITHM_UNSPECIFIED,
+         * SIGNATURE_ALGORITHM_RSA_PKCS1_V1_5_SHA256, SIGNATURE_ALGORITHM_ECDSA_SHA256
+         *
+         * @param self::SIGNATURE_ALGORITHM_* $signatureAlgorithm
+         */
+        public function setSignatureAlgorithm($signatureAlgorithm)
+        {
+        }
+        /**
+         * @return self::SIGNATURE_ALGORITHM_*
+         */
+        public function getSignatureAlgorithm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SignDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSignData()
-    {
-    }
-    /**
-     * Required. The signature algorithm that the adapter expects the client and
-     * backend components to use when processing `sign_data`.
-     *
-     * Accepted values: SIGNATURE_ALGORITHM_UNSPECIFIED,
-     * SIGNATURE_ALGORITHM_RSA_PKCS1_V1_5_SHA256, SIGNATURE_ALGORITHM_ECDSA_SHA256
-     *
-     * @param self::SIGNATURE_ALGORITHM_* $signatureAlgorithm
-     */
-    public function setSignatureAlgorithm($signatureAlgorithm)
-    {
-    }
-    /**
-     * @return self::SIGNATURE_ALGORITHM_*
-     */
-    public function getSignatureAlgorithm()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1SignDataRequest extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SignDataRequest
     {
     }
 }

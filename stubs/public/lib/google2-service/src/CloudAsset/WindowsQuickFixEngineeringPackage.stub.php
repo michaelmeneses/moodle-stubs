@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class WindowsQuickFixEngineeringPackage extends \Google\Model
-{
-    /**
-     * A short textual description of the QFE update.
-     *
-     * @var string
-     */
-    public $caption;
-    /**
-     * A textual description of the QFE update.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Unique identifier associated with a particular QFE update.
-     *
-     * @var string
-     */
-    public $hotFixId;
-    /**
-     * Date that the QFE update was installed. Mapped from installed_on field.
-     *
-     * @var string
-     */
-    public $installTime;
-    /**
-     * A short textual description of the QFE update.
-     *
-     * @param string $caption
-     */
-    public function setCaption($caption)
+namespace Google\Service\CloudAsset {
+    class WindowsQuickFixEngineeringPackage extends \Google\Model
     {
+        /**
+         * A short textual description of the QFE update.
+         *
+         * @var string
+         */
+        public $caption;
+        /**
+         * A textual description of the QFE update.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Unique identifier associated with a particular QFE update.
+         *
+         * @var string
+         */
+        public $hotFixId;
+        /**
+         * Date that the QFE update was installed. Mapped from installed_on field.
+         *
+         * @var string
+         */
+        public $installTime;
+        /**
+         * A short textual description of the QFE update.
+         *
+         * @param string $caption
+         */
+        public function setCaption($caption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaption()
+        {
+        }
+        /**
+         * A textual description of the QFE update.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Unique identifier associated with a particular QFE update.
+         *
+         * @param string $hotFixId
+         */
+        public function setHotFixId($hotFixId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHotFixId()
+        {
+        }
+        /**
+         * Date that the QFE update was installed. Mapped from installed_on field.
+         *
+         * @param string $installTime
+         */
+        public function setInstallTime($installTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\WindowsQuickFixEngineeringPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaption()
-    {
-    }
-    /**
-     * A textual description of the QFE update.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Unique identifier associated with a particular QFE update.
-     *
-     * @param string $hotFixId
-     */
-    public function setHotFixId($hotFixId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHotFixId()
-    {
-    }
-    /**
-     * Date that the QFE update was installed. Mapped from installed_on field.
-     *
-     * @param string $installTime
-     */
-    public function setInstallTime($installTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallTime()
+    class Google_Service_CloudAsset_WindowsQuickFixEngineeringPackage extends \Google\Service\CloudAsset\WindowsQuickFixEngineeringPackage
     {
     }
 }

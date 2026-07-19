@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class UpdateContactGroupRequest extends \Google\Model
-{
-    protected $contactGroupType = ContactGroup::class;
-    protected $contactGroupDataType = '';
-    /**
-     * Optional. A field mask to restrict which fields on the group are returned.
-     * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
-     * Valid fields are: * clientData * groupType * memberCount * metadata * name
-     *
-     * @var string
-     */
-    public $readGroupFields;
-    /**
-     * Optional. A field mask to restrict which fields on the group are updated.
-     * Multiple fields can be specified by separating them with commas. Defaults
-     * to `name` if not set or set to empty. Updated fields are replaced. Valid
-     * values are: * clientData * name
-     *
-     * @var string
-     */
-    public $updateGroupFields;
-    /**
-     * Required. The contact group to update.
-     *
-     * @param ContactGroup $contactGroup
-     */
-    public function setContactGroup(ContactGroup $contactGroup)
+namespace Google\Service\PeopleService {
+    class UpdateContactGroupRequest extends \Google\Model
     {
+        protected $contactGroupType = ContactGroup::class;
+        protected $contactGroupDataType = '';
+        /**
+         * Optional. A field mask to restrict which fields on the group are returned.
+         * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
+         * Valid fields are: * clientData * groupType * memberCount * metadata * name
+         *
+         * @var string
+         */
+        public $readGroupFields;
+        /**
+         * Optional. A field mask to restrict which fields on the group are updated.
+         * Multiple fields can be specified by separating them with commas. Defaults
+         * to `name` if not set or set to empty. Updated fields are replaced. Valid
+         * values are: * clientData * name
+         *
+         * @var string
+         */
+        public $updateGroupFields;
+        /**
+         * Required. The contact group to update.
+         *
+         * @param ContactGroup $contactGroup
+         */
+        public function setContactGroup(ContactGroup $contactGroup)
+        {
+        }
+        /**
+         * @return ContactGroup
+         */
+        public function getContactGroup()
+        {
+        }
+        /**
+         * Optional. A field mask to restrict which fields on the group are returned.
+         * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
+         * Valid fields are: * clientData * groupType * memberCount * metadata * name
+         *
+         * @param string $readGroupFields
+         */
+        public function setReadGroupFields($readGroupFields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadGroupFields()
+        {
+        }
+        /**
+         * Optional. A field mask to restrict which fields on the group are updated.
+         * Multiple fields can be specified by separating them with commas. Defaults
+         * to `name` if not set or set to empty. Updated fields are replaced. Valid
+         * values are: * clientData * name
+         *
+         * @param string $updateGroupFields
+         */
+        public function setUpdateGroupFields($updateGroupFields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateGroupFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactGroup
+     * Runtime class alias of \Google\Service\PeopleService\UpdateContactGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactGroup()
-    {
-    }
-    /**
-     * Optional. A field mask to restrict which fields on the group are returned.
-     * Defaults to `metadata`, `groupType`, and `name` if not set or set to empty.
-     * Valid fields are: * clientData * groupType * memberCount * metadata * name
-     *
-     * @param string $readGroupFields
-     */
-    public function setReadGroupFields($readGroupFields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadGroupFields()
-    {
-    }
-    /**
-     * Optional. A field mask to restrict which fields on the group are updated.
-     * Multiple fields can be specified by separating them with commas. Defaults
-     * to `name` if not set or set to empty. Updated fields are replaced. Valid
-     * values are: * clientData * name
-     *
-     * @param string $updateGroupFields
-     */
-    public function setUpdateGroupFields($updateGroupFields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateGroupFields()
+    class Google_Service_PeopleService_UpdateContactGroupRequest extends \Google\Service\PeopleService\UpdateContactGroupRequest
     {
     }
 }

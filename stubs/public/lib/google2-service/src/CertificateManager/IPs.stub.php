@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class IPs extends \Google\Collection
-{
-    protected $collection_key = 'servingOnAltPorts';
-    /**
-     * Output only. The list of IP addresses resolved from the domain's A/AAAA
-     * records. Can contain both ipv4 and ipv6 addresses.
-     *
-     * @var string[]
-     */
-    public $resolved;
-    /**
-     * Output only. The list of IP addresses, where the certificate is attached
-     * and port 443 is open.
-     *
-     * @var string[]
-     */
-    public $serving;
-    /**
-     * Output only. The list of IP addresses, where the certificate is attached,
-     * but port 443 is not open.
-     *
-     * @var string[]
-     */
-    public $servingOnAltPorts;
-    /**
-     * Output only. The list of IP addresses resolved from the domain's A/AAAA
-     * records. Can contain both ipv4 and ipv6 addresses.
-     *
-     * @param string[] $resolved
-     */
-    public function setResolved($resolved)
+namespace Google\Service\CertificateManager {
+    class IPs extends \Google\Collection
     {
+        protected $collection_key = 'servingOnAltPorts';
+        /**
+         * Output only. The list of IP addresses resolved from the domain's A/AAAA
+         * records. Can contain both ipv4 and ipv6 addresses.
+         *
+         * @var string[]
+         */
+        public $resolved;
+        /**
+         * Output only. The list of IP addresses, where the certificate is attached
+         * and port 443 is open.
+         *
+         * @var string[]
+         */
+        public $serving;
+        /**
+         * Output only. The list of IP addresses, where the certificate is attached,
+         * but port 443 is not open.
+         *
+         * @var string[]
+         */
+        public $servingOnAltPorts;
+        /**
+         * Output only. The list of IP addresses resolved from the domain's A/AAAA
+         * records. Can contain both ipv4 and ipv6 addresses.
+         *
+         * @param string[] $resolved
+         */
+        public function setResolved($resolved)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResolved()
+        {
+        }
+        /**
+         * Output only. The list of IP addresses, where the certificate is attached
+         * and port 443 is open.
+         *
+         * @param string[] $serving
+         */
+        public function setServing($serving)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServing()
+        {
+        }
+        /**
+         * Output only. The list of IP addresses, where the certificate is attached,
+         * but port 443 is not open.
+         *
+         * @param string[] $servingOnAltPorts
+         */
+        public function setServingOnAltPorts($servingOnAltPorts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServingOnAltPorts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CertificateManager\IPs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResolved()
-    {
-    }
-    /**
-     * Output only. The list of IP addresses, where the certificate is attached
-     * and port 443 is open.
-     *
-     * @param string[] $serving
-     */
-    public function setServing($serving)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServing()
-    {
-    }
-    /**
-     * Output only. The list of IP addresses, where the certificate is attached,
-     * but port 443 is not open.
-     *
-     * @param string[] $servingOnAltPorts
-     */
-    public function setServingOnAltPorts($servingOnAltPorts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServingOnAltPorts()
+    class Google_Service_CertificateManager_IPs extends \Google\Service\CertificateManager\IPs
     {
     }
 }

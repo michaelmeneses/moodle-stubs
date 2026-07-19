@@ -21,197 +21,206 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class OperationMetadataV1 extends \Google\Model
-{
-    /**
-     * Unknown operation type.
-     */
-    public const TYPE_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
-    /**
-     * Triggered by CreateFunction call
-     */
-    public const TYPE_CREATE_FUNCTION = 'CREATE_FUNCTION';
-    /**
-     * Triggered by UpdateFunction call
-     */
-    public const TYPE_UPDATE_FUNCTION = 'UPDATE_FUNCTION';
-    /**
-     * Triggered by DeleteFunction call.
-     */
-    public const TYPE_DELETE_FUNCTION = 'DELETE_FUNCTION';
-    /**
-     * The Cloud Build ID of the function created or updated by an API call. This
-     * field is only populated for Create and Update operations.
-     *
-     * @var string
-     */
-    public $buildId;
-    /**
-     * The Cloud Build Name of the function deployment. This field is only
-     * populated for Create and Update operations. `projects//locations//builds/`.
-     *
-     * @var string
-     */
-    public $buildName;
-    /**
-     * The original request that started the operation.
-     *
-     * @var array[]
-     */
-    public $request;
-    /**
-     * An identifier for Firebase function sources. Disclaimer: This field is only
-     * supported for Firebase function deployments.
-     *
-     * @var string
-     */
-    public $sourceToken;
-    /**
-     * Target of the operation - for example
-     * `projects/project-1/locations/region-1/functions/function-1`
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Type of operation.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The last update timestamp of the operation.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Version id of the function created or updated by an API call. This field is
-     * only populated for Create and Update operations.
-     *
-     * @var string
-     */
-    public $versionId;
-    /**
-     * The Cloud Build ID of the function created or updated by an API call. This
-     * field is only populated for Create and Update operations.
-     *
-     * @param string $buildId
-     */
-    public function setBuildId($buildId)
+namespace Google\Service\CloudFunctions {
+    class OperationMetadataV1 extends \Google\Model
     {
+        /**
+         * Unknown operation type.
+         */
+        public const TYPE_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
+        /**
+         * Triggered by CreateFunction call
+         */
+        public const TYPE_CREATE_FUNCTION = 'CREATE_FUNCTION';
+        /**
+         * Triggered by UpdateFunction call
+         */
+        public const TYPE_UPDATE_FUNCTION = 'UPDATE_FUNCTION';
+        /**
+         * Triggered by DeleteFunction call.
+         */
+        public const TYPE_DELETE_FUNCTION = 'DELETE_FUNCTION';
+        /**
+         * The Cloud Build ID of the function created or updated by an API call. This
+         * field is only populated for Create and Update operations.
+         *
+         * @var string
+         */
+        public $buildId;
+        /**
+         * The Cloud Build Name of the function deployment. This field is only
+         * populated for Create and Update operations. `projects//locations//builds/`.
+         *
+         * @var string
+         */
+        public $buildName;
+        /**
+         * The original request that started the operation.
+         *
+         * @var array[]
+         */
+        public $request;
+        /**
+         * An identifier for Firebase function sources. Disclaimer: This field is only
+         * supported for Firebase function deployments.
+         *
+         * @var string
+         */
+        public $sourceToken;
+        /**
+         * Target of the operation - for example
+         * `projects/project-1/locations/region-1/functions/function-1`
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Type of operation.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The last update timestamp of the operation.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Version id of the function created or updated by an API call. This field is
+         * only populated for Create and Update operations.
+         *
+         * @var string
+         */
+        public $versionId;
+        /**
+         * The Cloud Build ID of the function created or updated by an API call. This
+         * field is only populated for Create and Update operations.
+         *
+         * @param string $buildId
+         */
+        public function setBuildId($buildId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildId()
+        {
+        }
+        /**
+         * The Cloud Build Name of the function deployment. This field is only
+         * populated for Create and Update operations. `projects//locations//builds/`.
+         *
+         * @param string $buildName
+         */
+        public function setBuildName($buildName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildName()
+        {
+        }
+        /**
+         * The original request that started the operation.
+         *
+         * @param array[] $request
+         */
+        public function setRequest($request)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * An identifier for Firebase function sources. Disclaimer: This field is only
+         * supported for Firebase function deployments.
+         *
+         * @param string $sourceToken
+         */
+        public function setSourceToken($sourceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceToken()
+        {
+        }
+        /**
+         * Target of the operation - for example
+         * `projects/project-1/locations/region-1/functions/function-1`
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Type of operation.
+         *
+         * Accepted values: OPERATION_UNSPECIFIED, CREATE_FUNCTION, UPDATE_FUNCTION,
+         * DELETE_FUNCTION
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The last update timestamp of the operation.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Version id of the function created or updated by an API call. This field is
+         * only populated for Create and Update operations.
+         *
+         * @param string $versionId
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\OperationMetadataV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildId()
-    {
-    }
-    /**
-     * The Cloud Build Name of the function deployment. This field is only
-     * populated for Create and Update operations. `projects//locations//builds/`.
-     *
-     * @param string $buildName
-     */
-    public function setBuildName($buildName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildName()
-    {
-    }
-    /**
-     * The original request that started the operation.
-     *
-     * @param array[] $request
-     */
-    public function setRequest($request)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * An identifier for Firebase function sources. Disclaimer: This field is only
-     * supported for Firebase function deployments.
-     *
-     * @param string $sourceToken
-     */
-    public function setSourceToken($sourceToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceToken()
-    {
-    }
-    /**
-     * Target of the operation - for example
-     * `projects/project-1/locations/region-1/functions/function-1`
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Type of operation.
-     *
-     * Accepted values: OPERATION_UNSPECIFIED, CREATE_FUNCTION, UPDATE_FUNCTION,
-     * DELETE_FUNCTION
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The last update timestamp of the operation.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Version id of the function created or updated by an API call. This field is
-     * only populated for Create and Update operations.
-     *
-     * @param string $versionId
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
+    class Google_Service_CloudFunctions_OperationMetadataV1 extends \Google\Service\CloudFunctions\OperationMetadataV1
     {
     }
 }

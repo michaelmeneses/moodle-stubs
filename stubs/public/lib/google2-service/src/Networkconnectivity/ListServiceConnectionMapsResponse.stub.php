@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListServiceConnectionMapsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $serviceConnectionMapsType = ServiceConnectionMap::class;
-    protected $serviceConnectionMapsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Networkconnectivity {
+    class ListServiceConnectionMapsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $serviceConnectionMapsType = ServiceConnectionMap::class;
+        protected $serviceConnectionMapsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * ServiceConnectionMaps to be returned.
+         *
+         * @param ServiceConnectionMap[] $serviceConnectionMaps
+         */
+        public function setServiceConnectionMaps($serviceConnectionMaps)
+        {
+        }
+        /**
+         * @return ServiceConnectionMap[]
+         */
+        public function getServiceConnectionMaps()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListServiceConnectionMapsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * ServiceConnectionMaps to be returned.
-     *
-     * @param ServiceConnectionMap[] $serviceConnectionMaps
-     */
-    public function setServiceConnectionMaps($serviceConnectionMaps)
-    {
-    }
-    /**
-     * @return ServiceConnectionMap[]
-     */
-    public function getServiceConnectionMaps()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListServiceConnectionMapsResponse extends \Google\Service\Networkconnectivity\ListServiceConnectionMapsResponse
     {
     }
 }

@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications;
-
-class GoogleCloudAdvisorynotificationsV1Message extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    protected $attachmentsType = GoogleCloudAdvisorynotificationsV1Attachment::class;
-    protected $attachmentsDataType = 'array';
-    protected $bodyType = GoogleCloudAdvisorynotificationsV1MessageBody::class;
-    protected $bodyDataType = '';
-    /**
-     * The Message creation timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Time when Message was localized
-     *
-     * @var string
-     */
-    public $localizationTime;
-    /**
-     * The attachments to download.
-     *
-     * @param GoogleCloudAdvisorynotificationsV1Attachment[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\Advisorynotifications {
+    class GoogleCloudAdvisorynotificationsV1Message extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        protected $attachmentsType = GoogleCloudAdvisorynotificationsV1Attachment::class;
+        protected $attachmentsDataType = 'array';
+        protected $bodyType = GoogleCloudAdvisorynotificationsV1MessageBody::class;
+        protected $bodyDataType = '';
+        /**
+         * The Message creation timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Time when Message was localized
+         *
+         * @var string
+         */
+        public $localizationTime;
+        /**
+         * The attachments to download.
+         *
+         * @param GoogleCloudAdvisorynotificationsV1Attachment[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return GoogleCloudAdvisorynotificationsV1Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * The message content.
+         *
+         * @param GoogleCloudAdvisorynotificationsV1MessageBody $body
+         */
+        public function setBody(GoogleCloudAdvisorynotificationsV1MessageBody $body)
+        {
+        }
+        /**
+         * @return GoogleCloudAdvisorynotificationsV1MessageBody
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * The Message creation timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Time when Message was localized
+         *
+         * @param string $localizationTime
+         */
+        public function setLocalizationTime($localizationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalizationTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAdvisorynotificationsV1Attachment[]
+     * Runtime class alias of \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Message registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * The message content.
-     *
-     * @param GoogleCloudAdvisorynotificationsV1MessageBody $body
-     */
-    public function setBody(GoogleCloudAdvisorynotificationsV1MessageBody $body)
-    {
-    }
-    /**
-     * @return GoogleCloudAdvisorynotificationsV1MessageBody
-     */
-    public function getBody()
-    {
-    }
-    /**
-     * The Message creation timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Time when Message was localized
-     *
-     * @param string $localizationTime
-     */
-    public function setLocalizationTime($localizationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalizationTime()
+    class Google_Service_Advisorynotifications_GoogleCloudAdvisorynotificationsV1Message extends \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Message
     {
     }
 }

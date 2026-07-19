@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CandidateResponse extends \Google\Model
-{
-    /**
-     * Required. The name of the candidate that produced the response.
-     *
-     * @var string
-     */
-    public $candidate;
-    /**
-     * Text response.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Fields and values that can be used to populate the response template.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Required. The name of the candidate that produced the response.
-     *
-     * @param string $candidate
-     */
-    public function setCandidate($candidate)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CandidateResponse extends \Google\Model
     {
+        /**
+         * Required. The name of the candidate that produced the response.
+         *
+         * @var string
+         */
+        public $candidate;
+        /**
+         * Text response.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Fields and values that can be used to populate the response template.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Required. The name of the candidate that produced the response.
+         *
+         * @param string $candidate
+         */
+        public function setCandidate($candidate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCandidate()
+        {
+        }
+        /**
+         * Text response.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Fields and values that can be used to populate the response template.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CandidateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidate()
-    {
-    }
-    /**
-     * Text response.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Fields and values that can be used to populate the response template.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CandidateResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CandidateResponse
     {
     }
 }

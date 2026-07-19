@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessQA\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessqandaService = new Google\Service\MyBusinessQA(...);
- *   $locations = $mybusinessqandaService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessQA\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessqandaService = new Google\Service\MyBusinessQA(...);
+     *   $locations = $mybusinessqandaService->locations;
+     *  </code>
+     */
+    class Locations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessQA\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessQA_Resource_Locations extends \Google\Service\MyBusinessQA\Resource\Locations
+    {
+    }
 }

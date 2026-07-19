@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaIntegrationBundleConfig extends \Google\Collection
-{
-    protected $collection_key = 'integrations';
-    /**
-     * @var string[]
-     */
-    public $integrations;
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * @param string[]
-     */
-    public function setIntegrations($integrations)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaIntegrationBundleConfig extends \Google\Collection
     {
+        protected $collection_key = 'integrations';
+        /**
+         * @var string[]
+         */
+        public $integrations;
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * @param string[]
+         */
+        public function setIntegrations($integrations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntegrations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationBundleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaIntegrationBundleConfig extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
     {
     }
 }

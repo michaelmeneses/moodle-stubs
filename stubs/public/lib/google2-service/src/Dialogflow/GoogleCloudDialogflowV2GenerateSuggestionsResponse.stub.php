@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2GenerateSuggestionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'generatorSuggestionAnswers';
-    protected $generatorSuggestionAnswersType = GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer::class;
-    protected $generatorSuggestionAnswersDataType = 'array';
-    /**
-     * The name of the latest conversation message used as context for compiling
-     * suggestion. Format: `projects//locations//conversations//messages/`.
-     *
-     * @var string
-     */
-    public $latestMessage;
-    /**
-     * The answers generated for the conversation based on context.
-     *
-     * @param GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer[] $generatorSuggestionAnswers
-     */
-    public function setGeneratorSuggestionAnswers($generatorSuggestionAnswers)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2GenerateSuggestionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'generatorSuggestionAnswers';
+        protected $generatorSuggestionAnswersType = GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer::class;
+        protected $generatorSuggestionAnswersDataType = 'array';
+        /**
+         * The name of the latest conversation message used as context for compiling
+         * suggestion. Format: `projects//locations//conversations//messages/`.
+         *
+         * @var string
+         */
+        public $latestMessage;
+        /**
+         * The answers generated for the conversation based on context.
+         *
+         * @param GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer[] $generatorSuggestionAnswers
+         */
+        public function setGeneratorSuggestionAnswers($generatorSuggestionAnswers)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer[]
+         */
+        public function getGeneratorSuggestionAnswers()
+        {
+        }
+        /**
+         * The name of the latest conversation message used as context for compiling
+         * suggestion. Format: `projects//locations//conversations//messages/`.
+         *
+         * @param string $latestMessage
+         */
+        public function setLatestMessage($latestMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2GenerateSuggestionsResponseGeneratorSuggestionAnswer[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2GenerateSuggestionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratorSuggestionAnswers()
-    {
-    }
-    /**
-     * The name of the latest conversation message used as context for compiling
-     * suggestion. Format: `projects//locations//conversations//messages/`.
-     *
-     * @param string $latestMessage
-     */
-    public function setLatestMessage($latestMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestMessage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2GenerateSuggestionsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2GenerateSuggestionsResponse
     {
     }
 }

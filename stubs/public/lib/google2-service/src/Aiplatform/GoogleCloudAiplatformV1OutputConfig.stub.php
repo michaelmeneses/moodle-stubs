@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1OutputConfig extends \Google\Model
-{
-    protected $gcsDestinationType = GoogleCloudAiplatformV1GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Cloud storage destination for evaluation output.
-     *
-     * @param GoogleCloudAiplatformV1GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudAiplatformV1GcsDestination $gcsDestination)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1OutputConfig extends \Google\Model
     {
+        protected $gcsDestinationType = GoogleCloudAiplatformV1GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Cloud storage destination for evaluation output.
+         *
+         * @param GoogleCloudAiplatformV1GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudAiplatformV1GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GcsDestination
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1OutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1OutputConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1OutputConfig
     {
     }
 }

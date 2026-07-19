@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadYumArtifactMediaResponse extends \Google\Model
-{
-    protected $operationType = Operation::class;
-    protected $operationDataType = '';
-    /**
-     * Operation to be returned to the user.
-     *
-     * @param Operation $operation
-     */
-    public function setOperation(Operation $operation)
+namespace Google\Service\ArtifactRegistry {
+    class UploadYumArtifactMediaResponse extends \Google\Model
     {
+        protected $operationType = Operation::class;
+        protected $operationDataType = '';
+        /**
+         * Operation to be returned to the user.
+         *
+         * @param Operation $operation
+         */
+        public function setOperation(Operation $operation)
+        {
+        }
+        /**
+         * @return Operation
+         */
+        public function getOperation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Operation
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadYumArtifactMediaResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperation()
+    class Google_Service_ArtifactRegistry_UploadYumArtifactMediaResponse extends \Google\Service\ArtifactRegistry\UploadYumArtifactMediaResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class SecurityAnimation extends \Google\Model
-{
-    public const ANIMATION_TYPE_ANIMATION_UNSPECIFIED = 'ANIMATION_UNSPECIFIED';
-    /**
-     * Default Foil & Shimmer animation
-     */
-    public const ANIMATION_TYPE_FOIL_SHIMMER = 'FOIL_SHIMMER';
-    /**
-     * Legacy alias for `FOIL_SHIMMER`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const ANIMATION_TYPE_foilShimmer = 'foilShimmer';
-    /**
-     * Type of animation.
-     *
-     * @var string
-     */
-    public $animationType;
-    /**
-     * Type of animation.
-     *
-     * Accepted values: ANIMATION_UNSPECIFIED, FOIL_SHIMMER, foilShimmer
-     *
-     * @param self::ANIMATION_TYPE_* $animationType
-     */
-    public function setAnimationType($animationType)
+namespace Google\Service\Walletobjects {
+    class SecurityAnimation extends \Google\Model
     {
+        public const ANIMATION_TYPE_ANIMATION_UNSPECIFIED = 'ANIMATION_UNSPECIFIED';
+        /**
+         * Default Foil & Shimmer animation
+         */
+        public const ANIMATION_TYPE_FOIL_SHIMMER = 'FOIL_SHIMMER';
+        /**
+         * Legacy alias for `FOIL_SHIMMER`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const ANIMATION_TYPE_foilShimmer = 'foilShimmer';
+        /**
+         * Type of animation.
+         *
+         * @var string
+         */
+        public $animationType;
+        /**
+         * Type of animation.
+         *
+         * Accepted values: ANIMATION_UNSPECIFIED, FOIL_SHIMMER, foilShimmer
+         *
+         * @param self::ANIMATION_TYPE_* $animationType
+         */
+        public function setAnimationType($animationType)
+        {
+        }
+        /**
+         * @return self::ANIMATION_TYPE_*
+         */
+        public function getAnimationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ANIMATION_TYPE_*
+     * Runtime class alias of \Google\Service\Walletobjects\SecurityAnimation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnimationType()
+    class Google_Service_Walletobjects_SecurityAnimation extends \Google\Service\Walletobjects\SecurityAnimation
     {
     }
 }

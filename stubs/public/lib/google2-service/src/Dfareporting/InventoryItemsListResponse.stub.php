@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class InventoryItemsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'inventoryItems';
-    protected $inventoryItemsType = InventoryItem::class;
-    protected $inventoryItemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param InventoryItem[]
-     */
-    public function setInventoryItems($inventoryItems)
+namespace Google\Service\Dfareporting {
+    class InventoryItemsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'inventoryItems';
+        protected $inventoryItemsType = InventoryItem::class;
+        protected $inventoryItemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param InventoryItem[]
+         */
+        public function setInventoryItems($inventoryItems)
+        {
+        }
+        /**
+         * @return InventoryItem[]
+         */
+        public function getInventoryItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventoryItem[]
+     * Runtime class alias of \Google\Service\Dfareporting\InventoryItemsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventoryItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_InventoryItemsListResponse extends \Google\Service\Dfareporting\InventoryItemsListResponse
     {
     }
 }

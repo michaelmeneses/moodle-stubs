@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class BatchUpdateContactsResponse extends \Google\Model
-{
-    protected $updateResultType = PersonResponse::class;
-    protected $updateResultDataType = 'map';
-    /**
-     * A map of resource names to the contacts that were updated, unless the
-     * request `read_mask` is empty.
-     *
-     * @param PersonResponse[] $updateResult
-     */
-    public function setUpdateResult($updateResult)
+namespace Google\Service\PeopleService {
+    class BatchUpdateContactsResponse extends \Google\Model
     {
+        protected $updateResultType = PersonResponse::class;
+        protected $updateResultDataType = 'map';
+        /**
+         * A map of resource names to the contacts that were updated, unless the
+         * request `read_mask` is empty.
+         *
+         * @param PersonResponse[] $updateResult
+         */
+        public function setUpdateResult($updateResult)
+        {
+        }
+        /**
+         * @return PersonResponse[]
+         */
+        public function getUpdateResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersonResponse[]
+     * Runtime class alias of \Google\Service\PeopleService\BatchUpdateContactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateResult()
+    class Google_Service_PeopleService_BatchUpdateContactsResponse extends \Google\Service\PeopleService\BatchUpdateContactsResponse
     {
     }
 }

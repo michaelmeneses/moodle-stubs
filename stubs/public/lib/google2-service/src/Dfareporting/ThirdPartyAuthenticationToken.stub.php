@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ThirdPartyAuthenticationToken extends \Google\Model
-{
-    /**
-     * Name of the third-party authentication token.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Value of the third-party authentication token. This is a read-only, auto-
-     * generated field.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Name of the third-party authentication token.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Dfareporting {
+    class ThirdPartyAuthenticationToken extends \Google\Model
     {
+        /**
+         * Name of the third-party authentication token.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Value of the third-party authentication token. This is a read-only, auto-
+         * generated field.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Name of the third-party authentication token.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value of the third-party authentication token. This is a read-only, auto-
+         * generated field.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ThirdPartyAuthenticationToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Value of the third-party authentication token. This is a read-only, auto-
-     * generated field.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dfareporting_ThirdPartyAuthenticationToken extends \Google\Service\Dfareporting\ThirdPartyAuthenticationToken
     {
     }
 }

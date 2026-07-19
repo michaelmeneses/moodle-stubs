@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceAddressComponent extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    /**
-     * The language used to format this components, in CLDR notation.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * The full text description or name of the address component. For example, an
-     * address component for the country Australia may have a long_name of
-     * "Australia".
-     *
-     * @var string
-     */
-    public $longText;
-    /**
-     * An abbreviated textual name for the address component, if available. For
-     * example, an address component for the country of Australia may have a
-     * short_name of "AU".
-     *
-     * @var string
-     */
-    public $shortText;
-    /**
-     * An array indicating the type(s) of the address component.
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * The language used to format this components, in CLDR notation.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceAddressComponent extends \Google\Collection
     {
+        protected $collection_key = 'types';
+        /**
+         * The language used to format this components, in CLDR notation.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * The full text description or name of the address component. For example, an
+         * address component for the country Australia may have a long_name of
+         * "Australia".
+         *
+         * @var string
+         */
+        public $longText;
+        /**
+         * An abbreviated textual name for the address component, if available. For
+         * example, an address component for the country of Australia may have a
+         * short_name of "AU".
+         *
+         * @var string
+         */
+        public $shortText;
+        /**
+         * An array indicating the type(s) of the address component.
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * The language used to format this components, in CLDR notation.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The full text description or name of the address component. For example, an
+         * address component for the country Australia may have a long_name of
+         * "Australia".
+         *
+         * @param string $longText
+         */
+        public function setLongText($longText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongText()
+        {
+        }
+        /**
+         * An abbreviated textual name for the address component, if available. For
+         * example, an address component for the country of Australia may have a
+         * short_name of "AU".
+         *
+         * @param string $shortText
+         */
+        public function setShortText($shortText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortText()
+        {
+        }
+        /**
+         * An array indicating the type(s) of the address component.
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAddressComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The full text description or name of the address component. For example, an
-     * address component for the country Australia may have a long_name of
-     * "Australia".
-     *
-     * @param string $longText
-     */
-    public function setLongText($longText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongText()
-    {
-    }
-    /**
-     * An abbreviated textual name for the address component, if available. For
-     * example, an address component for the country of Australia may have a
-     * short_name of "AU".
-     *
-     * @param string $shortText
-     */
-    public function setShortText($shortText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortText()
-    {
-    }
-    /**
-     * An array indicating the type(s) of the address component.
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypes()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceAddressComponent extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAddressComponent
     {
     }
 }

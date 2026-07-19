@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'nodeGroups';
-    protected $nodeGroupsType = NodeGroup::class;
-    protected $nodeGroupsDataType = 'array';
-    protected $warningType = NodeGroupsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of node groups contained in this scope.
-     *
-     * @param NodeGroup[] $nodeGroups
-     */
-    public function setNodeGroups($nodeGroups)
+namespace Google\Service\Compute {
+    class NodeGroupsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'nodeGroups';
+        protected $nodeGroupsType = NodeGroup::class;
+        protected $nodeGroupsDataType = 'array';
+        protected $warningType = NodeGroupsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of node groups contained in this scope.
+         *
+         * @param NodeGroup[] $nodeGroups
+         */
+        public function setNodeGroups($nodeGroups)
+        {
+        }
+        /**
+         * @return NodeGroup[]
+         */
+        public function getNodeGroups()
+        {
+        }
+        /**
+         * [Output Only] An informational warning that appears when the nodeGroup list
+         * is empty.
+         *
+         * @param NodeGroupsScopedListWarning $warning
+         */
+        public function setWarning(NodeGroupsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return NodeGroupsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeGroup[]
+     * Runtime class alias of \Google\Service\Compute\NodeGroupsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeGroups()
-    {
-    }
-    /**
-     * [Output Only] An informational warning that appears when the nodeGroup list
-     * is empty.
-     *
-     * @param NodeGroupsScopedListWarning $warning
-     */
-    public function setWarning(NodeGroupsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return NodeGroupsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_NodeGroupsScopedList extends \Google\Service\Compute\NodeGroupsScopedList
     {
     }
 }

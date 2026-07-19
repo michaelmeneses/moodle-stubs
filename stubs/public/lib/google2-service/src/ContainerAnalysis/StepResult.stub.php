@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class StepResult extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attestationContentName;
-    /**
-     * @var string
-     */
-    public $attestationType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string $attestationContentName
-     */
-    public function setAttestationContentName($attestationContentName)
+namespace Google\Service\ContainerAnalysis {
+    class StepResult extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attestationContentName;
+        /**
+         * @var string
+         */
+        public $attestationType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string $attestationContentName
+         */
+        public function setAttestationContentName($attestationContentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttestationContentName()
+        {
+        }
+        /**
+         * @param string $attestationType
+         */
+        public function setAttestationType($attestationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttestationType()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\StepResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestationContentName()
-    {
-    }
-    /**
-     * @param string $attestationType
-     */
-    public function setAttestationType($attestationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttestationType()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ContainerAnalysis_StepResult extends \Google\Service\ContainerAnalysis\StepResult
     {
     }
 }

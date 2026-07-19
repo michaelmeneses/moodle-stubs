@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class DestroySecretVersionRequest extends \Google\Model
-{
-    /**
-     * Optional. Etag of the SecretVersion. The request succeeds if it matches the
-     * etag of the currently stored secret version object. If the etag is omitted,
-     * the request succeeds.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. Etag of the SecretVersion. The request succeeds if it matches the
-     * etag of the currently stored secret version object. If the etag is omitted,
-     * the request succeeds.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\SecretManager {
+    class DestroySecretVersionRequest extends \Google\Model
     {
+        /**
+         * Optional. Etag of the SecretVersion. The request succeeds if it matches the
+         * etag of the currently stored secret version object. If the etag is omitted,
+         * the request succeeds.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. Etag of the SecretVersion. The request succeeds if it matches the
+         * etag of the currently stored secret version object. If the etag is omitted,
+         * the request succeeds.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\DestroySecretVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
+    class Google_Service_SecretManager_DestroySecretVersionRequest extends \Google\Service\SecretManager\DestroySecretVersionRequest
     {
     }
 }

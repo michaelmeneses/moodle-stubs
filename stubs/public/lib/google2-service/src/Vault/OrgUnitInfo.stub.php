@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class OrgUnitInfo extends \Google\Model
-{
-    /**
-     * The name of the organizational unit to search, as provided by the [Admin
-     * SDK Directory API](https://developers.google.com/admin-sdk/directory/).
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * The name of the organizational unit to search, as provided by the [Admin
-     * SDK Directory API](https://developers.google.com/admin-sdk/directory/).
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
+namespace Google\Service\Vault {
+    class OrgUnitInfo extends \Google\Model
     {
+        /**
+         * The name of the organizational unit to search, as provided by the [Admin
+         * SDK Directory API](https://developers.google.com/admin-sdk/directory/).
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * The name of the organizational unit to search, as provided by the [Admin
+         * SDK Directory API](https://developers.google.com/admin-sdk/directory/).
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\OrgUnitInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrgUnitId()
+    class Google_Service_Vault_OrgUnitInfo extends \Google\Service\Vault\OrgUnitInfo
     {
     }
 }

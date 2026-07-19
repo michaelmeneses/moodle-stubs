@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListMulticloudDataTransferSupportedServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'multicloudDataTransferSupportedServices';
-    protected $multicloudDataTransferSupportedServicesType = MulticloudDataTransferSupportedService::class;
-    protected $multicloudDataTransferSupportedServicesDataType = 'array';
-    /**
-     * The next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of supported services.
-     *
-     * @param MulticloudDataTransferSupportedService[] $multicloudDataTransferSupportedServices
-     */
-    public function setMulticloudDataTransferSupportedServices($multicloudDataTransferSupportedServices)
+namespace Google\Service\Networkconnectivity {
+    class ListMulticloudDataTransferSupportedServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'multicloudDataTransferSupportedServices';
+        protected $multicloudDataTransferSupportedServicesType = MulticloudDataTransferSupportedService::class;
+        protected $multicloudDataTransferSupportedServicesDataType = 'array';
+        /**
+         * The next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of supported services.
+         *
+         * @param MulticloudDataTransferSupportedService[] $multicloudDataTransferSupportedServices
+         */
+        public function setMulticloudDataTransferSupportedServices($multicloudDataTransferSupportedServices)
+        {
+        }
+        /**
+         * @return MulticloudDataTransferSupportedService[]
+         */
+        public function getMulticloudDataTransferSupportedServices()
+        {
+        }
+        /**
+         * The next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MulticloudDataTransferSupportedService[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListMulticloudDataTransferSupportedServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMulticloudDataTransferSupportedServices()
-    {
-    }
-    /**
-     * The next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Networkconnectivity_ListMulticloudDataTransferSupportedServicesResponse extends \Google\Service\Networkconnectivity\ListMulticloudDataTransferSupportedServicesResponse
     {
     }
 }

@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SourceNumericFilter extends \Google\Model
-{
-    /**
-     * Numeric filter option unspecified
-     */
-    public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_UNSPECIFIED = 'NUMERIC_FILTER_OPTION_UNSPECIFIED';
-    /**
-     * Numeric filter option that matches all numeric columns.
-     */
-    public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_ALL = 'NUMERIC_FILTER_OPTION_ALL';
-    /**
-     * Numeric filter option that matches columns having numeric datatypes with
-     * specified precision and scale within the limited range of filter.
-     */
-    public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_LIMIT = 'NUMERIC_FILTER_OPTION_LIMIT';
-    /**
-     * Numeric filter option that matches only the numeric columns with no
-     * precision and scale specified.
-     */
-    public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_LIMITLESS = 'NUMERIC_FILTER_OPTION_LIMITLESS';
-    /**
-     * Required. Enum to set the option defining the datatypes numeric filter has
-     * to be applied to
-     *
-     * @var string
-     */
-    public $numericFilterOption;
-    /**
-     * Optional. The filter will match columns with precision smaller than or
-     * equal to this number.
-     *
-     * @var int
-     */
-    public $sourceMaxPrecisionFilter;
-    /**
-     * Optional. The filter will match columns with scale smaller than or equal to
-     * this number.
-     *
-     * @var int
-     */
-    public $sourceMaxScaleFilter;
-    /**
-     * Optional. The filter will match columns with precision greater than or
-     * equal to this number.
-     *
-     * @var int
-     */
-    public $sourceMinPrecisionFilter;
-    /**
-     * Optional. The filter will match columns with scale greater than or equal to
-     * this number.
-     *
-     * @var int
-     */
-    public $sourceMinScaleFilter;
-    /**
-     * Required. Enum to set the option defining the datatypes numeric filter has
-     * to be applied to
-     *
-     * Accepted values: NUMERIC_FILTER_OPTION_UNSPECIFIED,
-     * NUMERIC_FILTER_OPTION_ALL, NUMERIC_FILTER_OPTION_LIMIT,
-     * NUMERIC_FILTER_OPTION_LIMITLESS
-     *
-     * @param self::NUMERIC_FILTER_OPTION_* $numericFilterOption
-     */
-    public function setNumericFilterOption($numericFilterOption)
+namespace Google\Service\DatabaseMigrationService {
+    class SourceNumericFilter extends \Google\Model
     {
+        /**
+         * Numeric filter option unspecified
+         */
+        public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_UNSPECIFIED = 'NUMERIC_FILTER_OPTION_UNSPECIFIED';
+        /**
+         * Numeric filter option that matches all numeric columns.
+         */
+        public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_ALL = 'NUMERIC_FILTER_OPTION_ALL';
+        /**
+         * Numeric filter option that matches columns having numeric datatypes with
+         * specified precision and scale within the limited range of filter.
+         */
+        public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_LIMIT = 'NUMERIC_FILTER_OPTION_LIMIT';
+        /**
+         * Numeric filter option that matches only the numeric columns with no
+         * precision and scale specified.
+         */
+        public const NUMERIC_FILTER_OPTION_NUMERIC_FILTER_OPTION_LIMITLESS = 'NUMERIC_FILTER_OPTION_LIMITLESS';
+        /**
+         * Required. Enum to set the option defining the datatypes numeric filter has
+         * to be applied to
+         *
+         * @var string
+         */
+        public $numericFilterOption;
+        /**
+         * Optional. The filter will match columns with precision smaller than or
+         * equal to this number.
+         *
+         * @var int
+         */
+        public $sourceMaxPrecisionFilter;
+        /**
+         * Optional. The filter will match columns with scale smaller than or equal to
+         * this number.
+         *
+         * @var int
+         */
+        public $sourceMaxScaleFilter;
+        /**
+         * Optional. The filter will match columns with precision greater than or
+         * equal to this number.
+         *
+         * @var int
+         */
+        public $sourceMinPrecisionFilter;
+        /**
+         * Optional. The filter will match columns with scale greater than or equal to
+         * this number.
+         *
+         * @var int
+         */
+        public $sourceMinScaleFilter;
+        /**
+         * Required. Enum to set the option defining the datatypes numeric filter has
+         * to be applied to
+         *
+         * Accepted values: NUMERIC_FILTER_OPTION_UNSPECIFIED,
+         * NUMERIC_FILTER_OPTION_ALL, NUMERIC_FILTER_OPTION_LIMIT,
+         * NUMERIC_FILTER_OPTION_LIMITLESS
+         *
+         * @param self::NUMERIC_FILTER_OPTION_* $numericFilterOption
+         */
+        public function setNumericFilterOption($numericFilterOption)
+        {
+        }
+        /**
+         * @return self::NUMERIC_FILTER_OPTION_*
+         */
+        public function getNumericFilterOption()
+        {
+        }
+        /**
+         * Optional. The filter will match columns with precision smaller than or
+         * equal to this number.
+         *
+         * @param int $sourceMaxPrecisionFilter
+         */
+        public function setSourceMaxPrecisionFilter($sourceMaxPrecisionFilter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourceMaxPrecisionFilter()
+        {
+        }
+        /**
+         * Optional. The filter will match columns with scale smaller than or equal to
+         * this number.
+         *
+         * @param int $sourceMaxScaleFilter
+         */
+        public function setSourceMaxScaleFilter($sourceMaxScaleFilter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourceMaxScaleFilter()
+        {
+        }
+        /**
+         * Optional. The filter will match columns with precision greater than or
+         * equal to this number.
+         *
+         * @param int $sourceMinPrecisionFilter
+         */
+        public function setSourceMinPrecisionFilter($sourceMinPrecisionFilter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourceMinPrecisionFilter()
+        {
+        }
+        /**
+         * Optional. The filter will match columns with scale greater than or equal to
+         * this number.
+         *
+         * @param int $sourceMinScaleFilter
+         */
+        public function setSourceMinScaleFilter($sourceMinScaleFilter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourceMinScaleFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::NUMERIC_FILTER_OPTION_*
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SourceNumericFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumericFilterOption()
-    {
-    }
-    /**
-     * Optional. The filter will match columns with precision smaller than or
-     * equal to this number.
-     *
-     * @param int $sourceMaxPrecisionFilter
-     */
-    public function setSourceMaxPrecisionFilter($sourceMaxPrecisionFilter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourceMaxPrecisionFilter()
-    {
-    }
-    /**
-     * Optional. The filter will match columns with scale smaller than or equal to
-     * this number.
-     *
-     * @param int $sourceMaxScaleFilter
-     */
-    public function setSourceMaxScaleFilter($sourceMaxScaleFilter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourceMaxScaleFilter()
-    {
-    }
-    /**
-     * Optional. The filter will match columns with precision greater than or
-     * equal to this number.
-     *
-     * @param int $sourceMinPrecisionFilter
-     */
-    public function setSourceMinPrecisionFilter($sourceMinPrecisionFilter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourceMinPrecisionFilter()
-    {
-    }
-    /**
-     * Optional. The filter will match columns with scale greater than or equal to
-     * this number.
-     *
-     * @param int $sourceMinScaleFilter
-     */
-    public function setSourceMinScaleFilter($sourceMinScaleFilter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourceMinScaleFilter()
+    class Google_Service_DatabaseMigrationService_SourceNumericFilter extends \Google\Service\DatabaseMigrationService\SourceNumericFilter
     {
     }
 }

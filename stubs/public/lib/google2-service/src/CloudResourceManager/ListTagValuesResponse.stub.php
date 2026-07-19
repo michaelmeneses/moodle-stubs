@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class ListTagValuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'tagValues';
-    /**
-     * A pagination token returned from a previous call to `ListTagValues` that
-     * indicates from where listing should continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tagValuesType = TagValue::class;
-    protected $tagValuesDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to `ListTagValues` that
-     * indicates from where listing should continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudResourceManager {
+    class ListTagValuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'tagValues';
+        /**
+         * A pagination token returned from a previous call to `ListTagValues` that
+         * indicates from where listing should continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tagValuesType = TagValue::class;
+        protected $tagValuesDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to `ListTagValues` that
+         * indicates from where listing should continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A possibly paginated list of TagValues that are direct descendants of the
+         * specified parent TagKey.
+         *
+         * @param TagValue[] $tagValues
+         */
+        public function setTagValues($tagValues)
+        {
+        }
+        /**
+         * @return TagValue[]
+         */
+        public function getTagValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\ListTagValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A possibly paginated list of TagValues that are direct descendants of the
-     * specified parent TagKey.
-     *
-     * @param TagValue[] $tagValues
-     */
-    public function setTagValues($tagValues)
-    {
-    }
-    /**
-     * @return TagValue[]
-     */
-    public function getTagValues()
+    class Google_Service_CloudResourceManager_ListTagValuesResponse extends \Google\Service\CloudResourceManager\ListTagValuesResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1GeneratorSuggestionToolCallInfo extends \Google\Model
-{
-    protected $toolCallType = GoogleCloudDialogflowV2beta1ToolCall::class;
-    protected $toolCallDataType = '';
-    protected $toolCallResultType = GoogleCloudDialogflowV2beta1ToolCallResult::class;
-    protected $toolCallResultDataType = '';
-    /**
-     * Required. Request for a tool call.
-     *
-     * @param GoogleCloudDialogflowV2beta1ToolCall $toolCall
-     */
-    public function setToolCall(GoogleCloudDialogflowV2beta1ToolCall $toolCall)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1GeneratorSuggestionToolCallInfo extends \Google\Model
     {
+        protected $toolCallType = GoogleCloudDialogflowV2beta1ToolCall::class;
+        protected $toolCallDataType = '';
+        protected $toolCallResultType = GoogleCloudDialogflowV2beta1ToolCallResult::class;
+        protected $toolCallResultDataType = '';
+        /**
+         * Required. Request for a tool call.
+         *
+         * @param GoogleCloudDialogflowV2beta1ToolCall $toolCall
+         */
+        public function setToolCall(GoogleCloudDialogflowV2beta1ToolCall $toolCall)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ToolCall
+         */
+        public function getToolCall()
+        {
+        }
+        /**
+         * Required. Response for a tool call.
+         *
+         * @param GoogleCloudDialogflowV2beta1ToolCallResult $toolCallResult
+         */
+        public function setToolCallResult(GoogleCloudDialogflowV2beta1ToolCallResult $toolCallResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ToolCallResult
+         */
+        public function getToolCallResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1ToolCall
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1GeneratorSuggestionToolCallInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolCall()
-    {
-    }
-    /**
-     * Required. Response for a tool call.
-     *
-     * @param GoogleCloudDialogflowV2beta1ToolCallResult $toolCallResult
-     */
-    public function setToolCallResult(GoogleCloudDialogflowV2beta1ToolCallResult $toolCallResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1ToolCallResult
-     */
-    public function getToolCallResult()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1GeneratorSuggestionToolCallInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1GeneratorSuggestionToolCallInfo
     {
     }
 }

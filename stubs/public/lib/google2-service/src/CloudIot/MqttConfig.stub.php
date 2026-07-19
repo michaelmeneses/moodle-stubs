@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class MqttConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mqttEnabledState;
-    /**
-     * @param string
-     */
-    public function setMqttEnabledState($mqttEnabledState)
+namespace Google\Service\CloudIot {
+    class MqttConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mqttEnabledState;
+        /**
+         * @param string
+         */
+        public function setMqttEnabledState($mqttEnabledState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMqttEnabledState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\MqttConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMqttEnabledState()
+    class Google_Service_CloudIot_MqttConfig extends \Google\Service\CloudIot\MqttConfig
     {
     }
 }

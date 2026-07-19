@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ApplyAdminConsentsErrorDetail extends \Google\Collection
-{
-    protected $collection_key = 'consentErrors';
-    protected $consentErrorsType = ConsentErrors::class;
-    protected $consentErrorsDataType = 'array';
-    /**
-     * The currently in progress non-validate-only ApplyAdminConsents operation ID
-     * if exist.
-     *
-     * @var string
-     */
-    public $existingOperationId;
-    /**
-     * The list of Consent resources that are unsupported or cannot be applied and
-     * the error associated with each of them.
-     *
-     * @param ConsentErrors[] $consentErrors
-     */
-    public function setConsentErrors($consentErrors)
+namespace Google\Service\CloudHealthcare {
+    class ApplyAdminConsentsErrorDetail extends \Google\Collection
     {
+        protected $collection_key = 'consentErrors';
+        protected $consentErrorsType = ConsentErrors::class;
+        protected $consentErrorsDataType = 'array';
+        /**
+         * The currently in progress non-validate-only ApplyAdminConsents operation ID
+         * if exist.
+         *
+         * @var string
+         */
+        public $existingOperationId;
+        /**
+         * The list of Consent resources that are unsupported or cannot be applied and
+         * the error associated with each of them.
+         *
+         * @param ConsentErrors[] $consentErrors
+         */
+        public function setConsentErrors($consentErrors)
+        {
+        }
+        /**
+         * @return ConsentErrors[]
+         */
+        public function getConsentErrors()
+        {
+        }
+        /**
+         * The currently in progress non-validate-only ApplyAdminConsents operation ID
+         * if exist.
+         *
+         * @param string $existingOperationId
+         */
+        public function setExistingOperationId($existingOperationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExistingOperationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsentErrors[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ApplyAdminConsentsErrorDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentErrors()
-    {
-    }
-    /**
-     * The currently in progress non-validate-only ApplyAdminConsents operation ID
-     * if exist.
-     *
-     * @param string $existingOperationId
-     */
-    public function setExistingOperationId($existingOperationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExistingOperationId()
+    class Google_Service_CloudHealthcare_ApplyAdminConsentsErrorDetail extends \Google\Service\CloudHealthcare\ApplyAdminConsentsErrorDetail
     {
     }
 }

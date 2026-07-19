@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UpdateInspectTemplateRequest extends \Google\Model
-{
-    protected $inspectTemplateType = GooglePrivacyDlpV2InspectTemplate::class;
-    protected $inspectTemplateDataType = '';
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * New InspectTemplate value.
-     *
-     * @param GooglePrivacyDlpV2InspectTemplate $inspectTemplate
-     */
-    public function setInspectTemplate(GooglePrivacyDlpV2InspectTemplate $inspectTemplate)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UpdateInspectTemplateRequest extends \Google\Model
     {
+        protected $inspectTemplateType = GooglePrivacyDlpV2InspectTemplate::class;
+        protected $inspectTemplateDataType = '';
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * New InspectTemplate value.
+         *
+         * @param GooglePrivacyDlpV2InspectTemplate $inspectTemplate
+         */
+        public function setInspectTemplate(GooglePrivacyDlpV2InspectTemplate $inspectTemplate)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectTemplate
+         */
+        public function getInspectTemplate()
+        {
+        }
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InspectTemplate
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UpdateInspectTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectTemplate()
-    {
-    }
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DLP_GooglePrivacyDlpV2UpdateInspectTemplateRequest extends \Google\Service\DLP\GooglePrivacyDlpV2UpdateInspectTemplateRequest
     {
     }
 }

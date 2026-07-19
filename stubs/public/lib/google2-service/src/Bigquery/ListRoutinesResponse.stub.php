@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ListRoutinesResponse extends \Google\Collection
-{
-    protected $collection_key = 'routines';
-    /**
-     * A token to request the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $routinesType = Routine::class;
-    protected $routinesDataType = 'array';
-    /**
-     * A token to request the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Bigquery {
+    class ListRoutinesResponse extends \Google\Collection
     {
+        protected $collection_key = 'routines';
+        /**
+         * A token to request the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $routinesType = Routine::class;
+        protected $routinesDataType = 'array';
+        /**
+         * A token to request the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Routines in the requested dataset. Unless read_mask is set in the request,
+         * only the following fields are populated: etag, project_id, dataset_id,
+         * routine_id, routine_type, creation_time, last_modified_time, language, and
+         * remote_function_options.
+         *
+         * @param Routine[] $routines
+         */
+        public function setRoutines($routines)
+        {
+        }
+        /**
+         * @return Routine[]
+         */
+        public function getRoutines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ListRoutinesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Routines in the requested dataset. Unless read_mask is set in the request,
-     * only the following fields are populated: etag, project_id, dataset_id,
-     * routine_id, routine_type, creation_time, last_modified_time, language, and
-     * remote_function_options.
-     *
-     * @param Routine[] $routines
-     */
-    public function setRoutines($routines)
-    {
-    }
-    /**
-     * @return Routine[]
-     */
-    public function getRoutines()
+    class Google_Service_Bigquery_ListRoutinesResponse extends \Google\Service\Bigquery\ListRoutinesResponse
     {
     }
 }

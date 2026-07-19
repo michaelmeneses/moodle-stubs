@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class AttachedDisk extends \Google\Model
-{
-    /**
-     * The disk mode is not known/set.
-     */
-    public const MODE_DISK_MODE_UNSPECIFIED = 'DISK_MODE_UNSPECIFIED';
-    /**
-     * Attaches the disk in read-write mode. Only one TPU node can attach a disk
-     * in read-write mode at a time.
-     */
-    public const MODE_READ_WRITE = 'READ_WRITE';
-    /**
-     * Attaches the disk in read-only mode. Multiple TPU nodes can attach a disk
-     * in read-only mode at a time.
-     */
-    public const MODE_READ_ONLY = 'READ_ONLY';
-    /**
-     * The mode in which to attach this disk. If not specified, the default is
-     * READ_WRITE mode. Only applicable to data_disks.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Specifies the full path to an existing disk. For example: "projects/my-
-     * project/zones/us-central1-c/disks/my-disk".
-     *
-     * @var string
-     */
-    public $sourceDisk;
-    /**
-     * The mode in which to attach this disk. If not specified, the default is
-     * READ_WRITE mode. Only applicable to data_disks.
-     *
-     * Accepted values: DISK_MODE_UNSPECIFIED, READ_WRITE, READ_ONLY
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\TPU {
+    class AttachedDisk extends \Google\Model
     {
+        /**
+         * The disk mode is not known/set.
+         */
+        public const MODE_DISK_MODE_UNSPECIFIED = 'DISK_MODE_UNSPECIFIED';
+        /**
+         * Attaches the disk in read-write mode. Only one TPU node can attach a disk
+         * in read-write mode at a time.
+         */
+        public const MODE_READ_WRITE = 'READ_WRITE';
+        /**
+         * Attaches the disk in read-only mode. Multiple TPU nodes can attach a disk
+         * in read-only mode at a time.
+         */
+        public const MODE_READ_ONLY = 'READ_ONLY';
+        /**
+         * The mode in which to attach this disk. If not specified, the default is
+         * READ_WRITE mode. Only applicable to data_disks.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Specifies the full path to an existing disk. For example: "projects/my-
+         * project/zones/us-central1-c/disks/my-disk".
+         *
+         * @var string
+         */
+        public $sourceDisk;
+        /**
+         * The mode in which to attach this disk. If not specified, the default is
+         * READ_WRITE mode. Only applicable to data_disks.
+         *
+         * Accepted values: DISK_MODE_UNSPECIFIED, READ_WRITE, READ_ONLY
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Specifies the full path to an existing disk. For example: "projects/my-
+         * project/zones/us-central1-c/disks/my-disk".
+         *
+         * @param string $sourceDisk
+         */
+        public function setSourceDisk($sourceDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\TPU\AttachedDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * Specifies the full path to an existing disk. For example: "projects/my-
-     * project/zones/us-central1-c/disks/my-disk".
-     *
-     * @param string $sourceDisk
-     */
-    public function setSourceDisk($sourceDisk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceDisk()
+    class Google_Service_TPU_AttachedDisk extends \Google\Service\TPU\AttachedDisk
     {
     }
 }

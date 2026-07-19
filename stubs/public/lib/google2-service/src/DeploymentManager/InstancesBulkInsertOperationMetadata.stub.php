@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class InstancesBulkInsertOperationMetadata extends \Google\Model
-{
-    /**
-     * [Output Only] The machine type of the VMs that were created used internally
-     * only by KCP flex bulk insert.
-     *
-     * @var string
-     */
-    public $machineType;
-    protected $perLocationStatusType = BulkInsertOperationStatus::class;
-    protected $perLocationStatusDataType = 'map';
-    /**
-     * [Output Only] The machine type of the VMs that were created used internally
-     * only by KCP flex bulk insert.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\DeploymentManager {
+    class InstancesBulkInsertOperationMetadata extends \Google\Model
     {
+        /**
+         * [Output Only] The machine type of the VMs that were created used internally
+         * only by KCP flex bulk insert.
+         *
+         * @var string
+         */
+        public $machineType;
+        protected $perLocationStatusType = BulkInsertOperationStatus::class;
+        protected $perLocationStatusDataType = 'map';
+        /**
+         * [Output Only] The machine type of the VMs that were created used internally
+         * only by KCP flex bulk insert.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Status information per location (location name is key). Example key:
+         * zones/us-central1-a
+         *
+         * @param BulkInsertOperationStatus[] $perLocationStatus
+         */
+        public function setPerLocationStatus($perLocationStatus)
+        {
+        }
+        /**
+         * @return BulkInsertOperationStatus[]
+         */
+        public function getPerLocationStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\InstancesBulkInsertOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Status information per location (location name is key). Example key:
-     * zones/us-central1-a
-     *
-     * @param BulkInsertOperationStatus[] $perLocationStatus
-     */
-    public function setPerLocationStatus($perLocationStatus)
-    {
-    }
-    /**
-     * @return BulkInsertOperationStatus[]
-     */
-    public function getPerLocationStatus()
+    class Google_Service_DeploymentManager_InstancesBulkInsertOperationMetadata extends \Google\Service\DeploymentManager\InstancesBulkInsertOperationMetadata
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult extends \Google\Model
-{
-    /**
-     * Output only. Confidence for question answering helpfulness score.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Output only. Explanation for question answering helpfulness score.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Output only. Question Answering Helpfulness score.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. Confidence for question answering helpfulness score.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult extends \Google\Model
     {
+        /**
+         * Output only. Confidence for question answering helpfulness score.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Output only. Explanation for question answering helpfulness score.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Output only. Question Answering Helpfulness score.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. Confidence for question answering helpfulness score.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Output only. Explanation for question answering helpfulness score.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Output only. Question Answering Helpfulness score.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Output only. Explanation for question answering helpfulness score.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Output only. Question Answering Helpfulness score.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult
     {
     }
 }

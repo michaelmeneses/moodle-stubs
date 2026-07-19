@@ -21,35 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks\Resource;
-
-/**
- * The "managedShortLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasedynamiclinksService = new Google\Service\FirebaseDynamicLinks(...);
- *   $managedShortLinks = $firebasedynamiclinksService->managedShortLinks;
- *  </code>
- */
-class ManagedShortLinks extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseDynamicLinks\Resource {
+    use Google\Service\FirebaseDynamicLinks\CreateManagedShortLinkRequest;
+    use Google\Service\FirebaseDynamicLinks\CreateManagedShortLinkResponse;
     /**
-     * Creates a managed short Dynamic Link given either a valid long Dynamic Link
-     * or details such as Dynamic Link domain, Android and iOS app information. The
-     * created short Dynamic Link will not expire. This differs from
-     * CreateShortDynamicLink in the following ways: - The request will also contain
-     * a name for the link (non unique name for the front end). - The response must
-     * be authenticated with an auth token (generated with the admin service
-     * account). - The link will appear in the FDL list of links in the console
-     * front end. The Dynamic Link domain in the request must be owned by
-     * requester's Firebase project. (managedShortLinks.create)
-     *
-     * @param CreateManagedShortLinkRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreateManagedShortLinkResponse
-     * @throws \Google\Service\Exception
+     * The "managedShortLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasedynamiclinksService = new Google\Service\FirebaseDynamicLinks(...);
+     *   $managedShortLinks = $firebasedynamiclinksService->managedShortLinks;
+     *  </code>
      */
-    public function create(CreateManagedShortLinkRequest $postBody, $optParams = [])
+    class ManagedShortLinks extends \Google\Service\Resource
+    {
+        /**
+         * Creates a managed short Dynamic Link given either a valid long Dynamic Link
+         * or details such as Dynamic Link domain, Android and iOS app information. The
+         * created short Dynamic Link will not expire. This differs from
+         * CreateShortDynamicLink in the following ways: - The request will also contain
+         * a name for the link (non unique name for the front end). - The response must
+         * be authenticated with an auth token (generated with the admin service
+         * account). - The link will appear in the FDL list of links in the console
+         * front end. The Dynamic Link domain in the request must be owned by
+         * requester's Firebase project. (managedShortLinks.create)
+         *
+         * @param CreateManagedShortLinkRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreateManagedShortLinkResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create(CreateManagedShortLinkRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\Resource\ManagedShortLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseDynamicLinks_Resource_ManagedShortLinks extends \Google\Service\FirebaseDynamicLinks\Resource\ManagedShortLinks
     {
     }
 }

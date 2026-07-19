@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class SynthesizeSpeechResponse extends \Google\Model
-{
-    /**
-     * The audio data bytes encoded as specified in the request, including the
-     * header for encodings that are wrapped in containers (e.g. MP3, OGG_OPUS).
-     * For LINEAR16 audio, we include the WAV header. Note: as with all bytes
-     * fields, protobuffers use a pure binary representation, whereas JSON
-     * representations use base64.
-     *
-     * @var string
-     */
-    public $audioContent;
-    /**
-     * The audio data bytes encoded as specified in the request, including the
-     * header for encodings that are wrapped in containers (e.g. MP3, OGG_OPUS).
-     * For LINEAR16 audio, we include the WAV header. Note: as with all bytes
-     * fields, protobuffers use a pure binary representation, whereas JSON
-     * representations use base64.
-     *
-     * @param string $audioContent
-     */
-    public function setAudioContent($audioContent)
+namespace Google\Service\Texttospeech {
+    class SynthesizeSpeechResponse extends \Google\Model
     {
+        /**
+         * The audio data bytes encoded as specified in the request, including the
+         * header for encodings that are wrapped in containers (e.g. MP3, OGG_OPUS).
+         * For LINEAR16 audio, we include the WAV header. Note: as with all bytes
+         * fields, protobuffers use a pure binary representation, whereas JSON
+         * representations use base64.
+         *
+         * @var string
+         */
+        public $audioContent;
+        /**
+         * The audio data bytes encoded as specified in the request, including the
+         * header for encodings that are wrapped in containers (e.g. MP3, OGG_OPUS).
+         * For LINEAR16 audio, we include the WAV header. Note: as with all bytes
+         * fields, protobuffers use a pure binary representation, whereas JSON
+         * representations use base64.
+         *
+         * @param string $audioContent
+         */
+        public function setAudioContent($audioContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\SynthesizeSpeechResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioContent()
+    class Google_Service_Texttospeech_SynthesizeSpeechResponse extends \Google\Service\Texttospeech\SynthesizeSpeechResponse
     {
     }
 }

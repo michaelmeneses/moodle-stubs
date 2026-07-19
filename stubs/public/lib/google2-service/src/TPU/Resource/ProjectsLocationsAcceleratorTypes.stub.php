@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU\Resource;
-
-/**
- * The "acceleratorTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tpuService = new Google\Service\TPU(...);
- *   $acceleratorTypes = $tpuService->projects_locations_acceleratorTypes;
- *  </code>
- */
-class ProjectsLocationsAcceleratorTypes extends \Google\Service\Resource
-{
+namespace Google\Service\TPU\Resource {
+    use Google\Service\TPU\AcceleratorType;
+    use Google\Service\TPU\ListAcceleratorTypesResponse;
     /**
-     * Gets AcceleratorType. (acceleratorTypes.get)
-     *
-     * @param string $name Required. The resource name.
-     * @param array $optParams Optional parameters.
-     * @return AcceleratorType
-     * @throws \Google\Service\Exception
+     * The "acceleratorTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tpuService = new Google\Service\TPU(...);
+     *   $acceleratorTypes = $tpuService->projects_locations_acceleratorTypes;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsAcceleratorTypes extends \Google\Service\Resource
     {
+        /**
+         * Gets AcceleratorType. (acceleratorTypes.get)
+         *
+         * @param string $name Required. The resource name.
+         * @param array $optParams Optional parameters.
+         * @return AcceleratorType
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists accelerator types supported by this API.
+         * (acceleratorTypes.listProjectsLocationsAcceleratorTypes)
+         *
+         * @param string $parent Required. The parent resource name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter List filter.
+         * @opt_param string orderBy Sort results.
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListAcceleratorTypesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAcceleratorTypes($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists accelerator types supported by this API.
-     * (acceleratorTypes.listProjectsLocationsAcceleratorTypes)
-     *
-     * @param string $parent Required. The parent resource name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter List filter.
-     * @opt_param string orderBy Sort results.
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListAcceleratorTypesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TPU\Resource\ProjectsLocationsAcceleratorTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsAcceleratorTypes($parent, $optParams = [])
+    class Google_Service_TPU_Resource_ProjectsLocationsAcceleratorTypes extends \Google\Service\TPU\Resource\ProjectsLocationsAcceleratorTypes
     {
     }
 }

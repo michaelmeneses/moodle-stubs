@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class DirectoryChromeosdevicesCommandResult extends \Google\Model
-{
-    /**
-     * The command result was unspecified.
-     */
-    public const RESULT_COMMAND_RESULT_TYPE_UNSPECIFIED = 'COMMAND_RESULT_TYPE_UNSPECIFIED';
-    /**
-     * The command was ignored as obsolete.
-     */
-    public const RESULT_IGNORED = 'IGNORED';
-    /**
-     * The command could not be executed successfully.
-     */
-    public const RESULT_FAILURE = 'FAILURE';
-    /**
-     * The command was successfully executed.
-     */
-    public const RESULT_SUCCESS = 'SUCCESS';
-    /**
-     * The payload for the command result. The following commands respond with a
-     * payload: * `DEVICE_START_CRD_SESSION`: Payload is a stringified JSON object
-     * in the form: { "url": url }. The provided URL links to the Chrome Remote
-     * Desktop session and requires authentication using only the `email`
-     * associated with the command's issuance. * `FETCH_CRD_AVAILABILITY_INFO`:
-     * Payload is a stringified JSON object in the form: {
-     * "deviceIdleTimeInSeconds": number, "userSessionType": string,
-     * "remoteSupportAvailability": string, "remoteAccessAvailability": string }.
-     * The "remoteSupportAvailability" field is set to "AVAILABLE" if `shared` CRD
-     * session to the device is available. The "remoteAccessAvailability" field is
-     * set to "AVAILABLE" if `private` CRD session to the device is available.
-     *
-     * @var string
-     */
-    public $commandResultPayload;
-    /**
-     * The error message with a short explanation as to why the command failed.
-     * Only present if the command failed.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The time at which the command was executed or failed to execute.
-     *
-     * @var string
-     */
-    public $executeTime;
-    /**
-     * The result of the command.
-     *
-     * @var string
-     */
-    public $result;
-    /**
-     * The payload for the command result. The following commands respond with a
-     * payload: * `DEVICE_START_CRD_SESSION`: Payload is a stringified JSON object
-     * in the form: { "url": url }. The provided URL links to the Chrome Remote
-     * Desktop session and requires authentication using only the `email`
-     * associated with the command's issuance. * `FETCH_CRD_AVAILABILITY_INFO`:
-     * Payload is a stringified JSON object in the form: {
-     * "deviceIdleTimeInSeconds": number, "userSessionType": string,
-     * "remoteSupportAvailability": string, "remoteAccessAvailability": string }.
-     * The "remoteSupportAvailability" field is set to "AVAILABLE" if `shared` CRD
-     * session to the device is available. The "remoteAccessAvailability" field is
-     * set to "AVAILABLE" if `private` CRD session to the device is available.
-     *
-     * @param string $commandResultPayload
-     */
-    public function setCommandResultPayload($commandResultPayload)
+namespace Google\Service\Directory {
+    class DirectoryChromeosdevicesCommandResult extends \Google\Model
     {
+        /**
+         * The command result was unspecified.
+         */
+        public const RESULT_COMMAND_RESULT_TYPE_UNSPECIFIED = 'COMMAND_RESULT_TYPE_UNSPECIFIED';
+        /**
+         * The command was ignored as obsolete.
+         */
+        public const RESULT_IGNORED = 'IGNORED';
+        /**
+         * The command could not be executed successfully.
+         */
+        public const RESULT_FAILURE = 'FAILURE';
+        /**
+         * The command was successfully executed.
+         */
+        public const RESULT_SUCCESS = 'SUCCESS';
+        /**
+         * The payload for the command result. The following commands respond with a
+         * payload: * `DEVICE_START_CRD_SESSION`: Payload is a stringified JSON object
+         * in the form: { "url": url }. The provided URL links to the Chrome Remote
+         * Desktop session and requires authentication using only the `email`
+         * associated with the command's issuance. * `FETCH_CRD_AVAILABILITY_INFO`:
+         * Payload is a stringified JSON object in the form: {
+         * "deviceIdleTimeInSeconds": number, "userSessionType": string,
+         * "remoteSupportAvailability": string, "remoteAccessAvailability": string }.
+         * The "remoteSupportAvailability" field is set to "AVAILABLE" if `shared` CRD
+         * session to the device is available. The "remoteAccessAvailability" field is
+         * set to "AVAILABLE" if `private` CRD session to the device is available.
+         *
+         * @var string
+         */
+        public $commandResultPayload;
+        /**
+         * The error message with a short explanation as to why the command failed.
+         * Only present if the command failed.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The time at which the command was executed or failed to execute.
+         *
+         * @var string
+         */
+        public $executeTime;
+        /**
+         * The result of the command.
+         *
+         * @var string
+         */
+        public $result;
+        /**
+         * The payload for the command result. The following commands respond with a
+         * payload: * `DEVICE_START_CRD_SESSION`: Payload is a stringified JSON object
+         * in the form: { "url": url }. The provided URL links to the Chrome Remote
+         * Desktop session and requires authentication using only the `email`
+         * associated with the command's issuance. * `FETCH_CRD_AVAILABILITY_INFO`:
+         * Payload is a stringified JSON object in the form: {
+         * "deviceIdleTimeInSeconds": number, "userSessionType": string,
+         * "remoteSupportAvailability": string, "remoteAccessAvailability": string }.
+         * The "remoteSupportAvailability" field is set to "AVAILABLE" if `shared` CRD
+         * session to the device is available. The "remoteAccessAvailability" field is
+         * set to "AVAILABLE" if `private` CRD session to the device is available.
+         *
+         * @param string $commandResultPayload
+         */
+        public function setCommandResultPayload($commandResultPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandResultPayload()
+        {
+        }
+        /**
+         * The error message with a short explanation as to why the command failed.
+         * Only present if the command failed.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * The time at which the command was executed or failed to execute.
+         *
+         * @param string $executeTime
+         */
+        public function setExecuteTime($executeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecuteTime()
+        {
+        }
+        /**
+         * The result of the command.
+         *
+         * Accepted values: COMMAND_RESULT_TYPE_UNSPECIFIED, IGNORED, FAILURE, SUCCESS
+         *
+         * @param self::RESULT_* $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return self::RESULT_*
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\DirectoryChromeosdevicesCommandResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommandResultPayload()
-    {
-    }
-    /**
-     * The error message with a short explanation as to why the command failed.
-     * Only present if the command failed.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * The time at which the command was executed or failed to execute.
-     *
-     * @param string $executeTime
-     */
-    public function setExecuteTime($executeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecuteTime()
-    {
-    }
-    /**
-     * The result of the command.
-     *
-     * Accepted values: COMMAND_RESULT_TYPE_UNSPECIFIED, IGNORED, FAILURE, SUCCESS
-     *
-     * @param self::RESULT_* $result
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return self::RESULT_*
-     */
-    public function getResult()
+    class Google_Service_Directory_DirectoryChromeosdevicesCommandResult extends \Google\Service\Directory\DirectoryChromeosdevicesCommandResult
     {
     }
 }

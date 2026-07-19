@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertVariableResponse extends \Google\Model
-{
-    protected $variableType = Variable::class;
-    protected $variableDataType = '';
-    /**
-     * Variable as it appears in the latest container version since the last
-     * workspace synchronization operation. If no variable is present, that means
-     * the variable was deleted in the latest container version.
-     *
-     * @param Variable $variable
-     */
-    public function setVariable(Variable $variable)
+namespace Google\Service\TagManager {
+    class RevertVariableResponse extends \Google\Model
     {
+        protected $variableType = Variable::class;
+        protected $variableDataType = '';
+        /**
+         * Variable as it appears in the latest container version since the last
+         * workspace synchronization operation. If no variable is present, that means
+         * the variable was deleted in the latest container version.
+         *
+         * @param Variable $variable
+         */
+        public function setVariable(Variable $variable)
+        {
+        }
+        /**
+         * @return Variable
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Variable
+     * Runtime class alias of \Google\Service\TagManager\RevertVariableResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVariable()
+    class Google_Service_TagManager_RevertVariableResponse extends \Google\Service\TagManager\RevertVariableResponse
     {
     }
 }

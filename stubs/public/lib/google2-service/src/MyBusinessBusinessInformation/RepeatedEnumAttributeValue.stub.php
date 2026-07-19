@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class RepeatedEnumAttributeValue extends \Google\Collection
-{
-    protected $collection_key = 'unsetValues';
-    /**
-     * Enum values that are set.
-     *
-     * @var string[]
-     */
-    public $setValues;
-    /**
-     * Enum values that are unset.
-     *
-     * @var string[]
-     */
-    public $unsetValues;
-    /**
-     * Enum values that are set.
-     *
-     * @param string[] $setValues
-     */
-    public function setSetValues($setValues)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class RepeatedEnumAttributeValue extends \Google\Collection
     {
+        protected $collection_key = 'unsetValues';
+        /**
+         * Enum values that are set.
+         *
+         * @var string[]
+         */
+        public $setValues;
+        /**
+         * Enum values that are unset.
+         *
+         * @var string[]
+         */
+        public $unsetValues;
+        /**
+         * Enum values that are set.
+         *
+         * @param string[] $setValues
+         */
+        public function setSetValues($setValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetValues()
+        {
+        }
+        /**
+         * Enum values that are unset.
+         *
+         * @param string[] $unsetValues
+         */
+        public function setUnsetValues($unsetValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnsetValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\RepeatedEnumAttributeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSetValues()
-    {
-    }
-    /**
-     * Enum values that are unset.
-     *
-     * @param string[] $unsetValues
-     */
-    public function setUnsetValues($unsetValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnsetValues()
+    class Google_Service_MyBusinessBusinessInformation_RepeatedEnumAttributeValue extends \Google\Service\MyBusinessBusinessInformation\RepeatedEnumAttributeValue
     {
     }
 }

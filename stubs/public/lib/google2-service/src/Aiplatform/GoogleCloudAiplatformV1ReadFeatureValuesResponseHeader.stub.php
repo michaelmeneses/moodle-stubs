@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader extends \Google\Collection
-{
-    protected $collection_key = 'featureDescriptors';
-    /**
-     * The resource name of the EntityType from the ReadFeatureValuesRequest.
-     * Value format: `projects/{project}/locations/{location}/featurestores/{featu
-     * restore}/entityTypes/{entityType}`.
-     *
-     * @var string
-     */
-    public $entityType;
-    protected $featureDescriptorsType = GoogleCloudAiplatformV1ReadFeatureValuesResponseFeatureDescriptor::class;
-    protected $featureDescriptorsDataType = 'array';
-    /**
-     * The resource name of the EntityType from the ReadFeatureValuesRequest.
-     * Value format: `projects/{project}/locations/{location}/featurestores/{featu
-     * restore}/entityTypes/{entityType}`.
-     *
-     * @param string $entityType
-     */
-    public function setEntityType($entityType)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader extends \Google\Collection
     {
+        protected $collection_key = 'featureDescriptors';
+        /**
+         * The resource name of the EntityType from the ReadFeatureValuesRequest.
+         * Value format: `projects/{project}/locations/{location}/featurestores/{featu
+         * restore}/entityTypes/{entityType}`.
+         *
+         * @var string
+         */
+        public $entityType;
+        protected $featureDescriptorsType = GoogleCloudAiplatformV1ReadFeatureValuesResponseFeatureDescriptor::class;
+        protected $featureDescriptorsDataType = 'array';
+        /**
+         * The resource name of the EntityType from the ReadFeatureValuesRequest.
+         * Value format: `projects/{project}/locations/{location}/featurestores/{featu
+         * restore}/entityTypes/{entityType}`.
+         *
+         * @param string $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityType()
+        {
+        }
+        /**
+         * List of Feature metadata corresponding to each piece of
+         * ReadFeatureValuesResponse.EntityView.data.
+         *
+         * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseFeatureDescriptor[] $featureDescriptors
+         */
+        public function setFeatureDescriptors($featureDescriptors)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseFeatureDescriptor[]
+         */
+        public function getFeatureDescriptors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityType()
-    {
-    }
-    /**
-     * List of Feature metadata corresponding to each piece of
-     * ReadFeatureValuesResponse.EntityView.data.
-     *
-     * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseFeatureDescriptor[] $featureDescriptors
-     */
-    public function setFeatureDescriptors($featureDescriptors)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseFeatureDescriptor[]
-     */
-    public function getFeatureDescriptors()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader
     {
     }
 }

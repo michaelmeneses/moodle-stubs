@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class AddDnsZoneResponse extends \Google\Model
-{
-    protected $consumerPeeringZoneType = DnsZone::class;
-    protected $consumerPeeringZoneDataType = '';
-    protected $producerPrivateZoneType = DnsZone::class;
-    protected $producerPrivateZoneDataType = '';
-    /**
-     * The DNS peering zone created in the consumer project.
-     *
-     * @param DnsZone $consumerPeeringZone
-     */
-    public function setConsumerPeeringZone(DnsZone $consumerPeeringZone)
+namespace Google\Service\ServiceNetworking {
+    class AddDnsZoneResponse extends \Google\Model
     {
+        protected $consumerPeeringZoneType = DnsZone::class;
+        protected $consumerPeeringZoneDataType = '';
+        protected $producerPrivateZoneType = DnsZone::class;
+        protected $producerPrivateZoneDataType = '';
+        /**
+         * The DNS peering zone created in the consumer project.
+         *
+         * @param DnsZone $consumerPeeringZone
+         */
+        public function setConsumerPeeringZone(DnsZone $consumerPeeringZone)
+        {
+        }
+        /**
+         * @return DnsZone
+         */
+        public function getConsumerPeeringZone()
+        {
+        }
+        /**
+         * The private DNS zone created in the shared producer host project.
+         *
+         * @param DnsZone $producerPrivateZone
+         */
+        public function setProducerPrivateZone(DnsZone $producerPrivateZone)
+        {
+        }
+        /**
+         * @return DnsZone
+         */
+        public function getProducerPrivateZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsZone
+     * Runtime class alias of \Google\Service\ServiceNetworking\AddDnsZoneResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerPeeringZone()
-    {
-    }
-    /**
-     * The private DNS zone created in the shared producer host project.
-     *
-     * @param DnsZone $producerPrivateZone
-     */
-    public function setProducerPrivateZone(DnsZone $producerPrivateZone)
-    {
-    }
-    /**
-     * @return DnsZone
-     */
-    public function getProducerPrivateZone()
+    class Google_Service_ServiceNetworking_AddDnsZoneResponse extends \Google\Service\ServiceNetworking\AddDnsZoneResponse
     {
     }
 }

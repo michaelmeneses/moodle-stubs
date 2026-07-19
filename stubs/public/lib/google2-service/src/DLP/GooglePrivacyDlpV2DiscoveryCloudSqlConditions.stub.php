@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryCloudSqlConditions extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    /**
-     * Optional. Database engines that should be profiled. Optional. Defaults to
-     * ALL_SUPPORTED_DATABASE_ENGINES if unspecified.
-     *
-     * @var string[]
-     */
-    public $databaseEngines;
-    /**
-     * Data profiles will only be generated for the database resource types
-     * specified in this field. If not specified, defaults to
-     * [DATABASE_RESOURCE_TYPE_ALL_SUPPORTED_TYPES].
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * Optional. Database engines that should be profiled. Optional. Defaults to
-     * ALL_SUPPORTED_DATABASE_ENGINES if unspecified.
-     *
-     * @param string[] $databaseEngines
-     */
-    public function setDatabaseEngines($databaseEngines)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryCloudSqlConditions extends \Google\Collection
     {
+        protected $collection_key = 'types';
+        /**
+         * Optional. Database engines that should be profiled. Optional. Defaults to
+         * ALL_SUPPORTED_DATABASE_ENGINES if unspecified.
+         *
+         * @var string[]
+         */
+        public $databaseEngines;
+        /**
+         * Data profiles will only be generated for the database resource types
+         * specified in this field. If not specified, defaults to
+         * [DATABASE_RESOURCE_TYPE_ALL_SUPPORTED_TYPES].
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * Optional. Database engines that should be profiled. Optional. Defaults to
+         * ALL_SUPPORTED_DATABASE_ENGINES if unspecified.
+         *
+         * @param string[] $databaseEngines
+         */
+        public function setDatabaseEngines($databaseEngines)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDatabaseEngines()
+        {
+        }
+        /**
+         * Data profiles will only be generated for the database resource types
+         * specified in this field. If not specified, defaults to
+         * [DATABASE_RESOURCE_TYPE_ALL_SUPPORTED_TYPES].
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudSqlConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseEngines()
-    {
-    }
-    /**
-     * Data profiles will only be generated for the database resource types
-     * specified in this field. If not specified, defaults to
-     * [DATABASE_RESOURCE_TYPE_ALL_SUPPORTED_TYPES].
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryCloudSqlConditions extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudSqlConditions
     {
     }
 }

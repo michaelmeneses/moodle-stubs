@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa;
 
+use core\hook\after_config;
 /**
  * Callbacks for hooks.
  *

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataDiffUploadResponse extends \Google\Model
-{
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectVersion;
-    protected $originalObjectType = GdataCompositeMedia::class;
-    protected $originalObjectDataType = '';
-    /**
-     * gdata
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
+namespace Google\Service\YouTubeReporting {
+    class GdataDiffUploadResponse extends \Google\Model
     {
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectVersion;
+        protected $originalObjectType = GdataCompositeMedia::class;
+        protected $originalObjectDataType = '';
+        /**
+         * gdata
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param GdataCompositeMedia $originalObject
+         */
+        public function setOriginalObject(GdataCompositeMedia $originalObject)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getOriginalObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataDiffUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectVersion()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param GdataCompositeMedia $originalObject
-     */
-    public function setOriginalObject(GdataCompositeMedia $originalObject)
-    {
-    }
-    /**
-     * @return GdataCompositeMedia
-     */
-    public function getOriginalObject()
+    class Google_Service_YouTubeReporting_GdataDiffUploadResponse extends \Google\Service\YouTubeReporting\GdataDiffUploadResponse
     {
     }
 }

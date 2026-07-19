@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicesType = Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Monitoring {
+    class ListServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicesType = Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The Services matching the specified filter.
+         *
+         * @param Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\ListServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The Services matching the specified filter.
-     *
-     * @param Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return Service[]
-     */
-    public function getServices()
+    class Google_Service_Monitoring_ListServicesResponse extends \Google\Service\Monitoring\ListServicesResponse
     {
     }
 }

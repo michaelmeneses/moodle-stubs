@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PostgreSqlSchemaDetails extends \Google\Collection
-{
-    protected $collection_key = 'postgresqlExtensions';
-    /**
-     * Optional. PostgreSql foreign tables.
-     *
-     * @var int
-     */
-    public $foreignTablesCount;
-    protected $postgresqlExtensionsType = PostgreSqlExtension::class;
-    protected $postgresqlExtensionsDataType = 'array';
-    /**
-     * Optional. PostgreSql foreign tables.
-     *
-     * @param int $foreignTablesCount
-     */
-    public function setForeignTablesCount($foreignTablesCount)
+namespace Google\Service\MigrationCenterAPI {
+    class PostgreSqlSchemaDetails extends \Google\Collection
     {
+        protected $collection_key = 'postgresqlExtensions';
+        /**
+         * Optional. PostgreSql foreign tables.
+         *
+         * @var int
+         */
+        public $foreignTablesCount;
+        protected $postgresqlExtensionsType = PostgreSqlExtension::class;
+        protected $postgresqlExtensionsDataType = 'array';
+        /**
+         * Optional. PostgreSql foreign tables.
+         *
+         * @param int $foreignTablesCount
+         */
+        public function setForeignTablesCount($foreignTablesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getForeignTablesCount()
+        {
+        }
+        /**
+         * Optional. PostgreSql extensions.
+         *
+         * @param PostgreSqlExtension[] $postgresqlExtensions
+         */
+        public function setPostgresqlExtensions($postgresqlExtensions)
+        {
+        }
+        /**
+         * @return PostgreSqlExtension[]
+         */
+        public function getPostgresqlExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PostgreSqlSchemaDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForeignTablesCount()
-    {
-    }
-    /**
-     * Optional. PostgreSql extensions.
-     *
-     * @param PostgreSqlExtension[] $postgresqlExtensions
-     */
-    public function setPostgresqlExtensions($postgresqlExtensions)
-    {
-    }
-    /**
-     * @return PostgreSqlExtension[]
-     */
-    public function getPostgresqlExtensions()
+    class Google_Service_MigrationCenterAPI_PostgreSqlSchemaDetails extends \Google\Service\MigrationCenterAPI\PostgreSqlSchemaDetails
     {
     }
 }

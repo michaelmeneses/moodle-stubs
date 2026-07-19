@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaParameterMapField extends \Google\Model
-{
-    protected $literalValueType = GoogleCloudIntegrationsV1alphaValueType::class;
-    protected $literalValueDataType = '';
-    /**
-     * Referencing one of the Integration variables.
-     *
-     * @var string
-     */
-    public $referenceKey;
-    /**
-     * Passing a literal value.
-     *
-     * @param GoogleCloudIntegrationsV1alphaValueType $literalValue
-     */
-    public function setLiteralValue(GoogleCloudIntegrationsV1alphaValueType $literalValue)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaParameterMapField extends \Google\Model
     {
+        protected $literalValueType = GoogleCloudIntegrationsV1alphaValueType::class;
+        protected $literalValueDataType = '';
+        /**
+         * Referencing one of the Integration variables.
+         *
+         * @var string
+         */
+        public $referenceKey;
+        /**
+         * Passing a literal value.
+         *
+         * @param GoogleCloudIntegrationsV1alphaValueType $literalValue
+         */
+        public function setLiteralValue(GoogleCloudIntegrationsV1alphaValueType $literalValue)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaValueType
+         */
+        public function getLiteralValue()
+        {
+        }
+        /**
+         * Referencing one of the Integration variables.
+         *
+         * @param string $referenceKey
+         */
+        public function setReferenceKey($referenceKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaValueType
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaParameterMapField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLiteralValue()
-    {
-    }
-    /**
-     * Referencing one of the Integration variables.
-     *
-     * @param string $referenceKey
-     */
-    public function setReferenceKey($referenceKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceKey()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaParameterMapField extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaParameterMapField
     {
     }
 }

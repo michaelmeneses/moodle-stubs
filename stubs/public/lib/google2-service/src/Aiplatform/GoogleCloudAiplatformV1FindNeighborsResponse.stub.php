@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FindNeighborsResponse extends \Google\Collection
-{
-    protected $collection_key = 'nearestNeighbors';
-    protected $nearestNeighborsType = GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors::class;
-    protected $nearestNeighborsDataType = 'array';
-    /**
-     * The nearest neighbors of the query datapoints.
-     *
-     * @param GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors[] $nearestNeighbors
-     */
-    public function setNearestNeighbors($nearestNeighbors)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FindNeighborsResponse extends \Google\Collection
     {
+        protected $collection_key = 'nearestNeighbors';
+        protected $nearestNeighborsType = GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors::class;
+        protected $nearestNeighborsDataType = 'array';
+        /**
+         * The nearest neighbors of the query datapoints.
+         *
+         * @param GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors[] $nearestNeighbors
+         */
+        public function setNearestNeighbors($nearestNeighbors)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors[]
+         */
+        public function getNearestNeighbors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FindNeighborsResponseNearestNeighbors[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNearestNeighbors()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FindNeighborsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FindNeighborsResponse
     {
     }
 }

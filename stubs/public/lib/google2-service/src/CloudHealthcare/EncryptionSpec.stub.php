@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class EncryptionSpec extends \Google\Model
-{
-    /**
-     * Required. The resource name of customer-managed encryption key that is used
-     * to secure a resource and its sub-resources. Only the key in the same
-     * location as this Dataset is allowed to be used for encryption. Format is: `
-     * projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{key}
-     * `
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Required. The resource name of customer-managed encryption key that is used
-     * to secure a resource and its sub-resources. Only the key in the same
-     * location as this Dataset is allowed to be used for encryption. Format is: `
-     * projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{key}
-     * `
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\CloudHealthcare {
+    class EncryptionSpec extends \Google\Model
     {
+        /**
+         * Required. The resource name of customer-managed encryption key that is used
+         * to secure a resource and its sub-resources. Only the key in the same
+         * location as this Dataset is allowed to be used for encryption. Format is: `
+         * projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{key}
+         * `
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Required. The resource name of customer-managed encryption key that is used
+         * to secure a resource and its sub-resources. Only the key in the same
+         * location as this Dataset is allowed to be used for encryption. Format is: `
+         * projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{key}
+         * `
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\EncryptionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_CloudHealthcare_EncryptionSpec extends \Google\Service\CloudHealthcare\EncryptionSpec
     {
     }
 }

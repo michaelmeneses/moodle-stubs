@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListInstanceConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'instanceConfigs';
-    protected $instanceConfigsType = InstanceConfig::class;
-    protected $instanceConfigsDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to
-     * fetch more of the matching instance configurations.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of requested instance configurations.
-     *
-     * @param InstanceConfig[] $instanceConfigs
-     */
-    public function setInstanceConfigs($instanceConfigs)
+namespace Google\Service\Spanner {
+    class ListInstanceConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'instanceConfigs';
+        protected $instanceConfigsType = InstanceConfig::class;
+        protected $instanceConfigsDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to
+         * fetch more of the matching instance configurations.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of requested instance configurations.
+         *
+         * @param InstanceConfig[] $instanceConfigs
+         */
+        public function setInstanceConfigs($instanceConfigs)
+        {
+        }
+        /**
+         * @return InstanceConfig[]
+         */
+        public function getInstanceConfigs()
+        {
+        }
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to
+         * fetch more of the matching instance configurations.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceConfig[]
+     * Runtime class alias of \Google\Service\Spanner\ListInstanceConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceConfigs()
-    {
-    }
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to
-     * fetch more of the matching instance configurations.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Spanner_ListInstanceConfigsResponse extends \Google\Service\Spanner\ListInstanceConfigsResponse
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class DealPausingInfo extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined buyer/seller role.
-     */
-    public const PAUSE_ROLE_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
-    /**
-     * Specifies the role as buyer.
-     */
-    public const PAUSE_ROLE_BUYER = 'BUYER';
-    /**
-     * Specifies the role as seller.
-     */
-    public const PAUSE_ROLE_SELLER = 'SELLER';
-    /**
-     * The reason for the pausing of the deal; empty for active deals.
-     *
-     * @var string
-     */
-    public $pauseReason;
-    /**
-     * The party that first paused the deal; unspecified for active deals.
-     *
-     * @var string
-     */
-    public $pauseRole;
-    /**
-     * Whether pausing is consented between buyer and seller for the deal.
-     *
-     * @var bool
-     */
-    public $pausingConsented;
-    /**
-     * The reason for the pausing of the deal; empty for active deals.
-     *
-     * @param string $pauseReason
-     */
-    public function setPauseReason($pauseReason)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class DealPausingInfo extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined buyer/seller role.
+         */
+        public const PAUSE_ROLE_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
+        /**
+         * Specifies the role as buyer.
+         */
+        public const PAUSE_ROLE_BUYER = 'BUYER';
+        /**
+         * Specifies the role as seller.
+         */
+        public const PAUSE_ROLE_SELLER = 'SELLER';
+        /**
+         * The reason for the pausing of the deal; empty for active deals.
+         *
+         * @var string
+         */
+        public $pauseReason;
+        /**
+         * The party that first paused the deal; unspecified for active deals.
+         *
+         * @var string
+         */
+        public $pauseRole;
+        /**
+         * Whether pausing is consented between buyer and seller for the deal.
+         *
+         * @var bool
+         */
+        public $pausingConsented;
+        /**
+         * The reason for the pausing of the deal; empty for active deals.
+         *
+         * @param string $pauseReason
+         */
+        public function setPauseReason($pauseReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPauseReason()
+        {
+        }
+        /**
+         * The party that first paused the deal; unspecified for active deals.
+         *
+         * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
+         *
+         * @param self::PAUSE_ROLE_* $pauseRole
+         */
+        public function setPauseRole($pauseRole)
+        {
+        }
+        /**
+         * @return self::PAUSE_ROLE_*
+         */
+        public function getPauseRole()
+        {
+        }
+        /**
+         * Whether pausing is consented between buyer and seller for the deal.
+         *
+         * @param bool $pausingConsented
+         */
+        public function setPausingConsented($pausingConsented)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPausingConsented()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\DealPausingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPauseReason()
-    {
-    }
-    /**
-     * The party that first paused the deal; unspecified for active deals.
-     *
-     * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
-     *
-     * @param self::PAUSE_ROLE_* $pauseRole
-     */
-    public function setPauseRole($pauseRole)
-    {
-    }
-    /**
-     * @return self::PAUSE_ROLE_*
-     */
-    public function getPauseRole()
-    {
-    }
-    /**
-     * Whether pausing is consented between buyer and seller for the deal.
-     *
-     * @param bool $pausingConsented
-     */
-    public function setPausingConsented($pausingConsented)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPausingConsented()
+    class Google_Service_AuthorizedBuyersMarketplace_DealPausingInfo extends \Google\Service\AuthorizedBuyersMarketplace\DealPausingInfo
     {
     }
 }

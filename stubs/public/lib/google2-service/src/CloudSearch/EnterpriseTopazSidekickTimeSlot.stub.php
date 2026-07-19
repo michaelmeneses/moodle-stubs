@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickTimeSlot extends \Google\Model
-{
-    /**
-     * Day end time at the user's timezone.
-     *
-     * @var string
-     */
-    public $endTimeDay;
-    /**
-     * Hour and minute of the end time at the user's timezone.
-     *
-     * @var string
-     */
-    public $endTimeHourAndMinute;
-    /**
-     * End time in milliseconds.
-     *
-     * @var string
-     */
-    public $endTimeInMillis;
-    /**
-     * Day start time at user's timezone.
-     *
-     * @var string
-     */
-    public $startTimeDay;
-    /**
-     * Hour and minute of the start time at the user's timezone.
-     *
-     * @var string
-     */
-    public $startTimeHourAndMinute;
-    /**
-     * Start time in milliseconds.
-     *
-     * @var string
-     */
-    public $startTimeInMillis;
-    /**
-     * Day end time at the user's timezone.
-     *
-     * @param string $endTimeDay
-     */
-    public function setEndTimeDay($endTimeDay)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickTimeSlot extends \Google\Model
     {
+        /**
+         * Day end time at the user's timezone.
+         *
+         * @var string
+         */
+        public $endTimeDay;
+        /**
+         * Hour and minute of the end time at the user's timezone.
+         *
+         * @var string
+         */
+        public $endTimeHourAndMinute;
+        /**
+         * End time in milliseconds.
+         *
+         * @var string
+         */
+        public $endTimeInMillis;
+        /**
+         * Day start time at user's timezone.
+         *
+         * @var string
+         */
+        public $startTimeDay;
+        /**
+         * Hour and minute of the start time at the user's timezone.
+         *
+         * @var string
+         */
+        public $startTimeHourAndMinute;
+        /**
+         * Start time in milliseconds.
+         *
+         * @var string
+         */
+        public $startTimeInMillis;
+        /**
+         * Day end time at the user's timezone.
+         *
+         * @param string $endTimeDay
+         */
+        public function setEndTimeDay($endTimeDay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeDay()
+        {
+        }
+        /**
+         * Hour and minute of the end time at the user's timezone.
+         *
+         * @param string $endTimeHourAndMinute
+         */
+        public function setEndTimeHourAndMinute($endTimeHourAndMinute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeHourAndMinute()
+        {
+        }
+        /**
+         * End time in milliseconds.
+         *
+         * @param string $endTimeInMillis
+         */
+        public function setEndTimeInMillis($endTimeInMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeInMillis()
+        {
+        }
+        /**
+         * Day start time at user's timezone.
+         *
+         * @param string $startTimeDay
+         */
+        public function setStartTimeDay($startTimeDay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeDay()
+        {
+        }
+        /**
+         * Hour and minute of the start time at the user's timezone.
+         *
+         * @param string $startTimeHourAndMinute
+         */
+        public function setStartTimeHourAndMinute($startTimeHourAndMinute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeHourAndMinute()
+        {
+        }
+        /**
+         * Start time in milliseconds.
+         *
+         * @param string $startTimeInMillis
+         */
+        public function setStartTimeInMillis($startTimeInMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeInMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickTimeSlot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTimeDay()
-    {
-    }
-    /**
-     * Hour and minute of the end time at the user's timezone.
-     *
-     * @param string $endTimeHourAndMinute
-     */
-    public function setEndTimeHourAndMinute($endTimeHourAndMinute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTimeHourAndMinute()
-    {
-    }
-    /**
-     * End time in milliseconds.
-     *
-     * @param string $endTimeInMillis
-     */
-    public function setEndTimeInMillis($endTimeInMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTimeInMillis()
-    {
-    }
-    /**
-     * Day start time at user's timezone.
-     *
-     * @param string $startTimeDay
-     */
-    public function setStartTimeDay($startTimeDay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeDay()
-    {
-    }
-    /**
-     * Hour and minute of the start time at the user's timezone.
-     *
-     * @param string $startTimeHourAndMinute
-     */
-    public function setStartTimeHourAndMinute($startTimeHourAndMinute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeHourAndMinute()
-    {
-    }
-    /**
-     * Start time in milliseconds.
-     *
-     * @param string $startTimeInMillis
-     */
-    public function setStartTimeInMillis($startTimeInMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeInMillis()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickTimeSlot extends \Google\Service\CloudSearch\EnterpriseTopazSidekickTimeSlot
     {
     }
 }

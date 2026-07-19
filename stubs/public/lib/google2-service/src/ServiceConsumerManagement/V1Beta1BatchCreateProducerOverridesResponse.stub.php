@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1Beta1BatchCreateProducerOverridesResponse extends \Google\Collection
-{
-    protected $collection_key = 'overrides';
-    protected $overridesType = V1Beta1QuotaOverride::class;
-    protected $overridesDataType = 'array';
-    /**
-     * The overrides that were created.
-     *
-     * @param V1Beta1QuotaOverride[] $overrides
-     */
-    public function setOverrides($overrides)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1Beta1BatchCreateProducerOverridesResponse extends \Google\Collection
     {
+        protected $collection_key = 'overrides';
+        protected $overridesType = V1Beta1QuotaOverride::class;
+        protected $overridesDataType = 'array';
+        /**
+         * The overrides that were created.
+         *
+         * @param V1Beta1QuotaOverride[] $overrides
+         */
+        public function setOverrides($overrides)
+        {
+        }
+        /**
+         * @return V1Beta1QuotaOverride[]
+         */
+        public function getOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V1Beta1QuotaOverride[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1Beta1BatchCreateProducerOverridesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrides()
+    class Google_Service_ServiceConsumerManagement_V1Beta1BatchCreateProducerOverridesResponse extends \Google\Service\ServiceConsumerManagement\V1Beta1BatchCreateProducerOverridesResponse
     {
     }
 }

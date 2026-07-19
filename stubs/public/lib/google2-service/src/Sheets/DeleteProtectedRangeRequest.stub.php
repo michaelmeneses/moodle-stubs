@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteProtectedRangeRequest extends \Google\Model
-{
-    /**
-     * The ID of the protected range to delete.
-     *
-     * @var int
-     */
-    public $protectedRangeId;
-    /**
-     * The ID of the protected range to delete.
-     *
-     * @param int $protectedRangeId
-     */
-    public function setProtectedRangeId($protectedRangeId)
+namespace Google\Service\Sheets {
+    class DeleteProtectedRangeRequest extends \Google\Model
     {
+        /**
+         * The ID of the protected range to delete.
+         *
+         * @var int
+         */
+        public $protectedRangeId;
+        /**
+         * The ID of the protected range to delete.
+         *
+         * @param int $protectedRangeId
+         */
+        public function setProtectedRangeId($protectedRangeId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProtectedRangeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteProtectedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProtectedRangeId()
+    class Google_Service_Sheets_DeleteProtectedRangeRequest extends \Google\Service\Sheets\DeleteProtectedRangeRequest
     {
     }
 }

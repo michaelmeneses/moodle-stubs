@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1MoveAnalysisResult extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $blockersType = GoogleCloudAssuredworkloadsV1MoveImpact::class;
-    protected $blockersDataType = 'array';
-    protected $warningsType = GoogleCloudAssuredworkloadsV1MoveImpact::class;
-    protected $warningsDataType = 'array';
-    /**
-     * List of blockers. If not resolved, these will result in compliance
-     * violations in the target.
-     *
-     * @param GoogleCloudAssuredworkloadsV1MoveImpact[] $blockers
-     */
-    public function setBlockers($blockers)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1MoveAnalysisResult extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $blockersType = GoogleCloudAssuredworkloadsV1MoveImpact::class;
+        protected $blockersDataType = 'array';
+        protected $warningsType = GoogleCloudAssuredworkloadsV1MoveImpact::class;
+        protected $warningsDataType = 'array';
+        /**
+         * List of blockers. If not resolved, these will result in compliance
+         * violations in the target.
+         *
+         * @param GoogleCloudAssuredworkloadsV1MoveImpact[] $blockers
+         */
+        public function setBlockers($blockers)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1MoveImpact[]
+         */
+        public function getBlockers()
+        {
+        }
+        /**
+         * List of warnings. These are risks that may or may not result in compliance
+         * violations.
+         *
+         * @param GoogleCloudAssuredworkloadsV1MoveImpact[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1MoveImpact[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1MoveImpact[]
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MoveAnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockers()
-    {
-    }
-    /**
-     * List of warnings. These are risks that may or may not result in compliance
-     * violations.
-     *
-     * @param GoogleCloudAssuredworkloadsV1MoveImpact[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1MoveImpact[]
-     */
-    public function getWarnings()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1MoveAnalysisResult extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MoveAnalysisResult
     {
     }
 }

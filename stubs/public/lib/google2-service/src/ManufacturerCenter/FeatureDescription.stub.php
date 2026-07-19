@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class FeatureDescription extends \Google\Model
-{
-    /**
-     * A short description of the feature.
-     *
-     * @var string
-     */
-    public $headline;
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * A detailed description of the feature.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * A short description of the feature.
-     *
-     * @param string $headline
-     */
-    public function setHeadline($headline)
+namespace Google\Service\ManufacturerCenter {
+    class FeatureDescription extends \Google\Model
     {
+        /**
+         * A short description of the feature.
+         *
+         * @var string
+         */
+        public $headline;
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * A detailed description of the feature.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * A short description of the feature.
+         *
+         * @param string $headline
+         */
+        public function setHeadline($headline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline()
+        {
+        }
+        /**
+         * An optional image describing the feature.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * A detailed description of the feature.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\FeatureDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeadline()
-    {
-    }
-    /**
-     * An optional image describing the feature.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * A detailed description of the feature.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_ManufacturerCenter_FeatureDescription extends \Google\Service\ManufacturerCenter\FeatureDescription
     {
     }
 }

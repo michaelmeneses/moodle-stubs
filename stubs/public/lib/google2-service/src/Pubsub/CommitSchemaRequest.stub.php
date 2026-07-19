@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class CommitSchemaRequest extends \Google\Model
-{
-    protected $schemaType = Schema::class;
-    protected $schemaDataType = '';
-    /**
-     * Required. The schema revision to commit.
-     *
-     * @param Schema $schema
-     */
-    public function setSchema(Schema $schema)
+namespace Google\Service\Pubsub {
+    class CommitSchemaRequest extends \Google\Model
     {
+        protected $schemaType = Schema::class;
+        protected $schemaDataType = '';
+        /**
+         * Required. The schema revision to commit.
+         *
+         * @param Schema $schema
+         */
+        public function setSchema(Schema $schema)
+        {
+        }
+        /**
+         * @return Schema
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Schema
+     * Runtime class alias of \Google\Service\Pubsub\CommitSchemaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema()
+    class Google_Service_Pubsub_CommitSchemaRequest extends \Google\Service\Pubsub\CommitSchemaRequest
     {
     }
 }

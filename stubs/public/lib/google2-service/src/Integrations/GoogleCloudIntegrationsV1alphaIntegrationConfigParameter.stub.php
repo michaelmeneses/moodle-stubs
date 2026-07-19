@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaIntegrationConfigParameter extends \Google\Model
-{
-    protected $parameterType = GoogleCloudIntegrationsV1alphaIntegrationParameter::class;
-    protected $parameterDataType = '';
-    protected $valueType = GoogleCloudIntegrationsV1alphaValueType::class;
-    protected $valueDataType = '';
-    /**
-     * Optional. Integration Parameter to provide the default value, data type and
-     * attributes required for the Integration config variables.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationParameter $parameter
-     */
-    public function setParameter(GoogleCloudIntegrationsV1alphaIntegrationParameter $parameter)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaIntegrationConfigParameter extends \Google\Model
     {
+        protected $parameterType = GoogleCloudIntegrationsV1alphaIntegrationParameter::class;
+        protected $parameterDataType = '';
+        protected $valueType = GoogleCloudIntegrationsV1alphaValueType::class;
+        protected $valueDataType = '';
+        /**
+         * Optional. Integration Parameter to provide the default value, data type and
+         * attributes required for the Integration config variables.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationParameter $parameter
+         */
+        public function setParameter(GoogleCloudIntegrationsV1alphaIntegrationParameter $parameter)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationParameter
+         */
+        public function getParameter()
+        {
+        }
+        /**
+         * Values for the defined keys. Each value can either be string, int, double
+         * or any proto message or a serialized object.
+         *
+         * @param GoogleCloudIntegrationsV1alphaValueType $value
+         */
+        public function setValue(GoogleCloudIntegrationsV1alphaValueType $value)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaValueType
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationParameter
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationConfigParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameter()
-    {
-    }
-    /**
-     * Values for the defined keys. Each value can either be string, int, double
-     * or any proto message or a serialized object.
-     *
-     * @param GoogleCloudIntegrationsV1alphaValueType $value
-     */
-    public function setValue(GoogleCloudIntegrationsV1alphaValueType $value)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaValueType
-     */
-    public function getValue()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaIntegrationConfigParameter extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationConfigParameter
     {
     }
 }

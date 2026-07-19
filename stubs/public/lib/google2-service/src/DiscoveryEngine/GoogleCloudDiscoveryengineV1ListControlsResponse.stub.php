@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListControlsResponse extends \Google\Collection
-{
-    protected $collection_key = 'controls';
-    protected $controlsType = GoogleCloudDiscoveryengineV1Control::class;
-    protected $controlsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All the Controls for a given data store.
-     *
-     * @param GoogleCloudDiscoveryengineV1Control[] $controls
-     */
-    public function setControls($controls)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListControlsResponse extends \Google\Collection
     {
+        protected $collection_key = 'controls';
+        protected $controlsType = GoogleCloudDiscoveryengineV1Control::class;
+        protected $controlsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All the Controls for a given data store.
+         *
+         * @param GoogleCloudDiscoveryengineV1Control[] $controls
+         */
+        public function setControls($controls)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Control[]
+         */
+        public function getControls()
+        {
+        }
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Control[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListControlsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControls()
-    {
-    }
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListControlsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListControlsResponse
     {
     }
 }

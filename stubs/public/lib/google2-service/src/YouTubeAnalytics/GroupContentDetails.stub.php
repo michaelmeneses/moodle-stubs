@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class GroupContentDetails extends \Google\Model
-{
-    /**
-     * The number of items in the group.
-     *
-     * @var string
-     */
-    public $itemCount;
-    /**
-     * The type of resources that the group contains. Valid values for this
-     * property are: * `youtube#channel` * `youtube#playlist` * `youtube#video` *
-     * `youtubePartner#asset`
-     *
-     * @var string
-     */
-    public $itemType;
-    /**
-     * The number of items in the group.
-     *
-     * @param string $itemCount
-     */
-    public function setItemCount($itemCount)
+namespace Google\Service\YouTubeAnalytics {
+    class GroupContentDetails extends \Google\Model
     {
+        /**
+         * The number of items in the group.
+         *
+         * @var string
+         */
+        public $itemCount;
+        /**
+         * The type of resources that the group contains. Valid values for this
+         * property are: * `youtube#channel` * `youtube#playlist` * `youtube#video` *
+         * `youtubePartner#asset`
+         *
+         * @var string
+         */
+        public $itemType;
+        /**
+         * The number of items in the group.
+         *
+         * @param string $itemCount
+         */
+        public function setItemCount($itemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemCount()
+        {
+        }
+        /**
+         * The type of resources that the group contains. Valid values for this
+         * property are: * `youtube#channel` * `youtube#playlist` * `youtube#video` *
+         * `youtubePartner#asset`
+         *
+         * @param string $itemType
+         */
+        public function setItemType($itemType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\GroupContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemCount()
-    {
-    }
-    /**
-     * The type of resources that the group contains. Valid values for this
-     * property are: * `youtube#channel` * `youtube#playlist` * `youtube#video` *
-     * `youtubePartner#asset`
-     *
-     * @param string $itemType
-     */
-    public function setItemType($itemType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemType()
+    class Google_Service_YouTubeAnalytics_GroupContentDetails extends \Google\Service\YouTubeAnalytics\GroupContentDetails
     {
     }
 }

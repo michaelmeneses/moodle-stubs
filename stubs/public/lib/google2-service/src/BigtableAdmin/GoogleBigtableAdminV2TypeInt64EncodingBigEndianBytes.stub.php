@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes extends \Google\Model
-{
-    protected $bytesTypeType = GoogleBigtableAdminV2TypeBytes::class;
-    protected $bytesTypeDataType = '';
-    /**
-     * Deprecated: ignored if set.
-     *
-     * @deprecated
-     * @param GoogleBigtableAdminV2TypeBytes $bytesType
-     */
-    public function setBytesType(GoogleBigtableAdminV2TypeBytes $bytesType)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes extends \Google\Model
     {
+        protected $bytesTypeType = GoogleBigtableAdminV2TypeBytes::class;
+        protected $bytesTypeDataType = '';
+        /**
+         * Deprecated: ignored if set.
+         *
+         * @deprecated
+         * @param GoogleBigtableAdminV2TypeBytes $bytesType
+         */
+        public function setBytesType(GoogleBigtableAdminV2TypeBytes $bytesType)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleBigtableAdminV2TypeBytes
+         */
+        public function getBytesType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return GoogleBigtableAdminV2TypeBytes
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesType()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes
     {
     }
 }

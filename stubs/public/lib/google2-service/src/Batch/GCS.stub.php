@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class GCS extends \Google\Model
-{
-    /**
-     * Remote path, either a bucket name or a subdirectory of a bucket, e.g.:
-     * bucket_name, bucket_name/subdirectory/
-     *
-     * @var string
-     */
-    public $remotePath;
-    /**
-     * Remote path, either a bucket name or a subdirectory of a bucket, e.g.:
-     * bucket_name, bucket_name/subdirectory/
-     *
-     * @param string $remotePath
-     */
-    public function setRemotePath($remotePath)
+namespace Google\Service\Batch {
+    class GCS extends \Google\Model
     {
+        /**
+         * Remote path, either a bucket name or a subdirectory of a bucket, e.g.:
+         * bucket_name, bucket_name/subdirectory/
+         *
+         * @var string
+         */
+        public $remotePath;
+        /**
+         * Remote path, either a bucket name or a subdirectory of a bucket, e.g.:
+         * bucket_name, bucket_name/subdirectory/
+         *
+         * @param string $remotePath
+         */
+        public function setRemotePath($remotePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemotePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\GCS registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRemotePath()
+    class Google_Service_Batch_GCS extends \Google\Service\Batch\GCS
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ToolCallResult extends \Google\Model
-{
-    /**
-     * Required. The name of the tool's action associated with this call.
-     *
-     * @var string
-     */
-    public $action;
-    protected $errorType = GoogleCloudDialogflowCxV3beta1ToolCallResultError::class;
-    protected $errorDataType = '';
-    /**
-     * The tool call's output parameters.
-     *
-     * @var array[]
-     */
-    public $outputParameters;
-    /**
-     * Required. The tool associated with this call. Format:
-     * `projects//locations//agents//tools/`.
-     *
-     * @var string
-     */
-    public $tool;
-    /**
-     * Required. The name of the tool's action associated with this call.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ToolCallResult extends \Google\Model
     {
+        /**
+         * Required. The name of the tool's action associated with this call.
+         *
+         * @var string
+         */
+        public $action;
+        protected $errorType = GoogleCloudDialogflowCxV3beta1ToolCallResultError::class;
+        protected $errorDataType = '';
+        /**
+         * The tool call's output parameters.
+         *
+         * @var array[]
+         */
+        public $outputParameters;
+        /**
+         * Required. The tool associated with this call. Format:
+         * `projects//locations//agents//tools/`.
+         *
+         * @var string
+         */
+        public $tool;
+        /**
+         * Required. The name of the tool's action associated with this call.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The tool call's error.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1ToolCallResultError $error
+         */
+        public function setError(GoogleCloudDialogflowCxV3beta1ToolCallResultError $error)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1ToolCallResultError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The tool call's output parameters.
+         *
+         * @param array[] $outputParameters
+         */
+        public function setOutputParameters($outputParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getOutputParameters()
+        {
+        }
+        /**
+         * Required. The tool associated with this call. Format:
+         * `projects//locations//agents//tools/`.
+         *
+         * @param string $tool
+         */
+        public function setTool($tool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ToolCallResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The tool call's error.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1ToolCallResultError $error
-     */
-    public function setError(GoogleCloudDialogflowCxV3beta1ToolCallResultError $error)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1ToolCallResultError
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The tool call's output parameters.
-     *
-     * @param array[] $outputParameters
-     */
-    public function setOutputParameters($outputParameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getOutputParameters()
-    {
-    }
-    /**
-     * Required. The tool associated with this call. Format:
-     * `projects//locations//agents//tools/`.
-     *
-     * @param string $tool
-     */
-    public function setTool($tool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTool()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ToolCallResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ToolCallResult
     {
     }
 }

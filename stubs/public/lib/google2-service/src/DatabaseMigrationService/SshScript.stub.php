@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SshScript extends \Google\Model
-{
-    /**
-     * The ssh configuration script.
-     *
-     * @var string
-     */
-    public $script;
-    /**
-     * The ssh configuration script.
-     *
-     * @param string $script
-     */
-    public function setScript($script)
+namespace Google\Service\DatabaseMigrationService {
+    class SshScript extends \Google\Model
     {
+        /**
+         * The ssh configuration script.
+         *
+         * @var string
+         */
+        public $script;
+        /**
+         * The ssh configuration script.
+         *
+         * @param string $script
+         */
+        public function setScript($script)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScript()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SshScript registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScript()
+    class Google_Service_DatabaseMigrationService_SshScript extends \Google\Service\DatabaseMigrationService\SshScript
     {
     }
 }

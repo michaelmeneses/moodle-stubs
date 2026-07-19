@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus extends \Google\Model
-{
-    /**
-     * The name of the operation triggered by the processed document. If the human
-     * review process isn't triggered, this field will be empty. It has the same
-     * response type and metadata as the long-running operation returned by the
-     * ReviewDocument method.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $humanReviewOperation;
-    protected $humanReviewStatusType = GoogleCloudDocumentaiV1beta3HumanReviewStatus::class;
-    protected $humanReviewStatusDataType = '';
-    /**
-     * The source of the document, same as the input_gcs_source field in the
-     * request when the batch process started.
-     *
-     * @var string
-     */
-    public $inputGcsSource;
-    /**
-     * The Cloud Storage output destination (in the request as
-     * DocumentOutputConfig.GcsOutputConfig.gcs_uri) of the processed document if
-     * it was successful, otherwise empty.
-     *
-     * @var string
-     */
-    public $outputGcsDestination;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The name of the operation triggered by the processed document. If the human
-     * review process isn't triggered, this field will be empty. It has the same
-     * response type and metadata as the long-running operation returned by the
-     * ReviewDocument method.
-     *
-     * @deprecated
-     * @param string $humanReviewOperation
-     */
-    public function setHumanReviewOperation($humanReviewOperation)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus extends \Google\Model
     {
+        /**
+         * The name of the operation triggered by the processed document. If the human
+         * review process isn't triggered, this field will be empty. It has the same
+         * response type and metadata as the long-running operation returned by the
+         * ReviewDocument method.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $humanReviewOperation;
+        protected $humanReviewStatusType = GoogleCloudDocumentaiV1beta3HumanReviewStatus::class;
+        protected $humanReviewStatusDataType = '';
+        /**
+         * The source of the document, same as the input_gcs_source field in the
+         * request when the batch process started.
+         *
+         * @var string
+         */
+        public $inputGcsSource;
+        /**
+         * The Cloud Storage output destination (in the request as
+         * DocumentOutputConfig.GcsOutputConfig.gcs_uri) of the processed document if
+         * it was successful, otherwise empty.
+         *
+         * @var string
+         */
+        public $outputGcsDestination;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The name of the operation triggered by the processed document. If the human
+         * review process isn't triggered, this field will be empty. It has the same
+         * response type and metadata as the long-running operation returned by the
+         * ReviewDocument method.
+         *
+         * @deprecated
+         * @param string $humanReviewOperation
+         */
+        public function setHumanReviewOperation($humanReviewOperation)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getHumanReviewOperation()
+        {
+        }
+        /**
+         * The status of human review on the processed document.
+         *
+         * @param GoogleCloudDocumentaiV1beta3HumanReviewStatus $humanReviewStatus
+         */
+        public function setHumanReviewStatus(GoogleCloudDocumentaiV1beta3HumanReviewStatus $humanReviewStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3HumanReviewStatus
+         */
+        public function getHumanReviewStatus()
+        {
+        }
+        /**
+         * The source of the document, same as the input_gcs_source field in the
+         * request when the batch process started.
+         *
+         * @param string $inputGcsSource
+         */
+        public function setInputGcsSource($inputGcsSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputGcsSource()
+        {
+        }
+        /**
+         * The Cloud Storage output destination (in the request as
+         * DocumentOutputConfig.GcsOutputConfig.gcs_uri) of the processed document if
+         * it was successful, otherwise empty.
+         *
+         * @param string $outputGcsDestination
+         */
+        public function setOutputGcsDestination($outputGcsDestination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputGcsDestination()
+        {
+        }
+        /**
+         * The status processing the document.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHumanReviewOperation()
-    {
-    }
-    /**
-     * The status of human review on the processed document.
-     *
-     * @param GoogleCloudDocumentaiV1beta3HumanReviewStatus $humanReviewStatus
-     */
-    public function setHumanReviewStatus(GoogleCloudDocumentaiV1beta3HumanReviewStatus $humanReviewStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta3HumanReviewStatus
-     */
-    public function getHumanReviewStatus()
-    {
-    }
-    /**
-     * The source of the document, same as the input_gcs_source field in the
-     * request when the batch process started.
-     *
-     * @param string $inputGcsSource
-     */
-    public function setInputGcsSource($inputGcsSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputGcsSource()
-    {
-    }
-    /**
-     * The Cloud Storage output destination (in the request as
-     * DocumentOutputConfig.GcsOutputConfig.gcs_uri) of the processed document if
-     * it was successful, otherwise empty.
-     *
-     * @param string $outputGcsDestination
-     */
-    public function setOutputGcsDestination($outputGcsDestination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputGcsDestination()
-    {
-    }
-    /**
-     * The status processing the document.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus
     {
     }
 }

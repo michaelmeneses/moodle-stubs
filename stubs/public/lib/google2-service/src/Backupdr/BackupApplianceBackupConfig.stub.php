@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupApplianceBackupConfig extends \Google\Model
-{
-    /**
-     * The name of the application.
-     *
-     * @var string
-     */
-    public $applicationName;
-    /**
-     * The ID of the backup appliance.
-     *
-     * @var string
-     */
-    public $backupApplianceId;
-    /**
-     * The name of the backup appliance.
-     *
-     * @var string
-     */
-    public $backupApplianceName;
-    /**
-     * The name of the host where the application is running.
-     *
-     * @var string
-     */
-    public $hostName;
-    /**
-     * The ID of the SLA of this application.
-     *
-     * @var string
-     */
-    public $slaId;
-    /**
-     * The name of the SLP associated with the application.
-     *
-     * @var string
-     */
-    public $slpName;
-    /**
-     * The name of the SLT associated with the application.
-     *
-     * @var string
-     */
-    public $sltName;
-    /**
-     * The name of the application.
-     *
-     * @param string $applicationName
-     */
-    public function setApplicationName($applicationName)
+namespace Google\Service\Backupdr {
+    class BackupApplianceBackupConfig extends \Google\Model
     {
+        /**
+         * The name of the application.
+         *
+         * @var string
+         */
+        public $applicationName;
+        /**
+         * The ID of the backup appliance.
+         *
+         * @var string
+         */
+        public $backupApplianceId;
+        /**
+         * The name of the backup appliance.
+         *
+         * @var string
+         */
+        public $backupApplianceName;
+        /**
+         * The name of the host where the application is running.
+         *
+         * @var string
+         */
+        public $hostName;
+        /**
+         * The ID of the SLA of this application.
+         *
+         * @var string
+         */
+        public $slaId;
+        /**
+         * The name of the SLP associated with the application.
+         *
+         * @var string
+         */
+        public $slpName;
+        /**
+         * The name of the SLT associated with the application.
+         *
+         * @var string
+         */
+        public $sltName;
+        /**
+         * The name of the application.
+         *
+         * @param string $applicationName
+         */
+        public function setApplicationName($applicationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationName()
+        {
+        }
+        /**
+         * The ID of the backup appliance.
+         *
+         * @param string $backupApplianceId
+         */
+        public function setBackupApplianceId($backupApplianceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupApplianceId()
+        {
+        }
+        /**
+         * The name of the backup appliance.
+         *
+         * @param string $backupApplianceName
+         */
+        public function setBackupApplianceName($backupApplianceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupApplianceName()
+        {
+        }
+        /**
+         * The name of the host where the application is running.
+         *
+         * @param string $hostName
+         */
+        public function setHostName($hostName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostName()
+        {
+        }
+        /**
+         * The ID of the SLA of this application.
+         *
+         * @param string $slaId
+         */
+        public function setSlaId($slaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlaId()
+        {
+        }
+        /**
+         * The name of the SLP associated with the application.
+         *
+         * @param string $slpName
+         */
+        public function setSlpName($slpName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlpName()
+        {
+        }
+        /**
+         * The name of the SLT associated with the application.
+         *
+         * @param string $sltName
+         */
+        public function setSltName($sltName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSltName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\BackupApplianceBackupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationName()
-    {
-    }
-    /**
-     * The ID of the backup appliance.
-     *
-     * @param string $backupApplianceId
-     */
-    public function setBackupApplianceId($backupApplianceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupApplianceId()
-    {
-    }
-    /**
-     * The name of the backup appliance.
-     *
-     * @param string $backupApplianceName
-     */
-    public function setBackupApplianceName($backupApplianceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupApplianceName()
-    {
-    }
-    /**
-     * The name of the host where the application is running.
-     *
-     * @param string $hostName
-     */
-    public function setHostName($hostName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostName()
-    {
-    }
-    /**
-     * The ID of the SLA of this application.
-     *
-     * @param string $slaId
-     */
-    public function setSlaId($slaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlaId()
-    {
-    }
-    /**
-     * The name of the SLP associated with the application.
-     *
-     * @param string $slpName
-     */
-    public function setSlpName($slpName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlpName()
-    {
-    }
-    /**
-     * The name of the SLT associated with the application.
-     *
-     * @param string $sltName
-     */
-    public function setSltName($sltName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSltName()
+    class Google_Service_Backupdr_BackupApplianceBackupConfig extends \Google\Service\Backupdr\BackupApplianceBackupConfig
     {
     }
 }

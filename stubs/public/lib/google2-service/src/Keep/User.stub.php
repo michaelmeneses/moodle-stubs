@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class User extends \Google\Model
-{
-    /**
-     * The user's email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The user's email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Keep {
+    class User extends \Google\Model
     {
+        /**
+         * The user's email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The user's email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Keep\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_Keep_User extends \Google\Service\Keep\User
     {
     }
 }

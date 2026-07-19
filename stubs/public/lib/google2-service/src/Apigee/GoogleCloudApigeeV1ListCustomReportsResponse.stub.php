@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListCustomReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'qualifier';
-    protected $qualifierType = GoogleCloudApigeeV1CustomReport::class;
-    protected $qualifierDataType = 'array';
-    /**
-     * @param GoogleCloudApigeeV1CustomReport[] $qualifier
-     */
-    public function setQualifier($qualifier)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListCustomReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'qualifier';
+        protected $qualifierType = GoogleCloudApigeeV1CustomReport::class;
+        protected $qualifierDataType = 'array';
+        /**
+         * @param GoogleCloudApigeeV1CustomReport[] $qualifier
+         */
+        public function setQualifier($qualifier)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1CustomReport[]
+         */
+        public function getQualifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1CustomReport[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListCustomReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQualifier()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListCustomReportsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListCustomReportsResponse
     {
     }
 }

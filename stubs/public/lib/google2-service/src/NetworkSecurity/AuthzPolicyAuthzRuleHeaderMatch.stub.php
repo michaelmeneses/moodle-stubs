@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleHeaderMatch extends \Google\Model
-{
-    /**
-     * Optional. Specifies the name of the header in the request.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = AuthzPolicyAuthzRuleStringMatch::class;
-    protected $valueDataType = '';
-    /**
-     * Optional. Specifies the name of the header in the request.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleHeaderMatch extends \Google\Model
     {
+        /**
+         * Optional. Specifies the name of the header in the request.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = AuthzPolicyAuthzRuleStringMatch::class;
+        protected $valueDataType = '';
+        /**
+         * Optional. Specifies the name of the header in the request.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Specifies how the header match will be performed.
+         *
+         * @param AuthzPolicyAuthzRuleStringMatch $value
+         */
+        public function setValue(AuthzPolicyAuthzRuleStringMatch $value)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleStringMatch
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleHeaderMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Specifies how the header match will be performed.
-     *
-     * @param AuthzPolicyAuthzRuleStringMatch $value
-     */
-    public function setValue(AuthzPolicyAuthzRuleStringMatch $value)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRuleStringMatch
-     */
-    public function getValue()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleHeaderMatch extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleHeaderMatch
     {
     }
 }

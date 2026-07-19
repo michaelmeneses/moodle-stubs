@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiDocDocumentation extends \Google\Model
-{
-    protected $graphqlDocumentationType = GoogleCloudApigeeV1GraphqlDocumentation::class;
-    protected $graphqlDocumentationDataType = '';
-    protected $oasDocumentationType = GoogleCloudApigeeV1OASDocumentation::class;
-    protected $oasDocumentationDataType = '';
-    /**
-     * Optional. GraphQL documentation.
-     *
-     * @param GoogleCloudApigeeV1GraphqlDocumentation $graphqlDocumentation
-     */
-    public function setGraphqlDocumentation(GoogleCloudApigeeV1GraphqlDocumentation $graphqlDocumentation)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiDocDocumentation extends \Google\Model
     {
+        protected $graphqlDocumentationType = GoogleCloudApigeeV1GraphqlDocumentation::class;
+        protected $graphqlDocumentationDataType = '';
+        protected $oasDocumentationType = GoogleCloudApigeeV1OASDocumentation::class;
+        protected $oasDocumentationDataType = '';
+        /**
+         * Optional. GraphQL documentation.
+         *
+         * @param GoogleCloudApigeeV1GraphqlDocumentation $graphqlDocumentation
+         */
+        public function setGraphqlDocumentation(GoogleCloudApigeeV1GraphqlDocumentation $graphqlDocumentation)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1GraphqlDocumentation
+         */
+        public function getGraphqlDocumentation()
+        {
+        }
+        /**
+         * Optional. OpenAPI Specification documentation.
+         *
+         * @param GoogleCloudApigeeV1OASDocumentation $oasDocumentation
+         */
+        public function setOasDocumentation(GoogleCloudApigeeV1OASDocumentation $oasDocumentation)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1OASDocumentation
+         */
+        public function getOasDocumentation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1GraphqlDocumentation
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiDocDocumentation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGraphqlDocumentation()
-    {
-    }
-    /**
-     * Optional. OpenAPI Specification documentation.
-     *
-     * @param GoogleCloudApigeeV1OASDocumentation $oasDocumentation
-     */
-    public function setOasDocumentation(GoogleCloudApigeeV1OASDocumentation $oasDocumentation)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1OASDocumentation
-     */
-    public function getOasDocumentation()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiDocDocumentation extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiDocDocumentation
     {
     }
 }

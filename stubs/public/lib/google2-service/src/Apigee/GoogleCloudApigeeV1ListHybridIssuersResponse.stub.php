@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListHybridIssuersResponse extends \Google\Collection
-{
-    protected $collection_key = 'issuers';
-    protected $issuersType = GoogleCloudApigeeV1ServiceIssuersMapping::class;
-    protected $issuersDataType = 'array';
-    /**
-     * Lists of hybrid services and its trusted issuer email ids.
-     *
-     * @param GoogleCloudApigeeV1ServiceIssuersMapping[] $issuers
-     */
-    public function setIssuers($issuers)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListHybridIssuersResponse extends \Google\Collection
     {
+        protected $collection_key = 'issuers';
+        protected $issuersType = GoogleCloudApigeeV1ServiceIssuersMapping::class;
+        protected $issuersDataType = 'array';
+        /**
+         * Lists of hybrid services and its trusted issuer email ids.
+         *
+         * @param GoogleCloudApigeeV1ServiceIssuersMapping[] $issuers
+         */
+        public function setIssuers($issuers)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ServiceIssuersMapping[]
+         */
+        public function getIssuers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ServiceIssuersMapping[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListHybridIssuersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssuers()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListHybridIssuersResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListHybridIssuersResponse
     {
     }
 }

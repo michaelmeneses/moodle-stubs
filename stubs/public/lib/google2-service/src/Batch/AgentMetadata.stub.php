@@ -21,215 +21,224 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentMetadata extends \Google\Model
-{
-    /**
-     * When the VM agent started. Use agent_startup_time instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * Full name of the entity that created this vm. For MIG, this path is:
-     * projects/{project}/regions/{region}/InstanceGroupManagers/{igm} The value
-     * is retrieved from the vm metadata key of "created-by".
-     *
-     * @var string
-     */
-    public $creator;
-    /**
-     * image version for the VM that this agent is installed on.
-     *
-     * @var string
-     */
-    public $imageVersion;
-    /**
-     * GCP instance name (go/instance-name).
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * GCP instance ID (go/instance-id).
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * If the GCP instance has received preemption notice.
-     *
-     * @var bool
-     */
-    public $instancePreemptionNoticeReceived;
-    /**
-     * Optional. machine type of the VM
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * parsed contents of /etc/os-release
-     *
-     * @var string[]
-     */
-    public $osRelease;
-    /**
-     * agent binary version running on VM
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Agent zone.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * When the VM agent started. Use agent_startup_time instead.
-     *
-     * @deprecated
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
+namespace Google\Service\Batch {
+    class AgentMetadata extends \Google\Model
     {
+        /**
+         * When the VM agent started. Use agent_startup_time instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * Full name of the entity that created this vm. For MIG, this path is:
+         * projects/{project}/regions/{region}/InstanceGroupManagers/{igm} The value
+         * is retrieved from the vm metadata key of "created-by".
+         *
+         * @var string
+         */
+        public $creator;
+        /**
+         * image version for the VM that this agent is installed on.
+         *
+         * @var string
+         */
+        public $imageVersion;
+        /**
+         * GCP instance name (go/instance-name).
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * GCP instance ID (go/instance-id).
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * If the GCP instance has received preemption notice.
+         *
+         * @var bool
+         */
+        public $instancePreemptionNoticeReceived;
+        /**
+         * Optional. machine type of the VM
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * parsed contents of /etc/os-release
+         *
+         * @var string[]
+         */
+        public $osRelease;
+        /**
+         * agent binary version running on VM
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Agent zone.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * When the VM agent started. Use agent_startup_time instead.
+         *
+         * @deprecated
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * Full name of the entity that created this vm. For MIG, this path is:
+         * projects/{project}/regions/{region}/InstanceGroupManagers/{igm} The value
+         * is retrieved from the vm metadata key of "created-by".
+         *
+         * @param string $creator
+         */
+        public function setCreator($creator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * image version for the VM that this agent is installed on.
+         *
+         * @param string $imageVersion
+         */
+        public function setImageVersion($imageVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageVersion()
+        {
+        }
+        /**
+         * GCP instance name (go/instance-name).
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * GCP instance ID (go/instance-id).
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * If the GCP instance has received preemption notice.
+         *
+         * @param bool $instancePreemptionNoticeReceived
+         */
+        public function setInstancePreemptionNoticeReceived($instancePreemptionNoticeReceived)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstancePreemptionNoticeReceived()
+        {
+        }
+        /**
+         * Optional. machine type of the VM
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * parsed contents of /etc/os-release
+         *
+         * @param string[] $osRelease
+         */
+        public function setOsRelease($osRelease)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOsRelease()
+        {
+        }
+        /**
+         * agent binary version running on VM
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * Agent zone.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AgentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * Full name of the entity that created this vm. For MIG, this path is:
-     * projects/{project}/regions/{region}/InstanceGroupManagers/{igm} The value
-     * is retrieved from the vm metadata key of "created-by".
-     *
-     * @param string $creator
-     */
-    public function setCreator($creator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * image version for the VM that this agent is installed on.
-     *
-     * @param string $imageVersion
-     */
-    public function setImageVersion($imageVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageVersion()
-    {
-    }
-    /**
-     * GCP instance name (go/instance-name).
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * GCP instance ID (go/instance-id).
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * If the GCP instance has received preemption notice.
-     *
-     * @param bool $instancePreemptionNoticeReceived
-     */
-    public function setInstancePreemptionNoticeReceived($instancePreemptionNoticeReceived)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInstancePreemptionNoticeReceived()
-    {
-    }
-    /**
-     * Optional. machine type of the VM
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * parsed contents of /etc/os-release
-     *
-     * @param string[] $osRelease
-     */
-    public function setOsRelease($osRelease)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOsRelease()
-    {
-    }
-    /**
-     * agent binary version running on VM
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * Agent zone.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Batch_AgentMetadata extends \Google\Service\Batch\AgentMetadata
     {
     }
 }

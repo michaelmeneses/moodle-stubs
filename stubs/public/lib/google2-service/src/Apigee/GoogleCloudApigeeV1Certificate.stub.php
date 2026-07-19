@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Certificate extends \Google\Collection
-{
-    protected $collection_key = 'certInfo';
-    protected $certInfoType = GoogleCloudApigeeV1CertInfo::class;
-    protected $certInfoDataType = 'array';
-    /**
-     * Chain of certificates under this name.
-     *
-     * @param GoogleCloudApigeeV1CertInfo[] $certInfo
-     */
-    public function setCertInfo($certInfo)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Certificate extends \Google\Collection
     {
+        protected $collection_key = 'certInfo';
+        protected $certInfoType = GoogleCloudApigeeV1CertInfo::class;
+        protected $certInfoDataType = 'array';
+        /**
+         * Chain of certificates under this name.
+         *
+         * @param GoogleCloudApigeeV1CertInfo[] $certInfo
+         */
+        public function setCertInfo($certInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1CertInfo[]
+         */
+        public function getCertInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1CertInfo[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Certificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertInfo()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Certificate extends \Google\Service\Apigee\GoogleCloudApigeeV1Certificate
     {
     }
 }

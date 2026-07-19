@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ListSavedQueriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'savedQueries';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $savedQueriesType = SavedQuery::class;
-    protected $savedQueriesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudAsset {
+    class ListSavedQueriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'savedQueries';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $savedQueriesType = SavedQuery::class;
+        protected $savedQueriesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of savedQueries.
+         *
+         * @param SavedQuery[] $savedQueries
+         */
+        public function setSavedQueries($savedQueries)
+        {
+        }
+        /**
+         * @return SavedQuery[]
+         */
+        public function getSavedQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\ListSavedQueriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of savedQueries.
-     *
-     * @param SavedQuery[] $savedQueries
-     */
-    public function setSavedQueries($savedQueries)
-    {
-    }
-    /**
-     * @return SavedQuery[]
-     */
-    public function getSavedQueries()
+    class Google_Service_CloudAsset_ListSavedQueriesResponse extends \Google\Service\CloudAsset\ListSavedQueriesResponse
     {
     }
 }

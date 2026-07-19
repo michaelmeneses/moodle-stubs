@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class VoiceOfMerchantState extends \Google\Model
-{
-    protected $complyWithGuidelinesType = ComplyWithGuidelines::class;
-    protected $complyWithGuidelinesDataType = '';
-    /**
-     * Indicates whether the location has the authority (ownership) over the
-     * business on Google. If true, another location cannot take over and become
-     * the dominant listing on Maps. However, edits will not become live unless
-     * Voice of Merchant is gained (i.e. has_voice_of_merchant is true).
-     *
-     * @var bool
-     */
-    public $hasBusinessAuthority;
-    /**
-     * Indicates whether the location is in good standing and has control over the
-     * business on Google. Any edits made to the location will propagate to Maps
-     * after passing the review phase.
-     *
-     * @var bool
-     */
-    public $hasVoiceOfMerchant;
-    protected $resolveOwnershipConflictType = ResolveOwnershipConflict::class;
-    protected $resolveOwnershipConflictDataType = '';
-    protected $verifyType = Verify::class;
-    protected $verifyDataType = '';
-    protected $waitForVoiceOfMerchantType = WaitForVoiceOfMerchant::class;
-    protected $waitForVoiceOfMerchantDataType = '';
-    /**
-     * The location fails to comply with our
-     * [guidelines](https://support.google.com/business/answer/3038177) and
-     * requires additional steps for reinstatement. To fix this issue, consult the
-     * [Help Center Article](https://support.google.com/business/answer/4569145).
-     *
-     * @param ComplyWithGuidelines $complyWithGuidelines
-     */
-    public function setComplyWithGuidelines(ComplyWithGuidelines $complyWithGuidelines)
+namespace Google\Service\MyBusinessVerifications {
+    class VoiceOfMerchantState extends \Google\Model
     {
+        protected $complyWithGuidelinesType = ComplyWithGuidelines::class;
+        protected $complyWithGuidelinesDataType = '';
+        /**
+         * Indicates whether the location has the authority (ownership) over the
+         * business on Google. If true, another location cannot take over and become
+         * the dominant listing on Maps. However, edits will not become live unless
+         * Voice of Merchant is gained (i.e. has_voice_of_merchant is true).
+         *
+         * @var bool
+         */
+        public $hasBusinessAuthority;
+        /**
+         * Indicates whether the location is in good standing and has control over the
+         * business on Google. Any edits made to the location will propagate to Maps
+         * after passing the review phase.
+         *
+         * @var bool
+         */
+        public $hasVoiceOfMerchant;
+        protected $resolveOwnershipConflictType = ResolveOwnershipConflict::class;
+        protected $resolveOwnershipConflictDataType = '';
+        protected $verifyType = Verify::class;
+        protected $verifyDataType = '';
+        protected $waitForVoiceOfMerchantType = WaitForVoiceOfMerchant::class;
+        protected $waitForVoiceOfMerchantDataType = '';
+        /**
+         * The location fails to comply with our
+         * [guidelines](https://support.google.com/business/answer/3038177) and
+         * requires additional steps for reinstatement. To fix this issue, consult the
+         * [Help Center Article](https://support.google.com/business/answer/4569145).
+         *
+         * @param ComplyWithGuidelines $complyWithGuidelines
+         */
+        public function setComplyWithGuidelines(ComplyWithGuidelines $complyWithGuidelines)
+        {
+        }
+        /**
+         * @return ComplyWithGuidelines
+         */
+        public function getComplyWithGuidelines()
+        {
+        }
+        /**
+         * Indicates whether the location has the authority (ownership) over the
+         * business on Google. If true, another location cannot take over and become
+         * the dominant listing on Maps. However, edits will not become live unless
+         * Voice of Merchant is gained (i.e. has_voice_of_merchant is true).
+         *
+         * @param bool $hasBusinessAuthority
+         */
+        public function setHasBusinessAuthority($hasBusinessAuthority)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasBusinessAuthority()
+        {
+        }
+        /**
+         * Indicates whether the location is in good standing and has control over the
+         * business on Google. Any edits made to the location will propagate to Maps
+         * after passing the review phase.
+         *
+         * @param bool $hasVoiceOfMerchant
+         */
+        public function setHasVoiceOfMerchant($hasVoiceOfMerchant)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasVoiceOfMerchant()
+        {
+        }
+        /**
+         * This location duplicates another location that is in good standing. If you
+         * have access to the location in good standing, use that location's id to
+         * perform operations. Otherwise, request access from the current owner.
+         *
+         * @param ResolveOwnershipConflict $resolveOwnershipConflict
+         */
+        public function setResolveOwnershipConflict(ResolveOwnershipConflict $resolveOwnershipConflict)
+        {
+        }
+        /**
+         * @return ResolveOwnershipConflict
+         */
+        public function getResolveOwnershipConflict()
+        {
+        }
+        /**
+         * Start or continue the verification process.
+         *
+         * @param Verify $verify
+         */
+        public function setVerify(Verify $verify)
+        {
+        }
+        /**
+         * @return Verify
+         */
+        public function getVerify()
+        {
+        }
+        /**
+         * Wait to gain Voice of Merchant. The location is under review for quality
+         * purposes.
+         *
+         * @param WaitForVoiceOfMerchant $waitForVoiceOfMerchant
+         */
+        public function setWaitForVoiceOfMerchant(WaitForVoiceOfMerchant $waitForVoiceOfMerchant)
+        {
+        }
+        /**
+         * @return WaitForVoiceOfMerchant
+         */
+        public function getWaitForVoiceOfMerchant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComplyWithGuidelines
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\VoiceOfMerchantState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplyWithGuidelines()
-    {
-    }
-    /**
-     * Indicates whether the location has the authority (ownership) over the
-     * business on Google. If true, another location cannot take over and become
-     * the dominant listing on Maps. However, edits will not become live unless
-     * Voice of Merchant is gained (i.e. has_voice_of_merchant is true).
-     *
-     * @param bool $hasBusinessAuthority
-     */
-    public function setHasBusinessAuthority($hasBusinessAuthority)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasBusinessAuthority()
-    {
-    }
-    /**
-     * Indicates whether the location is in good standing and has control over the
-     * business on Google. Any edits made to the location will propagate to Maps
-     * after passing the review phase.
-     *
-     * @param bool $hasVoiceOfMerchant
-     */
-    public function setHasVoiceOfMerchant($hasVoiceOfMerchant)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasVoiceOfMerchant()
-    {
-    }
-    /**
-     * This location duplicates another location that is in good standing. If you
-     * have access to the location in good standing, use that location's id to
-     * perform operations. Otherwise, request access from the current owner.
-     *
-     * @param ResolveOwnershipConflict $resolveOwnershipConflict
-     */
-    public function setResolveOwnershipConflict(ResolveOwnershipConflict $resolveOwnershipConflict)
-    {
-    }
-    /**
-     * @return ResolveOwnershipConflict
-     */
-    public function getResolveOwnershipConflict()
-    {
-    }
-    /**
-     * Start or continue the verification process.
-     *
-     * @param Verify $verify
-     */
-    public function setVerify(Verify $verify)
-    {
-    }
-    /**
-     * @return Verify
-     */
-    public function getVerify()
-    {
-    }
-    /**
-     * Wait to gain Voice of Merchant. The location is under review for quality
-     * purposes.
-     *
-     * @param WaitForVoiceOfMerchant $waitForVoiceOfMerchant
-     */
-    public function setWaitForVoiceOfMerchant(WaitForVoiceOfMerchant $waitForVoiceOfMerchant)
-    {
-    }
-    /**
-     * @return WaitForVoiceOfMerchant
-     */
-    public function getWaitForVoiceOfMerchant()
+    class Google_Service_MyBusinessVerifications_VoiceOfMerchantState extends \Google\Service\MyBusinessVerifications\VoiceOfMerchantState
     {
     }
 }

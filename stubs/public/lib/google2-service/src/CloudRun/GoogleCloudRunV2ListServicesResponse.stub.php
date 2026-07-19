@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ListServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListServices request to continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicesType = GoogleCloudRunV2Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * Output only. For global requests, returns the list of regions that could
-     * not be reached within the deadline.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListServices request to continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ListServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListServices request to continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicesType = GoogleCloudRunV2Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * Output only. For global requests, returns the list of regions that could
+         * not be reached within the deadline.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListServices request to continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting list of Services.
+         *
+         * @param GoogleCloudRunV2Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2Service[]
+         */
+        public function getServices()
+        {
+        }
+        /**
+         * Output only. For global requests, returns the list of regions that could
+         * not be reached within the deadline.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ListServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting list of Services.
-     *
-     * @param GoogleCloudRunV2Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2Service[]
-     */
-    public function getServices()
-    {
-    }
-    /**
-     * Output only. For global requests, returns the list of regions that could
-     * not be reached within the deadline.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudRun_GoogleCloudRunV2ListServicesResponse extends \Google\Service\CloudRun\GoogleCloudRunV2ListServicesResponse
     {
     }
 }

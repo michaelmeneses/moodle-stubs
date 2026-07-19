@@ -21,258 +21,267 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableListTables extends \Google\Model
-{
-    protected $clusteringType = Clustering::class;
-    protected $clusteringDataType = '';
-    /**
-     * Output only. The time when this table was created, in milliseconds since
-     * the epoch.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * The time when this table expires, in milliseconds since the epoch. If not
-     * present, the table will persist indefinitely. Expired tables will be
-     * deleted and their storage reclaimed.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * The user-friendly name for this table.
-     *
-     * @var string
-     */
-    public $friendlyName;
-    /**
-     * An opaque ID of the table.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The labels associated with this table. You can use these to organize and
-     * group your tables.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $rangePartitioningType = RangePartitioning::class;
-    protected $rangePartitioningDataType = '';
-    /**
-     * Optional. If set to true, queries including this table must specify a
-     * partition filter. This filter is used for partition elimination.
-     *
-     * @var bool
-     */
-    public $requirePartitionFilter;
-    protected $tableReferenceType = TableReference::class;
-    protected $tableReferenceDataType = '';
-    protected $timePartitioningType = TimePartitioning::class;
-    protected $timePartitioningDataType = '';
-    /**
-     * The type of table.
-     *
-     * @var string
-     */
-    public $type;
-    protected $viewType = TableListTablesView::class;
-    protected $viewDataType = '';
-    /**
-     * Clustering specification for this table, if configured.
-     *
-     * @param Clustering $clustering
-     */
-    public function setClustering(Clustering $clustering)
+namespace Google\Service\Bigquery {
+    class TableListTables extends \Google\Model
     {
+        protected $clusteringType = Clustering::class;
+        protected $clusteringDataType = '';
+        /**
+         * Output only. The time when this table was created, in milliseconds since
+         * the epoch.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * The time when this table expires, in milliseconds since the epoch. If not
+         * present, the table will persist indefinitely. Expired tables will be
+         * deleted and their storage reclaimed.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * The user-friendly name for this table.
+         *
+         * @var string
+         */
+        public $friendlyName;
+        /**
+         * An opaque ID of the table.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The labels associated with this table. You can use these to organize and
+         * group your tables.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $rangePartitioningType = RangePartitioning::class;
+        protected $rangePartitioningDataType = '';
+        /**
+         * Optional. If set to true, queries including this table must specify a
+         * partition filter. This filter is used for partition elimination.
+         *
+         * @var bool
+         */
+        public $requirePartitionFilter;
+        protected $tableReferenceType = TableReference::class;
+        protected $tableReferenceDataType = '';
+        protected $timePartitioningType = TimePartitioning::class;
+        protected $timePartitioningDataType = '';
+        /**
+         * The type of table.
+         *
+         * @var string
+         */
+        public $type;
+        protected $viewType = TableListTablesView::class;
+        protected $viewDataType = '';
+        /**
+         * Clustering specification for this table, if configured.
+         *
+         * @param Clustering $clustering
+         */
+        public function setClustering(Clustering $clustering)
+        {
+        }
+        /**
+         * @return Clustering
+         */
+        public function getClustering()
+        {
+        }
+        /**
+         * Output only. The time when this table was created, in milliseconds since
+         * the epoch.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * The time when this table expires, in milliseconds since the epoch. If not
+         * present, the table will persist indefinitely. Expired tables will be
+         * deleted and their storage reclaimed.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * The user-friendly name for this table.
+         *
+         * @param string $friendlyName
+         */
+        public function setFriendlyName($friendlyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFriendlyName()
+        {
+        }
+        /**
+         * An opaque ID of the table.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The labels associated with this table. You can use these to organize and
+         * group your tables.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The range partitioning for this table.
+         *
+         * @param RangePartitioning $rangePartitioning
+         */
+        public function setRangePartitioning(RangePartitioning $rangePartitioning)
+        {
+        }
+        /**
+         * @return RangePartitioning
+         */
+        public function getRangePartitioning()
+        {
+        }
+        /**
+         * Optional. If set to true, queries including this table must specify a
+         * partition filter. This filter is used for partition elimination.
+         *
+         * @param bool $requirePartitionFilter
+         */
+        public function setRequirePartitionFilter($requirePartitionFilter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequirePartitionFilter()
+        {
+        }
+        /**
+         * A reference uniquely identifying table.
+         *
+         * @param TableReference $tableReference
+         */
+        public function setTableReference(TableReference $tableReference)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getTableReference()
+        {
+        }
+        /**
+         * The time-based partitioning for this table.
+         *
+         * @param TimePartitioning $timePartitioning
+         */
+        public function setTimePartitioning(TimePartitioning $timePartitioning)
+        {
+        }
+        /**
+         * @return TimePartitioning
+         */
+        public function getTimePartitioning()
+        {
+        }
+        /**
+         * The type of table.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Information about a logical view.
+         *
+         * @param TableListTablesView $view
+         */
+        public function setView(TableListTablesView $view)
+        {
+        }
+        /**
+         * @return TableListTablesView
+         */
+        public function getView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Clustering
+     * Runtime class alias of \Google\Service\Bigquery\TableListTables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClustering()
-    {
-    }
-    /**
-     * Output only. The time when this table was created, in milliseconds since
-     * the epoch.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * The time when this table expires, in milliseconds since the epoch. If not
-     * present, the table will persist indefinitely. Expired tables will be
-     * deleted and their storage reclaimed.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * The user-friendly name for this table.
-     *
-     * @param string $friendlyName
-     */
-    public function setFriendlyName($friendlyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFriendlyName()
-    {
-    }
-    /**
-     * An opaque ID of the table.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The labels associated with this table. You can use these to organize and
-     * group your tables.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The range partitioning for this table.
-     *
-     * @param RangePartitioning $rangePartitioning
-     */
-    public function setRangePartitioning(RangePartitioning $rangePartitioning)
-    {
-    }
-    /**
-     * @return RangePartitioning
-     */
-    public function getRangePartitioning()
-    {
-    }
-    /**
-     * Optional. If set to true, queries including this table must specify a
-     * partition filter. This filter is used for partition elimination.
-     *
-     * @param bool $requirePartitionFilter
-     */
-    public function setRequirePartitionFilter($requirePartitionFilter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequirePartitionFilter()
-    {
-    }
-    /**
-     * A reference uniquely identifying table.
-     *
-     * @param TableReference $tableReference
-     */
-    public function setTableReference(TableReference $tableReference)
-    {
-    }
-    /**
-     * @return TableReference
-     */
-    public function getTableReference()
-    {
-    }
-    /**
-     * The time-based partitioning for this table.
-     *
-     * @param TimePartitioning $timePartitioning
-     */
-    public function setTimePartitioning(TimePartitioning $timePartitioning)
-    {
-    }
-    /**
-     * @return TimePartitioning
-     */
-    public function getTimePartitioning()
-    {
-    }
-    /**
-     * The type of table.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Information about a logical view.
-     *
-     * @param TableListTablesView $view
-     */
-    public function setView(TableListTablesView $view)
-    {
-    }
-    /**
-     * @return TableListTablesView
-     */
-    public function getView()
+    class Google_Service_Bigquery_TableListTables extends \Google\Service\Bigquery\TableListTables
     {
     }
 }

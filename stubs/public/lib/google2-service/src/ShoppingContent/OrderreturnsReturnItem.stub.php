@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsReturnItem extends \Google\Model
-{
-    protected $refundType = OrderreturnsRefundOperation::class;
-    protected $refundDataType = '';
-    protected $rejectType = OrderreturnsRejectOperation::class;
-    protected $rejectDataType = '';
-    /**
-     * @var string
-     */
-    public $returnItemId;
-    /**
-     * @param OrderreturnsRefundOperation
-     */
-    public function setRefund(OrderreturnsRefundOperation $refund)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsReturnItem extends \Google\Model
     {
+        protected $refundType = OrderreturnsRefundOperation::class;
+        protected $refundDataType = '';
+        protected $rejectType = OrderreturnsRejectOperation::class;
+        protected $rejectDataType = '';
+        /**
+         * @var string
+         */
+        public $returnItemId;
+        /**
+         * @param OrderreturnsRefundOperation
+         */
+        public function setRefund(OrderreturnsRefundOperation $refund)
+        {
+        }
+        /**
+         * @return OrderreturnsRefundOperation
+         */
+        public function getRefund()
+        {
+        }
+        /**
+         * @param OrderreturnsRejectOperation
+         */
+        public function setReject(OrderreturnsRejectOperation $reject)
+        {
+        }
+        /**
+         * @return OrderreturnsRejectOperation
+         */
+        public function getReject()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnItemId($returnItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnItemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderreturnsRefundOperation
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsReturnItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRefund()
-    {
-    }
-    /**
-     * @param OrderreturnsRejectOperation
-     */
-    public function setReject(OrderreturnsRejectOperation $reject)
-    {
-    }
-    /**
-     * @return OrderreturnsRejectOperation
-     */
-    public function getReject()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnItemId($returnItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnItemId()
+    class Google_Service_ShoppingContent_OrderreturnsReturnItem extends \Google\Service\ShoppingContent\OrderreturnsReturnItem
     {
     }
 }

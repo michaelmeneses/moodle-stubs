@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class DpcMigrationInfo extends \Google\Model
-{
-    /**
-     * Output only. If this device was migrated from another DPC, the
-     * additionalData field of the migration token is populated here.
-     *
-     * @var string
-     */
-    public $additionalData;
-    /**
-     * Output only. If this device was migrated from another DPC, this is its
-     * package name. Not populated otherwise.
-     *
-     * @var string
-     */
-    public $previousDpc;
-    /**
-     * Output only. If this device was migrated from another DPC, the
-     * additionalData field of the migration token is populated here.
-     *
-     * @param string $additionalData
-     */
-    public function setAdditionalData($additionalData)
+namespace Google\Service\AndroidManagement {
+    class DpcMigrationInfo extends \Google\Model
     {
+        /**
+         * Output only. If this device was migrated from another DPC, the
+         * additionalData field of the migration token is populated here.
+         *
+         * @var string
+         */
+        public $additionalData;
+        /**
+         * Output only. If this device was migrated from another DPC, this is its
+         * package name. Not populated otherwise.
+         *
+         * @var string
+         */
+        public $previousDpc;
+        /**
+         * Output only. If this device was migrated from another DPC, the
+         * additionalData field of the migration token is populated here.
+         *
+         * @param string $additionalData
+         */
+        public function setAdditionalData($additionalData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdditionalData()
+        {
+        }
+        /**
+         * Output only. If this device was migrated from another DPC, this is its
+         * package name. Not populated otherwise.
+         *
+         * @param string $previousDpc
+         */
+        public function setPreviousDpc($previousDpc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousDpc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\DpcMigrationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalData()
-    {
-    }
-    /**
-     * Output only. If this device was migrated from another DPC, this is its
-     * package name. Not populated otherwise.
-     *
-     * @param string $previousDpc
-     */
-    public function setPreviousDpc($previousDpc)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousDpc()
+    class Google_Service_AndroidManagement_DpcMigrationInfo extends \Google\Service\AndroidManagement\DpcMigrationInfo
     {
     }
 }

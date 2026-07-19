@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1EngineMediaRecommendationEngineConfigMostPopularFeatureConfig extends \Google\Model
-{
-    /**
-     * The time window of which the engine is queried at training and prediction
-     * time. Positive integers only. The value translates to the last X days of
-     * events. Currently required for the `most-popular-items` engine.
-     *
-     * @var string
-     */
-    public $timeWindowDays;
-    /**
-     * The time window of which the engine is queried at training and prediction
-     * time. Positive integers only. The value translates to the last X days of
-     * events. Currently required for the `most-popular-items` engine.
-     *
-     * @param string $timeWindowDays
-     */
-    public function setTimeWindowDays($timeWindowDays)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1EngineMediaRecommendationEngineConfigMostPopularFeatureConfig extends \Google\Model
     {
+        /**
+         * The time window of which the engine is queried at training and prediction
+         * time. Positive integers only. The value translates to the last X days of
+         * events. Currently required for the `most-popular-items` engine.
+         *
+         * @var string
+         */
+        public $timeWindowDays;
+        /**
+         * The time window of which the engine is queried at training and prediction
+         * time. Positive integers only. The value translates to the last X days of
+         * events. Currently required for the `most-popular-items` engine.
+         *
+         * @param string $timeWindowDays
+         */
+        public function setTimeWindowDays($timeWindowDays)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeWindowDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1EngineMediaRecommendationEngineConfigMostPopularFeatureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeWindowDays()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1EngineMediaRecommendationEngineConfigMostPopularFeatureConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1EngineMediaRecommendationEngineConfigMostPopularFeatureConfig
     {
     }
 }

@@ -21,180 +21,189 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class CertificateDescription extends \Google\Collection
-{
-    protected $collection_key = 'crlDistributionPoints';
-    /**
-     * Describes lists of issuer CA certificate URLs that appear in the "Authority
-     * Information Access" extension in the certificate.
-     *
-     * @var string[]
-     */
-    public $aiaIssuingCertificateUrls;
-    protected $authorityKeyIdType = KeyId::class;
-    protected $authorityKeyIdDataType = '';
-    protected $certFingerprintType = CertificateFingerprint::class;
-    protected $certFingerprintDataType = '';
-    /**
-     * Describes a list of locations to obtain CRL information, i.e. the
-     * DistributionPoint.fullName described by
-     * https://tools.ietf.org/html/rfc5280#section-4.2.1.13
-     *
-     * @var string[]
-     */
-    public $crlDistributionPoints;
-    protected $publicKeyType = PublicKey::class;
-    protected $publicKeyDataType = '';
-    protected $subjectDescriptionType = SubjectDescription::class;
-    protected $subjectDescriptionDataType = '';
-    protected $subjectKeyIdType = KeyId::class;
-    protected $subjectKeyIdDataType = '';
-    /**
-     * The hash of the pre-signed certificate, which will be signed by the CA.
-     * Corresponds to the TBS Certificate in
-     * https://tools.ietf.org/html/rfc5280#section-4.1.2. The field will always be
-     * populated.
-     *
-     * @var string
-     */
-    public $tbsCertificateDigest;
-    protected $x509DescriptionType = X509Parameters::class;
-    protected $x509DescriptionDataType = '';
-    /**
-     * Describes lists of issuer CA certificate URLs that appear in the "Authority
-     * Information Access" extension in the certificate.
-     *
-     * @param string[] $aiaIssuingCertificateUrls
-     */
-    public function setAiaIssuingCertificateUrls($aiaIssuingCertificateUrls)
+namespace Google\Service\CertificateAuthorityService {
+    class CertificateDescription extends \Google\Collection
     {
+        protected $collection_key = 'crlDistributionPoints';
+        /**
+         * Describes lists of issuer CA certificate URLs that appear in the "Authority
+         * Information Access" extension in the certificate.
+         *
+         * @var string[]
+         */
+        public $aiaIssuingCertificateUrls;
+        protected $authorityKeyIdType = KeyId::class;
+        protected $authorityKeyIdDataType = '';
+        protected $certFingerprintType = CertificateFingerprint::class;
+        protected $certFingerprintDataType = '';
+        /**
+         * Describes a list of locations to obtain CRL information, i.e. the
+         * DistributionPoint.fullName described by
+         * https://tools.ietf.org/html/rfc5280#section-4.2.1.13
+         *
+         * @var string[]
+         */
+        public $crlDistributionPoints;
+        protected $publicKeyType = PublicKey::class;
+        protected $publicKeyDataType = '';
+        protected $subjectDescriptionType = SubjectDescription::class;
+        protected $subjectDescriptionDataType = '';
+        protected $subjectKeyIdType = KeyId::class;
+        protected $subjectKeyIdDataType = '';
+        /**
+         * The hash of the pre-signed certificate, which will be signed by the CA.
+         * Corresponds to the TBS Certificate in
+         * https://tools.ietf.org/html/rfc5280#section-4.1.2. The field will always be
+         * populated.
+         *
+         * @var string
+         */
+        public $tbsCertificateDigest;
+        protected $x509DescriptionType = X509Parameters::class;
+        protected $x509DescriptionDataType = '';
+        /**
+         * Describes lists of issuer CA certificate URLs that appear in the "Authority
+         * Information Access" extension in the certificate.
+         *
+         * @param string[] $aiaIssuingCertificateUrls
+         */
+        public function setAiaIssuingCertificateUrls($aiaIssuingCertificateUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAiaIssuingCertificateUrls()
+        {
+        }
+        /**
+         * Identifies the subject_key_id of the parent certificate, per
+         * https://tools.ietf.org/html/rfc5280#section-4.2.1.1
+         *
+         * @param KeyId $authorityKeyId
+         */
+        public function setAuthorityKeyId(KeyId $authorityKeyId)
+        {
+        }
+        /**
+         * @return KeyId
+         */
+        public function getAuthorityKeyId()
+        {
+        }
+        /**
+         * The hash of the x.509 certificate.
+         *
+         * @param CertificateFingerprint $certFingerprint
+         */
+        public function setCertFingerprint(CertificateFingerprint $certFingerprint)
+        {
+        }
+        /**
+         * @return CertificateFingerprint
+         */
+        public function getCertFingerprint()
+        {
+        }
+        /**
+         * Describes a list of locations to obtain CRL information, i.e. the
+         * DistributionPoint.fullName described by
+         * https://tools.ietf.org/html/rfc5280#section-4.2.1.13
+         *
+         * @param string[] $crlDistributionPoints
+         */
+        public function setCrlDistributionPoints($crlDistributionPoints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCrlDistributionPoints()
+        {
+        }
+        /**
+         * The public key that corresponds to an issued certificate.
+         *
+         * @param PublicKey $publicKey
+         */
+        public function setPublicKey(PublicKey $publicKey)
+        {
+        }
+        /**
+         * @return PublicKey
+         */
+        public function getPublicKey()
+        {
+        }
+        /**
+         * Describes some of the values in a certificate that are related to the
+         * subject and lifetime.
+         *
+         * @param SubjectDescription $subjectDescription
+         */
+        public function setSubjectDescription(SubjectDescription $subjectDescription)
+        {
+        }
+        /**
+         * @return SubjectDescription
+         */
+        public function getSubjectDescription()
+        {
+        }
+        /**
+         * Provides a means of identifiying certificates that contain a particular
+         * public key, per https://tools.ietf.org/html/rfc5280#section-4.2.1.2.
+         *
+         * @param KeyId $subjectKeyId
+         */
+        public function setSubjectKeyId(KeyId $subjectKeyId)
+        {
+        }
+        /**
+         * @return KeyId
+         */
+        public function getSubjectKeyId()
+        {
+        }
+        /**
+         * The hash of the pre-signed certificate, which will be signed by the CA.
+         * Corresponds to the TBS Certificate in
+         * https://tools.ietf.org/html/rfc5280#section-4.1.2. The field will always be
+         * populated.
+         *
+         * @param string $tbsCertificateDigest
+         */
+        public function setTbsCertificateDigest($tbsCertificateDigest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTbsCertificateDigest()
+        {
+        }
+        /**
+         * Describes some of the technical X.509 fields in a certificate.
+         *
+         * @param X509Parameters $x509Description
+         */
+        public function setX509Description(X509Parameters $x509Description)
+        {
+        }
+        /**
+         * @return X509Parameters
+         */
+        public function getX509Description()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\CertificateDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAiaIssuingCertificateUrls()
-    {
-    }
-    /**
-     * Identifies the subject_key_id of the parent certificate, per
-     * https://tools.ietf.org/html/rfc5280#section-4.2.1.1
-     *
-     * @param KeyId $authorityKeyId
-     */
-    public function setAuthorityKeyId(KeyId $authorityKeyId)
-    {
-    }
-    /**
-     * @return KeyId
-     */
-    public function getAuthorityKeyId()
-    {
-    }
-    /**
-     * The hash of the x.509 certificate.
-     *
-     * @param CertificateFingerprint $certFingerprint
-     */
-    public function setCertFingerprint(CertificateFingerprint $certFingerprint)
-    {
-    }
-    /**
-     * @return CertificateFingerprint
-     */
-    public function getCertFingerprint()
-    {
-    }
-    /**
-     * Describes a list of locations to obtain CRL information, i.e. the
-     * DistributionPoint.fullName described by
-     * https://tools.ietf.org/html/rfc5280#section-4.2.1.13
-     *
-     * @param string[] $crlDistributionPoints
-     */
-    public function setCrlDistributionPoints($crlDistributionPoints)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCrlDistributionPoints()
-    {
-    }
-    /**
-     * The public key that corresponds to an issued certificate.
-     *
-     * @param PublicKey $publicKey
-     */
-    public function setPublicKey(PublicKey $publicKey)
-    {
-    }
-    /**
-     * @return PublicKey
-     */
-    public function getPublicKey()
-    {
-    }
-    /**
-     * Describes some of the values in a certificate that are related to the
-     * subject and lifetime.
-     *
-     * @param SubjectDescription $subjectDescription
-     */
-    public function setSubjectDescription(SubjectDescription $subjectDescription)
-    {
-    }
-    /**
-     * @return SubjectDescription
-     */
-    public function getSubjectDescription()
-    {
-    }
-    /**
-     * Provides a means of identifiying certificates that contain a particular
-     * public key, per https://tools.ietf.org/html/rfc5280#section-4.2.1.2.
-     *
-     * @param KeyId $subjectKeyId
-     */
-    public function setSubjectKeyId(KeyId $subjectKeyId)
-    {
-    }
-    /**
-     * @return KeyId
-     */
-    public function getSubjectKeyId()
-    {
-    }
-    /**
-     * The hash of the pre-signed certificate, which will be signed by the CA.
-     * Corresponds to the TBS Certificate in
-     * https://tools.ietf.org/html/rfc5280#section-4.1.2. The field will always be
-     * populated.
-     *
-     * @param string $tbsCertificateDigest
-     */
-    public function setTbsCertificateDigest($tbsCertificateDigest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTbsCertificateDigest()
-    {
-    }
-    /**
-     * Describes some of the technical X.509 fields in a certificate.
-     *
-     * @param X509Parameters $x509Description
-     */
-    public function setX509Description(X509Parameters $x509Description)
-    {
-    }
-    /**
-     * @return X509Parameters
-     */
-    public function getX509Description()
+    class Google_Service_CertificateAuthorityService_CertificateDescription extends \Google\Service\CertificateAuthorityService\CertificateDescription
     {
     }
 }

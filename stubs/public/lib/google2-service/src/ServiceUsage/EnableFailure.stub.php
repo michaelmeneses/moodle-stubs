@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class EnableFailure extends \Google\Model
-{
-    /**
-     * An error message describing why the service could not be enabled.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The service id of a service that could not be enabled.
-     *
-     * @var string
-     */
-    public $serviceId;
-    /**
-     * An error message describing why the service could not be enabled.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\ServiceUsage {
+    class EnableFailure extends \Google\Model
     {
+        /**
+         * An error message describing why the service could not be enabled.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The service id of a service that could not be enabled.
+         *
+         * @var string
+         */
+        public $serviceId;
+        /**
+         * An error message describing why the service could not be enabled.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * The service id of a service that could not be enabled.
+         *
+         * @param string $serviceId
+         */
+        public function setServiceId($serviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\EnableFailure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * The service id of a service that could not be enabled.
-     *
-     * @param string $serviceId
-     */
-    public function setServiceId($serviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceId()
+    class Google_Service_ServiceUsage_EnableFailure extends \Google\Service\ServiceUsage\EnableFailure
     {
     }
 }

@@ -21,116 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "profileFilterLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $profileFilterLinks = $analyticsService->management_profileFilterLinks;
- *  </code>
- */
-class ManagementProfileFilterLinks extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\ProfileFilterLink;
+    use Google\Service\Analytics\ProfileFilterLinks;
     /**
-     * Delete a profile filter link. (profileFilterLinks.delete)
-     *
-     * @param string $accountId Account ID to which the profile filter link belongs.
-     * @param string $webPropertyId Web property Id to which the profile filter link
-     * belongs.
-     * @param string $profileId Profile ID to which the filter link belongs.
-     * @param string $linkId ID of the profile filter link to delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "profileFilterLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $profileFilterLinks = $analyticsService->management_profileFilterLinks;
+     *  </code>
      */
-    public function delete($accountId, $webPropertyId, $profileId, $linkId, $optParams = [])
+    class ManagementProfileFilterLinks extends \Google\Service\Resource
     {
+        /**
+         * Delete a profile filter link. (profileFilterLinks.delete)
+         *
+         * @param string $accountId Account ID to which the profile filter link belongs.
+         * @param string $webPropertyId Web property Id to which the profile filter link
+         * belongs.
+         * @param string $profileId Profile ID to which the filter link belongs.
+         * @param string $linkId ID of the profile filter link to delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $webPropertyId, $profileId, $linkId, $optParams = [])
+        {
+        }
+        /**
+         * Returns a single profile filter link. (profileFilterLinks.get)
+         *
+         * @param string $accountId Account ID to retrieve profile filter link for.
+         * @param string $webPropertyId Web property Id to retrieve profile filter link
+         * for.
+         * @param string $profileId Profile ID to retrieve filter link for.
+         * @param string $linkId ID of the profile filter link.
+         * @param array $optParams Optional parameters.
+         * @return ProfileFilterLink
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $profileId, $linkId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new profile filter link. (profileFilterLinks.insert)
+         *
+         * @param string $accountId Account ID to create profile filter link for.
+         * @param string $webPropertyId Web property Id to create profile filter link
+         * for.
+         * @param string $profileId Profile ID to create filter link for.
+         * @param ProfileFilterLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return ProfileFilterLink
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, $profileId, ProfileFilterLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all profile filter links for a profile.
+         * (profileFilterLinks.listManagementProfileFilterLinks)
+         *
+         * @param string $accountId Account ID to retrieve profile filter links for.
+         * @param string $webPropertyId Web property Id for profile filter links for.
+         * Can either be a specific web property ID or '~all', which refers to all the
+         * web properties that user has access to.
+         * @param string $profileId Profile ID to retrieve filter links for. Can either
+         * be a specific profile ID or '~all', which refers to all the profiles that
+         * user has access to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of profile filter links to
+         * include in this response.
+         * @opt_param int start-index An index of the first entity to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @return ProfileFilterLinks
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementProfileFilterLinks($accountId, $webPropertyId, $profileId, $optParams = [])
+        {
+        }
+        /**
+         * Update an existing profile filter link. This method supports patch semantics.
+         * (profileFilterLinks.patch)
+         *
+         * @param string $accountId Account ID to which profile filter link belongs.
+         * @param string $webPropertyId Web property Id to which profile filter link
+         * belongs
+         * @param string $profileId Profile ID to which filter link belongs
+         * @param string $linkId ID of the profile filter link to be updated.
+         * @param ProfileFilterLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return ProfileFilterLink
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $webPropertyId, $profileId, $linkId, ProfileFilterLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update an existing profile filter link. (profileFilterLinks.update)
+         *
+         * @param string $accountId Account ID to which profile filter link belongs.
+         * @param string $webPropertyId Web property Id to which profile filter link
+         * belongs
+         * @param string $profileId Profile ID to which filter link belongs
+         * @param string $linkId ID of the profile filter link to be updated.
+         * @param ProfileFilterLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return ProfileFilterLink
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, $profileId, $linkId, ProfileFilterLink $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a single profile filter link. (profileFilterLinks.get)
-     *
-     * @param string $accountId Account ID to retrieve profile filter link for.
-     * @param string $webPropertyId Web property Id to retrieve profile filter link
-     * for.
-     * @param string $profileId Profile ID to retrieve filter link for.
-     * @param string $linkId ID of the profile filter link.
-     * @param array $optParams Optional parameters.
-     * @return ProfileFilterLink
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementProfileFilterLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $webPropertyId, $profileId, $linkId, $optParams = [])
-    {
-    }
-    /**
-     * Create a new profile filter link. (profileFilterLinks.insert)
-     *
-     * @param string $accountId Account ID to create profile filter link for.
-     * @param string $webPropertyId Web property Id to create profile filter link
-     * for.
-     * @param string $profileId Profile ID to create filter link for.
-     * @param ProfileFilterLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return ProfileFilterLink
-     * @throws \Google\Service\Exception
-     */
-    public function insert($accountId, $webPropertyId, $profileId, ProfileFilterLink $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all profile filter links for a profile.
-     * (profileFilterLinks.listManagementProfileFilterLinks)
-     *
-     * @param string $accountId Account ID to retrieve profile filter links for.
-     * @param string $webPropertyId Web property Id for profile filter links for.
-     * Can either be a specific web property ID or '~all', which refers to all the
-     * web properties that user has access to.
-     * @param string $profileId Profile ID to retrieve filter links for. Can either
-     * be a specific profile ID or '~all', which refers to all the profiles that
-     * user has access to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of profile filter links to
-     * include in this response.
-     * @opt_param int start-index An index of the first entity to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @return ProfileFilterLinks
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementProfileFilterLinks($accountId, $webPropertyId, $profileId, $optParams = [])
-    {
-    }
-    /**
-     * Update an existing profile filter link. This method supports patch semantics.
-     * (profileFilterLinks.patch)
-     *
-     * @param string $accountId Account ID to which profile filter link belongs.
-     * @param string $webPropertyId Web property Id to which profile filter link
-     * belongs
-     * @param string $profileId Profile ID to which filter link belongs
-     * @param string $linkId ID of the profile filter link to be updated.
-     * @param ProfileFilterLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return ProfileFilterLink
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $webPropertyId, $profileId, $linkId, ProfileFilterLink $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update an existing profile filter link. (profileFilterLinks.update)
-     *
-     * @param string $accountId Account ID to which profile filter link belongs.
-     * @param string $webPropertyId Web property Id to which profile filter link
-     * belongs
-     * @param string $profileId Profile ID to which filter link belongs
-     * @param string $linkId ID of the profile filter link to be updated.
-     * @param ProfileFilterLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return ProfileFilterLink
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, $profileId, $linkId, ProfileFilterLink $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementProfileFilterLinks extends \Google\Service\Analytics\Resource\ManagementProfileFilterLinks
     {
     }
 }

@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger\Resource;
-
-/**
- * The "debuggees" collection of methods.
- * Typical usage is:
- *  <code>
- *   $clouddebuggerService = new Google\Service\CloudDebugger(...);
- *   $debuggees = $clouddebuggerService->debugger_debuggees;
- *  </code>
- */
-class DebuggerDebuggees extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDebugger\Resource {
+    use Google\Service\CloudDebugger\ListDebuggeesResponse;
     /**
-     * Lists all the debuggees that the user has access to.
-     * (debuggees.listDebuggerDebuggees)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientVersion Required. The client version making the call.
-     * Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
-     * @opt_param bool includeInactive When set to `true`, the result includes all
-     * debuggees. Otherwise, the result includes only debuggees that are active.
-     * @opt_param string project Required. Project number of a Google Cloud project
-     * whose debuggees to list.
-     * @return ListDebuggeesResponse
+     * The "debuggees" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $clouddebuggerService = new Google\Service\CloudDebugger(...);
+     *   $debuggees = $clouddebuggerService->debugger_debuggees;
+     *  </code>
      */
-    public function listDebuggerDebuggees($optParams = [])
+    class DebuggerDebuggees extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the debuggees that the user has access to.
+         * (debuggees.listDebuggerDebuggees)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientVersion Required. The client version making the call.
+         * Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
+         * @opt_param bool includeInactive When set to `true`, the result includes all
+         * debuggees. Otherwise, the result includes only debuggees that are active.
+         * @opt_param string project Required. Project number of a Google Cloud project
+         * whose debuggees to list.
+         * @return ListDebuggeesResponse
+         */
+        public function listDebuggerDebuggees($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDebugger\Resource\DebuggerDebuggees registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDebugger_Resource_DebuggerDebuggees extends \Google\Service\CloudDebugger\Resource\DebuggerDebuggees
     {
     }
 }

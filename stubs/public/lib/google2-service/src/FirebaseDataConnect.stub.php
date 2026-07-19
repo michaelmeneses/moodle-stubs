@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for FirebaseDataConnect (v1).
- *
- * <p>
- * Firebase Data Connect is a relational database service for mobile and web
- * apps that lets you build and scale using a fully-managed PostgreSQL database
- * powered by Cloud SQL. The REST API lets developers manage the connections to
- * their database, change the schema of their database, and query the database.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://firebase.google.com/docs/data-connect" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class FirebaseDataConnect extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_operations;
-    public $projects_locations_services;
-    public $projects_locations_services_connectors;
-    public $projects_locations_services_schemas;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the FirebaseDataConnect service.
+     * Service definition for FirebaseDataConnect (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Firebase Data Connect is a relational database service for mobile and web
+     * apps that lets you build and scale using a fully-managed PostgreSQL database
+     * powered by Cloud SQL. The REST API lets developers manage the connections to
+     * their database, change the schema of their database, and query the database.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://firebase.google.com/docs/data-connect" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class FirebaseDataConnect extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_operations;
+        public $projects_locations_services;
+        public $projects_locations_services_connectors;
+        public $projects_locations_services_schemas;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the FirebaseDataConnect service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseDataConnect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseDataConnect extends \Google\Service\FirebaseDataConnect
     {
     }
 }

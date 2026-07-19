@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class HttpsTrigger extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $securityLevel;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setSecurityLevel($securityLevel)
+namespace Google\Service\CloudFunctions {
+    class HttpsTrigger extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $securityLevel;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setSecurityLevel($securityLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityLevel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\HttpsTrigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityLevel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudFunctions_HttpsTrigger extends \Google\Service\CloudFunctions\HttpsTrigger
     {
     }
 }

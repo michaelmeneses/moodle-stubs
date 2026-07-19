@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class HotKeyDetection extends \Google\Model
-{
-    /**
-     * The age of the hot key measured from when it was first detected.
-     *
-     * @var string
-     */
-    public $hotKeyAge;
-    /**
-     * System-defined name of the step containing this hot key. Unique across the
-     * workflow.
-     *
-     * @var string
-     */
-    public $systemName;
-    /**
-     * User-provided name of the step that contains this hot key.
-     *
-     * @var string
-     */
-    public $userStepName;
-    /**
-     * The age of the hot key measured from when it was first detected.
-     *
-     * @param string $hotKeyAge
-     */
-    public function setHotKeyAge($hotKeyAge)
+namespace Google\Service\Dataflow {
+    class HotKeyDetection extends \Google\Model
     {
+        /**
+         * The age of the hot key measured from when it was first detected.
+         *
+         * @var string
+         */
+        public $hotKeyAge;
+        /**
+         * System-defined name of the step containing this hot key. Unique across the
+         * workflow.
+         *
+         * @var string
+         */
+        public $systemName;
+        /**
+         * User-provided name of the step that contains this hot key.
+         *
+         * @var string
+         */
+        public $userStepName;
+        /**
+         * The age of the hot key measured from when it was first detected.
+         *
+         * @param string $hotKeyAge
+         */
+        public function setHotKeyAge($hotKeyAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHotKeyAge()
+        {
+        }
+        /**
+         * System-defined name of the step containing this hot key. Unique across the
+         * workflow.
+         *
+         * @param string $systemName
+         */
+        public function setSystemName($systemName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemName()
+        {
+        }
+        /**
+         * User-provided name of the step that contains this hot key.
+         *
+         * @param string $userStepName
+         */
+        public function setUserStepName($userStepName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserStepName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\HotKeyDetection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotKeyAge()
-    {
-    }
-    /**
-     * System-defined name of the step containing this hot key. Unique across the
-     * workflow.
-     *
-     * @param string $systemName
-     */
-    public function setSystemName($systemName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemName()
-    {
-    }
-    /**
-     * User-provided name of the step that contains this hot key.
-     *
-     * @param string $userStepName
-     */
-    public function setUserStepName($userStepName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserStepName()
+    class Google_Service_Dataflow_HotKeyDetection extends \Google\Service\Dataflow\HotKeyDetection
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class JobMetadata extends \Google\Model
-{
-    /**
-     * Output only. The job id.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Output only. Operation type.
-     *
-     * @var string
-     */
-    public $operationType;
-    /**
-     * Output only. Job submission time.
-     *
-     * @var string
-     */
-    public $startTime;
-    protected $statusType = JobStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Output only. The job id.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
+namespace Google\Service\Dataproc {
+    class JobMetadata extends \Google\Model
     {
+        /**
+         * Output only. The job id.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Output only. Operation type.
+         *
+         * @var string
+         */
+        public $operationType;
+        /**
+         * Output only. Job submission time.
+         *
+         * @var string
+         */
+        public $startTime;
+        protected $statusType = JobStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Output only. The job id.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Output only. Operation type.
+         *
+         * @param string $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * Output only. Job submission time.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. Most recent job status.
+         *
+         * @param JobStatus $status
+         */
+        public function setStatus(JobStatus $status)
+        {
+        }
+        /**
+         * @return JobStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\JobMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobId()
-    {
-    }
-    /**
-     * Output only. Operation type.
-     *
-     * @param string $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * Output only. Job submission time.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. Most recent job status.
-     *
-     * @param JobStatus $status
-     */
-    public function setStatus(JobStatus $status)
-    {
-    }
-    /**
-     * @return JobStatus
-     */
-    public function getStatus()
+    class Google_Service_Dataproc_JobMetadata extends \Google\Service\Dataproc\JobMetadata
     {
     }
 }

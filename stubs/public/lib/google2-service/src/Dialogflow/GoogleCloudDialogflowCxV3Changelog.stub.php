@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Changelog extends \Google\Model
-{
-    /**
-     * The action of the change.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * The timestamp of the change.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The affected resource display name of the change.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The affected language code of the change.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * The unique identifier of the changelog. Format:
-     * `projects//locations//agents//changelogs/`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The affected resource name of the change.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The affected resource type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Email address of the authenticated user.
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * The action of the change.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Changelog extends \Google\Model
     {
+        /**
+         * The action of the change.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * The timestamp of the change.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The affected resource display name of the change.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The affected language code of the change.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * The unique identifier of the changelog. Format:
+         * `projects//locations//agents//changelogs/`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The affected resource name of the change.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The affected resource type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Email address of the authenticated user.
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * The action of the change.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The timestamp of the change.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The affected resource display name of the change.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The affected language code of the change.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The unique identifier of the changelog. Format:
+         * `projects//locations//agents//changelogs/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The affected resource name of the change.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The affected resource type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Email address of the authenticated user.
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Changelog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The timestamp of the change.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The affected resource display name of the change.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The affected language code of the change.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The unique identifier of the changelog. Format:
-     * `projects//locations//agents//changelogs/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The affected resource name of the change.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The affected resource type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Email address of the authenticated user.
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Changelog extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Changelog
     {
     }
 }

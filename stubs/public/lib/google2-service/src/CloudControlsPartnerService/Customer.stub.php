@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Customer extends \Google\Model
-{
-    protected $customerOnboardingStateType = CustomerOnboardingState::class;
-    protected $customerOnboardingStateDataType = '';
-    /**
-     * Required. Display name for the customer
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Indicates whether a customer is fully onboarded
-     *
-     * @var bool
-     */
-    public $isOnboarded;
-    /**
-     * Identifier. Format:
-     * `organizations/{organization}/locations/{location}/customers/{customer}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The customer organization domain, extracted from CRM
-     * Organization’s display_name field. e.g. "google.com"
-     *
-     * @var string
-     */
-    public $organizationDomain;
-    /**
-     * Output only. Container for customer onboarding steps
-     *
-     * @param CustomerOnboardingState $customerOnboardingState
-     */
-    public function setCustomerOnboardingState(CustomerOnboardingState $customerOnboardingState)
+namespace Google\Service\CloudControlsPartnerService {
+    class Customer extends \Google\Model
     {
+        protected $customerOnboardingStateType = CustomerOnboardingState::class;
+        protected $customerOnboardingStateDataType = '';
+        /**
+         * Required. Display name for the customer
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Indicates whether a customer is fully onboarded
+         *
+         * @var bool
+         */
+        public $isOnboarded;
+        /**
+         * Identifier. Format:
+         * `organizations/{organization}/locations/{location}/customers/{customer}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The customer organization domain, extracted from CRM
+         * Organization’s display_name field. e.g. "google.com"
+         *
+         * @var string
+         */
+        public $organizationDomain;
+        /**
+         * Output only. Container for customer onboarding steps
+         *
+         * @param CustomerOnboardingState $customerOnboardingState
+         */
+        public function setCustomerOnboardingState(CustomerOnboardingState $customerOnboardingState)
+        {
+        }
+        /**
+         * @return CustomerOnboardingState
+         */
+        public function getCustomerOnboardingState()
+        {
+        }
+        /**
+         * Required. Display name for the customer
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Indicates whether a customer is fully onboarded
+         *
+         * @param bool $isOnboarded
+         */
+        public function setIsOnboarded($isOnboarded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsOnboarded()
+        {
+        }
+        /**
+         * Identifier. Format:
+         * `organizations/{organization}/locations/{location}/customers/{customer}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The customer organization domain, extracted from CRM
+         * Organization’s display_name field. e.g. "google.com"
+         *
+         * @param string $organizationDomain
+         */
+        public function setOrganizationDomain($organizationDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerOnboardingState
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Customer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerOnboardingState()
-    {
-    }
-    /**
-     * Required. Display name for the customer
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Indicates whether a customer is fully onboarded
-     *
-     * @param bool $isOnboarded
-     */
-    public function setIsOnboarded($isOnboarded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsOnboarded()
-    {
-    }
-    /**
-     * Identifier. Format:
-     * `organizations/{organization}/locations/{location}/customers/{customer}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The customer organization domain, extracted from CRM
-     * Organization’s display_name field. e.g. "google.com"
-     *
-     * @param string $organizationDomain
-     */
-    public function setOrganizationDomain($organizationDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationDomain()
+    class Google_Service_CloudControlsPartnerService_Customer extends \Google\Service\CloudControlsPartnerService\Customer
     {
     }
 }

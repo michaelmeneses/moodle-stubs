@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ConsumerGroup extends \Google\Model
-{
-    /**
-     * Identifier. The name of the consumer group. The `consumer_group` segment is
-     * used when connecting directly to the cluster. Structured like: projects/{pr
-     * oject}/locations/{location}/clusters/{cluster}/consumerGroups/{consumer_gro
-     * up}
-     *
-     * @var string
-     */
-    public $name;
-    protected $topicsType = ConsumerTopicMetadata::class;
-    protected $topicsDataType = 'map';
-    /**
-     * Identifier. The name of the consumer group. The `consumer_group` segment is
-     * used when connecting directly to the cluster. Structured like: projects/{pr
-     * oject}/locations/{location}/clusters/{cluster}/consumerGroups/{consumer_gro
-     * up}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ManagedKafka {
+    class ConsumerGroup extends \Google\Model
     {
+        /**
+         * Identifier. The name of the consumer group. The `consumer_group` segment is
+         * used when connecting directly to the cluster. Structured like: projects/{pr
+         * oject}/locations/{location}/clusters/{cluster}/consumerGroups/{consumer_gro
+         * up}
+         *
+         * @var string
+         */
+        public $name;
+        protected $topicsType = ConsumerTopicMetadata::class;
+        protected $topicsDataType = 'map';
+        /**
+         * Identifier. The name of the consumer group. The `consumer_group` segment is
+         * used when connecting directly to the cluster. Structured like: projects/{pr
+         * oject}/locations/{location}/clusters/{cluster}/consumerGroups/{consumer_gro
+         * up}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Metadata for this consumer group for all topics it has metadata
+         * for. The key of the map is a topic name, structured like:
+         * projects/{project}/locations/{location}/clusters/{cluster}/topics/{topic}
+         *
+         * @param ConsumerTopicMetadata[] $topics
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return ConsumerTopicMetadata[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\ConsumerGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Metadata for this consumer group for all topics it has metadata
-     * for. The key of the map is a topic name, structured like:
-     * projects/{project}/locations/{location}/clusters/{cluster}/topics/{topic}
-     *
-     * @param ConsumerTopicMetadata[] $topics
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return ConsumerTopicMetadata[]
-     */
-    public function getTopics()
+    class Google_Service_ManagedKafka_ConsumerGroup extends \Google\Service\ManagedKafka\ConsumerGroup
     {
     }
 }

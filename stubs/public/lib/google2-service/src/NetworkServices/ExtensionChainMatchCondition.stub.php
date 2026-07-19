@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ExtensionChainMatchCondition extends \Google\Model
-{
-    /**
-     * Required. A Common Expression Language (CEL) expression that is used to
-     * match requests for which the extension chain is executed. For more
-     * information, see [CEL matcher language
-     * reference](https://cloud.google.com/service-extensions/docs/cel-matcher-
-     * language-reference).
-     *
-     * @var string
-     */
-    public $celExpression;
-    /**
-     * Required. A Common Expression Language (CEL) expression that is used to
-     * match requests for which the extension chain is executed. For more
-     * information, see [CEL matcher language
-     * reference](https://cloud.google.com/service-extensions/docs/cel-matcher-
-     * language-reference).
-     *
-     * @param string $celExpression
-     */
-    public function setCelExpression($celExpression)
+namespace Google\Service\NetworkServices {
+    class ExtensionChainMatchCondition extends \Google\Model
     {
+        /**
+         * Required. A Common Expression Language (CEL) expression that is used to
+         * match requests for which the extension chain is executed. For more
+         * information, see [CEL matcher language
+         * reference](https://cloud.google.com/service-extensions/docs/cel-matcher-
+         * language-reference).
+         *
+         * @var string
+         */
+        public $celExpression;
+        /**
+         * Required. A Common Expression Language (CEL) expression that is used to
+         * match requests for which the extension chain is executed. For more
+         * information, see [CEL matcher language
+         * reference](https://cloud.google.com/service-extensions/docs/cel-matcher-
+         * language-reference).
+         *
+         * @param string $celExpression
+         */
+        public function setCelExpression($celExpression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCelExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\ExtensionChainMatchCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCelExpression()
+    class Google_Service_NetworkServices_ExtensionChainMatchCondition extends \Google\Service\NetworkServices\ExtensionChainMatchCondition
     {
     }
 }

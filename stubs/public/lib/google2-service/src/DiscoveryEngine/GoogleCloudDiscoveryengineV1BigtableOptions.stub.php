@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BigtableOptions extends \Google\Model
-{
-    protected $familiesType = GoogleCloudDiscoveryengineV1BigtableOptionsBigtableColumnFamily::class;
-    protected $familiesDataType = 'map';
-    /**
-     * The field name used for saving row key value in the document. The name has
-     * to match the pattern `a-zA-Z0-9*`.
-     *
-     * @var string
-     */
-    public $keyFieldName;
-    /**
-     * The mapping from family names to an object that contains column families
-     * level information for the given column family. If a family is not present
-     * in this map it will be ignored.
-     *
-     * @param GoogleCloudDiscoveryengineV1BigtableOptionsBigtableColumnFamily[] $families
-     */
-    public function setFamilies($families)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BigtableOptions extends \Google\Model
     {
+        protected $familiesType = GoogleCloudDiscoveryengineV1BigtableOptionsBigtableColumnFamily::class;
+        protected $familiesDataType = 'map';
+        /**
+         * The field name used for saving row key value in the document. The name has
+         * to match the pattern `a-zA-Z0-9*`.
+         *
+         * @var string
+         */
+        public $keyFieldName;
+        /**
+         * The mapping from family names to an object that contains column families
+         * level information for the given column family. If a family is not present
+         * in this map it will be ignored.
+         *
+         * @param GoogleCloudDiscoveryengineV1BigtableOptionsBigtableColumnFamily[] $families
+         */
+        public function setFamilies($families)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1BigtableOptionsBigtableColumnFamily[]
+         */
+        public function getFamilies()
+        {
+        }
+        /**
+         * The field name used for saving row key value in the document. The name has
+         * to match the pattern `a-zA-Z0-9*`.
+         *
+         * @param string $keyFieldName
+         */
+        public function setKeyFieldName($keyFieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyFieldName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1BigtableOptionsBigtableColumnFamily[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BigtableOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilies()
-    {
-    }
-    /**
-     * The field name used for saving row key value in the document. The name has
-     * to match the pattern `a-zA-Z0-9*`.
-     *
-     * @param string $keyFieldName
-     */
-    public function setKeyFieldName($keyFieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyFieldName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BigtableOptions extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BigtableOptions
     {
     }
 }

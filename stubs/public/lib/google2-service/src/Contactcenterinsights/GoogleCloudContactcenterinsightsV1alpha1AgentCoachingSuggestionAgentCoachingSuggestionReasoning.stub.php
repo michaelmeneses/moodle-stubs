@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $agentActionTaken;
-    /**
-     * @var string
-     */
-    public $issueSummary;
-    /**
-     * @param string
-     */
-    public function setAgentActionTaken($agentActionTaken)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $agentActionTaken;
+        /**
+         * @var string
+         */
+        public $issueSummary;
+        /**
+         * @param string
+         */
+        public function setAgentActionTaken($agentActionTaken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentActionTaken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIssueSummary($issueSummary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentActionTaken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIssueSummary($issueSummary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssueSummary()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning
     {
     }
 }

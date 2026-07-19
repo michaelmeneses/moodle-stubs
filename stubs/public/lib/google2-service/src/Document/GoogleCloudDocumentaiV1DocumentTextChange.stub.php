@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentTextChange extends \Google\Collection
-{
-    protected $collection_key = 'provenance';
-    /**
-     * The text that replaces the text identified in the `text_anchor`.
-     *
-     * @var string
-     */
-    public $changedText;
-    protected $provenanceType = GoogleCloudDocumentaiV1DocumentProvenance::class;
-    protected $provenanceDataType = 'array';
-    protected $textAnchorType = GoogleCloudDocumentaiV1DocumentTextAnchor::class;
-    protected $textAnchorDataType = '';
-    /**
-     * The text that replaces the text identified in the `text_anchor`.
-     *
-     * @param string $changedText
-     */
-    public function setChangedText($changedText)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentTextChange extends \Google\Collection
     {
+        protected $collection_key = 'provenance';
+        /**
+         * The text that replaces the text identified in the `text_anchor`.
+         *
+         * @var string
+         */
+        public $changedText;
+        protected $provenanceType = GoogleCloudDocumentaiV1DocumentProvenance::class;
+        protected $provenanceDataType = 'array';
+        protected $textAnchorType = GoogleCloudDocumentaiV1DocumentTextAnchor::class;
+        protected $textAnchorDataType = '';
+        /**
+         * The text that replaces the text identified in the `text_anchor`.
+         *
+         * @param string $changedText
+         */
+        public function setChangedText($changedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangedText()
+        {
+        }
+        /**
+         * The history of this annotation.
+         *
+         * @deprecated
+         * @param GoogleCloudDocumentaiV1DocumentProvenance[] $provenance
+         */
+        public function setProvenance($provenance)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudDocumentaiV1DocumentProvenance[]
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * Provenance of the correction. Text anchor indexing into the Document.text.
+         * There can only be a single `TextAnchor.text_segments` element. If the start
+         * and end index of the text segment are the same, the text change is inserted
+         * before that index.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentTextAnchor $textAnchor
+         */
+        public function setTextAnchor(GoogleCloudDocumentaiV1DocumentTextAnchor $textAnchor)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentTextAnchor
+         */
+        public function getTextAnchor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentTextChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangedText()
-    {
-    }
-    /**
-     * The history of this annotation.
-     *
-     * @deprecated
-     * @param GoogleCloudDocumentaiV1DocumentProvenance[] $provenance
-     */
-    public function setProvenance($provenance)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudDocumentaiV1DocumentProvenance[]
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * Provenance of the correction. Text anchor indexing into the Document.text.
-     * There can only be a single `TextAnchor.text_segments` element. If the start
-     * and end index of the text segment are the same, the text change is inserted
-     * before that index.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentTextAnchor $textAnchor
-     */
-    public function setTextAnchor(GoogleCloudDocumentaiV1DocumentTextAnchor $textAnchor)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentTextAnchor
-     */
-    public function getTextAnchor()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentTextChange extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentTextChange
     {
     }
 }

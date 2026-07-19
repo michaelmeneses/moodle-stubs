@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class InspectUrlIndexRequest extends \Google\Model
-{
-    /**
-     * Required. URL to inspect. Must be under the property specified in
-     * "site_url".
-     *
-     * @var string
-     */
-    public $inspectionUrl;
-    /**
-     * Optional. An [IETF BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag)
-     * language code representing the requested language for translated issue
-     * messages, e.g. "en-US", "or "de-CH". Default value is "en-US".
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Required. The URL of the property as defined in Search Console.
-     * **Examples:** `http://www.example.com/` for a URL-prefix property, or `sc-
-     * domain:example.com` for a Domain property.
-     *
-     * @var string
-     */
-    public $siteUrl;
-    /**
-     * Required. URL to inspect. Must be under the property specified in
-     * "site_url".
-     *
-     * @param string $inspectionUrl
-     */
-    public function setInspectionUrl($inspectionUrl)
+namespace Google\Service\SearchConsole {
+    class InspectUrlIndexRequest extends \Google\Model
     {
+        /**
+         * Required. URL to inspect. Must be under the property specified in
+         * "site_url".
+         *
+         * @var string
+         */
+        public $inspectionUrl;
+        /**
+         * Optional. An [IETF BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag)
+         * language code representing the requested language for translated issue
+         * messages, e.g. "en-US", "or "de-CH". Default value is "en-US".
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Required. The URL of the property as defined in Search Console.
+         * **Examples:** `http://www.example.com/` for a URL-prefix property, or `sc-
+         * domain:example.com` for a Domain property.
+         *
+         * @var string
+         */
+        public $siteUrl;
+        /**
+         * Required. URL to inspect. Must be under the property specified in
+         * "site_url".
+         *
+         * @param string $inspectionUrl
+         */
+        public function setInspectionUrl($inspectionUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectionUrl()
+        {
+        }
+        /**
+         * Optional. An [IETF BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag)
+         * language code representing the requested language for translated issue
+         * messages, e.g. "en-US", "or "de-CH". Default value is "en-US".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Required. The URL of the property as defined in Search Console.
+         * **Examples:** `http://www.example.com/` for a URL-prefix property, or `sc-
+         * domain:example.com` for a Domain property.
+         *
+         * @param string $siteUrl
+         */
+        public function setSiteUrl($siteUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSiteUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SearchConsole\InspectUrlIndexRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectionUrl()
-    {
-    }
-    /**
-     * Optional. An [IETF BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag)
-     * language code representing the requested language for translated issue
-     * messages, e.g. "en-US", "or "de-CH". Default value is "en-US".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Required. The URL of the property as defined in Search Console.
-     * **Examples:** `http://www.example.com/` for a URL-prefix property, or `sc-
-     * domain:example.com` for a Domain property.
-     *
-     * @param string $siteUrl
-     */
-    public function setSiteUrl($siteUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSiteUrl()
+    class Google_Service_SearchConsole_InspectUrlIndexRequest extends \Google\Service\SearchConsole\InspectUrlIndexRequest
     {
     }
 }

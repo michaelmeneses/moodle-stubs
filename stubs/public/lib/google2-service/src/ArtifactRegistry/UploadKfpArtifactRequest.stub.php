@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadKfpArtifactRequest extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Description of the package version.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Tags to be created with the version.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Description of the package version.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\ArtifactRegistry {
+    class UploadKfpArtifactRequest extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Description of the package version.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Tags to be created with the version.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Description of the package version.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Tags to be created with the version.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadKfpArtifactRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Tags to be created with the version.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_ArtifactRegistry_UploadKfpArtifactRequest extends \Google\Service\ArtifactRegistry\UploadKfpArtifactRequest
     {
     }
 }

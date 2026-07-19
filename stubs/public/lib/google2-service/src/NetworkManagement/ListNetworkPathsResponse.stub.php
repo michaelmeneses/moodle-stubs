@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ListNetworkPathsResponse extends \Google\Collection
-{
-    protected $collection_key = 'networkPaths';
-    protected $networkPathsType = NetworkPath::class;
-    protected $networkPathsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param NetworkPath[]
-     */
-    public function setNetworkPaths($networkPaths)
+namespace Google\Service\NetworkManagement {
+    class ListNetworkPathsResponse extends \Google\Collection
     {
+        protected $collection_key = 'networkPaths';
+        protected $networkPathsType = NetworkPath::class;
+        protected $networkPathsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param NetworkPath[]
+         */
+        public function setNetworkPaths($networkPaths)
+        {
+        }
+        /**
+         * @return NetworkPath[]
+         */
+        public function getNetworkPaths()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkPath[]
+     * Runtime class alias of \Google\Service\NetworkManagement\ListNetworkPathsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkPaths()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_NetworkManagement_ListNetworkPathsResponse extends \Google\Service\NetworkManagement\ListNetworkPathsResponse
     {
     }
 }

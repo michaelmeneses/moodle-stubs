@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class VariableMapping extends \Google\Model
-{
-    protected $fromType = FromMapping::class;
-    protected $fromDataType = '';
-    protected $toType = ToMapping::class;
-    protected $toDataType = '';
-    /**
-     * Required. name of the variable
-     *
-     * @var string
-     */
-    public $variable;
-    /**
-     * Optional. Output variables which will get their values from dependencies
-     *
-     * @param FromMapping $from
-     */
-    public function setFrom(FromMapping $from)
+namespace Google\Service\SaaSServiceManagement {
+    class VariableMapping extends \Google\Model
     {
+        protected $fromType = FromMapping::class;
+        protected $fromDataType = '';
+        protected $toType = ToMapping::class;
+        protected $toDataType = '';
+        /**
+         * Required. name of the variable
+         *
+         * @var string
+         */
+        public $variable;
+        /**
+         * Optional. Output variables which will get their values from dependencies
+         *
+         * @param FromMapping $from
+         */
+        public function setFrom(FromMapping $from)
+        {
+        }
+        /**
+         * @return FromMapping
+         */
+        public function getFrom()
+        {
+        }
+        /**
+         * Optional. Input variables whose values will be passed on to dependencies.
+         *
+         * @param ToMapping $to
+         */
+        public function setTo(ToMapping $to)
+        {
+        }
+        /**
+         * @return ToMapping
+         */
+        public function getTo()
+        {
+        }
+        /**
+         * Required. name of the variable
+         *
+         * @param string $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FromMapping
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\VariableMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrom()
-    {
-    }
-    /**
-     * Optional. Input variables whose values will be passed on to dependencies.
-     *
-     * @param ToMapping $to
-     */
-    public function setTo(ToMapping $to)
-    {
-    }
-    /**
-     * @return ToMapping
-     */
-    public function getTo()
-    {
-    }
-    /**
-     * Required. name of the variable
-     *
-     * @param string $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariable()
+    class Google_Service_SaaSServiceManagement_VariableMapping extends \Google\Service\SaaSServiceManagement\VariableMapping
     {
     }
 }

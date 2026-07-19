@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class Seller extends \Google\Model
-{
-    public $accountId;
-    public $subAccountId;
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyer {
+    class Seller extends \Google\Model
     {
+        public $accountId;
+        public $subAccountId;
+        public function setAccountId($accountId)
+        {
+        }
+        public function getAccountId()
+        {
+        }
+        public function setSubAccountId($subAccountId)
+        {
+        }
+        public function getSubAccountId()
+        {
+        }
     }
-    public function getAccountId()
-    {
-    }
-    public function setSubAccountId($subAccountId)
-    {
-    }
-    public function getSubAccountId()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Seller registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_Seller extends \Google\Service\AdExchangeBuyer\Seller
     {
     }
 }

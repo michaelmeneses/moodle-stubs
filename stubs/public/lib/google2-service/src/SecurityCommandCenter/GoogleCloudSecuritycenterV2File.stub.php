@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2File extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    /**
-     * Prefix of the file contents as a JSON-encoded string.
-     *
-     * @var string
-     */
-    public $contents;
-    protected $diskPathType = GoogleCloudSecuritycenterV2DiskPath::class;
-    protected $diskPathDataType = '';
-    /**
-     * The length in bytes of the file prefix that was hashed. If hashed_size ==
-     * size, any hashes reported represent the entire file.
-     *
-     * @var string
-     */
-    public $hashedSize;
-    protected $operationsType = GoogleCloudSecuritycenterV2FileOperation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * True when the hash covers only a prefix of the file.
-     *
-     * @var bool
-     */
-    public $partiallyHashed;
-    /**
-     * Absolute path of the file as a JSON encoded string.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * SHA256 hash of the first hashed_size bytes of the file encoded as a hex
-     * string. If hashed_size == size, sha256 represents the SHA256 hash of the
-     * entire file.
-     *
-     * @var string
-     */
-    public $sha256;
-    /**
-     * Size of the file in bytes.
-     *
-     * @var string
-     */
-    public $size;
-    /**
-     * Prefix of the file contents as a JSON-encoded string.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2File extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        /**
+         * Prefix of the file contents as a JSON-encoded string.
+         *
+         * @var string
+         */
+        public $contents;
+        protected $diskPathType = GoogleCloudSecuritycenterV2DiskPath::class;
+        protected $diskPathDataType = '';
+        /**
+         * The length in bytes of the file prefix that was hashed. If hashed_size ==
+         * size, any hashes reported represent the entire file.
+         *
+         * @var string
+         */
+        public $hashedSize;
+        protected $operationsType = GoogleCloudSecuritycenterV2FileOperation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * True when the hash covers only a prefix of the file.
+         *
+         * @var bool
+         */
+        public $partiallyHashed;
+        /**
+         * Absolute path of the file as a JSON encoded string.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * SHA256 hash of the first hashed_size bytes of the file encoded as a hex
+         * string. If hashed_size == size, sha256 represents the SHA256 hash of the
+         * entire file.
+         *
+         * @var string
+         */
+        public $sha256;
+        /**
+         * Size of the file in bytes.
+         *
+         * @var string
+         */
+        public $size;
+        /**
+         * Prefix of the file contents as a JSON-encoded string.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Path of the file in terms of underlying disk/partition identifiers.
+         *
+         * @param GoogleCloudSecuritycenterV2DiskPath $diskPath
+         */
+        public function setDiskPath(GoogleCloudSecuritycenterV2DiskPath $diskPath)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2DiskPath
+         */
+        public function getDiskPath()
+        {
+        }
+        /**
+         * The length in bytes of the file prefix that was hashed. If hashed_size ==
+         * size, any hashes reported represent the entire file.
+         *
+         * @param string $hashedSize
+         */
+        public function setHashedSize($hashedSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedSize()
+        {
+        }
+        /**
+         * Operation(s) performed on a file.
+         *
+         * @param GoogleCloudSecuritycenterV2FileOperation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2FileOperation[]
+         */
+        public function getOperations()
+        {
+        }
+        /**
+         * True when the hash covers only a prefix of the file.
+         *
+         * @param bool $partiallyHashed
+         */
+        public function setPartiallyHashed($partiallyHashed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPartiallyHashed()
+        {
+        }
+        /**
+         * Absolute path of the file as a JSON encoded string.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * SHA256 hash of the first hashed_size bytes of the file encoded as a hex
+         * string. If hashed_size == size, sha256 represents the SHA256 hash of the
+         * entire file.
+         *
+         * @param string $sha256
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
+        /**
+         * Size of the file in bytes.
+         *
+         * @param string $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2File registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Path of the file in terms of underlying disk/partition identifiers.
-     *
-     * @param GoogleCloudSecuritycenterV2DiskPath $diskPath
-     */
-    public function setDiskPath(GoogleCloudSecuritycenterV2DiskPath $diskPath)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2DiskPath
-     */
-    public function getDiskPath()
-    {
-    }
-    /**
-     * The length in bytes of the file prefix that was hashed. If hashed_size ==
-     * size, any hashes reported represent the entire file.
-     *
-     * @param string $hashedSize
-     */
-    public function setHashedSize($hashedSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedSize()
-    {
-    }
-    /**
-     * Operation(s) performed on a file.
-     *
-     * @param GoogleCloudSecuritycenterV2FileOperation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2FileOperation[]
-     */
-    public function getOperations()
-    {
-    }
-    /**
-     * True when the hash covers only a prefix of the file.
-     *
-     * @param bool $partiallyHashed
-     */
-    public function setPartiallyHashed($partiallyHashed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPartiallyHashed()
-    {
-    }
-    /**
-     * Absolute path of the file as a JSON encoded string.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * SHA256 hash of the first hashed_size bytes of the file encoded as a hex
-     * string. If hashed_size == size, sha256 represents the SHA256 hash of the
-     * entire file.
-     *
-     * @param string $sha256
-     */
-    public function setSha256($sha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256()
-    {
-    }
-    /**
-     * Size of the file in bytes.
-     *
-     * @param string $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2File extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2File
     {
     }
 }

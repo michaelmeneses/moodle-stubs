@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SlsaMetadata extends \Google\Model
-{
-    /**
-     * The timestamp of when the build completed.
-     *
-     * @var string
-     */
-    public $buildFinishedOn;
-    /**
-     * Identifies the particular build invocation, which can be useful for finding
-     * associated logs or other ad-hoc analysis. The value SHOULD be globally
-     * unique, per in-toto Provenance spec.
-     *
-     * @var string
-     */
-    public $buildInvocationId;
-    /**
-     * The timestamp of when the build started.
-     *
-     * @var string
-     */
-    public $buildStartedOn;
-    protected $completenessType = SlsaCompleteness::class;
-    protected $completenessDataType = '';
-    /**
-     * If true, the builder claims that running the recipe on materials will
-     * produce bit-for-bit identical output.
-     *
-     * @var bool
-     */
-    public $reproducible;
-    /**
-     * The timestamp of when the build completed.
-     *
-     * @param string $buildFinishedOn
-     */
-    public function setBuildFinishedOn($buildFinishedOn)
+namespace Google\Service\ContainerAnalysis {
+    class SlsaMetadata extends \Google\Model
     {
+        /**
+         * The timestamp of when the build completed.
+         *
+         * @var string
+         */
+        public $buildFinishedOn;
+        /**
+         * Identifies the particular build invocation, which can be useful for finding
+         * associated logs or other ad-hoc analysis. The value SHOULD be globally
+         * unique, per in-toto Provenance spec.
+         *
+         * @var string
+         */
+        public $buildInvocationId;
+        /**
+         * The timestamp of when the build started.
+         *
+         * @var string
+         */
+        public $buildStartedOn;
+        protected $completenessType = SlsaCompleteness::class;
+        protected $completenessDataType = '';
+        /**
+         * If true, the builder claims that running the recipe on materials will
+         * produce bit-for-bit identical output.
+         *
+         * @var bool
+         */
+        public $reproducible;
+        /**
+         * The timestamp of when the build completed.
+         *
+         * @param string $buildFinishedOn
+         */
+        public function setBuildFinishedOn($buildFinishedOn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildFinishedOn()
+        {
+        }
+        /**
+         * Identifies the particular build invocation, which can be useful for finding
+         * associated logs or other ad-hoc analysis. The value SHOULD be globally
+         * unique, per in-toto Provenance spec.
+         *
+         * @param string $buildInvocationId
+         */
+        public function setBuildInvocationId($buildInvocationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildInvocationId()
+        {
+        }
+        /**
+         * The timestamp of when the build started.
+         *
+         * @param string $buildStartedOn
+         */
+        public function setBuildStartedOn($buildStartedOn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildStartedOn()
+        {
+        }
+        /**
+         * Indicates that the builder claims certain fields in this message to be
+         * complete.
+         *
+         * @param SlsaCompleteness $completeness
+         */
+        public function setCompleteness(SlsaCompleteness $completeness)
+        {
+        }
+        /**
+         * @return SlsaCompleteness
+         */
+        public function getCompleteness()
+        {
+        }
+        /**
+         * If true, the builder claims that running the recipe on materials will
+         * produce bit-for-bit identical output.
+         *
+         * @param bool $reproducible
+         */
+        public function setReproducible($reproducible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReproducible()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SlsaMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildFinishedOn()
-    {
-    }
-    /**
-     * Identifies the particular build invocation, which can be useful for finding
-     * associated logs or other ad-hoc analysis. The value SHOULD be globally
-     * unique, per in-toto Provenance spec.
-     *
-     * @param string $buildInvocationId
-     */
-    public function setBuildInvocationId($buildInvocationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildInvocationId()
-    {
-    }
-    /**
-     * The timestamp of when the build started.
-     *
-     * @param string $buildStartedOn
-     */
-    public function setBuildStartedOn($buildStartedOn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildStartedOn()
-    {
-    }
-    /**
-     * Indicates that the builder claims certain fields in this message to be
-     * complete.
-     *
-     * @param SlsaCompleteness $completeness
-     */
-    public function setCompleteness(SlsaCompleteness $completeness)
-    {
-    }
-    /**
-     * @return SlsaCompleteness
-     */
-    public function getCompleteness()
-    {
-    }
-    /**
-     * If true, the builder claims that running the recipe on materials will
-     * produce bit-for-bit identical output.
-     *
-     * @param bool $reproducible
-     */
-    public function setReproducible($reproducible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReproducible()
+    class Google_Service_ContainerAnalysis_SlsaMetadata extends \Google\Service\ContainerAnalysis\SlsaMetadata
     {
     }
 }

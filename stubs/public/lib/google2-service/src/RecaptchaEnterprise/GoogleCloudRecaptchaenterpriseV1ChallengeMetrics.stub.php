@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ChallengeMetrics extends \Google\Model
-{
-    /**
-     * Count of submitted challenge solutions that were incorrect or otherwise
-     * deemed suspicious such that a subsequent challenge was triggered.
-     *
-     * @var string
-     */
-    public $failedCount;
-    /**
-     * Count of nocaptchas (successful verification without a challenge) issued.
-     *
-     * @var string
-     */
-    public $nocaptchaCount;
-    /**
-     * Count of reCAPTCHA checkboxes or badges rendered. This is mostly equivalent
-     * to a count of pageloads for pages that include reCAPTCHA.
-     *
-     * @var string
-     */
-    public $pageloadCount;
-    /**
-     * Count of nocaptchas (successful verification without a challenge) plus
-     * submitted challenge solutions that were correct and resulted in
-     * verification.
-     *
-     * @var string
-     */
-    public $passedCount;
-    /**
-     * Count of submitted challenge solutions that were incorrect or otherwise
-     * deemed suspicious such that a subsequent challenge was triggered.
-     *
-     * @param string $failedCount
-     */
-    public function setFailedCount($failedCount)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ChallengeMetrics extends \Google\Model
     {
+        /**
+         * Count of submitted challenge solutions that were incorrect or otherwise
+         * deemed suspicious such that a subsequent challenge was triggered.
+         *
+         * @var string
+         */
+        public $failedCount;
+        /**
+         * Count of nocaptchas (successful verification without a challenge) issued.
+         *
+         * @var string
+         */
+        public $nocaptchaCount;
+        /**
+         * Count of reCAPTCHA checkboxes or badges rendered. This is mostly equivalent
+         * to a count of pageloads for pages that include reCAPTCHA.
+         *
+         * @var string
+         */
+        public $pageloadCount;
+        /**
+         * Count of nocaptchas (successful verification without a challenge) plus
+         * submitted challenge solutions that were correct and resulted in
+         * verification.
+         *
+         * @var string
+         */
+        public $passedCount;
+        /**
+         * Count of submitted challenge solutions that were incorrect or otherwise
+         * deemed suspicious such that a subsequent challenge was triggered.
+         *
+         * @param string $failedCount
+         */
+        public function setFailedCount($failedCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailedCount()
+        {
+        }
+        /**
+         * Count of nocaptchas (successful verification without a challenge) issued.
+         *
+         * @param string $nocaptchaCount
+         */
+        public function setNocaptchaCount($nocaptchaCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNocaptchaCount()
+        {
+        }
+        /**
+         * Count of reCAPTCHA checkboxes or badges rendered. This is mostly equivalent
+         * to a count of pageloads for pages that include reCAPTCHA.
+         *
+         * @param string $pageloadCount
+         */
+        public function setPageloadCount($pageloadCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageloadCount()
+        {
+        }
+        /**
+         * Count of nocaptchas (successful verification without a challenge) plus
+         * submitted challenge solutions that were correct and resulted in
+         * verification.
+         *
+         * @param string $passedCount
+         */
+        public function setPassedCount($passedCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ChallengeMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedCount()
-    {
-    }
-    /**
-     * Count of nocaptchas (successful verification without a challenge) issued.
-     *
-     * @param string $nocaptchaCount
-     */
-    public function setNocaptchaCount($nocaptchaCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNocaptchaCount()
-    {
-    }
-    /**
-     * Count of reCAPTCHA checkboxes or badges rendered. This is mostly equivalent
-     * to a count of pageloads for pages that include reCAPTCHA.
-     *
-     * @param string $pageloadCount
-     */
-    public function setPageloadCount($pageloadCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageloadCount()
-    {
-    }
-    /**
-     * Count of nocaptchas (successful verification without a challenge) plus
-     * submitted challenge solutions that were correct and resulted in
-     * verification.
-     *
-     * @param string $passedCount
-     */
-    public function setPassedCount($passedCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassedCount()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ChallengeMetrics extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ChallengeMetrics
     {
     }
 }

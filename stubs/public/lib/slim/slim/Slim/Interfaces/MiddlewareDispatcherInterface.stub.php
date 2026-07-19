@@ -8,6 +8,8 @@
  */
 namespace Slim\Interfaces;
 
+use Psr\Http\Server\MiddlewareInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 /** @api */
 interface MiddlewareDispatcherInterface extends RequestHandlerInterface
 {

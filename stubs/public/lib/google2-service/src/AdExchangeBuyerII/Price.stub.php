@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class Price extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined pricing type. If the pricing type is
-     * unspecified, `COST_PER_MILLE` will be used instead.
-     */
-    public const PRICING_TYPE_PRICING_TYPE_UNSPECIFIED = 'PRICING_TYPE_UNSPECIFIED';
-    /**
-     * Cost per thousand impressions.
-     */
-    public const PRICING_TYPE_COST_PER_MILLE = 'COST_PER_MILLE';
-    /**
-     * Cost per day
-     */
-    public const PRICING_TYPE_COST_PER_DAY = 'COST_PER_DAY';
-    protected $amountType = Money::class;
-    protected $amountDataType = '';
-    /**
-     * The pricing type for the deal/product. (default: CPM)
-     *
-     * @var string
-     */
-    public $pricingType;
-    /**
-     * The actual price with currency specified.
-     *
-     * @param Money $amount
-     */
-    public function setAmount(Money $amount)
+namespace Google\Service\AdExchangeBuyerII {
+    class Price extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined pricing type. If the pricing type is
+         * unspecified, `COST_PER_MILLE` will be used instead.
+         */
+        public const PRICING_TYPE_PRICING_TYPE_UNSPECIFIED = 'PRICING_TYPE_UNSPECIFIED';
+        /**
+         * Cost per thousand impressions.
+         */
+        public const PRICING_TYPE_COST_PER_MILLE = 'COST_PER_MILLE';
+        /**
+         * Cost per day
+         */
+        public const PRICING_TYPE_COST_PER_DAY = 'COST_PER_DAY';
+        protected $amountType = Money::class;
+        protected $amountDataType = '';
+        /**
+         * The pricing type for the deal/product. (default: CPM)
+         *
+         * @var string
+         */
+        public $pricingType;
+        /**
+         * The actual price with currency specified.
+         *
+         * @param Money $amount
+         */
+        public function setAmount(Money $amount)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * The pricing type for the deal/product. (default: CPM)
+         *
+         * Accepted values: PRICING_TYPE_UNSPECIFIED, COST_PER_MILLE, COST_PER_DAY
+         *
+         * @param self::PRICING_TYPE_* $pricingType
+         */
+        public function setPricingType($pricingType)
+        {
+        }
+        /**
+         * @return self::PRICING_TYPE_*
+         */
+        public function getPricingType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Price registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * The pricing type for the deal/product. (default: CPM)
-     *
-     * Accepted values: PRICING_TYPE_UNSPECIFIED, COST_PER_MILLE, COST_PER_DAY
-     *
-     * @param self::PRICING_TYPE_* $pricingType
-     */
-    public function setPricingType($pricingType)
-    {
-    }
-    /**
-     * @return self::PRICING_TYPE_*
-     */
-    public function getPricingType()
+    class Google_Service_AdExchangeBuyerII_Price extends \Google\Service\AdExchangeBuyerII\Price
     {
     }
 }

@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueMute extends \Google\Model
-{
-    /**
-     * Unspecified mute state.
-     */
-    public const MUTE_STATE_MUTE_STATE_UNSPECIFIED = 'MUTE_STATE_UNSPECIFIED';
-    /**
-     * Not muted.
-     */
-    public const MUTE_STATE_NOT_MUTED = 'NOT_MUTED';
-    /**
-     * Muted.
-     */
-    public const MUTE_STATE_MUTED = 'MUTED';
-    /**
-     * The email address of the user who last changed the mute state of the issue.
-     *
-     * @var string
-     */
-    public $muteInitiator;
-    /**
-     * The user-provided reason for muting the issue.
-     *
-     * @var string
-     */
-    public $muteReason;
-    /**
-     * Output only. The mute state of the issue.
-     *
-     * @var string
-     */
-    public $muteState;
-    /**
-     * The time the issue was muted.
-     *
-     * @var string
-     */
-    public $muteUpdateTime;
-    /**
-     * The email address of the user who last changed the mute state of the issue.
-     *
-     * @param string $muteInitiator
-     */
-    public function setMuteInitiator($muteInitiator)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueMute extends \Google\Model
     {
+        /**
+         * Unspecified mute state.
+         */
+        public const MUTE_STATE_MUTE_STATE_UNSPECIFIED = 'MUTE_STATE_UNSPECIFIED';
+        /**
+         * Not muted.
+         */
+        public const MUTE_STATE_NOT_MUTED = 'NOT_MUTED';
+        /**
+         * Muted.
+         */
+        public const MUTE_STATE_MUTED = 'MUTED';
+        /**
+         * The email address of the user who last changed the mute state of the issue.
+         *
+         * @var string
+         */
+        public $muteInitiator;
+        /**
+         * The user-provided reason for muting the issue.
+         *
+         * @var string
+         */
+        public $muteReason;
+        /**
+         * Output only. The mute state of the issue.
+         *
+         * @var string
+         */
+        public $muteState;
+        /**
+         * The time the issue was muted.
+         *
+         * @var string
+         */
+        public $muteUpdateTime;
+        /**
+         * The email address of the user who last changed the mute state of the issue.
+         *
+         * @param string $muteInitiator
+         */
+        public function setMuteInitiator($muteInitiator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMuteInitiator()
+        {
+        }
+        /**
+         * The user-provided reason for muting the issue.
+         *
+         * @param string $muteReason
+         */
+        public function setMuteReason($muteReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMuteReason()
+        {
+        }
+        /**
+         * Output only. The mute state of the issue.
+         *
+         * Accepted values: MUTE_STATE_UNSPECIFIED, NOT_MUTED, MUTED
+         *
+         * @param self::MUTE_STATE_* $muteState
+         */
+        public function setMuteState($muteState)
+        {
+        }
+        /**
+         * @return self::MUTE_STATE_*
+         */
+        public function getMuteState()
+        {
+        }
+        /**
+         * The time the issue was muted.
+         *
+         * @param string $muteUpdateTime
+         */
+        public function setMuteUpdateTime($muteUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMuteUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueMute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMuteInitiator()
-    {
-    }
-    /**
-     * The user-provided reason for muting the issue.
-     *
-     * @param string $muteReason
-     */
-    public function setMuteReason($muteReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMuteReason()
-    {
-    }
-    /**
-     * Output only. The mute state of the issue.
-     *
-     * Accepted values: MUTE_STATE_UNSPECIFIED, NOT_MUTED, MUTED
-     *
-     * @param self::MUTE_STATE_* $muteState
-     */
-    public function setMuteState($muteState)
-    {
-    }
-    /**
-     * @return self::MUTE_STATE_*
-     */
-    public function getMuteState()
-    {
-    }
-    /**
-     * The time the issue was muted.
-     *
-     * @param string $muteUpdateTime
-     */
-    public function setMuteUpdateTime($muteUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMuteUpdateTime()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueMute extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueMute
     {
     }
 }

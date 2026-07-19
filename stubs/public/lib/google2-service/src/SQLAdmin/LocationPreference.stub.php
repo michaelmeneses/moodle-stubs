@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class LocationPreference extends \Google\Model
-{
-    /**
-     * The App Engine application to follow, it must be in the same region as the
-     * Cloud SQL instance. WARNING: Changing this might restart the instance.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $followGaeApplication;
-    /**
-     * This is always `sql#locationPreference`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The preferred Compute Engine zone for the secondary/failover (for example:
-     * us-central1-a, us-central1-b, etc.). To disable this field, set it to
-     * 'no_secondary_zone'.
-     *
-     * @var string
-     */
-    public $secondaryZone;
-    /**
-     * The preferred Compute Engine zone (for example: us-central1-a, us-
-     * central1-b, etc.). WARNING: Changing this might restart the instance.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * The App Engine application to follow, it must be in the same region as the
-     * Cloud SQL instance. WARNING: Changing this might restart the instance.
-     *
-     * @deprecated
-     * @param string $followGaeApplication
-     */
-    public function setFollowGaeApplication($followGaeApplication)
+namespace Google\Service\SQLAdmin {
+    class LocationPreference extends \Google\Model
     {
+        /**
+         * The App Engine application to follow, it must be in the same region as the
+         * Cloud SQL instance. WARNING: Changing this might restart the instance.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $followGaeApplication;
+        /**
+         * This is always `sql#locationPreference`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The preferred Compute Engine zone for the secondary/failover (for example:
+         * us-central1-a, us-central1-b, etc.). To disable this field, set it to
+         * 'no_secondary_zone'.
+         *
+         * @var string
+         */
+        public $secondaryZone;
+        /**
+         * The preferred Compute Engine zone (for example: us-central1-a, us-
+         * central1-b, etc.). WARNING: Changing this might restart the instance.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * The App Engine application to follow, it must be in the same region as the
+         * Cloud SQL instance. WARNING: Changing this might restart the instance.
+         *
+         * @deprecated
+         * @param string $followGaeApplication
+         */
+        public function setFollowGaeApplication($followGaeApplication)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getFollowGaeApplication()
+        {
+        }
+        /**
+         * This is always `sql#locationPreference`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The preferred Compute Engine zone for the secondary/failover (for example:
+         * us-central1-a, us-central1-b, etc.). To disable this field, set it to
+         * 'no_secondary_zone'.
+         *
+         * @param string $secondaryZone
+         */
+        public function setSecondaryZone($secondaryZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondaryZone()
+        {
+        }
+        /**
+         * The preferred Compute Engine zone (for example: us-central1-a, us-
+         * central1-b, etc.). WARNING: Changing this might restart the instance.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\LocationPreference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFollowGaeApplication()
-    {
-    }
-    /**
-     * This is always `sql#locationPreference`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The preferred Compute Engine zone for the secondary/failover (for example:
-     * us-central1-a, us-central1-b, etc.). To disable this field, set it to
-     * 'no_secondary_zone'.
-     *
-     * @param string $secondaryZone
-     */
-    public function setSecondaryZone($secondaryZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondaryZone()
-    {
-    }
-    /**
-     * The preferred Compute Engine zone (for example: us-central1-a, us-
-     * central1-b, etc.). WARNING: Changing this might restart the instance.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_SQLAdmin_LocationPreference extends \Google\Service\SQLAdmin\LocationPreference
     {
     }
 }

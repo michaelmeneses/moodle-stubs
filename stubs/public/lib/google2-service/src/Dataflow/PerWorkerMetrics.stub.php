@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PerWorkerMetrics extends \Google\Collection
-{
-    protected $collection_key = 'perStepNamespaceMetrics';
-    protected $perStepNamespaceMetricsType = PerStepNamespaceMetrics::class;
-    protected $perStepNamespaceMetricsDataType = 'array';
-    /**
-     * Optional. Metrics for a particular unfused step and namespace.
-     *
-     * @param PerStepNamespaceMetrics[] $perStepNamespaceMetrics
-     */
-    public function setPerStepNamespaceMetrics($perStepNamespaceMetrics)
+namespace Google\Service\Dataflow {
+    class PerWorkerMetrics extends \Google\Collection
     {
+        protected $collection_key = 'perStepNamespaceMetrics';
+        protected $perStepNamespaceMetricsType = PerStepNamespaceMetrics::class;
+        protected $perStepNamespaceMetricsDataType = 'array';
+        /**
+         * Optional. Metrics for a particular unfused step and namespace.
+         *
+         * @param PerStepNamespaceMetrics[] $perStepNamespaceMetrics
+         */
+        public function setPerStepNamespaceMetrics($perStepNamespaceMetrics)
+        {
+        }
+        /**
+         * @return PerStepNamespaceMetrics[]
+         */
+        public function getPerStepNamespaceMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PerStepNamespaceMetrics[]
+     * Runtime class alias of \Google\Service\Dataflow\PerWorkerMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerStepNamespaceMetrics()
+    class Google_Service_Dataflow_PerWorkerMetrics extends \Google\Service\Dataflow\PerWorkerMetrics
     {
     }
 }

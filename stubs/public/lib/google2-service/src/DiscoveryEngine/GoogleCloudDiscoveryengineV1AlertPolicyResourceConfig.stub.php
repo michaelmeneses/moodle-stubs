@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AlertPolicyResourceConfig extends \Google\Collection
-{
-    protected $collection_key = 'contactDetails';
-    protected $alertEnrollmentsType = GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment::class;
-    protected $alertEnrollmentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $alertPolicy;
-    protected $contactDetailsType = GoogleCloudDiscoveryengineV1ContactDetails::class;
-    protected $contactDetailsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @param GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment[]
-     */
-    public function setAlertEnrollments($alertEnrollments)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AlertPolicyResourceConfig extends \Google\Collection
     {
+        protected $collection_key = 'contactDetails';
+        protected $alertEnrollmentsType = GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment::class;
+        protected $alertEnrollmentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $alertPolicy;
+        protected $contactDetailsType = GoogleCloudDiscoveryengineV1ContactDetails::class;
+        protected $contactDetailsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @param GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment[]
+         */
+        public function setAlertEnrollments($alertEnrollments)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment[]
+         */
+        public function getAlertEnrollments()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAlertPolicy($alertPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlertPolicy()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1ContactDetails[]
+         */
+        public function setContactDetails($contactDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ContactDetails[]
+         */
+        public function getContactDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlertPolicyResourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertEnrollments()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAlertPolicy($alertPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAlertPolicy()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1ContactDetails[]
-     */
-    public function setContactDetails($contactDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ContactDetails[]
-     */
-    public function getContactDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AlertPolicyResourceConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlertPolicyResourceConfig
     {
     }
 }

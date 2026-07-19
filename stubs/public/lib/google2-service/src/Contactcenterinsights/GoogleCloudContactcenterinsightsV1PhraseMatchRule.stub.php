@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1PhraseMatchRule extends \Google\Model
-{
-    protected $configType = GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig::class;
-    protected $configDataType = '';
-    /**
-     * Specifies whether the phrase must be missing from the transcript segment or
-     * present in the transcript segment.
-     *
-     * @var bool
-     */
-    public $negated;
-    /**
-     * Required. The phrase to be matched.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Provides additional information about the rule that specifies how to apply
-     * the rule.
-     *
-     * @param GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig $config
-     */
-    public function setConfig(GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig $config)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1PhraseMatchRule extends \Google\Model
     {
+        protected $configType = GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig::class;
+        protected $configDataType = '';
+        /**
+         * Specifies whether the phrase must be missing from the transcript segment or
+         * present in the transcript segment.
+         *
+         * @var bool
+         */
+        public $negated;
+        /**
+         * Required. The phrase to be matched.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Provides additional information about the rule that specifies how to apply
+         * the rule.
+         *
+         * @param GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig $config
+         */
+        public function setConfig(GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig $config)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Specifies whether the phrase must be missing from the transcript segment or
+         * present in the transcript segment.
+         *
+         * @param bool $negated
+         */
+        public function setNegated($negated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegated()
+        {
+        }
+        /**
+         * Required. The phrase to be matched.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PhraseMatchRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Specifies whether the phrase must be missing from the transcript segment or
-     * present in the transcript segment.
-     *
-     * @param bool $negated
-     */
-    public function setNegated($negated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNegated()
-    {
-    }
-    /**
-     * Required. The phrase to be matched.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1PhraseMatchRule extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PhraseMatchRule
     {
     }
 }

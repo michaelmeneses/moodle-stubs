@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class GeoRegionSearchTerms extends \Google\Model
-{
-    /**
-     * The search query for the desired geo region. The query can be a prefix,
-     * e.g. "New Yor", "Seattle", "USA", etc.
-     *
-     * @var string
-     */
-    public $geoRegionQuery;
-    /**
-     * The search query for the desired geo region. The query can be a prefix,
-     * e.g. "New Yor", "Seattle", "USA", etc.
-     *
-     * @param string $geoRegionQuery
-     */
-    public function setGeoRegionQuery($geoRegionQuery)
+namespace Google\Service\DisplayVideo {
+    class GeoRegionSearchTerms extends \Google\Model
     {
+        /**
+         * The search query for the desired geo region. The query can be a prefix,
+         * e.g. "New Yor", "Seattle", "USA", etc.
+         *
+         * @var string
+         */
+        public $geoRegionQuery;
+        /**
+         * The search query for the desired geo region. The query can be a prefix,
+         * e.g. "New Yor", "Seattle", "USA", etc.
+         *
+         * @param string $geoRegionQuery
+         */
+        public function setGeoRegionQuery($geoRegionQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeoRegionQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\GeoRegionSearchTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeoRegionQuery()
+    class Google_Service_DisplayVideo_GeoRegionSearchTerms extends \Google\Service\DisplayVideo\GeoRegionSearchTerms
     {
     }
 }

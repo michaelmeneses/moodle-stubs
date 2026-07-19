@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class Address extends \Google\Model
-{
-    /**
-     * A customer's physical address. An address can be composed of one to three
-     * lines. The `addressline2` and `addressLine3` are optional.
-     *
-     * @var string
-     */
-    public $addressLine1;
-    /**
-     * Line 2 of the address.
-     *
-     * @var string
-     */
-    public $addressLine2;
-    /**
-     * Line 3 of the address.
-     *
-     * @var string
-     */
-    public $addressLine3;
-    /**
-     * The customer contact's name. This is required.
-     *
-     * @var string
-     */
-    public $contactName;
-    /**
-     * For `countryCode` information, see the ISO 3166 country code elements.
-     * Verify that country is approved for resale of Google products. This
-     * property is required when creating a new customer.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * Identifies the resource as a customer address. Value: `customers#address`
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * An example of a `locality` value is the city of `San Francisco`.
-     *
-     * @var string
-     */
-    public $locality;
-    /**
-     * The company or company division name. This is required.
-     *
-     * @var string
-     */
-    public $organizationName;
-    /**
-     * A `postalCode` example is a postal zip code such as `94043`. This property
-     * is required when creating a new customer.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * An example of a `region` value is `CA` for the state of California.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * A customer's physical address. An address can be composed of one to three
-     * lines. The `addressline2` and `addressLine3` are optional.
-     *
-     * @param string $addressLine1
-     */
-    public function setAddressLine1($addressLine1)
+namespace Google\Service\Reseller {
+    class Address extends \Google\Model
     {
+        /**
+         * A customer's physical address. An address can be composed of one to three
+         * lines. The `addressline2` and `addressLine3` are optional.
+         *
+         * @var string
+         */
+        public $addressLine1;
+        /**
+         * Line 2 of the address.
+         *
+         * @var string
+         */
+        public $addressLine2;
+        /**
+         * Line 3 of the address.
+         *
+         * @var string
+         */
+        public $addressLine3;
+        /**
+         * The customer contact's name. This is required.
+         *
+         * @var string
+         */
+        public $contactName;
+        /**
+         * For `countryCode` information, see the ISO 3166 country code elements.
+         * Verify that country is approved for resale of Google products. This
+         * property is required when creating a new customer.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * Identifies the resource as a customer address. Value: `customers#address`
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * An example of a `locality` value is the city of `San Francisco`.
+         *
+         * @var string
+         */
+        public $locality;
+        /**
+         * The company or company division name. This is required.
+         *
+         * @var string
+         */
+        public $organizationName;
+        /**
+         * A `postalCode` example is a postal zip code such as `94043`. This property
+         * is required when creating a new customer.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * An example of a `region` value is `CA` for the state of California.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * A customer's physical address. An address can be composed of one to three
+         * lines. The `addressline2` and `addressLine3` are optional.
+         *
+         * @param string $addressLine1
+         */
+        public function setAddressLine1($addressLine1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddressLine1()
+        {
+        }
+        /**
+         * Line 2 of the address.
+         *
+         * @param string $addressLine2
+         */
+        public function setAddressLine2($addressLine2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddressLine2()
+        {
+        }
+        /**
+         * Line 3 of the address.
+         *
+         * @param string $addressLine3
+         */
+        public function setAddressLine3($addressLine3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddressLine3()
+        {
+        }
+        /**
+         * The customer contact's name. This is required.
+         *
+         * @param string $contactName
+         */
+        public function setContactName($contactName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactName()
+        {
+        }
+        /**
+         * For `countryCode` information, see the ISO 3166 country code elements.
+         * Verify that country is approved for resale of Google products. This
+         * property is required when creating a new customer.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * Identifies the resource as a customer address. Value: `customers#address`
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * An example of a `locality` value is the city of `San Francisco`.
+         *
+         * @param string $locality
+         */
+        public function setLocality($locality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocality()
+        {
+        }
+        /**
+         * The company or company division name. This is required.
+         *
+         * @param string $organizationName
+         */
+        public function setOrganizationName($organizationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationName()
+        {
+        }
+        /**
+         * A `postalCode` example is a postal zip code such as `94043`. This property
+         * is required when creating a new customer.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * An example of a `region` value is `CA` for the state of California.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\Address registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressLine1()
-    {
-    }
-    /**
-     * Line 2 of the address.
-     *
-     * @param string $addressLine2
-     */
-    public function setAddressLine2($addressLine2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAddressLine2()
-    {
-    }
-    /**
-     * Line 3 of the address.
-     *
-     * @param string $addressLine3
-     */
-    public function setAddressLine3($addressLine3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAddressLine3()
-    {
-    }
-    /**
-     * The customer contact's name. This is required.
-     *
-     * @param string $contactName
-     */
-    public function setContactName($contactName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContactName()
-    {
-    }
-    /**
-     * For `countryCode` information, see the ISO 3166 country code elements.
-     * Verify that country is approved for resale of Google products. This
-     * property is required when creating a new customer.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * Identifies the resource as a customer address. Value: `customers#address`
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * An example of a `locality` value is the city of `San Francisco`.
-     *
-     * @param string $locality
-     */
-    public function setLocality($locality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocality()
-    {
-    }
-    /**
-     * The company or company division name. This is required.
-     *
-     * @param string $organizationName
-     */
-    public function setOrganizationName($organizationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationName()
-    {
-    }
-    /**
-     * A `postalCode` example is a postal zip code such as `94043`. This property
-     * is required when creating a new customer.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * An example of a `region` value is `CA` for the state of California.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
+    class Google_Service_Reseller_Address extends \Google\Service\Reseller\Address
     {
     }
 }

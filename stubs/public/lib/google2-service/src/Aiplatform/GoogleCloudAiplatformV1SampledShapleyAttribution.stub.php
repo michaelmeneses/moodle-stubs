@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SampledShapleyAttribution extends \Google\Model
-{
-    /**
-     * Required. The number of feature permutations to consider when approximating
-     * the Shapley values. Valid range of its value is [1, 50], inclusively.
-     *
-     * @var int
-     */
-    public $pathCount;
-    /**
-     * Required. The number of feature permutations to consider when approximating
-     * the Shapley values. Valid range of its value is [1, 50], inclusively.
-     *
-     * @param int $pathCount
-     */
-    public function setPathCount($pathCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SampledShapleyAttribution extends \Google\Model
     {
+        /**
+         * Required. The number of feature permutations to consider when approximating
+         * the Shapley values. Valid range of its value is [1, 50], inclusively.
+         *
+         * @var int
+         */
+        public $pathCount;
+        /**
+         * Required. The number of feature permutations to consider when approximating
+         * the Shapley values. Valid range of its value is [1, 50], inclusively.
+         *
+         * @param int $pathCount
+         */
+        public function setPathCount($pathCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPathCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SampledShapleyAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPathCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SampledShapleyAttribution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SampledShapleyAttribution
     {
     }
 }

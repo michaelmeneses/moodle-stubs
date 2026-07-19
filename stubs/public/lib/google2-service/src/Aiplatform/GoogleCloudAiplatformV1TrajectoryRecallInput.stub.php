@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryRecallInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1TrajectoryRecallInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1TrajectoryRecallSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated TrajectoryRecall instance.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryRecallInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryRecallInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1TrajectoryRecallInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1TrajectoryRecallSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated TrajectoryRecall instance.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryRecallInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryRecallInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for TrajectoryRecall metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryRecallSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1TrajectoryRecallSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryRecallSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryRecallInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryRecallInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for TrajectoryRecall metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryRecallSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1TrajectoryRecallSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryRecallSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryRecallInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryRecallInput
     {
     }
 }

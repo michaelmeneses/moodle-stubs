@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class AnalyticsInfo extends \Google\Model
-{
-    protected $googlePlayAnalyticsType = GooglePlayAnalytics::class;
-    protected $googlePlayAnalyticsDataType = '';
-    protected $itunesConnectAnalyticsType = ITunesConnectAnalytics::class;
-    protected $itunesConnectAnalyticsDataType = '';
-    /**
-     * Google Play Campaign Measurements.
-     *
-     * @param GooglePlayAnalytics $googlePlayAnalytics
-     */
-    public function setGooglePlayAnalytics(GooglePlayAnalytics $googlePlayAnalytics)
+namespace Google\Service\FirebaseDynamicLinks {
+    class AnalyticsInfo extends \Google\Model
     {
+        protected $googlePlayAnalyticsType = GooglePlayAnalytics::class;
+        protected $googlePlayAnalyticsDataType = '';
+        protected $itunesConnectAnalyticsType = ITunesConnectAnalytics::class;
+        protected $itunesConnectAnalyticsDataType = '';
+        /**
+         * Google Play Campaign Measurements.
+         *
+         * @param GooglePlayAnalytics $googlePlayAnalytics
+         */
+        public function setGooglePlayAnalytics(GooglePlayAnalytics $googlePlayAnalytics)
+        {
+        }
+        /**
+         * @return GooglePlayAnalytics
+         */
+        public function getGooglePlayAnalytics()
+        {
+        }
+        /**
+         * iTunes Connect App Analytics.
+         *
+         * @param ITunesConnectAnalytics $itunesConnectAnalytics
+         */
+        public function setItunesConnectAnalytics(ITunesConnectAnalytics $itunesConnectAnalytics)
+        {
+        }
+        /**
+         * @return ITunesConnectAnalytics
+         */
+        public function getItunesConnectAnalytics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayAnalytics
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\AnalyticsInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGooglePlayAnalytics()
-    {
-    }
-    /**
-     * iTunes Connect App Analytics.
-     *
-     * @param ITunesConnectAnalytics $itunesConnectAnalytics
-     */
-    public function setItunesConnectAnalytics(ITunesConnectAnalytics $itunesConnectAnalytics)
-    {
-    }
-    /**
-     * @return ITunesConnectAnalytics
-     */
-    public function getItunesConnectAnalytics()
+    class Google_Service_FirebaseDynamicLinks_AnalyticsInfo extends \Google\Service\FirebaseDynamicLinks\AnalyticsInfo
     {
     }
 }

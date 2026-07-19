@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class ApprovalList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Approval::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always drive#approvalList
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The page token for the next page of Approvals. This will be absent if the
-     * end of the Approvals list has been reached. If the token is rejected for
-     * any reason, it should be discarded, and pagination should be restarted from
-     * the first page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Approvals. If nextPageToken is populated, then this list may be
-     * incomplete and an additional page of results should be fetched.
-     *
-     * @param Approval[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Drive {
+    class ApprovalList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Approval::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always drive#approvalList
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The page token for the next page of Approvals. This will be absent if the
+         * end of the Approvals list has been reached. If the token is rejected for
+         * any reason, it should be discarded, and pagination should be restarted from
+         * the first page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Approvals. If nextPageToken is populated, then this list may be
+         * incomplete and an additional page of results should be fetched.
+         *
+         * @param Approval[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Approval[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always drive#approvalList
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The page token for the next page of Approvals. This will be absent if the
+         * end of the Approvals list has been reached. If the token is rejected for
+         * any reason, it should be discarded, and pagination should be restarted from
+         * the first page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Approval[]
+     * Runtime class alias of \Google\Service\Drive\ApprovalList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always drive#approvalList
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The page token for the next page of Approvals. This will be absent if the
-     * end of the Approvals list has been reached. If the token is rejected for
-     * any reason, it should be discarded, and pagination should be restarted from
-     * the first page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Drive_ApprovalList extends \Google\Service\Drive\ApprovalList
     {
     }
 }

@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class Proto2FileDescriptorProto extends \Google\Collection
-{
-    protected $collection_key = 'optionDependency';
-    /**
-     * copybara:strip_begin TODO(b/297898292) Deprecate and remove this field in
-     * favor of enums. copybara:strip_end
-     *
-     * @deprecated
-     * @var string
-     */
-    public $editionDeprecated;
-    protected $enumTypeType = Proto2EnumDescriptorProto::class;
-    protected $enumTypeDataType = 'array';
-    protected $messageTypeType = Proto2DescriptorProto::class;
-    protected $messageTypeDataType = 'array';
-    /**
-     * file name, relative to root of source tree
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Names of files imported by this file purely for the purpose of providing
-     * option extensions. These are excluded from the dependency list above.
-     *
-     * @var string[]
-     */
-    public $optionDependency;
-    /**
-     * e.g. "foo", "foo.bar", etc.
-     *
-     * @var string
-     */
-    public $package;
-    /**
-     * The syntax of the proto file. The supported values are "proto2", "proto3",
-     * and "editions". If `edition` is present, this value must be "editions".
-     * WARNING: This field should only be used by protobuf plugins or special
-     * cases like the proto compiler. Other uses are discouraged and developers
-     * should rely on the protoreflect APIs for their client language.
-     *
-     * @var string
-     */
-    public $syntax;
-    /**
-     * copybara:strip_begin TODO(b/297898292) Deprecate and remove this field in
-     * favor of enums. copybara:strip_end
-     *
-     * @deprecated
-     * @param string $editionDeprecated
-     */
-    public function setEditionDeprecated($editionDeprecated)
+namespace Google\Service\ChromePolicy {
+    class Proto2FileDescriptorProto extends \Google\Collection
     {
+        protected $collection_key = 'optionDependency';
+        /**
+         * copybara:strip_begin TODO(b/297898292) Deprecate and remove this field in
+         * favor of enums. copybara:strip_end
+         *
+         * @deprecated
+         * @var string
+         */
+        public $editionDeprecated;
+        protected $enumTypeType = Proto2EnumDescriptorProto::class;
+        protected $enumTypeDataType = 'array';
+        protected $messageTypeType = Proto2DescriptorProto::class;
+        protected $messageTypeDataType = 'array';
+        /**
+         * file name, relative to root of source tree
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Names of files imported by this file purely for the purpose of providing
+         * option extensions. These are excluded from the dependency list above.
+         *
+         * @var string[]
+         */
+        public $optionDependency;
+        /**
+         * e.g. "foo", "foo.bar", etc.
+         *
+         * @var string
+         */
+        public $package;
+        /**
+         * The syntax of the proto file. The supported values are "proto2", "proto3",
+         * and "editions". If `edition` is present, this value must be "editions".
+         * WARNING: This field should only be used by protobuf plugins or special
+         * cases like the proto compiler. Other uses are discouraged and developers
+         * should rely on the protoreflect APIs for their client language.
+         *
+         * @var string
+         */
+        public $syntax;
+        /**
+         * copybara:strip_begin TODO(b/297898292) Deprecate and remove this field in
+         * favor of enums. copybara:strip_end
+         *
+         * @deprecated
+         * @param string $editionDeprecated
+         */
+        public function setEditionDeprecated($editionDeprecated)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEditionDeprecated()
+        {
+        }
+        /**
+         * @param Proto2EnumDescriptorProto[] $enumType
+         */
+        public function setEnumType($enumType)
+        {
+        }
+        /**
+         * @return Proto2EnumDescriptorProto[]
+         */
+        public function getEnumType()
+        {
+        }
+        /**
+         * All top-level definitions in this file.
+         *
+         * @param Proto2DescriptorProto[] $messageType
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return Proto2DescriptorProto[]
+         */
+        public function getMessageType()
+        {
+        }
+        /**
+         * file name, relative to root of source tree
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Names of files imported by this file purely for the purpose of providing
+         * option extensions. These are excluded from the dependency list above.
+         *
+         * @param string[] $optionDependency
+         */
+        public function setOptionDependency($optionDependency)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOptionDependency()
+        {
+        }
+        /**
+         * e.g. "foo", "foo.bar", etc.
+         *
+         * @param string $package
+         */
+        public function setPackage($package)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackage()
+        {
+        }
+        /**
+         * The syntax of the proto file. The supported values are "proto2", "proto3",
+         * and "editions". If `edition` is present, this value must be "editions".
+         * WARNING: This field should only be used by protobuf plugins or special
+         * cases like the proto compiler. Other uses are discouraged and developers
+         * should rely on the protoreflect APIs for their client language.
+         *
+         * @param string $syntax
+         */
+        public function setSyntax($syntax)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyntax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\Proto2FileDescriptorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEditionDeprecated()
-    {
-    }
-    /**
-     * @param Proto2EnumDescriptorProto[] $enumType
-     */
-    public function setEnumType($enumType)
-    {
-    }
-    /**
-     * @return Proto2EnumDescriptorProto[]
-     */
-    public function getEnumType()
-    {
-    }
-    /**
-     * All top-level definitions in this file.
-     *
-     * @param Proto2DescriptorProto[] $messageType
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return Proto2DescriptorProto[]
-     */
-    public function getMessageType()
-    {
-    }
-    /**
-     * file name, relative to root of source tree
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Names of files imported by this file purely for the purpose of providing
-     * option extensions. These are excluded from the dependency list above.
-     *
-     * @param string[] $optionDependency
-     */
-    public function setOptionDependency($optionDependency)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOptionDependency()
-    {
-    }
-    /**
-     * e.g. "foo", "foo.bar", etc.
-     *
-     * @param string $package
-     */
-    public function setPackage($package)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackage()
-    {
-    }
-    /**
-     * The syntax of the proto file. The supported values are "proto2", "proto3",
-     * and "editions". If `edition` is present, this value must be "editions".
-     * WARNING: This field should only be used by protobuf plugins or special
-     * cases like the proto compiler. Other uses are discouraged and developers
-     * should rely on the protoreflect APIs for their client language.
-     *
-     * @param string $syntax
-     */
-    public function setSyntax($syntax)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyntax()
+    class Google_Service_ChromePolicy_Proto2FileDescriptorProto extends \Google\Service\ChromePolicy\Proto2FileDescriptorProto
     {
     }
 }

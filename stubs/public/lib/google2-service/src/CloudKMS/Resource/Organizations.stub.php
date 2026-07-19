@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS\Resource;
-
-/**
- * The "organizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudkmsService = new Google\Service\CloudKMS(...);
- *   $organizations = $cloudkmsService->organizations;
- *  </code>
- */
-class Organizations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudKMS\Resource {
+    use Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig;
     /**
-     * Gets the KeyAccessJustificationsPolicyConfig for a given organization,
-     * folder, or project. (organizations.getKajPolicyConfig)
-     *
-     * @param string $name Required. The name of the
-     * KeyAccessJustificationsPolicyConfig to get.
-     * @param array $optParams Optional parameters.
-     * @return KeyAccessJustificationsPolicyConfig
-     * @throws \Google\Service\Exception
+     * The "organizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudkmsService = new Google\Service\CloudKMS(...);
+     *   $organizations = $cloudkmsService->organizations;
+     *  </code>
      */
-    public function getKajPolicyConfig($name, $optParams = [])
+    class Organizations extends \Google\Service\Resource
     {
+        /**
+         * Gets the KeyAccessJustificationsPolicyConfig for a given organization,
+         * folder, or project. (organizations.getKajPolicyConfig)
+         *
+         * @param string $name Required. The name of the
+         * KeyAccessJustificationsPolicyConfig to get.
+         * @param array $optParams Optional parameters.
+         * @return KeyAccessJustificationsPolicyConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getKajPolicyConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the KeyAccessJustificationsPolicyConfig for a given organization,
+         * folder, or project. (organizations.updateKajPolicyConfig)
+         *
+         * @param string $name Identifier. The resource name for this
+         * KeyAccessJustificationsPolicyConfig in the format of
+         * "{organizations|folders|projects}/kajPolicyConfig".
+         * @param KeyAccessJustificationsPolicyConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update.
+         * @return KeyAccessJustificationsPolicyConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateKajPolicyConfig($name, KeyAccessJustificationsPolicyConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the KeyAccessJustificationsPolicyConfig for a given organization,
-     * folder, or project. (organizations.updateKajPolicyConfig)
-     *
-     * @param string $name Identifier. The resource name for this
-     * KeyAccessJustificationsPolicyConfig in the format of
-     * "{organizations|folders|projects}/kajPolicyConfig".
-     * @param KeyAccessJustificationsPolicyConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update.
-     * @return KeyAccessJustificationsPolicyConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudKMS\Resource\Organizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateKajPolicyConfig($name, KeyAccessJustificationsPolicyConfig $postBody, $optParams = [])
+    class Google_Service_CloudKMS_Resource_Organizations extends \Google\Service\CloudKMS\Resource\Organizations
     {
     }
 }

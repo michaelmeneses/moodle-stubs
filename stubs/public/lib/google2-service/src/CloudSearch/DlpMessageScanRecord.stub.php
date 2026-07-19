@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DlpMessageScanRecord extends \Google\Model
-{
-    protected $attachmentScanSummaryType = DlpScanSummary::class;
-    protected $attachmentScanSummaryDataType = '';
-    protected $dlpActionType = DlpAction::class;
-    protected $dlpActionDataType = '';
-    protected $messageScanSummaryType = DlpScanSummary::class;
-    protected $messageScanSummaryDataType = '';
-    /**
-     * @var string
-     */
-    public $scanOutcome;
-    /**
-     * @param DlpScanSummary
-     */
-    public function setAttachmentScanSummary(DlpScanSummary $attachmentScanSummary)
+namespace Google\Service\CloudSearch {
+    class DlpMessageScanRecord extends \Google\Model
     {
+        protected $attachmentScanSummaryType = DlpScanSummary::class;
+        protected $attachmentScanSummaryDataType = '';
+        protected $dlpActionType = DlpAction::class;
+        protected $dlpActionDataType = '';
+        protected $messageScanSummaryType = DlpScanSummary::class;
+        protected $messageScanSummaryDataType = '';
+        /**
+         * @var string
+         */
+        public $scanOutcome;
+        /**
+         * @param DlpScanSummary
+         */
+        public function setAttachmentScanSummary(DlpScanSummary $attachmentScanSummary)
+        {
+        }
+        /**
+         * @return DlpScanSummary
+         */
+        public function getAttachmentScanSummary()
+        {
+        }
+        /**
+         * @param DlpAction
+         */
+        public function setDlpAction(DlpAction $dlpAction)
+        {
+        }
+        /**
+         * @return DlpAction
+         */
+        public function getDlpAction()
+        {
+        }
+        /**
+         * @param DlpScanSummary
+         */
+        public function setMessageScanSummary(DlpScanSummary $messageScanSummary)
+        {
+        }
+        /**
+         * @return DlpScanSummary
+         */
+        public function getMessageScanSummary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScanOutcome($scanOutcome)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanOutcome()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DlpScanSummary
+     * Runtime class alias of \Google\Service\CloudSearch\DlpMessageScanRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentScanSummary()
-    {
-    }
-    /**
-     * @param DlpAction
-     */
-    public function setDlpAction(DlpAction $dlpAction)
-    {
-    }
-    /**
-     * @return DlpAction
-     */
-    public function getDlpAction()
-    {
-    }
-    /**
-     * @param DlpScanSummary
-     */
-    public function setMessageScanSummary(DlpScanSummary $messageScanSummary)
-    {
-    }
-    /**
-     * @return DlpScanSummary
-     */
-    public function getMessageScanSummary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScanOutcome($scanOutcome)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanOutcome()
+    class Google_Service_CloudSearch_DlpMessageScanRecord extends \Google\Service\CloudSearch\DlpMessageScanRecord
     {
     }
 }

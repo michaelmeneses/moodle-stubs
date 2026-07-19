@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class SendMessageRequest extends \Google\Model
-{
-    protected $configurationType = SendMessageConfiguration::class;
-    protected $configurationDataType = '';
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * Optional metadata for the request.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Configuration for the send request.
-     *
-     * @param SendMessageConfiguration $configuration
-     */
-    public function setConfiguration(SendMessageConfiguration $configuration)
+namespace Google\Service\WorkspaceEvents {
+    class SendMessageRequest extends \Google\Model
     {
+        protected $configurationType = SendMessageConfiguration::class;
+        protected $configurationDataType = '';
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * Optional metadata for the request.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Configuration for the send request.
+         *
+         * @param SendMessageConfiguration $configuration
+         */
+        public function setConfiguration(SendMessageConfiguration $configuration)
+        {
+        }
+        /**
+         * @return SendMessageConfiguration
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * Required. The message to send to the agent.
+         *
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Optional metadata for the request.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SendMessageConfiguration
+     * Runtime class alias of \Google\Service\WorkspaceEvents\SendMessageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * Required. The message to send to the agent.
-     *
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
-    {
-    }
-    /**
-     * @return Message
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Optional metadata for the request.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
+    class Google_Service_WorkspaceEvents_SendMessageRequest extends \Google\Service\WorkspaceEvents\SendMessageRequest
     {
     }
 }

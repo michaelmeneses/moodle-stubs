@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class ActionCondition extends \Google\Collection
-{
-    protected $collection_key = 'exitCodes';
-    /**
-     * Exit codes of a task execution. If there are more than 1 exit codes, when
-     * task executes with any of the exit code in the list, the condition is met
-     * and the action will be executed.
-     *
-     * @var int[]
-     */
-    public $exitCodes;
-    /**
-     * Exit codes of a task execution. If there are more than 1 exit codes, when
-     * task executes with any of the exit code in the list, the condition is met
-     * and the action will be executed.
-     *
-     * @param int[] $exitCodes
-     */
-    public function setExitCodes($exitCodes)
+namespace Google\Service\Batch {
+    class ActionCondition extends \Google\Collection
     {
+        protected $collection_key = 'exitCodes';
+        /**
+         * Exit codes of a task execution. If there are more than 1 exit codes, when
+         * task executes with any of the exit code in the list, the condition is met
+         * and the action will be executed.
+         *
+         * @var int[]
+         */
+        public $exitCodes;
+        /**
+         * Exit codes of a task execution. If there are more than 1 exit codes, when
+         * task executes with any of the exit code in the list, the condition is met
+         * and the action will be executed.
+         *
+         * @param int[] $exitCodes
+         */
+        public function setExitCodes($exitCodes)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getExitCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Batch\ActionCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExitCodes()
+    class Google_Service_Batch_ActionCondition extends \Google\Service\Batch\ActionCondition
     {
     }
 }

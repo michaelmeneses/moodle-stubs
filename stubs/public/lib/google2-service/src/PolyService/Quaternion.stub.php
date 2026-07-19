@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class Quaternion extends \Google\Model
-{
-    public $w;
-    public $x;
-    public $y;
-    public $z;
-    public function setW($w)
+namespace Google\Service\PolyService {
+    class Quaternion extends \Google\Model
     {
+        public $w;
+        public $x;
+        public $y;
+        public $z;
+        public function setW($w)
+        {
+        }
+        public function getW()
+        {
+        }
+        public function setX($x)
+        {
+        }
+        public function getX()
+        {
+        }
+        public function setY($y)
+        {
+        }
+        public function getY()
+        {
+        }
+        public function setZ($z)
+        {
+        }
+        public function getZ()
+        {
+        }
     }
-    public function getW()
-    {
-    }
-    public function setX($x)
-    {
-    }
-    public function getX()
-    {
-    }
-    public function setY($y)
-    {
-    }
-    public function getY()
-    {
-    }
-    public function setZ($z)
-    {
-    }
-    public function getZ()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolyService\Quaternion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolyService_Quaternion extends \Google\Service\PolyService\Quaternion
     {
     }
 }

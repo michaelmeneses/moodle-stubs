@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3WebhookResponse extends \Google\Model
-{
-    protected $fulfillmentResponseType = GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse::class;
-    protected $fulfillmentResponseDataType = '';
-    protected $pageInfoType = GoogleCloudDialogflowCxV3PageInfo::class;
-    protected $pageInfoDataType = '';
-    /**
-     * Value to append directly to QueryResult.webhook_payloads.
-     *
-     * @var array[]
-     */
-    public $payload;
-    protected $sessionInfoType = GoogleCloudDialogflowCxV3SessionInfo::class;
-    protected $sessionInfoDataType = '';
-    /**
-     * The target flow to transition to. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @var string
-     */
-    public $targetFlow;
-    /**
-     * The target page to transition to. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @var string
-     */
-    public $targetPage;
-    /**
-     * The fulfillment response to send to the user. This field can be omitted by
-     * the webhook if it does not intend to send any response to the user.
-     *
-     * @param GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse $fulfillmentResponse
-     */
-    public function setFulfillmentResponse(GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse $fulfillmentResponse)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3WebhookResponse extends \Google\Model
     {
+        protected $fulfillmentResponseType = GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse::class;
+        protected $fulfillmentResponseDataType = '';
+        protected $pageInfoType = GoogleCloudDialogflowCxV3PageInfo::class;
+        protected $pageInfoDataType = '';
+        /**
+         * Value to append directly to QueryResult.webhook_payloads.
+         *
+         * @var array[]
+         */
+        public $payload;
+        protected $sessionInfoType = GoogleCloudDialogflowCxV3SessionInfo::class;
+        protected $sessionInfoDataType = '';
+        /**
+         * The target flow to transition to. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @var string
+         */
+        public $targetFlow;
+        /**
+         * The target page to transition to. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @var string
+         */
+        public $targetPage;
+        /**
+         * The fulfillment response to send to the user. This field can be omitted by
+         * the webhook if it does not intend to send any response to the user.
+         *
+         * @param GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse $fulfillmentResponse
+         */
+        public function setFulfillmentResponse(GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse $fulfillmentResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse
+         */
+        public function getFulfillmentResponse()
+        {
+        }
+        /**
+         * Information about page status. This field can be omitted by the webhook if
+         * it does not intend to modify page status.
+         *
+         * @param GoogleCloudDialogflowCxV3PageInfo $pageInfo
+         */
+        public function setPageInfo(GoogleCloudDialogflowCxV3PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * Value to append directly to QueryResult.webhook_payloads.
+         *
+         * @param array[] $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Information about session status. This field can be omitted by the webhook
+         * if it does not intend to modify session status.
+         *
+         * @param GoogleCloudDialogflowCxV3SessionInfo $sessionInfo
+         */
+        public function setSessionInfo(GoogleCloudDialogflowCxV3SessionInfo $sessionInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SessionInfo
+         */
+        public function getSessionInfo()
+        {
+        }
+        /**
+         * The target flow to transition to. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @param string $targetFlow
+         */
+        public function setTargetFlow($targetFlow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetFlow()
+        {
+        }
+        /**
+         * The target page to transition to. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @param string $targetPage
+         */
+        public function setTargetPage($targetPage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3WebhookResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFulfillmentResponse()
-    {
-    }
-    /**
-     * Information about page status. This field can be omitted by the webhook if
-     * it does not intend to modify page status.
-     *
-     * @param GoogleCloudDialogflowCxV3PageInfo $pageInfo
-     */
-    public function setPageInfo(GoogleCloudDialogflowCxV3PageInfo $pageInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3PageInfo
-     */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * Value to append directly to QueryResult.webhook_payloads.
-     *
-     * @param array[] $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Information about session status. This field can be omitted by the webhook
-     * if it does not intend to modify session status.
-     *
-     * @param GoogleCloudDialogflowCxV3SessionInfo $sessionInfo
-     */
-    public function setSessionInfo(GoogleCloudDialogflowCxV3SessionInfo $sessionInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3SessionInfo
-     */
-    public function getSessionInfo()
-    {
-    }
-    /**
-     * The target flow to transition to. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @param string $targetFlow
-     */
-    public function setTargetFlow($targetFlow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetFlow()
-    {
-    }
-    /**
-     * The target page to transition to. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @param string $targetPage
-     */
-    public function setTargetPage($targetPage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetPage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3WebhookResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3WebhookResponse
     {
     }
 }

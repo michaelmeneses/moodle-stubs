@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class SignJwtRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $payload;
-    /**
-     * @param string
-     */
-    public function setPayload($payload)
+namespace Google\Service\Iam {
+    class SignJwtRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $payload;
+        /**
+         * @param string
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\SignJwtRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
+    class Google_Service_Iam_SignJwtRequest extends \Google\Service\Iam\SignJwtRequest
     {
     }
 }

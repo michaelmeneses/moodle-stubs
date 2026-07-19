@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportCrossMediaReachCriteria extends \Google\Collection
-{
-    protected $collection_key = 'metricNames';
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $dimensionFiltersType = DimensionValue::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = SortedDimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * Required. The list of names of metrics the report should include.
-     *
-     * @var string[]
-     */
-    public $metricNames;
-    /**
-     * Required. The date range this report should be run for.
-     *
-     * @param DateRange $dateRange
-     */
-    public function setDateRange(DateRange $dateRange)
+namespace Google\Service\Dfareporting {
+    class ReportCrossMediaReachCriteria extends \Google\Collection
     {
+        protected $collection_key = 'metricNames';
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $dimensionFiltersType = DimensionValue::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = SortedDimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * Required. The list of names of metrics the report should include.
+         *
+         * @var string[]
+         */
+        public $metricNames;
+        /**
+         * Required. The date range this report should be run for.
+         *
+         * @param DateRange $dateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * Required. The list of filters on which dimensions are filtered. Filters for
+         * different dimensions are ANDed, filters for the same dimension are grouped
+         * together and ORed.
+         *
+         * @param DimensionValue[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * Required. The list of dimensions the report should include.
+         *
+         * @param SortedDimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return SortedDimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Required. The list of names of metrics the report should include.
+         *
+         * @param string[] $metricNames
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateRange
+     * Runtime class alias of \Google\Service\Dfareporting\ReportCrossMediaReachCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateRange()
-    {
-    }
-    /**
-     * Required. The list of filters on which dimensions are filtered. Filters for
-     * different dimensions are ANDed, filters for the same dimension are grouped
-     * together and ORed.
-     *
-     * @param DimensionValue[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
-    {
-    }
-    /**
-     * @return DimensionValue[]
-     */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * Required. The list of dimensions the report should include.
-     *
-     * @param SortedDimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return SortedDimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Required. The list of names of metrics the report should include.
-     *
-     * @param string[] $metricNames
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
+    class Google_Service_Dfareporting_ReportCrossMediaReachCriteria extends \Google\Service\Dfareporting\ReportCrossMediaReachCriteria
     {
     }
 }

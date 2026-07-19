@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DriveFollowUpRestrict extends \Google\Model
-{
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    public const TYPE_FOLLOWUP_SUGGESTIONS = 'FOLLOWUP_SUGGESTIONS';
-    public const TYPE_FOLLOWUP_ACTION_ITEMS = 'FOLLOWUP_ACTION_ITEMS';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudSearch {
+    class DriveFollowUpRestrict extends \Google\Model
     {
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        public const TYPE_FOLLOWUP_SUGGESTIONS = 'FOLLOWUP_SUGGESTIONS';
+        public const TYPE_FOLLOWUP_ACTION_ITEMS = 'FOLLOWUP_ACTION_ITEMS';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\CloudSearch\DriveFollowUpRestrict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_CloudSearch_DriveFollowUpRestrict extends \Google\Service\CloudSearch\DriveFollowUpRestrict
     {
     }
 }

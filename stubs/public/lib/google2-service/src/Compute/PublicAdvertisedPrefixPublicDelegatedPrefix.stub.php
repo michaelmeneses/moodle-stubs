@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PublicAdvertisedPrefixPublicDelegatedPrefix extends \Google\Model
-{
-    /**
-     * The IP address range of the public delegated prefix
-     *
-     * @var string
-     */
-    public $ipRange;
-    /**
-     * The name of the public delegated prefix
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The project number of the public delegated prefix
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The region of the public delegated prefix if it is regional. If absent, the
-     * prefix is global.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * The status of the public delegated prefix. Possible values are:
-     * INITIALIZING: The public delegated prefix is being initialized and
-     * addresses cannot be created yet.   ANNOUNCED: The public delegated prefix
-     * is active.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The IP address range of the public delegated prefix
-     *
-     * @param string $ipRange
-     */
-    public function setIpRange($ipRange)
+namespace Google\Service\Compute {
+    class PublicAdvertisedPrefixPublicDelegatedPrefix extends \Google\Model
     {
+        /**
+         * The IP address range of the public delegated prefix
+         *
+         * @var string
+         */
+        public $ipRange;
+        /**
+         * The name of the public delegated prefix
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The project number of the public delegated prefix
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The region of the public delegated prefix if it is regional. If absent, the
+         * prefix is global.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * The status of the public delegated prefix. Possible values are:
+         * INITIALIZING: The public delegated prefix is being initialized and
+         * addresses cannot be created yet.   ANNOUNCED: The public delegated prefix
+         * is active.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The IP address range of the public delegated prefix
+         *
+         * @param string $ipRange
+         */
+        public function setIpRange($ipRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpRange()
+        {
+        }
+        /**
+         * The name of the public delegated prefix
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The project number of the public delegated prefix
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * The region of the public delegated prefix if it is regional. If absent, the
+         * prefix is global.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * The status of the public delegated prefix. Possible values are:
+         * INITIALIZING: The public delegated prefix is being initialized and
+         * addresses cannot be created yet.   ANNOUNCED: The public delegated prefix
+         * is active.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PublicAdvertisedPrefixPublicDelegatedPrefix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpRange()
-    {
-    }
-    /**
-     * The name of the public delegated prefix
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The project number of the public delegated prefix
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * The region of the public delegated prefix if it is regional. If absent, the
-     * prefix is global.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * The status of the public delegated prefix. Possible values are:
-     * INITIALIZING: The public delegated prefix is being initialized and
-     * addresses cannot be created yet.   ANNOUNCED: The public delegated prefix
-     * is active.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Compute_PublicAdvertisedPrefixPublicDelegatedPrefix extends \Google\Service\Compute\PublicAdvertisedPrefixPublicDelegatedPrefix
     {
     }
 }

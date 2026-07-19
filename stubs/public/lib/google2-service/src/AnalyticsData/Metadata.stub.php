@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class Metadata extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $comparisonsType = ComparisonMetadata::class;
-    protected $comparisonsDataType = 'array';
-    protected $dimensionsType = DimensionMetadata::class;
-    protected $dimensionsDataType = 'array';
-    protected $metricsType = MetricMetadata::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Resource name of this metadata.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The comparison descriptions.
-     *
-     * @param ComparisonMetadata[] $comparisons
-     */
-    public function setComparisons($comparisons)
+namespace Google\Service\AnalyticsData {
+    class Metadata extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $comparisonsType = ComparisonMetadata::class;
+        protected $comparisonsDataType = 'array';
+        protected $dimensionsType = DimensionMetadata::class;
+        protected $dimensionsDataType = 'array';
+        protected $metricsType = MetricMetadata::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Resource name of this metadata.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The comparison descriptions.
+         *
+         * @param ComparisonMetadata[] $comparisons
+         */
+        public function setComparisons($comparisons)
+        {
+        }
+        /**
+         * @return ComparisonMetadata[]
+         */
+        public function getComparisons()
+        {
+        }
+        /**
+         * The dimension descriptions.
+         *
+         * @param DimensionMetadata[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return DimensionMetadata[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The metric descriptions.
+         *
+         * @param MetricMetadata[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return MetricMetadata[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Resource name of this metadata.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComparisonMetadata[]
+     * Runtime class alias of \Google\Service\AnalyticsData\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisons()
-    {
-    }
-    /**
-     * The dimension descriptions.
-     *
-     * @param DimensionMetadata[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return DimensionMetadata[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The metric descriptions.
-     *
-     * @param MetricMetadata[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return MetricMetadata[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Resource name of this metadata.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AnalyticsData_Metadata extends \Google\Service\AnalyticsData\Metadata
     {
     }
 }

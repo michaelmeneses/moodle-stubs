@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PipelineSpec extends \Google\Collection
-{
-    protected $collection_key = 'workspaces';
-    protected $finallyTasksType = PipelineTask::class;
-    protected $finallyTasksDataType = 'array';
-    /**
-     * Output only. auto-generated yaml that is output only for display purpose
-     * for workflows using pipeline_spec, used by UI/gcloud cli for Workflows.
-     *
-     * @var string
-     */
-    public $generatedYaml;
-    protected $paramsType = ParamSpec::class;
-    protected $paramsDataType = 'array';
-    protected $resultsType = PipelineResult::class;
-    protected $resultsDataType = 'array';
-    protected $tasksType = PipelineTask::class;
-    protected $tasksDataType = 'array';
-    protected $workspacesType = PipelineWorkspaceDeclaration::class;
-    protected $workspacesDataType = 'array';
-    /**
-     * List of Tasks that execute just before leaving the Pipeline i.e. either
-     * after all Tasks are finished executing successfully or after a failure
-     * which would result in ending the Pipeline.
-     *
-     * @param PipelineTask[] $finallyTasks
-     */
-    public function setFinallyTasks($finallyTasks)
+namespace Google\Service\CloudBuild {
+    class PipelineSpec extends \Google\Collection
     {
+        protected $collection_key = 'workspaces';
+        protected $finallyTasksType = PipelineTask::class;
+        protected $finallyTasksDataType = 'array';
+        /**
+         * Output only. auto-generated yaml that is output only for display purpose
+         * for workflows using pipeline_spec, used by UI/gcloud cli for Workflows.
+         *
+         * @var string
+         */
+        public $generatedYaml;
+        protected $paramsType = ParamSpec::class;
+        protected $paramsDataType = 'array';
+        protected $resultsType = PipelineResult::class;
+        protected $resultsDataType = 'array';
+        protected $tasksType = PipelineTask::class;
+        protected $tasksDataType = 'array';
+        protected $workspacesType = PipelineWorkspaceDeclaration::class;
+        protected $workspacesDataType = 'array';
+        /**
+         * List of Tasks that execute just before leaving the Pipeline i.e. either
+         * after all Tasks are finished executing successfully or after a failure
+         * which would result in ending the Pipeline.
+         *
+         * @param PipelineTask[] $finallyTasks
+         */
+        public function setFinallyTasks($finallyTasks)
+        {
+        }
+        /**
+         * @return PipelineTask[]
+         */
+        public function getFinallyTasks()
+        {
+        }
+        /**
+         * Output only. auto-generated yaml that is output only for display purpose
+         * for workflows using pipeline_spec, used by UI/gcloud cli for Workflows.
+         *
+         * @param string $generatedYaml
+         */
+        public function setGeneratedYaml($generatedYaml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedYaml()
+        {
+        }
+        /**
+         * List of parameters.
+         *
+         * @param ParamSpec[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return ParamSpec[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * Optional. Output only. List of results written out by the pipeline's
+         * containers
+         *
+         * @param PipelineResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return PipelineResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * List of Tasks that execute when this Pipeline is run.
+         *
+         * @param PipelineTask[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return PipelineTask[]
+         */
+        public function getTasks()
+        {
+        }
+        /**
+         * Workspaces declares a set of named workspaces that are expected to be
+         * provided by a PipelineRun.
+         *
+         * @param PipelineWorkspaceDeclaration[] $workspaces
+         */
+        public function setWorkspaces($workspaces)
+        {
+        }
+        /**
+         * @return PipelineWorkspaceDeclaration[]
+         */
+        public function getWorkspaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PipelineTask[]
+     * Runtime class alias of \Google\Service\CloudBuild\PipelineSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinallyTasks()
-    {
-    }
-    /**
-     * Output only. auto-generated yaml that is output only for display purpose
-     * for workflows using pipeline_spec, used by UI/gcloud cli for Workflows.
-     *
-     * @param string $generatedYaml
-     */
-    public function setGeneratedYaml($generatedYaml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneratedYaml()
-    {
-    }
-    /**
-     * List of parameters.
-     *
-     * @param ParamSpec[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return ParamSpec[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * Optional. Output only. List of results written out by the pipeline's
-     * containers
-     *
-     * @param PipelineResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return PipelineResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * List of Tasks that execute when this Pipeline is run.
-     *
-     * @param PipelineTask[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return PipelineTask[]
-     */
-    public function getTasks()
-    {
-    }
-    /**
-     * Workspaces declares a set of named workspaces that are expected to be
-     * provided by a PipelineRun.
-     *
-     * @param PipelineWorkspaceDeclaration[] $workspaces
-     */
-    public function setWorkspaces($workspaces)
-    {
-    }
-    /**
-     * @return PipelineWorkspaceDeclaration[]
-     */
-    public function getWorkspaces()
+    class Google_Service_CloudBuild_PipelineSpec extends \Google\Service\CloudBuild\PipelineSpec
     {
     }
 }

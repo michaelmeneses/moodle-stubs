@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class VerifyLocationResponse extends \Google\Model
-{
-    protected $verificationType = Verification::class;
-    protected $verificationDataType = '';
-    /**
-     * The created verification request.
-     *
-     * @param Verification $verification
-     */
-    public function setVerification(Verification $verification)
+namespace Google\Service\MyBusinessVerifications {
+    class VerifyLocationResponse extends \Google\Model
     {
+        protected $verificationType = Verification::class;
+        protected $verificationDataType = '';
+        /**
+         * The created verification request.
+         *
+         * @param Verification $verification
+         */
+        public function setVerification(Verification $verification)
+        {
+        }
+        /**
+         * @return Verification
+         */
+        public function getVerification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Verification
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\VerifyLocationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVerification()
+    class Google_Service_MyBusinessVerifications_VerifyLocationResponse extends \Google\Service\MyBusinessVerifications\VerifyLocationResponse
     {
     }
 }

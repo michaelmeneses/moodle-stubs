@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1TrialParameter extends \Google\Model
-{
-    /**
-     * Must be set if ParameterType is DOUBLE or DISCRETE.
-     *
-     * @var 
-     */
-    public $floatValue;
-    /**
-     * Must be set if ParameterType is INTEGER
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * The name of the parameter.
-     *
-     * @var string
-     */
-    public $parameter;
-    /**
-     * Must be set if ParameterTypeis CATEGORICAL
-     *
-     * @var string
-     */
-    public $stringValue;
-    public function setFloatValue($floatValue)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1TrialParameter extends \Google\Model
     {
+        /**
+         * Must be set if ParameterType is DOUBLE or DISCRETE.
+         *
+         * @var 
+         */
+        public $floatValue;
+        /**
+         * Must be set if ParameterType is INTEGER
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * The name of the parameter.
+         *
+         * @var string
+         */
+        public $parameter;
+        /**
+         * Must be set if ParameterTypeis CATEGORICAL
+         *
+         * @var string
+         */
+        public $stringValue;
+        public function setFloatValue($floatValue)
+        {
+        }
+        public function getFloatValue()
+        {
+        }
+        /**
+         * Must be set if ParameterType is INTEGER
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * The name of the parameter.
+         *
+         * @param string $parameter
+         */
+        public function setParameter($parameter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameter()
+        {
+        }
+        /**
+         * Must be set if ParameterTypeis CATEGORICAL
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
-    public function getFloatValue()
-    {
-    }
+}
+namespace {
     /**
-     * Must be set if ParameterType is INTEGER
-     *
-     * @param string $intValue
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1TrialParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * The name of the parameter.
-     *
-     * @param string $parameter
-     */
-    public function setParameter($parameter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParameter()
-    {
-    }
-    /**
-     * Must be set if ParameterTypeis CATEGORICAL
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1TrialParameter extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1TrialParameter
     {
     }
 }

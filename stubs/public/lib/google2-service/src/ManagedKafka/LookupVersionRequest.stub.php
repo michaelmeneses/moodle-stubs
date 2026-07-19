@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class LookupVersionRequest extends \Google\Collection
-{
-    /**
-     * No schema type. The default will be AVRO.
-     */
-    public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
-    /**
-     * Avro schema type.
-     */
-    public const SCHEMA_TYPE_AVRO = 'AVRO';
-    /**
-     * JSON schema type.
-     */
-    public const SCHEMA_TYPE_JSON = 'JSON';
-    /**
-     * Protobuf schema type.
-     */
-    public const SCHEMA_TYPE_PROTOBUF = 'PROTOBUF';
-    protected $collection_key = 'references';
-    /**
-     * Optional. If true, soft-deleted versions will be included in lookup, no
-     * matter if the subject is active or soft-deleted. If false, soft-deleted
-     * versions will be excluded. The default is false.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * Optional. If true, the schema will be normalized before being looked up.
-     * The default is false.
-     *
-     * @var bool
-     */
-    public $normalize;
-    protected $referencesType = SchemaReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * Required. The schema payload
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Optional. The schema type of the schema.
-     *
-     * @var string
-     */
-    public $schemaType;
-    /**
-     * Optional. If true, soft-deleted versions will be included in lookup, no
-     * matter if the subject is active or soft-deleted. If false, soft-deleted
-     * versions will be excluded. The default is false.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
+namespace Google\Service\ManagedKafka {
+    class LookupVersionRequest extends \Google\Collection
     {
+        /**
+         * No schema type. The default will be AVRO.
+         */
+        public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
+        /**
+         * Avro schema type.
+         */
+        public const SCHEMA_TYPE_AVRO = 'AVRO';
+        /**
+         * JSON schema type.
+         */
+        public const SCHEMA_TYPE_JSON = 'JSON';
+        /**
+         * Protobuf schema type.
+         */
+        public const SCHEMA_TYPE_PROTOBUF = 'PROTOBUF';
+        protected $collection_key = 'references';
+        /**
+         * Optional. If true, soft-deleted versions will be included in lookup, no
+         * matter if the subject is active or soft-deleted. If false, soft-deleted
+         * versions will be excluded. The default is false.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * Optional. If true, the schema will be normalized before being looked up.
+         * The default is false.
+         *
+         * @var bool
+         */
+        public $normalize;
+        protected $referencesType = SchemaReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * Required. The schema payload
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Optional. The schema type of the schema.
+         *
+         * @var string
+         */
+        public $schemaType;
+        /**
+         * Optional. If true, soft-deleted versions will be included in lookup, no
+         * matter if the subject is active or soft-deleted. If false, soft-deleted
+         * versions will be excluded. The default is false.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Optional. If true, the schema will be normalized before being looked up.
+         * The default is false.
+         *
+         * @param bool $normalize
+         */
+        public function setNormalize($normalize)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNormalize()
+        {
+        }
+        /**
+         * Optional. The schema references used by the schema.
+         *
+         * @param SchemaReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return SchemaReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Required. The schema payload
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Optional. The schema type of the schema.
+         *
+         * Accepted values: SCHEMA_TYPE_UNSPECIFIED, AVRO, JSON, PROTOBUF
+         *
+         * @param self::SCHEMA_TYPE_* $schemaType
+         */
+        public function setSchemaType($schemaType)
+        {
+        }
+        /**
+         * @return self::SCHEMA_TYPE_*
+         */
+        public function getSchemaType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ManagedKafka\LookupVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Optional. If true, the schema will be normalized before being looked up.
-     * The default is false.
-     *
-     * @param bool $normalize
-     */
-    public function setNormalize($normalize)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNormalize()
-    {
-    }
-    /**
-     * Optional. The schema references used by the schema.
-     *
-     * @param SchemaReference[] $references
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return SchemaReference[]
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * Required. The schema payload
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * Optional. The schema type of the schema.
-     *
-     * Accepted values: SCHEMA_TYPE_UNSPECIFIED, AVRO, JSON, PROTOBUF
-     *
-     * @param self::SCHEMA_TYPE_* $schemaType
-     */
-    public function setSchemaType($schemaType)
-    {
-    }
-    /**
-     * @return self::SCHEMA_TYPE_*
-     */
-    public function getSchemaType()
+    class Google_Service_ManagedKafka_LookupVersionRequest extends \Google\Service\ManagedKafka\LookupVersionRequest
     {
     }
 }

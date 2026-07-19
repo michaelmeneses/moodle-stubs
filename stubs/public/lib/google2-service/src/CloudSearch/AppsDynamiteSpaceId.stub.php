@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSpaceId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $spaceId;
-    /**
-     * @param string
-     */
-    public function setSpaceId($spaceId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSpaceId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $spaceId;
+        /**
+         * @param string
+         */
+        public function setSpaceId($spaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSpaceId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpaceId()
+    class Google_Service_CloudSearch_AppsDynamiteSpaceId extends \Google\Service\CloudSearch\AppsDynamiteSpaceId
     {
     }
 }

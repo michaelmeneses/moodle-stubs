@@ -21,43 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport\Resource;
-
-/**
- * The "records" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromeuxreportService = new Google\Service\ChromeUXReport(...);
- *   $records = $chromeuxreportService->records;
- *  </code>
- */
-class Records extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeUXReport\Resource {
+    use Google\Service\ChromeUXReport\QueryHistoryRequest;
+    use Google\Service\ChromeUXReport\QueryHistoryResponse;
+    use Google\Service\ChromeUXReport\QueryRequest;
+    use Google\Service\ChromeUXReport\QueryResponse;
     /**
-     * Queries the Chrome User Experience Report for a timeseries `history record`
-     * for a given site. Returns a `history record` that contains one or more
-     * `metric timeseries` corresponding to performance data about the requested
-     * site. (records.queryHistoryRecord)
-     *
-     * @param QueryHistoryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryHistoryResponse
-     * @throws \Google\Service\Exception
+     * The "records" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromeuxreportService = new Google\Service\ChromeUXReport(...);
+     *   $records = $chromeuxreportService->records;
+     *  </code>
      */
-    public function queryHistoryRecord(QueryHistoryRequest $postBody, $optParams = [])
+    class Records extends \Google\Service\Resource
     {
+        /**
+         * Queries the Chrome User Experience Report for a timeseries `history record`
+         * for a given site. Returns a `history record` that contains one or more
+         * `metric timeseries` corresponding to performance data about the requested
+         * site. (records.queryHistoryRecord)
+         *
+         * @param QueryHistoryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryHistoryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function queryHistoryRecord(QueryHistoryRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Queries the Chrome User Experience for a single `record` for a given site.
+         * Returns a `record` that contains one or more `metrics` corresponding to
+         * performance data about the requested site. (records.queryRecord)
+         *
+         * @param QueryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function queryRecord(QueryRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Queries the Chrome User Experience for a single `record` for a given site.
-     * Returns a `record` that contains one or more `metrics` corresponding to
-     * performance data about the requested site. (records.queryRecord)
-     *
-     * @param QueryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromeUXReport\Resource\Records registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function queryRecord(QueryRequest $postBody, $optParams = [])
+    class Google_Service_ChromeUXReport_Resource_Records extends \Google\Service\ChromeUXReport\Resource\Records
     {
     }
 }

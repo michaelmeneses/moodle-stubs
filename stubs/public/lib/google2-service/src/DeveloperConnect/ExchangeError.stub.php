@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class ExchangeError extends \Google\Model
-{
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 - error
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 -
-     * error_description
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 - error
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\DeveloperConnect {
+    class ExchangeError extends \Google\Model
     {
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 - error
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 -
+         * error_description
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 - error
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 -
+         * error_description
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\ExchangeError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc6749#section-5.2 -
-     * error_description
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_DeveloperConnect_ExchangeError extends \Google\Service\DeveloperConnect\ExchangeError
     {
     }
 }

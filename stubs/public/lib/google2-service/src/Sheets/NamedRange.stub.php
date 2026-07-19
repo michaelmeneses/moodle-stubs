@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class NamedRange extends \Google\Model
-{
-    /**
-     * The name of the named range.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The ID of the named range.
-     *
-     * @var string
-     */
-    public $namedRangeId;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The name of the named range.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Sheets {
+    class NamedRange extends \Google\Model
     {
+        /**
+         * The name of the named range.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The ID of the named range.
+         *
+         * @var string
+         */
+        public $namedRangeId;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The name of the named range.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The ID of the named range.
+         *
+         * @param string $namedRangeId
+         */
+        public function setNamedRangeId($namedRangeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamedRangeId()
+        {
+        }
+        /**
+         * The range this represents.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\NamedRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The ID of the named range.
-     *
-     * @param string $namedRangeId
-     */
-    public function setNamedRangeId($namedRangeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamedRangeId()
-    {
-    }
-    /**
-     * The range this represents.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
+    class Google_Service_Sheets_NamedRange extends \Google\Service\Sheets\NamedRange
     {
     }
 }

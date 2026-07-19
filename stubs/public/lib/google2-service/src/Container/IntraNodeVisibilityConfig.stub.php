@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class IntraNodeVisibilityConfig extends \Google\Model
-{
-    /**
-     * Enables intra node visibility for this cluster.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Enables intra node visibility for this cluster.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class IntraNodeVisibilityConfig extends \Google\Model
     {
+        /**
+         * Enables intra node visibility for this cluster.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Enables intra node visibility for this cluster.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\IntraNodeVisibilityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_IntraNodeVisibilityConfig extends \Google\Service\Container\IntraNodeVisibilityConfig
     {
     }
 }

@@ -8,6 +8,36 @@
  */
 namespace Aws\S3\S3Transfer;
 
+use Aws\MetricsBuilder;
+use Aws\ResultInterface;
+use Aws\S3\S3Client;
+use Aws\S3\S3ClientInterface;
+use Aws\S3\S3Transfer\Exception\S3TransferException;
+use Aws\S3\S3Transfer\Models\DownloadDirectoryRequest;
+use Aws\S3\S3Transfer\Models\DownloadDirectoryResult;
+use Aws\S3\S3Transfer\Models\DownloadFileRequest;
+use Aws\S3\S3Transfer\Models\DownloadRequest;
+use Aws\S3\S3Transfer\Models\S3TransferManagerConfig;
+use Aws\S3\S3Transfer\Models\UploadDirectoryRequest;
+use Aws\S3\S3Transfer\Models\UploadDirectoryResult;
+use Aws\S3\S3Transfer\Models\UploadRequest;
+use Aws\S3\S3Transfer\Models\UploadResult;
+use Aws\S3\S3Transfer\Progress\MultiProgressTracker;
+use Aws\S3\S3Transfer\Progress\SingleProgressTracker;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use Aws\S3\S3Transfer\Progress\TransferListenerNotifier;
+use Aws\S3\S3Transfer\Progress\TransferProgressSnapshot;
+use Aws\S3\S3Transfer\Utils\AbstractDownloadHandler;
+use FilesystemIterator;
+use GuzzleHttp\Promise\Each;
+use GuzzleHttp\Promise\PromiseInterface;
+use InvalidArgumentException;
+use Psr\Http\Message\StreamInterface;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use Throwable;
+use function Aws\filter;
+use function Aws\map;
 final class S3TransferManager
 {
     /** @var S3Client  */

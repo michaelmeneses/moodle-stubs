@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "privileges" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $privileges = $adminService->privileges;
- *  </code>
- */
-class Privileges extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Privileges as PrivilegesModel;
     /**
-     * Retrieves a paginated list of all privileges for a customer.
-     * (privileges.listPrivileges)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param array $optParams Optional parameters.
-     * @return PrivilegesModel
-     * @throws \Google\Service\Exception
+     * The "privileges" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $privileges = $adminService->privileges;
+     *  </code>
      */
-    public function listPrivileges($customer, $optParams = [])
+    class Privileges extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a paginated list of all privileges for a customer.
+         * (privileges.listPrivileges)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param array $optParams Optional parameters.
+         * @return PrivilegesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listPrivileges($customer, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\Privileges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_Privileges extends \Google\Service\Directory\Resource\Privileges
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ListLbEdgeExtensionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $lbEdgeExtensionsType = LbEdgeExtension::class;
-    protected $lbEdgeExtensionsDataType = 'array';
-    /**
-     * A token identifying a page of results that the server returns.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of `LbEdgeExtension` resources.
-     *
-     * @param LbEdgeExtension[] $lbEdgeExtensions
-     */
-    public function setLbEdgeExtensions($lbEdgeExtensions)
+namespace Google\Service\NetworkServices {
+    class ListLbEdgeExtensionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $lbEdgeExtensionsType = LbEdgeExtension::class;
+        protected $lbEdgeExtensionsDataType = 'array';
+        /**
+         * A token identifying a page of results that the server returns.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of `LbEdgeExtension` resources.
+         *
+         * @param LbEdgeExtension[] $lbEdgeExtensions
+         */
+        public function setLbEdgeExtensions($lbEdgeExtensions)
+        {
+        }
+        /**
+         * @return LbEdgeExtension[]
+         */
+        public function getLbEdgeExtensions()
+        {
+        }
+        /**
+         * A token identifying a page of results that the server returns.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LbEdgeExtension[]
+     * Runtime class alias of \Google\Service\NetworkServices\ListLbEdgeExtensionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLbEdgeExtensions()
-    {
-    }
-    /**
-     * A token identifying a page of results that the server returns.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkServices_ListLbEdgeExtensionsResponse extends \Google\Service\NetworkServices\ListLbEdgeExtensionsResponse
     {
     }
 }

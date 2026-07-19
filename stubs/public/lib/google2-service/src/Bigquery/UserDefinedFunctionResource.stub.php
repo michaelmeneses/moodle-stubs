@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class UserDefinedFunctionResource extends \Google\Model
-{
-    /**
-     * [Pick one] An inline resource that contains code for a user-defined
-     * function (UDF). Providing a inline code resource is equivalent to providing
-     * a URI for a file containing the same code.
-     *
-     * @var string
-     */
-    public $inlineCode;
-    /**
-     * [Pick one] A code resource to load from a Google Cloud Storage URI
-     * (gs://bucket/path).
-     *
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * [Pick one] An inline resource that contains code for a user-defined
-     * function (UDF). Providing a inline code resource is equivalent to providing
-     * a URI for a file containing the same code.
-     *
-     * @param string $inlineCode
-     */
-    public function setInlineCode($inlineCode)
+namespace Google\Service\Bigquery {
+    class UserDefinedFunctionResource extends \Google\Model
     {
+        /**
+         * [Pick one] An inline resource that contains code for a user-defined
+         * function (UDF). Providing a inline code resource is equivalent to providing
+         * a URI for a file containing the same code.
+         *
+         * @var string
+         */
+        public $inlineCode;
+        /**
+         * [Pick one] A code resource to load from a Google Cloud Storage URI
+         * (gs://bucket/path).
+         *
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * [Pick one] An inline resource that contains code for a user-defined
+         * function (UDF). Providing a inline code resource is equivalent to providing
+         * a URI for a file containing the same code.
+         *
+         * @param string $inlineCode
+         */
+        public function setInlineCode($inlineCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInlineCode()
+        {
+        }
+        /**
+         * [Pick one] A code resource to load from a Google Cloud Storage URI
+         * (gs://bucket/path).
+         *
+         * @param string $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\UserDefinedFunctionResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineCode()
-    {
-    }
-    /**
-     * [Pick one] A code resource to load from a Google Cloud Storage URI
-     * (gs://bucket/path).
-     *
-     * @param string $resourceUri
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
+    class Google_Service_Bigquery_UserDefinedFunctionResource extends \Google\Service\Bigquery\UserDefinedFunctionResource
     {
     }
 }

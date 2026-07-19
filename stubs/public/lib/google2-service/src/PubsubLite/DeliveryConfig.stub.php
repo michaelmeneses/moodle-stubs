@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class DeliveryConfig extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const DELIVERY_REQUIREMENT_DELIVERY_REQUIREMENT_UNSPECIFIED = 'DELIVERY_REQUIREMENT_UNSPECIFIED';
-    /**
-     * The server does not wait for a published message to be successfully written
-     * to storage before delivering it to subscribers.
-     */
-    public const DELIVERY_REQUIREMENT_DELIVER_IMMEDIATELY = 'DELIVER_IMMEDIATELY';
-    /**
-     * The server will not deliver a published message to subscribers until the
-     * message has been successfully written to storage. This will result in
-     * higher end-to-end latency, but consistent delivery.
-     */
-    public const DELIVERY_REQUIREMENT_DELIVER_AFTER_STORED = 'DELIVER_AFTER_STORED';
-    /**
-     * The DeliveryRequirement for this subscription.
-     *
-     * @var string
-     */
-    public $deliveryRequirement;
-    /**
-     * The DeliveryRequirement for this subscription.
-     *
-     * Accepted values: DELIVERY_REQUIREMENT_UNSPECIFIED, DELIVER_IMMEDIATELY,
-     * DELIVER_AFTER_STORED
-     *
-     * @param self::DELIVERY_REQUIREMENT_* $deliveryRequirement
-     */
-    public function setDeliveryRequirement($deliveryRequirement)
+namespace Google\Service\PubsubLite {
+    class DeliveryConfig extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const DELIVERY_REQUIREMENT_DELIVERY_REQUIREMENT_UNSPECIFIED = 'DELIVERY_REQUIREMENT_UNSPECIFIED';
+        /**
+         * The server does not wait for a published message to be successfully written
+         * to storage before delivering it to subscribers.
+         */
+        public const DELIVERY_REQUIREMENT_DELIVER_IMMEDIATELY = 'DELIVER_IMMEDIATELY';
+        /**
+         * The server will not deliver a published message to subscribers until the
+         * message has been successfully written to storage. This will result in
+         * higher end-to-end latency, but consistent delivery.
+         */
+        public const DELIVERY_REQUIREMENT_DELIVER_AFTER_STORED = 'DELIVER_AFTER_STORED';
+        /**
+         * The DeliveryRequirement for this subscription.
+         *
+         * @var string
+         */
+        public $deliveryRequirement;
+        /**
+         * The DeliveryRequirement for this subscription.
+         *
+         * Accepted values: DELIVERY_REQUIREMENT_UNSPECIFIED, DELIVER_IMMEDIATELY,
+         * DELIVER_AFTER_STORED
+         *
+         * @param self::DELIVERY_REQUIREMENT_* $deliveryRequirement
+         */
+        public function setDeliveryRequirement($deliveryRequirement)
+        {
+        }
+        /**
+         * @return self::DELIVERY_REQUIREMENT_*
+         */
+        public function getDeliveryRequirement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DELIVERY_REQUIREMENT_*
+     * Runtime class alias of \Google\Service\PubsubLite\DeliveryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliveryRequirement()
+    class Google_Service_PubsubLite_DeliveryConfig extends \Google\Service\PubsubLite\DeliveryConfig
     {
     }
 }

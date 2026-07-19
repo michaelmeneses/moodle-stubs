@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class ScopedRoutesConfigDump extends \Google\Collection
-{
-    protected $collection_key = 'inlineScopedRouteConfigs';
-    protected $dynamicScopedRouteConfigsType = DynamicScopedRouteConfigs::class;
-    protected $dynamicScopedRouteConfigsDataType = 'array';
-    protected $inlineScopedRouteConfigsType = InlineScopedRouteConfigs::class;
-    protected $inlineScopedRouteConfigsDataType = 'array';
-    /**
-     * The dynamically loaded scoped route configs.
-     *
-     * @param DynamicScopedRouteConfigs[] $dynamicScopedRouteConfigs
-     */
-    public function setDynamicScopedRouteConfigs($dynamicScopedRouteConfigs)
+namespace Google\Service\TrafficDirectorService {
+    class ScopedRoutesConfigDump extends \Google\Collection
     {
+        protected $collection_key = 'inlineScopedRouteConfigs';
+        protected $dynamicScopedRouteConfigsType = DynamicScopedRouteConfigs::class;
+        protected $dynamicScopedRouteConfigsDataType = 'array';
+        protected $inlineScopedRouteConfigsType = InlineScopedRouteConfigs::class;
+        protected $inlineScopedRouteConfigsDataType = 'array';
+        /**
+         * The dynamically loaded scoped route configs.
+         *
+         * @param DynamicScopedRouteConfigs[] $dynamicScopedRouteConfigs
+         */
+        public function setDynamicScopedRouteConfigs($dynamicScopedRouteConfigs)
+        {
+        }
+        /**
+         * @return DynamicScopedRouteConfigs[]
+         */
+        public function getDynamicScopedRouteConfigs()
+        {
+        }
+        /**
+         * The statically loaded scoped route configs.
+         *
+         * @param InlineScopedRouteConfigs[] $inlineScopedRouteConfigs
+         */
+        public function setInlineScopedRouteConfigs($inlineScopedRouteConfigs)
+        {
+        }
+        /**
+         * @return InlineScopedRouteConfigs[]
+         */
+        public function getInlineScopedRouteConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicScopedRouteConfigs[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\ScopedRoutesConfigDump registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicScopedRouteConfigs()
-    {
-    }
-    /**
-     * The statically loaded scoped route configs.
-     *
-     * @param InlineScopedRouteConfigs[] $inlineScopedRouteConfigs
-     */
-    public function setInlineScopedRouteConfigs($inlineScopedRouteConfigs)
-    {
-    }
-    /**
-     * @return InlineScopedRouteConfigs[]
-     */
-    public function getInlineScopedRouteConfigs()
+    class Google_Service_TrafficDirectorService_ScopedRoutesConfigDump extends \Google\Service\TrafficDirectorService\ScopedRoutesConfigDump
     {
     }
 }

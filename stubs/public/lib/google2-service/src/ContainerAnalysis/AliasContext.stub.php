@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class AliasContext extends \Google\Model
-{
-    /**
-     * Unknown.
-     */
-    public const KIND_KIND_UNSPECIFIED = 'KIND_UNSPECIFIED';
-    /**
-     * Git tag.
-     */
-    public const KIND_FIXED = 'FIXED';
-    /**
-     * Git branch.
-     */
-    public const KIND_MOVABLE = 'MOVABLE';
-    /**
-     * Used to specify non-standard aliases. For example, if a Git repo has a ref
-     * named "refs/foo/bar".
-     */
-    public const KIND_OTHER = 'OTHER';
-    /**
-     * The alias kind.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The alias name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The alias kind.
-     *
-     * Accepted values: KIND_UNSPECIFIED, FIXED, MOVABLE, OTHER
-     *
-     * @param self::KIND_* $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ContainerAnalysis {
+    class AliasContext extends \Google\Model
     {
+        /**
+         * Unknown.
+         */
+        public const KIND_KIND_UNSPECIFIED = 'KIND_UNSPECIFIED';
+        /**
+         * Git tag.
+         */
+        public const KIND_FIXED = 'FIXED';
+        /**
+         * Git branch.
+         */
+        public const KIND_MOVABLE = 'MOVABLE';
+        /**
+         * Used to specify non-standard aliases. For example, if a Git repo has a ref
+         * named "refs/foo/bar".
+         */
+        public const KIND_OTHER = 'OTHER';
+        /**
+         * The alias kind.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The alias name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The alias kind.
+         *
+         * Accepted values: KIND_UNSPECIFIED, FIXED, MOVABLE, OTHER
+         *
+         * @param self::KIND_* $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return self::KIND_*
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The alias name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::KIND_*
+     * Runtime class alias of \Google\Service\ContainerAnalysis\AliasContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The alias name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ContainerAnalysis_AliasContext extends \Google\Service\ContainerAnalysis\AliasContext
     {
     }
 }

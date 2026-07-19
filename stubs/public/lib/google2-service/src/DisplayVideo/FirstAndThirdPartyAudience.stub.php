@@ -21,292 +21,301 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class FirstAndThirdPartyAudience extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $activeDisplayAudienceSize;
-    /**
-     * @var string
-     */
-    public $appId;
-    /**
-     * @var string
-     */
-    public $audienceSource;
-    /**
-     * @var string
-     */
-    public $audienceType;
-    protected $contactInfoListType = ContactInfoList::class;
-    protected $contactInfoListDataType = '';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayAudienceSize;
-    /**
-     * @var string
-     */
-    public $displayDesktopAudienceSize;
-    /**
-     * @var string
-     */
-    public $displayMobileAppAudienceSize;
-    /**
-     * @var string
-     */
-    public $displayMobileWebAudienceSize;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $firstAndThirdPartyAudienceId;
-    /**
-     * @var string
-     */
-    public $firstAndThirdPartyAudienceType;
-    /**
-     * @var string
-     */
-    public $gmailAudienceSize;
-    /**
-     * @var string
-     */
-    public $membershipDurationDays;
-    protected $mobileDeviceIdListType = MobileDeviceIdList::class;
-    protected $mobileDeviceIdListDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $youtubeAudienceSize;
-    /**
-     * @param string
-     */
-    public function setActiveDisplayAudienceSize($activeDisplayAudienceSize)
+namespace Google\Service\DisplayVideo {
+    class FirstAndThirdPartyAudience extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $activeDisplayAudienceSize;
+        /**
+         * @var string
+         */
+        public $appId;
+        /**
+         * @var string
+         */
+        public $audienceSource;
+        /**
+         * @var string
+         */
+        public $audienceType;
+        protected $contactInfoListType = ContactInfoList::class;
+        protected $contactInfoListDataType = '';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayAudienceSize;
+        /**
+         * @var string
+         */
+        public $displayDesktopAudienceSize;
+        /**
+         * @var string
+         */
+        public $displayMobileAppAudienceSize;
+        /**
+         * @var string
+         */
+        public $displayMobileWebAudienceSize;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $firstAndThirdPartyAudienceId;
+        /**
+         * @var string
+         */
+        public $firstAndThirdPartyAudienceType;
+        /**
+         * @var string
+         */
+        public $gmailAudienceSize;
+        /**
+         * @var string
+         */
+        public $membershipDurationDays;
+        protected $mobileDeviceIdListType = MobileDeviceIdList::class;
+        protected $mobileDeviceIdListDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $youtubeAudienceSize;
+        /**
+         * @param string
+         */
+        public function setActiveDisplayAudienceSize($activeDisplayAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveDisplayAudienceSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAudienceSource($audienceSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudienceSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAudienceType($audienceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudienceType()
+        {
+        }
+        /**
+         * @param ContactInfoList
+         */
+        public function setContactInfoList(ContactInfoList $contactInfoList)
+        {
+        }
+        /**
+         * @return ContactInfoList
+         */
+        public function getContactInfoList()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayAudienceSize($displayAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayAudienceSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayDesktopAudienceSize($displayDesktopAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayDesktopAudienceSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayMobileAppAudienceSize($displayMobileAppAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayMobileAppAudienceSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayMobileWebAudienceSize($displayMobileWebAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayMobileWebAudienceSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFirstAndThirdPartyAudienceId($firstAndThirdPartyAudienceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstAndThirdPartyAudienceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFirstAndThirdPartyAudienceType($firstAndThirdPartyAudienceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstAndThirdPartyAudienceType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGmailAudienceSize($gmailAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGmailAudienceSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMembershipDurationDays($membershipDurationDays)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembershipDurationDays()
+        {
+        }
+        /**
+         * @param MobileDeviceIdList
+         */
+        public function setMobileDeviceIdList(MobileDeviceIdList $mobileDeviceIdList)
+        {
+        }
+        /**
+         * @return MobileDeviceIdList
+         */
+        public function getMobileDeviceIdList()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setYoutubeAudienceSize($youtubeAudienceSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeAudienceSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\FirstAndThirdPartyAudience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveDisplayAudienceSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAudienceSource($audienceSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAudienceSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAudienceType($audienceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAudienceType()
-    {
-    }
-    /**
-     * @param ContactInfoList
-     */
-    public function setContactInfoList(ContactInfoList $contactInfoList)
-    {
-    }
-    /**
-     * @return ContactInfoList
-     */
-    public function getContactInfoList()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayAudienceSize($displayAudienceSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayAudienceSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayDesktopAudienceSize($displayDesktopAudienceSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayDesktopAudienceSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayMobileAppAudienceSize($displayMobileAppAudienceSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayMobileAppAudienceSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayMobileWebAudienceSize($displayMobileWebAudienceSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayMobileWebAudienceSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFirstAndThirdPartyAudienceId($firstAndThirdPartyAudienceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstAndThirdPartyAudienceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFirstAndThirdPartyAudienceType($firstAndThirdPartyAudienceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstAndThirdPartyAudienceType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGmailAudienceSize($gmailAudienceSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGmailAudienceSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMembershipDurationDays($membershipDurationDays)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMembershipDurationDays()
-    {
-    }
-    /**
-     * @param MobileDeviceIdList
-     */
-    public function setMobileDeviceIdList(MobileDeviceIdList $mobileDeviceIdList)
-    {
-    }
-    /**
-     * @return MobileDeviceIdList
-     */
-    public function getMobileDeviceIdList()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setYoutubeAudienceSize($youtubeAudienceSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYoutubeAudienceSize()
+    class Google_Service_DisplayVideo_FirstAndThirdPartyAudience extends \Google\Service\DisplayVideo\FirstAndThirdPartyAudience
     {
     }
 }

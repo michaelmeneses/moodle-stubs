@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1VideoSegment extends \Google\Model
-{
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * end of the segment (inclusive).
-     *
-     * @var string
-     */
-    public $endTimeOffset;
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * start of the segment (inclusive).
-     *
-     * @var string
-     */
-    public $startTimeOffset;
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * end of the segment (inclusive).
-     *
-     * @param string $endTimeOffset
-     */
-    public function setEndTimeOffset($endTimeOffset)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1VideoSegment extends \Google\Model
     {
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * end of the segment (inclusive).
+         *
+         * @var string
+         */
+        public $endTimeOffset;
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * start of the segment (inclusive).
+         *
+         * @var string
+         */
+        public $startTimeOffset;
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * end of the segment (inclusive).
+         *
+         * @param string $endTimeOffset
+         */
+        public function setEndTimeOffset($endTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeOffset()
+        {
+        }
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * start of the segment (inclusive).
+         *
+         * @param string $startTimeOffset
+         */
+        public function setStartTimeOffset($startTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1VideoSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTimeOffset()
-    {
-    }
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * start of the segment (inclusive).
-     *
-     * @param string $startTimeOffset
-     */
-    public function setStartTimeOffset($startTimeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeOffset()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoSegment extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1VideoSegment
     {
     }
 }

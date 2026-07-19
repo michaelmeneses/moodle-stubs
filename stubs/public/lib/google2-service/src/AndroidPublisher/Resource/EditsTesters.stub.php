@@ -21,60 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "testers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $testers = $androidpublisherService->edits_testers;
- *  </code>
- */
-class EditsTesters extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\Testers;
     /**
-     * Gets testers. Note: Testers resource does not support email lists.
-     * (testers.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $track The track to read from.
-     * @param array $optParams Optional parameters.
-     * @return Testers
-     * @throws \Google\Service\Exception
+     * The "testers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $testers = $androidpublisherService->edits_testers;
+     *  </code>
      */
-    public function get($packageName, $editId, $track, $optParams = [])
+    class EditsTesters extends \Google\Service\Resource
     {
+        /**
+         * Gets testers. Note: Testers resource does not support email lists.
+         * (testers.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $track The track to read from.
+         * @param array $optParams Optional parameters.
+         * @return Testers
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $editId, $track, $optParams = [])
+        {
+        }
+        /**
+         * Patches testers. Note: Testers resource does not support email lists.
+         * (testers.patch)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $track The track to update.
+         * @param Testers $postBody
+         * @param array $optParams Optional parameters.
+         * @return Testers
+         * @throws \Google\Service\Exception
+         */
+        public function patch($packageName, $editId, $track, Testers $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates testers. Note: Testers resource does not support email lists.
+         * (testers.update)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $track The track to update.
+         * @param Testers $postBody
+         * @param array $optParams Optional parameters.
+         * @return Testers
+         * @throws \Google\Service\Exception
+         */
+        public function update($packageName, $editId, $track, Testers $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Patches testers. Note: Testers resource does not support email lists.
-     * (testers.patch)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $track The track to update.
-     * @param Testers $postBody
-     * @param array $optParams Optional parameters.
-     * @return Testers
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsTesters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($packageName, $editId, $track, Testers $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates testers. Note: Testers resource does not support email lists.
-     * (testers.update)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $track The track to update.
-     * @param Testers $postBody
-     * @param array $optParams Optional parameters.
-     * @return Testers
-     * @throws \Google\Service\Exception
-     */
-    public function update($packageName, $editId, $track, Testers $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsTesters extends \Google\Service\AndroidPublisher\Resource\EditsTesters
     {
     }
 }

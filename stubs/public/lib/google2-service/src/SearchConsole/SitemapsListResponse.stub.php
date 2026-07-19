@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class SitemapsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'sitemap';
-    protected $sitemapType = WmxSitemap::class;
-    protected $sitemapDataType = 'array';
-    /**
-     * Contains detailed information about a specific URL submitted as a
-     * [sitemap](https://support.google.com/webmasters/answer/156184).
-     *
-     * @param WmxSitemap[] $sitemap
-     */
-    public function setSitemap($sitemap)
+namespace Google\Service\SearchConsole {
+    class SitemapsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'sitemap';
+        protected $sitemapType = WmxSitemap::class;
+        protected $sitemapDataType = 'array';
+        /**
+         * Contains detailed information about a specific URL submitted as a
+         * [sitemap](https://support.google.com/webmasters/answer/156184).
+         *
+         * @param WmxSitemap[] $sitemap
+         */
+        public function setSitemap($sitemap)
+        {
+        }
+        /**
+         * @return WmxSitemap[]
+         */
+        public function getSitemap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WmxSitemap[]
+     * Runtime class alias of \Google\Service\SearchConsole\SitemapsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSitemap()
+    class Google_Service_SearchConsole_SitemapsListResponse extends \Google\Service\SearchConsole\SitemapsListResponse
     {
     }
 }

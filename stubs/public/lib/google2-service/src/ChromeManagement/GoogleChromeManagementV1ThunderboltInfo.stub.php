@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ThunderboltInfo extends \Google\Model
-{
-    /**
-     * Thunderbolt security level is not set.
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_LEVEL_UNSPECIFIED = 'THUNDERBOLT_SECURITY_LEVEL_UNSPECIFIED';
-    /**
-     * All devices are automatically connected by the firmware. No user approval
-     * is needed.
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_NONE_LEVEL = 'THUNDERBOLT_SECURITY_NONE_LEVEL';
-    /**
-     * User is asked whether the device is allowed to be connected.
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_USER_LEVEL = 'THUNDERBOLT_SECURITY_USER_LEVEL';
-    /**
-     * User is asked whether the device is allowed to be connected. In addition
-     * the device is sent a challenge that should match the expected one based on
-     * a random key written to the key sysfs attribute
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_SECURE_LEVEL = 'THUNDERBOLT_SECURITY_SECURE_LEVEL';
-    /**
-     * The firmware automatically creates tunnels for Thunderbolt.
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_DP_ONLY_LEVEL = 'THUNDERBOLT_SECURITY_DP_ONLY_LEVEL';
-    /**
-     * The firmware automatically creates tunnels for the USB controller and
-     * Display Port in a dock. All PCIe links downstream of the dock are removed.
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_USB_ONLY_LEVEL = 'THUNDERBOLT_SECURITY_USB_ONLY_LEVEL';
-    /**
-     * PCIE tunneling is disabled.
-     */
-    public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_NO_PCIE_LEVEL = 'THUNDERBOLT_SECURITY_NO_PCIE_LEVEL';
-    /**
-     * Security level of the Thunderbolt bus.
-     *
-     * @var string
-     */
-    public $securityLevel;
-    /**
-     * Security level of the Thunderbolt bus.
-     *
-     * Accepted values: THUNDERBOLT_SECURITY_LEVEL_UNSPECIFIED,
-     * THUNDERBOLT_SECURITY_NONE_LEVEL, THUNDERBOLT_SECURITY_USER_LEVEL,
-     * THUNDERBOLT_SECURITY_SECURE_LEVEL, THUNDERBOLT_SECURITY_DP_ONLY_LEVEL,
-     * THUNDERBOLT_SECURITY_USB_ONLY_LEVEL, THUNDERBOLT_SECURITY_NO_PCIE_LEVEL
-     *
-     * @param self::SECURITY_LEVEL_* $securityLevel
-     */
-    public function setSecurityLevel($securityLevel)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ThunderboltInfo extends \Google\Model
     {
+        /**
+         * Thunderbolt security level is not set.
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_LEVEL_UNSPECIFIED = 'THUNDERBOLT_SECURITY_LEVEL_UNSPECIFIED';
+        /**
+         * All devices are automatically connected by the firmware. No user approval
+         * is needed.
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_NONE_LEVEL = 'THUNDERBOLT_SECURITY_NONE_LEVEL';
+        /**
+         * User is asked whether the device is allowed to be connected.
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_USER_LEVEL = 'THUNDERBOLT_SECURITY_USER_LEVEL';
+        /**
+         * User is asked whether the device is allowed to be connected. In addition
+         * the device is sent a challenge that should match the expected one based on
+         * a random key written to the key sysfs attribute
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_SECURE_LEVEL = 'THUNDERBOLT_SECURITY_SECURE_LEVEL';
+        /**
+         * The firmware automatically creates tunnels for Thunderbolt.
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_DP_ONLY_LEVEL = 'THUNDERBOLT_SECURITY_DP_ONLY_LEVEL';
+        /**
+         * The firmware automatically creates tunnels for the USB controller and
+         * Display Port in a dock. All PCIe links downstream of the dock are removed.
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_USB_ONLY_LEVEL = 'THUNDERBOLT_SECURITY_USB_ONLY_LEVEL';
+        /**
+         * PCIE tunneling is disabled.
+         */
+        public const SECURITY_LEVEL_THUNDERBOLT_SECURITY_NO_PCIE_LEVEL = 'THUNDERBOLT_SECURITY_NO_PCIE_LEVEL';
+        /**
+         * Security level of the Thunderbolt bus.
+         *
+         * @var string
+         */
+        public $securityLevel;
+        /**
+         * Security level of the Thunderbolt bus.
+         *
+         * Accepted values: THUNDERBOLT_SECURITY_LEVEL_UNSPECIFIED,
+         * THUNDERBOLT_SECURITY_NONE_LEVEL, THUNDERBOLT_SECURITY_USER_LEVEL,
+         * THUNDERBOLT_SECURITY_SECURE_LEVEL, THUNDERBOLT_SECURITY_DP_ONLY_LEVEL,
+         * THUNDERBOLT_SECURITY_USB_ONLY_LEVEL, THUNDERBOLT_SECURITY_NO_PCIE_LEVEL
+         *
+         * @param self::SECURITY_LEVEL_* $securityLevel
+         */
+        public function setSecurityLevel($securityLevel)
+        {
+        }
+        /**
+         * @return self::SECURITY_LEVEL_*
+         */
+        public function getSecurityLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SECURITY_LEVEL_*
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ThunderboltInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityLevel()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ThunderboltInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ThunderboltInfo
     {
     }
 }

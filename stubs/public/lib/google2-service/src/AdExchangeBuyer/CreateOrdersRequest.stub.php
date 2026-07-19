@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreateOrdersRequest extends \Google\Collection
-{
-    protected $collection_key = 'proposals';
-    protected $proposalsType = Proposal::class;
-    protected $proposalsDataType = 'array';
-    public $webPropertyCode;
+namespace Google\Service\AdExchangeBuyer {
+    class CreateOrdersRequest extends \Google\Collection
+    {
+        protected $collection_key = 'proposals';
+        protected $proposalsType = Proposal::class;
+        protected $proposalsDataType = 'array';
+        public $webPropertyCode;
+        /**
+         * @param Proposal[]
+         */
+        public function setProposals($proposals)
+        {
+        }
+        /**
+         * @return Proposal[]
+         */
+        public function getProposals()
+        {
+        }
+        public function setWebPropertyCode($webPropertyCode)
+        {
+        }
+        public function getWebPropertyCode()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Proposal[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreateOrdersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setProposals($proposals)
-    {
-    }
-    /**
-     * @return Proposal[]
-     */
-    public function getProposals()
-    {
-    }
-    public function setWebPropertyCode($webPropertyCode)
-    {
-    }
-    public function getWebPropertyCode()
+    class Google_Service_AdExchangeBuyer_CreateOrdersRequest extends \Google\Service\AdExchangeBuyer\CreateOrdersRequest
     {
     }
 }

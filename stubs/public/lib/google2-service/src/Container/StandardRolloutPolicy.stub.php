@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class StandardRolloutPolicy extends \Google\Model
-{
-    /**
-     * Number of blue nodes to drain in a batch.
-     *
-     * @var int
-     */
-    public $batchNodeCount;
-    /**
-     * Percentage of the blue pool nodes to drain in a batch. The range of this
-     * field should be (0.0, 1.0].
-     *
-     * @var float
-     */
-    public $batchPercentage;
-    /**
-     * Soak time after each batch gets drained. Default to zero.
-     *
-     * @var string
-     */
-    public $batchSoakDuration;
-    /**
-     * Number of blue nodes to drain in a batch.
-     *
-     * @param int $batchNodeCount
-     */
-    public function setBatchNodeCount($batchNodeCount)
+namespace Google\Service\Container {
+    class StandardRolloutPolicy extends \Google\Model
     {
+        /**
+         * Number of blue nodes to drain in a batch.
+         *
+         * @var int
+         */
+        public $batchNodeCount;
+        /**
+         * Percentage of the blue pool nodes to drain in a batch. The range of this
+         * field should be (0.0, 1.0].
+         *
+         * @var float
+         */
+        public $batchPercentage;
+        /**
+         * Soak time after each batch gets drained. Default to zero.
+         *
+         * @var string
+         */
+        public $batchSoakDuration;
+        /**
+         * Number of blue nodes to drain in a batch.
+         *
+         * @param int $batchNodeCount
+         */
+        public function setBatchNodeCount($batchNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBatchNodeCount()
+        {
+        }
+        /**
+         * Percentage of the blue pool nodes to drain in a batch. The range of this
+         * field should be (0.0, 1.0].
+         *
+         * @param float $batchPercentage
+         */
+        public function setBatchPercentage($batchPercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBatchPercentage()
+        {
+        }
+        /**
+         * Soak time after each batch gets drained. Default to zero.
+         *
+         * @param string $batchSoakDuration
+         */
+        public function setBatchSoakDuration($batchSoakDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchSoakDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Container\StandardRolloutPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchNodeCount()
-    {
-    }
-    /**
-     * Percentage of the blue pool nodes to drain in a batch. The range of this
-     * field should be (0.0, 1.0].
-     *
-     * @param float $batchPercentage
-     */
-    public function setBatchPercentage($batchPercentage)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBatchPercentage()
-    {
-    }
-    /**
-     * Soak time after each batch gets drained. Default to zero.
-     *
-     * @param string $batchSoakDuration
-     */
-    public function setBatchSoakDuration($batchSoakDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchSoakDuration()
+    class Google_Service_Container_StandardRolloutPolicy extends \Google\Service\Container\StandardRolloutPolicy
     {
     }
 }

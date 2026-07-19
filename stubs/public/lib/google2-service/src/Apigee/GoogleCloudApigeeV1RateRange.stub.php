@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RateRange extends \Google\Model
-{
-    /**
-     * Ending value of the range. Set to 0 or `null` for the last range of values.
-     *
-     * @var string
-     */
-    public $end;
-    protected $feeType = GoogleTypeMoney::class;
-    protected $feeDataType = '';
-    /**
-     * Starting value of the range. Set to 0 or `null` for the initial range of
-     * values.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Ending value of the range. Set to 0 or `null` for the last range of values.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RateRange extends \Google\Model
     {
+        /**
+         * Ending value of the range. Set to 0 or `null` for the last range of values.
+         *
+         * @var string
+         */
+        public $end;
+        protected $feeType = GoogleTypeMoney::class;
+        protected $feeDataType = '';
+        /**
+         * Starting value of the range. Set to 0 or `null` for the initial range of
+         * values.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Ending value of the range. Set to 0 or `null` for the last range of values.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Fee to charge when total number of API calls falls within this range.
+         *
+         * @param GoogleTypeMoney $fee
+         */
+        public function setFee(GoogleTypeMoney $fee)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getFee()
+        {
+        }
+        /**
+         * Starting value of the range. Set to 0 or `null` for the initial range of
+         * values.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Fee to charge when total number of API calls falls within this range.
-     *
-     * @param GoogleTypeMoney $fee
-     */
-    public function setFee(GoogleTypeMoney $fee)
-    {
-    }
-    /**
-     * @return GoogleTypeMoney
-     */
-    public function getFee()
-    {
-    }
-    /**
-     * Starting value of the range. Set to 0 or `null` for the initial range of
-     * values.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RateRange extends \Google\Service\Apigee\GoogleCloudApigeeV1RateRange
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ListSnapshotsResponse extends \Google\Collection
-{
-    protected $collection_key = 'snapshots';
-    /**
-     * Optional. If not empty, indicates that there may be more snapshot that
-     * match the request; this value should be passed in a new
-     * `ListSnapshotsRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $snapshotsType = Snapshot::class;
-    protected $snapshotsDataType = 'array';
-    /**
-     * Optional. If not empty, indicates that there may be more snapshot that
-     * match the request; this value should be passed in a new
-     * `ListSnapshotsRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Pubsub {
+    class ListSnapshotsResponse extends \Google\Collection
     {
+        protected $collection_key = 'snapshots';
+        /**
+         * Optional. If not empty, indicates that there may be more snapshot that
+         * match the request; this value should be passed in a new
+         * `ListSnapshotsRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $snapshotsType = Snapshot::class;
+        protected $snapshotsDataType = 'array';
+        /**
+         * Optional. If not empty, indicates that there may be more snapshot that
+         * match the request; this value should be passed in a new
+         * `ListSnapshotsRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Optional. The resulting snapshots.
+         *
+         * @param Snapshot[] $snapshots
+         */
+        public function setSnapshots($snapshots)
+        {
+        }
+        /**
+         * @return Snapshot[]
+         */
+        public function getSnapshots()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ListSnapshotsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Optional. The resulting snapshots.
-     *
-     * @param Snapshot[] $snapshots
-     */
-    public function setSnapshots($snapshots)
-    {
-    }
-    /**
-     * @return Snapshot[]
-     */
-    public function getSnapshots()
+    class Google_Service_Pubsub_ListSnapshotsResponse extends \Google\Service\Pubsub\ListSnapshotsResponse
     {
     }
 }

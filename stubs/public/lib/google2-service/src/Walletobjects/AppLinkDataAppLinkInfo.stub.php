@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class AppLinkDataAppLinkInfo extends \Google\Model
-{
-    protected $appLogoImageType = Image::class;
-    protected $appLogoImageDataType = '';
-    protected $appTargetType = AppLinkDataAppLinkInfoAppTarget::class;
-    protected $appTargetDataType = '';
-    protected $descriptionType = LocalizedString::class;
-    protected $descriptionDataType = '';
-    protected $titleType = LocalizedString::class;
-    protected $titleDataType = '';
-    /**
-     * Deprecated. Image isn't supported in the app link module.
-     *
-     * @deprecated
-     * @param Image $appLogoImage
-     */
-    public function setAppLogoImage(Image $appLogoImage)
+namespace Google\Service\Walletobjects {
+    class AppLinkDataAppLinkInfo extends \Google\Model
     {
+        protected $appLogoImageType = Image::class;
+        protected $appLogoImageDataType = '';
+        protected $appTargetType = AppLinkDataAppLinkInfoAppTarget::class;
+        protected $appTargetDataType = '';
+        protected $descriptionType = LocalizedString::class;
+        protected $descriptionDataType = '';
+        protected $titleType = LocalizedString::class;
+        protected $titleDataType = '';
+        /**
+         * Deprecated. Image isn't supported in the app link module.
+         *
+         * @deprecated
+         * @param Image $appLogoImage
+         */
+        public function setAppLogoImage(Image $appLogoImage)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Image
+         */
+        public function getAppLogoImage()
+        {
+        }
+        /**
+         * Target to follow when opening the app link on clients. It will be used by
+         * partners to open their app or webpage.
+         *
+         * @param AppLinkDataAppLinkInfoAppTarget $appTarget
+         */
+        public function setAppTarget(AppLinkDataAppLinkInfoAppTarget $appTarget)
+        {
+        }
+        /**
+         * @return AppLinkDataAppLinkInfoAppTarget
+         */
+        public function getAppTarget()
+        {
+        }
+        /**
+         * Deprecated. Description isn't supported in the app link module.
+         *
+         * @deprecated
+         * @param LocalizedString $description
+         */
+        public function setDescription(LocalizedString $description)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedString
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Deprecated. Title isn't supported in the app link module.
+         *
+         * @deprecated
+         * @param LocalizedString $title
+         */
+        public function setTitle(LocalizedString $title)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedString
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Image
+     * Runtime class alias of \Google\Service\Walletobjects\AppLinkDataAppLinkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppLogoImage()
-    {
-    }
-    /**
-     * Target to follow when opening the app link on clients. It will be used by
-     * partners to open their app or webpage.
-     *
-     * @param AppLinkDataAppLinkInfoAppTarget $appTarget
-     */
-    public function setAppTarget(AppLinkDataAppLinkInfoAppTarget $appTarget)
-    {
-    }
-    /**
-     * @return AppLinkDataAppLinkInfoAppTarget
-     */
-    public function getAppTarget()
-    {
-    }
-    /**
-     * Deprecated. Description isn't supported in the app link module.
-     *
-     * @deprecated
-     * @param LocalizedString $description
-     */
-    public function setDescription(LocalizedString $description)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedString
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Deprecated. Title isn't supported in the app link module.
-     *
-     * @deprecated
-     * @param LocalizedString $title
-     */
-    public function setTitle(LocalizedString $title)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedString
-     */
-    public function getTitle()
+    class Google_Service_Walletobjects_AppLinkDataAppLinkInfo extends \Google\Service\Walletobjects\AppLinkDataAppLinkInfo
     {
     }
 }

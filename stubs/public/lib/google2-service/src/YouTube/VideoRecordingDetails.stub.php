@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoRecordingDetails extends \Google\Model
-{
-    protected $locationType = GeoPoint::class;
-    protected $locationDataType = '';
-    /**
-     * The text description of the location where the video was recorded.
-     *
-     * @var string
-     */
-    public $locationDescription;
-    /**
-     * The date and time when the video was recorded.
-     *
-     * @var string
-     */
-    public $recordingDate;
-    /**
-     * The geolocation information associated with the video.
-     *
-     * @param GeoPoint $location
-     */
-    public function setLocation(GeoPoint $location)
+namespace Google\Service\YouTube {
+    class VideoRecordingDetails extends \Google\Model
     {
+        protected $locationType = GeoPoint::class;
+        protected $locationDataType = '';
+        /**
+         * The text description of the location where the video was recorded.
+         *
+         * @var string
+         */
+        public $locationDescription;
+        /**
+         * The date and time when the video was recorded.
+         *
+         * @var string
+         */
+        public $recordingDate;
+        /**
+         * The geolocation information associated with the video.
+         *
+         * @param GeoPoint $location
+         */
+        public function setLocation(GeoPoint $location)
+        {
+        }
+        /**
+         * @return GeoPoint
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The text description of the location where the video was recorded.
+         *
+         * @param string $locationDescription
+         */
+        public function setLocationDescription($locationDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationDescription()
+        {
+        }
+        /**
+         * The date and time when the video was recorded.
+         *
+         * @param string $recordingDate
+         */
+        public function setRecordingDate($recordingDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordingDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeoPoint
+     * Runtime class alias of \Google\Service\YouTube\VideoRecordingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The text description of the location where the video was recorded.
-     *
-     * @param string $locationDescription
-     */
-    public function setLocationDescription($locationDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationDescription()
-    {
-    }
-    /**
-     * The date and time when the video was recorded.
-     *
-     * @param string $recordingDate
-     */
-    public function setRecordingDate($recordingDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordingDate()
+    class Google_Service_YouTube_VideoRecordingDetails extends \Google\Service\YouTube\VideoRecordingDetails
     {
     }
 }

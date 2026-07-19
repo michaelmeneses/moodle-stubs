@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class ListViolationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'violations';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Workloads that could not be reached due to permission errors or any other
-     * error. Ref: https://google.aip.dev/217
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $violationsType = Violation::class;
-    protected $violationsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudControlsPartnerService {
+    class ListViolationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'violations';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Workloads that could not be reached due to permission errors or any other
+         * error. Ref: https://google.aip.dev/217
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $violationsType = Violation::class;
+        protected $violationsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Workloads that could not be reached due to permission errors or any other
+         * error. Ref: https://google.aip.dev/217
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * List of violation
+         *
+         * @param Violation[] $violations
+         */
+        public function setViolations($violations)
+        {
+        }
+        /**
+         * @return Violation[]
+         */
+        public function getViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\ListViolationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Workloads that could not be reached due to permission errors or any other
-     * error. Ref: https://google.aip.dev/217
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * List of violation
-     *
-     * @param Violation[] $violations
-     */
-    public function setViolations($violations)
-    {
-    }
-    /**
-     * @return Violation[]
-     */
-    public function getViolations()
+    class Google_Service_CloudControlsPartnerService_ListViolationsResponse extends \Google\Service\CloudControlsPartnerService\ListViolationsResponse
     {
     }
 }

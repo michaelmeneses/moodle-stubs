@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class QuotaProperties extends \Google\Model
-{
-    public $quotaMode;
-    public function setQuotaMode($quotaMode)
+namespace Google\Service\Networkconnectivity {
+    class QuotaProperties extends \Google\Model
     {
+        public $quotaMode;
+        public function setQuotaMode($quotaMode)
+        {
+        }
+        public function getQuotaMode()
+        {
+        }
     }
-    public function getQuotaMode()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\QuotaProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_QuotaProperties extends \Google\Service\Networkconnectivity\QuotaProperties
     {
     }
 }

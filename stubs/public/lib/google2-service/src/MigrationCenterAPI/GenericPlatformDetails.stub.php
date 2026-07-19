@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GenericPlatformDetails extends \Google\Model
-{
-    /**
-     * Simultaneous Multithreading status unknown.
-     */
-    public const HYPERTHREADING_HYPERTHREADING_STATUS_UNSPECIFIED = 'HYPERTHREADING_STATUS_UNSPECIFIED';
-    /**
-     * Simultaneous Multithreading is disabled or unavailable.
-     */
-    public const HYPERTHREADING_HYPERTHREADING_STATUS_DISABLED = 'HYPERTHREADING_STATUS_DISABLED';
-    /**
-     * Simultaneous Multithreading is enabled.
-     */
-    public const HYPERTHREADING_HYPERTHREADING_STATUS_ENABLED = 'HYPERTHREADING_STATUS_ENABLED';
-    /**
-     * Whether the machine is hyperthreaded.
-     *
-     * @var string
-     */
-    public $hyperthreading;
-    /**
-     * Free text representation of the machine location. The format of this field
-     * should not be relied on. Different VMs in the same location may have
-     * different string values for this field.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Whether the machine is hyperthreaded.
-     *
-     * Accepted values: HYPERTHREADING_STATUS_UNSPECIFIED,
-     * HYPERTHREADING_STATUS_DISABLED, HYPERTHREADING_STATUS_ENABLED
-     *
-     * @param self::HYPERTHREADING_* $hyperthreading
-     */
-    public function setHyperthreading($hyperthreading)
+namespace Google\Service\MigrationCenterAPI {
+    class GenericPlatformDetails extends \Google\Model
     {
+        /**
+         * Simultaneous Multithreading status unknown.
+         */
+        public const HYPERTHREADING_HYPERTHREADING_STATUS_UNSPECIFIED = 'HYPERTHREADING_STATUS_UNSPECIFIED';
+        /**
+         * Simultaneous Multithreading is disabled or unavailable.
+         */
+        public const HYPERTHREADING_HYPERTHREADING_STATUS_DISABLED = 'HYPERTHREADING_STATUS_DISABLED';
+        /**
+         * Simultaneous Multithreading is enabled.
+         */
+        public const HYPERTHREADING_HYPERTHREADING_STATUS_ENABLED = 'HYPERTHREADING_STATUS_ENABLED';
+        /**
+         * Whether the machine is hyperthreaded.
+         *
+         * @var string
+         */
+        public $hyperthreading;
+        /**
+         * Free text representation of the machine location. The format of this field
+         * should not be relied on. Different VMs in the same location may have
+         * different string values for this field.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Whether the machine is hyperthreaded.
+         *
+         * Accepted values: HYPERTHREADING_STATUS_UNSPECIFIED,
+         * HYPERTHREADING_STATUS_DISABLED, HYPERTHREADING_STATUS_ENABLED
+         *
+         * @param self::HYPERTHREADING_* $hyperthreading
+         */
+        public function setHyperthreading($hyperthreading)
+        {
+        }
+        /**
+         * @return self::HYPERTHREADING_*
+         */
+        public function getHyperthreading()
+        {
+        }
+        /**
+         * Free text representation of the machine location. The format of this field
+         * should not be relied on. Different VMs in the same location may have
+         * different string values for this field.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::HYPERTHREADING_*
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GenericPlatformDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHyperthreading()
-    {
-    }
-    /**
-     * Free text representation of the machine location. The format of this field
-     * should not be relied on. Different VMs in the same location may have
-     * different string values for this field.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_MigrationCenterAPI_GenericPlatformDetails extends \Google\Service\MigrationCenterAPI\GenericPlatformDetails
     {
     }
 }

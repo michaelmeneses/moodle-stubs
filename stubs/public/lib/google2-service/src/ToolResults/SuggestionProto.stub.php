@@ -21,214 +21,223 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class SuggestionProto extends \Google\Model
-{
-    public const PRIORITY_unknownPriority = 'unknownPriority';
-    public const PRIORITY_error = 'error';
-    public const PRIORITY_warning = 'warning';
-    public const PRIORITY_info = 'info';
-    /**
-     * Reference to a help center article concerning this type of suggestion.
-     * Always set.
-     *
-     * @var string
-     */
-    public $helpUrl;
-    protected $longMessageType = SafeHtmlProto::class;
-    protected $longMessageDataType = '';
-    /**
-     * Relative importance of a suggestion. Always set.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * A somewhat human readable identifier of the source view, if it does not
-     * have a resource_name. This is a path within the accessibility hierarchy, an
-     * element with resource name; similar to an XPath.
-     *
-     * @var string
-     */
-    public $pseudoResourceId;
-    protected $regionType = RegionProto::class;
-    protected $regionDataType = '';
-    /**
-     * Reference to a view element, identified by its resource name, if it has
-     * one.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * ID of the screen for the suggestion. It is used for getting the
-     * corresponding screenshot path. For example, screen_id "1" corresponds to
-     * "1.png" file in GCS. Always set.
-     *
-     * @var string
-     */
-    public $screenId;
-    /**
-     * Relative importance of a suggestion as compared with other suggestions that
-     * have the same priority and category. This is a meaningless value that can
-     * be used to order suggestions that are in the same category and have the
-     * same priority. The larger values have higher priority (i.e., are more
-     * important). Optional.
-     *
-     * @var 
-     */
-    public $secondaryPriority;
-    protected $shortMessageType = SafeHtmlProto::class;
-    protected $shortMessageDataType = '';
-    /**
-     * General title for the suggestion, in the user's language, without markup.
-     * Always set.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Reference to a help center article concerning this type of suggestion.
-     * Always set.
-     *
-     * @param string $helpUrl
-     */
-    public function setHelpUrl($helpUrl)
+namespace Google\Service\ToolResults {
+    class SuggestionProto extends \Google\Model
     {
+        public const PRIORITY_unknownPriority = 'unknownPriority';
+        public const PRIORITY_error = 'error';
+        public const PRIORITY_warning = 'warning';
+        public const PRIORITY_info = 'info';
+        /**
+         * Reference to a help center article concerning this type of suggestion.
+         * Always set.
+         *
+         * @var string
+         */
+        public $helpUrl;
+        protected $longMessageType = SafeHtmlProto::class;
+        protected $longMessageDataType = '';
+        /**
+         * Relative importance of a suggestion. Always set.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * A somewhat human readable identifier of the source view, if it does not
+         * have a resource_name. This is a path within the accessibility hierarchy, an
+         * element with resource name; similar to an XPath.
+         *
+         * @var string
+         */
+        public $pseudoResourceId;
+        protected $regionType = RegionProto::class;
+        protected $regionDataType = '';
+        /**
+         * Reference to a view element, identified by its resource name, if it has
+         * one.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * ID of the screen for the suggestion. It is used for getting the
+         * corresponding screenshot path. For example, screen_id "1" corresponds to
+         * "1.png" file in GCS. Always set.
+         *
+         * @var string
+         */
+        public $screenId;
+        /**
+         * Relative importance of a suggestion as compared with other suggestions that
+         * have the same priority and category. This is a meaningless value that can
+         * be used to order suggestions that are in the same category and have the
+         * same priority. The larger values have higher priority (i.e., are more
+         * important). Optional.
+         *
+         * @var 
+         */
+        public $secondaryPriority;
+        protected $shortMessageType = SafeHtmlProto::class;
+        protected $shortMessageDataType = '';
+        /**
+         * General title for the suggestion, in the user's language, without markup.
+         * Always set.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Reference to a help center article concerning this type of suggestion.
+         * Always set.
+         *
+         * @param string $helpUrl
+         */
+        public function setHelpUrl($helpUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelpUrl()
+        {
+        }
+        /**
+         * Message, in the user's language, explaining the suggestion, which may
+         * contain markup. Always set.
+         *
+         * @param SafeHtmlProto $longMessage
+         */
+        public function setLongMessage(SafeHtmlProto $longMessage)
+        {
+        }
+        /**
+         * @return SafeHtmlProto
+         */
+        public function getLongMessage()
+        {
+        }
+        /**
+         * Relative importance of a suggestion. Always set.
+         *
+         * Accepted values: unknownPriority, error, warning, info
+         *
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * A somewhat human readable identifier of the source view, if it does not
+         * have a resource_name. This is a path within the accessibility hierarchy, an
+         * element with resource name; similar to an XPath.
+         *
+         * @param string $pseudoResourceId
+         */
+        public function setPseudoResourceId($pseudoResourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPseudoResourceId()
+        {
+        }
+        /**
+         * Region within the screenshot that is relevant to this suggestion. Optional.
+         *
+         * @param RegionProto $region
+         */
+        public function setRegion(RegionProto $region)
+        {
+        }
+        /**
+         * @return RegionProto
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Reference to a view element, identified by its resource name, if it has
+         * one.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * ID of the screen for the suggestion. It is used for getting the
+         * corresponding screenshot path. For example, screen_id "1" corresponds to
+         * "1.png" file in GCS. Always set.
+         *
+         * @param string $screenId
+         */
+        public function setScreenId($screenId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenId()
+        {
+        }
+        public function setSecondaryPriority($secondaryPriority)
+        {
+        }
+        public function getSecondaryPriority()
+        {
+        }
+        /**
+         * Concise message, in the user's language, representing the suggestion, which
+         * may contain markup. Always set.
+         *
+         * @param SafeHtmlProto $shortMessage
+         */
+        public function setShortMessage(SafeHtmlProto $shortMessage)
+        {
+        }
+        /**
+         * @return SafeHtmlProto
+         */
+        public function getShortMessage()
+        {
+        }
+        /**
+         * General title for the suggestion, in the user's language, without markup.
+         * Always set.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\SuggestionProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHelpUrl()
-    {
-    }
-    /**
-     * Message, in the user's language, explaining the suggestion, which may
-     * contain markup. Always set.
-     *
-     * @param SafeHtmlProto $longMessage
-     */
-    public function setLongMessage(SafeHtmlProto $longMessage)
-    {
-    }
-    /**
-     * @return SafeHtmlProto
-     */
-    public function getLongMessage()
-    {
-    }
-    /**
-     * Relative importance of a suggestion. Always set.
-     *
-     * Accepted values: unknownPriority, error, warning, info
-     *
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return self::PRIORITY_*
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * A somewhat human readable identifier of the source view, if it does not
-     * have a resource_name. This is a path within the accessibility hierarchy, an
-     * element with resource name; similar to an XPath.
-     *
-     * @param string $pseudoResourceId
-     */
-    public function setPseudoResourceId($pseudoResourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPseudoResourceId()
-    {
-    }
-    /**
-     * Region within the screenshot that is relevant to this suggestion. Optional.
-     *
-     * @param RegionProto $region
-     */
-    public function setRegion(RegionProto $region)
-    {
-    }
-    /**
-     * @return RegionProto
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Reference to a view element, identified by its resource name, if it has
-     * one.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * ID of the screen for the suggestion. It is used for getting the
-     * corresponding screenshot path. For example, screen_id "1" corresponds to
-     * "1.png" file in GCS. Always set.
-     *
-     * @param string $screenId
-     */
-    public function setScreenId($screenId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScreenId()
-    {
-    }
-    public function setSecondaryPriority($secondaryPriority)
-    {
-    }
-    public function getSecondaryPriority()
-    {
-    }
-    /**
-     * Concise message, in the user's language, representing the suggestion, which
-     * may contain markup. Always set.
-     *
-     * @param SafeHtmlProto $shortMessage
-     */
-    public function setShortMessage(SafeHtmlProto $shortMessage)
-    {
-    }
-    /**
-     * @return SafeHtmlProto
-     */
-    public function getShortMessage()
-    {
-    }
-    /**
-     * General title for the suggestion, in the user's language, without markup.
-     * Always set.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_ToolResults_SuggestionProto extends \Google\Service\ToolResults\SuggestionProto
     {
     }
 }

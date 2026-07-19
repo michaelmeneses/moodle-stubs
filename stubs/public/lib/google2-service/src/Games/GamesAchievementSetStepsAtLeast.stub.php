@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class GamesAchievementSetStepsAtLeast extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#GamesAchievementSetStepsAtLeast`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The minimum number of steps for the achievement to be set to.
-     *
-     * @var int
-     */
-    public $steps;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#GamesAchievementSetStepsAtLeast`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class GamesAchievementSetStepsAtLeast extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#GamesAchievementSetStepsAtLeast`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The minimum number of steps for the achievement to be set to.
+         *
+         * @var int
+         */
+        public $steps;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#GamesAchievementSetStepsAtLeast`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The minimum number of steps for the achievement to be set to.
+         *
+         * @param int $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\GamesAchievementSetStepsAtLeast registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The minimum number of steps for the achievement to be set to.
-     *
-     * @param int $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSteps()
+    class Google_Service_Games_GamesAchievementSetStepsAtLeast extends \Google\Service\Games\GamesAchievementSetStepsAtLeast
     {
     }
 }

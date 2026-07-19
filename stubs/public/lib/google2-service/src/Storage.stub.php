@@ -21,55 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Storage (v1).
- *
- * <p>
- * Stores and retrieves potentially large, immutable data objects.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/storage/docs/json_api/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Storage extends \Google\Service
-{
-    /** View and manage your data across Google Cloud Platform services. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud Platform services. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    /** Manage your data and permissions in Google Cloud Storage. */
-    const DEVSTORAGE_FULL_CONTROL = "https://www.googleapis.com/auth/devstorage.full_control";
-    /** View your data in Google Cloud Storage. */
-    const DEVSTORAGE_READ_ONLY = "https://www.googleapis.com/auth/devstorage.read_only";
-    /** Manage your data in Google Cloud Storage. */
-    const DEVSTORAGE_READ_WRITE = "https://www.googleapis.com/auth/devstorage.read_write";
-    public $anywhereCaches;
-    public $bucketAccessControls;
-    public $buckets;
-    public $channels;
-    public $defaultObjectAccessControls;
-    public $folders;
-    public $managedFolders;
-    public $notifications;
-    public $objectAccessControls;
-    public $objects;
-    public $operations;
-    public $projects_hmacKeys;
-    public $projects_serviceAccount;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Storage service.
+     * Service definition for Storage (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Stores and retrieves potentially large, immutable data objects.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/storage/docs/json_api/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Storage extends \Google\Service
+    {
+        /** View and manage your data across Google Cloud Platform services. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud Platform services. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        /** Manage your data and permissions in Google Cloud Storage. */
+        const DEVSTORAGE_FULL_CONTROL = "https://www.googleapis.com/auth/devstorage.full_control";
+        /** View your data in Google Cloud Storage. */
+        const DEVSTORAGE_READ_ONLY = "https://www.googleapis.com/auth/devstorage.read_only";
+        /** Manage your data in Google Cloud Storage. */
+        const DEVSTORAGE_READ_WRITE = "https://www.googleapis.com/auth/devstorage.read_write";
+        public $anywhereCaches;
+        public $bucketAccessControls;
+        public $buckets;
+        public $channels;
+        public $defaultObjectAccessControls;
+        public $folders;
+        public $managedFolders;
+        public $notifications;
+        public $objectAccessControls;
+        public $objects;
+        public $operations;
+        public $projects_hmacKeys;
+        public $projects_serviceAccount;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Storage service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Storage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Storage extends \Google\Service\Storage
     {
     }
 }

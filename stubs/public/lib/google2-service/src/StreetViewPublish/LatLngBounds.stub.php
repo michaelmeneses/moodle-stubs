@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class LatLngBounds extends \Google\Model
-{
-    protected $northeastType = LatLng::class;
-    protected $northeastDataType = '';
-    protected $southwestType = LatLng::class;
-    protected $southwestDataType = '';
-    /**
-     * The northeast corner of these bounds.
-     *
-     * @param LatLng $northeast
-     */
-    public function setNortheast(LatLng $northeast)
+namespace Google\Service\StreetViewPublish {
+    class LatLngBounds extends \Google\Model
     {
+        protected $northeastType = LatLng::class;
+        protected $northeastDataType = '';
+        protected $southwestType = LatLng::class;
+        protected $southwestDataType = '';
+        /**
+         * The northeast corner of these bounds.
+         *
+         * @param LatLng $northeast
+         */
+        public function setNortheast(LatLng $northeast)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getNortheast()
+        {
+        }
+        /**
+         * The southwest corner of these bounds.
+         *
+         * @param LatLng $southwest
+         */
+        public function setSouthwest(LatLng $southwest)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getSouthwest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng
+     * Runtime class alias of \Google\Service\StreetViewPublish\LatLngBounds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNortheast()
-    {
-    }
-    /**
-     * The southwest corner of these bounds.
-     *
-     * @param LatLng $southwest
-     */
-    public function setSouthwest(LatLng $southwest)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getSouthwest()
+    class Google_Service_StreetViewPublish_LatLngBounds extends \Google\Service\StreetViewPublish\LatLngBounds
     {
     }
 }

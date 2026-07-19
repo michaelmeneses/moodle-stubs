@@ -21,135 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "triggers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $triggers = $cloudbuildService->projects_triggers;
- *  </code>
- */
-class ProjectsTriggers extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\BuildTrigger;
+    use Google\Service\CloudBuild\CloudbuildEmpty;
+    use Google\Service\CloudBuild\HttpBody;
+    use Google\Service\CloudBuild\ListBuildTriggersResponse;
+    use Google\Service\CloudBuild\Operation;
+    use Google\Service\CloudBuild\ReceiveTriggerWebhookResponse;
+    use Google\Service\CloudBuild\RepoSource;
     /**
-     * Creates a new `BuildTrigger`. This API is experimental. (triggers.create)
-     *
-     * @param string $projectId Required. ID of the project for which to configure
-     * automatic builds.
-     * @param BuildTrigger $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string parent The parent resource where this trigger will be
-     * created. Format: `projects/{project}/locations/{location}`
-     * @return BuildTrigger
+     * The "triggers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $triggers = $cloudbuildService->projects_triggers;
+     *  </code>
      */
-    public function create($projectId, BuildTrigger $postBody, $optParams = [])
+    class ProjectsTriggers extends \Google\Service\Resource
     {
+        /**
+         * Creates a new `BuildTrigger`. This API is experimental. (triggers.create)
+         *
+         * @param string $projectId Required. ID of the project for which to configure
+         * automatic builds.
+         * @param BuildTrigger $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string parent The parent resource where this trigger will be
+         * created. Format: `projects/{project}/locations/{location}`
+         * @return BuildTrigger
+         */
+        public function create($projectId, BuildTrigger $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a `BuildTrigger` by its project ID and trigger ID. This API is
+         * experimental. (triggers.delete)
+         *
+         * @param string $projectId Required. ID of the project that owns the trigger.
+         * @param string $triggerId Required. ID of the `BuildTrigger` to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name The name of the `Trigger` to delete. Format:
+         * `projects/{project}/locations/{location}/triggers/{trigger}`
+         * @return CloudbuildEmpty
+         */
+        public function delete($projectId, $triggerId, $optParams = [])
+        {
+        }
+        /**
+         * Returns information about a `BuildTrigger`. This API is experimental.
+         * (triggers.get)
+         *
+         * @param string $projectId Required. ID of the project that owns the trigger.
+         * @param string $triggerId Required. Identifier (`id` or `name`) of the
+         * `BuildTrigger` to get.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name The name of the `Trigger` to retrieve. Format:
+         * `projects/{project}/locations/{location}/triggers/{trigger}`
+         * @return BuildTrigger
+         */
+        public function get($projectId, $triggerId, $optParams = [])
+        {
+        }
+        /**
+         * Lists existing `BuildTrigger`s. This API is experimental.
+         * (triggers.listProjectsTriggers)
+         *
+         * @param string $projectId Required. ID of the project for which to list
+         * BuildTriggers.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Number of results to return in the list.
+         * @opt_param string pageToken Token to provide to skip to a particular spot in
+         * the list.
+         * @opt_param string parent The parent of the collection of `Triggers`. Format:
+         * `projects/{project}/locations/{location}`
+         * @return ListBuildTriggersResponse
+         */
+        public function listProjectsTriggers($projectId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a `BuildTrigger` by its project ID and trigger ID. This API is
+         * experimental. (triggers.patch)
+         *
+         * @param string $projectId Required. ID of the project that owns the trigger.
+         * @param string $triggerId Required. ID of the `BuildTrigger` to update.
+         * @param BuildTrigger $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Update mask for the resource. If this is set,
+         * the server will only update the fields specified in the field mask.
+         * Otherwise, a full update of the mutable resource fields will be performed.
+         * @return BuildTrigger
+         */
+        public function patch($projectId, $triggerId, BuildTrigger $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Runs a `BuildTrigger` at a particular source revision. To run a regional or
+         * global trigger, use the POST request that includes the location endpoint in
+         * the path (ex.
+         * v1/projects/{projectId}/locations/{region}/triggers/{triggerId}:run). The
+         * POST request that does not include the location endpoint in the path can only
+         * be used when running global triggers. (triggers.run)
+         *
+         * @param string $projectId Required. ID of the project.
+         * @param string $triggerId Required. ID of the trigger.
+         * @param RepoSource $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name The name of the `Trigger` to run. Format:
+         * `projects/{project}/locations/{location}/triggers/{trigger}`
+         * @return Operation
+         */
+        public function run($projectId, $triggerId, RepoSource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * ReceiveTriggerWebhook [Experimental] is called when the API receives a
+         * webhook request targeted at a specific trigger. (triggers.webhook)
+         *
+         * @param string $projectId Project in which the specified trigger lives
+         * @param string $trigger Name of the trigger to run the payload against
+         * @param HttpBody $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name The name of the `ReceiveTriggerWebhook` to retrieve.
+         * Format: `projects/{project}/locations/{location}/triggers/{trigger}`
+         * @opt_param string secret Secret token used for authorization if an OAuth
+         * token isn't provided.
+         * @return ReceiveTriggerWebhookResponse
+         */
+        public function webhook($projectId, $trigger, HttpBody $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a `BuildTrigger` by its project ID and trigger ID. This API is
-     * experimental. (triggers.delete)
-     *
-     * @param string $projectId Required. ID of the project that owns the trigger.
-     * @param string $triggerId Required. ID of the `BuildTrigger` to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name The name of the `Trigger` to delete. Format:
-     * `projects/{project}/locations/{location}/triggers/{trigger}`
-     * @return CloudbuildEmpty
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsTriggers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($projectId, $triggerId, $optParams = [])
-    {
-    }
-    /**
-     * Returns information about a `BuildTrigger`. This API is experimental.
-     * (triggers.get)
-     *
-     * @param string $projectId Required. ID of the project that owns the trigger.
-     * @param string $triggerId Required. Identifier (`id` or `name`) of the
-     * `BuildTrigger` to get.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name The name of the `Trigger` to retrieve. Format:
-     * `projects/{project}/locations/{location}/triggers/{trigger}`
-     * @return BuildTrigger
-     */
-    public function get($projectId, $triggerId, $optParams = [])
-    {
-    }
-    /**
-     * Lists existing `BuildTrigger`s. This API is experimental.
-     * (triggers.listProjectsTriggers)
-     *
-     * @param string $projectId Required. ID of the project for which to list
-     * BuildTriggers.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Number of results to return in the list.
-     * @opt_param string pageToken Token to provide to skip to a particular spot in
-     * the list.
-     * @opt_param string parent The parent of the collection of `Triggers`. Format:
-     * `projects/{project}/locations/{location}`
-     * @return ListBuildTriggersResponse
-     */
-    public function listProjectsTriggers($projectId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a `BuildTrigger` by its project ID and trigger ID. This API is
-     * experimental. (triggers.patch)
-     *
-     * @param string $projectId Required. ID of the project that owns the trigger.
-     * @param string $triggerId Required. ID of the `BuildTrigger` to update.
-     * @param BuildTrigger $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Update mask for the resource. If this is set,
-     * the server will only update the fields specified in the field mask.
-     * Otherwise, a full update of the mutable resource fields will be performed.
-     * @return BuildTrigger
-     */
-    public function patch($projectId, $triggerId, BuildTrigger $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Runs a `BuildTrigger` at a particular source revision. To run a regional or
-     * global trigger, use the POST request that includes the location endpoint in
-     * the path (ex.
-     * v1/projects/{projectId}/locations/{region}/triggers/{triggerId}:run). The
-     * POST request that does not include the location endpoint in the path can only
-     * be used when running global triggers. (triggers.run)
-     *
-     * @param string $projectId Required. ID of the project.
-     * @param string $triggerId Required. ID of the trigger.
-     * @param RepoSource $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name The name of the `Trigger` to run. Format:
-     * `projects/{project}/locations/{location}/triggers/{trigger}`
-     * @return Operation
-     */
-    public function run($projectId, $triggerId, RepoSource $postBody, $optParams = [])
-    {
-    }
-    /**
-     * ReceiveTriggerWebhook [Experimental] is called when the API receives a
-     * webhook request targeted at a specific trigger. (triggers.webhook)
-     *
-     * @param string $projectId Project in which the specified trigger lives
-     * @param string $trigger Name of the trigger to run the payload against
-     * @param HttpBody $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name The name of the `ReceiveTriggerWebhook` to retrieve.
-     * Format: `projects/{project}/locations/{location}/triggers/{trigger}`
-     * @opt_param string secret Secret token used for authorization if an OAuth
-     * token isn't provided.
-     * @return ReceiveTriggerWebhookResponse
-     */
-    public function webhook($projectId, $trigger, HttpBody $postBody, $optParams = [])
+    class Google_Service_CloudBuild_Resource_ProjectsTriggers extends \Google\Service\CloudBuild\Resource\ProjectsTriggers
     {
     }
 }

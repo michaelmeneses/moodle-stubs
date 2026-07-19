@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstanceAgentDataEvents extends \Google\Collection
-{
-    protected $collection_key = 'event';
-    protected $eventType = GoogleCloudAiplatformV1Content::class;
-    protected $eventDataType = 'array';
-    /**
-     * Optional. A list of events.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $event
-     */
-    public function setEvent($event)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstanceAgentDataEvents extends \Google\Collection
     {
+        protected $collection_key = 'event';
+        protected $eventType = GoogleCloudAiplatformV1Content::class;
+        protected $eventDataType = 'array';
+        /**
+         * Optional. A list of events.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $event
+         */
+        public function setEvent($event)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceAgentDataEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvent()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstanceAgentDataEvents extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceAgentDataEvents
     {
     }
 }

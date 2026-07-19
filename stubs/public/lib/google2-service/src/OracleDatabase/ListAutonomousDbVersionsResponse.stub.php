@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListAutonomousDbVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'autonomousDbVersions';
-    protected $autonomousDbVersionsType = AutonomousDbVersion::class;
-    protected $autonomousDbVersionsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Autonomous Database versions.
-     *
-     * @param AutonomousDbVersion[] $autonomousDbVersions
-     */
-    public function setAutonomousDbVersions($autonomousDbVersions)
+namespace Google\Service\OracleDatabase {
+    class ListAutonomousDbVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'autonomousDbVersions';
+        protected $autonomousDbVersionsType = AutonomousDbVersion::class;
+        protected $autonomousDbVersionsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Autonomous Database versions.
+         *
+         * @param AutonomousDbVersion[] $autonomousDbVersions
+         */
+        public function setAutonomousDbVersions($autonomousDbVersions)
+        {
+        }
+        /**
+         * @return AutonomousDbVersion[]
+         */
+        public function getAutonomousDbVersions()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutonomousDbVersion[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListAutonomousDbVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutonomousDbVersions()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListAutonomousDbVersionsResponse extends \Google\Service\OracleDatabase\ListAutonomousDbVersionsResponse
     {
     }
 }

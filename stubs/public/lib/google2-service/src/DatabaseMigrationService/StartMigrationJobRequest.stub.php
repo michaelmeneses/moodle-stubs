@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class StartMigrationJobRequest extends \Google\Model
-{
-    /**
-     * Optional. Start the migration job without running prior configuration
-     * verification. Defaults to `false`.
-     *
-     * @var bool
-     */
-    public $skipValidation;
-    /**
-     * Optional. Start the migration job without running prior configuration
-     * verification. Defaults to `false`.
-     *
-     * @param bool $skipValidation
-     */
-    public function setSkipValidation($skipValidation)
+namespace Google\Service\DatabaseMigrationService {
+    class StartMigrationJobRequest extends \Google\Model
     {
+        /**
+         * Optional. Start the migration job without running prior configuration
+         * verification. Defaults to `false`.
+         *
+         * @var bool
+         */
+        public $skipValidation;
+        /**
+         * Optional. Start the migration job without running prior configuration
+         * verification. Defaults to `false`.
+         *
+         * @param bool $skipValidation
+         */
+        public function setSkipValidation($skipValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\StartMigrationJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSkipValidation()
+    class Google_Service_DatabaseMigrationService_StartMigrationJobRequest extends \Google\Service\DatabaseMigrationService\StartMigrationJobRequest
     {
     }
 }

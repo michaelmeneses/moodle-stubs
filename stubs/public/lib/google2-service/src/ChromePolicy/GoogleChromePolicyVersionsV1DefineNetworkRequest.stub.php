@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1DefineNetworkRequest extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    /**
-     * Required. Name of the new created network.
-     *
-     * @var string
-     */
-    public $name;
-    protected $settingsType = GoogleChromePolicyVersionsV1NetworkSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. The target resource on which this new network will be defined.
-     * The following resources are supported: * Organizational Unit
-     * ("orgunits/{orgunit_id}")
-     *
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * Required. Name of the new created network.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1DefineNetworkRequest extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        /**
+         * Required. Name of the new created network.
+         *
+         * @var string
+         */
+        public $name;
+        protected $settingsType = GoogleChromePolicyVersionsV1NetworkSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. The target resource on which this new network will be defined.
+         * The following resources are supported: * Organizational Unit
+         * ("orgunits/{orgunit_id}")
+         *
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * Required. Name of the new created network.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Detailed network settings.
+         *
+         * @param GoogleChromePolicyVersionsV1NetworkSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1NetworkSetting[]
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * Required. The target resource on which this new network will be defined.
+         * The following resources are supported: * Organizational Unit
+         * ("orgunits/{orgunit_id}")
+         *
+         * @param string $targetResource
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineNetworkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Detailed network settings.
-     *
-     * @param GoogleChromePolicyVersionsV1NetworkSetting[] $settings
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1NetworkSetting[]
-     */
-    public function getSettings()
-    {
-    }
-    /**
-     * Required. The target resource on which this new network will be defined.
-     * The following resources are supported: * Organizational Unit
-     * ("orgunits/{orgunit_id}")
-     *
-     * @param string $targetResource
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1DefineNetworkRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineNetworkRequest
     {
     }
 }

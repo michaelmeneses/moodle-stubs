@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class Rule extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * @var string
-     */
-    public $action;
-    protected $conditionsType = Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string[]
-     */
-    public $in;
-    protected $logConfigType = LogConfig::class;
-    protected $logConfigDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $notIn;
-    /**
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\GameServices {
+    class Rule extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * @var string
+         */
+        public $action;
+        protected $conditionsType = Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string[]
+         */
+        public $in;
+        protected $logConfigType = LogConfig::class;
+        protected $logConfigDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $notIn;
+        /**
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIn($in)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIn()
+        {
+        }
+        /**
+         * @param LogConfig[]
+         */
+        public function setLogConfig($logConfig)
+        {
+        }
+        /**
+         * @return LogConfig[]
+         */
+        public function getLogConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setNotIn($notIn)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotIn()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param Condition[]
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return Condition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIn($in)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIn()
-    {
-    }
-    /**
-     * @param LogConfig[]
-     */
-    public function setLogConfig($logConfig)
-    {
-    }
-    /**
-     * @return LogConfig[]
-     */
-    public function getLogConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setNotIn($notIn)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotIn()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermissions()
+    class Google_Service_GameServices_Rule extends \Google\Service\GameServices\Rule
     {
     }
 }

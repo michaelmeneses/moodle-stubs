@@ -21,34 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription\Resource;
-
-/**
- * The "userSessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
- *   $userSessions = $paymentsresellersubscriptionService->partners_userSessions;
- *  </code>
- */
-class PartnersUserSessions extends \Google\Service\Resource
-{
+namespace Google\Service\PaymentsResellerSubscription\Resource {
+    use Google\Service\PaymentsResellerSubscription\GenerateUserSessionRequest;
+    use Google\Service\PaymentsResellerSubscription\GenerateUserSessionResponse;
     /**
-     * This API replaces user authorized OAuth consent based APIs (Create, Entitle).
-     * Issues a timed session token for the given user intent. You can use the
-     * session token to redirect the user to Google to finish the signup flow. You
-     * can re-generate new session token repeatedly for the same request if
-     * necessary, regardless of the previous tokens being expired or not. By
-     * default, the session token is valid for 1 hour. (userSessions.generate)
-     *
-     * @param string $parent Required. The parent, the partner that can resell.
-     * Format: partners/{partner}
-     * @param GenerateUserSessionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateUserSessionResponse
-     * @throws \Google\Service\Exception
+     * The "userSessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
+     *   $userSessions = $paymentsresellersubscriptionService->partners_userSessions;
+     *  </code>
      */
-    public function generate($parent, GenerateUserSessionRequest $postBody, $optParams = [])
+    class PartnersUserSessions extends \Google\Service\Resource
+    {
+        /**
+         * This API replaces user authorized OAuth consent based APIs (Create, Entitle).
+         * Issues a timed session token for the given user intent. You can use the
+         * session token to redirect the user to Google to finish the signup flow. You
+         * can re-generate new session token repeatedly for the same request if
+         * necessary, regardless of the previous tokens being expired or not. By
+         * default, the session token is valid for 1 hour. (userSessions.generate)
+         *
+         * @param string $parent Required. The parent, the partner that can resell.
+         * Format: partners/{partner}
+         * @param GenerateUserSessionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateUserSessionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generate($parent, GenerateUserSessionRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Resource\PartnersUserSessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PaymentsResellerSubscription_Resource_PartnersUserSessions extends \Google\Service\PaymentsResellerSubscription\Resource\PartnersUserSessions
     {
     }
 }

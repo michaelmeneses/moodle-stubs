@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerResizeRequestStatusError extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = InstanceGroupManagerResizeRequestStatusErrorErrors::class;
-    protected $errorsDataType = 'array';
-    /**
-     * [Output Only] The array of errors encountered while processing this
-     * operation.
-     *
-     * @param InstanceGroupManagerResizeRequestStatusErrorErrors[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerResizeRequestStatusError extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = InstanceGroupManagerResizeRequestStatusErrorErrors::class;
+        protected $errorsDataType = 'array';
+        /**
+         * [Output Only] The array of errors encountered while processing this
+         * operation.
+         *
+         * @param InstanceGroupManagerResizeRequestStatusErrorErrors[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return InstanceGroupManagerResizeRequestStatusErrorErrors[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceGroupManagerResizeRequestStatusErrorErrors[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerResizeRequestStatusError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Compute_InstanceGroupManagerResizeRequestStatusError extends \Google\Service\Compute\InstanceGroupManagerResizeRequestStatusError
     {
     }
 }

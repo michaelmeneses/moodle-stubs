@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Action extends \Google\Model
-{
-    protected $actorType = Actor::class;
-    protected $actorDataType = '';
-    protected $detailType = ActionDetail::class;
-    protected $detailDataType = '';
-    protected $targetType = Target::class;
-    protected $targetDataType = '';
-    protected $timeRangeType = TimeRange::class;
-    protected $timeRangeDataType = '';
-    /**
-     * The action occurred at this specific time.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * The actor responsible for this action (or empty if all actors are
-     * responsible).
-     *
-     * @param Actor $actor
-     */
-    public function setActor(Actor $actor)
+namespace Google\Service\DriveActivity {
+    class Action extends \Google\Model
     {
+        protected $actorType = Actor::class;
+        protected $actorDataType = '';
+        protected $detailType = ActionDetail::class;
+        protected $detailDataType = '';
+        protected $targetType = Target::class;
+        protected $targetDataType = '';
+        protected $timeRangeType = TimeRange::class;
+        protected $timeRangeDataType = '';
+        /**
+         * The action occurred at this specific time.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * The actor responsible for this action (or empty if all actors are
+         * responsible).
+         *
+         * @param Actor $actor
+         */
+        public function setActor(Actor $actor)
+        {
+        }
+        /**
+         * @return Actor
+         */
+        public function getActor()
+        {
+        }
+        /**
+         * The type and detailed information about the action.
+         *
+         * @param ActionDetail $detail
+         */
+        public function setDetail(ActionDetail $detail)
+        {
+        }
+        /**
+         * @return ActionDetail
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * The target this action affects (or empty if affecting all targets). This
+         * represents the state of the target immediately after this action occurred.
+         *
+         * @param Target $target
+         */
+        public function setTarget(Target $target)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * The action occurred over this time range.
+         *
+         * @param TimeRange $timeRange
+         */
+        public function setTimeRange(TimeRange $timeRange)
+        {
+        }
+        /**
+         * @return TimeRange
+         */
+        public function getTimeRange()
+        {
+        }
+        /**
+         * The action occurred at this specific time.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Actor
+     * Runtime class alias of \Google\Service\DriveActivity\Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActor()
-    {
-    }
-    /**
-     * The type and detailed information about the action.
-     *
-     * @param ActionDetail $detail
-     */
-    public function setDetail(ActionDetail $detail)
-    {
-    }
-    /**
-     * @return ActionDetail
-     */
-    public function getDetail()
-    {
-    }
-    /**
-     * The target this action affects (or empty if affecting all targets). This
-     * represents the state of the target immediately after this action occurred.
-     *
-     * @param Target $target
-     */
-    public function setTarget(Target $target)
-    {
-    }
-    /**
-     * @return Target
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * The action occurred over this time range.
-     *
-     * @param TimeRange $timeRange
-     */
-    public function setTimeRange(TimeRange $timeRange)
-    {
-    }
-    /**
-     * @return TimeRange
-     */
-    public function getTimeRange()
-    {
-    }
-    /**
-     * The action occurred at this specific time.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_DriveActivity_Action extends \Google\Service\DriveActivity\Action
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse extends \Google\Model
-{
-    /**
-     * The time at which operation processing completed.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * True if the Trial should stop.
-     *
-     * @var bool
-     */
-    public $shouldStop;
-    /**
-     * The time at which the operation was started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The time at which operation processing completed.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse extends \Google\Model
     {
+        /**
+         * The time at which operation processing completed.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * True if the Trial should stop.
+         *
+         * @var bool
+         */
+        public $shouldStop;
+        /**
+         * The time at which the operation was started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The time at which operation processing completed.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * True if the Trial should stop.
+         *
+         * @param bool $shouldStop
+         */
+        public function setShouldStop($shouldStop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldStop()
+        {
+        }
+        /**
+         * The time at which the operation was started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * True if the Trial should stop.
-     *
-     * @param bool $shouldStop
-     */
-    public function setShouldStop($shouldStop)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShouldStop()
-    {
-    }
-    /**
-     * The time at which the operation was started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse
     {
     }
 }

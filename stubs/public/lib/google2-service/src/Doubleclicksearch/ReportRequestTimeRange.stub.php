@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class ReportRequestTimeRange extends \Google\Model
-{
-    /**
-     * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
-     * See additional references on how changed attribute reports work.
-     *
-     * @var string
-     */
-    public $changedAttributesSinceTimestamp;
-    /**
-     * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
-     * See additional references on how changed metrics reports work.
-     *
-     * @var string
-     */
-    public $changedMetricsSinceTimestamp;
-    /**
-     * Inclusive date in YYYY-MM-DD format.
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Inclusive date in YYYY-MM-DD format.
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
-     * See additional references on how changed attribute reports work.
-     *
-     * @param string $changedAttributesSinceTimestamp
-     */
-    public function setChangedAttributesSinceTimestamp($changedAttributesSinceTimestamp)
+namespace Google\Service\Doubleclicksearch {
+    class ReportRequestTimeRange extends \Google\Model
     {
+        /**
+         * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
+         * See additional references on how changed attribute reports work.
+         *
+         * @var string
+         */
+        public $changedAttributesSinceTimestamp;
+        /**
+         * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
+         * See additional references on how changed metrics reports work.
+         *
+         * @var string
+         */
+        public $changedMetricsSinceTimestamp;
+        /**
+         * Inclusive date in YYYY-MM-DD format.
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Inclusive date in YYYY-MM-DD format.
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
+         * See additional references on how changed attribute reports work.
+         *
+         * @param string $changedAttributesSinceTimestamp
+         */
+        public function setChangedAttributesSinceTimestamp($changedAttributesSinceTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangedAttributesSinceTimestamp()
+        {
+        }
+        /**
+         * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
+         * See additional references on how changed metrics reports work.
+         *
+         * @param string $changedMetricsSinceTimestamp
+         */
+        public function setChangedMetricsSinceTimestamp($changedMetricsSinceTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangedMetricsSinceTimestamp()
+        {
+        }
+        /**
+         * Inclusive date in YYYY-MM-DD format.
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Inclusive date in YYYY-MM-DD format.
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\ReportRequestTimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangedAttributesSinceTimestamp()
-    {
-    }
-    /**
-     * Inclusive UTC timestamp in RFC format, e.g., `2013-07-16T10:16:23.555Z`.
-     * See additional references on how changed metrics reports work.
-     *
-     * @param string $changedMetricsSinceTimestamp
-     */
-    public function setChangedMetricsSinceTimestamp($changedMetricsSinceTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChangedMetricsSinceTimestamp()
-    {
-    }
-    /**
-     * Inclusive date in YYYY-MM-DD format.
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Inclusive date in YYYY-MM-DD format.
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
+    class Google_Service_Doubleclicksearch_ReportRequestTimeRange extends \Google\Service\Doubleclicksearch\ReportRequestTimeRange
     {
     }
 }

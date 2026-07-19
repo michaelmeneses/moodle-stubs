@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListRepricingRuleReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'repricingRuleReports';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var RepricingRuleReport[]
-     */
-    public $repricingRuleReports;
-    protected $repricingRuleReportsType = RepricingRuleReport::class;
-    protected $repricingRuleReportsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ShoppingContent {
+    class ListRepricingRuleReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'repricingRuleReports';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var RepricingRuleReport[]
+         */
+        public $repricingRuleReports;
+        protected $repricingRuleReportsType = RepricingRuleReport::class;
+        protected $repricingRuleReportsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RepricingRuleReport[]
+         */
+        public function setRepricingRuleReports($repricingRuleReports)
+        {
+        }
+        /**
+         * @return RepricingRuleReport[]
+         */
+        public function getRepricingRuleReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ListRepricingRuleReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RepricingRuleReport[]
-     */
-    public function setRepricingRuleReports($repricingRuleReports)
-    {
-    }
-    /**
-     * @return RepricingRuleReport[]
-     */
-    public function getRepricingRuleReports()
+    class Google_Service_ShoppingContent_ListRepricingRuleReportsResponse extends \Google\Service\ShoppingContent\ListRepricingRuleReportsResponse
     {
     }
 }

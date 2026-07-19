@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class NamespacedGkeDeploymentTarget extends \Google\Model
-{
-    /**
-     * Optional. A namespace within the GKE cluster to deploy into.
-     *
-     * @var string
-     */
-    public $clusterNamespace;
-    /**
-     * Optional. The target GKE cluster to deploy to. Format:
-     * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
-     *
-     * @var string
-     */
-    public $targetGkeCluster;
-    /**
-     * Optional. A namespace within the GKE cluster to deploy into.
-     *
-     * @param string $clusterNamespace
-     */
-    public function setClusterNamespace($clusterNamespace)
+namespace Google\Service\Dataproc {
+    class NamespacedGkeDeploymentTarget extends \Google\Model
     {
+        /**
+         * Optional. A namespace within the GKE cluster to deploy into.
+         *
+         * @var string
+         */
+        public $clusterNamespace;
+        /**
+         * Optional. The target GKE cluster to deploy to. Format:
+         * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
+         *
+         * @var string
+         */
+        public $targetGkeCluster;
+        /**
+         * Optional. A namespace within the GKE cluster to deploy into.
+         *
+         * @param string $clusterNamespace
+         */
+        public function setClusterNamespace($clusterNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterNamespace()
+        {
+        }
+        /**
+         * Optional. The target GKE cluster to deploy to. Format:
+         * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
+         *
+         * @param string $targetGkeCluster
+         */
+        public function setTargetGkeCluster($targetGkeCluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetGkeCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\NamespacedGkeDeploymentTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterNamespace()
-    {
-    }
-    /**
-     * Optional. The target GKE cluster to deploy to. Format:
-     * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
-     *
-     * @param string $targetGkeCluster
-     */
-    public function setTargetGkeCluster($targetGkeCluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetGkeCluster()
+    class Google_Service_Dataproc_NamespacedGkeDeploymentTarget extends \Google\Service\Dataproc\NamespacedGkeDeploymentTarget
     {
     }
 }

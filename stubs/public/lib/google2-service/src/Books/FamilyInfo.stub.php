@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class FamilyInfo extends \Google\Model
-{
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $membershipType = FamilyInfoMembership::class;
-    protected $membershipDataType = '';
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Books {
+    class FamilyInfo extends \Google\Model
     {
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $membershipType = FamilyInfoMembership::class;
+        protected $membershipDataType = '';
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Family membership info of the user that made the request.
+         *
+         * @param FamilyInfoMembership $membership
+         */
+        public function setMembership(FamilyInfoMembership $membership)
+        {
+        }
+        /**
+         * @return FamilyInfoMembership
+         */
+        public function getMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\FamilyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Family membership info of the user that made the request.
-     *
-     * @param FamilyInfoMembership $membership
-     */
-    public function setMembership(FamilyInfoMembership $membership)
-    {
-    }
-    /**
-     * @return FamilyInfoMembership
-     */
-    public function getMembership()
+    class Google_Service_Books_FamilyInfo extends \Google\Service\Books\FamilyInfo
     {
     }
 }

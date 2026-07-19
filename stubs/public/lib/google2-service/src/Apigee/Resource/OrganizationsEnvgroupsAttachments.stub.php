@@ -21,76 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "attachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $attachments = $apigeeService->organizations_envgroups_attachments;
- *  </code>
- */
-class OrganizationsEnvgroupsAttachments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroupAttachment;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Creates a new attachment of an environment to an environment group.
-     * (attachments.create)
-     *
-     * @param string $parent Required. EnvironmentGroup under which to create the
-     * attachment in the following format:
-     * `organizations/{org}/envgroups/{envgroup}`.
-     * @param GoogleCloudApigeeV1EnvironmentGroupAttachment $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "attachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $attachments = $apigeeService->organizations_envgroups_attachments;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1EnvironmentGroupAttachment $postBody, $optParams = [])
+    class OrganizationsEnvgroupsAttachments extends \Google\Service\Resource
     {
+        /**
+         * Creates a new attachment of an environment to an environment group.
+         * (attachments.create)
+         *
+         * @param string $parent Required. EnvironmentGroup under which to create the
+         * attachment in the following format:
+         * `organizations/{org}/envgroups/{envgroup}`.
+         * @param GoogleCloudApigeeV1EnvironmentGroupAttachment $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1EnvironmentGroupAttachment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an environment group attachment. (attachments.delete)
+         *
+         * @param string $name Required. Name of the environment group attachment to
+         * delete in the following format:
+         * `organizations/{org}/envgroups/{envgroup}/attachments/{attachment}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an environment group attachment. (attachments.get)
+         *
+         * @param string $name Required. Name of the environment group attachment in the
+         * following format:
+         * `organizations/{org}/envgroups/{envgroup}/attachments/{attachment}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1EnvironmentGroupAttachment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all attachments of an environment group.
+         * (attachments.listOrganizationsEnvgroupsAttachments)
+         *
+         * @param string $parent Required. Name of the environment group in the
+         * following format: `organizations/{org}/envgroups/{envgroup}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of environment group attachments to
+         * return. The page size defaults to 25.
+         * @opt_param string pageToken Page token, returned by a previous
+         * ListEnvironmentGroupAttachments call, that you can use to retrieve the next
+         * page.
+         * @return GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsEnvgroupsAttachments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an environment group attachment. (attachments.delete)
-     *
-     * @param string $name Required. Name of the environment group attachment to
-     * delete in the following format:
-     * `organizations/{org}/envgroups/{envgroup}/attachments/{attachment}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvgroupsAttachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an environment group attachment. (attachments.get)
-     *
-     * @param string $name Required. Name of the environment group attachment in the
-     * following format:
-     * `organizations/{org}/envgroups/{envgroup}/attachments/{attachment}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1EnvironmentGroupAttachment
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all attachments of an environment group.
-     * (attachments.listOrganizationsEnvgroupsAttachments)
-     *
-     * @param string $parent Required. Name of the environment group in the
-     * following format: `organizations/{org}/envgroups/{envgroup}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of environment group attachments to
-     * return. The page size defaults to 25.
-     * @opt_param string pageToken Page token, returned by a previous
-     * ListEnvironmentGroupAttachments call, that you can use to retrieve the next
-     * page.
-     * @return GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsEnvgroupsAttachments($parent, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvgroupsAttachments extends \Google\Service\Apigee\Resource\OrganizationsEnvgroupsAttachments
     {
     }
 }

@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SlsaProvenance extends \Google\Collection
-{
-    protected $collection_key = 'materials';
-    protected $builderType = SlsaBuilder::class;
-    protected $builderDataType = '';
-    protected $materialsType = Material::class;
-    protected $materialsDataType = 'array';
-    protected $metadataType = SlsaMetadata::class;
-    protected $metadataDataType = '';
-    protected $recipeType = SlsaRecipe::class;
-    protected $recipeDataType = '';
-    /**
-     * required
-     *
-     * @param SlsaBuilder $builder
-     */
-    public function setBuilder(SlsaBuilder $builder)
+namespace Google\Service\ContainerAnalysis {
+    class SlsaProvenance extends \Google\Collection
     {
+        protected $collection_key = 'materials';
+        protected $builderType = SlsaBuilder::class;
+        protected $builderDataType = '';
+        protected $materialsType = Material::class;
+        protected $materialsDataType = 'array';
+        protected $metadataType = SlsaMetadata::class;
+        protected $metadataDataType = '';
+        protected $recipeType = SlsaRecipe::class;
+        protected $recipeDataType = '';
+        /**
+         * required
+         *
+         * @param SlsaBuilder $builder
+         */
+        public function setBuilder(SlsaBuilder $builder)
+        {
+        }
+        /**
+         * @return SlsaBuilder
+         */
+        public function getBuilder()
+        {
+        }
+        /**
+         * The collection of artifacts that influenced the build including sources,
+         * dependencies, build tools, base images, and so on. This is considered to be
+         * incomplete unless metadata.completeness.materials is true. Unset or null is
+         * equivalent to empty.
+         *
+         * @param Material[] $materials
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return Material[]
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * @param SlsaMetadata $metadata
+         */
+        public function setMetadata(SlsaMetadata $metadata)
+        {
+        }
+        /**
+         * @return SlsaMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Identifies the configuration used for the build. When combined with
+         * materials, this SHOULD fully describe the build, such that re-running this
+         * recipe results in bit-for-bit identical output (if the build is
+         * reproducible). required
+         *
+         * @param SlsaRecipe $recipe
+         */
+        public function setRecipe(SlsaRecipe $recipe)
+        {
+        }
+        /**
+         * @return SlsaRecipe
+         */
+        public function getRecipe()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SlsaBuilder
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SlsaProvenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilder()
-    {
-    }
-    /**
-     * The collection of artifacts that influenced the build including sources,
-     * dependencies, build tools, base images, and so on. This is considered to be
-     * incomplete unless metadata.completeness.materials is true. Unset or null is
-     * equivalent to empty.
-     *
-     * @param Material[] $materials
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return Material[]
-     */
-    public function getMaterials()
-    {
-    }
-    /**
-     * @param SlsaMetadata $metadata
-     */
-    public function setMetadata(SlsaMetadata $metadata)
-    {
-    }
-    /**
-     * @return SlsaMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Identifies the configuration used for the build. When combined with
-     * materials, this SHOULD fully describe the build, such that re-running this
-     * recipe results in bit-for-bit identical output (if the build is
-     * reproducible). required
-     *
-     * @param SlsaRecipe $recipe
-     */
-    public function setRecipe(SlsaRecipe $recipe)
-    {
-    }
-    /**
-     * @return SlsaRecipe
-     */
-    public function getRecipe()
+    class Google_Service_ContainerAnalysis_SlsaProvenance extends \Google\Service\ContainerAnalysis\SlsaProvenance
     {
     }
 }

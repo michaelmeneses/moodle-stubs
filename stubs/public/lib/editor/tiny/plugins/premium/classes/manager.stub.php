@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_premium;
 
+use moodle_url;
+use moodleform;
+use stdClass;
 /**
  * Tiny Premium manager.
  *

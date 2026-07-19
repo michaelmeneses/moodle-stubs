@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddBandingRequest extends \Google\Model
-{
-    protected $bandedRangeType = BandedRange::class;
-    protected $bandedRangeDataType = '';
-    /**
-     * The banded range to add. The bandedRangeId field is optional; if one is not
-     * set, an id will be randomly generated. (It is an error to specify the ID of
-     * a range that already exists.)
-     *
-     * @param BandedRange $bandedRange
-     */
-    public function setBandedRange(BandedRange $bandedRange)
+namespace Google\Service\Sheets {
+    class AddBandingRequest extends \Google\Model
     {
+        protected $bandedRangeType = BandedRange::class;
+        protected $bandedRangeDataType = '';
+        /**
+         * The banded range to add. The bandedRangeId field is optional; if one is not
+         * set, an id will be randomly generated. (It is an error to specify the ID of
+         * a range that already exists.)
+         *
+         * @param BandedRange $bandedRange
+         */
+        public function setBandedRange(BandedRange $bandedRange)
+        {
+        }
+        /**
+         * @return BandedRange
+         */
+        public function getBandedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BandedRange
+     * Runtime class alias of \Google\Service\Sheets\AddBandingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandedRange()
+    class Google_Service_Sheets_AddBandingRequest extends \Google\Service\Sheets\AddBandingRequest
     {
     }
 }

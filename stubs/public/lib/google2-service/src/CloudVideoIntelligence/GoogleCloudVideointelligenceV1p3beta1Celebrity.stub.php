@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1Celebrity extends \Google\Model
-{
-    /**
-     * Textual description of additional information about the celebrity, if
-     * applicable.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The celebrity name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the celebrity. Have the format `video-intelligence/kg-
-     * mid` indicates a celebrity from preloaded gallery. kg-mid is the id in
-     * Google knowledge graph, which is unique for the celebrity.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Textual description of additional information about the celebrity, if
-     * applicable.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1Celebrity extends \Google\Model
     {
+        /**
+         * Textual description of additional information about the celebrity, if
+         * applicable.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The celebrity name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the celebrity. Have the format `video-intelligence/kg-
+         * mid` indicates a celebrity from preloaded gallery. kg-mid is the id in
+         * Google knowledge graph, which is unique for the celebrity.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Textual description of additional information about the celebrity, if
+         * applicable.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The celebrity name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the celebrity. Have the format `video-intelligence/kg-
+         * mid` indicates a celebrity from preloaded gallery. kg-mid is the id in
+         * Google knowledge graph, which is unique for the celebrity.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1Celebrity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The celebrity name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the celebrity. Have the format `video-intelligence/kg-
-     * mid` indicates a celebrity from preloaded gallery. kg-mid is the id in
-     * Google knowledge graph, which is unique for the celebrity.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1Celebrity extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1Celebrity
     {
     }
 }

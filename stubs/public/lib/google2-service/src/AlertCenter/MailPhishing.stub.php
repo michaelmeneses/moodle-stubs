@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class MailPhishing extends \Google\Collection
-{
-    /**
-     * System action is unspecified.
-     */
-    public const SYSTEM_ACTION_TYPE_SYSTEM_ACTION_TYPE_UNSPECIFIED = 'SYSTEM_ACTION_TYPE_UNSPECIFIED';
-    /**
-     * No operation.
-     */
-    public const SYSTEM_ACTION_TYPE_NO_OPERATION = 'NO_OPERATION';
-    /**
-     * Messages were removed from the inbox.
-     */
-    public const SYSTEM_ACTION_TYPE_REMOVED_FROM_INBOX = 'REMOVED_FROM_INBOX';
-    protected $collection_key = 'messages';
-    protected $domainIdType = DomainId::class;
-    protected $domainIdDataType = '';
-    /**
-     * If `true`, the email originated from within the organization.
-     *
-     * @var bool
-     */
-    public $isInternal;
-    protected $maliciousEntityType = MaliciousEntity::class;
-    protected $maliciousEntityDataType = '';
-    protected $messagesType = GmailMessageInfo::class;
-    protected $messagesDataType = 'array';
-    /**
-     * System actions on the messages.
-     *
-     * @var string
-     */
-    public $systemActionType;
-    /**
-     * The domain ID.
-     *
-     * @param DomainId $domainId
-     */
-    public function setDomainId(DomainId $domainId)
+namespace Google\Service\AlertCenter {
+    class MailPhishing extends \Google\Collection
     {
+        /**
+         * System action is unspecified.
+         */
+        public const SYSTEM_ACTION_TYPE_SYSTEM_ACTION_TYPE_UNSPECIFIED = 'SYSTEM_ACTION_TYPE_UNSPECIFIED';
+        /**
+         * No operation.
+         */
+        public const SYSTEM_ACTION_TYPE_NO_OPERATION = 'NO_OPERATION';
+        /**
+         * Messages were removed from the inbox.
+         */
+        public const SYSTEM_ACTION_TYPE_REMOVED_FROM_INBOX = 'REMOVED_FROM_INBOX';
+        protected $collection_key = 'messages';
+        protected $domainIdType = DomainId::class;
+        protected $domainIdDataType = '';
+        /**
+         * If `true`, the email originated from within the organization.
+         *
+         * @var bool
+         */
+        public $isInternal;
+        protected $maliciousEntityType = MaliciousEntity::class;
+        protected $maliciousEntityDataType = '';
+        protected $messagesType = GmailMessageInfo::class;
+        protected $messagesDataType = 'array';
+        /**
+         * System actions on the messages.
+         *
+         * @var string
+         */
+        public $systemActionType;
+        /**
+         * The domain ID.
+         *
+         * @param DomainId $domainId
+         */
+        public function setDomainId(DomainId $domainId)
+        {
+        }
+        /**
+         * @return DomainId
+         */
+        public function getDomainId()
+        {
+        }
+        /**
+         * If `true`, the email originated from within the organization.
+         *
+         * @param bool $isInternal
+         */
+        public function setIsInternal($isInternal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInternal()
+        {
+        }
+        /**
+         * The entity whose actions triggered a Gmail phishing alert.
+         *
+         * @param MaliciousEntity $maliciousEntity
+         */
+        public function setMaliciousEntity(MaliciousEntity $maliciousEntity)
+        {
+        }
+        /**
+         * @return MaliciousEntity
+         */
+        public function getMaliciousEntity()
+        {
+        }
+        /**
+         * The list of messages contained by this alert.
+         *
+         * @param GmailMessageInfo[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return GmailMessageInfo[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * System actions on the messages.
+         *
+         * Accepted values: SYSTEM_ACTION_TYPE_UNSPECIFIED, NO_OPERATION,
+         * REMOVED_FROM_INBOX
+         *
+         * @param self::SYSTEM_ACTION_TYPE_* $systemActionType
+         */
+        public function setSystemActionType($systemActionType)
+        {
+        }
+        /**
+         * @return self::SYSTEM_ACTION_TYPE_*
+         */
+        public function getSystemActionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainId
+     * Runtime class alias of \Google\Service\AlertCenter\MailPhishing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainId()
-    {
-    }
-    /**
-     * If `true`, the email originated from within the organization.
-     *
-     * @param bool $isInternal
-     */
-    public function setIsInternal($isInternal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInternal()
-    {
-    }
-    /**
-     * The entity whose actions triggered a Gmail phishing alert.
-     *
-     * @param MaliciousEntity $maliciousEntity
-     */
-    public function setMaliciousEntity(MaliciousEntity $maliciousEntity)
-    {
-    }
-    /**
-     * @return MaliciousEntity
-     */
-    public function getMaliciousEntity()
-    {
-    }
-    /**
-     * The list of messages contained by this alert.
-     *
-     * @param GmailMessageInfo[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return GmailMessageInfo[]
-     */
-    public function getMessages()
-    {
-    }
-    /**
-     * System actions on the messages.
-     *
-     * Accepted values: SYSTEM_ACTION_TYPE_UNSPECIFIED, NO_OPERATION,
-     * REMOVED_FROM_INBOX
-     *
-     * @param self::SYSTEM_ACTION_TYPE_* $systemActionType
-     */
-    public function setSystemActionType($systemActionType)
-    {
-    }
-    /**
-     * @return self::SYSTEM_ACTION_TYPE_*
-     */
-    public function getSystemActionType()
+    class Google_Service_AlertCenter_MailPhishing extends \Google\Service\AlertCenter\MailPhishing
     {
     }
 }

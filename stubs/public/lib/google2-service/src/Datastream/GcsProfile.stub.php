@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class GcsProfile extends \Google\Model
-{
-    /**
-     * Required. The Cloud Storage bucket name.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * The root path inside the Cloud Storage bucket.
-     *
-     * @var string
-     */
-    public $rootPath;
-    /**
-     * Required. The Cloud Storage bucket name.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Datastream {
+    class GcsProfile extends \Google\Model
     {
+        /**
+         * Required. The Cloud Storage bucket name.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * The root path inside the Cloud Storage bucket.
+         *
+         * @var string
+         */
+        public $rootPath;
+        /**
+         * Required. The Cloud Storage bucket name.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * The root path inside the Cloud Storage bucket.
+         *
+         * @param string $rootPath
+         */
+        public function setRootPath($rootPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRootPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\GcsProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * The root path inside the Cloud Storage bucket.
-     *
-     * @param string $rootPath
-     */
-    public function setRootPath($rootPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRootPath()
+    class Google_Service_Datastream_GcsProfile extends \Google\Service\Datastream\GcsProfile
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateDatabaseDdlMetadata extends \Google\Collection
-{
-    protected $collection_key = 'statements';
-    protected $actionsType = DdlStatementActionInfo::class;
-    protected $actionsDataType = 'array';
-    /**
-     * Reports the commit timestamps of all statements that have succeeded so far,
-     * where `commit_timestamps[i]` is the commit timestamp for the statement
-     * `statements[i]`.
-     *
-     * @var string[]
-     */
-    public $commitTimestamps;
-    /**
-     * The database being modified.
-     *
-     * @var string
-     */
-    public $database;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = 'array';
-    /**
-     * For an update this list contains all the statements. For an individual
-     * statement, this list contains only that statement.
-     *
-     * @var string[]
-     */
-    public $statements;
-    /**
-     * Output only. When true, indicates that the operation is throttled, for
-     * example, due to resource constraints. When resources become available the
-     * operation will resume and this field will be false again.
-     *
-     * @var bool
-     */
-    public $throttled;
-    /**
-     * The brief action info for the DDL statements. `actions[i]` is the brief
-     * info for `statements[i]`.
-     *
-     * @param DdlStatementActionInfo[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Spanner {
+    class UpdateDatabaseDdlMetadata extends \Google\Collection
     {
+        protected $collection_key = 'statements';
+        protected $actionsType = DdlStatementActionInfo::class;
+        protected $actionsDataType = 'array';
+        /**
+         * Reports the commit timestamps of all statements that have succeeded so far,
+         * where `commit_timestamps[i]` is the commit timestamp for the statement
+         * `statements[i]`.
+         *
+         * @var string[]
+         */
+        public $commitTimestamps;
+        /**
+         * The database being modified.
+         *
+         * @var string
+         */
+        public $database;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = 'array';
+        /**
+         * For an update this list contains all the statements. For an individual
+         * statement, this list contains only that statement.
+         *
+         * @var string[]
+         */
+        public $statements;
+        /**
+         * Output only. When true, indicates that the operation is throttled, for
+         * example, due to resource constraints. When resources become available the
+         * operation will resume and this field will be false again.
+         *
+         * @var bool
+         */
+        public $throttled;
+        /**
+         * The brief action info for the DDL statements. `actions[i]` is the brief
+         * info for `statements[i]`.
+         *
+         * @param DdlStatementActionInfo[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return DdlStatementActionInfo[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Reports the commit timestamps of all statements that have succeeded so far,
+         * where `commit_timestamps[i]` is the commit timestamp for the statement
+         * `statements[i]`.
+         *
+         * @param string[] $commitTimestamps
+         */
+        public function setCommitTimestamps($commitTimestamps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommitTimestamps()
+        {
+        }
+        /**
+         * The database being modified.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * The progress of the UpdateDatabaseDdl operations. All DDL statements will
+         * have continuously updating progress, and `progress[i]` is the operation
+         * progress for `statements[i]`. Also, `progress[i]` will have start time and
+         * end time populated with commit timestamp of operation, as well as a
+         * progress of 100% once the operation has completed.
+         *
+         * @param OperationProgress[] $progress
+         */
+        public function setProgress($progress)
+        {
+        }
+        /**
+         * @return OperationProgress[]
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * For an update this list contains all the statements. For an individual
+         * statement, this list contains only that statement.
+         *
+         * @param string[] $statements
+         */
+        public function setStatements($statements)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStatements()
+        {
+        }
+        /**
+         * Output only. When true, indicates that the operation is throttled, for
+         * example, due to resource constraints. When resources become available the
+         * operation will resume and this field will be false again.
+         *
+         * @param bool $throttled
+         */
+        public function setThrottled($throttled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getThrottled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DdlStatementActionInfo[]
+     * Runtime class alias of \Google\Service\Spanner\UpdateDatabaseDdlMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Reports the commit timestamps of all statements that have succeeded so far,
-     * where `commit_timestamps[i]` is the commit timestamp for the statement
-     * `statements[i]`.
-     *
-     * @param string[] $commitTimestamps
-     */
-    public function setCommitTimestamps($commitTimestamps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCommitTimestamps()
-    {
-    }
-    /**
-     * The database being modified.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
-    {
-    }
-    /**
-     * The progress of the UpdateDatabaseDdl operations. All DDL statements will
-     * have continuously updating progress, and `progress[i]` is the operation
-     * progress for `statements[i]`. Also, `progress[i]` will have start time and
-     * end time populated with commit timestamp of operation, as well as a
-     * progress of 100% once the operation has completed.
-     *
-     * @param OperationProgress[] $progress
-     */
-    public function setProgress($progress)
-    {
-    }
-    /**
-     * @return OperationProgress[]
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * For an update this list contains all the statements. For an individual
-     * statement, this list contains only that statement.
-     *
-     * @param string[] $statements
-     */
-    public function setStatements($statements)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStatements()
-    {
-    }
-    /**
-     * Output only. When true, indicates that the operation is throttled, for
-     * example, due to resource constraints. When resources become available the
-     * operation will resume and this field will be false again.
-     *
-     * @param bool $throttled
-     */
-    public function setThrottled($throttled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getThrottled()
+    class Google_Service_Spanner_UpdateDatabaseDdlMetadata extends \Google\Service\Spanner\UpdateDatabaseDdlMetadata
     {
     }
 }

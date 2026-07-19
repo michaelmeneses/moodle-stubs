@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class StackPack extends \Google\Model
-{
-    /**
-     * The stack pack advice strings.
-     *
-     * @var string[]
-     */
-    public $descriptions;
-    /**
-     * The stack pack icon data uri.
-     *
-     * @var string
-     */
-    public $iconDataURL;
-    /**
-     * The stack pack id.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The stack pack title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The stack pack advice strings.
-     *
-     * @param string[] $descriptions
-     */
-    public function setDescriptions($descriptions)
+namespace Google\Service\PagespeedInsights {
+    class StackPack extends \Google\Model
     {
+        /**
+         * The stack pack advice strings.
+         *
+         * @var string[]
+         */
+        public $descriptions;
+        /**
+         * The stack pack icon data uri.
+         *
+         * @var string
+         */
+        public $iconDataURL;
+        /**
+         * The stack pack id.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The stack pack title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The stack pack advice strings.
+         *
+         * @param string[] $descriptions
+         */
+        public function setDescriptions($descriptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDescriptions()
+        {
+        }
+        /**
+         * The stack pack icon data uri.
+         *
+         * @param string $iconDataURL
+         */
+        public function setIconDataURL($iconDataURL)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconDataURL()
+        {
+        }
+        /**
+         * The stack pack id.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The stack pack title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PagespeedInsights\StackPack registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescriptions()
-    {
-    }
-    /**
-     * The stack pack icon data uri.
-     *
-     * @param string $iconDataURL
-     */
-    public function setIconDataURL($iconDataURL)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconDataURL()
-    {
-    }
-    /**
-     * The stack pack id.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The stack pack title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_PagespeedInsights_StackPack extends \Google\Service\PagespeedInsights\StackPack
     {
     }
 }

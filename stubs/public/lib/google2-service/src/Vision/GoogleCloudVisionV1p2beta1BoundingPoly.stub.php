@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1BoundingPoly extends \Google\Collection
-{
-    protected $collection_key = 'vertices';
-    protected $normalizedVerticesType = GoogleCloudVisionV1p2beta1NormalizedVertex::class;
-    protected $normalizedVerticesDataType = 'array';
-    protected $verticesType = GoogleCloudVisionV1p2beta1Vertex::class;
-    protected $verticesDataType = 'array';
-    /**
-     * The bounding polygon normalized vertices.
-     *
-     * @param GoogleCloudVisionV1p2beta1NormalizedVertex[] $normalizedVertices
-     */
-    public function setNormalizedVertices($normalizedVertices)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1BoundingPoly extends \Google\Collection
     {
+        protected $collection_key = 'vertices';
+        protected $normalizedVerticesType = GoogleCloudVisionV1p2beta1NormalizedVertex::class;
+        protected $normalizedVerticesDataType = 'array';
+        protected $verticesType = GoogleCloudVisionV1p2beta1Vertex::class;
+        protected $verticesDataType = 'array';
+        /**
+         * The bounding polygon normalized vertices.
+         *
+         * @param GoogleCloudVisionV1p2beta1NormalizedVertex[] $normalizedVertices
+         */
+        public function setNormalizedVertices($normalizedVertices)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1NormalizedVertex[]
+         */
+        public function getNormalizedVertices()
+        {
+        }
+        /**
+         * The bounding polygon vertices.
+         *
+         * @param GoogleCloudVisionV1p2beta1Vertex[] $vertices
+         */
+        public function setVertices($vertices)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1Vertex[]
+         */
+        public function getVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p2beta1NormalizedVertex[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1BoundingPoly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedVertices()
-    {
-    }
-    /**
-     * The bounding polygon vertices.
-     *
-     * @param GoogleCloudVisionV1p2beta1Vertex[] $vertices
-     */
-    public function setVertices($vertices)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1Vertex[]
-     */
-    public function getVertices()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1BoundingPoly extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1BoundingPoly
     {
     }
 }

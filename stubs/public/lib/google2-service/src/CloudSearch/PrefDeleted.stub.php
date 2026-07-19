@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PrefDeleted extends \Google\Model
-{
+namespace Google\Service\CloudSearch {
+    class PrefDeleted extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\PrefDeleted registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_PrefDeleted extends \Google\Service\CloudSearch\PrefDeleted
+    {
+    }
 }

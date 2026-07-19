@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TimestampSplit extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TimestampSplit extends \Google\Model
+    {
+        /**
+         * Required. The key is a name of one of the Dataset's data columns. The
+         * values of the key (the values in the column) must be in RFC 3339 `date-
+         * time` format, where `time-offset` = `"Z"` (e.g. 1985-04-12T23:20:50.52Z).
+         * If for a piece of data the key is not present or has an invalid value, that
+         * piece is ignored by the pipeline.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The fraction of the input data that is to be used to evaluate the Model.
+         *
+         * @var 
+         */
+        public $testFraction;
+        /**
+         * The fraction of the input data that is to be used to train the Model.
+         *
+         * @var 
+         */
+        public $trainingFraction;
+        /**
+         * The fraction of the input data that is to be used to validate the Model.
+         *
+         * @var 
+         */
+        public $validationFraction;
+        /**
+         * Required. The key is a name of one of the Dataset's data columns. The
+         * values of the key (the values in the column) must be in RFC 3339 `date-
+         * time` format, where `time-offset` = `"Z"` (e.g. 1985-04-12T23:20:50.52Z).
+         * If for a piece of data the key is not present or has an invalid value, that
+         * piece is ignored by the pipeline.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        public function setTestFraction($testFraction)
+        {
+        }
+        public function getTestFraction()
+        {
+        }
+        public function setTrainingFraction($trainingFraction)
+        {
+        }
+        public function getTrainingFraction()
+        {
+        }
+        public function setValidationFraction($validationFraction)
+        {
+        }
+        public function getValidationFraction()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Required. The key is a name of one of the Dataset's data columns. The
-     * values of the key (the values in the column) must be in RFC 3339 `date-
-     * time` format, where `time-offset` = `"Z"` (e.g. 1985-04-12T23:20:50.52Z).
-     * If for a piece of data the key is not present or has an invalid value, that
-     * piece is ignored by the pipeline.
-     *
-     * @var string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TimestampSplit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $key;
-    /**
-     * The fraction of the input data that is to be used to evaluate the Model.
-     *
-     * @var 
-     */
-    public $testFraction;
-    /**
-     * The fraction of the input data that is to be used to train the Model.
-     *
-     * @var 
-     */
-    public $trainingFraction;
-    /**
-     * The fraction of the input data that is to be used to validate the Model.
-     *
-     * @var 
-     */
-    public $validationFraction;
-    /**
-     * Required. The key is a name of one of the Dataset's data columns. The
-     * values of the key (the values in the column) must be in RFC 3339 `date-
-     * time` format, where `time-offset` = `"Z"` (e.g. 1985-04-12T23:20:50.52Z).
-     * If for a piece of data the key is not present or has an invalid value, that
-     * piece is ignored by the pipeline.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    public function setTestFraction($testFraction)
-    {
-    }
-    public function getTestFraction()
-    {
-    }
-    public function setTrainingFraction($trainingFraction)
-    {
-    }
-    public function getTrainingFraction()
-    {
-    }
-    public function setValidationFraction($validationFraction)
-    {
-    }
-    public function getValidationFraction()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TimestampSplit extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TimestampSplit
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FindingLimits extends \Google\Collection
-{
-    protected $collection_key = 'maxFindingsPerInfoType';
-    protected $maxFindingsPerInfoTypeType = GooglePrivacyDlpV2InfoTypeLimit::class;
-    protected $maxFindingsPerInfoTypeDataType = 'array';
-    /**
-     * Max number of findings that are returned for each item scanned. When set
-     * within an InspectContentRequest, this field is ignored. This value isn't a
-     * hard limit. If the number of findings for an item reaches this limit, the
-     * inspection of that item ends gradually, not abruptly. Therefore, the actual
-     * number of findings that Cloud DLP returns for the item can be multiple
-     * times higher than this value.
-     *
-     * @var int
-     */
-    public $maxFindingsPerItem;
-    /**
-     * Max number of findings that are returned per request or job. If you set
-     * this field in an InspectContentRequest, the resulting maximum value is the
-     * value that you set or 3,000, whichever is lower. This value isn't a hard
-     * limit. If an inspection reaches this limit, the inspection ends gradually,
-     * not abruptly. Therefore, the actual number of findings that Cloud DLP
-     * returns can be multiple times higher than this value.
-     *
-     * @var int
-     */
-    public $maxFindingsPerRequest;
-    /**
-     * Configuration of findings limit given for specified infoTypes.
-     *
-     * @param GooglePrivacyDlpV2InfoTypeLimit[] $maxFindingsPerInfoType
-     */
-    public function setMaxFindingsPerInfoType($maxFindingsPerInfoType)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FindingLimits extends \Google\Collection
     {
+        protected $collection_key = 'maxFindingsPerInfoType';
+        protected $maxFindingsPerInfoTypeType = GooglePrivacyDlpV2InfoTypeLimit::class;
+        protected $maxFindingsPerInfoTypeDataType = 'array';
+        /**
+         * Max number of findings that are returned for each item scanned. When set
+         * within an InspectContentRequest, this field is ignored. This value isn't a
+         * hard limit. If the number of findings for an item reaches this limit, the
+         * inspection of that item ends gradually, not abruptly. Therefore, the actual
+         * number of findings that Cloud DLP returns for the item can be multiple
+         * times higher than this value.
+         *
+         * @var int
+         */
+        public $maxFindingsPerItem;
+        /**
+         * Max number of findings that are returned per request or job. If you set
+         * this field in an InspectContentRequest, the resulting maximum value is the
+         * value that you set or 3,000, whichever is lower. This value isn't a hard
+         * limit. If an inspection reaches this limit, the inspection ends gradually,
+         * not abruptly. Therefore, the actual number of findings that Cloud DLP
+         * returns can be multiple times higher than this value.
+         *
+         * @var int
+         */
+        public $maxFindingsPerRequest;
+        /**
+         * Configuration of findings limit given for specified infoTypes.
+         *
+         * @param GooglePrivacyDlpV2InfoTypeLimit[] $maxFindingsPerInfoType
+         */
+        public function setMaxFindingsPerInfoType($maxFindingsPerInfoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoTypeLimit[]
+         */
+        public function getMaxFindingsPerInfoType()
+        {
+        }
+        /**
+         * Max number of findings that are returned for each item scanned. When set
+         * within an InspectContentRequest, this field is ignored. This value isn't a
+         * hard limit. If the number of findings for an item reaches this limit, the
+         * inspection of that item ends gradually, not abruptly. Therefore, the actual
+         * number of findings that Cloud DLP returns for the item can be multiple
+         * times higher than this value.
+         *
+         * @param int $maxFindingsPerItem
+         */
+        public function setMaxFindingsPerItem($maxFindingsPerItem)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxFindingsPerItem()
+        {
+        }
+        /**
+         * Max number of findings that are returned per request or job. If you set
+         * this field in an InspectContentRequest, the resulting maximum value is the
+         * value that you set or 3,000, whichever is lower. This value isn't a hard
+         * limit. If an inspection reaches this limit, the inspection ends gradually,
+         * not abruptly. Therefore, the actual number of findings that Cloud DLP
+         * returns can be multiple times higher than this value.
+         *
+         * @param int $maxFindingsPerRequest
+         */
+        public function setMaxFindingsPerRequest($maxFindingsPerRequest)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxFindingsPerRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoTypeLimit[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FindingLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxFindingsPerInfoType()
-    {
-    }
-    /**
-     * Max number of findings that are returned for each item scanned. When set
-     * within an InspectContentRequest, this field is ignored. This value isn't a
-     * hard limit. If the number of findings for an item reaches this limit, the
-     * inspection of that item ends gradually, not abruptly. Therefore, the actual
-     * number of findings that Cloud DLP returns for the item can be multiple
-     * times higher than this value.
-     *
-     * @param int $maxFindingsPerItem
-     */
-    public function setMaxFindingsPerItem($maxFindingsPerItem)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxFindingsPerItem()
-    {
-    }
-    /**
-     * Max number of findings that are returned per request or job. If you set
-     * this field in an InspectContentRequest, the resulting maximum value is the
-     * value that you set or 3,000, whichever is lower. This value isn't a hard
-     * limit. If an inspection reaches this limit, the inspection ends gradually,
-     * not abruptly. Therefore, the actual number of findings that Cloud DLP
-     * returns can be multiple times higher than this value.
-     *
-     * @param int $maxFindingsPerRequest
-     */
-    public function setMaxFindingsPerRequest($maxFindingsPerRequest)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxFindingsPerRequest()
+    class Google_Service_DLP_GooglePrivacyDlpV2FindingLimits extends \Google\Service\DLP\GooglePrivacyDlpV2FindingLimits
     {
     }
 }

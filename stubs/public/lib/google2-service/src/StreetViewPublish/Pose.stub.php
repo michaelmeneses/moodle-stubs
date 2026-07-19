@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class Pose extends \Google\Model
-{
+namespace Google\Service\StreetViewPublish {
+    class Pose extends \Google\Model
+    {
+        /**
+         * The estimated horizontal accuracy of this pose in meters with 68%
+         * confidence (one standard deviation). For example, on Android, this value is
+         * available from this method: https://developer.android.com/reference/android
+         * /location/Location#getAccuracy(). Other platforms have different methods of
+         * obtaining similar accuracy estimations.
+         *
+         * @var float
+         */
+        public $accuracyMeters;
+        /**
+         * Altitude of the pose in meters above WGS84 ellipsoid. NaN indicates an
+         * unmeasured quantity.
+         *
+         * @var 
+         */
+        public $altitude;
+        /**
+         * Time of the GPS record since UTC epoch.
+         *
+         * @var string
+         */
+        public $gpsRecordTimestampUnixEpoch;
+        /**
+         * The following pose parameters pertain to the center of the photo. They
+         * match https://developers.google.com/streetview/spherical-metadata. Compass
+         * heading, measured at the center of the photo in degrees clockwise from
+         * North. Value must be >=0 and <360. NaN indicates an unmeasured quantity.
+         *
+         * @var 
+         */
+        public $heading;
+        protected $latLngPairType = LatLng::class;
+        protected $latLngPairDataType = '';
+        protected $levelType = Level::class;
+        protected $levelDataType = '';
+        /**
+         * Pitch, measured at the center of the photo in degrees. Value must be >=-90
+         * and <= 90. A value of -90 means looking directly down, and a value of 90
+         * means looking directly up. NaN indicates an unmeasured quantity.
+         *
+         * @var 
+         */
+        public $pitch;
+        /**
+         * Roll, measured in degrees. Value must be >= 0 and <360. A value of 0 means
+         * level with the horizon. NaN indicates an unmeasured quantity.
+         *
+         * @var 
+         */
+        public $roll;
+        /**
+         * The estimated horizontal accuracy of this pose in meters with 68%
+         * confidence (one standard deviation). For example, on Android, this value is
+         * available from this method: https://developer.android.com/reference/android
+         * /location/Location#getAccuracy(). Other platforms have different methods of
+         * obtaining similar accuracy estimations.
+         *
+         * @param float $accuracyMeters
+         */
+        public function setAccuracyMeters($accuracyMeters)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAccuracyMeters()
+        {
+        }
+        public function setAltitude($altitude)
+        {
+        }
+        public function getAltitude()
+        {
+        }
+        /**
+         * Time of the GPS record since UTC epoch.
+         *
+         * @param string $gpsRecordTimestampUnixEpoch
+         */
+        public function setGpsRecordTimestampUnixEpoch($gpsRecordTimestampUnixEpoch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGpsRecordTimestampUnixEpoch()
+        {
+        }
+        public function setHeading($heading)
+        {
+        }
+        public function getHeading()
+        {
+        }
+        /**
+         * Latitude and longitude pair of the pose, as explained here:
+         * https://cloud.google.com/datastore/docs/reference/rest/Shared.Types/LatLng
+         * When creating a Photo, if the latitude and longitude pair are not provided,
+         * the geolocation from the exif header is used. A latitude and longitude pair
+         * not provided in the photo or exif header causes the photo process to fail.
+         *
+         * @param LatLng $latLngPair
+         */
+        public function setLatLngPair(LatLng $latLngPair)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getLatLngPair()
+        {
+        }
+        /**
+         * Level (the floor in a building) used to configure vertical navigation.
+         *
+         * @param Level $level
+         */
+        public function setLevel(Level $level)
+        {
+        }
+        /**
+         * @return Level
+         */
+        public function getLevel()
+        {
+        }
+        public function setPitch($pitch)
+        {
+        }
+        public function getPitch()
+        {
+        }
+        public function setRoll($roll)
+        {
+        }
+        public function getRoll()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The estimated horizontal accuracy of this pose in meters with 68%
-     * confidence (one standard deviation). For example, on Android, this value is
-     * available from this method: https://developer.android.com/reference/android
-     * /location/Location#getAccuracy(). Other platforms have different methods of
-     * obtaining similar accuracy estimations.
-     *
-     * @var float
+     * Runtime class alias of \Google\Service\StreetViewPublish\Pose registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $accuracyMeters;
-    /**
-     * Altitude of the pose in meters above WGS84 ellipsoid. NaN indicates an
-     * unmeasured quantity.
-     *
-     * @var 
-     */
-    public $altitude;
-    /**
-     * Time of the GPS record since UTC epoch.
-     *
-     * @var string
-     */
-    public $gpsRecordTimestampUnixEpoch;
-    /**
-     * The following pose parameters pertain to the center of the photo. They
-     * match https://developers.google.com/streetview/spherical-metadata. Compass
-     * heading, measured at the center of the photo in degrees clockwise from
-     * North. Value must be >=0 and <360. NaN indicates an unmeasured quantity.
-     *
-     * @var 
-     */
-    public $heading;
-    protected $latLngPairType = LatLng::class;
-    protected $latLngPairDataType = '';
-    protected $levelType = Level::class;
-    protected $levelDataType = '';
-    /**
-     * Pitch, measured at the center of the photo in degrees. Value must be >=-90
-     * and <= 90. A value of -90 means looking directly down, and a value of 90
-     * means looking directly up. NaN indicates an unmeasured quantity.
-     *
-     * @var 
-     */
-    public $pitch;
-    /**
-     * Roll, measured in degrees. Value must be >= 0 and <360. A value of 0 means
-     * level with the horizon. NaN indicates an unmeasured quantity.
-     *
-     * @var 
-     */
-    public $roll;
-    /**
-     * The estimated horizontal accuracy of this pose in meters with 68%
-     * confidence (one standard deviation). For example, on Android, this value is
-     * available from this method: https://developer.android.com/reference/android
-     * /location/Location#getAccuracy(). Other platforms have different methods of
-     * obtaining similar accuracy estimations.
-     *
-     * @param float $accuracyMeters
-     */
-    public function setAccuracyMeters($accuracyMeters)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAccuracyMeters()
-    {
-    }
-    public function setAltitude($altitude)
-    {
-    }
-    public function getAltitude()
-    {
-    }
-    /**
-     * Time of the GPS record since UTC epoch.
-     *
-     * @param string $gpsRecordTimestampUnixEpoch
-     */
-    public function setGpsRecordTimestampUnixEpoch($gpsRecordTimestampUnixEpoch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGpsRecordTimestampUnixEpoch()
-    {
-    }
-    public function setHeading($heading)
-    {
-    }
-    public function getHeading()
-    {
-    }
-    /**
-     * Latitude and longitude pair of the pose, as explained here:
-     * https://cloud.google.com/datastore/docs/reference/rest/Shared.Types/LatLng
-     * When creating a Photo, if the latitude and longitude pair are not provided,
-     * the geolocation from the exif header is used. A latitude and longitude pair
-     * not provided in the photo or exif header causes the photo process to fail.
-     *
-     * @param LatLng $latLngPair
-     */
-    public function setLatLngPair(LatLng $latLngPair)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getLatLngPair()
-    {
-    }
-    /**
-     * Level (the floor in a building) used to configure vertical navigation.
-     *
-     * @param Level $level
-     */
-    public function setLevel(Level $level)
-    {
-    }
-    /**
-     * @return Level
-     */
-    public function getLevel()
-    {
-    }
-    public function setPitch($pitch)
-    {
-    }
-    public function getPitch()
-    {
-    }
-    public function setRoll($roll)
-    {
-    }
-    public function getRoll()
+    class Google_Service_StreetViewPublish_Pose extends \Google\Service\StreetViewPublish\Pose
     {
     }
 }

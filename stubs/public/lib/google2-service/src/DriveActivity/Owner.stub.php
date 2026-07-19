@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Owner extends \Google\Model
-{
-    protected $domainType = Domain::class;
-    protected $domainDataType = '';
-    protected $driveType = DriveReference::class;
-    protected $driveDataType = '';
-    protected $teamDriveType = TeamDriveReference::class;
-    protected $teamDriveDataType = '';
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * The domain of the Drive item owner.
-     *
-     * @param Domain $domain
-     */
-    public function setDomain(Domain $domain)
+namespace Google\Service\DriveActivity {
+    class Owner extends \Google\Model
     {
+        protected $domainType = Domain::class;
+        protected $domainDataType = '';
+        protected $driveType = DriveReference::class;
+        protected $driveDataType = '';
+        protected $teamDriveType = TeamDriveReference::class;
+        protected $teamDriveDataType = '';
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * The domain of the Drive item owner.
+         *
+         * @param Domain $domain
+         */
+        public function setDomain(Domain $domain)
+        {
+        }
+        /**
+         * @return Domain
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * The drive that owns the item.
+         *
+         * @param DriveReference $drive
+         */
+        public function setDrive(DriveReference $drive)
+        {
+        }
+        /**
+         * @return DriveReference
+         */
+        public function getDrive()
+        {
+        }
+        /**
+         * This field is deprecated; please use the `drive` field instead.
+         *
+         * @deprecated
+         * @param TeamDriveReference $teamDrive
+         */
+        public function setTeamDrive(TeamDriveReference $teamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return TeamDriveReference
+         */
+        public function getTeamDrive()
+        {
+        }
+        /**
+         * The user that owns the Drive item.
+         *
+         * @param User $user
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Domain
+     * Runtime class alias of \Google\Service\DriveActivity\Owner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * The drive that owns the item.
-     *
-     * @param DriveReference $drive
-     */
-    public function setDrive(DriveReference $drive)
-    {
-    }
-    /**
-     * @return DriveReference
-     */
-    public function getDrive()
-    {
-    }
-    /**
-     * This field is deprecated; please use the `drive` field instead.
-     *
-     * @deprecated
-     * @param TeamDriveReference $teamDrive
-     */
-    public function setTeamDrive(TeamDriveReference $teamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return TeamDriveReference
-     */
-    public function getTeamDrive()
-    {
-    }
-    /**
-     * The user that owns the Drive item.
-     *
-     * @param User $user
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
+    class Google_Service_DriveActivity_Owner extends \Google\Service\DriveActivity\Owner
     {
     }
 }

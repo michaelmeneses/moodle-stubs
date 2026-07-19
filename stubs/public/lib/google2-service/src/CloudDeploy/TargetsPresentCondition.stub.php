@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TargetsPresentCondition extends \Google\Collection
-{
-    protected $collection_key = 'missingTargets';
-    /**
-     * The list of Target names that do not exist. For example,
-     * `projects/{project_id}/locations/{location_name}/targets/{target_name}`.
-     *
-     * @var string[]
-     */
-    public $missingTargets;
-    /**
-     * True if there aren't any missing Targets.
-     *
-     * @var bool
-     */
-    public $status;
-    /**
-     * Last time the condition was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The list of Target names that do not exist. For example,
-     * `projects/{project_id}/locations/{location_name}/targets/{target_name}`.
-     *
-     * @param string[] $missingTargets
-     */
-    public function setMissingTargets($missingTargets)
+namespace Google\Service\CloudDeploy {
+    class TargetsPresentCondition extends \Google\Collection
     {
+        protected $collection_key = 'missingTargets';
+        /**
+         * The list of Target names that do not exist. For example,
+         * `projects/{project_id}/locations/{location_name}/targets/{target_name}`.
+         *
+         * @var string[]
+         */
+        public $missingTargets;
+        /**
+         * True if there aren't any missing Targets.
+         *
+         * @var bool
+         */
+        public $status;
+        /**
+         * Last time the condition was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The list of Target names that do not exist. For example,
+         * `projects/{project_id}/locations/{location_name}/targets/{target_name}`.
+         *
+         * @param string[] $missingTargets
+         */
+        public function setMissingTargets($missingTargets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMissingTargets()
+        {
+        }
+        /**
+         * True if there aren't any missing Targets.
+         *
+         * @param bool $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Last time the condition was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\TargetsPresentCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMissingTargets()
-    {
-    }
-    /**
-     * True if there aren't any missing Targets.
-     *
-     * @param bool $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Last time the condition was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDeploy_TargetsPresentCondition extends \Google\Service\CloudDeploy\TargetsPresentCondition
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelLockCapabilities extends \Google\Model
-{
-    /**
-     * True if the user is authorized to view the policy.
-     *
-     * @var bool
-     */
-    public $canViewPolicy;
-    /**
-     * True if the user is authorized to view the policy.
-     *
-     * @param bool $canViewPolicy
-     */
-    public function setCanViewPolicy($canViewPolicy)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelLockCapabilities extends \Google\Model
     {
+        /**
+         * True if the user is authorized to view the policy.
+         *
+         * @var bool
+         */
+        public $canViewPolicy;
+        /**
+         * True if the user is authorized to view the policy.
+         *
+         * @param bool $canViewPolicy
+         */
+        public function setCanViewPolicy($canViewPolicy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanViewPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelLockCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanViewPolicy()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelLockCapabilities extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelLockCapabilities
     {
     }
 }

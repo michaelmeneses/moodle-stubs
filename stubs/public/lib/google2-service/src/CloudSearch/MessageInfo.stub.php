@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $authorUserType;
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * @var string
-     */
-    public $searcherMembershipState;
-    /**
-     * @param string
-     */
-    public function setAuthorUserType($authorUserType)
+namespace Google\Service\CloudSearch {
+    class MessageInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $authorUserType;
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * @var string
+         */
+        public $searcherMembershipState;
+        /**
+         * @param string
+         */
+        public function setAuthorUserType($authorUserType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorUserType()
+        {
+        }
+        /**
+         * @param Message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSearcherMembershipState($searcherMembershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearcherMembershipState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\MessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorUserType()
-    {
-    }
-    /**
-     * @param Message
-     */
-    public function setMessage(Message $message)
-    {
-    }
-    /**
-     * @return Message
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSearcherMembershipState($searcherMembershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearcherMembershipState()
+    class Google_Service_CloudSearch_MessageInfo extends \Google\Service\CloudSearch\MessageInfo
     {
     }
 }

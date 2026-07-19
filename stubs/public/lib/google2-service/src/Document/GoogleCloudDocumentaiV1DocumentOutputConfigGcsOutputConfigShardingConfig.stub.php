@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfigShardingConfig extends \Google\Model
-{
-    /**
-     * The number of overlapping pages between consecutive shards.
-     *
-     * @var int
-     */
-    public $pagesOverlap;
-    /**
-     * The number of pages per shard.
-     *
-     * @var int
-     */
-    public $pagesPerShard;
-    /**
-     * The number of overlapping pages between consecutive shards.
-     *
-     * @param int $pagesOverlap
-     */
-    public function setPagesOverlap($pagesOverlap)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfigShardingConfig extends \Google\Model
     {
+        /**
+         * The number of overlapping pages between consecutive shards.
+         *
+         * @var int
+         */
+        public $pagesOverlap;
+        /**
+         * The number of pages per shard.
+         *
+         * @var int
+         */
+        public $pagesPerShard;
+        /**
+         * The number of overlapping pages between consecutive shards.
+         *
+         * @param int $pagesOverlap
+         */
+        public function setPagesOverlap($pagesOverlap)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPagesOverlap()
+        {
+        }
+        /**
+         * The number of pages per shard.
+         *
+         * @param int $pagesPerShard
+         */
+        public function setPagesPerShard($pagesPerShard)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPagesPerShard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfigShardingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPagesOverlap()
-    {
-    }
-    /**
-     * The number of pages per shard.
-     *
-     * @param int $pagesPerShard
-     */
-    public function setPagesPerShard($pagesPerShard)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPagesPerShard()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfigShardingConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfigShardingConfig
     {
     }
 }

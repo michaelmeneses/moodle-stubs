@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourceStatusReservationConsumptionInfo extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] The full resource name of the reservation that
-     * this instance is consuming from.
-     *
-     * @var string
-     */
-    public $consumedReservation;
-    /**
-     * Output only. [Output Only] The full resource name of the reservation that
-     * this instance is consuming from.
-     *
-     * @param string $consumedReservation
-     */
-    public function setConsumedReservation($consumedReservation)
+namespace Google\Service\Compute {
+    class ResourceStatusReservationConsumptionInfo extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] The full resource name of the reservation that
+         * this instance is consuming from.
+         *
+         * @var string
+         */
+        public $consumedReservation;
+        /**
+         * Output only. [Output Only] The full resource name of the reservation that
+         * this instance is consuming from.
+         *
+         * @param string $consumedReservation
+         */
+        public function setConsumedReservation($consumedReservation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumedReservation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourceStatusReservationConsumptionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumedReservation()
+    class Google_Service_Compute_ResourceStatusReservationConsumptionInfo extends \Google\Service\Compute\ResourceStatusReservationConsumptionInfo
     {
     }
 }

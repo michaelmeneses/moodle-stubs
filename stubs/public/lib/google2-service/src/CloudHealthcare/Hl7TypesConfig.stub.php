@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Hl7TypesConfig extends \Google\Collection
-{
-    protected $collection_key = 'version';
-    protected $typeType = Type::class;
-    protected $typeDataType = 'array';
-    protected $versionType = VersionSource::class;
-    protected $versionDataType = 'array';
-    /**
-     * The HL7v2 type definitions.
-     *
-     * @param Type[] $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudHealthcare {
+    class Hl7TypesConfig extends \Google\Collection
     {
+        protected $collection_key = 'version';
+        protected $typeType = Type::class;
+        protected $typeDataType = 'array';
+        protected $versionType = VersionSource::class;
+        protected $versionDataType = 'array';
+        /**
+         * The HL7v2 type definitions.
+         *
+         * @param Type[] $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return Type[]
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The version selectors that this config applies to. A message must match ALL
+         * version sources to apply.
+         *
+         * @param VersionSource[] $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return VersionSource[]
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Type[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\Hl7TypesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The version selectors that this config applies to. A message must match ALL
-     * version sources to apply.
-     *
-     * @param VersionSource[] $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return VersionSource[]
-     */
-    public function getVersion()
+    class Google_Service_CloudHealthcare_Hl7TypesConfig extends \Google\Service\CloudHealthcare\Hl7TypesConfig
     {
     }
 }

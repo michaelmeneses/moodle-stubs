@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Question answering relevance instance.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Question answering relevance instance.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for question answering relevance score metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for question answering relevance score metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput
     {
     }
 }

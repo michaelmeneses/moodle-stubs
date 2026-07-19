@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec extends \Google\Model
-{
-    /**
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param array[]
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec extends \Google\Model
     {
+        /**
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param array[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec
     {
     }
 }

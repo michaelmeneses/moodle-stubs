@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class NodeAffinity extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const OPERATOR_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
-    /**
-     * Requires Compute Engine to seek for matched nodes.
-     */
-    public const OPERATOR_IN = 'IN';
-    /**
-     * Requires Compute Engine to avoid certain nodes.
-     */
-    public const OPERATOR_NOT_IN = 'NOT_IN';
-    protected $collection_key = 'values';
-    /**
-     * Optional. Corresponds to the label key of Node resource.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. Defines the operation of node selection.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Optional. Corresponds to the label values of Node resource.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Optional. Corresponds to the label key of Node resource.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Backupdr {
+    class NodeAffinity extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const OPERATOR_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
+        /**
+         * Requires Compute Engine to seek for matched nodes.
+         */
+        public const OPERATOR_IN = 'IN';
+        /**
+         * Requires Compute Engine to avoid certain nodes.
+         */
+        public const OPERATOR_NOT_IN = 'NOT_IN';
+        protected $collection_key = 'values';
+        /**
+         * Optional. Corresponds to the label key of Node resource.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. Defines the operation of node selection.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Optional. Corresponds to the label values of Node resource.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Optional. Corresponds to the label key of Node resource.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. Defines the operation of node selection.
+         *
+         * Accepted values: OPERATOR_UNSPECIFIED, IN, NOT_IN
+         *
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Optional. Corresponds to the label values of Node resource.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\NodeAffinity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. Defines the operation of node selection.
-     *
-     * Accepted values: OPERATOR_UNSPECIFIED, IN, NOT_IN
-     *
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Optional. Corresponds to the label values of Node resource.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Backupdr_NodeAffinity extends \Google\Service\Backupdr\NodeAffinity
     {
     }
 }

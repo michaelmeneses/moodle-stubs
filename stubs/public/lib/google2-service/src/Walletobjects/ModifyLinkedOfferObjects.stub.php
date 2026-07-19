@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ModifyLinkedOfferObjects extends \Google\Collection
-{
-    protected $collection_key = 'removeLinkedOfferObjectIds';
-    /**
-     * The linked offer object ids to add to the object.
-     *
-     * @var string[]
-     */
-    public $addLinkedOfferObjectIds;
-    /**
-     * The linked offer object ids to remove from the object.
-     *
-     * @var string[]
-     */
-    public $removeLinkedOfferObjectIds;
-    /**
-     * The linked offer object ids to add to the object.
-     *
-     * @param string[] $addLinkedOfferObjectIds
-     */
-    public function setAddLinkedOfferObjectIds($addLinkedOfferObjectIds)
+namespace Google\Service\Walletobjects {
+    class ModifyLinkedOfferObjects extends \Google\Collection
     {
+        protected $collection_key = 'removeLinkedOfferObjectIds';
+        /**
+         * The linked offer object ids to add to the object.
+         *
+         * @var string[]
+         */
+        public $addLinkedOfferObjectIds;
+        /**
+         * The linked offer object ids to remove from the object.
+         *
+         * @var string[]
+         */
+        public $removeLinkedOfferObjectIds;
+        /**
+         * The linked offer object ids to add to the object.
+         *
+         * @param string[] $addLinkedOfferObjectIds
+         */
+        public function setAddLinkedOfferObjectIds($addLinkedOfferObjectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddLinkedOfferObjectIds()
+        {
+        }
+        /**
+         * The linked offer object ids to remove from the object.
+         *
+         * @param string[] $removeLinkedOfferObjectIds
+         */
+        public function setRemoveLinkedOfferObjectIds($removeLinkedOfferObjectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemoveLinkedOfferObjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Walletobjects\ModifyLinkedOfferObjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddLinkedOfferObjectIds()
-    {
-    }
-    /**
-     * The linked offer object ids to remove from the object.
-     *
-     * @param string[] $removeLinkedOfferObjectIds
-     */
-    public function setRemoveLinkedOfferObjectIds($removeLinkedOfferObjectIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemoveLinkedOfferObjectIds()
+    class Google_Service_Walletobjects_ModifyLinkedOfferObjects extends \Google\Service\Walletobjects\ModifyLinkedOfferObjects
     {
     }
 }

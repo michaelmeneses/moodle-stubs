@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class UpdateDocumentStyleRequest extends \Google\Model
-{
-    protected $documentStyleType = DocumentStyle::class;
-    protected $documentStyleDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `document_style` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the background, set `fields` to `"background"`.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The tab that contains the style to update. When omitted, the request
-     * applies to the first tab. In a document containing a single tab: - If
-     * provided, must match the singular tab's ID. - If omitted, the request
-     * applies to the singular tab. In a document containing multiple tabs: - If
-     * provided, the request applies to the specified tab. - If not provided, the
-     * request applies to the first tab in the document.
-     *
-     * @var string
-     */
-    public $tabId;
-    /**
-     * The styles to set on the document. Certain document style changes may cause
-     * other changes in order to mirror the behavior of the Docs editor. See the
-     * documentation of DocumentStyle for more information.
-     *
-     * @param DocumentStyle $documentStyle
-     */
-    public function setDocumentStyle(DocumentStyle $documentStyle)
+namespace Google\Service\Docs {
+    class UpdateDocumentStyleRequest extends \Google\Model
     {
+        protected $documentStyleType = DocumentStyle::class;
+        protected $documentStyleDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `document_style` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the background, set `fields` to `"background"`.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The tab that contains the style to update. When omitted, the request
+         * applies to the first tab. In a document containing a single tab: - If
+         * provided, must match the singular tab's ID. - If omitted, the request
+         * applies to the singular tab. In a document containing multiple tabs: - If
+         * provided, the request applies to the specified tab. - If not provided, the
+         * request applies to the first tab in the document.
+         *
+         * @var string
+         */
+        public $tabId;
+        /**
+         * The styles to set on the document. Certain document style changes may cause
+         * other changes in order to mirror the behavior of the Docs editor. See the
+         * documentation of DocumentStyle for more information.
+         *
+         * @param DocumentStyle $documentStyle
+         */
+        public function setDocumentStyle(DocumentStyle $documentStyle)
+        {
+        }
+        /**
+         * @return DocumentStyle
+         */
+        public function getDocumentStyle()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `document_style` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the background, set `fields` to `"background"`.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The tab that contains the style to update. When omitted, the request
+         * applies to the first tab. In a document containing a single tab: - If
+         * provided, must match the singular tab's ID. - If omitted, the request
+         * applies to the singular tab. In a document containing multiple tabs: - If
+         * provided, the request applies to the specified tab. - If not provided, the
+         * request applies to the first tab in the document.
+         *
+         * @param string $tabId
+         */
+        public function setTabId($tabId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTabId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DocumentStyle
+     * Runtime class alias of \Google\Service\Docs\UpdateDocumentStyleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentStyle()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `document_style` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the background, set `fields` to `"background"`.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * The tab that contains the style to update. When omitted, the request
-     * applies to the first tab. In a document containing a single tab: - If
-     * provided, must match the singular tab's ID. - If omitted, the request
-     * applies to the singular tab. In a document containing multiple tabs: - If
-     * provided, the request applies to the specified tab. - If not provided, the
-     * request applies to the first tab in the document.
-     *
-     * @param string $tabId
-     */
-    public function setTabId($tabId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTabId()
+    class Google_Service_Docs_UpdateDocumentStyleRequest extends \Google\Service\Docs\UpdateDocumentStyleRequest
     {
     }
 }

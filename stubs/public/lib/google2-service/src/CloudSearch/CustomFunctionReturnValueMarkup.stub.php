@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CustomFunctionReturnValueMarkup extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * @var array
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\CloudSearch {
+    class CustomFunctionReturnValueMarkup extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * @var array
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * @param array
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CustomFunctionReturnValueMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * @param array
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_CustomFunctionReturnValueMarkup extends \Google\Service\CloudSearch\CustomFunctionReturnValueMarkup
     {
     }
 }

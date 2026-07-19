@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class SubordinateConfig extends \Google\Model
-{
-    /**
-     * Required. This can refer to a CertificateAuthority that was used to create
-     * a subordinate CertificateAuthority. This field is used for information and
-     * usability purposes only. The resource name is in the format
-     * `projects/locations/caPools/certificateAuthorities`.
-     *
-     * @var string
-     */
-    public $certificateAuthority;
-    protected $pemIssuerChainType = SubordinateConfigChain::class;
-    protected $pemIssuerChainDataType = '';
-    /**
-     * Required. This can refer to a CertificateAuthority that was used to create
-     * a subordinate CertificateAuthority. This field is used for information and
-     * usability purposes only. The resource name is in the format
-     * `projects/locations/caPools/certificateAuthorities`.
-     *
-     * @param string $certificateAuthority
-     */
-    public function setCertificateAuthority($certificateAuthority)
+namespace Google\Service\CertificateAuthorityService {
+    class SubordinateConfig extends \Google\Model
     {
+        /**
+         * Required. This can refer to a CertificateAuthority that was used to create
+         * a subordinate CertificateAuthority. This field is used for information and
+         * usability purposes only. The resource name is in the format
+         * `projects/locations/caPools/certificateAuthorities`.
+         *
+         * @var string
+         */
+        public $certificateAuthority;
+        protected $pemIssuerChainType = SubordinateConfigChain::class;
+        protected $pemIssuerChainDataType = '';
+        /**
+         * Required. This can refer to a CertificateAuthority that was used to create
+         * a subordinate CertificateAuthority. This field is used for information and
+         * usability purposes only. The resource name is in the format
+         * `projects/locations/caPools/certificateAuthorities`.
+         *
+         * @param string $certificateAuthority
+         */
+        public function setCertificateAuthority($certificateAuthority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateAuthority()
+        {
+        }
+        /**
+         * Required. Contains the PEM certificate chain for the issuers of this
+         * CertificateAuthority, but not pem certificate for this CA itself.
+         *
+         * @param SubordinateConfigChain $pemIssuerChain
+         */
+        public function setPemIssuerChain(SubordinateConfigChain $pemIssuerChain)
+        {
+        }
+        /**
+         * @return SubordinateConfigChain
+         */
+        public function getPemIssuerChain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\SubordinateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateAuthority()
-    {
-    }
-    /**
-     * Required. Contains the PEM certificate chain for the issuers of this
-     * CertificateAuthority, but not pem certificate for this CA itself.
-     *
-     * @param SubordinateConfigChain $pemIssuerChain
-     */
-    public function setPemIssuerChain(SubordinateConfigChain $pemIssuerChain)
-    {
-    }
-    /**
-     * @return SubordinateConfigChain
-     */
-    public function getPemIssuerChain()
+    class Google_Service_CertificateAuthorityService_SubordinateConfig extends \Google\Service\CertificateAuthorityService\SubordinateConfig
     {
     }
 }

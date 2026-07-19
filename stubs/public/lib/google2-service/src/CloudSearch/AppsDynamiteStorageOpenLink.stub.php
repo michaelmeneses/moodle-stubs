@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageOpenLink extends \Google\Model
-{
-    protected $appUriType = AppsDynamiteStorageOpenLinkAppUri::class;
-    protected $appUriDataType = '';
-    /**
-     * @var string
-     */
-    public $onClose;
-    /**
-     * @var string
-     */
-    public $openAs;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param AppsDynamiteStorageOpenLinkAppUri
-     */
-    public function setAppUri(AppsDynamiteStorageOpenLinkAppUri $appUri)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageOpenLink extends \Google\Model
     {
+        protected $appUriType = AppsDynamiteStorageOpenLinkAppUri::class;
+        protected $appUriDataType = '';
+        /**
+         * @var string
+         */
+        public $onClose;
+        /**
+         * @var string
+         */
+        public $openAs;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param AppsDynamiteStorageOpenLinkAppUri
+         */
+        public function setAppUri(AppsDynamiteStorageOpenLinkAppUri $appUri)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOpenLinkAppUri
+         */
+        public function getAppUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOnClose($onClose)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnClose()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOpenAs($openAs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpenAs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageOpenLinkAppUri
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageOpenLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOnClose($onClose)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnClose()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOpenAs($openAs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpenAs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_AppsDynamiteStorageOpenLink extends \Google\Service\CloudSearch\AppsDynamiteStorageOpenLink
     {
     }
 }

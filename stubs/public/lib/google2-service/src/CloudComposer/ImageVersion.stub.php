@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ImageVersion extends \Google\Collection
-{
-    protected $collection_key = 'supportedPythonVersions';
-    /**
-     * Whether it is impossible to create an environment with the image version.
-     *
-     * @var bool
-     */
-    public $creationDisabled;
-    /**
-     * The string identifier of the ImageVersion, in the form:
-     * "composer-x.y.z-airflow-a.b.c"
-     *
-     * @var string
-     */
-    public $imageVersionId;
-    /**
-     * Whether this is the default ImageVersion used by Composer during
-     * environment creation if no input ImageVersion is specified.
-     *
-     * @var bool
-     */
-    public $isDefault;
-    protected $releaseDateType = Date::class;
-    protected $releaseDateDataType = '';
-    /**
-     * supported python versions
-     *
-     * @var string[]
-     */
-    public $supportedPythonVersions;
-    /**
-     * Whether it is impossible to upgrade an environment running with the image
-     * version.
-     *
-     * @var bool
-     */
-    public $upgradeDisabled;
-    /**
-     * Whether it is impossible to create an environment with the image version.
-     *
-     * @param bool $creationDisabled
-     */
-    public function setCreationDisabled($creationDisabled)
+namespace Google\Service\CloudComposer {
+    class ImageVersion extends \Google\Collection
     {
+        protected $collection_key = 'supportedPythonVersions';
+        /**
+         * Whether it is impossible to create an environment with the image version.
+         *
+         * @var bool
+         */
+        public $creationDisabled;
+        /**
+         * The string identifier of the ImageVersion, in the form:
+         * "composer-x.y.z-airflow-a.b.c"
+         *
+         * @var string
+         */
+        public $imageVersionId;
+        /**
+         * Whether this is the default ImageVersion used by Composer during
+         * environment creation if no input ImageVersion is specified.
+         *
+         * @var bool
+         */
+        public $isDefault;
+        protected $releaseDateType = Date::class;
+        protected $releaseDateDataType = '';
+        /**
+         * supported python versions
+         *
+         * @var string[]
+         */
+        public $supportedPythonVersions;
+        /**
+         * Whether it is impossible to upgrade an environment running with the image
+         * version.
+         *
+         * @var bool
+         */
+        public $upgradeDisabled;
+        /**
+         * Whether it is impossible to create an environment with the image version.
+         *
+         * @param bool $creationDisabled
+         */
+        public function setCreationDisabled($creationDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCreationDisabled()
+        {
+        }
+        /**
+         * The string identifier of the ImageVersion, in the form:
+         * "composer-x.y.z-airflow-a.b.c"
+         *
+         * @param string $imageVersionId
+         */
+        public function setImageVersionId($imageVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageVersionId()
+        {
+        }
+        /**
+         * Whether this is the default ImageVersion used by Composer during
+         * environment creation if no input ImageVersion is specified.
+         *
+         * @param bool $isDefault
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * The date of the version release.
+         *
+         * @param Date $releaseDate
+         */
+        public function setReleaseDate(Date $releaseDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReleaseDate()
+        {
+        }
+        /**
+         * supported python versions
+         *
+         * @param string[] $supportedPythonVersions
+         */
+        public function setSupportedPythonVersions($supportedPythonVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedPythonVersions()
+        {
+        }
+        /**
+         * Whether it is impossible to upgrade an environment running with the image
+         * version.
+         *
+         * @param bool $upgradeDisabled
+         */
+        public function setUpgradeDisabled($upgradeDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpgradeDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudComposer\ImageVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationDisabled()
-    {
-    }
-    /**
-     * The string identifier of the ImageVersion, in the form:
-     * "composer-x.y.z-airflow-a.b.c"
-     *
-     * @param string $imageVersionId
-     */
-    public function setImageVersionId($imageVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageVersionId()
-    {
-    }
-    /**
-     * Whether this is the default ImageVersion used by Composer during
-     * environment creation if no input ImageVersion is specified.
-     *
-     * @param bool $isDefault
-     */
-    public function setIsDefault($isDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * The date of the version release.
-     *
-     * @param Date $releaseDate
-     */
-    public function setReleaseDate(Date $releaseDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReleaseDate()
-    {
-    }
-    /**
-     * supported python versions
-     *
-     * @param string[] $supportedPythonVersions
-     */
-    public function setSupportedPythonVersions($supportedPythonVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedPythonVersions()
-    {
-    }
-    /**
-     * Whether it is impossible to upgrade an environment running with the image
-     * version.
-     *
-     * @param bool $upgradeDisabled
-     */
-    public function setUpgradeDisabled($upgradeDisabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpgradeDisabled()
+    class Google_Service_CloudComposer_ImageVersion extends \Google\Service\CloudComposer\ImageVersion
     {
     }
 }

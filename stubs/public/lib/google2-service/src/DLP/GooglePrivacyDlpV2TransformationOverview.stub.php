@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransformationOverview extends \Google\Collection
-{
-    protected $collection_key = 'transformationSummaries';
-    protected $transformationSummariesType = GooglePrivacyDlpV2TransformationSummary::class;
-    protected $transformationSummariesDataType = 'array';
-    /**
-     * Total size in bytes that were transformed in some way.
-     *
-     * @var string
-     */
-    public $transformedBytes;
-    /**
-     * Transformations applied to the dataset.
-     *
-     * @param GooglePrivacyDlpV2TransformationSummary[] $transformationSummaries
-     */
-    public function setTransformationSummaries($transformationSummaries)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransformationOverview extends \Google\Collection
     {
+        protected $collection_key = 'transformationSummaries';
+        protected $transformationSummariesType = GooglePrivacyDlpV2TransformationSummary::class;
+        protected $transformationSummariesDataType = 'array';
+        /**
+         * Total size in bytes that were transformed in some way.
+         *
+         * @var string
+         */
+        public $transformedBytes;
+        /**
+         * Transformations applied to the dataset.
+         *
+         * @param GooglePrivacyDlpV2TransformationSummary[] $transformationSummaries
+         */
+        public function setTransformationSummaries($transformationSummaries)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TransformationSummary[]
+         */
+        public function getTransformationSummaries()
+        {
+        }
+        /**
+         * Total size in bytes that were transformed in some way.
+         *
+         * @param string $transformedBytes
+         */
+        public function setTransformedBytes($transformedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2TransformationSummary[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransformationOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformationSummaries()
-    {
-    }
-    /**
-     * Total size in bytes that were transformed in some way.
-     *
-     * @param string $transformedBytes
-     */
-    public function setTransformedBytes($transformedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransformedBytes()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransformationOverview extends \Google\Service\DLP\GooglePrivacyDlpV2TransformationOverview
     {
     }
 }

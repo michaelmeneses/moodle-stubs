@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class FindUnregisteredWorkloadsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var DiscoveredWorkload[]
-     */
-    public $discoveredWorkloads;
-    protected $discoveredWorkloadsType = DiscoveredWorkload::class;
-    protected $discoveredWorkloadsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param DiscoveredWorkload[]
-     */
-    public function setDiscoveredWorkloads($discoveredWorkloads)
+namespace Google\Service\AppHub {
+    class FindUnregisteredWorkloadsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var DiscoveredWorkload[]
+         */
+        public $discoveredWorkloads;
+        protected $discoveredWorkloadsType = DiscoveredWorkload::class;
+        protected $discoveredWorkloadsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param DiscoveredWorkload[]
+         */
+        public function setDiscoveredWorkloads($discoveredWorkloads)
+        {
+        }
+        /**
+         * @return DiscoveredWorkload[]
+         */
+        public function getDiscoveredWorkloads()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveredWorkload[]
+     * Runtime class alias of \Google\Service\AppHub\FindUnregisteredWorkloadsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredWorkloads()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AppHub_FindUnregisteredWorkloadsResponse extends \Google\Service\AppHub\FindUnregisteredWorkloadsResponse
     {
     }
 }

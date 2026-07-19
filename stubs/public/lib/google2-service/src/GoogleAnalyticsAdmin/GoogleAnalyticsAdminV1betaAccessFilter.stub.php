@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessFilter extends \Google\Model
-{
-    protected $betweenFilterType = GoogleAnalyticsAdminV1betaAccessBetweenFilter::class;
-    protected $betweenFilterDataType = '';
-    /**
-     * The dimension name or metric name.
-     *
-     * @var string
-     */
-    public $fieldName;
-    protected $inListFilterType = GoogleAnalyticsAdminV1betaAccessInListFilter::class;
-    protected $inListFilterDataType = '';
-    protected $numericFilterType = GoogleAnalyticsAdminV1betaAccessNumericFilter::class;
-    protected $numericFilterDataType = '';
-    protected $stringFilterType = GoogleAnalyticsAdminV1betaAccessStringFilter::class;
-    protected $stringFilterDataType = '';
-    /**
-     * A filter for two values.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessBetweenFilter $betweenFilter
-     */
-    public function setBetweenFilter(GoogleAnalyticsAdminV1betaAccessBetweenFilter $betweenFilter)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessFilter extends \Google\Model
     {
+        protected $betweenFilterType = GoogleAnalyticsAdminV1betaAccessBetweenFilter::class;
+        protected $betweenFilterDataType = '';
+        /**
+         * The dimension name or metric name.
+         *
+         * @var string
+         */
+        public $fieldName;
+        protected $inListFilterType = GoogleAnalyticsAdminV1betaAccessInListFilter::class;
+        protected $inListFilterDataType = '';
+        protected $numericFilterType = GoogleAnalyticsAdminV1betaAccessNumericFilter::class;
+        protected $numericFilterDataType = '';
+        protected $stringFilterType = GoogleAnalyticsAdminV1betaAccessStringFilter::class;
+        protected $stringFilterDataType = '';
+        /**
+         * A filter for two values.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessBetweenFilter $betweenFilter
+         */
+        public function setBetweenFilter(GoogleAnalyticsAdminV1betaAccessBetweenFilter $betweenFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessBetweenFilter
+         */
+        public function getBetweenFilter()
+        {
+        }
+        /**
+         * The dimension name or metric name.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * A filter for in list values.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessInListFilter $inListFilter
+         */
+        public function setInListFilter(GoogleAnalyticsAdminV1betaAccessInListFilter $inListFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessInListFilter
+         */
+        public function getInListFilter()
+        {
+        }
+        /**
+         * A filter for numeric or date values.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessNumericFilter $numericFilter
+         */
+        public function setNumericFilter(GoogleAnalyticsAdminV1betaAccessNumericFilter $numericFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessNumericFilter
+         */
+        public function getNumericFilter()
+        {
+        }
+        /**
+         * Strings related filter.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessStringFilter $stringFilter
+         */
+        public function setStringFilter(GoogleAnalyticsAdminV1betaAccessStringFilter $stringFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessStringFilter
+         */
+        public function getStringFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccessBetweenFilter
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBetweenFilter()
-    {
-    }
-    /**
-     * The dimension name or metric name.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * A filter for in list values.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessInListFilter $inListFilter
-     */
-    public function setInListFilter(GoogleAnalyticsAdminV1betaAccessInListFilter $inListFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessInListFilter
-     */
-    public function getInListFilter()
-    {
-    }
-    /**
-     * A filter for numeric or date values.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessNumericFilter $numericFilter
-     */
-    public function setNumericFilter(GoogleAnalyticsAdminV1betaAccessNumericFilter $numericFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessNumericFilter
-     */
-    public function getNumericFilter()
-    {
-    }
-    /**
-     * Strings related filter.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessStringFilter $stringFilter
-     */
-    public function setStringFilter(GoogleAnalyticsAdminV1betaAccessStringFilter $stringFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessStringFilter
-     */
-    public function getStringFilter()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessFilter
     {
     }
 }

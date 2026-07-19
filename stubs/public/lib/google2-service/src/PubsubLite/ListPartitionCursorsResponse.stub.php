@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ListPartitionCursorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'partitionCursors';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $partitionCursorsType = PartitionCursor::class;
-    protected $partitionCursorsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PubsubLite {
+    class ListPartitionCursorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'partitionCursors';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $partitionCursorsType = PartitionCursor::class;
+        protected $partitionCursorsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The partition cursors from this request.
+         *
+         * @param PartitionCursor[] $partitionCursors
+         */
+        public function setPartitionCursors($partitionCursors)
+        {
+        }
+        /**
+         * @return PartitionCursor[]
+         */
+        public function getPartitionCursors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ListPartitionCursorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The partition cursors from this request.
-     *
-     * @param PartitionCursor[] $partitionCursors
-     */
-    public function setPartitionCursors($partitionCursors)
-    {
-    }
-    /**
-     * @return PartitionCursor[]
-     */
-    public function getPartitionCursors()
+    class Google_Service_PubsubLite_ListPartitionCursorsResponse extends \Google\Service\PubsubLite\ListPartitionCursorsResponse
     {
     }
 }

@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DynamitePlaceholderMetadata extends \Google\Model
-{
-    protected $attachmentMetadataType = AttachmentMetadata::class;
-    protected $attachmentMetadataDataType = '';
-    protected $botMessageMetadataType = BotMessageMetadata::class;
-    protected $botMessageMetadataDataType = '';
-    protected $calendarEventMetadataType = CalendarEventMetadata::class;
-    protected $calendarEventMetadataDataType = '';
-    protected $deleteMetadataType = DeleteMetadata::class;
-    protected $deleteMetadataDataType = '';
-    protected $editMetadataType = EditMetadata::class;
-    protected $editMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $spaceUrl;
-    protected $tasksMetadataType = TasksMetadata::class;
-    protected $tasksMetadataDataType = '';
-    protected $videoCallMetadataType = VideoCallMetadata::class;
-    protected $videoCallMetadataDataType = '';
-    /**
-     * @param AttachmentMetadata
-     */
-    public function setAttachmentMetadata(AttachmentMetadata $attachmentMetadata)
+namespace Google\Service\CloudSearch {
+    class DynamitePlaceholderMetadata extends \Google\Model
     {
+        protected $attachmentMetadataType = AttachmentMetadata::class;
+        protected $attachmentMetadataDataType = '';
+        protected $botMessageMetadataType = BotMessageMetadata::class;
+        protected $botMessageMetadataDataType = '';
+        protected $calendarEventMetadataType = CalendarEventMetadata::class;
+        protected $calendarEventMetadataDataType = '';
+        protected $deleteMetadataType = DeleteMetadata::class;
+        protected $deleteMetadataDataType = '';
+        protected $editMetadataType = EditMetadata::class;
+        protected $editMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $spaceUrl;
+        protected $tasksMetadataType = TasksMetadata::class;
+        protected $tasksMetadataDataType = '';
+        protected $videoCallMetadataType = VideoCallMetadata::class;
+        protected $videoCallMetadataDataType = '';
+        /**
+         * @param AttachmentMetadata
+         */
+        public function setAttachmentMetadata(AttachmentMetadata $attachmentMetadata)
+        {
+        }
+        /**
+         * @return AttachmentMetadata
+         */
+        public function getAttachmentMetadata()
+        {
+        }
+        /**
+         * @param BotMessageMetadata
+         */
+        public function setBotMessageMetadata(BotMessageMetadata $botMessageMetadata)
+        {
+        }
+        /**
+         * @return BotMessageMetadata
+         */
+        public function getBotMessageMetadata()
+        {
+        }
+        /**
+         * @param CalendarEventMetadata
+         */
+        public function setCalendarEventMetadata(CalendarEventMetadata $calendarEventMetadata)
+        {
+        }
+        /**
+         * @return CalendarEventMetadata
+         */
+        public function getCalendarEventMetadata()
+        {
+        }
+        /**
+         * @param DeleteMetadata
+         */
+        public function setDeleteMetadata(DeleteMetadata $deleteMetadata)
+        {
+        }
+        /**
+         * @return DeleteMetadata
+         */
+        public function getDeleteMetadata()
+        {
+        }
+        /**
+         * @param EditMetadata
+         */
+        public function setEditMetadata(EditMetadata $editMetadata)
+        {
+        }
+        /**
+         * @return EditMetadata
+         */
+        public function getEditMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpaceUrl($spaceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpaceUrl()
+        {
+        }
+        /**
+         * @param TasksMetadata
+         */
+        public function setTasksMetadata(TasksMetadata $tasksMetadata)
+        {
+        }
+        /**
+         * @return TasksMetadata
+         */
+        public function getTasksMetadata()
+        {
+        }
+        /**
+         * @param VideoCallMetadata
+         */
+        public function setVideoCallMetadata(VideoCallMetadata $videoCallMetadata)
+        {
+        }
+        /**
+         * @return VideoCallMetadata
+         */
+        public function getVideoCallMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttachmentMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\DynamitePlaceholderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentMetadata()
-    {
-    }
-    /**
-     * @param BotMessageMetadata
-     */
-    public function setBotMessageMetadata(BotMessageMetadata $botMessageMetadata)
-    {
-    }
-    /**
-     * @return BotMessageMetadata
-     */
-    public function getBotMessageMetadata()
-    {
-    }
-    /**
-     * @param CalendarEventMetadata
-     */
-    public function setCalendarEventMetadata(CalendarEventMetadata $calendarEventMetadata)
-    {
-    }
-    /**
-     * @return CalendarEventMetadata
-     */
-    public function getCalendarEventMetadata()
-    {
-    }
-    /**
-     * @param DeleteMetadata
-     */
-    public function setDeleteMetadata(DeleteMetadata $deleteMetadata)
-    {
-    }
-    /**
-     * @return DeleteMetadata
-     */
-    public function getDeleteMetadata()
-    {
-    }
-    /**
-     * @param EditMetadata
-     */
-    public function setEditMetadata(EditMetadata $editMetadata)
-    {
-    }
-    /**
-     * @return EditMetadata
-     */
-    public function getEditMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpaceUrl($spaceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpaceUrl()
-    {
-    }
-    /**
-     * @param TasksMetadata
-     */
-    public function setTasksMetadata(TasksMetadata $tasksMetadata)
-    {
-    }
-    /**
-     * @return TasksMetadata
-     */
-    public function getTasksMetadata()
-    {
-    }
-    /**
-     * @param VideoCallMetadata
-     */
-    public function setVideoCallMetadata(VideoCallMetadata $videoCallMetadata)
-    {
-    }
-    /**
-     * @return VideoCallMetadata
-     */
-    public function getVideoCallMetadata()
+    class Google_Service_CloudSearch_DynamitePlaceholderMetadata extends \Google\Service\CloudSearch\DynamitePlaceholderMetadata
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class ComparisonMetadata extends \Google\Model
-{
-    /**
-     * This comparison's resource name. Useable in [Comparison](#Comparison)'s
-     * `comparison` field. For example, 'comparisons/1234'.
-     *
-     * @var string
-     */
-    public $apiName;
-    /**
-     * This comparison's description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * This comparison's name within the Google Analytics user interface.
-     *
-     * @var string
-     */
-    public $uiName;
-    /**
-     * This comparison's resource name. Useable in [Comparison](#Comparison)'s
-     * `comparison` field. For example, 'comparisons/1234'.
-     *
-     * @param string $apiName
-     */
-    public function setApiName($apiName)
+namespace Google\Service\AnalyticsData {
+    class ComparisonMetadata extends \Google\Model
     {
+        /**
+         * This comparison's resource name. Useable in [Comparison](#Comparison)'s
+         * `comparison` field. For example, 'comparisons/1234'.
+         *
+         * @var string
+         */
+        public $apiName;
+        /**
+         * This comparison's description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * This comparison's name within the Google Analytics user interface.
+         *
+         * @var string
+         */
+        public $uiName;
+        /**
+         * This comparison's resource name. Useable in [Comparison](#Comparison)'s
+         * `comparison` field. For example, 'comparisons/1234'.
+         *
+         * @param string $apiName
+         */
+        public function setApiName($apiName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiName()
+        {
+        }
+        /**
+         * This comparison's description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * This comparison's name within the Google Analytics user interface.
+         *
+         * @param string $uiName
+         */
+        public function setUiName($uiName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUiName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\ComparisonMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiName()
-    {
-    }
-    /**
-     * This comparison's description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * This comparison's name within the Google Analytics user interface.
-     *
-     * @param string $uiName
-     */
-    public function setUiName($uiName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUiName()
+    class Google_Service_AnalyticsData_ComparisonMetadata extends \Google\Service\AnalyticsData\ComparisonMetadata
     {
     }
 }

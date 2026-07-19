@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceRepositoryResourceGooRepository extends \Google\Model
-{
-    /**
-     * Required. The name of the repository.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The url of the repository.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Required. The name of the repository.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceRepositoryResourceGooRepository extends \Google\Model
     {
+        /**
+         * Required. The name of the repository.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The url of the repository.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Required. The name of the repository.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The url of the repository.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceRepositoryResourceGooRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The url of the repository.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_OSConfig_OSPolicyResourceRepositoryResourceGooRepository extends \Google\Service\OSConfig\OSPolicyResourceRepositoryResourceGooRepository
     {
     }
 }

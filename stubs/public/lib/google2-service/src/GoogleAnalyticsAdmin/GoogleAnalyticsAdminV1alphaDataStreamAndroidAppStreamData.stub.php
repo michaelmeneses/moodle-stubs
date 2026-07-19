@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $firebaseAppId;
-    /**
-     * @var string
-     */
-    public $packageName;
-    /**
-     * @param string
-     */
-    public function setFirebaseAppId($firebaseAppId)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $firebaseAppId;
+        /**
+         * @var string
+         */
+        public $packageName;
+        /**
+         * @param string
+         */
+        public function setFirebaseAppId($firebaseAppId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirebaseAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirebaseAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData
     {
     }
 }

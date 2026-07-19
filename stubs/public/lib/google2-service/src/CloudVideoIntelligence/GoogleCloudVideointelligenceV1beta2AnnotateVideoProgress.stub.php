@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends \Google\Collection
-{
-    protected $collection_key = 'annotationProgress';
-    protected $annotationProgressType = GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress::class;
-    protected $annotationProgressDataType = 'array';
-    /**
-     * Progress metadata for all videos specified in `AnnotateVideoRequest`.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress[] $annotationProgress
-     */
-    public function setAnnotationProgress($annotationProgress)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends \Google\Collection
     {
+        protected $collection_key = 'annotationProgress';
+        protected $annotationProgressType = GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress::class;
+        protected $annotationProgressDataType = 'array';
+        /**
+         * Progress metadata for all videos specified in `AnnotateVideoRequest`.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress[] $annotationProgress
+         */
+        public function setAnnotationProgress($annotationProgress)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress[]
+         */
+        public function getAnnotationProgress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2VideoAnnotationProgress[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2AnnotateVideoProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationProgress()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2AnnotateVideoProgress
     {
     }
 }

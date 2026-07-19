@@ -21,96 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate\Resource;
-
-/**
- * The "datasets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $translateService = new Google\Service\Translate(...);
- *   $datasets = $translateService->projects_locations_datasets;
- *  </code>
- */
-class ProjectsLocationsDatasets extends \Google\Service\Resource
-{
+namespace Google\Service\Translate\Resource {
+    use Google\Service\Translate\Dataset;
+    use Google\Service\Translate\ExportDataRequest;
+    use Google\Service\Translate\ImportDataRequest;
+    use Google\Service\Translate\ListDatasetsResponse;
+    use Google\Service\Translate\Operation;
     /**
-     * Creates a Dataset. (datasets.create)
-     *
-     * @param string $parent Required. The project name.
-     * @param Dataset $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "datasets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $translateService = new Google\Service\Translate(...);
+     *   $datasets = $translateService->projects_locations_datasets;
+     *  </code>
      */
-    public function create($parent, Dataset $postBody, $optParams = [])
+    class ProjectsLocationsDatasets extends \Google\Service\Resource
     {
+        /**
+         * Creates a Dataset. (datasets.create)
+         *
+         * @param string $parent Required. The project name.
+         * @param Dataset $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Dataset $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a dataset and all of its contents. (datasets.delete)
+         *
+         * @param string $name Required. The name of the dataset to delete.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Exports dataset's data to the provided output location. (datasets.exportData)
+         *
+         * @param string $dataset Required. Name of the dataset. In form of
+         * `projects/{project-number-or-id}/locations/{location-id}/datasets/{dataset-
+         * id}`
+         * @param ExportDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function exportData($dataset, ExportDataRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Dataset. (datasets.get)
+         *
+         * @param string $name Required. The resource name of the dataset to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Dataset
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Import sentence pairs into translation Dataset. (datasets.importData)
+         *
+         * @param string $dataset Required. Name of the dataset. In form of
+         * `projects/{project-number-or-id}/locations/{location-id}/datasets/{dataset-
+         * id}`
+         * @param ImportDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function importData($dataset, ImportDataRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists datasets. (datasets.listProjectsLocationsDatasets)
+         *
+         * @param string $parent Required. Name of the parent project. In form of
+         * `projects/{project-number-or-id}/locations/{location-id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. The server can return
+         * fewer results than requested.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * for the server to return. Typically obtained from next_page_token field in
+         * the response of a ListDatasets call.
+         * @return ListDatasetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDatasets($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a dataset and all of its contents. (datasets.delete)
-     *
-     * @param string $name Required. The name of the dataset to delete.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Translate\Resource\ProjectsLocationsDatasets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Exports dataset's data to the provided output location. (datasets.exportData)
-     *
-     * @param string $dataset Required. Name of the dataset. In form of
-     * `projects/{project-number-or-id}/locations/{location-id}/datasets/{dataset-
-     * id}`
-     * @param ExportDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function exportData($dataset, ExportDataRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a Dataset. (datasets.get)
-     *
-     * @param string $name Required. The resource name of the dataset to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Dataset
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Import sentence pairs into translation Dataset. (datasets.importData)
-     *
-     * @param string $dataset Required. Name of the dataset. In form of
-     * `projects/{project-number-or-id}/locations/{location-id}/datasets/{dataset-
-     * id}`
-     * @param ImportDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function importData($dataset, ImportDataRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists datasets. (datasets.listProjectsLocationsDatasets)
-     *
-     * @param string $parent Required. Name of the parent project. In form of
-     * `projects/{project-number-or-id}/locations/{location-id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. The server can return
-     * fewer results than requested.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * for the server to return. Typically obtained from next_page_token field in
-     * the response of a ListDatasets call.
-     * @return ListDatasetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDatasets($parent, $optParams = [])
+    class Google_Service_Translate_Resource_ProjectsLocationsDatasets extends \Google\Service\Translate\Resource\ProjectsLocationsDatasets
     {
     }
 }

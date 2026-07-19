@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PoiTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Output only. The display name of a POI(e.g. "Times Square", "Space
-     * Needle"), followed by its full address if available.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Latitude of the POI rounding to 6th decimal place.
-     *
-     * @var 
-     */
-    public $latitude;
-    /**
-     * Output only. Longitude of the POI rounding to 6th decimal place.
-     *
-     * @var 
-     */
-    public $longitude;
-    /**
-     * Output only. The display name of a POI(e.g. "Times Square", "Space
-     * Needle"), followed by its full address if available.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class PoiTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Output only. The display name of a POI(e.g. "Times Square", "Space
+         * Needle"), followed by its full address if available.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Latitude of the POI rounding to 6th decimal place.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * Output only. Longitude of the POI rounding to 6th decimal place.
+         *
+         * @var 
+         */
+        public $longitude;
+        /**
+         * Output only. The display name of a POI(e.g. "Times Square", "Space
+         * Needle"), followed by its full address if available.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PoiTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_DisplayVideo_PoiTargetingOptionDetails extends \Google\Service\DisplayVideo\PoiTargetingOptionDetails
     {
     }
 }

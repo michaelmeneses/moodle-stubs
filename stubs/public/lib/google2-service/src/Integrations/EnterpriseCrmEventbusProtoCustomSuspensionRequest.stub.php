@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoCustomSuspensionRequest extends \Google\Model
-{
-    protected $postToQueueWithTriggerIdRequestType = GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest::class;
-    protected $postToQueueWithTriggerIdRequestDataType = '';
-    /**
-     * In the fired event, set the SuspensionInfo message as the value for this
-     * key.
-     *
-     * @var string
-     */
-    public $suspensionInfoEventParameterKey;
-    /**
-     * Request to fire an event containing the SuspensionInfo message.
-     *
-     * @param GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest $postToQueueWithTriggerIdRequest
-     */
-    public function setPostToQueueWithTriggerIdRequest(GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest $postToQueueWithTriggerIdRequest)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoCustomSuspensionRequest extends \Google\Model
     {
+        protected $postToQueueWithTriggerIdRequestType = GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest::class;
+        protected $postToQueueWithTriggerIdRequestDataType = '';
+        /**
+         * In the fired event, set the SuspensionInfo message as the value for this
+         * key.
+         *
+         * @var string
+         */
+        public $suspensionInfoEventParameterKey;
+        /**
+         * Request to fire an event containing the SuspensionInfo message.
+         *
+         * @param GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest $postToQueueWithTriggerIdRequest
+         */
+        public function setPostToQueueWithTriggerIdRequest(GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest $postToQueueWithTriggerIdRequest)
+        {
+        }
+        /**
+         * @return GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest
+         */
+        public function getPostToQueueWithTriggerIdRequest()
+        {
+        }
+        /**
+         * In the fired event, set the SuspensionInfo message as the value for this
+         * key.
+         *
+         * @param string $suspensionInfoEventParameterKey
+         */
+        public function setSuspensionInfoEventParameterKey($suspensionInfoEventParameterKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuspensionInfoEventParameterKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleInternalCloudCrmEventbusV3PostToQueueWithTriggerIdRequest
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoCustomSuspensionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostToQueueWithTriggerIdRequest()
-    {
-    }
-    /**
-     * In the fired event, set the SuspensionInfo message as the value for this
-     * key.
-     *
-     * @param string $suspensionInfoEventParameterKey
-     */
-    public function setSuspensionInfoEventParameterKey($suspensionInfoEventParameterKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuspensionInfoEventParameterKey()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoCustomSuspensionRequest extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoCustomSuspensionRequest
     {
     }
 }

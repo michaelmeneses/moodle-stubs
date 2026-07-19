@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class Position extends \Google\Model
-{
-    /**
-     * Issue column number
-     *
-     * @var int
-     */
-    public $column;
-    /**
-     * Issue length
-     *
-     * @var int
-     */
-    public $length;
-    /**
-     * Issue line number
-     *
-     * @var int
-     */
-    public $line;
-    /**
-     * Issue offset
-     *
-     * @var int
-     */
-    public $offset;
-    /**
-     * Issue column number
-     *
-     * @param int $column
-     */
-    public function setColumn($column)
+namespace Google\Service\DatabaseMigrationService {
+    class Position extends \Google\Model
     {
+        /**
+         * Issue column number
+         *
+         * @var int
+         */
+        public $column;
+        /**
+         * Issue length
+         *
+         * @var int
+         */
+        public $length;
+        /**
+         * Issue line number
+         *
+         * @var int
+         */
+        public $line;
+        /**
+         * Issue offset
+         *
+         * @var int
+         */
+        public $offset;
+        /**
+         * Issue column number
+         *
+         * @param int $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Issue length
+         *
+         * @param int $length
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * Issue line number
+         *
+         * @param int $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLine()
+        {
+        }
+        /**
+         * Issue offset
+         *
+         * @param int $offset
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\Position registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Issue length
-     *
-     * @param int $length
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * Issue line number
-     *
-     * @param int $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLine()
-    {
-    }
-    /**
-     * Issue offset
-     *
-     * @param int $offset
-     */
-    public function setOffset($offset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOffset()
+    class Google_Service_DatabaseMigrationService_Position extends \Google\Service\DatabaseMigrationService\Position
     {
     }
 }

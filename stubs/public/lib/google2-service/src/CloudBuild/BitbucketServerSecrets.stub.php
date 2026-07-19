@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BitbucketServerSecrets extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $adminAccessTokenVersionName;
-    /**
-     * @var string
-     */
-    public $readAccessTokenVersionName;
-    /**
-     * @var string
-     */
-    public $webhookSecretVersionName;
-    /**
-     * @param string
-     */
-    public function setAdminAccessTokenVersionName($adminAccessTokenVersionName)
+namespace Google\Service\CloudBuild {
+    class BitbucketServerSecrets extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $adminAccessTokenVersionName;
+        /**
+         * @var string
+         */
+        public $readAccessTokenVersionName;
+        /**
+         * @var string
+         */
+        public $webhookSecretVersionName;
+        /**
+         * @param string
+         */
+        public function setAdminAccessTokenVersionName($adminAccessTokenVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdminAccessTokenVersionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadAccessTokenVersionName($readAccessTokenVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadAccessTokenVersionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookSecretVersionName($webhookSecretVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\BitbucketServerSecrets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminAccessTokenVersionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadAccessTokenVersionName($readAccessTokenVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadAccessTokenVersionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookSecretVersionName($webhookSecretVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretVersionName()
+    class Google_Service_CloudBuild_BitbucketServerSecrets extends \Google\Service\CloudBuild\BitbucketServerSecrets
     {
     }
 }

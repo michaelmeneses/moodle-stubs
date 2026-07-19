@@ -21,119 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "policies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $policies = $dnsService->policies;
- *  </code>
- */
-class Policies extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\PoliciesListResponse;
+    use Google\Service\Dns\PoliciesPatchResponse;
+    use Google\Service\Dns\PoliciesUpdateResponse;
+    use Google\Service\Dns\Policy;
     /**
-     * Creates a new policy. (policies.create)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param Policy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * The "policies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $policies = $dnsService->policies;
+     *  </code>
      */
-    public function create($project, Policy $postBody, $optParams = [])
+    class Policies extends \Google\Service\Resource
     {
+        /**
+         * Creates a new policy. (policies.create)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param Policy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function create($project, Policy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a previously created policy. Fails if the policy is still being
+         * referenced by a network. (policies.delete)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $policy User given friendly name of the policy addressed by
+         * this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $policy, $optParams = [])
+        {
+        }
+        /**
+         * Fetches the representation of an existing policy. (policies.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $policy User given friendly name of the policy addressed by
+         * this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $policy, $optParams = [])
+        {
+        }
+        /**
+         * Enumerates all policies associated with a project. (policies.listPolicies)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Optional. Maximum number of results to be returned.
+         * If unspecified, the server decides how many results to return.
+         * @opt_param string pageToken Optional. A tag returned by a previous list
+         * request that was truncated. Use this parameter to continue a previous list
+         * request.
+         * @return PoliciesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPolicies($project, $optParams = [])
+        {
+        }
+        /**
+         * Applies a partial update to an existing policy. (policies.patch)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $policy User given friendly name of the policy addressed by
+         * this request.
+         * @param Policy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return PoliciesPatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function patch($project, $policy, Policy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing policy. (policies.update)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $policy User given friendly name of the policy addressed by
+         * this request.
+         * @param Policy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return PoliciesUpdateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function update($project, $policy, Policy $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a previously created policy. Fails if the policy is still being
-     * referenced by a network. (policies.delete)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $policy User given friendly name of the policy addressed by
-     * this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dns\Resource\Policies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($project, $policy, $optParams = [])
-    {
-    }
-    /**
-     * Fetches the representation of an existing policy. (policies.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $policy User given friendly name of the policy addressed by
-     * this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function get($project, $policy, $optParams = [])
-    {
-    }
-    /**
-     * Enumerates all policies associated with a project. (policies.listPolicies)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Optional. Maximum number of results to be returned.
-     * If unspecified, the server decides how many results to return.
-     * @opt_param string pageToken Optional. A tag returned by a previous list
-     * request that was truncated. Use this parameter to continue a previous list
-     * request.
-     * @return PoliciesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listPolicies($project, $optParams = [])
-    {
-    }
-    /**
-     * Applies a partial update to an existing policy. (policies.patch)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $policy User given friendly name of the policy addressed by
-     * this request.
-     * @param Policy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return PoliciesPatchResponse
-     * @throws \Google\Service\Exception
-     */
-    public function patch($project, $policy, Policy $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing policy. (policies.update)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $policy User given friendly name of the policy addressed by
-     * this request.
-     * @param Policy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return PoliciesUpdateResponse
-     * @throws \Google\Service\Exception
-     */
-    public function update($project, $policy, Policy $postBody, $optParams = [])
+    class Google_Service_Dns_Resource_Policies extends \Google\Service\Dns\Resource\Policies
     {
     }
 }

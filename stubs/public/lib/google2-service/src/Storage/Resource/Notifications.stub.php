@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage\Resource;
-
-/**
- * The "notifications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storageService = new Google\Service\Storage(...);
- *   $notifications = $storageService->notifications;
- *  </code>
- */
-class Notifications extends \Google\Service\Resource
-{
+namespace Google\Service\Storage\Resource {
+    use Google\Service\Storage\Notification;
+    use Google\Service\Storage\Notifications as NotificationsModel;
     /**
-     * Permanently deletes a notification subscription. (notifications.delete)
-     *
-     * @param string $bucket The parent bucket of the notification.
-     * @param string $notification ID of the notification to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @throws \Google\Service\Exception
+     * The "notifications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storageService = new Google\Service\Storage(...);
+     *   $notifications = $storageService->notifications;
+     *  </code>
      */
-    public function delete($bucket, $notification, $optParams = [])
+    class Notifications extends \Google\Service\Resource
     {
+        /**
+         * Permanently deletes a notification subscription. (notifications.delete)
+         *
+         * @param string $bucket The parent bucket of the notification.
+         * @param string $notification ID of the notification to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($bucket, $notification, $optParams = [])
+        {
+        }
+        /**
+         * View a notification configuration. (notifications.get)
+         *
+         * @param string $bucket The parent bucket of the notification.
+         * @param string $notification Notification ID
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return Notification
+         * @throws \Google\Service\Exception
+         */
+        public function get($bucket, $notification, $optParams = [])
+        {
+        }
+        /**
+         * Creates a notification subscription for a given bucket.
+         * (notifications.insert)
+         *
+         * @param string $bucket The parent bucket of the notification.
+         * @param Notification $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return Notification
+         * @throws \Google\Service\Exception
+         */
+        public function insert($bucket, Notification $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of notification subscriptions for a given bucket.
+         * (notifications.listNotifications)
+         *
+         * @param string $bucket Name of a Google Cloud Storage bucket.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return NotificationsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listNotifications($bucket, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * View a notification configuration. (notifications.get)
-     *
-     * @param string $bucket The parent bucket of the notification.
-     * @param string $notification Notification ID
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return Notification
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Storage\Resource\Notifications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($bucket, $notification, $optParams = [])
-    {
-    }
-    /**
-     * Creates a notification subscription for a given bucket.
-     * (notifications.insert)
-     *
-     * @param string $bucket The parent bucket of the notification.
-     * @param Notification $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return Notification
-     * @throws \Google\Service\Exception
-     */
-    public function insert($bucket, Notification $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of notification subscriptions for a given bucket.
-     * (notifications.listNotifications)
-     *
-     * @param string $bucket Name of a Google Cloud Storage bucket.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return NotificationsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listNotifications($bucket, $optParams = [])
+    class Google_Service_Storage_Resource_Notifications extends \Google\Service\Storage\Resource\Notifications
     {
     }
 }

@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AwsSourceDiskDetails extends \Google\Model
-{
-    /**
-     * Unspecified AWS disk type. Should not be used.
-     */
-    public const DISK_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * GP2 disk type.
-     */
-    public const DISK_TYPE_GP2 = 'GP2';
-    /**
-     * GP3 disk type.
-     */
-    public const DISK_TYPE_GP3 = 'GP3';
-    /**
-     * IO1 disk type.
-     */
-    public const DISK_TYPE_IO1 = 'IO1';
-    /**
-     * IO2 disk type.
-     */
-    public const DISK_TYPE_IO2 = 'IO2';
-    /**
-     * ST1 disk type.
-     */
-    public const DISK_TYPE_ST1 = 'ST1';
-    /**
-     * SC1 disk type.
-     */
-    public const DISK_TYPE_SC1 = 'SC1';
-    /**
-     * Standard disk type.
-     */
-    public const DISK_TYPE_STANDARD = 'STANDARD';
-    /**
-     * Optional. Output only. Disk type.
-     *
-     * @var string
-     */
-    public $diskType;
-    /**
-     * Output only. Size in GiB.
-     *
-     * @var string
-     */
-    public $sizeGib;
-    /**
-     * Optional. Output only. A map of AWS volume tags.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Required. AWS volume ID.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * Optional. Output only. Disk type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, GP2, GP3, IO1, IO2, ST1, SC1, STANDARD
-     *
-     * @param self::DISK_TYPE_* $diskType
-     */
-    public function setDiskType($diskType)
+namespace Google\Service\VMMigrationService {
+    class AwsSourceDiskDetails extends \Google\Model
     {
+        /**
+         * Unspecified AWS disk type. Should not be used.
+         */
+        public const DISK_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * GP2 disk type.
+         */
+        public const DISK_TYPE_GP2 = 'GP2';
+        /**
+         * GP3 disk type.
+         */
+        public const DISK_TYPE_GP3 = 'GP3';
+        /**
+         * IO1 disk type.
+         */
+        public const DISK_TYPE_IO1 = 'IO1';
+        /**
+         * IO2 disk type.
+         */
+        public const DISK_TYPE_IO2 = 'IO2';
+        /**
+         * ST1 disk type.
+         */
+        public const DISK_TYPE_ST1 = 'ST1';
+        /**
+         * SC1 disk type.
+         */
+        public const DISK_TYPE_SC1 = 'SC1';
+        /**
+         * Standard disk type.
+         */
+        public const DISK_TYPE_STANDARD = 'STANDARD';
+        /**
+         * Optional. Output only. Disk type.
+         *
+         * @var string
+         */
+        public $diskType;
+        /**
+         * Output only. Size in GiB.
+         *
+         * @var string
+         */
+        public $sizeGib;
+        /**
+         * Optional. Output only. A map of AWS volume tags.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Required. AWS volume ID.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * Optional. Output only. Disk type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, GP2, GP3, IO1, IO2, ST1, SC1, STANDARD
+         *
+         * @param self::DISK_TYPE_* $diskType
+         */
+        public function setDiskType($diskType)
+        {
+        }
+        /**
+         * @return self::DISK_TYPE_*
+         */
+        public function getDiskType()
+        {
+        }
+        /**
+         * Output only. Size in GiB.
+         *
+         * @param string $sizeGib
+         */
+        public function setSizeGib($sizeGib)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGib()
+        {
+        }
+        /**
+         * Optional. Output only. A map of AWS volume tags.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Required. AWS volume ID.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DISK_TYPE_*
+     * Runtime class alias of \Google\Service\VMMigrationService\AwsSourceDiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskType()
-    {
-    }
-    /**
-     * Output only. Size in GiB.
-     *
-     * @param string $sizeGib
-     */
-    public function setSizeGib($sizeGib)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGib()
-    {
-    }
-    /**
-     * Optional. Output only. A map of AWS volume tags.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Required. AWS volume ID.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_VMMigrationService_AwsSourceDiskDetails extends \Google\Service\VMMigrationService\AwsSourceDiskDetails
     {
     }
 }

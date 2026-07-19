@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UploadItemRef extends \Google\Model
-{
-    /**
-     * The name of the content reference. The maximum length is 2048 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the content reference. The maximum length is 2048 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudSearch {
+    class UploadItemRef extends \Google\Model
     {
+        /**
+         * The name of the content reference. The maximum length is 2048 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the content reference. The maximum length is 2048 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UploadItemRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_CloudSearch_UploadItemRef extends \Google\Service\CloudSearch\UploadItemRef
     {
     }
 }

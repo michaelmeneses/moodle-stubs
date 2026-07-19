@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2HotwordRule extends \Google\Model
-{
-    protected $hotwordRegexType = GooglePrivacyDlpV2Regex::class;
-    protected $hotwordRegexDataType = '';
-    protected $likelihoodAdjustmentType = GooglePrivacyDlpV2LikelihoodAdjustment::class;
-    protected $likelihoodAdjustmentDataType = '';
-    protected $proximityType = GooglePrivacyDlpV2Proximity::class;
-    protected $proximityDataType = '';
-    /**
-     * Regular expression pattern defining what qualifies as a hotword.
-     *
-     * @param GooglePrivacyDlpV2Regex $hotwordRegex
-     */
-    public function setHotwordRegex(GooglePrivacyDlpV2Regex $hotwordRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2HotwordRule extends \Google\Model
     {
+        protected $hotwordRegexType = GooglePrivacyDlpV2Regex::class;
+        protected $hotwordRegexDataType = '';
+        protected $likelihoodAdjustmentType = GooglePrivacyDlpV2LikelihoodAdjustment::class;
+        protected $likelihoodAdjustmentDataType = '';
+        protected $proximityType = GooglePrivacyDlpV2Proximity::class;
+        protected $proximityDataType = '';
+        /**
+         * Regular expression pattern defining what qualifies as a hotword.
+         *
+         * @param GooglePrivacyDlpV2Regex $hotwordRegex
+         */
+        public function setHotwordRegex(GooglePrivacyDlpV2Regex $hotwordRegex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Regex
+         */
+        public function getHotwordRegex()
+        {
+        }
+        /**
+         * Likelihood adjustment to apply to all matching findings.
+         *
+         * @param GooglePrivacyDlpV2LikelihoodAdjustment $likelihoodAdjustment
+         */
+        public function setLikelihoodAdjustment(GooglePrivacyDlpV2LikelihoodAdjustment $likelihoodAdjustment)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LikelihoodAdjustment
+         */
+        public function getLikelihoodAdjustment()
+        {
+        }
+        /**
+         * Range of characters within which the entire hotword must reside. The total
+         * length of the window cannot exceed 1000 characters. The finding itself will
+         * be included in the window, so that hotwords can be used to match substrings
+         * of the finding itself. Suppose you want Cloud DLP to promote the likelihood
+         * of the phone number regex "\(\d{3}\) \d{3}-\d{4}" if the area code is known
+         * to be the area code of a company's office. In this case, use the hotword
+         * regex "\(xxx\)", where "xxx" is the area code in question. For tabular
+         * data, if you want to modify the likelihood of an entire column of findngs,
+         * see [Hotword example: Set the match likelihood of a table column]
+         * (https://cloud.google.com/sensitive-data-protection/docs/creating-custom-
+         * infotypes-likelihood#match-column-values).
+         *
+         * @param GooglePrivacyDlpV2Proximity $proximity
+         */
+        public function setProximity(GooglePrivacyDlpV2Proximity $proximity)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Proximity
+         */
+        public function getProximity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Regex
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2HotwordRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotwordRegex()
-    {
-    }
-    /**
-     * Likelihood adjustment to apply to all matching findings.
-     *
-     * @param GooglePrivacyDlpV2LikelihoodAdjustment $likelihoodAdjustment
-     */
-    public function setLikelihoodAdjustment(GooglePrivacyDlpV2LikelihoodAdjustment $likelihoodAdjustment)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2LikelihoodAdjustment
-     */
-    public function getLikelihoodAdjustment()
-    {
-    }
-    /**
-     * Range of characters within which the entire hotword must reside. The total
-     * length of the window cannot exceed 1000 characters. The finding itself will
-     * be included in the window, so that hotwords can be used to match substrings
-     * of the finding itself. Suppose you want Cloud DLP to promote the likelihood
-     * of the phone number regex "\(\d{3}\) \d{3}-\d{4}" if the area code is known
-     * to be the area code of a company's office. In this case, use the hotword
-     * regex "\(xxx\)", where "xxx" is the area code in question. For tabular
-     * data, if you want to modify the likelihood of an entire column of findngs,
-     * see [Hotword example: Set the match likelihood of a table column]
-     * (https://cloud.google.com/sensitive-data-protection/docs/creating-custom-
-     * infotypes-likelihood#match-column-values).
-     *
-     * @param GooglePrivacyDlpV2Proximity $proximity
-     */
-    public function setProximity(GooglePrivacyDlpV2Proximity $proximity)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Proximity
-     */
-    public function getProximity()
+    class Google_Service_DLP_GooglePrivacyDlpV2HotwordRule extends \Google\Service\DLP\GooglePrivacyDlpV2HotwordRule
     {
     }
 }

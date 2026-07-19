@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class AchievementUpdateResponse extends \Google\Model
-{
-    /**
-     * Achievement is hidden.
-     */
-    public const CURRENT_STATE_HIDDEN = 'HIDDEN';
-    /**
-     * Achievement is revealed.
-     */
-    public const CURRENT_STATE_REVEALED = 'REVEALED';
-    /**
-     * Achievement is unlocked.
-     */
-    public const CURRENT_STATE_UNLOCKED = 'UNLOCKED';
-    /**
-     * The achievement this update is was applied to.
-     *
-     * @var string
-     */
-    public $achievementId;
-    /**
-     * The current state of the achievement.
-     *
-     * @var string
-     */
-    public $currentState;
-    /**
-     * The current steps recorded for this achievement if it is incremental.
-     *
-     * @var int
-     */
-    public $currentSteps;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUpdateResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Whether this achievement was newly unlocked (that is, whether the unlock
-     * request for the achievement was the first for the player).
-     *
-     * @var bool
-     */
-    public $newlyUnlocked;
-    /**
-     * Whether the requested updates actually affected the achievement.
-     *
-     * @var bool
-     */
-    public $updateOccurred;
-    /**
-     * The achievement this update is was applied to.
-     *
-     * @param string $achievementId
-     */
-    public function setAchievementId($achievementId)
+namespace Google\Service\Games {
+    class AchievementUpdateResponse extends \Google\Model
     {
+        /**
+         * Achievement is hidden.
+         */
+        public const CURRENT_STATE_HIDDEN = 'HIDDEN';
+        /**
+         * Achievement is revealed.
+         */
+        public const CURRENT_STATE_REVEALED = 'REVEALED';
+        /**
+         * Achievement is unlocked.
+         */
+        public const CURRENT_STATE_UNLOCKED = 'UNLOCKED';
+        /**
+         * The achievement this update is was applied to.
+         *
+         * @var string
+         */
+        public $achievementId;
+        /**
+         * The current state of the achievement.
+         *
+         * @var string
+         */
+        public $currentState;
+        /**
+         * The current steps recorded for this achievement if it is incremental.
+         *
+         * @var int
+         */
+        public $currentSteps;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUpdateResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Whether this achievement was newly unlocked (that is, whether the unlock
+         * request for the achievement was the first for the player).
+         *
+         * @var bool
+         */
+        public $newlyUnlocked;
+        /**
+         * Whether the requested updates actually affected the achievement.
+         *
+         * @var bool
+         */
+        public $updateOccurred;
+        /**
+         * The achievement this update is was applied to.
+         *
+         * @param string $achievementId
+         */
+        public function setAchievementId($achievementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAchievementId()
+        {
+        }
+        /**
+         * The current state of the achievement.
+         *
+         * Accepted values: HIDDEN, REVEALED, UNLOCKED
+         *
+         * @param self::CURRENT_STATE_* $currentState
+         */
+        public function setCurrentState($currentState)
+        {
+        }
+        /**
+         * @return self::CURRENT_STATE_*
+         */
+        public function getCurrentState()
+        {
+        }
+        /**
+         * The current steps recorded for this achievement if it is incremental.
+         *
+         * @param int $currentSteps
+         */
+        public function setCurrentSteps($currentSteps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentSteps()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUpdateResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Whether this achievement was newly unlocked (that is, whether the unlock
+         * request for the achievement was the first for the player).
+         *
+         * @param bool $newlyUnlocked
+         */
+        public function setNewlyUnlocked($newlyUnlocked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNewlyUnlocked()
+        {
+        }
+        /**
+         * Whether the requested updates actually affected the achievement.
+         *
+         * @param bool $updateOccurred
+         */
+        public function setUpdateOccurred($updateOccurred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpdateOccurred()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\AchievementUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAchievementId()
-    {
-    }
-    /**
-     * The current state of the achievement.
-     *
-     * Accepted values: HIDDEN, REVEALED, UNLOCKED
-     *
-     * @param self::CURRENT_STATE_* $currentState
-     */
-    public function setCurrentState($currentState)
-    {
-    }
-    /**
-     * @return self::CURRENT_STATE_*
-     */
-    public function getCurrentState()
-    {
-    }
-    /**
-     * The current steps recorded for this achievement if it is incremental.
-     *
-     * @param int $currentSteps
-     */
-    public function setCurrentSteps($currentSteps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCurrentSteps()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUpdateResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Whether this achievement was newly unlocked (that is, whether the unlock
-     * request for the achievement was the first for the player).
-     *
-     * @param bool $newlyUnlocked
-     */
-    public function setNewlyUnlocked($newlyUnlocked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNewlyUnlocked()
-    {
-    }
-    /**
-     * Whether the requested updates actually affected the achievement.
-     *
-     * @param bool $updateOccurred
-     */
-    public function setUpdateOccurred($updateOccurred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpdateOccurred()
+    class Google_Service_Games_AchievementUpdateResponse extends \Google\Service\Games\AchievementUpdateResponse
     {
     }
 }

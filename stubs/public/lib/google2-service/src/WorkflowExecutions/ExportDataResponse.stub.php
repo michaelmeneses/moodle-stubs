@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class ExportDataResponse extends \Google\Model
-{
-    /**
-     * The JSON string with customer data and metadata for an execution with the
-     * given name
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * The JSON string with customer data and metadata for an execution with the
-     * given name
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\WorkflowExecutions {
+    class ExportDataResponse extends \Google\Model
     {
+        /**
+         * The JSON string with customer data and metadata for an execution with the
+         * given name
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * The JSON string with customer data and metadata for an execution with the
+         * given name
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\ExportDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
+    class Google_Service_WorkflowExecutions_ExportDataResponse extends \Google\Service\WorkflowExecutions\ExportDataResponse
     {
     }
 }

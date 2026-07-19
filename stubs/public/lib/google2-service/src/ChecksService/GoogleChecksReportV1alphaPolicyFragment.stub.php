@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaPolicyFragment extends \Google\Model
-{
-    /**
-     * HTML content.
-     *
-     * @var string
-     */
-    public $htmlContent;
-    /**
-     * Policy URL.
-     *
-     * @var string
-     */
-    public $sourceUri;
-    /**
-     * HTML content.
-     *
-     * @param string $htmlContent
-     */
-    public function setHtmlContent($htmlContent)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaPolicyFragment extends \Google\Model
     {
+        /**
+         * HTML content.
+         *
+         * @var string
+         */
+        public $htmlContent;
+        /**
+         * Policy URL.
+         *
+         * @var string
+         */
+        public $sourceUri;
+        /**
+         * HTML content.
+         *
+         * @param string $htmlContent
+         */
+        public function setHtmlContent($htmlContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtmlContent()
+        {
+        }
+        /**
+         * Policy URL.
+         *
+         * @param string $sourceUri
+         */
+        public function setSourceUri($sourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaPolicyFragment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHtmlContent()
-    {
-    }
-    /**
-     * Policy URL.
-     *
-     * @param string $sourceUri
-     */
-    public function setSourceUri($sourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUri()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaPolicyFragment extends \Google\Service\ChecksService\GoogleChecksReportV1alphaPolicyFragment
     {
     }
 }

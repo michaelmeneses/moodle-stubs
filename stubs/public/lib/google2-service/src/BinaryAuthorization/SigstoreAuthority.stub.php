@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class SigstoreAuthority extends \Google\Model
-{
-    /**
-     * Optional. A user-provided name for this `SigstoreAuthority`. This field has
-     * no effect on the policy evaluation behavior except to improve readability
-     * of messages in evaluation results.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $publicKeySetType = SigstorePublicKeySet::class;
-    protected $publicKeySetDataType = '';
-    /**
-     * Optional. A user-provided name for this `SigstoreAuthority`. This field has
-     * no effect on the policy evaluation behavior except to improve readability
-     * of messages in evaluation results.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\BinaryAuthorization {
+    class SigstoreAuthority extends \Google\Model
     {
+        /**
+         * Optional. A user-provided name for this `SigstoreAuthority`. This field has
+         * no effect on the policy evaluation behavior except to improve readability
+         * of messages in evaluation results.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $publicKeySetType = SigstorePublicKeySet::class;
+        protected $publicKeySetDataType = '';
+        /**
+         * Optional. A user-provided name for this `SigstoreAuthority`. This field has
+         * no effect on the policy evaluation behavior except to improve readability
+         * of messages in evaluation results.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. A simple set of public keys. A signature is considered valid if
+         * any keys in the set validate the signature.
+         *
+         * @param SigstorePublicKeySet $publicKeySet
+         */
+        public function setPublicKeySet(SigstorePublicKeySet $publicKeySet)
+        {
+        }
+        /**
+         * @return SigstorePublicKeySet
+         */
+        public function getPublicKeySet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\SigstoreAuthority registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. A simple set of public keys. A signature is considered valid if
-     * any keys in the set validate the signature.
-     *
-     * @param SigstorePublicKeySet $publicKeySet
-     */
-    public function setPublicKeySet(SigstorePublicKeySet $publicKeySet)
-    {
-    }
-    /**
-     * @return SigstorePublicKeySet
-     */
-    public function getPublicKeySet()
+    class Google_Service_BinaryAuthorization_SigstoreAuthority extends \Google\Service\BinaryAuthorization\SigstoreAuthority
     {
     }
 }

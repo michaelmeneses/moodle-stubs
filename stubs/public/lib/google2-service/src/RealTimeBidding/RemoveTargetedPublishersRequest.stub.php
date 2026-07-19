@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class RemoveTargetedPublishersRequest extends \Google\Collection
-{
-    protected $collection_key = 'publisherIds';
-    /**
-     * A list of publisher IDs to stop targeting in the pretargeting
-     * configuration. These values will be removed from the list of targeted
-     * publisher IDs in PretargetingConfig.publisherTargeting.values. Publishers
-     * are identified by their publisher ID from ads.txt / app-ads.txt. See
-     * https://iabtechlab.com/ads-txt/ and https://iabtechlab.com/app-ads-txt/ for
-     * more details.
-     *
-     * @var string[]
-     */
-    public $publisherIds;
-    /**
-     * A list of publisher IDs to stop targeting in the pretargeting
-     * configuration. These values will be removed from the list of targeted
-     * publisher IDs in PretargetingConfig.publisherTargeting.values. Publishers
-     * are identified by their publisher ID from ads.txt / app-ads.txt. See
-     * https://iabtechlab.com/ads-txt/ and https://iabtechlab.com/app-ads-txt/ for
-     * more details.
-     *
-     * @param string[] $publisherIds
-     */
-    public function setPublisherIds($publisherIds)
+namespace Google\Service\RealTimeBidding {
+    class RemoveTargetedPublishersRequest extends \Google\Collection
     {
+        protected $collection_key = 'publisherIds';
+        /**
+         * A list of publisher IDs to stop targeting in the pretargeting
+         * configuration. These values will be removed from the list of targeted
+         * publisher IDs in PretargetingConfig.publisherTargeting.values. Publishers
+         * are identified by their publisher ID from ads.txt / app-ads.txt. See
+         * https://iabtechlab.com/ads-txt/ and https://iabtechlab.com/app-ads-txt/ for
+         * more details.
+         *
+         * @var string[]
+         */
+        public $publisherIds;
+        /**
+         * A list of publisher IDs to stop targeting in the pretargeting
+         * configuration. These values will be removed from the list of targeted
+         * publisher IDs in PretargetingConfig.publisherTargeting.values. Publishers
+         * are identified by their publisher ID from ads.txt / app-ads.txt. See
+         * https://iabtechlab.com/ads-txt/ and https://iabtechlab.com/app-ads-txt/ for
+         * more details.
+         *
+         * @param string[] $publisherIds
+         */
+        public function setPublisherIds($publisherIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPublisherIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\RemoveTargetedPublishersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublisherIds()
+    class Google_Service_RealTimeBidding_RemoveTargetedPublishersRequest extends \Google\Service\RealTimeBidding\RemoveTargetedPublishersRequest
     {
     }
 }

@@ -21,194 +21,203 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class Session extends \Google\Model
-{
-    /**
-     * Session active time. While start_time_millis and end_time_millis define the
-     * full session time, the active time can be shorter and specified by
-     * active_time_millis. If the inactive time during the session is known, it
-     * should also be inserted via a com.google.activity.segment data point with a
-     * STILL activity value
-     *
-     * @var string
-     */
-    public $activeTimeMillis;
-    /**
-     * The type of activity this session represents.
-     *
-     * @var int
-     */
-    public $activityType;
-    protected $applicationType = Application::class;
-    protected $applicationDataType = '';
-    /**
-     * A description for this session.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * An end time, in milliseconds since epoch, inclusive.
-     *
-     * @var string
-     */
-    public $endTimeMillis;
-    /**
-     * A client-generated identifier that is unique across all sessions owned by
-     * this particular user.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A timestamp that indicates when the session was last modified.
-     *
-     * @var string
-     */
-    public $modifiedTimeMillis;
-    /**
-     * A human readable name of the session.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A start time, in milliseconds since epoch, inclusive.
-     *
-     * @var string
-     */
-    public $startTimeMillis;
-    /**
-     * Session active time. While start_time_millis and end_time_millis define the
-     * full session time, the active time can be shorter and specified by
-     * active_time_millis. If the inactive time during the session is known, it
-     * should also be inserted via a com.google.activity.segment data point with a
-     * STILL activity value
-     *
-     * @param string $activeTimeMillis
-     */
-    public function setActiveTimeMillis($activeTimeMillis)
+namespace Google\Service\Fitness {
+    class Session extends \Google\Model
     {
+        /**
+         * Session active time. While start_time_millis and end_time_millis define the
+         * full session time, the active time can be shorter and specified by
+         * active_time_millis. If the inactive time during the session is known, it
+         * should also be inserted via a com.google.activity.segment data point with a
+         * STILL activity value
+         *
+         * @var string
+         */
+        public $activeTimeMillis;
+        /**
+         * The type of activity this session represents.
+         *
+         * @var int
+         */
+        public $activityType;
+        protected $applicationType = Application::class;
+        protected $applicationDataType = '';
+        /**
+         * A description for this session.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * An end time, in milliseconds since epoch, inclusive.
+         *
+         * @var string
+         */
+        public $endTimeMillis;
+        /**
+         * A client-generated identifier that is unique across all sessions owned by
+         * this particular user.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A timestamp that indicates when the session was last modified.
+         *
+         * @var string
+         */
+        public $modifiedTimeMillis;
+        /**
+         * A human readable name of the session.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A start time, in milliseconds since epoch, inclusive.
+         *
+         * @var string
+         */
+        public $startTimeMillis;
+        /**
+         * Session active time. While start_time_millis and end_time_millis define the
+         * full session time, the active time can be shorter and specified by
+         * active_time_millis. If the inactive time during the session is known, it
+         * should also be inserted via a com.google.activity.segment data point with a
+         * STILL activity value
+         *
+         * @param string $activeTimeMillis
+         */
+        public function setActiveTimeMillis($activeTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveTimeMillis()
+        {
+        }
+        /**
+         * The type of activity this session represents.
+         *
+         * @param int $activityType
+         */
+        public function setActivityType($activityType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActivityType()
+        {
+        }
+        /**
+         * The application that created the session.
+         *
+         * @param Application $application
+         */
+        public function setApplication(Application $application)
+        {
+        }
+        /**
+         * @return Application
+         */
+        public function getApplication()
+        {
+        }
+        /**
+         * A description for this session.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * An end time, in milliseconds since epoch, inclusive.
+         *
+         * @param string $endTimeMillis
+         */
+        public function setEndTimeMillis($endTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeMillis()
+        {
+        }
+        /**
+         * A client-generated identifier that is unique across all sessions owned by
+         * this particular user.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A timestamp that indicates when the session was last modified.
+         *
+         * @param string $modifiedTimeMillis
+         */
+        public function setModifiedTimeMillis($modifiedTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModifiedTimeMillis()
+        {
+        }
+        /**
+         * A human readable name of the session.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A start time, in milliseconds since epoch, inclusive.
+         *
+         * @param string $startTimeMillis
+         */
+        public function setStartTimeMillis($startTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\Session registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveTimeMillis()
-    {
-    }
-    /**
-     * The type of activity this session represents.
-     *
-     * @param int $activityType
-     */
-    public function setActivityType($activityType)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getActivityType()
-    {
-    }
-    /**
-     * The application that created the session.
-     *
-     * @param Application $application
-     */
-    public function setApplication(Application $application)
-    {
-    }
-    /**
-     * @return Application
-     */
-    public function getApplication()
-    {
-    }
-    /**
-     * A description for this session.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * An end time, in milliseconds since epoch, inclusive.
-     *
-     * @param string $endTimeMillis
-     */
-    public function setEndTimeMillis($endTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTimeMillis()
-    {
-    }
-    /**
-     * A client-generated identifier that is unique across all sessions owned by
-     * this particular user.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * A timestamp that indicates when the session was last modified.
-     *
-     * @param string $modifiedTimeMillis
-     */
-    public function setModifiedTimeMillis($modifiedTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModifiedTimeMillis()
-    {
-    }
-    /**
-     * A human readable name of the session.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A start time, in milliseconds since epoch, inclusive.
-     *
-     * @param string $startTimeMillis
-     */
-    public function setStartTimeMillis($startTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeMillis()
+    class Google_Service_Fitness_Session extends \Google\Service\Fitness\Session
     {
     }
 }

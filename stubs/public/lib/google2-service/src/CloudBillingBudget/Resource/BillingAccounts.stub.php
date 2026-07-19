@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBillingBudget\Resource;
-
-/**
- * The "billingAccounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $billingbudgetsService = new Google\Service\CloudBillingBudget(...);
- *   $billingAccounts = $billingbudgetsService->billingAccounts;
- *  </code>
- */
-class BillingAccounts extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBillingBudget\Resource {
+    /**
+     * The "billingAccounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $billingbudgetsService = new Google\Service\CloudBillingBudget(...);
+     *   $billingAccounts = $billingbudgetsService->billingAccounts;
+     *  </code>
+     */
+    class BillingAccounts extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBillingBudget\Resource\BillingAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBillingBudget_Resource_BillingAccounts extends \Google\Service\CloudBillingBudget\Resource\BillingAccounts
+    {
+    }
 }

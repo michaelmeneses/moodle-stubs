@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyDailyCycle extends \Google\Model
-{
-    /**
-     * Defines a schedule with units measured in days. The value determines how
-     * many days pass between the start of each cycle.
-     *
-     * @var int
-     */
-    public $daysInCycle;
-    /**
-     * Output only. [Output only] A predetermined duration for the window,
-     * automatically chosen to be the smallest possible in the given scenario.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Start time of the window. This must be in UTC format that resolves to one
-     * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
-     * and 08:00 are valid.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Defines a schedule with units measured in days. The value determines how
-     * many days pass between the start of each cycle.
-     *
-     * @param int $daysInCycle
-     */
-    public function setDaysInCycle($daysInCycle)
+namespace Google\Service\Compute {
+    class ResourcePolicyDailyCycle extends \Google\Model
     {
+        /**
+         * Defines a schedule with units measured in days. The value determines how
+         * many days pass between the start of each cycle.
+         *
+         * @var int
+         */
+        public $daysInCycle;
+        /**
+         * Output only. [Output only] A predetermined duration for the window,
+         * automatically chosen to be the smallest possible in the given scenario.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Start time of the window. This must be in UTC format that resolves to one
+         * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
+         * and 08:00 are valid.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Defines a schedule with units measured in days. The value determines how
+         * many days pass between the start of each cycle.
+         *
+         * @param int $daysInCycle
+         */
+        public function setDaysInCycle($daysInCycle)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDaysInCycle()
+        {
+        }
+        /**
+         * Output only. [Output only] A predetermined duration for the window,
+         * automatically chosen to be the smallest possible in the given scenario.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Start time of the window. This must be in UTC format that resolves to one
+         * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
+         * and 08:00 are valid.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyDailyCycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysInCycle()
-    {
-    }
-    /**
-     * Output only. [Output only] A predetermined duration for the window,
-     * automatically chosen to be the smallest possible in the given scenario.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Start time of the window. This must be in UTC format that resolves to one
-     * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
-     * and 08:00 are valid.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Compute_ResourcePolicyDailyCycle extends \Google\Service\Compute\ResourcePolicyDailyCycle
     {
     }
 }

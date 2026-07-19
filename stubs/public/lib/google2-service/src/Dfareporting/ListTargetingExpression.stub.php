@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ListTargetingExpression extends \Google\Model
-{
-    /**
-     * Expression describing which lists are being targeted by the ad.
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * Expression describing which lists are being targeted by the ad.
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
+namespace Google\Service\Dfareporting {
+    class ListTargetingExpression extends \Google\Model
     {
+        /**
+         * Expression describing which lists are being targeted by the ad.
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * Expression describing which lists are being targeted by the ad.
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ListTargetingExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpression()
+    class Google_Service_Dfareporting_ListTargetingExpression extends \Google\Service\Dfareporting\ListTargetingExpression
     {
     }
 }

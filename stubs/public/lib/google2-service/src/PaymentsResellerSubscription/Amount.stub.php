@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class Amount extends \Google\Model
-{
-    /**
-     * Required. Amount in micros (1_000_000 micros = 1 currency unit)
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * Required. Currency codes in accordance with [ISO-4217 Currency Codes]
-     * (https://en.wikipedia.org/wiki/ISO_4217). For example, USD.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Required. Amount in micros (1_000_000 micros = 1 currency unit)
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
+namespace Google\Service\PaymentsResellerSubscription {
+    class Amount extends \Google\Model
     {
+        /**
+         * Required. Amount in micros (1_000_000 micros = 1 currency unit)
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * Required. Currency codes in accordance with [ISO-4217 Currency Codes]
+         * (https://en.wikipedia.org/wiki/ISO_4217). For example, USD.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Required. Amount in micros (1_000_000 micros = 1 currency unit)
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * Required. Currency codes in accordance with [ISO-4217 Currency Codes]
+         * (https://en.wikipedia.org/wiki/ISO_4217). For example, USD.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Amount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * Required. Currency codes in accordance with [ISO-4217 Currency Codes]
-     * (https://en.wikipedia.org/wiki/ISO_4217). For example, USD.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
+    class Google_Service_PaymentsResellerSubscription_Amount extends \Google\Service\PaymentsResellerSubscription\Amount
     {
     }
 }

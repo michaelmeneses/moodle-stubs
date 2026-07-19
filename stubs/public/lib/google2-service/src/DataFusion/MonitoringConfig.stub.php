@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class MonitoringConfig extends \Google\Model
-{
-    /**
-     * Optional. Option to enable the instance v2 metrics for this instance. This
-     * field is supported only in CDF versions 6.11.1.1 and above.
-     *
-     * @var bool
-     */
-    public $enableInstanceV2Metrics;
-    /**
-     * Optional. Option to enable the instance v2 metrics for this instance. This
-     * field is supported only in CDF versions 6.11.1.1 and above.
-     *
-     * @param bool $enableInstanceV2Metrics
-     */
-    public function setEnableInstanceV2Metrics($enableInstanceV2Metrics)
+namespace Google\Service\DataFusion {
+    class MonitoringConfig extends \Google\Model
     {
+        /**
+         * Optional. Option to enable the instance v2 metrics for this instance. This
+         * field is supported only in CDF versions 6.11.1.1 and above.
+         *
+         * @var bool
+         */
+        public $enableInstanceV2Metrics;
+        /**
+         * Optional. Option to enable the instance v2 metrics for this instance. This
+         * field is supported only in CDF versions 6.11.1.1 and above.
+         *
+         * @param bool $enableInstanceV2Metrics
+         */
+        public function setEnableInstanceV2Metrics($enableInstanceV2Metrics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInstanceV2Metrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataFusion\MonitoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableInstanceV2Metrics()
+    class Google_Service_DataFusion_MonitoringConfig extends \Google\Service\DataFusion\MonitoringConfig
     {
     }
 }

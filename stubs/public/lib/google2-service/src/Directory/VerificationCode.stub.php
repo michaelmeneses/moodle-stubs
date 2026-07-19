@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class VerificationCode extends \Google\Model
-{
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The type of the resource. This is always
-     * `admin#directory#verificationCode`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The obfuscated unique ID of the user.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * A current verification code for the user. Invalidated or used verification
-     * codes are not returned as part of the result.
-     *
-     * @var string
-     */
-    public $verificationCode;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class VerificationCode extends \Google\Model
     {
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The type of the resource. This is always
+         * `admin#directory#verificationCode`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The obfuscated unique ID of the user.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * A current verification code for the user. Invalidated or used verification
+         * codes are not returned as part of the result.
+         *
+         * @var string
+         */
+        public $verificationCode;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The type of the resource. This is always
+         * `admin#directory#verificationCode`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The obfuscated unique ID of the user.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
+        /**
+         * A current verification code for the user. Invalidated or used verification
+         * codes are not returned as part of the result.
+         *
+         * @param string $verificationCode
+         */
+        public function setVerificationCode($verificationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\VerificationCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The type of the resource. This is always
-     * `admin#directory#verificationCode`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The obfuscated unique ID of the user.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
-    {
-    }
-    /**
-     * A current verification code for the user. Invalidated or used verification
-     * codes are not returned as part of the result.
-     *
-     * @param string $verificationCode
-     */
-    public function setVerificationCode($verificationCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationCode()
+    class Google_Service_Directory_VerificationCode extends \Google\Service\Directory\VerificationCode
     {
     }
 }

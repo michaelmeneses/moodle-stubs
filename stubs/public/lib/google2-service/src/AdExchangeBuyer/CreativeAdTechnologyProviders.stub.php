@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeAdTechnologyProviders extends \Google\Collection
-{
-    protected $collection_key = 'detectedProviderIds';
-    public $detectedProviderIds;
-    public $hasUnidentifiedProvider;
-    public function setDetectedProviderIds($detectedProviderIds)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeAdTechnologyProviders extends \Google\Collection
     {
+        protected $collection_key = 'detectedProviderIds';
+        public $detectedProviderIds;
+        public $hasUnidentifiedProvider;
+        public function setDetectedProviderIds($detectedProviderIds)
+        {
+        }
+        public function getDetectedProviderIds()
+        {
+        }
+        public function setHasUnidentifiedProvider($hasUnidentifiedProvider)
+        {
+        }
+        public function getHasUnidentifiedProvider()
+        {
+        }
     }
-    public function getDetectedProviderIds()
-    {
-    }
-    public function setHasUnidentifiedProvider($hasUnidentifiedProvider)
-    {
-    }
-    public function getHasUnidentifiedProvider()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeAdTechnologyProviders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_CreativeAdTechnologyProviders extends \Google\Service\AdExchangeBuyer\CreativeAdTechnologyProviders
     {
     }
 }

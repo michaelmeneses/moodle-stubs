@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UpstreamPolicy extends \Google\Model
-{
-    /**
-     * The user-provided ID of the upstream policy.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Entries with a greater priority value take precedence in the pull order.
-     *
-     * @var int
-     */
-    public $priority;
-    /**
-     * A reference to the repository resource, for example:
-     * `projects/p1/locations/us-central1/repositories/repo1`.
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * The user-provided ID of the upstream policy.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\ArtifactRegistry {
+    class UpstreamPolicy extends \Google\Model
     {
+        /**
+         * The user-provided ID of the upstream policy.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Entries with a greater priority value take precedence in the pull order.
+         *
+         * @var int
+         */
+        public $priority;
+        /**
+         * A reference to the repository resource, for example:
+         * `projects/p1/locations/us-central1/repositories/repo1`.
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * The user-provided ID of the upstream policy.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Entries with a greater priority value take precedence in the pull order.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * A reference to the repository resource, for example:
+         * `projects/p1/locations/us-central1/repositories/repo1`.
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UpstreamPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Entries with a greater priority value take precedence in the pull order.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * A reference to the repository resource, for example:
-     * `projects/p1/locations/us-central1/repositories/repo1`.
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_ArtifactRegistry_UpstreamPolicy extends \Google\Service\ArtifactRegistry\UpstreamPolicy
     {
     }
 }

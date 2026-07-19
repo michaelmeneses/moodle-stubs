@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListMavenArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'mavenArtifacts';
-    protected $mavenArtifactsType = MavenArtifact::class;
-    protected $mavenArtifactsDataType = 'array';
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The maven artifacts returned.
-     *
-     * @param MavenArtifact[] $mavenArtifacts
-     */
-    public function setMavenArtifacts($mavenArtifacts)
+namespace Google\Service\ArtifactRegistry {
+    class ListMavenArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'mavenArtifacts';
+        protected $mavenArtifactsType = MavenArtifact::class;
+        protected $mavenArtifactsDataType = 'array';
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The maven artifacts returned.
+         *
+         * @param MavenArtifact[] $mavenArtifacts
+         */
+        public function setMavenArtifacts($mavenArtifacts)
+        {
+        }
+        /**
+         * @return MavenArtifact[]
+         */
+        public function getMavenArtifacts()
+        {
+        }
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MavenArtifact[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListMavenArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMavenArtifacts()
-    {
-    }
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ArtifactRegistry_ListMavenArtifactsResponse extends \Google\Service\ArtifactRegistry\ListMavenArtifactsResponse
     {
     }
 }

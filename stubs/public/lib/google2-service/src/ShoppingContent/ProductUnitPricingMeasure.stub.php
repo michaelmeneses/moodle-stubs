@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductUnitPricingMeasure extends \Google\Model
-{
-    /**
-     * The unit of the measure.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The measure of an item.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * The unit of the measure.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\ShoppingContent {
+    class ProductUnitPricingMeasure extends \Google\Model
     {
+        /**
+         * The unit of the measure.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The measure of an item.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * The unit of the measure.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductUnitPricingMeasure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_ShoppingContent_ProductUnitPricingMeasure extends \Google\Service\ShoppingContent\ProductUnitPricingMeasure
     {
     }
 }

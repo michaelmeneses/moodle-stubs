@@ -21,44 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360\Resource;
-
-/**
- * The "searchAds360Fields" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchads360Service = new Google\Service\SA360(...);
- *   $searchAds360Fields = $searchads360Service->searchAds360Fields;
- *  </code>
- */
-class SearchAds360Fields extends \Google\Service\Resource
-{
+namespace Google\Service\SA360\Resource {
+    use Google\Service\SA360\GoogleAdsSearchads360V0ResourcesSearchAds360Field;
+    use Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsRequest;
+    use Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse;
     /**
-     * Returns just the requested field. List of thrown errors:
-     * [AuthenticationError]() [AuthorizationError]() [HeaderError]()
-     * [InternalError]() [QuotaError]() [RequestError]() (searchAds360Fields.get)
-     *
-     * @param string $resourceName Required. The resource name of the field to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleAdsSearchads360V0ResourcesSearchAds360Field
-     * @throws \Google\Service\Exception
+     * The "searchAds360Fields" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchads360Service = new Google\Service\SA360(...);
+     *   $searchAds360Fields = $searchads360Service->searchAds360Fields;
+     *  </code>
      */
-    public function get($resourceName, $optParams = [])
+    class SearchAds360Fields extends \Google\Service\Resource
     {
+        /**
+         * Returns just the requested field. List of thrown errors:
+         * [AuthenticationError]() [AuthorizationError]() [HeaderError]()
+         * [InternalError]() [QuotaError]() [RequestError]() (searchAds360Fields.get)
+         *
+         * @param string $resourceName Required. The resource name of the field to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleAdsSearchads360V0ResourcesSearchAds360Field
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceName, $optParams = [])
+        {
+        }
+        /**
+         * Returns all fields that match the search [query](/search-
+         * ads/reporting/concepts/field-service#use_a_query_to_get_field_details). List
+         * of thrown errors: [AuthenticationError]() [AuthorizationError]()
+         * [HeaderError]() [InternalError]() [QueryError]() [QuotaError]()
+         * [RequestError]() (searchAds360Fields.search)
+         *
+         * @param GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search(GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns all fields that match the search [query](/search-
-     * ads/reporting/concepts/field-service#use_a_query_to_get_field_details). List
-     * of thrown errors: [AuthenticationError]() [AuthorizationError]()
-     * [HeaderError]() [InternalError]() [QueryError]() [QuotaError]()
-     * [RequestError]() (searchAds360Fields.search)
-     *
-     * @param GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SA360\Resource\SearchAds360Fields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function search(GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsRequest $postBody, $optParams = [])
+    class Google_Service_SA360_Resource_SearchAds360Fields extends \Google\Service\SA360\Resource\SearchAds360Fields
     {
     }
 }

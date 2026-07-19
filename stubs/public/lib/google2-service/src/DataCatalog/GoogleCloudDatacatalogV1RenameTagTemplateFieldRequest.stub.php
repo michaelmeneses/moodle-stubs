@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest extends \Google\Model
-{
-    /**
-     * Required. The new ID of this tag template field. For example,
-     * `my_new_field`.
-     *
-     * @var string
-     */
-    public $newTagTemplateFieldId;
-    /**
-     * Required. The new ID of this tag template field. For example,
-     * `my_new_field`.
-     *
-     * @param string $newTagTemplateFieldId
-     */
-    public function setNewTagTemplateFieldId($newTagTemplateFieldId)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest extends \Google\Model
     {
+        /**
+         * Required. The new ID of this tag template field. For example,
+         * `my_new_field`.
+         *
+         * @var string
+         */
+        public $newTagTemplateFieldId;
+        /**
+         * Required. The new ID of this tag template field. For example,
+         * `my_new_field`.
+         *
+         * @param string $newTagTemplateFieldId
+         */
+        public function setNewTagTemplateFieldId($newTagTemplateFieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewTagTemplateFieldId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewTagTemplateFieldId()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest
     {
     }
 }

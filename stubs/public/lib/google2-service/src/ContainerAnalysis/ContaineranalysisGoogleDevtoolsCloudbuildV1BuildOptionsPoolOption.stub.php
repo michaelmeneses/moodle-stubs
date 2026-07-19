@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOption extends \Google\Model
-{
-    /**
-     * The `WorkerPool` resource to execute the build on. You must have
-     * `cloudbuild.workerpools.use` on the project hosting the WorkerPool. Format
-     * projects/{project}/locations/{location}/workerPools/{workerPoolId}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The `WorkerPool` resource to execute the build on. You must have
-     * `cloudbuild.workerpools.use` on the project hosting the WorkerPool. Format
-     * projects/{project}/locations/{location}/workerPools/{workerPoolId}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOption extends \Google\Model
     {
+        /**
+         * The `WorkerPool` resource to execute the build on. You must have
+         * `cloudbuild.workerpools.use` on the project hosting the WorkerPool. Format
+         * projects/{project}/locations/{location}/workerPools/{workerPoolId}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The `WorkerPool` resource to execute the build on. You must have
+         * `cloudbuild.workerpools.use` on the project hosting the WorkerPool. Format
+         * projects/{project}/locations/{location}/workerPools/{workerPoolId}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOption extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOption
     {
     }
 }

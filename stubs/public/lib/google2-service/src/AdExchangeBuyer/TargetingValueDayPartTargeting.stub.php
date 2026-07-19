@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValueDayPartTargeting extends \Google\Collection
-{
-    protected $collection_key = 'dayParts';
-    protected $dayPartsType = TargetingValueDayPartTargetingDayPart::class;
-    protected $dayPartsDataType = 'array';
-    public $timeZoneType;
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValueDayPartTargeting extends \Google\Collection
+    {
+        protected $collection_key = 'dayParts';
+        protected $dayPartsType = TargetingValueDayPartTargetingDayPart::class;
+        protected $dayPartsDataType = 'array';
+        public $timeZoneType;
+        /**
+         * @param TargetingValueDayPartTargetingDayPart[]
+         */
+        public function setDayParts($dayParts)
+        {
+        }
+        /**
+         * @return TargetingValueDayPartTargetingDayPart[]
+         */
+        public function getDayParts()
+        {
+        }
+        public function setTimeZoneType($timeZoneType)
+        {
+        }
+        public function getTimeZoneType()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param TargetingValueDayPartTargetingDayPart[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValueDayPartTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDayParts($dayParts)
-    {
-    }
-    /**
-     * @return TargetingValueDayPartTargetingDayPart[]
-     */
-    public function getDayParts()
-    {
-    }
-    public function setTimeZoneType($timeZoneType)
-    {
-    }
-    public function getTimeZoneType()
+    class Google_Service_AdExchangeBuyer_TargetingValueDayPartTargeting extends \Google\Service\AdExchangeBuyer\TargetingValueDayPartTargeting
     {
     }
 }

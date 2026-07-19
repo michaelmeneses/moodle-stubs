@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Aws\Arn\ArnParser;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use InvalidArgumentException;
 final class DownloadDirectoryRequest extends AbstractTransferRequest
 {
     public static array $configKeys = ['s3_prefix' => 'string', 'filter' => 'callable', 'download_object_request_modifier' => 'callable', 'failure_policy' => 'callable', 'max_concurrency' => 'int', 'track_progress' => 'bool', 'target_part_size_bytes' => 'int', 'list_objects_v2_args' => 'array', 'fails_when_destination_exists' => 'bool'];

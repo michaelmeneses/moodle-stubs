@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageImage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $content;
-    /**
-     * @var int
-     */
-    public $height;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * @var int
-     */
-    public $width;
-    /**
-     * @param string
-     */
-    public function setContent($content)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageImage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $content;
+        /**
+         * @var int
+         */
+        public $height;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * @var int
+         */
+        public $width;
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageImage extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageImage
     {
     }
 }

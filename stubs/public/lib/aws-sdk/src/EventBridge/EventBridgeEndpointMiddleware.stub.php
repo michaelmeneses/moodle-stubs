@@ -8,6 +8,11 @@
  */
 namespace Aws\EventBridge;
 
+use Aws\CommandInterface;
+use Aws\Endpoint\EndpointProvider;
+use Aws\Endpoint\PartitionEndpointProvider;
+use InvalidArgumentException;
+use Psr\Http\Message\RequestInterface;
 /**
  * Reroutes an eventbridge request to the proper endpoint
  * @internal

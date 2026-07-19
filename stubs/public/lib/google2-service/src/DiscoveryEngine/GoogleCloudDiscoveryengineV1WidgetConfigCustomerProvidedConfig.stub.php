@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigCustomerProvidedConfig extends \Google\Model
-{
-    /**
-     * Default customer type.
-     */
-    public const CUSTOMER_TYPE_DEFAULT_CUSTOMER = 'DEFAULT_CUSTOMER';
-    /**
-     * Government customer type. Some features are disabled for government
-     * customers due to legal requirements.
-     */
-    public const CUSTOMER_TYPE_GOVERNMENT_CUSTOMER = 'GOVERNMENT_CUSTOMER';
-    /**
-     * Customer type.
-     *
-     * @var string
-     */
-    public $customerType;
-    /**
-     * Customer type.
-     *
-     * Accepted values: DEFAULT_CUSTOMER, GOVERNMENT_CUSTOMER
-     *
-     * @param self::CUSTOMER_TYPE_* $customerType
-     */
-    public function setCustomerType($customerType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigCustomerProvidedConfig extends \Google\Model
     {
+        /**
+         * Default customer type.
+         */
+        public const CUSTOMER_TYPE_DEFAULT_CUSTOMER = 'DEFAULT_CUSTOMER';
+        /**
+         * Government customer type. Some features are disabled for government
+         * customers due to legal requirements.
+         */
+        public const CUSTOMER_TYPE_GOVERNMENT_CUSTOMER = 'GOVERNMENT_CUSTOMER';
+        /**
+         * Customer type.
+         *
+         * @var string
+         */
+        public $customerType;
+        /**
+         * Customer type.
+         *
+         * Accepted values: DEFAULT_CUSTOMER, GOVERNMENT_CUSTOMER
+         *
+         * @param self::CUSTOMER_TYPE_* $customerType
+         */
+        public function setCustomerType($customerType)
+        {
+        }
+        /**
+         * @return self::CUSTOMER_TYPE_*
+         */
+        public function getCustomerType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CUSTOMER_TYPE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigCustomerProvidedConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigCustomerProvidedConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigCustomerProvidedConfig
     {
     }
 }

@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Folder extends \Google\Model
-{
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * The fingerprint of the GTM Folder as computed at storage time. This value
-     * is recomputed whenever the folder is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * The Folder ID uniquely identifies the GTM Folder.
-     *
-     * @var string
-     */
-    public $folderId;
-    /**
-     * Folder display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User notes on how to apply this folder in the container.
-     *
-     * @var string
-     */
-    public $notes;
-    /**
-     * GTM Folder's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * GTM Workspace ID.
-     *
-     * @var string
-     */
-    public $workspaceId;
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Folder extends \Google\Model
     {
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * The fingerprint of the GTM Folder as computed at storage time. This value
+         * is recomputed whenever the folder is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * The Folder ID uniquely identifies the GTM Folder.
+         *
+         * @var string
+         */
+        public $folderId;
+        /**
+         * Folder display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User notes on how to apply this folder in the container.
+         *
+         * @var string
+         */
+        public $notes;
+        /**
+         * GTM Folder's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * GTM Workspace ID.
+         *
+         * @var string
+         */
+        public $workspaceId;
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * The fingerprint of the GTM Folder as computed at storage time. This value
+         * is recomputed whenever the folder is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The Folder ID uniquely identifies the GTM Folder.
+         *
+         * @param string $folderId
+         */
+        public function setFolderId($folderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolderId()
+        {
+        }
+        /**
+         * Folder display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User notes on how to apply this folder in the container.
+         *
+         * @param string $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * GTM Folder's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * GTM Workspace ID.
+         *
+         * @param string $workspaceId
+         */
+        public function setWorkspaceId($workspaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Folder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * The fingerprint of the GTM Folder as computed at storage time. This value
-     * is recomputed whenever the folder is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The Folder ID uniquely identifies the GTM Folder.
-     *
-     * @param string $folderId
-     */
-    public function setFolderId($folderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFolderId()
-    {
-    }
-    /**
-     * Folder display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User notes on how to apply this folder in the container.
-     *
-     * @param string $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * GTM Folder's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * GTM Workspace ID.
-     *
-     * @param string $workspaceId
-     */
-    public function setWorkspaceId($workspaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspaceId()
+    class Google_Service_TagManager_Folder extends \Google\Service\TagManager\Folder
     {
     }
 }

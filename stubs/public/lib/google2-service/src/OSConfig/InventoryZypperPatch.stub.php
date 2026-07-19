@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryZypperPatch extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $patchName;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * @var string
-     */
-    public $summary;
-    /**
-     * @param string
-     */
-    public function setCategory($category)
+namespace Google\Service\OSConfig {
+    class InventoryZypperPatch extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $category;
+        /**
+         * @var string
+         */
+        public $patchName;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * @var string
+         */
+        public $summary;
+        /**
+         * @param string
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPatchName($patchName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatchName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\InventoryZypperPatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPatchName($patchName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatchName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
+    class Google_Service_OSConfig_InventoryZypperPatch extends \Google\Service\OSConfig\InventoryZypperPatch
     {
     }
 }

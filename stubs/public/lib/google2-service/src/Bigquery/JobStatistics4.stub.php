@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobStatistics4 extends \Google\Collection
-{
-    protected $collection_key = 'timeline';
-    /**
-     * Output only. Number of files per destination URI or URI pattern specified
-     * in the extract configuration. These values will be in the same order as the
-     * URIs specified in the 'destinationUris' field.
-     *
-     * @var string[]
-     */
-    public $destinationUriFileCounts;
-    /**
-     * Output only. Number of user bytes extracted into the result. This is the
-     * byte count as computed by BigQuery for billing purposes and doesn't have
-     * any relationship with the number of actual result bytes extracted in the
-     * desired format.
-     *
-     * @var string
-     */
-    public $inputBytes;
-    protected $timelineType = QueryTimelineSample::class;
-    protected $timelineDataType = 'array';
-    /**
-     * Output only. Number of files per destination URI or URI pattern specified
-     * in the extract configuration. These values will be in the same order as the
-     * URIs specified in the 'destinationUris' field.
-     *
-     * @param string[] $destinationUriFileCounts
-     */
-    public function setDestinationUriFileCounts($destinationUriFileCounts)
+namespace Google\Service\Bigquery {
+    class JobStatistics4 extends \Google\Collection
     {
+        protected $collection_key = 'timeline';
+        /**
+         * Output only. Number of files per destination URI or URI pattern specified
+         * in the extract configuration. These values will be in the same order as the
+         * URIs specified in the 'destinationUris' field.
+         *
+         * @var string[]
+         */
+        public $destinationUriFileCounts;
+        /**
+         * Output only. Number of user bytes extracted into the result. This is the
+         * byte count as computed by BigQuery for billing purposes and doesn't have
+         * any relationship with the number of actual result bytes extracted in the
+         * desired format.
+         *
+         * @var string
+         */
+        public $inputBytes;
+        protected $timelineType = QueryTimelineSample::class;
+        protected $timelineDataType = 'array';
+        /**
+         * Output only. Number of files per destination URI or URI pattern specified
+         * in the extract configuration. These values will be in the same order as the
+         * URIs specified in the 'destinationUris' field.
+         *
+         * @param string[] $destinationUriFileCounts
+         */
+        public function setDestinationUriFileCounts($destinationUriFileCounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinationUriFileCounts()
+        {
+        }
+        /**
+         * Output only. Number of user bytes extracted into the result. This is the
+         * byte count as computed by BigQuery for billing purposes and doesn't have
+         * any relationship with the number of actual result bytes extracted in the
+         * desired format.
+         *
+         * @param string $inputBytes
+         */
+        public function setInputBytes($inputBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputBytes()
+        {
+        }
+        /**
+         * Output only. Describes a timeline of job execution.
+         *
+         * @param QueryTimelineSample[] $timeline
+         */
+        public function setTimeline($timeline)
+        {
+        }
+        /**
+         * @return QueryTimelineSample[]
+         */
+        public function getTimeline()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\JobStatistics4 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationUriFileCounts()
-    {
-    }
-    /**
-     * Output only. Number of user bytes extracted into the result. This is the
-     * byte count as computed by BigQuery for billing purposes and doesn't have
-     * any relationship with the number of actual result bytes extracted in the
-     * desired format.
-     *
-     * @param string $inputBytes
-     */
-    public function setInputBytes($inputBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputBytes()
-    {
-    }
-    /**
-     * Output only. Describes a timeline of job execution.
-     *
-     * @param QueryTimelineSample[] $timeline
-     */
-    public function setTimeline($timeline)
-    {
-    }
-    /**
-     * @return QueryTimelineSample[]
-     */
-    public function getTimeline()
+    class Google_Service_Bigquery_JobStatistics4 extends \Google\Service\Bigquery\JobStatistics4
     {
     }
 }

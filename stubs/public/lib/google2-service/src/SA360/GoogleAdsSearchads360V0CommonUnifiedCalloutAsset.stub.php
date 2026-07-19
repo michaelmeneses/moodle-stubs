@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonUnifiedCalloutAsset extends \Google\Collection
-{
-    protected $collection_key = 'adScheduleTargets';
-    protected $adScheduleTargetsType = GoogleAdsSearchads360V0CommonAdScheduleInfo::class;
-    protected $adScheduleTargetsDataType = 'array';
-    /**
-     * The callout text. The length of this string should be between 1 and 25,
-     * inclusive.
-     *
-     * @var string
-     */
-    public $calloutText;
-    /**
-     * Last date of when this asset is effective and still serving, in yyyy-MM-dd
-     * format.
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Start date of when this asset is effective and can begin serving, in yyyy-
-     * MM-dd format.
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Whether to show the asset in search user's time zone. Applies to Microsoft
-     * Ads.
-     *
-     * @var bool
-     */
-    public $useSearcherTimeZone;
-    /**
-     * List of non-overlapping schedules specifying all time intervals for which
-     * the asset may serve. There can be a maximum of 6 schedules per day, 42 in
-     * total.
-     *
-     * @param GoogleAdsSearchads360V0CommonAdScheduleInfo[] $adScheduleTargets
-     */
-    public function setAdScheduleTargets($adScheduleTargets)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonUnifiedCalloutAsset extends \Google\Collection
     {
+        protected $collection_key = 'adScheduleTargets';
+        protected $adScheduleTargetsType = GoogleAdsSearchads360V0CommonAdScheduleInfo::class;
+        protected $adScheduleTargetsDataType = 'array';
+        /**
+         * The callout text. The length of this string should be between 1 and 25,
+         * inclusive.
+         *
+         * @var string
+         */
+        public $calloutText;
+        /**
+         * Last date of when this asset is effective and still serving, in yyyy-MM-dd
+         * format.
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Start date of when this asset is effective and can begin serving, in yyyy-
+         * MM-dd format.
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Whether to show the asset in search user's time zone. Applies to Microsoft
+         * Ads.
+         *
+         * @var bool
+         */
+        public $useSearcherTimeZone;
+        /**
+         * List of non-overlapping schedules specifying all time intervals for which
+         * the asset may serve. There can be a maximum of 6 schedules per day, 42 in
+         * total.
+         *
+         * @param GoogleAdsSearchads360V0CommonAdScheduleInfo[] $adScheduleTargets
+         */
+        public function setAdScheduleTargets($adScheduleTargets)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonAdScheduleInfo[]
+         */
+        public function getAdScheduleTargets()
+        {
+        }
+        /**
+         * The callout text. The length of this string should be between 1 and 25,
+         * inclusive.
+         *
+         * @param string $calloutText
+         */
+        public function setCalloutText($calloutText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCalloutText()
+        {
+        }
+        /**
+         * Last date of when this asset is effective and still serving, in yyyy-MM-dd
+         * format.
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Start date of when this asset is effective and can begin serving, in yyyy-
+         * MM-dd format.
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Whether to show the asset in search user's time zone. Applies to Microsoft
+         * Ads.
+         *
+         * @param bool $useSearcherTimeZone
+         */
+        public function setUseSearcherTimeZone($useSearcherTimeZone)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseSearcherTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0CommonAdScheduleInfo[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonUnifiedCalloutAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdScheduleTargets()
-    {
-    }
-    /**
-     * The callout text. The length of this string should be between 1 and 25,
-     * inclusive.
-     *
-     * @param string $calloutText
-     */
-    public function setCalloutText($calloutText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCalloutText()
-    {
-    }
-    /**
-     * Last date of when this asset is effective and still serving, in yyyy-MM-dd
-     * format.
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Start date of when this asset is effective and can begin serving, in yyyy-
-     * MM-dd format.
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Whether to show the asset in search user's time zone. Applies to Microsoft
-     * Ads.
-     *
-     * @param bool $useSearcherTimeZone
-     */
-    public function setUseSearcherTimeZone($useSearcherTimeZone)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseSearcherTimeZone()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonUnifiedCalloutAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonUnifiedCalloutAsset
     {
     }
 }

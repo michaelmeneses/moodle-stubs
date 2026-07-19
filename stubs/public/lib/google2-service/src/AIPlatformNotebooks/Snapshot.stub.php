@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Snapshot extends \Google\Model
-{
-    /**
-     * Required. The project ID of the snapshot.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The ID of the snapshot.
-     *
-     * @var string
-     */
-    public $snapshotId;
-    /**
-     * Required. The project ID of the snapshot.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\AIPlatformNotebooks {
+    class Snapshot extends \Google\Model
     {
+        /**
+         * Required. The project ID of the snapshot.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The ID of the snapshot.
+         *
+         * @var string
+         */
+        public $snapshotId;
+        /**
+         * Required. The project ID of the snapshot.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. The ID of the snapshot.
+         *
+         * @param string $snapshotId
+         */
+        public function setSnapshotId($snapshotId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Snapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. The ID of the snapshot.
-     *
-     * @param string $snapshotId
-     */
-    public function setSnapshotId($snapshotId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotId()
+    class Google_Service_AIPlatformNotebooks_Snapshot extends \Google\Service\AIPlatformNotebooks\Snapshot
     {
     }
 }

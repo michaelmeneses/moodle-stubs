@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GoalEventDetails extends \Google\Collection
-{
-    protected $collection_key = 'eventConditions';
-    protected $eventConditionsType = GoalEventDetailsEventConditions::class;
-    protected $eventConditionsDataType = 'array';
-    /**
-     * Determines if the event value should be used as the value for this goal.
-     *
-     * @var bool
-     */
-    public $useEventValue;
-    /**
-     * List of event conditions.
-     *
-     * @param GoalEventDetailsEventConditions[] $eventConditions
-     */
-    public function setEventConditions($eventConditions)
+namespace Google\Service\Analytics {
+    class GoalEventDetails extends \Google\Collection
     {
+        protected $collection_key = 'eventConditions';
+        protected $eventConditionsType = GoalEventDetailsEventConditions::class;
+        protected $eventConditionsDataType = 'array';
+        /**
+         * Determines if the event value should be used as the value for this goal.
+         *
+         * @var bool
+         */
+        public $useEventValue;
+        /**
+         * List of event conditions.
+         *
+         * @param GoalEventDetailsEventConditions[] $eventConditions
+         */
+        public function setEventConditions($eventConditions)
+        {
+        }
+        /**
+         * @return GoalEventDetailsEventConditions[]
+         */
+        public function getEventConditions()
+        {
+        }
+        /**
+         * Determines if the event value should be used as the value for this goal.
+         *
+         * @param bool $useEventValue
+         */
+        public function setUseEventValue($useEventValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseEventValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoalEventDetailsEventConditions[]
+     * Runtime class alias of \Google\Service\Analytics\GoalEventDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventConditions()
-    {
-    }
-    /**
-     * Determines if the event value should be used as the value for this goal.
-     *
-     * @param bool $useEventValue
-     */
-    public function setUseEventValue($useEventValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseEventValue()
+    class Google_Service_Analytics_GoalEventDetails extends \Google\Service\Analytics\GoalEventDetails
     {
     }
 }

@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequest extends \Google\Collection
-{
-    protected $collection_key = 'objectives';
-    /**
-     * Required. The DeployedModel ID of the
-     * [ModelDeploymentMonitoringObjectiveConfig.deployed_model_id].
-     *
-     * @var string
-     */
-    public $deployedModelId;
-    /**
-     * The latest timestamp of stats being generated. If not set, indicates
-     * feching stats till the latest possible one.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The feature display name. If specified, only return the stats belonging to
-     * this feature. Format: ModelMonitoringStatsAnomalies.FeatureHistoricStatsAno
-     * malies.feature_display_name, example: "user_destination".
-     *
-     * @var string
-     */
-    public $featureDisplayName;
-    protected $objectivesType = GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequestStatsAnomaliesObjective::class;
-    protected $objectivesDataType = 'array';
-    /**
-     * The standard list page size.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A page token received from a previous
-     * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * The earliest timestamp of stats being generated. If not set, indicates
-     * fetching stats till the earliest possible one.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Required. The DeployedModel ID of the
-     * [ModelDeploymentMonitoringObjectiveConfig.deployed_model_id].
-     *
-     * @param string $deployedModelId
-     */
-    public function setDeployedModelId($deployedModelId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequest extends \Google\Collection
     {
+        protected $collection_key = 'objectives';
+        /**
+         * Required. The DeployedModel ID of the
+         * [ModelDeploymentMonitoringObjectiveConfig.deployed_model_id].
+         *
+         * @var string
+         */
+        public $deployedModelId;
+        /**
+         * The latest timestamp of stats being generated. If not set, indicates
+         * feching stats till the latest possible one.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The feature display name. If specified, only return the stats belonging to
+         * this feature. Format: ModelMonitoringStatsAnomalies.FeatureHistoricStatsAno
+         * malies.feature_display_name, example: "user_destination".
+         *
+         * @var string
+         */
+        public $featureDisplayName;
+        protected $objectivesType = GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequestStatsAnomaliesObjective::class;
+        protected $objectivesDataType = 'array';
+        /**
+         * The standard list page size.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A page token received from a previous
+         * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * The earliest timestamp of stats being generated. If not set, indicates
+         * fetching stats till the earliest possible one.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Required. The DeployedModel ID of the
+         * [ModelDeploymentMonitoringObjectiveConfig.deployed_model_id].
+         *
+         * @param string $deployedModelId
+         */
+        public function setDeployedModelId($deployedModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedModelId()
+        {
+        }
+        /**
+         * The latest timestamp of stats being generated. If not set, indicates
+         * feching stats till the latest possible one.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The feature display name. If specified, only return the stats belonging to
+         * this feature. Format: ModelMonitoringStatsAnomalies.FeatureHistoricStatsAno
+         * malies.feature_display_name, example: "user_destination".
+         *
+         * @param string $featureDisplayName
+         */
+        public function setFeatureDisplayName($featureDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureDisplayName()
+        {
+        }
+        /**
+         * Required. Objectives of the stats to retrieve.
+         *
+         * @param GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequestStatsAnomaliesObjective[] $objectives
+         */
+        public function setObjectives($objectives)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequestStatsAnomaliesObjective[]
+         */
+        public function getObjectives()
+        {
+        }
+        /**
+         * The standard list page size.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A page token received from a previous
+         * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * The earliest timestamp of stats being generated. If not set, indicates
+         * fetching stats till the earliest possible one.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModelId()
-    {
-    }
-    /**
-     * The latest timestamp of stats being generated. If not set, indicates
-     * feching stats till the latest possible one.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The feature display name. If specified, only return the stats belonging to
-     * this feature. Format: ModelMonitoringStatsAnomalies.FeatureHistoricStatsAno
-     * malies.feature_display_name, example: "user_destination".
-     *
-     * @param string $featureDisplayName
-     */
-    public function setFeatureDisplayName($featureDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeatureDisplayName()
-    {
-    }
-    /**
-     * Required. Objectives of the stats to retrieve.
-     *
-     * @param GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequestStatsAnomaliesObjective[] $objectives
-     */
-    public function setObjectives($objectives)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequestStatsAnomaliesObjective[]
-     */
-    public function getObjectives()
-    {
-    }
-    /**
-     * The standard list page size.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A page token received from a previous
-     * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * The earliest timestamp of stats being generated. If not set, indicates
-     * fetching stats till the earliest possible one.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesRequest
     {
     }
 }

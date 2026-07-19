@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceSimpleFilter extends \Google\Model
-{
-    protected $filterExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
-    protected $filterExpressionDataType = '';
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function setFilterExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $filterExpression)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceSimpleFilter extends \Google\Model
     {
+        protected $filterExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
+        protected $filterExpressionDataType = '';
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function setFilterExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $filterExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function getFilterExpression()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceSimpleFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterExpression()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceSimpleFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceSimpleFilter
     {
     }
 }

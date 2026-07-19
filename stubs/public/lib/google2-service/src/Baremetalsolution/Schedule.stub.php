@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class Schedule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $crontabSpec;
-    /**
-     * @var string
-     */
-    public $prefix;
-    /**
-     * @var int
-     */
-    public $retentionCount;
-    /**
-     * @param string
-     */
-    public function setCrontabSpec($crontabSpec)
+namespace Google\Service\Baremetalsolution {
+    class Schedule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $crontabSpec;
+        /**
+         * @var string
+         */
+        public $prefix;
+        /**
+         * @var int
+         */
+        public $retentionCount;
+        /**
+         * @param string
+         */
+        public function setCrontabSpec($crontabSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrontabSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRetentionCount($retentionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRetentionCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrontabSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrefix($prefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefix()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRetentionCount($retentionCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRetentionCount()
+    class Google_Service_Baremetalsolution_Schedule extends \Google\Service\Baremetalsolution\Schedule
     {
     }
 }

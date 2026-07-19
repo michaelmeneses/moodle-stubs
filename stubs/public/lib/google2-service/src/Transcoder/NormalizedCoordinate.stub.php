@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class NormalizedCoordinate extends \Google\Model
-{
+namespace Google\Service\Transcoder {
+    class NormalizedCoordinate extends \Google\Model
+    {
+        /**
+         * Normalized x coordinate.
+         *
+         * @var 
+         */
+        public $x;
+        /**
+         * Normalized y coordinate.
+         *
+         * @var 
+         */
+        public $y;
+        public function setX($x)
+        {
+        }
+        public function getX()
+        {
+        }
+        public function setY($y)
+        {
+        }
+        public function getY()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Normalized x coordinate.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Transcoder\NormalizedCoordinate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $x;
-    /**
-     * Normalized y coordinate.
-     *
-     * @var 
-     */
-    public $y;
-    public function setX($x)
-    {
-    }
-    public function getX()
-    {
-    }
-    public function setY($y)
-    {
-    }
-    public function getY()
+    class Google_Service_Transcoder_NormalizedCoordinate extends \Google\Service\Transcoder\NormalizedCoordinate
     {
     }
 }

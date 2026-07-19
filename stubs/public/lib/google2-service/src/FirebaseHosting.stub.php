@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for FirebaseHosting (v1).
- *
- * <p>
- * The Firebase Hosting REST API enables programmatic and customizable
- * management and deployments to your Firebase-hosted sites. Use this REST API
- * to create and manage channels and sites as well as to deploy new or updated
- * hosting configurations and content files.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://firebase.google.com/docs/hosting/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class FirebaseHosting extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View and administer all your Firebase data and settings. */
-    const FIREBASE = "https://www.googleapis.com/auth/firebase";
-    public $operations;
-    public $projects_sites_customDomains_operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the FirebaseHosting service.
+     * Service definition for FirebaseHosting (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Firebase Hosting REST API enables programmatic and customizable
+     * management and deployments to your Firebase-hosted sites. Use this REST API
+     * to create and manage channels and sites as well as to deploy new or updated
+     * hosting configurations and content files.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://firebase.google.com/docs/hosting/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class FirebaseHosting extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View and administer all your Firebase data and settings. */
+        const FIREBASE = "https://www.googleapis.com/auth/firebase";
+        public $operations;
+        public $projects_sites_customDomains_operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the FirebaseHosting service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseHosting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseHosting extends \Google\Service\FirebaseHosting
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class OrganizationSecurityPoliciesListAssociationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'associations';
-    protected $associationsType = SecurityPolicyAssociation::class;
-    protected $associationsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of securityPolicy associations.
-     * Alwayscompute#organizationSecurityPoliciesListAssociations for lists of
-     * securityPolicy associations.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of associations.
-     *
-     * @param SecurityPolicyAssociation[] $associations
-     */
-    public function setAssociations($associations)
+namespace Google\Service\Compute {
+    class OrganizationSecurityPoliciesListAssociationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'associations';
+        protected $associationsType = SecurityPolicyAssociation::class;
+        protected $associationsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of securityPolicy associations.
+         * Alwayscompute#organizationSecurityPoliciesListAssociations for lists of
+         * securityPolicy associations.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of associations.
+         *
+         * @param SecurityPolicyAssociation[] $associations
+         */
+        public function setAssociations($associations)
+        {
+        }
+        /**
+         * @return SecurityPolicyAssociation[]
+         */
+        public function getAssociations()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of securityPolicy associations.
+         * Alwayscompute#organizationSecurityPoliciesListAssociations for lists of
+         * securityPolicy associations.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPolicyAssociation[]
+     * Runtime class alias of \Google\Service\Compute\OrganizationSecurityPoliciesListAssociationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssociations()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of securityPolicy associations.
-     * Alwayscompute#organizationSecurityPoliciesListAssociations for lists of
-     * securityPolicy associations.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Compute_OrganizationSecurityPoliciesListAssociationsResponse extends \Google\Service\Compute\OrganizationSecurityPoliciesListAssociationsResponse
     {
     }
 }

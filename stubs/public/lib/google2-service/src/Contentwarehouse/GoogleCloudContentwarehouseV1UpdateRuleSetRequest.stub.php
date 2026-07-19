@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1UpdateRuleSetRequest extends \Google\Model
-{
-    protected $ruleSetType = GoogleCloudContentwarehouseV1RuleSet::class;
-    protected $ruleSetDataType = '';
-    /**
-     * Required. The rule set to update.
-     *
-     * @param GoogleCloudContentwarehouseV1RuleSet $ruleSet
-     */
-    public function setRuleSet(GoogleCloudContentwarehouseV1RuleSet $ruleSet)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1UpdateRuleSetRequest extends \Google\Model
     {
+        protected $ruleSetType = GoogleCloudContentwarehouseV1RuleSet::class;
+        protected $ruleSetDataType = '';
+        /**
+         * Required. The rule set to update.
+         *
+         * @param GoogleCloudContentwarehouseV1RuleSet $ruleSet
+         */
+        public function setRuleSet(GoogleCloudContentwarehouseV1RuleSet $ruleSet)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RuleSet
+         */
+        public function getRuleSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1RuleSet
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateRuleSetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRuleSet()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1UpdateRuleSetRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateRuleSetRequest
     {
     }
 }

@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RouteDestinations extends \Google\Collection
-{
-    protected $collection_key = 'destinationIds';
-    /**
-     * Required. The clusters where the Gateway API HTTPRoute resource will be
-     * deployed to. Valid entries include the associated entities IDs configured
-     * in the Target resource and "@self" to include the Target cluster.
-     *
-     * @var string[]
-     */
-    public $destinationIds;
-    /**
-     * Optional. Whether to propagate the Kubernetes Service to the route
-     * destination clusters. The Service will always be deployed to the Target
-     * cluster even if the HTTPRoute is not. This option may be used to facilitate
-     * successful DNS lookup in the route destination clusters. Can only be set to
-     * true if destinations are specified.
-     *
-     * @var bool
-     */
-    public $propagateService;
-    /**
-     * Required. The clusters where the Gateway API HTTPRoute resource will be
-     * deployed to. Valid entries include the associated entities IDs configured
-     * in the Target resource and "@self" to include the Target cluster.
-     *
-     * @param string[] $destinationIds
-     */
-    public function setDestinationIds($destinationIds)
+namespace Google\Service\CloudDeploy {
+    class RouteDestinations extends \Google\Collection
     {
+        protected $collection_key = 'destinationIds';
+        /**
+         * Required. The clusters where the Gateway API HTTPRoute resource will be
+         * deployed to. Valid entries include the associated entities IDs configured
+         * in the Target resource and "@self" to include the Target cluster.
+         *
+         * @var string[]
+         */
+        public $destinationIds;
+        /**
+         * Optional. Whether to propagate the Kubernetes Service to the route
+         * destination clusters. The Service will always be deployed to the Target
+         * cluster even if the HTTPRoute is not. This option may be used to facilitate
+         * successful DNS lookup in the route destination clusters. Can only be set to
+         * true if destinations are specified.
+         *
+         * @var bool
+         */
+        public $propagateService;
+        /**
+         * Required. The clusters where the Gateway API HTTPRoute resource will be
+         * deployed to. Valid entries include the associated entities IDs configured
+         * in the Target resource and "@self" to include the Target cluster.
+         *
+         * @param string[] $destinationIds
+         */
+        public function setDestinationIds($destinationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinationIds()
+        {
+        }
+        /**
+         * Optional. Whether to propagate the Kubernetes Service to the route
+         * destination clusters. The Service will always be deployed to the Target
+         * cluster even if the HTTPRoute is not. This option may be used to facilitate
+         * successful DNS lookup in the route destination clusters. Can only be set to
+         * true if destinations are specified.
+         *
+         * @param bool $propagateService
+         */
+        public function setPropagateService($propagateService)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPropagateService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\RouteDestinations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationIds()
-    {
-    }
-    /**
-     * Optional. Whether to propagate the Kubernetes Service to the route
-     * destination clusters. The Service will always be deployed to the Target
-     * cluster even if the HTTPRoute is not. This option may be used to facilitate
-     * successful DNS lookup in the route destination clusters. Can only be set to
-     * true if destinations are specified.
-     *
-     * @param bool $propagateService
-     */
-    public function setPropagateService($propagateService)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPropagateService()
+    class Google_Service_CloudDeploy_RouteDestinations extends \Google\Service\CloudDeploy\RouteDestinations
     {
     }
 }

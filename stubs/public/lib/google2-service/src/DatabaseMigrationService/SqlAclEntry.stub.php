@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlAclEntry extends \Google\Model
-{
-    /**
-     * The time when this access control entry expires in [RFC
-     * 3339](https://tools.ietf.org/html/rfc3339) format, for example:
-     * `2012-11-15T16:19:00.094Z`.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * A label to identify this entry.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Input only. The time-to-leave of this access control entry.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * The allowlisted value for the access control list.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The time when this access control entry expires in [RFC
-     * 3339](https://tools.ietf.org/html/rfc3339) format, for example:
-     * `2012-11-15T16:19:00.094Z`.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlAclEntry extends \Google\Model
     {
+        /**
+         * The time when this access control entry expires in [RFC
+         * 3339](https://tools.ietf.org/html/rfc3339) format, for example:
+         * `2012-11-15T16:19:00.094Z`.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * A label to identify this entry.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Input only. The time-to-leave of this access control entry.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * The allowlisted value for the access control list.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The time when this access control entry expires in [RFC
+         * 3339](https://tools.ietf.org/html/rfc3339) format, for example:
+         * `2012-11-15T16:19:00.094Z`.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * A label to identify this entry.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Input only. The time-to-leave of this access control entry.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
+        /**
+         * The allowlisted value for the access control list.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlAclEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * A label to identify this entry.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Input only. The time-to-leave of this access control entry.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
-    {
-    }
-    /**
-     * The allowlisted value for the access control list.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DatabaseMigrationService_SqlAclEntry extends \Google\Service\DatabaseMigrationService\SqlAclEntry
     {
     }
 }

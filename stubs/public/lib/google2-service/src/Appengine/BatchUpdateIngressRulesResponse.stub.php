@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class BatchUpdateIngressRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'ingressRules';
-    protected $ingressRulesType = FirewallRule::class;
-    protected $ingressRulesDataType = 'array';
-    /**
-     * The full list of ingress FirewallRules for this application.
-     *
-     * @param FirewallRule[] $ingressRules
-     */
-    public function setIngressRules($ingressRules)
+namespace Google\Service\Appengine {
+    class BatchUpdateIngressRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'ingressRules';
+        protected $ingressRulesType = FirewallRule::class;
+        protected $ingressRulesDataType = 'array';
+        /**
+         * The full list of ingress FirewallRules for this application.
+         *
+         * @param FirewallRule[] $ingressRules
+         */
+        public function setIngressRules($ingressRules)
+        {
+        }
+        /**
+         * @return FirewallRule[]
+         */
+        public function getIngressRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirewallRule[]
+     * Runtime class alias of \Google\Service\Appengine\BatchUpdateIngressRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngressRules()
+    class Google_Service_Appengine_BatchUpdateIngressRulesResponse extends \Google\Service\Appengine\BatchUpdateIngressRulesResponse
     {
     }
 }

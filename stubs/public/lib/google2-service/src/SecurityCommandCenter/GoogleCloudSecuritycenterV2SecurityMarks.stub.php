@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2SecurityMarks extends \Google\Model
-{
-    /**
-     * The canonical name of the marks. The following list shows some examples: +
-     * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
-     * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
-     * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
-     * ocation}/findings/{finding_id}/securityMarks` +
-     * `folders/{folder_id}/assets/{asset_id}/securityMarks` + `folders/{folder_id
-     * }/sources/{source_id}/findings/{finding_id}/securityMarks` + `folders/{fold
-     * er_id}/sources/{source_id}/locations/{location}/findings/{finding_id}/secur
-     * ityMarks` + `projects/{project_number}/assets/{asset_id}/securityMarks` + `
-     * projects/{project_number}/sources/{source_id}/findings/{finding_id}/securit
-     * yMarks` + `projects/{project_number}/sources/{source_id}/locations/{locatio
-     * n}/findings/{finding_id}/securityMarks`
-     *
-     * @var string
-     */
-    public $canonicalName;
-    /**
-     * Mutable user specified security marks belonging to the parent resource.
-     * Constraints are as follows: * Keys and values are treated as case
-     * insensitive * Keys must be between 1 - 256 characters (inclusive) * Keys
-     * must be letters, numbers, underscores, or dashes * Values have leading and
-     * trailing whitespace trimmed, remaining characters must be between 1 - 4096
-     * characters (inclusive)
-     *
-     * @var string[]
-     */
-    public $marks;
-    /**
-     * The relative resource name of the SecurityMarks. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * The following list shows some examples: +
-     * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
-     * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
-     * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
-     * ocation}/findings/{finding_id}/securityMarks`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The canonical name of the marks. The following list shows some examples: +
-     * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
-     * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
-     * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
-     * ocation}/findings/{finding_id}/securityMarks` +
-     * `folders/{folder_id}/assets/{asset_id}/securityMarks` + `folders/{folder_id
-     * }/sources/{source_id}/findings/{finding_id}/securityMarks` + `folders/{fold
-     * er_id}/sources/{source_id}/locations/{location}/findings/{finding_id}/secur
-     * ityMarks` + `projects/{project_number}/assets/{asset_id}/securityMarks` + `
-     * projects/{project_number}/sources/{source_id}/findings/{finding_id}/securit
-     * yMarks` + `projects/{project_number}/sources/{source_id}/locations/{locatio
-     * n}/findings/{finding_id}/securityMarks`
-     *
-     * @param string $canonicalName
-     */
-    public function setCanonicalName($canonicalName)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2SecurityMarks extends \Google\Model
     {
+        /**
+         * The canonical name of the marks. The following list shows some examples: +
+         * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
+         * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
+         * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
+         * ocation}/findings/{finding_id}/securityMarks` +
+         * `folders/{folder_id}/assets/{asset_id}/securityMarks` + `folders/{folder_id
+         * }/sources/{source_id}/findings/{finding_id}/securityMarks` + `folders/{fold
+         * er_id}/sources/{source_id}/locations/{location}/findings/{finding_id}/secur
+         * ityMarks` + `projects/{project_number}/assets/{asset_id}/securityMarks` + `
+         * projects/{project_number}/sources/{source_id}/findings/{finding_id}/securit
+         * yMarks` + `projects/{project_number}/sources/{source_id}/locations/{locatio
+         * n}/findings/{finding_id}/securityMarks`
+         *
+         * @var string
+         */
+        public $canonicalName;
+        /**
+         * Mutable user specified security marks belonging to the parent resource.
+         * Constraints are as follows: * Keys and values are treated as case
+         * insensitive * Keys must be between 1 - 256 characters (inclusive) * Keys
+         * must be letters, numbers, underscores, or dashes * Values have leading and
+         * trailing whitespace trimmed, remaining characters must be between 1 - 4096
+         * characters (inclusive)
+         *
+         * @var string[]
+         */
+        public $marks;
+        /**
+         * The relative resource name of the SecurityMarks. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * The following list shows some examples: +
+         * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
+         * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
+         * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
+         * ocation}/findings/{finding_id}/securityMarks`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The canonical name of the marks. The following list shows some examples: +
+         * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
+         * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
+         * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
+         * ocation}/findings/{finding_id}/securityMarks` +
+         * `folders/{folder_id}/assets/{asset_id}/securityMarks` + `folders/{folder_id
+         * }/sources/{source_id}/findings/{finding_id}/securityMarks` + `folders/{fold
+         * er_id}/sources/{source_id}/locations/{location}/findings/{finding_id}/secur
+         * ityMarks` + `projects/{project_number}/assets/{asset_id}/securityMarks` + `
+         * projects/{project_number}/sources/{source_id}/findings/{finding_id}/securit
+         * yMarks` + `projects/{project_number}/sources/{source_id}/locations/{locatio
+         * n}/findings/{finding_id}/securityMarks`
+         *
+         * @param string $canonicalName
+         */
+        public function setCanonicalName($canonicalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalName()
+        {
+        }
+        /**
+         * Mutable user specified security marks belonging to the parent resource.
+         * Constraints are as follows: * Keys and values are treated as case
+         * insensitive * Keys must be between 1 - 256 characters (inclusive) * Keys
+         * must be letters, numbers, underscores, or dashes * Values have leading and
+         * trailing whitespace trimmed, remaining characters must be between 1 - 4096
+         * characters (inclusive)
+         *
+         * @param string[] $marks
+         */
+        public function setMarks($marks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMarks()
+        {
+        }
+        /**
+         * The relative resource name of the SecurityMarks. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * The following list shows some examples: +
+         * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
+         * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
+         * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
+         * ocation}/findings/{finding_id}/securityMarks`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2SecurityMarks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalName()
-    {
-    }
-    /**
-     * Mutable user specified security marks belonging to the parent resource.
-     * Constraints are as follows: * Keys and values are treated as case
-     * insensitive * Keys must be between 1 - 256 characters (inclusive) * Keys
-     * must be letters, numbers, underscores, or dashes * Values have leading and
-     * trailing whitespace trimmed, remaining characters must be between 1 - 4096
-     * characters (inclusive)
-     *
-     * @param string[] $marks
-     */
-    public function setMarks($marks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMarks()
-    {
-    }
-    /**
-     * The relative resource name of the SecurityMarks. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * The following list shows some examples: +
-     * `organizations/{organization_id}/assets/{asset_id}/securityMarks` + `organi
-     * zations/{organization_id}/sources/{source_id}/findings/{finding_id}/securit
-     * yMarks` + `organizations/{organization_id}/sources/{source_id}/locations/{l
-     * ocation}/findings/{finding_id}/securityMarks`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2SecurityMarks extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2SecurityMarks
     {
     }
 }

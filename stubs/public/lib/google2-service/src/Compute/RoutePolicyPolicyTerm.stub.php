@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RoutePolicyPolicyTerm extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = Expr::class;
-    protected $actionsDataType = 'array';
-    protected $matchType = Expr::class;
-    protected $matchDataType = '';
-    /**
-     * The evaluation priority for this term, which must be between 0 (inclusive)
-     * and 2^31 (exclusive), and unique within the list.
-     *
-     * @var int
-     */
-    public $priority;
-    /**
-     * CEL expressions to evaluate to modify a route when this term matches.
-     *
-     * @param Expr[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Compute {
+    class RoutePolicyPolicyTerm extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = Expr::class;
+        protected $actionsDataType = 'array';
+        protected $matchType = Expr::class;
+        protected $matchDataType = '';
+        /**
+         * The evaluation priority for this term, which must be between 0 (inclusive)
+         * and 2^31 (exclusive), and unique within the list.
+         *
+         * @var int
+         */
+        public $priority;
+        /**
+         * CEL expressions to evaluate to modify a route when this term matches.
+         *
+         * @param Expr[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return Expr[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * CEL expression evaluated against a route to determine if this term applies.
+         * When not set, the term applies to all routes.
+         *
+         * @param Expr $match
+         */
+        public function setMatch(Expr $match)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getMatch()
+        {
+        }
+        /**
+         * The evaluation priority for this term, which must be between 0 (inclusive)
+         * and 2^31 (exclusive), and unique within the list.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Expr[]
+     * Runtime class alias of \Google\Service\Compute\RoutePolicyPolicyTerm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * CEL expression evaluated against a route to determine if this term applies.
-     * When not set, the term applies to all routes.
-     *
-     * @param Expr $match
-     */
-    public function setMatch(Expr $match)
-    {
-    }
-    /**
-     * @return Expr
-     */
-    public function getMatch()
-    {
-    }
-    /**
-     * The evaluation priority for this term, which must be between 0 (inclusive)
-     * and 2^31 (exclusive), and unique within the list.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
+    class Google_Service_Compute_RoutePolicyPolicyTerm extends \Google\Service\Compute\RoutePolicyPolicyTerm
     {
     }
 }

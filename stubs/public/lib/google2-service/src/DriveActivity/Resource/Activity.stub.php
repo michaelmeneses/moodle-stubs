@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity\Resource;
-
-/**
- * The "activity" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveactivityService = new Google\Service\DriveActivity(...);
- *   $activity = $driveactivityService->activity;
- *  </code>
- */
-class Activity extends \Google\Service\Resource
-{
+namespace Google\Service\DriveActivity\Resource {
+    use Google\Service\DriveActivity\QueryDriveActivityRequest;
+    use Google\Service\DriveActivity\QueryDriveActivityResponse;
     /**
-     * Query past activity in Google Drive. (activity.query)
-     *
-     * @param QueryDriveActivityRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryDriveActivityResponse
-     * @throws \Google\Service\Exception
+     * The "activity" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveactivityService = new Google\Service\DriveActivity(...);
+     *   $activity = $driveactivityService->activity;
+     *  </code>
      */
-    public function query(QueryDriveActivityRequest $postBody, $optParams = [])
+    class Activity extends \Google\Service\Resource
+    {
+        /**
+         * Query past activity in Google Drive. (activity.query)
+         *
+         * @param QueryDriveActivityRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryDriveActivityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query(QueryDriveActivityRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveActivity\Resource\Activity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveActivity_Resource_Activity extends \Google\Service\DriveActivity\Resource\Activity
     {
     }
 }

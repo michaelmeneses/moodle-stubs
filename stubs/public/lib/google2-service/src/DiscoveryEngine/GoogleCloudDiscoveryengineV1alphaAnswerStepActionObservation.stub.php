@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation extends \Google\Collection
-{
-    protected $collection_key = 'searchResults';
-    protected $searchResultsType = GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResult::class;
-    protected $searchResultsDataType = 'array';
-    /**
-     * Search results observed by the search action, it can be snippets info or
-     * chunk info, depending on the citation type set by the user.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResult[] $searchResults
-     */
-    public function setSearchResults($searchResults)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation extends \Google\Collection
     {
+        protected $collection_key = 'searchResults';
+        protected $searchResultsType = GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResult::class;
+        protected $searchResultsDataType = 'array';
+        /**
+         * Search results observed by the search action, it can be snippets info or
+         * chunk info, depending on the citation type set by the user.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResult[] $searchResults
+         */
+        public function setSearchResults($searchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResult[]
+         */
+        public function getSearchResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResult[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchResults()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation
     {
     }
 }

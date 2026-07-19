@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesListEntraIdCertificatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'certs';
-    /**
-     * The `sha1_fingerprint` of the active certificate from `certs`.
-     *
-     * @var string
-     */
-    public $activeVersion;
-    protected $certsType = SslCert::class;
-    protected $certsDataType = 'array';
-    /**
-     * This is always `sql#instancesListEntraIdCertificates`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The `sha1_fingerprint` of the active certificate from `certs`.
-     *
-     * @param string $activeVersion
-     */
-    public function setActiveVersion($activeVersion)
+namespace Google\Service\SQLAdmin {
+    class InstancesListEntraIdCertificatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'certs';
+        /**
+         * The `sha1_fingerprint` of the active certificate from `certs`.
+         *
+         * @var string
+         */
+        public $activeVersion;
+        protected $certsType = SslCert::class;
+        protected $certsDataType = 'array';
+        /**
+         * This is always `sql#instancesListEntraIdCertificates`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The `sha1_fingerprint` of the active certificate from `certs`.
+         *
+         * @param string $activeVersion
+         */
+        public function setActiveVersion($activeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveVersion()
+        {
+        }
+        /**
+         * List of Entra ID certificates for the instance.
+         *
+         * @param SslCert[] $certs
+         */
+        public function setCerts($certs)
+        {
+        }
+        /**
+         * @return SslCert[]
+         */
+        public function getCerts()
+        {
+        }
+        /**
+         * This is always `sql#instancesListEntraIdCertificates`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesListEntraIdCertificatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveVersion()
-    {
-    }
-    /**
-     * List of Entra ID certificates for the instance.
-     *
-     * @param SslCert[] $certs
-     */
-    public function setCerts($certs)
-    {
-    }
-    /**
-     * @return SslCert[]
-     */
-    public function getCerts()
-    {
-    }
-    /**
-     * This is always `sql#instancesListEntraIdCertificates`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_InstancesListEntraIdCertificatesResponse extends \Google\Service\SQLAdmin\InstancesListEntraIdCertificatesResponse
     {
     }
 }

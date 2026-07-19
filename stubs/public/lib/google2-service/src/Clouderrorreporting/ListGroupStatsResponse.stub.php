@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class ListGroupStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorGroupStats';
-    protected $errorGroupStatsType = ErrorGroupStats::class;
-    protected $errorGroupStatsDataType = 'array';
-    /**
-     * If non-empty, more results are available. Pass this token, along with the
-     * same query parameters as the first request, to view the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The timestamp specifies the start time to which the request was restricted.
-     * The start time is set based on the requested time range. It may be adjusted
-     * to a later time if a project has exceeded the storage quota and older data
-     * has been deleted.
-     *
-     * @var string
-     */
-    public $timeRangeBegin;
-    /**
-     * The error group stats which match the given request.
-     *
-     * @param ErrorGroupStats[] $errorGroupStats
-     */
-    public function setErrorGroupStats($errorGroupStats)
+namespace Google\Service\Clouderrorreporting {
+    class ListGroupStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorGroupStats';
+        protected $errorGroupStatsType = ErrorGroupStats::class;
+        protected $errorGroupStatsDataType = 'array';
+        /**
+         * If non-empty, more results are available. Pass this token, along with the
+         * same query parameters as the first request, to view the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The timestamp specifies the start time to which the request was restricted.
+         * The start time is set based on the requested time range. It may be adjusted
+         * to a later time if a project has exceeded the storage quota and older data
+         * has been deleted.
+         *
+         * @var string
+         */
+        public $timeRangeBegin;
+        /**
+         * The error group stats which match the given request.
+         *
+         * @param ErrorGroupStats[] $errorGroupStats
+         */
+        public function setErrorGroupStats($errorGroupStats)
+        {
+        }
+        /**
+         * @return ErrorGroupStats[]
+         */
+        public function getErrorGroupStats()
+        {
+        }
+        /**
+         * If non-empty, more results are available. Pass this token, along with the
+         * same query parameters as the first request, to view the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The timestamp specifies the start time to which the request was restricted.
+         * The start time is set based on the requested time range. It may be adjusted
+         * to a later time if a project has exceeded the storage quota and older data
+         * has been deleted.
+         *
+         * @param string $timeRangeBegin
+         */
+        public function setTimeRangeBegin($timeRangeBegin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeRangeBegin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorGroupStats[]
+     * Runtime class alias of \Google\Service\Clouderrorreporting\ListGroupStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorGroupStats()
-    {
-    }
-    /**
-     * If non-empty, more results are available. Pass this token, along with the
-     * same query parameters as the first request, to view the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The timestamp specifies the start time to which the request was restricted.
-     * The start time is set based on the requested time range. It may be adjusted
-     * to a later time if a project has exceeded the storage quota and older data
-     * has been deleted.
-     *
-     * @param string $timeRangeBegin
-     */
-    public function setTimeRangeBegin($timeRangeBegin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeRangeBegin()
+    class Google_Service_Clouderrorreporting_ListGroupStatsResponse extends \Google\Service\Clouderrorreporting\ListGroupStatsResponse
     {
     }
 }

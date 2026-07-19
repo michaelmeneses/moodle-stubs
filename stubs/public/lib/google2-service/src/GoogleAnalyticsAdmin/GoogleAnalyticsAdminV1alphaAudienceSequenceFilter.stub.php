@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceSequenceFilter extends \Google\Collection
-{
-    protected $collection_key = 'sequenceSteps';
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @var string
-     */
-    public $sequenceMaximumDuration;
-    protected $sequenceStepsType = GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep::class;
-    protected $sequenceStepsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setScope($scope)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceSequenceFilter extends \Google\Collection
     {
+        protected $collection_key = 'sequenceSteps';
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @var string
+         */
+        public $sequenceMaximumDuration;
+        protected $sequenceStepsType = GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep::class;
+        protected $sequenceStepsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSequenceMaximumDuration($sequenceMaximumDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSequenceMaximumDuration()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep[]
+         */
+        public function setSequenceSteps($sequenceSteps)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep[]
+         */
+        public function getSequenceSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceSequenceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScope()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSequenceMaximumDuration($sequenceMaximumDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSequenceMaximumDuration()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep[]
-     */
-    public function setSequenceSteps($sequenceSteps)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep[]
-     */
-    public function getSequenceSteps()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceSequenceFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceSequenceFilter
     {
     }
 }

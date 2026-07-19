@@ -21,55 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $projects = $dfareportingService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\Project;
+    use Google\Service\Dfareporting\ProjectsListResponse;
     /**
-     * Gets one project by ID. (projects.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Project ID.
-     * @param array $optParams Optional parameters.
-     * @return Project
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $projects = $dfareportingService->projects;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Gets one project by ID. (projects.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Project ID.
+         * @param array $optParams Optional parameters.
+         * @return Project
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of projects, possibly filtered. This method supports paging
+         * . (projects.listProjects)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserIds Select only projects with these advertiser
+         * IDs.
+         * @opt_param string ids Select only projects with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for projects by name or ID.
+         * Wildcards (*) are allowed. For example, "project*2015" will return projects
+         * with names like "project June 2015", "project April 2015", or simply "project
+         * 2015". Most of the searches also add wildcards implicitly at the start and
+         * the end of the search string. For example, a search string of "project" will
+         * match projects with name "my project", "project 2015", or simply "project".
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return ProjectsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjects($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of projects, possibly filtered. This method supports paging
-     * . (projects.listProjects)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserIds Select only projects with these advertiser
-     * IDs.
-     * @opt_param string ids Select only projects with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for projects by name or ID.
-     * Wildcards (*) are allowed. For example, "project*2015" will return projects
-     * with names like "project June 2015", "project April 2015", or simply "project
-     * 2015". Most of the searches also add wildcards implicitly at the start and
-     * the end of the search string. For example, a search string of "project" will
-     * match projects with name "my project", "project 2015", or simply "project".
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return ProjectsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjects($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Projects extends \Google\Service\Dfareporting\Resource\Projects
     {
     }
 }

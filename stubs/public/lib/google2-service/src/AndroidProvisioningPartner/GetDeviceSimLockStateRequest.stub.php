@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class GetDeviceSimLockStateRequest extends \Google\Model
-{
-    protected $deviceIdentifierType = DeviceIdentifier::class;
-    protected $deviceIdentifierDataType = '';
-    /**
-     * Required. Required. The device identifier to search for.
-     *
-     * @param DeviceIdentifier $deviceIdentifier
-     */
-    public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+namespace Google\Service\AndroidProvisioningPartner {
+    class GetDeviceSimLockStateRequest extends \Google\Model
     {
+        protected $deviceIdentifierType = DeviceIdentifier::class;
+        protected $deviceIdentifierDataType = '';
+        /**
+         * Required. Required. The device identifier to search for.
+         *
+         * @param DeviceIdentifier $deviceIdentifier
+         */
+        public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+        {
+        }
+        /**
+         * @return DeviceIdentifier
+         */
+        public function getDeviceIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceIdentifier
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\GetDeviceSimLockStateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceIdentifier()
+    class Google_Service_AndroidProvisioningPartner_GetDeviceSimLockStateRequest extends \Google\Service\AndroidProvisioningPartner\GetDeviceSimLockStateRequest
     {
     }
 }

@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class PrefixNode extends \Google\Model
-{
-    /**
-     * Whether this corresponds to a data_source name.
-     *
-     * @var bool
-     */
-    public $dataSourceNode;
-    /**
-     * The depth in the prefix hierarchy.
-     *
-     * @var int
-     */
-    public $depth;
-    /**
-     * The index of the end key bucket of the range that this node spans.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * The index of the start key bucket of the range that this node spans.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The string represented by the prefix node.
-     *
-     * @var string
-     */
-    public $word;
-    /**
-     * Whether this corresponds to a data_source name.
-     *
-     * @param bool $dataSourceNode
-     */
-    public function setDataSourceNode($dataSourceNode)
+namespace Google\Service\Spanner {
+    class PrefixNode extends \Google\Model
     {
+        /**
+         * Whether this corresponds to a data_source name.
+         *
+         * @var bool
+         */
+        public $dataSourceNode;
+        /**
+         * The depth in the prefix hierarchy.
+         *
+         * @var int
+         */
+        public $depth;
+        /**
+         * The index of the end key bucket of the range that this node spans.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * The index of the start key bucket of the range that this node spans.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The string represented by the prefix node.
+         *
+         * @var string
+         */
+        public $word;
+        /**
+         * Whether this corresponds to a data_source name.
+         *
+         * @param bool $dataSourceNode
+         */
+        public function setDataSourceNode($dataSourceNode)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDataSourceNode()
+        {
+        }
+        /**
+         * The depth in the prefix hierarchy.
+         *
+         * @param int $depth
+         */
+        public function setDepth($depth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDepth()
+        {
+        }
+        /**
+         * The index of the end key bucket of the range that this node spans.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * The index of the start key bucket of the range that this node spans.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The string represented by the prefix node.
+         *
+         * @param string $word
+         */
+        public function setWord($word)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\PrefixNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceNode()
-    {
-    }
-    /**
-     * The depth in the prefix hierarchy.
-     *
-     * @param int $depth
-     */
-    public function setDepth($depth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDepth()
-    {
-    }
-    /**
-     * The index of the end key bucket of the range that this node spans.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * The index of the start key bucket of the range that this node spans.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The string represented by the prefix node.
-     *
-     * @param string $word
-     */
-    public function setWord($word)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWord()
+    class Google_Service_Spanner_PrefixNode extends \Google\Service\Spanner\PrefixNode
     {
     }
 }

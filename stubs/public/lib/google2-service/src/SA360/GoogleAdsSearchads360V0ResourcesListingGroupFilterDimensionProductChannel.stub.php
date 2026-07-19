@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const CHANNEL_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const CHANNEL_UNKNOWN = 'UNKNOWN';
-    /**
-     * The item is sold online.
-     */
-    public const CHANNEL_ONLINE = 'ONLINE';
-    /**
-     * The item is sold in local stores.
-     */
-    public const CHANNEL_LOCAL = 'LOCAL';
-    /**
-     * Value of the locality.
-     *
-     * @var string
-     */
-    public $channel;
-    /**
-     * Value of the locality.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ONLINE, LOCAL
-     *
-     * @param self::CHANNEL_* $channel
-     */
-    public function setChannel($channel)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const CHANNEL_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const CHANNEL_UNKNOWN = 'UNKNOWN';
+        /**
+         * The item is sold online.
+         */
+        public const CHANNEL_ONLINE = 'ONLINE';
+        /**
+         * The item is sold in local stores.
+         */
+        public const CHANNEL_LOCAL = 'LOCAL';
+        /**
+         * Value of the locality.
+         *
+         * @var string
+         */
+        public $channel;
+        /**
+         * Value of the locality.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ONLINE, LOCAL
+         *
+         * @param self::CHANNEL_* $channel
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return self::CHANNEL_*
+         */
+        public function getChannel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANNEL_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannel()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel
     {
     }
 }

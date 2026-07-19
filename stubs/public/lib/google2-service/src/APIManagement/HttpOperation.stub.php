@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class HttpOperation extends \Google\Collection
-{
-    /**
-     * Unspecified HTTP method
-     */
-    public const METHOD_HTTP_METHOD_UNSPECIFIED = 'HTTP_METHOD_UNSPECIFIED';
-    /**
-     * GET HTTP method
-     */
-    public const METHOD_GET = 'GET';
-    /**
-     * HEAD HTTP method
-     */
-    public const METHOD_HEAD = 'HEAD';
-    /**
-     * POST HTTP method
-     */
-    public const METHOD_POST = 'POST';
-    /**
-     * PUT HTTP method
-     */
-    public const METHOD_PUT = 'PUT';
-    /**
-     * PATCH HTTP method
-     */
-    public const METHOD_PATCH = 'PATCH';
-    /**
-     * DELETE HTTP method
-     */
-    public const METHOD_DELETE = 'DELETE';
-    /**
-     * TRACE HTTP method
-     */
-    public const METHOD_TRACE = 'TRACE';
-    /**
-     * OPTIONS HTTP method
-     */
-    public const METHOD_OPTIONS = 'OPTIONS';
-    /**
-     * CONNECT HTTP method
-     */
-    public const METHOD_CONNECT = 'CONNECT';
-    protected $collection_key = 'pathParams';
-    /**
-     * HTTP Method.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Path of the HTTP request.
-     *
-     * @var string
-     */
-    public $path;
-    protected $pathParamsType = HttpOperationPathParam::class;
-    protected $pathParamsDataType = 'array';
-    protected $queryParamsType = HttpOperationQueryParam::class;
-    protected $queryParamsDataType = 'map';
-    protected $requestType = HttpOperationHttpRequest::class;
-    protected $requestDataType = '';
-    protected $responseType = HttpOperationHttpResponse::class;
-    protected $responseDataType = '';
-    /**
-     * HTTP Method.
-     *
-     * Accepted values: HTTP_METHOD_UNSPECIFIED, GET, HEAD, POST, PUT, PATCH,
-     * DELETE, TRACE, OPTIONS, CONNECT
-     *
-     * @param self::METHOD_* $method
-     */
-    public function setMethod($method)
+namespace Google\Service\APIManagement {
+    class HttpOperation extends \Google\Collection
     {
+        /**
+         * Unspecified HTTP method
+         */
+        public const METHOD_HTTP_METHOD_UNSPECIFIED = 'HTTP_METHOD_UNSPECIFIED';
+        /**
+         * GET HTTP method
+         */
+        public const METHOD_GET = 'GET';
+        /**
+         * HEAD HTTP method
+         */
+        public const METHOD_HEAD = 'HEAD';
+        /**
+         * POST HTTP method
+         */
+        public const METHOD_POST = 'POST';
+        /**
+         * PUT HTTP method
+         */
+        public const METHOD_PUT = 'PUT';
+        /**
+         * PATCH HTTP method
+         */
+        public const METHOD_PATCH = 'PATCH';
+        /**
+         * DELETE HTTP method
+         */
+        public const METHOD_DELETE = 'DELETE';
+        /**
+         * TRACE HTTP method
+         */
+        public const METHOD_TRACE = 'TRACE';
+        /**
+         * OPTIONS HTTP method
+         */
+        public const METHOD_OPTIONS = 'OPTIONS';
+        /**
+         * CONNECT HTTP method
+         */
+        public const METHOD_CONNECT = 'CONNECT';
+        protected $collection_key = 'pathParams';
+        /**
+         * HTTP Method.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Path of the HTTP request.
+         *
+         * @var string
+         */
+        public $path;
+        protected $pathParamsType = HttpOperationPathParam::class;
+        protected $pathParamsDataType = 'array';
+        protected $queryParamsType = HttpOperationQueryParam::class;
+        protected $queryParamsDataType = 'map';
+        protected $requestType = HttpOperationHttpRequest::class;
+        protected $requestDataType = '';
+        protected $responseType = HttpOperationHttpResponse::class;
+        protected $responseDataType = '';
+        /**
+         * HTTP Method.
+         *
+         * Accepted values: HTTP_METHOD_UNSPECIFIED, GET, HEAD, POST, PUT, PATCH,
+         * DELETE, TRACE, OPTIONS, CONNECT
+         *
+         * @param self::METHOD_* $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return self::METHOD_*
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Path of the HTTP request.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Path params of HttpOperation
+         *
+         * @param HttpOperationPathParam[] $pathParams
+         */
+        public function setPathParams($pathParams)
+        {
+        }
+        /**
+         * @return HttpOperationPathParam[]
+         */
+        public function getPathParams()
+        {
+        }
+        /**
+         * Query params of HttpOperation
+         *
+         * @param HttpOperationQueryParam[] $queryParams
+         */
+        public function setQueryParams($queryParams)
+        {
+        }
+        /**
+         * @return HttpOperationQueryParam[]
+         */
+        public function getQueryParams()
+        {
+        }
+        /**
+         * Request metadata.
+         *
+         * @param HttpOperationHttpRequest $request
+         */
+        public function setRequest(HttpOperationHttpRequest $request)
+        {
+        }
+        /**
+         * @return HttpOperationHttpRequest
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Response metadata.
+         *
+         * @param HttpOperationHttpResponse $response
+         */
+        public function setResponse(HttpOperationHttpResponse $response)
+        {
+        }
+        /**
+         * @return HttpOperationHttpResponse
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::METHOD_*
+     * Runtime class alias of \Google\Service\APIManagement\HttpOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * Path of the HTTP request.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Path params of HttpOperation
-     *
-     * @param HttpOperationPathParam[] $pathParams
-     */
-    public function setPathParams($pathParams)
-    {
-    }
-    /**
-     * @return HttpOperationPathParam[]
-     */
-    public function getPathParams()
-    {
-    }
-    /**
-     * Query params of HttpOperation
-     *
-     * @param HttpOperationQueryParam[] $queryParams
-     */
-    public function setQueryParams($queryParams)
-    {
-    }
-    /**
-     * @return HttpOperationQueryParam[]
-     */
-    public function getQueryParams()
-    {
-    }
-    /**
-     * Request metadata.
-     *
-     * @param HttpOperationHttpRequest $request
-     */
-    public function setRequest(HttpOperationHttpRequest $request)
-    {
-    }
-    /**
-     * @return HttpOperationHttpRequest
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Response metadata.
-     *
-     * @param HttpOperationHttpResponse $response
-     */
-    public function setResponse(HttpOperationHttpResponse $response)
-    {
-    }
-    /**
-     * @return HttpOperationHttpResponse
-     */
-    public function getResponse()
+    class Google_Service_APIManagement_HttpOperation extends \Google\Service\APIManagement\HttpOperation
     {
     }
 }

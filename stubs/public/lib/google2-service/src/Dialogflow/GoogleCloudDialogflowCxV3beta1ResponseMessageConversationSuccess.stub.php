@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess extends \Google\Model
-{
-    /**
-     * Custom metadata. Dialogflow doesn't impose any structure on this.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Custom metadata. Dialogflow doesn't impose any structure on this.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess extends \Google\Model
     {
+        /**
+         * Custom metadata. Dialogflow doesn't impose any structure on this.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Custom metadata. Dialogflow doesn't impose any structure on this.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess
     {
     }
 }

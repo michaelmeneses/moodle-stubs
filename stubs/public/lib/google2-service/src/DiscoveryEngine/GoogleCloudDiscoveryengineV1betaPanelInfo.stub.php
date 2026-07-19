@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaPanelInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $panelId;
-    /**
-     * @var int
-     */
-    public $panelPosition;
-    /**
-     * @var int
-     */
-    public $totalPanels;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaPanelInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $panelId;
+        /**
+         * @var int
+         */
+        public $panelPosition;
+        /**
+         * @var int
+         */
+        public $totalPanels;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPanelId($panelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPanelId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPanelPosition($panelPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPanelPosition()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTotalPanels($totalPanels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalPanels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPanelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPanelId($panelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPanelId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPanelPosition($panelPosition)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPanelPosition()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTotalPanels($totalPanels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalPanels()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaPanelInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPanelInfo
     {
     }
 }

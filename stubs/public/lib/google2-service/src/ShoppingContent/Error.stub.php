@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Error extends \Google\Model
-{
-    /**
-     * The domain of the error.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * A description of the error.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The error code.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The domain of the error.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\ShoppingContent {
+    class Error extends \Google\Model
     {
+        /**
+         * The domain of the error.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * A description of the error.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The error code.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The domain of the error.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * A description of the error.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The error code.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Error registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * A description of the error.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The error code.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_ShoppingContent_Error extends \Google\Service\ShoppingContent\Error
     {
     }
 }

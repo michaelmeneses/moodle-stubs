@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3BatchRunTestCasesMetadata extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = GoogleCloudDialogflowCxV3TestError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The test errors.
-     *
-     * @param GoogleCloudDialogflowCxV3TestError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3BatchRunTestCasesMetadata extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = GoogleCloudDialogflowCxV3TestError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The test errors.
+         *
+         * @param GoogleCloudDialogflowCxV3TestError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TestError[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3TestError[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3BatchRunTestCasesMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesMetadata
     {
     }
 }

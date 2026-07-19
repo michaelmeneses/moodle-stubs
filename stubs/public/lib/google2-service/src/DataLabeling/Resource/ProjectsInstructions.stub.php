@@ -21,74 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "instructions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $instructions = $datalabelingService->projects_instructions;
- *  </code>
- */
-class ProjectsInstructions extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateInstructionRequest;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Instruction;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListInstructionsResponse;
+    use Google\Service\DataLabeling\GoogleLongrunningOperation;
+    use Google\Service\DataLabeling\GoogleProtobufEmpty;
     /**
-     * Creates an instruction for how data should be labeled. (instructions.create)
-     *
-     * @param string $parent Required. Instruction resource parent, format:
-     * projects/{project_id}
-     * @param GoogleCloudDatalabelingV1beta1CreateInstructionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "instructions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $instructions = $datalabelingService->projects_instructions;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDatalabelingV1beta1CreateInstructionRequest $postBody, $optParams = [])
+    class ProjectsInstructions extends \Google\Service\Resource
     {
+        /**
+         * Creates an instruction for how data should be labeled. (instructions.create)
+         *
+         * @param string $parent Required. Instruction resource parent, format:
+         * projects/{project_id}
+         * @param GoogleCloudDatalabelingV1beta1CreateInstructionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDatalabelingV1beta1CreateInstructionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an instruction object by resource name. (instructions.delete)
+         *
+         * @param string $name Required. Instruction resource name, format:
+         * projects/{project_id}/instructions/{instruction_id}
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an instruction by resource name. (instructions.get)
+         *
+         * @param string $name Required. Instruction resource name, format:
+         * projects/{project_id}/instructions/{instruction_id}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1Instruction
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists instructions for a project. Pagination is supported.
+         * (instructions.listProjectsInstructions)
+         *
+         * @param string $parent Required. Instruction resource parent, format:
+         * projects/{project_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter is not supported at this moment.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer results than requested. Default value is 100.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * for the server to return. Typically obtained by
+         * ListInstructionsResponse.next_page_token of the previous
+         * [DataLabelingService.ListInstructions] call. Return first page if empty.
+         * @return GoogleCloudDatalabelingV1beta1ListInstructionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsInstructions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an instruction object by resource name. (instructions.delete)
-     *
-     * @param string $name Required. Instruction resource name, format:
-     * projects/{project_id}/instructions/{instruction_id}
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsInstructions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an instruction by resource name. (instructions.get)
-     *
-     * @param string $name Required. Instruction resource name, format:
-     * projects/{project_id}/instructions/{instruction_id}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1Instruction
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists instructions for a project. Pagination is supported.
-     * (instructions.listProjectsInstructions)
-     *
-     * @param string $parent Required. Instruction resource parent, format:
-     * projects/{project_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter is not supported at this moment.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer results than requested. Default value is 100.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * for the server to return. Typically obtained by
-     * ListInstructionsResponse.next_page_token of the previous
-     * [DataLabelingService.ListInstructions] call. Return first page if empty.
-     * @return GoogleCloudDatalabelingV1beta1ListInstructionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsInstructions($parent, $optParams = [])
+    class Google_Service_DataLabeling_Resource_ProjectsInstructions extends \Google\Service\DataLabeling\Resource\ProjectsInstructions
     {
     }
 }

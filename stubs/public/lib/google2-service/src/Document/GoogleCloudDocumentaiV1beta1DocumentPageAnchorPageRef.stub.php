@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentPageAnchorPageRef extends \Google\Model
-{
-    protected $boundingPolyType = GoogleCloudDocumentaiV1beta1BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    /**
-     * @var float
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $layoutId;
-    /**
-     * @var string
-     */
-    public $layoutType;
-    /**
-     * @var string
-     */
-    public $page;
-    /**
-     * @param GoogleCloudDocumentaiV1beta1BoundingPoly
-     */
-    public function setBoundingPoly(GoogleCloudDocumentaiV1beta1BoundingPoly $boundingPoly)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentPageAnchorPageRef extends \Google\Model
     {
+        protected $boundingPolyType = GoogleCloudDocumentaiV1beta1BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        /**
+         * @var float
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $layoutId;
+        /**
+         * @var string
+         */
+        public $layoutType;
+        /**
+         * @var string
+         */
+        public $page;
+        /**
+         * @param GoogleCloudDocumentaiV1beta1BoundingPoly
+         */
+        public function setBoundingPoly(GoogleCloudDocumentaiV1beta1BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLayoutId($layoutId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayoutId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLayoutType($layoutType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayoutType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPage($page)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1BoundingPoly
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageAnchorPageRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLayoutId($layoutId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayoutId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLayoutType($layoutType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayoutType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPage($page)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPage()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentPageAnchorPageRef extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageAnchorPageRef
     {
     }
 }

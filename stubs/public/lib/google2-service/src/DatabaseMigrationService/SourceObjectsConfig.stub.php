@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SourceObjectsConfig extends \Google\Collection
-{
-    /**
-     * The type of the objects selection is unknown, indicating that the migration
-     * job is at instance level.
-     */
-    public const OBJECTS_SELECTION_TYPE_OBJECTS_SELECTION_TYPE_UNSPECIFIED = 'OBJECTS_SELECTION_TYPE_UNSPECIFIED';
-    /**
-     * Migrate all of the objects.
-     */
-    public const OBJECTS_SELECTION_TYPE_ALL_OBJECTS = 'ALL_OBJECTS';
-    /**
-     * Migrate specific objects.
-     */
-    public const OBJECTS_SELECTION_TYPE_SPECIFIED_OBJECTS = 'SPECIFIED_OBJECTS';
-    protected $collection_key = 'objectConfigs';
-    protected $objectConfigsType = SourceObjectConfig::class;
-    protected $objectConfigsDataType = 'array';
-    /**
-     * Optional. The objects selection type of the migration job.
-     *
-     * @var string
-     */
-    public $objectsSelectionType;
-    /**
-     * Optional. The list of the objects to be migrated.
-     *
-     * @param SourceObjectConfig[] $objectConfigs
-     */
-    public function setObjectConfigs($objectConfigs)
+namespace Google\Service\DatabaseMigrationService {
+    class SourceObjectsConfig extends \Google\Collection
     {
+        /**
+         * The type of the objects selection is unknown, indicating that the migration
+         * job is at instance level.
+         */
+        public const OBJECTS_SELECTION_TYPE_OBJECTS_SELECTION_TYPE_UNSPECIFIED = 'OBJECTS_SELECTION_TYPE_UNSPECIFIED';
+        /**
+         * Migrate all of the objects.
+         */
+        public const OBJECTS_SELECTION_TYPE_ALL_OBJECTS = 'ALL_OBJECTS';
+        /**
+         * Migrate specific objects.
+         */
+        public const OBJECTS_SELECTION_TYPE_SPECIFIED_OBJECTS = 'SPECIFIED_OBJECTS';
+        protected $collection_key = 'objectConfigs';
+        protected $objectConfigsType = SourceObjectConfig::class;
+        protected $objectConfigsDataType = 'array';
+        /**
+         * Optional. The objects selection type of the migration job.
+         *
+         * @var string
+         */
+        public $objectsSelectionType;
+        /**
+         * Optional. The list of the objects to be migrated.
+         *
+         * @param SourceObjectConfig[] $objectConfigs
+         */
+        public function setObjectConfigs($objectConfigs)
+        {
+        }
+        /**
+         * @return SourceObjectConfig[]
+         */
+        public function getObjectConfigs()
+        {
+        }
+        /**
+         * Optional. The objects selection type of the migration job.
+         *
+         * Accepted values: OBJECTS_SELECTION_TYPE_UNSPECIFIED, ALL_OBJECTS,
+         * SPECIFIED_OBJECTS
+         *
+         * @param self::OBJECTS_SELECTION_TYPE_* $objectsSelectionType
+         */
+        public function setObjectsSelectionType($objectsSelectionType)
+        {
+        }
+        /**
+         * @return self::OBJECTS_SELECTION_TYPE_*
+         */
+        public function getObjectsSelectionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceObjectConfig[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SourceObjectsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectConfigs()
-    {
-    }
-    /**
-     * Optional. The objects selection type of the migration job.
-     *
-     * Accepted values: OBJECTS_SELECTION_TYPE_UNSPECIFIED, ALL_OBJECTS,
-     * SPECIFIED_OBJECTS
-     *
-     * @param self::OBJECTS_SELECTION_TYPE_* $objectsSelectionType
-     */
-    public function setObjectsSelectionType($objectsSelectionType)
-    {
-    }
-    /**
-     * @return self::OBJECTS_SELECTION_TYPE_*
-     */
-    public function getObjectsSelectionType()
+    class Google_Service_DatabaseMigrationService_SourceObjectsConfig extends \Google\Service\DatabaseMigrationService\SourceObjectsConfig
     {
     }
 }

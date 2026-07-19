@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryNetworkSignalStrengthEvent extends \Google\Model
-{
-    /**
-     * Unique identifier of the network.
-     *
-     * @var string
-     */
-    public $guid;
-    /**
-     * Signal strength RSSI value.
-     *
-     * @var int
-     */
-    public $signalStrengthDbm;
-    /**
-     * Unique identifier of the network.
-     *
-     * @param string $guid
-     */
-    public function setGuid($guid)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryNetworkSignalStrengthEvent extends \Google\Model
     {
+        /**
+         * Unique identifier of the network.
+         *
+         * @var string
+         */
+        public $guid;
+        /**
+         * Signal strength RSSI value.
+         *
+         * @var int
+         */
+        public $signalStrengthDbm;
+        /**
+         * Unique identifier of the network.
+         *
+         * @param string $guid
+         */
+        public function setGuid($guid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGuid()
+        {
+        }
+        /**
+         * Signal strength RSSI value.
+         *
+         * @param int $signalStrengthDbm
+         */
+        public function setSignalStrengthDbm($signalStrengthDbm)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSignalStrengthDbm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNetworkSignalStrengthEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuid()
-    {
-    }
-    /**
-     * Signal strength RSSI value.
-     *
-     * @param int $signalStrengthDbm
-     */
-    public function setSignalStrengthDbm($signalStrengthDbm)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSignalStrengthDbm()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryNetworkSignalStrengthEvent extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNetworkSignalStrengthEvent
     {
     }
 }

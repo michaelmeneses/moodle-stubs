@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class Dimension extends \Google\Collection
-{
-    protected $collection_key = 'dimensionValues';
-    public $dimensionType;
-    protected $dimensionValuesType = DimensionDimensionValue::class;
-    protected $dimensionValuesDataType = 'array';
-    public function setDimensionType($dimensionType)
+namespace Google\Service\AdExchangeBuyer {
+    class Dimension extends \Google\Collection
     {
+        protected $collection_key = 'dimensionValues';
+        public $dimensionType;
+        protected $dimensionValuesType = DimensionDimensionValue::class;
+        protected $dimensionValuesDataType = 'array';
+        public function setDimensionType($dimensionType)
+        {
+        }
+        public function getDimensionType()
+        {
+        }
+        /**
+         * @param DimensionDimensionValue[]
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return DimensionDimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
     }
-    public function getDimensionType()
-    {
-    }
+}
+namespace {
     /**
-     * @param DimensionDimensionValue[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Dimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDimensionValues($dimensionValues)
-    {
-    }
-    /**
-     * @return DimensionDimensionValue[]
-     */
-    public function getDimensionValues()
+    class Google_Service_AdExchangeBuyer_Dimension extends \Google\Service\AdExchangeBuyer\Dimension
     {
     }
 }

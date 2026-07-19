@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DataSourceConnectionSpec extends \Google\Model
-{
-    protected $bigqueryConnectionSpecType = GoogleCloudDatacatalogV1BigQueryConnectionSpec::class;
-    protected $bigqueryConnectionSpecDataType = '';
-    /**
-     * Output only. Fields specific to BigQuery connections.
-     *
-     * @param GoogleCloudDatacatalogV1BigQueryConnectionSpec $bigqueryConnectionSpec
-     */
-    public function setBigqueryConnectionSpec(GoogleCloudDatacatalogV1BigQueryConnectionSpec $bigqueryConnectionSpec)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DataSourceConnectionSpec extends \Google\Model
     {
+        protected $bigqueryConnectionSpecType = GoogleCloudDatacatalogV1BigQueryConnectionSpec::class;
+        protected $bigqueryConnectionSpecDataType = '';
+        /**
+         * Output only. Fields specific to BigQuery connections.
+         *
+         * @param GoogleCloudDatacatalogV1BigQueryConnectionSpec $bigqueryConnectionSpec
+         */
+        public function setBigqueryConnectionSpec(GoogleCloudDatacatalogV1BigQueryConnectionSpec $bigqueryConnectionSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1BigQueryConnectionSpec
+         */
+        public function getBigqueryConnectionSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1BigQueryConnectionSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataSourceConnectionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryConnectionSpec()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DataSourceConnectionSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataSourceConnectionSpec
     {
     }
 }

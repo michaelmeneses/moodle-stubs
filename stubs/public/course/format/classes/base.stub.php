@@ -29,6 +29,23 @@
  */
 namespace core_courseformat;
 
+use navigation_node;
+use moodle_page;
+use cm_info;
+use core_component;
+use course_modinfo;
+use html_writer;
+use section_info;
+use context_course;
+use editsection_form;
+use core\exception\moodle_exception;
+use core\exception\coding_exception;
+use moodle_url;
+use lang_string;
+use core_external\external_api;
+use stdClass;
+use cache;
+use core_courseformat\output\legacy_renderer;
 /**
  * Base class for course formats
  *

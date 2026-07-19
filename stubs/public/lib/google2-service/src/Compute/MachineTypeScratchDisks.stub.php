@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class MachineTypeScratchDisks extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $diskGb;
-    /**
-     * @param int
-     */
-    public function setDiskGb($diskGb)
+namespace Google\Service\Compute {
+    class MachineTypeScratchDisks extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $diskGb;
+        /**
+         * @param int
+         */
+        public function setDiskGb($diskGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDiskGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\MachineTypeScratchDisks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskGb()
+    class Google_Service_Compute_MachineTypeScratchDisks extends \Google\Service\Compute\MachineTypeScratchDisks
     {
     }
 }

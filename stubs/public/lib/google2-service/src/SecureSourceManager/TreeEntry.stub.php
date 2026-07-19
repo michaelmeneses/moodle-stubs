@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class TreeEntry extends \Google\Model
-{
-    /**
-     * Default value, indicating the object type is unspecified.
-     */
-    public const TYPE_OBJECT_TYPE_UNSPECIFIED = 'OBJECT_TYPE_UNSPECIFIED';
-    /**
-     * Represents a directory (folder).
-     */
-    public const TYPE_TREE = 'TREE';
-    /**
-     * Represents a file (contains file data).
-     */
-    public const TYPE_BLOB = 'BLOB';
-    /**
-     * Represents a pointer to another repository (submodule).
-     */
-    public const TYPE_COMMIT = 'COMMIT';
-    /**
-     * Output only. The file mode as a string (e.g., "100644"). Indicates file
-     * type. Output-only.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Output only. The path of the file or directory within the tree (e.g.,
-     * "src/main/java/MyClass.java"). Output-only.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. The SHA-1 hash of the object (unique identifier). Output-only.
-     *
-     * @var string
-     */
-    public $sha;
-    /**
-     * Output only. The size of the object in bytes (only for blobs). Output-only.
-     *
-     * @var string
-     */
-    public $size;
-    /**
-     * Output only. The type of the object (TREE, BLOB, COMMIT). Output-only.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The file mode as a string (e.g., "100644"). Indicates file
-     * type. Output-only.
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\SecureSourceManager {
+    class TreeEntry extends \Google\Model
     {
+        /**
+         * Default value, indicating the object type is unspecified.
+         */
+        public const TYPE_OBJECT_TYPE_UNSPECIFIED = 'OBJECT_TYPE_UNSPECIFIED';
+        /**
+         * Represents a directory (folder).
+         */
+        public const TYPE_TREE = 'TREE';
+        /**
+         * Represents a file (contains file data).
+         */
+        public const TYPE_BLOB = 'BLOB';
+        /**
+         * Represents a pointer to another repository (submodule).
+         */
+        public const TYPE_COMMIT = 'COMMIT';
+        /**
+         * Output only. The file mode as a string (e.g., "100644"). Indicates file
+         * type. Output-only.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Output only. The path of the file or directory within the tree (e.g.,
+         * "src/main/java/MyClass.java"). Output-only.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. The SHA-1 hash of the object (unique identifier). Output-only.
+         *
+         * @var string
+         */
+        public $sha;
+        /**
+         * Output only. The size of the object in bytes (only for blobs). Output-only.
+         *
+         * @var string
+         */
+        public $size;
+        /**
+         * Output only. The type of the object (TREE, BLOB, COMMIT). Output-only.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The file mode as a string (e.g., "100644"). Indicates file
+         * type. Output-only.
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Output only. The path of the file or directory within the tree (e.g.,
+         * "src/main/java/MyClass.java"). Output-only.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Output only. The SHA-1 hash of the object (unique identifier). Output-only.
+         *
+         * @param string $sha
+         */
+        public function setSha($sha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha()
+        {
+        }
+        /**
+         * Output only. The size of the object in bytes (only for blobs). Output-only.
+         *
+         * @param string $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * Output only. The type of the object (TREE, BLOB, COMMIT). Output-only.
+         *
+         * Accepted values: OBJECT_TYPE_UNSPECIFIED, TREE, BLOB, COMMIT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\TreeEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * Output only. The path of the file or directory within the tree (e.g.,
-     * "src/main/java/MyClass.java"). Output-only.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Output only. The SHA-1 hash of the object (unique identifier). Output-only.
-     *
-     * @param string $sha
-     */
-    public function setSha($sha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha()
-    {
-    }
-    /**
-     * Output only. The size of the object in bytes (only for blobs). Output-only.
-     *
-     * @param string $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * Output only. The type of the object (TREE, BLOB, COMMIT). Output-only.
-     *
-     * Accepted values: OBJECT_TYPE_UNSPECIFIED, TREE, BLOB, COMMIT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_SecureSourceManager_TreeEntry extends \Google\Service\SecureSourceManager\TreeEntry
     {
     }
 }

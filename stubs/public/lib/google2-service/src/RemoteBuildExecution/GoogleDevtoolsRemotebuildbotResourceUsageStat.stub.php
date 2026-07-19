@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildbotResourceUsageStat extends \Google\Model
-{
-    public $total;
-    public $used;
-    public function setTotal($total)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildbotResourceUsageStat extends \Google\Model
     {
+        public $total;
+        public $used;
+        public function setTotal($total)
+        {
+        }
+        public function getTotal()
+        {
+        }
+        public function setUsed($used)
+        {
+        }
+        public function getUsed()
+        {
+        }
     }
-    public function getTotal()
-    {
-    }
-    public function setUsed($used)
-    {
-    }
-    public function getUsed()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotResourceUsageStat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildbotResourceUsageStat extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotResourceUsageStat
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListGeneratorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'generators';
-    protected $generatorsType = GoogleCloudDialogflowCxV3Generator::class;
-    protected $generatorsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of generators. There will be a maximum number of items returned
-     * based on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3Generator[] $generators
-     */
-    public function setGenerators($generators)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListGeneratorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'generators';
+        protected $generatorsType = GoogleCloudDialogflowCxV3Generator::class;
+        protected $generatorsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of generators. There will be a maximum number of items returned
+         * based on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3Generator[] $generators
+         */
+        public function setGenerators($generators)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Generator[]
+         */
+        public function getGenerators()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Generator[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListGeneratorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenerators()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListGeneratorsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListGeneratorsResponse
     {
     }
 }

@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP;
-
-class RdapResponse extends \Google\Collection
-{
-    protected $collection_key = 'rdapConformance';
-    /**
-     * @var string[]
-     */
-    public $description;
-    /**
-     * @var int
-     */
-    public $errorCode;
-    protected $jsonResponseType = HttpBody::class;
-    protected $jsonResponseDataType = '';
-    /**
-     * @var string
-     */
-    public $lang;
-    protected $noticesType = Notice::class;
-    protected $noticesDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $rdapConformance;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string[]
-     */
-    public function setDescription($description)
+namespace Google\Service\DomainsRDAP {
+    class RdapResponse extends \Google\Collection
     {
+        protected $collection_key = 'rdapConformance';
+        /**
+         * @var string[]
+         */
+        public $description;
+        /**
+         * @var int
+         */
+        public $errorCode;
+        protected $jsonResponseType = HttpBody::class;
+        protected $jsonResponseDataType = '';
+        /**
+         * @var string
+         */
+        public $lang;
+        protected $noticesType = Notice::class;
+        protected $noticesDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $rdapConformance;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string[]
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * @param HttpBody
+         */
+        public function setJsonResponse(HttpBody $jsonResponse)
+        {
+        }
+        /**
+         * @return HttpBody
+         */
+        public function getJsonResponse()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLang($lang)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLang()
+        {
+        }
+        /**
+         * @param Notice[]
+         */
+        public function setNotices($notices)
+        {
+        }
+        /**
+         * @return Notice[]
+         */
+        public function getNotices()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRdapConformance($rdapConformance)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRdapConformance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DomainsRDAP\RdapResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * @param HttpBody
-     */
-    public function setJsonResponse(HttpBody $jsonResponse)
-    {
-    }
-    /**
-     * @return HttpBody
-     */
-    public function getJsonResponse()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLang($lang)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLang()
-    {
-    }
-    /**
-     * @param Notice[]
-     */
-    public function setNotices($notices)
-    {
-    }
-    /**
-     * @return Notice[]
-     */
-    public function getNotices()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRdapConformance($rdapConformance)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRdapConformance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DomainsRDAP_RdapResponse extends \Google\Service\DomainsRDAP\RdapResponse
     {
     }
 }

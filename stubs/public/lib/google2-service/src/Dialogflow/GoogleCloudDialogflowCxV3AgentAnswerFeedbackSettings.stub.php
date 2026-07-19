@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentAnswerFeedbackSettings extends \Google\Model
-{
-    /**
-     * Optional. If enabled, end users will be able to provide answer feedback to
-     * Dialogflow responses. Feature works only if interaction logging is enabled
-     * in the Dialogflow agent.
-     *
-     * @var bool
-     */
-    public $enableAnswerFeedback;
-    /**
-     * Optional. If enabled, end users will be able to provide answer feedback to
-     * Dialogflow responses. Feature works only if interaction logging is enabled
-     * in the Dialogflow agent.
-     *
-     * @param bool $enableAnswerFeedback
-     */
-    public function setEnableAnswerFeedback($enableAnswerFeedback)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentAnswerFeedbackSettings extends \Google\Model
     {
+        /**
+         * Optional. If enabled, end users will be able to provide answer feedback to
+         * Dialogflow responses. Feature works only if interaction logging is enabled
+         * in the Dialogflow agent.
+         *
+         * @var bool
+         */
+        public $enableAnswerFeedback;
+        /**
+         * Optional. If enabled, end users will be able to provide answer feedback to
+         * Dialogflow responses. Feature works only if interaction logging is enabled
+         * in the Dialogflow agent.
+         *
+         * @param bool $enableAnswerFeedback
+         */
+        public function setEnableAnswerFeedback($enableAnswerFeedback)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableAnswerFeedback()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentAnswerFeedbackSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableAnswerFeedback()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentAnswerFeedbackSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentAnswerFeedbackSettings
     {
     }
 }

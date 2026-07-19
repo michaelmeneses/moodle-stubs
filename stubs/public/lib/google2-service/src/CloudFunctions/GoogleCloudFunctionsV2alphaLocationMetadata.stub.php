@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2alphaLocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'environments';
-    /**
-     * @var string[]
-     */
-    public $environments;
-    /**
-     * @param string[]
-     */
-    public function setEnvironments($environments)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2alphaLocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'environments';
+        /**
+         * @var string[]
+         */
+        public $environments;
+        /**
+         * @param string[]
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvironments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2alphaLocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironments()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2alphaLocationMetadata extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2alphaLocationMetadata
     {
     }
 }

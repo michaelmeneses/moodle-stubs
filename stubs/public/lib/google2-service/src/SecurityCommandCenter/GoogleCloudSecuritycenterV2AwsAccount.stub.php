@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AwsAccount extends \Google\Model
-{
-    /**
-     * The unique identifier (ID) of the account, containing exactly 12 digits.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The friendly name of this account.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The unique identifier (ID) of the account, containing exactly 12 digits.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AwsAccount extends \Google\Model
     {
+        /**
+         * The unique identifier (ID) of the account, containing exactly 12 digits.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The friendly name of this account.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The unique identifier (ID) of the account, containing exactly 12 digits.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The friendly name of this account.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AwsAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The friendly name of this account.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AwsAccount extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AwsAccount
     {
     }
 }

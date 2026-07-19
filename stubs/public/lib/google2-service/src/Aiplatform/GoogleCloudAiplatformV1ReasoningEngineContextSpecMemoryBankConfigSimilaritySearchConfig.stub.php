@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig extends \Google\Model
-{
-    /**
-     * Required. The model used to generate embeddings to lookup similar memories.
-     * Format:
-     * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
-     *
-     * @var string
-     */
-    public $embeddingModel;
-    /**
-     * Required. The model used to generate embeddings to lookup similar memories.
-     * Format:
-     * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
-     *
-     * @param string $embeddingModel
-     */
-    public function setEmbeddingModel($embeddingModel)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig extends \Google\Model
     {
+        /**
+         * Required. The model used to generate embeddings to lookup similar memories.
+         * Format:
+         * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
+         *
+         * @var string
+         */
+        public $embeddingModel;
+        /**
+         * Required. The model used to generate embeddings to lookup similar memories.
+         * Format:
+         * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
+         *
+         * @param string $embeddingModel
+         */
+        public function setEmbeddingModel($embeddingModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmbeddingModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbeddingModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig
     {
     }
 }

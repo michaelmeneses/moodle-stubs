@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCallMetadata extends \Google\Model
-{
-    protected $meetMetadataType = AppsDynamiteSharedMeetMetadata::class;
-    protected $meetMetadataDataType = '';
-    /**
-     * @param AppsDynamiteSharedMeetMetadata
-     */
-    public function setMeetMetadata(AppsDynamiteSharedMeetMetadata $meetMetadata)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCallMetadata extends \Google\Model
     {
+        protected $meetMetadataType = AppsDynamiteSharedMeetMetadata::class;
+        protected $meetMetadataDataType = '';
+        /**
+         * @param AppsDynamiteSharedMeetMetadata
+         */
+        public function setMeetMetadata(AppsDynamiteSharedMeetMetadata $meetMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedMeetMetadata
+         */
+        public function getMeetMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedMeetMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCallMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeetMetadata()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCallMetadata extends \Google\Service\CloudSearch\AppsDynamiteSharedCallMetadata
     {
     }
 }

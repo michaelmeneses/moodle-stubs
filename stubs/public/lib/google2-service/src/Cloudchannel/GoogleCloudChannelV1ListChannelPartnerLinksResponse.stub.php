@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListChannelPartnerLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'channelPartnerLinks';
-    protected $channelPartnerLinksType = GoogleCloudChannelV1ChannelPartnerLink::class;
-    protected $channelPartnerLinksDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListChannelPartnerLinksRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Channel partner links for a reseller.
-     *
-     * @param GoogleCloudChannelV1ChannelPartnerLink[] $channelPartnerLinks
-     */
-    public function setChannelPartnerLinks($channelPartnerLinks)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListChannelPartnerLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'channelPartnerLinks';
+        protected $channelPartnerLinksType = GoogleCloudChannelV1ChannelPartnerLink::class;
+        protected $channelPartnerLinksDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListChannelPartnerLinksRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Channel partner links for a reseller.
+         *
+         * @param GoogleCloudChannelV1ChannelPartnerLink[] $channelPartnerLinks
+         */
+        public function setChannelPartnerLinks($channelPartnerLinks)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ChannelPartnerLink[]
+         */
+        public function getChannelPartnerLinks()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListChannelPartnerLinksRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1ChannelPartnerLink[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListChannelPartnerLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelPartnerLinks()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListChannelPartnerLinksRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListChannelPartnerLinksResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListChannelPartnerLinksResponse
     {
     }
 }

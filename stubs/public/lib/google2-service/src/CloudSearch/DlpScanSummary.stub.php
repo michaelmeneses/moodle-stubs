@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DlpScanSummary extends \Google\Model
-{
-    protected $dlpActionType = DlpAction::class;
-    protected $dlpActionDataType = '';
-    /**
-     * @var string
-     */
-    public $scanId;
-    /**
-     * @var bool
-     */
-    public $scanNotApplicableForContext;
-    /**
-     * @var string
-     */
-    public $scanOutcome;
-    /**
-     * @var string
-     */
-    public $scanTrigger;
-    /**
-     * @param DlpAction
-     */
-    public function setDlpAction(DlpAction $dlpAction)
+namespace Google\Service\CloudSearch {
+    class DlpScanSummary extends \Google\Model
     {
+        protected $dlpActionType = DlpAction::class;
+        protected $dlpActionDataType = '';
+        /**
+         * @var string
+         */
+        public $scanId;
+        /**
+         * @var bool
+         */
+        public $scanNotApplicableForContext;
+        /**
+         * @var string
+         */
+        public $scanOutcome;
+        /**
+         * @var string
+         */
+        public $scanTrigger;
+        /**
+         * @param DlpAction
+         */
+        public function setDlpAction(DlpAction $dlpAction)
+        {
+        }
+        /**
+         * @return DlpAction
+         */
+        public function getDlpAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScanId($scanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setScanNotApplicableForContext($scanNotApplicableForContext)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getScanNotApplicableForContext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScanOutcome($scanOutcome)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanOutcome()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScanTrigger($scanTrigger)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanTrigger()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DlpAction
+     * Runtime class alias of \Google\Service\CloudSearch\DlpScanSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDlpAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScanId($scanId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setScanNotApplicableForContext($scanNotApplicableForContext)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getScanNotApplicableForContext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScanOutcome($scanOutcome)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanOutcome()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScanTrigger($scanTrigger)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanTrigger()
+    class Google_Service_CloudSearch_DlpScanSummary extends \Google\Service\CloudSearch\DlpScanSummary
     {
     }
 }

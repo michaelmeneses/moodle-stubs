@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountsCustomBatchResponseEntry extends \Google\Model
-{
-    protected $accountType = Account::class;
-    protected $accountDataType = '';
-    /**
-     * The ID of the request entry this entry responds to.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsCustomBatchResponseEntry`"
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The retrieved, created, or updated account. Not defined if the method was
-     * `delete`, `claimwebsite` or `link`.
-     *
-     * @param Account $account
-     */
-    public function setAccount(Account $account)
+namespace Google\Service\ShoppingContent {
+    class AccountsCustomBatchResponseEntry extends \Google\Model
     {
+        protected $accountType = Account::class;
+        protected $accountDataType = '';
+        /**
+         * The ID of the request entry this entry responds to.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsCustomBatchResponseEntry`"
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The retrieved, created, or updated account. Not defined if the method was
+         * `delete`, `claimwebsite` or `link`.
+         *
+         * @param Account $account
+         */
+        public function setAccount(Account $account)
+        {
+        }
+        /**
+         * @return Account
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * The ID of the request entry this entry responds to.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * A list of errors for failed custombatch entries. *Note:* Schema errors fail
+         * the whole request.
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsCustomBatchResponseEntry`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountsCustomBatchResponseEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * The ID of the request entry this entry responds to.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchId()
-    {
-    }
-    /**
-     * A list of errors for failed custombatch entries. *Note:* Schema errors fail
-     * the whole request.
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsCustomBatchResponseEntry`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_AccountsCustomBatchResponseEntry extends \Google\Service\ShoppingContent\AccountsCustomBatchResponseEntry
     {
     }
 }

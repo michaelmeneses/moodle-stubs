@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ResourceMaintenanceDenySchedule extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    protected $timeType = TimeOfDay::class;
-    protected $timeDataType = '';
-    /**
-     * Optional. Deny period end date.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\CloudRedis {
+    class ResourceMaintenanceDenySchedule extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        protected $timeType = TimeOfDay::class;
+        protected $timeDataType = '';
+        /**
+         * Optional. Deny period end date.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Optional. The start date of the deny maintenance period.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Optional. Time in UTC when the deny period starts on start_date and ends on
+         * end_date.
+         *
+         * @param TimeOfDay $time
+         */
+        public function setTime(TimeOfDay $time)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudRedis\ResourceMaintenanceDenySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Optional. The start date of the deny maintenance period.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Optional. Time in UTC when the deny period starts on start_date and ends on
-     * end_date.
-     *
-     * @param TimeOfDay $time
-     */
-    public function setTime(TimeOfDay $time)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getTime()
+    class Google_Service_CloudRedis_ResourceMaintenanceDenySchedule extends \Google\Service\CloudRedis\ResourceMaintenanceDenySchedule
     {
     }
 }

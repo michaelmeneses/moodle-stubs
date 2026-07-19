@@ -21,203 +21,212 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ProvisioningQuota extends \Google\Model
-{
-    /**
-     * The unspecified type.
-     */
-    public const ASSET_TYPE_ASSET_TYPE_UNSPECIFIED = 'ASSET_TYPE_UNSPECIFIED';
-    /**
-     * The server asset type.
-     */
-    public const ASSET_TYPE_ASSET_TYPE_SERVER = 'ASSET_TYPE_SERVER';
-    /**
-     * The storage asset type.
-     */
-    public const ASSET_TYPE_ASSET_TYPE_STORAGE = 'ASSET_TYPE_STORAGE';
-    /**
-     * The network asset type.
-     */
-    public const ASSET_TYPE_ASSET_TYPE_NETWORK = 'ASSET_TYPE_NETWORK';
-    /**
-     * The asset type of this provisioning quota.
-     *
-     * @var string
-     */
-    public $assetType;
-    /**
-     * The available count of the provisioning quota.
-     *
-     * @var int
-     */
-    public $availableCount;
-    /**
-     * The gcp service of the provisioning quota.
-     *
-     * @var string
-     */
-    public $gcpService;
-    protected $instanceQuotaType = InstanceQuota::class;
-    protected $instanceQuotaDataType = '';
-    /**
-     * The specific location of the provisioining quota.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The name of the provisioning quota.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Network bandwidth, Gbps
-     *
-     * @var string
-     */
-    public $networkBandwidth;
-    /**
-     * Server count.
-     *
-     * @var string
-     */
-    public $serverCount;
-    /**
-     * Storage size (GB).
-     *
-     * @var string
-     */
-    public $storageGib;
-    /**
-     * The asset type of this provisioning quota.
-     *
-     * Accepted values: ASSET_TYPE_UNSPECIFIED, ASSET_TYPE_SERVER,
-     * ASSET_TYPE_STORAGE, ASSET_TYPE_NETWORK
-     *
-     * @param self::ASSET_TYPE_* $assetType
-     */
-    public function setAssetType($assetType)
+namespace Google\Service\Baremetalsolution {
+    class ProvisioningQuota extends \Google\Model
     {
+        /**
+         * The unspecified type.
+         */
+        public const ASSET_TYPE_ASSET_TYPE_UNSPECIFIED = 'ASSET_TYPE_UNSPECIFIED';
+        /**
+         * The server asset type.
+         */
+        public const ASSET_TYPE_ASSET_TYPE_SERVER = 'ASSET_TYPE_SERVER';
+        /**
+         * The storage asset type.
+         */
+        public const ASSET_TYPE_ASSET_TYPE_STORAGE = 'ASSET_TYPE_STORAGE';
+        /**
+         * The network asset type.
+         */
+        public const ASSET_TYPE_ASSET_TYPE_NETWORK = 'ASSET_TYPE_NETWORK';
+        /**
+         * The asset type of this provisioning quota.
+         *
+         * @var string
+         */
+        public $assetType;
+        /**
+         * The available count of the provisioning quota.
+         *
+         * @var int
+         */
+        public $availableCount;
+        /**
+         * The gcp service of the provisioning quota.
+         *
+         * @var string
+         */
+        public $gcpService;
+        protected $instanceQuotaType = InstanceQuota::class;
+        protected $instanceQuotaDataType = '';
+        /**
+         * The specific location of the provisioining quota.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The name of the provisioning quota.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Network bandwidth, Gbps
+         *
+         * @var string
+         */
+        public $networkBandwidth;
+        /**
+         * Server count.
+         *
+         * @var string
+         */
+        public $serverCount;
+        /**
+         * Storage size (GB).
+         *
+         * @var string
+         */
+        public $storageGib;
+        /**
+         * The asset type of this provisioning quota.
+         *
+         * Accepted values: ASSET_TYPE_UNSPECIFIED, ASSET_TYPE_SERVER,
+         * ASSET_TYPE_STORAGE, ASSET_TYPE_NETWORK
+         *
+         * @param self::ASSET_TYPE_* $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return self::ASSET_TYPE_*
+         */
+        public function getAssetType()
+        {
+        }
+        /**
+         * The available count of the provisioning quota.
+         *
+         * @param int $availableCount
+         */
+        public function setAvailableCount($availableCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableCount()
+        {
+        }
+        /**
+         * The gcp service of the provisioning quota.
+         *
+         * @param string $gcpService
+         */
+        public function setGcpService($gcpService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpService()
+        {
+        }
+        /**
+         * Instance quota.
+         *
+         * @param InstanceQuota $instanceQuota
+         */
+        public function setInstanceQuota(InstanceQuota $instanceQuota)
+        {
+        }
+        /**
+         * @return InstanceQuota
+         */
+        public function getInstanceQuota()
+        {
+        }
+        /**
+         * The specific location of the provisioining quota.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. The name of the provisioning quota.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Network bandwidth, Gbps
+         *
+         * @param string $networkBandwidth
+         */
+        public function setNetworkBandwidth($networkBandwidth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkBandwidth()
+        {
+        }
+        /**
+         * Server count.
+         *
+         * @param string $serverCount
+         */
+        public function setServerCount($serverCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerCount()
+        {
+        }
+        /**
+         * Storage size (GB).
+         *
+         * @param string $storageGib
+         */
+        public function setStorageGib($storageGib)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageGib()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ASSET_TYPE_*
+     * Runtime class alias of \Google\Service\Baremetalsolution\ProvisioningQuota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetType()
-    {
-    }
-    /**
-     * The available count of the provisioning quota.
-     *
-     * @param int $availableCount
-     */
-    public function setAvailableCount($availableCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAvailableCount()
-    {
-    }
-    /**
-     * The gcp service of the provisioning quota.
-     *
-     * @param string $gcpService
-     */
-    public function setGcpService($gcpService)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpService()
-    {
-    }
-    /**
-     * Instance quota.
-     *
-     * @param InstanceQuota $instanceQuota
-     */
-    public function setInstanceQuota(InstanceQuota $instanceQuota)
-    {
-    }
-    /**
-     * @return InstanceQuota
-     */
-    public function getInstanceQuota()
-    {
-    }
-    /**
-     * The specific location of the provisioining quota.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. The name of the provisioning quota.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Network bandwidth, Gbps
-     *
-     * @param string $networkBandwidth
-     */
-    public function setNetworkBandwidth($networkBandwidth)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkBandwidth()
-    {
-    }
-    /**
-     * Server count.
-     *
-     * @param string $serverCount
-     */
-    public function setServerCount($serverCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerCount()
-    {
-    }
-    /**
-     * Storage size (GB).
-     *
-     * @param string $storageGib
-     */
-    public function setStorageGib($storageGib)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageGib()
+    class Google_Service_Baremetalsolution_ProvisioningQuota extends \Google\Service\Baremetalsolution\ProvisioningQuota
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Operation extends \Google\Collection
-{
-    protected $collection_key = 'methods';
-    /**
-     * methods refers to the REST verbs as in
-     * https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html. When none
-     * specified, all verb types are allowed.
-     *
-     * @var string[]
-     */
-    public $methods;
-    /**
-     * Required. REST resource path associated with the API proxy or remote
-     * service.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * methods refers to the REST verbs as in
-     * https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html. When none
-     * specified, all verb types are allowed.
-     *
-     * @param string[] $methods
-     */
-    public function setMethods($methods)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Operation extends \Google\Collection
     {
+        protected $collection_key = 'methods';
+        /**
+         * methods refers to the REST verbs as in
+         * https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html. When none
+         * specified, all verb types are allowed.
+         *
+         * @var string[]
+         */
+        public $methods;
+        /**
+         * Required. REST resource path associated with the API proxy or remote
+         * service.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * methods refers to the REST verbs as in
+         * https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html. When none
+         * specified, all verb types are allowed.
+         *
+         * @param string[] $methods
+         */
+        public function setMethods($methods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethods()
+        {
+        }
+        /**
+         * Required. REST resource path associated with the API proxy or remote
+         * service.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Operation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethods()
-    {
-    }
-    /**
-     * Required. REST resource path associated with the API proxy or remote
-     * service.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Operation extends \Google\Service\Apigee\GoogleCloudApigeeV1Operation
     {
     }
 }

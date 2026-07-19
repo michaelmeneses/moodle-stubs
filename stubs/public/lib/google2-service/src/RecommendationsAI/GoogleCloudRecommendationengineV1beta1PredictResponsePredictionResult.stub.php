@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult extends \Google\Model
-{
-    /**
-     * ID of the recommended catalog item
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Additional item metadata / annotations. Possible values: * `catalogItem`:
-     * JSON representation of the catalogItem. Will be set if `returnCatalogItem`
-     * is set to true in `PredictRequest.params`. * `score`: Prediction score in
-     * double value. Will be set if `returnItemScore` is set to true in
-     * `PredictRequest.params`.
-     *
-     * @var array[]
-     */
-    public $itemMetadata;
-    /**
-     * ID of the recommended catalog item
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult extends \Google\Model
     {
+        /**
+         * ID of the recommended catalog item
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Additional item metadata / annotations. Possible values: * `catalogItem`:
+         * JSON representation of the catalogItem. Will be set if `returnCatalogItem`
+         * is set to true in `PredictRequest.params`. * `score`: Prediction score in
+         * double value. Will be set if `returnItemScore` is set to true in
+         * `PredictRequest.params`.
+         *
+         * @var array[]
+         */
+        public $itemMetadata;
+        /**
+         * ID of the recommended catalog item
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Additional item metadata / annotations. Possible values: * `catalogItem`:
+         * JSON representation of the catalogItem. Will be set if `returnCatalogItem`
+         * is set to true in `PredictRequest.params`. * `score`: Prediction score in
+         * double value. Will be set if `returnItemScore` is set to true in
+         * `PredictRequest.params`.
+         *
+         * @param array[] $itemMetadata
+         */
+        public function setItemMetadata($itemMetadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getItemMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Additional item metadata / annotations. Possible values: * `catalogItem`:
-     * JSON representation of the catalogItem. Will be set if `returnCatalogItem`
-     * is set to true in `PredictRequest.params`. * `score`: Prediction score in
-     * double value. Will be set if `returnItemScore` is set to true in
-     * `PredictRequest.params`.
-     *
-     * @param array[] $itemMetadata
-     */
-    public function setItemMetadata($itemMetadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getItemMetadata()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult
     {
     }
 }

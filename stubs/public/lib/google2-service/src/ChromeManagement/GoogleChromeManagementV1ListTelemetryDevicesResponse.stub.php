@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ListTelemetryDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = GoogleChromeManagementV1TelemetryDevice::class;
-    protected $devicesDataType = 'array';
-    /**
-     * Token to specify next page in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Telemetry devices returned in the response.
-     *
-     * @param GoogleChromeManagementV1TelemetryDevice[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ListTelemetryDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = GoogleChromeManagementV1TelemetryDevice::class;
+        protected $devicesDataType = 'array';
+        /**
+         * Token to specify next page in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Telemetry devices returned in the response.
+         *
+         * @param GoogleChromeManagementV1TelemetryDevice[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryDevice[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * Token to specify next page in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1TelemetryDevice[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * Token to specify next page in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ListTelemetryDevicesResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryDevicesResponse
     {
     }
 }

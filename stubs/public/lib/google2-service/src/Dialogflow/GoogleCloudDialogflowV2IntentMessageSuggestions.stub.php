@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageSuggestions extends \Google\Collection
-{
-    protected $collection_key = 'suggestions';
-    protected $suggestionsType = GoogleCloudDialogflowV2IntentMessageSuggestion::class;
-    protected $suggestionsDataType = 'array';
-    /**
-     * Required. The list of suggested replies.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageSuggestion[] $suggestions
-     */
-    public function setSuggestions($suggestions)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageSuggestions extends \Google\Collection
     {
+        protected $collection_key = 'suggestions';
+        protected $suggestionsType = GoogleCloudDialogflowV2IntentMessageSuggestion::class;
+        protected $suggestionsDataType = 'array';
+        /**
+         * Required. The list of suggested replies.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageSuggestion[] $suggestions
+         */
+        public function setSuggestions($suggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageSuggestion[]
+         */
+        public function getSuggestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageSuggestion[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageSuggestions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestions()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageSuggestions extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageSuggestions
     {
     }
 }

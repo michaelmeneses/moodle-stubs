@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_h5p;
 
+use core_xapi\handler;
+use core_xapi\xapi_exception;
+use Moodle\H5PFrameworkInterface;
+use Moodle\H5PCore;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Moodle's implementation of the H5P framework interface.
@@ -578,7 +582,7 @@ class framework implements H5PFrameworkInterface
     {
     }
     /**
-     * Will clear filtered params for all the content that uses the specified
+     * Will clear filtered params for all the content that uses the specified.
      * libraries. This means that the content dependencies will have to be rebuilt and the parameters re-filtered.
      * Implements clearFilteredParameters().
      *

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo extends \Google\Model
-{
-    /**
-     * Commercialization is incomplete and cannot be used.
-     */
-    public const COMMERCIAL_STATE_COMMERCIAL_STATE_UNSPECIFIED = 'COMMERCIAL_STATE_UNSPECIFIED';
-    /**
-     * Commercialization has been initialized.
-     */
-    public const COMMERCIAL_STATE_ONBOARDING = 'ONBOARDING';
-    /**
-     * Commercialization is complete and available for use.
-     */
-    public const COMMERCIAL_STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Output only. Commercial state of the Marketplace Data Product.
-     *
-     * @var string
-     */
-    public $commercialState;
-    /**
-     * Output only. Resource name of the commercial service associated with the
-     * Marketplace Data Product. e.g. example.com
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Output only. Commercial state of the Marketplace Data Product.
-     *
-     * Accepted values: COMMERCIAL_STATE_UNSPECIFIED, ONBOARDING, ACTIVE
-     *
-     * @param self::COMMERCIAL_STATE_* $commercialState
-     */
-    public function setCommercialState($commercialState)
+namespace Google\Service\AnalyticsHub {
+    class GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo extends \Google\Model
     {
+        /**
+         * Commercialization is incomplete and cannot be used.
+         */
+        public const COMMERCIAL_STATE_COMMERCIAL_STATE_UNSPECIFIED = 'COMMERCIAL_STATE_UNSPECIFIED';
+        /**
+         * Commercialization has been initialized.
+         */
+        public const COMMERCIAL_STATE_ONBOARDING = 'ONBOARDING';
+        /**
+         * Commercialization is complete and available for use.
+         */
+        public const COMMERCIAL_STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Output only. Commercial state of the Marketplace Data Product.
+         *
+         * @var string
+         */
+        public $commercialState;
+        /**
+         * Output only. Resource name of the commercial service associated with the
+         * Marketplace Data Product. e.g. example.com
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Output only. Commercial state of the Marketplace Data Product.
+         *
+         * Accepted values: COMMERCIAL_STATE_UNSPECIFIED, ONBOARDING, ACTIVE
+         *
+         * @param self::COMMERCIAL_STATE_* $commercialState
+         */
+        public function setCommercialState($commercialState)
+        {
+        }
+        /**
+         * @return self::COMMERCIAL_STATE_*
+         */
+        public function getCommercialState()
+        {
+        }
+        /**
+         * Output only. Resource name of the commercial service associated with the
+         * Marketplace Data Product. e.g. example.com
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMMERCIAL_STATE_*
+     * Runtime class alias of \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommercialState()
-    {
-    }
-    /**
-     * Output only. Resource name of the commercial service associated with the
-     * Marketplace Data Product. e.g. example.com
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_AnalyticsHub_GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo extends \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo
     {
     }
 }

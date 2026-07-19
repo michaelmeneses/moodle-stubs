@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2FaqAnswer extends \Google\Model
-{
-    /**
-     * The piece of text from the `source` knowledge base document.
-     *
-     * @var string
-     */
-    public $answer;
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * The system's confidence score that this Knowledge answer is a good match
-     * for this conversational query, range from 0.0 (completely uncertain) to 1.0
-     * (completely certain).
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * A map that contains metadata about the answer and the document from which
-     * it originates.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The corresponding FAQ question.
-     *
-     * @var string
-     */
-    public $question;
-    /**
-     * Indicates which Knowledge Document this answer was extracted from. Format:
-     * `projects//locations//agent/knowledgeBases//documents/`.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * The piece of text from the `source` knowledge base document.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2FaqAnswer extends \Google\Model
     {
+        /**
+         * The piece of text from the `source` knowledge base document.
+         *
+         * @var string
+         */
+        public $answer;
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * The system's confidence score that this Knowledge answer is a good match
+         * for this conversational query, range from 0.0 (completely uncertain) to 1.0
+         * (completely certain).
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * A map that contains metadata about the answer and the document from which
+         * it originates.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The corresponding FAQ question.
+         *
+         * @var string
+         */
+        public $question;
+        /**
+         * Indicates which Knowledge Document this answer was extracted from. Format:
+         * `projects//locations//agent/knowledgeBases//documents/`.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * The piece of text from the `source` knowledge base document.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * The system's confidence score that this Knowledge answer is a good match
+         * for this conversational query, range from 0.0 (completely uncertain) to 1.0
+         * (completely certain).
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * A map that contains metadata about the answer and the document from which
+         * it originates.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The corresponding FAQ question.
+         *
+         * @param string $question
+         */
+        public function setQuestion($question)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestion()
+        {
+        }
+        /**
+         * Indicates which Knowledge Document this answer was extracted from. Format:
+         * `projects//locations//agent/knowledgeBases//documents/`.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2FaqAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * The system's confidence score that this Knowledge answer is a good match
-     * for this conversational query, range from 0.0 (completely uncertain) to 1.0
-     * (completely certain).
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * A map that contains metadata about the answer and the document from which
-     * it originates.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The corresponding FAQ question.
-     *
-     * @param string $question
-     */
-    public function setQuestion($question)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestion()
-    {
-    }
-    /**
-     * Indicates which Knowledge Document this answer was extracted from. Format:
-     * `projects//locations//agent/knowledgeBases//documents/`.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2FaqAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2FaqAnswer
     {
     }
 }

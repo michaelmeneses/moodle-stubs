@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSessionSparkApplicationStageAttemptTasksResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplicationStageAttemptTasks';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSessionSparkApplicationStageAttemptTasksRequest.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationStageAttemptTasksType = TaskData::class;
-    protected $sparkApplicationStageAttemptTasksDataType = 'array';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSessionSparkApplicationStageAttemptTasksRequest.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSessionSparkApplicationStageAttemptTasksResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplicationStageAttemptTasks';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSessionSparkApplicationStageAttemptTasksRequest.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationStageAttemptTasksType = TaskData::class;
+        protected $sparkApplicationStageAttemptTasksDataType = 'array';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSessionSparkApplicationStageAttemptTasksRequest.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. Data corresponding to tasks created by spark.
+         *
+         * @param TaskData[] $sparkApplicationStageAttemptTasks
+         */
+        public function setSparkApplicationStageAttemptTasks($sparkApplicationStageAttemptTasks)
+        {
+        }
+        /**
+         * @return TaskData[]
+         */
+        public function getSparkApplicationStageAttemptTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSessionSparkApplicationStageAttemptTasksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. Data corresponding to tasks created by spark.
-     *
-     * @param TaskData[] $sparkApplicationStageAttemptTasks
-     */
-    public function setSparkApplicationStageAttemptTasks($sparkApplicationStageAttemptTasks)
-    {
-    }
-    /**
-     * @return TaskData[]
-     */
-    public function getSparkApplicationStageAttemptTasks()
+    class Google_Service_Dataproc_SearchSessionSparkApplicationStageAttemptTasksResponse extends \Google\Service\Dataproc\SearchSessionSparkApplicationStageAttemptTasksResponse
     {
     }
 }

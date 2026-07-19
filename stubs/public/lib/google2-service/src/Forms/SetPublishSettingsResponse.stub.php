@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class SetPublishSettingsResponse extends \Google\Model
-{
-    /**
-     * Required. The ID of the Form. This is same as the Form.form_id field.
-     *
-     * @var string
-     */
-    public $formId;
-    protected $publishSettingsType = PublishSettings::class;
-    protected $publishSettingsDataType = '';
-    /**
-     * Required. The ID of the Form. This is same as the Form.form_id field.
-     *
-     * @param string $formId
-     */
-    public function setFormId($formId)
+namespace Google\Service\Forms {
+    class SetPublishSettingsResponse extends \Google\Model
     {
+        /**
+         * Required. The ID of the Form. This is same as the Form.form_id field.
+         *
+         * @var string
+         */
+        public $formId;
+        protected $publishSettingsType = PublishSettings::class;
+        protected $publishSettingsDataType = '';
+        /**
+         * Required. The ID of the Form. This is same as the Form.form_id field.
+         *
+         * @param string $formId
+         */
+        public function setFormId($formId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormId()
+        {
+        }
+        /**
+         * The publish settings of the form.
+         *
+         * @param PublishSettings $publishSettings
+         */
+        public function setPublishSettings(PublishSettings $publishSettings)
+        {
+        }
+        /**
+         * @return PublishSettings
+         */
+        public function getPublishSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\SetPublishSettingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormId()
-    {
-    }
-    /**
-     * The publish settings of the form.
-     *
-     * @param PublishSettings $publishSettings
-     */
-    public function setPublishSettings(PublishSettings $publishSettings)
-    {
-    }
-    /**
-     * @return PublishSettings
-     */
-    public function getPublishSettings()
+    class Google_Service_Forms_SetPublishSettingsResponse extends \Google\Service\Forms\SetPublishSettingsResponse
     {
     }
 }

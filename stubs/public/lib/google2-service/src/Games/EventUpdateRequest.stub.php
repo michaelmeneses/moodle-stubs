@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventUpdateRequest extends \Google\Model
-{
-    /**
-     * The ID of the event being modified in this update.
-     *
-     * @var string
-     */
-    public $definitionId;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventUpdateRequest`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The number of times this event occurred in this time period.
-     *
-     * @var string
-     */
-    public $updateCount;
-    /**
-     * The ID of the event being modified in this update.
-     *
-     * @param string $definitionId
-     */
-    public function setDefinitionId($definitionId)
+namespace Google\Service\Games {
+    class EventUpdateRequest extends \Google\Model
     {
+        /**
+         * The ID of the event being modified in this update.
+         *
+         * @var string
+         */
+        public $definitionId;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventUpdateRequest`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The number of times this event occurred in this time period.
+         *
+         * @var string
+         */
+        public $updateCount;
+        /**
+         * The ID of the event being modified in this update.
+         *
+         * @param string $definitionId
+         */
+        public function setDefinitionId($definitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinitionId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventUpdateRequest`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The number of times this event occurred in this time period.
+         *
+         * @param string $updateCount
+         */
+        public function setUpdateCount($updateCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\EventUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefinitionId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventUpdateRequest`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The number of times this event occurred in this time period.
-     *
-     * @param string $updateCount
-     */
-    public function setUpdateCount($updateCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateCount()
+    class Google_Service_Games_EventUpdateRequest extends \Google\Service\Games\EventUpdateRequest
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CreateAdAssetRequest extends \Google\Model
-{
-    protected $adAssetType = AdAsset::class;
-    protected $adAssetDataType = '';
-    /**
-     * Required. The ad asset to create. Only supports assets of AdAssetType
-     * `AD_ASSET_TYPE_YOUTUBE_VIDEO`.
-     *
-     * @param AdAsset $adAsset
-     */
-    public function setAdAsset(AdAsset $adAsset)
+namespace Google\Service\DisplayVideo {
+    class CreateAdAssetRequest extends \Google\Model
     {
+        protected $adAssetType = AdAsset::class;
+        protected $adAssetDataType = '';
+        /**
+         * Required. The ad asset to create. Only supports assets of AdAssetType
+         * `AD_ASSET_TYPE_YOUTUBE_VIDEO`.
+         *
+         * @param AdAsset $adAsset
+         */
+        public function setAdAsset(AdAsset $adAsset)
+        {
+        }
+        /**
+         * @return AdAsset
+         */
+        public function getAdAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdAsset
+     * Runtime class alias of \Google\Service\DisplayVideo\CreateAdAssetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdAsset()
+    class Google_Service_DisplayVideo_CreateAdAssetRequest extends \Google\Service\DisplayVideo\CreateAdAssetRequest
     {
     }
 }

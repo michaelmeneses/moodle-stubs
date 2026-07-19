@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOptionWorkerConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * @var float
-     */
-    public $memoryGb;
-    /**
-     * @var float
-     */
-    public $vcpuCount;
-    /**
-     * @param string
-     */
-    public function setDiskSizeGb($diskSizeGb)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOptionWorkerConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * @var float
+         */
+        public $memoryGb;
+        /**
+         * @var float
+         */
+        public $vcpuCount;
+        /**
+         * @param string
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setMemoryGb($memoryGb)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMemoryGb()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setVcpuCount($vcpuCount)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getVcpuCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOptionWorkerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setMemoryGb($memoryGb)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMemoryGb()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setVcpuCount($vcpuCount)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getVcpuCount()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOptionWorkerConfig extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptionsPoolOptionWorkerConfig
     {
     }
 }

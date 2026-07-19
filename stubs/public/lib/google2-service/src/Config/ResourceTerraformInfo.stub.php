@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ResourceTerraformInfo extends \Google\Model
-{
-    /**
-     * TF resource address that uniquely identifies this resource within this
-     * deployment.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * ID attribute of the TF resource
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * TF resource type
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * TF resource address that uniquely identifies this resource within this
-     * deployment.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Config {
+    class ResourceTerraformInfo extends \Google\Model
     {
+        /**
+         * TF resource address that uniquely identifies this resource within this
+         * deployment.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * ID attribute of the TF resource
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * TF resource type
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * TF resource address that uniquely identifies this resource within this
+         * deployment.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * ID attribute of the TF resource
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * TF resource type
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ResourceTerraformInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * ID attribute of the TF resource
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * TF resource type
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Config_ResourceTerraformInfo extends \Google\Service\Config\ResourceTerraformInfo
     {
     }
 }

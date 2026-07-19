@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1FieldTypeEnumType extends \Google\Collection
-{
-    protected $collection_key = 'allowedValues';
-    protected $allowedValuesType = GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue::class;
-    protected $allowedValuesDataType = 'array';
-    /**
-     * @param GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue[]
-     */
-    public function setAllowedValues($allowedValues)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1FieldTypeEnumType extends \Google\Collection
     {
+        protected $collection_key = 'allowedValues';
+        protected $allowedValuesType = GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue::class;
+        protected $allowedValuesDataType = 'array';
+        /**
+         * @param GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue[]
+         */
+        public function setAllowedValues($allowedValues)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue[]
+         */
+        public function getAllowedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1FieldTypeEnumType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedValues()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1FieldTypeEnumType extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1FieldTypeEnumType
     {
     }
 }

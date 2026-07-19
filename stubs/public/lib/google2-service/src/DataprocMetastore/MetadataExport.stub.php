@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MetadataExport extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $databaseDumpType;
-    /**
-     * @var string
-     */
-    public $destinationGcsUri;
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setDatabaseDumpType($databaseDumpType)
+namespace Google\Service\DataprocMetastore {
+    class MetadataExport extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $databaseDumpType;
+        /**
+         * @var string
+         */
+        public $destinationGcsUri;
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setDatabaseDumpType($databaseDumpType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseDumpType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDestinationGcsUri($destinationGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationGcsUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\MetadataExport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseDumpType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDestinationGcsUri($destinationGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationGcsUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_DataprocMetastore_MetadataExport extends \Google\Service\DataprocMetastore\MetadataExport
     {
     }
 }

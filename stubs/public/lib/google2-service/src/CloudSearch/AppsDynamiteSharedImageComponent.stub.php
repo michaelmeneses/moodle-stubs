@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedImageComponent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    protected $borderStyleType = AppsDynamiteSharedBorderStyle::class;
-    protected $borderStyleDataType = '';
-    public $borderStyle;
-    protected $cropStyleType = AppsDynamiteSharedImageCropStyle::class;
-    protected $cropStyleDataType = '';
-    public $cropStyle;
-    /**
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedImageComponent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        protected $borderStyleType = AppsDynamiteSharedBorderStyle::class;
+        protected $borderStyleDataType = '';
+        public $borderStyle;
+        protected $cropStyleType = AppsDynamiteSharedImageCropStyle::class;
+        protected $cropStyleDataType = '';
+        public $cropStyle;
+        /**
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedBorderStyle
+         */
+        public function setBorderStyle(AppsDynamiteSharedBorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedBorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedImageCropStyle
+         */
+        public function setCropStyle(AppsDynamiteSharedImageCropStyle $cropStyle)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedImageCropStyle
+         */
+        public function getCropStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedImageComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedBorderStyle
-     */
-    public function setBorderStyle(AppsDynamiteSharedBorderStyle $borderStyle)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedBorderStyle
-     */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedImageCropStyle
-     */
-    public function setCropStyle(AppsDynamiteSharedImageCropStyle $cropStyle)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedImageCropStyle
-     */
-    public function getCropStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
+    class Google_Service_CloudSearch_AppsDynamiteSharedImageComponent extends \Google\Service\CloudSearch\AppsDynamiteSharedImageComponent
     {
     }
 }

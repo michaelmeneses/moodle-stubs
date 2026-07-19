@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class UserBlogs extends \Google\Model
-{
-    /**
-     * The URL of the Blogs for this user.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The URL of the Blogs for this user.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
+namespace Google\Service\Blogger {
+    class UserBlogs extends \Google\Model
     {
+        /**
+         * The URL of the Blogs for this user.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The URL of the Blogs for this user.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\UserBlogs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelfLink()
+    class Google_Service_Blogger_UserBlogs extends \Google\Service\Blogger\UserBlogs
     {
     }
 }

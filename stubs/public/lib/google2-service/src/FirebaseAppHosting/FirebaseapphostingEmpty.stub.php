@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class FirebaseapphostingEmpty extends \Google\Model
-{
+namespace Google\Service\FirebaseAppHosting {
+    class FirebaseapphostingEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\FirebaseapphostingEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseAppHosting_FirebaseapphostingEmpty extends \Google\Service\FirebaseAppHosting\FirebaseapphostingEmpty
+    {
+    }
 }

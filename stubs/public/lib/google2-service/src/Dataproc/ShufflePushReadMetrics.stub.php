@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ShufflePushReadMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $corruptMergedBlockChunks;
-    /**
-     * @var string
-     */
-    public $localMergedBlocksFetched;
-    /**
-     * @var string
-     */
-    public $localMergedBytesRead;
-    /**
-     * @var string
-     */
-    public $localMergedChunksFetched;
-    /**
-     * @var string
-     */
-    public $mergedFetchFallbackCount;
-    /**
-     * @var string
-     */
-    public $remoteMergedBlocksFetched;
-    /**
-     * @var string
-     */
-    public $remoteMergedBytesRead;
-    /**
-     * @var string
-     */
-    public $remoteMergedChunksFetched;
-    /**
-     * @var string
-     */
-    public $remoteMergedReqsDuration;
-    /**
-     * @param string $corruptMergedBlockChunks
-     */
-    public function setCorruptMergedBlockChunks($corruptMergedBlockChunks)
+namespace Google\Service\Dataproc {
+    class ShufflePushReadMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $corruptMergedBlockChunks;
+        /**
+         * @var string
+         */
+        public $localMergedBlocksFetched;
+        /**
+         * @var string
+         */
+        public $localMergedBytesRead;
+        /**
+         * @var string
+         */
+        public $localMergedChunksFetched;
+        /**
+         * @var string
+         */
+        public $mergedFetchFallbackCount;
+        /**
+         * @var string
+         */
+        public $remoteMergedBlocksFetched;
+        /**
+         * @var string
+         */
+        public $remoteMergedBytesRead;
+        /**
+         * @var string
+         */
+        public $remoteMergedChunksFetched;
+        /**
+         * @var string
+         */
+        public $remoteMergedReqsDuration;
+        /**
+         * @param string $corruptMergedBlockChunks
+         */
+        public function setCorruptMergedBlockChunks($corruptMergedBlockChunks)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorruptMergedBlockChunks()
+        {
+        }
+        /**
+         * @param string $localMergedBlocksFetched
+         */
+        public function setLocalMergedBlocksFetched($localMergedBlocksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalMergedBlocksFetched()
+        {
+        }
+        /**
+         * @param string $localMergedBytesRead
+         */
+        public function setLocalMergedBytesRead($localMergedBytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalMergedBytesRead()
+        {
+        }
+        /**
+         * @param string $localMergedChunksFetched
+         */
+        public function setLocalMergedChunksFetched($localMergedChunksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalMergedChunksFetched()
+        {
+        }
+        /**
+         * @param string $mergedFetchFallbackCount
+         */
+        public function setMergedFetchFallbackCount($mergedFetchFallbackCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMergedFetchFallbackCount()
+        {
+        }
+        /**
+         * @param string $remoteMergedBlocksFetched
+         */
+        public function setRemoteMergedBlocksFetched($remoteMergedBlocksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteMergedBlocksFetched()
+        {
+        }
+        /**
+         * @param string $remoteMergedBytesRead
+         */
+        public function setRemoteMergedBytesRead($remoteMergedBytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteMergedBytesRead()
+        {
+        }
+        /**
+         * @param string $remoteMergedChunksFetched
+         */
+        public function setRemoteMergedChunksFetched($remoteMergedChunksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteMergedChunksFetched()
+        {
+        }
+        /**
+         * @param string $remoteMergedReqsDuration
+         */
+        public function setRemoteMergedReqsDuration($remoteMergedReqsDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteMergedReqsDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ShufflePushReadMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorruptMergedBlockChunks()
-    {
-    }
-    /**
-     * @param string $localMergedBlocksFetched
-     */
-    public function setLocalMergedBlocksFetched($localMergedBlocksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalMergedBlocksFetched()
-    {
-    }
-    /**
-     * @param string $localMergedBytesRead
-     */
-    public function setLocalMergedBytesRead($localMergedBytesRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalMergedBytesRead()
-    {
-    }
-    /**
-     * @param string $localMergedChunksFetched
-     */
-    public function setLocalMergedChunksFetched($localMergedChunksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalMergedChunksFetched()
-    {
-    }
-    /**
-     * @param string $mergedFetchFallbackCount
-     */
-    public function setMergedFetchFallbackCount($mergedFetchFallbackCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMergedFetchFallbackCount()
-    {
-    }
-    /**
-     * @param string $remoteMergedBlocksFetched
-     */
-    public function setRemoteMergedBlocksFetched($remoteMergedBlocksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteMergedBlocksFetched()
-    {
-    }
-    /**
-     * @param string $remoteMergedBytesRead
-     */
-    public function setRemoteMergedBytesRead($remoteMergedBytesRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteMergedBytesRead()
-    {
-    }
-    /**
-     * @param string $remoteMergedChunksFetched
-     */
-    public function setRemoteMergedChunksFetched($remoteMergedChunksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteMergedChunksFetched()
-    {
-    }
-    /**
-     * @param string $remoteMergedReqsDuration
-     */
-    public function setRemoteMergedReqsDuration($remoteMergedReqsDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteMergedReqsDuration()
+    class Google_Service_Dataproc_ShufflePushReadMetrics extends \Google\Service\Dataproc\ShufflePushReadMetrics
     {
     }
 }

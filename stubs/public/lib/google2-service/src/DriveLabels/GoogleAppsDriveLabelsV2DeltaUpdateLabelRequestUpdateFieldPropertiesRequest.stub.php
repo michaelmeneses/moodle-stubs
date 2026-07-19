@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldPropertiesRequest extends \Google\Model
-{
-    /**
-     * Required. The field to update.
-     *
-     * @var string
-     */
-    public $id;
-    protected $propertiesType = GoogleAppsDriveLabelsV2FieldProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `properties` is implied and should not be specified. A single `*`
-     * can be used as a short-hand for updating every field.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The field to update.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldPropertiesRequest extends \Google\Model
     {
+        /**
+         * Required. The field to update.
+         *
+         * @var string
+         */
+        public $id;
+        protected $propertiesType = GoogleAppsDriveLabelsV2FieldProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `properties` is implied and should not be specified. A single `*`
+         * can be used as a short-hand for updating every field.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The field to update.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. Basic field properties.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldProperties $properties
+         */
+        public function setProperties(GoogleAppsDriveLabelsV2FieldProperties $properties)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `properties` is implied and should not be specified. A single `*`
+         * can be used as a short-hand for updating every field.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldPropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Required. Basic field properties.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldProperties $properties
-     */
-    public function setProperties(GoogleAppsDriveLabelsV2FieldProperties $properties)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldProperties
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `properties` is implied and should not be specified. A single `*`
-     * can be used as a short-hand for updating every field.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldPropertiesRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldPropertiesRequest
     {
     }
 }

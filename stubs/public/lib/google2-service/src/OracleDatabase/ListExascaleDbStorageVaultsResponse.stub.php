@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListExascaleDbStorageVaultsResponse extends \Google\Collection
-{
-    protected $collection_key = 'exascaleDbStorageVaults';
-    protected $exascaleDbStorageVaultsType = ExascaleDbStorageVault::class;
-    protected $exascaleDbStorageVaultsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return. If present,
-     * the next page token can be provided to a subsequent
-     * ListExascaleDbStorageVaults call to list the next page. If empty, there are
-     * no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ExascaleDbStorageVaults.
-     *
-     * @param ExascaleDbStorageVault[] $exascaleDbStorageVaults
-     */
-    public function setExascaleDbStorageVaults($exascaleDbStorageVaults)
+namespace Google\Service\OracleDatabase {
+    class ListExascaleDbStorageVaultsResponse extends \Google\Collection
     {
+        protected $collection_key = 'exascaleDbStorageVaults';
+        protected $exascaleDbStorageVaultsType = ExascaleDbStorageVault::class;
+        protected $exascaleDbStorageVaultsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return. If present,
+         * the next page token can be provided to a subsequent
+         * ListExascaleDbStorageVaults call to list the next page. If empty, there are
+         * no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ExascaleDbStorageVaults.
+         *
+         * @param ExascaleDbStorageVault[] $exascaleDbStorageVaults
+         */
+        public function setExascaleDbStorageVaults($exascaleDbStorageVaults)
+        {
+        }
+        /**
+         * @return ExascaleDbStorageVault[]
+         */
+        public function getExascaleDbStorageVaults()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return. If present,
+         * the next page token can be provided to a subsequent
+         * ListExascaleDbStorageVaults call to list the next page. If empty, there are
+         * no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExascaleDbStorageVault[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListExascaleDbStorageVaultsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExascaleDbStorageVaults()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return. If present,
-     * the next page token can be provided to a subsequent
-     * ListExascaleDbStorageVaults call to list the next page. If empty, there are
-     * no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListExascaleDbStorageVaultsResponse extends \Google\Service\OracleDatabase\ListExascaleDbStorageVaultsResponse
     {
     }
 }

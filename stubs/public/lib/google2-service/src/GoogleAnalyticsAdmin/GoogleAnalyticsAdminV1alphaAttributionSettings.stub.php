@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAttributionSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $acquisitionConversionEventLookbackWindow;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $otherConversionEventLookbackWindow;
-    /**
-     * @var string
-     */
-    public $reportingAttributionModel;
-    /**
-     * @param string
-     */
-    public function setAcquisitionConversionEventLookbackWindow($acquisitionConversionEventLookbackWindow)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAttributionSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $acquisitionConversionEventLookbackWindow;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $otherConversionEventLookbackWindow;
+        /**
+         * @var string
+         */
+        public $reportingAttributionModel;
+        /**
+         * @param string
+         */
+        public function setAcquisitionConversionEventLookbackWindow($acquisitionConversionEventLookbackWindow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcquisitionConversionEventLookbackWindow()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOtherConversionEventLookbackWindow($otherConversionEventLookbackWindow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOtherConversionEventLookbackWindow()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportingAttributionModel($reportingAttributionModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingAttributionModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAttributionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcquisitionConversionEventLookbackWindow()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOtherConversionEventLookbackWindow($otherConversionEventLookbackWindow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOtherConversionEventLookbackWindow()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportingAttributionModel($reportingAttributionModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingAttributionModel()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAttributionSettings extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAttributionSettings
     {
     }
 }

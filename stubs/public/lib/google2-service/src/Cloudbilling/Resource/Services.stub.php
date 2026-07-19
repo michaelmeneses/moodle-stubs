@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling\Resource;
-
-/**
- * The "services" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbillingService = new Google\Service\Cloudbilling(...);
- *   $services = $cloudbillingService->services;
- *  </code>
- */
-class Services extends \Google\Service\Resource
-{
+namespace Google\Service\Cloudbilling\Resource {
+    use Google\Service\Cloudbilling\ListServicesResponse;
     /**
-     * Lists all public cloud services. (services.listServices)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. Defaults to 5000.
-     * @opt_param string pageToken A token identifying a page of results to return.
-     * This should be a `next_page_token` value returned from a previous
-     * `ListServices` call. If unspecified, the first page of results is returned.
-     * @return ListServicesResponse
-     * @throws \Google\Service\Exception
+     * The "services" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbillingService = new Google\Service\Cloudbilling(...);
+     *   $services = $cloudbillingService->services;
+     *  </code>
      */
-    public function listServices($optParams = [])
+    class Services extends \Google\Service\Resource
+    {
+        /**
+         * Lists all public cloud services. (services.listServices)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. Defaults to 5000.
+         * @opt_param string pageToken A token identifying a page of results to return.
+         * This should be a `next_page_token` value returned from a previous
+         * `ListServices` call. If unspecified, the first page of results is returned.
+         * @return ListServicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listServices($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Cloudbilling\Resource\Services registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Cloudbilling_Resource_Services extends \Google\Service\Cloudbilling\Resource\Services
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class I18nLanguageSnippet extends \Google\Model
-{
-    /**
-     * A short BCP-47 code that uniquely identifies a language.
-     *
-     * @var string
-     */
-    public $hl;
-    /**
-     * The human-readable name of the language in the language itself.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A short BCP-47 code that uniquely identifies a language.
-     *
-     * @param string $hl
-     */
-    public function setHl($hl)
+namespace Google\Service\YouTube {
+    class I18nLanguageSnippet extends \Google\Model
     {
+        /**
+         * A short BCP-47 code that uniquely identifies a language.
+         *
+         * @var string
+         */
+        public $hl;
+        /**
+         * The human-readable name of the language in the language itself.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A short BCP-47 code that uniquely identifies a language.
+         *
+         * @param string $hl
+         */
+        public function setHl($hl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHl()
+        {
+        }
+        /**
+         * The human-readable name of the language in the language itself.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\I18nLanguageSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHl()
-    {
-    }
-    /**
-     * The human-readable name of the language in the language itself.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_YouTube_I18nLanguageSnippet extends \Google\Service\YouTube\I18nLanguageSnippet
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class VolumeClaim extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $storage;
-    /**
-     * @param string
-     */
-    public function setStorage($storage)
+namespace Google\Service\CloudBuild {
+    class VolumeClaim extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $storage;
+        /**
+         * @param string
+         */
+        public function setStorage($storage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\VolumeClaim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorage()
+    class Google_Service_CloudBuild_VolumeClaim extends \Google\Service\CloudBuild\VolumeClaim
     {
     }
 }

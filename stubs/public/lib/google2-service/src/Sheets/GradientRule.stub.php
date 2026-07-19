@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class GradientRule extends \Google\Model
-{
-    protected $maxpointType = InterpolationPoint::class;
-    protected $maxpointDataType = '';
-    protected $midpointType = InterpolationPoint::class;
-    protected $midpointDataType = '';
-    protected $minpointType = InterpolationPoint::class;
-    protected $minpointDataType = '';
-    /**
-     * The final interpolation point.
-     *
-     * @param InterpolationPoint $maxpoint
-     */
-    public function setMaxpoint(InterpolationPoint $maxpoint)
+namespace Google\Service\Sheets {
+    class GradientRule extends \Google\Model
     {
+        protected $maxpointType = InterpolationPoint::class;
+        protected $maxpointDataType = '';
+        protected $midpointType = InterpolationPoint::class;
+        protected $midpointDataType = '';
+        protected $minpointType = InterpolationPoint::class;
+        protected $minpointDataType = '';
+        /**
+         * The final interpolation point.
+         *
+         * @param InterpolationPoint $maxpoint
+         */
+        public function setMaxpoint(InterpolationPoint $maxpoint)
+        {
+        }
+        /**
+         * @return InterpolationPoint
+         */
+        public function getMaxpoint()
+        {
+        }
+        /**
+         * An optional midway interpolation point.
+         *
+         * @param InterpolationPoint $midpoint
+         */
+        public function setMidpoint(InterpolationPoint $midpoint)
+        {
+        }
+        /**
+         * @return InterpolationPoint
+         */
+        public function getMidpoint()
+        {
+        }
+        /**
+         * The starting interpolation point.
+         *
+         * @param InterpolationPoint $minpoint
+         */
+        public function setMinpoint(InterpolationPoint $minpoint)
+        {
+        }
+        /**
+         * @return InterpolationPoint
+         */
+        public function getMinpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterpolationPoint
+     * Runtime class alias of \Google\Service\Sheets\GradientRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxpoint()
-    {
-    }
-    /**
-     * An optional midway interpolation point.
-     *
-     * @param InterpolationPoint $midpoint
-     */
-    public function setMidpoint(InterpolationPoint $midpoint)
-    {
-    }
-    /**
-     * @return InterpolationPoint
-     */
-    public function getMidpoint()
-    {
-    }
-    /**
-     * The starting interpolation point.
-     *
-     * @param InterpolationPoint $minpoint
-     */
-    public function setMinpoint(InterpolationPoint $minpoint)
-    {
-    }
-    /**
-     * @return InterpolationPoint
-     */
-    public function getMinpoint()
+    class Google_Service_Sheets_GradientRule extends \Google\Service\Sheets\GradientRule
     {
     }
 }

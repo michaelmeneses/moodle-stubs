@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableRowStyleSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to min_row_height.
-     *
-     * @var bool
-     */
-    public $minRowHeightSuggested;
-    /**
-     * Indicates if there was a suggested change to min_row_height.
-     *
-     * @param bool $minRowHeightSuggested
-     */
-    public function setMinRowHeightSuggested($minRowHeightSuggested)
+namespace Google\Service\Docs {
+    class TableRowStyleSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to min_row_height.
+         *
+         * @var bool
+         */
+        public $minRowHeightSuggested;
+        /**
+         * Indicates if there was a suggested change to min_row_height.
+         *
+         * @param bool $minRowHeightSuggested
+         */
+        public function setMinRowHeightSuggested($minRowHeightSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMinRowHeightSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\TableRowStyleSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinRowHeightSuggested()
+    class Google_Service_Docs_TableRowStyleSuggestionState extends \Google\Service\Docs\TableRowStyleSuggestionState
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentGitIntegrationSettings extends \Google\Model
-{
-    protected $githubSettingsType = GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings::class;
-    protected $githubSettingsDataType = '';
-    /**
-     * GitHub settings.
-     *
-     * @param GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings $githubSettings
-     */
-    public function setGithubSettings(GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings $githubSettings)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentGitIntegrationSettings extends \Google\Model
     {
+        protected $githubSettingsType = GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings::class;
+        protected $githubSettingsDataType = '';
+        /**
+         * GitHub settings.
+         *
+         * @param GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings $githubSettings
+         */
+        public function setGithubSettings(GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings $githubSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings
+         */
+        public function getGithubSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentGitIntegrationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGithubSettings()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentGitIntegrationSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentGitIntegrationSettings
     {
     }
 }

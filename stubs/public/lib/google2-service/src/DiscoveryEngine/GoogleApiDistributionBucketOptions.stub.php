@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleApiDistributionBucketOptions extends \Google\Model
-{
-    protected $explicitBucketsType = GoogleApiDistributionBucketOptionsExplicit::class;
-    protected $explicitBucketsDataType = '';
-    protected $exponentialBucketsType = GoogleApiDistributionBucketOptionsExponential::class;
-    protected $exponentialBucketsDataType = '';
-    protected $linearBucketsType = GoogleApiDistributionBucketOptionsLinear::class;
-    protected $linearBucketsDataType = '';
-    /**
-     * The explicit buckets.
-     *
-     * @param GoogleApiDistributionBucketOptionsExplicit $explicitBuckets
-     */
-    public function setExplicitBuckets(GoogleApiDistributionBucketOptionsExplicit $explicitBuckets)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleApiDistributionBucketOptions extends \Google\Model
     {
+        protected $explicitBucketsType = GoogleApiDistributionBucketOptionsExplicit::class;
+        protected $explicitBucketsDataType = '';
+        protected $exponentialBucketsType = GoogleApiDistributionBucketOptionsExponential::class;
+        protected $exponentialBucketsDataType = '';
+        protected $linearBucketsType = GoogleApiDistributionBucketOptionsLinear::class;
+        protected $linearBucketsDataType = '';
+        /**
+         * The explicit buckets.
+         *
+         * @param GoogleApiDistributionBucketOptionsExplicit $explicitBuckets
+         */
+        public function setExplicitBuckets(GoogleApiDistributionBucketOptionsExplicit $explicitBuckets)
+        {
+        }
+        /**
+         * @return GoogleApiDistributionBucketOptionsExplicit
+         */
+        public function getExplicitBuckets()
+        {
+        }
+        /**
+         * The exponential buckets.
+         *
+         * @param GoogleApiDistributionBucketOptionsExponential $exponentialBuckets
+         */
+        public function setExponentialBuckets(GoogleApiDistributionBucketOptionsExponential $exponentialBuckets)
+        {
+        }
+        /**
+         * @return GoogleApiDistributionBucketOptionsExponential
+         */
+        public function getExponentialBuckets()
+        {
+        }
+        /**
+         * The linear bucket.
+         *
+         * @param GoogleApiDistributionBucketOptionsLinear $linearBuckets
+         */
+        public function setLinearBuckets(GoogleApiDistributionBucketOptionsLinear $linearBuckets)
+        {
+        }
+        /**
+         * @return GoogleApiDistributionBucketOptionsLinear
+         */
+        public function getLinearBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiDistributionBucketOptionsExplicit
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleApiDistributionBucketOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplicitBuckets()
-    {
-    }
-    /**
-     * The exponential buckets.
-     *
-     * @param GoogleApiDistributionBucketOptionsExponential $exponentialBuckets
-     */
-    public function setExponentialBuckets(GoogleApiDistributionBucketOptionsExponential $exponentialBuckets)
-    {
-    }
-    /**
-     * @return GoogleApiDistributionBucketOptionsExponential
-     */
-    public function getExponentialBuckets()
-    {
-    }
-    /**
-     * The linear bucket.
-     *
-     * @param GoogleApiDistributionBucketOptionsLinear $linearBuckets
-     */
-    public function setLinearBuckets(GoogleApiDistributionBucketOptionsLinear $linearBuckets)
-    {
-    }
-    /**
-     * @return GoogleApiDistributionBucketOptionsLinear
-     */
-    public function getLinearBuckets()
+    class Google_Service_DiscoveryEngine_GoogleApiDistributionBucketOptions extends \Google\Service\DiscoveryEngine\GoogleApiDistributionBucketOptions
     {
     }
 }

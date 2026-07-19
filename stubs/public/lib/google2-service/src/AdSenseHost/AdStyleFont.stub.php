@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdStyleFont extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $family;
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @param string
-     */
-    public function setFamily($family)
+namespace Google\Service\AdSenseHost {
+    class AdStyleFont extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $family;
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @param string
+         */
+        public function setFamily($family)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamily()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdStyleFont registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamily()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
+    class Google_Service_AdSenseHost_AdStyleFont extends \Google\Service\AdSenseHost\AdStyleFont
     {
     }
 }

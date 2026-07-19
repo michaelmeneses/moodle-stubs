@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CampaignCreativeAssociation extends \Google\Model
-{
-    /**
-     * ID of the creative associated with the campaign. This is a required field.
-     *
-     * @var string
-     */
-    public $creativeId;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#campaignCreativeAssociation".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ID of the creative associated with the campaign. This is a required field.
-     *
-     * @param string $creativeId
-     */
-    public function setCreativeId($creativeId)
+namespace Google\Service\Dfareporting {
+    class CampaignCreativeAssociation extends \Google\Model
     {
+        /**
+         * ID of the creative associated with the campaign. This is a required field.
+         *
+         * @var string
+         */
+        public $creativeId;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#campaignCreativeAssociation".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ID of the creative associated with the campaign. This is a required field.
+         *
+         * @param string $creativeId
+         */
+        public function setCreativeId($creativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#campaignCreativeAssociation".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CampaignCreativeAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#campaignCreativeAssociation".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_CampaignCreativeAssociation extends \Google\Service\Dfareporting\CampaignCreativeAssociation
     {
     }
 }

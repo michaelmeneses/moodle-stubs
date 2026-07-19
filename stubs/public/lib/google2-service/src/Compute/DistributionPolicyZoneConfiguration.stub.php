@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DistributionPolicyZoneConfiguration extends \Google\Model
-{
-    /**
-     * The URL of thezone. The zone must exist in the region where the managed
-     * instance group is located.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * The URL of thezone. The zone must exist in the region where the managed
-     * instance group is located.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
+namespace Google\Service\Compute {
+    class DistributionPolicyZoneConfiguration extends \Google\Model
     {
+        /**
+         * The URL of thezone. The zone must exist in the region where the managed
+         * instance group is located.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * The URL of thezone. The zone must exist in the region where the managed
+         * instance group is located.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\DistributionPolicyZoneConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZone()
+    class Google_Service_Compute_DistributionPolicyZoneConfiguration extends \Google\Service\Compute\DistributionPolicyZoneConfiguration
     {
     }
 }

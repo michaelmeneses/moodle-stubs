@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides\Resource;
-
-/**
- * The "pages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $slidesService = new Google\Service\Slides(...);
- *   $pages = $slidesService->presentations_pages;
- *  </code>
- */
-class PresentationsPages extends \Google\Service\Resource
-{
+namespace Google\Service\Slides\Resource {
+    use Google\Service\Slides\Page;
+    use Google\Service\Slides\Thumbnail;
     /**
-     * Gets the latest version of the specified page in the presentation.
-     * (pages.get)
-     *
-     * @param string $presentationId The ID of the presentation to retrieve.
-     * @param string $pageObjectId The object ID of the page to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Page
-     * @throws \Google\Service\Exception
+     * The "pages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $slidesService = new Google\Service\Slides(...);
+     *   $pages = $slidesService->presentations_pages;
+     *  </code>
      */
-    public function get($presentationId, $pageObjectId, $optParams = [])
+    class PresentationsPages extends \Google\Service\Resource
     {
+        /**
+         * Gets the latest version of the specified page in the presentation.
+         * (pages.get)
+         *
+         * @param string $presentationId The ID of the presentation to retrieve.
+         * @param string $pageObjectId The object ID of the page to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function get($presentationId, $pageObjectId, $optParams = [])
+        {
+        }
+        /**
+         * Generates a thumbnail of the latest version of the specified page in the
+         * presentation and returns a URL to the thumbnail image. This request counts as
+         * an [expensive read
+         * request](https://developers.google.com/workspace/slides/limits) for quota
+         * purposes. (pages.getThumbnail)
+         *
+         * @param string $presentationId The ID of the presentation to retrieve.
+         * @param string $pageObjectId The object ID of the page whose thumbnail to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string thumbnailProperties.mimeType The optional mime type of the
+         * thumbnail image. If you don't specify the mime type, the mime type defaults
+         * to PNG.
+         * @opt_param string thumbnailProperties.thumbnailSize The optional thumbnail
+         * image size. If you don't specify the size, the server chooses a default size
+         * of the image.
+         * @return Thumbnail
+         * @throws \Google\Service\Exception
+         */
+        public function getThumbnail($presentationId, $pageObjectId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Generates a thumbnail of the latest version of the specified page in the
-     * presentation and returns a URL to the thumbnail image. This request counts as
-     * an [expensive read
-     * request](https://developers.google.com/workspace/slides/limits) for quota
-     * purposes. (pages.getThumbnail)
-     *
-     * @param string $presentationId The ID of the presentation to retrieve.
-     * @param string $pageObjectId The object ID of the page whose thumbnail to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string thumbnailProperties.mimeType The optional mime type of the
-     * thumbnail image. If you don't specify the mime type, the mime type defaults
-     * to PNG.
-     * @opt_param string thumbnailProperties.thumbnailSize The optional thumbnail
-     * image size. If you don't specify the size, the server chooses a default size
-     * of the image.
-     * @return Thumbnail
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Slides\Resource\PresentationsPages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThumbnail($presentationId, $pageObjectId, $optParams = [])
+    class Google_Service_Slides_Resource_PresentationsPages extends \Google\Service\Slides\Resource\PresentationsPages
     {
     }
 }

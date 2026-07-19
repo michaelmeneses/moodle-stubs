@@ -21,310 +21,319 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Name extends \Google\Model
-{
-    /**
-     * Output only. The display name formatted according to the locale specified
-     * by the viewer's account or the `Accept-Language` HTTP header.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The display name with the last name first formatted according
-     * to the locale specified by the viewer's account or the `Accept-Language`
-     * HTTP header.
-     *
-     * @var string
-     */
-    public $displayNameLastFirst;
-    /**
-     * The family name.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The given name.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * The honorific prefixes, such as `Mrs.` or `Dr.`
-     *
-     * @var string
-     */
-    public $honorificPrefix;
-    /**
-     * The honorific suffixes, such as `Jr.`
-     *
-     * @var string
-     */
-    public $honorificSuffix;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The middle name(s).
-     *
-     * @var string
-     */
-    public $middleName;
-    /**
-     * The family name spelled as it sounds.
-     *
-     * @var string
-     */
-    public $phoneticFamilyName;
-    /**
-     * The full name spelled as it sounds.
-     *
-     * @var string
-     */
-    public $phoneticFullName;
-    /**
-     * The given name spelled as it sounds.
-     *
-     * @var string
-     */
-    public $phoneticGivenName;
-    /**
-     * The honorific prefixes spelled as they sound.
-     *
-     * @var string
-     */
-    public $phoneticHonorificPrefix;
-    /**
-     * The honorific suffixes spelled as they sound.
-     *
-     * @var string
-     */
-    public $phoneticHonorificSuffix;
-    /**
-     * The middle name(s) spelled as they sound.
-     *
-     * @var string
-     */
-    public $phoneticMiddleName;
-    /**
-     * The free form name value.
-     *
-     * @var string
-     */
-    public $unstructuredName;
-    /**
-     * Output only. The display name formatted according to the locale specified
-     * by the viewer's account or the `Accept-Language` HTTP header.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\PeopleService {
+    class Name extends \Google\Model
     {
+        /**
+         * Output only. The display name formatted according to the locale specified
+         * by the viewer's account or the `Accept-Language` HTTP header.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The display name with the last name first formatted according
+         * to the locale specified by the viewer's account or the `Accept-Language`
+         * HTTP header.
+         *
+         * @var string
+         */
+        public $displayNameLastFirst;
+        /**
+         * The family name.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The given name.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * The honorific prefixes, such as `Mrs.` or `Dr.`
+         *
+         * @var string
+         */
+        public $honorificPrefix;
+        /**
+         * The honorific suffixes, such as `Jr.`
+         *
+         * @var string
+         */
+        public $honorificSuffix;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The middle name(s).
+         *
+         * @var string
+         */
+        public $middleName;
+        /**
+         * The family name spelled as it sounds.
+         *
+         * @var string
+         */
+        public $phoneticFamilyName;
+        /**
+         * The full name spelled as it sounds.
+         *
+         * @var string
+         */
+        public $phoneticFullName;
+        /**
+         * The given name spelled as it sounds.
+         *
+         * @var string
+         */
+        public $phoneticGivenName;
+        /**
+         * The honorific prefixes spelled as they sound.
+         *
+         * @var string
+         */
+        public $phoneticHonorificPrefix;
+        /**
+         * The honorific suffixes spelled as they sound.
+         *
+         * @var string
+         */
+        public $phoneticHonorificSuffix;
+        /**
+         * The middle name(s) spelled as they sound.
+         *
+         * @var string
+         */
+        public $phoneticMiddleName;
+        /**
+         * The free form name value.
+         *
+         * @var string
+         */
+        public $unstructuredName;
+        /**
+         * Output only. The display name formatted according to the locale specified
+         * by the viewer's account or the `Accept-Language` HTTP header.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The display name with the last name first formatted according
+         * to the locale specified by the viewer's account or the `Accept-Language`
+         * HTTP header.
+         *
+         * @param string $displayNameLastFirst
+         */
+        public function setDisplayNameLastFirst($displayNameLastFirst)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayNameLastFirst()
+        {
+        }
+        /**
+         * The family name.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The given name.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
+        /**
+         * The honorific prefixes, such as `Mrs.` or `Dr.`
+         *
+         * @param string $honorificPrefix
+         */
+        public function setHonorificPrefix($honorificPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHonorificPrefix()
+        {
+        }
+        /**
+         * The honorific suffixes, such as `Jr.`
+         *
+         * @param string $honorificSuffix
+         */
+        public function setHonorificSuffix($honorificSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHonorificSuffix()
+        {
+        }
+        /**
+         * Metadata about the name.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The middle name(s).
+         *
+         * @param string $middleName
+         */
+        public function setMiddleName($middleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMiddleName()
+        {
+        }
+        /**
+         * The family name spelled as it sounds.
+         *
+         * @param string $phoneticFamilyName
+         */
+        public function setPhoneticFamilyName($phoneticFamilyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticFamilyName()
+        {
+        }
+        /**
+         * The full name spelled as it sounds.
+         *
+         * @param string $phoneticFullName
+         */
+        public function setPhoneticFullName($phoneticFullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticFullName()
+        {
+        }
+        /**
+         * The given name spelled as it sounds.
+         *
+         * @param string $phoneticGivenName
+         */
+        public function setPhoneticGivenName($phoneticGivenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticGivenName()
+        {
+        }
+        /**
+         * The honorific prefixes spelled as they sound.
+         *
+         * @param string $phoneticHonorificPrefix
+         */
+        public function setPhoneticHonorificPrefix($phoneticHonorificPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticHonorificPrefix()
+        {
+        }
+        /**
+         * The honorific suffixes spelled as they sound.
+         *
+         * @param string $phoneticHonorificSuffix
+         */
+        public function setPhoneticHonorificSuffix($phoneticHonorificSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticHonorificSuffix()
+        {
+        }
+        /**
+         * The middle name(s) spelled as they sound.
+         *
+         * @param string $phoneticMiddleName
+         */
+        public function setPhoneticMiddleName($phoneticMiddleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticMiddleName()
+        {
+        }
+        /**
+         * The free form name value.
+         *
+         * @param string $unstructuredName
+         */
+        public function setUnstructuredName($unstructuredName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnstructuredName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\Name registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The display name with the last name first formatted according
-     * to the locale specified by the viewer's account or the `Accept-Language`
-     * HTTP header.
-     *
-     * @param string $displayNameLastFirst
-     */
-    public function setDisplayNameLastFirst($displayNameLastFirst)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayNameLastFirst()
-    {
-    }
-    /**
-     * The family name.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The given name.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
-    {
-    }
-    /**
-     * The honorific prefixes, such as `Mrs.` or `Dr.`
-     *
-     * @param string $honorificPrefix
-     */
-    public function setHonorificPrefix($honorificPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHonorificPrefix()
-    {
-    }
-    /**
-     * The honorific suffixes, such as `Jr.`
-     *
-     * @param string $honorificSuffix
-     */
-    public function setHonorificSuffix($honorificSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHonorificSuffix()
-    {
-    }
-    /**
-     * Metadata about the name.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The middle name(s).
-     *
-     * @param string $middleName
-     */
-    public function setMiddleName($middleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMiddleName()
-    {
-    }
-    /**
-     * The family name spelled as it sounds.
-     *
-     * @param string $phoneticFamilyName
-     */
-    public function setPhoneticFamilyName($phoneticFamilyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticFamilyName()
-    {
-    }
-    /**
-     * The full name spelled as it sounds.
-     *
-     * @param string $phoneticFullName
-     */
-    public function setPhoneticFullName($phoneticFullName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticFullName()
-    {
-    }
-    /**
-     * The given name spelled as it sounds.
-     *
-     * @param string $phoneticGivenName
-     */
-    public function setPhoneticGivenName($phoneticGivenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticGivenName()
-    {
-    }
-    /**
-     * The honorific prefixes spelled as they sound.
-     *
-     * @param string $phoneticHonorificPrefix
-     */
-    public function setPhoneticHonorificPrefix($phoneticHonorificPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticHonorificPrefix()
-    {
-    }
-    /**
-     * The honorific suffixes spelled as they sound.
-     *
-     * @param string $phoneticHonorificSuffix
-     */
-    public function setPhoneticHonorificSuffix($phoneticHonorificSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticHonorificSuffix()
-    {
-    }
-    /**
-     * The middle name(s) spelled as they sound.
-     *
-     * @param string $phoneticMiddleName
-     */
-    public function setPhoneticMiddleName($phoneticMiddleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticMiddleName()
-    {
-    }
-    /**
-     * The free form name value.
-     *
-     * @param string $unstructuredName
-     */
-    public function setUnstructuredName($unstructuredName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnstructuredName()
+    class Google_Service_PeopleService_Name extends \Google\Service\PeopleService\Name
     {
     }
 }

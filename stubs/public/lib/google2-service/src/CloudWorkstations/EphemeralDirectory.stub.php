@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class EphemeralDirectory extends \Google\Model
-{
-    protected $gcePdType = GcePersistentDisk::class;
-    protected $gcePdDataType = '';
-    /**
-     * Required. Location of this directory in the running workstation.
-     *
-     * @var string
-     */
-    public $mountPath;
-    /**
-     * An EphemeralDirectory backed by a Compute Engine persistent disk.
-     *
-     * @param GcePersistentDisk $gcePd
-     */
-    public function setGcePd(GcePersistentDisk $gcePd)
+namespace Google\Service\CloudWorkstations {
+    class EphemeralDirectory extends \Google\Model
     {
+        protected $gcePdType = GcePersistentDisk::class;
+        protected $gcePdDataType = '';
+        /**
+         * Required. Location of this directory in the running workstation.
+         *
+         * @var string
+         */
+        public $mountPath;
+        /**
+         * An EphemeralDirectory backed by a Compute Engine persistent disk.
+         *
+         * @param GcePersistentDisk $gcePd
+         */
+        public function setGcePd(GcePersistentDisk $gcePd)
+        {
+        }
+        /**
+         * @return GcePersistentDisk
+         */
+        public function getGcePd()
+        {
+        }
+        /**
+         * Required. Location of this directory in the running workstation.
+         *
+         * @param string $mountPath
+         */
+        public function setMountPath($mountPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcePersistentDisk
+     * Runtime class alias of \Google\Service\CloudWorkstations\EphemeralDirectory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcePd()
-    {
-    }
-    /**
-     * Required. Location of this directory in the running workstation.
-     *
-     * @param string $mountPath
-     */
-    public function setMountPath($mountPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMountPath()
+    class Google_Service_CloudWorkstations_EphemeralDirectory extends \Google\Service\CloudWorkstations\EphemeralDirectory
     {
     }
 }

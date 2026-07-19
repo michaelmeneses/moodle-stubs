@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ZwiebackSessionProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $zwiebackSessionId;
-    /**
-     * @param string
-     */
-    public function setZwiebackSessionId($zwiebackSessionId)
+namespace Google\Service\CloudSearch {
+    class ZwiebackSessionProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $zwiebackSessionId;
+        /**
+         * @param string
+         */
+        public function setZwiebackSessionId($zwiebackSessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZwiebackSessionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ZwiebackSessionProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZwiebackSessionId()
+    class Google_Service_CloudSearch_ZwiebackSessionProto extends \Google\Service\CloudSearch\ZwiebackSessionProto
     {
     }
 }

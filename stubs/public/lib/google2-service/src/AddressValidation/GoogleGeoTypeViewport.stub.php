@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AddressValidation;
-
-class GoogleGeoTypeViewport extends \Google\Model
-{
-    protected $highType = GoogleTypeLatLng::class;
-    protected $highDataType = '';
-    protected $lowType = GoogleTypeLatLng::class;
-    protected $lowDataType = '';
-    /**
-     * Required. The high point of the viewport.
-     *
-     * @param GoogleTypeLatLng $high
-     */
-    public function setHigh(GoogleTypeLatLng $high)
+namespace Google\Service\AddressValidation {
+    class GoogleGeoTypeViewport extends \Google\Model
     {
+        protected $highType = GoogleTypeLatLng::class;
+        protected $highDataType = '';
+        protected $lowType = GoogleTypeLatLng::class;
+        protected $lowDataType = '';
+        /**
+         * Required. The high point of the viewport.
+         *
+         * @param GoogleTypeLatLng $high
+         */
+        public function setHigh(GoogleTypeLatLng $high)
+        {
+        }
+        /**
+         * @return GoogleTypeLatLng
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * Required. The low point of the viewport.
+         *
+         * @param GoogleTypeLatLng $low
+         */
+        public function setLow(GoogleTypeLatLng $low)
+        {
+        }
+        /**
+         * @return GoogleTypeLatLng
+         */
+        public function getLow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeLatLng
+     * Runtime class alias of \Google\Service\AddressValidation\GoogleGeoTypeViewport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHigh()
-    {
-    }
-    /**
-     * Required. The low point of the viewport.
-     *
-     * @param GoogleTypeLatLng $low
-     */
-    public function setLow(GoogleTypeLatLng $low)
-    {
-    }
-    /**
-     * @return GoogleTypeLatLng
-     */
-    public function getLow()
+    class Google_Service_AddressValidation_GoogleGeoTypeViewport extends \Google\Service\AddressValidation\GoogleGeoTypeViewport
     {
     }
 }

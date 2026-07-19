@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1FetchReportResultsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * Pass this token to FetchReportResultsRequest.page_token to retrieve the
-     * next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reportMetadataType = GoogleCloudChannelV1ReportResultsMetadata::class;
-    protected $reportMetadataDataType = '';
-    protected $rowsType = GoogleCloudChannelV1Row::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Pass this token to FetchReportResultsRequest.page_token to retrieve the
-     * next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1FetchReportResultsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * Pass this token to FetchReportResultsRequest.page_token to retrieve the
+         * next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reportMetadataType = GoogleCloudChannelV1ReportResultsMetadata::class;
+        protected $reportMetadataDataType = '';
+        protected $rowsType = GoogleCloudChannelV1Row::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Pass this token to FetchReportResultsRequest.page_token to retrieve the
+         * next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The metadata for the report results (display name, columns, row count, and
+         * date ranges).
+         *
+         * @param GoogleCloudChannelV1ReportResultsMetadata $reportMetadata
+         */
+        public function setReportMetadata(GoogleCloudChannelV1ReportResultsMetadata $reportMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ReportResultsMetadata
+         */
+        public function getReportMetadata()
+        {
+        }
+        /**
+         * The report's lists of values. Each row follows the settings and ordering of
+         * the columns from `report_metadata`.
+         *
+         * @param GoogleCloudChannelV1Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Row[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1FetchReportResultsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The metadata for the report results (display name, columns, row count, and
-     * date ranges).
-     *
-     * @param GoogleCloudChannelV1ReportResultsMetadata $reportMetadata
-     */
-    public function setReportMetadata(GoogleCloudChannelV1ReportResultsMetadata $reportMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1ReportResultsMetadata
-     */
-    public function getReportMetadata()
-    {
-    }
-    /**
-     * The report's lists of values. Each row follows the settings and ordering of
-     * the columns from `report_metadata`.
-     *
-     * @param GoogleCloudChannelV1Row[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Row[]
-     */
-    public function getRows()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1FetchReportResultsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1FetchReportResultsResponse
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class X509CertificateDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $expiryTime;
-    /**
-     * @var string
-     */
-    public $issuer;
-    /**
-     * @var string
-     */
-    public $publicKeyType;
-    /**
-     * @var string
-     */
-    public $signatureAlgorithm;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $subject;
-    /**
-     * @param string
-     */
-    public function setExpiryTime($expiryTime)
+namespace Google\Service\CloudIot {
+    class X509CertificateDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $expiryTime;
+        /**
+         * @var string
+         */
+        public $issuer;
+        /**
+         * @var string
+         */
+        public $publicKeyType;
+        /**
+         * @var string
+         */
+        public $signatureAlgorithm;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $subject;
+        /**
+         * @param string
+         */
+        public function setExpiryTime($expiryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIssuer($issuer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuer()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublicKeyType($publicKeyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKeyType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignatureAlgorithm($signatureAlgorithm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignatureAlgorithm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\X509CertificateDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiryTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIssuer($issuer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuer()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublicKeyType($publicKeyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKeyType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignatureAlgorithm($signatureAlgorithm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignatureAlgorithm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
+    class Google_Service_CloudIot_X509CertificateDetails extends \Google\Service\CloudIot\X509CertificateDetails
     {
     }
 }

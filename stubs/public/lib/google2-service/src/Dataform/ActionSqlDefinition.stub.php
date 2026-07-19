@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ActionSqlDefinition extends \Google\Model
-{
-    protected $errorTableType = ActionErrorTable::class;
-    protected $errorTableDataType = '';
-    protected $loadConfigType = ActionLoadConfig::class;
-    protected $loadConfigDataType = '';
-    /**
-     * The SQL query representing the data preparation steps. Formatted as a Pipe
-     * SQL query statement.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Error table configuration,
-     *
-     * @param ActionErrorTable $errorTable
-     */
-    public function setErrorTable(ActionErrorTable $errorTable)
+namespace Google\Service\Dataform {
+    class ActionSqlDefinition extends \Google\Model
     {
+        protected $errorTableType = ActionErrorTable::class;
+        protected $errorTableDataType = '';
+        protected $loadConfigType = ActionLoadConfig::class;
+        protected $loadConfigDataType = '';
+        /**
+         * The SQL query representing the data preparation steps. Formatted as a Pipe
+         * SQL query statement.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Error table configuration,
+         *
+         * @param ActionErrorTable $errorTable
+         */
+        public function setErrorTable(ActionErrorTable $errorTable)
+        {
+        }
+        /**
+         * @return ActionErrorTable
+         */
+        public function getErrorTable()
+        {
+        }
+        /**
+         * Load configuration.
+         *
+         * @param ActionLoadConfig $loadConfig
+         */
+        public function setLoadConfig(ActionLoadConfig $loadConfig)
+        {
+        }
+        /**
+         * @return ActionLoadConfig
+         */
+        public function getLoadConfig()
+        {
+        }
+        /**
+         * The SQL query representing the data preparation steps. Formatted as a Pipe
+         * SQL query statement.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActionErrorTable
+     * Runtime class alias of \Google\Service\Dataform\ActionSqlDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorTable()
-    {
-    }
-    /**
-     * Load configuration.
-     *
-     * @param ActionLoadConfig $loadConfig
-     */
-    public function setLoadConfig(ActionLoadConfig $loadConfig)
-    {
-    }
-    /**
-     * @return ActionLoadConfig
-     */
-    public function getLoadConfig()
-    {
-    }
-    /**
-     * The SQL query representing the data preparation steps. Formatted as a Pipe
-     * SQL query statement.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_Dataform_ActionSqlDefinition extends \Google\Service\Dataform\ActionSqlDefinition
     {
     }
 }

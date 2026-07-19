@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoApiprotosV2RepresentativeInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'officials';
-    protected $divisionsType = CivicinfoSchemaV2GeographicDivision::class;
-    protected $divisionsDataType = 'map';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $normalizedInputType = CivicinfoSchemaV2SimpleAddressType::class;
-    protected $normalizedInputDataType = '';
-    protected $officesType = CivicinfoSchemaV2Office::class;
-    protected $officesDataType = 'array';
-    protected $officialsType = CivicinfoSchemaV2Official::class;
-    protected $officialsDataType = 'array';
-    /**
-     * @param CivicinfoSchemaV2GeographicDivision[]
-     */
-    public function setDivisions($divisions)
+namespace Google\Service\CivicInfo {
+    class CivicinfoApiprotosV2RepresentativeInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'officials';
+        protected $divisionsType = CivicinfoSchemaV2GeographicDivision::class;
+        protected $divisionsDataType = 'map';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $normalizedInputType = CivicinfoSchemaV2SimpleAddressType::class;
+        protected $normalizedInputDataType = '';
+        protected $officesType = CivicinfoSchemaV2Office::class;
+        protected $officesDataType = 'array';
+        protected $officialsType = CivicinfoSchemaV2Official::class;
+        protected $officialsDataType = 'array';
+        /**
+         * @param CivicinfoSchemaV2GeographicDivision[]
+         */
+        public function setDivisions($divisions)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2GeographicDivision[]
+         */
+        public function getDivisions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param CivicinfoSchemaV2SimpleAddressType
+         */
+        public function setNormalizedInput(CivicinfoSchemaV2SimpleAddressType $normalizedInput)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2SimpleAddressType
+         */
+        public function getNormalizedInput()
+        {
+        }
+        /**
+         * @param CivicinfoSchemaV2Office[]
+         */
+        public function setOffices($offices)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2Office[]
+         */
+        public function getOffices()
+        {
+        }
+        /**
+         * @param CivicinfoSchemaV2Official[]
+         */
+        public function setOfficials($officials)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2Official[]
+         */
+        public function getOfficials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CivicinfoSchemaV2GeographicDivision[]
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoApiprotosV2RepresentativeInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDivisions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param CivicinfoSchemaV2SimpleAddressType
-     */
-    public function setNormalizedInput(CivicinfoSchemaV2SimpleAddressType $normalizedInput)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2SimpleAddressType
-     */
-    public function getNormalizedInput()
-    {
-    }
-    /**
-     * @param CivicinfoSchemaV2Office[]
-     */
-    public function setOffices($offices)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2Office[]
-     */
-    public function getOffices()
-    {
-    }
-    /**
-     * @param CivicinfoSchemaV2Official[]
-     */
-    public function setOfficials($officials)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2Official[]
-     */
-    public function getOfficials()
+    class Google_Service_CivicInfo_CivicinfoApiprotosV2RepresentativeInfoResponse extends \Google\Service\CivicInfo\CivicinfoApiprotosV2RepresentativeInfoResponse
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareHostConfig extends \Google\Collection
-{
-    protected $collection_key = 'ntpServers';
-    /**
-     * DNS search domains.
-     *
-     * @var string[]
-     */
-    public $dnsSearchDomains;
-    /**
-     * DNS servers.
-     *
-     * @var string[]
-     */
-    public $dnsServers;
-    /**
-     * NTP servers.
-     *
-     * @var string[]
-     */
-    public $ntpServers;
-    /**
-     * DNS search domains.
-     *
-     * @param string[] $dnsSearchDomains
-     */
-    public function setDnsSearchDomains($dnsSearchDomains)
+namespace Google\Service\GKEOnPrem {
+    class VmwareHostConfig extends \Google\Collection
     {
+        protected $collection_key = 'ntpServers';
+        /**
+         * DNS search domains.
+         *
+         * @var string[]
+         */
+        public $dnsSearchDomains;
+        /**
+         * DNS servers.
+         *
+         * @var string[]
+         */
+        public $dnsServers;
+        /**
+         * NTP servers.
+         *
+         * @var string[]
+         */
+        public $ntpServers;
+        /**
+         * DNS search domains.
+         *
+         * @param string[] $dnsSearchDomains
+         */
+        public function setDnsSearchDomains($dnsSearchDomains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDnsSearchDomains()
+        {
+        }
+        /**
+         * DNS servers.
+         *
+         * @param string[] $dnsServers
+         */
+        public function setDnsServers($dnsServers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDnsServers()
+        {
+        }
+        /**
+         * NTP servers.
+         *
+         * @param string[] $ntpServers
+         */
+        public function setNtpServers($ntpServers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNtpServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareHostConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsSearchDomains()
-    {
-    }
-    /**
-     * DNS servers.
-     *
-     * @param string[] $dnsServers
-     */
-    public function setDnsServers($dnsServers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDnsServers()
-    {
-    }
-    /**
-     * NTP servers.
-     *
-     * @param string[] $ntpServers
-     */
-    public function setNtpServers($ntpServers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNtpServers()
+    class Google_Service_GKEOnPrem_VmwareHostConfig extends \Google\Service\GKEOnPrem\VmwareHostConfig
     {
     }
 }

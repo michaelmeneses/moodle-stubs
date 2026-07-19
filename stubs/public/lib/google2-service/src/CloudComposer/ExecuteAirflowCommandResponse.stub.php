@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ExecuteAirflowCommandResponse extends \Google\Model
-{
-    /**
-     * Error message. Empty if there was no error.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * The unique ID of the command execution for polling.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * The name of the pod where the command is executed.
-     *
-     * @var string
-     */
-    public $pod;
-    /**
-     * The namespace of the pod where the command is executed.
-     *
-     * @var string
-     */
-    public $podNamespace;
-    /**
-     * Error message. Empty if there was no error.
-     *
-     * @param string $error
-     */
-    public function setError($error)
+namespace Google\Service\CloudComposer {
+    class ExecuteAirflowCommandResponse extends \Google\Model
     {
+        /**
+         * Error message. Empty if there was no error.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * The unique ID of the command execution for polling.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * The name of the pod where the command is executed.
+         *
+         * @var string
+         */
+        public $pod;
+        /**
+         * The namespace of the pod where the command is executed.
+         *
+         * @var string
+         */
+        public $podNamespace;
+        /**
+         * Error message. Empty if there was no error.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The unique ID of the command execution for polling.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * The name of the pod where the command is executed.
+         *
+         * @param string $pod
+         */
+        public function setPod($pod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPod()
+        {
+        }
+        /**
+         * The namespace of the pod where the command is executed.
+         *
+         * @param string $podNamespace
+         */
+        public function setPodNamespace($podNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\ExecuteAirflowCommandResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The unique ID of the command execution for polling.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * The name of the pod where the command is executed.
-     *
-     * @param string $pod
-     */
-    public function setPod($pod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPod()
-    {
-    }
-    /**
-     * The namespace of the pod where the command is executed.
-     *
-     * @param string $podNamespace
-     */
-    public function setPodNamespace($podNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodNamespace()
+    class Google_Service_CloudComposer_ExecuteAirflowCommandResponse extends \Google\Service\CloudComposer\ExecuteAirflowCommandResponse
     {
     }
 }

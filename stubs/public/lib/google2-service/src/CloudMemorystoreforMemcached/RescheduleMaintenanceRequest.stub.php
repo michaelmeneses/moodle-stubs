@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class RescheduleMaintenanceRequest extends \Google\Model
-{
-    /**
-     * Not set.
-     */
-    public const RESCHEDULE_TYPE_RESCHEDULE_TYPE_UNSPECIFIED = 'RESCHEDULE_TYPE_UNSPECIFIED';
-    /**
-     * If the user wants to schedule the maintenance to happen now.
-     */
-    public const RESCHEDULE_TYPE_IMMEDIATE = 'IMMEDIATE';
-    /**
-     * If the user wants to use the existing maintenance policy to find the next
-     * available window.
-     */
-    public const RESCHEDULE_TYPE_NEXT_AVAILABLE_WINDOW = 'NEXT_AVAILABLE_WINDOW';
-    /**
-     * If the user wants to reschedule the maintenance to a specific time.
-     */
-    public const RESCHEDULE_TYPE_SPECIFIC_TIME = 'SPECIFIC_TIME';
-    /**
-     * Required. If reschedule type is SPECIFIC_TIME, must set up schedule_time as
-     * well.
-     *
-     * @var string
-     */
-    public $rescheduleType;
-    /**
-     * Timestamp when the maintenance shall be rescheduled to if
-     * reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for example
-     * `2012-11-15T16:19:00.094Z`.
-     *
-     * @var string
-     */
-    public $scheduleTime;
-    /**
-     * Required. If reschedule type is SPECIFIC_TIME, must set up schedule_time as
-     * well.
-     *
-     * Accepted values: RESCHEDULE_TYPE_UNSPECIFIED, IMMEDIATE,
-     * NEXT_AVAILABLE_WINDOW, SPECIFIC_TIME
-     *
-     * @param self::RESCHEDULE_TYPE_* $rescheduleType
-     */
-    public function setRescheduleType($rescheduleType)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class RescheduleMaintenanceRequest extends \Google\Model
     {
+        /**
+         * Not set.
+         */
+        public const RESCHEDULE_TYPE_RESCHEDULE_TYPE_UNSPECIFIED = 'RESCHEDULE_TYPE_UNSPECIFIED';
+        /**
+         * If the user wants to schedule the maintenance to happen now.
+         */
+        public const RESCHEDULE_TYPE_IMMEDIATE = 'IMMEDIATE';
+        /**
+         * If the user wants to use the existing maintenance policy to find the next
+         * available window.
+         */
+        public const RESCHEDULE_TYPE_NEXT_AVAILABLE_WINDOW = 'NEXT_AVAILABLE_WINDOW';
+        /**
+         * If the user wants to reschedule the maintenance to a specific time.
+         */
+        public const RESCHEDULE_TYPE_SPECIFIC_TIME = 'SPECIFIC_TIME';
+        /**
+         * Required. If reschedule type is SPECIFIC_TIME, must set up schedule_time as
+         * well.
+         *
+         * @var string
+         */
+        public $rescheduleType;
+        /**
+         * Timestamp when the maintenance shall be rescheduled to if
+         * reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for example
+         * `2012-11-15T16:19:00.094Z`.
+         *
+         * @var string
+         */
+        public $scheduleTime;
+        /**
+         * Required. If reschedule type is SPECIFIC_TIME, must set up schedule_time as
+         * well.
+         *
+         * Accepted values: RESCHEDULE_TYPE_UNSPECIFIED, IMMEDIATE,
+         * NEXT_AVAILABLE_WINDOW, SPECIFIC_TIME
+         *
+         * @param self::RESCHEDULE_TYPE_* $rescheduleType
+         */
+        public function setRescheduleType($rescheduleType)
+        {
+        }
+        /**
+         * @return self::RESCHEDULE_TYPE_*
+         */
+        public function getRescheduleType()
+        {
+        }
+        /**
+         * Timestamp when the maintenance shall be rescheduled to if
+         * reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for example
+         * `2012-11-15T16:19:00.094Z`.
+         *
+         * @param string $scheduleTime
+         */
+        public function setScheduleTime($scheduleTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduleTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::RESCHEDULE_TYPE_*
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\RescheduleMaintenanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRescheduleType()
-    {
-    }
-    /**
-     * Timestamp when the maintenance shall be rescheduled to if
-     * reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for example
-     * `2012-11-15T16:19:00.094Z`.
-     *
-     * @param string $scheduleTime
-     */
-    public function setScheduleTime($scheduleTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduleTime()
+    class Google_Service_CloudMemorystoreforMemcached_RescheduleMaintenanceRequest extends \Google\Service\CloudMemorystoreforMemcached\RescheduleMaintenanceRequest
     {
     }
 }

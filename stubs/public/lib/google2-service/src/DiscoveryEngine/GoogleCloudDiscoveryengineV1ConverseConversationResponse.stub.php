@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ConverseConversationResponse extends \Google\Collection
-{
-    protected $collection_key = 'searchResults';
-    protected $conversationType = GoogleCloudDiscoveryengineV1Conversation::class;
-    protected $conversationDataType = '';
-    protected $replyType = GoogleCloudDiscoveryengineV1Reply::class;
-    protected $replyDataType = '';
-    protected $searchResultsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResult::class;
-    protected $searchResultsDataType = 'array';
-    /**
-     * Updated conversation including the answer.
-     *
-     * @param GoogleCloudDiscoveryengineV1Conversation $conversation
-     */
-    public function setConversation(GoogleCloudDiscoveryengineV1Conversation $conversation)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ConverseConversationResponse extends \Google\Collection
     {
+        protected $collection_key = 'searchResults';
+        protected $conversationType = GoogleCloudDiscoveryengineV1Conversation::class;
+        protected $conversationDataType = '';
+        protected $replyType = GoogleCloudDiscoveryengineV1Reply::class;
+        protected $replyDataType = '';
+        protected $searchResultsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResult::class;
+        protected $searchResultsDataType = 'array';
+        /**
+         * Updated conversation including the answer.
+         *
+         * @param GoogleCloudDiscoveryengineV1Conversation $conversation
+         */
+        public function setConversation(GoogleCloudDiscoveryengineV1Conversation $conversation)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Conversation
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * Answer to the current query.
+         *
+         * @param GoogleCloudDiscoveryengineV1Reply $reply
+         */
+        public function setReply(GoogleCloudDiscoveryengineV1Reply $reply)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Reply
+         */
+        public function getReply()
+        {
+        }
+        /**
+         * Search Results.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSearchResult[] $searchResults
+         */
+        public function setSearchResults($searchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSearchResult[]
+         */
+        public function getSearchResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Conversation
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConverseConversationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversation()
-    {
-    }
-    /**
-     * Answer to the current query.
-     *
-     * @param GoogleCloudDiscoveryengineV1Reply $reply
-     */
-    public function setReply(GoogleCloudDiscoveryengineV1Reply $reply)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Reply
-     */
-    public function getReply()
-    {
-    }
-    /**
-     * Search Results.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSearchResult[] $searchResults
-     */
-    public function setSearchResults($searchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSearchResult[]
-     */
-    public function getSearchResults()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ConverseConversationResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConverseConversationResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Base2Exponent extends \Google\Model
-{
-    /**
-     * Must be greater than 0.
-     *
-     * @var int
-     */
-    public $numberOfBuckets;
-    /**
-     * Must be between -3 and 3. This forces the growth factor of the bucket
-     * boundaries to be between `2^(1/8)` and `256`.
-     *
-     * @var int
-     */
-    public $scale;
-    /**
-     * Must be greater than 0.
-     *
-     * @param int $numberOfBuckets
-     */
-    public function setNumberOfBuckets($numberOfBuckets)
+namespace Google\Service\Dataflow {
+    class Base2Exponent extends \Google\Model
     {
+        /**
+         * Must be greater than 0.
+         *
+         * @var int
+         */
+        public $numberOfBuckets;
+        /**
+         * Must be between -3 and 3. This forces the growth factor of the bucket
+         * boundaries to be between `2^(1/8)` and `256`.
+         *
+         * @var int
+         */
+        public $scale;
+        /**
+         * Must be greater than 0.
+         *
+         * @param int $numberOfBuckets
+         */
+        public function setNumberOfBuckets($numberOfBuckets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberOfBuckets()
+        {
+        }
+        /**
+         * Must be between -3 and 3. This forces the growth factor of the bucket
+         * boundaries to be between `2^(1/8)` and `256`.
+         *
+         * @param int $scale
+         */
+        public function setScale($scale)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScale()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\Base2Exponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumberOfBuckets()
-    {
-    }
-    /**
-     * Must be between -3 and 3. This forces the growth factor of the bucket
-     * boundaries to be between `2^(1/8)` and `256`.
-     *
-     * @param int $scale
-     */
-    public function setScale($scale)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScale()
+    class Google_Service_Dataflow_Base2Exponent extends \Google\Service\Dataflow\Base2Exponent
     {
     }
 }

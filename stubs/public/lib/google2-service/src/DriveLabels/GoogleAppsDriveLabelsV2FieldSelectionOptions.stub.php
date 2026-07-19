@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldSelectionOptions extends \Google\Collection
-{
-    protected $collection_key = 'choices';
-    protected $choicesType = GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice::class;
-    protected $choicesDataType = 'array';
-    protected $listOptionsType = GoogleAppsDriveLabelsV2FieldListOptions::class;
-    protected $listOptionsDataType = '';
-    /**
-     * The options available for this selection field. The list order is
-     * consistent, and modified with `insert_before_choice`.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice[] $choices
-     */
-    public function setChoices($choices)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldSelectionOptions extends \Google\Collection
     {
+        protected $collection_key = 'choices';
+        protected $choicesType = GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice::class;
+        protected $choicesDataType = 'array';
+        protected $listOptionsType = GoogleAppsDriveLabelsV2FieldListOptions::class;
+        protected $listOptionsDataType = '';
+        /**
+         * The options available for this selection field. The list order is
+         * consistent, and modified with `insert_before_choice`.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice[] $choices
+         */
+        public function setChoices($choices)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice[]
+         */
+        public function getChoices()
+        {
+        }
+        /**
+         * When specified, indicates this field supports a list of values. Once the
+         * field is published, this cannot be changed.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldListOptions $listOptions
+         */
+        public function setListOptions(GoogleAppsDriveLabelsV2FieldListOptions $listOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldListOptions
+         */
+        public function getListOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2FieldSelectionOptionsChoice[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChoices()
-    {
-    }
-    /**
-     * When specified, indicates this field supports a list of values. Once the
-     * field is published, this cannot be changed.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldListOptions $listOptions
-     */
-    public function setListOptions(GoogleAppsDriveLabelsV2FieldListOptions $listOptions)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldListOptions
-     */
-    public function getListOptions()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldSelectionOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptions
     {
     }
 }

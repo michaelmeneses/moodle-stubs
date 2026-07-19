@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaConnectorRunEntityRunProgress extends \Google\Model
-{
-    /**
-     * The current progress.
-     *
-     * @var string
-     */
-    public $currentCount;
-    /**
-     * Derived. The percentile of the progress.current_count / total_count. The
-     * value is between [0, 1.0] inclusive.
-     *
-     * @var float
-     */
-    public $percentile;
-    /**
-     * The total.
-     *
-     * @var string
-     */
-    public $totalCount;
-    /**
-     * The current progress.
-     *
-     * @param string $currentCount
-     */
-    public function setCurrentCount($currentCount)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaConnectorRunEntityRunProgress extends \Google\Model
     {
+        /**
+         * The current progress.
+         *
+         * @var string
+         */
+        public $currentCount;
+        /**
+         * Derived. The percentile of the progress.current_count / total_count. The
+         * value is between [0, 1.0] inclusive.
+         *
+         * @var float
+         */
+        public $percentile;
+        /**
+         * The total.
+         *
+         * @var string
+         */
+        public $totalCount;
+        /**
+         * The current progress.
+         *
+         * @param string $currentCount
+         */
+        public function setCurrentCount($currentCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentCount()
+        {
+        }
+        /**
+         * Derived. The percentile of the progress.current_count / total_count. The
+         * value is between [0, 1.0] inclusive.
+         *
+         * @param float $percentile
+         */
+        public function setPercentile($percentile)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPercentile()
+        {
+        }
+        /**
+         * The total.
+         *
+         * @param string $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaConnectorRunEntityRunProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentCount()
-    {
-    }
-    /**
-     * Derived. The percentile of the progress.current_count / total_count. The
-     * value is between [0, 1.0] inclusive.
-     *
-     * @param float $percentile
-     */
-    public function setPercentile($percentile)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPercentile()
-    {
-    }
-    /**
-     * The total.
-     *
-     * @param string $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaConnectorRunEntityRunProgress extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaConnectorRunEntityRunProgress
     {
     }
 }

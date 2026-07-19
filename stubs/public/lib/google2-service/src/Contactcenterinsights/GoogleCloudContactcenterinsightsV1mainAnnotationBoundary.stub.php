@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainAnnotationBoundary extends \Google\Model
-{
-    /**
-     * The index in the sequence of transcribed pieces of the conversation where
-     * the boundary is located. This index starts at zero.
-     *
-     * @var int
-     */
-    public $transcriptIndex;
-    /**
-     * The word index of this boundary with respect to the first word in the
-     * transcript piece. This index starts at zero.
-     *
-     * @var int
-     */
-    public $wordIndex;
-    /**
-     * The index in the sequence of transcribed pieces of the conversation where
-     * the boundary is located. This index starts at zero.
-     *
-     * @param int $transcriptIndex
-     */
-    public function setTranscriptIndex($transcriptIndex)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainAnnotationBoundary extends \Google\Model
     {
+        /**
+         * The index in the sequence of transcribed pieces of the conversation where
+         * the boundary is located. This index starts at zero.
+         *
+         * @var int
+         */
+        public $transcriptIndex;
+        /**
+         * The word index of this boundary with respect to the first word in the
+         * transcript piece. This index starts at zero.
+         *
+         * @var int
+         */
+        public $wordIndex;
+        /**
+         * The index in the sequence of transcribed pieces of the conversation where
+         * the boundary is located. This index starts at zero.
+         *
+         * @param int $transcriptIndex
+         */
+        public function setTranscriptIndex($transcriptIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTranscriptIndex()
+        {
+        }
+        /**
+         * The word index of this boundary with respect to the first word in the
+         * transcript piece. This index starts at zero.
+         *
+         * @param int $wordIndex
+         */
+        public function setWordIndex($wordIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWordIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnnotationBoundary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTranscriptIndex()
-    {
-    }
-    /**
-     * The word index of this boundary with respect to the first word in the
-     * transcript piece. This index starts at zero.
-     *
-     * @param int $wordIndex
-     */
-    public function setWordIndex($wordIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWordIndex()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainAnnotationBoundary extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnnotationBoundary
     {
     }
 }

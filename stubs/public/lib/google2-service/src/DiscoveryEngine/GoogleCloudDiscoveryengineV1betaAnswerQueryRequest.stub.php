@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequest extends \Google\Model
-{
-    protected $answerGenerationSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec::class;
-    protected $answerGenerationSpecDataType = '';
-    /**
-     * @var bool
-     */
-    public $asynchronousMode;
-    protected $queryType = GoogleCloudDiscoveryengineV1betaQuery::class;
-    protected $queryDataType = '';
-    protected $queryUnderstandingSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec::class;
-    protected $queryUnderstandingSpecDataType = '';
-    protected $relatedQuestionsSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec::class;
-    protected $relatedQuestionsSpecDataType = '';
-    protected $safetySpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec::class;
-    protected $safetySpecDataType = '';
-    protected $searchSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec::class;
-    protected $searchSpecDataType = '';
-    /**
-     * @var string
-     */
-    public $session;
-    /**
-     * @var string
-     */
-    public $userPseudoId;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec
-     */
-    public function setAnswerGenerationSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec $answerGenerationSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequest extends \Google\Model
     {
+        protected $answerGenerationSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec::class;
+        protected $answerGenerationSpecDataType = '';
+        /**
+         * @var bool
+         */
+        public $asynchronousMode;
+        protected $queryType = GoogleCloudDiscoveryengineV1betaQuery::class;
+        protected $queryDataType = '';
+        protected $queryUnderstandingSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec::class;
+        protected $queryUnderstandingSpecDataType = '';
+        protected $relatedQuestionsSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec::class;
+        protected $relatedQuestionsSpecDataType = '';
+        protected $safetySpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec::class;
+        protected $safetySpecDataType = '';
+        protected $searchSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec::class;
+        protected $searchSpecDataType = '';
+        /**
+         * @var string
+         */
+        public $session;
+        /**
+         * @var string
+         */
+        public $userPseudoId;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec
+         */
+        public function setAnswerGenerationSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec $answerGenerationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec
+         */
+        public function getAnswerGenerationSpec()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAsynchronousMode($asynchronousMode)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAsynchronousMode()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaQuery
+         */
+        public function setQuery(GoogleCloudDiscoveryengineV1betaQuery $query)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaQuery
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec
+         */
+        public function setQueryUnderstandingSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec $queryUnderstandingSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec
+         */
+        public function getQueryUnderstandingSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec
+         */
+        public function setRelatedQuestionsSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec $relatedQuestionsSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec
+         */
+        public function getRelatedQuestionsSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec
+         */
+        public function setSafetySpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec $safetySpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec
+         */
+        public function getSafetySpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec
+         */
+        public function setSearchSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec $searchSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec
+         */
+        public function getSearchSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserPseudoId($userPseudoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPseudoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerGenerationSpec()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAsynchronousMode($asynchronousMode)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAsynchronousMode()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaQuery
-     */
-    public function setQuery(GoogleCloudDiscoveryengineV1betaQuery $query)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaQuery
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec
-     */
-    public function setQueryUnderstandingSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec $queryUnderstandingSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec
-     */
-    public function getQueryUnderstandingSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec
-     */
-    public function setRelatedQuestionsSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec $relatedQuestionsSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec
-     */
-    public function getRelatedQuestionsSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec
-     */
-    public function setSafetySpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec $safetySpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSafetySpec
-     */
-    public function getSafetySpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec
-     */
-    public function setSearchSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec $searchSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec
-     */
-    public function getSearchSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserPseudoId($userPseudoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPseudoId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequest
     {
     }
 }

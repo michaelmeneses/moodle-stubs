@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext extends \Google\Model
-{
-    /**
-     * Documentation link for the action.
-     *
-     * @var string
-     */
-    public $documentationLink;
-    /**
-     * Documentation link for the action.
-     *
-     * @param string $documentationLink
-     */
-    public function setDocumentationLink($documentationLink)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext extends \Google\Model
     {
+        /**
+         * Documentation link for the action.
+         *
+         * @var string
+         */
+        public $documentationLink;
+        /**
+         * Documentation link for the action.
+         *
+         * @param string $documentationLink
+         */
+        public function setDocumentationLink($documentationLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentationLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentationLink()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext extends \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext
     {
     }
 }

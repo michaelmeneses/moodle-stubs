@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Area extends \Google\Collection
-{
-    protected $collection_key = 'triangleIndices';
-    protected $basemapZOrderType = BasemapZOrder::class;
-    protected $basemapZOrderDataType = '';
-    public $hasExternalEdges;
-    public $internalEdges;
-    public $loopBreaks;
-    public $triangleIndices;
-    public $type;
-    protected $vertexOffsetsType = Vertex2DList::class;
-    protected $vertexOffsetsDataType = '';
-    public $zOrder;
+namespace Google\Service\SemanticTile {
+    class Area extends \Google\Collection
+    {
+        protected $collection_key = 'triangleIndices';
+        protected $basemapZOrderType = BasemapZOrder::class;
+        protected $basemapZOrderDataType = '';
+        public $hasExternalEdges;
+        public $internalEdges;
+        public $loopBreaks;
+        public $triangleIndices;
+        public $type;
+        protected $vertexOffsetsType = Vertex2DList::class;
+        protected $vertexOffsetsDataType = '';
+        public $zOrder;
+        /**
+         * @param BasemapZOrder
+         */
+        public function setBasemapZOrder(BasemapZOrder $basemapZOrder)
+        {
+        }
+        /**
+         * @return BasemapZOrder
+         */
+        public function getBasemapZOrder()
+        {
+        }
+        public function setHasExternalEdges($hasExternalEdges)
+        {
+        }
+        public function getHasExternalEdges()
+        {
+        }
+        public function setInternalEdges($internalEdges)
+        {
+        }
+        public function getInternalEdges()
+        {
+        }
+        public function setLoopBreaks($loopBreaks)
+        {
+        }
+        public function getLoopBreaks()
+        {
+        }
+        public function setTriangleIndices($triangleIndices)
+        {
+        }
+        public function getTriangleIndices()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
+        /**
+         * @param Vertex2DList
+         */
+        public function setVertexOffsets(Vertex2DList $vertexOffsets)
+        {
+        }
+        /**
+         * @return Vertex2DList
+         */
+        public function getVertexOffsets()
+        {
+        }
+        public function setZOrder($zOrder)
+        {
+        }
+        public function getZOrder()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BasemapZOrder
+     * Runtime class alias of \Google\Service\SemanticTile\Area registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBasemapZOrder(BasemapZOrder $basemapZOrder)
-    {
-    }
-    /**
-     * @return BasemapZOrder
-     */
-    public function getBasemapZOrder()
-    {
-    }
-    public function setHasExternalEdges($hasExternalEdges)
-    {
-    }
-    public function getHasExternalEdges()
-    {
-    }
-    public function setInternalEdges($internalEdges)
-    {
-    }
-    public function getInternalEdges()
-    {
-    }
-    public function setLoopBreaks($loopBreaks)
-    {
-    }
-    public function getLoopBreaks()
-    {
-    }
-    public function setTriangleIndices($triangleIndices)
-    {
-    }
-    public function getTriangleIndices()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
-    {
-    }
-    /**
-     * @param Vertex2DList
-     */
-    public function setVertexOffsets(Vertex2DList $vertexOffsets)
-    {
-    }
-    /**
-     * @return Vertex2DList
-     */
-    public function getVertexOffsets()
-    {
-    }
-    public function setZOrder($zOrder)
-    {
-    }
-    public function getZOrder()
+    class Google_Service_SemanticTile_Area extends \Google\Service\SemanticTile\Area
     {
     }
 }

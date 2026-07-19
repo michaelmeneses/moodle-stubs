@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class RepoId extends \Google\Model
-{
-    protected $projectRepoIdType = ProjectRepoId::class;
-    protected $projectRepoIdDataType = '';
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @param ProjectRepoId
-     */
-    public function setProjectRepoId(ProjectRepoId $projectRepoId)
+namespace Google\Service\CloudDebugger {
+    class RepoId extends \Google\Model
     {
+        protected $projectRepoIdType = ProjectRepoId::class;
+        protected $projectRepoIdDataType = '';
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @param ProjectRepoId
+         */
+        public function setProjectRepoId(ProjectRepoId $projectRepoId)
+        {
+        }
+        /**
+         * @return ProjectRepoId
+         */
+        public function getProjectRepoId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProjectRepoId
+     * Runtime class alias of \Google\Service\CloudDebugger\RepoId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectRepoId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_CloudDebugger_RepoId extends \Google\Service\CloudDebugger\RepoId
     {
     }
 }

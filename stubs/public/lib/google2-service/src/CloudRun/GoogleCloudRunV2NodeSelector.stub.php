@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2NodeSelector extends \Google\Model
-{
-    /**
-     * Required. GPU accelerator type to attach to an instance.
-     *
-     * @var string
-     */
-    public $accelerator;
-    /**
-     * Required. GPU accelerator type to attach to an instance.
-     *
-     * @param string $accelerator
-     */
-    public function setAccelerator($accelerator)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2NodeSelector extends \Google\Model
     {
+        /**
+         * Required. GPU accelerator type to attach to an instance.
+         *
+         * @var string
+         */
+        public $accelerator;
+        /**
+         * Required. GPU accelerator type to attach to an instance.
+         *
+         * @param string $accelerator
+         */
+        public function setAccelerator($accelerator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccelerator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2NodeSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccelerator()
+    class Google_Service_CloudRun_GoogleCloudRunV2NodeSelector extends \Google\Service\CloudRun\GoogleCloudRunV2NodeSelector
     {
     }
 }

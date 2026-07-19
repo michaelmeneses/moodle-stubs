@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AugmentPromptRequestModel extends \Google\Model
-{
-    /**
-     * Optional. The model that the user will send the augmented prompt for
-     * content generation.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Optional. The model version of the backend deployed model.
-     *
-     * @var string
-     */
-    public $modelVersion;
-    /**
-     * Optional. The model that the user will send the augmented prompt for
-     * content generation.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AugmentPromptRequestModel extends \Google\Model
     {
+        /**
+         * Optional. The model that the user will send the augmented prompt for
+         * content generation.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Optional. The model version of the backend deployed model.
+         *
+         * @var string
+         */
+        public $modelVersion;
+        /**
+         * Optional. The model that the user will send the augmented prompt for
+         * content generation.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Optional. The model version of the backend deployed model.
+         *
+         * @param string $modelVersion
+         */
+        public function setModelVersion($modelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptRequestModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
-    {
-    }
-    /**
-     * Optional. The model version of the backend deployed model.
-     *
-     * @param string $modelVersion
-     */
-    public function setModelVersion($modelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AugmentPromptRequestModel extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptRequestModel
     {
     }
 }

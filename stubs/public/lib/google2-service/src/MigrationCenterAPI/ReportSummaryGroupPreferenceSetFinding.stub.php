@@ -21,208 +21,217 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryGroupPreferenceSetFinding extends \Google\Model
-{
-    protected $computeEngineFindingType = ReportSummaryComputeEngineFinding::class;
-    protected $computeEngineFindingDataType = '';
-    /**
-     * Description for the Preference Set.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display Name of the Preference Set
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $machinePreferencesType = VirtualMachinePreferences::class;
-    protected $machinePreferencesDataType = '';
-    protected $monthlyCostComputeType = Money::class;
-    protected $monthlyCostComputeDataType = '';
-    protected $monthlyCostNetworkEgressType = Money::class;
-    protected $monthlyCostNetworkEgressDataType = '';
-    protected $monthlyCostOsLicenseType = Money::class;
-    protected $monthlyCostOsLicenseDataType = '';
-    protected $monthlyCostOtherType = Money::class;
-    protected $monthlyCostOtherDataType = '';
-    protected $monthlyCostStorageType = Money::class;
-    protected $monthlyCostStorageDataType = '';
-    protected $monthlyCostTotalType = Money::class;
-    protected $monthlyCostTotalDataType = '';
-    protected $soleTenantFindingType = ReportSummarySoleTenantFinding::class;
-    protected $soleTenantFindingDataType = '';
-    protected $vmwareEngineFindingType = ReportSummaryVmwareEngineFinding::class;
-    protected $vmwareEngineFindingDataType = '';
-    /**
-     * A set of findings that applies to Compute Engine machines in the input.
-     *
-     * @param ReportSummaryComputeEngineFinding $computeEngineFinding
-     */
-    public function setComputeEngineFinding(ReportSummaryComputeEngineFinding $computeEngineFinding)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryGroupPreferenceSetFinding extends \Google\Model
     {
+        protected $computeEngineFindingType = ReportSummaryComputeEngineFinding::class;
+        protected $computeEngineFindingDataType = '';
+        /**
+         * Description for the Preference Set.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display Name of the Preference Set
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $machinePreferencesType = VirtualMachinePreferences::class;
+        protected $machinePreferencesDataType = '';
+        protected $monthlyCostComputeType = Money::class;
+        protected $monthlyCostComputeDataType = '';
+        protected $monthlyCostNetworkEgressType = Money::class;
+        protected $monthlyCostNetworkEgressDataType = '';
+        protected $monthlyCostOsLicenseType = Money::class;
+        protected $monthlyCostOsLicenseDataType = '';
+        protected $monthlyCostOtherType = Money::class;
+        protected $monthlyCostOtherDataType = '';
+        protected $monthlyCostStorageType = Money::class;
+        protected $monthlyCostStorageDataType = '';
+        protected $monthlyCostTotalType = Money::class;
+        protected $monthlyCostTotalDataType = '';
+        protected $soleTenantFindingType = ReportSummarySoleTenantFinding::class;
+        protected $soleTenantFindingDataType = '';
+        protected $vmwareEngineFindingType = ReportSummaryVmwareEngineFinding::class;
+        protected $vmwareEngineFindingDataType = '';
+        /**
+         * A set of findings that applies to Compute Engine machines in the input.
+         *
+         * @param ReportSummaryComputeEngineFinding $computeEngineFinding
+         */
+        public function setComputeEngineFinding(ReportSummaryComputeEngineFinding $computeEngineFinding)
+        {
+        }
+        /**
+         * @return ReportSummaryComputeEngineFinding
+         */
+        public function getComputeEngineFinding()
+        {
+        }
+        /**
+         * Description for the Preference Set.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display Name of the Preference Set
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * A set of preferences that applies to all machines in the context.
+         *
+         * @param VirtualMachinePreferences $machinePreferences
+         */
+        public function setMachinePreferences(VirtualMachinePreferences $machinePreferences)
+        {
+        }
+        /**
+         * @return VirtualMachinePreferences
+         */
+        public function getMachinePreferences()
+        {
+        }
+        /**
+         * Compute monthly cost for this preference set.
+         *
+         * @param Money $monthlyCostCompute
+         */
+        public function setMonthlyCostCompute(Money $monthlyCostCompute)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyCostCompute()
+        {
+        }
+        /**
+         * Network Egress monthly cost for this preference set.
+         *
+         * @param Money $monthlyCostNetworkEgress
+         */
+        public function setMonthlyCostNetworkEgress(Money $monthlyCostNetworkEgress)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyCostNetworkEgress()
+        {
+        }
+        /**
+         * Licensing monthly cost for this preference set.
+         *
+         * @param Money $monthlyCostOsLicense
+         */
+        public function setMonthlyCostOsLicense(Money $monthlyCostOsLicense)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyCostOsLicense()
+        {
+        }
+        /**
+         * Miscellaneous monthly cost for this preference set.
+         *
+         * @param Money $monthlyCostOther
+         */
+        public function setMonthlyCostOther(Money $monthlyCostOther)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyCostOther()
+        {
+        }
+        /**
+         * Storage monthly cost for this preference set.
+         *
+         * @param Money $monthlyCostStorage
+         */
+        public function setMonthlyCostStorage(Money $monthlyCostStorage)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyCostStorage()
+        {
+        }
+        /**
+         * Total monthly cost for this preference set.
+         *
+         * @param Money $monthlyCostTotal
+         */
+        public function setMonthlyCostTotal(Money $monthlyCostTotal)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMonthlyCostTotal()
+        {
+        }
+        /**
+         * A set of findings that applies to Sole-Tenant machines in the input.
+         *
+         * @param ReportSummarySoleTenantFinding $soleTenantFinding
+         */
+        public function setSoleTenantFinding(ReportSummarySoleTenantFinding $soleTenantFinding)
+        {
+        }
+        /**
+         * @return ReportSummarySoleTenantFinding
+         */
+        public function getSoleTenantFinding()
+        {
+        }
+        /**
+         * A set of findings that applies to VMWare machines in the input.
+         *
+         * @param ReportSummaryVmwareEngineFinding $vmwareEngineFinding
+         */
+        public function setVmwareEngineFinding(ReportSummaryVmwareEngineFinding $vmwareEngineFinding)
+        {
+        }
+        /**
+         * @return ReportSummaryVmwareEngineFinding
+         */
+        public function getVmwareEngineFinding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportSummaryComputeEngineFinding
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryGroupPreferenceSetFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputeEngineFinding()
-    {
-    }
-    /**
-     * Description for the Preference Set.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display Name of the Preference Set
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * A set of preferences that applies to all machines in the context.
-     *
-     * @param VirtualMachinePreferences $machinePreferences
-     */
-    public function setMachinePreferences(VirtualMachinePreferences $machinePreferences)
-    {
-    }
-    /**
-     * @return VirtualMachinePreferences
-     */
-    public function getMachinePreferences()
-    {
-    }
-    /**
-     * Compute monthly cost for this preference set.
-     *
-     * @param Money $monthlyCostCompute
-     */
-    public function setMonthlyCostCompute(Money $monthlyCostCompute)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyCostCompute()
-    {
-    }
-    /**
-     * Network Egress monthly cost for this preference set.
-     *
-     * @param Money $monthlyCostNetworkEgress
-     */
-    public function setMonthlyCostNetworkEgress(Money $monthlyCostNetworkEgress)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyCostNetworkEgress()
-    {
-    }
-    /**
-     * Licensing monthly cost for this preference set.
-     *
-     * @param Money $monthlyCostOsLicense
-     */
-    public function setMonthlyCostOsLicense(Money $monthlyCostOsLicense)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyCostOsLicense()
-    {
-    }
-    /**
-     * Miscellaneous monthly cost for this preference set.
-     *
-     * @param Money $monthlyCostOther
-     */
-    public function setMonthlyCostOther(Money $monthlyCostOther)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyCostOther()
-    {
-    }
-    /**
-     * Storage monthly cost for this preference set.
-     *
-     * @param Money $monthlyCostStorage
-     */
-    public function setMonthlyCostStorage(Money $monthlyCostStorage)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyCostStorage()
-    {
-    }
-    /**
-     * Total monthly cost for this preference set.
-     *
-     * @param Money $monthlyCostTotal
-     */
-    public function setMonthlyCostTotal(Money $monthlyCostTotal)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMonthlyCostTotal()
-    {
-    }
-    /**
-     * A set of findings that applies to Sole-Tenant machines in the input.
-     *
-     * @param ReportSummarySoleTenantFinding $soleTenantFinding
-     */
-    public function setSoleTenantFinding(ReportSummarySoleTenantFinding $soleTenantFinding)
-    {
-    }
-    /**
-     * @return ReportSummarySoleTenantFinding
-     */
-    public function getSoleTenantFinding()
-    {
-    }
-    /**
-     * A set of findings that applies to VMWare machines in the input.
-     *
-     * @param ReportSummaryVmwareEngineFinding $vmwareEngineFinding
-     */
-    public function setVmwareEngineFinding(ReportSummaryVmwareEngineFinding $vmwareEngineFinding)
-    {
-    }
-    /**
-     * @return ReportSummaryVmwareEngineFinding
-     */
-    public function getVmwareEngineFinding()
+    class Google_Service_MigrationCenterAPI_ReportSummaryGroupPreferenceSetFinding extends \Google\Service\MigrationCenterAPI\ReportSummaryGroupPreferenceSetFinding
     {
     }
 }

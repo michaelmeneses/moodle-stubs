@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1RepricingConfig extends \Google\Collection
-{
-    /**
-     * Not used.
-     */
-    public const REBILLING_BASIS_REBILLING_BASIS_UNSPECIFIED = 'REBILLING_BASIS_UNSPECIFIED';
-    /**
-     * Use the list cost, also known as the MSRP.
-     */
-    public const REBILLING_BASIS_COST_AT_LIST = 'COST_AT_LIST';
-    /**
-     * Pass through all discounts except the Reseller Program Discount. If this is
-     * the default cost base and no adjustments are specified, the output cost
-     * will be exactly what the customer would see if they viewed the bill in the
-     * Google Cloud Console.
-     */
-    public const REBILLING_BASIS_DIRECT_CUSTOMER_COST = 'DIRECT_CUSTOMER_COST';
-    protected $collection_key = 'conditionalOverrides';
-    protected $adjustmentType = GoogleCloudChannelV1RepricingAdjustment::class;
-    protected $adjustmentDataType = '';
-    protected $channelPartnerGranularityType = GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity::class;
-    protected $channelPartnerGranularityDataType = '';
-    protected $conditionalOverridesType = GoogleCloudChannelV1ConditionalOverride::class;
-    protected $conditionalOverridesDataType = 'array';
-    protected $effectiveInvoiceMonthType = GoogleTypeDate::class;
-    protected $effectiveInvoiceMonthDataType = '';
-    protected $entitlementGranularityType = GoogleCloudChannelV1RepricingConfigEntitlementGranularity::class;
-    protected $entitlementGranularityDataType = '';
-    /**
-     * Required. The RebillingBasis to use for this bill. Specifies the relative
-     * cost based on repricing costs you will apply.
-     *
-     * @var string
-     */
-    public $rebillingBasis;
-    /**
-     * Required. Information about the adjustment.
-     *
-     * @param GoogleCloudChannelV1RepricingAdjustment $adjustment
-     */
-    public function setAdjustment(GoogleCloudChannelV1RepricingAdjustment $adjustment)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1RepricingConfig extends \Google\Collection
     {
+        /**
+         * Not used.
+         */
+        public const REBILLING_BASIS_REBILLING_BASIS_UNSPECIFIED = 'REBILLING_BASIS_UNSPECIFIED';
+        /**
+         * Use the list cost, also known as the MSRP.
+         */
+        public const REBILLING_BASIS_COST_AT_LIST = 'COST_AT_LIST';
+        /**
+         * Pass through all discounts except the Reseller Program Discount. If this is
+         * the default cost base and no adjustments are specified, the output cost
+         * will be exactly what the customer would see if they viewed the bill in the
+         * Google Cloud Console.
+         */
+        public const REBILLING_BASIS_DIRECT_CUSTOMER_COST = 'DIRECT_CUSTOMER_COST';
+        protected $collection_key = 'conditionalOverrides';
+        protected $adjustmentType = GoogleCloudChannelV1RepricingAdjustment::class;
+        protected $adjustmentDataType = '';
+        protected $channelPartnerGranularityType = GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity::class;
+        protected $channelPartnerGranularityDataType = '';
+        protected $conditionalOverridesType = GoogleCloudChannelV1ConditionalOverride::class;
+        protected $conditionalOverridesDataType = 'array';
+        protected $effectiveInvoiceMonthType = GoogleTypeDate::class;
+        protected $effectiveInvoiceMonthDataType = '';
+        protected $entitlementGranularityType = GoogleCloudChannelV1RepricingConfigEntitlementGranularity::class;
+        protected $entitlementGranularityDataType = '';
+        /**
+         * Required. The RebillingBasis to use for this bill. Specifies the relative
+         * cost based on repricing costs you will apply.
+         *
+         * @var string
+         */
+        public $rebillingBasis;
+        /**
+         * Required. Information about the adjustment.
+         *
+         * @param GoogleCloudChannelV1RepricingAdjustment $adjustment
+         */
+        public function setAdjustment(GoogleCloudChannelV1RepricingAdjustment $adjustment)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1RepricingAdjustment
+         */
+        public function getAdjustment()
+        {
+        }
+        /**
+         * Applies the repricing configuration at the channel partner level. Only
+         * ChannelPartnerRepricingConfig supports this value. Deprecated: This is no
+         * longer supported. Use RepricingConfig.entitlement_granularity instead.
+         *
+         * @deprecated
+         * @param GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity $channelPartnerGranularity
+         */
+        public function setChannelPartnerGranularity(GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity $channelPartnerGranularity)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity
+         */
+        public function getChannelPartnerGranularity()
+        {
+        }
+        /**
+         * The conditional overrides to apply for this configuration. If you list
+         * multiple overrides, only the first valid override is used. If you don't
+         * list any overrides, the API uses the normal adjustment and rebilling basis.
+         *
+         * @param GoogleCloudChannelV1ConditionalOverride[] $conditionalOverrides
+         */
+        public function setConditionalOverrides($conditionalOverrides)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ConditionalOverride[]
+         */
+        public function getConditionalOverrides()
+        {
+        }
+        /**
+         * Required. The YearMonth when these adjustments activate. The Day field
+         * needs to be "0" since we only accept YearMonth repricing boundaries.
+         *
+         * @param GoogleTypeDate $effectiveInvoiceMonth
+         */
+        public function setEffectiveInvoiceMonth(GoogleTypeDate $effectiveInvoiceMonth)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getEffectiveInvoiceMonth()
+        {
+        }
+        /**
+         * Required. Applies the repricing configuration at the entitlement level.
+         * Note: If a ChannelPartnerRepricingConfig using
+         * RepricingConfig.EntitlementGranularity becomes effective, then no existing
+         * or future RepricingConfig.ChannelPartnerGranularity will apply to the
+         * RepricingConfig.EntitlementGranularity.entitlement. This is the recommended
+         * value for both CustomerRepricingConfig and ChannelPartnerRepricingConfig.
+         *
+         * @param GoogleCloudChannelV1RepricingConfigEntitlementGranularity $entitlementGranularity
+         */
+        public function setEntitlementGranularity(GoogleCloudChannelV1RepricingConfigEntitlementGranularity $entitlementGranularity)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1RepricingConfigEntitlementGranularity
+         */
+        public function getEntitlementGranularity()
+        {
+        }
+        /**
+         * Required. The RebillingBasis to use for this bill. Specifies the relative
+         * cost based on repricing costs you will apply.
+         *
+         * Accepted values: REBILLING_BASIS_UNSPECIFIED, COST_AT_LIST,
+         * DIRECT_CUSTOMER_COST
+         *
+         * @param self::REBILLING_BASIS_* $rebillingBasis
+         */
+        public function setRebillingBasis($rebillingBasis)
+        {
+        }
+        /**
+         * @return self::REBILLING_BASIS_*
+         */
+        public function getRebillingBasis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1RepricingAdjustment
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdjustment()
-    {
-    }
-    /**
-     * Applies the repricing configuration at the channel partner level. Only
-     * ChannelPartnerRepricingConfig supports this value. Deprecated: This is no
-     * longer supported. Use RepricingConfig.entitlement_granularity instead.
-     *
-     * @deprecated
-     * @param GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity $channelPartnerGranularity
-     */
-    public function setChannelPartnerGranularity(GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity $channelPartnerGranularity)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudChannelV1RepricingConfigChannelPartnerGranularity
-     */
-    public function getChannelPartnerGranularity()
-    {
-    }
-    /**
-     * The conditional overrides to apply for this configuration. If you list
-     * multiple overrides, only the first valid override is used. If you don't
-     * list any overrides, the API uses the normal adjustment and rebilling basis.
-     *
-     * @param GoogleCloudChannelV1ConditionalOverride[] $conditionalOverrides
-     */
-    public function setConditionalOverrides($conditionalOverrides)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1ConditionalOverride[]
-     */
-    public function getConditionalOverrides()
-    {
-    }
-    /**
-     * Required. The YearMonth when these adjustments activate. The Day field
-     * needs to be "0" since we only accept YearMonth repricing boundaries.
-     *
-     * @param GoogleTypeDate $effectiveInvoiceMonth
-     */
-    public function setEffectiveInvoiceMonth(GoogleTypeDate $effectiveInvoiceMonth)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getEffectiveInvoiceMonth()
-    {
-    }
-    /**
-     * Required. Applies the repricing configuration at the entitlement level.
-     * Note: If a ChannelPartnerRepricingConfig using
-     * RepricingConfig.EntitlementGranularity becomes effective, then no existing
-     * or future RepricingConfig.ChannelPartnerGranularity will apply to the
-     * RepricingConfig.EntitlementGranularity.entitlement. This is the recommended
-     * value for both CustomerRepricingConfig and ChannelPartnerRepricingConfig.
-     *
-     * @param GoogleCloudChannelV1RepricingConfigEntitlementGranularity $entitlementGranularity
-     */
-    public function setEntitlementGranularity(GoogleCloudChannelV1RepricingConfigEntitlementGranularity $entitlementGranularity)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1RepricingConfigEntitlementGranularity
-     */
-    public function getEntitlementGranularity()
-    {
-    }
-    /**
-     * Required. The RebillingBasis to use for this bill. Specifies the relative
-     * cost based on repricing costs you will apply.
-     *
-     * Accepted values: REBILLING_BASIS_UNSPECIFIED, COST_AT_LIST,
-     * DIRECT_CUSTOMER_COST
-     *
-     * @param self::REBILLING_BASIS_* $rebillingBasis
-     */
-    public function setRebillingBasis($rebillingBasis)
-    {
-    }
-    /**
-     * @return self::REBILLING_BASIS_*
-     */
-    public function getRebillingBasis()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1RepricingConfig extends \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingConfig
     {
     }
 }

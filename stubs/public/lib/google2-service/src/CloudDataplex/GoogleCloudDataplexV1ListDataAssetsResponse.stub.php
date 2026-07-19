@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListDataAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataAssets';
-    protected $dataAssetsType = GoogleCloudDataplexV1DataAsset::class;
-    protected $dataAssetsDataType = 'array';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is empty, then there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Data Assets for the requested filter criteria.
-     *
-     * @param GoogleCloudDataplexV1DataAsset[] $dataAssets
-     */
-    public function setDataAssets($dataAssets)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListDataAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataAssets';
+        protected $dataAssetsType = GoogleCloudDataplexV1DataAsset::class;
+        protected $dataAssetsDataType = 'array';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is empty, then there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Data Assets for the requested filter criteria.
+         *
+         * @param GoogleCloudDataplexV1DataAsset[] $dataAssets
+         */
+        public function setDataAssets($dataAssets)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataAsset[]
+         */
+        public function getDataAssets()
+        {
+        }
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is empty, then there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataAsset[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataAssets()
-    {
-    }
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is empty, then there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListDataAssetsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataAssetsResponse
     {
     }
 }

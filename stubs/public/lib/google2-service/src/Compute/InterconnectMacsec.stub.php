@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectMacsec extends \Google\Collection
-{
-    protected $collection_key = 'preSharedKeys';
-    /**
-     * If set to true, the Interconnect connection is configured with ashould-
-     * secure MACsec security policy, that allows the Google router to fallback to
-     * cleartext traffic if the MKA session cannot be established. By default, the
-     * Interconnect connection is configured with amust-secure security policy
-     * that drops all traffic if the MKA session cannot be established with your
-     * router.
-     *
-     * @var bool
-     */
-    public $failOpen;
-    protected $preSharedKeysType = InterconnectMacsecPreSharedKey::class;
-    protected $preSharedKeysDataType = 'array';
-    /**
-     * If set to true, the Interconnect connection is configured with ashould-
-     * secure MACsec security policy, that allows the Google router to fallback to
-     * cleartext traffic if the MKA session cannot be established. By default, the
-     * Interconnect connection is configured with amust-secure security policy
-     * that drops all traffic if the MKA session cannot be established with your
-     * router.
-     *
-     * @param bool $failOpen
-     */
-    public function setFailOpen($failOpen)
+namespace Google\Service\Compute {
+    class InterconnectMacsec extends \Google\Collection
     {
+        protected $collection_key = 'preSharedKeys';
+        /**
+         * If set to true, the Interconnect connection is configured with ashould-
+         * secure MACsec security policy, that allows the Google router to fallback to
+         * cleartext traffic if the MKA session cannot be established. By default, the
+         * Interconnect connection is configured with amust-secure security policy
+         * that drops all traffic if the MKA session cannot be established with your
+         * router.
+         *
+         * @var bool
+         */
+        public $failOpen;
+        protected $preSharedKeysType = InterconnectMacsecPreSharedKey::class;
+        protected $preSharedKeysDataType = 'array';
+        /**
+         * If set to true, the Interconnect connection is configured with ashould-
+         * secure MACsec security policy, that allows the Google router to fallback to
+         * cleartext traffic if the MKA session cannot be established. By default, the
+         * Interconnect connection is configured with amust-secure security policy
+         * that drops all traffic if the MKA session cannot be established with your
+         * router.
+         *
+         * @param bool $failOpen
+         */
+        public function setFailOpen($failOpen)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFailOpen()
+        {
+        }
+        /**
+         * Required. A keychain placeholder describing a set of named key objects
+         * along with their start times. A MACsec CKN/CAK is generated for each key in
+         * the key chain. Google router automatically picks the key with the most
+         * recent startTime when establishing or re-establishing a MACsec secure link.
+         *
+         * @param InterconnectMacsecPreSharedKey[] $preSharedKeys
+         */
+        public function setPreSharedKeys($preSharedKeys)
+        {
+        }
+        /**
+         * @return InterconnectMacsecPreSharedKey[]
+         */
+        public function getPreSharedKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\InterconnectMacsec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailOpen()
-    {
-    }
-    /**
-     * Required. A keychain placeholder describing a set of named key objects
-     * along with their start times. A MACsec CKN/CAK is generated for each key in
-     * the key chain. Google router automatically picks the key with the most
-     * recent startTime when establishing or re-establishing a MACsec secure link.
-     *
-     * @param InterconnectMacsecPreSharedKey[] $preSharedKeys
-     */
-    public function setPreSharedKeys($preSharedKeys)
-    {
-    }
-    /**
-     * @return InterconnectMacsecPreSharedKey[]
-     */
-    public function getPreSharedKeys()
+    class Google_Service_Compute_InterconnectMacsec extends \Google\Service\Compute\InterconnectMacsec
     {
     }
 }

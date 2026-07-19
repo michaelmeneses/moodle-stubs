@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Scan extends \Google\Model
-{
-    /**
-     * Additional information provided by the implementer.
-     *
-     * @var array[]
-     */
-    public $details;
-    /**
-     * The upper bound for when the scan is defined.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The unique name of the scan, specific to the Database service implementing
-     * this interface.
-     *
-     * @var string
-     */
-    public $name;
-    protected $scanDataType = ScanData::class;
-    protected $scanDataDataType = '';
-    /**
-     * A range of time (inclusive) for when the scan is defined. The lower bound
-     * for when the scan is defined.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Additional information provided by the implementer.
-     *
-     * @param array[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\Spanner {
+    class Scan extends \Google\Model
     {
+        /**
+         * Additional information provided by the implementer.
+         *
+         * @var array[]
+         */
+        public $details;
+        /**
+         * The upper bound for when the scan is defined.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The unique name of the scan, specific to the Database service implementing
+         * this interface.
+         *
+         * @var string
+         */
+        public $name;
+        protected $scanDataType = ScanData::class;
+        protected $scanDataDataType = '';
+        /**
+         * A range of time (inclusive) for when the scan is defined. The lower bound
+         * for when the scan is defined.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Additional information provided by the implementer.
+         *
+         * @param array[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The upper bound for when the scan is defined.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The unique name of the scan, specific to the Database service implementing
+         * this interface.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Cloud Key Visualizer scan data. Note, this field is not
+         * available to the ListScans method.
+         *
+         * @param ScanData $scanData
+         */
+        public function setScanData(ScanData $scanData)
+        {
+        }
+        /**
+         * @return ScanData
+         */
+        public function getScanData()
+        {
+        }
+        /**
+         * A range of time (inclusive) for when the scan is defined. The lower bound
+         * for when the scan is defined.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Spanner\Scan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The upper bound for when the scan is defined.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The unique name of the scan, specific to the Database service implementing
-     * this interface.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Cloud Key Visualizer scan data. Note, this field is not
-     * available to the ListScans method.
-     *
-     * @param ScanData $scanData
-     */
-    public function setScanData(ScanData $scanData)
-    {
-    }
-    /**
-     * @return ScanData
-     */
-    public function getScanData()
-    {
-    }
-    /**
-     * A range of time (inclusive) for when the scan is defined. The lower bound
-     * for when the scan is defined.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Spanner_Scan extends \Google\Service\Spanner\Scan
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class PullResponse extends \Google\Collection
-{
-    protected $collection_key = 'receivedMessages';
-    protected $receivedMessagesType = ReceivedMessage::class;
-    protected $receivedMessagesDataType = 'array';
-    /**
-     * Optional. Received Pub/Sub messages. The list will be empty if there are no
-     * more messages available in the backlog, or if no messages could be returned
-     * before the request timeout. For JSON, the response can be entirely empty.
-     * The Pub/Sub system may return fewer than the `maxMessages` requested even
-     * if there are more messages available in the backlog.
-     *
-     * @param ReceivedMessage[] $receivedMessages
-     */
-    public function setReceivedMessages($receivedMessages)
+namespace Google\Service\Pubsub {
+    class PullResponse extends \Google\Collection
     {
+        protected $collection_key = 'receivedMessages';
+        protected $receivedMessagesType = ReceivedMessage::class;
+        protected $receivedMessagesDataType = 'array';
+        /**
+         * Optional. Received Pub/Sub messages. The list will be empty if there are no
+         * more messages available in the backlog, or if no messages could be returned
+         * before the request timeout. For JSON, the response can be entirely empty.
+         * The Pub/Sub system may return fewer than the `maxMessages` requested even
+         * if there are more messages available in the backlog.
+         *
+         * @param ReceivedMessage[] $receivedMessages
+         */
+        public function setReceivedMessages($receivedMessages)
+        {
+        }
+        /**
+         * @return ReceivedMessage[]
+         */
+        public function getReceivedMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReceivedMessage[]
+     * Runtime class alias of \Google\Service\Pubsub\PullResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReceivedMessages()
+    class Google_Service_Pubsub_PullResponse extends \Google\Service\Pubsub\PullResponse
     {
     }
 }

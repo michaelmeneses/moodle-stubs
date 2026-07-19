@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SourceObjectIdentifier extends \Google\Model
-{
-    /**
-     * The type of the migration job object is unknown.
-     */
-    public const TYPE_MIGRATION_JOB_OBJECT_TYPE_UNSPECIFIED = 'MIGRATION_JOB_OBJECT_TYPE_UNSPECIFIED';
-    /**
-     * The migration job object is a database.
-     */
-    public const TYPE_DATABASE = 'DATABASE';
-    /**
-     * The migration job object is a schema.
-     */
-    public const TYPE_SCHEMA = 'SCHEMA';
-    /**
-     * The migration job object is a table.
-     */
-    public const TYPE_TABLE = 'TABLE';
-    /**
-     * Optional. The database name. This will be required only if the object uses
-     * a database name as part of its unique identifier.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Optional. The schema name. This will be required only if the object uses a
-     * schema name as part of its unique identifier.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Optional. The table name. This will be required only if the object is a
-     * level below database or schema.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Required. The type of the migration job object.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. The database name. This will be required only if the object uses
-     * a database name as part of its unique identifier.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\DatabaseMigrationService {
+    class SourceObjectIdentifier extends \Google\Model
     {
+        /**
+         * The type of the migration job object is unknown.
+         */
+        public const TYPE_MIGRATION_JOB_OBJECT_TYPE_UNSPECIFIED = 'MIGRATION_JOB_OBJECT_TYPE_UNSPECIFIED';
+        /**
+         * The migration job object is a database.
+         */
+        public const TYPE_DATABASE = 'DATABASE';
+        /**
+         * The migration job object is a schema.
+         */
+        public const TYPE_SCHEMA = 'SCHEMA';
+        /**
+         * The migration job object is a table.
+         */
+        public const TYPE_TABLE = 'TABLE';
+        /**
+         * Optional. The database name. This will be required only if the object uses
+         * a database name as part of its unique identifier.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Optional. The schema name. This will be required only if the object uses a
+         * schema name as part of its unique identifier.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Optional. The table name. This will be required only if the object is a
+         * level below database or schema.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Required. The type of the migration job object.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. The database name. This will be required only if the object uses
+         * a database name as part of its unique identifier.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Optional. The schema name. This will be required only if the object uses a
+         * schema name as part of its unique identifier.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Optional. The table name. This will be required only if the object is a
+         * level below database or schema.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
+        /**
+         * Required. The type of the migration job object.
+         *
+         * Accepted values: MIGRATION_JOB_OBJECT_TYPE_UNSPECIFIED, DATABASE, SCHEMA,
+         * TABLE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SourceObjectIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Optional. The schema name. This will be required only if the object uses a
-     * schema name as part of its unique identifier.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * Optional. The table name. This will be required only if the object is a
-     * level below database or schema.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
-    {
-    }
-    /**
-     * Required. The type of the migration job object.
-     *
-     * Accepted values: MIGRATION_JOB_OBJECT_TYPE_UNSPECIFIED, DATABASE, SCHEMA,
-     * TABLE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_DatabaseMigrationService_SourceObjectIdentifier extends \Google\Service\DatabaseMigrationService\SourceObjectIdentifier
     {
     }
 }

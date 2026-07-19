@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ListRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token to request the next page of resources from the 'ListRevisions'
-     * method. The value of an empty string means that there are no more resources
-     * to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $revisionsType = Revision::class;
-    protected $revisionsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token to request the next page of resources from the 'ListRevisions'
-     * method. The value of an empty string means that there are no more resources
-     * to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Config {
+    class ListRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token to request the next page of resources from the 'ListRevisions'
+         * method. The value of an empty string means that there are no more resources
+         * to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $revisionsType = Revision::class;
+        protected $revisionsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token to request the next page of resources from the 'ListRevisions'
+         * method. The value of an empty string means that there are no more resources
+         * to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Revisions.
+         *
+         * @param Revision[] $revisions
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return Revision[]
+         */
+        public function getRevisions()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ListRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Revisions.
-     *
-     * @param Revision[] $revisions
-     */
-    public function setRevisions($revisions)
-    {
-    }
-    /**
-     * @return Revision[]
-     */
-    public function getRevisions()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Config_ListRevisionsResponse extends \Google\Service\Config\ListRevisionsResponse
     {
     }
 }

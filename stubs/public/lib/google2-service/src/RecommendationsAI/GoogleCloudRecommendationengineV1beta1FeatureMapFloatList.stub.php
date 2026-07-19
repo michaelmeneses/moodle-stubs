@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1FeatureMapFloatList extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * Float feature value.
-     *
-     * @var float[]
-     */
-    public $value;
-    /**
-     * Float feature value.
-     *
-     * @param float[] $value
-     */
-    public function setValue($value)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1FeatureMapFloatList extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * Float feature value.
+         *
+         * @var float[]
+         */
+        public $value;
+        /**
+         * Float feature value.
+         *
+         * @param float[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1FeatureMapFloatList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1FeatureMapFloatList extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1FeatureMapFloatList
     {
     }
 }

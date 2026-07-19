@@ -21,44 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ChromePolicy (v1).
- *
- * <p>
- * The Chrome Policy API is a suite of services that allows Chrome
- * administrators to control the policies applied to their managed Chrome OS
- * devices and Chrome browsers.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="http://developers.google.com/chrome/policy" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ChromePolicy extends \Google\Service
-{
-    /** See, edit, create or delete policies applied to ChromeOS and Chrome Browsers managed within your organization. */
-    const CHROME_MANAGEMENT_POLICY = "https://www.googleapis.com/auth/chrome.management.policy";
-    /** See policies applied to ChromeOS and Chrome Browsers managed within your organization. */
-    const CHROME_MANAGEMENT_POLICY_READONLY = "https://www.googleapis.com/auth/chrome.management.policy.readonly";
-    public $customers_policies;
-    public $customers_policies_groups;
-    public $customers_policies_networks;
-    public $customers_policies_orgunits;
-    public $customers_policySchemas;
-    public $media;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ChromePolicy service.
+     * Service definition for ChromePolicy (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Chrome Policy API is a suite of services that allows Chrome
+     * administrators to control the policies applied to their managed Chrome OS
+     * devices and Chrome browsers.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="http://developers.google.com/chrome/policy" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ChromePolicy extends \Google\Service
+    {
+        /** See, edit, create or delete policies applied to ChromeOS and Chrome Browsers managed within your organization. */
+        const CHROME_MANAGEMENT_POLICY = "https://www.googleapis.com/auth/chrome.management.policy";
+        /** See policies applied to ChromeOS and Chrome Browsers managed within your organization. */
+        const CHROME_MANAGEMENT_POLICY_READONLY = "https://www.googleapis.com/auth/chrome.management.policy.readonly";
+        public $customers_policies;
+        public $customers_policies_groups;
+        public $customers_policies_networks;
+        public $customers_policies_orgunits;
+        public $customers_policySchemas;
+        public $media;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ChromePolicy service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromePolicy extends \Google\Service\ChromePolicy
     {
     }
 }

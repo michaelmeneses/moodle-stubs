@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'structuredResults';
-    protected $debugInfoType = ResponseDebugInfo::class;
-    protected $debugInfoDataType = '';
-    protected $errorInfoType = ErrorInfo::class;
-    protected $errorInfoDataType = '';
-    protected $facetResultsType = FacetResult::class;
-    protected $facetResultsDataType = 'array';
-    /**
-     * Whether there are more search results matching the query.
-     *
-     * @var bool
-     */
-    public $hasMoreResults;
-    protected $queryInterpretationType = QueryInterpretation::class;
-    protected $queryInterpretationDataType = '';
-    /**
-     * The estimated result count for this query.
-     *
-     * @var string
-     */
-    public $resultCountEstimate;
-    /**
-     * The exact result count for this query.
-     *
-     * @var string
-     */
-    public $resultCountExact;
-    protected $resultCountsType = ResultCounts::class;
-    protected $resultCountsDataType = '';
-    protected $resultsType = SearchResult::class;
-    protected $resultsDataType = 'array';
-    protected $spellResultsType = SpellResult::class;
-    protected $spellResultsDataType = 'array';
-    protected $structuredResultsType = StructuredResult::class;
-    protected $structuredResultsDataType = 'array';
-    /**
-     * Debugging information about the response.
-     *
-     * @param ResponseDebugInfo $debugInfo
-     */
-    public function setDebugInfo(ResponseDebugInfo $debugInfo)
+namespace Google\Service\CloudSearch {
+    class SearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'structuredResults';
+        protected $debugInfoType = ResponseDebugInfo::class;
+        protected $debugInfoDataType = '';
+        protected $errorInfoType = ErrorInfo::class;
+        protected $errorInfoDataType = '';
+        protected $facetResultsType = FacetResult::class;
+        protected $facetResultsDataType = 'array';
+        /**
+         * Whether there are more search results matching the query.
+         *
+         * @var bool
+         */
+        public $hasMoreResults;
+        protected $queryInterpretationType = QueryInterpretation::class;
+        protected $queryInterpretationDataType = '';
+        /**
+         * The estimated result count for this query.
+         *
+         * @var string
+         */
+        public $resultCountEstimate;
+        /**
+         * The exact result count for this query.
+         *
+         * @var string
+         */
+        public $resultCountExact;
+        protected $resultCountsType = ResultCounts::class;
+        protected $resultCountsDataType = '';
+        protected $resultsType = SearchResult::class;
+        protected $resultsDataType = 'array';
+        protected $spellResultsType = SpellResult::class;
+        protected $spellResultsDataType = 'array';
+        protected $structuredResultsType = StructuredResult::class;
+        protected $structuredResultsDataType = 'array';
+        /**
+         * Debugging information about the response.
+         *
+         * @param ResponseDebugInfo $debugInfo
+         */
+        public function setDebugInfo(ResponseDebugInfo $debugInfo)
+        {
+        }
+        /**
+         * @return ResponseDebugInfo
+         */
+        public function getDebugInfo()
+        {
+        }
+        /**
+         * Error information about the response.
+         *
+         * @param ErrorInfo $errorInfo
+         */
+        public function setErrorInfo(ErrorInfo $errorInfo)
+        {
+        }
+        /**
+         * @return ErrorInfo
+         */
+        public function getErrorInfo()
+        {
+        }
+        /**
+         * Repeated facet results.
+         *
+         * @param FacetResult[] $facetResults
+         */
+        public function setFacetResults($facetResults)
+        {
+        }
+        /**
+         * @return FacetResult[]
+         */
+        public function getFacetResults()
+        {
+        }
+        /**
+         * Whether there are more search results matching the query.
+         *
+         * @param bool $hasMoreResults
+         */
+        public function setHasMoreResults($hasMoreResults)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasMoreResults()
+        {
+        }
+        /**
+         * Query interpretation result for user query. Empty if query interpretation
+         * is disabled.
+         *
+         * @param QueryInterpretation $queryInterpretation
+         */
+        public function setQueryInterpretation(QueryInterpretation $queryInterpretation)
+        {
+        }
+        /**
+         * @return QueryInterpretation
+         */
+        public function getQueryInterpretation()
+        {
+        }
+        /**
+         * The estimated result count for this query.
+         *
+         * @param string $resultCountEstimate
+         */
+        public function setResultCountEstimate($resultCountEstimate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultCountEstimate()
+        {
+        }
+        /**
+         * The exact result count for this query.
+         *
+         * @param string $resultCountExact
+         */
+        public function setResultCountExact($resultCountExact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultCountExact()
+        {
+        }
+        /**
+         * Expanded result count information.
+         *
+         * @param ResultCounts $resultCounts
+         */
+        public function setResultCounts(ResultCounts $resultCounts)
+        {
+        }
+        /**
+         * @return ResultCounts
+         */
+        public function getResultCounts()
+        {
+        }
+        /**
+         * Results from a search query.
+         *
+         * @param SearchResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return SearchResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Suggested spelling for the query.
+         *
+         * @param SpellResult[] $spellResults
+         */
+        public function setSpellResults($spellResults)
+        {
+        }
+        /**
+         * @return SpellResult[]
+         */
+        public function getSpellResults()
+        {
+        }
+        /**
+         * Structured results for the user query. These results are not counted
+         * against the page_size.
+         *
+         * @param StructuredResult[] $structuredResults
+         */
+        public function setStructuredResults($structuredResults)
+        {
+        }
+        /**
+         * @return StructuredResult[]
+         */
+        public function getStructuredResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResponseDebugInfo
+     * Runtime class alias of \Google\Service\CloudSearch\SearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugInfo()
-    {
-    }
-    /**
-     * Error information about the response.
-     *
-     * @param ErrorInfo $errorInfo
-     */
-    public function setErrorInfo(ErrorInfo $errorInfo)
-    {
-    }
-    /**
-     * @return ErrorInfo
-     */
-    public function getErrorInfo()
-    {
-    }
-    /**
-     * Repeated facet results.
-     *
-     * @param FacetResult[] $facetResults
-     */
-    public function setFacetResults($facetResults)
-    {
-    }
-    /**
-     * @return FacetResult[]
-     */
-    public function getFacetResults()
-    {
-    }
-    /**
-     * Whether there are more search results matching the query.
-     *
-     * @param bool $hasMoreResults
-     */
-    public function setHasMoreResults($hasMoreResults)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasMoreResults()
-    {
-    }
-    /**
-     * Query interpretation result for user query. Empty if query interpretation
-     * is disabled.
-     *
-     * @param QueryInterpretation $queryInterpretation
-     */
-    public function setQueryInterpretation(QueryInterpretation $queryInterpretation)
-    {
-    }
-    /**
-     * @return QueryInterpretation
-     */
-    public function getQueryInterpretation()
-    {
-    }
-    /**
-     * The estimated result count for this query.
-     *
-     * @param string $resultCountEstimate
-     */
-    public function setResultCountEstimate($resultCountEstimate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultCountEstimate()
-    {
-    }
-    /**
-     * The exact result count for this query.
-     *
-     * @param string $resultCountExact
-     */
-    public function setResultCountExact($resultCountExact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultCountExact()
-    {
-    }
-    /**
-     * Expanded result count information.
-     *
-     * @param ResultCounts $resultCounts
-     */
-    public function setResultCounts(ResultCounts $resultCounts)
-    {
-    }
-    /**
-     * @return ResultCounts
-     */
-    public function getResultCounts()
-    {
-    }
-    /**
-     * Results from a search query.
-     *
-     * @param SearchResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return SearchResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Suggested spelling for the query.
-     *
-     * @param SpellResult[] $spellResults
-     */
-    public function setSpellResults($spellResults)
-    {
-    }
-    /**
-     * @return SpellResult[]
-     */
-    public function getSpellResults()
-    {
-    }
-    /**
-     * Structured results for the user query. These results are not counted
-     * against the page_size.
-     *
-     * @param StructuredResult[] $structuredResults
-     */
-    public function setStructuredResults($structuredResults)
-    {
-    }
-    /**
-     * @return StructuredResult[]
-     */
-    public function getStructuredResults()
+    class Google_Service_CloudSearch_SearchResponse extends \Google\Service\CloudSearch\SearchResponse
     {
     }
 }

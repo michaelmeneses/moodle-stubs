@@ -8,6 +8,12 @@
  */
 namespace Aws\S3;
 
+use Aws\AwsClientInterface;
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Aws\S3\Exception\S3Exception;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * **Amazon Simple Storage Service** client.
  *

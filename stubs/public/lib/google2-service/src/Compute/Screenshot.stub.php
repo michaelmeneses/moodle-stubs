@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Screenshot extends \Google\Model
-{
-    /**
-     * [Output Only] The Base64-encoded screenshot data.
-     *
-     * @var string
-     */
-    public $contents;
-    /**
-     * Output only. [Output Only] Type of the resource. Always compute#screenshot
-     * for the screenshots.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] The Base64-encoded screenshot data.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Compute {
+    class Screenshot extends \Google\Model
     {
+        /**
+         * [Output Only] The Base64-encoded screenshot data.
+         *
+         * @var string
+         */
+        public $contents;
+        /**
+         * Output only. [Output Only] Type of the resource. Always compute#screenshot
+         * for the screenshots.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] The Base64-encoded screenshot data.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the resource. Always compute#screenshot
+         * for the screenshots.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\Screenshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the resource. Always compute#screenshot
-     * for the screenshots.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Compute_Screenshot extends \Google\Service\Compute\Screenshot
     {
     }
 }

@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DatabaseResourceRegex extends \Google\Model
-{
-    /**
-     * Regex to test the database name against. If empty, all databases match.
-     *
-     * @var string
-     */
-    public $databaseRegex;
-    /**
-     * Regex to test the database resource's name against. An example of a
-     * database resource name is a table's name. Other database resource names
-     * like view names could be included in the future. If empty, all database
-     * resources match.
-     *
-     * @var string
-     */
-    public $databaseResourceNameRegex;
-    /**
-     * Regex to test the instance name against. If empty, all instances match.
-     *
-     * @var string
-     */
-    public $instanceRegex;
-    /**
-     * For organizations, if unset, will match all projects. Has no effect for
-     * configurations created within a project.
-     *
-     * @var string
-     */
-    public $projectIdRegex;
-    /**
-     * Regex to test the database name against. If empty, all databases match.
-     *
-     * @param string $databaseRegex
-     */
-    public function setDatabaseRegex($databaseRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DatabaseResourceRegex extends \Google\Model
     {
+        /**
+         * Regex to test the database name against. If empty, all databases match.
+         *
+         * @var string
+         */
+        public $databaseRegex;
+        /**
+         * Regex to test the database resource's name against. An example of a
+         * database resource name is a table's name. Other database resource names
+         * like view names could be included in the future. If empty, all database
+         * resources match.
+         *
+         * @var string
+         */
+        public $databaseResourceNameRegex;
+        /**
+         * Regex to test the instance name against. If empty, all instances match.
+         *
+         * @var string
+         */
+        public $instanceRegex;
+        /**
+         * For organizations, if unset, will match all projects. Has no effect for
+         * configurations created within a project.
+         *
+         * @var string
+         */
+        public $projectIdRegex;
+        /**
+         * Regex to test the database name against. If empty, all databases match.
+         *
+         * @param string $databaseRegex
+         */
+        public function setDatabaseRegex($databaseRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseRegex()
+        {
+        }
+        /**
+         * Regex to test the database resource's name against. An example of a
+         * database resource name is a table's name. Other database resource names
+         * like view names could be included in the future. If empty, all database
+         * resources match.
+         *
+         * @param string $databaseResourceNameRegex
+         */
+        public function setDatabaseResourceNameRegex($databaseResourceNameRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseResourceNameRegex()
+        {
+        }
+        /**
+         * Regex to test the instance name against. If empty, all instances match.
+         *
+         * @param string $instanceRegex
+         */
+        public function setInstanceRegex($instanceRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceRegex()
+        {
+        }
+        /**
+         * For organizations, if unset, will match all projects. Has no effect for
+         * configurations created within a project.
+         *
+         * @param string $projectIdRegex
+         */
+        public function setProjectIdRegex($projectIdRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectIdRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DatabaseResourceRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseRegex()
-    {
-    }
-    /**
-     * Regex to test the database resource's name against. An example of a
-     * database resource name is a table's name. Other database resource names
-     * like view names could be included in the future. If empty, all database
-     * resources match.
-     *
-     * @param string $databaseResourceNameRegex
-     */
-    public function setDatabaseResourceNameRegex($databaseResourceNameRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseResourceNameRegex()
-    {
-    }
-    /**
-     * Regex to test the instance name against. If empty, all instances match.
-     *
-     * @param string $instanceRegex
-     */
-    public function setInstanceRegex($instanceRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceRegex()
-    {
-    }
-    /**
-     * For organizations, if unset, will match all projects. Has no effect for
-     * configurations created within a project.
-     *
-     * @param string $projectIdRegex
-     */
-    public function setProjectIdRegex($projectIdRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectIdRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2DatabaseResourceRegex extends \Google\Service\DLP\GooglePrivacyDlpV2DatabaseResourceRegex
     {
     }
 }

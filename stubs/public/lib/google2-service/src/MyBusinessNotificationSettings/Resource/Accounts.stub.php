@@ -21,50 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessNotificationSettings\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessnotificationsService = new Google\Service\MyBusinessNotificationSettings(...);
- *   $accounts = $mybusinessnotificationsService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessNotificationSettings\Resource {
+    use Google\Service\MyBusinessNotificationSettings\NotificationSetting;
     /**
-     * Returns the pubsub notification settings for the account.
-     * (accounts.getNotificationSetting)
-     *
-     * @param string $name Required. The resource name of the notification setting
-     * we are trying to fetch.
-     * @param array $optParams Optional parameters.
-     * @return NotificationSetting
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessnotificationsService = new Google\Service\MyBusinessNotificationSettings(...);
+     *   $accounts = $mybusinessnotificationsService->accounts;
+     *  </code>
      */
-    public function getNotificationSetting($name, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Returns the pubsub notification settings for the account.
+         * (accounts.getNotificationSetting)
+         *
+         * @param string $name Required. The resource name of the notification setting
+         * we are trying to fetch.
+         * @param array $optParams Optional parameters.
+         * @return NotificationSetting
+         * @throws \Google\Service\Exception
+         */
+        public function getNotificationSetting($name, $optParams = [])
+        {
+        }
+        /**
+         * Sets the pubsub notification setting for the account informing Google which
+         * topic to send pubsub notifications for. Use the notification_types field
+         * within notification_setting to manipulate the events an account wants to
+         * subscribe to. An account will only have one notification setting resource,
+         * and only one pubsub topic can be set. To delete the setting, update with an
+         * empty notification_types (accounts.updateNotificationSetting)
+         *
+         * @param string $name Required. The resource name this setting is for. This is
+         * of the form `accounts/{account_id}/notificationSetting`.
+         * @param NotificationSetting $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The specific fields that should be
+         * updated. The only editable field is notification_setting.
+         * @return NotificationSetting
+         * @throws \Google\Service\Exception
+         */
+        public function updateNotificationSetting($name, NotificationSetting $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the pubsub notification setting for the account informing Google which
-     * topic to send pubsub notifications for. Use the notification_types field
-     * within notification_setting to manipulate the events an account wants to
-     * subscribe to. An account will only have one notification setting resource,
-     * and only one pubsub topic can be set. To delete the setting, update with an
-     * empty notification_types (accounts.updateNotificationSetting)
-     *
-     * @param string $name Required. The resource name this setting is for. This is
-     * of the form `accounts/{account_id}/notificationSetting`.
-     * @param NotificationSetting $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The specific fields that should be
-     * updated. The only editable field is notification_setting.
-     * @return NotificationSetting
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessNotificationSettings\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateNotificationSetting($name, NotificationSetting $postBody, $optParams = [])
+    class Google_Service_MyBusinessNotificationSettings_Resource_Accounts extends \Google\Service\MyBusinessNotificationSettings\Resource\Accounts
     {
     }
 }

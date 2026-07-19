@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class AddMessageRequest extends \Google\Model
-{
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
+namespace Google\Service\Walletobjects {
+    class AddMessageRequest extends \Google\Model
     {
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message
+     * Runtime class alias of \Google\Service\Walletobjects\AddMessageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_Walletobjects_AddMessageRequest extends \Google\Service\Walletobjects\AddMessageRequest
     {
     }
 }

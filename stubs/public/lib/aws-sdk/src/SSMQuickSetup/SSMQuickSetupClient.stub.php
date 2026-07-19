@@ -8,6 +8,7 @@
  */
 namespace Aws\SSMQuickSetup;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Systems Manager QuickSetup** service.
  * @method \Aws\Result createConfigurationManager(array $args = [])

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2AlternatePolicySpec extends \Google\Model
-{
-    /**
-     * Reference to the launch that will be used while audit logging and to
-     * control the launch. Should be set only in the alternate policy.
-     *
-     * @var string
-     */
-    public $launch;
-    protected $specType = GoogleCloudOrgpolicyV2PolicySpec::class;
-    protected $specDataType = '';
-    /**
-     * Reference to the launch that will be used while audit logging and to
-     * control the launch. Should be set only in the alternate policy.
-     *
-     * @param string $launch
-     */
-    public function setLaunch($launch)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2AlternatePolicySpec extends \Google\Model
     {
+        /**
+         * Reference to the launch that will be used while audit logging and to
+         * control the launch. Should be set only in the alternate policy.
+         *
+         * @var string
+         */
+        public $launch;
+        protected $specType = GoogleCloudOrgpolicyV2PolicySpec::class;
+        protected $specDataType = '';
+        /**
+         * Reference to the launch that will be used while audit logging and to
+         * control the launch. Should be set only in the alternate policy.
+         *
+         * @param string $launch
+         */
+        public function setLaunch($launch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunch()
+        {
+        }
+        /**
+         * Specify constraint for configurations of Google Cloud resources.
+         *
+         * @param GoogleCloudOrgpolicyV2PolicySpec $spec
+         */
+        public function setSpec(GoogleCloudOrgpolicyV2PolicySpec $spec)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2PolicySpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2AlternatePolicySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLaunch()
-    {
-    }
-    /**
-     * Specify constraint for configurations of Google Cloud resources.
-     *
-     * @param GoogleCloudOrgpolicyV2PolicySpec $spec
-     */
-    public function setSpec(GoogleCloudOrgpolicyV2PolicySpec $spec)
-    {
-    }
-    /**
-     * @return GoogleCloudOrgpolicyV2PolicySpec
-     */
-    public function getSpec()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2AlternatePolicySpec extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2AlternatePolicySpec
     {
     }
 }

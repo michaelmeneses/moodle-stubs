@@ -21,236 +21,245 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class PackageNote extends \Google\Collection
-{
-    /**
-     * Unknown architecture.
-     */
-    public const ARCHITECTURE_ARCHITECTURE_UNSPECIFIED = 'ARCHITECTURE_UNSPECIFIED';
-    /**
-     * X86 architecture.
-     */
-    public const ARCHITECTURE_X86 = 'X86';
-    /**
-     * X64 architecture.
-     */
-    public const ARCHITECTURE_X64 = 'X64';
-    protected $collection_key = 'distribution';
-    /**
-     * The CPU architecture for which packages in this distribution channel were
-     * built. Architecture will be blank for language packages.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * The cpe_uri in [CPE format](https://cpe.mitre.org/specification/) denoting
-     * the package manager version distributing a package. The cpe_uri will be
-     * blank for language packages.
-     *
-     * @var string
-     */
-    public $cpeUri;
-    /**
-     * The description of this package.
-     *
-     * @var string
-     */
-    public $description;
-    protected $digestType = Digest::class;
-    protected $digestDataType = 'array';
-    protected $distributionType = Distribution::class;
-    protected $distributionDataType = 'array';
-    protected $licenseType = License::class;
-    protected $licenseDataType = '';
-    /**
-     * A freeform text denoting the maintainer of this package.
-     *
-     * @var string
-     */
-    public $maintainer;
-    /**
-     * Required. Immutable. The name of the package.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of package; whether native or non native (e.g., ruby gems, node.js
-     * packages, etc.).
-     *
-     * @var string
-     */
-    public $packageType;
-    /**
-     * The homepage for this package.
-     *
-     * @var string
-     */
-    public $url;
-    protected $versionType = Version::class;
-    protected $versionDataType = '';
-    /**
-     * The CPU architecture for which packages in this distribution channel were
-     * built. Architecture will be blank for language packages.
-     *
-     * Accepted values: ARCHITECTURE_UNSPECIFIED, X86, X64
-     *
-     * @param self::ARCHITECTURE_* $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\ContainerAnalysis {
+    class PackageNote extends \Google\Collection
     {
+        /**
+         * Unknown architecture.
+         */
+        public const ARCHITECTURE_ARCHITECTURE_UNSPECIFIED = 'ARCHITECTURE_UNSPECIFIED';
+        /**
+         * X86 architecture.
+         */
+        public const ARCHITECTURE_X86 = 'X86';
+        /**
+         * X64 architecture.
+         */
+        public const ARCHITECTURE_X64 = 'X64';
+        protected $collection_key = 'distribution';
+        /**
+         * The CPU architecture for which packages in this distribution channel were
+         * built. Architecture will be blank for language packages.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * The cpe_uri in [CPE format](https://cpe.mitre.org/specification/) denoting
+         * the package manager version distributing a package. The cpe_uri will be
+         * blank for language packages.
+         *
+         * @var string
+         */
+        public $cpeUri;
+        /**
+         * The description of this package.
+         *
+         * @var string
+         */
+        public $description;
+        protected $digestType = Digest::class;
+        protected $digestDataType = 'array';
+        protected $distributionType = Distribution::class;
+        protected $distributionDataType = 'array';
+        protected $licenseType = License::class;
+        protected $licenseDataType = '';
+        /**
+         * A freeform text denoting the maintainer of this package.
+         *
+         * @var string
+         */
+        public $maintainer;
+        /**
+         * Required. Immutable. The name of the package.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of package; whether native or non native (e.g., ruby gems, node.js
+         * packages, etc.).
+         *
+         * @var string
+         */
+        public $packageType;
+        /**
+         * The homepage for this package.
+         *
+         * @var string
+         */
+        public $url;
+        protected $versionType = Version::class;
+        protected $versionDataType = '';
+        /**
+         * The CPU architecture for which packages in this distribution channel were
+         * built. Architecture will be blank for language packages.
+         *
+         * Accepted values: ARCHITECTURE_UNSPECIFIED, X86, X64
+         *
+         * @param self::ARCHITECTURE_* $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return self::ARCHITECTURE_*
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * The cpe_uri in [CPE format](https://cpe.mitre.org/specification/) denoting
+         * the package manager version distributing a package. The cpe_uri will be
+         * blank for language packages.
+         *
+         * @param string $cpeUri
+         */
+        public function setCpeUri($cpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpeUri()
+        {
+        }
+        /**
+         * The description of this package.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Hash value, typically a file digest, that allows unique identification a
+         * specific package.
+         *
+         * @param Digest[] $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return Digest[]
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * Deprecated. The various channels by which a package is distributed.
+         *
+         * @param Distribution[] $distribution
+         */
+        public function setDistribution($distribution)
+        {
+        }
+        /**
+         * @return Distribution[]
+         */
+        public function getDistribution()
+        {
+        }
+        /**
+         * Licenses that have been declared by the authors of the package.
+         *
+         * @param License $license
+         */
+        public function setLicense(License $license)
+        {
+        }
+        /**
+         * @return License
+         */
+        public function getLicense()
+        {
+        }
+        /**
+         * A freeform text denoting the maintainer of this package.
+         *
+         * @param string $maintainer
+         */
+        public function setMaintainer($maintainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaintainer()
+        {
+        }
+        /**
+         * Required. Immutable. The name of the package.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of package; whether native or non native (e.g., ruby gems, node.js
+         * packages, etc.).
+         *
+         * @param string $packageType
+         */
+        public function setPackageType($packageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageType()
+        {
+        }
+        /**
+         * The homepage for this package.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * The version of the package.
+         *
+         * @param Version $version
+         */
+        public function setVersion(Version $version)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ARCHITECTURE_*
+     * Runtime class alias of \Google\Service\ContainerAnalysis\PackageNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * The cpe_uri in [CPE format](https://cpe.mitre.org/specification/) denoting
-     * the package manager version distributing a package. The cpe_uri will be
-     * blank for language packages.
-     *
-     * @param string $cpeUri
-     */
-    public function setCpeUri($cpeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpeUri()
-    {
-    }
-    /**
-     * The description of this package.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Hash value, typically a file digest, that allows unique identification a
-     * specific package.
-     *
-     * @param Digest[] $digest
-     */
-    public function setDigest($digest)
-    {
-    }
-    /**
-     * @return Digest[]
-     */
-    public function getDigest()
-    {
-    }
-    /**
-     * Deprecated. The various channels by which a package is distributed.
-     *
-     * @param Distribution[] $distribution
-     */
-    public function setDistribution($distribution)
-    {
-    }
-    /**
-     * @return Distribution[]
-     */
-    public function getDistribution()
-    {
-    }
-    /**
-     * Licenses that have been declared by the authors of the package.
-     *
-     * @param License $license
-     */
-    public function setLicense(License $license)
-    {
-    }
-    /**
-     * @return License
-     */
-    public function getLicense()
-    {
-    }
-    /**
-     * A freeform text denoting the maintainer of this package.
-     *
-     * @param string $maintainer
-     */
-    public function setMaintainer($maintainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaintainer()
-    {
-    }
-    /**
-     * Required. Immutable. The name of the package.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of package; whether native or non native (e.g., ruby gems, node.js
-     * packages, etc.).
-     *
-     * @param string $packageType
-     */
-    public function setPackageType($packageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageType()
-    {
-    }
-    /**
-     * The homepage for this package.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * The version of the package.
-     *
-     * @param Version $version
-     */
-    public function setVersion(Version $version)
-    {
-    }
-    /**
-     * @return Version
-     */
-    public function getVersion()
+    class Google_Service_ContainerAnalysis_PackageNote extends \Google\Service\ContainerAnalysis\PackageNote
     {
     }
 }

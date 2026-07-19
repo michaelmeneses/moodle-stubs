@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeNativeAdImage extends \Google\Model
-{
-    public $height;
-    public $url;
-    public $width;
-    public function setHeight($height)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeNativeAdImage extends \Google\Model
     {
+        public $height;
+        public $url;
+        public $width;
+        public function setHeight($height)
+        {
+        }
+        public function getHeight()
+        {
+        }
+        public function setUrl($url)
+        {
+        }
+        public function getUrl()
+        {
+        }
+        public function setWidth($width)
+        {
+        }
+        public function getWidth()
+        {
+        }
     }
-    public function getHeight()
-    {
-    }
-    public function setUrl($url)
-    {
-    }
-    public function getUrl()
-    {
-    }
-    public function setWidth($width)
-    {
-    }
-    public function getWidth()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeNativeAdImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_CreativeNativeAdImage extends \Google\Service\AdExchangeBuyer\CreativeNativeAdImage
     {
     }
 }

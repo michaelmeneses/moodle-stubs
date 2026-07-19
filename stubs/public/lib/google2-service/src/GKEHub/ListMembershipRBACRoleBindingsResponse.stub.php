@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListMembershipRBACRoleBindingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rbacrolebindingsType = RBACRoleBinding::class;
-    protected $rbacrolebindingsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GKEHub {
+    class ListMembershipRBACRoleBindingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rbacrolebindingsType = RBACRoleBinding::class;
+        protected $rbacrolebindingsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RBACRoleBinding[]
+         */
+        public function setRbacrolebindings($rbacrolebindings)
+        {
+        }
+        /**
+         * @return RBACRoleBinding[]
+         */
+        public function getRbacrolebindings()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ListMembershipRBACRoleBindingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RBACRoleBinding[]
-     */
-    public function setRbacrolebindings($rbacrolebindings)
-    {
-    }
-    /**
-     * @return RBACRoleBinding[]
-     */
-    public function getRbacrolebindings()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GKEHub_ListMembershipRBACRoleBindingsResponse extends \Google\Service\GKEHub\ListMembershipRBACRoleBindingsResponse
     {
     }
 }

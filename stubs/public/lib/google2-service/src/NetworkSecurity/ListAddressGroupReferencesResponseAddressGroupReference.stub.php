@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListAddressGroupReferencesResponseAddressGroupReference extends \Google\Model
-{
-    /**
-     * FirewallPolicy that is using the Address Group.
-     *
-     * @var string
-     */
-    public $firewallPolicy;
-    /**
-     * Rule priority of the FirewallPolicy that is using the Address Group.
-     *
-     * @var int
-     */
-    public $rulePriority;
-    /**
-     * Cloud Armor SecurityPolicy that is using the Address Group.
-     *
-     * @var string
-     */
-    public $securityPolicy;
-    /**
-     * FirewallPolicy that is using the Address Group.
-     *
-     * @param string $firewallPolicy
-     */
-    public function setFirewallPolicy($firewallPolicy)
+namespace Google\Service\NetworkSecurity {
+    class ListAddressGroupReferencesResponseAddressGroupReference extends \Google\Model
     {
+        /**
+         * FirewallPolicy that is using the Address Group.
+         *
+         * @var string
+         */
+        public $firewallPolicy;
+        /**
+         * Rule priority of the FirewallPolicy that is using the Address Group.
+         *
+         * @var int
+         */
+        public $rulePriority;
+        /**
+         * Cloud Armor SecurityPolicy that is using the Address Group.
+         *
+         * @var string
+         */
+        public $securityPolicy;
+        /**
+         * FirewallPolicy that is using the Address Group.
+         *
+         * @param string $firewallPolicy
+         */
+        public function setFirewallPolicy($firewallPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirewallPolicy()
+        {
+        }
+        /**
+         * Rule priority of the FirewallPolicy that is using the Address Group.
+         *
+         * @param int $rulePriority
+         */
+        public function setRulePriority($rulePriority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRulePriority()
+        {
+        }
+        /**
+         * Cloud Armor SecurityPolicy that is using the Address Group.
+         *
+         * @param string $securityPolicy
+         */
+        public function setSecurityPolicy($securityPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListAddressGroupReferencesResponseAddressGroupReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallPolicy()
-    {
-    }
-    /**
-     * Rule priority of the FirewallPolicy that is using the Address Group.
-     *
-     * @param int $rulePriority
-     */
-    public function setRulePriority($rulePriority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRulePriority()
-    {
-    }
-    /**
-     * Cloud Armor SecurityPolicy that is using the Address Group.
-     *
-     * @param string $securityPolicy
-     */
-    public function setSecurityPolicy($securityPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurityPolicy()
+    class Google_Service_NetworkSecurity_ListAddressGroupReferencesResponseAddressGroupReference extends \Google\Service\NetworkSecurity\ListAddressGroupReferencesResponseAddressGroupReference
     {
     }
 }

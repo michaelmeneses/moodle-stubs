@@ -29,6 +29,10 @@
  */
 namespace tool_admin_presets\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Class containing data for export and import template
  *

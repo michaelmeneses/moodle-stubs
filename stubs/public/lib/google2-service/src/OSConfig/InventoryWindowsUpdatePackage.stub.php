@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryWindowsUpdatePackage extends \Google\Collection
-{
-    protected $collection_key = 'moreInfoUrls';
-    protected $categoriesType = InventoryWindowsUpdatePackageWindowsUpdateCategory::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string[]
-     */
-    public $kbArticleIds;
-    /**
-     * @var string
-     */
-    public $lastDeploymentChangeTime;
-    /**
-     * @var string[]
-     */
-    public $moreInfoUrls;
-    /**
-     * @var int
-     */
-    public $revisionNumber;
-    /**
-     * @var string
-     */
-    public $supportUrl;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $updateId;
-    /**
-     * @param InventoryWindowsUpdatePackageWindowsUpdateCategory[]
-     */
-    public function setCategories($categories)
+namespace Google\Service\OSConfig {
+    class InventoryWindowsUpdatePackage extends \Google\Collection
     {
+        protected $collection_key = 'moreInfoUrls';
+        protected $categoriesType = InventoryWindowsUpdatePackageWindowsUpdateCategory::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string[]
+         */
+        public $kbArticleIds;
+        /**
+         * @var string
+         */
+        public $lastDeploymentChangeTime;
+        /**
+         * @var string[]
+         */
+        public $moreInfoUrls;
+        /**
+         * @var int
+         */
+        public $revisionNumber;
+        /**
+         * @var string
+         */
+        public $supportUrl;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $updateId;
+        /**
+         * @param InventoryWindowsUpdatePackageWindowsUpdateCategory[]
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return InventoryWindowsUpdatePackageWindowsUpdateCategory[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setKbArticleIds($kbArticleIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getKbArticleIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastDeploymentChangeTime($lastDeploymentChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastDeploymentChangeTime()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMoreInfoUrls($moreInfoUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMoreInfoUrls()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRevisionNumber($revisionNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRevisionNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSupportUrl($supportUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateId($updateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventoryWindowsUpdatePackageWindowsUpdateCategory[]
+     * Runtime class alias of \Google\Service\OSConfig\InventoryWindowsUpdatePackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setKbArticleIds($kbArticleIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getKbArticleIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastDeploymentChangeTime($lastDeploymentChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastDeploymentChangeTime()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMoreInfoUrls($moreInfoUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMoreInfoUrls()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRevisionNumber($revisionNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRevisionNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSupportUrl($supportUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateId($updateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateId()
+    class Google_Service_OSConfig_InventoryWindowsUpdatePackage extends \Google\Service\OSConfig\InventoryWindowsUpdatePackage
     {
     }
 }

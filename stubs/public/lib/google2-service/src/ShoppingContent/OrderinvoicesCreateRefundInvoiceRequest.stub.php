@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderinvoicesCreateRefundInvoiceRequest extends \Google\Collection
-{
-    protected $collection_key = 'shipmentInvoices';
-    /**
-     * @var string
-     */
-    public $invoiceId;
-    /**
-     * @var string
-     */
-    public $operationId;
-    protected $refundOnlyOptionType = OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption::class;
-    protected $refundOnlyOptionDataType = '';
-    protected $returnOptionType = OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption::class;
-    protected $returnOptionDataType = '';
-    protected $shipmentInvoicesType = ShipmentInvoice::class;
-    protected $shipmentInvoicesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setInvoiceId($invoiceId)
+namespace Google\Service\ShoppingContent {
+    class OrderinvoicesCreateRefundInvoiceRequest extends \Google\Collection
     {
+        protected $collection_key = 'shipmentInvoices';
+        /**
+         * @var string
+         */
+        public $invoiceId;
+        /**
+         * @var string
+         */
+        public $operationId;
+        protected $refundOnlyOptionType = OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption::class;
+        protected $refundOnlyOptionDataType = '';
+        protected $returnOptionType = OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption::class;
+        protected $returnOptionDataType = '';
+        protected $shipmentInvoicesType = ShipmentInvoice::class;
+        protected $shipmentInvoicesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setInvoiceId($invoiceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvoiceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
+         */
+        public function setRefundOnlyOption(OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption $refundOnlyOption)
+        {
+        }
+        /**
+         * @return OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
+         */
+        public function getRefundOnlyOption()
+        {
+        }
+        /**
+         * @param OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption
+         */
+        public function setReturnOption(OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption $returnOption)
+        {
+        }
+        /**
+         * @return OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption
+         */
+        public function getReturnOption()
+        {
+        }
+        /**
+         * @param ShipmentInvoice[]
+         */
+        public function setShipmentInvoices($shipmentInvoices)
+        {
+        }
+        /**
+         * @return ShipmentInvoice[]
+         */
+        public function getShipmentInvoices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderinvoicesCreateRefundInvoiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvoiceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
-     */
-    public function setRefundOnlyOption(OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption $refundOnlyOption)
-    {
-    }
-    /**
-     * @return OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
-     */
-    public function getRefundOnlyOption()
-    {
-    }
-    /**
-     * @param OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption
-     */
-    public function setReturnOption(OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption $returnOption)
-    {
-    }
-    /**
-     * @return OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption
-     */
-    public function getReturnOption()
-    {
-    }
-    /**
-     * @param ShipmentInvoice[]
-     */
-    public function setShipmentInvoices($shipmentInvoices)
-    {
-    }
-    /**
-     * @return ShipmentInvoice[]
-     */
-    public function getShipmentInvoices()
+    class Google_Service_ShoppingContent_OrderinvoicesCreateRefundInvoiceRequest extends \Google\Service\ShoppingContent\OrderinvoicesCreateRefundInvoiceRequest
     {
     }
 }

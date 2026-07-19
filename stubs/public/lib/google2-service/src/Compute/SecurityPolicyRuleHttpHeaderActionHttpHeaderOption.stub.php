@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleHttpHeaderActionHttpHeaderOption extends \Google\Model
-{
-    /**
-     * The name of the header to set.
-     *
-     * @var string
-     */
-    public $headerName;
-    /**
-     * The value to set the named header to.
-     *
-     * @var string
-     */
-    public $headerValue;
-    /**
-     * The name of the header to set.
-     *
-     * @param string $headerName
-     */
-    public function setHeaderName($headerName)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleHttpHeaderActionHttpHeaderOption extends \Google\Model
     {
+        /**
+         * The name of the header to set.
+         *
+         * @var string
+         */
+        public $headerName;
+        /**
+         * The value to set the named header to.
+         *
+         * @var string
+         */
+        public $headerValue;
+        /**
+         * The name of the header to set.
+         *
+         * @param string $headerName
+         */
+        public function setHeaderName($headerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderName()
+        {
+        }
+        /**
+         * The value to set the named header to.
+         *
+         * @param string $headerValue
+         */
+        public function setHeaderValue($headerValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleHttpHeaderActionHttpHeaderOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderName()
-    {
-    }
-    /**
-     * The value to set the named header to.
-     *
-     * @param string $headerValue
-     */
-    public function setHeaderValue($headerValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeaderValue()
+    class Google_Service_Compute_SecurityPolicyRuleHttpHeaderActionHttpHeaderOption extends \Google\Service\Compute\SecurityPolicyRuleHttpHeaderActionHttpHeaderOption
     {
     }
 }

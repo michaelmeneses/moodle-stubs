@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiaAboutPageSettings extends \Google\Model
-{
-    /**
-     * The status of the verification process for the About page. Supported values
-     * are: - "`active`" - "`inactive`" - "`pending`"
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The URL for the About page.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The status of the verification process for the About page. Supported values
-     * are: - "`active`" - "`inactive`" - "`pending`"
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
+namespace Google\Service\ShoppingContent {
+    class LiaAboutPageSettings extends \Google\Model
     {
+        /**
+         * The status of the verification process for the About page. Supported values
+         * are: - "`active`" - "`inactive`" - "`pending`"
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The URL for the About page.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The status of the verification process for the About page. Supported values
+         * are: - "`active`" - "`inactive`" - "`pending`"
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The URL for the About page.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LiaAboutPageSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * The URL for the About page.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_ShoppingContent_LiaAboutPageSettings extends \Google\Service\ShoppingContent\LiaAboutPageSettings
     {
     }
 }

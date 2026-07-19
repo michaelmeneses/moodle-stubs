@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdGroupAssignedTargetingOption extends \Google\Model
-{
-    /**
-     * The ID of the ad group the assigned targeting option is assigned to.
-     *
-     * @var string
-     */
-    public $adGroupId;
-    protected $assignedTargetingOptionType = AssignedTargetingOption::class;
-    protected $assignedTargetingOptionDataType = '';
-    /**
-     * The ID of the ad group the assigned targeting option is assigned to.
-     *
-     * @param string $adGroupId
-     */
-    public function setAdGroupId($adGroupId)
+namespace Google\Service\DisplayVideo {
+    class AdGroupAssignedTargetingOption extends \Google\Model
     {
+        /**
+         * The ID of the ad group the assigned targeting option is assigned to.
+         *
+         * @var string
+         */
+        public $adGroupId;
+        protected $assignedTargetingOptionType = AssignedTargetingOption::class;
+        protected $assignedTargetingOptionDataType = '';
+        /**
+         * The ID of the ad group the assigned targeting option is assigned to.
+         *
+         * @param string $adGroupId
+         */
+        public function setAdGroupId($adGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupId()
+        {
+        }
+        /**
+         * The assigned targeting option resource.
+         *
+         * @param AssignedTargetingOption $assignedTargetingOption
+         */
+        public function setAssignedTargetingOption(AssignedTargetingOption $assignedTargetingOption)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption
+         */
+        public function getAssignedTargetingOption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AdGroupAssignedTargetingOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupId()
-    {
-    }
-    /**
-     * The assigned targeting option resource.
-     *
-     * @param AssignedTargetingOption $assignedTargetingOption
-     */
-    public function setAssignedTargetingOption(AssignedTargetingOption $assignedTargetingOption)
-    {
-    }
-    /**
-     * @return AssignedTargetingOption
-     */
-    public function getAssignedTargetingOption()
+    class Google_Service_DisplayVideo_AdGroupAssignedTargetingOption extends \Google\Service\DisplayVideo\AdGroupAssignedTargetingOption
     {
     }
 }

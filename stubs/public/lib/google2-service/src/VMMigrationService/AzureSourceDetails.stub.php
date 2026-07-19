@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AzureSourceDetails extends \Google\Model
-{
-    /**
-     * The state is unknown. This is used for API compatibility only and is not
-     * used by the system.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The state was not sampled by the health checks yet.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The source is available but might not be usable yet due to invalid
-     * credentials or another reason. The error message will contain further
-     * details.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The source exists and its credentials were verified.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Immutable. The Azure location (region) that the source VMs will be migrated
-     * from.
-     *
-     * @var string
-     */
-    public $azureLocation;
-    protected $clientSecretCredsType = ClientSecretCredentials::class;
-    protected $clientSecretCredsDataType = '';
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * User specified tags to add to every M2VM generated resource in Azure. These
-     * tags will be set in addition to the default tags that are set as part of
-     * the migration process. The tags must not begin with the reserved prefix
-     * `m4ce` or `m2vm`.
-     *
-     * @var string[]
-     */
-    public $migrationResourcesUserTags;
-    /**
-     * Output only. The ID of the Azure resource group that contains all resources
-     * related to the migration process of this source.
-     *
-     * @var string
-     */
-    public $resourceGroupId;
-    /**
-     * Output only. State of the source as determined by the health check.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Immutable. Azure subscription ID.
-     *
-     * @var string
-     */
-    public $subscriptionId;
-    /**
-     * Immutable. The Azure location (region) that the source VMs will be migrated
-     * from.
-     *
-     * @param string $azureLocation
-     */
-    public function setAzureLocation($azureLocation)
+namespace Google\Service\VMMigrationService {
+    class AzureSourceDetails extends \Google\Model
     {
+        /**
+         * The state is unknown. This is used for API compatibility only and is not
+         * used by the system.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The state was not sampled by the health checks yet.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The source is available but might not be usable yet due to invalid
+         * credentials or another reason. The error message will contain further
+         * details.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The source exists and its credentials were verified.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Immutable. The Azure location (region) that the source VMs will be migrated
+         * from.
+         *
+         * @var string
+         */
+        public $azureLocation;
+        protected $clientSecretCredsType = ClientSecretCredentials::class;
+        protected $clientSecretCredsDataType = '';
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * User specified tags to add to every M2VM generated resource in Azure. These
+         * tags will be set in addition to the default tags that are set as part of
+         * the migration process. The tags must not begin with the reserved prefix
+         * `m4ce` or `m2vm`.
+         *
+         * @var string[]
+         */
+        public $migrationResourcesUserTags;
+        /**
+         * Output only. The ID of the Azure resource group that contains all resources
+         * related to the migration process of this source.
+         *
+         * @var string
+         */
+        public $resourceGroupId;
+        /**
+         * Output only. State of the source as determined by the health check.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Immutable. Azure subscription ID.
+         *
+         * @var string
+         */
+        public $subscriptionId;
+        /**
+         * Immutable. The Azure location (region) that the source VMs will be migrated
+         * from.
+         *
+         * @param string $azureLocation
+         */
+        public function setAzureLocation($azureLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAzureLocation()
+        {
+        }
+        /**
+         * Azure Credentials using tenant ID, client ID and secret.
+         *
+         * @param ClientSecretCredentials $clientSecretCreds
+         */
+        public function setClientSecretCreds(ClientSecretCredentials $clientSecretCreds)
+        {
+        }
+        /**
+         * @return ClientSecretCredentials
+         */
+        public function getClientSecretCreds()
+        {
+        }
+        /**
+         * Output only. Provides details on the state of the Source in case of an
+         * error.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * User specified tags to add to every M2VM generated resource in Azure. These
+         * tags will be set in addition to the default tags that are set as part of
+         * the migration process. The tags must not begin with the reserved prefix
+         * `m4ce` or `m2vm`.
+         *
+         * @param string[] $migrationResourcesUserTags
+         */
+        public function setMigrationResourcesUserTags($migrationResourcesUserTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMigrationResourcesUserTags()
+        {
+        }
+        /**
+         * Output only. The ID of the Azure resource group that contains all resources
+         * related to the migration process of this source.
+         *
+         * @param string $resourceGroupId
+         */
+        public function setResourceGroupId($resourceGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceGroupId()
+        {
+        }
+        /**
+         * Output only. State of the source as determined by the health check.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, FAILED, ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Immutable. Azure subscription ID.
+         *
+         * @param string $subscriptionId
+         */
+        public function setSubscriptionId($subscriptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\AzureSourceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAzureLocation()
-    {
-    }
-    /**
-     * Azure Credentials using tenant ID, client ID and secret.
-     *
-     * @param ClientSecretCredentials $clientSecretCreds
-     */
-    public function setClientSecretCreds(ClientSecretCredentials $clientSecretCreds)
-    {
-    }
-    /**
-     * @return ClientSecretCredentials
-     */
-    public function getClientSecretCreds()
-    {
-    }
-    /**
-     * Output only. Provides details on the state of the Source in case of an
-     * error.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * User specified tags to add to every M2VM generated resource in Azure. These
-     * tags will be set in addition to the default tags that are set as part of
-     * the migration process. The tags must not begin with the reserved prefix
-     * `m4ce` or `m2vm`.
-     *
-     * @param string[] $migrationResourcesUserTags
-     */
-    public function setMigrationResourcesUserTags($migrationResourcesUserTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMigrationResourcesUserTags()
-    {
-    }
-    /**
-     * Output only. The ID of the Azure resource group that contains all resources
-     * related to the migration process of this source.
-     *
-     * @param string $resourceGroupId
-     */
-    public function setResourceGroupId($resourceGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceGroupId()
-    {
-    }
-    /**
-     * Output only. State of the source as determined by the health check.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, FAILED, ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Immutable. Azure subscription ID.
-     *
-     * @param string $subscriptionId
-     */
-    public function setSubscriptionId($subscriptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriptionId()
+    class Google_Service_VMMigrationService_AzureSourceDetails extends \Google\Service\VMMigrationService\AzureSourceDetails
     {
     }
 }

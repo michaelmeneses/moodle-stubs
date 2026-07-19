@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3LogImpressionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'impressions';
-    protected $clientInfoType = GoogleMapsUnityClientInfo::class;
-    protected $clientInfoDataType = '';
-    protected $impressionsType = GoogleMapsPlayablelocationsV3Impression::class;
-    protected $impressionsDataType = 'array';
-    public $requestId;
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3LogImpressionsRequest extends \Google\Collection
+    {
+        protected $collection_key = 'impressions';
+        protected $clientInfoType = GoogleMapsUnityClientInfo::class;
+        protected $clientInfoDataType = '';
+        protected $impressionsType = GoogleMapsPlayablelocationsV3Impression::class;
+        protected $impressionsDataType = 'array';
+        public $requestId;
+        /**
+         * @param GoogleMapsUnityClientInfo
+         */
+        public function setClientInfo(GoogleMapsUnityClientInfo $clientInfo)
+        {
+        }
+        /**
+         * @return GoogleMapsUnityClientInfo
+         */
+        public function getClientInfo()
+        {
+        }
+        /**
+         * @param GoogleMapsPlayablelocationsV3Impression[]
+         */
+        public function setImpressions($impressions)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3Impression[]
+         */
+        public function getImpressions()
+        {
+        }
+        public function setRequestId($requestId)
+        {
+        }
+        public function getRequestId()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleMapsUnityClientInfo
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogImpressionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setClientInfo(GoogleMapsUnityClientInfo $clientInfo)
-    {
-    }
-    /**
-     * @return GoogleMapsUnityClientInfo
-     */
-    public function getClientInfo()
-    {
-    }
-    /**
-     * @param GoogleMapsPlayablelocationsV3Impression[]
-     */
-    public function setImpressions($impressions)
-    {
-    }
-    /**
-     * @return GoogleMapsPlayablelocationsV3Impression[]
-     */
-    public function getImpressions()
-    {
-    }
-    public function setRequestId($requestId)
-    {
-    }
-    public function getRequestId()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3LogImpressionsRequest extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogImpressionsRequest
     {
     }
 }

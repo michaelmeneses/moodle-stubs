@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentConfigurationConstraintsBgpPeerASNRange extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $max;
-    /**
-     * @var string
-     */
-    public $min;
-    /**
-     * @param string $max
-     */
-    public function setMax($max)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentConfigurationConstraintsBgpPeerASNRange extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $max;
+        /**
+         * @var string
+         */
+        public $min;
+        /**
+         * @param string $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * @param string $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentConfigurationConstraintsBgpPeerASNRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * @param string $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMin()
+    class Google_Service_Compute_InterconnectAttachmentConfigurationConstraintsBgpPeerASNRange extends \Google\Service\Compute\InterconnectAttachmentConfigurationConstraintsBgpPeerASNRange
     {
     }
 }

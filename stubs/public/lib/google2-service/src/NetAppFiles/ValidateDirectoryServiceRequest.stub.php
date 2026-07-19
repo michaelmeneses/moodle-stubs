@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ValidateDirectoryServiceRequest extends \Google\Model
-{
-    /**
-     * Directory service type is not specified.
-     */
-    public const DIRECTORY_SERVICE_TYPE_DIRECTORY_SERVICE_TYPE_UNSPECIFIED = 'DIRECTORY_SERVICE_TYPE_UNSPECIFIED';
-    /**
-     * Active directory policy attached to the storage pool.
-     */
-    public const DIRECTORY_SERVICE_TYPE_ACTIVE_DIRECTORY = 'ACTIVE_DIRECTORY';
-    /**
-     * Type of directory service policy attached to the storage pool.
-     *
-     * @var string
-     */
-    public $directoryServiceType;
-    /**
-     * Type of directory service policy attached to the storage pool.
-     *
-     * Accepted values: DIRECTORY_SERVICE_TYPE_UNSPECIFIED, ACTIVE_DIRECTORY
-     *
-     * @param self::DIRECTORY_SERVICE_TYPE_* $directoryServiceType
-     */
-    public function setDirectoryServiceType($directoryServiceType)
+namespace Google\Service\NetAppFiles {
+    class ValidateDirectoryServiceRequest extends \Google\Model
     {
+        /**
+         * Directory service type is not specified.
+         */
+        public const DIRECTORY_SERVICE_TYPE_DIRECTORY_SERVICE_TYPE_UNSPECIFIED = 'DIRECTORY_SERVICE_TYPE_UNSPECIFIED';
+        /**
+         * Active directory policy attached to the storage pool.
+         */
+        public const DIRECTORY_SERVICE_TYPE_ACTIVE_DIRECTORY = 'ACTIVE_DIRECTORY';
+        /**
+         * Type of directory service policy attached to the storage pool.
+         *
+         * @var string
+         */
+        public $directoryServiceType;
+        /**
+         * Type of directory service policy attached to the storage pool.
+         *
+         * Accepted values: DIRECTORY_SERVICE_TYPE_UNSPECIFIED, ACTIVE_DIRECTORY
+         *
+         * @param self::DIRECTORY_SERVICE_TYPE_* $directoryServiceType
+         */
+        public function setDirectoryServiceType($directoryServiceType)
+        {
+        }
+        /**
+         * @return self::DIRECTORY_SERVICE_TYPE_*
+         */
+        public function getDirectoryServiceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIRECTORY_SERVICE_TYPE_*
+     * Runtime class alias of \Google\Service\NetAppFiles\ValidateDirectoryServiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectoryServiceType()
+    class Google_Service_NetAppFiles_ValidateDirectoryServiceRequest extends \Google\Service\NetAppFiles\ValidateDirectoryServiceRequest
     {
     }
 }

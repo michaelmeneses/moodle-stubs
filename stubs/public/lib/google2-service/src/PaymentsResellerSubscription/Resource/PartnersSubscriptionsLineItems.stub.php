@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription\Resource;
-
-/**
- * The "lineItems" collection of methods.
- * Typical usage is:
- *  <code>
- *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
- *   $lineItems = $paymentsresellersubscriptionService->partners_subscriptions_lineItems;
- *  </code>
- */
-class PartnersSubscriptionsLineItems extends \Google\Service\Resource
-{
+namespace Google\Service\PaymentsResellerSubscription\Resource {
+    use Google\Service\PaymentsResellerSubscription\SubscriptionLineItem;
     /**
-     * Updates a line item of a subscription. It should be autenticated with a
-     * service account. (lineItems.patch)
-     *
-     * @param string $name Identifier. Resource name of the line item. Format:
-     * partners/{partner}/subscriptions/{subscription}/lineItems/{lineItem}
-     * @param SubscriptionLineItem $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The list of fields to update. Only a
-     * limited set of fields can be updated. The allowed fields are the following: -
-     * `product_payload.googleHomePayload.googleStructureId`
-     * @return SubscriptionLineItem
-     * @throws \Google\Service\Exception
+     * The "lineItems" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
+     *   $lineItems = $paymentsresellersubscriptionService->partners_subscriptions_lineItems;
+     *  </code>
      */
-    public function patch($name, SubscriptionLineItem $postBody, $optParams = [])
+    class PartnersSubscriptionsLineItems extends \Google\Service\Resource
+    {
+        /**
+         * Updates a line item of a subscription. It should be autenticated with a
+         * service account. (lineItems.patch)
+         *
+         * @param string $name Identifier. Resource name of the line item. Format:
+         * partners/{partner}/subscriptions/{subscription}/lineItems/{lineItem}
+         * @param SubscriptionLineItem $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The list of fields to update. Only a
+         * limited set of fields can be updated. The allowed fields are the following: -
+         * `product_payload.googleHomePayload.googleStructureId`
+         * @return SubscriptionLineItem
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SubscriptionLineItem $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Resource\PartnersSubscriptionsLineItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PaymentsResellerSubscription_Resource_PartnersSubscriptionsLineItems extends \Google\Service\PaymentsResellerSubscription\Resource\PartnersSubscriptionsLineItems
     {
     }
 }

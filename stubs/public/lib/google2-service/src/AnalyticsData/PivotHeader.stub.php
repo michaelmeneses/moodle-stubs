@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class PivotHeader extends \Google\Collection
-{
-    protected $collection_key = 'pivotDimensionHeaders';
-    protected $pivotDimensionHeadersType = PivotDimensionHeader::class;
-    protected $pivotDimensionHeadersDataType = 'array';
-    /**
-     * The cardinality of the pivot. The total number of rows for this pivot's
-     * fields regardless of how the parameters `offset` and `limit` are specified
-     * in the request.
-     *
-     * @var int
-     */
-    public $rowCount;
-    /**
-     * The size is the same as the cardinality of the corresponding dimension
-     * combinations.
-     *
-     * @param PivotDimensionHeader[] $pivotDimensionHeaders
-     */
-    public function setPivotDimensionHeaders($pivotDimensionHeaders)
+namespace Google\Service\AnalyticsData {
+    class PivotHeader extends \Google\Collection
     {
+        protected $collection_key = 'pivotDimensionHeaders';
+        protected $pivotDimensionHeadersType = PivotDimensionHeader::class;
+        protected $pivotDimensionHeadersDataType = 'array';
+        /**
+         * The cardinality of the pivot. The total number of rows for this pivot's
+         * fields regardless of how the parameters `offset` and `limit` are specified
+         * in the request.
+         *
+         * @var int
+         */
+        public $rowCount;
+        /**
+         * The size is the same as the cardinality of the corresponding dimension
+         * combinations.
+         *
+         * @param PivotDimensionHeader[] $pivotDimensionHeaders
+         */
+        public function setPivotDimensionHeaders($pivotDimensionHeaders)
+        {
+        }
+        /**
+         * @return PivotDimensionHeader[]
+         */
+        public function getPivotDimensionHeaders()
+        {
+        }
+        /**
+         * The cardinality of the pivot. The total number of rows for this pivot's
+         * fields regardless of how the parameters `offset` and `limit` are specified
+         * in the request.
+         *
+         * @param int $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PivotDimensionHeader[]
+     * Runtime class alias of \Google\Service\AnalyticsData\PivotHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPivotDimensionHeaders()
-    {
-    }
-    /**
-     * The cardinality of the pivot. The total number of rows for this pivot's
-     * fields regardless of how the parameters `offset` and `limit` are specified
-     * in the request.
-     *
-     * @param int $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowCount()
+    class Google_Service_AnalyticsData_PivotHeader extends \Google\Service\AnalyticsData\PivotHeader
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoSuspensionExpiration extends \Google\Model
-{
-    /**
-     * Milliseconds after which the suspension expires, if no action taken.
-     *
-     * @var int
-     */
-    public $expireAfterMs;
-    /**
-     * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
-     * is the default behavior.
-     *
-     * @var bool
-     */
-    public $liftWhenExpired;
-    /**
-     * Milliseconds after which the previous suspension action reminder, if any,
-     * is sent using the selected notification option, for a suspension which is
-     * still PENDING_UNSPECIFIED.
-     *
-     * @var int
-     */
-    public $remindAfterMs;
-    /**
-     * Milliseconds after which the suspension expires, if no action taken.
-     *
-     * @param int $expireAfterMs
-     */
-    public function setExpireAfterMs($expireAfterMs)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoSuspensionExpiration extends \Google\Model
     {
+        /**
+         * Milliseconds after which the suspension expires, if no action taken.
+         *
+         * @var int
+         */
+        public $expireAfterMs;
+        /**
+         * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
+         * is the default behavior.
+         *
+         * @var bool
+         */
+        public $liftWhenExpired;
+        /**
+         * Milliseconds after which the previous suspension action reminder, if any,
+         * is sent using the selected notification option, for a suspension which is
+         * still PENDING_UNSPECIFIED.
+         *
+         * @var int
+         */
+        public $remindAfterMs;
+        /**
+         * Milliseconds after which the suspension expires, if no action taken.
+         *
+         * @param int $expireAfterMs
+         */
+        public function setExpireAfterMs($expireAfterMs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExpireAfterMs()
+        {
+        }
+        /**
+         * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
+         * is the default behavior.
+         *
+         * @param bool $liftWhenExpired
+         */
+        public function setLiftWhenExpired($liftWhenExpired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLiftWhenExpired()
+        {
+        }
+        /**
+         * Milliseconds after which the previous suspension action reminder, if any,
+         * is sent using the selected notification option, for a suspension which is
+         * still PENDING_UNSPECIFIED.
+         *
+         * @param int $remindAfterMs
+         */
+        public function setRemindAfterMs($remindAfterMs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemindAfterMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionExpiration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireAfterMs()
-    {
-    }
-    /**
-     * Whether the suspension will be REJECTED or LIFTED upon expiration. REJECTED
-     * is the default behavior.
-     *
-     * @param bool $liftWhenExpired
-     */
-    public function setLiftWhenExpired($liftWhenExpired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLiftWhenExpired()
-    {
-    }
-    /**
-     * Milliseconds after which the previous suspension action reminder, if any,
-     * is sent using the selected notification option, for a suspension which is
-     * still PENDING_UNSPECIFIED.
-     *
-     * @param int $remindAfterMs
-     */
-    public function setRemindAfterMs($remindAfterMs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemindAfterMs()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoSuspensionExpiration extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionExpiration
     {
     }
 }

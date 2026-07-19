@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class Exception extends \Google\Model
-{
-    /**
-     * Error message represented as a JSON string.
-     *
-     * @var string
-     */
-    public $payload;
-    /**
-     * Error message represented as a JSON string.
-     *
-     * @param string $payload
-     */
-    public function setPayload($payload)
+namespace Google\Service\WorkflowExecutions {
+    class Exception extends \Google\Model
     {
+        /**
+         * Error message represented as a JSON string.
+         *
+         * @var string
+         */
+        public $payload;
+        /**
+         * Error message represented as a JSON string.
+         *
+         * @param string $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\Exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
+    class Google_Service_WorkflowExecutions_Exception extends \Google\Service\WorkflowExecutions\Exception
     {
     }
 }

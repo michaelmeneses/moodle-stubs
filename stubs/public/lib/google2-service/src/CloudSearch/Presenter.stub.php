@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Presenter extends \Google\Collection
-{
-    protected $collection_key = 'copresenterDeviceIds';
-    protected $annotationInfoType = AnnotationInfo::class;
-    protected $annotationInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $byDeviceId;
-    /**
-     * @var string[]
-     */
-    public $copresenterDeviceIds;
-    /**
-     * @var string
-     */
-    public $presenterDeviceId;
-    /**
-     * @param AnnotationInfo
-     */
-    public function setAnnotationInfo(AnnotationInfo $annotationInfo)
+namespace Google\Service\CloudSearch {
+    class Presenter extends \Google\Collection
     {
+        protected $collection_key = 'copresenterDeviceIds';
+        protected $annotationInfoType = AnnotationInfo::class;
+        protected $annotationInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $byDeviceId;
+        /**
+         * @var string[]
+         */
+        public $copresenterDeviceIds;
+        /**
+         * @var string
+         */
+        public $presenterDeviceId;
+        /**
+         * @param AnnotationInfo
+         */
+        public function setAnnotationInfo(AnnotationInfo $annotationInfo)
+        {
+        }
+        /**
+         * @return AnnotationInfo
+         */
+        public function getAnnotationInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setByDeviceId($byDeviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getByDeviceId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCopresenterDeviceIds($copresenterDeviceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCopresenterDeviceIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPresenterDeviceId($presenterDeviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPresenterDeviceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnnotationInfo
+     * Runtime class alias of \Google\Service\CloudSearch\Presenter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setByDeviceId($byDeviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getByDeviceId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCopresenterDeviceIds($copresenterDeviceIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCopresenterDeviceIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPresenterDeviceId($presenterDeviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPresenterDeviceId()
+    class Google_Service_CloudSearch_Presenter extends \Google\Service\CloudSearch\Presenter
     {
     }
 }

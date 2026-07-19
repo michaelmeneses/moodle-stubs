@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fcmdata\Resource;
-
-/**
- * The "deliveryData" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fcmdataService = new Google\Service\Fcmdata(...);
- *   $deliveryData = $fcmdataService->projects_androidApps_deliveryData;
- *  </code>
- */
-class ProjectsAndroidAppsDeliveryData extends \Google\Service\Resource
-{
+namespace Google\Service\Fcmdata\Resource {
+    use Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse;
     /**
-     * List aggregate delivery data for the given Android application.
-     * (deliveryData.listProjectsAndroidAppsDeliveryData)
-     *
-     * @param string $parent Required. The application for which to list delivery
-     * data. Format: `projects/{project_id}/androidApps/{app_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of entries to return. The service
-     * may return fewer than this value. If unspecified, at most 1,000 entries will
-     * be returned. The maximum value is 10,000; values above 10,000 will be capped
-     * to 10,000. This default may change over time.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListAndroidDeliveryDataRequest` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListAndroidDeliveryDataRequest` must match the call that provided the page
-     * token.
-     * @return GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse
-     * @throws \Google\Service\Exception
+     * The "deliveryData" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fcmdataService = new Google\Service\Fcmdata(...);
+     *   $deliveryData = $fcmdataService->projects_androidApps_deliveryData;
+     *  </code>
      */
-    public function listProjectsAndroidAppsDeliveryData($parent, $optParams = [])
+    class ProjectsAndroidAppsDeliveryData extends \Google\Service\Resource
+    {
+        /**
+         * List aggregate delivery data for the given Android application.
+         * (deliveryData.listProjectsAndroidAppsDeliveryData)
+         *
+         * @param string $parent Required. The application for which to list delivery
+         * data. Format: `projects/{project_id}/androidApps/{app_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of entries to return. The service
+         * may return fewer than this value. If unspecified, at most 1,000 entries will
+         * be returned. The maximum value is 10,000; values above 10,000 will be capped
+         * to 10,000. This default may change over time.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListAndroidDeliveryDataRequest` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListAndroidDeliveryDataRequest` must match the call that provided the page
+         * token.
+         * @return GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsAndroidAppsDeliveryData($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Fcmdata\Resource\ProjectsAndroidAppsDeliveryData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Fcmdata_Resource_ProjectsAndroidAppsDeliveryData extends \Google\Service\Fcmdata\Resource\ProjectsAndroidAppsDeliveryData
     {
     }
 }

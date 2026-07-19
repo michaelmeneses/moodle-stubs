@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UploadModelResponse extends \Google\Model
-{
-    /**
-     * The name of the uploaded Model resource. Format:
-     * `projects/{project}/locations/{location}/models/{model}`
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Output only. The version ID of the model that is uploaded.
-     *
-     * @var string
-     */
-    public $modelVersionId;
-    /**
-     * The name of the uploaded Model resource. Format:
-     * `projects/{project}/locations/{location}/models/{model}`
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UploadModelResponse extends \Google\Model
     {
+        /**
+         * The name of the uploaded Model resource. Format:
+         * `projects/{project}/locations/{location}/models/{model}`
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Output only. The version ID of the model that is uploaded.
+         *
+         * @var string
+         */
+        public $modelVersionId;
+        /**
+         * The name of the uploaded Model resource. Format:
+         * `projects/{project}/locations/{location}/models/{model}`
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Output only. The version ID of the model that is uploaded.
+         *
+         * @param string $modelVersionId
+         */
+        public function setModelVersionId($modelVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadModelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
-    {
-    }
-    /**
-     * Output only. The version ID of the model that is uploaded.
-     *
-     * @param string $modelVersionId
-     */
-    public function setModelVersionId($modelVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelVersionId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UploadModelResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadModelResponse
     {
     }
 }

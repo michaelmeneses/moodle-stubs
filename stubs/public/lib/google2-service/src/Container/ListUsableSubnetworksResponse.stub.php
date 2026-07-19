@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ListUsableSubnetworksResponse extends \Google\Collection
-{
-    protected $collection_key = 'subnetworks';
-    /**
-     * This token allows you to get the next page of results for list requests. If
-     * the number of results is larger than `page_size`, use the `next_page_token`
-     * as a value for the query parameter `page_token` in the next request. The
-     * value will become empty when there are no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $subnetworksType = UsableSubnetwork::class;
-    protected $subnetworksDataType = 'array';
-    /**
-     * This token allows you to get the next page of results for list requests. If
-     * the number of results is larger than `page_size`, use the `next_page_token`
-     * as a value for the query parameter `page_token` in the next request. The
-     * value will become empty when there are no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Container {
+    class ListUsableSubnetworksResponse extends \Google\Collection
     {
+        protected $collection_key = 'subnetworks';
+        /**
+         * This token allows you to get the next page of results for list requests. If
+         * the number of results is larger than `page_size`, use the `next_page_token`
+         * as a value for the query parameter `page_token` in the next request. The
+         * value will become empty when there are no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $subnetworksType = UsableSubnetwork::class;
+        protected $subnetworksDataType = 'array';
+        /**
+         * This token allows you to get the next page of results for list requests. If
+         * the number of results is larger than `page_size`, use the `next_page_token`
+         * as a value for the query parameter `page_token` in the next request. The
+         * value will become empty when there are no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of usable subnetworks in the specified network project.
+         *
+         * @param UsableSubnetwork[] $subnetworks
+         */
+        public function setSubnetworks($subnetworks)
+        {
+        }
+        /**
+         * @return UsableSubnetwork[]
+         */
+        public function getSubnetworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\ListUsableSubnetworksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of usable subnetworks in the specified network project.
-     *
-     * @param UsableSubnetwork[] $subnetworks
-     */
-    public function setSubnetworks($subnetworks)
-    {
-    }
-    /**
-     * @return UsableSubnetwork[]
-     */
-    public function getSubnetworks()
+    class Google_Service_Container_ListUsableSubnetworksResponse extends \Google\Service\Container\ListUsableSubnetworksResponse
     {
     }
 }

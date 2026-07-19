@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1EnumTypeOptions extends \Google\Collection
-{
-    protected $collection_key = 'possibleValues';
-    /**
-     * Required. List of possible enum values.
-     *
-     * @var string[]
-     */
-    public $possibleValues;
-    /**
-     * Make sure the Enum property value provided in the document is in the
-     * possile value list during document creation. The validation check runs by
-     * default.
-     *
-     * @var bool
-     */
-    public $validationCheckDisabled;
-    /**
-     * Required. List of possible enum values.
-     *
-     * @param string[] $possibleValues
-     */
-    public function setPossibleValues($possibleValues)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1EnumTypeOptions extends \Google\Collection
     {
+        protected $collection_key = 'possibleValues';
+        /**
+         * Required. List of possible enum values.
+         *
+         * @var string[]
+         */
+        public $possibleValues;
+        /**
+         * Make sure the Enum property value provided in the document is in the
+         * possile value list during document creation. The validation check runs by
+         * default.
+         *
+         * @var bool
+         */
+        public $validationCheckDisabled;
+        /**
+         * Required. List of possible enum values.
+         *
+         * @param string[] $possibleValues
+         */
+        public function setPossibleValues($possibleValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPossibleValues()
+        {
+        }
+        /**
+         * Make sure the Enum property value provided in the document is in the
+         * possile value list during document creation. The validation check runs by
+         * default.
+         *
+         * @param bool $validationCheckDisabled
+         */
+        public function setValidationCheckDisabled($validationCheckDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidationCheckDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1EnumTypeOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPossibleValues()
-    {
-    }
-    /**
-     * Make sure the Enum property value provided in the document is in the
-     * possile value list during document creation. The validation check runs by
-     * default.
-     *
-     * @param bool $validationCheckDisabled
-     */
-    public function setValidationCheckDisabled($validationCheckDisabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidationCheckDisabled()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1EnumTypeOptions extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1EnumTypeOptions
     {
     }
 }

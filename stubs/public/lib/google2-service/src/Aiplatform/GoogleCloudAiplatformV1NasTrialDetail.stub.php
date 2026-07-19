@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NasTrialDetail extends \Google\Model
-{
-    /**
-     * Output only. Resource name of the NasTrialDetail.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The parameters for the NasJob NasTrial.
-     *
-     * @var string
-     */
-    public $parameters;
-    protected $searchTrialType = GoogleCloudAiplatformV1NasTrial::class;
-    protected $searchTrialDataType = '';
-    protected $trainTrialType = GoogleCloudAiplatformV1NasTrial::class;
-    protected $trainTrialDataType = '';
-    /**
-     * Output only. Resource name of the NasTrialDetail.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NasTrialDetail extends \Google\Model
     {
+        /**
+         * Output only. Resource name of the NasTrialDetail.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The parameters for the NasJob NasTrial.
+         *
+         * @var string
+         */
+        public $parameters;
+        protected $searchTrialType = GoogleCloudAiplatformV1NasTrial::class;
+        protected $searchTrialDataType = '';
+        protected $trainTrialType = GoogleCloudAiplatformV1NasTrial::class;
+        protected $trainTrialDataType = '';
+        /**
+         * Output only. Resource name of the NasTrialDetail.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The parameters for the NasJob NasTrial.
+         *
+         * @param string $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * The requested search NasTrial.
+         *
+         * @param GoogleCloudAiplatformV1NasTrial $searchTrial
+         */
+        public function setSearchTrial(GoogleCloudAiplatformV1NasTrial $searchTrial)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasTrial
+         */
+        public function getSearchTrial()
+        {
+        }
+        /**
+         * The train NasTrial corresponding to search_trial. Only populated if
+         * search_trial is used for training.
+         *
+         * @param GoogleCloudAiplatformV1NasTrial $trainTrial
+         */
+        public function setTrainTrial(GoogleCloudAiplatformV1NasTrial $trainTrial)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasTrial
+         */
+        public function getTrainTrial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasTrialDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The parameters for the NasJob NasTrial.
-     *
-     * @param string $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * The requested search NasTrial.
-     *
-     * @param GoogleCloudAiplatformV1NasTrial $searchTrial
-     */
-    public function setSearchTrial(GoogleCloudAiplatformV1NasTrial $searchTrial)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NasTrial
-     */
-    public function getSearchTrial()
-    {
-    }
-    /**
-     * The train NasTrial corresponding to search_trial. Only populated if
-     * search_trial is used for training.
-     *
-     * @param GoogleCloudAiplatformV1NasTrial $trainTrial
-     */
-    public function setTrainTrial(GoogleCloudAiplatformV1NasTrial $trainTrial)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NasTrial
-     */
-    public function getTrainTrial()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NasTrialDetail extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasTrialDetail
     {
     }
 }

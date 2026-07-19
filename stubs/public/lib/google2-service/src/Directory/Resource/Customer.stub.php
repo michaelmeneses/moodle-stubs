@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "customer" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $customer = $adminService->customer;
- *  </code>
- */
-class Customer extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    /**
+     * The "customer" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $customer = $adminService->customer;
+     *  </code>
+     */
+    class Customer extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\Customer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_Customer extends \Google\Service\Directory\Resource\Customer
+    {
+    }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class ListOrganizationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'organizations';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $organizationsType = Organization::class;
-    protected $organizationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class ListOrganizationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'organizations';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $organizationsType = Organization::class;
+        protected $organizationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The Organization resource that the user has access to, which includes the
+         * org id and display name.
+         *
+         * @param Organization[] $organizations
+         */
+        public function setOrganizations($organizations)
+        {
+        }
+        /**
+         * @return Organization[]
+         */
+        public function getOrganizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\ListOrganizationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The Organization resource that the user has access to, which includes the
-     * org id and display name.
-     *
-     * @param Organization[] $organizations
-     */
-    public function setOrganizations($organizations)
-    {
-    }
-    /**
-     * @return Organization[]
-     */
-    public function getOrganizations()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_ListOrganizationsResponse extends \Google\Service\GoogleMarketingPlatformAdminAPI\ListOrganizationsResponse
     {
     }
 }

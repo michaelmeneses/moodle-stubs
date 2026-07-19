@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListMuteConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'muteConfigs';
-    protected $muteConfigsType = GoogleCloudSecuritycenterV1MuteConfig::class;
-    protected $muteConfigsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The mute configs from the specified parent.
-     *
-     * @param GoogleCloudSecuritycenterV1MuteConfig[] $muteConfigs
-     */
-    public function setMuteConfigs($muteConfigs)
+namespace Google\Service\SecurityCommandCenter {
+    class ListMuteConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'muteConfigs';
+        protected $muteConfigsType = GoogleCloudSecuritycenterV1MuteConfig::class;
+        protected $muteConfigsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The mute configs from the specified parent.
+         *
+         * @param GoogleCloudSecuritycenterV1MuteConfig[] $muteConfigs
+         */
+        public function setMuteConfigs($muteConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1MuteConfig[]
+         */
+        public function getMuteConfigs()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV1MuteConfig[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListMuteConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMuteConfigs()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecurityCommandCenter_ListMuteConfigsResponse extends \Google\Service\SecurityCommandCenter\ListMuteConfigsResponse
     {
     }
 }

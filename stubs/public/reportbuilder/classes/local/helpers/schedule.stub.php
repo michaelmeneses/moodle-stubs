@@ -8,6 +8,19 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use context_user;
+use core\{component, clock, di};
+use core\exception\{coding_exception, invalid_parameter_exception};
+use core_user;
+use stdClass;
+use stored_file;
+use table_dataformat_export_format;
+use core\message\message;
+use core\plugininfo\dataformat;
+use core_reportbuilder\local\models\audience as audience_model;
+use core_reportbuilder\local\models\schedule as model;
+use core_reportbuilder\local\schedules\base;
+use core_reportbuilder\table\custom_report_table_view;
 /**
  * Helper class for report schedule related methods
  *

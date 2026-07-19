@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult extends \Google\Model
-{
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * The Model Armor violation that was found.
-     *
-     * @var string
-     */
-    public $modelArmorViolation;
-    /**
-     * The error returned by Model Armor if the policy enforcement failed for some
-     * reason.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult extends \Google\Model
     {
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * The Model Armor violation that was found.
+         *
+         * @var string
+         */
+        public $modelArmorViolation;
+        /**
+         * The error returned by Model Armor if the policy enforcement failed for some
+         * reason.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The Model Armor violation that was found.
+         *
+         * @param string $modelArmorViolation
+         */
+        public function setModelArmorViolation($modelArmorViolation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelArmorViolation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The Model Armor violation that was found.
-     *
-     * @param string $modelArmorViolation
-     */
-    public function setModelArmorViolation($modelArmorViolation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelArmorViolation()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DisplayedProperty extends \Google\Model
-{
-    /**
-     * The name of the top-level property as defined in a property definition for
-     * the object. If the name is not a defined property in the schema, an error
-     * is given when attempting to update the schema.
-     *
-     * @var string
-     */
-    public $propertyName;
-    /**
-     * The name of the top-level property as defined in a property definition for
-     * the object. If the name is not a defined property in the schema, an error
-     * is given when attempting to update the schema.
-     *
-     * @param string $propertyName
-     */
-    public function setPropertyName($propertyName)
+namespace Google\Service\CloudSearch {
+    class DisplayedProperty extends \Google\Model
     {
+        /**
+         * The name of the top-level property as defined in a property definition for
+         * the object. If the name is not a defined property in the schema, an error
+         * is given when attempting to update the schema.
+         *
+         * @var string
+         */
+        public $propertyName;
+        /**
+         * The name of the top-level property as defined in a property definition for
+         * the object. If the name is not a defined property in the schema, an error
+         * is given when attempting to update the schema.
+         *
+         * @param string $propertyName
+         */
+        public function setPropertyName($propertyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\DisplayedProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPropertyName()
+    class Google_Service_CloudSearch_DisplayedProperty extends \Google\Service\CloudSearch\DisplayedProperty
     {
     }
 }

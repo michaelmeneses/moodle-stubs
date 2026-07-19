@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "personalizedstream" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $personalizedstream = $booksService->personalizedstream;
- *  </code>
- */
-class Personalizedstream extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Discoveryclusters;
     /**
-     * Returns a stream of personalized book clusters (personalizedstream.get)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
-     * 'en_US'. Used for generating recommendations.
-     * @opt_param string maxAllowedMaturityRating The maximum allowed maturity
-     * rating of returned recommendations. Books with a higher maturity rating are
-     * filtered out.
-     * @opt_param string source String to identify the originator of this request.
-     * @return Discoveryclusters
-     * @throws \Google\Service\Exception
+     * The "personalizedstream" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $personalizedstream = $booksService->personalizedstream;
+     *  </code>
      */
-    public function get($optParams = [])
+    class Personalizedstream extends \Google\Service\Resource
+    {
+        /**
+         * Returns a stream of personalized book clusters (personalizedstream.get)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
+         * 'en_US'. Used for generating recommendations.
+         * @opt_param string maxAllowedMaturityRating The maximum allowed maturity
+         * rating of returned recommendations. Books with a higher maturity rating are
+         * filtered out.
+         * @opt_param string source String to identify the originator of this request.
+         * @return Discoveryclusters
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\Personalizedstream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_Personalizedstream extends \Google\Service\Books\Resource\Personalizedstream
     {
     }
 }

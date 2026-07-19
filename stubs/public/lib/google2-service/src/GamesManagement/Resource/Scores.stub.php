@@ -21,76 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement\Resource;
-
-/**
- * The "scores" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesManagementService = new Google\Service\GamesManagement(...);
- *   $scores = $gamesManagementService->scores;
- *  </code>
- */
-class Scores extends \Google\Service\Resource
-{
+namespace Google\Service\GamesManagement\Resource {
+    use Google\Service\GamesManagement\PlayerScoreResetAllResponse;
+    use Google\Service\GamesManagement\PlayerScoreResetResponse;
+    use Google\Service\GamesManagement\ScoresResetMultipleForAllRequest;
     /**
-     * Resets scores for the leaderboard with the given ID for the currently
-     * authenticated player. This method is only accessible to whitelisted tester
-     * accounts for your application. (scores.reset)
-     *
-     * @param string $leaderboardId The ID of the leaderboard.
-     * @param array $optParams Optional parameters.
-     * @return PlayerScoreResetResponse
-     * @throws \Google\Service\Exception
+     * The "scores" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesManagementService = new Google\Service\GamesManagement(...);
+     *   $scores = $gamesManagementService->scores;
+     *  </code>
      */
-    public function reset($leaderboardId, $optParams = [])
+    class Scores extends \Google\Service\Resource
     {
+        /**
+         * Resets scores for the leaderboard with the given ID for the currently
+         * authenticated player. This method is only accessible to whitelisted tester
+         * accounts for your application. (scores.reset)
+         *
+         * @param string $leaderboardId The ID of the leaderboard.
+         * @param array $optParams Optional parameters.
+         * @return PlayerScoreResetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reset($leaderboardId, $optParams = [])
+        {
+        }
+        /**
+         * Resets all scores for all leaderboards for the currently authenticated
+         * players. This method is only accessible to whitelisted tester accounts for
+         * your application. (scores.resetAll)
+         *
+         * @param array $optParams Optional parameters.
+         * @return PlayerScoreResetAllResponse
+         * @throws \Google\Service\Exception
+         */
+        public function resetAll($optParams = [])
+        {
+        }
+        /**
+         * Resets scores for all draft leaderboards for all players. This method is only
+         * available to user accounts for your developer console.
+         * (scores.resetAllForAllPlayers)
+         *
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetAllForAllPlayers($optParams = [])
+        {
+        }
+        /**
+         * Resets scores for the leaderboard with the given ID for all players. This
+         * method is only available to user accounts for your developer console. Only
+         * draft leaderboards can be reset. (scores.resetForAllPlayers)
+         *
+         * @param string $leaderboardId The ID of the leaderboard.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetForAllPlayers($leaderboardId, $optParams = [])
+        {
+        }
+        /**
+         * Resets scores for the leaderboards with the given IDs for all players. This
+         * method is only available to user accounts for your developer console. Only
+         * draft leaderboards may be reset. (scores.resetMultipleForAllPlayers)
+         *
+         * @param ScoresResetMultipleForAllRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetMultipleForAllPlayers(ScoresResetMultipleForAllRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Resets all scores for all leaderboards for the currently authenticated
-     * players. This method is only accessible to whitelisted tester accounts for
-     * your application. (scores.resetAll)
-     *
-     * @param array $optParams Optional parameters.
-     * @return PlayerScoreResetAllResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GamesManagement\Resource\Scores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function resetAll($optParams = [])
-    {
-    }
-    /**
-     * Resets scores for all draft leaderboards for all players. This method is only
-     * available to user accounts for your developer console.
-     * (scores.resetAllForAllPlayers)
-     *
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetAllForAllPlayers($optParams = [])
-    {
-    }
-    /**
-     * Resets scores for the leaderboard with the given ID for all players. This
-     * method is only available to user accounts for your developer console. Only
-     * draft leaderboards can be reset. (scores.resetForAllPlayers)
-     *
-     * @param string $leaderboardId The ID of the leaderboard.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetForAllPlayers($leaderboardId, $optParams = [])
-    {
-    }
-    /**
-     * Resets scores for the leaderboards with the given IDs for all players. This
-     * method is only available to user accounts for your developer console. Only
-     * draft leaderboards may be reset. (scores.resetMultipleForAllPlayers)
-     *
-     * @param ScoresResetMultipleForAllRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetMultipleForAllPlayers(ScoresResetMultipleForAllRequest $postBody, $optParams = [])
+    class Google_Service_GamesManagement_Resource_Scores extends \Google\Service\GamesManagement\Resource\Scores
     {
     }
 }

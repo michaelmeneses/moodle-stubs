@@ -29,6 +29,8 @@
  */
 namespace tool_lp\external;
 
+use renderer_base;
+use moodle_url;
 /**
  * Class for exporting competency_path data.
  *

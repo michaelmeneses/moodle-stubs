@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DicomFilterConfig extends \Google\Model
-{
-    /**
-     * The Cloud Storage location of the filter configuration file. The `gcs_uri`
-     * must be in the format `gs://bucket/path/to/object`. The filter
-     * configuration file must contain a list of resource paths separated by
-     * newline characters (\n or \r\n). Each resource path must be in the format
-     * "/studies/{studyUID}[/series/{seriesUID}[/instances/{instanceUID}]]" The
-     * Cloud Healthcare API service account must have the
-     * `roles/storage.objectViewer` Cloud IAM role for this Cloud Storage
-     * location.
-     *
-     * @var string
-     */
-    public $resourcePathsGcsUri;
-    /**
-     * The Cloud Storage location of the filter configuration file. The `gcs_uri`
-     * must be in the format `gs://bucket/path/to/object`. The filter
-     * configuration file must contain a list of resource paths separated by
-     * newline characters (\n or \r\n). Each resource path must be in the format
-     * "/studies/{studyUID}[/series/{seriesUID}[/instances/{instanceUID}]]" The
-     * Cloud Healthcare API service account must have the
-     * `roles/storage.objectViewer` Cloud IAM role for this Cloud Storage
-     * location.
-     *
-     * @param string $resourcePathsGcsUri
-     */
-    public function setResourcePathsGcsUri($resourcePathsGcsUri)
+namespace Google\Service\CloudHealthcare {
+    class DicomFilterConfig extends \Google\Model
     {
+        /**
+         * The Cloud Storage location of the filter configuration file. The `gcs_uri`
+         * must be in the format `gs://bucket/path/to/object`. The filter
+         * configuration file must contain a list of resource paths separated by
+         * newline characters (\n or \r\n). Each resource path must be in the format
+         * "/studies/{studyUID}[/series/{seriesUID}[/instances/{instanceUID}]]" The
+         * Cloud Healthcare API service account must have the
+         * `roles/storage.objectViewer` Cloud IAM role for this Cloud Storage
+         * location.
+         *
+         * @var string
+         */
+        public $resourcePathsGcsUri;
+        /**
+         * The Cloud Storage location of the filter configuration file. The `gcs_uri`
+         * must be in the format `gs://bucket/path/to/object`. The filter
+         * configuration file must contain a list of resource paths separated by
+         * newline characters (\n or \r\n). Each resource path must be in the format
+         * "/studies/{studyUID}[/series/{seriesUID}[/instances/{instanceUID}]]" The
+         * Cloud Healthcare API service account must have the
+         * `roles/storage.objectViewer` Cloud IAM role for this Cloud Storage
+         * location.
+         *
+         * @param string $resourcePathsGcsUri
+         */
+        public function setResourcePathsGcsUri($resourcePathsGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourcePathsGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\DicomFilterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourcePathsGcsUri()
+    class Google_Service_CloudHealthcare_DicomFilterConfig extends \Google\Service\CloudHealthcare\DicomFilterConfig
     {
     }
 }

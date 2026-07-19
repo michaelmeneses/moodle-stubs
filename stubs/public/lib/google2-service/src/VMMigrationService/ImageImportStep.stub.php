@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ImageImportStep extends \Google\Model
-{
-    protected $adaptingOsType = AdaptingOSStep::class;
-    protected $adaptingOsDataType = '';
-    protected $creatingImageType = CreatingImageStep::class;
-    protected $creatingImageDataType = '';
-    /**
-     * Output only. The time the step has ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $initializingType = InitializingImageImportStep::class;
-    protected $initializingDataType = '';
-    protected $loadingSourceFilesType = LoadingImageSourceFilesStep::class;
-    protected $loadingSourceFilesDataType = '';
-    /**
-     * Output only. The time the step has started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Adapting OS step.
-     *
-     * @param AdaptingOSStep $adaptingOs
-     */
-    public function setAdaptingOs(AdaptingOSStep $adaptingOs)
+namespace Google\Service\VMMigrationService {
+    class ImageImportStep extends \Google\Model
     {
+        protected $adaptingOsType = AdaptingOSStep::class;
+        protected $adaptingOsDataType = '';
+        protected $creatingImageType = CreatingImageStep::class;
+        protected $creatingImageDataType = '';
+        /**
+         * Output only. The time the step has ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $initializingType = InitializingImageImportStep::class;
+        protected $initializingDataType = '';
+        protected $loadingSourceFilesType = LoadingImageSourceFilesStep::class;
+        protected $loadingSourceFilesDataType = '';
+        /**
+         * Output only. The time the step has started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Adapting OS step.
+         *
+         * @param AdaptingOSStep $adaptingOs
+         */
+        public function setAdaptingOs(AdaptingOSStep $adaptingOs)
+        {
+        }
+        /**
+         * @return AdaptingOSStep
+         */
+        public function getAdaptingOs()
+        {
+        }
+        /**
+         * Creating image step.
+         *
+         * @param CreatingImageStep $creatingImage
+         */
+        public function setCreatingImage(CreatingImageStep $creatingImage)
+        {
+        }
+        /**
+         * @return CreatingImageStep
+         */
+        public function getCreatingImage()
+        {
+        }
+        /**
+         * Output only. The time the step has ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Initializing step.
+         *
+         * @param InitializingImageImportStep $initializing
+         */
+        public function setInitializing(InitializingImageImportStep $initializing)
+        {
+        }
+        /**
+         * @return InitializingImageImportStep
+         */
+        public function getInitializing()
+        {
+        }
+        /**
+         * Loading source files step.
+         *
+         * @param LoadingImageSourceFilesStep $loadingSourceFiles
+         */
+        public function setLoadingSourceFiles(LoadingImageSourceFilesStep $loadingSourceFiles)
+        {
+        }
+        /**
+         * @return LoadingImageSourceFilesStep
+         */
+        public function getLoadingSourceFiles()
+        {
+        }
+        /**
+         * Output only. The time the step has started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptingOSStep
+     * Runtime class alias of \Google\Service\VMMigrationService\ImageImportStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptingOs()
-    {
-    }
-    /**
-     * Creating image step.
-     *
-     * @param CreatingImageStep $creatingImage
-     */
-    public function setCreatingImage(CreatingImageStep $creatingImage)
-    {
-    }
-    /**
-     * @return CreatingImageStep
-     */
-    public function getCreatingImage()
-    {
-    }
-    /**
-     * Output only. The time the step has ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Initializing step.
-     *
-     * @param InitializingImageImportStep $initializing
-     */
-    public function setInitializing(InitializingImageImportStep $initializing)
-    {
-    }
-    /**
-     * @return InitializingImageImportStep
-     */
-    public function getInitializing()
-    {
-    }
-    /**
-     * Loading source files step.
-     *
-     * @param LoadingImageSourceFilesStep $loadingSourceFiles
-     */
-    public function setLoadingSourceFiles(LoadingImageSourceFilesStep $loadingSourceFiles)
-    {
-    }
-    /**
-     * @return LoadingImageSourceFilesStep
-     */
-    public function getLoadingSourceFiles()
-    {
-    }
-    /**
-     * Output only. The time the step has started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_VMMigrationService_ImageImportStep extends \Google\Service\VMMigrationService\ImageImportStep
     {
     }
 }

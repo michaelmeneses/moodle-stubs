@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "attachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $attachments = $gmailService->users_messages_attachments;
- *  </code>
- */
-class UsersMessagesAttachments extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    use Google\Service\Gmail\MessagePartBody;
     /**
-     * Gets the specified message attachment. (attachments.get)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $messageId The ID of the message containing the attachment.
-     * @param string $id The ID of the attachment.
-     * @param array $optParams Optional parameters.
-     * @return MessagePartBody
-     * @throws \Google\Service\Exception
+     * The "attachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $attachments = $gmailService->users_messages_attachments;
+     *  </code>
      */
-    public function get($userId, $messageId, $id, $optParams = [])
+    class UsersMessagesAttachments extends \Google\Service\Resource
+    {
+        /**
+         * Gets the specified message attachment. (attachments.get)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $messageId The ID of the message containing the attachment.
+         * @param string $id The ID of the attachment.
+         * @param array $optParams Optional parameters.
+         * @return MessagePartBody
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $messageId, $id, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Gmail\Resource\UsersMessagesAttachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Gmail_Resource_UsersMessagesAttachments extends \Google\Service\Gmail\Resource\UsersMessagesAttachments
     {
     }
 }

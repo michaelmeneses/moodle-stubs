@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1Device extends \Google\Model
-{
-    /**
-     * Output only. The ID of the device that reported this Chrome browser
-     * information.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Output only. The name of the machine within its local network.
-     *
-     * @var string
-     */
-    public $machine;
-    /**
-     * Output only. The ID of the device that reported this Chrome browser
-     * information.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1Device extends \Google\Model
     {
+        /**
+         * Output only. The ID of the device that reported this Chrome browser
+         * information.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Output only. The name of the machine within its local network.
+         *
+         * @var string
+         */
+        public $machine;
+        /**
+         * Output only. The ID of the device that reported this Chrome browser
+         * information.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Output only. The name of the machine within its local network.
+         *
+         * @param string $machine
+         */
+        public function setMachine($machine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1Device registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Output only. The name of the machine within its local network.
-     *
-     * @param string $machine
-     */
-    public function setMachine($machine)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachine()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1Device extends \Google\Service\ChromeManagement\GoogleChromeManagementV1Device
     {
     }
 }

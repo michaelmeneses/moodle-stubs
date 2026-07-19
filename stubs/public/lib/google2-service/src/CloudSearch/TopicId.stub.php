@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TopicId extends \Google\Model
-{
-    protected $groupIdType = GroupId::class;
-    protected $groupIdDataType = '';
-    /**
-     * @var string
-     */
-    public $topicId;
-    /**
-     * @param GroupId
-     */
-    public function setGroupId(GroupId $groupId)
+namespace Google\Service\CloudSearch {
+    class TopicId extends \Google\Model
     {
+        protected $groupIdType = GroupId::class;
+        protected $groupIdDataType = '';
+        /**
+         * @var string
+         */
+        public $topicId;
+        /**
+         * @param GroupId
+         */
+        public function setGroupId(GroupId $groupId)
+        {
+        }
+        /**
+         * @return GroupId
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopicId($topicId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupId
+     * Runtime class alias of \Google\Service\CloudSearch\TopicId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopicId($topicId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicId()
+    class Google_Service_CloudSearch_TopicId extends \Google\Service\CloudSearch\TopicId
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class InvalidRule extends \Google\Model
-{
-    /**
-     * display name of the invalid rule
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * cloud storage destination of the invalid rule
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * name of the invalid rule
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The error message of valdating rule formats.
-     *
-     * @var string
-     */
-    public $valiadtionError;
-    /**
-     * display name of the invalid rule
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\WorkloadManager {
+    class InvalidRule extends \Google\Model
     {
+        /**
+         * display name of the invalid rule
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * cloud storage destination of the invalid rule
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * name of the invalid rule
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The error message of valdating rule formats.
+         *
+         * @var string
+         */
+        public $valiadtionError;
+        /**
+         * display name of the invalid rule
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * cloud storage destination of the invalid rule
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * name of the invalid rule
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The error message of valdating rule formats.
+         *
+         * @param string $valiadtionError
+         */
+        public function setValiadtionError($valiadtionError)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValiadtionError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\InvalidRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * cloud storage destination of the invalid rule
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * name of the invalid rule
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The error message of valdating rule formats.
-     *
-     * @param string $valiadtionError
-     */
-    public function setValiadtionError($valiadtionError)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValiadtionError()
+    class Google_Service_WorkloadManager_InvalidRule extends \Google\Service\WorkloadManager\InvalidRule
     {
     }
 }

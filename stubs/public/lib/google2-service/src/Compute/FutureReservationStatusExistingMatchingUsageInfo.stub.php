@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureReservationStatusExistingMatchingUsageInfo extends \Google\Model
-{
-    /**
-     * Output only. Count to represent min(FR total_count,
-     * matching_reserved_capacity+matching_unreserved_instances)
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Output only. Timestamp when the matching usage was calculated
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Output only. Count to represent min(FR total_count,
-     * matching_reserved_capacity+matching_unreserved_instances)
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\Compute {
+    class FutureReservationStatusExistingMatchingUsageInfo extends \Google\Model
     {
+        /**
+         * Output only. Count to represent min(FR total_count,
+         * matching_reserved_capacity+matching_unreserved_instances)
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Output only. Timestamp when the matching usage was calculated
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Output only. Count to represent min(FR total_count,
+         * matching_reserved_capacity+matching_unreserved_instances)
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Output only. Timestamp when the matching usage was calculated
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FutureReservationStatusExistingMatchingUsageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Output only. Timestamp when the matching usage was calculated
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Compute_FutureReservationStatusExistingMatchingUsageInfo extends \Google\Service\Compute\FutureReservationStatusExistingMatchingUsageInfo
     {
     }
 }

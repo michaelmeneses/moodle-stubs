@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity\Resource;
-
-/**
- * The "global" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
- *   $global = $networkconnectivityService->projects_locations_global;
- *  </code>
- */
-class ProjectsLocationsNetworkconnectivityGlobal extends \Google\Service\Resource
-{
+namespace Google\Service\Networkconnectivity\Resource {
+    /**
+     * The "global" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
+     *   $global = $networkconnectivityService->projects_locations_global;
+     *  </code>
+     */
+    class ProjectsLocationsNetworkconnectivityGlobal extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\Resource\ProjectsLocationsNetworkconnectivityGlobal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_Resource_ProjectsLocationsNetworkconnectivityGlobal extends \Google\Service\Networkconnectivity\Resource\ProjectsLocationsNetworkconnectivityGlobal
+    {
+    }
 }

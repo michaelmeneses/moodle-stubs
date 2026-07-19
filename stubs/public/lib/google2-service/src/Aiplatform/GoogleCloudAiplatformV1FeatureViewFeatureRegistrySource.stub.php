@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewFeatureRegistrySource extends \Google\Collection
-{
-    protected $collection_key = 'featureGroups';
-    protected $featureGroupsType = GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup::class;
-    protected $featureGroupsDataType = 'array';
-    /**
-     * Optional. The project number of the parent project of the Feature Groups.
-     *
-     * @var string
-     */
-    public $projectNumber;
-    /**
-     * Required. List of features that need to be synced to Online Store.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup[] $featureGroups
-     */
-    public function setFeatureGroups($featureGroups)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewFeatureRegistrySource extends \Google\Collection
     {
+        protected $collection_key = 'featureGroups';
+        protected $featureGroupsType = GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup::class;
+        protected $featureGroupsDataType = 'array';
+        /**
+         * Optional. The project number of the parent project of the Feature Groups.
+         *
+         * @var string
+         */
+        public $projectNumber;
+        /**
+         * Required. List of features that need to be synced to Online Store.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup[] $featureGroups
+         */
+        public function setFeatureGroups($featureGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup[]
+         */
+        public function getFeatureGroups()
+        {
+        }
+        /**
+         * Optional. The project number of the parent project of the Feature Groups.
+         *
+         * @param string $projectNumber
+         */
+        public function setProjectNumber($projectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewFeatureRegistrySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatureGroups()
-    {
-    }
-    /**
-     * Optional. The project number of the parent project of the Feature Groups.
-     *
-     * @param string $projectNumber
-     */
-    public function setProjectNumber($projectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectNumber()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewFeatureRegistrySource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewFeatureRegistrySource
     {
     }
 }

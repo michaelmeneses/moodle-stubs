@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployIndexRequest extends \Google\Model
-{
-    protected $deployedIndexType = GoogleCloudAiplatformV1DeployedIndex::class;
-    protected $deployedIndexDataType = '';
-    /**
-     * Required. The DeployedIndex to be created within the IndexEndpoint.
-     *
-     * @param GoogleCloudAiplatformV1DeployedIndex $deployedIndex
-     */
-    public function setDeployedIndex(GoogleCloudAiplatformV1DeployedIndex $deployedIndex)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployIndexRequest extends \Google\Model
     {
+        protected $deployedIndexType = GoogleCloudAiplatformV1DeployedIndex::class;
+        protected $deployedIndexDataType = '';
+        /**
+         * Required. The DeployedIndex to be created within the IndexEndpoint.
+         *
+         * @param GoogleCloudAiplatformV1DeployedIndex $deployedIndex
+         */
+        public function setDeployedIndex(GoogleCloudAiplatformV1DeployedIndex $deployedIndex)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployedIndex
+         */
+        public function getDeployedIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeployedIndex
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployIndexRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedIndex()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployIndexRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployIndexRequest
     {
     }
 }

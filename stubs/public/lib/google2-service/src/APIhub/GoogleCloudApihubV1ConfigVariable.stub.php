@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ConfigVariable extends \Google\Model
-{
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * boolean.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    protected $enumValueType = GoogleCloudApihubV1ConfigValueOption::class;
-    protected $enumValueDataType = '';
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * integer.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Output only. Key will be the id to uniquely identify the config variable.
-     *
-     * @var string
-     */
-    public $key;
-    protected $multiIntValuesType = GoogleCloudApihubV1MultiIntValues::class;
-    protected $multiIntValuesDataType = '';
-    protected $multiSelectValuesType = GoogleCloudApihubV1MultiSelectValues::class;
-    protected $multiSelectValuesDataType = '';
-    protected $multiStringValuesType = GoogleCloudApihubV1MultiStringValues::class;
-    protected $multiStringValuesDataType = '';
-    protected $secretValueType = GoogleCloudApihubV1Secret::class;
-    protected $secretValueDataType = '';
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * string.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * boolean.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ConfigVariable extends \Google\Model
     {
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * boolean.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        protected $enumValueType = GoogleCloudApihubV1ConfigValueOption::class;
+        protected $enumValueDataType = '';
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * integer.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Output only. Key will be the id to uniquely identify the config variable.
+         *
+         * @var string
+         */
+        public $key;
+        protected $multiIntValuesType = GoogleCloudApihubV1MultiIntValues::class;
+        protected $multiIntValuesDataType = '';
+        protected $multiSelectValuesType = GoogleCloudApihubV1MultiSelectValues::class;
+        protected $multiSelectValuesDataType = '';
+        protected $multiStringValuesType = GoogleCloudApihubV1MultiStringValues::class;
+        protected $multiStringValuesDataType = '';
+        protected $secretValueType = GoogleCloudApihubV1Secret::class;
+        protected $secretValueDataType = '';
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * string.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * boolean.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * enum.
+         *
+         * @param GoogleCloudApihubV1ConfigValueOption $enumValue
+         */
+        public function setEnumValue(GoogleCloudApihubV1ConfigValueOption $enumValue)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ConfigValueOption
+         */
+        public function getEnumValue()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * integer.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Output only. Key will be the id to uniquely identify the config variable.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * multi integer.
+         *
+         * @param GoogleCloudApihubV1MultiIntValues $multiIntValues
+         */
+        public function setMultiIntValues(GoogleCloudApihubV1MultiIntValues $multiIntValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1MultiIntValues
+         */
+        public function getMultiIntValues()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * multi select.
+         *
+         * @param GoogleCloudApihubV1MultiSelectValues $multiSelectValues
+         */
+        public function setMultiSelectValues(GoogleCloudApihubV1MultiSelectValues $multiSelectValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1MultiSelectValues
+         */
+        public function getMultiSelectValues()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * multi string.
+         *
+         * @param GoogleCloudApihubV1MultiStringValues $multiStringValues
+         */
+        public function setMultiStringValues(GoogleCloudApihubV1MultiStringValues $multiStringValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1MultiStringValues
+         */
+        public function getMultiStringValues()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * secret.
+         *
+         * @param GoogleCloudApihubV1Secret $secretValue
+         */
+        public function setSecretValue(GoogleCloudApihubV1Secret $secretValue)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Secret
+         */
+        public function getSecretValue()
+        {
+        }
+        /**
+         * Optional. The config variable value in case of config variable of type
+         * string.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ConfigVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * enum.
-     *
-     * @param GoogleCloudApihubV1ConfigValueOption $enumValue
-     */
-    public function setEnumValue(GoogleCloudApihubV1ConfigValueOption $enumValue)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1ConfigValueOption
-     */
-    public function getEnumValue()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * integer.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Output only. Key will be the id to uniquely identify the config variable.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * multi integer.
-     *
-     * @param GoogleCloudApihubV1MultiIntValues $multiIntValues
-     */
-    public function setMultiIntValues(GoogleCloudApihubV1MultiIntValues $multiIntValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1MultiIntValues
-     */
-    public function getMultiIntValues()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * multi select.
-     *
-     * @param GoogleCloudApihubV1MultiSelectValues $multiSelectValues
-     */
-    public function setMultiSelectValues(GoogleCloudApihubV1MultiSelectValues $multiSelectValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1MultiSelectValues
-     */
-    public function getMultiSelectValues()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * multi string.
-     *
-     * @param GoogleCloudApihubV1MultiStringValues $multiStringValues
-     */
-    public function setMultiStringValues(GoogleCloudApihubV1MultiStringValues $multiStringValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1MultiStringValues
-     */
-    public function getMultiStringValues()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * secret.
-     *
-     * @param GoogleCloudApihubV1Secret $secretValue
-     */
-    public function setSecretValue(GoogleCloudApihubV1Secret $secretValue)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Secret
-     */
-    public function getSecretValue()
-    {
-    }
-    /**
-     * Optional. The config variable value in case of config variable of type
-     * string.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_APIhub_GoogleCloudApihubV1ConfigVariable extends \Google\Service\APIhub\GoogleCloudApihubV1ConfigVariable
     {
     }
 }

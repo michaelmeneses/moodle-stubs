@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DiscoveryclustersClusters extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    protected $internal_gapi_mappings = ["bannerWithContentContainer" => "banner_with_content_container"];
-    protected $bannerWithContentContainerType = DiscoveryclustersClustersBannerWithContentContainer::class;
-    protected $bannerWithContentContainerDataType = '';
-    /**
-     * @var string
-     */
-    public $subTitle;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var int
-     */
-    public $totalVolumes;
-    /**
-     * @var string
-     */
-    public $uid;
-    protected $volumesType = Volume::class;
-    protected $volumesDataType = 'array';
-    /**
-     * @param DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer
-     */
-    public function setBannerWithContentContainer(DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer)
+namespace Google\Service\Books {
+    class DiscoveryclustersClusters extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        protected $internal_gapi_mappings = ["bannerWithContentContainer" => "banner_with_content_container"];
+        protected $bannerWithContentContainerType = DiscoveryclustersClustersBannerWithContentContainer::class;
+        protected $bannerWithContentContainerDataType = '';
+        /**
+         * @var string
+         */
+        public $subTitle;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var int
+         */
+        public $totalVolumes;
+        /**
+         * @var string
+         */
+        public $uid;
+        protected $volumesType = Volume::class;
+        protected $volumesDataType = 'array';
+        /**
+         * @param DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer
+         */
+        public function setBannerWithContentContainer(DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer)
+        {
+        }
+        /**
+         * @return DiscoveryclustersClustersBannerWithContentContainer
+         */
+        public function getBannerWithContentContainer()
+        {
+        }
+        /**
+         * @param string $subTitle
+         */
+        public function setSubTitle($subTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubTitle()
+        {
+        }
+        /**
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param int $totalVolumes
+         */
+        public function setTotalVolumes($totalVolumes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalVolumes()
+        {
+        }
+        /**
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param Volume[] $volumes
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getVolumes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveryclustersClustersBannerWithContentContainer
+     * Runtime class alias of \Google\Service\Books\DiscoveryclustersClusters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannerWithContentContainer()
-    {
-    }
-    /**
-     * @param string $subTitle
-     */
-    public function setSubTitle($subTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubTitle()
-    {
-    }
-    /**
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param int $totalVolumes
-     */
-    public function setTotalVolumes($totalVolumes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalVolumes()
-    {
-    }
-    /**
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param Volume[] $volumes
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return Volume[]
-     */
-    public function getVolumes()
+    class Google_Service_Books_DiscoveryclustersClusters extends \Google\Service\Books\DiscoveryclustersClusters
     {
     }
 }

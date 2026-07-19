@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class CsvImportOptions extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    /**
-     * Optional. The columns to which CSV data is imported. If not specified, all
-     * columns of the database table are loaded with CSV data.
-     *
-     * @var string[]
-     */
-    public $columns;
-    /**
-     * Optional. Specifies the character that should appear before a data
-     * character that needs to be escaped. The default is same as quote character.
-     * The value of this argument has to be a character in Hex ASCII Code.
-     *
-     * @var string
-     */
-    public $escapeCharacter;
-    /**
-     * Optional. Specifies the character that separates columns within each row
-     * (line) of the file. The default is comma. The value of this argument has to
-     * be a character in Hex ASCII Code.
-     *
-     * @var string
-     */
-    public $fieldDelimiter;
-    /**
-     * Optional. Specifies the quoting character to be used when a data value is
-     * quoted. The default is double-quote. The value of this argument has to be a
-     * character in Hex ASCII Code.
-     *
-     * @var string
-     */
-    public $quoteCharacter;
-    /**
-     * Required. The database table to import CSV file into.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Optional. The columns to which CSV data is imported. If not specified, all
-     * columns of the database table are loaded with CSV data.
-     *
-     * @param string[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class CsvImportOptions extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        /**
+         * Optional. The columns to which CSV data is imported. If not specified, all
+         * columns of the database table are loaded with CSV data.
+         *
+         * @var string[]
+         */
+        public $columns;
+        /**
+         * Optional. Specifies the character that should appear before a data
+         * character that needs to be escaped. The default is same as quote character.
+         * The value of this argument has to be a character in Hex ASCII Code.
+         *
+         * @var string
+         */
+        public $escapeCharacter;
+        /**
+         * Optional. Specifies the character that separates columns within each row
+         * (line) of the file. The default is comma. The value of this argument has to
+         * be a character in Hex ASCII Code.
+         *
+         * @var string
+         */
+        public $fieldDelimiter;
+        /**
+         * Optional. Specifies the quoting character to be used when a data value is
+         * quoted. The default is double-quote. The value of this argument has to be a
+         * character in Hex ASCII Code.
+         *
+         * @var string
+         */
+        public $quoteCharacter;
+        /**
+         * Required. The database table to import CSV file into.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Optional. The columns to which CSV data is imported. If not specified, all
+         * columns of the database table are loaded with CSV data.
+         *
+         * @param string[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Optional. Specifies the character that should appear before a data
+         * character that needs to be escaped. The default is same as quote character.
+         * The value of this argument has to be a character in Hex ASCII Code.
+         *
+         * @param string $escapeCharacter
+         */
+        public function setEscapeCharacter($escapeCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEscapeCharacter()
+        {
+        }
+        /**
+         * Optional. Specifies the character that separates columns within each row
+         * (line) of the file. The default is comma. The value of this argument has to
+         * be a character in Hex ASCII Code.
+         *
+         * @param string $fieldDelimiter
+         */
+        public function setFieldDelimiter($fieldDelimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldDelimiter()
+        {
+        }
+        /**
+         * Optional. Specifies the quoting character to be used when a data value is
+         * quoted. The default is double-quote. The value of this argument has to be a
+         * character in Hex ASCII Code.
+         *
+         * @param string $quoteCharacter
+         */
+        public function setQuoteCharacter($quoteCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuoteCharacter()
+        {
+        }
+        /**
+         * Required. The database table to import CSV file into.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\CsvImportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Optional. Specifies the character that should appear before a data
-     * character that needs to be escaped. The default is same as quote character.
-     * The value of this argument has to be a character in Hex ASCII Code.
-     *
-     * @param string $escapeCharacter
-     */
-    public function setEscapeCharacter($escapeCharacter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEscapeCharacter()
-    {
-    }
-    /**
-     * Optional. Specifies the character that separates columns within each row
-     * (line) of the file. The default is comma. The value of this argument has to
-     * be a character in Hex ASCII Code.
-     *
-     * @param string $fieldDelimiter
-     */
-    public function setFieldDelimiter($fieldDelimiter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldDelimiter()
-    {
-    }
-    /**
-     * Optional. Specifies the quoting character to be used when a data value is
-     * quoted. The default is double-quote. The value of this argument has to be a
-     * character in Hex ASCII Code.
-     *
-     * @param string $quoteCharacter
-     */
-    public function setQuoteCharacter($quoteCharacter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuoteCharacter()
-    {
-    }
-    /**
-     * Required. The database table to import CSV file into.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_CloudAlloyDBAdmin_CsvImportOptions extends \Google\Service\CloudAlloyDBAdmin\CsvImportOptions
     {
     }
 }

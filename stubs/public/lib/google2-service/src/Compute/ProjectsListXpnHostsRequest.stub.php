@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ProjectsListXpnHostsRequest extends \Google\Model
-{
-    /**
-     * Optional organization ID managed by Cloud Resource Manager, for which to
-     * list shared VPC host projects. If not specified, the organization will be
-     * inferred from the project.
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * Optional organization ID managed by Cloud Resource Manager, for which to
-     * list shared VPC host projects. If not specified, the organization will be
-     * inferred from the project.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
+namespace Google\Service\Compute {
+    class ProjectsListXpnHostsRequest extends \Google\Model
     {
+        /**
+         * Optional organization ID managed by Cloud Resource Manager, for which to
+         * list shared VPC host projects. If not specified, the organization will be
+         * inferred from the project.
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * Optional organization ID managed by Cloud Resource Manager, for which to
+         * list shared VPC host projects. If not specified, the organization will be
+         * inferred from the project.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ProjectsListXpnHostsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrganization()
+    class Google_Service_Compute_ProjectsListXpnHostsRequest extends \Google\Service\Compute\ProjectsListXpnHostsRequest
     {
     }
 }

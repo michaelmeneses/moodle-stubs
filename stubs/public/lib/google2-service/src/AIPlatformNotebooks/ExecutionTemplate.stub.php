@@ -21,245 +21,254 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ExecutionTemplate extends \Google\Model
-{
-    protected $acceleratorConfigType = SchedulerAcceleratorConfig::class;
-    protected $acceleratorConfigDataType = '';
-    public $acceleratorConfig;
-    /**
-     * @var string
-     */
-    public $containerImageUri;
-    protected $dataprocParametersType = DataprocParameters::class;
-    protected $dataprocParametersDataType = '';
-    public $dataprocParameters;
-    /**
-     * @var string
-     */
-    public $inputNotebookFile;
-    /**
-     * @var string
-     */
-    public $jobType;
-    /**
-     * @var string
-     */
-    public $kernelSpec;
-    /**
-     * @var string[]
-     */
-    public $labels = [];
-    /**
-     * @var string
-     */
-    public $masterType;
-    /**
-     * @var string
-     */
-    public $outputNotebookFolder;
-    /**
-     * @var string
-     */
-    public $parameters;
-    /**
-     * @var string
-     */
-    public $paramsYamlFile;
-    /**
-     * @var string
-     */
-    public $scaleTier;
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * @var string
-     */
-    public $tensorboard;
-    protected $vertexAiParametersType = VertexAIParameters::class;
-    protected $vertexAiParametersDataType = '';
-    public $vertexAiParameters;
-    /**
-     * @param SchedulerAcceleratorConfig
-     */
-    public function setAcceleratorConfig(SchedulerAcceleratorConfig $acceleratorConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class ExecutionTemplate extends \Google\Model
     {
+        protected $acceleratorConfigType = SchedulerAcceleratorConfig::class;
+        protected $acceleratorConfigDataType = '';
+        public $acceleratorConfig;
+        /**
+         * @var string
+         */
+        public $containerImageUri;
+        protected $dataprocParametersType = DataprocParameters::class;
+        protected $dataprocParametersDataType = '';
+        public $dataprocParameters;
+        /**
+         * @var string
+         */
+        public $inputNotebookFile;
+        /**
+         * @var string
+         */
+        public $jobType;
+        /**
+         * @var string
+         */
+        public $kernelSpec;
+        /**
+         * @var string[]
+         */
+        public $labels = [];
+        /**
+         * @var string
+         */
+        public $masterType;
+        /**
+         * @var string
+         */
+        public $outputNotebookFolder;
+        /**
+         * @var string
+         */
+        public $parameters;
+        /**
+         * @var string
+         */
+        public $paramsYamlFile;
+        /**
+         * @var string
+         */
+        public $scaleTier;
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * @var string
+         */
+        public $tensorboard;
+        protected $vertexAiParametersType = VertexAIParameters::class;
+        protected $vertexAiParametersDataType = '';
+        public $vertexAiParameters;
+        /**
+         * @param SchedulerAcceleratorConfig
+         */
+        public function setAcceleratorConfig(SchedulerAcceleratorConfig $acceleratorConfig)
+        {
+        }
+        /**
+         * @return SchedulerAcceleratorConfig
+         */
+        public function getAcceleratorConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContainerImageUri($containerImageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerImageUri()
+        {
+        }
+        /**
+         * @param DataprocParameters
+         */
+        public function setDataprocParameters(DataprocParameters $dataprocParameters)
+        {
+        }
+        /**
+         * @return DataprocParameters
+         */
+        public function getDataprocParameters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInputNotebookFile($inputNotebookFile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputNotebookFile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setJobType($jobType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKernelSpec($kernelSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKernelSpec()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMasterType($masterType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOutputNotebookFolder($outputNotebookFolder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputNotebookFolder()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParamsYamlFile($paramsYamlFile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParamsYamlFile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScaleTier($scaleTier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScaleTier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTensorboard($tensorboard)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTensorboard()
+        {
+        }
+        /**
+         * @param VertexAIParameters
+         */
+        public function setVertexAiParameters(VertexAIParameters $vertexAiParameters)
+        {
+        }
+        /**
+         * @return VertexAIParameters
+         */
+        public function getVertexAiParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SchedulerAcceleratorConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ExecutionTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContainerImageUri($containerImageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerImageUri()
-    {
-    }
-    /**
-     * @param DataprocParameters
-     */
-    public function setDataprocParameters(DataprocParameters $dataprocParameters)
-    {
-    }
-    /**
-     * @return DataprocParameters
-     */
-    public function getDataprocParameters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInputNotebookFile($inputNotebookFile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputNotebookFile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setJobType($jobType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKernelSpec($kernelSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKernelSpec()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMasterType($masterType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOutputNotebookFolder($outputNotebookFolder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputNotebookFolder()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParamsYamlFile($paramsYamlFile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParamsYamlFile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScaleTier($scaleTier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScaleTier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTensorboard($tensorboard)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTensorboard()
-    {
-    }
-    /**
-     * @param VertexAIParameters
-     */
-    public function setVertexAiParameters(VertexAIParameters $vertexAiParameters)
-    {
-    }
-    /**
-     * @return VertexAIParameters
-     */
-    public function getVertexAiParameters()
+    class Google_Service_AIPlatformNotebooks_ExecutionTemplate extends \Google\Service\AIPlatformNotebooks\ExecutionTemplate
     {
     }
 }

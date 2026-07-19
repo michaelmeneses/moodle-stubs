@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationBlockPhysicalTopologyInstance extends \Google\Model
-{
-    /**
-     * The InstanceId of the instance
-     *
-     * @var string
-     */
-    public $instanceId;
-    protected $physicalHostTopologyType = ReservationBlockPhysicalTopologyInstancePhysicalHostTopology::class;
-    protected $physicalHostTopologyDataType = '';
-    /**
-     * Project where the instance lives
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The InstanceId of the instance
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
+namespace Google\Service\Compute {
+    class ReservationBlockPhysicalTopologyInstance extends \Google\Model
     {
+        /**
+         * The InstanceId of the instance
+         *
+         * @var string
+         */
+        public $instanceId;
+        protected $physicalHostTopologyType = ReservationBlockPhysicalTopologyInstancePhysicalHostTopology::class;
+        protected $physicalHostTopologyDataType = '';
+        /**
+         * Project where the instance lives
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The InstanceId of the instance
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Output only. The PhysicalHostTopology of instances within a Block resource.
+         *
+         * @param ReservationBlockPhysicalTopologyInstancePhysicalHostTopology $physicalHostTopology
+         */
+        public function setPhysicalHostTopology(ReservationBlockPhysicalTopologyInstancePhysicalHostTopology $physicalHostTopology)
+        {
+        }
+        /**
+         * @return ReservationBlockPhysicalTopologyInstancePhysicalHostTopology
+         */
+        public function getPhysicalHostTopology()
+        {
+        }
+        /**
+         * Project where the instance lives
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ReservationBlockPhysicalTopologyInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Output only. The PhysicalHostTopology of instances within a Block resource.
-     *
-     * @param ReservationBlockPhysicalTopologyInstancePhysicalHostTopology $physicalHostTopology
-     */
-    public function setPhysicalHostTopology(ReservationBlockPhysicalTopologyInstancePhysicalHostTopology $physicalHostTopology)
-    {
-    }
-    /**
-     * @return ReservationBlockPhysicalTopologyInstancePhysicalHostTopology
-     */
-    public function getPhysicalHostTopology()
-    {
-    }
-    /**
-     * Project where the instance lives
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_Compute_ReservationBlockPhysicalTopologyInstance extends \Google\Service\Compute\ReservationBlockPhysicalTopologyInstance
     {
     }
 }

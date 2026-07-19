@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ProjectsEnableXpnResourceRequest extends \Google\Model
-{
-    protected $xpnResourceType = XpnResourceId::class;
-    protected $xpnResourceDataType = '';
-    /**
-     * Service resource (a.k.a service project) ID.
-     *
-     * @param XpnResourceId $xpnResource
-     */
-    public function setXpnResource(XpnResourceId $xpnResource)
+namespace Google\Service\Compute {
+    class ProjectsEnableXpnResourceRequest extends \Google\Model
     {
+        protected $xpnResourceType = XpnResourceId::class;
+        protected $xpnResourceDataType = '';
+        /**
+         * Service resource (a.k.a service project) ID.
+         *
+         * @param XpnResourceId $xpnResource
+         */
+        public function setXpnResource(XpnResourceId $xpnResource)
+        {
+        }
+        /**
+         * @return XpnResourceId
+         */
+        public function getXpnResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XpnResourceId
+     * Runtime class alias of \Google\Service\Compute\ProjectsEnableXpnResourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getXpnResource()
+    class Google_Service_Compute_ProjectsEnableXpnResourceRequest extends \Google\Service\Compute\ProjectsEnableXpnResourceRequest
     {
     }
 }

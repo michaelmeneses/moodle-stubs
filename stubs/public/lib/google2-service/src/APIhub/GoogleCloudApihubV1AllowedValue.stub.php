@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AllowedValue extends \Google\Model
-{
-    /**
-     * Optional. The detailed description of the allowed value.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The display name of the allowed value.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The ID of the allowed value. * If provided, the same will be
-     * used. The service will throw an error if the specified id is already used
-     * by another allowed value in the same attribute resource. * If not provided,
-     * a system generated id derived from the display name will be used. In this
-     * case, the service will handle conflict resolution by adding a system
-     * generated suffix in case of duplicates. This value should be 4-63
-     * characters, and valid characters are /a-z-/.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. When set to true, the allowed value cannot be updated or deleted
-     * by the user. It can only be true for System defined attributes.
-     *
-     * @var bool
-     */
-    public $immutable;
-    /**
-     * Optional. The detailed description of the allowed value.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AllowedValue extends \Google\Model
     {
+        /**
+         * Optional. The detailed description of the allowed value.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The display name of the allowed value.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The ID of the allowed value. * If provided, the same will be
+         * used. The service will throw an error if the specified id is already used
+         * by another allowed value in the same attribute resource. * If not provided,
+         * a system generated id derived from the display name will be used. In this
+         * case, the service will handle conflict resolution by adding a system
+         * generated suffix in case of duplicates. This value should be 4-63
+         * characters, and valid characters are /a-z-/.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. When set to true, the allowed value cannot be updated or deleted
+         * by the user. It can only be true for System defined attributes.
+         *
+         * @var bool
+         */
+        public $immutable;
+        /**
+         * Optional. The detailed description of the allowed value.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The display name of the allowed value.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The ID of the allowed value. * If provided, the same will be
+         * used. The service will throw an error if the specified id is already used
+         * by another allowed value in the same attribute resource. * If not provided,
+         * a system generated id derived from the display name will be used. In this
+         * case, the service will handle conflict resolution by adding a system
+         * generated suffix in case of duplicates. This value should be 4-63
+         * characters, and valid characters are /a-z-/.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. When set to true, the allowed value cannot be updated or deleted
+         * by the user. It can only be true for System defined attributes.
+         *
+         * @param bool $immutable
+         */
+        public function setImmutable($immutable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImmutable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AllowedValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The display name of the allowed value.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The ID of the allowed value. * If provided, the same will be
-     * used. The service will throw an error if the specified id is already used
-     * by another allowed value in the same attribute resource. * If not provided,
-     * a system generated id derived from the display name will be used. In this
-     * case, the service will handle conflict resolution by adding a system
-     * generated suffix in case of duplicates. This value should be 4-63
-     * characters, and valid characters are /a-z-/.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. When set to true, the allowed value cannot be updated or deleted
-     * by the user. It can only be true for System defined attributes.
-     *
-     * @param bool $immutable
-     */
-    public function setImmutable($immutable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImmutable()
+    class Google_Service_APIhub_GoogleCloudApihubV1AllowedValue extends \Google\Service\APIhub\GoogleCloudApihubV1AllowedValue
     {
     }
 }

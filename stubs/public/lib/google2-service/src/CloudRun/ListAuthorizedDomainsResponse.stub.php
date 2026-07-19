@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ListAuthorizedDomainsResponse extends \Google\Collection
-{
-    protected $collection_key = 'domains';
-    protected $domainsType = AuthorizedDomain::class;
-    protected $domainsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param AuthorizedDomain[]
-     */
-    public function setDomains($domains)
+namespace Google\Service\CloudRun {
+    class ListAuthorizedDomainsResponse extends \Google\Collection
     {
+        protected $collection_key = 'domains';
+        protected $domainsType = AuthorizedDomain::class;
+        protected $domainsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param AuthorizedDomain[]
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return AuthorizedDomain[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedDomain[]
+     * Runtime class alias of \Google\Service\CloudRun\ListAuthorizedDomainsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomains()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudRun_ListAuthorizedDomainsResponse extends \Google\Service\CloudRun\ListAuthorizedDomainsResponse
     {
     }
 }

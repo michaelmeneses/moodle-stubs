@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class InvalidRulesWrapper extends \Google\Collection
-{
-    protected $collection_key = 'invalidRules';
-    protected $invalidRulesType = InvalidRule::class;
-    protected $invalidRulesDataType = 'array';
-    /**
-     * The invalid rules that failed to be validated.
-     *
-     * @param InvalidRule[] $invalidRules
-     */
-    public function setInvalidRules($invalidRules)
+namespace Google\Service\WorkloadManager {
+    class InvalidRulesWrapper extends \Google\Collection
     {
+        protected $collection_key = 'invalidRules';
+        protected $invalidRulesType = InvalidRule::class;
+        protected $invalidRulesDataType = 'array';
+        /**
+         * The invalid rules that failed to be validated.
+         *
+         * @param InvalidRule[] $invalidRules
+         */
+        public function setInvalidRules($invalidRules)
+        {
+        }
+        /**
+         * @return InvalidRule[]
+         */
+        public function getInvalidRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InvalidRule[]
+     * Runtime class alias of \Google\Service\WorkloadManager\InvalidRulesWrapper registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvalidRules()
+    class Google_Service_WorkloadManager_InvalidRulesWrapper extends \Google\Service\WorkloadManager\InvalidRulesWrapper
     {
     }
 }

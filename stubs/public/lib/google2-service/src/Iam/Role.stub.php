@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class Role extends \Google\Collection
-{
-    protected $collection_key = 'includedPermissions';
-    /**
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var string[]
-     */
-    public $includedPermissions;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $stage;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param bool
-     */
-    public function setDeleted($deleted)
+namespace Google\Service\Iam {
+    class Role extends \Google\Collection
     {
+        protected $collection_key = 'includedPermissions';
+        /**
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var string[]
+         */
+        public $includedPermissions;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $stage;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param bool
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIncludedPermissions($includedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedPermissions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStage($stage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Iam\Role registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleted()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIncludedPermissions($includedPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedPermissions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStage($stage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Iam_Role extends \Google\Service\Iam\Role
     {
     }
 }

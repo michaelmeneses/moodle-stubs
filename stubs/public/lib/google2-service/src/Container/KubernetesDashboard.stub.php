@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class KubernetesDashboard extends \Google\Model
-{
-    /**
-     * Whether the Kubernetes Dashboard is enabled for this cluster.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Whether the Kubernetes Dashboard is enabled for this cluster.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Container {
+    class KubernetesDashboard extends \Google\Model
     {
+        /**
+         * Whether the Kubernetes Dashboard is enabled for this cluster.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Whether the Kubernetes Dashboard is enabled for this cluster.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\KubernetesDashboard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
+    class Google_Service_Container_KubernetesDashboard extends \Google\Service\Container\KubernetesDashboard
     {
     }
 }

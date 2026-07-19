@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceConsumerAlert extends \Google\Model
-{
-    protected $detailsType = GoogleMapsPlacesV1PlaceConsumerAlertDetails::class;
-    protected $detailsDataType = '';
-    /**
-     * The language code of the consumer alert message. This is a BCP 47 language
-     * code.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * The overview of the consumer alert message.
-     *
-     * @var string
-     */
-    public $overview;
-    /**
-     * The details of the consumer alert message.
-     *
-     * @param GoogleMapsPlacesV1PlaceConsumerAlertDetails $details
-     */
-    public function setDetails(GoogleMapsPlacesV1PlaceConsumerAlertDetails $details)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceConsumerAlert extends \Google\Model
     {
+        protected $detailsType = GoogleMapsPlacesV1PlaceConsumerAlertDetails::class;
+        protected $detailsDataType = '';
+        /**
+         * The language code of the consumer alert message. This is a BCP 47 language
+         * code.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * The overview of the consumer alert message.
+         *
+         * @var string
+         */
+        public $overview;
+        /**
+         * The details of the consumer alert message.
+         *
+         * @param GoogleMapsPlacesV1PlaceConsumerAlertDetails $details
+         */
+        public function setDetails(GoogleMapsPlacesV1PlaceConsumerAlertDetails $details)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1PlaceConsumerAlertDetails
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The language code of the consumer alert message. This is a BCP 47 language
+         * code.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The overview of the consumer alert message.
+         *
+         * @param string $overview
+         */
+        public function setOverview($overview)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1PlaceConsumerAlertDetails
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceConsumerAlert registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The language code of the consumer alert message. This is a BCP 47 language
-     * code.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The overview of the consumer alert message.
-     *
-     * @param string $overview
-     */
-    public function setOverview($overview)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOverview()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceConsumerAlert extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceConsumerAlert
     {
     }
 }

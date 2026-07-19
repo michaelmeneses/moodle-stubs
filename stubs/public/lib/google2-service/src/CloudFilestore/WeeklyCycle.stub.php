@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class WeeklyCycle extends \Google\Collection
-{
-    protected $collection_key = 'schedule';
-    protected $scheduleType = Schedule::class;
-    protected $scheduleDataType = 'array';
-    /**
-     * User can specify multiple windows in a week. Minimum of 1 window.
-     *
-     * @param Schedule[] $schedule
-     */
-    public function setSchedule($schedule)
+namespace Google\Service\CloudFilestore {
+    class WeeklyCycle extends \Google\Collection
     {
+        protected $collection_key = 'schedule';
+        protected $scheduleType = Schedule::class;
+        protected $scheduleDataType = 'array';
+        /**
+         * User can specify multiple windows in a week. Minimum of 1 window.
+         *
+         * @param Schedule[] $schedule
+         */
+        public function setSchedule($schedule)
+        {
+        }
+        /**
+         * @return Schedule[]
+         */
+        public function getSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Schedule[]
+     * Runtime class alias of \Google\Service\CloudFilestore\WeeklyCycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchedule()
+    class Google_Service_CloudFilestore_WeeklyCycle extends \Google\Service\CloudFilestore\WeeklyCycle
     {
     }
 }

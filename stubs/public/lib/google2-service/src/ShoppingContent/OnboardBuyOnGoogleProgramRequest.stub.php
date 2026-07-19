@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OnboardBuyOnGoogleProgramRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $customerServiceEmail;
-    /**
-     * @param string
-     */
-    public function setCustomerServiceEmail($customerServiceEmail)
+namespace Google\Service\ShoppingContent {
+    class OnboardBuyOnGoogleProgramRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $customerServiceEmail;
+        /**
+         * @param string
+         */
+        public function setCustomerServiceEmail($customerServiceEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServiceEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OnboardBuyOnGoogleProgramRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerServiceEmail()
+    class Google_Service_ShoppingContent_OnboardBuyOnGoogleProgramRequest extends \Google\Service\ShoppingContent\OnboardBuyOnGoogleProgramRequest
     {
     }
 }

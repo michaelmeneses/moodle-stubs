@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1UpdateDocumentResponse extends \Google\Model
-{
-    protected $documentType = GoogleCloudContentwarehouseV1Document::class;
-    protected $documentDataType = '';
-    protected $metadataType = GoogleCloudContentwarehouseV1ResponseMetadata::class;
-    protected $metadataDataType = '';
-    protected $ruleEngineOutputType = GoogleCloudContentwarehouseV1RuleEngineOutput::class;
-    protected $ruleEngineOutputDataType = '';
-    /**
-     * Updated document after executing update request.
-     *
-     * @param GoogleCloudContentwarehouseV1Document $document
-     */
-    public function setDocument(GoogleCloudContentwarehouseV1Document $document)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1UpdateDocumentResponse extends \Google\Model
     {
+        protected $documentType = GoogleCloudContentwarehouseV1Document::class;
+        protected $documentDataType = '';
+        protected $metadataType = GoogleCloudContentwarehouseV1ResponseMetadata::class;
+        protected $metadataDataType = '';
+        protected $ruleEngineOutputType = GoogleCloudContentwarehouseV1RuleEngineOutput::class;
+        protected $ruleEngineOutputDataType = '';
+        /**
+         * Updated document after executing update request.
+         *
+         * @param GoogleCloudContentwarehouseV1Document $document
+         */
+        public function setDocument(GoogleCloudContentwarehouseV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param GoogleCloudContentwarehouseV1ResponseMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudContentwarehouseV1ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output from Rule Engine recording the rule evaluator and action executor's
+         * output. Refer format in: google/cloud/contentwarehouse/v1/rule_engine.proto
+         *
+         * @param GoogleCloudContentwarehouseV1RuleEngineOutput $ruleEngineOutput
+         */
+        public function setRuleEngineOutput(GoogleCloudContentwarehouseV1RuleEngineOutput $ruleEngineOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RuleEngineOutput
+         */
+        public function getRuleEngineOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1Document
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param GoogleCloudContentwarehouseV1ResponseMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudContentwarehouseV1ResponseMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1ResponseMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output from Rule Engine recording the rule evaluator and action executor's
-     * output. Refer format in: google/cloud/contentwarehouse/v1/rule_engine.proto
-     *
-     * @param GoogleCloudContentwarehouseV1RuleEngineOutput $ruleEngineOutput
-     */
-    public function setRuleEngineOutput(GoogleCloudContentwarehouseV1RuleEngineOutput $ruleEngineOutput)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RuleEngineOutput
-     */
-    public function getRuleEngineOutput()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1UpdateDocumentResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentResponse
     {
     }
 }

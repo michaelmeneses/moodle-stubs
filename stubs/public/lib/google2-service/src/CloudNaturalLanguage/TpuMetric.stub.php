@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class TpuMetric extends \Google\Model
-{
-    public const TPU_TYPE_UNKNOWN_TPU_TYPE = 'UNKNOWN_TPU_TYPE';
-    public const TPU_TYPE_TPU_V2_POD = 'TPU_V2_POD';
-    public const TPU_TYPE_TPU_V2 = 'TPU_V2';
-    public const TPU_TYPE_TPU_V3_POD = 'TPU_V3_POD';
-    public const TPU_TYPE_TPU_V3 = 'TPU_V3';
-    public const TPU_TYPE_TPU_V5_LITEPOD = 'TPU_V5_LITEPOD';
-    /**
-     * Required. Seconds of TPU usage, e.g. 3600.
-     *
-     * @var string
-     */
-    public $tpuSec;
-    /**
-     * Required. Type of TPU, e.g. TPU_V2, TPU_V3_POD.
-     *
-     * @var string
-     */
-    public $tpuType;
-    /**
-     * Required. Seconds of TPU usage, e.g. 3600.
-     *
-     * @param string $tpuSec
-     */
-    public function setTpuSec($tpuSec)
+namespace Google\Service\CloudNaturalLanguage {
+    class TpuMetric extends \Google\Model
     {
+        public const TPU_TYPE_UNKNOWN_TPU_TYPE = 'UNKNOWN_TPU_TYPE';
+        public const TPU_TYPE_TPU_V2_POD = 'TPU_V2_POD';
+        public const TPU_TYPE_TPU_V2 = 'TPU_V2';
+        public const TPU_TYPE_TPU_V3_POD = 'TPU_V3_POD';
+        public const TPU_TYPE_TPU_V3 = 'TPU_V3';
+        public const TPU_TYPE_TPU_V5_LITEPOD = 'TPU_V5_LITEPOD';
+        /**
+         * Required. Seconds of TPU usage, e.g. 3600.
+         *
+         * @var string
+         */
+        public $tpuSec;
+        /**
+         * Required. Type of TPU, e.g. TPU_V2, TPU_V3_POD.
+         *
+         * @var string
+         */
+        public $tpuType;
+        /**
+         * Required. Seconds of TPU usage, e.g. 3600.
+         *
+         * @param string $tpuSec
+         */
+        public function setTpuSec($tpuSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTpuSec()
+        {
+        }
+        /**
+         * Required. Type of TPU, e.g. TPU_V2, TPU_V3_POD.
+         *
+         * Accepted values: UNKNOWN_TPU_TYPE, TPU_V2_POD, TPU_V2, TPU_V3_POD, TPU_V3,
+         * TPU_V5_LITEPOD
+         *
+         * @param self::TPU_TYPE_* $tpuType
+         */
+        public function setTpuType($tpuType)
+        {
+        }
+        /**
+         * @return self::TPU_TYPE_*
+         */
+        public function getTpuType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\TpuMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTpuSec()
-    {
-    }
-    /**
-     * Required. Type of TPU, e.g. TPU_V2, TPU_V3_POD.
-     *
-     * Accepted values: UNKNOWN_TPU_TYPE, TPU_V2_POD, TPU_V2, TPU_V3_POD, TPU_V3,
-     * TPU_V5_LITEPOD
-     *
-     * @param self::TPU_TYPE_* $tpuType
-     */
-    public function setTpuType($tpuType)
-    {
-    }
-    /**
-     * @return self::TPU_TYPE_*
-     */
-    public function getTpuType()
+    class Google_Service_CloudNaturalLanguage_TpuMetric extends \Google\Service\CloudNaturalLanguage\TpuMetric
     {
     }
 }

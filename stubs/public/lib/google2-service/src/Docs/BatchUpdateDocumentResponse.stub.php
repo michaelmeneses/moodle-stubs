@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class BatchUpdateDocumentResponse extends \Google\Collection
-{
-    protected $collection_key = 'replies';
-    /**
-     * The ID of the document to which the updates were applied to.
-     *
-     * @var string
-     */
-    public $documentId;
-    protected $repliesType = Response::class;
-    protected $repliesDataType = 'array';
-    protected $writeControlType = WriteControl::class;
-    protected $writeControlDataType = '';
-    /**
-     * The ID of the document to which the updates were applied to.
-     *
-     * @param string $documentId
-     */
-    public function setDocumentId($documentId)
+namespace Google\Service\Docs {
+    class BatchUpdateDocumentResponse extends \Google\Collection
     {
+        protected $collection_key = 'replies';
+        /**
+         * The ID of the document to which the updates were applied to.
+         *
+         * @var string
+         */
+        public $documentId;
+        protected $repliesType = Response::class;
+        protected $repliesDataType = 'array';
+        protected $writeControlType = WriteControl::class;
+        protected $writeControlDataType = '';
+        /**
+         * The ID of the document to which the updates were applied to.
+         *
+         * @param string $documentId
+         */
+        public function setDocumentId($documentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentId()
+        {
+        }
+        /**
+         * The reply of the updates. This maps 1:1 with the updates, although replies
+         * to some requests may be empty.
+         *
+         * @param Response[] $replies
+         */
+        public function setReplies($replies)
+        {
+        }
+        /**
+         * @return Response[]
+         */
+        public function getReplies()
+        {
+        }
+        /**
+         * The updated write control after applying the request.
+         *
+         * @param WriteControl $writeControl
+         */
+        public function setWriteControl(WriteControl $writeControl)
+        {
+        }
+        /**
+         * @return WriteControl
+         */
+        public function getWriteControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\BatchUpdateDocumentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentId()
-    {
-    }
-    /**
-     * The reply of the updates. This maps 1:1 with the updates, although replies
-     * to some requests may be empty.
-     *
-     * @param Response[] $replies
-     */
-    public function setReplies($replies)
-    {
-    }
-    /**
-     * @return Response[]
-     */
-    public function getReplies()
-    {
-    }
-    /**
-     * The updated write control after applying the request.
-     *
-     * @param WriteControl $writeControl
-     */
-    public function setWriteControl(WriteControl $writeControl)
-    {
-    }
-    /**
-     * @return WriteControl
-     */
-    public function getWriteControl()
+    class Google_Service_Docs_BatchUpdateDocumentResponse extends \Google\Service\Docs\BatchUpdateDocumentResponse
     {
     }
 }

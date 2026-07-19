@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\aiactions;
 
+use core_ai\aiactions\responses\response_base;
 /**
  * Explain text class.
  *

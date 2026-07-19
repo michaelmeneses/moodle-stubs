@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class DynamicGroupMetadata extends \Google\Collection
-{
-    protected $collection_key = 'queries';
-    protected $queriesType = DynamicGroupQuery::class;
-    protected $queriesDataType = 'array';
-    protected $statusType = DynamicGroupStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Memberships will be the union of all queries. Only one entry with USER
-     * resource is currently supported. Customers can create up to 500 dynamic
-     * groups.
-     *
-     * @param DynamicGroupQuery[] $queries
-     */
-    public function setQueries($queries)
+namespace Google\Service\CloudIdentity {
+    class DynamicGroupMetadata extends \Google\Collection
     {
+        protected $collection_key = 'queries';
+        protected $queriesType = DynamicGroupQuery::class;
+        protected $queriesDataType = 'array';
+        protected $statusType = DynamicGroupStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Memberships will be the union of all queries. Only one entry with USER
+         * resource is currently supported. Customers can create up to 500 dynamic
+         * groups.
+         *
+         * @param DynamicGroupQuery[] $queries
+         */
+        public function setQueries($queries)
+        {
+        }
+        /**
+         * @return DynamicGroupQuery[]
+         */
+        public function getQueries()
+        {
+        }
+        /**
+         * Output only. Status of the dynamic group.
+         *
+         * @param DynamicGroupStatus $status
+         */
+        public function setStatus(DynamicGroupStatus $status)
+        {
+        }
+        /**
+         * @return DynamicGroupStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicGroupQuery[]
+     * Runtime class alias of \Google\Service\CloudIdentity\DynamicGroupMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueries()
-    {
-    }
-    /**
-     * Output only. Status of the dynamic group.
-     *
-     * @param DynamicGroupStatus $status
-     */
-    public function setStatus(DynamicGroupStatus $status)
-    {
-    }
-    /**
-     * @return DynamicGroupStatus
-     */
-    public function getStatus()
+    class Google_Service_CloudIdentity_DynamicGroupMetadata extends \Google\Service\CloudIdentity\DynamicGroupMetadata
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ManagedConfigurationsForDeviceListResponse extends \Google\Collection
-{
-    protected $collection_key = 'managedConfigurationForDevice';
-    protected $managedConfigurationForDeviceType = ManagedConfiguration::class;
-    protected $managedConfigurationForDeviceDataType = 'array';
-    /**
-     * A managed configuration for an app on a specific device.
-     *
-     * @param ManagedConfiguration[] $managedConfigurationForDevice
-     */
-    public function setManagedConfigurationForDevice($managedConfigurationForDevice)
+namespace Google\Service\AndroidEnterprise {
+    class ManagedConfigurationsForDeviceListResponse extends \Google\Collection
     {
+        protected $collection_key = 'managedConfigurationForDevice';
+        protected $managedConfigurationForDeviceType = ManagedConfiguration::class;
+        protected $managedConfigurationForDeviceDataType = 'array';
+        /**
+         * A managed configuration for an app on a specific device.
+         *
+         * @param ManagedConfiguration[] $managedConfigurationForDevice
+         */
+        public function setManagedConfigurationForDevice($managedConfigurationForDevice)
+        {
+        }
+        /**
+         * @return ManagedConfiguration[]
+         */
+        public function getManagedConfigurationForDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedConfiguration[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ManagedConfigurationsForDeviceListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedConfigurationForDevice()
+    class Google_Service_AndroidEnterprise_ManagedConfigurationsForDeviceListResponse extends \Google\Service\AndroidEnterprise\ManagedConfigurationsForDeviceListResponse
     {
     }
 }

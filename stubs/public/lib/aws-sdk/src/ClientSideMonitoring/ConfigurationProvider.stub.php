@@ -8,6 +8,12 @@
  */
 namespace Aws\ClientSideMonitoring;
 
+use Aws\AbstractConfigurationProvider;
+use Aws\CacheInterface;
+use Aws\ClientSideMonitoring\Exception\ConfigurationException;
+use Aws\ConfigurationProviderInterface;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * A configuration provider is a function that accepts no arguments and returns
  * a promise that is fulfilled with a {@see \Aws\ClientSideMonitoring\ConfigurationInterface}

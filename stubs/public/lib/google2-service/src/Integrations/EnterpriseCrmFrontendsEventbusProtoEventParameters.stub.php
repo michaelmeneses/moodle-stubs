@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoEventParameters extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $parametersType = EnterpriseCrmFrontendsEventbusProtoParameterEntry::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Parameters are a part of Event and can be used to communicate between
-     * different tasks that are part of the same workflow execution.
-     *
-     * @param EnterpriseCrmFrontendsEventbusProtoParameterEntry[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoEventParameters extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $parametersType = EnterpriseCrmFrontendsEventbusProtoParameterEntry::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Parameters are a part of Event and can be used to communicate between
+         * different tasks that are part of the same workflow execution.
+         *
+         * @param EnterpriseCrmFrontendsEventbusProtoParameterEntry[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmFrontendsEventbusProtoParameterEntry[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmFrontendsEventbusProtoParameterEntry[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoEventParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoEventParameters extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoEventParameters
     {
     }
 }

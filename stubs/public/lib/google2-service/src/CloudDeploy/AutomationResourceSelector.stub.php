@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AutomationResourceSelector extends \Google\Collection
-{
-    protected $collection_key = 'targets';
-    protected $targetsType = TargetAttribute::class;
-    protected $targetsDataType = 'array';
-    /**
-     * Optional. Contains attributes about a target.
-     *
-     * @param TargetAttribute[] $targets
-     */
-    public function setTargets($targets)
+namespace Google\Service\CloudDeploy {
+    class AutomationResourceSelector extends \Google\Collection
     {
+        protected $collection_key = 'targets';
+        protected $targetsType = TargetAttribute::class;
+        protected $targetsDataType = 'array';
+        /**
+         * Optional. Contains attributes about a target.
+         *
+         * @param TargetAttribute[] $targets
+         */
+        public function setTargets($targets)
+        {
+        }
+        /**
+         * @return TargetAttribute[]
+         */
+        public function getTargets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetAttribute[]
+     * Runtime class alias of \Google\Service\CloudDeploy\AutomationResourceSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargets()
+    class Google_Service_CloudDeploy_AutomationResourceSelector extends \Google\Service\CloudDeploy\AutomationResourceSelector
     {
     }
 }

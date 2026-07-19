@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedMessageSearchInfo extends \Google\Collection
-{
-    protected $collection_key = 'matchedSegmentsInTextBody';
-    protected $matchedSegmentsInTextBodyType = AppsDynamiteSharedTextSegmentsWithDescription::class;
-    protected $matchedSegmentsInTextBodyDataType = 'array';
-    /**
-     * @param AppsDynamiteSharedTextSegmentsWithDescription[]
-     */
-    public function setMatchedSegmentsInTextBody($matchedSegmentsInTextBody)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedMessageSearchInfo extends \Google\Collection
     {
+        protected $collection_key = 'matchedSegmentsInTextBody';
+        protected $matchedSegmentsInTextBodyType = AppsDynamiteSharedTextSegmentsWithDescription::class;
+        protected $matchedSegmentsInTextBodyDataType = 'array';
+        /**
+         * @param AppsDynamiteSharedTextSegmentsWithDescription[]
+         */
+        public function setMatchedSegmentsInTextBody($matchedSegmentsInTextBody)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTextSegmentsWithDescription[]
+         */
+        public function getMatchedSegmentsInTextBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedTextSegmentsWithDescription[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedMessageSearchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchedSegmentsInTextBody()
+    class Google_Service_CloudSearch_AppsDynamiteSharedMessageSearchInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedMessageSearchInfo
     {
     }
 }

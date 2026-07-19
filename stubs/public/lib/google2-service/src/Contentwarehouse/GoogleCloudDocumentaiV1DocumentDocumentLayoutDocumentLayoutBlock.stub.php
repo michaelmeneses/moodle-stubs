@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock extends \Google\Model
-{
-    /**
-     * ID of the block.
-     *
-     * @var string
-     */
-    public $blockId;
-    protected $listBlockType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock::class;
-    protected $listBlockDataType = '';
-    protected $pageSpanType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan::class;
-    protected $pageSpanDataType = '';
-    protected $tableBlockType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock::class;
-    protected $tableBlockDataType = '';
-    protected $textBlockType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock::class;
-    protected $textBlockDataType = '';
-    /**
-     * ID of the block.
-     *
-     * @param string $blockId
-     */
-    public function setBlockId($blockId)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock extends \Google\Model
     {
+        /**
+         * ID of the block.
+         *
+         * @var string
+         */
+        public $blockId;
+        protected $listBlockType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock::class;
+        protected $listBlockDataType = '';
+        protected $pageSpanType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan::class;
+        protected $pageSpanDataType = '';
+        protected $tableBlockType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock::class;
+        protected $tableBlockDataType = '';
+        protected $textBlockType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock::class;
+        protected $textBlockDataType = '';
+        /**
+         * ID of the block.
+         *
+         * @param string $blockId
+         */
+        public function setBlockId($blockId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlockId()
+        {
+        }
+        /**
+         * Block consisting of list content/structure.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock $listBlock
+         */
+        public function setListBlock(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock $listBlock)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock
+         */
+        public function getListBlock()
+        {
+        }
+        /**
+         * Page span of the block.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan $pageSpan
+         */
+        public function setPageSpan(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan $pageSpan)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan
+         */
+        public function getPageSpan()
+        {
+        }
+        /**
+         * Block consisting of table content/structure.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock $tableBlock
+         */
+        public function setTableBlock(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock $tableBlock)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock
+         */
+        public function getTableBlock()
+        {
+        }
+        /**
+         * Block consisting of text content.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock $textBlock
+         */
+        public function setTextBlock(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock $textBlock)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock
+         */
+        public function getTextBlock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockId()
-    {
-    }
-    /**
-     * Block consisting of list content/structure.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock $listBlock
-     */
-    public function setListBlock(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock $listBlock)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock
-     */
-    public function getListBlock()
-    {
-    }
-    /**
-     * Page span of the block.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan $pageSpan
-     */
-    public function setPageSpan(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan $pageSpan)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan
-     */
-    public function getPageSpan()
-    {
-    }
-    /**
-     * Block consisting of table content/structure.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock $tableBlock
-     */
-    public function setTableBlock(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock $tableBlock)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock
-     */
-    public function getTableBlock()
-    {
-    }
-    /**
-     * Block consisting of text content.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock $textBlock
-     */
-    public function setTextBlock(GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock $textBlock)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock
-     */
-    public function getTextBlock()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock
     {
     }
 }

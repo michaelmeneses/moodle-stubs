@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IntArrayHparamSearchSpace extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    protected $candidatesType = IntArray::class;
-    protected $candidatesDataType = 'array';
-    /**
-     * Candidates for the int array parameter.
-     *
-     * @param IntArray[] $candidates
-     */
-    public function setCandidates($candidates)
+namespace Google\Service\Bigquery {
+    class IntArrayHparamSearchSpace extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        protected $candidatesType = IntArray::class;
+        protected $candidatesDataType = 'array';
+        /**
+         * Candidates for the int array parameter.
+         *
+         * @param IntArray[] $candidates
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return IntArray[]
+         */
+        public function getCandidates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IntArray[]
+     * Runtime class alias of \Google\Service\Bigquery\IntArrayHparamSearchSpace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
+    class Google_Service_Bigquery_IntArrayHparamSearchSpace extends \Google\Service\Bigquery\IntArrayHparamSearchSpace
     {
     }
 }

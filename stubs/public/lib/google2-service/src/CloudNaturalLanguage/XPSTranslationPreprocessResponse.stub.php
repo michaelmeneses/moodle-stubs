@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTranslationPreprocessResponse extends \Google\Model
-{
-    /**
-     * Total example count parsed.
-     *
-     * @var string
-     */
-    public $parsedExampleCount;
-    /**
-     * Total valid example count.
-     *
-     * @var string
-     */
-    public $validExampleCount;
-    /**
-     * Total example count parsed.
-     *
-     * @param string $parsedExampleCount
-     */
-    public function setParsedExampleCount($parsedExampleCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTranslationPreprocessResponse extends \Google\Model
     {
+        /**
+         * Total example count parsed.
+         *
+         * @var string
+         */
+        public $parsedExampleCount;
+        /**
+         * Total valid example count.
+         *
+         * @var string
+         */
+        public $validExampleCount;
+        /**
+         * Total example count parsed.
+         *
+         * @param string $parsedExampleCount
+         */
+        public function setParsedExampleCount($parsedExampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParsedExampleCount()
+        {
+        }
+        /**
+         * Total valid example count.
+         *
+         * @param string $validExampleCount
+         */
+        public function setValidExampleCount($validExampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidExampleCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTranslationPreprocessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParsedExampleCount()
-    {
-    }
-    /**
-     * Total valid example count.
-     *
-     * @param string $validExampleCount
-     */
-    public function setValidExampleCount($validExampleCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidExampleCount()
+    class Google_Service_CloudNaturalLanguage_XPSTranslationPreprocessResponse extends \Google\Service\CloudNaturalLanguage\XPSTranslationPreprocessResponse
     {
     }
 }

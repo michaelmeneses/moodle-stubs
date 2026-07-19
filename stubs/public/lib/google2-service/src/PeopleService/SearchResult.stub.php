@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class SearchResult extends \Google\Model
-{
-    protected $personType = Person::class;
-    protected $personDataType = '';
-    /**
-     * The matched Person.
-     *
-     * @param Person $person
-     */
-    public function setPerson(Person $person)
+namespace Google\Service\PeopleService {
+    class SearchResult extends \Google\Model
     {
+        protected $personType = Person::class;
+        protected $personDataType = '';
+        /**
+         * The matched Person.
+         *
+         * @param Person $person
+         */
+        public function setPerson(Person $person)
+        {
+        }
+        /**
+         * @return Person
+         */
+        public function getPerson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Person
+     * Runtime class alias of \Google\Service\PeopleService\SearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerson()
+    class Google_Service_PeopleService_SearchResult extends \Google\Service\PeopleService\SearchResult
     {
     }
 }

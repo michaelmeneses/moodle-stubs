@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosTestLoop extends \Google\Collection
-{
-    protected $collection_key = 'scenarios';
-    /**
-     * Output only. The bundle id for the application under test.
-     *
-     * @var string
-     */
-    public $appBundleId;
-    protected $appIpaType = FileReference::class;
-    protected $appIpaDataType = '';
-    /**
-     * The list of scenarios that should be run during the test. Defaults to the
-     * single scenario 0 if unspecified.
-     *
-     * @var int[]
-     */
-    public $scenarios;
-    /**
-     * Output only. The bundle id for the application under test.
-     *
-     * @param string $appBundleId
-     */
-    public function setAppBundleId($appBundleId)
+namespace Google\Service\Testing {
+    class IosTestLoop extends \Google\Collection
     {
+        protected $collection_key = 'scenarios';
+        /**
+         * Output only. The bundle id for the application under test.
+         *
+         * @var string
+         */
+        public $appBundleId;
+        protected $appIpaType = FileReference::class;
+        protected $appIpaDataType = '';
+        /**
+         * The list of scenarios that should be run during the test. Defaults to the
+         * single scenario 0 if unspecified.
+         *
+         * @var int[]
+         */
+        public $scenarios;
+        /**
+         * Output only. The bundle id for the application under test.
+         *
+         * @param string $appBundleId
+         */
+        public function setAppBundleId($appBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppBundleId()
+        {
+        }
+        /**
+         * Required. The .ipa of the application to test.
+         *
+         * @param FileReference $appIpa
+         */
+        public function setAppIpa(FileReference $appIpa)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getAppIpa()
+        {
+        }
+        /**
+         * The list of scenarios that should be run during the test. Defaults to the
+         * single scenario 0 if unspecified.
+         *
+         * @param int[] $scenarios
+         */
+        public function setScenarios($scenarios)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getScenarios()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\IosTestLoop registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppBundleId()
-    {
-    }
-    /**
-     * Required. The .ipa of the application to test.
-     *
-     * @param FileReference $appIpa
-     */
-    public function setAppIpa(FileReference $appIpa)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getAppIpa()
-    {
-    }
-    /**
-     * The list of scenarios that should be run during the test. Defaults to the
-     * single scenario 0 if unspecified.
-     *
-     * @param int[] $scenarios
-     */
-    public function setScenarios($scenarios)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getScenarios()
+    class Google_Service_Testing_IosTestLoop extends \Google\Service\Testing\IosTestLoop
     {
     }
 }

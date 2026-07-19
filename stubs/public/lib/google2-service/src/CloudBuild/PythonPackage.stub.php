@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PythonPackage extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    /**
-     * @var string[]
-     */
-    public $paths;
-    /**
-     * @var string
-     */
-    public $repository;
-    /**
-     * @param string[]
-     */
-    public function setPaths($paths)
+namespace Google\Service\CloudBuild {
+    class PythonPackage extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        /**
+         * @var string[]
+         */
+        public $paths;
+        /**
+         * @var string
+         */
+        public $repository;
+        /**
+         * @param string[]
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\PythonPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPaths()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_CloudBuild_PythonPackage extends \Google\Service\CloudBuild\PythonPackage
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductSigningCertificate extends \Google\Model
-{
-    /**
-     * The base64 urlsafe encoded SHA1 hash of the certificate. (This field is
-     * deprecated in favor of SHA2-256. It should not be used and may be removed
-     * at any time.)
-     *
-     * @var string
-     */
-    public $certificateHashSha1;
-    /**
-     * The base64 urlsafe encoded SHA2-256 hash of the certificate.
-     *
-     * @var string
-     */
-    public $certificateHashSha256;
-    /**
-     * The base64 urlsafe encoded SHA1 hash of the certificate. (This field is
-     * deprecated in favor of SHA2-256. It should not be used and may be removed
-     * at any time.)
-     *
-     * @param string $certificateHashSha1
-     */
-    public function setCertificateHashSha1($certificateHashSha1)
+namespace Google\Service\AndroidEnterprise {
+    class ProductSigningCertificate extends \Google\Model
     {
+        /**
+         * The base64 urlsafe encoded SHA1 hash of the certificate. (This field is
+         * deprecated in favor of SHA2-256. It should not be used and may be removed
+         * at any time.)
+         *
+         * @var string
+         */
+        public $certificateHashSha1;
+        /**
+         * The base64 urlsafe encoded SHA2-256 hash of the certificate.
+         *
+         * @var string
+         */
+        public $certificateHashSha256;
+        /**
+         * The base64 urlsafe encoded SHA1 hash of the certificate. (This field is
+         * deprecated in favor of SHA2-256. It should not be used and may be removed
+         * at any time.)
+         *
+         * @param string $certificateHashSha1
+         */
+        public function setCertificateHashSha1($certificateHashSha1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateHashSha1()
+        {
+        }
+        /**
+         * The base64 urlsafe encoded SHA2-256 hash of the certificate.
+         *
+         * @param string $certificateHashSha256
+         */
+        public function setCertificateHashSha256($certificateHashSha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateHashSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductSigningCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateHashSha1()
-    {
-    }
-    /**
-     * The base64 urlsafe encoded SHA2-256 hash of the certificate.
-     *
-     * @param string $certificateHashSha256
-     */
-    public function setCertificateHashSha256($certificateHashSha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertificateHashSha256()
+    class Google_Service_AndroidEnterprise_ProductSigningCertificate extends \Google\Service\AndroidEnterprise\ProductSigningCertificate
     {
     }
 }

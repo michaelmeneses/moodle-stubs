@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BuildOperationMetadata extends \Google\Model
-{
-    protected $buildType = Build::class;
-    protected $buildDataType = '';
-    /**
-     * @param Build
-     */
-    public function setBuild(Build $build)
+namespace Google\Service\CloudBuild {
+    class BuildOperationMetadata extends \Google\Model
     {
+        protected $buildType = Build::class;
+        protected $buildDataType = '';
+        /**
+         * @param Build
+         */
+        public function setBuild(Build $build)
+        {
+        }
+        /**
+         * @return Build
+         */
+        public function getBuild()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Build
+     * Runtime class alias of \Google\Service\CloudBuild\BuildOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuild()
+    class Google_Service_CloudBuild_BuildOperationMetadata extends \Google\Service\CloudBuild\BuildOperationMetadata
     {
     }
 }

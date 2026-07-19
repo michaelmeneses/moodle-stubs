@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class GetGuestAttributesResponse extends \Google\Collection
-{
-    protected $collection_key = 'guestAttributes';
-    protected $guestAttributesType = GuestAttributes::class;
-    protected $guestAttributesDataType = 'array';
-    /**
-     * The guest attributes for the TPU workers.
-     *
-     * @param GuestAttributes[] $guestAttributes
-     */
-    public function setGuestAttributes($guestAttributes)
+namespace Google\Service\TPU {
+    class GetGuestAttributesResponse extends \Google\Collection
     {
+        protected $collection_key = 'guestAttributes';
+        protected $guestAttributesType = GuestAttributes::class;
+        protected $guestAttributesDataType = 'array';
+        /**
+         * The guest attributes for the TPU workers.
+         *
+         * @param GuestAttributes[] $guestAttributes
+         */
+        public function setGuestAttributes($guestAttributes)
+        {
+        }
+        /**
+         * @return GuestAttributes[]
+         */
+        public function getGuestAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GuestAttributes[]
+     * Runtime class alias of \Google\Service\TPU\GetGuestAttributesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuestAttributes()
+    class Google_Service_TPU_GetGuestAttributesResponse extends \Google\Service\TPU\GetGuestAttributesResponse
     {
     }
 }

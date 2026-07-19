@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class LivenessCheck extends \Google\Model
-{
-    /**
-     * Interval between health checks.
-     *
-     * @var string
-     */
-    public $checkInterval;
-    /**
-     * Number of consecutive failed checks required before considering the VM
-     * unhealthy.
-     *
-     * @var string
-     */
-    public $failureThreshold;
-    /**
-     * Host header to send when performing a HTTP Liveness check. Example:
-     * "myapp.appspot.com"
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * The initial delay before starting to execute the checks.
-     *
-     * @var string
-     */
-    public $initialDelay;
-    /**
-     * The request path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Number of consecutive successful checks required before considering the VM
-     * healthy.
-     *
-     * @var string
-     */
-    public $successThreshold;
-    /**
-     * Time before the check is considered failed.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * Interval between health checks.
-     *
-     * @param string $checkInterval
-     */
-    public function setCheckInterval($checkInterval)
+namespace Google\Service\Appengine {
+    class LivenessCheck extends \Google\Model
     {
+        /**
+         * Interval between health checks.
+         *
+         * @var string
+         */
+        public $checkInterval;
+        /**
+         * Number of consecutive failed checks required before considering the VM
+         * unhealthy.
+         *
+         * @var string
+         */
+        public $failureThreshold;
+        /**
+         * Host header to send when performing a HTTP Liveness check. Example:
+         * "myapp.appspot.com"
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * The initial delay before starting to execute the checks.
+         *
+         * @var string
+         */
+        public $initialDelay;
+        /**
+         * The request path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Number of consecutive successful checks required before considering the VM
+         * healthy.
+         *
+         * @var string
+         */
+        public $successThreshold;
+        /**
+         * Time before the check is considered failed.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * Interval between health checks.
+         *
+         * @param string $checkInterval
+         */
+        public function setCheckInterval($checkInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckInterval()
+        {
+        }
+        /**
+         * Number of consecutive failed checks required before considering the VM
+         * unhealthy.
+         *
+         * @param string $failureThreshold
+         */
+        public function setFailureThreshold($failureThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureThreshold()
+        {
+        }
+        /**
+         * Host header to send when performing a HTTP Liveness check. Example:
+         * "myapp.appspot.com"
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * The initial delay before starting to execute the checks.
+         *
+         * @param string $initialDelay
+         */
+        public function setInitialDelay($initialDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitialDelay()
+        {
+        }
+        /**
+         * The request path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Number of consecutive successful checks required before considering the VM
+         * healthy.
+         *
+         * @param string $successThreshold
+         */
+        public function setSuccessThreshold($successThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccessThreshold()
+        {
+        }
+        /**
+         * Time before the check is considered failed.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\LivenessCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckInterval()
-    {
-    }
-    /**
-     * Number of consecutive failed checks required before considering the VM
-     * unhealthy.
-     *
-     * @param string $failureThreshold
-     */
-    public function setFailureThreshold($failureThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureThreshold()
-    {
-    }
-    /**
-     * Host header to send when performing a HTTP Liveness check. Example:
-     * "myapp.appspot.com"
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * The initial delay before starting to execute the checks.
-     *
-     * @param string $initialDelay
-     */
-    public function setInitialDelay($initialDelay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitialDelay()
-    {
-    }
-    /**
-     * The request path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Number of consecutive successful checks required before considering the VM
-     * healthy.
-     *
-     * @param string $successThreshold
-     */
-    public function setSuccessThreshold($successThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccessThreshold()
-    {
-    }
-    /**
-     * Time before the check is considered failed.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_Appengine_LivenessCheck extends \Google\Service\Appengine\LivenessCheck
     {
     }
 }

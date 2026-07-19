@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class AndroiddeviceprovisioningEmpty extends \Google\Model
-{
+namespace Google\Service\AndroidProvisioningPartner {
+    class AndroiddeviceprovisioningEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidProvisioningPartner_AndroiddeviceprovisioningEmpty extends \Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty
+    {
+    }
 }

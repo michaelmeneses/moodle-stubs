@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class DerivedMetric extends \Google\Model
-{
-    protected $denominatorType = LocalizedString::class;
-    protected $denominatorDataType = '';
-    protected $numeratorType = LocalizedString::class;
-    protected $numeratorDataType = '';
-    /**
-     * The name of the denominator metric. e.g. "rows".
-     *
-     * @param LocalizedString $denominator
-     */
-    public function setDenominator(LocalizedString $denominator)
+namespace Google\Service\Spanner {
+    class DerivedMetric extends \Google\Model
     {
+        protected $denominatorType = LocalizedString::class;
+        protected $denominatorDataType = '';
+        protected $numeratorType = LocalizedString::class;
+        protected $numeratorDataType = '';
+        /**
+         * The name of the denominator metric. e.g. "rows".
+         *
+         * @param LocalizedString $denominator
+         */
+        public function setDenominator(LocalizedString $denominator)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getDenominator()
+        {
+        }
+        /**
+         * The name of the numerator metric. e.g. "latency".
+         *
+         * @param LocalizedString $numerator
+         */
+        public function setNumerator(LocalizedString $numerator)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getNumerator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Spanner\DerivedMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDenominator()
-    {
-    }
-    /**
-     * The name of the numerator metric. e.g. "latency".
-     *
-     * @param LocalizedString $numerator
-     */
-    public function setNumerator(LocalizedString $numerator)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getNumerator()
+    class Google_Service_Spanner_DerivedMetric extends \Google\Service\Spanner\DerivedMetric
     {
     }
 }

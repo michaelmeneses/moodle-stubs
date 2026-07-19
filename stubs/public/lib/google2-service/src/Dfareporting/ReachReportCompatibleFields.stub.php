@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReachReportCompatibleFields extends \Google\Collection
-{
-    protected $collection_key = 'reachByFrequencyMetrics';
-    protected $dimensionFiltersType = Dimension::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#reachReportCompatibleFields.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    protected $pivotedActivityMetricsType = Metric::class;
-    protected $pivotedActivityMetricsDataType = 'array';
-    protected $reachByFrequencyMetricsType = Metric::class;
-    protected $reachByFrequencyMetricsDataType = 'array';
-    /**
-     * Dimensions which are compatible to be selected in the "dimensionFilters"
-     * section of the report.
-     *
-     * @param Dimension[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
+namespace Google\Service\Dfareporting {
+    class ReachReportCompatibleFields extends \Google\Collection
     {
+        protected $collection_key = 'reachByFrequencyMetrics';
+        protected $dimensionFiltersType = Dimension::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#reachReportCompatibleFields.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        protected $pivotedActivityMetricsType = Metric::class;
+        protected $pivotedActivityMetricsDataType = 'array';
+        protected $reachByFrequencyMetricsType = Metric::class;
+        protected $reachByFrequencyMetricsDataType = 'array';
+        /**
+         * Dimensions which are compatible to be selected in the "dimensionFilters"
+         * section of the report.
+         *
+         * @param Dimension[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * Dimensions which are compatible to be selected in the "dimensions" section
+         * of the report.
+         *
+         * @param Dimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#reachReportCompatibleFields.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the "metricNames" section of
+         * the report.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected as activity metrics to pivot on
+         * in the "activities" section of the report.
+         *
+         * @param Metric[] $pivotedActivityMetrics
+         */
+        public function setPivotedActivityMetrics($pivotedActivityMetrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getPivotedActivityMetrics()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the
+         * "reachByFrequencyMetricNames" section of the report.
+         *
+         * @param Metric[] $reachByFrequencyMetrics
+         */
+        public function setReachByFrequencyMetrics($reachByFrequencyMetrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getReachByFrequencyMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\ReachReportCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * Dimensions which are compatible to be selected in the "dimensions" section
-     * of the report.
-     *
-     * @param Dimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#reachReportCompatibleFields.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the "metricNames" section of
-     * the report.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected as activity metrics to pivot on
-     * in the "activities" section of the report.
-     *
-     * @param Metric[] $pivotedActivityMetrics
-     */
-    public function setPivotedActivityMetrics($pivotedActivityMetrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getPivotedActivityMetrics()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the
-     * "reachByFrequencyMetricNames" section of the report.
-     *
-     * @param Metric[] $reachByFrequencyMetrics
-     */
-    public function setReachByFrequencyMetrics($reachByFrequencyMetrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getReachByFrequencyMetrics()
+    class Google_Service_Dfareporting_ReachReportCompatibleFields extends \Google\Service\Dfareporting\ReachReportCompatibleFields
     {
     }
 }

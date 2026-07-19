@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2SuggestSmartRepliesResponse extends \Google\Collection
-{
-    protected $collection_key = 'smartReplyAnswers';
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the
-     * SuggestSmartRepliesRequest.context_size field in the request if there
-     * aren't that many messages in the conversation.
-     *
-     * @var int
-     */
-    public $contextSize;
-    /**
-     * The name of the latest conversation message used to compile suggestion for.
-     * Format: `projects//locations//conversations//messages/`.
-     *
-     * @var string
-     */
-    public $latestMessage;
-    protected $smartReplyAnswersType = GoogleCloudDialogflowV2SmartReplyAnswer::class;
-    protected $smartReplyAnswersDataType = 'array';
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the
-     * SuggestSmartRepliesRequest.context_size field in the request if there
-     * aren't that many messages in the conversation.
-     *
-     * @param int $contextSize
-     */
-    public function setContextSize($contextSize)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2SuggestSmartRepliesResponse extends \Google\Collection
     {
+        protected $collection_key = 'smartReplyAnswers';
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the
+         * SuggestSmartRepliesRequest.context_size field in the request if there
+         * aren't that many messages in the conversation.
+         *
+         * @var int
+         */
+        public $contextSize;
+        /**
+         * The name of the latest conversation message used to compile suggestion for.
+         * Format: `projects//locations//conversations//messages/`.
+         *
+         * @var string
+         */
+        public $latestMessage;
+        protected $smartReplyAnswersType = GoogleCloudDialogflowV2SmartReplyAnswer::class;
+        protected $smartReplyAnswersDataType = 'array';
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the
+         * SuggestSmartRepliesRequest.context_size field in the request if there
+         * aren't that many messages in the conversation.
+         *
+         * @param int $contextSize
+         */
+        public function setContextSize($contextSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContextSize()
+        {
+        }
+        /**
+         * The name of the latest conversation message used to compile suggestion for.
+         * Format: `projects//locations//conversations//messages/`.
+         *
+         * @param string $latestMessage
+         */
+        public function setLatestMessage($latestMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestMessage()
+        {
+        }
+        /**
+         * Output only. Multiple reply options provided by smart reply service. The
+         * order is based on the rank of the model prediction. The maximum number of
+         * the returned replies is set in SmartReplyConfig.
+         *
+         * @param GoogleCloudDialogflowV2SmartReplyAnswer[] $smartReplyAnswers
+         */
+        public function setSmartReplyAnswers($smartReplyAnswers)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SmartReplyAnswer[]
+         */
+        public function getSmartReplyAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2SuggestSmartRepliesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextSize()
-    {
-    }
-    /**
-     * The name of the latest conversation message used to compile suggestion for.
-     * Format: `projects//locations//conversations//messages/`.
-     *
-     * @param string $latestMessage
-     */
-    public function setLatestMessage($latestMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestMessage()
-    {
-    }
-    /**
-     * Output only. Multiple reply options provided by smart reply service. The
-     * order is based on the rank of the model prediction. The maximum number of
-     * the returned replies is set in SmartReplyConfig.
-     *
-     * @param GoogleCloudDialogflowV2SmartReplyAnswer[] $smartReplyAnswers
-     */
-    public function setSmartReplyAnswers($smartReplyAnswers)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SmartReplyAnswer[]
-     */
-    public function getSmartReplyAnswers()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2SuggestSmartRepliesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2SuggestSmartRepliesResponse
     {
     }
 }

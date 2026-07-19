@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class OmidTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when omid targeting is not specified in this version.
-     */
-    public const OMID_OMID_UNSPECIFIED = 'OMID_UNSPECIFIED';
-    /**
-     * Open Measurement enabled mobile display inventory.
-     */
-    public const OMID_OMID_FOR_MOBILE_DISPLAY_ADS = 'OMID_FOR_MOBILE_DISPLAY_ADS';
-    /**
-     * Output only. The type of Open Measurement enabled inventory.
-     *
-     * @var string
-     */
-    public $omid;
-    /**
-     * Output only. The type of Open Measurement enabled inventory.
-     *
-     * Accepted values: OMID_UNSPECIFIED, OMID_FOR_MOBILE_DISPLAY_ADS
-     *
-     * @param self::OMID_* $omid
-     */
-    public function setOmid($omid)
+namespace Google\Service\DisplayVideo {
+    class OmidTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when omid targeting is not specified in this version.
+         */
+        public const OMID_OMID_UNSPECIFIED = 'OMID_UNSPECIFIED';
+        /**
+         * Open Measurement enabled mobile display inventory.
+         */
+        public const OMID_OMID_FOR_MOBILE_DISPLAY_ADS = 'OMID_FOR_MOBILE_DISPLAY_ADS';
+        /**
+         * Output only. The type of Open Measurement enabled inventory.
+         *
+         * @var string
+         */
+        public $omid;
+        /**
+         * Output only. The type of Open Measurement enabled inventory.
+         *
+         * Accepted values: OMID_UNSPECIFIED, OMID_FOR_MOBILE_DISPLAY_ADS
+         *
+         * @param self::OMID_* $omid
+         */
+        public function setOmid($omid)
+        {
+        }
+        /**
+         * @return self::OMID_*
+         */
+        public function getOmid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OMID_*
+     * Runtime class alias of \Google\Service\DisplayVideo\OmidTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOmid()
+    class Google_Service_DisplayVideo_OmidTargetingOptionDetails extends \Google\Service\DisplayVideo\OmidTargetingOptionDetails
     {
     }
 }

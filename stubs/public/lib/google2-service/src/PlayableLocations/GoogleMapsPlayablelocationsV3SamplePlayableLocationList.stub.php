@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SamplePlayableLocationList extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    protected $locationsType = GoogleMapsPlayablelocationsV3SamplePlayableLocation::class;
-    protected $locationsDataType = 'array';
-    /**
-     * @param GoogleMapsPlayablelocationsV3SamplePlayableLocation[]
-     */
-    public function setLocations($locations)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SamplePlayableLocationList extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        protected $locationsType = GoogleMapsPlayablelocationsV3SamplePlayableLocation::class;
+        protected $locationsDataType = 'array';
+        /**
+         * @param GoogleMapsPlayablelocationsV3SamplePlayableLocation[]
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3SamplePlayableLocation[]
+         */
+        public function getLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlayablelocationsV3SamplePlayableLocation[]
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocations()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SamplePlayableLocationList extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationList
     {
     }
 }

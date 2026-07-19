@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsResponse extends \Google\Model
-{
-    protected $aplosSeriesListDataType = EnterpriseCrmCardsTemplatesAplosSeriesListData::class;
-    protected $aplosSeriesListDataDataType = '';
-    protected $tableDataType = EnterpriseCrmCardsTabularData::class;
-    protected $tableDataDataType = '';
-    /**
-     * @param EnterpriseCrmCardsTemplatesAplosSeriesListData
-     */
-    public function setAplosSeriesListData(EnterpriseCrmCardsTemplatesAplosSeriesListData $aplosSeriesListData)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsResponse extends \Google\Model
     {
+        protected $aplosSeriesListDataType = EnterpriseCrmCardsTemplatesAplosSeriesListData::class;
+        protected $aplosSeriesListDataDataType = '';
+        protected $tableDataType = EnterpriseCrmCardsTabularData::class;
+        protected $tableDataDataType = '';
+        /**
+         * @param EnterpriseCrmCardsTemplatesAplosSeriesListData
+         */
+        public function setAplosSeriesListData(EnterpriseCrmCardsTemplatesAplosSeriesListData $aplosSeriesListData)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsTemplatesAplosSeriesListData
+         */
+        public function getAplosSeriesListData()
+        {
+        }
+        /**
+         * @param EnterpriseCrmCardsTabularData
+         */
+        public function setTableData(EnterpriseCrmCardsTabularData $tableData)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsTabularData
+         */
+        public function getTableData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmCardsTemplatesAplosSeriesListData
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAplosSeriesListData()
-    {
-    }
-    /**
-     * @param EnterpriseCrmCardsTabularData
-     */
-    public function setTableData(EnterpriseCrmCardsTabularData $tableData)
-    {
-    }
-    /**
-     * @return EnterpriseCrmCardsTabularData
-     */
-    public function getTableData()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaMonitorExecutionStatsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsResponse
     {
     }
 }

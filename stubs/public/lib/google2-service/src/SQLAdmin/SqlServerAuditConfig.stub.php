@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlServerAuditConfig extends \Google\Model
-{
-    /**
-     * The name of the destination bucket (e.g., gs://mybucket).
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * This is always sql#sqlServerAuditConfig
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * How long to keep generated audit files.
-     *
-     * @var string
-     */
-    public $retentionInterval;
-    /**
-     * How often to upload generated audit files.
-     *
-     * @var string
-     */
-    public $uploadInterval;
-    /**
-     * The name of the destination bucket (e.g., gs://mybucket).
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\SQLAdmin {
+    class SqlServerAuditConfig extends \Google\Model
     {
+        /**
+         * The name of the destination bucket (e.g., gs://mybucket).
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * This is always sql#sqlServerAuditConfig
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * How long to keep generated audit files.
+         *
+         * @var string
+         */
+        public $retentionInterval;
+        /**
+         * How often to upload generated audit files.
+         *
+         * @var string
+         */
+        public $uploadInterval;
+        /**
+         * The name of the destination bucket (e.g., gs://mybucket).
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * This is always sql#sqlServerAuditConfig
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * How long to keep generated audit files.
+         *
+         * @param string $retentionInterval
+         */
+        public function setRetentionInterval($retentionInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetentionInterval()
+        {
+        }
+        /**
+         * How often to upload generated audit files.
+         *
+         * @param string $uploadInterval
+         */
+        public function setUploadInterval($uploadInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlServerAuditConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * This is always sql#sqlServerAuditConfig
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * How long to keep generated audit files.
-     *
-     * @param string $retentionInterval
-     */
-    public function setRetentionInterval($retentionInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetentionInterval()
-    {
-    }
-    /**
-     * How often to upload generated audit files.
-     *
-     * @param string $uploadInterval
-     */
-    public function setUploadInterval($uploadInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadInterval()
+    class Google_Service_SQLAdmin_SqlServerAuditConfig extends \Google\Service\SQLAdmin\SqlServerAuditConfig
     {
     }
 }

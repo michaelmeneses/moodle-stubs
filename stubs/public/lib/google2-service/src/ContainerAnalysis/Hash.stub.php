@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Hash extends \Google\Model
-{
-    /**
-     * Required. The type of hash that was performed, e.g. "SHA-256".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The hash value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The type of hash that was performed, e.g. "SHA-256".
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\ContainerAnalysis {
+    class Hash extends \Google\Model
     {
+        /**
+         * Required. The type of hash that was performed, e.g. "SHA-256".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The hash value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The type of hash that was performed, e.g. "SHA-256".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Required. The hash value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Hash registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * Required. The hash value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ContainerAnalysis_Hash extends \Google\Service\ContainerAnalysis\Hash
     {
     }
 }

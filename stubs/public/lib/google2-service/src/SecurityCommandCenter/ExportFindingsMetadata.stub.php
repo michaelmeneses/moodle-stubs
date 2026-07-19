@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ExportFindingsMetadata extends \Google\Model
-{
-    protected $bigQueryDestinationType = BigQueryDestination::class;
-    protected $bigQueryDestinationDataType = '';
-    /**
-     * Optional. Timestamp at which export was started
-     *
-     * @var string
-     */
-    public $exportStartTime;
-    /**
-     * Required. The destination BigQuery dataset to export findings to.
-     *
-     * @param BigQueryDestination $bigQueryDestination
-     */
-    public function setBigQueryDestination(BigQueryDestination $bigQueryDestination)
+namespace Google\Service\SecurityCommandCenter {
+    class ExportFindingsMetadata extends \Google\Model
     {
+        protected $bigQueryDestinationType = BigQueryDestination::class;
+        protected $bigQueryDestinationDataType = '';
+        /**
+         * Optional. Timestamp at which export was started
+         *
+         * @var string
+         */
+        public $exportStartTime;
+        /**
+         * Required. The destination BigQuery dataset to export findings to.
+         *
+         * @param BigQueryDestination $bigQueryDestination
+         */
+        public function setBigQueryDestination(BigQueryDestination $bigQueryDestination)
+        {
+        }
+        /**
+         * @return BigQueryDestination
+         */
+        public function getBigQueryDestination()
+        {
+        }
+        /**
+         * Optional. Timestamp at which export was started
+         *
+         * @param string $exportStartTime
+         */
+        public function setExportStartTime($exportStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryDestination
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ExportFindingsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryDestination()
-    {
-    }
-    /**
-     * Optional. Timestamp at which export was started
-     *
-     * @param string $exportStartTime
-     */
-    public function setExportStartTime($exportStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExportStartTime()
+    class Google_Service_SecurityCommandCenter_ExportFindingsMetadata extends \Google\Service\SecurityCommandCenter\ExportFindingsMetadata
     {
     }
 }

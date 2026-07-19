@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class BatchDocumentInputConfig extends \Google\Model
-{
-    protected $gcsSourceType = GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Google Cloud Storage location for the source input. This can be a single
-     * file (for example, `gs://translation-test/input.docx`) or a wildcard (for
-     * example, `gs://translation-test`). File mime type is determined based on
-     * extension. Supported mime type includes: - `pdf`, application/pdf - `docx`,
-     * application/vnd.openxmlformats-officedocument.wordprocessingml.document -
-     * `pptx`, application/vnd.openxmlformats-
-     * officedocument.presentationml.presentation - `xlsx`,
-     * application/vnd.openxmlformats-officedocument.spreadsheetml.sheet The max
-     * file size to support for `.docx`, `.pptx` and `.xlsx` is 100MB. The max
-     * file size to support for `.pdf` is 1GB and the max page limit is 1000
-     * pages. The max file size to support for all input documents is 1GB.
-     *
-     * @param GcsSource $gcsSource
-     */
-    public function setGcsSource(GcsSource $gcsSource)
+namespace Google\Service\Translate {
+    class BatchDocumentInputConfig extends \Google\Model
     {
+        protected $gcsSourceType = GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Google Cloud Storage location for the source input. This can be a single
+         * file (for example, `gs://translation-test/input.docx`) or a wildcard (for
+         * example, `gs://translation-test`). File mime type is determined based on
+         * extension. Supported mime type includes: - `pdf`, application/pdf - `docx`,
+         * application/vnd.openxmlformats-officedocument.wordprocessingml.document -
+         * `pptx`, application/vnd.openxmlformats-
+         * officedocument.presentationml.presentation - `xlsx`,
+         * application/vnd.openxmlformats-officedocument.spreadsheetml.sheet The max
+         * file size to support for `.docx`, `.pptx` and `.xlsx` is 100MB. The max
+         * file size to support for `.pdf` is 1GB and the max page limit is 1000
+         * pages. The max file size to support for all input documents is 1GB.
+         *
+         * @param GcsSource $gcsSource
+         */
+        public function setGcsSource(GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsSource
+     * Runtime class alias of \Google\Service\Translate\BatchDocumentInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_Translate_BatchDocumentInputConfig extends \Google\Service\Translate\BatchDocumentInputConfig
     {
     }
 }

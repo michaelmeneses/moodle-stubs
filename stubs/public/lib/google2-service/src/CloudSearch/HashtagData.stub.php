@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HashtagData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $searchText;
-    /**
-     * @param string
-     */
-    public function setSearchText($searchText)
+namespace Google\Service\CloudSearch {
+    class HashtagData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $searchText;
+        /**
+         * @param string
+         */
+        public function setSearchText($searchText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\HashtagData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchText()
+    class Google_Service_CloudSearch_HashtagData extends \Google\Service\CloudSearch\HashtagData
     {
     }
 }

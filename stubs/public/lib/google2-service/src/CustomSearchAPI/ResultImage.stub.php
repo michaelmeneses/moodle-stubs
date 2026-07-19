@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class ResultImage extends \Google\Model
-{
-    /**
-     * The size of the image, in bytes.
-     *
-     * @var int
-     */
-    public $byteSize;
-    /**
-     * A URL pointing to the webpage hosting the image.
-     *
-     * @var string
-     */
-    public $contextLink;
-    /**
-     * The height of the image, in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The height of the thumbnail image, in pixels.
-     *
-     * @var int
-     */
-    public $thumbnailHeight;
-    /**
-     * A URL to the thumbnail image.
-     *
-     * @var string
-     */
-    public $thumbnailLink;
-    /**
-     * The width of the thumbnail image, in pixels.
-     *
-     * @var int
-     */
-    public $thumbnailWidth;
-    /**
-     * The width of the image, in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The size of the image, in bytes.
-     *
-     * @param int $byteSize
-     */
-    public function setByteSize($byteSize)
+namespace Google\Service\CustomSearchAPI {
+    class ResultImage extends \Google\Model
     {
+        /**
+         * The size of the image, in bytes.
+         *
+         * @var int
+         */
+        public $byteSize;
+        /**
+         * A URL pointing to the webpage hosting the image.
+         *
+         * @var string
+         */
+        public $contextLink;
+        /**
+         * The height of the image, in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The height of the thumbnail image, in pixels.
+         *
+         * @var int
+         */
+        public $thumbnailHeight;
+        /**
+         * A URL to the thumbnail image.
+         *
+         * @var string
+         */
+        public $thumbnailLink;
+        /**
+         * The width of the thumbnail image, in pixels.
+         *
+         * @var int
+         */
+        public $thumbnailWidth;
+        /**
+         * The width of the image, in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The size of the image, in bytes.
+         *
+         * @param int $byteSize
+         */
+        public function setByteSize($byteSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getByteSize()
+        {
+        }
+        /**
+         * A URL pointing to the webpage hosting the image.
+         *
+         * @param string $contextLink
+         */
+        public function setContextLink($contextLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContextLink()
+        {
+        }
+        /**
+         * The height of the image, in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The height of the thumbnail image, in pixels.
+         *
+         * @param int $thumbnailHeight
+         */
+        public function setThumbnailHeight($thumbnailHeight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThumbnailHeight()
+        {
+        }
+        /**
+         * A URL to the thumbnail image.
+         *
+         * @param string $thumbnailLink
+         */
+        public function setThumbnailLink($thumbnailLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailLink()
+        {
+        }
+        /**
+         * The width of the thumbnail image, in pixels.
+         *
+         * @param int $thumbnailWidth
+         */
+        public function setThumbnailWidth($thumbnailWidth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThumbnailWidth()
+        {
+        }
+        /**
+         * The width of the image, in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CustomSearchAPI\ResultImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByteSize()
-    {
-    }
-    /**
-     * A URL pointing to the webpage hosting the image.
-     *
-     * @param string $contextLink
-     */
-    public function setContextLink($contextLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContextLink()
-    {
-    }
-    /**
-     * The height of the image, in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * The height of the thumbnail image, in pixels.
-     *
-     * @param int $thumbnailHeight
-     */
-    public function setThumbnailHeight($thumbnailHeight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThumbnailHeight()
-    {
-    }
-    /**
-     * A URL to the thumbnail image.
-     *
-     * @param string $thumbnailLink
-     */
-    public function setThumbnailLink($thumbnailLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnailLink()
-    {
-    }
-    /**
-     * The width of the thumbnail image, in pixels.
-     *
-     * @param int $thumbnailWidth
-     */
-    public function setThumbnailWidth($thumbnailWidth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThumbnailWidth()
-    {
-    }
-    /**
-     * The width of the image, in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_CustomSearchAPI_ResultImage extends \Google\Service\CustomSearchAPI\ResultImage
     {
     }
 }

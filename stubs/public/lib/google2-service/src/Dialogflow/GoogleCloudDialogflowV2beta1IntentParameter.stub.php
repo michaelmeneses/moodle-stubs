@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentParameter extends \Google\Collection
-{
-    protected $collection_key = 'prompts';
-    /**
-     * Optional. The default value to use when the `value` yields an empty result.
-     * Default values can be extracted from contexts by using the following
-     * syntax: `#context_name.parameter_name`.
-     *
-     * @var string
-     */
-    public $defaultValue;
-    /**
-     * Required. The name of the parameter.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. The name of the entity type, prefixed with `@`, that describes
-     * values of the parameter. If the parameter is required, this must be
-     * provided.
-     *
-     * @var string
-     */
-    public $entityTypeDisplayName;
-    /**
-     * Optional. Indicates whether the parameter represents a list of values.
-     *
-     * @var bool
-     */
-    public $isList;
-    /**
-     * Optional. Indicates whether the parameter is required. That is, whether the
-     * intent cannot be completed without collecting the parameter value.
-     *
-     * @var bool
-     */
-    public $mandatory;
-    /**
-     * The unique identifier of this parameter.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The collection of prompts that the agent can present to the user
-     * in order to collect a value for the parameter.
-     *
-     * @var string[]
-     */
-    public $prompts;
-    /**
-     * Optional. The definition of the parameter value. It can be: - a constant
-     * string, - a parameter value defined as `$parameter_name`, - an original
-     * parameter value defined as `$parameter_name.original`, - a parameter value
-     * from some context defined as `#context_name.parameter_name`.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. The default value to use when the `value` yields an empty result.
-     * Default values can be extracted from contexts by using the following
-     * syntax: `#context_name.parameter_name`.
-     *
-     * @param string $defaultValue
-     */
-    public function setDefaultValue($defaultValue)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentParameter extends \Google\Collection
     {
+        protected $collection_key = 'prompts';
+        /**
+         * Optional. The default value to use when the `value` yields an empty result.
+         * Default values can be extracted from contexts by using the following
+         * syntax: `#context_name.parameter_name`.
+         *
+         * @var string
+         */
+        public $defaultValue;
+        /**
+         * Required. The name of the parameter.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. The name of the entity type, prefixed with `@`, that describes
+         * values of the parameter. If the parameter is required, this must be
+         * provided.
+         *
+         * @var string
+         */
+        public $entityTypeDisplayName;
+        /**
+         * Optional. Indicates whether the parameter represents a list of values.
+         *
+         * @var bool
+         */
+        public $isList;
+        /**
+         * Optional. Indicates whether the parameter is required. That is, whether the
+         * intent cannot be completed without collecting the parameter value.
+         *
+         * @var bool
+         */
+        public $mandatory;
+        /**
+         * The unique identifier of this parameter.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The collection of prompts that the agent can present to the user
+         * in order to collect a value for the parameter.
+         *
+         * @var string[]
+         */
+        public $prompts;
+        /**
+         * Optional. The definition of the parameter value. It can be: - a constant
+         * string, - a parameter value defined as `$parameter_name`, - an original
+         * parameter value defined as `$parameter_name.original`, - a parameter value
+         * from some context defined as `#context_name.parameter_name`.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. The default value to use when the `value` yields an empty result.
+         * Default values can be extracted from contexts by using the following
+         * syntax: `#context_name.parameter_name`.
+         *
+         * @param string $defaultValue
+         */
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Required. The name of the parameter.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. The name of the entity type, prefixed with `@`, that describes
+         * values of the parameter. If the parameter is required, this must be
+         * provided.
+         *
+         * @param string $entityTypeDisplayName
+         */
+        public function setEntityTypeDisplayName($entityTypeDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityTypeDisplayName()
+        {
+        }
+        /**
+         * Optional. Indicates whether the parameter represents a list of values.
+         *
+         * @param bool $isList
+         */
+        public function setIsList($isList)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsList()
+        {
+        }
+        /**
+         * Optional. Indicates whether the parameter is required. That is, whether the
+         * intent cannot be completed without collecting the parameter value.
+         *
+         * @param bool $mandatory
+         */
+        public function setMandatory($mandatory)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMandatory()
+        {
+        }
+        /**
+         * The unique identifier of this parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The collection of prompts that the agent can present to the user
+         * in order to collect a value for the parameter.
+         *
+         * @param string[] $prompts
+         */
+        public function setPrompts($prompts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrompts()
+        {
+        }
+        /**
+         * Optional. The definition of the parameter value. It can be: - a constant
+         * string, - a parameter value defined as `$parameter_name`, - an original
+         * parameter value defined as `$parameter_name.original`, - a parameter value
+         * from some context defined as `#context_name.parameter_name`.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Required. The name of the parameter.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. The name of the entity type, prefixed with `@`, that describes
-     * values of the parameter. If the parameter is required, this must be
-     * provided.
-     *
-     * @param string $entityTypeDisplayName
-     */
-    public function setEntityTypeDisplayName($entityTypeDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityTypeDisplayName()
-    {
-    }
-    /**
-     * Optional. Indicates whether the parameter represents a list of values.
-     *
-     * @param bool $isList
-     */
-    public function setIsList($isList)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsList()
-    {
-    }
-    /**
-     * Optional. Indicates whether the parameter is required. That is, whether the
-     * intent cannot be completed without collecting the parameter value.
-     *
-     * @param bool $mandatory
-     */
-    public function setMandatory($mandatory)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMandatory()
-    {
-    }
-    /**
-     * The unique identifier of this parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The collection of prompts that the agent can present to the user
-     * in order to collect a value for the parameter.
-     *
-     * @param string[] $prompts
-     */
-    public function setPrompts($prompts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrompts()
-    {
-    }
-    /**
-     * Optional. The definition of the parameter value. It can be: - a constant
-     * string, - a parameter value defined as `$parameter_name`, - an original
-     * parameter value defined as `$parameter_name.original`, - a parameter value
-     * from some context defined as `#context_name.parameter_name`.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentParameter extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentParameter
     {
     }
 }

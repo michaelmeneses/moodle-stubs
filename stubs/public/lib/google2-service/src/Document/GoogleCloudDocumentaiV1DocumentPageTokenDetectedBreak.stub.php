@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageTokenDetectedBreak extends \Google\Model
-{
-    /**
-     * Unspecified break type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * A single whitespace.
-     */
-    public const TYPE_SPACE = 'SPACE';
-    /**
-     * A wider whitespace.
-     */
-    public const TYPE_WIDE_SPACE = 'WIDE_SPACE';
-    /**
-     * A hyphen that indicates that a token has been split across lines.
-     */
-    public const TYPE_HYPHEN = 'HYPHEN';
-    /**
-     * Detected break type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Detected break type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, SPACE, WIDE_SPACE, HYPHEN
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageTokenDetectedBreak extends \Google\Model
     {
+        /**
+         * Unspecified break type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * A single whitespace.
+         */
+        public const TYPE_SPACE = 'SPACE';
+        /**
+         * A wider whitespace.
+         */
+        public const TYPE_WIDE_SPACE = 'WIDE_SPACE';
+        /**
+         * A hyphen that indicates that a token has been split across lines.
+         */
+        public const TYPE_HYPHEN = 'HYPHEN';
+        /**
+         * Detected break type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Detected break type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, SPACE, WIDE_SPACE, HYPHEN
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageTokenDetectedBreak registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageTokenDetectedBreak extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageTokenDetectedBreak
     {
     }
 }

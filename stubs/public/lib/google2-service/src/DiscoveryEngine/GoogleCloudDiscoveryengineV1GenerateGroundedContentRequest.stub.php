@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequest extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    protected $contentsType = GoogleCloudDiscoveryengineV1GroundedGenerationContent::class;
-    protected $contentsDataType = 'array';
-    protected $generationSpecType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec::class;
-    protected $generationSpecDataType = '';
-    protected $groundingSpecType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec::class;
-    protected $groundingSpecDataType = '';
-    protected $systemInstructionType = GoogleCloudDiscoveryengineV1GroundedGenerationContent::class;
-    protected $systemInstructionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * @param GoogleCloudDiscoveryengineV1GroundedGenerationContent[]
-     */
-    public function setContents($contents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequest extends \Google\Collection
     {
+        protected $collection_key = 'contents';
+        protected $contentsType = GoogleCloudDiscoveryengineV1GroundedGenerationContent::class;
+        protected $contentsDataType = 'array';
+        protected $generationSpecType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec::class;
+        protected $generationSpecDataType = '';
+        protected $groundingSpecType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec::class;
+        protected $groundingSpecDataType = '';
+        protected $systemInstructionType = GoogleCloudDiscoveryengineV1GroundedGenerationContent::class;
+        protected $systemInstructionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * @param GoogleCloudDiscoveryengineV1GroundedGenerationContent[]
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GroundedGenerationContent[]
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec
+         */
+        public function setGenerationSpec(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec $generationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec
+         */
+        public function getGenerationSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec
+         */
+        public function setGroundingSpec(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec $groundingSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec
+         */
+        public function getGroundingSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GroundedGenerationContent
+         */
+        public function setSystemInstruction(GoogleCloudDiscoveryengineV1GroundedGenerationContent $systemInstruction)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GroundedGenerationContent
+         */
+        public function getSystemInstruction()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GroundedGenerationContent[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec
-     */
-    public function setGenerationSpec(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec $generationSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec
-     */
-    public function getGenerationSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec
-     */
-    public function setGroundingSpec(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec $groundingSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSpec
-     */
-    public function getGroundingSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GroundedGenerationContent
-     */
-    public function setSystemInstruction(GoogleCloudDiscoveryengineV1GroundedGenerationContent $systemInstruction)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GroundedGenerationContent
-     */
-    public function getSystemInstruction()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequest
     {
     }
 }

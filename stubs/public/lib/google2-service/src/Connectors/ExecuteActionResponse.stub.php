@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExecuteActionResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * In the case of successful invocation of the specified action, the results
-     * Struct contains values based on the response of the action invoked. 1. If
-     * the action execution produces any entities as a result, they are returned
-     * as an array of Structs with the 'key' being the field name and the 'value'
-     * being the value of that field in each result row. { 'results': [{'key':
-     * 'value'}, ...] }
-     *
-     * @var array[]
-     */
-    public $results;
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Connectors {
+    class ExecuteActionResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * In the case of successful invocation of the specified action, the results
+         * Struct contains values based on the response of the action invoked. 1. If
+         * the action execution produces any entities as a result, they are returned
+         * as an array of Structs with the 'key' being the field name and the 'value'
+         * being the value of that field in each result row. { 'results': [{'key':
+         * 'value'}, ...] }
+         *
+         * @var array[]
+         */
+        public $results;
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * In the case of successful invocation of the specified action, the results
+         * Struct contains values based on the response of the action invoked. 1. If
+         * the action execution produces any entities as a result, they are returned
+         * as an array of Structs with the 'key' being the field name and the 'value'
+         * being the value of that field in each result row. { 'results': [{'key':
+         * 'value'}, ...] }
+         *
+         * @param array[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ExecuteActionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * In the case of successful invocation of the specified action, the results
-     * Struct contains values based on the response of the action invoked. 1. If
-     * the action execution produces any entities as a result, they are returned
-     * as an array of Structs with the 'key' being the field name and the 'value'
-     * being the value of that field in each result row. { 'results': [{'key':
-     * 'value'}, ...] }
-     *
-     * @param array[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResults()
+    class Google_Service_Connectors_ExecuteActionResponse extends \Google\Service\Connectors\ExecuteActionResponse
     {
     }
 }

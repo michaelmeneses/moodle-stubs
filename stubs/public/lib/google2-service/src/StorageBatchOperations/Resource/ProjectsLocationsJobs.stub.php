@@ -21,101 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations\Resource;
-
-/**
- * The "jobs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storagebatchoperationsService = new Google\Service\StorageBatchOperations(...);
- *   $jobs = $storagebatchoperationsService->projects_locations_jobs;
- *  </code>
- */
-class ProjectsLocationsJobs extends \Google\Service\Resource
-{
+namespace Google\Service\StorageBatchOperations\Resource {
+    use Google\Service\StorageBatchOperations\CancelJobRequest;
+    use Google\Service\StorageBatchOperations\CancelJobResponse;
+    use Google\Service\StorageBatchOperations\Job;
+    use Google\Service\StorageBatchOperations\ListJobsResponse;
+    use Google\Service\StorageBatchOperations\Operation;
+    use Google\Service\StorageBatchOperations\StoragebatchoperationsEmpty;
     /**
-     * Cancels a batch job. (jobs.cancel)
-     *
-     * @param string $name Required. The `name` of the job to cancel. Format:
-     * projects/{project_id}/locations/global/jobs/{job_id}.
-     * @param CancelJobRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CancelJobResponse
-     * @throws \Google\Service\Exception
+     * The "jobs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storagebatchoperationsService = new Google\Service\StorageBatchOperations(...);
+     *   $jobs = $storagebatchoperationsService->projects_locations_jobs;
+     *  </code>
      */
-    public function cancel($name, CancelJobRequest $postBody, $optParams = [])
+    class ProjectsLocationsJobs extends \Google\Service\Resource
     {
+        /**
+         * Cancels a batch job. (jobs.cancel)
+         *
+         * @param string $name Required. The `name` of the job to cancel. Format:
+         * projects/{project_id}/locations/global/jobs/{job_id}.
+         * @param CancelJobRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CancelJobResponse
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelJobRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a batch job. (jobs.create)
+         *
+         * @param string $parent Required. Value for parent.
+         * @param Job $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string jobId Required. The optional `job_id` for this Job . If not
+         * specified, an id is generated. `job_id` should be no more than 128 characters
+         * and must include only characters available in DNS names, as defined by
+         * RFC-1123.
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID in case you need to retry your request.
+         * Requests with same `request_id` will be ignored for at least 60 minutes since
+         * the first request. The request ID must be a valid UUID with the exception
+         * that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Job $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a batch job. (jobs.delete)
+         *
+         * @param string $name Required. The `name` of the job to delete. Format:
+         * projects/{project_id}/locations/global/jobs/{job_id} .
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID in case you need to retry your request.
+         * Requests with same `request_id` will be ignored for at least 60 minutes since
+         * the first request. The request ID must be a valid UUID with the exception
+         * that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+         * @return StoragebatchoperationsEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a batch job. (jobs.get)
+         *
+         * @param string $name Required. `name` of the job to retrieve. Format:
+         * projects/{project_id}/locations/global/jobs/{job_id} .
+         * @param array $optParams Optional parameters.
+         * @return Job
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Jobs in a given project. (jobs.listProjectsLocationsJobs)
+         *
+         * @param string $parent Required. Format:
+         * projects/{project_id}/locations/global.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filters results as defined by
+         * https://google.aip.dev/160.
+         * @opt_param string orderBy Optional. Field to sort by. Supported fields are
+         * name, create_time.
+         * @opt_param int pageSize Optional. The list page size. default page size is
+         * 100.
+         * @opt_param string pageToken Optional. The list page token.
+         * @return ListJobsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsJobs($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a batch job. (jobs.create)
-     *
-     * @param string $parent Required. Value for parent.
-     * @param Job $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string jobId Required. The optional `job_id` for this Job . If not
-     * specified, an id is generated. `job_id` should be no more than 128 characters
-     * and must include only characters available in DNS names, as defined by
-     * RFC-1123.
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID in case you need to retry your request.
-     * Requests with same `request_id` will be ignored for at least 60 minutes since
-     * the first request. The request ID must be a valid UUID with the exception
-     * that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\StorageBatchOperations\Resource\ProjectsLocationsJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, Job $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a batch job. (jobs.delete)
-     *
-     * @param string $name Required. The `name` of the job to delete. Format:
-     * projects/{project_id}/locations/global/jobs/{job_id} .
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID in case you need to retry your request.
-     * Requests with same `request_id` will be ignored for at least 60 minutes since
-     * the first request. The request ID must be a valid UUID with the exception
-     * that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-     * @return StoragebatchoperationsEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a batch job. (jobs.get)
-     *
-     * @param string $name Required. `name` of the job to retrieve. Format:
-     * projects/{project_id}/locations/global/jobs/{job_id} .
-     * @param array $optParams Optional parameters.
-     * @return Job
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Jobs in a given project. (jobs.listProjectsLocationsJobs)
-     *
-     * @param string $parent Required. Format:
-     * projects/{project_id}/locations/global.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filters results as defined by
-     * https://google.aip.dev/160.
-     * @opt_param string orderBy Optional. Field to sort by. Supported fields are
-     * name, create_time.
-     * @opt_param int pageSize Optional. The list page size. default page size is
-     * 100.
-     * @opt_param string pageToken Optional. The list page token.
-     * @return ListJobsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsJobs($parent, $optParams = [])
+    class Google_Service_StorageBatchOperations_Resource_ProjectsLocationsJobs extends \Google\Service\StorageBatchOperations\Resource\ProjectsLocationsJobs
     {
     }
 }

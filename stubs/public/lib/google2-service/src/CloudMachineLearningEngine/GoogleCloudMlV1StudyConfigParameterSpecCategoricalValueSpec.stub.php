@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Must be specified if type is `CATEGORICAL`. The list of possible
-     * categories.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Must be specified if type is `CATEGORICAL`. The list of possible
-     * categories.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Must be specified if type is `CATEGORICAL`. The list of possible
+         * categories.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Must be specified if type is `CATEGORICAL`. The list of possible
+         * categories.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec
     {
     }
 }

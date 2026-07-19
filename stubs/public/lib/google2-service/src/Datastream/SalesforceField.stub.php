@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SalesforceField extends \Google\Model
-{
-    /**
-     * The data type.
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * Field name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Indicates whether the field can accept nil values.
-     *
-     * @var bool
-     */
-    public $nillable;
-    /**
-     * The data type.
-     *
-     * @param string $dataType
-     */
-    public function setDataType($dataType)
+namespace Google\Service\Datastream {
+    class SalesforceField extends \Google\Model
     {
+        /**
+         * The data type.
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * Field name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Indicates whether the field can accept nil values.
+         *
+         * @var bool
+         */
+        public $nillable;
+        /**
+         * The data type.
+         *
+         * @param string $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Field name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Indicates whether the field can accept nil values.
+         *
+         * @param bool $nillable
+         */
+        public function setNillable($nillable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNillable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SalesforceField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataType()
-    {
-    }
-    /**
-     * Field name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Indicates whether the field can accept nil values.
-     *
-     * @param bool $nillable
-     */
-    public function setNillable($nillable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNillable()
+    class Google_Service_Datastream_SalesforceField extends \Google\Service\Datastream\SalesforceField
     {
     }
 }

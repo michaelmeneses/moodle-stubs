@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain extends \Google\Model
-{
-    /**
-     * Required. ID of the affiliate location chain.
-     *
-     * @var string
-     */
-    public $chainId;
-    /**
-     * Required. ID of the affiliate location chain.
-     *
-     * @param string $chainId
-     */
-    public function setChainId($chainId)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain extends \Google\Model
     {
+        /**
+         * Required. ID of the affiliate location chain.
+         *
+         * @var string
+         */
+        public $chainId;
+        /**
+         * Required. ID of the affiliate location chain.
+         *
+         * @param string $chainId
+         */
+        public function setChainId($chainId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChainId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChainId()
+    class Google_Service_DisplayVideo_YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain extends \Google\Service\DisplayVideo\YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain
     {
     }
 }

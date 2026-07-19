@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class Concentration extends \Google\Model
-{
-    /**
-     * Unspecified concentration unit.
-     */
-    public const UNITS_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
-    /**
-     * The ppb (parts per billion) concentration unit.
-     */
-    public const UNITS_PARTS_PER_BILLION = 'PARTS_PER_BILLION';
-    /**
-     * The "µg/m^3" (micrograms per cubic meter) concentration unit.
-     */
-    public const UNITS_MICROGRAMS_PER_CUBIC_METER = 'MICROGRAMS_PER_CUBIC_METER';
-    /**
-     * Units for measuring this pollutant concentration.
-     *
-     * @var string
-     */
-    public $units;
-    /**
-     * Value of the pollutant concentration.
-     *
-     * @var float
-     */
-    public $value;
-    /**
-     * Units for measuring this pollutant concentration.
-     *
-     * Accepted values: UNIT_UNSPECIFIED, PARTS_PER_BILLION,
-     * MICROGRAMS_PER_CUBIC_METER
-     *
-     * @param self::UNITS_* $units
-     */
-    public function setUnits($units)
+namespace Google\Service\AirQuality {
+    class Concentration extends \Google\Model
     {
+        /**
+         * Unspecified concentration unit.
+         */
+        public const UNITS_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
+        /**
+         * The ppb (parts per billion) concentration unit.
+         */
+        public const UNITS_PARTS_PER_BILLION = 'PARTS_PER_BILLION';
+        /**
+         * The "µg/m^3" (micrograms per cubic meter) concentration unit.
+         */
+        public const UNITS_MICROGRAMS_PER_CUBIC_METER = 'MICROGRAMS_PER_CUBIC_METER';
+        /**
+         * Units for measuring this pollutant concentration.
+         *
+         * @var string
+         */
+        public $units;
+        /**
+         * Value of the pollutant concentration.
+         *
+         * @var float
+         */
+        public $value;
+        /**
+         * Units for measuring this pollutant concentration.
+         *
+         * Accepted values: UNIT_UNSPECIFIED, PARTS_PER_BILLION,
+         * MICROGRAMS_PER_CUBIC_METER
+         *
+         * @param self::UNITS_* $units
+         */
+        public function setUnits($units)
+        {
+        }
+        /**
+         * @return self::UNITS_*
+         */
+        public function getUnits()
+        {
+        }
+        /**
+         * Value of the pollutant concentration.
+         *
+         * @param float $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::UNITS_*
+     * Runtime class alias of \Google\Service\AirQuality\Concentration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnits()
-    {
-    }
-    /**
-     * Value of the pollutant concentration.
-     *
-     * @param float $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_AirQuality_Concentration extends \Google\Service\AirQuality\Concentration
     {
     }
 }

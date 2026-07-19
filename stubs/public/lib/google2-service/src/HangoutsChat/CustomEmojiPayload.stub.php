@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class CustomEmojiPayload extends \Google\Model
-{
-    /**
-     * Required. Input only. The image used for the custom emoji. The payload must
-     * be under 256 KB and the dimension of the image must be square and between
-     * 64 and 500 pixels. The restrictions are subject to change.
-     *
-     * @var string
-     */
-    public $fileContent;
-    /**
-     * Required. Input only. The image file name. Supported file extensions:
-     * `.png`, `.jpg`, `.gif`.
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * Required. Input only. The image used for the custom emoji. The payload must
-     * be under 256 KB and the dimension of the image must be square and between
-     * 64 and 500 pixels. The restrictions are subject to change.
-     *
-     * @param string $fileContent
-     */
-    public function setFileContent($fileContent)
+namespace Google\Service\HangoutsChat {
+    class CustomEmojiPayload extends \Google\Model
     {
+        /**
+         * Required. Input only. The image used for the custom emoji. The payload must
+         * be under 256 KB and the dimension of the image must be square and between
+         * 64 and 500 pixels. The restrictions are subject to change.
+         *
+         * @var string
+         */
+        public $fileContent;
+        /**
+         * Required. Input only. The image file name. Supported file extensions:
+         * `.png`, `.jpg`, `.gif`.
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * Required. Input only. The image used for the custom emoji. The payload must
+         * be under 256 KB and the dimension of the image must be square and between
+         * 64 and 500 pixels. The restrictions are subject to change.
+         *
+         * @param string $fileContent
+         */
+        public function setFileContent($fileContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileContent()
+        {
+        }
+        /**
+         * Required. Input only. The image file name. Supported file extensions:
+         * `.png`, `.jpg`, `.gif`.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\CustomEmojiPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileContent()
-    {
-    }
-    /**
-     * Required. Input only. The image file name. Supported file extensions:
-     * `.png`, `.jpg`, `.gif`.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
+    class Google_Service_HangoutsChat_CustomEmojiPayload extends \Google\Service\HangoutsChat\CustomEmojiPayload
     {
     }
 }

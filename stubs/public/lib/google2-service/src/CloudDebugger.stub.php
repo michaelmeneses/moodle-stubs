@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudDebugger (v2).
- *
- * <p>
- * Examines the call stack and variables of a running application without
- * stopping or slowing it down. (Deprecated)</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/debugger" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudDebugger extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Use Stackdriver Debugger. */
-    const CLOUD_DEBUGGER = "https://www.googleapis.com/auth/cloud_debugger";
-    public $controller_debuggees;
-    public $controller_debuggees_breakpoints;
-    public $debugger_debuggees;
-    public $debugger_debuggees_breakpoints;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudDebugger service.
+     * Service definition for CloudDebugger (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Examines the call stack and variables of a running application without
+     * stopping or slowing it down. (Deprecated)</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/debugger" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudDebugger extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Use Stackdriver Debugger. */
+        const CLOUD_DEBUGGER = "https://www.googleapis.com/auth/cloud_debugger";
+        public $controller_debuggees;
+        public $controller_debuggees_breakpoints;
+        public $debugger_debuggees;
+        public $debugger_debuggees_breakpoints;
+        /**
+         * Constructs the internal representation of the CloudDebugger service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDebugger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDebugger extends \Google\Service\CloudDebugger
     {
     }
 }

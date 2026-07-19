@@ -21,163 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelPermission extends \Google\Model
-{
-    /**
-     * Unknown role.
-     */
-    public const ROLE_LABEL_ROLE_UNSPECIFIED = 'LABEL_ROLE_UNSPECIFIED';
-    /**
-     * A reader can read the label and associated metadata applied to Drive items.
-     */
-    public const ROLE_READER = 'READER';
-    /**
-     * An applier can write associated metadata on Drive items in which they also
-     * have write access to. Implies `READER`.
-     */
-    public const ROLE_APPLIER = 'APPLIER';
-    /**
-     * An organizer can pin this label in shared drives they manage and add new
-     * appliers to the label.
-     */
-    public const ROLE_ORGANIZER = 'ORGANIZER';
-    /**
-     * Editors can make any update including deleting the label which also deletes
-     * the associated Drive item metadata. Implies `APPLIER`.
-     */
-    public const ROLE_EDITOR = 'EDITOR';
-    /**
-     * Audience to grant a role to. The magic value of `audiences/default` may be
-     * used to apply the role to the default audience in the context of the
-     * organization that owns the label.
-     *
-     * @var string
-     */
-    public $audience;
-    /**
-     * Specifies the email address for a user or group principal. Not populated
-     * for audience principals. User and group permissions may only be inserted
-     * using an email address. On update requests, if email address is specified,
-     * no principal should be specified.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Group resource name.
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * Resource name of this permission.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Person resource name.
-     *
-     * @var string
-     */
-    public $person;
-    /**
-     * The role the principal should have.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Audience to grant a role to. The magic value of `audiences/default` may be
-     * used to apply the role to the default audience in the context of the
-     * organization that owns the label.
-     *
-     * @param string $audience
-     */
-    public function setAudience($audience)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelPermission extends \Google\Model
     {
+        /**
+         * Unknown role.
+         */
+        public const ROLE_LABEL_ROLE_UNSPECIFIED = 'LABEL_ROLE_UNSPECIFIED';
+        /**
+         * A reader can read the label and associated metadata applied to Drive items.
+         */
+        public const ROLE_READER = 'READER';
+        /**
+         * An applier can write associated metadata on Drive items in which they also
+         * have write access to. Implies `READER`.
+         */
+        public const ROLE_APPLIER = 'APPLIER';
+        /**
+         * An organizer can pin this label in shared drives they manage and add new
+         * appliers to the label.
+         */
+        public const ROLE_ORGANIZER = 'ORGANIZER';
+        /**
+         * Editors can make any update including deleting the label which also deletes
+         * the associated Drive item metadata. Implies `APPLIER`.
+         */
+        public const ROLE_EDITOR = 'EDITOR';
+        /**
+         * Audience to grant a role to. The magic value of `audiences/default` may be
+         * used to apply the role to the default audience in the context of the
+         * organization that owns the label.
+         *
+         * @var string
+         */
+        public $audience;
+        /**
+         * Specifies the email address for a user or group principal. Not populated
+         * for audience principals. User and group permissions may only be inserted
+         * using an email address. On update requests, if email address is specified,
+         * no principal should be specified.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Group resource name.
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * Resource name of this permission.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Person resource name.
+         *
+         * @var string
+         */
+        public $person;
+        /**
+         * The role the principal should have.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Audience to grant a role to. The magic value of `audiences/default` may be
+         * used to apply the role to the default audience in the context of the
+         * organization that owns the label.
+         *
+         * @param string $audience
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
+        /**
+         * Specifies the email address for a user or group principal. Not populated
+         * for audience principals. User and group permissions may only be inserted
+         * using an email address. On update requests, if email address is specified,
+         * no principal should be specified.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Group resource name.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Resource name of this permission.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Person resource name.
+         *
+         * @param string $person
+         */
+        public function setPerson($person)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPerson()
+        {
+        }
+        /**
+         * The role the principal should have.
+         *
+         * Accepted values: LABEL_ROLE_UNSPECIFIED, READER, APPLIER, ORGANIZER, EDITOR
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
-    {
-    }
-    /**
-     * Specifies the email address for a user or group principal. Not populated
-     * for audience principals. User and group permissions may only be inserted
-     * using an email address. On update requests, if email address is specified,
-     * no principal should be specified.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Group resource name.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * Resource name of this permission.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Person resource name.
-     *
-     * @param string $person
-     */
-    public function setPerson($person)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPerson()
-    {
-    }
-    /**
-     * The role the principal should have.
-     *
-     * Accepted values: LABEL_ROLE_UNSPECIFIED, READER, APPLIER, ORGANIZER, EDITOR
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelPermission extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission
     {
     }
 }

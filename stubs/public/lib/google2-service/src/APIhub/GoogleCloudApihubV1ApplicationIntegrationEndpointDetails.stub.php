@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApplicationIntegrationEndpointDetails extends \Google\Model
-{
-    /**
-     * Required. The API trigger ID of the Application Integration workflow.
-     *
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * Required. The endpoint URI should be a valid REST URI for triggering an
-     * Application Integration. Format: `https://integrations.googleapis.com/v1/{n
-     * ame=projects/locations/integrations}:execute` or `https://{location}-
-     * integrations.googleapis.com/v1/{name=projects/locations/integrations}:execu
-     * te`
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The API trigger ID of the Application Integration workflow.
-     *
-     * @param string $triggerId
-     */
-    public function setTriggerId($triggerId)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApplicationIntegrationEndpointDetails extends \Google\Model
     {
+        /**
+         * Required. The API trigger ID of the Application Integration workflow.
+         *
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * Required. The endpoint URI should be a valid REST URI for triggering an
+         * Application Integration. Format: `https://integrations.googleapis.com/v1/{n
+         * ame=projects/locations/integrations}:execute` or `https://{location}-
+         * integrations.googleapis.com/v1/{name=projects/locations/integrations}:execu
+         * te`
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The API trigger ID of the Application Integration workflow.
+         *
+         * @param string $triggerId
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
+        /**
+         * Required. The endpoint URI should be a valid REST URI for triggering an
+         * Application Integration. Format: `https://integrations.googleapis.com/v1/{n
+         * ame=projects/locations/integrations}:execute` or `https://{location}-
+         * integrations.googleapis.com/v1/{name=projects/locations/integrations}:execu
+         * te`
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApplicationIntegrationEndpointDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTriggerId()
-    {
-    }
-    /**
-     * Required. The endpoint URI should be a valid REST URI for triggering an
-     * Application Integration. Format: `https://integrations.googleapis.com/v1/{n
-     * ame=projects/locations/integrations}:execute` or `https://{location}-
-     * integrations.googleapis.com/v1/{name=projects/locations/integrations}:execu
-     * te`
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApplicationIntegrationEndpointDetails extends \Google\Service\APIhub\GoogleCloudApihubV1ApplicationIntegrationEndpointDetails
     {
     }
 }

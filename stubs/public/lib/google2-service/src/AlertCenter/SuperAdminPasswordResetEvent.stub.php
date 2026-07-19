@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class SuperAdminPasswordResetEvent extends \Google\Model
-{
-    /**
-     * email of person whose password was reset
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * email of person whose password was reset
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
+namespace Google\Service\AlertCenter {
+    class SuperAdminPasswordResetEvent extends \Google\Model
     {
+        /**
+         * email of person whose password was reset
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * email of person whose password was reset
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\SuperAdminPasswordResetEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserEmail()
+    class Google_Service_AlertCenter_SuperAdminPasswordResetEvent extends \Google\Service\AlertCenter\SuperAdminPasswordResetEvent
     {
     }
 }

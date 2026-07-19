@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate\Resource;
-
-/**
- * The "adaptiveMtSentences" collection of methods.
- * Typical usage is:
- *  <code>
- *   $translateService = new Google\Service\Translate(...);
- *   $adaptiveMtSentences = $translateService->projects_locations_adaptiveMtDatasets_adaptiveMtSentences;
- *  </code>
- */
-class ProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences extends \Google\Service\Resource
-{
+namespace Google\Service\Translate\Resource {
+    use Google\Service\Translate\ListAdaptiveMtSentencesResponse;
     /**
-     * Lists all AdaptiveMtSentences under a given file/dataset. (adaptiveMtSentence
-     * s.listProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences)
-     *
-     * @param string $parent Required. The resource name of the project from which
-     * to list the Adaptive MT files. The following format lists all sentences under
-     * a file. `projects/{project}/locations/{location}/adaptiveMtDatasets/{dataset}
-     * /adaptiveMtFiles/{file}` The following format lists all sentences within a
-     * dataset.
-     * `projects/{project}/locations/{location}/adaptiveMtDatasets/{dataset}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of
-     * ListAdaptiveMtSentencesRequest.next_page_token returned from the previous
-     * call to `ListTranslationMemories` method. The first page is returned if
-     * `page_token` is empty or missing.
-     * @return ListAdaptiveMtSentencesResponse
-     * @throws \Google\Service\Exception
+     * The "adaptiveMtSentences" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $translateService = new Google\Service\Translate(...);
+     *   $adaptiveMtSentences = $translateService->projects_locations_adaptiveMtDatasets_adaptiveMtSentences;
+     *  </code>
      */
-    public function listProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences($parent, $optParams = [])
+    class ProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences extends \Google\Service\Resource
+    {
+        /**
+         * Lists all AdaptiveMtSentences under a given file/dataset. (adaptiveMtSentence
+         * s.listProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences)
+         *
+         * @param string $parent Required. The resource name of the project from which
+         * to list the Adaptive MT files. The following format lists all sentences under
+         * a file. `projects/{project}/locations/{location}/adaptiveMtDatasets/{dataset}
+         * /adaptiveMtFiles/{file}` The following format lists all sentences within a
+         * dataset.
+         * `projects/{project}/locations/{location}/adaptiveMtDatasets/{dataset}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of
+         * ListAdaptiveMtSentencesRequest.next_page_token returned from the previous
+         * call to `ListTranslationMemories` method. The first page is returned if
+         * `page_token` is empty or missing.
+         * @return ListAdaptiveMtSentencesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Translate\Resource\ProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Translate_Resource_ProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences extends \Google\Service\Translate\Resource\ProjectsLocationsAdaptiveMtDatasetsAdaptiveMtSentences
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends \Google\Model
-{
-    public $execution;
-    public $idle;
-    public $shutdown;
-    public function setExecution($execution)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends \Google\Model
     {
+        public $execution;
+        public $idle;
+        public $shutdown;
+        public function setExecution($execution)
+        {
+        }
+        public function getExecution()
+        {
+        }
+        public function setIdle($idle)
+        {
+        }
+        public function getIdle()
+        {
+        }
+        public function setShutdown($shutdown)
+        {
+        }
+        public function getShutdown()
+        {
+        }
     }
-    public function getExecution()
-    {
-    }
-    public function setIdle($idle)
-    {
-    }
-    public function getIdle()
-    {
-    }
-    public function setShutdown($shutdown)
-    {
-    }
-    public function getShutdown()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts
     {
     }
 }

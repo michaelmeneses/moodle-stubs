@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RemoveCatalogAttributeRequest extends \Google\Model
-{
-    /**
-     * Required. The attribute name key of the CatalogAttribute to remove.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Required. The attribute name key of the CatalogAttribute to remove.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RemoveCatalogAttributeRequest extends \Google\Model
     {
+        /**
+         * Required. The attribute name key of the CatalogAttribute to remove.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Required. The attribute name key of the CatalogAttribute to remove.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveCatalogAttributeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RemoveCatalogAttributeRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveCatalogAttributeRequest
     {
     }
 }

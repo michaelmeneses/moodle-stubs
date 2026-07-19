@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines\Resource;
-
-/**
- * The "jobs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datapipelinesService = new Google\Service\Datapipelines(...);
- *   $jobs = $datapipelinesService->projects_locations_pipelines_jobs;
- *  </code>
- */
-class ProjectsLocationsPipelinesJobs extends \Google\Service\Resource
-{
+namespace Google\Service\Datapipelines\Resource {
+    use Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListJobsResponse;
     /**
-     * Lists jobs for a given pipeline. Throws a "FORBIDDEN" error if the caller
-     * doesn't have permission to access it.
-     * (jobs.listProjectsLocationsPipelinesJobs)
-     *
-     * @param string $parent Required. The pipeline name. For example:
-     * `projects/PROJECT_ID/locations/LOCATION_ID/pipelines/PIPELINE_ID`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of entities to return. The service
-     * may return fewer than this value, even if there are additional pages. If
-     * unspecified, the max limit will be determined by the backend implementation.
-     * @opt_param string pageToken A page token, received from a previous `ListJobs`
-     * call. Provide this to retrieve the subsequent page. When paginating, all
-     * other parameters provided to `ListJobs` must match the call that provided the
-     * page token.
-     * @return GoogleCloudDatapipelinesV1ListJobsResponse
-     * @throws \Google\Service\Exception
+     * The "jobs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datapipelinesService = new Google\Service\Datapipelines(...);
+     *   $jobs = $datapipelinesService->projects_locations_pipelines_jobs;
+     *  </code>
      */
-    public function listProjectsLocationsPipelinesJobs($parent, $optParams = [])
+    class ProjectsLocationsPipelinesJobs extends \Google\Service\Resource
+    {
+        /**
+         * Lists jobs for a given pipeline. Throws a "FORBIDDEN" error if the caller
+         * doesn't have permission to access it.
+         * (jobs.listProjectsLocationsPipelinesJobs)
+         *
+         * @param string $parent Required. The pipeline name. For example:
+         * `projects/PROJECT_ID/locations/LOCATION_ID/pipelines/PIPELINE_ID`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of entities to return. The service
+         * may return fewer than this value, even if there are additional pages. If
+         * unspecified, the max limit will be determined by the backend implementation.
+         * @opt_param string pageToken A page token, received from a previous `ListJobs`
+         * call. Provide this to retrieve the subsequent page. When paginating, all
+         * other parameters provided to `ListJobs` must match the call that provided the
+         * page token.
+         * @return GoogleCloudDatapipelinesV1ListJobsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsPipelinesJobs($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Datapipelines\Resource\ProjectsLocationsPipelinesJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Datapipelines_Resource_ProjectsLocationsPipelinesJobs extends \Google\Service\Datapipelines\Resource\ProjectsLocationsPipelinesJobs
     {
     }
 }

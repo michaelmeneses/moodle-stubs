@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class SummaryField extends \Google\Model
-{
-    /**
-     * Optional. The field from the LogEntry to include in the summary line, for
-     * example resource.type or jsonPayload.name.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * Optional. The field from the LogEntry to include in the summary line, for
-     * example resource.type or jsonPayload.name.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\Logging {
+    class SummaryField extends \Google\Model
     {
+        /**
+         * Optional. The field from the LogEntry to include in the summary line, for
+         * example resource.type or jsonPayload.name.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * Optional. The field from the LogEntry to include in the summary line, for
+         * example resource.type or jsonPayload.name.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\SummaryField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
+    class Google_Service_Logging_SummaryField extends \Google\Service\Logging\SummaryField
     {
     }
 }

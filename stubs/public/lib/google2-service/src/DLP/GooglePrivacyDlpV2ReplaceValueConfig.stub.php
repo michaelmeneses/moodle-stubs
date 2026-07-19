@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ReplaceValueConfig extends \Google\Model
-{
-    protected $newValueType = GooglePrivacyDlpV2Value::class;
-    protected $newValueDataType = '';
-    /**
-     * Value to replace it with.
-     *
-     * @param GooglePrivacyDlpV2Value $newValue
-     */
-    public function setNewValue(GooglePrivacyDlpV2Value $newValue)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ReplaceValueConfig extends \Google\Model
     {
+        protected $newValueType = GooglePrivacyDlpV2Value::class;
+        protected $newValueDataType = '';
+        /**
+         * Value to replace it with.
+         *
+         * @param GooglePrivacyDlpV2Value $newValue
+         */
+        public function setNewValue(GooglePrivacyDlpV2Value $newValue)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getNewValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Value
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ReplaceValueConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2ReplaceValueConfig extends \Google\Service\DLP\GooglePrivacyDlpV2ReplaceValueConfig
     {
     }
 }

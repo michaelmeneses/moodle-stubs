@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaDataMonitoringSdkResult extends \Google\Model
-{
-    protected $metadataType = GoogleChecksReportV1alphaDataMonitoringResultMetadata::class;
-    protected $metadataDataType = '';
-    protected $sdkType = GoogleChecksReportV1alphaSdk::class;
-    protected $sdkDataType = '';
-    /**
-     * Metadata about the result.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata
-     */
-    public function setMetadata(GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaDataMonitoringSdkResult extends \Google\Model
     {
+        protected $metadataType = GoogleChecksReportV1alphaDataMonitoringResultMetadata::class;
+        protected $metadataDataType = '';
+        protected $sdkType = GoogleChecksReportV1alphaSdk::class;
+        protected $sdkDataType = '';
+        /**
+         * Metadata about the result.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata
+         */
+        public function setMetadata(GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoringResultMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The SDK that was found in your app.
+         *
+         * @param GoogleChecksReportV1alphaSdk $sdk
+         */
+        public function setSdk(GoogleChecksReportV1alphaSdk $sdk)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaSdk
+         */
+        public function getSdk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaDataMonitoringResultMetadata
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoringSdkResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The SDK that was found in your app.
-     *
-     * @param GoogleChecksReportV1alphaSdk $sdk
-     */
-    public function setSdk(GoogleChecksReportV1alphaSdk $sdk)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaSdk
-     */
-    public function getSdk()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaDataMonitoringSdkResult extends \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoringSdkResult
     {
     }
 }

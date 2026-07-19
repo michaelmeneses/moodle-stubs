@@ -21,209 +21,218 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2RevisionTemplate extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    /**
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * @var bool
-     */
-    public $confidential;
-    /**
-     * @var int
-     */
-    public $containerConcurrency;
-    protected $containersType = GoogleCloudRunOpV2Container::class;
-    protected $containersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $encryptionKey;
-    /**
-     * @var string
-     */
-    public $executionEnvironment;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $revision;
-    protected $scalingType = GoogleCloudRunOpV2RevisionScaling::class;
-    protected $scalingDataType = '';
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * @var string
-     */
-    public $timeout;
-    protected $volumesType = GoogleCloudRunOpV2Volume::class;
-    protected $volumesDataType = 'array';
-    protected $vpcAccessType = GoogleCloudRunOpV2VpcAccess::class;
-    protected $vpcAccessDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2RevisionTemplate extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        /**
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * @var bool
+         */
+        public $confidential;
+        /**
+         * @var int
+         */
+        public $containerConcurrency;
+        protected $containersType = GoogleCloudRunOpV2Container::class;
+        protected $containersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $encryptionKey;
+        /**
+         * @var string
+         */
+        public $executionEnvironment;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $revision;
+        protected $scalingType = GoogleCloudRunOpV2RevisionScaling::class;
+        protected $scalingDataType = '';
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * @var string
+         */
+        public $timeout;
+        protected $volumesType = GoogleCloudRunOpV2Volume::class;
+        protected $volumesDataType = 'array';
+        protected $vpcAccessType = GoogleCloudRunOpV2VpcAccess::class;
+        protected $vpcAccessDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setConfidential($confidential)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConfidential()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setContainerConcurrency($containerConcurrency)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerConcurrency()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Container[]
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Container[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEncryptionKey($encryptionKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptionKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExecutionEnvironment($executionEnvironment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionEnvironment()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2RevisionScaling
+         */
+        public function setScaling(GoogleCloudRunOpV2RevisionScaling $scaling)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2RevisionScaling
+         */
+        public function getScaling()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Volume[]
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Volume[]
+         */
+        public function getVolumes()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2VpcAccess
+         */
+        public function setVpcAccess(GoogleCloudRunOpV2VpcAccess $vpcAccess)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2VpcAccess
+         */
+        public function getVpcAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2RevisionTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setConfidential($confidential)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getConfidential()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setContainerConcurrency($containerConcurrency)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getContainerConcurrency()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Container[]
-     */
-    public function setContainers($containers)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Container[]
-     */
-    public function getContainers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEncryptionKey($encryptionKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptionKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExecutionEnvironment($executionEnvironment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionEnvironment()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2RevisionScaling
-     */
-    public function setScaling(GoogleCloudRunOpV2RevisionScaling $scaling)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2RevisionScaling
-     */
-    public function getScaling()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Volume[]
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Volume[]
-     */
-    public function getVolumes()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2VpcAccess
-     */
-    public function setVpcAccess(GoogleCloudRunOpV2VpcAccess $vpcAccess)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2VpcAccess
-     */
-    public function getVpcAccess()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2RevisionTemplate extends \Google\Service\CloudRun\GoogleCloudRunOpV2RevisionTemplate
     {
     }
 }

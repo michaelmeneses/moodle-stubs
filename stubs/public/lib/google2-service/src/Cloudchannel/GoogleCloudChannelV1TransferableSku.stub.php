@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1TransferableSku extends \Google\Model
-{
-    protected $legacySkuType = GoogleCloudChannelV1Sku::class;
-    protected $legacySkuDataType = '';
-    protected $skuType = GoogleCloudChannelV1Sku::class;
-    protected $skuDataType = '';
-    protected $transferEligibilityType = GoogleCloudChannelV1TransferEligibility::class;
-    protected $transferEligibilityDataType = '';
-    /**
-     * Optional. The customer to transfer has an entitlement with the populated
-     * legacy SKU.
-     *
-     * @param GoogleCloudChannelV1Sku $legacySku
-     */
-    public function setLegacySku(GoogleCloudChannelV1Sku $legacySku)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1TransferableSku extends \Google\Model
     {
+        protected $legacySkuType = GoogleCloudChannelV1Sku::class;
+        protected $legacySkuDataType = '';
+        protected $skuType = GoogleCloudChannelV1Sku::class;
+        protected $skuDataType = '';
+        protected $transferEligibilityType = GoogleCloudChannelV1TransferEligibility::class;
+        protected $transferEligibilityDataType = '';
+        /**
+         * Optional. The customer to transfer has an entitlement with the populated
+         * legacy SKU.
+         *
+         * @param GoogleCloudChannelV1Sku $legacySku
+         */
+        public function setLegacySku(GoogleCloudChannelV1Sku $legacySku)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Sku
+         */
+        public function getLegacySku()
+        {
+        }
+        /**
+         * The SKU pertaining to the provisioning resource as specified in the Offer.
+         *
+         * @param GoogleCloudChannelV1Sku $sku
+         */
+        public function setSku(GoogleCloudChannelV1Sku $sku)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Sku
+         */
+        public function getSku()
+        {
+        }
+        /**
+         * Describes the transfer eligibility of a SKU.
+         *
+         * @param GoogleCloudChannelV1TransferEligibility $transferEligibility
+         */
+        public function setTransferEligibility(GoogleCloudChannelV1TransferEligibility $transferEligibility)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1TransferEligibility
+         */
+        public function getTransferEligibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Sku
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1TransferableSku registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacySku()
-    {
-    }
-    /**
-     * The SKU pertaining to the provisioning resource as specified in the Offer.
-     *
-     * @param GoogleCloudChannelV1Sku $sku
-     */
-    public function setSku(GoogleCloudChannelV1Sku $sku)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Sku
-     */
-    public function getSku()
-    {
-    }
-    /**
-     * Describes the transfer eligibility of a SKU.
-     *
-     * @param GoogleCloudChannelV1TransferEligibility $transferEligibility
-     */
-    public function setTransferEligibility(GoogleCloudChannelV1TransferEligibility $transferEligibility)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1TransferEligibility
-     */
-    public function getTransferEligibility()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1TransferableSku extends \Google\Service\Cloudchannel\GoogleCloudChannelV1TransferableSku
     {
     }
 }

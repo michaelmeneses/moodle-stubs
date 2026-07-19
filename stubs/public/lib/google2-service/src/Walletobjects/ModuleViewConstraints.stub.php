@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ModuleViewConstraints extends \Google\Model
-{
-    protected $displayIntervalType = TimeInterval::class;
-    protected $displayIntervalDataType = '';
-    /**
-     * The period of time that the module will be displayed to users. Can define
-     * both a `startTime` and `endTime`. The module is displayed immediately after
-     * insertion unless a `startTime` is set. The module is displayed indefinitely
-     * if `endTime` is not set.
-     *
-     * @param TimeInterval $displayInterval
-     */
-    public function setDisplayInterval(TimeInterval $displayInterval)
+namespace Google\Service\Walletobjects {
+    class ModuleViewConstraints extends \Google\Model
     {
+        protected $displayIntervalType = TimeInterval::class;
+        protected $displayIntervalDataType = '';
+        /**
+         * The period of time that the module will be displayed to users. Can define
+         * both a `startTime` and `endTime`. The module is displayed immediately after
+         * insertion unless a `startTime` is set. The module is displayed indefinitely
+         * if `endTime` is not set.
+         *
+         * @param TimeInterval $displayInterval
+         */
+        public function setDisplayInterval(TimeInterval $displayInterval)
+        {
+        }
+        /**
+         * @return TimeInterval
+         */
+        public function getDisplayInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeInterval
+     * Runtime class alias of \Google\Service\Walletobjects\ModuleViewConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayInterval()
+    class Google_Service_Walletobjects_ModuleViewConstraints extends \Google\Service\Walletobjects\ModuleViewConstraints
     {
     }
 }

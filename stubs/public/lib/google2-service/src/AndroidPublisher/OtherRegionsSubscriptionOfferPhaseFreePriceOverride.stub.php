@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OtherRegionsSubscriptionOfferPhaseFreePriceOverride extends \Google\Model
-{
+namespace Google\Service\AndroidPublisher {
+    class OtherRegionsSubscriptionOfferPhaseFreePriceOverride extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\OtherRegionsSubscriptionOfferPhaseFreePriceOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_OtherRegionsSubscriptionOfferPhaseFreePriceOverride extends \Google\Service\AndroidPublisher\OtherRegionsSubscriptionOfferPhaseFreePriceOverride
+    {
+    }
 }

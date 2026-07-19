@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class FixedFee extends \Google\Model
-{
-    protected $amountType = Money::class;
-    protected $amountDataType = '';
-    /**
-     * @param Money
-     */
-    public function setAmount(Money $amount)
+namespace Google\Service\MyBusinessPlaceActions {
+    class FixedFee extends \Google\Model
     {
+        protected $amountType = Money::class;
+        protected $amountDataType = '';
+        /**
+         * @param Money
+         */
+        public function setAmount(Money $amount)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\FixedFee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
+    class Google_Service_MyBusinessPlaceActions_FixedFee extends \Google\Service\MyBusinessPlaceActions\FixedFee
     {
     }
 }

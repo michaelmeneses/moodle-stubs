@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class PlacerLocation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $placerConfig;
-    /**
-     * @param string
-     */
-    public function setPlacerConfig($placerConfig)
+namespace Google\Service\AppHub {
+    class PlacerLocation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $placerConfig;
+        /**
+         * @param string
+         */
+        public function setPlacerConfig($placerConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlacerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\PlacerLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlacerConfig()
+    class Google_Service_AppHub_PlacerLocation extends \Google\Service\AppHub\PlacerLocation
     {
     }
 }

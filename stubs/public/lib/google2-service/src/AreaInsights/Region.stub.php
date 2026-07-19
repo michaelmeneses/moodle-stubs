@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class Region extends \Google\Model
-{
-    /**
-     * The [place ID](https://developers.google.com/maps/documentation/places/web-
-     * service/place-id) of the geographic region. Not all region types are
-     * supported; see documentation for details. **Format:** Must be in the format
-     * `places/PLACE_ID`, where `PLACE_ID` is the unique identifier of a place.
-     * For example: `places/ChIJPV4oX_65j4ARVW8IJ6IJUYs`.
-     *
-     * @var string
-     */
-    public $place;
-    /**
-     * The [place ID](https://developers.google.com/maps/documentation/places/web-
-     * service/place-id) of the geographic region. Not all region types are
-     * supported; see documentation for details. **Format:** Must be in the format
-     * `places/PLACE_ID`, where `PLACE_ID` is the unique identifier of a place.
-     * For example: `places/ChIJPV4oX_65j4ARVW8IJ6IJUYs`.
-     *
-     * @param string $place
-     */
-    public function setPlace($place)
+namespace Google\Service\AreaInsights {
+    class Region extends \Google\Model
     {
+        /**
+         * The [place ID](https://developers.google.com/maps/documentation/places/web-
+         * service/place-id) of the geographic region. Not all region types are
+         * supported; see documentation for details. **Format:** Must be in the format
+         * `places/PLACE_ID`, where `PLACE_ID` is the unique identifier of a place.
+         * For example: `places/ChIJPV4oX_65j4ARVW8IJ6IJUYs`.
+         *
+         * @var string
+         */
+        public $place;
+        /**
+         * The [place ID](https://developers.google.com/maps/documentation/places/web-
+         * service/place-id) of the geographic region. Not all region types are
+         * supported; see documentation for details. **Format:** Must be in the format
+         * `places/PLACE_ID`, where `PLACE_ID` is the unique identifier of a place.
+         * For example: `places/ChIJPV4oX_65j4ARVW8IJ6IJUYs`.
+         *
+         * @param string $place
+         */
+        public function setPlace($place)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AreaInsights\Region registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlace()
+    class Google_Service_AreaInsights_Region extends \Google\Service\AreaInsights\Region
     {
     }
 }

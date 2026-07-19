@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2OtherCloudSingleResourceReference extends \Google\Model
-{
-    protected $amazonS3BucketType = GooglePrivacyDlpV2AmazonS3Bucket::class;
-    protected $amazonS3BucketDataType = '';
-    /**
-     * Amazon S3 bucket.
-     *
-     * @param GooglePrivacyDlpV2AmazonS3Bucket $amazonS3Bucket
-     */
-    public function setAmazonS3Bucket(GooglePrivacyDlpV2AmazonS3Bucket $amazonS3Bucket)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2OtherCloudSingleResourceReference extends \Google\Model
     {
+        protected $amazonS3BucketType = GooglePrivacyDlpV2AmazonS3Bucket::class;
+        protected $amazonS3BucketDataType = '';
+        /**
+         * Amazon S3 bucket.
+         *
+         * @param GooglePrivacyDlpV2AmazonS3Bucket $amazonS3Bucket
+         */
+        public function setAmazonS3Bucket(GooglePrivacyDlpV2AmazonS3Bucket $amazonS3Bucket)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AmazonS3Bucket
+         */
+        public function getAmazonS3Bucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AmazonS3Bucket
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudSingleResourceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmazonS3Bucket()
+    class Google_Service_DLP_GooglePrivacyDlpV2OtherCloudSingleResourceReference extends \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudSingleResourceReference
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class VpcNetworkSource extends \Google\Model
-{
-    protected $vpcSubnetworkType = VpcSubNetwork::class;
-    protected $vpcSubnetworkDataType = '';
-    /**
-     * Sub-segment ranges of a VPC network.
-     *
-     * @param VpcSubNetwork $vpcSubnetwork
-     */
-    public function setVpcSubnetwork(VpcSubNetwork $vpcSubnetwork)
+namespace Google\Service\AccessContextManager {
+    class VpcNetworkSource extends \Google\Model
     {
+        protected $vpcSubnetworkType = VpcSubNetwork::class;
+        protected $vpcSubnetworkDataType = '';
+        /**
+         * Sub-segment ranges of a VPC network.
+         *
+         * @param VpcSubNetwork $vpcSubnetwork
+         */
+        public function setVpcSubnetwork(VpcSubNetwork $vpcSubnetwork)
+        {
+        }
+        /**
+         * @return VpcSubNetwork
+         */
+        public function getVpcSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VpcSubNetwork
+     * Runtime class alias of \Google\Service\AccessContextManager\VpcNetworkSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpcSubnetwork()
+    class Google_Service_AccessContextManager_VpcNetworkSource extends \Google\Service\AccessContextManager\VpcNetworkSource
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedLocationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assignedLocations';
-    protected $assignedLocationsType = AssignedLocation::class;
-    protected $assignedLocationsDataType = 'array';
-    /**
-     * The list of assigned locations that have been successfully created. This
-     * list will be absent if empty.
-     *
-     * @param AssignedLocation[] $assignedLocations
-     */
-    public function setAssignedLocations($assignedLocations)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedLocationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assignedLocations';
+        protected $assignedLocationsType = AssignedLocation::class;
+        protected $assignedLocationsDataType = 'array';
+        /**
+         * The list of assigned locations that have been successfully created. This
+         * list will be absent if empty.
+         *
+         * @param AssignedLocation[] $assignedLocations
+         */
+        public function setAssignedLocations($assignedLocations)
+        {
+        }
+        /**
+         * @return AssignedLocation[]
+         */
+        public function getAssignedLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedLocation[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedLocationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedLocations()
+    class Google_Service_DisplayVideo_BulkEditAssignedLocationsResponse extends \Google\Service\DisplayVideo\BulkEditAssignedLocationsResponse
     {
     }
 }

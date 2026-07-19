@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LogConfig extends \Google\Model
-{
-    protected $cloudAuditType = LogConfigCloudAuditOptions::class;
-    protected $cloudAuditDataType = '';
-    protected $counterType = LogConfigCounterOptions::class;
-    protected $counterDataType = '';
-    protected $dataAccessType = LogConfigDataAccessOptions::class;
-    protected $dataAccessDataType = '';
-    /**
-     * @param LogConfigCloudAuditOptions
-     */
-    public function setCloudAudit(LogConfigCloudAuditOptions $cloudAudit)
+namespace Google\Service\Compute {
+    class LogConfig extends \Google\Model
     {
+        protected $cloudAuditType = LogConfigCloudAuditOptions::class;
+        protected $cloudAuditDataType = '';
+        protected $counterType = LogConfigCounterOptions::class;
+        protected $counterDataType = '';
+        protected $dataAccessType = LogConfigDataAccessOptions::class;
+        protected $dataAccessDataType = '';
+        /**
+         * @param LogConfigCloudAuditOptions
+         */
+        public function setCloudAudit(LogConfigCloudAuditOptions $cloudAudit)
+        {
+        }
+        /**
+         * @return LogConfigCloudAuditOptions
+         */
+        public function getCloudAudit()
+        {
+        }
+        /**
+         * @param LogConfigCounterOptions
+         */
+        public function setCounter(LogConfigCounterOptions $counter)
+        {
+        }
+        /**
+         * @return LogConfigCounterOptions
+         */
+        public function getCounter()
+        {
+        }
+        /**
+         * @param LogConfigDataAccessOptions
+         */
+        public function setDataAccess(LogConfigDataAccessOptions $dataAccess)
+        {
+        }
+        /**
+         * @return LogConfigDataAccessOptions
+         */
+        public function getDataAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogConfigCloudAuditOptions
+     * Runtime class alias of \Google\Service\Compute\LogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudAudit()
-    {
-    }
-    /**
-     * @param LogConfigCounterOptions
-     */
-    public function setCounter(LogConfigCounterOptions $counter)
-    {
-    }
-    /**
-     * @return LogConfigCounterOptions
-     */
-    public function getCounter()
-    {
-    }
-    /**
-     * @param LogConfigDataAccessOptions
-     */
-    public function setDataAccess(LogConfigDataAccessOptions $dataAccess)
-    {
-    }
-    /**
-     * @return LogConfigDataAccessOptions
-     */
-    public function getDataAccess()
+    class Google_Service_Compute_LogConfig extends \Google\Service\Compute\LogConfig
     {
     }
 }

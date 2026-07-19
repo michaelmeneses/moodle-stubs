@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class ListGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * The Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Group::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies the API resource's type. The value will be
-     * `youtube#groupListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The token that can be used as the value of the `pageToken` parameter to
-     * retrieve the next page in the result set.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Apiary error details
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
+namespace Google\Service\YouTubeAnalytics {
+    class ListGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * The Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Group::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies the API resource's type. The value will be
+         * `youtube#groupListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The token that can be used as the value of the `pageToken` parameter to
+         * retrieve the next page in the result set.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Apiary error details
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of groups that match the API request parameters. Each item in the
+         * list represents a `group` resource.
+         *
+         * @param Group[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Group[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies the API resource's type. The value will be
+         * `youtube#groupListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The token that can be used as the value of the `pageToken` parameter to
+         * retrieve the next page in the result set.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Errors
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\ListGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of groups that match the API request parameters. Each item in the
-     * list represents a `group` resource.
-     *
-     * @param Group[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Group[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies the API resource's type. The value will be
-     * `youtube#groupListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The token that can be used as the value of the `pageToken` parameter to
-     * retrieve the next page in the result set.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_YouTubeAnalytics_ListGroupsResponse extends \Google\Service\YouTubeAnalytics\ListGroupsResponse
     {
     }
 }

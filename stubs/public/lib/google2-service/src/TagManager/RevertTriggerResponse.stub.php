@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertTriggerResponse extends \Google\Model
-{
-    protected $triggerType = Trigger::class;
-    protected $triggerDataType = '';
-    /**
-     * Trigger as it appears in the latest container version since the last
-     * workspace synchronization operation. If no trigger is present, that means
-     * the trigger was deleted in the latest container version.
-     *
-     * @param Trigger $trigger
-     */
-    public function setTrigger(Trigger $trigger)
+namespace Google\Service\TagManager {
+    class RevertTriggerResponse extends \Google\Model
     {
+        protected $triggerType = Trigger::class;
+        protected $triggerDataType = '';
+        /**
+         * Trigger as it appears in the latest container version since the last
+         * workspace synchronization operation. If no trigger is present, that means
+         * the trigger was deleted in the latest container version.
+         *
+         * @param Trigger $trigger
+         */
+        public function setTrigger(Trigger $trigger)
+        {
+        }
+        /**
+         * @return Trigger
+         */
+        public function getTrigger()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Trigger
+     * Runtime class alias of \Google\Service\TagManager\RevertTriggerResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrigger()
+    class Google_Service_TagManager_RevertTriggerResponse extends \Google\Service\TagManager\RevertTriggerResponse
     {
     }
 }

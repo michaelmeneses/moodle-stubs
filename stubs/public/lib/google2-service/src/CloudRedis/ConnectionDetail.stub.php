@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ConnectionDetail extends \Google\Model
-{
-    protected $pscAutoConnectionType = PscAutoConnection::class;
-    protected $pscAutoConnectionDataType = '';
-    protected $pscConnectionType = PscConnection::class;
-    protected $pscConnectionDataType = '';
-    /**
-     * Detailed information of a PSC connection that is created through service
-     * connectivity automation.
-     *
-     * @param PscAutoConnection $pscAutoConnection
-     */
-    public function setPscAutoConnection(PscAutoConnection $pscAutoConnection)
+namespace Google\Service\CloudRedis {
+    class ConnectionDetail extends \Google\Model
     {
+        protected $pscAutoConnectionType = PscAutoConnection::class;
+        protected $pscAutoConnectionDataType = '';
+        protected $pscConnectionType = PscConnection::class;
+        protected $pscConnectionDataType = '';
+        /**
+         * Detailed information of a PSC connection that is created through service
+         * connectivity automation.
+         *
+         * @param PscAutoConnection $pscAutoConnection
+         */
+        public function setPscAutoConnection(PscAutoConnection $pscAutoConnection)
+        {
+        }
+        /**
+         * @return PscAutoConnection
+         */
+        public function getPscAutoConnection()
+        {
+        }
+        /**
+         * Detailed information of a PSC connection that is created by the customer
+         * who owns the cluster.
+         *
+         * @param PscConnection $pscConnection
+         */
+        public function setPscConnection(PscConnection $pscConnection)
+        {
+        }
+        /**
+         * @return PscConnection
+         */
+        public function getPscConnection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PscAutoConnection
+     * Runtime class alias of \Google\Service\CloudRedis\ConnectionDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPscAutoConnection()
-    {
-    }
-    /**
-     * Detailed information of a PSC connection that is created by the customer
-     * who owns the cluster.
-     *
-     * @param PscConnection $pscConnection
-     */
-    public function setPscConnection(PscConnection $pscConnection)
-    {
-    }
-    /**
-     * @return PscConnection
-     */
-    public function getPscConnection()
+    class Google_Service_CloudRedis_ConnectionDetail extends \Google\Service\CloudRedis\ConnectionDetail
     {
     }
 }

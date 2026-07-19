@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class ListCaPoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $caPoolsType = CaPool::class;
-    protected $caPoolsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of CaPools.
-     *
-     * @param CaPool[] $caPools
-     */
-    public function setCaPools($caPools)
+namespace Google\Service\CertificateAuthorityService {
+    class ListCaPoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $caPoolsType = CaPool::class;
+        protected $caPoolsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of CaPools.
+         *
+         * @param CaPool[] $caPools
+         */
+        public function setCaPools($caPools)
+        {
+        }
+        /**
+         * @return CaPool[]
+         */
+        public function getCaPools()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CaPool[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\ListCaPoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaPools()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificateAuthoritiesRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CertificateAuthorityService_ListCaPoolsResponse extends \Google\Service\CertificateAuthorityService\ListCaPoolsResponse
     {
     }
 }

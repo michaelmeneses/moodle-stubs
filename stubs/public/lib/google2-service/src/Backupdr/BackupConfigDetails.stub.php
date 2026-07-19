@@ -21,281 +21,290 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupConfigDetails extends \Google\Collection
-{
-    /**
-     * Backup config state not set.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The config is in an active state protecting the resource
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The config is currently not protecting the resource. Either because it is
-     * disabled or the owning project has been deleted without cleanup of the
-     * actual resource.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    /**
-     * The config still exists but because of some error state it is not
-     * protecting the resource. Like the source project is deleted. For eg.
-     * PlanAssociation, BackupPlan is deleted.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Backup config type is unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Backup config is Cloud SQL instance's automated backup config.
-     */
-    public const TYPE_CLOUD_SQL_INSTANCE_BACKUP_CONFIG = 'CLOUD_SQL_INSTANCE_BACKUP_CONFIG';
-    /**
-     * Backup config is Compute Engine Resource Policy.
-     */
-    public const TYPE_COMPUTE_ENGINE_RESOURCE_POLICY = 'COMPUTE_ENGINE_RESOURCE_POLICY';
-    /**
-     * Backup config is Backup and DR's Backup Plan.
-     */
-    public const TYPE_BACKUPDR_BACKUP_PLAN = 'BACKUPDR_BACKUP_PLAN';
-    /**
-     * Backup config is Backup and DR's Template.
-     */
-    public const TYPE_BACKUPDR_TEMPLATE = 'BACKUPDR_TEMPLATE';
-    protected $collection_key = 'backupLocations';
-    /**
-     * Output only. The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the resource that is applicable for
-     * the backup configuration. Example: "//compute.googleapis.com/projects/{proj
-     * ect}/zones/{zone}/instances/{instance}"
-     *
-     * @var string
-     */
-    public $applicableResource;
-    /**
-     * Output only. The full resource name of the backup config source resource.
-     * For example, "//backupdr.googleapis.com/v1/projects/{project}/locations/{re
-     * gion}/backupPlans/{backupplanId}" or "//compute.googleapis.com/projects/{pr
-     * oject}/locations/{region}/resourcePolicies/{resourcePolicyId}".
-     *
-     * @var string
-     */
-    public $backupConfigSource;
-    /**
-     * Output only. The display name of the backup config source resource.
-     *
-     * @var string
-     */
-    public $backupConfigSourceDisplayName;
-    protected $backupDrPlanConfigType = BackupDrPlanConfig::class;
-    protected $backupDrPlanConfigDataType = '';
-    protected $backupDrTemplateConfigType = BackupDrTemplateConfig::class;
-    protected $backupDrTemplateConfigDataType = '';
-    protected $backupLocationsType = BackupLocation::class;
-    protected $backupLocationsDataType = 'array';
-    /**
-     * Output only. The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the backup vault that will store
-     * the backups generated through this backup configuration. Example: "//backup
-     * dr.googleapis.com/v1/projects/{project}/locations/{region}/backupVaults/{ba
-     * ckupvaultId}"
-     *
-     * @var string
-     */
-    public $backupVault;
-    /**
-     * Output only. Timestamp of the latest successful backup created via this
-     * backup configuration.
-     *
-     * @var string
-     */
-    public $latestSuccessfulBackupTime;
-    protected $pitrSettingsType = PitrSettings::class;
-    protected $pitrSettingsDataType = '';
-    /**
-     * Output only. The state of the backup config resource.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The type of the backup config resource.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the resource that is applicable for
-     * the backup configuration. Example: "//compute.googleapis.com/projects/{proj
-     * ect}/zones/{zone}/instances/{instance}"
-     *
-     * @param string $applicableResource
-     */
-    public function setApplicableResource($applicableResource)
+namespace Google\Service\Backupdr {
+    class BackupConfigDetails extends \Google\Collection
     {
+        /**
+         * Backup config state not set.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The config is in an active state protecting the resource
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The config is currently not protecting the resource. Either because it is
+         * disabled or the owning project has been deleted without cleanup of the
+         * actual resource.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        /**
+         * The config still exists but because of some error state it is not
+         * protecting the resource. Like the source project is deleted. For eg.
+         * PlanAssociation, BackupPlan is deleted.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Backup config type is unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Backup config is Cloud SQL instance's automated backup config.
+         */
+        public const TYPE_CLOUD_SQL_INSTANCE_BACKUP_CONFIG = 'CLOUD_SQL_INSTANCE_BACKUP_CONFIG';
+        /**
+         * Backup config is Compute Engine Resource Policy.
+         */
+        public const TYPE_COMPUTE_ENGINE_RESOURCE_POLICY = 'COMPUTE_ENGINE_RESOURCE_POLICY';
+        /**
+         * Backup config is Backup and DR's Backup Plan.
+         */
+        public const TYPE_BACKUPDR_BACKUP_PLAN = 'BACKUPDR_BACKUP_PLAN';
+        /**
+         * Backup config is Backup and DR's Template.
+         */
+        public const TYPE_BACKUPDR_TEMPLATE = 'BACKUPDR_TEMPLATE';
+        protected $collection_key = 'backupLocations';
+        /**
+         * Output only. The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the resource that is applicable for
+         * the backup configuration. Example: "//compute.googleapis.com/projects/{proj
+         * ect}/zones/{zone}/instances/{instance}"
+         *
+         * @var string
+         */
+        public $applicableResource;
+        /**
+         * Output only. The full resource name of the backup config source resource.
+         * For example, "//backupdr.googleapis.com/v1/projects/{project}/locations/{re
+         * gion}/backupPlans/{backupplanId}" or "//compute.googleapis.com/projects/{pr
+         * oject}/locations/{region}/resourcePolicies/{resourcePolicyId}".
+         *
+         * @var string
+         */
+        public $backupConfigSource;
+        /**
+         * Output only. The display name of the backup config source resource.
+         *
+         * @var string
+         */
+        public $backupConfigSourceDisplayName;
+        protected $backupDrPlanConfigType = BackupDrPlanConfig::class;
+        protected $backupDrPlanConfigDataType = '';
+        protected $backupDrTemplateConfigType = BackupDrTemplateConfig::class;
+        protected $backupDrTemplateConfigDataType = '';
+        protected $backupLocationsType = BackupLocation::class;
+        protected $backupLocationsDataType = 'array';
+        /**
+         * Output only. The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the backup vault that will store
+         * the backups generated through this backup configuration. Example: "//backup
+         * dr.googleapis.com/v1/projects/{project}/locations/{region}/backupVaults/{ba
+         * ckupvaultId}"
+         *
+         * @var string
+         */
+        public $backupVault;
+        /**
+         * Output only. Timestamp of the latest successful backup created via this
+         * backup configuration.
+         *
+         * @var string
+         */
+        public $latestSuccessfulBackupTime;
+        protected $pitrSettingsType = PitrSettings::class;
+        protected $pitrSettingsDataType = '';
+        /**
+         * Output only. The state of the backup config resource.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The type of the backup config resource.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the resource that is applicable for
+         * the backup configuration. Example: "//compute.googleapis.com/projects/{proj
+         * ect}/zones/{zone}/instances/{instance}"
+         *
+         * @param string $applicableResource
+         */
+        public function setApplicableResource($applicableResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicableResource()
+        {
+        }
+        /**
+         * Output only. The full resource name of the backup config source resource.
+         * For example, "//backupdr.googleapis.com/v1/projects/{project}/locations/{re
+         * gion}/backupPlans/{backupplanId}" or "//compute.googleapis.com/projects/{pr
+         * oject}/locations/{region}/resourcePolicies/{resourcePolicyId}".
+         *
+         * @param string $backupConfigSource
+         */
+        public function setBackupConfigSource($backupConfigSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupConfigSource()
+        {
+        }
+        /**
+         * Output only. The display name of the backup config source resource.
+         *
+         * @param string $backupConfigSourceDisplayName
+         */
+        public function setBackupConfigSourceDisplayName($backupConfigSourceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupConfigSourceDisplayName()
+        {
+        }
+        /**
+         * Backup and DR's Backup Plan specific data.
+         *
+         * @param BackupDrPlanConfig $backupDrPlanConfig
+         */
+        public function setBackupDrPlanConfig(BackupDrPlanConfig $backupDrPlanConfig)
+        {
+        }
+        /**
+         * @return BackupDrPlanConfig
+         */
+        public function getBackupDrPlanConfig()
+        {
+        }
+        /**
+         * Backup and DR's Template specific data.
+         *
+         * @param BackupDrTemplateConfig $backupDrTemplateConfig
+         */
+        public function setBackupDrTemplateConfig(BackupDrTemplateConfig $backupDrTemplateConfig)
+        {
+        }
+        /**
+         * @return BackupDrTemplateConfig
+         */
+        public function getBackupDrTemplateConfig()
+        {
+        }
+        /**
+         * The locations where the backups are to be stored.
+         *
+         * @param BackupLocation[] $backupLocations
+         */
+        public function setBackupLocations($backupLocations)
+        {
+        }
+        /**
+         * @return BackupLocation[]
+         */
+        public function getBackupLocations()
+        {
+        }
+        /**
+         * Output only. The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the backup vault that will store
+         * the backups generated through this backup configuration. Example: "//backup
+         * dr.googleapis.com/v1/projects/{project}/locations/{region}/backupVaults/{ba
+         * ckupvaultId}"
+         *
+         * @param string $backupVault
+         */
+        public function setBackupVault($backupVault)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupVault()
+        {
+        }
+        /**
+         * Output only. Timestamp of the latest successful backup created via this
+         * backup configuration.
+         *
+         * @param string $latestSuccessfulBackupTime
+         */
+        public function setLatestSuccessfulBackupTime($latestSuccessfulBackupTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestSuccessfulBackupTime()
+        {
+        }
+        /**
+         * Output only. Point in time recovery settings of the backup configuration
+         * resource.
+         *
+         * @param PitrSettings $pitrSettings
+         */
+        public function setPitrSettings(PitrSettings $pitrSettings)
+        {
+        }
+        /**
+         * @return PitrSettings
+         */
+        public function getPitrSettings()
+        {
+        }
+        /**
+         * Output only. The state of the backup config resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, INACTIVE, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The type of the backup config resource.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, CLOUD_SQL_INSTANCE_BACKUP_CONFIG,
+         * COMPUTE_ENGINE_RESOURCE_POLICY, BACKUPDR_BACKUP_PLAN, BACKUPDR_TEMPLATE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\BackupConfigDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicableResource()
-    {
-    }
-    /**
-     * Output only. The full resource name of the backup config source resource.
-     * For example, "//backupdr.googleapis.com/v1/projects/{project}/locations/{re
-     * gion}/backupPlans/{backupplanId}" or "//compute.googleapis.com/projects/{pr
-     * oject}/locations/{region}/resourcePolicies/{resourcePolicyId}".
-     *
-     * @param string $backupConfigSource
-     */
-    public function setBackupConfigSource($backupConfigSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupConfigSource()
-    {
-    }
-    /**
-     * Output only. The display name of the backup config source resource.
-     *
-     * @param string $backupConfigSourceDisplayName
-     */
-    public function setBackupConfigSourceDisplayName($backupConfigSourceDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupConfigSourceDisplayName()
-    {
-    }
-    /**
-     * Backup and DR's Backup Plan specific data.
-     *
-     * @param BackupDrPlanConfig $backupDrPlanConfig
-     */
-    public function setBackupDrPlanConfig(BackupDrPlanConfig $backupDrPlanConfig)
-    {
-    }
-    /**
-     * @return BackupDrPlanConfig
-     */
-    public function getBackupDrPlanConfig()
-    {
-    }
-    /**
-     * Backup and DR's Template specific data.
-     *
-     * @param BackupDrTemplateConfig $backupDrTemplateConfig
-     */
-    public function setBackupDrTemplateConfig(BackupDrTemplateConfig $backupDrTemplateConfig)
-    {
-    }
-    /**
-     * @return BackupDrTemplateConfig
-     */
-    public function getBackupDrTemplateConfig()
-    {
-    }
-    /**
-     * The locations where the backups are to be stored.
-     *
-     * @param BackupLocation[] $backupLocations
-     */
-    public function setBackupLocations($backupLocations)
-    {
-    }
-    /**
-     * @return BackupLocation[]
-     */
-    public function getBackupLocations()
-    {
-    }
-    /**
-     * Output only. The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the backup vault that will store
-     * the backups generated through this backup configuration. Example: "//backup
-     * dr.googleapis.com/v1/projects/{project}/locations/{region}/backupVaults/{ba
-     * ckupvaultId}"
-     *
-     * @param string $backupVault
-     */
-    public function setBackupVault($backupVault)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupVault()
-    {
-    }
-    /**
-     * Output only. Timestamp of the latest successful backup created via this
-     * backup configuration.
-     *
-     * @param string $latestSuccessfulBackupTime
-     */
-    public function setLatestSuccessfulBackupTime($latestSuccessfulBackupTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestSuccessfulBackupTime()
-    {
-    }
-    /**
-     * Output only. Point in time recovery settings of the backup configuration
-     * resource.
-     *
-     * @param PitrSettings $pitrSettings
-     */
-    public function setPitrSettings(PitrSettings $pitrSettings)
-    {
-    }
-    /**
-     * @return PitrSettings
-     */
-    public function getPitrSettings()
-    {
-    }
-    /**
-     * Output only. The state of the backup config resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, INACTIVE, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The type of the backup config resource.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, CLOUD_SQL_INSTANCE_BACKUP_CONFIG,
-     * COMPUTE_ENGINE_RESOURCE_POLICY, BACKUPDR_BACKUP_PLAN, BACKUPDR_TEMPLATE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Backupdr_BackupConfigDetails extends \Google\Service\Backupdr\BackupConfigDetails
     {
     }
 }

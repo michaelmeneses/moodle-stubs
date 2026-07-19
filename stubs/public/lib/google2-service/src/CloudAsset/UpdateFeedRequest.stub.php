@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class UpdateFeedRequest extends \Google\Model
-{
-    protected $feedType = Feed::class;
-    protected $feedDataType = '';
-    /**
-     * Required. Only updates the `feed` fields indicated by this mask. The field
-     * mask must not be empty, and it must not contain fields that are immutable
-     * or only set by the server.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The new values of feed details. It must match an existing feed
-     * and the field `name` must be in the format of:
-     * projects/project_number/feeds/feed_id or
-     * folders/folder_number/feeds/feed_id or
-     * organizations/organization_number/feeds/feed_id.
-     *
-     * @param Feed $feed
-     */
-    public function setFeed(Feed $feed)
+namespace Google\Service\CloudAsset {
+    class UpdateFeedRequest extends \Google\Model
     {
+        protected $feedType = Feed::class;
+        protected $feedDataType = '';
+        /**
+         * Required. Only updates the `feed` fields indicated by this mask. The field
+         * mask must not be empty, and it must not contain fields that are immutable
+         * or only set by the server.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The new values of feed details. It must match an existing feed
+         * and the field `name` must be in the format of:
+         * projects/project_number/feeds/feed_id or
+         * folders/folder_number/feeds/feed_id or
+         * organizations/organization_number/feeds/feed_id.
+         *
+         * @param Feed $feed
+         */
+        public function setFeed(Feed $feed)
+        {
+        }
+        /**
+         * @return Feed
+         */
+        public function getFeed()
+        {
+        }
+        /**
+         * Required. Only updates the `feed` fields indicated by this mask. The field
+         * mask must not be empty, and it must not contain fields that are immutable
+         * or only set by the server.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feed
+     * Runtime class alias of \Google\Service\CloudAsset\UpdateFeedRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeed()
-    {
-    }
-    /**
-     * Required. Only updates the `feed` fields indicated by this mask. The field
-     * mask must not be empty, and it must not contain fields that are immutable
-     * or only set by the server.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudAsset_UpdateFeedRequest extends \Google\Service\CloudAsset\UpdateFeedRequest
     {
     }
 }

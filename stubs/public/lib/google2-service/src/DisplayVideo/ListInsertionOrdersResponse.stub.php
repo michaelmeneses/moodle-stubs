@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListInsertionOrdersResponse extends \Google\Collection
-{
-    protected $collection_key = 'insertionOrders';
-    protected $insertionOrdersType = InsertionOrder::class;
-    protected $insertionOrdersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListInsertionOrders` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of insertion orders. This list will be absent if empty.
-     *
-     * @param InsertionOrder[] $insertionOrders
-     */
-    public function setInsertionOrders($insertionOrders)
+namespace Google\Service\DisplayVideo {
+    class ListInsertionOrdersResponse extends \Google\Collection
     {
+        protected $collection_key = 'insertionOrders';
+        protected $insertionOrdersType = InsertionOrder::class;
+        protected $insertionOrdersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListInsertionOrders` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of insertion orders. This list will be absent if empty.
+         *
+         * @param InsertionOrder[] $insertionOrders
+         */
+        public function setInsertionOrders($insertionOrders)
+        {
+        }
+        /**
+         * @return InsertionOrder[]
+         */
+        public function getInsertionOrders()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListInsertionOrders` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InsertionOrder[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListInsertionOrdersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsertionOrders()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListInsertionOrders` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListInsertionOrdersResponse extends \Google\Service\DisplayVideo\ListInsertionOrdersResponse
     {
     }
 }

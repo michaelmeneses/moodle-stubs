@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonImageDimension extends \Google\Model
-{
-    /**
-     * Height of the image.
-     *
-     * @var string
-     */
-    public $heightPixels;
-    /**
-     * A URL that returns the image with this height and width.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Width of the image.
-     *
-     * @var string
-     */
-    public $widthPixels;
-    /**
-     * Height of the image.
-     *
-     * @param string $heightPixels
-     */
-    public function setHeightPixels($heightPixels)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonImageDimension extends \Google\Model
     {
+        /**
+         * Height of the image.
+         *
+         * @var string
+         */
+        public $heightPixels;
+        /**
+         * A URL that returns the image with this height and width.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Width of the image.
+         *
+         * @var string
+         */
+        public $widthPixels;
+        /**
+         * Height of the image.
+         *
+         * @param string $heightPixels
+         */
+        public function setHeightPixels($heightPixels)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeightPixels()
+        {
+        }
+        /**
+         * A URL that returns the image with this height and width.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * Width of the image.
+         *
+         * @param string $widthPixels
+         */
+        public function setWidthPixels($widthPixels)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidthPixels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonImageDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeightPixels()
-    {
-    }
-    /**
-     * A URL that returns the image with this height and width.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * Width of the image.
-     *
-     * @param string $widthPixels
-     */
-    public function setWidthPixels($widthPixels)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidthPixels()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonImageDimension extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonImageDimension
     {
     }
 }

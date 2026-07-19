@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class AchievementConfigurationListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = AchievementConfiguration::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#achievementConfigurationListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The achievement configurations.
-     *
-     * @param AchievementConfiguration[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\GamesConfiguration {
+    class AchievementConfigurationListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = AchievementConfiguration::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#achievementConfigurationListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The achievement configurations.
+         *
+         * @param AchievementConfiguration[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AchievementConfiguration[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#achievementConfigurationListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AchievementConfiguration[]
+     * Runtime class alias of \Google\Service\GamesConfiguration\AchievementConfigurationListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#achievementConfigurationListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GamesConfiguration_AchievementConfigurationListResponse extends \Google\Service\GamesConfiguration\AchievementConfigurationListResponse
     {
     }
 }

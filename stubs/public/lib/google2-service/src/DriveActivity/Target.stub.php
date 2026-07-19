@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Target extends \Google\Model
-{
-    protected $driveType = Drive::class;
-    protected $driveDataType = '';
-    protected $driveItemType = DriveItem::class;
-    protected $driveItemDataType = '';
-    protected $fileCommentType = FileComment::class;
-    protected $fileCommentDataType = '';
-    protected $teamDriveType = TeamDrive::class;
-    protected $teamDriveDataType = '';
-    /**
-     * The target is a shared drive.
-     *
-     * @param Drive $drive
-     */
-    public function setDrive(Drive $drive)
+namespace Google\Service\DriveActivity {
+    class Target extends \Google\Model
     {
+        protected $driveType = Drive::class;
+        protected $driveDataType = '';
+        protected $driveItemType = DriveItem::class;
+        protected $driveItemDataType = '';
+        protected $fileCommentType = FileComment::class;
+        protected $fileCommentDataType = '';
+        protected $teamDriveType = TeamDrive::class;
+        protected $teamDriveDataType = '';
+        /**
+         * The target is a shared drive.
+         *
+         * @param Drive $drive
+         */
+        public function setDrive(Drive $drive)
+        {
+        }
+        /**
+         * @return Drive
+         */
+        public function getDrive()
+        {
+        }
+        /**
+         * The target is a Drive item.
+         *
+         * @param DriveItem $driveItem
+         */
+        public function setDriveItem(DriveItem $driveItem)
+        {
+        }
+        /**
+         * @return DriveItem
+         */
+        public function getDriveItem()
+        {
+        }
+        /**
+         * The target is a comment on a Drive file.
+         *
+         * @param FileComment $fileComment
+         */
+        public function setFileComment(FileComment $fileComment)
+        {
+        }
+        /**
+         * @return FileComment
+         */
+        public function getFileComment()
+        {
+        }
+        /**
+         * This field is deprecated; please use the `drive` field instead.
+         *
+         * @deprecated
+         * @param TeamDrive $teamDrive
+         */
+        public function setTeamDrive(TeamDrive $teamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return TeamDrive
+         */
+        public function getTeamDrive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Drive
+     * Runtime class alias of \Google\Service\DriveActivity\Target registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrive()
-    {
-    }
-    /**
-     * The target is a Drive item.
-     *
-     * @param DriveItem $driveItem
-     */
-    public function setDriveItem(DriveItem $driveItem)
-    {
-    }
-    /**
-     * @return DriveItem
-     */
-    public function getDriveItem()
-    {
-    }
-    /**
-     * The target is a comment on a Drive file.
-     *
-     * @param FileComment $fileComment
-     */
-    public function setFileComment(FileComment $fileComment)
-    {
-    }
-    /**
-     * @return FileComment
-     */
-    public function getFileComment()
-    {
-    }
-    /**
-     * This field is deprecated; please use the `drive` field instead.
-     *
-     * @deprecated
-     * @param TeamDrive $teamDrive
-     */
-    public function setTeamDrive(TeamDrive $teamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return TeamDrive
-     */
-    public function getTeamDrive()
+    class Google_Service_DriveActivity_Target extends \Google\Service\DriveActivity\Target
     {
     }
 }

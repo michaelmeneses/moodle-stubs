@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetVpnGatewaysScopedList extends \Google\Collection
-{
-    protected $collection_key = 'targetVpnGateways';
-    protected $targetVpnGatewaysType = TargetVpnGateway::class;
-    protected $targetVpnGatewaysDataType = 'array';
-    protected $warningType = TargetVpnGatewaysScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of target VPN gateways contained in this scope.
-     *
-     * @param TargetVpnGateway[] $targetVpnGateways
-     */
-    public function setTargetVpnGateways($targetVpnGateways)
+namespace Google\Service\Compute {
+    class TargetVpnGatewaysScopedList extends \Google\Collection
     {
+        protected $collection_key = 'targetVpnGateways';
+        protected $targetVpnGatewaysType = TargetVpnGateway::class;
+        protected $targetVpnGatewaysDataType = 'array';
+        protected $warningType = TargetVpnGatewaysScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of target VPN gateways contained in this scope.
+         *
+         * @param TargetVpnGateway[] $targetVpnGateways
+         */
+        public function setTargetVpnGateways($targetVpnGateways)
+        {
+        }
+        /**
+         * @return TargetVpnGateway[]
+         */
+        public function getTargetVpnGateways()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of addresses
+         * when the list is empty.
+         *
+         * @param TargetVpnGatewaysScopedListWarning $warning
+         */
+        public function setWarning(TargetVpnGatewaysScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return TargetVpnGatewaysScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetVpnGateway[]
+     * Runtime class alias of \Google\Service\Compute\TargetVpnGatewaysScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetVpnGateways()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of addresses
-     * when the list is empty.
-     *
-     * @param TargetVpnGatewaysScopedListWarning $warning
-     */
-    public function setWarning(TargetVpnGatewaysScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return TargetVpnGatewaysScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_TargetVpnGatewaysScopedList extends \Google\Service\Compute\TargetVpnGatewaysScopedList
     {
     }
 }

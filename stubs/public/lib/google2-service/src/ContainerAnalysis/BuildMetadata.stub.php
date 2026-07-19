@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class BuildMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $finishedOn;
-    /**
-     * @var string
-     */
-    public $invocationId;
-    /**
-     * @var string
-     */
-    public $startedOn;
-    /**
-     * @param string $finishedOn
-     */
-    public function setFinishedOn($finishedOn)
+namespace Google\Service\ContainerAnalysis {
+    class BuildMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $finishedOn;
+        /**
+         * @var string
+         */
+        public $invocationId;
+        /**
+         * @var string
+         */
+        public $startedOn;
+        /**
+         * @param string $finishedOn
+         */
+        public function setFinishedOn($finishedOn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishedOn()
+        {
+        }
+        /**
+         * @param string $invocationId
+         */
+        public function setInvocationId($invocationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvocationId()
+        {
+        }
+        /**
+         * @param string $startedOn
+         */
+        public function setStartedOn($startedOn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartedOn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\BuildMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinishedOn()
-    {
-    }
-    /**
-     * @param string $invocationId
-     */
-    public function setInvocationId($invocationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvocationId()
-    {
-    }
-    /**
-     * @param string $startedOn
-     */
-    public function setStartedOn($startedOn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartedOn()
+    class Google_Service_ContainerAnalysis_BuildMetadata extends \Google\Service\ContainerAnalysis\BuildMetadata
     {
     }
 }

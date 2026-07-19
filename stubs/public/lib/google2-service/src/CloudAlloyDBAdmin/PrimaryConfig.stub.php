@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class PrimaryConfig extends \Google\Collection
-{
-    protected $collection_key = 'secondaryClusterNames';
-    /**
-     * Output only. Names of the clusters that are replicating from this cluster.
-     *
-     * @var string[]
-     */
-    public $secondaryClusterNames;
-    /**
-     * Output only. Names of the clusters that are replicating from this cluster.
-     *
-     * @param string[] $secondaryClusterNames
-     */
-    public function setSecondaryClusterNames($secondaryClusterNames)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class PrimaryConfig extends \Google\Collection
     {
+        protected $collection_key = 'secondaryClusterNames';
+        /**
+         * Output only. Names of the clusters that are replicating from this cluster.
+         *
+         * @var string[]
+         */
+        public $secondaryClusterNames;
+        /**
+         * Output only. Names of the clusters that are replicating from this cluster.
+         *
+         * @param string[] $secondaryClusterNames
+         */
+        public function setSecondaryClusterNames($secondaryClusterNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecondaryClusterNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\PrimaryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecondaryClusterNames()
+    class Google_Service_CloudAlloyDBAdmin_PrimaryConfig extends \Google\Service\CloudAlloyDBAdmin\PrimaryConfig
     {
     }
 }

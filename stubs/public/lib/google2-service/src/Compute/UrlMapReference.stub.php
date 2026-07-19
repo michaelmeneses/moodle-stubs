@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class UrlMapReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $urlMap;
-    /**
-     * @param string $urlMap
-     */
-    public function setUrlMap($urlMap)
+namespace Google\Service\Compute {
+    class UrlMapReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $urlMap;
+        /**
+         * @param string $urlMap
+         */
+        public function setUrlMap($urlMap)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlMap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\UrlMapReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrlMap()
+    class Google_Service_Compute_UrlMapReference extends \Google\Service\Compute\UrlMapReference
     {
     }
 }

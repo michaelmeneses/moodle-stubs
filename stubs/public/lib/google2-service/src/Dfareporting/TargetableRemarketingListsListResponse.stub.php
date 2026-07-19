@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TargetableRemarketingListsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'targetableRemarketingLists';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#targetableRemarketingListsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $targetableRemarketingListsType = TargetableRemarketingList::class;
-    protected $targetableRemarketingListsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#targetableRemarketingListsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class TargetableRemarketingListsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'targetableRemarketingLists';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#targetableRemarketingListsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $targetableRemarketingListsType = TargetableRemarketingList::class;
+        protected $targetableRemarketingListsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#targetableRemarketingListsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Targetable remarketing list collection.
+         *
+         * @param TargetableRemarketingList[] $targetableRemarketingLists
+         */
+        public function setTargetableRemarketingLists($targetableRemarketingLists)
+        {
+        }
+        /**
+         * @return TargetableRemarketingList[]
+         */
+        public function getTargetableRemarketingLists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TargetableRemarketingListsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Targetable remarketing list collection.
-     *
-     * @param TargetableRemarketingList[] $targetableRemarketingLists
-     */
-    public function setTargetableRemarketingLists($targetableRemarketingLists)
-    {
-    }
-    /**
-     * @return TargetableRemarketingList[]
-     */
-    public function getTargetableRemarketingLists()
+    class Google_Service_Dfareporting_TargetableRemarketingListsListResponse extends \Google\Service\Dfareporting\TargetableRemarketingListsListResponse
     {
     }
 }

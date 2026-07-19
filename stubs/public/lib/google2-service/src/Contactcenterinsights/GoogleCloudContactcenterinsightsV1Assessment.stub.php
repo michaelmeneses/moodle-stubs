@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1Assessment extends \Google\Model
-{
-    /**
-     * The state is unspecified. This value should not be used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The default state of all new assessments.
-     */
-    public const STATE_DRAFT = 'DRAFT';
-    /**
-     * The assessment has been published.
-     */
-    public const STATE_PUBLISHED = 'PUBLISHED';
-    /**
-     * The assessment has been appealed.
-     */
-    public const STATE_APPEALED = 'APPEALED';
-    /**
-     * The assessment has been finalized.
-     */
-    public const STATE_FINALIZED = 'FINALIZED';
-    protected $agentInfoType = GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo::class;
-    protected $agentInfoDataType = '';
-    /**
-     * Output only. The time at which the assessment was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The resource name of the assessment. Format: projects/{project}
-     * /locations/{location}/conversations/{conversation}/assessments/{assessment}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The state of the assessment.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time at which the assessment was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Information about the agent the assessment is for.
-     *
-     * @param GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo $agentInfo
-     */
-    public function setAgentInfo(GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo $agentInfo)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1Assessment extends \Google\Model
     {
+        /**
+         * The state is unspecified. This value should not be used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The default state of all new assessments.
+         */
+        public const STATE_DRAFT = 'DRAFT';
+        /**
+         * The assessment has been published.
+         */
+        public const STATE_PUBLISHED = 'PUBLISHED';
+        /**
+         * The assessment has been appealed.
+         */
+        public const STATE_APPEALED = 'APPEALED';
+        /**
+         * The assessment has been finalized.
+         */
+        public const STATE_FINALIZED = 'FINALIZED';
+        protected $agentInfoType = GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo::class;
+        protected $agentInfoDataType = '';
+        /**
+         * Output only. The time at which the assessment was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The resource name of the assessment. Format: projects/{project}
+         * /locations/{location}/conversations/{conversation}/assessments/{assessment}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The state of the assessment.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time at which the assessment was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Information about the agent the assessment is for.
+         *
+         * @param GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo $agentInfo
+         */
+        public function setAgentInfo(GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo $agentInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo
+         */
+        public function getAgentInfo()
+        {
+        }
+        /**
+         * Output only. The time at which the assessment was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The resource name of the assessment. Format: projects/{project}
+         * /locations/{location}/conversations/{conversation}/assessments/{assessment}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The state of the assessment.
+         *
+         * Accepted values: STATE_UNSPECIFIED, DRAFT, PUBLISHED, APPEALED, FINALIZED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time at which the assessment was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1ConversationQualityMetadataAgentInfo
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Assessment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentInfo()
-    {
-    }
-    /**
-     * Output only. The time at which the assessment was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The resource name of the assessment. Format: projects/{project}
-     * /locations/{location}/conversations/{conversation}/assessments/{assessment}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The state of the assessment.
-     *
-     * Accepted values: STATE_UNSPECIFIED, DRAFT, PUBLISHED, APPEALED, FINALIZED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time at which the assessment was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1Assessment extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Assessment
     {
     }
 }

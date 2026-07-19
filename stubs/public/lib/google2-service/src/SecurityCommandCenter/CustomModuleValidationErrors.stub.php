@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CustomModuleValidationErrors extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = CustomModuleValidationError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The list of errors.
-     *
-     * @param CustomModuleValidationError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\SecurityCommandCenter {
+    class CustomModuleValidationErrors extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = CustomModuleValidationError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The list of errors.
+         *
+         * @param CustomModuleValidationError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return CustomModuleValidationError[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomModuleValidationError[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CustomModuleValidationErrors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_SecurityCommandCenter_CustomModuleValidationErrors extends \Google\Service\SecurityCommandCenter\CustomModuleValidationErrors
     {
     }
 }

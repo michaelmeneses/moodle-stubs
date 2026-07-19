@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1ProcessLinkInfo extends \Google\Model
-{
-    /**
-     * The end of the last event establishing this link-process tuple.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The name of the link in the format of
-     * `projects/{project}/locations/{location}/links/{link}`.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * The start of the first event establishing this link-process tuple.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The end of the last event establishing this link-process tuple.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1ProcessLinkInfo extends \Google\Model
     {
+        /**
+         * The end of the last event establishing this link-process tuple.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The name of the link in the format of
+         * `projects/{project}/locations/{location}/links/{link}`.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * The start of the first event establishing this link-process tuple.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The end of the last event establishing this link-process tuple.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The name of the link in the format of
+         * `projects/{project}/locations/{location}/links/{link}`.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * The start of the first event establishing this link-process tuple.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessLinkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The name of the link in the format of
-     * `projects/{project}/locations/{location}/links/{link}`.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * The start of the first event establishing this link-process tuple.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1ProcessLinkInfo extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessLinkInfo
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ImageFreshnessCheck extends \Google\Model
-{
-    /**
-     * Required. The max number of days that is allowed since the image was
-     * uploaded. Must be greater than zero.
-     *
-     * @var int
-     */
-    public $maxUploadAgeDays;
-    /**
-     * Required. The max number of days that is allowed since the image was
-     * uploaded. Must be greater than zero.
-     *
-     * @param int $maxUploadAgeDays
-     */
-    public function setMaxUploadAgeDays($maxUploadAgeDays)
+namespace Google\Service\BinaryAuthorization {
+    class ImageFreshnessCheck extends \Google\Model
     {
+        /**
+         * Required. The max number of days that is allowed since the image was
+         * uploaded. Must be greater than zero.
+         *
+         * @var int
+         */
+        public $maxUploadAgeDays;
+        /**
+         * Required. The max number of days that is allowed since the image was
+         * uploaded. Must be greater than zero.
+         *
+         * @param int $maxUploadAgeDays
+         */
+        public function setMaxUploadAgeDays($maxUploadAgeDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxUploadAgeDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ImageFreshnessCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxUploadAgeDays()
+    class Google_Service_BinaryAuthorization_ImageFreshnessCheck extends \Google\Service\BinaryAuthorization\ImageFreshnessCheck
     {
     }
 }

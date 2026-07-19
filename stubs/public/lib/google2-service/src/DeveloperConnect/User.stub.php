@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class User extends \Google\Model
-{
-    /**
-     * Output only. The timestamp when the user was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Developer Connect automatically converts user identity to some
-     * human readable description, e.g., email address.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The timestamp when the token was last requested.
-     *
-     * @var string
-     */
-    public $lastTokenRequestTime;
-    /**
-     * Identifier. Resource name of the user, in the format
-     * `projects/locations/accountConnectors/users`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp when the user was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DeveloperConnect {
+    class User extends \Google\Model
     {
+        /**
+         * Output only. The timestamp when the user was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Developer Connect automatically converts user identity to some
+         * human readable description, e.g., email address.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The timestamp when the token was last requested.
+         *
+         * @var string
+         */
+        public $lastTokenRequestTime;
+        /**
+         * Identifier. Resource name of the user, in the format
+         * `projects/locations/accountConnectors/users`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp when the user was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Developer Connect automatically converts user identity to some
+         * human readable description, e.g., email address.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The timestamp when the token was last requested.
+         *
+         * @param string $lastTokenRequestTime
+         */
+        public function setLastTokenRequestTime($lastTokenRequestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTokenRequestTime()
+        {
+        }
+        /**
+         * Identifier. Resource name of the user, in the format
+         * `projects/locations/accountConnectors/users`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Developer Connect automatically converts user identity to some
-     * human readable description, e.g., email address.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The timestamp when the token was last requested.
-     *
-     * @param string $lastTokenRequestTime
-     */
-    public function setLastTokenRequestTime($lastTokenRequestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTokenRequestTime()
-    {
-    }
-    /**
-     * Identifier. Resource name of the user, in the format
-     * `projects/locations/accountConnectors/users`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DeveloperConnect_User extends \Google\Service\DeveloperConnect\User
     {
     }
 }

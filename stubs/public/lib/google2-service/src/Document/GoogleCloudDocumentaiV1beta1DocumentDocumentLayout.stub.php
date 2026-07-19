@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentDocumentLayout extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock::class;
-    protected $blocksDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentDocumentLayout extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock::class;
+        protected $blocksDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function getBlocks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentDocumentLayoutDocumentLayoutBlock[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentDocumentLayout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentDocumentLayout extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentDocumentLayout
     {
     }
 }

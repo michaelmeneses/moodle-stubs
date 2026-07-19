@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AudienceSegment extends \Google\Model
-{
-    /**
-     * Weight allocated to this segment. The weight assigned will be understood in
-     * proportion to the weights assigned to other segments in the same segment
-     * group. Acceptable values are 1 to 1000, inclusive.
-     *
-     * @var int
-     */
-    public $allocation;
-    /**
-     * ID of this audience segment. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of this audience segment. This is a required field and must be less
-     * than 65 characters long.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Weight allocated to this segment. The weight assigned will be understood in
-     * proportion to the weights assigned to other segments in the same segment
-     * group. Acceptable values are 1 to 1000, inclusive.
-     *
-     * @param int $allocation
-     */
-    public function setAllocation($allocation)
+namespace Google\Service\Dfareporting {
+    class AudienceSegment extends \Google\Model
     {
+        /**
+         * Weight allocated to this segment. The weight assigned will be understood in
+         * proportion to the weights assigned to other segments in the same segment
+         * group. Acceptable values are 1 to 1000, inclusive.
+         *
+         * @var int
+         */
+        public $allocation;
+        /**
+         * ID of this audience segment. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of this audience segment. This is a required field and must be less
+         * than 65 characters long.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Weight allocated to this segment. The weight assigned will be understood in
+         * proportion to the weights assigned to other segments in the same segment
+         * group. Acceptable values are 1 to 1000, inclusive.
+         *
+         * @param int $allocation
+         */
+        public function setAllocation($allocation)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllocation()
+        {
+        }
+        /**
+         * ID of this audience segment. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of this audience segment. This is a required field and must be less
+         * than 65 characters long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dfareporting\AudienceSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocation()
-    {
-    }
-    /**
-     * ID of this audience segment. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Name of this audience segment. This is a required field and must be less
-     * than 65 characters long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_AudienceSegment extends \Google\Service\Dfareporting\AudienceSegment
     {
     }
 }

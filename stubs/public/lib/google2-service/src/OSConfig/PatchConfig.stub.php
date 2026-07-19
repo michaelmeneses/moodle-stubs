@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchConfig extends \Google\Model
-{
-    protected $aptType = AptSettings::class;
-    protected $aptDataType = '';
-    protected $gooType = GooSettings::class;
-    protected $gooDataType = '';
-    /**
-     * @var bool
-     */
-    public $migInstancesAllowed;
-    protected $postStepType = ExecStep::class;
-    protected $postStepDataType = '';
-    protected $preStepType = ExecStep::class;
-    protected $preStepDataType = '';
-    /**
-     * @var string
-     */
-    public $rebootConfig;
-    protected $windowsUpdateType = WindowsUpdateSettings::class;
-    protected $windowsUpdateDataType = '';
-    protected $yumType = YumSettings::class;
-    protected $yumDataType = '';
-    protected $zypperType = ZypperSettings::class;
-    protected $zypperDataType = '';
-    /**
-     * @param AptSettings
-     */
-    public function setApt(AptSettings $apt)
+namespace Google\Service\OSConfig {
+    class PatchConfig extends \Google\Model
     {
+        protected $aptType = AptSettings::class;
+        protected $aptDataType = '';
+        protected $gooType = GooSettings::class;
+        protected $gooDataType = '';
+        /**
+         * @var bool
+         */
+        public $migInstancesAllowed;
+        protected $postStepType = ExecStep::class;
+        protected $postStepDataType = '';
+        protected $preStepType = ExecStep::class;
+        protected $preStepDataType = '';
+        /**
+         * @var string
+         */
+        public $rebootConfig;
+        protected $windowsUpdateType = WindowsUpdateSettings::class;
+        protected $windowsUpdateDataType = '';
+        protected $yumType = YumSettings::class;
+        protected $yumDataType = '';
+        protected $zypperType = ZypperSettings::class;
+        protected $zypperDataType = '';
+        /**
+         * @param AptSettings
+         */
+        public function setApt(AptSettings $apt)
+        {
+        }
+        /**
+         * @return AptSettings
+         */
+        public function getApt()
+        {
+        }
+        /**
+         * @param GooSettings
+         */
+        public function setGoo(GooSettings $goo)
+        {
+        }
+        /**
+         * @return GooSettings
+         */
+        public function getGoo()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMigInstancesAllowed($migInstancesAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMigInstancesAllowed()
+        {
+        }
+        /**
+         * @param ExecStep
+         */
+        public function setPostStep(ExecStep $postStep)
+        {
+        }
+        /**
+         * @return ExecStep
+         */
+        public function getPostStep()
+        {
+        }
+        /**
+         * @param ExecStep
+         */
+        public function setPreStep(ExecStep $preStep)
+        {
+        }
+        /**
+         * @return ExecStep
+         */
+        public function getPreStep()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRebootConfig($rebootConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRebootConfig()
+        {
+        }
+        /**
+         * @param WindowsUpdateSettings
+         */
+        public function setWindowsUpdate(WindowsUpdateSettings $windowsUpdate)
+        {
+        }
+        /**
+         * @return WindowsUpdateSettings
+         */
+        public function getWindowsUpdate()
+        {
+        }
+        /**
+         * @param YumSettings
+         */
+        public function setYum(YumSettings $yum)
+        {
+        }
+        /**
+         * @return YumSettings
+         */
+        public function getYum()
+        {
+        }
+        /**
+         * @param ZypperSettings
+         */
+        public function setZypper(ZypperSettings $zypper)
+        {
+        }
+        /**
+         * @return ZypperSettings
+         */
+        public function getZypper()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AptSettings
+     * Runtime class alias of \Google\Service\OSConfig\PatchConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApt()
-    {
-    }
-    /**
-     * @param GooSettings
-     */
-    public function setGoo(GooSettings $goo)
-    {
-    }
-    /**
-     * @return GooSettings
-     */
-    public function getGoo()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMigInstancesAllowed($migInstancesAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMigInstancesAllowed()
-    {
-    }
-    /**
-     * @param ExecStep
-     */
-    public function setPostStep(ExecStep $postStep)
-    {
-    }
-    /**
-     * @return ExecStep
-     */
-    public function getPostStep()
-    {
-    }
-    /**
-     * @param ExecStep
-     */
-    public function setPreStep(ExecStep $preStep)
-    {
-    }
-    /**
-     * @return ExecStep
-     */
-    public function getPreStep()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRebootConfig($rebootConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRebootConfig()
-    {
-    }
-    /**
-     * @param WindowsUpdateSettings
-     */
-    public function setWindowsUpdate(WindowsUpdateSettings $windowsUpdate)
-    {
-    }
-    /**
-     * @return WindowsUpdateSettings
-     */
-    public function getWindowsUpdate()
-    {
-    }
-    /**
-     * @param YumSettings
-     */
-    public function setYum(YumSettings $yum)
-    {
-    }
-    /**
-     * @return YumSettings
-     */
-    public function getYum()
-    {
-    }
-    /**
-     * @param ZypperSettings
-     */
-    public function setZypper(ZypperSettings $zypper)
-    {
-    }
-    /**
-     * @return ZypperSettings
-     */
-    public function getZypper()
+    class Google_Service_OSConfig_PatchConfig extends \Google\Service\OSConfig\PatchConfig
     {
     }
 }

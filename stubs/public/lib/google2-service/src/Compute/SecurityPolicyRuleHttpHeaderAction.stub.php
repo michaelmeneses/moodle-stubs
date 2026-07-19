@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleHttpHeaderAction extends \Google\Collection
-{
-    protected $collection_key = 'requestHeadersToAdds';
-    protected $requestHeadersToAddsType = SecurityPolicyRuleHttpHeaderActionHttpHeaderOption::class;
-    protected $requestHeadersToAddsDataType = 'array';
-    /**
-     * The list of request headers to add or overwrite if they're already present.
-     *
-     * @param SecurityPolicyRuleHttpHeaderActionHttpHeaderOption[] $requestHeadersToAdds
-     */
-    public function setRequestHeadersToAdds($requestHeadersToAdds)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleHttpHeaderAction extends \Google\Collection
     {
+        protected $collection_key = 'requestHeadersToAdds';
+        protected $requestHeadersToAddsType = SecurityPolicyRuleHttpHeaderActionHttpHeaderOption::class;
+        protected $requestHeadersToAddsDataType = 'array';
+        /**
+         * The list of request headers to add or overwrite if they're already present.
+         *
+         * @param SecurityPolicyRuleHttpHeaderActionHttpHeaderOption[] $requestHeadersToAdds
+         */
+        public function setRequestHeadersToAdds($requestHeadersToAdds)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleHttpHeaderActionHttpHeaderOption[]
+         */
+        public function getRequestHeadersToAdds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPolicyRuleHttpHeaderActionHttpHeaderOption[]
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleHttpHeaderAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestHeadersToAdds()
+    class Google_Service_Compute_SecurityPolicyRuleHttpHeaderAction extends \Google\Service\Compute\SecurityPolicyRuleHttpHeaderAction
     {
     }
 }

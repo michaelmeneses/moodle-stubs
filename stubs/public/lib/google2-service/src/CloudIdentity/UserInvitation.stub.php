@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class UserInvitation extends \Google\Model
-{
-    /**
-     * The default value. This value is used if the state is omitted.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The `UserInvitation` has been created and is ready for sending as an email.
-     */
-    public const STATE_NOT_YET_SENT = 'NOT_YET_SENT';
-    /**
-     * The user has been invited by email.
-     */
-    public const STATE_INVITED = 'INVITED';
-    /**
-     * The user has accepted the invitation and is part of the organization.
-     */
-    public const STATE_ACCEPTED = 'ACCEPTED';
-    /**
-     * The user declined the invitation.
-     */
-    public const STATE_DECLINED = 'DECLINED';
-    /**
-     * Number of invitation emails sent to the user.
-     *
-     * @var string
-     */
-    public $mailsSentCount;
-    /**
-     * Shall be of the form
-     * `customers/{customer}/userinvitations/{user_email_address}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * State of the `UserInvitation`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Time when the `UserInvitation` was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Number of invitation emails sent to the user.
-     *
-     * @param string $mailsSentCount
-     */
-    public function setMailsSentCount($mailsSentCount)
+namespace Google\Service\CloudIdentity {
+    class UserInvitation extends \Google\Model
     {
+        /**
+         * The default value. This value is used if the state is omitted.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The `UserInvitation` has been created and is ready for sending as an email.
+         */
+        public const STATE_NOT_YET_SENT = 'NOT_YET_SENT';
+        /**
+         * The user has been invited by email.
+         */
+        public const STATE_INVITED = 'INVITED';
+        /**
+         * The user has accepted the invitation and is part of the organization.
+         */
+        public const STATE_ACCEPTED = 'ACCEPTED';
+        /**
+         * The user declined the invitation.
+         */
+        public const STATE_DECLINED = 'DECLINED';
+        /**
+         * Number of invitation emails sent to the user.
+         *
+         * @var string
+         */
+        public $mailsSentCount;
+        /**
+         * Shall be of the form
+         * `customers/{customer}/userinvitations/{user_email_address}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * State of the `UserInvitation`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Time when the `UserInvitation` was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Number of invitation emails sent to the user.
+         *
+         * @param string $mailsSentCount
+         */
+        public function setMailsSentCount($mailsSentCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMailsSentCount()
+        {
+        }
+        /**
+         * Shall be of the form
+         * `customers/{customer}/userinvitations/{user_email_address}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * State of the `UserInvitation`.
+         *
+         * Accepted values: STATE_UNSPECIFIED, NOT_YET_SENT, INVITED, ACCEPTED,
+         * DECLINED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Time when the `UserInvitation` was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\UserInvitation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMailsSentCount()
-    {
-    }
-    /**
-     * Shall be of the form
-     * `customers/{customer}/userinvitations/{user_email_address}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * State of the `UserInvitation`.
-     *
-     * Accepted values: STATE_UNSPECIFIED, NOT_YET_SENT, INVITED, ACCEPTED,
-     * DECLINED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Time when the `UserInvitation` was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudIdentity_UserInvitation extends \Google\Service\CloudIdentity\UserInvitation
     {
     }
 }

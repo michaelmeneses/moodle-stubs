@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ResourceConfig extends \Google\Model
-{
-    /**
-     * Location of the resource as a URI.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Resource name in the following format: `organizations/{org}/environments/{e
-     * nv}/resourcefiles/{type}/{file}/revisions/{rev}` Only environment-scoped
-     * resource files are supported.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Location of the resource as a URI.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ResourceConfig extends \Google\Model
     {
+        /**
+         * Location of the resource as a URI.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Resource name in the following format: `organizations/{org}/environments/{e
+         * nv}/resourcefiles/{type}/{file}/revisions/{rev}` Only environment-scoped
+         * resource files are supported.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Location of the resource as a URI.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Resource name in the following format: `organizations/{org}/environments/{e
+         * nv}/resourcefiles/{type}/{file}/revisions/{rev}` Only environment-scoped
+         * resource files are supported.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ResourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Resource name in the following format: `organizations/{org}/environments/{e
-     * nv}/resourcefiles/{type}/{file}/revisions/{rev}` Only environment-scoped
-     * resource files are supported.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ResourceConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1ResourceConfig
     {
     }
 }

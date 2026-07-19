@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
-
-/**
- * The "publisherProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
- *   $publisherProfiles = $authorizedbuyersmarketplaceService->buyers_publisherProfiles;
- *  </code>
- */
-class BuyersPublisherProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\AuthorizedBuyersMarketplace\Resource {
+    use Google\Service\AuthorizedBuyersMarketplace\ListPublisherProfilesResponse;
+    use Google\Service\AuthorizedBuyersMarketplace\PublisherProfile;
     /**
-     * Gets the requested publisher profile by name. (publisherProfiles.get)
-     *
-     * @param string $name Required. Name of the publisher profile. Format:
-     * `buyers/{buyerId}/publisherProfiles/{publisherProfileId}`
-     * @param array $optParams Optional parameters.
-     * @return PublisherProfile
-     * @throws \Google\Service\Exception
+     * The "publisherProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
+     *   $publisherProfiles = $authorizedbuyersmarketplaceService->buyers_publisherProfiles;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class BuyersPublisherProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets the requested publisher profile by name. (publisherProfiles.get)
+         *
+         * @param string $name Required. Name of the publisher profile. Format:
+         * `buyers/{buyerId}/publisherProfiles/{publisherProfileId}`
+         * @param array $optParams Optional parameters.
+         * @return PublisherProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists publisher profiles. The returned publisher profiles aren't in any
+         * defined order. The order of the results might change. A new publisher profile
+         * can appear in any place in the list of returned results.
+         * (publisherProfiles.listBuyersPublisherProfiles)
+         *
+         * @param string $parent Required. Parent that owns the collection of publisher
+         * profiles Format: `buyers/{buyerId}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional query string using the [Cloud API list
+         * filtering] (https://developers.google.com/authorized-buyers/apis/guides/list-
+         * filters) syntax.
+         * @opt_param int pageSize Requested page size. The server may return fewer
+         * results than requested. If requested more than 500, the server will return
+         * 500 results per page. If unspecified, the server will pick a default page
+         * size of 100.
+         * @opt_param string pageToken The page token as returned from a previous
+         * ListPublisherProfilesResponse.
+         * @return ListPublisherProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBuyersPublisherProfiles($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists publisher profiles. The returned publisher profiles aren't in any
-     * defined order. The order of the results might change. A new publisher profile
-     * can appear in any place in the list of returned results.
-     * (publisherProfiles.listBuyersPublisherProfiles)
-     *
-     * @param string $parent Required. Parent that owns the collection of publisher
-     * profiles Format: `buyers/{buyerId}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional query string using the [Cloud API list
-     * filtering] (https://developers.google.com/authorized-buyers/apis/guides/list-
-     * filters) syntax.
-     * @opt_param int pageSize Requested page size. The server may return fewer
-     * results than requested. If requested more than 500, the server will return
-     * 500 results per page. If unspecified, the server will pick a default page
-     * size of 100.
-     * @opt_param string pageToken The page token as returned from a previous
-     * ListPublisherProfilesResponse.
-     * @return ListPublisherProfilesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\Resource\BuyersPublisherProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBuyersPublisherProfiles($parent, $optParams = [])
+    class Google_Service_AuthorizedBuyersMarketplace_Resource_BuyersPublisherProfiles extends \Google\Service\AuthorizedBuyersMarketplace\Resource\BuyersPublisherProfiles
     {
     }
 }

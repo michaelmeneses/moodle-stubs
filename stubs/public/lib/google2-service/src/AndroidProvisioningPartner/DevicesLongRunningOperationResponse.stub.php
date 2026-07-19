@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class DevicesLongRunningOperationResponse extends \Google\Collection
-{
-    protected $collection_key = 'perDeviceStatus';
-    protected $perDeviceStatusType = OperationPerDevice::class;
-    protected $perDeviceStatusDataType = 'array';
-    /**
-     * A summary of how many items in the operation the server processed
-     * successfully. Updated as the operation progresses.
-     *
-     * @var int
-     */
-    public $successCount;
-    /**
-     * The processing status for each device in the operation. One
-     * `PerDeviceStatus` per device. The list order matches the items in the
-     * original request.
-     *
-     * @param OperationPerDevice[] $perDeviceStatus
-     */
-    public function setPerDeviceStatus($perDeviceStatus)
+namespace Google\Service\AndroidProvisioningPartner {
+    class DevicesLongRunningOperationResponse extends \Google\Collection
     {
+        protected $collection_key = 'perDeviceStatus';
+        protected $perDeviceStatusType = OperationPerDevice::class;
+        protected $perDeviceStatusDataType = 'array';
+        /**
+         * A summary of how many items in the operation the server processed
+         * successfully. Updated as the operation progresses.
+         *
+         * @var int
+         */
+        public $successCount;
+        /**
+         * The processing status for each device in the operation. One
+         * `PerDeviceStatus` per device. The list order matches the items in the
+         * original request.
+         *
+         * @param OperationPerDevice[] $perDeviceStatus
+         */
+        public function setPerDeviceStatus($perDeviceStatus)
+        {
+        }
+        /**
+         * @return OperationPerDevice[]
+         */
+        public function getPerDeviceStatus()
+        {
+        }
+        /**
+         * A summary of how many items in the operation the server processed
+         * successfully. Updated as the operation progresses.
+         *
+         * @param int $successCount
+         */
+        public function setSuccessCount($successCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OperationPerDevice[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\DevicesLongRunningOperationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerDeviceStatus()
-    {
-    }
-    /**
-     * A summary of how many items in the operation the server processed
-     * successfully. Updated as the operation progresses.
-     *
-     * @param int $successCount
-     */
-    public function setSuccessCount($successCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessCount()
+    class Google_Service_AndroidProvisioningPartner_DevicesLongRunningOperationResponse extends \Google\Service\AndroidProvisioningPartner\DevicesLongRunningOperationResponse
     {
     }
 }

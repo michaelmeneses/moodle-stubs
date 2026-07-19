@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaSearchAds360Link extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $adsPersonalizationEnabled;
-    /**
-     * @var string
-     */
-    public $advertiserDisplayName;
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var bool
-     */
-    public $campaignDataSharingEnabled;
-    /**
-     * @var bool
-     */
-    public $costDataSharingEnabled;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $siteStatsSharingEnabled;
-    /**
-     * @param bool
-     */
-    public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaSearchAds360Link extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $adsPersonalizationEnabled;
+        /**
+         * @var string
+         */
+        public $advertiserDisplayName;
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var bool
+         */
+        public $campaignDataSharingEnabled;
+        /**
+         * @var bool
+         */
+        public $costDataSharingEnabled;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $siteStatsSharingEnabled;
+        /**
+         * @param bool
+         */
+        public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdsPersonalizationEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserDisplayName($advertiserDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCampaignDataSharingEnabled($campaignDataSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCampaignDataSharingEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCostDataSharingEnabled($costDataSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCostDataSharingEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSiteStatsSharingEnabled($siteStatsSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSiteStatsSharingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaSearchAds360Link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdsPersonalizationEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserDisplayName($advertiserDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCampaignDataSharingEnabled($campaignDataSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCampaignDataSharingEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCostDataSharingEnabled($costDataSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCostDataSharingEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSiteStatsSharingEnabled($siteStatsSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSiteStatsSharingEnabled()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaSearchAds360Link extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaSearchAds360Link
     {
     }
 }

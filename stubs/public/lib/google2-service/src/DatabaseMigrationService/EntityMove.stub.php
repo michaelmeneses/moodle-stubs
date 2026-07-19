@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class EntityMove extends \Google\Model
-{
-    /**
-     * Required. The new schema
-     *
-     * @var string
-     */
-    public $newSchema;
-    /**
-     * Required. The new schema
-     *
-     * @param string $newSchema
-     */
-    public function setNewSchema($newSchema)
+namespace Google\Service\DatabaseMigrationService {
+    class EntityMove extends \Google\Model
     {
+        /**
+         * Required. The new schema
+         *
+         * @var string
+         */
+        public $newSchema;
+        /**
+         * Required. The new schema
+         *
+         * @param string $newSchema
+         */
+        public function setNewSchema($newSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\EntityMove registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewSchema()
+    class Google_Service_DatabaseMigrationService_EntityMove extends \Google\Service\DatabaseMigrationService\EntityMove
     {
     }
 }

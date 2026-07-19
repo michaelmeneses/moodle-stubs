@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListEnvironmentGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'environmentGroups';
-    protected $environmentGroupsType = GoogleCloudApigeeV1EnvironmentGroup::class;
-    protected $environmentGroupsDataType = 'array';
-    /**
-     * Page token that you can include in a ListEnvironmentGroups request to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * EnvironmentGroups in the specified organization.
-     *
-     * @param GoogleCloudApigeeV1EnvironmentGroup[] $environmentGroups
-     */
-    public function setEnvironmentGroups($environmentGroups)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListEnvironmentGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'environmentGroups';
+        protected $environmentGroupsType = GoogleCloudApigeeV1EnvironmentGroup::class;
+        protected $environmentGroupsDataType = 'array';
+        /**
+         * Page token that you can include in a ListEnvironmentGroups request to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * EnvironmentGroups in the specified organization.
+         *
+         * @param GoogleCloudApigeeV1EnvironmentGroup[] $environmentGroups
+         */
+        public function setEnvironmentGroups($environmentGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EnvironmentGroup[]
+         */
+        public function getEnvironmentGroups()
+        {
+        }
+        /**
+         * Page token that you can include in a ListEnvironmentGroups request to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1EnvironmentGroup[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironmentGroups()
-    {
-    }
-    /**
-     * Page token that you can include in a ListEnvironmentGroups request to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListEnvironmentGroupsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupsResponse
     {
     }
 }

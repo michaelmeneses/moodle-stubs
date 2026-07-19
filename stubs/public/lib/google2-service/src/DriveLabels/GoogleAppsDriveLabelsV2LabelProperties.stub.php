@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelProperties extends \Google\Model
-{
-    /**
-     * The description of the label.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Title of the label.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The description of the label.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelProperties extends \Google\Model
     {
+        /**
+         * The description of the label.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Title of the label.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The description of the label.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Title of the label.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Title of the label.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelProperties extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelProperties
     {
     }
 }

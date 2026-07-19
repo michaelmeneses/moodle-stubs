@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class VanityCode extends \Google\Model
-{
-    /**
-     * The promotion code.
-     *
-     * @var string
-     */
-    public $promotionCode;
-    /**
-     * The promotion code.
-     *
-     * @param string $promotionCode
-     */
-    public function setPromotionCode($promotionCode)
+namespace Google\Service\AndroidPublisher {
+    class VanityCode extends \Google\Model
     {
+        /**
+         * The promotion code.
+         *
+         * @var string
+         */
+        public $promotionCode;
+        /**
+         * The promotion code.
+         *
+         * @param string $promotionCode
+         */
+        public function setPromotionCode($promotionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromotionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\VanityCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPromotionCode()
+    class Google_Service_AndroidPublisher_VanityCode extends \Google\Service\AndroidPublisher\VanityCode
     {
     }
 }

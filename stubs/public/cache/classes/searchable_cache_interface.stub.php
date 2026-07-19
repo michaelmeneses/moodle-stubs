@@ -20,30 +20,39 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * Cache store feature: keys are searchable.
- *
- * Cache stores can choose to implement this interface.
- * In order for a store to be usable as a session cache it must implement this interface.
- *
- * @package core_cache
- * @copyright Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-interface searchable_cache_interface
-{
+namespace core_cache {
     /**
-     * Finds all of the keys being used by the cache store.
+     * Cache store feature: keys are searchable.
      *
-     * @return array.
+     * Cache stores can choose to implement this interface.
+     * In order for a store to be usable as a session cache it must implement this interface.
+     *
+     * @package core_cache
+     * @copyright Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function find_all();
+    interface searchable_cache_interface
+    {
+        /**
+         * Finds all of the keys being used by the cache store.
+         *
+         * @return array.
+         */
+        public function find_all();
+        /**
+         * Finds all of the keys whose keys start with the given prefix.
+         *
+         * @param string $prefix
+         */
+        public function find_by_prefix($prefix);
+    }
+}
+namespace {
     /**
-     * Finds all of the keys whose keys start with the given prefix.
-     *
-     * @param string $prefix
+     * Runtime class alias of \core_cache\searchable_cache_interface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function find_by_prefix($prefix);
+    interface cache_is_searchable extends \core_cache\searchable_cache_interface
+    {
+    }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class FreeBusyRequestItem extends \Google\Model
-{
-    /**
-     * The identifier of a calendar or a group.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The identifier of a calendar or a group.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Calendar {
+    class FreeBusyRequestItem extends \Google\Model
     {
+        /**
+         * The identifier of a calendar or a group.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The identifier of a calendar or a group.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\FreeBusyRequestItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_Calendar_FreeBusyRequestItem extends \Google\Service\Calendar\FreeBusyRequestItem
     {
     }
 }

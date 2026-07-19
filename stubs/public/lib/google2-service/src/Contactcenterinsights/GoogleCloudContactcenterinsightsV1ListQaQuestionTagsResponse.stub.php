@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'qaQuestionTags';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $qaQuestionTagsType = GoogleCloudContactcenterinsightsV1QaQuestionTag::class;
-    protected $qaQuestionTagsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'qaQuestionTags';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $qaQuestionTagsType = GoogleCloudContactcenterinsightsV1QaQuestionTag::class;
+        protected $qaQuestionTagsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The parent resource of the questions.
+         *
+         * @param GoogleCloudContactcenterinsightsV1QaQuestionTag[] $qaQuestionTags
+         */
+        public function setQaQuestionTags($qaQuestionTags)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1QaQuestionTag[]
+         */
+        public function getQaQuestionTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The parent resource of the questions.
-     *
-     * @param GoogleCloudContactcenterinsightsV1QaQuestionTag[] $qaQuestionTags
-     */
-    public function setQaQuestionTags($qaQuestionTags)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1QaQuestionTag[]
-     */
-    public function getQaQuestionTags()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse
     {
     }
 }

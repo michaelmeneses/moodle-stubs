@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildbotCommandStatus extends \Google\Model
-{
-    public $code;
-    public $message;
-    public function setCode($code)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildbotCommandStatus extends \Google\Model
     {
+        public $code;
+        public $message;
+        public function setCode($code)
+        {
+        }
+        public function getCode()
+        {
+        }
+        public function setMessage($message)
+        {
+        }
+        public function getMessage()
+        {
+        }
     }
-    public function getCode()
-    {
-    }
-    public function setMessage($message)
-    {
-    }
-    public function getMessage()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotCommandStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildbotCommandStatus extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotCommandStatus
     {
     }
 }

@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertDateRequest extends \Google\Model
-{
-    protected $dateElementPropertiesType = DateElementProperties::class;
-    protected $dateElementPropertiesDataType = '';
-    protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
-    protected $endOfSegmentLocationDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * The properties of the date to insert.
-     *
-     * @param DateElementProperties $dateElementProperties
-     */
-    public function setDateElementProperties(DateElementProperties $dateElementProperties)
+namespace Google\Service\Docs {
+    class InsertDateRequest extends \Google\Model
     {
+        protected $dateElementPropertiesType = DateElementProperties::class;
+        protected $dateElementPropertiesDataType = '';
+        protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
+        protected $endOfSegmentLocationDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * The properties of the date to insert.
+         *
+         * @param DateElementProperties $dateElementProperties
+         */
+        public function setDateElementProperties(DateElementProperties $dateElementProperties)
+        {
+        }
+        /**
+         * @return DateElementProperties
+         */
+        public function getDateElementProperties()
+        {
+        }
+        /**
+         * Inserts the date at the end of the given header, footer or document body.
+         *
+         * @param EndOfSegmentLocation $endOfSegmentLocation
+         */
+        public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+        {
+        }
+        /**
+         * @return EndOfSegmentLocation
+         */
+        public function getEndOfSegmentLocation()
+        {
+        }
+        /**
+         * Inserts the date at a specific index in the document. The date must be
+         * inserted inside the bounds of an existing Paragraph. For instance, it
+         * cannot be inserted at a table's start index (i.e. between an existing table
+         * and its preceding paragraph).
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateElementProperties
+     * Runtime class alias of \Google\Service\Docs\InsertDateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateElementProperties()
-    {
-    }
-    /**
-     * Inserts the date at the end of the given header, footer or document body.
-     *
-     * @param EndOfSegmentLocation $endOfSegmentLocation
-     */
-    public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
-    {
-    }
-    /**
-     * @return EndOfSegmentLocation
-     */
-    public function getEndOfSegmentLocation()
-    {
-    }
-    /**
-     * Inserts the date at a specific index in the document. The date must be
-     * inserted inside the bounds of an existing Paragraph. For instance, it
-     * cannot be inserted at a table's start index (i.e. between an existing table
-     * and its preceding paragraph).
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
+    class Google_Service_Docs_InsertDateRequest extends \Google\Service\Docs\InsertDateRequest
     {
     }
 }

@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\content\cm;
 
+use cm_info;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use core\output\named_templatable;
+use core\output\choicelist;
+use core\output\local\dropdown\status;
+use pix_icon;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Base class to render an activity group mode badge.
  *

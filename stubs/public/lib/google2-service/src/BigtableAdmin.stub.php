@@ -21,63 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for BigtableAdmin (v2).
- *
- * <p>
- * Administer your Cloud Bigtable tables and instances.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/bigtable/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class BigtableAdmin extends \Google\Service
-{
-    /** Administer your Cloud Bigtable tables and clusters. */
-    const BIGTABLE_ADMIN = "https://www.googleapis.com/auth/bigtable.admin";
-    /** Administer your Cloud Bigtable clusters. */
-    const BIGTABLE_ADMIN_CLUSTER = "https://www.googleapis.com/auth/bigtable.admin.cluster";
-    /** Administer your Cloud Bigtable clusters. */
-    const BIGTABLE_ADMIN_INSTANCE = "https://www.googleapis.com/auth/bigtable.admin.instance";
-    /** Administer your Cloud Bigtable tables. */
-    const BIGTABLE_ADMIN_TABLE = "https://www.googleapis.com/auth/bigtable.admin.table";
-    /** Administer your Cloud Bigtable tables and clusters. */
-    const CLOUD_BIGTABLE_ADMIN = "https://www.googleapis.com/auth/cloud-bigtable.admin";
-    /** Administer your Cloud Bigtable clusters. */
-    const CLOUD_BIGTABLE_ADMIN_CLUSTER = "https://www.googleapis.com/auth/cloud-bigtable.admin.cluster";
-    /** Administer your Cloud Bigtable tables. */
-    const CLOUD_BIGTABLE_ADMIN_TABLE = "https://www.googleapis.com/auth/cloud-bigtable.admin.table";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    public $operations;
-    public $operations_projects_operations;
-    public $projects_instances;
-    public $projects_instances_appProfiles;
-    public $projects_instances_clusters;
-    public $projects_instances_clusters_backups;
-    public $projects_instances_clusters_hotTablets;
-    public $projects_instances_logicalViews;
-    public $projects_instances_materializedViews;
-    public $projects_instances_tables;
-    public $projects_instances_tables_authorizedViews;
-    public $projects_instances_tables_schemaBundles;
-    public $projects_locations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the BigtableAdmin service.
+     * Service definition for BigtableAdmin (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Administer your Cloud Bigtable tables and instances.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/bigtable/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class BigtableAdmin extends \Google\Service
+    {
+        /** Administer your Cloud Bigtable tables and clusters. */
+        const BIGTABLE_ADMIN = "https://www.googleapis.com/auth/bigtable.admin";
+        /** Administer your Cloud Bigtable clusters. */
+        const BIGTABLE_ADMIN_CLUSTER = "https://www.googleapis.com/auth/bigtable.admin.cluster";
+        /** Administer your Cloud Bigtable clusters. */
+        const BIGTABLE_ADMIN_INSTANCE = "https://www.googleapis.com/auth/bigtable.admin.instance";
+        /** Administer your Cloud Bigtable tables. */
+        const BIGTABLE_ADMIN_TABLE = "https://www.googleapis.com/auth/bigtable.admin.table";
+        /** Administer your Cloud Bigtable tables and clusters. */
+        const CLOUD_BIGTABLE_ADMIN = "https://www.googleapis.com/auth/cloud-bigtable.admin";
+        /** Administer your Cloud Bigtable clusters. */
+        const CLOUD_BIGTABLE_ADMIN_CLUSTER = "https://www.googleapis.com/auth/cloud-bigtable.admin.cluster";
+        /** Administer your Cloud Bigtable tables. */
+        const CLOUD_BIGTABLE_ADMIN_TABLE = "https://www.googleapis.com/auth/cloud-bigtable.admin.table";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        public $operations;
+        public $operations_projects_operations;
+        public $projects_instances;
+        public $projects_instances_appProfiles;
+        public $projects_instances_clusters;
+        public $projects_instances_clusters_backups;
+        public $projects_instances_clusters_hotTablets;
+        public $projects_instances_logicalViews;
+        public $projects_instances_materializedViews;
+        public $projects_instances_tables;
+        public $projects_instances_tables_authorizedViews;
+        public $projects_instances_tables_schemaBundles;
+        public $projects_locations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the BigtableAdmin service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigtableAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigtableAdmin extends \Google\Service\BigtableAdmin
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class TransitiveMembershipRole extends \Google\Model
-{
-    /**
-     * TransitiveMembershipRole in string format. Currently supported
-     * TransitiveMembershipRoles: `"MEMBER"`, `"OWNER"`, and `"MANAGER"`.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * TransitiveMembershipRole in string format. Currently supported
-     * TransitiveMembershipRoles: `"MEMBER"`, `"OWNER"`, and `"MANAGER"`.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
+namespace Google\Service\CloudIdentity {
+    class TransitiveMembershipRole extends \Google\Model
     {
+        /**
+         * TransitiveMembershipRole in string format. Currently supported
+         * TransitiveMembershipRoles: `"MEMBER"`, `"OWNER"`, and `"MANAGER"`.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * TransitiveMembershipRole in string format. Currently supported
+         * TransitiveMembershipRoles: `"MEMBER"`, `"OWNER"`, and `"MANAGER"`.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\TransitiveMembershipRole registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRole()
+    class Google_Service_CloudIdentity_TransitiveMembershipRole extends \Google\Service\CloudIdentity\TransitiveMembershipRole
     {
     }
 }

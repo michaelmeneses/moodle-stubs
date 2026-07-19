@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata extends \Google\Model
-{
-    /**
-     * Optional. Labels for the deployment config. For managing deployment config
-     * like verifying, source of deployment config, etc.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. Sample request for deployed endpoint.
-     *
-     * @var string
-     */
-    public $sampleRequest;
-    /**
-     * Optional. Labels for the deployment config. For managing deployment config
-     * like verifying, source of deployment config, etc.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata extends \Google\Model
     {
+        /**
+         * Optional. Labels for the deployment config. For managing deployment config
+         * like verifying, source of deployment config, etc.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. Sample request for deployed endpoint.
+         *
+         * @var string
+         */
+        public $sampleRequest;
+        /**
+         * Optional. Labels for the deployment config. For managing deployment config
+         * like verifying, source of deployment config, etc.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. Sample request for deployed endpoint.
+         *
+         * @param string $sampleRequest
+         */
+        public function setSampleRequest($sampleRequest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. Sample request for deployed endpoint.
-     *
-     * @param string $sampleRequest
-     */
-    public function setSampleRequest($sampleRequest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleRequest()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata
     {
     }
 }

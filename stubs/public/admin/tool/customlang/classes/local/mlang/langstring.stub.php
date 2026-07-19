@@ -29,6 +29,8 @@
  */
 namespace tool_customlang\local\mlang;
 
+use moodle_exception;
+use stdclass;
 /**
  * Class containing a lang string cleaned.
  *

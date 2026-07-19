@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo extends \Google\Collection
-{
-    protected $collection_key = 'sub';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var array[]
-     */
-    public $resource;
-    /**
-     * @var string
-     */
-    public $status;
-    protected $subType = GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo::class;
-    protected $subDataType = 'array';
-    /**
-     * @var string
-     */
-    public $time;
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo extends \Google\Collection
     {
+        protected $collection_key = 'sub';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var array[]
+         */
+        public $resource;
+        /**
+         * @var string
+         */
+        public $status;
+        protected $subType = GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo::class;
+        protected $subDataType = 'array';
+        /**
+         * @var string
+         */
+        public $time;
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo[]
+         */
+        public function setSub($sub)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo[]
+         */
+        public function getSub()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo[]
-     */
-    public function setSub($sub)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo[]
-     */
-    public function getSub()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
     {
     }
 }

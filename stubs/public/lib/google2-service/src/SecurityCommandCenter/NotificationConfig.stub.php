@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class NotificationConfig extends \Google\Model
-{
-    /**
-     * The description of the notification config (max of 1024 characters).
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The relative resource name of this notification config. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example:
-     * "organizations/{organization_id}/notificationConfigs/notify_public_bucket",
-     * "folders/{folder_id}/notificationConfigs/notify_public_bucket", or
-     * "projects/{project_id}/notificationConfigs/notify_public_bucket".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The Pub/Sub topic to send notifications to. Its format is
-     * "projects/[project_id]/topics/[topic]".
-     *
-     * @var string
-     */
-    public $pubsubTopic;
-    /**
-     * Output only. The service account that needs "pubsub.topics.publish"
-     * permission to publish to the Pub/Sub topic.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    protected $streamingConfigType = StreamingConfig::class;
-    protected $streamingConfigDataType = '';
-    /**
-     * The description of the notification config (max of 1024 characters).
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\SecurityCommandCenter {
+    class NotificationConfig extends \Google\Model
     {
+        /**
+         * The description of the notification config (max of 1024 characters).
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The relative resource name of this notification config. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example:
+         * "organizations/{organization_id}/notificationConfigs/notify_public_bucket",
+         * "folders/{folder_id}/notificationConfigs/notify_public_bucket", or
+         * "projects/{project_id}/notificationConfigs/notify_public_bucket".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The Pub/Sub topic to send notifications to. Its format is
+         * "projects/[project_id]/topics/[topic]".
+         *
+         * @var string
+         */
+        public $pubsubTopic;
+        /**
+         * Output only. The service account that needs "pubsub.topics.publish"
+         * permission to publish to the Pub/Sub topic.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        protected $streamingConfigType = StreamingConfig::class;
+        protected $streamingConfigDataType = '';
+        /**
+         * The description of the notification config (max of 1024 characters).
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The relative resource name of this notification config. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example:
+         * "organizations/{organization_id}/notificationConfigs/notify_public_bucket",
+         * "folders/{folder_id}/notificationConfigs/notify_public_bucket", or
+         * "projects/{project_id}/notificationConfigs/notify_public_bucket".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The Pub/Sub topic to send notifications to. Its format is
+         * "projects/[project_id]/topics/[topic]".
+         *
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
+        /**
+         * Output only. The service account that needs "pubsub.topics.publish"
+         * permission to publish to the Pub/Sub topic.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * The config for triggering streaming-based notifications.
+         *
+         * @param StreamingConfig $streamingConfig
+         */
+        public function setStreamingConfig(StreamingConfig $streamingConfig)
+        {
+        }
+        /**
+         * @return StreamingConfig
+         */
+        public function getStreamingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\NotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The relative resource name of this notification config. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example:
-     * "organizations/{organization_id}/notificationConfigs/notify_public_bucket",
-     * "folders/{folder_id}/notificationConfigs/notify_public_bucket", or
-     * "projects/{project_id}/notificationConfigs/notify_public_bucket".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The Pub/Sub topic to send notifications to. Its format is
-     * "projects/[project_id]/topics/[topic]".
-     *
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubsubTopic()
-    {
-    }
-    /**
-     * Output only. The service account that needs "pubsub.topics.publish"
-     * permission to publish to the Pub/Sub topic.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * The config for triggering streaming-based notifications.
-     *
-     * @param StreamingConfig $streamingConfig
-     */
-    public function setStreamingConfig(StreamingConfig $streamingConfig)
-    {
-    }
-    /**
-     * @return StreamingConfig
-     */
-    public function getStreamingConfig()
+    class Google_Service_SecurityCommandCenter_NotificationConfig extends \Google\Service\SecurityCommandCenter\NotificationConfig
     {
     }
 }

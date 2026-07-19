@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader extends \Google\Model
-{
-    /**
-     * The suggested title to display. This defaults to the user's query.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The suggested title to display. This defaults to the user's query.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader extends \Google\Model
     {
+        /**
+         * The suggested title to display. This defaults to the user's query.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The suggested title to display. This defaults to the user's query.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerPeopleAnswerCardHeader
     {
     }
 }

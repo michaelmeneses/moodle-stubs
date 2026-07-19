@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class NotificationRateLimit extends \Google\Model
-{
-    /**
-     * Not more than one notification per period.
-     *
-     * @var string
-     */
-    public $period;
-    /**
-     * Not more than one notification per period.
-     *
-     * @param string $period
-     */
-    public function setPeriod($period)
+namespace Google\Service\Monitoring {
+    class NotificationRateLimit extends \Google\Model
     {
+        /**
+         * Not more than one notification per period.
+         *
+         * @var string
+         */
+        public $period;
+        /**
+         * Not more than one notification per period.
+         *
+         * @param string $period
+         */
+        public function setPeriod($period)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\NotificationRateLimit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeriod()
+    class Google_Service_Monitoring_NotificationRateLimit extends \Google\Service\Monitoring\NotificationRateLimit
     {
     }
 }

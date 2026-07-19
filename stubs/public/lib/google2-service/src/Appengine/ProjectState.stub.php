@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ProjectState extends \Google\Model
-{
-    protected $currentReasonsType = Reasons::class;
-    protected $currentReasonsDataType = '';
-    protected $previousReasonsType = Reasons::class;
-    protected $previousReasonsDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param Reasons
-     */
-    public function setCurrentReasons(Reasons $currentReasons)
+namespace Google\Service\Appengine {
+    class ProjectState extends \Google\Model
     {
+        protected $currentReasonsType = Reasons::class;
+        protected $currentReasonsDataType = '';
+        protected $previousReasonsType = Reasons::class;
+        protected $previousReasonsDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param Reasons
+         */
+        public function setCurrentReasons(Reasons $currentReasons)
+        {
+        }
+        /**
+         * @return Reasons
+         */
+        public function getCurrentReasons()
+        {
+        }
+        /**
+         * @param Reasons
+         */
+        public function setPreviousReasons(Reasons $previousReasons)
+        {
+        }
+        /**
+         * @return Reasons
+         */
+        public function getPreviousReasons()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Reasons
+     * Runtime class alias of \Google\Service\Appengine\ProjectState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentReasons()
-    {
-    }
-    /**
-     * @param Reasons
-     */
-    public function setPreviousReasons(Reasons $previousReasons)
-    {
-    }
-    /**
-     * @return Reasons
-     */
-    public function getPreviousReasons()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Appengine_ProjectState extends \Google\Service\Appengine\ProjectState
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent extends \Google\Collection
-{
-    protected $collection_key = 'suggestions';
-    /**
-     * Optional. Description of the card (at most 2000 bytes). At least one of the
-     * title, description or media must be set.
-     *
-     * @var string
-     */
-    public $description;
-    protected $mediaType = GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia::class;
-    protected $mediaDataType = '';
-    protected $suggestionsType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion::class;
-    protected $suggestionsDataType = 'array';
-    /**
-     * Optional. Title of the card (at most 200 bytes). At least one of the title,
-     * description or media must be set.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. Description of the card (at most 2000 bytes). At least one of the
-     * title, description or media must be set.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent extends \Google\Collection
     {
+        protected $collection_key = 'suggestions';
+        /**
+         * Optional. Description of the card (at most 2000 bytes). At least one of the
+         * title, description or media must be set.
+         *
+         * @var string
+         */
+        public $description;
+        protected $mediaType = GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia::class;
+        protected $mediaDataType = '';
+        protected $suggestionsType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion::class;
+        protected $suggestionsDataType = 'array';
+        /**
+         * Optional. Title of the card (at most 200 bytes). At least one of the title,
+         * description or media must be set.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. Description of the card (at most 2000 bytes). At least one of the
+         * title, description or media must be set.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. However at least one of the title, description or media must be
+         * set. Media (image, GIF or a video) to include in the card.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia $media
+         */
+        public function setMedia(GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia $media)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia
+         */
+        public function getMedia()
+        {
+        }
+        /**
+         * Optional. List of suggestions to include in the card.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[] $suggestions
+         */
+        public function setSuggestions($suggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[]
+         */
+        public function getSuggestions()
+        {
+        }
+        /**
+         * Optional. Title of the card (at most 200 bytes). At least one of the title,
+         * description or media must be set.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. However at least one of the title, description or media must be
-     * set. Media (image, GIF or a video) to include in the card.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia $media
-     */
-    public function setMedia(GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia $media)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia
-     */
-    public function getMedia()
-    {
-    }
-    /**
-     * Optional. List of suggestions to include in the card.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[] $suggestions
-     */
-    public function setSuggestions($suggestions)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion[]
-     */
-    public function getSuggestions()
-    {
-    }
-    /**
-     * Optional. Title of the card (at most 200 bytes). At least one of the title,
-     * description or media must be set.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent
     {
     }
 }

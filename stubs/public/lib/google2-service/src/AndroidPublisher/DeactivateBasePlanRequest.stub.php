@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeactivateBasePlanRequest extends \Google\Model
-{
-    /**
-     * Defaults to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE.
-     */
-    public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED';
-    /**
-     * The update will propagate to clients within several minutes on average and
-     * up to a few hours in rare cases. Throughput is limited to 7,200 updates per
-     * app per hour.
-     */
-    public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE';
-    /**
-     * The update will propagate to clients within 24 hours. Supports high
-     * throughput of up to 720,000 updates per app per hour using batch
-     * modification methods.
-     */
-    public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT';
-    /**
-     * Required. The unique base plan ID of the base plan to deactivate.
-     *
-     * @var string
-     */
-    public $basePlanId;
-    /**
-     * Optional. The latency tolerance for the propagation of this product update.
-     * Defaults to latency-sensitive.
-     *
-     * @var string
-     */
-    public $latencyTolerance;
-    /**
-     * Required. The parent app (package name) of the base plan to deactivate.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Required. The parent subscription (ID) of the base plan to deactivate.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Required. The unique base plan ID of the base plan to deactivate.
-     *
-     * @param string $basePlanId
-     */
-    public function setBasePlanId($basePlanId)
+namespace Google\Service\AndroidPublisher {
+    class DeactivateBasePlanRequest extends \Google\Model
     {
+        /**
+         * Defaults to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE.
+         */
+        public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED';
+        /**
+         * The update will propagate to clients within several minutes on average and
+         * up to a few hours in rare cases. Throughput is limited to 7,200 updates per
+         * app per hour.
+         */
+        public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE';
+        /**
+         * The update will propagate to clients within 24 hours. Supports high
+         * throughput of up to 720,000 updates per app per hour using batch
+         * modification methods.
+         */
+        public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT';
+        /**
+         * Required. The unique base plan ID of the base plan to deactivate.
+         *
+         * @var string
+         */
+        public $basePlanId;
+        /**
+         * Optional. The latency tolerance for the propagation of this product update.
+         * Defaults to latency-sensitive.
+         *
+         * @var string
+         */
+        public $latencyTolerance;
+        /**
+         * Required. The parent app (package name) of the base plan to deactivate.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Required. The parent subscription (ID) of the base plan to deactivate.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Required. The unique base plan ID of the base plan to deactivate.
+         *
+         * @param string $basePlanId
+         */
+        public function setBasePlanId($basePlanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasePlanId()
+        {
+        }
+        /**
+         * Optional. The latency tolerance for the propagation of this product update.
+         * Defaults to latency-sensitive.
+         *
+         * Accepted values: PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED,
+         * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE,
+         * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT
+         *
+         * @param self::LATENCY_TOLERANCE_* $latencyTolerance
+         */
+        public function setLatencyTolerance($latencyTolerance)
+        {
+        }
+        /**
+         * @return self::LATENCY_TOLERANCE_*
+         */
+        public function getLatencyTolerance()
+        {
+        }
+        /**
+         * Required. The parent app (package name) of the base plan to deactivate.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Required. The parent subscription (ID) of the base plan to deactivate.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeactivateBasePlanRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasePlanId()
-    {
-    }
-    /**
-     * Optional. The latency tolerance for the propagation of this product update.
-     * Defaults to latency-sensitive.
-     *
-     * Accepted values: PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED,
-     * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE,
-     * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT
-     *
-     * @param self::LATENCY_TOLERANCE_* $latencyTolerance
-     */
-    public function setLatencyTolerance($latencyTolerance)
-    {
-    }
-    /**
-     * @return self::LATENCY_TOLERANCE_*
-     */
-    public function getLatencyTolerance()
-    {
-    }
-    /**
-     * Required. The parent app (package name) of the base plan to deactivate.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Required. The parent subscription (ID) of the base plan to deactivate.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidPublisher_DeactivateBasePlanRequest extends \Google\Service\AndroidPublisher\DeactivateBasePlanRequest
     {
     }
 }

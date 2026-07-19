@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DoubleArray extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * A list of double values.
-     *
-     * @var []
-     */
-    public $values;
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DoubleArray extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * A list of double values.
+         *
+         * @var []
+         */
+        public $values;
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
     }
-    public function getValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DoubleArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DoubleArray extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DoubleArray
     {
     }
 }

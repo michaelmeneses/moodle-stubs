@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class K8sBetaAPIConfig extends \Google\Collection
-{
-    protected $collection_key = 'enabledApis';
-    /**
-     * Enabled k8s beta APIs.
-     *
-     * @var string[]
-     */
-    public $enabledApis;
-    /**
-     * Enabled k8s beta APIs.
-     *
-     * @param string[] $enabledApis
-     */
-    public function setEnabledApis($enabledApis)
+namespace Google\Service\Container {
+    class K8sBetaAPIConfig extends \Google\Collection
     {
+        protected $collection_key = 'enabledApis';
+        /**
+         * Enabled k8s beta APIs.
+         *
+         * @var string[]
+         */
+        public $enabledApis;
+        /**
+         * Enabled k8s beta APIs.
+         *
+         * @param string[] $enabledApis
+         */
+        public function setEnabledApis($enabledApis)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnabledApis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\K8sBetaAPIConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledApis()
+    class Google_Service_Container_K8sBetaAPIConfig extends \Google\Service\Container\K8sBetaAPIConfig
     {
     }
 }

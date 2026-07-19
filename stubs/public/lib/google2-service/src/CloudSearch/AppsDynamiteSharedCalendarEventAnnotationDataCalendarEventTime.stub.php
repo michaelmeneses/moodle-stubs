@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime extends \Google\Model
-{
-    protected $allDayType = Date::class;
-    protected $allDayDataType = '';
-    /**
-     * @var string
-     */
-    public $timed;
-    /**
-     * @param Date
-     */
-    public function setAllDay(Date $allDay)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime extends \Google\Model
     {
+        protected $allDayType = Date::class;
+        protected $allDayDataType = '';
+        /**
+         * @var string
+         */
+        public $timed;
+        /**
+         * @param Date
+         */
+        public function setAllDay(Date $allDay)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getAllDay()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimed($timed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllDay()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimed($timed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimed()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime extends \Google\Service\CloudSearch\AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
     {
     }
 }

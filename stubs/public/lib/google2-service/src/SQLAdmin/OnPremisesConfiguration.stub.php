@@ -21,242 +21,251 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class OnPremisesConfiguration extends \Google\Collection
-{
-    /**
-     * Unknown SSL option i.e. SSL option not specified by user.
-     */
-    public const SSL_OPTION_SSL_OPTION_UNSPECIFIED = 'SSL_OPTION_UNSPECIFIED';
-    /**
-     * SSL is not used for replica connection to the on-premises source.
-     */
-    public const SSL_OPTION_DISABLE = 'DISABLE';
-    /**
-     * SSL is required for replica connection to the on-premises source.
-     */
-    public const SSL_OPTION_REQUIRE = 'REQUIRE';
-    /**
-     * Verify CA is required for replica connection to the on-premises source.
-     */
-    public const SSL_OPTION_VERIFY_CA = 'VERIFY_CA';
-    protected $collection_key = 'selectedObjects';
-    /**
-     * PEM representation of the trusted CA's x509 certificate.
-     *
-     * @var string
-     */
-    public $caCertificate;
-    /**
-     * PEM representation of the replica's x509 certificate.
-     *
-     * @var string
-     */
-    public $clientCertificate;
-    /**
-     * PEM representation of the replica's private key. The corresponding public
-     * key is encoded in the client's certificate.
-     *
-     * @var string
-     */
-    public $clientKey;
-    /**
-     * The dump file to create the Cloud SQL replica.
-     *
-     * @var string
-     */
-    public $dumpFilePath;
-    /**
-     * The host and port of the on-premises instance in host:port format
-     *
-     * @var string
-     */
-    public $hostPort;
-    /**
-     * This is always `sql#onPremisesConfiguration`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The password for connecting to on-premises instance.
-     *
-     * @var string
-     */
-    public $password;
-    protected $selectedObjectsType = SelectedObjects::class;
-    protected $selectedObjectsDataType = 'array';
-    protected $sourceInstanceType = InstanceReference::class;
-    protected $sourceInstanceDataType = '';
-    /**
-     * Optional. SSL option for replica connection to the on-premises source.
-     *
-     * @var string
-     */
-    public $sslOption;
-    /**
-     * The username for connecting to on-premises instance.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * PEM representation of the trusted CA's x509 certificate.
-     *
-     * @param string $caCertificate
-     */
-    public function setCaCertificate($caCertificate)
+namespace Google\Service\SQLAdmin {
+    class OnPremisesConfiguration extends \Google\Collection
     {
+        /**
+         * Unknown SSL option i.e. SSL option not specified by user.
+         */
+        public const SSL_OPTION_SSL_OPTION_UNSPECIFIED = 'SSL_OPTION_UNSPECIFIED';
+        /**
+         * SSL is not used for replica connection to the on-premises source.
+         */
+        public const SSL_OPTION_DISABLE = 'DISABLE';
+        /**
+         * SSL is required for replica connection to the on-premises source.
+         */
+        public const SSL_OPTION_REQUIRE = 'REQUIRE';
+        /**
+         * Verify CA is required for replica connection to the on-premises source.
+         */
+        public const SSL_OPTION_VERIFY_CA = 'VERIFY_CA';
+        protected $collection_key = 'selectedObjects';
+        /**
+         * PEM representation of the trusted CA's x509 certificate.
+         *
+         * @var string
+         */
+        public $caCertificate;
+        /**
+         * PEM representation of the replica's x509 certificate.
+         *
+         * @var string
+         */
+        public $clientCertificate;
+        /**
+         * PEM representation of the replica's private key. The corresponding public
+         * key is encoded in the client's certificate.
+         *
+         * @var string
+         */
+        public $clientKey;
+        /**
+         * The dump file to create the Cloud SQL replica.
+         *
+         * @var string
+         */
+        public $dumpFilePath;
+        /**
+         * The host and port of the on-premises instance in host:port format
+         *
+         * @var string
+         */
+        public $hostPort;
+        /**
+         * This is always `sql#onPremisesConfiguration`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The password for connecting to on-premises instance.
+         *
+         * @var string
+         */
+        public $password;
+        protected $selectedObjectsType = SelectedObjects::class;
+        protected $selectedObjectsDataType = 'array';
+        protected $sourceInstanceType = InstanceReference::class;
+        protected $sourceInstanceDataType = '';
+        /**
+         * Optional. SSL option for replica connection to the on-premises source.
+         *
+         * @var string
+         */
+        public $sslOption;
+        /**
+         * The username for connecting to on-premises instance.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * PEM representation of the trusted CA's x509 certificate.
+         *
+         * @param string $caCertificate
+         */
+        public function setCaCertificate($caCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertificate()
+        {
+        }
+        /**
+         * PEM representation of the replica's x509 certificate.
+         *
+         * @param string $clientCertificate
+         */
+        public function setClientCertificate($clientCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientCertificate()
+        {
+        }
+        /**
+         * PEM representation of the replica's private key. The corresponding public
+         * key is encoded in the client's certificate.
+         *
+         * @param string $clientKey
+         */
+        public function setClientKey($clientKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientKey()
+        {
+        }
+        /**
+         * The dump file to create the Cloud SQL replica.
+         *
+         * @param string $dumpFilePath
+         */
+        public function setDumpFilePath($dumpFilePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDumpFilePath()
+        {
+        }
+        /**
+         * The host and port of the on-premises instance in host:port format
+         *
+         * @param string $hostPort
+         */
+        public function setHostPort($hostPort)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostPort()
+        {
+        }
+        /**
+         * This is always `sql#onPremisesConfiguration`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The password for connecting to on-premises instance.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Optional. A list of objects that the user selects for replication from an
+         * external source instance.
+         *
+         * @param SelectedObjects[] $selectedObjects
+         */
+        public function setSelectedObjects($selectedObjects)
+        {
+        }
+        /**
+         * @return SelectedObjects[]
+         */
+        public function getSelectedObjects()
+        {
+        }
+        /**
+         * The reference to Cloud SQL instance if the source is Cloud SQL.
+         *
+         * @param InstanceReference $sourceInstance
+         */
+        public function setSourceInstance(InstanceReference $sourceInstance)
+        {
+        }
+        /**
+         * @return InstanceReference
+         */
+        public function getSourceInstance()
+        {
+        }
+        /**
+         * Optional. SSL option for replica connection to the on-premises source.
+         *
+         * Accepted values: SSL_OPTION_UNSPECIFIED, DISABLE, REQUIRE, VERIFY_CA
+         *
+         * @param self::SSL_OPTION_* $sslOption
+         */
+        public function setSslOption($sslOption)
+        {
+        }
+        /**
+         * @return self::SSL_OPTION_*
+         */
+        public function getSslOption()
+        {
+        }
+        /**
+         * The username for connecting to on-premises instance.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\OnPremisesConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCertificate()
-    {
-    }
-    /**
-     * PEM representation of the replica's x509 certificate.
-     *
-     * @param string $clientCertificate
-     */
-    public function setClientCertificate($clientCertificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientCertificate()
-    {
-    }
-    /**
-     * PEM representation of the replica's private key. The corresponding public
-     * key is encoded in the client's certificate.
-     *
-     * @param string $clientKey
-     */
-    public function setClientKey($clientKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientKey()
-    {
-    }
-    /**
-     * The dump file to create the Cloud SQL replica.
-     *
-     * @param string $dumpFilePath
-     */
-    public function setDumpFilePath($dumpFilePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDumpFilePath()
-    {
-    }
-    /**
-     * The host and port of the on-premises instance in host:port format
-     *
-     * @param string $hostPort
-     */
-    public function setHostPort($hostPort)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostPort()
-    {
-    }
-    /**
-     * This is always `sql#onPremisesConfiguration`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The password for connecting to on-premises instance.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Optional. A list of objects that the user selects for replication from an
-     * external source instance.
-     *
-     * @param SelectedObjects[] $selectedObjects
-     */
-    public function setSelectedObjects($selectedObjects)
-    {
-    }
-    /**
-     * @return SelectedObjects[]
-     */
-    public function getSelectedObjects()
-    {
-    }
-    /**
-     * The reference to Cloud SQL instance if the source is Cloud SQL.
-     *
-     * @param InstanceReference $sourceInstance
-     */
-    public function setSourceInstance(InstanceReference $sourceInstance)
-    {
-    }
-    /**
-     * @return InstanceReference
-     */
-    public function getSourceInstance()
-    {
-    }
-    /**
-     * Optional. SSL option for replica connection to the on-premises source.
-     *
-     * Accepted values: SSL_OPTION_UNSPECIFIED, DISABLE, REQUIRE, VERIFY_CA
-     *
-     * @param self::SSL_OPTION_* $sslOption
-     */
-    public function setSslOption($sslOption)
-    {
-    }
-    /**
-     * @return self::SSL_OPTION_*
-     */
-    public function getSslOption()
-    {
-    }
-    /**
-     * The username for connecting to on-premises instance.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_SQLAdmin_OnPremisesConfiguration extends \Google\Service\SQLAdmin\OnPremisesConfiguration
     {
     }
 }

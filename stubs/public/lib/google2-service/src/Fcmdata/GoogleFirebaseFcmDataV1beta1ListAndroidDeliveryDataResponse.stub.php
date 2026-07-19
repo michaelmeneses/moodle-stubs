@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fcmdata;
-
-class GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse extends \Google\Collection
-{
-    protected $collection_key = 'androidDeliveryData';
-    protected $androidDeliveryDataType = GoogleFirebaseFcmDataV1beta1AndroidDeliveryData::class;
-    protected $androidDeliveryDataDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The delivery data for the provided app. There will be one entry per
-     * combination of app, date, and analytics label.
-     *
-     * @param GoogleFirebaseFcmDataV1beta1AndroidDeliveryData[] $androidDeliveryData
-     */
-    public function setAndroidDeliveryData($androidDeliveryData)
+namespace Google\Service\Fcmdata {
+    class GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse extends \Google\Collection
     {
+        protected $collection_key = 'androidDeliveryData';
+        protected $androidDeliveryDataType = GoogleFirebaseFcmDataV1beta1AndroidDeliveryData::class;
+        protected $androidDeliveryDataDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The delivery data for the provided app. There will be one entry per
+         * combination of app, date, and analytics label.
+         *
+         * @param GoogleFirebaseFcmDataV1beta1AndroidDeliveryData[] $androidDeliveryData
+         */
+        public function setAndroidDeliveryData($androidDeliveryData)
+        {
+        }
+        /**
+         * @return GoogleFirebaseFcmDataV1beta1AndroidDeliveryData[]
+         */
+        public function getAndroidDeliveryData()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseFcmDataV1beta1AndroidDeliveryData[]
+     * Runtime class alias of \Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidDeliveryData()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Fcmdata_GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse extends \Google\Service\Fcmdata\GoogleFirebaseFcmDataV1beta1ListAndroidDeliveryDataResponse
     {
     }
 }

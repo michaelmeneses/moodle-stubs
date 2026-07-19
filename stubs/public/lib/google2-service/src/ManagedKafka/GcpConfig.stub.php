@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class GcpConfig extends \Google\Model
-{
-    protected $accessConfigType = AccessConfig::class;
-    protected $accessConfigDataType = '';
-    /**
-     * Optional. Immutable. The Cloud KMS Key name to use for encryption. The key
-     * must be located in the same region as the cluster and cannot be changed.
-     * Structured like: projects/{project}/locations/{location}/keyRings/{key_ring
-     * }/cryptoKeys/{crypto_key}.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Required. Access configuration for the Kafka cluster.
-     *
-     * @param AccessConfig $accessConfig
-     */
-    public function setAccessConfig(AccessConfig $accessConfig)
+namespace Google\Service\ManagedKafka {
+    class GcpConfig extends \Google\Model
     {
+        protected $accessConfigType = AccessConfig::class;
+        protected $accessConfigDataType = '';
+        /**
+         * Optional. Immutable. The Cloud KMS Key name to use for encryption. The key
+         * must be located in the same region as the cluster and cannot be changed.
+         * Structured like: projects/{project}/locations/{location}/keyRings/{key_ring
+         * }/cryptoKeys/{crypto_key}.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Required. Access configuration for the Kafka cluster.
+         *
+         * @param AccessConfig $accessConfig
+         */
+        public function setAccessConfig(AccessConfig $accessConfig)
+        {
+        }
+        /**
+         * @return AccessConfig
+         */
+        public function getAccessConfig()
+        {
+        }
+        /**
+         * Optional. Immutable. The Cloud KMS Key name to use for encryption. The key
+         * must be located in the same region as the cluster and cannot be changed.
+         * Structured like: projects/{project}/locations/{location}/keyRings/{key_ring
+         * }/cryptoKeys/{crypto_key}.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessConfig
+     * Runtime class alias of \Google\Service\ManagedKafka\GcpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessConfig()
-    {
-    }
-    /**
-     * Optional. Immutable. The Cloud KMS Key name to use for encryption. The key
-     * must be located in the same region as the cluster and cannot be changed.
-     * Structured like: projects/{project}/locations/{location}/keyRings/{key_ring
-     * }/cryptoKeys/{crypto_key}.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKey()
+    class Google_Service_ManagedKafka_GcpConfig extends \Google\Service\ManagedKafka\GcpConfig
     {
     }
 }

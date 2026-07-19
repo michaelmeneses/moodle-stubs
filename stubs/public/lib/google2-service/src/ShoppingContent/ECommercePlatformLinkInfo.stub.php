@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ECommercePlatformLinkInfo extends \Google\Model
-{
-    /**
-     * The id used by the third party service provider to identify the merchant.
-     *
-     * @var string
-     */
-    public $externalAccountId;
-    /**
-     * The id used by the third party service provider to identify the merchant.
-     *
-     * @param string $externalAccountId
-     */
-    public function setExternalAccountId($externalAccountId)
+namespace Google\Service\ShoppingContent {
+    class ECommercePlatformLinkInfo extends \Google\Model
     {
+        /**
+         * The id used by the third party service provider to identify the merchant.
+         *
+         * @var string
+         */
+        public $externalAccountId;
+        /**
+         * The id used by the third party service provider to identify the merchant.
+         *
+         * @param string $externalAccountId
+         */
+        public function setExternalAccountId($externalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ECommercePlatformLinkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalAccountId()
+    class Google_Service_ShoppingContent_ECommercePlatformLinkInfo extends \Google\Service\ShoppingContent\ECommercePlatformLinkInfo
     {
     }
 }

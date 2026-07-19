@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class ReleaseRequirements extends \Google\Collection
-{
-    protected $collection_key = 'upgradeableFromReleases';
-    /**
-     * Optional. A list of releases from which a unit can be upgraded to this one
-     * (optional). If left empty no constraints will be applied. When provided,
-     * unit upgrade requests to this release will check and enforce this
-     * constraint.
-     *
-     * @var string[]
-     */
-    public $upgradeableFromReleases;
-    /**
-     * Optional. A list of releases from which a unit can be upgraded to this one
-     * (optional). If left empty no constraints will be applied. When provided,
-     * unit upgrade requests to this release will check and enforce this
-     * constraint.
-     *
-     * @param string[] $upgradeableFromReleases
-     */
-    public function setUpgradeableFromReleases($upgradeableFromReleases)
+namespace Google\Service\SaaSServiceManagement {
+    class ReleaseRequirements extends \Google\Collection
     {
+        protected $collection_key = 'upgradeableFromReleases';
+        /**
+         * Optional. A list of releases from which a unit can be upgraded to this one
+         * (optional). If left empty no constraints will be applied. When provided,
+         * unit upgrade requests to this release will check and enforce this
+         * constraint.
+         *
+         * @var string[]
+         */
+        public $upgradeableFromReleases;
+        /**
+         * Optional. A list of releases from which a unit can be upgraded to this one
+         * (optional). If left empty no constraints will be applied. When provided,
+         * unit upgrade requests to this release will check and enforce this
+         * constraint.
+         *
+         * @param string[] $upgradeableFromReleases
+         */
+        public function setUpgradeableFromReleases($upgradeableFromReleases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUpgradeableFromReleases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\ReleaseRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpgradeableFromReleases()
+    class Google_Service_SaaSServiceManagement_ReleaseRequirements extends \Google\Service\SaaSServiceManagement\ReleaseRequirements
     {
     }
 }

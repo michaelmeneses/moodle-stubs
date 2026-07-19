@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Snippet extends \Google\Collection
-{
-    protected $collection_key = 'matchRanges';
-    protected $matchRangesType = MatchRange::class;
-    protected $matchRangesDataType = 'array';
-    /**
-     * The snippet of the document. May contain escaped HTML character that should
-     * be unescaped prior to rendering.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * The matched ranges in the snippet.
-     *
-     * @param MatchRange[] $matchRanges
-     */
-    public function setMatchRanges($matchRanges)
+namespace Google\Service\CloudSearch {
+    class Snippet extends \Google\Collection
     {
+        protected $collection_key = 'matchRanges';
+        protected $matchRangesType = MatchRange::class;
+        protected $matchRangesDataType = 'array';
+        /**
+         * The snippet of the document. May contain escaped HTML character that should
+         * be unescaped prior to rendering.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * The matched ranges in the snippet.
+         *
+         * @param MatchRange[] $matchRanges
+         */
+        public function setMatchRanges($matchRanges)
+        {
+        }
+        /**
+         * @return MatchRange[]
+         */
+        public function getMatchRanges()
+        {
+        }
+        /**
+         * The snippet of the document. May contain escaped HTML character that should
+         * be unescaped prior to rendering.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MatchRange[]
+     * Runtime class alias of \Google\Service\CloudSearch\Snippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchRanges()
-    {
-    }
-    /**
-     * The snippet of the document. May contain escaped HTML character that should
-     * be unescaped prior to rendering.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
+    class Google_Service_CloudSearch_Snippet extends \Google\Service\CloudSearch\Snippet
     {
     }
 }

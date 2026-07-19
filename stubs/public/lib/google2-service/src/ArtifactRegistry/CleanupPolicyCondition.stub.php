@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class CleanupPolicyCondition extends \Google\Collection
-{
-    /**
-     * Tag status not specified.
-     */
-    public const TAG_STATE_TAG_STATE_UNSPECIFIED = 'TAG_STATE_UNSPECIFIED';
-    /**
-     * Applies to tagged versions only.
-     */
-    public const TAG_STATE_TAGGED = 'TAGGED';
-    /**
-     * Applies to untagged versions only.
-     */
-    public const TAG_STATE_UNTAGGED = 'UNTAGGED';
-    /**
-     * Applies to all versions.
-     */
-    public const TAG_STATE_ANY = 'ANY';
-    protected $collection_key = 'versionNamePrefixes';
-    /**
-     * Match versions newer than a duration.
-     *
-     * @var string
-     */
-    public $newerThan;
-    /**
-     * Match versions older than a duration.
-     *
-     * @var string
-     */
-    public $olderThan;
-    /**
-     * Match versions by package prefix. Applied on any prefix match.
-     *
-     * @var string[]
-     */
-    public $packageNamePrefixes;
-    /**
-     * Match versions by tag prefix. Applied on any prefix match.
-     *
-     * @var string[]
-     */
-    public $tagPrefixes;
-    /**
-     * Match versions by tag status.
-     *
-     * @var string
-     */
-    public $tagState;
-    /**
-     * Match versions by version name prefix. Applied on any prefix match.
-     *
-     * @var string[]
-     */
-    public $versionNamePrefixes;
-    /**
-     * Match versions newer than a duration.
-     *
-     * @param string $newerThan
-     */
-    public function setNewerThan($newerThan)
+namespace Google\Service\ArtifactRegistry {
+    class CleanupPolicyCondition extends \Google\Collection
     {
+        /**
+         * Tag status not specified.
+         */
+        public const TAG_STATE_TAG_STATE_UNSPECIFIED = 'TAG_STATE_UNSPECIFIED';
+        /**
+         * Applies to tagged versions only.
+         */
+        public const TAG_STATE_TAGGED = 'TAGGED';
+        /**
+         * Applies to untagged versions only.
+         */
+        public const TAG_STATE_UNTAGGED = 'UNTAGGED';
+        /**
+         * Applies to all versions.
+         */
+        public const TAG_STATE_ANY = 'ANY';
+        protected $collection_key = 'versionNamePrefixes';
+        /**
+         * Match versions newer than a duration.
+         *
+         * @var string
+         */
+        public $newerThan;
+        /**
+         * Match versions older than a duration.
+         *
+         * @var string
+         */
+        public $olderThan;
+        /**
+         * Match versions by package prefix. Applied on any prefix match.
+         *
+         * @var string[]
+         */
+        public $packageNamePrefixes;
+        /**
+         * Match versions by tag prefix. Applied on any prefix match.
+         *
+         * @var string[]
+         */
+        public $tagPrefixes;
+        /**
+         * Match versions by tag status.
+         *
+         * @var string
+         */
+        public $tagState;
+        /**
+         * Match versions by version name prefix. Applied on any prefix match.
+         *
+         * @var string[]
+         */
+        public $versionNamePrefixes;
+        /**
+         * Match versions newer than a duration.
+         *
+         * @param string $newerThan
+         */
+        public function setNewerThan($newerThan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewerThan()
+        {
+        }
+        /**
+         * Match versions older than a duration.
+         *
+         * @param string $olderThan
+         */
+        public function setOlderThan($olderThan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOlderThan()
+        {
+        }
+        /**
+         * Match versions by package prefix. Applied on any prefix match.
+         *
+         * @param string[] $packageNamePrefixes
+         */
+        public function setPackageNamePrefixes($packageNamePrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNamePrefixes()
+        {
+        }
+        /**
+         * Match versions by tag prefix. Applied on any prefix match.
+         *
+         * @param string[] $tagPrefixes
+         */
+        public function setTagPrefixes($tagPrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTagPrefixes()
+        {
+        }
+        /**
+         * Match versions by tag status.
+         *
+         * Accepted values: TAG_STATE_UNSPECIFIED, TAGGED, UNTAGGED, ANY
+         *
+         * @param self::TAG_STATE_* $tagState
+         */
+        public function setTagState($tagState)
+        {
+        }
+        /**
+         * @return self::TAG_STATE_*
+         */
+        public function getTagState()
+        {
+        }
+        /**
+         * Match versions by version name prefix. Applied on any prefix match.
+         *
+         * @param string[] $versionNamePrefixes
+         */
+        public function setVersionNamePrefixes($versionNamePrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersionNamePrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\CleanupPolicyCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewerThan()
-    {
-    }
-    /**
-     * Match versions older than a duration.
-     *
-     * @param string $olderThan
-     */
-    public function setOlderThan($olderThan)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOlderThan()
-    {
-    }
-    /**
-     * Match versions by package prefix. Applied on any prefix match.
-     *
-     * @param string[] $packageNamePrefixes
-     */
-    public function setPackageNamePrefixes($packageNamePrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPackageNamePrefixes()
-    {
-    }
-    /**
-     * Match versions by tag prefix. Applied on any prefix match.
-     *
-     * @param string[] $tagPrefixes
-     */
-    public function setTagPrefixes($tagPrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTagPrefixes()
-    {
-    }
-    /**
-     * Match versions by tag status.
-     *
-     * Accepted values: TAG_STATE_UNSPECIFIED, TAGGED, UNTAGGED, ANY
-     *
-     * @param self::TAG_STATE_* $tagState
-     */
-    public function setTagState($tagState)
-    {
-    }
-    /**
-     * @return self::TAG_STATE_*
-     */
-    public function getTagState()
-    {
-    }
-    /**
-     * Match versions by version name prefix. Applied on any prefix match.
-     *
-     * @param string[] $versionNamePrefixes
-     */
-    public function setVersionNamePrefixes($versionNamePrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVersionNamePrefixes()
+    class Google_Service_ArtifactRegistry_CleanupPolicyCondition extends \Google\Service\ArtifactRegistry\CleanupPolicyCondition
     {
     }
 }

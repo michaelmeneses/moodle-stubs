@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1AccessBoundary extends \Google\Collection
-{
-    protected $collection_key = 'accessBoundaryRules';
-    protected $accessBoundaryRulesType = GoogleIdentityStsV1AccessBoundaryRule::class;
-    protected $accessBoundaryRulesDataType = 'array';
-    /**
-     * A list of access boundary rules which defines the upper bound of the
-     * permission a principal may carry. If multiple rules are specified, the
-     * effective access boundary is the union of all the access boundary rules
-     * attached. One access boundary can contain at most 10 rules.
-     *
-     * @param GoogleIdentityStsV1AccessBoundaryRule[] $accessBoundaryRules
-     */
-    public function setAccessBoundaryRules($accessBoundaryRules)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1AccessBoundary extends \Google\Collection
     {
+        protected $collection_key = 'accessBoundaryRules';
+        protected $accessBoundaryRulesType = GoogleIdentityStsV1AccessBoundaryRule::class;
+        protected $accessBoundaryRulesDataType = 'array';
+        /**
+         * A list of access boundary rules which defines the upper bound of the
+         * permission a principal may carry. If multiple rules are specified, the
+         * effective access boundary is the union of all the access boundary rules
+         * attached. One access boundary can contain at most 10 rules.
+         *
+         * @param GoogleIdentityStsV1AccessBoundaryRule[] $accessBoundaryRules
+         */
+        public function setAccessBoundaryRules($accessBoundaryRules)
+        {
+        }
+        /**
+         * @return GoogleIdentityStsV1AccessBoundaryRule[]
+         */
+        public function getAccessBoundaryRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIdentityStsV1AccessBoundaryRule[]
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1AccessBoundary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessBoundaryRules()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1AccessBoundary extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1AccessBoundary
     {
     }
 }

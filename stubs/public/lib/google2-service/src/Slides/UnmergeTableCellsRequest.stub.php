@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UnmergeTableCellsRequest extends \Google\Model
-{
-    /**
-     * The object ID of the table.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $tableRangeType = TableRange::class;
-    protected $tableRangeDataType = '';
-    /**
-     * The object ID of the table.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class UnmergeTableCellsRequest extends \Google\Model
     {
+        /**
+         * The object ID of the table.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $tableRangeType = TableRange::class;
+        protected $tableRangeDataType = '';
+        /**
+         * The object ID of the table.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The table range specifying which cells of the table to unmerge. All merged
+         * cells in this range will be unmerged, and cells that are already unmerged
+         * will not be affected. If the range has no merged cells, the request will do
+         * nothing. If there is text in any of the merged cells, the text will remain
+         * in the upper-left ("head") cell of the resulting block of unmerged cells.
+         *
+         * @param TableRange $tableRange
+         */
+        public function setTableRange(TableRange $tableRange)
+        {
+        }
+        /**
+         * @return TableRange
+         */
+        public function getTableRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\UnmergeTableCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The table range specifying which cells of the table to unmerge. All merged
-     * cells in this range will be unmerged, and cells that are already unmerged
-     * will not be affected. If the range has no merged cells, the request will do
-     * nothing. If there is text in any of the merged cells, the text will remain
-     * in the upper-left ("head") cell of the resulting block of unmerged cells.
-     *
-     * @param TableRange $tableRange
-     */
-    public function setTableRange(TableRange $tableRange)
-    {
-    }
-    /**
-     * @return TableRange
-     */
-    public function getTableRange()
+    class Google_Service_Slides_UnmergeTableCellsRequest extends \Google\Service\Slides\UnmergeTableCellsRequest
     {
     }
 }

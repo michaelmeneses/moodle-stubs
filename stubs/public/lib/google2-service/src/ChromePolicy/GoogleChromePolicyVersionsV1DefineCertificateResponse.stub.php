@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1DefineCertificateResponse extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    /**
-     * The guid of the certificate created by the action.
-     *
-     * @var string
-     */
-    public $networkId;
-    protected $settingsType = GoogleChromePolicyVersionsV1NetworkSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * the resource at which the certificate is defined.
-     *
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * The guid of the certificate created by the action.
-     *
-     * @param string $networkId
-     */
-    public function setNetworkId($networkId)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1DefineCertificateResponse extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        /**
+         * The guid of the certificate created by the action.
+         *
+         * @var string
+         */
+        public $networkId;
+        protected $settingsType = GoogleChromePolicyVersionsV1NetworkSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * the resource at which the certificate is defined.
+         *
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * The guid of the certificate created by the action.
+         *
+         * @param string $networkId
+         */
+        public function setNetworkId($networkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkId()
+        {
+        }
+        /**
+         * the affiliated settings of the certificate (NOT IMPLEMENTED)
+         *
+         * @param GoogleChromePolicyVersionsV1NetworkSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1NetworkSetting[]
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * the resource at which the certificate is defined.
+         *
+         * @param string $targetResource
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkId()
-    {
-    }
-    /**
-     * the affiliated settings of the certificate (NOT IMPLEMENTED)
-     *
-     * @param GoogleChromePolicyVersionsV1NetworkSetting[] $settings
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1NetworkSetting[]
-     */
-    public function getSettings()
-    {
-    }
-    /**
-     * the resource at which the certificate is defined.
-     *
-     * @param string $targetResource
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1DefineCertificateResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateResponse
     {
     }
 }

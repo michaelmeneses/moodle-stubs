@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UserIdentifier extends \Google\Model
-{
-    protected $addressInfoType = OfflineUserAddressInfo::class;
-    protected $addressInfoDataType = '';
-    /**
-     * Hashed email address using SHA-256 hash function after normalization.
-     *
-     * @var string
-     */
-    public $hashedEmail;
-    /**
-     * Hashed phone number using SHA-256 hash function after normalization (E164
-     * standard).
-     *
-     * @var string
-     */
-    public $hashedPhoneNumber;
-    /**
-     * Address information.
-     *
-     * @param OfflineUserAddressInfo $addressInfo
-     */
-    public function setAddressInfo(OfflineUserAddressInfo $addressInfo)
+namespace Google\Service\Dfareporting {
+    class UserIdentifier extends \Google\Model
     {
+        protected $addressInfoType = OfflineUserAddressInfo::class;
+        protected $addressInfoDataType = '';
+        /**
+         * Hashed email address using SHA-256 hash function after normalization.
+         *
+         * @var string
+         */
+        public $hashedEmail;
+        /**
+         * Hashed phone number using SHA-256 hash function after normalization (E164
+         * standard).
+         *
+         * @var string
+         */
+        public $hashedPhoneNumber;
+        /**
+         * Address information.
+         *
+         * @param OfflineUserAddressInfo $addressInfo
+         */
+        public function setAddressInfo(OfflineUserAddressInfo $addressInfo)
+        {
+        }
+        /**
+         * @return OfflineUserAddressInfo
+         */
+        public function getAddressInfo()
+        {
+        }
+        /**
+         * Hashed email address using SHA-256 hash function after normalization.
+         *
+         * @param string $hashedEmail
+         */
+        public function setHashedEmail($hashedEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedEmail()
+        {
+        }
+        /**
+         * Hashed phone number using SHA-256 hash function after normalization (E164
+         * standard).
+         *
+         * @param string $hashedPhoneNumber
+         */
+        public function setHashedPhoneNumber($hashedPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OfflineUserAddressInfo
+     * Runtime class alias of \Google\Service\Dfareporting\UserIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressInfo()
-    {
-    }
-    /**
-     * Hashed email address using SHA-256 hash function after normalization.
-     *
-     * @param string $hashedEmail
-     */
-    public function setHashedEmail($hashedEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedEmail()
-    {
-    }
-    /**
-     * Hashed phone number using SHA-256 hash function after normalization (E164
-     * standard).
-     *
-     * @param string $hashedPhoneNumber
-     */
-    public function setHashedPhoneNumber($hashedPhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedPhoneNumber()
+    class Google_Service_Dfareporting_UserIdentifier extends \Google\Service\Dfareporting\UserIdentifier
     {
     }
 }

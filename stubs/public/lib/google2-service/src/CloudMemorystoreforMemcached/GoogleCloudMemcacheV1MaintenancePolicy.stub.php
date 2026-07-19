@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class GoogleCloudMemcacheV1MaintenancePolicy extends \Google\Collection
-{
-    protected $collection_key = 'weeklyMaintenanceWindow';
-    /**
-     * Output only. The time when the policy was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Description of what this policy is for. Create/Update methods return
-     * INVALID_ARGUMENT if the length is greater than 512.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. The time when the policy was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $weeklyMaintenanceWindowType = WeeklyMaintenanceWindow::class;
-    protected $weeklyMaintenanceWindowDataType = 'array';
-    /**
-     * Output only. The time when the policy was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class GoogleCloudMemcacheV1MaintenancePolicy extends \Google\Collection
     {
+        protected $collection_key = 'weeklyMaintenanceWindow';
+        /**
+         * Output only. The time when the policy was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Description of what this policy is for. Create/Update methods return
+         * INVALID_ARGUMENT if the length is greater than 512.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. The time when the policy was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $weeklyMaintenanceWindowType = WeeklyMaintenanceWindow::class;
+        protected $weeklyMaintenanceWindowDataType = 'array';
+        /**
+         * Output only. The time when the policy was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Description of what this policy is for. Create/Update methods return
+         * INVALID_ARGUMENT if the length is greater than 512.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The time when the policy was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Required. Maintenance window that is applied to resources covered by this
+         * policy. Minimum 1. For the current version, the maximum number of
+         * weekly_maintenance_windows is expected to be one.
+         *
+         * @param WeeklyMaintenanceWindow[] $weeklyMaintenanceWindow
+         */
+        public function setWeeklyMaintenanceWindow($weeklyMaintenanceWindow)
+        {
+        }
+        /**
+         * @return WeeklyMaintenanceWindow[]
+         */
+        public function getWeeklyMaintenanceWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1MaintenancePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Description of what this policy is for. Create/Update methods return
-     * INVALID_ARGUMENT if the length is greater than 512.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The time when the policy was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Required. Maintenance window that is applied to resources covered by this
-     * policy. Minimum 1. For the current version, the maximum number of
-     * weekly_maintenance_windows is expected to be one.
-     *
-     * @param WeeklyMaintenanceWindow[] $weeklyMaintenanceWindow
-     */
-    public function setWeeklyMaintenanceWindow($weeklyMaintenanceWindow)
-    {
-    }
-    /**
-     * @return WeeklyMaintenanceWindow[]
-     */
-    public function getWeeklyMaintenanceWindow()
+    class Google_Service_CloudMemorystoreforMemcached_GoogleCloudMemcacheV1MaintenancePolicy extends \Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1MaintenancePolicy
     {
     }
 }

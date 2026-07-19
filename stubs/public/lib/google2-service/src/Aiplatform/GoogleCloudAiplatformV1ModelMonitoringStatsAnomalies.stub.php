@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies extends \Google\Collection
-{
-    /**
-     * Default value, should not be set.
-     */
-    public const OBJECTIVE_MODEL_DEPLOYMENT_MONITORING_OBJECTIVE_TYPE_UNSPECIFIED = 'MODEL_DEPLOYMENT_MONITORING_OBJECTIVE_TYPE_UNSPECIFIED';
-    /**
-     * Raw feature values' stats to detect skew between Training-Prediction
-     * datasets.
-     */
-    public const OBJECTIVE_RAW_FEATURE_SKEW = 'RAW_FEATURE_SKEW';
-    /**
-     * Raw feature values' stats to detect drift between Serving-Prediction
-     * datasets.
-     */
-    public const OBJECTIVE_RAW_FEATURE_DRIFT = 'RAW_FEATURE_DRIFT';
-    /**
-     * Feature attribution scores to detect skew between Training-Prediction
-     * datasets.
-     */
-    public const OBJECTIVE_FEATURE_ATTRIBUTION_SKEW = 'FEATURE_ATTRIBUTION_SKEW';
-    /**
-     * Feature attribution scores to detect skew between Prediction datasets
-     * collected within different time windows.
-     */
-    public const OBJECTIVE_FEATURE_ATTRIBUTION_DRIFT = 'FEATURE_ATTRIBUTION_DRIFT';
-    protected $collection_key = 'featureStats';
-    /**
-     * Number of anomalies within all stats.
-     *
-     * @var int
-     */
-    public $anomalyCount;
-    /**
-     * Deployed Model ID.
-     *
-     * @var string
-     */
-    public $deployedModelId;
-    protected $featureStatsType = GoogleCloudAiplatformV1ModelMonitoringStatsAnomaliesFeatureHistoricStatsAnomalies::class;
-    protected $featureStatsDataType = 'array';
-    /**
-     * Model Monitoring Objective those stats and anomalies belonging to.
-     *
-     * @var string
-     */
-    public $objective;
-    /**
-     * Number of anomalies within all stats.
-     *
-     * @param int $anomalyCount
-     */
-    public function setAnomalyCount($anomalyCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies extends \Google\Collection
     {
+        /**
+         * Default value, should not be set.
+         */
+        public const OBJECTIVE_MODEL_DEPLOYMENT_MONITORING_OBJECTIVE_TYPE_UNSPECIFIED = 'MODEL_DEPLOYMENT_MONITORING_OBJECTIVE_TYPE_UNSPECIFIED';
+        /**
+         * Raw feature values' stats to detect skew between Training-Prediction
+         * datasets.
+         */
+        public const OBJECTIVE_RAW_FEATURE_SKEW = 'RAW_FEATURE_SKEW';
+        /**
+         * Raw feature values' stats to detect drift between Serving-Prediction
+         * datasets.
+         */
+        public const OBJECTIVE_RAW_FEATURE_DRIFT = 'RAW_FEATURE_DRIFT';
+        /**
+         * Feature attribution scores to detect skew between Training-Prediction
+         * datasets.
+         */
+        public const OBJECTIVE_FEATURE_ATTRIBUTION_SKEW = 'FEATURE_ATTRIBUTION_SKEW';
+        /**
+         * Feature attribution scores to detect skew between Prediction datasets
+         * collected within different time windows.
+         */
+        public const OBJECTIVE_FEATURE_ATTRIBUTION_DRIFT = 'FEATURE_ATTRIBUTION_DRIFT';
+        protected $collection_key = 'featureStats';
+        /**
+         * Number of anomalies within all stats.
+         *
+         * @var int
+         */
+        public $anomalyCount;
+        /**
+         * Deployed Model ID.
+         *
+         * @var string
+         */
+        public $deployedModelId;
+        protected $featureStatsType = GoogleCloudAiplatformV1ModelMonitoringStatsAnomaliesFeatureHistoricStatsAnomalies::class;
+        protected $featureStatsDataType = 'array';
+        /**
+         * Model Monitoring Objective those stats and anomalies belonging to.
+         *
+         * @var string
+         */
+        public $objective;
+        /**
+         * Number of anomalies within all stats.
+         *
+         * @param int $anomalyCount
+         */
+        public function setAnomalyCount($anomalyCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAnomalyCount()
+        {
+        }
+        /**
+         * Deployed Model ID.
+         *
+         * @param string $deployedModelId
+         */
+        public function setDeployedModelId($deployedModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedModelId()
+        {
+        }
+        /**
+         * A list of historical Stats and Anomalies generated for all Features.
+         *
+         * @param GoogleCloudAiplatformV1ModelMonitoringStatsAnomaliesFeatureHistoricStatsAnomalies[] $featureStats
+         */
+        public function setFeatureStats($featureStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelMonitoringStatsAnomaliesFeatureHistoricStatsAnomalies[]
+         */
+        public function getFeatureStats()
+        {
+        }
+        /**
+         * Model Monitoring Objective those stats and anomalies belonging to.
+         *
+         * Accepted values: MODEL_DEPLOYMENT_MONITORING_OBJECTIVE_TYPE_UNSPECIFIED,
+         * RAW_FEATURE_SKEW, RAW_FEATURE_DRIFT, FEATURE_ATTRIBUTION_SKEW,
+         * FEATURE_ATTRIBUTION_DRIFT
+         *
+         * @param self::OBJECTIVE_* $objective
+         */
+        public function setObjective($objective)
+        {
+        }
+        /**
+         * @return self::OBJECTIVE_*
+         */
+        public function getObjective()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnomalyCount()
-    {
-    }
-    /**
-     * Deployed Model ID.
-     *
-     * @param string $deployedModelId
-     */
-    public function setDeployedModelId($deployedModelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeployedModelId()
-    {
-    }
-    /**
-     * A list of historical Stats and Anomalies generated for all Features.
-     *
-     * @param GoogleCloudAiplatformV1ModelMonitoringStatsAnomaliesFeatureHistoricStatsAnomalies[] $featureStats
-     */
-    public function setFeatureStats($featureStats)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModelMonitoringStatsAnomaliesFeatureHistoricStatsAnomalies[]
-     */
-    public function getFeatureStats()
-    {
-    }
-    /**
-     * Model Monitoring Objective those stats and anomalies belonging to.
-     *
-     * Accepted values: MODEL_DEPLOYMENT_MONITORING_OBJECTIVE_TYPE_UNSPECIFIED,
-     * RAW_FEATURE_SKEW, RAW_FEATURE_DRIFT, FEATURE_ATTRIBUTION_SKEW,
-     * FEATURE_ATTRIBUTION_DRIFT
-     *
-     * @param self::OBJECTIVE_* $objective
-     */
-    public function setObjective($objective)
-    {
-    }
-    /**
-     * @return self::OBJECTIVE_*
-     */
-    public function getObjective()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies
     {
     }
 }

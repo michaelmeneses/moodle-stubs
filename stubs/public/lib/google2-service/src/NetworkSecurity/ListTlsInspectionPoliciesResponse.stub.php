@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListTlsInspectionPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * 'next_page_token' is included. To get the next set of results, call this
-     * method again using the value of 'next_page_token' as 'page_token'.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tlsInspectionPoliciesType = TlsInspectionPolicy::class;
-    protected $tlsInspectionPoliciesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * If there might be more results than those appearing in this response, then
-     * 'next_page_token' is included. To get the next set of results, call this
-     * method again using the value of 'next_page_token' as 'page_token'.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\NetworkSecurity {
+    class ListTlsInspectionPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * 'next_page_token' is included. To get the next set of results, call this
+         * method again using the value of 'next_page_token' as 'page_token'.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tlsInspectionPoliciesType = TlsInspectionPolicy::class;
+        protected $tlsInspectionPoliciesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * If there might be more results than those appearing in this response, then
+         * 'next_page_token' is included. To get the next set of results, call this
+         * method again using the value of 'next_page_token' as 'page_token'.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of TlsInspectionPolicies resources.
+         *
+         * @param TlsInspectionPolicy[] $tlsInspectionPolicies
+         */
+        public function setTlsInspectionPolicies($tlsInspectionPolicies)
+        {
+        }
+        /**
+         * @return TlsInspectionPolicy[]
+         */
+        public function getTlsInspectionPolicies()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListTlsInspectionPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of TlsInspectionPolicies resources.
-     *
-     * @param TlsInspectionPolicy[] $tlsInspectionPolicies
-     */
-    public function setTlsInspectionPolicies($tlsInspectionPolicies)
-    {
-    }
-    /**
-     * @return TlsInspectionPolicy[]
-     */
-    public function getTlsInspectionPolicies()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkSecurity_ListTlsInspectionPoliciesResponse extends \Google\Service\NetworkSecurity\ListTlsInspectionPoliciesResponse
     {
     }
 }

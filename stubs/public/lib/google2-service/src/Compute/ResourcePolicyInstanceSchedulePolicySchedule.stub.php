@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyInstanceSchedulePolicySchedule extends \Google\Model
-{
-    /**
-     * Specifies the frequency for the operation, using the unix-cron format.
-     *
-     * @var string
-     */
-    public $schedule;
-    /**
-     * Specifies the frequency for the operation, using the unix-cron format.
-     *
-     * @param string $schedule
-     */
-    public function setSchedule($schedule)
+namespace Google\Service\Compute {
+    class ResourcePolicyInstanceSchedulePolicySchedule extends \Google\Model
     {
+        /**
+         * Specifies the frequency for the operation, using the unix-cron format.
+         *
+         * @var string
+         */
+        public $schedule;
+        /**
+         * Specifies the frequency for the operation, using the unix-cron format.
+         *
+         * @param string $schedule
+         */
+        public function setSchedule($schedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyInstanceSchedulePolicySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchedule()
+    class Google_Service_Compute_ResourcePolicyInstanceSchedulePolicySchedule extends \Google\Service\Compute\ResourcePolicyInstanceSchedulePolicySchedule
     {
     }
 }

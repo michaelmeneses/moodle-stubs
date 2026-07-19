@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Account extends \Google\Model
-{
-    /**
-     * The Account ID uniquely identifies the GTM Account.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $featuresType = AccountFeatures::class;
-    protected $featuresDataType = '';
-    /**
-     * The fingerprint of the GTM Account as computed at storage time. This value
-     * is recomputed whenever the account is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Account display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * GTM Account's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Whether the account shares data anonymously with Google and others. This
-     * flag enables benchmarking by sharing your data in an anonymous form. Google
-     * will remove all identifiable information about your website, combine the
-     * data with hundreds of other anonymous sites and report aggregate trends in
-     * the benchmarking service.
-     *
-     * @var bool
-     */
-    public $shareData;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * The Account ID uniquely identifies the GTM Account.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Account extends \Google\Model
     {
+        /**
+         * The Account ID uniquely identifies the GTM Account.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $featuresType = AccountFeatures::class;
+        protected $featuresDataType = '';
+        /**
+         * The fingerprint of the GTM Account as computed at storage time. This value
+         * is recomputed whenever the account is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Account display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * GTM Account's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Whether the account shares data anonymously with Google and others. This
+         * flag enables benchmarking by sharing your data in an anonymous form. Google
+         * will remove all identifiable information about your website, combine the
+         * data with hundreds of other anonymous sites and report aggregate trends in
+         * the benchmarking service.
+         *
+         * @var bool
+         */
+        public $shareData;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * The Account ID uniquely identifies the GTM Account.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Read-only Account feature set
+         *
+         * @param AccountFeatures $features
+         */
+        public function setFeatures(AccountFeatures $features)
+        {
+        }
+        /**
+         * @return AccountFeatures
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * The fingerprint of the GTM Account as computed at storage time. This value
+         * is recomputed whenever the account is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Account display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * GTM Account's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Whether the account shares data anonymously with Google and others. This
+         * flag enables benchmarking by sharing your data in an anonymous form. Google
+         * will remove all identifiable information about your website, combine the
+         * data with hundreds of other anonymous sites and report aggregate trends in
+         * the benchmarking service.
+         *
+         * @param bool $shareData
+         */
+        public function setShareData($shareData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShareData()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Account registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Read-only Account feature set
-     *
-     * @param AccountFeatures $features
-     */
-    public function setFeatures(AccountFeatures $features)
-    {
-    }
-    /**
-     * @return AccountFeatures
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * The fingerprint of the GTM Account as computed at storage time. This value
-     * is recomputed whenever the account is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Account display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * GTM Account's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Whether the account shares data anonymously with Google and others. This
-     * flag enables benchmarking by sharing your data in an anonymous form. Google
-     * will remove all identifiable information about your website, combine the
-     * data with hundreds of other anonymous sites and report aggregate trends in
-     * the benchmarking service.
-     *
-     * @param bool $shareData
-     */
-    public function setShareData($shareData)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShareData()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
+    class Google_Service_TagManager_Account extends \Google\Service\TagManager\Account
     {
     }
 }

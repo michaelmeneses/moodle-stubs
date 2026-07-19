@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaListServingConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'servingConfigs';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servingConfigsType = GoogleCloudDiscoveryengineV1betaServingConfig::class;
-    protected $servingConfigsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaListServingConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'servingConfigs';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servingConfigsType = GoogleCloudDiscoveryengineV1betaServingConfig::class;
+        protected $servingConfigsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaServingConfig[]
+         */
+        public function setServingConfigs($servingConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaServingConfig[]
+         */
+        public function getServingConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListServingConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaServingConfig[]
-     */
-    public function setServingConfigs($servingConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaServingConfig[]
-     */
-    public function getServingConfigs()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaListServingConfigsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListServingConfigsResponse
     {
     }
 }

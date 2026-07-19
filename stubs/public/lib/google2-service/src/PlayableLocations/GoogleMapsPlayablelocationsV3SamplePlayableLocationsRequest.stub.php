@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'criteria';
-    protected $areaFilterType = GoogleMapsPlayablelocationsV3SampleAreaFilter::class;
-    protected $areaFilterDataType = '';
-    protected $criteriaType = GoogleMapsPlayablelocationsV3SampleCriterion::class;
-    protected $criteriaDataType = 'array';
-    /**
-     * @param GoogleMapsPlayablelocationsV3SampleAreaFilter
-     */
-    public function setAreaFilter(GoogleMapsPlayablelocationsV3SampleAreaFilter $areaFilter)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'criteria';
+        protected $areaFilterType = GoogleMapsPlayablelocationsV3SampleAreaFilter::class;
+        protected $areaFilterDataType = '';
+        protected $criteriaType = GoogleMapsPlayablelocationsV3SampleCriterion::class;
+        protected $criteriaDataType = 'array';
+        /**
+         * @param GoogleMapsPlayablelocationsV3SampleAreaFilter
+         */
+        public function setAreaFilter(GoogleMapsPlayablelocationsV3SampleAreaFilter $areaFilter)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3SampleAreaFilter
+         */
+        public function getAreaFilter()
+        {
+        }
+        /**
+         * @param GoogleMapsPlayablelocationsV3SampleCriterion[]
+         */
+        public function setCriteria($criteria)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3SampleCriterion[]
+         */
+        public function getCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlayablelocationsV3SampleAreaFilter
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAreaFilter()
-    {
-    }
-    /**
-     * @param GoogleMapsPlayablelocationsV3SampleCriterion[]
-     */
-    public function setCriteria($criteria)
-    {
-    }
-    /**
-     * @return GoogleMapsPlayablelocationsV3SampleCriterion[]
-     */
-    public function getCriteria()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest
     {
     }
 }

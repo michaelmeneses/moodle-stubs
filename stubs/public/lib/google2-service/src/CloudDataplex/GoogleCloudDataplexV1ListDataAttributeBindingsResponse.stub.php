@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListDataAttributeBindingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $dataAttributeBindingsType = GoogleCloudDataplexV1DataAttributeBinding::class;
-    protected $dataAttributeBindingsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * DataAttributeBindings under the given parent Location.
-     *
-     * @param GoogleCloudDataplexV1DataAttributeBinding[] $dataAttributeBindings
-     */
-    public function setDataAttributeBindings($dataAttributeBindings)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListDataAttributeBindingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $dataAttributeBindingsType = GoogleCloudDataplexV1DataAttributeBinding::class;
+        protected $dataAttributeBindingsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * DataAttributeBindings under the given parent Location.
+         *
+         * @param GoogleCloudDataplexV1DataAttributeBinding[] $dataAttributeBindings
+         */
+        public function setDataAttributeBindings($dataAttributeBindings)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataAttributeBinding[]
+         */
+        public function getDataAttributeBindings()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataAttributeBinding[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataAttributeBindingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataAttributeBindings()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListDataAttributeBindingsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataAttributeBindingsResponse
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ProbeTcpSocketAction extends \Google\Model
-{
-    /**
-     * Optional: Host name to connect to, defaults to the model serving
-     * container's IP.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * Number of the port to access on the container. Number must be in the range
-     * 1 to 65535.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional: Host name to connect to, defaults to the model serving
-     * container's IP.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ProbeTcpSocketAction extends \Google\Model
     {
+        /**
+         * Optional: Host name to connect to, defaults to the model serving
+         * container's IP.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * Number of the port to access on the container. Number must be in the range
+         * 1 to 65535.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional: Host name to connect to, defaults to the model serving
+         * container's IP.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * Number of the port to access on the container. Number must be in the range
+         * 1 to 65535.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ProbeTcpSocketAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHost()
-    {
-    }
-    /**
-     * Number of the port to access on the container. Number must be in the range
-     * 1 to 65535.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ProbeTcpSocketAction extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ProbeTcpSocketAction
     {
     }
 }

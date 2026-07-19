@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UpsertDatapointsRequest extends \Google\Collection
-{
-    protected $collection_key = 'datapoints';
-    protected $datapointsType = GoogleCloudAiplatformV1IndexDatapoint::class;
-    protected $datapointsDataType = 'array';
-    /**
-     * Optional. Update mask is used to specify the fields to be overwritten in
-     * the datapoints by the update. The fields specified in the update_mask are
-     * relative to each IndexDatapoint inside datapoints, not the full request.
-     * Updatable fields: * Use `all_restricts` to update both restricts and
-     * numeric_restricts.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * A list of datapoints to be created/updated.
-     *
-     * @param GoogleCloudAiplatformV1IndexDatapoint[] $datapoints
-     */
-    public function setDatapoints($datapoints)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UpsertDatapointsRequest extends \Google\Collection
     {
+        protected $collection_key = 'datapoints';
+        protected $datapointsType = GoogleCloudAiplatformV1IndexDatapoint::class;
+        protected $datapointsDataType = 'array';
+        /**
+         * Optional. Update mask is used to specify the fields to be overwritten in
+         * the datapoints by the update. The fields specified in the update_mask are
+         * relative to each IndexDatapoint inside datapoints, not the full request.
+         * Updatable fields: * Use `all_restricts` to update both restricts and
+         * numeric_restricts.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * A list of datapoints to be created/updated.
+         *
+         * @param GoogleCloudAiplatformV1IndexDatapoint[] $datapoints
+         */
+        public function setDatapoints($datapoints)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1IndexDatapoint[]
+         */
+        public function getDatapoints()
+        {
+        }
+        /**
+         * Optional. Update mask is used to specify the fields to be overwritten in
+         * the datapoints by the update. The fields specified in the update_mask are
+         * relative to each IndexDatapoint inside datapoints, not the full request.
+         * Updatable fields: * Use `all_restricts` to update both restricts and
+         * numeric_restricts.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1IndexDatapoint[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpsertDatapointsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatapoints()
-    {
-    }
-    /**
-     * Optional. Update mask is used to specify the fields to be overwritten in
-     * the datapoints by the update. The fields specified in the update_mask are
-     * relative to each IndexDatapoint inside datapoints, not the full request.
-     * Updatable fields: * Use `all_restricts` to update both restricts and
-     * numeric_restricts.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UpsertDatapointsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpsertDatapointsRequest
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class GoogleCloudNetworksecurityV1GrpcEndpoint extends \Google\Model
-{
-    /**
-     * Required. The target URI of the gRPC endpoint. Only UDS path is supported,
-     * and should start with "unix:".
-     *
-     * @var string
-     */
-    public $targetUri;
-    /**
-     * Required. The target URI of the gRPC endpoint. Only UDS path is supported,
-     * and should start with "unix:".
-     *
-     * @param string $targetUri
-     */
-    public function setTargetUri($targetUri)
+namespace Google\Service\NetworkSecurity {
+    class GoogleCloudNetworksecurityV1GrpcEndpoint extends \Google\Model
     {
+        /**
+         * Required. The target URI of the gRPC endpoint. Only UDS path is supported,
+         * and should start with "unix:".
+         *
+         * @var string
+         */
+        public $targetUri;
+        /**
+         * Required. The target URI of the gRPC endpoint. Only UDS path is supported,
+         * and should start with "unix:".
+         *
+         * @param string $targetUri
+         */
+        public function setTargetUri($targetUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\GoogleCloudNetworksecurityV1GrpcEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetUri()
+    class Google_Service_NetworkSecurity_GoogleCloudNetworksecurityV1GrpcEndpoint extends \Google\Service\NetworkSecurity\GoogleCloudNetworksecurityV1GrpcEndpoint
     {
     }
 }

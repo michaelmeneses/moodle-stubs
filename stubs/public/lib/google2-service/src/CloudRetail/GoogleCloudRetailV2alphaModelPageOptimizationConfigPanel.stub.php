@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaModelPageOptimizationConfigPanel extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    protected $candidatesType = GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate::class;
-    protected $candidatesDataType = 'array';
-    protected $defaultCandidateType = GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate::class;
-    protected $defaultCandidateDataType = '';
-    /**
-     * Optional. The name to display for the panel.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The candidates to consider on the panel.
-     *
-     * @param GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate[] $candidates
-     */
-    public function setCandidates($candidates)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaModelPageOptimizationConfigPanel extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        protected $candidatesType = GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate::class;
+        protected $candidatesDataType = 'array';
+        protected $defaultCandidateType = GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate::class;
+        protected $defaultCandidateDataType = '';
+        /**
+         * Optional. The name to display for the panel.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The candidates to consider on the panel.
+         *
+         * @param GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate[] $candidates
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate[]
+         */
+        public function getCandidates()
+        {
+        }
+        /**
+         * Required. The default candidate. If the model fails at serving time, we
+         * fall back to the default.
+         *
+         * @param GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate $defaultCandidate
+         */
+        public function setDefaultCandidate(GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate $defaultCandidate)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate
+         */
+        public function getDefaultCandidate()
+        {
+        }
+        /**
+         * Optional. The name to display for the panel.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaModelPageOptimizationConfigPanel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
-    {
-    }
-    /**
-     * Required. The default candidate. If the model fails at serving time, we
-     * fall back to the default.
-     *
-     * @param GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate $defaultCandidate
-     */
-    public function setDefaultCandidate(GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate $defaultCandidate)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate
-     */
-    public function getDefaultCandidate()
-    {
-    }
-    /**
-     * Optional. The name to display for the panel.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaModelPageOptimizationConfigPanel extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaModelPageOptimizationConfigPanel
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $projects = $apigeeService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ProvisionOrganizationRequest;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Provisions a new Apigee organization with a functioning runtime. This is the
-     * standard way to create trial organizations for a free Apigee trial.
-     * (projects.provisionOrganization)
-     *
-     * @param string $project Required. Name of the GCP project with which to
-     * associate the Apigee organization.
-     * @param GoogleCloudApigeeV1ProvisionOrganizationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $projects = $apigeeService->projects;
+     *  </code>
      */
-    public function provisionOrganization($project, GoogleCloudApigeeV1ProvisionOrganizationRequest $postBody, $optParams = [])
+    class Projects extends \Google\Service\Resource
+    {
+        /**
+         * Provisions a new Apigee organization with a functioning runtime. This is the
+         * standard way to create trial organizations for a free Apigee trial.
+         * (projects.provisionOrganization)
+         *
+         * @param string $project Required. Name of the GCP project with which to
+         * associate the Apigee organization.
+         * @param GoogleCloudApigeeV1ProvisionOrganizationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function provisionOrganization($project, GoogleCloudApigeeV1ProvisionOrganizationRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_Projects extends \Google\Service\Apigee\Resource\Projects
     {
     }
 }

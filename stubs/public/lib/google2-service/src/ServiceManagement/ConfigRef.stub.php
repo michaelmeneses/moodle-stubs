@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class ConfigRef extends \Google\Model
-{
-    /**
-     * Resource name of a service config. It must have the following format:
-     * "services/{service name}/configs/{config id}".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Resource name of a service config. It must have the following format:
-     * "services/{service name}/configs/{config id}".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ServiceManagement {
+    class ConfigRef extends \Google\Model
     {
+        /**
+         * Resource name of a service config. It must have the following format:
+         * "services/{service name}/configs/{config id}".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Resource name of a service config. It must have the following format:
+         * "services/{service name}/configs/{config id}".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\ConfigRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_ServiceManagement_ConfigRef extends \Google\Service\ServiceManagement\ConfigRef
     {
     }
 }

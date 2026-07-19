@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Vertex2DList extends \Google\Collection
-{
-    protected $collection_key = 'yOffsets';
-    public $xOffsets;
-    public $yOffsets;
-    public function setXOffsets($xOffsets)
+namespace Google\Service\SemanticTile {
+    class Vertex2DList extends \Google\Collection
     {
+        protected $collection_key = 'yOffsets';
+        public $xOffsets;
+        public $yOffsets;
+        public function setXOffsets($xOffsets)
+        {
+        }
+        public function getXOffsets()
+        {
+        }
+        public function setYOffsets($yOffsets)
+        {
+        }
+        public function getYOffsets()
+        {
+        }
     }
-    public function getXOffsets()
-    {
-    }
-    public function setYOffsets($yOffsets)
-    {
-    }
-    public function getYOffsets()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\Vertex2DList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_Vertex2DList extends \Google\Service\SemanticTile\Vertex2DList
     {
     }
 }

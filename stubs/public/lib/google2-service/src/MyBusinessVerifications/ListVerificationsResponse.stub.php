@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class ListVerificationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'verifications';
-    /**
-     * If the number of verifications exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page of verification on a
-     * subsequent call. If there are no more attributes, this field will not be
-     * present in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $verificationsType = Verification::class;
-    protected $verificationsDataType = 'array';
-    /**
-     * If the number of verifications exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page of verification on a
-     * subsequent call. If there are no more attributes, this field will not be
-     * present in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\MyBusinessVerifications {
+    class ListVerificationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'verifications';
+        /**
+         * If the number of verifications exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page of verification on a
+         * subsequent call. If there are no more attributes, this field will not be
+         * present in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $verificationsType = Verification::class;
+        protected $verificationsDataType = 'array';
+        /**
+         * If the number of verifications exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page of verification on a
+         * subsequent call. If there are no more attributes, this field will not be
+         * present in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of the verifications.
+         *
+         * @param Verification[] $verifications
+         */
+        public function setVerifications($verifications)
+        {
+        }
+        /**
+         * @return Verification[]
+         */
+        public function getVerifications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\ListVerificationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of the verifications.
-     *
-     * @param Verification[] $verifications
-     */
-    public function setVerifications($verifications)
-    {
-    }
-    /**
-     * @return Verification[]
-     */
-    public function getVerifications()
+    class Google_Service_MyBusinessVerifications_ListVerificationsResponse extends \Google\Service\MyBusinessVerifications\ListVerificationsResponse
     {
     }
 }

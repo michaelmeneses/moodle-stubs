@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SystemFeature extends \Google\Model
-{
-    /**
-     * The name of the feature.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the feature.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AndroidPublisher {
+    class SystemFeature extends \Google\Model
     {
+        /**
+         * The name of the feature.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the feature.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SystemFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_AndroidPublisher_SystemFeature extends \Google\Service\AndroidPublisher\SystemFeature
     {
     }
 }

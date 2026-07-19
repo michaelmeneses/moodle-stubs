@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class CheckCompatibilityResponse extends \Google\Collection
-{
-    protected $collection_key = 'metricCompatibilities';
-    protected $dimensionCompatibilitiesType = DimensionCompatibility::class;
-    protected $dimensionCompatibilitiesDataType = 'array';
-    protected $metricCompatibilitiesType = MetricCompatibility::class;
-    protected $metricCompatibilitiesDataType = 'array';
-    /**
-     * The compatibility of each dimension.
-     *
-     * @param DimensionCompatibility[] $dimensionCompatibilities
-     */
-    public function setDimensionCompatibilities($dimensionCompatibilities)
+namespace Google\Service\AnalyticsData {
+    class CheckCompatibilityResponse extends \Google\Collection
     {
+        protected $collection_key = 'metricCompatibilities';
+        protected $dimensionCompatibilitiesType = DimensionCompatibility::class;
+        protected $dimensionCompatibilitiesDataType = 'array';
+        protected $metricCompatibilitiesType = MetricCompatibility::class;
+        protected $metricCompatibilitiesDataType = 'array';
+        /**
+         * The compatibility of each dimension.
+         *
+         * @param DimensionCompatibility[] $dimensionCompatibilities
+         */
+        public function setDimensionCompatibilities($dimensionCompatibilities)
+        {
+        }
+        /**
+         * @return DimensionCompatibility[]
+         */
+        public function getDimensionCompatibilities()
+        {
+        }
+        /**
+         * The compatibility of each metric.
+         *
+         * @param MetricCompatibility[] $metricCompatibilities
+         */
+        public function setMetricCompatibilities($metricCompatibilities)
+        {
+        }
+        /**
+         * @return MetricCompatibility[]
+         */
+        public function getMetricCompatibilities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionCompatibility[]
+     * Runtime class alias of \Google\Service\AnalyticsData\CheckCompatibilityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionCompatibilities()
-    {
-    }
-    /**
-     * The compatibility of each metric.
-     *
-     * @param MetricCompatibility[] $metricCompatibilities
-     */
-    public function setMetricCompatibilities($metricCompatibilities)
-    {
-    }
-    /**
-     * @return MetricCompatibility[]
-     */
-    public function getMetricCompatibilities()
+    class Google_Service_AnalyticsData_CheckCompatibilityResponse extends \Google\Service\AnalyticsData\CheckCompatibilityResponse
     {
     }
 }

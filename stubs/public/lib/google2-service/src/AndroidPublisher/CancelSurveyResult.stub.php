@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class CancelSurveyResult extends \Google\Model
-{
-    /**
-     * Unspecified cancel survey reason.
-     */
-    public const REASON_CANCEL_SURVEY_REASON_UNSPECIFIED = 'CANCEL_SURVEY_REASON_UNSPECIFIED';
-    /**
-     * Not enough usage of the subscription.
-     */
-    public const REASON_CANCEL_SURVEY_REASON_NOT_ENOUGH_USAGE = 'CANCEL_SURVEY_REASON_NOT_ENOUGH_USAGE';
-    /**
-     * Technical issues while using the app.
-     */
-    public const REASON_CANCEL_SURVEY_REASON_TECHNICAL_ISSUES = 'CANCEL_SURVEY_REASON_TECHNICAL_ISSUES';
-    /**
-     * Cost related issues.
-     */
-    public const REASON_CANCEL_SURVEY_REASON_COST_RELATED = 'CANCEL_SURVEY_REASON_COST_RELATED';
-    /**
-     * The user found a better app.
-     */
-    public const REASON_CANCEL_SURVEY_REASON_FOUND_BETTER_APP = 'CANCEL_SURVEY_REASON_FOUND_BETTER_APP';
-    /**
-     * Other reasons.
-     */
-    public const REASON_CANCEL_SURVEY_REASON_OTHERS = 'CANCEL_SURVEY_REASON_OTHERS';
-    /**
-     * The reason the user selected in the cancel survey.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Only set for CANCEL_SURVEY_REASON_OTHERS. This is the user's freeform
-     * response to the survey.
-     *
-     * @var string
-     */
-    public $reasonUserInput;
-    /**
-     * The reason the user selected in the cancel survey.
-     *
-     * Accepted values: CANCEL_SURVEY_REASON_UNSPECIFIED,
-     * CANCEL_SURVEY_REASON_NOT_ENOUGH_USAGE,
-     * CANCEL_SURVEY_REASON_TECHNICAL_ISSUES, CANCEL_SURVEY_REASON_COST_RELATED,
-     * CANCEL_SURVEY_REASON_FOUND_BETTER_APP, CANCEL_SURVEY_REASON_OTHERS
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\AndroidPublisher {
+    class CancelSurveyResult extends \Google\Model
     {
+        /**
+         * Unspecified cancel survey reason.
+         */
+        public const REASON_CANCEL_SURVEY_REASON_UNSPECIFIED = 'CANCEL_SURVEY_REASON_UNSPECIFIED';
+        /**
+         * Not enough usage of the subscription.
+         */
+        public const REASON_CANCEL_SURVEY_REASON_NOT_ENOUGH_USAGE = 'CANCEL_SURVEY_REASON_NOT_ENOUGH_USAGE';
+        /**
+         * Technical issues while using the app.
+         */
+        public const REASON_CANCEL_SURVEY_REASON_TECHNICAL_ISSUES = 'CANCEL_SURVEY_REASON_TECHNICAL_ISSUES';
+        /**
+         * Cost related issues.
+         */
+        public const REASON_CANCEL_SURVEY_REASON_COST_RELATED = 'CANCEL_SURVEY_REASON_COST_RELATED';
+        /**
+         * The user found a better app.
+         */
+        public const REASON_CANCEL_SURVEY_REASON_FOUND_BETTER_APP = 'CANCEL_SURVEY_REASON_FOUND_BETTER_APP';
+        /**
+         * Other reasons.
+         */
+        public const REASON_CANCEL_SURVEY_REASON_OTHERS = 'CANCEL_SURVEY_REASON_OTHERS';
+        /**
+         * The reason the user selected in the cancel survey.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Only set for CANCEL_SURVEY_REASON_OTHERS. This is the user's freeform
+         * response to the survey.
+         *
+         * @var string
+         */
+        public $reasonUserInput;
+        /**
+         * The reason the user selected in the cancel survey.
+         *
+         * Accepted values: CANCEL_SURVEY_REASON_UNSPECIFIED,
+         * CANCEL_SURVEY_REASON_NOT_ENOUGH_USAGE,
+         * CANCEL_SURVEY_REASON_TECHNICAL_ISSUES, CANCEL_SURVEY_REASON_COST_RELATED,
+         * CANCEL_SURVEY_REASON_FOUND_BETTER_APP, CANCEL_SURVEY_REASON_OTHERS
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * Only set for CANCEL_SURVEY_REASON_OTHERS. This is the user's freeform
+         * response to the survey.
+         *
+         * @param string $reasonUserInput
+         */
+        public function setReasonUserInput($reasonUserInput)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonUserInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::REASON_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\CancelSurveyResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
-    {
-    }
-    /**
-     * Only set for CANCEL_SURVEY_REASON_OTHERS. This is the user's freeform
-     * response to the survey.
-     *
-     * @param string $reasonUserInput
-     */
-    public function setReasonUserInput($reasonUserInput)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReasonUserInput()
+    class Google_Service_AndroidPublisher_CancelSurveyResult extends \Google\Service\AndroidPublisher\CancelSurveyResult
     {
     }
 }

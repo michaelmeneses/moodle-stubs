@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class FilterPair extends \Google\Model
-{
-    /**
-     * The type of value to filter by. Defined by a [Filter](/bid-
-     * manager/reference/rest/v2/filters-metrics#filters) value.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The identifying value to filter by, such as a relevant resource ID.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The type of value to filter by. Defined by a [Filter](/bid-
-     * manager/reference/rest/v2/filters-metrics#filters) value.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\DoubleClickBidManager {
+    class FilterPair extends \Google\Model
     {
+        /**
+         * The type of value to filter by. Defined by a [Filter](/bid-
+         * manager/reference/rest/v2/filters-metrics#filters) value.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The identifying value to filter by, such as a relevant resource ID.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The type of value to filter by. Defined by a [Filter](/bid-
+         * manager/reference/rest/v2/filters-metrics#filters) value.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The identifying value to filter by, such as a relevant resource ID.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\FilterPair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The identifying value to filter by, such as a relevant resource ID.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DoubleClickBidManager_FilterPair extends \Google\Service\DoubleClickBidManager\FilterPair
     {
     }
 }

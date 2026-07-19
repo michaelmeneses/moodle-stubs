@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ListProcessorTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'processorTypes';
-    /**
-     * Points to the next page, otherwise empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $processorTypesType = GoogleCloudDocumentaiV1ProcessorType::class;
-    protected $processorTypesDataType = 'array';
-    /**
-     * Points to the next page, otherwise empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ListProcessorTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'processorTypes';
+        /**
+         * Points to the next page, otherwise empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $processorTypesType = GoogleCloudDocumentaiV1ProcessorType::class;
+        protected $processorTypesDataType = 'array';
+        /**
+         * Points to the next page, otherwise empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The processor types.
+         *
+         * @param GoogleCloudDocumentaiV1ProcessorType[] $processorTypes
+         */
+        public function setProcessorTypes($processorTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1ProcessorType[]
+         */
+        public function getProcessorTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The processor types.
-     *
-     * @param GoogleCloudDocumentaiV1ProcessorType[] $processorTypes
-     */
-    public function setProcessorTypes($processorTypes)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1ProcessorType[]
-     */
-    public function getProcessorTypes()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ListProcessorTypesResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorTypesResponse
     {
     }
 }

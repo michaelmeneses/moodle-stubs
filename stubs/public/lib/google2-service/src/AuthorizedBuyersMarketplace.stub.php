@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AuthorizedBuyersMarketplace (v1).
- *
- * <p>
- * The Authorized Buyers Marketplace API lets buyers programmatically discover
- * inventory; propose, retrieve and negotiate deals with publishers.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/authorized-buyers/apis/marketplace/reference/rest/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AuthorizedBuyersMarketplace extends \Google\Service
-{
-    /** See, create, edit, and delete your Authorized Buyers Marketplace entities.. */
-    const AUTHORIZED_BUYERS_MARKETPLACE = "https://www.googleapis.com/auth/authorized-buyers-marketplace";
-    public $bidders_auctionPackages;
-    public $bidders_finalizedDeals;
-    public $buyers_auctionPackages;
-    public $buyers_clients;
-    public $buyers_clients_users;
-    public $buyers_finalizedDeals;
-    public $buyers_proposals;
-    public $buyers_proposals_deals;
-    public $buyers_publisherProfiles;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AuthorizedBuyersMarketplace
-     * service.
+     * Service definition for AuthorizedBuyersMarketplace (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Authorized Buyers Marketplace API lets buyers programmatically discover
+     * inventory; propose, retrieve and negotiate deals with publishers.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/authorized-buyers/apis/marketplace/reference/rest/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AuthorizedBuyersMarketplace extends \Google\Service
+    {
+        /** See, create, edit, and delete your Authorized Buyers Marketplace entities.. */
+        const AUTHORIZED_BUYERS_MARKETPLACE = "https://www.googleapis.com/auth/authorized-buyers-marketplace";
+        public $bidders_auctionPackages;
+        public $bidders_finalizedDeals;
+        public $buyers_auctionPackages;
+        public $buyers_clients;
+        public $buyers_clients_users;
+        public $buyers_finalizedDeals;
+        public $buyers_proposals;
+        public $buyers_proposals_deals;
+        public $buyers_publisherProfiles;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the AuthorizedBuyersMarketplace
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AuthorizedBuyersMarketplace extends \Google\Service\AuthorizedBuyersMarketplace
     {
     }
 }

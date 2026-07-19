@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetails extends \Google\Model
-{
-    protected $bulletinType = ActivityContentDetailsBulletin::class;
-    protected $bulletinDataType = '';
-    protected $channelItemType = ActivityContentDetailsChannelItem::class;
-    protected $channelItemDataType = '';
-    protected $commentType = ActivityContentDetailsComment::class;
-    protected $commentDataType = '';
-    protected $favoriteType = ActivityContentDetailsFavorite::class;
-    protected $favoriteDataType = '';
-    protected $likeType = ActivityContentDetailsLike::class;
-    protected $likeDataType = '';
-    protected $playlistItemType = ActivityContentDetailsPlaylistItem::class;
-    protected $playlistItemDataType = '';
-    protected $promotedItemType = ActivityContentDetailsPromotedItem::class;
-    protected $promotedItemDataType = '';
-    protected $recommendationType = ActivityContentDetailsRecommendation::class;
-    protected $recommendationDataType = '';
-    protected $socialType = ActivityContentDetailsSocial::class;
-    protected $socialDataType = '';
-    protected $subscriptionType = ActivityContentDetailsSubscription::class;
-    protected $subscriptionDataType = '';
-    protected $uploadType = ActivityContentDetailsUpload::class;
-    protected $uploadDataType = '';
-    /**
-     * The bulletin object contains details about a channel bulletin post. This
-     * object is only present if the snippet.type is bulletin.
-     *
-     * @param ActivityContentDetailsBulletin $bulletin
-     */
-    public function setBulletin(ActivityContentDetailsBulletin $bulletin)
+namespace Google\Service\YouTube {
+    class ActivityContentDetails extends \Google\Model
     {
+        protected $bulletinType = ActivityContentDetailsBulletin::class;
+        protected $bulletinDataType = '';
+        protected $channelItemType = ActivityContentDetailsChannelItem::class;
+        protected $channelItemDataType = '';
+        protected $commentType = ActivityContentDetailsComment::class;
+        protected $commentDataType = '';
+        protected $favoriteType = ActivityContentDetailsFavorite::class;
+        protected $favoriteDataType = '';
+        protected $likeType = ActivityContentDetailsLike::class;
+        protected $likeDataType = '';
+        protected $playlistItemType = ActivityContentDetailsPlaylistItem::class;
+        protected $playlistItemDataType = '';
+        protected $promotedItemType = ActivityContentDetailsPromotedItem::class;
+        protected $promotedItemDataType = '';
+        protected $recommendationType = ActivityContentDetailsRecommendation::class;
+        protected $recommendationDataType = '';
+        protected $socialType = ActivityContentDetailsSocial::class;
+        protected $socialDataType = '';
+        protected $subscriptionType = ActivityContentDetailsSubscription::class;
+        protected $subscriptionDataType = '';
+        protected $uploadType = ActivityContentDetailsUpload::class;
+        protected $uploadDataType = '';
+        /**
+         * The bulletin object contains details about a channel bulletin post. This
+         * object is only present if the snippet.type is bulletin.
+         *
+         * @param ActivityContentDetailsBulletin $bulletin
+         */
+        public function setBulletin(ActivityContentDetailsBulletin $bulletin)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsBulletin
+         */
+        public function getBulletin()
+        {
+        }
+        /**
+         * The channelItem object contains details about a resource which was added to
+         * a channel. This property is only present if the snippet.type is
+         * channelItem.
+         *
+         * @param ActivityContentDetailsChannelItem $channelItem
+         */
+        public function setChannelItem(ActivityContentDetailsChannelItem $channelItem)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsChannelItem
+         */
+        public function getChannelItem()
+        {
+        }
+        /**
+         * The comment object contains information about a resource that received a
+         * comment. This property is only present if the snippet.type is comment.
+         *
+         * @param ActivityContentDetailsComment $comment
+         */
+        public function setComment(ActivityContentDetailsComment $comment)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsComment
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * The favorite object contains information about a video that was marked as a
+         * favorite video. This property is only present if the snippet.type is
+         * favorite.
+         *
+         * @param ActivityContentDetailsFavorite $favorite
+         */
+        public function setFavorite(ActivityContentDetailsFavorite $favorite)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsFavorite
+         */
+        public function getFavorite()
+        {
+        }
+        /**
+         * The like object contains information about a resource that received a
+         * positive (like) rating. This property is only present if the snippet.type
+         * is like.
+         *
+         * @param ActivityContentDetailsLike $like
+         */
+        public function setLike(ActivityContentDetailsLike $like)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsLike
+         */
+        public function getLike()
+        {
+        }
+        /**
+         * The playlistItem object contains information about a new playlist item.
+         * This property is only present if the snippet.type is playlistItem.
+         *
+         * @param ActivityContentDetailsPlaylistItem $playlistItem
+         */
+        public function setPlaylistItem(ActivityContentDetailsPlaylistItem $playlistItem)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsPlaylistItem
+         */
+        public function getPlaylistItem()
+        {
+        }
+        /**
+         * The promotedItem object contains details about a resource which is being
+         * promoted. This property is only present if the snippet.type is
+         * promotedItem.
+         *
+         * @param ActivityContentDetailsPromotedItem $promotedItem
+         */
+        public function setPromotedItem(ActivityContentDetailsPromotedItem $promotedItem)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsPromotedItem
+         */
+        public function getPromotedItem()
+        {
+        }
+        /**
+         * The recommendation object contains information about a recommended
+         * resource. This property is only present if the snippet.type is
+         * recommendation.
+         *
+         * @param ActivityContentDetailsRecommendation $recommendation
+         */
+        public function setRecommendation(ActivityContentDetailsRecommendation $recommendation)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsRecommendation
+         */
+        public function getRecommendation()
+        {
+        }
+        /**
+         * The social object contains details about a social network post. This
+         * property is only present if the snippet.type is social.
+         *
+         * @param ActivityContentDetailsSocial $social
+         */
+        public function setSocial(ActivityContentDetailsSocial $social)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsSocial
+         */
+        public function getSocial()
+        {
+        }
+        /**
+         * The subscription object contains information about a channel that a user
+         * subscribed to. This property is only present if the snippet.type is
+         * subscription.
+         *
+         * @param ActivityContentDetailsSubscription $subscription
+         */
+        public function setSubscription(ActivityContentDetailsSubscription $subscription)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsSubscription
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * The upload object contains information about the uploaded video. This
+         * property is only present if the snippet.type is upload.
+         *
+         * @param ActivityContentDetailsUpload $upload
+         */
+        public function setUpload(ActivityContentDetailsUpload $upload)
+        {
+        }
+        /**
+         * @return ActivityContentDetailsUpload
+         */
+        public function getUpload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivityContentDetailsBulletin
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBulletin()
-    {
-    }
-    /**
-     * The channelItem object contains details about a resource which was added to
-     * a channel. This property is only present if the snippet.type is
-     * channelItem.
-     *
-     * @param ActivityContentDetailsChannelItem $channelItem
-     */
-    public function setChannelItem(ActivityContentDetailsChannelItem $channelItem)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsChannelItem
-     */
-    public function getChannelItem()
-    {
-    }
-    /**
-     * The comment object contains information about a resource that received a
-     * comment. This property is only present if the snippet.type is comment.
-     *
-     * @param ActivityContentDetailsComment $comment
-     */
-    public function setComment(ActivityContentDetailsComment $comment)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsComment
-     */
-    public function getComment()
-    {
-    }
-    /**
-     * The favorite object contains information about a video that was marked as a
-     * favorite video. This property is only present if the snippet.type is
-     * favorite.
-     *
-     * @param ActivityContentDetailsFavorite $favorite
-     */
-    public function setFavorite(ActivityContentDetailsFavorite $favorite)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsFavorite
-     */
-    public function getFavorite()
-    {
-    }
-    /**
-     * The like object contains information about a resource that received a
-     * positive (like) rating. This property is only present if the snippet.type
-     * is like.
-     *
-     * @param ActivityContentDetailsLike $like
-     */
-    public function setLike(ActivityContentDetailsLike $like)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsLike
-     */
-    public function getLike()
-    {
-    }
-    /**
-     * The playlistItem object contains information about a new playlist item.
-     * This property is only present if the snippet.type is playlistItem.
-     *
-     * @param ActivityContentDetailsPlaylistItem $playlistItem
-     */
-    public function setPlaylistItem(ActivityContentDetailsPlaylistItem $playlistItem)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsPlaylistItem
-     */
-    public function getPlaylistItem()
-    {
-    }
-    /**
-     * The promotedItem object contains details about a resource which is being
-     * promoted. This property is only present if the snippet.type is
-     * promotedItem.
-     *
-     * @param ActivityContentDetailsPromotedItem $promotedItem
-     */
-    public function setPromotedItem(ActivityContentDetailsPromotedItem $promotedItem)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsPromotedItem
-     */
-    public function getPromotedItem()
-    {
-    }
-    /**
-     * The recommendation object contains information about a recommended
-     * resource. This property is only present if the snippet.type is
-     * recommendation.
-     *
-     * @param ActivityContentDetailsRecommendation $recommendation
-     */
-    public function setRecommendation(ActivityContentDetailsRecommendation $recommendation)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsRecommendation
-     */
-    public function getRecommendation()
-    {
-    }
-    /**
-     * The social object contains details about a social network post. This
-     * property is only present if the snippet.type is social.
-     *
-     * @param ActivityContentDetailsSocial $social
-     */
-    public function setSocial(ActivityContentDetailsSocial $social)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsSocial
-     */
-    public function getSocial()
-    {
-    }
-    /**
-     * The subscription object contains information about a channel that a user
-     * subscribed to. This property is only present if the snippet.type is
-     * subscription.
-     *
-     * @param ActivityContentDetailsSubscription $subscription
-     */
-    public function setSubscription(ActivityContentDetailsSubscription $subscription)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsSubscription
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * The upload object contains information about the uploaded video. This
-     * property is only present if the snippet.type is upload.
-     *
-     * @param ActivityContentDetailsUpload $upload
-     */
-    public function setUpload(ActivityContentDetailsUpload $upload)
-    {
-    }
-    /**
-     * @return ActivityContentDetailsUpload
-     */
-    public function getUpload()
+    class Google_Service_YouTube_ActivityContentDetails extends \Google\Service\YouTube\ActivityContentDetails
     {
     }
 }

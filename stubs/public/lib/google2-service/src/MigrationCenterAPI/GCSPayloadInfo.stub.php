@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GCSPayloadInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $format;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @param string
-     */
-    public function setFormat($format)
+namespace Google\Service\MigrationCenterAPI {
+    class GCSPayloadInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $format;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @param string
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GCSPayloadInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_MigrationCenterAPI_GCSPayloadInfo extends \Google\Service\MigrationCenterAPI\GCSPayloadInfo
     {
     }
 }

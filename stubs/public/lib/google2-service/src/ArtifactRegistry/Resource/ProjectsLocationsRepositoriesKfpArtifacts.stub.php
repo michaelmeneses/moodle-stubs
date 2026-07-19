@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "kfpArtifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $kfpArtifacts = $artifactregistryService->projects_locations_repositories_kfpArtifacts;
- *  </code>
- */
-class ProjectsLocationsRepositoriesKfpArtifacts extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\UploadKfpArtifactMediaResponse;
+    use Google\Service\ArtifactRegistry\UploadKfpArtifactRequest;
     /**
-     * Directly uploads a KFP artifact. The returned Operation will complete once
-     * the resource is uploaded. Package, Version, and File resources will be
-     * created based on the uploaded artifact. Uploaded artifacts that conflict with
-     * existing resources will be overwritten. (kfpArtifacts.upload)
-     *
-     * @param string $parent The resource name of the repository where the KFP
-     * artifact will be uploaded.
-     * @param UploadKfpArtifactRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UploadKfpArtifactMediaResponse
-     * @throws \Google\Service\Exception
+     * The "kfpArtifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $kfpArtifacts = $artifactregistryService->projects_locations_repositories_kfpArtifacts;
+     *  </code>
      */
-    public function upload($parent, UploadKfpArtifactRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesKfpArtifacts extends \Google\Service\Resource
+    {
+        /**
+         * Directly uploads a KFP artifact. The returned Operation will complete once
+         * the resource is uploaded. Package, Version, and File resources will be
+         * created based on the uploaded artifact. Uploaded artifacts that conflict with
+         * existing resources will be overwritten. (kfpArtifacts.upload)
+         *
+         * @param string $parent The resource name of the repository where the KFP
+         * artifact will be uploaded.
+         * @param UploadKfpArtifactRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UploadKfpArtifactMediaResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($parent, UploadKfpArtifactRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesKfpArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesKfpArtifacts extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesKfpArtifacts
     {
     }
 }

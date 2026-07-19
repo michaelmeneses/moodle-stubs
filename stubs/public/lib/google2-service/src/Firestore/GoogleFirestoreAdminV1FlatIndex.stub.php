@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1FlatIndex extends \Google\Model
-{
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1FlatIndex extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1FlatIndex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firestore_GoogleFirestoreAdminV1FlatIndex extends \Google\Service\Firestore\GoogleFirestoreAdminV1FlatIndex
+    {
+    }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AnthosVMMembershipSpec extends \Google\Collection
-{
-    protected $collection_key = 'subfeaturesSpec';
-    protected $subfeaturesSpecType = AnthosVMSubFeatureSpec::class;
-    protected $subfeaturesSpecDataType = 'array';
-    /**
-     * @param AnthosVMSubFeatureSpec[]
-     */
-    public function setSubfeaturesSpec($subfeaturesSpec)
+namespace Google\Service\GKEHub {
+    class AnthosVMMembershipSpec extends \Google\Collection
     {
+        protected $collection_key = 'subfeaturesSpec';
+        protected $subfeaturesSpecType = AnthosVMSubFeatureSpec::class;
+        protected $subfeaturesSpecDataType = 'array';
+        /**
+         * @param AnthosVMSubFeatureSpec[]
+         */
+        public function setSubfeaturesSpec($subfeaturesSpec)
+        {
+        }
+        /**
+         * @return AnthosVMSubFeatureSpec[]
+         */
+        public function getSubfeaturesSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnthosVMSubFeatureSpec[]
+     * Runtime class alias of \Google\Service\GKEHub\AnthosVMMembershipSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubfeaturesSpec()
+    class Google_Service_GKEHub_AnthosVMMembershipSpec extends \Google\Service\GKEHub\AnthosVMMembershipSpec
     {
     }
 }

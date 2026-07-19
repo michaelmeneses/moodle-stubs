@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildbotResourceUsageIOStats extends \Google\Model
-{
-    public $readBytesCount;
-    public $readCount;
-    public $readTimeMs;
-    public $writeBytesCount;
-    public $writeCount;
-    public $writeTimeMs;
-    public function setReadBytesCount($readBytesCount)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildbotResourceUsageIOStats extends \Google\Model
     {
+        public $readBytesCount;
+        public $readCount;
+        public $readTimeMs;
+        public $writeBytesCount;
+        public $writeCount;
+        public $writeTimeMs;
+        public function setReadBytesCount($readBytesCount)
+        {
+        }
+        public function getReadBytesCount()
+        {
+        }
+        public function setReadCount($readCount)
+        {
+        }
+        public function getReadCount()
+        {
+        }
+        public function setReadTimeMs($readTimeMs)
+        {
+        }
+        public function getReadTimeMs()
+        {
+        }
+        public function setWriteBytesCount($writeBytesCount)
+        {
+        }
+        public function getWriteBytesCount()
+        {
+        }
+        public function setWriteCount($writeCount)
+        {
+        }
+        public function getWriteCount()
+        {
+        }
+        public function setWriteTimeMs($writeTimeMs)
+        {
+        }
+        public function getWriteTimeMs()
+        {
+        }
     }
-    public function getReadBytesCount()
-    {
-    }
-    public function setReadCount($readCount)
-    {
-    }
-    public function getReadCount()
-    {
-    }
-    public function setReadTimeMs($readTimeMs)
-    {
-    }
-    public function getReadTimeMs()
-    {
-    }
-    public function setWriteBytesCount($writeBytesCount)
-    {
-    }
-    public function getWriteBytesCount()
-    {
-    }
-    public function setWriteCount($writeCount)
-    {
-    }
-    public function getWriteCount()
-    {
-    }
-    public function setWriteTimeMs($writeTimeMs)
-    {
-    }
-    public function getWriteTimeMs()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotResourceUsageIOStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildbotResourceUsageIOStats extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotResourceUsageIOStats
     {
     }
 }

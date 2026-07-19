@@ -21,224 +21,233 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SessionTemplate extends \Google\Model
-{
-    /**
-     * Output only. The time when the template was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The email address of the user who created the template.
-     *
-     * @var string
-     */
-    public $creator;
-    /**
-     * Optional. Brief description of the template.
-     *
-     * @var string
-     */
-    public $description;
-    protected $environmentConfigType = EnvironmentConfig::class;
-    protected $environmentConfigDataType = '';
-    protected $jupyterSessionType = JupyterConfig::class;
-    protected $jupyterSessionDataType = '';
-    /**
-     * Optional. Labels to associate with sessions created using this template.
-     * Label keys must contain 1 to 63 characters, and must conform to RFC 1035
-     * (https://www.ietf.org/rfc/rfc1035.txt). Label values can be empty, but, if
-     * present, must contain 1 to 63 characters and conform to RFC 1035
-     * (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
-     * associated with a session.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. Identifier. The resource name of the session template.
-     *
-     * @var string
-     */
-    public $name;
-    protected $runtimeConfigType = RuntimeConfig::class;
-    protected $runtimeConfigDataType = '';
-    protected $sparkConnectSessionType = SparkConnectConfig::class;
-    protected $sparkConnectSessionDataType = '';
-    /**
-     * Output only. The time the template was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. A session template UUID (Unique Universal Identifier). The
-     * service generates this value when it creates the session template.
-     *
-     * @var string
-     */
-    public $uuid;
-    /**
-     * Output only. The time when the template was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Dataproc {
+    class SessionTemplate extends \Google\Model
     {
+        /**
+         * Output only. The time when the template was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The email address of the user who created the template.
+         *
+         * @var string
+         */
+        public $creator;
+        /**
+         * Optional. Brief description of the template.
+         *
+         * @var string
+         */
+        public $description;
+        protected $environmentConfigType = EnvironmentConfig::class;
+        protected $environmentConfigDataType = '';
+        protected $jupyterSessionType = JupyterConfig::class;
+        protected $jupyterSessionDataType = '';
+        /**
+         * Optional. Labels to associate with sessions created using this template.
+         * Label keys must contain 1 to 63 characters, and must conform to RFC 1035
+         * (https://www.ietf.org/rfc/rfc1035.txt). Label values can be empty, but, if
+         * present, must contain 1 to 63 characters and conform to RFC 1035
+         * (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
+         * associated with a session.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. Identifier. The resource name of the session template.
+         *
+         * @var string
+         */
+        public $name;
+        protected $runtimeConfigType = RuntimeConfig::class;
+        protected $runtimeConfigDataType = '';
+        protected $sparkConnectSessionType = SparkConnectConfig::class;
+        protected $sparkConnectSessionDataType = '';
+        /**
+         * Output only. The time the template was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. A session template UUID (Unique Universal Identifier). The
+         * service generates this value when it creates the session template.
+         *
+         * @var string
+         */
+        public $uuid;
+        /**
+         * Output only. The time when the template was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The email address of the user who created the template.
+         *
+         * @param string $creator
+         */
+        public function setCreator($creator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * Optional. Brief description of the template.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Environment configuration for session execution.
+         *
+         * @param EnvironmentConfig $environmentConfig
+         */
+        public function setEnvironmentConfig(EnvironmentConfig $environmentConfig)
+        {
+        }
+        /**
+         * @return EnvironmentConfig
+         */
+        public function getEnvironmentConfig()
+        {
+        }
+        /**
+         * Optional. Jupyter session config.
+         *
+         * @param JupyterConfig $jupyterSession
+         */
+        public function setJupyterSession(JupyterConfig $jupyterSession)
+        {
+        }
+        /**
+         * @return JupyterConfig
+         */
+        public function getJupyterSession()
+        {
+        }
+        /**
+         * Optional. Labels to associate with sessions created using this template.
+         * Label keys must contain 1 to 63 characters, and must conform to RFC 1035
+         * (https://www.ietf.org/rfc/rfc1035.txt). Label values can be empty, but, if
+         * present, must contain 1 to 63 characters and conform to RFC 1035
+         * (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
+         * associated with a session.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. Identifier. The resource name of the session template.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Runtime configuration for session execution.
+         *
+         * @param RuntimeConfig $runtimeConfig
+         */
+        public function setRuntimeConfig(RuntimeConfig $runtimeConfig)
+        {
+        }
+        /**
+         * @return RuntimeConfig
+         */
+        public function getRuntimeConfig()
+        {
+        }
+        /**
+         * Optional. Spark connect session config.
+         *
+         * @param SparkConnectConfig $sparkConnectSession
+         */
+        public function setSparkConnectSession(SparkConnectConfig $sparkConnectSession)
+        {
+        }
+        /**
+         * @return SparkConnectConfig
+         */
+        public function getSparkConnectSession()
+        {
+        }
+        /**
+         * Output only. The time the template was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. A session template UUID (Unique Universal Identifier). The
+         * service generates this value when it creates the session template.
+         *
+         * @param string $uuid
+         */
+        public function setUuid($uuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SessionTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The email address of the user who created the template.
-     *
-     * @param string $creator
-     */
-    public function setCreator($creator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * Optional. Brief description of the template.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Environment configuration for session execution.
-     *
-     * @param EnvironmentConfig $environmentConfig
-     */
-    public function setEnvironmentConfig(EnvironmentConfig $environmentConfig)
-    {
-    }
-    /**
-     * @return EnvironmentConfig
-     */
-    public function getEnvironmentConfig()
-    {
-    }
-    /**
-     * Optional. Jupyter session config.
-     *
-     * @param JupyterConfig $jupyterSession
-     */
-    public function setJupyterSession(JupyterConfig $jupyterSession)
-    {
-    }
-    /**
-     * @return JupyterConfig
-     */
-    public function getJupyterSession()
-    {
-    }
-    /**
-     * Optional. Labels to associate with sessions created using this template.
-     * Label keys must contain 1 to 63 characters, and must conform to RFC 1035
-     * (https://www.ietf.org/rfc/rfc1035.txt). Label values can be empty, but, if
-     * present, must contain 1 to 63 characters and conform to RFC 1035
-     * (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
-     * associated with a session.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. Identifier. The resource name of the session template.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Runtime configuration for session execution.
-     *
-     * @param RuntimeConfig $runtimeConfig
-     */
-    public function setRuntimeConfig(RuntimeConfig $runtimeConfig)
-    {
-    }
-    /**
-     * @return RuntimeConfig
-     */
-    public function getRuntimeConfig()
-    {
-    }
-    /**
-     * Optional. Spark connect session config.
-     *
-     * @param SparkConnectConfig $sparkConnectSession
-     */
-    public function setSparkConnectSession(SparkConnectConfig $sparkConnectSession)
-    {
-    }
-    /**
-     * @return SparkConnectConfig
-     */
-    public function getSparkConnectSession()
-    {
-    }
-    /**
-     * Output only. The time the template was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. A session template UUID (Unique Universal Identifier). The
-     * service generates this value when it creates the session template.
-     *
-     * @param string $uuid
-     */
-    public function setUuid($uuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUuid()
+    class Google_Service_Dataproc_SessionTemplate extends \Google\Service\Dataproc\SessionTemplate
     {
     }
 }

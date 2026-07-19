@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class SecretVolume extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * The path within the container to mount the secret volume. For example,
-     * setting the mount_path as `/etc/secrets` would mount the secret value files
-     * under the `/etc/secrets` directory. This directory will also be completely
-     * shadowed and unavailable to mount any other secrets. Recommended mount
-     * path: /etc/secrets
-     *
-     * @var string
-     */
-    public $mountPath;
-    /**
-     * Project identifier (preferably project number but can also be the project
-     * ID) of the project that contains the secret. If not set, it is assumed that
-     * the secret is in the same project as the function.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Name of the secret in secret manager (not the full resource name).
-     *
-     * @var string
-     */
-    public $secret;
-    protected $versionsType = SecretVersion::class;
-    protected $versionsDataType = 'array';
-    /**
-     * The path within the container to mount the secret volume. For example,
-     * setting the mount_path as `/etc/secrets` would mount the secret value files
-     * under the `/etc/secrets` directory. This directory will also be completely
-     * shadowed and unavailable to mount any other secrets. Recommended mount
-     * path: /etc/secrets
-     *
-     * @param string $mountPath
-     */
-    public function setMountPath($mountPath)
+namespace Google\Service\CloudFunctions {
+    class SecretVolume extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * The path within the container to mount the secret volume. For example,
+         * setting the mount_path as `/etc/secrets` would mount the secret value files
+         * under the `/etc/secrets` directory. This directory will also be completely
+         * shadowed and unavailable to mount any other secrets. Recommended mount
+         * path: /etc/secrets
+         *
+         * @var string
+         */
+        public $mountPath;
+        /**
+         * Project identifier (preferably project number but can also be the project
+         * ID) of the project that contains the secret. If not set, it is assumed that
+         * the secret is in the same project as the function.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Name of the secret in secret manager (not the full resource name).
+         *
+         * @var string
+         */
+        public $secret;
+        protected $versionsType = SecretVersion::class;
+        protected $versionsDataType = 'array';
+        /**
+         * The path within the container to mount the secret volume. For example,
+         * setting the mount_path as `/etc/secrets` would mount the secret value files
+         * under the `/etc/secrets` directory. This directory will also be completely
+         * shadowed and unavailable to mount any other secrets. Recommended mount
+         * path: /etc/secrets
+         *
+         * @param string $mountPath
+         */
+        public function setMountPath($mountPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPath()
+        {
+        }
+        /**
+         * Project identifier (preferably project number but can also be the project
+         * ID) of the project that contains the secret. If not set, it is assumed that
+         * the secret is in the same project as the function.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Name of the secret in secret manager (not the full resource name).
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * List of secret versions to mount for this secret. If empty, the `latest`
+         * version of the secret will be made available in a file named after the
+         * secret under the mount point.
+         *
+         * @param SecretVersion[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return SecretVersion[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\SecretVolume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMountPath()
-    {
-    }
-    /**
-     * Project identifier (preferably project number but can also be the project
-     * ID) of the project that contains the secret. If not set, it is assumed that
-     * the secret is in the same project as the function.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Name of the secret in secret manager (not the full resource name).
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
-    {
-    }
-    /**
-     * List of secret versions to mount for this secret. If empty, the `latest`
-     * version of the secret will be made available in a file named after the
-     * secret under the mount point.
-     *
-     * @param SecretVersion[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return SecretVersion[]
-     */
-    public function getVersions()
+    class Google_Service_CloudFunctions_SecretVolume extends \Google\Service\CloudFunctions\SecretVolume
     {
     }
 }

@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlSourceConfig extends \Google\Model
-{
-    protected $binaryLogPositionType = BinaryLogPosition::class;
-    protected $binaryLogPositionDataType = '';
-    protected $excludeObjectsType = MysqlRdbms::class;
-    protected $excludeObjectsDataType = '';
-    protected $gtidType = Gtid::class;
-    protected $gtidDataType = '';
-    protected $includeObjectsType = MysqlRdbms::class;
-    protected $includeObjectsDataType = '';
-    /**
-     * Maximum number of concurrent backfill tasks. The number should be non
-     * negative. If not set (or set to 0), the system's default value will be
-     * used.
-     *
-     * @var int
-     */
-    public $maxConcurrentBackfillTasks;
-    /**
-     * Maximum number of concurrent CDC tasks. The number should be non negative.
-     * If not set (or set to 0), the system's default value will be used.
-     *
-     * @var int
-     */
-    public $maxConcurrentCdcTasks;
-    /**
-     * Use Binary log position based replication.
-     *
-     * @param BinaryLogPosition $binaryLogPosition
-     */
-    public function setBinaryLogPosition(BinaryLogPosition $binaryLogPosition)
+namespace Google\Service\Datastream {
+    class MysqlSourceConfig extends \Google\Model
     {
+        protected $binaryLogPositionType = BinaryLogPosition::class;
+        protected $binaryLogPositionDataType = '';
+        protected $excludeObjectsType = MysqlRdbms::class;
+        protected $excludeObjectsDataType = '';
+        protected $gtidType = Gtid::class;
+        protected $gtidDataType = '';
+        protected $includeObjectsType = MysqlRdbms::class;
+        protected $includeObjectsDataType = '';
+        /**
+         * Maximum number of concurrent backfill tasks. The number should be non
+         * negative. If not set (or set to 0), the system's default value will be
+         * used.
+         *
+         * @var int
+         */
+        public $maxConcurrentBackfillTasks;
+        /**
+         * Maximum number of concurrent CDC tasks. The number should be non negative.
+         * If not set (or set to 0), the system's default value will be used.
+         *
+         * @var int
+         */
+        public $maxConcurrentCdcTasks;
+        /**
+         * Use Binary log position based replication.
+         *
+         * @param BinaryLogPosition $binaryLogPosition
+         */
+        public function setBinaryLogPosition(BinaryLogPosition $binaryLogPosition)
+        {
+        }
+        /**
+         * @return BinaryLogPosition
+         */
+        public function getBinaryLogPosition()
+        {
+        }
+        /**
+         * MySQL objects to exclude from the stream.
+         *
+         * @param MysqlRdbms $excludeObjects
+         */
+        public function setExcludeObjects(MysqlRdbms $excludeObjects)
+        {
+        }
+        /**
+         * @return MysqlRdbms
+         */
+        public function getExcludeObjects()
+        {
+        }
+        /**
+         * Use GTID based replication.
+         *
+         * @param Gtid $gtid
+         */
+        public function setGtid(Gtid $gtid)
+        {
+        }
+        /**
+         * @return Gtid
+         */
+        public function getGtid()
+        {
+        }
+        /**
+         * MySQL objects to retrieve from the source.
+         *
+         * @param MysqlRdbms $includeObjects
+         */
+        public function setIncludeObjects(MysqlRdbms $includeObjects)
+        {
+        }
+        /**
+         * @return MysqlRdbms
+         */
+        public function getIncludeObjects()
+        {
+        }
+        /**
+         * Maximum number of concurrent backfill tasks. The number should be non
+         * negative. If not set (or set to 0), the system's default value will be
+         * used.
+         *
+         * @param int $maxConcurrentBackfillTasks
+         */
+        public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentBackfillTasks()
+        {
+        }
+        /**
+         * Maximum number of concurrent CDC tasks. The number should be non negative.
+         * If not set (or set to 0), the system's default value will be used.
+         *
+         * @param int $maxConcurrentCdcTasks
+         */
+        public function setMaxConcurrentCdcTasks($maxConcurrentCdcTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentCdcTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BinaryLogPosition
+     * Runtime class alias of \Google\Service\Datastream\MysqlSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryLogPosition()
-    {
-    }
-    /**
-     * MySQL objects to exclude from the stream.
-     *
-     * @param MysqlRdbms $excludeObjects
-     */
-    public function setExcludeObjects(MysqlRdbms $excludeObjects)
-    {
-    }
-    /**
-     * @return MysqlRdbms
-     */
-    public function getExcludeObjects()
-    {
-    }
-    /**
-     * Use GTID based replication.
-     *
-     * @param Gtid $gtid
-     */
-    public function setGtid(Gtid $gtid)
-    {
-    }
-    /**
-     * @return Gtid
-     */
-    public function getGtid()
-    {
-    }
-    /**
-     * MySQL objects to retrieve from the source.
-     *
-     * @param MysqlRdbms $includeObjects
-     */
-    public function setIncludeObjects(MysqlRdbms $includeObjects)
-    {
-    }
-    /**
-     * @return MysqlRdbms
-     */
-    public function getIncludeObjects()
-    {
-    }
-    /**
-     * Maximum number of concurrent backfill tasks. The number should be non
-     * negative. If not set (or set to 0), the system's default value will be
-     * used.
-     *
-     * @param int $maxConcurrentBackfillTasks
-     */
-    public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentBackfillTasks()
-    {
-    }
-    /**
-     * Maximum number of concurrent CDC tasks. The number should be non negative.
-     * If not set (or set to 0), the system's default value will be used.
-     *
-     * @param int $maxConcurrentCdcTasks
-     */
-    public function setMaxConcurrentCdcTasks($maxConcurrentCdcTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentCdcTasks()
+    class Google_Service_Datastream_MysqlSourceConfig extends \Google\Service\Datastream\MysqlSourceConfig
     {
     }
 }

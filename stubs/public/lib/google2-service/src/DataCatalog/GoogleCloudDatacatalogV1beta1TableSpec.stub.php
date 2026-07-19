@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1TableSpec extends \Google\Model
-{
-    public $groupedEntry;
-    public function setGroupedEntry($groupedEntry)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1TableSpec extends \Google\Model
     {
+        public $groupedEntry;
+        public function setGroupedEntry($groupedEntry)
+        {
+        }
+        public function getGroupedEntry()
+        {
+        }
     }
-    public function getGroupedEntry()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1TableSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TableSpec
     {
     }
 }

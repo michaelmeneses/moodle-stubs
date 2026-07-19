@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SpecialistPool extends \Google\Collection
-{
-    protected $collection_key = 'specialistWorkerEmails';
-    /**
-     * Required. The user-defined name of the SpecialistPool. The name can be up
-     * to 128 characters long and can consist of any UTF-8 characters. This field
-     * should be unique on project-level.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The resource name of the SpecialistPool.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The resource name of the pending data labeling jobs.
-     *
-     * @var string[]
-     */
-    public $pendingDataLabelingJobs;
-    /**
-     * The email addresses of the managers in the SpecialistPool.
-     *
-     * @var string[]
-     */
-    public $specialistManagerEmails;
-    /**
-     * Output only. The number of managers in this SpecialistPool.
-     *
-     * @var int
-     */
-    public $specialistManagersCount;
-    /**
-     * The email addresses of workers in the SpecialistPool.
-     *
-     * @var string[]
-     */
-    public $specialistWorkerEmails;
-    /**
-     * Required. The user-defined name of the SpecialistPool. The name can be up
-     * to 128 characters long and can consist of any UTF-8 characters. This field
-     * should be unique on project-level.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SpecialistPool extends \Google\Collection
     {
+        protected $collection_key = 'specialistWorkerEmails';
+        /**
+         * Required. The user-defined name of the SpecialistPool. The name can be up
+         * to 128 characters long and can consist of any UTF-8 characters. This field
+         * should be unique on project-level.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The resource name of the SpecialistPool.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The resource name of the pending data labeling jobs.
+         *
+         * @var string[]
+         */
+        public $pendingDataLabelingJobs;
+        /**
+         * The email addresses of the managers in the SpecialistPool.
+         *
+         * @var string[]
+         */
+        public $specialistManagerEmails;
+        /**
+         * Output only. The number of managers in this SpecialistPool.
+         *
+         * @var int
+         */
+        public $specialistManagersCount;
+        /**
+         * The email addresses of workers in the SpecialistPool.
+         *
+         * @var string[]
+         */
+        public $specialistWorkerEmails;
+        /**
+         * Required. The user-defined name of the SpecialistPool. The name can be up
+         * to 128 characters long and can consist of any UTF-8 characters. This field
+         * should be unique on project-level.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The resource name of the SpecialistPool.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The resource name of the pending data labeling jobs.
+         *
+         * @param string[] $pendingDataLabelingJobs
+         */
+        public function setPendingDataLabelingJobs($pendingDataLabelingJobs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPendingDataLabelingJobs()
+        {
+        }
+        /**
+         * The email addresses of the managers in the SpecialistPool.
+         *
+         * @param string[] $specialistManagerEmails
+         */
+        public function setSpecialistManagerEmails($specialistManagerEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSpecialistManagerEmails()
+        {
+        }
+        /**
+         * Output only. The number of managers in this SpecialistPool.
+         *
+         * @param int $specialistManagersCount
+         */
+        public function setSpecialistManagersCount($specialistManagersCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSpecialistManagersCount()
+        {
+        }
+        /**
+         * The email addresses of workers in the SpecialistPool.
+         *
+         * @param string[] $specialistWorkerEmails
+         */
+        public function setSpecialistWorkerEmails($specialistWorkerEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSpecialistWorkerEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpecialistPool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The resource name of the SpecialistPool.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The resource name of the pending data labeling jobs.
-     *
-     * @param string[] $pendingDataLabelingJobs
-     */
-    public function setPendingDataLabelingJobs($pendingDataLabelingJobs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPendingDataLabelingJobs()
-    {
-    }
-    /**
-     * The email addresses of the managers in the SpecialistPool.
-     *
-     * @param string[] $specialistManagerEmails
-     */
-    public function setSpecialistManagerEmails($specialistManagerEmails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSpecialistManagerEmails()
-    {
-    }
-    /**
-     * Output only. The number of managers in this SpecialistPool.
-     *
-     * @param int $specialistManagersCount
-     */
-    public function setSpecialistManagersCount($specialistManagersCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSpecialistManagersCount()
-    {
-    }
-    /**
-     * The email addresses of workers in the SpecialistPool.
-     *
-     * @param string[] $specialistWorkerEmails
-     */
-    public function setSpecialistWorkerEmails($specialistWorkerEmails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSpecialistWorkerEmails()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SpecialistPool extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpecialistPool
     {
     }
 }

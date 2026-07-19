@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Condition extends \Google\Model
-{
-    /**
-     * Unused
-     */
-    public const OPERATOR_RELATIONAL_OPERATOR_UNSPECIFIED = 'RELATIONAL_OPERATOR_UNSPECIFIED';
-    /**
-     * Equal. Attempts to match even with incompatible types.
-     */
-    public const OPERATOR_EQUAL_TO = 'EQUAL_TO';
-    /**
-     * Not equal to. Attempts to match even with incompatible types.
-     */
-    public const OPERATOR_NOT_EQUAL_TO = 'NOT_EQUAL_TO';
-    /**
-     * Greater than.
-     */
-    public const OPERATOR_GREATER_THAN = 'GREATER_THAN';
-    /**
-     * Less than.
-     */
-    public const OPERATOR_LESS_THAN = 'LESS_THAN';
-    /**
-     * Greater than or equals.
-     */
-    public const OPERATOR_GREATER_THAN_OR_EQUALS = 'GREATER_THAN_OR_EQUALS';
-    /**
-     * Less than or equals.
-     */
-    public const OPERATOR_LESS_THAN_OR_EQUALS = 'LESS_THAN_OR_EQUALS';
-    /**
-     * Exists
-     */
-    public const OPERATOR_EXISTS = 'EXISTS';
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    /**
-     * Required. Operator used to compare the field or infoType to the value.
-     *
-     * @var string
-     */
-    public $operator;
-    protected $valueType = GooglePrivacyDlpV2Value::class;
-    protected $valueDataType = '';
-    /**
-     * Required. Field within the record this condition is evaluated against.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Condition extends \Google\Model
     {
+        /**
+         * Unused
+         */
+        public const OPERATOR_RELATIONAL_OPERATOR_UNSPECIFIED = 'RELATIONAL_OPERATOR_UNSPECIFIED';
+        /**
+         * Equal. Attempts to match even with incompatible types.
+         */
+        public const OPERATOR_EQUAL_TO = 'EQUAL_TO';
+        /**
+         * Not equal to. Attempts to match even with incompatible types.
+         */
+        public const OPERATOR_NOT_EQUAL_TO = 'NOT_EQUAL_TO';
+        /**
+         * Greater than.
+         */
+        public const OPERATOR_GREATER_THAN = 'GREATER_THAN';
+        /**
+         * Less than.
+         */
+        public const OPERATOR_LESS_THAN = 'LESS_THAN';
+        /**
+         * Greater than or equals.
+         */
+        public const OPERATOR_GREATER_THAN_OR_EQUALS = 'GREATER_THAN_OR_EQUALS';
+        /**
+         * Less than or equals.
+         */
+        public const OPERATOR_LESS_THAN_OR_EQUALS = 'LESS_THAN_OR_EQUALS';
+        /**
+         * Exists
+         */
+        public const OPERATOR_EXISTS = 'EXISTS';
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        /**
+         * Required. Operator used to compare the field or infoType to the value.
+         *
+         * @var string
+         */
+        public $operator;
+        protected $valueType = GooglePrivacyDlpV2Value::class;
+        protected $valueDataType = '';
+        /**
+         * Required. Field within the record this condition is evaluated against.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Required. Operator used to compare the field or infoType to the value.
+         *
+         * Accepted values: RELATIONAL_OPERATOR_UNSPECIFIED, EQUAL_TO, NOT_EQUAL_TO,
+         * GREATER_THAN, LESS_THAN, GREATER_THAN_OR_EQUALS, LESS_THAN_OR_EQUALS,
+         * EXISTS
+         *
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Value to compare against. [Mandatory, except for `EXISTS` tests.]
+         *
+         * @param GooglePrivacyDlpV2Value $value
+         */
+        public function setValue(GooglePrivacyDlpV2Value $value)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Condition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Required. Operator used to compare the field or infoType to the value.
-     *
-     * Accepted values: RELATIONAL_OPERATOR_UNSPECIFIED, EQUAL_TO, NOT_EQUAL_TO,
-     * GREATER_THAN, LESS_THAN, GREATER_THAN_OR_EQUALS, LESS_THAN_OR_EQUALS,
-     * EXISTS
-     *
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Value to compare against. [Mandatory, except for `EXISTS` tests.]
-     *
-     * @param GooglePrivacyDlpV2Value $value
-     */
-    public function setValue(GooglePrivacyDlpV2Value $value)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2Condition extends \Google\Service\DLP\GooglePrivacyDlpV2Condition
     {
     }
 }

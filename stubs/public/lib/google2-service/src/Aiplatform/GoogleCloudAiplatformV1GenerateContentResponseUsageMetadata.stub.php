@@ -21,246 +21,255 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateContentResponseUsageMetadata extends \Google\Collection
-{
-    /**
-     * Unspecified request traffic type.
-     */
-    public const TRAFFIC_TYPE_TRAFFIC_TYPE_UNSPECIFIED = 'TRAFFIC_TYPE_UNSPECIFIED';
-    /**
-     * The request was processed using Pay-As-You-Go quota.
-     */
-    public const TRAFFIC_TYPE_ON_DEMAND = 'ON_DEMAND';
-    /**
-     * Type for Provisioned Throughput traffic.
-     */
-    public const TRAFFIC_TYPE_PROVISIONED_THROUGHPUT = 'PROVISIONED_THROUGHPUT';
-    protected $collection_key = 'toolUsePromptTokensDetails';
-    protected $cacheTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
-    protected $cacheTokensDetailsDataType = 'array';
-    /**
-     * Output only. The number of tokens in the cached content that was used for
-     * this request.
-     *
-     * @var int
-     */
-    public $cachedContentTokenCount;
-    /**
-     * The total number of tokens in the generated candidates.
-     *
-     * @var int
-     */
-    public $candidatesTokenCount;
-    protected $candidatesTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
-    protected $candidatesTokensDetailsDataType = 'array';
-    /**
-     * The total number of tokens in the prompt. This includes any text, images,
-     * or other media provided in the request. When `cached_content` is set, this
-     * also includes the number of tokens in the cached content.
-     *
-     * @var int
-     */
-    public $promptTokenCount;
-    protected $promptTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
-    protected $promptTokensDetailsDataType = 'array';
-    /**
-     * Output only. The number of tokens that were part of the model's generated
-     * "thoughts" output, if applicable.
-     *
-     * @var int
-     */
-    public $thoughtsTokenCount;
-    /**
-     * Output only. The number of tokens in the results from tool executions,
-     * which are provided back to the model as input, if applicable.
-     *
-     * @var int
-     */
-    public $toolUsePromptTokenCount;
-    protected $toolUsePromptTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
-    protected $toolUsePromptTokensDetailsDataType = 'array';
-    /**
-     * The total number of tokens for the entire request. This is the sum of
-     * `prompt_token_count`, `candidates_token_count`,
-     * `tool_use_prompt_token_count`, and `thoughts_token_count`.
-     *
-     * @var int
-     */
-    public $totalTokenCount;
-    /**
-     * Output only. The traffic type for this request.
-     *
-     * @var string
-     */
-    public $trafficType;
-    /**
-     * Output only. A detailed breakdown of the token count for each modality in
-     * the cached content.
-     *
-     * @param GoogleCloudAiplatformV1ModalityTokenCount[] $cacheTokensDetails
-     */
-    public function setCacheTokensDetails($cacheTokensDetails)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateContentResponseUsageMetadata extends \Google\Collection
     {
+        /**
+         * Unspecified request traffic type.
+         */
+        public const TRAFFIC_TYPE_TRAFFIC_TYPE_UNSPECIFIED = 'TRAFFIC_TYPE_UNSPECIFIED';
+        /**
+         * The request was processed using Pay-As-You-Go quota.
+         */
+        public const TRAFFIC_TYPE_ON_DEMAND = 'ON_DEMAND';
+        /**
+         * Type for Provisioned Throughput traffic.
+         */
+        public const TRAFFIC_TYPE_PROVISIONED_THROUGHPUT = 'PROVISIONED_THROUGHPUT';
+        protected $collection_key = 'toolUsePromptTokensDetails';
+        protected $cacheTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
+        protected $cacheTokensDetailsDataType = 'array';
+        /**
+         * Output only. The number of tokens in the cached content that was used for
+         * this request.
+         *
+         * @var int
+         */
+        public $cachedContentTokenCount;
+        /**
+         * The total number of tokens in the generated candidates.
+         *
+         * @var int
+         */
+        public $candidatesTokenCount;
+        protected $candidatesTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
+        protected $candidatesTokensDetailsDataType = 'array';
+        /**
+         * The total number of tokens in the prompt. This includes any text, images,
+         * or other media provided in the request. When `cached_content` is set, this
+         * also includes the number of tokens in the cached content.
+         *
+         * @var int
+         */
+        public $promptTokenCount;
+        protected $promptTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
+        protected $promptTokensDetailsDataType = 'array';
+        /**
+         * Output only. The number of tokens that were part of the model's generated
+         * "thoughts" output, if applicable.
+         *
+         * @var int
+         */
+        public $thoughtsTokenCount;
+        /**
+         * Output only. The number of tokens in the results from tool executions,
+         * which are provided back to the model as input, if applicable.
+         *
+         * @var int
+         */
+        public $toolUsePromptTokenCount;
+        protected $toolUsePromptTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
+        protected $toolUsePromptTokensDetailsDataType = 'array';
+        /**
+         * The total number of tokens for the entire request. This is the sum of
+         * `prompt_token_count`, `candidates_token_count`,
+         * `tool_use_prompt_token_count`, and `thoughts_token_count`.
+         *
+         * @var int
+         */
+        public $totalTokenCount;
+        /**
+         * Output only. The traffic type for this request.
+         *
+         * @var string
+         */
+        public $trafficType;
+        /**
+         * Output only. A detailed breakdown of the token count for each modality in
+         * the cached content.
+         *
+         * @param GoogleCloudAiplatformV1ModalityTokenCount[] $cacheTokensDetails
+         */
+        public function setCacheTokensDetails($cacheTokensDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+         */
+        public function getCacheTokensDetails()
+        {
+        }
+        /**
+         * Output only. The number of tokens in the cached content that was used for
+         * this request.
+         *
+         * @param int $cachedContentTokenCount
+         */
+        public function setCachedContentTokenCount($cachedContentTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCachedContentTokenCount()
+        {
+        }
+        /**
+         * The total number of tokens in the generated candidates.
+         *
+         * @param int $candidatesTokenCount
+         */
+        public function setCandidatesTokenCount($candidatesTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCandidatesTokenCount()
+        {
+        }
+        /**
+         * Output only. A detailed breakdown of the token count for each modality in
+         * the generated candidates.
+         *
+         * @param GoogleCloudAiplatformV1ModalityTokenCount[] $candidatesTokensDetails
+         */
+        public function setCandidatesTokensDetails($candidatesTokensDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+         */
+        public function getCandidatesTokensDetails()
+        {
+        }
+        /**
+         * The total number of tokens in the prompt. This includes any text, images,
+         * or other media provided in the request. When `cached_content` is set, this
+         * also includes the number of tokens in the cached content.
+         *
+         * @param int $promptTokenCount
+         */
+        public function setPromptTokenCount($promptTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPromptTokenCount()
+        {
+        }
+        /**
+         * Output only. A detailed breakdown of the token count for each modality in
+         * the prompt.
+         *
+         * @param GoogleCloudAiplatformV1ModalityTokenCount[] $promptTokensDetails
+         */
+        public function setPromptTokensDetails($promptTokensDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+         */
+        public function getPromptTokensDetails()
+        {
+        }
+        /**
+         * Output only. The number of tokens that were part of the model's generated
+         * "thoughts" output, if applicable.
+         *
+         * @param int $thoughtsTokenCount
+         */
+        public function setThoughtsTokenCount($thoughtsTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThoughtsTokenCount()
+        {
+        }
+        /**
+         * Output only. The number of tokens in the results from tool executions,
+         * which are provided back to the model as input, if applicable.
+         *
+         * @param int $toolUsePromptTokenCount
+         */
+        public function setToolUsePromptTokenCount($toolUsePromptTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getToolUsePromptTokenCount()
+        {
+        }
+        /**
+         * Output only. A detailed breakdown by modality of the token counts from the
+         * results of tool executions, which are provided back to the model as input.
+         *
+         * @param GoogleCloudAiplatformV1ModalityTokenCount[] $toolUsePromptTokensDetails
+         */
+        public function setToolUsePromptTokensDetails($toolUsePromptTokensDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+         */
+        public function getToolUsePromptTokensDetails()
+        {
+        }
+        /**
+         * The total number of tokens for the entire request. This is the sum of
+         * `prompt_token_count`, `candidates_token_count`,
+         * `tool_use_prompt_token_count`, and `thoughts_token_count`.
+         *
+         * @param int $totalTokenCount
+         */
+        public function setTotalTokenCount($totalTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalTokenCount()
+        {
+        }
+        /**
+         * Output only. The traffic type for this request.
+         *
+         * Accepted values: TRAFFIC_TYPE_UNSPECIFIED, ON_DEMAND,
+         * PROVISIONED_THROUGHPUT
+         *
+         * @param self::TRAFFIC_TYPE_* $trafficType
+         */
+        public function setTrafficType($trafficType)
+        {
+        }
+        /**
+         * @return self::TRAFFIC_TYPE_*
+         */
+        public function getTrafficType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateContentResponseUsageMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheTokensDetails()
-    {
-    }
-    /**
-     * Output only. The number of tokens in the cached content that was used for
-     * this request.
-     *
-     * @param int $cachedContentTokenCount
-     */
-    public function setCachedContentTokenCount($cachedContentTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCachedContentTokenCount()
-    {
-    }
-    /**
-     * The total number of tokens in the generated candidates.
-     *
-     * @param int $candidatesTokenCount
-     */
-    public function setCandidatesTokenCount($candidatesTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCandidatesTokenCount()
-    {
-    }
-    /**
-     * Output only. A detailed breakdown of the token count for each modality in
-     * the generated candidates.
-     *
-     * @param GoogleCloudAiplatformV1ModalityTokenCount[] $candidatesTokensDetails
-     */
-    public function setCandidatesTokensDetails($candidatesTokensDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModalityTokenCount[]
-     */
-    public function getCandidatesTokensDetails()
-    {
-    }
-    /**
-     * The total number of tokens in the prompt. This includes any text, images,
-     * or other media provided in the request. When `cached_content` is set, this
-     * also includes the number of tokens in the cached content.
-     *
-     * @param int $promptTokenCount
-     */
-    public function setPromptTokenCount($promptTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPromptTokenCount()
-    {
-    }
-    /**
-     * Output only. A detailed breakdown of the token count for each modality in
-     * the prompt.
-     *
-     * @param GoogleCloudAiplatformV1ModalityTokenCount[] $promptTokensDetails
-     */
-    public function setPromptTokensDetails($promptTokensDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModalityTokenCount[]
-     */
-    public function getPromptTokensDetails()
-    {
-    }
-    /**
-     * Output only. The number of tokens that were part of the model's generated
-     * "thoughts" output, if applicable.
-     *
-     * @param int $thoughtsTokenCount
-     */
-    public function setThoughtsTokenCount($thoughtsTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThoughtsTokenCount()
-    {
-    }
-    /**
-     * Output only. The number of tokens in the results from tool executions,
-     * which are provided back to the model as input, if applicable.
-     *
-     * @param int $toolUsePromptTokenCount
-     */
-    public function setToolUsePromptTokenCount($toolUsePromptTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getToolUsePromptTokenCount()
-    {
-    }
-    /**
-     * Output only. A detailed breakdown by modality of the token counts from the
-     * results of tool executions, which are provided back to the model as input.
-     *
-     * @param GoogleCloudAiplatformV1ModalityTokenCount[] $toolUsePromptTokensDetails
-     */
-    public function setToolUsePromptTokensDetails($toolUsePromptTokensDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModalityTokenCount[]
-     */
-    public function getToolUsePromptTokensDetails()
-    {
-    }
-    /**
-     * The total number of tokens for the entire request. This is the sum of
-     * `prompt_token_count`, `candidates_token_count`,
-     * `tool_use_prompt_token_count`, and `thoughts_token_count`.
-     *
-     * @param int $totalTokenCount
-     */
-    public function setTotalTokenCount($totalTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalTokenCount()
-    {
-    }
-    /**
-     * Output only. The traffic type for this request.
-     *
-     * Accepted values: TRAFFIC_TYPE_UNSPECIFIED, ON_DEMAND,
-     * PROVISIONED_THROUGHPUT
-     *
-     * @param self::TRAFFIC_TYPE_* $trafficType
-     */
-    public function setTrafficType($trafficType)
-    {
-    }
-    /**
-     * @return self::TRAFFIC_TYPE_*
-     */
-    public function getTrafficType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateContentResponseUsageMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateContentResponseUsageMetadata
     {
     }
 }

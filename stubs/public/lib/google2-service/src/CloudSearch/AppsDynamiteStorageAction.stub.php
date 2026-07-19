@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageAction extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * @var string
-     */
-    public $function;
-    /**
-     * @var string
-     */
-    public $interaction;
-    /**
-     * @var string
-     */
-    public $loadIndicator;
-    protected $parametersType = AppsDynamiteStorageActionActionParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $persistValues;
-    /**
-     * @param string
-     */
-    public function setFunction($function)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageAction extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * @var string
+         */
+        public $function;
+        /**
+         * @var string
+         */
+        public $interaction;
+        /**
+         * @var string
+         */
+        public $loadIndicator;
+        protected $parametersType = AppsDynamiteStorageActionActionParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $persistValues;
+        /**
+         * @param string
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInteraction($interaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInteraction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLoadIndicator($loadIndicator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoadIndicator()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageActionActionParameter[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageActionActionParameter[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPersistValues($persistValues)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPersistValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInteraction($interaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInteraction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLoadIndicator($loadIndicator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoadIndicator()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageActionActionParameter[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageActionActionParameter[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPersistValues($persistValues)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPersistValues()
+    class Google_Service_CloudSearch_AppsDynamiteStorageAction extends \Google\Service\CloudSearch\AppsDynamiteStorageAction
     {
     }
 }

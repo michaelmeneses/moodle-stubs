@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class RealtimeDataColumnHeaders extends \Google\Model
-{
-    /**
-     * Column Type. Either DIMENSION or METRIC.
-     *
-     * @var string
-     */
-    public $columnType;
-    /**
-     * Data type. Dimension column headers have only STRING as the data type.
-     * Metric column headers have data types for metric values such as INTEGER,
-     * DOUBLE, CURRENCY etc.
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * Column name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Column Type. Either DIMENSION or METRIC.
-     *
-     * @param string $columnType
-     */
-    public function setColumnType($columnType)
+namespace Google\Service\Analytics {
+    class RealtimeDataColumnHeaders extends \Google\Model
     {
+        /**
+         * Column Type. Either DIMENSION or METRIC.
+         *
+         * @var string
+         */
+        public $columnType;
+        /**
+         * Data type. Dimension column headers have only STRING as the data type.
+         * Metric column headers have data types for metric values such as INTEGER,
+         * DOUBLE, CURRENCY etc.
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * Column name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Column Type. Either DIMENSION or METRIC.
+         *
+         * @param string $columnType
+         */
+        public function setColumnType($columnType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnType()
+        {
+        }
+        /**
+         * Data type. Dimension column headers have only STRING as the data type.
+         * Metric column headers have data types for metric values such as INTEGER,
+         * DOUBLE, CURRENCY etc.
+         *
+         * @param string $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Column name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\RealtimeDataColumnHeaders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnType()
-    {
-    }
-    /**
-     * Data type. Dimension column headers have only STRING as the data type.
-     * Metric column headers have data types for metric values such as INTEGER,
-     * DOUBLE, CURRENCY etc.
-     *
-     * @param string $dataType
-     */
-    public function setDataType($dataType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * Column name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Analytics_RealtimeDataColumnHeaders extends \Google\Service\Analytics\RealtimeDataColumnHeaders
     {
     }
 }

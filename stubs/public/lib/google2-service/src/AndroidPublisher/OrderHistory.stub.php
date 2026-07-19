@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OrderHistory extends \Google\Collection
-{
-    protected $collection_key = 'partialRefundEvents';
-    protected $cancellationEventType = CancellationEvent::class;
-    protected $cancellationEventDataType = '';
-    protected $partialRefundEventsType = PartialRefundEvent::class;
-    protected $partialRefundEventsDataType = 'array';
-    protected $processedEventType = ProcessedEvent::class;
-    protected $processedEventDataType = '';
-    protected $refundEventType = RefundEvent::class;
-    protected $refundEventDataType = '';
-    /**
-     * Details of when the order was canceled.
-     *
-     * @param CancellationEvent $cancellationEvent
-     */
-    public function setCancellationEvent(CancellationEvent $cancellationEvent)
+namespace Google\Service\AndroidPublisher {
+    class OrderHistory extends \Google\Collection
     {
+        protected $collection_key = 'partialRefundEvents';
+        protected $cancellationEventType = CancellationEvent::class;
+        protected $cancellationEventDataType = '';
+        protected $partialRefundEventsType = PartialRefundEvent::class;
+        protected $partialRefundEventsDataType = 'array';
+        protected $processedEventType = ProcessedEvent::class;
+        protected $processedEventDataType = '';
+        protected $refundEventType = RefundEvent::class;
+        protected $refundEventDataType = '';
+        /**
+         * Details of when the order was canceled.
+         *
+         * @param CancellationEvent $cancellationEvent
+         */
+        public function setCancellationEvent(CancellationEvent $cancellationEvent)
+        {
+        }
+        /**
+         * @return CancellationEvent
+         */
+        public function getCancellationEvent()
+        {
+        }
+        /**
+         * Details of the partial refund events for this order.
+         *
+         * @param PartialRefundEvent[] $partialRefundEvents
+         */
+        public function setPartialRefundEvents($partialRefundEvents)
+        {
+        }
+        /**
+         * @return PartialRefundEvent[]
+         */
+        public function getPartialRefundEvents()
+        {
+        }
+        /**
+         * Details of when the order was processed.
+         *
+         * @param ProcessedEvent $processedEvent
+         */
+        public function setProcessedEvent(ProcessedEvent $processedEvent)
+        {
+        }
+        /**
+         * @return ProcessedEvent
+         */
+        public function getProcessedEvent()
+        {
+        }
+        /**
+         * Details of when the order was fully refunded.
+         *
+         * @param RefundEvent $refundEvent
+         */
+        public function setRefundEvent(RefundEvent $refundEvent)
+        {
+        }
+        /**
+         * @return RefundEvent
+         */
+        public function getRefundEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CancellationEvent
+     * Runtime class alias of \Google\Service\AndroidPublisher\OrderHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancellationEvent()
-    {
-    }
-    /**
-     * Details of the partial refund events for this order.
-     *
-     * @param PartialRefundEvent[] $partialRefundEvents
-     */
-    public function setPartialRefundEvents($partialRefundEvents)
-    {
-    }
-    /**
-     * @return PartialRefundEvent[]
-     */
-    public function getPartialRefundEvents()
-    {
-    }
-    /**
-     * Details of when the order was processed.
-     *
-     * @param ProcessedEvent $processedEvent
-     */
-    public function setProcessedEvent(ProcessedEvent $processedEvent)
-    {
-    }
-    /**
-     * @return ProcessedEvent
-     */
-    public function getProcessedEvent()
-    {
-    }
-    /**
-     * Details of when the order was fully refunded.
-     *
-     * @param RefundEvent $refundEvent
-     */
-    public function setRefundEvent(RefundEvent $refundEvent)
-    {
-    }
-    /**
-     * @return RefundEvent
-     */
-    public function getRefundEvent()
+    class Google_Service_AndroidPublisher_OrderHistory extends \Google\Service\AndroidPublisher\OrderHistory
     {
     }
 }

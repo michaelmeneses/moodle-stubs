@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine\Resource;
-
-/**
- * The "authorizedDomains" collection of methods.
- * Typical usage is:
- *  <code>
- *   $appengineService = new Google\Service\Appengine(...);
- *   $authorizedDomains = $appengineService->apps_authorizedDomains;
- *  </code>
- */
-class AppsAuthorizedDomains extends \Google\Service\Resource
-{
+namespace Google\Service\Appengine\Resource {
+    use Google\Service\Appengine\ListAuthorizedDomainsResponse;
     /**
-     * Lists all domains the user is authorized to administer.
-     * (authorizedDomains.listAppsAuthorizedDomains)
-     *
-     * @param string $appsId Part of `parent`. Required. Name of the parent
-     * Application resource. Example: apps/myapp.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum results to return per page.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListAuthorizedDomainsResponse
-     * @throws \Google\Service\Exception
+     * The "authorizedDomains" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $appengineService = new Google\Service\Appengine(...);
+     *   $authorizedDomains = $appengineService->apps_authorizedDomains;
+     *  </code>
      */
-    public function listAppsAuthorizedDomains($appsId, $optParams = [])
+    class AppsAuthorizedDomains extends \Google\Service\Resource
+    {
+        /**
+         * Lists all domains the user is authorized to administer.
+         * (authorizedDomains.listAppsAuthorizedDomains)
+         *
+         * @param string $appsId Part of `parent`. Required. Name of the parent
+         * Application resource. Example: apps/myapp.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum results to return per page.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListAuthorizedDomainsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAppsAuthorizedDomains($appsId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Appengine\Resource\AppsAuthorizedDomains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Appengine_Resource_AppsAuthorizedDomains extends \Google\Service\Appengine\Resource\AppsAuthorizedDomains
     {
     }
 }

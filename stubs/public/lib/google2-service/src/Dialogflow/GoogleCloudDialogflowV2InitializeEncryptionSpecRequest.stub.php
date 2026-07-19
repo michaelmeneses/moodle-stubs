@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2InitializeEncryptionSpecRequest extends \Google\Model
-{
-    protected $encryptionSpecType = GoogleCloudDialogflowV2EncryptionSpec::class;
-    protected $encryptionSpecDataType = '';
-    /**
-     * Required. The encryption spec used for CMEK encryption. It is required that
-     * the kms key is in the same region as the endpoint. The same key will be
-     * used for all provisioned resources, if encryption is available. If the
-     * kms_key_name is left empty, no encryption will be enforced.
-     *
-     * @param GoogleCloudDialogflowV2EncryptionSpec $encryptionSpec
-     */
-    public function setEncryptionSpec(GoogleCloudDialogflowV2EncryptionSpec $encryptionSpec)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2InitializeEncryptionSpecRequest extends \Google\Model
     {
+        protected $encryptionSpecType = GoogleCloudDialogflowV2EncryptionSpec::class;
+        protected $encryptionSpecDataType = '';
+        /**
+         * Required. The encryption spec used for CMEK encryption. It is required that
+         * the kms key is in the same region as the endpoint. The same key will be
+         * used for all provisioned resources, if encryption is available. If the
+         * kms_key_name is left empty, no encryption will be enforced.
+         *
+         * @param GoogleCloudDialogflowV2EncryptionSpec $encryptionSpec
+         */
+        public function setEncryptionSpec(GoogleCloudDialogflowV2EncryptionSpec $encryptionSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2EncryptionSpec
+         */
+        public function getEncryptionSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2EncryptionSpec
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2InitializeEncryptionSpecRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionSpec()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2InitializeEncryptionSpecRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2InitializeEncryptionSpecRequest
     {
     }
 }

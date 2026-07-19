@@ -20,71 +20,85 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * The global navigation class used especially for AJAX requests.
- *
- * The primary methods that are used in the global navigation class have been overriden
- * to ensure that only the relevant branch is generated at the root of the tree.
- * This can be done because AJAX is only used when the backwards structure for the
- * requested branch exists.
- * This has been done only because it shortens the amounts of information that is generated
- * which of course will speed up the response time.. because no one likes laggy AJAX.
- *
- * @package   core
- * @category  navigation
- * @copyright 2009 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class global_navigation_for_ajax extends global_navigation
-{
-    /** @var int used for determining what type of navigation_node::TYPE_* is being used */
-    protected $branchtype;
-    /** @var int the instance id */
-    protected $instanceid;
-    /** @var array Holds an array of expandable nodes */
-    protected $expandable = [];
+namespace core\navigation {
+    use core\context\module as context_module;
+    use core\context\course as context_course;
+    use core\context_helper;
+    use core\url;
+    use moodle_page;
     /**
-     * Constructs the navigation for use in an AJAX request
+     * The global navigation class used especially for AJAX requests.
      *
-     * @param moodle_page $page moodle_page object
-     * @param int $branchtype
-     * @param int $id
+     * The primary methods that are used in the global navigation class have been overriden
+     * to ensure that only the relevant branch is generated at the root of the tree.
+     * This can be done because AJAX is only used when the backwards structure for the
+     * requested branch exists.
+     * This has been done only because it shortens the amounts of information that is generated
+     * which of course will speed up the response time.. because no one likes laggy AJAX.
+     *
+     * @package   core
+     * @category  navigation
+     * @copyright 2009 Sam Hemelryk
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($page, $branchtype, $id)
+    class global_navigation_for_ajax extends global_navigation
     {
+        /** @var int used for determining what type of navigation_node::TYPE_* is being used */
+        protected $branchtype;
+        /** @var int the instance id */
+        protected $instanceid;
+        /** @var array Holds an array of expandable nodes */
+        protected $expandable = [];
+        /**
+         * Constructs the navigation for use in an AJAX request
+         *
+         * @param moodle_page $page moodle_page object
+         * @param int $branchtype
+         * @param int $id
+         */
+        public function __construct($page, $branchtype, $id)
+        {
+        }
+        #[\Override]
+        public function initialise()
+        {
+        }
+        /**
+         * They've expanded the general 'courses' branch.
+         */
+        protected function load_courses_other()
+        {
+        }
+        /**
+         * Loads a single category into the AJAX navigation.
+         *
+         * This function is special in that it doesn't concern itself with the parent of
+         * the requested category or its siblings.
+         * This is because with the AJAX navigation we know exactly what is wanted and only need to
+         * request that.
+         *
+         * @param int $categoryid id of category to load in navigation.
+         * @param int $nodetype type of node, if category is under MyHome then it's TYPE_MY_CATEGORY
+         */
+        protected function load_category($categoryid, $nodetype = self::TYPE_CATEGORY)
+        {
+        }
+        /**
+         * Returns an array of expandable nodes.
+         *
+         * @return array
+         */
+        public function get_expandable()
+        {
+        }
     }
-    #[\Override]
-    public function initialise()
-    {
-    }
+}
+namespace {
     /**
-     * They've expanded the general 'courses' branch.
+     * Runtime class alias of \core\navigation\global_navigation_for_ajax registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function load_courses_other()
-    {
-    }
-    /**
-     * Loads a single category into the AJAX navigation.
-     *
-     * This function is special in that it doesn't concern itself with the parent of
-     * the requested category or its siblings.
-     * This is because with the AJAX navigation we know exactly what is wanted and only need to
-     * request that.
-     *
-     * @param int $categoryid id of category to load in navigation.
-     * @param int $nodetype type of node, if category is under MyHome then it's TYPE_MY_CATEGORY
-     */
-    protected function load_category($categoryid, $nodetype = self::TYPE_CATEGORY)
-    {
-    }
-    /**
-     * Returns an array of expandable nodes.
-     *
-     * @return array
-     */
-    public function get_expandable()
+    class global_navigation_for_ajax extends \core\navigation\global_navigation_for_ajax
     {
     }
 }

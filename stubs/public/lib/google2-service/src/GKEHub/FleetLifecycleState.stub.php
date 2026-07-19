@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetLifecycleState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @param string
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class FleetLifecycleState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\FleetLifecycleState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_GKEHub_FleetLifecycleState extends \Google\Service\GKEHub\FleetLifecycleState
     {
     }
 }

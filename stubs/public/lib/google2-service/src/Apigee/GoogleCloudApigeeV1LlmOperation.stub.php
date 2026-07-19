@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1LlmOperation extends \Google\Collection
-{
-    protected $collection_key = 'methods';
-    /**
-     * Optional. methods refers to the REST verbs as in
-     * https://httpwg.org/specs/rfc9110.html For example: GET, POST, PUT, DELETE,
-     * etc. They need to be in uppercase. When none specified, all verb types are
-     * allowed.
-     *
-     * @var string[]
-     */
-    public $methods;
-    /**
-     * Required. LLM model name associated with the API proxy
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Required. REST resource path associated with the API proxy or remote
-     * service.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Optional. methods refers to the REST verbs as in
-     * https://httpwg.org/specs/rfc9110.html For example: GET, POST, PUT, DELETE,
-     * etc. They need to be in uppercase. When none specified, all verb types are
-     * allowed.
-     *
-     * @param string[] $methods
-     */
-    public function setMethods($methods)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1LlmOperation extends \Google\Collection
     {
+        protected $collection_key = 'methods';
+        /**
+         * Optional. methods refers to the REST verbs as in
+         * https://httpwg.org/specs/rfc9110.html For example: GET, POST, PUT, DELETE,
+         * etc. They need to be in uppercase. When none specified, all verb types are
+         * allowed.
+         *
+         * @var string[]
+         */
+        public $methods;
+        /**
+         * Required. LLM model name associated with the API proxy
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Required. REST resource path associated with the API proxy or remote
+         * service.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Optional. methods refers to the REST verbs as in
+         * https://httpwg.org/specs/rfc9110.html For example: GET, POST, PUT, DELETE,
+         * etc. They need to be in uppercase. When none specified, all verb types are
+         * allowed.
+         *
+         * @param string[] $methods
+         */
+        public function setMethods($methods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethods()
+        {
+        }
+        /**
+         * Required. LLM model name associated with the API proxy
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Required. REST resource path associated with the API proxy or remote
+         * service.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1LlmOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethods()
-    {
-    }
-    /**
-     * Required. LLM model name associated with the API proxy
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * Required. REST resource path associated with the API proxy or remote
-     * service.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_Apigee_GoogleCloudApigeeV1LlmOperation extends \Google\Service\Apigee\GoogleCloudApigeeV1LlmOperation
     {
     }
 }

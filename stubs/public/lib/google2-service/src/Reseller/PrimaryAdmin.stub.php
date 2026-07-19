@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class PrimaryAdmin extends \Google\Model
-{
-    /**
-     * The business email of the primary administrator of the customer. The email
-     * verification link is sent to this email address at the time of customer
-     * creation. Primary administrators have access to the customer's Admin
-     * Console, including the ability to invite and evict users and manage the
-     * administrative needs of the customer.
-     *
-     * @var string
-     */
-    public $primaryEmail;
-    /**
-     * The business email of the primary administrator of the customer. The email
-     * verification link is sent to this email address at the time of customer
-     * creation. Primary administrators have access to the customer's Admin
-     * Console, including the ability to invite and evict users and manage the
-     * administrative needs of the customer.
-     *
-     * @param string $primaryEmail
-     */
-    public function setPrimaryEmail($primaryEmail)
+namespace Google\Service\Reseller {
+    class PrimaryAdmin extends \Google\Model
     {
+        /**
+         * The business email of the primary administrator of the customer. The email
+         * verification link is sent to this email address at the time of customer
+         * creation. Primary administrators have access to the customer's Admin
+         * Console, including the ability to invite and evict users and manage the
+         * administrative needs of the customer.
+         *
+         * @var string
+         */
+        public $primaryEmail;
+        /**
+         * The business email of the primary administrator of the customer. The email
+         * verification link is sent to this email address at the time of customer
+         * creation. Primary administrators have access to the customer's Admin
+         * Console, including the ability to invite and evict users and manage the
+         * administrative needs of the customer.
+         *
+         * @param string $primaryEmail
+         */
+        public function setPrimaryEmail($primaryEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\PrimaryAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryEmail()
+    class Google_Service_Reseller_PrimaryAdmin extends \Google\Service\Reseller\PrimaryAdmin
     {
     }
 }

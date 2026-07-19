@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Job extends \Google\Model
-{
-    /**
-     * Unspecified represents an unknown state and should not be used.
-     */
-    public const STATE_JOB_STATE_UNSPECIFIED = 'JOB_STATE_UNSPECIFIED';
-    /**
-     * Job is scheduled and pending for run
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * Job in progress
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * Job has completed with success
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Job has completed but with failure
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Optional. If the job did not complete successfully, this field describes
-     * why.
-     *
-     * @var int
-     */
-    public $errorCode;
-    /**
-     * Optional. Gives the location where the job ran, such as `US` or `europe-
-     * west1`
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The fully-qualified name for a job. e.g. `projects//jobs/`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. State of the job, such as `RUNNING` or `PENDING`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Optional. If the job did not complete successfully, this field describes
-     * why.
-     *
-     * @param int $errorCode
-     */
-    public function setErrorCode($errorCode)
+namespace Google\Service\SecurityCommandCenter {
+    class Job extends \Google\Model
     {
+        /**
+         * Unspecified represents an unknown state and should not be used.
+         */
+        public const STATE_JOB_STATE_UNSPECIFIED = 'JOB_STATE_UNSPECIFIED';
+        /**
+         * Job is scheduled and pending for run
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * Job in progress
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * Job has completed with success
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Job has completed but with failure
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Optional. If the job did not complete successfully, this field describes
+         * why.
+         *
+         * @var int
+         */
+        public $errorCode;
+        /**
+         * Optional. Gives the location where the job ran, such as `US` or `europe-
+         * west1`
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The fully-qualified name for a job. e.g. `projects//jobs/`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. State of the job, such as `RUNNING` or `PENDING`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Optional. If the job did not complete successfully, this field describes
+         * why.
+         *
+         * @param int $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * Optional. Gives the location where the job ran, such as `US` or `europe-
+         * west1`
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The fully-qualified name for a job. e.g. `projects//jobs/`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. State of the job, such as `RUNNING` or `PENDING`.
+         *
+         * Accepted values: JOB_STATE_UNSPECIFIED, PENDING, RUNNING, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Job registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * Optional. Gives the location where the job ran, such as `US` or `europe-
-     * west1`
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The fully-qualified name for a job. e.g. `projects//jobs/`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. State of the job, such as `RUNNING` or `PENDING`.
-     *
-     * Accepted values: JOB_STATE_UNSPECIFIED, PENDING, RUNNING, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_SecurityCommandCenter_Job extends \Google\Service\SecurityCommandCenter\Job
     {
     }
 }

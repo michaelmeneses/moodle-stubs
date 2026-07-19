@@ -21,84 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "query" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $query = $cloudsearchService->query;
- *  </code>
- */
-class Query extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\DebugResponse;
+    use Google\Service\CloudSearch\RemoveActivityRequest;
+    use Google\Service\CloudSearch\RemoveActivityResponse;
+    use Google\Service\CloudSearch\SearchRequest;
+    use Google\Service\CloudSearch\SearchResponse;
+    use Google\Service\CloudSearch\SuggestRequest;
+    use Google\Service\CloudSearch\SuggestResponse;
     /**
-     * Returns Debug information for Cloud Search Query API provides the search
-     * method. **Note:** This API requires a standard end user account to execute. A
-     * service account can't perform Query API requests directly; to use a service
-     * account to perform queries, set up [Google Workspace domain-wide delegation
-     * of authority](https://developers.google.com/cloud-
-     * search/docs/guides/delegation/). (query.debugSearch)
-     *
-     * @param SearchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return DebugResponse
-     * @throws \Google\Service\Exception
+     * The "query" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $query = $cloudsearchService->query;
+     *  </code>
      */
-    public function debugSearch(SearchRequest $postBody, $optParams = [])
+    class Query extends \Google\Service\Resource
     {
+        /**
+         * Returns Debug information for Cloud Search Query API provides the search
+         * method. **Note:** This API requires a standard end user account to execute. A
+         * service account can't perform Query API requests directly; to use a service
+         * account to perform queries, set up [Google Workspace domain-wide delegation
+         * of authority](https://developers.google.com/cloud-
+         * search/docs/guides/delegation/). (query.debugSearch)
+         *
+         * @param SearchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return DebugResponse
+         * @throws \Google\Service\Exception
+         */
+        public function debugSearch(SearchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Provides functionality to remove logged activity for a user. Currently to be
+         * used only for Chat 1p clients **Note:** This API requires a standard end user
+         * account to execute. A service account can't perform Remove Activity requests
+         * directly; to use a service account to perform queries, set up [Google
+         * Workspace domain-wide delegation of
+         * authority](https://developers.google.com/cloud-
+         * search/docs/guides/delegation/). (query.removeActivity)
+         *
+         * @param RemoveActivityRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemoveActivityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function removeActivity(RemoveActivityRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * The Cloud Search Query API provides the search method, which returns the most
+         * relevant results from a user query. The results can come from Google
+         * Workspace apps, such as Gmail or Google Drive, or they can come from data
+         * that you have indexed from a third party. **Note:** This API requires a
+         * standard end user account to execute. A service account can't perform Query
+         * API requests directly; to use a service account to perform queries, set up
+         * [Google Workspace domain-wide delegation of
+         * authority](https://developers.google.com/cloud-
+         * search/docs/guides/delegation/). (query.search)
+         *
+         * @param SearchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search(SearchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Provides suggestions for autocompleting the query. **Note:** This API
+         * requires a standard end user account to execute. A service account can't
+         * perform Query API requests directly; to use a service account to perform
+         * queries, set up [Google Workspace domain-wide delegation of
+         * authority](https://developers.google.com/cloud-
+         * search/docs/guides/delegation/). (query.suggest)
+         *
+         * @param SuggestRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SuggestResponse
+         * @throws \Google\Service\Exception
+         */
+        public function suggest(SuggestRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Provides functionality to remove logged activity for a user. Currently to be
-     * used only for Chat 1p clients **Note:** This API requires a standard end user
-     * account to execute. A service account can't perform Remove Activity requests
-     * directly; to use a service account to perform queries, set up [Google
-     * Workspace domain-wide delegation of
-     * authority](https://developers.google.com/cloud-
-     * search/docs/guides/delegation/). (query.removeActivity)
-     *
-     * @param RemoveActivityRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemoveActivityResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\Query registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function removeActivity(RemoveActivityRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * The Cloud Search Query API provides the search method, which returns the most
-     * relevant results from a user query. The results can come from Google
-     * Workspace apps, such as Gmail or Google Drive, or they can come from data
-     * that you have indexed from a third party. **Note:** This API requires a
-     * standard end user account to execute. A service account can't perform Query
-     * API requests directly; to use a service account to perform queries, set up
-     * [Google Workspace domain-wide delegation of
-     * authority](https://developers.google.com/cloud-
-     * search/docs/guides/delegation/). (query.search)
-     *
-     * @param SearchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchResponse
-     * @throws \Google\Service\Exception
-     */
-    public function search(SearchRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Provides suggestions for autocompleting the query. **Note:** This API
-     * requires a standard end user account to execute. A service account can't
-     * perform Query API requests directly; to use a service account to perform
-     * queries, set up [Google Workspace domain-wide delegation of
-     * authority](https://developers.google.com/cloud-
-     * search/docs/guides/delegation/). (query.suggest)
-     *
-     * @param SuggestRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SuggestResponse
-     * @throws \Google\Service\Exception
-     */
-    public function suggest(SuggestRequest $postBody, $optParams = [])
+    class Google_Service_CloudSearch_Resource_Query extends \Google\Service\CloudSearch\Resource\Query
     {
     }
 }

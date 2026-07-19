@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class UpdateProjectConfigRequest extends \Google\Model
-{
-    protected $projectConfigType = ProjectConfig::class;
-    protected $projectConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param ProjectConfig
-     */
-    public function setProjectConfig(ProjectConfig $projectConfig)
+namespace Google\Service\CloudSourceRepositories {
+    class UpdateProjectConfigRequest extends \Google\Model
     {
+        protected $projectConfigType = ProjectConfig::class;
+        protected $projectConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param ProjectConfig
+         */
+        public function setProjectConfig(ProjectConfig $projectConfig)
+        {
+        }
+        /**
+         * @return ProjectConfig
+         */
+        public function getProjectConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProjectConfig
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\UpdateProjectConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudSourceRepositories_UpdateProjectConfigRequest extends \Google\Service\CloudSourceRepositories\UpdateProjectConfigRequest
     {
     }
 }

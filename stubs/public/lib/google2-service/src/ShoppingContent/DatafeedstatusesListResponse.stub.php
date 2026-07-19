@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class DatafeedstatusesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#datafeedstatusesListResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The token for the retrieval of the next page of datafeed statuses.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = DatafeedStatus::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#datafeedstatusesListResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class DatafeedstatusesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#datafeedstatusesListResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The token for the retrieval of the next page of datafeed statuses.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = DatafeedStatus::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#datafeedstatusesListResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The token for the retrieval of the next page of datafeed statuses.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param DatafeedStatus[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return DatafeedStatus[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\DatafeedstatusesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The token for the retrieval of the next page of datafeed statuses.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param DatafeedStatus[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return DatafeedStatus[]
-     */
-    public function getResources()
+    class Google_Service_ShoppingContent_DatafeedstatusesListResponse extends \Google\Service\ShoppingContent\DatafeedstatusesListResponse
     {
     }
 }

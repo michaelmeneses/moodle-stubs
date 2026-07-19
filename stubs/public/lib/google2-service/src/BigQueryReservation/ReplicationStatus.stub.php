@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class ReplicationStatus extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. The time at which the last error was encountered while trying
-     * to replicate changes from the primary to the secondary. This field is only
-     * available if the replication has not succeeded since.
-     *
-     * @var string
-     */
-    public $lastErrorTime;
-    /**
-     * Output only. A timestamp corresponding to the last change on the primary
-     * that was successfully replicated to the secondary.
-     *
-     * @var string
-     */
-    public $lastReplicationTime;
-    /**
-     * Output only. The time at which a soft failover for the reservation and its
-     * associated datasets was initiated. After this field is set, all subsequent
-     * changes to the reservation will be rejected unless a hard failover
-     * overrides this operation. This field will be cleared once the failover is
-     * complete.
-     *
-     * @var string
-     */
-    public $softFailoverStartTime;
-    /**
-     * Output only. The last error encountered while trying to replicate changes
-     * from the primary to the secondary. This field is only available if the
-     * replication has not succeeded since.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\BigQueryReservation {
+    class ReplicationStatus extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. The time at which the last error was encountered while trying
+         * to replicate changes from the primary to the secondary. This field is only
+         * available if the replication has not succeeded since.
+         *
+         * @var string
+         */
+        public $lastErrorTime;
+        /**
+         * Output only. A timestamp corresponding to the last change on the primary
+         * that was successfully replicated to the secondary.
+         *
+         * @var string
+         */
+        public $lastReplicationTime;
+        /**
+         * Output only. The time at which a soft failover for the reservation and its
+         * associated datasets was initiated. After this field is set, all subsequent
+         * changes to the reservation will be rejected unless a hard failover
+         * overrides this operation. This field will be cleared once the failover is
+         * complete.
+         *
+         * @var string
+         */
+        public $softFailoverStartTime;
+        /**
+         * Output only. The last error encountered while trying to replicate changes
+         * from the primary to the secondary. This field is only available if the
+         * replication has not succeeded since.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The time at which the last error was encountered while trying
+         * to replicate changes from the primary to the secondary. This field is only
+         * available if the replication has not succeeded since.
+         *
+         * @param string $lastErrorTime
+         */
+        public function setLastErrorTime($lastErrorTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastErrorTime()
+        {
+        }
+        /**
+         * Output only. A timestamp corresponding to the last change on the primary
+         * that was successfully replicated to the secondary.
+         *
+         * @param string $lastReplicationTime
+         */
+        public function setLastReplicationTime($lastReplicationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastReplicationTime()
+        {
+        }
+        /**
+         * Output only. The time at which a soft failover for the reservation and its
+         * associated datasets was initiated. After this field is set, all subsequent
+         * changes to the reservation will be rejected unless a hard failover
+         * overrides this operation. This field will be cleared once the failover is
+         * complete.
+         *
+         * @param string $softFailoverStartTime
+         */
+        public function setSoftFailoverStartTime($softFailoverStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSoftFailoverStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\BigQueryReservation\ReplicationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The time at which the last error was encountered while trying
-     * to replicate changes from the primary to the secondary. This field is only
-     * available if the replication has not succeeded since.
-     *
-     * @param string $lastErrorTime
-     */
-    public function setLastErrorTime($lastErrorTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastErrorTime()
-    {
-    }
-    /**
-     * Output only. A timestamp corresponding to the last change on the primary
-     * that was successfully replicated to the secondary.
-     *
-     * @param string $lastReplicationTime
-     */
-    public function setLastReplicationTime($lastReplicationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastReplicationTime()
-    {
-    }
-    /**
-     * Output only. The time at which a soft failover for the reservation and its
-     * associated datasets was initiated. After this field is set, all subsequent
-     * changes to the reservation will be rejected unless a hard failover
-     * overrides this operation. This field will be cleared once the failover is
-     * complete.
-     *
-     * @param string $softFailoverStartTime
-     */
-    public function setSoftFailoverStartTime($softFailoverStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSoftFailoverStartTime()
+    class Google_Service_BigQueryReservation_ReplicationStatus extends \Google\Service\BigQueryReservation\ReplicationStatus
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListForwardingAddressesResponse extends \Google\Collection
-{
-    protected $collection_key = 'forwardingAddresses';
-    protected $forwardingAddressesType = ForwardingAddress::class;
-    protected $forwardingAddressesDataType = 'array';
-    /**
-     * List of addresses that may be used for forwarding.
-     *
-     * @param ForwardingAddress[] $forwardingAddresses
-     */
-    public function setForwardingAddresses($forwardingAddresses)
+namespace Google\Service\Gmail {
+    class ListForwardingAddressesResponse extends \Google\Collection
     {
+        protected $collection_key = 'forwardingAddresses';
+        protected $forwardingAddressesType = ForwardingAddress::class;
+        protected $forwardingAddressesDataType = 'array';
+        /**
+         * List of addresses that may be used for forwarding.
+         *
+         * @param ForwardingAddress[] $forwardingAddresses
+         */
+        public function setForwardingAddresses($forwardingAddresses)
+        {
+        }
+        /**
+         * @return ForwardingAddress[]
+         */
+        public function getForwardingAddresses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ForwardingAddress[]
+     * Runtime class alias of \Google\Service\Gmail\ListForwardingAddressesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForwardingAddresses()
+    class Google_Service_Gmail_ListForwardingAddressesResponse extends \Google\Service\Gmail\ListForwardingAddressesResponse
     {
     }
 }

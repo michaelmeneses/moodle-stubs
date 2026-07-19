@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PscInterfaceConfig extends \Google\Model
-{
-    /**
-     * Required. Fully qualified name of the Network Attachment that Datastream
-     * will connect to. Format:
-     * `projects/{project}/regions/{region}/networkAttachments/{name}`
-     *
-     * @var string
-     */
-    public $networkAttachment;
-    /**
-     * Required. Fully qualified name of the Network Attachment that Datastream
-     * will connect to. Format:
-     * `projects/{project}/regions/{region}/networkAttachments/{name}`
-     *
-     * @param string $networkAttachment
-     */
-    public function setNetworkAttachment($networkAttachment)
+namespace Google\Service\Datastream {
+    class PscInterfaceConfig extends \Google\Model
     {
+        /**
+         * Required. Fully qualified name of the Network Attachment that Datastream
+         * will connect to. Format:
+         * `projects/{project}/regions/{region}/networkAttachments/{name}`
+         *
+         * @var string
+         */
+        public $networkAttachment;
+        /**
+         * Required. Fully qualified name of the Network Attachment that Datastream
+         * will connect to. Format:
+         * `projects/{project}/regions/{region}/networkAttachments/{name}`
+         *
+         * @param string $networkAttachment
+         */
+        public function setNetworkAttachment($networkAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\PscInterfaceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkAttachment()
+    class Google_Service_Datastream_PscInterfaceConfig extends \Google\Service\Datastream\PscInterfaceConfig
     {
     }
 }

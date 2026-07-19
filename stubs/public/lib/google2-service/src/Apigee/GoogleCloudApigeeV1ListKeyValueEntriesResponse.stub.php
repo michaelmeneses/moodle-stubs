@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListKeyValueEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'keyValueEntries';
-    protected $keyValueEntriesType = GoogleCloudApigeeV1KeyValueEntry::class;
-    protected $keyValueEntriesDataType = 'array';
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * One or more key value map keys and values.
-     *
-     * @param GoogleCloudApigeeV1KeyValueEntry[] $keyValueEntries
-     */
-    public function setKeyValueEntries($keyValueEntries)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListKeyValueEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'keyValueEntries';
+        protected $keyValueEntriesType = GoogleCloudApigeeV1KeyValueEntry::class;
+        protected $keyValueEntriesDataType = 'array';
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * One or more key value map keys and values.
+         *
+         * @param GoogleCloudApigeeV1KeyValueEntry[] $keyValueEntries
+         */
+        public function setKeyValueEntries($keyValueEntries)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1KeyValueEntry[]
+         */
+        public function getKeyValueEntries()
+        {
+        }
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1KeyValueEntry[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListKeyValueEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyValueEntries()
-    {
-    }
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListKeyValueEntriesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListKeyValueEntriesResponse
     {
     }
 }

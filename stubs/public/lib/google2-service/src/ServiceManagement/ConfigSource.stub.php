@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class ConfigSource extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    protected $filesType = ConfigFile::class;
-    protected $filesDataType = 'array';
-    /**
-     * A unique ID for a specific instance of this message, typically assigned by
-     * the client for tracking purpose. If empty, the server may choose to
-     * generate one instead.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Set of source configuration files that are used to generate a service
-     * configuration (`google.api.Service`).
-     *
-     * @param ConfigFile[] $files
-     */
-    public function setFiles($files)
+namespace Google\Service\ServiceManagement {
+    class ConfigSource extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        protected $filesType = ConfigFile::class;
+        protected $filesDataType = 'array';
+        /**
+         * A unique ID for a specific instance of this message, typically assigned by
+         * the client for tracking purpose. If empty, the server may choose to
+         * generate one instead.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Set of source configuration files that are used to generate a service
+         * configuration (`google.api.Service`).
+         *
+         * @param ConfigFile[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return ConfigFile[]
+         */
+        public function getFiles()
+        {
+        }
+        /**
+         * A unique ID for a specific instance of this message, typically assigned by
+         * the client for tracking purpose. If empty, the server may choose to
+         * generate one instead.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigFile[]
+     * Runtime class alias of \Google\Service\ServiceManagement\ConfigSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFiles()
-    {
-    }
-    /**
-     * A unique ID for a specific instance of this message, typically assigned by
-     * the client for tracking purpose. If empty, the server may choose to
-     * generate one instead.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_ServiceManagement_ConfigSource extends \Google\Service\ServiceManagement\ConfigSource
     {
     }
 }

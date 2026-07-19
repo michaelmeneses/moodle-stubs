@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SessionContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $authTime;
-    /**
-     * @var string
-     */
-    public $delegateUserId;
-    /**
-     * @var string
-     */
-    public $dusi;
-    protected $imapSessionContextType = ImapSessionContext::class;
-    protected $imapSessionContextDataType = '';
-    /**
-     * @var int
-     */
-    public $oauthLoginId;
-    /**
-     * @var string
-     */
-    public $oauthProjectId;
-    /**
-     * @param string
-     */
-    public function setAuthTime($authTime)
+namespace Google\Service\CloudSearch {
+    class SessionContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $authTime;
+        /**
+         * @var string
+         */
+        public $delegateUserId;
+        /**
+         * @var string
+         */
+        public $dusi;
+        protected $imapSessionContextType = ImapSessionContext::class;
+        protected $imapSessionContextDataType = '';
+        /**
+         * @var int
+         */
+        public $oauthLoginId;
+        /**
+         * @var string
+         */
+        public $oauthProjectId;
+        /**
+         * @param string
+         */
+        public function setAuthTime($authTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDelegateUserId($delegateUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegateUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDusi($dusi)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDusi()
+        {
+        }
+        /**
+         * @param ImapSessionContext
+         */
+        public function setImapSessionContext(ImapSessionContext $imapSessionContext)
+        {
+        }
+        /**
+         * @return ImapSessionContext
+         */
+        public function getImapSessionContext()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setOauthLoginId($oauthLoginId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOauthLoginId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOauthProjectId($oauthProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\SessionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDelegateUserId($delegateUserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDelegateUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDusi($dusi)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDusi()
-    {
-    }
-    /**
-     * @param ImapSessionContext
-     */
-    public function setImapSessionContext(ImapSessionContext $imapSessionContext)
-    {
-    }
-    /**
-     * @return ImapSessionContext
-     */
-    public function getImapSessionContext()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setOauthLoginId($oauthLoginId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOauthLoginId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOauthProjectId($oauthProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthProjectId()
+    class Google_Service_CloudSearch_SessionContext extends \Google\Service\CloudSearch\SessionContext
     {
     }
 }

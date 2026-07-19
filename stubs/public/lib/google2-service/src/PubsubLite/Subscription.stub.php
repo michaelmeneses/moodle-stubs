@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class Subscription extends \Google\Model
-{
-    protected $deliveryConfigType = DeliveryConfig::class;
-    protected $deliveryConfigDataType = '';
-    protected $exportConfigType = ExportConfig::class;
-    protected $exportConfigDataType = '';
-    /**
-     * The name of the subscription. Structured like: projects/{project_number}/lo
-     * cations/{location}/subscriptions/{subscription_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the topic this subscription is attached to. Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * The settings for this subscription's message delivery.
-     *
-     * @param DeliveryConfig $deliveryConfig
-     */
-    public function setDeliveryConfig(DeliveryConfig $deliveryConfig)
+namespace Google\Service\PubsubLite {
+    class Subscription extends \Google\Model
     {
+        protected $deliveryConfigType = DeliveryConfig::class;
+        protected $deliveryConfigDataType = '';
+        protected $exportConfigType = ExportConfig::class;
+        protected $exportConfigDataType = '';
+        /**
+         * The name of the subscription. Structured like: projects/{project_number}/lo
+         * cations/{location}/subscriptions/{subscription_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the topic this subscription is attached to. Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * The settings for this subscription's message delivery.
+         *
+         * @param DeliveryConfig $deliveryConfig
+         */
+        public function setDeliveryConfig(DeliveryConfig $deliveryConfig)
+        {
+        }
+        /**
+         * @return DeliveryConfig
+         */
+        public function getDeliveryConfig()
+        {
+        }
+        /**
+         * If present, messages are automatically written from the Pub/Sub Lite topic
+         * associated with this subscription to a destination.
+         *
+         * @param ExportConfig $exportConfig
+         */
+        public function setExportConfig(ExportConfig $exportConfig)
+        {
+        }
+        /**
+         * @return ExportConfig
+         */
+        public function getExportConfig()
+        {
+        }
+        /**
+         * The name of the subscription. Structured like: projects/{project_number}/lo
+         * cations/{location}/subscriptions/{subscription_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The name of the topic this subscription is attached to. Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeliveryConfig
+     * Runtime class alias of \Google\Service\PubsubLite\Subscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliveryConfig()
-    {
-    }
-    /**
-     * If present, messages are automatically written from the Pub/Sub Lite topic
-     * associated with this subscription to a destination.
-     *
-     * @param ExportConfig $exportConfig
-     */
-    public function setExportConfig(ExportConfig $exportConfig)
-    {
-    }
-    /**
-     * @return ExportConfig
-     */
-    public function getExportConfig()
-    {
-    }
-    /**
-     * The name of the subscription. Structured like: projects/{project_number}/lo
-     * cations/{location}/subscriptions/{subscription_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The name of the topic this subscription is attached to. Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_PubsubLite_Subscription extends \Google\Service\PubsubLite\Subscription
     {
     }
 }

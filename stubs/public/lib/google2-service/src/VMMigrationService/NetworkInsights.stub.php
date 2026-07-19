@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class NetworkInsights extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $sourceNetworkConfig;
-    /**
-     * @var string
-     */
-    public $sourceNetworkTerraform;
-    /**
-     * @param string
-     */
-    public function setSourceNetworkConfig($sourceNetworkConfig)
+namespace Google\Service\VMMigrationService {
+    class NetworkInsights extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $sourceNetworkConfig;
+        /**
+         * @var string
+         */
+        public $sourceNetworkTerraform;
+        /**
+         * @param string
+         */
+        public function setSourceNetworkConfig($sourceNetworkConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceNetworkConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceNetworkTerraform($sourceNetworkTerraform)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceNetworkTerraform()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\NetworkInsights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceNetworkConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceNetworkTerraform($sourceNetworkTerraform)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceNetworkTerraform()
+    class Google_Service_VMMigrationService_NetworkInsights extends \Google\Service\VMMigrationService\NetworkInsights
     {
     }
 }

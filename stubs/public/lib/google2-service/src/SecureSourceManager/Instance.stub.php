@@ -21,260 +21,269 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Instance extends \Google\Model
-{
-    /**
-     * Not set. This should only be the case for incoming requests.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Instance is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Instance is ready.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Instance is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Instance is paused.
-     */
-    public const STATE_PAUSED = 'PAUSED';
-    /**
-     * Instance is unknown, we are not sure if it's functioning.
-     */
-    public const STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * STATE_NOTE_UNSPECIFIED as the first value of State.
-     */
-    public const STATE_NOTE_STATE_NOTE_UNSPECIFIED = 'STATE_NOTE_UNSPECIFIED';
-    /**
-     * CMEK access is unavailable.
-     */
-    public const STATE_NOTE_PAUSED_CMEK_UNAVAILABLE = 'PAUSED_CMEK_UNAVAILABLE';
-    /**
-     * INSTANCE_RESUMING indicates that the instance was previously paused and is
-     * under the process of being brought back.
-     *
-     * @deprecated
-     */
-    public const STATE_NOTE_INSTANCE_RESUMING = 'INSTANCE_RESUMING';
-    /**
-     * Output only. Create timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $hostConfigType = HostConfig::class;
-    protected $hostConfigDataType = '';
-    /**
-     * Optional. Immutable. Customer-managed encryption key name, in the format
-     * projects/locations/keyRings/cryptoKeys.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Optional. Labels as key value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. A unique identifier for an instance. The name should be of the
-     * format:
-     * `projects/{project_number}/locations/{location_id}/instances/{instance_id}`
-     * `project_number`: Maps to a unique int64 id assigned to each project.
-     * `location_id`: Refers to the region where the instance will be deployed.
-     * Since Secure Source Manager is a regional service, it must be one of the
-     * valid GCP regions. `instance_id`: User provided name for the instance, must
-     * be unique for a project_number and location_id combination.
-     *
-     * @var string
-     */
-    public $name;
-    protected $privateConfigType = PrivateConfig::class;
-    protected $privateConfigDataType = '';
-    /**
-     * Output only. Current state of the instance.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. An optional field providing information about the current
-     * instance state.
-     *
-     * @var string
-     */
-    public $stateNote;
-    /**
-     * Output only. Update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $workforceIdentityFederationConfigType = WorkforceIdentityFederationConfig::class;
-    protected $workforceIdentityFederationConfigDataType = '';
-    /**
-     * Output only. Create timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SecureSourceManager {
+    class Instance extends \Google\Model
     {
+        /**
+         * Not set. This should only be the case for incoming requests.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Instance is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Instance is ready.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Instance is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Instance is paused.
+         */
+        public const STATE_PAUSED = 'PAUSED';
+        /**
+         * Instance is unknown, we are not sure if it's functioning.
+         */
+        public const STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * STATE_NOTE_UNSPECIFIED as the first value of State.
+         */
+        public const STATE_NOTE_STATE_NOTE_UNSPECIFIED = 'STATE_NOTE_UNSPECIFIED';
+        /**
+         * CMEK access is unavailable.
+         */
+        public const STATE_NOTE_PAUSED_CMEK_UNAVAILABLE = 'PAUSED_CMEK_UNAVAILABLE';
+        /**
+         * INSTANCE_RESUMING indicates that the instance was previously paused and is
+         * under the process of being brought back.
+         *
+         * @deprecated
+         */
+        public const STATE_NOTE_INSTANCE_RESUMING = 'INSTANCE_RESUMING';
+        /**
+         * Output only. Create timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $hostConfigType = HostConfig::class;
+        protected $hostConfigDataType = '';
+        /**
+         * Optional. Immutable. Customer-managed encryption key name, in the format
+         * projects/locations/keyRings/cryptoKeys.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Optional. Labels as key value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. A unique identifier for an instance. The name should be of the
+         * format:
+         * `projects/{project_number}/locations/{location_id}/instances/{instance_id}`
+         * `project_number`: Maps to a unique int64 id assigned to each project.
+         * `location_id`: Refers to the region where the instance will be deployed.
+         * Since Secure Source Manager is a regional service, it must be one of the
+         * valid GCP regions. `instance_id`: User provided name for the instance, must
+         * be unique for a project_number and location_id combination.
+         *
+         * @var string
+         */
+        public $name;
+        protected $privateConfigType = PrivateConfig::class;
+        protected $privateConfigDataType = '';
+        /**
+         * Output only. Current state of the instance.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. An optional field providing information about the current
+         * instance state.
+         *
+         * @var string
+         */
+        public $stateNote;
+        /**
+         * Output only. Update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $workforceIdentityFederationConfigType = WorkforceIdentityFederationConfig::class;
+        protected $workforceIdentityFederationConfigDataType = '';
+        /**
+         * Output only. Create timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. A list of hostnames for this instance.
+         *
+         * @param HostConfig $hostConfig
+         */
+        public function setHostConfig(HostConfig $hostConfig)
+        {
+        }
+        /**
+         * @return HostConfig
+         */
+        public function getHostConfig()
+        {
+        }
+        /**
+         * Optional. Immutable. Customer-managed encryption key name, in the format
+         * projects/locations/keyRings/cryptoKeys.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
+        /**
+         * Optional. Labels as key value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. A unique identifier for an instance. The name should be of the
+         * format:
+         * `projects/{project_number}/locations/{location_id}/instances/{instance_id}`
+         * `project_number`: Maps to a unique int64 id assigned to each project.
+         * `location_id`: Refers to the region where the instance will be deployed.
+         * Since Secure Source Manager is a regional service, it must be one of the
+         * valid GCP regions. `instance_id`: User provided name for the instance, must
+         * be unique for a project_number and location_id combination.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Private settings for private instance.
+         *
+         * @param PrivateConfig $privateConfig
+         */
+        public function setPrivateConfig(PrivateConfig $privateConfig)
+        {
+        }
+        /**
+         * @return PrivateConfig
+         */
+        public function getPrivateConfig()
+        {
+        }
+        /**
+         * Output only. Current state of the instance.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, PAUSED,
+         * UNKNOWN
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. An optional field providing information about the current
+         * instance state.
+         *
+         * Accepted values: STATE_NOTE_UNSPECIFIED, PAUSED_CMEK_UNAVAILABLE,
+         * INSTANCE_RESUMING
+         *
+         * @param self::STATE_NOTE_* $stateNote
+         */
+        public function setStateNote($stateNote)
+        {
+        }
+        /**
+         * @return self::STATE_NOTE_*
+         */
+        public function getStateNote()
+        {
+        }
+        /**
+         * Output only. Update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. Configuration for Workforce Identity Federation to support third
+         * party identity provider. If unset, defaults to the Google OIDC IdP.
+         *
+         * @param WorkforceIdentityFederationConfig $workforceIdentityFederationConfig
+         */
+        public function setWorkforceIdentityFederationConfig(WorkforceIdentityFederationConfig $workforceIdentityFederationConfig)
+        {
+        }
+        /**
+         * @return WorkforceIdentityFederationConfig
+         */
+        public function getWorkforceIdentityFederationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Instance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. A list of hostnames for this instance.
-     *
-     * @param HostConfig $hostConfig
-     */
-    public function setHostConfig(HostConfig $hostConfig)
-    {
-    }
-    /**
-     * @return HostConfig
-     */
-    public function getHostConfig()
-    {
-    }
-    /**
-     * Optional. Immutable. Customer-managed encryption key name, in the format
-     * projects/locations/keyRings/cryptoKeys.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKey()
-    {
-    }
-    /**
-     * Optional. Labels as key value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. A unique identifier for an instance. The name should be of the
-     * format:
-     * `projects/{project_number}/locations/{location_id}/instances/{instance_id}`
-     * `project_number`: Maps to a unique int64 id assigned to each project.
-     * `location_id`: Refers to the region where the instance will be deployed.
-     * Since Secure Source Manager is a regional service, it must be one of the
-     * valid GCP regions. `instance_id`: User provided name for the instance, must
-     * be unique for a project_number and location_id combination.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Private settings for private instance.
-     *
-     * @param PrivateConfig $privateConfig
-     */
-    public function setPrivateConfig(PrivateConfig $privateConfig)
-    {
-    }
-    /**
-     * @return PrivateConfig
-     */
-    public function getPrivateConfig()
-    {
-    }
-    /**
-     * Output only. Current state of the instance.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, PAUSED,
-     * UNKNOWN
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. An optional field providing information about the current
-     * instance state.
-     *
-     * Accepted values: STATE_NOTE_UNSPECIFIED, PAUSED_CMEK_UNAVAILABLE,
-     * INSTANCE_RESUMING
-     *
-     * @param self::STATE_NOTE_* $stateNote
-     */
-    public function setStateNote($stateNote)
-    {
-    }
-    /**
-     * @return self::STATE_NOTE_*
-     */
-    public function getStateNote()
-    {
-    }
-    /**
-     * Output only. Update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. Configuration for Workforce Identity Federation to support third
-     * party identity provider. If unset, defaults to the Google OIDC IdP.
-     *
-     * @param WorkforceIdentityFederationConfig $workforceIdentityFederationConfig
-     */
-    public function setWorkforceIdentityFederationConfig(WorkforceIdentityFederationConfig $workforceIdentityFederationConfig)
-    {
-    }
-    /**
-     * @return WorkforceIdentityFederationConfig
-     */
-    public function getWorkforceIdentityFederationConfig()
+    class Google_Service_SecureSourceManager_Instance extends \Google\Service\SecureSourceManager\Instance
     {
     }
 }

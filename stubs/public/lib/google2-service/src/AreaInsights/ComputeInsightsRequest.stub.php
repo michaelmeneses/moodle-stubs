@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class ComputeInsightsRequest extends \Google\Collection
-{
-    protected $collection_key = 'insights';
-    protected $filterType = Filter::class;
-    protected $filterDataType = '';
-    /**
-     * Required. Insights to compute. Currently only INSIGHT_COUNT and
-     * INSIGHT_PLACES are supported.
-     *
-     * @var string[]
-     */
-    public $insights;
-    /**
-     * Required. Insight filter.
-     *
-     * @param Filter $filter
-     */
-    public function setFilter(Filter $filter)
+namespace Google\Service\AreaInsights {
+    class ComputeInsightsRequest extends \Google\Collection
     {
+        protected $collection_key = 'insights';
+        protected $filterType = Filter::class;
+        protected $filterDataType = '';
+        /**
+         * Required. Insights to compute. Currently only INSIGHT_COUNT and
+         * INSIGHT_PLACES are supported.
+         *
+         * @var string[]
+         */
+        public $insights;
+        /**
+         * Required. Insight filter.
+         *
+         * @param Filter $filter
+         */
+        public function setFilter(Filter $filter)
+        {
+        }
+        /**
+         * @return Filter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. Insights to compute. Currently only INSIGHT_COUNT and
+         * INSIGHT_PLACES are supported.
+         *
+         * @param string[] $insights
+         */
+        public function setInsights($insights)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInsights()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Filter
+     * Runtime class alias of \Google\Service\AreaInsights\ComputeInsightsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. Insights to compute. Currently only INSIGHT_COUNT and
-     * INSIGHT_PLACES are supported.
-     *
-     * @param string[] $insights
-     */
-    public function setInsights($insights)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInsights()
+    class Google_Service_AreaInsights_ComputeInsightsRequest extends \Google\Service\AreaInsights\ComputeInsightsRequest
     {
     }
 }

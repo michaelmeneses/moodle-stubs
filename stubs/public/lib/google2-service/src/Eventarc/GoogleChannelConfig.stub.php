@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleChannelConfig extends \Google\Model
-{
-    /**
-     * Optional. Resource name of a KMS crypto key (managed by the user) used to
-     * encrypt/decrypt their event data. It must match the pattern
-     * `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @var string
-     */
-    public $cryptoKeyName;
-    /**
-     * Optional. Resource labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. The resource name of the config. Must be in the format of,
-     * `projects/{project}/locations/{location}/googleChannelConfig`. In API
-     * responses, the config name always includes the projectID, regardless of
-     * whether the projectID or projectNumber was provided.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The last-modified time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Resource name of a KMS crypto key (managed by the user) used to
-     * encrypt/decrypt their event data. It must match the pattern
-     * `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @param string $cryptoKeyName
-     */
-    public function setCryptoKeyName($cryptoKeyName)
+namespace Google\Service\Eventarc {
+    class GoogleChannelConfig extends \Google\Model
     {
+        /**
+         * Optional. Resource name of a KMS crypto key (managed by the user) used to
+         * encrypt/decrypt their event data. It must match the pattern
+         * `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @var string
+         */
+        public $cryptoKeyName;
+        /**
+         * Optional. Resource labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. The resource name of the config. Must be in the format of,
+         * `projects/{project}/locations/{location}/googleChannelConfig`. In API
+         * responses, the config name always includes the projectID, regardless of
+         * whether the projectID or projectNumber was provided.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The last-modified time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Resource name of a KMS crypto key (managed by the user) used to
+         * encrypt/decrypt their event data. It must match the pattern
+         * `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @param string $cryptoKeyName
+         */
+        public function setCryptoKeyName($cryptoKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKeyName()
+        {
+        }
+        /**
+         * Optional. Resource labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The resource name of the config. Must be in the format of,
+         * `projects/{project}/locations/{location}/googleChannelConfig`. In API
+         * responses, the config name always includes the projectID, regardless of
+         * whether the projectID or projectNumber was provided.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The last-modified time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\GoogleChannelConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeyName()
-    {
-    }
-    /**
-     * Optional. Resource labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The resource name of the config. Must be in the format of,
-     * `projects/{project}/locations/{location}/googleChannelConfig`. In API
-     * responses, the config name always includes the projectID, regardless of
-     * whether the projectID or projectNumber was provided.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The last-modified time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Eventarc_GoogleChannelConfig extends \Google\Service\Eventarc\GoogleChannelConfig
     {
     }
 }

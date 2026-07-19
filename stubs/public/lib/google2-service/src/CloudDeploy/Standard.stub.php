@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Standard extends \Google\Model
-{
-    protected $postdeployType = Postdeploy::class;
-    protected $postdeployDataType = '';
-    protected $predeployType = Predeploy::class;
-    protected $predeployDataType = '';
-    /**
-     * Optional. Whether to verify a deployment via `skaffold verify`.
-     *
-     * @var bool
-     */
-    public $verify;
-    /**
-     * Optional. Configuration for the postdeploy job. If this is not configured,
-     * the postdeploy job will not be present.
-     *
-     * @param Postdeploy $postdeploy
-     */
-    public function setPostdeploy(Postdeploy $postdeploy)
+namespace Google\Service\CloudDeploy {
+    class Standard extends \Google\Model
     {
+        protected $postdeployType = Postdeploy::class;
+        protected $postdeployDataType = '';
+        protected $predeployType = Predeploy::class;
+        protected $predeployDataType = '';
+        /**
+         * Optional. Whether to verify a deployment via `skaffold verify`.
+         *
+         * @var bool
+         */
+        public $verify;
+        /**
+         * Optional. Configuration for the postdeploy job. If this is not configured,
+         * the postdeploy job will not be present.
+         *
+         * @param Postdeploy $postdeploy
+         */
+        public function setPostdeploy(Postdeploy $postdeploy)
+        {
+        }
+        /**
+         * @return Postdeploy
+         */
+        public function getPostdeploy()
+        {
+        }
+        /**
+         * Optional. Configuration for the predeploy job. If this is not configured,
+         * the predeploy job will not be present.
+         *
+         * @param Predeploy $predeploy
+         */
+        public function setPredeploy(Predeploy $predeploy)
+        {
+        }
+        /**
+         * @return Predeploy
+         */
+        public function getPredeploy()
+        {
+        }
+        /**
+         * Optional. Whether to verify a deployment via `skaffold verify`.
+         *
+         * @param bool $verify
+         */
+        public function setVerify($verify)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerify()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Postdeploy
+     * Runtime class alias of \Google\Service\CloudDeploy\Standard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostdeploy()
-    {
-    }
-    /**
-     * Optional. Configuration for the predeploy job. If this is not configured,
-     * the predeploy job will not be present.
-     *
-     * @param Predeploy $predeploy
-     */
-    public function setPredeploy(Predeploy $predeploy)
-    {
-    }
-    /**
-     * @return Predeploy
-     */
-    public function getPredeploy()
-    {
-    }
-    /**
-     * Optional. Whether to verify a deployment via `skaffold verify`.
-     *
-     * @param bool $verify
-     */
-    public function setVerify($verify)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerify()
+    class Google_Service_CloudDeploy_Standard extends \Google\Service\CloudDeploy\Standard
     {
     }
 }

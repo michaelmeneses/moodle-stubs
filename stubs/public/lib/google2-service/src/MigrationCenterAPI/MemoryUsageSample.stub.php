@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MemoryUsageSample extends \Google\Model
-{
-    /**
-     * Percentage of system memory utilized. Must be in the interval [0, 100].
-     *
-     * @var float
-     */
-    public $utilizedPercentage;
-    /**
-     * Percentage of system memory utilized. Must be in the interval [0, 100].
-     *
-     * @param float $utilizedPercentage
-     */
-    public function setUtilizedPercentage($utilizedPercentage)
+namespace Google\Service\MigrationCenterAPI {
+    class MemoryUsageSample extends \Google\Model
     {
+        /**
+         * Percentage of system memory utilized. Must be in the interval [0, 100].
+         *
+         * @var float
+         */
+        public $utilizedPercentage;
+        /**
+         * Percentage of system memory utilized. Must be in the interval [0, 100].
+         *
+         * @param float $utilizedPercentage
+         */
+        public function setUtilizedPercentage($utilizedPercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getUtilizedPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MemoryUsageSample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUtilizedPercentage()
+    class Google_Service_MigrationCenterAPI_MemoryUsageSample extends \Google\Service\MigrationCenterAPI\MemoryUsageSample
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult extends \Google\Collection
-{
-    /**
-     * Unknown value.
-     */
-    public const VERDICT_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * There was no policy violation.
-     */
-    public const VERDICT_ALLOW = 'ALLOW';
-    /**
-     * Processing was blocked by the customer policy.
-     */
-    public const VERDICT_BLOCK = 'BLOCK';
-    protected $collection_key = 'policyResults';
-    protected $policyResultsType = GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult::class;
-    protected $policyResultsDataType = 'array';
-    /**
-     * Final verdict of the customer policy enforcement. If only one policy
-     * blocked the processing, the verdict is BLOCK.
-     *
-     * @var string
-     */
-    public $verdict;
-    /**
-     * Customer policy enforcement results. Populated only if the assist call was
-     * skipped due to a policy violation. It contains results from those filters
-     * that blocked the processing of the query.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult[] $policyResults
-     */
-    public function setPolicyResults($policyResults)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult extends \Google\Collection
     {
+        /**
+         * Unknown value.
+         */
+        public const VERDICT_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * There was no policy violation.
+         */
+        public const VERDICT_ALLOW = 'ALLOW';
+        /**
+         * Processing was blocked by the customer policy.
+         */
+        public const VERDICT_BLOCK = 'BLOCK';
+        protected $collection_key = 'policyResults';
+        protected $policyResultsType = GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult::class;
+        protected $policyResultsDataType = 'array';
+        /**
+         * Final verdict of the customer policy enforcement. If only one policy
+         * blocked the processing, the verdict is BLOCK.
+         *
+         * @var string
+         */
+        public $verdict;
+        /**
+         * Customer policy enforcement results. Populated only if the assist call was
+         * skipped due to a policy violation. It contains results from those filters
+         * that blocked the processing of the query.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult[] $policyResults
+         */
+        public function setPolicyResults($policyResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult[]
+         */
+        public function getPolicyResults()
+        {
+        }
+        /**
+         * Final verdict of the customer policy enforcement. If only one policy
+         * blocked the processing, the verdict is BLOCK.
+         *
+         * Accepted values: UNSPECIFIED, ALLOW, BLOCK
+         *
+         * @param self::VERDICT_* $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return self::VERDICT_*
+         */
+        public function getVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyResults()
-    {
-    }
-    /**
-     * Final verdict of the customer policy enforcement. If only one policy
-     * blocked the processing, the verdict is BLOCK.
-     *
-     * Accepted values: UNSPECIFIED, ALLOW, BLOCK
-     *
-     * @param self::VERDICT_* $verdict
-     */
-    public function setVerdict($verdict)
-    {
-    }
-    /**
-     * @return self::VERDICT_*
-     */
-    public function getVerdict()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig extends \Google\Model
-{
-    /**
-     * Optional. The TTL duration for memories uploaded via CreateMemory.
-     *
-     * @var string
-     */
-    public $createTtl;
-    /**
-     * Optional. The TTL duration for memories newly generated via
-     * GenerateMemories (GenerateMemoriesResponse.GeneratedMemory.Action.CREATED).
-     *
-     * @var string
-     */
-    public $generateCreatedTtl;
-    /**
-     * Optional. The TTL duration for memories updated via GenerateMemories
-     * (GenerateMemoriesResponse.GeneratedMemory.Action.UPDATED). In the case of
-     * an UPDATE action, the `expire_time` of the existing memory will be updated
-     * to the new value (now + TTL).
-     *
-     * @var string
-     */
-    public $generateUpdatedTtl;
-    /**
-     * Optional. The TTL duration for memories uploaded via CreateMemory.
-     *
-     * @param string $createTtl
-     */
-    public function setCreateTtl($createTtl)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig extends \Google\Model
     {
+        /**
+         * Optional. The TTL duration for memories uploaded via CreateMemory.
+         *
+         * @var string
+         */
+        public $createTtl;
+        /**
+         * Optional. The TTL duration for memories newly generated via
+         * GenerateMemories (GenerateMemoriesResponse.GeneratedMemory.Action.CREATED).
+         *
+         * @var string
+         */
+        public $generateCreatedTtl;
+        /**
+         * Optional. The TTL duration for memories updated via GenerateMemories
+         * (GenerateMemoriesResponse.GeneratedMemory.Action.UPDATED). In the case of
+         * an UPDATE action, the `expire_time` of the existing memory will be updated
+         * to the new value (now + TTL).
+         *
+         * @var string
+         */
+        public $generateUpdatedTtl;
+        /**
+         * Optional. The TTL duration for memories uploaded via CreateMemory.
+         *
+         * @param string $createTtl
+         */
+        public function setCreateTtl($createTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTtl()
+        {
+        }
+        /**
+         * Optional. The TTL duration for memories newly generated via
+         * GenerateMemories (GenerateMemoriesResponse.GeneratedMemory.Action.CREATED).
+         *
+         * @param string $generateCreatedTtl
+         */
+        public function setGenerateCreatedTtl($generateCreatedTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenerateCreatedTtl()
+        {
+        }
+        /**
+         * Optional. The TTL duration for memories updated via GenerateMemories
+         * (GenerateMemoriesResponse.GeneratedMemory.Action.UPDATED). In the case of
+         * an UPDATE action, the `expire_time` of the existing memory will be updated
+         * to the new value (now + TTL).
+         *
+         * @param string $generateUpdatedTtl
+         */
+        public function setGenerateUpdatedTtl($generateUpdatedTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenerateUpdatedTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTtl()
-    {
-    }
-    /**
-     * Optional. The TTL duration for memories newly generated via
-     * GenerateMemories (GenerateMemoriesResponse.GeneratedMemory.Action.CREATED).
-     *
-     * @param string $generateCreatedTtl
-     */
-    public function setGenerateCreatedTtl($generateCreatedTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGenerateCreatedTtl()
-    {
-    }
-    /**
-     * Optional. The TTL duration for memories updated via GenerateMemories
-     * (GenerateMemoriesResponse.GeneratedMemory.Action.UPDATED). In the case of
-     * an UPDATE action, the `expire_time` of the existing memory will be updated
-     * to the new value (now + TTL).
-     *
-     * @param string $generateUpdatedTtl
-     */
-    public function setGenerateUpdatedTtl($generateUpdatedTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGenerateUpdatedTtl()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig
     {
     }
 }

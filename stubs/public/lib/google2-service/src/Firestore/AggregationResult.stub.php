@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class AggregationResult extends \Google\Model
-{
-    protected $aggregateFieldsType = Value::class;
-    protected $aggregateFieldsDataType = 'map';
-    /**
-     * The result of the aggregation functions, ex: `COUNT(*) AS total_docs`. The
-     * key is the alias assigned to the aggregation function on input and the size
-     * of this map equals the number of aggregation functions in the query.
-     *
-     * @param Value[] $aggregateFields
-     */
-    public function setAggregateFields($aggregateFields)
+namespace Google\Service\Firestore {
+    class AggregationResult extends \Google\Model
     {
+        protected $aggregateFieldsType = Value::class;
+        protected $aggregateFieldsDataType = 'map';
+        /**
+         * The result of the aggregation functions, ex: `COUNT(*) AS total_docs`. The
+         * key is the alias assigned to the aggregation function on input and the size
+         * of this map equals the number of aggregation functions in the query.
+         *
+         * @param Value[] $aggregateFields
+         */
+        public function setAggregateFields($aggregateFields)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getAggregateFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\Firestore\AggregationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateFields()
+    class Google_Service_Firestore_AggregationResult extends \Google\Service\Firestore\AggregationResult
     {
     }
 }

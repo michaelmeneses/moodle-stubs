@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class SaveSnapshotRequest extends \Google\Model
-{
-    /**
-     * Location in a Cloud Storage where the snapshot is going to be stored, e.g.:
-     * "gs://my-bucket/snapshots".
-     *
-     * @var string
-     */
-    public $snapshotLocation;
-    /**
-     * Location in a Cloud Storage where the snapshot is going to be stored, e.g.:
-     * "gs://my-bucket/snapshots".
-     *
-     * @param string $snapshotLocation
-     */
-    public function setSnapshotLocation($snapshotLocation)
+namespace Google\Service\CloudComposer {
+    class SaveSnapshotRequest extends \Google\Model
     {
+        /**
+         * Location in a Cloud Storage where the snapshot is going to be stored, e.g.:
+         * "gs://my-bucket/snapshots".
+         *
+         * @var string
+         */
+        public $snapshotLocation;
+        /**
+         * Location in a Cloud Storage where the snapshot is going to be stored, e.g.:
+         * "gs://my-bucket/snapshots".
+         *
+         * @param string $snapshotLocation
+         */
+        public function setSnapshotLocation($snapshotLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\SaveSnapshotRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshotLocation()
+    class Google_Service_CloudComposer_SaveSnapshotRequest extends \Google\Service\CloudComposer\SaveSnapshotRequest
     {
     }
 }

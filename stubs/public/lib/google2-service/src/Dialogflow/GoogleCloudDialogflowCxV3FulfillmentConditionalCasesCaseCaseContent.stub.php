@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCaseCaseContent extends \Google\Model
-{
-    protected $additionalCasesType = GoogleCloudDialogflowCxV3FulfillmentConditionalCases::class;
-    protected $additionalCasesDataType = '';
-    protected $messageType = GoogleCloudDialogflowCxV3ResponseMessage::class;
-    protected $messageDataType = '';
-    /**
-     * Additional cases to be evaluated.
-     *
-     * @param GoogleCloudDialogflowCxV3FulfillmentConditionalCases $additionalCases
-     */
-    public function setAdditionalCases(GoogleCloudDialogflowCxV3FulfillmentConditionalCases $additionalCases)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCaseCaseContent extends \Google\Model
     {
+        protected $additionalCasesType = GoogleCloudDialogflowCxV3FulfillmentConditionalCases::class;
+        protected $additionalCasesDataType = '';
+        protected $messageType = GoogleCloudDialogflowCxV3ResponseMessage::class;
+        protected $messageDataType = '';
+        /**
+         * Additional cases to be evaluated.
+         *
+         * @param GoogleCloudDialogflowCxV3FulfillmentConditionalCases $additionalCases
+         */
+        public function setAdditionalCases(GoogleCloudDialogflowCxV3FulfillmentConditionalCases $additionalCases)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FulfillmentConditionalCases
+         */
+        public function getAdditionalCases()
+        {
+        }
+        /**
+         * Returned message.
+         *
+         * @param GoogleCloudDialogflowCxV3ResponseMessage $message
+         */
+        public function setMessage(GoogleCloudDialogflowCxV3ResponseMessage $message)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ResponseMessage
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3FulfillmentConditionalCases
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCaseCaseContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalCases()
-    {
-    }
-    /**
-     * Returned message.
-     *
-     * @param GoogleCloudDialogflowCxV3ResponseMessage $message
-     */
-    public function setMessage(GoogleCloudDialogflowCxV3ResponseMessage $message)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ResponseMessage
-     */
-    public function getMessage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCaseCaseContent extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCaseCaseContent
     {
     }
 }

@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveStream extends \Google\Model
-{
-    protected $cdnType = CdnSettings::class;
-    protected $cdnDataType = '';
-    protected $contentDetailsType = LiveStreamContentDetails::class;
-    protected $contentDetailsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube assigns to uniquely identify the stream.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#liveStream".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = LiveStreamSnippet::class;
-    protected $snippetDataType = '';
-    protected $statusType = LiveStreamStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The cdn object defines the live stream's content delivery network (CDN)
-     * settings. These settings provide details about the manner in which you
-     * stream your content to YouTube.
-     *
-     * @param CdnSettings $cdn
-     */
-    public function setCdn(CdnSettings $cdn)
+namespace Google\Service\YouTube {
+    class LiveStream extends \Google\Model
     {
+        protected $cdnType = CdnSettings::class;
+        protected $cdnDataType = '';
+        protected $contentDetailsType = LiveStreamContentDetails::class;
+        protected $contentDetailsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube assigns to uniquely identify the stream.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#liveStream".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = LiveStreamSnippet::class;
+        protected $snippetDataType = '';
+        protected $statusType = LiveStreamStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The cdn object defines the live stream's content delivery network (CDN)
+         * settings. These settings provide details about the manner in which you
+         * stream your content to YouTube.
+         *
+         * @param CdnSettings $cdn
+         */
+        public function setCdn(CdnSettings $cdn)
+        {
+        }
+        /**
+         * @return CdnSettings
+         */
+        public function getCdn()
+        {
+        }
+        /**
+         * The content_details object contains information about the stream, including
+         * the closed captions ingestion URL.
+         *
+         * @param LiveStreamContentDetails $contentDetails
+         */
+        public function setContentDetails(LiveStreamContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return LiveStreamContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube assigns to uniquely identify the stream.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#liveStream".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the stream, including its
+         * channel, title, and description.
+         *
+         * @param LiveStreamSnippet $snippet
+         */
+        public function setSnippet(LiveStreamSnippet $snippet)
+        {
+        }
+        /**
+         * @return LiveStreamSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The status object contains information about live stream's status.
+         *
+         * @param LiveStreamStatus $status
+         */
+        public function setStatus(LiveStreamStatus $status)
+        {
+        }
+        /**
+         * @return LiveStreamStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CdnSettings
+     * Runtime class alias of \Google\Service\YouTube\LiveStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCdn()
-    {
-    }
-    /**
-     * The content_details object contains information about the stream, including
-     * the closed captions ingestion URL.
-     *
-     * @param LiveStreamContentDetails $contentDetails
-     */
-    public function setContentDetails(LiveStreamContentDetails $contentDetails)
-    {
-    }
-    /**
-     * @return LiveStreamContentDetails
-     */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube assigns to uniquely identify the stream.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#liveStream".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the stream, including its
-     * channel, title, and description.
-     *
-     * @param LiveStreamSnippet $snippet
-     */
-    public function setSnippet(LiveStreamSnippet $snippet)
-    {
-    }
-    /**
-     * @return LiveStreamSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The status object contains information about live stream's status.
-     *
-     * @param LiveStreamStatus $status
-     */
-    public function setStatus(LiveStreamStatus $status)
-    {
-    }
-    /**
-     * @return LiveStreamStatus
-     */
-    public function getStatus()
+    class Google_Service_YouTube_LiveStream extends \Google\Service\YouTube\LiveStream
     {
     }
 }

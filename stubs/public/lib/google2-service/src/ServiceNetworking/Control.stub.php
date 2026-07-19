@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class Control extends \Google\Collection
-{
-    protected $collection_key = 'methodPolicies';
-    /**
-     * The service controller environment to use. If empty, no control plane
-     * features (like quota and billing) will be enabled. The recommended value
-     * for most services is servicecontrol.googleapis.com.
-     *
-     * @var string
-     */
-    public $environment;
-    protected $methodPoliciesType = MethodPolicy::class;
-    protected $methodPoliciesDataType = 'array';
-    /**
-     * The service controller environment to use. If empty, no control plane
-     * features (like quota and billing) will be enabled. The recommended value
-     * for most services is servicecontrol.googleapis.com.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\ServiceNetworking {
+    class Control extends \Google\Collection
     {
+        protected $collection_key = 'methodPolicies';
+        /**
+         * The service controller environment to use. If empty, no control plane
+         * features (like quota and billing) will be enabled. The recommended value
+         * for most services is servicecontrol.googleapis.com.
+         *
+         * @var string
+         */
+        public $environment;
+        protected $methodPoliciesType = MethodPolicy::class;
+        protected $methodPoliciesDataType = 'array';
+        /**
+         * The service controller environment to use. If empty, no control plane
+         * features (like quota and billing) will be enabled. The recommended value
+         * for most services is servicecontrol.googleapis.com.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Defines policies applying to the API methods of the service.
+         *
+         * @param MethodPolicy[] $methodPolicies
+         */
+        public function setMethodPolicies($methodPolicies)
+        {
+        }
+        /**
+         * @return MethodPolicy[]
+         */
+        public function getMethodPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\Control registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Defines policies applying to the API methods of the service.
-     *
-     * @param MethodPolicy[] $methodPolicies
-     */
-    public function setMethodPolicies($methodPolicies)
-    {
-    }
-    /**
-     * @return MethodPolicy[]
-     */
-    public function getMethodPolicies()
+    class Google_Service_ServiceNetworking_Control extends \Google\Service\ServiceNetworking\Control
     {
     }
 }

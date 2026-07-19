@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class SourceConfig extends \Google\Model
-{
-    /**
-     * Optional. This field specifies if the replication of automatic backups is
-     * enabled when creating a Data Guard.
-     *
-     * @var bool
-     */
-    public $automaticBackupsReplicationEnabled;
-    /**
-     * Optional. The name of the primary Autonomous Database that is used to
-     * create a Peer Autonomous Database from a source.
-     *
-     * @var string
-     */
-    public $autonomousDatabase;
-    /**
-     * Optional. This field specifies if the replication of automatic backups is
-     * enabled when creating a Data Guard.
-     *
-     * @param bool $automaticBackupsReplicationEnabled
-     */
-    public function setAutomaticBackupsReplicationEnabled($automaticBackupsReplicationEnabled)
+namespace Google\Service\OracleDatabase {
+    class SourceConfig extends \Google\Model
     {
+        /**
+         * Optional. This field specifies if the replication of automatic backups is
+         * enabled when creating a Data Guard.
+         *
+         * @var bool
+         */
+        public $automaticBackupsReplicationEnabled;
+        /**
+         * Optional. The name of the primary Autonomous Database that is used to
+         * create a Peer Autonomous Database from a source.
+         *
+         * @var string
+         */
+        public $autonomousDatabase;
+        /**
+         * Optional. This field specifies if the replication of automatic backups is
+         * enabled when creating a Data Guard.
+         *
+         * @param bool $automaticBackupsReplicationEnabled
+         */
+        public function setAutomaticBackupsReplicationEnabled($automaticBackupsReplicationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutomaticBackupsReplicationEnabled()
+        {
+        }
+        /**
+         * Optional. The name of the primary Autonomous Database that is used to
+         * create a Peer Autonomous Database from a source.
+         *
+         * @param string $autonomousDatabase
+         */
+        public function setAutonomousDatabase($autonomousDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutonomousDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OracleDatabase\SourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomaticBackupsReplicationEnabled()
-    {
-    }
-    /**
-     * Optional. The name of the primary Autonomous Database that is used to
-     * create a Peer Autonomous Database from a source.
-     *
-     * @param string $autonomousDatabase
-     */
-    public function setAutonomousDatabase($autonomousDatabase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAutonomousDatabase()
+    class Google_Service_OracleDatabase_SourceConfig extends \Google\Service\OracleDatabase\SourceConfig
     {
     }
 }

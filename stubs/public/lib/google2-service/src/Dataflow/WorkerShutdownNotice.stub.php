@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerShutdownNotice extends \Google\Model
-{
-    /**
-     * The reason for the worker shutdown. Current possible values are: "UNKNOWN":
-     * shutdown reason is unknown. "PREEMPTION": shutdown reason is preemption.
-     * Other possible reasons may be added in the future.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The reason for the worker shutdown. Current possible values are: "UNKNOWN":
-     * shutdown reason is unknown. "PREEMPTION": shutdown reason is preemption.
-     * Other possible reasons may be added in the future.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\Dataflow {
+    class WorkerShutdownNotice extends \Google\Model
     {
+        /**
+         * The reason for the worker shutdown. Current possible values are: "UNKNOWN":
+         * shutdown reason is unknown. "PREEMPTION": shutdown reason is preemption.
+         * Other possible reasons may be added in the future.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The reason for the worker shutdown. Current possible values are: "UNKNOWN":
+         * shutdown reason is unknown. "PREEMPTION": shutdown reason is preemption.
+         * Other possible reasons may be added in the future.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\WorkerShutdownNotice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
+    class Google_Service_Dataflow_WorkerShutdownNotice extends \Google\Service\Dataflow\WorkerShutdownNotice
     {
     }
 }

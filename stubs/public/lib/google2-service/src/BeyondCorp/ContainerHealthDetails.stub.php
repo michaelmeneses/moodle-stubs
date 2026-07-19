@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ContainerHealthDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $currentConfigVersion;
-    /**
-     * @var string
-     */
-    public $errorMsg;
-    /**
-     * @var string
-     */
-    public $expectedConfigVersion;
-    /**
-     * @var string[]
-     */
-    public $extendedStatus;
-    /**
-     * @param string
-     */
-    public function setCurrentConfigVersion($currentConfigVersion)
+namespace Google\Service\BeyondCorp {
+    class ContainerHealthDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $currentConfigVersion;
+        /**
+         * @var string
+         */
+        public $errorMsg;
+        /**
+         * @var string
+         */
+        public $expectedConfigVersion;
+        /**
+         * @var string[]
+         */
+        public $extendedStatus;
+        /**
+         * @param string
+         */
+        public function setCurrentConfigVersion($currentConfigVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentConfigVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setErrorMsg($errorMsg)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMsg()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExpectedConfigVersion($expectedConfigVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpectedConfigVersion()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExtendedStatus($extendedStatus)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExtendedStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\ContainerHealthDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentConfigVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setErrorMsg($errorMsg)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMsg()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExpectedConfigVersion($expectedConfigVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpectedConfigVersion()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExtendedStatus($extendedStatus)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExtendedStatus()
+    class Google_Service_BeyondCorp_ContainerHealthDetails extends \Google\Service\BeyondCorp\ContainerHealthDetails
     {
     }
 }

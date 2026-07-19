@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TagSettings extends \Google\Model
-{
-    /**
-     * Whether dynamic floodlight tags are enabled.
-     *
-     * @var bool
-     */
-    public $dynamicTagEnabled;
-    /**
-     * Whether image tags are enabled.
-     *
-     * @var bool
-     */
-    public $imageTagEnabled;
-    /**
-     * Whether dynamic floodlight tags are enabled.
-     *
-     * @param bool $dynamicTagEnabled
-     */
-    public function setDynamicTagEnabled($dynamicTagEnabled)
+namespace Google\Service\Dfareporting {
+    class TagSettings extends \Google\Model
     {
+        /**
+         * Whether dynamic floodlight tags are enabled.
+         *
+         * @var bool
+         */
+        public $dynamicTagEnabled;
+        /**
+         * Whether image tags are enabled.
+         *
+         * @var bool
+         */
+        public $imageTagEnabled;
+        /**
+         * Whether dynamic floodlight tags are enabled.
+         *
+         * @param bool $dynamicTagEnabled
+         */
+        public function setDynamicTagEnabled($dynamicTagEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDynamicTagEnabled()
+        {
+        }
+        /**
+         * Whether image tags are enabled.
+         *
+         * @param bool $imageTagEnabled
+         */
+        public function setImageTagEnabled($imageTagEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImageTagEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\TagSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicTagEnabled()
-    {
-    }
-    /**
-     * Whether image tags are enabled.
-     *
-     * @param bool $imageTagEnabled
-     */
-    public function setImageTagEnabled($imageTagEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImageTagEnabled()
+    class Google_Service_Dfareporting_TagSettings extends \Google\Service\Dfareporting\TagSettings
     {
     }
 }

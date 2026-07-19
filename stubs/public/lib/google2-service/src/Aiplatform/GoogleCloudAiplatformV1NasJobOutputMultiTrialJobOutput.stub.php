@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput extends \Google\Collection
-{
-    protected $collection_key = 'trainTrials';
-    protected $searchTrialsType = GoogleCloudAiplatformV1NasTrial::class;
-    protected $searchTrialsDataType = 'array';
-    protected $trainTrialsType = GoogleCloudAiplatformV1NasTrial::class;
-    protected $trainTrialsDataType = 'array';
-    /**
-     * Output only. List of NasTrials that were started as part of search stage.
-     *
-     * @param GoogleCloudAiplatformV1NasTrial[] $searchTrials
-     */
-    public function setSearchTrials($searchTrials)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput extends \Google\Collection
     {
+        protected $collection_key = 'trainTrials';
+        protected $searchTrialsType = GoogleCloudAiplatformV1NasTrial::class;
+        protected $searchTrialsDataType = 'array';
+        protected $trainTrialsType = GoogleCloudAiplatformV1NasTrial::class;
+        protected $trainTrialsDataType = 'array';
+        /**
+         * Output only. List of NasTrials that were started as part of search stage.
+         *
+         * @param GoogleCloudAiplatformV1NasTrial[] $searchTrials
+         */
+        public function setSearchTrials($searchTrials)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasTrial[]
+         */
+        public function getSearchTrials()
+        {
+        }
+        /**
+         * Output only. List of NasTrials that were started as part of train stage.
+         *
+         * @param GoogleCloudAiplatformV1NasTrial[] $trainTrials
+         */
+        public function setTrainTrials($trainTrials)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasTrial[]
+         */
+        public function getTrainTrials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NasTrial[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchTrials()
-    {
-    }
-    /**
-     * Output only. List of NasTrials that were started as part of train stage.
-     *
-     * @param GoogleCloudAiplatformV1NasTrial[] $trainTrials
-     */
-    public function setTrainTrials($trainTrials)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NasTrial[]
-     */
-    public function getTrainTrials()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput
     {
     }
 }

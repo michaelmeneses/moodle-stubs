@@ -21,192 +21,201 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class AllowedClient extends \Google\Model
-{
-    /**
-     * Permissions were not specified.
-     */
-    public const MOUNT_PERMISSIONS_MOUNT_PERMISSIONS_UNSPECIFIED = 'MOUNT_PERMISSIONS_UNSPECIFIED';
-    /**
-     * NFS share can be mount with read-only permissions.
-     */
-    public const MOUNT_PERMISSIONS_READ = 'READ';
-    /**
-     * NFS share can be mount with read-write permissions.
-     */
-    public const MOUNT_PERMISSIONS_READ_WRITE = 'READ_WRITE';
-    /**
-     * Allow dev flag. Which controls whether to allow creation of devices.
-     *
-     * @var bool
-     */
-    public $allowDev;
-    /**
-     * Allow the setuid flag.
-     *
-     * @var bool
-     */
-    public $allowSuid;
-    /**
-     * The subnet of IP addresses permitted to access the share.
-     *
-     * @var string
-     */
-    public $allowedClientsCidr;
-    /**
-     * Mount permissions.
-     *
-     * @var string
-     */
-    public $mountPermissions;
-    /**
-     * The network the access point sits on.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Output only. The path to access NFS, in format shareIP:/InstanceID
-     * InstanceID is the generated ID instead of customer provided name. example
-     * like "10.0.0.0:/g123456789-nfs001"
-     *
-     * @var string
-     */
-    public $nfsPath;
-    /**
-     * Disable root squashing, which is a feature of NFS. Root squash is a special
-     * mapping of the remote superuser (root) identity when using identity
-     * authentication.
-     *
-     * @var bool
-     */
-    public $noRootSquash;
-    /**
-     * Output only. The IP address of the share on this network. Assigned
-     * automatically during provisioning based on the network's services_cidr.
-     *
-     * @var string
-     */
-    public $shareIp;
-    /**
-     * Allow dev flag. Which controls whether to allow creation of devices.
-     *
-     * @param bool $allowDev
-     */
-    public function setAllowDev($allowDev)
+namespace Google\Service\Baremetalsolution {
+    class AllowedClient extends \Google\Model
     {
+        /**
+         * Permissions were not specified.
+         */
+        public const MOUNT_PERMISSIONS_MOUNT_PERMISSIONS_UNSPECIFIED = 'MOUNT_PERMISSIONS_UNSPECIFIED';
+        /**
+         * NFS share can be mount with read-only permissions.
+         */
+        public const MOUNT_PERMISSIONS_READ = 'READ';
+        /**
+         * NFS share can be mount with read-write permissions.
+         */
+        public const MOUNT_PERMISSIONS_READ_WRITE = 'READ_WRITE';
+        /**
+         * Allow dev flag. Which controls whether to allow creation of devices.
+         *
+         * @var bool
+         */
+        public $allowDev;
+        /**
+         * Allow the setuid flag.
+         *
+         * @var bool
+         */
+        public $allowSuid;
+        /**
+         * The subnet of IP addresses permitted to access the share.
+         *
+         * @var string
+         */
+        public $allowedClientsCidr;
+        /**
+         * Mount permissions.
+         *
+         * @var string
+         */
+        public $mountPermissions;
+        /**
+         * The network the access point sits on.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Output only. The path to access NFS, in format shareIP:/InstanceID
+         * InstanceID is the generated ID instead of customer provided name. example
+         * like "10.0.0.0:/g123456789-nfs001"
+         *
+         * @var string
+         */
+        public $nfsPath;
+        /**
+         * Disable root squashing, which is a feature of NFS. Root squash is a special
+         * mapping of the remote superuser (root) identity when using identity
+         * authentication.
+         *
+         * @var bool
+         */
+        public $noRootSquash;
+        /**
+         * Output only. The IP address of the share on this network. Assigned
+         * automatically during provisioning based on the network's services_cidr.
+         *
+         * @var string
+         */
+        public $shareIp;
+        /**
+         * Allow dev flag. Which controls whether to allow creation of devices.
+         *
+         * @param bool $allowDev
+         */
+        public function setAllowDev($allowDev)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowDev()
+        {
+        }
+        /**
+         * Allow the setuid flag.
+         *
+         * @param bool $allowSuid
+         */
+        public function setAllowSuid($allowSuid)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowSuid()
+        {
+        }
+        /**
+         * The subnet of IP addresses permitted to access the share.
+         *
+         * @param string $allowedClientsCidr
+         */
+        public function setAllowedClientsCidr($allowedClientsCidr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllowedClientsCidr()
+        {
+        }
+        /**
+         * Mount permissions.
+         *
+         * Accepted values: MOUNT_PERMISSIONS_UNSPECIFIED, READ, READ_WRITE
+         *
+         * @param self::MOUNT_PERMISSIONS_* $mountPermissions
+         */
+        public function setMountPermissions($mountPermissions)
+        {
+        }
+        /**
+         * @return self::MOUNT_PERMISSIONS_*
+         */
+        public function getMountPermissions()
+        {
+        }
+        /**
+         * The network the access point sits on.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Output only. The path to access NFS, in format shareIP:/InstanceID
+         * InstanceID is the generated ID instead of customer provided name. example
+         * like "10.0.0.0:/g123456789-nfs001"
+         *
+         * @param string $nfsPath
+         */
+        public function setNfsPath($nfsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNfsPath()
+        {
+        }
+        /**
+         * Disable root squashing, which is a feature of NFS. Root squash is a special
+         * mapping of the remote superuser (root) identity when using identity
+         * authentication.
+         *
+         * @param bool $noRootSquash
+         */
+        public function setNoRootSquash($noRootSquash)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoRootSquash()
+        {
+        }
+        /**
+         * Output only. The IP address of the share on this network. Assigned
+         * automatically during provisioning based on the network's services_cidr.
+         *
+         * @param string $shareIp
+         */
+        public function setShareIp($shareIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShareIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Baremetalsolution\AllowedClient registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowDev()
-    {
-    }
-    /**
-     * Allow the setuid flag.
-     *
-     * @param bool $allowSuid
-     */
-    public function setAllowSuid($allowSuid)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowSuid()
-    {
-    }
-    /**
-     * The subnet of IP addresses permitted to access the share.
-     *
-     * @param string $allowedClientsCidr
-     */
-    public function setAllowedClientsCidr($allowedClientsCidr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAllowedClientsCidr()
-    {
-    }
-    /**
-     * Mount permissions.
-     *
-     * Accepted values: MOUNT_PERMISSIONS_UNSPECIFIED, READ, READ_WRITE
-     *
-     * @param self::MOUNT_PERMISSIONS_* $mountPermissions
-     */
-    public function setMountPermissions($mountPermissions)
-    {
-    }
-    /**
-     * @return self::MOUNT_PERMISSIONS_*
-     */
-    public function getMountPermissions()
-    {
-    }
-    /**
-     * The network the access point sits on.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Output only. The path to access NFS, in format shareIP:/InstanceID
-     * InstanceID is the generated ID instead of customer provided name. example
-     * like "10.0.0.0:/g123456789-nfs001"
-     *
-     * @param string $nfsPath
-     */
-    public function setNfsPath($nfsPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNfsPath()
-    {
-    }
-    /**
-     * Disable root squashing, which is a feature of NFS. Root squash is a special
-     * mapping of the remote superuser (root) identity when using identity
-     * authentication.
-     *
-     * @param bool $noRootSquash
-     */
-    public function setNoRootSquash($noRootSquash)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoRootSquash()
-    {
-    }
-    /**
-     * Output only. The IP address of the share on this network. Assigned
-     * automatically during provisioning based on the network's services_cidr.
-     *
-     * @param string $shareIp
-     */
-    public function setShareIp($shareIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShareIp()
+    class Google_Service_Baremetalsolution_AllowedClient extends \Google\Service\Baremetalsolution\AllowedClient
     {
     }
 }

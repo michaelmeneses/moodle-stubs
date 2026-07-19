@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class GoogleOperations extends \Google\Collection
-{
-    protected $collection_key = 'affectedUserEmails';
-    /**
-     * The list of emails which correspond to the users directly affected by the
-     * incident.
-     *
-     * @var string[]
-     */
-    public $affectedUserEmails;
-    protected $attachmentDataType = Attachment::class;
-    protected $attachmentDataDataType = '';
-    /**
-     * A detailed, freeform incident description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Customer domain for email template personalization.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * A header to display above the incident message. Typically used to attach a
-     * localized notice on the timeline for followup comms translations.
-     *
-     * @var string
-     */
-    public $header;
-    /**
-     * A one-line incident description.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The list of emails which correspond to the users directly affected by the
-     * incident.
-     *
-     * @param string[] $affectedUserEmails
-     */
-    public function setAffectedUserEmails($affectedUserEmails)
+namespace Google\Service\AlertCenter {
+    class GoogleOperations extends \Google\Collection
     {
+        protected $collection_key = 'affectedUserEmails';
+        /**
+         * The list of emails which correspond to the users directly affected by the
+         * incident.
+         *
+         * @var string[]
+         */
+        public $affectedUserEmails;
+        protected $attachmentDataType = Attachment::class;
+        protected $attachmentDataDataType = '';
+        /**
+         * A detailed, freeform incident description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Customer domain for email template personalization.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * A header to display above the incident message. Typically used to attach a
+         * localized notice on the timeline for followup comms translations.
+         *
+         * @var string
+         */
+        public $header;
+        /**
+         * A one-line incident description.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The list of emails which correspond to the users directly affected by the
+         * incident.
+         *
+         * @param string[] $affectedUserEmails
+         */
+        public function setAffectedUserEmails($affectedUserEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAffectedUserEmails()
+        {
+        }
+        /**
+         * Optional. Application-specific data for an incident, provided when the
+         * Google Workspace application which reported the incident cannot be
+         * completely restored to a valid state.
+         *
+         * @param Attachment $attachmentData
+         */
+        public function setAttachmentData(Attachment $attachmentData)
+        {
+        }
+        /**
+         * @return Attachment
+         */
+        public function getAttachmentData()
+        {
+        }
+        /**
+         * A detailed, freeform incident description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Customer domain for email template personalization.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * A header to display above the incident message. Typically used to attach a
+         * localized notice on the timeline for followup comms translations.
+         *
+         * @param string $header
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * A one-line incident description.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AlertCenter\GoogleOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedUserEmails()
-    {
-    }
-    /**
-     * Optional. Application-specific data for an incident, provided when the
-     * Google Workspace application which reported the incident cannot be
-     * completely restored to a valid state.
-     *
-     * @param Attachment $attachmentData
-     */
-    public function setAttachmentData(Attachment $attachmentData)
-    {
-    }
-    /**
-     * @return Attachment
-     */
-    public function getAttachmentData()
-    {
-    }
-    /**
-     * A detailed, freeform incident description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Customer domain for email template personalization.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    /**
-     * A header to display above the incident message. Typically used to attach a
-     * localized notice on the timeline for followup comms translations.
-     *
-     * @param string $header
-     */
-    public function setHeader($header)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * A one-line incident description.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AlertCenter_GoogleOperations extends \Google\Service\AlertCenter\GoogleOperations
     {
     }
 }

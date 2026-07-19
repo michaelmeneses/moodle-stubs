@@ -21,107 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage\Resource;
-
-/**
- * The "anywhereCaches" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storageService = new Google\Service\Storage(...);
- *   $anywhereCaches = $storageService->anywhereCaches;
- *  </code>
- */
-class AnywhereCaches extends \Google\Service\Resource
-{
+namespace Google\Service\Storage\Resource {
+    use Google\Service\Storage\AnywhereCache;
+    use Google\Service\Storage\AnywhereCaches as AnywhereCachesModel;
+    use Google\Service\Storage\GoogleLongrunningOperation;
     /**
-     * Disables an Anywhere Cache instance. (anywhereCaches.disable)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
-     * @param array $optParams Optional parameters.
-     * @return AnywhereCache
-     * @throws \Google\Service\Exception
+     * The "anywhereCaches" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storageService = new Google\Service\Storage(...);
+     *   $anywhereCaches = $storageService->anywhereCaches;
+     *  </code>
      */
-    public function disable($bucket, $anywhereCacheId, $optParams = [])
+    class AnywhereCaches extends \Google\Service\Resource
     {
+        /**
+         * Disables an Anywhere Cache instance. (anywhereCaches.disable)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
+         * @param array $optParams Optional parameters.
+         * @return AnywhereCache
+         * @throws \Google\Service\Exception
+         */
+        public function disable($bucket, $anywhereCacheId, $optParams = [])
+        {
+        }
+        /**
+         * Returns the metadata of an Anywhere Cache instance. (anywhereCaches.get)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
+         * @param array $optParams Optional parameters.
+         * @return AnywhereCache
+         * @throws \Google\Service\Exception
+         */
+        public function get($bucket, $anywhereCacheId, $optParams = [])
+        {
+        }
+        /**
+         * Creates an Anywhere Cache instance. (anywhereCaches.insert)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param AnywhereCache $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function insert($bucket, AnywhereCache $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of Anywhere Cache instances of the bucket matching the
+         * criteria. (anywhereCaches.listAnywhereCaches)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of items to return in a single page of
+         * responses. Maximum 1000.
+         * @opt_param string pageToken A previously-returned page token representing
+         * part of the larger set of results to view.
+         * @return AnywhereCachesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listAnywhereCaches($bucket, $optParams = [])
+        {
+        }
+        /**
+         * Pauses an Anywhere Cache instance. (anywhereCaches.pause)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
+         * @param array $optParams Optional parameters.
+         * @return AnywhereCache
+         * @throws \Google\Service\Exception
+         */
+        public function pause($bucket, $anywhereCacheId, $optParams = [])
+        {
+        }
+        /**
+         * Resumes a paused or disabled Anywhere Cache instance. (anywhereCaches.resume)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
+         * @param array $optParams Optional parameters.
+         * @return AnywhereCache
+         * @throws \Google\Service\Exception
+         */
+        public function resume($bucket, $anywhereCacheId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the config(ttl and admissionPolicy) of an Anywhere Cache instance.
+         * (anywhereCaches.update)
+         *
+         * @param string $bucket Name of the parent bucket.
+         * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
+         * @param AnywhereCache $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function update($bucket, $anywhereCacheId, AnywhereCache $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the metadata of an Anywhere Cache instance. (anywhereCaches.get)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
-     * @param array $optParams Optional parameters.
-     * @return AnywhereCache
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Storage\Resource\AnywhereCaches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($bucket, $anywhereCacheId, $optParams = [])
-    {
-    }
-    /**
-     * Creates an Anywhere Cache instance. (anywhereCaches.insert)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param AnywhereCache $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function insert($bucket, AnywhereCache $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of Anywhere Cache instances of the bucket matching the
-     * criteria. (anywhereCaches.listAnywhereCaches)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of items to return in a single page of
-     * responses. Maximum 1000.
-     * @opt_param string pageToken A previously-returned page token representing
-     * part of the larger set of results to view.
-     * @return AnywhereCachesModel
-     * @throws \Google\Service\Exception
-     */
-    public function listAnywhereCaches($bucket, $optParams = [])
-    {
-    }
-    /**
-     * Pauses an Anywhere Cache instance. (anywhereCaches.pause)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
-     * @param array $optParams Optional parameters.
-     * @return AnywhereCache
-     * @throws \Google\Service\Exception
-     */
-    public function pause($bucket, $anywhereCacheId, $optParams = [])
-    {
-    }
-    /**
-     * Resumes a paused or disabled Anywhere Cache instance. (anywhereCaches.resume)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
-     * @param array $optParams Optional parameters.
-     * @return AnywhereCache
-     * @throws \Google\Service\Exception
-     */
-    public function resume($bucket, $anywhereCacheId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the config(ttl and admissionPolicy) of an Anywhere Cache instance.
-     * (anywhereCaches.update)
-     *
-     * @param string $bucket Name of the parent bucket.
-     * @param string $anywhereCacheId The ID of requested Anywhere Cache instance.
-     * @param AnywhereCache $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function update($bucket, $anywhereCacheId, AnywhereCache $postBody, $optParams = [])
+    class Google_Service_Storage_Resource_AnywhereCaches extends \Google\Service\Storage\Resource\AnywhereCaches
     {
     }
 }

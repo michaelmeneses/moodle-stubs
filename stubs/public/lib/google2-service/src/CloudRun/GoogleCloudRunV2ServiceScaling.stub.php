@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ServiceScaling extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const SCALING_MODE_SCALING_MODE_UNSPECIFIED = 'SCALING_MODE_UNSPECIFIED';
-    /**
-     * Scale based on traffic between min and max instances.
-     */
-    public const SCALING_MODE_AUTOMATIC = 'AUTOMATIC';
-    /**
-     * Scale to exactly min instances and ignore max instances.
-     */
-    public const SCALING_MODE_MANUAL = 'MANUAL';
-    /**
-     * Optional. total instance count for the service in manual scaling mode. This
-     * number of instances is divided among all revisions with specified traffic
-     * based on the percent of traffic they are receiving.
-     *
-     * @var int
-     */
-    public $manualInstanceCount;
-    /**
-     * Optional. total max instances for the service. This number of instances is
-     * divided among all revisions with specified traffic based on the percent of
-     * traffic they are receiving.
-     *
-     * @var int
-     */
-    public $maxInstanceCount;
-    /**
-     * Optional. total min instances for the service. This number of instances is
-     * divided among all revisions with specified traffic based on the percent of
-     * traffic they are receiving.
-     *
-     * @var int
-     */
-    public $minInstanceCount;
-    /**
-     * Optional. The scaling mode for the service.
-     *
-     * @var string
-     */
-    public $scalingMode;
-    /**
-     * Optional. total instance count for the service in manual scaling mode. This
-     * number of instances is divided among all revisions with specified traffic
-     * based on the percent of traffic they are receiving.
-     *
-     * @param int $manualInstanceCount
-     */
-    public function setManualInstanceCount($manualInstanceCount)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ServiceScaling extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const SCALING_MODE_SCALING_MODE_UNSPECIFIED = 'SCALING_MODE_UNSPECIFIED';
+        /**
+         * Scale based on traffic between min and max instances.
+         */
+        public const SCALING_MODE_AUTOMATIC = 'AUTOMATIC';
+        /**
+         * Scale to exactly min instances and ignore max instances.
+         */
+        public const SCALING_MODE_MANUAL = 'MANUAL';
+        /**
+         * Optional. total instance count for the service in manual scaling mode. This
+         * number of instances is divided among all revisions with specified traffic
+         * based on the percent of traffic they are receiving.
+         *
+         * @var int
+         */
+        public $manualInstanceCount;
+        /**
+         * Optional. total max instances for the service. This number of instances is
+         * divided among all revisions with specified traffic based on the percent of
+         * traffic they are receiving.
+         *
+         * @var int
+         */
+        public $maxInstanceCount;
+        /**
+         * Optional. total min instances for the service. This number of instances is
+         * divided among all revisions with specified traffic based on the percent of
+         * traffic they are receiving.
+         *
+         * @var int
+         */
+        public $minInstanceCount;
+        /**
+         * Optional. The scaling mode for the service.
+         *
+         * @var string
+         */
+        public $scalingMode;
+        /**
+         * Optional. total instance count for the service in manual scaling mode. This
+         * number of instances is divided among all revisions with specified traffic
+         * based on the percent of traffic they are receiving.
+         *
+         * @param int $manualInstanceCount
+         */
+        public function setManualInstanceCount($manualInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getManualInstanceCount()
+        {
+        }
+        /**
+         * Optional. total max instances for the service. This number of instances is
+         * divided among all revisions with specified traffic based on the percent of
+         * traffic they are receiving.
+         *
+         * @param int $maxInstanceCount
+         */
+        public function setMaxInstanceCount($maxInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxInstanceCount()
+        {
+        }
+        /**
+         * Optional. total min instances for the service. This number of instances is
+         * divided among all revisions with specified traffic based on the percent of
+         * traffic they are receiving.
+         *
+         * @param int $minInstanceCount
+         */
+        public function setMinInstanceCount($minInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinInstanceCount()
+        {
+        }
+        /**
+         * Optional. The scaling mode for the service.
+         *
+         * Accepted values: SCALING_MODE_UNSPECIFIED, AUTOMATIC, MANUAL
+         *
+         * @param self::SCALING_MODE_* $scalingMode
+         */
+        public function setScalingMode($scalingMode)
+        {
+        }
+        /**
+         * @return self::SCALING_MODE_*
+         */
+        public function getScalingMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ServiceScaling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManualInstanceCount()
-    {
-    }
-    /**
-     * Optional. total max instances for the service. This number of instances is
-     * divided among all revisions with specified traffic based on the percent of
-     * traffic they are receiving.
-     *
-     * @param int $maxInstanceCount
-     */
-    public function setMaxInstanceCount($maxInstanceCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxInstanceCount()
-    {
-    }
-    /**
-     * Optional. total min instances for the service. This number of instances is
-     * divided among all revisions with specified traffic based on the percent of
-     * traffic they are receiving.
-     *
-     * @param int $minInstanceCount
-     */
-    public function setMinInstanceCount($minInstanceCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinInstanceCount()
-    {
-    }
-    /**
-     * Optional. The scaling mode for the service.
-     *
-     * Accepted values: SCALING_MODE_UNSPECIFIED, AUTOMATIC, MANUAL
-     *
-     * @param self::SCALING_MODE_* $scalingMode
-     */
-    public function setScalingMode($scalingMode)
-    {
-    }
-    /**
-     * @return self::SCALING_MODE_*
-     */
-    public function getScalingMode()
+    class Google_Service_CloudRun_GoogleCloudRunV2ServiceScaling extends \Google\Service\CloudRun\GoogleCloudRunV2ServiceScaling
     {
     }
 }

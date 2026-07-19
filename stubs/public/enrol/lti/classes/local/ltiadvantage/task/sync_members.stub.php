@@ -22,6 +22,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\task;
 
+use core\http_client;
+use core\task\scheduled_task;
+use enrol_lti\helper;
+use enrol_lti\local\ltiadvantage\entity\application_registration;
+use enrol_lti\local\ltiadvantage\entity\nrps_info;
+use enrol_lti\local\ltiadvantage\entity\resource_link;
+use enrol_lti\local\ltiadvantage\entity\user;
+use enrol_lti\local\ltiadvantage\lib\issuer_database;
+use enrol_lti\local\ltiadvantage\lib\launch_cache_session;
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
+use enrol_lti\local\ltiadvantage\repository\resource_link_repository;
+use enrol_lti\local\ltiadvantage\repository\user_repository;
+use Packback\Lti1p3\LtiNamesRolesProvisioningService;
+use Packback\Lti1p3\LtiRegistration;
+use Packback\Lti1p3\LtiServiceConnector;
+use stdClass;
 /**
  * LTI Advantage-specific task responsible for syncing memberships from tool platforms with the tool.
  *

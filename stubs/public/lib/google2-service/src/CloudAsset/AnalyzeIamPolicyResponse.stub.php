@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzeIamPolicyResponse extends \Google\Collection
-{
-    protected $collection_key = 'serviceAccountImpersonationAnalysis';
-    /**
-     * Represents whether all entries in the main_analysis and
-     * service_account_impersonation_analysis have been fully explored to answer
-     * the query in the request.
-     *
-     * @var bool
-     */
-    public $fullyExplored;
-    protected $mainAnalysisType = IamPolicyAnalysis::class;
-    protected $mainAnalysisDataType = '';
-    protected $serviceAccountImpersonationAnalysisType = IamPolicyAnalysis::class;
-    protected $serviceAccountImpersonationAnalysisDataType = 'array';
-    /**
-     * Represents whether all entries in the main_analysis and
-     * service_account_impersonation_analysis have been fully explored to answer
-     * the query in the request.
-     *
-     * @param bool $fullyExplored
-     */
-    public function setFullyExplored($fullyExplored)
+namespace Google\Service\CloudAsset {
+    class AnalyzeIamPolicyResponse extends \Google\Collection
     {
+        protected $collection_key = 'serviceAccountImpersonationAnalysis';
+        /**
+         * Represents whether all entries in the main_analysis and
+         * service_account_impersonation_analysis have been fully explored to answer
+         * the query in the request.
+         *
+         * @var bool
+         */
+        public $fullyExplored;
+        protected $mainAnalysisType = IamPolicyAnalysis::class;
+        protected $mainAnalysisDataType = '';
+        protected $serviceAccountImpersonationAnalysisType = IamPolicyAnalysis::class;
+        protected $serviceAccountImpersonationAnalysisDataType = 'array';
+        /**
+         * Represents whether all entries in the main_analysis and
+         * service_account_impersonation_analysis have been fully explored to answer
+         * the query in the request.
+         *
+         * @param bool $fullyExplored
+         */
+        public function setFullyExplored($fullyExplored)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullyExplored()
+        {
+        }
+        /**
+         * The main analysis that matches the original request.
+         *
+         * @param IamPolicyAnalysis $mainAnalysis
+         */
+        public function setMainAnalysis(IamPolicyAnalysis $mainAnalysis)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysis
+         */
+        public function getMainAnalysis()
+        {
+        }
+        /**
+         * The service account impersonation analysis if
+         * IamPolicyAnalysisQuery.Options.analyze_service_account_impersonation is
+         * enabled.
+         *
+         * @param IamPolicyAnalysis[] $serviceAccountImpersonationAnalysis
+         */
+        public function setServiceAccountImpersonationAnalysis($serviceAccountImpersonationAnalysis)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysis[]
+         */
+        public function getServiceAccountImpersonationAnalysis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzeIamPolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullyExplored()
-    {
-    }
-    /**
-     * The main analysis that matches the original request.
-     *
-     * @param IamPolicyAnalysis $mainAnalysis
-     */
-    public function setMainAnalysis(IamPolicyAnalysis $mainAnalysis)
-    {
-    }
-    /**
-     * @return IamPolicyAnalysis
-     */
-    public function getMainAnalysis()
-    {
-    }
-    /**
-     * The service account impersonation analysis if
-     * IamPolicyAnalysisQuery.Options.analyze_service_account_impersonation is
-     * enabled.
-     *
-     * @param IamPolicyAnalysis[] $serviceAccountImpersonationAnalysis
-     */
-    public function setServiceAccountImpersonationAnalysis($serviceAccountImpersonationAnalysis)
-    {
-    }
-    /**
-     * @return IamPolicyAnalysis[]
-     */
-    public function getServiceAccountImpersonationAnalysis()
+    class Google_Service_CloudAsset_AnalyzeIamPolicyResponse extends \Google\Service\CloudAsset\AnalyzeIamPolicyResponse
     {
     }
 }

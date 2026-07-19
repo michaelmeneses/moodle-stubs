@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class PrinterModel extends \Google\Model
-{
-    /**
-     * Display name. eq. "Brother MFC-8840D"
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Make and model as represented in "make_and_model" field in Printer object.
-     * eq. "brother mfc-8840d"
-     *
-     * @var string
-     */
-    public $makeAndModel;
-    /**
-     * Manufacturer. eq. "Brother"
-     *
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * Display name. eq. "Brother MFC-8840D"
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Directory {
+    class PrinterModel extends \Google\Model
     {
+        /**
+         * Display name. eq. "Brother MFC-8840D"
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Make and model as represented in "make_and_model" field in Printer object.
+         * eq. "brother mfc-8840d"
+         *
+         * @var string
+         */
+        public $makeAndModel;
+        /**
+         * Manufacturer. eq. "Brother"
+         *
+         * @var string
+         */
+        public $manufacturer;
+        /**
+         * Display name. eq. "Brother MFC-8840D"
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Make and model as represented in "make_and_model" field in Printer object.
+         * eq. "brother mfc-8840d"
+         *
+         * @param string $makeAndModel
+         */
+        public function setMakeAndModel($makeAndModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMakeAndModel()
+        {
+        }
+        /**
+         * Manufacturer. eq. "Brother"
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\PrinterModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Make and model as represented in "make_and_model" field in Printer object.
-     * eq. "brother mfc-8840d"
-     *
-     * @param string $makeAndModel
-     */
-    public function setMakeAndModel($makeAndModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMakeAndModel()
-    {
-    }
-    /**
-     * Manufacturer. eq. "Brother"
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManufacturer()
+    class Google_Service_Directory_PrinterModel extends \Google\Service\Directory\PrinterModel
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ContinuousBackupConfig extends \Google\Model
-{
-    /**
-     * Whether ContinuousBackup is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $encryptionConfigType = EncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    /**
-     * The number of days that are eligible to restore from using PITR. To support
-     * the entire recovery window, backups and logs are retained for one day more
-     * than the recovery window. If not set, defaults to 14 days.
-     *
-     * @var int
-     */
-    public $recoveryWindowDays;
-    /**
-     * Whether ContinuousBackup is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ContinuousBackupConfig extends \Google\Model
     {
+        /**
+         * Whether ContinuousBackup is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $encryptionConfigType = EncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        /**
+         * The number of days that are eligible to restore from using PITR. To support
+         * the entire recovery window, backups and logs are retained for one day more
+         * than the recovery window. If not set, defaults to 14 days.
+         *
+         * @var int
+         */
+        public $recoveryWindowDays;
+        /**
+         * Whether ContinuousBackup is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The encryption config can be specified to encrypt the backups with a
+         * customer-managed encryption key (CMEK). When this field is not specified,
+         * the backup will use the cluster's encryption config.
+         *
+         * @param EncryptionConfig $encryptionConfig
+         */
+        public function setEncryptionConfig(EncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return EncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
+        /**
+         * The number of days that are eligible to restore from using PITR. To support
+         * the entire recovery window, backups and logs are retained for one day more
+         * than the recovery window. If not set, defaults to 14 days.
+         *
+         * @param int $recoveryWindowDays
+         */
+        public function setRecoveryWindowDays($recoveryWindowDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRecoveryWindowDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The encryption config can be specified to encrypt the backups with a
-     * customer-managed encryption key (CMEK). When this field is not specified,
-     * the backup will use the cluster's encryption config.
-     *
-     * @param EncryptionConfig $encryptionConfig
-     */
-    public function setEncryptionConfig(EncryptionConfig $encryptionConfig)
-    {
-    }
-    /**
-     * @return EncryptionConfig
-     */
-    public function getEncryptionConfig()
-    {
-    }
-    /**
-     * The number of days that are eligible to restore from using PITR. To support
-     * the entire recovery window, backups and logs are retained for one day more
-     * than the recovery window. If not set, defaults to 14 days.
-     *
-     * @param int $recoveryWindowDays
-     */
-    public function setRecoveryWindowDays($recoveryWindowDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRecoveryWindowDays()
+    class Google_Service_CloudAlloyDBAdmin_ContinuousBackupConfig extends \Google\Service\CloudAlloyDBAdmin\ContinuousBackupConfig
     {
     }
 }

@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class PrivateClusterConfig extends \Google\Model
-{
-    /**
-     * Whether the master's internal IP address is used as the cluster endpoint.
-     * Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.enable_public_endpoint
-     * instead. Note that the value of enable_public_endpoint is reversed: if
-     * enable_private_endpoint is false, then enable_public_endpoint will be true.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $enablePrivateEndpoint;
-    /**
-     * Whether nodes have internal IP addresses only. If enabled, all nodes are
-     * given only RFC 1918 private addresses and communicate with the master via
-     * private networking. Deprecated: Use
-     * NetworkConfig.default_enable_private_nodes instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $enablePrivateNodes;
-    protected $masterGlobalAccessConfigType = PrivateClusterMasterGlobalAccessConfig::class;
-    protected $masterGlobalAccessConfigDataType = '';
-    /**
-     * The IP range in CIDR notation to use for the hosted master network. This
-     * range will be used for assigning internal IP addresses to the master or set
-     * of masters, as well as the ILB VIP. This range must not overlap with any
-     * other ranges in use within the cluster's network.
-     *
-     * @var string
-     */
-    public $masterIpv4CidrBlock;
-    /**
-     * Output only. The peering name in the customer VPC used by this cluster.
-     *
-     * @var string
-     */
-    public $peeringName;
-    /**
-     * Output only. The internal IP address of this cluster's master endpoint.
-     * Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $privateEndpoint;
-    /**
-     * Subnet to provision the master's private endpoint during cluster creation.
-     * Specified in projects/regions/subnetworks format. Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint_subnetwork
-     * instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $privateEndpointSubnetwork;
-    /**
-     * Output only. The external IP address of this cluster's master endpoint.
-     * Deprecated:Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.public_endpoint instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $publicEndpoint;
-    /**
-     * Whether the master's internal IP address is used as the cluster endpoint.
-     * Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.enable_public_endpoint
-     * instead. Note that the value of enable_public_endpoint is reversed: if
-     * enable_private_endpoint is false, then enable_public_endpoint will be true.
-     *
-     * @deprecated
-     * @param bool $enablePrivateEndpoint
-     */
-    public function setEnablePrivateEndpoint($enablePrivateEndpoint)
+namespace Google\Service\Container {
+    class PrivateClusterConfig extends \Google\Model
     {
+        /**
+         * Whether the master's internal IP address is used as the cluster endpoint.
+         * Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.enable_public_endpoint
+         * instead. Note that the value of enable_public_endpoint is reversed: if
+         * enable_private_endpoint is false, then enable_public_endpoint will be true.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $enablePrivateEndpoint;
+        /**
+         * Whether nodes have internal IP addresses only. If enabled, all nodes are
+         * given only RFC 1918 private addresses and communicate with the master via
+         * private networking. Deprecated: Use
+         * NetworkConfig.default_enable_private_nodes instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $enablePrivateNodes;
+        protected $masterGlobalAccessConfigType = PrivateClusterMasterGlobalAccessConfig::class;
+        protected $masterGlobalAccessConfigDataType = '';
+        /**
+         * The IP range in CIDR notation to use for the hosted master network. This
+         * range will be used for assigning internal IP addresses to the master or set
+         * of masters, as well as the ILB VIP. This range must not overlap with any
+         * other ranges in use within the cluster's network.
+         *
+         * @var string
+         */
+        public $masterIpv4CidrBlock;
+        /**
+         * Output only. The peering name in the customer VPC used by this cluster.
+         *
+         * @var string
+         */
+        public $peeringName;
+        /**
+         * Output only. The internal IP address of this cluster's master endpoint.
+         * Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $privateEndpoint;
+        /**
+         * Subnet to provision the master's private endpoint during cluster creation.
+         * Specified in projects/regions/subnetworks format. Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint_subnetwork
+         * instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $privateEndpointSubnetwork;
+        /**
+         * Output only. The external IP address of this cluster's master endpoint.
+         * Deprecated:Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.public_endpoint instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $publicEndpoint;
+        /**
+         * Whether the master's internal IP address is used as the cluster endpoint.
+         * Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.enable_public_endpoint
+         * instead. Note that the value of enable_public_endpoint is reversed: if
+         * enable_private_endpoint is false, then enable_public_endpoint will be true.
+         *
+         * @deprecated
+         * @param bool $enablePrivateEndpoint
+         */
+        public function setEnablePrivateEndpoint($enablePrivateEndpoint)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getEnablePrivateEndpoint()
+        {
+        }
+        /**
+         * Whether nodes have internal IP addresses only. If enabled, all nodes are
+         * given only RFC 1918 private addresses and communicate with the master via
+         * private networking. Deprecated: Use
+         * NetworkConfig.default_enable_private_nodes instead.
+         *
+         * @deprecated
+         * @param bool $enablePrivateNodes
+         */
+        public function setEnablePrivateNodes($enablePrivateNodes)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getEnablePrivateNodes()
+        {
+        }
+        /**
+         * Controls master global access settings. Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.enable_global_access instead.
+         *
+         * @deprecated
+         * @param PrivateClusterMasterGlobalAccessConfig $masterGlobalAccessConfig
+         */
+        public function setMasterGlobalAccessConfig(PrivateClusterMasterGlobalAccessConfig $masterGlobalAccessConfig)
+        {
+        }
+        /**
+         * @deprecated
+         * @return PrivateClusterMasterGlobalAccessConfig
+         */
+        public function getMasterGlobalAccessConfig()
+        {
+        }
+        /**
+         * The IP range in CIDR notation to use for the hosted master network. This
+         * range will be used for assigning internal IP addresses to the master or set
+         * of masters, as well as the ILB VIP. This range must not overlap with any
+         * other ranges in use within the cluster's network.
+         *
+         * @param string $masterIpv4CidrBlock
+         */
+        public function setMasterIpv4CidrBlock($masterIpv4CidrBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterIpv4CidrBlock()
+        {
+        }
+        /**
+         * Output only. The peering name in the customer VPC used by this cluster.
+         *
+         * @param string $peeringName
+         */
+        public function setPeeringName($peeringName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeeringName()
+        {
+        }
+        /**
+         * Output only. The internal IP address of this cluster's master endpoint.
+         * Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint instead.
+         *
+         * @deprecated
+         * @param string $privateEndpoint
+         */
+        public function setPrivateEndpoint($privateEndpoint)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPrivateEndpoint()
+        {
+        }
+        /**
+         * Subnet to provision the master's private endpoint during cluster creation.
+         * Specified in projects/regions/subnetworks format. Deprecated: Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint_subnetwork
+         * instead.
+         *
+         * @deprecated
+         * @param string $privateEndpointSubnetwork
+         */
+        public function setPrivateEndpointSubnetwork($privateEndpointSubnetwork)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPrivateEndpointSubnetwork()
+        {
+        }
+        /**
+         * Output only. The external IP address of this cluster's master endpoint.
+         * Deprecated:Use
+         * ControlPlaneEndpointsConfig.IPEndpointsConfig.public_endpoint instead.
+         *
+         * @deprecated
+         * @param string $publicEndpoint
+         */
+        public function setPublicEndpoint($publicEndpoint)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPublicEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\PrivateClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablePrivateEndpoint()
-    {
-    }
-    /**
-     * Whether nodes have internal IP addresses only. If enabled, all nodes are
-     * given only RFC 1918 private addresses and communicate with the master via
-     * private networking. Deprecated: Use
-     * NetworkConfig.default_enable_private_nodes instead.
-     *
-     * @deprecated
-     * @param bool $enablePrivateNodes
-     */
-    public function setEnablePrivateNodes($enablePrivateNodes)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getEnablePrivateNodes()
-    {
-    }
-    /**
-     * Controls master global access settings. Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.enable_global_access instead.
-     *
-     * @deprecated
-     * @param PrivateClusterMasterGlobalAccessConfig $masterGlobalAccessConfig
-     */
-    public function setMasterGlobalAccessConfig(PrivateClusterMasterGlobalAccessConfig $masterGlobalAccessConfig)
-    {
-    }
-    /**
-     * @deprecated
-     * @return PrivateClusterMasterGlobalAccessConfig
-     */
-    public function getMasterGlobalAccessConfig()
-    {
-    }
-    /**
-     * The IP range in CIDR notation to use for the hosted master network. This
-     * range will be used for assigning internal IP addresses to the master or set
-     * of masters, as well as the ILB VIP. This range must not overlap with any
-     * other ranges in use within the cluster's network.
-     *
-     * @param string $masterIpv4CidrBlock
-     */
-    public function setMasterIpv4CidrBlock($masterIpv4CidrBlock)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterIpv4CidrBlock()
-    {
-    }
-    /**
-     * Output only. The peering name in the customer VPC used by this cluster.
-     *
-     * @param string $peeringName
-     */
-    public function setPeeringName($peeringName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeeringName()
-    {
-    }
-    /**
-     * Output only. The internal IP address of this cluster's master endpoint.
-     * Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint instead.
-     *
-     * @deprecated
-     * @param string $privateEndpoint
-     */
-    public function setPrivateEndpoint($privateEndpoint)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPrivateEndpoint()
-    {
-    }
-    /**
-     * Subnet to provision the master's private endpoint during cluster creation.
-     * Specified in projects/regions/subnetworks format. Deprecated: Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.private_endpoint_subnetwork
-     * instead.
-     *
-     * @deprecated
-     * @param string $privateEndpointSubnetwork
-     */
-    public function setPrivateEndpointSubnetwork($privateEndpointSubnetwork)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPrivateEndpointSubnetwork()
-    {
-    }
-    /**
-     * Output only. The external IP address of this cluster's master endpoint.
-     * Deprecated:Use
-     * ControlPlaneEndpointsConfig.IPEndpointsConfig.public_endpoint instead.
-     *
-     * @deprecated
-     * @param string $publicEndpoint
-     */
-    public function setPublicEndpoint($publicEndpoint)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPublicEndpoint()
+    class Google_Service_Container_PrivateClusterConfig extends \Google\Service\Container\PrivateClusterConfig
     {
     }
 }

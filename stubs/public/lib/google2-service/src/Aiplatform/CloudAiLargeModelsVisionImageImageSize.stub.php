@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionImageImageSize extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $channels;
-    /**
-     * @var int
-     */
-    public $height;
-    /**
-     * @var int
-     */
-    public $width;
-    /**
-     * @param int $channels
-     */
-    public function setChannels($channels)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionImageImageSize extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $channels;
+        /**
+         * @var int
+         */
+        public $height;
+        /**
+         * @var int
+         */
+        public $width;
+        /**
+         * @param int $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionImageImageSize registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
-    {
-    }
-    /**
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionImageImageSize extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionImageImageSize
     {
     }
 }

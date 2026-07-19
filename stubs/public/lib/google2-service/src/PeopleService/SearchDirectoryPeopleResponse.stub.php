@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class SearchDirectoryPeopleResponse extends \Google\Collection
-{
-    protected $collection_key = 'people';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $peopleType = Person::class;
-    protected $peopleDataType = 'array';
-    /**
-     * The total number of items in the list without pagination.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PeopleService {
+    class SearchDirectoryPeopleResponse extends \Google\Collection
     {
+        protected $collection_key = 'people';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $peopleType = Person::class;
+        protected $peopleDataType = 'array';
+        /**
+         * The total number of items in the list without pagination.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of people in the domain directory that match the query.
+         *
+         * @param Person[] $people
+         */
+        public function setPeople($people)
+        {
+        }
+        /**
+         * @return Person[]
+         */
+        public function getPeople()
+        {
+        }
+        /**
+         * The total number of items in the list without pagination.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\SearchDirectoryPeopleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of people in the domain directory that match the query.
-     *
-     * @param Person[] $people
-     */
-    public function setPeople($people)
-    {
-    }
-    /**
-     * @return Person[]
-     */
-    public function getPeople()
-    {
-    }
-    /**
-     * The total number of items in the list without pagination.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_PeopleService_SearchDirectoryPeopleResponse extends \Google\Service\PeopleService\SearchDirectoryPeopleResponse
     {
     }
 }

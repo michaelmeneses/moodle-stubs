@@ -21,233 +21,242 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class Precinct extends \Google\Collection
-{
-    protected $collection_key = 'spatialBoundaryId';
-    /**
-     * @var string
-     */
-    public $administrationRegionId;
-    /**
-     * @var string[]
-     */
-    public $contestId;
-    /**
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * @var string[]
-     */
-    public $earlyVoteSiteId;
-    /**
-     * @var string[]
-     */
-    public $electoralDistrictId;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $mailOnly;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $number;
-    /**
-     * @var string[]
-     */
-    public $ocdId;
-    /**
-     * @var string[]
-     */
-    public $pollingLocationId;
-    /**
-     * @var string[]
-     */
-    public $spatialBoundaryId;
-    /**
-     * @var string
-     */
-    public $splitName;
-    /**
-     * @var string
-     */
-    public $ward;
-    /**
-     * @param string
-     */
-    public function setAdministrationRegionId($administrationRegionId)
+namespace Google\Service\CivicInfo {
+    class Precinct extends \Google\Collection
     {
+        protected $collection_key = 'spatialBoundaryId';
+        /**
+         * @var string
+         */
+        public $administrationRegionId;
+        /**
+         * @var string[]
+         */
+        public $contestId;
+        /**
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * @var string[]
+         */
+        public $earlyVoteSiteId;
+        /**
+         * @var string[]
+         */
+        public $electoralDistrictId;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var bool
+         */
+        public $mailOnly;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $number;
+        /**
+         * @var string[]
+         */
+        public $ocdId;
+        /**
+         * @var string[]
+         */
+        public $pollingLocationId;
+        /**
+         * @var string[]
+         */
+        public $spatialBoundaryId;
+        /**
+         * @var string
+         */
+        public $splitName;
+        /**
+         * @var string
+         */
+        public $ward;
+        /**
+         * @param string
+         */
+        public function setAdministrationRegionId($administrationRegionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdministrationRegionId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setContestId($contestId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContestId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEarlyVoteSiteId($earlyVoteSiteId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEarlyVoteSiteId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setElectoralDistrictId($electoralDistrictId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getElectoralDistrictId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMailOnly($mailOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMailOnly()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setOcdId($ocdId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOcdId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPollingLocationId($pollingLocationId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPollingLocationId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSpatialBoundaryId($spatialBoundaryId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSpatialBoundaryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSplitName($splitName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSplitName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWard($ward)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\Precinct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdministrationRegionId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setContestId($contestId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getContestId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDatasetId($datasetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEarlyVoteSiteId($earlyVoteSiteId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEarlyVoteSiteId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setElectoralDistrictId($electoralDistrictId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getElectoralDistrictId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMailOnly($mailOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMailOnly()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setOcdId($ocdId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOcdId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPollingLocationId($pollingLocationId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPollingLocationId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSpatialBoundaryId($spatialBoundaryId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSpatialBoundaryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSplitName($splitName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSplitName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWard($ward)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWard()
+    class Google_Service_CivicInfo_Precinct extends \Google\Service\CivicInfo\Precinct
     {
     }
 }

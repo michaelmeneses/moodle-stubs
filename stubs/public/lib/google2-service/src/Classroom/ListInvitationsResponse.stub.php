@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListInvitationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'invitations';
-    protected $invitationsType = Invitation::class;
-    protected $invitationsDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Invitations that match the list request.
-     *
-     * @param Invitation[] $invitations
-     */
-    public function setInvitations($invitations)
+namespace Google\Service\Classroom {
+    class ListInvitationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'invitations';
+        protected $invitationsType = Invitation::class;
+        protected $invitationsDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Invitations that match the list request.
+         *
+         * @param Invitation[] $invitations
+         */
+        public function setInvitations($invitations)
+        {
+        }
+        /**
+         * @return Invitation[]
+         */
+        public function getInvitations()
+        {
+        }
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Invitation[]
+     * Runtime class alias of \Google\Service\Classroom\ListInvitationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvitations()
-    {
-    }
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListInvitationsResponse extends \Google\Service\Classroom\ListInvitationsResponse
     {
     }
 }

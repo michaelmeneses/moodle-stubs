@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentBehavioralTrustVerdict extends \Google\Model
-{
-    /**
-     * Output only. Probability of this transaction attempt being executed in a
-     * behaviorally trustworthy way. Values are from 0.0 (lowest) to 1.0
-     * (highest).
-     *
-     * @var float
-     */
-    public $trust;
-    /**
-     * Output only. Probability of this transaction attempt being executed in a
-     * behaviorally trustworthy way. Values are from 0.0 (lowest) to 1.0
-     * (highest).
-     *
-     * @param float $trust
-     */
-    public function setTrust($trust)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentBehavioralTrustVerdict extends \Google\Model
     {
+        /**
+         * Output only. Probability of this transaction attempt being executed in a
+         * behaviorally trustworthy way. Values are from 0.0 (lowest) to 1.0
+         * (highest).
+         *
+         * @var float
+         */
+        public $trust;
+        /**
+         * Output only. Probability of this transaction attempt being executed in a
+         * behaviorally trustworthy way. Values are from 0.0 (lowest) to 1.0
+         * (highest).
+         *
+         * @param float $trust
+         */
+        public function setTrust($trust)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTrust()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentBehavioralTrustVerdict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrust()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentBehavioralTrustVerdict extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentBehavioralTrustVerdict
     {
     }
 }

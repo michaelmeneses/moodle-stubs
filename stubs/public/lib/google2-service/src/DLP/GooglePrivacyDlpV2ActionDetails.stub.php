@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ActionDetails extends \Google\Model
-{
-    protected $deidentifyDetailsType = GooglePrivacyDlpV2DeidentifyDataSourceDetails::class;
-    protected $deidentifyDetailsDataType = '';
-    /**
-     * Outcome of a de-identification action.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyDataSourceDetails $deidentifyDetails
-     */
-    public function setDeidentifyDetails(GooglePrivacyDlpV2DeidentifyDataSourceDetails $deidentifyDetails)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ActionDetails extends \Google\Model
     {
+        protected $deidentifyDetailsType = GooglePrivacyDlpV2DeidentifyDataSourceDetails::class;
+        protected $deidentifyDetailsDataType = '';
+        /**
+         * Outcome of a de-identification action.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyDataSourceDetails $deidentifyDetails
+         */
+        public function setDeidentifyDetails(GooglePrivacyDlpV2DeidentifyDataSourceDetails $deidentifyDetails)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyDataSourceDetails
+         */
+        public function getDeidentifyDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeidentifyDataSourceDetails
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ActionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyDetails()
+    class Google_Service_DLP_GooglePrivacyDlpV2ActionDetails extends \Google\Service\DLP\GooglePrivacyDlpV2ActionDetails
     {
     }
 }

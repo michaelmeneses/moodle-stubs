@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RapidMigrationAssessment;
-
-class ListCollectorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $collectorsType = Collector::class;
-    protected $collectorsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of Collectors.
-     *
-     * @param Collector[] $collectors
-     */
-    public function setCollectors($collectors)
+namespace Google\Service\RapidMigrationAssessment {
+    class ListCollectorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $collectorsType = Collector::class;
+        protected $collectorsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of Collectors.
+         *
+         * @param Collector[] $collectors
+         */
+        public function setCollectors($collectors)
+        {
+        }
+        /**
+         * @return Collector[]
+         */
+        public function getCollectors()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Collector[]
+     * Runtime class alias of \Google\Service\RapidMigrationAssessment\ListCollectorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectors()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_RapidMigrationAssessment_ListCollectorsResponse extends \Google\Service\RapidMigrationAssessment\ListCollectorsResponse
     {
     }
 }

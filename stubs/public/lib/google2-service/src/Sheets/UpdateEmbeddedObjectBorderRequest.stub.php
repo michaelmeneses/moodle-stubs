@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateEmbeddedObjectBorderRequest extends \Google\Model
-{
-    protected $borderType = EmbeddedObjectBorder::class;
-    protected $borderDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `border` is implied and should not be specified. A single `"*"`
-     * can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The ID of the embedded object to update.
-     *
-     * @var int
-     */
-    public $objectId;
-    /**
-     * The border that applies to the embedded object.
-     *
-     * @param EmbeddedObjectBorder $border
-     */
-    public function setBorder(EmbeddedObjectBorder $border)
+namespace Google\Service\Sheets {
+    class UpdateEmbeddedObjectBorderRequest extends \Google\Model
     {
+        protected $borderType = EmbeddedObjectBorder::class;
+        protected $borderDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `border` is implied and should not be specified. A single `"*"`
+         * can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The ID of the embedded object to update.
+         *
+         * @var int
+         */
+        public $objectId;
+        /**
+         * The border that applies to the embedded object.
+         *
+         * @param EmbeddedObjectBorder $border
+         */
+        public function setBorder(EmbeddedObjectBorder $border)
+        {
+        }
+        /**
+         * @return EmbeddedObjectBorder
+         */
+        public function getBorder()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `border` is implied and should not be specified. A single `"*"`
+         * can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The ID of the embedded object to update.
+         *
+         * @param int $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObjectBorder
+     * Runtime class alias of \Google\Service\Sheets\UpdateEmbeddedObjectBorderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBorder()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `border` is implied and should not be specified. A single `"*"`
-     * can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * The ID of the embedded object to update.
-     *
-     * @param int $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getObjectId()
+    class Google_Service_Sheets_UpdateEmbeddedObjectBorderRequest extends \Google\Service\Sheets\UpdateEmbeddedObjectBorderRequest
     {
     }
 }

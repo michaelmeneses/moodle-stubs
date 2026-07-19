@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigAssistantSettings extends \Google\Model
-{
-    /**
-     * Default, unspecified setting. This is the same as disabled.
-     */
-    public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_UNSPECIFIED = 'WEB_GROUNDING_TYPE_UNSPECIFIED';
-    /**
-     * Web grounding is disabled.
-     */
-    public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_DISABLED = 'WEB_GROUNDING_TYPE_DISABLED';
-    /**
-     * Grounding with Google Search is enabled.
-     */
-    public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_GOOGLE_SEARCH = 'WEB_GROUNDING_TYPE_GOOGLE_SEARCH';
-    /**
-     * Grounding with Enterprise Web Search is enabled.
-     */
-    public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH = 'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH';
-    /**
-     * Output only. This field controls the default web grounding toggle for end
-     * users if `web_grounding_type` is set to `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
-     * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`. By default, this field is
-     * set to false. If `web_grounding_type` is `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
-     * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`, end users will have web
-     * grounding enabled by default on UI. If true, grounding toggle will be
-     * disabled by default on UI. End users can still enable web grounding in the
-     * UI if web grounding is enabled.
-     *
-     * @var bool
-     */
-    public $defaultWebGroundingToggleOff;
-    /**
-     * Optional. Output only. Whether to disable user location context.
-     *
-     * @var bool
-     */
-    public $disableLocationContext;
-    /**
-     * Whether or not the Google search grounding toggle is shown. Deprecated. Use
-     * web_grounding_type instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $googleSearchGroundingEnabled;
-    /**
-     * Optional. The type of web grounding to use.
-     *
-     * @var string
-     */
-    public $webGroundingType;
-    /**
-     * Output only. This field controls the default web grounding toggle for end
-     * users if `web_grounding_type` is set to `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
-     * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`. By default, this field is
-     * set to false. If `web_grounding_type` is `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
-     * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`, end users will have web
-     * grounding enabled by default on UI. If true, grounding toggle will be
-     * disabled by default on UI. End users can still enable web grounding in the
-     * UI if web grounding is enabled.
-     *
-     * @param bool $defaultWebGroundingToggleOff
-     */
-    public function setDefaultWebGroundingToggleOff($defaultWebGroundingToggleOff)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigAssistantSettings extends \Google\Model
     {
+        /**
+         * Default, unspecified setting. This is the same as disabled.
+         */
+        public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_UNSPECIFIED = 'WEB_GROUNDING_TYPE_UNSPECIFIED';
+        /**
+         * Web grounding is disabled.
+         */
+        public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_DISABLED = 'WEB_GROUNDING_TYPE_DISABLED';
+        /**
+         * Grounding with Google Search is enabled.
+         */
+        public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_GOOGLE_SEARCH = 'WEB_GROUNDING_TYPE_GOOGLE_SEARCH';
+        /**
+         * Grounding with Enterprise Web Search is enabled.
+         */
+        public const WEB_GROUNDING_TYPE_WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH = 'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH';
+        /**
+         * Output only. This field controls the default web grounding toggle for end
+         * users if `web_grounding_type` is set to `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
+         * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`. By default, this field is
+         * set to false. If `web_grounding_type` is `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
+         * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`, end users will have web
+         * grounding enabled by default on UI. If true, grounding toggle will be
+         * disabled by default on UI. End users can still enable web grounding in the
+         * UI if web grounding is enabled.
+         *
+         * @var bool
+         */
+        public $defaultWebGroundingToggleOff;
+        /**
+         * Optional. Output only. Whether to disable user location context.
+         *
+         * @var bool
+         */
+        public $disableLocationContext;
+        /**
+         * Whether or not the Google search grounding toggle is shown. Deprecated. Use
+         * web_grounding_type instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $googleSearchGroundingEnabled;
+        /**
+         * Optional. The type of web grounding to use.
+         *
+         * @var string
+         */
+        public $webGroundingType;
+        /**
+         * Output only. This field controls the default web grounding toggle for end
+         * users if `web_grounding_type` is set to `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
+         * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`. By default, this field is
+         * set to false. If `web_grounding_type` is `WEB_GROUNDING_TYPE_GOOGLE_SEARCH`
+         * or `WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH`, end users will have web
+         * grounding enabled by default on UI. If true, grounding toggle will be
+         * disabled by default on UI. End users can still enable web grounding in the
+         * UI if web grounding is enabled.
+         *
+         * @param bool $defaultWebGroundingToggleOff
+         */
+        public function setDefaultWebGroundingToggleOff($defaultWebGroundingToggleOff)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefaultWebGroundingToggleOff()
+        {
+        }
+        /**
+         * Optional. Output only. Whether to disable user location context.
+         *
+         * @param bool $disableLocationContext
+         */
+        public function setDisableLocationContext($disableLocationContext)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableLocationContext()
+        {
+        }
+        /**
+         * Whether or not the Google search grounding toggle is shown. Deprecated. Use
+         * web_grounding_type instead.
+         *
+         * @deprecated
+         * @param bool $googleSearchGroundingEnabled
+         */
+        public function setGoogleSearchGroundingEnabled($googleSearchGroundingEnabled)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getGoogleSearchGroundingEnabled()
+        {
+        }
+        /**
+         * Optional. The type of web grounding to use.
+         *
+         * Accepted values: WEB_GROUNDING_TYPE_UNSPECIFIED,
+         * WEB_GROUNDING_TYPE_DISABLED, WEB_GROUNDING_TYPE_GOOGLE_SEARCH,
+         * WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH
+         *
+         * @param self::WEB_GROUNDING_TYPE_* $webGroundingType
+         */
+        public function setWebGroundingType($webGroundingType)
+        {
+        }
+        /**
+         * @return self::WEB_GROUNDING_TYPE_*
+         */
+        public function getWebGroundingType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigAssistantSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultWebGroundingToggleOff()
-    {
-    }
-    /**
-     * Optional. Output only. Whether to disable user location context.
-     *
-     * @param bool $disableLocationContext
-     */
-    public function setDisableLocationContext($disableLocationContext)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableLocationContext()
-    {
-    }
-    /**
-     * Whether or not the Google search grounding toggle is shown. Deprecated. Use
-     * web_grounding_type instead.
-     *
-     * @deprecated
-     * @param bool $googleSearchGroundingEnabled
-     */
-    public function setGoogleSearchGroundingEnabled($googleSearchGroundingEnabled)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getGoogleSearchGroundingEnabled()
-    {
-    }
-    /**
-     * Optional. The type of web grounding to use.
-     *
-     * Accepted values: WEB_GROUNDING_TYPE_UNSPECIFIED,
-     * WEB_GROUNDING_TYPE_DISABLED, WEB_GROUNDING_TYPE_GOOGLE_SEARCH,
-     * WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH
-     *
-     * @param self::WEB_GROUNDING_TYPE_* $webGroundingType
-     */
-    public function setWebGroundingType($webGroundingType)
-    {
-    }
-    /**
-     * @return self::WEB_GROUNDING_TYPE_*
-     */
-    public function getWebGroundingType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigAssistantSettings extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigAssistantSettings
     {
     }
 }

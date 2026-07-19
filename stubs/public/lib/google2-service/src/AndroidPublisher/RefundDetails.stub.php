@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RefundDetails extends \Google\Model
-{
-    protected $taxType = Money::class;
-    protected $taxDataType = '';
-    protected $totalType = Money::class;
-    protected $totalDataType = '';
-    /**
-     * The amount of tax refunded.
-     *
-     * @param Money $tax
-     */
-    public function setTax(Money $tax)
+namespace Google\Service\AndroidPublisher {
+    class RefundDetails extends \Google\Model
     {
+        protected $taxType = Money::class;
+        protected $taxDataType = '';
+        protected $totalType = Money::class;
+        protected $totalDataType = '';
+        /**
+         * The amount of tax refunded.
+         *
+         * @param Money $tax
+         */
+        public function setTax(Money $tax)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getTax()
+        {
+        }
+        /**
+         * The total amount refunded, including tax.
+         *
+         * @param Money $total
+         */
+        public function setTotal(Money $total)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\RefundDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTax()
-    {
-    }
-    /**
-     * The total amount refunded, including tax.
-     *
-     * @param Money $total
-     */
-    public function setTotal(Money $total)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getTotal()
+    class Google_Service_AndroidPublisher_RefundDetails extends \Google\Service\AndroidPublisher\RefundDetails
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class StaticServiceIpConnectivity extends \Google\Model
-{
+namespace Google\Service\Datastream {
+    class StaticServiceIpConnectivity extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Datastream\StaticServiceIpConnectivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Datastream_StaticServiceIpConnectivity extends \Google\Service\Datastream\StaticServiceIpConnectivity
+    {
+    }
 }

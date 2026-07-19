@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PostiniUserProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $postiniUserId;
-    /**
-     * @param string
-     */
-    public function setPostiniUserId($postiniUserId)
+namespace Google\Service\CloudSearch {
+    class PostiniUserProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $postiniUserId;
+        /**
+         * @param string
+         */
+        public function setPostiniUserId($postiniUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostiniUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PostiniUserProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostiniUserId()
+    class Google_Service_CloudSearch_PostiniUserProto extends \Google\Service\CloudSearch\PostiniUserProto
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ResourcesConsumed extends \Google\Model
-{
-    /**
-     * Output only. The number of replica hours used. Note that many replicas may
-     * run in parallel, and additionally any given work may be queued for some
-     * time. Therefore this value is not strictly related to wall time.
-     *
-     * @var 
-     */
-    public $replicaHours;
-    public function setReplicaHours($replicaHours)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ResourcesConsumed extends \Google\Model
     {
+        /**
+         * Output only. The number of replica hours used. Note that many replicas may
+         * run in parallel, and additionally any given work may be queued for some
+         * time. Therefore this value is not strictly related to wall time.
+         *
+         * @var 
+         */
+        public $replicaHours;
+        public function setReplicaHours($replicaHours)
+        {
+        }
+        public function getReplicaHours()
+        {
+        }
     }
-    public function getReplicaHours()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResourcesConsumed registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ResourcesConsumed extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResourcesConsumed
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class DomainJoinMachineResponse extends \Google\Model
-{
-    /**
-     * Offline domain join blob as the response
-     *
-     * @var string
-     */
-    public $domainJoinBlob;
-    /**
-     * Offline domain join blob as the response
-     *
-     * @param string $domainJoinBlob
-     */
-    public function setDomainJoinBlob($domainJoinBlob)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class DomainJoinMachineResponse extends \Google\Model
     {
+        /**
+         * Offline domain join blob as the response
+         *
+         * @var string
+         */
+        public $domainJoinBlob;
+        /**
+         * Offline domain join blob as the response
+         *
+         * @param string $domainJoinBlob
+         */
+        public function setDomainJoinBlob($domainJoinBlob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainJoinBlob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DomainJoinMachineResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainJoinBlob()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_DomainJoinMachineResponse extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DomainJoinMachineResponse
     {
     }
 }

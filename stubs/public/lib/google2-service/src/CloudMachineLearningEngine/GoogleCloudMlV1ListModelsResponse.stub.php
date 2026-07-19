@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ListModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = GoogleCloudMlV1Model::class;
-    protected $modelsDataType = 'array';
-    /**
-     * Optional. Pass this token as the `page_token` field of the request for a
-     * subsequent call.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of models.
-     *
-     * @param GoogleCloudMlV1Model[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ListModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = GoogleCloudMlV1Model::class;
+        protected $modelsDataType = 'array';
+        /**
+         * Optional. Pass this token as the `page_token` field of the request for a
+         * subsequent call.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of models.
+         *
+         * @param GoogleCloudMlV1Model[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Model[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * Optional. Pass this token as the `page_token` field of the request for a
+         * subsequent call.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Model[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * Optional. Pass this token as the `page_token` field of the request for a
-     * subsequent call.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListModelsResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListModelsResponse
     {
     }
 }

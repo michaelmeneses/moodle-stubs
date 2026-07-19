@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ToolAuthentication extends \Google\Model
-{
-    protected $apiKeyConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig::class;
-    protected $apiKeyConfigDataType = '';
-    protected $bearerTokenConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig::class;
-    protected $bearerTokenConfigDataType = '';
-    protected $oauthConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig::class;
-    protected $oauthConfigDataType = '';
-    protected $serviceAccountAuthConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig::class;
-    protected $serviceAccountAuthConfigDataType = '';
-    protected $serviceAgentAuthConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig::class;
-    protected $serviceAgentAuthConfigDataType = '';
-    /**
-     * Config for API key auth.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig $apiKeyConfig
-     */
-    public function setApiKeyConfig(GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig $apiKeyConfig)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ToolAuthentication extends \Google\Model
     {
+        protected $apiKeyConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig::class;
+        protected $apiKeyConfigDataType = '';
+        protected $bearerTokenConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig::class;
+        protected $bearerTokenConfigDataType = '';
+        protected $oauthConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig::class;
+        protected $oauthConfigDataType = '';
+        protected $serviceAccountAuthConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig::class;
+        protected $serviceAccountAuthConfigDataType = '';
+        protected $serviceAgentAuthConfigType = GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig::class;
+        protected $serviceAgentAuthConfigDataType = '';
+        /**
+         * Config for API key auth.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig $apiKeyConfig
+         */
+        public function setApiKeyConfig(GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig $apiKeyConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig
+         */
+        public function getApiKeyConfig()
+        {
+        }
+        /**
+         * Config for bearer token auth.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig $bearerTokenConfig
+         */
+        public function setBearerTokenConfig(GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig $bearerTokenConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig
+         */
+        public function getBearerTokenConfig()
+        {
+        }
+        /**
+         * Config for OAuth.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig $oauthConfig
+         */
+        public function setOauthConfig(GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig $oauthConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig
+         */
+        public function getOauthConfig()
+        {
+        }
+        /**
+         * Configuration for service account authentication.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig $serviceAccountAuthConfig
+         */
+        public function setServiceAccountAuthConfig(GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig $serviceAccountAuthConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig
+         */
+        public function getServiceAccountAuthConfig()
+        {
+        }
+        /**
+         * Config for [Diglogflow service
+         * agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-
+         * agent) auth.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig $serviceAgentAuthConfig
+         */
+        public function setServiceAgentAuthConfig(GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig $serviceAgentAuthConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig
+         */
+        public function getServiceAgentAuthConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolAuthentication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeyConfig()
-    {
-    }
-    /**
-     * Config for bearer token auth.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig $bearerTokenConfig
-     */
-    public function setBearerTokenConfig(GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig $bearerTokenConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolAuthenticationBearerTokenConfig
-     */
-    public function getBearerTokenConfig()
-    {
-    }
-    /**
-     * Config for OAuth.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig $oauthConfig
-     */
-    public function setOauthConfig(GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig $oauthConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolAuthenticationOAuthConfig
-     */
-    public function getOauthConfig()
-    {
-    }
-    /**
-     * Configuration for service account authentication.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig $serviceAccountAuthConfig
-     */
-    public function setServiceAccountAuthConfig(GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig $serviceAccountAuthConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolAuthenticationServiceAccountAuthConfig
-     */
-    public function getServiceAccountAuthConfig()
-    {
-    }
-    /**
-     * Config for [Diglogflow service
-     * agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-
-     * agent) auth.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig $serviceAgentAuthConfig
-     */
-    public function setServiceAgentAuthConfig(GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig $serviceAgentAuthConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolAuthenticationServiceAgentAuthConfig
-     */
-    public function getServiceAgentAuthConfig()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ToolAuthentication extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolAuthentication
     {
     }
 }

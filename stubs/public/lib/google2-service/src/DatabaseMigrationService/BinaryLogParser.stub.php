@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class BinaryLogParser extends \Google\Model
-{
-    protected $logFileDirectoriesType = LogFileDirectories::class;
-    protected $logFileDirectoriesDataType = '';
-    protected $oracleAsmLogFileAccessType = OracleAsmLogFileAccess::class;
-    protected $oracleAsmLogFileAccessDataType = '';
-    /**
-     * Use Oracle directories.
-     *
-     * @param LogFileDirectories $logFileDirectories
-     */
-    public function setLogFileDirectories(LogFileDirectories $logFileDirectories)
+namespace Google\Service\DatabaseMigrationService {
+    class BinaryLogParser extends \Google\Model
     {
+        protected $logFileDirectoriesType = LogFileDirectories::class;
+        protected $logFileDirectoriesDataType = '';
+        protected $oracleAsmLogFileAccessType = OracleAsmLogFileAccess::class;
+        protected $oracleAsmLogFileAccessDataType = '';
+        /**
+         * Use Oracle directories.
+         *
+         * @param LogFileDirectories $logFileDirectories
+         */
+        public function setLogFileDirectories(LogFileDirectories $logFileDirectories)
+        {
+        }
+        /**
+         * @return LogFileDirectories
+         */
+        public function getLogFileDirectories()
+        {
+        }
+        /**
+         * Use Oracle ASM.
+         *
+         * @param OracleAsmLogFileAccess $oracleAsmLogFileAccess
+         */
+        public function setOracleAsmLogFileAccess(OracleAsmLogFileAccess $oracleAsmLogFileAccess)
+        {
+        }
+        /**
+         * @return OracleAsmLogFileAccess
+         */
+        public function getOracleAsmLogFileAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogFileDirectories
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\BinaryLogParser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogFileDirectories()
-    {
-    }
-    /**
-     * Use Oracle ASM.
-     *
-     * @param OracleAsmLogFileAccess $oracleAsmLogFileAccess
-     */
-    public function setOracleAsmLogFileAccess(OracleAsmLogFileAccess $oracleAsmLogFileAccess)
-    {
-    }
-    /**
-     * @return OracleAsmLogFileAccess
-     */
-    public function getOracleAsmLogFileAccess()
+    class Google_Service_DatabaseMigrationService_BinaryLogParser extends \Google\Service\DatabaseMigrationService\BinaryLogParser
     {
     }
 }

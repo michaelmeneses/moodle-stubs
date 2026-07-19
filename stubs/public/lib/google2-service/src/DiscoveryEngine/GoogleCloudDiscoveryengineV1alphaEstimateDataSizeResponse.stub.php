@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEstimateDataSizeResponse extends \Google\Model
-{
-    /**
-     * Data size in terms of bytes.
-     *
-     * @var string
-     */
-    public $dataSizeBytes;
-    /**
-     * Total number of documents.
-     *
-     * @var string
-     */
-    public $documentCount;
-    /**
-     * Data size in terms of bytes.
-     *
-     * @param string $dataSizeBytes
-     */
-    public function setDataSizeBytes($dataSizeBytes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEstimateDataSizeResponse extends \Google\Model
     {
+        /**
+         * Data size in terms of bytes.
+         *
+         * @var string
+         */
+        public $dataSizeBytes;
+        /**
+         * Total number of documents.
+         *
+         * @var string
+         */
+        public $documentCount;
+        /**
+         * Data size in terms of bytes.
+         *
+         * @param string $dataSizeBytes
+         */
+        public function setDataSizeBytes($dataSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSizeBytes()
+        {
+        }
+        /**
+         * Total number of documents.
+         *
+         * @param string $documentCount
+         */
+        public function setDocumentCount($documentCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEstimateDataSizeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSizeBytes()
-    {
-    }
-    /**
-     * Total number of documents.
-     *
-     * @param string $documentCount
-     */
-    public function setDocumentCount($documentCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEstimateDataSizeResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEstimateDataSizeResponse
     {
     }
 }

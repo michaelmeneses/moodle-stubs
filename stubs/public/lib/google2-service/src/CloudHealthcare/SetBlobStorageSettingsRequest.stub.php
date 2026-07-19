@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class SetBlobStorageSettingsRequest extends \Google\Model
-{
-    protected $blobStorageSettingsType = BlobStorageSettings::class;
-    protected $blobStorageSettingsDataType = '';
-    protected $filterConfigType = DicomFilterConfig::class;
-    protected $filterConfigDataType = '';
-    /**
-     * The blob storage settings to update for the specified resources. Only
-     * fields listed in `update_mask` are applied.
-     *
-     * @param BlobStorageSettings $blobStorageSettings
-     */
-    public function setBlobStorageSettings(BlobStorageSettings $blobStorageSettings)
+namespace Google\Service\CloudHealthcare {
+    class SetBlobStorageSettingsRequest extends \Google\Model
     {
+        protected $blobStorageSettingsType = BlobStorageSettings::class;
+        protected $blobStorageSettingsDataType = '';
+        protected $filterConfigType = DicomFilterConfig::class;
+        protected $filterConfigDataType = '';
+        /**
+         * The blob storage settings to update for the specified resources. Only
+         * fields listed in `update_mask` are applied.
+         *
+         * @param BlobStorageSettings $blobStorageSettings
+         */
+        public function setBlobStorageSettings(BlobStorageSettings $blobStorageSettings)
+        {
+        }
+        /**
+         * @return BlobStorageSettings
+         */
+        public function getBlobStorageSettings()
+        {
+        }
+        /**
+         * Optional. A filter configuration. If `filter_config` is specified, set the
+         * value of `resource` to the resource name of a DICOM store in the format `pr
+         * ojects/{projectID}/locations/{locationID}/datasets/{datasetID}/dicomStores/
+         * {dicomStoreID}`.
+         *
+         * @param DicomFilterConfig $filterConfig
+         */
+        public function setFilterConfig(DicomFilterConfig $filterConfig)
+        {
+        }
+        /**
+         * @return DicomFilterConfig
+         */
+        public function getFilterConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlobStorageSettings
+     * Runtime class alias of \Google\Service\CloudHealthcare\SetBlobStorageSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobStorageSettings()
-    {
-    }
-    /**
-     * Optional. A filter configuration. If `filter_config` is specified, set the
-     * value of `resource` to the resource name of a DICOM store in the format `pr
-     * ojects/{projectID}/locations/{locationID}/datasets/{datasetID}/dicomStores/
-     * {dicomStoreID}`.
-     *
-     * @param DicomFilterConfig $filterConfig
-     */
-    public function setFilterConfig(DicomFilterConfig $filterConfig)
-    {
-    }
-    /**
-     * @return DicomFilterConfig
-     */
-    public function getFilterConfig()
+    class Google_Service_CloudHealthcare_SetBlobStorageSettingsRequest extends \Google\Service\CloudHealthcare\SetBlobStorageSettingsRequest
     {
     }
 }

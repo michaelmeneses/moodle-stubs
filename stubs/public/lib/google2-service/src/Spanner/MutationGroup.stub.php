@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class MutationGroup extends \Google\Collection
-{
-    protected $collection_key = 'mutations';
-    protected $mutationsType = Mutation::class;
-    protected $mutationsDataType = 'array';
-    /**
-     * Required. The mutations in this group.
-     *
-     * @param Mutation[] $mutations
-     */
-    public function setMutations($mutations)
+namespace Google\Service\Spanner {
+    class MutationGroup extends \Google\Collection
     {
+        protected $collection_key = 'mutations';
+        protected $mutationsType = Mutation::class;
+        protected $mutationsDataType = 'array';
+        /**
+         * Required. The mutations in this group.
+         *
+         * @param Mutation[] $mutations
+         */
+        public function setMutations($mutations)
+        {
+        }
+        /**
+         * @return Mutation[]
+         */
+        public function getMutations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Mutation[]
+     * Runtime class alias of \Google\Service\Spanner\MutationGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMutations()
+    class Google_Service_Spanner_MutationGroup extends \Google\Service\Spanner\MutationGroup
     {
     }
 }

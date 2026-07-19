@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaBatchGetAppAttestConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = GoogleFirebaseAppcheckV1betaAppAttestConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * @param GoogleFirebaseAppcheckV1betaAppAttestConfig[]
-     */
-    public function setConfigs($configs)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaBatchGetAppAttestConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = GoogleFirebaseAppcheckV1betaAppAttestConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * @param GoogleFirebaseAppcheckV1betaAppAttestConfig[]
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaAppAttestConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1betaAppAttestConfig[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaBatchGetAppAttestConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaBatchGetAppAttestConfigsResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaBatchGetAppAttestConfigsResponse
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExecuteSqlQueryRequest extends \Google\Model
-{
-    protected $queryType = Query::class;
-    protected $queryDataType = '';
-    /**
-     * Required. SQL statement passed by clients like Integration Platform, the
-     * query is passed as-is to the driver used for interfacing with external
-     * systems.
-     *
-     * @param Query $query
-     */
-    public function setQuery(Query $query)
+namespace Google\Service\Connectors {
+    class ExecuteSqlQueryRequest extends \Google\Model
     {
+        protected $queryType = Query::class;
+        protected $queryDataType = '';
+        /**
+         * Required. SQL statement passed by clients like Integration Platform, the
+         * query is passed as-is to the driver used for interfacing with external
+         * systems.
+         *
+         * @param Query $query
+         */
+        public function setQuery(Query $query)
+        {
+        }
+        /**
+         * @return Query
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Query
+     * Runtime class alias of \Google\Service\Connectors\ExecuteSqlQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuery()
+    class Google_Service_Connectors_ExecuteSqlQueryRequest extends \Google\Service\Connectors\ExecuteSqlQueryRequest
     {
     }
 }

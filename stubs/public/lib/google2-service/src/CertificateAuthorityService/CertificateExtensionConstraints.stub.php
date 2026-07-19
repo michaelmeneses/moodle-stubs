@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class CertificateExtensionConstraints extends \Google\Collection
-{
-    protected $collection_key = 'knownExtensions';
-    protected $additionalExtensionsType = ObjectId::class;
-    protected $additionalExtensionsDataType = 'array';
-    /**
-     * Optional. A set of named X.509 extensions. Will be combined with
-     * additional_extensions to determine the full set of X.509 extensions.
-     *
-     * @var string[]
-     */
-    public $knownExtensions;
-    /**
-     * Optional. A set of ObjectIds identifying custom X.509 extensions. Will be
-     * combined with known_extensions to determine the full set of X.509
-     * extensions.
-     *
-     * @param ObjectId[] $additionalExtensions
-     */
-    public function setAdditionalExtensions($additionalExtensions)
+namespace Google\Service\CertificateAuthorityService {
+    class CertificateExtensionConstraints extends \Google\Collection
     {
+        protected $collection_key = 'knownExtensions';
+        protected $additionalExtensionsType = ObjectId::class;
+        protected $additionalExtensionsDataType = 'array';
+        /**
+         * Optional. A set of named X.509 extensions. Will be combined with
+         * additional_extensions to determine the full set of X.509 extensions.
+         *
+         * @var string[]
+         */
+        public $knownExtensions;
+        /**
+         * Optional. A set of ObjectIds identifying custom X.509 extensions. Will be
+         * combined with known_extensions to determine the full set of X.509
+         * extensions.
+         *
+         * @param ObjectId[] $additionalExtensions
+         */
+        public function setAdditionalExtensions($additionalExtensions)
+        {
+        }
+        /**
+         * @return ObjectId[]
+         */
+        public function getAdditionalExtensions()
+        {
+        }
+        /**
+         * Optional. A set of named X.509 extensions. Will be combined with
+         * additional_extensions to determine the full set of X.509 extensions.
+         *
+         * @param string[] $knownExtensions
+         */
+        public function setKnownExtensions($knownExtensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getKnownExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectId[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\CertificateExtensionConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalExtensions()
-    {
-    }
-    /**
-     * Optional. A set of named X.509 extensions. Will be combined with
-     * additional_extensions to determine the full set of X.509 extensions.
-     *
-     * @param string[] $knownExtensions
-     */
-    public function setKnownExtensions($knownExtensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getKnownExtensions()
+    class Google_Service_CertificateAuthorityService_CertificateExtensionConstraints extends \Google\Service\CertificateAuthorityService\CertificateExtensionConstraints
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class CompleteVerificationRequest extends \Google\Model
-{
-    /**
-     * Required. PIN code received by the merchant to complete the verification.
-     *
-     * @var string
-     */
-    public $pin;
-    /**
-     * Required. PIN code received by the merchant to complete the verification.
-     *
-     * @param string $pin
-     */
-    public function setPin($pin)
+namespace Google\Service\MyBusinessVerifications {
+    class CompleteVerificationRequest extends \Google\Model
     {
+        /**
+         * Required. PIN code received by the merchant to complete the verification.
+         *
+         * @var string
+         */
+        public $pin;
+        /**
+         * Required. PIN code received by the merchant to complete the verification.
+         *
+         * @param string $pin
+         */
+        public function setPin($pin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\CompleteVerificationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPin()
+    class Google_Service_MyBusinessVerifications_CompleteVerificationRequest extends \Google\Service\MyBusinessVerifications\CompleteVerificationRequest
     {
     }
 }

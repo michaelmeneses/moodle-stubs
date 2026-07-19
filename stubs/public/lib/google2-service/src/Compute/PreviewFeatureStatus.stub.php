@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreviewFeatureStatus extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] The description of the feature.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. [Output Only] Link to the public documentation for the
-     * feature.
-     *
-     * @var string
-     */
-    public $helpLink;
-    protected $releaseStatusType = PreviewFeatureStatusReleaseStatus::class;
-    protected $releaseStatusDataType = '';
-    /**
-     * Output only. [Output Only] The description of the feature.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Compute {
+    class PreviewFeatureStatus extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] The description of the feature.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. [Output Only] Link to the public documentation for the
+         * feature.
+         *
+         * @var string
+         */
+        public $helpLink;
+        protected $releaseStatusType = PreviewFeatureStatusReleaseStatus::class;
+        protected $releaseStatusDataType = '';
+        /**
+         * Output only. [Output Only] The description of the feature.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. [Output Only] Link to the public documentation for the
+         * feature.
+         *
+         * @param string $helpLink
+         */
+        public function setHelpLink($helpLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelpLink()
+        {
+        }
+        /**
+         * @param PreviewFeatureStatusReleaseStatus $releaseStatus
+         */
+        public function setReleaseStatus(PreviewFeatureStatusReleaseStatus $releaseStatus)
+        {
+        }
+        /**
+         * @return PreviewFeatureStatusReleaseStatus
+         */
+        public function getReleaseStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PreviewFeatureStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. [Output Only] Link to the public documentation for the
-     * feature.
-     *
-     * @param string $helpLink
-     */
-    public function setHelpLink($helpLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHelpLink()
-    {
-    }
-    /**
-     * @param PreviewFeatureStatusReleaseStatus $releaseStatus
-     */
-    public function setReleaseStatus(PreviewFeatureStatusReleaseStatus $releaseStatus)
-    {
-    }
-    /**
-     * @return PreviewFeatureStatusReleaseStatus
-     */
-    public function getReleaseStatus()
+    class Google_Service_Compute_PreviewFeatureStatus extends \Google\Service\Compute\PreviewFeatureStatus
     {
     }
 }

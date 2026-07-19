@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Properties extends \Google\Collection
-{
-    protected $collection_key = 'property';
-    protected $propertyType = GoogleCloudApigeeV1Property::class;
-    protected $propertyDataType = 'array';
-    /**
-     * List of all properties in the object
-     *
-     * @param GoogleCloudApigeeV1Property[] $property
-     */
-    public function setProperty($property)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Properties extends \Google\Collection
     {
+        protected $collection_key = 'property';
+        protected $propertyType = GoogleCloudApigeeV1Property::class;
+        protected $propertyDataType = 'array';
+        /**
+         * List of all properties in the object
+         *
+         * @param GoogleCloudApigeeV1Property[] $property
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Property[]
+         */
+        public function getProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Property[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Properties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperty()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Properties extends \Google\Service\Apigee\GoogleCloudApigeeV1Properties
     {
     }
 }

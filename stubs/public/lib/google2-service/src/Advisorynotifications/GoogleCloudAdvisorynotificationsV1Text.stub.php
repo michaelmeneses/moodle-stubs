@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications;
-
-class GoogleCloudAdvisorynotificationsV1Text extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const LOCALIZATION_STATE_LOCALIZATION_STATE_UNSPECIFIED = 'LOCALIZATION_STATE_UNSPECIFIED';
-    /**
-     * Localization is not applicable for requested language. This can happen
-     * when: - The requested language was not supported by Advisory Notifications
-     * at the time of localization (including notifications created before the
-     * localization feature was launched). - The requested language is English, so
-     * only the English text is returned.
-     */
-    public const LOCALIZATION_STATE_LOCALIZATION_STATE_NOT_APPLICABLE = 'LOCALIZATION_STATE_NOT_APPLICABLE';
-    /**
-     * Localization for requested language is in progress, and not ready yet.
-     */
-    public const LOCALIZATION_STATE_LOCALIZATION_STATE_PENDING = 'LOCALIZATION_STATE_PENDING';
-    /**
-     * Localization for requested language is completed.
-     */
-    public const LOCALIZATION_STATE_LOCALIZATION_STATE_COMPLETED = 'LOCALIZATION_STATE_COMPLETED';
-    /**
-     * The English copy.
-     *
-     * @var string
-     */
-    public $enText;
-    /**
-     * Status of the localization.
-     *
-     * @var string
-     */
-    public $localizationState;
-    /**
-     * The requested localized copy (if applicable).
-     *
-     * @var string
-     */
-    public $localizedText;
-    /**
-     * The English copy.
-     *
-     * @param string $enText
-     */
-    public function setEnText($enText)
+namespace Google\Service\Advisorynotifications {
+    class GoogleCloudAdvisorynotificationsV1Text extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const LOCALIZATION_STATE_LOCALIZATION_STATE_UNSPECIFIED = 'LOCALIZATION_STATE_UNSPECIFIED';
+        /**
+         * Localization is not applicable for requested language. This can happen
+         * when: - The requested language was not supported by Advisory Notifications
+         * at the time of localization (including notifications created before the
+         * localization feature was launched). - The requested language is English, so
+         * only the English text is returned.
+         */
+        public const LOCALIZATION_STATE_LOCALIZATION_STATE_NOT_APPLICABLE = 'LOCALIZATION_STATE_NOT_APPLICABLE';
+        /**
+         * Localization for requested language is in progress, and not ready yet.
+         */
+        public const LOCALIZATION_STATE_LOCALIZATION_STATE_PENDING = 'LOCALIZATION_STATE_PENDING';
+        /**
+         * Localization for requested language is completed.
+         */
+        public const LOCALIZATION_STATE_LOCALIZATION_STATE_COMPLETED = 'LOCALIZATION_STATE_COMPLETED';
+        /**
+         * The English copy.
+         *
+         * @var string
+         */
+        public $enText;
+        /**
+         * Status of the localization.
+         *
+         * @var string
+         */
+        public $localizationState;
+        /**
+         * The requested localized copy (if applicable).
+         *
+         * @var string
+         */
+        public $localizedText;
+        /**
+         * The English copy.
+         *
+         * @param string $enText
+         */
+        public function setEnText($enText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnText()
+        {
+        }
+        /**
+         * Status of the localization.
+         *
+         * Accepted values: LOCALIZATION_STATE_UNSPECIFIED,
+         * LOCALIZATION_STATE_NOT_APPLICABLE, LOCALIZATION_STATE_PENDING,
+         * LOCALIZATION_STATE_COMPLETED
+         *
+         * @param self::LOCALIZATION_STATE_* $localizationState
+         */
+        public function setLocalizationState($localizationState)
+        {
+        }
+        /**
+         * @return self::LOCALIZATION_STATE_*
+         */
+        public function getLocalizationState()
+        {
+        }
+        /**
+         * The requested localized copy (if applicable).
+         *
+         * @param string $localizedText
+         */
+        public function setLocalizedText($localizedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalizedText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Text registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnText()
-    {
-    }
-    /**
-     * Status of the localization.
-     *
-     * Accepted values: LOCALIZATION_STATE_UNSPECIFIED,
-     * LOCALIZATION_STATE_NOT_APPLICABLE, LOCALIZATION_STATE_PENDING,
-     * LOCALIZATION_STATE_COMPLETED
-     *
-     * @param self::LOCALIZATION_STATE_* $localizationState
-     */
-    public function setLocalizationState($localizationState)
-    {
-    }
-    /**
-     * @return self::LOCALIZATION_STATE_*
-     */
-    public function getLocalizationState()
-    {
-    }
-    /**
-     * The requested localized copy (if applicable).
-     *
-     * @param string $localizedText
-     */
-    public function setLocalizedText($localizedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalizedText()
+    class Google_Service_Advisorynotifications_GoogleCloudAdvisorynotificationsV1Text extends \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Text
     {
     }
 }

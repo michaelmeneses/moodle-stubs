@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class EkmMetadata extends \Google\Model
-{
-    /**
-     * Unspecified EKM solution
-     */
-    public const EKM_SOLUTION_EKM_SOLUTION_UNSPECIFIED = 'EKM_SOLUTION_UNSPECIFIED';
-    /**
-     * EKM Partner Fortanix
-     */
-    public const EKM_SOLUTION_FORTANIX = 'FORTANIX';
-    /**
-     * EKM Partner FutureX
-     */
-    public const EKM_SOLUTION_FUTUREX = 'FUTUREX';
-    /**
-     * EKM Partner Thales
-     */
-    public const EKM_SOLUTION_THALES = 'THALES';
-    /**
-     * This enum value is never used.
-     *
-     * @deprecated
-     */
-    public const EKM_SOLUTION_VIRTRU = 'VIRTRU';
-    /**
-     * Endpoint for sending requests to the EKM for key provisioning during
-     * Assured Workload creation.
-     *
-     * @var string
-     */
-    public $ekmEndpointUri;
-    /**
-     * The Cloud EKM partner.
-     *
-     * @var string
-     */
-    public $ekmSolution;
-    /**
-     * Endpoint for sending requests to the EKM for key provisioning during
-     * Assured Workload creation.
-     *
-     * @param string $ekmEndpointUri
-     */
-    public function setEkmEndpointUri($ekmEndpointUri)
+namespace Google\Service\CloudControlsPartnerService {
+    class EkmMetadata extends \Google\Model
     {
+        /**
+         * Unspecified EKM solution
+         */
+        public const EKM_SOLUTION_EKM_SOLUTION_UNSPECIFIED = 'EKM_SOLUTION_UNSPECIFIED';
+        /**
+         * EKM Partner Fortanix
+         */
+        public const EKM_SOLUTION_FORTANIX = 'FORTANIX';
+        /**
+         * EKM Partner FutureX
+         */
+        public const EKM_SOLUTION_FUTUREX = 'FUTUREX';
+        /**
+         * EKM Partner Thales
+         */
+        public const EKM_SOLUTION_THALES = 'THALES';
+        /**
+         * This enum value is never used.
+         *
+         * @deprecated
+         */
+        public const EKM_SOLUTION_VIRTRU = 'VIRTRU';
+        /**
+         * Endpoint for sending requests to the EKM for key provisioning during
+         * Assured Workload creation.
+         *
+         * @var string
+         */
+        public $ekmEndpointUri;
+        /**
+         * The Cloud EKM partner.
+         *
+         * @var string
+         */
+        public $ekmSolution;
+        /**
+         * Endpoint for sending requests to the EKM for key provisioning during
+         * Assured Workload creation.
+         *
+         * @param string $ekmEndpointUri
+         */
+        public function setEkmEndpointUri($ekmEndpointUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEkmEndpointUri()
+        {
+        }
+        /**
+         * The Cloud EKM partner.
+         *
+         * Accepted values: EKM_SOLUTION_UNSPECIFIED, FORTANIX, FUTUREX, THALES,
+         * VIRTRU
+         *
+         * @param self::EKM_SOLUTION_* $ekmSolution
+         */
+        public function setEkmSolution($ekmSolution)
+        {
+        }
+        /**
+         * @return self::EKM_SOLUTION_*
+         */
+        public function getEkmSolution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\EkmMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEkmEndpointUri()
-    {
-    }
-    /**
-     * The Cloud EKM partner.
-     *
-     * Accepted values: EKM_SOLUTION_UNSPECIFIED, FORTANIX, FUTUREX, THALES,
-     * VIRTRU
-     *
-     * @param self::EKM_SOLUTION_* $ekmSolution
-     */
-    public function setEkmSolution($ekmSolution)
-    {
-    }
-    /**
-     * @return self::EKM_SOLUTION_*
-     */
-    public function getEkmSolution()
+    class Google_Service_CloudControlsPartnerService_EkmMetadata extends \Google\Service\CloudControlsPartnerService\EkmMetadata
     {
     }
 }

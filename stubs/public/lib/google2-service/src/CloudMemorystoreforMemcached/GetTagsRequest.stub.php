@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class GetTagsRequest extends \Google\Model
-{
-    /**
-     * Required. The full One Platform resource name of the service resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The full One Platform resource name of the service resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class GetTagsRequest extends \Google\Model
     {
+        /**
+         * Required. The full One Platform resource name of the service resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The full One Platform resource name of the service resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\GetTagsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_CloudMemorystoreforMemcached_GetTagsRequest extends \Google\Service\CloudMemorystoreforMemcached\GetTagsRequest
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class Hash extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const TYPE_HASH_TYPE_UNSPECIFIED = 'HASH_TYPE_UNSPECIFIED';
-    /**
-     * SHA256 hash.
-     */
-    public const TYPE_SHA256 = 'SHA256';
-    /**
-     * MD5 hash.
-     */
-    public const TYPE_MD5 = 'MD5';
-    /**
-     * The algorithm used to compute the hash value.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The hash value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The algorithm used to compute the hash value.
-     *
-     * Accepted values: HASH_TYPE_UNSPECIFIED, SHA256, MD5
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\ArtifactRegistry {
+    class Hash extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const TYPE_HASH_TYPE_UNSPECIFIED = 'HASH_TYPE_UNSPECIFIED';
+        /**
+         * SHA256 hash.
+         */
+        public const TYPE_SHA256 = 'SHA256';
+        /**
+         * MD5 hash.
+         */
+        public const TYPE_MD5 = 'MD5';
+        /**
+         * The algorithm used to compute the hash value.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The hash value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The algorithm used to compute the hash value.
+         *
+         * Accepted values: HASH_TYPE_UNSPECIFIED, SHA256, MD5
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The hash value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Hash registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The hash value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ArtifactRegistry_Hash extends \Google\Service\ArtifactRegistry\Hash
     {
     }
 }

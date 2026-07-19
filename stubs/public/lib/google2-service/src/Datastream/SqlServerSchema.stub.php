@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerSchema extends \Google\Collection
-{
-    protected $collection_key = 'tables';
-    /**
-     * Schema name.
-     *
-     * @var string
-     */
-    public $schema;
-    protected $tablesType = SqlServerTable::class;
-    protected $tablesDataType = 'array';
-    /**
-     * Schema name.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
+namespace Google\Service\Datastream {
+    class SqlServerSchema extends \Google\Collection
     {
+        protected $collection_key = 'tables';
+        /**
+         * Schema name.
+         *
+         * @var string
+         */
+        public $schema;
+        protected $tablesType = SqlServerTable::class;
+        protected $tablesDataType = 'array';
+        /**
+         * Schema name.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Tables in the schema.
+         *
+         * @param SqlServerTable[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return SqlServerTable[]
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SqlServerSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema()
-    {
-    }
-    /**
-     * Tables in the schema.
-     *
-     * @param SqlServerTable[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return SqlServerTable[]
-     */
-    public function getTables()
+    class Google_Service_Datastream_SqlServerSchema extends \Google\Service\Datastream\SqlServerSchema
     {
     }
 }

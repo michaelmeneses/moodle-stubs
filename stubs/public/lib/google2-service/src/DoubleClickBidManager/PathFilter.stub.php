@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class PathFilter extends \Google\Collection
-{
-    protected $collection_key = 'eventFilters';
-    protected $eventFiltersType = EventFilter::class;
-    protected $eventFiltersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $pathMatchPosition;
-    /**
-     * @param EventFilter[]
-     */
-    public function setEventFilters($eventFilters)
+namespace Google\Service\DoubleClickBidManager {
+    class PathFilter extends \Google\Collection
     {
+        protected $collection_key = 'eventFilters';
+        protected $eventFiltersType = EventFilter::class;
+        protected $eventFiltersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $pathMatchPosition;
+        /**
+         * @param EventFilter[]
+         */
+        public function setEventFilters($eventFilters)
+        {
+        }
+        /**
+         * @return EventFilter[]
+         */
+        public function getEventFilters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPathMatchPosition($pathMatchPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPathMatchPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventFilter[]
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\PathFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventFilters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPathMatchPosition($pathMatchPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPathMatchPosition()
+    class Google_Service_DoubleClickBidManager_PathFilter extends \Google\Service\DoubleClickBidManager\PathFilter
     {
     }
 }

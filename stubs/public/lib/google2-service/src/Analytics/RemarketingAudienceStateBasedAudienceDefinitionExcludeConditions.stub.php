@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions extends \Google\Model
-{
-    /**
-     * Whether to make the exclusion TEMPORARY or PERMANENT.
-     *
-     * @var string
-     */
-    public $exclusionDuration;
-    /**
-     * The segment condition that will cause a user to be removed from an
-     * audience.
-     *
-     * @var string
-     */
-    public $segment;
-    /**
-     * Whether to make the exclusion TEMPORARY or PERMANENT.
-     *
-     * @param string $exclusionDuration
-     */
-    public function setExclusionDuration($exclusionDuration)
+namespace Google\Service\Analytics {
+    class RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions extends \Google\Model
     {
+        /**
+         * Whether to make the exclusion TEMPORARY or PERMANENT.
+         *
+         * @var string
+         */
+        public $exclusionDuration;
+        /**
+         * The segment condition that will cause a user to be removed from an
+         * audience.
+         *
+         * @var string
+         */
+        public $segment;
+        /**
+         * Whether to make the exclusion TEMPORARY or PERMANENT.
+         *
+         * @param string $exclusionDuration
+         */
+        public function setExclusionDuration($exclusionDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExclusionDuration()
+        {
+        }
+        /**
+         * The segment condition that will cause a user to be removed from an
+         * audience.
+         *
+         * @param string $segment
+         */
+        public function setSegment($segment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusionDuration()
-    {
-    }
-    /**
-     * The segment condition that will cause a user to be removed from an
-     * audience.
-     *
-     * @param string $segment
-     */
-    public function setSegment($segment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegment()
+    class Google_Service_Analytics_RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions extends \Google\Service\Analytics\RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions
     {
     }
 }

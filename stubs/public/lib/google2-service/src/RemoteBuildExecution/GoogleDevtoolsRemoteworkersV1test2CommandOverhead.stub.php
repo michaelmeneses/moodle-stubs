@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2CommandOverhead extends \Google\Model
-{
-    public $duration;
-    public $overhead;
-    public function setDuration($duration)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2CommandOverhead extends \Google\Model
     {
+        public $duration;
+        public $overhead;
+        public function setDuration($duration)
+        {
+        }
+        public function getDuration()
+        {
+        }
+        public function setOverhead($overhead)
+        {
+        }
+        public function getOverhead()
+        {
+        }
     }
-    public function getDuration()
-    {
-    }
-    public function setOverhead($overhead)
-    {
-    }
-    public function getOverhead()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandOverhead registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2CommandOverhead extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandOverhead
     {
     }
 }

@@ -21,44 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataTransfer\Resource;
-
-/**
- * The "applications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\DataTransfer(...);
- *   $applications = $adminService->applications;
- *  </code>
- */
-class Applications extends \Google\Service\Resource
-{
+namespace Google\Service\DataTransfer\Resource {
+    use Google\Service\DataTransfer\Application;
+    use Google\Service\DataTransfer\ApplicationsListResponse;
     /**
-     * Retrieves information about an application for the given application ID.
-     * (applications.get)
-     *
-     * @param string $applicationId ID of the application resource to be retrieved.
-     * @param array $optParams Optional parameters.
-     * @return Application
-     * @throws \Google\Service\Exception
+     * The "applications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\DataTransfer(...);
+     *   $applications = $adminService->applications;
+     *  </code>
      */
-    public function get($applicationId, $optParams = [])
+    class Applications extends \Google\Service\Resource
     {
+        /**
+         * Retrieves information about an application for the given application ID.
+         * (applications.get)
+         *
+         * @param string $applicationId ID of the application resource to be retrieved.
+         * @param array $optParams Optional parameters.
+         * @return Application
+         * @throws \Google\Service\Exception
+         */
+        public function get($applicationId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the applications available for data transfer for a customer.
+         * (applications.listApplications)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string customerId Immutable ID of the Google Workspace account.
+         * @opt_param int maxResults Maximum number of results to return. Default is
+         * 100.
+         * @opt_param string pageToken Token to specify next page in the list.
+         * @return ApplicationsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listApplications($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the applications available for data transfer for a customer.
-     * (applications.listApplications)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string customerId Immutable ID of the Google Workspace account.
-     * @opt_param int maxResults Maximum number of results to return. Default is
-     * 100.
-     * @opt_param string pageToken Token to specify next page in the list.
-     * @return ApplicationsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataTransfer\Resource\Applications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listApplications($optParams = [])
+    class Google_Service_DataTransfer_Resource_Applications extends \Google\Service\DataTransfer\Resource\Applications
     {
     }
 }

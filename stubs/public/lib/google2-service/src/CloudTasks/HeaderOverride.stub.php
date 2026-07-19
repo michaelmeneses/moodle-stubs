@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class HeaderOverride extends \Google\Model
-{
-    protected $headerType = Header::class;
-    protected $headerDataType = '';
-    /**
-     * Header embodying a key and a value. Do not put business sensitive or
-     * personally identifying data in the HTTP Header Override Configuration or
-     * other similar fields in accordance with Section 12 (Resource Fields) of the
-     * [Service Specific Terms](https://cloud.google.com/terms/service-terms).
-     *
-     * @param Header $header
-     */
-    public function setHeader(Header $header)
+namespace Google\Service\CloudTasks {
+    class HeaderOverride extends \Google\Model
     {
+        protected $headerType = Header::class;
+        protected $headerDataType = '';
+        /**
+         * Header embodying a key and a value. Do not put business sensitive or
+         * personally identifying data in the HTTP Header Override Configuration or
+         * other similar fields in accordance with Section 12 (Resource Fields) of the
+         * [Service Specific Terms](https://cloud.google.com/terms/service-terms).
+         *
+         * @param Header $header
+         */
+        public function setHeader(Header $header)
+        {
+        }
+        /**
+         * @return Header
+         */
+        public function getHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Header
+     * Runtime class alias of \Google\Service\CloudTasks\HeaderOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeader()
+    class Google_Service_CloudTasks_HeaderOverride extends \Google\Service\CloudTasks\HeaderOverride
     {
     }
 }

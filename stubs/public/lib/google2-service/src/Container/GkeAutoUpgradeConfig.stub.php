@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class GkeAutoUpgradeConfig extends \Google\Model
-{
-    /**
-     * PATCH_MODE_UNSPECIFIED defaults to using the upgrade target from the
-     * channel's patch upgrade targets as the upgrade target for the version.
-     */
-    public const PATCH_MODE_PATCH_MODE_UNSPECIFIED = 'PATCH_MODE_UNSPECIFIED';
-    /**
-     * ACCELERATED denotes that the latest patch build in the channel should be
-     * used as the upgrade target for the version.
-     */
-    public const PATCH_MODE_ACCELERATED = 'ACCELERATED';
-    /**
-     * PatchMode specifies how auto upgrade patch builds should be selected.
-     *
-     * @var string
-     */
-    public $patchMode;
-    /**
-     * PatchMode specifies how auto upgrade patch builds should be selected.
-     *
-     * Accepted values: PATCH_MODE_UNSPECIFIED, ACCELERATED
-     *
-     * @param self::PATCH_MODE_* $patchMode
-     */
-    public function setPatchMode($patchMode)
+namespace Google\Service\Container {
+    class GkeAutoUpgradeConfig extends \Google\Model
     {
+        /**
+         * PATCH_MODE_UNSPECIFIED defaults to using the upgrade target from the
+         * channel's patch upgrade targets as the upgrade target for the version.
+         */
+        public const PATCH_MODE_PATCH_MODE_UNSPECIFIED = 'PATCH_MODE_UNSPECIFIED';
+        /**
+         * ACCELERATED denotes that the latest patch build in the channel should be
+         * used as the upgrade target for the version.
+         */
+        public const PATCH_MODE_ACCELERATED = 'ACCELERATED';
+        /**
+         * PatchMode specifies how auto upgrade patch builds should be selected.
+         *
+         * @var string
+         */
+        public $patchMode;
+        /**
+         * PatchMode specifies how auto upgrade patch builds should be selected.
+         *
+         * Accepted values: PATCH_MODE_UNSPECIFIED, ACCELERATED
+         *
+         * @param self::PATCH_MODE_* $patchMode
+         */
+        public function setPatchMode($patchMode)
+        {
+        }
+        /**
+         * @return self::PATCH_MODE_*
+         */
+        public function getPatchMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PATCH_MODE_*
+     * Runtime class alias of \Google\Service\Container\GkeAutoUpgradeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPatchMode()
+    class Google_Service_Container_GkeAutoUpgradeConfig extends \Google\Service\Container\GkeAutoUpgradeConfig
     {
     }
 }

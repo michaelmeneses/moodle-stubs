@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class Operation extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $done;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var array[]
-     */
-    public $response;
-    /**
-     * @param bool
-     */
-    public function setDone($done)
+namespace Google\Service\GameServices {
+    class Operation extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $done;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var array[]
+         */
+        public $response;
+        /**
+         * @param bool
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GameServices\Operation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * @param Status
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResponse()
+    class Google_Service_GameServices_Operation extends \Google\Service\GameServices\Operation
     {
     }
 }

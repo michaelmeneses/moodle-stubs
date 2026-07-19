@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InputMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bytesRead;
-    /**
-     * @var string
-     */
-    public $recordsRead;
-    /**
-     * @param string $bytesRead
-     */
-    public function setBytesRead($bytesRead)
+namespace Google\Service\Dataproc {
+    class InputMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bytesRead;
+        /**
+         * @var string
+         */
+        public $recordsRead;
+        /**
+         * @param string $bytesRead
+         */
+        public function setBytesRead($bytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesRead()
+        {
+        }
+        /**
+         * @param string $recordsRead
+         */
+        public function setRecordsRead($recordsRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordsRead()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\InputMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesRead()
-    {
-    }
-    /**
-     * @param string $recordsRead
-     */
-    public function setRecordsRead($recordsRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordsRead()
+    class Google_Service_Dataproc_InputMetrics extends \Google\Service\Dataproc\InputMetrics
     {
     }
 }

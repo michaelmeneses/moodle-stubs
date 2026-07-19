@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Rank extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $primary;
-    /**
-     * @var string
-     */
-    public $secondary;
-    /**
-     * @param string
-     */
-    public function setPrimary($primary)
+namespace Google\Service\CloudSearch {
+    class Rank extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $primary;
+        /**
+         * @var string
+         */
+        public $secondary;
+        /**
+         * @param string
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSecondary($secondary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Rank registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSecondary($secondary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondary()
+    class Google_Service_CloudSearch_Rank extends \Google\Service\CloudSearch\Rank
     {
     }
 }

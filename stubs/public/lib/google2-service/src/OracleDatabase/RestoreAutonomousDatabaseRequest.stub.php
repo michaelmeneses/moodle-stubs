@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class RestoreAutonomousDatabaseRequest extends \Google\Model
-{
-    /**
-     * Required. The time and date to restore the database to.
-     *
-     * @var string
-     */
-    public $restoreTime;
-    /**
-     * Required. The time and date to restore the database to.
-     *
-     * @param string $restoreTime
-     */
-    public function setRestoreTime($restoreTime)
+namespace Google\Service\OracleDatabase {
+    class RestoreAutonomousDatabaseRequest extends \Google\Model
     {
+        /**
+         * Required. The time and date to restore the database to.
+         *
+         * @var string
+         */
+        public $restoreTime;
+        /**
+         * Required. The time and date to restore the database to.
+         *
+         * @param string $restoreTime
+         */
+        public function setRestoreTime($restoreTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRestoreTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\RestoreAutonomousDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRestoreTime()
+    class Google_Service_OracleDatabase_RestoreAutonomousDatabaseRequest extends \Google\Service\OracleDatabase\RestoreAutonomousDatabaseRequest
     {
     }
 }

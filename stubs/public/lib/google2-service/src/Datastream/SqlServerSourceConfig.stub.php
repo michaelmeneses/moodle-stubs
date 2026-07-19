@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerSourceConfig extends \Google\Model
-{
-    protected $changeTablesType = SqlServerChangeTables::class;
-    protected $changeTablesDataType = '';
-    protected $excludeObjectsType = SqlServerRdbms::class;
-    protected $excludeObjectsDataType = '';
-    protected $includeObjectsType = SqlServerRdbms::class;
-    protected $includeObjectsDataType = '';
-    /**
-     * Max concurrent backfill tasks.
-     *
-     * @var int
-     */
-    public $maxConcurrentBackfillTasks;
-    /**
-     * Max concurrent CDC tasks.
-     *
-     * @var int
-     */
-    public $maxConcurrentCdcTasks;
-    protected $transactionLogsType = SqlServerTransactionLogs::class;
-    protected $transactionLogsDataType = '';
-    /**
-     * CDC reader reads from change tables.
-     *
-     * @param SqlServerChangeTables $changeTables
-     */
-    public function setChangeTables(SqlServerChangeTables $changeTables)
+namespace Google\Service\Datastream {
+    class SqlServerSourceConfig extends \Google\Model
     {
+        protected $changeTablesType = SqlServerChangeTables::class;
+        protected $changeTablesDataType = '';
+        protected $excludeObjectsType = SqlServerRdbms::class;
+        protected $excludeObjectsDataType = '';
+        protected $includeObjectsType = SqlServerRdbms::class;
+        protected $includeObjectsDataType = '';
+        /**
+         * Max concurrent backfill tasks.
+         *
+         * @var int
+         */
+        public $maxConcurrentBackfillTasks;
+        /**
+         * Max concurrent CDC tasks.
+         *
+         * @var int
+         */
+        public $maxConcurrentCdcTasks;
+        protected $transactionLogsType = SqlServerTransactionLogs::class;
+        protected $transactionLogsDataType = '';
+        /**
+         * CDC reader reads from change tables.
+         *
+         * @param SqlServerChangeTables $changeTables
+         */
+        public function setChangeTables(SqlServerChangeTables $changeTables)
+        {
+        }
+        /**
+         * @return SqlServerChangeTables
+         */
+        public function getChangeTables()
+        {
+        }
+        /**
+         * SQLServer objects to exclude from the stream.
+         *
+         * @param SqlServerRdbms $excludeObjects
+         */
+        public function setExcludeObjects(SqlServerRdbms $excludeObjects)
+        {
+        }
+        /**
+         * @return SqlServerRdbms
+         */
+        public function getExcludeObjects()
+        {
+        }
+        /**
+         * SQLServer objects to include in the stream.
+         *
+         * @param SqlServerRdbms $includeObjects
+         */
+        public function setIncludeObjects(SqlServerRdbms $includeObjects)
+        {
+        }
+        /**
+         * @return SqlServerRdbms
+         */
+        public function getIncludeObjects()
+        {
+        }
+        /**
+         * Max concurrent backfill tasks.
+         *
+         * @param int $maxConcurrentBackfillTasks
+         */
+        public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentBackfillTasks()
+        {
+        }
+        /**
+         * Max concurrent CDC tasks.
+         *
+         * @param int $maxConcurrentCdcTasks
+         */
+        public function setMaxConcurrentCdcTasks($maxConcurrentCdcTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentCdcTasks()
+        {
+        }
+        /**
+         * CDC reader reads from transaction logs.
+         *
+         * @param SqlServerTransactionLogs $transactionLogs
+         */
+        public function setTransactionLogs(SqlServerTransactionLogs $transactionLogs)
+        {
+        }
+        /**
+         * @return SqlServerTransactionLogs
+         */
+        public function getTransactionLogs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SqlServerChangeTables
+     * Runtime class alias of \Google\Service\Datastream\SqlServerSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeTables()
-    {
-    }
-    /**
-     * SQLServer objects to exclude from the stream.
-     *
-     * @param SqlServerRdbms $excludeObjects
-     */
-    public function setExcludeObjects(SqlServerRdbms $excludeObjects)
-    {
-    }
-    /**
-     * @return SqlServerRdbms
-     */
-    public function getExcludeObjects()
-    {
-    }
-    /**
-     * SQLServer objects to include in the stream.
-     *
-     * @param SqlServerRdbms $includeObjects
-     */
-    public function setIncludeObjects(SqlServerRdbms $includeObjects)
-    {
-    }
-    /**
-     * @return SqlServerRdbms
-     */
-    public function getIncludeObjects()
-    {
-    }
-    /**
-     * Max concurrent backfill tasks.
-     *
-     * @param int $maxConcurrentBackfillTasks
-     */
-    public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentBackfillTasks()
-    {
-    }
-    /**
-     * Max concurrent CDC tasks.
-     *
-     * @param int $maxConcurrentCdcTasks
-     */
-    public function setMaxConcurrentCdcTasks($maxConcurrentCdcTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentCdcTasks()
-    {
-    }
-    /**
-     * CDC reader reads from transaction logs.
-     *
-     * @param SqlServerTransactionLogs $transactionLogs
-     */
-    public function setTransactionLogs(SqlServerTransactionLogs $transactionLogs)
-    {
-    }
-    /**
-     * @return SqlServerTransactionLogs
-     */
-    public function getTransactionLogs()
+    class Google_Service_Datastream_SqlServerSourceConfig extends \Google\Service\Datastream\SqlServerSourceConfig
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RedactImageResponse extends \Google\Model
-{
-    /**
-     * If an image was being inspected and the InspectConfig's include_quote was
-     * set to true, then this field will include all text, if any, that was found
-     * in the image.
-     *
-     * @var string
-     */
-    public $extractedText;
-    protected $inspectResultType = GooglePrivacyDlpV2InspectResult::class;
-    protected $inspectResultDataType = '';
-    /**
-     * The redacted image. The type will be the same as the original image.
-     *
-     * @var string
-     */
-    public $redactedImage;
-    /**
-     * If an image was being inspected and the InspectConfig's include_quote was
-     * set to true, then this field will include all text, if any, that was found
-     * in the image.
-     *
-     * @param string $extractedText
-     */
-    public function setExtractedText($extractedText)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RedactImageResponse extends \Google\Model
     {
+        /**
+         * If an image was being inspected and the InspectConfig's include_quote was
+         * set to true, then this field will include all text, if any, that was found
+         * in the image.
+         *
+         * @var string
+         */
+        public $extractedText;
+        protected $inspectResultType = GooglePrivacyDlpV2InspectResult::class;
+        protected $inspectResultDataType = '';
+        /**
+         * The redacted image. The type will be the same as the original image.
+         *
+         * @var string
+         */
+        public $redactedImage;
+        /**
+         * If an image was being inspected and the InspectConfig's include_quote was
+         * set to true, then this field will include all text, if any, that was found
+         * in the image.
+         *
+         * @param string $extractedText
+         */
+        public function setExtractedText($extractedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtractedText()
+        {
+        }
+        /**
+         * The findings. Populated when include_findings in the request is true.
+         *
+         * @param GooglePrivacyDlpV2InspectResult $inspectResult
+         */
+        public function setInspectResult(GooglePrivacyDlpV2InspectResult $inspectResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectResult
+         */
+        public function getInspectResult()
+        {
+        }
+        /**
+         * The redacted image. The type will be the same as the original image.
+         *
+         * @param string $redactedImage
+         */
+        public function setRedactedImage($redactedImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedactedImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RedactImageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtractedText()
-    {
-    }
-    /**
-     * The findings. Populated when include_findings in the request is true.
-     *
-     * @param GooglePrivacyDlpV2InspectResult $inspectResult
-     */
-    public function setInspectResult(GooglePrivacyDlpV2InspectResult $inspectResult)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectResult
-     */
-    public function getInspectResult()
-    {
-    }
-    /**
-     * The redacted image. The type will be the same as the original image.
-     *
-     * @param string $redactedImage
-     */
-    public function setRedactedImage($redactedImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedactedImage()
+    class Google_Service_DLP_GooglePrivacyDlpV2RedactImageResponse extends \Google\Service\DLP\GooglePrivacyDlpV2RedactImageResponse
     {
     }
 }

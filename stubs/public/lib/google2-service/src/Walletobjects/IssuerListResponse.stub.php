@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class IssuerListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $resourcesType = Issuer::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Resources corresponding to the list request.
-     *
-     * @param Issuer[] $resources
-     */
-    public function setResources($resources)
+namespace Google\Service\Walletobjects {
+    class IssuerListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $resourcesType = Issuer::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Resources corresponding to the list request.
+         *
+         * @param Issuer[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return Issuer[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Issuer[]
+     * Runtime class alias of \Google\Service\Walletobjects\IssuerListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResources()
+    class Google_Service_Walletobjects_IssuerListResponse extends \Google\Service\Walletobjects\IssuerListResponse
     {
     }
 }

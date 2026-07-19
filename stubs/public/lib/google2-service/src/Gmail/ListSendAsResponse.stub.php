@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListSendAsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sendAs';
-    protected $sendAsType = SendAs::class;
-    protected $sendAsDataType = 'array';
-    /**
-     * List of send-as aliases.
-     *
-     * @param SendAs[] $sendAs
-     */
-    public function setSendAs($sendAs)
+namespace Google\Service\Gmail {
+    class ListSendAsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sendAs';
+        protected $sendAsType = SendAs::class;
+        protected $sendAsDataType = 'array';
+        /**
+         * List of send-as aliases.
+         *
+         * @param SendAs[] $sendAs
+         */
+        public function setSendAs($sendAs)
+        {
+        }
+        /**
+         * @return SendAs[]
+         */
+        public function getSendAs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SendAs[]
+     * Runtime class alias of \Google\Service\Gmail\ListSendAsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSendAs()
+    class Google_Service_Gmail_ListSendAsResponse extends \Google\Service\Gmail\ListSendAsResponse
     {
     }
 }

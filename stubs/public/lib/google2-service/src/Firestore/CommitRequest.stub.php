@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class CommitRequest extends \Google\Collection
-{
-    protected $collection_key = 'writes';
-    /**
-     * If set, applies all writes in this transaction, and commits it.
-     *
-     * @var string
-     */
-    public $transaction;
-    protected $writesType = Write::class;
-    protected $writesDataType = 'array';
-    /**
-     * If set, applies all writes in this transaction, and commits it.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
+namespace Google\Service\Firestore {
+    class CommitRequest extends \Google\Collection
     {
+        protected $collection_key = 'writes';
+        /**
+         * If set, applies all writes in this transaction, and commits it.
+         *
+         * @var string
+         */
+        public $transaction;
+        protected $writesType = Write::class;
+        protected $writesDataType = 'array';
+        /**
+         * If set, applies all writes in this transaction, and commits it.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
+        /**
+         * The writes to apply. Always executed atomically and in order.
+         *
+         * @param Write[] $writes
+         */
+        public function setWrites($writes)
+        {
+        }
+        /**
+         * @return Write[]
+         */
+        public function getWrites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\CommitRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransaction()
-    {
-    }
-    /**
-     * The writes to apply. Always executed atomically and in order.
-     *
-     * @param Write[] $writes
-     */
-    public function setWrites($writes)
-    {
-    }
-    /**
-     * @return Write[]
-     */
-    public function getWrites()
+    class Google_Service_Firestore_CommitRequest extends \Google\Service\Firestore\CommitRequest
     {
     }
 }

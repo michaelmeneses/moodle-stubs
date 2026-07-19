@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator\Resource;
-
-/**
- * The "orgPolicyViolations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $policysimulatorService = new Google\Service\PolicySimulator(...);
- *   $orgPolicyViolations = $policysimulatorService->organizations_locations_orgPolicyViolationsPreviews_orgPolicyViolations;
- *  </code>
- */
-class OrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations extends \Google\Service\Resource
-{
+namespace Google\Service\PolicySimulator\Resource {
+    use Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsResponse;
     /**
-     * ListOrgPolicyViolations lists the OrgPolicyViolations that are present in an
-     * OrgPolicyViolationsPreview. (orgPolicyViolations.listOrganizationsLocationsOr
-     * gPolicyViolationsPreviewsOrgPolicyViolations)
-     *
-     * @param string $parent Required. The OrgPolicyViolationsPreview to get
-     * OrgPolicyViolations from. Format: organizations/{organization}/locations/{loc
-     * ation}/orgPolicyViolationsPreviews/{orgPolicyViolationsPreview}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of items to return. The
-     * service may return fewer than this value. If unspecified, at most 1000 items
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * call. Provide this to retrieve the subsequent page. When paginating, all
-     * other parameters must match the call that provided the page token.
-     * @return GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsResponse
-     * @throws \Google\Service\Exception
+     * The "orgPolicyViolations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $policysimulatorService = new Google\Service\PolicySimulator(...);
+     *   $orgPolicyViolations = $policysimulatorService->organizations_locations_orgPolicyViolationsPreviews_orgPolicyViolations;
+     *  </code>
      */
-    public function listOrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations($parent, $optParams = [])
+    class OrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations extends \Google\Service\Resource
+    {
+        /**
+         * ListOrgPolicyViolations lists the OrgPolicyViolations that are present in an
+         * OrgPolicyViolationsPreview. (orgPolicyViolations.listOrganizationsLocationsOr
+         * gPolicyViolationsPreviewsOrgPolicyViolations)
+         *
+         * @param string $parent Required. The OrgPolicyViolationsPreview to get
+         * OrgPolicyViolations from. Format: organizations/{organization}/locations/{loc
+         * ation}/orgPolicyViolationsPreviews/{orgPolicyViolationsPreview}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of items to return. The
+         * service may return fewer than this value. If unspecified, at most 1000 items
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * call. Provide this to retrieve the subsequent page. When paginating, all
+         * other parameters must match the call that provided the page token.
+         * @return GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolicySimulator\Resource\OrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolicySimulator_Resource_OrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations extends \Google\Service\PolicySimulator\Resource\OrganizationsLocationsOrgPolicyViolationsPreviewsOrgPolicyViolations
     {
     }
 }

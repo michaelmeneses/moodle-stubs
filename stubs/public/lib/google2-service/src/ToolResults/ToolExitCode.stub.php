@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ToolExitCode extends \Google\Model
-{
-    /**
-     * Tool execution exit code. A value of 0 means that the execution was
-     * successful. - In response: always set - In create/update request: always
-     * set
-     *
-     * @var int
-     */
-    public $number;
-    /**
-     * Tool execution exit code. A value of 0 means that the execution was
-     * successful. - In response: always set - In create/update request: always
-     * set
-     *
-     * @param int $number
-     */
-    public function setNumber($number)
+namespace Google\Service\ToolResults {
+    class ToolExitCode extends \Google\Model
     {
+        /**
+         * Tool execution exit code. A value of 0 means that the execution was
+         * successful. - In response: always set - In create/update request: always
+         * set
+         *
+         * @var int
+         */
+        public $number;
+        /**
+         * Tool execution exit code. A value of 0 means that the execution was
+         * successful. - In response: always set - In create/update request: always
+         * set
+         *
+         * @param int $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\ToolExitCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumber()
+    class Google_Service_ToolResults_ToolExitCode extends \Google\Service\ToolResults\ToolExitCode
     {
     }
 }

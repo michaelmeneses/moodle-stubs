@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * The eTag of this response for caching purposes.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Report::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of list this is, in this case dfareporting#reportList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Continuation token used to page through reports. To retrieve the next page
-     * of results, set the next request's "pageToken" to the value of this field.
-     * The page token is only valid for a limited amount of time and should not be
-     * persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The eTag of this response for caching purposes.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Dfareporting {
+    class ReportList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * The eTag of this response for caching purposes.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Report::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of list this is, in this case dfareporting#reportList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Continuation token used to page through reports. To retrieve the next page
+         * of results, set the next request's "pageToken" to the value of this field.
+         * The page token is only valid for a limited amount of time and should not be
+         * persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The eTag of this response for caching purposes.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The reports returned in this response.
+         *
+         * @param Report[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Report[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of list this is, in this case dfareporting#reportList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Continuation token used to page through reports. To retrieve the next page
+         * of results, set the next request's "pageToken" to the value of this field.
+         * The page token is only valid for a limited amount of time and should not be
+         * persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ReportList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The reports returned in this response.
-     *
-     * @param Report[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Report[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of list this is, in this case dfareporting#reportList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Continuation token used to page through reports. To retrieve the next page
-     * of results, set the next request's "pageToken" to the value of this field.
-     * The page token is only valid for a limited amount of time and should not be
-     * persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_ReportList extends \Google\Service\Dfareporting\ReportList
     {
     }
 }

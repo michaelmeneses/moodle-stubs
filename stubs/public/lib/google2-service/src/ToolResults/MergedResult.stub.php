@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class MergedResult extends \Google\Collection
-{
-    /**
-     * Should never be in this state. Exists for proto deserialization backward
-     * compatibility.
-     */
-    public const STATE_unknownState = 'unknownState';
-    /**
-     * The Execution/Step is created, ready to run, but not running yet. If an
-     * Execution/Step is created without initial state, it is assumed that the
-     * Execution/Step is in PENDING state.
-     */
-    public const STATE_pending = 'pending';
-    /**
-     * The Execution/Step is in progress.
-     */
-    public const STATE_inProgress = 'inProgress';
-    /**
-     * The finalized, immutable state. Steps/Executions in this state cannot be
-     * modified.
-     */
-    public const STATE_complete = 'complete';
-    protected $collection_key = 'testSuiteOverviews';
-    protected $outcomeType = Outcome::class;
-    protected $outcomeDataType = '';
-    /**
-     * State of the resource
-     *
-     * @var string
-     */
-    public $state;
-    protected $testSuiteOverviewsType = TestSuiteOverview::class;
-    protected $testSuiteOverviewsDataType = 'array';
-    /**
-     * Outcome of the resource
-     *
-     * @param Outcome $outcome
-     */
-    public function setOutcome(Outcome $outcome)
+namespace Google\Service\ToolResults {
+    class MergedResult extends \Google\Collection
     {
+        /**
+         * Should never be in this state. Exists for proto deserialization backward
+         * compatibility.
+         */
+        public const STATE_unknownState = 'unknownState';
+        /**
+         * The Execution/Step is created, ready to run, but not running yet. If an
+         * Execution/Step is created without initial state, it is assumed that the
+         * Execution/Step is in PENDING state.
+         */
+        public const STATE_pending = 'pending';
+        /**
+         * The Execution/Step is in progress.
+         */
+        public const STATE_inProgress = 'inProgress';
+        /**
+         * The finalized, immutable state. Steps/Executions in this state cannot be
+         * modified.
+         */
+        public const STATE_complete = 'complete';
+        protected $collection_key = 'testSuiteOverviews';
+        protected $outcomeType = Outcome::class;
+        protected $outcomeDataType = '';
+        /**
+         * State of the resource
+         *
+         * @var string
+         */
+        public $state;
+        protected $testSuiteOverviewsType = TestSuiteOverview::class;
+        protected $testSuiteOverviewsDataType = 'array';
+        /**
+         * Outcome of the resource
+         *
+         * @param Outcome $outcome
+         */
+        public function setOutcome(Outcome $outcome)
+        {
+        }
+        /**
+         * @return Outcome
+         */
+        public function getOutcome()
+        {
+        }
+        /**
+         * State of the resource
+         *
+         * Accepted values: unknownState, pending, inProgress, complete
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The combined and rolled-up result of each test suite that was run as part
+         * of this environment. Combining: When the test cases from a suite are run in
+         * different steps (sharding), the results are added back together in one
+         * overview. (e.g., if shard1 has 2 failures and shard2 has 1 failure than the
+         * overview failure_count = 3). Rollup: When test cases from the same suite
+         * are run multiple times (flaky), the results are combined (e.g., if
+         * testcase1.run1 fails, testcase1.run2 passes, and both testcase2.run1 and
+         * testcase2.run2 fail then the overview flaky_count = 1 and failure_count =
+         * 1).
+         *
+         * @param TestSuiteOverview[] $testSuiteOverviews
+         */
+        public function setTestSuiteOverviews($testSuiteOverviews)
+        {
+        }
+        /**
+         * @return TestSuiteOverview[]
+         */
+        public function getTestSuiteOverviews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Outcome
+     * Runtime class alias of \Google\Service\ToolResults\MergedResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutcome()
-    {
-    }
-    /**
-     * State of the resource
-     *
-     * Accepted values: unknownState, pending, inProgress, complete
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The combined and rolled-up result of each test suite that was run as part
-     * of this environment. Combining: When the test cases from a suite are run in
-     * different steps (sharding), the results are added back together in one
-     * overview. (e.g., if shard1 has 2 failures and shard2 has 1 failure than the
-     * overview failure_count = 3). Rollup: When test cases from the same suite
-     * are run multiple times (flaky), the results are combined (e.g., if
-     * testcase1.run1 fails, testcase1.run2 passes, and both testcase2.run1 and
-     * testcase2.run2 fail then the overview flaky_count = 1 and failure_count =
-     * 1).
-     *
-     * @param TestSuiteOverview[] $testSuiteOverviews
-     */
-    public function setTestSuiteOverviews($testSuiteOverviews)
-    {
-    }
-    /**
-     * @return TestSuiteOverview[]
-     */
-    public function getTestSuiteOverviews()
+    class Google_Service_ToolResults_MergedResult extends \Google\Service\ToolResults\MergedResult
     {
     }
 }

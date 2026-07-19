@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class GetMultipleApplicationPlayerIdsResponse extends \Google\Collection
-{
-    protected $collection_key = 'playerIds';
-    protected $playerIdsType = ApplicationPlayerId::class;
-    protected $playerIdsDataType = 'array';
-    /**
-     * Output only. The requested applications along with the scoped ids for tha
-     * player, if that player has an id for the application. If not, the
-     * application is not included in the response.
-     *
-     * @param ApplicationPlayerId[] $playerIds
-     */
-    public function setPlayerIds($playerIds)
+namespace Google\Service\Games {
+    class GetMultipleApplicationPlayerIdsResponse extends \Google\Collection
     {
+        protected $collection_key = 'playerIds';
+        protected $playerIdsType = ApplicationPlayerId::class;
+        protected $playerIdsDataType = 'array';
+        /**
+         * Output only. The requested applications along with the scoped ids for tha
+         * player, if that player has an id for the application. If not, the
+         * application is not included in the response.
+         *
+         * @param ApplicationPlayerId[] $playerIds
+         */
+        public function setPlayerIds($playerIds)
+        {
+        }
+        /**
+         * @return ApplicationPlayerId[]
+         */
+        public function getPlayerIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplicationPlayerId[]
+     * Runtime class alias of \Google\Service\Games\GetMultipleApplicationPlayerIdsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlayerIds()
+    class Google_Service_Games_GetMultipleApplicationPlayerIdsResponse extends \Google\Service\Games\GetMultipleApplicationPlayerIdsResponse
     {
     }
 }

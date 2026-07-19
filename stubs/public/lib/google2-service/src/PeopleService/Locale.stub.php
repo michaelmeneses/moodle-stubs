@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Locale extends \Google\Model
-{
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The well-formed [IETF BCP 47](https://tools.ietf.org/html/bcp47) language
-     * tag representing the locale.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Metadata about the locale.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
+namespace Google\Service\PeopleService {
+    class Locale extends \Google\Model
     {
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The well-formed [IETF BCP 47](https://tools.ietf.org/html/bcp47) language
+         * tag representing the locale.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Metadata about the locale.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The well-formed [IETF BCP 47](https://tools.ietf.org/html/bcp47) language
+         * tag representing the locale.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldMetadata
+     * Runtime class alias of \Google\Service\PeopleService\Locale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The well-formed [IETF BCP 47](https://tools.ietf.org/html/bcp47) language
-     * tag representing the locale.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_Locale extends \Google\Service\PeopleService\Locale
     {
     }
 }

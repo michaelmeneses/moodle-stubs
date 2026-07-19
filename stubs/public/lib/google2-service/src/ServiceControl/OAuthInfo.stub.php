@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class OAuthInfo extends \Google\Model
-{
-    /**
-     * The OAuth client ID of the 1P or 3P application acting on behalf of the
-     * user.
-     *
-     * @var string
-     */
-    public $oauthClientId;
-    /**
-     * The OAuth client ID of the 1P or 3P application acting on behalf of the
-     * user.
-     *
-     * @param string $oauthClientId
-     */
-    public function setOauthClientId($oauthClientId)
+namespace Google\Service\ServiceControl {
+    class OAuthInfo extends \Google\Model
     {
+        /**
+         * The OAuth client ID of the 1P or 3P application acting on behalf of the
+         * user.
+         *
+         * @var string
+         */
+        public $oauthClientId;
+        /**
+         * The OAuth client ID of the 1P or 3P application acting on behalf of the
+         * user.
+         *
+         * @param string $oauthClientId
+         */
+        public function setOauthClientId($oauthClientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthClientId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\OAuthInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOauthClientId()
+    class Google_Service_ServiceControl_OAuthInfo extends \Google\Service\ServiceControl\OAuthInfo
     {
     }
 }

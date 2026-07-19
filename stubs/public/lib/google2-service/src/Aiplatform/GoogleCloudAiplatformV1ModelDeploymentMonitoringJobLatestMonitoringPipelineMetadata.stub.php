@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelDeploymentMonitoringJobLatestMonitoringPipelineMetadata extends \Google\Model
-{
-    /**
-     * The time that most recent monitoring pipelines that is related to this run.
-     *
-     * @var string
-     */
-    public $runTime;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The time that most recent monitoring pipelines that is related to this run.
-     *
-     * @param string $runTime
-     */
-    public function setRunTime($runTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelDeploymentMonitoringJobLatestMonitoringPipelineMetadata extends \Google\Model
     {
+        /**
+         * The time that most recent monitoring pipelines that is related to this run.
+         *
+         * @var string
+         */
+        public $runTime;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The time that most recent monitoring pipelines that is related to this run.
+         *
+         * @param string $runTime
+         */
+        public function setRunTime($runTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunTime()
+        {
+        }
+        /**
+         * The status of the most recent monitoring pipeline.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDeploymentMonitoringJobLatestMonitoringPipelineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRunTime()
-    {
-    }
-    /**
-     * The status of the most recent monitoring pipeline.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelDeploymentMonitoringJobLatestMonitoringPipelineMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDeploymentMonitoringJobLatestMonitoringPipelineMetadata
     {
     }
 }

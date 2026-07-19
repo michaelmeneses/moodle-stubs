@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineLoggingSourceLocation extends \Google\Model
-{
-    /**
-     * Human-readable name of a function or method—for example,
-     * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend`.
-     *
-     * @var string
-     */
-    public $functionName;
-    /**
-     * Human-readable name of a function or method—for example,
-     * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend`.
-     *
-     * @param string $functionName
-     */
-    public function setFunctionName($functionName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineLoggingSourceLocation extends \Google\Model
     {
+        /**
+         * Human-readable name of a function or method—for example,
+         * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend`.
+         *
+         * @var string
+         */
+        public $functionName;
+        /**
+         * Human-readable name of a function or method—for example,
+         * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend`.
+         *
+         * @param string $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingSourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineLoggingSourceLocation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingSourceLocation
     {
     }
 }

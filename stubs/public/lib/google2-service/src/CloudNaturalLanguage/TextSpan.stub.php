@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class TextSpan extends \Google\Model
-{
-    /**
-     * The API calculates the beginning offset of the content in the original
-     * document according to the EncodingType specified in the API request.
-     *
-     * @var int
-     */
-    public $beginOffset;
-    /**
-     * The content of the text span, which is a substring of the document.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The API calculates the beginning offset of the content in the original
-     * document according to the EncodingType specified in the API request.
-     *
-     * @param int $beginOffset
-     */
-    public function setBeginOffset($beginOffset)
+namespace Google\Service\CloudNaturalLanguage {
+    class TextSpan extends \Google\Model
     {
+        /**
+         * The API calculates the beginning offset of the content in the original
+         * document according to the EncodingType specified in the API request.
+         *
+         * @var int
+         */
+        public $beginOffset;
+        /**
+         * The content of the text span, which is a substring of the document.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The API calculates the beginning offset of the content in the original
+         * document according to the EncodingType specified in the API request.
+         *
+         * @param int $beginOffset
+         */
+        public function setBeginOffset($beginOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBeginOffset()
+        {
+        }
+        /**
+         * The content of the text span, which is a substring of the document.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\TextSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBeginOffset()
-    {
-    }
-    /**
-     * The content of the text span, which is a substring of the document.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
+    class Google_Service_CloudNaturalLanguage_TextSpan extends \Google\Service\CloudNaturalLanguage\TextSpan
     {
     }
 }

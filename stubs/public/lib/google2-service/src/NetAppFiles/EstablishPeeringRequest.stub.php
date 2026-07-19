@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class EstablishPeeringRequest extends \Google\Collection
-{
-    protected $collection_key = 'peerIpAddresses';
-    /**
-     * Required. Name of the user's local source cluster to be peered with the
-     * destination cluster.
-     *
-     * @var string
-     */
-    public $peerClusterName;
-    /**
-     * Optional. List of IPv4 ip addresses to be used for peering.
-     *
-     * @var string[]
-     */
-    public $peerIpAddresses;
-    /**
-     * Required. Name of the user's local source vserver svm to be peered with the
-     * destination vserver svm.
-     *
-     * @var string
-     */
-    public $peerSvmName;
-    /**
-     * Required. Name of the user's local source volume to be peered with the
-     * destination volume.
-     *
-     * @var string
-     */
-    public $peerVolumeName;
-    /**
-     * Required. Name of the user's local source cluster to be peered with the
-     * destination cluster.
-     *
-     * @param string $peerClusterName
-     */
-    public function setPeerClusterName($peerClusterName)
+namespace Google\Service\NetAppFiles {
+    class EstablishPeeringRequest extends \Google\Collection
     {
+        protected $collection_key = 'peerIpAddresses';
+        /**
+         * Required. Name of the user's local source cluster to be peered with the
+         * destination cluster.
+         *
+         * @var string
+         */
+        public $peerClusterName;
+        /**
+         * Optional. List of IPv4 ip addresses to be used for peering.
+         *
+         * @var string[]
+         */
+        public $peerIpAddresses;
+        /**
+         * Required. Name of the user's local source vserver svm to be peered with the
+         * destination vserver svm.
+         *
+         * @var string
+         */
+        public $peerSvmName;
+        /**
+         * Required. Name of the user's local source volume to be peered with the
+         * destination volume.
+         *
+         * @var string
+         */
+        public $peerVolumeName;
+        /**
+         * Required. Name of the user's local source cluster to be peered with the
+         * destination cluster.
+         *
+         * @param string $peerClusterName
+         */
+        public function setPeerClusterName($peerClusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerClusterName()
+        {
+        }
+        /**
+         * Optional. List of IPv4 ip addresses to be used for peering.
+         *
+         * @param string[] $peerIpAddresses
+         */
+        public function setPeerIpAddresses($peerIpAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPeerIpAddresses()
+        {
+        }
+        /**
+         * Required. Name of the user's local source vserver svm to be peered with the
+         * destination vserver svm.
+         *
+         * @param string $peerSvmName
+         */
+        public function setPeerSvmName($peerSvmName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerSvmName()
+        {
+        }
+        /**
+         * Required. Name of the user's local source volume to be peered with the
+         * destination volume.
+         *
+         * @param string $peerVolumeName
+         */
+        public function setPeerVolumeName($peerVolumeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerVolumeName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\EstablishPeeringRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeerClusterName()
-    {
-    }
-    /**
-     * Optional. List of IPv4 ip addresses to be used for peering.
-     *
-     * @param string[] $peerIpAddresses
-     */
-    public function setPeerIpAddresses($peerIpAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPeerIpAddresses()
-    {
-    }
-    /**
-     * Required. Name of the user's local source vserver svm to be peered with the
-     * destination vserver svm.
-     *
-     * @param string $peerSvmName
-     */
-    public function setPeerSvmName($peerSvmName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerSvmName()
-    {
-    }
-    /**
-     * Required. Name of the user's local source volume to be peered with the
-     * destination volume.
-     *
-     * @param string $peerVolumeName
-     */
-    public function setPeerVolumeName($peerVolumeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerVolumeName()
+    class Google_Service_NetAppFiles_EstablishPeeringRequest extends \Google\Service\NetAppFiles\EstablishPeeringRequest
     {
     }
 }

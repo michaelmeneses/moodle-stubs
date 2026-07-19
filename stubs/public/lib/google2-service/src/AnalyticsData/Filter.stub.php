@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class Filter extends \Google\Model
-{
-    protected $betweenFilterType = BetweenFilter::class;
-    protected $betweenFilterDataType = '';
-    protected $emptyFilterType = EmptyFilter::class;
-    protected $emptyFilterDataType = '';
-    /**
-     * The dimension name or metric name. In most methods, dimensions & metrics
-     * can be used for the first time in this field. However in a
-     * RunPivotReportRequest, this field must be additionally specified by name in
-     * the RunPivotReportRequest's dimensions or metrics.
-     *
-     * @var string
-     */
-    public $fieldName;
-    protected $inListFilterType = InListFilter::class;
-    protected $inListFilterDataType = '';
-    protected $numericFilterType = NumericFilter::class;
-    protected $numericFilterDataType = '';
-    protected $stringFilterType = StringFilter::class;
-    protected $stringFilterDataType = '';
-    /**
-     * A filter for two values.
-     *
-     * @param BetweenFilter $betweenFilter
-     */
-    public function setBetweenFilter(BetweenFilter $betweenFilter)
+namespace Google\Service\AnalyticsData {
+    class Filter extends \Google\Model
     {
+        protected $betweenFilterType = BetweenFilter::class;
+        protected $betweenFilterDataType = '';
+        protected $emptyFilterType = EmptyFilter::class;
+        protected $emptyFilterDataType = '';
+        /**
+         * The dimension name or metric name. In most methods, dimensions & metrics
+         * can be used for the first time in this field. However in a
+         * RunPivotReportRequest, this field must be additionally specified by name in
+         * the RunPivotReportRequest's dimensions or metrics.
+         *
+         * @var string
+         */
+        public $fieldName;
+        protected $inListFilterType = InListFilter::class;
+        protected $inListFilterDataType = '';
+        protected $numericFilterType = NumericFilter::class;
+        protected $numericFilterDataType = '';
+        protected $stringFilterType = StringFilter::class;
+        protected $stringFilterDataType = '';
+        /**
+         * A filter for two values.
+         *
+         * @param BetweenFilter $betweenFilter
+         */
+        public function setBetweenFilter(BetweenFilter $betweenFilter)
+        {
+        }
+        /**
+         * @return BetweenFilter
+         */
+        public function getBetweenFilter()
+        {
+        }
+        /**
+         * A filter for empty values such as "(not set)" and "" values.
+         *
+         * @param EmptyFilter $emptyFilter
+         */
+        public function setEmptyFilter(EmptyFilter $emptyFilter)
+        {
+        }
+        /**
+         * @return EmptyFilter
+         */
+        public function getEmptyFilter()
+        {
+        }
+        /**
+         * The dimension name or metric name. In most methods, dimensions & metrics
+         * can be used for the first time in this field. However in a
+         * RunPivotReportRequest, this field must be additionally specified by name in
+         * the RunPivotReportRequest's dimensions or metrics.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * A filter for in list values.
+         *
+         * @param InListFilter $inListFilter
+         */
+        public function setInListFilter(InListFilter $inListFilter)
+        {
+        }
+        /**
+         * @return InListFilter
+         */
+        public function getInListFilter()
+        {
+        }
+        /**
+         * A filter for numeric or date values.
+         *
+         * @param NumericFilter $numericFilter
+         */
+        public function setNumericFilter(NumericFilter $numericFilter)
+        {
+        }
+        /**
+         * @return NumericFilter
+         */
+        public function getNumericFilter()
+        {
+        }
+        /**
+         * Strings related filter.
+         *
+         * @param StringFilter $stringFilter
+         */
+        public function setStringFilter(StringFilter $stringFilter)
+        {
+        }
+        /**
+         * @return StringFilter
+         */
+        public function getStringFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BetweenFilter
+     * Runtime class alias of \Google\Service\AnalyticsData\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBetweenFilter()
-    {
-    }
-    /**
-     * A filter for empty values such as "(not set)" and "" values.
-     *
-     * @param EmptyFilter $emptyFilter
-     */
-    public function setEmptyFilter(EmptyFilter $emptyFilter)
-    {
-    }
-    /**
-     * @return EmptyFilter
-     */
-    public function getEmptyFilter()
-    {
-    }
-    /**
-     * The dimension name or metric name. In most methods, dimensions & metrics
-     * can be used for the first time in this field. However in a
-     * RunPivotReportRequest, this field must be additionally specified by name in
-     * the RunPivotReportRequest's dimensions or metrics.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * A filter for in list values.
-     *
-     * @param InListFilter $inListFilter
-     */
-    public function setInListFilter(InListFilter $inListFilter)
-    {
-    }
-    /**
-     * @return InListFilter
-     */
-    public function getInListFilter()
-    {
-    }
-    /**
-     * A filter for numeric or date values.
-     *
-     * @param NumericFilter $numericFilter
-     */
-    public function setNumericFilter(NumericFilter $numericFilter)
-    {
-    }
-    /**
-     * @return NumericFilter
-     */
-    public function getNumericFilter()
-    {
-    }
-    /**
-     * Strings related filter.
-     *
-     * @param StringFilter $stringFilter
-     */
-    public function setStringFilter(StringFilter $stringFilter)
-    {
-    }
-    /**
-     * @return StringFilter
-     */
-    public function getStringFilter()
+    class Google_Service_AnalyticsData_Filter extends \Google\Service\AnalyticsData\Filter
     {
     }
 }

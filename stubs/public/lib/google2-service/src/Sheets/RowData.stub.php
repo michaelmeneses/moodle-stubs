@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class RowData extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = CellData::class;
-    protected $valuesDataType = 'array';
-    /**
-     * The values in the row, one per column.
-     *
-     * @param CellData[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Sheets {
+    class RowData extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = CellData::class;
+        protected $valuesDataType = 'array';
+        /**
+         * The values in the row, one per column.
+         *
+         * @param CellData[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return CellData[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CellData[]
+     * Runtime class alias of \Google\Service\Sheets\RowData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Sheets_RowData extends \Google\Service\Sheets\RowData
     {
     }
 }

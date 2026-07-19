@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ReplicaComputeCapacity extends \Google\Model
-{
-    /**
-     * The number of nodes allocated to each replica. This may be zero in API
-     * responses for instances that are not yet in state `READY`.
-     *
-     * @var int
-     */
-    public $nodeCount;
-    /**
-     * The number of processing units allocated to each replica. This may be zero
-     * in API responses for instances that are not yet in state `READY`.
-     *
-     * @var int
-     */
-    public $processingUnits;
-    protected $replicaSelectionType = InstanceReplicaSelection::class;
-    protected $replicaSelectionDataType = '';
-    /**
-     * The number of nodes allocated to each replica. This may be zero in API
-     * responses for instances that are not yet in state `READY`.
-     *
-     * @param int $nodeCount
-     */
-    public function setNodeCount($nodeCount)
+namespace Google\Service\Spanner {
+    class ReplicaComputeCapacity extends \Google\Model
     {
+        /**
+         * The number of nodes allocated to each replica. This may be zero in API
+         * responses for instances that are not yet in state `READY`.
+         *
+         * @var int
+         */
+        public $nodeCount;
+        /**
+         * The number of processing units allocated to each replica. This may be zero
+         * in API responses for instances that are not yet in state `READY`.
+         *
+         * @var int
+         */
+        public $processingUnits;
+        protected $replicaSelectionType = InstanceReplicaSelection::class;
+        protected $replicaSelectionDataType = '';
+        /**
+         * The number of nodes allocated to each replica. This may be zero in API
+         * responses for instances that are not yet in state `READY`.
+         *
+         * @param int $nodeCount
+         */
+        public function setNodeCount($nodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNodeCount()
+        {
+        }
+        /**
+         * The number of processing units allocated to each replica. This may be zero
+         * in API responses for instances that are not yet in state `READY`.
+         *
+         * @param int $processingUnits
+         */
+        public function setProcessingUnits($processingUnits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProcessingUnits()
+        {
+        }
+        /**
+         * Required. Identifies replicas by specified properties. All replicas in the
+         * selection have the same amount of compute capacity.
+         *
+         * @param InstanceReplicaSelection $replicaSelection
+         */
+        public function setReplicaSelection(InstanceReplicaSelection $replicaSelection)
+        {
+        }
+        /**
+         * @return InstanceReplicaSelection
+         */
+        public function getReplicaSelection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Spanner\ReplicaComputeCapacity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeCount()
-    {
-    }
-    /**
-     * The number of processing units allocated to each replica. This may be zero
-     * in API responses for instances that are not yet in state `READY`.
-     *
-     * @param int $processingUnits
-     */
-    public function setProcessingUnits($processingUnits)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProcessingUnits()
-    {
-    }
-    /**
-     * Required. Identifies replicas by specified properties. All replicas in the
-     * selection have the same amount of compute capacity.
-     *
-     * @param InstanceReplicaSelection $replicaSelection
-     */
-    public function setReplicaSelection(InstanceReplicaSelection $replicaSelection)
-    {
-    }
-    /**
-     * @return InstanceReplicaSelection
-     */
-    public function getReplicaSelection()
+    class Google_Service_Spanner_ReplicaComputeCapacity extends \Google\Service\Spanner\ReplicaComputeCapacity
     {
     }
 }

@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Grid extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $borderStyleType = BorderStyle::class;
-    protected $borderStyleDataType = '';
-    protected $itemsType = GridItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $numColumns;
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param BorderStyle
-     */
-    public function setBorderStyle(BorderStyle $borderStyle)
+namespace Google\Service\CloudSearch {
+    class Grid extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $borderStyleType = BorderStyle::class;
+        protected $borderStyleDataType = '';
+        protected $itemsType = GridItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $numColumns;
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param BorderStyle
+         */
+        public function setBorderStyle(BorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return BorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * @param GridItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GridItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumColumns($numColumns)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumColumns()
+        {
+        }
+        /**
+         * @param OnClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BorderStyle
+     * Runtime class alias of \Google\Service\CloudSearch\Grid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * @param GridItem[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return GridItem[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumColumns($numColumns)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumColumns()
-    {
-    }
-    /**
-     * @param OnClick
-     */
-    public function setOnClick(OnClick $onClick)
-    {
-    }
-    /**
-     * @return OnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_Grid extends \Google\Service\CloudSearch\Grid
     {
     }
 }

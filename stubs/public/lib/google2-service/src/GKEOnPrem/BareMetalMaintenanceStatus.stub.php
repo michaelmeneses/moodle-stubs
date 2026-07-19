@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalMaintenanceStatus extends \Google\Model
-{
-    protected $machineDrainStatusType = BareMetalMachineDrainStatus::class;
-    protected $machineDrainStatusDataType = '';
-    /**
-     * The maintenance status of node machines.
-     *
-     * @param BareMetalMachineDrainStatus $machineDrainStatus
-     */
-    public function setMachineDrainStatus(BareMetalMachineDrainStatus $machineDrainStatus)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalMaintenanceStatus extends \Google\Model
     {
+        protected $machineDrainStatusType = BareMetalMachineDrainStatus::class;
+        protected $machineDrainStatusDataType = '';
+        /**
+         * The maintenance status of node machines.
+         *
+         * @param BareMetalMachineDrainStatus $machineDrainStatus
+         */
+        public function setMachineDrainStatus(BareMetalMachineDrainStatus $machineDrainStatus)
+        {
+        }
+        /**
+         * @return BareMetalMachineDrainStatus
+         */
+        public function getMachineDrainStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalMachineDrainStatus
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalMaintenanceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineDrainStatus()
+    class Google_Service_GKEOnPrem_BareMetalMaintenanceStatus extends \Google\Service\GKEOnPrem\BareMetalMaintenanceStatus
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AuthorizedSellerStatusTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when authorized seller status is not specified in this
-     * version. This enum is a placeholder for the default value, or "Authorized
-     * Direct Sellers and Resellers" in the UI.
-     */
-    public const AUTHORIZED_SELLER_STATUS_AUTHORIZED_SELLER_STATUS_UNSPECIFIED = 'AUTHORIZED_SELLER_STATUS_UNSPECIFIED';
-    /**
-     * Only authorized sellers that directly own the inventory being monetized, as
-     * indicated by a DIRECT declaration in the ads.txt file. This value is
-     * equivalent to "Authorized Direct Sellers" in the UI.
-     */
-    public const AUTHORIZED_SELLER_STATUS_AUTHORIZED_SELLER_STATUS_AUTHORIZED_DIRECT_SELLERS_ONLY = 'AUTHORIZED_SELLER_STATUS_AUTHORIZED_DIRECT_SELLERS_ONLY';
-    /**
-     * All authorized sellers, including publishers that have not posted an
-     * ads.txt file. Display & Video 360 automatically disallows unauthorized
-     * sellers. This value is equivalent to "Authorized and Non-Participating
-     * Publishers" in the UI.
-     */
-    public const AUTHORIZED_SELLER_STATUS_AUTHORIZED_SELLER_STATUS_AUTHORIZED_AND_NON_PARTICIPATING_PUBLISHERS = 'AUTHORIZED_SELLER_STATUS_AUTHORIZED_AND_NON_PARTICIPATING_PUBLISHERS';
-    /**
-     * Output only. The authorized seller status.
-     *
-     * @var string
-     */
-    public $authorizedSellerStatus;
-    /**
-     * Output only. The authorized seller status.
-     *
-     * Accepted values: AUTHORIZED_SELLER_STATUS_UNSPECIFIED,
-     * AUTHORIZED_SELLER_STATUS_AUTHORIZED_DIRECT_SELLERS_ONLY,
-     * AUTHORIZED_SELLER_STATUS_AUTHORIZED_AND_NON_PARTICIPATING_PUBLISHERS
-     *
-     * @param self::AUTHORIZED_SELLER_STATUS_* $authorizedSellerStatus
-     */
-    public function setAuthorizedSellerStatus($authorizedSellerStatus)
+namespace Google\Service\DisplayVideo {
+    class AuthorizedSellerStatusTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when authorized seller status is not specified in this
+         * version. This enum is a placeholder for the default value, or "Authorized
+         * Direct Sellers and Resellers" in the UI.
+         */
+        public const AUTHORIZED_SELLER_STATUS_AUTHORIZED_SELLER_STATUS_UNSPECIFIED = 'AUTHORIZED_SELLER_STATUS_UNSPECIFIED';
+        /**
+         * Only authorized sellers that directly own the inventory being monetized, as
+         * indicated by a DIRECT declaration in the ads.txt file. This value is
+         * equivalent to "Authorized Direct Sellers" in the UI.
+         */
+        public const AUTHORIZED_SELLER_STATUS_AUTHORIZED_SELLER_STATUS_AUTHORIZED_DIRECT_SELLERS_ONLY = 'AUTHORIZED_SELLER_STATUS_AUTHORIZED_DIRECT_SELLERS_ONLY';
+        /**
+         * All authorized sellers, including publishers that have not posted an
+         * ads.txt file. Display & Video 360 automatically disallows unauthorized
+         * sellers. This value is equivalent to "Authorized and Non-Participating
+         * Publishers" in the UI.
+         */
+        public const AUTHORIZED_SELLER_STATUS_AUTHORIZED_SELLER_STATUS_AUTHORIZED_AND_NON_PARTICIPATING_PUBLISHERS = 'AUTHORIZED_SELLER_STATUS_AUTHORIZED_AND_NON_PARTICIPATING_PUBLISHERS';
+        /**
+         * Output only. The authorized seller status.
+         *
+         * @var string
+         */
+        public $authorizedSellerStatus;
+        /**
+         * Output only. The authorized seller status.
+         *
+         * Accepted values: AUTHORIZED_SELLER_STATUS_UNSPECIFIED,
+         * AUTHORIZED_SELLER_STATUS_AUTHORIZED_DIRECT_SELLERS_ONLY,
+         * AUTHORIZED_SELLER_STATUS_AUTHORIZED_AND_NON_PARTICIPATING_PUBLISHERS
+         *
+         * @param self::AUTHORIZED_SELLER_STATUS_* $authorizedSellerStatus
+         */
+        public function setAuthorizedSellerStatus($authorizedSellerStatus)
+        {
+        }
+        /**
+         * @return self::AUTHORIZED_SELLER_STATUS_*
+         */
+        public function getAuthorizedSellerStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AUTHORIZED_SELLER_STATUS_*
+     * Runtime class alias of \Google\Service\DisplayVideo\AuthorizedSellerStatusTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizedSellerStatus()
+    class Google_Service_DisplayVideo_AuthorizedSellerStatusTargetingOptionDetails extends \Google\Service\DisplayVideo\AuthorizedSellerStatusTargetingOptionDetails
     {
     }
 }

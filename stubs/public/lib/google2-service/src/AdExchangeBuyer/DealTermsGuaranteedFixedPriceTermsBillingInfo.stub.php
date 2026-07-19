@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealTermsGuaranteedFixedPriceTermsBillingInfo extends \Google\Model
-{
-    public $currencyConversionTimeMs;
-    public $dfpLineItemId;
-    public $originalContractedQuantity;
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    public function setCurrencyConversionTimeMs($currencyConversionTimeMs)
+namespace Google\Service\AdExchangeBuyer {
+    class DealTermsGuaranteedFixedPriceTermsBillingInfo extends \Google\Model
     {
+        public $currencyConversionTimeMs;
+        public $dfpLineItemId;
+        public $originalContractedQuantity;
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        public function setCurrencyConversionTimeMs($currencyConversionTimeMs)
+        {
+        }
+        public function getCurrencyConversionTimeMs()
+        {
+        }
+        public function setDfpLineItemId($dfpLineItemId)
+        {
+        }
+        public function getDfpLineItemId()
+        {
+        }
+        public function setOriginalContractedQuantity($originalContractedQuantity)
+        {
+        }
+        public function getOriginalContractedQuantity()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
     }
-    public function getCurrencyConversionTimeMs()
-    {
-    }
-    public function setDfpLineItemId($dfpLineItemId)
-    {
-    }
-    public function getDfpLineItemId()
-    {
-    }
-    public function setOriginalContractedQuantity($originalContractedQuantity)
-    {
-    }
-    public function getOriginalContractedQuantity()
-    {
-    }
+}
+namespace {
     /**
-     * @param Price
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealTermsGuaranteedFixedPriceTermsBillingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
+    class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingInfo extends \Google\Service\AdExchangeBuyer\DealTermsGuaranteedFixedPriceTermsBillingInfo
     {
     }
 }

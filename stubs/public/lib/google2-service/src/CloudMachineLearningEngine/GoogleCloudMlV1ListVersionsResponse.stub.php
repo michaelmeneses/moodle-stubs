@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ListVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * Optional. Pass this token as the `page_token` field of the request for a
-     * subsequent call.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $versionsType = GoogleCloudMlV1Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * Optional. Pass this token as the `page_token` field of the request for a
-     * subsequent call.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ListVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * Optional. Pass this token as the `page_token` field of the request for a
+         * subsequent call.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $versionsType = GoogleCloudMlV1Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * Optional. Pass this token as the `page_token` field of the request for a
+         * subsequent call.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of versions.
+         *
+         * @param GoogleCloudMlV1Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of versions.
-     *
-     * @param GoogleCloudMlV1Version[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1Version[]
-     */
-    public function getVersions()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListVersionsResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListVersionsResponse
     {
     }
 }

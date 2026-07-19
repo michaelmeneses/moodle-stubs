@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworksUpdatePeeringRequest extends \Google\Model
-{
-    protected $networkPeeringType = NetworkPeering::class;
-    protected $networkPeeringDataType = '';
-    /**
-     * @param NetworkPeering $networkPeering
-     */
-    public function setNetworkPeering(NetworkPeering $networkPeering)
+namespace Google\Service\Compute {
+    class NetworksUpdatePeeringRequest extends \Google\Model
     {
+        protected $networkPeeringType = NetworkPeering::class;
+        protected $networkPeeringDataType = '';
+        /**
+         * @param NetworkPeering $networkPeering
+         */
+        public function setNetworkPeering(NetworkPeering $networkPeering)
+        {
+        }
+        /**
+         * @return NetworkPeering
+         */
+        public function getNetworkPeering()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkPeering
+     * Runtime class alias of \Google\Service\Compute\NetworksUpdatePeeringRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkPeering()
+    class Google_Service_Compute_NetworksUpdatePeeringRequest extends \Google\Service\Compute\NetworksUpdatePeeringRequest
     {
     }
 }

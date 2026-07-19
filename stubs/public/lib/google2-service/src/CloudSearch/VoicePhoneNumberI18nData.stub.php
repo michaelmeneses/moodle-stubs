@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class VoicePhoneNumberI18nData extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $countryCode;
-    /**
-     * @var string
-     */
-    public $internationalNumber;
-    /**
-     * @var bool
-     */
-    public $isValid;
-    /**
-     * @var string
-     */
-    public $nationalNumber;
-    /**
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * @var string
-     */
-    public $validationResult;
-    /**
-     * @param int
-     */
-    public function setCountryCode($countryCode)
+namespace Google\Service\CloudSearch {
+    class VoicePhoneNumberI18nData extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $countryCode;
+        /**
+         * @var string
+         */
+        public $internationalNumber;
+        /**
+         * @var bool
+         */
+        public $isValid;
+        /**
+         * @var string
+         */
+        public $nationalNumber;
+        /**
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * @var string
+         */
+        public $validationResult;
+        /**
+         * @param int
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInternationalNumber($internationalNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternationalNumber()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsValid($isValid)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsValid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNationalNumber($nationalNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNationalNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidationResult($validationResult)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\VoicePhoneNumberI18nData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInternationalNumber($internationalNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternationalNumber()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsValid($isValid)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsValid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNationalNumber($nationalNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNationalNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidationResult($validationResult)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationResult()
+    class Google_Service_CloudSearch_VoicePhoneNumberI18nData extends \Google\Service\CloudSearch\VoicePhoneNumberI18nData
     {
     }
 }

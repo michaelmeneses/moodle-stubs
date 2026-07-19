@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LogEntryOperation extends \Google\Model
-{
-    public $first;
-    public $id;
-    public $last;
-    public $producer;
-    public function setFirst($first)
+namespace Google\Service\Networkconnectivity {
+    class LogEntryOperation extends \Google\Model
     {
+        public $first;
+        public $id;
+        public $last;
+        public $producer;
+        public function setFirst($first)
+        {
+        }
+        public function getFirst()
+        {
+        }
+        public function setId($id)
+        {
+        }
+        public function getId()
+        {
+        }
+        public function setLast($last)
+        {
+        }
+        public function getLast()
+        {
+        }
+        public function setProducer($producer)
+        {
+        }
+        public function getProducer()
+        {
+        }
     }
-    public function getFirst()
-    {
-    }
-    public function setId($id)
-    {
-    }
-    public function getId()
-    {
-    }
-    public function setLast($last)
-    {
-    }
-    public function getLast()
-    {
-    }
-    public function setProducer($producer)
-    {
-    }
-    public function getProducer()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\LogEntryOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_LogEntryOperation extends \Google\Service\Networkconnectivity\LogEntryOperation
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntryTypeAspectInfo extends \Google\Model
-{
-    /**
-     * Required aspect type for the entry type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required aspect type for the entry type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntryTypeAspectInfo extends \Google\Model
     {
+        /**
+         * Required aspect type for the entry type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required aspect type for the entry type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryTypeAspectInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntryTypeAspectInfo extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryTypeAspectInfo
     {
     }
 }

@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class PreviewOperationMetadata extends \Google\Model
-{
-    /**
-     * Unspecified preview step.
-     */
-    public const STEP_PREVIEW_STEP_UNSPECIFIED = 'PREVIEW_STEP_UNSPECIFIED';
-    /**
-     * Infra Manager is creating a Google Cloud Storage bucket to store artifacts
-     * and metadata about the preview.
-     */
-    public const STEP_PREPARING_STORAGE_BUCKET = 'PREPARING_STORAGE_BUCKET';
-    /**
-     * Downloading the blueprint onto the Google Cloud Storage bucket.
-     */
-    public const STEP_DOWNLOADING_BLUEPRINT = 'DOWNLOADING_BLUEPRINT';
-    /**
-     * Initializing Terraform using `terraform init`.
-     */
-    public const STEP_RUNNING_TF_INIT = 'RUNNING_TF_INIT';
-    /**
-     * Running `terraform plan`.
-     */
-    public const STEP_RUNNING_TF_PLAN = 'RUNNING_TF_PLAN';
-    /**
-     * Fetching a deployment.
-     */
-    public const STEP_FETCHING_DEPLOYMENT = 'FETCHING_DEPLOYMENT';
-    /**
-     * Locking a deployment.
-     */
-    public const STEP_LOCKING_DEPLOYMENT = 'LOCKING_DEPLOYMENT';
-    /**
-     * Unlocking a deployment.
-     */
-    public const STEP_UNLOCKING_DEPLOYMENT = 'UNLOCKING_DEPLOYMENT';
-    /**
-     * Operation was successful.
-     */
-    public const STEP_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Operation failed.
-     */
-    public const STEP_FAILED = 'FAILED';
-    /**
-     * Validating the provided repository.
-     */
-    public const STEP_VALIDATING_REPOSITORY = 'VALIDATING_REPOSITORY';
-    /**
-     * Output only. Cloud Build instance UUID associated with this preview.
-     *
-     * @var string
-     */
-    public $build;
-    /**
-     * Output only. Location of preview logs in `gs://{bucket}/{object}` format.
-     *
-     * @var string
-     */
-    public $logs;
-    protected $previewArtifactsType = PreviewArtifacts::class;
-    protected $previewArtifactsDataType = '';
-    /**
-     * The current step the preview operation is running.
-     *
-     * @var string
-     */
-    public $step;
-    /**
-     * Output only. Cloud Build instance UUID associated with this preview.
-     *
-     * @param string $build
-     */
-    public function setBuild($build)
+namespace Google\Service\Config {
+    class PreviewOperationMetadata extends \Google\Model
     {
+        /**
+         * Unspecified preview step.
+         */
+        public const STEP_PREVIEW_STEP_UNSPECIFIED = 'PREVIEW_STEP_UNSPECIFIED';
+        /**
+         * Infra Manager is creating a Google Cloud Storage bucket to store artifacts
+         * and metadata about the preview.
+         */
+        public const STEP_PREPARING_STORAGE_BUCKET = 'PREPARING_STORAGE_BUCKET';
+        /**
+         * Downloading the blueprint onto the Google Cloud Storage bucket.
+         */
+        public const STEP_DOWNLOADING_BLUEPRINT = 'DOWNLOADING_BLUEPRINT';
+        /**
+         * Initializing Terraform using `terraform init`.
+         */
+        public const STEP_RUNNING_TF_INIT = 'RUNNING_TF_INIT';
+        /**
+         * Running `terraform plan`.
+         */
+        public const STEP_RUNNING_TF_PLAN = 'RUNNING_TF_PLAN';
+        /**
+         * Fetching a deployment.
+         */
+        public const STEP_FETCHING_DEPLOYMENT = 'FETCHING_DEPLOYMENT';
+        /**
+         * Locking a deployment.
+         */
+        public const STEP_LOCKING_DEPLOYMENT = 'LOCKING_DEPLOYMENT';
+        /**
+         * Unlocking a deployment.
+         */
+        public const STEP_UNLOCKING_DEPLOYMENT = 'UNLOCKING_DEPLOYMENT';
+        /**
+         * Operation was successful.
+         */
+        public const STEP_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Operation failed.
+         */
+        public const STEP_FAILED = 'FAILED';
+        /**
+         * Validating the provided repository.
+         */
+        public const STEP_VALIDATING_REPOSITORY = 'VALIDATING_REPOSITORY';
+        /**
+         * Output only. Cloud Build instance UUID associated with this preview.
+         *
+         * @var string
+         */
+        public $build;
+        /**
+         * Output only. Location of preview logs in `gs://{bucket}/{object}` format.
+         *
+         * @var string
+         */
+        public $logs;
+        protected $previewArtifactsType = PreviewArtifacts::class;
+        protected $previewArtifactsDataType = '';
+        /**
+         * The current step the preview operation is running.
+         *
+         * @var string
+         */
+        public $step;
+        /**
+         * Output only. Cloud Build instance UUID associated with this preview.
+         *
+         * @param string $build
+         */
+        public function setBuild($build)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * Output only. Location of preview logs in `gs://{bucket}/{object}` format.
+         *
+         * @param string $logs
+         */
+        public function setLogs($logs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogs()
+        {
+        }
+        /**
+         * Artifacts from preview.
+         *
+         * @param PreviewArtifacts $previewArtifacts
+         */
+        public function setPreviewArtifacts(PreviewArtifacts $previewArtifacts)
+        {
+        }
+        /**
+         * @return PreviewArtifacts
+         */
+        public function getPreviewArtifacts()
+        {
+        }
+        /**
+         * The current step the preview operation is running.
+         *
+         * Accepted values: PREVIEW_STEP_UNSPECIFIED, PREPARING_STORAGE_BUCKET,
+         * DOWNLOADING_BLUEPRINT, RUNNING_TF_INIT, RUNNING_TF_PLAN,
+         * FETCHING_DEPLOYMENT, LOCKING_DEPLOYMENT, UNLOCKING_DEPLOYMENT, SUCCEEDED,
+         * FAILED, VALIDATING_REPOSITORY
+         *
+         * @param self::STEP_* $step
+         */
+        public function setStep($step)
+        {
+        }
+        /**
+         * @return self::STEP_*
+         */
+        public function getStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\PreviewOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuild()
-    {
-    }
-    /**
-     * Output only. Location of preview logs in `gs://{bucket}/{object}` format.
-     *
-     * @param string $logs
-     */
-    public function setLogs($logs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogs()
-    {
-    }
-    /**
-     * Artifacts from preview.
-     *
-     * @param PreviewArtifacts $previewArtifacts
-     */
-    public function setPreviewArtifacts(PreviewArtifacts $previewArtifacts)
-    {
-    }
-    /**
-     * @return PreviewArtifacts
-     */
-    public function getPreviewArtifacts()
-    {
-    }
-    /**
-     * The current step the preview operation is running.
-     *
-     * Accepted values: PREVIEW_STEP_UNSPECIFIED, PREPARING_STORAGE_BUCKET,
-     * DOWNLOADING_BLUEPRINT, RUNNING_TF_INIT, RUNNING_TF_PLAN,
-     * FETCHING_DEPLOYMENT, LOCKING_DEPLOYMENT, UNLOCKING_DEPLOYMENT, SUCCEEDED,
-     * FAILED, VALIDATING_REPOSITORY
-     *
-     * @param self::STEP_* $step
-     */
-    public function setStep($step)
-    {
-    }
-    /**
-     * @return self::STEP_*
-     */
-    public function getStep()
+    class Google_Service_Config_PreviewOperationMetadata extends \Google\Service\Config\PreviewOperationMetadata
     {
     }
 }

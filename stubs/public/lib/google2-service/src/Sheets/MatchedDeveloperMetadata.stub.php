@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class MatchedDeveloperMetadata extends \Google\Collection
-{
-    protected $collection_key = 'dataFilters';
-    protected $dataFiltersType = DataFilter::class;
-    protected $dataFiltersDataType = 'array';
-    protected $developerMetadataType = DeveloperMetadata::class;
-    protected $developerMetadataDataType = '';
-    /**
-     * All filters matching the returned developer metadata.
-     *
-     * @param DataFilter[] $dataFilters
-     */
-    public function setDataFilters($dataFilters)
+namespace Google\Service\Sheets {
+    class MatchedDeveloperMetadata extends \Google\Collection
     {
+        protected $collection_key = 'dataFilters';
+        protected $dataFiltersType = DataFilter::class;
+        protected $dataFiltersDataType = 'array';
+        protected $developerMetadataType = DeveloperMetadata::class;
+        protected $developerMetadataDataType = '';
+        /**
+         * All filters matching the returned developer metadata.
+         *
+         * @param DataFilter[] $dataFilters
+         */
+        public function setDataFilters($dataFilters)
+        {
+        }
+        /**
+         * @return DataFilter[]
+         */
+        public function getDataFilters()
+        {
+        }
+        /**
+         * The developer metadata matching the specified filters.
+         *
+         * @param DeveloperMetadata $developerMetadata
+         */
+        public function setDeveloperMetadata(DeveloperMetadata $developerMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata
+         */
+        public function getDeveloperMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter[]
+     * Runtime class alias of \Google\Service\Sheets\MatchedDeveloperMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilters()
-    {
-    }
-    /**
-     * The developer metadata matching the specified filters.
-     *
-     * @param DeveloperMetadata $developerMetadata
-     */
-    public function setDeveloperMetadata(DeveloperMetadata $developerMetadata)
-    {
-    }
-    /**
-     * @return DeveloperMetadata
-     */
-    public function getDeveloperMetadata()
+    class Google_Service_Sheets_MatchedDeveloperMetadata extends \Google\Service\Sheets\MatchedDeveloperMetadata
     {
     }
 }

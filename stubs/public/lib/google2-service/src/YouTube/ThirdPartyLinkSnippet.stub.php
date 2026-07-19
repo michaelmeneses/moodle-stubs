@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ThirdPartyLinkSnippet extends \Google\Model
-{
-    public const TYPE_linkUnspecified = 'linkUnspecified';
-    /**
-     * A link that is connecting (or about to connect) a channel with a store on a
-     * merchandising platform in order to enable retail commerce capabilities for
-     * that channel on YouTube.
-     */
-    public const TYPE_channelToStoreLink = 'channelToStoreLink';
-    protected $channelToStoreLinkType = ChannelToStoreLinkDetails::class;
-    protected $channelToStoreLinkDataType = '';
-    /**
-     * Type of the link named after the entities that are being linked.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Information specific to a link between a channel and a store on a
-     * merchandising platform.
-     *
-     * @param ChannelToStoreLinkDetails $channelToStoreLink
-     */
-    public function setChannelToStoreLink(ChannelToStoreLinkDetails $channelToStoreLink)
+namespace Google\Service\YouTube {
+    class ThirdPartyLinkSnippet extends \Google\Model
     {
+        public const TYPE_linkUnspecified = 'linkUnspecified';
+        /**
+         * A link that is connecting (or about to connect) a channel with a store on a
+         * merchandising platform in order to enable retail commerce capabilities for
+         * that channel on YouTube.
+         */
+        public const TYPE_channelToStoreLink = 'channelToStoreLink';
+        protected $channelToStoreLinkType = ChannelToStoreLinkDetails::class;
+        protected $channelToStoreLinkDataType = '';
+        /**
+         * Type of the link named after the entities that are being linked.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Information specific to a link between a channel and a store on a
+         * merchandising platform.
+         *
+         * @param ChannelToStoreLinkDetails $channelToStoreLink
+         */
+        public function setChannelToStoreLink(ChannelToStoreLinkDetails $channelToStoreLink)
+        {
+        }
+        /**
+         * @return ChannelToStoreLinkDetails
+         */
+        public function getChannelToStoreLink()
+        {
+        }
+        /**
+         * Type of the link named after the entities that are being linked.
+         *
+         * Accepted values: linkUnspecified, channelToStoreLink
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelToStoreLinkDetails
+     * Runtime class alias of \Google\Service\YouTube\ThirdPartyLinkSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelToStoreLink()
-    {
-    }
-    /**
-     * Type of the link named after the entities that are being linked.
-     *
-     * Accepted values: linkUnspecified, channelToStoreLink
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_YouTube_ThirdPartyLinkSnippet extends \Google\Service\YouTube\ThirdPartyLinkSnippet
     {
     }
 }

@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore\Resource;
-
-/**
- * The "indexes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datastoreService = new Google\Service\Datastore(...);
- *   $indexes = $datastoreService->projects_indexes;
- *  </code>
- */
-class ProjectsIndexes extends \Google\Service\Resource
-{
+namespace Google\Service\Datastore\Resource {
+    use Google\Service\Datastore\GoogleDatastoreAdminV1Index;
+    use Google\Service\Datastore\GoogleDatastoreAdminV1ListIndexesResponse;
+    use Google\Service\Datastore\GoogleLongrunningOperation;
     /**
-     * Creates the specified index. A newly created index's initial state is
-     * `CREATING`. On completion of the returned google.longrunning.Operation, the
-     * state will be `READY`. If the index already exists, the call will return an
-     * `ALREADY_EXISTS` status. During index creation, the process could result in
-     * an error, in which case the index will move to the `ERROR` state. The process
-     * can be recovered by fixing the data that caused the error, removing the index
-     * with delete, then re-creating the index with create. Indexes with a single
-     * property cannot be created. (indexes.create)
-     *
-     * @param string $projectId Project ID against which to make the request.
-     * @param GoogleDatastoreAdminV1Index $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "indexes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datastoreService = new Google\Service\Datastore(...);
+     *   $indexes = $datastoreService->projects_indexes;
+     *  </code>
      */
-    public function create($projectId, GoogleDatastoreAdminV1Index $postBody, $optParams = [])
+    class ProjectsIndexes extends \Google\Service\Resource
     {
+        /**
+         * Creates the specified index. A newly created index's initial state is
+         * `CREATING`. On completion of the returned google.longrunning.Operation, the
+         * state will be `READY`. If the index already exists, the call will return an
+         * `ALREADY_EXISTS` status. During index creation, the process could result in
+         * an error, in which case the index will move to the `ERROR` state. The process
+         * can be recovered by fixing the data that caused the error, removing the index
+         * with delete, then re-creating the index with create. Indexes with a single
+         * property cannot be created. (indexes.create)
+         *
+         * @param string $projectId Project ID against which to make the request.
+         * @param GoogleDatastoreAdminV1Index $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($projectId, GoogleDatastoreAdminV1Index $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an existing index. An index can only be deleted if it is in a `READY`
+         * or `ERROR` state. On successful execution of the request, the index will be
+         * in a `DELETING` state. And on completion of the returned
+         * google.longrunning.Operation, the index will be removed. During index
+         * deletion, the process could result in an error, in which case the index will
+         * move to the `ERROR` state. The process can be recovered by fixing the data
+         * that caused the error, followed by calling delete again. (indexes.delete)
+         *
+         * @param string $projectId Project ID against which to make the request.
+         * @param string $indexId The resource ID of the index to delete.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($projectId, $indexId, $optParams = [])
+        {
+        }
+        /**
+         * Gets an index. (indexes.get)
+         *
+         * @param string $projectId Project ID against which to make the request.
+         * @param string $indexId The resource ID of the index to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleDatastoreAdminV1Index
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $indexId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the indexes that match the specified filters. Datastore uses an
+         * eventually consistent query to fetch the list of indexes and may occasionally
+         * return stale results. (indexes.listProjectsIndexes)
+         *
+         * @param string $projectId Project ID against which to make the request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter
+         * @opt_param int pageSize The maximum number of items to return. If zero, then
+         * all results will be returned.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return GoogleDatastoreAdminV1ListIndexesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsIndexes($projectId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an existing index. An index can only be deleted if it is in a `READY`
-     * or `ERROR` state. On successful execution of the request, the index will be
-     * in a `DELETING` state. And on completion of the returned
-     * google.longrunning.Operation, the index will be removed. During index
-     * deletion, the process could result in an error, in which case the index will
-     * move to the `ERROR` state. The process can be recovered by fixing the data
-     * that caused the error, followed by calling delete again. (indexes.delete)
-     *
-     * @param string $projectId Project ID against which to make the request.
-     * @param string $indexId The resource ID of the index to delete.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Datastore\Resource\ProjectsIndexes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($projectId, $indexId, $optParams = [])
-    {
-    }
-    /**
-     * Gets an index. (indexes.get)
-     *
-     * @param string $projectId Project ID against which to make the request.
-     * @param string $indexId The resource ID of the index to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleDatastoreAdminV1Index
-     * @throws \Google\Service\Exception
-     */
-    public function get($projectId, $indexId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the indexes that match the specified filters. Datastore uses an
-     * eventually consistent query to fetch the list of indexes and may occasionally
-     * return stale results. (indexes.listProjectsIndexes)
-     *
-     * @param string $projectId Project ID against which to make the request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter
-     * @opt_param int pageSize The maximum number of items to return. If zero, then
-     * all results will be returned.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return GoogleDatastoreAdminV1ListIndexesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsIndexes($projectId, $optParams = [])
+    class Google_Service_Datastore_Resource_ProjectsIndexes extends \Google\Service\Datastore\Resource\ProjectsIndexes
     {
     }
 }

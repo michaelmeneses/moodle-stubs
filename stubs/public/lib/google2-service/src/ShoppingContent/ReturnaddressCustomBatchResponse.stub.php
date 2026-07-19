@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnaddressCustomBatchResponse extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = ReturnaddressCustomBatchResponseEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param ReturnaddressCustomBatchResponseEntry[]
-     */
-    public function setEntries($entries)
+namespace Google\Service\ShoppingContent {
+    class ReturnaddressCustomBatchResponse extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = ReturnaddressCustomBatchResponseEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param ReturnaddressCustomBatchResponseEntry[]
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return ReturnaddressCustomBatchResponseEntry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReturnaddressCustomBatchResponseEntry[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnaddressCustomBatchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_ReturnaddressCustomBatchResponse extends \Google\Service\ShoppingContent\ReturnaddressCustomBatchResponse
     {
     }
 }

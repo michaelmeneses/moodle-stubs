@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class NFSMount extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $target;
-    /**
-     * @param string
-     */
-    public function setTarget($target)
+namespace Google\Service\Genomics {
+    class NFSMount extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $target;
+        /**
+         * @param string
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\NFSMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTarget()
+    class Google_Service_Genomics_NFSMount extends \Google\Service\Genomics\NFSMount
     {
     }
 }

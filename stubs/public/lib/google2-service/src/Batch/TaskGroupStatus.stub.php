@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class TaskGroupStatus extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * Count of task in each state in the TaskGroup. The map key is task state
-     * name.
-     *
-     * @var string[]
-     */
-    public $counts;
-    protected $instancesType = InstanceStatus::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Count of task in each state in the TaskGroup. The map key is task state
-     * name.
-     *
-     * @param string[] $counts
-     */
-    public function setCounts($counts)
+namespace Google\Service\Batch {
+    class TaskGroupStatus extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * Count of task in each state in the TaskGroup. The map key is task state
+         * name.
+         *
+         * @var string[]
+         */
+        public $counts;
+        protected $instancesType = InstanceStatus::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Count of task in each state in the TaskGroup. The map key is task state
+         * name.
+         *
+         * @param string[] $counts
+         */
+        public function setCounts($counts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCounts()
+        {
+        }
+        /**
+         * Status of instances allocated for the TaskGroup.
+         *
+         * @param InstanceStatus[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return InstanceStatus[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Batch\TaskGroupStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCounts()
-    {
-    }
-    /**
-     * Status of instances allocated for the TaskGroup.
-     *
-     * @param InstanceStatus[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return InstanceStatus[]
-     */
-    public function getInstances()
+    class Google_Service_Batch_TaskGroupStatus extends \Google\Service\Batch\TaskGroupStatus
     {
     }
 }

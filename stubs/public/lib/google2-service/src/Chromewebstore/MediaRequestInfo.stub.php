@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class MediaRequestInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $currentBytes;
-    /**
-     * @var string
-     */
-    public $customData;
-    /**
-     * @var string
-     */
-    public $diffObjectVersion;
-    /**
-     * @var int
-     */
-    public $finalStatus;
-    /**
-     * @var string
-     */
-    public $notificationType;
-    /**
-     * @var string
-     */
-    public $physicalHeaders;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @var string
-     */
-    public $requestReceivedParamsServingInfo;
-    /**
-     * @var string
-     */
-    public $totalBytes;
-    /**
-     * @var bool
-     */
-    public $totalBytesIsEstimated;
-    /**
-     * @param string
-     */
-    public function setCurrentBytes($currentBytes)
+namespace Google\Service\Chromewebstore {
+    class MediaRequestInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $currentBytes;
+        /**
+         * @var string
+         */
+        public $customData;
+        /**
+         * @var string
+         */
+        public $diffObjectVersion;
+        /**
+         * @var int
+         */
+        public $finalStatus;
+        /**
+         * @var string
+         */
+        public $notificationType;
+        /**
+         * @var string
+         */
+        public $physicalHeaders;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @var string
+         */
+        public $requestReceivedParamsServingInfo;
+        /**
+         * @var string
+         */
+        public $totalBytes;
+        /**
+         * @var bool
+         */
+        public $totalBytesIsEstimated;
+        /**
+         * @param string
+         */
+        public function setCurrentBytes($currentBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomData($customData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiffObjectVersion($diffObjectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiffObjectVersion()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setFinalStatus($finalStatus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFinalStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotificationType($notificationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotificationType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhysicalHeaders($physicalHeaders)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhysicalHeaders()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestReceivedParamsServingInfo($requestReceivedParamsServingInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestReceivedParamsServingInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTotalBytes($totalBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBytes()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setTotalBytesIsEstimated($totalBytesIsEstimated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTotalBytesIsEstimated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\MediaRequestInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomData($customData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiffObjectVersion($diffObjectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiffObjectVersion()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setFinalStatus($finalStatus)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFinalStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotificationType($notificationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotificationType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhysicalHeaders($physicalHeaders)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhysicalHeaders()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestReceivedParamsServingInfo($requestReceivedParamsServingInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestReceivedParamsServingInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTotalBytes($totalBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBytes()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setTotalBytesIsEstimated($totalBytesIsEstimated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTotalBytesIsEstimated()
+    class Google_Service_Chromewebstore_MediaRequestInfo extends \Google\Service\Chromewebstore\MediaRequestInfo
     {
     }
 }

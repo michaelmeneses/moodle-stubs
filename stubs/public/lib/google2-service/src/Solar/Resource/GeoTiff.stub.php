@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar\Resource;
-
-/**
- * The "geoTiff" collection of methods.
- * Typical usage is:
- *  <code>
- *   $solarService = new Google\Service\Solar(...);
- *   $geoTiff = $solarService->geoTiff;
- *  </code>
- */
-class GeoTiff extends \Google\Service\Resource
-{
+namespace Google\Service\Solar\Resource {
+    use Google\Service\Solar\HttpBody;
     /**
-     * Returns an image by its ID. (geoTiff.get)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string id Required. The ID of the asset being requested.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "geoTiff" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $solarService = new Google\Service\Solar(...);
+     *   $geoTiff = $solarService->geoTiff;
+     *  </code>
      */
-    public function get($optParams = [])
+    class GeoTiff extends \Google\Service\Resource
+    {
+        /**
+         * Returns an image by its ID. (geoTiff.get)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string id Required. The ID of the asset being requested.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Solar\Resource\GeoTiff registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Solar_Resource_GeoTiff extends \Google\Service\Solar\Resource\GeoTiff
     {
     }
 }

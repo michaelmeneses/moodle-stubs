@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SmartReplyAnswer extends \Google\Model
-{
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * Smart reply confidence. The system's confidence score that this reply is a
-     * good match for this conversation, as a value from 0.0 (completely
-     * uncertain) to 1.0 (completely certain).
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The content of the reply.
-     *
-     * @var string
-     */
-    public $reply;
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SmartReplyAnswer extends \Google\Model
     {
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * Smart reply confidence. The system's confidence score that this reply is a
+         * good match for this conversation, as a value from 0.0 (completely
+         * uncertain) to 1.0 (completely certain).
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The content of the reply.
+         *
+         * @var string
+         */
+        public $reply;
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * Smart reply confidence. The system's confidence score that this reply is a
+         * good match for this conversation, as a value from 0.0 (completely
+         * uncertain) to 1.0 (completely certain).
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The content of the reply.
+         *
+         * @param string $reply
+         */
+        public function setReply($reply)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReply()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SmartReplyAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * Smart reply confidence. The system's confidence score that this reply is a
-     * good match for this conversation, as a value from 0.0 (completely
-     * uncertain) to 1.0 (completely certain).
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The content of the reply.
-     *
-     * @param string $reply
-     */
-    public function setReply($reply)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReply()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SmartReplyAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SmartReplyAnswer
     {
     }
 }

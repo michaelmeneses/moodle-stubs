@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class SplitPoints extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    /**
-     * Optional. The expiration timestamp of the split points. A timestamp in the
-     * past means immediate expiration. The maximum value can be 30 days in the
-     * future. Defaults to 10 days in the future if not specified.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The index to split. If specified, the `table` field must refer to the
-     * index's base table.
-     *
-     * @var string
-     */
-    public $index;
-    protected $keysType = Key::class;
-    protected $keysDataType = 'array';
-    /**
-     * The table to split.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Optional. The expiration timestamp of the split points. A timestamp in the
-     * past means immediate expiration. The maximum value can be 30 days in the
-     * future. Defaults to 10 days in the future if not specified.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\Spanner {
+    class SplitPoints extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        /**
+         * Optional. The expiration timestamp of the split points. A timestamp in the
+         * past means immediate expiration. The maximum value can be 30 days in the
+         * future. Defaults to 10 days in the future if not specified.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The index to split. If specified, the `table` field must refer to the
+         * index's base table.
+         *
+         * @var string
+         */
+        public $index;
+        protected $keysType = Key::class;
+        protected $keysDataType = 'array';
+        /**
+         * The table to split.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Optional. The expiration timestamp of the split points. A timestamp in the
+         * past means immediate expiration. The maximum value can be 30 days in the
+         * future. Defaults to 10 days in the future if not specified.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The index to split. If specified, the `table` field must refer to the
+         * index's base table.
+         *
+         * @param string $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Required. The list of split keys. In essence, the split boundaries.
+         *
+         * @param Key[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return Key[]
+         */
+        public function getKeys()
+        {
+        }
+        /**
+         * The table to split.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\SplitPoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The index to split. If specified, the `table` field must refer to the
-     * index's base table.
-     *
-     * @param string $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * Required. The list of split keys. In essence, the split boundaries.
-     *
-     * @param Key[] $keys
-     */
-    public function setKeys($keys)
-    {
-    }
-    /**
-     * @return Key[]
-     */
-    public function getKeys()
-    {
-    }
-    /**
-     * The table to split.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Spanner_SplitPoints extends \Google\Service\Spanner\SplitPoints
     {
     }
 }

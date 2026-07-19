@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseSummary extends \Google\Collection
-{
-    protected $collection_key = 'summarySkippedReasons';
-    protected $safetyAttributesType = GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes::class;
-    protected $safetyAttributesDataType = '';
-    /**
-     * @var string[]
-     */
-    public $summarySkippedReasons;
-    /**
-     * @var string
-     */
-    public $summaryText;
-    protected $summaryWithMetadataType = GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata::class;
-    protected $summaryWithMetadataDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes
-     */
-    public function setSafetyAttributes(GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes $safetyAttributes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseSummary extends \Google\Collection
     {
+        protected $collection_key = 'summarySkippedReasons';
+        protected $safetyAttributesType = GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes::class;
+        protected $safetyAttributesDataType = '';
+        /**
+         * @var string[]
+         */
+        public $summarySkippedReasons;
+        /**
+         * @var string
+         */
+        public $summaryText;
+        protected $summaryWithMetadataType = GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata::class;
+        protected $summaryWithMetadataDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes
+         */
+        public function setSafetyAttributes(GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes $safetyAttributes)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes
+         */
+        public function getSafetyAttributes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSummarySkippedReasons($summarySkippedReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSummarySkippedReasons()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSummaryText($summaryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummaryText()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata
+         */
+        public function setSummaryWithMetadata(GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata $summaryWithMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata
+         */
+        public function getSummaryWithMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSafetyAttributes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSummarySkippedReasons($summarySkippedReasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSummarySkippedReasons()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSummaryText($summaryText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummaryText()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata
-     */
-    public function setSummaryWithMetadata(GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata $summaryWithMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummarySummaryWithMetadata
-     */
-    public function getSummaryWithMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseSummary extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummary
     {
     }
 }

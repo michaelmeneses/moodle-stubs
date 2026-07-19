@@ -21,44 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "adclients" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $adclients = $adsensehostService->adclients;
- *  </code>
- */
-class Adclients extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\AdClient;
+    use Google\Service\AdSenseHost\AdClients as AdClientsModel;
     /**
-     * Get information about one of the ad clients in the Host AdSense account.
-     * (adclients.get)
-     *
-     * @param string $adClientId Ad client to get.
-     * @param array $optParams Optional parameters.
-     * @return AdClient
-     * @throws \Google\Service\Exception
+     * The "adclients" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $adclients = $adsensehostService->adclients;
+     *  </code>
      */
-    public function get($adClientId, $optParams = [])
+    class Adclients extends \Google\Service\Resource
     {
+        /**
+         * Get information about one of the ad clients in the Host AdSense account.
+         * (adclients.get)
+         *
+         * @param string $adClientId Ad client to get.
+         * @param array $optParams Optional parameters.
+         * @return AdClient
+         * @throws \Google\Service\Exception
+         */
+        public function get($adClientId, $optParams = [])
+        {
+        }
+        /**
+         * List all host ad clients in this AdSense account. (adclients.listAdclients)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of ad clients to include in
+         * the response, used for paging.
+         * @opt_param string pageToken A continuation token, used to page through ad
+         * clients. To retrieve the next page, set this parameter to the value of
+         * "nextPageToken" from the previous response.
+         * @return AdClientsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listAdclients($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List all host ad clients in this AdSense account. (adclients.listAdclients)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of ad clients to include in
-     * the response, used for paging.
-     * @opt_param string pageToken A continuation token, used to page through ad
-     * clients. To retrieve the next page, set this parameter to the value of
-     * "nextPageToken" from the previous response.
-     * @return AdClientsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\Adclients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAdclients($optParams = [])
+    class Google_Service_AdSenseHost_Resource_Adclients extends \Google\Service\AdSenseHost\Resource\Adclients
     {
     }
 }

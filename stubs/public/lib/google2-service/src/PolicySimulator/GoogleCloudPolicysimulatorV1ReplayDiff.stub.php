@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ReplayDiff extends \Google\Model
-{
-    protected $accessDiffType = GoogleCloudPolicysimulatorV1AccessStateDiff::class;
-    protected $accessDiffDataType = '';
-    /**
-     * A summary and comparison of the principal's access under the current
-     * (baseline) policies and the proposed (simulated) policies for a single
-     * access tuple. The evaluation of the principal's access is reported in the
-     * AccessState field.
-     *
-     * @param GoogleCloudPolicysimulatorV1AccessStateDiff $accessDiff
-     */
-    public function setAccessDiff(GoogleCloudPolicysimulatorV1AccessStateDiff $accessDiff)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ReplayDiff extends \Google\Model
     {
+        protected $accessDiffType = GoogleCloudPolicysimulatorV1AccessStateDiff::class;
+        protected $accessDiffDataType = '';
+        /**
+         * A summary and comparison of the principal's access under the current
+         * (baseline) policies and the proposed (simulated) policies for a single
+         * access tuple. The evaluation of the principal's access is reported in the
+         * AccessState field.
+         *
+         * @param GoogleCloudPolicysimulatorV1AccessStateDiff $accessDiff
+         */
+        public function setAccessDiff(GoogleCloudPolicysimulatorV1AccessStateDiff $accessDiff)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1AccessStateDiff
+         */
+        public function getAccessDiff()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicysimulatorV1AccessStateDiff
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayDiff registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessDiff()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ReplayDiff extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayDiff
     {
     }
 }

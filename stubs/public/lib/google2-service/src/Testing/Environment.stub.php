@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Environment extends \Google\Model
-{
-    protected $androidDeviceType = AndroidDevice::class;
-    protected $androidDeviceDataType = '';
-    protected $iosDeviceType = IosDevice::class;
-    protected $iosDeviceDataType = '';
-    /**
-     * An Android device which must be used with an Android test.
-     *
-     * @param AndroidDevice $androidDevice
-     */
-    public function setAndroidDevice(AndroidDevice $androidDevice)
+namespace Google\Service\Testing {
+    class Environment extends \Google\Model
     {
+        protected $androidDeviceType = AndroidDevice::class;
+        protected $androidDeviceDataType = '';
+        protected $iosDeviceType = IosDevice::class;
+        protected $iosDeviceDataType = '';
+        /**
+         * An Android device which must be used with an Android test.
+         *
+         * @param AndroidDevice $androidDevice
+         */
+        public function setAndroidDevice(AndroidDevice $androidDevice)
+        {
+        }
+        /**
+         * @return AndroidDevice
+         */
+        public function getAndroidDevice()
+        {
+        }
+        /**
+         * An iOS device which must be used with an iOS test.
+         *
+         * @param IosDevice $iosDevice
+         */
+        public function setIosDevice(IosDevice $iosDevice)
+        {
+        }
+        /**
+         * @return IosDevice
+         */
+        public function getIosDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidDevice
+     * Runtime class alias of \Google\Service\Testing\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidDevice()
-    {
-    }
-    /**
-     * An iOS device which must be used with an iOS test.
-     *
-     * @param IosDevice $iosDevice
-     */
-    public function setIosDevice(IosDevice $iosDevice)
-    {
-    }
-    /**
-     * @return IosDevice
-     */
-    public function getIosDevice()
+    class Google_Service_Testing_Environment extends \Google\Service\Testing\Environment
     {
     }
 }

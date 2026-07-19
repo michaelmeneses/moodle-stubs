@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaChangeHistoryChange extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $action;
-    /**
-     * @var string
-     */
-    public $resource;
-    protected $resourceAfterChangeType = GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource::class;
-    protected $resourceAfterChangeDataType = '';
-    protected $resourceBeforeChangeType = GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource::class;
-    protected $resourceBeforeChangeDataType = '';
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaChangeHistoryChange extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $action;
+        /**
+         * @var string
+         */
+        public $resource;
+        protected $resourceAfterChangeType = GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource::class;
+        protected $resourceAfterChangeDataType = '';
+        protected $resourceBeforeChangeType = GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource::class;
+        protected $resourceBeforeChangeDataType = '';
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
+         */
+        public function setResourceAfterChange(GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource $resourceAfterChange)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
+         */
+        public function getResourceAfterChange()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
+         */
+        public function setResourceBeforeChange(GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource $resourceBeforeChange)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
+         */
+        public function getResourceBeforeChange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaChangeHistoryChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
-     */
-    public function setResourceAfterChange(GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource $resourceAfterChange)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
-     */
-    public function getResourceAfterChange()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
-     */
-    public function setResourceBeforeChange(GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource $resourceBeforeChange)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
-     */
-    public function getResourceBeforeChange()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaChangeHistoryChange extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaChangeHistoryChange
     {
     }
 }

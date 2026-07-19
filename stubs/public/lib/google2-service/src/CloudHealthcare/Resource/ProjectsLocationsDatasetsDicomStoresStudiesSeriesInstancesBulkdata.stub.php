@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "bulkdata" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $bulkdata = $healthcareService->projects_locations_datasets_dicomStores_studies_series_instances_bulkdata;
- *  </code>
- */
-class ProjectsLocationsDatasetsDicomStoresStudiesSeriesInstancesBulkdata extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    use Google\Service\CloudHealthcare\HttpBody;
     /**
-     * Returns uncompressed, unencoded bytes representing the referenced bulkdata
-     * tag from an instance. See [Retrieve Transaction](https://dicom.nema.org/medic
-     * al/dicom/current/output/html/part18.html#sect_10.4). For details on the
-     * implementation of RetrieveBulkdata, see [Bulkdata
-     * resources](https://cloud.google.com/healthcare/docs/dicom#bulkdata-resources)
-     * in the Cloud Healthcare API conformance statement. For samples that show how
-     * to call RetrieveBulkdata, see [Retrieve
-     * bulkdata](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieve-
-     * bulkdata). (bulkdata.retrieveBulkdata)
-     *
-     * @param string $parent Required. The name of the DICOM store that is being
-     * accessed. For example, `projects/{project_id}/locations/{location_id}/dataset
-     * s/{dataset_id}/dicomStores/{dicom_store_id}`.
-     * @param string $dicomWebPath Required. The path for the `RetrieveBulkdata`
-     * DICOMweb request. For example, `studies/{study_uid}/series/{series_uid}/insta
-     * nces/{instance_uid}/bukdata/{bulkdata_uri}`.
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "bulkdata" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $bulkdata = $healthcareService->projects_locations_datasets_dicomStores_studies_series_instances_bulkdata;
+     *  </code>
      */
-    public function retrieveBulkdata($parent, $dicomWebPath, $optParams = [])
+    class ProjectsLocationsDatasetsDicomStoresStudiesSeriesInstancesBulkdata extends \Google\Service\Resource
+    {
+        /**
+         * Returns uncompressed, unencoded bytes representing the referenced bulkdata
+         * tag from an instance. See [Retrieve Transaction](https://dicom.nema.org/medic
+         * al/dicom/current/output/html/part18.html#sect_10.4). For details on the
+         * implementation of RetrieveBulkdata, see [Bulkdata
+         * resources](https://cloud.google.com/healthcare/docs/dicom#bulkdata-resources)
+         * in the Cloud Healthcare API conformance statement. For samples that show how
+         * to call RetrieveBulkdata, see [Retrieve
+         * bulkdata](https://cloud.google.com/healthcare/docs/how-tos/dicomweb#retrieve-
+         * bulkdata). (bulkdata.retrieveBulkdata)
+         *
+         * @param string $parent Required. The name of the DICOM store that is being
+         * accessed. For example, `projects/{project_id}/locations/{location_id}/dataset
+         * s/{dataset_id}/dicomStores/{dicom_store_id}`.
+         * @param string $dicomWebPath Required. The path for the `RetrieveBulkdata`
+         * DICOMweb request. For example, `studies/{study_uid}/series/{series_uid}/insta
+         * nces/{instance_uid}/bukdata/{bulkdata_uri}`.
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function retrieveBulkdata($parent, $dicomWebPath, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStoresStudiesSeriesInstancesBulkdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsDicomStoresStudiesSeriesInstancesBulkdata extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStoresStudiesSeriesInstancesBulkdata
     {
     }
 }

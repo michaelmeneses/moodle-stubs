@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ExponentialBuckets extends \Google\Model
-{
-    public $growthFactor;
-    public $numFiniteBuckets;
-    public $scale;
-    public function setGrowthFactor($growthFactor)
+namespace Google\Service\Networkconnectivity {
+    class ExponentialBuckets extends \Google\Model
     {
+        public $growthFactor;
+        public $numFiniteBuckets;
+        public $scale;
+        public function setGrowthFactor($growthFactor)
+        {
+        }
+        public function getGrowthFactor()
+        {
+        }
+        public function setNumFiniteBuckets($numFiniteBuckets)
+        {
+        }
+        public function getNumFiniteBuckets()
+        {
+        }
+        public function setScale($scale)
+        {
+        }
+        public function getScale()
+        {
+        }
     }
-    public function getGrowthFactor()
-    {
-    }
-    public function setNumFiniteBuckets($numFiniteBuckets)
-    {
-    }
-    public function getNumFiniteBuckets()
-    {
-    }
-    public function setScale($scale)
-    {
-    }
-    public function getScale()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\ExponentialBuckets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_ExponentialBuckets extends \Google\Service\Networkconnectivity\ExponentialBuckets
     {
     }
 }

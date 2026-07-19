@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class MarketplaceNote extends \Google\Model
-{
-    public $creatorRole;
-    public $dealId;
-    public $kind;
-    public $note;
-    public $noteId;
-    public $proposalId;
-    public $proposalRevisionNumber;
-    public $timestampMs;
-    public function setCreatorRole($creatorRole)
+namespace Google\Service\AdExchangeBuyer {
+    class MarketplaceNote extends \Google\Model
     {
+        public $creatorRole;
+        public $dealId;
+        public $kind;
+        public $note;
+        public $noteId;
+        public $proposalId;
+        public $proposalRevisionNumber;
+        public $timestampMs;
+        public function setCreatorRole($creatorRole)
+        {
+        }
+        public function getCreatorRole()
+        {
+        }
+        public function setDealId($dealId)
+        {
+        }
+        public function getDealId()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        public function setNote($note)
+        {
+        }
+        public function getNote()
+        {
+        }
+        public function setNoteId($noteId)
+        {
+        }
+        public function getNoteId()
+        {
+        }
+        public function setProposalId($proposalId)
+        {
+        }
+        public function getProposalId()
+        {
+        }
+        public function setProposalRevisionNumber($proposalRevisionNumber)
+        {
+        }
+        public function getProposalRevisionNumber()
+        {
+        }
+        public function setTimestampMs($timestampMs)
+        {
+        }
+        public function getTimestampMs()
+        {
+        }
     }
-    public function getCreatorRole()
-    {
-    }
-    public function setDealId($dealId)
-    {
-    }
-    public function getDealId()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    public function setNote($note)
-    {
-    }
-    public function getNote()
-    {
-    }
-    public function setNoteId($noteId)
-    {
-    }
-    public function getNoteId()
-    {
-    }
-    public function setProposalId($proposalId)
-    {
-    }
-    public function getProposalId()
-    {
-    }
-    public function setProposalRevisionNumber($proposalRevisionNumber)
-    {
-    }
-    public function getProposalRevisionNumber()
-    {
-    }
-    public function setTimestampMs($timestampMs)
-    {
-    }
-    public function getTimestampMs()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\MarketplaceNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_MarketplaceNote extends \Google\Service\AdExchangeBuyer\MarketplaceNote
     {
     }
 }

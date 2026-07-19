@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ListExamplesResponse extends \Google\Collection
-{
-    protected $collection_key = 'examples';
-    protected $examplesType = GoogleCloudDatalabelingV1beta1Example::class;
-    protected $examplesDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of examples to return.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Example[] $examples
-     */
-    public function setExamples($examples)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ListExamplesResponse extends \Google\Collection
     {
+        protected $collection_key = 'examples';
+        protected $examplesType = GoogleCloudDatalabelingV1beta1Example::class;
+        protected $examplesDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of examples to return.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Example[] $examples
+         */
+        public function setExamples($examples)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Example[]
+         */
+        public function getExamples()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Example[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListExamplesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExamples()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ListExamplesResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListExamplesResponse
     {
     }
 }

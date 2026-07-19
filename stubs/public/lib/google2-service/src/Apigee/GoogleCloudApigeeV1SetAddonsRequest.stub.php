@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SetAddonsRequest extends \Google\Model
-{
-    protected $addonsConfigType = GoogleCloudApigeeV1AddonsConfig::class;
-    protected $addonsConfigDataType = '';
-    /**
-     * Required. Add-on configurations.
-     *
-     * @param GoogleCloudApigeeV1AddonsConfig $addonsConfig
-     */
-    public function setAddonsConfig(GoogleCloudApigeeV1AddonsConfig $addonsConfig)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SetAddonsRequest extends \Google\Model
     {
+        protected $addonsConfigType = GoogleCloudApigeeV1AddonsConfig::class;
+        protected $addonsConfigDataType = '';
+        /**
+         * Required. Add-on configurations.
+         *
+         * @param GoogleCloudApigeeV1AddonsConfig $addonsConfig
+         */
+        public function setAddonsConfig(GoogleCloudApigeeV1AddonsConfig $addonsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AddonsConfig
+         */
+        public function getAddonsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AddonsConfig
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SetAddonsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddonsConfig()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SetAddonsRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1SetAddonsRequest
     {
     }
 }

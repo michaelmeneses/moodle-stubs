@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InspectDataSourceDetails extends \Google\Model
-{
-    protected $requestedOptionsType = GooglePrivacyDlpV2RequestedOptions::class;
-    protected $requestedOptionsDataType = '';
-    protected $resultType = GooglePrivacyDlpV2Result::class;
-    protected $resultDataType = '';
-    /**
-     * The configuration used for this job.
-     *
-     * @param GooglePrivacyDlpV2RequestedOptions $requestedOptions
-     */
-    public function setRequestedOptions(GooglePrivacyDlpV2RequestedOptions $requestedOptions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InspectDataSourceDetails extends \Google\Model
     {
+        protected $requestedOptionsType = GooglePrivacyDlpV2RequestedOptions::class;
+        protected $requestedOptionsDataType = '';
+        protected $resultType = GooglePrivacyDlpV2Result::class;
+        protected $resultDataType = '';
+        /**
+         * The configuration used for this job.
+         *
+         * @param GooglePrivacyDlpV2RequestedOptions $requestedOptions
+         */
+        public function setRequestedOptions(GooglePrivacyDlpV2RequestedOptions $requestedOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RequestedOptions
+         */
+        public function getRequestedOptions()
+        {
+        }
+        /**
+         * A summary of the outcome of this inspection job.
+         *
+         * @param GooglePrivacyDlpV2Result $result
+         */
+        public function setResult(GooglePrivacyDlpV2Result $result)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Result
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2RequestedOptions
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InspectDataSourceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestedOptions()
-    {
-    }
-    /**
-     * A summary of the outcome of this inspection job.
-     *
-     * @param GooglePrivacyDlpV2Result $result
-     */
-    public function setResult(GooglePrivacyDlpV2Result $result)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Result
-     */
-    public function getResult()
+    class Google_Service_DLP_GooglePrivacyDlpV2InspectDataSourceDetails extends \Google\Service\DLP\GooglePrivacyDlpV2InspectDataSourceDetails
     {
     }
 }

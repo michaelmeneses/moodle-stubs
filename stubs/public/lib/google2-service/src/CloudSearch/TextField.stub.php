@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TextField extends \Google\Model
-{
-    protected $autoCompleteType = AutoComplete::class;
-    protected $autoCompleteDataType = '';
-    protected $autoCompleteCallbackType = FormAction::class;
-    protected $autoCompleteCallbackDataType = '';
-    /**
-     * @var bool
-     */
-    public $autoCompleteMultipleSelections;
-    /**
-     * @var string
-     */
-    public $hintText;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var int
-     */
-    public $maxLines;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onChangeType = FormAction::class;
-    protected $onChangeDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param AutoComplete
-     */
-    public function setAutoComplete(AutoComplete $autoComplete)
+namespace Google\Service\CloudSearch {
+    class TextField extends \Google\Model
     {
+        protected $autoCompleteType = AutoComplete::class;
+        protected $autoCompleteDataType = '';
+        protected $autoCompleteCallbackType = FormAction::class;
+        protected $autoCompleteCallbackDataType = '';
+        /**
+         * @var bool
+         */
+        public $autoCompleteMultipleSelections;
+        /**
+         * @var string
+         */
+        public $hintText;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var int
+         */
+        public $maxLines;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onChangeType = FormAction::class;
+        protected $onChangeDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param AutoComplete
+         */
+        public function setAutoComplete(AutoComplete $autoComplete)
+        {
+        }
+        /**
+         * @return AutoComplete
+         */
+        public function getAutoComplete()
+        {
+        }
+        /**
+         * @param FormAction
+         */
+        public function setAutoCompleteCallback(FormAction $autoCompleteCallback)
+        {
+        }
+        /**
+         * @return FormAction
+         */
+        public function getAutoCompleteCallback()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAutoCompleteMultipleSelections($autoCompleteMultipleSelections)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoCompleteMultipleSelections()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHintText($hintText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHintText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxLines($maxLines)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxLines()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param FormAction
+         */
+        public function setOnChange(FormAction $onChange)
+        {
+        }
+        /**
+         * @return FormAction
+         */
+        public function getOnChange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoComplete
+     * Runtime class alias of \Google\Service\CloudSearch\TextField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoComplete()
-    {
-    }
-    /**
-     * @param FormAction
-     */
-    public function setAutoCompleteCallback(FormAction $autoCompleteCallback)
-    {
-    }
-    /**
-     * @return FormAction
-     */
-    public function getAutoCompleteCallback()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAutoCompleteMultipleSelections($autoCompleteMultipleSelections)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutoCompleteMultipleSelections()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHintText($hintText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHintText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxLines($maxLines)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxLines()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param FormAction
-     */
-    public function setOnChange(FormAction $onChange)
-    {
-    }
-    /**
-     * @return FormAction
-     */
-    public function getOnChange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_TextField extends \Google\Service\CloudSearch\TextField
     {
     }
 }

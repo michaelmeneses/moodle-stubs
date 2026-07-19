@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class MasterAuthorizedNetworksConfig extends \Google\Collection
-{
-    protected $collection_key = 'cidrBlocks';
-    protected $cidrBlocksType = CidrBlock::class;
-    protected $cidrBlocksDataType = 'array';
-    /**
-     * Optional. Whether or not master authorized networks feature is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Up to 50 external networks that could access Kubernetes master through
-     * HTTPS.
-     *
-     * @param CidrBlock[] $cidrBlocks
-     */
-    public function setCidrBlocks($cidrBlocks)
+namespace Google\Service\CloudComposer {
+    class MasterAuthorizedNetworksConfig extends \Google\Collection
     {
+        protected $collection_key = 'cidrBlocks';
+        protected $cidrBlocksType = CidrBlock::class;
+        protected $cidrBlocksDataType = 'array';
+        /**
+         * Optional. Whether or not master authorized networks feature is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Up to 50 external networks that could access Kubernetes master through
+         * HTTPS.
+         *
+         * @param CidrBlock[] $cidrBlocks
+         */
+        public function setCidrBlocks($cidrBlocks)
+        {
+        }
+        /**
+         * @return CidrBlock[]
+         */
+        public function getCidrBlocks()
+        {
+        }
+        /**
+         * Optional. Whether or not master authorized networks feature is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CidrBlock[]
+     * Runtime class alias of \Google\Service\CloudComposer\MasterAuthorizedNetworksConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCidrBlocks()
-    {
-    }
-    /**
-     * Optional. Whether or not master authorized networks feature is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_CloudComposer_MasterAuthorizedNetworksConfig extends \Google\Service\CloudComposer\MasterAuthorizedNetworksConfig
     {
     }
 }

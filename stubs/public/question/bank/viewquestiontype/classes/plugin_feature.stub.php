@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestiontype;
 
+use core_question\local\bank\plugin_features_base;
+use core_question\local\bank\view;
 /**
  * Class plugin_feature is the entrypoint for the columns.
  *

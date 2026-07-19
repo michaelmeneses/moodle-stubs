@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class FilePulledEvent extends \Google\Model
-{
-    /**
-     * The path of the file being pulled.
-     *
-     * @var string
-     */
-    public $filePath;
-    /**
-     * The path of the file being pulled.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
+namespace Google\Service\AndroidManagement {
+    class FilePulledEvent extends \Google\Model
     {
+        /**
+         * The path of the file being pulled.
+         *
+         * @var string
+         */
+        public $filePath;
+        /**
+         * The path of the file being pulled.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\FilePulledEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePath()
+    class Google_Service_AndroidManagement_FilePulledEvent extends \Google\Service\AndroidManagement\FilePulledEvent
     {
     }
 }

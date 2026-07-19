@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataTransfer;
-
-class ApplicationTransferParam extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * The type of the transfer parameter, such as `PRIVACY_LEVEL`.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The value of the transfer parameter, such as `PRIVATE` or `SHARED`.
-     *
-     * @var string[]
-     */
-    public $value;
-    /**
-     * The type of the transfer parameter, such as `PRIVACY_LEVEL`.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\DataTransfer {
+    class ApplicationTransferParam extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * The type of the transfer parameter, such as `PRIVACY_LEVEL`.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The value of the transfer parameter, such as `PRIVATE` or `SHARED`.
+         *
+         * @var string[]
+         */
+        public $value;
+        /**
+         * The type of the transfer parameter, such as `PRIVACY_LEVEL`.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The value of the transfer parameter, such as `PRIVATE` or `SHARED`.
+         *
+         * @param string[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataTransfer\ApplicationTransferParam registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The value of the transfer parameter, such as `PRIVATE` or `SHARED`.
-     *
-     * @param string[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValue()
+    class Google_Service_DataTransfer_ApplicationTransferParam extends \Google\Service\DataTransfer\ApplicationTransferParam
     {
     }
 }

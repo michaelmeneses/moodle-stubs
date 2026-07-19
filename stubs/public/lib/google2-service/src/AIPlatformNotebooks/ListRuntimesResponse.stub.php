@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ListRuntimesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimesType = Runtime::class;
-    protected $runtimesDataType = 'array';
-    public $runtimes = [];
-    /**
-     * @var string[]
-     */
-    public $unreachable = [];
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AIPlatformNotebooks {
+    class ListRuntimesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimesType = Runtime::class;
+        protected $runtimesDataType = 'array';
+        public $runtimes = [];
+        /**
+         * @var string[]
+         */
+        public $unreachable = [];
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Runtime[]
+         */
+        public function setRuntimes($runtimes)
+        {
+        }
+        /**
+         * @return Runtime[]
+         */
+        public function getRuntimes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ListRuntimesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Runtime[]
-     */
-    public function setRuntimes($runtimes)
-    {
-    }
-    /**
-     * @return Runtime[]
-     */
-    public function getRuntimes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AIPlatformNotebooks_ListRuntimesResponse extends \Google\Service\AIPlatformNotebooks\ListRuntimesResponse
     {
     }
 }

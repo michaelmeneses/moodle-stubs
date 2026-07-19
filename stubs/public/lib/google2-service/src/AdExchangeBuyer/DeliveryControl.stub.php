@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DeliveryControl extends \Google\Collection
-{
-    protected $collection_key = 'frequencyCaps';
-    public $creativeBlockingLevel;
-    public $deliveryRateType;
-    protected $frequencyCapsType = DeliveryControlFrequencyCap::class;
-    protected $frequencyCapsDataType = 'array';
-    public function setCreativeBlockingLevel($creativeBlockingLevel)
+namespace Google\Service\AdExchangeBuyer {
+    class DeliveryControl extends \Google\Collection
     {
+        protected $collection_key = 'frequencyCaps';
+        public $creativeBlockingLevel;
+        public $deliveryRateType;
+        protected $frequencyCapsType = DeliveryControlFrequencyCap::class;
+        protected $frequencyCapsDataType = 'array';
+        public function setCreativeBlockingLevel($creativeBlockingLevel)
+        {
+        }
+        public function getCreativeBlockingLevel()
+        {
+        }
+        public function setDeliveryRateType($deliveryRateType)
+        {
+        }
+        public function getDeliveryRateType()
+        {
+        }
+        /**
+         * @param DeliveryControlFrequencyCap[]
+         */
+        public function setFrequencyCaps($frequencyCaps)
+        {
+        }
+        /**
+         * @return DeliveryControlFrequencyCap[]
+         */
+        public function getFrequencyCaps()
+        {
+        }
     }
-    public function getCreativeBlockingLevel()
-    {
-    }
-    public function setDeliveryRateType($deliveryRateType)
-    {
-    }
-    public function getDeliveryRateType()
-    {
-    }
+}
+namespace {
     /**
-     * @param DeliveryControlFrequencyCap[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DeliveryControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFrequencyCaps($frequencyCaps)
-    {
-    }
-    /**
-     * @return DeliveryControlFrequencyCap[]
-     */
-    public function getFrequencyCaps()
+    class Google_Service_AdExchangeBuyer_DeliveryControl extends \Google\Service\AdExchangeBuyer\DeliveryControl
     {
     }
 }

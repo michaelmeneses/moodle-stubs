@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for NetworkManagement (v1).
- *
- * <p>
- * The Network Management API provides a collection of network performance
- * monitoring and diagnostic capabilities.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class NetworkManagement extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $organizations_locations;
-    public $organizations_locations_operations;
-    public $organizations_locations_vpcFlowLogsConfigs;
-    public $projects_locations;
-    public $projects_locations_global_connectivityTests;
-    public $projects_locations_global_operations;
-    public $projects_locations_vpcFlowLogsConfigs;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the NetworkManagement service.
+     * Service definition for NetworkManagement (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Network Management API provides a collection of network performance
+     * monitoring and diagnostic capabilities.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class NetworkManagement extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $organizations_locations;
+        public $organizations_locations_operations;
+        public $organizations_locations_vpcFlowLogsConfigs;
+        public $projects_locations;
+        public $projects_locations_global_connectivityTests;
+        public $projects_locations_global_operations;
+        public $projects_locations_vpcFlowLogsConfigs;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the NetworkManagement service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetworkManagement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetworkManagement extends \Google\Service\NetworkManagement
     {
     }
 }

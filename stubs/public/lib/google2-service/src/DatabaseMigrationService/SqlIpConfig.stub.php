@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlIpConfig extends \Google\Collection
-{
-    protected $collection_key = 'authorizedNetworks';
-    /**
-     * Optional. The name of the allocated IP address range for the private IP
-     * Cloud SQL instance. This name refers to an already allocated IP range
-     * address. If set, the instance IP address will be created in the allocated
-     * range. Note that this IP address range can't be modified after the instance
-     * is created. If you change the VPC when configuring connectivity settings
-     * for the migration job, this field is not relevant.
-     *
-     * @var string
-     */
-    public $allocatedIpRange;
-    protected $authorizedNetworksType = SqlAclEntry::class;
-    protected $authorizedNetworksDataType = 'array';
-    /**
-     * Whether the instance should be assigned an IPv4 address or not.
-     *
-     * @var bool
-     */
-    public $enableIpv4;
-    /**
-     * The resource link for the VPC network from which the Cloud SQL instance is
-     * accessible for private IP. For example,
-     * `projects/myProject/global/networks/default`. This setting can be updated,
-     * but it cannot be removed after it is set.
-     *
-     * @var string
-     */
-    public $privateNetwork;
-    /**
-     * Whether SSL connections over IP should be enforced or not.
-     *
-     * @var bool
-     */
-    public $requireSsl;
-    /**
-     * Optional. The name of the allocated IP address range for the private IP
-     * Cloud SQL instance. This name refers to an already allocated IP range
-     * address. If set, the instance IP address will be created in the allocated
-     * range. Note that this IP address range can't be modified after the instance
-     * is created. If you change the VPC when configuring connectivity settings
-     * for the migration job, this field is not relevant.
-     *
-     * @param string $allocatedIpRange
-     */
-    public function setAllocatedIpRange($allocatedIpRange)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlIpConfig extends \Google\Collection
     {
+        protected $collection_key = 'authorizedNetworks';
+        /**
+         * Optional. The name of the allocated IP address range for the private IP
+         * Cloud SQL instance. This name refers to an already allocated IP range
+         * address. If set, the instance IP address will be created in the allocated
+         * range. Note that this IP address range can't be modified after the instance
+         * is created. If you change the VPC when configuring connectivity settings
+         * for the migration job, this field is not relevant.
+         *
+         * @var string
+         */
+        public $allocatedIpRange;
+        protected $authorizedNetworksType = SqlAclEntry::class;
+        protected $authorizedNetworksDataType = 'array';
+        /**
+         * Whether the instance should be assigned an IPv4 address or not.
+         *
+         * @var bool
+         */
+        public $enableIpv4;
+        /**
+         * The resource link for the VPC network from which the Cloud SQL instance is
+         * accessible for private IP. For example,
+         * `projects/myProject/global/networks/default`. This setting can be updated,
+         * but it cannot be removed after it is set.
+         *
+         * @var string
+         */
+        public $privateNetwork;
+        /**
+         * Whether SSL connections over IP should be enforced or not.
+         *
+         * @var bool
+         */
+        public $requireSsl;
+        /**
+         * Optional. The name of the allocated IP address range for the private IP
+         * Cloud SQL instance. This name refers to an already allocated IP range
+         * address. If set, the instance IP address will be created in the allocated
+         * range. Note that this IP address range can't be modified after the instance
+         * is created. If you change the VPC when configuring connectivity settings
+         * for the migration job, this field is not relevant.
+         *
+         * @param string $allocatedIpRange
+         */
+        public function setAllocatedIpRange($allocatedIpRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedIpRange()
+        {
+        }
+        /**
+         * The list of external networks that are allowed to connect to the instance
+         * using the IP. See
+         * https://en.wikipedia.org/wiki/CIDR_notation#CIDR_notation, also known as
+         * 'slash' notation (e.g. `192.168.100.0/24`).
+         *
+         * @param SqlAclEntry[] $authorizedNetworks
+         */
+        public function setAuthorizedNetworks($authorizedNetworks)
+        {
+        }
+        /**
+         * @return SqlAclEntry[]
+         */
+        public function getAuthorizedNetworks()
+        {
+        }
+        /**
+         * Whether the instance should be assigned an IPv4 address or not.
+         *
+         * @param bool $enableIpv4
+         */
+        public function setEnableIpv4($enableIpv4)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIpv4()
+        {
+        }
+        /**
+         * The resource link for the VPC network from which the Cloud SQL instance is
+         * accessible for private IP. For example,
+         * `projects/myProject/global/networks/default`. This setting can be updated,
+         * but it cannot be removed after it is set.
+         *
+         * @param string $privateNetwork
+         */
+        public function setPrivateNetwork($privateNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateNetwork()
+        {
+        }
+        /**
+         * Whether SSL connections over IP should be enforced or not.
+         *
+         * @param bool $requireSsl
+         */
+        public function setRequireSsl($requireSsl)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequireSsl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlIpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedIpRange()
-    {
-    }
-    /**
-     * The list of external networks that are allowed to connect to the instance
-     * using the IP. See
-     * https://en.wikipedia.org/wiki/CIDR_notation#CIDR_notation, also known as
-     * 'slash' notation (e.g. `192.168.100.0/24`).
-     *
-     * @param SqlAclEntry[] $authorizedNetworks
-     */
-    public function setAuthorizedNetworks($authorizedNetworks)
-    {
-    }
-    /**
-     * @return SqlAclEntry[]
-     */
-    public function getAuthorizedNetworks()
-    {
-    }
-    /**
-     * Whether the instance should be assigned an IPv4 address or not.
-     *
-     * @param bool $enableIpv4
-     */
-    public function setEnableIpv4($enableIpv4)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableIpv4()
-    {
-    }
-    /**
-     * The resource link for the VPC network from which the Cloud SQL instance is
-     * accessible for private IP. For example,
-     * `projects/myProject/global/networks/default`. This setting can be updated,
-     * but it cannot be removed after it is set.
-     *
-     * @param string $privateNetwork
-     */
-    public function setPrivateNetwork($privateNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateNetwork()
-    {
-    }
-    /**
-     * Whether SSL connections over IP should be enforced or not.
-     *
-     * @param bool $requireSsl
-     */
-    public function setRequireSsl($requireSsl)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequireSsl()
+    class Google_Service_DatabaseMigrationService_SqlIpConfig extends \Google\Service\DatabaseMigrationService\SqlIpConfig
     {
     }
 }

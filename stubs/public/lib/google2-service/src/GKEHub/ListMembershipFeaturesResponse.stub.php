@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListMembershipFeaturesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $membershipFeaturesType = MembershipFeature::class;
-    protected $membershipFeaturesDataType = 'array';
-    /**
-     * A token to request the next page of resources from the
-     * `ListMembershipFeatures` method. The value of an empty string means that
-     * there are no more resources to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of locations that could not be reached while fetching this list.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of matching MembershipFeatures.
-     *
-     * @param MembershipFeature[] $membershipFeatures
-     */
-    public function setMembershipFeatures($membershipFeatures)
+namespace Google\Service\GKEHub {
+    class ListMembershipFeaturesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $membershipFeaturesType = MembershipFeature::class;
+        protected $membershipFeaturesDataType = 'array';
+        /**
+         * A token to request the next page of resources from the
+         * `ListMembershipFeatures` method. The value of an empty string means that
+         * there are no more resources to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of locations that could not be reached while fetching this list.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of matching MembershipFeatures.
+         *
+         * @param MembershipFeature[] $membershipFeatures
+         */
+        public function setMembershipFeatures($membershipFeatures)
+        {
+        }
+        /**
+         * @return MembershipFeature[]
+         */
+        public function getMembershipFeatures()
+        {
+        }
+        /**
+         * A token to request the next page of resources from the
+         * `ListMembershipFeatures` method. The value of an empty string means that
+         * there are no more resources to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of locations that could not be reached while fetching this list.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipFeature[]
+     * Runtime class alias of \Google\Service\GKEHub\ListMembershipFeaturesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembershipFeatures()
-    {
-    }
-    /**
-     * A token to request the next page of resources from the
-     * `ListMembershipFeatures` method. The value of an empty string means that
-     * there are no more resources to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of locations that could not be reached while fetching this list.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GKEHub_ListMembershipFeaturesResponse extends \Google\Service\GKEHub\ListMembershipFeaturesResponse
     {
     }
 }

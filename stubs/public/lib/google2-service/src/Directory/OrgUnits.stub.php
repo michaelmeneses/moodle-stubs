@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class OrgUnits extends \Google\Collection
-{
-    protected $collection_key = 'organizationUnits';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The type of the API resource. For Org Unit resources, the type is
-     * `admin#directory#orgUnits`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $organizationUnitsType = OrgUnit::class;
-    protected $organizationUnitsDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class OrgUnits extends \Google\Collection
     {
+        protected $collection_key = 'organizationUnits';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The type of the API resource. For Org Unit resources, the type is
+         * `admin#directory#orgUnits`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $organizationUnitsType = OrgUnit::class;
+        protected $organizationUnitsDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The type of the API resource. For Org Unit resources, the type is
+         * `admin#directory#orgUnits`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A list of organizational unit objects.
+         *
+         * @param OrgUnit[] $organizationUnits
+         */
+        public function setOrganizationUnits($organizationUnits)
+        {
+        }
+        /**
+         * @return OrgUnit[]
+         */
+        public function getOrganizationUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\OrgUnits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The type of the API resource. For Org Unit resources, the type is
-     * `admin#directory#orgUnits`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A list of organizational unit objects.
-     *
-     * @param OrgUnit[] $organizationUnits
-     */
-    public function setOrganizationUnits($organizationUnits)
-    {
-    }
-    /**
-     * @return OrgUnit[]
-     */
-    public function getOrganizationUnits()
+    class Google_Service_Directory_OrgUnits extends \Google\Service\Directory\OrgUnits
     {
     }
 }

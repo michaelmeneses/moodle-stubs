@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageCardCardAction extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actionLabel;
-    protected $onClickType = AppsDynamiteStorageOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @param string
-     */
-    public function setActionLabel($actionLabel)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageCardCardAction extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actionLabel;
+        protected $onClickType = AppsDynamiteStorageOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @param string
+         */
+        public function setActionLabel($actionLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionLabel()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageOnClick
+         */
+        public function setOnClick(AppsDynamiteStorageOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageCardCardAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionLabel()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageOnClick
-     */
-    public function setOnClick(AppsDynamiteStorageOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageOnClick
-     */
-    public function getOnClick()
+    class Google_Service_CloudSearch_AppsDynamiteStorageCardCardAction extends \Google\Service\CloudSearch\AppsDynamiteStorageCardCardAction
     {
     }
 }

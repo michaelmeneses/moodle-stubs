@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class Manifest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $manifestLocation;
-    /**
-     * @var string
-     */
-    public $root;
-    /**
-     * @param string
-     */
-    public function setManifestLocation($manifestLocation)
+namespace Google\Service\Storagetransfer {
+    class Manifest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $manifestLocation;
+        /**
+         * @var string
+         */
+        public $root;
+        /**
+         * @param string
+         */
+        public function setManifestLocation($manifestLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRoot($root)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\Manifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManifestLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRoot($root)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoot()
+    class Google_Service_Storagetransfer_Manifest extends \Google\Service\Storagetransfer\Manifest
     {
     }
 }

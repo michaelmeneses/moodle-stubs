@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class AdClientAdCode extends \Google\Model
-{
-    /**
-     * Output only. The AdSense code snippet to add to the head of an HTML page.
-     *
-     * @var string
-     */
-    public $adCode;
-    /**
-     * Output only. The AdSense code snippet to add to the body of an AMP page.
-     *
-     * @var string
-     */
-    public $ampBody;
-    /**
-     * Output only. The AdSense code snippet to add to the head of an AMP page.
-     *
-     * @var string
-     */
-    public $ampHead;
-    /**
-     * Output only. The AdSense code snippet to add to the head of an HTML page.
-     *
-     * @param string $adCode
-     */
-    public function setAdCode($adCode)
+namespace Google\Service\Adsense {
+    class AdClientAdCode extends \Google\Model
     {
+        /**
+         * Output only. The AdSense code snippet to add to the head of an HTML page.
+         *
+         * @var string
+         */
+        public $adCode;
+        /**
+         * Output only. The AdSense code snippet to add to the body of an AMP page.
+         *
+         * @var string
+         */
+        public $ampBody;
+        /**
+         * Output only. The AdSense code snippet to add to the head of an AMP page.
+         *
+         * @var string
+         */
+        public $ampHead;
+        /**
+         * Output only. The AdSense code snippet to add to the head of an HTML page.
+         *
+         * @param string $adCode
+         */
+        public function setAdCode($adCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdCode()
+        {
+        }
+        /**
+         * Output only. The AdSense code snippet to add to the body of an AMP page.
+         *
+         * @param string $ampBody
+         */
+        public function setAmpBody($ampBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmpBody()
+        {
+        }
+        /**
+         * Output only. The AdSense code snippet to add to the head of an AMP page.
+         *
+         * @param string $ampHead
+         */
+        public function setAmpHead($ampHead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmpHead()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\AdClientAdCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdCode()
-    {
-    }
-    /**
-     * Output only. The AdSense code snippet to add to the body of an AMP page.
-     *
-     * @param string $ampBody
-     */
-    public function setAmpBody($ampBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAmpBody()
-    {
-    }
-    /**
-     * Output only. The AdSense code snippet to add to the head of an AMP page.
-     *
-     * @param string $ampHead
-     */
-    public function setAmpHead($ampHead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAmpHead()
+    class Google_Service_Adsense_AdClientAdCode extends \Google\Service\Adsense\AdClientAdCode
     {
     }
 }

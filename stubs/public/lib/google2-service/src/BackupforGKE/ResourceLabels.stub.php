@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ResourceLabels extends \Google\Collection
-{
-    protected $collection_key = 'resourceLabels';
-    protected $resourceLabelsType = Label::class;
-    protected $resourceLabelsDataType = 'array';
-    /**
-     * Optional. A list of Kubernetes label-value pairs.
-     *
-     * @param Label[] $resourceLabels
-     */
-    public function setResourceLabels($resourceLabels)
+namespace Google\Service\BackupforGKE {
+    class ResourceLabels extends \Google\Collection
     {
+        protected $collection_key = 'resourceLabels';
+        protected $resourceLabelsType = Label::class;
+        protected $resourceLabelsDataType = 'array';
+        /**
+         * Optional. A list of Kubernetes label-value pairs.
+         *
+         * @param Label[] $resourceLabels
+         */
+        public function setResourceLabels($resourceLabels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getResourceLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Label[]
+     * Runtime class alias of \Google\Service\BackupforGKE\ResourceLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceLabels()
+    class Google_Service_BackupforGKE_ResourceLabels extends \Google\Service\BackupforGKE\ResourceLabels
     {
     }
 }

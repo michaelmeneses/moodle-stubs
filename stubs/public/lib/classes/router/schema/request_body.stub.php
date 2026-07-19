@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema;
 
+use core\router\schema\response\content\media_type;
+use core\router\schema\response\content\payload_response_type;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Routing request body for validation.
  *

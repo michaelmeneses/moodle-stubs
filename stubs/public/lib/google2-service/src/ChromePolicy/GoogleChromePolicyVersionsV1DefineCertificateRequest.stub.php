@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1DefineCertificateRequest extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    /**
-     * Optional. The optional name of the certificate. If not specified, the
-     * certificate issuer will be used as the name.
-     *
-     * @var string
-     */
-    public $ceritificateName;
-    /**
-     * Required. The raw contents of the .PEM, .CRT, or .CER file.
-     *
-     * @var string
-     */
-    public $certificate;
-    protected $settingsType = GoogleChromePolicyVersionsV1NetworkSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. The target resource on which this certificate is applied. The
-     * following resources are supported: * Organizational Unit
-     * ("orgunits/{orgunit_id}")
-     *
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * Optional. The optional name of the certificate. If not specified, the
-     * certificate issuer will be used as the name.
-     *
-     * @param string $ceritificateName
-     */
-    public function setCeritificateName($ceritificateName)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1DefineCertificateRequest extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        /**
+         * Optional. The optional name of the certificate. If not specified, the
+         * certificate issuer will be used as the name.
+         *
+         * @var string
+         */
+        public $ceritificateName;
+        /**
+         * Required. The raw contents of the .PEM, .CRT, or .CER file.
+         *
+         * @var string
+         */
+        public $certificate;
+        protected $settingsType = GoogleChromePolicyVersionsV1NetworkSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. The target resource on which this certificate is applied. The
+         * following resources are supported: * Organizational Unit
+         * ("orgunits/{orgunit_id}")
+         *
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * Optional. The optional name of the certificate. If not specified, the
+         * certificate issuer will be used as the name.
+         *
+         * @param string $ceritificateName
+         */
+        public function setCeritificateName($ceritificateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCeritificateName()
+        {
+        }
+        /**
+         * Required. The raw contents of the .PEM, .CRT, or .CER file.
+         *
+         * @param string $certificate
+         */
+        public function setCertificate($certificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * Optional. Certificate settings within the chrome.networks.certificates
+         * namespace.
+         *
+         * @param GoogleChromePolicyVersionsV1NetworkSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1NetworkSetting[]
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * Required. The target resource on which this certificate is applied. The
+         * following resources are supported: * Organizational Unit
+         * ("orgunits/{orgunit_id}")
+         *
+         * @param string $targetResource
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCeritificateName()
-    {
-    }
-    /**
-     * Required. The raw contents of the .PEM, .CRT, or .CER file.
-     *
-     * @param string $certificate
-     */
-    public function setCertificate($certificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertificate()
-    {
-    }
-    /**
-     * Optional. Certificate settings within the chrome.networks.certificates
-     * namespace.
-     *
-     * @param GoogleChromePolicyVersionsV1NetworkSetting[] $settings
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1NetworkSetting[]
-     */
-    public function getSettings()
-    {
-    }
-    /**
-     * Required. The target resource on which this certificate is applied. The
-     * following resources are supported: * Organizational Unit
-     * ("orgunits/{orgunit_id}")
-     *
-     * @param string $targetResource
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1DefineCertificateRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateRequest
     {
     }
 }

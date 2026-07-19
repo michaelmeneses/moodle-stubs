@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class PubSub extends \Google\Model
-{
-    /**
-     * Enable notifications for Pub/Sub.
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $filterType = Filter::class;
-    protected $filterDataType = '';
-    /**
-     * The desired Pub/Sub topic to which notifications will be sent by GKE.
-     * Format is `projects/{project}/topics/{topic}`.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Enable notifications for Pub/Sub.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class PubSub extends \Google\Model
     {
+        /**
+         * Enable notifications for Pub/Sub.
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $filterType = Filter::class;
+        protected $filterDataType = '';
+        /**
+         * The desired Pub/Sub topic to which notifications will be sent by GKE.
+         * Format is `projects/{project}/topics/{topic}`.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Enable notifications for Pub/Sub.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Allows filtering to one or more specific event types. If no filter is
+         * specified, or if a filter is specified with no event types, all event types
+         * will be sent
+         *
+         * @param Filter $filter
+         */
+        public function setFilter(Filter $filter)
+        {
+        }
+        /**
+         * @return Filter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * The desired Pub/Sub topic to which notifications will be sent by GKE.
+         * Format is `projects/{project}/topics/{topic}`.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\PubSub registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Allows filtering to one or more specific event types. If no filter is
-     * specified, or if a filter is specified with no event types, all event types
-     * will be sent
-     *
-     * @param Filter $filter
-     */
-    public function setFilter(Filter $filter)
-    {
-    }
-    /**
-     * @return Filter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * The desired Pub/Sub topic to which notifications will be sent by GKE.
-     * Format is `projects/{project}/topics/{topic}`.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_Container_PubSub extends \Google\Service\Container\PubSub
     {
     }
 }

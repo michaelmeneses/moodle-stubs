@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class CertificateAuthority extends \Google\Model
-{
-    protected $managedServerCaType = ManagedCertificateAuthority::class;
-    protected $managedServerCaDataType = '';
-    /**
-     * Identifier. Unique name of the resource in this scope including project,
-     * location and cluster using the form: `projects/{project}/locations/{locatio
-     * n}/clusters/{cluster}/certificateAuthority`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * @param ManagedCertificateAuthority $managedServerCa
-     */
-    public function setManagedServerCa(ManagedCertificateAuthority $managedServerCa)
+namespace Google\Service\CloudRedis {
+    class CertificateAuthority extends \Google\Model
     {
+        protected $managedServerCaType = ManagedCertificateAuthority::class;
+        protected $managedServerCaDataType = '';
+        /**
+         * Identifier. Unique name of the resource in this scope including project,
+         * location and cluster using the form: `projects/{project}/locations/{locatio
+         * n}/clusters/{cluster}/certificateAuthority`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * @param ManagedCertificateAuthority $managedServerCa
+         */
+        public function setManagedServerCa(ManagedCertificateAuthority $managedServerCa)
+        {
+        }
+        /**
+         * @return ManagedCertificateAuthority
+         */
+        public function getManagedServerCa()
+        {
+        }
+        /**
+         * Identifier. Unique name of the resource in this scope including project,
+         * location and cluster using the form: `projects/{project}/locations/{locatio
+         * n}/clusters/{cluster}/certificateAuthority`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedCertificateAuthority
+     * Runtime class alias of \Google\Service\CloudRedis\CertificateAuthority registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedServerCa()
-    {
-    }
-    /**
-     * Identifier. Unique name of the resource in this scope including project,
-     * location and cluster using the form: `projects/{project}/locations/{locatio
-     * n}/clusters/{cluster}/certificateAuthority`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudRedis_CertificateAuthority extends \Google\Service\CloudRedis\CertificateAuthority
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\ECRPublic;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Elastic Container Registry Public** service.
  * @method \Aws\Result batchCheckLayerAvailability(array $args = [])

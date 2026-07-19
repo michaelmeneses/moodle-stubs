@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityFleetObservabilityLoggingState extends \Google\Model
-{
-    protected $defaultLogType = FleetObservabilityFleetObservabilityBaseFeatureState::class;
-    protected $defaultLogDataType = '';
-    protected $scopeLogType = FleetObservabilityFleetObservabilityBaseFeatureState::class;
-    protected $scopeLogDataType = '';
-    /**
-     * @param FleetObservabilityFleetObservabilityBaseFeatureState
-     */
-    public function setDefaultLog(FleetObservabilityFleetObservabilityBaseFeatureState $defaultLog)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityFleetObservabilityLoggingState extends \Google\Model
     {
+        protected $defaultLogType = FleetObservabilityFleetObservabilityBaseFeatureState::class;
+        protected $defaultLogDataType = '';
+        protected $scopeLogType = FleetObservabilityFleetObservabilityBaseFeatureState::class;
+        protected $scopeLogDataType = '';
+        /**
+         * @param FleetObservabilityFleetObservabilityBaseFeatureState
+         */
+        public function setDefaultLog(FleetObservabilityFleetObservabilityBaseFeatureState $defaultLog)
+        {
+        }
+        /**
+         * @return FleetObservabilityFleetObservabilityBaseFeatureState
+         */
+        public function getDefaultLog()
+        {
+        }
+        /**
+         * @param FleetObservabilityFleetObservabilityBaseFeatureState
+         */
+        public function setScopeLog(FleetObservabilityFleetObservabilityBaseFeatureState $scopeLog)
+        {
+        }
+        /**
+         * @return FleetObservabilityFleetObservabilityBaseFeatureState
+         */
+        public function getScopeLog()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FleetObservabilityFleetObservabilityBaseFeatureState
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityFleetObservabilityLoggingState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultLog()
-    {
-    }
-    /**
-     * @param FleetObservabilityFleetObservabilityBaseFeatureState
-     */
-    public function setScopeLog(FleetObservabilityFleetObservabilityBaseFeatureState $scopeLog)
-    {
-    }
-    /**
-     * @return FleetObservabilityFleetObservabilityBaseFeatureState
-     */
-    public function getScopeLog()
+    class Google_Service_GKEHub_FleetObservabilityFleetObservabilityLoggingState extends \Google\Service\GKEHub\FleetObservabilityFleetObservabilityLoggingState
     {
     }
 }

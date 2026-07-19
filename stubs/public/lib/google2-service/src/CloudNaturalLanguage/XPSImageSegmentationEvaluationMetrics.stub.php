@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageSegmentationEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $confidenceMetricsEntriesType = XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * Metrics that have confidence thresholds. Precision-recall curve can be
-     * derived from it.
-     *
-     * @param XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageSegmentationEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $confidenceMetricsEntriesType = XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * Metrics that have confidence thresholds. Precision-recall curve can be
+         * derived from it.
+         *
+         * @param XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageSegmentationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetricsEntries()
+    class Google_Service_CloudNaturalLanguage_XPSImageSegmentationEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSImageSegmentationEvaluationMetrics
     {
     }
 }

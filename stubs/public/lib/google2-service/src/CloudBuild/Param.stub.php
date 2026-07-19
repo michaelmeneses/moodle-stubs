@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Param extends \Google\Model
-{
-    /**
-     * Name of the parameter.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = ParamValue::class;
-    protected $valueDataType = '';
-    /**
-     * Name of the parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class Param extends \Google\Model
     {
+        /**
+         * Name of the parameter.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = ParamValue::class;
+        protected $valueDataType = '';
+        /**
+         * Name of the parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value of the parameter.
+         *
+         * @param ParamValue $value
+         */
+        public function setValue(ParamValue $value)
+        {
+        }
+        /**
+         * @return ParamValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\Param registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Value of the parameter.
-     *
-     * @param ParamValue $value
-     */
-    public function setValue(ParamValue $value)
-    {
-    }
-    /**
-     * @return ParamValue
-     */
-    public function getValue()
+    class Google_Service_CloudBuild_Param extends \Google\Service\CloudBuild\Param
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class DivisionByAddressResponse extends \Google\Model
-{
-    protected $divisionsType = GeographicDivision::class;
-    protected $divisionsDataType = 'map';
-    protected $normalizedInputType = SimpleAddressType::class;
-    protected $normalizedInputDataType = '';
-    /**
-     * @param GeographicDivision[]
-     */
-    public function setDivisions($divisions)
+namespace Google\Service\CivicInfo {
+    class DivisionByAddressResponse extends \Google\Model
     {
+        protected $divisionsType = GeographicDivision::class;
+        protected $divisionsDataType = 'map';
+        protected $normalizedInputType = SimpleAddressType::class;
+        protected $normalizedInputDataType = '';
+        /**
+         * @param GeographicDivision[]
+         */
+        public function setDivisions($divisions)
+        {
+        }
+        /**
+         * @return GeographicDivision[]
+         */
+        public function getDivisions()
+        {
+        }
+        /**
+         * @param SimpleAddressType
+         */
+        public function setNormalizedInput(SimpleAddressType $normalizedInput)
+        {
+        }
+        /**
+         * @return SimpleAddressType
+         */
+        public function getNormalizedInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeographicDivision[]
+     * Runtime class alias of \Google\Service\CivicInfo\DivisionByAddressResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDivisions()
-    {
-    }
-    /**
-     * @param SimpleAddressType
-     */
-    public function setNormalizedInput(SimpleAddressType $normalizedInput)
-    {
-    }
-    /**
-     * @return SimpleAddressType
-     */
-    public function getNormalizedInput()
+    class Google_Service_CivicInfo_DivisionByAddressResponse extends \Google\Service\CivicInfo\DivisionByAddressResponse
     {
     }
 }

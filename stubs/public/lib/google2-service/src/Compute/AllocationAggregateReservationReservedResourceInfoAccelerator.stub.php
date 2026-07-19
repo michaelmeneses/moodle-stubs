@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationAggregateReservationReservedResourceInfoAccelerator extends \Google\Model
-{
-    /**
-     * Number of accelerators of specified type.
-     *
-     * @var int
-     */
-    public $acceleratorCount;
-    /**
-     * Full or partial URL to accelerator type. e.g.
-     * "projects/{PROJECT}/zones/{ZONE}/acceleratorTypes/ct4l"
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    /**
-     * Number of accelerators of specified type.
-     *
-     * @param int $acceleratorCount
-     */
-    public function setAcceleratorCount($acceleratorCount)
+namespace Google\Service\Compute {
+    class AllocationAggregateReservationReservedResourceInfoAccelerator extends \Google\Model
     {
+        /**
+         * Number of accelerators of specified type.
+         *
+         * @var int
+         */
+        public $acceleratorCount;
+        /**
+         * Full or partial URL to accelerator type. e.g.
+         * "projects/{PROJECT}/zones/{ZONE}/acceleratorTypes/ct4l"
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        /**
+         * Number of accelerators of specified type.
+         *
+         * @param int $acceleratorCount
+         */
+        public function setAcceleratorCount($acceleratorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcceleratorCount()
+        {
+        }
+        /**
+         * Full or partial URL to accelerator type. e.g.
+         * "projects/{PROJECT}/zones/{ZONE}/acceleratorTypes/ct4l"
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\AllocationAggregateReservationReservedResourceInfoAccelerator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorCount()
-    {
-    }
-    /**
-     * Full or partial URL to accelerator type. e.g.
-     * "projects/{PROJECT}/zones/{ZONE}/acceleratorTypes/ct4l"
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAcceleratorType()
+    class Google_Service_Compute_AllocationAggregateReservationReservedResourceInfoAccelerator extends \Google\Service\Compute\AllocationAggregateReservationReservedResourceInfoAccelerator
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class WorkflowDataSourceMarkup extends \Google\Model
-{
-    /**
-     * Default value. Don't use.
-     */
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Google Workspace users. The user can only view and select users from their
-     * Google Workspace organization.
-     */
-    public const TYPE_USER = 'USER';
-    /**
-     * Google Chat spaces that the user is a member of.
-     */
-    public const TYPE_SPACE = 'SPACE';
-    /**
-     * Users can choose to view and select existing members from their Google
-     * Workspace organization or manually enter an email address or a valid
-     * domain.
-     */
-    public const TYPE_USER_WITH_FREE_FORM = 'USER_WITH_FREE_FORM';
-    /**
-     * Whether to include variables from the previous step in the data source.
-     *
-     * @var bool
-     */
-    public $includeVariables;
-    /**
-     * The type of data source.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Whether to include variables from the previous step in the data source.
-     *
-     * @param bool $includeVariables
-     */
-    public function setIncludeVariables($includeVariables)
+namespace Google\Service\HangoutsChat {
+    class WorkflowDataSourceMarkup extends \Google\Model
     {
+        /**
+         * Default value. Don't use.
+         */
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Google Workspace users. The user can only view and select users from their
+         * Google Workspace organization.
+         */
+        public const TYPE_USER = 'USER';
+        /**
+         * Google Chat spaces that the user is a member of.
+         */
+        public const TYPE_SPACE = 'SPACE';
+        /**
+         * Users can choose to view and select existing members from their Google
+         * Workspace organization or manually enter an email address or a valid
+         * domain.
+         */
+        public const TYPE_USER_WITH_FREE_FORM = 'USER_WITH_FREE_FORM';
+        /**
+         * Whether to include variables from the previous step in the data source.
+         *
+         * @var bool
+         */
+        public $includeVariables;
+        /**
+         * The type of data source.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Whether to include variables from the previous step in the data source.
+         *
+         * @param bool $includeVariables
+         */
+        public function setIncludeVariables($includeVariables)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeVariables()
+        {
+        }
+        /**
+         * The type of data source.
+         *
+         * Accepted values: UNKNOWN, USER, SPACE, USER_WITH_FREE_FORM
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\HangoutsChat\WorkflowDataSourceMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeVariables()
-    {
-    }
-    /**
-     * The type of data source.
-     *
-     * Accepted values: UNKNOWN, USER, SPACE, USER_WITH_FREE_FORM
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_HangoutsChat_WorkflowDataSourceMarkup extends \Google\Service\HangoutsChat\WorkflowDataSourceMarkup
     {
     }
 }

@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2SuggestionResult extends \Google\Model
-{
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    protected $generateSuggestionsResponseType = GoogleCloudDialogflowV2GenerateSuggestionsResponse::class;
-    protected $generateSuggestionsResponseDataType = '';
-    protected $suggestArticlesResponseType = GoogleCloudDialogflowV2SuggestArticlesResponse::class;
-    protected $suggestArticlesResponseDataType = '';
-    protected $suggestFaqAnswersResponseType = GoogleCloudDialogflowV2SuggestFaqAnswersResponse::class;
-    protected $suggestFaqAnswersResponseDataType = '';
-    protected $suggestKnowledgeAssistResponseType = GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse::class;
-    protected $suggestKnowledgeAssistResponseDataType = '';
-    protected $suggestSmartRepliesResponseType = GoogleCloudDialogflowV2SuggestSmartRepliesResponse::class;
-    protected $suggestSmartRepliesResponseDataType = '';
-    /**
-     * Error status if the request failed.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2SuggestionResult extends \Google\Model
     {
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        protected $generateSuggestionsResponseType = GoogleCloudDialogflowV2GenerateSuggestionsResponse::class;
+        protected $generateSuggestionsResponseDataType = '';
+        protected $suggestArticlesResponseType = GoogleCloudDialogflowV2SuggestArticlesResponse::class;
+        protected $suggestArticlesResponseDataType = '';
+        protected $suggestFaqAnswersResponseType = GoogleCloudDialogflowV2SuggestFaqAnswersResponse::class;
+        protected $suggestFaqAnswersResponseDataType = '';
+        protected $suggestKnowledgeAssistResponseType = GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse::class;
+        protected $suggestKnowledgeAssistResponseDataType = '';
+        protected $suggestSmartRepliesResponseType = GoogleCloudDialogflowV2SuggestSmartRepliesResponse::class;
+        protected $suggestSmartRepliesResponseDataType = '';
+        /**
+         * Error status if the request failed.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Suggestions generated using generators triggered by customer or agent
+         * messages.
+         *
+         * @param GoogleCloudDialogflowV2GenerateSuggestionsResponse $generateSuggestionsResponse
+         */
+        public function setGenerateSuggestionsResponse(GoogleCloudDialogflowV2GenerateSuggestionsResponse $generateSuggestionsResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2GenerateSuggestionsResponse
+         */
+        public function getGenerateSuggestionsResponse()
+        {
+        }
+        /**
+         * SuggestArticlesResponse if request is for ARTICLE_SUGGESTION.
+         *
+         * @param GoogleCloudDialogflowV2SuggestArticlesResponse $suggestArticlesResponse
+         */
+        public function setSuggestArticlesResponse(GoogleCloudDialogflowV2SuggestArticlesResponse $suggestArticlesResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SuggestArticlesResponse
+         */
+        public function getSuggestArticlesResponse()
+        {
+        }
+        /**
+         * SuggestFaqAnswersResponse if request is for FAQ_ANSWER.
+         *
+         * @param GoogleCloudDialogflowV2SuggestFaqAnswersResponse $suggestFaqAnswersResponse
+         */
+        public function setSuggestFaqAnswersResponse(GoogleCloudDialogflowV2SuggestFaqAnswersResponse $suggestFaqAnswersResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SuggestFaqAnswersResponse
+         */
+        public function getSuggestFaqAnswersResponse()
+        {
+        }
+        /**
+         * SuggestKnowledgeAssistResponse if request is for KNOWLEDGE_ASSIST.
+         *
+         * @param GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse $suggestKnowledgeAssistResponse
+         */
+        public function setSuggestKnowledgeAssistResponse(GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse $suggestKnowledgeAssistResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse
+         */
+        public function getSuggestKnowledgeAssistResponse()
+        {
+        }
+        /**
+         * SuggestSmartRepliesResponse if request is for SMART_REPLY.
+         *
+         * @param GoogleCloudDialogflowV2SuggestSmartRepliesResponse $suggestSmartRepliesResponse
+         */
+        public function setSuggestSmartRepliesResponse(GoogleCloudDialogflowV2SuggestSmartRepliesResponse $suggestSmartRepliesResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SuggestSmartRepliesResponse
+         */
+        public function getSuggestSmartRepliesResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2SuggestionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Suggestions generated using generators triggered by customer or agent
-     * messages.
-     *
-     * @param GoogleCloudDialogflowV2GenerateSuggestionsResponse $generateSuggestionsResponse
-     */
-    public function setGenerateSuggestionsResponse(GoogleCloudDialogflowV2GenerateSuggestionsResponse $generateSuggestionsResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2GenerateSuggestionsResponse
-     */
-    public function getGenerateSuggestionsResponse()
-    {
-    }
-    /**
-     * SuggestArticlesResponse if request is for ARTICLE_SUGGESTION.
-     *
-     * @param GoogleCloudDialogflowV2SuggestArticlesResponse $suggestArticlesResponse
-     */
-    public function setSuggestArticlesResponse(GoogleCloudDialogflowV2SuggestArticlesResponse $suggestArticlesResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SuggestArticlesResponse
-     */
-    public function getSuggestArticlesResponse()
-    {
-    }
-    /**
-     * SuggestFaqAnswersResponse if request is for FAQ_ANSWER.
-     *
-     * @param GoogleCloudDialogflowV2SuggestFaqAnswersResponse $suggestFaqAnswersResponse
-     */
-    public function setSuggestFaqAnswersResponse(GoogleCloudDialogflowV2SuggestFaqAnswersResponse $suggestFaqAnswersResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SuggestFaqAnswersResponse
-     */
-    public function getSuggestFaqAnswersResponse()
-    {
-    }
-    /**
-     * SuggestKnowledgeAssistResponse if request is for KNOWLEDGE_ASSIST.
-     *
-     * @param GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse $suggestKnowledgeAssistResponse
-     */
-    public function setSuggestKnowledgeAssistResponse(GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse $suggestKnowledgeAssistResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SuggestKnowledgeAssistResponse
-     */
-    public function getSuggestKnowledgeAssistResponse()
-    {
-    }
-    /**
-     * SuggestSmartRepliesResponse if request is for SMART_REPLY.
-     *
-     * @param GoogleCloudDialogflowV2SuggestSmartRepliesResponse $suggestSmartRepliesResponse
-     */
-    public function setSuggestSmartRepliesResponse(GoogleCloudDialogflowV2SuggestSmartRepliesResponse $suggestSmartRepliesResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SuggestSmartRepliesResponse
-     */
-    public function getSuggestSmartRepliesResponse()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2SuggestionResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2SuggestionResult
     {
     }
 }

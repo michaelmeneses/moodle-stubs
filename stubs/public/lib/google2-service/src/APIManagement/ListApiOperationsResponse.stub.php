@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ListApiOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiOperations';
-    protected $apiOperationsType = ApiOperation::class;
-    protected $apiOperationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ApiOperations from the specified project and location and
-     * ObservationJob and ApiObservation.
-     *
-     * @param ApiOperation[] $apiOperations
-     */
-    public function setApiOperations($apiOperations)
+namespace Google\Service\APIManagement {
+    class ListApiOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiOperations';
+        protected $apiOperationsType = ApiOperation::class;
+        protected $apiOperationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ApiOperations from the specified project and location and
+         * ObservationJob and ApiObservation.
+         *
+         * @param ApiOperation[] $apiOperations
+         */
+        public function setApiOperations($apiOperations)
+        {
+        }
+        /**
+         * @return ApiOperation[]
+         */
+        public function getApiOperations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiOperation[]
+     * Runtime class alias of \Google\Service\APIManagement\ListApiOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiOperations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIManagement_ListApiOperationsResponse extends \Google\Service\APIManagement\ListApiOperationsResponse
     {
     }
 }

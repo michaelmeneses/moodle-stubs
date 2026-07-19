@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OptimizationActivity extends \Google\Model
-{
-    /**
-     * Floodlight activity ID of this optimization activity. This is a required
-     * field.
-     *
-     * @var string
-     */
-    public $floodlightActivityId;
-    protected $floodlightActivityIdDimensionValueType = DimensionValue::class;
-    protected $floodlightActivityIdDimensionValueDataType = '';
-    /**
-     * Weight associated with this optimization. The weight assigned will be
-     * understood in proportion to the weights assigned to the other optimization
-     * activities. Value must be greater than or equal to 1.
-     *
-     * @var int
-     */
-    public $weight;
-    /**
-     * Floodlight activity ID of this optimization activity. This is a required
-     * field.
-     *
-     * @param string $floodlightActivityId
-     */
-    public function setFloodlightActivityId($floodlightActivityId)
+namespace Google\Service\Dfareporting {
+    class OptimizationActivity extends \Google\Model
     {
+        /**
+         * Floodlight activity ID of this optimization activity. This is a required
+         * field.
+         *
+         * @var string
+         */
+        public $floodlightActivityId;
+        protected $floodlightActivityIdDimensionValueType = DimensionValue::class;
+        protected $floodlightActivityIdDimensionValueDataType = '';
+        /**
+         * Weight associated with this optimization. The weight assigned will be
+         * understood in proportion to the weights assigned to the other optimization
+         * activities. Value must be greater than or equal to 1.
+         *
+         * @var int
+         */
+        public $weight;
+        /**
+         * Floodlight activity ID of this optimization activity. This is a required
+         * field.
+         *
+         * @param string $floodlightActivityId
+         */
+        public function setFloodlightActivityId($floodlightActivityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloodlightActivityId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the floodlight activity. This is a read-only,
+         * auto-generated field.
+         *
+         * @param DimensionValue $floodlightActivityIdDimensionValue
+         */
+        public function setFloodlightActivityIdDimensionValue(DimensionValue $floodlightActivityIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getFloodlightActivityIdDimensionValue()
+        {
+        }
+        /**
+         * Weight associated with this optimization. The weight assigned will be
+         * understood in proportion to the weights assigned to the other optimization
+         * activities. Value must be greater than or equal to 1.
+         *
+         * @param int $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OptimizationActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightActivityId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the floodlight activity. This is a read-only,
-     * auto-generated field.
-     *
-     * @param DimensionValue $floodlightActivityIdDimensionValue
-     */
-    public function setFloodlightActivityIdDimensionValue(DimensionValue $floodlightActivityIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getFloodlightActivityIdDimensionValue()
-    {
-    }
-    /**
-     * Weight associated with this optimization. The weight assigned will be
-     * understood in proportion to the weights assigned to the other optimization
-     * activities. Value must be greater than or equal to 1.
-     *
-     * @param int $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeight()
+    class Google_Service_Dfareporting_OptimizationActivity extends \Google\Service\Dfareporting\OptimizationActivity
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TextContent extends \Google\Collection
-{
-    protected $collection_key = 'textElements';
-    protected $listsType = SlidesList::class;
-    protected $listsDataType = 'map';
-    protected $textElementsType = TextElement::class;
-    protected $textElementsDataType = 'array';
-    /**
-     * The bulleted lists contained in this text, keyed by list ID.
-     *
-     * @param SlidesList[] $lists
-     */
-    public function setLists($lists)
+namespace Google\Service\Slides {
+    class TextContent extends \Google\Collection
     {
+        protected $collection_key = 'textElements';
+        protected $listsType = SlidesList::class;
+        protected $listsDataType = 'map';
+        protected $textElementsType = TextElement::class;
+        protected $textElementsDataType = 'array';
+        /**
+         * The bulleted lists contained in this text, keyed by list ID.
+         *
+         * @param SlidesList[] $lists
+         */
+        public function setLists($lists)
+        {
+        }
+        /**
+         * @return SlidesList[]
+         */
+        public function getLists()
+        {
+        }
+        /**
+         * The text contents broken down into its component parts, including styling
+         * information. This property is read-only.
+         *
+         * @param TextElement[] $textElements
+         */
+        public function setTextElements($textElements)
+        {
+        }
+        /**
+         * @return TextElement[]
+         */
+        public function getTextElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SlidesList[]
+     * Runtime class alias of \Google\Service\Slides\TextContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLists()
-    {
-    }
-    /**
-     * The text contents broken down into its component parts, including styling
-     * information. This property is read-only.
-     *
-     * @param TextElement[] $textElements
-     */
-    public function setTextElements($textElements)
-    {
-    }
-    /**
-     * @return TextElement[]
-     */
-    public function getTextElements()
+    class Google_Service_Slides_TextContent extends \Google\Service\Slides\TextContent
     {
     }
 }

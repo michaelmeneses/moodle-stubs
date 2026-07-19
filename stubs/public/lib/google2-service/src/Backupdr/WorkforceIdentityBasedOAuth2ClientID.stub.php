@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class WorkforceIdentityBasedOAuth2ClientID extends \Google\Model
-{
-    /**
-     * Output only. First party OAuth Client ID for Google Identities.
-     *
-     * @var string
-     */
-    public $firstPartyOauth2ClientId;
-    /**
-     * Output only. Third party OAuth Client ID for External Identity Providers.
-     *
-     * @var string
-     */
-    public $thirdPartyOauth2ClientId;
-    /**
-     * Output only. First party OAuth Client ID for Google Identities.
-     *
-     * @param string $firstPartyOauth2ClientId
-     */
-    public function setFirstPartyOauth2ClientId($firstPartyOauth2ClientId)
+namespace Google\Service\Backupdr {
+    class WorkforceIdentityBasedOAuth2ClientID extends \Google\Model
     {
+        /**
+         * Output only. First party OAuth Client ID for Google Identities.
+         *
+         * @var string
+         */
+        public $firstPartyOauth2ClientId;
+        /**
+         * Output only. Third party OAuth Client ID for External Identity Providers.
+         *
+         * @var string
+         */
+        public $thirdPartyOauth2ClientId;
+        /**
+         * Output only. First party OAuth Client ID for Google Identities.
+         *
+         * @param string $firstPartyOauth2ClientId
+         */
+        public function setFirstPartyOauth2ClientId($firstPartyOauth2ClientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstPartyOauth2ClientId()
+        {
+        }
+        /**
+         * Output only. Third party OAuth Client ID for External Identity Providers.
+         *
+         * @param string $thirdPartyOauth2ClientId
+         */
+        public function setThirdPartyOauth2ClientId($thirdPartyOauth2ClientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThirdPartyOauth2ClientId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\WorkforceIdentityBasedOAuth2ClientID registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPartyOauth2ClientId()
-    {
-    }
-    /**
-     * Output only. Third party OAuth Client ID for External Identity Providers.
-     *
-     * @param string $thirdPartyOauth2ClientId
-     */
-    public function setThirdPartyOauth2ClientId($thirdPartyOauth2ClientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThirdPartyOauth2ClientId()
+    class Google_Service_Backupdr_WorkforceIdentityBasedOAuth2ClientID extends \Google\Service\Backupdr\WorkforceIdentityBasedOAuth2ClientID
     {
     }
 }

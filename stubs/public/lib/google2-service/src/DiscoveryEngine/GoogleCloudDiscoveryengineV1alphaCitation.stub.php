@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaCitation extends \Google\Model
-{
-    /**
-     * Output only. End index into the content.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * Output only. License of the attribution.
-     *
-     * @var string
-     */
-    public $license;
-    protected $publicationDateType = GoogleTypeDate::class;
-    protected $publicationDateDataType = '';
-    /**
-     * Output only. Start index into the content.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * Output only. Title of the attribution.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. Url reference of the attribution.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. End index into the content.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaCitation extends \Google\Model
     {
+        /**
+         * Output only. End index into the content.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * Output only. License of the attribution.
+         *
+         * @var string
+         */
+        public $license;
+        protected $publicationDateType = GoogleTypeDate::class;
+        protected $publicationDateDataType = '';
+        /**
+         * Output only. Start index into the content.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * Output only. Title of the attribution.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. Url reference of the attribution.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. End index into the content.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Output only. License of the attribution.
+         *
+         * @param string $license
+         */
+        public function setLicense($license)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLicense()
+        {
+        }
+        /**
+         * Output only. Publication date of the attribution.
+         *
+         * @param GoogleTypeDate $publicationDate
+         */
+        public function setPublicationDate(GoogleTypeDate $publicationDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getPublicationDate()
+        {
+        }
+        /**
+         * Output only. Start index into the content.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * Output only. Title of the attribution.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Output only. Url reference of the attribution.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCitation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Output only. License of the attribution.
-     *
-     * @param string $license
-     */
-    public function setLicense($license)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLicense()
-    {
-    }
-    /**
-     * Output only. Publication date of the attribution.
-     *
-     * @param GoogleTypeDate $publicationDate
-     */
-    public function setPublicationDate(GoogleTypeDate $publicationDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getPublicationDate()
-    {
-    }
-    /**
-     * Output only. Start index into the content.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * Output only. Title of the attribution.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Output only. Url reference of the attribution.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaCitation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCitation
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ReportResponse extends \Google\Model
-{
-    /**
-     * The extension field to store serialized OTel responses. e.g.
-     * ExportLogsServiceResponse, ExportMetricsServiceResponse.
-     *
-     * @var array[]
-     */
-    public $extensions;
-    /**
-     * The extension field to store serialized OTel responses. e.g.
-     * ExportLogsServiceResponse, ExportMetricsServiceResponse.
-     *
-     * @param array[] $extensions
-     */
-    public function setExtensions($extensions)
+namespace Google\Service\ServiceControl {
+    class ReportResponse extends \Google\Model
     {
+        /**
+         * The extension field to store serialized OTel responses. e.g.
+         * ExportLogsServiceResponse, ExportMetricsServiceResponse.
+         *
+         * @var array[]
+         */
+        public $extensions;
+        /**
+         * The extension field to store serialized OTel responses. e.g.
+         * ExportLogsServiceResponse, ExportMetricsServiceResponse.
+         *
+         * @param array[] $extensions
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\ServiceControl\ReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensions()
+    class Google_Service_ServiceControl_ReportResponse extends \Google\Service\ServiceControl\ReportResponse
     {
     }
 }

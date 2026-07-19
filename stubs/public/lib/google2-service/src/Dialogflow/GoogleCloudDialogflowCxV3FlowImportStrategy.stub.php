@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FlowImportStrategy extends \Google\Model
-{
-    /**
-     * Unspecified. Treated as 'CREATE_NEW'.
-     */
-    public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
-    /**
-     * Create a new resource with a numeric suffix appended to the end of the
-     * existing display name.
-     */
-    public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
-    /**
-     * Replace existing resource with incoming resource in the content to be
-     * imported.
-     */
-    public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
-    /**
-     * Keep existing resource and discard incoming resource in the content to be
-     * imported.
-     */
-    public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
-    /**
-     * Combine existing and incoming resources when a conflict is encountered.
-     */
-    public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
-    /**
-     * Throw error if a conflict is encountered.
-     */
-    public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
-    /**
-     * Optional. Import strategy for resource conflict resolution, applied
-     * globally throughout the flow. It will be applied for all display name
-     * conflicts in the imported content. If not specified, 'CREATE_NEW' is
-     * assumed.
-     *
-     * @var string
-     */
-    public $globalImportStrategy;
-    /**
-     * Optional. Import strategy for resource conflict resolution, applied
-     * globally throughout the flow. It will be applied for all display name
-     * conflicts in the imported content. If not specified, 'CREATE_NEW' is
-     * assumed.
-     *
-     * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
-     * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
-     * IMPORT_STRATEGY_THROW_ERROR
-     *
-     * @param self::GLOBAL_IMPORT_STRATEGY_* $globalImportStrategy
-     */
-    public function setGlobalImportStrategy($globalImportStrategy)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FlowImportStrategy extends \Google\Model
     {
+        /**
+         * Unspecified. Treated as 'CREATE_NEW'.
+         */
+        public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_UNSPECIFIED = 'IMPORT_STRATEGY_UNSPECIFIED';
+        /**
+         * Create a new resource with a numeric suffix appended to the end of the
+         * existing display name.
+         */
+        public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_CREATE_NEW = 'IMPORT_STRATEGY_CREATE_NEW';
+        /**
+         * Replace existing resource with incoming resource in the content to be
+         * imported.
+         */
+        public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_REPLACE = 'IMPORT_STRATEGY_REPLACE';
+        /**
+         * Keep existing resource and discard incoming resource in the content to be
+         * imported.
+         */
+        public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_KEEP = 'IMPORT_STRATEGY_KEEP';
+        /**
+         * Combine existing and incoming resources when a conflict is encountered.
+         */
+        public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_MERGE = 'IMPORT_STRATEGY_MERGE';
+        /**
+         * Throw error if a conflict is encountered.
+         */
+        public const GLOBAL_IMPORT_STRATEGY_IMPORT_STRATEGY_THROW_ERROR = 'IMPORT_STRATEGY_THROW_ERROR';
+        /**
+         * Optional. Import strategy for resource conflict resolution, applied
+         * globally throughout the flow. It will be applied for all display name
+         * conflicts in the imported content. If not specified, 'CREATE_NEW' is
+         * assumed.
+         *
+         * @var string
+         */
+        public $globalImportStrategy;
+        /**
+         * Optional. Import strategy for resource conflict resolution, applied
+         * globally throughout the flow. It will be applied for all display name
+         * conflicts in the imported content. If not specified, 'CREATE_NEW' is
+         * assumed.
+         *
+         * Accepted values: IMPORT_STRATEGY_UNSPECIFIED, IMPORT_STRATEGY_CREATE_NEW,
+         * IMPORT_STRATEGY_REPLACE, IMPORT_STRATEGY_KEEP, IMPORT_STRATEGY_MERGE,
+         * IMPORT_STRATEGY_THROW_ERROR
+         *
+         * @param self::GLOBAL_IMPORT_STRATEGY_* $globalImportStrategy
+         */
+        public function setGlobalImportStrategy($globalImportStrategy)
+        {
+        }
+        /**
+         * @return self::GLOBAL_IMPORT_STRATEGY_*
+         */
+        public function getGlobalImportStrategy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GLOBAL_IMPORT_STRATEGY_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowImportStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGlobalImportStrategy()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FlowImportStrategy extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowImportStrategy
     {
     }
 }

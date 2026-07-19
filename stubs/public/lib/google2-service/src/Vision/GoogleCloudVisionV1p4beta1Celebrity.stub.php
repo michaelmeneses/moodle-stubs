@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p4beta1Celebrity extends \Google\Model
-{
-    /**
-     * The Celebrity's description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The Celebrity's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the preloaded Celebrity. Has the format
-     * `builtin/{mid}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The Celebrity's description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p4beta1Celebrity extends \Google\Model
     {
+        /**
+         * The Celebrity's description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The Celebrity's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the preloaded Celebrity. Has the format
+         * `builtin/{mid}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The Celebrity's description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The Celebrity's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the preloaded Celebrity. Has the format
+         * `builtin/{mid}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p4beta1Celebrity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The Celebrity's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the preloaded Celebrity. Has the format
-     * `builtin/{mid}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Vision_GoogleCloudVisionV1p4beta1Celebrity extends \Google\Service\Vision\GoogleCloudVisionV1p4beta1Celebrity
     {
     }
 }

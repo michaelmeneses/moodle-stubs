@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Environment extends \Google\Model
-{
-    protected $containerImageType = ContainerImage::class;
-    protected $containerImageDataType = '';
-    public $containerImage;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $postStartupScript;
-    protected $vmImageType = VmImage::class;
-    protected $vmImageDataType = '';
-    public $vmImage;
-    /**
-     * @param ContainerImage
-     */
-    public function setContainerImage(ContainerImage $containerImage)
+namespace Google\Service\AIPlatformNotebooks {
+    class Environment extends \Google\Model
     {
+        protected $containerImageType = ContainerImage::class;
+        protected $containerImageDataType = '';
+        public $containerImage;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $postStartupScript;
+        protected $vmImageType = VmImage::class;
+        protected $vmImageDataType = '';
+        public $vmImage;
+        /**
+         * @param ContainerImage
+         */
+        public function setContainerImage(ContainerImage $containerImage)
+        {
+        }
+        /**
+         * @return ContainerImage
+         */
+        public function getContainerImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPostStartupScript($postStartupScript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostStartupScript()
+        {
+        }
+        /**
+         * @param VmImage
+         */
+        public function setVmImage(VmImage $vmImage)
+        {
+        }
+        /**
+         * @return VmImage
+         */
+        public function getVmImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContainerImage
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPostStartupScript($postStartupScript)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostStartupScript()
-    {
-    }
-    /**
-     * @param VmImage
-     */
-    public function setVmImage(VmImage $vmImage)
-    {
-    }
-    /**
-     * @return VmImage
-     */
-    public function getVmImage()
+    class Google_Service_AIPlatformNotebooks_Environment extends \Google\Service\AIPlatformNotebooks\Environment
     {
     }
 }

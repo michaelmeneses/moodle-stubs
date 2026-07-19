@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class CisBenchmark extends \Google\Model
-{
-    /**
-     * Unknown.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Minimal severity.
-     */
-    public const SEVERITY_MINIMAL = 'MINIMAL';
-    /**
-     * Low severity.
-     */
-    public const SEVERITY_LOW = 'LOW';
-    /**
-     * Medium severity.
-     */
-    public const SEVERITY_MEDIUM = 'MEDIUM';
-    /**
-     * High severity.
-     */
-    public const SEVERITY_HIGH = 'HIGH';
-    /**
-     * Critical severity.
-     */
-    public const SEVERITY_CRITICAL = 'CRITICAL';
-    /**
-     * @var int
-     */
-    public $profileLevel;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * @param int $profileLevel
-     */
-    public function setProfileLevel($profileLevel)
+namespace Google\Service\ContainerAnalysis {
+    class CisBenchmark extends \Google\Model
     {
+        /**
+         * Unknown.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Minimal severity.
+         */
+        public const SEVERITY_MINIMAL = 'MINIMAL';
+        /**
+         * Low severity.
+         */
+        public const SEVERITY_LOW = 'LOW';
+        /**
+         * Medium severity.
+         */
+        public const SEVERITY_MEDIUM = 'MEDIUM';
+        /**
+         * High severity.
+         */
+        public const SEVERITY_HIGH = 'HIGH';
+        /**
+         * Critical severity.
+         */
+        public const SEVERITY_CRITICAL = 'CRITICAL';
+        /**
+         * @var int
+         */
+        public $profileLevel;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * @param int $profileLevel
+         */
+        public function setProfileLevel($profileLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProfileLevel()
+        {
+        }
+        /**
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ContainerAnalysis\CisBenchmark registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProfileLevel()
-    {
-    }
-    /**
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_ContainerAnalysis_CisBenchmark extends \Google\Service\ContainerAnalysis\CisBenchmark
     {
     }
 }

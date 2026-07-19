@@ -21,266 +21,275 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class MirroringDeploymentGroup extends \Google\Collection
-{
-    /**
-     * State not set (this is not a valid state).
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The deployment group is ready.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The deployment group is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The deployment group is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The deployment group is being wiped out (project deleted).
-     */
-    public const STATE_CLOSED = 'CLOSED';
-    protected $collection_key = 'nestedDeployments';
-    protected $connectedEndpointGroupsType = MirroringDeploymentGroupConnectedEndpointGroup::class;
-    protected $connectedEndpointGroupsDataType = 'array';
-    /**
-     * Output only. The timestamp when the resource was created. See
-     * https://google.aip.dev/148#timestamps.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. User-provided description of the deployment group. Used as
-     * additional context for the deployment group.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Labels are key/value pairs that help to organize and filter
-     * resources.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $locationsType = MirroringLocation::class;
-    protected $locationsDataType = 'array';
-    /**
-     * Immutable. Identifier. The resource name of this deployment group, for
-     * example: `projects/123456789/locations/global/mirroringDeploymentGroups/my-
-     * dg`. See https://google.aip.dev/122 for more details.
-     *
-     * @var string
-     */
-    public $name;
-    protected $nestedDeploymentsType = MirroringDeploymentGroupDeployment::class;
-    protected $nestedDeploymentsDataType = 'array';
-    /**
-     * Required. Immutable. The network that will be used for all child
-     * deployments, for example: `projects/{project}/global/networks/{network}`.
-     * See https://google.aip.dev/124.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Output only. The current state of the resource does not match the user's
-     * intended state, and the system is working to reconcile them. This is part
-     * of the normal operation (e.g. adding a new deployment to the group) See
-     * https://google.aip.dev/128.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Output only. The current state of the deployment group. See
-     * https://google.aip.dev/216.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The timestamp when the resource was most recently updated. See
-     * https://google.aip.dev/148#timestamps.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The list of endpoint groups that are connected to this
-     * resource.
-     *
-     * @param MirroringDeploymentGroupConnectedEndpointGroup[] $connectedEndpointGroups
-     */
-    public function setConnectedEndpointGroups($connectedEndpointGroups)
+namespace Google\Service\NetworkSecurity {
+    class MirroringDeploymentGroup extends \Google\Collection
     {
+        /**
+         * State not set (this is not a valid state).
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The deployment group is ready.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The deployment group is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The deployment group is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The deployment group is being wiped out (project deleted).
+         */
+        public const STATE_CLOSED = 'CLOSED';
+        protected $collection_key = 'nestedDeployments';
+        protected $connectedEndpointGroupsType = MirroringDeploymentGroupConnectedEndpointGroup::class;
+        protected $connectedEndpointGroupsDataType = 'array';
+        /**
+         * Output only. The timestamp when the resource was created. See
+         * https://google.aip.dev/148#timestamps.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. User-provided description of the deployment group. Used as
+         * additional context for the deployment group.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Labels are key/value pairs that help to organize and filter
+         * resources.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $locationsType = MirroringLocation::class;
+        protected $locationsDataType = 'array';
+        /**
+         * Immutable. Identifier. The resource name of this deployment group, for
+         * example: `projects/123456789/locations/global/mirroringDeploymentGroups/my-
+         * dg`. See https://google.aip.dev/122 for more details.
+         *
+         * @var string
+         */
+        public $name;
+        protected $nestedDeploymentsType = MirroringDeploymentGroupDeployment::class;
+        protected $nestedDeploymentsDataType = 'array';
+        /**
+         * Required. Immutable. The network that will be used for all child
+         * deployments, for example: `projects/{project}/global/networks/{network}`.
+         * See https://google.aip.dev/124.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Output only. The current state of the resource does not match the user's
+         * intended state, and the system is working to reconcile them. This is part
+         * of the normal operation (e.g. adding a new deployment to the group) See
+         * https://google.aip.dev/128.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Output only. The current state of the deployment group. See
+         * https://google.aip.dev/216.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The timestamp when the resource was most recently updated. See
+         * https://google.aip.dev/148#timestamps.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The list of endpoint groups that are connected to this
+         * resource.
+         *
+         * @param MirroringDeploymentGroupConnectedEndpointGroup[] $connectedEndpointGroups
+         */
+        public function setConnectedEndpointGroups($connectedEndpointGroups)
+        {
+        }
+        /**
+         * @return MirroringDeploymentGroupConnectedEndpointGroup[]
+         */
+        public function getConnectedEndpointGroups()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was created. See
+         * https://google.aip.dev/148#timestamps.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. User-provided description of the deployment group. Used as
+         * additional context for the deployment group.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Labels are key/value pairs that help to organize and filter
+         * resources.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The list of locations where the deployment group is present.
+         *
+         * @param MirroringLocation[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return MirroringLocation[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * Immutable. Identifier. The resource name of this deployment group, for
+         * example: `projects/123456789/locations/global/mirroringDeploymentGroups/my-
+         * dg`. See https://google.aip.dev/122 for more details.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The list of Mirroring Deployments that belong to this group.
+         *
+         * @deprecated
+         * @param MirroringDeploymentGroupDeployment[] $nestedDeployments
+         */
+        public function setNestedDeployments($nestedDeployments)
+        {
+        }
+        /**
+         * @deprecated
+         * @return MirroringDeploymentGroupDeployment[]
+         */
+        public function getNestedDeployments()
+        {
+        }
+        /**
+         * Required. Immutable. The network that will be used for all child
+         * deployments, for example: `projects/{project}/global/networks/{network}`.
+         * See https://google.aip.dev/124.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Output only. The current state of the resource does not match the user's
+         * intended state, and the system is working to reconcile them. This is part
+         * of the normal operation (e.g. adding a new deployment to the group) See
+         * https://google.aip.dev/128.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. The current state of the deployment group. See
+         * https://google.aip.dev/216.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING, CLOSED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was most recently updated. See
+         * https://google.aip.dev/148#timestamps.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MirroringDeploymentGroupConnectedEndpointGroup[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\MirroringDeploymentGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedEndpointGroups()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was created. See
-     * https://google.aip.dev/148#timestamps.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. User-provided description of the deployment group. Used as
-     * additional context for the deployment group.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Labels are key/value pairs that help to organize and filter
-     * resources.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The list of locations where the deployment group is present.
-     *
-     * @param MirroringLocation[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return MirroringLocation[]
-     */
-    public function getLocations()
-    {
-    }
-    /**
-     * Immutable. Identifier. The resource name of this deployment group, for
-     * example: `projects/123456789/locations/global/mirroringDeploymentGroups/my-
-     * dg`. See https://google.aip.dev/122 for more details.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The list of Mirroring Deployments that belong to this group.
-     *
-     * @deprecated
-     * @param MirroringDeploymentGroupDeployment[] $nestedDeployments
-     */
-    public function setNestedDeployments($nestedDeployments)
-    {
-    }
-    /**
-     * @deprecated
-     * @return MirroringDeploymentGroupDeployment[]
-     */
-    public function getNestedDeployments()
-    {
-    }
-    /**
-     * Required. Immutable. The network that will be used for all child
-     * deployments, for example: `projects/{project}/global/networks/{network}`.
-     * See https://google.aip.dev/124.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Output only. The current state of the resource does not match the user's
-     * intended state, and the system is working to reconcile them. This is part
-     * of the normal operation (e.g. adding a new deployment to the group) See
-     * https://google.aip.dev/128.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. The current state of the deployment group. See
-     * https://google.aip.dev/216.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING, CLOSED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was most recently updated. See
-     * https://google.aip.dev/148#timestamps.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkSecurity_MirroringDeploymentGroup extends \Google\Service\NetworkSecurity\MirroringDeploymentGroup
     {
     }
 }

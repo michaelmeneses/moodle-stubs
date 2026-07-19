@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ImagesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'images';
-    protected $imagesType = Image::class;
-    protected $imagesDataType = 'array';
-    /**
-     * All listed Images.
-     *
-     * @param Image[] $images
-     */
-    public function setImages($images)
+namespace Google\Service\AndroidPublisher {
+    class ImagesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'images';
+        protected $imagesType = Image::class;
+        protected $imagesDataType = 'array';
+        /**
+         * All listed Images.
+         *
+         * @param Image[] $images
+         */
+        public function setImages($images)
+        {
+        }
+        /**
+         * @return Image[]
+         */
+        public function getImages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ImagesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImages()
+    class Google_Service_AndroidPublisher_ImagesListResponse extends \Google\Service\AndroidPublisher\ImagesListResponse
     {
     }
 }

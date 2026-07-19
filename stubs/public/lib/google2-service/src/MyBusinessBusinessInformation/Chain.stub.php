@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class Chain extends \Google\Collection
-{
-    protected $collection_key = 'websites';
-    protected $chainNamesType = ChainName::class;
-    protected $chainNamesDataType = 'array';
-    /**
-     * Number of locations that are part of this chain.
-     *
-     * @var int
-     */
-    public $locationCount;
-    /**
-     * Required. The chain's resource name, in the format `chains/{chain_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $websitesType = ChainUri::class;
-    protected $websitesDataType = 'array';
-    /**
-     * Names of the chain.
-     *
-     * @param ChainName[] $chainNames
-     */
-    public function setChainNames($chainNames)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class Chain extends \Google\Collection
     {
+        protected $collection_key = 'websites';
+        protected $chainNamesType = ChainName::class;
+        protected $chainNamesDataType = 'array';
+        /**
+         * Number of locations that are part of this chain.
+         *
+         * @var int
+         */
+        public $locationCount;
+        /**
+         * Required. The chain's resource name, in the format `chains/{chain_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $websitesType = ChainUri::class;
+        protected $websitesDataType = 'array';
+        /**
+         * Names of the chain.
+         *
+         * @param ChainName[] $chainNames
+         */
+        public function setChainNames($chainNames)
+        {
+        }
+        /**
+         * @return ChainName[]
+         */
+        public function getChainNames()
+        {
+        }
+        /**
+         * Number of locations that are part of this chain.
+         *
+         * @param int $locationCount
+         */
+        public function setLocationCount($locationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLocationCount()
+        {
+        }
+        /**
+         * Required. The chain's resource name, in the format `chains/{chain_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Websites of the chain.
+         *
+         * @param ChainUri[] $websites
+         */
+        public function setWebsites($websites)
+        {
+        }
+        /**
+         * @return ChainUri[]
+         */
+        public function getWebsites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChainName[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Chain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChainNames()
-    {
-    }
-    /**
-     * Number of locations that are part of this chain.
-     *
-     * @param int $locationCount
-     */
-    public function setLocationCount($locationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLocationCount()
-    {
-    }
-    /**
-     * Required. The chain's resource name, in the format `chains/{chain_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Websites of the chain.
-     *
-     * @param ChainUri[] $websites
-     */
-    public function setWebsites($websites)
-    {
-    }
-    /**
-     * @return ChainUri[]
-     */
-    public function getWebsites()
+    class Google_Service_MyBusinessBusinessInformation_Chain extends \Google\Service\MyBusinessBusinessInformation\Chain
     {
     }
 }

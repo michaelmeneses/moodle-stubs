@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class MarketplaceLabel extends \Google\Model
-{
-    public $accountId;
-    public $createTimeMs;
-    protected $deprecatedMarketplaceDealPartyType = MarketplaceDealParty::class;
-    protected $deprecatedMarketplaceDealPartyDataType = '';
-    public $label;
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyer {
+    class MarketplaceLabel extends \Google\Model
     {
+        public $accountId;
+        public $createTimeMs;
+        protected $deprecatedMarketplaceDealPartyType = MarketplaceDealParty::class;
+        protected $deprecatedMarketplaceDealPartyDataType = '';
+        public $label;
+        public function setAccountId($accountId)
+        {
+        }
+        public function getAccountId()
+        {
+        }
+        public function setCreateTimeMs($createTimeMs)
+        {
+        }
+        public function getCreateTimeMs()
+        {
+        }
+        /**
+         * @param MarketplaceDealParty
+         */
+        public function setDeprecatedMarketplaceDealParty(MarketplaceDealParty $deprecatedMarketplaceDealParty)
+        {
+        }
+        /**
+         * @return MarketplaceDealParty
+         */
+        public function getDeprecatedMarketplaceDealParty()
+        {
+        }
+        public function setLabel($label)
+        {
+        }
+        public function getLabel()
+        {
+        }
     }
-    public function getAccountId()
-    {
-    }
-    public function setCreateTimeMs($createTimeMs)
-    {
-    }
-    public function getCreateTimeMs()
-    {
-    }
+}
+namespace {
     /**
-     * @param MarketplaceDealParty
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\MarketplaceLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDeprecatedMarketplaceDealParty(MarketplaceDealParty $deprecatedMarketplaceDealParty)
-    {
-    }
-    /**
-     * @return MarketplaceDealParty
-     */
-    public function getDeprecatedMarketplaceDealParty()
-    {
-    }
-    public function setLabel($label)
-    {
-    }
-    public function getLabel()
+    class Google_Service_AdExchangeBuyer_MarketplaceLabel extends \Google\Service\AdExchangeBuyer\MarketplaceLabel
     {
     }
 }

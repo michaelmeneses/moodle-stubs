@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluateDatasetRequest extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $autoraterConfigType = GoogleCloudAiplatformV1AutoraterConfig::class;
-    protected $autoraterConfigDataType = '';
-    protected $datasetType = GoogleCloudAiplatformV1EvaluationDataset::class;
-    protected $datasetDataType = '';
-    /**
-     * Required. The resource name of the Location to evaluate the dataset.
-     * Format: `projects/{project}/locations/{location}`
-     *
-     * @var string
-     */
-    public $location;
-    protected $metricsType = GoogleCloudAiplatformV1Metric::class;
-    protected $metricsDataType = 'array';
-    protected $outputConfigType = GoogleCloudAiplatformV1OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Optional. Autorater config used for evaluation. Currently only publisher
-     * Gemini models are supported. Format:
-     * `projects/{PROJECT}/locations/{LOCATION}/publishers/google/models/{MODEL}.`
-     *
-     * @param GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig
-     */
-    public function setAutoraterConfig(GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluateDatasetRequest extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $autoraterConfigType = GoogleCloudAiplatformV1AutoraterConfig::class;
+        protected $autoraterConfigDataType = '';
+        protected $datasetType = GoogleCloudAiplatformV1EvaluationDataset::class;
+        protected $datasetDataType = '';
+        /**
+         * Required. The resource name of the Location to evaluate the dataset.
+         * Format: `projects/{project}/locations/{location}`
+         *
+         * @var string
+         */
+        public $location;
+        protected $metricsType = GoogleCloudAiplatformV1Metric::class;
+        protected $metricsDataType = 'array';
+        protected $outputConfigType = GoogleCloudAiplatformV1OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Optional. Autorater config used for evaluation. Currently only publisher
+         * Gemini models are supported. Format:
+         * `projects/{PROJECT}/locations/{LOCATION}/publishers/google/models/{MODEL}.`
+         *
+         * @param GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig
+         */
+        public function setAutoraterConfig(GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1AutoraterConfig
+         */
+        public function getAutoraterConfig()
+        {
+        }
+        /**
+         * Required. The dataset used for evaluation.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationDataset $dataset
+         */
+        public function setDataset(GoogleCloudAiplatformV1EvaluationDataset $dataset)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationDataset
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Required. The resource name of the Location to evaluate the dataset.
+         * Format: `projects/{project}/locations/{location}`
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Required. The metrics used for evaluation.
+         *
+         * @param GoogleCloudAiplatformV1Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Required. Config for evaluation output.
+         *
+         * @param GoogleCloudAiplatformV1OutputConfig $outputConfig
+         */
+        public function setOutputConfig(GoogleCloudAiplatformV1OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1AutoraterConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateDatasetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoraterConfig()
-    {
-    }
-    /**
-     * Required. The dataset used for evaluation.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationDataset $dataset
-     */
-    public function setDataset(GoogleCloudAiplatformV1EvaluationDataset $dataset)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationDataset
-     */
-    public function getDataset()
-    {
-    }
-    /**
-     * Required. The resource name of the Location to evaluate the dataset.
-     * Format: `projects/{project}/locations/{location}`
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Required. The metrics used for evaluation.
-     *
-     * @param GoogleCloudAiplatformV1Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Required. Config for evaluation output.
-     *
-     * @param GoogleCloudAiplatformV1OutputConfig $outputConfig
-     */
-    public function setOutputConfig(GoogleCloudAiplatformV1OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1OutputConfig
-     */
-    public function getOutputConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluateDatasetRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateDatasetRequest
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls;
-
-class AggregateMetrics extends \Google\Collection
-{
-    protected $collection_key = 'weekdayMetrics';
-    /**
-     * @var int
-     */
-    public $answeredCallsCount;
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $hourlyMetricsType = HourlyMetrics::class;
-    protected $hourlyMetricsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $missedCallsCount;
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    protected $weekdayMetricsType = WeekDayMetrics::class;
-    protected $weekdayMetricsDataType = 'array';
-    /**
-     * @param int
-     */
-    public function setAnsweredCallsCount($answeredCallsCount)
+namespace Google\Service\MyBusinessBusinessCalls {
+    class AggregateMetrics extends \Google\Collection
     {
+        protected $collection_key = 'weekdayMetrics';
+        /**
+         * @var int
+         */
+        public $answeredCallsCount;
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $hourlyMetricsType = HourlyMetrics::class;
+        protected $hourlyMetricsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $missedCallsCount;
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        protected $weekdayMetricsType = WeekDayMetrics::class;
+        protected $weekdayMetricsDataType = 'array';
+        /**
+         * @param int
+         */
+        public function setAnsweredCallsCount($answeredCallsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAnsweredCallsCount()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * @param HourlyMetrics[]
+         */
+        public function setHourlyMetrics($hourlyMetrics)
+        {
+        }
+        /**
+         * @return HourlyMetrics[]
+         */
+        public function getHourlyMetrics()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMissedCallsCount($missedCallsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMissedCallsCount()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * @param WeekDayMetrics[]
+         */
+        public function setWeekdayMetrics($weekdayMetrics)
+        {
+        }
+        /**
+         * @return WeekDayMetrics[]
+         */
+        public function getWeekdayMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\AggregateMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnsweredCallsCount()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setEndDate(Date $endDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * @param HourlyMetrics[]
-     */
-    public function setHourlyMetrics($hourlyMetrics)
-    {
-    }
-    /**
-     * @return HourlyMetrics[]
-     */
-    public function getHourlyMetrics()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMissedCallsCount($missedCallsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMissedCallsCount()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * @param WeekDayMetrics[]
-     */
-    public function setWeekdayMetrics($weekdayMetrics)
-    {
-    }
-    /**
-     * @return WeekDayMetrics[]
-     */
-    public function getWeekdayMetrics()
+    class Google_Service_MyBusinessBusinessCalls_AggregateMetrics extends \Google\Service\MyBusinessBusinessCalls\AggregateMetrics
     {
     }
 }

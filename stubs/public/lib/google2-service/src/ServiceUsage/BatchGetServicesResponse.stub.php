@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class BatchGetServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    protected $servicesType = GoogleApiServiceusageV1Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * The requested Service states.
-     *
-     * @param GoogleApiServiceusageV1Service[] $services
-     */
-    public function setServices($services)
+namespace Google\Service\ServiceUsage {
+    class BatchGetServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        protected $servicesType = GoogleApiServiceusageV1Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * The requested Service states.
+         *
+         * @param GoogleApiServiceusageV1Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV1Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiServiceusageV1Service[]
+     * Runtime class alias of \Google\Service\ServiceUsage\BatchGetServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServices()
+    class Google_Service_ServiceUsage_BatchGetServicesResponse extends \Google\Service\ServiceUsage\BatchGetServicesResponse
     {
     }
 }

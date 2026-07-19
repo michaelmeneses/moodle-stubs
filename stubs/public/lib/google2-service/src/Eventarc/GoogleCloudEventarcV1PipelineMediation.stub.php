@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineMediation extends \Google\Model
-{
-    protected $transformationType = GoogleCloudEventarcV1PipelineMediationTransformation::class;
-    protected $transformationDataType = '';
-    /**
-     * Optional. How the Pipeline is to transform messages
-     *
-     * @param GoogleCloudEventarcV1PipelineMediationTransformation $transformation
-     */
-    public function setTransformation(GoogleCloudEventarcV1PipelineMediationTransformation $transformation)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineMediation extends \Google\Model
     {
+        protected $transformationType = GoogleCloudEventarcV1PipelineMediationTransformation::class;
+        protected $transformationDataType = '';
+        /**
+         * Optional. How the Pipeline is to transform messages
+         *
+         * @param GoogleCloudEventarcV1PipelineMediationTransformation $transformation
+         */
+        public function setTransformation(GoogleCloudEventarcV1PipelineMediationTransformation $transformation)
+        {
+        }
+        /**
+         * @return GoogleCloudEventarcV1PipelineMediationTransformation
+         */
+        public function getTransformation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudEventarcV1PipelineMediationTransformation
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMediation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformation()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineMediation extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMediation
     {
     }
 }

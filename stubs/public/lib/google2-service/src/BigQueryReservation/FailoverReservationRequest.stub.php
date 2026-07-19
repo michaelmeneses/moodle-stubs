@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class FailoverReservationRequest extends \Google\Model
-{
-    /**
-     * Invalid value.
-     */
-    public const FAILOVER_MODE_FAILOVER_MODE_UNSPECIFIED = 'FAILOVER_MODE_UNSPECIFIED';
-    /**
-     * When customers initiate a soft failover, BigQuery will wait until all
-     * committed writes are replicated to the secondary. This mode requires both
-     * regions to be available for the failover to succeed and prevents data loss.
-     */
-    public const FAILOVER_MODE_SOFT = 'SOFT';
-    /**
-     * When customers initiate a hard failover, BigQuery will not wait until all
-     * committed writes are replicated to the secondary. There can be data loss
-     * for hard failover.
-     */
-    public const FAILOVER_MODE_HARD = 'HARD';
-    /**
-     * Optional. A parameter that determines how writes that are pending
-     * replication are handled after a failover is initiated. If not specified,
-     * HARD failover mode is used by default.
-     *
-     * @var string
-     */
-    public $failoverMode;
-    /**
-     * Optional. A parameter that determines how writes that are pending
-     * replication are handled after a failover is initiated. If not specified,
-     * HARD failover mode is used by default.
-     *
-     * Accepted values: FAILOVER_MODE_UNSPECIFIED, SOFT, HARD
-     *
-     * @param self::FAILOVER_MODE_* $failoverMode
-     */
-    public function setFailoverMode($failoverMode)
+namespace Google\Service\BigQueryReservation {
+    class FailoverReservationRequest extends \Google\Model
     {
+        /**
+         * Invalid value.
+         */
+        public const FAILOVER_MODE_FAILOVER_MODE_UNSPECIFIED = 'FAILOVER_MODE_UNSPECIFIED';
+        /**
+         * When customers initiate a soft failover, BigQuery will wait until all
+         * committed writes are replicated to the secondary. This mode requires both
+         * regions to be available for the failover to succeed and prevents data loss.
+         */
+        public const FAILOVER_MODE_SOFT = 'SOFT';
+        /**
+         * When customers initiate a hard failover, BigQuery will not wait until all
+         * committed writes are replicated to the secondary. There can be data loss
+         * for hard failover.
+         */
+        public const FAILOVER_MODE_HARD = 'HARD';
+        /**
+         * Optional. A parameter that determines how writes that are pending
+         * replication are handled after a failover is initiated. If not specified,
+         * HARD failover mode is used by default.
+         *
+         * @var string
+         */
+        public $failoverMode;
+        /**
+         * Optional. A parameter that determines how writes that are pending
+         * replication are handled after a failover is initiated. If not specified,
+         * HARD failover mode is used by default.
+         *
+         * Accepted values: FAILOVER_MODE_UNSPECIFIED, SOFT, HARD
+         *
+         * @param self::FAILOVER_MODE_* $failoverMode
+         */
+        public function setFailoverMode($failoverMode)
+        {
+        }
+        /**
+         * @return self::FAILOVER_MODE_*
+         */
+        public function getFailoverMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FAILOVER_MODE_*
+     * Runtime class alias of \Google\Service\BigQueryReservation\FailoverReservationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailoverMode()
+    class Google_Service_BigQueryReservation_FailoverReservationRequest extends \Google\Service\BigQueryReservation\FailoverReservationRequest
     {
     }
 }

@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DataSource extends \Google\Model
-{
-    /**
-     * Default unknown service.
-     */
-    public const SERVICE_SERVICE_UNSPECIFIED = 'SERVICE_UNSPECIFIED';
-    /**
-     * Google Cloud Storage service.
-     */
-    public const SERVICE_CLOUD_STORAGE = 'CLOUD_STORAGE';
-    /**
-     * BigQuery service.
-     */
-    public const SERVICE_BIGQUERY = 'BIGQUERY';
-    /**
-     * Full name of a resource as defined by the service. For example: `//bigquery
-     * .googleapis.com/projects/{PROJECT_ID}/locations/{LOCATION}/datasets/{DATASE
-     * T_ID}/tables/{TABLE_ID}`
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Service that physically stores the data.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Output only. Data Catalog entry name, if applicable.
-     *
-     * @var string
-     */
-    public $sourceEntry;
-    protected $storagePropertiesType = GoogleCloudDatacatalogV1StorageProperties::class;
-    protected $storagePropertiesDataType = '';
-    /**
-     * Full name of a resource as defined by the service. For example: `//bigquery
-     * .googleapis.com/projects/{PROJECT_ID}/locations/{LOCATION}/datasets/{DATASE
-     * T_ID}/tables/{TABLE_ID}`
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DataSource extends \Google\Model
     {
+        /**
+         * Default unknown service.
+         */
+        public const SERVICE_SERVICE_UNSPECIFIED = 'SERVICE_UNSPECIFIED';
+        /**
+         * Google Cloud Storage service.
+         */
+        public const SERVICE_CLOUD_STORAGE = 'CLOUD_STORAGE';
+        /**
+         * BigQuery service.
+         */
+        public const SERVICE_BIGQUERY = 'BIGQUERY';
+        /**
+         * Full name of a resource as defined by the service. For example: `//bigquery
+         * .googleapis.com/projects/{PROJECT_ID}/locations/{LOCATION}/datasets/{DATASE
+         * T_ID}/tables/{TABLE_ID}`
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Service that physically stores the data.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Output only. Data Catalog entry name, if applicable.
+         *
+         * @var string
+         */
+        public $sourceEntry;
+        protected $storagePropertiesType = GoogleCloudDatacatalogV1StorageProperties::class;
+        protected $storagePropertiesDataType = '';
+        /**
+         * Full name of a resource as defined by the service. For example: `//bigquery
+         * .googleapis.com/projects/{PROJECT_ID}/locations/{LOCATION}/datasets/{DATASE
+         * T_ID}/tables/{TABLE_ID}`
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * Service that physically stores the data.
+         *
+         * Accepted values: SERVICE_UNSPECIFIED, CLOUD_STORAGE, BIGQUERY
+         *
+         * @param self::SERVICE_* $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return self::SERVICE_*
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Output only. Data Catalog entry name, if applicable.
+         *
+         * @param string $sourceEntry
+         */
+        public function setSourceEntry($sourceEntry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceEntry()
+        {
+        }
+        /**
+         * Detailed properties of the underlying storage.
+         *
+         * @param GoogleCloudDatacatalogV1StorageProperties $storageProperties
+         */
+        public function setStorageProperties(GoogleCloudDatacatalogV1StorageProperties $storageProperties)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1StorageProperties
+         */
+        public function getStorageProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
-    {
-    }
-    /**
-     * Service that physically stores the data.
-     *
-     * Accepted values: SERVICE_UNSPECIFIED, CLOUD_STORAGE, BIGQUERY
-     *
-     * @param self::SERVICE_* $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return self::SERVICE_*
-     */
-    public function getService()
-    {
-    }
-    /**
-     * Output only. Data Catalog entry name, if applicable.
-     *
-     * @param string $sourceEntry
-     */
-    public function setSourceEntry($sourceEntry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceEntry()
-    {
-    }
-    /**
-     * Detailed properties of the underlying storage.
-     *
-     * @param GoogleCloudDatacatalogV1StorageProperties $storageProperties
-     */
-    public function setStorageProperties(GoogleCloudDatacatalogV1StorageProperties $storageProperties)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1StorageProperties
-     */
-    public function getStorageProperties()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DataSource extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataSource
     {
     }
 }

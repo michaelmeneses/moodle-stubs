@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class CropProperties extends \Google\Model
-{
-    /**
-     * The rotation angle of the crop window around its center, in radians.
-     * Rotation angle is applied after the offset.
-     *
-     * @var float
-     */
-    public $angle;
-    /**
-     * The offset specifies the bottom edge of the crop rectangle that is located
-     * above the original bounding rectangle bottom edge, relative to the object's
-     * original height.
-     *
-     * @var float
-     */
-    public $bottomOffset;
-    /**
-     * The offset specifies the left edge of the crop rectangle that is located to
-     * the right of the original bounding rectangle left edge, relative to the
-     * object's original width.
-     *
-     * @var float
-     */
-    public $leftOffset;
-    /**
-     * The offset specifies the right edge of the crop rectangle that is located
-     * to the left of the original bounding rectangle right edge, relative to the
-     * object's original width.
-     *
-     * @var float
-     */
-    public $rightOffset;
-    /**
-     * The offset specifies the top edge of the crop rectangle that is located
-     * below the original bounding rectangle top edge, relative to the object's
-     * original height.
-     *
-     * @var float
-     */
-    public $topOffset;
-    /**
-     * The rotation angle of the crop window around its center, in radians.
-     * Rotation angle is applied after the offset.
-     *
-     * @param float $angle
-     */
-    public function setAngle($angle)
+namespace Google\Service\Slides {
+    class CropProperties extends \Google\Model
     {
+        /**
+         * The rotation angle of the crop window around its center, in radians.
+         * Rotation angle is applied after the offset.
+         *
+         * @var float
+         */
+        public $angle;
+        /**
+         * The offset specifies the bottom edge of the crop rectangle that is located
+         * above the original bounding rectangle bottom edge, relative to the object's
+         * original height.
+         *
+         * @var float
+         */
+        public $bottomOffset;
+        /**
+         * The offset specifies the left edge of the crop rectangle that is located to
+         * the right of the original bounding rectangle left edge, relative to the
+         * object's original width.
+         *
+         * @var float
+         */
+        public $leftOffset;
+        /**
+         * The offset specifies the right edge of the crop rectangle that is located
+         * to the left of the original bounding rectangle right edge, relative to the
+         * object's original width.
+         *
+         * @var float
+         */
+        public $rightOffset;
+        /**
+         * The offset specifies the top edge of the crop rectangle that is located
+         * below the original bounding rectangle top edge, relative to the object's
+         * original height.
+         *
+         * @var float
+         */
+        public $topOffset;
+        /**
+         * The rotation angle of the crop window around its center, in radians.
+         * Rotation angle is applied after the offset.
+         *
+         * @param float $angle
+         */
+        public function setAngle($angle)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAngle()
+        {
+        }
+        /**
+         * The offset specifies the bottom edge of the crop rectangle that is located
+         * above the original bounding rectangle bottom edge, relative to the object's
+         * original height.
+         *
+         * @param float $bottomOffset
+         */
+        public function setBottomOffset($bottomOffset)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBottomOffset()
+        {
+        }
+        /**
+         * The offset specifies the left edge of the crop rectangle that is located to
+         * the right of the original bounding rectangle left edge, relative to the
+         * object's original width.
+         *
+         * @param float $leftOffset
+         */
+        public function setLeftOffset($leftOffset)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLeftOffset()
+        {
+        }
+        /**
+         * The offset specifies the right edge of the crop rectangle that is located
+         * to the left of the original bounding rectangle right edge, relative to the
+         * object's original width.
+         *
+         * @param float $rightOffset
+         */
+        public function setRightOffset($rightOffset)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRightOffset()
+        {
+        }
+        /**
+         * The offset specifies the top edge of the crop rectangle that is located
+         * below the original bounding rectangle top edge, relative to the object's
+         * original height.
+         *
+         * @param float $topOffset
+         */
+        public function setTopOffset($topOffset)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTopOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Slides\CropProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAngle()
-    {
-    }
-    /**
-     * The offset specifies the bottom edge of the crop rectangle that is located
-     * above the original bounding rectangle bottom edge, relative to the object's
-     * original height.
-     *
-     * @param float $bottomOffset
-     */
-    public function setBottomOffset($bottomOffset)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBottomOffset()
-    {
-    }
-    /**
-     * The offset specifies the left edge of the crop rectangle that is located to
-     * the right of the original bounding rectangle left edge, relative to the
-     * object's original width.
-     *
-     * @param float $leftOffset
-     */
-    public function setLeftOffset($leftOffset)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLeftOffset()
-    {
-    }
-    /**
-     * The offset specifies the right edge of the crop rectangle that is located
-     * to the left of the original bounding rectangle right edge, relative to the
-     * object's original width.
-     *
-     * @param float $rightOffset
-     */
-    public function setRightOffset($rightOffset)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRightOffset()
-    {
-    }
-    /**
-     * The offset specifies the top edge of the crop rectangle that is located
-     * below the original bounding rectangle top edge, relative to the object's
-     * original height.
-     *
-     * @param float $topOffset
-     */
-    public function setTopOffset($topOffset)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTopOffset()
+    class Google_Service_Slides_CropProperties extends \Google\Service\Slides\CropProperties
     {
     }
 }

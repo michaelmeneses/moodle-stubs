@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MapTask extends \Google\Collection
-{
-    protected $collection_key = 'instructions';
-    /**
-     * Counter prefix that can be used to prefix counters. Not currently used in
-     * Dataflow.
-     *
-     * @var string
-     */
-    public $counterPrefix;
-    protected $instructionsType = ParallelInstruction::class;
-    protected $instructionsDataType = 'array';
-    /**
-     * System-defined name of the stage containing this MapTask. Unique across the
-     * workflow.
-     *
-     * @var string
-     */
-    public $stageName;
-    /**
-     * System-defined name of this MapTask. Unique across the workflow.
-     *
-     * @var string
-     */
-    public $systemName;
-    /**
-     * Counter prefix that can be used to prefix counters. Not currently used in
-     * Dataflow.
-     *
-     * @param string $counterPrefix
-     */
-    public function setCounterPrefix($counterPrefix)
+namespace Google\Service\Dataflow {
+    class MapTask extends \Google\Collection
     {
+        protected $collection_key = 'instructions';
+        /**
+         * Counter prefix that can be used to prefix counters. Not currently used in
+         * Dataflow.
+         *
+         * @var string
+         */
+        public $counterPrefix;
+        protected $instructionsType = ParallelInstruction::class;
+        protected $instructionsDataType = 'array';
+        /**
+         * System-defined name of the stage containing this MapTask. Unique across the
+         * workflow.
+         *
+         * @var string
+         */
+        public $stageName;
+        /**
+         * System-defined name of this MapTask. Unique across the workflow.
+         *
+         * @var string
+         */
+        public $systemName;
+        /**
+         * Counter prefix that can be used to prefix counters. Not currently used in
+         * Dataflow.
+         *
+         * @param string $counterPrefix
+         */
+        public function setCounterPrefix($counterPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCounterPrefix()
+        {
+        }
+        /**
+         * The instructions in the MapTask.
+         *
+         * @param ParallelInstruction[] $instructions
+         */
+        public function setInstructions($instructions)
+        {
+        }
+        /**
+         * @return ParallelInstruction[]
+         */
+        public function getInstructions()
+        {
+        }
+        /**
+         * System-defined name of the stage containing this MapTask. Unique across the
+         * workflow.
+         *
+         * @param string $stageName
+         */
+        public function setStageName($stageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageName()
+        {
+        }
+        /**
+         * System-defined name of this MapTask. Unique across the workflow.
+         *
+         * @param string $systemName
+         */
+        public function setSystemName($systemName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\MapTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCounterPrefix()
-    {
-    }
-    /**
-     * The instructions in the MapTask.
-     *
-     * @param ParallelInstruction[] $instructions
-     */
-    public function setInstructions($instructions)
-    {
-    }
-    /**
-     * @return ParallelInstruction[]
-     */
-    public function getInstructions()
-    {
-    }
-    /**
-     * System-defined name of the stage containing this MapTask. Unique across the
-     * workflow.
-     *
-     * @param string $stageName
-     */
-    public function setStageName($stageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageName()
-    {
-    }
-    /**
-     * System-defined name of this MapTask. Unique across the workflow.
-     *
-     * @param string $systemName
-     */
-    public function setSystemName($systemName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemName()
+    class Google_Service_Dataflow_MapTask extends \Google\Service\Dataflow\MapTask
     {
     }
 }

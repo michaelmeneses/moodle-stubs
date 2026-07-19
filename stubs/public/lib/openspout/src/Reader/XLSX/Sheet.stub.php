@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Reader\Common\ColumnWidth;
+use OpenSpout\Reader\SheetWithMergeCellsInterface;
+use OpenSpout\Reader\SheetWithVisibilityInterface;
 /**
  * @implements SheetWithVisibilityInterface<RowIterator>
  * @implements SheetWithMergeCellsInterface<RowIterator>

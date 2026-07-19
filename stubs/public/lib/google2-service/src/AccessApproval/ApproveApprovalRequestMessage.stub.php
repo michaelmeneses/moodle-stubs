@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class ApproveApprovalRequestMessage extends \Google\Model
-{
-    /**
-     * The expiration time of this approval.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The expiration time of this approval.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\AccessApproval {
+    class ApproveApprovalRequestMessage extends \Google\Model
     {
+        /**
+         * The expiration time of this approval.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The expiration time of this approval.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessApproval\ApproveApprovalRequestMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
+    class Google_Service_AccessApproval_ApproveApprovalRequestMessage extends \Google\Service\AccessApproval\ApproveApprovalRequestMessage
     {
     }
 }

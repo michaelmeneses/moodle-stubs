@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateBccRecipients extends \Google\Collection
-{
-    protected $collection_key = 'bccRecipients';
-    protected $bccRecipientsType = Recipient::class;
-    protected $bccRecipientsDataType = 'array';
-    /**
-     * @param Recipient[]
-     */
-    public function setBccRecipients($bccRecipients)
+namespace Google\Service\CloudSearch {
+    class UpdateBccRecipients extends \Google\Collection
     {
+        protected $collection_key = 'bccRecipients';
+        protected $bccRecipientsType = Recipient::class;
+        protected $bccRecipientsDataType = 'array';
+        /**
+         * @param Recipient[]
+         */
+        public function setBccRecipients($bccRecipients)
+        {
+        }
+        /**
+         * @return Recipient[]
+         */
+        public function getBccRecipients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Recipient[]
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateBccRecipients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBccRecipients()
+    class Google_Service_CloudSearch_UpdateBccRecipients extends \Google\Service\CloudSearch\UpdateBccRecipients
     {
     }
 }

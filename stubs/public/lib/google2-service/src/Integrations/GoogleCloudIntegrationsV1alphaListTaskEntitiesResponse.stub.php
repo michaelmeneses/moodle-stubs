@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'taskEntities';
-    protected $taskEntitiesType = EnterpriseCrmFrontendsEventbusProtoTaskEntity::class;
-    protected $taskEntitiesDataType = 'array';
-    public $taskEntities;
-    /**
-     * @param EnterpriseCrmFrontendsEventbusProtoTaskEntity[]
-     */
-    public function setTaskEntities($taskEntities)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'taskEntities';
+        protected $taskEntitiesType = EnterpriseCrmFrontendsEventbusProtoTaskEntity::class;
+        protected $taskEntitiesDataType = 'array';
+        public $taskEntities;
+        /**
+         * @param EnterpriseCrmFrontendsEventbusProtoTaskEntity[]
+         */
+        public function setTaskEntities($taskEntities)
+        {
+        }
+        /**
+         * @return EnterpriseCrmFrontendsEventbusProtoTaskEntity[]
+         */
+        public function getTaskEntities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmFrontendsEventbusProtoTaskEntity[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaskEntities()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse
     {
     }
 }

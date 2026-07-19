@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution\Resource;
-
-/**
- * The "apps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappdistributionService = new Google\Service\FirebaseAppDistribution(...);
- *   $apps = $firebaseappdistributionService->projects_apps;
- *  </code>
- */
-class ProjectsApps extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseAppDistribution\Resource {
+    use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1AabInfo;
     /**
-     * Gets Android App Bundle (AAB) information for a Firebase app.
-     * (apps.getAabInfo)
-     *
-     * @param string $name Required. The name of the `AabInfo` resource to retrieve.
-     * Format: `projects/{project_number}/apps/{app}/aabInfo`
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppdistroV1AabInfo
-     * @throws \Google\Service\Exception
+     * The "apps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappdistributionService = new Google\Service\FirebaseAppDistribution(...);
+     *   $apps = $firebaseappdistributionService->projects_apps;
+     *  </code>
      */
-    public function getAabInfo($name, $optParams = [])
+    class ProjectsApps extends \Google\Service\Resource
+    {
+        /**
+         * Gets Android App Bundle (AAB) information for a Firebase app.
+         * (apps.getAabInfo)
+         *
+         * @param string $name Required. The name of the `AabInfo` resource to retrieve.
+         * Format: `projects/{project_number}/apps/{app}/aabInfo`
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppdistroV1AabInfo
+         * @throws \Google\Service\Exception
+         */
+        public function getAabInfo($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\Resource\ProjectsApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseAppDistribution_Resource_ProjectsApps extends \Google\Service\FirebaseAppDistribution\Resource\ProjectsApps
     {
     }
 }

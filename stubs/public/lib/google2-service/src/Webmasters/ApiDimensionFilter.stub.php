@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class ApiDimensionFilter extends \Google\Model
-{
-    public $dimension;
-    public $expression;
-    public $operator;
-    public function setDimension($dimension)
+namespace Google\Service\Webmasters {
+    class ApiDimensionFilter extends \Google\Model
     {
+        public $dimension;
+        public $expression;
+        public $operator;
+        public function setDimension($dimension)
+        {
+        }
+        public function getDimension()
+        {
+        }
+        public function setExpression($expression)
+        {
+        }
+        public function getExpression()
+        {
+        }
+        public function setOperator($operator)
+        {
+        }
+        public function getOperator()
+        {
+        }
     }
-    public function getDimension()
-    {
-    }
-    public function setExpression($expression)
-    {
-    }
-    public function getExpression()
-    {
-    }
-    public function setOperator($operator)
-    {
-    }
-    public function getOperator()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webmasters\ApiDimensionFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webmasters_ApiDimensionFilter extends \Google\Service\Webmasters\ApiDimensionFilter
     {
     }
 }

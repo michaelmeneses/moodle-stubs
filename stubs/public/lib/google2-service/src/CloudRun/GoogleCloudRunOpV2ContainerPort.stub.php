@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2ContainerPort extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $containerPort;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param int
-     */
-    public function setContainerPort($containerPort)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2ContainerPort extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $containerPort;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param int
+         */
+        public function setContainerPort($containerPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerPort()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2ContainerPort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerPort()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2ContainerPort extends \Google\Service\CloudRun\GoogleCloudRunOpV2ContainerPort
     {
     }
 }

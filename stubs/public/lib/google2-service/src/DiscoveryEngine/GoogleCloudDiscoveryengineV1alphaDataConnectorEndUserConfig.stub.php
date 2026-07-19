@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDataConnectorEndUserConfig extends \Google\Model
-{
-    /**
-     * Optional. Any additional parameters needed for EUA.
-     *
-     * @var array[]
-     */
-    public $additionalParams;
-    /**
-     * Optional. Any authentication parameters specific to EUA connectors.
-     *
-     * @var array[]
-     */
-    public $authParams;
-    /**
-     * Optional. Any authentication parameters specific to EUA connectors in json
-     * string format.
-     *
-     * @var string
-     */
-    public $jsonAuthParams;
-    protected $tenantType = GoogleCloudDiscoveryengineV1alphaTenant::class;
-    protected $tenantDataType = '';
-    /**
-     * Optional. Any additional parameters needed for EUA.
-     *
-     * @param array[] $additionalParams
-     */
-    public function setAdditionalParams($additionalParams)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDataConnectorEndUserConfig extends \Google\Model
     {
+        /**
+         * Optional. Any additional parameters needed for EUA.
+         *
+         * @var array[]
+         */
+        public $additionalParams;
+        /**
+         * Optional. Any authentication parameters specific to EUA connectors.
+         *
+         * @var array[]
+         */
+        public $authParams;
+        /**
+         * Optional. Any authentication parameters specific to EUA connectors in json
+         * string format.
+         *
+         * @var string
+         */
+        public $jsonAuthParams;
+        protected $tenantType = GoogleCloudDiscoveryengineV1alphaTenant::class;
+        protected $tenantDataType = '';
+        /**
+         * Optional. Any additional parameters needed for EUA.
+         *
+         * @param array[] $additionalParams
+         */
+        public function setAdditionalParams($additionalParams)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAdditionalParams()
+        {
+        }
+        /**
+         * Optional. Any authentication parameters specific to EUA connectors.
+         *
+         * @param array[] $authParams
+         */
+        public function setAuthParams($authParams)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAuthParams()
+        {
+        }
+        /**
+         * Optional. Any authentication parameters specific to EUA connectors in json
+         * string format.
+         *
+         * @param string $jsonAuthParams
+         */
+        public function setJsonAuthParams($jsonAuthParams)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonAuthParams()
+        {
+        }
+        /**
+         * Optional. The tenant project the connector is connected to.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaTenant $tenant
+         */
+        public function setTenant(GoogleCloudDiscoveryengineV1alphaTenant $tenant)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaTenant
+         */
+        public function getTenant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDataConnectorEndUserConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalParams()
-    {
-    }
-    /**
-     * Optional. Any authentication parameters specific to EUA connectors.
-     *
-     * @param array[] $authParams
-     */
-    public function setAuthParams($authParams)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getAuthParams()
-    {
-    }
-    /**
-     * Optional. Any authentication parameters specific to EUA connectors in json
-     * string format.
-     *
-     * @param string $jsonAuthParams
-     */
-    public function setJsonAuthParams($jsonAuthParams)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonAuthParams()
-    {
-    }
-    /**
-     * Optional. The tenant project the connector is connected to.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaTenant $tenant
-     */
-    public function setTenant(GoogleCloudDiscoveryengineV1alphaTenant $tenant)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaTenant
-     */
-    public function getTenant()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDataConnectorEndUserConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDataConnectorEndUserConfig
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class GetContainerSnippetResponse extends \Google\Model
-{
-    /**
-     * Server container config param for manually provisioning a tagging server.
-     *
-     * @var string
-     */
-    public $containerConfig;
-    /**
-     * Tagging snippet for a Container.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * Server container config param for manually provisioning a tagging server.
-     *
-     * @param string $containerConfig
-     */
-    public function setContainerConfig($containerConfig)
+namespace Google\Service\TagManager {
+    class GetContainerSnippetResponse extends \Google\Model
     {
+        /**
+         * Server container config param for manually provisioning a tagging server.
+         *
+         * @var string
+         */
+        public $containerConfig;
+        /**
+         * Tagging snippet for a Container.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * Server container config param for manually provisioning a tagging server.
+         *
+         * @param string $containerConfig
+         */
+        public function setContainerConfig($containerConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerConfig()
+        {
+        }
+        /**
+         * Tagging snippet for a Container.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\GetContainerSnippetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerConfig()
-    {
-    }
-    /**
-     * Tagging snippet for a Container.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
+    class Google_Service_TagManager_GetContainerSnippetResponse extends \Google\Service\TagManager\GetContainerSnippetResponse
     {
     }
 }

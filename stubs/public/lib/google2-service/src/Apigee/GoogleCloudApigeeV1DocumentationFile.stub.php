@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DocumentationFile extends \Google\Model
-{
-    /**
-     * Required. The file contents. The max size is 4 MB.
-     *
-     * @var string
-     */
-    public $contents;
-    /**
-     * Required. A display name for the file, shown in the management UI. Max
-     * length is 255 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The file contents. The max size is 4 MB.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DocumentationFile extends \Google\Model
     {
+        /**
+         * Required. The file contents. The max size is 4 MB.
+         *
+         * @var string
+         */
+        public $contents;
+        /**
+         * Required. A display name for the file, shown in the management UI. Max
+         * length is 255 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The file contents. The max size is 4 MB.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Required. A display name for the file, shown in the management UI. Max
+         * length is 255 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DocumentationFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Required. A display name for the file, shown in the management UI. Max
-     * length is 255 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DocumentationFile extends \Google\Service\Apigee\GoogleCloudApigeeV1DocumentationFile
     {
     }
 }

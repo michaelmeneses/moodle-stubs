@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1betaCreateOrgPolicyViolationsPreviewOperationMetadata extends \Google\Model
-{
-    /**
-     * The state is unspecified.
-     */
-    public const STATE_PREVIEW_STATE_UNSPECIFIED = 'PREVIEW_STATE_UNSPECIFIED';
-    /**
-     * The OrgPolicyViolationsPreview has not been created yet.
-     */
-    public const STATE_PREVIEW_PENDING = 'PREVIEW_PENDING';
-    /**
-     * The OrgPolicyViolationsPreview is currently being created.
-     */
-    public const STATE_PREVIEW_RUNNING = 'PREVIEW_RUNNING';
-    /**
-     * The OrgPolicyViolationsPreview creation finished successfully.
-     */
-    public const STATE_PREVIEW_SUCCEEDED = 'PREVIEW_SUCCEEDED';
-    /**
-     * The OrgPolicyViolationsPreview creation failed with an error.
-     */
-    public const STATE_PREVIEW_FAILED = 'PREVIEW_FAILED';
-    /**
-     * Time when the request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * Total number of resources that need scanning. Should equal resource_scanned
-     * + resources_pending
-     *
-     * @var int
-     */
-    public $resourcesFound;
-    /**
-     * Number of resources still to scan.
-     *
-     * @var int
-     */
-    public $resourcesPending;
-    /**
-     * Number of resources already scanned.
-     *
-     * @var int
-     */
-    public $resourcesScanned;
-    /**
-     * Time when the request started processing, i.e., when the state was set to
-     * RUNNING.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The current state of the operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Time when the request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1betaCreateOrgPolicyViolationsPreviewOperationMetadata extends \Google\Model
     {
+        /**
+         * The state is unspecified.
+         */
+        public const STATE_PREVIEW_STATE_UNSPECIFIED = 'PREVIEW_STATE_UNSPECIFIED';
+        /**
+         * The OrgPolicyViolationsPreview has not been created yet.
+         */
+        public const STATE_PREVIEW_PENDING = 'PREVIEW_PENDING';
+        /**
+         * The OrgPolicyViolationsPreview is currently being created.
+         */
+        public const STATE_PREVIEW_RUNNING = 'PREVIEW_RUNNING';
+        /**
+         * The OrgPolicyViolationsPreview creation finished successfully.
+         */
+        public const STATE_PREVIEW_SUCCEEDED = 'PREVIEW_SUCCEEDED';
+        /**
+         * The OrgPolicyViolationsPreview creation failed with an error.
+         */
+        public const STATE_PREVIEW_FAILED = 'PREVIEW_FAILED';
+        /**
+         * Time when the request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * Total number of resources that need scanning. Should equal resource_scanned
+         * + resources_pending
+         *
+         * @var int
+         */
+        public $resourcesFound;
+        /**
+         * Number of resources still to scan.
+         *
+         * @var int
+         */
+        public $resourcesPending;
+        /**
+         * Number of resources already scanned.
+         *
+         * @var int
+         */
+        public $resourcesScanned;
+        /**
+         * Time when the request started processing, i.e., when the state was set to
+         * RUNNING.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The current state of the operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Time when the request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * Total number of resources that need scanning. Should equal resource_scanned
+         * + resources_pending
+         *
+         * @param int $resourcesFound
+         */
+        public function setResourcesFound($resourcesFound)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourcesFound()
+        {
+        }
+        /**
+         * Number of resources still to scan.
+         *
+         * @param int $resourcesPending
+         */
+        public function setResourcesPending($resourcesPending)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourcesPending()
+        {
+        }
+        /**
+         * Number of resources already scanned.
+         *
+         * @param int $resourcesScanned
+         */
+        public function setResourcesScanned($resourcesScanned)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourcesScanned()
+        {
+        }
+        /**
+         * Time when the request started processing, i.e., when the state was set to
+         * RUNNING.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. The current state of the operation.
+         *
+         * Accepted values: PREVIEW_STATE_UNSPECIFIED, PREVIEW_PENDING,
+         * PREVIEW_RUNNING, PREVIEW_SUCCEEDED, PREVIEW_FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1betaCreateOrgPolicyViolationsPreviewOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * Total number of resources that need scanning. Should equal resource_scanned
-     * + resources_pending
-     *
-     * @param int $resourcesFound
-     */
-    public function setResourcesFound($resourcesFound)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourcesFound()
-    {
-    }
-    /**
-     * Number of resources still to scan.
-     *
-     * @param int $resourcesPending
-     */
-    public function setResourcesPending($resourcesPending)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourcesPending()
-    {
-    }
-    /**
-     * Number of resources already scanned.
-     *
-     * @param int $resourcesScanned
-     */
-    public function setResourcesScanned($resourcesScanned)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourcesScanned()
-    {
-    }
-    /**
-     * Time when the request started processing, i.e., when the state was set to
-     * RUNNING.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. The current state of the operation.
-     *
-     * Accepted values: PREVIEW_STATE_UNSPECIFIED, PREVIEW_PENDING,
-     * PREVIEW_RUNNING, PREVIEW_SUCCEEDED, PREVIEW_FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1betaCreateOrgPolicyViolationsPreviewOperationMetadata extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1betaCreateOrgPolicyViolationsPreviewOperationMetadata
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class FailoverInstanceRequest extends \Google\Model
-{
-    /**
-     * Defaults to LIMITED_DATA_LOSS if a data protection mode is not specified.
-     */
-    public const DATA_PROTECTION_MODE_DATA_PROTECTION_MODE_UNSPECIFIED = 'DATA_PROTECTION_MODE_UNSPECIFIED';
-    /**
-     * Instance failover will be protected with data loss control. More
-     * specifically, the failover will only be performed if the current
-     * replication offset diff between primary and replica is under a certain
-     * threshold.
-     */
-    public const DATA_PROTECTION_MODE_LIMITED_DATA_LOSS = 'LIMITED_DATA_LOSS';
-    /**
-     * Instance failover will be performed without data loss control.
-     */
-    public const DATA_PROTECTION_MODE_FORCE_DATA_LOSS = 'FORCE_DATA_LOSS';
-    /**
-     * Optional. Available data protection modes that the user can choose. If it's
-     * unspecified, data protection mode will be LIMITED_DATA_LOSS by default.
-     *
-     * @var string
-     */
-    public $dataProtectionMode;
-    /**
-     * Optional. Available data protection modes that the user can choose. If it's
-     * unspecified, data protection mode will be LIMITED_DATA_LOSS by default.
-     *
-     * Accepted values: DATA_PROTECTION_MODE_UNSPECIFIED, LIMITED_DATA_LOSS,
-     * FORCE_DATA_LOSS
-     *
-     * @param self::DATA_PROTECTION_MODE_* $dataProtectionMode
-     */
-    public function setDataProtectionMode($dataProtectionMode)
+namespace Google\Service\CloudRedis {
+    class FailoverInstanceRequest extends \Google\Model
     {
+        /**
+         * Defaults to LIMITED_DATA_LOSS if a data protection mode is not specified.
+         */
+        public const DATA_PROTECTION_MODE_DATA_PROTECTION_MODE_UNSPECIFIED = 'DATA_PROTECTION_MODE_UNSPECIFIED';
+        /**
+         * Instance failover will be protected with data loss control. More
+         * specifically, the failover will only be performed if the current
+         * replication offset diff between primary and replica is under a certain
+         * threshold.
+         */
+        public const DATA_PROTECTION_MODE_LIMITED_DATA_LOSS = 'LIMITED_DATA_LOSS';
+        /**
+         * Instance failover will be performed without data loss control.
+         */
+        public const DATA_PROTECTION_MODE_FORCE_DATA_LOSS = 'FORCE_DATA_LOSS';
+        /**
+         * Optional. Available data protection modes that the user can choose. If it's
+         * unspecified, data protection mode will be LIMITED_DATA_LOSS by default.
+         *
+         * @var string
+         */
+        public $dataProtectionMode;
+        /**
+         * Optional. Available data protection modes that the user can choose. If it's
+         * unspecified, data protection mode will be LIMITED_DATA_LOSS by default.
+         *
+         * Accepted values: DATA_PROTECTION_MODE_UNSPECIFIED, LIMITED_DATA_LOSS,
+         * FORCE_DATA_LOSS
+         *
+         * @param self::DATA_PROTECTION_MODE_* $dataProtectionMode
+         */
+        public function setDataProtectionMode($dataProtectionMode)
+        {
+        }
+        /**
+         * @return self::DATA_PROTECTION_MODE_*
+         */
+        public function getDataProtectionMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_PROTECTION_MODE_*
+     * Runtime class alias of \Google\Service\CloudRedis\FailoverInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataProtectionMode()
+    class Google_Service_CloudRedis_FailoverInstanceRequest extends \Google\Service\CloudRedis\FailoverInstanceRequest
     {
     }
 }

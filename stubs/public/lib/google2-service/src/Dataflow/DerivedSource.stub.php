@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DerivedSource extends \Google\Model
-{
-    /**
-     * The source derivation is unknown, or unspecified.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_UNKNOWN = 'SOURCE_DERIVATION_MODE_UNKNOWN';
-    /**
-     * Produce a completely independent Source with no base.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_INDEPENDENT = 'SOURCE_DERIVATION_MODE_INDEPENDENT';
-    /**
-     * Produce a Source based on the Source being split.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT = 'SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT';
-    /**
-     * Produce a Source based on the base of the Source being split.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT = 'SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT';
-    /**
-     * What source to base the produced source on (if any).
-     *
-     * @var string
-     */
-    public $derivationMode;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * What source to base the produced source on (if any).
-     *
-     * Accepted values: SOURCE_DERIVATION_MODE_UNKNOWN,
-     * SOURCE_DERIVATION_MODE_INDEPENDENT,
-     * SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT,
-     * SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT
-     *
-     * @param self::DERIVATION_MODE_* $derivationMode
-     */
-    public function setDerivationMode($derivationMode)
+namespace Google\Service\Dataflow {
+    class DerivedSource extends \Google\Model
     {
+        /**
+         * The source derivation is unknown, or unspecified.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_UNKNOWN = 'SOURCE_DERIVATION_MODE_UNKNOWN';
+        /**
+         * Produce a completely independent Source with no base.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_INDEPENDENT = 'SOURCE_DERIVATION_MODE_INDEPENDENT';
+        /**
+         * Produce a Source based on the Source being split.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT = 'SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT';
+        /**
+         * Produce a Source based on the base of the Source being split.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT = 'SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT';
+        /**
+         * What source to base the produced source on (if any).
+         *
+         * @var string
+         */
+        public $derivationMode;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * What source to base the produced source on (if any).
+         *
+         * Accepted values: SOURCE_DERIVATION_MODE_UNKNOWN,
+         * SOURCE_DERIVATION_MODE_INDEPENDENT,
+         * SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT,
+         * SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT
+         *
+         * @param self::DERIVATION_MODE_* $derivationMode
+         */
+        public function setDerivationMode($derivationMode)
+        {
+        }
+        /**
+         * @return self::DERIVATION_MODE_*
+         */
+        public function getDerivationMode()
+        {
+        }
+        /**
+         * Specification of the source.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DERIVATION_MODE_*
+     * Runtime class alias of \Google\Service\Dataflow\DerivedSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDerivationMode()
-    {
-    }
-    /**
-     * Specification of the source.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_Dataflow_DerivedSource extends \Google\Service\Dataflow\DerivedSource
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class QueryInterpretationOptions extends \Google\Model
-{
-    /**
-     * Flag to disable natural language (NL) interpretation of queries. Default is
-     * false, Set to true to disable natural language interpretation. NL
-     * interpretation only applies to predefined datasources.
-     *
-     * @var bool
-     */
-    public $disableNlInterpretation;
-    /**
-     * Use this flag to disable supplemental results for a query. Supplemental
-     * results setting chosen at SearchApplication level will take precedence if
-     * set to True.
-     *
-     * @var bool
-     */
-    public $disableSupplementalResults;
-    /**
-     * Enable this flag to turn off all internal optimizations like natural
-     * language (NL) interpretation of queries, supplemental result retrieval, and
-     * usage of synonyms including custom ones. Nl interpretation will be disabled
-     * if either one of the two flags is true.
-     *
-     * @var bool
-     */
-    public $enableVerbatimMode;
-    /**
-     * Flag to disable natural language (NL) interpretation of queries. Default is
-     * false, Set to true to disable natural language interpretation. NL
-     * interpretation only applies to predefined datasources.
-     *
-     * @param bool $disableNlInterpretation
-     */
-    public function setDisableNlInterpretation($disableNlInterpretation)
+namespace Google\Service\CloudSearch {
+    class QueryInterpretationOptions extends \Google\Model
     {
+        /**
+         * Flag to disable natural language (NL) interpretation of queries. Default is
+         * false, Set to true to disable natural language interpretation. NL
+         * interpretation only applies to predefined datasources.
+         *
+         * @var bool
+         */
+        public $disableNlInterpretation;
+        /**
+         * Use this flag to disable supplemental results for a query. Supplemental
+         * results setting chosen at SearchApplication level will take precedence if
+         * set to True.
+         *
+         * @var bool
+         */
+        public $disableSupplementalResults;
+        /**
+         * Enable this flag to turn off all internal optimizations like natural
+         * language (NL) interpretation of queries, supplemental result retrieval, and
+         * usage of synonyms including custom ones. Nl interpretation will be disabled
+         * if either one of the two flags is true.
+         *
+         * @var bool
+         */
+        public $enableVerbatimMode;
+        /**
+         * Flag to disable natural language (NL) interpretation of queries. Default is
+         * false, Set to true to disable natural language interpretation. NL
+         * interpretation only applies to predefined datasources.
+         *
+         * @param bool $disableNlInterpretation
+         */
+        public function setDisableNlInterpretation($disableNlInterpretation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableNlInterpretation()
+        {
+        }
+        /**
+         * Use this flag to disable supplemental results for a query. Supplemental
+         * results setting chosen at SearchApplication level will take precedence if
+         * set to True.
+         *
+         * @param bool $disableSupplementalResults
+         */
+        public function setDisableSupplementalResults($disableSupplementalResults)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableSupplementalResults()
+        {
+        }
+        /**
+         * Enable this flag to turn off all internal optimizations like natural
+         * language (NL) interpretation of queries, supplemental result retrieval, and
+         * usage of synonyms including custom ones. Nl interpretation will be disabled
+         * if either one of the two flags is true.
+         *
+         * @param bool $enableVerbatimMode
+         */
+        public function setEnableVerbatimMode($enableVerbatimMode)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableVerbatimMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\QueryInterpretationOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableNlInterpretation()
-    {
-    }
-    /**
-     * Use this flag to disable supplemental results for a query. Supplemental
-     * results setting chosen at SearchApplication level will take precedence if
-     * set to True.
-     *
-     * @param bool $disableSupplementalResults
-     */
-    public function setDisableSupplementalResults($disableSupplementalResults)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableSupplementalResults()
-    {
-    }
-    /**
-     * Enable this flag to turn off all internal optimizations like natural
-     * language (NL) interpretation of queries, supplemental result retrieval, and
-     * usage of synonyms including custom ones. Nl interpretation will be disabled
-     * if either one of the two flags is true.
-     *
-     * @param bool $enableVerbatimMode
-     */
-    public function setEnableVerbatimMode($enableVerbatimMode)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableVerbatimMode()
+    class Google_Service_CloudSearch_QueryInterpretationOptions extends \Google\Service\CloudSearch\QueryInterpretationOptions
     {
     }
 }

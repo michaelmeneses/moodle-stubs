@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class AccessSecretVersionResponse extends \Google\Model
-{
-    /**
-     * The resource name of the SecretVersion in the format
-     * `projects/secrets/versions` or `projects/locations/secrets/versions`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $payloadType = SecretPayload::class;
-    protected $payloadDataType = '';
-    /**
-     * The resource name of the SecretVersion in the format
-     * `projects/secrets/versions` or `projects/locations/secrets/versions`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecretManager {
+    class AccessSecretVersionResponse extends \Google\Model
     {
+        /**
+         * The resource name of the SecretVersion in the format
+         * `projects/secrets/versions` or `projects/locations/secrets/versions`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $payloadType = SecretPayload::class;
+        protected $payloadDataType = '';
+        /**
+         * The resource name of the SecretVersion in the format
+         * `projects/secrets/versions` or `projects/locations/secrets/versions`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Secret payload
+         *
+         * @param SecretPayload $payload
+         */
+        public function setPayload(SecretPayload $payload)
+        {
+        }
+        /**
+         * @return SecretPayload
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\AccessSecretVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Secret payload
-     *
-     * @param SecretPayload $payload
-     */
-    public function setPayload(SecretPayload $payload)
-    {
-    }
-    /**
-     * @return SecretPayload
-     */
-    public function getPayload()
+    class Google_Service_SecretManager_AccessSecretVersionResponse extends \Google\Service\SecretManager\AccessSecretVersionResponse
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class PasswordPoliciesContext extends \Google\Model
-{
-    /**
-     * The scope is unspecified. The password requirements are applied to the work
-     * profile for work profile devices and the whole device for fully managed or
-     * dedicated devices.
-     */
-    public const PASSWORD_POLICY_SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
-    /**
-     * The password requirements are only applied to the device.
-     */
-    public const PASSWORD_POLICY_SCOPE_SCOPE_DEVICE = 'SCOPE_DEVICE';
-    /**
-     * The password requirements are only applied to the work profile.
-     */
-    public const PASSWORD_POLICY_SCOPE_SCOPE_PROFILE = 'SCOPE_PROFILE';
-    /**
-     * The scope of non-compliant password.
-     *
-     * @var string
-     */
-    public $passwordPolicyScope;
-    /**
-     * The scope of non-compliant password.
-     *
-     * Accepted values: SCOPE_UNSPECIFIED, SCOPE_DEVICE, SCOPE_PROFILE
-     *
-     * @param self::PASSWORD_POLICY_SCOPE_* $passwordPolicyScope
-     */
-    public function setPasswordPolicyScope($passwordPolicyScope)
+namespace Google\Service\AndroidManagement {
+    class PasswordPoliciesContext extends \Google\Model
     {
+        /**
+         * The scope is unspecified. The password requirements are applied to the work
+         * profile for work profile devices and the whole device for fully managed or
+         * dedicated devices.
+         */
+        public const PASSWORD_POLICY_SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
+        /**
+         * The password requirements are only applied to the device.
+         */
+        public const PASSWORD_POLICY_SCOPE_SCOPE_DEVICE = 'SCOPE_DEVICE';
+        /**
+         * The password requirements are only applied to the work profile.
+         */
+        public const PASSWORD_POLICY_SCOPE_SCOPE_PROFILE = 'SCOPE_PROFILE';
+        /**
+         * The scope of non-compliant password.
+         *
+         * @var string
+         */
+        public $passwordPolicyScope;
+        /**
+         * The scope of non-compliant password.
+         *
+         * Accepted values: SCOPE_UNSPECIFIED, SCOPE_DEVICE, SCOPE_PROFILE
+         *
+         * @param self::PASSWORD_POLICY_SCOPE_* $passwordPolicyScope
+         */
+        public function setPasswordPolicyScope($passwordPolicyScope)
+        {
+        }
+        /**
+         * @return self::PASSWORD_POLICY_SCOPE_*
+         */
+        public function getPasswordPolicyScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PASSWORD_POLICY_SCOPE_*
+     * Runtime class alias of \Google\Service\AndroidManagement\PasswordPoliciesContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPasswordPolicyScope()
+    class Google_Service_AndroidManagement_PasswordPoliciesContext extends \Google\Service\AndroidManagement\PasswordPoliciesContext
     {
     }
 }

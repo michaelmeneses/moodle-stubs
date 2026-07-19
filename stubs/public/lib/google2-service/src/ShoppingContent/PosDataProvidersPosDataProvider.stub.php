@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PosDataProvidersPosDataProvider extends \Google\Model
-{
-    /**
-     * The display name of Pos data Provider.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The full name of this POS data Provider.
-     *
-     * @var string
-     */
-    public $fullName;
-    /**
-     * The ID of the account.
-     *
-     * @var string
-     */
-    public $providerId;
-    /**
-     * The display name of Pos data Provider.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\ShoppingContent {
+    class PosDataProvidersPosDataProvider extends \Google\Model
     {
+        /**
+         * The display name of Pos data Provider.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The full name of this POS data Provider.
+         *
+         * @var string
+         */
+        public $fullName;
+        /**
+         * The ID of the account.
+         *
+         * @var string
+         */
+        public $providerId;
+        /**
+         * The display name of Pos data Provider.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The full name of this POS data Provider.
+         *
+         * @param string $fullName
+         */
+        public function setFullName($fullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullName()
+        {
+        }
+        /**
+         * The ID of the account.
+         *
+         * @param string $providerId
+         */
+        public function setProviderId($providerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PosDataProvidersPosDataProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The full name of this POS data Provider.
-     *
-     * @param string $fullName
-     */
-    public function setFullName($fullName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullName()
-    {
-    }
-    /**
-     * The ID of the account.
-     *
-     * @param string $providerId
-     */
-    public function setProviderId($providerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderId()
+    class Google_Service_ShoppingContent_PosDataProvidersPosDataProvider extends \Google\Service\ShoppingContent\PosDataProvidersPosDataProvider
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class PageviewData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $pagePath;
-    /**
-     * @var string
-     */
-    public $pageTitle;
-    /**
-     * @param string
-     */
-    public function setPagePath($pagePath)
+namespace Google\Service\AnalyticsReporting {
+    class PageviewData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $pagePath;
+        /**
+         * @var string
+         */
+        public $pageTitle;
+        /**
+         * @param string
+         */
+        public function setPagePath($pagePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPagePath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageTitle($pageTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\PageviewData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPagePath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageTitle($pageTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageTitle()
+    class Google_Service_AnalyticsReporting_PageviewData extends \Google\Service\AnalyticsReporting\PageviewData
     {
     }
 }

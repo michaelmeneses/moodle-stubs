@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VersionHistory\Resource;
-
-/**
- * The "platforms" collection of methods.
- * Typical usage is:
- *  <code>
- *   $versionhistoryService = new Google\Service\VersionHistory(...);
- *   $platforms = $versionhistoryService->platforms;
- *  </code>
- */
-class Platforms extends \Google\Service\Resource
-{
+namespace Google\Service\VersionHistory\Resource {
+    use Google\Service\VersionHistory\ListPlatformsResponse;
     /**
-     * Returns list of platforms that are available for a given product. The
-     * resource "product" has no resource name in its name.
-     * (platforms.listPlatforms)
-     *
-     * @param string $parent Required. The product, which owns this collection of
-     * platforms. Format: {product}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Optional limit on the number of channels to
-     * include in the response. If unspecified, the server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListChannels` call. Provide this to retrieve the subsequent page.
-     * @return ListPlatformsResponse
-     * @throws \Google\Service\Exception
+     * The "platforms" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $versionhistoryService = new Google\Service\VersionHistory(...);
+     *   $platforms = $versionhistoryService->platforms;
+     *  </code>
      */
-    public function listPlatforms($parent, $optParams = [])
+    class Platforms extends \Google\Service\Resource
+    {
+        /**
+         * Returns list of platforms that are available for a given product. The
+         * resource "product" has no resource name in its name.
+         * (platforms.listPlatforms)
+         *
+         * @param string $parent Required. The product, which owns this collection of
+         * platforms. Format: {product}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Optional limit on the number of channels to
+         * include in the response. If unspecified, the server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListChannels` call. Provide this to retrieve the subsequent page.
+         * @return ListPlatformsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPlatforms($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\VersionHistory\Resource\Platforms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_VersionHistory_Resource_Platforms extends \Google\Service\VersionHistory\Resource\Platforms
     {
     }
 }

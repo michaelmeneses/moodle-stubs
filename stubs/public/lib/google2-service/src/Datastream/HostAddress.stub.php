@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class HostAddress extends \Google\Model
-{
-    /**
-     * Required. Hostname for the connection.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Optional. Port for the connection.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Required. Hostname for the connection.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\Datastream {
+    class HostAddress extends \Google\Model
     {
+        /**
+         * Required. Hostname for the connection.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Optional. Port for the connection.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Required. Hostname for the connection.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Optional. Port for the connection.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\HostAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * Optional. Port for the connection.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_Datastream_HostAddress extends \Google\Service\Datastream\HostAddress
     {
     }
 }

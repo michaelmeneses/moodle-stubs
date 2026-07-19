@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListRatePlansResponse extends \Google\Collection
-{
-    protected $collection_key = 'ratePlans';
-    /**
-     * Value that can be sent as `startKey` to retrieve the next page of content.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextStartKey;
-    protected $ratePlansType = GoogleCloudApigeeV1RatePlan::class;
-    protected $ratePlansDataType = 'array';
-    /**
-     * Value that can be sent as `startKey` to retrieve the next page of content.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextStartKey
-     */
-    public function setNextStartKey($nextStartKey)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListRatePlansResponse extends \Google\Collection
     {
+        protected $collection_key = 'ratePlans';
+        /**
+         * Value that can be sent as `startKey` to retrieve the next page of content.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextStartKey;
+        protected $ratePlansType = GoogleCloudApigeeV1RatePlan::class;
+        protected $ratePlansDataType = 'array';
+        /**
+         * Value that can be sent as `startKey` to retrieve the next page of content.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextStartKey
+         */
+        public function setNextStartKey($nextStartKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextStartKey()
+        {
+        }
+        /**
+         * List of rate plans in an organization.
+         *
+         * @param GoogleCloudApigeeV1RatePlan[] $ratePlans
+         */
+        public function setRatePlans($ratePlans)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1RatePlan[]
+         */
+        public function getRatePlans()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListRatePlansResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextStartKey()
-    {
-    }
-    /**
-     * List of rate plans in an organization.
-     *
-     * @param GoogleCloudApigeeV1RatePlan[] $ratePlans
-     */
-    public function setRatePlans($ratePlans)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1RatePlan[]
-     */
-    public function getRatePlans()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListRatePlansResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListRatePlansResponse
     {
     }
 }

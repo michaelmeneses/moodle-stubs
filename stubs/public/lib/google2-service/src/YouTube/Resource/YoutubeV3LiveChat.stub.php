@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "liveChat" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $liveChat = $youtubeService->youtube_v3_liveChat;
- *  </code>
- */
-class YoutubeV3LiveChat extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    /**
+     * The "liveChat" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $liveChat = $youtubeService->youtube_v3_liveChat;
+     *  </code>
+     */
+    class YoutubeV3LiveChat extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\YoutubeV3LiveChat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_YoutubeV3LiveChat extends \Google\Service\YouTube\Resource\YoutubeV3LiveChat
+    {
+    }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class MoveItemRequest extends \Google\Model
-{
-    protected $newLocationType = Location::class;
-    protected $newLocationDataType = '';
-    protected $originalLocationType = Location::class;
-    protected $originalLocationDataType = '';
-    /**
-     * Required. The new location for the item.
-     *
-     * @param Location $newLocation
-     */
-    public function setNewLocation(Location $newLocation)
+namespace Google\Service\Forms {
+    class MoveItemRequest extends \Google\Model
     {
+        protected $newLocationType = Location::class;
+        protected $newLocationDataType = '';
+        protected $originalLocationType = Location::class;
+        protected $originalLocationDataType = '';
+        /**
+         * Required. The new location for the item.
+         *
+         * @param Location $newLocation
+         */
+        public function setNewLocation(Location $newLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getNewLocation()
+        {
+        }
+        /**
+         * Required. The location of the item to move.
+         *
+         * @param Location $originalLocation
+         */
+        public function setOriginalLocation(Location $originalLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getOriginalLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\Forms\MoveItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewLocation()
-    {
-    }
-    /**
-     * Required. The location of the item to move.
-     *
-     * @param Location $originalLocation
-     */
-    public function setOriginalLocation(Location $originalLocation)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getOriginalLocation()
+    class Google_Service_Forms_MoveItemRequest extends \Google\Service\Forms\MoveItemRequest
     {
     }
 }

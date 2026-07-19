@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig extends \Google\Model
-{
-    /**
-     * The type of event with which the engine is queried at prediction time. If
-     * set to `generic`, only `view-item`, `media-play`,and `media-complete` will
-     * be used as `context-event` in engine training. If set to `view-home-page`,
-     * `view-home-page` will also be used as `context-events` in addition to
-     * `view-item`, `media-play`, and `media-complete`. Currently supported for
-     * the `recommended-for-you` engine. Currently supported values: `view-home-
-     * page`, `generic`.
-     *
-     * @var string
-     */
-    public $contextEventType;
-    /**
-     * The type of event with which the engine is queried at prediction time. If
-     * set to `generic`, only `view-item`, `media-play`,and `media-complete` will
-     * be used as `context-event` in engine training. If set to `view-home-page`,
-     * `view-home-page` will also be used as `context-events` in addition to
-     * `view-item`, `media-play`, and `media-complete`. Currently supported for
-     * the `recommended-for-you` engine. Currently supported values: `view-home-
-     * page`, `generic`.
-     *
-     * @param string $contextEventType
-     */
-    public function setContextEventType($contextEventType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig extends \Google\Model
     {
+        /**
+         * The type of event with which the engine is queried at prediction time. If
+         * set to `generic`, only `view-item`, `media-play`,and `media-complete` will
+         * be used as `context-event` in engine training. If set to `view-home-page`,
+         * `view-home-page` will also be used as `context-events` in addition to
+         * `view-item`, `media-play`, and `media-complete`. Currently supported for
+         * the `recommended-for-you` engine. Currently supported values: `view-home-
+         * page`, `generic`.
+         *
+         * @var string
+         */
+        public $contextEventType;
+        /**
+         * The type of event with which the engine is queried at prediction time. If
+         * set to `generic`, only `view-item`, `media-play`,and `media-complete` will
+         * be used as `context-event` in engine training. If set to `view-home-page`,
+         * `view-home-page` will also be used as `context-events` in addition to
+         * `view-item`, `media-play`, and `media-complete`. Currently supported for
+         * the `recommended-for-you` engine. Currently supported values: `view-home-
+         * page`, `generic`.
+         *
+         * @param string $contextEventType
+         */
+        public function setContextEventType($contextEventType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContextEventType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextEventType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig
     {
     }
 }

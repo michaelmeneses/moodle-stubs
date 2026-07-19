@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ActivityEvents extends \Google\Collection
-{
-    protected $collection_key = 'resourceIds';
-    /**
-     * Name of the event. This is the specific name of the activity reported by
-     * the API. And each `eventName` is related to a specific Google Workspace
-     * service or feature which the API organizes into types of events. For
-     * `eventName` request parameters in general: - If no `eventName` is given,
-     * the report returns all possible instances of an `eventName`. - When you
-     * request an `eventName`, the API's response returns all activities which
-     * contain that `eventName`. For more information about `eventName`
-     * properties, see the list of event names for various applications above in
-     * `applicationName`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parametersType = ActivityEventsParameters::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Resource ids associated with the event.
-     *
-     * @var string[]
-     */
-    public $resourceIds;
-    /**
-     * Type of event. The Google Workspace service or feature that an
-     * administrator changes is identified in the `type` property which identifies
-     * an event using the `eventName` property. For a full list of the API's
-     * `type` categories, see the list of event names for various applications
-     * above in `applicationName`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Name of the event. This is the specific name of the activity reported by
-     * the API. And each `eventName` is related to a specific Google Workspace
-     * service or feature which the API organizes into types of events. For
-     * `eventName` request parameters in general: - If no `eventName` is given,
-     * the report returns all possible instances of an `eventName`. - When you
-     * request an `eventName`, the API's response returns all activities which
-     * contain that `eventName`. For more information about `eventName`
-     * properties, see the list of event names for various applications above in
-     * `applicationName`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Reports {
+    class ActivityEvents extends \Google\Collection
     {
+        protected $collection_key = 'resourceIds';
+        /**
+         * Name of the event. This is the specific name of the activity reported by
+         * the API. And each `eventName` is related to a specific Google Workspace
+         * service or feature which the API organizes into types of events. For
+         * `eventName` request parameters in general: - If no `eventName` is given,
+         * the report returns all possible instances of an `eventName`. - When you
+         * request an `eventName`, the API's response returns all activities which
+         * contain that `eventName`. For more information about `eventName`
+         * properties, see the list of event names for various applications above in
+         * `applicationName`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parametersType = ActivityEventsParameters::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Resource ids associated with the event.
+         *
+         * @var string[]
+         */
+        public $resourceIds;
+        /**
+         * Type of event. The Google Workspace service or feature that an
+         * administrator changes is identified in the `type` property which identifies
+         * an event using the `eventName` property. For a full list of the API's
+         * `type` categories, see the list of event names for various applications
+         * above in `applicationName`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Name of the event. This is the specific name of the activity reported by
+         * the API. And each `eventName` is related to a specific Google Workspace
+         * service or feature which the API organizes into types of events. For
+         * `eventName` request parameters in general: - If no `eventName` is given,
+         * the report returns all possible instances of an `eventName`. - When you
+         * request an `eventName`, the API's response returns all activities which
+         * contain that `eventName`. For more information about `eventName`
+         * properties, see the list of event names for various applications above in
+         * `applicationName`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Parameter value pairs for various applications. For more information about
+         * `eventName` parameters, see the list of event names for various
+         * applications above in `applicationName`.
+         *
+         * @param ActivityEventsParameters[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return ActivityEventsParameters[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Resource ids associated with the event.
+         *
+         * @param string[] $resourceIds
+         */
+        public function setResourceIds($resourceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceIds()
+        {
+        }
+        /**
+         * Type of event. The Google Workspace service or feature that an
+         * administrator changes is identified in the `type` property which identifies
+         * an event using the `eventName` property. For a full list of the API's
+         * `type` categories, see the list of event names for various applications
+         * above in `applicationName`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\ActivityEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Parameter value pairs for various applications. For more information about
-     * `eventName` parameters, see the list of event names for various
-     * applications above in `applicationName`.
-     *
-     * @param ActivityEventsParameters[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return ActivityEventsParameters[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Resource ids associated with the event.
-     *
-     * @param string[] $resourceIds
-     */
-    public function setResourceIds($resourceIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceIds()
-    {
-    }
-    /**
-     * Type of event. The Google Workspace service or feature that an
-     * administrator changes is identified in the `type` property which identifies
-     * an event using the `eventName` property. For a full list of the API's
-     * `type` categories, see the list of event names for various applications
-     * above in `applicationName`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Reports_ActivityEvents extends \Google\Service\Reports\ActivityEvents
     {
     }
 }

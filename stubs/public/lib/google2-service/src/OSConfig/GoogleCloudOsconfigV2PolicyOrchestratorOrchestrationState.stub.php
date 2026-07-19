@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class GoogleCloudOsconfigV2PolicyOrchestratorOrchestrationState extends \Google\Model
-{
-    protected $currentIterationStateType = GoogleCloudOsconfigV2PolicyOrchestratorIterationState::class;
-    protected $currentIterationStateDataType = '';
-    protected $previousIterationStateType = GoogleCloudOsconfigV2PolicyOrchestratorIterationState::class;
-    protected $previousIterationStateDataType = '';
-    /**
-     * Output only. Current Wave iteration state.
-     *
-     * @param GoogleCloudOsconfigV2PolicyOrchestratorIterationState $currentIterationState
-     */
-    public function setCurrentIterationState(GoogleCloudOsconfigV2PolicyOrchestratorIterationState $currentIterationState)
+namespace Google\Service\OSConfig {
+    class GoogleCloudOsconfigV2PolicyOrchestratorOrchestrationState extends \Google\Model
     {
+        protected $currentIterationStateType = GoogleCloudOsconfigV2PolicyOrchestratorIterationState::class;
+        protected $currentIterationStateDataType = '';
+        protected $previousIterationStateType = GoogleCloudOsconfigV2PolicyOrchestratorIterationState::class;
+        protected $previousIterationStateDataType = '';
+        /**
+         * Output only. Current Wave iteration state.
+         *
+         * @param GoogleCloudOsconfigV2PolicyOrchestratorIterationState $currentIterationState
+         */
+        public function setCurrentIterationState(GoogleCloudOsconfigV2PolicyOrchestratorIterationState $currentIterationState)
+        {
+        }
+        /**
+         * @return GoogleCloudOsconfigV2PolicyOrchestratorIterationState
+         */
+        public function getCurrentIterationState()
+        {
+        }
+        /**
+         * Output only. Previous Wave iteration state.
+         *
+         * @param GoogleCloudOsconfigV2PolicyOrchestratorIterationState $previousIterationState
+         */
+        public function setPreviousIterationState(GoogleCloudOsconfigV2PolicyOrchestratorIterationState $previousIterationState)
+        {
+        }
+        /**
+         * @return GoogleCloudOsconfigV2PolicyOrchestratorIterationState
+         */
+        public function getPreviousIterationState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOsconfigV2PolicyOrchestratorIterationState
+     * Runtime class alias of \Google\Service\OSConfig\GoogleCloudOsconfigV2PolicyOrchestratorOrchestrationState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentIterationState()
-    {
-    }
-    /**
-     * Output only. Previous Wave iteration state.
-     *
-     * @param GoogleCloudOsconfigV2PolicyOrchestratorIterationState $previousIterationState
-     */
-    public function setPreviousIterationState(GoogleCloudOsconfigV2PolicyOrchestratorIterationState $previousIterationState)
-    {
-    }
-    /**
-     * @return GoogleCloudOsconfigV2PolicyOrchestratorIterationState
-     */
-    public function getPreviousIterationState()
+    class Google_Service_OSConfig_GoogleCloudOsconfigV2PolicyOrchestratorOrchestrationState extends \Google\Service\OSConfig\GoogleCloudOsconfigV2PolicyOrchestratorOrchestrationState
     {
     }
 }

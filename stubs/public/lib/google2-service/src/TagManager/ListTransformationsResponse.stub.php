@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListTransformationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'transformation';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transformationType = Transformation::class;
-    protected $transformationDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class ListTransformationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'transformation';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transformationType = Transformation::class;
+        protected $transformationDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All GTM Transformations of a GTM Container.
+         *
+         * @param Transformation[] $transformation
+         */
+        public function setTransformation($transformation)
+        {
+        }
+        /**
+         * @return Transformation[]
+         */
+        public function getTransformation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ListTransformationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All GTM Transformations of a GTM Container.
-     *
-     * @param Transformation[] $transformation
-     */
-    public function setTransformation($transformation)
-    {
-    }
-    /**
-     * @return Transformation[]
-     */
-    public function getTransformation()
+    class Google_Service_TagManager_ListTransformationsResponse extends \Google\Service\TagManager\ListTransformationsResponse
     {
     }
 }

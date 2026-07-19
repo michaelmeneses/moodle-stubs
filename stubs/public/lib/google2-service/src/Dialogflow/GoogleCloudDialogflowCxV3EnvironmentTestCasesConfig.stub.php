@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3EnvironmentTestCasesConfig extends \Google\Collection
-{
-    protected $collection_key = 'testCases';
-    /**
-     * Whether to run test cases in TestCasesConfig.test_cases periodically.
-     * Default false. If set to true, run once a day.
-     *
-     * @var bool
-     */
-    public $enableContinuousRun;
-    /**
-     * Whether to run test cases in TestCasesConfig.test_cases before deploying a
-     * flow version to the environment. Default false.
-     *
-     * @var bool
-     */
-    public $enablePredeploymentRun;
-    /**
-     * A list of test case names to run. They should be under the same agent.
-     * Format of each test case name: `projects//locations//agents//testCases/`
-     *
-     * @var string[]
-     */
-    public $testCases;
-    /**
-     * Whether to run test cases in TestCasesConfig.test_cases periodically.
-     * Default false. If set to true, run once a day.
-     *
-     * @param bool $enableContinuousRun
-     */
-    public function setEnableContinuousRun($enableContinuousRun)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3EnvironmentTestCasesConfig extends \Google\Collection
     {
+        protected $collection_key = 'testCases';
+        /**
+         * Whether to run test cases in TestCasesConfig.test_cases periodically.
+         * Default false. If set to true, run once a day.
+         *
+         * @var bool
+         */
+        public $enableContinuousRun;
+        /**
+         * Whether to run test cases in TestCasesConfig.test_cases before deploying a
+         * flow version to the environment. Default false.
+         *
+         * @var bool
+         */
+        public $enablePredeploymentRun;
+        /**
+         * A list of test case names to run. They should be under the same agent.
+         * Format of each test case name: `projects//locations//agents//testCases/`
+         *
+         * @var string[]
+         */
+        public $testCases;
+        /**
+         * Whether to run test cases in TestCasesConfig.test_cases periodically.
+         * Default false. If set to true, run once a day.
+         *
+         * @param bool $enableContinuousRun
+         */
+        public function setEnableContinuousRun($enableContinuousRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableContinuousRun()
+        {
+        }
+        /**
+         * Whether to run test cases in TestCasesConfig.test_cases before deploying a
+         * flow version to the environment. Default false.
+         *
+         * @param bool $enablePredeploymentRun
+         */
+        public function setEnablePredeploymentRun($enablePredeploymentRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePredeploymentRun()
+        {
+        }
+        /**
+         * A list of test case names to run. They should be under the same agent.
+         * Format of each test case name: `projects//locations//agents//testCases/`
+         *
+         * @param string[] $testCases
+         */
+        public function setTestCases($testCases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTestCases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EnvironmentTestCasesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableContinuousRun()
-    {
-    }
-    /**
-     * Whether to run test cases in TestCasesConfig.test_cases before deploying a
-     * flow version to the environment. Default false.
-     *
-     * @param bool $enablePredeploymentRun
-     */
-    public function setEnablePredeploymentRun($enablePredeploymentRun)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePredeploymentRun()
-    {
-    }
-    /**
-     * A list of test case names to run. They should be under the same agent.
-     * Format of each test case name: `projects//locations//agents//testCases/`
-     *
-     * @param string[] $testCases
-     */
-    public function setTestCases($testCases)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTestCases()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3EnvironmentTestCasesConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EnvironmentTestCasesConfig
     {
     }
 }

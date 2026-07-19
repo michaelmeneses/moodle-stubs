@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Capabilities extends \Google\Collection
-{
-    protected $collection_key = 'drop';
-    /**
-     * @var string[]
-     */
-    public $add;
-    /**
-     * @var string[]
-     */
-    public $drop;
-    /**
-     * @param string[]
-     */
-    public function setAdd($add)
+namespace Google\Service\CloudBuild {
+    class Capabilities extends \Google\Collection
     {
+        protected $collection_key = 'drop';
+        /**
+         * @var string[]
+         */
+        public $add;
+        /**
+         * @var string[]
+         */
+        public $drop;
+        /**
+         * @param string[]
+         */
+        public function setAdd($add)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdd()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDrop($drop)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDrop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\Capabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdd()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDrop($drop)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDrop()
+    class Google_Service_CloudBuild_Capabilities extends \Google\Service\CloudBuild\Capabilities
     {
     }
 }

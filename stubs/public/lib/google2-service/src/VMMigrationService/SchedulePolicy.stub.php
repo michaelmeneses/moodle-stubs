@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class SchedulePolicy extends \Google\Model
-{
-    /**
-     * The idle duration between replication stages.
-     *
-     * @var string
-     */
-    public $idleDuration;
-    /**
-     * A flag to indicate whether to skip OS adaptation during the replication
-     * sync. OS adaptation is a process where the VM's operating system undergoes
-     * changes and adaptations to fully function on Compute Engine.
-     *
-     * @var bool
-     */
-    public $skipOsAdaptation;
-    /**
-     * The idle duration between replication stages.
-     *
-     * @param string $idleDuration
-     */
-    public function setIdleDuration($idleDuration)
+namespace Google\Service\VMMigrationService {
+    class SchedulePolicy extends \Google\Model
     {
+        /**
+         * The idle duration between replication stages.
+         *
+         * @var string
+         */
+        public $idleDuration;
+        /**
+         * A flag to indicate whether to skip OS adaptation during the replication
+         * sync. OS adaptation is a process where the VM's operating system undergoes
+         * changes and adaptations to fully function on Compute Engine.
+         *
+         * @var bool
+         */
+        public $skipOsAdaptation;
+        /**
+         * The idle duration between replication stages.
+         *
+         * @param string $idleDuration
+         */
+        public function setIdleDuration($idleDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdleDuration()
+        {
+        }
+        /**
+         * A flag to indicate whether to skip OS adaptation during the replication
+         * sync. OS adaptation is a process where the VM's operating system undergoes
+         * changes and adaptations to fully function on Compute Engine.
+         *
+         * @param bool $skipOsAdaptation
+         */
+        public function setSkipOsAdaptation($skipOsAdaptation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipOsAdaptation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\SchedulePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdleDuration()
-    {
-    }
-    /**
-     * A flag to indicate whether to skip OS adaptation during the replication
-     * sync. OS adaptation is a process where the VM's operating system undergoes
-     * changes and adaptations to fully function on Compute Engine.
-     *
-     * @param bool $skipOsAdaptation
-     */
-    public function setSkipOsAdaptation($skipOsAdaptation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipOsAdaptation()
+    class Google_Service_VMMigrationService_SchedulePolicy extends \Google\Service\VMMigrationService\SchedulePolicy
     {
     }
 }

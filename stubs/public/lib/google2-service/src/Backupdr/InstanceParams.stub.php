@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class InstanceParams extends \Google\Model
-{
-    /**
-     * Optional. Resource manager tags to be bound to the instance.
-     *
-     * @var string[]
-     */
-    public $resourceManagerTags;
-    /**
-     * Optional. Resource manager tags to be bound to the instance.
-     *
-     * @param string[] $resourceManagerTags
-     */
-    public function setResourceManagerTags($resourceManagerTags)
+namespace Google\Service\Backupdr {
+    class InstanceParams extends \Google\Model
     {
+        /**
+         * Optional. Resource manager tags to be bound to the instance.
+         *
+         * @var string[]
+         */
+        public $resourceManagerTags;
+        /**
+         * Optional. Resource manager tags to be bound to the instance.
+         *
+         * @param string[] $resourceManagerTags
+         */
+        public function setResourceManagerTags($resourceManagerTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceManagerTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Backupdr\InstanceParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceManagerTags()
+    class Google_Service_Backupdr_InstanceParams extends \Google\Service\Backupdr\InstanceParams
     {
     }
 }

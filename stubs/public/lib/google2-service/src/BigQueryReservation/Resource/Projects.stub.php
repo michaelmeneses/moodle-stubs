@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigqueryreservationService = new Google\Service\BigQueryReservation(...);
- *   $projects = $bigqueryreservationService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryReservation\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigqueryreservationService = new Google\Service\BigQueryReservation(...);
+     *   $projects = $bigqueryreservationService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigQueryReservation\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigQueryReservation_Resource_Projects extends \Google\Service\BigQueryReservation\Resource\Projects
+    {
+    }
 }

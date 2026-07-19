@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Config extends \Google\Collection
-{
-    protected $collection_key = 'supportedVersions';
-    /**
-     * Default Skaffold version that is assigned when a Release is created without
-     * specifying a Skaffold version.
-     *
-     * @var string
-     */
-    public $defaultSkaffoldVersion;
-    protected $defaultToolVersionsType = ToolVersions::class;
-    protected $defaultToolVersionsDataType = '';
-    /**
-     * Name of the configuration.
-     *
-     * @var string
-     */
-    public $name;
-    protected $supportedVersionsType = SkaffoldVersion::class;
-    protected $supportedVersionsDataType = 'array';
-    /**
-     * Default Skaffold version that is assigned when a Release is created without
-     * specifying a Skaffold version.
-     *
-     * @param string $defaultSkaffoldVersion
-     */
-    public function setDefaultSkaffoldVersion($defaultSkaffoldVersion)
+namespace Google\Service\CloudDeploy {
+    class Config extends \Google\Collection
     {
+        protected $collection_key = 'supportedVersions';
+        /**
+         * Default Skaffold version that is assigned when a Release is created without
+         * specifying a Skaffold version.
+         *
+         * @var string
+         */
+        public $defaultSkaffoldVersion;
+        protected $defaultToolVersionsType = ToolVersions::class;
+        protected $defaultToolVersionsDataType = '';
+        /**
+         * Name of the configuration.
+         *
+         * @var string
+         */
+        public $name;
+        protected $supportedVersionsType = SkaffoldVersion::class;
+        protected $supportedVersionsDataType = 'array';
+        /**
+         * Default Skaffold version that is assigned when a Release is created without
+         * specifying a Skaffold version.
+         *
+         * @param string $defaultSkaffoldVersion
+         */
+        public function setDefaultSkaffoldVersion($defaultSkaffoldVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultSkaffoldVersion()
+        {
+        }
+        /**
+         * Output only. Default tool versions. These tool versions are assigned when a
+         * Release is created without specifying tool versions.
+         *
+         * @param ToolVersions $defaultToolVersions
+         */
+        public function setDefaultToolVersions(ToolVersions $defaultToolVersions)
+        {
+        }
+        /**
+         * @return ToolVersions
+         */
+        public function getDefaultToolVersions()
+        {
+        }
+        /**
+         * Name of the configuration.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * All supported versions of Skaffold.
+         *
+         * @param SkaffoldVersion[] $supportedVersions
+         */
+        public function setSupportedVersions($supportedVersions)
+        {
+        }
+        /**
+         * @return SkaffoldVersion[]
+         */
+        public function getSupportedVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultSkaffoldVersion()
-    {
-    }
-    /**
-     * Output only. Default tool versions. These tool versions are assigned when a
-     * Release is created without specifying tool versions.
-     *
-     * @param ToolVersions $defaultToolVersions
-     */
-    public function setDefaultToolVersions(ToolVersions $defaultToolVersions)
-    {
-    }
-    /**
-     * @return ToolVersions
-     */
-    public function getDefaultToolVersions()
-    {
-    }
-    /**
-     * Name of the configuration.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * All supported versions of Skaffold.
-     *
-     * @param SkaffoldVersion[] $supportedVersions
-     */
-    public function setSupportedVersions($supportedVersions)
-    {
-    }
-    /**
-     * @return SkaffoldVersion[]
-     */
-    public function getSupportedVersions()
+    class Google_Service_CloudDeploy_Config extends \Google\Service\CloudDeploy\Config
     {
     }
 }

@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class AssetLocation extends \Google\Collection
-{
-    protected $collection_key = 'parentAsset';
-    /**
-     * @var string
-     */
-    public $ccfeRmsPath;
-    protected $expectedType = IsolationExpectations::class;
-    protected $expectedDataType = '';
-    protected $extraParametersType = ExtraParameter::class;
-    protected $extraParametersDataType = 'array';
-    protected $locationDataType = LocationData::class;
-    protected $locationDataDataType = 'array';
-    protected $parentAssetType = CloudAsset::class;
-    protected $parentAssetDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setCcfeRmsPath($ccfeRmsPath)
+namespace Google\Service\Backupdr {
+    class AssetLocation extends \Google\Collection
     {
+        protected $collection_key = 'parentAsset';
+        /**
+         * @var string
+         */
+        public $ccfeRmsPath;
+        protected $expectedType = IsolationExpectations::class;
+        protected $expectedDataType = '';
+        protected $extraParametersType = ExtraParameter::class;
+        protected $extraParametersDataType = 'array';
+        protected $locationDataType = LocationData::class;
+        protected $locationDataDataType = 'array';
+        protected $parentAssetType = CloudAsset::class;
+        protected $parentAssetDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setCcfeRmsPath($ccfeRmsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCcfeRmsPath()
+        {
+        }
+        /**
+         * @param IsolationExpectations
+         */
+        public function setExpected(IsolationExpectations $expected)
+        {
+        }
+        /**
+         * @return IsolationExpectations
+         */
+        public function getExpected()
+        {
+        }
+        /**
+         * @param ExtraParameter[]
+         */
+        public function setExtraParameters($extraParameters)
+        {
+        }
+        /**
+         * @return ExtraParameter[]
+         */
+        public function getExtraParameters()
+        {
+        }
+        /**
+         * @param LocationData[]
+         */
+        public function setLocationData($locationData)
+        {
+        }
+        /**
+         * @return LocationData[]
+         */
+        public function getLocationData()
+        {
+        }
+        /**
+         * @param CloudAsset[]
+         */
+        public function setParentAsset($parentAsset)
+        {
+        }
+        /**
+         * @return CloudAsset[]
+         */
+        public function getParentAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\AssetLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCcfeRmsPath()
-    {
-    }
-    /**
-     * @param IsolationExpectations
-     */
-    public function setExpected(IsolationExpectations $expected)
-    {
-    }
-    /**
-     * @return IsolationExpectations
-     */
-    public function getExpected()
-    {
-    }
-    /**
-     * @param ExtraParameter[]
-     */
-    public function setExtraParameters($extraParameters)
-    {
-    }
-    /**
-     * @return ExtraParameter[]
-     */
-    public function getExtraParameters()
-    {
-    }
-    /**
-     * @param LocationData[]
-     */
-    public function setLocationData($locationData)
-    {
-    }
-    /**
-     * @return LocationData[]
-     */
-    public function getLocationData()
-    {
-    }
-    /**
-     * @param CloudAsset[]
-     */
-    public function setParentAsset($parentAsset)
-    {
-    }
-    /**
-     * @return CloudAsset[]
-     */
-    public function getParentAsset()
+    class Google_Service_Backupdr_AssetLocation extends \Google\Service\Backupdr\AssetLocation
     {
     }
 }

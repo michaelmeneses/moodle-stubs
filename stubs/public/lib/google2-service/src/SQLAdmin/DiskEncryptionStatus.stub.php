@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DiskEncryptionStatus extends \Google\Model
-{
-    /**
-     * This is always `sql#diskEncryptionStatus`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * KMS key version used to encrypt the Cloud SQL instance resource
-     *
-     * @var string
-     */
-    public $kmsKeyVersionName;
-    /**
-     * This is always `sql#diskEncryptionStatus`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class DiskEncryptionStatus extends \Google\Model
     {
+        /**
+         * This is always `sql#diskEncryptionStatus`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * KMS key version used to encrypt the Cloud SQL instance resource
+         *
+         * @var string
+         */
+        public $kmsKeyVersionName;
+        /**
+         * This is always `sql#diskEncryptionStatus`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * KMS key version used to encrypt the Cloud SQL instance resource
+         *
+         * @param string $kmsKeyVersionName
+         */
+        public function setKmsKeyVersionName($kmsKeyVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\DiskEncryptionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * KMS key version used to encrypt the Cloud SQL instance resource
-     *
-     * @param string $kmsKeyVersionName
-     */
-    public function setKmsKeyVersionName($kmsKeyVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyVersionName()
+    class Google_Service_SQLAdmin_DiskEncryptionStatus extends \Google\Service\SQLAdmin\DiskEncryptionStatus
     {
     }
 }

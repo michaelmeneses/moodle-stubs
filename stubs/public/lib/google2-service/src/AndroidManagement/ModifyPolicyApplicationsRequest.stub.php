@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ModifyPolicyApplicationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'changes';
-    protected $changesType = ApplicationPolicyChange::class;
-    protected $changesDataType = 'array';
-    /**
-     * Required. The changes to be made to the ApplicationPolicy objects. There
-     * must be at least one ApplicationPolicyChange.
-     *
-     * @param ApplicationPolicyChange[] $changes
-     */
-    public function setChanges($changes)
+namespace Google\Service\AndroidManagement {
+    class ModifyPolicyApplicationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'changes';
+        protected $changesType = ApplicationPolicyChange::class;
+        protected $changesDataType = 'array';
+        /**
+         * Required. The changes to be made to the ApplicationPolicy objects. There
+         * must be at least one ApplicationPolicyChange.
+         *
+         * @param ApplicationPolicyChange[] $changes
+         */
+        public function setChanges($changes)
+        {
+        }
+        /**
+         * @return ApplicationPolicyChange[]
+         */
+        public function getChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplicationPolicyChange[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ModifyPolicyApplicationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChanges()
+    class Google_Service_AndroidManagement_ModifyPolicyApplicationsRequest extends \Google\Service\AndroidManagement\ModifyPolicyApplicationsRequest
     {
     }
 }

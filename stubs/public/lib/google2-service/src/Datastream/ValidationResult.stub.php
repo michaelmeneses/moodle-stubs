@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ValidationResult extends \Google\Collection
-{
-    protected $collection_key = 'validations';
-    protected $validationsType = Validation::class;
-    protected $validationsDataType = 'array';
-    /**
-     * A list of validations (includes both executed as well as not executed
-     * validations).
-     *
-     * @param Validation[] $validations
-     */
-    public function setValidations($validations)
+namespace Google\Service\Datastream {
+    class ValidationResult extends \Google\Collection
     {
+        protected $collection_key = 'validations';
+        protected $validationsType = Validation::class;
+        protected $validationsDataType = 'array';
+        /**
+         * A list of validations (includes both executed as well as not executed
+         * validations).
+         *
+         * @param Validation[] $validations
+         */
+        public function setValidations($validations)
+        {
+        }
+        /**
+         * @return Validation[]
+         */
+        public function getValidations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Validation[]
+     * Runtime class alias of \Google\Service\Datastream\ValidationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValidations()
+    class Google_Service_Datastream_ValidationResult extends \Google\Service\Datastream\ValidationResult
     {
     }
 }

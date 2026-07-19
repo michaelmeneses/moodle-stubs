@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1PolicySchemaNoticeDescription extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $acknowledgementRequired;
-    /**
-     * @var string
-     */
-    public $field;
-    /**
-     * @var string
-     */
-    public $noticeMessage;
-    /**
-     * @var string
-     */
-    public $noticeValue;
-    /**
-     * @param bool
-     */
-    public function setAcknowledgementRequired($acknowledgementRequired)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1PolicySchemaNoticeDescription extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $acknowledgementRequired;
+        /**
+         * @var string
+         */
+        public $field;
+        /**
+         * @var string
+         */
+        public $noticeMessage;
+        /**
+         * @var string
+         */
+        public $noticeValue;
+        /**
+         * @param bool
+         */
+        public function setAcknowledgementRequired($acknowledgementRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcknowledgementRequired()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNoticeMessage($noticeMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoticeMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNoticeValue($noticeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoticeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicySchemaNoticeDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgementRequired()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNoticeMessage($noticeMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoticeMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNoticeValue($noticeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoticeValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1PolicySchemaNoticeDescription extends \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicySchemaNoticeDescription
     {
     }
 }

@@ -21,202 +21,211 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2Rule extends \Google\Model
-{
-    protected $boostActionType = GoogleCloudRetailV2RuleBoostAction::class;
-    protected $boostActionDataType = '';
-    protected $conditionType = GoogleCloudRetailV2Condition::class;
-    protected $conditionDataType = '';
-    protected $doNotAssociateActionType = GoogleCloudRetailV2RuleDoNotAssociateAction::class;
-    protected $doNotAssociateActionDataType = '';
-    protected $filterActionType = GoogleCloudRetailV2RuleFilterAction::class;
-    protected $filterActionDataType = '';
-    protected $forceReturnFacetActionType = GoogleCloudRetailV2RuleForceReturnFacetAction::class;
-    protected $forceReturnFacetActionDataType = '';
-    protected $ignoreActionType = GoogleCloudRetailV2RuleIgnoreAction::class;
-    protected $ignoreActionDataType = '';
-    protected $onewaySynonymsActionType = GoogleCloudRetailV2RuleOnewaySynonymsAction::class;
-    protected $onewaySynonymsActionDataType = '';
-    protected $pinActionType = GoogleCloudRetailV2RulePinAction::class;
-    protected $pinActionDataType = '';
-    protected $redirectActionType = GoogleCloudRetailV2RuleRedirectAction::class;
-    protected $redirectActionDataType = '';
-    protected $removeFacetActionType = GoogleCloudRetailV2RuleRemoveFacetAction::class;
-    protected $removeFacetActionDataType = '';
-    protected $replacementActionType = GoogleCloudRetailV2RuleReplacementAction::class;
-    protected $replacementActionDataType = '';
-    protected $twowaySynonymsActionType = GoogleCloudRetailV2RuleTwowaySynonymsAction::class;
-    protected $twowaySynonymsActionDataType = '';
-    /**
-     * A boost action.
-     *
-     * @param GoogleCloudRetailV2RuleBoostAction $boostAction
-     */
-    public function setBoostAction(GoogleCloudRetailV2RuleBoostAction $boostAction)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2Rule extends \Google\Model
     {
+        protected $boostActionType = GoogleCloudRetailV2RuleBoostAction::class;
+        protected $boostActionDataType = '';
+        protected $conditionType = GoogleCloudRetailV2Condition::class;
+        protected $conditionDataType = '';
+        protected $doNotAssociateActionType = GoogleCloudRetailV2RuleDoNotAssociateAction::class;
+        protected $doNotAssociateActionDataType = '';
+        protected $filterActionType = GoogleCloudRetailV2RuleFilterAction::class;
+        protected $filterActionDataType = '';
+        protected $forceReturnFacetActionType = GoogleCloudRetailV2RuleForceReturnFacetAction::class;
+        protected $forceReturnFacetActionDataType = '';
+        protected $ignoreActionType = GoogleCloudRetailV2RuleIgnoreAction::class;
+        protected $ignoreActionDataType = '';
+        protected $onewaySynonymsActionType = GoogleCloudRetailV2RuleOnewaySynonymsAction::class;
+        protected $onewaySynonymsActionDataType = '';
+        protected $pinActionType = GoogleCloudRetailV2RulePinAction::class;
+        protected $pinActionDataType = '';
+        protected $redirectActionType = GoogleCloudRetailV2RuleRedirectAction::class;
+        protected $redirectActionDataType = '';
+        protected $removeFacetActionType = GoogleCloudRetailV2RuleRemoveFacetAction::class;
+        protected $removeFacetActionDataType = '';
+        protected $replacementActionType = GoogleCloudRetailV2RuleReplacementAction::class;
+        protected $replacementActionDataType = '';
+        protected $twowaySynonymsActionType = GoogleCloudRetailV2RuleTwowaySynonymsAction::class;
+        protected $twowaySynonymsActionDataType = '';
+        /**
+         * A boost action.
+         *
+         * @param GoogleCloudRetailV2RuleBoostAction $boostAction
+         */
+        public function setBoostAction(GoogleCloudRetailV2RuleBoostAction $boostAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleBoostAction
+         */
+        public function getBoostAction()
+        {
+        }
+        /**
+         * Required. The condition that triggers the rule. If the condition is empty,
+         * the rule will always apply.
+         *
+         * @param GoogleCloudRetailV2Condition $condition
+         */
+        public function setCondition(GoogleCloudRetailV2Condition $condition)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Condition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Prevents term from being associated with other terms.
+         *
+         * @param GoogleCloudRetailV2RuleDoNotAssociateAction $doNotAssociateAction
+         */
+        public function setDoNotAssociateAction(GoogleCloudRetailV2RuleDoNotAssociateAction $doNotAssociateAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleDoNotAssociateAction
+         */
+        public function getDoNotAssociateAction()
+        {
+        }
+        /**
+         * Filters results.
+         *
+         * @param GoogleCloudRetailV2RuleFilterAction $filterAction
+         */
+        public function setFilterAction(GoogleCloudRetailV2RuleFilterAction $filterAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleFilterAction
+         */
+        public function getFilterAction()
+        {
+        }
+        /**
+         * Force returns an attribute as a facet in the request.
+         *
+         * @param GoogleCloudRetailV2RuleForceReturnFacetAction $forceReturnFacetAction
+         */
+        public function setForceReturnFacetAction(GoogleCloudRetailV2RuleForceReturnFacetAction $forceReturnFacetAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleForceReturnFacetAction
+         */
+        public function getForceReturnFacetAction()
+        {
+        }
+        /**
+         * Ignores specific terms from query during search.
+         *
+         * @param GoogleCloudRetailV2RuleIgnoreAction $ignoreAction
+         */
+        public function setIgnoreAction(GoogleCloudRetailV2RuleIgnoreAction $ignoreAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleIgnoreAction
+         */
+        public function getIgnoreAction()
+        {
+        }
+        /**
+         * Treats specific term as a synonym with a group of terms. Group of terms
+         * will not be treated as synonyms with the specific term.
+         *
+         * @param GoogleCloudRetailV2RuleOnewaySynonymsAction $onewaySynonymsAction
+         */
+        public function setOnewaySynonymsAction(GoogleCloudRetailV2RuleOnewaySynonymsAction $onewaySynonymsAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleOnewaySynonymsAction
+         */
+        public function getOnewaySynonymsAction()
+        {
+        }
+        /**
+         * Pins one or more specified products to a specific position in the results.
+         *
+         * @param GoogleCloudRetailV2RulePinAction $pinAction
+         */
+        public function setPinAction(GoogleCloudRetailV2RulePinAction $pinAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RulePinAction
+         */
+        public function getPinAction()
+        {
+        }
+        /**
+         * Redirects a shopper to a specific page.
+         *
+         * @param GoogleCloudRetailV2RuleRedirectAction $redirectAction
+         */
+        public function setRedirectAction(GoogleCloudRetailV2RuleRedirectAction $redirectAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleRedirectAction
+         */
+        public function getRedirectAction()
+        {
+        }
+        /**
+         * Remove an attribute as a facet in the request (if present).
+         *
+         * @param GoogleCloudRetailV2RuleRemoveFacetAction $removeFacetAction
+         */
+        public function setRemoveFacetAction(GoogleCloudRetailV2RuleRemoveFacetAction $removeFacetAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleRemoveFacetAction
+         */
+        public function getRemoveFacetAction()
+        {
+        }
+        /**
+         * Replaces specific terms in the query.
+         *
+         * @param GoogleCloudRetailV2RuleReplacementAction $replacementAction
+         */
+        public function setReplacementAction(GoogleCloudRetailV2RuleReplacementAction $replacementAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleReplacementAction
+         */
+        public function getReplacementAction()
+        {
+        }
+        /**
+         * Treats a set of terms as synonyms of one another.
+         *
+         * @param GoogleCloudRetailV2RuleTwowaySynonymsAction $twowaySynonymsAction
+         */
+        public function setTwowaySynonymsAction(GoogleCloudRetailV2RuleTwowaySynonymsAction $twowaySynonymsAction)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleTwowaySynonymsAction
+         */
+        public function getTwowaySynonymsAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2RuleBoostAction
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostAction()
-    {
-    }
-    /**
-     * Required. The condition that triggers the rule. If the condition is empty,
-     * the rule will always apply.
-     *
-     * @param GoogleCloudRetailV2Condition $condition
-     */
-    public function setCondition(GoogleCloudRetailV2Condition $condition)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2Condition
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * Prevents term from being associated with other terms.
-     *
-     * @param GoogleCloudRetailV2RuleDoNotAssociateAction $doNotAssociateAction
-     */
-    public function setDoNotAssociateAction(GoogleCloudRetailV2RuleDoNotAssociateAction $doNotAssociateAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleDoNotAssociateAction
-     */
-    public function getDoNotAssociateAction()
-    {
-    }
-    /**
-     * Filters results.
-     *
-     * @param GoogleCloudRetailV2RuleFilterAction $filterAction
-     */
-    public function setFilterAction(GoogleCloudRetailV2RuleFilterAction $filterAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleFilterAction
-     */
-    public function getFilterAction()
-    {
-    }
-    /**
-     * Force returns an attribute as a facet in the request.
-     *
-     * @param GoogleCloudRetailV2RuleForceReturnFacetAction $forceReturnFacetAction
-     */
-    public function setForceReturnFacetAction(GoogleCloudRetailV2RuleForceReturnFacetAction $forceReturnFacetAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleForceReturnFacetAction
-     */
-    public function getForceReturnFacetAction()
-    {
-    }
-    /**
-     * Ignores specific terms from query during search.
-     *
-     * @param GoogleCloudRetailV2RuleIgnoreAction $ignoreAction
-     */
-    public function setIgnoreAction(GoogleCloudRetailV2RuleIgnoreAction $ignoreAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleIgnoreAction
-     */
-    public function getIgnoreAction()
-    {
-    }
-    /**
-     * Treats specific term as a synonym with a group of terms. Group of terms
-     * will not be treated as synonyms with the specific term.
-     *
-     * @param GoogleCloudRetailV2RuleOnewaySynonymsAction $onewaySynonymsAction
-     */
-    public function setOnewaySynonymsAction(GoogleCloudRetailV2RuleOnewaySynonymsAction $onewaySynonymsAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleOnewaySynonymsAction
-     */
-    public function getOnewaySynonymsAction()
-    {
-    }
-    /**
-     * Pins one or more specified products to a specific position in the results.
-     *
-     * @param GoogleCloudRetailV2RulePinAction $pinAction
-     */
-    public function setPinAction(GoogleCloudRetailV2RulePinAction $pinAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RulePinAction
-     */
-    public function getPinAction()
-    {
-    }
-    /**
-     * Redirects a shopper to a specific page.
-     *
-     * @param GoogleCloudRetailV2RuleRedirectAction $redirectAction
-     */
-    public function setRedirectAction(GoogleCloudRetailV2RuleRedirectAction $redirectAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleRedirectAction
-     */
-    public function getRedirectAction()
-    {
-    }
-    /**
-     * Remove an attribute as a facet in the request (if present).
-     *
-     * @param GoogleCloudRetailV2RuleRemoveFacetAction $removeFacetAction
-     */
-    public function setRemoveFacetAction(GoogleCloudRetailV2RuleRemoveFacetAction $removeFacetAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleRemoveFacetAction
-     */
-    public function getRemoveFacetAction()
-    {
-    }
-    /**
-     * Replaces specific terms in the query.
-     *
-     * @param GoogleCloudRetailV2RuleReplacementAction $replacementAction
-     */
-    public function setReplacementAction(GoogleCloudRetailV2RuleReplacementAction $replacementAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleReplacementAction
-     */
-    public function getReplacementAction()
-    {
-    }
-    /**
-     * Treats a set of terms as synonyms of one another.
-     *
-     * @param GoogleCloudRetailV2RuleTwowaySynonymsAction $twowaySynonymsAction
-     */
-    public function setTwowaySynonymsAction(GoogleCloudRetailV2RuleTwowaySynonymsAction $twowaySynonymsAction)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2RuleTwowaySynonymsAction
-     */
-    public function getTwowaySynonymsAction()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2Rule extends \Google\Service\CloudRetail\GoogleCloudRetailV2Rule
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class HiveDatabaseOptions extends \Google\Model
-{
-    /**
-     * Cloud Storage folder URI where the database data is stored, starting with
-     * "gs://".
-     *
-     * @var string
-     */
-    public $locationUri;
-    /**
-     * Stores user supplied Hive database parameters.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * Cloud Storage folder URI where the database data is stored, starting with
-     * "gs://".
-     *
-     * @param string $locationUri
-     */
-    public function setLocationUri($locationUri)
+namespace Google\Service\BigLakeService {
+    class HiveDatabaseOptions extends \Google\Model
     {
+        /**
+         * Cloud Storage folder URI where the database data is stored, starting with
+         * "gs://".
+         *
+         * @var string
+         */
+        public $locationUri;
+        /**
+         * Stores user supplied Hive database parameters.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * Cloud Storage folder URI where the database data is stored, starting with
+         * "gs://".
+         *
+         * @param string $locationUri
+         */
+        public function setLocationUri($locationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationUri()
+        {
+        }
+        /**
+         * Stores user supplied Hive database parameters.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\HiveDatabaseOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationUri()
-    {
-    }
-    /**
-     * Stores user supplied Hive database parameters.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
+    class Google_Service_BigLakeService_HiveDatabaseOptions extends \Google\Service\BigLakeService\HiveDatabaseOptions
     {
     }
 }

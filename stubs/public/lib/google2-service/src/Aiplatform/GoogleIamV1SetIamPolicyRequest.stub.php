@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleIamV1SetIamPolicyRequest extends \Google\Model
-{
-    protected $policyType = GoogleIamV1Policy::class;
-    protected $policyDataType = '';
-    /**
-     * REQUIRED: The complete policy to be applied to the `resource`. The size of
-     * the policy is limited to a few 10s of KB. An empty policy is a valid policy
-     * but certain Google Cloud services (such as Projects) might reject them.
-     *
-     * @param GoogleIamV1Policy $policy
-     */
-    public function setPolicy(GoogleIamV1Policy $policy)
+namespace Google\Service\Aiplatform {
+    class GoogleIamV1SetIamPolicyRequest extends \Google\Model
     {
+        protected $policyType = GoogleIamV1Policy::class;
+        protected $policyDataType = '';
+        /**
+         * REQUIRED: The complete policy to be applied to the `resource`. The size of
+         * the policy is limited to a few 10s of KB. An empty policy is a valid policy
+         * but certain Google Cloud services (such as Projects) might reject them.
+         *
+         * @param GoogleIamV1Policy $policy
+         */
+        public function setPolicy(GoogleIamV1Policy $policy)
+        {
+        }
+        /**
+         * @return GoogleIamV1Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamV1Policy
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
+    class Google_Service_Aiplatform_GoogleIamV1SetIamPolicyRequest extends \Google\Service\Aiplatform\GoogleIamV1SetIamPolicyRequest
     {
     }
 }

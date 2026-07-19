@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ShortAnswerSubmission extends \Google\Model
-{
-    /**
-     * Student response to a short-answer question.
-     *
-     * @var string
-     */
-    public $answer;
-    /**
-     * Student response to a short-answer question.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\Classroom {
+    class ShortAnswerSubmission extends \Google\Model
     {
+        /**
+         * Student response to a short-answer question.
+         *
+         * @var string
+         */
+        public $answer;
+        /**
+         * Student response to a short-answer question.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\ShortAnswerSubmission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
+    class Google_Service_Classroom_ShortAnswerSubmission extends \Google\Service\Classroom\ShortAnswerSubmission
     {
     }
 }

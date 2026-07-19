@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OrderContact extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $contactInfo;
-    /**
-     * @var string
-     */
-    public $contactName;
-    /**
-     * @var string
-     */
-    public $contactTitle;
-    /**
-     * @var string
-     */
-    public $contactType;
-    /**
-     * @var string
-     */
-    public $signatureUserProfileId;
-    /**
-     * @param string
-     */
-    public function setContactInfo($contactInfo)
+namespace Google\Service\Dfareporting {
+    class OrderContact extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $contactInfo;
+        /**
+         * @var string
+         */
+        public $contactName;
+        /**
+         * @var string
+         */
+        public $contactTitle;
+        /**
+         * @var string
+         */
+        public $contactType;
+        /**
+         * @var string
+         */
+        public $signatureUserProfileId;
+        /**
+         * @param string
+         */
+        public function setContactInfo($contactInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContactName($contactName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContactTitle($contactTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContactType($contactType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContactType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignatureUserProfileId($signatureUserProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignatureUserProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OrderContact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContactName($contactName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContactName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContactTitle($contactTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContactTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContactType($contactType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContactType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignatureUserProfileId($signatureUserProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignatureUserProfileId()
+    class Google_Service_Dfareporting_OrderContact extends \Google\Service\Dfareporting\OrderContact
     {
     }
 }

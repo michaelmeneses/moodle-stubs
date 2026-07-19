@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ReadPoolAutoScaleConfig extends \Google\Collection
-{
-    protected $collection_key = 'targetMetrics';
-    /**
-     * Indicates whether read pool auto scaling supports scale in operations
-     * (removing nodes).
-     *
-     * @var bool
-     */
-    public $disableScaleIn;
-    /**
-     * Indicates whether read pool auto scaling is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Maximum number of read pool nodes to be maintained.
-     *
-     * @var int
-     */
-    public $maxNodeCount;
-    /**
-     * Minimum number of read pool nodes to be maintained.
-     *
-     * @var int
-     */
-    public $minNodeCount;
-    /**
-     * The cooldown period for scale-in operations.
-     *
-     * @var int
-     */
-    public $scaleInCooldownSeconds;
-    /**
-     * The cooldown period for scale-out operations.
-     *
-     * @var int
-     */
-    public $scaleOutCooldownSeconds;
-    protected $targetMetricsType = TargetMetric::class;
-    protected $targetMetricsDataType = 'array';
-    /**
-     * Indicates whether read pool auto scaling supports scale in operations
-     * (removing nodes).
-     *
-     * @param bool $disableScaleIn
-     */
-    public function setDisableScaleIn($disableScaleIn)
+namespace Google\Service\SQLAdmin {
+    class ReadPoolAutoScaleConfig extends \Google\Collection
     {
+        protected $collection_key = 'targetMetrics';
+        /**
+         * Indicates whether read pool auto scaling supports scale in operations
+         * (removing nodes).
+         *
+         * @var bool
+         */
+        public $disableScaleIn;
+        /**
+         * Indicates whether read pool auto scaling is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Maximum number of read pool nodes to be maintained.
+         *
+         * @var int
+         */
+        public $maxNodeCount;
+        /**
+         * Minimum number of read pool nodes to be maintained.
+         *
+         * @var int
+         */
+        public $minNodeCount;
+        /**
+         * The cooldown period for scale-in operations.
+         *
+         * @var int
+         */
+        public $scaleInCooldownSeconds;
+        /**
+         * The cooldown period for scale-out operations.
+         *
+         * @var int
+         */
+        public $scaleOutCooldownSeconds;
+        protected $targetMetricsType = TargetMetric::class;
+        protected $targetMetricsDataType = 'array';
+        /**
+         * Indicates whether read pool auto scaling supports scale in operations
+         * (removing nodes).
+         *
+         * @param bool $disableScaleIn
+         */
+        public function setDisableScaleIn($disableScaleIn)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableScaleIn()
+        {
+        }
+        /**
+         * Indicates whether read pool auto scaling is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Maximum number of read pool nodes to be maintained.
+         *
+         * @param int $maxNodeCount
+         */
+        public function setMaxNodeCount($maxNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNodeCount()
+        {
+        }
+        /**
+         * Minimum number of read pool nodes to be maintained.
+         *
+         * @param int $minNodeCount
+         */
+        public function setMinNodeCount($minNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodeCount()
+        {
+        }
+        /**
+         * The cooldown period for scale-in operations.
+         *
+         * @param int $scaleInCooldownSeconds
+         */
+        public function setScaleInCooldownSeconds($scaleInCooldownSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScaleInCooldownSeconds()
+        {
+        }
+        /**
+         * The cooldown period for scale-out operations.
+         *
+         * @param int $scaleOutCooldownSeconds
+         */
+        public function setScaleOutCooldownSeconds($scaleOutCooldownSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScaleOutCooldownSeconds()
+        {
+        }
+        /**
+         * Optional. Target metrics for read pool auto scaling.
+         *
+         * @param TargetMetric[] $targetMetrics
+         */
+        public function setTargetMetrics($targetMetrics)
+        {
+        }
+        /**
+         * @return TargetMetric[]
+         */
+        public function getTargetMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\ReadPoolAutoScaleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableScaleIn()
-    {
-    }
-    /**
-     * Indicates whether read pool auto scaling is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Maximum number of read pool nodes to be maintained.
-     *
-     * @param int $maxNodeCount
-     */
-    public function setMaxNodeCount($maxNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxNodeCount()
-    {
-    }
-    /**
-     * Minimum number of read pool nodes to be maintained.
-     *
-     * @param int $minNodeCount
-     */
-    public function setMinNodeCount($minNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNodeCount()
-    {
-    }
-    /**
-     * The cooldown period for scale-in operations.
-     *
-     * @param int $scaleInCooldownSeconds
-     */
-    public function setScaleInCooldownSeconds($scaleInCooldownSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScaleInCooldownSeconds()
-    {
-    }
-    /**
-     * The cooldown period for scale-out operations.
-     *
-     * @param int $scaleOutCooldownSeconds
-     */
-    public function setScaleOutCooldownSeconds($scaleOutCooldownSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScaleOutCooldownSeconds()
-    {
-    }
-    /**
-     * Optional. Target metrics for read pool auto scaling.
-     *
-     * @param TargetMetric[] $targetMetrics
-     */
-    public function setTargetMetrics($targetMetrics)
-    {
-    }
-    /**
-     * @return TargetMetric[]
-     */
-    public function getTargetMetrics()
+    class Google_Service_SQLAdmin_ReadPoolAutoScaleConfig extends \Google\Service\SQLAdmin\ReadPoolAutoScaleConfig
     {
     }
 }

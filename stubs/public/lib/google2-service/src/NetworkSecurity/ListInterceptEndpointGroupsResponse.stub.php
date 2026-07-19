@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListInterceptEndpointGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'interceptEndpointGroups';
-    protected $interceptEndpointGroupsType = InterceptEndpointGroup::class;
-    protected $interceptEndpointGroupsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The endpoint groups from the specified parent.
-     *
-     * @param InterceptEndpointGroup[] $interceptEndpointGroups
-     */
-    public function setInterceptEndpointGroups($interceptEndpointGroups)
+namespace Google\Service\NetworkSecurity {
+    class ListInterceptEndpointGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'interceptEndpointGroups';
+        protected $interceptEndpointGroupsType = InterceptEndpointGroup::class;
+        protected $interceptEndpointGroupsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The endpoint groups from the specified parent.
+         *
+         * @param InterceptEndpointGroup[] $interceptEndpointGroups
+         */
+        public function setInterceptEndpointGroups($interceptEndpointGroups)
+        {
+        }
+        /**
+         * @return InterceptEndpointGroup[]
+         */
+        public function getInterceptEndpointGroups()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterceptEndpointGroup[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListInterceptEndpointGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterceptEndpointGroups()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_NetworkSecurity_ListInterceptEndpointGroupsResponse extends \Google\Service\NetworkSecurity\ListInterceptEndpointGroupsResponse
     {
     }
 }

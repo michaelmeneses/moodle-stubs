@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagFileChunkingConfig extends \Google\Model
-{
-    protected $fixedLengthChunkingType = GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking::class;
-    protected $fixedLengthChunkingDataType = '';
-    /**
-     * Specifies the fixed length chunking config.
-     *
-     * @param GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking $fixedLengthChunking
-     */
-    public function setFixedLengthChunking(GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking $fixedLengthChunking)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagFileChunkingConfig extends \Google\Model
     {
+        protected $fixedLengthChunkingType = GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking::class;
+        protected $fixedLengthChunkingDataType = '';
+        /**
+         * Specifies the fixed length chunking config.
+         *
+         * @param GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking $fixedLengthChunking
+         */
+        public function setFixedLengthChunking(GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking $fixedLengthChunking)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking
+         */
+        public function getFixedLengthChunking()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileChunkingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedLengthChunking()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagFileChunkingConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileChunkingConfig
     {
     }
 }

@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "performanceReport" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $performanceReport = $adexchangebuyerService->performanceReport;
- *  </code>
- */
-class PerformanceReport extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\PerformanceReportList;
     /**
-     * Retrieves the authenticated user's list of performance metrics.
-     * (performanceReport.listPerformanceReport)
-     *
-     * @param string $accountId The account id to get the reports.
-     * @param string $endDateTime The end time of the report in ISO 8601 timestamp
-     * format using UTC.
-     * @param string $startDateTime The start time of the report in ISO 8601
-     * timestamp format using UTC.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults Maximum number of entries returned on one result
-     * page. If not set, the default is 100. Optional.
-     * @opt_param string pageToken A continuation token, used to page through
-     * performance reports. To retrieve the next page, set this parameter to the
-     * value of "nextPageToken" from the previous response. Optional.
-     * @return PerformanceReportList
+     * The "performanceReport" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $performanceReport = $adexchangebuyerService->performanceReport;
+     *  </code>
      */
-    public function listPerformanceReport($accountId, $endDateTime, $startDateTime, $optParams = [])
+    class PerformanceReport extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves the authenticated user's list of performance metrics.
+         * (performanceReport.listPerformanceReport)
+         *
+         * @param string $accountId The account id to get the reports.
+         * @param string $endDateTime The end time of the report in ISO 8601 timestamp
+         * format using UTC.
+         * @param string $startDateTime The start time of the report in ISO 8601
+         * timestamp format using UTC.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults Maximum number of entries returned on one result
+         * page. If not set, the default is 100. Optional.
+         * @opt_param string pageToken A continuation token, used to page through
+         * performance reports. To retrieve the next page, set this parameter to the
+         * value of "nextPageToken" from the previous response. Optional.
+         * @return PerformanceReportList
+         */
+        public function listPerformanceReport($accountId, $endDateTime, $startDateTime, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\PerformanceReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_Resource_PerformanceReport extends \Google\Service\AdExchangeBuyer\Resource\PerformanceReport
     {
     }
 }

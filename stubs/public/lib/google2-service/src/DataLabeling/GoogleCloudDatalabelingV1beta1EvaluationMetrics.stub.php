@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1EvaluationMetrics extends \Google\Model
-{
-    protected $classificationMetricsType = GoogleCloudDatalabelingV1beta1ClassificationMetrics::class;
-    protected $classificationMetricsDataType = '';
-    protected $objectDetectionMetricsType = GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics::class;
-    protected $objectDetectionMetricsDataType = '';
-    /**
-     * @param GoogleCloudDatalabelingV1beta1ClassificationMetrics $classificationMetrics
-     */
-    public function setClassificationMetrics(GoogleCloudDatalabelingV1beta1ClassificationMetrics $classificationMetrics)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1EvaluationMetrics extends \Google\Model
     {
+        protected $classificationMetricsType = GoogleCloudDatalabelingV1beta1ClassificationMetrics::class;
+        protected $classificationMetricsDataType = '';
+        protected $objectDetectionMetricsType = GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics::class;
+        protected $objectDetectionMetricsDataType = '';
+        /**
+         * @param GoogleCloudDatalabelingV1beta1ClassificationMetrics $classificationMetrics
+         */
+        public function setClassificationMetrics(GoogleCloudDatalabelingV1beta1ClassificationMetrics $classificationMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ClassificationMetrics
+         */
+        public function getClassificationMetrics()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics $objectDetectionMetrics
+         */
+        public function setObjectDetectionMetrics(GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics $objectDetectionMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics
+         */
+        public function getObjectDetectionMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1ClassificationMetrics
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassificationMetrics()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics $objectDetectionMetrics
-     */
-    public function setObjectDetectionMetrics(GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics $objectDetectionMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics
-     */
-    public function getObjectDetectionMetrics()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1EvaluationMetrics extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1EvaluationMetrics
     {
     }
 }

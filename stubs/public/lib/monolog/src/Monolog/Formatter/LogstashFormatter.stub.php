@@ -16,6 +16,7 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\LogRecord;
 /**
  * Serializes a log message to Logstash Event Format
  *

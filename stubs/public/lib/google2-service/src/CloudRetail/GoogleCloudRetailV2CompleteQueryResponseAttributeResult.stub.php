@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CompleteQueryResponseAttributeResult extends \Google\Collection
-{
-    protected $collection_key = 'suggestions';
-    /**
-     * The list of suggestions for the attribute.
-     *
-     * @var string[]
-     */
-    public $suggestions;
-    /**
-     * The list of suggestions for the attribute.
-     *
-     * @param string[] $suggestions
-     */
-    public function setSuggestions($suggestions)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CompleteQueryResponseAttributeResult extends \Google\Collection
     {
+        protected $collection_key = 'suggestions';
+        /**
+         * The list of suggestions for the attribute.
+         *
+         * @var string[]
+         */
+        public $suggestions;
+        /**
+         * The list of suggestions for the attribute.
+         *
+         * @param string[] $suggestions
+         */
+        public function setSuggestions($suggestions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponseAttributeResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestions()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CompleteQueryResponseAttributeResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponseAttributeResult
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IntRange extends \Google\Model
-{
-    /**
-     * Max value of the int parameter.
-     *
-     * @var string
-     */
-    public $max;
-    /**
-     * Min value of the int parameter.
-     *
-     * @var string
-     */
-    public $min;
-    /**
-     * Max value of the int parameter.
-     *
-     * @param string $max
-     */
-    public function setMax($max)
+namespace Google\Service\Bigquery {
+    class IntRange extends \Google\Model
     {
+        /**
+         * Max value of the int parameter.
+         *
+         * @var string
+         */
+        public $max;
+        /**
+         * Min value of the int parameter.
+         *
+         * @var string
+         */
+        public $min;
+        /**
+         * Max value of the int parameter.
+         *
+         * @param string $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Min value of the int parameter.
+         *
+         * @param string $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\IntRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * Min value of the int parameter.
-     *
-     * @param string $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMin()
+    class Google_Service_Bigquery_IntRange extends \Google\Service\Bigquery\IntRange
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateSpreadsheetPropertiesRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root 'properties' is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $propertiesType = SpreadsheetProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root 'properties' is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Sheets {
+    class UpdateSpreadsheetPropertiesRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root 'properties' is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $propertiesType = SpreadsheetProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root 'properties' is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The properties to update.
+         *
+         * @param SpreadsheetProperties $properties
+         */
+        public function setProperties(SpreadsheetProperties $properties)
+        {
+        }
+        /**
+         * @return SpreadsheetProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\UpdateSpreadsheetPropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The properties to update.
-     *
-     * @param SpreadsheetProperties $properties
-     */
-    public function setProperties(SpreadsheetProperties $properties)
-    {
-    }
-    /**
-     * @return SpreadsheetProperties
-     */
-    public function getProperties()
+    class Google_Service_Sheets_UpdateSpreadsheetPropertiesRequest extends \Google\Service\Sheets\UpdateSpreadsheetPropertiesRequest
     {
     }
 }

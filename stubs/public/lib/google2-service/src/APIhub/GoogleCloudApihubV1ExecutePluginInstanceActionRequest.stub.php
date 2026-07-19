@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ExecutePluginInstanceActionRequest extends \Google\Model
-{
-    protected $actionExecutionDetailType = GoogleCloudApihubV1ActionExecutionDetail::class;
-    protected $actionExecutionDetailDataType = '';
-    /**
-     * Required. The execution details for the action to execute.
-     *
-     * @param GoogleCloudApihubV1ActionExecutionDetail $actionExecutionDetail
-     */
-    public function setActionExecutionDetail(GoogleCloudApihubV1ActionExecutionDetail $actionExecutionDetail)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ExecutePluginInstanceActionRequest extends \Google\Model
     {
+        protected $actionExecutionDetailType = GoogleCloudApihubV1ActionExecutionDetail::class;
+        protected $actionExecutionDetailDataType = '';
+        /**
+         * Required. The execution details for the action to execute.
+         *
+         * @param GoogleCloudApihubV1ActionExecutionDetail $actionExecutionDetail
+         */
+        public function setActionExecutionDetail(GoogleCloudApihubV1ActionExecutionDetail $actionExecutionDetail)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ActionExecutionDetail
+         */
+        public function getActionExecutionDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ActionExecutionDetail
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ExecutePluginInstanceActionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionExecutionDetail()
+    class Google_Service_APIhub_GoogleCloudApihubV1ExecutePluginInstanceActionRequest extends \Google\Service\APIhub\GoogleCloudApihubV1ExecutePluginInstanceActionRequest
     {
     }
 }

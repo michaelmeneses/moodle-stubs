@@ -21,59 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar\Resource;
-
-/**
- * The "dataLayers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $solarService = new Google\Service\Solar(...);
- *   $dataLayers = $solarService->dataLayers;
- *  </code>
- */
-class DataLayers extends \Google\Service\Resource
-{
+namespace Google\Service\Solar\Resource {
+    use Google\Service\Solar\DataLayers as DataLayersModel;
     /**
-     * Gets solar information for a region surrounding a location. Returns an error
-     * with code `NOT_FOUND` if the location is outside the coverage area.
-     * (dataLayers.get)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool exactQualityRequired Optional. Whether to require exact
-     * quality of the imagery. If set to false, the `required_quality` field is
-     * interpreted as the minimum required quality, such that HIGH quality imagery
-     * may be returned when `required_quality` is set to MEDIUM. If set to true,
-     * `required_quality` is interpreted as the exact required quality and only
-     * `MEDIUM` quality imagery is returned if `required_quality` is set to
-     * `MEDIUM`.
-     * @opt_param string experiments Optional. Specifies the pre-GA experiments to
-     * enable.
-     * @opt_param double location.latitude The latitude in degrees. It must be in
-     * the range [-90.0, +90.0].
-     * @opt_param double location.longitude The longitude in degrees. It must be in
-     * the range [-180.0, +180.0].
-     * @opt_param float pixelSizeMeters Optional. The minimum scale, in meters per
-     * pixel, of the data to return. Values of 0.1 (the default, if this field is
-     * not set explicitly), 0.25, 0.5, and 1.0 are supported. Imagery components
-     * whose normal resolution is less than `pixel_size_meters` will be returned at
-     * the resolution specified by `pixel_size_meters`; imagery components whose
-     * normal resolution is equal to or greater than `pixel_size_meters` will be
-     * returned at that normal resolution.
-     * @opt_param float radiusMeters Required. The radius, in meters, defining the
-     * region surrounding that centre point for which data should be returned. The
-     * limitations on this value are: * Any value up to 100m can always be
-     * specified. * Values over 100m can be specified, as long as `radius_meters` <=
-     * `pixel_size_meters * 1000`. * However, for values over 175m, the
-     * `DataLayerView` in the request must not include monthly flux or hourly shade.
-     * @opt_param string requiredQuality Optional. The minimum quality level allowed
-     * in the results. No result with lower quality than this will be returned. Not
-     * specifying this is equivalent to restricting to HIGH quality only.
-     * @opt_param string view Optional. The desired subset of the data to return.
-     * @return DataLayersModel
-     * @throws \Google\Service\Exception
+     * The "dataLayers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $solarService = new Google\Service\Solar(...);
+     *   $dataLayers = $solarService->dataLayers;
+     *  </code>
      */
-    public function get($optParams = [])
+    class DataLayers extends \Google\Service\Resource
+    {
+        /**
+         * Gets solar information for a region surrounding a location. Returns an error
+         * with code `NOT_FOUND` if the location is outside the coverage area.
+         * (dataLayers.get)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool exactQualityRequired Optional. Whether to require exact
+         * quality of the imagery. If set to false, the `required_quality` field is
+         * interpreted as the minimum required quality, such that HIGH quality imagery
+         * may be returned when `required_quality` is set to MEDIUM. If set to true,
+         * `required_quality` is interpreted as the exact required quality and only
+         * `MEDIUM` quality imagery is returned if `required_quality` is set to
+         * `MEDIUM`.
+         * @opt_param string experiments Optional. Specifies the pre-GA experiments to
+         * enable.
+         * @opt_param double location.latitude The latitude in degrees. It must be in
+         * the range [-90.0, +90.0].
+         * @opt_param double location.longitude The longitude in degrees. It must be in
+         * the range [-180.0, +180.0].
+         * @opt_param float pixelSizeMeters Optional. The minimum scale, in meters per
+         * pixel, of the data to return. Values of 0.1 (the default, if this field is
+         * not set explicitly), 0.25, 0.5, and 1.0 are supported. Imagery components
+         * whose normal resolution is less than `pixel_size_meters` will be returned at
+         * the resolution specified by `pixel_size_meters`; imagery components whose
+         * normal resolution is equal to or greater than `pixel_size_meters` will be
+         * returned at that normal resolution.
+         * @opt_param float radiusMeters Required. The radius, in meters, defining the
+         * region surrounding that centre point for which data should be returned. The
+         * limitations on this value are: * Any value up to 100m can always be
+         * specified. * Values over 100m can be specified, as long as `radius_meters` <=
+         * `pixel_size_meters * 1000`. * However, for values over 175m, the
+         * `DataLayerView` in the request must not include monthly flux or hourly shade.
+         * @opt_param string requiredQuality Optional. The minimum quality level allowed
+         * in the results. No result with lower quality than this will be returned. Not
+         * specifying this is equivalent to restricting to HIGH quality only.
+         * @opt_param string view Optional. The desired subset of the data to return.
+         * @return DataLayersModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Solar\Resource\DataLayers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Solar_Resource_DataLayers extends \Google\Service\Solar\Resource\DataLayers
     {
     }
 }

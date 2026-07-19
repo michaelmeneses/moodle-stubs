@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AutomationRule extends \Google\Model
-{
-    protected $advanceRolloutRuleType = AdvanceRolloutRule::class;
-    protected $advanceRolloutRuleDataType = '';
-    protected $promoteReleaseRuleType = PromoteReleaseRule::class;
-    protected $promoteReleaseRuleDataType = '';
-    protected $repairRolloutRuleType = RepairRolloutRule::class;
-    protected $repairRolloutRuleDataType = '';
-    protected $timedPromoteReleaseRuleType = TimedPromoteReleaseRule::class;
-    protected $timedPromoteReleaseRuleDataType = '';
-    /**
-     * Optional. The `AdvanceRolloutRule` will automatically advance a successful
-     * Rollout.
-     *
-     * @param AdvanceRolloutRule $advanceRolloutRule
-     */
-    public function setAdvanceRolloutRule(AdvanceRolloutRule $advanceRolloutRule)
+namespace Google\Service\CloudDeploy {
+    class AutomationRule extends \Google\Model
     {
+        protected $advanceRolloutRuleType = AdvanceRolloutRule::class;
+        protected $advanceRolloutRuleDataType = '';
+        protected $promoteReleaseRuleType = PromoteReleaseRule::class;
+        protected $promoteReleaseRuleDataType = '';
+        protected $repairRolloutRuleType = RepairRolloutRule::class;
+        protected $repairRolloutRuleDataType = '';
+        protected $timedPromoteReleaseRuleType = TimedPromoteReleaseRule::class;
+        protected $timedPromoteReleaseRuleDataType = '';
+        /**
+         * Optional. The `AdvanceRolloutRule` will automatically advance a successful
+         * Rollout.
+         *
+         * @param AdvanceRolloutRule $advanceRolloutRule
+         */
+        public function setAdvanceRolloutRule(AdvanceRolloutRule $advanceRolloutRule)
+        {
+        }
+        /**
+         * @return AdvanceRolloutRule
+         */
+        public function getAdvanceRolloutRule()
+        {
+        }
+        /**
+         * Optional. `PromoteReleaseRule` will automatically promote a release from
+         * the current target to a specified target.
+         *
+         * @param PromoteReleaseRule $promoteReleaseRule
+         */
+        public function setPromoteReleaseRule(PromoteReleaseRule $promoteReleaseRule)
+        {
+        }
+        /**
+         * @return PromoteReleaseRule
+         */
+        public function getPromoteReleaseRule()
+        {
+        }
+        /**
+         * Optional. The `RepairRolloutRule` will automatically repair a failed
+         * rollout.
+         *
+         * @param RepairRolloutRule $repairRolloutRule
+         */
+        public function setRepairRolloutRule(RepairRolloutRule $repairRolloutRule)
+        {
+        }
+        /**
+         * @return RepairRolloutRule
+         */
+        public function getRepairRolloutRule()
+        {
+        }
+        /**
+         * Optional. The `TimedPromoteReleaseRule` will automatically promote a
+         * release from the current target(s) to the specified target(s) on a
+         * configured schedule.
+         *
+         * @param TimedPromoteReleaseRule $timedPromoteReleaseRule
+         */
+        public function setTimedPromoteReleaseRule(TimedPromoteReleaseRule $timedPromoteReleaseRule)
+        {
+        }
+        /**
+         * @return TimedPromoteReleaseRule
+         */
+        public function getTimedPromoteReleaseRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdvanceRolloutRule
+     * Runtime class alias of \Google\Service\CloudDeploy\AutomationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvanceRolloutRule()
-    {
-    }
-    /**
-     * Optional. `PromoteReleaseRule` will automatically promote a release from
-     * the current target to a specified target.
-     *
-     * @param PromoteReleaseRule $promoteReleaseRule
-     */
-    public function setPromoteReleaseRule(PromoteReleaseRule $promoteReleaseRule)
-    {
-    }
-    /**
-     * @return PromoteReleaseRule
-     */
-    public function getPromoteReleaseRule()
-    {
-    }
-    /**
-     * Optional. The `RepairRolloutRule` will automatically repair a failed
-     * rollout.
-     *
-     * @param RepairRolloutRule $repairRolloutRule
-     */
-    public function setRepairRolloutRule(RepairRolloutRule $repairRolloutRule)
-    {
-    }
-    /**
-     * @return RepairRolloutRule
-     */
-    public function getRepairRolloutRule()
-    {
-    }
-    /**
-     * Optional. The `TimedPromoteReleaseRule` will automatically promote a
-     * release from the current target(s) to the specified target(s) on a
-     * configured schedule.
-     *
-     * @param TimedPromoteReleaseRule $timedPromoteReleaseRule
-     */
-    public function setTimedPromoteReleaseRule(TimedPromoteReleaseRule $timedPromoteReleaseRule)
-    {
-    }
-    /**
-     * @return TimedPromoteReleaseRule
-     */
-    public function getTimedPromoteReleaseRule()
+    class Google_Service_CloudDeploy_AutomationRule extends \Google\Service\CloudDeploy\AutomationRule
     {
     }
 }

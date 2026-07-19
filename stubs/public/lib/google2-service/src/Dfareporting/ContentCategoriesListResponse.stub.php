@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ContentCategoriesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'contentCategories';
-    protected $contentCategoriesType = ContentCategory::class;
-    protected $contentCategoriesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#contentCategoriesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Content category collection.
-     *
-     * @param ContentCategory[] $contentCategories
-     */
-    public function setContentCategories($contentCategories)
+namespace Google\Service\Dfareporting {
+    class ContentCategoriesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'contentCategories';
+        protected $contentCategoriesType = ContentCategory::class;
+        protected $contentCategoriesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#contentCategoriesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Content category collection.
+         *
+         * @param ContentCategory[] $contentCategories
+         */
+        public function setContentCategories($contentCategories)
+        {
+        }
+        /**
+         * @return ContentCategory[]
+         */
+        public function getContentCategories()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#contentCategoriesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContentCategory[]
+     * Runtime class alias of \Google\Service\Dfareporting\ContentCategoriesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentCategories()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#contentCategoriesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_ContentCategoriesListResponse extends \Google\Service\Dfareporting\ContentCategoriesListResponse
     {
     }
 }

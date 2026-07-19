@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class CreatePrintServerRequest extends \Google\Model
-{
-    /**
-     * Required. The [unique ID](https://developers.google.com/workspace/admin/dir
-     * ectory/reference/rest/v1/customers) of the customer's Google Workspace
-     * account. Format: `customers/{id}`
-     *
-     * @var string
-     */
-    public $parent;
-    protected $printServerType = PrintServer::class;
-    protected $printServerDataType = '';
-    /**
-     * Required. The [unique ID](https://developers.google.com/workspace/admin/dir
-     * ectory/reference/rest/v1/customers) of the customer's Google Workspace
-     * account. Format: `customers/{id}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Directory {
+    class CreatePrintServerRequest extends \Google\Model
     {
+        /**
+         * Required. The [unique ID](https://developers.google.com/workspace/admin/dir
+         * ectory/reference/rest/v1/customers) of the customer's Google Workspace
+         * account. Format: `customers/{id}`
+         *
+         * @var string
+         */
+        public $parent;
+        protected $printServerType = PrintServer::class;
+        protected $printServerDataType = '';
+        /**
+         * Required. The [unique ID](https://developers.google.com/workspace/admin/dir
+         * ectory/reference/rest/v1/customers) of the customer's Google Workspace
+         * account. Format: `customers/{id}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. A print server to create. If you want to place the print server
+         * under a specific organizational unit (OU), then populate the `org_unit_id`.
+         * Otherwise the print server is created under the root OU. The `org_unit_id`
+         * can be retrieved using the [Directory API](https://developers.google.com/wo
+         * rkspace/admin/directory/v1/guides/manage-org-units).
+         *
+         * @param PrintServer $printServer
+         */
+        public function setPrintServer(PrintServer $printServer)
+        {
+        }
+        /**
+         * @return PrintServer
+         */
+        public function getPrintServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\CreatePrintServerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. A print server to create. If you want to place the print server
-     * under a specific organizational unit (OU), then populate the `org_unit_id`.
-     * Otherwise the print server is created under the root OU. The `org_unit_id`
-     * can be retrieved using the [Directory API](https://developers.google.com/wo
-     * rkspace/admin/directory/v1/guides/manage-org-units).
-     *
-     * @param PrintServer $printServer
-     */
-    public function setPrintServer(PrintServer $printServer)
-    {
-    }
-    /**
-     * @return PrintServer
-     */
-    public function getPrintServer()
+    class Google_Service_Directory_CreatePrintServerRequest extends \Google\Service\Directory\CreatePrintServerRequest
     {
     }
 }

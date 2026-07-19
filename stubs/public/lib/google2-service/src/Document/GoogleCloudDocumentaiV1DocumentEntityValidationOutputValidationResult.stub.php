@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult extends \Google\Model
-{
-    /**
-     * The validation result type is unspecified.
-     */
-    public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_UNSPECIFIED = 'VALIDATION_RESULT_TYPE_UNSPECIFIED';
-    /**
-     * The validation is valid.
-     */
-    public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_VALID = 'VALIDATION_RESULT_TYPE_VALID';
-    /**
-     * The validation is invalid.
-     */
-    public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_INVALID = 'VALIDATION_RESULT_TYPE_INVALID';
-    /**
-     * The validation is skipped.
-     */
-    public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_SKIPPED = 'VALIDATION_RESULT_TYPE_SKIPPED';
-    /**
-     * The validation is not applicable.
-     */
-    public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_NOT_APPLICABLE = 'VALIDATION_RESULT_TYPE_NOT_APPLICABLE';
-    /**
-     * Optional. The name of the rule resource that is used for validation.
-     * Format: `projects/{project}/locations/{location}/rules/{rule}`
-     *
-     * @var string
-     */
-    public $rule;
-    /**
-     * The description of the validation rule.
-     *
-     * @var string
-     */
-    public $ruleDescription;
-    /**
-     * The display name of the validation rule.
-     *
-     * @var string
-     */
-    public $ruleName;
-    /**
-     * The detailed information of the running the validation process using the
-     * entity from the document based on the validation rule.
-     *
-     * @var string
-     */
-    public $validationDetails;
-    /**
-     * The result of the validation rule.
-     *
-     * @var string
-     */
-    public $validationResultType;
-    /**
-     * Optional. The name of the rule resource that is used for validation.
-     * Format: `projects/{project}/locations/{location}/rules/{rule}`
-     *
-     * @param string $rule
-     */
-    public function setRule($rule)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult extends \Google\Model
     {
+        /**
+         * The validation result type is unspecified.
+         */
+        public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_UNSPECIFIED = 'VALIDATION_RESULT_TYPE_UNSPECIFIED';
+        /**
+         * The validation is valid.
+         */
+        public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_VALID = 'VALIDATION_RESULT_TYPE_VALID';
+        /**
+         * The validation is invalid.
+         */
+        public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_INVALID = 'VALIDATION_RESULT_TYPE_INVALID';
+        /**
+         * The validation is skipped.
+         */
+        public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_SKIPPED = 'VALIDATION_RESULT_TYPE_SKIPPED';
+        /**
+         * The validation is not applicable.
+         */
+        public const VALIDATION_RESULT_TYPE_VALIDATION_RESULT_TYPE_NOT_APPLICABLE = 'VALIDATION_RESULT_TYPE_NOT_APPLICABLE';
+        /**
+         * Optional. The name of the rule resource that is used for validation.
+         * Format: `projects/{project}/locations/{location}/rules/{rule}`
+         *
+         * @var string
+         */
+        public $rule;
+        /**
+         * The description of the validation rule.
+         *
+         * @var string
+         */
+        public $ruleDescription;
+        /**
+         * The display name of the validation rule.
+         *
+         * @var string
+         */
+        public $ruleName;
+        /**
+         * The detailed information of the running the validation process using the
+         * entity from the document based on the validation rule.
+         *
+         * @var string
+         */
+        public $validationDetails;
+        /**
+         * The result of the validation rule.
+         *
+         * @var string
+         */
+        public $validationResultType;
+        /**
+         * Optional. The name of the rule resource that is used for validation.
+         * Format: `projects/{project}/locations/{location}/rules/{rule}`
+         *
+         * @param string $rule
+         */
+        public function setRule($rule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRule()
+        {
+        }
+        /**
+         * The description of the validation rule.
+         *
+         * @param string $ruleDescription
+         */
+        public function setRuleDescription($ruleDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleDescription()
+        {
+        }
+        /**
+         * The display name of the validation rule.
+         *
+         * @param string $ruleName
+         */
+        public function setRuleName($ruleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleName()
+        {
+        }
+        /**
+         * The detailed information of the running the validation process using the
+         * entity from the document based on the validation rule.
+         *
+         * @param string $validationDetails
+         */
+        public function setValidationDetails($validationDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationDetails()
+        {
+        }
+        /**
+         * The result of the validation rule.
+         *
+         * Accepted values: VALIDATION_RESULT_TYPE_UNSPECIFIED,
+         * VALIDATION_RESULT_TYPE_VALID, VALIDATION_RESULT_TYPE_INVALID,
+         * VALIDATION_RESULT_TYPE_SKIPPED, VALIDATION_RESULT_TYPE_NOT_APPLICABLE
+         *
+         * @param self::VALIDATION_RESULT_TYPE_* $validationResultType
+         */
+        public function setValidationResultType($validationResultType)
+        {
+        }
+        /**
+         * @return self::VALIDATION_RESULT_TYPE_*
+         */
+        public function getValidationResultType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRule()
-    {
-    }
-    /**
-     * The description of the validation rule.
-     *
-     * @param string $ruleDescription
-     */
-    public function setRuleDescription($ruleDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleDescription()
-    {
-    }
-    /**
-     * The display name of the validation rule.
-     *
-     * @param string $ruleName
-     */
-    public function setRuleName($ruleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleName()
-    {
-    }
-    /**
-     * The detailed information of the running the validation process using the
-     * entity from the document based on the validation rule.
-     *
-     * @param string $validationDetails
-     */
-    public function setValidationDetails($validationDetails)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationDetails()
-    {
-    }
-    /**
-     * The result of the validation rule.
-     *
-     * Accepted values: VALIDATION_RESULT_TYPE_UNSPECIFIED,
-     * VALIDATION_RESULT_TYPE_VALID, VALIDATION_RESULT_TYPE_INVALID,
-     * VALIDATION_RESULT_TYPE_SKIPPED, VALIDATION_RESULT_TYPE_NOT_APPLICABLE
-     *
-     * @param self::VALIDATION_RESULT_TYPE_* $validationResultType
-     */
-    public function setValidationResultType($validationResultType)
-    {
-    }
-    /**
-     * @return self::VALIDATION_RESULT_TYPE_*
-     */
-    public function getValidationResultType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult
     {
     }
 }

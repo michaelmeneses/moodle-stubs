@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountsUpdateLabelsRequest extends \Google\Collection
-{
-    protected $collection_key = 'labelIds';
-    /**
-     * The IDs of labels that should be assigned to the account.
-     *
-     * @var string[]
-     */
-    public $labelIds;
-    /**
-     * The IDs of labels that should be assigned to the account.
-     *
-     * @param string[] $labelIds
-     */
-    public function setLabelIds($labelIds)
+namespace Google\Service\ShoppingContent {
+    class AccountsUpdateLabelsRequest extends \Google\Collection
     {
+        protected $collection_key = 'labelIds';
+        /**
+         * The IDs of labels that should be assigned to the account.
+         *
+         * @var string[]
+         */
+        public $labelIds;
+        /**
+         * The IDs of labels that should be assigned to the account.
+         *
+         * @param string[] $labelIds
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountsUpdateLabelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelIds()
+    class Google_Service_ShoppingContent_AccountsUpdateLabelsRequest extends \Google\Service\ShoppingContent\AccountsUpdateLabelsRequest
     {
     }
 }

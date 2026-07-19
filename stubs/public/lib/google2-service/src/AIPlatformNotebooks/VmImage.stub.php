@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class VmImage extends \Google\Model
-{
-    /**
-     * Optional. Use this VM image family to find the image; the newest image in
-     * this family will be used.
-     *
-     * @var string
-     */
-    public $family;
-    /**
-     * Optional. Use VM image name to find the image.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The name of the Google Cloud project that this VM image belongs
-     * to. Format: `{project_id}`
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Optional. Use this VM image family to find the image; the newest image in
-     * this family will be used.
-     *
-     * @param string $family
-     */
-    public function setFamily($family)
+namespace Google\Service\AIPlatformNotebooks {
+    class VmImage extends \Google\Model
     {
+        /**
+         * Optional. Use this VM image family to find the image; the newest image in
+         * this family will be used.
+         *
+         * @var string
+         */
+        public $family;
+        /**
+         * Optional. Use VM image name to find the image.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The name of the Google Cloud project that this VM image belongs
+         * to. Format: `{project_id}`
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Optional. Use this VM image family to find the image; the newest image in
+         * this family will be used.
+         *
+         * @param string $family
+         */
+        public function setFamily($family)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamily()
+        {
+        }
+        /**
+         * Optional. Use VM image name to find the image.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The name of the Google Cloud project that this VM image belongs
+         * to. Format: `{project_id}`
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\VmImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamily()
-    {
-    }
-    /**
-     * Optional. Use VM image name to find the image.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The name of the Google Cloud project that this VM image belongs
-     * to. Format: `{project_id}`
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
+    class Google_Service_AIPlatformNotebooks_VmImage extends \Google\Service\AIPlatformNotebooks\VmImage
     {
     }
 }

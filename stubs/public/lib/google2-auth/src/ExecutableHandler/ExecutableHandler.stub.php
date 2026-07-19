@@ -23,6 +23,9 @@
  */
 namespace Google\Auth\ExecutableHandler;
 
+use RuntimeException;
+use Symfony\Component\Process\Exception\ProcessTimedOutException;
+use Symfony\Component\Process\Process;
 class ExecutableHandler
 {
     private const DEFAULT_EXECUTABLE_TIMEOUT_MILLIS = 30 * 1000;

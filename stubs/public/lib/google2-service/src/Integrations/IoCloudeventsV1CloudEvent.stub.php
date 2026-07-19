@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class IoCloudeventsV1CloudEvent extends \Google\Model
-{
-    protected $attributesType = IoCloudeventsV1CloudEventCloudEventAttributeValue::class;
-    protected $attributesDataType = 'map';
-    /**
-     * @var string
-     */
-    public $binaryData;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var array[]
-     */
-    public $protoData;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var string
-     */
-    public $specVersion;
-    /**
-     * @var string
-     */
-    public $textData;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param IoCloudeventsV1CloudEventCloudEventAttributeValue[]
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\Integrations {
+    class IoCloudeventsV1CloudEvent extends \Google\Model
     {
+        protected $attributesType = IoCloudeventsV1CloudEventCloudEventAttributeValue::class;
+        protected $attributesDataType = 'map';
+        /**
+         * @var string
+         */
+        public $binaryData;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var array[]
+         */
+        public $protoData;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @var string
+         */
+        public $specVersion;
+        /**
+         * @var string
+         */
+        public $textData;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param IoCloudeventsV1CloudEventCloudEventAttributeValue[]
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return IoCloudeventsV1CloudEventCloudEventAttributeValue[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBinaryData($binaryData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinaryData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setProtoData($protoData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProtoData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpecVersion($specVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpecVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextData($textData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IoCloudeventsV1CloudEventCloudEventAttributeValue[]
+     * Runtime class alias of \Google\Service\Integrations\IoCloudeventsV1CloudEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBinaryData($binaryData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBinaryData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setProtoData($protoData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProtoData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpecVersion($specVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpecVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextData($textData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Integrations_IoCloudeventsV1CloudEvent extends \Google\Service\Integrations\IoCloudeventsV1CloudEvent
     {
     }
 }

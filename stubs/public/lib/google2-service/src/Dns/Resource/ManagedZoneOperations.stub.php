@@ -21,58 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "managedZoneOperations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $managedZoneOperations = $dnsService->managedZoneOperations;
- *  </code>
- */
-class ManagedZoneOperations extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\ManagedZoneOperationsListResponse;
+    use Google\Service\Dns\Operation;
     /**
-     * Fetches the representation of an existing Operation.
-     * (managedZoneOperations.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request.
-     * @param string $operation Identifies the operation addressed by this request
-     * (ID of the operation).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "managedZoneOperations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $managedZoneOperations = $dnsService->managedZoneOperations;
+     *  </code>
      */
-    public function get($project, $managedZone, $operation, $optParams = [])
+    class ManagedZoneOperations extends \Google\Service\Resource
     {
+        /**
+         * Fetches the representation of an existing Operation.
+         * (managedZoneOperations.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request.
+         * @param string $operation Identifies the operation addressed by this request
+         * (ID of the operation).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $managedZone, $operation, $optParams = [])
+        {
+        }
+        /**
+         * Enumerates Operations for the given ManagedZone.
+         * (managedZoneOperations.listManagedZoneOperations)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Optional. Maximum number of results to be returned.
+         * If unspecified, the server decides how many results to return.
+         * @opt_param string pageToken Optional. A tag returned by a previous list
+         * request that was truncated. Use this parameter to continue a previous list
+         * request.
+         * @opt_param string sortBy Sorting criterion. The only supported values are
+         * START_TIME and ID.
+         * @return ManagedZoneOperationsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listManagedZoneOperations($project, $managedZone, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Enumerates Operations for the given ManagedZone.
-     * (managedZoneOperations.listManagedZoneOperations)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Optional. Maximum number of results to be returned.
-     * If unspecified, the server decides how many results to return.
-     * @opt_param string pageToken Optional. A tag returned by a previous list
-     * request that was truncated. Use this parameter to continue a previous list
-     * request.
-     * @opt_param string sortBy Sorting criterion. The only supported values are
-     * START_TIME and ID.
-     * @return ManagedZoneOperationsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dns\Resource\ManagedZoneOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listManagedZoneOperations($project, $managedZone, $optParams = [])
+    class Google_Service_Dns_Resource_ManagedZoneOperations extends \Google\Service\Dns\Resource\ManagedZoneOperations
     {
     }
 }

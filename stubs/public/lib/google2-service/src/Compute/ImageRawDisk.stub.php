@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ImageRawDisk extends \Google\Model
-{
-    public const CONTAINER_TYPE_TAR = 'TAR';
-    /**
-     * The format used to encode and transmit the block device, which should
-     * beTAR. This is just a container and transmission format and not a runtime
-     * format. Provided by the client when the disk image is created.
-     *
-     * @var string
-     */
-    public $containerType;
-    /**
-     * [Deprecated] This field is deprecated. An optional SHA1 checksum of the
-     * disk image before unpackaging provided by the client when the disk image is
-     * created.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $sha1Checksum;
-    /**
-     * The full Google Cloud Storage URL where the raw disk image archive is
-     * stored. The following are valid formats for the URL:        -
-     * https://storage.googleapis.com/bucket_name/image_archive_name    -
-     * https://storage.googleapis.com/bucket_name/folder_name/image_archive_name
-     *
-     * In order to create an image, you must provide the full or partial URL of
-     * one of the following:        - The rawDisk.source URL     - The sourceDisk
-     * URL     - The sourceImage URL     - The sourceSnapshot URL
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * The format used to encode and transmit the block device, which should
-     * beTAR. This is just a container and transmission format and not a runtime
-     * format. Provided by the client when the disk image is created.
-     *
-     * Accepted values: TAR
-     *
-     * @param self::CONTAINER_TYPE_* $containerType
-     */
-    public function setContainerType($containerType)
+namespace Google\Service\Compute {
+    class ImageRawDisk extends \Google\Model
     {
+        public const CONTAINER_TYPE_TAR = 'TAR';
+        /**
+         * The format used to encode and transmit the block device, which should
+         * beTAR. This is just a container and transmission format and not a runtime
+         * format. Provided by the client when the disk image is created.
+         *
+         * @var string
+         */
+        public $containerType;
+        /**
+         * [Deprecated] This field is deprecated. An optional SHA1 checksum of the
+         * disk image before unpackaging provided by the client when the disk image is
+         * created.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $sha1Checksum;
+        /**
+         * The full Google Cloud Storage URL where the raw disk image archive is
+         * stored. The following are valid formats for the URL:        -
+         * https://storage.googleapis.com/bucket_name/image_archive_name    -
+         * https://storage.googleapis.com/bucket_name/folder_name/image_archive_name
+         *
+         * In order to create an image, you must provide the full or partial URL of
+         * one of the following:        - The rawDisk.source URL     - The sourceDisk
+         * URL     - The sourceImage URL     - The sourceSnapshot URL
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * The format used to encode and transmit the block device, which should
+         * beTAR. This is just a container and transmission format and not a runtime
+         * format. Provided by the client when the disk image is created.
+         *
+         * Accepted values: TAR
+         *
+         * @param self::CONTAINER_TYPE_* $containerType
+         */
+        public function setContainerType($containerType)
+        {
+        }
+        /**
+         * @return self::CONTAINER_TYPE_*
+         */
+        public function getContainerType()
+        {
+        }
+        /**
+         * [Deprecated] This field is deprecated. An optional SHA1 checksum of the
+         * disk image before unpackaging provided by the client when the disk image is
+         * created.
+         *
+         * @deprecated
+         * @param string $sha1Checksum
+         */
+        public function setSha1Checksum($sha1Checksum)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getSha1Checksum()
+        {
+        }
+        /**
+         * The full Google Cloud Storage URL where the raw disk image archive is
+         * stored. The following are valid formats for the URL:        -
+         * https://storage.googleapis.com/bucket_name/image_archive_name    -
+         * https://storage.googleapis.com/bucket_name/folder_name/image_archive_name
+         *
+         * In order to create an image, you must provide the full or partial URL of
+         * one of the following:        - The rawDisk.source URL     - The sourceDisk
+         * URL     - The sourceImage URL     - The sourceSnapshot URL
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTAINER_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\ImageRawDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerType()
-    {
-    }
-    /**
-     * [Deprecated] This field is deprecated. An optional SHA1 checksum of the
-     * disk image before unpackaging provided by the client when the disk image is
-     * created.
-     *
-     * @deprecated
-     * @param string $sha1Checksum
-     */
-    public function setSha1Checksum($sha1Checksum)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getSha1Checksum()
-    {
-    }
-    /**
-     * The full Google Cloud Storage URL where the raw disk image archive is
-     * stored. The following are valid formats for the URL:        -
-     * https://storage.googleapis.com/bucket_name/image_archive_name    -
-     * https://storage.googleapis.com/bucket_name/folder_name/image_archive_name
-     *
-     * In order to create an image, you must provide the full or partial URL of
-     * one of the following:        - The rawDisk.source URL     - The sourceDisk
-     * URL     - The sourceImage URL     - The sourceSnapshot URL
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_Compute_ImageRawDisk extends \Google\Service\Compute\ImageRawDisk
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement;
-
-class OrganizationInfo extends \Google\Model
-{
-    protected $addressType = PostalAddress::class;
-    protected $addressDataType = '';
-    /**
-     * Output only. The contact number for the organization.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Output only. The registered domain for the account.
-     *
-     * @var string
-     */
-    public $registeredDomain;
-    /**
-     * Output only. The postal address for the account.
-     *
-     * @param PostalAddress $address
-     */
-    public function setAddress(PostalAddress $address)
+namespace Google\Service\MyBusinessAccountManagement {
+    class OrganizationInfo extends \Google\Model
     {
+        protected $addressType = PostalAddress::class;
+        protected $addressDataType = '';
+        /**
+         * Output only. The contact number for the organization.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Output only. The registered domain for the account.
+         *
+         * @var string
+         */
+        public $registeredDomain;
+        /**
+         * Output only. The postal address for the account.
+         *
+         * @param PostalAddress $address
+         */
+        public function setAddress(PostalAddress $address)
+        {
+        }
+        /**
+         * @return PostalAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Output only. The contact number for the organization.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Output only. The registered domain for the account.
+         *
+         * @param string $registeredDomain
+         */
+        public function setRegisteredDomain($registeredDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegisteredDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostalAddress
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\OrganizationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Output only. The contact number for the organization.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Output only. The registered domain for the account.
-     *
-     * @param string $registeredDomain
-     */
-    public function setRegisteredDomain($registeredDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegisteredDomain()
+    class Google_Service_MyBusinessAccountManagement_OrganizationInfo extends \Google\Service\MyBusinessAccountManagement\OrganizationInfo
     {
     }
 }

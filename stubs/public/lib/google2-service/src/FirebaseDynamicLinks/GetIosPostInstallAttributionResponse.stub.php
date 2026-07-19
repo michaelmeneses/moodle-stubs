@@ -21,398 +21,407 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class GetIosPostInstallAttributionResponse extends \Google\Model
-{
-    /**
-     * Unset.
-     */
-    public const ATTRIBUTION_CONFIDENCE_UNKNOWN_ATTRIBUTION_CONFIDENCE = 'UNKNOWN_ATTRIBUTION_CONFIDENCE';
-    /**
-     * Weak confidence, more than one matching link found or link suspected to be
-     * false positive.
-     */
-    public const ATTRIBUTION_CONFIDENCE_WEAK = 'WEAK';
-    /**
-     * Default confidence, match based on device heuristics.
-     */
-    public const ATTRIBUTION_CONFIDENCE_DEFAULT = 'DEFAULT';
-    /**
-     * Unique confidence, match based on "unique match link to check" or other
-     * means.
-     */
-    public const ATTRIBUTION_CONFIDENCE_UNIQUE = 'UNIQUE';
-    /**
-     * Unset.
-     */
-    public const REQUEST_IP_VERSION_UNKNOWN_IP_VERSION = 'UNKNOWN_IP_VERSION';
-    /**
-     * Request made from an IPv4 IP address.
-     */
-    public const REQUEST_IP_VERSION_IP_V4 = 'IP_V4';
-    /**
-     * Request made from an IPv6 IP address.
-     */
-    public const REQUEST_IP_VERSION_IP_V6 = 'IP_V6';
-    /**
-     * The minimum version for app, specified by dev through ?imv= parameter.
-     * Return to iSDK to allow app to evaluate if current version meets this.
-     *
-     * @var string
-     */
-    public $appMinimumVersion;
-    /**
-     * The confidence of the returned attribution.
-     *
-     * @var string
-     */
-    public $attributionConfidence;
-    /**
-     * The deep-link attributed post-install via one of several techniques (device
-     * heuristics, copy unique).
-     *
-     * @var string
-     */
-    public $deepLink;
-    /**
-     * User-agent specific custom-scheme URIs for iSDK to open. This will be set
-     * according to the user-agent tha the click was originally made in. There is
-     * no Safari-equivalent custom-scheme open URLs. ie:
-     * googlechrome://www.example.com ie: firefox://open-
-     * url?url=http://www.example.com ie: opera-http://example.com
-     *
-     * @var string
-     */
-    public $externalBrowserDestinationLink;
-    /**
-     * The link to navigate to update the app if min version is not met. This is
-     * either (in order): 1) fallback link (from ?ifl= parameter, if specified by
-     * developer) or 2) AppStore URL (from ?isi= parameter, if specified), or 3)
-     * the payload link (from required link= parameter).
-     *
-     * @var string
-     */
-    public $fallbackLink;
-    /**
-     * Invitation ID attributed post-install via one of several techniques (device
-     * heuristics, copy unique).
-     *
-     * @var string
-     */
-    public $invitationId;
-    /**
-     * Instruction for iSDK to attemmpt to perform strong match. For instance, if
-     * browser does not support/allow cookie or outside of support browsers, this
-     * will be false.
-     *
-     * @var bool
-     */
-    public $isStrongMatchExecutable;
-    /**
-     * Describes why match failed, ie: "discarded due to low confidence". This
-     * message will be publicly visible.
-     *
-     * @var string
-     */
-    public $matchMessage;
-    /**
-     * Which IP version the request was made from.
-     *
-     * @var string
-     */
-    public $requestIpVersion;
-    /**
-     * Entire FDL (short or long) attributed post-install via one of several
-     * techniques (device heuristics, copy unique).
-     *
-     * @var string
-     */
-    public $requestedLink;
-    /**
-     * The entire FDL, expanded from a short link. It is the same as the
-     * requested_link, if it is long. Parameters from this should not be used
-     * directly (ie: server can default utm_[campaign|medium|source] to a value
-     * when requested_link lack them, server determine the best fallback_link when
-     * requested_link specifies >1 fallback links).
-     *
-     * @var string
-     */
-    public $resolvedLink;
-    /**
-     * Scion campaign value to be propagated by iSDK to Scion at post-install.
-     *
-     * @var string
-     */
-    public $utmCampaign;
-    /**
-     * Scion content value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmContent;
-    /**
-     * Scion medium value to be propagated by iSDK to Scion at post-install.
-     *
-     * @var string
-     */
-    public $utmMedium;
-    /**
-     * Scion source value to be propagated by iSDK to Scion at post-install.
-     *
-     * @var string
-     */
-    public $utmSource;
-    /**
-     * Scion term value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmTerm;
-    /**
-     * The minimum version for app, specified by dev through ?imv= parameter.
-     * Return to iSDK to allow app to evaluate if current version meets this.
-     *
-     * @param string $appMinimumVersion
-     */
-    public function setAppMinimumVersion($appMinimumVersion)
+namespace Google\Service\FirebaseDynamicLinks {
+    class GetIosPostInstallAttributionResponse extends \Google\Model
     {
+        /**
+         * Unset.
+         */
+        public const ATTRIBUTION_CONFIDENCE_UNKNOWN_ATTRIBUTION_CONFIDENCE = 'UNKNOWN_ATTRIBUTION_CONFIDENCE';
+        /**
+         * Weak confidence, more than one matching link found or link suspected to be
+         * false positive.
+         */
+        public const ATTRIBUTION_CONFIDENCE_WEAK = 'WEAK';
+        /**
+         * Default confidence, match based on device heuristics.
+         */
+        public const ATTRIBUTION_CONFIDENCE_DEFAULT = 'DEFAULT';
+        /**
+         * Unique confidence, match based on "unique match link to check" or other
+         * means.
+         */
+        public const ATTRIBUTION_CONFIDENCE_UNIQUE = 'UNIQUE';
+        /**
+         * Unset.
+         */
+        public const REQUEST_IP_VERSION_UNKNOWN_IP_VERSION = 'UNKNOWN_IP_VERSION';
+        /**
+         * Request made from an IPv4 IP address.
+         */
+        public const REQUEST_IP_VERSION_IP_V4 = 'IP_V4';
+        /**
+         * Request made from an IPv6 IP address.
+         */
+        public const REQUEST_IP_VERSION_IP_V6 = 'IP_V6';
+        /**
+         * The minimum version for app, specified by dev through ?imv= parameter.
+         * Return to iSDK to allow app to evaluate if current version meets this.
+         *
+         * @var string
+         */
+        public $appMinimumVersion;
+        /**
+         * The confidence of the returned attribution.
+         *
+         * @var string
+         */
+        public $attributionConfidence;
+        /**
+         * The deep-link attributed post-install via one of several techniques (device
+         * heuristics, copy unique).
+         *
+         * @var string
+         */
+        public $deepLink;
+        /**
+         * User-agent specific custom-scheme URIs for iSDK to open. This will be set
+         * according to the user-agent tha the click was originally made in. There is
+         * no Safari-equivalent custom-scheme open URLs. ie:
+         * googlechrome://www.example.com ie: firefox://open-
+         * url?url=http://www.example.com ie: opera-http://example.com
+         *
+         * @var string
+         */
+        public $externalBrowserDestinationLink;
+        /**
+         * The link to navigate to update the app if min version is not met. This is
+         * either (in order): 1) fallback link (from ?ifl= parameter, if specified by
+         * developer) or 2) AppStore URL (from ?isi= parameter, if specified), or 3)
+         * the payload link (from required link= parameter).
+         *
+         * @var string
+         */
+        public $fallbackLink;
+        /**
+         * Invitation ID attributed post-install via one of several techniques (device
+         * heuristics, copy unique).
+         *
+         * @var string
+         */
+        public $invitationId;
+        /**
+         * Instruction for iSDK to attemmpt to perform strong match. For instance, if
+         * browser does not support/allow cookie or outside of support browsers, this
+         * will be false.
+         *
+         * @var bool
+         */
+        public $isStrongMatchExecutable;
+        /**
+         * Describes why match failed, ie: "discarded due to low confidence". This
+         * message will be publicly visible.
+         *
+         * @var string
+         */
+        public $matchMessage;
+        /**
+         * Which IP version the request was made from.
+         *
+         * @var string
+         */
+        public $requestIpVersion;
+        /**
+         * Entire FDL (short or long) attributed post-install via one of several
+         * techniques (device heuristics, copy unique).
+         *
+         * @var string
+         */
+        public $requestedLink;
+        /**
+         * The entire FDL, expanded from a short link. It is the same as the
+         * requested_link, if it is long. Parameters from this should not be used
+         * directly (ie: server can default utm_[campaign|medium|source] to a value
+         * when requested_link lack them, server determine the best fallback_link when
+         * requested_link specifies >1 fallback links).
+         *
+         * @var string
+         */
+        public $resolvedLink;
+        /**
+         * Scion campaign value to be propagated by iSDK to Scion at post-install.
+         *
+         * @var string
+         */
+        public $utmCampaign;
+        /**
+         * Scion content value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmContent;
+        /**
+         * Scion medium value to be propagated by iSDK to Scion at post-install.
+         *
+         * @var string
+         */
+        public $utmMedium;
+        /**
+         * Scion source value to be propagated by iSDK to Scion at post-install.
+         *
+         * @var string
+         */
+        public $utmSource;
+        /**
+         * Scion term value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmTerm;
+        /**
+         * The minimum version for app, specified by dev through ?imv= parameter.
+         * Return to iSDK to allow app to evaluate if current version meets this.
+         *
+         * @param string $appMinimumVersion
+         */
+        public function setAppMinimumVersion($appMinimumVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppMinimumVersion()
+        {
+        }
+        /**
+         * The confidence of the returned attribution.
+         *
+         * Accepted values: UNKNOWN_ATTRIBUTION_CONFIDENCE, WEAK, DEFAULT, UNIQUE
+         *
+         * @param self::ATTRIBUTION_CONFIDENCE_* $attributionConfidence
+         */
+        public function setAttributionConfidence($attributionConfidence)
+        {
+        }
+        /**
+         * @return self::ATTRIBUTION_CONFIDENCE_*
+         */
+        public function getAttributionConfidence()
+        {
+        }
+        /**
+         * The deep-link attributed post-install via one of several techniques (device
+         * heuristics, copy unique).
+         *
+         * @param string $deepLink
+         */
+        public function setDeepLink($deepLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeepLink()
+        {
+        }
+        /**
+         * User-agent specific custom-scheme URIs for iSDK to open. This will be set
+         * according to the user-agent tha the click was originally made in. There is
+         * no Safari-equivalent custom-scheme open URLs. ie:
+         * googlechrome://www.example.com ie: firefox://open-
+         * url?url=http://www.example.com ie: opera-http://example.com
+         *
+         * @param string $externalBrowserDestinationLink
+         */
+        public function setExternalBrowserDestinationLink($externalBrowserDestinationLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalBrowserDestinationLink()
+        {
+        }
+        /**
+         * The link to navigate to update the app if min version is not met. This is
+         * either (in order): 1) fallback link (from ?ifl= parameter, if specified by
+         * developer) or 2) AppStore URL (from ?isi= parameter, if specified), or 3)
+         * the payload link (from required link= parameter).
+         *
+         * @param string $fallbackLink
+         */
+        public function setFallbackLink($fallbackLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackLink()
+        {
+        }
+        /**
+         * Invitation ID attributed post-install via one of several techniques (device
+         * heuristics, copy unique).
+         *
+         * @param string $invitationId
+         */
+        public function setInvitationId($invitationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvitationId()
+        {
+        }
+        /**
+         * Instruction for iSDK to attemmpt to perform strong match. For instance, if
+         * browser does not support/allow cookie or outside of support browsers, this
+         * will be false.
+         *
+         * @param bool $isStrongMatchExecutable
+         */
+        public function setIsStrongMatchExecutable($isStrongMatchExecutable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsStrongMatchExecutable()
+        {
+        }
+        /**
+         * Describes why match failed, ie: "discarded due to low confidence". This
+         * message will be publicly visible.
+         *
+         * @param string $matchMessage
+         */
+        public function setMatchMessage($matchMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchMessage()
+        {
+        }
+        /**
+         * Which IP version the request was made from.
+         *
+         * Accepted values: UNKNOWN_IP_VERSION, IP_V4, IP_V6
+         *
+         * @param self::REQUEST_IP_VERSION_* $requestIpVersion
+         */
+        public function setRequestIpVersion($requestIpVersion)
+        {
+        }
+        /**
+         * @return self::REQUEST_IP_VERSION_*
+         */
+        public function getRequestIpVersion()
+        {
+        }
+        /**
+         * Entire FDL (short or long) attributed post-install via one of several
+         * techniques (device heuristics, copy unique).
+         *
+         * @param string $requestedLink
+         */
+        public function setRequestedLink($requestedLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedLink()
+        {
+        }
+        /**
+         * The entire FDL, expanded from a short link. It is the same as the
+         * requested_link, if it is long. Parameters from this should not be used
+         * directly (ie: server can default utm_[campaign|medium|source] to a value
+         * when requested_link lack them, server determine the best fallback_link when
+         * requested_link specifies >1 fallback links).
+         *
+         * @param string $resolvedLink
+         */
+        public function setResolvedLink($resolvedLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolvedLink()
+        {
+        }
+        /**
+         * Scion campaign value to be propagated by iSDK to Scion at post-install.
+         *
+         * @param string $utmCampaign
+         */
+        public function setUtmCampaign($utmCampaign)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmCampaign()
+        {
+        }
+        /**
+         * Scion content value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmContent
+         */
+        public function setUtmContent($utmContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmContent()
+        {
+        }
+        /**
+         * Scion medium value to be propagated by iSDK to Scion at post-install.
+         *
+         * @param string $utmMedium
+         */
+        public function setUtmMedium($utmMedium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmMedium()
+        {
+        }
+        /**
+         * Scion source value to be propagated by iSDK to Scion at post-install.
+         *
+         * @param string $utmSource
+         */
+        public function setUtmSource($utmSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmSource()
+        {
+        }
+        /**
+         * Scion term value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmTerm
+         */
+        public function setUtmTerm($utmTerm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmTerm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\GetIosPostInstallAttributionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppMinimumVersion()
-    {
-    }
-    /**
-     * The confidence of the returned attribution.
-     *
-     * Accepted values: UNKNOWN_ATTRIBUTION_CONFIDENCE, WEAK, DEFAULT, UNIQUE
-     *
-     * @param self::ATTRIBUTION_CONFIDENCE_* $attributionConfidence
-     */
-    public function setAttributionConfidence($attributionConfidence)
-    {
-    }
-    /**
-     * @return self::ATTRIBUTION_CONFIDENCE_*
-     */
-    public function getAttributionConfidence()
-    {
-    }
-    /**
-     * The deep-link attributed post-install via one of several techniques (device
-     * heuristics, copy unique).
-     *
-     * @param string $deepLink
-     */
-    public function setDeepLink($deepLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeepLink()
-    {
-    }
-    /**
-     * User-agent specific custom-scheme URIs for iSDK to open. This will be set
-     * according to the user-agent tha the click was originally made in. There is
-     * no Safari-equivalent custom-scheme open URLs. ie:
-     * googlechrome://www.example.com ie: firefox://open-
-     * url?url=http://www.example.com ie: opera-http://example.com
-     *
-     * @param string $externalBrowserDestinationLink
-     */
-    public function setExternalBrowserDestinationLink($externalBrowserDestinationLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalBrowserDestinationLink()
-    {
-    }
-    /**
-     * The link to navigate to update the app if min version is not met. This is
-     * either (in order): 1) fallback link (from ?ifl= parameter, if specified by
-     * developer) or 2) AppStore URL (from ?isi= parameter, if specified), or 3)
-     * the payload link (from required link= parameter).
-     *
-     * @param string $fallbackLink
-     */
-    public function setFallbackLink($fallbackLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFallbackLink()
-    {
-    }
-    /**
-     * Invitation ID attributed post-install via one of several techniques (device
-     * heuristics, copy unique).
-     *
-     * @param string $invitationId
-     */
-    public function setInvitationId($invitationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvitationId()
-    {
-    }
-    /**
-     * Instruction for iSDK to attemmpt to perform strong match. For instance, if
-     * browser does not support/allow cookie or outside of support browsers, this
-     * will be false.
-     *
-     * @param bool $isStrongMatchExecutable
-     */
-    public function setIsStrongMatchExecutable($isStrongMatchExecutable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsStrongMatchExecutable()
-    {
-    }
-    /**
-     * Describes why match failed, ie: "discarded due to low confidence". This
-     * message will be publicly visible.
-     *
-     * @param string $matchMessage
-     */
-    public function setMatchMessage($matchMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchMessage()
-    {
-    }
-    /**
-     * Which IP version the request was made from.
-     *
-     * Accepted values: UNKNOWN_IP_VERSION, IP_V4, IP_V6
-     *
-     * @param self::REQUEST_IP_VERSION_* $requestIpVersion
-     */
-    public function setRequestIpVersion($requestIpVersion)
-    {
-    }
-    /**
-     * @return self::REQUEST_IP_VERSION_*
-     */
-    public function getRequestIpVersion()
-    {
-    }
-    /**
-     * Entire FDL (short or long) attributed post-install via one of several
-     * techniques (device heuristics, copy unique).
-     *
-     * @param string $requestedLink
-     */
-    public function setRequestedLink($requestedLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedLink()
-    {
-    }
-    /**
-     * The entire FDL, expanded from a short link. It is the same as the
-     * requested_link, if it is long. Parameters from this should not be used
-     * directly (ie: server can default utm_[campaign|medium|source] to a value
-     * when requested_link lack them, server determine the best fallback_link when
-     * requested_link specifies >1 fallback links).
-     *
-     * @param string $resolvedLink
-     */
-    public function setResolvedLink($resolvedLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolvedLink()
-    {
-    }
-    /**
-     * Scion campaign value to be propagated by iSDK to Scion at post-install.
-     *
-     * @param string $utmCampaign
-     */
-    public function setUtmCampaign($utmCampaign)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmCampaign()
-    {
-    }
-    /**
-     * Scion content value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmContent
-     */
-    public function setUtmContent($utmContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmContent()
-    {
-    }
-    /**
-     * Scion medium value to be propagated by iSDK to Scion at post-install.
-     *
-     * @param string $utmMedium
-     */
-    public function setUtmMedium($utmMedium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmMedium()
-    {
-    }
-    /**
-     * Scion source value to be propagated by iSDK to Scion at post-install.
-     *
-     * @param string $utmSource
-     */
-    public function setUtmSource($utmSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmSource()
-    {
-    }
-    /**
-     * Scion term value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmTerm
-     */
-    public function setUtmTerm($utmTerm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmTerm()
+    class Google_Service_FirebaseDynamicLinks_GetIosPostInstallAttributionResponse extends \Google\Service\FirebaseDynamicLinks\GetIosPostInstallAttributionResponse
     {
     }
 }

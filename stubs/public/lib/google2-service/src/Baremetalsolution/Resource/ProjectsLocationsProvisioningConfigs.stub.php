@@ -21,74 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "provisioningConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $provisioningConfigs = $baremetalsolutionService->projects_locations_provisioningConfigs;
- *  </code>
- */
-class ProjectsLocationsProvisioningConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\ProvisioningConfig;
+    use Google\Service\Baremetalsolution\SubmitProvisioningConfigRequest;
+    use Google\Service\Baremetalsolution\SubmitProvisioningConfigResponse;
     /**
-     * Create new ProvisioningConfig. (provisioningConfigs.create)
-     *
-     * @param string $parent Required. The parent project and location containing
-     * the ProvisioningConfig.
-     * @param ProvisioningConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string email Optional. Email provided to send a confirmation with
-     * provisioning config to.
-     * @return ProvisioningConfig
-     * @throws \Google\Service\Exception
+     * The "provisioningConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $provisioningConfigs = $baremetalsolutionService->projects_locations_provisioningConfigs;
+     *  </code>
      */
-    public function create($parent, ProvisioningConfig $postBody, $optParams = [])
+    class ProjectsLocationsProvisioningConfigs extends \Google\Service\Resource
     {
+        /**
+         * Create new ProvisioningConfig. (provisioningConfigs.create)
+         *
+         * @param string $parent Required. The parent project and location containing
+         * the ProvisioningConfig.
+         * @param ProvisioningConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string email Optional. Email provided to send a confirmation with
+         * provisioning config to.
+         * @return ProvisioningConfig
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ProvisioningConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get ProvisioningConfig by name. (provisioningConfigs.get)
+         *
+         * @param string $name Required. Name of the ProvisioningConfig.
+         * @param array $optParams Optional parameters.
+         * @return ProvisioningConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Update existing ProvisioningConfig. (provisioningConfigs.patch)
+         *
+         * @param string $name Output only. The system-generated name of the
+         * provisioning config. This follows the UUID format.
+         * @param ProvisioningConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string email Optional. Email provided to send a confirmation with
+         * provisioning config to.
+         * @opt_param string updateMask Required. The list of fields to update.
+         * @return ProvisioningConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, ProvisioningConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Submit a provisioning configuration for a given project.
+         * (provisioningConfigs.submit)
+         *
+         * @param string $parent Required. The parent project and location containing
+         * the ProvisioningConfig.
+         * @param SubmitProvisioningConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SubmitProvisioningConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function submit($parent, SubmitProvisioningConfigRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get ProvisioningConfig by name. (provisioningConfigs.get)
-     *
-     * @param string $name Required. Name of the ProvisioningConfig.
-     * @param array $optParams Optional parameters.
-     * @return ProvisioningConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsProvisioningConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Update existing ProvisioningConfig. (provisioningConfigs.patch)
-     *
-     * @param string $name Output only. The system-generated name of the
-     * provisioning config. This follows the UUID format.
-     * @param ProvisioningConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string email Optional. Email provided to send a confirmation with
-     * provisioning config to.
-     * @opt_param string updateMask Required. The list of fields to update.
-     * @return ProvisioningConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, ProvisioningConfig $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Submit a provisioning configuration for a given project.
-     * (provisioningConfigs.submit)
-     *
-     * @param string $parent Required. The parent project and location containing
-     * the ProvisioningConfig.
-     * @param SubmitProvisioningConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SubmitProvisioningConfigResponse
-     * @throws \Google\Service\Exception
-     */
-    public function submit($parent, SubmitProvisioningConfigRequest $postBody, $optParams = [])
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsProvisioningConfigs extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsProvisioningConfigs
     {
     }
 }

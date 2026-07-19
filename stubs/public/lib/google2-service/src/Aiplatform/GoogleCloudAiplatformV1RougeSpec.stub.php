@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RougeSpec extends \Google\Model
-{
-    /**
-     * Optional. Supported rouge types are rougen[1-9], rougeL, and rougeLsum.
-     *
-     * @var string
-     */
-    public $rougeType;
-    /**
-     * Optional. Whether to split summaries while using rougeLsum.
-     *
-     * @var bool
-     */
-    public $splitSummaries;
-    /**
-     * Optional. Whether to use stemmer to compute rouge score.
-     *
-     * @var bool
-     */
-    public $useStemmer;
-    /**
-     * Optional. Supported rouge types are rougen[1-9], rougeL, and rougeLsum.
-     *
-     * @param string $rougeType
-     */
-    public function setRougeType($rougeType)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RougeSpec extends \Google\Model
     {
+        /**
+         * Optional. Supported rouge types are rougen[1-9], rougeL, and rougeLsum.
+         *
+         * @var string
+         */
+        public $rougeType;
+        /**
+         * Optional. Whether to split summaries while using rougeLsum.
+         *
+         * @var bool
+         */
+        public $splitSummaries;
+        /**
+         * Optional. Whether to use stemmer to compute rouge score.
+         *
+         * @var bool
+         */
+        public $useStemmer;
+        /**
+         * Optional. Supported rouge types are rougen[1-9], rougeL, and rougeLsum.
+         *
+         * @param string $rougeType
+         */
+        public function setRougeType($rougeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRougeType()
+        {
+        }
+        /**
+         * Optional. Whether to split summaries while using rougeLsum.
+         *
+         * @param bool $splitSummaries
+         */
+        public function setSplitSummaries($splitSummaries)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSplitSummaries()
+        {
+        }
+        /**
+         * Optional. Whether to use stemmer to compute rouge score.
+         *
+         * @param bool $useStemmer
+         */
+        public function setUseStemmer($useStemmer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseStemmer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RougeSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRougeType()
-    {
-    }
-    /**
-     * Optional. Whether to split summaries while using rougeLsum.
-     *
-     * @param bool $splitSummaries
-     */
-    public function setSplitSummaries($splitSummaries)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSplitSummaries()
-    {
-    }
-    /**
-     * Optional. Whether to use stemmer to compute rouge score.
-     *
-     * @param bool $useStemmer
-     */
-    public function setUseStemmer($useStemmer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseStemmer()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RougeSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RougeSpec
     {
     }
 }

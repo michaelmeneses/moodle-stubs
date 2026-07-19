@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AbusiveExperienceReport;
-
-class ViolatingSitesResponse extends \Google\Collection
-{
-    protected $collection_key = 'violatingSites';
-    protected $violatingSitesType = SiteSummaryResponse::class;
-    protected $violatingSitesDataType = 'array';
-    /**
-     * The list of violating sites.
-     *
-     * @param SiteSummaryResponse[] $violatingSites
-     */
-    public function setViolatingSites($violatingSites)
+namespace Google\Service\AbusiveExperienceReport {
+    class ViolatingSitesResponse extends \Google\Collection
     {
+        protected $collection_key = 'violatingSites';
+        protected $violatingSitesType = SiteSummaryResponse::class;
+        protected $violatingSitesDataType = 'array';
+        /**
+         * The list of violating sites.
+         *
+         * @param SiteSummaryResponse[] $violatingSites
+         */
+        public function setViolatingSites($violatingSites)
+        {
+        }
+        /**
+         * @return SiteSummaryResponse[]
+         */
+        public function getViolatingSites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SiteSummaryResponse[]
+     * Runtime class alias of \Google\Service\AbusiveExperienceReport\ViolatingSitesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getViolatingSites()
+    class Google_Service_AbusiveExperienceReport_ViolatingSitesResponse extends \Google\Service\AbusiveExperienceReport\ViolatingSitesResponse
     {
     }
 }

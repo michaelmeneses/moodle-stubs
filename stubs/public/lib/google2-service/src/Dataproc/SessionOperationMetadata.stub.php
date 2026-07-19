@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SessionOperationMetadata extends \Google\Collection
-{
-    /**
-     * Session operation type is unknown.
-     */
-    public const OPERATION_TYPE_SESSION_OPERATION_TYPE_UNSPECIFIED = 'SESSION_OPERATION_TYPE_UNSPECIFIED';
-    /**
-     * Create Session operation type.
-     */
-    public const OPERATION_TYPE_CREATE = 'CREATE';
-    /**
-     * Terminate Session operation type.
-     */
-    public const OPERATION_TYPE_TERMINATE = 'TERMINATE';
-    /**
-     * Delete Session operation type.
-     */
-    public const OPERATION_TYPE_DELETE = 'DELETE';
-    protected $collection_key = 'warnings';
-    /**
-     * The time when the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Short description of the operation.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The time when the operation was finished.
-     *
-     * @var string
-     */
-    public $doneTime;
-    /**
-     * Labels associated with the operation.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The operation type.
-     *
-     * @var string
-     */
-    public $operationType;
-    /**
-     * Name of the session for the operation.
-     *
-     * @var string
-     */
-    public $session;
-    /**
-     * Session UUID for the operation.
-     *
-     * @var string
-     */
-    public $sessionUuid;
-    /**
-     * Warnings encountered during operation execution.
-     *
-     * @var string[]
-     */
-    public $warnings;
-    /**
-     * The time when the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Dataproc {
+    class SessionOperationMetadata extends \Google\Collection
     {
+        /**
+         * Session operation type is unknown.
+         */
+        public const OPERATION_TYPE_SESSION_OPERATION_TYPE_UNSPECIFIED = 'SESSION_OPERATION_TYPE_UNSPECIFIED';
+        /**
+         * Create Session operation type.
+         */
+        public const OPERATION_TYPE_CREATE = 'CREATE';
+        /**
+         * Terminate Session operation type.
+         */
+        public const OPERATION_TYPE_TERMINATE = 'TERMINATE';
+        /**
+         * Delete Session operation type.
+         */
+        public const OPERATION_TYPE_DELETE = 'DELETE';
+        protected $collection_key = 'warnings';
+        /**
+         * The time when the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Short description of the operation.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The time when the operation was finished.
+         *
+         * @var string
+         */
+        public $doneTime;
+        /**
+         * Labels associated with the operation.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The operation type.
+         *
+         * @var string
+         */
+        public $operationType;
+        /**
+         * Name of the session for the operation.
+         *
+         * @var string
+         */
+        public $session;
+        /**
+         * Session UUID for the operation.
+         *
+         * @var string
+         */
+        public $sessionUuid;
+        /**
+         * Warnings encountered during operation execution.
+         *
+         * @var string[]
+         */
+        public $warnings;
+        /**
+         * The time when the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Short description of the operation.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The time when the operation was finished.
+         *
+         * @param string $doneTime
+         */
+        public function setDoneTime($doneTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDoneTime()
+        {
+        }
+        /**
+         * Labels associated with the operation.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The operation type.
+         *
+         * Accepted values: SESSION_OPERATION_TYPE_UNSPECIFIED, CREATE, TERMINATE,
+         * DELETE
+         *
+         * @param self::OPERATION_TYPE_* $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return self::OPERATION_TYPE_*
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * Name of the session for the operation.
+         *
+         * @param string $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
+        /**
+         * Session UUID for the operation.
+         *
+         * @param string $sessionUuid
+         */
+        public function setSessionUuid($sessionUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionUuid()
+        {
+        }
+        /**
+         * Warnings encountered during operation execution.
+         *
+         * @param string[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SessionOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Short description of the operation.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The time when the operation was finished.
-     *
-     * @param string $doneTime
-     */
-    public function setDoneTime($doneTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDoneTime()
-    {
-    }
-    /**
-     * Labels associated with the operation.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The operation type.
-     *
-     * Accepted values: SESSION_OPERATION_TYPE_UNSPECIFIED, CREATE, TERMINATE,
-     * DELETE
-     *
-     * @param self::OPERATION_TYPE_* $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return self::OPERATION_TYPE_*
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * Name of the session for the operation.
-     *
-     * @param string $session
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
-    {
-    }
-    /**
-     * Session UUID for the operation.
-     *
-     * @param string $sessionUuid
-     */
-    public function setSessionUuid($sessionUuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionUuid()
-    {
-    }
-    /**
-     * Warnings encountered during operation execution.
-     *
-     * @param string[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarnings()
+    class Google_Service_Dataproc_SessionOperationMetadata extends \Google\Service\Dataproc\SessionOperationMetadata
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagChunkPageSpan extends \Google\Model
-{
-    /**
-     * Page where chunk starts in the document. Inclusive. 1-indexed.
-     *
-     * @var int
-     */
-    public $firstPage;
-    /**
-     * Page where chunk ends in the document. Inclusive. 1-indexed.
-     *
-     * @var int
-     */
-    public $lastPage;
-    /**
-     * Page where chunk starts in the document. Inclusive. 1-indexed.
-     *
-     * @param int $firstPage
-     */
-    public function setFirstPage($firstPage)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagChunkPageSpan extends \Google\Model
     {
+        /**
+         * Page where chunk starts in the document. Inclusive. 1-indexed.
+         *
+         * @var int
+         */
+        public $firstPage;
+        /**
+         * Page where chunk ends in the document. Inclusive. 1-indexed.
+         *
+         * @var int
+         */
+        public $lastPage;
+        /**
+         * Page where chunk starts in the document. Inclusive. 1-indexed.
+         *
+         * @param int $firstPage
+         */
+        public function setFirstPage($firstPage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFirstPage()
+        {
+        }
+        /**
+         * Page where chunk ends in the document. Inclusive. 1-indexed.
+         *
+         * @param int $lastPage
+         */
+        public function setLastPage($lastPage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLastPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagChunkPageSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPage()
-    {
-    }
-    /**
-     * Page where chunk ends in the document. Inclusive. 1-indexed.
-     *
-     * @param int $lastPage
-     */
-    public function setLastPage($lastPage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLastPage()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagChunkPageSpan extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagChunkPageSpan
     {
     }
 }

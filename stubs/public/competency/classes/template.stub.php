@@ -29,6 +29,9 @@
  */
 namespace core_competency;
 
+use context;
+use lang_string;
+use stdClass;
 /**
  * Class for loading/storing learning plan templates from the DB.
  *

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class UpdatePhotoRequest extends \Google\Model
-{
-    protected $photoType = Photo::class;
-    protected $photoDataType = '';
-    /**
-     * Required. Mask that identifies fields on the photo metadata to update. If
-     * not present, the old Photo metadata is entirely replaced with the new Photo
-     * metadata in this request. The update fails if invalid fields are specified.
-     * Multiple fields can be specified in a comma-delimited list. The following
-     * fields are valid: * `pose.heading` * `pose.lat_lng_pair` * `pose.pitch` *
-     * `pose.roll` * `pose.level` * `pose.altitude` * `connections` * `places` >
-     * Note: When updateMask contains repeated fields, the entire set of repeated
-     * values get replaced with the new contents. For example, if updateMask
-     * contains `connections` and `UpdatePhotoRequest.photo.connections` is empty,
-     * all connections are removed.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. Photo object containing the new metadata.
-     *
-     * @param Photo $photo
-     */
-    public function setPhoto(Photo $photo)
+namespace Google\Service\StreetViewPublish {
+    class UpdatePhotoRequest extends \Google\Model
     {
+        protected $photoType = Photo::class;
+        protected $photoDataType = '';
+        /**
+         * Required. Mask that identifies fields on the photo metadata to update. If
+         * not present, the old Photo metadata is entirely replaced with the new Photo
+         * metadata in this request. The update fails if invalid fields are specified.
+         * Multiple fields can be specified in a comma-delimited list. The following
+         * fields are valid: * `pose.heading` * `pose.lat_lng_pair` * `pose.pitch` *
+         * `pose.roll` * `pose.level` * `pose.altitude` * `connections` * `places` >
+         * Note: When updateMask contains repeated fields, the entire set of repeated
+         * values get replaced with the new contents. For example, if updateMask
+         * contains `connections` and `UpdatePhotoRequest.photo.connections` is empty,
+         * all connections are removed.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. Photo object containing the new metadata.
+         *
+         * @param Photo $photo
+         */
+        public function setPhoto(Photo $photo)
+        {
+        }
+        /**
+         * @return Photo
+         */
+        public function getPhoto()
+        {
+        }
+        /**
+         * Required. Mask that identifies fields on the photo metadata to update. If
+         * not present, the old Photo metadata is entirely replaced with the new Photo
+         * metadata in this request. The update fails if invalid fields are specified.
+         * Multiple fields can be specified in a comma-delimited list. The following
+         * fields are valid: * `pose.heading` * `pose.lat_lng_pair` * `pose.pitch` *
+         * `pose.roll` * `pose.level` * `pose.altitude` * `connections` * `places` >
+         * Note: When updateMask contains repeated fields, the entire set of repeated
+         * values get replaced with the new contents. For example, if updateMask
+         * contains `connections` and `UpdatePhotoRequest.photo.connections` is empty,
+         * all connections are removed.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Photo
+     * Runtime class alias of \Google\Service\StreetViewPublish\UpdatePhotoRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoto()
-    {
-    }
-    /**
-     * Required. Mask that identifies fields on the photo metadata to update. If
-     * not present, the old Photo metadata is entirely replaced with the new Photo
-     * metadata in this request. The update fails if invalid fields are specified.
-     * Multiple fields can be specified in a comma-delimited list. The following
-     * fields are valid: * `pose.heading` * `pose.lat_lng_pair` * `pose.pitch` *
-     * `pose.roll` * `pose.level` * `pose.altitude` * `connections` * `places` >
-     * Note: When updateMask contains repeated fields, the entire set of repeated
-     * values get replaced with the new contents. For example, if updateMask
-     * contains `connections` and `UpdatePhotoRequest.photo.connections` is empty,
-     * all connections are removed.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_StreetViewPublish_UpdatePhotoRequest extends \Google\Service\StreetViewPublish\UpdatePhotoRequest
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction extends \Google\Collection
-{
-    protected $collection_key = 'principals';
-    /**
-     * All users within the Identity Provider.
-     *
-     * @var bool
-     */
-    public $idpWide;
-    protected $principalsType = GoogleCloudDiscoveryengineV1Principal::class;
-    protected $principalsDataType = 'array';
-    /**
-     * All users within the Identity Provider.
-     *
-     * @param bool $idpWide
-     */
-    public function setIdpWide($idpWide)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction extends \Google\Collection
     {
+        protected $collection_key = 'principals';
+        /**
+         * All users within the Identity Provider.
+         *
+         * @var bool
+         */
+        public $idpWide;
+        protected $principalsType = GoogleCloudDiscoveryengineV1Principal::class;
+        protected $principalsDataType = 'array';
+        /**
+         * All users within the Identity Provider.
+         *
+         * @param bool $idpWide
+         */
+        public function setIdpWide($idpWide)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIdpWide()
+        {
+        }
+        /**
+         * List of principals.
+         *
+         * @param GoogleCloudDiscoveryengineV1Principal[] $principals
+         */
+        public function setPrincipals($principals)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Principal[]
+         */
+        public function getPrincipals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdpWide()
-    {
-    }
-    /**
-     * List of principals.
-     *
-     * @param GoogleCloudDiscoveryengineV1Principal[] $principals
-     */
-    public function setPrincipals($principals)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Principal[]
-     */
-    public function getPrincipals()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FlexibleTimeRange extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $maxDuration;
-    /**
-     * @var string
-     */
-    public $minDuration;
-    /**
-     * @var string
-     */
-    public $startTimeNotEarlierThan;
-    /**
-     * @var string
-     */
-    public $startTimeNotLaterThan;
-    /**
-     * @param string $maxDuration
-     */
-    public function setMaxDuration($maxDuration)
+namespace Google\Service\Compute {
+    class FlexibleTimeRange extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $maxDuration;
+        /**
+         * @var string
+         */
+        public $minDuration;
+        /**
+         * @var string
+         */
+        public $startTimeNotEarlierThan;
+        /**
+         * @var string
+         */
+        public $startTimeNotLaterThan;
+        /**
+         * @param string $maxDuration
+         */
+        public function setMaxDuration($maxDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxDuration()
+        {
+        }
+        /**
+         * @param string $minDuration
+         */
+        public function setMinDuration($minDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinDuration()
+        {
+        }
+        /**
+         * @param string $startTimeNotEarlierThan
+         */
+        public function setStartTimeNotEarlierThan($startTimeNotEarlierThan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeNotEarlierThan()
+        {
+        }
+        /**
+         * @param string $startTimeNotLaterThan
+         */
+        public function setStartTimeNotLaterThan($startTimeNotLaterThan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeNotLaterThan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FlexibleTimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxDuration()
-    {
-    }
-    /**
-     * @param string $minDuration
-     */
-    public function setMinDuration($minDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinDuration()
-    {
-    }
-    /**
-     * @param string $startTimeNotEarlierThan
-     */
-    public function setStartTimeNotEarlierThan($startTimeNotEarlierThan)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeNotEarlierThan()
-    {
-    }
-    /**
-     * @param string $startTimeNotLaterThan
-     */
-    public function setStartTimeNotLaterThan($startTimeNotLaterThan)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeNotLaterThan()
+    class Google_Service_Compute_FlexibleTimeRange extends \Google\Service\Compute\FlexibleTimeRange
     {
     }
 }

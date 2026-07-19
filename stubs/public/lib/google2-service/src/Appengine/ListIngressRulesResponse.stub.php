@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListIngressRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'ingressRules';
-    protected $ingressRulesType = FirewallRule::class;
-    protected $ingressRulesDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ingress FirewallRules for this application.
-     *
-     * @param FirewallRule[] $ingressRules
-     */
-    public function setIngressRules($ingressRules)
+namespace Google\Service\Appengine {
+    class ListIngressRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'ingressRules';
+        protected $ingressRulesType = FirewallRule::class;
+        protected $ingressRulesDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ingress FirewallRules for this application.
+         *
+         * @param FirewallRule[] $ingressRules
+         */
+        public function setIngressRules($ingressRules)
+        {
+        }
+        /**
+         * @return FirewallRule[]
+         */
+        public function getIngressRules()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirewallRule[]
+     * Runtime class alias of \Google\Service\Appengine\ListIngressRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngressRules()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Appengine_ListIngressRulesResponse extends \Google\Service\Appengine\ListIngressRulesResponse
     {
     }
 }

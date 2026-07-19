@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class BatchGetAssetsHistoryResponse extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = TemporalAsset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * A list of assets with valid time windows.
-     *
-     * @param TemporalAsset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\CloudAsset {
+    class BatchGetAssetsHistoryResponse extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = TemporalAsset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * A list of assets with valid time windows.
+         *
+         * @param TemporalAsset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return TemporalAsset[]
+         */
+        public function getAssets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TemporalAsset[]
+     * Runtime class alias of \Google\Service\CloudAsset\BatchGetAssetsHistoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
+    class Google_Service_CloudAsset_BatchGetAssetsHistoryResponse extends \Google\Service\CloudAsset\BatchGetAssetsHistoryResponse
     {
     }
 }

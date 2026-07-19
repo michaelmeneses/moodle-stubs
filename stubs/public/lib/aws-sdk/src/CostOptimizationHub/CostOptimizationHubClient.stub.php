@@ -8,6 +8,7 @@
  */
 namespace Aws\CostOptimizationHub;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Cost Optimization Hub** service.
  * @method \Aws\Result getPreferences(array $args = [])

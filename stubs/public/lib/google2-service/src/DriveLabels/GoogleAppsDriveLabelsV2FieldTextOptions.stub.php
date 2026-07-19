@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldTextOptions extends \Google\Model
-{
-    /**
-     * Output only. The maximum valid length of values for the text field.
-     *
-     * @var int
-     */
-    public $maxLength;
-    /**
-     * Output only. The minimum valid length of values for the text field.
-     *
-     * @var int
-     */
-    public $minLength;
-    /**
-     * Output only. The maximum valid length of values for the text field.
-     *
-     * @param int $maxLength
-     */
-    public function setMaxLength($maxLength)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldTextOptions extends \Google\Model
     {
+        /**
+         * Output only. The maximum valid length of values for the text field.
+         *
+         * @var int
+         */
+        public $maxLength;
+        /**
+         * Output only. The minimum valid length of values for the text field.
+         *
+         * @var int
+         */
+        public $minLength;
+        /**
+         * Output only. The maximum valid length of values for the text field.
+         *
+         * @param int $maxLength
+         */
+        public function setMaxLength($maxLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxLength()
+        {
+        }
+        /**
+         * Output only. The minimum valid length of values for the text field.
+         *
+         * @param int $minLength
+         */
+        public function setMinLength($minLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldTextOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxLength()
-    {
-    }
-    /**
-     * Output only. The minimum valid length of values for the text field.
-     *
-     * @param int $minLength
-     */
-    public function setMinLength($minLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinLength()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldTextOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldTextOptions
     {
     }
 }

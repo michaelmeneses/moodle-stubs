@@ -8,6 +8,20 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Attribute\Inject;
+use DI\Attribute\Injectable;
+use DI\Definition\Exception\InvalidAttribute;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use DI\Definition\ObjectDefinition\PropertyInjection;
+use DI\Definition\Reference;
+use InvalidArgumentException;
+use ReflectionClass;
+use ReflectionMethod;
+use ReflectionNamedType;
+use ReflectionParameter;
+use ReflectionProperty;
+use Throwable;
 /**
  * Provides DI definitions by reading PHP 8 attributes such as #[Inject] and #[Injectable].
  *

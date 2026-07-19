@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserPhoto extends \Google\Model
-{
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Height of the photo in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The ID the API uses to uniquely identify the user.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The type of the API resource. For Photo resources, this is
-     * `admin#directory#user#photo`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The MIME type of the photo. Allowed values are `JPEG`, `PNG`, `GIF`, `BMP`,
-     * `TIFF`, and web-safe base64 encoding.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The user photo's upload data in [web-safe
-     * Base64](https://en.wikipedia.org/wiki/Base64#URL_applications) format in
-     * bytes. This means: * The slash (/) character is replaced with the
-     * underscore (_) character. * The plus sign (+) character is replaced with
-     * the hyphen (-) character. * The equals sign (=) character is replaced with
-     * the asterisk (*). * For padding, the period (.) character is used instead
-     * of the RFC-4648 baseURL definition which uses the equals sign (=) for
-     * padding. This is done to simplify URL-parsing. * Whatever the size of the
-     * photo being uploaded, the API downsizes it to 96x96 pixels.
-     *
-     * @var string
-     */
-    public $photoData;
-    /**
-     * The user's primary email address.
-     *
-     * @var string
-     */
-    public $primaryEmail;
-    /**
-     * Width of the photo in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class UserPhoto extends \Google\Model
     {
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Height of the photo in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The ID the API uses to uniquely identify the user.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The type of the API resource. For Photo resources, this is
+         * `admin#directory#user#photo`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The MIME type of the photo. Allowed values are `JPEG`, `PNG`, `GIF`, `BMP`,
+         * `TIFF`, and web-safe base64 encoding.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The user photo's upload data in [web-safe
+         * Base64](https://en.wikipedia.org/wiki/Base64#URL_applications) format in
+         * bytes. This means: * The slash (/) character is replaced with the
+         * underscore (_) character. * The plus sign (+) character is replaced with
+         * the hyphen (-) character. * The equals sign (=) character is replaced with
+         * the asterisk (*). * For padding, the period (.) character is used instead
+         * of the RFC-4648 baseURL definition which uses the equals sign (=) for
+         * padding. This is done to simplify URL-parsing. * Whatever the size of the
+         * photo being uploaded, the API downsizes it to 96x96 pixels.
+         *
+         * @var string
+         */
+        public $photoData;
+        /**
+         * The user's primary email address.
+         *
+         * @var string
+         */
+        public $primaryEmail;
+        /**
+         * Width of the photo in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Height of the photo in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The ID the API uses to uniquely identify the user.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The type of the API resource. For Photo resources, this is
+         * `admin#directory#user#photo`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The MIME type of the photo. Allowed values are `JPEG`, `PNG`, `GIF`, `BMP`,
+         * `TIFF`, and web-safe base64 encoding.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The user photo's upload data in [web-safe
+         * Base64](https://en.wikipedia.org/wiki/Base64#URL_applications) format in
+         * bytes. This means: * The slash (/) character is replaced with the
+         * underscore (_) character. * The plus sign (+) character is replaced with
+         * the hyphen (-) character. * The equals sign (=) character is replaced with
+         * the asterisk (*). * For padding, the period (.) character is used instead
+         * of the RFC-4648 baseURL definition which uses the equals sign (=) for
+         * padding. This is done to simplify URL-parsing. * Whatever the size of the
+         * photo being uploaded, the API downsizes it to 96x96 pixels.
+         *
+         * @param string $photoData
+         */
+        public function setPhotoData($photoData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoData()
+        {
+        }
+        /**
+         * The user's primary email address.
+         *
+         * @param string $primaryEmail
+         */
+        public function setPrimaryEmail($primaryEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryEmail()
+        {
+        }
+        /**
+         * Width of the photo in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserPhoto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Height of the photo in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * The ID the API uses to uniquely identify the user.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The type of the API resource. For Photo resources, this is
-     * `admin#directory#user#photo`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The MIME type of the photo. Allowed values are `JPEG`, `PNG`, `GIF`, `BMP`,
-     * `TIFF`, and web-safe base64 encoding.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The user photo's upload data in [web-safe
-     * Base64](https://en.wikipedia.org/wiki/Base64#URL_applications) format in
-     * bytes. This means: * The slash (/) character is replaced with the
-     * underscore (_) character. * The plus sign (+) character is replaced with
-     * the hyphen (-) character. * The equals sign (=) character is replaced with
-     * the asterisk (*). * For padding, the period (.) character is used instead
-     * of the RFC-4648 baseURL definition which uses the equals sign (=) for
-     * padding. This is done to simplify URL-parsing. * Whatever the size of the
-     * photo being uploaded, the API downsizes it to 96x96 pixels.
-     *
-     * @param string $photoData
-     */
-    public function setPhotoData($photoData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoData()
-    {
-    }
-    /**
-     * The user's primary email address.
-     *
-     * @param string $primaryEmail
-     */
-    public function setPrimaryEmail($primaryEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryEmail()
-    {
-    }
-    /**
-     * Width of the photo in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Directory_UserPhoto extends \Google\Service\Directory\UserPhoto
     {
     }
 }

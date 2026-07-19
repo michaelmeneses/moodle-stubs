@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshStatusDetails extends \Google\Model
-{
-    /**
-     * A machine-readable code that further describes a broad status.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Human-readable explanation of code.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * A machine-readable code that further describes a broad status.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class ServiceMeshStatusDetails extends \Google\Model
     {
+        /**
+         * A machine-readable code that further describes a broad status.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Human-readable explanation of code.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * A machine-readable code that further describes a broad status.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Human-readable explanation of code.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshStatusDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Human-readable explanation of code.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetails()
+    class Google_Service_GKEHub_ServiceMeshStatusDetails extends \Google\Service\GKEHub\ServiceMeshStatusDetails
     {
     }
 }

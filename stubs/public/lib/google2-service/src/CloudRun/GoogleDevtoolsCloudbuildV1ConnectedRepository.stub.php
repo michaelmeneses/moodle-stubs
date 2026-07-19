@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1ConnectedRepository extends \Google\Model
-{
-    /**
-     * Optional. Directory, relative to the source root, in which to run the
-     * build.
-     *
-     * @var string
-     */
-    public $dir;
-    /**
-     * Required. Name of the Google Cloud Build repository, formatted as
-     * `projects/locations/connections/repositories`.
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * Required. The revision to fetch from the Git repository such as a branch, a
-     * tag, a commit SHA, or any Git ref.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * Optional. Directory, relative to the source root, in which to run the
-     * build.
-     *
-     * @param string $dir
-     */
-    public function setDir($dir)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1ConnectedRepository extends \Google\Model
     {
+        /**
+         * Optional. Directory, relative to the source root, in which to run the
+         * build.
+         *
+         * @var string
+         */
+        public $dir;
+        /**
+         * Required. Name of the Google Cloud Build repository, formatted as
+         * `projects/locations/connections/repositories`.
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * Required. The revision to fetch from the Git repository such as a branch, a
+         * tag, a commit SHA, or any Git ref.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * Optional. Directory, relative to the source root, in which to run the
+         * build.
+         *
+         * @param string $dir
+         */
+        public function setDir($dir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDir()
+        {
+        }
+        /**
+         * Required. Name of the Google Cloud Build repository, formatted as
+         * `projects/locations/connections/repositories`.
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * Required. The revision to fetch from the Git repository such as a branch, a
+         * tag, a commit SHA, or any Git ref.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1ConnectedRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDir()
-    {
-    }
-    /**
-     * Required. Name of the Google Cloud Build repository, formatted as
-     * `projects/locations/connections/repositories`.
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * Required. The revision to fetch from the Git repository such as a branch, a
-     * tag, a commit SHA, or any Git ref.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1ConnectedRepository extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1ConnectedRepository
     {
     }
 }

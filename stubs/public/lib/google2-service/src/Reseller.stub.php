@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Reseller (v1).
- *
- * <p>
- * Perform common functions that are available on the Channel Services console
- * at scale, like placing orders and viewing customer information</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/google-apps/reseller/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Reseller extends \Google\Service
-{
-    /** Manage users on your domain. */
-    const APPS_ORDER = "https://www.googleapis.com/auth/apps.order";
-    /** Manage users on your domain. */
-    const APPS_ORDER_READONLY = "https://www.googleapis.com/auth/apps.order.readonly";
-    public $customers;
-    public $resellernotify;
-    public $subscriptions;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Reseller service.
+     * Service definition for Reseller (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Perform common functions that are available on the Channel Services console
+     * at scale, like placing orders and viewing customer information</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/google-apps/reseller/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Reseller extends \Google\Service
+    {
+        /** Manage users on your domain. */
+        const APPS_ORDER = "https://www.googleapis.com/auth/apps.order";
+        /** Manage users on your domain. */
+        const APPS_ORDER_READONLY = "https://www.googleapis.com/auth/apps.order.readonly";
+        public $customers;
+        public $resellernotify;
+        public $subscriptions;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Reseller service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Reseller registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Reseller extends \Google\Service\Reseller
     {
     }
 }

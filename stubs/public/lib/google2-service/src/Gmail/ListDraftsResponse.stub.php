@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListDraftsResponse extends \Google\Collection
-{
-    protected $collection_key = 'drafts';
-    protected $draftsType = Draft::class;
-    protected $draftsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Estimated total number of results.
-     *
-     * @var string
-     */
-    public $resultSizeEstimate;
-    /**
-     * List of drafts. Note that the `Message` property in each `Draft` resource
-     * only contains an `id` and a `threadId`. The [`messages.get`](https://develo
-     * pers.google.com/workspace/gmail/api/v1/reference/users/messages/get) method
-     * can fetch additional message details.
-     *
-     * @param Draft[] $drafts
-     */
-    public function setDrafts($drafts)
+namespace Google\Service\Gmail {
+    class ListDraftsResponse extends \Google\Collection
     {
+        protected $collection_key = 'drafts';
+        protected $draftsType = Draft::class;
+        protected $draftsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Estimated total number of results.
+         *
+         * @var string
+         */
+        public $resultSizeEstimate;
+        /**
+         * List of drafts. Note that the `Message` property in each `Draft` resource
+         * only contains an `id` and a `threadId`. The [`messages.get`](https://develo
+         * pers.google.com/workspace/gmail/api/v1/reference/users/messages/get) method
+         * can fetch additional message details.
+         *
+         * @param Draft[] $drafts
+         */
+        public function setDrafts($drafts)
+        {
+        }
+        /**
+         * @return Draft[]
+         */
+        public function getDrafts()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Estimated total number of results.
+         *
+         * @param string $resultSizeEstimate
+         */
+        public function setResultSizeEstimate($resultSizeEstimate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultSizeEstimate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Draft[]
+     * Runtime class alias of \Google\Service\Gmail\ListDraftsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrafts()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Estimated total number of results.
-     *
-     * @param string $resultSizeEstimate
-     */
-    public function setResultSizeEstimate($resultSizeEstimate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultSizeEstimate()
+    class Google_Service_Gmail_ListDraftsResponse extends \Google\Service\Gmail\ListDraftsResponse
     {
     }
 }

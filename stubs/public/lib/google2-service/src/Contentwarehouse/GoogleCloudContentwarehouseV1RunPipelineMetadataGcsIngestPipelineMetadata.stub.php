@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RunPipelineMetadataGcsIngestPipelineMetadata extends \Google\Model
-{
-    /**
-     * The input Cloud Storage folder in this pipeline. Format: `gs:`.
-     *
-     * @var string
-     */
-    public $inputPath;
-    /**
-     * The input Cloud Storage folder in this pipeline. Format: `gs:`.
-     *
-     * @param string $inputPath
-     */
-    public function setInputPath($inputPath)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RunPipelineMetadataGcsIngestPipelineMetadata extends \Google\Model
     {
+        /**
+         * The input Cloud Storage folder in this pipeline. Format: `gs:`.
+         *
+         * @var string
+         */
+        public $inputPath;
+        /**
+         * The input Cloud Storage folder in this pipeline. Format: `gs:`.
+         *
+         * @param string $inputPath
+         */
+        public function setInputPath($inputPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataGcsIngestPipelineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputPath()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RunPipelineMetadataGcsIngestPipelineMetadata extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataGcsIngestPipelineMetadata
     {
     }
 }

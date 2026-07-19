@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class BackupDrPitrSource extends \Google\Model
-{
-    /**
-     * Required. The name of the backup resource with the format: * projects/{proj
-     * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
-     * urce_id}
-     *
-     * @var string
-     */
-    public $dataSource;
-    /**
-     * Required. The point in time to restore to.
-     *
-     * @var string
-     */
-    public $pointInTime;
-    /**
-     * Required. The name of the backup resource with the format: * projects/{proj
-     * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
-     * urce_id}
-     *
-     * @param string $dataSource
-     */
-    public function setDataSource($dataSource)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class BackupDrPitrSource extends \Google\Model
     {
+        /**
+         * Required. The name of the backup resource with the format: * projects/{proj
+         * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
+         * urce_id}
+         *
+         * @var string
+         */
+        public $dataSource;
+        /**
+         * Required. The point in time to restore to.
+         *
+         * @var string
+         */
+        public $pointInTime;
+        /**
+         * Required. The name of the backup resource with the format: * projects/{proj
+         * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
+         * urce_id}
+         *
+         * @param string $dataSource
+         */
+        public function setDataSource($dataSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSource()
+        {
+        }
+        /**
+         * Required. The point in time to restore to.
+         *
+         * @param string $pointInTime
+         */
+        public function setPointInTime($pointInTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPointInTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\BackupDrPitrSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSource()
-    {
-    }
-    /**
-     * Required. The point in time to restore to.
-     *
-     * @param string $pointInTime
-     */
-    public function setPointInTime($pointInTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPointInTime()
+    class Google_Service_CloudAlloyDBAdmin_BackupDrPitrSource extends \Google\Service\CloudAlloyDBAdmin\BackupDrPitrSource
     {
     }
 }

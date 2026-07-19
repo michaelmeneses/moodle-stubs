@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers extends \Google\Collection
-{
-    public const BLOCKER_TYPE_INCOMPATIBLE_METROS = 'INCOMPATIBLE_METROS';
-    public const BLOCKER_TYPE_NOT_AVAILABLE = 'NOT_AVAILABLE';
-    public const BLOCKER_TYPE_NO_INTERCONNECTS = 'NO_INTERCONNECTS';
-    public const BLOCKER_TYPE_NO_INTERCONNECTS_IN_METRO_AND_ZONE = 'NO_INTERCONNECTS_IN_METRO_AND_ZONE';
-    public const BLOCKER_TYPE_OTHER = 'OTHER';
-    public const BLOCKER_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    protected $collection_key = 'zones';
-    /**
-     * @var string
-     */
-    public $blockerType;
-    /**
-     * Output only. [Output Only] The url of Google Cloud public documentation
-     * explaining this requirement. This is set for every type of requirement.
-     *
-     * @var string
-     */
-    public $documentationLink;
-    /**
-     * Output only. [Output Only] A human-readable explanation of this requirement
-     * and why it's not met. This is set for every type of requirement.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Output only. [Output Only] Facilities used to explain this blocker in more
-     * detail. Like physicalStructure.metros.facilities.facility, this is a
-     * numeric string like "5467".
-     *
-     * @var string[]
-     */
-    public $facilities;
-    /**
-     * Output only. [Output Only] Interconnects used to explain this blocker in
-     * more detail.
-     *
-     * @var string[]
-     */
-    public $interconnects;
-    /**
-     * Output only. [Output Only] Metros used to explain this blocker in more
-     * detail. These are three-letter lowercase strings like "iad". A blocker like
-     * INCOMPATIBLE_METROS will specify the problematic metros in this field.
-     *
-     * @var string[]
-     */
-    public $metros;
-    /**
-     * Output only. [Output Only] Zones used to explain this blocker in more
-     * detail. Zone names are "zone1" and/or "zone2".
-     *
-     * @var string[]
-     */
-    public $zones;
-    /**
-     * @param self::BLOCKER_TYPE_* $blockerType
-     */
-    public function setBlockerType($blockerType)
+namespace Google\Service\Compute {
+    class InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers extends \Google\Collection
     {
+        public const BLOCKER_TYPE_INCOMPATIBLE_METROS = 'INCOMPATIBLE_METROS';
+        public const BLOCKER_TYPE_NOT_AVAILABLE = 'NOT_AVAILABLE';
+        public const BLOCKER_TYPE_NO_INTERCONNECTS = 'NO_INTERCONNECTS';
+        public const BLOCKER_TYPE_NO_INTERCONNECTS_IN_METRO_AND_ZONE = 'NO_INTERCONNECTS_IN_METRO_AND_ZONE';
+        public const BLOCKER_TYPE_OTHER = 'OTHER';
+        public const BLOCKER_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        protected $collection_key = 'zones';
+        /**
+         * @var string
+         */
+        public $blockerType;
+        /**
+         * Output only. [Output Only] The url of Google Cloud public documentation
+         * explaining this requirement. This is set for every type of requirement.
+         *
+         * @var string
+         */
+        public $documentationLink;
+        /**
+         * Output only. [Output Only] A human-readable explanation of this requirement
+         * and why it's not met. This is set for every type of requirement.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Output only. [Output Only] Facilities used to explain this blocker in more
+         * detail. Like physicalStructure.metros.facilities.facility, this is a
+         * numeric string like "5467".
+         *
+         * @var string[]
+         */
+        public $facilities;
+        /**
+         * Output only. [Output Only] Interconnects used to explain this blocker in
+         * more detail.
+         *
+         * @var string[]
+         */
+        public $interconnects;
+        /**
+         * Output only. [Output Only] Metros used to explain this blocker in more
+         * detail. These are three-letter lowercase strings like "iad". A blocker like
+         * INCOMPATIBLE_METROS will specify the problematic metros in this field.
+         *
+         * @var string[]
+         */
+        public $metros;
+        /**
+         * Output only. [Output Only] Zones used to explain this blocker in more
+         * detail. Zone names are "zone1" and/or "zone2".
+         *
+         * @var string[]
+         */
+        public $zones;
+        /**
+         * @param self::BLOCKER_TYPE_* $blockerType
+         */
+        public function setBlockerType($blockerType)
+        {
+        }
+        /**
+         * @return self::BLOCKER_TYPE_*
+         */
+        public function getBlockerType()
+        {
+        }
+        /**
+         * Output only. [Output Only] The url of Google Cloud public documentation
+         * explaining this requirement. This is set for every type of requirement.
+         *
+         * @param string $documentationLink
+         */
+        public function setDocumentationLink($documentationLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentationLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] A human-readable explanation of this requirement
+         * and why it's not met. This is set for every type of requirement.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Output only. [Output Only] Facilities used to explain this blocker in more
+         * detail. Like physicalStructure.metros.facilities.facility, this is a
+         * numeric string like "5467".
+         *
+         * @param string[] $facilities
+         */
+        public function setFacilities($facilities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFacilities()
+        {
+        }
+        /**
+         * Output only. [Output Only] Interconnects used to explain this blocker in
+         * more detail.
+         *
+         * @param string[] $interconnects
+         */
+        public function setInterconnects($interconnects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInterconnects()
+        {
+        }
+        /**
+         * Output only. [Output Only] Metros used to explain this blocker in more
+         * detail. These are three-letter lowercase strings like "iad". A blocker like
+         * INCOMPATIBLE_METROS will specify the problematic metros in this field.
+         *
+         * @param string[] $metros
+         */
+        public function setMetros($metros)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetros()
+        {
+        }
+        /**
+         * Output only. [Output Only] Zones used to explain this blocker in more
+         * detail. Zone names are "zone1" and/or "zone2".
+         *
+         * @param string[] $zones
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BLOCKER_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockerType()
-    {
-    }
-    /**
-     * Output only. [Output Only] The url of Google Cloud public documentation
-     * explaining this requirement. This is set for every type of requirement.
-     *
-     * @param string $documentationLink
-     */
-    public function setDocumentationLink($documentationLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentationLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] A human-readable explanation of this requirement
-     * and why it's not met. This is set for every type of requirement.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Output only. [Output Only] Facilities used to explain this blocker in more
-     * detail. Like physicalStructure.metros.facilities.facility, this is a
-     * numeric string like "5467".
-     *
-     * @param string[] $facilities
-     */
-    public function setFacilities($facilities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFacilities()
-    {
-    }
-    /**
-     * Output only. [Output Only] Interconnects used to explain this blocker in
-     * more detail.
-     *
-     * @param string[] $interconnects
-     */
-    public function setInterconnects($interconnects)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInterconnects()
-    {
-    }
-    /**
-     * Output only. [Output Only] Metros used to explain this blocker in more
-     * detail. These are three-letter lowercase strings like "iad". A blocker like
-     * INCOMPATIBLE_METROS will specify the problematic metros in this field.
-     *
-     * @param string[] $metros
-     */
-    public function setMetros($metros)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetros()
-    {
-    }
-    /**
-     * Output only. [Output Only] Zones used to explain this blocker in more
-     * detail. Zone names are "zone1" and/or "zone2".
-     *
-     * @param string[] $zones
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getZones()
+    class Google_Service_Compute_InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers extends \Google\Service\Compute\InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers
     {
     }
 }

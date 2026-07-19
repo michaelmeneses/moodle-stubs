@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryBigQueryFilter extends \Google\Model
-{
-    protected $otherTablesType = GooglePrivacyDlpV2AllOtherBigQueryTables::class;
-    protected $otherTablesDataType = '';
-    protected $tableReferenceType = GooglePrivacyDlpV2TableReference::class;
-    protected $tableReferenceDataType = '';
-    protected $tablesType = GooglePrivacyDlpV2BigQueryTableCollection::class;
-    protected $tablesDataType = '';
-    /**
-     * Catch-all. This should always be the last filter in the list because
-     * anything above it will apply first. Should only appear once in a
-     * configuration. If none is specified, a default one will be added
-     * automatically.
-     *
-     * @param GooglePrivacyDlpV2AllOtherBigQueryTables $otherTables
-     */
-    public function setOtherTables(GooglePrivacyDlpV2AllOtherBigQueryTables $otherTables)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryBigQueryFilter extends \Google\Model
     {
+        protected $otherTablesType = GooglePrivacyDlpV2AllOtherBigQueryTables::class;
+        protected $otherTablesDataType = '';
+        protected $tableReferenceType = GooglePrivacyDlpV2TableReference::class;
+        protected $tableReferenceDataType = '';
+        protected $tablesType = GooglePrivacyDlpV2BigQueryTableCollection::class;
+        protected $tablesDataType = '';
+        /**
+         * Catch-all. This should always be the last filter in the list because
+         * anything above it will apply first. Should only appear once in a
+         * configuration. If none is specified, a default one will be added
+         * automatically.
+         *
+         * @param GooglePrivacyDlpV2AllOtherBigQueryTables $otherTables
+         */
+        public function setOtherTables(GooglePrivacyDlpV2AllOtherBigQueryTables $otherTables)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AllOtherBigQueryTables
+         */
+        public function getOtherTables()
+        {
+        }
+        /**
+         * The table to scan. Discovery configurations including this can only include
+         * one DiscoveryTarget (the DiscoveryTarget with this TableReference).
+         *
+         * @param GooglePrivacyDlpV2TableReference $tableReference
+         */
+        public function setTableReference(GooglePrivacyDlpV2TableReference $tableReference)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TableReference
+         */
+        public function getTableReference()
+        {
+        }
+        /**
+         * A specific set of tables for this filter to apply to. A table collection
+         * must be specified in only one filter per config. If a table id or dataset
+         * is empty, Cloud DLP assumes all tables in that collection must be profiled.
+         * Must specify a project ID.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTableCollection $tables
+         */
+        public function setTables(GooglePrivacyDlpV2BigQueryTableCollection $tables)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTableCollection
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AllOtherBigQueryTables
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryBigQueryFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOtherTables()
-    {
-    }
-    /**
-     * The table to scan. Discovery configurations including this can only include
-     * one DiscoveryTarget (the DiscoveryTarget with this TableReference).
-     *
-     * @param GooglePrivacyDlpV2TableReference $tableReference
-     */
-    public function setTableReference(GooglePrivacyDlpV2TableReference $tableReference)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TableReference
-     */
-    public function getTableReference()
-    {
-    }
-    /**
-     * A specific set of tables for this filter to apply to. A table collection
-     * must be specified in only one filter per config. If a table id or dataset
-     * is empty, Cloud DLP assumes all tables in that collection must be profiled.
-     * Must specify a project ID.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTableCollection $tables
-     */
-    public function setTables(GooglePrivacyDlpV2BigQueryTableCollection $tables)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTableCollection
-     */
-    public function getTables()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryBigQueryFilter extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryBigQueryFilter
     {
     }
 }

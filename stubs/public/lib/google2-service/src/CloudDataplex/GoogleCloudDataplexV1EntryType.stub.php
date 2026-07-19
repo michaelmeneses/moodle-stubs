@@ -21,275 +21,284 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntryType extends \Google\Collection
-{
-    protected $collection_key = 'typeAliases';
-    protected $authorizationType = GoogleCloudDataplexV1EntryTypeAuthorization::class;
-    protected $authorizationDataType = '';
-    /**
-     * Output only. The time when the EntryType was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the EntryType.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User friendly display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. This checksum is computed by the service, and might be sent on
-     * update and delete requests to ensure the client has an up-to-date value
-     * before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. User-defined labels for the EntryType.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The relative resource name of the EntryType, of the form: proj
-     * ects/{project_number}/locations/{location_id}/entryTypes/{entry_type_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The platform that Entries of this type belongs to.
-     *
-     * @var string
-     */
-    public $platform;
-    protected $requiredAspectsType = GoogleCloudDataplexV1EntryTypeAspectInfo::class;
-    protected $requiredAspectsDataType = 'array';
-    /**
-     * Optional. The system that Entries of this type belongs to. Examples include
-     * CloudSQL, MariaDB etc
-     *
-     * @var string
-     */
-    public $system;
-    /**
-     * Optional. Indicates the classes this Entry Type belongs to, for example,
-     * TABLE, DATABASE, MODEL.
-     *
-     * @var string[]
-     */
-    public $typeAliases;
-    /**
-     * Output only. System generated globally unique ID for the EntryType. This ID
-     * will be different if the EntryType is deleted and re-created with the same
-     * name.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time when the EntryType was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Immutable. Authorization defined for this type.
-     *
-     * @param GoogleCloudDataplexV1EntryTypeAuthorization $authorization
-     */
-    public function setAuthorization(GoogleCloudDataplexV1EntryTypeAuthorization $authorization)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntryType extends \Google\Collection
     {
+        protected $collection_key = 'typeAliases';
+        protected $authorizationType = GoogleCloudDataplexV1EntryTypeAuthorization::class;
+        protected $authorizationDataType = '';
+        /**
+         * Output only. The time when the EntryType was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the EntryType.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User friendly display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. This checksum is computed by the service, and might be sent on
+         * update and delete requests to ensure the client has an up-to-date value
+         * before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. User-defined labels for the EntryType.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The relative resource name of the EntryType, of the form: proj
+         * ects/{project_number}/locations/{location_id}/entryTypes/{entry_type_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The platform that Entries of this type belongs to.
+         *
+         * @var string
+         */
+        public $platform;
+        protected $requiredAspectsType = GoogleCloudDataplexV1EntryTypeAspectInfo::class;
+        protected $requiredAspectsDataType = 'array';
+        /**
+         * Optional. The system that Entries of this type belongs to. Examples include
+         * CloudSQL, MariaDB etc
+         *
+         * @var string
+         */
+        public $system;
+        /**
+         * Optional. Indicates the classes this Entry Type belongs to, for example,
+         * TABLE, DATABASE, MODEL.
+         *
+         * @var string[]
+         */
+        public $typeAliases;
+        /**
+         * Output only. System generated globally unique ID for the EntryType. This ID
+         * will be different if the EntryType is deleted and re-created with the same
+         * name.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time when the EntryType was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Immutable. Authorization defined for this type.
+         *
+         * @param GoogleCloudDataplexV1EntryTypeAuthorization $authorization
+         */
+        public function setAuthorization(GoogleCloudDataplexV1EntryTypeAuthorization $authorization)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EntryTypeAuthorization
+         */
+        public function getAuthorization()
+        {
+        }
+        /**
+         * Output only. The time when the EntryType was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the EntryType.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User friendly display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. This checksum is computed by the service, and might be sent on
+         * update and delete requests to ensure the client has an up-to-date value
+         * before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. User-defined labels for the EntryType.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The relative resource name of the EntryType, of the form: proj
+         * ects/{project_number}/locations/{location_id}/entryTypes/{entry_type_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The platform that Entries of this type belongs to.
+         *
+         * @param string $platform
+         */
+        public function setPlatform($platform)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatform()
+        {
+        }
+        /**
+         * AspectInfo for the entry type.
+         *
+         * @param GoogleCloudDataplexV1EntryTypeAspectInfo[] $requiredAspects
+         */
+        public function setRequiredAspects($requiredAspects)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EntryTypeAspectInfo[]
+         */
+        public function getRequiredAspects()
+        {
+        }
+        /**
+         * Optional. The system that Entries of this type belongs to. Examples include
+         * CloudSQL, MariaDB etc
+         *
+         * @param string $system
+         */
+        public function setSystem($system)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystem()
+        {
+        }
+        /**
+         * Optional. Indicates the classes this Entry Type belongs to, for example,
+         * TABLE, DATABASE, MODEL.
+         *
+         * @param string[] $typeAliases
+         */
+        public function setTypeAliases($typeAliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypeAliases()
+        {
+        }
+        /**
+         * Output only. System generated globally unique ID for the EntryType. This ID
+         * will be different if the EntryType is deleted and re-created with the same
+         * name.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time when the EntryType was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1EntryTypeAuthorization
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorization()
-    {
-    }
-    /**
-     * Output only. The time when the EntryType was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the EntryType.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User friendly display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. This checksum is computed by the service, and might be sent on
-     * update and delete requests to ensure the client has an up-to-date value
-     * before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. User-defined labels for the EntryType.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The relative resource name of the EntryType, of the form: proj
-     * ects/{project_number}/locations/{location_id}/entryTypes/{entry_type_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The platform that Entries of this type belongs to.
-     *
-     * @param string $platform
-     */
-    public function setPlatform($platform)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatform()
-    {
-    }
-    /**
-     * AspectInfo for the entry type.
-     *
-     * @param GoogleCloudDataplexV1EntryTypeAspectInfo[] $requiredAspects
-     */
-    public function setRequiredAspects($requiredAspects)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1EntryTypeAspectInfo[]
-     */
-    public function getRequiredAspects()
-    {
-    }
-    /**
-     * Optional. The system that Entries of this type belongs to. Examples include
-     * CloudSQL, MariaDB etc
-     *
-     * @param string $system
-     */
-    public function setSystem($system)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystem()
-    {
-    }
-    /**
-     * Optional. Indicates the classes this Entry Type belongs to, for example,
-     * TABLE, DATABASE, MODEL.
-     *
-     * @param string[] $typeAliases
-     */
-    public function setTypeAliases($typeAliases)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypeAliases()
-    {
-    }
-    /**
-     * Output only. System generated globally unique ID for the EntryType. This ID
-     * will be different if the EntryType is deleted and re-created with the same
-     * name.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time when the EntryType was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntryType extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryType
     {
     }
 }

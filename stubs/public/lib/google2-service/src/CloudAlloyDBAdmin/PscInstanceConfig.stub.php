@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class PscInstanceConfig extends \Google\Collection
-{
-    protected $collection_key = 'pscInterfaceConfigs';
-    /**
-     * Optional. List of consumer projects that are allowed to create PSC
-     * endpoints to service-attachments to this instance.
-     *
-     * @var string[]
-     */
-    public $allowedConsumerProjects;
-    protected $pscAutoConnectionsType = PscAutoConnectionConfig::class;
-    protected $pscAutoConnectionsDataType = 'array';
-    /**
-     * Output only. The DNS name of the instance for PSC connectivity. Name
-     * convention: ...alloydb-psc.goog
-     *
-     * @var string
-     */
-    public $pscDnsName;
-    protected $pscInterfaceConfigsType = PscInterfaceConfig::class;
-    protected $pscInterfaceConfigsDataType = 'array';
-    /**
-     * Output only. The service attachment created when Private Service Connect
-     * (PSC) is enabled for the instance. The name of the resource will be in the
-     * format of `projects//regions//serviceAttachments/`
-     *
-     * @var string
-     */
-    public $serviceAttachmentLink;
-    /**
-     * Optional. List of consumer projects that are allowed to create PSC
-     * endpoints to service-attachments to this instance.
-     *
-     * @param string[] $allowedConsumerProjects
-     */
-    public function setAllowedConsumerProjects($allowedConsumerProjects)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class PscInstanceConfig extends \Google\Collection
     {
+        protected $collection_key = 'pscInterfaceConfigs';
+        /**
+         * Optional. List of consumer projects that are allowed to create PSC
+         * endpoints to service-attachments to this instance.
+         *
+         * @var string[]
+         */
+        public $allowedConsumerProjects;
+        protected $pscAutoConnectionsType = PscAutoConnectionConfig::class;
+        protected $pscAutoConnectionsDataType = 'array';
+        /**
+         * Output only. The DNS name of the instance for PSC connectivity. Name
+         * convention: ...alloydb-psc.goog
+         *
+         * @var string
+         */
+        public $pscDnsName;
+        protected $pscInterfaceConfigsType = PscInterfaceConfig::class;
+        protected $pscInterfaceConfigsDataType = 'array';
+        /**
+         * Output only. The service attachment created when Private Service Connect
+         * (PSC) is enabled for the instance. The name of the resource will be in the
+         * format of `projects//regions//serviceAttachments/`
+         *
+         * @var string
+         */
+        public $serviceAttachmentLink;
+        /**
+         * Optional. List of consumer projects that are allowed to create PSC
+         * endpoints to service-attachments to this instance.
+         *
+         * @param string[] $allowedConsumerProjects
+         */
+        public function setAllowedConsumerProjects($allowedConsumerProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedConsumerProjects()
+        {
+        }
+        /**
+         * Optional. Configurations for setting up PSC service automation.
+         *
+         * @param PscAutoConnectionConfig[] $pscAutoConnections
+         */
+        public function setPscAutoConnections($pscAutoConnections)
+        {
+        }
+        /**
+         * @return PscAutoConnectionConfig[]
+         */
+        public function getPscAutoConnections()
+        {
+        }
+        /**
+         * Output only. The DNS name of the instance for PSC connectivity. Name
+         * convention: ...alloydb-psc.goog
+         *
+         * @param string $pscDnsName
+         */
+        public function setPscDnsName($pscDnsName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPscDnsName()
+        {
+        }
+        /**
+         * Optional. Configurations for setting up PSC interfaces attached to the
+         * instance which are used for outbound connectivity. Only primary instances
+         * can have PSC interface attached. Currently we only support 0 or 1 PSC
+         * interface.
+         *
+         * @param PscInterfaceConfig[] $pscInterfaceConfigs
+         */
+        public function setPscInterfaceConfigs($pscInterfaceConfigs)
+        {
+        }
+        /**
+         * @return PscInterfaceConfig[]
+         */
+        public function getPscInterfaceConfigs()
+        {
+        }
+        /**
+         * Output only. The service attachment created when Private Service Connect
+         * (PSC) is enabled for the instance. The name of the resource will be in the
+         * format of `projects//regions//serviceAttachments/`
+         *
+         * @param string $serviceAttachmentLink
+         */
+        public function setServiceAttachmentLink($serviceAttachmentLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachmentLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\PscInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedConsumerProjects()
-    {
-    }
-    /**
-     * Optional. Configurations for setting up PSC service automation.
-     *
-     * @param PscAutoConnectionConfig[] $pscAutoConnections
-     */
-    public function setPscAutoConnections($pscAutoConnections)
-    {
-    }
-    /**
-     * @return PscAutoConnectionConfig[]
-     */
-    public function getPscAutoConnections()
-    {
-    }
-    /**
-     * Output only. The DNS name of the instance for PSC connectivity. Name
-     * convention: ...alloydb-psc.goog
-     *
-     * @param string $pscDnsName
-     */
-    public function setPscDnsName($pscDnsName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPscDnsName()
-    {
-    }
-    /**
-     * Optional. Configurations for setting up PSC interfaces attached to the
-     * instance which are used for outbound connectivity. Only primary instances
-     * can have PSC interface attached. Currently we only support 0 or 1 PSC
-     * interface.
-     *
-     * @param PscInterfaceConfig[] $pscInterfaceConfigs
-     */
-    public function setPscInterfaceConfigs($pscInterfaceConfigs)
-    {
-    }
-    /**
-     * @return PscInterfaceConfig[]
-     */
-    public function getPscInterfaceConfigs()
-    {
-    }
-    /**
-     * Output only. The service attachment created when Private Service Connect
-     * (PSC) is enabled for the instance. The name of the resource will be in the
-     * format of `projects//regions//serviceAttachments/`
-     *
-     * @param string $serviceAttachmentLink
-     */
-    public function setServiceAttachmentLink($serviceAttachmentLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachmentLink()
+    class Google_Service_CloudAlloyDBAdmin_PscInstanceConfig extends \Google\Service\CloudAlloyDBAdmin\PscInstanceConfig
     {
     }
 }

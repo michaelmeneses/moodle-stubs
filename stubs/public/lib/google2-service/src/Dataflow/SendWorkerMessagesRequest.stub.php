@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SendWorkerMessagesRequest extends \Google\Collection
-{
-    protected $collection_key = 'workerMessages';
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job.
-     *
-     * @var string
-     */
-    public $location;
-    protected $workerMessagesType = WorkerMessage::class;
-    protected $workerMessagesDataType = 'array';
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Dataflow {
+    class SendWorkerMessagesRequest extends \Google\Collection
     {
+        protected $collection_key = 'workerMessages';
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job.
+         *
+         * @var string
+         */
+        public $location;
+        protected $workerMessagesType = WorkerMessage::class;
+        protected $workerMessagesDataType = 'array';
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The WorkerMessages to send.
+         *
+         * @param WorkerMessage[] $workerMessages
+         */
+        public function setWorkerMessages($workerMessages)
+        {
+        }
+        /**
+         * @return WorkerMessage[]
+         */
+        public function getWorkerMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\SendWorkerMessagesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The WorkerMessages to send.
-     *
-     * @param WorkerMessage[] $workerMessages
-     */
-    public function setWorkerMessages($workerMessages)
-    {
-    }
-    /**
-     * @return WorkerMessage[]
-     */
-    public function getWorkerMessages()
+    class Google_Service_Dataflow_SendWorkerMessagesRequest extends \Google\Service\Dataflow\SendWorkerMessagesRequest
     {
     }
 }

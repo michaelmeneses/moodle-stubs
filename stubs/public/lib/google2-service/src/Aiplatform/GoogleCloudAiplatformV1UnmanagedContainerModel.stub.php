@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UnmanagedContainerModel extends \Google\Model
-{
-    /**
-     * The path to the directory containing the Model artifact and any of its
-     * supporting files.
-     *
-     * @var string
-     */
-    public $artifactUri;
-    protected $containerSpecType = GoogleCloudAiplatformV1ModelContainerSpec::class;
-    protected $containerSpecDataType = '';
-    protected $predictSchemataType = GoogleCloudAiplatformV1PredictSchemata::class;
-    protected $predictSchemataDataType = '';
-    /**
-     * The path to the directory containing the Model artifact and any of its
-     * supporting files.
-     *
-     * @param string $artifactUri
-     */
-    public function setArtifactUri($artifactUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UnmanagedContainerModel extends \Google\Model
     {
+        /**
+         * The path to the directory containing the Model artifact and any of its
+         * supporting files.
+         *
+         * @var string
+         */
+        public $artifactUri;
+        protected $containerSpecType = GoogleCloudAiplatformV1ModelContainerSpec::class;
+        protected $containerSpecDataType = '';
+        protected $predictSchemataType = GoogleCloudAiplatformV1PredictSchemata::class;
+        protected $predictSchemataDataType = '';
+        /**
+         * The path to the directory containing the Model artifact and any of its
+         * supporting files.
+         *
+         * @param string $artifactUri
+         */
+        public function setArtifactUri($artifactUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactUri()
+        {
+        }
+        /**
+         * Input only. The specification of the container that is to be used when
+         * deploying this Model.
+         *
+         * @param GoogleCloudAiplatformV1ModelContainerSpec $containerSpec
+         */
+        public function setContainerSpec(GoogleCloudAiplatformV1ModelContainerSpec $containerSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelContainerSpec
+         */
+        public function getContainerSpec()
+        {
+        }
+        /**
+         * Contains the schemata used in Model's predictions and explanations
+         *
+         * @param GoogleCloudAiplatformV1PredictSchemata $predictSchemata
+         */
+        public function setPredictSchemata(GoogleCloudAiplatformV1PredictSchemata $predictSchemata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PredictSchemata
+         */
+        public function getPredictSchemata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UnmanagedContainerModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactUri()
-    {
-    }
-    /**
-     * Input only. The specification of the container that is to be used when
-     * deploying this Model.
-     *
-     * @param GoogleCloudAiplatformV1ModelContainerSpec $containerSpec
-     */
-    public function setContainerSpec(GoogleCloudAiplatformV1ModelContainerSpec $containerSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModelContainerSpec
-     */
-    public function getContainerSpec()
-    {
-    }
-    /**
-     * Contains the schemata used in Model's predictions and explanations
-     *
-     * @param GoogleCloudAiplatformV1PredictSchemata $predictSchemata
-     */
-    public function setPredictSchemata(GoogleCloudAiplatformV1PredictSchemata $predictSchemata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PredictSchemata
-     */
-    public function getPredictSchemata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UnmanagedContainerModel extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UnmanagedContainerModel
     {
     }
 }

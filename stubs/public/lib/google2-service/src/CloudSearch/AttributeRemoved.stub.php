@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AttributeRemoved extends \Google\Collection
-{
-    protected $collection_key = 'messageKeys';
-    /**
-     * @var string
-     */
-    public $attributeId;
-    protected $messageKeysType = MultiKey::class;
-    protected $messageKeysDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAttributeId($attributeId)
+namespace Google\Service\CloudSearch {
+    class AttributeRemoved extends \Google\Collection
     {
+        protected $collection_key = 'messageKeys';
+        /**
+         * @var string
+         */
+        public $attributeId;
+        protected $messageKeysType = MultiKey::class;
+        protected $messageKeysDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAttributeId($attributeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeId()
+        {
+        }
+        /**
+         * @param MultiKey[]
+         */
+        public function setMessageKeys($messageKeys)
+        {
+        }
+        /**
+         * @return MultiKey[]
+         */
+        public function getMessageKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AttributeRemoved registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeId()
-    {
-    }
-    /**
-     * @param MultiKey[]
-     */
-    public function setMessageKeys($messageKeys)
-    {
-    }
-    /**
-     * @return MultiKey[]
-     */
-    public function getMessageKeys()
+    class Google_Service_CloudSearch_AttributeRemoved extends \Google\Service\CloudSearch\AttributeRemoved
     {
     }
 }

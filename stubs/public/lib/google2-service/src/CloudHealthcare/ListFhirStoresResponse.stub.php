@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListFhirStoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'fhirStores';
-    protected $fhirStoresType = FhirStore::class;
-    protected $fhirStoresDataType = 'array';
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned FHIR stores. Won't be more FHIR stores than the value of
-     * page_size in the request.
-     *
-     * @param FhirStore[] $fhirStores
-     */
-    public function setFhirStores($fhirStores)
+namespace Google\Service\CloudHealthcare {
+    class ListFhirStoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'fhirStores';
+        protected $fhirStoresType = FhirStore::class;
+        protected $fhirStoresDataType = 'array';
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned FHIR stores. Won't be more FHIR stores than the value of
+         * page_size in the request.
+         *
+         * @param FhirStore[] $fhirStores
+         */
+        public function setFhirStores($fhirStores)
+        {
+        }
+        /**
+         * @return FhirStore[]
+         */
+        public function getFhirStores()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FhirStore[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListFhirStoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFhirStores()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudHealthcare_ListFhirStoresResponse extends \Google\Service\CloudHealthcare\ListFhirStoresResponse
     {
     }
 }

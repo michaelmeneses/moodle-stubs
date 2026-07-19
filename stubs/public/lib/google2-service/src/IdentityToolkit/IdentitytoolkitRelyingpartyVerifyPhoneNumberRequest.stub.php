@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @var string
-     */
-    public $idToken;
-    /**
-     * @var string
-     */
-    public $operation;
-    /**
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * The session info previously returned by IdentityToolkit-
-     * SendVerificationCode.
-     *
-     * @var string
-     */
-    public $sessionInfo;
-    /**
-     * @var string
-     */
-    public $temporaryProof;
-    /**
-     * @var string
-     */
-    public $verificationProof;
-    /**
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @var string
+         */
+        public $idToken;
+        /**
+         * @var string
+         */
+        public $operation;
+        /**
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * The session info previously returned by IdentityToolkit-
+         * SendVerificationCode.
+         *
+         * @var string
+         */
+        public $sessionInfo;
+        /**
+         * @var string
+         */
+        public $temporaryProof;
+        /**
+         * @var string
+         */
+        public $verificationProof;
+        /**
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * The session info previously returned by IdentityToolkit-
+         * SendVerificationCode.
+         *
+         * @param string $sessionInfo
+         */
+        public function setSessionInfo($sessionInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionInfo()
+        {
+        }
+        /**
+         * @param string $temporaryProof
+         */
+        public function setTemporaryProof($temporaryProof)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemporaryProof()
+        {
+        }
+        /**
+         * @param string $verificationProof
+         */
+        public function setVerificationProof($verificationProof)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationProof()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * The session info previously returned by IdentityToolkit-
-     * SendVerificationCode.
-     *
-     * @param string $sessionInfo
-     */
-    public function setSessionInfo($sessionInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionInfo()
-    {
-    }
-    /**
-     * @param string $temporaryProof
-     */
-    public function setTemporaryProof($temporaryProof)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemporaryProof()
-    {
-    }
-    /**
-     * @param string $verificationProof
-     */
-    public function setVerificationProof($verificationProof)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationProof()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest
     {
     }
 }

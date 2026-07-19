@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class ResourceIssue extends \Google\Model
-{
-    protected $blockedResourceType = BlockedResource::class;
-    protected $blockedResourceDataType = '';
-    /**
-     * Describes a blocked resource issue.
-     *
-     * @param BlockedResource $blockedResource
-     */
-    public function setBlockedResource(BlockedResource $blockedResource)
+namespace Google\Service\SearchConsole {
+    class ResourceIssue extends \Google\Model
     {
+        protected $blockedResourceType = BlockedResource::class;
+        protected $blockedResourceDataType = '';
+        /**
+         * Describes a blocked resource issue.
+         *
+         * @param BlockedResource $blockedResource
+         */
+        public function setBlockedResource(BlockedResource $blockedResource)
+        {
+        }
+        /**
+         * @return BlockedResource
+         */
+        public function getBlockedResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlockedResource
+     * Runtime class alias of \Google\Service\SearchConsole\ResourceIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockedResource()
+    class Google_Service_SearchConsole_ResourceIssue extends \Google\Service\SearchConsole\ResourceIssue
     {
     }
 }

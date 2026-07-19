@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Position extends \Google\Model
-{
-    /**
-     * Required. The line number of the comment. Positive value means it's on the
-     * new side of the diff, negative value means it's on the old side.
-     *
-     * @var string
-     */
-    public $line;
-    /**
-     * Required. The path of the file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. The line number of the comment. Positive value means it's on the
-     * new side of the diff, negative value means it's on the old side.
-     *
-     * @param string $line
-     */
-    public function setLine($line)
+namespace Google\Service\SecureSourceManager {
+    class Position extends \Google\Model
     {
+        /**
+         * Required. The line number of the comment. Positive value means it's on the
+         * new side of the diff, negative value means it's on the old side.
+         *
+         * @var string
+         */
+        public $line;
+        /**
+         * Required. The path of the file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. The line number of the comment. Positive value means it's on the
+         * new side of the diff, negative value means it's on the old side.
+         *
+         * @param string $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine()
+        {
+        }
+        /**
+         * Required. The path of the file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Position registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLine()
-    {
-    }
-    /**
-     * Required. The path of the file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_SecureSourceManager_Position extends \Google\Service\SecureSourceManager\Position
     {
     }
 }

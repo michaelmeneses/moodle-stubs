@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class CreatePrinterRequest extends \Google\Model
-{
-    /**
-     * Required. The name of the customer. Format: customers/{customer_id}
-     *
-     * @var string
-     */
-    public $parent;
-    protected $printerType = Printer::class;
-    protected $printerDataType = '';
-    /**
-     * Required. The name of the customer. Format: customers/{customer_id}
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Directory {
+    class CreatePrinterRequest extends \Google\Model
     {
+        /**
+         * Required. The name of the customer. Format: customers/{customer_id}
+         *
+         * @var string
+         */
+        public $parent;
+        protected $printerType = Printer::class;
+        protected $printerDataType = '';
+        /**
+         * Required. The name of the customer. Format: customers/{customer_id}
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. A printer to create. If you want to place the printer under
+         * particular OU then populate printer.org_unit_id filed. Otherwise the
+         * printer will be placed under root OU.
+         *
+         * @param Printer $printer
+         */
+        public function setPrinter(Printer $printer)
+        {
+        }
+        /**
+         * @return Printer
+         */
+        public function getPrinter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\CreatePrinterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. A printer to create. If you want to place the printer under
-     * particular OU then populate printer.org_unit_id filed. Otherwise the
-     * printer will be placed under root OU.
-     *
-     * @param Printer $printer
-     */
-    public function setPrinter(Printer $printer)
-    {
-    }
-    /**
-     * @return Printer
-     */
-    public function getPrinter()
+    class Google_Service_Directory_CreatePrinterRequest extends \Google\Service\Directory\CreatePrinterRequest
     {
     }
 }

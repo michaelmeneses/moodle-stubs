@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RebaseTunedModelRequest extends \Google\Model
-{
-    protected $artifactDestinationType = GoogleCloudAiplatformV1GcsDestination::class;
-    protected $artifactDestinationDataType = '';
-    /**
-     * Optional. By default, bison to gemini migration will always create new
-     * model/endpoint, but for gemini-1.0 to gemini-1.5 migration, we default
-     * deploy to the same endpoint. See details in this Section.
-     *
-     * @var bool
-     */
-    public $deployToSameEndpoint;
-    protected $tunedModelRefType = GoogleCloudAiplatformV1TunedModelRef::class;
-    protected $tunedModelRefDataType = '';
-    protected $tuningJobType = GoogleCloudAiplatformV1TuningJob::class;
-    protected $tuningJobDataType = '';
-    /**
-     * Optional. The Google Cloud Storage location to write the artifacts.
-     *
-     * @param GoogleCloudAiplatformV1GcsDestination $artifactDestination
-     */
-    public function setArtifactDestination(GoogleCloudAiplatformV1GcsDestination $artifactDestination)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RebaseTunedModelRequest extends \Google\Model
     {
+        protected $artifactDestinationType = GoogleCloudAiplatformV1GcsDestination::class;
+        protected $artifactDestinationDataType = '';
+        /**
+         * Optional. By default, bison to gemini migration will always create new
+         * model/endpoint, but for gemini-1.0 to gemini-1.5 migration, we default
+         * deploy to the same endpoint. See details in this Section.
+         *
+         * @var bool
+         */
+        public $deployToSameEndpoint;
+        protected $tunedModelRefType = GoogleCloudAiplatformV1TunedModelRef::class;
+        protected $tunedModelRefDataType = '';
+        protected $tuningJobType = GoogleCloudAiplatformV1TuningJob::class;
+        protected $tuningJobDataType = '';
+        /**
+         * Optional. The Google Cloud Storage location to write the artifacts.
+         *
+         * @param GoogleCloudAiplatformV1GcsDestination $artifactDestination
+         */
+        public function setArtifactDestination(GoogleCloudAiplatformV1GcsDestination $artifactDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsDestination
+         */
+        public function getArtifactDestination()
+        {
+        }
+        /**
+         * Optional. By default, bison to gemini migration will always create new
+         * model/endpoint, but for gemini-1.0 to gemini-1.5 migration, we default
+         * deploy to the same endpoint. See details in this Section.
+         *
+         * @param bool $deployToSameEndpoint
+         */
+        public function setDeployToSameEndpoint($deployToSameEndpoint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeployToSameEndpoint()
+        {
+        }
+        /**
+         * Required. TunedModel reference to retrieve the legacy model information.
+         *
+         * @param GoogleCloudAiplatformV1TunedModelRef $tunedModelRef
+         */
+        public function setTunedModelRef(GoogleCloudAiplatformV1TunedModelRef $tunedModelRef)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TunedModelRef
+         */
+        public function getTunedModelRef()
+        {
+        }
+        /**
+         * Optional. The TuningJob to be updated. Users can use this TuningJob field
+         * to overwrite tuning configs.
+         *
+         * @param GoogleCloudAiplatformV1TuningJob $tuningJob
+         */
+        public function setTuningJob(GoogleCloudAiplatformV1TuningJob $tuningJob)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TuningJob
+         */
+        public function getTuningJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GcsDestination
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RebaseTunedModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactDestination()
-    {
-    }
-    /**
-     * Optional. By default, bison to gemini migration will always create new
-     * model/endpoint, but for gemini-1.0 to gemini-1.5 migration, we default
-     * deploy to the same endpoint. See details in this Section.
-     *
-     * @param bool $deployToSameEndpoint
-     */
-    public function setDeployToSameEndpoint($deployToSameEndpoint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeployToSameEndpoint()
-    {
-    }
-    /**
-     * Required. TunedModel reference to retrieve the legacy model information.
-     *
-     * @param GoogleCloudAiplatformV1TunedModelRef $tunedModelRef
-     */
-    public function setTunedModelRef(GoogleCloudAiplatformV1TunedModelRef $tunedModelRef)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TunedModelRef
-     */
-    public function getTunedModelRef()
-    {
-    }
-    /**
-     * Optional. The TuningJob to be updated. Users can use this TuningJob field
-     * to overwrite tuning configs.
-     *
-     * @param GoogleCloudAiplatformV1TuningJob $tuningJob
-     */
-    public function setTuningJob(GoogleCloudAiplatformV1TuningJob $tuningJob)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TuningJob
-     */
-    public function getTuningJob()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RebaseTunedModelRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RebaseTunedModelRequest
     {
     }
 }

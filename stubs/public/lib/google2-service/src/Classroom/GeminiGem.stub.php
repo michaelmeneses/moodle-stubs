@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class GeminiGem extends \Google\Model
-{
-    /**
-     * Gems resource id.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Title of the Gem.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL that can be used to access the Gem.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Gems resource id.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Classroom {
+    class GeminiGem extends \Google\Model
     {
+        /**
+         * Gems resource id.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Title of the Gem.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL that can be used to access the Gem.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Gems resource id.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Title of the Gem.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URL that can be used to access the Gem.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\GeminiGem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Title of the Gem.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URL that can be used to access the Gem.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Classroom_GeminiGem extends \Google\Service\Classroom\GeminiGem
     {
     }
 }

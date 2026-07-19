@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class LostModeLocationEvent extends \Google\Model
-{
-    /**
-     * The battery level as a number between 0 and 100 inclusive
-     *
-     * @var int
-     */
-    public $batteryLevel;
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * The battery level as a number between 0 and 100 inclusive
-     *
-     * @param int $batteryLevel
-     */
-    public function setBatteryLevel($batteryLevel)
+namespace Google\Service\AndroidManagement {
+    class LostModeLocationEvent extends \Google\Model
     {
+        /**
+         * The battery level as a number between 0 and 100 inclusive
+         *
+         * @var int
+         */
+        public $batteryLevel;
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * The battery level as a number between 0 and 100 inclusive
+         *
+         * @param int $batteryLevel
+         */
+        public function setBatteryLevel($batteryLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBatteryLevel()
+        {
+        }
+        /**
+         * The device location
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidManagement\LostModeLocationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatteryLevel()
-    {
-    }
-    /**
-     * The device location
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
+    class Google_Service_AndroidManagement_LostModeLocationEvent extends \Google\Service\AndroidManagement\LostModeLocationEvent
     {
     }
 }

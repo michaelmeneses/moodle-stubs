@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ApprovalConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $approvalRequired;
-    /**
-     * @param bool
-     */
-    public function setApprovalRequired($approvalRequired)
+namespace Google\Service\CloudBuild {
+    class ApprovalConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $approvalRequired;
+        /**
+         * @param bool
+         */
+        public function setApprovalRequired($approvalRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApprovalRequired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudBuild\ApprovalConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalRequired()
+    class Google_Service_CloudBuild_ApprovalConfig extends \Google\Service\CloudBuild\ApprovalConfig
     {
     }
 }

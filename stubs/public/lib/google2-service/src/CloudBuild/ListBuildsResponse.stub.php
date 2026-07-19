@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListBuildsResponse extends \Google\Collection
-{
-    protected $collection_key = 'builds';
-    protected $buildsType = Build::class;
-    protected $buildsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param Build[]
-     */
-    public function setBuilds($builds)
+namespace Google\Service\CloudBuild {
+    class ListBuildsResponse extends \Google\Collection
     {
+        protected $collection_key = 'builds';
+        protected $buildsType = Build::class;
+        protected $buildsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param Build[]
+         */
+        public function setBuilds($builds)
+        {
+        }
+        /**
+         * @return Build[]
+         */
+        public function getBuilds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Build[]
+     * Runtime class alias of \Google\Service\CloudBuild\ListBuildsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudBuild_ListBuildsResponse extends \Google\Service\CloudBuild\ListBuildsResponse
     {
     }
 }

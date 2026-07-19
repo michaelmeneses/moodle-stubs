@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use core_tag_tag;
+use lang_string;
+use MoodleQuickForm;
+use stdClass;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\report\filter;
 /**
  * Class containing logic for the tags filter
  *

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupLogicalStructure extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    protected $regionsType = InterconnectAttachmentGroupLogicalStructureRegion::class;
-    protected $regionsDataType = 'array';
-    /**
-     * @param InterconnectAttachmentGroupLogicalStructureRegion[] $regions
-     */
-    public function setRegions($regions)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupLogicalStructure extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        protected $regionsType = InterconnectAttachmentGroupLogicalStructureRegion::class;
+        protected $regionsDataType = 'array';
+        /**
+         * @param InterconnectAttachmentGroupLogicalStructureRegion[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupLogicalStructureRegion[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachmentGroupLogicalStructureRegion[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegions()
+    class Google_Service_Compute_InterconnectAttachmentGroupLogicalStructure extends \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructure
     {
     }
 }

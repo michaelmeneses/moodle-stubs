@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2GetDefaultBranchResponse extends \Google\Model
-{
-    /**
-     * Full resource name of the branch id currently set as default branch.
-     *
-     * @var string
-     */
-    public $branch;
-    /**
-     * This corresponds to SetDefaultBranchRequest.note field, when this branch
-     * was set as default.
-     *
-     * @var string
-     */
-    public $note;
-    /**
-     * The time when this branch is set to default.
-     *
-     * @var string
-     */
-    public $setTime;
-    /**
-     * Full resource name of the branch id currently set as default branch.
-     *
-     * @param string $branch
-     */
-    public function setBranch($branch)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2GetDefaultBranchResponse extends \Google\Model
     {
+        /**
+         * Full resource name of the branch id currently set as default branch.
+         *
+         * @var string
+         */
+        public $branch;
+        /**
+         * This corresponds to SetDefaultBranchRequest.note field, when this branch
+         * was set as default.
+         *
+         * @var string
+         */
+        public $note;
+        /**
+         * The time when this branch is set to default.
+         *
+         * @var string
+         */
+        public $setTime;
+        /**
+         * Full resource name of the branch id currently set as default branch.
+         *
+         * @param string $branch
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * This corresponds to SetDefaultBranchRequest.note field, when this branch
+         * was set as default.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
+        /**
+         * The time when this branch is set to default.
+         *
+         * @param string $setTime
+         */
+        public function setSetTime($setTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2GetDefaultBranchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranch()
-    {
-    }
-    /**
-     * This corresponds to SetDefaultBranchRequest.note field, when this branch
-     * was set as default.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
-    {
-    }
-    /**
-     * The time when this branch is set to default.
-     *
-     * @param string $setTime
-     */
-    public function setSetTime($setTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetTime()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2GetDefaultBranchResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2GetDefaultBranchResponse
     {
     }
 }

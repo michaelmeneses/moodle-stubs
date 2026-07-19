@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1GovernanceEventEntity extends \Google\Model
-{
-    /**
-     * An unspecified Entity type.
-     */
-    public const ENTITY_TYPE_ENTITY_TYPE_UNSPECIFIED = 'ENTITY_TYPE_UNSPECIFIED';
-    /**
-     * Table entity type.
-     */
-    public const ENTITY_TYPE_TABLE = 'TABLE';
-    /**
-     * Fileset entity type.
-     */
-    public const ENTITY_TYPE_FILESET = 'FILESET';
-    /**
-     * The Entity resource the log event is associated with. Format: projects/{pro
-     * ject_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entiti
-     * es/{entity_id}
-     *
-     * @var string
-     */
-    public $entity;
-    /**
-     * Type of entity.
-     *
-     * @var string
-     */
-    public $entityType;
-    /**
-     * The Entity resource the log event is associated with. Format: projects/{pro
-     * ject_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entiti
-     * es/{entity_id}
-     *
-     * @param string $entity
-     */
-    public function setEntity($entity)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1GovernanceEventEntity extends \Google\Model
     {
+        /**
+         * An unspecified Entity type.
+         */
+        public const ENTITY_TYPE_ENTITY_TYPE_UNSPECIFIED = 'ENTITY_TYPE_UNSPECIFIED';
+        /**
+         * Table entity type.
+         */
+        public const ENTITY_TYPE_TABLE = 'TABLE';
+        /**
+         * Fileset entity type.
+         */
+        public const ENTITY_TYPE_FILESET = 'FILESET';
+        /**
+         * The Entity resource the log event is associated with. Format: projects/{pro
+         * ject_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entiti
+         * es/{entity_id}
+         *
+         * @var string
+         */
+        public $entity;
+        /**
+         * Type of entity.
+         *
+         * @var string
+         */
+        public $entityType;
+        /**
+         * The Entity resource the log event is associated with. Format: projects/{pro
+         * ject_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entiti
+         * es/{entity_id}
+         *
+         * @param string $entity
+         */
+        public function setEntity($entity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * Type of entity.
+         *
+         * Accepted values: ENTITY_TYPE_UNSPECIFIED, TABLE, FILESET
+         *
+         * @param self::ENTITY_TYPE_* $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return self::ENTITY_TYPE_*
+         */
+        public function getEntityType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1GovernanceEventEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
-    {
-    }
-    /**
-     * Type of entity.
-     *
-     * Accepted values: ENTITY_TYPE_UNSPECIFIED, TABLE, FILESET
-     *
-     * @param self::ENTITY_TYPE_* $entityType
-     */
-    public function setEntityType($entityType)
-    {
-    }
-    /**
-     * @return self::ENTITY_TYPE_*
-     */
-    public function getEntityType()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1GovernanceEventEntity extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1GovernanceEventEntity
     {
     }
 }

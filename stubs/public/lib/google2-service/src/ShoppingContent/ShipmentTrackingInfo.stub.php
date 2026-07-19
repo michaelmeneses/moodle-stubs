@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShipmentTrackingInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $carrier;
-    /**
-     * @var string
-     */
-    public $trackingNumber;
-    /**
-     * @param string
-     */
-    public function setCarrier($carrier)
+namespace Google\Service\ShoppingContent {
+    class ShipmentTrackingInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $carrier;
+        /**
+         * @var string
+         */
+        public $trackingNumber;
+        /**
+         * @param string
+         */
+        public function setCarrier($carrier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrackingNumber($trackingNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ShipmentTrackingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrackingNumber($trackingNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingNumber()
+    class Google_Service_ShoppingContent_ShipmentTrackingInfo extends \Google\Service\ShoppingContent\ShipmentTrackingInfo
     {
     }
 }

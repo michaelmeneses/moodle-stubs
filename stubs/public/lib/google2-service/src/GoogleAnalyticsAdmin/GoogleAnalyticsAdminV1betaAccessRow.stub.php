@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessRow extends \Google\Collection
-{
-    protected $collection_key = 'metricValues';
-    protected $dimensionValuesType = GoogleAnalyticsAdminV1betaAccessDimensionValue::class;
-    protected $dimensionValuesDataType = 'array';
-    protected $metricValuesType = GoogleAnalyticsAdminV1betaAccessMetricValue::class;
-    protected $metricValuesDataType = 'array';
-    /**
-     * List of dimension values. These values are in the same order as specified
-     * in the request.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessDimensionValue[] $dimensionValues
-     */
-    public function setDimensionValues($dimensionValues)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessRow extends \Google\Collection
     {
+        protected $collection_key = 'metricValues';
+        protected $dimensionValuesType = GoogleAnalyticsAdminV1betaAccessDimensionValue::class;
+        protected $dimensionValuesDataType = 'array';
+        protected $metricValuesType = GoogleAnalyticsAdminV1betaAccessMetricValue::class;
+        protected $metricValuesDataType = 'array';
+        /**
+         * List of dimension values. These values are in the same order as specified
+         * in the request.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessDimensionValue[] $dimensionValues
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessDimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
+        /**
+         * List of metric values. These values are in the same order as specified in
+         * the request.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessMetricValue[] $metricValues
+         */
+        public function setMetricValues($metricValues)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessMetricValue[]
+         */
+        public function getMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccessDimensionValue[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionValues()
-    {
-    }
-    /**
-     * List of metric values. These values are in the same order as specified in
-     * the request.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessMetricValue[] $metricValues
-     */
-    public function setMetricValues($metricValues)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessMetricValue[]
-     */
-    public function getMetricValues()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessRow extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessRow
     {
     }
 }

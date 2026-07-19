@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SummarizeSessionSparkApplicationStageAttemptTasksResponse extends \Google\Model
-{
-    protected $stageAttemptTasksSummaryType = StageAttemptTasksSummary::class;
-    protected $stageAttemptTasksSummaryDataType = '';
-    /**
-     * Summary of tasks for a Spark Application Stage Attempt
-     *
-     * @param StageAttemptTasksSummary $stageAttemptTasksSummary
-     */
-    public function setStageAttemptTasksSummary(StageAttemptTasksSummary $stageAttemptTasksSummary)
+namespace Google\Service\Dataproc {
+    class SummarizeSessionSparkApplicationStageAttemptTasksResponse extends \Google\Model
     {
+        protected $stageAttemptTasksSummaryType = StageAttemptTasksSummary::class;
+        protected $stageAttemptTasksSummaryDataType = '';
+        /**
+         * Summary of tasks for a Spark Application Stage Attempt
+         *
+         * @param StageAttemptTasksSummary $stageAttemptTasksSummary
+         */
+        public function setStageAttemptTasksSummary(StageAttemptTasksSummary $stageAttemptTasksSummary)
+        {
+        }
+        /**
+         * @return StageAttemptTasksSummary
+         */
+        public function getStageAttemptTasksSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StageAttemptTasksSummary
+     * Runtime class alias of \Google\Service\Dataproc\SummarizeSessionSparkApplicationStageAttemptTasksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStageAttemptTasksSummary()
+    class Google_Service_Dataproc_SummarizeSessionSparkApplicationStageAttemptTasksResponse extends \Google\Service\Dataproc\SummarizeSessionSparkApplicationStageAttemptTasksResponse
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class KubernetesClusterConfig extends \Google\Model
-{
-    protected $gkeClusterConfigType = GkeClusterConfig::class;
-    protected $gkeClusterConfigDataType = '';
-    /**
-     * Optional. A namespace within the Kubernetes cluster to deploy into. If this
-     * namespace does not exist, it is created. If it exists, Dataproc verifies
-     * that another Dataproc VirtualCluster is not installed into it. If not
-     * specified, the name of the Dataproc Cluster is used.
-     *
-     * @var string
-     */
-    public $kubernetesNamespace;
-    protected $kubernetesSoftwareConfigType = KubernetesSoftwareConfig::class;
-    protected $kubernetesSoftwareConfigDataType = '';
-    /**
-     * Required. The configuration for running the Dataproc cluster on GKE.
-     *
-     * @param GkeClusterConfig $gkeClusterConfig
-     */
-    public function setGkeClusterConfig(GkeClusterConfig $gkeClusterConfig)
+namespace Google\Service\Dataproc {
+    class KubernetesClusterConfig extends \Google\Model
     {
+        protected $gkeClusterConfigType = GkeClusterConfig::class;
+        protected $gkeClusterConfigDataType = '';
+        /**
+         * Optional. A namespace within the Kubernetes cluster to deploy into. If this
+         * namespace does not exist, it is created. If it exists, Dataproc verifies
+         * that another Dataproc VirtualCluster is not installed into it. If not
+         * specified, the name of the Dataproc Cluster is used.
+         *
+         * @var string
+         */
+        public $kubernetesNamespace;
+        protected $kubernetesSoftwareConfigType = KubernetesSoftwareConfig::class;
+        protected $kubernetesSoftwareConfigDataType = '';
+        /**
+         * Required. The configuration for running the Dataproc cluster on GKE.
+         *
+         * @param GkeClusterConfig $gkeClusterConfig
+         */
+        public function setGkeClusterConfig(GkeClusterConfig $gkeClusterConfig)
+        {
+        }
+        /**
+         * @return GkeClusterConfig
+         */
+        public function getGkeClusterConfig()
+        {
+        }
+        /**
+         * Optional. A namespace within the Kubernetes cluster to deploy into. If this
+         * namespace does not exist, it is created. If it exists, Dataproc verifies
+         * that another Dataproc VirtualCluster is not installed into it. If not
+         * specified, the name of the Dataproc Cluster is used.
+         *
+         * @param string $kubernetesNamespace
+         */
+        public function setKubernetesNamespace($kubernetesNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesNamespace()
+        {
+        }
+        /**
+         * Optional. The software configuration for this Dataproc cluster running on
+         * Kubernetes.
+         *
+         * @param KubernetesSoftwareConfig $kubernetesSoftwareConfig
+         */
+        public function setKubernetesSoftwareConfig(KubernetesSoftwareConfig $kubernetesSoftwareConfig)
+        {
+        }
+        /**
+         * @return KubernetesSoftwareConfig
+         */
+        public function getKubernetesSoftwareConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GkeClusterConfig
+     * Runtime class alias of \Google\Service\Dataproc\KubernetesClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGkeClusterConfig()
-    {
-    }
-    /**
-     * Optional. A namespace within the Kubernetes cluster to deploy into. If this
-     * namespace does not exist, it is created. If it exists, Dataproc verifies
-     * that another Dataproc VirtualCluster is not installed into it. If not
-     * specified, the name of the Dataproc Cluster is used.
-     *
-     * @param string $kubernetesNamespace
-     */
-    public function setKubernetesNamespace($kubernetesNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesNamespace()
-    {
-    }
-    /**
-     * Optional. The software configuration for this Dataproc cluster running on
-     * Kubernetes.
-     *
-     * @param KubernetesSoftwareConfig $kubernetesSoftwareConfig
-     */
-    public function setKubernetesSoftwareConfig(KubernetesSoftwareConfig $kubernetesSoftwareConfig)
-    {
-    }
-    /**
-     * @return KubernetesSoftwareConfig
-     */
-    public function getKubernetesSoftwareConfig()
+    class Google_Service_Dataproc_KubernetesClusterConfig extends \Google\Service\Dataproc\KubernetesClusterConfig
     {
     }
 }

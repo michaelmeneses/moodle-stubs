@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateSlicerSpecRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `SlicerSpec` is implied and should not be specified. A single "*"`
-     * can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The id of the slicer to update.
-     *
-     * @var int
-     */
-    public $slicerId;
-    protected $specType = SlicerSpec::class;
-    protected $specDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `SlicerSpec` is implied and should not be specified. A single "*"`
-     * can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Sheets {
+    class UpdateSlicerSpecRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `SlicerSpec` is implied and should not be specified. A single "*"`
+         * can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The id of the slicer to update.
+         *
+         * @var int
+         */
+        public $slicerId;
+        protected $specType = SlicerSpec::class;
+        protected $specDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `SlicerSpec` is implied and should not be specified. A single "*"`
+         * can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The id of the slicer to update.
+         *
+         * @param int $slicerId
+         */
+        public function setSlicerId($slicerId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSlicerId()
+        {
+        }
+        /**
+         * The specification to apply to the slicer.
+         *
+         * @param SlicerSpec $spec
+         */
+        public function setSpec(SlicerSpec $spec)
+        {
+        }
+        /**
+         * @return SlicerSpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\UpdateSlicerSpecRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The id of the slicer to update.
-     *
-     * @param int $slicerId
-     */
-    public function setSlicerId($slicerId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSlicerId()
-    {
-    }
-    /**
-     * The specification to apply to the slicer.
-     *
-     * @param SlicerSpec $spec
-     */
-    public function setSpec(SlicerSpec $spec)
-    {
-    }
-    /**
-     * @return SlicerSpec
-     */
-    public function getSpec()
+    class Google_Service_Sheets_UpdateSlicerSpecRequest extends \Google\Service\Sheets\UpdateSlicerSpecRequest
     {
     }
 }

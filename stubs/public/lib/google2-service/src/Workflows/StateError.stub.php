@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Workflows;
-
-class StateError extends \Google\Model
-{
-    /**
-     * No type specified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Caused by an issue with KMS.
-     */
-    public const TYPE_KMS_ERROR = 'KMS_ERROR';
-    /**
-     * Provides specifics about the error.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * The type of this state error.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Provides specifics about the error.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\Workflows {
+    class StateError extends \Google\Model
     {
+        /**
+         * No type specified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Caused by an issue with KMS.
+         */
+        public const TYPE_KMS_ERROR = 'KMS_ERROR';
+        /**
+         * Provides specifics about the error.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * The type of this state error.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Provides specifics about the error.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The type of this state error.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, KMS_ERROR
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Workflows\StateError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The type of this state error.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, KMS_ERROR
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Workflows_StateError extends \Google\Service\Workflows\StateError
     {
     }
 }

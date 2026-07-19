@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceColumn extends \Google\Model
-{
-    /**
-     * The formula of the calculated column.
-     *
-     * @var string
-     */
-    public $formula;
-    protected $referenceType = DataSourceColumnReference::class;
-    protected $referenceDataType = '';
-    /**
-     * The formula of the calculated column.
-     *
-     * @param string $formula
-     */
-    public function setFormula($formula)
+namespace Google\Service\Sheets {
+    class DataSourceColumn extends \Google\Model
     {
+        /**
+         * The formula of the calculated column.
+         *
+         * @var string
+         */
+        public $formula;
+        protected $referenceType = DataSourceColumnReference::class;
+        protected $referenceDataType = '';
+        /**
+         * The formula of the calculated column.
+         *
+         * @param string $formula
+         */
+        public function setFormula($formula)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormula()
+        {
+        }
+        /**
+         * The column reference.
+         *
+         * @param DataSourceColumnReference $reference
+         */
+        public function setReference(DataSourceColumnReference $reference)
+        {
+        }
+        /**
+         * @return DataSourceColumnReference
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\DataSourceColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormula()
-    {
-    }
-    /**
-     * The column reference.
-     *
-     * @param DataSourceColumnReference $reference
-     */
-    public function setReference(DataSourceColumnReference $reference)
-    {
-    }
-    /**
-     * @return DataSourceColumnReference
-     */
-    public function getReference()
+    class Google_Service_Sheets_DataSourceColumn extends \Google\Service\Sheets\DataSourceColumn
     {
     }
 }

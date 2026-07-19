@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class QueryParameterTypeStructTypes extends \Google\Model
-{
-    /**
-     * Optional. Human-oriented description of the field.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. The name of this field.
-     *
-     * @var string
-     */
-    public $name;
-    protected $typeType = QueryParameterType::class;
-    protected $typeDataType = '';
-    /**
-     * Optional. Human-oriented description of the field.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Bigquery {
+    class QueryParameterTypeStructTypes extends \Google\Model
     {
+        /**
+         * Optional. Human-oriented description of the field.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. The name of this field.
+         *
+         * @var string
+         */
+        public $name;
+        protected $typeType = QueryParameterType::class;
+        protected $typeDataType = '';
+        /**
+         * Optional. Human-oriented description of the field.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The name of this field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The type of this field.
+         *
+         * @param QueryParameterType $type
+         */
+        public function setType(QueryParameterType $type)
+        {
+        }
+        /**
+         * @return QueryParameterType
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\QueryParameterTypeStructTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The name of this field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The type of this field.
-     *
-     * @param QueryParameterType $type
-     */
-    public function setType(QueryParameterType $type)
-    {
-    }
-    /**
-     * @return QueryParameterType
-     */
-    public function getType()
+    class Google_Service_Bigquery_QueryParameterTypeStructTypes extends \Google\Service\Bigquery\QueryParameterTypeStructTypes
     {
     }
 }

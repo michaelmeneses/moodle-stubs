@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class Romanization extends \Google\Model
-{
-    /**
-     * The ISO-639 language code of source text in the initial request, detected
-     * automatically, if no source language was passed within the initial request.
-     * If the source language was passed, auto-detection of the language does not
-     * occur and this field is empty.
-     *
-     * @var string
-     */
-    public $detectedLanguageCode;
-    /**
-     * Romanized text. If an error occurs during romanization, this field might be
-     * excluded from the response.
-     *
-     * @var string
-     */
-    public $romanizedText;
-    /**
-     * The ISO-639 language code of source text in the initial request, detected
-     * automatically, if no source language was passed within the initial request.
-     * If the source language was passed, auto-detection of the language does not
-     * occur and this field is empty.
-     *
-     * @param string $detectedLanguageCode
-     */
-    public function setDetectedLanguageCode($detectedLanguageCode)
+namespace Google\Service\Translate {
+    class Romanization extends \Google\Model
     {
+        /**
+         * The ISO-639 language code of source text in the initial request, detected
+         * automatically, if no source language was passed within the initial request.
+         * If the source language was passed, auto-detection of the language does not
+         * occur and this field is empty.
+         *
+         * @var string
+         */
+        public $detectedLanguageCode;
+        /**
+         * Romanized text. If an error occurs during romanization, this field might be
+         * excluded from the response.
+         *
+         * @var string
+         */
+        public $romanizedText;
+        /**
+         * The ISO-639 language code of source text in the initial request, detected
+         * automatically, if no source language was passed within the initial request.
+         * If the source language was passed, auto-detection of the language does not
+         * occur and this field is empty.
+         *
+         * @param string $detectedLanguageCode
+         */
+        public function setDetectedLanguageCode($detectedLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetectedLanguageCode()
+        {
+        }
+        /**
+         * Romanized text. If an error occurs during romanization, this field might be
+         * excluded from the response.
+         *
+         * @param string $romanizedText
+         */
+        public function setRomanizedText($romanizedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRomanizedText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\Romanization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedLanguageCode()
-    {
-    }
-    /**
-     * Romanized text. If an error occurs during romanization, this field might be
-     * excluded from the response.
-     *
-     * @param string $romanizedText
-     */
-    public function setRomanizedText($romanizedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRomanizedText()
+    class Google_Service_Translate_Romanization extends \Google\Service\Translate\Romanization
     {
     }
 }

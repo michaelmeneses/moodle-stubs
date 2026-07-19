@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedOrganizationInfoCustomerInfo extends \Google\Model
-{
-    protected $customerIdType = CustomerId::class;
-    protected $customerIdDataType = '';
-    /**
-     * @param CustomerId
-     */
-    public function setCustomerId(CustomerId $customerId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedOrganizationInfoCustomerInfo extends \Google\Model
     {
+        protected $customerIdType = CustomerId::class;
+        protected $customerIdDataType = '';
+        /**
+         * @param CustomerId
+         */
+        public function setCustomerId(CustomerId $customerId)
+        {
+        }
+        /**
+         * @return CustomerId
+         */
+        public function getCustomerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedOrganizationInfoCustomerInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerId()
+    class Google_Service_CloudSearch_AppsDynamiteSharedOrganizationInfoCustomerInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedOrganizationInfoCustomerInfo
     {
     }
 }

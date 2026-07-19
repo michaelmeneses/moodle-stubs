@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Restore extends \Google\Model
-{
-    /**
-     * The type is not available.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * An object was restored from the trash.
-     */
-    public const TYPE_UNTRASH = 'UNTRASH';
-    /**
-     * The type of restore action taken.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The type of restore action taken.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, UNTRASH
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\DriveActivity {
+    class Restore extends \Google\Model
     {
+        /**
+         * The type is not available.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * An object was restored from the trash.
+         */
+        public const TYPE_UNTRASH = 'UNTRASH';
+        /**
+         * The type of restore action taken.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The type of restore action taken.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, UNTRASH
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\DriveActivity\Restore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_DriveActivity_Restore extends \Google\Service\DriveActivity\Restore
     {
     }
 }

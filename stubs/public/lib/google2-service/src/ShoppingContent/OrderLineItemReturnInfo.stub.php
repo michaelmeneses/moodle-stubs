@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemReturnInfo extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $daysToReturn;
-    /**
-     * @var bool
-     */
-    public $isReturnable;
-    /**
-     * @var string
-     */
-    public $policyUrl;
-    /**
-     * @param int
-     */
-    public function setDaysToReturn($daysToReturn)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemReturnInfo extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $daysToReturn;
+        /**
+         * @var bool
+         */
+        public $isReturnable;
+        /**
+         * @var string
+         */
+        public $policyUrl;
+        /**
+         * @param int
+         */
+        public function setDaysToReturn($daysToReturn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDaysToReturn()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsReturnable($isReturnable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsReturnable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPolicyUrl($policyUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemReturnInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysToReturn()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsReturnable($isReturnable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsReturnable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPolicyUrl($policyUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyUrl()
+    class Google_Service_ShoppingContent_OrderLineItemReturnInfo extends \Google\Service\ShoppingContent\OrderLineItemReturnInfo
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class DataplexConfig extends \Google\Model
-{
-    protected $lakeResourcesType = Lake::class;
-    protected $lakeResourcesDataType = 'map';
-    /**
-     * @param Lake[]
-     */
-    public function setLakeResources($lakeResources)
+namespace Google\Service\DataprocMetastore {
+    class DataplexConfig extends \Google\Model
     {
+        protected $lakeResourcesType = Lake::class;
+        protected $lakeResourcesDataType = 'map';
+        /**
+         * @param Lake[]
+         */
+        public function setLakeResources($lakeResources)
+        {
+        }
+        /**
+         * @return Lake[]
+         */
+        public function getLakeResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Lake[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\DataplexConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLakeResources()
+    class Google_Service_DataprocMetastore_DataplexConfig extends \Google\Service\DataprocMetastore\DataplexConfig
     {
     }
 }

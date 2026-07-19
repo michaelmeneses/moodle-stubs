@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSessionSparkApplicationStagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplicationStages';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSessionSparkApplicationStages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationStagesType = StageData::class;
-    protected $sparkApplicationStagesDataType = 'array';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSessionSparkApplicationStages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSessionSparkApplicationStagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplicationStages';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSessionSparkApplicationStages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationStagesType = StageData::class;
+        protected $sparkApplicationStagesDataType = 'array';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSessionSparkApplicationStages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. Data corresponding to a stage.
+         *
+         * @param StageData[] $sparkApplicationStages
+         */
+        public function setSparkApplicationStages($sparkApplicationStages)
+        {
+        }
+        /**
+         * @return StageData[]
+         */
+        public function getSparkApplicationStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSessionSparkApplicationStagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. Data corresponding to a stage.
-     *
-     * @param StageData[] $sparkApplicationStages
-     */
-    public function setSparkApplicationStages($sparkApplicationStages)
-    {
-    }
-    /**
-     * @return StageData[]
-     */
-    public function getSparkApplicationStages()
+    class Google_Service_Dataproc_SearchSessionSparkApplicationStagesResponse extends \Google\Service\Dataproc\SearchSessionSparkApplicationStagesResponse
     {
     }
 }

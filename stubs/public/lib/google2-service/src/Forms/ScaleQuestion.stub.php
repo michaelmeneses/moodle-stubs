@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class ScaleQuestion extends \Google\Model
-{
-    /**
-     * Required. The highest possible value for the scale.
-     *
-     * @var int
-     */
-    public $high;
-    /**
-     * The label to display describing the highest point on the scale.
-     *
-     * @var string
-     */
-    public $highLabel;
-    /**
-     * Required. The lowest possible value for the scale.
-     *
-     * @var int
-     */
-    public $low;
-    /**
-     * The label to display describing the lowest point on the scale.
-     *
-     * @var string
-     */
-    public $lowLabel;
-    /**
-     * Required. The highest possible value for the scale.
-     *
-     * @param int $high
-     */
-    public function setHigh($high)
+namespace Google\Service\Forms {
+    class ScaleQuestion extends \Google\Model
     {
+        /**
+         * Required. The highest possible value for the scale.
+         *
+         * @var int
+         */
+        public $high;
+        /**
+         * The label to display describing the highest point on the scale.
+         *
+         * @var string
+         */
+        public $highLabel;
+        /**
+         * Required. The lowest possible value for the scale.
+         *
+         * @var int
+         */
+        public $low;
+        /**
+         * The label to display describing the lowest point on the scale.
+         *
+         * @var string
+         */
+        public $lowLabel;
+        /**
+         * Required. The highest possible value for the scale.
+         *
+         * @param int $high
+         */
+        public function setHigh($high)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * The label to display describing the highest point on the scale.
+         *
+         * @param string $highLabel
+         */
+        public function setHighLabel($highLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHighLabel()
+        {
+        }
+        /**
+         * Required. The lowest possible value for the scale.
+         *
+         * @param int $low
+         */
+        public function setLow($low)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLow()
+        {
+        }
+        /**
+         * The label to display describing the lowest point on the scale.
+         *
+         * @param string $lowLabel
+         */
+        public function setLowLabel($lowLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLowLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Forms\ScaleQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHigh()
-    {
-    }
-    /**
-     * The label to display describing the highest point on the scale.
-     *
-     * @param string $highLabel
-     */
-    public function setHighLabel($highLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHighLabel()
-    {
-    }
-    /**
-     * Required. The lowest possible value for the scale.
-     *
-     * @param int $low
-     */
-    public function setLow($low)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLow()
-    {
-    }
-    /**
-     * The label to display describing the lowest point on the scale.
-     *
-     * @param string $lowLabel
-     */
-    public function setLowLabel($lowLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLowLabel()
+    class Google_Service_Forms_ScaleQuestion extends \Google\Service\Forms\ScaleQuestion
     {
     }
 }

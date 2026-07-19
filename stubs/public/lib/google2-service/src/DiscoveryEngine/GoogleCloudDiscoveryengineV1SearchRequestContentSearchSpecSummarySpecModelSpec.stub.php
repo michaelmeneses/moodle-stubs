@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecSummarySpecModelSpec extends \Google\Model
-{
-    /**
-     * The model version used to generate the summary. Supported values are: *
-     * `stable`: string. Default value when no value is specified. Uses a
-     * generally available, fine-tuned model. For more information, see [Answer
-     * generation model versions and
-     * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
-     * generation-models). * `preview`: string. (Public preview) Uses a preview
-     * model. For more information, see [Answer generation model versions and
-     * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
-     * generation-models).
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The model version used to generate the summary. Supported values are: *
-     * `stable`: string. Default value when no value is specified. Uses a
-     * generally available, fine-tuned model. For more information, see [Answer
-     * generation model versions and
-     * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
-     * generation-models). * `preview`: string. (Public preview) Uses a preview
-     * model. For more information, see [Answer generation model versions and
-     * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
-     * generation-models).
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecSummarySpecModelSpec extends \Google\Model
     {
+        /**
+         * The model version used to generate the summary. Supported values are: *
+         * `stable`: string. Default value when no value is specified. Uses a
+         * generally available, fine-tuned model. For more information, see [Answer
+         * generation model versions and
+         * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
+         * generation-models). * `preview`: string. (Public preview) Uses a preview
+         * model. For more information, see [Answer generation model versions and
+         * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
+         * generation-models).
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The model version used to generate the summary. Supported values are: *
+         * `stable`: string. Default value when no value is specified. Uses a
+         * generally available, fine-tuned model. For more information, see [Answer
+         * generation model versions and
+         * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
+         * generation-models). * `preview`: string. (Public preview) Uses a preview
+         * model. For more information, see [Answer generation model versions and
+         * lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-
+         * generation-models).
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecSummarySpecModelSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecSummarySpecModelSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecSummarySpecModelSpec
     {
     }
 }

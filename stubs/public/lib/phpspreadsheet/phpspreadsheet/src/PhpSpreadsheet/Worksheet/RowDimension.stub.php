@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Helper\Dimension as CssDimension;
 class RowDimension extends Dimension
 {
     private ?int $rowIndex;

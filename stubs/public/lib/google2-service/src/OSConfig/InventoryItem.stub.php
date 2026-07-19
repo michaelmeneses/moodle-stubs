@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryItem extends \Google\Model
-{
-    protected $availablePackageType = InventorySoftwarePackage::class;
-    protected $availablePackageDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $installedPackageType = InventorySoftwarePackage::class;
-    protected $installedPackageDataType = '';
-    /**
-     * @var string
-     */
-    public $originType;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param InventorySoftwarePackage
-     */
-    public function setAvailablePackage(InventorySoftwarePackage $availablePackage)
+namespace Google\Service\OSConfig {
+    class InventoryItem extends \Google\Model
     {
+        protected $availablePackageType = InventorySoftwarePackage::class;
+        protected $availablePackageDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $installedPackageType = InventorySoftwarePackage::class;
+        protected $installedPackageDataType = '';
+        /**
+         * @var string
+         */
+        public $originType;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param InventorySoftwarePackage
+         */
+        public function setAvailablePackage(InventorySoftwarePackage $availablePackage)
+        {
+        }
+        /**
+         * @return InventorySoftwarePackage
+         */
+        public function getAvailablePackage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param InventorySoftwarePackage
+         */
+        public function setInstalledPackage(InventorySoftwarePackage $installedPackage)
+        {
+        }
+        /**
+         * @return InventorySoftwarePackage
+         */
+        public function getInstalledPackage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOriginType($originType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventorySoftwarePackage
+     * Runtime class alias of \Google\Service\OSConfig\InventoryItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailablePackage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param InventorySoftwarePackage
-     */
-    public function setInstalledPackage(InventorySoftwarePackage $installedPackage)
-    {
-    }
-    /**
-     * @return InventorySoftwarePackage
-     */
-    public function getInstalledPackage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOriginType($originType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_OSConfig_InventoryItem extends \Google\Service\OSConfig\InventoryItem
     {
     }
 }

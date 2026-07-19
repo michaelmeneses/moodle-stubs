@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ComplianceDetails extends \Google\Collection
-{
-    protected $collection_key = 'frameworks';
-    protected $cloudControlType = CloudControl::class;
-    protected $cloudControlDataType = '';
-    /**
-     * Cloud Control Deployments associated with the finding. For example, organiz
-     * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
-     *
-     * @var string[]
-     */
-    public $cloudControlDeploymentNames;
-    protected $frameworksType = Framework::class;
-    protected $frameworksDataType = 'array';
-    /**
-     * CloudControl associated with the finding
-     *
-     * @param CloudControl $cloudControl
-     */
-    public function setCloudControl(CloudControl $cloudControl)
+namespace Google\Service\SecurityCommandCenter {
+    class ComplianceDetails extends \Google\Collection
     {
+        protected $collection_key = 'frameworks';
+        protected $cloudControlType = CloudControl::class;
+        protected $cloudControlDataType = '';
+        /**
+         * Cloud Control Deployments associated with the finding. For example, organiz
+         * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
+         *
+         * @var string[]
+         */
+        public $cloudControlDeploymentNames;
+        protected $frameworksType = Framework::class;
+        protected $frameworksDataType = 'array';
+        /**
+         * CloudControl associated with the finding
+         *
+         * @param CloudControl $cloudControl
+         */
+        public function setCloudControl(CloudControl $cloudControl)
+        {
+        }
+        /**
+         * @return CloudControl
+         */
+        public function getCloudControl()
+        {
+        }
+        /**
+         * Cloud Control Deployments associated with the finding. For example, organiz
+         * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
+         *
+         * @param string[] $cloudControlDeploymentNames
+         */
+        public function setCloudControlDeploymentNames($cloudControlDeploymentNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCloudControlDeploymentNames()
+        {
+        }
+        /**
+         * Details of Frameworks associated with the finding
+         *
+         * @param Framework[] $frameworks
+         */
+        public function setFrameworks($frameworks)
+        {
+        }
+        /**
+         * @return Framework[]
+         */
+        public function getFrameworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudControl
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ComplianceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudControl()
-    {
-    }
-    /**
-     * Cloud Control Deployments associated with the finding. For example, organiz
-     * ations/123/locations/global/cloudControlDeployments/deploymentIdentifier
-     *
-     * @param string[] $cloudControlDeploymentNames
-     */
-    public function setCloudControlDeploymentNames($cloudControlDeploymentNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCloudControlDeploymentNames()
-    {
-    }
-    /**
-     * Details of Frameworks associated with the finding
-     *
-     * @param Framework[] $frameworks
-     */
-    public function setFrameworks($frameworks)
-    {
-    }
-    /**
-     * @return Framework[]
-     */
-    public function getFrameworks()
+    class Google_Service_SecurityCommandCenter_ComplianceDetails extends \Google\Service\SecurityCommandCenter\ComplianceDetails
     {
     }
 }

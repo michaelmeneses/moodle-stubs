@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class BulletSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to the list_id.
-     *
-     * @var bool
-     */
-    public $listIdSuggested;
-    /**
-     * Indicates if there was a suggested change to the nesting_level.
-     *
-     * @var bool
-     */
-    public $nestingLevelSuggested;
-    protected $textStyleSuggestionStateType = TextStyleSuggestionState::class;
-    protected $textStyleSuggestionStateDataType = '';
-    /**
-     * Indicates if there was a suggested change to the list_id.
-     *
-     * @param bool $listIdSuggested
-     */
-    public function setListIdSuggested($listIdSuggested)
+namespace Google\Service\Docs {
+    class BulletSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to the list_id.
+         *
+         * @var bool
+         */
+        public $listIdSuggested;
+        /**
+         * Indicates if there was a suggested change to the nesting_level.
+         *
+         * @var bool
+         */
+        public $nestingLevelSuggested;
+        protected $textStyleSuggestionStateType = TextStyleSuggestionState::class;
+        protected $textStyleSuggestionStateDataType = '';
+        /**
+         * Indicates if there was a suggested change to the list_id.
+         *
+         * @param bool $listIdSuggested
+         */
+        public function setListIdSuggested($listIdSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getListIdSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to the nesting_level.
+         *
+         * @param bool $nestingLevelSuggested
+         */
+        public function setNestingLevelSuggested($nestingLevelSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNestingLevelSuggested()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields in text style have been changed
+         * in this suggestion.
+         *
+         * @param TextStyleSuggestionState $textStyleSuggestionState
+         */
+        public function setTextStyleSuggestionState(TextStyleSuggestionState $textStyleSuggestionState)
+        {
+        }
+        /**
+         * @return TextStyleSuggestionState
+         */
+        public function getTextStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\BulletSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListIdSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to the nesting_level.
-     *
-     * @param bool $nestingLevelSuggested
-     */
-    public function setNestingLevelSuggested($nestingLevelSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNestingLevelSuggested()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields in text style have been changed
-     * in this suggestion.
-     *
-     * @param TextStyleSuggestionState $textStyleSuggestionState
-     */
-    public function setTextStyleSuggestionState(TextStyleSuggestionState $textStyleSuggestionState)
-    {
-    }
-    /**
-     * @return TextStyleSuggestionState
-     */
-    public function getTextStyleSuggestionState()
+    class Google_Service_Docs_BulletSuggestionState extends \Google\Service\Docs\BulletSuggestionState
     {
     }
 }

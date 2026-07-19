@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ColumnSchemaFieldElementType extends \Google\Model
-{
-    /**
-     * Required. The type of a field element. See ColumnSchema.type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The type of a field element. See ColumnSchema.type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ColumnSchemaFieldElementType extends \Google\Model
     {
+        /**
+         * Required. The type of a field element. See ColumnSchema.type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The type of a field element. See ColumnSchema.type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ColumnSchemaFieldElementType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ColumnSchemaFieldElementType extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ColumnSchemaFieldElementType
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1DialogflowIntent extends \Google\Model
-{
-    /**
-     * The human-readable name of the intent.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The human-readable name of the intent.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1DialogflowIntent extends \Google\Model
     {
+        /**
+         * The human-readable name of the intent.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The human-readable name of the intent.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DialogflowIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1DialogflowIntent extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DialogflowIntent
     {
     }
 }

@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ServiceClass extends \Google\Model
-{
-    /**
-     * Output only. Time when the ServiceClass was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * A description of this resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. The etag is computed by the server, and may be sent on update and
-     * delete requests to ensure the client has an up-to-date value before
-     * proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * User-defined labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. The name of a ServiceClass resource. Format:
-     * projects/{project}/locations/{location}/serviceClasses/{service_class} See:
-     * https://google.aip.dev/122#fields-representing-resource-names
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The generated service class name. Use this name to refer to
-     * the Service class in Service Connection Maps and Service Connection
-     * Policies.
-     *
-     * @var string
-     */
-    public $serviceClass;
-    /**
-     * Output only. Time when the ServiceClass was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Time when the ServiceClass was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Networkconnectivity {
+    class ServiceClass extends \Google\Model
     {
+        /**
+         * Output only. Time when the ServiceClass was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * A description of this resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. The etag is computed by the server, and may be sent on update and
+         * delete requests to ensure the client has an up-to-date value before
+         * proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * User-defined labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. The name of a ServiceClass resource. Format:
+         * projects/{project}/locations/{location}/serviceClasses/{service_class} See:
+         * https://google.aip.dev/122#fields-representing-resource-names
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The generated service class name. Use this name to refer to
+         * the Service class in Service Connection Maps and Service Connection
+         * Policies.
+         *
+         * @var string
+         */
+        public $serviceClass;
+        /**
+         * Output only. Time when the ServiceClass was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Time when the ServiceClass was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * A description of this resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The etag is computed by the server, and may be sent on update and
+         * delete requests to ensure the client has an up-to-date value before
+         * proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * User-defined labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. The name of a ServiceClass resource. Format:
+         * projects/{project}/locations/{location}/serviceClasses/{service_class} See:
+         * https://google.aip.dev/122#fields-representing-resource-names
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The generated service class name. Use this name to refer to
+         * the Service class in Service Connection Maps and Service Connection
+         * Policies.
+         *
+         * @param string $serviceClass
+         */
+        public function setServiceClass($serviceClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceClass()
+        {
+        }
+        /**
+         * Output only. Time when the ServiceClass was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\ServiceClass registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * A description of this resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The etag is computed by the server, and may be sent on update and
-     * delete requests to ensure the client has an up-to-date value before
-     * proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * User-defined labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. The name of a ServiceClass resource. Format:
-     * projects/{project}/locations/{location}/serviceClasses/{service_class} See:
-     * https://google.aip.dev/122#fields-representing-resource-names
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The generated service class name. Use this name to refer to
-     * the Service class in Service Connection Maps and Service Connection
-     * Policies.
-     *
-     * @param string $serviceClass
-     */
-    public function setServiceClass($serviceClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceClass()
-    {
-    }
-    /**
-     * Output only. Time when the ServiceClass was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Networkconnectivity_ServiceClass extends \Google\Service\Networkconnectivity\ServiceClass
     {
     }
 }

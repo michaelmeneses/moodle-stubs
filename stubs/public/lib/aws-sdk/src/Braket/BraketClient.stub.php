@@ -8,6 +8,7 @@
  */
 namespace Aws\Braket;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Braket** service.
  * @method \Aws\Result cancelJob(array $args = [])

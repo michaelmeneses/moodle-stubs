@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class KubernetesResource extends \Google\Collection
-{
-    protected $collection_key = 'membershipResources';
-    protected $connectResourcesType = ResourceManifest::class;
-    protected $connectResourcesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $membershipCrManifest;
-    protected $membershipResourcesType = ResourceManifest::class;
-    protected $membershipResourcesDataType = 'array';
-    protected $resourceOptionsType = ResourceOptions::class;
-    protected $resourceOptionsDataType = '';
-    /**
-     * @param ResourceManifest[]
-     */
-    public function setConnectResources($connectResources)
+namespace Google\Service\GKEHub {
+    class KubernetesResource extends \Google\Collection
     {
+        protected $collection_key = 'membershipResources';
+        protected $connectResourcesType = ResourceManifest::class;
+        protected $connectResourcesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $membershipCrManifest;
+        protected $membershipResourcesType = ResourceManifest::class;
+        protected $membershipResourcesDataType = 'array';
+        protected $resourceOptionsType = ResourceOptions::class;
+        protected $resourceOptionsDataType = '';
+        /**
+         * @param ResourceManifest[]
+         */
+        public function setConnectResources($connectResources)
+        {
+        }
+        /**
+         * @return ResourceManifest[]
+         */
+        public function getConnectResources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMembershipCrManifest($membershipCrManifest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembershipCrManifest()
+        {
+        }
+        /**
+         * @param ResourceManifest[]
+         */
+        public function setMembershipResources($membershipResources)
+        {
+        }
+        /**
+         * @return ResourceManifest[]
+         */
+        public function getMembershipResources()
+        {
+        }
+        /**
+         * @param ResourceOptions
+         */
+        public function setResourceOptions(ResourceOptions $resourceOptions)
+        {
+        }
+        /**
+         * @return ResourceOptions
+         */
+        public function getResourceOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceManifest[]
+     * Runtime class alias of \Google\Service\GKEHub\KubernetesResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectResources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMembershipCrManifest($membershipCrManifest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMembershipCrManifest()
-    {
-    }
-    /**
-     * @param ResourceManifest[]
-     */
-    public function setMembershipResources($membershipResources)
-    {
-    }
-    /**
-     * @return ResourceManifest[]
-     */
-    public function getMembershipResources()
-    {
-    }
-    /**
-     * @param ResourceOptions
-     */
-    public function setResourceOptions(ResourceOptions $resourceOptions)
-    {
-    }
-    /**
-     * @return ResourceOptions
-     */
-    public function getResourceOptions()
+    class Google_Service_GKEHub_KubernetesResource extends \Google\Service\GKEHub\KubernetesResource
     {
     }
 }

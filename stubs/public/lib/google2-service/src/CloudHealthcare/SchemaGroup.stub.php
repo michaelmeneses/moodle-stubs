@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class SchemaGroup extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    /**
-     * True indicates that this is a choice group, meaning that only one of its
-     * segments can exist in a given message.
-     *
-     * @var bool
-     */
-    public $choice;
-    /**
-     * The maximum number of times this group can be repeated. 0 or -1 means
-     * unbounded.
-     *
-     * @var int
-     */
-    public $maxOccurs;
-    protected $membersType = GroupOrSegment::class;
-    protected $membersDataType = 'array';
-    /**
-     * The minimum number of times this group must be present/repeated.
-     *
-     * @var int
-     */
-    public $minOccurs;
-    /**
-     * The name of this group. For example, "ORDER_DETAIL".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * True indicates that this is a choice group, meaning that only one of its
-     * segments can exist in a given message.
-     *
-     * @param bool $choice
-     */
-    public function setChoice($choice)
+namespace Google\Service\CloudHealthcare {
+    class SchemaGroup extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        /**
+         * True indicates that this is a choice group, meaning that only one of its
+         * segments can exist in a given message.
+         *
+         * @var bool
+         */
+        public $choice;
+        /**
+         * The maximum number of times this group can be repeated. 0 or -1 means
+         * unbounded.
+         *
+         * @var int
+         */
+        public $maxOccurs;
+        protected $membersType = GroupOrSegment::class;
+        protected $membersDataType = 'array';
+        /**
+         * The minimum number of times this group must be present/repeated.
+         *
+         * @var int
+         */
+        public $minOccurs;
+        /**
+         * The name of this group. For example, "ORDER_DETAIL".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * True indicates that this is a choice group, meaning that only one of its
+         * segments can exist in a given message.
+         *
+         * @param bool $choice
+         */
+        public function setChoice($choice)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChoice()
+        {
+        }
+        /**
+         * The maximum number of times this group can be repeated. 0 or -1 means
+         * unbounded.
+         *
+         * @param int $maxOccurs
+         */
+        public function setMaxOccurs($maxOccurs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxOccurs()
+        {
+        }
+        /**
+         * Nested groups and/or segments.
+         *
+         * @param GroupOrSegment[] $members
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return GroupOrSegment[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * The minimum number of times this group must be present/repeated.
+         *
+         * @param int $minOccurs
+         */
+        public function setMinOccurs($minOccurs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinOccurs()
+        {
+        }
+        /**
+         * The name of this group. For example, "ORDER_DETAIL".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudHealthcare\SchemaGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChoice()
-    {
-    }
-    /**
-     * The maximum number of times this group can be repeated. 0 or -1 means
-     * unbounded.
-     *
-     * @param int $maxOccurs
-     */
-    public function setMaxOccurs($maxOccurs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxOccurs()
-    {
-    }
-    /**
-     * Nested groups and/or segments.
-     *
-     * @param GroupOrSegment[] $members
-     */
-    public function setMembers($members)
-    {
-    }
-    /**
-     * @return GroupOrSegment[]
-     */
-    public function getMembers()
-    {
-    }
-    /**
-     * The minimum number of times this group must be present/repeated.
-     *
-     * @param int $minOccurs
-     */
-    public function setMinOccurs($minOccurs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinOccurs()
-    {
-    }
-    /**
-     * The name of this group. For example, "ORDER_DETAIL".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudHealthcare_SchemaGroup extends \Google\Service\CloudHealthcare\SchemaGroup
     {
     }
 }

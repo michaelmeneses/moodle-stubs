@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1LookupApiHubInstanceResponse extends \Google\Model
-{
-    protected $apiHubInstanceType = GoogleCloudApihubV1ApiHubInstance::class;
-    protected $apiHubInstanceDataType = '';
-    /**
-     * API Hub instance for a project if it exists, empty otherwise.
-     *
-     * @param GoogleCloudApihubV1ApiHubInstance $apiHubInstance
-     */
-    public function setApiHubInstance(GoogleCloudApihubV1ApiHubInstance $apiHubInstance)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1LookupApiHubInstanceResponse extends \Google\Model
     {
+        protected $apiHubInstanceType = GoogleCloudApihubV1ApiHubInstance::class;
+        protected $apiHubInstanceDataType = '';
+        /**
+         * API Hub instance for a project if it exists, empty otherwise.
+         *
+         * @param GoogleCloudApihubV1ApiHubInstance $apiHubInstance
+         */
+        public function setApiHubInstance(GoogleCloudApihubV1ApiHubInstance $apiHubInstance)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiHubInstance
+         */
+        public function getApiHubInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApiHubInstance
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1LookupApiHubInstanceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiHubInstance()
+    class Google_Service_APIhub_GoogleCloudApihubV1LookupApiHubInstanceResponse extends \Google\Service\APIhub\GoogleCloudApihubV1LookupApiHubInstanceResponse
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SectionBreak extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    protected $sectionStyleType = SectionStyle::class;
-    protected $sectionStyleDataType = '';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A SectionBreak may have multiple insertion IDs
-     * if it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    /**
-     * The style of the section after this section break.
-     *
-     * @param SectionStyle $sectionStyle
-     */
-    public function setSectionStyle(SectionStyle $sectionStyle)
+namespace Google\Service\Docs {
+    class SectionBreak extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        protected $sectionStyleType = SectionStyle::class;
+        protected $sectionStyleDataType = '';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A SectionBreak may have multiple insertion IDs
+         * if it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        /**
+         * The style of the section after this section break.
+         *
+         * @param SectionStyle $sectionStyle
+         */
+        public function setSectionStyle(SectionStyle $sectionStyle)
+        {
+        }
+        /**
+         * @return SectionStyle
+         */
+        public function getSectionStyle()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A SectionBreak may have multiple insertion IDs
+         * if it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SectionStyle
+     * Runtime class alias of \Google\Service\Docs\SectionBreak registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSectionStyle()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A SectionBreak may have multiple insertion IDs
-     * if it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
+    class Google_Service_Docs_SectionBreak extends \Google\Service\Docs\SectionBreak
     {
     }
 }

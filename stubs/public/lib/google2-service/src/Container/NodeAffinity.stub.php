@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodeAffinity extends \Google\Collection
-{
-    /**
-     * Invalid or unspecified affinity operator.
-     */
-    public const OPERATOR_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
-    /**
-     * Affinity operator.
-     */
-    public const OPERATOR_IN = 'IN';
-    /**
-     * Anti-affinity operator.
-     */
-    public const OPERATOR_NOT_IN = 'NOT_IN';
-    protected $collection_key = 'values';
-    /**
-     * Key for NodeAffinity.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Operator for NodeAffinity.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Values for NodeAffinity.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Key for NodeAffinity.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Container {
+    class NodeAffinity extends \Google\Collection
     {
+        /**
+         * Invalid or unspecified affinity operator.
+         */
+        public const OPERATOR_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
+        /**
+         * Affinity operator.
+         */
+        public const OPERATOR_IN = 'IN';
+        /**
+         * Anti-affinity operator.
+         */
+        public const OPERATOR_NOT_IN = 'NOT_IN';
+        protected $collection_key = 'values';
+        /**
+         * Key for NodeAffinity.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Operator for NodeAffinity.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Values for NodeAffinity.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Key for NodeAffinity.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Operator for NodeAffinity.
+         *
+         * Accepted values: OPERATOR_UNSPECIFIED, IN, NOT_IN
+         *
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Values for NodeAffinity.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\NodeAffinity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Operator for NodeAffinity.
-     *
-     * Accepted values: OPERATOR_UNSPECIFIED, IN, NOT_IN
-     *
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Values for NodeAffinity.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Container_NodeAffinity extends \Google\Service\Container\NodeAffinity
     {
     }
 }

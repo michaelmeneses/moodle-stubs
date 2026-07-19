@@ -21,120 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity\Resource;
-
-/**
- * The "interceptEndpointGroupAssociations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networksecurityService = new Google\Service\NetworkSecurity(...);
- *   $interceptEndpointGroupAssociations = $networksecurityService->projects_locations_interceptEndpointGroupAssociations;
- *  </code>
- */
-class ProjectsLocationsInterceptEndpointGroupAssociations extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkSecurity\Resource {
+    use Google\Service\NetworkSecurity\InterceptEndpointGroupAssociation;
+    use Google\Service\NetworkSecurity\ListInterceptEndpointGroupAssociationsResponse;
+    use Google\Service\NetworkSecurity\Operation;
     /**
-     * Creates an association in a given project and location. See
-     * https://google.aip.dev/133. (interceptEndpointGroupAssociations.create)
-     *
-     * @param string $parent Required. The parent resource where this association
-     * will be created. Format: projects/{project}/locations/{location}
-     * @param InterceptEndpointGroupAssociation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string interceptEndpointGroupAssociationId Optional. The ID to use
-     * for the new association, which will become the final component of the
-     * endpoint group's resource name. If not provided, the server will generate a
-     * unique ID.
-     * @opt_param string requestId Optional. A unique identifier for this request.
-     * Must be a UUID4. This request is only idempotent if a `request_id` is
-     * provided. See https://google.aip.dev/155 for more details.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "interceptEndpointGroupAssociations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networksecurityService = new Google\Service\NetworkSecurity(...);
+     *   $interceptEndpointGroupAssociations = $networksecurityService->projects_locations_interceptEndpointGroupAssociations;
+     *  </code>
      */
-    public function create($parent, InterceptEndpointGroupAssociation $postBody, $optParams = [])
+    class ProjectsLocationsInterceptEndpointGroupAssociations extends \Google\Service\Resource
     {
+        /**
+         * Creates an association in a given project and location. See
+         * https://google.aip.dev/133. (interceptEndpointGroupAssociations.create)
+         *
+         * @param string $parent Required. The parent resource where this association
+         * will be created. Format: projects/{project}/locations/{location}
+         * @param InterceptEndpointGroupAssociation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string interceptEndpointGroupAssociationId Optional. The ID to use
+         * for the new association, which will become the final component of the
+         * endpoint group's resource name. If not provided, the server will generate a
+         * unique ID.
+         * @opt_param string requestId Optional. A unique identifier for this request.
+         * Must be a UUID4. This request is only idempotent if a `request_id` is
+         * provided. See https://google.aip.dev/155 for more details.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, InterceptEndpointGroupAssociation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an association. See https://google.aip.dev/135.
+         * (interceptEndpointGroupAssociations.delete)
+         *
+         * @param string $name Required. The association to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. A unique identifier for this request.
+         * Must be a UUID4. This request is only idempotent if a `request_id` is
+         * provided. See https://google.aip.dev/155 for more details.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a specific association. See https://google.aip.dev/131.
+         * (interceptEndpointGroupAssociations.get)
+         *
+         * @param string $name Required. The name of the association to retrieve.
+         * Format: projects/{project}/locations/{location}/interceptEndpointGroupAssocia
+         * tions/{intercept_endpoint_group_association}
+         * @param array $optParams Optional parameters.
+         * @return InterceptEndpointGroupAssociation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists associations in a given project and location. See
+         * https://google.aip.dev/132. (interceptEndpointGroupAssociations.listProjectsL
+         * ocationsInterceptEndpointGroupAssociations)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * associations. Example: `projects/123456789/locations/global`. See
+         * https://google.aip.dev/132 for more details.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression. See
+         * https://google.aip.dev/160#filtering for more details.
+         * @opt_param string orderBy Optional. Sort expression. See
+         * https://google.aip.dev/132#ordering for more details.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default. See https://google.aip.dev/158 for more details.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListInterceptEndpointGroups` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to
+         * `ListInterceptEndpointGroups` must match the call that provided the page
+         * token. See https://google.aip.dev/158 for more details.
+         * @return ListInterceptEndpointGroupAssociationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsInterceptEndpointGroupAssociations($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an association. See https://google.aip.dev/134.
+         * (interceptEndpointGroupAssociations.patch)
+         *
+         * @param string $name Immutable. Identifier. The resource name of this endpoint
+         * group association, for example:
+         * `projects/123456789/locations/global/interceptEndpointGroupAssociations/my-
+         * eg-association`. See https://google.aip.dev/122 for more details.
+         * @param InterceptEndpointGroupAssociation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. A unique identifier for this request.
+         * Must be a UUID4. This request is only idempotent if a `request_id` is
+         * provided. See https://google.aip.dev/155 for more details.
+         * @opt_param string updateMask Optional. The list of fields to update. Fields
+         * are specified relative to the association (e.g. `description`; *not*
+         * `intercept_endpoint_group_association.description`). See
+         * https://google.aip.dev/161 for more details.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, InterceptEndpointGroupAssociation $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an association. See https://google.aip.dev/135.
-     * (interceptEndpointGroupAssociations.delete)
-     *
-     * @param string $name Required. The association to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. A unique identifier for this request.
-     * Must be a UUID4. This request is only idempotent if a `request_id` is
-     * provided. See https://google.aip.dev/155 for more details.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkSecurity\Resource\ProjectsLocationsInterceptEndpointGroupAssociations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a specific association. See https://google.aip.dev/131.
-     * (interceptEndpointGroupAssociations.get)
-     *
-     * @param string $name Required. The name of the association to retrieve.
-     * Format: projects/{project}/locations/{location}/interceptEndpointGroupAssocia
-     * tions/{intercept_endpoint_group_association}
-     * @param array $optParams Optional parameters.
-     * @return InterceptEndpointGroupAssociation
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists associations in a given project and location. See
-     * https://google.aip.dev/132. (interceptEndpointGroupAssociations.listProjectsL
-     * ocationsInterceptEndpointGroupAssociations)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * associations. Example: `projects/123456789/locations/global`. See
-     * https://google.aip.dev/132 for more details.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression. See
-     * https://google.aip.dev/160#filtering for more details.
-     * @opt_param string orderBy Optional. Sort expression. See
-     * https://google.aip.dev/132#ordering for more details.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default. See https://google.aip.dev/158 for more details.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListInterceptEndpointGroups` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to
-     * `ListInterceptEndpointGroups` must match the call that provided the page
-     * token. See https://google.aip.dev/158 for more details.
-     * @return ListInterceptEndpointGroupAssociationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsInterceptEndpointGroupAssociations($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an association. See https://google.aip.dev/134.
-     * (interceptEndpointGroupAssociations.patch)
-     *
-     * @param string $name Immutable. Identifier. The resource name of this endpoint
-     * group association, for example:
-     * `projects/123456789/locations/global/interceptEndpointGroupAssociations/my-
-     * eg-association`. See https://google.aip.dev/122 for more details.
-     * @param InterceptEndpointGroupAssociation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. A unique identifier for this request.
-     * Must be a UUID4. This request is only idempotent if a `request_id` is
-     * provided. See https://google.aip.dev/155 for more details.
-     * @opt_param string updateMask Optional. The list of fields to update. Fields
-     * are specified relative to the association (e.g. `description`; *not*
-     * `intercept_endpoint_group_association.description`). See
-     * https://google.aip.dev/161 for more details.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, InterceptEndpointGroupAssociation $postBody, $optParams = [])
+    class Google_Service_NetworkSecurity_Resource_ProjectsLocationsInterceptEndpointGroupAssociations extends \Google\Service\NetworkSecurity\Resource\ProjectsLocationsInterceptEndpointGroupAssociations
     {
     }
 }

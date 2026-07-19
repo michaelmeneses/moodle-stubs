@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaEndpoint extends \Google\Model
-{
-    /**
-     * Domain name (e.g. ads.google.com).
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Domain name (e.g. ads.google.com).
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaEndpoint extends \Google\Model
     {
+        /**
+         * Domain name (e.g. ads.google.com).
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Domain name (e.g. ads.google.com).
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaEndpoint extends \Google\Service\ChecksService\GoogleChecksReportV1alphaEndpoint
     {
     }
 }

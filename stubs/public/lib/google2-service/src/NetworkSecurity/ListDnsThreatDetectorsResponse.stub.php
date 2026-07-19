@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListDnsThreatDetectorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $dnsThreatDetectorsType = DnsThreatDetector::class;
-    protected $dnsThreatDetectorsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token`, to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unordered list. Unreachable `DnsThreatDetector` resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of DnsThreatDetector resources.
-     *
-     * @param DnsThreatDetector[] $dnsThreatDetectors
-     */
-    public function setDnsThreatDetectors($dnsThreatDetectors)
+namespace Google\Service\NetworkSecurity {
+    class ListDnsThreatDetectorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $dnsThreatDetectorsType = DnsThreatDetector::class;
+        protected $dnsThreatDetectorsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token`, to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unordered list. Unreachable `DnsThreatDetector` resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of DnsThreatDetector resources.
+         *
+         * @param DnsThreatDetector[] $dnsThreatDetectors
+         */
+        public function setDnsThreatDetectors($dnsThreatDetectors)
+        {
+        }
+        /**
+         * @return DnsThreatDetector[]
+         */
+        public function getDnsThreatDetectors()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token`, to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unordered list. Unreachable `DnsThreatDetector` resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsThreatDetector[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListDnsThreatDetectorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsThreatDetectors()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token`, to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unordered list. Unreachable `DnsThreatDetector` resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkSecurity_ListDnsThreatDetectorsResponse extends \Google\Service\NetworkSecurity\ListDnsThreatDetectorsResponse
     {
     }
 }

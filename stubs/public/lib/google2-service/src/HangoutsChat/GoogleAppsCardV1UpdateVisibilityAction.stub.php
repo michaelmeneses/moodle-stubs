@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1UpdateVisibilityAction extends \Google\Model
-{
-    /**
-     * Unspecified visibility. Do not use.
-     */
-    public const VISIBILITY_VISIBILITY_UNSPECIFIED = 'VISIBILITY_UNSPECIFIED';
-    /**
-     * The UI element is visible.
-     */
-    public const VISIBILITY_VISIBLE = 'VISIBLE';
-    /**
-     * The UI element is hidden.
-     */
-    public const VISIBILITY_HIDDEN = 'HIDDEN';
-    /**
-     * The new visibility.
-     *
-     * @var string
-     */
-    public $visibility;
-    /**
-     * The new visibility.
-     *
-     * Accepted values: VISIBILITY_UNSPECIFIED, VISIBLE, HIDDEN
-     *
-     * @param self::VISIBILITY_* $visibility
-     */
-    public function setVisibility($visibility)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1UpdateVisibilityAction extends \Google\Model
     {
+        /**
+         * Unspecified visibility. Do not use.
+         */
+        public const VISIBILITY_VISIBILITY_UNSPECIFIED = 'VISIBILITY_UNSPECIFIED';
+        /**
+         * The UI element is visible.
+         */
+        public const VISIBILITY_VISIBLE = 'VISIBLE';
+        /**
+         * The UI element is hidden.
+         */
+        public const VISIBILITY_HIDDEN = 'HIDDEN';
+        /**
+         * The new visibility.
+         *
+         * @var string
+         */
+        public $visibility;
+        /**
+         * The new visibility.
+         *
+         * Accepted values: VISIBILITY_UNSPECIFIED, VISIBLE, HIDDEN
+         *
+         * @param self::VISIBILITY_* $visibility
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return self::VISIBILITY_*
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::VISIBILITY_*
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1UpdateVisibilityAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVisibility()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1UpdateVisibilityAction extends \Google\Service\HangoutsChat\GoogleAppsCardV1UpdateVisibilityAction
     {
     }
 }

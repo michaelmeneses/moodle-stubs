@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessMetric extends \Google\Model
-{
-    /**
-     * The API name of the metric. See [Data Access Schema](https://developers.goo
-     * gle.com/analytics/devguides/config/admin/v1/access-api-schema) for the list
-     * of metrics supported in this API. Metrics are referenced by name in
-     * `metricFilter` & `orderBys`.
-     *
-     * @var string
-     */
-    public $metricName;
-    /**
-     * The API name of the metric. See [Data Access Schema](https://developers.goo
-     * gle.com/analytics/devguides/config/admin/v1/access-api-schema) for the list
-     * of metrics supported in this API. Metrics are referenced by name in
-     * `metricFilter` & `orderBys`.
-     *
-     * @param string $metricName
-     */
-    public function setMetricName($metricName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessMetric extends \Google\Model
     {
+        /**
+         * The API name of the metric. See [Data Access Schema](https://developers.goo
+         * gle.com/analytics/devguides/config/admin/v1/access-api-schema) for the list
+         * of metrics supported in this API. Metrics are referenced by name in
+         * `metricFilter` & `orderBys`.
+         *
+         * @var string
+         */
+        public $metricName;
+        /**
+         * The API name of the metric. See [Data Access Schema](https://developers.goo
+         * gle.com/analytics/devguides/config/admin/v1/access-api-schema) for the list
+         * of metrics supported in this API. Metrics are referenced by name in
+         * `metricFilter` & `orderBys`.
+         *
+         * @param string $metricName
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessMetric extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessMetric
     {
     }
 }

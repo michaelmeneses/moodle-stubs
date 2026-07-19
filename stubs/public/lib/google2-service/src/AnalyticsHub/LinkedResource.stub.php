@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class LinkedResource extends \Google\Model
-{
-    /**
-     * Output only. Name of the linked dataset, e.g.
-     * projects/subscriberproject/datasets/linked_dataset
-     *
-     * @var string
-     */
-    public $linkedDataset;
-    /**
-     * Output only. Name of the Pub/Sub subscription, e.g.
-     * projects/subscriberproject/subscriptions/subscriptions/sub_id
-     *
-     * @var string
-     */
-    public $linkedPubsubSubscription;
-    /**
-     * Output only. Listing for which linked resource is created.
-     *
-     * @var string
-     */
-    public $listing;
-    /**
-     * Output only. Name of the linked dataset, e.g.
-     * projects/subscriberproject/datasets/linked_dataset
-     *
-     * @param string $linkedDataset
-     */
-    public function setLinkedDataset($linkedDataset)
+namespace Google\Service\AnalyticsHub {
+    class LinkedResource extends \Google\Model
     {
+        /**
+         * Output only. Name of the linked dataset, e.g.
+         * projects/subscriberproject/datasets/linked_dataset
+         *
+         * @var string
+         */
+        public $linkedDataset;
+        /**
+         * Output only. Name of the Pub/Sub subscription, e.g.
+         * projects/subscriberproject/subscriptions/subscriptions/sub_id
+         *
+         * @var string
+         */
+        public $linkedPubsubSubscription;
+        /**
+         * Output only. Listing for which linked resource is created.
+         *
+         * @var string
+         */
+        public $listing;
+        /**
+         * Output only. Name of the linked dataset, e.g.
+         * projects/subscriberproject/datasets/linked_dataset
+         *
+         * @param string $linkedDataset
+         */
+        public function setLinkedDataset($linkedDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedDataset()
+        {
+        }
+        /**
+         * Output only. Name of the Pub/Sub subscription, e.g.
+         * projects/subscriberproject/subscriptions/subscriptions/sub_id
+         *
+         * @param string $linkedPubsubSubscription
+         */
+        public function setLinkedPubsubSubscription($linkedPubsubSubscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedPubsubSubscription()
+        {
+        }
+        /**
+         * Output only. Listing for which linked resource is created.
+         *
+         * @param string $listing
+         */
+        public function setListing($listing)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\LinkedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedDataset()
-    {
-    }
-    /**
-     * Output only. Name of the Pub/Sub subscription, e.g.
-     * projects/subscriberproject/subscriptions/subscriptions/sub_id
-     *
-     * @param string $linkedPubsubSubscription
-     */
-    public function setLinkedPubsubSubscription($linkedPubsubSubscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkedPubsubSubscription()
-    {
-    }
-    /**
-     * Output only. Listing for which linked resource is created.
-     *
-     * @param string $listing
-     */
-    public function setListing($listing)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getListing()
+    class Google_Service_AnalyticsHub_LinkedResource extends \Google\Service\AnalyticsHub\LinkedResource
     {
     }
 }

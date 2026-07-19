@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RoutersScopedList extends \Google\Collection
-{
-    protected $collection_key = 'routers';
-    protected $routersType = Router::class;
-    protected $routersDataType = 'array';
-    protected $warningType = RoutersScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of routers contained in this scope.
-     *
-     * @param Router[] $routers
-     */
-    public function setRouters($routers)
+namespace Google\Service\Compute {
+    class RoutersScopedList extends \Google\Collection
     {
+        protected $collection_key = 'routers';
+        protected $routersType = Router::class;
+        protected $routersDataType = 'array';
+        protected $warningType = RoutersScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of routers contained in this scope.
+         *
+         * @param Router[] $routers
+         */
+        public function setRouters($routers)
+        {
+        }
+        /**
+         * @return Router[]
+         */
+        public function getRouters()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of routers when the list is
+         * empty.
+         *
+         * @param RoutersScopedListWarning $warning
+         */
+        public function setWarning(RoutersScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return RoutersScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Router[]
+     * Runtime class alias of \Google\Service\Compute\RoutersScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRouters()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of routers when the list is
-     * empty.
-     *
-     * @param RoutersScopedListWarning $warning
-     */
-    public function setWarning(RoutersScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return RoutersScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_RoutersScopedList extends \Google\Service\Compute\RoutersScopedList
     {
     }
 }

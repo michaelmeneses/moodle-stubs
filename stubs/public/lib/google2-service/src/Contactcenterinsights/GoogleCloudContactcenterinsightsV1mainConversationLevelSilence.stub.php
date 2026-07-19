@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainConversationLevelSilence extends \Google\Model
-{
-    /**
-     * Amount of time calculated to be in silence.
-     *
-     * @var string
-     */
-    public $silenceDuration;
-    /**
-     * Percentage of the total conversation spent in silence.
-     *
-     * @var float
-     */
-    public $silencePercentage;
-    /**
-     * Amount of time calculated to be in silence.
-     *
-     * @param string $silenceDuration
-     */
-    public function setSilenceDuration($silenceDuration)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainConversationLevelSilence extends \Google\Model
     {
+        /**
+         * Amount of time calculated to be in silence.
+         *
+         * @var string
+         */
+        public $silenceDuration;
+        /**
+         * Percentage of the total conversation spent in silence.
+         *
+         * @var float
+         */
+        public $silencePercentage;
+        /**
+         * Amount of time calculated to be in silence.
+         *
+         * @param string $silenceDuration
+         */
+        public function setSilenceDuration($silenceDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSilenceDuration()
+        {
+        }
+        /**
+         * Percentage of the total conversation spent in silence.
+         *
+         * @param float $silencePercentage
+         */
+        public function setSilencePercentage($silencePercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSilencePercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainConversationLevelSilence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSilenceDuration()
-    {
-    }
-    /**
-     * Percentage of the total conversation spent in silence.
-     *
-     * @param float $silencePercentage
-     */
-    public function setSilencePercentage($silencePercentage)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSilencePercentage()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainConversationLevelSilence extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainConversationLevelSilence
     {
     }
 }

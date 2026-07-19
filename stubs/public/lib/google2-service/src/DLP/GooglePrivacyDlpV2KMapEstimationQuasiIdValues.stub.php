@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KMapEstimationQuasiIdValues extends \Google\Collection
-{
-    protected $collection_key = 'quasiIdsValues';
-    /**
-     * The estimated anonymity for these quasi-identifier values.
-     *
-     * @var string
-     */
-    public $estimatedAnonymity;
-    protected $quasiIdsValuesType = GooglePrivacyDlpV2Value::class;
-    protected $quasiIdsValuesDataType = 'array';
-    /**
-     * The estimated anonymity for these quasi-identifier values.
-     *
-     * @param string $estimatedAnonymity
-     */
-    public function setEstimatedAnonymity($estimatedAnonymity)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KMapEstimationQuasiIdValues extends \Google\Collection
     {
+        protected $collection_key = 'quasiIdsValues';
+        /**
+         * The estimated anonymity for these quasi-identifier values.
+         *
+         * @var string
+         */
+        public $estimatedAnonymity;
+        protected $quasiIdsValuesType = GooglePrivacyDlpV2Value::class;
+        protected $quasiIdsValuesDataType = 'array';
+        /**
+         * The estimated anonymity for these quasi-identifier values.
+         *
+         * @param string $estimatedAnonymity
+         */
+        public function setEstimatedAnonymity($estimatedAnonymity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedAnonymity()
+        {
+        }
+        /**
+         * The quasi-identifier values.
+         *
+         * @param GooglePrivacyDlpV2Value[] $quasiIdsValues
+         */
+        public function setQuasiIdsValues($quasiIdsValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value[]
+         */
+        public function getQuasiIdsValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KMapEstimationQuasiIdValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedAnonymity()
-    {
-    }
-    /**
-     * The quasi-identifier values.
-     *
-     * @param GooglePrivacyDlpV2Value[] $quasiIdsValues
-     */
-    public function setQuasiIdsValues($quasiIdsValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value[]
-     */
-    public function getQuasiIdsValues()
+    class Google_Service_DLP_GooglePrivacyDlpV2KMapEstimationQuasiIdValues extends \Google\Service\DLP\GooglePrivacyDlpV2KMapEstimationQuasiIdValues
     {
     }
 }

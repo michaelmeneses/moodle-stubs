@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class AddAclEntryResponse extends \Google\Model
-{
-    protected $aclType = Acl::class;
-    protected $aclDataType = '';
-    /**
-     * Whether the acl was created as a result of adding the acl entry.
-     *
-     * @var bool
-     */
-    public $aclCreated;
-    /**
-     * The updated acl.
-     *
-     * @param Acl $acl
-     */
-    public function setAcl(Acl $acl)
+namespace Google\Service\ManagedKafka {
+    class AddAclEntryResponse extends \Google\Model
     {
+        protected $aclType = Acl::class;
+        protected $aclDataType = '';
+        /**
+         * Whether the acl was created as a result of adding the acl entry.
+         *
+         * @var bool
+         */
+        public $aclCreated;
+        /**
+         * The updated acl.
+         *
+         * @param Acl $acl
+         */
+        public function setAcl(Acl $acl)
+        {
+        }
+        /**
+         * @return Acl
+         */
+        public function getAcl()
+        {
+        }
+        /**
+         * Whether the acl was created as a result of adding the acl entry.
+         *
+         * @param bool $aclCreated
+         */
+        public function setAclCreated($aclCreated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAclCreated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Acl
+     * Runtime class alias of \Google\Service\ManagedKafka\AddAclEntryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcl()
-    {
-    }
-    /**
-     * Whether the acl was created as a result of adding the acl entry.
-     *
-     * @param bool $aclCreated
-     */
-    public function setAclCreated($aclCreated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAclCreated()
+    class Google_Service_ManagedKafka_AddAclEntryResponse extends \Google\Service\ManagedKafka\AddAclEntryResponse
     {
     }
 }

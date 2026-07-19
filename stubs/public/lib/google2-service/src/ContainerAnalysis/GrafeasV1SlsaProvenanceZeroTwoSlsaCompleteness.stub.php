@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $environment;
-    /**
-     * @var bool
-     */
-    public $materials;
-    /**
-     * @var bool
-     */
-    public $parameters;
-    /**
-     * @param bool $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $environment;
+        /**
+         * @var bool
+         */
+        public $materials;
+        /**
+         * @var bool
+         */
+        public $parameters;
+        /**
+         * @param bool $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param bool $materials
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * @param bool $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param bool $materials
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMaterials()
-    {
-    }
-    /**
-     * @param bool $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getParameters()
+    class Google_Service_ContainerAnalysis_GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness extends \Google\Service\ContainerAnalysis\GrafeasV1SlsaProvenanceZeroTwoSlsaCompleteness
     {
     }
 }

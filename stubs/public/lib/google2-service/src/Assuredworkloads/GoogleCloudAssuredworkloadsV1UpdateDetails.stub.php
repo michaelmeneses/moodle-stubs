@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1UpdateDetails extends \Google\Model
-{
-    protected $orgPolicyUpdateType = GoogleCloudAssuredworkloadsV1OrgPolicyUpdate::class;
-    protected $orgPolicyUpdateDataType = '';
-    /**
-     * Update to one org policy, e.g. gcp.resourceLocation.
-     *
-     * @param GoogleCloudAssuredworkloadsV1OrgPolicyUpdate $orgPolicyUpdate
-     */
-    public function setOrgPolicyUpdate(GoogleCloudAssuredworkloadsV1OrgPolicyUpdate $orgPolicyUpdate)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1UpdateDetails extends \Google\Model
     {
+        protected $orgPolicyUpdateType = GoogleCloudAssuredworkloadsV1OrgPolicyUpdate::class;
+        protected $orgPolicyUpdateDataType = '';
+        /**
+         * Update to one org policy, e.g. gcp.resourceLocation.
+         *
+         * @param GoogleCloudAssuredworkloadsV1OrgPolicyUpdate $orgPolicyUpdate
+         */
+        public function setOrgPolicyUpdate(GoogleCloudAssuredworkloadsV1OrgPolicyUpdate $orgPolicyUpdate)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1OrgPolicyUpdate
+         */
+        public function getOrgPolicyUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1OrgPolicyUpdate
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1UpdateDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrgPolicyUpdate()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1UpdateDetails extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1UpdateDetails
     {
     }
 }

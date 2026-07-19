@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class FetchLinkableGitRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'linkableGitRepositories';
-    protected $linkableGitRepositoriesType = LinkableGitRepository::class;
-    protected $linkableGitRepositoriesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The git repositories that can be linked to the connection.
-     *
-     * @param LinkableGitRepository[] $linkableGitRepositories
-     */
-    public function setLinkableGitRepositories($linkableGitRepositories)
+namespace Google\Service\DeveloperConnect {
+    class FetchLinkableGitRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'linkableGitRepositories';
+        protected $linkableGitRepositoriesType = LinkableGitRepository::class;
+        protected $linkableGitRepositoriesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The git repositories that can be linked to the connection.
+         *
+         * @param LinkableGitRepository[] $linkableGitRepositories
+         */
+        public function setLinkableGitRepositories($linkableGitRepositories)
+        {
+        }
+        /**
+         * @return LinkableGitRepository[]
+         */
+        public function getLinkableGitRepositories()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LinkableGitRepository[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\FetchLinkableGitRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkableGitRepositories()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DeveloperConnect_FetchLinkableGitRepositoriesResponse extends \Google\Service\DeveloperConnect\FetchLinkableGitRepositoriesResponse
     {
     }
 }

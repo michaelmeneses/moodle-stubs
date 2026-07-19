@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class GoogleCloudHealthcareV1FhirGcsDestination extends \Google\Model
-{
-    /**
-     * URI for a Cloud Storage directory where result files should be written, in
-     * the format of `gs://{bucket-id}/{path/to/destination/dir}`. If there is no
-     * trailing slash, the service appends one when composing the object path. The
-     * user is responsible for creating the Cloud Storage bucket referenced in
-     * `uri_prefix`.
-     *
-     * @var string
-     */
-    public $uriPrefix;
-    /**
-     * URI for a Cloud Storage directory where result files should be written, in
-     * the format of `gs://{bucket-id}/{path/to/destination/dir}`. If there is no
-     * trailing slash, the service appends one when composing the object path. The
-     * user is responsible for creating the Cloud Storage bucket referenced in
-     * `uri_prefix`.
-     *
-     * @param string $uriPrefix
-     */
-    public function setUriPrefix($uriPrefix)
+namespace Google\Service\CloudHealthcare {
+    class GoogleCloudHealthcareV1FhirGcsDestination extends \Google\Model
     {
+        /**
+         * URI for a Cloud Storage directory where result files should be written, in
+         * the format of `gs://{bucket-id}/{path/to/destination/dir}`. If there is no
+         * trailing slash, the service appends one when composing the object path. The
+         * user is responsible for creating the Cloud Storage bucket referenced in
+         * `uri_prefix`.
+         *
+         * @var string
+         */
+        public $uriPrefix;
+        /**
+         * URI for a Cloud Storage directory where result files should be written, in
+         * the format of `gs://{bucket-id}/{path/to/destination/dir}`. If there is no
+         * trailing slash, the service appends one when composing the object path. The
+         * user is responsible for creating the Cloud Storage bucket referenced in
+         * `uri_prefix`.
+         *
+         * @param string $uriPrefix
+         */
+        public function setUriPrefix($uriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\GoogleCloudHealthcareV1FhirGcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUriPrefix()
+    class Google_Service_CloudHealthcare_GoogleCloudHealthcareV1FhirGcsDestination extends \Google\Service\CloudHealthcare\GoogleCloudHealthcareV1FhirGcsDestination
     {
     }
 }

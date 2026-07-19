@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class OAuthCredential extends \Google\Model
-{
-    /**
-     * Required. A SecretManager resource containing the OAuth token that
-     * authorizes the connection. Format: `projects/secrets/versions` or
-     * `projects/locations/secrets/versions` (if regional secrets are supported in
-     * that location).
-     *
-     * @var string
-     */
-    public $oauthTokenSecretVersion;
-    /**
-     * Output only. The username associated with this token.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. A SecretManager resource containing the OAuth token that
-     * authorizes the connection. Format: `projects/secrets/versions` or
-     * `projects/locations/secrets/versions` (if regional secrets are supported in
-     * that location).
-     *
-     * @param string $oauthTokenSecretVersion
-     */
-    public function setOauthTokenSecretVersion($oauthTokenSecretVersion)
+namespace Google\Service\DeveloperConnect {
+    class OAuthCredential extends \Google\Model
     {
+        /**
+         * Required. A SecretManager resource containing the OAuth token that
+         * authorizes the connection. Format: `projects/secrets/versions` or
+         * `projects/locations/secrets/versions` (if regional secrets are supported in
+         * that location).
+         *
+         * @var string
+         */
+        public $oauthTokenSecretVersion;
+        /**
+         * Output only. The username associated with this token.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. A SecretManager resource containing the OAuth token that
+         * authorizes the connection. Format: `projects/secrets/versions` or
+         * `projects/locations/secrets/versions` (if regional secrets are supported in
+         * that location).
+         *
+         * @param string $oauthTokenSecretVersion
+         */
+        public function setOauthTokenSecretVersion($oauthTokenSecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthTokenSecretVersion()
+        {
+        }
+        /**
+         * Output only. The username associated with this token.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\OAuthCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOauthTokenSecretVersion()
-    {
-    }
-    /**
-     * Output only. The username associated with this token.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_DeveloperConnect_OAuthCredential extends \Google\Service\DeveloperConnect\OAuthCredential
     {
     }
 }

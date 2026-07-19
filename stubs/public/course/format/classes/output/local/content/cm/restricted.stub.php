@@ -29,6 +29,18 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use cm_info;
+use context_course;
+use core\output\named_templatable;
+use core_availability\info_module;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\cm;
+use core_courseformat\output\local\courseformat_named_templatable;
+use core_courseformat\output\section_renderer;
+use renderable;
+use renderer_base;
+use section_info;
+use stdClass;
 /**
  * Base class to render a restricted course module.
  *

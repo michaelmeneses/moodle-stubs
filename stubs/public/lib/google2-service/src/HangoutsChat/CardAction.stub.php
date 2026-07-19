@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class CardAction extends \Google\Model
-{
-    /**
-     * The label used to be displayed in the action menu item.
-     *
-     * @var string
-     */
-    public $actionLabel;
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * The label used to be displayed in the action menu item.
-     *
-     * @param string $actionLabel
-     */
-    public function setActionLabel($actionLabel)
+namespace Google\Service\HangoutsChat {
+    class CardAction extends \Google\Model
     {
+        /**
+         * The label used to be displayed in the action menu item.
+         *
+         * @var string
+         */
+        public $actionLabel;
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * The label used to be displayed in the action menu item.
+         *
+         * @param string $actionLabel
+         */
+        public function setActionLabel($actionLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionLabel()
+        {
+        }
+        /**
+         * The onclick action for this action item.
+         *
+         * @param OnClick $onClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\CardAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionLabel()
-    {
-    }
-    /**
-     * The onclick action for this action item.
-     *
-     * @param OnClick $onClick
-     */
-    public function setOnClick(OnClick $onClick)
-    {
-    }
-    /**
-     * @return OnClick
-     */
-    public function getOnClick()
+    class Google_Service_HangoutsChat_CardAction extends \Google\Service\HangoutsChat\CardAction
     {
     }
 }

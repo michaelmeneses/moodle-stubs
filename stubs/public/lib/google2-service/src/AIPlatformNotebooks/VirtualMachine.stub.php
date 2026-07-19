@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class VirtualMachine extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * @var string
-     */
-    public $instanceName;
-    protected $virtualMachineConfigType = VirtualMachineConfig::class;
-    protected $virtualMachineConfigDataType = '';
-    public $virtualMachineConfig;
-    /**
-     * @param string
-     */
-    public function setInstanceId($instanceId)
+namespace Google\Service\AIPlatformNotebooks {
+    class VirtualMachine extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * @var string
+         */
+        public $instanceName;
+        protected $virtualMachineConfigType = VirtualMachineConfig::class;
+        protected $virtualMachineConfigDataType = '';
+        public $virtualMachineConfig;
+        /**
+         * @param string
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstanceName($instanceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceName()
+        {
+        }
+        /**
+         * @param VirtualMachineConfig
+         */
+        public function setVirtualMachineConfig(VirtualMachineConfig $virtualMachineConfig)
+        {
+        }
+        /**
+         * @return VirtualMachineConfig
+         */
+        public function getVirtualMachineConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\VirtualMachine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstanceName($instanceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceName()
-    {
-    }
-    /**
-     * @param VirtualMachineConfig
-     */
-    public function setVirtualMachineConfig(VirtualMachineConfig $virtualMachineConfig)
-    {
-    }
-    /**
-     * @return VirtualMachineConfig
-     */
-    public function getVirtualMachineConfig()
+    class Google_Service_AIPlatformNotebooks_VirtualMachine extends \Google\Service\AIPlatformNotebooks\VirtualMachine
     {
     }
 }

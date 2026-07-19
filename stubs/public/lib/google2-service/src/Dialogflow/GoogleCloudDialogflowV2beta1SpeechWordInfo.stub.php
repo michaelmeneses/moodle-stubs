@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SpeechWordInfo extends \Google\Model
-{
-    /**
-     * The Speech confidence between 0.0 and 1.0 for this word. A higher number
-     * indicates an estimated greater likelihood that the recognized word is
-     * correct. The default of 0.0 is a sentinel value indicating that confidence
-     * was not set. This field is not guaranteed to be fully stable over time for
-     * the same audio input. Users should also not rely on it to always be
-     * provided.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Time offset relative to the beginning of the audio that corresponds to the
-     * end of the spoken word. This is an experimental feature and the accuracy of
-     * the time offset can vary.
-     *
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * Time offset relative to the beginning of the audio that corresponds to the
-     * start of the spoken word. This is an experimental feature and the accuracy
-     * of the time offset can vary.
-     *
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * The word this info is for.
-     *
-     * @var string
-     */
-    public $word;
-    /**
-     * The Speech confidence between 0.0 and 1.0 for this word. A higher number
-     * indicates an estimated greater likelihood that the recognized word is
-     * correct. The default of 0.0 is a sentinel value indicating that confidence
-     * was not set. This field is not guaranteed to be fully stable over time for
-     * the same audio input. Users should also not rely on it to always be
-     * provided.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SpeechWordInfo extends \Google\Model
     {
+        /**
+         * The Speech confidence between 0.0 and 1.0 for this word. A higher number
+         * indicates an estimated greater likelihood that the recognized word is
+         * correct. The default of 0.0 is a sentinel value indicating that confidence
+         * was not set. This field is not guaranteed to be fully stable over time for
+         * the same audio input. Users should also not rely on it to always be
+         * provided.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Time offset relative to the beginning of the audio that corresponds to the
+         * end of the spoken word. This is an experimental feature and the accuracy of
+         * the time offset can vary.
+         *
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * Time offset relative to the beginning of the audio that corresponds to the
+         * start of the spoken word. This is an experimental feature and the accuracy
+         * of the time offset can vary.
+         *
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * The word this info is for.
+         *
+         * @var string
+         */
+        public $word;
+        /**
+         * The Speech confidence between 0.0 and 1.0 for this word. A higher number
+         * indicates an estimated greater likelihood that the recognized word is
+         * correct. The default of 0.0 is a sentinel value indicating that confidence
+         * was not set. This field is not guaranteed to be fully stable over time for
+         * the same audio input. Users should also not rely on it to always be
+         * provided.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Time offset relative to the beginning of the audio that corresponds to the
+         * end of the spoken word. This is an experimental feature and the accuracy of
+         * the time offset can vary.
+         *
+         * @param string $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * Time offset relative to the beginning of the audio that corresponds to the
+         * start of the spoken word. This is an experimental feature and the accuracy
+         * of the time offset can vary.
+         *
+         * @param string $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * The word this info is for.
+         *
+         * @param string $word
+         */
+        public function setWord($word)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SpeechWordInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Time offset relative to the beginning of the audio that corresponds to the
-     * end of the spoken word. This is an experimental feature and the accuracy of
-     * the time offset can vary.
-     *
-     * @param string $endOffset
-     */
-    public function setEndOffset($endOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * Time offset relative to the beginning of the audio that corresponds to the
-     * start of the spoken word. This is an experimental feature and the accuracy
-     * of the time offset can vary.
-     *
-     * @param string $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * The word this info is for.
-     *
-     * @param string $word
-     */
-    public function setWord($word)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWord()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SpeechWordInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SpeechWordInfo
     {
     }
 }

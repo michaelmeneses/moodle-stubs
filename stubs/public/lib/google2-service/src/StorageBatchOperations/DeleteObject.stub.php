@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class DeleteObject extends \Google\Model
-{
-    /**
-     * Required. Controls deletion behavior when versioning is enabled for the
-     * object's bucket. If true both live and noncurrent objects will be
-     * permanently deleted. Otherwise live objects in versioned buckets will
-     * become noncurrent and objects that were already noncurrent will be skipped.
-     * This setting doesn't have any impact on the Soft Delete feature. All
-     * objects deleted by this service can be be restored for the duration of the
-     * Soft Delete retention duration if enabled. If enabled and the manifest
-     * doesn't specify an object's generation, a GetObjectMetadata call (a Class B
-     * operation) will be made to determine the live object generation.
-     *
-     * @var bool
-     */
-    public $permanentObjectDeletionEnabled;
-    /**
-     * Required. Controls deletion behavior when versioning is enabled for the
-     * object's bucket. If true both live and noncurrent objects will be
-     * permanently deleted. Otherwise live objects in versioned buckets will
-     * become noncurrent and objects that were already noncurrent will be skipped.
-     * This setting doesn't have any impact on the Soft Delete feature. All
-     * objects deleted by this service can be be restored for the duration of the
-     * Soft Delete retention duration if enabled. If enabled and the manifest
-     * doesn't specify an object's generation, a GetObjectMetadata call (a Class B
-     * operation) will be made to determine the live object generation.
-     *
-     * @param bool $permanentObjectDeletionEnabled
-     */
-    public function setPermanentObjectDeletionEnabled($permanentObjectDeletionEnabled)
+namespace Google\Service\StorageBatchOperations {
+    class DeleteObject extends \Google\Model
     {
+        /**
+         * Required. Controls deletion behavior when versioning is enabled for the
+         * object's bucket. If true both live and noncurrent objects will be
+         * permanently deleted. Otherwise live objects in versioned buckets will
+         * become noncurrent and objects that were already noncurrent will be skipped.
+         * This setting doesn't have any impact on the Soft Delete feature. All
+         * objects deleted by this service can be be restored for the duration of the
+         * Soft Delete retention duration if enabled. If enabled and the manifest
+         * doesn't specify an object's generation, a GetObjectMetadata call (a Class B
+         * operation) will be made to determine the live object generation.
+         *
+         * @var bool
+         */
+        public $permanentObjectDeletionEnabled;
+        /**
+         * Required. Controls deletion behavior when versioning is enabled for the
+         * object's bucket. If true both live and noncurrent objects will be
+         * permanently deleted. Otherwise live objects in versioned buckets will
+         * become noncurrent and objects that were already noncurrent will be skipped.
+         * This setting doesn't have any impact on the Soft Delete feature. All
+         * objects deleted by this service can be be restored for the duration of the
+         * Soft Delete retention duration if enabled. If enabled and the manifest
+         * doesn't specify an object's generation, a GetObjectMetadata call (a Class B
+         * operation) will be made to determine the live object generation.
+         *
+         * @param bool $permanentObjectDeletionEnabled
+         */
+        public function setPermanentObjectDeletionEnabled($permanentObjectDeletionEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPermanentObjectDeletionEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\StorageBatchOperations\DeleteObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermanentObjectDeletionEnabled()
+    class Google_Service_StorageBatchOperations_DeleteObject extends \Google\Service\StorageBatchOperations\DeleteObject
     {
     }
 }

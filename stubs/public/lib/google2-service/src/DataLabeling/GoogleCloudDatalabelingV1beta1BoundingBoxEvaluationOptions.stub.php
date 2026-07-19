@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends \Google\Model
-{
-    /**
-     * Minimum [intersection-over-union (IOU)](/vision/automl/object-
-     * detection/docs/evaluate#intersection-over-union) required for 2 bounding
-     * boxes to be considered a match. This must be a number between 0 and 1.
-     *
-     * @var float
-     */
-    public $iouThreshold;
-    /**
-     * Minimum [intersection-over-union (IOU)](/vision/automl/object-
-     * detection/docs/evaluate#intersection-over-union) required for 2 bounding
-     * boxes to be considered a match. This must be a number between 0 and 1.
-     *
-     * @param float $iouThreshold
-     */
-    public function setIouThreshold($iouThreshold)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends \Google\Model
     {
+        /**
+         * Minimum [intersection-over-union (IOU)](/vision/automl/object-
+         * detection/docs/evaluate#intersection-over-union) required for 2 bounding
+         * boxes to be considered a match. This must be a number between 0 and 1.
+         *
+         * @var float
+         */
+        public $iouThreshold;
+        /**
+         * Minimum [intersection-over-union (IOU)](/vision/automl/object-
+         * detection/docs/evaluate#intersection-over-union) required for 2 bounding
+         * boxes to be considered a match. This must be a number between 0 and 1.
+         *
+         * @param float $iouThreshold
+         */
+        public function setIouThreshold($iouThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getIouThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIouThreshold()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions
     {
     }
 }

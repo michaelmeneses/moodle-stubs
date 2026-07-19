@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceResponse extends \Google\Model
-{
-    /**
-     * Migrated Dataset's resource name.
-     *
-     * @var string
-     */
-    public $dataset;
-    protected $migratableResourceType = GoogleCloudAiplatformV1MigratableResource::class;
-    protected $migratableResourceDataType = '';
-    /**
-     * Migrated Model's resource name.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Migrated Dataset's resource name.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceResponse extends \Google\Model
     {
+        /**
+         * Migrated Dataset's resource name.
+         *
+         * @var string
+         */
+        public $dataset;
+        protected $migratableResourceType = GoogleCloudAiplatformV1MigratableResource::class;
+        protected $migratableResourceDataType = '';
+        /**
+         * Migrated Model's resource name.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Migrated Dataset's resource name.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Before migration, the identifier in ml.googleapis.com,
+         * automl.googleapis.com or datalabeling.googleapis.com.
+         *
+         * @param GoogleCloudAiplatformV1MigratableResource $migratableResource
+         */
+        public function setMigratableResource(GoogleCloudAiplatformV1MigratableResource $migratableResource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigratableResource
+         */
+        public function getMigratableResource()
+        {
+        }
+        /**
+         * Migrated Model's resource name.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Before migration, the identifier in ml.googleapis.com,
-     * automl.googleapis.com or datalabeling.googleapis.com.
-     *
-     * @param GoogleCloudAiplatformV1MigratableResource $migratableResource
-     */
-    public function setMigratableResource(GoogleCloudAiplatformV1MigratableResource $migratableResource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigratableResource
-     */
-    public function getMigratableResource()
-    {
-    }
-    /**
-     * Migrated Model's resource name.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceResponse
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteHeaderModifier extends \Google\Collection
-{
-    protected $collection_key = 'remove';
-    /**
-     * Add the headers with given map where key is the name of the header, value
-     * is the value of the header.
-     *
-     * @var string[]
-     */
-    public $add;
-    /**
-     * Remove headers (matching by header names) specified in the list.
-     *
-     * @var string[]
-     */
-    public $remove;
-    /**
-     * Completely overwrite/replace the headers with given map where key is the
-     * name of the header, value is the value of the header.
-     *
-     * @var string[]
-     */
-    public $set;
-    /**
-     * Add the headers with given map where key is the name of the header, value
-     * is the value of the header.
-     *
-     * @param string[] $add
-     */
-    public function setAdd($add)
+namespace Google\Service\NetworkServices {
+    class HttpRouteHeaderModifier extends \Google\Collection
     {
+        protected $collection_key = 'remove';
+        /**
+         * Add the headers with given map where key is the name of the header, value
+         * is the value of the header.
+         *
+         * @var string[]
+         */
+        public $add;
+        /**
+         * Remove headers (matching by header names) specified in the list.
+         *
+         * @var string[]
+         */
+        public $remove;
+        /**
+         * Completely overwrite/replace the headers with given map where key is the
+         * name of the header, value is the value of the header.
+         *
+         * @var string[]
+         */
+        public $set;
+        /**
+         * Add the headers with given map where key is the name of the header, value
+         * is the value of the header.
+         *
+         * @param string[] $add
+         */
+        public function setAdd($add)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdd()
+        {
+        }
+        /**
+         * Remove headers (matching by header names) specified in the list.
+         *
+         * @param string[] $remove
+         */
+        public function setRemove($remove)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemove()
+        {
+        }
+        /**
+         * Completely overwrite/replace the headers with given map where key is the
+         * name of the header, value is the value of the header.
+         *
+         * @param string[] $set
+         */
+        public function setSet($set)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteHeaderModifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdd()
-    {
-    }
-    /**
-     * Remove headers (matching by header names) specified in the list.
-     *
-     * @param string[] $remove
-     */
-    public function setRemove($remove)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemove()
-    {
-    }
-    /**
-     * Completely overwrite/replace the headers with given map where key is the
-     * name of the header, value is the value of the header.
-     *
-     * @param string[] $set
-     */
-    public function setSet($set)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSet()
+    class Google_Service_NetworkServices_HttpRouteHeaderModifier extends \Google\Service\NetworkServices\HttpRouteHeaderModifier
     {
     }
 }

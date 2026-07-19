@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1ResourceRequests extends \Google\Model
-{
-    /**
-     * Output only. CPU request.
-     *
-     * @var string
-     */
-    public $cpu;
-    /**
-     * Output only. Memory request.
-     *
-     * @var string
-     */
-    public $memory;
-    /**
-     * Output only. CPU request.
-     *
-     * @param string $cpu
-     */
-    public function setCpu($cpu)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1ResourceRequests extends \Google\Model
     {
+        /**
+         * Output only. CPU request.
+         *
+         * @var string
+         */
+        public $cpu;
+        /**
+         * Output only. Memory request.
+         *
+         * @var string
+         */
+        public $memory;
+        /**
+         * Output only. CPU request.
+         *
+         * @param string $cpu
+         */
+        public function setCpu($cpu)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Output only. Memory request.
+         *
+         * @param string $memory
+         */
+        public function setMemory($memory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1ResourceRequests registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpu()
-    {
-    }
-    /**
-     * Output only. Memory request.
-     *
-     * @param string $memory
-     */
-    public function setMemory($memory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemory()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1ResourceRequests extends \Google\Service\Integrations\GoogleCloudConnectorsV1ResourceRequests
     {
     }
 }

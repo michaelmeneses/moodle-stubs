@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AccountRef extends \Google\Model
-{
-    /**
-     * Link for this account.
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Account ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Analytics account reference.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Account name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Link for this account.
-     *
-     * @param string $href
-     */
-    public function setHref($href)
+namespace Google\Service\Analytics {
+    class AccountRef extends \Google\Model
     {
+        /**
+         * Link for this account.
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Account ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Analytics account reference.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Account name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Link for this account.
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Account ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Analytics account reference.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Account name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\AccountRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * Account ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Analytics account reference.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Account name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Analytics_AccountRef extends \Google\Service\Analytics\AccountRef
     {
     }
 }

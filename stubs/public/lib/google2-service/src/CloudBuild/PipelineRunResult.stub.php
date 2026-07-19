@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PipelineRunResult extends \Google\Model
-{
-    /**
-     * Output only. Name of the TaskRun
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = ResultValue::class;
-    protected $valueDataType = '';
-    /**
-     * Output only. Name of the TaskRun
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class PipelineRunResult extends \Google\Model
     {
+        /**
+         * Output only. Name of the TaskRun
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = ResultValue::class;
+        protected $valueDataType = '';
+        /**
+         * Output only. Name of the TaskRun
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Value of the result.
+         *
+         * @param ResultValue $value
+         */
+        public function setValue(ResultValue $value)
+        {
+        }
+        /**
+         * @return ResultValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PipelineRunResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Value of the result.
-     *
-     * @param ResultValue $value
-     */
-    public function setValue(ResultValue $value)
-    {
-    }
-    /**
-     * @return ResultValue
-     */
-    public function getValue()
+    class Google_Service_CloudBuild_PipelineRunResult extends \Google\Service\CloudBuild\PipelineRunResult
     {
     }
 }

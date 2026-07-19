@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Pad extends \Google\Model
-{
-    /**
-     * The number of pixels to add to the bottom. The default is 0.
-     *
-     * @var int
-     */
-    public $bottomPixels;
-    /**
-     * The number of pixels to add to the left. The default is 0.
-     *
-     * @var int
-     */
-    public $leftPixels;
-    /**
-     * The number of pixels to add to the right. The default is 0.
-     *
-     * @var int
-     */
-    public $rightPixels;
-    /**
-     * The number of pixels to add to the top. The default is 0.
-     *
-     * @var int
-     */
-    public $topPixels;
-    /**
-     * The number of pixels to add to the bottom. The default is 0.
-     *
-     * @param int $bottomPixels
-     */
-    public function setBottomPixels($bottomPixels)
+namespace Google\Service\Transcoder {
+    class Pad extends \Google\Model
     {
+        /**
+         * The number of pixels to add to the bottom. The default is 0.
+         *
+         * @var int
+         */
+        public $bottomPixels;
+        /**
+         * The number of pixels to add to the left. The default is 0.
+         *
+         * @var int
+         */
+        public $leftPixels;
+        /**
+         * The number of pixels to add to the right. The default is 0.
+         *
+         * @var int
+         */
+        public $rightPixels;
+        /**
+         * The number of pixels to add to the top. The default is 0.
+         *
+         * @var int
+         */
+        public $topPixels;
+        /**
+         * The number of pixels to add to the bottom. The default is 0.
+         *
+         * @param int $bottomPixels
+         */
+        public function setBottomPixels($bottomPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBottomPixels()
+        {
+        }
+        /**
+         * The number of pixels to add to the left. The default is 0.
+         *
+         * @param int $leftPixels
+         */
+        public function setLeftPixels($leftPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeftPixels()
+        {
+        }
+        /**
+         * The number of pixels to add to the right. The default is 0.
+         *
+         * @param int $rightPixels
+         */
+        public function setRightPixels($rightPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRightPixels()
+        {
+        }
+        /**
+         * The number of pixels to add to the top. The default is 0.
+         *
+         * @param int $topPixels
+         */
+        public function setTopPixels($topPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTopPixels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Transcoder\Pad registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottomPixels()
-    {
-    }
-    /**
-     * The number of pixels to add to the left. The default is 0.
-     *
-     * @param int $leftPixels
-     */
-    public function setLeftPixels($leftPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLeftPixels()
-    {
-    }
-    /**
-     * The number of pixels to add to the right. The default is 0.
-     *
-     * @param int $rightPixels
-     */
-    public function setRightPixels($rightPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRightPixels()
-    {
-    }
-    /**
-     * The number of pixels to add to the top. The default is 0.
-     *
-     * @param int $topPixels
-     */
-    public function setTopPixels($topPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTopPixels()
+    class Google_Service_Transcoder_Pad extends \Google\Service\Transcoder\Pad
     {
     }
 }

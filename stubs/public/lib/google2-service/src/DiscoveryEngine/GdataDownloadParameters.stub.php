@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GdataDownloadParameters extends \Google\Model
-{
-    /**
-     * A boolean to be returned in the response to Scotty. Allows/disallows gzip
-     * encoding of the payload content when the server thinks it's advantageous
-     * (hence, does not guarantee compression) which allows Scotty to GZip the
-     * response to the client.
-     *
-     * @var bool
-     */
-    public $allowGzipCompression;
-    /**
-     * Determining whether or not Apiary should skip the inclusion of any Content-
-     * Range header on its response to Scotty.
-     *
-     * @var bool
-     */
-    public $ignoreRange;
-    /**
-     * A boolean to be returned in the response to Scotty. Allows/disallows gzip
-     * encoding of the payload content when the server thinks it's advantageous
-     * (hence, does not guarantee compression) which allows Scotty to GZip the
-     * response to the client.
-     *
-     * @param bool $allowGzipCompression
-     */
-    public function setAllowGzipCompression($allowGzipCompression)
+namespace Google\Service\DiscoveryEngine {
+    class GdataDownloadParameters extends \Google\Model
     {
+        /**
+         * A boolean to be returned in the response to Scotty. Allows/disallows gzip
+         * encoding of the payload content when the server thinks it's advantageous
+         * (hence, does not guarantee compression) which allows Scotty to GZip the
+         * response to the client.
+         *
+         * @var bool
+         */
+        public $allowGzipCompression;
+        /**
+         * Determining whether or not Apiary should skip the inclusion of any Content-
+         * Range header on its response to Scotty.
+         *
+         * @var bool
+         */
+        public $ignoreRange;
+        /**
+         * A boolean to be returned in the response to Scotty. Allows/disallows gzip
+         * encoding of the payload content when the server thinks it's advantageous
+         * (hence, does not guarantee compression) which allows Scotty to GZip the
+         * response to the client.
+         *
+         * @param bool $allowGzipCompression
+         */
+        public function setAllowGzipCompression($allowGzipCompression)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowGzipCompression()
+        {
+        }
+        /**
+         * Determining whether or not Apiary should skip the inclusion of any Content-
+         * Range header on its response to Scotty.
+         *
+         * @param bool $ignoreRange
+         */
+        public function setIgnoreRange($ignoreRange)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GdataDownloadParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowGzipCompression()
-    {
-    }
-    /**
-     * Determining whether or not Apiary should skip the inclusion of any Content-
-     * Range header on its response to Scotty.
-     *
-     * @param bool $ignoreRange
-     */
-    public function setIgnoreRange($ignoreRange)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreRange()
+    class Google_Service_DiscoveryEngine_GdataDownloadParameters extends \Google\Service\DiscoveryEngine\GdataDownloadParameters
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationResponse extends \Google\Model
-{
-    protected $appCheckTokenType = GoogleFirebaseAppcheckV1betaAppCheckToken::class;
-    protected $appCheckTokenDataType = '';
-    /**
-     * @var string
-     */
-    public $artifact;
-    protected $attestationTokenType = GoogleFirebaseAppcheckV1betaAttestationTokenResponse::class;
-    protected $attestationTokenDataType = '';
-    /**
-     * @param GoogleFirebaseAppcheckV1betaAppCheckToken
-     */
-    public function setAppCheckToken(GoogleFirebaseAppcheckV1betaAppCheckToken $appCheckToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationResponse extends \Google\Model
     {
+        protected $appCheckTokenType = GoogleFirebaseAppcheckV1betaAppCheckToken::class;
+        protected $appCheckTokenDataType = '';
+        /**
+         * @var string
+         */
+        public $artifact;
+        protected $attestationTokenType = GoogleFirebaseAppcheckV1betaAttestationTokenResponse::class;
+        protected $attestationTokenDataType = '';
+        /**
+         * @param GoogleFirebaseAppcheckV1betaAppCheckToken
+         */
+        public function setAppCheckToken(GoogleFirebaseAppcheckV1betaAppCheckToken $appCheckToken)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaAppCheckToken
+         */
+        public function getAppCheckToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setArtifact($artifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifact()
+        {
+        }
+        /**
+         * @param GoogleFirebaseAppcheckV1betaAttestationTokenResponse
+         */
+        public function setAttestationToken(GoogleFirebaseAppcheckV1betaAttestationTokenResponse $attestationToken)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaAttestationTokenResponse
+         */
+        public function getAttestationToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1betaAppCheckToken
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppCheckToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setArtifact($artifact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getArtifact()
-    {
-    }
-    /**
-     * @param GoogleFirebaseAppcheckV1betaAttestationTokenResponse
-     */
-    public function setAttestationToken(GoogleFirebaseAppcheckV1betaAttestationTokenResponse $attestationToken)
-    {
-    }
-    /**
-     * @return GoogleFirebaseAppcheckV1betaAttestationTokenResponse
-     */
-    public function getAttestationToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationResponse
     {
     }
 }

@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications\Resource;
-
-/**
- * The "verificationTokens" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessverificationsService = new Google\Service\MyBusinessVerifications(...);
- *   $verificationTokens = $mybusinessverificationsService->verificationTokens;
- *  </code>
- */
-class VerificationTokens extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessVerifications\Resource {
+    use Google\Service\MyBusinessVerifications\GenerateInstantVerificationTokenRequest;
+    use Google\Service\MyBusinessVerifications\GenerateInstantVerificationTokenResponse;
     /**
-     * Generate a token for the provided location data to verify the location.
-     * (verificationTokens.generate)
-     *
-     * @param GenerateInstantVerificationTokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateInstantVerificationTokenResponse
-     * @throws \Google\Service\Exception
+     * The "verificationTokens" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessverificationsService = new Google\Service\MyBusinessVerifications(...);
+     *   $verificationTokens = $mybusinessverificationsService->verificationTokens;
+     *  </code>
      */
-    public function generate(GenerateInstantVerificationTokenRequest $postBody, $optParams = [])
+    class VerificationTokens extends \Google\Service\Resource
+    {
+        /**
+         * Generate a token for the provided location data to verify the location.
+         * (verificationTokens.generate)
+         *
+         * @param GenerateInstantVerificationTokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateInstantVerificationTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generate(GenerateInstantVerificationTokenRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\Resource\VerificationTokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessVerifications_Resource_VerificationTokens extends \Google\Service\MyBusinessVerifications\Resource\VerificationTokens
     {
     }
 }

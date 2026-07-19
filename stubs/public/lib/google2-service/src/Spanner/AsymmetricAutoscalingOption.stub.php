@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class AsymmetricAutoscalingOption extends \Google\Model
-{
-    protected $overridesType = AutoscalingConfigOverrides::class;
-    protected $overridesDataType = '';
-    protected $replicaSelectionType = InstanceReplicaSelection::class;
-    protected $replicaSelectionDataType = '';
-    /**
-     * Optional. Overrides applied to the top-level autoscaling configuration for
-     * the selected replicas.
-     *
-     * @param AutoscalingConfigOverrides $overrides
-     */
-    public function setOverrides(AutoscalingConfigOverrides $overrides)
+namespace Google\Service\Spanner {
+    class AsymmetricAutoscalingOption extends \Google\Model
     {
+        protected $overridesType = AutoscalingConfigOverrides::class;
+        protected $overridesDataType = '';
+        protected $replicaSelectionType = InstanceReplicaSelection::class;
+        protected $replicaSelectionDataType = '';
+        /**
+         * Optional. Overrides applied to the top-level autoscaling configuration for
+         * the selected replicas.
+         *
+         * @param AutoscalingConfigOverrides $overrides
+         */
+        public function setOverrides(AutoscalingConfigOverrides $overrides)
+        {
+        }
+        /**
+         * @return AutoscalingConfigOverrides
+         */
+        public function getOverrides()
+        {
+        }
+        /**
+         * Required. Selects the replicas to which this AsymmetricAutoscalingOption
+         * applies. Only read-only replicas are supported.
+         *
+         * @param InstanceReplicaSelection $replicaSelection
+         */
+        public function setReplicaSelection(InstanceReplicaSelection $replicaSelection)
+        {
+        }
+        /**
+         * @return InstanceReplicaSelection
+         */
+        public function getReplicaSelection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoscalingConfigOverrides
+     * Runtime class alias of \Google\Service\Spanner\AsymmetricAutoscalingOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrides()
-    {
-    }
-    /**
-     * Required. Selects the replicas to which this AsymmetricAutoscalingOption
-     * applies. Only read-only replicas are supported.
-     *
-     * @param InstanceReplicaSelection $replicaSelection
-     */
-    public function setReplicaSelection(InstanceReplicaSelection $replicaSelection)
-    {
-    }
-    /**
-     * @return InstanceReplicaSelection
-     */
-    public function getReplicaSelection()
+    class Google_Service_Spanner_AsymmetricAutoscalingOption extends \Google\Service\Spanner\AsymmetricAutoscalingOption
     {
     }
 }

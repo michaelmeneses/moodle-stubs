@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class UpdateFailureState extends \Google\Model
-{
-    /**
-     * Details about the last failed update attempt.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * What the component configuration would have been if the update had
-     * succeeded. This field may not be populated by xDS clients due to storage
-     * overhead.
-     *
-     * @var array[]
-     */
-    public $failedConfiguration;
-    /**
-     * Time of the latest failed update attempt.
-     *
-     * @var string
-     */
-    public $lastUpdateAttempt;
-    /**
-     * This is the version of the rejected resource. [#not-implemented-hide:]
-     *
-     * @var string
-     */
-    public $versionInfo;
-    /**
-     * Details about the last failed update attempt.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\TrafficDirectorService {
+    class UpdateFailureState extends \Google\Model
     {
+        /**
+         * Details about the last failed update attempt.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * What the component configuration would have been if the update had
+         * succeeded. This field may not be populated by xDS clients due to storage
+         * overhead.
+         *
+         * @var array[]
+         */
+        public $failedConfiguration;
+        /**
+         * Time of the latest failed update attempt.
+         *
+         * @var string
+         */
+        public $lastUpdateAttempt;
+        /**
+         * This is the version of the rejected resource. [#not-implemented-hide:]
+         *
+         * @var string
+         */
+        public $versionInfo;
+        /**
+         * Details about the last failed update attempt.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * What the component configuration would have been if the update had
+         * succeeded. This field may not be populated by xDS clients due to storage
+         * overhead.
+         *
+         * @param array[] $failedConfiguration
+         */
+        public function setFailedConfiguration($failedConfiguration)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getFailedConfiguration()
+        {
+        }
+        /**
+         * Time of the latest failed update attempt.
+         *
+         * @param string $lastUpdateAttempt
+         */
+        public function setLastUpdateAttempt($lastUpdateAttempt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateAttempt()
+        {
+        }
+        /**
+         * This is the version of the rejected resource. [#not-implemented-hide:]
+         *
+         * @param string $versionInfo
+         */
+        public function setVersionInfo($versionInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\UpdateFailureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * What the component configuration would have been if the update had
-     * succeeded. This field may not be populated by xDS clients due to storage
-     * overhead.
-     *
-     * @param array[] $failedConfiguration
-     */
-    public function setFailedConfiguration($failedConfiguration)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getFailedConfiguration()
-    {
-    }
-    /**
-     * Time of the latest failed update attempt.
-     *
-     * @param string $lastUpdateAttempt
-     */
-    public function setLastUpdateAttempt($lastUpdateAttempt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateAttempt()
-    {
-    }
-    /**
-     * This is the version of the rejected resource. [#not-implemented-hide:]
-     *
-     * @param string $versionInfo
-     */
-    public function setVersionInfo($versionInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionInfo()
+    class Google_Service_TrafficDirectorService_UpdateFailureState extends \Google\Service\TrafficDirectorService\UpdateFailureState
     {
     }
 }

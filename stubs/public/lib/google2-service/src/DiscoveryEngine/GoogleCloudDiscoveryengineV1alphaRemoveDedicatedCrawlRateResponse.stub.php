@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaRemoveDedicatedCrawlRateResponse extends \Google\Model
-{
-    /**
-     * The state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The state is successful.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The state is failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. The state of the response.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Errors from service when handling the request.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaRemoveDedicatedCrawlRateResponse extends \Google\Model
     {
+        /**
+         * The state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The state is successful.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The state is failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. The state of the response.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Errors from service when handling the request.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The state of the response.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaRemoveDedicatedCrawlRateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The state of the response.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaRemoveDedicatedCrawlRateResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaRemoveDedicatedCrawlRateResponse
     {
     }
 }

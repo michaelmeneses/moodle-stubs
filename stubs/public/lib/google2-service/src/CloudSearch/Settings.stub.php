@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Settings extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $accessLock;
-    /**
-     * @var string
-     */
-    public $accessType;
-    /**
-     * @var bool
-     */
-    public $allowJoiningBeforeHost;
-    /**
-     * @var bool
-     */
-    public $attendanceReportEnabled;
-    /**
-     * @var bool
-     */
-    public $chatLock;
-    /**
-     * @var bool
-     */
-    public $coActivityLock;
-    /**
-     * @var bool
-     */
-    public $cohostArtifactSharingEnabled;
-    /**
-     * @var bool
-     */
-    public $cseEnabled;
-    /**
-     * @var bool
-     */
-    public $defaultAsViewer;
-    /**
-     * @var bool
-     */
-    public $moderationEnabled;
-    /**
-     * @var bool
-     */
-    public $presentLock;
-    /**
-     * @var bool
-     */
-    public $reactionsLock;
-    /**
-     * @param bool
-     */
-    public function setAccessLock($accessLock)
+namespace Google\Service\CloudSearch {
+    class Settings extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $accessLock;
+        /**
+         * @var string
+         */
+        public $accessType;
+        /**
+         * @var bool
+         */
+        public $allowJoiningBeforeHost;
+        /**
+         * @var bool
+         */
+        public $attendanceReportEnabled;
+        /**
+         * @var bool
+         */
+        public $chatLock;
+        /**
+         * @var bool
+         */
+        public $coActivityLock;
+        /**
+         * @var bool
+         */
+        public $cohostArtifactSharingEnabled;
+        /**
+         * @var bool
+         */
+        public $cseEnabled;
+        /**
+         * @var bool
+         */
+        public $defaultAsViewer;
+        /**
+         * @var bool
+         */
+        public $moderationEnabled;
+        /**
+         * @var bool
+         */
+        public $presentLock;
+        /**
+         * @var bool
+         */
+        public $reactionsLock;
+        /**
+         * @param bool
+         */
+        public function setAccessLock($accessLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAccessLock()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAccessType($accessType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessType()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAllowJoiningBeforeHost($allowJoiningBeforeHost)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowJoiningBeforeHost()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAttendanceReportEnabled($attendanceReportEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAttendanceReportEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setChatLock($chatLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChatLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCoActivityLock($coActivityLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCoActivityLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCohostArtifactSharingEnabled($cohostArtifactSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCohostArtifactSharingEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCseEnabled($cseEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCseEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDefaultAsViewer($defaultAsViewer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefaultAsViewer()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setModerationEnabled($moderationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getModerationEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPresentLock($presentLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPresentLock()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReactionsLock($reactionsLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReactionsLock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLock()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAccessType($accessType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccessType()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAllowJoiningBeforeHost($allowJoiningBeforeHost)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowJoiningBeforeHost()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAttendanceReportEnabled($attendanceReportEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAttendanceReportEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setChatLock($chatLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getChatLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCoActivityLock($coActivityLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCoActivityLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCohostArtifactSharingEnabled($cohostArtifactSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCohostArtifactSharingEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCseEnabled($cseEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCseEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDefaultAsViewer($defaultAsViewer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDefaultAsViewer()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setModerationEnabled($moderationEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getModerationEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPresentLock($presentLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPresentLock()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReactionsLock($reactionsLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReactionsLock()
+    class Google_Service_CloudSearch_Settings extends \Google\Service\CloudSearch\Settings
     {
     }
 }

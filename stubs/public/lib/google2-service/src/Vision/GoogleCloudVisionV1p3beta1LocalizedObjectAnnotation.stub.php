@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1LocalizedObjectAnnotation extends \Google\Model
-{
-    protected $boundingPolyType = GoogleCloudVisionV1p3beta1BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    /**
-     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Object ID that should align with EntityAnnotation mid.
-     *
-     * @var string
-     */
-    public $mid;
-    /**
-     * Object name, expressed in its `language_code` language.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Score of the result. Range [0, 1].
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Image region to which this object belongs. This must be populated.
-     *
-     * @param GoogleCloudVisionV1p3beta1BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(GoogleCloudVisionV1p3beta1BoundingPoly $boundingPoly)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1LocalizedObjectAnnotation extends \Google\Model
     {
+        protected $boundingPolyType = GoogleCloudVisionV1p3beta1BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        /**
+         * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Object ID that should align with EntityAnnotation mid.
+         *
+         * @var string
+         */
+        public $mid;
+        /**
+         * Object name, expressed in its `language_code` language.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Score of the result. Range [0, 1].
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Image region to which this object belongs. This must be populated.
+         *
+         * @param GoogleCloudVisionV1p3beta1BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(GoogleCloudVisionV1p3beta1BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Object ID that should align with EntityAnnotation mid.
+         *
+         * @param string $mid
+         */
+        public function setMid($mid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMid()
+        {
+        }
+        /**
+         * Object name, expressed in its `language_code` language.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Score of the result. Range [0, 1].
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p3beta1BoundingPoly
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1LocalizedObjectAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Object ID that should align with EntityAnnotation mid.
-     *
-     * @param string $mid
-     */
-    public function setMid($mid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMid()
-    {
-    }
-    /**
-     * Object name, expressed in its `language_code` language.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Score of the result. Range [0, 1].
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1LocalizedObjectAnnotation extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1LocalizedObjectAnnotation
     {
     }
 }

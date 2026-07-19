@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1Application extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const SCHEMA_SCHEMA_UNSPECIFIED = 'SCHEMA_UNSPECIFIED';
-    /**
-     * Proxy which routes traffic to actual applications, like Netscaler Gateway.
-     */
-    public const SCHEMA_PROXY_GATEWAY = 'PROXY_GATEWAY';
-    /**
-     * Service Discovery API endpoint when Service Discovery is enabled in
-     * Gateway.
-     */
-    public const SCHEMA_API_GATEWAY = 'API_GATEWAY';
-    protected $collection_key = 'upstreams';
-    /**
-     * Output only. Timestamp when the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. An arbitrary user-provided name for the application resource.
-     * Cannot exceed 64 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $endpointMatchersType = GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher::class;
-    protected $endpointMatchersDataType = 'array';
-    /**
-     * Identifier. Name of the resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Type of the external application.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Output only. Timestamp when the resource was last modified.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $upstreamsType = GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream::class;
-    protected $upstreamsDataType = 'array';
-    /**
-     * Output only. Timestamp when the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1Application extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const SCHEMA_SCHEMA_UNSPECIFIED = 'SCHEMA_UNSPECIFIED';
+        /**
+         * Proxy which routes traffic to actual applications, like Netscaler Gateway.
+         */
+        public const SCHEMA_PROXY_GATEWAY = 'PROXY_GATEWAY';
+        /**
+         * Service Discovery API endpoint when Service Discovery is enabled in
+         * Gateway.
+         */
+        public const SCHEMA_API_GATEWAY = 'API_GATEWAY';
+        protected $collection_key = 'upstreams';
+        /**
+         * Output only. Timestamp when the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. An arbitrary user-provided name for the application resource.
+         * Cannot exceed 64 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $endpointMatchersType = GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher::class;
+        protected $endpointMatchersDataType = 'array';
+        /**
+         * Identifier. Name of the resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Type of the external application.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Output only. Timestamp when the resource was last modified.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $upstreamsType = GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream::class;
+        protected $upstreamsDataType = 'array';
+        /**
+         * Output only. Timestamp when the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. An arbitrary user-provided name for the application resource.
+         * Cannot exceed 64 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. An array of conditions to match the application's network
+         * endpoint. Each element in the array is an EndpointMatcher object, which
+         * defines a specific combination of a hostname pattern and one or more ports.
+         * The application is considered matched if at least one of the
+         * EndpointMatcher conditions in this array is met (the conditions are
+         * combined using OR logic). Each EndpointMatcher must contain a hostname
+         * pattern, such as "example.com", and one or more port numbers specified as a
+         * string, such as "443". Hostname and port number examples: "*.example.com",
+         * "443" "example.com" and "22" "example.com" and "22,33"
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher[] $endpointMatchers
+         */
+        public function setEndpointMatchers($endpointMatchers)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher[]
+         */
+        public function getEndpointMatchers()
+        {
+        }
+        /**
+         * Identifier. Name of the resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Type of the external application.
+         *
+         * Accepted values: SCHEMA_UNSPECIFIED, PROXY_GATEWAY, API_GATEWAY
+         *
+         * @param self::SCHEMA_* $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return self::SCHEMA_*
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Output only. Timestamp when the resource was last modified.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. Which upstream resources to forward traffic to.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream[] $upstreams
+         */
+        public function setUpstreams($upstreams)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream[]
+         */
+        public function getUpstreams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Application registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. An arbitrary user-provided name for the application resource.
-     * Cannot exceed 64 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. An array of conditions to match the application's network
-     * endpoint. Each element in the array is an EndpointMatcher object, which
-     * defines a specific combination of a hostname pattern and one or more ports.
-     * The application is considered matched if at least one of the
-     * EndpointMatcher conditions in this array is met (the conditions are
-     * combined using OR logic). Each EndpointMatcher must contain a hostname
-     * pattern, such as "example.com", and one or more port numbers specified as a
-     * string, such as "443". Hostname and port number examples: "*.example.com",
-     * "443" "example.com" and "22" "example.com" and "22,33"
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher[] $endpointMatchers
-     */
-    public function setEndpointMatchers($endpointMatchers)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1EndpointMatcher[]
-     */
-    public function getEndpointMatchers()
-    {
-    }
-    /**
-     * Identifier. Name of the resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Type of the external application.
-     *
-     * Accepted values: SCHEMA_UNSPECIFIED, PROXY_GATEWAY, API_GATEWAY
-     *
-     * @param self::SCHEMA_* $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return self::SCHEMA_*
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * Output only. Timestamp when the resource was last modified.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. Which upstream resources to forward traffic to.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream[] $upstreams
-     */
-    public function setUpstreams($upstreams)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream[]
-     */
-    public function getUpstreams()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1Application extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Application
     {
     }
 }

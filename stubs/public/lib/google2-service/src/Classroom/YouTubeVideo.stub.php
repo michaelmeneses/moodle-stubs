@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class YouTubeVideo extends \Google\Model
-{
-    /**
-     * URL that can be used to view the YouTube video. Read-only.
-     *
-     * @var string
-     */
-    public $alternateLink;
-    /**
-     * YouTube API resource ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * URL of a thumbnail image of the YouTube video. Read-only.
-     *
-     * @var string
-     */
-    public $thumbnailUrl;
-    /**
-     * Title of the YouTube video. Read-only.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL that can be used to view the YouTube video. Read-only.
-     *
-     * @param string $alternateLink
-     */
-    public function setAlternateLink($alternateLink)
+namespace Google\Service\Classroom {
+    class YouTubeVideo extends \Google\Model
     {
+        /**
+         * URL that can be used to view the YouTube video. Read-only.
+         *
+         * @var string
+         */
+        public $alternateLink;
+        /**
+         * YouTube API resource ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * URL of a thumbnail image of the YouTube video. Read-only.
+         *
+         * @var string
+         */
+        public $thumbnailUrl;
+        /**
+         * Title of the YouTube video. Read-only.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL that can be used to view the YouTube video. Read-only.
+         *
+         * @param string $alternateLink
+         */
+        public function setAlternateLink($alternateLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlternateLink()
+        {
+        }
+        /**
+         * YouTube API resource ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * URL of a thumbnail image of the YouTube video. Read-only.
+         *
+         * @param string $thumbnailUrl
+         */
+        public function setThumbnailUrl($thumbnailUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailUrl()
+        {
+        }
+        /**
+         * Title of the YouTube video. Read-only.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\YouTubeVideo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternateLink()
-    {
-    }
-    /**
-     * YouTube API resource ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * URL of a thumbnail image of the YouTube video. Read-only.
-     *
-     * @param string $thumbnailUrl
-     */
-    public function setThumbnailUrl($thumbnailUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnailUrl()
-    {
-    }
-    /**
-     * Title of the YouTube video. Read-only.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_YouTubeVideo extends \Google\Service\Classroom\YouTubeVideo
     {
     }
 }

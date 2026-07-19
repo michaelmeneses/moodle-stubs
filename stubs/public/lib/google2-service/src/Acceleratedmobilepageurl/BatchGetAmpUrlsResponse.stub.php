@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Acceleratedmobilepageurl;
-
-class BatchGetAmpUrlsResponse extends \Google\Collection
-{
-    protected $collection_key = 'urlErrors';
-    protected $ampUrlsType = AmpUrl::class;
-    protected $ampUrlsDataType = 'array';
-    protected $urlErrorsType = AmpUrlError::class;
-    protected $urlErrorsDataType = 'array';
-    /**
-     * For each URL in BatchAmpUrlsRequest, the URL response. The response might
-     * not be in the same order as URLs in the batch request. If
-     * BatchAmpUrlsRequest contains duplicate URLs, AmpUrl is generated only once.
-     *
-     * @param AmpUrl[] $ampUrls
-     */
-    public function setAmpUrls($ampUrls)
+namespace Google\Service\Acceleratedmobilepageurl {
+    class BatchGetAmpUrlsResponse extends \Google\Collection
     {
+        protected $collection_key = 'urlErrors';
+        protected $ampUrlsType = AmpUrl::class;
+        protected $ampUrlsDataType = 'array';
+        protected $urlErrorsType = AmpUrlError::class;
+        protected $urlErrorsDataType = 'array';
+        /**
+         * For each URL in BatchAmpUrlsRequest, the URL response. The response might
+         * not be in the same order as URLs in the batch request. If
+         * BatchAmpUrlsRequest contains duplicate URLs, AmpUrl is generated only once.
+         *
+         * @param AmpUrl[] $ampUrls
+         */
+        public function setAmpUrls($ampUrls)
+        {
+        }
+        /**
+         * @return AmpUrl[]
+         */
+        public function getAmpUrls()
+        {
+        }
+        /**
+         * The errors for requested URLs that have no AMP URL.
+         *
+         * @param AmpUrlError[] $urlErrors
+         */
+        public function setUrlErrors($urlErrors)
+        {
+        }
+        /**
+         * @return AmpUrlError[]
+         */
+        public function getUrlErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AmpUrl[]
+     * Runtime class alias of \Google\Service\Acceleratedmobilepageurl\BatchGetAmpUrlsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmpUrls()
-    {
-    }
-    /**
-     * The errors for requested URLs that have no AMP URL.
-     *
-     * @param AmpUrlError[] $urlErrors
-     */
-    public function setUrlErrors($urlErrors)
-    {
-    }
-    /**
-     * @return AmpUrlError[]
-     */
-    public function getUrlErrors()
+    class Google_Service_Acceleratedmobilepageurl_BatchGetAmpUrlsResponse extends \Google\Service\Acceleratedmobilepageurl\BatchGetAmpUrlsResponse
     {
     }
 }

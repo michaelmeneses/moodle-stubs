@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalPolicy extends \Google\Collection
-{
-    protected $collection_key = 'assignments';
-    protected $assignmentsType = SasPortalAssignment::class;
-    protected $assignmentsDataType = 'array';
-    /**
-     * The etag is used for optimistic concurrency control as a way to help
-     * prevent simultaneous updates of a policy from overwriting each other. It is
-     * strongly suggested that systems make use of the etag in the read-modify-
-     * write cycle to perform policy updates in order to avoid race conditions: An
-     * etag is returned in the response to GetPolicy, and systems are expected to
-     * put that etag in the request to SetPolicy to ensure that their change will
-     * be applied to the same version of the policy. If no etag is provided in the
-     * call to GetPolicy, then the existing policy is overwritten blindly.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * List of assignments
-     *
-     * @param SasPortalAssignment[] $assignments
-     */
-    public function setAssignments($assignments)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalPolicy extends \Google\Collection
     {
+        protected $collection_key = 'assignments';
+        protected $assignmentsType = SasPortalAssignment::class;
+        protected $assignmentsDataType = 'array';
+        /**
+         * The etag is used for optimistic concurrency control as a way to help
+         * prevent simultaneous updates of a policy from overwriting each other. It is
+         * strongly suggested that systems make use of the etag in the read-modify-
+         * write cycle to perform policy updates in order to avoid race conditions: An
+         * etag is returned in the response to GetPolicy, and systems are expected to
+         * put that etag in the request to SetPolicy to ensure that their change will
+         * be applied to the same version of the policy. If no etag is provided in the
+         * call to GetPolicy, then the existing policy is overwritten blindly.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * List of assignments
+         *
+         * @param SasPortalAssignment[] $assignments
+         */
+        public function setAssignments($assignments)
+        {
+        }
+        /**
+         * @return SasPortalAssignment[]
+         */
+        public function getAssignments()
+        {
+        }
+        /**
+         * The etag is used for optimistic concurrency control as a way to help
+         * prevent simultaneous updates of a policy from overwriting each other. It is
+         * strongly suggested that systems make use of the etag in the read-modify-
+         * write cycle to perform policy updates in order to avoid race conditions: An
+         * etag is returned in the response to GetPolicy, and systems are expected to
+         * put that etag in the request to SetPolicy to ensure that their change will
+         * be applied to the same version of the policy. If no etag is provided in the
+         * call to GetPolicy, then the existing policy is overwritten blindly.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalAssignment[]
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignments()
-    {
-    }
-    /**
-     * The etag is used for optimistic concurrency control as a way to help
-     * prevent simultaneous updates of a policy from overwriting each other. It is
-     * strongly suggested that systems make use of the etag in the read-modify-
-     * write cycle to perform policy updates in order to avoid race conditions: An
-     * etag is returned in the response to GetPolicy, and systems are expected to
-     * put that etag in the request to SetPolicy to ensure that their change will
-     * be applied to the same version of the policy. If no etag is provided in the
-     * call to GetPolicy, then the existing policy is overwritten blindly.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
+    class Google_Service_SASPortalTesting_SasPortalPolicy extends \Google\Service\SASPortalTesting\SasPortalPolicy
     {
     }
 }

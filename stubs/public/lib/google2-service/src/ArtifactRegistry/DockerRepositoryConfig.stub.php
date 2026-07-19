@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class DockerRepositoryConfig extends \Google\Model
-{
-    /**
-     * The repository which enabled this flag prevents all tags from being
-     * modified, moved or deleted. This does not prevent tags from being created.
-     *
-     * @var bool
-     */
-    public $immutableTags;
-    /**
-     * The repository which enabled this flag prevents all tags from being
-     * modified, moved or deleted. This does not prevent tags from being created.
-     *
-     * @param bool $immutableTags
-     */
-    public function setImmutableTags($immutableTags)
+namespace Google\Service\ArtifactRegistry {
+    class DockerRepositoryConfig extends \Google\Model
     {
+        /**
+         * The repository which enabled this flag prevents all tags from being
+         * modified, moved or deleted. This does not prevent tags from being created.
+         *
+         * @var bool
+         */
+        public $immutableTags;
+        /**
+         * The repository which enabled this flag prevents all tags from being
+         * modified, moved or deleted. This does not prevent tags from being created.
+         *
+         * @param bool $immutableTags
+         */
+        public function setImmutableTags($immutableTags)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImmutableTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ArtifactRegistry\DockerRepositoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImmutableTags()
+    class Google_Service_ArtifactRegistry_DockerRepositoryConfig extends \Google\Service\ArtifactRegistry\DockerRepositoryConfig
     {
     }
 }

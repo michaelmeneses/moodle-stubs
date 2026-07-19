@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest extends \Google\Model
-{
-    protected $annotationSpecSetType = GoogleCloudDatalabelingV1beta1AnnotationSpecSet::class;
-    protected $annotationSpecSetDataType = '';
-    /**
-     * Required. Annotation spec set to create. Annotation specs must be included.
-     * Only one annotation spec will be accepted for annotation specs with same
-     * display_name.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpecSet $annotationSpecSet
-     */
-    public function setAnnotationSpecSet(GoogleCloudDatalabelingV1beta1AnnotationSpecSet $annotationSpecSet)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest extends \Google\Model
     {
+        protected $annotationSpecSetType = GoogleCloudDatalabelingV1beta1AnnotationSpecSet::class;
+        protected $annotationSpecSetDataType = '';
+        /**
+         * Required. Annotation spec set to create. Annotation specs must be included.
+         * Only one annotation spec will be accepted for annotation specs with same
+         * display_name.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpecSet $annotationSpecSet
+         */
+        public function setAnnotationSpecSet(GoogleCloudDatalabelingV1beta1AnnotationSpecSet $annotationSpecSet)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet
+         */
+        public function getAnnotationSpecSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSet()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest
     {
     }
 }

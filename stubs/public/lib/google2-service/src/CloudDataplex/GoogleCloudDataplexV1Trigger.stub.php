@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1Trigger extends \Google\Model
-{
-    protected $onDemandType = GoogleCloudDataplexV1TriggerOnDemand::class;
-    protected $onDemandDataType = '';
-    protected $oneTimeType = GoogleCloudDataplexV1TriggerOneTime::class;
-    protected $oneTimeDataType = '';
-    protected $scheduleType = GoogleCloudDataplexV1TriggerSchedule::class;
-    protected $scheduleDataType = '';
-    /**
-     * The scan runs once via RunDataScan API.
-     *
-     * @param GoogleCloudDataplexV1TriggerOnDemand $onDemand
-     */
-    public function setOnDemand(GoogleCloudDataplexV1TriggerOnDemand $onDemand)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1Trigger extends \Google\Model
     {
+        protected $onDemandType = GoogleCloudDataplexV1TriggerOnDemand::class;
+        protected $onDemandDataType = '';
+        protected $oneTimeType = GoogleCloudDataplexV1TriggerOneTime::class;
+        protected $oneTimeDataType = '';
+        protected $scheduleType = GoogleCloudDataplexV1TriggerSchedule::class;
+        protected $scheduleDataType = '';
+        /**
+         * The scan runs once via RunDataScan API.
+         *
+         * @param GoogleCloudDataplexV1TriggerOnDemand $onDemand
+         */
+        public function setOnDemand(GoogleCloudDataplexV1TriggerOnDemand $onDemand)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TriggerOnDemand
+         */
+        public function getOnDemand()
+        {
+        }
+        /**
+         * The scan runs once, and does not create an associated ScanJob child
+         * resource.
+         *
+         * @param GoogleCloudDataplexV1TriggerOneTime $oneTime
+         */
+        public function setOneTime(GoogleCloudDataplexV1TriggerOneTime $oneTime)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TriggerOneTime
+         */
+        public function getOneTime()
+        {
+        }
+        /**
+         * The scan is scheduled to run periodically.
+         *
+         * @param GoogleCloudDataplexV1TriggerSchedule $schedule
+         */
+        public function setSchedule(GoogleCloudDataplexV1TriggerSchedule $schedule)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TriggerSchedule
+         */
+        public function getSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1TriggerOnDemand
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1Trigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnDemand()
-    {
-    }
-    /**
-     * The scan runs once, and does not create an associated ScanJob child
-     * resource.
-     *
-     * @param GoogleCloudDataplexV1TriggerOneTime $oneTime
-     */
-    public function setOneTime(GoogleCloudDataplexV1TriggerOneTime $oneTime)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1TriggerOneTime
-     */
-    public function getOneTime()
-    {
-    }
-    /**
-     * The scan is scheduled to run periodically.
-     *
-     * @param GoogleCloudDataplexV1TriggerSchedule $schedule
-     */
-    public function setSchedule(GoogleCloudDataplexV1TriggerSchedule $schedule)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1TriggerSchedule
-     */
-    public function getSchedule()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1Trigger extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1Trigger
     {
     }
 }

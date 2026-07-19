@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
-    protected $dataKeyDataType = '';
-    protected $featuresType = GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature::class;
-    protected $featuresDataType = 'array';
-    /**
-     * The data key.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
-     */
-    public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
+        protected $dataKeyDataType = '';
+        protected $featuresType = GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature::class;
+        protected $featuresDataType = 'array';
+        /**
+         * The data key.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
+         */
+        public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDataKey
+         */
+        public function getDataKey()
+        {
+        }
+        /**
+         * List of features to write.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature[]
+         */
+        public function getFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureViewDataKey
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataKey()
-    {
-    }
-    /**
-     * List of features to write.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature[] $features
-     */
-    public function setFeatures($features)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature[]
-     */
-    public function getFeatures()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValues
     {
     }
 }

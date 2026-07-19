@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeseriesinfoVolumeSeries extends \Google\Collection
-{
-    protected $collection_key = 'issue';
-    protected $issueType = VolumeseriesinfoVolumeSeriesIssue::class;
-    protected $issueDataType = 'array';
-    /**
-     * The book order number in the series.
-     *
-     * @var int
-     */
-    public $orderNumber;
-    /**
-     * The book type in the context of series. Examples - Single Issue, Collection
-     * Edition, etc.
-     *
-     * @var string
-     */
-    public $seriesBookType;
-    /**
-     * The series id.
-     *
-     * @var string
-     */
-    public $seriesId;
-    /**
-     * List of issues. Applicable only for Collection Edition and Omnibus.
-     *
-     * @param VolumeseriesinfoVolumeSeriesIssue[] $issue
-     */
-    public function setIssue($issue)
+namespace Google\Service\Books {
+    class VolumeseriesinfoVolumeSeries extends \Google\Collection
     {
+        protected $collection_key = 'issue';
+        protected $issueType = VolumeseriesinfoVolumeSeriesIssue::class;
+        protected $issueDataType = 'array';
+        /**
+         * The book order number in the series.
+         *
+         * @var int
+         */
+        public $orderNumber;
+        /**
+         * The book type in the context of series. Examples - Single Issue, Collection
+         * Edition, etc.
+         *
+         * @var string
+         */
+        public $seriesBookType;
+        /**
+         * The series id.
+         *
+         * @var string
+         */
+        public $seriesId;
+        /**
+         * List of issues. Applicable only for Collection Edition and Omnibus.
+         *
+         * @param VolumeseriesinfoVolumeSeriesIssue[] $issue
+         */
+        public function setIssue($issue)
+        {
+        }
+        /**
+         * @return VolumeseriesinfoVolumeSeriesIssue[]
+         */
+        public function getIssue()
+        {
+        }
+        /**
+         * The book order number in the series.
+         *
+         * @param int $orderNumber
+         */
+        public function setOrderNumber($orderNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOrderNumber()
+        {
+        }
+        /**
+         * The book type in the context of series. Examples - Single Issue, Collection
+         * Edition, etc.
+         *
+         * @param string $seriesBookType
+         */
+        public function setSeriesBookType($seriesBookType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesBookType()
+        {
+        }
+        /**
+         * The series id.
+         *
+         * @param string $seriesId
+         */
+        public function setSeriesId($seriesId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VolumeseriesinfoVolumeSeriesIssue[]
+     * Runtime class alias of \Google\Service\Books\VolumeseriesinfoVolumeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssue()
-    {
-    }
-    /**
-     * The book order number in the series.
-     *
-     * @param int $orderNumber
-     */
-    public function setOrderNumber($orderNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOrderNumber()
-    {
-    }
-    /**
-     * The book type in the context of series. Examples - Single Issue, Collection
-     * Edition, etc.
-     *
-     * @param string $seriesBookType
-     */
-    public function setSeriesBookType($seriesBookType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesBookType()
-    {
-    }
-    /**
-     * The series id.
-     *
-     * @param string $seriesId
-     */
-    public function setSeriesId($seriesId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesId()
+    class Google_Service_Books_VolumeseriesinfoVolumeSeries extends \Google\Service\Books\VolumeseriesinfoVolumeSeries
     {
     }
 }

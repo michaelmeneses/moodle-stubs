@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ServerCapabilities extends \Google\Model
-{
-    protected $cacheCapabilitiesType = BuildBazelRemoteExecutionV2CacheCapabilities::class;
-    protected $cacheCapabilitiesDataType = '';
-    protected $deprecatedApiVersionType = BuildBazelSemverSemVer::class;
-    protected $deprecatedApiVersionDataType = '';
-    protected $executionCapabilitiesType = BuildBazelRemoteExecutionV2ExecutionCapabilities::class;
-    protected $executionCapabilitiesDataType = '';
-    protected $highApiVersionType = BuildBazelSemverSemVer::class;
-    protected $highApiVersionDataType = '';
-    protected $lowApiVersionType = BuildBazelSemverSemVer::class;
-    protected $lowApiVersionDataType = '';
-    /**
-     * @param BuildBazelRemoteExecutionV2CacheCapabilities
-     */
-    public function setCacheCapabilities(BuildBazelRemoteExecutionV2CacheCapabilities $cacheCapabilities)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ServerCapabilities extends \Google\Model
     {
+        protected $cacheCapabilitiesType = BuildBazelRemoteExecutionV2CacheCapabilities::class;
+        protected $cacheCapabilitiesDataType = '';
+        protected $deprecatedApiVersionType = BuildBazelSemverSemVer::class;
+        protected $deprecatedApiVersionDataType = '';
+        protected $executionCapabilitiesType = BuildBazelRemoteExecutionV2ExecutionCapabilities::class;
+        protected $executionCapabilitiesDataType = '';
+        protected $highApiVersionType = BuildBazelSemverSemVer::class;
+        protected $highApiVersionDataType = '';
+        protected $lowApiVersionType = BuildBazelSemverSemVer::class;
+        protected $lowApiVersionDataType = '';
+        /**
+         * @param BuildBazelRemoteExecutionV2CacheCapabilities
+         */
+        public function setCacheCapabilities(BuildBazelRemoteExecutionV2CacheCapabilities $cacheCapabilities)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2CacheCapabilities
+         */
+        public function getCacheCapabilities()
+        {
+        }
+        /**
+         * @param BuildBazelSemverSemVer
+         */
+        public function setDeprecatedApiVersion(BuildBazelSemverSemVer $deprecatedApiVersion)
+        {
+        }
+        /**
+         * @return BuildBazelSemverSemVer
+         */
+        public function getDeprecatedApiVersion()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2ExecutionCapabilities
+         */
+        public function setExecutionCapabilities(BuildBazelRemoteExecutionV2ExecutionCapabilities $executionCapabilities)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ExecutionCapabilities
+         */
+        public function getExecutionCapabilities()
+        {
+        }
+        /**
+         * @param BuildBazelSemverSemVer
+         */
+        public function setHighApiVersion(BuildBazelSemverSemVer $highApiVersion)
+        {
+        }
+        /**
+         * @return BuildBazelSemverSemVer
+         */
+        public function getHighApiVersion()
+        {
+        }
+        /**
+         * @param BuildBazelSemverSemVer
+         */
+        public function setLowApiVersion(BuildBazelSemverSemVer $lowApiVersion)
+        {
+        }
+        /**
+         * @return BuildBazelSemverSemVer
+         */
+        public function getLowApiVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2CacheCapabilities
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ServerCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheCapabilities()
-    {
-    }
-    /**
-     * @param BuildBazelSemverSemVer
-     */
-    public function setDeprecatedApiVersion(BuildBazelSemverSemVer $deprecatedApiVersion)
-    {
-    }
-    /**
-     * @return BuildBazelSemverSemVer
-     */
-    public function getDeprecatedApiVersion()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2ExecutionCapabilities
-     */
-    public function setExecutionCapabilities(BuildBazelRemoteExecutionV2ExecutionCapabilities $executionCapabilities)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ExecutionCapabilities
-     */
-    public function getExecutionCapabilities()
-    {
-    }
-    /**
-     * @param BuildBazelSemverSemVer
-     */
-    public function setHighApiVersion(BuildBazelSemverSemVer $highApiVersion)
-    {
-    }
-    /**
-     * @return BuildBazelSemverSemVer
-     */
-    public function getHighApiVersion()
-    {
-    }
-    /**
-     * @param BuildBazelSemverSemVer
-     */
-    public function setLowApiVersion(BuildBazelSemverSemVer $lowApiVersion)
-    {
-    }
-    /**
-     * @return BuildBazelSemverSemVer
-     */
-    public function getLowApiVersion()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ServerCapabilities extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ServerCapabilities
     {
     }
 }

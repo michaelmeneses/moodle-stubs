@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class KeyToPath extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var int
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @param string
-     */
-    public function setKey($key)
+namespace Google\Service\CloudRun {
+    class KeyToPath extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var int
+         */
+        public $mode;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\KeyToPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_CloudRun_KeyToPath extends \Google\Service\CloudRun\KeyToPath
     {
     }
 }

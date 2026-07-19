@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription\Resource;
-
-/**
- * The "products" collection of methods.
- * Typical usage is:
- *  <code>
- *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
- *   $products = $paymentsresellersubscriptionService->partners_products;
- *  </code>
- */
-class PartnersProducts extends \Google\Service\Resource
-{
+namespace Google\Service\PaymentsResellerSubscription\Resource {
+    use Google\Service\PaymentsResellerSubscription\ListProductsResponse;
     /**
-     * Currently, it doesn't support **YouTube** products. Retrieves the products
-     * that can be resold by the partner. It should be autenticated with a service
-     * account. (products.listPartnersProducts)
-     *
-     * @param string $parent Required. The parent, the partner that can resell.
-     * Format: partners/{partner}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Specifies the filters for the product
-     * results. The syntax is defined in https://google.aip.dev/160 with the
-     * following caveats: 1. Only the following features are supported: - Logical
-     * operator `AND` - Comparison operator `=` (no wildcards `*`) - Traversal
-     * operator `.` - Has operator `:` (no wildcards `*`) 2. Only the following
-     * fields are supported: - `regionCodes` - `youtubePayload.partnerEligibilityId`
-     * - `youtubePayload.postalCode` 3. Unless explicitly mentioned above, other
-     * features are not supported. Example: `regionCodes:US AND
-     * youtubePayload.postalCode=94043 AND
-     * youtubePayload.partnerEligibilityId=eligibility-id`
-     * @opt_param int pageSize Optional. The maximum number of products to return.
-     * The service may return fewer than this value. If unspecified, at most 50
-     * products will be returned. The maximum value is 1000; values above 1000 will
-     * be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListProducts` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListProducts` must match the
-     * call that provided the page token.
-     * @return ListProductsResponse
-     * @throws \Google\Service\Exception
+     * The "products" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
+     *   $products = $paymentsresellersubscriptionService->partners_products;
+     *  </code>
      */
-    public function listPartnersProducts($parent, $optParams = [])
+    class PartnersProducts extends \Google\Service\Resource
+    {
+        /**
+         * Currently, it doesn't support **YouTube** products. Retrieves the products
+         * that can be resold by the partner. It should be autenticated with a service
+         * account. (products.listPartnersProducts)
+         *
+         * @param string $parent Required. The parent, the partner that can resell.
+         * Format: partners/{partner}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Specifies the filters for the product
+         * results. The syntax is defined in https://google.aip.dev/160 with the
+         * following caveats: 1. Only the following features are supported: - Logical
+         * operator `AND` - Comparison operator `=` (no wildcards `*`) - Traversal
+         * operator `.` - Has operator `:` (no wildcards `*`) 2. Only the following
+         * fields are supported: - `regionCodes` - `youtubePayload.partnerEligibilityId`
+         * - `youtubePayload.postalCode` 3. Unless explicitly mentioned above, other
+         * features are not supported. Example: `regionCodes:US AND
+         * youtubePayload.postalCode=94043 AND
+         * youtubePayload.partnerEligibilityId=eligibility-id`
+         * @opt_param int pageSize Optional. The maximum number of products to return.
+         * The service may return fewer than this value. If unspecified, at most 50
+         * products will be returned. The maximum value is 1000; values above 1000 will
+         * be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListProducts` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListProducts` must match the
+         * call that provided the page token.
+         * @return ListProductsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPartnersProducts($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Resource\PartnersProducts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PaymentsResellerSubscription_Resource_PartnersProducts extends \Google\Service\PaymentsResellerSubscription\Resource\PartnersProducts
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailLoggingServiceContext extends \Google\Model
-{
-    /**
-     * An identifier of the service. For example, "retail.googleapis.com".
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * An identifier of the service. For example, "retail.googleapis.com".
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailLoggingServiceContext extends \Google\Model
     {
+        /**
+         * An identifier of the service. For example, "retail.googleapis.com".
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * An identifier of the service. For example, "retail.googleapis.com".
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailLoggingServiceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_CloudRetail_GoogleCloudRetailLoggingServiceContext extends \Google\Service\CloudRetail\GoogleCloudRetailLoggingServiceContext
     {
     }
 }

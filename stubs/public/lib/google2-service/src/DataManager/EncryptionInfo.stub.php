@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class EncryptionInfo extends \Google\Model
-{
-    protected $awsWrappedKeyInfoType = AwsWrappedKeyInfo::class;
-    protected $awsWrappedKeyInfoDataType = '';
-    protected $gcpWrappedKeyInfoType = GcpWrappedKeyInfo::class;
-    protected $gcpWrappedKeyInfoDataType = '';
-    /**
-     * Amazon Web Services wrapped key information.
-     *
-     * @param AwsWrappedKeyInfo $awsWrappedKeyInfo
-     */
-    public function setAwsWrappedKeyInfo(AwsWrappedKeyInfo $awsWrappedKeyInfo)
+namespace Google\Service\DataManager {
+    class EncryptionInfo extends \Google\Model
     {
+        protected $awsWrappedKeyInfoType = AwsWrappedKeyInfo::class;
+        protected $awsWrappedKeyInfoDataType = '';
+        protected $gcpWrappedKeyInfoType = GcpWrappedKeyInfo::class;
+        protected $gcpWrappedKeyInfoDataType = '';
+        /**
+         * Amazon Web Services wrapped key information.
+         *
+         * @param AwsWrappedKeyInfo $awsWrappedKeyInfo
+         */
+        public function setAwsWrappedKeyInfo(AwsWrappedKeyInfo $awsWrappedKeyInfo)
+        {
+        }
+        /**
+         * @return AwsWrappedKeyInfo
+         */
+        public function getAwsWrappedKeyInfo()
+        {
+        }
+        /**
+         * Google Cloud Platform wrapped key information.
+         *
+         * @param GcpWrappedKeyInfo $gcpWrappedKeyInfo
+         */
+        public function setGcpWrappedKeyInfo(GcpWrappedKeyInfo $gcpWrappedKeyInfo)
+        {
+        }
+        /**
+         * @return GcpWrappedKeyInfo
+         */
+        public function getGcpWrappedKeyInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsWrappedKeyInfo
+     * Runtime class alias of \Google\Service\DataManager\EncryptionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsWrappedKeyInfo()
-    {
-    }
-    /**
-     * Google Cloud Platform wrapped key information.
-     *
-     * @param GcpWrappedKeyInfo $gcpWrappedKeyInfo
-     */
-    public function setGcpWrappedKeyInfo(GcpWrappedKeyInfo $gcpWrappedKeyInfo)
-    {
-    }
-    /**
-     * @return GcpWrappedKeyInfo
-     */
-    public function getGcpWrappedKeyInfo()
+    class Google_Service_DataManager_EncryptionInfo extends \Google\Service\DataManager\EncryptionInfo
     {
     }
 }

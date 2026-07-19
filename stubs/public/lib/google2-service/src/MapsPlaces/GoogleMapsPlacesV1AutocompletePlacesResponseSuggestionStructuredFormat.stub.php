@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat extends \Google\Model
-{
-    protected $mainTextType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText::class;
-    protected $mainTextDataType = '';
-    protected $secondaryTextType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText::class;
-    protected $secondaryTextDataType = '';
-    /**
-     * Represents the name of the Place or query.
-     *
-     * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $mainText
-     */
-    public function setMainText(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $mainText)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat extends \Google\Model
     {
+        protected $mainTextType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText::class;
+        protected $mainTextDataType = '';
+        protected $secondaryTextType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText::class;
+        protected $secondaryTextDataType = '';
+        /**
+         * Represents the name of the Place or query.
+         *
+         * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $mainText
+         */
+        public function setMainText(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $mainText)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText
+         */
+        public function getMainText()
+        {
+        }
+        /**
+         * Represents additional disambiguating features (such as a city or region) to
+         * further identify the Place or refine the query.
+         *
+         * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $secondaryText
+         */
+        public function setSecondaryText(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $secondaryText)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText
+         */
+        public function getSecondaryText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMainText()
-    {
-    }
-    /**
-     * Represents additional disambiguating features (such as a city or region) to
-     * further identify the Place or refine the query.
-     *
-     * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $secondaryText
-     */
-    public function setSecondaryText(GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText $secondaryText)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionFormattableText
-     */
-    public function getSecondaryText()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStructuredFormat
     {
     }
 }

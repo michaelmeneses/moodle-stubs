@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConnectAgentResource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $manifest;
-    protected $typeType = TypeMeta::class;
-    protected $typeDataType = '';
-    /**
-     * @param string
-     */
-    public function setManifest($manifest)
+namespace Google\Service\GKEHub {
+    class ConnectAgentResource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $manifest;
+        protected $typeType = TypeMeta::class;
+        protected $typeDataType = '';
+        /**
+         * @param string
+         */
+        public function setManifest($manifest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifest()
+        {
+        }
+        /**
+         * @param TypeMeta
+         */
+        public function setType(TypeMeta $type)
+        {
+        }
+        /**
+         * @return TypeMeta
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConnectAgentResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManifest()
-    {
-    }
-    /**
-     * @param TypeMeta
-     */
-    public function setType(TypeMeta $type)
-    {
-    }
-    /**
-     * @return TypeMeta
-     */
-    public function getType()
+    class Google_Service_GKEHub_ConnectAgentResource extends \Google\Service\GKEHub\ConnectAgentResource
     {
     }
 }

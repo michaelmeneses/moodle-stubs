@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListContainerVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'containerVersionHeader';
-    protected $containerVersionHeaderType = ContainerVersionHeader::class;
-    protected $containerVersionHeaderDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All container version headers of a GTM Container.
-     *
-     * @param ContainerVersionHeader[] $containerVersionHeader
-     */
-    public function setContainerVersionHeader($containerVersionHeader)
+namespace Google\Service\TagManager {
+    class ListContainerVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'containerVersionHeader';
+        protected $containerVersionHeaderType = ContainerVersionHeader::class;
+        protected $containerVersionHeaderDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All container version headers of a GTM Container.
+         *
+         * @param ContainerVersionHeader[] $containerVersionHeader
+         */
+        public function setContainerVersionHeader($containerVersionHeader)
+        {
+        }
+        /**
+         * @return ContainerVersionHeader[]
+         */
+        public function getContainerVersionHeader()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContainerVersionHeader[]
+     * Runtime class alias of \Google\Service\TagManager\ListContainerVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerVersionHeader()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_TagManager_ListContainerVersionsResponse extends \Google\Service\TagManager\ListContainerVersionsResponse
     {
     }
 }

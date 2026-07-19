@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayGrouping;
-
-class Tag extends \Google\Model
-{
-    /**
-     * A boolean value of the tag.
-     *
-     * @var bool
-     */
-    public $booleanValue;
-    /**
-     * A signed 64-bit integer value of the tag.
-     *
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * Required. Key for the tag.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * A string value of the tag.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * A time value of the tag.
-     *
-     * @var string
-     */
-    public $timeValue;
-    /**
-     * A boolean value of the tag.
-     *
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\PlayGrouping {
+    class Tag extends \Google\Model
     {
+        /**
+         * A boolean value of the tag.
+         *
+         * @var bool
+         */
+        public $booleanValue;
+        /**
+         * A signed 64-bit integer value of the tag.
+         *
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * Required. Key for the tag.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * A string value of the tag.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * A time value of the tag.
+         *
+         * @var string
+         */
+        public $timeValue;
+        /**
+         * A boolean value of the tag.
+         *
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * A signed 64-bit integer value of the tag.
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * Required. Key for the tag.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * A string value of the tag.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * A time value of the tag.
+         *
+         * @param string $timeValue
+         */
+        public function setTimeValue($timeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PlayGrouping\Tag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * A signed 64-bit integer value of the tag.
-     *
-     * @param string $int64Value
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * Required. Key for the tag.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * A string value of the tag.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * A time value of the tag.
-     *
-     * @param string $timeValue
-     */
-    public function setTimeValue($timeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeValue()
+    class Google_Service_PlayGrouping_Tag extends \Google\Service\PlayGrouping\Tag
     {
     }
 }

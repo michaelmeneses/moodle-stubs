@@ -16,6 +16,7 @@
  */
 namespace Mustache\Logger;
 
+use Mustache\Logger;
 /**
  * This is a simple Logger implementation that other Loggers can inherit from.
  *

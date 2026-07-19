@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HangoutEvent extends \Google\Collection
-{
-    protected $collection_key = 'participantId';
-    /**
-     * @var string
-     */
-    public $hangoutDurationSecs;
-    /**
-     * @var string
-     */
-    public $mediaType;
-    protected $participantIdType = StoredParticipantId::class;
-    protected $participantIdDataType = 'array';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setHangoutDurationSecs($hangoutDurationSecs)
+namespace Google\Service\CloudSearch {
+    class HangoutEvent extends \Google\Collection
     {
+        protected $collection_key = 'participantId';
+        /**
+         * @var string
+         */
+        public $hangoutDurationSecs;
+        /**
+         * @var string
+         */
+        public $mediaType;
+        protected $participantIdType = StoredParticipantId::class;
+        protected $participantIdDataType = 'array';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setHangoutDurationSecs($hangoutDurationSecs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHangoutDurationSecs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMediaType($mediaType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaType()
+        {
+        }
+        /**
+         * @param StoredParticipantId[]
+         */
+        public function setParticipantId($participantId)
+        {
+        }
+        /**
+         * @return StoredParticipantId[]
+         */
+        public function getParticipantId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\HangoutEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHangoutDurationSecs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMediaType($mediaType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMediaType()
-    {
-    }
-    /**
-     * @param StoredParticipantId[]
-     */
-    public function setParticipantId($participantId)
-    {
-    }
-    /**
-     * @return StoredParticipantId[]
-     */
-    public function getParticipantId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_HangoutEvent extends \Google\Service\CloudSearch\HangoutEvent
     {
     }
 }

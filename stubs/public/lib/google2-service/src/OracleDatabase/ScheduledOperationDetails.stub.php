@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ScheduledOperationDetails extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_OF_WEEK_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
-    /**
-     * Output only. Day of week.
-     *
-     * @var string
-     */
-    public $dayOfWeek;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    protected $stopTimeType = TimeOfDay::class;
-    protected $stopTimeDataType = '';
-    /**
-     * Output only. Day of week.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_OF_WEEK_* $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\OracleDatabase {
+    class ScheduledOperationDetails extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_OF_WEEK_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
+        /**
+         * Output only. Day of week.
+         *
+         * @var string
+         */
+        public $dayOfWeek;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        protected $stopTimeType = TimeOfDay::class;
+        protected $stopTimeDataType = '';
+        /**
+         * Output only. Day of week.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_OF_WEEK_* $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return self::DAY_OF_WEEK_*
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * Output only. Auto start time.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. Auto stop time.
+         *
+         * @param TimeOfDay $stopTime
+         */
+        public function setStopTime(TimeOfDay $stopTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStopTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_OF_WEEK_*
+     * Runtime class alias of \Google\Service\OracleDatabase\ScheduledOperationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * Output only. Auto start time.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. Auto stop time.
-     *
-     * @param TimeOfDay $stopTime
-     */
-    public function setStopTime(TimeOfDay $stopTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStopTime()
+    class Google_Service_OracleDatabase_ScheduledOperationDetails extends \Google\Service\OracleDatabase\ScheduledOperationDetails
     {
     }
 }

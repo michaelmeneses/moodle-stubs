@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantGenerationConfigSystemInstruction extends \Google\Model
-{
-    /**
-     * Optional. Additional system instruction that will be added to the default
-     * system instruction.
-     *
-     * @var string
-     */
-    public $additionalSystemInstruction;
-    /**
-     * Optional. Additional system instruction that will be added to the default
-     * system instruction.
-     *
-     * @param string $additionalSystemInstruction
-     */
-    public function setAdditionalSystemInstruction($additionalSystemInstruction)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantGenerationConfigSystemInstruction extends \Google\Model
     {
+        /**
+         * Optional. Additional system instruction that will be added to the default
+         * system instruction.
+         *
+         * @var string
+         */
+        public $additionalSystemInstruction;
+        /**
+         * Optional. Additional system instruction that will be added to the default
+         * system instruction.
+         *
+         * @param string $additionalSystemInstruction
+         */
+        public function setAdditionalSystemInstruction($additionalSystemInstruction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdditionalSystemInstruction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGenerationConfigSystemInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalSystemInstruction()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantGenerationConfigSystemInstruction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGenerationConfigSystemInstruction
     {
     }
 }

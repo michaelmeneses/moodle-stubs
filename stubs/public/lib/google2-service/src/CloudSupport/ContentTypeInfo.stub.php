@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class ContentTypeInfo extends \Google\Model
-{
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $bestGuess;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $fromBytes;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $fromFileName;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $fromHeader;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $fromUrlPath;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $bestGuess
-     */
-    public function setBestGuess($bestGuess)
+namespace Google\Service\CloudSupport {
+    class ContentTypeInfo extends \Google\Model
     {
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $bestGuess;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $fromBytes;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $fromFileName;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $fromHeader;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $fromUrlPath;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $bestGuess
+         */
+        public function setBestGuess($bestGuess)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBestGuess()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $fromBytes
+         */
+        public function setFromBytes($fromBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromBytes()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $fromFileName
+         */
+        public function setFromFileName($fromFileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromFileName()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $fromHeader
+         */
+        public function setFromHeader($fromHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromHeader()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $fromUrlPath
+         */
+        public function setFromUrlPath($fromUrlPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromUrlPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\ContentTypeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestGuess()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $fromBytes
-     */
-    public function setFromBytes($fromBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromBytes()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $fromFileName
-     */
-    public function setFromFileName($fromFileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromFileName()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $fromHeader
-     */
-    public function setFromHeader($fromHeader)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromHeader()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $fromUrlPath
-     */
-    public function setFromUrlPath($fromUrlPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromUrlPath()
+    class Google_Service_CloudSupport_ContentTypeInfo extends \Google\Service\CloudSupport\ContentTypeInfo
     {
     }
 }

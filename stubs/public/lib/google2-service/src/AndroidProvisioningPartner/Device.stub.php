@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class Device extends \Google\Collection
-{
-    protected $collection_key = 'claims';
-    protected $claimsType = DeviceClaim::class;
-    protected $claimsDataType = 'array';
-    /**
-     * Not available to resellers.
-     *
-     * @var string
-     */
-    public $configuration;
-    /**
-     * Output only. The ID of the device. Assigned by the server.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $deviceIdentifierType = DeviceIdentifier::class;
-    protected $deviceIdentifierDataType = '';
-    protected $deviceMetadataType = DeviceMetadata::class;
-    protected $deviceMetadataDataType = '';
-    /**
-     * Output only. The API resource name in the format
-     * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`. Assigned by the server.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The provisioning claims for a device. Devices claimed for
-     * zero-touch enrollment have a claim with the type `SECTION_TYPE_ZERO_TOUCH`.
-     * Call `partners.devices.unclaim` or `partners.devices.unclaimAsync` to
-     * remove the device from zero-touch enrollment.
-     *
-     * @param DeviceClaim[] $claims
-     */
-    public function setClaims($claims)
+namespace Google\Service\AndroidProvisioningPartner {
+    class Device extends \Google\Collection
     {
+        protected $collection_key = 'claims';
+        protected $claimsType = DeviceClaim::class;
+        protected $claimsDataType = 'array';
+        /**
+         * Not available to resellers.
+         *
+         * @var string
+         */
+        public $configuration;
+        /**
+         * Output only. The ID of the device. Assigned by the server.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $deviceIdentifierType = DeviceIdentifier::class;
+        protected $deviceIdentifierDataType = '';
+        protected $deviceMetadataType = DeviceMetadata::class;
+        protected $deviceMetadataDataType = '';
+        /**
+         * Output only. The API resource name in the format
+         * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`. Assigned by the server.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The provisioning claims for a device. Devices claimed for
+         * zero-touch enrollment have a claim with the type `SECTION_TYPE_ZERO_TOUCH`.
+         * Call `partners.devices.unclaim` or `partners.devices.unclaimAsync` to
+         * remove the device from zero-touch enrollment.
+         *
+         * @param DeviceClaim[] $claims
+         */
+        public function setClaims($claims)
+        {
+        }
+        /**
+         * @return DeviceClaim[]
+         */
+        public function getClaims()
+        {
+        }
+        /**
+         * Not available to resellers.
+         *
+         * @param string $configuration
+         */
+        public function setConfiguration($configuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * Output only. The ID of the device. Assigned by the server.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * The hardware IDs that identify a manufactured device. To learn more, read
+         * [Identifiers](https://developers.google.com/zero-touch/guides/identifiers).
+         *
+         * @param DeviceIdentifier $deviceIdentifier
+         */
+        public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+        {
+        }
+        /**
+         * @return DeviceIdentifier
+         */
+        public function getDeviceIdentifier()
+        {
+        }
+        /**
+         * The metadata attached to the device. Structured as key-value pairs. To
+         * learn more, read [Device metadata](https://developers.google.com/zero-
+         * touch/guides/metadata).
+         *
+         * @param DeviceMetadata $deviceMetadata
+         */
+        public function setDeviceMetadata(DeviceMetadata $deviceMetadata)
+        {
+        }
+        /**
+         * @return DeviceMetadata
+         */
+        public function getDeviceMetadata()
+        {
+        }
+        /**
+         * Output only. The API resource name in the format
+         * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`. Assigned by the server.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceClaim[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Device registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaims()
-    {
-    }
-    /**
-     * Not available to resellers.
-     *
-     * @param string $configuration
-     */
-    public function setConfiguration($configuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * Output only. The ID of the device. Assigned by the server.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * The hardware IDs that identify a manufactured device. To learn more, read
-     * [Identifiers](https://developers.google.com/zero-touch/guides/identifiers).
-     *
-     * @param DeviceIdentifier $deviceIdentifier
-     */
-    public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
-    {
-    }
-    /**
-     * @return DeviceIdentifier
-     */
-    public function getDeviceIdentifier()
-    {
-    }
-    /**
-     * The metadata attached to the device. Structured as key-value pairs. To
-     * learn more, read [Device metadata](https://developers.google.com/zero-
-     * touch/guides/metadata).
-     *
-     * @param DeviceMetadata $deviceMetadata
-     */
-    public function setDeviceMetadata(DeviceMetadata $deviceMetadata)
-    {
-    }
-    /**
-     * @return DeviceMetadata
-     */
-    public function getDeviceMetadata()
-    {
-    }
-    /**
-     * Output only. The API resource name in the format
-     * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`. Assigned by the server.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidProvisioningPartner_Device extends \Google\Service\AndroidProvisioningPartner\Device
     {
     }
 }

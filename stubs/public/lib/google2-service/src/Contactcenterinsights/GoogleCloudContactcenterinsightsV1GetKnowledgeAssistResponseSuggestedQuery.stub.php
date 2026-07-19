@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseSuggestedQuery extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $queryText;
-    /**
-     * @var float
-     */
-    public $score;
-    /**
-     * @param string
-     */
-    public function setQueryText($queryText)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseSuggestedQuery extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $queryText;
+        /**
+         * @var float
+         */
+        public $score;
+        /**
+         * @param string
+         */
+        public function setQueryText($queryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryText()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseSuggestedQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryText()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseSuggestedQuery extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseSuggestedQuery
     {
     }
 }

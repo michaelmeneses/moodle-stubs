@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaSourceCode extends \Google\Model
-{
-    /**
-     * Required. Source code.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Required. End line number (1-based).
-     *
-     * @var int
-     */
-    public $endLine;
-    /**
-     * Required. Path of the file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. Start line number (1-based).
-     *
-     * @var int
-     */
-    public $startLine;
-    /**
-     * Required. Source code.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaSourceCode extends \Google\Model
     {
+        /**
+         * Required. Source code.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Required. End line number (1-based).
+         *
+         * @var int
+         */
+        public $endLine;
+        /**
+         * Required. Path of the file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. Start line number (1-based).
+         *
+         * @var int
+         */
+        public $startLine;
+        /**
+         * Required. Source code.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Required. End line number (1-based).
+         *
+         * @param int $endLine
+         */
+        public function setEndLine($endLine)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndLine()
+        {
+        }
+        /**
+         * Required. Path of the file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Required. Start line number (1-based).
+         *
+         * @param int $startLine
+         */
+        public function setStartLine($startLine)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaSourceCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Required. End line number (1-based).
-     *
-     * @param int $endLine
-     */
-    public function setEndLine($endLine)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndLine()
-    {
-    }
-    /**
-     * Required. Path of the file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Required. Start line number (1-based).
-     *
-     * @param int $startLine
-     */
-    public function setStartLine($startLine)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartLine()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaSourceCode extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaSourceCode
     {
     }
 }

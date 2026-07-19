@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Parameter extends \Google\Model
-{
-    /**
-     * Key or name for this parameter.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value for this parameter.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Key or name for this parameter.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Dataflow {
+    class Parameter extends \Google\Model
     {
+        /**
+         * Key or name for this parameter.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value for this parameter.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Key or name for this parameter.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value for this parameter.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Parameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Value for this parameter.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Dataflow_Parameter extends \Google\Service\Dataflow\Parameter
     {
     }
 }

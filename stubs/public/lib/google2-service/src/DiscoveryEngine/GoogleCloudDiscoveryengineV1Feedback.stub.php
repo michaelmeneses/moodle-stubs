@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1Feedback extends \Google\Collection
-{
-    protected $collection_key = 'reasons';
-    /**
-     * @var string
-     */
-    public $comment;
-    protected $conversationInfoType = GoogleCloudDiscoveryengineV1FeedbackConversationInfo::class;
-    protected $conversationInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $feedbackType;
-    /**
-     * @var string
-     */
-    public $llmModelVersion;
-    /**
-     * @var string[]
-     */
-    public $reasons;
-    /**
-     * @param string
-     */
-    public function setComment($comment)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1Feedback extends \Google\Collection
     {
+        protected $collection_key = 'reasons';
+        /**
+         * @var string
+         */
+        public $comment;
+        protected $conversationInfoType = GoogleCloudDiscoveryengineV1FeedbackConversationInfo::class;
+        protected $conversationInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $feedbackType;
+        /**
+         * @var string
+         */
+        public $llmModelVersion;
+        /**
+         * @var string[]
+         */
+        public $reasons;
+        /**
+         * @param string
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1FeedbackConversationInfo
+         */
+        public function setConversationInfo(GoogleCloudDiscoveryengineV1FeedbackConversationInfo $conversationInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1FeedbackConversationInfo
+         */
+        public function getConversationInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFeedbackType($feedbackType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeedbackType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLlmModelVersion($llmModelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLlmModelVersion()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setReasons($reasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReasons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Feedback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComment()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1FeedbackConversationInfo
-     */
-    public function setConversationInfo(GoogleCloudDiscoveryengineV1FeedbackConversationInfo $conversationInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1FeedbackConversationInfo
-     */
-    public function getConversationInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFeedbackType($feedbackType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeedbackType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLlmModelVersion($llmModelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLlmModelVersion()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setReasons($reasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReasons()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1Feedback extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Feedback
     {
     }
 }

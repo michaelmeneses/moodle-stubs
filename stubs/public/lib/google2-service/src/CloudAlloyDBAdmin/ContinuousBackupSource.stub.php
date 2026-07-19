@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ContinuousBackupSource extends \Google\Model
-{
-    /**
-     * Required. The source cluster from which to restore. This cluster must have
-     * continuous backup enabled for this operation to succeed. For the required
-     * format, see the comment on the Cluster.name field.
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * Required. The point in time to restore to.
-     *
-     * @var string
-     */
-    public $pointInTime;
-    /**
-     * Required. The source cluster from which to restore. This cluster must have
-     * continuous backup enabled for this operation to succeed. For the required
-     * format, see the comment on the Cluster.name field.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ContinuousBackupSource extends \Google\Model
     {
+        /**
+         * Required. The source cluster from which to restore. This cluster must have
+         * continuous backup enabled for this operation to succeed. For the required
+         * format, see the comment on the Cluster.name field.
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * Required. The point in time to restore to.
+         *
+         * @var string
+         */
+        public $pointInTime;
+        /**
+         * Required. The source cluster from which to restore. This cluster must have
+         * continuous backup enabled for this operation to succeed. For the required
+         * format, see the comment on the Cluster.name field.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Required. The point in time to restore to.
+         *
+         * @param string $pointInTime
+         */
+        public function setPointInTime($pointInTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPointInTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ContinuousBackupSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * Required. The point in time to restore to.
-     *
-     * @param string $pointInTime
-     */
-    public function setPointInTime($pointInTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPointInTime()
+    class Google_Service_CloudAlloyDBAdmin_ContinuousBackupSource extends \Google\Service\CloudAlloyDBAdmin\ContinuousBackupSource
     {
     }
 }

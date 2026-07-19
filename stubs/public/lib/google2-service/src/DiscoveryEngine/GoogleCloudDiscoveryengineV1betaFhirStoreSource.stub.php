@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaFhirStoreSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fhirStore;
-    /**
-     * @var string
-     */
-    public $gcsStagingDir;
-    /**
-     * @param string
-     */
-    public function setFhirStore($fhirStore)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaFhirStoreSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fhirStore;
+        /**
+         * @var string
+         */
+        public $gcsStagingDir;
+        /**
+         * @param string
+         */
+        public function setFhirStore($fhirStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFhirStore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGcsStagingDir($gcsStagingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsStagingDir()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFhirStoreSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFhirStore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGcsStagingDir($gcsStagingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsStagingDir()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaFhirStoreSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFhirStoreSource
     {
     }
 }

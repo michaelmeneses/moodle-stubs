@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SbomReferenceIntotoPayload extends \Google\Collection
-{
-    protected $collection_key = 'subject';
-    protected $internal_gapi_mappings = ["type" => "_type"];
-    /**
-     * Identifier for the schema of the Statement.
-     *
-     * @var string
-     */
-    public $type;
-    protected $predicateDataType = '';
-    /**
-     * URI identifying the type of the Predicate.
-     *
-     * @var string
-     */
-    public $predicateType;
-    protected $subjectType = Subject::class;
-    protected $subjectDataType = 'array';
-    /**
-     * Identifier for the schema of the Statement.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\ContainerAnalysis {
+    class SbomReferenceIntotoPayload extends \Google\Collection
     {
+        protected $collection_key = 'subject';
+        protected $internal_gapi_mappings = ["type" => "_type"];
+        /**
+         * Identifier for the schema of the Statement.
+         *
+         * @var string
+         */
+        public $type;
+        protected $predicateDataType = '';
+        /**
+         * URI identifying the type of the Predicate.
+         *
+         * @var string
+         */
+        public $predicateType;
+        protected $subjectType = Subject::class;
+        protected $subjectDataType = 'array';
+        /**
+         * Identifier for the schema of the Statement.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Additional parameters of the Predicate. Includes the actual data about the
+         * SBOM.
+         *
+         * @param SbomReferenceIntotoPredicate $predicate
+         */
+        public function setPredicate(SbomReferenceIntotoPredicate $predicate)
+        {
+        }
+        /**
+         * @return SbomReferenceIntotoPredicate
+         */
+        public function getPredicate()
+        {
+        }
+        /**
+         * URI identifying the type of the Predicate.
+         *
+         * @param string $predicateType
+         */
+        public function setPredicateType($predicateType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPredicateType()
+        {
+        }
+        /**
+         * Set of software artifacts that the attestation applies to. Each element
+         * represents a single software artifact.
+         *
+         * @param Subject[] $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return Subject[]
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SbomReferenceIntotoPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * Additional parameters of the Predicate. Includes the actual data about the
-     * SBOM.
-     *
-     * @param SbomReferenceIntotoPredicate $predicate
-     */
-    public function setPredicate(SbomReferenceIntotoPredicate $predicate)
-    {
-    }
-    /**
-     * @return SbomReferenceIntotoPredicate
-     */
-    public function getPredicate()
-    {
-    }
-    /**
-     * URI identifying the type of the Predicate.
-     *
-     * @param string $predicateType
-     */
-    public function setPredicateType($predicateType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPredicateType()
-    {
-    }
-    /**
-     * Set of software artifacts that the attestation applies to. Each element
-     * represents a single software artifact.
-     *
-     * @param Subject[] $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return Subject[]
-     */
-    public function getSubject()
+    class Google_Service_ContainerAnalysis_SbomReferenceIntotoPayload extends \Google\Service\ContainerAnalysis\SbomReferenceIntotoPayload
     {
     }
 }

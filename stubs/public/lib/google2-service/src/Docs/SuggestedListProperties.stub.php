@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedListProperties extends \Google\Model
-{
-    protected $listPropertiesType = ListProperties::class;
-    protected $listPropertiesDataType = '';
-    protected $listPropertiesSuggestionStateType = ListPropertiesSuggestionState::class;
-    protected $listPropertiesSuggestionStateDataType = '';
-    /**
-     * A ListProperties that only includes the changes made in this suggestion.
-     * This can be used along with the list_properties_suggestion_state to see
-     * which fields have changed and their new values.
-     *
-     * @param ListProperties $listProperties
-     */
-    public function setListProperties(ListProperties $listProperties)
+namespace Google\Service\Docs {
+    class SuggestedListProperties extends \Google\Model
     {
+        protected $listPropertiesType = ListProperties::class;
+        protected $listPropertiesDataType = '';
+        protected $listPropertiesSuggestionStateType = ListPropertiesSuggestionState::class;
+        protected $listPropertiesSuggestionStateDataType = '';
+        /**
+         * A ListProperties that only includes the changes made in this suggestion.
+         * This can be used along with the list_properties_suggestion_state to see
+         * which fields have changed and their new values.
+         *
+         * @param ListProperties $listProperties
+         */
+        public function setListProperties(ListProperties $listProperties)
+        {
+        }
+        /**
+         * @return ListProperties
+         */
+        public function getListProperties()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base ListProperties have
+         * been changed in this suggestion.
+         *
+         * @param ListPropertiesSuggestionState $listPropertiesSuggestionState
+         */
+        public function setListPropertiesSuggestionState(ListPropertiesSuggestionState $listPropertiesSuggestionState)
+        {
+        }
+        /**
+         * @return ListPropertiesSuggestionState
+         */
+        public function getListPropertiesSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListProperties
+     * Runtime class alias of \Google\Service\Docs\SuggestedListProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListProperties()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base ListProperties have
-     * been changed in this suggestion.
-     *
-     * @param ListPropertiesSuggestionState $listPropertiesSuggestionState
-     */
-    public function setListPropertiesSuggestionState(ListPropertiesSuggestionState $listPropertiesSuggestionState)
-    {
-    }
-    /**
-     * @return ListPropertiesSuggestionState
-     */
-    public function getListPropertiesSuggestionState()
+    class Google_Service_Docs_SuggestedListProperties extends \Google\Service\Docs\SuggestedListProperties
     {
     }
 }

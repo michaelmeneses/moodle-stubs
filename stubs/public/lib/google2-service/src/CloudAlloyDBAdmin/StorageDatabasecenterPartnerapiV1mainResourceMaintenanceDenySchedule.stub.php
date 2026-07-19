@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainResourceMaintenanceDenySchedule extends \Google\Model
-{
-    protected $endDateType = GoogleTypeDate::class;
-    protected $endDateDataType = '';
-    protected $startDateType = GoogleTypeDate::class;
-    protected $startDateDataType = '';
-    protected $timeType = GoogleTypeTimeOfDay::class;
-    protected $timeDataType = '';
-    /**
-     * Optional. Deny period end date.
-     *
-     * @param GoogleTypeDate $endDate
-     */
-    public function setEndDate(GoogleTypeDate $endDate)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainResourceMaintenanceDenySchedule extends \Google\Model
     {
+        protected $endDateType = GoogleTypeDate::class;
+        protected $endDateDataType = '';
+        protected $startDateType = GoogleTypeDate::class;
+        protected $startDateDataType = '';
+        protected $timeType = GoogleTypeTimeOfDay::class;
+        protected $timeDataType = '';
+        /**
+         * Optional. Deny period end date.
+         *
+         * @param GoogleTypeDate $endDate
+         */
+        public function setEndDate(GoogleTypeDate $endDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Optional. The start date of the deny maintenance period.
+         *
+         * @param GoogleTypeDate $startDate
+         */
+        public function setStartDate(GoogleTypeDate $startDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Optional. Time in UTC when the deny period starts on start_date and ends on
+         * end_date.
+         *
+         * @param GoogleTypeTimeOfDay $time
+         */
+        public function setTime(GoogleTypeTimeOfDay $time)
+        {
+        }
+        /**
+         * @return GoogleTypeTimeOfDay
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainResourceMaintenanceDenySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Optional. The start date of the deny maintenance period.
-     *
-     * @param GoogleTypeDate $startDate
-     */
-    public function setStartDate(GoogleTypeDate $startDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Optional. Time in UTC when the deny period starts on start_date and ends on
-     * end_date.
-     *
-     * @param GoogleTypeTimeOfDay $time
-     */
-    public function setTime(GoogleTypeTimeOfDay $time)
-    {
-    }
-    /**
-     * @return GoogleTypeTimeOfDay
-     */
-    public function getTime()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainResourceMaintenanceDenySchedule extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainResourceMaintenanceDenySchedule
     {
     }
 }

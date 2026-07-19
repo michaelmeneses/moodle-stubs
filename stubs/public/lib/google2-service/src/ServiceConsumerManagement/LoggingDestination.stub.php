@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class LoggingDestination extends \Google\Collection
-{
-    protected $collection_key = 'logs';
-    /**
-     * Names of the logs to be sent to this destination. Each name must be defined
-     * in the Service.logs section. If the log name is not a domain scoped name,
-     * it will be automatically prefixed with the service name followed by "/".
-     *
-     * @var string[]
-     */
-    public $logs;
-    /**
-     * The monitored resource type. The type must be defined in the
-     * Service.monitored_resources section.
-     *
-     * @var string
-     */
-    public $monitoredResource;
-    /**
-     * Names of the logs to be sent to this destination. Each name must be defined
-     * in the Service.logs section. If the log name is not a domain scoped name,
-     * it will be automatically prefixed with the service name followed by "/".
-     *
-     * @param string[] $logs
-     */
-    public function setLogs($logs)
+namespace Google\Service\ServiceConsumerManagement {
+    class LoggingDestination extends \Google\Collection
     {
+        protected $collection_key = 'logs';
+        /**
+         * Names of the logs to be sent to this destination. Each name must be defined
+         * in the Service.logs section. If the log name is not a domain scoped name,
+         * it will be automatically prefixed with the service name followed by "/".
+         *
+         * @var string[]
+         */
+        public $logs;
+        /**
+         * The monitored resource type. The type must be defined in the
+         * Service.monitored_resources section.
+         *
+         * @var string
+         */
+        public $monitoredResource;
+        /**
+         * Names of the logs to be sent to this destination. Each name must be defined
+         * in the Service.logs section. If the log name is not a domain scoped name,
+         * it will be automatically prefixed with the service name followed by "/".
+         *
+         * @param string[] $logs
+         */
+        public function setLogs($logs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLogs()
+        {
+        }
+        /**
+         * The monitored resource type. The type must be defined in the
+         * Service.monitored_resources section.
+         *
+         * @param string $monitoredResource
+         */
+        public function setMonitoredResource($monitoredResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonitoredResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\LoggingDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogs()
-    {
-    }
-    /**
-     * The monitored resource type. The type must be defined in the
-     * Service.monitored_resources section.
-     *
-     * @param string $monitoredResource
-     */
-    public function setMonitoredResource($monitoredResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonitoredResource()
+    class Google_Service_ServiceConsumerManagement_LoggingDestination extends \Google\Service\ServiceConsumerManagement\LoggingDestination
     {
     }
 }

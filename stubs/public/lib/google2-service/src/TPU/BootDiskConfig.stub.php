@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class BootDiskConfig extends \Google\Model
-{
-    protected $customerEncryptionKeyType = CustomerEncryptionKey::class;
-    protected $customerEncryptionKeyDataType = '';
-    /**
-     * Optional. Customer encryption key for boot disk.
-     *
-     * @param CustomerEncryptionKey $customerEncryptionKey
-     */
-    public function setCustomerEncryptionKey(CustomerEncryptionKey $customerEncryptionKey)
+namespace Google\Service\TPU {
+    class BootDiskConfig extends \Google\Model
     {
+        protected $customerEncryptionKeyType = CustomerEncryptionKey::class;
+        protected $customerEncryptionKeyDataType = '';
+        /**
+         * Optional. Customer encryption key for boot disk.
+         *
+         * @param CustomerEncryptionKey $customerEncryptionKey
+         */
+        public function setCustomerEncryptionKey(CustomerEncryptionKey $customerEncryptionKey)
+        {
+        }
+        /**
+         * @return CustomerEncryptionKey
+         */
+        public function getCustomerEncryptionKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerEncryptionKey
+     * Runtime class alias of \Google\Service\TPU\BootDiskConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerEncryptionKey()
+    class Google_Service_TPU_BootDiskConfig extends \Google\Service\TPU\BootDiskConfig
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ListTaskSpec extends \Google\Model
-{
-    protected $manifestType = Manifest::class;
-    protected $manifestDataType = '';
-    protected $objectPrefixesType = ObjectPrefixes::class;
-    protected $objectPrefixesDataType = '';
-    /**
-     * @param Manifest
-     */
-    public function setManifest(Manifest $manifest)
+namespace Google\Service\Storagetransfer {
+    class ListTaskSpec extends \Google\Model
     {
+        protected $manifestType = Manifest::class;
+        protected $manifestDataType = '';
+        protected $objectPrefixesType = ObjectPrefixes::class;
+        protected $objectPrefixesDataType = '';
+        /**
+         * @param Manifest
+         */
+        public function setManifest(Manifest $manifest)
+        {
+        }
+        /**
+         * @return Manifest
+         */
+        public function getManifest()
+        {
+        }
+        /**
+         * @param ObjectPrefixes
+         */
+        public function setObjectPrefixes(ObjectPrefixes $objectPrefixes)
+        {
+        }
+        /**
+         * @return ObjectPrefixes
+         */
+        public function getObjectPrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Manifest
+     * Runtime class alias of \Google\Service\Storagetransfer\ListTaskSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManifest()
-    {
-    }
-    /**
-     * @param ObjectPrefixes
-     */
-    public function setObjectPrefixes(ObjectPrefixes $objectPrefixes)
-    {
-    }
-    /**
-     * @return ObjectPrefixes
-     */
-    public function getObjectPrefixes()
+    class Google_Service_Storagetransfer_ListTaskSpec extends \Google\Service\Storagetransfer\ListTaskSpec
     {
     }
 }

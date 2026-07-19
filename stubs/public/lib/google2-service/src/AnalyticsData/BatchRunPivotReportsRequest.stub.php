@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class BatchRunPivotReportsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = RunPivotReportRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Individual requests. Each request has a separate pivot report response.
-     * Each batch request is allowed up to 5 requests.
-     *
-     * @param RunPivotReportRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AnalyticsData {
+    class BatchRunPivotReportsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = RunPivotReportRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Individual requests. Each request has a separate pivot report response.
+         * Each batch request is allowed up to 5 requests.
+         *
+         * @param RunPivotReportRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return RunPivotReportRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RunPivotReportRequest[]
+     * Runtime class alias of \Google\Service\AnalyticsData\BatchRunPivotReportsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AnalyticsData_BatchRunPivotReportsRequest extends \Google\Service\AnalyticsData\BatchRunPivotReportsRequest
     {
     }
 }

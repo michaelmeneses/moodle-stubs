@@ -21,70 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "dynamicTargetingKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $dynamicTargetingKeys = $dfareportingService->dynamicTargetingKeys;
- *  </code>
- */
-class DynamicTargetingKeys extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DynamicTargetingKey;
+    use Google\Service\Dfareporting\DynamicTargetingKeysListResponse;
     /**
-     * Deletes an existing dynamic targeting key. (dynamicTargetingKeys.delete)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $objectId ID of the object of this dynamic targeting key. This
-     * is a required field.
-     * @param string $name Required. Name of this dynamic targeting key. This is a
-     * required field. Must be less than 256 characters long and cannot contain
-     * commas. All characters are converted to lowercase.
-     * @param string $objectType Required. Type of the object of this dynamic
-     * targeting key. This is a required field.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "dynamicTargetingKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $dynamicTargetingKeys = $dfareportingService->dynamicTargetingKeys;
+     *  </code>
      */
-    public function delete($profileId, $objectId, $name, $objectType, $optParams = [])
+    class DynamicTargetingKeys extends \Google\Service\Resource
     {
+        /**
+         * Deletes an existing dynamic targeting key. (dynamicTargetingKeys.delete)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $objectId ID of the object of this dynamic targeting key. This
+         * is a required field.
+         * @param string $name Required. Name of this dynamic targeting key. This is a
+         * required field. Must be less than 256 characters long and cannot contain
+         * commas. All characters are converted to lowercase.
+         * @param string $objectType Required. Type of the object of this dynamic
+         * targeting key. This is a required field.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($profileId, $objectId, $name, $objectType, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new dynamic targeting key. Keys must be created at the advertiser
+         * level before being assigned to the advertiser's ads, creatives, or
+         * placements. There is a maximum of 1000 keys per advertiser, out of which a
+         * maximum of 20 keys can be assigned per ad, creative, or placement.
+         * (dynamicTargetingKeys.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param DynamicTargetingKey $postBody
+         * @param array $optParams Optional parameters.
+         * @return DynamicTargetingKey
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, DynamicTargetingKey $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of dynamic targeting keys.
+         * (dynamicTargetingKeys.listDynamicTargetingKeys)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserId Select only dynamic targeting keys whose
+         * object has this advertiser ID.
+         * @opt_param string names Select only dynamic targeting keys exactly matching
+         * these names.
+         * @opt_param string objectId Select only dynamic targeting keys with this
+         * object ID.
+         * @opt_param string objectType Select only dynamic targeting keys with this
+         * object type.
+         * @return DynamicTargetingKeysListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDynamicTargetingKeys($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new dynamic targeting key. Keys must be created at the advertiser
-     * level before being assigned to the advertiser's ads, creatives, or
-     * placements. There is a maximum of 1000 keys per advertiser, out of which a
-     * maximum of 20 keys can be assigned per ad, creative, or placement.
-     * (dynamicTargetingKeys.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param DynamicTargetingKey $postBody
-     * @param array $optParams Optional parameters.
-     * @return DynamicTargetingKey
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\DynamicTargetingKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, DynamicTargetingKey $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of dynamic targeting keys.
-     * (dynamicTargetingKeys.listDynamicTargetingKeys)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserId Select only dynamic targeting keys whose
-     * object has this advertiser ID.
-     * @opt_param string names Select only dynamic targeting keys exactly matching
-     * these names.
-     * @opt_param string objectId Select only dynamic targeting keys with this
-     * object ID.
-     * @opt_param string objectType Select only dynamic targeting keys with this
-     * object type.
-     * @return DynamicTargetingKeysListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listDynamicTargetingKeys($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_DynamicTargetingKeys extends \Google\Service\Dfareporting\Resource\DynamicTargetingKeys
     {
     }
 }

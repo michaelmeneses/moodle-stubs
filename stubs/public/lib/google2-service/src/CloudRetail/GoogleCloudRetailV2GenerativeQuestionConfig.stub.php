@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2GenerativeQuestionConfig extends \Google\Collection
-{
-    protected $collection_key = 'exampleValues';
-    /**
-     * Optional. Whether the question is asked at serving time.
-     *
-     * @var bool
-     */
-    public $allowedInConversation;
-    /**
-     * Required. Resource name of the catalog. Format:
-     * projects/{project}/locations/{location}/catalogs/{catalog}
-     *
-     * @var string
-     */
-    public $catalog;
-    /**
-     * Output only. Values that can be used to answer the question.
-     *
-     * @var string[]
-     */
-    public $exampleValues;
-    /**
-     * Required. The facet to which the question is associated.
-     *
-     * @var string
-     */
-    public $facet;
-    /**
-     * Optional. The question that will be used at serving time. Question can have
-     * a max length of 300 bytes. When not populated, generated_question should be
-     * used.
-     *
-     * @var string
-     */
-    public $finalQuestion;
-    /**
-     * Output only. The ratio of how often a question was asked.
-     *
-     * @var float
-     */
-    public $frequency;
-    /**
-     * Output only. The LLM generated question.
-     *
-     * @var string
-     */
-    public $generatedQuestion;
-    /**
-     * Optional. Whether the question is asked at serving time.
-     *
-     * @param bool $allowedInConversation
-     */
-    public function setAllowedInConversation($allowedInConversation)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2GenerativeQuestionConfig extends \Google\Collection
     {
+        protected $collection_key = 'exampleValues';
+        /**
+         * Optional. Whether the question is asked at serving time.
+         *
+         * @var bool
+         */
+        public $allowedInConversation;
+        /**
+         * Required. Resource name of the catalog. Format:
+         * projects/{project}/locations/{location}/catalogs/{catalog}
+         *
+         * @var string
+         */
+        public $catalog;
+        /**
+         * Output only. Values that can be used to answer the question.
+         *
+         * @var string[]
+         */
+        public $exampleValues;
+        /**
+         * Required. The facet to which the question is associated.
+         *
+         * @var string
+         */
+        public $facet;
+        /**
+         * Optional. The question that will be used at serving time. Question can have
+         * a max length of 300 bytes. When not populated, generated_question should be
+         * used.
+         *
+         * @var string
+         */
+        public $finalQuestion;
+        /**
+         * Output only. The ratio of how often a question was asked.
+         *
+         * @var float
+         */
+        public $frequency;
+        /**
+         * Output only. The LLM generated question.
+         *
+         * @var string
+         */
+        public $generatedQuestion;
+        /**
+         * Optional. Whether the question is asked at serving time.
+         *
+         * @param bool $allowedInConversation
+         */
+        public function setAllowedInConversation($allowedInConversation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowedInConversation()
+        {
+        }
+        /**
+         * Required. Resource name of the catalog. Format:
+         * projects/{project}/locations/{location}/catalogs/{catalog}
+         *
+         * @param string $catalog
+         */
+        public function setCatalog($catalog)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCatalog()
+        {
+        }
+        /**
+         * Output only. Values that can be used to answer the question.
+         *
+         * @param string[] $exampleValues
+         */
+        public function setExampleValues($exampleValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExampleValues()
+        {
+        }
+        /**
+         * Required. The facet to which the question is associated.
+         *
+         * @param string $facet
+         */
+        public function setFacet($facet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFacet()
+        {
+        }
+        /**
+         * Optional. The question that will be used at serving time. Question can have
+         * a max length of 300 bytes. When not populated, generated_question should be
+         * used.
+         *
+         * @param string $finalQuestion
+         */
+        public function setFinalQuestion($finalQuestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinalQuestion()
+        {
+        }
+        /**
+         * Output only. The ratio of how often a question was asked.
+         *
+         * @param float $frequency
+         */
+        public function setFrequency($frequency)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * Output only. The LLM generated question.
+         *
+         * @param string $generatedQuestion
+         */
+        public function setGeneratedQuestion($generatedQuestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedQuestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2GenerativeQuestionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedInConversation()
-    {
-    }
-    /**
-     * Required. Resource name of the catalog. Format:
-     * projects/{project}/locations/{location}/catalogs/{catalog}
-     *
-     * @param string $catalog
-     */
-    public function setCatalog($catalog)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCatalog()
-    {
-    }
-    /**
-     * Output only. Values that can be used to answer the question.
-     *
-     * @param string[] $exampleValues
-     */
-    public function setExampleValues($exampleValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExampleValues()
-    {
-    }
-    /**
-     * Required. The facet to which the question is associated.
-     *
-     * @param string $facet
-     */
-    public function setFacet($facet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFacet()
-    {
-    }
-    /**
-     * Optional. The question that will be used at serving time. Question can have
-     * a max length of 300 bytes. When not populated, generated_question should be
-     * used.
-     *
-     * @param string $finalQuestion
-     */
-    public function setFinalQuestion($finalQuestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinalQuestion()
-    {
-    }
-    /**
-     * Output only. The ratio of how often a question was asked.
-     *
-     * @param float $frequency
-     */
-    public function setFrequency($frequency)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFrequency()
-    {
-    }
-    /**
-     * Output only. The LLM generated question.
-     *
-     * @param string $generatedQuestion
-     */
-    public function setGeneratedQuestion($generatedQuestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneratedQuestion()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2GenerativeQuestionConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2GenerativeQuestionConfig
     {
     }
 }

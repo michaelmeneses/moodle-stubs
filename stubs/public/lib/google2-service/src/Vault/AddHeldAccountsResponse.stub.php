@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class AddHeldAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = AddHeldAccountResult::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The list of responses, in the same order as the batch request.
-     *
-     * @param AddHeldAccountResult[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\Vault {
+    class AddHeldAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = AddHeldAccountResult::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The list of responses, in the same order as the batch request.
+         *
+         * @param AddHeldAccountResult[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return AddHeldAccountResult[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AddHeldAccountResult[]
+     * Runtime class alias of \Google\Service\Vault\AddHeldAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_Vault_AddHeldAccountsResponse extends \Google\Service\Vault\AddHeldAccountsResponse
     {
     }
 }

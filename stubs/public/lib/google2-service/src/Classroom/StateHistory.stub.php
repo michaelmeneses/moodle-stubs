@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class StateHistory extends \Google\Model
-{
-    /**
-     * No state specified. This should never be returned.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Submission has been created.
-     */
-    public const STATE_CREATED = 'CREATED';
-    /**
-     * The student has turned in an assigned document, which may or may not be a
-     * template.
-     */
-    public const STATE_TURNED_IN = 'TURNED_IN';
-    /**
-     * The teacher has returned the assigned document to the student.
-     */
-    public const STATE_RETURNED = 'RETURNED';
-    /**
-     * The student turned in the assigned document, and then chose to "unsubmit"
-     * the assignment, giving the student control again as the owner.
-     */
-    public const STATE_RECLAIMED_BY_STUDENT = 'RECLAIMED_BY_STUDENT';
-    /**
-     * The student edited their submission after turning it in. Currently, only
-     * used by Questions, when the student edits their answer.
-     */
-    public const STATE_STUDENT_EDITED_AFTER_TURN_IN = 'STUDENT_EDITED_AFTER_TURN_IN';
-    /**
-     * The teacher or student who made the change.
-     *
-     * @var string
-     */
-    public $actorUserId;
-    /**
-     * The workflow pipeline stage.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * When the submission entered this state.
-     *
-     * @var string
-     */
-    public $stateTimestamp;
-    /**
-     * The teacher or student who made the change.
-     *
-     * @param string $actorUserId
-     */
-    public function setActorUserId($actorUserId)
+namespace Google\Service\Classroom {
+    class StateHistory extends \Google\Model
     {
+        /**
+         * No state specified. This should never be returned.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Submission has been created.
+         */
+        public const STATE_CREATED = 'CREATED';
+        /**
+         * The student has turned in an assigned document, which may or may not be a
+         * template.
+         */
+        public const STATE_TURNED_IN = 'TURNED_IN';
+        /**
+         * The teacher has returned the assigned document to the student.
+         */
+        public const STATE_RETURNED = 'RETURNED';
+        /**
+         * The student turned in the assigned document, and then chose to "unsubmit"
+         * the assignment, giving the student control again as the owner.
+         */
+        public const STATE_RECLAIMED_BY_STUDENT = 'RECLAIMED_BY_STUDENT';
+        /**
+         * The student edited their submission after turning it in. Currently, only
+         * used by Questions, when the student edits their answer.
+         */
+        public const STATE_STUDENT_EDITED_AFTER_TURN_IN = 'STUDENT_EDITED_AFTER_TURN_IN';
+        /**
+         * The teacher or student who made the change.
+         *
+         * @var string
+         */
+        public $actorUserId;
+        /**
+         * The workflow pipeline stage.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * When the submission entered this state.
+         *
+         * @var string
+         */
+        public $stateTimestamp;
+        /**
+         * The teacher or student who made the change.
+         *
+         * @param string $actorUserId
+         */
+        public function setActorUserId($actorUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActorUserId()
+        {
+        }
+        /**
+         * The workflow pipeline stage.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATED, TURNED_IN, RETURNED,
+         * RECLAIMED_BY_STUDENT, STUDENT_EDITED_AFTER_TURN_IN
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * When the submission entered this state.
+         *
+         * @param string $stateTimestamp
+         */
+        public function setStateTimestamp($stateTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\StateHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActorUserId()
-    {
-    }
-    /**
-     * The workflow pipeline stage.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATED, TURNED_IN, RETURNED,
-     * RECLAIMED_BY_STUDENT, STUDENT_EDITED_AFTER_TURN_IN
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * When the submission entered this state.
-     *
-     * @param string $stateTimestamp
-     */
-    public function setStateTimestamp($stateTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateTimestamp()
+    class Google_Service_Classroom_StateHistory extends \Google\Service\Classroom\StateHistory
     {
     }
 }

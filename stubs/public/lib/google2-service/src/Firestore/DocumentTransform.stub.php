@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class DocumentTransform extends \Google\Collection
-{
-    protected $collection_key = 'fieldTransforms';
-    /**
-     * The name of the document to transform.
-     *
-     * @var string
-     */
-    public $document;
-    protected $fieldTransformsType = FieldTransform::class;
-    protected $fieldTransformsDataType = 'array';
-    /**
-     * The name of the document to transform.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\Firestore {
+    class DocumentTransform extends \Google\Collection
     {
+        protected $collection_key = 'fieldTransforms';
+        /**
+         * The name of the document to transform.
+         *
+         * @var string
+         */
+        public $document;
+        protected $fieldTransformsType = FieldTransform::class;
+        protected $fieldTransformsDataType = 'array';
+        /**
+         * The name of the document to transform.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * The list of transformations to apply to the fields of the document, in
+         * order. This must not be empty.
+         *
+         * @param FieldTransform[] $fieldTransforms
+         */
+        public function setFieldTransforms($fieldTransforms)
+        {
+        }
+        /**
+         * @return FieldTransform[]
+         */
+        public function getFieldTransforms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\DocumentTransform registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * The list of transformations to apply to the fields of the document, in
-     * order. This must not be empty.
-     *
-     * @param FieldTransform[] $fieldTransforms
-     */
-    public function setFieldTransforms($fieldTransforms)
-    {
-    }
-    /**
-     * @return FieldTransform[]
-     */
-    public function getFieldTransforms()
+    class Google_Service_Firestore_DocumentTransform extends \Google\Service\Firestore\DocumentTransform
     {
     }
 }

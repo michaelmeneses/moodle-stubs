@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1IndexedProperty extends \Google\Model
-{
-    /**
-     * The direction is unspecified.
-     */
-    public const DIRECTION_DIRECTION_UNSPECIFIED = 'DIRECTION_UNSPECIFIED';
-    /**
-     * The property's values are indexed so as to support sequencing in ascending
-     * order and also query by <, >, <=, >=, and =.
-     */
-    public const DIRECTION_ASCENDING = 'ASCENDING';
-    /**
-     * The property's values are indexed so as to support sequencing in descending
-     * order and also query by <, >, <=, >=, and =.
-     */
-    public const DIRECTION_DESCENDING = 'DESCENDING';
-    /**
-     * Required. The indexed property's direction. Must not be
-     * DIRECTION_UNSPECIFIED.
-     *
-     * @var string
-     */
-    public $direction;
-    /**
-     * Required. The property name to index.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The indexed property's direction. Must not be
-     * DIRECTION_UNSPECIFIED.
-     *
-     * Accepted values: DIRECTION_UNSPECIFIED, ASCENDING, DESCENDING
-     *
-     * @param self::DIRECTION_* $direction
-     */
-    public function setDirection($direction)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1IndexedProperty extends \Google\Model
     {
+        /**
+         * The direction is unspecified.
+         */
+        public const DIRECTION_DIRECTION_UNSPECIFIED = 'DIRECTION_UNSPECIFIED';
+        /**
+         * The property's values are indexed so as to support sequencing in ascending
+         * order and also query by <, >, <=, >=, and =.
+         */
+        public const DIRECTION_ASCENDING = 'ASCENDING';
+        /**
+         * The property's values are indexed so as to support sequencing in descending
+         * order and also query by <, >, <=, >=, and =.
+         */
+        public const DIRECTION_DESCENDING = 'DESCENDING';
+        /**
+         * Required. The indexed property's direction. Must not be
+         * DIRECTION_UNSPECIFIED.
+         *
+         * @var string
+         */
+        public $direction;
+        /**
+         * Required. The property name to index.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The indexed property's direction. Must not be
+         * DIRECTION_UNSPECIFIED.
+         *
+         * Accepted values: DIRECTION_UNSPECIFIED, ASCENDING, DESCENDING
+         *
+         * @param self::DIRECTION_* $direction
+         */
+        public function setDirection($direction)
+        {
+        }
+        /**
+         * @return self::DIRECTION_*
+         */
+        public function getDirection()
+        {
+        }
+        /**
+         * Required. The property name to index.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIRECTION_*
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1IndexedProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirection()
-    {
-    }
-    /**
-     * Required. The property name to index.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1IndexedProperty extends \Google\Service\Datastore\GoogleDatastoreAdminV1IndexedProperty
     {
     }
 }

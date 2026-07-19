@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Row extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = GooglePrivacyDlpV2Value::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Individual cells.
-     *
-     * @param GooglePrivacyDlpV2Value[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Row extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = GooglePrivacyDlpV2Value::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Individual cells.
+         *
+         * @param GooglePrivacyDlpV2Value[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Value[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_DLP_GooglePrivacyDlpV2Row extends \Google\Service\DLP\GooglePrivacyDlpV2Row
     {
     }
 }

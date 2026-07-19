@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1MultiSelectValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = GoogleCloudApihubV1ConfigValueOption::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Optional. The config variable value of data type multi select.
-     *
-     * @param GoogleCloudApihubV1ConfigValueOption[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1MultiSelectValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = GoogleCloudApihubV1ConfigValueOption::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Optional. The config variable value of data type multi select.
+         *
+         * @param GoogleCloudApihubV1ConfigValueOption[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ConfigValueOption[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ConfigValueOption[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1MultiSelectValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_APIhub_GoogleCloudApihubV1MultiSelectValues extends \Google\Service\APIhub\GoogleCloudApihubV1MultiSelectValues
     {
     }
 }

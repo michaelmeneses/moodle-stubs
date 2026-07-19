@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class ListLiensResponse extends \Google\Collection
-{
-    protected $collection_key = 'liens';
-    protected $liensType = Lien::class;
-    protected $liensDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of Liens.
-     *
-     * @param Lien[] $liens
-     */
-    public function setLiens($liens)
+namespace Google\Service\CloudResourceManager {
+    class ListLiensResponse extends \Google\Collection
     {
+        protected $collection_key = 'liens';
+        protected $liensType = Lien::class;
+        protected $liensDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of Liens.
+         *
+         * @param Lien[] $liens
+         */
+        public function setLiens($liens)
+        {
+        }
+        /**
+         * @return Lien[]
+         */
+        public function getLiens()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Lien[]
+     * Runtime class alias of \Google\Service\CloudResourceManager\ListLiensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLiens()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudResourceManager_ListLiensResponse extends \Google\Service\CloudResourceManager\ListLiensResponse
     {
     }
 }

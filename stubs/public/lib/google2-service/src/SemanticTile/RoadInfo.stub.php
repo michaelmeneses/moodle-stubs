@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class RoadInfo extends \Google\Model
-{
-    public $isPrivate;
-    public function setIsPrivate($isPrivate)
+namespace Google\Service\SemanticTile {
+    class RoadInfo extends \Google\Model
     {
+        public $isPrivate;
+        public function setIsPrivate($isPrivate)
+        {
+        }
+        public function getIsPrivate()
+        {
+        }
     }
-    public function getIsPrivate()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\RoadInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_RoadInfo extends \Google\Service\SemanticTile\RoadInfo
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class BooksVolumesRecommendedRateResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["consistencyToken" => "consistency_token"];
-    /**
-     * @var string
-     */
-    public $consistencyToken;
-    /**
-     * @param string $consistencyToken
-     */
-    public function setConsistencyToken($consistencyToken)
+namespace Google\Service\Books {
+    class BooksVolumesRecommendedRateResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["consistencyToken" => "consistency_token"];
+        /**
+         * @var string
+         */
+        public $consistencyToken;
+        /**
+         * @param string $consistencyToken
+         */
+        public function setConsistencyToken($consistencyToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsistencyToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\BooksVolumesRecommendedRateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsistencyToken()
+    class Google_Service_Books_BooksVolumesRecommendedRateResponse extends \Google\Service\Books\BooksVolumesRecommendedRateResponse
     {
     }
 }

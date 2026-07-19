@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p2beta1SpeechTranscription extends \Google\Collection
-{
-    protected $collection_key = 'alternatives';
-    protected $alternativesType = GoogleCloudVideointelligenceV1p2beta1SpeechRecognitionAlternative::class;
-    protected $alternativesDataType = 'array';
-    /**
-     * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
-     * language tag of the language in this result. This language code was
-     * detected to have the most likelihood of being spoken in the audio.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * May contain one or more recognition hypotheses (up to the maximum specified
-     * in `max_alternatives`). These alternatives are ordered in terms of
-     * accuracy, with the top (first) alternative being the most probable, as
-     * ranked by the recognizer.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1SpeechRecognitionAlternative[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p2beta1SpeechTranscription extends \Google\Collection
     {
+        protected $collection_key = 'alternatives';
+        protected $alternativesType = GoogleCloudVideointelligenceV1p2beta1SpeechRecognitionAlternative::class;
+        protected $alternativesDataType = 'array';
+        /**
+         * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
+         * language tag of the language in this result. This language code was
+         * detected to have the most likelihood of being spoken in the audio.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * May contain one or more recognition hypotheses (up to the maximum specified
+         * in `max_alternatives`). These alternatives are ordered in terms of
+         * accuracy, with the top (first) alternative being the most probable, as
+         * ranked by the recognizer.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1SpeechRecognitionAlternative[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1SpeechRecognitionAlternative[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
+         * language tag of the language in this result. This language code was
+         * detected to have the most likelihood of being spoken in the audio.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p2beta1SpeechRecognitionAlternative[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1SpeechTranscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
-     * language tag of the language in this result. This language code was
-     * detected to have the most likelihood of being spoken in the audio.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1SpeechTranscription extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1SpeechTranscription
     {
     }
 }

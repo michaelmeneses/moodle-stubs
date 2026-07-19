@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class ListJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $jobsType = Job::class;
-    protected $jobsDataType = 'array';
-    /**
-     * A token identifying a page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of storage batch jobs.
-     *
-     * @param Job[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\StorageBatchOperations {
+    class ListJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $jobsType = Job::class;
+        protected $jobsDataType = 'array';
+        /**
+         * A token identifying a page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of storage batch jobs.
+         *
+         * @param Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * A token identifying a page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job[]
+     * Runtime class alias of \Google\Service\StorageBatchOperations\ListJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
-    {
-    }
-    /**
-     * A token identifying a page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_StorageBatchOperations_ListJobsResponse extends \Google\Service\StorageBatchOperations\ListJobsResponse
     {
     }
 }

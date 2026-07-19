@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BeginTransactionRequest extends \Google\Model
-{
-    protected $mutationKeyType = Mutation::class;
-    protected $mutationKeyDataType = '';
-    protected $optionsType = TransactionOptions::class;
-    protected $optionsDataType = '';
-    protected $requestOptionsType = RequestOptions::class;
-    protected $requestOptionsDataType = '';
-    /**
-     * Optional. Required for read-write transactions on a multiplexed session
-     * that commit mutations but don't perform any reads or queries. You must
-     * randomly select one of the mutations from the mutation set and send it as a
-     * part of this request.
-     *
-     * @param Mutation $mutationKey
-     */
-    public function setMutationKey(Mutation $mutationKey)
+namespace Google\Service\Spanner {
+    class BeginTransactionRequest extends \Google\Model
     {
+        protected $mutationKeyType = Mutation::class;
+        protected $mutationKeyDataType = '';
+        protected $optionsType = TransactionOptions::class;
+        protected $optionsDataType = '';
+        protected $requestOptionsType = RequestOptions::class;
+        protected $requestOptionsDataType = '';
+        /**
+         * Optional. Required for read-write transactions on a multiplexed session
+         * that commit mutations but don't perform any reads or queries. You must
+         * randomly select one of the mutations from the mutation set and send it as a
+         * part of this request.
+         *
+         * @param Mutation $mutationKey
+         */
+        public function setMutationKey(Mutation $mutationKey)
+        {
+        }
+        /**
+         * @return Mutation
+         */
+        public function getMutationKey()
+        {
+        }
+        /**
+         * Required. Options for the new transaction.
+         *
+         * @param TransactionOptions $options
+         */
+        public function setOptions(TransactionOptions $options)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * Common options for this request. Priority is ignored for this request.
+         * Setting the priority in this `request_options` struct doesn't do anything.
+         * To set the priority for a transaction, set it on the reads and writes that
+         * are part of this transaction instead.
+         *
+         * @param RequestOptions $requestOptions
+         */
+        public function setRequestOptions(RequestOptions $requestOptions)
+        {
+        }
+        /**
+         * @return RequestOptions
+         */
+        public function getRequestOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Mutation
+     * Runtime class alias of \Google\Service\Spanner\BeginTransactionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMutationKey()
-    {
-    }
-    /**
-     * Required. Options for the new transaction.
-     *
-     * @param TransactionOptions $options
-     */
-    public function setOptions(TransactionOptions $options)
-    {
-    }
-    /**
-     * @return TransactionOptions
-     */
-    public function getOptions()
-    {
-    }
-    /**
-     * Common options for this request. Priority is ignored for this request.
-     * Setting the priority in this `request_options` struct doesn't do anything.
-     * To set the priority for a transaction, set it on the reads and writes that
-     * are part of this transaction instead.
-     *
-     * @param RequestOptions $requestOptions
-     */
-    public function setRequestOptions(RequestOptions $requestOptions)
-    {
-    }
-    /**
-     * @return RequestOptions
-     */
-    public function getRequestOptions()
+    class Google_Service_Spanner_BeginTransactionRequest extends \Google\Service\Spanner\BeginTransactionRequest
     {
     }
 }

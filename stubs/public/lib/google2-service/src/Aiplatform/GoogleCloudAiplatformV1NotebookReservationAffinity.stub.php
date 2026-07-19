@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookReservationAffinity extends \Google\Collection
-{
-    /**
-     * Default type.
-     */
-    public const CONSUME_RESERVATION_TYPE_RESERVATION_AFFINITY_TYPE_UNSPECIFIED = 'RESERVATION_AFFINITY_TYPE_UNSPECIFIED';
-    /**
-     * Do not consume from any allocated capacity.
-     */
-    public const CONSUME_RESERVATION_TYPE_RESERVATION_NONE = 'RESERVATION_NONE';
-    /**
-     * Consume any reservation available.
-     */
-    public const CONSUME_RESERVATION_TYPE_RESERVATION_ANY = 'RESERVATION_ANY';
-    /**
-     * Must consume from a specific reservation. Must specify key value fields for
-     * specifying the reservations.
-     */
-    public const CONSUME_RESERVATION_TYPE_RESERVATION_SPECIFIC = 'RESERVATION_SPECIFIC';
-    protected $collection_key = 'values';
-    /**
-     * Required. Specifies the type of reservation from which this instance can
-     * consume resources: RESERVATION_ANY (default), RESERVATION_SPECIFIC, or
-     * RESERVATION_NONE. See Consuming reserved instances for examples.
-     *
-     * @var string
-     */
-    public $consumeReservationType;
-    /**
-     * Optional. Corresponds to the label key of a reservation resource. To target
-     * a RESERVATION_SPECIFIC by name, use compute.googleapis.com/reservation-name
-     * as the key and specify the name of your reservation as its value.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. Corresponds to the label values of a reservation resource. This
-     * must be the full path name of Reservation.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Required. Specifies the type of reservation from which this instance can
-     * consume resources: RESERVATION_ANY (default), RESERVATION_SPECIFIC, or
-     * RESERVATION_NONE. See Consuming reserved instances for examples.
-     *
-     * Accepted values: RESERVATION_AFFINITY_TYPE_UNSPECIFIED, RESERVATION_NONE,
-     * RESERVATION_ANY, RESERVATION_SPECIFIC
-     *
-     * @param self::CONSUME_RESERVATION_TYPE_* $consumeReservationType
-     */
-    public function setConsumeReservationType($consumeReservationType)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookReservationAffinity extends \Google\Collection
     {
+        /**
+         * Default type.
+         */
+        public const CONSUME_RESERVATION_TYPE_RESERVATION_AFFINITY_TYPE_UNSPECIFIED = 'RESERVATION_AFFINITY_TYPE_UNSPECIFIED';
+        /**
+         * Do not consume from any allocated capacity.
+         */
+        public const CONSUME_RESERVATION_TYPE_RESERVATION_NONE = 'RESERVATION_NONE';
+        /**
+         * Consume any reservation available.
+         */
+        public const CONSUME_RESERVATION_TYPE_RESERVATION_ANY = 'RESERVATION_ANY';
+        /**
+         * Must consume from a specific reservation. Must specify key value fields for
+         * specifying the reservations.
+         */
+        public const CONSUME_RESERVATION_TYPE_RESERVATION_SPECIFIC = 'RESERVATION_SPECIFIC';
+        protected $collection_key = 'values';
+        /**
+         * Required. Specifies the type of reservation from which this instance can
+         * consume resources: RESERVATION_ANY (default), RESERVATION_SPECIFIC, or
+         * RESERVATION_NONE. See Consuming reserved instances for examples.
+         *
+         * @var string
+         */
+        public $consumeReservationType;
+        /**
+         * Optional. Corresponds to the label key of a reservation resource. To target
+         * a RESERVATION_SPECIFIC by name, use compute.googleapis.com/reservation-name
+         * as the key and specify the name of your reservation as its value.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. Corresponds to the label values of a reservation resource. This
+         * must be the full path name of Reservation.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Required. Specifies the type of reservation from which this instance can
+         * consume resources: RESERVATION_ANY (default), RESERVATION_SPECIFIC, or
+         * RESERVATION_NONE. See Consuming reserved instances for examples.
+         *
+         * Accepted values: RESERVATION_AFFINITY_TYPE_UNSPECIFIED, RESERVATION_NONE,
+         * RESERVATION_ANY, RESERVATION_SPECIFIC
+         *
+         * @param self::CONSUME_RESERVATION_TYPE_* $consumeReservationType
+         */
+        public function setConsumeReservationType($consumeReservationType)
+        {
+        }
+        /**
+         * @return self::CONSUME_RESERVATION_TYPE_*
+         */
+        public function getConsumeReservationType()
+        {
+        }
+        /**
+         * Optional. Corresponds to the label key of a reservation resource. To target
+         * a RESERVATION_SPECIFIC by name, use compute.googleapis.com/reservation-name
+         * as the key and specify the name of your reservation as its value.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. Corresponds to the label values of a reservation resource. This
+         * must be the full path name of Reservation.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONSUME_RESERVATION_TYPE_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookReservationAffinity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumeReservationType()
-    {
-    }
-    /**
-     * Optional. Corresponds to the label key of a reservation resource. To target
-     * a RESERVATION_SPECIFIC by name, use compute.googleapis.com/reservation-name
-     * as the key and specify the name of your reservation as its value.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. Corresponds to the label values of a reservation resource. This
-     * must be the full path name of Reservation.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookReservationAffinity extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookReservationAffinity
     {
     }
 }

@@ -32,6 +32,8 @@
  */
 namespace tool_dataprivacy;
 
+use coding_exception;
+use core\persistent;
 /**
  * Data registry business logic methods. Mostly internal stuff.
  *

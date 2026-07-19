@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCustomerManagerLink extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Indicates current in-effect relationship
-     */
-    public const STATUS_ACTIVE = 'ACTIVE';
-    /**
-     * Indicates terminated relationship
-     */
-    public const STATUS_INACTIVE = 'INACTIVE';
-    /**
-     * Indicates relationship has been requested by manager, but the client hasn't
-     * accepted yet.
-     */
-    public const STATUS_PENDING = 'PENDING';
-    /**
-     * Relationship was requested by the manager, but the client has refused.
-     */
-    public const STATUS_REFUSED = 'REFUSED';
-    /**
-     * Indicates relationship has been requested by manager, but manager canceled
-     * it.
-     */
-    public const STATUS_CANCELED = 'CANCELED';
-    /**
-     * Output only. The manager customer linked to the customer.
-     *
-     * @var string
-     */
-    public $managerCustomer;
-    /**
-     * Output only. ID of the customer-manager link. This field is read only.
-     *
-     * @var string
-     */
-    public $managerLinkId;
-    /**
-     * Immutable. Name of the resource. CustomerManagerLink resource names have
-     * the form: `customers/{customer_id}/customerManagerLinks/{manager_customer_i
-     * d}~{manager_link_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The timestamp when the CustomerManagerLink was created. The
-     * timestamp is in the customer's time zone and in "yyyy-MM-dd HH:mm:ss"
-     * format.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Status of the link between the customer and the manager.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. The manager customer linked to the customer.
-     *
-     * @param string $managerCustomer
-     */
-    public function setManagerCustomer($managerCustomer)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCustomerManagerLink extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Indicates current in-effect relationship
+         */
+        public const STATUS_ACTIVE = 'ACTIVE';
+        /**
+         * Indicates terminated relationship
+         */
+        public const STATUS_INACTIVE = 'INACTIVE';
+        /**
+         * Indicates relationship has been requested by manager, but the client hasn't
+         * accepted yet.
+         */
+        public const STATUS_PENDING = 'PENDING';
+        /**
+         * Relationship was requested by the manager, but the client has refused.
+         */
+        public const STATUS_REFUSED = 'REFUSED';
+        /**
+         * Indicates relationship has been requested by manager, but manager canceled
+         * it.
+         */
+        public const STATUS_CANCELED = 'CANCELED';
+        /**
+         * Output only. The manager customer linked to the customer.
+         *
+         * @var string
+         */
+        public $managerCustomer;
+        /**
+         * Output only. ID of the customer-manager link. This field is read only.
+         *
+         * @var string
+         */
+        public $managerLinkId;
+        /**
+         * Immutable. Name of the resource. CustomerManagerLink resource names have
+         * the form: `customers/{customer_id}/customerManagerLinks/{manager_customer_i
+         * d}~{manager_link_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The timestamp when the CustomerManagerLink was created. The
+         * timestamp is in the customer's time zone and in "yyyy-MM-dd HH:mm:ss"
+         * format.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Status of the link between the customer and the manager.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. The manager customer linked to the customer.
+         *
+         * @param string $managerCustomer
+         */
+        public function setManagerCustomer($managerCustomer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManagerCustomer()
+        {
+        }
+        /**
+         * Output only. ID of the customer-manager link. This field is read only.
+         *
+         * @param string $managerLinkId
+         */
+        public function setManagerLinkId($managerLinkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManagerLinkId()
+        {
+        }
+        /**
+         * Immutable. Name of the resource. CustomerManagerLink resource names have
+         * the form: `customers/{customer_id}/customerManagerLinks/{manager_customer_i
+         * d}~{manager_link_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. The timestamp when the CustomerManagerLink was created. The
+         * timestamp is in the customer's time zone and in "yyyy-MM-dd HH:mm:ss"
+         * format.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Status of the link between the customer and the manager.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ACTIVE, INACTIVE, PENDING, REFUSED,
+         * CANCELED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCustomerManagerLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagerCustomer()
-    {
-    }
-    /**
-     * Output only. ID of the customer-manager link. This field is read only.
-     *
-     * @param string $managerLinkId
-     */
-    public function setManagerLinkId($managerLinkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManagerLinkId()
-    {
-    }
-    /**
-     * Immutable. Name of the resource. CustomerManagerLink resource names have
-     * the form: `customers/{customer_id}/customerManagerLinks/{manager_customer_i
-     * d}~{manager_link_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. The timestamp when the CustomerManagerLink was created. The
-     * timestamp is in the customer's time zone and in "yyyy-MM-dd HH:mm:ss"
-     * format.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Status of the link between the customer and the manager.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ACTIVE, INACTIVE, PENDING, REFUSED,
-     * CANCELED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCustomerManagerLink extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCustomerManagerLink
     {
     }
 }

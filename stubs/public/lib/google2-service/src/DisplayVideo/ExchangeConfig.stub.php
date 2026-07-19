@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ExchangeConfig extends \Google\Collection
-{
-    protected $collection_key = 'enabledExchanges';
-    protected $enabledExchangesType = ExchangeConfigEnabledExchange::class;
-    protected $enabledExchangesDataType = 'array';
-    /**
-     * All enabled exchanges in the partner. Duplicate enabled exchanges will be
-     * ignored.
-     *
-     * @param ExchangeConfigEnabledExchange[] $enabledExchanges
-     */
-    public function setEnabledExchanges($enabledExchanges)
+namespace Google\Service\DisplayVideo {
+    class ExchangeConfig extends \Google\Collection
     {
+        protected $collection_key = 'enabledExchanges';
+        protected $enabledExchangesType = ExchangeConfigEnabledExchange::class;
+        protected $enabledExchangesDataType = 'array';
+        /**
+         * All enabled exchanges in the partner. Duplicate enabled exchanges will be
+         * ignored.
+         *
+         * @param ExchangeConfigEnabledExchange[] $enabledExchanges
+         */
+        public function setEnabledExchanges($enabledExchanges)
+        {
+        }
+        /**
+         * @return ExchangeConfigEnabledExchange[]
+         */
+        public function getEnabledExchanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExchangeConfigEnabledExchange[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ExchangeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledExchanges()
+    class Google_Service_DisplayVideo_ExchangeConfig extends \Google\Service\DisplayVideo\ExchangeConfig
     {
     }
 }

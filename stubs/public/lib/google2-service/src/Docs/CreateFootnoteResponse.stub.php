@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateFootnoteResponse extends \Google\Model
-{
-    /**
-     * The ID of the created footnote.
-     *
-     * @var string
-     */
-    public $footnoteId;
-    /**
-     * The ID of the created footnote.
-     *
-     * @param string $footnoteId
-     */
-    public function setFootnoteId($footnoteId)
+namespace Google\Service\Docs {
+    class CreateFootnoteResponse extends \Google\Model
     {
+        /**
+         * The ID of the created footnote.
+         *
+         * @var string
+         */
+        public $footnoteId;
+        /**
+         * The ID of the created footnote.
+         *
+         * @param string $footnoteId
+         */
+        public function setFootnoteId($footnoteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFootnoteId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\CreateFootnoteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFootnoteId()
+    class Google_Service_Docs_CreateFootnoteResponse extends \Google\Service\Docs\CreateFootnoteResponse
     {
     }
 }

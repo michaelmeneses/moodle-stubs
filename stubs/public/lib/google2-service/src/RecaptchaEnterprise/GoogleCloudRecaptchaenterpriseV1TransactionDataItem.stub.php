@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1TransactionDataItem extends \Google\Model
-{
-    /**
-     * Optional. When a merchant is specified, its corresponding account_id.
-     * Necessary to populate marketplace-style transactions.
-     *
-     * @var string
-     */
-    public $merchantAccountId;
-    /**
-     * Optional. The full name of the item.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The quantity of this item that is being purchased.
-     *
-     * @var string
-     */
-    public $quantity;
-    /**
-     * Optional. The value per item that the user is paying, in the transaction
-     * currency, after discounts.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Optional. When a merchant is specified, its corresponding account_id.
-     * Necessary to populate marketplace-style transactions.
-     *
-     * @param string $merchantAccountId
-     */
-    public function setMerchantAccountId($merchantAccountId)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1TransactionDataItem extends \Google\Model
     {
+        /**
+         * Optional. When a merchant is specified, its corresponding account_id.
+         * Necessary to populate marketplace-style transactions.
+         *
+         * @var string
+         */
+        public $merchantAccountId;
+        /**
+         * Optional. The full name of the item.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The quantity of this item that is being purchased.
+         *
+         * @var string
+         */
+        public $quantity;
+        /**
+         * Optional. The value per item that the user is paying, in the transaction
+         * currency, after discounts.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Optional. When a merchant is specified, its corresponding account_id.
+         * Necessary to populate marketplace-style transactions.
+         *
+         * @param string $merchantAccountId
+         */
+        public function setMerchantAccountId($merchantAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantAccountId()
+        {
+        }
+        /**
+         * Optional. The full name of the item.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The quantity of this item that is being purchased.
+         *
+         * @param string $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMerchantAccountId()
-    {
-    }
-    /**
-     * Optional. The full name of the item.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The quantity of this item that is being purchased.
-     *
-     * @param string $quantity
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantity()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1TransactionDataItem extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataItem
     {
     }
 }

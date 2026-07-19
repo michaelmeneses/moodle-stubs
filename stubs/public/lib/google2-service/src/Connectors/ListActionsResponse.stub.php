@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListActionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unsupportedActionNames';
-    protected $actionsType = Action::class;
-    protected $actionsDataType = 'array';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Next page token if more actions available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of actions which contain unsupported Datatypes. Check datatype.proto
-     * for more information.
-     *
-     * @var string[]
-     */
-    public $unsupportedActionNames;
-    /**
-     * List of action metadata.
-     *
-     * @param Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Connectors {
+    class ListActionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unsupportedActionNames';
+        protected $actionsType = Action::class;
+        protected $actionsDataType = 'array';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Next page token if more actions available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of actions which contain unsupported Datatypes. Check datatype.proto
+         * for more information.
+         *
+         * @var string[]
+         */
+        public $unsupportedActionNames;
+        /**
+         * List of action metadata.
+         *
+         * @param Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Next page token if more actions available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of actions which contain unsupported Datatypes. Check datatype.proto
+         * for more information.
+         *
+         * @param string[] $unsupportedActionNames
+         */
+        public function setUnsupportedActionNames($unsupportedActionNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnsupportedActionNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Action[]
+     * Runtime class alias of \Google\Service\Connectors\ListActionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Next page token if more actions available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of actions which contain unsupported Datatypes. Check datatype.proto
-     * for more information.
-     *
-     * @param string[] $unsupportedActionNames
-     */
-    public function setUnsupportedActionNames($unsupportedActionNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnsupportedActionNames()
+    class Google_Service_Connectors_ListActionsResponse extends \Google\Service\Connectors\ListActionsResponse
     {
     }
 }

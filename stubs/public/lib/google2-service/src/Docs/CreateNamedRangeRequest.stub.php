@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateNamedRangeRequest extends \Google\Model
-{
-    /**
-     * The name of the NamedRange. Names do not need to be unique. Names must be
-     * at least 1 character and no more than 256 characters, measured in UTF-16
-     * code units.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rangeType = Range::class;
-    protected $rangeDataType = '';
-    /**
-     * The name of the NamedRange. Names do not need to be unique. Names must be
-     * at least 1 character and no more than 256 characters, measured in UTF-16
-     * code units.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Docs {
+    class CreateNamedRangeRequest extends \Google\Model
     {
+        /**
+         * The name of the NamedRange. Names do not need to be unique. Names must be
+         * at least 1 character and no more than 256 characters, measured in UTF-16
+         * code units.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rangeType = Range::class;
+        protected $rangeDataType = '';
+        /**
+         * The name of the NamedRange. Names do not need to be unique. Names must be
+         * at least 1 character and no more than 256 characters, measured in UTF-16
+         * code units.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The range to apply the name to.
+         *
+         * @param Range $range
+         */
+        public function setRange(Range $range)
+        {
+        }
+        /**
+         * @return Range
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\CreateNamedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The range to apply the name to.
-     *
-     * @param Range $range
-     */
-    public function setRange(Range $range)
-    {
-    }
-    /**
-     * @return Range
-     */
-    public function getRange()
+    class Google_Service_Docs_CreateNamedRangeRequest extends \Google\Service\Docs\CreateNamedRangeRequest
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class PrepaidPlan extends \Google\Model
-{
-    /**
-     * If present, this is the time after which top up purchases are allowed for
-     * the prepaid plan. Will not be present for expired prepaid plans.
-     *
-     * @var string
-     */
-    public $allowExtendAfterTime;
-    /**
-     * If present, this is the time after which top up purchases are allowed for
-     * the prepaid plan. Will not be present for expired prepaid plans.
-     *
-     * @param string $allowExtendAfterTime
-     */
-    public function setAllowExtendAfterTime($allowExtendAfterTime)
+namespace Google\Service\AndroidPublisher {
+    class PrepaidPlan extends \Google\Model
     {
+        /**
+         * If present, this is the time after which top up purchases are allowed for
+         * the prepaid plan. Will not be present for expired prepaid plans.
+         *
+         * @var string
+         */
+        public $allowExtendAfterTime;
+        /**
+         * If present, this is the time after which top up purchases are allowed for
+         * the prepaid plan. Will not be present for expired prepaid plans.
+         *
+         * @param string $allowExtendAfterTime
+         */
+        public function setAllowExtendAfterTime($allowExtendAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllowExtendAfterTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\PrepaidPlan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowExtendAfterTime()
+    class Google_Service_AndroidPublisher_PrepaidPlan extends \Google\Service\AndroidPublisher\PrepaidPlan
     {
     }
 }

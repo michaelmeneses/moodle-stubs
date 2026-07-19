@@ -21,44 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "tools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $tools = $connectorsService->projects_locations_connections_tools;
- *  </code>
- */
-class ProjectsLocationsConnectionsTools extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    use Google\Service\Connectors\ExecuteToolRequest;
+    use Google\Service\Connectors\ExecuteToolResponse;
+    use Google\Service\Connectors\ListToolsResponse;
     /**
-     * Executes a specific tool. (tools.execute)
-     *
-     * @param string $name Required. Resource name of the Tool. Format:
-     * projects/{project}/locations/{location}/connections/{connection}/tools/{tool}
-     * @param ExecuteToolRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExecuteToolResponse
-     * @throws \Google\Service\Exception
+     * The "tools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $tools = $connectorsService->projects_locations_connections_tools;
+     *  </code>
      */
-    public function execute($name, ExecuteToolRequest $postBody, $optParams = [])
+    class ProjectsLocationsConnectionsTools extends \Google\Service\Resource
     {
+        /**
+         * Executes a specific tool. (tools.execute)
+         *
+         * @param string $name Required. Resource name of the Tool. Format:
+         * projects/{project}/locations/{location}/connections/{connection}/tools/{tool}
+         * @param ExecuteToolRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExecuteToolResponse
+         * @throws \Google\Service\Exception
+         */
+        public function execute($name, ExecuteToolRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all available tools. (tools.listProjectsLocationsConnectionsTools)
+         *
+         * @param string $parent Required. Resource name of the Connection. Format:
+         * projects/{project}/locations/{location}/connections/{connection}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return ListToolsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectionsTools($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all available tools. (tools.listProjectsLocationsConnectionsTools)
-     *
-     * @param string $parent Required. Resource name of the Connection. Format:
-     * projects/{project}/locations/{location}/connections/{connection}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return ListToolsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnectionsTools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsConnectionsTools($parent, $optParams = [])
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnectionsTools extends \Google\Service\Connectors\Resource\ProjectsLocationsConnectionsTools
     {
     }
 }

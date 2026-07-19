@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP;
-
-class HttpBody extends \Google\Collection
-{
-    protected $collection_key = 'extensions';
-    /**
-     * @var string
-     */
-    public $contentType;
-    /**
-     * @var string
-     */
-    public $data;
-    /**
-     * @var array[]
-     */
-    public $extensions;
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
+namespace Google\Service\DomainsRDAP {
+    class HttpBody extends \Google\Collection
     {
+        protected $collection_key = 'extensions';
+        /**
+         * @var string
+         */
+        public $contentType;
+        /**
+         * @var string
+         */
+        public $data;
+        /**
+         * @var array[]
+         */
+        public $extensions;
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DomainsRDAP\HttpBody registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setExtensions($extensions)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getExtensions()
+    class Google_Service_DomainsRDAP_HttpBody extends \Google\Service\DomainsRDAP\HttpBody
     {
     }
 }

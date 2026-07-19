@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class TextList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = Text::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Text values.
-     *
-     * @param Text[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\DriveActivity {
+    class TextList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = Text::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Text values.
+         *
+         * @param Text[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return Text[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Text[]
+     * Runtime class alias of \Google\Service\DriveActivity\TextList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_DriveActivity_TextList extends \Google\Service\DriveActivity\TextList
     {
     }
 }

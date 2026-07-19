@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class ExtendedSourceContext extends \Google\Model
-{
-    protected $contextType = SourceContext::class;
-    protected $contextDataType = '';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @param SourceContext
-     */
-    public function setContext(SourceContext $context)
+namespace Google\Service\CloudDebugger {
+    class ExtendedSourceContext extends \Google\Model
     {
+        protected $contextType = SourceContext::class;
+        protected $contextDataType = '';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @param SourceContext
+         */
+        public function setContext(SourceContext $context)
+        {
+        }
+        /**
+         * @return SourceContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceContext
+     * Runtime class alias of \Google\Service\CloudDebugger\ExtendedSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_CloudDebugger_ExtendedSourceContext extends \Google\Service\CloudDebugger\ExtendedSourceContext
     {
     }
 }

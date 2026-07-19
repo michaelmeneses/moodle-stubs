@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ListOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    /**
-     * If any zones are listed here, the list of operations returned may be
-     * missing the operations from those zones.
-     *
-     * @var string[]
-     */
-    public $missingZones;
-    protected $operationsType = Operation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * If any zones are listed here, the list of operations returned may be
-     * missing the operations from those zones.
-     *
-     * @param string[] $missingZones
-     */
-    public function setMissingZones($missingZones)
+namespace Google\Service\Container {
+    class ListOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        /**
+         * If any zones are listed here, the list of operations returned may be
+         * missing the operations from those zones.
+         *
+         * @var string[]
+         */
+        public $missingZones;
+        protected $operationsType = Operation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * If any zones are listed here, the list of operations returned may be
+         * missing the operations from those zones.
+         *
+         * @param string[] $missingZones
+         */
+        public function setMissingZones($missingZones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMissingZones()
+        {
+        }
+        /**
+         * A list of operations in the project in the specified zone.
+         *
+         * @param Operation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return Operation[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\ListOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMissingZones()
-    {
-    }
-    /**
-     * A list of operations in the project in the specified zone.
-     *
-     * @param Operation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return Operation[]
-     */
-    public function getOperations()
+    class Google_Service_Container_ListOperationsResponse extends \Google\Service\Container\ListOperationsResponse
     {
     }
 }

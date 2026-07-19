@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2FileMetadata extends \Google\Model
-{
-    public $contents;
-    protected $digestType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
-    protected $digestDataType = '';
-    public $isExecutable;
-    public $path;
-    public function setContents($contents)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2FileMetadata extends \Google\Model
     {
+        public $contents;
+        protected $digestType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
+        protected $digestDataType = '';
+        public $isExecutable;
+        public $path;
+        public function setContents($contents)
+        {
+        }
+        public function getContents()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2Digest
+         */
+        public function setDigest(GoogleDevtoolsRemoteworkersV1test2Digest $digest)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2Digest
+         */
+        public function getDigest()
+        {
+        }
+        public function setIsExecutable($isExecutable)
+        {
+        }
+        public function getIsExecutable()
+        {
+        }
+        public function setPath($path)
+        {
+        }
+        public function getPath()
+        {
+        }
     }
-    public function getContents()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemoteworkersV1test2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2FileMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDigest(GoogleDevtoolsRemoteworkersV1test2Digest $digest)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2Digest
-     */
-    public function getDigest()
-    {
-    }
-    public function setIsExecutable($isExecutable)
-    {
-    }
-    public function getIsExecutable()
-    {
-    }
-    public function setPath($path)
-    {
-    }
-    public function getPath()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2FileMetadata extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2FileMetadata
     {
     }
 }

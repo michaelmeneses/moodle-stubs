@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigImage extends \Google\Model
-{
-    /**
-     * Image URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Image URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigImage extends \Google\Model
     {
+        /**
+         * Image URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Image URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigImage extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigImage
     {
     }
 }

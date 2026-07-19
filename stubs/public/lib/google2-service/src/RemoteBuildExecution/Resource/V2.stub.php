@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution\Resource;
-
-/**
- * The "v2" collection of methods.
- * Typical usage is:
- *  <code>
- *   $remotebuildexecutionService = new Google\Service\RemoteBuildExecution(...);
- *   $v2 = $remotebuildexecutionService->v2;
- *  </code>
- */
-class V2 extends \Google\Service\Resource
-{
+namespace Google\Service\RemoteBuildExecution\Resource {
+    use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ServerCapabilities;
     /**
-     * GetCapabilities returns the server capabilities configuration of the remote
-     * endpoint. Only the capabilities of the services supported by the endpoint
-     * will be returned: * Execution + CAS + Action Cache endpoints should return
-     * both CacheCapabilities and ExecutionCapabilities. * Execution only endpoints
-     * should return ExecutionCapabilities. * CAS + Action Cache only endpoints
-     * should return CacheCapabilities. (v2.getCapabilities)
-     *
-     * @param string $instanceName The instance of the execution system to operate
-     * against. A server may support multiple instances of the execution system
-     * (with their own workers, storage, caches, etc.). The server MAY require use
-     * of this field to select between them in an implementation-defined fashion,
-     * otherwise it can be omitted.
-     * @param array $optParams Optional parameters.
-     * @return BuildBazelRemoteExecutionV2ServerCapabilities
+     * The "v2" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $remotebuildexecutionService = new Google\Service\RemoteBuildExecution(...);
+     *   $v2 = $remotebuildexecutionService->v2;
+     *  </code>
      */
-    public function getCapabilities($instanceName, $optParams = [])
+    class V2 extends \Google\Service\Resource
+    {
+        /**
+         * GetCapabilities returns the server capabilities configuration of the remote
+         * endpoint. Only the capabilities of the services supported by the endpoint
+         * will be returned: * Execution + CAS + Action Cache endpoints should return
+         * both CacheCapabilities and ExecutionCapabilities. * Execution only endpoints
+         * should return ExecutionCapabilities. * CAS + Action Cache only endpoints
+         * should return CacheCapabilities. (v2.getCapabilities)
+         *
+         * @param string $instanceName The instance of the execution system to operate
+         * against. A server may support multiple instances of the execution system
+         * (with their own workers, storage, caches, etc.). The server MAY require use
+         * of this field to select between them in an implementation-defined fashion,
+         * otherwise it can be omitted.
+         * @param array $optParams Optional parameters.
+         * @return BuildBazelRemoteExecutionV2ServerCapabilities
+         */
+        public function getCapabilities($instanceName, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\Resource\V2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_Resource_V2 extends \Google\Service\RemoteBuildExecution\Resource\V2
     {
     }
 }

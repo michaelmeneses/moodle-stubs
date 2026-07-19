@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TokenPagination extends \Google\Model
-{
-    /**
-     * Tokens to pass to the standard list field 'page_token'. Whenever available,
-     * tokens are preferred over manipulating start_index.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string
-     */
-    public $previousPageToken;
-    /**
-     * Tokens to pass to the standard list field 'page_token'. Whenever available,
-     * tokens are preferred over manipulating start_index.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AndroidPublisher {
+    class TokenPagination extends \Google\Model
     {
+        /**
+         * Tokens to pass to the standard list field 'page_token'. Whenever available,
+         * tokens are preferred over manipulating start_index.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string
+         */
+        public $previousPageToken;
+        /**
+         * Tokens to pass to the standard list field 'page_token'. Whenever available,
+         * tokens are preferred over manipulating start_index.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string $previousPageToken
+         */
+        public function setPreviousPageToken($previousPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\TokenPagination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string $previousPageToken
-     */
-    public function setPreviousPageToken($previousPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousPageToken()
+    class Google_Service_AndroidPublisher_TokenPagination extends \Google\Service\AndroidPublisher\TokenPagination
     {
     }
 }

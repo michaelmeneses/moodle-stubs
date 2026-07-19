@@ -21,220 +21,229 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class ApprovalRequest extends \Google\Model
-{
-    protected $approveType = ApproveDecision::class;
-    protected $approveDataType = '';
-    protected $dismissType = DismissDecision::class;
-    protected $dismissDataType = '';
-    /**
-     * The resource name of the request. Format is "{projects|folders|organization
-     * s}/{id}/approvalRequests/{approval_request}".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The time at which approval was requested.
-     *
-     * @var string
-     */
-    public $requestTime;
-    protected $requestedAugmentedInfoType = AugmentedInfo::class;
-    protected $requestedAugmentedInfoDataType = '';
-    /**
-     * The requested access duration.
-     *
-     * @var string
-     */
-    public $requestedDuration;
-    /**
-     * The original requested expiration for the approval. Calculated by adding
-     * the requested_duration to the request_time.
-     *
-     * @var string
-     */
-    public $requestedExpiration;
-    protected $requestedLocationsType = AccessLocations::class;
-    protected $requestedLocationsDataType = '';
-    protected $requestedReasonType = AccessReason::class;
-    protected $requestedReasonDataType = '';
-    /**
-     * The resource for which approval is being requested. The format of the
-     * resource name is defined at
-     * https://cloud.google.com/apis/design/resource_names. The resource name here
-     * may either be a "full" resource name (e.g.
-     * "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative"
-     * resource name (e.g. "shelves/shelf1/books/book2") as described in the
-     * resource name specification.
-     *
-     * @var string
-     */
-    public $requestedResourceName;
-    protected $requestedResourcePropertiesType = ResourceProperties::class;
-    protected $requestedResourcePropertiesDataType = '';
-    /**
-     * Access was approved.
-     *
-     * @param ApproveDecision $approve
-     */
-    public function setApprove(ApproveDecision $approve)
+namespace Google\Service\AccessApproval {
+    class ApprovalRequest extends \Google\Model
     {
+        protected $approveType = ApproveDecision::class;
+        protected $approveDataType = '';
+        protected $dismissType = DismissDecision::class;
+        protected $dismissDataType = '';
+        /**
+         * The resource name of the request. Format is "{projects|folders|organization
+         * s}/{id}/approvalRequests/{approval_request}".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The time at which approval was requested.
+         *
+         * @var string
+         */
+        public $requestTime;
+        protected $requestedAugmentedInfoType = AugmentedInfo::class;
+        protected $requestedAugmentedInfoDataType = '';
+        /**
+         * The requested access duration.
+         *
+         * @var string
+         */
+        public $requestedDuration;
+        /**
+         * The original requested expiration for the approval. Calculated by adding
+         * the requested_duration to the request_time.
+         *
+         * @var string
+         */
+        public $requestedExpiration;
+        protected $requestedLocationsType = AccessLocations::class;
+        protected $requestedLocationsDataType = '';
+        protected $requestedReasonType = AccessReason::class;
+        protected $requestedReasonDataType = '';
+        /**
+         * The resource for which approval is being requested. The format of the
+         * resource name is defined at
+         * https://cloud.google.com/apis/design/resource_names. The resource name here
+         * may either be a "full" resource name (e.g.
+         * "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative"
+         * resource name (e.g. "shelves/shelf1/books/book2") as described in the
+         * resource name specification.
+         *
+         * @var string
+         */
+        public $requestedResourceName;
+        protected $requestedResourcePropertiesType = ResourceProperties::class;
+        protected $requestedResourcePropertiesDataType = '';
+        /**
+         * Access was approved.
+         *
+         * @param ApproveDecision $approve
+         */
+        public function setApprove(ApproveDecision $approve)
+        {
+        }
+        /**
+         * @return ApproveDecision
+         */
+        public function getApprove()
+        {
+        }
+        /**
+         * The request was dismissed.
+         *
+         * @param DismissDecision $dismiss
+         */
+        public function setDismiss(DismissDecision $dismiss)
+        {
+        }
+        /**
+         * @return DismissDecision
+         */
+        public function getDismiss()
+        {
+        }
+        /**
+         * The resource name of the request. Format is "{projects|folders|organization
+         * s}/{id}/approvalRequests/{approval_request}".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The time at which approval was requested.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * This field contains the augmented information of the request.
+         *
+         * @param AugmentedInfo $requestedAugmentedInfo
+         */
+        public function setRequestedAugmentedInfo(AugmentedInfo $requestedAugmentedInfo)
+        {
+        }
+        /**
+         * @return AugmentedInfo
+         */
+        public function getRequestedAugmentedInfo()
+        {
+        }
+        /**
+         * The requested access duration.
+         *
+         * @param string $requestedDuration
+         */
+        public function setRequestedDuration($requestedDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedDuration()
+        {
+        }
+        /**
+         * The original requested expiration for the approval. Calculated by adding
+         * the requested_duration to the request_time.
+         *
+         * @param string $requestedExpiration
+         */
+        public function setRequestedExpiration($requestedExpiration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedExpiration()
+        {
+        }
+        /**
+         * The locations for which approval is being requested.
+         *
+         * @param AccessLocations $requestedLocations
+         */
+        public function setRequestedLocations(AccessLocations $requestedLocations)
+        {
+        }
+        /**
+         * @return AccessLocations
+         */
+        public function getRequestedLocations()
+        {
+        }
+        /**
+         * The access reason for which approval is being requested.
+         *
+         * @param AccessReason $requestedReason
+         */
+        public function setRequestedReason(AccessReason $requestedReason)
+        {
+        }
+        /**
+         * @return AccessReason
+         */
+        public function getRequestedReason()
+        {
+        }
+        /**
+         * The resource for which approval is being requested. The format of the
+         * resource name is defined at
+         * https://cloud.google.com/apis/design/resource_names. The resource name here
+         * may either be a "full" resource name (e.g.
+         * "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative"
+         * resource name (e.g. "shelves/shelf1/books/book2") as described in the
+         * resource name specification.
+         *
+         * @param string $requestedResourceName
+         */
+        public function setRequestedResourceName($requestedResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedResourceName()
+        {
+        }
+        /**
+         * Properties related to the resource represented by requested_resource_name.
+         *
+         * @param ResourceProperties $requestedResourceProperties
+         */
+        public function setRequestedResourceProperties(ResourceProperties $requestedResourceProperties)
+        {
+        }
+        /**
+         * @return ResourceProperties
+         */
+        public function getRequestedResourceProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApproveDecision
+     * Runtime class alias of \Google\Service\AccessApproval\ApprovalRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprove()
-    {
-    }
-    /**
-     * The request was dismissed.
-     *
-     * @param DismissDecision $dismiss
-     */
-    public function setDismiss(DismissDecision $dismiss)
-    {
-    }
-    /**
-     * @return DismissDecision
-     */
-    public function getDismiss()
-    {
-    }
-    /**
-     * The resource name of the request. Format is "{projects|folders|organization
-     * s}/{id}/approvalRequests/{approval_request}".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The time at which approval was requested.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * This field contains the augmented information of the request.
-     *
-     * @param AugmentedInfo $requestedAugmentedInfo
-     */
-    public function setRequestedAugmentedInfo(AugmentedInfo $requestedAugmentedInfo)
-    {
-    }
-    /**
-     * @return AugmentedInfo
-     */
-    public function getRequestedAugmentedInfo()
-    {
-    }
-    /**
-     * The requested access duration.
-     *
-     * @param string $requestedDuration
-     */
-    public function setRequestedDuration($requestedDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedDuration()
-    {
-    }
-    /**
-     * The original requested expiration for the approval. Calculated by adding
-     * the requested_duration to the request_time.
-     *
-     * @param string $requestedExpiration
-     */
-    public function setRequestedExpiration($requestedExpiration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedExpiration()
-    {
-    }
-    /**
-     * The locations for which approval is being requested.
-     *
-     * @param AccessLocations $requestedLocations
-     */
-    public function setRequestedLocations(AccessLocations $requestedLocations)
-    {
-    }
-    /**
-     * @return AccessLocations
-     */
-    public function getRequestedLocations()
-    {
-    }
-    /**
-     * The access reason for which approval is being requested.
-     *
-     * @param AccessReason $requestedReason
-     */
-    public function setRequestedReason(AccessReason $requestedReason)
-    {
-    }
-    /**
-     * @return AccessReason
-     */
-    public function getRequestedReason()
-    {
-    }
-    /**
-     * The resource for which approval is being requested. The format of the
-     * resource name is defined at
-     * https://cloud.google.com/apis/design/resource_names. The resource name here
-     * may either be a "full" resource name (e.g.
-     * "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative"
-     * resource name (e.g. "shelves/shelf1/books/book2") as described in the
-     * resource name specification.
-     *
-     * @param string $requestedResourceName
-     */
-    public function setRequestedResourceName($requestedResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedResourceName()
-    {
-    }
-    /**
-     * Properties related to the resource represented by requested_resource_name.
-     *
-     * @param ResourceProperties $requestedResourceProperties
-     */
-    public function setRequestedResourceProperties(ResourceProperties $requestedResourceProperties)
-    {
-    }
-    /**
-     * @return ResourceProperties
-     */
-    public function getRequestedResourceProperties()
+    class Google_Service_AccessApproval_ApprovalRequest extends \Google\Service\AccessApproval\ApprovalRequest
     {
     }
 }

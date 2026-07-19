@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesClassificationMetricsCurveMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    /**
-     * The area under the precision-recall curve.
-     *
-     * @var 
-     */
-    public $aucPr;
-    /**
-     * The area under receiver operating characteristic curve.
-     *
-     * @var 
-     */
-    public $aucRoc;
-    protected $confidenceMetricsEntriesType = XPSTablesConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * The Log loss metric.
-     *
-     * @var 
-     */
-    public $logLoss;
-    /**
-     * The position threshold value used to compute the metrics.
-     *
-     * @var int
-     */
-    public $positionThreshold;
-    /**
-     * The CATEGORY row value (for ARRAY unnested) the curve metrics are for.
-     *
-     * @var string
-     */
-    public $value;
-    public function setAucPr($aucPr)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesClassificationMetricsCurveMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        /**
+         * The area under the precision-recall curve.
+         *
+         * @var 
+         */
+        public $aucPr;
+        /**
+         * The area under receiver operating characteristic curve.
+         *
+         * @var 
+         */
+        public $aucRoc;
+        protected $confidenceMetricsEntriesType = XPSTablesConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * The Log loss metric.
+         *
+         * @var 
+         */
+        public $logLoss;
+        /**
+         * The position threshold value used to compute the metrics.
+         *
+         * @var int
+         */
+        public $positionThreshold;
+        /**
+         * The CATEGORY row value (for ARRAY unnested) the curve metrics are for.
+         *
+         * @var string
+         */
+        public $value;
+        public function setAucPr($aucPr)
+        {
+        }
+        public function getAucPr()
+        {
+        }
+        public function setAucRoc($aucRoc)
+        {
+        }
+        public function getAucRoc()
+        {
+        }
+        /**
+         * Metrics that have confidence thresholds. Precision-recall curve and ROC
+         * curve can be derived from them.
+         *
+         * @param XPSTablesConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSTablesConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        public function setLogLoss($logLoss)
+        {
+        }
+        public function getLogLoss()
+        {
+        }
+        /**
+         * The position threshold value used to compute the metrics.
+         *
+         * @param int $positionThreshold
+         */
+        public function setPositionThreshold($positionThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPositionThreshold()
+        {
+        }
+        /**
+         * The CATEGORY row value (for ARRAY unnested) the curve metrics are for.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
-    public function getAucPr()
-    {
-    }
-    public function setAucRoc($aucRoc)
-    {
-    }
-    public function getAucRoc()
-    {
-    }
+}
+namespace {
     /**
-     * Metrics that have confidence thresholds. Precision-recall curve and ROC
-     * curve can be derived from them.
-     *
-     * @param XPSTablesConfidenceMetricsEntry[] $confidenceMetricsEntries
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesClassificationMetricsCurveMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
-    {
-    }
-    /**
-     * @return XPSTablesConfidenceMetricsEntry[]
-     */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    public function setLogLoss($logLoss)
-    {
-    }
-    public function getLogLoss()
-    {
-    }
-    /**
-     * The position threshold value used to compute the metrics.
-     *
-     * @param int $positionThreshold
-     */
-    public function setPositionThreshold($positionThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPositionThreshold()
-    {
-    }
-    /**
-     * The CATEGORY row value (for ARRAY unnested) the curve metrics are for.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudNaturalLanguage_XPSTablesClassificationMetricsCurveMetrics extends \Google\Service\CloudNaturalLanguage\XPSTablesClassificationMetricsCurveMetrics
     {
     }
 }

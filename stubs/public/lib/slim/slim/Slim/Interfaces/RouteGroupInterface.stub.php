@@ -8,6 +8,8 @@
  */
 namespace Slim\Interfaces;
 
+use Psr\Http\Server\MiddlewareInterface;
+use Slim\MiddlewareDispatcher;
 /** @api */
 interface RouteGroupInterface
 {

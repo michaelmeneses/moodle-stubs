@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MySqlProperty extends \Google\Model
-{
-    /**
-     * Required. The property is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Required. The property numeric value.
-     *
-     * @var string
-     */
-    public $numericValue;
-    /**
-     * Required. The property name.
-     *
-     * @var string
-     */
-    public $property;
-    /**
-     * Required. The property is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\MigrationCenterAPI {
+    class MySqlProperty extends \Google\Model
     {
+        /**
+         * Required. The property is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Required. The property numeric value.
+         *
+         * @var string
+         */
+        public $numericValue;
+        /**
+         * Required. The property name.
+         *
+         * @var string
+         */
+        public $property;
+        /**
+         * Required. The property is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Required. The property numeric value.
+         *
+         * @param string $numericValue
+         */
+        public function setNumericValue($numericValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumericValue()
+        {
+        }
+        /**
+         * Required. The property name.
+         *
+         * @param string $property
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MySqlProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Required. The property numeric value.
-     *
-     * @param string $numericValue
-     */
-    public function setNumericValue($numericValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumericValue()
-    {
-    }
-    /**
-     * Required. The property name.
-     *
-     * @param string $property
-     */
-    public function setProperty($property)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProperty()
+    class Google_Service_MigrationCenterAPI_MySqlProperty extends \Google\Service\MigrationCenterAPI\MySqlProperty
     {
     }
 }

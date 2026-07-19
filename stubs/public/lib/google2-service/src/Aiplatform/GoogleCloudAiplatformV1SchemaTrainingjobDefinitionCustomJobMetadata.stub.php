@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the CustomJob that has been created to carry out this
-     * custom task.
-     *
-     * @var string
-     */
-    public $backingCustomJob;
-    /**
-     * The resource name of the CustomJob that has been created to carry out this
-     * custom task.
-     *
-     * @param string $backingCustomJob
-     */
-    public function setBackingCustomJob($backingCustomJob)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the CustomJob that has been created to carry out this
+         * custom task.
+         *
+         * @var string
+         */
+        public $backingCustomJob;
+        /**
+         * The resource name of the CustomJob that has been created to carry out this
+         * custom task.
+         *
+         * @param string $backingCustomJob
+         */
+        public function setBackingCustomJob($backingCustomJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackingCustomJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackingCustomJob()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionCustomJobMetadata
     {
     }
 }

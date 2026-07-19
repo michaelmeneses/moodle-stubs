@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingProductReportBuyboxWinningProductStats extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $buyboxWinsCount;
-    /**
-     * @param int
-     */
-    public function setBuyboxWinsCount($buyboxWinsCount)
+namespace Google\Service\ShoppingContent {
+    class RepricingProductReportBuyboxWinningProductStats extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $buyboxWinsCount;
+        /**
+         * @param int
+         */
+        public function setBuyboxWinsCount($buyboxWinsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBuyboxWinsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingProductReportBuyboxWinningProductStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyboxWinsCount()
+    class Google_Service_ShoppingContent_RepricingProductReportBuyboxWinningProductStats extends \Google\Service\ShoppingContent\RepricingProductReportBuyboxWinningProductStats
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListAssignedInventorySourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'assignedInventorySources';
-    protected $assignedInventorySourcesType = AssignedInventorySource::class;
-    protected $assignedInventorySourcesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAssignedInventorySources`
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of assigned inventory sources. This list will be absent if empty.
-     *
-     * @param AssignedInventorySource[] $assignedInventorySources
-     */
-    public function setAssignedInventorySources($assignedInventorySources)
+namespace Google\Service\DisplayVideo {
+    class ListAssignedInventorySourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'assignedInventorySources';
+        protected $assignedInventorySourcesType = AssignedInventorySource::class;
+        protected $assignedInventorySourcesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAssignedInventorySources`
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of assigned inventory sources. This list will be absent if empty.
+         *
+         * @param AssignedInventorySource[] $assignedInventorySources
+         */
+        public function setAssignedInventorySources($assignedInventorySources)
+        {
+        }
+        /**
+         * @return AssignedInventorySource[]
+         */
+        public function getAssignedInventorySources()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAssignedInventorySources`
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedInventorySource[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListAssignedInventorySourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedInventorySources()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAssignedInventorySources`
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListAssignedInventorySourcesResponse extends \Google\Service\DisplayVideo\ListAssignedInventorySourcesResponse
     {
     }
 }

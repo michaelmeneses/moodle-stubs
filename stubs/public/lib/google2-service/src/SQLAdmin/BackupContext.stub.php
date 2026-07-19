@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class BackupContext extends \Google\Model
-{
-    /**
-     * The identifier of the backup.
-     *
-     * @var string
-     */
-    public $backupId;
-    /**
-     * This is always `sql#backupContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the backup. Format: projects/{project}/backups/{backup}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The identifier of the backup.
-     *
-     * @param string $backupId
-     */
-    public function setBackupId($backupId)
+namespace Google\Service\SQLAdmin {
+    class BackupContext extends \Google\Model
     {
+        /**
+         * The identifier of the backup.
+         *
+         * @var string
+         */
+        public $backupId;
+        /**
+         * This is always `sql#backupContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the backup. Format: projects/{project}/backups/{backup}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The identifier of the backup.
+         *
+         * @param string $backupId
+         */
+        public function setBackupId($backupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupId()
+        {
+        }
+        /**
+         * This is always `sql#backupContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the backup. Format: projects/{project}/backups/{backup}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\BackupContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupId()
-    {
-    }
-    /**
-     * This is always `sql#backupContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the backup. Format: projects/{project}/backups/{backup}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SQLAdmin_BackupContext extends \Google\Service\SQLAdmin\BackupContext
     {
     }
 }

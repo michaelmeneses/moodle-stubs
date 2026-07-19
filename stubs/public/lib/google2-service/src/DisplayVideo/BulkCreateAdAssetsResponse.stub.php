@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkCreateAdAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adAssets';
-    protected $adAssetsType = AdAsset::class;
-    protected $adAssetsDataType = 'array';
-    /**
-     * The created ad assets.
-     *
-     * @param AdAsset[] $adAssets
-     */
-    public function setAdAssets($adAssets)
+namespace Google\Service\DisplayVideo {
+    class BulkCreateAdAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adAssets';
+        protected $adAssetsType = AdAsset::class;
+        protected $adAssetsDataType = 'array';
+        /**
+         * The created ad assets.
+         *
+         * @param AdAsset[] $adAssets
+         */
+        public function setAdAssets($adAssets)
+        {
+        }
+        /**
+         * @return AdAsset[]
+         */
+        public function getAdAssets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdAsset[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkCreateAdAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdAssets()
+    class Google_Service_DisplayVideo_BulkCreateAdAssetsResponse extends \Google\Service\DisplayVideo\BulkCreateAdAssetsResponse
     {
     }
 }

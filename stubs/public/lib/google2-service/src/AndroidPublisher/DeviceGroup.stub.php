@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceGroup extends \Google\Collection
-{
-    protected $collection_key = 'deviceSelectors';
-    protected $deviceSelectorsType = DeviceSelector::class;
-    protected $deviceSelectorsDataType = 'array';
-    /**
-     * The name of the group.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Device selectors for this group. A device matching any of the selectors is
-     * included in this group.
-     *
-     * @param DeviceSelector[] $deviceSelectors
-     */
-    public function setDeviceSelectors($deviceSelectors)
+namespace Google\Service\AndroidPublisher {
+    class DeviceGroup extends \Google\Collection
     {
+        protected $collection_key = 'deviceSelectors';
+        protected $deviceSelectorsType = DeviceSelector::class;
+        protected $deviceSelectorsDataType = 'array';
+        /**
+         * The name of the group.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Device selectors for this group. A device matching any of the selectors is
+         * included in this group.
+         *
+         * @param DeviceSelector[] $deviceSelectors
+         */
+        public function setDeviceSelectors($deviceSelectors)
+        {
+        }
+        /**
+         * @return DeviceSelector[]
+         */
+        public function getDeviceSelectors()
+        {
+        }
+        /**
+         * The name of the group.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceSelector[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceSelectors()
-    {
-    }
-    /**
-     * The name of the group.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidPublisher_DeviceGroup extends \Google\Service\AndroidPublisher\DeviceGroup
     {
     }
 }

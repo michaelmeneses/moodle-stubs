@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class AnalyticsProperty extends \Google\Model
-{
-    /**
-     * Output only. The ID of the [Google Analytics
-     * account](https://www.google.com/analytics/) for the Google Analytics
-     * property associated with the specified FirebaseProject.
-     *
-     * @var string
-     */
-    public $analyticsAccountId;
-    /**
-     * The display name of the Google Analytics property associated with the
-     * specified `FirebaseProject`.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The globally unique, Google-assigned identifier of the Google Analytics
-     * property associated with the specified `FirebaseProject`. If you called
-     * [`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics) to link
-     * the `FirebaseProject` with a Google Analytics account, the value in this
-     * `id` field is the same as the ID of the property either specified or
-     * provisioned with that call to `AddGoogleAnalytics`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. The ID of the [Google Analytics
-     * account](https://www.google.com/analytics/) for the Google Analytics
-     * property associated with the specified FirebaseProject.
-     *
-     * @param string $analyticsAccountId
-     */
-    public function setAnalyticsAccountId($analyticsAccountId)
+namespace Google\Service\FirebaseManagement {
+    class AnalyticsProperty extends \Google\Model
     {
+        /**
+         * Output only. The ID of the [Google Analytics
+         * account](https://www.google.com/analytics/) for the Google Analytics
+         * property associated with the specified FirebaseProject.
+         *
+         * @var string
+         */
+        public $analyticsAccountId;
+        /**
+         * The display name of the Google Analytics property associated with the
+         * specified `FirebaseProject`.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The globally unique, Google-assigned identifier of the Google Analytics
+         * property associated with the specified `FirebaseProject`. If you called
+         * [`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics) to link
+         * the `FirebaseProject` with a Google Analytics account, the value in this
+         * `id` field is the same as the ID of the property either specified or
+         * provisioned with that call to `AddGoogleAnalytics`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. The ID of the [Google Analytics
+         * account](https://www.google.com/analytics/) for the Google Analytics
+         * property associated with the specified FirebaseProject.
+         *
+         * @param string $analyticsAccountId
+         */
+        public function setAnalyticsAccountId($analyticsAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsAccountId()
+        {
+        }
+        /**
+         * The display name of the Google Analytics property associated with the
+         * specified `FirebaseProject`.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The globally unique, Google-assigned identifier of the Google Analytics
+         * property associated with the specified `FirebaseProject`. If you called
+         * [`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics) to link
+         * the `FirebaseProject` with a Google Analytics account, the value in this
+         * `id` field is the same as the ID of the property either specified or
+         * provisioned with that call to `AddGoogleAnalytics`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\AnalyticsProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsAccountId()
-    {
-    }
-    /**
-     * The display name of the Google Analytics property associated with the
-     * specified `FirebaseProject`.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The globally unique, Google-assigned identifier of the Google Analytics
-     * property associated with the specified `FirebaseProject`. If you called
-     * [`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics) to link
-     * the `FirebaseProject` with a Google Analytics account, the value in this
-     * `id` field is the same as the ID of the property either specified or
-     * provisioned with that call to `AddGoogleAnalytics`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_FirebaseManagement_AnalyticsProperty extends \Google\Service\FirebaseManagement\AnalyticsProperty
     {
     }
 }

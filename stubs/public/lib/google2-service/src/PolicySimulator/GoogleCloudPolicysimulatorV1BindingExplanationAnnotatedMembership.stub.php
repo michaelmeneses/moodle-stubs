@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1BindingExplanationAnnotatedMembership extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const MEMBERSHIP_MEMBERSHIP_UNSPECIFIED = 'MEMBERSHIP_UNSPECIFIED';
-    /**
-     * The binding includes the principal. The principal can be included directly
-     * or indirectly. For example: * A principal is included directly if that
-     * principal is listed in the binding. * A principal is included indirectly if
-     * that principal is in a Google group or Google Workspace domain that is
-     * listed in the binding.
-     */
-    public const MEMBERSHIP_MEMBERSHIP_INCLUDED = 'MEMBERSHIP_INCLUDED';
-    /**
-     * The binding does not include the principal.
-     */
-    public const MEMBERSHIP_MEMBERSHIP_NOT_INCLUDED = 'MEMBERSHIP_NOT_INCLUDED';
-    /**
-     * The user who created the Replay is not allowed to access the binding.
-     */
-    public const MEMBERSHIP_MEMBERSHIP_UNKNOWN_INFO_DENIED = 'MEMBERSHIP_UNKNOWN_INFO_DENIED';
-    /**
-     * The principal is an unsupported type. Only Google Accounts and service
-     * accounts are supported.
-     */
-    public const MEMBERSHIP_MEMBERSHIP_UNKNOWN_UNSUPPORTED = 'MEMBERSHIP_UNKNOWN_UNSUPPORTED';
-    /**
-     * Default value. This value is unused.
-     */
-    public const RELEVANCE_HEURISTIC_RELEVANCE_UNSPECIFIED = 'HEURISTIC_RELEVANCE_UNSPECIFIED';
-    /**
-     * The data point has a limited effect on the result. Changing the data point
-     * is unlikely to affect the overall determination.
-     */
-    public const RELEVANCE_NORMAL = 'NORMAL';
-    /**
-     * The data point has a strong effect on the result. Changing the data point
-     * is likely to affect the overall determination.
-     */
-    public const RELEVANCE_HIGH = 'HIGH';
-    /**
-     * Indicates whether the binding includes the principal.
-     *
-     * @var string
-     */
-    public $membership;
-    /**
-     * The relevance of the principal's status to the overall determination for
-     * the binding.
-     *
-     * @var string
-     */
-    public $relevance;
-    /**
-     * Indicates whether the binding includes the principal.
-     *
-     * Accepted values: MEMBERSHIP_UNSPECIFIED, MEMBERSHIP_INCLUDED,
-     * MEMBERSHIP_NOT_INCLUDED, MEMBERSHIP_UNKNOWN_INFO_DENIED,
-     * MEMBERSHIP_UNKNOWN_UNSUPPORTED
-     *
-     * @param self::MEMBERSHIP_* $membership
-     */
-    public function setMembership($membership)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1BindingExplanationAnnotatedMembership extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const MEMBERSHIP_MEMBERSHIP_UNSPECIFIED = 'MEMBERSHIP_UNSPECIFIED';
+        /**
+         * The binding includes the principal. The principal can be included directly
+         * or indirectly. For example: * A principal is included directly if that
+         * principal is listed in the binding. * A principal is included indirectly if
+         * that principal is in a Google group or Google Workspace domain that is
+         * listed in the binding.
+         */
+        public const MEMBERSHIP_MEMBERSHIP_INCLUDED = 'MEMBERSHIP_INCLUDED';
+        /**
+         * The binding does not include the principal.
+         */
+        public const MEMBERSHIP_MEMBERSHIP_NOT_INCLUDED = 'MEMBERSHIP_NOT_INCLUDED';
+        /**
+         * The user who created the Replay is not allowed to access the binding.
+         */
+        public const MEMBERSHIP_MEMBERSHIP_UNKNOWN_INFO_DENIED = 'MEMBERSHIP_UNKNOWN_INFO_DENIED';
+        /**
+         * The principal is an unsupported type. Only Google Accounts and service
+         * accounts are supported.
+         */
+        public const MEMBERSHIP_MEMBERSHIP_UNKNOWN_UNSUPPORTED = 'MEMBERSHIP_UNKNOWN_UNSUPPORTED';
+        /**
+         * Default value. This value is unused.
+         */
+        public const RELEVANCE_HEURISTIC_RELEVANCE_UNSPECIFIED = 'HEURISTIC_RELEVANCE_UNSPECIFIED';
+        /**
+         * The data point has a limited effect on the result. Changing the data point
+         * is unlikely to affect the overall determination.
+         */
+        public const RELEVANCE_NORMAL = 'NORMAL';
+        /**
+         * The data point has a strong effect on the result. Changing the data point
+         * is likely to affect the overall determination.
+         */
+        public const RELEVANCE_HIGH = 'HIGH';
+        /**
+         * Indicates whether the binding includes the principal.
+         *
+         * @var string
+         */
+        public $membership;
+        /**
+         * The relevance of the principal's status to the overall determination for
+         * the binding.
+         *
+         * @var string
+         */
+        public $relevance;
+        /**
+         * Indicates whether the binding includes the principal.
+         *
+         * Accepted values: MEMBERSHIP_UNSPECIFIED, MEMBERSHIP_INCLUDED,
+         * MEMBERSHIP_NOT_INCLUDED, MEMBERSHIP_UNKNOWN_INFO_DENIED,
+         * MEMBERSHIP_UNKNOWN_UNSUPPORTED
+         *
+         * @param self::MEMBERSHIP_* $membership
+         */
+        public function setMembership($membership)
+        {
+        }
+        /**
+         * @return self::MEMBERSHIP_*
+         */
+        public function getMembership()
+        {
+        }
+        /**
+         * The relevance of the principal's status to the overall determination for
+         * the binding.
+         *
+         * Accepted values: HEURISTIC_RELEVANCE_UNSPECIFIED, NORMAL, HIGH
+         *
+         * @param self::RELEVANCE_* $relevance
+         */
+        public function setRelevance($relevance)
+        {
+        }
+        /**
+         * @return self::RELEVANCE_*
+         */
+        public function getRelevance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MEMBERSHIP_*
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1BindingExplanationAnnotatedMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembership()
-    {
-    }
-    /**
-     * The relevance of the principal's status to the overall determination for
-     * the binding.
-     *
-     * Accepted values: HEURISTIC_RELEVANCE_UNSPECIFIED, NORMAL, HIGH
-     *
-     * @param self::RELEVANCE_* $relevance
-     */
-    public function setRelevance($relevance)
-    {
-    }
-    /**
-     * @return self::RELEVANCE_*
-     */
-    public function getRelevance()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1BindingExplanationAnnotatedMembership extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1BindingExplanationAnnotatedMembership
     {
     }
 }

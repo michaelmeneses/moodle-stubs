@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class CommentAuthor extends \Google\Model
-{
-    /**
-     * The display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The identifier of the creator.
-     *
-     * @var string
-     */
-    public $id;
-    protected $imageType = CommentAuthorImage::class;
-    protected $imageDataType = '';
-    /**
-     * The URL of the creator's Profile page.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Blogger {
+    class CommentAuthor extends \Google\Model
     {
+        /**
+         * The display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The identifier of the creator.
+         *
+         * @var string
+         */
+        public $id;
+        protected $imageType = CommentAuthorImage::class;
+        protected $imageDataType = '';
+        /**
+         * The URL of the creator's Profile page.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The identifier of the creator.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The creator's avatar.
+         *
+         * @param CommentAuthorImage $image
+         */
+        public function setImage(CommentAuthorImage $image)
+        {
+        }
+        /**
+         * @return CommentAuthorImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The URL of the creator's Profile page.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\CommentAuthor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The identifier of the creator.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The creator's avatar.
-     *
-     * @param CommentAuthorImage $image
-     */
-    public function setImage(CommentAuthorImage $image)
-    {
-    }
-    /**
-     * @return CommentAuthorImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * The URL of the creator's Profile page.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Blogger_CommentAuthor extends \Google\Service\Blogger\CommentAuthor
     {
     }
 }

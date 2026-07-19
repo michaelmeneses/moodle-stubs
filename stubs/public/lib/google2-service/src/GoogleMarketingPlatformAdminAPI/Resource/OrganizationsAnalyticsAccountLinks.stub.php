@@ -21,87 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI\Resource;
-
-/**
- * The "analyticsAccountLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $marketingplatformadminService = new Google\Service\GoogleMarketingPlatformAdminAPI(...);
- *   $analyticsAccountLinks = $marketingplatformadminService->organizations_analyticsAccountLinks;
- *  </code>
- */
-class OrganizationsAnalyticsAccountLinks extends \Google\Service\Resource
-{
+namespace Google\Service\GoogleMarketingPlatformAdminAPI\Resource {
+    use Google\Service\GoogleMarketingPlatformAdminAPI\AnalyticsAccountLink;
+    use Google\Service\GoogleMarketingPlatformAdminAPI\ListAnalyticsAccountLinksResponse;
+    use Google\Service\GoogleMarketingPlatformAdminAPI\MarketingplatformadminEmpty;
+    use Google\Service\GoogleMarketingPlatformAdminAPI\SetPropertyServiceLevelRequest;
+    use Google\Service\GoogleMarketingPlatformAdminAPI\SetPropertyServiceLevelResponse;
     /**
-     * Creates the link between the Analytics account and the Google Marketing
-     * Platform organization. User needs to be an org user, and admin on the
-     * Analytics account to create the link. If the account is already linked to an
-     * organization, user needs to unlink the account from the current organization,
-     * then try link again. (analyticsAccountLinks.create)
-     *
-     * @param string $parent Required. The parent resource where this Analytics
-     * account link will be created. Format: organizations/{org_id}
-     * @param AnalyticsAccountLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return AnalyticsAccountLink
-     * @throws \Google\Service\Exception
+     * The "analyticsAccountLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $marketingplatformadminService = new Google\Service\GoogleMarketingPlatformAdminAPI(...);
+     *   $analyticsAccountLinks = $marketingplatformadminService->organizations_analyticsAccountLinks;
+     *  </code>
      */
-    public function create($parent, AnalyticsAccountLink $postBody, $optParams = [])
+    class OrganizationsAnalyticsAccountLinks extends \Google\Service\Resource
     {
+        /**
+         * Creates the link between the Analytics account and the Google Marketing
+         * Platform organization. User needs to be an org user, and admin on the
+         * Analytics account to create the link. If the account is already linked to an
+         * organization, user needs to unlink the account from the current organization,
+         * then try link again. (analyticsAccountLinks.create)
+         *
+         * @param string $parent Required. The parent resource where this Analytics
+         * account link will be created. Format: organizations/{org_id}
+         * @param AnalyticsAccountLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return AnalyticsAccountLink
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, AnalyticsAccountLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the AnalyticsAccountLink, which detaches the Analytics account from
+         * the Google Marketing Platform organization. User needs to be an org user, and
+         * admin on the Analytics account in order to delete the link.
+         * (analyticsAccountLinks.delete)
+         *
+         * @param string $name Required. The name of the Analytics account link to
+         * delete. Format:
+         * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
+         * @param array $optParams Optional parameters.
+         * @return MarketingplatformadminEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the Google Analytics accounts link to the specified Google Marketing
+         * Platform organization.
+         * (analyticsAccountLinks.listOrganizationsAnalyticsAccountLinks)
+         *
+         * @param string $parent Required. The parent organization, which owns this
+         * collection of Analytics account links. Format: organizations/{org_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of Analytics account
+         * links to return in one call. The service may return fewer than this value. If
+         * unspecified, at most 50 Analytics account links will be returned. The maximum
+         * value is 1000; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * ListAnalyticsAccountLinks call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListAnalyticsAccountLinks`
+         * must match the call that provided the page token.
+         * @return ListAnalyticsAccountLinksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsAnalyticsAccountLinks($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the service level for an Analytics property.
+         * (analyticsAccountLinks.setPropertyServiceLevel)
+         *
+         * @param string $analyticsAccountLink Required. The parent AnalyticsAccountLink
+         * scope where this property is in. Format:
+         * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
+         * @param SetPropertyServiceLevelRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SetPropertyServiceLevelResponse
+         * @throws \Google\Service\Exception
+         */
+        public function setPropertyServiceLevel($analyticsAccountLink, SetPropertyServiceLevelRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the AnalyticsAccountLink, which detaches the Analytics account from
-     * the Google Marketing Platform organization. User needs to be an org user, and
-     * admin on the Analytics account in order to delete the link.
-     * (analyticsAccountLinks.delete)
-     *
-     * @param string $name Required. The name of the Analytics account link to
-     * delete. Format:
-     * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
-     * @param array $optParams Optional parameters.
-     * @return MarketingplatformadminEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\Resource\OrganizationsAnalyticsAccountLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the Google Analytics accounts link to the specified Google Marketing
-     * Platform organization.
-     * (analyticsAccountLinks.listOrganizationsAnalyticsAccountLinks)
-     *
-     * @param string $parent Required. The parent organization, which owns this
-     * collection of Analytics account links. Format: organizations/{org_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of Analytics account
-     * links to return in one call. The service may return fewer than this value. If
-     * unspecified, at most 50 Analytics account links will be returned. The maximum
-     * value is 1000; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * ListAnalyticsAccountLinks call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListAnalyticsAccountLinks`
-     * must match the call that provided the page token.
-     * @return ListAnalyticsAccountLinksResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsAnalyticsAccountLinks($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the service level for an Analytics property.
-     * (analyticsAccountLinks.setPropertyServiceLevel)
-     *
-     * @param string $analyticsAccountLink Required. The parent AnalyticsAccountLink
-     * scope where this property is in. Format:
-     * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
-     * @param SetPropertyServiceLevelRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SetPropertyServiceLevelResponse
-     * @throws \Google\Service\Exception
-     */
-    public function setPropertyServiceLevel($analyticsAccountLink, SetPropertyServiceLevelRequest $postBody, $optParams = [])
+    class Google_Service_GoogleMarketingPlatformAdminAPI_Resource_OrganizationsAnalyticsAccountLinks extends \Google\Service\GoogleMarketingPlatformAdminAPI\Resource\OrganizationsAnalyticsAccountLinks
     {
     }
 }

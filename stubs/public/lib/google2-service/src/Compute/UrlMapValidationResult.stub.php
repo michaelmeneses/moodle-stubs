@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class UrlMapValidationResult extends \Google\Collection
-{
-    protected $collection_key = 'testFailures';
-    /**
-     * @var string[]
-     */
-    public $loadErrors;
-    /**
-     * Whether the given UrlMap can be successfully loaded. If false, 'loadErrors'
-     * indicates the reasons.
-     *
-     * @var bool
-     */
-    public $loadSucceeded;
-    protected $testFailuresType = TestFailure::class;
-    protected $testFailuresDataType = 'array';
-    /**
-     * If successfully loaded, this field indicates whether the test passed. If
-     * false, 'testFailures's indicate the reason of failure.
-     *
-     * @var bool
-     */
-    public $testPassed;
-    /**
-     * @param string[] $loadErrors
-     */
-    public function setLoadErrors($loadErrors)
+namespace Google\Service\Compute {
+    class UrlMapValidationResult extends \Google\Collection
     {
+        protected $collection_key = 'testFailures';
+        /**
+         * @var string[]
+         */
+        public $loadErrors;
+        /**
+         * Whether the given UrlMap can be successfully loaded. If false, 'loadErrors'
+         * indicates the reasons.
+         *
+         * @var bool
+         */
+        public $loadSucceeded;
+        protected $testFailuresType = TestFailure::class;
+        protected $testFailuresDataType = 'array';
+        /**
+         * If successfully loaded, this field indicates whether the test passed. If
+         * false, 'testFailures's indicate the reason of failure.
+         *
+         * @var bool
+         */
+        public $testPassed;
+        /**
+         * @param string[] $loadErrors
+         */
+        public function setLoadErrors($loadErrors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLoadErrors()
+        {
+        }
+        /**
+         * Whether the given UrlMap can be successfully loaded. If false, 'loadErrors'
+         * indicates the reasons.
+         *
+         * @param bool $loadSucceeded
+         */
+        public function setLoadSucceeded($loadSucceeded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLoadSucceeded()
+        {
+        }
+        /**
+         * @param TestFailure[] $testFailures
+         */
+        public function setTestFailures($testFailures)
+        {
+        }
+        /**
+         * @return TestFailure[]
+         */
+        public function getTestFailures()
+        {
+        }
+        /**
+         * If successfully loaded, this field indicates whether the test passed. If
+         * false, 'testFailures's indicate the reason of failure.
+         *
+         * @param bool $testPassed
+         */
+        public function setTestPassed($testPassed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTestPassed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\UrlMapValidationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoadErrors()
-    {
-    }
-    /**
-     * Whether the given UrlMap can be successfully loaded. If false, 'loadErrors'
-     * indicates the reasons.
-     *
-     * @param bool $loadSucceeded
-     */
-    public function setLoadSucceeded($loadSucceeded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLoadSucceeded()
-    {
-    }
-    /**
-     * @param TestFailure[] $testFailures
-     */
-    public function setTestFailures($testFailures)
-    {
-    }
-    /**
-     * @return TestFailure[]
-     */
-    public function getTestFailures()
-    {
-    }
-    /**
-     * If successfully loaded, this field indicates whether the test passed. If
-     * false, 'testFailures's indicate the reason of failure.
-     *
-     * @param bool $testPassed
-     */
-    public function setTestPassed($testPassed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTestPassed()
+    class Google_Service_Compute_UrlMapValidationResult extends \Google\Service\Compute\UrlMapValidationResult
     {
     }
 }

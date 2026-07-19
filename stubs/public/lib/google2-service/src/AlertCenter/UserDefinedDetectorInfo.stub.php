@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class UserDefinedDetectorInfo extends \Google\Model
-{
-    /**
-     * Display name of the detector.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name that uniquely identifies the detector.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Display name of the detector.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AlertCenter {
+    class UserDefinedDetectorInfo extends \Google\Model
     {
+        /**
+         * Display name of the detector.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name that uniquely identifies the detector.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Display name of the detector.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name that uniquely identifies the detector.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\UserDefinedDetectorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name that uniquely identifies the detector.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_AlertCenter_UserDefinedDetectorInfo extends \Google\Service\AlertCenter\UserDefinedDetectorInfo
     {
     }
 }

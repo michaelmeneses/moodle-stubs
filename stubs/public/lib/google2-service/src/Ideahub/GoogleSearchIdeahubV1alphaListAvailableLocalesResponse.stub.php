@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1alphaListAvailableLocalesResponse extends \Google\Collection
-{
-    protected $collection_key = 'availableLocales';
-    protected $availableLocalesType = GoogleSearchIdeahubV1alphaAvailableLocale::class;
-    protected $availableLocalesDataType = 'array';
-    public $nextPageToken;
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1alphaListAvailableLocalesResponse extends \Google\Collection
+    {
+        protected $collection_key = 'availableLocales';
+        protected $availableLocalesType = GoogleSearchIdeahubV1alphaAvailableLocale::class;
+        protected $availableLocalesDataType = 'array';
+        public $nextPageToken;
+        /**
+         * @param GoogleSearchIdeahubV1alphaAvailableLocale[]
+         */
+        public function setAvailableLocales($availableLocales)
+        {
+        }
+        /**
+         * @return GoogleSearchIdeahubV1alphaAvailableLocale[]
+         */
+        public function getAvailableLocales()
+        {
+        }
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleSearchIdeahubV1alphaAvailableLocale[]
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaListAvailableLocalesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAvailableLocales($availableLocales)
-    {
-    }
-    /**
-     * @return GoogleSearchIdeahubV1alphaAvailableLocale[]
-     */
-    public function getAvailableLocales()
-    {
-    }
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    public function getNextPageToken()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1alphaListAvailableLocalesResponse extends \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaListAvailableLocalesResponse
     {
     }
 }

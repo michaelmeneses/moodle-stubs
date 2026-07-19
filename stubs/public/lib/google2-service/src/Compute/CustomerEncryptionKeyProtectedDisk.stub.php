@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CustomerEncryptionKeyProtectedDisk extends \Google\Model
-{
-    protected $diskEncryptionKeyType = CustomerEncryptionKey::class;
-    protected $diskEncryptionKeyDataType = '';
-    /**
-     * Specifies a valid partial or full URL to an existing Persistent Disk
-     * resource. This field is only applicable for persistent disks. For example:
-     *
-     * "source": "/compute/v1/projects/project_id/zones/zone/disks/ disk_name
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Decrypts data associated with the disk with acustomer-supplied encryption
-     * key.
-     *
-     * @param CustomerEncryptionKey $diskEncryptionKey
-     */
-    public function setDiskEncryptionKey(CustomerEncryptionKey $diskEncryptionKey)
+namespace Google\Service\Compute {
+    class CustomerEncryptionKeyProtectedDisk extends \Google\Model
     {
+        protected $diskEncryptionKeyType = CustomerEncryptionKey::class;
+        protected $diskEncryptionKeyDataType = '';
+        /**
+         * Specifies a valid partial or full URL to an existing Persistent Disk
+         * resource. This field is only applicable for persistent disks. For example:
+         *
+         * "source": "/compute/v1/projects/project_id/zones/zone/disks/ disk_name
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Decrypts data associated with the disk with acustomer-supplied encryption
+         * key.
+         *
+         * @param CustomerEncryptionKey $diskEncryptionKey
+         */
+        public function setDiskEncryptionKey(CustomerEncryptionKey $diskEncryptionKey)
+        {
+        }
+        /**
+         * @return CustomerEncryptionKey
+         */
+        public function getDiskEncryptionKey()
+        {
+        }
+        /**
+         * Specifies a valid partial or full URL to an existing Persistent Disk
+         * resource. This field is only applicable for persistent disks. For example:
+         *
+         * "source": "/compute/v1/projects/project_id/zones/zone/disks/ disk_name
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerEncryptionKey
+     * Runtime class alias of \Google\Service\Compute\CustomerEncryptionKeyProtectedDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskEncryptionKey()
-    {
-    }
-    /**
-     * Specifies a valid partial or full URL to an existing Persistent Disk
-     * resource. This field is only applicable for persistent disks. For example:
-     *
-     * "source": "/compute/v1/projects/project_id/zones/zone/disks/ disk_name
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_Compute_CustomerEncryptionKeyProtectedDisk extends \Google\Service\Compute\CustomerEncryptionKeyProtectedDisk
     {
     }
 }

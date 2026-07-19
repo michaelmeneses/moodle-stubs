@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ChatProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $chatId;
-    /**
-     * @var int
-     */
-    public $memberType;
-    /**
-     * @param string
-     */
-    public function setChatId($chatId)
+namespace Google\Service\CloudSearch {
+    class ChatProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $chatId;
+        /**
+         * @var int
+         */
+        public $memberType;
+        /**
+         * @param string
+         */
+        public function setChatId($chatId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChatId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMemberType($memberType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemberType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ChatProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChatId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMemberType($memberType)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemberType()
+    class Google_Service_CloudSearch_ChatProto extends \Google\Service\CloudSearch\ChatProto
     {
     }
 }

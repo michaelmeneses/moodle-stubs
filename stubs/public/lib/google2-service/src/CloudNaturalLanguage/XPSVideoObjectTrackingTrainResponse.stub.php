@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoObjectTrackingTrainResponse extends \Google\Model
-{
-    protected $exportModelSpecType = XPSVideoExportModelSpec::class;
-    protected $exportModelSpecDataType = '';
-    protected $modelArtifactSpecType = XPSVideoModelArtifactSpec::class;
-    protected $modelArtifactSpecDataType = '';
-    /**
-     * The actual train cost of creating this model, expressed in node seconds,
-     * i.e. 3,600 value in this field means 1 node hour.
-     *
-     * @var string
-     */
-    public $trainCostNodeSeconds;
-    /**
-     * Populated for AutoML request only.
-     *
-     * @param XPSVideoExportModelSpec $exportModelSpec
-     */
-    public function setExportModelSpec(XPSVideoExportModelSpec $exportModelSpec)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoObjectTrackingTrainResponse extends \Google\Model
     {
+        protected $exportModelSpecType = XPSVideoExportModelSpec::class;
+        protected $exportModelSpecDataType = '';
+        protected $modelArtifactSpecType = XPSVideoModelArtifactSpec::class;
+        protected $modelArtifactSpecDataType = '';
+        /**
+         * The actual train cost of creating this model, expressed in node seconds,
+         * i.e. 3,600 value in this field means 1 node hour.
+         *
+         * @var string
+         */
+        public $trainCostNodeSeconds;
+        /**
+         * Populated for AutoML request only.
+         *
+         * @param XPSVideoExportModelSpec $exportModelSpec
+         */
+        public function setExportModelSpec(XPSVideoExportModelSpec $exportModelSpec)
+        {
+        }
+        /**
+         * @return XPSVideoExportModelSpec
+         */
+        public function getExportModelSpec()
+        {
+        }
+        /**
+         * ## The fields below are only populated under uCAIP request scope.
+         *
+         * @param XPSVideoModelArtifactSpec $modelArtifactSpec
+         */
+        public function setModelArtifactSpec(XPSVideoModelArtifactSpec $modelArtifactSpec)
+        {
+        }
+        /**
+         * @return XPSVideoModelArtifactSpec
+         */
+        public function getModelArtifactSpec()
+        {
+        }
+        /**
+         * The actual train cost of creating this model, expressed in node seconds,
+         * i.e. 3,600 value in this field means 1 node hour.
+         *
+         * @param string $trainCostNodeSeconds
+         */
+        public function setTrainCostNodeSeconds($trainCostNodeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostNodeSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSVideoExportModelSpec
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoObjectTrackingTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportModelSpec()
-    {
-    }
-    /**
-     * ## The fields below are only populated under uCAIP request scope.
-     *
-     * @param XPSVideoModelArtifactSpec $modelArtifactSpec
-     */
-    public function setModelArtifactSpec(XPSVideoModelArtifactSpec $modelArtifactSpec)
-    {
-    }
-    /**
-     * @return XPSVideoModelArtifactSpec
-     */
-    public function getModelArtifactSpec()
-    {
-    }
-    /**
-     * The actual train cost of creating this model, expressed in node seconds,
-     * i.e. 3,600 value in this field means 1 node hour.
-     *
-     * @param string $trainCostNodeSeconds
-     */
-    public function setTrainCostNodeSeconds($trainCostNodeSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostNodeSeconds()
+    class Google_Service_CloudNaturalLanguage_XPSVideoObjectTrackingTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSVideoObjectTrackingTrainResponse
     {
     }
 }

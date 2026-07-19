@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2UserEventInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'userEvents';
-    protected $userEventsType = GoogleCloudRetailV2UserEvent::class;
-    protected $userEventsDataType = 'array';
-    /**
-     * Required. A list of user events to import. Recommended max of 10k items.
-     *
-     * @param GoogleCloudRetailV2UserEvent[] $userEvents
-     */
-    public function setUserEvents($userEvents)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2UserEventInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'userEvents';
+        protected $userEventsType = GoogleCloudRetailV2UserEvent::class;
+        protected $userEventsDataType = 'array';
+        /**
+         * Required. A list of user events to import. Recommended max of 10k items.
+         *
+         * @param GoogleCloudRetailV2UserEvent[] $userEvents
+         */
+        public function setUserEvents($userEvents)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2UserEvent[]
+         */
+        public function getUserEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2UserEvent[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2UserEventInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserEvents()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2UserEventInlineSource extends \Google\Service\CloudRetail\GoogleCloudRetailV2UserEventInlineSource
     {
     }
 }

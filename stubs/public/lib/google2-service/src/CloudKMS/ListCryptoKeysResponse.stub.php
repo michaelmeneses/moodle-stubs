@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ListCryptoKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'cryptoKeys';
-    protected $cryptoKeysType = CryptoKey::class;
-    protected $cryptoKeysDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCryptoKeysRequest.page_token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of CryptoKeys that matched the query. This field is not
-     * populated if ListCryptoKeysRequest.filter is applied.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The list of CryptoKeys.
-     *
-     * @param CryptoKey[] $cryptoKeys
-     */
-    public function setCryptoKeys($cryptoKeys)
+namespace Google\Service\CloudKMS {
+    class ListCryptoKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'cryptoKeys';
+        protected $cryptoKeysType = CryptoKey::class;
+        protected $cryptoKeysDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCryptoKeysRequest.page_token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of CryptoKeys that matched the query. This field is not
+         * populated if ListCryptoKeysRequest.filter is applied.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The list of CryptoKeys.
+         *
+         * @param CryptoKey[] $cryptoKeys
+         */
+        public function setCryptoKeys($cryptoKeys)
+        {
+        }
+        /**
+         * @return CryptoKey[]
+         */
+        public function getCryptoKeys()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCryptoKeysRequest.page_token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of CryptoKeys that matched the query. This field is not
+         * populated if ListCryptoKeysRequest.filter is applied.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CryptoKey[]
+     * Runtime class alias of \Google\Service\CloudKMS\ListCryptoKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeys()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCryptoKeysRequest.page_token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of CryptoKeys that matched the query. This field is not
-     * populated if ListCryptoKeysRequest.filter is applied.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_CloudKMS_ListCryptoKeysResponse extends \Google\Service\CloudKMS\ListCryptoKeysResponse
     {
     }
 }

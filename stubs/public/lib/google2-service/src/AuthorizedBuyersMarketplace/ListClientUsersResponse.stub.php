@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class ListClientUsersResponse extends \Google\Collection
-{
-    protected $collection_key = 'clientUsers';
-    protected $clientUsersType = ClientUser::class;
-    protected $clientUsersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListClientUsersRequest.pageToken field in the subsequent call to the list
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned list of client users.
-     *
-     * @param ClientUser[] $clientUsers
-     */
-    public function setClientUsers($clientUsers)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class ListClientUsersResponse extends \Google\Collection
     {
+        protected $collection_key = 'clientUsers';
+        protected $clientUsersType = ClientUser::class;
+        protected $clientUsersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListClientUsersRequest.pageToken field in the subsequent call to the list
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned list of client users.
+         *
+         * @param ClientUser[] $clientUsers
+         */
+        public function setClientUsers($clientUsers)
+        {
+        }
+        /**
+         * @return ClientUser[]
+         */
+        public function getClientUsers()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListClientUsersRequest.pageToken field in the subsequent call to the list
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientUser[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\ListClientUsersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientUsers()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListClientUsersRequest.pageToken field in the subsequent call to the list
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AuthorizedBuyersMarketplace_ListClientUsersResponse extends \Google\Service\AuthorizedBuyersMarketplace\ListClientUsersResponse
     {
     }
 }

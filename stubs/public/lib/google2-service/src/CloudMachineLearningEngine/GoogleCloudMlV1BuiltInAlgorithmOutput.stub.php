@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1BuiltInAlgorithmOutput extends \Google\Model
-{
-    /**
-     * Framework on which the built-in algorithm was trained.
-     *
-     * @var string
-     */
-    public $framework;
-    /**
-     * The Cloud Storage path to the `model/` directory where the training job
-     * saves the trained model. Only set for successful jobs that don't use
-     * hyperparameter tuning.
-     *
-     * @var string
-     */
-    public $modelPath;
-    /**
-     * Python version on which the built-in algorithm was trained.
-     *
-     * @var string
-     */
-    public $pythonVersion;
-    /**
-     * AI Platform runtime version on which the built-in algorithm was trained.
-     *
-     * @var string
-     */
-    public $runtimeVersion;
-    /**
-     * Framework on which the built-in algorithm was trained.
-     *
-     * @param string $framework
-     */
-    public function setFramework($framework)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1BuiltInAlgorithmOutput extends \Google\Model
     {
+        /**
+         * Framework on which the built-in algorithm was trained.
+         *
+         * @var string
+         */
+        public $framework;
+        /**
+         * The Cloud Storage path to the `model/` directory where the training job
+         * saves the trained model. Only set for successful jobs that don't use
+         * hyperparameter tuning.
+         *
+         * @var string
+         */
+        public $modelPath;
+        /**
+         * Python version on which the built-in algorithm was trained.
+         *
+         * @var string
+         */
+        public $pythonVersion;
+        /**
+         * AI Platform runtime version on which the built-in algorithm was trained.
+         *
+         * @var string
+         */
+        public $runtimeVersion;
+        /**
+         * Framework on which the built-in algorithm was trained.
+         *
+         * @param string $framework
+         */
+        public function setFramework($framework)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFramework()
+        {
+        }
+        /**
+         * The Cloud Storage path to the `model/` directory where the training job
+         * saves the trained model. Only set for successful jobs that don't use
+         * hyperparameter tuning.
+         *
+         * @param string $modelPath
+         */
+        public function setModelPath($modelPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelPath()
+        {
+        }
+        /**
+         * Python version on which the built-in algorithm was trained.
+         *
+         * @param string $pythonVersion
+         */
+        public function setPythonVersion($pythonVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPythonVersion()
+        {
+        }
+        /**
+         * AI Platform runtime version on which the built-in algorithm was trained.
+         *
+         * @param string $runtimeVersion
+         */
+        public function setRuntimeVersion($runtimeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1BuiltInAlgorithmOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFramework()
-    {
-    }
-    /**
-     * The Cloud Storage path to the `model/` directory where the training job
-     * saves the trained model. Only set for successful jobs that don't use
-     * hyperparameter tuning.
-     *
-     * @param string $modelPath
-     */
-    public function setModelPath($modelPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelPath()
-    {
-    }
-    /**
-     * Python version on which the built-in algorithm was trained.
-     *
-     * @param string $pythonVersion
-     */
-    public function setPythonVersion($pythonVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPythonVersion()
-    {
-    }
-    /**
-     * AI Platform runtime version on which the built-in algorithm was trained.
-     *
-     * @param string $runtimeVersion
-     */
-    public function setRuntimeVersion($runtimeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeVersion()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1BuiltInAlgorithmOutput extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1BuiltInAlgorithmOutput
     {
     }
 }

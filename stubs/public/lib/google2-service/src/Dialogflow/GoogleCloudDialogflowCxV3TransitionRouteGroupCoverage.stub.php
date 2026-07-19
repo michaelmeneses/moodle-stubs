@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage extends \Google\Collection
-{
-    protected $collection_key = 'coverages';
-    /**
-     * The percent of transition routes in all the transition route groups that
-     * are covered.
-     *
-     * @var float
-     */
-    public $coverageScore;
-    protected $coveragesType = GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverage::class;
-    protected $coveragesDataType = 'array';
-    /**
-     * The percent of transition routes in all the transition route groups that
-     * are covered.
-     *
-     * @param float $coverageScore
-     */
-    public function setCoverageScore($coverageScore)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage extends \Google\Collection
     {
+        protected $collection_key = 'coverages';
+        /**
+         * The percent of transition routes in all the transition route groups that
+         * are covered.
+         *
+         * @var float
+         */
+        public $coverageScore;
+        protected $coveragesType = GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverage::class;
+        protected $coveragesDataType = 'array';
+        /**
+         * The percent of transition routes in all the transition route groups that
+         * are covered.
+         *
+         * @param float $coverageScore
+         */
+        public function setCoverageScore($coverageScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCoverageScore()
+        {
+        }
+        /**
+         * Transition route group coverages.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverage[] $coverages
+         */
+        public function setCoverages($coverages)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverage[]
+         */
+        public function getCoverages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoverageScore()
-    {
-    }
-    /**
-     * Transition route group coverages.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverage[] $coverages
-     */
-    public function setCoverages($coverages)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverage[]
-     */
-    public function getCoverages()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage
     {
     }
 }

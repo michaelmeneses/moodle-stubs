@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshAnalysisMessage extends \Google\Collection
-{
-    protected $collection_key = 'resourcePaths';
-    /**
-     * A UI can combine these args with a template (based on message_base.type) to
-     * produce an internationalized message.
-     *
-     * @var array[]
-     */
-    public $args;
-    /**
-     * A human readable description of what the error means. It is suitable for
-     * non-internationalize display purposes.
-     *
-     * @var string
-     */
-    public $description;
-    protected $messageBaseType = ServiceMeshAnalysisMessageBase::class;
-    protected $messageBaseDataType = '';
-    /**
-     * A list of strings specifying the resource identifiers that were the cause
-     * of message generation. A "path" here may be: * MEMBERSHIP_ID if the cause
-     * is a specific member cluster *
-     * MEMBERSHIP_ID/(NAMESPACE\/)?RESOURCETYPE/NAME if the cause is a resource in
-     * a cluster
-     *
-     * @var string[]
-     */
-    public $resourcePaths;
-    /**
-     * A UI can combine these args with a template (based on message_base.type) to
-     * produce an internationalized message.
-     *
-     * @param array[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\GKEHub {
+    class ServiceMeshAnalysisMessage extends \Google\Collection
     {
+        protected $collection_key = 'resourcePaths';
+        /**
+         * A UI can combine these args with a template (based on message_base.type) to
+         * produce an internationalized message.
+         *
+         * @var array[]
+         */
+        public $args;
+        /**
+         * A human readable description of what the error means. It is suitable for
+         * non-internationalize display purposes.
+         *
+         * @var string
+         */
+        public $description;
+        protected $messageBaseType = ServiceMeshAnalysisMessageBase::class;
+        protected $messageBaseDataType = '';
+        /**
+         * A list of strings specifying the resource identifiers that were the cause
+         * of message generation. A "path" here may be: * MEMBERSHIP_ID if the cause
+         * is a specific member cluster *
+         * MEMBERSHIP_ID/(NAMESPACE\/)?RESOURCETYPE/NAME if the cause is a resource in
+         * a cluster
+         *
+         * @var string[]
+         */
+        public $resourcePaths;
+        /**
+         * A UI can combine these args with a template (based on message_base.type) to
+         * produce an internationalized message.
+         *
+         * @param array[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * A human readable description of what the error means. It is suitable for
+         * non-internationalize display purposes.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Details common to all types of Istio and ServiceMesh analysis messages.
+         *
+         * @param ServiceMeshAnalysisMessageBase $messageBase
+         */
+        public function setMessageBase(ServiceMeshAnalysisMessageBase $messageBase)
+        {
+        }
+        /**
+         * @return ServiceMeshAnalysisMessageBase
+         */
+        public function getMessageBase()
+        {
+        }
+        /**
+         * A list of strings specifying the resource identifiers that were the cause
+         * of message generation. A "path" here may be: * MEMBERSHIP_ID if the cause
+         * is a specific member cluster *
+         * MEMBERSHIP_ID/(NAMESPACE\/)?RESOURCETYPE/NAME if the cause is a resource in
+         * a cluster
+         *
+         * @param string[] $resourcePaths
+         */
+        public function setResourcePaths($resourcePaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourcePaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshAnalysisMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * A human readable description of what the error means. It is suitable for
-     * non-internationalize display purposes.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Details common to all types of Istio and ServiceMesh analysis messages.
-     *
-     * @param ServiceMeshAnalysisMessageBase $messageBase
-     */
-    public function setMessageBase(ServiceMeshAnalysisMessageBase $messageBase)
-    {
-    }
-    /**
-     * @return ServiceMeshAnalysisMessageBase
-     */
-    public function getMessageBase()
-    {
-    }
-    /**
-     * A list of strings specifying the resource identifiers that were the cause
-     * of message generation. A "path" here may be: * MEMBERSHIP_ID if the cause
-     * is a specific member cluster *
-     * MEMBERSHIP_ID/(NAMESPACE\/)?RESOURCETYPE/NAME if the cause is a resource in
-     * a cluster
-     *
-     * @param string[] $resourcePaths
-     */
-    public function setResourcePaths($resourcePaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourcePaths()
+    class Google_Service_GKEHub_ServiceMeshAnalysisMessage extends \Google\Service\GKEHub\ServiceMeshAnalysisMessage
     {
     }
 }

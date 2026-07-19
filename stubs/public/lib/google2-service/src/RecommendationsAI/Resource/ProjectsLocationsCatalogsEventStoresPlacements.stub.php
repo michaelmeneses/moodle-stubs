@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI\Resource;
-
-/**
- * The "placements" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
- *   $placements = $recommendationengineService->projects_locations_catalogs_eventStores_placements;
- *  </code>
- */
-class ProjectsLocationsCatalogsEventStoresPlacements extends \Google\Service\Resource
-{
+namespace Google\Service\RecommendationsAI\Resource {
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictRequest;
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictResponse;
     /**
-     * Makes a recommendation prediction. If using API Key based authentication, the
-     * API Key must be registered using the PredictionApiKeyRegistry service. [Learn
-     * more](https://cloud.google.com/recommendations-ai/docs/setting-up#register-
-     * key). (placements.predict)
-     *
-     * @param string $name
-     * @param GoogleCloudRecommendationengineV1beta1PredictRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecommendationengineV1beta1PredictResponse
-     * @throws \Google\Service\Exception
+     * The "placements" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
+     *   $placements = $recommendationengineService->projects_locations_catalogs_eventStores_placements;
+     *  </code>
      */
-    public function predict($name, GoogleCloudRecommendationengineV1beta1PredictRequest $postBody, $optParams = [])
+    class ProjectsLocationsCatalogsEventStoresPlacements extends \Google\Service\Resource
+    {
+        /**
+         * Makes a recommendation prediction. If using API Key based authentication, the
+         * API Key must be registered using the PredictionApiKeyRegistry service. [Learn
+         * more](https://cloud.google.com/recommendations-ai/docs/setting-up#register-
+         * key). (placements.predict)
+         *
+         * @param string $name
+         * @param GoogleCloudRecommendationengineV1beta1PredictRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecommendationengineV1beta1PredictResponse
+         * @throws \Google\Service\Exception
+         */
+        public function predict($name, GoogleCloudRecommendationengineV1beta1PredictRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecommendationsAI\Resource\ProjectsLocationsCatalogsEventStoresPlacements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecommendationsAI_Resource_ProjectsLocationsCatalogsEventStoresPlacements extends \Google\Service\RecommendationsAI\Resource\ProjectsLocationsCatalogsEventStoresPlacements
     {
     }
 }

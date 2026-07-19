@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TaggedField extends \Google\Model
-{
-    /**
-     * A column can be tagged with a custom tag. In this case, the user must
-     * indicate an auxiliary table that contains statistical information on the
-     * possible values of this column.
-     *
-     * @var string
-     */
-    public $customTag;
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    protected $inferredType = GoogleProtobufEmpty::class;
-    protected $inferredDataType = '';
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    /**
-     * A column can be tagged with a custom tag. In this case, the user must
-     * indicate an auxiliary table that contains statistical information on the
-     * possible values of this column.
-     *
-     * @param string $customTag
-     */
-    public function setCustomTag($customTag)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TaggedField extends \Google\Model
     {
+        /**
+         * A column can be tagged with a custom tag. In this case, the user must
+         * indicate an auxiliary table that contains statistical information on the
+         * possible values of this column.
+         *
+         * @var string
+         */
+        public $customTag;
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        protected $inferredType = GoogleProtobufEmpty::class;
+        protected $inferredDataType = '';
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        /**
+         * A column can be tagged with a custom tag. In this case, the user must
+         * indicate an auxiliary table that contains statistical information on the
+         * possible values of this column.
+         *
+         * @param string $customTag
+         */
+        public function setCustomTag($customTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomTag()
+        {
+        }
+        /**
+         * Required. Identifies the column.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
+        /**
+         * If no semantic tag is indicated, we infer the statistical model from the
+         * distribution of values in the input data
+         *
+         * @param GoogleProtobufEmpty $inferred
+         */
+        public function setInferred(GoogleProtobufEmpty $inferred)
+        {
+        }
+        /**
+         * @return GoogleProtobufEmpty
+         */
+        public function getInferred()
+        {
+        }
+        /**
+         * A column can be tagged with a InfoType to use the relevant public dataset
+         * as a statistical model of population, if available. We currently support US
+         * ZIP codes, region codes, ages and genders. To programmatically obtain the
+         * list of supported InfoTypes, use ListInfoTypes with the
+         * supported_by=RISK_ANALYSIS filter.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TaggedField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomTag()
-    {
-    }
-    /**
-     * Required. Identifies the column.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldId
-     */
-    public function getField()
-    {
-    }
-    /**
-     * If no semantic tag is indicated, we infer the statistical model from the
-     * distribution of values in the input data
-     *
-     * @param GoogleProtobufEmpty $inferred
-     */
-    public function setInferred(GoogleProtobufEmpty $inferred)
-    {
-    }
-    /**
-     * @return GoogleProtobufEmpty
-     */
-    public function getInferred()
-    {
-    }
-    /**
-     * A column can be tagged with a InfoType to use the relevant public dataset
-     * as a statistical model of population, if available. We currently support US
-     * ZIP codes, region codes, ages and genders. To programmatically obtain the
-     * list of supported InfoTypes, use ListInfoTypes with the
-     * supported_by=RISK_ANALYSIS filter.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoType
-     */
-    public function getInfoType()
+    class Google_Service_DLP_GooglePrivacyDlpV2TaggedField extends \Google\Service\DLP\GooglePrivacyDlpV2TaggedField
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ListAppRecoveriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'recoveryActions';
-    protected $recoveryActionsType = AppRecoveryAction::class;
-    protected $recoveryActionsDataType = 'array';
-    /**
-     * List of recovery actions associated with the requested package name.
-     *
-     * @param AppRecoveryAction[] $recoveryActions
-     */
-    public function setRecoveryActions($recoveryActions)
+namespace Google\Service\AndroidPublisher {
+    class ListAppRecoveriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'recoveryActions';
+        protected $recoveryActionsType = AppRecoveryAction::class;
+        protected $recoveryActionsDataType = 'array';
+        /**
+         * List of recovery actions associated with the requested package name.
+         *
+         * @param AppRecoveryAction[] $recoveryActions
+         */
+        public function setRecoveryActions($recoveryActions)
+        {
+        }
+        /**
+         * @return AppRecoveryAction[]
+         */
+        public function getRecoveryActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppRecoveryAction[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ListAppRecoveriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecoveryActions()
+    class Google_Service_AndroidPublisher_ListAppRecoveriesResponse extends \Google\Service\AndroidPublisher\ListAppRecoveriesResponse
     {
     }
 }

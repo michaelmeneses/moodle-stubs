@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class LatLongRect extends \Google\Model
-{
-    protected $maxLatLngType = LatLng::class;
-    protected $maxLatLngDataType = '';
-    protected $minLatLngType = LatLng::class;
-    protected $minLatLngDataType = '';
-    /**
-     * Max lat/long pair.
-     *
-     * @param LatLng $maxLatLng
-     */
-    public function setMaxLatLng(LatLng $maxLatLng)
+namespace Google\Service\Vision {
+    class LatLongRect extends \Google\Model
     {
+        protected $maxLatLngType = LatLng::class;
+        protected $maxLatLngDataType = '';
+        protected $minLatLngType = LatLng::class;
+        protected $minLatLngDataType = '';
+        /**
+         * Max lat/long pair.
+         *
+         * @param LatLng $maxLatLng
+         */
+        public function setMaxLatLng(LatLng $maxLatLng)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getMaxLatLng()
+        {
+        }
+        /**
+         * Min lat/long pair.
+         *
+         * @param LatLng $minLatLng
+         */
+        public function setMinLatLng(LatLng $minLatLng)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getMinLatLng()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng
+     * Runtime class alias of \Google\Service\Vision\LatLongRect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxLatLng()
-    {
-    }
-    /**
-     * Min lat/long pair.
-     *
-     * @param LatLng $minLatLng
-     */
-    public function setMinLatLng(LatLng $minLatLng)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getMinLatLng()
+    class Google_Service_Vision_LatLongRect extends \Google\Service\Vision\LatLongRect
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SigningKeyPossessorProto extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $keymasterKeyType;
-    /**
-     * @var string
-     */
-    public $serializedVerificationKey;
-    /**
-     * @var string
-     */
-    public $serializedVerificationKeyset;
-    /**
-     * @param int
-     */
-    public function setKeymasterKeyType($keymasterKeyType)
+namespace Google\Service\CloudSearch {
+    class SigningKeyPossessorProto extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $keymasterKeyType;
+        /**
+         * @var string
+         */
+        public $serializedVerificationKey;
+        /**
+         * @var string
+         */
+        public $serializedVerificationKeyset;
+        /**
+         * @param int
+         */
+        public function setKeymasterKeyType($keymasterKeyType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getKeymasterKeyType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSerializedVerificationKey($serializedVerificationKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerializedVerificationKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSerializedVerificationKeyset($serializedVerificationKeyset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerializedVerificationKeyset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\SigningKeyPossessorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeymasterKeyType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSerializedVerificationKey($serializedVerificationKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerializedVerificationKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSerializedVerificationKeyset($serializedVerificationKeyset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerializedVerificationKeyset()
+    class Google_Service_CloudSearch_SigningKeyPossessorProto extends \Google\Service\CloudSearch\SigningKeyPossessorProto
     {
     }
 }

@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessaccountmanagementService = new Google\Service\MyBusinessAccountManagement(...);
- *   $locations = $mybusinessaccountmanagementService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessAccountManagement\Resource {
+    use Google\Service\MyBusinessAccountManagement\MybusinessaccountmanagementEmpty;
+    use Google\Service\MyBusinessAccountManagement\TransferLocationRequest;
     /**
-     * Moves a location from an account that the user owns to another account that
-     * the same user administers. The user must be an owner of the account the
-     * location is currently associated with and must also be at least a manager of
-     * the destination account. (locations.transfer)
-     *
-     * @param string $name Required. The name of the location to transfer.
-     * `locations/{location_id}`.
-     * @param TransferLocationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return MybusinessaccountmanagementEmpty
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessaccountmanagementService = new Google\Service\MyBusinessAccountManagement(...);
+     *   $locations = $mybusinessaccountmanagementService->locations;
+     *  </code>
      */
-    public function transfer($name, TransferLocationRequest $postBody, $optParams = [])
+    class Locations extends \Google\Service\Resource
+    {
+        /**
+         * Moves a location from an account that the user owns to another account that
+         * the same user administers. The user must be an owner of the account the
+         * location is currently associated with and must also be at least a manager of
+         * the destination account. (locations.transfer)
+         *
+         * @param string $name Required. The name of the location to transfer.
+         * `locations/{location_id}`.
+         * @param TransferLocationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return MybusinessaccountmanagementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function transfer($name, TransferLocationRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessAccountManagement_Resource_Locations extends \Google\Service\MyBusinessAccountManagement\Resource\Locations
     {
     }
 }

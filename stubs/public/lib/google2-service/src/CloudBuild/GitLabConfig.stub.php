@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitLabConfig extends \Google\Collection
-{
-    protected $collection_key = 'connectedRepositories';
-    protected $connectedRepositoriesType = GitLabRepositoryId::class;
-    protected $connectedRepositoriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $enterpriseConfigType = GitLabEnterpriseConfig::class;
-    protected $enterpriseConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $secretsType = GitLabSecrets::class;
-    protected $secretsDataType = '';
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @var string
-     */
-    public $webhookKey;
-    /**
-     * @param GitLabRepositoryId[]
-     */
-    public function setConnectedRepositories($connectedRepositories)
+namespace Google\Service\CloudBuild {
+    class GitLabConfig extends \Google\Collection
     {
+        protected $collection_key = 'connectedRepositories';
+        protected $connectedRepositoriesType = GitLabRepositoryId::class;
+        protected $connectedRepositoriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $enterpriseConfigType = GitLabEnterpriseConfig::class;
+        protected $enterpriseConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $secretsType = GitLabSecrets::class;
+        protected $secretsDataType = '';
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @var string
+         */
+        public $webhookKey;
+        /**
+         * @param GitLabRepositoryId[]
+         */
+        public function setConnectedRepositories($connectedRepositories)
+        {
+        }
+        /**
+         * @return GitLabRepositoryId[]
+         */
+        public function getConnectedRepositories()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param GitLabEnterpriseConfig
+         */
+        public function setEnterpriseConfig(GitLabEnterpriseConfig $enterpriseConfig)
+        {
+        }
+        /**
+         * @return GitLabEnterpriseConfig
+         */
+        public function getEnterpriseConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GitLabSecrets
+         */
+        public function setSecrets(GitLabSecrets $secrets)
+        {
+        }
+        /**
+         * @return GitLabSecrets
+         */
+        public function getSecrets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookKey($webhookKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabRepositoryId[]
+     * Runtime class alias of \Google\Service\CloudBuild\GitLabConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedRepositories()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param GitLabEnterpriseConfig
-     */
-    public function setEnterpriseConfig(GitLabEnterpriseConfig $enterpriseConfig)
-    {
-    }
-    /**
-     * @return GitLabEnterpriseConfig
-     */
-    public function getEnterpriseConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GitLabSecrets
-     */
-    public function setSecrets(GitLabSecrets $secrets)
-    {
-    }
-    /**
-     * @return GitLabSecrets
-     */
-    public function getSecrets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookKey($webhookKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookKey()
+    class Google_Service_CloudBuild_GitLabConfig extends \Google\Service\CloudBuild\GitLabConfig
     {
     }
 }

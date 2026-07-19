@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $deployments = $prod_tt_sasportalService->deployments;
- *  </code>
- */
-class Deployments extends \Google\Service\Resource
-{
+namespace Google\Service\SASPortalTesting\Resource {
+    use Google\Service\SASPortalTesting\SasPortalDeployment;
     /**
-     * Returns a requested deployment. (deployments.get)
-     *
-     * @param string $name Required. The name of the deployment.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDeployment
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
+     *   $deployments = $prod_tt_sasportalService->deployments;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Deployments extends \Google\Service\Resource
+    {
+        /**
+         * Returns a requested deployment. (deployments.get)
+         *
+         * @param string $name Required. The name of the deployment.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDeployment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SASPortalTesting\Resource\Deployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SASPortalTesting_Resource_Deployments extends \Google\Service\SASPortalTesting\Resource\Deployments
     {
     }
 }

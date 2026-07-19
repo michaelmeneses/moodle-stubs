@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1SerializedTaxonomy extends \Google\Collection
-{
-    protected $collection_key = 'policyTags';
-    /**
-     * A list of policy types that are activated per taxonomy.
-     *
-     * @var string[]
-     */
-    public $activatedPolicyTypes;
-    /**
-     * Description of the serialized taxonomy. At most 2000 bytes when encoded in
-     * UTF-8. If not set, defaults to an empty description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Display name of the taxonomy. At most 200 bytes when encoded in
-     * UTF-8.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $policyTagsType = GoogleCloudDatacatalogV1SerializedPolicyTag::class;
-    protected $policyTagsDataType = 'array';
-    /**
-     * A list of policy types that are activated per taxonomy.
-     *
-     * @param string[] $activatedPolicyTypes
-     */
-    public function setActivatedPolicyTypes($activatedPolicyTypes)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1SerializedTaxonomy extends \Google\Collection
     {
+        protected $collection_key = 'policyTags';
+        /**
+         * A list of policy types that are activated per taxonomy.
+         *
+         * @var string[]
+         */
+        public $activatedPolicyTypes;
+        /**
+         * Description of the serialized taxonomy. At most 2000 bytes when encoded in
+         * UTF-8. If not set, defaults to an empty description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Display name of the taxonomy. At most 200 bytes when encoded in
+         * UTF-8.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $policyTagsType = GoogleCloudDatacatalogV1SerializedPolicyTag::class;
+        protected $policyTagsDataType = 'array';
+        /**
+         * A list of policy types that are activated per taxonomy.
+         *
+         * @param string[] $activatedPolicyTypes
+         */
+        public function setActivatedPolicyTypes($activatedPolicyTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActivatedPolicyTypes()
+        {
+        }
+        /**
+         * Description of the serialized taxonomy. At most 2000 bytes when encoded in
+         * UTF-8. If not set, defaults to an empty description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Display name of the taxonomy. At most 200 bytes when encoded in
+         * UTF-8.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Top level policy tags associated with the taxonomy, if any.
+         *
+         * @param GoogleCloudDatacatalogV1SerializedPolicyTag[] $policyTags
+         */
+        public function setPolicyTags($policyTags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1SerializedPolicyTag[]
+         */
+        public function getPolicyTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1SerializedTaxonomy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivatedPolicyTypes()
-    {
-    }
-    /**
-     * Description of the serialized taxonomy. At most 2000 bytes when encoded in
-     * UTF-8. If not set, defaults to an empty description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Display name of the taxonomy. At most 200 bytes when encoded in
-     * UTF-8.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Top level policy tags associated with the taxonomy, if any.
-     *
-     * @param GoogleCloudDatacatalogV1SerializedPolicyTag[] $policyTags
-     */
-    public function setPolicyTags($policyTags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1SerializedPolicyTag[]
-     */
-    public function getPolicyTags()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1SerializedTaxonomy extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1SerializedTaxonomy
     {
     }
 }

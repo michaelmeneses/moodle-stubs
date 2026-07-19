@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ImportFlowRequest extends \Google\Model
-{
-    /**
-     * Unspecified. Treated as `KEEP`.
-     */
-    public const IMPORT_OPTION_IMPORT_OPTION_UNSPECIFIED = 'IMPORT_OPTION_UNSPECIFIED';
-    /**
-     * Always respect settings in exported flow content. It may cause a import
-     * failure if some settings (e.g. custom NLU) are not supported in the agent
-     * to import into.
-     */
-    public const IMPORT_OPTION_KEEP = 'KEEP';
-    /**
-     * Fallback to default settings if some settings are not supported in the
-     * agent to import into. E.g. Standard NLU will be used if custom NLU is not
-     * available.
-     */
-    public const IMPORT_OPTION_FALLBACK = 'FALLBACK';
-    /**
-     * Uncompressed raw byte content for flow.
-     *
-     * @var string
-     */
-    public $flowContent;
-    protected $flowImportStrategyType = GoogleCloudDialogflowCxV3FlowImportStrategy::class;
-    protected $flowImportStrategyDataType = '';
-    /**
-     * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
-     * import flow from. The format of this URI must be `gs:`. Dialogflow performs
-     * a read operation for the Cloud Storage object on the caller's behalf, so
-     * your request authentication must have read permissions for the object. For
-     * more information, see [Dialogflow access
-     * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @var string
-     */
-    public $flowUri;
-    /**
-     * Flow import mode. If not specified, `KEEP` is assumed.
-     *
-     * @var string
-     */
-    public $importOption;
-    /**
-     * Uncompressed raw byte content for flow.
-     *
-     * @param string $flowContent
-     */
-    public function setFlowContent($flowContent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ImportFlowRequest extends \Google\Model
     {
+        /**
+         * Unspecified. Treated as `KEEP`.
+         */
+        public const IMPORT_OPTION_IMPORT_OPTION_UNSPECIFIED = 'IMPORT_OPTION_UNSPECIFIED';
+        /**
+         * Always respect settings in exported flow content. It may cause a import
+         * failure if some settings (e.g. custom NLU) are not supported in the agent
+         * to import into.
+         */
+        public const IMPORT_OPTION_KEEP = 'KEEP';
+        /**
+         * Fallback to default settings if some settings are not supported in the
+         * agent to import into. E.g. Standard NLU will be used if custom NLU is not
+         * available.
+         */
+        public const IMPORT_OPTION_FALLBACK = 'FALLBACK';
+        /**
+         * Uncompressed raw byte content for flow.
+         *
+         * @var string
+         */
+        public $flowContent;
+        protected $flowImportStrategyType = GoogleCloudDialogflowCxV3FlowImportStrategy::class;
+        protected $flowImportStrategyDataType = '';
+        /**
+         * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
+         * import flow from. The format of this URI must be `gs:`. Dialogflow performs
+         * a read operation for the Cloud Storage object on the caller's behalf, so
+         * your request authentication must have read permissions for the object. For
+         * more information, see [Dialogflow access
+         * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @var string
+         */
+        public $flowUri;
+        /**
+         * Flow import mode. If not specified, `KEEP` is assumed.
+         *
+         * @var string
+         */
+        public $importOption;
+        /**
+         * Uncompressed raw byte content for flow.
+         *
+         * @param string $flowContent
+         */
+        public function setFlowContent($flowContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowContent()
+        {
+        }
+        /**
+         * Optional. Specifies the import strategy used when resolving resource
+         * conflicts.
+         *
+         * @param GoogleCloudDialogflowCxV3FlowImportStrategy $flowImportStrategy
+         */
+        public function setFlowImportStrategy(GoogleCloudDialogflowCxV3FlowImportStrategy $flowImportStrategy)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FlowImportStrategy
+         */
+        public function getFlowImportStrategy()
+        {
+        }
+        /**
+         * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
+         * import flow from. The format of this URI must be `gs:`. Dialogflow performs
+         * a read operation for the Cloud Storage object on the caller's behalf, so
+         * your request authentication must have read permissions for the object. For
+         * more information, see [Dialogflow access
+         * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @param string $flowUri
+         */
+        public function setFlowUri($flowUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowUri()
+        {
+        }
+        /**
+         * Flow import mode. If not specified, `KEEP` is assumed.
+         *
+         * Accepted values: IMPORT_OPTION_UNSPECIFIED, KEEP, FALLBACK
+         *
+         * @param self::IMPORT_OPTION_* $importOption
+         */
+        public function setImportOption($importOption)
+        {
+        }
+        /**
+         * @return self::IMPORT_OPTION_*
+         */
+        public function getImportOption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportFlowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlowContent()
-    {
-    }
-    /**
-     * Optional. Specifies the import strategy used when resolving resource
-     * conflicts.
-     *
-     * @param GoogleCloudDialogflowCxV3FlowImportStrategy $flowImportStrategy
-     */
-    public function setFlowImportStrategy(GoogleCloudDialogflowCxV3FlowImportStrategy $flowImportStrategy)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3FlowImportStrategy
-     */
-    public function getFlowImportStrategy()
-    {
-    }
-    /**
-     * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
-     * import flow from. The format of this URI must be `gs:`. Dialogflow performs
-     * a read operation for the Cloud Storage object on the caller's behalf, so
-     * your request authentication must have read permissions for the object. For
-     * more information, see [Dialogflow access
-     * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @param string $flowUri
-     */
-    public function setFlowUri($flowUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlowUri()
-    {
-    }
-    /**
-     * Flow import mode. If not specified, `KEEP` is assumed.
-     *
-     * Accepted values: IMPORT_OPTION_UNSPECIFIED, KEEP, FALLBACK
-     *
-     * @param self::IMPORT_OPTION_* $importOption
-     */
-    public function setImportOption($importOption)
-    {
-    }
-    /**
-     * @return self::IMPORT_OPTION_*
-     */
-    public function getImportOption()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ImportFlowRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportFlowRequest
     {
     }
 }

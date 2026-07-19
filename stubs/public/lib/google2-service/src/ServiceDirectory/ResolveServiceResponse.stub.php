@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceDirectory;
-
-class ResolveServiceResponse extends \Google\Model
-{
-    protected $serviceType = Service::class;
-    protected $serviceDataType = '';
-    /**
-     * @param Service $service
-     */
-    public function setService(Service $service)
+namespace Google\Service\ServiceDirectory {
+    class ResolveServiceResponse extends \Google\Model
     {
+        protected $serviceType = Service::class;
+        protected $serviceDataType = '';
+        /**
+         * @param Service $service
+         */
+        public function setService(Service $service)
+        {
+        }
+        /**
+         * @return Service
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Service
+     * Runtime class alias of \Google\Service\ServiceDirectory\ResolveServiceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_ServiceDirectory_ResolveServiceResponse extends \Google\Service\ServiceDirectory\ResolveServiceResponse
     {
     }
 }

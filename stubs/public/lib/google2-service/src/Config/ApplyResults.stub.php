@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ApplyResults extends \Google\Model
-{
-    /**
-     * Location of artifacts (e.g. logs) in Google Cloud Storage. Format:
-     * `gs://{bucket}/{object}`
-     *
-     * @var string
-     */
-    public $artifacts;
-    /**
-     * Location of a blueprint copy and other manifests in Google Cloud Storage.
-     * Format: `gs://{bucket}/{object}`
-     *
-     * @var string
-     */
-    public $content;
-    protected $outputsType = TerraformOutput::class;
-    protected $outputsDataType = 'map';
-    /**
-     * Location of artifacts (e.g. logs) in Google Cloud Storage. Format:
-     * `gs://{bucket}/{object}`
-     *
-     * @param string $artifacts
-     */
-    public function setArtifacts($artifacts)
+namespace Google\Service\Config {
+    class ApplyResults extends \Google\Model
     {
+        /**
+         * Location of artifacts (e.g. logs) in Google Cloud Storage. Format:
+         * `gs://{bucket}/{object}`
+         *
+         * @var string
+         */
+        public $artifacts;
+        /**
+         * Location of a blueprint copy and other manifests in Google Cloud Storage.
+         * Format: `gs://{bucket}/{object}`
+         *
+         * @var string
+         */
+        public $content;
+        protected $outputsType = TerraformOutput::class;
+        protected $outputsDataType = 'map';
+        /**
+         * Location of artifacts (e.g. logs) in Google Cloud Storage. Format:
+         * `gs://{bucket}/{object}`
+         *
+         * @param string $artifacts
+         */
+        public function setArtifacts($artifacts)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifacts()
+        {
+        }
+        /**
+         * Location of a blueprint copy and other manifests in Google Cloud Storage.
+         * Format: `gs://{bucket}/{object}`
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Map of output name to output info.
+         *
+         * @param TerraformOutput[] $outputs
+         */
+        public function setOutputs($outputs)
+        {
+        }
+        /**
+         * @return TerraformOutput[]
+         */
+        public function getOutputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ApplyResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifacts()
-    {
-    }
-    /**
-     * Location of a blueprint copy and other manifests in Google Cloud Storage.
-     * Format: `gs://{bucket}/{object}`
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Map of output name to output info.
-     *
-     * @param TerraformOutput[] $outputs
-     */
-    public function setOutputs($outputs)
-    {
-    }
-    /**
-     * @return TerraformOutput[]
-     */
-    public function getOutputs()
+    class Google_Service_Config_ApplyResults extends \Google\Service\Config\ApplyResults
     {
     }
 }

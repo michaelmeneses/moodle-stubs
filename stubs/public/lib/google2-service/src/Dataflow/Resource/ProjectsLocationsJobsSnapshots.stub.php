@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "snapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $snapshots = $dataflowService->projects_locations_jobs_snapshots;
- *  </code>
- */
-class ProjectsLocationsJobsSnapshots extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\ListSnapshotsResponse;
     /**
-     * Lists snapshots. (snapshots.listProjectsLocationsJobsSnapshots)
-     *
-     * @param string $projectId The project ID to list snapshots for.
-     * @param string $location The location to list snapshots in.
-     * @param string $jobId If specified, list snapshots created from this job.
-     * @param array $optParams Optional parameters.
-     * @return ListSnapshotsResponse
-     * @throws \Google\Service\Exception
+     * The "snapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $snapshots = $dataflowService->projects_locations_jobs_snapshots;
+     *  </code>
      */
-    public function listProjectsLocationsJobsSnapshots($projectId, $location, $jobId, $optParams = [])
+    class ProjectsLocationsJobsSnapshots extends \Google\Service\Resource
+    {
+        /**
+         * Lists snapshots. (snapshots.listProjectsLocationsJobsSnapshots)
+         *
+         * @param string $projectId The project ID to list snapshots for.
+         * @param string $location The location to list snapshots in.
+         * @param string $jobId If specified, list snapshots created from this job.
+         * @param array $optParams Optional parameters.
+         * @return ListSnapshotsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsJobsSnapshots($projectId, $location, $jobId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsJobsSnapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_Resource_ProjectsLocationsJobsSnapshots extends \Google\Service\Dataflow\Resource\ProjectsLocationsJobsSnapshots
     {
     }
 }

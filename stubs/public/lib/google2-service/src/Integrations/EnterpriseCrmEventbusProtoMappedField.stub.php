@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoMappedField extends \Google\Model
-{
-    protected $inputFieldType = EnterpriseCrmEventbusProtoField::class;
-    protected $inputFieldDataType = '';
-    protected $outputFieldType = EnterpriseCrmEventbusProtoField::class;
-    protected $outputFieldDataType = '';
-    /**
-     * The input field being mapped from.
-     *
-     * @param EnterpriseCrmEventbusProtoField $inputField
-     */
-    public function setInputField(EnterpriseCrmEventbusProtoField $inputField)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoMappedField extends \Google\Model
     {
+        protected $inputFieldType = EnterpriseCrmEventbusProtoField::class;
+        protected $inputFieldDataType = '';
+        protected $outputFieldType = EnterpriseCrmEventbusProtoField::class;
+        protected $outputFieldDataType = '';
+        /**
+         * The input field being mapped from.
+         *
+         * @param EnterpriseCrmEventbusProtoField $inputField
+         */
+        public function setInputField(EnterpriseCrmEventbusProtoField $inputField)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoField
+         */
+        public function getInputField()
+        {
+        }
+        /**
+         * The output field being mapped to.
+         *
+         * @param EnterpriseCrmEventbusProtoField $outputField
+         */
+        public function setOutputField(EnterpriseCrmEventbusProtoField $outputField)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoField
+         */
+        public function getOutputField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoField
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoMappedField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputField()
-    {
-    }
-    /**
-     * The output field being mapped to.
-     *
-     * @param EnterpriseCrmEventbusProtoField $outputField
-     */
-    public function setOutputField(EnterpriseCrmEventbusProtoField $outputField)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoField
-     */
-    public function getOutputField()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoMappedField extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoMappedField
     {
     }
 }

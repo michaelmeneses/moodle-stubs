@@ -8,6 +8,12 @@
  */
 namespace Aws\Sts;
 
+use Aws\Arn\ArnParser;
+use Aws\AwsClient;
+use Aws\CacheInterface;
+use Aws\Credentials\Credentials;
+use Aws\Result;
+use Aws\Sts\RegionalEndpoints\ConfigurationProvider;
 /**
  * This client is used to interact with the **AWS Security Token Service (AWS STS)**.
  *

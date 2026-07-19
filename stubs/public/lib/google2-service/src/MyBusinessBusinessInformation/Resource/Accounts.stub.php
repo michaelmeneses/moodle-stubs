@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
- *   $accounts = $mybusinessbusinessinformationService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessBusinessInformation\Resource {
+    /**
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
+     *   $accounts = $mybusinessbusinessinformationService->accounts;
+     *  </code>
+     */
+    class Accounts extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessBusinessInformation_Resource_Accounts extends \Google\Service\MyBusinessBusinessInformation\Resource\Accounts
+    {
+    }
 }

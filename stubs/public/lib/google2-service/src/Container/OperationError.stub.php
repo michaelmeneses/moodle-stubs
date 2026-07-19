@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class OperationError extends \Google\Model
-{
-    /**
-     * Description of the error seen during the operation.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * CloudKMS key resource that had the error.
-     *
-     * @var string
-     */
-    public $keyName;
-    /**
-     * Time when the CloudKMS error was seen.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Description of the error seen during the operation.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\Container {
+    class OperationError extends \Google\Model
     {
+        /**
+         * Description of the error seen during the operation.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * CloudKMS key resource that had the error.
+         *
+         * @var string
+         */
+        public $keyName;
+        /**
+         * Time when the CloudKMS error was seen.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Description of the error seen during the operation.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * CloudKMS key resource that had the error.
+         *
+         * @param string $keyName
+         */
+        public function setKeyName($keyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyName()
+        {
+        }
+        /**
+         * Time when the CloudKMS error was seen.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\OperationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * CloudKMS key resource that had the error.
-     *
-     * @param string $keyName
-     */
-    public function setKeyName($keyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyName()
-    {
-    }
-    /**
-     * Time when the CloudKMS error was seen.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Container_OperationError extends \Google\Service\Container\OperationError
     {
     }
 }

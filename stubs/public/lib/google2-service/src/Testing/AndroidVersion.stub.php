@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class AndroidVersion extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * The API level for this Android version. Examples: 18, 19.
-     *
-     * @var int
-     */
-    public $apiLevel;
-    /**
-     * The code name for this Android version. Examples: "JellyBean", "KitKat".
-     *
-     * @var string
-     */
-    public $codeName;
-    protected $distributionType = Distribution::class;
-    protected $distributionDataType = '';
-    /**
-     * An opaque id for this Android version. Use this id to invoke the
-     * TestExecutionService.
-     *
-     * @var string
-     */
-    public $id;
-    protected $releaseDateType = Date::class;
-    protected $releaseDateDataType = '';
-    /**
-     * Tags for this dimension. Examples: "default", "preview", "deprecated".
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * A string representing this version of the Android OS. Examples: "4.3",
-     * "4.4".
-     *
-     * @var string
-     */
-    public $versionString;
-    /**
-     * The API level for this Android version. Examples: 18, 19.
-     *
-     * @param int $apiLevel
-     */
-    public function setApiLevel($apiLevel)
+namespace Google\Service\Testing {
+    class AndroidVersion extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * The API level for this Android version. Examples: 18, 19.
+         *
+         * @var int
+         */
+        public $apiLevel;
+        /**
+         * The code name for this Android version. Examples: "JellyBean", "KitKat".
+         *
+         * @var string
+         */
+        public $codeName;
+        protected $distributionType = Distribution::class;
+        protected $distributionDataType = '';
+        /**
+         * An opaque id for this Android version. Use this id to invoke the
+         * TestExecutionService.
+         *
+         * @var string
+         */
+        public $id;
+        protected $releaseDateType = Date::class;
+        protected $releaseDateDataType = '';
+        /**
+         * Tags for this dimension. Examples: "default", "preview", "deprecated".
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * A string representing this version of the Android OS. Examples: "4.3",
+         * "4.4".
+         *
+         * @var string
+         */
+        public $versionString;
+        /**
+         * The API level for this Android version. Examples: 18, 19.
+         *
+         * @param int $apiLevel
+         */
+        public function setApiLevel($apiLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getApiLevel()
+        {
+        }
+        /**
+         * The code name for this Android version. Examples: "JellyBean", "KitKat".
+         *
+         * @param string $codeName
+         */
+        public function setCodeName($codeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodeName()
+        {
+        }
+        /**
+         * Market share for this version.
+         *
+         * @param Distribution $distribution
+         */
+        public function setDistribution(Distribution $distribution)
+        {
+        }
+        /**
+         * @return Distribution
+         */
+        public function getDistribution()
+        {
+        }
+        /**
+         * An opaque id for this Android version. Use this id to invoke the
+         * TestExecutionService.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The date this Android version became available in the market.
+         *
+         * @param Date $releaseDate
+         */
+        public function setReleaseDate(Date $releaseDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReleaseDate()
+        {
+        }
+        /**
+         * Tags for this dimension. Examples: "default", "preview", "deprecated".
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * A string representing this version of the Android OS. Examples: "4.3",
+         * "4.4".
+         *
+         * @param string $versionString
+         */
+        public function setVersionString($versionString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Testing\AndroidVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiLevel()
-    {
-    }
-    /**
-     * The code name for this Android version. Examples: "JellyBean", "KitKat".
-     *
-     * @param string $codeName
-     */
-    public function setCodeName($codeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCodeName()
-    {
-    }
-    /**
-     * Market share for this version.
-     *
-     * @param Distribution $distribution
-     */
-    public function setDistribution(Distribution $distribution)
-    {
-    }
-    /**
-     * @return Distribution
-     */
-    public function getDistribution()
-    {
-    }
-    /**
-     * An opaque id for this Android version. Use this id to invoke the
-     * TestExecutionService.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The date this Android version became available in the market.
-     *
-     * @param Date $releaseDate
-     */
-    public function setReleaseDate(Date $releaseDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReleaseDate()
-    {
-    }
-    /**
-     * Tags for this dimension. Examples: "default", "preview", "deprecated".
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * A string representing this version of the Android OS. Examples: "4.3",
-     * "4.4".
-     *
-     * @param string $versionString
-     */
-    public function setVersionString($versionString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionString()
+    class Google_Service_Testing_AndroidVersion extends \Google\Service\Testing\AndroidVersion
     {
     }
 }

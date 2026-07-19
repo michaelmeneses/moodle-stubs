@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaDeleteUserLinkRequest[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchDeleteUserLinksRequest
     {
     }
 }

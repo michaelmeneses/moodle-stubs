@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class LastModifiedInfo extends \Google\Model
-{
-    /**
-     * Timestamp of the last change in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * Timestamp of the last change in milliseconds since epoch.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
+namespace Google\Service\Dfareporting {
+    class LastModifiedInfo extends \Google\Model
     {
+        /**
+         * Timestamp of the last change in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * Timestamp of the last change in milliseconds since epoch.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\LastModifiedInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTime()
+    class Google_Service_Dfareporting_LastModifiedInfo extends \Google\Service\Dfareporting\LastModifiedInfo
     {
     }
 }

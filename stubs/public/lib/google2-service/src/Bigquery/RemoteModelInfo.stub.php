@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RemoteModelInfo extends \Google\Model
-{
-    /**
-     * Unspecified remote service type.
-     */
-    public const REMOTE_SERVICE_TYPE_REMOTE_SERVICE_TYPE_UNSPECIFIED = 'REMOTE_SERVICE_TYPE_UNSPECIFIED';
-    /**
-     * V3 Cloud AI Translation API. See more details at [Cloud Translation API]
-     * (https://cloud.google.com/translate/docs/reference/rest).
-     */
-    public const REMOTE_SERVICE_TYPE_CLOUD_AI_TRANSLATE_V3 = 'CLOUD_AI_TRANSLATE_V3';
-    /**
-     * V1 Cloud AI Vision API See more details at [Cloud Vision API]
-     * (https://cloud.google.com/vision/docs/reference/rest).
-     */
-    public const REMOTE_SERVICE_TYPE_CLOUD_AI_VISION_V1 = 'CLOUD_AI_VISION_V1';
-    /**
-     * V1 Cloud AI Natural Language API. See more details at [REST Resource:
-     * documents](https://cloud.google.com/natural-
-     * language/docs/reference/rest/v1/documents).
-     */
-    public const REMOTE_SERVICE_TYPE_CLOUD_AI_NATURAL_LANGUAGE_V1 = 'CLOUD_AI_NATURAL_LANGUAGE_V1';
-    /**
-     * V2 Speech-to-Text API. See more details at [Google Cloud Speech-to-Text V2
-     * API](https://cloud.google.com/speech-to-text/v2/docs)
-     */
-    public const REMOTE_SERVICE_TYPE_CLOUD_AI_SPEECH_TO_TEXT_V2 = 'CLOUD_AI_SPEECH_TO_TEXT_V2';
-    /**
-     * Output only. Fully qualified name of the user-provided connection object of
-     * the remote model. Format: ```"projects/{project_id}/locations/{location_id}
-     * /connections/{connection_id}"```
-     *
-     * @var string
-     */
-    public $connection;
-    /**
-     * Output only. The endpoint for remote model.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Output only. Max number of rows in each batch sent to the remote service.
-     * If unset, the number of rows in each batch is set dynamically.
-     *
-     * @var string
-     */
-    public $maxBatchingRows;
-    /**
-     * Output only. The model version for LLM.
-     *
-     * @var string
-     */
-    public $remoteModelVersion;
-    /**
-     * Output only. The remote service type for remote model.
-     *
-     * @var string
-     */
-    public $remoteServiceType;
-    /**
-     * Output only. The name of the speech recognizer to use for speech
-     * recognition. The expected format is
-     * `projects/{project}/locations/{location}/recognizers/{recognizer}`.
-     * Customers can specify this field at model creation. If not specified, a
-     * default recognizer `projects/{model
-     * project}/locations/global/recognizers/_` will be used. See more details at
-     * [recognizers](https://cloud.google.com/speech-to-
-     * text/v2/docs/reference/rest/v2/projects.locations.recognizers)
-     *
-     * @var string
-     */
-    public $speechRecognizer;
-    /**
-     * Output only. Fully qualified name of the user-provided connection object of
-     * the remote model. Format: ```"projects/{project_id}/locations/{location_id}
-     * /connections/{connection_id}"```
-     *
-     * @param string $connection
-     */
-    public function setConnection($connection)
+namespace Google\Service\Bigquery {
+    class RemoteModelInfo extends \Google\Model
     {
+        /**
+         * Unspecified remote service type.
+         */
+        public const REMOTE_SERVICE_TYPE_REMOTE_SERVICE_TYPE_UNSPECIFIED = 'REMOTE_SERVICE_TYPE_UNSPECIFIED';
+        /**
+         * V3 Cloud AI Translation API. See more details at [Cloud Translation API]
+         * (https://cloud.google.com/translate/docs/reference/rest).
+         */
+        public const REMOTE_SERVICE_TYPE_CLOUD_AI_TRANSLATE_V3 = 'CLOUD_AI_TRANSLATE_V3';
+        /**
+         * V1 Cloud AI Vision API See more details at [Cloud Vision API]
+         * (https://cloud.google.com/vision/docs/reference/rest).
+         */
+        public const REMOTE_SERVICE_TYPE_CLOUD_AI_VISION_V1 = 'CLOUD_AI_VISION_V1';
+        /**
+         * V1 Cloud AI Natural Language API. See more details at [REST Resource:
+         * documents](https://cloud.google.com/natural-
+         * language/docs/reference/rest/v1/documents).
+         */
+        public const REMOTE_SERVICE_TYPE_CLOUD_AI_NATURAL_LANGUAGE_V1 = 'CLOUD_AI_NATURAL_LANGUAGE_V1';
+        /**
+         * V2 Speech-to-Text API. See more details at [Google Cloud Speech-to-Text V2
+         * API](https://cloud.google.com/speech-to-text/v2/docs)
+         */
+        public const REMOTE_SERVICE_TYPE_CLOUD_AI_SPEECH_TO_TEXT_V2 = 'CLOUD_AI_SPEECH_TO_TEXT_V2';
+        /**
+         * Output only. Fully qualified name of the user-provided connection object of
+         * the remote model. Format: ```"projects/{project_id}/locations/{location_id}
+         * /connections/{connection_id}"```
+         *
+         * @var string
+         */
+        public $connection;
+        /**
+         * Output only. The endpoint for remote model.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Output only. Max number of rows in each batch sent to the remote service.
+         * If unset, the number of rows in each batch is set dynamically.
+         *
+         * @var string
+         */
+        public $maxBatchingRows;
+        /**
+         * Output only. The model version for LLM.
+         *
+         * @var string
+         */
+        public $remoteModelVersion;
+        /**
+         * Output only. The remote service type for remote model.
+         *
+         * @var string
+         */
+        public $remoteServiceType;
+        /**
+         * Output only. The name of the speech recognizer to use for speech
+         * recognition. The expected format is
+         * `projects/{project}/locations/{location}/recognizers/{recognizer}`.
+         * Customers can specify this field at model creation. If not specified, a
+         * default recognizer `projects/{model
+         * project}/locations/global/recognizers/_` will be used. See more details at
+         * [recognizers](https://cloud.google.com/speech-to-
+         * text/v2/docs/reference/rest/v2/projects.locations.recognizers)
+         *
+         * @var string
+         */
+        public $speechRecognizer;
+        /**
+         * Output only. Fully qualified name of the user-provided connection object of
+         * the remote model. Format: ```"projects/{project_id}/locations/{location_id}
+         * /connections/{connection_id}"```
+         *
+         * @param string $connection
+         */
+        public function setConnection($connection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnection()
+        {
+        }
+        /**
+         * Output only. The endpoint for remote model.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Output only. Max number of rows in each batch sent to the remote service.
+         * If unset, the number of rows in each batch is set dynamically.
+         *
+         * @param string $maxBatchingRows
+         */
+        public function setMaxBatchingRows($maxBatchingRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxBatchingRows()
+        {
+        }
+        /**
+         * Output only. The model version for LLM.
+         *
+         * @param string $remoteModelVersion
+         */
+        public function setRemoteModelVersion($remoteModelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteModelVersion()
+        {
+        }
+        /**
+         * Output only. The remote service type for remote model.
+         *
+         * Accepted values: REMOTE_SERVICE_TYPE_UNSPECIFIED, CLOUD_AI_TRANSLATE_V3,
+         * CLOUD_AI_VISION_V1, CLOUD_AI_NATURAL_LANGUAGE_V1,
+         * CLOUD_AI_SPEECH_TO_TEXT_V2
+         *
+         * @param self::REMOTE_SERVICE_TYPE_* $remoteServiceType
+         */
+        public function setRemoteServiceType($remoteServiceType)
+        {
+        }
+        /**
+         * @return self::REMOTE_SERVICE_TYPE_*
+         */
+        public function getRemoteServiceType()
+        {
+        }
+        /**
+         * Output only. The name of the speech recognizer to use for speech
+         * recognition. The expected format is
+         * `projects/{project}/locations/{location}/recognizers/{recognizer}`.
+         * Customers can specify this field at model creation. If not specified, a
+         * default recognizer `projects/{model
+         * project}/locations/global/recognizers/_` will be used. See more details at
+         * [recognizers](https://cloud.google.com/speech-to-
+         * text/v2/docs/reference/rest/v2/projects.locations.recognizers)
+         *
+         * @param string $speechRecognizer
+         */
+        public function setSpeechRecognizer($speechRecognizer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeechRecognizer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\RemoteModelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnection()
-    {
-    }
-    /**
-     * Output only. The endpoint for remote model.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Output only. Max number of rows in each batch sent to the remote service.
-     * If unset, the number of rows in each batch is set dynamically.
-     *
-     * @param string $maxBatchingRows
-     */
-    public function setMaxBatchingRows($maxBatchingRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxBatchingRows()
-    {
-    }
-    /**
-     * Output only. The model version for LLM.
-     *
-     * @param string $remoteModelVersion
-     */
-    public function setRemoteModelVersion($remoteModelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteModelVersion()
-    {
-    }
-    /**
-     * Output only. The remote service type for remote model.
-     *
-     * Accepted values: REMOTE_SERVICE_TYPE_UNSPECIFIED, CLOUD_AI_TRANSLATE_V3,
-     * CLOUD_AI_VISION_V1, CLOUD_AI_NATURAL_LANGUAGE_V1,
-     * CLOUD_AI_SPEECH_TO_TEXT_V2
-     *
-     * @param self::REMOTE_SERVICE_TYPE_* $remoteServiceType
-     */
-    public function setRemoteServiceType($remoteServiceType)
-    {
-    }
-    /**
-     * @return self::REMOTE_SERVICE_TYPE_*
-     */
-    public function getRemoteServiceType()
-    {
-    }
-    /**
-     * Output only. The name of the speech recognizer to use for speech
-     * recognition. The expected format is
-     * `projects/{project}/locations/{location}/recognizers/{recognizer}`.
-     * Customers can specify this field at model creation. If not specified, a
-     * default recognizer `projects/{model
-     * project}/locations/global/recognizers/_` will be used. See more details at
-     * [recognizers](https://cloud.google.com/speech-to-
-     * text/v2/docs/reference/rest/v2/projects.locations.recognizers)
-     *
-     * @param string $speechRecognizer
-     */
-    public function setSpeechRecognizer($speechRecognizer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpeechRecognizer()
+    class Google_Service_Bigquery_RemoteModelInfo extends \Google\Service\Bigquery\RemoteModelInfo
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAutoResizeConfig extends \Google\Model
-{
-    /**
-     * Whether to enable controle plane node auto resizing.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether to enable controle plane node auto resizing.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAutoResizeConfig extends \Google\Model
     {
+        /**
+         * Whether to enable controle plane node auto resizing.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether to enable controle plane node auto resizing.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAutoResizeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_GKEOnPrem_VmwareAutoResizeConfig extends \Google\Service\GKEOnPrem\VmwareAutoResizeConfig
     {
     }
 }

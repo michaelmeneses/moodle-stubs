@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CollectionStatus extends \Google\Collection
-{
-    protected $collection_key = 'destinationStatuses';
-    protected $collectionLevelIssusesType = CollectionStatusItemLevelIssue::class;
-    protected $collectionLevelIssusesDataType = 'array';
-    /**
-     * Date on which the collection has been created in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @var string
-     */
-    public $creationDate;
-    protected $destinationStatusesType = CollectionStatusDestinationStatus::class;
-    protected $destinationStatusesDataType = 'array';
-    /**
-     * Required. The ID of the collection for which status is reported.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Date on which the collection has been last updated in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @var string
-     */
-    public $lastUpdateDate;
-    /**
-     * A list of all issues associated with the collection.
-     *
-     * @param CollectionStatusItemLevelIssue[] $collectionLevelIssuses
-     */
-    public function setCollectionLevelIssuses($collectionLevelIssuses)
+namespace Google\Service\ShoppingContent {
+    class CollectionStatus extends \Google\Collection
     {
+        protected $collection_key = 'destinationStatuses';
+        protected $collectionLevelIssusesType = CollectionStatusItemLevelIssue::class;
+        protected $collectionLevelIssusesDataType = 'array';
+        /**
+         * Date on which the collection has been created in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @var string
+         */
+        public $creationDate;
+        protected $destinationStatusesType = CollectionStatusDestinationStatus::class;
+        protected $destinationStatusesDataType = 'array';
+        /**
+         * Required. The ID of the collection for which status is reported.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Date on which the collection has been last updated in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @var string
+         */
+        public $lastUpdateDate;
+        /**
+         * A list of all issues associated with the collection.
+         *
+         * @param CollectionStatusItemLevelIssue[] $collectionLevelIssuses
+         */
+        public function setCollectionLevelIssuses($collectionLevelIssuses)
+        {
+        }
+        /**
+         * @return CollectionStatusItemLevelIssue[]
+         */
+        public function getCollectionLevelIssuses()
+        {
+        }
+        /**
+         * Date on which the collection has been created in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @param string $creationDate
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * The intended destinations for the collection.
+         *
+         * @param CollectionStatusDestinationStatus[] $destinationStatuses
+         */
+        public function setDestinationStatuses($destinationStatuses)
+        {
+        }
+        /**
+         * @return CollectionStatusDestinationStatus[]
+         */
+        public function getDestinationStatuses()
+        {
+        }
+        /**
+         * Required. The ID of the collection for which status is reported.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Date on which the collection has been last updated in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @param string $lastUpdateDate
+         */
+        public function setLastUpdateDate($lastUpdateDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CollectionStatusItemLevelIssue[]
+     * Runtime class alias of \Google\Service\ShoppingContent\CollectionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionLevelIssuses()
-    {
-    }
-    /**
-     * Date on which the collection has been created in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @param string $creationDate
-     */
-    public function setCreationDate($creationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * The intended destinations for the collection.
-     *
-     * @param CollectionStatusDestinationStatus[] $destinationStatuses
-     */
-    public function setDestinationStatuses($destinationStatuses)
-    {
-    }
-    /**
-     * @return CollectionStatusDestinationStatus[]
-     */
-    public function getDestinationStatuses()
-    {
-    }
-    /**
-     * Required. The ID of the collection for which status is reported.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Date on which the collection has been last updated in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @param string $lastUpdateDate
-     */
-    public function setLastUpdateDate($lastUpdateDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateDate()
+    class Google_Service_ShoppingContent_CollectionStatus extends \Google\Service\ShoppingContent\CollectionStatus
     {
     }
 }

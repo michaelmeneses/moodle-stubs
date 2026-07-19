@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4RawHashes extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $prefixSize;
-    /**
-     * @var string
-     */
-    public $rawHashes;
-    /**
-     * @param int
-     */
-    public function setPrefixSize($prefixSize)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4RawHashes extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $prefixSize;
+        /**
+         * @var string
+         */
+        public $rawHashes;
+        /**
+         * @param int
+         */
+        public function setPrefixSize($prefixSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPrefixSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRawHashes($rawHashes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawHashes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4RawHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrefixSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRawHashes($rawHashes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawHashes()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4RawHashes extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4RawHashes
     {
     }
 }

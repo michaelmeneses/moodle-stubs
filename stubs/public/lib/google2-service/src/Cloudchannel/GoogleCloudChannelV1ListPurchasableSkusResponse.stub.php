@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListPurchasableSkusResponse extends \Google\Collection
-{
-    protected $collection_key = 'purchasableSkus';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $purchasableSkusType = GoogleCloudChannelV1PurchasableSku::class;
-    protected $purchasableSkusDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListPurchasableSkusResponse extends \Google\Collection
     {
+        protected $collection_key = 'purchasableSkus';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $purchasableSkusType = GoogleCloudChannelV1PurchasableSku::class;
+        protected $purchasableSkusDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of SKUs requested.
+         *
+         * @param GoogleCloudChannelV1PurchasableSku[] $purchasableSkus
+         */
+        public function setPurchasableSkus($purchasableSkus)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1PurchasableSku[]
+         */
+        public function getPurchasableSkus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableSkusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of SKUs requested.
-     *
-     * @param GoogleCloudChannelV1PurchasableSku[] $purchasableSkus
-     */
-    public function setPurchasableSkus($purchasableSkus)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1PurchasableSku[]
-     */
-    public function getPurchasableSkus()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListPurchasableSkusResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableSkusResponse
     {
     }
 }

@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountAddress extends \Google\Model
-{
-    /**
-     * CLDR country code (for example, "US"). All MCA sub-accounts inherit the
-     * country of their parent MCA by default, however the country can be updated
-     * for individual sub-accounts.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * City, town or commune. May also include dependent localities or
-     * sublocalities (for example, neighborhoods or suburbs).
-     *
-     * @var string
-     */
-    public $locality;
-    /**
-     * Postal code or ZIP (for example, "94043").
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * Top-level administrative subdivision of the country. For example, a state
-     * like California ("CA") or a province like Quebec ("QC").
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Street-level part of the address. Use `\n` to add a second line.
-     *
-     * @var string
-     */
-    public $streetAddress;
-    /**
-     * CLDR country code (for example, "US"). All MCA sub-accounts inherit the
-     * country of their parent MCA by default, however the country can be updated
-     * for individual sub-accounts.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class AccountAddress extends \Google\Model
     {
+        /**
+         * CLDR country code (for example, "US"). All MCA sub-accounts inherit the
+         * country of their parent MCA by default, however the country can be updated
+         * for individual sub-accounts.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * City, town or commune. May also include dependent localities or
+         * sublocalities (for example, neighborhoods or suburbs).
+         *
+         * @var string
+         */
+        public $locality;
+        /**
+         * Postal code or ZIP (for example, "94043").
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * Top-level administrative subdivision of the country. For example, a state
+         * like California ("CA") or a province like Quebec ("QC").
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Street-level part of the address. Use `\n` to add a second line.
+         *
+         * @var string
+         */
+        public $streetAddress;
+        /**
+         * CLDR country code (for example, "US"). All MCA sub-accounts inherit the
+         * country of their parent MCA by default, however the country can be updated
+         * for individual sub-accounts.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * City, town or commune. May also include dependent localities or
+         * sublocalities (for example, neighborhoods or suburbs).
+         *
+         * @param string $locality
+         */
+        public function setLocality($locality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocality()
+        {
+        }
+        /**
+         * Postal code or ZIP (for example, "94043").
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * Top-level administrative subdivision of the country. For example, a state
+         * like California ("CA") or a province like Quebec ("QC").
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Street-level part of the address. Use `\n` to add a second line.
+         *
+         * @param string $streetAddress
+         */
+        public function setStreetAddress($streetAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreetAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * City, town or commune. May also include dependent localities or
-     * sublocalities (for example, neighborhoods or suburbs).
-     *
-     * @param string $locality
-     */
-    public function setLocality($locality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocality()
-    {
-    }
-    /**
-     * Postal code or ZIP (for example, "94043").
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * Top-level administrative subdivision of the country. For example, a state
-     * like California ("CA") or a province like Quebec ("QC").
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Street-level part of the address. Use `\n` to add a second line.
-     *
-     * @param string $streetAddress
-     */
-    public function setStreetAddress($streetAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreetAddress()
+    class Google_Service_ShoppingContent_AccountAddress extends \Google\Service\ShoppingContent\AccountAddress
     {
     }
 }

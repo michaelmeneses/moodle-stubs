@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AcceleratorConfig extends \Google\Model
-{
-    /**
-     * The number of the accelerator cards exposed to an instance.
-     *
-     * @var string
-     */
-    public $acceleratorCount;
-    /**
-     * The accelerator type resource name. List of supported accelerators
-     * [here](https://cloud.google.com/compute/docs/gpus)
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    protected $gpuDriverInstallationConfigType = GPUDriverInstallationConfig::class;
-    protected $gpuDriverInstallationConfigDataType = '';
-    /**
-     * Size of partitions to create on the GPU. Valid values are described in the
-     * NVIDIA [mig user guide](https://docs.nvidia.com/datacenter/tesla/mig-user-
-     * guide/#partitioning).
-     *
-     * @var string
-     */
-    public $gpuPartitionSize;
-    protected $gpuSharingConfigType = GPUSharingConfig::class;
-    protected $gpuSharingConfigDataType = '';
-    /**
-     * The number of the accelerator cards exposed to an instance.
-     *
-     * @param string $acceleratorCount
-     */
-    public function setAcceleratorCount($acceleratorCount)
+namespace Google\Service\Container {
+    class AcceleratorConfig extends \Google\Model
     {
+        /**
+         * The number of the accelerator cards exposed to an instance.
+         *
+         * @var string
+         */
+        public $acceleratorCount;
+        /**
+         * The accelerator type resource name. List of supported accelerators
+         * [here](https://cloud.google.com/compute/docs/gpus)
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        protected $gpuDriverInstallationConfigType = GPUDriverInstallationConfig::class;
+        protected $gpuDriverInstallationConfigDataType = '';
+        /**
+         * Size of partitions to create on the GPU. Valid values are described in the
+         * NVIDIA [mig user guide](https://docs.nvidia.com/datacenter/tesla/mig-user-
+         * guide/#partitioning).
+         *
+         * @var string
+         */
+        public $gpuPartitionSize;
+        protected $gpuSharingConfigType = GPUSharingConfig::class;
+        protected $gpuSharingConfigDataType = '';
+        /**
+         * The number of the accelerator cards exposed to an instance.
+         *
+         * @param string $acceleratorCount
+         */
+        public function setAcceleratorCount($acceleratorCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorCount()
+        {
+        }
+        /**
+         * The accelerator type resource name. List of supported accelerators
+         * [here](https://cloud.google.com/compute/docs/gpus)
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
+        /**
+         * The configuration for auto installation of GPU driver.
+         *
+         * @param GPUDriverInstallationConfig $gpuDriverInstallationConfig
+         */
+        public function setGpuDriverInstallationConfig(GPUDriverInstallationConfig $gpuDriverInstallationConfig)
+        {
+        }
+        /**
+         * @return GPUDriverInstallationConfig
+         */
+        public function getGpuDriverInstallationConfig()
+        {
+        }
+        /**
+         * Size of partitions to create on the GPU. Valid values are described in the
+         * NVIDIA [mig user guide](https://docs.nvidia.com/datacenter/tesla/mig-user-
+         * guide/#partitioning).
+         *
+         * @param string $gpuPartitionSize
+         */
+        public function setGpuPartitionSize($gpuPartitionSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGpuPartitionSize()
+        {
+        }
+        /**
+         * The configuration for GPU sharing options.
+         *
+         * @param GPUSharingConfig $gpuSharingConfig
+         */
+        public function setGpuSharingConfig(GPUSharingConfig $gpuSharingConfig)
+        {
+        }
+        /**
+         * @return GPUSharingConfig
+         */
+        public function getGpuSharingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\AcceleratorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorCount()
-    {
-    }
-    /**
-     * The accelerator type resource name. List of supported accelerators
-     * [here](https://cloud.google.com/compute/docs/gpus)
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAcceleratorType()
-    {
-    }
-    /**
-     * The configuration for auto installation of GPU driver.
-     *
-     * @param GPUDriverInstallationConfig $gpuDriverInstallationConfig
-     */
-    public function setGpuDriverInstallationConfig(GPUDriverInstallationConfig $gpuDriverInstallationConfig)
-    {
-    }
-    /**
-     * @return GPUDriverInstallationConfig
-     */
-    public function getGpuDriverInstallationConfig()
-    {
-    }
-    /**
-     * Size of partitions to create on the GPU. Valid values are described in the
-     * NVIDIA [mig user guide](https://docs.nvidia.com/datacenter/tesla/mig-user-
-     * guide/#partitioning).
-     *
-     * @param string $gpuPartitionSize
-     */
-    public function setGpuPartitionSize($gpuPartitionSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGpuPartitionSize()
-    {
-    }
-    /**
-     * The configuration for GPU sharing options.
-     *
-     * @param GPUSharingConfig $gpuSharingConfig
-     */
-    public function setGpuSharingConfig(GPUSharingConfig $gpuSharingConfig)
-    {
-    }
-    /**
-     * @return GPUSharingConfig
-     */
-    public function getGpuSharingConfig()
+    class Google_Service_Container_AcceleratorConfig extends \Google\Service\Container\AcceleratorConfig
     {
     }
 }

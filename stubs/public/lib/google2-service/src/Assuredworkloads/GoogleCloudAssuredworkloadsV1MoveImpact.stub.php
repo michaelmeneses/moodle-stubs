@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1MoveImpact extends \Google\Model
-{
-    /**
-     * Explanation of the impact.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * Explanation of the impact.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1MoveImpact extends \Google\Model
     {
+        /**
+         * Explanation of the impact.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * Explanation of the impact.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MoveImpact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetail()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1MoveImpact extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MoveImpact
     {
     }
 }

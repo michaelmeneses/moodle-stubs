@@ -21,93 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "clients" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $clients = $tagmanagerService->accounts_containers_workspaces_clients;
- *  </code>
- */
-class AccountsContainersWorkspacesClients extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\Client;
+    use Google\Service\TagManager\ListClientsResponse;
+    use Google\Service\TagManager\RevertClientResponse;
     /**
-     * Creates a GTM Client. (clients.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param Client $postBody
-     * @param array $optParams Optional parameters.
-     * @return Client
-     * @throws \Google\Service\Exception
+     * The "clients" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $clients = $tagmanagerService->accounts_containers_workspaces_clients;
+     *  </code>
      */
-    public function create($parent, Client $postBody, $optParams = [])
+    class AccountsContainersWorkspacesClients extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Client. (clients.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param Client $postBody
+         * @param array $optParams Optional parameters.
+         * @return Client
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Client $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Client. (clients.delete)
+         *
+         * @param string $path GTM Client's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Client. (clients.get)
+         *
+         * @param string $path GTM Client's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Client
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Clients of a GTM container workspace.
+         * (clients.listAccountsContainersWorkspacesClients)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListClientsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesClients($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Client in a GTM Workspace. (clients.revert)
+         *
+         * @param string $path GTM Client's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the client in storage.
+         * @return RevertClientResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Client. (clients.update)
+         *
+         * @param string $path GTM Client's API relative path.
+         * @param Client $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the client in storage.
+         * @return Client
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Client $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Client. (clients.delete)
-     *
-     * @param string $path GTM Client's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesClients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Client. (clients.get)
-     *
-     * @param string $path GTM Client's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Client
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Clients of a GTM container workspace.
-     * (clients.listAccountsContainersWorkspacesClients)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListClientsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesClients($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Client in a GTM Workspace. (clients.revert)
-     *
-     * @param string $path GTM Client's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the client in storage.
-     * @return RevertClientResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Client. (clients.update)
-     *
-     * @param string $path GTM Client's API relative path.
-     * @param Client $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the client in storage.
-     * @return Client
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Client $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesClients extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesClients
     {
     }
 }

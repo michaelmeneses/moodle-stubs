@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1Entity extends \Google\Model
-{
-    /**
-     * Textual description, e.g., `Fixed-gear bicycle`.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Opaque entity ID. Some IDs may be available in [Google Knowledge Graph
-     * Search API](https://developers.google.com/knowledge-graph/).
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * Language code for `description` in BCP-47 format.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Textual description, e.g., `Fixed-gear bicycle`.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1Entity extends \Google\Model
     {
+        /**
+         * Textual description, e.g., `Fixed-gear bicycle`.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Opaque entity ID. Some IDs may be available in [Google Knowledge Graph
+         * Search API](https://developers.google.com/knowledge-graph/).
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * Language code for `description` in BCP-47 format.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Textual description, e.g., `Fixed-gear bicycle`.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Opaque entity ID. Some IDs may be available in [Google Knowledge Graph
+         * Search API](https://developers.google.com/knowledge-graph/).
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Language code for `description` in BCP-47 format.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Opaque entity ID. Some IDs may be available in [Google Knowledge Graph
-     * Search API](https://developers.google.com/knowledge-graph/).
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Language code for `description` in BCP-47 format.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1Entity extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1Entity
     {
     }
 }

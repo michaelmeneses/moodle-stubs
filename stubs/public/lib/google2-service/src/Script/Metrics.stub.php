@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Metrics extends \Google\Collection
-{
-    protected $collection_key = 'totalExecutions';
-    protected $activeUsersType = MetricsValue::class;
-    protected $activeUsersDataType = 'array';
-    protected $failedExecutionsType = MetricsValue::class;
-    protected $failedExecutionsDataType = 'array';
-    protected $totalExecutionsType = MetricsValue::class;
-    protected $totalExecutionsDataType = 'array';
-    /**
-     * Number of active users.
-     *
-     * @param MetricsValue[] $activeUsers
-     */
-    public function setActiveUsers($activeUsers)
+namespace Google\Service\Script {
+    class Metrics extends \Google\Collection
     {
+        protected $collection_key = 'totalExecutions';
+        protected $activeUsersType = MetricsValue::class;
+        protected $activeUsersDataType = 'array';
+        protected $failedExecutionsType = MetricsValue::class;
+        protected $failedExecutionsDataType = 'array';
+        protected $totalExecutionsType = MetricsValue::class;
+        protected $totalExecutionsDataType = 'array';
+        /**
+         * Number of active users.
+         *
+         * @param MetricsValue[] $activeUsers
+         */
+        public function setActiveUsers($activeUsers)
+        {
+        }
+        /**
+         * @return MetricsValue[]
+         */
+        public function getActiveUsers()
+        {
+        }
+        /**
+         * Number of failed executions.
+         *
+         * @param MetricsValue[] $failedExecutions
+         */
+        public function setFailedExecutions($failedExecutions)
+        {
+        }
+        /**
+         * @return MetricsValue[]
+         */
+        public function getFailedExecutions()
+        {
+        }
+        /**
+         * Number of total executions.
+         *
+         * @param MetricsValue[] $totalExecutions
+         */
+        public function setTotalExecutions($totalExecutions)
+        {
+        }
+        /**
+         * @return MetricsValue[]
+         */
+        public function getTotalExecutions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricsValue[]
+     * Runtime class alias of \Google\Service\Script\Metrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveUsers()
-    {
-    }
-    /**
-     * Number of failed executions.
-     *
-     * @param MetricsValue[] $failedExecutions
-     */
-    public function setFailedExecutions($failedExecutions)
-    {
-    }
-    /**
-     * @return MetricsValue[]
-     */
-    public function getFailedExecutions()
-    {
-    }
-    /**
-     * Number of total executions.
-     *
-     * @param MetricsValue[] $totalExecutions
-     */
-    public function setTotalExecutions($totalExecutions)
-    {
-    }
-    /**
-     * @return MetricsValue[]
-     */
-    public function getTotalExecutions()
+    class Google_Service_Script_Metrics extends \Google\Service\Script\Metrics
     {
     }
 }

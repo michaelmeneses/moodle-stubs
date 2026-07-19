@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PoiSearchTerms extends \Google\Model
-{
-    /**
-     * The search query for the desired POI name, street address, or coordinate of
-     * the desired POI. The query can be a prefix, e.g. "Times squar",
-     * "40.7505045,-73.99562", "315 W 44th St", etc.
-     *
-     * @var string
-     */
-    public $poiQuery;
-    /**
-     * The search query for the desired POI name, street address, or coordinate of
-     * the desired POI. The query can be a prefix, e.g. "Times squar",
-     * "40.7505045,-73.99562", "315 W 44th St", etc.
-     *
-     * @param string $poiQuery
-     */
-    public function setPoiQuery($poiQuery)
+namespace Google\Service\DisplayVideo {
+    class PoiSearchTerms extends \Google\Model
     {
+        /**
+         * The search query for the desired POI name, street address, or coordinate of
+         * the desired POI. The query can be a prefix, e.g. "Times squar",
+         * "40.7505045,-73.99562", "315 W 44th St", etc.
+         *
+         * @var string
+         */
+        public $poiQuery;
+        /**
+         * The search query for the desired POI name, street address, or coordinate of
+         * the desired POI. The query can be a prefix, e.g. "Times squar",
+         * "40.7505045,-73.99562", "315 W 44th St", etc.
+         *
+         * @param string $poiQuery
+         */
+        public function setPoiQuery($poiQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPoiQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PoiSearchTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPoiQuery()
+    class Google_Service_DisplayVideo_PoiSearchTerms extends \Google\Service\DisplayVideo\PoiSearchTerms
     {
     }
 }

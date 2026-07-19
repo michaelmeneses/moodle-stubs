@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListDataItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataItems';
-    protected $dataItemsType = GoogleCloudAiplatformV1DataItem::class;
-    protected $dataItemsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of DataItems that matches the specified filter in the request.
-     *
-     * @param GoogleCloudAiplatformV1DataItem[] $dataItems
-     */
-    public function setDataItems($dataItems)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListDataItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataItems';
+        protected $dataItemsType = GoogleCloudAiplatformV1DataItem::class;
+        protected $dataItemsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of DataItems that matches the specified filter in the request.
+         *
+         * @param GoogleCloudAiplatformV1DataItem[] $dataItems
+         */
+        public function setDataItems($dataItems)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DataItem[]
+         */
+        public function getDataItems()
+        {
+        }
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DataItem[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDataItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataItems()
-    {
-    }
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListDataItemsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDataItemsResponse
     {
     }
 }

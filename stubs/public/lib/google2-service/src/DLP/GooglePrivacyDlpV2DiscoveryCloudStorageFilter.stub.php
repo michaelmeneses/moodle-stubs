@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryCloudStorageFilter extends \Google\Model
-{
-    protected $cloudStorageResourceReferenceType = GooglePrivacyDlpV2CloudStorageResourceReference::class;
-    protected $cloudStorageResourceReferenceDataType = '';
-    protected $collectionType = GooglePrivacyDlpV2FileStoreCollection::class;
-    protected $collectionDataType = '';
-    protected $othersType = GooglePrivacyDlpV2AllOtherResources::class;
-    protected $othersDataType = '';
-    /**
-     * Optional. The bucket to scan. Targets including this can only include one
-     * target (the target with this bucket). This enables profiling the contents
-     * of a single bucket, while the other options allow for easy profiling of
-     * many bucets within a project or an organization.
-     *
-     * @param GooglePrivacyDlpV2CloudStorageResourceReference $cloudStorageResourceReference
-     */
-    public function setCloudStorageResourceReference(GooglePrivacyDlpV2CloudStorageResourceReference $cloudStorageResourceReference)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryCloudStorageFilter extends \Google\Model
     {
+        protected $cloudStorageResourceReferenceType = GooglePrivacyDlpV2CloudStorageResourceReference::class;
+        protected $cloudStorageResourceReferenceDataType = '';
+        protected $collectionType = GooglePrivacyDlpV2FileStoreCollection::class;
+        protected $collectionDataType = '';
+        protected $othersType = GooglePrivacyDlpV2AllOtherResources::class;
+        protected $othersDataType = '';
+        /**
+         * Optional. The bucket to scan. Targets including this can only include one
+         * target (the target with this bucket). This enables profiling the contents
+         * of a single bucket, while the other options allow for easy profiling of
+         * many bucets within a project or an organization.
+         *
+         * @param GooglePrivacyDlpV2CloudStorageResourceReference $cloudStorageResourceReference
+         */
+        public function setCloudStorageResourceReference(GooglePrivacyDlpV2CloudStorageResourceReference $cloudStorageResourceReference)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStorageResourceReference
+         */
+        public function getCloudStorageResourceReference()
+        {
+        }
+        /**
+         * Optional. A specific set of buckets for this filter to apply to.
+         *
+         * @param GooglePrivacyDlpV2FileStoreCollection $collection
+         */
+        public function setCollection(GooglePrivacyDlpV2FileStoreCollection $collection)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileStoreCollection
+         */
+        public function getCollection()
+        {
+        }
+        /**
+         * Optional. Catch-all. This should always be the last target in the list
+         * because anything above it will apply first. Should only appear once in a
+         * configuration. If none is specified, a default one will be added
+         * automatically.
+         *
+         * @param GooglePrivacyDlpV2AllOtherResources $others
+         */
+        public function setOthers(GooglePrivacyDlpV2AllOtherResources $others)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AllOtherResources
+         */
+        public function getOthers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CloudStorageResourceReference
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudStorageFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudStorageResourceReference()
-    {
-    }
-    /**
-     * Optional. A specific set of buckets for this filter to apply to.
-     *
-     * @param GooglePrivacyDlpV2FileStoreCollection $collection
-     */
-    public function setCollection(GooglePrivacyDlpV2FileStoreCollection $collection)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FileStoreCollection
-     */
-    public function getCollection()
-    {
-    }
-    /**
-     * Optional. Catch-all. This should always be the last target in the list
-     * because anything above it will apply first. Should only appear once in a
-     * configuration. If none is specified, a default one will be added
-     * automatically.
-     *
-     * @param GooglePrivacyDlpV2AllOtherResources $others
-     */
-    public function setOthers(GooglePrivacyDlpV2AllOtherResources $others)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2AllOtherResources
-     */
-    public function getOthers()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryCloudStorageFilter extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudStorageFilter
     {
     }
 }

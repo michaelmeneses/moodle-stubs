@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1PluginInstanceActionSource extends \Google\Model
-{
-    /**
-     * Output only. The id of the plugin instance action.
-     *
-     * @var string
-     */
-    public $actionId;
-    /**
-     * Output only. The resource name of the source plugin instance. Format is `pr
-     * ojects/{project}/locations/{location}/plugins/{plugin}/instances/{instance}
-     * `
-     *
-     * @var string
-     */
-    public $pluginInstance;
-    /**
-     * Output only. The id of the plugin instance action.
-     *
-     * @param string $actionId
-     */
-    public function setActionId($actionId)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1PluginInstanceActionSource extends \Google\Model
     {
+        /**
+         * Output only. The id of the plugin instance action.
+         *
+         * @var string
+         */
+        public $actionId;
+        /**
+         * Output only. The resource name of the source plugin instance. Format is `pr
+         * ojects/{project}/locations/{location}/plugins/{plugin}/instances/{instance}
+         * `
+         *
+         * @var string
+         */
+        public $pluginInstance;
+        /**
+         * Output only. The id of the plugin instance action.
+         *
+         * @param string $actionId
+         */
+        public function setActionId($actionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionId()
+        {
+        }
+        /**
+         * Output only. The resource name of the source plugin instance. Format is `pr
+         * ojects/{project}/locations/{location}/plugins/{plugin}/instances/{instance}
+         * `
+         *
+         * @param string $pluginInstance
+         */
+        public function setPluginInstance($pluginInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPluginInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1PluginInstanceActionSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionId()
-    {
-    }
-    /**
-     * Output only. The resource name of the source plugin instance. Format is `pr
-     * ojects/{project}/locations/{location}/plugins/{plugin}/instances/{instance}
-     * `
-     *
-     * @param string $pluginInstance
-     */
-    public function setPluginInstance($pluginInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPluginInstance()
+    class Google_Service_APIhub_GoogleCloudApihubV1PluginInstanceActionSource extends \Google\Service\APIhub\GoogleCloudApihubV1PluginInstanceActionSource
     {
     }
 }

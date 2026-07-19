@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $users = $bloggerService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\User;
     /**
-     * Gets one user by user_id. (users.get)
-     *
-     * @param string $userId
-     * @param array $optParams Optional parameters.
-     * @return User
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $users = $bloggerService->users;
+     *  </code>
      */
-    public function get($userId, $optParams = [])
+    class Users extends \Google\Service\Resource
+    {
+        /**
+         * Gets one user by user_id. (users.get)
+         *
+         * @param string $userId
+         * @param array $optParams Optional parameters.
+         * @return User
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Blogger\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Blogger_Resource_Users extends \Google\Service\Blogger\Resource\Users
     {
     }
 }

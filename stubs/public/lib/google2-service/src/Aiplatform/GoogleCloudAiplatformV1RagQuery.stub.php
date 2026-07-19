@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagQuery extends \Google\Model
-{
-    protected $ragRetrievalConfigType = GoogleCloudAiplatformV1RagRetrievalConfig::class;
-    protected $ragRetrievalConfigDataType = '';
-    /**
-     * Optional. The query in text format to get relevant contexts.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Optional. The retrieval config for the query.
-     *
-     * @param GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig
-     */
-    public function setRagRetrievalConfig(GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagQuery extends \Google\Model
     {
+        protected $ragRetrievalConfigType = GoogleCloudAiplatformV1RagRetrievalConfig::class;
+        protected $ragRetrievalConfigDataType = '';
+        /**
+         * Optional. The query in text format to get relevant contexts.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Optional. The retrieval config for the query.
+         *
+         * @param GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig
+         */
+        public function setRagRetrievalConfig(GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagRetrievalConfig
+         */
+        public function getRagRetrievalConfig()
+        {
+        }
+        /**
+         * Optional. The query in text format to get relevant contexts.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagRetrievalConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagRetrievalConfig()
-    {
-    }
-    /**
-     * Optional. The query in text format to get relevant contexts.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagQuery extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagQuery
     {
     }
 }

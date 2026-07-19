@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryUnderstandingInfoQueryClassificationInfo extends \Google\Model
-{
-    /**
-     * Unspecified query classification type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Adversarial query classification type.
-     */
-    public const TYPE_ADVERSARIAL_QUERY = 'ADVERSARIAL_QUERY';
-    /**
-     * Non-answer-seeking query classification type, for chit chat.
-     */
-    public const TYPE_NON_ANSWER_SEEKING_QUERY = 'NON_ANSWER_SEEKING_QUERY';
-    /**
-     * Jail-breaking query classification type.
-     */
-    public const TYPE_JAIL_BREAKING_QUERY = 'JAIL_BREAKING_QUERY';
-    /**
-     * Non-answer-seeking query classification type, for no clear intent.
-     */
-    public const TYPE_NON_ANSWER_SEEKING_QUERY_V2 = 'NON_ANSWER_SEEKING_QUERY_V2';
-    /**
-     * User defined query classification type.
-     */
-    public const TYPE_USER_DEFINED_CLASSIFICATION_QUERY = 'USER_DEFINED_CLASSIFICATION_QUERY';
-    /**
-     * Classification output.
-     *
-     * @var bool
-     */
-    public $positive;
-    /**
-     * Query classification type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Classification output.
-     *
-     * @param bool $positive
-     */
-    public function setPositive($positive)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryUnderstandingInfoQueryClassificationInfo extends \Google\Model
     {
+        /**
+         * Unspecified query classification type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Adversarial query classification type.
+         */
+        public const TYPE_ADVERSARIAL_QUERY = 'ADVERSARIAL_QUERY';
+        /**
+         * Non-answer-seeking query classification type, for chit chat.
+         */
+        public const TYPE_NON_ANSWER_SEEKING_QUERY = 'NON_ANSWER_SEEKING_QUERY';
+        /**
+         * Jail-breaking query classification type.
+         */
+        public const TYPE_JAIL_BREAKING_QUERY = 'JAIL_BREAKING_QUERY';
+        /**
+         * Non-answer-seeking query classification type, for no clear intent.
+         */
+        public const TYPE_NON_ANSWER_SEEKING_QUERY_V2 = 'NON_ANSWER_SEEKING_QUERY_V2';
+        /**
+         * User defined query classification type.
+         */
+        public const TYPE_USER_DEFINED_CLASSIFICATION_QUERY = 'USER_DEFINED_CLASSIFICATION_QUERY';
+        /**
+         * Classification output.
+         *
+         * @var bool
+         */
+        public $positive;
+        /**
+         * Query classification type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Classification output.
+         *
+         * @param bool $positive
+         */
+        public function setPositive($positive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPositive()
+        {
+        }
+        /**
+         * Query classification type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ADVERSARIAL_QUERY,
+         * NON_ANSWER_SEEKING_QUERY, JAIL_BREAKING_QUERY, NON_ANSWER_SEEKING_QUERY_V2,
+         * USER_DEFINED_CLASSIFICATION_QUERY
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryUnderstandingInfoQueryClassificationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPositive()
-    {
-    }
-    /**
-     * Query classification type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ADVERSARIAL_QUERY,
-     * NON_ANSWER_SEEKING_QUERY, JAIL_BREAKING_QUERY, NON_ANSWER_SEEKING_QUERY_V2,
-     * USER_DEFINED_CLASSIFICATION_QUERY
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryUnderstandingInfoQueryClassificationInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryUnderstandingInfoQueryClassificationInfo
     {
     }
 }

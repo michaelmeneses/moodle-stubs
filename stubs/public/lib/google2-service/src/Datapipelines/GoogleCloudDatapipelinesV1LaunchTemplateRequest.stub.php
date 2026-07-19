@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1LaunchTemplateRequest extends \Google\Model
-{
-    /**
-     * A Cloud Storage path to the template from which to create the job. Must be
-     * a valid Cloud Storage URL, beginning with 'gs://'.
-     *
-     * @var string
-     */
-    public $gcsPath;
-    protected $launchParametersType = GoogleCloudDatapipelinesV1LaunchTemplateParameters::class;
-    protected $launchParametersDataType = '';
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-     * which to direct the request.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. The ID of the Cloud Platform project that the job belongs to.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * If true, the request is validated but not actually executed. Defaults to
-     * false.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * A Cloud Storage path to the template from which to create the job. Must be
-     * a valid Cloud Storage URL, beginning with 'gs://'.
-     *
-     * @param string $gcsPath
-     */
-    public function setGcsPath($gcsPath)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1LaunchTemplateRequest extends \Google\Model
     {
+        /**
+         * A Cloud Storage path to the template from which to create the job. Must be
+         * a valid Cloud Storage URL, beginning with 'gs://'.
+         *
+         * @var string
+         */
+        public $gcsPath;
+        protected $launchParametersType = GoogleCloudDatapipelinesV1LaunchTemplateParameters::class;
+        protected $launchParametersDataType = '';
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
+         * which to direct the request.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. The ID of the Cloud Platform project that the job belongs to.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * If true, the request is validated but not actually executed. Defaults to
+         * false.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * A Cloud Storage path to the template from which to create the job. Must be
+         * a valid Cloud Storage URL, beginning with 'gs://'.
+         *
+         * @param string $gcsPath
+         */
+        public function setGcsPath($gcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPath()
+        {
+        }
+        /**
+         * The parameters of the template to launch. This should be part of the body
+         * of the POST request.
+         *
+         * @param GoogleCloudDatapipelinesV1LaunchTemplateParameters $launchParameters
+         */
+        public function setLaunchParameters(GoogleCloudDatapipelinesV1LaunchTemplateParameters $launchParameters)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LaunchTemplateParameters
+         */
+        public function getLaunchParameters()
+        {
+        }
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
+         * which to direct the request.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Required. The ID of the Cloud Platform project that the job belongs to.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * If true, the request is validated but not actually executed. Defaults to
+         * false.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LaunchTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsPath()
-    {
-    }
-    /**
-     * The parameters of the template to launch. This should be part of the body
-     * of the POST request.
-     *
-     * @param GoogleCloudDatapipelinesV1LaunchTemplateParameters $launchParameters
-     */
-    public function setLaunchParameters(GoogleCloudDatapipelinesV1LaunchTemplateParameters $launchParameters)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1LaunchTemplateParameters
-     */
-    public function getLaunchParameters()
-    {
-    }
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-     * which to direct the request.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Required. The ID of the Cloud Platform project that the job belongs to.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * If true, the request is validated but not actually executed. Defaults to
-     * false.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1LaunchTemplateRequest extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LaunchTemplateRequest
     {
     }
 }

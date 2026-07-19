@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoParamSpecsMessage extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $parametersType = EnterpriseCrmFrontendsEventbusProtoParamSpecEntry::class;
-    protected $parametersDataType = 'array';
-    /**
-     * @param EnterpriseCrmFrontendsEventbusProtoParamSpecEntry[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoParamSpecsMessage extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $parametersType = EnterpriseCrmFrontendsEventbusProtoParamSpecEntry::class;
+        protected $parametersDataType = 'array';
+        /**
+         * @param EnterpriseCrmFrontendsEventbusProtoParamSpecEntry[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmFrontendsEventbusProtoParamSpecEntry[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmFrontendsEventbusProtoParamSpecEntry[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoParamSpecsMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoParamSpecsMessage extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoParamSpecsMessage
     {
     }
 }

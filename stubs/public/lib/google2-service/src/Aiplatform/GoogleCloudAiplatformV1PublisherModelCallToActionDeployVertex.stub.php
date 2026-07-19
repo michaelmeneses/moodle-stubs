@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionDeployVertex extends \Google\Collection
-{
-    protected $collection_key = 'multiDeployVertex';
-    protected $multiDeployVertexType = GoogleCloudAiplatformV1PublisherModelCallToActionDeploy::class;
-    protected $multiDeployVertexDataType = 'array';
-    /**
-     * Optional. One click deployment configurations.
-     *
-     * @param GoogleCloudAiplatformV1PublisherModelCallToActionDeploy[] $multiDeployVertex
-     */
-    public function setMultiDeployVertex($multiDeployVertex)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionDeployVertex extends \Google\Collection
     {
+        protected $collection_key = 'multiDeployVertex';
+        protected $multiDeployVertexType = GoogleCloudAiplatformV1PublisherModelCallToActionDeploy::class;
+        protected $multiDeployVertexDataType = 'array';
+        /**
+         * Optional. One click deployment configurations.
+         *
+         * @param GoogleCloudAiplatformV1PublisherModelCallToActionDeploy[] $multiDeployVertex
+         */
+        public function setMultiDeployVertex($multiDeployVertex)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PublisherModelCallToActionDeploy[]
+         */
+        public function getMultiDeployVertex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PublisherModelCallToActionDeploy[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionDeployVertex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiDeployVertex()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionDeployVertex extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionDeployVertex
     {
     }
 }

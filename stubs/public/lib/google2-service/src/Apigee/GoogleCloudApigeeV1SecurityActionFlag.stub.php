@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityActionFlag extends \Google\Collection
-{
-    protected $collection_key = 'headers';
-    protected $headersType = GoogleCloudApigeeV1SecurityActionHttpHeader::class;
-    protected $headersDataType = 'array';
-    /**
-     * Optional. A list of HTTP headers to be sent to the target in case of a FLAG
-     * SecurityAction. Limit 5 headers per SecurityAction. At least one is
-     * mandatory.
-     *
-     * @param GoogleCloudApigeeV1SecurityActionHttpHeader[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityActionFlag extends \Google\Collection
     {
+        protected $collection_key = 'headers';
+        protected $headersType = GoogleCloudApigeeV1SecurityActionHttpHeader::class;
+        protected $headersDataType = 'array';
+        /**
+         * Optional. A list of HTTP headers to be sent to the target in case of a FLAG
+         * SecurityAction. Limit 5 headers per SecurityAction. At least one is
+         * mandatory.
+         *
+         * @param GoogleCloudApigeeV1SecurityActionHttpHeader[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityActionHttpHeader[]
+         */
+        public function getHeaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1SecurityActionHttpHeader[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionFlag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityActionFlag extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionFlag
     {
     }
 }

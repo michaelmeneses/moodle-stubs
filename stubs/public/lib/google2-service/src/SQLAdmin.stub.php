@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for SQLAdmin (v1).
- *
- * <p>
- * API for Cloud SQL database instance management</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/sql/docs" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class SQLAdmin extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Manage your Google SQL Service instances. */
-    const SQLSERVICE_ADMIN = "https://www.googleapis.com/auth/sqlservice.admin";
-    public $Backups;
-    public $backupRuns;
-    public $connect;
-    public $databases;
-    public $flags;
-    public $instances;
-    public $operations;
-    public $projects_instances;
-    public $sslCerts;
-    public $tiers;
-    public $users;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the SQLAdmin service.
+     * Service definition for SQLAdmin (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * API for Cloud SQL database instance management</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/sql/docs" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class SQLAdmin extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Manage your Google SQL Service instances. */
+        const SQLSERVICE_ADMIN = "https://www.googleapis.com/auth/sqlservice.admin";
+        public $Backups;
+        public $backupRuns;
+        public $connect;
+        public $databases;
+        public $flags;
+        public $instances;
+        public $operations;
+        public $projects_instances;
+        public $sslCerts;
+        public $tiers;
+        public $users;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the SQLAdmin service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SQLAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SQLAdmin extends \Google\Service\SQLAdmin
     {
     }
 }

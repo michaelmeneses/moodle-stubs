@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1Rule extends \Google\Collection
-{
-    /**
-     * Trigger for unknown action.
-     */
-    public const TRIGGER_TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Trigger for create document action.
-     */
-    public const TRIGGER_TYPE_ON_CREATE = 'ON_CREATE';
-    /**
-     * Trigger for update document action.
-     */
-    public const TRIGGER_TYPE_ON_UPDATE = 'ON_UPDATE';
-    /**
-     * Trigger for create link action.
-     */
-    public const TRIGGER_TYPE_ON_CREATE_LINK = 'ON_CREATE_LINK';
-    /**
-     * Trigger for delete link action.
-     */
-    public const TRIGGER_TYPE_ON_DELETE_LINK = 'ON_DELETE_LINK';
-    protected $collection_key = 'actions';
-    protected $actionsType = GoogleCloudContentwarehouseV1Action::class;
-    protected $actionsDataType = 'array';
-    /**
-     * Represents the conditional expression to be evaluated. Expression should
-     * evaluate to a boolean result. When the condition is true actions are
-     * executed. Example: user_role = "hsbc_role_1" AND doc.salary > 20000
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * Short description of the rule and its context.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * ID of the rule. It has to be unique across all the examples. This is
-     * managed internally.
-     *
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * Identifies the trigger type for running the policy.
-     *
-     * @var string
-     */
-    public $triggerType;
-    /**
-     * List of actions that are executed when the rule is satisfied.
-     *
-     * @param GoogleCloudContentwarehouseV1Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1Rule extends \Google\Collection
     {
+        /**
+         * Trigger for unknown action.
+         */
+        public const TRIGGER_TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Trigger for create document action.
+         */
+        public const TRIGGER_TYPE_ON_CREATE = 'ON_CREATE';
+        /**
+         * Trigger for update document action.
+         */
+        public const TRIGGER_TYPE_ON_UPDATE = 'ON_UPDATE';
+        /**
+         * Trigger for create link action.
+         */
+        public const TRIGGER_TYPE_ON_CREATE_LINK = 'ON_CREATE_LINK';
+        /**
+         * Trigger for delete link action.
+         */
+        public const TRIGGER_TYPE_ON_DELETE_LINK = 'ON_DELETE_LINK';
+        protected $collection_key = 'actions';
+        protected $actionsType = GoogleCloudContentwarehouseV1Action::class;
+        protected $actionsDataType = 'array';
+        /**
+         * Represents the conditional expression to be evaluated. Expression should
+         * evaluate to a boolean result. When the condition is true actions are
+         * executed. Example: user_role = "hsbc_role_1" AND doc.salary > 20000
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * Short description of the rule and its context.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * ID of the rule. It has to be unique across all the examples. This is
+         * managed internally.
+         *
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * Identifies the trigger type for running the policy.
+         *
+         * @var string
+         */
+        public $triggerType;
+        /**
+         * List of actions that are executed when the rule is satisfied.
+         *
+         * @param GoogleCloudContentwarehouseV1Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Represents the conditional expression to be evaluated. Expression should
+         * evaluate to a boolean result. When the condition is true actions are
+         * executed. Example: user_role = "hsbc_role_1" AND doc.salary > 20000
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Short description of the rule and its context.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * ID of the rule. It has to be unique across all the examples. This is
+         * managed internally.
+         *
+         * @param string $ruleId
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
+        /**
+         * Identifies the trigger type for running the policy.
+         *
+         * Accepted values: UNKNOWN, ON_CREATE, ON_UPDATE, ON_CREATE_LINK,
+         * ON_DELETE_LINK
+         *
+         * @param self::TRIGGER_TYPE_* $triggerType
+         */
+        public function setTriggerType($triggerType)
+        {
+        }
+        /**
+         * @return self::TRIGGER_TYPE_*
+         */
+        public function getTriggerType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1Action[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Represents the conditional expression to be evaluated. Expression should
-     * evaluate to a boolean result. When the condition is true actions are
-     * executed. Example: user_role = "hsbc_role_1" AND doc.salary > 20000
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * Short description of the rule and its context.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * ID of the rule. It has to be unique across all the examples. This is
-     * managed internally.
-     *
-     * @param string $ruleId
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
-    {
-    }
-    /**
-     * Identifies the trigger type for running the policy.
-     *
-     * Accepted values: UNKNOWN, ON_CREATE, ON_UPDATE, ON_CREATE_LINK,
-     * ON_DELETE_LINK
-     *
-     * @param self::TRIGGER_TYPE_* $triggerType
-     */
-    public function setTriggerType($triggerType)
-    {
-    }
-    /**
-     * @return self::TRIGGER_TYPE_*
-     */
-    public function getTriggerType()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1Rule extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Rule
     {
     }
 }

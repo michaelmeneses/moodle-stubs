@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Link extends \Google\Model
-{
-    /**
-     * URL of a thumbnail image of the target URL. Read-only.
-     *
-     * @var string
-     */
-    public $thumbnailUrl;
-    /**
-     * Title of the target of the URL. Read-only.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL to link to. This must be a valid UTF-8 string containing between 1 and
-     * 2024 characters.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * URL of a thumbnail image of the target URL. Read-only.
-     *
-     * @param string $thumbnailUrl
-     */
-    public function setThumbnailUrl($thumbnailUrl)
+namespace Google\Service\Classroom {
+    class Link extends \Google\Model
     {
+        /**
+         * URL of a thumbnail image of the target URL. Read-only.
+         *
+         * @var string
+         */
+        public $thumbnailUrl;
+        /**
+         * Title of the target of the URL. Read-only.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL to link to. This must be a valid UTF-8 string containing between 1 and
+         * 2024 characters.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * URL of a thumbnail image of the target URL. Read-only.
+         *
+         * @param string $thumbnailUrl
+         */
+        public function setThumbnailUrl($thumbnailUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailUrl()
+        {
+        }
+        /**
+         * Title of the target of the URL. Read-only.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URL to link to. This must be a valid UTF-8 string containing between 1 and
+         * 2024 characters.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThumbnailUrl()
-    {
-    }
-    /**
-     * Title of the target of the URL. Read-only.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URL to link to. This must be a valid UTF-8 string containing between 1 and
-     * 2024 characters.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Classroom_Link extends \Google\Service\Classroom\Link
     {
     }
 }

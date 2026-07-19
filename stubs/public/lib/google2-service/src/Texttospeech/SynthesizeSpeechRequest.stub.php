@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class SynthesizeSpeechRequest extends \Google\Model
-{
-    protected $advancedVoiceOptionsType = AdvancedVoiceOptions::class;
-    protected $advancedVoiceOptionsDataType = '';
-    protected $audioConfigType = AudioConfig::class;
-    protected $audioConfigDataType = '';
-    protected $inputType = SynthesisInput::class;
-    protected $inputDataType = '';
-    protected $voiceType = VoiceSelectionParams::class;
-    protected $voiceDataType = '';
-    /**
-     * Advanced voice options.
-     *
-     * @param AdvancedVoiceOptions $advancedVoiceOptions
-     */
-    public function setAdvancedVoiceOptions(AdvancedVoiceOptions $advancedVoiceOptions)
+namespace Google\Service\Texttospeech {
+    class SynthesizeSpeechRequest extends \Google\Model
     {
+        protected $advancedVoiceOptionsType = AdvancedVoiceOptions::class;
+        protected $advancedVoiceOptionsDataType = '';
+        protected $audioConfigType = AudioConfig::class;
+        protected $audioConfigDataType = '';
+        protected $inputType = SynthesisInput::class;
+        protected $inputDataType = '';
+        protected $voiceType = VoiceSelectionParams::class;
+        protected $voiceDataType = '';
+        /**
+         * Advanced voice options.
+         *
+         * @param AdvancedVoiceOptions $advancedVoiceOptions
+         */
+        public function setAdvancedVoiceOptions(AdvancedVoiceOptions $advancedVoiceOptions)
+        {
+        }
+        /**
+         * @return AdvancedVoiceOptions
+         */
+        public function getAdvancedVoiceOptions()
+        {
+        }
+        /**
+         * Required. The configuration of the synthesized audio.
+         *
+         * @param AudioConfig $audioConfig
+         */
+        public function setAudioConfig(AudioConfig $audioConfig)
+        {
+        }
+        /**
+         * @return AudioConfig
+         */
+        public function getAudioConfig()
+        {
+        }
+        /**
+         * Required. The Synthesizer requires either plain text or SSML as input.
+         *
+         * @param SynthesisInput $input
+         */
+        public function setInput(SynthesisInput $input)
+        {
+        }
+        /**
+         * @return SynthesisInput
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * Required. The desired voice of the synthesized audio.
+         *
+         * @param VoiceSelectionParams $voice
+         */
+        public function setVoice(VoiceSelectionParams $voice)
+        {
+        }
+        /**
+         * @return VoiceSelectionParams
+         */
+        public function getVoice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdvancedVoiceOptions
+     * Runtime class alias of \Google\Service\Texttospeech\SynthesizeSpeechRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvancedVoiceOptions()
-    {
-    }
-    /**
-     * Required. The configuration of the synthesized audio.
-     *
-     * @param AudioConfig $audioConfig
-     */
-    public function setAudioConfig(AudioConfig $audioConfig)
-    {
-    }
-    /**
-     * @return AudioConfig
-     */
-    public function getAudioConfig()
-    {
-    }
-    /**
-     * Required. The Synthesizer requires either plain text or SSML as input.
-     *
-     * @param SynthesisInput $input
-     */
-    public function setInput(SynthesisInput $input)
-    {
-    }
-    /**
-     * @return SynthesisInput
-     */
-    public function getInput()
-    {
-    }
-    /**
-     * Required. The desired voice of the synthesized audio.
-     *
-     * @param VoiceSelectionParams $voice
-     */
-    public function setVoice(VoiceSelectionParams $voice)
-    {
-    }
-    /**
-     * @return VoiceSelectionParams
-     */
-    public function getVoice()
+    class Google_Service_Texttospeech_SynthesizeSpeechRequest extends \Google\Service\Texttospeech\SynthesizeSpeechRequest
     {
     }
 }

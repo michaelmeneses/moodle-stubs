@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class OperationList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = Operation::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource. Always `compute#operations`
-     * for Operations resource.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger than `maxResults`, use
-     * the `nextPageToken` as a value for the query parameter `pageToken` in the
-     * next list request. Subsequent list requests will have their own
-     * `nextPageToken` to continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    protected $warningType = OperationListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Compute {
+    class OperationList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = Operation::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource. Always `compute#operations`
+         * for Operations resource.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger than `maxResults`, use
+         * the `nextPageToken` as a value for the query parameter `pageToken` in the
+         * next list request. Subsequent list requests will have their own
+         * `nextPageToken` to continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        protected $warningType = OperationListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * [Output Only] A list of Operation resources.
+         *
+         * @param Operation[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Operation[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource. Always `compute#operations`
+         * for Operations resource.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger than `maxResults`, use
+         * the `nextPageToken` as a value for the query parameter `pageToken` in the
+         * next list request. Subsequent list requests will have their own
+         * `nextPageToken` to continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param OperationListWarning $warning
+         */
+        public function setWarning(OperationListWarning $warning)
+        {
+        }
+        /**
+         * @return OperationListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\OperationList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * [Output Only] A list of Operation resources.
-     *
-     * @param Operation[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Operation[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource. Always `compute#operations`
-     * for Operations resource.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger than `maxResults`, use
-     * the `nextPageToken` as a value for the query parameter `pageToken` in the
-     * next list request. Subsequent list requests will have their own
-     * `nextPageToken` to continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param OperationListWarning $warning
-     */
-    public function setWarning(OperationListWarning $warning)
-    {
-    }
-    /**
-     * @return OperationListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_OperationList extends \Google\Service\Compute\OperationList
     {
     }
 }

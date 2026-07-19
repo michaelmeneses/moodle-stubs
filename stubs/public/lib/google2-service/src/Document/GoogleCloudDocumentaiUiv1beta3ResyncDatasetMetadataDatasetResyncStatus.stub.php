@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataDatasetResyncStatus extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const DATASET_INCONSISTENCY_TYPE_DATASET_INCONSISTENCY_TYPE_UNSPECIFIED = 'DATASET_INCONSISTENCY_TYPE_UNSPECIFIED';
-    /**
-     * The marker file under the dataset folder is not found.
-     */
-    public const DATASET_INCONSISTENCY_TYPE_DATASET_INCONSISTENCY_TYPE_NO_STORAGE_MARKER = 'DATASET_INCONSISTENCY_TYPE_NO_STORAGE_MARKER';
-    /**
-     * The type of the inconsistency of the dataset.
-     *
-     * @var string
-     */
-    public $datasetInconsistencyType;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The type of the inconsistency of the dataset.
-     *
-     * Accepted values: DATASET_INCONSISTENCY_TYPE_UNSPECIFIED,
-     * DATASET_INCONSISTENCY_TYPE_NO_STORAGE_MARKER
-     *
-     * @param self::DATASET_INCONSISTENCY_TYPE_* $datasetInconsistencyType
-     */
-    public function setDatasetInconsistencyType($datasetInconsistencyType)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataDatasetResyncStatus extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const DATASET_INCONSISTENCY_TYPE_DATASET_INCONSISTENCY_TYPE_UNSPECIFIED = 'DATASET_INCONSISTENCY_TYPE_UNSPECIFIED';
+        /**
+         * The marker file under the dataset folder is not found.
+         */
+        public const DATASET_INCONSISTENCY_TYPE_DATASET_INCONSISTENCY_TYPE_NO_STORAGE_MARKER = 'DATASET_INCONSISTENCY_TYPE_NO_STORAGE_MARKER';
+        /**
+         * The type of the inconsistency of the dataset.
+         *
+         * @var string
+         */
+        public $datasetInconsistencyType;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The type of the inconsistency of the dataset.
+         *
+         * Accepted values: DATASET_INCONSISTENCY_TYPE_UNSPECIFIED,
+         * DATASET_INCONSISTENCY_TYPE_NO_STORAGE_MARKER
+         *
+         * @param self::DATASET_INCONSISTENCY_TYPE_* $datasetInconsistencyType
+         */
+        public function setDatasetInconsistencyType($datasetInconsistencyType)
+        {
+        }
+        /**
+         * @return self::DATASET_INCONSISTENCY_TYPE_*
+         */
+        public function getDatasetInconsistencyType()
+        {
+        }
+        /**
+         * The status of resyncing the dataset with regards to the detected
+         * inconsistency. Empty if ResyncDatasetRequest.validate_only is `true`.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATASET_INCONSISTENCY_TYPE_*
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataDatasetResyncStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetInconsistencyType()
-    {
-    }
-    /**
-     * The status of resyncing the dataset with regards to the detected
-     * inconsistency. Empty if ResyncDatasetRequest.validate_only is `true`.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataDatasetResyncStatus extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ResyncDatasetMetadataDatasetResyncStatus
     {
     }
 }

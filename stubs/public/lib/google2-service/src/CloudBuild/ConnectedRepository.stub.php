@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ConnectedRepository extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dir;
-    /**
-     * @var string
-     */
-    public $repository;
-    /**
-     * @var string
-     */
-    public $revision;
-    /**
-     * @param string
-     */
-    public function setDir($dir)
+namespace Google\Service\CloudBuild {
+    class ConnectedRepository extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dir;
+        /**
+         * @var string
+         */
+        public $repository;
+        /**
+         * @var string
+         */
+        public $revision;
+        /**
+         * @param string
+         */
+        public function setDir($dir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDir()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ConnectedRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDir()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
+    class Google_Service_CloudBuild_ConnectedRepository extends \Google\Service\CloudBuild\ConnectedRepository
     {
     }
 }

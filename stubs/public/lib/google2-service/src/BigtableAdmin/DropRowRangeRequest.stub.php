@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class DropRowRangeRequest extends \Google\Model
-{
-    /**
-     * Delete all rows in the table. Setting this to false is a no-op.
-     *
-     * @var bool
-     */
-    public $deleteAllDataFromTable;
-    /**
-     * Delete all rows that start with this row key prefix. Prefix cannot be zero
-     * length.
-     *
-     * @var string
-     */
-    public $rowKeyPrefix;
-    /**
-     * Delete all rows in the table. Setting this to false is a no-op.
-     *
-     * @param bool $deleteAllDataFromTable
-     */
-    public function setDeleteAllDataFromTable($deleteAllDataFromTable)
+namespace Google\Service\BigtableAdmin {
+    class DropRowRangeRequest extends \Google\Model
     {
+        /**
+         * Delete all rows in the table. Setting this to false is a no-op.
+         *
+         * @var bool
+         */
+        public $deleteAllDataFromTable;
+        /**
+         * Delete all rows that start with this row key prefix. Prefix cannot be zero
+         * length.
+         *
+         * @var string
+         */
+        public $rowKeyPrefix;
+        /**
+         * Delete all rows in the table. Setting this to false is a no-op.
+         *
+         * @param bool $deleteAllDataFromTable
+         */
+        public function setDeleteAllDataFromTable($deleteAllDataFromTable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleteAllDataFromTable()
+        {
+        }
+        /**
+         * Delete all rows that start with this row key prefix. Prefix cannot be zero
+         * length.
+         *
+         * @param string $rowKeyPrefix
+         */
+        public function setRowKeyPrefix($rowKeyPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowKeyPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigtableAdmin\DropRowRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteAllDataFromTable()
-    {
-    }
-    /**
-     * Delete all rows that start with this row key prefix. Prefix cannot be zero
-     * length.
-     *
-     * @param string $rowKeyPrefix
-     */
-    public function setRowKeyPrefix($rowKeyPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowKeyPrefix()
+    class Google_Service_BigtableAdmin_DropRowRangeRequest extends \Google\Service\BigtableAdmin\DropRowRangeRequest
     {
     }
 }

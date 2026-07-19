@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ScanConfig extends \Google\Model
-{
-    public $createTime;
-    public $description;
-    public $enabled;
-    public $name;
-    public $updateTime;
-    public function setCreateTime($createTime)
+namespace Google\Service\ContainerAnalysis {
+    class ScanConfig extends \Google\Model
     {
+        public $createTime;
+        public $description;
+        public $enabled;
+        public $name;
+        public $updateTime;
+        public function setCreateTime($createTime)
+        {
+        }
+        public function getCreateTime()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setEnabled($enabled)
+        {
+        }
+        public function getEnabled()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setUpdateTime($updateTime)
+        {
+        }
+        public function getUpdateTime()
+        {
+        }
     }
-    public function getCreateTime()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setEnabled($enabled)
-    {
-    }
-    public function getEnabled()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setUpdateTime($updateTime)
-    {
-    }
-    public function getUpdateTime()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ScanConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_ScanConfig extends \Google\Service\ContainerAnalysis\ScanConfig
     {
     }
 }

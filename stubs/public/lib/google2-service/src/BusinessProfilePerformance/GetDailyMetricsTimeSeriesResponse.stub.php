@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class GetDailyMetricsTimeSeriesResponse extends \Google\Model
-{
-    protected $timeSeriesType = TimeSeries::class;
-    protected $timeSeriesDataType = '';
-    /**
-     * The daily time series.
-     *
-     * @param TimeSeries $timeSeries
-     */
-    public function setTimeSeries(TimeSeries $timeSeries)
+namespace Google\Service\BusinessProfilePerformance {
+    class GetDailyMetricsTimeSeriesResponse extends \Google\Model
     {
+        protected $timeSeriesType = TimeSeries::class;
+        protected $timeSeriesDataType = '';
+        /**
+         * The daily time series.
+         *
+         * @param TimeSeries $timeSeries
+         */
+        public function setTimeSeries(TimeSeries $timeSeries)
+        {
+        }
+        /**
+         * @return TimeSeries
+         */
+        public function getTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeSeries
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\GetDailyMetricsTimeSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeSeries()
+    class Google_Service_BusinessProfilePerformance_GetDailyMetricsTimeSeriesResponse extends \Google\Service\BusinessProfilePerformance\GetDailyMetricsTimeSeriesResponse
     {
     }
 }

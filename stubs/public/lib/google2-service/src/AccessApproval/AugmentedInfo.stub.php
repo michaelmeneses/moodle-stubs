@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class AugmentedInfo extends \Google\Model
-{
-    /**
-     * For command-line tools, the full command-line exactly as entered by the
-     * actor without adding any additional characters (such as quotation marks).
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * For command-line tools, the full command-line exactly as entered by the
-     * actor without adding any additional characters (such as quotation marks).
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
+namespace Google\Service\AccessApproval {
+    class AugmentedInfo extends \Google\Model
     {
+        /**
+         * For command-line tools, the full command-line exactly as entered by the
+         * actor without adding any additional characters (such as quotation marks).
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * For command-line tools, the full command-line exactly as entered by the
+         * actor without adding any additional characters (such as quotation marks).
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessApproval\AugmentedInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
+    class Google_Service_AccessApproval_AugmentedInfo extends \Google\Service\AccessApproval\AugmentedInfo
     {
     }
 }

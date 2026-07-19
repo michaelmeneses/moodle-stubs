@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class LunRange extends \Google\Model
-{
-    /**
-     * Number of LUNs to create.
-     *
-     * @var int
-     */
-    public $quantity;
-    /**
-     * The requested size of each LUN, in GB.
-     *
-     * @var int
-     */
-    public $sizeGb;
-    /**
-     * Number of LUNs to create.
-     *
-     * @param int $quantity
-     */
-    public function setQuantity($quantity)
+namespace Google\Service\Baremetalsolution {
+    class LunRange extends \Google\Model
     {
+        /**
+         * Number of LUNs to create.
+         *
+         * @var int
+         */
+        public $quantity;
+        /**
+         * The requested size of each LUN, in GB.
+         *
+         * @var int
+         */
+        public $sizeGb;
+        /**
+         * Number of LUNs to create.
+         *
+         * @param int $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * The requested size of each LUN, in GB.
+         *
+         * @param int $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Baremetalsolution\LunRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuantity()
-    {
-    }
-    /**
-     * The requested size of each LUN, in GB.
-     *
-     * @param int $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSizeGb()
+    class Google_Service_Baremetalsolution_LunRange extends \Google\Service\Baremetalsolution\LunRange
     {
     }
 }

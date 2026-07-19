@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AckInfo extends \Google\Collection
-{
-    protected $collection_key = 'unackedDeviceIds';
-    /**
-     * @var int
-     */
-    public $unackedDeviceCount;
-    /**
-     * @var string[]
-     */
-    public $unackedDeviceIds;
-    /**
-     * @param int
-     */
-    public function setUnackedDeviceCount($unackedDeviceCount)
+namespace Google\Service\CloudSearch {
+    class AckInfo extends \Google\Collection
     {
+        protected $collection_key = 'unackedDeviceIds';
+        /**
+         * @var int
+         */
+        public $unackedDeviceCount;
+        /**
+         * @var string[]
+         */
+        public $unackedDeviceIds;
+        /**
+         * @param int
+         */
+        public function setUnackedDeviceCount($unackedDeviceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUnackedDeviceCount()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnackedDeviceIds($unackedDeviceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnackedDeviceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\AckInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnackedDeviceCount()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnackedDeviceIds($unackedDeviceIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnackedDeviceIds()
+    class Google_Service_CloudSearch_AckInfo extends \Google\Service\CloudSearch\AckInfo
     {
     }
 }

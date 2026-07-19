@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class MetrosListResponse extends \Google\Collection
-{
-    protected $collection_key = 'metros';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#metrosListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metrosType = Metro::class;
-    protected $metrosDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#metrosListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class MetrosListResponse extends \Google\Collection
     {
+        protected $collection_key = 'metros';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#metrosListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metrosType = Metro::class;
+        protected $metrosDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#metrosListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metro collection.
+         *
+         * @param Metro[] $metros
+         */
+        public function setMetros($metros)
+        {
+        }
+        /**
+         * @return Metro[]
+         */
+        public function getMetros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\MetrosListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Metro collection.
-     *
-     * @param Metro[] $metros
-     */
-    public function setMetros($metros)
-    {
-    }
-    /**
-     * @return Metro[]
-     */
-    public function getMetros()
+    class Google_Service_Dfareporting_MetrosListResponse extends \Google\Service\Dfareporting\MetrosListResponse
     {
     }
 }

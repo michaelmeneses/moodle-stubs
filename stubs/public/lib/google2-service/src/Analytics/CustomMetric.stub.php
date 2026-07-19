@@ -21,308 +21,317 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class CustomMetric extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["maxValue" => "max_value", "minValue" => "min_value"];
-    /**
-     * Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Boolean indicating whether the custom metric is active.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * Time the custom metric was created.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Custom metric ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Index of the custom metric.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Kind value for a custom metric. Set to "analytics#customMetric". It is a
-     * read-only field.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Max value of custom metric.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Min value of custom metric.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * Name of the custom metric.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parentLinkType = CustomMetricParentLink::class;
-    protected $parentLinkDataType = '';
-    /**
-     * Scope of the custom metric: HIT or PRODUCT.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Link for the custom metric
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Data type of custom metric.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Time the custom metric was last modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Property ID.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class CustomMetric extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["maxValue" => "max_value", "minValue" => "min_value"];
+        /**
+         * Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Boolean indicating whether the custom metric is active.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * Time the custom metric was created.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Custom metric ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Index of the custom metric.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Kind value for a custom metric. Set to "analytics#customMetric". It is a
+         * read-only field.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Max value of custom metric.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Min value of custom metric.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * Name of the custom metric.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parentLinkType = CustomMetricParentLink::class;
+        protected $parentLinkDataType = '';
+        /**
+         * Scope of the custom metric: HIT or PRODUCT.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Link for the custom metric
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Data type of custom metric.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Time the custom metric was last modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Property ID.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Boolean indicating whether the custom metric is active.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Time the custom metric was created.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Custom metric ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Index of the custom metric.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Kind value for a custom metric. Set to "analytics#customMetric". It is a
+         * read-only field.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Max value of custom metric.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Min value of custom metric.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * Name of the custom metric.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Parent link for the custom metric. Points to the property to which the
+         * custom metric belongs.
+         *
+         * @param CustomMetricParentLink $parentLink
+         */
+        public function setParentLink(CustomMetricParentLink $parentLink)
+        {
+        }
+        /**
+         * @return CustomMetricParentLink
+         */
+        public function getParentLink()
+        {
+        }
+        /**
+         * Scope of the custom metric: HIT or PRODUCT.
+         *
+         * @param string $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Link for the custom metric
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Data type of custom metric.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Time the custom metric was last modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * Property ID.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\CustomMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Boolean indicating whether the custom metric is active.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getActive()
-    {
-    }
-    /**
-     * Time the custom metric was created.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * Custom metric ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Index of the custom metric.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * Kind value for a custom metric. Set to "analytics#customMetric". It is a
-     * read-only field.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Max value of custom metric.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Min value of custom metric.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * Name of the custom metric.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Parent link for the custom metric. Points to the property to which the
-     * custom metric belongs.
-     *
-     * @param CustomMetricParentLink $parentLink
-     */
-    public function setParentLink(CustomMetricParentLink $parentLink)
-    {
-    }
-    /**
-     * @return CustomMetricParentLink
-     */
-    public function getParentLink()
-    {
-    }
-    /**
-     * Scope of the custom metric: HIT or PRODUCT.
-     *
-     * @param string $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Link for the custom metric
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Data type of custom metric.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Time the custom metric was last modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * Property ID.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_CustomMetric extends \Google\Service\Analytics\CustomMetric
     {
     }
 }

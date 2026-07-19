@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DynamicTargetingKeysListResponse extends \Google\Collection
-{
-    protected $collection_key = 'dynamicTargetingKeys';
-    protected $dynamicTargetingKeysType = DynamicTargetingKey::class;
-    protected $dynamicTargetingKeysDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#dynamicTargetingKeysListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Dynamic targeting key collection.
-     *
-     * @param DynamicTargetingKey[] $dynamicTargetingKeys
-     */
-    public function setDynamicTargetingKeys($dynamicTargetingKeys)
+namespace Google\Service\Dfareporting {
+    class DynamicTargetingKeysListResponse extends \Google\Collection
     {
+        protected $collection_key = 'dynamicTargetingKeys';
+        protected $dynamicTargetingKeysType = DynamicTargetingKey::class;
+        protected $dynamicTargetingKeysDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#dynamicTargetingKeysListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Dynamic targeting key collection.
+         *
+         * @param DynamicTargetingKey[] $dynamicTargetingKeys
+         */
+        public function setDynamicTargetingKeys($dynamicTargetingKeys)
+        {
+        }
+        /**
+         * @return DynamicTargetingKey[]
+         */
+        public function getDynamicTargetingKeys()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#dynamicTargetingKeysListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicTargetingKey[]
+     * Runtime class alias of \Google\Service\Dfareporting\DynamicTargetingKeysListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicTargetingKeys()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#dynamicTargetingKeysListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_DynamicTargetingKeysListResponse extends \Google\Service\Dfareporting\DynamicTargetingKeysListResponse
     {
     }
 }

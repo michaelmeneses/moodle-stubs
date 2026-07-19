@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AdministratorWebTokenSpecWebApps extends \Google\Model
-{
-    /**
-     * Whether the Web Apps page is displayed. Default is true.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether the Web Apps page is displayed. Default is true.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\AndroidEnterprise {
+    class AdministratorWebTokenSpecWebApps extends \Google\Model
     {
+        /**
+         * Whether the Web Apps page is displayed. Default is true.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether the Web Apps page is displayed. Default is true.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AdministratorWebTokenSpecWebApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_AndroidEnterprise_AdministratorWebTokenSpecWebApps extends \Google\Service\AndroidEnterprise\AdministratorWebTokenSpecWebApps
     {
     }
 }

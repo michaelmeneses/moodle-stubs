@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class CreateShapeResponse extends \Google\Model
-{
-    /**
-     * The object ID of the created shape.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The object ID of the created shape.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class CreateShapeResponse extends \Google\Model
     {
+        /**
+         * The object ID of the created shape.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The object ID of the created shape.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\CreateShapeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Slides_CreateShapeResponse extends \Google\Service\Slides\CreateShapeResponse
     {
     }
 }

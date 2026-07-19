@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'integrationTemplateVersions';
-    protected $integrationTemplateVersionsType = GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion::class;
-    protected $integrationTemplateVersionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion[]
-     */
-    public function setIntegrationTemplateVersions($integrationTemplateVersions)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'integrationTemplateVersions';
+        protected $integrationTemplateVersionsType = GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion::class;
+        protected $integrationTemplateVersionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion[]
+         */
+        public function setIntegrationTemplateVersions($integrationTemplateVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion[]
+         */
+        public function getIntegrationTemplateVersions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationTemplateVersions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse
     {
     }
 }

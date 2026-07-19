@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "pageViews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $pageViews = $bloggerService->pageViews;
- *  </code>
- */
-class PageViews extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\Pageviews as PageviewsModel;
     /**
-     * Gets page views by blog id. (pageViews.get)
-     *
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string range
-     * @return PageviewsModel
-     * @throws \Google\Service\Exception
+     * The "pageViews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $pageViews = $bloggerService->pageViews;
+     *  </code>
      */
-    public function get($blogId, $optParams = [])
+    class PageViews extends \Google\Service\Resource
+    {
+        /**
+         * Gets page views by blog id. (pageViews.get)
+         *
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string range
+         * @return PageviewsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($blogId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Blogger\Resource\PageViews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Blogger_Resource_PageViews extends \Google\Service\Blogger\Resource\PageViews
     {
     }
 }

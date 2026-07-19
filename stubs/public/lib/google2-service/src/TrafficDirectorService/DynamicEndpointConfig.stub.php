@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class DynamicEndpointConfig extends \Google\Model
-{
-    /**
-     * Resource status is not available/unknown.
-     */
-    public const CLIENT_STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Client requested this resource but hasn't received any update from
-     * management server. The client will not fail requests, but will queue them
-     * until update arrives or the client times out waiting for the resource.
-     */
-    public const CLIENT_STATUS_REQUESTED = 'REQUESTED';
-    /**
-     * This resource has been requested by the client but has either not been
-     * delivered by the server or was previously delivered by the server and then
-     * subsequently removed from resources provided by the server. For more
-     * information, please refer to the :ref:`"Knowing When a Requested Resource
-     * Does Not Exist" ` section.
-     */
-    public const CLIENT_STATUS_DOES_NOT_EXIST = 'DOES_NOT_EXIST';
-    /**
-     * Client received this resource and replied with ACK.
-     */
-    public const CLIENT_STATUS_ACKED = 'ACKED';
-    /**
-     * Client received this resource and replied with NACK.
-     */
-    public const CLIENT_STATUS_NACKED = 'NACKED';
-    /**
-     * Client received an error from the control plane. The attached config dump
-     * is the most recent accepted one. If no config is accepted yet, the attached
-     * config dump will be empty.
-     */
-    public const CLIENT_STATUS_RECEIVED_ERROR = 'RECEIVED_ERROR';
-    /**
-     * Client timed out waiting for the resource from the control plane.
-     */
-    public const CLIENT_STATUS_TIMEOUT = 'TIMEOUT';
-    /**
-     * The client status of this resource. [#not-implemented-hide:]
-     *
-     * @var string
-     */
-    public $clientStatus;
-    /**
-     * The endpoint config.
-     *
-     * @var array[]
-     */
-    public $endpointConfig;
-    protected $errorStateType = UpdateFailureState::class;
-    protected $errorStateDataType = '';
-    /**
-     * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * [#not-implemented-hide:] This is the per-resource version information. This
-     * version is currently taken from the :ref:`version_info ` field at the time
-     * that the endpoint configuration was loaded.
-     *
-     * @var string
-     */
-    public $versionInfo;
-    /**
-     * The client status of this resource. [#not-implemented-hide:]
-     *
-     * Accepted values: UNKNOWN, REQUESTED, DOES_NOT_EXIST, ACKED, NACKED,
-     * RECEIVED_ERROR, TIMEOUT
-     *
-     * @param self::CLIENT_STATUS_* $clientStatus
-     */
-    public function setClientStatus($clientStatus)
+namespace Google\Service\TrafficDirectorService {
+    class DynamicEndpointConfig extends \Google\Model
     {
+        /**
+         * Resource status is not available/unknown.
+         */
+        public const CLIENT_STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Client requested this resource but hasn't received any update from
+         * management server. The client will not fail requests, but will queue them
+         * until update arrives or the client times out waiting for the resource.
+         */
+        public const CLIENT_STATUS_REQUESTED = 'REQUESTED';
+        /**
+         * This resource has been requested by the client but has either not been
+         * delivered by the server or was previously delivered by the server and then
+         * subsequently removed from resources provided by the server. For more
+         * information, please refer to the :ref:`"Knowing When a Requested Resource
+         * Does Not Exist" ` section.
+         */
+        public const CLIENT_STATUS_DOES_NOT_EXIST = 'DOES_NOT_EXIST';
+        /**
+         * Client received this resource and replied with ACK.
+         */
+        public const CLIENT_STATUS_ACKED = 'ACKED';
+        /**
+         * Client received this resource and replied with NACK.
+         */
+        public const CLIENT_STATUS_NACKED = 'NACKED';
+        /**
+         * Client received an error from the control plane. The attached config dump
+         * is the most recent accepted one. If no config is accepted yet, the attached
+         * config dump will be empty.
+         */
+        public const CLIENT_STATUS_RECEIVED_ERROR = 'RECEIVED_ERROR';
+        /**
+         * Client timed out waiting for the resource from the control plane.
+         */
+        public const CLIENT_STATUS_TIMEOUT = 'TIMEOUT';
+        /**
+         * The client status of this resource. [#not-implemented-hide:]
+         *
+         * @var string
+         */
+        public $clientStatus;
+        /**
+         * The endpoint config.
+         *
+         * @var array[]
+         */
+        public $endpointConfig;
+        protected $errorStateType = UpdateFailureState::class;
+        protected $errorStateDataType = '';
+        /**
+         * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * [#not-implemented-hide:] This is the per-resource version information. This
+         * version is currently taken from the :ref:`version_info ` field at the time
+         * that the endpoint configuration was loaded.
+         *
+         * @var string
+         */
+        public $versionInfo;
+        /**
+         * The client status of this resource. [#not-implemented-hide:]
+         *
+         * Accepted values: UNKNOWN, REQUESTED, DOES_NOT_EXIST, ACKED, NACKED,
+         * RECEIVED_ERROR, TIMEOUT
+         *
+         * @param self::CLIENT_STATUS_* $clientStatus
+         */
+        public function setClientStatus($clientStatus)
+        {
+        }
+        /**
+         * @return self::CLIENT_STATUS_*
+         */
+        public function getClientStatus()
+        {
+        }
+        /**
+         * The endpoint config.
+         *
+         * @param array[] $endpointConfig
+         */
+        public function setEndpointConfig($endpointConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEndpointConfig()
+        {
+        }
+        /**
+         * Set if the last update failed, cleared after the next successful update.
+         * The ``error_state`` field contains the rejected version of this particular
+         * resource along with the reason and timestamp. For successfully updated or
+         * acknowledged resource, this field should be empty. [#not-implemented-hide:]
+         *
+         * @param UpdateFailureState $errorState
+         */
+        public function setErrorState(UpdateFailureState $errorState)
+        {
+        }
+        /**
+         * @return UpdateFailureState
+         */
+        public function getErrorState()
+        {
+        }
+        /**
+         * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
+        /**
+         * [#not-implemented-hide:] This is the per-resource version information. This
+         * version is currently taken from the :ref:`version_info ` field at the time
+         * that the endpoint configuration was loaded.
+         *
+         * @param string $versionInfo
+         */
+        public function setVersionInfo($versionInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLIENT_STATUS_*
+     * Runtime class alias of \Google\Service\TrafficDirectorService\DynamicEndpointConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientStatus()
-    {
-    }
-    /**
-     * The endpoint config.
-     *
-     * @param array[] $endpointConfig
-     */
-    public function setEndpointConfig($endpointConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getEndpointConfig()
-    {
-    }
-    /**
-     * Set if the last update failed, cleared after the next successful update.
-     * The ``error_state`` field contains the rejected version of this particular
-     * resource along with the reason and timestamp. For successfully updated or
-     * acknowledged resource, this field should be empty. [#not-implemented-hide:]
-     *
-     * @param UpdateFailureState $errorState
-     */
-    public function setErrorState(UpdateFailureState $errorState)
-    {
-    }
-    /**
-     * @return UpdateFailureState
-     */
-    public function getErrorState()
-    {
-    }
-    /**
-     * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdated()
-    {
-    }
-    /**
-     * [#not-implemented-hide:] This is the per-resource version information. This
-     * version is currently taken from the :ref:`version_info ` field at the time
-     * that the endpoint configuration was loaded.
-     *
-     * @param string $versionInfo
-     */
-    public function setVersionInfo($versionInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionInfo()
+    class Google_Service_TrafficDirectorService_DynamicEndpointConfig extends \Google\Service\TrafficDirectorService\DynamicEndpointConfig
     {
     }
 }

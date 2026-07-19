@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListServiceConnectionPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $serviceConnectionPoliciesType = ServiceConnectionPolicy::class;
-    protected $serviceConnectionPoliciesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Networkconnectivity {
+    class ListServiceConnectionPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $serviceConnectionPoliciesType = ServiceConnectionPolicy::class;
+        protected $serviceConnectionPoliciesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * ServiceConnectionPolicies to be returned.
+         *
+         * @param ServiceConnectionPolicy[] $serviceConnectionPolicies
+         */
+        public function setServiceConnectionPolicies($serviceConnectionPolicies)
+        {
+        }
+        /**
+         * @return ServiceConnectionPolicy[]
+         */
+        public function getServiceConnectionPolicies()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListServiceConnectionPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * ServiceConnectionPolicies to be returned.
-     *
-     * @param ServiceConnectionPolicy[] $serviceConnectionPolicies
-     */
-    public function setServiceConnectionPolicies($serviceConnectionPolicies)
-    {
-    }
-    /**
-     * @return ServiceConnectionPolicy[]
-     */
-    public function getServiceConnectionPolicies()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListServiceConnectionPoliciesResponse extends \Google\Service\Networkconnectivity\ListServiceConnectionPoliciesResponse
     {
     }
 }

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use templatable;
+use renderable;
+use mod_data\manager;
+use mod_data\preset;
+use mod_data\template;
+use moodle_page;
+use moodle_url;
 /**
  * Preset preview output class.
  *

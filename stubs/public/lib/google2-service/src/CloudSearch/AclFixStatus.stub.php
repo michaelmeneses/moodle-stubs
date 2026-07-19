@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AclFixStatus extends \Google\Collection
-{
-    protected $collection_key = 'outOfDomainWarningEmailAddress';
-    /**
-     * @var string
-     */
-    public $fixability;
-    /**
-     * @var string[]
-     */
-    public $fixableEmailAddress;
-    /**
-     * @var string[]
-     */
-    public $outOfDomainWarningEmailAddress;
-    /**
-     * @param string
-     */
-    public function setFixability($fixability)
+namespace Google\Service\CloudSearch {
+    class AclFixStatus extends \Google\Collection
     {
+        protected $collection_key = 'outOfDomainWarningEmailAddress';
+        /**
+         * @var string
+         */
+        public $fixability;
+        /**
+         * @var string[]
+         */
+        public $fixableEmailAddress;
+        /**
+         * @var string[]
+         */
+        public $outOfDomainWarningEmailAddress;
+        /**
+         * @param string
+         */
+        public function setFixability($fixability)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFixability()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFixableEmailAddress($fixableEmailAddress)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFixableEmailAddress()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setOutOfDomainWarningEmailAddress($outOfDomainWarningEmailAddress)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOutOfDomainWarningEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AclFixStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixability()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFixableEmailAddress($fixableEmailAddress)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFixableEmailAddress()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setOutOfDomainWarningEmailAddress($outOfDomainWarningEmailAddress)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOutOfDomainWarningEmailAddress()
+    class Google_Service_CloudSearch_AclFixStatus extends \Google\Service\CloudSearch\AclFixStatus
     {
     }
 }

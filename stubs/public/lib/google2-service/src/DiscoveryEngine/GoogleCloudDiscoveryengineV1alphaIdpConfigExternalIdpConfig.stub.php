@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig extends \Google\Model
-{
-    /**
-     * Workforce pool name. Example: "locations/global/workforcePools/pool_id"
-     *
-     * @var string
-     */
-    public $workforcePoolName;
-    /**
-     * Workforce pool name. Example: "locations/global/workforcePools/pool_id"
-     *
-     * @param string $workforcePoolName
-     */
-    public function setWorkforcePoolName($workforcePoolName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig extends \Google\Model
     {
+        /**
+         * Workforce pool name. Example: "locations/global/workforcePools/pool_id"
+         *
+         * @var string
+         */
+        public $workforcePoolName;
+        /**
+         * Workforce pool name. Example: "locations/global/workforcePools/pool_id"
+         *
+         * @param string $workforcePoolName
+         */
+        public function setWorkforcePoolName($workforcePoolName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkforcePoolName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkforcePoolName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig
     {
     }
 }

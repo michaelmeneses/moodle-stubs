@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class UpdateParametersRequest extends \Google\Model
-{
-    protected $parametersType = MemcacheParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * Required. Mask of fields to update.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * The parameters to apply to the instance.
-     *
-     * @param MemcacheParameters $parameters
-     */
-    public function setParameters(MemcacheParameters $parameters)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class UpdateParametersRequest extends \Google\Model
     {
+        protected $parametersType = MemcacheParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * Required. Mask of fields to update.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * The parameters to apply to the instance.
+         *
+         * @param MemcacheParameters $parameters
+         */
+        public function setParameters(MemcacheParameters $parameters)
+        {
+        }
+        /**
+         * @return MemcacheParameters
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Required. Mask of fields to update.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MemcacheParameters
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\UpdateParametersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
-    {
-    }
-    /**
-     * Required. Mask of fields to update.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudMemorystoreforMemcached_UpdateParametersRequest extends \Google\Service\CloudMemorystoreforMemcached\UpdateParametersRequest
     {
     }
 }

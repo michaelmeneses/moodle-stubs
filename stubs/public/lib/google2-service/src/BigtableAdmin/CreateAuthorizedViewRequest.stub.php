@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateAuthorizedViewRequest extends \Google\Model
-{
-    protected $authorizedViewType = AuthorizedView::class;
-    protected $authorizedViewDataType = '';
-    /**
-     * Required. The id of the AuthorizedView to create. This AuthorizedView must
-     * not already exist. The `authorized_view_id` appended to `parent` forms the
-     * full AuthorizedView name of the form `projects/{project}/instances/{instanc
-     * e}/tables/{table}/authorizedView/{authorized_view}`.
-     *
-     * @var string
-     */
-    public $authorizedViewId;
-    /**
-     * Required. This is the name of the table the AuthorizedView belongs to.
-     * Values are of the form
-     * `projects/{project}/instances/{instance}/tables/{table}`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The AuthorizedView to create.
-     *
-     * @param AuthorizedView $authorizedView
-     */
-    public function setAuthorizedView(AuthorizedView $authorizedView)
+namespace Google\Service\BigtableAdmin {
+    class CreateAuthorizedViewRequest extends \Google\Model
     {
+        protected $authorizedViewType = AuthorizedView::class;
+        protected $authorizedViewDataType = '';
+        /**
+         * Required. The id of the AuthorizedView to create. This AuthorizedView must
+         * not already exist. The `authorized_view_id` appended to `parent` forms the
+         * full AuthorizedView name of the form `projects/{project}/instances/{instanc
+         * e}/tables/{table}/authorizedView/{authorized_view}`.
+         *
+         * @var string
+         */
+        public $authorizedViewId;
+        /**
+         * Required. This is the name of the table the AuthorizedView belongs to.
+         * Values are of the form
+         * `projects/{project}/instances/{instance}/tables/{table}`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The AuthorizedView to create.
+         *
+         * @param AuthorizedView $authorizedView
+         */
+        public function setAuthorizedView(AuthorizedView $authorizedView)
+        {
+        }
+        /**
+         * @return AuthorizedView
+         */
+        public function getAuthorizedView()
+        {
+        }
+        /**
+         * Required. The id of the AuthorizedView to create. This AuthorizedView must
+         * not already exist. The `authorized_view_id` appended to `parent` forms the
+         * full AuthorizedView name of the form `projects/{project}/instances/{instanc
+         * e}/tables/{table}/authorizedView/{authorized_view}`.
+         *
+         * @param string $authorizedViewId
+         */
+        public function setAuthorizedViewId($authorizedViewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorizedViewId()
+        {
+        }
+        /**
+         * Required. This is the name of the table the AuthorizedView belongs to.
+         * Values are of the form
+         * `projects/{project}/instances/{instance}/tables/{table}`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedView
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateAuthorizedViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizedView()
-    {
-    }
-    /**
-     * Required. The id of the AuthorizedView to create. This AuthorizedView must
-     * not already exist. The `authorized_view_id` appended to `parent` forms the
-     * full AuthorizedView name of the form `projects/{project}/instances/{instanc
-     * e}/tables/{table}/authorizedView/{authorized_view}`.
-     *
-     * @param string $authorizedViewId
-     */
-    public function setAuthorizedViewId($authorizedViewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorizedViewId()
-    {
-    }
-    /**
-     * Required. This is the name of the table the AuthorizedView belongs to.
-     * Values are of the form
-     * `projects/{project}/instances/{instance}/tables/{table}`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_BigtableAdmin_CreateAuthorizedViewRequest extends \Google\Service\BigtableAdmin\CreateAuthorizedViewRequest
     {
     }
 }

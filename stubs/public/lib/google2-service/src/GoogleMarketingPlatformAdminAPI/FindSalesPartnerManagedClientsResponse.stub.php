@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class FindSalesPartnerManagedClientsResponse extends \Google\Collection
-{
-    protected $collection_key = 'clientData';
-    protected $clientDataType = ClientData::class;
-    protected $clientDataDataType = 'array';
-    /**
-     * The clients managed by the sales org.
-     *
-     * @param ClientData[] $clientData
-     */
-    public function setClientData($clientData)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class FindSalesPartnerManagedClientsResponse extends \Google\Collection
     {
+        protected $collection_key = 'clientData';
+        protected $clientDataType = ClientData::class;
+        protected $clientDataDataType = 'array';
+        /**
+         * The clients managed by the sales org.
+         *
+         * @param ClientData[] $clientData
+         */
+        public function setClientData($clientData)
+        {
+        }
+        /**
+         * @return ClientData[]
+         */
+        public function getClientData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientData[]
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\FindSalesPartnerManagedClientsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientData()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_FindSalesPartnerManagedClientsResponse extends \Google\Service\GoogleMarketingPlatformAdminAPI\FindSalesPartnerManagedClientsResponse
     {
     }
 }

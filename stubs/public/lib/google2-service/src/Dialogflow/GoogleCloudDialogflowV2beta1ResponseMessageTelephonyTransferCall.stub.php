@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall extends \Google\Model
-{
-    /**
-     * Transfer the call to a phone number in [E.164
-     * format](https://en.wikipedia.org/wiki/E.164).
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Transfer the call to a SIP endpoint.
-     *
-     * @var string
-     */
-    public $sipUri;
-    /**
-     * Transfer the call to a phone number in [E.164
-     * format](https://en.wikipedia.org/wiki/E.164).
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall extends \Google\Model
     {
+        /**
+         * Transfer the call to a phone number in [E.164
+         * format](https://en.wikipedia.org/wiki/E.164).
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Transfer the call to a SIP endpoint.
+         *
+         * @var string
+         */
+        public $sipUri;
+        /**
+         * Transfer the call to a phone number in [E.164
+         * format](https://en.wikipedia.org/wiki/E.164).
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Transfer the call to a SIP endpoint.
+         *
+         * @param string $sipUri
+         */
+        public function setSipUri($sipUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSipUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Transfer the call to a SIP endpoint.
-     *
-     * @param string $sipUri
-     */
-    public function setSipUri($sipUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSipUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageTelephonyTransferCall
     {
     }
 }

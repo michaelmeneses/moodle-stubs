@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductApprovalEvent extends \Google\Model
-{
-    /**
-     * Conveys no information.
-     */
-    public const APPROVED_unknown = 'unknown';
-    /**
-     * The product was approved.
-     */
-    public const APPROVED_approved = 'approved';
-    /**
-     * The product was unapproved.
-     */
-    public const APPROVED_unapproved = 'unapproved';
-    /**
-     * Whether the product was approved or unapproved. This field will always be
-     * present.
-     *
-     * @var string
-     */
-    public $approved;
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the
-     * approval status has changed. This field will always be present.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Whether the product was approved or unapproved. This field will always be
-     * present.
-     *
-     * Accepted values: unknown, approved, unapproved
-     *
-     * @param self::APPROVED_* $approved
-     */
-    public function setApproved($approved)
+namespace Google\Service\AndroidEnterprise {
+    class ProductApprovalEvent extends \Google\Model
     {
+        /**
+         * Conveys no information.
+         */
+        public const APPROVED_unknown = 'unknown';
+        /**
+         * The product was approved.
+         */
+        public const APPROVED_approved = 'approved';
+        /**
+         * The product was unapproved.
+         */
+        public const APPROVED_unapproved = 'unapproved';
+        /**
+         * Whether the product was approved or unapproved. This field will always be
+         * present.
+         *
+         * @var string
+         */
+        public $approved;
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the
+         * approval status has changed. This field will always be present.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Whether the product was approved or unapproved. This field will always be
+         * present.
+         *
+         * Accepted values: unknown, approved, unapproved
+         *
+         * @param self::APPROVED_* $approved
+         */
+        public function setApproved($approved)
+        {
+        }
+        /**
+         * @return self::APPROVED_*
+         */
+        public function getApproved()
+        {
+        }
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the
+         * approval status has changed. This field will always be present.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::APPROVED_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductApprovalEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproved()
-    {
-    }
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the
-     * approval status has changed. This field will always be present.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_ProductApprovalEvent extends \Google\Service\AndroidEnterprise\ProductApprovalEvent
     {
     }
 }

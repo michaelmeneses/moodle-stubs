@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigratableResource extends \Google\Model
-{
-    protected $automlDatasetType = GoogleCloudAiplatformV1MigratableResourceAutomlDataset::class;
-    protected $automlDatasetDataType = '';
-    protected $automlModelType = GoogleCloudAiplatformV1MigratableResourceAutomlModel::class;
-    protected $automlModelDataType = '';
-    protected $dataLabelingDatasetType = GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset::class;
-    protected $dataLabelingDatasetDataType = '';
-    /**
-     * Output only. Timestamp when the last migration attempt on this
-     * MigratableResource started. Will not be set if there's no migration attempt
-     * on this MigratableResource.
-     *
-     * @var string
-     */
-    public $lastMigrateTime;
-    /**
-     * Output only. Timestamp when this MigratableResource was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    protected $mlEngineModelVersionType = GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion::class;
-    protected $mlEngineModelVersionDataType = '';
-    /**
-     * Output only. Represents one Dataset in automl.googleapis.com.
-     *
-     * @param GoogleCloudAiplatformV1MigratableResourceAutomlDataset $automlDataset
-     */
-    public function setAutomlDataset(GoogleCloudAiplatformV1MigratableResourceAutomlDataset $automlDataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigratableResource extends \Google\Model
     {
+        protected $automlDatasetType = GoogleCloudAiplatformV1MigratableResourceAutomlDataset::class;
+        protected $automlDatasetDataType = '';
+        protected $automlModelType = GoogleCloudAiplatformV1MigratableResourceAutomlModel::class;
+        protected $automlModelDataType = '';
+        protected $dataLabelingDatasetType = GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset::class;
+        protected $dataLabelingDatasetDataType = '';
+        /**
+         * Output only. Timestamp when the last migration attempt on this
+         * MigratableResource started. Will not be set if there's no migration attempt
+         * on this MigratableResource.
+         *
+         * @var string
+         */
+        public $lastMigrateTime;
+        /**
+         * Output only. Timestamp when this MigratableResource was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        protected $mlEngineModelVersionType = GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion::class;
+        protected $mlEngineModelVersionDataType = '';
+        /**
+         * Output only. Represents one Dataset in automl.googleapis.com.
+         *
+         * @param GoogleCloudAiplatformV1MigratableResourceAutomlDataset $automlDataset
+         */
+        public function setAutomlDataset(GoogleCloudAiplatformV1MigratableResourceAutomlDataset $automlDataset)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigratableResourceAutomlDataset
+         */
+        public function getAutomlDataset()
+        {
+        }
+        /**
+         * Output only. Represents one Model in automl.googleapis.com.
+         *
+         * @param GoogleCloudAiplatformV1MigratableResourceAutomlModel $automlModel
+         */
+        public function setAutomlModel(GoogleCloudAiplatformV1MigratableResourceAutomlModel $automlModel)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigratableResourceAutomlModel
+         */
+        public function getAutomlModel()
+        {
+        }
+        /**
+         * Output only. Represents one Dataset in datalabeling.googleapis.com.
+         *
+         * @param GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset $dataLabelingDataset
+         */
+        public function setDataLabelingDataset(GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset $dataLabelingDataset)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset
+         */
+        public function getDataLabelingDataset()
+        {
+        }
+        /**
+         * Output only. Timestamp when the last migration attempt on this
+         * MigratableResource started. Will not be set if there's no migration attempt
+         * on this MigratableResource.
+         *
+         * @param string $lastMigrateTime
+         */
+        public function setLastMigrateTime($lastMigrateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastMigrateTime()
+        {
+        }
+        /**
+         * Output only. Timestamp when this MigratableResource was last updated.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Output only. Represents one Version in ml.googleapis.com.
+         *
+         * @param GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion $mlEngineModelVersion
+         */
+        public function setMlEngineModelVersion(GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion $mlEngineModelVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion
+         */
+        public function getMlEngineModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MigratableResourceAutomlDataset
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomlDataset()
-    {
-    }
-    /**
-     * Output only. Represents one Model in automl.googleapis.com.
-     *
-     * @param GoogleCloudAiplatformV1MigratableResourceAutomlModel $automlModel
-     */
-    public function setAutomlModel(GoogleCloudAiplatformV1MigratableResourceAutomlModel $automlModel)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigratableResourceAutomlModel
-     */
-    public function getAutomlModel()
-    {
-    }
-    /**
-     * Output only. Represents one Dataset in datalabeling.googleapis.com.
-     *
-     * @param GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset $dataLabelingDataset
-     */
-    public function setDataLabelingDataset(GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset $dataLabelingDataset)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigratableResourceDataLabelingDataset
-     */
-    public function getDataLabelingDataset()
-    {
-    }
-    /**
-     * Output only. Timestamp when the last migration attempt on this
-     * MigratableResource started. Will not be set if there's no migration attempt
-     * on this MigratableResource.
-     *
-     * @param string $lastMigrateTime
-     */
-    public function setLastMigrateTime($lastMigrateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastMigrateTime()
-    {
-    }
-    /**
-     * Output only. Timestamp when this MigratableResource was last updated.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Output only. Represents one Version in ml.googleapis.com.
-     *
-     * @param GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion $mlEngineModelVersion
-     */
-    public function setMlEngineModelVersion(GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion $mlEngineModelVersion)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigratableResourceMlEngineModelVersion
-     */
-    public function getMlEngineModelVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigratableResource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResource
     {
     }
 }

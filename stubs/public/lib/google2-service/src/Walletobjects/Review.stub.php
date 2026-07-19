@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Review extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $comments;
-    /**
-     * @param string $comments
-     */
-    public function setComments($comments)
+namespace Google\Service\Walletobjects {
+    class Review extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $comments;
+        /**
+         * @param string $comments
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\Review registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComments()
+    class Google_Service_Walletobjects_Review extends \Google\Service\Walletobjects\Review
     {
     }
 }

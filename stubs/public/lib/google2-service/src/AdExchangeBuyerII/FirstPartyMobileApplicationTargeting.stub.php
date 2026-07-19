@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class FirstPartyMobileApplicationTargeting extends \Google\Collection
-{
-    protected $collection_key = 'targetedAppIds';
-    /**
-     * A list of application IDs to be excluded.
-     *
-     * @var string[]
-     */
-    public $excludedAppIds;
-    /**
-     * A list of application IDs to be included.
-     *
-     * @var string[]
-     */
-    public $targetedAppIds;
-    /**
-     * A list of application IDs to be excluded.
-     *
-     * @param string[] $excludedAppIds
-     */
-    public function setExcludedAppIds($excludedAppIds)
+namespace Google\Service\AdExchangeBuyerII {
+    class FirstPartyMobileApplicationTargeting extends \Google\Collection
     {
+        protected $collection_key = 'targetedAppIds';
+        /**
+         * A list of application IDs to be excluded.
+         *
+         * @var string[]
+         */
+        public $excludedAppIds;
+        /**
+         * A list of application IDs to be included.
+         *
+         * @var string[]
+         */
+        public $targetedAppIds;
+        /**
+         * A list of application IDs to be excluded.
+         *
+         * @param string[] $excludedAppIds
+         */
+        public function setExcludedAppIds($excludedAppIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedAppIds()
+        {
+        }
+        /**
+         * A list of application IDs to be included.
+         *
+         * @param string[] $targetedAppIds
+         */
+        public function setTargetedAppIds($targetedAppIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetedAppIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\FirstPartyMobileApplicationTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedAppIds()
-    {
-    }
-    /**
-     * A list of application IDs to be included.
-     *
-     * @param string[] $targetedAppIds
-     */
-    public function setTargetedAppIds($targetedAppIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetedAppIds()
+    class Google_Service_AdExchangeBuyerII_FirstPartyMobileApplicationTargeting extends \Google\Service\AdExchangeBuyerII\FirstPartyMobileApplicationTargeting
     {
     }
 }

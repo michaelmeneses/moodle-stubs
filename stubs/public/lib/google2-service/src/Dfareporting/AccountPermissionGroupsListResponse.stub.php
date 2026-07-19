@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AccountPermissionGroupsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountPermissionGroups';
-    protected $accountPermissionGroupsType = AccountPermissionGroup::class;
-    protected $accountPermissionGroupsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountPermissionGroupGroupsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Account permission group collection.
-     *
-     * @param AccountPermissionGroup[] $accountPermissionGroups
-     */
-    public function setAccountPermissionGroups($accountPermissionGroups)
+namespace Google\Service\Dfareporting {
+    class AccountPermissionGroupsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountPermissionGroups';
+        protected $accountPermissionGroupsType = AccountPermissionGroup::class;
+        protected $accountPermissionGroupsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountPermissionGroupGroupsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Account permission group collection.
+         *
+         * @param AccountPermissionGroup[] $accountPermissionGroups
+         */
+        public function setAccountPermissionGroups($accountPermissionGroups)
+        {
+        }
+        /**
+         * @return AccountPermissionGroup[]
+         */
+        public function getAccountPermissionGroups()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountPermissionGroupGroupsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountPermissionGroup[]
+     * Runtime class alias of \Google\Service\Dfareporting\AccountPermissionGroupsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountPermissionGroups()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountPermissionGroupGroupsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_AccountPermissionGroupsListResponse extends \Google\Service\Dfareporting\AccountPermissionGroupsListResponse
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class ResourceTypes extends \Google\Collection
-{
-    protected $collection_key = 'included';
-    /**
-     * Optional. The resource types we currently support.
-     *
-     * @var string[]
-     */
-    public $included;
-    /**
-     * Optional. The resource types we currently support.
-     *
-     * @param string[] $included
-     */
-    public function setIncluded($included)
+namespace Google\Service\SecurityPosture {
+    class ResourceTypes extends \Google\Collection
     {
+        protected $collection_key = 'included';
+        /**
+         * Optional. The resource types we currently support.
+         *
+         * @var string[]
+         */
+        public $included;
+        /**
+         * Optional. The resource types we currently support.
+         *
+         * @param string[] $included
+         */
+        public function setIncluded($included)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncluded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityPosture\ResourceTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncluded()
+    class Google_Service_SecurityPosture_ResourceTypes extends \Google\Service\SecurityPosture\ResourceTypes
     {
     }
 }

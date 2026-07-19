@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PostalCode extends \Google\Model
-{
-    /**
-     * Postal code. This is equivalent to the id field.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Country code of the country to which this postal code belongs.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * DART ID of the country to which this postal code belongs.
-     *
-     * @var string
-     */
-    public $countryDartId;
-    /**
-     * ID of this postal code.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#postalCode".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Postal code. This is equivalent to the id field.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Dfareporting {
+    class PostalCode extends \Google\Model
     {
+        /**
+         * Postal code. This is equivalent to the id field.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Country code of the country to which this postal code belongs.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * DART ID of the country to which this postal code belongs.
+         *
+         * @var string
+         */
+        public $countryDartId;
+        /**
+         * ID of this postal code.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#postalCode".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Postal code. This is equivalent to the id field.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Country code of the country to which this postal code belongs.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * DART ID of the country to which this postal code belongs.
+         *
+         * @param string $countryDartId
+         */
+        public function setCountryDartId($countryDartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryDartId()
+        {
+        }
+        /**
+         * ID of this postal code.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#postalCode".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PostalCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Country code of the country to which this postal code belongs.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * DART ID of the country to which this postal code belongs.
-     *
-     * @param string $countryDartId
-     */
-    public function setCountryDartId($countryDartId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryDartId()
-    {
-    }
-    /**
-     * ID of this postal code.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#postalCode".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_PostalCode extends \Google\Service\Dfareporting\PostalCode
     {
     }
 }

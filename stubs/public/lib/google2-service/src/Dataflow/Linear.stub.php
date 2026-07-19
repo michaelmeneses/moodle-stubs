@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Linear extends \Google\Model
-{
-    /**
-     * Must be greater than 0.
-     *
-     * @var int
-     */
-    public $numberOfBuckets;
-    /**
-     * Lower bound of the first bucket.
-     *
-     * @var 
-     */
-    public $start;
-    /**
-     * Distance between bucket boundaries. Must be greater than 0.
-     *
-     * @var 
-     */
-    public $width;
-    /**
-     * Must be greater than 0.
-     *
-     * @param int $numberOfBuckets
-     */
-    public function setNumberOfBuckets($numberOfBuckets)
+namespace Google\Service\Dataflow {
+    class Linear extends \Google\Model
     {
+        /**
+         * Must be greater than 0.
+         *
+         * @var int
+         */
+        public $numberOfBuckets;
+        /**
+         * Lower bound of the first bucket.
+         *
+         * @var 
+         */
+        public $start;
+        /**
+         * Distance between bucket boundaries. Must be greater than 0.
+         *
+         * @var 
+         */
+        public $width;
+        /**
+         * Must be greater than 0.
+         *
+         * @param int $numberOfBuckets
+         */
+        public function setNumberOfBuckets($numberOfBuckets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberOfBuckets()
+        {
+        }
+        public function setStart($start)
+        {
+        }
+        public function getStart()
+        {
+        }
+        public function setWidth($width)
+        {
+        }
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\Linear registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumberOfBuckets()
-    {
-    }
-    public function setStart($start)
-    {
-    }
-    public function getStart()
-    {
-    }
-    public function setWidth($width)
-    {
-    }
-    public function getWidth()
+    class Google_Service_Dataflow_Linear extends \Google\Service\Dataflow\Linear
     {
     }
 }

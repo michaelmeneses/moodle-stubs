@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount extends \Google\Model
-{
-    /**
-     * The AWS account ID of the resource associated with the issue.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The AWS account name of the resource associated with the issue.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The AWS account ID of the resource associated with the issue.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount extends \Google\Model
     {
+        /**
+         * The AWS account ID of the resource associated with the issue.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The AWS account name of the resource associated with the issue.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The AWS account ID of the resource associated with the issue.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The AWS account name of the resource associated with the issue.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The AWS account name of the resource associated with the issue.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount
     {
     }
 }

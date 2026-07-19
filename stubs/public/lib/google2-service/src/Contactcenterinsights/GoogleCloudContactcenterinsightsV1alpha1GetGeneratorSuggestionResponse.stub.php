@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1GetGeneratorSuggestionResponse extends \Google\Model
-{
-    protected $generatorSuggestionType = GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion::class;
-    protected $generatorSuggestionDataType = '';
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion
-     */
-    public function setGeneratorSuggestion(GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion $generatorSuggestion)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1GetGeneratorSuggestionResponse extends \Google\Model
     {
+        protected $generatorSuggestionType = GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion::class;
+        protected $generatorSuggestionDataType = '';
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion
+         */
+        public function setGeneratorSuggestion(GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion $generatorSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion
+         */
+        public function getGeneratorSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GeneratorSuggestion
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetGeneratorSuggestionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratorSuggestion()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1GetGeneratorSuggestionResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetGeneratorSuggestionResponse
     {
     }
 }

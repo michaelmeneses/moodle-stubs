@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AzureSourceVmDetails extends \Google\Collection
-{
-    /**
-     * The architecture is unknown.
-     */
-    public const ARCHITECTURE_VM_ARCHITECTURE_UNSPECIFIED = 'VM_ARCHITECTURE_UNSPECIFIED';
-    /**
-     * The architecture is one of the x86 architectures.
-     */
-    public const ARCHITECTURE_VM_ARCHITECTURE_X86_FAMILY = 'VM_ARCHITECTURE_X86_FAMILY';
-    /**
-     * The architecture is ARM64.
-     */
-    public const ARCHITECTURE_VM_ARCHITECTURE_ARM64 = 'VM_ARCHITECTURE_ARM64';
-    /**
-     * The firmware is unknown.
-     */
-    public const FIRMWARE_FIRMWARE_UNSPECIFIED = 'FIRMWARE_UNSPECIFIED';
-    /**
-     * The firmware is EFI.
-     */
-    public const FIRMWARE_EFI = 'EFI';
-    /**
-     * The firmware is BIOS.
-     */
-    public const FIRMWARE_BIOS = 'BIOS';
-    protected $collection_key = 'disks';
-    /**
-     * Output only. The VM architecture.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * Output only. The total size of the disks being migrated in bytes.
-     *
-     * @var string
-     */
-    public $committedStorageBytes;
-    protected $disksType = AzureDiskDetails::class;
-    protected $disksDataType = 'array';
-    /**
-     * Output only. The firmware type of the source VM.
-     *
-     * @var string
-     */
-    public $firmware;
-    protected $vmCapabilitiesInfoType = VmCapabilities::class;
-    protected $vmCapabilitiesInfoDataType = '';
-    /**
-     * Output only. The VM architecture.
-     *
-     * Accepted values: VM_ARCHITECTURE_UNSPECIFIED, VM_ARCHITECTURE_X86_FAMILY,
-     * VM_ARCHITECTURE_ARM64
-     *
-     * @param self::ARCHITECTURE_* $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\VMMigrationService {
+    class AzureSourceVmDetails extends \Google\Collection
     {
+        /**
+         * The architecture is unknown.
+         */
+        public const ARCHITECTURE_VM_ARCHITECTURE_UNSPECIFIED = 'VM_ARCHITECTURE_UNSPECIFIED';
+        /**
+         * The architecture is one of the x86 architectures.
+         */
+        public const ARCHITECTURE_VM_ARCHITECTURE_X86_FAMILY = 'VM_ARCHITECTURE_X86_FAMILY';
+        /**
+         * The architecture is ARM64.
+         */
+        public const ARCHITECTURE_VM_ARCHITECTURE_ARM64 = 'VM_ARCHITECTURE_ARM64';
+        /**
+         * The firmware is unknown.
+         */
+        public const FIRMWARE_FIRMWARE_UNSPECIFIED = 'FIRMWARE_UNSPECIFIED';
+        /**
+         * The firmware is EFI.
+         */
+        public const FIRMWARE_EFI = 'EFI';
+        /**
+         * The firmware is BIOS.
+         */
+        public const FIRMWARE_BIOS = 'BIOS';
+        protected $collection_key = 'disks';
+        /**
+         * Output only. The VM architecture.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * Output only. The total size of the disks being migrated in bytes.
+         *
+         * @var string
+         */
+        public $committedStorageBytes;
+        protected $disksType = AzureDiskDetails::class;
+        protected $disksDataType = 'array';
+        /**
+         * Output only. The firmware type of the source VM.
+         *
+         * @var string
+         */
+        public $firmware;
+        protected $vmCapabilitiesInfoType = VmCapabilities::class;
+        protected $vmCapabilitiesInfoDataType = '';
+        /**
+         * Output only. The VM architecture.
+         *
+         * Accepted values: VM_ARCHITECTURE_UNSPECIFIED, VM_ARCHITECTURE_X86_FAMILY,
+         * VM_ARCHITECTURE_ARM64
+         *
+         * @param self::ARCHITECTURE_* $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return self::ARCHITECTURE_*
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * Output only. The total size of the disks being migrated in bytes.
+         *
+         * @param string $committedStorageBytes
+         */
+        public function setCommittedStorageBytes($committedStorageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommittedStorageBytes()
+        {
+        }
+        /**
+         * Output only. The disks attached to the source VM.
+         *
+         * @param AzureDiskDetails[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return AzureDiskDetails[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * Output only. The firmware type of the source VM.
+         *
+         * Accepted values: FIRMWARE_UNSPECIFIED, EFI, BIOS
+         *
+         * @param self::FIRMWARE_* $firmware
+         */
+        public function setFirmware($firmware)
+        {
+        }
+        /**
+         * @return self::FIRMWARE_*
+         */
+        public function getFirmware()
+        {
+        }
+        /**
+         * Output only. Information about VM capabilities needed for some Compute
+         * Engine features.
+         *
+         * @param VmCapabilities $vmCapabilitiesInfo
+         */
+        public function setVmCapabilitiesInfo(VmCapabilities $vmCapabilitiesInfo)
+        {
+        }
+        /**
+         * @return VmCapabilities
+         */
+        public function getVmCapabilitiesInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ARCHITECTURE_*
+     * Runtime class alias of \Google\Service\VMMigrationService\AzureSourceVmDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * Output only. The total size of the disks being migrated in bytes.
-     *
-     * @param string $committedStorageBytes
-     */
-    public function setCommittedStorageBytes($committedStorageBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommittedStorageBytes()
-    {
-    }
-    /**
-     * Output only. The disks attached to the source VM.
-     *
-     * @param AzureDiskDetails[] $disks
-     */
-    public function setDisks($disks)
-    {
-    }
-    /**
-     * @return AzureDiskDetails[]
-     */
-    public function getDisks()
-    {
-    }
-    /**
-     * Output only. The firmware type of the source VM.
-     *
-     * Accepted values: FIRMWARE_UNSPECIFIED, EFI, BIOS
-     *
-     * @param self::FIRMWARE_* $firmware
-     */
-    public function setFirmware($firmware)
-    {
-    }
-    /**
-     * @return self::FIRMWARE_*
-     */
-    public function getFirmware()
-    {
-    }
-    /**
-     * Output only. Information about VM capabilities needed for some Compute
-     * Engine features.
-     *
-     * @param VmCapabilities $vmCapabilitiesInfo
-     */
-    public function setVmCapabilitiesInfo(VmCapabilities $vmCapabilitiesInfo)
-    {
-    }
-    /**
-     * @return VmCapabilities
-     */
-    public function getVmCapabilitiesInfo()
+    class Google_Service_VMMigrationService_AzureSourceVmDetails extends \Google\Service\VMMigrationService\AzureSourceVmDetails
     {
     }
 }

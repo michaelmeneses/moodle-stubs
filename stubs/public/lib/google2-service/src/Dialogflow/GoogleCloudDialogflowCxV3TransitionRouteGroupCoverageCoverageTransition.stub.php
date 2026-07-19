@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverageTransition extends \Google\Model
-{
-    /**
-     * Whether the transition route is covered by at least one of the agent's test
-     * cases.
-     *
-     * @var bool
-     */
-    public $covered;
-    protected $transitionRouteType = GoogleCloudDialogflowCxV3TransitionRoute::class;
-    protected $transitionRouteDataType = '';
-    /**
-     * Whether the transition route is covered by at least one of the agent's test
-     * cases.
-     *
-     * @param bool $covered
-     */
-    public function setCovered($covered)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverageTransition extends \Google\Model
     {
+        /**
+         * Whether the transition route is covered by at least one of the agent's test
+         * cases.
+         *
+         * @var bool
+         */
+        public $covered;
+        protected $transitionRouteType = GoogleCloudDialogflowCxV3TransitionRoute::class;
+        protected $transitionRouteDataType = '';
+        /**
+         * Whether the transition route is covered by at least one of the agent's test
+         * cases.
+         *
+         * @param bool $covered
+         */
+        public function setCovered($covered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCovered()
+        {
+        }
+        /**
+         * Intent route or condition route.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute
+         */
+        public function setTransitionRoute(GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionRoute
+         */
+        public function getTransitionRoute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverageTransition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCovered()
-    {
-    }
-    /**
-     * Intent route or condition route.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute
-     */
-    public function setTransitionRoute(GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionRoute
-     */
-    public function getTransitionRoute()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverageTransition extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionRouteGroupCoverageCoverageTransition
     {
     }
 }

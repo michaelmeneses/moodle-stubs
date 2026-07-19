@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSessionTurn extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $answer;
-    protected $queryType = GoogleCloudDiscoveryengineV1betaQuery::class;
-    protected $queryDataType = '';
-    /**
-     * @param string
-     */
-    public function setAnswer($answer)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSessionTurn extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $answer;
+        protected $queryType = GoogleCloudDiscoveryengineV1betaQuery::class;
+        protected $queryDataType = '';
+        /**
+         * @param string
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaQuery
+         */
+        public function setQuery(GoogleCloudDiscoveryengineV1betaQuery $query)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaQuery
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSessionTurn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaQuery
-     */
-    public function setQuery(GoogleCloudDiscoveryengineV1betaQuery $query)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaQuery
-     */
-    public function getQuery()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSessionTurn extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSessionTurn
     {
     }
 }

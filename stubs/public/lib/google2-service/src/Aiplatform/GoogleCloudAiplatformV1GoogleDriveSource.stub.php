@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GoogleDriveSource extends \Google\Collection
-{
-    protected $collection_key = 'resourceIds';
-    protected $resourceIdsType = GoogleCloudAiplatformV1GoogleDriveSourceResourceId::class;
-    protected $resourceIdsDataType = 'array';
-    /**
-     * Required. Google Drive resource IDs.
-     *
-     * @param GoogleCloudAiplatformV1GoogleDriveSourceResourceId[] $resourceIds
-     */
-    public function setResourceIds($resourceIds)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GoogleDriveSource extends \Google\Collection
     {
+        protected $collection_key = 'resourceIds';
+        protected $resourceIdsType = GoogleCloudAiplatformV1GoogleDriveSourceResourceId::class;
+        protected $resourceIdsDataType = 'array';
+        /**
+         * Required. Google Drive resource IDs.
+         *
+         * @param GoogleCloudAiplatformV1GoogleDriveSourceResourceId[] $resourceIds
+         */
+        public function setResourceIds($resourceIds)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GoogleDriveSourceResourceId[]
+         */
+        public function getResourceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GoogleDriveSourceResourceId[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GoogleDriveSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GoogleDriveSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GoogleDriveSource
     {
     }
 }

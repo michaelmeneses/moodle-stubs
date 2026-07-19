@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListConversionEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'conversionEvents';
-    protected $conversionEventsType = GoogleAnalyticsAdminV1betaConversionEvent::class;
-    protected $conversionEventsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The requested conversion events
-     *
-     * @param GoogleAnalyticsAdminV1betaConversionEvent[] $conversionEvents
-     */
-    public function setConversionEvents($conversionEvents)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListConversionEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'conversionEvents';
+        protected $conversionEventsType = GoogleAnalyticsAdminV1betaConversionEvent::class;
+        protected $conversionEventsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The requested conversion events
+         *
+         * @param GoogleAnalyticsAdminV1betaConversionEvent[] $conversionEvents
+         */
+        public function setConversionEvents($conversionEvents)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaConversionEvent[]
+         */
+        public function getConversionEvents()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaConversionEvent[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListConversionEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionEvents()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListConversionEventsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListConversionEventsResponse
     {
     }
 }

@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class AccountLabel extends \Google\Model
-{
-    /**
-     * Unknown label type.
-     */
-    public const LABEL_TYPE_LABEL_TYPE_UNSPECIFIED = 'LABEL_TYPE_UNSPECIFIED';
-    /**
-     * Indicates that the label was created manually.
-     */
-    public const LABEL_TYPE_MANUAL = 'MANUAL';
-    /**
-     * Indicates that the label was created automatically by CSS Center.
-     */
-    public const LABEL_TYPE_AUTOMATIC = 'AUTOMATIC';
-    /**
-     * Output only. The ID of account this label belongs to.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The description of this label.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The display name of this label.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The ID of the label.
-     *
-     * @var string
-     */
-    public $labelId;
-    /**
-     * Output only. The type of this label.
-     *
-     * @var string
-     */
-    public $labelType;
-    /**
-     * Identifier. The resource name of the label. Format:
-     * accounts/{account}/labels/{label}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The ID of account this label belongs to.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Css {
+    class AccountLabel extends \Google\Model
     {
+        /**
+         * Unknown label type.
+         */
+        public const LABEL_TYPE_LABEL_TYPE_UNSPECIFIED = 'LABEL_TYPE_UNSPECIFIED';
+        /**
+         * Indicates that the label was created manually.
+         */
+        public const LABEL_TYPE_MANUAL = 'MANUAL';
+        /**
+         * Indicates that the label was created automatically by CSS Center.
+         */
+        public const LABEL_TYPE_AUTOMATIC = 'AUTOMATIC';
+        /**
+         * Output only. The ID of account this label belongs to.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The description of this label.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The display name of this label.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The ID of the label.
+         *
+         * @var string
+         */
+        public $labelId;
+        /**
+         * Output only. The type of this label.
+         *
+         * @var string
+         */
+        public $labelType;
+        /**
+         * Identifier. The resource name of the label. Format:
+         * accounts/{account}/labels/{label}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The ID of account this label belongs to.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The description of this label.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The display name of this label.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The ID of the label.
+         *
+         * @param string $labelId
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
+        /**
+         * Output only. The type of this label.
+         *
+         * Accepted values: LABEL_TYPE_UNSPECIFIED, MANUAL, AUTOMATIC
+         *
+         * @param self::LABEL_TYPE_* $labelType
+         */
+        public function setLabelType($labelType)
+        {
+        }
+        /**
+         * @return self::LABEL_TYPE_*
+         */
+        public function getLabelType()
+        {
+        }
+        /**
+         * Identifier. The resource name of the label. Format:
+         * accounts/{account}/labels/{label}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\AccountLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The description of this label.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The display name of this label.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The ID of the label.
-     *
-     * @param string $labelId
-     */
-    public function setLabelId($labelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelId()
-    {
-    }
-    /**
-     * Output only. The type of this label.
-     *
-     * Accepted values: LABEL_TYPE_UNSPECIFIED, MANUAL, AUTOMATIC
-     *
-     * @param self::LABEL_TYPE_* $labelType
-     */
-    public function setLabelType($labelType)
-    {
-    }
-    /**
-     * @return self::LABEL_TYPE_*
-     */
-    public function getLabelType()
-    {
-    }
-    /**
-     * Identifier. The resource name of the label. Format:
-     * accounts/{account}/labels/{label}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Css_AccountLabel extends \Google\Service\Css\AccountLabel
     {
     }
 }

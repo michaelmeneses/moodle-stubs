@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Apk extends \Google\Model
-{
-    protected $binaryType = ApkBinary::class;
-    protected $binaryDataType = '';
-    /**
-     * The version code of the APK, as specified in the manifest file.
-     *
-     * @var int
-     */
-    public $versionCode;
-    /**
-     * Information about the binary payload of this APK.
-     *
-     * @param ApkBinary $binary
-     */
-    public function setBinary(ApkBinary $binary)
+namespace Google\Service\AndroidPublisher {
+    class Apk extends \Google\Model
     {
+        protected $binaryType = ApkBinary::class;
+        protected $binaryDataType = '';
+        /**
+         * The version code of the APK, as specified in the manifest file.
+         *
+         * @var int
+         */
+        public $versionCode;
+        /**
+         * Information about the binary payload of this APK.
+         *
+         * @param ApkBinary $binary
+         */
+        public function setBinary(ApkBinary $binary)
+        {
+        }
+        /**
+         * @return ApkBinary
+         */
+        public function getBinary()
+        {
+        }
+        /**
+         * The version code of the APK, as specified in the manifest file.
+         *
+         * @param int $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApkBinary
+     * Runtime class alias of \Google\Service\AndroidPublisher\Apk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinary()
-    {
-    }
-    /**
-     * The version code of the APK, as specified in the manifest file.
-     *
-     * @param int $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionCode()
+    class Google_Service_AndroidPublisher_Apk extends \Google\Service\AndroidPublisher\Apk
     {
     }
 }

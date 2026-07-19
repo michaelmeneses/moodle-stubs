@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class BulkUpdateWorkspaceResponse extends \Google\Collection
-{
-    protected $collection_key = 'changes';
-    protected $changesType = Entity::class;
-    protected $changesDataType = 'array';
-    /**
-     * The entities that were added or updated during the bulk-update. Does not
-     * include entities that were deleted or updated by the system.
-     *
-     * @param Entity[] $changes
-     */
-    public function setChanges($changes)
+namespace Google\Service\TagManager {
+    class BulkUpdateWorkspaceResponse extends \Google\Collection
     {
+        protected $collection_key = 'changes';
+        protected $changesType = Entity::class;
+        protected $changesDataType = 'array';
+        /**
+         * The entities that were added or updated during the bulk-update. Does not
+         * include entities that were deleted or updated by the system.
+         *
+         * @param Entity[] $changes
+         */
+        public function setChanges($changes)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity[]
+     * Runtime class alias of \Google\Service\TagManager\BulkUpdateWorkspaceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChanges()
+    class Google_Service_TagManager_BulkUpdateWorkspaceResponse extends \Google\Service\TagManager\BulkUpdateWorkspaceResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeseriesinfoVolumeSeriesIssue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $issueDisplayNumber;
-    /**
-     * @var int
-     */
-    public $issueOrderNumber;
-    /**
-     * @param string $issueDisplayNumber
-     */
-    public function setIssueDisplayNumber($issueDisplayNumber)
+namespace Google\Service\Books {
+    class VolumeseriesinfoVolumeSeriesIssue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $issueDisplayNumber;
+        /**
+         * @var int
+         */
+        public $issueOrderNumber;
+        /**
+         * @param string $issueDisplayNumber
+         */
+        public function setIssueDisplayNumber($issueDisplayNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueDisplayNumber()
+        {
+        }
+        /**
+         * @param int $issueOrderNumber
+         */
+        public function setIssueOrderNumber($issueOrderNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIssueOrderNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeseriesinfoVolumeSeriesIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueDisplayNumber()
-    {
-    }
-    /**
-     * @param int $issueOrderNumber
-     */
-    public function setIssueOrderNumber($issueOrderNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIssueOrderNumber()
+    class Google_Service_Books_VolumeseriesinfoVolumeSeriesIssue extends \Google\Service\Books\VolumeseriesinfoVolumeSeriesIssue
     {
     }
 }

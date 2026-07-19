@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GrafeasV1SlsaProvenance02SlsaCompleteness extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $environment;
-    /**
-     * @var bool
-     */
-    public $materials;
-    /**
-     * @var bool
-     */
-    public $parameters;
-    /**
-     * @param bool
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\OnDemandScanning {
+    class GrafeasV1SlsaProvenance02SlsaCompleteness extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $environment;
+        /**
+         * @var bool
+         */
+        public $materials;
+        /**
+         * @var bool
+         */
+        public $parameters;
+        /**
+         * @param bool
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenance02SlsaCompleteness registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMaterials()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getParameters()
+    class Google_Service_OnDemandScanning_GrafeasV1SlsaProvenance02SlsaCompleteness extends \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenance02SlsaCompleteness
     {
     }
 }

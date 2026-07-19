@@ -21,205 +21,214 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Execution extends \Google\Collection
-{
-    /**
-     * Should never be in this state. Exists for proto deserialization backward
-     * compatibility.
-     */
-    public const STATE_unknownState = 'unknownState';
-    /**
-     * The Execution/Step is created, ready to run, but not running yet. If an
-     * Execution/Step is created without initial state, it is assumed that the
-     * Execution/Step is in PENDING state.
-     */
-    public const STATE_pending = 'pending';
-    /**
-     * The Execution/Step is in progress.
-     */
-    public const STATE_inProgress = 'inProgress';
-    /**
-     * The finalized, immutable state. Steps/Executions in this state cannot be
-     * modified.
-     */
-    public const STATE_complete = 'complete';
-    protected $collection_key = 'dimensionDefinitions';
-    protected $completionTimeType = Timestamp::class;
-    protected $completionTimeDataType = '';
-    protected $creationTimeType = Timestamp::class;
-    protected $creationTimeDataType = '';
-    protected $dimensionDefinitionsType = MatrixDimensionDefinition::class;
-    protected $dimensionDefinitionsDataType = 'array';
-    /**
-     * A unique identifier within a History for this Execution. Returns
-     * INVALID_ARGUMENT if this field is set or overwritten by the caller. - In
-     * response always set - In create/update request: never set
-     *
-     * @var string
-     */
-    public $executionId;
-    protected $outcomeType = Outcome::class;
-    protected $outcomeDataType = '';
-    protected $specificationType = Specification::class;
-    protected $specificationDataType = '';
-    /**
-     * The initial state is IN_PROGRESS. The only legal state transitions is from
-     * IN_PROGRESS to COMPLETE. A PRECONDITION_FAILED will be returned if an
-     * invalid transition is requested. The state can only be set to COMPLETE
-     * once. A FAILED_PRECONDITION will be returned if the state is set to
-     * COMPLETE multiple times. If the state is set to COMPLETE, all the in-
-     * progress steps within the execution will be set as COMPLETE. If the outcome
-     * of the step is not set, the outcome will be set to INCONCLUSIVE. - In
-     * response always set - In create/update request: optional
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * TestExecution Matrix ID that the TestExecutionService uses. - In response:
-     * present if set by create - In create: optional - In update: never set
-     *
-     * @var string
-     */
-    public $testExecutionMatrixId;
-    /**
-     * The time when the Execution status transitioned to COMPLETE. This value
-     * will be set automatically when state transitions to COMPLETE. - In
-     * response: set if the execution state is COMPLETE. - In create/update
-     * request: never set
-     *
-     * @param Timestamp $completionTime
-     */
-    public function setCompletionTime(Timestamp $completionTime)
+namespace Google\Service\ToolResults {
+    class Execution extends \Google\Collection
     {
+        /**
+         * Should never be in this state. Exists for proto deserialization backward
+         * compatibility.
+         */
+        public const STATE_unknownState = 'unknownState';
+        /**
+         * The Execution/Step is created, ready to run, but not running yet. If an
+         * Execution/Step is created without initial state, it is assumed that the
+         * Execution/Step is in PENDING state.
+         */
+        public const STATE_pending = 'pending';
+        /**
+         * The Execution/Step is in progress.
+         */
+        public const STATE_inProgress = 'inProgress';
+        /**
+         * The finalized, immutable state. Steps/Executions in this state cannot be
+         * modified.
+         */
+        public const STATE_complete = 'complete';
+        protected $collection_key = 'dimensionDefinitions';
+        protected $completionTimeType = Timestamp::class;
+        protected $completionTimeDataType = '';
+        protected $creationTimeType = Timestamp::class;
+        protected $creationTimeDataType = '';
+        protected $dimensionDefinitionsType = MatrixDimensionDefinition::class;
+        protected $dimensionDefinitionsDataType = 'array';
+        /**
+         * A unique identifier within a History for this Execution. Returns
+         * INVALID_ARGUMENT if this field is set or overwritten by the caller. - In
+         * response always set - In create/update request: never set
+         *
+         * @var string
+         */
+        public $executionId;
+        protected $outcomeType = Outcome::class;
+        protected $outcomeDataType = '';
+        protected $specificationType = Specification::class;
+        protected $specificationDataType = '';
+        /**
+         * The initial state is IN_PROGRESS. The only legal state transitions is from
+         * IN_PROGRESS to COMPLETE. A PRECONDITION_FAILED will be returned if an
+         * invalid transition is requested. The state can only be set to COMPLETE
+         * once. A FAILED_PRECONDITION will be returned if the state is set to
+         * COMPLETE multiple times. If the state is set to COMPLETE, all the in-
+         * progress steps within the execution will be set as COMPLETE. If the outcome
+         * of the step is not set, the outcome will be set to INCONCLUSIVE. - In
+         * response always set - In create/update request: optional
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * TestExecution Matrix ID that the TestExecutionService uses. - In response:
+         * present if set by create - In create: optional - In update: never set
+         *
+         * @var string
+         */
+        public $testExecutionMatrixId;
+        /**
+         * The time when the Execution status transitioned to COMPLETE. This value
+         * will be set automatically when state transitions to COMPLETE. - In
+         * response: set if the execution state is COMPLETE. - In create/update
+         * request: never set
+         *
+         * @param Timestamp $completionTime
+         */
+        public function setCompletionTime(Timestamp $completionTime)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getCompletionTime()
+        {
+        }
+        /**
+         * The time when the Execution was created. This value will be set
+         * automatically when CreateExecution is called. - In response: always set -
+         * In create/update request: never set
+         *
+         * @param Timestamp $creationTime
+         */
+        public function setCreationTime(Timestamp $creationTime)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * The dimensions along which different steps in this execution may vary. This
+         * must remain fixed over the life of the execution. Returns INVALID_ARGUMENT
+         * if this field is set in an update request. Returns INVALID_ARGUMENT if the
+         * same name occurs in more than one dimension_definition. Returns
+         * INVALID_ARGUMENT if the size of the list is over 100. - In response:
+         * present if set by create - In create request: optional - In update request:
+         * never set
+         *
+         * @param MatrixDimensionDefinition[] $dimensionDefinitions
+         */
+        public function setDimensionDefinitions($dimensionDefinitions)
+        {
+        }
+        /**
+         * @return MatrixDimensionDefinition[]
+         */
+        public function getDimensionDefinitions()
+        {
+        }
+        /**
+         * A unique identifier within a History for this Execution. Returns
+         * INVALID_ARGUMENT if this field is set or overwritten by the caller. - In
+         * response always set - In create/update request: never set
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * Classify the result, for example into SUCCESS or FAILURE - In response:
+         * present if set by create/update request - In create/update request:
+         * optional
+         *
+         * @param Outcome $outcome
+         */
+        public function setOutcome(Outcome $outcome)
+        {
+        }
+        /**
+         * @return Outcome
+         */
+        public function getOutcome()
+        {
+        }
+        /**
+         * Lightweight information about execution request. - In response: present if
+         * set by create - In create: optional - In update: optional
+         *
+         * @param Specification $specification
+         */
+        public function setSpecification(Specification $specification)
+        {
+        }
+        /**
+         * @return Specification
+         */
+        public function getSpecification()
+        {
+        }
+        /**
+         * The initial state is IN_PROGRESS. The only legal state transitions is from
+         * IN_PROGRESS to COMPLETE. A PRECONDITION_FAILED will be returned if an
+         * invalid transition is requested. The state can only be set to COMPLETE
+         * once. A FAILED_PRECONDITION will be returned if the state is set to
+         * COMPLETE multiple times. If the state is set to COMPLETE, all the in-
+         * progress steps within the execution will be set as COMPLETE. If the outcome
+         * of the step is not set, the outcome will be set to INCONCLUSIVE. - In
+         * response always set - In create/update request: optional
+         *
+         * Accepted values: unknownState, pending, inProgress, complete
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * TestExecution Matrix ID that the TestExecutionService uses. - In response:
+         * present if set by create - In create: optional - In update: never set
+         *
+         * @param string $testExecutionMatrixId
+         */
+        public function setTestExecutionMatrixId($testExecutionMatrixId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestExecutionMatrixId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Timestamp
+     * Runtime class alias of \Google\Service\ToolResults\Execution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionTime()
-    {
-    }
-    /**
-     * The time when the Execution was created. This value will be set
-     * automatically when CreateExecution is called. - In response: always set -
-     * In create/update request: never set
-     *
-     * @param Timestamp $creationTime
-     */
-    public function setCreationTime(Timestamp $creationTime)
-    {
-    }
-    /**
-     * @return Timestamp
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * The dimensions along which different steps in this execution may vary. This
-     * must remain fixed over the life of the execution. Returns INVALID_ARGUMENT
-     * if this field is set in an update request. Returns INVALID_ARGUMENT if the
-     * same name occurs in more than one dimension_definition. Returns
-     * INVALID_ARGUMENT if the size of the list is over 100. - In response:
-     * present if set by create - In create request: optional - In update request:
-     * never set
-     *
-     * @param MatrixDimensionDefinition[] $dimensionDefinitions
-     */
-    public function setDimensionDefinitions($dimensionDefinitions)
-    {
-    }
-    /**
-     * @return MatrixDimensionDefinition[]
-     */
-    public function getDimensionDefinitions()
-    {
-    }
-    /**
-     * A unique identifier within a History for this Execution. Returns
-     * INVALID_ARGUMENT if this field is set or overwritten by the caller. - In
-     * response always set - In create/update request: never set
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * Classify the result, for example into SUCCESS or FAILURE - In response:
-     * present if set by create/update request - In create/update request:
-     * optional
-     *
-     * @param Outcome $outcome
-     */
-    public function setOutcome(Outcome $outcome)
-    {
-    }
-    /**
-     * @return Outcome
-     */
-    public function getOutcome()
-    {
-    }
-    /**
-     * Lightweight information about execution request. - In response: present if
-     * set by create - In create: optional - In update: optional
-     *
-     * @param Specification $specification
-     */
-    public function setSpecification(Specification $specification)
-    {
-    }
-    /**
-     * @return Specification
-     */
-    public function getSpecification()
-    {
-    }
-    /**
-     * The initial state is IN_PROGRESS. The only legal state transitions is from
-     * IN_PROGRESS to COMPLETE. A PRECONDITION_FAILED will be returned if an
-     * invalid transition is requested. The state can only be set to COMPLETE
-     * once. A FAILED_PRECONDITION will be returned if the state is set to
-     * COMPLETE multiple times. If the state is set to COMPLETE, all the in-
-     * progress steps within the execution will be set as COMPLETE. If the outcome
-     * of the step is not set, the outcome will be set to INCONCLUSIVE. - In
-     * response always set - In create/update request: optional
-     *
-     * Accepted values: unknownState, pending, inProgress, complete
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * TestExecution Matrix ID that the TestExecutionService uses. - In response:
-     * present if set by create - In create: optional - In update: never set
-     *
-     * @param string $testExecutionMatrixId
-     */
-    public function setTestExecutionMatrixId($testExecutionMatrixId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestExecutionMatrixId()
+    class Google_Service_ToolResults_Execution extends \Google\Service\ToolResults\Execution
     {
     }
 }

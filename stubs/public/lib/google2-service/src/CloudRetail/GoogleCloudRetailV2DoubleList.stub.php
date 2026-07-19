@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2DoubleList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The list of double values.
-     *
-     * @var []
-     */
-    public $values;
-    public function setValues($values)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2DoubleList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The list of double values.
+         *
+         * @var []
+         */
+        public $values;
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
     }
-    public function getValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2DoubleList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRetail_GoogleCloudRetailV2DoubleList extends \Google\Service\CloudRetail\GoogleCloudRetailV2DoubleList
     {
     }
 }

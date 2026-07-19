@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1DimensionQaQuestionDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The QA question ID.
-     *
-     * @var string
-     */
-    public $qaQuestionId;
-    /**
-     * Optional. The QA scorecard ID.
-     *
-     * @var string
-     */
-    public $qaScorecardId;
-    /**
-     * Optional. The full body of the question.
-     *
-     * @var string
-     */
-    public $questionBody;
-    /**
-     * Optional. The QA question ID.
-     *
-     * @param string $qaQuestionId
-     */
-    public function setQaQuestionId($qaQuestionId)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1DimensionQaQuestionDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The QA question ID.
+         *
+         * @var string
+         */
+        public $qaQuestionId;
+        /**
+         * Optional. The QA scorecard ID.
+         *
+         * @var string
+         */
+        public $qaScorecardId;
+        /**
+         * Optional. The full body of the question.
+         *
+         * @var string
+         */
+        public $questionBody;
+        /**
+         * Optional. The QA question ID.
+         *
+         * @param string $qaQuestionId
+         */
+        public function setQaQuestionId($qaQuestionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQaQuestionId()
+        {
+        }
+        /**
+         * Optional. The QA scorecard ID.
+         *
+         * @param string $qaScorecardId
+         */
+        public function setQaScorecardId($qaScorecardId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQaScorecardId()
+        {
+        }
+        /**
+         * Optional. The full body of the question.
+         *
+         * @param string $questionBody
+         */
+        public function setQuestionBody($questionBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestionBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionQaQuestionDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQaQuestionId()
-    {
-    }
-    /**
-     * Optional. The QA scorecard ID.
-     *
-     * @param string $qaScorecardId
-     */
-    public function setQaScorecardId($qaScorecardId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQaScorecardId()
-    {
-    }
-    /**
-     * Optional. The full body of the question.
-     *
-     * @param string $questionBody
-     */
-    public function setQuestionBody($questionBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestionBody()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1DimensionQaQuestionDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionQaQuestionDimensionMetadata
     {
     }
 }

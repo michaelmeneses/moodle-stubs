@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class ExperimentalField extends \Google\Model
-{
-    /**
-     * Optional. The name of the field to use.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * Optional. The value the field to set.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. The name of the field to use.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\DataManager {
+    class ExperimentalField extends \Google\Model
     {
+        /**
+         * Optional. The name of the field to use.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * Optional. The value the field to set.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. The name of the field to use.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Optional. The value the field to set.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\ExperimentalField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Optional. The value the field to set.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DataManager_ExperimentalField extends \Google\Service\DataManager\ExperimentalField
     {
     }
 }

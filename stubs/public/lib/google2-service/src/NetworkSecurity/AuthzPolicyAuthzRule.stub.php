@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRule extends \Google\Model
-{
-    protected $fromType = AuthzPolicyAuthzRuleFrom::class;
-    protected $fromDataType = '';
-    protected $toType = AuthzPolicyAuthzRuleTo::class;
-    protected $toDataType = '';
-    /**
-     * Optional. CEL expression that describes the conditions to be satisfied for
-     * the action. The result of the CEL expression is ANDed with the from and to.
-     * Refer to the CEL language reference for a list of available attributes.
-     *
-     * @var string
-     */
-    public $when;
-    /**
-     * Optional. Describes properties of a source of a request.
-     *
-     * @param AuthzPolicyAuthzRuleFrom $from
-     */
-    public function setFrom(AuthzPolicyAuthzRuleFrom $from)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRule extends \Google\Model
     {
+        protected $fromType = AuthzPolicyAuthzRuleFrom::class;
+        protected $fromDataType = '';
+        protected $toType = AuthzPolicyAuthzRuleTo::class;
+        protected $toDataType = '';
+        /**
+         * Optional. CEL expression that describes the conditions to be satisfied for
+         * the action. The result of the CEL expression is ANDed with the from and to.
+         * Refer to the CEL language reference for a list of available attributes.
+         *
+         * @var string
+         */
+        public $when;
+        /**
+         * Optional. Describes properties of a source of a request.
+         *
+         * @param AuthzPolicyAuthzRuleFrom $from
+         */
+        public function setFrom(AuthzPolicyAuthzRuleFrom $from)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleFrom
+         */
+        public function getFrom()
+        {
+        }
+        /**
+         * Optional. Describes properties of a target of a request.
+         *
+         * @param AuthzPolicyAuthzRuleTo $to
+         */
+        public function setTo(AuthzPolicyAuthzRuleTo $to)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleTo
+         */
+        public function getTo()
+        {
+        }
+        /**
+         * Optional. CEL expression that describes the conditions to be satisfied for
+         * the action. The result of the CEL expression is ANDed with the from and to.
+         * Refer to the CEL language reference for a list of available attributes.
+         *
+         * @param string $when
+         */
+        public function setWhen($when)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWhen()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyAuthzRuleFrom
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrom()
-    {
-    }
-    /**
-     * Optional. Describes properties of a target of a request.
-     *
-     * @param AuthzPolicyAuthzRuleTo $to
-     */
-    public function setTo(AuthzPolicyAuthzRuleTo $to)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRuleTo
-     */
-    public function getTo()
-    {
-    }
-    /**
-     * Optional. CEL expression that describes the conditions to be satisfied for
-     * the action. The result of the CEL expression is ANDed with the from and to.
-     * Refer to the CEL language reference for a list of available attributes.
-     *
-     * @param string $when
-     */
-    public function setWhen($when)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWhen()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRule extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRule
     {
     }
 }

@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class DynamicLinkInfo extends \Google\Model
-{
-    protected $analyticsInfoType = AnalyticsInfo::class;
-    protected $analyticsInfoDataType = '';
-    protected $androidInfoType = AndroidInfo::class;
-    protected $androidInfoDataType = '';
-    protected $desktopInfoType = DesktopInfo::class;
-    protected $desktopInfoDataType = '';
-    /**
-     * E.g. https://maps.app.goo.gl, https://maps.page.link, https://g.co/maps
-     * More examples can be found in description of getNormalizedUriPrefix in
-     * j/c/g/firebase/dynamiclinks/uri/DdlDomain.java Will fallback to
-     * dynamic_link_domain is this field is missing
-     *
-     * @var string
-     */
-    public $domainUriPrefix;
-    /**
-     * Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl [Learn
-     * more](https://firebase.google.com/docs/dynamic-links/android/receive) on
-     * how to set up Dynamic Link domain associated with your Firebase project.
-     * Required if missing domain_uri_prefix.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $dynamicLinkDomain;
-    protected $iosInfoType = IosInfo::class;
-    protected $iosInfoDataType = '';
-    /**
-     * The link your app will open, You can specify any URL your app can handle.
-     * This link must be a well-formatted URL, be properly URL-encoded, and use
-     * the HTTP or HTTPS scheme. See 'link' parameters in the
-     * [documentation](https://firebase.google.com/docs/dynamic-links/create-
-     * manually). Required.
-     *
-     * @var string
-     */
-    public $link;
-    protected $navigationInfoType = NavigationInfo::class;
-    protected $navigationInfoDataType = '';
-    protected $socialMetaTagInfoType = SocialMetaTagInfo::class;
-    protected $socialMetaTagInfoDataType = '';
-    /**
-     * Parameters used for tracking. See all tracking parameters in the
-     * [documentation](https://firebase.google.com/docs/dynamic-links/create-
-     * manually).
-     *
-     * @param AnalyticsInfo $analyticsInfo
-     */
-    public function setAnalyticsInfo(AnalyticsInfo $analyticsInfo)
+namespace Google\Service\FirebaseDynamicLinks {
+    class DynamicLinkInfo extends \Google\Model
     {
+        protected $analyticsInfoType = AnalyticsInfo::class;
+        protected $analyticsInfoDataType = '';
+        protected $androidInfoType = AndroidInfo::class;
+        protected $androidInfoDataType = '';
+        protected $desktopInfoType = DesktopInfo::class;
+        protected $desktopInfoDataType = '';
+        /**
+         * E.g. https://maps.app.goo.gl, https://maps.page.link, https://g.co/maps
+         * More examples can be found in description of getNormalizedUriPrefix in
+         * j/c/g/firebase/dynamiclinks/uri/DdlDomain.java Will fallback to
+         * dynamic_link_domain is this field is missing
+         *
+         * @var string
+         */
+        public $domainUriPrefix;
+        /**
+         * Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl [Learn
+         * more](https://firebase.google.com/docs/dynamic-links/android/receive) on
+         * how to set up Dynamic Link domain associated with your Firebase project.
+         * Required if missing domain_uri_prefix.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $dynamicLinkDomain;
+        protected $iosInfoType = IosInfo::class;
+        protected $iosInfoDataType = '';
+        /**
+         * The link your app will open, You can specify any URL your app can handle.
+         * This link must be a well-formatted URL, be properly URL-encoded, and use
+         * the HTTP or HTTPS scheme. See 'link' parameters in the
+         * [documentation](https://firebase.google.com/docs/dynamic-links/create-
+         * manually). Required.
+         *
+         * @var string
+         */
+        public $link;
+        protected $navigationInfoType = NavigationInfo::class;
+        protected $navigationInfoDataType = '';
+        protected $socialMetaTagInfoType = SocialMetaTagInfo::class;
+        protected $socialMetaTagInfoDataType = '';
+        /**
+         * Parameters used for tracking. See all tracking parameters in the
+         * [documentation](https://firebase.google.com/docs/dynamic-links/create-
+         * manually).
+         *
+         * @param AnalyticsInfo $analyticsInfo
+         */
+        public function setAnalyticsInfo(AnalyticsInfo $analyticsInfo)
+        {
+        }
+        /**
+         * @return AnalyticsInfo
+         */
+        public function getAnalyticsInfo()
+        {
+        }
+        /**
+         * Android related information. See Android related parameters in the
+         * [documentation](https://firebase.google.com/docs/dynamic-links/create-
+         * manually).
+         *
+         * @param AndroidInfo $androidInfo
+         */
+        public function setAndroidInfo(AndroidInfo $androidInfo)
+        {
+        }
+        /**
+         * @return AndroidInfo
+         */
+        public function getAndroidInfo()
+        {
+        }
+        /**
+         * Desktop related information. See desktop related parameters in the
+         * [documentation](https://firebase.google.com/docs/dynamic-links/create-
+         * manually).
+         *
+         * @param DesktopInfo $desktopInfo
+         */
+        public function setDesktopInfo(DesktopInfo $desktopInfo)
+        {
+        }
+        /**
+         * @return DesktopInfo
+         */
+        public function getDesktopInfo()
+        {
+        }
+        /**
+         * E.g. https://maps.app.goo.gl, https://maps.page.link, https://g.co/maps
+         * More examples can be found in description of getNormalizedUriPrefix in
+         * j/c/g/firebase/dynamiclinks/uri/DdlDomain.java Will fallback to
+         * dynamic_link_domain is this field is missing
+         *
+         * @param string $domainUriPrefix
+         */
+        public function setDomainUriPrefix($domainUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainUriPrefix()
+        {
+        }
+        /**
+         * Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl [Learn
+         * more](https://firebase.google.com/docs/dynamic-links/android/receive) on
+         * how to set up Dynamic Link domain associated with your Firebase project.
+         * Required if missing domain_uri_prefix.
+         *
+         * @deprecated
+         * @param string $dynamicLinkDomain
+         */
+        public function setDynamicLinkDomain($dynamicLinkDomain)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDynamicLinkDomain()
+        {
+        }
+        /**
+         * iOS related information. See iOS related parameters in the
+         * [documentation](https://firebase.google.com/docs/dynamic-links/create-
+         * manually).
+         *
+         * @param IosInfo $iosInfo
+         */
+        public function setIosInfo(IosInfo $iosInfo)
+        {
+        }
+        /**
+         * @return IosInfo
+         */
+        public function getIosInfo()
+        {
+        }
+        /**
+         * The link your app will open, You can specify any URL your app can handle.
+         * This link must be a well-formatted URL, be properly URL-encoded, and use
+         * the HTTP or HTTPS scheme. See 'link' parameters in the
+         * [documentation](https://firebase.google.com/docs/dynamic-links/create-
+         * manually). Required.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Information of navigation behavior of a Firebase Dynamic Links.
+         *
+         * @param NavigationInfo $navigationInfo
+         */
+        public function setNavigationInfo(NavigationInfo $navigationInfo)
+        {
+        }
+        /**
+         * @return NavigationInfo
+         */
+        public function getNavigationInfo()
+        {
+        }
+        /**
+         * Parameters for social meta tag params. Used to set meta tag data for link
+         * previews on social sites.
+         *
+         * @param SocialMetaTagInfo $socialMetaTagInfo
+         */
+        public function setSocialMetaTagInfo(SocialMetaTagInfo $socialMetaTagInfo)
+        {
+        }
+        /**
+         * @return SocialMetaTagInfo
+         */
+        public function getSocialMetaTagInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyticsInfo
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\DynamicLinkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsInfo()
-    {
-    }
-    /**
-     * Android related information. See Android related parameters in the
-     * [documentation](https://firebase.google.com/docs/dynamic-links/create-
-     * manually).
-     *
-     * @param AndroidInfo $androidInfo
-     */
-    public function setAndroidInfo(AndroidInfo $androidInfo)
-    {
-    }
-    /**
-     * @return AndroidInfo
-     */
-    public function getAndroidInfo()
-    {
-    }
-    /**
-     * Desktop related information. See desktop related parameters in the
-     * [documentation](https://firebase.google.com/docs/dynamic-links/create-
-     * manually).
-     *
-     * @param DesktopInfo $desktopInfo
-     */
-    public function setDesktopInfo(DesktopInfo $desktopInfo)
-    {
-    }
-    /**
-     * @return DesktopInfo
-     */
-    public function getDesktopInfo()
-    {
-    }
-    /**
-     * E.g. https://maps.app.goo.gl, https://maps.page.link, https://g.co/maps
-     * More examples can be found in description of getNormalizedUriPrefix in
-     * j/c/g/firebase/dynamiclinks/uri/DdlDomain.java Will fallback to
-     * dynamic_link_domain is this field is missing
-     *
-     * @param string $domainUriPrefix
-     */
-    public function setDomainUriPrefix($domainUriPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomainUriPrefix()
-    {
-    }
-    /**
-     * Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl [Learn
-     * more](https://firebase.google.com/docs/dynamic-links/android/receive) on
-     * how to set up Dynamic Link domain associated with your Firebase project.
-     * Required if missing domain_uri_prefix.
-     *
-     * @deprecated
-     * @param string $dynamicLinkDomain
-     */
-    public function setDynamicLinkDomain($dynamicLinkDomain)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getDynamicLinkDomain()
-    {
-    }
-    /**
-     * iOS related information. See iOS related parameters in the
-     * [documentation](https://firebase.google.com/docs/dynamic-links/create-
-     * manually).
-     *
-     * @param IosInfo $iosInfo
-     */
-    public function setIosInfo(IosInfo $iosInfo)
-    {
-    }
-    /**
-     * @return IosInfo
-     */
-    public function getIosInfo()
-    {
-    }
-    /**
-     * The link your app will open, You can specify any URL your app can handle.
-     * This link must be a well-formatted URL, be properly URL-encoded, and use
-     * the HTTP or HTTPS scheme. See 'link' parameters in the
-     * [documentation](https://firebase.google.com/docs/dynamic-links/create-
-     * manually). Required.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * Information of navigation behavior of a Firebase Dynamic Links.
-     *
-     * @param NavigationInfo $navigationInfo
-     */
-    public function setNavigationInfo(NavigationInfo $navigationInfo)
-    {
-    }
-    /**
-     * @return NavigationInfo
-     */
-    public function getNavigationInfo()
-    {
-    }
-    /**
-     * Parameters for social meta tag params. Used to set meta tag data for link
-     * previews on social sites.
-     *
-     * @param SocialMetaTagInfo $socialMetaTagInfo
-     */
-    public function setSocialMetaTagInfo(SocialMetaTagInfo $socialMetaTagInfo)
-    {
-    }
-    /**
-     * @return SocialMetaTagInfo
-     */
-    public function getSocialMetaTagInfo()
+    class Google_Service_FirebaseDynamicLinks_DynamicLinkInfo extends \Google\Service\FirebaseDynamicLinks\DynamicLinkInfo
     {
     }
 }

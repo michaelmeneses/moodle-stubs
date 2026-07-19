@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class NamedRanges extends \Google\Collection
-{
-    protected $collection_key = 'namedRanges';
-    /**
-     * The name that all the named ranges share.
-     *
-     * @var string
-     */
-    public $name;
-    protected $namedRangesType = NamedRange::class;
-    protected $namedRangesDataType = 'array';
-    /**
-     * The name that all the named ranges share.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Docs {
+    class NamedRanges extends \Google\Collection
     {
+        protected $collection_key = 'namedRanges';
+        /**
+         * The name that all the named ranges share.
+         *
+         * @var string
+         */
+        public $name;
+        protected $namedRangesType = NamedRange::class;
+        protected $namedRangesDataType = 'array';
+        /**
+         * The name that all the named ranges share.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The NamedRanges that share the same name.
+         *
+         * @param NamedRange[] $namedRanges
+         */
+        public function setNamedRanges($namedRanges)
+        {
+        }
+        /**
+         * @return NamedRange[]
+         */
+        public function getNamedRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\NamedRanges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The NamedRanges that share the same name.
-     *
-     * @param NamedRange[] $namedRanges
-     */
-    public function setNamedRanges($namedRanges)
-    {
-    }
-    /**
-     * @return NamedRange[]
-     */
-    public function getNamedRanges()
+    class Google_Service_Docs_NamedRanges extends \Google\Service\Docs\NamedRanges
     {
     }
 }

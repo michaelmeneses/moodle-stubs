@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class Quota extends \Google\Collection
-{
-    protected $collection_key = 'metricRules';
-    protected $limitsType = QuotaLimit::class;
-    protected $limitsDataType = 'array';
-    protected $metricRulesType = MetricRule::class;
-    protected $metricRulesDataType = 'array';
-    /**
-     * List of QuotaLimit definitions for the service.
-     *
-     * @param QuotaLimit[] $limits
-     */
-    public function setLimits($limits)
+namespace Google\Service\ServiceUsage {
+    class Quota extends \Google\Collection
     {
+        protected $collection_key = 'metricRules';
+        protected $limitsType = QuotaLimit::class;
+        protected $limitsDataType = 'array';
+        protected $metricRulesType = MetricRule::class;
+        protected $metricRulesDataType = 'array';
+        /**
+         * List of QuotaLimit definitions for the service.
+         *
+         * @param QuotaLimit[] $limits
+         */
+        public function setLimits($limits)
+        {
+        }
+        /**
+         * @return QuotaLimit[]
+         */
+        public function getLimits()
+        {
+        }
+        /**
+         * List of MetricRule definitions, each one mapping a selected method to one
+         * or more metrics.
+         *
+         * @param MetricRule[] $metricRules
+         */
+        public function setMetricRules($metricRules)
+        {
+        }
+        /**
+         * @return MetricRule[]
+         */
+        public function getMetricRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QuotaLimit[]
+     * Runtime class alias of \Google\Service\ServiceUsage\Quota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimits()
-    {
-    }
-    /**
-     * List of MetricRule definitions, each one mapping a selected method to one
-     * or more metrics.
-     *
-     * @param MetricRule[] $metricRules
-     */
-    public function setMetricRules($metricRules)
-    {
-    }
-    /**
-     * @return MetricRule[]
-     */
-    public function getMetricRules()
+    class Google_Service_ServiceUsage_Quota extends \Google\Service\ServiceUsage\Quota
     {
     }
 }

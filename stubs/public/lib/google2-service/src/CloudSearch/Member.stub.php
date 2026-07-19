@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Member extends \Google\Model
-{
-    protected $rosterType = Roster::class;
-    protected $rosterDataType = '';
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * @param Roster
-     */
-    public function setRoster(Roster $roster)
+namespace Google\Service\CloudSearch {
+    class Member extends \Google\Model
     {
+        protected $rosterType = Roster::class;
+        protected $rosterDataType = '';
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * @param Roster
+         */
+        public function setRoster(Roster $roster)
+        {
+        }
+        /**
+         * @return Roster
+         */
+        public function getRoster()
+        {
+        }
+        /**
+         * @param User
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Roster
+     * Runtime class alias of \Google\Service\CloudSearch\Member registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoster()
-    {
-    }
-    /**
-     * @param User
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
+    class Google_Service_CloudSearch_Member extends \Google\Service\CloudSearch\Member
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class LaunchFlexTemplateRequest extends \Google\Model
-{
-    protected $launchParameterType = LaunchFlexTemplateParameter::class;
-    protected $launchParameterDataType = '';
-    /**
-     * If true, the request is validated but not actually executed. Defaults to
-     * false.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. Parameter to launch a job form Flex Template.
-     *
-     * @param LaunchFlexTemplateParameter $launchParameter
-     */
-    public function setLaunchParameter(LaunchFlexTemplateParameter $launchParameter)
+namespace Google\Service\Dataflow {
+    class LaunchFlexTemplateRequest extends \Google\Model
     {
+        protected $launchParameterType = LaunchFlexTemplateParameter::class;
+        protected $launchParameterDataType = '';
+        /**
+         * If true, the request is validated but not actually executed. Defaults to
+         * false.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. Parameter to launch a job form Flex Template.
+         *
+         * @param LaunchFlexTemplateParameter $launchParameter
+         */
+        public function setLaunchParameter(LaunchFlexTemplateParameter $launchParameter)
+        {
+        }
+        /**
+         * @return LaunchFlexTemplateParameter
+         */
+        public function getLaunchParameter()
+        {
+        }
+        /**
+         * If true, the request is validated but not actually executed. Defaults to
+         * false.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LaunchFlexTemplateParameter
+     * Runtime class alias of \Google\Service\Dataflow\LaunchFlexTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLaunchParameter()
-    {
-    }
-    /**
-     * If true, the request is validated but not actually executed. Defaults to
-     * false.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Dataflow_LaunchFlexTemplateRequest extends \Google\Service\Dataflow\LaunchFlexTemplateRequest
     {
     }
 }

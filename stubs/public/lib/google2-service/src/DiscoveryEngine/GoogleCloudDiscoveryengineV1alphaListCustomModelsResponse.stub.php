@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaListCustomModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = GoogleCloudDiscoveryengineV1alphaCustomTuningModel::class;
-    protected $modelsDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1alphaCustomTuningModel[]
-     */
-    public function setModels($models)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaListCustomModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = GoogleCloudDiscoveryengineV1alphaCustomTuningModel::class;
+        protected $modelsDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1alphaCustomTuningModel[]
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaCustomTuningModel[]
+         */
+        public function getModels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaCustomTuningModel[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaListCustomModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaListCustomModelsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaListCustomModelsResponse
     {
     }
 }

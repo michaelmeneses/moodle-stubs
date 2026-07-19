@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class MoveAssignmentRequest extends \Google\Model
-{
-    /**
-     * The optional assignment ID. A new assignment name is generated if this
-     * field is empty. This field can contain only lowercase alphanumeric
-     * characters or dashes. Max length is 64 characters.
-     *
-     * @var string
-     */
-    public $assignmentId;
-    /**
-     * The new reservation ID, e.g.:
-     * `projects/myotherproject/locations/US/reservations/team2-prod`
-     *
-     * @var string
-     */
-    public $destinationId;
-    /**
-     * The optional assignment ID. A new assignment name is generated if this
-     * field is empty. This field can contain only lowercase alphanumeric
-     * characters or dashes. Max length is 64 characters.
-     *
-     * @param string $assignmentId
-     */
-    public function setAssignmentId($assignmentId)
+namespace Google\Service\BigQueryReservation {
+    class MoveAssignmentRequest extends \Google\Model
     {
+        /**
+         * The optional assignment ID. A new assignment name is generated if this
+         * field is empty. This field can contain only lowercase alphanumeric
+         * characters or dashes. Max length is 64 characters.
+         *
+         * @var string
+         */
+        public $assignmentId;
+        /**
+         * The new reservation ID, e.g.:
+         * `projects/myotherproject/locations/US/reservations/team2-prod`
+         *
+         * @var string
+         */
+        public $destinationId;
+        /**
+         * The optional assignment ID. A new assignment name is generated if this
+         * field is empty. This field can contain only lowercase alphanumeric
+         * characters or dashes. Max length is 64 characters.
+         *
+         * @param string $assignmentId
+         */
+        public function setAssignmentId($assignmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssignmentId()
+        {
+        }
+        /**
+         * The new reservation ID, e.g.:
+         * `projects/myotherproject/locations/US/reservations/team2-prod`
+         *
+         * @param string $destinationId
+         */
+        public function setDestinationId($destinationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\MoveAssignmentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignmentId()
-    {
-    }
-    /**
-     * The new reservation ID, e.g.:
-     * `projects/myotherproject/locations/US/reservations/team2-prod`
-     *
-     * @param string $destinationId
-     */
-    public function setDestinationId($destinationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationId()
+    class Google_Service_BigQueryReservation_MoveAssignmentRequest extends \Google\Service\BigQueryReservation\MoveAssignmentRequest
     {
     }
 }

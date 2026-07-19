@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class ListSqlIntegrationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sqlIntegrationsType = SqlIntegration::class;
-    protected $sqlIntegrationsDataType = 'array';
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class ListSqlIntegrationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sqlIntegrationsType = SqlIntegration::class;
+        protected $sqlIntegrationsDataType = 'array';
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of SQLIntegrations of a domain.
+         *
+         * @param SqlIntegration[] $sqlIntegrations
+         */
+        public function setSqlIntegrations($sqlIntegrations)
+        {
+        }
+        /**
+         * @return SqlIntegration[]
+         */
+        public function getSqlIntegrations()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListSqlIntegrationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of SQLIntegrations of a domain.
-     *
-     * @param SqlIntegration[] $sqlIntegrations
-     */
-    public function setSqlIntegrations($sqlIntegrations)
-    {
-    }
-    /**
-     * @return SqlIntegration[]
-     */
-    public function getSqlIntegrations()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_ListSqlIntegrationsResponse extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListSqlIntegrationsResponse
     {
     }
 }

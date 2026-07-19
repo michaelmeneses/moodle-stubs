@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class ReportMetadata extends \Google\Model
-{
-    /**
-     * Output only. The location of the generated report file in Google Cloud
-     * Storage. This field will be absent if status.state is not `DONE`.
-     *
-     * @var string
-     */
-    public $googleCloudStoragePath;
-    protected $reportDataEndDateType = Date::class;
-    protected $reportDataEndDateDataType = '';
-    protected $reportDataStartDateType = Date::class;
-    protected $reportDataStartDateDataType = '';
-    protected $statusType = ReportStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Output only. The location of the generated report file in Google Cloud
-     * Storage. This field will be absent if status.state is not `DONE`.
-     *
-     * @param string $googleCloudStoragePath
-     */
-    public function setGoogleCloudStoragePath($googleCloudStoragePath)
+namespace Google\Service\DoubleClickBidManager {
+    class ReportMetadata extends \Google\Model
     {
+        /**
+         * Output only. The location of the generated report file in Google Cloud
+         * Storage. This field will be absent if status.state is not `DONE`.
+         *
+         * @var string
+         */
+        public $googleCloudStoragePath;
+        protected $reportDataEndDateType = Date::class;
+        protected $reportDataEndDateDataType = '';
+        protected $reportDataStartDateType = Date::class;
+        protected $reportDataStartDateDataType = '';
+        protected $statusType = ReportStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Output only. The location of the generated report file in Google Cloud
+         * Storage. This field will be absent if status.state is not `DONE`.
+         *
+         * @param string $googleCloudStoragePath
+         */
+        public function setGoogleCloudStoragePath($googleCloudStoragePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleCloudStoragePath()
+        {
+        }
+        /**
+         * The end date of the report data date range.
+         *
+         * @param Date $reportDataEndDate
+         */
+        public function setReportDataEndDate(Date $reportDataEndDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReportDataEndDate()
+        {
+        }
+        /**
+         * The start date of the report data date range.
+         *
+         * @param Date $reportDataStartDate
+         */
+        public function setReportDataStartDate(Date $reportDataStartDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReportDataStartDate()
+        {
+        }
+        /**
+         * The status of the report.
+         *
+         * @param ReportStatus $status
+         */
+        public function setStatus(ReportStatus $status)
+        {
+        }
+        /**
+         * @return ReportStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\ReportMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleCloudStoragePath()
-    {
-    }
-    /**
-     * The end date of the report data date range.
-     *
-     * @param Date $reportDataEndDate
-     */
-    public function setReportDataEndDate(Date $reportDataEndDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReportDataEndDate()
-    {
-    }
-    /**
-     * The start date of the report data date range.
-     *
-     * @param Date $reportDataStartDate
-     */
-    public function setReportDataStartDate(Date $reportDataStartDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReportDataStartDate()
-    {
-    }
-    /**
-     * The status of the report.
-     *
-     * @param ReportStatus $status
-     */
-    public function setStatus(ReportStatus $status)
-    {
-    }
-    /**
-     * @return ReportStatus
-     */
-    public function getStatus()
+    class Google_Service_DoubleClickBidManager_ReportMetadata extends \Google\Service\DoubleClickBidManager\ReportMetadata
     {
     }
 }

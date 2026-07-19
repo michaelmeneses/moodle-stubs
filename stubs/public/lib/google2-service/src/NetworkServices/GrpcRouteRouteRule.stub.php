@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class GrpcRouteRouteRule extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $actionType = GrpcRouteRouteAction::class;
-    protected $actionDataType = '';
-    protected $matchesType = GrpcRouteRouteMatch::class;
-    protected $matchesDataType = 'array';
-    /**
-     * Required. A detailed rule defining how to route traffic. This field is
-     * required.
-     *
-     * @param GrpcRouteRouteAction $action
-     */
-    public function setAction(GrpcRouteRouteAction $action)
+namespace Google\Service\NetworkServices {
+    class GrpcRouteRouteRule extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $actionType = GrpcRouteRouteAction::class;
+        protected $actionDataType = '';
+        protected $matchesType = GrpcRouteRouteMatch::class;
+        protected $matchesDataType = 'array';
+        /**
+         * Required. A detailed rule defining how to route traffic. This field is
+         * required.
+         *
+         * @param GrpcRouteRouteAction $action
+         */
+        public function setAction(GrpcRouteRouteAction $action)
+        {
+        }
+        /**
+         * @return GrpcRouteRouteAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. Matches define conditions used for matching the rule against
+         * incoming gRPC requests. Each match is independent, i.e. this rule will be
+         * matched if ANY one of the matches is satisfied. If no matches field is
+         * specified, this rule will unconditionally match traffic.
+         *
+         * @param GrpcRouteRouteMatch[] $matches
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return GrpcRouteRouteMatch[]
+         */
+        public function getMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GrpcRouteRouteAction
+     * Runtime class alias of \Google\Service\NetworkServices\GrpcRouteRouteRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. Matches define conditions used for matching the rule against
-     * incoming gRPC requests. Each match is independent, i.e. this rule will be
-     * matched if ANY one of the matches is satisfied. If no matches field is
-     * specified, this rule will unconditionally match traffic.
-     *
-     * @param GrpcRouteRouteMatch[] $matches
-     */
-    public function setMatches($matches)
-    {
-    }
-    /**
-     * @return GrpcRouteRouteMatch[]
-     */
-    public function getMatches()
+    class Google_Service_NetworkServices_GrpcRouteRouteRule extends \Google\Service\NetworkServices\GrpcRouteRouteRule
     {
     }
 }

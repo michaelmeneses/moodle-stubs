@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $accounts = $adsensehostService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\Account;
+    use Google\Service\AdSenseHost\Accounts as AccountsModel;
     /**
-     * Get information about the selected associated AdSense account. (accounts.get)
-     *
-     * @param string $accountId Account to get information about.
-     * @param array $optParams Optional parameters.
-     * @return Account
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $accounts = $adsensehostService->accounts;
+     *  </code>
      */
-    public function get($accountId, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Get information about the selected associated AdSense account. (accounts.get)
+         *
+         * @param string $accountId Account to get information about.
+         * @param array $optParams Optional parameters.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $optParams = [])
+        {
+        }
+        /**
+         * List hosted accounts associated with this AdSense account by ad client id.
+         * (accounts.listAccounts)
+         *
+         * @param string|array $filterAdClientId Ad clients to list accounts for.
+         * @param array $optParams Optional parameters.
+         * @return AccountsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listAccounts($filterAdClientId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List hosted accounts associated with this AdSense account by ad client id.
-     * (accounts.listAccounts)
-     *
-     * @param string|array $filterAdClientId Ad clients to list accounts for.
-     * @param array $optParams Optional parameters.
-     * @return AccountsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccounts($filterAdClientId, $optParams = [])
+    class Google_Service_AdSenseHost_Resource_Accounts extends \Google\Service\AdSenseHost\Resource\Accounts
     {
     }
 }

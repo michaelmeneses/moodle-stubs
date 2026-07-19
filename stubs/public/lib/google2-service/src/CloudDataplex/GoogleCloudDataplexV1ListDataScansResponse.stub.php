@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListDataScansResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $dataScansType = GoogleCloudDataplexV1DataScan::class;
-    protected $dataScansDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * DataScans (BASIC view only) under the given parent location.
-     *
-     * @param GoogleCloudDataplexV1DataScan[] $dataScans
-     */
-    public function setDataScans($dataScans)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListDataScansResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $dataScansType = GoogleCloudDataplexV1DataScan::class;
+        protected $dataScansDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * DataScans (BASIC view only) under the given parent location.
+         *
+         * @param GoogleCloudDataplexV1DataScan[] $dataScans
+         */
+        public function setDataScans($dataScans)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataScan[]
+         */
+        public function getDataScans()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataScan[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataScansResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataScans()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListDataScansResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataScansResponse
     {
     }
 }

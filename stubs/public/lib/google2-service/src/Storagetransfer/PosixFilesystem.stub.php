@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class PosixFilesystem extends \Google\Model
-{
-    /**
-     * Root directory path to the filesystem.
-     *
-     * @var string
-     */
-    public $rootDirectory;
-    /**
-     * Root directory path to the filesystem.
-     *
-     * @param string $rootDirectory
-     */
-    public function setRootDirectory($rootDirectory)
+namespace Google\Service\Storagetransfer {
+    class PosixFilesystem extends \Google\Model
     {
+        /**
+         * Root directory path to the filesystem.
+         *
+         * @var string
+         */
+        public $rootDirectory;
+        /**
+         * Root directory path to the filesystem.
+         *
+         * @param string $rootDirectory
+         */
+        public function setRootDirectory($rootDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRootDirectory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\PosixFilesystem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRootDirectory()
+    class Google_Service_Storagetransfer_PosixFilesystem extends \Google\Service\Storagetransfer\PosixFilesystem
     {
     }
 }

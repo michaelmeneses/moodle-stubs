@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ContactInfo extends \Google\Model
-{
-    /**
-     * Optional. Contact's name. Can have a maximum length of 63 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. Email address of the contacts.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Optional. Contact's name. Can have a maximum length of 63 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AppHub {
+    class ContactInfo extends \Google\Model
     {
+        /**
+         * Optional. Contact's name. Can have a maximum length of 63 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. Email address of the contacts.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Optional. Contact's name. Can have a maximum length of 63 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. Email address of the contacts.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\ContactInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. Email address of the contacts.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_AppHub_ContactInfo extends \Google\Service\AppHub\ContactInfo
     {
     }
 }

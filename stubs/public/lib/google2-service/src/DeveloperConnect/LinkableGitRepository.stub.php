@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class LinkableGitRepository extends \Google\Model
-{
-    /**
-     * The clone uri of the repository.
-     *
-     * @var string
-     */
-    public $cloneUri;
-    /**
-     * The clone uri of the repository.
-     *
-     * @param string $cloneUri
-     */
-    public function setCloneUri($cloneUri)
+namespace Google\Service\DeveloperConnect {
+    class LinkableGitRepository extends \Google\Model
     {
+        /**
+         * The clone uri of the repository.
+         *
+         * @var string
+         */
+        public $cloneUri;
+        /**
+         * The clone uri of the repository.
+         *
+         * @param string $cloneUri
+         */
+        public function setCloneUri($cloneUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloneUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\LinkableGitRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloneUri()
+    class Google_Service_DeveloperConnect_LinkableGitRepository extends \Google\Service\DeveloperConnect\LinkableGitRepository
     {
     }
 }

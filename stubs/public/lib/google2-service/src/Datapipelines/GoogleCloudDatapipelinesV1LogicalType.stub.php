@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1LogicalType extends \Google\Model
-{
-    protected $enumerationTypeType = GoogleCloudDatapipelinesV1LogicalTypeEnumerationType::class;
-    protected $enumerationTypeDataType = '';
-    protected $fixedBytesType = GoogleCloudDatapipelinesV1LogicalTypeFixedBytes::class;
-    protected $fixedBytesDataType = '';
-    /**
-     * @param GoogleCloudDatapipelinesV1LogicalTypeEnumerationType
-     */
-    public function setEnumerationType(GoogleCloudDatapipelinesV1LogicalTypeEnumerationType $enumerationType)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1LogicalType extends \Google\Model
     {
+        protected $enumerationTypeType = GoogleCloudDatapipelinesV1LogicalTypeEnumerationType::class;
+        protected $enumerationTypeDataType = '';
+        protected $fixedBytesType = GoogleCloudDatapipelinesV1LogicalTypeFixedBytes::class;
+        protected $fixedBytesDataType = '';
+        /**
+         * @param GoogleCloudDatapipelinesV1LogicalTypeEnumerationType
+         */
+        public function setEnumerationType(GoogleCloudDatapipelinesV1LogicalTypeEnumerationType $enumerationType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LogicalTypeEnumerationType
+         */
+        public function getEnumerationType()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1LogicalTypeFixedBytes
+         */
+        public function setFixedBytes(GoogleCloudDatapipelinesV1LogicalTypeFixedBytes $fixedBytes)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LogicalTypeFixedBytes
+         */
+        public function getFixedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1LogicalTypeEnumerationType
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LogicalType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnumerationType()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1LogicalTypeFixedBytes
-     */
-    public function setFixedBytes(GoogleCloudDatapipelinesV1LogicalTypeFixedBytes $fixedBytes)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1LogicalTypeFixedBytes
-     */
-    public function getFixedBytes()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1LogicalType extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LogicalType
     {
     }
 }

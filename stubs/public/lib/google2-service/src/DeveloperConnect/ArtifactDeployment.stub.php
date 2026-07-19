@@ -21,159 +21,168 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class ArtifactDeployment extends \Google\Collection
-{
-    protected $collection_key = 'sourceCommitUris';
-    /**
-     * Output only. The artifact alias in the deployment spec, with Tag/SHA. e.g.
-     * us-docker.pkg.dev/my-project/my-repo/image:1.0.0
-     *
-     * @var string
-     */
-    public $artifactAlias;
-    /**
-     * Output only. The artifact that is deployed.
-     *
-     * @var string
-     */
-    public $artifactReference;
-    /**
-     * Output only. The summary of container status of the artifact deployment.
-     * Format as `ContainerStatusState-Reason : restartCount` e.g. "Waiting-
-     * ImagePullBackOff : 3"
-     *
-     * @var string
-     */
-    public $containerStatusSummary;
-    /**
-     * Output only. The time at which the deployment was deployed.
-     *
-     * @var string
-     */
-    public $deployTime;
-    /**
-     * Output only. Unique identifier of `ArtifactDeployment`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. The source commits at which this artifact was built. Extracted
-     * from provenance.
-     *
-     * @var string[]
-     */
-    public $sourceCommitUris;
-    /**
-     * Output only. The time at which the deployment was undeployed, all artifacts
-     * are considered undeployed once this time is set.
-     *
-     * @var string
-     */
-    public $undeployTime;
-    /**
-     * Output only. The artifact alias in the deployment spec, with Tag/SHA. e.g.
-     * us-docker.pkg.dev/my-project/my-repo/image:1.0.0
-     *
-     * @param string $artifactAlias
-     */
-    public function setArtifactAlias($artifactAlias)
+namespace Google\Service\DeveloperConnect {
+    class ArtifactDeployment extends \Google\Collection
     {
+        protected $collection_key = 'sourceCommitUris';
+        /**
+         * Output only. The artifact alias in the deployment spec, with Tag/SHA. e.g.
+         * us-docker.pkg.dev/my-project/my-repo/image:1.0.0
+         *
+         * @var string
+         */
+        public $artifactAlias;
+        /**
+         * Output only. The artifact that is deployed.
+         *
+         * @var string
+         */
+        public $artifactReference;
+        /**
+         * Output only. The summary of container status of the artifact deployment.
+         * Format as `ContainerStatusState-Reason : restartCount` e.g. "Waiting-
+         * ImagePullBackOff : 3"
+         *
+         * @var string
+         */
+        public $containerStatusSummary;
+        /**
+         * Output only. The time at which the deployment was deployed.
+         *
+         * @var string
+         */
+        public $deployTime;
+        /**
+         * Output only. Unique identifier of `ArtifactDeployment`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. The source commits at which this artifact was built. Extracted
+         * from provenance.
+         *
+         * @var string[]
+         */
+        public $sourceCommitUris;
+        /**
+         * Output only. The time at which the deployment was undeployed, all artifacts
+         * are considered undeployed once this time is set.
+         *
+         * @var string
+         */
+        public $undeployTime;
+        /**
+         * Output only. The artifact alias in the deployment spec, with Tag/SHA. e.g.
+         * us-docker.pkg.dev/my-project/my-repo/image:1.0.0
+         *
+         * @param string $artifactAlias
+         */
+        public function setArtifactAlias($artifactAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactAlias()
+        {
+        }
+        /**
+         * Output only. The artifact that is deployed.
+         *
+         * @param string $artifactReference
+         */
+        public function setArtifactReference($artifactReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactReference()
+        {
+        }
+        /**
+         * Output only. The summary of container status of the artifact deployment.
+         * Format as `ContainerStatusState-Reason : restartCount` e.g. "Waiting-
+         * ImagePullBackOff : 3"
+         *
+         * @param string $containerStatusSummary
+         */
+        public function setContainerStatusSummary($containerStatusSummary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerStatusSummary()
+        {
+        }
+        /**
+         * Output only. The time at which the deployment was deployed.
+         *
+         * @param string $deployTime
+         */
+        public function setDeployTime($deployTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployTime()
+        {
+        }
+        /**
+         * Output only. Unique identifier of `ArtifactDeployment`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. The source commits at which this artifact was built. Extracted
+         * from provenance.
+         *
+         * @param string[] $sourceCommitUris
+         */
+        public function setSourceCommitUris($sourceCommitUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceCommitUris()
+        {
+        }
+        /**
+         * Output only. The time at which the deployment was undeployed, all artifacts
+         * are considered undeployed once this time is set.
+         *
+         * @param string $undeployTime
+         */
+        public function setUndeployTime($undeployTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUndeployTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\ArtifactDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactAlias()
-    {
-    }
-    /**
-     * Output only. The artifact that is deployed.
-     *
-     * @param string $artifactReference
-     */
-    public function setArtifactReference($artifactReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getArtifactReference()
-    {
-    }
-    /**
-     * Output only. The summary of container status of the artifact deployment.
-     * Format as `ContainerStatusState-Reason : restartCount` e.g. "Waiting-
-     * ImagePullBackOff : 3"
-     *
-     * @param string $containerStatusSummary
-     */
-    public function setContainerStatusSummary($containerStatusSummary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerStatusSummary()
-    {
-    }
-    /**
-     * Output only. The time at which the deployment was deployed.
-     *
-     * @param string $deployTime
-     */
-    public function setDeployTime($deployTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeployTime()
-    {
-    }
-    /**
-     * Output only. Unique identifier of `ArtifactDeployment`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. The source commits at which this artifact was built. Extracted
-     * from provenance.
-     *
-     * @param string[] $sourceCommitUris
-     */
-    public function setSourceCommitUris($sourceCommitUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceCommitUris()
-    {
-    }
-    /**
-     * Output only. The time at which the deployment was undeployed, all artifacts
-     * are considered undeployed once this time is set.
-     *
-     * @param string $undeployTime
-     */
-    public function setUndeployTime($undeployTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUndeployTime()
+    class Google_Service_DeveloperConnect_ArtifactDeployment extends \Google\Service\DeveloperConnect\ArtifactDeployment
     {
     }
 }

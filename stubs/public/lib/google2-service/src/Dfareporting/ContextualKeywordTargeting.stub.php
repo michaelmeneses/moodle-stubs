@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ContextualKeywordTargeting extends \Google\Collection
-{
-    protected $collection_key = 'keywords';
-    protected $keywordsType = ContextualKeyword::class;
-    protected $keywordsDataType = 'array';
-    /**
-     * Contextual keywords that this ad targets
-     *
-     * @param ContextualKeyword[] $keywords
-     */
-    public function setKeywords($keywords)
+namespace Google\Service\Dfareporting {
+    class ContextualKeywordTargeting extends \Google\Collection
     {
+        protected $collection_key = 'keywords';
+        protected $keywordsType = ContextualKeyword::class;
+        protected $keywordsDataType = 'array';
+        /**
+         * Contextual keywords that this ad targets
+         *
+         * @param ContextualKeyword[] $keywords
+         */
+        public function setKeywords($keywords)
+        {
+        }
+        /**
+         * @return ContextualKeyword[]
+         */
+        public function getKeywords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContextualKeyword[]
+     * Runtime class alias of \Google\Service\Dfareporting\ContextualKeywordTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeywords()
+    class Google_Service_Dfareporting_ContextualKeywordTargeting extends \Google\Service\Dfareporting\ContextualKeywordTargeting
     {
     }
 }

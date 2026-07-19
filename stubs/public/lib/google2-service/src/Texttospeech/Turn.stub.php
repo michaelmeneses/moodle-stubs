@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class Turn extends \Google\Model
-{
-    /**
-     * Required. The speaker of the turn, for example, 'O' or 'Q'. Please refer to
-     * documentation for available speakers.
-     *
-     * @var string
-     */
-    public $speaker;
-    /**
-     * Required. The text to speak.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Required. The speaker of the turn, for example, 'O' or 'Q'. Please refer to
-     * documentation for available speakers.
-     *
-     * @param string $speaker
-     */
-    public function setSpeaker($speaker)
+namespace Google\Service\Texttospeech {
+    class Turn extends \Google\Model
     {
+        /**
+         * Required. The speaker of the turn, for example, 'O' or 'Q'. Please refer to
+         * documentation for available speakers.
+         *
+         * @var string
+         */
+        public $speaker;
+        /**
+         * Required. The text to speak.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Required. The speaker of the turn, for example, 'O' or 'Q'. Please refer to
+         * documentation for available speakers.
+         *
+         * @param string $speaker
+         */
+        public function setSpeaker($speaker)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeaker()
+        {
+        }
+        /**
+         * Required. The text to speak.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\Turn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeaker()
-    {
-    }
-    /**
-     * Required. The text to speak.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Texttospeech_Turn extends \Google\Service\Texttospeech\Turn
     {
     }
 }

@@ -21,325 +21,334 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2OperationMetadata extends \Google\Collection
-{
-    /**
-     * Unspecified
-     */
-    public const OPERATION_TYPE_OPERATIONTYPE_UNSPECIFIED = 'OPERATIONTYPE_UNSPECIFIED';
-    /**
-     * CreateFunction
-     */
-    public const OPERATION_TYPE_CREATE_FUNCTION = 'CREATE_FUNCTION';
-    /**
-     * UpdateFunction
-     */
-    public const OPERATION_TYPE_UPDATE_FUNCTION = 'UPDATE_FUNCTION';
-    /**
-     * DeleteFunction
-     */
-    public const OPERATION_TYPE_DELETE_FUNCTION = 'DELETE_FUNCTION';
-    /**
-     * RedirectFunctionUpgradeTraffic
-     */
-    public const OPERATION_TYPE_REDIRECT_FUNCTION_UPGRADE_TRAFFIC = 'REDIRECT_FUNCTION_UPGRADE_TRAFFIC';
-    /**
-     * RollbackFunctionUpgradeTraffic
-     */
-    public const OPERATION_TYPE_ROLLBACK_FUNCTION_UPGRADE_TRAFFIC = 'ROLLBACK_FUNCTION_UPGRADE_TRAFFIC';
-    /**
-     * SetupFunctionUpgradeConfig
-     */
-    public const OPERATION_TYPE_SETUP_FUNCTION_UPGRADE_CONFIG = 'SETUP_FUNCTION_UPGRADE_CONFIG';
-    /**
-     * AbortFunctionUpgrade
-     */
-    public const OPERATION_TYPE_ABORT_FUNCTION_UPGRADE = 'ABORT_FUNCTION_UPGRADE';
-    /**
-     * CommitFunctionUpgrade
-     */
-    public const OPERATION_TYPE_COMMIT_FUNCTION_UPGRADE = 'COMMIT_FUNCTION_UPGRADE';
-    /**
-     * DetachFunction
-     */
-    public const OPERATION_TYPE_DETACH_FUNCTION = 'DETACH_FUNCTION';
-    /**
-     * CommitFunctionUpgradeAsGen2
-     */
-    public const OPERATION_TYPE_COMMIT_FUNCTION_UPGRADE_AS_GEN2 = 'COMMIT_FUNCTION_UPGRADE_AS_GEN2';
-    protected $collection_key = 'stages';
-    /**
-     * API version used to start the operation.
-     *
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * The build name of the function for create and update operations.
-     *
-     * @var string
-     */
-    public $buildName;
-    /**
-     * Identifies whether the user has requested cancellation of the operation.
-     * Operations that have successfully been cancelled have
-     * google.longrunning.Operation.error value with a google.rpc.Status.code of
-     * 1, corresponding to `Code.CANCELLED`.
-     *
-     * @var bool
-     */
-    public $cancelRequested;
-    /**
-     * The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Whether a custom IAM role binding was detected during the
-     * upgrade.
-     *
-     * @var bool
-     */
-    public $customIamRoleDetected;
-    /**
-     * The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The operation type.
-     *
-     * @var string
-     */
-    public $operationType;
-    /**
-     * The original request that started the operation.
-     *
-     * @var array[]
-     */
-    public $requestResource;
-    /**
-     * An identifier for Firebase function sources. Disclaimer: This field is only
-     * supported for Firebase function deployments.
-     *
-     * @var string
-     */
-    public $sourceToken;
-    protected $stagesType = GoogleCloudFunctionsV2Stage::class;
-    protected $stagesDataType = 'array';
-    /**
-     * Human-readable status of the operation, if any.
-     *
-     * @var string
-     */
-    public $statusDetail;
-    /**
-     * Server-defined resource path for the target of the operation.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @var string
-     */
-    public $verb;
-    /**
-     * API version used to start the operation.
-     *
-     * @param string $apiVersion
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2OperationMetadata extends \Google\Collection
     {
+        /**
+         * Unspecified
+         */
+        public const OPERATION_TYPE_OPERATIONTYPE_UNSPECIFIED = 'OPERATIONTYPE_UNSPECIFIED';
+        /**
+         * CreateFunction
+         */
+        public const OPERATION_TYPE_CREATE_FUNCTION = 'CREATE_FUNCTION';
+        /**
+         * UpdateFunction
+         */
+        public const OPERATION_TYPE_UPDATE_FUNCTION = 'UPDATE_FUNCTION';
+        /**
+         * DeleteFunction
+         */
+        public const OPERATION_TYPE_DELETE_FUNCTION = 'DELETE_FUNCTION';
+        /**
+         * RedirectFunctionUpgradeTraffic
+         */
+        public const OPERATION_TYPE_REDIRECT_FUNCTION_UPGRADE_TRAFFIC = 'REDIRECT_FUNCTION_UPGRADE_TRAFFIC';
+        /**
+         * RollbackFunctionUpgradeTraffic
+         */
+        public const OPERATION_TYPE_ROLLBACK_FUNCTION_UPGRADE_TRAFFIC = 'ROLLBACK_FUNCTION_UPGRADE_TRAFFIC';
+        /**
+         * SetupFunctionUpgradeConfig
+         */
+        public const OPERATION_TYPE_SETUP_FUNCTION_UPGRADE_CONFIG = 'SETUP_FUNCTION_UPGRADE_CONFIG';
+        /**
+         * AbortFunctionUpgrade
+         */
+        public const OPERATION_TYPE_ABORT_FUNCTION_UPGRADE = 'ABORT_FUNCTION_UPGRADE';
+        /**
+         * CommitFunctionUpgrade
+         */
+        public const OPERATION_TYPE_COMMIT_FUNCTION_UPGRADE = 'COMMIT_FUNCTION_UPGRADE';
+        /**
+         * DetachFunction
+         */
+        public const OPERATION_TYPE_DETACH_FUNCTION = 'DETACH_FUNCTION';
+        /**
+         * CommitFunctionUpgradeAsGen2
+         */
+        public const OPERATION_TYPE_COMMIT_FUNCTION_UPGRADE_AS_GEN2 = 'COMMIT_FUNCTION_UPGRADE_AS_GEN2';
+        protected $collection_key = 'stages';
+        /**
+         * API version used to start the operation.
+         *
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * The build name of the function for create and update operations.
+         *
+         * @var string
+         */
+        public $buildName;
+        /**
+         * Identifies whether the user has requested cancellation of the operation.
+         * Operations that have successfully been cancelled have
+         * google.longrunning.Operation.error value with a google.rpc.Status.code of
+         * 1, corresponding to `Code.CANCELLED`.
+         *
+         * @var bool
+         */
+        public $cancelRequested;
+        /**
+         * The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Whether a custom IAM role binding was detected during the
+         * upgrade.
+         *
+         * @var bool
+         */
+        public $customIamRoleDetected;
+        /**
+         * The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The operation type.
+         *
+         * @var string
+         */
+        public $operationType;
+        /**
+         * The original request that started the operation.
+         *
+         * @var array[]
+         */
+        public $requestResource;
+        /**
+         * An identifier for Firebase function sources. Disclaimer: This field is only
+         * supported for Firebase function deployments.
+         *
+         * @var string
+         */
+        public $sourceToken;
+        protected $stagesType = GoogleCloudFunctionsV2Stage::class;
+        protected $stagesDataType = 'array';
+        /**
+         * Human-readable status of the operation, if any.
+         *
+         * @var string
+         */
+        public $statusDetail;
+        /**
+         * Server-defined resource path for the target of the operation.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @var string
+         */
+        public $verb;
+        /**
+         * API version used to start the operation.
+         *
+         * @param string $apiVersion
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * The build name of the function for create and update operations.
+         *
+         * @param string $buildName
+         */
+        public function setBuildName($buildName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildName()
+        {
+        }
+        /**
+         * Identifies whether the user has requested cancellation of the operation.
+         * Operations that have successfully been cancelled have
+         * google.longrunning.Operation.error value with a google.rpc.Status.code of
+         * 1, corresponding to `Code.CANCELLED`.
+         *
+         * @param bool $cancelRequested
+         */
+        public function setCancelRequested($cancelRequested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCancelRequested()
+        {
+        }
+        /**
+         * The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Whether a custom IAM role binding was detected during the
+         * upgrade.
+         *
+         * @param bool $customIamRoleDetected
+         */
+        public function setCustomIamRoleDetected($customIamRoleDetected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCustomIamRoleDetected()
+        {
+        }
+        /**
+         * The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The operation type.
+         *
+         * Accepted values: OPERATIONTYPE_UNSPECIFIED, CREATE_FUNCTION,
+         * UPDATE_FUNCTION, DELETE_FUNCTION, REDIRECT_FUNCTION_UPGRADE_TRAFFIC,
+         * ROLLBACK_FUNCTION_UPGRADE_TRAFFIC, SETUP_FUNCTION_UPGRADE_CONFIG,
+         * ABORT_FUNCTION_UPGRADE, COMMIT_FUNCTION_UPGRADE, DETACH_FUNCTION,
+         * COMMIT_FUNCTION_UPGRADE_AS_GEN2
+         *
+         * @param self::OPERATION_TYPE_* $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return self::OPERATION_TYPE_*
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * The original request that started the operation.
+         *
+         * @param array[] $requestResource
+         */
+        public function setRequestResource($requestResource)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRequestResource()
+        {
+        }
+        /**
+         * An identifier for Firebase function sources. Disclaimer: This field is only
+         * supported for Firebase function deployments.
+         *
+         * @param string $sourceToken
+         */
+        public function setSourceToken($sourceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceToken()
+        {
+        }
+        /**
+         * Mechanism for reporting in-progress stages
+         *
+         * @param GoogleCloudFunctionsV2Stage[] $stages
+         */
+        public function setStages($stages)
+        {
+        }
+        /**
+         * @return GoogleCloudFunctionsV2Stage[]
+         */
+        public function getStages()
+        {
+        }
+        /**
+         * Human-readable status of the operation, if any.
+         *
+         * @param string $statusDetail
+         */
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusDetail()
+        {
+        }
+        /**
+         * Server-defined resource path for the target of the operation.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @param string $verb
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * The build name of the function for create and update operations.
-     *
-     * @param string $buildName
-     */
-    public function setBuildName($buildName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildName()
-    {
-    }
-    /**
-     * Identifies whether the user has requested cancellation of the operation.
-     * Operations that have successfully been cancelled have
-     * google.longrunning.Operation.error value with a google.rpc.Status.code of
-     * 1, corresponding to `Code.CANCELLED`.
-     *
-     * @param bool $cancelRequested
-     */
-    public function setCancelRequested($cancelRequested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCancelRequested()
-    {
-    }
-    /**
-     * The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Whether a custom IAM role binding was detected during the
-     * upgrade.
-     *
-     * @param bool $customIamRoleDetected
-     */
-    public function setCustomIamRoleDetected($customIamRoleDetected)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCustomIamRoleDetected()
-    {
-    }
-    /**
-     * The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The operation type.
-     *
-     * Accepted values: OPERATIONTYPE_UNSPECIFIED, CREATE_FUNCTION,
-     * UPDATE_FUNCTION, DELETE_FUNCTION, REDIRECT_FUNCTION_UPGRADE_TRAFFIC,
-     * ROLLBACK_FUNCTION_UPGRADE_TRAFFIC, SETUP_FUNCTION_UPGRADE_CONFIG,
-     * ABORT_FUNCTION_UPGRADE, COMMIT_FUNCTION_UPGRADE, DETACH_FUNCTION,
-     * COMMIT_FUNCTION_UPGRADE_AS_GEN2
-     *
-     * @param self::OPERATION_TYPE_* $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return self::OPERATION_TYPE_*
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * The original request that started the operation.
-     *
-     * @param array[] $requestResource
-     */
-    public function setRequestResource($requestResource)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRequestResource()
-    {
-    }
-    /**
-     * An identifier for Firebase function sources. Disclaimer: This field is only
-     * supported for Firebase function deployments.
-     *
-     * @param string $sourceToken
-     */
-    public function setSourceToken($sourceToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceToken()
-    {
-    }
-    /**
-     * Mechanism for reporting in-progress stages
-     *
-     * @param GoogleCloudFunctionsV2Stage[] $stages
-     */
-    public function setStages($stages)
-    {
-    }
-    /**
-     * @return GoogleCloudFunctionsV2Stage[]
-     */
-    public function getStages()
-    {
-    }
-    /**
-     * Human-readable status of the operation, if any.
-     *
-     * @param string $statusDetail
-     */
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusDetail()
-    {
-    }
-    /**
-     * Server-defined resource path for the target of the operation.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @param string $verb
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2OperationMetadata extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2OperationMetadata
     {
     }
 }

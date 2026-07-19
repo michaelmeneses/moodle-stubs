@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $constraintDuration;
-    protected $filterExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
-    protected $filterExpressionDataType = '';
-    /**
-     * @var bool
-     */
-    public $immediatelyFollows;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @param string
-     */
-    public function setConstraintDuration($constraintDuration)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $constraintDuration;
+        protected $filterExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
+        protected $filterExpressionDataType = '';
+        /**
+         * @var bool
+         */
+        public $immediatelyFollows;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @param string
+         */
+        public function setConstraintDuration($constraintDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConstraintDuration()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function setFilterExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $filterExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function getFilterExpression()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setImmediatelyFollows($immediatelyFollows)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImmediatelyFollows()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraintDuration()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function setFilterExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $filterExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function getFilterExpression()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setImmediatelyFollows($immediatelyFollows)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImmediatelyFollows()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep
     {
     }
 }

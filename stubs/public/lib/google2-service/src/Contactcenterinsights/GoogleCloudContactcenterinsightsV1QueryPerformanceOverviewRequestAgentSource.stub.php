@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequestAgentSource extends \Google\Model
-{
-    /**
-     * Required. Agent id to query performance overview for.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * Required. Agent id to query performance overview for.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequestAgentSource extends \Google\Model
     {
+        /**
+         * Required. Agent id to query performance overview for.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * Required. Agent id to query performance overview for.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequestAgentSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequestAgentSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewRequestAgentSource
     {
     }
 }

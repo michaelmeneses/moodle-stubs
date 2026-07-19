@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DumpItem extends \Google\Model
-{
-    protected $taggedEntryType = GoogleCloudDatacatalogV1TaggedEntry::class;
-    protected $taggedEntryDataType = '';
-    /**
-     * Entry and its tags.
-     *
-     * @param GoogleCloudDatacatalogV1TaggedEntry $taggedEntry
-     */
-    public function setTaggedEntry(GoogleCloudDatacatalogV1TaggedEntry $taggedEntry)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DumpItem extends \Google\Model
     {
+        protected $taggedEntryType = GoogleCloudDatacatalogV1TaggedEntry::class;
+        protected $taggedEntryDataType = '';
+        /**
+         * Entry and its tags.
+         *
+         * @param GoogleCloudDatacatalogV1TaggedEntry $taggedEntry
+         */
+        public function setTaggedEntry(GoogleCloudDatacatalogV1TaggedEntry $taggedEntry)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1TaggedEntry
+         */
+        public function getTaggedEntry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1TaggedEntry
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DumpItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaggedEntry()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DumpItem extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DumpItem
     {
     }
 }

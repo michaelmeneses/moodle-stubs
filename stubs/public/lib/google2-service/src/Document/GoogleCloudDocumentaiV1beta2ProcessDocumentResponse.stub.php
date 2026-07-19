@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2ProcessDocumentResponse extends \Google\Model
-{
-    protected $inputConfigType = GoogleCloudDocumentaiV1beta2InputConfig::class;
-    protected $inputConfigDataType = '';
-    protected $outputConfigType = GoogleCloudDocumentaiV1beta2OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2InputConfig
-     */
-    public function setInputConfig(GoogleCloudDocumentaiV1beta2InputConfig $inputConfig)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2ProcessDocumentResponse extends \Google\Model
     {
+        protected $inputConfigType = GoogleCloudDocumentaiV1beta2InputConfig::class;
+        protected $inputConfigDataType = '';
+        protected $outputConfigType = GoogleCloudDocumentaiV1beta2OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2InputConfig
+         */
+        public function setInputConfig(GoogleCloudDocumentaiV1beta2InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2OutputConfig
+         */
+        public function setOutputConfig(GoogleCloudDocumentaiV1beta2OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2InputConfig
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2ProcessDocumentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2OutputConfig
-     */
-    public function setOutputConfig(GoogleCloudDocumentaiV1beta2OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2OutputConfig
-     */
-    public function getOutputConfig()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2ProcessDocumentResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2ProcessDocumentResponse
     {
     }
 }

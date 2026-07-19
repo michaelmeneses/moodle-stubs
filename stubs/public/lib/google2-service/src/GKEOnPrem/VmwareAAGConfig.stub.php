@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAAGConfig extends \Google\Model
-{
-    /**
-     * Spread nodes across at least three physical hosts (requires at least three
-     * hosts). Enabled by default.
-     *
-     * @var bool
-     */
-    public $aagConfigDisabled;
-    /**
-     * Spread nodes across at least three physical hosts (requires at least three
-     * hosts). Enabled by default.
-     *
-     * @param bool $aagConfigDisabled
-     */
-    public function setAagConfigDisabled($aagConfigDisabled)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAAGConfig extends \Google\Model
     {
+        /**
+         * Spread nodes across at least three physical hosts (requires at least three
+         * hosts). Enabled by default.
+         *
+         * @var bool
+         */
+        public $aagConfigDisabled;
+        /**
+         * Spread nodes across at least three physical hosts (requires at least three
+         * hosts). Enabled by default.
+         *
+         * @param bool $aagConfigDisabled
+         */
+        public function setAagConfigDisabled($aagConfigDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAagConfigDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAAGConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAagConfigDisabled()
+    class Google_Service_GKEOnPrem_VmwareAAGConfig extends \Google\Service\GKEOnPrem\VmwareAAGConfig
     {
     }
 }

@@ -21,354 +21,363 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyCreateAuthUriRequest extends \Google\Model
-{
-    /**
-     * The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android,
-     * BUNDLE_ID for iOS.
-     *
-     * @var string
-     */
-    public $appId;
-    /**
-     * Explicitly specify the auth flow type. Currently only support "CODE_FLOW"
-     * type. The field is only used for Google provider.
-     *
-     * @var string
-     */
-    public $authFlowType;
-    /**
-     * The relying party OAuth client ID.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * The opaque value used by the client to maintain context info between the
-     * authentication request and the IDP callback.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * The URI to which the IDP redirects the user after the federated login flow.
-     *
-     * @var string
-     */
-    public $continueUri;
-    /**
-     * The query parameter that client can customize by themselves in auth url.
-     * The following parameters are reserved for server so that they cannot be
-     * customized by clients: client_id, response_type, scope, redirect_uri,
-     * state, oauth_token.
-     *
-     * @var string[]
-     */
-    public $customParameter;
-    /**
-     * The hosted domain to restrict sign-in to accounts at that domain for Google
-     * Apps hosted accounts.
-     *
-     * @var string
-     */
-    public $hostedDomain;
-    /**
-     * The email or federated ID of the user.
-     *
-     * @var string
-     */
-    public $identifier;
-    /**
-     * The developer's consumer key for OpenId OAuth Extension
-     *
-     * @var string
-     */
-    public $oauthConsumerKey;
-    /**
-     * Additional oauth scopes, beyond the basid user profile, that the user would
-     * be prompted to grant
-     *
-     * @var string
-     */
-    public $oauthScope;
-    /**
-     * Optional realm for OpenID protocol. The sub string "scheme://domain:port"
-     * of the param "continueUri" is used if this is not set.
-     *
-     * @var string
-     */
-    public $openidRealm;
-    /**
-     * The native app package for OTA installation.
-     *
-     * @var string
-     */
-    public $otaApp;
-    /**
-     * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com,
-     * aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP
-     * identifier.
-     *
-     * @var string
-     */
-    public $providerId;
-    /**
-     * The session_id passed by client.
-     *
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * For multi-tenant use cases, in order to construct sign-in URL with the
-     * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
-     * configs from.
-     *
-     * @var string
-     */
-    public $tenantId;
-    /**
-     * Tenant project number to be used for idp discovery.
-     *
-     * @var string
-     */
-    public $tenantProjectNumber;
-    /**
-     * The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android,
-     * BUNDLE_ID for iOS.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyCreateAuthUriRequest extends \Google\Model
     {
+        /**
+         * The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android,
+         * BUNDLE_ID for iOS.
+         *
+         * @var string
+         */
+        public $appId;
+        /**
+         * Explicitly specify the auth flow type. Currently only support "CODE_FLOW"
+         * type. The field is only used for Google provider.
+         *
+         * @var string
+         */
+        public $authFlowType;
+        /**
+         * The relying party OAuth client ID.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * The opaque value used by the client to maintain context info between the
+         * authentication request and the IDP callback.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * The URI to which the IDP redirects the user after the federated login flow.
+         *
+         * @var string
+         */
+        public $continueUri;
+        /**
+         * The query parameter that client can customize by themselves in auth url.
+         * The following parameters are reserved for server so that they cannot be
+         * customized by clients: client_id, response_type, scope, redirect_uri,
+         * state, oauth_token.
+         *
+         * @var string[]
+         */
+        public $customParameter;
+        /**
+         * The hosted domain to restrict sign-in to accounts at that domain for Google
+         * Apps hosted accounts.
+         *
+         * @var string
+         */
+        public $hostedDomain;
+        /**
+         * The email or federated ID of the user.
+         *
+         * @var string
+         */
+        public $identifier;
+        /**
+         * The developer's consumer key for OpenId OAuth Extension
+         *
+         * @var string
+         */
+        public $oauthConsumerKey;
+        /**
+         * Additional oauth scopes, beyond the basid user profile, that the user would
+         * be prompted to grant
+         *
+         * @var string
+         */
+        public $oauthScope;
+        /**
+         * Optional realm for OpenID protocol. The sub string "scheme://domain:port"
+         * of the param "continueUri" is used if this is not set.
+         *
+         * @var string
+         */
+        public $openidRealm;
+        /**
+         * The native app package for OTA installation.
+         *
+         * @var string
+         */
+        public $otaApp;
+        /**
+         * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com,
+         * aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP
+         * identifier.
+         *
+         * @var string
+         */
+        public $providerId;
+        /**
+         * The session_id passed by client.
+         *
+         * @var string
+         */
+        public $sessionId;
+        /**
+         * For multi-tenant use cases, in order to construct sign-in URL with the
+         * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
+         * configs from.
+         *
+         * @var string
+         */
+        public $tenantId;
+        /**
+         * Tenant project number to be used for idp discovery.
+         *
+         * @var string
+         */
+        public $tenantProjectNumber;
+        /**
+         * The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android,
+         * BUNDLE_ID for iOS.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * Explicitly specify the auth flow type. Currently only support "CODE_FLOW"
+         * type. The field is only used for Google provider.
+         *
+         * @param string $authFlowType
+         */
+        public function setAuthFlowType($authFlowType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthFlowType()
+        {
+        }
+        /**
+         * The relying party OAuth client ID.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * The opaque value used by the client to maintain context info between the
+         * authentication request and the IDP callback.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * The URI to which the IDP redirects the user after the federated login flow.
+         *
+         * @param string $continueUri
+         */
+        public function setContinueUri($continueUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContinueUri()
+        {
+        }
+        /**
+         * The query parameter that client can customize by themselves in auth url.
+         * The following parameters are reserved for server so that they cannot be
+         * customized by clients: client_id, response_type, scope, redirect_uri,
+         * state, oauth_token.
+         *
+         * @param string[] $customParameter
+         */
+        public function setCustomParameter($customParameter)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomParameter()
+        {
+        }
+        /**
+         * The hosted domain to restrict sign-in to accounts at that domain for Google
+         * Apps hosted accounts.
+         *
+         * @param string $hostedDomain
+         */
+        public function setHostedDomain($hostedDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostedDomain()
+        {
+        }
+        /**
+         * The email or federated ID of the user.
+         *
+         * @param string $identifier
+         */
+        public function setIdentifier($identifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentifier()
+        {
+        }
+        /**
+         * The developer's consumer key for OpenId OAuth Extension
+         *
+         * @param string $oauthConsumerKey
+         */
+        public function setOauthConsumerKey($oauthConsumerKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthConsumerKey()
+        {
+        }
+        /**
+         * Additional oauth scopes, beyond the basid user profile, that the user would
+         * be prompted to grant
+         *
+         * @param string $oauthScope
+         */
+        public function setOauthScope($oauthScope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthScope()
+        {
+        }
+        /**
+         * Optional realm for OpenID protocol. The sub string "scheme://domain:port"
+         * of the param "continueUri" is used if this is not set.
+         *
+         * @param string $openidRealm
+         */
+        public function setOpenidRealm($openidRealm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpenidRealm()
+        {
+        }
+        /**
+         * The native app package for OTA installation.
+         *
+         * @param string $otaApp
+         */
+        public function setOtaApp($otaApp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOtaApp()
+        {
+        }
+        /**
+         * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com,
+         * aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP
+         * identifier.
+         *
+         * @param string $providerId
+         */
+        public function setProviderId($providerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderId()
+        {
+        }
+        /**
+         * The session_id passed by client.
+         *
+         * @param string $sessionId
+         */
+        public function setSessionId($sessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionId()
+        {
+        }
+        /**
+         * For multi-tenant use cases, in order to construct sign-in URL with the
+         * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
+         * configs from.
+         *
+         * @param string $tenantId
+         */
+        public function setTenantId($tenantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantId()
+        {
+        }
+        /**
+         * Tenant project number to be used for idp discovery.
+         *
+         * @param string $tenantProjectNumber
+         */
+        public function setTenantProjectNumber($tenantProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantProjectNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyCreateAuthUriRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * Explicitly specify the auth flow type. Currently only support "CODE_FLOW"
-     * type. The field is only used for Google provider.
-     *
-     * @param string $authFlowType
-     */
-    public function setAuthFlowType($authFlowType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthFlowType()
-    {
-    }
-    /**
-     * The relying party OAuth client ID.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * The opaque value used by the client to maintain context info between the
-     * authentication request and the IDP callback.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContext()
-    {
-    }
-    /**
-     * The URI to which the IDP redirects the user after the federated login flow.
-     *
-     * @param string $continueUri
-     */
-    public function setContinueUri($continueUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContinueUri()
-    {
-    }
-    /**
-     * The query parameter that client can customize by themselves in auth url.
-     * The following parameters are reserved for server so that they cannot be
-     * customized by clients: client_id, response_type, scope, redirect_uri,
-     * state, oauth_token.
-     *
-     * @param string[] $customParameter
-     */
-    public function setCustomParameter($customParameter)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCustomParameter()
-    {
-    }
-    /**
-     * The hosted domain to restrict sign-in to accounts at that domain for Google
-     * Apps hosted accounts.
-     *
-     * @param string $hostedDomain
-     */
-    public function setHostedDomain($hostedDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostedDomain()
-    {
-    }
-    /**
-     * The email or federated ID of the user.
-     *
-     * @param string $identifier
-     */
-    public function setIdentifier($identifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdentifier()
-    {
-    }
-    /**
-     * The developer's consumer key for OpenId OAuth Extension
-     *
-     * @param string $oauthConsumerKey
-     */
-    public function setOauthConsumerKey($oauthConsumerKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthConsumerKey()
-    {
-    }
-    /**
-     * Additional oauth scopes, beyond the basid user profile, that the user would
-     * be prompted to grant
-     *
-     * @param string $oauthScope
-     */
-    public function setOauthScope($oauthScope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthScope()
-    {
-    }
-    /**
-     * Optional realm for OpenID protocol. The sub string "scheme://domain:port"
-     * of the param "continueUri" is used if this is not set.
-     *
-     * @param string $openidRealm
-     */
-    public function setOpenidRealm($openidRealm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpenidRealm()
-    {
-    }
-    /**
-     * The native app package for OTA installation.
-     *
-     * @param string $otaApp
-     */
-    public function setOtaApp($otaApp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOtaApp()
-    {
-    }
-    /**
-     * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com,
-     * aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP
-     * identifier.
-     *
-     * @param string $providerId
-     */
-    public function setProviderId($providerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderId()
-    {
-    }
-    /**
-     * The session_id passed by client.
-     *
-     * @param string $sessionId
-     */
-    public function setSessionId($sessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionId()
-    {
-    }
-    /**
-     * For multi-tenant use cases, in order to construct sign-in URL with the
-     * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
-     * configs from.
-     *
-     * @param string $tenantId
-     */
-    public function setTenantId($tenantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantId()
-    {
-    }
-    /**
-     * Tenant project number to be used for idp discovery.
-     *
-     * @param string $tenantProjectNumber
-     */
-    public function setTenantProjectNumber($tenantProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantProjectNumber()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyCreateAuthUriRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyCreateAuthUriRequest
     {
     }
 }

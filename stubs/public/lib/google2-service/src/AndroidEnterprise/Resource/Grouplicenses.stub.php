@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "grouplicenses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $grouplicenses = $androidenterpriseService->grouplicenses;
- *  </code>
- */
-class Grouplicenses extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\GroupLicense;
+    use Google\Service\AndroidEnterprise\GroupLicensesListResponse;
     /**
-     * Retrieves details of an enterprise's group license for a product. **Note:**
-     * This item has been deprecated. New integrations cannot use this method and
-     * can refer to our new recommendations. (grouplicenses.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $groupLicenseId The ID of the product the group license is for,
-     * e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @return GroupLicense
-     * @throws \Google\Service\Exception
+     * The "grouplicenses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $grouplicenses = $androidenterpriseService->grouplicenses;
+     *  </code>
      */
-    public function get($enterpriseId, $groupLicenseId, $optParams = [])
+    class Grouplicenses extends \Google\Service\Resource
     {
+        /**
+         * Retrieves details of an enterprise's group license for a product. **Note:**
+         * This item has been deprecated. New integrations cannot use this method and
+         * can refer to our new recommendations. (grouplicenses.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $groupLicenseId The ID of the product the group license is for,
+         * e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @return GroupLicense
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $groupLicenseId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves IDs of all products for which the enterprise has a group license.
+         * **Note:** This item has been deprecated. New integrations cannot use this
+         * method and can refer to our new recommendations.
+         * (grouplicenses.listGrouplicenses)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param array $optParams Optional parameters.
+         * @return GroupLicensesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGrouplicenses($enterpriseId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves IDs of all products for which the enterprise has a group license.
-     * **Note:** This item has been deprecated. New integrations cannot use this
-     * method and can refer to our new recommendations.
-     * (grouplicenses.listGrouplicenses)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param array $optParams Optional parameters.
-     * @return GroupLicensesListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Grouplicenses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listGrouplicenses($enterpriseId, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Grouplicenses extends \Google\Service\AndroidEnterprise\Resource\Grouplicenses
     {
     }
 }

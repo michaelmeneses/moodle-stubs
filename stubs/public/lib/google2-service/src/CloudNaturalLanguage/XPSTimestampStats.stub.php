@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTimestampStats extends \Google\Model
-{
-    protected $commonStatsType = XPSCommonStats::class;
-    protected $commonStatsDataType = '';
-    protected $granularStatsType = XPSTimestampStatsGranularStats::class;
-    protected $granularStatsDataType = 'map';
-    /**
-     * @var string
-     */
-    public $medianTimestampNanos;
-    /**
-     * @param XPSCommonStats $commonStats
-     */
-    public function setCommonStats(XPSCommonStats $commonStats)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTimestampStats extends \Google\Model
     {
+        protected $commonStatsType = XPSCommonStats::class;
+        protected $commonStatsDataType = '';
+        protected $granularStatsType = XPSTimestampStatsGranularStats::class;
+        protected $granularStatsDataType = 'map';
+        /**
+         * @var string
+         */
+        public $medianTimestampNanos;
+        /**
+         * @param XPSCommonStats $commonStats
+         */
+        public function setCommonStats(XPSCommonStats $commonStats)
+        {
+        }
+        /**
+         * @return XPSCommonStats
+         */
+        public function getCommonStats()
+        {
+        }
+        /**
+         * The string key is the pre-defined granularity. Currently supported:
+         * hour_of_day, day_of_week, month_of_year. Granularities finer that the
+         * granularity of timestamp data are not populated (e.g. if timestamps are at
+         * day granularity, then hour_of_day is not populated).
+         *
+         * @param XPSTimestampStatsGranularStats[] $granularStats
+         */
+        public function setGranularStats($granularStats)
+        {
+        }
+        /**
+         * @return XPSTimestampStatsGranularStats[]
+         */
+        public function getGranularStats()
+        {
+        }
+        /**
+         * @param string $medianTimestampNanos
+         */
+        public function setMedianTimestampNanos($medianTimestampNanos)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedianTimestampNanos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSCommonStats
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTimestampStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonStats()
-    {
-    }
-    /**
-     * The string key is the pre-defined granularity. Currently supported:
-     * hour_of_day, day_of_week, month_of_year. Granularities finer that the
-     * granularity of timestamp data are not populated (e.g. if timestamps are at
-     * day granularity, then hour_of_day is not populated).
-     *
-     * @param XPSTimestampStatsGranularStats[] $granularStats
-     */
-    public function setGranularStats($granularStats)
-    {
-    }
-    /**
-     * @return XPSTimestampStatsGranularStats[]
-     */
-    public function getGranularStats()
-    {
-    }
-    /**
-     * @param string $medianTimestampNanos
-     */
-    public function setMedianTimestampNanos($medianTimestampNanos)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMedianTimestampNanos()
+    class Google_Service_CloudNaturalLanguage_XPSTimestampStats extends \Google\Service\CloudNaturalLanguage\XPSTimestampStats
     {
     }
 }

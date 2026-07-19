@@ -21,217 +21,226 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Message extends \Google\Collection
-{
-    protected $collection_key = 'patientIds';
-    /**
-     * Output only. The datetime when the message was created. Set by the server.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. Raw message bytes.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * User-supplied key-value pairs used to organize HL7v2 stores. Label keys
-     * must be between 1 and 63 characters long, have a UTF-8 encoding of maximum
-     * 128 bytes, and must conform to the following PCRE regular expression:
-     * \p{Ll}\p{Lo}{0,62} Label values are optional, must be between 1 and 63
-     * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
-     * conform to the following PCRE regular expression:
-     * [\p{Ll}\p{Lo}\p{N}_-]{0,63} No more than 64 labels can be associated with a
-     * given store.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The message type for this message. MSH-9.1.
-     *
-     * @var string
-     */
-    public $messageType;
-    /**
-     * Output only. Resource name of the Message, of the form `projects/{project_i
-     * d}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_
-     * id}/messages/{message_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parsedDataType = ParsedData::class;
-    protected $parsedDataDataType = '';
-    protected $patientIdsType = PatientId::class;
-    protected $patientIdsDataType = 'array';
-    protected $schematizedDataType = SchematizedData::class;
-    protected $schematizedDataDataType = '';
-    /**
-     * Output only. The hospital that this message came from. MSH-4.
-     *
-     * @var string
-     */
-    public $sendFacility;
-    /**
-     * Output only. The datetime the sending application sent this message. MSH-7.
-     *
-     * @var string
-     */
-    public $sendTime;
-    /**
-     * Output only. The datetime when the message was created. Set by the server.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudHealthcare {
+    class Message extends \Google\Collection
     {
+        protected $collection_key = 'patientIds';
+        /**
+         * Output only. The datetime when the message was created. Set by the server.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. Raw message bytes.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * User-supplied key-value pairs used to organize HL7v2 stores. Label keys
+         * must be between 1 and 63 characters long, have a UTF-8 encoding of maximum
+         * 128 bytes, and must conform to the following PCRE regular expression:
+         * \p{Ll}\p{Lo}{0,62} Label values are optional, must be between 1 and 63
+         * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
+         * conform to the following PCRE regular expression:
+         * [\p{Ll}\p{Lo}\p{N}_-]{0,63} No more than 64 labels can be associated with a
+         * given store.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The message type for this message. MSH-9.1.
+         *
+         * @var string
+         */
+        public $messageType;
+        /**
+         * Output only. Resource name of the Message, of the form `projects/{project_i
+         * d}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_
+         * id}/messages/{message_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parsedDataType = ParsedData::class;
+        protected $parsedDataDataType = '';
+        protected $patientIdsType = PatientId::class;
+        protected $patientIdsDataType = 'array';
+        protected $schematizedDataType = SchematizedData::class;
+        protected $schematizedDataDataType = '';
+        /**
+         * Output only. The hospital that this message came from. MSH-4.
+         *
+         * @var string
+         */
+        public $sendFacility;
+        /**
+         * Output only. The datetime the sending application sent this message. MSH-7.
+         *
+         * @var string
+         */
+        public $sendTime;
+        /**
+         * Output only. The datetime when the message was created. Set by the server.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. Raw message bytes.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * User-supplied key-value pairs used to organize HL7v2 stores. Label keys
+         * must be between 1 and 63 characters long, have a UTF-8 encoding of maximum
+         * 128 bytes, and must conform to the following PCRE regular expression:
+         * \p{Ll}\p{Lo}{0,62} Label values are optional, must be between 1 and 63
+         * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
+         * conform to the following PCRE regular expression:
+         * [\p{Ll}\p{Lo}\p{N}_-]{0,63} No more than 64 labels can be associated with a
+         * given store.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The message type for this message. MSH-9.1.
+         *
+         * @param string $messageType
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageType()
+        {
+        }
+        /**
+         * Output only. Resource name of the Message, of the form `projects/{project_i
+         * d}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_
+         * id}/messages/{message_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The parsed version of the raw message data.
+         *
+         * @param ParsedData $parsedData
+         */
+        public function setParsedData(ParsedData $parsedData)
+        {
+        }
+        /**
+         * @return ParsedData
+         */
+        public function getParsedData()
+        {
+        }
+        /**
+         * Output only. All patient IDs listed in the PID-2, PID-3, and PID-4 segments
+         * of this message.
+         *
+         * @param PatientId[] $patientIds
+         */
+        public function setPatientIds($patientIds)
+        {
+        }
+        /**
+         * @return PatientId[]
+         */
+        public function getPatientIds()
+        {
+        }
+        /**
+         * Output only. The parsed version of the raw message data schematized
+         * according to this store's schemas and type definitions.
+         *
+         * @param SchematizedData $schematizedData
+         */
+        public function setSchematizedData(SchematizedData $schematizedData)
+        {
+        }
+        /**
+         * @return SchematizedData
+         */
+        public function getSchematizedData()
+        {
+        }
+        /**
+         * Output only. The hospital that this message came from. MSH-4.
+         *
+         * @param string $sendFacility
+         */
+        public function setSendFacility($sendFacility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSendFacility()
+        {
+        }
+        /**
+         * Output only. The datetime the sending application sent this message. MSH-7.
+         *
+         * @param string $sendTime
+         */
+        public function setSendTime($sendTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSendTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\Message registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. Raw message bytes.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * User-supplied key-value pairs used to organize HL7v2 stores. Label keys
-     * must be between 1 and 63 characters long, have a UTF-8 encoding of maximum
-     * 128 bytes, and must conform to the following PCRE regular expression:
-     * \p{Ll}\p{Lo}{0,62} Label values are optional, must be between 1 and 63
-     * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
-     * conform to the following PCRE regular expression:
-     * [\p{Ll}\p{Lo}\p{N}_-]{0,63} No more than 64 labels can be associated with a
-     * given store.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The message type for this message. MSH-9.1.
-     *
-     * @param string $messageType
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageType()
-    {
-    }
-    /**
-     * Output only. Resource name of the Message, of the form `projects/{project_i
-     * d}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_
-     * id}/messages/{message_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The parsed version of the raw message data.
-     *
-     * @param ParsedData $parsedData
-     */
-    public function setParsedData(ParsedData $parsedData)
-    {
-    }
-    /**
-     * @return ParsedData
-     */
-    public function getParsedData()
-    {
-    }
-    /**
-     * Output only. All patient IDs listed in the PID-2, PID-3, and PID-4 segments
-     * of this message.
-     *
-     * @param PatientId[] $patientIds
-     */
-    public function setPatientIds($patientIds)
-    {
-    }
-    /**
-     * @return PatientId[]
-     */
-    public function getPatientIds()
-    {
-    }
-    /**
-     * Output only. The parsed version of the raw message data schematized
-     * according to this store's schemas and type definitions.
-     *
-     * @param SchematizedData $schematizedData
-     */
-    public function setSchematizedData(SchematizedData $schematizedData)
-    {
-    }
-    /**
-     * @return SchematizedData
-     */
-    public function getSchematizedData()
-    {
-    }
-    /**
-     * Output only. The hospital that this message came from. MSH-4.
-     *
-     * @param string $sendFacility
-     */
-    public function setSendFacility($sendFacility)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSendFacility()
-    {
-    }
-    /**
-     * Output only. The datetime the sending application sent this message. MSH-7.
-     *
-     * @param string $sendTime
-     */
-    public function setSendTime($sendTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSendTime()
+    class Google_Service_CloudHealthcare_Message extends \Google\Service\CloudHealthcare\Message
     {
     }
 }

@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "accountActiveAdSummaries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $accountActiveAdSummaries = $dfareportingService->accountActiveAdSummaries;
- *  </code>
- */
-class AccountActiveAdSummaries extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\AccountActiveAdSummary;
     /**
-     * Gets the account's active ad summary by account ID.
-     * (accountActiveAdSummaries.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $summaryAccountId Account ID.
-     * @param array $optParams Optional parameters.
-     * @return AccountActiveAdSummary
-     * @throws \Google\Service\Exception
+     * The "accountActiveAdSummaries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $accountActiveAdSummaries = $dfareportingService->accountActiveAdSummaries;
+     *  </code>
      */
-    public function get($profileId, $summaryAccountId, $optParams = [])
+    class AccountActiveAdSummaries extends \Google\Service\Resource
+    {
+        /**
+         * Gets the account's active ad summary by account ID.
+         * (accountActiveAdSummaries.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $summaryAccountId Account ID.
+         * @param array $optParams Optional parameters.
+         * @return AccountActiveAdSummary
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $summaryAccountId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\AccountActiveAdSummaries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_AccountActiveAdSummaries extends \Google\Service\Dfareporting\Resource\AccountActiveAdSummaries
     {
     }
 }

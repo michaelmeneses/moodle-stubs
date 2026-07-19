@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class PublishRequest extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $deployPercentage;
-    /**
-     * @var bool
-     */
-    public $reviewExemption;
-    /**
-     * @var string
-     */
-    public $target;
-    /**
-     * @param int
-     */
-    public function setDeployPercentage($deployPercentage)
+namespace Google\Service\Chromewebstore {
+    class PublishRequest extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $deployPercentage;
+        /**
+         * @var bool
+         */
+        public $reviewExemption;
+        /**
+         * @var string
+         */
+        public $target;
+        /**
+         * @param int
+         */
+        public function setDeployPercentage($deployPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeployPercentage()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReviewExemption($reviewExemption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReviewExemption()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Chromewebstore\PublishRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployPercentage()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReviewExemption($reviewExemption)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReviewExemption()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
+    class Google_Service_Chromewebstore_PublishRequest extends \Google\Service\Chromewebstore\PublishRequest
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class ApiDataRow extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    public $clicks;
-    public $ctr;
-    public $impressions;
-    public $keys;
-    public $position;
-    public function setClicks($clicks)
+namespace Google\Service\Webmasters {
+    class ApiDataRow extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        public $clicks;
+        public $ctr;
+        public $impressions;
+        public $keys;
+        public $position;
+        public function setClicks($clicks)
+        {
+        }
+        public function getClicks()
+        {
+        }
+        public function setCtr($ctr)
+        {
+        }
+        public function getCtr()
+        {
+        }
+        public function setImpressions($impressions)
+        {
+        }
+        public function getImpressions()
+        {
+        }
+        public function setKeys($keys)
+        {
+        }
+        public function getKeys()
+        {
+        }
+        public function setPosition($position)
+        {
+        }
+        public function getPosition()
+        {
+        }
     }
-    public function getClicks()
-    {
-    }
-    public function setCtr($ctr)
-    {
-    }
-    public function getCtr()
-    {
-    }
-    public function setImpressions($impressions)
-    {
-    }
-    public function getImpressions()
-    {
-    }
-    public function setKeys($keys)
-    {
-    }
-    public function getKeys()
-    {
-    }
-    public function setPosition($position)
-    {
-    }
-    public function getPosition()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webmasters\ApiDataRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webmasters_ApiDataRow extends \Google\Service\Webmasters\ApiDataRow
     {
     }
 }

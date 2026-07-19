@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals extends \Google\Model
-{
-    /**
-     * No banned phrase check was executed.
-     */
-    public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_UNSPECIFIED = 'BANNED_PHRASE_MATCH_UNSPECIFIED';
-    /**
-     * All banned phrase checks led to no match.
-     */
-    public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_NONE = 'BANNED_PHRASE_MATCH_NONE';
-    /**
-     * A banned phrase matched the query.
-     */
-    public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_QUERY = 'BANNED_PHRASE_MATCH_QUERY';
-    /**
-     * A banned phrase matched the response.
-     */
-    public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_RESPONSE = 'BANNED_PHRASE_MATCH_RESPONSE';
-    /**
-     * Decision not specified.
-     */
-    public const DECISION_SAFETY_DECISION_UNSPECIFIED = 'SAFETY_DECISION_UNSPECIFIED';
-    /**
-     * No manual or automatic safety check fired.
-     */
-    public const DECISION_ACCEPTED_BY_SAFETY_CHECK = 'ACCEPTED_BY_SAFETY_CHECK';
-    /**
-     * One ore more safety checks fired.
-     */
-    public const DECISION_REJECTED_BY_SAFETY_CHECK = 'REJECTED_BY_SAFETY_CHECK';
-    /**
-     * Specifies banned phrase match subject.
-     *
-     * @var string
-     */
-    public $bannedPhraseMatch;
-    /**
-     * Safety decision.
-     *
-     * @var string
-     */
-    public $decision;
-    /**
-     * The matched banned phrase if there was a match.
-     *
-     * @var string
-     */
-    public $matchedBannedPhrase;
-    /**
-     * Specifies banned phrase match subject.
-     *
-     * Accepted values: BANNED_PHRASE_MATCH_UNSPECIFIED, BANNED_PHRASE_MATCH_NONE,
-     * BANNED_PHRASE_MATCH_QUERY, BANNED_PHRASE_MATCH_RESPONSE
-     *
-     * @param self::BANNED_PHRASE_MATCH_* $bannedPhraseMatch
-     */
-    public function setBannedPhraseMatch($bannedPhraseMatch)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals extends \Google\Model
     {
+        /**
+         * No banned phrase check was executed.
+         */
+        public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_UNSPECIFIED = 'BANNED_PHRASE_MATCH_UNSPECIFIED';
+        /**
+         * All banned phrase checks led to no match.
+         */
+        public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_NONE = 'BANNED_PHRASE_MATCH_NONE';
+        /**
+         * A banned phrase matched the query.
+         */
+        public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_QUERY = 'BANNED_PHRASE_MATCH_QUERY';
+        /**
+         * A banned phrase matched the response.
+         */
+        public const BANNED_PHRASE_MATCH_BANNED_PHRASE_MATCH_RESPONSE = 'BANNED_PHRASE_MATCH_RESPONSE';
+        /**
+         * Decision not specified.
+         */
+        public const DECISION_SAFETY_DECISION_UNSPECIFIED = 'SAFETY_DECISION_UNSPECIFIED';
+        /**
+         * No manual or automatic safety check fired.
+         */
+        public const DECISION_ACCEPTED_BY_SAFETY_CHECK = 'ACCEPTED_BY_SAFETY_CHECK';
+        /**
+         * One ore more safety checks fired.
+         */
+        public const DECISION_REJECTED_BY_SAFETY_CHECK = 'REJECTED_BY_SAFETY_CHECK';
+        /**
+         * Specifies banned phrase match subject.
+         *
+         * @var string
+         */
+        public $bannedPhraseMatch;
+        /**
+         * Safety decision.
+         *
+         * @var string
+         */
+        public $decision;
+        /**
+         * The matched banned phrase if there was a match.
+         *
+         * @var string
+         */
+        public $matchedBannedPhrase;
+        /**
+         * Specifies banned phrase match subject.
+         *
+         * Accepted values: BANNED_PHRASE_MATCH_UNSPECIFIED, BANNED_PHRASE_MATCH_NONE,
+         * BANNED_PHRASE_MATCH_QUERY, BANNED_PHRASE_MATCH_RESPONSE
+         *
+         * @param self::BANNED_PHRASE_MATCH_* $bannedPhraseMatch
+         */
+        public function setBannedPhraseMatch($bannedPhraseMatch)
+        {
+        }
+        /**
+         * @return self::BANNED_PHRASE_MATCH_*
+         */
+        public function getBannedPhraseMatch()
+        {
+        }
+        /**
+         * Safety decision.
+         *
+         * Accepted values: SAFETY_DECISION_UNSPECIFIED, ACCEPTED_BY_SAFETY_CHECK,
+         * REJECTED_BY_SAFETY_CHECK
+         *
+         * @param self::DECISION_* $decision
+         */
+        public function setDecision($decision)
+        {
+        }
+        /**
+         * @return self::DECISION_*
+         */
+        public function getDecision()
+        {
+        }
+        /**
+         * The matched banned phrase if there was a match.
+         *
+         * @param string $matchedBannedPhrase
+         */
+        public function setMatchedBannedPhrase($matchedBannedPhrase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchedBannedPhrase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BANNED_PHRASE_MATCH_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannedPhraseMatch()
-    {
-    }
-    /**
-     * Safety decision.
-     *
-     * Accepted values: SAFETY_DECISION_UNSPECIFIED, ACCEPTED_BY_SAFETY_CHECK,
-     * REJECTED_BY_SAFETY_CHECK
-     *
-     * @param self::DECISION_* $decision
-     */
-    public function setDecision($decision)
-    {
-    }
-    /**
-     * @return self::DECISION_*
-     */
-    public function getDecision()
-    {
-    }
-    /**
-     * The matched banned phrase if there was a match.
-     *
-     * @param string $matchedBannedPhrase
-     */
-    public function setMatchedBannedPhrase($matchedBannedPhrase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchedBannedPhrase()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSafetySignals
     {
     }
 }

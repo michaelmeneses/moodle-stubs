@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class ColumnBreak extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A ColumnBreak may have multiple insertion IDs
-     * if it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
-    protected $suggestedTextStyleChangesDataType = 'map';
-    protected $textStyleType = TextStyle::class;
-    protected $textStyleDataType = '';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
+namespace Google\Service\Docs {
+    class ColumnBreak extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A ColumnBreak may have multiple insertion IDs
+         * if it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
+        protected $suggestedTextStyleChangesDataType = 'map';
+        protected $textStyleType = TextStyle::class;
+        protected $textStyleDataType = '';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A ColumnBreak may have multiple insertion IDs
+         * if it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The suggested text style changes to this ColumnBreak, keyed by suggestion
+         * ID.
+         *
+         * @param SuggestedTextStyle[] $suggestedTextStyleChanges
+         */
+        public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedTextStyle[]
+         */
+        public function getSuggestedTextStyleChanges()
+        {
+        }
+        /**
+         * The text style of this ColumnBreak. Similar to text content, like text runs
+         * and footnote references, the text style of a column break can affect
+         * content layout as well as the styling of text inserted next to it.
+         *
+         * @param TextStyle $textStyle
+         */
+        public function setTextStyle(TextStyle $textStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getTextStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Docs\ColumnBreak registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A ColumnBreak may have multiple insertion IDs
-     * if it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The suggested text style changes to this ColumnBreak, keyed by suggestion
-     * ID.
-     *
-     * @param SuggestedTextStyle[] $suggestedTextStyleChanges
-     */
-    public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedTextStyle[]
-     */
-    public function getSuggestedTextStyleChanges()
-    {
-    }
-    /**
-     * The text style of this ColumnBreak. Similar to text content, like text runs
-     * and footnote references, the text style of a column break can affect
-     * content layout as well as the styling of text inserted next to it.
-     *
-     * @param TextStyle $textStyle
-     */
-    public function setTextStyle(TextStyle $textStyle)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getTextStyle()
+    class Google_Service_Docs_ColumnBreak extends \Google\Service\Docs\ColumnBreak
     {
     }
 }

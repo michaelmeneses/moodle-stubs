@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class InTotoSlsaProvenanceV1 extends \Google\Collection
-{
-    protected $collection_key = 'subject';
-    protected $internal_gapi_mappings = ["type" => "_type"];
-    /**
-     * InToto spec defined at https://github.com/in-
-     * toto/attestation/tree/main/spec#statement
-     *
-     * @var string
-     */
-    public $type;
-    protected $predicateDataType = '';
-    /**
-     * @var string
-     */
-    public $predicateType;
-    protected $subjectType = Subject::class;
-    protected $subjectDataType = 'array';
-    /**
-     * InToto spec defined at https://github.com/in-
-     * toto/attestation/tree/main/spec#statement
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\ContainerAnalysis {
+    class InTotoSlsaProvenanceV1 extends \Google\Collection
     {
+        protected $collection_key = 'subject';
+        protected $internal_gapi_mappings = ["type" => "_type"];
+        /**
+         * InToto spec defined at https://github.com/in-
+         * toto/attestation/tree/main/spec#statement
+         *
+         * @var string
+         */
+        public $type;
+        protected $predicateDataType = '';
+        /**
+         * @var string
+         */
+        public $predicateType;
+        protected $subjectType = Subject::class;
+        protected $subjectDataType = 'array';
+        /**
+         * InToto spec defined at https://github.com/in-
+         * toto/attestation/tree/main/spec#statement
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param SlsaProvenanceV1 $predicate
+         */
+        public function setPredicate(SlsaProvenanceV1 $predicate)
+        {
+        }
+        /**
+         * @return SlsaProvenanceV1
+         */
+        public function getPredicate()
+        {
+        }
+        /**
+         * @param string $predicateType
+         */
+        public function setPredicateType($predicateType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPredicateType()
+        {
+        }
+        /**
+         * @param Subject[] $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return Subject[]
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\InTotoSlsaProvenanceV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * @param SlsaProvenanceV1 $predicate
-     */
-    public function setPredicate(SlsaProvenanceV1 $predicate)
-    {
-    }
-    /**
-     * @return SlsaProvenanceV1
-     */
-    public function getPredicate()
-    {
-    }
-    /**
-     * @param string $predicateType
-     */
-    public function setPredicateType($predicateType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPredicateType()
-    {
-    }
-    /**
-     * @param Subject[] $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return Subject[]
-     */
-    public function getSubject()
+    class Google_Service_ContainerAnalysis_InTotoSlsaProvenanceV1 extends \Google\Service\ContainerAnalysis\InTotoSlsaProvenanceV1
     {
     }
 }

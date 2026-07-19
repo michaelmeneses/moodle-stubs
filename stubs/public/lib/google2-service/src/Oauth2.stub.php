@@ -21,54 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Oauth2 (v2).
- *
- * <p>
- * Obtains end-user authorization grants for use with other Google APIs.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/identity/protocols/oauth2/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Oauth2 extends \Google\Service
-{
-    /** See your primary Google Account email address. */
-    const USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
-    /** See your personal info, including any personal info you've made publicly available. */
-    const USERINFO_PROFILE = "https://www.googleapis.com/auth/userinfo.profile";
-    /** Associate you with your personal info on Google. */
-    const OPENID = "openid";
-    public $userinfo;
-    public $userinfo_v2_me;
-    public $rootUrlTemplate;
-    private $base_methods;
+namespace Google\Service {
+    use Google\Client;
+    use Google\Service\Oauth2\Tokeninfo;
     /**
-     * Constructs the internal representation of the Oauth2 service.
+     * Service definition for Oauth2 (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Obtains end-user authorization grants for use with other Google APIs.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/identity/protocols/oauth2/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Oauth2 extends \Google\Service
     {
+        /** See your primary Google Account email address. */
+        const USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
+        /** See your personal info, including any personal info you've made publicly available. */
+        const USERINFO_PROFILE = "https://www.googleapis.com/auth/userinfo.profile";
+        /** Associate you with your personal info on Google. */
+        const OPENID = "openid";
+        public $userinfo;
+        public $userinfo_v2_me;
+        public $rootUrlTemplate;
+        private $base_methods;
+        /**
+         * Constructs the internal representation of the Oauth2 service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+        /**
+         * (tokeninfo)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string access_token
+         * @opt_param string id_token
+         * @return Tokeninfo
+         * @throws \Google\Service\Exception
+         */
+        public function tokeninfo($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * (tokeninfo)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string access_token
-     * @opt_param string id_token
-     * @return Tokeninfo
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Oauth2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function tokeninfo($optParams = [])
+    class Google_Service_Oauth2 extends \Google\Service\Oauth2
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageListSelect extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GoogleCloudDialogflowV2beta1IntentMessageListSelectItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Optional. Subtitle of the list.
-     *
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * Optional. The overall title of the list.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required. List items.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageListSelectItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageListSelect extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GoogleCloudDialogflowV2beta1IntentMessageListSelectItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Optional. Subtitle of the list.
+         *
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * Optional. The overall title of the list.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required. List items.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageListSelectItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageListSelectItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Optional. Subtitle of the list.
+         *
+         * @param string $subtitle
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * Optional. The overall title of the list.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageListSelectItem[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageListSelect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Optional. Subtitle of the list.
-     *
-     * @param string $subtitle
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * Optional. The overall title of the list.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageListSelect extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageListSelect
     {
     }
 }

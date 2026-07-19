@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    /**
-     * The list of all the resource names of the documents to be processed.
-     * Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     *
-     * @var string[]
-     */
-    public $documents;
-    /**
-     * The Cloud Storage folder path used to store the exported documents before
-     * being sent to CDW. Format: `gs:`.
-     *
-     * @var string
-     */
-    public $exportFolderPath;
-    protected $processorInfoType = GoogleCloudContentwarehouseV1ProcessorInfo::class;
-    protected $processorInfoDataType = '';
-    /**
-     * The Cloud Storage folder path used to store the raw results from
-     * processors. Format: `gs:`.
-     *
-     * @var string
-     */
-    public $processorResultsFolderPath;
-    /**
-     * The list of all the resource names of the documents to be processed.
-     * Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     *
-     * @param string[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        /**
+         * The list of all the resource names of the documents to be processed.
+         * Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         *
+         * @var string[]
+         */
+        public $documents;
+        /**
+         * The Cloud Storage folder path used to store the exported documents before
+         * being sent to CDW. Format: `gs:`.
+         *
+         * @var string
+         */
+        public $exportFolderPath;
+        protected $processorInfoType = GoogleCloudContentwarehouseV1ProcessorInfo::class;
+        protected $processorInfoDataType = '';
+        /**
+         * The Cloud Storage folder path used to store the raw results from
+         * processors. Format: `gs:`.
+         *
+         * @var string
+         */
+        public $processorResultsFolderPath;
+        /**
+         * The list of all the resource names of the documents to be processed.
+         * Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         *
+         * @param string[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * The Cloud Storage folder path used to store the exported documents before
+         * being sent to CDW. Format: `gs:`.
+         *
+         * @param string $exportFolderPath
+         */
+        public function setExportFolderPath($exportFolderPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportFolderPath()
+        {
+        }
+        /**
+         * The CDW processor information.
+         *
+         * @param GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo
+         */
+        public function setProcessorInfo(GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ProcessorInfo
+         */
+        public function getProcessorInfo()
+        {
+        }
+        /**
+         * The Cloud Storage folder path used to store the raw results from
+         * processors. Format: `gs:`.
+         *
+         * @param string $processorResultsFolderPath
+         */
+        public function setProcessorResultsFolderPath($processorResultsFolderPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessorResultsFolderPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
-    {
-    }
-    /**
-     * The Cloud Storage folder path used to store the exported documents before
-     * being sent to CDW. Format: `gs:`.
-     *
-     * @param string $exportFolderPath
-     */
-    public function setExportFolderPath($exportFolderPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExportFolderPath()
-    {
-    }
-    /**
-     * The CDW processor information.
-     *
-     * @param GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo
-     */
-    public function setProcessorInfo(GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1ProcessorInfo
-     */
-    public function getProcessorInfo()
-    {
-    }
-    /**
-     * The Cloud Storage folder path used to store the raw results from
-     * processors. Format: `gs:`.
-     *
-     * @param string $processorResultsFolderPath
-     */
-    public function setProcessorResultsFolderPath($processorResultsFolderPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessorResultsFolderPath()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline
     {
     }
 }

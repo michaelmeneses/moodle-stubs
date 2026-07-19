@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class TemporalAsset extends \Google\Model
-{
-    /**
-     * prior_asset is not applicable for the current asset.
-     */
-    public const PRIOR_ASSET_STATE_PRIOR_ASSET_STATE_UNSPECIFIED = 'PRIOR_ASSET_STATE_UNSPECIFIED';
-    /**
-     * prior_asset is populated correctly.
-     */
-    public const PRIOR_ASSET_STATE_PRESENT = 'PRESENT';
-    /**
-     * Failed to set prior_asset.
-     */
-    public const PRIOR_ASSET_STATE_INVALID = 'INVALID';
-    /**
-     * Current asset is the first known state.
-     */
-    public const PRIOR_ASSET_STATE_DOES_NOT_EXIST = 'DOES_NOT_EXIST';
-    /**
-     * prior_asset is a deletion.
-     */
-    public const PRIOR_ASSET_STATE_DELETED = 'DELETED';
-    protected $assetType = Asset::class;
-    protected $assetDataType = '';
-    /**
-     * Whether the asset has been deleted or not.
-     *
-     * @var bool
-     */
-    public $deleted;
-    protected $priorAssetType = Asset::class;
-    protected $priorAssetDataType = '';
-    /**
-     * State of prior_asset.
-     *
-     * @var string
-     */
-    public $priorAssetState;
-    protected $windowType = TimeWindow::class;
-    protected $windowDataType = '';
-    /**
-     * An asset in Google Cloud.
-     *
-     * @param Asset $asset
-     */
-    public function setAsset(Asset $asset)
+namespace Google\Service\CloudAsset {
+    class TemporalAsset extends \Google\Model
     {
+        /**
+         * prior_asset is not applicable for the current asset.
+         */
+        public const PRIOR_ASSET_STATE_PRIOR_ASSET_STATE_UNSPECIFIED = 'PRIOR_ASSET_STATE_UNSPECIFIED';
+        /**
+         * prior_asset is populated correctly.
+         */
+        public const PRIOR_ASSET_STATE_PRESENT = 'PRESENT';
+        /**
+         * Failed to set prior_asset.
+         */
+        public const PRIOR_ASSET_STATE_INVALID = 'INVALID';
+        /**
+         * Current asset is the first known state.
+         */
+        public const PRIOR_ASSET_STATE_DOES_NOT_EXIST = 'DOES_NOT_EXIST';
+        /**
+         * prior_asset is a deletion.
+         */
+        public const PRIOR_ASSET_STATE_DELETED = 'DELETED';
+        protected $assetType = Asset::class;
+        protected $assetDataType = '';
+        /**
+         * Whether the asset has been deleted or not.
+         *
+         * @var bool
+         */
+        public $deleted;
+        protected $priorAssetType = Asset::class;
+        protected $priorAssetDataType = '';
+        /**
+         * State of prior_asset.
+         *
+         * @var string
+         */
+        public $priorAssetState;
+        protected $windowType = TimeWindow::class;
+        protected $windowDataType = '';
+        /**
+         * An asset in Google Cloud.
+         *
+         * @param Asset $asset
+         */
+        public function setAsset(Asset $asset)
+        {
+        }
+        /**
+         * @return Asset
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Whether the asset has been deleted or not.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Prior copy of the asset. Populated if prior_asset_state is PRESENT.
+         * Currently this is only set for responses in Real-Time Feed.
+         *
+         * @param Asset $priorAsset
+         */
+        public function setPriorAsset(Asset $priorAsset)
+        {
+        }
+        /**
+         * @return Asset
+         */
+        public function getPriorAsset()
+        {
+        }
+        /**
+         * State of prior_asset.
+         *
+         * Accepted values: PRIOR_ASSET_STATE_UNSPECIFIED, PRESENT, INVALID,
+         * DOES_NOT_EXIST, DELETED
+         *
+         * @param self::PRIOR_ASSET_STATE_* $priorAssetState
+         */
+        public function setPriorAssetState($priorAssetState)
+        {
+        }
+        /**
+         * @return self::PRIOR_ASSET_STATE_*
+         */
+        public function getPriorAssetState()
+        {
+        }
+        /**
+         * The time window when the asset data and state was observed.
+         *
+         * @param TimeWindow $window
+         */
+        public function setWindow(TimeWindow $window)
+        {
+        }
+        /**
+         * @return TimeWindow
+         */
+        public function getWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset
+     * Runtime class alias of \Google\Service\CloudAsset\TemporalAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * Whether the asset has been deleted or not.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Prior copy of the asset. Populated if prior_asset_state is PRESENT.
-     * Currently this is only set for responses in Real-Time Feed.
-     *
-     * @param Asset $priorAsset
-     */
-    public function setPriorAsset(Asset $priorAsset)
-    {
-    }
-    /**
-     * @return Asset
-     */
-    public function getPriorAsset()
-    {
-    }
-    /**
-     * State of prior_asset.
-     *
-     * Accepted values: PRIOR_ASSET_STATE_UNSPECIFIED, PRESENT, INVALID,
-     * DOES_NOT_EXIST, DELETED
-     *
-     * @param self::PRIOR_ASSET_STATE_* $priorAssetState
-     */
-    public function setPriorAssetState($priorAssetState)
-    {
-    }
-    /**
-     * @return self::PRIOR_ASSET_STATE_*
-     */
-    public function getPriorAssetState()
-    {
-    }
-    /**
-     * The time window when the asset data and state was observed.
-     *
-     * @param TimeWindow $window
-     */
-    public function setWindow(TimeWindow $window)
-    {
-    }
-    /**
-     * @return TimeWindow
-     */
-    public function getWindow()
+    class Google_Service_CloudAsset_TemporalAsset extends \Google\Service\CloudAsset\TemporalAsset
     {
     }
 }

@@ -21,36 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
- *   $projects = $bigquerydatatransferService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryDataTransfer\Resource {
+    use Google\Service\BigQueryDataTransfer\BigquerydatatransferEmpty;
+    use Google\Service\BigQueryDataTransfer\EnrollDataSourcesRequest;
     /**
-     * Enroll data sources in a user project. This allows users to create transfer
-     * configurations for these data sources. They will also appear in the
-     * ListDataSources RPC and as such, will appear in the [BigQuery
-     * UI](https://console.cloud.google.com/bigquery), and the documents can be
-     * found in the public guide for [BigQuery Web
-     * UI](https://cloud.google.com/bigquery/bigquery-web-ui) and [Data Transfer
-     * Service](https://cloud.google.com/bigquery/docs/working-with-transfers).
-     * (projects.enrollDataSources)
-     *
-     * @param string $name Required. The name of the project resource in the form:
-     * `projects/{project_id}`
-     * @param EnrollDataSourcesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BigquerydatatransferEmpty
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
+     *   $projects = $bigquerydatatransferService->projects;
+     *  </code>
      */
-    public function enrollDataSources($name, EnrollDataSourcesRequest $postBody, $optParams = [])
+    class Projects extends \Google\Service\Resource
+    {
+        /**
+         * Enroll data sources in a user project. This allows users to create transfer
+         * configurations for these data sources. They will also appear in the
+         * ListDataSources RPC and as such, will appear in the [BigQuery
+         * UI](https://console.cloud.google.com/bigquery), and the documents can be
+         * found in the public guide for [BigQuery Web
+         * UI](https://cloud.google.com/bigquery/bigquery-web-ui) and [Data Transfer
+         * Service](https://cloud.google.com/bigquery/docs/working-with-transfers).
+         * (projects.enrollDataSources)
+         *
+         * @param string $name Required. The name of the project resource in the form:
+         * `projects/{project_id}`
+         * @param EnrollDataSourcesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BigquerydatatransferEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function enrollDataSources($name, EnrollDataSourcesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigQueryDataTransfer_Resource_Projects extends \Google\Service\BigQueryDataTransfer\Resource\Projects
     {
     }
 }

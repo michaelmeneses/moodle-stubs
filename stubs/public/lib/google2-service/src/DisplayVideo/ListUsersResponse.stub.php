@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListUsersResponse extends \Google\Collection
-{
-    protected $collection_key = 'users';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListUsers` method to retrieve
-     * the next page of results. This token will be absent if there are no more
-     * results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $usersType = User::class;
-    protected $usersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListUsers` method to retrieve
-     * the next page of results. This token will be absent if there are no more
-     * results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DisplayVideo {
+    class ListUsersResponse extends \Google\Collection
     {
+        protected $collection_key = 'users';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListUsers` method to retrieve
+         * the next page of results. This token will be absent if there are no more
+         * results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $usersType = User::class;
+        protected $usersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListUsers` method to retrieve
+         * the next page of results. This token will be absent if there are no more
+         * results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of users. This list will be absent if empty.
+         *
+         * @param User[] $users
+         */
+        public function setUsers($users)
+        {
+        }
+        /**
+         * @return User[]
+         */
+        public function getUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ListUsersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of users. This list will be absent if empty.
-     *
-     * @param User[] $users
-     */
-    public function setUsers($users)
-    {
-    }
-    /**
-     * @return User[]
-     */
-    public function getUsers()
+    class Google_Service_DisplayVideo_ListUsersResponse extends \Google\Service\DisplayVideo\ListUsersResponse
     {
     }
 }

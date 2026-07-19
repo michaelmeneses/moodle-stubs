@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ResourceStatus extends \Google\Collection
-{
-    protected $collection_key = 'revisions';
-    /**
-     * The resource name. Currently only two resources are supported:
-     * EnvironmentGroup - organizations/{org}/envgroups/{envgroup}
-     * EnvironmentConfig -
-     * organizations/{org}/environments/{environment}/deployedConfig
-     *
-     * @var string
-     */
-    public $resource;
-    protected $revisionsType = GoogleCloudApigeeV1RevisionStatus::class;
-    protected $revisionsDataType = 'array';
-    /**
-     * The total number of replicas that should have this resource.
-     *
-     * @var int
-     */
-    public $totalReplicas;
-    /**
-     * The uid of the resource. In the unexpected case that the instance has
-     * multiple uids for the same name, they should be reported under separate
-     * ResourceStatuses.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * The resource name. Currently only two resources are supported:
-     * EnvironmentGroup - organizations/{org}/envgroups/{envgroup}
-     * EnvironmentConfig -
-     * organizations/{org}/environments/{environment}/deployedConfig
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ResourceStatus extends \Google\Collection
     {
+        protected $collection_key = 'revisions';
+        /**
+         * The resource name. Currently only two resources are supported:
+         * EnvironmentGroup - organizations/{org}/envgroups/{envgroup}
+         * EnvironmentConfig -
+         * organizations/{org}/environments/{environment}/deployedConfig
+         *
+         * @var string
+         */
+        public $resource;
+        protected $revisionsType = GoogleCloudApigeeV1RevisionStatus::class;
+        protected $revisionsDataType = 'array';
+        /**
+         * The total number of replicas that should have this resource.
+         *
+         * @var int
+         */
+        public $totalReplicas;
+        /**
+         * The uid of the resource. In the unexpected case that the instance has
+         * multiple uids for the same name, they should be reported under separate
+         * ResourceStatuses.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * The resource name. Currently only two resources are supported:
+         * EnvironmentGroup - organizations/{org}/envgroups/{envgroup}
+         * EnvironmentConfig -
+         * organizations/{org}/environments/{environment}/deployedConfig
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * Revisions of the resource currently deployed in the instance.
+         *
+         * @param GoogleCloudApigeeV1RevisionStatus[] $revisions
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1RevisionStatus[]
+         */
+        public function getRevisions()
+        {
+        }
+        /**
+         * The total number of replicas that should have this resource.
+         *
+         * @param int $totalReplicas
+         */
+        public function setTotalReplicas($totalReplicas)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalReplicas()
+        {
+        }
+        /**
+         * The uid of the resource. In the unexpected case that the instance has
+         * multiple uids for the same name, they should be reported under separate
+         * ResourceStatuses.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
-    {
-    }
-    /**
-     * Revisions of the resource currently deployed in the instance.
-     *
-     * @param GoogleCloudApigeeV1RevisionStatus[] $revisions
-     */
-    public function setRevisions($revisions)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1RevisionStatus[]
-     */
-    public function getRevisions()
-    {
-    }
-    /**
-     * The total number of replicas that should have this resource.
-     *
-     * @param int $totalReplicas
-     */
-    public function setTotalReplicas($totalReplicas)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalReplicas()
-    {
-    }
-    /**
-     * The uid of the resource. In the unexpected case that the instance has
-     * multiple uids for the same name, they should be reported under separate
-     * ResourceStatuses.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ResourceStatus extends \Google\Service\Apigee\GoogleCloudApigeeV1ResourceStatus
     {
     }
 }

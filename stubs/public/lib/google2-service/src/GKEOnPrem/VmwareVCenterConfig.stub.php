@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareVCenterConfig extends \Google\Model
-{
-    /**
-     * Output only. The vCenter IP address.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Contains the vCenter CA certificate public key for SSL verification.
-     *
-     * @var string
-     */
-    public $caCertData;
-    /**
-     * The name of the vCenter cluster for the user cluster.
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * The name of the vCenter datacenter for the user cluster.
-     *
-     * @var string
-     */
-    public $datacenter;
-    /**
-     * The name of the vCenter datastore for the user cluster.
-     *
-     * @var string
-     */
-    public $datastore;
-    /**
-     * The name of the vCenter folder for the user cluster.
-     *
-     * @var string
-     */
-    public $folder;
-    /**
-     * The name of the vCenter resource pool for the user cluster.
-     *
-     * @var string
-     */
-    public $resourcePool;
-    /**
-     * The name of the vCenter storage policy for the user cluster.
-     *
-     * @var string
-     */
-    public $storagePolicyName;
-    /**
-     * Output only. The vCenter IP address.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\GKEOnPrem {
+    class VmwareVCenterConfig extends \Google\Model
     {
+        /**
+         * Output only. The vCenter IP address.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Contains the vCenter CA certificate public key for SSL verification.
+         *
+         * @var string
+         */
+        public $caCertData;
+        /**
+         * The name of the vCenter cluster for the user cluster.
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * The name of the vCenter datacenter for the user cluster.
+         *
+         * @var string
+         */
+        public $datacenter;
+        /**
+         * The name of the vCenter datastore for the user cluster.
+         *
+         * @var string
+         */
+        public $datastore;
+        /**
+         * The name of the vCenter folder for the user cluster.
+         *
+         * @var string
+         */
+        public $folder;
+        /**
+         * The name of the vCenter resource pool for the user cluster.
+         *
+         * @var string
+         */
+        public $resourcePool;
+        /**
+         * The name of the vCenter storage policy for the user cluster.
+         *
+         * @var string
+         */
+        public $storagePolicyName;
+        /**
+         * Output only. The vCenter IP address.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Contains the vCenter CA certificate public key for SSL verification.
+         *
+         * @param string $caCertData
+         */
+        public function setCaCertData($caCertData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertData()
+        {
+        }
+        /**
+         * The name of the vCenter cluster for the user cluster.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * The name of the vCenter datacenter for the user cluster.
+         *
+         * @param string $datacenter
+         */
+        public function setDatacenter($datacenter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatacenter()
+        {
+        }
+        /**
+         * The name of the vCenter datastore for the user cluster.
+         *
+         * @param string $datastore
+         */
+        public function setDatastore($datastore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatastore()
+        {
+        }
+        /**
+         * The name of the vCenter folder for the user cluster.
+         *
+         * @param string $folder
+         */
+        public function setFolder($folder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolder()
+        {
+        }
+        /**
+         * The name of the vCenter resource pool for the user cluster.
+         *
+         * @param string $resourcePool
+         */
+        public function setResourcePool($resourcePool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourcePool()
+        {
+        }
+        /**
+         * The name of the vCenter storage policy for the user cluster.
+         *
+         * @param string $storagePolicyName
+         */
+        public function setStoragePolicyName($storagePolicyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoragePolicyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareVCenterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Contains the vCenter CA certificate public key for SSL verification.
-     *
-     * @param string $caCertData
-     */
-    public function setCaCertData($caCertData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaCertData()
-    {
-    }
-    /**
-     * The name of the vCenter cluster for the user cluster.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * The name of the vCenter datacenter for the user cluster.
-     *
-     * @param string $datacenter
-     */
-    public function setDatacenter($datacenter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatacenter()
-    {
-    }
-    /**
-     * The name of the vCenter datastore for the user cluster.
-     *
-     * @param string $datastore
-     */
-    public function setDatastore($datastore)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatastore()
-    {
-    }
-    /**
-     * The name of the vCenter folder for the user cluster.
-     *
-     * @param string $folder
-     */
-    public function setFolder($folder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFolder()
-    {
-    }
-    /**
-     * The name of the vCenter resource pool for the user cluster.
-     *
-     * @param string $resourcePool
-     */
-    public function setResourcePool($resourcePool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourcePool()
-    {
-    }
-    /**
-     * The name of the vCenter storage policy for the user cluster.
-     *
-     * @param string $storagePolicyName
-     */
-    public function setStoragePolicyName($storagePolicyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoragePolicyName()
+    class Google_Service_GKEOnPrem_VmwareVCenterConfig extends \Google\Service\GKEOnPrem\VmwareVCenterConfig
     {
     }
 }

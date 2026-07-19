@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatMessageDeletedDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deletedMessageId;
-    /**
-     * @param string $deletedMessageId
-     */
-    public function setDeletedMessageId($deletedMessageId)
+namespace Google\Service\YouTube {
+    class LiveChatMessageDeletedDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deletedMessageId;
+        /**
+         * @param string $deletedMessageId
+         */
+        public function setDeletedMessageId($deletedMessageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletedMessageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatMessageDeletedDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletedMessageId()
+    class Google_Service_YouTube_LiveChatMessageDeletedDetails extends \Google\Service\YouTube\LiveChatMessageDeletedDetails
     {
     }
 }

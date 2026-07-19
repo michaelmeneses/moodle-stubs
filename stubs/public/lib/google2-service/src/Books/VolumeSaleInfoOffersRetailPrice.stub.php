@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeSaleInfoOffersRetailPrice extends \Google\Model
-{
-    public $amountInMicros;
-    /**
-     * @var string
-     */
-    public $currencyCode;
-    public function setAmountInMicros($amountInMicros)
+namespace Google\Service\Books {
+    class VolumeSaleInfoOffersRetailPrice extends \Google\Model
     {
+        public $amountInMicros;
+        /**
+         * @var string
+         */
+        public $currencyCode;
+        public function setAmountInMicros($amountInMicros)
+        {
+        }
+        public function getAmountInMicros()
+        {
+        }
+        /**
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
     }
-    public function getAmountInMicros()
-    {
-    }
+}
+namespace {
     /**
-     * @param string $currencyCode
+     * Runtime class alias of \Google\Service\Books\VolumeSaleInfoOffersRetailPrice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
+    class Google_Service_Books_VolumeSaleInfoOffersRetailPrice extends \Google\Service\Books\VolumeSaleInfoOffersRetailPrice
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class CommonFeatureSpec extends \Google\Model
-{
-    protected $appdevexperienceType = AppDevExperienceFeatureSpec::class;
-    protected $appdevexperienceDataType = '';
-    protected $clusterupgradeType = ClusterUpgradeFleetSpec::class;
-    protected $clusterupgradeDataType = '';
-    protected $dataplanev2Type = DataplaneV2FeatureSpec::class;
-    protected $dataplanev2DataType = '';
-    protected $fleetobservabilityType = FleetObservabilityFeatureSpec::class;
-    protected $fleetobservabilityDataType = '';
-    protected $multiclusteringressType = MultiClusterIngressFeatureSpec::class;
-    protected $multiclusteringressDataType = '';
-    /**
-     * @param AppDevExperienceFeatureSpec
-     */
-    public function setAppdevexperience(AppDevExperienceFeatureSpec $appdevexperience)
+namespace Google\Service\GKEHub {
+    class CommonFeatureSpec extends \Google\Model
     {
+        protected $appdevexperienceType = AppDevExperienceFeatureSpec::class;
+        protected $appdevexperienceDataType = '';
+        protected $clusterupgradeType = ClusterUpgradeFleetSpec::class;
+        protected $clusterupgradeDataType = '';
+        protected $dataplanev2Type = DataplaneV2FeatureSpec::class;
+        protected $dataplanev2DataType = '';
+        protected $fleetobservabilityType = FleetObservabilityFeatureSpec::class;
+        protected $fleetobservabilityDataType = '';
+        protected $multiclusteringressType = MultiClusterIngressFeatureSpec::class;
+        protected $multiclusteringressDataType = '';
+        /**
+         * @param AppDevExperienceFeatureSpec
+         */
+        public function setAppdevexperience(AppDevExperienceFeatureSpec $appdevexperience)
+        {
+        }
+        /**
+         * @return AppDevExperienceFeatureSpec
+         */
+        public function getAppdevexperience()
+        {
+        }
+        /**
+         * @param ClusterUpgradeFleetSpec
+         */
+        public function setClusterupgrade(ClusterUpgradeFleetSpec $clusterupgrade)
+        {
+        }
+        /**
+         * @return ClusterUpgradeFleetSpec
+         */
+        public function getClusterupgrade()
+        {
+        }
+        /**
+         * @param DataplaneV2FeatureSpec
+         */
+        public function setDataplanev2(DataplaneV2FeatureSpec $dataplanev2)
+        {
+        }
+        /**
+         * @return DataplaneV2FeatureSpec
+         */
+        public function getDataplanev2()
+        {
+        }
+        /**
+         * @param FleetObservabilityFeatureSpec
+         */
+        public function setFleetobservability(FleetObservabilityFeatureSpec $fleetobservability)
+        {
+        }
+        /**
+         * @return FleetObservabilityFeatureSpec
+         */
+        public function getFleetobservability()
+        {
+        }
+        /**
+         * @param MultiClusterIngressFeatureSpec
+         */
+        public function setMulticlusteringress(MultiClusterIngressFeatureSpec $multiclusteringress)
+        {
+        }
+        /**
+         * @return MultiClusterIngressFeatureSpec
+         */
+        public function getMulticlusteringress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppDevExperienceFeatureSpec
+     * Runtime class alias of \Google\Service\GKEHub\CommonFeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppdevexperience()
-    {
-    }
-    /**
-     * @param ClusterUpgradeFleetSpec
-     */
-    public function setClusterupgrade(ClusterUpgradeFleetSpec $clusterupgrade)
-    {
-    }
-    /**
-     * @return ClusterUpgradeFleetSpec
-     */
-    public function getClusterupgrade()
-    {
-    }
-    /**
-     * @param DataplaneV2FeatureSpec
-     */
-    public function setDataplanev2(DataplaneV2FeatureSpec $dataplanev2)
-    {
-    }
-    /**
-     * @return DataplaneV2FeatureSpec
-     */
-    public function getDataplanev2()
-    {
-    }
-    /**
-     * @param FleetObservabilityFeatureSpec
-     */
-    public function setFleetobservability(FleetObservabilityFeatureSpec $fleetobservability)
-    {
-    }
-    /**
-     * @return FleetObservabilityFeatureSpec
-     */
-    public function getFleetobservability()
-    {
-    }
-    /**
-     * @param MultiClusterIngressFeatureSpec
-     */
-    public function setMulticlusteringress(MultiClusterIngressFeatureSpec $multiclusteringress)
-    {
-    }
-    /**
-     * @return MultiClusterIngressFeatureSpec
-     */
-    public function getMulticlusteringress()
+    class Google_Service_GKEHub_CommonFeatureSpec extends \Google\Service\GKEHub\CommonFeatureSpec
     {
     }
 }

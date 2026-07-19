@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Fact extends \Google\Model
-{
-    protected $chunkType = GoogleCloudAiplatformV1RagChunk::class;
-    protected $chunkDataType = '';
-    /**
-     * Query that is used to retrieve this fact.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * If present, according to the underlying Vector DB and the selected metric
-     * type, the score can be either the distance or the similarity between the
-     * query and the fact and its range depends on the metric type. For example,
-     * if the metric type is COSINE_DISTANCE, it represents the distance between
-     * the query and the fact. The larger the distance, the less relevant the fact
-     * is to the query. The range is [0, 2], while 0 means the most relevant and 2
-     * means the least relevant.
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * If present, the summary/snippet of the fact.
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * If present, it refers to the title of this fact.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * If present, this uri links to the source of the fact.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * If present, the distance between the query vector and this fact vector.
-     *
-     * @deprecated
-     * @var 
-     */
-    public $vectorDistance;
-    /**
-     * If present, chunk properties.
-     *
-     * @param GoogleCloudAiplatformV1RagChunk $chunk
-     */
-    public function setChunk(GoogleCloudAiplatformV1RagChunk $chunk)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Fact extends \Google\Model
     {
+        protected $chunkType = GoogleCloudAiplatformV1RagChunk::class;
+        protected $chunkDataType = '';
+        /**
+         * Query that is used to retrieve this fact.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * If present, according to the underlying Vector DB and the selected metric
+         * type, the score can be either the distance or the similarity between the
+         * query and the fact and its range depends on the metric type. For example,
+         * if the metric type is COSINE_DISTANCE, it represents the distance between
+         * the query and the fact. The larger the distance, the less relevant the fact
+         * is to the query. The range is [0, 2], while 0 means the most relevant and 2
+         * means the least relevant.
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * If present, the summary/snippet of the fact.
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * If present, it refers to the title of this fact.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * If present, this uri links to the source of the fact.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * If present, the distance between the query vector and this fact vector.
+         *
+         * @deprecated
+         * @var 
+         */
+        public $vectorDistance;
+        /**
+         * If present, chunk properties.
+         *
+         * @param GoogleCloudAiplatformV1RagChunk $chunk
+         */
+        public function setChunk(GoogleCloudAiplatformV1RagChunk $chunk)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagChunk
+         */
+        public function getChunk()
+        {
+        }
+        /**
+         * Query that is used to retrieve this fact.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * If present, the summary/snippet of the fact.
+         *
+         * @param string $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
+        /**
+         * If present, it refers to the title of this fact.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * If present, this uri links to the source of the fact.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        public function setVectorDistance($vectorDistance)
+        {
+        }
+        public function getVectorDistance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagChunk
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Fact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunk()
-    {
-    }
-    /**
-     * Query that is used to retrieve this fact.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * If present, the summary/snippet of the fact.
-     *
-     * @param string $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
-    {
-    }
-    /**
-     * If present, it refers to the title of this fact.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * If present, this uri links to the source of the fact.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    public function setVectorDistance($vectorDistance)
-    {
-    }
-    public function getVectorDistance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Fact extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Fact
     {
     }
 }

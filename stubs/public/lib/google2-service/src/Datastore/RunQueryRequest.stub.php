@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class RunQueryRequest extends \Google\Model
-{
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @var string
-     */
-    public $databaseId;
-    protected $explainOptionsType = ExplainOptions::class;
-    protected $explainOptionsDataType = '';
-    protected $gqlQueryType = GqlQuery::class;
-    protected $gqlQueryDataType = '';
-    protected $partitionIdType = PartitionId::class;
-    protected $partitionIdDataType = '';
-    protected $propertyMaskType = PropertyMask::class;
-    protected $propertyMaskDataType = '';
-    protected $queryType = Query::class;
-    protected $queryDataType = '';
-    protected $readOptionsType = ReadOptions::class;
-    protected $readOptionsDataType = '';
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Datastore {
+    class RunQueryRequest extends \Google\Model
     {
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @var string
+         */
+        public $databaseId;
+        protected $explainOptionsType = ExplainOptions::class;
+        protected $explainOptionsDataType = '';
+        protected $gqlQueryType = GqlQuery::class;
+        protected $gqlQueryDataType = '';
+        protected $partitionIdType = PartitionId::class;
+        protected $partitionIdDataType = '';
+        protected $propertyMaskType = PropertyMask::class;
+        protected $propertyMaskDataType = '';
+        protected $queryType = Query::class;
+        protected $queryDataType = '';
+        protected $readOptionsType = ReadOptions::class;
+        protected $readOptionsDataType = '';
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Optional. Explain options for the query. If set, additional query
+         * statistics will be returned. If not, only query results will be returned.
+         *
+         * @param ExplainOptions $explainOptions
+         */
+        public function setExplainOptions(ExplainOptions $explainOptions)
+        {
+        }
+        /**
+         * @return ExplainOptions
+         */
+        public function getExplainOptions()
+        {
+        }
+        /**
+         * The GQL query to run. This query must be a non-aggregation query.
+         *
+         * @param GqlQuery $gqlQuery
+         */
+        public function setGqlQuery(GqlQuery $gqlQuery)
+        {
+        }
+        /**
+         * @return GqlQuery
+         */
+        public function getGqlQuery()
+        {
+        }
+        /**
+         * Entities are partitioned into subsets, identified by a partition ID.
+         * Queries are scoped to a single partition. This partition ID is normalized
+         * with the standard default context partition ID.
+         *
+         * @param PartitionId $partitionId
+         */
+        public function setPartitionId(PartitionId $partitionId)
+        {
+        }
+        /**
+         * @return PartitionId
+         */
+        public function getPartitionId()
+        {
+        }
+        /**
+         * The properties to return. This field must not be set for a projection
+         * query. See LookupRequest.property_mask.
+         *
+         * @param PropertyMask $propertyMask
+         */
+        public function setPropertyMask(PropertyMask $propertyMask)
+        {
+        }
+        /**
+         * @return PropertyMask
+         */
+        public function getPropertyMask()
+        {
+        }
+        /**
+         * The query to run.
+         *
+         * @param Query $query
+         */
+        public function setQuery(Query $query)
+        {
+        }
+        /**
+         * @return Query
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * The options for this query.
+         *
+         * @param ReadOptions $readOptions
+         */
+        public function setReadOptions(ReadOptions $readOptions)
+        {
+        }
+        /**
+         * @return ReadOptions
+         */
+        public function getReadOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\RunQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Optional. Explain options for the query. If set, additional query
-     * statistics will be returned. If not, only query results will be returned.
-     *
-     * @param ExplainOptions $explainOptions
-     */
-    public function setExplainOptions(ExplainOptions $explainOptions)
-    {
-    }
-    /**
-     * @return ExplainOptions
-     */
-    public function getExplainOptions()
-    {
-    }
-    /**
-     * The GQL query to run. This query must be a non-aggregation query.
-     *
-     * @param GqlQuery $gqlQuery
-     */
-    public function setGqlQuery(GqlQuery $gqlQuery)
-    {
-    }
-    /**
-     * @return GqlQuery
-     */
-    public function getGqlQuery()
-    {
-    }
-    /**
-     * Entities are partitioned into subsets, identified by a partition ID.
-     * Queries are scoped to a single partition. This partition ID is normalized
-     * with the standard default context partition ID.
-     *
-     * @param PartitionId $partitionId
-     */
-    public function setPartitionId(PartitionId $partitionId)
-    {
-    }
-    /**
-     * @return PartitionId
-     */
-    public function getPartitionId()
-    {
-    }
-    /**
-     * The properties to return. This field must not be set for a projection
-     * query. See LookupRequest.property_mask.
-     *
-     * @param PropertyMask $propertyMask
-     */
-    public function setPropertyMask(PropertyMask $propertyMask)
-    {
-    }
-    /**
-     * @return PropertyMask
-     */
-    public function getPropertyMask()
-    {
-    }
-    /**
-     * The query to run.
-     *
-     * @param Query $query
-     */
-    public function setQuery(Query $query)
-    {
-    }
-    /**
-     * @return Query
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * The options for this query.
-     *
-     * @param ReadOptions $readOptions
-     */
-    public function setReadOptions(ReadOptions $readOptions)
-    {
-    }
-    /**
-     * @return ReadOptions
-     */
-    public function getReadOptions()
+    class Google_Service_Datastore_RunQueryRequest extends \Google\Service\Datastore\RunQueryRequest
     {
     }
 }

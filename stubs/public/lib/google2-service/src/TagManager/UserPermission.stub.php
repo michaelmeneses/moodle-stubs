@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class UserPermission extends \Google\Collection
-{
-    protected $collection_key = 'containerAccess';
-    protected $accountAccessType = AccountAccess::class;
-    protected $accountAccessDataType = '';
-    /**
-     * The Account ID uniquely identifies the GTM Account.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $containerAccessType = ContainerAccess::class;
-    protected $containerAccessDataType = 'array';
-    /**
-     * User's email address.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * GTM UserPermission's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * GTM Account access permissions.
-     *
-     * @param AccountAccess $accountAccess
-     */
-    public function setAccountAccess(AccountAccess $accountAccess)
+namespace Google\Service\TagManager {
+    class UserPermission extends \Google\Collection
     {
+        protected $collection_key = 'containerAccess';
+        protected $accountAccessType = AccountAccess::class;
+        protected $accountAccessDataType = '';
+        /**
+         * The Account ID uniquely identifies the GTM Account.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $containerAccessType = ContainerAccess::class;
+        protected $containerAccessDataType = 'array';
+        /**
+         * User's email address.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * GTM UserPermission's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * GTM Account access permissions.
+         *
+         * @param AccountAccess $accountAccess
+         */
+        public function setAccountAccess(AccountAccess $accountAccess)
+        {
+        }
+        /**
+         * @return AccountAccess
+         */
+        public function getAccountAccess()
+        {
+        }
+        /**
+         * The Account ID uniquely identifies the GTM Account.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * GTM Container access permissions.
+         *
+         * @param ContainerAccess[] $containerAccess
+         */
+        public function setContainerAccess($containerAccess)
+        {
+        }
+        /**
+         * @return ContainerAccess[]
+         */
+        public function getContainerAccess()
+        {
+        }
+        /**
+         * User's email address.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * GTM UserPermission's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountAccess
+     * Runtime class alias of \Google\Service\TagManager\UserPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountAccess()
-    {
-    }
-    /**
-     * The Account ID uniquely identifies the GTM Account.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccountId()
-    {
-    }
-    /**
-     * GTM Container access permissions.
-     *
-     * @param ContainerAccess[] $containerAccess
-     */
-    public function setContainerAccess($containerAccess)
-    {
-    }
-    /**
-     * @return ContainerAccess[]
-     */
-    public function getContainerAccess()
-    {
-    }
-    /**
-     * User's email address.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * GTM UserPermission's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_TagManager_UserPermission extends \Google\Service\TagManager\UserPermission
     {
     }
 }

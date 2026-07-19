@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeStruct extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $encodingType = GoogleBigtableAdminV2TypeStructEncoding::class;
-    protected $encodingDataType = '';
-    protected $fieldsType = GoogleBigtableAdminV2TypeStructField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * The encoding to use when converting to or from lower level types.
-     *
-     * @param GoogleBigtableAdminV2TypeStructEncoding $encoding
-     */
-    public function setEncoding(GoogleBigtableAdminV2TypeStructEncoding $encoding)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeStruct extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $encodingType = GoogleBigtableAdminV2TypeStructEncoding::class;
+        protected $encodingDataType = '';
+        protected $fieldsType = GoogleBigtableAdminV2TypeStructField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * The encoding to use when converting to or from lower level types.
+         *
+         * @param GoogleBigtableAdminV2TypeStructEncoding $encoding
+         */
+        public function setEncoding(GoogleBigtableAdminV2TypeStructEncoding $encoding)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeStructEncoding
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * The names and types of the fields in this struct.
+         *
+         * @param GoogleBigtableAdminV2TypeStructField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeStructField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeStructEncoding
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStruct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
-    {
-    }
-    /**
-     * The names and types of the fields in this struct.
-     *
-     * @param GoogleBigtableAdminV2TypeStructField[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeStructField[]
-     */
-    public function getFields()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeStruct extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStruct
     {
     }
 }

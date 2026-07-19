@@ -21,93 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "smimeInfo" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $smimeInfo = $gmailService->users_settings_sendAs_smimeInfo;
- *  </code>
- */
-class UsersSettingsSendAsSmimeInfo extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    use Google\Service\Gmail\ListSmimeInfoResponse;
+    use Google\Service\Gmail\SmimeInfo;
     /**
-     * Deletes the specified S/MIME config for the specified send-as alias.
-     * (smimeInfo.delete)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $sendAsEmail The email address that appears in the "From:"
-     * header for mail sent using this alias.
-     * @param string $id The immutable ID for the SmimeInfo.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "smimeInfo" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $smimeInfo = $gmailService->users_settings_sendAs_smimeInfo;
+     *  </code>
      */
-    public function delete($userId, $sendAsEmail, $id, $optParams = [])
+    class UsersSettingsSendAsSmimeInfo extends \Google\Service\Resource
     {
+        /**
+         * Deletes the specified S/MIME config for the specified send-as alias.
+         * (smimeInfo.delete)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $sendAsEmail The email address that appears in the "From:"
+         * header for mail sent using this alias.
+         * @param string $id The immutable ID for the SmimeInfo.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userId, $sendAsEmail, $id, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified S/MIME config for the specified send-as alias.
+         * (smimeInfo.get)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $sendAsEmail The email address that appears in the "From:"
+         * header for mail sent using this alias.
+         * @param string $id The immutable ID for the SmimeInfo.
+         * @param array $optParams Optional parameters.
+         * @return SmimeInfo
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $sendAsEmail, $id, $optParams = [])
+        {
+        }
+        /**
+         * Insert (upload) the given S/MIME config for the specified send-as alias. Note
+         * that pkcs12 format is required for the key. (smimeInfo.insert)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $sendAsEmail The email address that appears in the "From:"
+         * header for mail sent using this alias.
+         * @param SmimeInfo $postBody
+         * @param array $optParams Optional parameters.
+         * @return SmimeInfo
+         * @throws \Google\Service\Exception
+         */
+        public function insert($userId, $sendAsEmail, SmimeInfo $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists S/MIME configs for the specified send-as alias.
+         * (smimeInfo.listUsersSettingsSendAsSmimeInfo)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $sendAsEmail The email address that appears in the "From:"
+         * header for mail sent using this alias.
+         * @param array $optParams Optional parameters.
+         * @return ListSmimeInfoResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsersSettingsSendAsSmimeInfo($userId, $sendAsEmail, $optParams = [])
+        {
+        }
+        /**
+         * Sets the default S/MIME config for the specified send-as alias.
+         * (smimeInfo.setDefault)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $sendAsEmail The email address that appears in the "From:"
+         * header for mail sent using this alias.
+         * @param string $id The immutable ID for the SmimeInfo.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function setDefault($userId, $sendAsEmail, $id, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the specified S/MIME config for the specified send-as alias.
-     * (smimeInfo.get)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $sendAsEmail The email address that appears in the "From:"
-     * header for mail sent using this alias.
-     * @param string $id The immutable ID for the SmimeInfo.
-     * @param array $optParams Optional parameters.
-     * @return SmimeInfo
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Gmail\Resource\UsersSettingsSendAsSmimeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($userId, $sendAsEmail, $id, $optParams = [])
-    {
-    }
-    /**
-     * Insert (upload) the given S/MIME config for the specified send-as alias. Note
-     * that pkcs12 format is required for the key. (smimeInfo.insert)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $sendAsEmail The email address that appears in the "From:"
-     * header for mail sent using this alias.
-     * @param SmimeInfo $postBody
-     * @param array $optParams Optional parameters.
-     * @return SmimeInfo
-     * @throws \Google\Service\Exception
-     */
-    public function insert($userId, $sendAsEmail, SmimeInfo $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists S/MIME configs for the specified send-as alias.
-     * (smimeInfo.listUsersSettingsSendAsSmimeInfo)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $sendAsEmail The email address that appears in the "From:"
-     * header for mail sent using this alias.
-     * @param array $optParams Optional parameters.
-     * @return ListSmimeInfoResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listUsersSettingsSendAsSmimeInfo($userId, $sendAsEmail, $optParams = [])
-    {
-    }
-    /**
-     * Sets the default S/MIME config for the specified send-as alias.
-     * (smimeInfo.setDefault)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $sendAsEmail The email address that appears in the "From:"
-     * header for mail sent using this alias.
-     * @param string $id The immutable ID for the SmimeInfo.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function setDefault($userId, $sendAsEmail, $id, $optParams = [])
+    class Google_Service_Gmail_Resource_UsersSettingsSendAsSmimeInfo extends \Google\Service\Gmail\Resource\UsersSettingsSendAsSmimeInfo
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FunctionResponsePart extends \Google\Model
-{
-    protected $fileDataType = GoogleCloudAiplatformV1FunctionResponseFileData::class;
-    protected $fileDataDataType = '';
-    protected $inlineDataType = GoogleCloudAiplatformV1FunctionResponseBlob::class;
-    protected $inlineDataDataType = '';
-    /**
-     * URI based data.
-     *
-     * @param GoogleCloudAiplatformV1FunctionResponseFileData $fileData
-     */
-    public function setFileData(GoogleCloudAiplatformV1FunctionResponseFileData $fileData)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FunctionResponsePart extends \Google\Model
     {
+        protected $fileDataType = GoogleCloudAiplatformV1FunctionResponseFileData::class;
+        protected $fileDataDataType = '';
+        protected $inlineDataType = GoogleCloudAiplatformV1FunctionResponseBlob::class;
+        protected $inlineDataDataType = '';
+        /**
+         * URI based data.
+         *
+         * @param GoogleCloudAiplatformV1FunctionResponseFileData $fileData
+         */
+        public function setFileData(GoogleCloudAiplatformV1FunctionResponseFileData $fileData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FunctionResponseFileData
+         */
+        public function getFileData()
+        {
+        }
+        /**
+         * Inline media bytes.
+         *
+         * @param GoogleCloudAiplatformV1FunctionResponseBlob $inlineData
+         */
+        public function setInlineData(GoogleCloudAiplatformV1FunctionResponseBlob $inlineData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FunctionResponseBlob
+         */
+        public function getInlineData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FunctionResponseFileData
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponsePart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileData()
-    {
-    }
-    /**
-     * Inline media bytes.
-     *
-     * @param GoogleCloudAiplatformV1FunctionResponseBlob $inlineData
-     */
-    public function setInlineData(GoogleCloudAiplatformV1FunctionResponseBlob $inlineData)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FunctionResponseBlob
-     */
-    public function getInlineData()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FunctionResponsePart extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponsePart
     {
     }
 }

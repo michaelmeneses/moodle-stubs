@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AutocompletePlacesResponse extends \Google\Collection
-{
-    protected $collection_key = 'suggestions';
-    protected $suggestionsType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion::class;
-    protected $suggestionsDataType = 'array';
-    /**
-     * Contains a list of suggestions, ordered in descending order of relevance.
-     *
-     * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion[] $suggestions
-     */
-    public function setSuggestions($suggestions)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AutocompletePlacesResponse extends \Google\Collection
     {
+        protected $collection_key = 'suggestions';
+        protected $suggestionsType = GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion::class;
+        protected $suggestionsDataType = 'array';
+        /**
+         * Contains a list of suggestions, ordered in descending order of relevance.
+         *
+         * @param GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion[] $suggestions
+         */
+        public function setSuggestions($suggestions)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion[]
+         */
+        public function getSuggestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1AutocompletePlacesResponseSuggestion[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestions()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AutocompletePlacesResponse extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponse
     {
     }
 }

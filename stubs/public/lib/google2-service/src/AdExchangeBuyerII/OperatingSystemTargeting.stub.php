@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class OperatingSystemTargeting extends \Google\Model
-{
-    protected $operatingSystemCriteriaType = CriteriaTargeting::class;
-    protected $operatingSystemCriteriaDataType = '';
-    protected $operatingSystemVersionCriteriaType = CriteriaTargeting::class;
-    protected $operatingSystemVersionCriteriaDataType = '';
-    /**
-     * IDs of operating systems to be included/excluded.
-     *
-     * @param CriteriaTargeting $operatingSystemCriteria
-     */
-    public function setOperatingSystemCriteria(CriteriaTargeting $operatingSystemCriteria)
+namespace Google\Service\AdExchangeBuyerII {
+    class OperatingSystemTargeting extends \Google\Model
     {
+        protected $operatingSystemCriteriaType = CriteriaTargeting::class;
+        protected $operatingSystemCriteriaDataType = '';
+        protected $operatingSystemVersionCriteriaType = CriteriaTargeting::class;
+        protected $operatingSystemVersionCriteriaDataType = '';
+        /**
+         * IDs of operating systems to be included/excluded.
+         *
+         * @param CriteriaTargeting $operatingSystemCriteria
+         */
+        public function setOperatingSystemCriteria(CriteriaTargeting $operatingSystemCriteria)
+        {
+        }
+        /**
+         * @return CriteriaTargeting
+         */
+        public function getOperatingSystemCriteria()
+        {
+        }
+        /**
+         * IDs of operating system versions to be included/excluded.
+         *
+         * @param CriteriaTargeting $operatingSystemVersionCriteria
+         */
+        public function setOperatingSystemVersionCriteria(CriteriaTargeting $operatingSystemVersionCriteria)
+        {
+        }
+        /**
+         * @return CriteriaTargeting
+         */
+        public function getOperatingSystemVersionCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CriteriaTargeting
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\OperatingSystemTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatingSystemCriteria()
-    {
-    }
-    /**
-     * IDs of operating system versions to be included/excluded.
-     *
-     * @param CriteriaTargeting $operatingSystemVersionCriteria
-     */
-    public function setOperatingSystemVersionCriteria(CriteriaTargeting $operatingSystemVersionCriteria)
-    {
-    }
-    /**
-     * @return CriteriaTargeting
-     */
-    public function getOperatingSystemVersionCriteria()
+    class Google_Service_AdExchangeBuyerII_OperatingSystemTargeting extends \Google\Service\AdExchangeBuyerII\OperatingSystemTargeting
     {
     }
 }

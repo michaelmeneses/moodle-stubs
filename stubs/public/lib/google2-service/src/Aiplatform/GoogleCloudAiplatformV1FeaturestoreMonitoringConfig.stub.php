@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeaturestoreMonitoringConfig extends \Google\Model
-{
-    protected $categoricalThresholdConfigType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig::class;
-    protected $categoricalThresholdConfigDataType = '';
-    protected $importFeaturesAnalysisType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis::class;
-    protected $importFeaturesAnalysisDataType = '';
-    protected $numericalThresholdConfigType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig::class;
-    protected $numericalThresholdConfigDataType = '';
-    protected $snapshotAnalysisType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis::class;
-    protected $snapshotAnalysisDataType = '';
-    /**
-     * Threshold for categorical features of anomaly detection. This is shared by
-     * all types of Featurestore Monitoring for categorical features (i.e.
-     * Features with type (Feature.ValueType) BOOL or STRING).
-     *
-     * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $categoricalThresholdConfig
-     */
-    public function setCategoricalThresholdConfig(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $categoricalThresholdConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeaturestoreMonitoringConfig extends \Google\Model
     {
+        protected $categoricalThresholdConfigType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig::class;
+        protected $categoricalThresholdConfigDataType = '';
+        protected $importFeaturesAnalysisType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis::class;
+        protected $importFeaturesAnalysisDataType = '';
+        protected $numericalThresholdConfigType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig::class;
+        protected $numericalThresholdConfigDataType = '';
+        protected $snapshotAnalysisType = GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis::class;
+        protected $snapshotAnalysisDataType = '';
+        /**
+         * Threshold for categorical features of anomaly detection. This is shared by
+         * all types of Featurestore Monitoring for categorical features (i.e.
+         * Features with type (Feature.ValueType) BOOL or STRING).
+         *
+         * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $categoricalThresholdConfig
+         */
+        public function setCategoricalThresholdConfig(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $categoricalThresholdConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig
+         */
+        public function getCategoricalThresholdConfig()
+        {
+        }
+        /**
+         * The config for ImportFeatures Analysis Based Feature Monitoring.
+         *
+         * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis $importFeaturesAnalysis
+         */
+        public function setImportFeaturesAnalysis(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis $importFeaturesAnalysis)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis
+         */
+        public function getImportFeaturesAnalysis()
+        {
+        }
+        /**
+         * Threshold for numerical features of anomaly detection. This is shared by
+         * all objectives of Featurestore Monitoring for numerical features (i.e.
+         * Features with type (Feature.ValueType) DOUBLE or INT64).
+         *
+         * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $numericalThresholdConfig
+         */
+        public function setNumericalThresholdConfig(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $numericalThresholdConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig
+         */
+        public function getNumericalThresholdConfig()
+        {
+        }
+        /**
+         * The config for Snapshot Analysis Based Feature Monitoring.
+         *
+         * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis $snapshotAnalysis
+         */
+        public function setSnapshotAnalysis(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis $snapshotAnalysis)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis
+         */
+        public function getSnapshotAnalysis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreMonitoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoricalThresholdConfig()
-    {
-    }
-    /**
-     * The config for ImportFeatures Analysis Based Feature Monitoring.
-     *
-     * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis $importFeaturesAnalysis
-     */
-    public function setImportFeaturesAnalysis(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis $importFeaturesAnalysis)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigImportFeaturesAnalysis
-     */
-    public function getImportFeaturesAnalysis()
-    {
-    }
-    /**
-     * Threshold for numerical features of anomaly detection. This is shared by
-     * all objectives of Featurestore Monitoring for numerical features (i.e.
-     * Features with type (Feature.ValueType) DOUBLE or INT64).
-     *
-     * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $numericalThresholdConfig
-     */
-    public function setNumericalThresholdConfig(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig $numericalThresholdConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig
-     */
-    public function getNumericalThresholdConfig()
-    {
-    }
-    /**
-     * The config for Snapshot Analysis Based Feature Monitoring.
-     *
-     * @param GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis $snapshotAnalysis
-     */
-    public function setSnapshotAnalysis(GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis $snapshotAnalysis)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis
-     */
-    public function getSnapshotAnalysis()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeaturestoreMonitoringConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreMonitoringConfig
     {
     }
 }

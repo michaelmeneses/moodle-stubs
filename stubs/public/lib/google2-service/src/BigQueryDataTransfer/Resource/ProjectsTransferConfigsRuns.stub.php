@@ -21,77 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer\Resource;
-
-/**
- * The "runs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
- *   $runs = $bigquerydatatransferService->projects_transferConfigs_runs;
- *  </code>
- */
-class ProjectsTransferConfigsRuns extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryDataTransfer\Resource {
+    use Google\Service\BigQueryDataTransfer\BigquerydatatransferEmpty;
+    use Google\Service\BigQueryDataTransfer\ListTransferRunsResponse;
+    use Google\Service\BigQueryDataTransfer\TransferRun;
     /**
-     * Deletes the specified transfer run. (runs.delete)
-     *
-     * @param string $name Required. The name of the resource requested. If you are
-     * using the regionless method, the location must be `US` and the name should be
-     * in the following form: *
-     * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}` If you are
-     * using the regionalized method, the name should be in the following form: * `p
-     * rojects/{project_id}/locations/{location_id}/transferConfigs/{config_id}/runs
-     * /{run_id}`
-     * @param array $optParams Optional parameters.
-     * @return BigquerydatatransferEmpty
-     * @throws \Google\Service\Exception
+     * The "runs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
+     *   $runs = $bigquerydatatransferService->projects_transferConfigs_runs;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsTransferConfigsRuns extends \Google\Service\Resource
     {
+        /**
+         * Deletes the specified transfer run. (runs.delete)
+         *
+         * @param string $name Required. The name of the resource requested. If you are
+         * using the regionless method, the location must be `US` and the name should be
+         * in the following form: *
+         * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}` If you are
+         * using the regionalized method, the name should be in the following form: * `p
+         * rojects/{project_id}/locations/{location_id}/transferConfigs/{config_id}/runs
+         * /{run_id}`
+         * @param array $optParams Optional parameters.
+         * @return BigquerydatatransferEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns information about the particular transfer run. (runs.get)
+         *
+         * @param string $name Required. The name of the resource requested. If you are
+         * using the regionless method, the location must be `US` and the name should be
+         * in the following form: *
+         * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}` If you are
+         * using the regionalized method, the name should be in the following form: * `p
+         * rojects/{project_id}/locations/{location_id}/transferConfigs/{config_id}/runs
+         * /{run_id}`
+         * @param array $optParams Optional parameters.
+         * @return TransferRun
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns information about running and completed transfer runs.
+         * (runs.listProjectsTransferConfigsRuns)
+         *
+         * @param string $parent Required. Name of transfer configuration for which
+         * transfer runs should be retrieved. If you are using the regionless method,
+         * the location must be `US` and the name should be in the following form: *
+         * `projects/{project_id}/transferConfigs/{config_id}` If you are using the
+         * regionalized method, the name should be in the following form: *
+         * `projects/{project_id}/locations/{location_id}/transferConfigs/{config_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Page size. The default page size is the maximum value
+         * of 1000 results.
+         * @opt_param string pageToken Pagination token, which can be used to request a
+         * specific page of `ListTransferRunsRequest` list results. For multiple-page
+         * results, `ListTransferRunsResponse` outputs a `next_page` token, which can be
+         * used as the `page_token` value to request the next page of list results.
+         * @opt_param string runAttempt Indicates how run attempts are to be pulled.
+         * @opt_param string states When specified, only transfer runs with requested
+         * states are returned.
+         * @return ListTransferRunsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsTransferConfigsRuns($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns information about the particular transfer run. (runs.get)
-     *
-     * @param string $name Required. The name of the resource requested. If you are
-     * using the regionless method, the location must be `US` and the name should be
-     * in the following form: *
-     * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}` If you are
-     * using the regionalized method, the name should be in the following form: * `p
-     * rojects/{project_id}/locations/{location_id}/transferConfigs/{config_id}/runs
-     * /{run_id}`
-     * @param array $optParams Optional parameters.
-     * @return TransferRun
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\Resource\ProjectsTransferConfigsRuns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns information about running and completed transfer runs.
-     * (runs.listProjectsTransferConfigsRuns)
-     *
-     * @param string $parent Required. Name of transfer configuration for which
-     * transfer runs should be retrieved. If you are using the regionless method,
-     * the location must be `US` and the name should be in the following form: *
-     * `projects/{project_id}/transferConfigs/{config_id}` If you are using the
-     * regionalized method, the name should be in the following form: *
-     * `projects/{project_id}/locations/{location_id}/transferConfigs/{config_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Page size. The default page size is the maximum value
-     * of 1000 results.
-     * @opt_param string pageToken Pagination token, which can be used to request a
-     * specific page of `ListTransferRunsRequest` list results. For multiple-page
-     * results, `ListTransferRunsResponse` outputs a `next_page` token, which can be
-     * used as the `page_token` value to request the next page of list results.
-     * @opt_param string runAttempt Indicates how run attempts are to be pulled.
-     * @opt_param string states When specified, only transfer runs with requested
-     * states are returned.
-     * @return ListTransferRunsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsTransferConfigsRuns($parent, $optParams = [])
+    class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns extends \Google\Service\BigQueryDataTransfer\Resource\ProjectsTransferConfigsRuns
     {
     }
 }

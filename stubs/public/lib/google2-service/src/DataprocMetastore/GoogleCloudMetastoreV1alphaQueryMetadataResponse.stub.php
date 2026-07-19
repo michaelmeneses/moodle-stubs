@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1alphaQueryMetadataResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $resultManifestUri;
-    /**
-     * @param string
-     */
-    public function setResultManifestUri($resultManifestUri)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1alphaQueryMetadataResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $resultManifestUri;
+        /**
+         * @param string
+         */
+        public function setResultManifestUri($resultManifestUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultManifestUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaQueryMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResultManifestUri()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1alphaQueryMetadataResponse extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaQueryMetadataResponse
     {
     }
 }

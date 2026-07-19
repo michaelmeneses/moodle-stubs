@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * Continuation token to fetch the next page of data.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rowsType = GooglePlayDeveloperReportingV1beta1MetricsRow::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Continuation token to fetch the next page of data.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * Continuation token to fetch the next page of data.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rowsType = GooglePlayDeveloperReportingV1beta1MetricsRow::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Continuation token to fetch the next page of data.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Returned rows of data.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1MetricsRow[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1MetricsRow[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Returned rows of data.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1MetricsRow[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1MetricsRow[]
-     */
-    public function getRows()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse
     {
     }
 }

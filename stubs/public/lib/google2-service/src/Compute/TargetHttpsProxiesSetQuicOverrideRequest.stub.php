@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetHttpsProxiesSetQuicOverrideRequest extends \Google\Model
-{
-    /**
-     * The load balancer will not attempt to negotiate QUIC with clients.
-     */
-    public const QUIC_OVERRIDE_DISABLE = 'DISABLE';
-    /**
-     * The load balancer will attempt to negotiate QUIC with clients.
-     */
-    public const QUIC_OVERRIDE_ENABLE = 'ENABLE';
-    /**
-     * No overrides to the default QUIC policy. This option is implicit if no QUIC
-     * override has been specified in the request.
-     */
-    public const QUIC_OVERRIDE_NONE = 'NONE';
-    /**
-     * QUIC policy for the TargetHttpsProxy resource.
-     *
-     * @var string
-     */
-    public $quicOverride;
-    /**
-     * QUIC policy for the TargetHttpsProxy resource.
-     *
-     * Accepted values: DISABLE, ENABLE, NONE
-     *
-     * @param self::QUIC_OVERRIDE_* $quicOverride
-     */
-    public function setQuicOverride($quicOverride)
+namespace Google\Service\Compute {
+    class TargetHttpsProxiesSetQuicOverrideRequest extends \Google\Model
     {
+        /**
+         * The load balancer will not attempt to negotiate QUIC with clients.
+         */
+        public const QUIC_OVERRIDE_DISABLE = 'DISABLE';
+        /**
+         * The load balancer will attempt to negotiate QUIC with clients.
+         */
+        public const QUIC_OVERRIDE_ENABLE = 'ENABLE';
+        /**
+         * No overrides to the default QUIC policy. This option is implicit if no QUIC
+         * override has been specified in the request.
+         */
+        public const QUIC_OVERRIDE_NONE = 'NONE';
+        /**
+         * QUIC policy for the TargetHttpsProxy resource.
+         *
+         * @var string
+         */
+        public $quicOverride;
+        /**
+         * QUIC policy for the TargetHttpsProxy resource.
+         *
+         * Accepted values: DISABLE, ENABLE, NONE
+         *
+         * @param self::QUIC_OVERRIDE_* $quicOverride
+         */
+        public function setQuicOverride($quicOverride)
+        {
+        }
+        /**
+         * @return self::QUIC_OVERRIDE_*
+         */
+        public function getQuicOverride()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::QUIC_OVERRIDE_*
+     * Runtime class alias of \Google\Service\Compute\TargetHttpsProxiesSetQuicOverrideRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuicOverride()
+    class Google_Service_Compute_TargetHttpsProxiesSetQuicOverrideRequest extends \Google\Service\Compute\TargetHttpsProxiesSetQuicOverrideRequest
     {
     }
 }

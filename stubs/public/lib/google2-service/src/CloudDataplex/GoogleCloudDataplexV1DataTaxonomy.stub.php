@@ -21,220 +21,229 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataTaxonomy extends \Google\Model
-{
-    /**
-     * Output only. The number of attributes in the DataTaxonomy.
-     *
-     * @var int
-     */
-    public $attributeCount;
-    /**
-     * Output only. The number of classes in the DataTaxonomy.
-     *
-     * @var int
-     */
-    public $classCount;
-    /**
-     * Output only. The time when the DataTaxonomy was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the DataTaxonomy.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User friendly display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. User-defined labels for the DataTaxonomy.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The relative resource name of the DataTaxonomy, of the form: p
-     * rojects/{project_number}/locations/{location_id}/dataTaxonomies/{data_taxon
-     * omy_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. System generated globally unique ID for the dataTaxonomy. This
-     * ID will be different if the DataTaxonomy is deleted and re-created with the
-     * same name.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time when the DataTaxonomy was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The number of attributes in the DataTaxonomy.
-     *
-     * @param int $attributeCount
-     */
-    public function setAttributeCount($attributeCount)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataTaxonomy extends \Google\Model
     {
+        /**
+         * Output only. The number of attributes in the DataTaxonomy.
+         *
+         * @var int
+         */
+        public $attributeCount;
+        /**
+         * Output only. The number of classes in the DataTaxonomy.
+         *
+         * @var int
+         */
+        public $classCount;
+        /**
+         * Output only. The time when the DataTaxonomy was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the DataTaxonomy.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User friendly display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. User-defined labels for the DataTaxonomy.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The relative resource name of the DataTaxonomy, of the form: p
+         * rojects/{project_number}/locations/{location_id}/dataTaxonomies/{data_taxon
+         * omy_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. System generated globally unique ID for the dataTaxonomy. This
+         * ID will be different if the DataTaxonomy is deleted and re-created with the
+         * same name.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time when the DataTaxonomy was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The number of attributes in the DataTaxonomy.
+         *
+         * @param int $attributeCount
+         */
+        public function setAttributeCount($attributeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAttributeCount()
+        {
+        }
+        /**
+         * Output only. The number of classes in the DataTaxonomy.
+         *
+         * @param int $classCount
+         */
+        public function setClassCount($classCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getClassCount()
+        {
+        }
+        /**
+         * Output only. The time when the DataTaxonomy was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the DataTaxonomy.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User friendly display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. User-defined labels for the DataTaxonomy.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The relative resource name of the DataTaxonomy, of the form: p
+         * rojects/{project_number}/locations/{location_id}/dataTaxonomies/{data_taxon
+         * omy_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. System generated globally unique ID for the dataTaxonomy. This
+         * ID will be different if the DataTaxonomy is deleted and re-created with the
+         * same name.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time when the DataTaxonomy was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataTaxonomy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeCount()
-    {
-    }
-    /**
-     * Output only. The number of classes in the DataTaxonomy.
-     *
-     * @param int $classCount
-     */
-    public function setClassCount($classCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getClassCount()
-    {
-    }
-    /**
-     * Output only. The time when the DataTaxonomy was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the DataTaxonomy.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User friendly display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. User-defined labels for the DataTaxonomy.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The relative resource name of the DataTaxonomy, of the form: p
-     * rojects/{project_number}/locations/{location_id}/dataTaxonomies/{data_taxon
-     * omy_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. System generated globally unique ID for the dataTaxonomy. This
-     * ID will be different if the DataTaxonomy is deleted and re-created with the
-     * same name.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time when the DataTaxonomy was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataTaxonomy extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataTaxonomy
     {
     }
 }

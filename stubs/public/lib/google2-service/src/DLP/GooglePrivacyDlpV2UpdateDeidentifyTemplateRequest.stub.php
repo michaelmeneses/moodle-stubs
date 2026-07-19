@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UpdateDeidentifyTemplateRequest extends \Google\Model
-{
-    protected $deidentifyTemplateType = GooglePrivacyDlpV2DeidentifyTemplate::class;
-    protected $deidentifyTemplateDataType = '';
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * New DeidentifyTemplate value.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate
-     */
-    public function setDeidentifyTemplate(GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UpdateDeidentifyTemplateRequest extends \Google\Model
     {
+        protected $deidentifyTemplateType = GooglePrivacyDlpV2DeidentifyTemplate::class;
+        protected $deidentifyTemplateDataType = '';
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * New DeidentifyTemplate value.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate
+         */
+        public function setDeidentifyTemplate(GooglePrivacyDlpV2DeidentifyTemplate $deidentifyTemplate)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyTemplate
+         */
+        public function getDeidentifyTemplate()
+        {
+        }
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeidentifyTemplate
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UpdateDeidentifyTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyTemplate()
-    {
-    }
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DLP_GooglePrivacyDlpV2UpdateDeidentifyTemplateRequest extends \Google\Service\DLP\GooglePrivacyDlpV2UpdateDeidentifyTemplateRequest
     {
     }
 }

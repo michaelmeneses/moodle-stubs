@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class CorrectAnswers extends \Google\Collection
-{
-    protected $collection_key = 'answers';
-    protected $answersType = CorrectAnswer::class;
-    protected $answersDataType = 'array';
-    /**
-     * A list of correct answers. A quiz response can be automatically graded
-     * based on these answers. For single-valued questions, a response is marked
-     * correct if it matches any value in this list (in other words, multiple
-     * correct answers are possible). For multiple-valued (`CHECKBOX`) questions,
-     * a response is marked correct if it contains exactly the values in this
-     * list.
-     *
-     * @param CorrectAnswer[] $answers
-     */
-    public function setAnswers($answers)
+namespace Google\Service\Forms {
+    class CorrectAnswers extends \Google\Collection
     {
+        protected $collection_key = 'answers';
+        protected $answersType = CorrectAnswer::class;
+        protected $answersDataType = 'array';
+        /**
+         * A list of correct answers. A quiz response can be automatically graded
+         * based on these answers. For single-valued questions, a response is marked
+         * correct if it matches any value in this list (in other words, multiple
+         * correct answers are possible). For multiple-valued (`CHECKBOX`) questions,
+         * a response is marked correct if it contains exactly the values in this
+         * list.
+         *
+         * @param CorrectAnswer[] $answers
+         */
+        public function setAnswers($answers)
+        {
+        }
+        /**
+         * @return CorrectAnswer[]
+         */
+        public function getAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CorrectAnswer[]
+     * Runtime class alias of \Google\Service\Forms\CorrectAnswers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswers()
+    class Google_Service_Forms_CorrectAnswers extends \Google\Service\Forms\CorrectAnswers
     {
     }
 }

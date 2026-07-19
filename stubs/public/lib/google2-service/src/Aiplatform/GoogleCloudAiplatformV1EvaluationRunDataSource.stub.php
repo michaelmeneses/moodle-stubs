@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunDataSource extends \Google\Model
-{
-    protected $bigqueryRequestSetType = GoogleCloudAiplatformV1BigQueryRequestSet::class;
-    protected $bigqueryRequestSetDataType = '';
-    /**
-     * The EvaluationSet resource name. Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     *
-     * @var string
-     */
-    public $evaluationSet;
-    /**
-     * Evaluation data in bigquery.
-     *
-     * @param GoogleCloudAiplatformV1BigQueryRequestSet $bigqueryRequestSet
-     */
-    public function setBigqueryRequestSet(GoogleCloudAiplatformV1BigQueryRequestSet $bigqueryRequestSet)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunDataSource extends \Google\Model
     {
+        protected $bigqueryRequestSetType = GoogleCloudAiplatformV1BigQueryRequestSet::class;
+        protected $bigqueryRequestSetDataType = '';
+        /**
+         * The EvaluationSet resource name. Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         *
+         * @var string
+         */
+        public $evaluationSet;
+        /**
+         * Evaluation data in bigquery.
+         *
+         * @param GoogleCloudAiplatformV1BigQueryRequestSet $bigqueryRequestSet
+         */
+        public function setBigqueryRequestSet(GoogleCloudAiplatformV1BigQueryRequestSet $bigqueryRequestSet)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQueryRequestSet
+         */
+        public function getBigqueryRequestSet()
+        {
+        }
+        /**
+         * The EvaluationSet resource name. Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         *
+         * @param string $evaluationSet
+         */
+        public function setEvaluationSet($evaluationSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluationSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQueryRequestSet
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunDataSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryRequestSet()
-    {
-    }
-    /**
-     * The EvaluationSet resource name. Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     *
-     * @param string $evaluationSet
-     */
-    public function setEvaluationSet($evaluationSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEvaluationSet()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunDataSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunDataSource
     {
     }
 }

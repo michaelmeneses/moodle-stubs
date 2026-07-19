@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnGatewayStatusTunnel extends \Google\Model
-{
-    /**
-     * Output only. The VPN gateway interface this VPN tunnel is associated with.
-     *
-     * @var string
-     */
-    public $localGatewayInterface;
-    /**
-     * Output only. The peer gateway interface this VPN tunnel is connected to,
-     * the peer gateway could either be an external VPN gateway or a Google Cloud
-     * VPN gateway.
-     *
-     * @var string
-     */
-    public $peerGatewayInterface;
-    /**
-     * Output only. URL reference to the VPN tunnel.
-     *
-     * @var string
-     */
-    public $tunnelUrl;
-    /**
-     * Output only. The VPN gateway interface this VPN tunnel is associated with.
-     *
-     * @param string $localGatewayInterface
-     */
-    public function setLocalGatewayInterface($localGatewayInterface)
+namespace Google\Service\Compute {
+    class VpnGatewayStatusTunnel extends \Google\Model
     {
+        /**
+         * Output only. The VPN gateway interface this VPN tunnel is associated with.
+         *
+         * @var string
+         */
+        public $localGatewayInterface;
+        /**
+         * Output only. The peer gateway interface this VPN tunnel is connected to,
+         * the peer gateway could either be an external VPN gateway or a Google Cloud
+         * VPN gateway.
+         *
+         * @var string
+         */
+        public $peerGatewayInterface;
+        /**
+         * Output only. URL reference to the VPN tunnel.
+         *
+         * @var string
+         */
+        public $tunnelUrl;
+        /**
+         * Output only. The VPN gateway interface this VPN tunnel is associated with.
+         *
+         * @param string $localGatewayInterface
+         */
+        public function setLocalGatewayInterface($localGatewayInterface)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalGatewayInterface()
+        {
+        }
+        /**
+         * Output only. The peer gateway interface this VPN tunnel is connected to,
+         * the peer gateway could either be an external VPN gateway or a Google Cloud
+         * VPN gateway.
+         *
+         * @param string $peerGatewayInterface
+         */
+        public function setPeerGatewayInterface($peerGatewayInterface)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerGatewayInterface()
+        {
+        }
+        /**
+         * Output only. URL reference to the VPN tunnel.
+         *
+         * @param string $tunnelUrl
+         */
+        public function setTunnelUrl($tunnelUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTunnelUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\VpnGatewayStatusTunnel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalGatewayInterface()
-    {
-    }
-    /**
-     * Output only. The peer gateway interface this VPN tunnel is connected to,
-     * the peer gateway could either be an external VPN gateway or a Google Cloud
-     * VPN gateway.
-     *
-     * @param string $peerGatewayInterface
-     */
-    public function setPeerGatewayInterface($peerGatewayInterface)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerGatewayInterface()
-    {
-    }
-    /**
-     * Output only. URL reference to the VPN tunnel.
-     *
-     * @param string $tunnelUrl
-     */
-    public function setTunnelUrl($tunnelUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTunnelUrl()
+    class Google_Service_Compute_VpnGatewayStatusTunnel extends \Google\Service\Compute\VpnGatewayStatusTunnel
     {
     }
 }

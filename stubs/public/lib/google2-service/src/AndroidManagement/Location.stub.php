@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class Location extends \Google\Model
-{
+namespace Google\Service\AndroidManagement {
+    class Location extends \Google\Model
+    {
+        /**
+         * The latitude position of the location
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * The longitude position of the location
+         *
+         * @var 
+         */
+        public $longitude;
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The latitude position of the location
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\AndroidManagement\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $latitude;
-    /**
-     * The longitude position of the location
-     *
-     * @var 
-     */
-    public $longitude;
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_AndroidManagement_Location extends \Google\Service\AndroidManagement\Location
     {
     }
 }

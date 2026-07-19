@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class AuditConfig extends \Google\Collection
-{
-    protected $collection_key = 'auditLogConfigs';
-    protected $auditLogConfigsType = AuditLogConfig::class;
-    protected $auditLogConfigsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $service;
-    /**
-     * @param AuditLogConfig[]
-     */
-    public function setAuditLogConfigs($auditLogConfigs)
+namespace Google\Service\CloudSourceRepositories {
+    class AuditConfig extends \Google\Collection
     {
+        protected $collection_key = 'auditLogConfigs';
+        protected $auditLogConfigsType = AuditLogConfig::class;
+        protected $auditLogConfigsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $service;
+        /**
+         * @param AuditLogConfig[]
+         */
+        public function setAuditLogConfigs($auditLogConfigs)
+        {
+        }
+        /**
+         * @return AuditLogConfig[]
+         */
+        public function getAuditLogConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuditLogConfig[]
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\AuditConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditLogConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_CloudSourceRepositories_AuditConfig extends \Google\Service\CloudSourceRepositories\AuditConfig
     {
     }
 }

@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $media = $artifactregistryService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\DownloadFileResponse;
     /**
-     * Download a file. (media.download)
-     *
-     * @param string $name Required. The name of the file to download.
-     * @param array $optParams Optional parameters.
-     * @return DownloadFileResponse
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $media = $artifactregistryService->media;
+     *  </code>
      */
-    public function download($name, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Download a file. (media.download)
+         *
+         * @param string $name Required. The name of the file to download.
+         * @param array $optParams Optional parameters.
+         * @return DownloadFileResponse
+         * @throws \Google\Service\Exception
+         */
+        public function download($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry_Resource_Media extends \Google\Service\ArtifactRegistry\Resource\Media
     {
     }
 }

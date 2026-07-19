@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class Value extends \Google\Model
-{
-    /**
-     * If cell value is null, then this flag will be set to true.
-     *
-     * @var bool
-     */
-    public $nullValue;
-    /**
-     * The cell value in string format.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * If cell value is null, then this flag will be set to true.
-     *
-     * @param bool $nullValue
-     */
-    public function setNullValue($nullValue)
+namespace Google\Service\SQLAdmin {
+    class Value extends \Google\Model
     {
+        /**
+         * If cell value is null, then this flag will be set to true.
+         *
+         * @var bool
+         */
+        public $nullValue;
+        /**
+         * The cell value in string format.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * If cell value is null, then this flag will be set to true.
+         *
+         * @param bool $nullValue
+         */
+        public function setNullValue($nullValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNullValue()
+        {
+        }
+        /**
+         * The cell value in string format.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNullValue()
-    {
-    }
-    /**
-     * The cell value in string format.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_SQLAdmin_Value extends \Google\Service\SQLAdmin\Value
     {
     }
 }

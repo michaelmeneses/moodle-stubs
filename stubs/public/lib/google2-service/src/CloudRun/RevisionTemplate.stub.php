@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class RevisionTemplate extends \Google\Model
-{
-    protected $metadataType = ObjectMeta::class;
-    protected $metadataDataType = '';
-    protected $specType = RevisionSpec::class;
-    protected $specDataType = '';
-    /**
-     * @param ObjectMeta
-     */
-    public function setMetadata(ObjectMeta $metadata)
+namespace Google\Service\CloudRun {
+    class RevisionTemplate extends \Google\Model
     {
+        protected $metadataType = ObjectMeta::class;
+        protected $metadataDataType = '';
+        protected $specType = RevisionSpec::class;
+        protected $specDataType = '';
+        /**
+         * @param ObjectMeta
+         */
+        public function setMetadata(ObjectMeta $metadata)
+        {
+        }
+        /**
+         * @return ObjectMeta
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param RevisionSpec
+         */
+        public function setSpec(RevisionSpec $spec)
+        {
+        }
+        /**
+         * @return RevisionSpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectMeta
+     * Runtime class alias of \Google\Service\CloudRun\RevisionTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param RevisionSpec
-     */
-    public function setSpec(RevisionSpec $spec)
-    {
-    }
-    /**
-     * @return RevisionSpec
-     */
-    public function getSpec()
+    class Google_Service_CloudRun_RevisionTemplate extends \Google\Service\CloudRun\RevisionTemplate
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailLoggingErrorContext extends \Google\Model
-{
-    protected $httpRequestType = GoogleCloudRetailLoggingHttpRequestContext::class;
-    protected $httpRequestDataType = '';
-    protected $reportLocationType = GoogleCloudRetailLoggingSourceLocation::class;
-    protected $reportLocationDataType = '';
-    /**
-     * The HTTP request which was processed when the error was triggered.
-     *
-     * @param GoogleCloudRetailLoggingHttpRequestContext $httpRequest
-     */
-    public function setHttpRequest(GoogleCloudRetailLoggingHttpRequestContext $httpRequest)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailLoggingErrorContext extends \Google\Model
     {
+        protected $httpRequestType = GoogleCloudRetailLoggingHttpRequestContext::class;
+        protected $httpRequestDataType = '';
+        protected $reportLocationType = GoogleCloudRetailLoggingSourceLocation::class;
+        protected $reportLocationDataType = '';
+        /**
+         * The HTTP request which was processed when the error was triggered.
+         *
+         * @param GoogleCloudRetailLoggingHttpRequestContext $httpRequest
+         */
+        public function setHttpRequest(GoogleCloudRetailLoggingHttpRequestContext $httpRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailLoggingHttpRequestContext
+         */
+        public function getHttpRequest()
+        {
+        }
+        /**
+         * The location in the source code where the decision was made to report the
+         * error, usually the place where it was logged.
+         *
+         * @param GoogleCloudRetailLoggingSourceLocation $reportLocation
+         */
+        public function setReportLocation(GoogleCloudRetailLoggingSourceLocation $reportLocation)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailLoggingSourceLocation
+         */
+        public function getReportLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailLoggingHttpRequestContext
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailLoggingErrorContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpRequest()
-    {
-    }
-    /**
-     * The location in the source code where the decision was made to report the
-     * error, usually the place where it was logged.
-     *
-     * @param GoogleCloudRetailLoggingSourceLocation $reportLocation
-     */
-    public function setReportLocation(GoogleCloudRetailLoggingSourceLocation $reportLocation)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailLoggingSourceLocation
-     */
-    public function getReportLocation()
+    class Google_Service_CloudRetail_GoogleCloudRetailLoggingErrorContext extends \Google\Service\CloudRetail\GoogleCloudRetailLoggingErrorContext
     {
     }
 }

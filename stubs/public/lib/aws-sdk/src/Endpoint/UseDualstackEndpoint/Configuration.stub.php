@@ -8,6 +8,8 @@
  */
 namespace Aws\Endpoint\UseDualstackEndpoint;
 
+use Aws;
+use Aws\Endpoint\UseDualstackEndpoint\Exception\ConfigurationException;
 class Configuration implements ConfigurationInterface
 {
     private $useDualstackEndpoint;

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelOriginalModelInfo extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the Model this Model is a copy of,
-     * including the revision. Format:
-     * `projects/{project}/locations/{location}/models/{model_id}@{version_id}`
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Output only. The resource name of the Model this Model is a copy of,
-     * including the revision. Format:
-     * `projects/{project}/locations/{location}/models/{model_id}@{version_id}`
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelOriginalModelInfo extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the Model this Model is a copy of,
+         * including the revision. Format:
+         * `projects/{project}/locations/{location}/models/{model_id}@{version_id}`
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Output only. The resource name of the Model this Model is a copy of,
+         * including the revision. Format:
+         * `projects/{project}/locations/{location}/models/{model_id}@{version_id}`
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelOriginalModelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelOriginalModelInfo extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelOriginalModelInfo
     {
     }
 }

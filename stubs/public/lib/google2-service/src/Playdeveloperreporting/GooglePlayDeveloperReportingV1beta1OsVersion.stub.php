@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1OsVersion extends \Google\Model
-{
-    /**
-     * Numeric version code of the OS - API level
-     *
-     * @var string
-     */
-    public $apiLevel;
-    /**
-     * Numeric version code of the OS - API level
-     *
-     * @param string $apiLevel
-     */
-    public function setApiLevel($apiLevel)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1OsVersion extends \Google\Model
     {
+        /**
+         * Numeric version code of the OS - API level
+         *
+         * @var string
+         */
+        public $apiLevel;
+        /**
+         * Numeric version code of the OS - API level
+         *
+         * @param string $apiLevel
+         */
+        public function setApiLevel($apiLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1OsVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiLevel()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1OsVersion extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1OsVersion
     {
     }
 }

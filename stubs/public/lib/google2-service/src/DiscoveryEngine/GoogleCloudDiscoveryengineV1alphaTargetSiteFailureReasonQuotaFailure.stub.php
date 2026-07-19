@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure extends \Google\Model
-{
-    /**
-     * This number is an estimation on how much total quota this project needs to
-     * successfully complete indexing.
-     *
-     * @var string
-     */
-    public $totalRequiredQuota;
-    /**
-     * This number is an estimation on how much total quota this project needs to
-     * successfully complete indexing.
-     *
-     * @param string $totalRequiredQuota
-     */
-    public function setTotalRequiredQuota($totalRequiredQuota)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure extends \Google\Model
     {
+        /**
+         * This number is an estimation on how much total quota this project needs to
+         * successfully complete indexing.
+         *
+         * @var string
+         */
+        public $totalRequiredQuota;
+        /**
+         * This number is an estimation on how much total quota this project needs to
+         * successfully complete indexing.
+         *
+         * @param string $totalRequiredQuota
+         */
+        public function setTotalRequiredQuota($totalRequiredQuota)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalRequiredQuota()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalRequiredQuota()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure
     {
     }
 }

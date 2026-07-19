@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class Inventory extends \Google\Model
-{
-    protected $itemsType = Item::class;
-    protected $itemsDataType = 'map';
-    /**
-     * Output only. The `Inventory` API resource name. Format: `projects/{project_
-     * number}/locations/{location}/instances/{instance_id}/inventory`
-     *
-     * @var string
-     */
-    public $name;
-    protected $osInfoType = OsInfo::class;
-    protected $osInfoDataType = '';
-    /**
-     * Output only. Timestamp of the last reported inventory for the VM.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Inventory items related to the VM keyed by an opaque unique identifier for
-     * each inventory item. The identifier is unique to each distinct and
-     * addressable inventory item and will change, when there is a new package
-     * version.
-     *
-     * @param Item[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\CloudAsset {
+    class Inventory extends \Google\Model
     {
+        protected $itemsType = Item::class;
+        protected $itemsDataType = 'map';
+        /**
+         * Output only. The `Inventory` API resource name. Format: `projects/{project_
+         * number}/locations/{location}/instances/{instance_id}/inventory`
+         *
+         * @var string
+         */
+        public $name;
+        protected $osInfoType = OsInfo::class;
+        protected $osInfoDataType = '';
+        /**
+         * Output only. Timestamp of the last reported inventory for the VM.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Inventory items related to the VM keyed by an opaque unique identifier for
+         * each inventory item. The identifier is unique to each distinct and
+         * addressable inventory item and will change, when there is a new package
+         * version.
+         *
+         * @param Item[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Item[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. The `Inventory` API resource name. Format: `projects/{project_
+         * number}/locations/{location}/instances/{instance_id}/inventory`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Base level operating system information for the VM.
+         *
+         * @param OsInfo $osInfo
+         */
+        public function setOsInfo(OsInfo $osInfo)
+        {
+        }
+        /**
+         * @return OsInfo
+         */
+        public function getOsInfo()
+        {
+        }
+        /**
+         * Output only. Timestamp of the last reported inventory for the VM.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Item[]
+     * Runtime class alias of \Google\Service\CloudAsset\Inventory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. The `Inventory` API resource name. Format: `projects/{project_
-     * number}/locations/{location}/instances/{instance_id}/inventory`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Base level operating system information for the VM.
-     *
-     * @param OsInfo $osInfo
-     */
-    public function setOsInfo(OsInfo $osInfo)
-    {
-    }
-    /**
-     * @return OsInfo
-     */
-    public function getOsInfo()
-    {
-    }
-    /**
-     * Output only. Timestamp of the last reported inventory for the VM.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudAsset_Inventory extends \Google\Service\CloudAsset\Inventory
     {
     }
 }

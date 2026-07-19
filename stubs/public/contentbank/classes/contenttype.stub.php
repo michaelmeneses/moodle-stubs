@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_contentbank;
 
+use core\event\contentbank_content_created;
+use core\event\contentbank_content_deleted;
+use core\event\contentbank_content_viewed;
+use stored_file;
+use moodle_url;
 /**
  * Content type manager class
  *

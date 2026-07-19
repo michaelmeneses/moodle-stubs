@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceNeighborhoodSummary extends \Google\Model
-{
-    protected $descriptionType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $descriptionDataType = '';
-    protected $disclosureTextType = GoogleTypeLocalizedText::class;
-    protected $disclosureTextDataType = '';
-    /**
-     * A link where users can flag a problem with the summary.
-     *
-     * @var string
-     */
-    public $flagContentUri;
-    protected $overviewType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $overviewDataType = '';
-    /**
-     * A detailed description of the neighborhood.
-     *
-     * @param GoogleMapsPlacesV1ContentBlock $description
-     */
-    public function setDescription(GoogleMapsPlacesV1ContentBlock $description)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceNeighborhoodSummary extends \Google\Model
     {
+        protected $descriptionType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $descriptionDataType = '';
+        protected $disclosureTextType = GoogleTypeLocalizedText::class;
+        protected $disclosureTextDataType = '';
+        /**
+         * A link where users can flag a problem with the summary.
+         *
+         * @var string
+         */
+        public $flagContentUri;
+        protected $overviewType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $overviewDataType = '';
+        /**
+         * A detailed description of the neighborhood.
+         *
+         * @param GoogleMapsPlacesV1ContentBlock $description
+         */
+        public function setDescription(GoogleMapsPlacesV1ContentBlock $description)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The AI disclosure message "Summarized with Gemini" (and its localized
+         * variants). This will be in the language specified in the request if
+         * available.
+         *
+         * @param GoogleTypeLocalizedText $disclosureText
+         */
+        public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getDisclosureText()
+        {
+        }
+        /**
+         * A link where users can flag a problem with the summary.
+         *
+         * @param string $flagContentUri
+         */
+        public function setFlagContentUri($flagContentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlagContentUri()
+        {
+        }
+        /**
+         * An overview summary of the neighborhood.
+         *
+         * @param GoogleMapsPlacesV1ContentBlock $overview
+         */
+        public function setOverview(GoogleMapsPlacesV1ContentBlock $overview)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock
+         */
+        public function getOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContentBlock
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceNeighborhoodSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The AI disclosure message "Summarized with Gemini" (and its localized
-     * variants). This will be in the language specified in the request if
-     * available.
-     *
-     * @param GoogleTypeLocalizedText $disclosureText
-     */
-    public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText
-     */
-    public function getDisclosureText()
-    {
-    }
-    /**
-     * A link where users can flag a problem with the summary.
-     *
-     * @param string $flagContentUri
-     */
-    public function setFlagContentUri($flagContentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlagContentUri()
-    {
-    }
-    /**
-     * An overview summary of the neighborhood.
-     *
-     * @param GoogleMapsPlacesV1ContentBlock $overview
-     */
-    public function setOverview(GoogleMapsPlacesV1ContentBlock $overview)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1ContentBlock
-     */
-    public function getOverview()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceNeighborhoodSummary extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceNeighborhoodSummary
     {
     }
 }

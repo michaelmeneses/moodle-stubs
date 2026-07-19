@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class DiscoveredWorkload extends \Google\Model
-{
-    /**
-     * Identifier. The resource name of the discovered workload. Format:
-     * `"projects/{host-project-
-     * id}/locations/{location}/discoveredWorkloads/{uuid}"`
-     *
-     * @var string
-     */
-    public $name;
-    protected $workloadPropertiesType = WorkloadProperties::class;
-    protected $workloadPropertiesDataType = '';
-    protected $workloadReferenceType = WorkloadReference::class;
-    protected $workloadReferenceDataType = '';
-    /**
-     * Identifier. The resource name of the discovered workload. Format:
-     * `"projects/{host-project-
-     * id}/locations/{location}/discoveredWorkloads/{uuid}"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AppHub {
+    class DiscoveredWorkload extends \Google\Model
     {
+        /**
+         * Identifier. The resource name of the discovered workload. Format:
+         * `"projects/{host-project-
+         * id}/locations/{location}/discoveredWorkloads/{uuid}"`
+         *
+         * @var string
+         */
+        public $name;
+        protected $workloadPropertiesType = WorkloadProperties::class;
+        protected $workloadPropertiesDataType = '';
+        protected $workloadReferenceType = WorkloadReference::class;
+        protected $workloadReferenceDataType = '';
+        /**
+         * Identifier. The resource name of the discovered workload. Format:
+         * `"projects/{host-project-
+         * id}/locations/{location}/discoveredWorkloads/{uuid}"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Properties of an underlying compute resource represented by
+         * the Workload. These are immutable.
+         *
+         * @param WorkloadProperties $workloadProperties
+         */
+        public function setWorkloadProperties(WorkloadProperties $workloadProperties)
+        {
+        }
+        /**
+         * @return WorkloadProperties
+         */
+        public function getWorkloadProperties()
+        {
+        }
+        /**
+         * Output only. Reference of an underlying compute resource represented by the
+         * Workload. These are immutable.
+         *
+         * @param WorkloadReference $workloadReference
+         */
+        public function setWorkloadReference(WorkloadReference $workloadReference)
+        {
+        }
+        /**
+         * @return WorkloadReference
+         */
+        public function getWorkloadReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\DiscoveredWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Properties of an underlying compute resource represented by
-     * the Workload. These are immutable.
-     *
-     * @param WorkloadProperties $workloadProperties
-     */
-    public function setWorkloadProperties(WorkloadProperties $workloadProperties)
-    {
-    }
-    /**
-     * @return WorkloadProperties
-     */
-    public function getWorkloadProperties()
-    {
-    }
-    /**
-     * Output only. Reference of an underlying compute resource represented by the
-     * Workload. These are immutable.
-     *
-     * @param WorkloadReference $workloadReference
-     */
-    public function setWorkloadReference(WorkloadReference $workloadReference)
-    {
-    }
-    /**
-     * @return WorkloadReference
-     */
-    public function getWorkloadReference()
+    class Google_Service_AppHub_DiscoveredWorkload extends \Google\Service\AppHub\DiscoveredWorkload
     {
     }
 }

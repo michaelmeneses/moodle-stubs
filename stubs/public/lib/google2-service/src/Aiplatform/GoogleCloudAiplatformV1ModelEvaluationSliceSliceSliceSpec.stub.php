@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec extends \Google\Model
-{
-    protected $configsType = GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecSliceConfig::class;
-    protected $configsDataType = 'map';
-    /**
-     * Mapping configuration for this SliceSpec. The key is the name of the
-     * feature. By default, the key will be prefixed by "instance" as a dictionary
-     * prefix for Vertex Batch Predictions output format.
-     *
-     * @param GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecSliceConfig[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec extends \Google\Model
     {
+        protected $configsType = GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecSliceConfig::class;
+        protected $configsDataType = 'map';
+        /**
+         * Mapping configuration for this SliceSpec. The key is the name of the
+         * feature. By default, the key will be prefixed by "instance" as a dictionary
+         * prefix for Vertex Batch Predictions output format.
+         *
+         * @param GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecSliceConfig[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecSliceConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecSliceConfig[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec
     {
     }
 }

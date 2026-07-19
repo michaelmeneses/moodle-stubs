@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1Track extends \Google\Collection
-{
-    protected $collection_key = 'timestampedObjects';
-    protected $attributesType = GoogleCloudVideointelligenceV1DetectedAttribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Optional. The confidence score of the tracked object.
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $segmentType = GoogleCloudVideointelligenceV1VideoSegment::class;
-    protected $segmentDataType = '';
-    protected $timestampedObjectsType = GoogleCloudVideointelligenceV1TimestampedObject::class;
-    protected $timestampedObjectsDataType = 'array';
-    /**
-     * Optional. Attributes in the track level.
-     *
-     * @param GoogleCloudVideointelligenceV1DetectedAttribute[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1Track extends \Google\Collection
     {
+        protected $collection_key = 'timestampedObjects';
+        protected $attributesType = GoogleCloudVideointelligenceV1DetectedAttribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Optional. The confidence score of the tracked object.
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $segmentType = GoogleCloudVideointelligenceV1VideoSegment::class;
+        protected $segmentDataType = '';
+        protected $timestampedObjectsType = GoogleCloudVideointelligenceV1TimestampedObject::class;
+        protected $timestampedObjectsDataType = 'array';
+        /**
+         * Optional. Attributes in the track level.
+         *
+         * @param GoogleCloudVideointelligenceV1DetectedAttribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1DetectedAttribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Optional. The confidence score of the tracked object.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Video segment of a track.
+         *
+         * @param GoogleCloudVideointelligenceV1VideoSegment $segment
+         */
+        public function setSegment(GoogleCloudVideointelligenceV1VideoSegment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1VideoSegment
+         */
+        public function getSegment()
+        {
+        }
+        /**
+         * The object with timestamp and attributes per frame in the track.
+         *
+         * @param GoogleCloudVideointelligenceV1TimestampedObject[] $timestampedObjects
+         */
+        public function setTimestampedObjects($timestampedObjects)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1TimestampedObject[]
+         */
+        public function getTimestampedObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1DetectedAttribute[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1Track registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Optional. The confidence score of the tracked object.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Video segment of a track.
-     *
-     * @param GoogleCloudVideointelligenceV1VideoSegment $segment
-     */
-    public function setSegment(GoogleCloudVideointelligenceV1VideoSegment $segment)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1VideoSegment
-     */
-    public function getSegment()
-    {
-    }
-    /**
-     * The object with timestamp and attributes per frame in the track.
-     *
-     * @param GoogleCloudVideointelligenceV1TimestampedObject[] $timestampedObjects
-     */
-    public function setTimestampedObjects($timestampedObjects)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1TimestampedObject[]
-     */
-    public function getTimestampedObjects()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1Track extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1Track
     {
     }
 }

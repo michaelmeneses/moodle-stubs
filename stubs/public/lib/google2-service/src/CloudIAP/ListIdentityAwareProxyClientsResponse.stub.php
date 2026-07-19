@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class ListIdentityAwareProxyClientsResponse extends \Google\Collection
-{
-    protected $collection_key = 'identityAwareProxyClients';
-    protected $identityAwareProxyClientsType = IdentityAwareProxyClient::class;
-    protected $identityAwareProxyClientsDataType = 'array';
-    /**
-     * A token, which can be send as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Clients existing in the brand.
-     *
-     * @param IdentityAwareProxyClient[] $identityAwareProxyClients
-     */
-    public function setIdentityAwareProxyClients($identityAwareProxyClients)
+namespace Google\Service\CloudIAP {
+    class ListIdentityAwareProxyClientsResponse extends \Google\Collection
     {
+        protected $collection_key = 'identityAwareProxyClients';
+        protected $identityAwareProxyClientsType = IdentityAwareProxyClient::class;
+        protected $identityAwareProxyClientsDataType = 'array';
+        /**
+         * A token, which can be send as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Clients existing in the brand.
+         *
+         * @param IdentityAwareProxyClient[] $identityAwareProxyClients
+         */
+        public function setIdentityAwareProxyClients($identityAwareProxyClients)
+        {
+        }
+        /**
+         * @return IdentityAwareProxyClient[]
+         */
+        public function getIdentityAwareProxyClients()
+        {
+        }
+        /**
+         * A token, which can be send as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityAwareProxyClient[]
+     * Runtime class alias of \Google\Service\CloudIAP\ListIdentityAwareProxyClientsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentityAwareProxyClients()
-    {
-    }
-    /**
-     * A token, which can be send as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIAP_ListIdentityAwareProxyClientsResponse extends \Google\Service\CloudIAP\ListIdentityAwareProxyClientsResponse
     {
     }
 }

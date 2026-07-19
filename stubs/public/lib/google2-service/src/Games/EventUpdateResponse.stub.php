@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventUpdateResponse extends \Google\Collection
-{
-    protected $collection_key = 'playerEvents';
-    protected $batchFailuresType = EventBatchRecordFailure::class;
-    protected $batchFailuresDataType = 'array';
-    protected $eventFailuresType = EventRecordFailure::class;
-    protected $eventFailuresDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventUpdateResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $playerEventsType = PlayerEvent::class;
-    protected $playerEventsDataType = 'array';
-    /**
-     * Any batch-wide failures which occurred applying updates.
-     *
-     * @param EventBatchRecordFailure[] $batchFailures
-     */
-    public function setBatchFailures($batchFailures)
+namespace Google\Service\Games {
+    class EventUpdateResponse extends \Google\Collection
     {
+        protected $collection_key = 'playerEvents';
+        protected $batchFailuresType = EventBatchRecordFailure::class;
+        protected $batchFailuresDataType = 'array';
+        protected $eventFailuresType = EventRecordFailure::class;
+        protected $eventFailuresDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventUpdateResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $playerEventsType = PlayerEvent::class;
+        protected $playerEventsDataType = 'array';
+        /**
+         * Any batch-wide failures which occurred applying updates.
+         *
+         * @param EventBatchRecordFailure[] $batchFailures
+         */
+        public function setBatchFailures($batchFailures)
+        {
+        }
+        /**
+         * @return EventBatchRecordFailure[]
+         */
+        public function getBatchFailures()
+        {
+        }
+        /**
+         * Any failures updating a particular event.
+         *
+         * @param EventRecordFailure[] $eventFailures
+         */
+        public function setEventFailures($eventFailures)
+        {
+        }
+        /**
+         * @return EventRecordFailure[]
+         */
+        public function getEventFailures()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventUpdateResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The current status of any updated events
+         *
+         * @param PlayerEvent[] $playerEvents
+         */
+        public function setPlayerEvents($playerEvents)
+        {
+        }
+        /**
+         * @return PlayerEvent[]
+         */
+        public function getPlayerEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventBatchRecordFailure[]
+     * Runtime class alias of \Google\Service\Games\EventUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchFailures()
-    {
-    }
-    /**
-     * Any failures updating a particular event.
-     *
-     * @param EventRecordFailure[] $eventFailures
-     */
-    public function setEventFailures($eventFailures)
-    {
-    }
-    /**
-     * @return EventRecordFailure[]
-     */
-    public function getEventFailures()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventUpdateResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The current status of any updated events
-     *
-     * @param PlayerEvent[] $playerEvents
-     */
-    public function setPlayerEvents($playerEvents)
-    {
-    }
-    /**
-     * @return PlayerEvent[]
-     */
-    public function getPlayerEvents()
+    class Google_Service_Games_EventUpdateResponse extends \Google\Service\Games\EventUpdateResponse
     {
     }
 }

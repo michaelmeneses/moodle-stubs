@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeveloperBalance extends \Google\Collection
-{
-    protected $collection_key = 'wallets';
-    protected $walletsType = GoogleCloudApigeeV1DeveloperBalanceWallet::class;
-    protected $walletsDataType = 'array';
-    /**
-     * Output only. List of all wallets. Each individual wallet stores the account
-     * balance for a particular currency.
-     *
-     * @param GoogleCloudApigeeV1DeveloperBalanceWallet[] $wallets
-     */
-    public function setWallets($wallets)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeveloperBalance extends \Google\Collection
     {
+        protected $collection_key = 'wallets';
+        protected $walletsType = GoogleCloudApigeeV1DeveloperBalanceWallet::class;
+        protected $walletsDataType = 'array';
+        /**
+         * Output only. List of all wallets. Each individual wallet stores the account
+         * balance for a particular currency.
+         *
+         * @param GoogleCloudApigeeV1DeveloperBalanceWallet[] $wallets
+         */
+        public function setWallets($wallets)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DeveloperBalanceWallet[]
+         */
+        public function getWallets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DeveloperBalanceWallet[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWallets()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeveloperBalance extends \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalance
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidence extends \Google\Collection
-{
-    protected $collection_key = 'permissionDetails';
-    protected $permissionDetailsType = GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidencePermissionDetails::class;
-    protected $permissionDetailsDataType = 'array';
-    /**
-     * Permissions in violation.
-     *
-     * @param GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidencePermissionDetails[] $permissionDetails
-     */
-    public function setPermissionDetails($permissionDetails)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidence extends \Google\Collection
     {
+        protected $collection_key = 'permissionDetails';
+        protected $permissionDetailsType = GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidencePermissionDetails::class;
+        protected $permissionDetailsDataType = 'array';
+        /**
+         * Permissions in violation.
+         *
+         * @param GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidencePermissionDetails[] $permissionDetails
+         */
+        public function setPermissionDetails($permissionDetails)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidencePermissionDetails[]
+         */
+        public function getPermissionDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidencePermissionDetails[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissionDetails()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckPermissionRestrictionViolationEvidence
     {
     }
 }

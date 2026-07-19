@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DataSplitResult extends \Google\Model
-{
-    protected $evaluationTableType = TableReference::class;
-    protected $evaluationTableDataType = '';
-    protected $testTableType = TableReference::class;
-    protected $testTableDataType = '';
-    protected $trainingTableType = TableReference::class;
-    protected $trainingTableDataType = '';
-    /**
-     * Table reference of the evaluation data after split.
-     *
-     * @param TableReference $evaluationTable
-     */
-    public function setEvaluationTable(TableReference $evaluationTable)
+namespace Google\Service\Bigquery {
+    class DataSplitResult extends \Google\Model
     {
+        protected $evaluationTableType = TableReference::class;
+        protected $evaluationTableDataType = '';
+        protected $testTableType = TableReference::class;
+        protected $testTableDataType = '';
+        protected $trainingTableType = TableReference::class;
+        protected $trainingTableDataType = '';
+        /**
+         * Table reference of the evaluation data after split.
+         *
+         * @param TableReference $evaluationTable
+         */
+        public function setEvaluationTable(TableReference $evaluationTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getEvaluationTable()
+        {
+        }
+        /**
+         * Table reference of the test data after split.
+         *
+         * @param TableReference $testTable
+         */
+        public function setTestTable(TableReference $testTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getTestTable()
+        {
+        }
+        /**
+         * Table reference of the training data after split.
+         *
+         * @param TableReference $trainingTable
+         */
+        public function setTrainingTable(TableReference $trainingTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getTrainingTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableReference
+     * Runtime class alias of \Google\Service\Bigquery\DataSplitResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationTable()
-    {
-    }
-    /**
-     * Table reference of the test data after split.
-     *
-     * @param TableReference $testTable
-     */
-    public function setTestTable(TableReference $testTable)
-    {
-    }
-    /**
-     * @return TableReference
-     */
-    public function getTestTable()
-    {
-    }
-    /**
-     * Table reference of the training data after split.
-     *
-     * @param TableReference $trainingTable
-     */
-    public function setTrainingTable(TableReference $trainingTable)
-    {
-    }
-    /**
-     * @return TableReference
-     */
-    public function getTrainingTable()
+    class Google_Service_Bigquery_DataSplitResult extends \Google\Service\Bigquery\DataSplitResult
     {
     }
 }

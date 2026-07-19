@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class NotificationConfig extends \Google\Collection
-{
-    /**
-     * Illegal value, to avoid allowing a default.
-     */
-    public const PAYLOAD_FORMAT_PAYLOAD_FORMAT_UNSPECIFIED = 'PAYLOAD_FORMAT_UNSPECIFIED';
-    /**
-     * No payload is included with the notification.
-     */
-    public const PAYLOAD_FORMAT_NONE = 'NONE';
-    /**
-     * `TransferOperation` is [formatted as a JSON
-     * response](https://developers.google.com/protocol-buffers/docs/proto3#json),
-     * in application/json.
-     */
-    public const PAYLOAD_FORMAT_JSON = 'JSON';
-    protected $collection_key = 'eventTypes';
-    /**
-     * Event types for which a notification is desired. If empty, send
-     * notifications for all event types.
-     *
-     * @var string[]
-     */
-    public $eventTypes;
-    /**
-     * Required. The desired format of the notification message payloads.
-     *
-     * @var string
-     */
-    public $payloadFormat;
-    /**
-     * Required. The `Topic.name` of the Pub/Sub topic to which to publish
-     * notifications. Must be of the format: `projects/{project}/topics/{topic}`.
-     * Not matching this format results in an INVALID_ARGUMENT error.
-     *
-     * @var string
-     */
-    public $pubsubTopic;
-    /**
-     * Event types for which a notification is desired. If empty, send
-     * notifications for all event types.
-     *
-     * @param string[] $eventTypes
-     */
-    public function setEventTypes($eventTypes)
+namespace Google\Service\Storagetransfer {
+    class NotificationConfig extends \Google\Collection
     {
+        /**
+         * Illegal value, to avoid allowing a default.
+         */
+        public const PAYLOAD_FORMAT_PAYLOAD_FORMAT_UNSPECIFIED = 'PAYLOAD_FORMAT_UNSPECIFIED';
+        /**
+         * No payload is included with the notification.
+         */
+        public const PAYLOAD_FORMAT_NONE = 'NONE';
+        /**
+         * `TransferOperation` is [formatted as a JSON
+         * response](https://developers.google.com/protocol-buffers/docs/proto3#json),
+         * in application/json.
+         */
+        public const PAYLOAD_FORMAT_JSON = 'JSON';
+        protected $collection_key = 'eventTypes';
+        /**
+         * Event types for which a notification is desired. If empty, send
+         * notifications for all event types.
+         *
+         * @var string[]
+         */
+        public $eventTypes;
+        /**
+         * Required. The desired format of the notification message payloads.
+         *
+         * @var string
+         */
+        public $payloadFormat;
+        /**
+         * Required. The `Topic.name` of the Pub/Sub topic to which to publish
+         * notifications. Must be of the format: `projects/{project}/topics/{topic}`.
+         * Not matching this format results in an INVALID_ARGUMENT error.
+         *
+         * @var string
+         */
+        public $pubsubTopic;
+        /**
+         * Event types for which a notification is desired. If empty, send
+         * notifications for all event types.
+         *
+         * @param string[] $eventTypes
+         */
+        public function setEventTypes($eventTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEventTypes()
+        {
+        }
+        /**
+         * Required. The desired format of the notification message payloads.
+         *
+         * Accepted values: PAYLOAD_FORMAT_UNSPECIFIED, NONE, JSON
+         *
+         * @param self::PAYLOAD_FORMAT_* $payloadFormat
+         */
+        public function setPayloadFormat($payloadFormat)
+        {
+        }
+        /**
+         * @return self::PAYLOAD_FORMAT_*
+         */
+        public function getPayloadFormat()
+        {
+        }
+        /**
+         * Required. The `Topic.name` of the Pub/Sub topic to which to publish
+         * notifications. Must be of the format: `projects/{project}/topics/{topic}`.
+         * Not matching this format results in an INVALID_ARGUMENT error.
+         *
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Storagetransfer\NotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTypes()
-    {
-    }
-    /**
-     * Required. The desired format of the notification message payloads.
-     *
-     * Accepted values: PAYLOAD_FORMAT_UNSPECIFIED, NONE, JSON
-     *
-     * @param self::PAYLOAD_FORMAT_* $payloadFormat
-     */
-    public function setPayloadFormat($payloadFormat)
-    {
-    }
-    /**
-     * @return self::PAYLOAD_FORMAT_*
-     */
-    public function getPayloadFormat()
-    {
-    }
-    /**
-     * Required. The `Topic.name` of the Pub/Sub topic to which to publish
-     * notifications. Must be of the format: `projects/{project}/topics/{topic}`.
-     * Not matching this format results in an INVALID_ARGUMENT error.
-     *
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubsubTopic()
+    class Google_Service_Storagetransfer_NotificationConfig extends \Google\Service\Storagetransfer\NotificationConfig
     {
     }
 }

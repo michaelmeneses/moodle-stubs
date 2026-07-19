@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class DomainMappingSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $certificateMode;
-    /**
-     * @var bool
-     */
-    public $forceOverride;
-    /**
-     * @var string
-     */
-    public $routeName;
-    /**
-     * @param string
-     */
-    public function setCertificateMode($certificateMode)
+namespace Google\Service\CloudRun {
+    class DomainMappingSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $certificateMode;
+        /**
+         * @var bool
+         */
+        public $forceOverride;
+        /**
+         * @var string
+         */
+        public $routeName;
+        /**
+         * @param string
+         */
+        public function setCertificateMode($certificateMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateMode()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setForceOverride($forceOverride)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForceOverride()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRouteName($routeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\DomainMappingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateMode()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setForceOverride($forceOverride)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForceOverride()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRouteName($routeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteName()
+    class Google_Service_CloudRun_DomainMappingSpec extends \Google\Service\CloudRun\DomainMappingSpec
     {
     }
 }

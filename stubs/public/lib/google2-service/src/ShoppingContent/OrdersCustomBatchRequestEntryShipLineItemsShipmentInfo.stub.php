@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $carrier;
-    /**
-     * @var string
-     */
-    public $shipmentId;
-    /**
-     * @var string
-     */
-    public $trackingId;
-    /**
-     * @param string
-     */
-    public function setCarrier($carrier)
+namespace Google\Service\ShoppingContent {
+    class OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $carrier;
+        /**
+         * @var string
+         */
+        public $shipmentId;
+        /**
+         * @var string
+         */
+        public $trackingId;
+        /**
+         * @param string
+         */
+        public function setCarrier($carrier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentId($shipmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrackingId($trackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentId($shipmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrackingId($trackingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingId()
+    class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends \Google\Service\ShoppingContent\OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo
     {
     }
 }

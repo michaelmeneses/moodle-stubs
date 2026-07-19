@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BasicSeriesDataPointStyleOverride extends \Google\Model
-{
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    protected $colorStyleType = ColorStyle::class;
-    protected $colorStyleDataType = '';
-    /**
-     * The zero-based index of the series data point.
-     *
-     * @var int
-     */
-    public $index;
-    protected $pointStyleType = PointStyle::class;
-    protected $pointStyleDataType = '';
-    /**
-     * Color of the series data point. If empty, the series default is used.
-     * Deprecated: Use color_style.
-     *
-     * @deprecated
-     * @param Color $color
-     */
-    public function setColor(Color $color)
+namespace Google\Service\Sheets {
+    class BasicSeriesDataPointStyleOverride extends \Google\Model
     {
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        protected $colorStyleType = ColorStyle::class;
+        protected $colorStyleDataType = '';
+        /**
+         * The zero-based index of the series data point.
+         *
+         * @var int
+         */
+        public $index;
+        protected $pointStyleType = PointStyle::class;
+        protected $pointStyleDataType = '';
+        /**
+         * Color of the series data point. If empty, the series default is used.
+         * Deprecated: Use color_style.
+         *
+         * @deprecated
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * Color of the series data point. If empty, the series default is used. If
+         * color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $colorStyle
+         */
+        public function setColorStyle(ColorStyle $colorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getColorStyle()
+        {
+        }
+        /**
+         * The zero-based index of the series data point.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Point style of the series data point. Valid only if the chartType is AREA,
+         * LINE, or SCATTER. COMBO charts are also supported if the series chart type
+         * is AREA, LINE, or SCATTER. If empty, the series default is used.
+         *
+         * @param PointStyle $pointStyle
+         */
+        public function setPointStyle(PointStyle $pointStyle)
+        {
+        }
+        /**
+         * @return PointStyle
+         */
+        public function getPointStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\BasicSeriesDataPointStyleOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * Color of the series data point. If empty, the series default is used. If
-     * color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $colorStyle
-     */
-    public function setColorStyle(ColorStyle $colorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getColorStyle()
-    {
-    }
-    /**
-     * The zero-based index of the series data point.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * Point style of the series data point. Valid only if the chartType is AREA,
-     * LINE, or SCATTER. COMBO charts are also supported if the series chart type
-     * is AREA, LINE, or SCATTER. If empty, the series default is used.
-     *
-     * @param PointStyle $pointStyle
-     */
-    public function setPointStyle(PointStyle $pointStyle)
-    {
-    }
-    /**
-     * @return PointStyle
-     */
-    public function getPointStyle()
+    class Google_Service_Sheets_BasicSeriesDataPointStyleOverride extends \Google\Service\Sheets\BasicSeriesDataPointStyleOverride
     {
     }
 }

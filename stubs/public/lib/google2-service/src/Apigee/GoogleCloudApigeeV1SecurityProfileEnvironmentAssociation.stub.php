@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation extends \Google\Model
-{
-    /**
-     * Output only. The time when environment was attached to the security
-     * profile.
-     *
-     * @var string
-     */
-    public $attachTime;
-    /**
-     * Immutable. Name of the environment that the profile is attached to.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * DEPRECATED: DO NOT USE Revision ID of the security profile.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $securityProfileRevisionId;
-    /**
-     * Output only. The time when environment was attached to the security
-     * profile.
-     *
-     * @param string $attachTime
-     */
-    public function setAttachTime($attachTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation extends \Google\Model
     {
+        /**
+         * Output only. The time when environment was attached to the security
+         * profile.
+         *
+         * @var string
+         */
+        public $attachTime;
+        /**
+         * Immutable. Name of the environment that the profile is attached to.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * DEPRECATED: DO NOT USE Revision ID of the security profile.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $securityProfileRevisionId;
+        /**
+         * Output only. The time when environment was attached to the security
+         * profile.
+         *
+         * @param string $attachTime
+         */
+        public function setAttachTime($attachTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachTime()
+        {
+        }
+        /**
+         * Immutable. Name of the environment that the profile is attached to.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * DEPRECATED: DO NOT USE Revision ID of the security profile.
+         *
+         * @deprecated
+         * @param string $securityProfileRevisionId
+         */
+        public function setSecurityProfileRevisionId($securityProfileRevisionId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getSecurityProfileRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachTime()
-    {
-    }
-    /**
-     * Immutable. Name of the environment that the profile is attached to.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * DEPRECATED: DO NOT USE Revision ID of the security profile.
-     *
-     * @deprecated
-     * @param string $securityProfileRevisionId
-     */
-    public function setSecurityProfileRevisionId($securityProfileRevisionId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getSecurityProfileRevisionId()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileEnvironmentAssociation
     {
     }
 }

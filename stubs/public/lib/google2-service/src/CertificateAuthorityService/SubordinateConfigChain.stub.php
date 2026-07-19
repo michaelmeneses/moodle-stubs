@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class SubordinateConfigChain extends \Google\Collection
-{
-    protected $collection_key = 'pemCertificates';
-    /**
-     * Required. Expected to be in leaf-to-root order according to RFC 5246.
-     *
-     * @var string[]
-     */
-    public $pemCertificates;
-    /**
-     * Required. Expected to be in leaf-to-root order according to RFC 5246.
-     *
-     * @param string[] $pemCertificates
-     */
-    public function setPemCertificates($pemCertificates)
+namespace Google\Service\CertificateAuthorityService {
+    class SubordinateConfigChain extends \Google\Collection
     {
+        protected $collection_key = 'pemCertificates';
+        /**
+         * Required. Expected to be in leaf-to-root order according to RFC 5246.
+         *
+         * @var string[]
+         */
+        public $pemCertificates;
+        /**
+         * Required. Expected to be in leaf-to-root order according to RFC 5246.
+         *
+         * @param string[] $pemCertificates
+         */
+        public function setPemCertificates($pemCertificates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPemCertificates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\SubordinateConfigChain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPemCertificates()
+    class Google_Service_CertificateAuthorityService_SubordinateConfigChain extends \Google\Service\CertificateAuthorityService\SubordinateConfigChain
     {
     }
 }

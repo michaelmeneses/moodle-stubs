@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1EncryptionConfig extends \Google\Model
-{
-    /**
-     * The Cloud KMS resource identifier of the customer-managed encryption key
-     * used to protect a resource, such as a training job. It has the following
-     * format: `projects/{PROJECT_ID}/locations/{REGION}/keyRings/{KEY_RING_NAME}/
-     * cryptoKeys/{KEY_NAME}`
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * The Cloud KMS resource identifier of the customer-managed encryption key
-     * used to protect a resource, such as a training job. It has the following
-     * format: `projects/{PROJECT_ID}/locations/{REGION}/keyRings/{KEY_RING_NAME}/
-     * cryptoKeys/{KEY_NAME}`
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1EncryptionConfig extends \Google\Model
     {
+        /**
+         * The Cloud KMS resource identifier of the customer-managed encryption key
+         * used to protect a resource, such as a training job. It has the following
+         * format: `projects/{PROJECT_ID}/locations/{REGION}/keyRings/{KEY_RING_NAME}/
+         * cryptoKeys/{KEY_NAME}`
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * The Cloud KMS resource identifier of the customer-managed encryption key
+         * used to protect a resource, such as a training job. It has the following
+         * format: `projects/{PROJECT_ID}/locations/{REGION}/keyRings/{KEY_RING_NAME}/
+         * cryptoKeys/{KEY_NAME}`
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1EncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1EncryptionConfig extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1EncryptionConfig
     {
     }
 }

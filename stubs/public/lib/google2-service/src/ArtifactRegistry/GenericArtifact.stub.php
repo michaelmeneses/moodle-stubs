@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class GenericArtifact extends \Google\Model
-{
-    /**
-     * Output only. The time when the Generic module is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Resource name of the generic artifact. project, location, repository,
-     * package_id and version_id create a unique generic artifact. i.e.
-     * "projects/test-project/locations/us-west4/repositories/test-repo/
-     * genericArtifacts/package_id:version_id"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time when the Generic module is updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The version of the generic artifact.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. The time when the Generic module is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ArtifactRegistry {
+    class GenericArtifact extends \Google\Model
     {
+        /**
+         * Output only. The time when the Generic module is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Resource name of the generic artifact. project, location, repository,
+         * package_id and version_id create a unique generic artifact. i.e.
+         * "projects/test-project/locations/us-west4/repositories/test-repo/
+         * genericArtifacts/package_id:version_id"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time when the Generic module is updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The version of the generic artifact.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. The time when the Generic module is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Resource name of the generic artifact. project, location, repository,
+         * package_id and version_id create a unique generic artifact. i.e.
+         * "projects/test-project/locations/us-west4/repositories/test-repo/
+         * genericArtifacts/package_id:version_id"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time when the Generic module is updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The version of the generic artifact.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\GenericArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Resource name of the generic artifact. project, location, repository,
-     * package_id and version_id create a unique generic artifact. i.e.
-     * "projects/test-project/locations/us-west4/repositories/test-repo/
-     * genericArtifacts/package_id:version_id"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time when the Generic module is updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The version of the generic artifact.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ArtifactRegistry_GenericArtifact extends \Google\Service\ArtifactRegistry\GenericArtifact
     {
     }
 }

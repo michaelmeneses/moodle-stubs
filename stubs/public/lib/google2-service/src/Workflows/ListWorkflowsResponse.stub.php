@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Workflows;
-
-class ListWorkflowsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workflows';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $workflowsType = Workflow::class;
-    protected $workflowsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Workflows {
+    class ListWorkflowsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workflows';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $workflowsType = Workflow::class;
+        protected $workflowsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * The workflows that match the request.
+         *
+         * @param Workflow[] $workflows
+         */
+        public function setWorkflows($workflows)
+        {
+        }
+        /**
+         * @return Workflow[]
+         */
+        public function getWorkflows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Workflows\ListWorkflowsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * The workflows that match the request.
-     *
-     * @param Workflow[] $workflows
-     */
-    public function setWorkflows($workflows)
-    {
-    }
-    /**
-     * @return Workflow[]
-     */
-    public function getWorkflows()
+    class Google_Service_Workflows_ListWorkflowsResponse extends \Google\Service\Workflows\ListWorkflowsResponse
     {
     }
 }

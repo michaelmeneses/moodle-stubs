@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CloudRunLocation extends \Google\Model
-{
-    /**
-     * Required. The location for the Cloud Run Service. Format must be
-     * `projects/{project}/locations/{location}`.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. The location for the Cloud Run Service. Format must be
-     * `projects/{project}/locations/{location}`.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\CloudDeploy {
+    class CloudRunLocation extends \Google\Model
     {
+        /**
+         * Required. The location for the Cloud Run Service. Format must be
+         * `projects/{project}/locations/{location}`.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. The location for the Cloud Run Service. Format must be
+         * `projects/{project}/locations/{location}`.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CloudRunLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
+    class Google_Service_CloudDeploy_CloudRunLocation extends \Google\Service\CloudDeploy\CloudRunLocation
     {
     }
 }

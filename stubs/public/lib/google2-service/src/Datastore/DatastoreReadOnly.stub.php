@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class DatastoreReadOnly extends \Google\Model
-{
-    /**
-     * Reads entities at the given time. This must be a microsecond precision
-     * timestamp within the past one hour, or if Point-in-Time Recovery is
-     * enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * Reads entities at the given time. This must be a microsecond precision
-     * timestamp within the past one hour, or if Point-in-Time Recovery is
-     * enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
+namespace Google\Service\Datastore {
+    class DatastoreReadOnly extends \Google\Model
     {
+        /**
+         * Reads entities at the given time. This must be a microsecond precision
+         * timestamp within the past one hour, or if Point-in-Time Recovery is
+         * enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * Reads entities at the given time. This must be a microsecond precision
+         * timestamp within the past one hour, or if Point-in-Time Recovery is
+         * enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\DatastoreReadOnly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadTime()
+    class Google_Service_Datastore_DatastoreReadOnly extends \Google\Service\Datastore\DatastoreReadOnly
     {
     }
 }

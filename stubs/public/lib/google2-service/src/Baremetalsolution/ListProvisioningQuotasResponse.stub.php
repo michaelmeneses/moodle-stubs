@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListProvisioningQuotasResponse extends \Google\Collection
-{
-    protected $collection_key = 'provisioningQuotas';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $provisioningQuotasType = ProvisioningQuota::class;
-    protected $provisioningQuotasDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Baremetalsolution {
+    class ListProvisioningQuotasResponse extends \Google\Collection
     {
+        protected $collection_key = 'provisioningQuotas';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $provisioningQuotasType = ProvisioningQuota::class;
+        protected $provisioningQuotasDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The provisioning quotas registered in this project.
+         *
+         * @param ProvisioningQuota[] $provisioningQuotas
+         */
+        public function setProvisioningQuotas($provisioningQuotas)
+        {
+        }
+        /**
+         * @return ProvisioningQuota[]
+         */
+        public function getProvisioningQuotas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListProvisioningQuotasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The provisioning quotas registered in this project.
-     *
-     * @param ProvisioningQuota[] $provisioningQuotas
-     */
-    public function setProvisioningQuotas($provisioningQuotas)
-    {
-    }
-    /**
-     * @return ProvisioningQuota[]
-     */
-    public function getProvisioningQuotas()
+    class Google_Service_Baremetalsolution_ListProvisioningQuotasResponse extends \Google\Service\Baremetalsolution\ListProvisioningQuotasResponse
     {
     }
 }

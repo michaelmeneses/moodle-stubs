@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CreateModelMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the model that this create applies to. Format: `projec
-     * ts/{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{m
-     * odel_id}`
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * The resource name of the model that this create applies to. Format: `projec
-     * ts/{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{m
-     * odel_id}`
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CreateModelMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the model that this create applies to. Format: `projec
+         * ts/{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{m
+         * odel_id}`
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * The resource name of the model that this create applies to. Format: `projec
+         * ts/{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{m
+         * odel_id}`
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CreateModelMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CreateModelMetadata extends \Google\Service\CloudRetail\GoogleCloudRetailV2CreateModelMetadata
     {
     }
 }

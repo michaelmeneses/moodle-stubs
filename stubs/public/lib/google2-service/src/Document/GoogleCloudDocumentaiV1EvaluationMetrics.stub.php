@@ -21,228 +21,237 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1EvaluationMetrics extends \Google\Model
-{
-    /**
-     * The calculated f1 score.
-     *
-     * @var float
-     */
-    public $f1Score;
-    /**
-     * The amount of false negatives.
-     *
-     * @var int
-     */
-    public $falseNegativesCount;
-    /**
-     * The amount of false positives.
-     *
-     * @var int
-     */
-    public $falsePositivesCount;
-    /**
-     * The amount of documents with a ground truth occurrence.
-     *
-     * @var int
-     */
-    public $groundTruthDocumentCount;
-    /**
-     * The amount of occurrences in ground truth documents.
-     *
-     * @var int
-     */
-    public $groundTruthOccurrencesCount;
-    /**
-     * The calculated precision.
-     *
-     * @var float
-     */
-    public $precision;
-    /**
-     * The amount of documents with a predicted occurrence.
-     *
-     * @var int
-     */
-    public $predictedDocumentCount;
-    /**
-     * The amount of occurrences in predicted documents.
-     *
-     * @var int
-     */
-    public $predictedOccurrencesCount;
-    /**
-     * The calculated recall.
-     *
-     * @var float
-     */
-    public $recall;
-    /**
-     * The amount of documents that had an occurrence of this label.
-     *
-     * @var int
-     */
-    public $totalDocumentsCount;
-    /**
-     * The amount of true positives.
-     *
-     * @var int
-     */
-    public $truePositivesCount;
-    /**
-     * The calculated f1 score.
-     *
-     * @param float $f1Score
-     */
-    public function setF1Score($f1Score)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1EvaluationMetrics extends \Google\Model
     {
+        /**
+         * The calculated f1 score.
+         *
+         * @var float
+         */
+        public $f1Score;
+        /**
+         * The amount of false negatives.
+         *
+         * @var int
+         */
+        public $falseNegativesCount;
+        /**
+         * The amount of false positives.
+         *
+         * @var int
+         */
+        public $falsePositivesCount;
+        /**
+         * The amount of documents with a ground truth occurrence.
+         *
+         * @var int
+         */
+        public $groundTruthDocumentCount;
+        /**
+         * The amount of occurrences in ground truth documents.
+         *
+         * @var int
+         */
+        public $groundTruthOccurrencesCount;
+        /**
+         * The calculated precision.
+         *
+         * @var float
+         */
+        public $precision;
+        /**
+         * The amount of documents with a predicted occurrence.
+         *
+         * @var int
+         */
+        public $predictedDocumentCount;
+        /**
+         * The amount of occurrences in predicted documents.
+         *
+         * @var int
+         */
+        public $predictedOccurrencesCount;
+        /**
+         * The calculated recall.
+         *
+         * @var float
+         */
+        public $recall;
+        /**
+         * The amount of documents that had an occurrence of this label.
+         *
+         * @var int
+         */
+        public $totalDocumentsCount;
+        /**
+         * The amount of true positives.
+         *
+         * @var int
+         */
+        public $truePositivesCount;
+        /**
+         * The calculated f1 score.
+         *
+         * @param float $f1Score
+         */
+        public function setF1Score($f1Score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getF1Score()
+        {
+        }
+        /**
+         * The amount of false negatives.
+         *
+         * @param int $falseNegativesCount
+         */
+        public function setFalseNegativesCount($falseNegativesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFalseNegativesCount()
+        {
+        }
+        /**
+         * The amount of false positives.
+         *
+         * @param int $falsePositivesCount
+         */
+        public function setFalsePositivesCount($falsePositivesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFalsePositivesCount()
+        {
+        }
+        /**
+         * The amount of documents with a ground truth occurrence.
+         *
+         * @param int $groundTruthDocumentCount
+         */
+        public function setGroundTruthDocumentCount($groundTruthDocumentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGroundTruthDocumentCount()
+        {
+        }
+        /**
+         * The amount of occurrences in ground truth documents.
+         *
+         * @param int $groundTruthOccurrencesCount
+         */
+        public function setGroundTruthOccurrencesCount($groundTruthOccurrencesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGroundTruthOccurrencesCount()
+        {
+        }
+        /**
+         * The calculated precision.
+         *
+         * @param float $precision
+         */
+        public function setPrecision($precision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPrecision()
+        {
+        }
+        /**
+         * The amount of documents with a predicted occurrence.
+         *
+         * @param int $predictedDocumentCount
+         */
+        public function setPredictedDocumentCount($predictedDocumentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPredictedDocumentCount()
+        {
+        }
+        /**
+         * The amount of occurrences in predicted documents.
+         *
+         * @param int $predictedOccurrencesCount
+         */
+        public function setPredictedOccurrencesCount($predictedOccurrencesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPredictedOccurrencesCount()
+        {
+        }
+        /**
+         * The calculated recall.
+         *
+         * @param float $recall
+         */
+        public function setRecall($recall)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRecall()
+        {
+        }
+        /**
+         * The amount of documents that had an occurrence of this label.
+         *
+         * @param int $totalDocumentsCount
+         */
+        public function setTotalDocumentsCount($totalDocumentsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalDocumentsCount()
+        {
+        }
+        /**
+         * The amount of true positives.
+         *
+         * @param int $truePositivesCount
+         */
+        public function setTruePositivesCount($truePositivesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTruePositivesCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1EvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getF1Score()
-    {
-    }
-    /**
-     * The amount of false negatives.
-     *
-     * @param int $falseNegativesCount
-     */
-    public function setFalseNegativesCount($falseNegativesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFalseNegativesCount()
-    {
-    }
-    /**
-     * The amount of false positives.
-     *
-     * @param int $falsePositivesCount
-     */
-    public function setFalsePositivesCount($falsePositivesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFalsePositivesCount()
-    {
-    }
-    /**
-     * The amount of documents with a ground truth occurrence.
-     *
-     * @param int $groundTruthDocumentCount
-     */
-    public function setGroundTruthDocumentCount($groundTruthDocumentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGroundTruthDocumentCount()
-    {
-    }
-    /**
-     * The amount of occurrences in ground truth documents.
-     *
-     * @param int $groundTruthOccurrencesCount
-     */
-    public function setGroundTruthOccurrencesCount($groundTruthOccurrencesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGroundTruthOccurrencesCount()
-    {
-    }
-    /**
-     * The calculated precision.
-     *
-     * @param float $precision
-     */
-    public function setPrecision($precision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPrecision()
-    {
-    }
-    /**
-     * The amount of documents with a predicted occurrence.
-     *
-     * @param int $predictedDocumentCount
-     */
-    public function setPredictedDocumentCount($predictedDocumentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPredictedDocumentCount()
-    {
-    }
-    /**
-     * The amount of occurrences in predicted documents.
-     *
-     * @param int $predictedOccurrencesCount
-     */
-    public function setPredictedOccurrencesCount($predictedOccurrencesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPredictedOccurrencesCount()
-    {
-    }
-    /**
-     * The calculated recall.
-     *
-     * @param float $recall
-     */
-    public function setRecall($recall)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRecall()
-    {
-    }
-    /**
-     * The amount of documents that had an occurrence of this label.
-     *
-     * @param int $totalDocumentsCount
-     */
-    public function setTotalDocumentsCount($totalDocumentsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalDocumentsCount()
-    {
-    }
-    /**
-     * The amount of true positives.
-     *
-     * @param int $truePositivesCount
-     */
-    public function setTruePositivesCount($truePositivesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTruePositivesCount()
+    class Google_Service_Document_GoogleCloudDocumentaiV1EvaluationMetrics extends \Google\Service\Document\GoogleCloudDocumentaiV1EvaluationMetrics
     {
     }
 }

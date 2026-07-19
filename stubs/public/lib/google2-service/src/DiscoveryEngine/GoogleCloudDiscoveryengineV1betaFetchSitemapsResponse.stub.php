@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaFetchSitemapsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sitemapsMetadata';
-    protected $sitemapsMetadataType = GoogleCloudDiscoveryengineV1betaFetchSitemapsResponseSitemapMetadata::class;
-    protected $sitemapsMetadataDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaFetchSitemapsResponseSitemapMetadata[]
-     */
-    public function setSitemapsMetadata($sitemapsMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaFetchSitemapsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sitemapsMetadata';
+        protected $sitemapsMetadataType = GoogleCloudDiscoveryengineV1betaFetchSitemapsResponseSitemapMetadata::class;
+        protected $sitemapsMetadataDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaFetchSitemapsResponseSitemapMetadata[]
+         */
+        public function setSitemapsMetadata($sitemapsMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaFetchSitemapsResponseSitemapMetadata[]
+         */
+        public function getSitemapsMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaFetchSitemapsResponseSitemapMetadata[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFetchSitemapsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSitemapsMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaFetchSitemapsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFetchSitemapsResponse
     {
     }
 }

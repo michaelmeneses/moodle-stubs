@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeGKEUpgradeFeatureState extends \Google\Collection
-{
-    protected $collection_key = 'upgradeState';
-    protected $conditionsType = ClusterUpgradeGKEUpgradeFeatureCondition::class;
-    protected $conditionsDataType = 'array';
-    protected $upgradeStateType = ClusterUpgradeGKEUpgradeState::class;
-    protected $upgradeStateDataType = 'array';
-    /**
-     * @param ClusterUpgradeGKEUpgradeFeatureCondition[]
-     */
-    public function setConditions($conditions)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeGKEUpgradeFeatureState extends \Google\Collection
     {
+        protected $collection_key = 'upgradeState';
+        protected $conditionsType = ClusterUpgradeGKEUpgradeFeatureCondition::class;
+        protected $conditionsDataType = 'array';
+        protected $upgradeStateType = ClusterUpgradeGKEUpgradeState::class;
+        protected $upgradeStateDataType = 'array';
+        /**
+         * @param ClusterUpgradeGKEUpgradeFeatureCondition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return ClusterUpgradeGKEUpgradeFeatureCondition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param ClusterUpgradeGKEUpgradeState[]
+         */
+        public function setUpgradeState($upgradeState)
+        {
+        }
+        /**
+         * @return ClusterUpgradeGKEUpgradeState[]
+         */
+        public function getUpgradeState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUpgradeGKEUpgradeFeatureCondition[]
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeGKEUpgradeFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param ClusterUpgradeGKEUpgradeState[]
-     */
-    public function setUpgradeState($upgradeState)
-    {
-    }
-    /**
-     * @return ClusterUpgradeGKEUpgradeState[]
-     */
-    public function getUpgradeState()
+    class Google_Service_GKEHub_ClusterUpgradeGKEUpgradeFeatureState extends \Google\Service\GKEHub\ClusterUpgradeGKEUpgradeFeatureState
     {
     }
 }

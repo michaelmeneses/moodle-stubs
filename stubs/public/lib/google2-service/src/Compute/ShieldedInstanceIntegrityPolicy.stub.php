@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ShieldedInstanceIntegrityPolicy extends \Google\Model
-{
-    /**
-     * Updates the integrity policy baseline using the measurements from the VM
-     * instance's most recent boot.
-     *
-     * @var bool
-     */
-    public $updateAutoLearnPolicy;
-    /**
-     * Updates the integrity policy baseline using the measurements from the VM
-     * instance's most recent boot.
-     *
-     * @param bool $updateAutoLearnPolicy
-     */
-    public function setUpdateAutoLearnPolicy($updateAutoLearnPolicy)
+namespace Google\Service\Compute {
+    class ShieldedInstanceIntegrityPolicy extends \Google\Model
     {
+        /**
+         * Updates the integrity policy baseline using the measurements from the VM
+         * instance's most recent boot.
+         *
+         * @var bool
+         */
+        public $updateAutoLearnPolicy;
+        /**
+         * Updates the integrity policy baseline using the measurements from the VM
+         * instance's most recent boot.
+         *
+         * @param bool $updateAutoLearnPolicy
+         */
+        public function setUpdateAutoLearnPolicy($updateAutoLearnPolicy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpdateAutoLearnPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\ShieldedInstanceIntegrityPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateAutoLearnPolicy()
+    class Google_Service_Compute_ShieldedInstanceIntegrityPolicy extends \Google\Service\Compute\ShieldedInstanceIntegrityPolicy
     {
     }
 }

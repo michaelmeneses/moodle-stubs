@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class RRSetRoutingPolicyGeoPolicy extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Without fencing, if health check fails for all configured items in the
-     * current geo bucket, we failover to the next nearest geo bucket. With
-     * fencing, if health checking is enabled, as long as some targets in the
-     * current geo bucket are healthy, we return only the healthy targets.
-     * However, if all targets are unhealthy, we don't failover to the next
-     * nearest bucket; instead, we return all the items in the current bucket even
-     * when all targets are unhealthy.
-     *
-     * @var bool
-     */
-    public $enableFencing;
-    protected $itemsType = RRSetRoutingPolicyGeoPolicyGeoPolicyItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * Without fencing, if health check fails for all configured items in the
-     * current geo bucket, we failover to the next nearest geo bucket. With
-     * fencing, if health checking is enabled, as long as some targets in the
-     * current geo bucket are healthy, we return only the healthy targets.
-     * However, if all targets are unhealthy, we don't failover to the next
-     * nearest bucket; instead, we return all the items in the current bucket even
-     * when all targets are unhealthy.
-     *
-     * @param bool $enableFencing
-     */
-    public function setEnableFencing($enableFencing)
+namespace Google\Service\Dns {
+    class RRSetRoutingPolicyGeoPolicy extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Without fencing, if health check fails for all configured items in the
+         * current geo bucket, we failover to the next nearest geo bucket. With
+         * fencing, if health checking is enabled, as long as some targets in the
+         * current geo bucket are healthy, we return only the healthy targets.
+         * However, if all targets are unhealthy, we don't failover to the next
+         * nearest bucket; instead, we return all the items in the current bucket even
+         * when all targets are unhealthy.
+         *
+         * @var bool
+         */
+        public $enableFencing;
+        protected $itemsType = RRSetRoutingPolicyGeoPolicyGeoPolicyItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * Without fencing, if health check fails for all configured items in the
+         * current geo bucket, we failover to the next nearest geo bucket. With
+         * fencing, if health checking is enabled, as long as some targets in the
+         * current geo bucket are healthy, we return only the healthy targets.
+         * However, if all targets are unhealthy, we don't failover to the next
+         * nearest bucket; instead, we return all the items in the current bucket even
+         * when all targets are unhealthy.
+         *
+         * @param bool $enableFencing
+         */
+        public function setEnableFencing($enableFencing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableFencing()
+        {
+        }
+        /**
+         * The primary geo routing configuration. If there are multiple items with the
+         * same location, an error is returned instead.
+         *
+         * @param RRSetRoutingPolicyGeoPolicyGeoPolicyItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyGeoPolicyGeoPolicyItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dns\RRSetRoutingPolicyGeoPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableFencing()
-    {
-    }
-    /**
-     * The primary geo routing configuration. If there are multiple items with the
-     * same location, an error is returned instead.
-     *
-     * @param RRSetRoutingPolicyGeoPolicyGeoPolicyItem[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return RRSetRoutingPolicyGeoPolicyGeoPolicyItem[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dns_RRSetRoutingPolicyGeoPolicy extends \Google\Service\Dns\RRSetRoutingPolicyGeoPolicy
     {
     }
 }

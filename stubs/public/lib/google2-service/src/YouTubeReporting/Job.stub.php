@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class Job extends \Google\Model
-{
-    /**
-     * The creation date/time of the job.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The date/time when this job will expire/expired. After a job expired, no
-     * new reports are generated.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The server-generated ID of the job (max. 40 characters).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The name of the job (max. 100 characters).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of reports this job creates. Corresponds to the ID of a
-     * ReportType.
-     *
-     * @var string
-     */
-    public $reportTypeId;
-    /**
-     * True if this a system-managed job that cannot be modified by the user;
-     * otherwise false.
-     *
-     * @var bool
-     */
-    public $systemManaged;
-    /**
-     * The creation date/time of the job.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\YouTubeReporting {
+    class Job extends \Google\Model
     {
+        /**
+         * The creation date/time of the job.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The date/time when this job will expire/expired. After a job expired, no
+         * new reports are generated.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The server-generated ID of the job (max. 40 characters).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The name of the job (max. 100 characters).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of reports this job creates. Corresponds to the ID of a
+         * ReportType.
+         *
+         * @var string
+         */
+        public $reportTypeId;
+        /**
+         * True if this a system-managed job that cannot be modified by the user;
+         * otherwise false.
+         *
+         * @var bool
+         */
+        public $systemManaged;
+        /**
+         * The creation date/time of the job.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The date/time when this job will expire/expired. After a job expired, no
+         * new reports are generated.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The server-generated ID of the job (max. 40 characters).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The name of the job (max. 100 characters).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of reports this job creates. Corresponds to the ID of a
+         * ReportType.
+         *
+         * @param string $reportTypeId
+         */
+        public function setReportTypeId($reportTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTypeId()
+        {
+        }
+        /**
+         * True if this a system-managed job that cannot be modified by the user;
+         * otherwise false.
+         *
+         * @param bool $systemManaged
+         */
+        public function setSystemManaged($systemManaged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSystemManaged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\Job registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The date/time when this job will expire/expired. After a job expired, no
-     * new reports are generated.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The server-generated ID of the job (max. 40 characters).
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The name of the job (max. 100 characters).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of reports this job creates. Corresponds to the ID of a
-     * ReportType.
-     *
-     * @param string $reportTypeId
-     */
-    public function setReportTypeId($reportTypeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTypeId()
-    {
-    }
-    /**
-     * True if this a system-managed job that cannot be modified by the user;
-     * otherwise false.
-     *
-     * @param bool $systemManaged
-     */
-    public function setSystemManaged($systemManaged)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSystemManaged()
+    class Google_Service_YouTubeReporting_Job extends \Google\Service\YouTubeReporting\Job
     {
     }
 }

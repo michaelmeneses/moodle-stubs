@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2Restrictions extends \Google\Collection
-{
-    protected $collection_key = 'apiTargets';
-    protected $androidKeyRestrictionsType = V2AndroidKeyRestrictions::class;
-    protected $androidKeyRestrictionsDataType = '';
-    protected $apiTargetsType = V2ApiTarget::class;
-    protected $apiTargetsDataType = 'array';
-    protected $browserKeyRestrictionsType = V2BrowserKeyRestrictions::class;
-    protected $browserKeyRestrictionsDataType = '';
-    protected $iosKeyRestrictionsType = V2IosKeyRestrictions::class;
-    protected $iosKeyRestrictionsDataType = '';
-    protected $serverKeyRestrictionsType = V2ServerKeyRestrictions::class;
-    protected $serverKeyRestrictionsDataType = '';
-    /**
-     * The Android apps that are allowed to use the key.
-     *
-     * @param V2AndroidKeyRestrictions $androidKeyRestrictions
-     */
-    public function setAndroidKeyRestrictions(V2AndroidKeyRestrictions $androidKeyRestrictions)
+namespace Google\Service\ApiKeysService {
+    class V2Restrictions extends \Google\Collection
     {
+        protected $collection_key = 'apiTargets';
+        protected $androidKeyRestrictionsType = V2AndroidKeyRestrictions::class;
+        protected $androidKeyRestrictionsDataType = '';
+        protected $apiTargetsType = V2ApiTarget::class;
+        protected $apiTargetsDataType = 'array';
+        protected $browserKeyRestrictionsType = V2BrowserKeyRestrictions::class;
+        protected $browserKeyRestrictionsDataType = '';
+        protected $iosKeyRestrictionsType = V2IosKeyRestrictions::class;
+        protected $iosKeyRestrictionsDataType = '';
+        protected $serverKeyRestrictionsType = V2ServerKeyRestrictions::class;
+        protected $serverKeyRestrictionsDataType = '';
+        /**
+         * The Android apps that are allowed to use the key.
+         *
+         * @param V2AndroidKeyRestrictions $androidKeyRestrictions
+         */
+        public function setAndroidKeyRestrictions(V2AndroidKeyRestrictions $androidKeyRestrictions)
+        {
+        }
+        /**
+         * @return V2AndroidKeyRestrictions
+         */
+        public function getAndroidKeyRestrictions()
+        {
+        }
+        /**
+         * A restriction for a specific service and optionally one or more specific
+         * methods. Requests are allowed if they match any of these restrictions. If
+         * no restrictions are specified, all targets are allowed.
+         *
+         * @param V2ApiTarget[] $apiTargets
+         */
+        public function setApiTargets($apiTargets)
+        {
+        }
+        /**
+         * @return V2ApiTarget[]
+         */
+        public function getApiTargets()
+        {
+        }
+        /**
+         * The HTTP referrers (websites) that are allowed to use the key.
+         *
+         * @param V2BrowserKeyRestrictions $browserKeyRestrictions
+         */
+        public function setBrowserKeyRestrictions(V2BrowserKeyRestrictions $browserKeyRestrictions)
+        {
+        }
+        /**
+         * @return V2BrowserKeyRestrictions
+         */
+        public function getBrowserKeyRestrictions()
+        {
+        }
+        /**
+         * The iOS apps that are allowed to use the key.
+         *
+         * @param V2IosKeyRestrictions $iosKeyRestrictions
+         */
+        public function setIosKeyRestrictions(V2IosKeyRestrictions $iosKeyRestrictions)
+        {
+        }
+        /**
+         * @return V2IosKeyRestrictions
+         */
+        public function getIosKeyRestrictions()
+        {
+        }
+        /**
+         * The IP addresses of callers that are allowed to use the key.
+         *
+         * @param V2ServerKeyRestrictions $serverKeyRestrictions
+         */
+        public function setServerKeyRestrictions(V2ServerKeyRestrictions $serverKeyRestrictions)
+        {
+        }
+        /**
+         * @return V2ServerKeyRestrictions
+         */
+        public function getServerKeyRestrictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V2AndroidKeyRestrictions
+     * Runtime class alias of \Google\Service\ApiKeysService\V2Restrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidKeyRestrictions()
-    {
-    }
-    /**
-     * A restriction for a specific service and optionally one or more specific
-     * methods. Requests are allowed if they match any of these restrictions. If
-     * no restrictions are specified, all targets are allowed.
-     *
-     * @param V2ApiTarget[] $apiTargets
-     */
-    public function setApiTargets($apiTargets)
-    {
-    }
-    /**
-     * @return V2ApiTarget[]
-     */
-    public function getApiTargets()
-    {
-    }
-    /**
-     * The HTTP referrers (websites) that are allowed to use the key.
-     *
-     * @param V2BrowserKeyRestrictions $browserKeyRestrictions
-     */
-    public function setBrowserKeyRestrictions(V2BrowserKeyRestrictions $browserKeyRestrictions)
-    {
-    }
-    /**
-     * @return V2BrowserKeyRestrictions
-     */
-    public function getBrowserKeyRestrictions()
-    {
-    }
-    /**
-     * The iOS apps that are allowed to use the key.
-     *
-     * @param V2IosKeyRestrictions $iosKeyRestrictions
-     */
-    public function setIosKeyRestrictions(V2IosKeyRestrictions $iosKeyRestrictions)
-    {
-    }
-    /**
-     * @return V2IosKeyRestrictions
-     */
-    public function getIosKeyRestrictions()
-    {
-    }
-    /**
-     * The IP addresses of callers that are allowed to use the key.
-     *
-     * @param V2ServerKeyRestrictions $serverKeyRestrictions
-     */
-    public function setServerKeyRestrictions(V2ServerKeyRestrictions $serverKeyRestrictions)
-    {
-    }
-    /**
-     * @return V2ServerKeyRestrictions
-     */
-    public function getServerKeyRestrictions()
+    class Google_Service_ApiKeysService_V2Restrictions extends \Google\Service\ApiKeysService\V2Restrictions
     {
     }
 }

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Mustache\LambdaHelper;
 /**
  * This class will call pix_icon with the section content.
  *

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdvertiserSdfConfig extends \Google\Model
-{
-    /**
-     * Whether or not this advertiser overrides the SDF configuration of its
-     * parent partner. By default, an advertiser inherits the SDF configuration
-     * from the parent partner. To override the partner configuration, set this
-     * field to `true` and provide the new configuration in sdfConfig.
-     *
-     * @var bool
-     */
-    public $overridePartnerSdfConfig;
-    protected $sdfConfigType = SdfConfig::class;
-    protected $sdfConfigDataType = '';
-    /**
-     * Whether or not this advertiser overrides the SDF configuration of its
-     * parent partner. By default, an advertiser inherits the SDF configuration
-     * from the parent partner. To override the partner configuration, set this
-     * field to `true` and provide the new configuration in sdfConfig.
-     *
-     * @param bool $overridePartnerSdfConfig
-     */
-    public function setOverridePartnerSdfConfig($overridePartnerSdfConfig)
+namespace Google\Service\DisplayVideo {
+    class AdvertiserSdfConfig extends \Google\Model
     {
+        /**
+         * Whether or not this advertiser overrides the SDF configuration of its
+         * parent partner. By default, an advertiser inherits the SDF configuration
+         * from the parent partner. To override the partner configuration, set this
+         * field to `true` and provide the new configuration in sdfConfig.
+         *
+         * @var bool
+         */
+        public $overridePartnerSdfConfig;
+        protected $sdfConfigType = SdfConfig::class;
+        protected $sdfConfigDataType = '';
+        /**
+         * Whether or not this advertiser overrides the SDF configuration of its
+         * parent partner. By default, an advertiser inherits the SDF configuration
+         * from the parent partner. To override the partner configuration, set this
+         * field to `true` and provide the new configuration in sdfConfig.
+         *
+         * @param bool $overridePartnerSdfConfig
+         */
+        public function setOverridePartnerSdfConfig($overridePartnerSdfConfig)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOverridePartnerSdfConfig()
+        {
+        }
+        /**
+         * The SDF configuration for the advertiser. * Required when
+         * overridePartnerSdfConfig is `true`. * Output only when
+         * overridePartnerSdfConfig is `false`.
+         *
+         * @param SdfConfig $sdfConfig
+         */
+        public function setSdfConfig(SdfConfig $sdfConfig)
+        {
+        }
+        /**
+         * @return SdfConfig
+         */
+        public function getSdfConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\AdvertiserSdfConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverridePartnerSdfConfig()
-    {
-    }
-    /**
-     * The SDF configuration for the advertiser. * Required when
-     * overridePartnerSdfConfig is `true`. * Output only when
-     * overridePartnerSdfConfig is `false`.
-     *
-     * @param SdfConfig $sdfConfig
-     */
-    public function setSdfConfig(SdfConfig $sdfConfig)
-    {
-    }
-    /**
-     * @return SdfConfig
-     */
-    public function getSdfConfig()
+    class Google_Service_DisplayVideo_AdvertiserSdfConfig extends \Google\Service\DisplayVideo\AdvertiserSdfConfig
     {
     }
 }

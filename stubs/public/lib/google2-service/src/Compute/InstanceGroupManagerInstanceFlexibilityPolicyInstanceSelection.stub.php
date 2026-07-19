@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection extends \Google\Collection
-{
-    protected $collection_key = 'machineTypes';
-    /**
-     * Full machine-type names, e.g. "n1-standard-16".
-     *
-     * @var string[]
-     */
-    public $machineTypes;
-    /**
-     * Preference of this instance selection. Lower number means higher
-     * preference. MIG will first try to create a VM based on the machine-type
-     * with lowest rank and fallback to next rank based on availability. Machine
-     * types and instance selections with the same rank have the same preference.
-     *
-     * @var int
-     */
-    public $rank;
-    /**
-     * Full machine-type names, e.g. "n1-standard-16".
-     *
-     * @param string[] $machineTypes
-     */
-    public function setMachineTypes($machineTypes)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection extends \Google\Collection
     {
+        protected $collection_key = 'machineTypes';
+        /**
+         * Full machine-type names, e.g. "n1-standard-16".
+         *
+         * @var string[]
+         */
+        public $machineTypes;
+        /**
+         * Preference of this instance selection. Lower number means higher
+         * preference. MIG will first try to create a VM based on the machine-type
+         * with lowest rank and fallback to next rank based on availability. Machine
+         * types and instance selections with the same rank have the same preference.
+         *
+         * @var int
+         */
+        public $rank;
+        /**
+         * Full machine-type names, e.g. "n1-standard-16".
+         *
+         * @param string[] $machineTypes
+         */
+        public function setMachineTypes($machineTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMachineTypes()
+        {
+        }
+        /**
+         * Preference of this instance selection. Lower number means higher
+         * preference. MIG will first try to create a VM based on the machine-type
+         * with lowest rank and fallback to next rank based on availability. Machine
+         * types and instance selections with the same rank have the same preference.
+         *
+         * @param int $rank
+         */
+        public function setRank($rank)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineTypes()
-    {
-    }
-    /**
-     * Preference of this instance selection. Lower number means higher
-     * preference. MIG will first try to create a VM based on the machine-type
-     * with lowest rank and fallback to next rank based on availability. Machine
-     * types and instance selections with the same rank have the same preference.
-     *
-     * @param int $rank
-     */
-    public function setRank($rank)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRank()
+    class Google_Service_Compute_InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection extends \Google\Service\Compute\InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection
     {
     }
 }

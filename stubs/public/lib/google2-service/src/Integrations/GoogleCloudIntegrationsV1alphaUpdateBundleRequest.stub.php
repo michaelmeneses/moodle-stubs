@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUpdateBundleRequest extends \Google\Model
-{
-    protected $configType = GoogleCloudIntegrationsV1alphaIntegrationBundleConfig::class;
-    protected $configDataType = '';
-    public $config;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
-     */
-    public function setConfig(GoogleCloudIntegrationsV1alphaIntegrationBundleConfig $config)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUpdateBundleRequest extends \Google\Model
     {
+        protected $configType = GoogleCloudIntegrationsV1alphaIntegrationBundleConfig::class;
+        protected $configDataType = '';
+        public $config;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
+         */
+        public function setConfig(GoogleCloudIntegrationsV1alphaIntegrationBundleConfig $config)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUpdateBundleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUpdateBundleRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUpdateBundleRequest
     {
     }
 }

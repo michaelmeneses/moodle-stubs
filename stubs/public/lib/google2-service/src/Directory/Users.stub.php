@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Users extends \Google\Collection
-{
-    protected $collection_key = 'users';
-    protected $internal_gapi_mappings = ["triggerEvent" => "trigger_event"];
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token used to access next page of this result. The page token is only valid
-     * for three days.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Event that triggered this response (only used in case of Push Response)
-     *
-     * @var string
-     */
-    public $triggerEvent;
-    protected $usersType = User::class;
-    protected $usersDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class Users extends \Google\Collection
     {
+        protected $collection_key = 'users';
+        protected $internal_gapi_mappings = ["triggerEvent" => "trigger_event"];
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token used to access next page of this result. The page token is only valid
+         * for three days.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Event that triggered this response (only used in case of Push Response)
+         *
+         * @var string
+         */
+        public $triggerEvent;
+        protected $usersType = User::class;
+        protected $usersDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token used to access next page of this result. The page token is only valid
+         * for three days.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Event that triggered this response (only used in case of Push Response)
+         *
+         * @param string $triggerEvent
+         */
+        public function setTriggerEvent($triggerEvent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerEvent()
+        {
+        }
+        /**
+         * A list of user objects.
+         *
+         * @param User[] $users
+         */
+        public function setUsers($users)
+        {
+        }
+        /**
+         * @return User[]
+         */
+        public function getUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token used to access next page of this result. The page token is only valid
-     * for three days.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Event that triggered this response (only used in case of Push Response)
-     *
-     * @param string $triggerEvent
-     */
-    public function setTriggerEvent($triggerEvent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerEvent()
-    {
-    }
-    /**
-     * A list of user objects.
-     *
-     * @param User[] $users
-     */
-    public function setUsers($users)
-    {
-    }
-    /**
-     * @return User[]
-     */
-    public function getUsers()
+    class Google_Service_Directory_Users extends \Google\Service\Directory\Users
     {
     }
 }

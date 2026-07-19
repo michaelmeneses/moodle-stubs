@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class TcpCheck extends \Google\Model
-{
-    protected $pingConfigType = PingConfig::class;
-    protected $pingConfigDataType = '';
-    /**
-     * The TCP port on the server against which to run the check. Will be combined
-     * with host (specified within the monitored_resource) to construct the full
-     * URL. Required.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Contains information needed to add pings to a TCP check.
-     *
-     * @param PingConfig $pingConfig
-     */
-    public function setPingConfig(PingConfig $pingConfig)
+namespace Google\Service\Monitoring {
+    class TcpCheck extends \Google\Model
     {
+        protected $pingConfigType = PingConfig::class;
+        protected $pingConfigDataType = '';
+        /**
+         * The TCP port on the server against which to run the check. Will be combined
+         * with host (specified within the monitored_resource) to construct the full
+         * URL. Required.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Contains information needed to add pings to a TCP check.
+         *
+         * @param PingConfig $pingConfig
+         */
+        public function setPingConfig(PingConfig $pingConfig)
+        {
+        }
+        /**
+         * @return PingConfig
+         */
+        public function getPingConfig()
+        {
+        }
+        /**
+         * The TCP port on the server against which to run the check. Will be combined
+         * with host (specified within the monitored_resource) to construct the full
+         * URL. Required.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PingConfig
+     * Runtime class alias of \Google\Service\Monitoring\TcpCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPingConfig()
-    {
-    }
-    /**
-     * The TCP port on the server against which to run the check. Will be combined
-     * with host (specified within the monitored_resource) to construct the full
-     * URL. Required.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_Monitoring_TcpCheck extends \Google\Service\Monitoring\TcpCheck
     {
     }
 }

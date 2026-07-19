@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class RelationshipDetails extends \Google\Model
-{
-    /**
-     * The name of the table this relationship is linked to.
-     *
-     * @var string
-     */
-    public $linkedTable;
-    /**
-     * The name of the table this relationship is linked to.
-     *
-     * @param string $linkedTable
-     */
-    public function setLinkedTable($linkedTable)
+namespace Google\Service\Area120Tables {
+    class RelationshipDetails extends \Google\Model
     {
+        /**
+         * The name of the table this relationship is linked to.
+         *
+         * @var string
+         */
+        public $linkedTable;
+        /**
+         * The name of the table this relationship is linked to.
+         *
+         * @param string $linkedTable
+         */
+        public function setLinkedTable($linkedTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Area120Tables\RelationshipDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedTable()
+    class Google_Service_Area120Tables_RelationshipDetails extends \Google\Service\Area120Tables\RelationshipDetails
     {
     }
 }

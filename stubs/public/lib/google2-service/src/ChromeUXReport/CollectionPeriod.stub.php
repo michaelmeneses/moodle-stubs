@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class CollectionPeriod extends \Google\Model
-{
-    protected $firstDateType = Date::class;
-    protected $firstDateDataType = '';
-    protected $lastDateType = Date::class;
-    protected $lastDateDataType = '';
-    /**
-     * The first day in the collection period, inclusive.
-     *
-     * @param Date $firstDate
-     */
-    public function setFirstDate(Date $firstDate)
+namespace Google\Service\ChromeUXReport {
+    class CollectionPeriod extends \Google\Model
     {
+        protected $firstDateType = Date::class;
+        protected $firstDateDataType = '';
+        protected $lastDateType = Date::class;
+        protected $lastDateDataType = '';
+        /**
+         * The first day in the collection period, inclusive.
+         *
+         * @param Date $firstDate
+         */
+        public function setFirstDate(Date $firstDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getFirstDate()
+        {
+        }
+        /**
+         * The last day in the collection period, inclusive.
+         *
+         * @param Date $lastDate
+         */
+        public function setLastDate(Date $lastDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getLastDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\ChromeUXReport\CollectionPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstDate()
-    {
-    }
-    /**
-     * The last day in the collection period, inclusive.
-     *
-     * @param Date $lastDate
-     */
-    public function setLastDate(Date $lastDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getLastDate()
+    class Google_Service_ChromeUXReport_CollectionPeriod extends \Google\Service\ChromeUXReport\CollectionPeriod
     {
     }
 }

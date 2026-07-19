@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaControlFilterAction extends \Google\Model
-{
-    /**
-     * Required. Specifies which data store's documents can be filtered by this
-     * control. Full data store name e.g. projects/123/locations/global/collection
-     * s/default_collection/dataStores/default_data_store
-     *
-     * @var string
-     */
-    public $dataStore;
-    /**
-     * Required. A filter to apply on the matching condition results. Required
-     * Syntax documentation: https://cloud.google.com/retail/docs/filter-and-order
-     * Maximum length is 5000 characters. Otherwise an INVALID ARGUMENT error is
-     * thrown.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Required. Specifies which data store's documents can be filtered by this
-     * control. Full data store name e.g. projects/123/locations/global/collection
-     * s/default_collection/dataStores/default_data_store
-     *
-     * @param string $dataStore
-     */
-    public function setDataStore($dataStore)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaControlFilterAction extends \Google\Model
     {
+        /**
+         * Required. Specifies which data store's documents can be filtered by this
+         * control. Full data store name e.g. projects/123/locations/global/collection
+         * s/default_collection/dataStores/default_data_store
+         *
+         * @var string
+         */
+        public $dataStore;
+        /**
+         * Required. A filter to apply on the matching condition results. Required
+         * Syntax documentation: https://cloud.google.com/retail/docs/filter-and-order
+         * Maximum length is 5000 characters. Otherwise an INVALID ARGUMENT error is
+         * thrown.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Required. Specifies which data store's documents can be filtered by this
+         * control. Full data store name e.g. projects/123/locations/global/collection
+         * s/default_collection/dataStores/default_data_store
+         *
+         * @param string $dataStore
+         */
+        public function setDataStore($dataStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataStore()
+        {
+        }
+        /**
+         * Required. A filter to apply on the matching condition results. Required
+         * Syntax documentation: https://cloud.google.com/retail/docs/filter-and-order
+         * Maximum length is 5000 characters. Otherwise an INVALID ARGUMENT error is
+         * thrown.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaControlFilterAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStore()
-    {
-    }
-    /**
-     * Required. A filter to apply on the matching condition results. Required
-     * Syntax documentation: https://cloud.google.com/retail/docs/filter-and-order
-     * Maximum length is 5000 characters. Otherwise an INVALID ARGUMENT error is
-     * thrown.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaControlFilterAction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaControlFilterAction
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequestGcsDestination extends \Google\Model
-{
-    /**
-     * Unspecified format.
-     */
-    public const FORMAT_FORMAT_UNSPECIFIED = 'FORMAT_UNSPECIFIED';
-    /**
-     * CSV format. 1,000 labels are stored per CSV file by default.
-     */
-    public const FORMAT_CSV = 'CSV';
-    /**
-     * JSON format. 1 label stored per JSON file by default.
-     */
-    public const FORMAT_JSON = 'JSON';
-    /**
-     * Optional. Add whitespace to the JSON file. Makes easier to read, but
-     * increases file size. Only applicable for JSON format.
-     *
-     * @var bool
-     */
-    public $addWhitespace;
-    /**
-     * Optional. Always print fields with no presence. This is useful for printing
-     * fields that are not set, like implicit 0 value or empty lists/maps. Only
-     * applicable for JSON format.
-     *
-     * @var bool
-     */
-    public $alwaysPrintEmptyFields;
-    /**
-     * Required. File format in which the labels will be exported.
-     *
-     * @var string
-     */
-    public $format;
-    /**
-     * Required. The Google Cloud Storage URI to write the feedback labels to. The
-     * file name will be used as a prefix for the files written to the bucket if
-     * the output needs to be split across multiple files, otherwise it will be
-     * used as is. The file extension will be appended to the file name based on
-     * the format selected. E.g. `gs://bucket_name/object_uri_prefix`
-     *
-     * @var string
-     */
-    public $objectUri;
-    /**
-     * Optional. The number of records per file. Applicable for either format.
-     *
-     * @var string
-     */
-    public $recordsPerFileCount;
-    /**
-     * Optional. Add whitespace to the JSON file. Makes easier to read, but
-     * increases file size. Only applicable for JSON format.
-     *
-     * @param bool $addWhitespace
-     */
-    public function setAddWhitespace($addWhitespace)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequestGcsDestination extends \Google\Model
     {
+        /**
+         * Unspecified format.
+         */
+        public const FORMAT_FORMAT_UNSPECIFIED = 'FORMAT_UNSPECIFIED';
+        /**
+         * CSV format. 1,000 labels are stored per CSV file by default.
+         */
+        public const FORMAT_CSV = 'CSV';
+        /**
+         * JSON format. 1 label stored per JSON file by default.
+         */
+        public const FORMAT_JSON = 'JSON';
+        /**
+         * Optional. Add whitespace to the JSON file. Makes easier to read, but
+         * increases file size. Only applicable for JSON format.
+         *
+         * @var bool
+         */
+        public $addWhitespace;
+        /**
+         * Optional. Always print fields with no presence. This is useful for printing
+         * fields that are not set, like implicit 0 value or empty lists/maps. Only
+         * applicable for JSON format.
+         *
+         * @var bool
+         */
+        public $alwaysPrintEmptyFields;
+        /**
+         * Required. File format in which the labels will be exported.
+         *
+         * @var string
+         */
+        public $format;
+        /**
+         * Required. The Google Cloud Storage URI to write the feedback labels to. The
+         * file name will be used as a prefix for the files written to the bucket if
+         * the output needs to be split across multiple files, otherwise it will be
+         * used as is. The file extension will be appended to the file name based on
+         * the format selected. E.g. `gs://bucket_name/object_uri_prefix`
+         *
+         * @var string
+         */
+        public $objectUri;
+        /**
+         * Optional. The number of records per file. Applicable for either format.
+         *
+         * @var string
+         */
+        public $recordsPerFileCount;
+        /**
+         * Optional. Add whitespace to the JSON file. Makes easier to read, but
+         * increases file size. Only applicable for JSON format.
+         *
+         * @param bool $addWhitespace
+         */
+        public function setAddWhitespace($addWhitespace)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAddWhitespace()
+        {
+        }
+        /**
+         * Optional. Always print fields with no presence. This is useful for printing
+         * fields that are not set, like implicit 0 value or empty lists/maps. Only
+         * applicable for JSON format.
+         *
+         * @param bool $alwaysPrintEmptyFields
+         */
+        public function setAlwaysPrintEmptyFields($alwaysPrintEmptyFields)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAlwaysPrintEmptyFields()
+        {
+        }
+        /**
+         * Required. File format in which the labels will be exported.
+         *
+         * Accepted values: FORMAT_UNSPECIFIED, CSV, JSON
+         *
+         * @param self::FORMAT_* $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return self::FORMAT_*
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * Required. The Google Cloud Storage URI to write the feedback labels to. The
+         * file name will be used as a prefix for the files written to the bucket if
+         * the output needs to be split across multiple files, otherwise it will be
+         * used as is. The file extension will be appended to the file name based on
+         * the format selected. E.g. `gs://bucket_name/object_uri_prefix`
+         *
+         * @param string $objectUri
+         */
+        public function setObjectUri($objectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectUri()
+        {
+        }
+        /**
+         * Optional. The number of records per file. Applicable for either format.
+         *
+         * @param string $recordsPerFileCount
+         */
+        public function setRecordsPerFileCount($recordsPerFileCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordsPerFileCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequestGcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddWhitespace()
-    {
-    }
-    /**
-     * Optional. Always print fields with no presence. This is useful for printing
-     * fields that are not set, like implicit 0 value or empty lists/maps. Only
-     * applicable for JSON format.
-     *
-     * @param bool $alwaysPrintEmptyFields
-     */
-    public function setAlwaysPrintEmptyFields($alwaysPrintEmptyFields)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAlwaysPrintEmptyFields()
-    {
-    }
-    /**
-     * Required. File format in which the labels will be exported.
-     *
-     * Accepted values: FORMAT_UNSPECIFIED, CSV, JSON
-     *
-     * @param self::FORMAT_* $format
-     */
-    public function setFormat($format)
-    {
-    }
-    /**
-     * @return self::FORMAT_*
-     */
-    public function getFormat()
-    {
-    }
-    /**
-     * Required. The Google Cloud Storage URI to write the feedback labels to. The
-     * file name will be used as a prefix for the files written to the bucket if
-     * the output needs to be split across multiple files, otherwise it will be
-     * used as is. The file extension will be appended to the file name based on
-     * the format selected. E.g. `gs://bucket_name/object_uri_prefix`
-     *
-     * @param string $objectUri
-     */
-    public function setObjectUri($objectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectUri()
-    {
-    }
-    /**
-     * Optional. The number of records per file. Applicable for either format.
-     *
-     * @param string $recordsPerFileCount
-     */
-    public function setRecordsPerFileCount($recordsPerFileCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordsPerFileCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequestGcsDestination extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequestGcsDestination
     {
     }
 }

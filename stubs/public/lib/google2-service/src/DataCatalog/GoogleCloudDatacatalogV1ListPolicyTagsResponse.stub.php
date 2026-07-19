@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ListPolicyTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'policyTags';
-    /**
-     * Pagination token of the next results page. Empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policyTagsType = GoogleCloudDatacatalogV1PolicyTag::class;
-    protected $policyTagsDataType = 'array';
-    /**
-     * Pagination token of the next results page. Empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ListPolicyTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'policyTags';
+        /**
+         * Pagination token of the next results page. Empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policyTagsType = GoogleCloudDatacatalogV1PolicyTag::class;
+        protected $policyTagsDataType = 'array';
+        /**
+         * Pagination token of the next results page. Empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The policy tags that belong to the taxonomy.
+         *
+         * @param GoogleCloudDatacatalogV1PolicyTag[] $policyTags
+         */
+        public function setPolicyTags($policyTags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PolicyTag[]
+         */
+        public function getPolicyTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListPolicyTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The policy tags that belong to the taxonomy.
-     *
-     * @param GoogleCloudDatacatalogV1PolicyTag[] $policyTags
-     */
-    public function setPolicyTags($policyTags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PolicyTag[]
-     */
-    public function getPolicyTags()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ListPolicyTagsResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListPolicyTagsResponse
     {
     }
 }

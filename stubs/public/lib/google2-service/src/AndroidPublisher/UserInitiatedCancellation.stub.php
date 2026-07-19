@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UserInitiatedCancellation extends \Google\Model
-{
-    protected $cancelSurveyResultType = CancelSurveyResult::class;
-    protected $cancelSurveyResultDataType = '';
-    /**
-     * The time at which the subscription was canceled by the user. The user might
-     * still have access to the subscription after this time. Use
-     * line_items.expiry_time to determine if a user still has access.
-     *
-     * @var string
-     */
-    public $cancelTime;
-    /**
-     * Information provided by the user when they complete the subscription
-     * cancellation flow (cancellation reason survey).
-     *
-     * @param CancelSurveyResult $cancelSurveyResult
-     */
-    public function setCancelSurveyResult(CancelSurveyResult $cancelSurveyResult)
+namespace Google\Service\AndroidPublisher {
+    class UserInitiatedCancellation extends \Google\Model
     {
+        protected $cancelSurveyResultType = CancelSurveyResult::class;
+        protected $cancelSurveyResultDataType = '';
+        /**
+         * The time at which the subscription was canceled by the user. The user might
+         * still have access to the subscription after this time. Use
+         * line_items.expiry_time to determine if a user still has access.
+         *
+         * @var string
+         */
+        public $cancelTime;
+        /**
+         * Information provided by the user when they complete the subscription
+         * cancellation flow (cancellation reason survey).
+         *
+         * @param CancelSurveyResult $cancelSurveyResult
+         */
+        public function setCancelSurveyResult(CancelSurveyResult $cancelSurveyResult)
+        {
+        }
+        /**
+         * @return CancelSurveyResult
+         */
+        public function getCancelSurveyResult()
+        {
+        }
+        /**
+         * The time at which the subscription was canceled by the user. The user might
+         * still have access to the subscription after this time. Use
+         * line_items.expiry_time to determine if a user still has access.
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CancelSurveyResult
+     * Runtime class alias of \Google\Service\AndroidPublisher\UserInitiatedCancellation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelSurveyResult()
-    {
-    }
-    /**
-     * The time at which the subscription was canceled by the user. The user might
-     * still have access to the subscription after this time. Use
-     * line_items.expiry_time to determine if a user still has access.
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCancelTime()
+    class Google_Service_AndroidPublisher_UserInitiatedCancellation extends \Google\Service\AndroidPublisher\UserInitiatedCancellation
     {
     }
 }

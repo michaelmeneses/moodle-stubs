@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SimulatedResource extends \Google\Model
-{
-    protected $iamPolicyDataType = Policy::class;
-    protected $iamPolicyDataDataType = '';
-    /**
-     * Optional. A representation of the Google Cloud resource. Should match the
-     * Google Cloud resource JSON format.
-     *
-     * @var array[]
-     */
-    public $resourceData;
-    /**
-     * Required. The type of the resource, for example,
-     * `compute.googleapis.com/Disk`.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Optional. A representation of the IAM policy.
-     *
-     * @param Policy $iamPolicyData
-     */
-    public function setIamPolicyData(Policy $iamPolicyData)
+namespace Google\Service\SecurityCommandCenter {
+    class SimulatedResource extends \Google\Model
     {
+        protected $iamPolicyDataType = Policy::class;
+        protected $iamPolicyDataDataType = '';
+        /**
+         * Optional. A representation of the Google Cloud resource. Should match the
+         * Google Cloud resource JSON format.
+         *
+         * @var array[]
+         */
+        public $resourceData;
+        /**
+         * Required. The type of the resource, for example,
+         * `compute.googleapis.com/Disk`.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Optional. A representation of the IAM policy.
+         *
+         * @param Policy $iamPolicyData
+         */
+        public function setIamPolicyData(Policy $iamPolicyData)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getIamPolicyData()
+        {
+        }
+        /**
+         * Optional. A representation of the Google Cloud resource. Should match the
+         * Google Cloud resource JSON format.
+         *
+         * @param array[] $resourceData
+         */
+        public function setResourceData($resourceData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResourceData()
+        {
+        }
+        /**
+         * Required. The type of the resource, for example,
+         * `compute.googleapis.com/Disk`.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SimulatedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamPolicyData()
-    {
-    }
-    /**
-     * Optional. A representation of the Google Cloud resource. Should match the
-     * Google Cloud resource JSON format.
-     *
-     * @param array[] $resourceData
-     */
-    public function setResourceData($resourceData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResourceData()
-    {
-    }
-    /**
-     * Required. The type of the resource, for example,
-     * `compute.googleapis.com/Disk`.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_SecurityCommandCenter_SimulatedResource extends \Google\Service\SecurityCommandCenter\SimulatedResource
     {
     }
 }

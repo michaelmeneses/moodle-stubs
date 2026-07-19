@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport\Resource;
-
-/**
- * The "cases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsupportService = new Google\Service\CloudSupport(...);
- *   $cases = $cloudsupportService->organizations_cases;
- *  </code>
- */
-class OrganizationsCases extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSupport\Resource {
+    /**
+     * The "cases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsupportService = new Google\Service\CloudSupport(...);
+     *   $cases = $cloudsupportService->organizations_cases;
+     *  </code>
+     */
+    class OrganizationsCases extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSupport\Resource\OrganizationsCases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSupport_Resource_OrganizationsCases extends \Google\Service\CloudSupport\Resource\OrganizationsCases
+    {
+    }
 }

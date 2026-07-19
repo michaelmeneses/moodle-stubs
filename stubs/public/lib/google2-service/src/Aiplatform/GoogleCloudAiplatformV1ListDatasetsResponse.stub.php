@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListDatasetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'datasets';
-    protected $datasetsType = GoogleCloudAiplatformV1Dataset::class;
-    protected $datasetsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of Datasets that matches the specified filter in the request.
-     *
-     * @param GoogleCloudAiplatformV1Dataset[] $datasets
-     */
-    public function setDatasets($datasets)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListDatasetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'datasets';
+        protected $datasetsType = GoogleCloudAiplatformV1Dataset::class;
+        protected $datasetsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of Datasets that matches the specified filter in the request.
+         *
+         * @param GoogleCloudAiplatformV1Dataset[] $datasets
+         */
+        public function setDatasets($datasets)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Dataset[]
+         */
+        public function getDatasets()
+        {
+        }
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Dataset[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDatasetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasets()
-    {
-    }
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListDatasetsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDatasetsResponse
     {
     }
 }

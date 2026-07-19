@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TableRowsProperties extends \Google\Model
-{
-    protected $firstBandColorStyleType = ColorStyle::class;
-    protected $firstBandColorStyleDataType = '';
-    protected $footerColorStyleType = ColorStyle::class;
-    protected $footerColorStyleDataType = '';
-    protected $headerColorStyleType = ColorStyle::class;
-    protected $headerColorStyleDataType = '';
-    protected $secondBandColorStyleType = ColorStyle::class;
-    protected $secondBandColorStyleDataType = '';
-    /**
-     * The first color that is alternating. If this field is set, the first banded
-     * row is filled with the specified color. Otherwise, the first banded row is
-     * filled with a default color.
-     *
-     * @param ColorStyle $firstBandColorStyle
-     */
-    public function setFirstBandColorStyle(ColorStyle $firstBandColorStyle)
+namespace Google\Service\Sheets {
+    class TableRowsProperties extends \Google\Model
     {
+        protected $firstBandColorStyleType = ColorStyle::class;
+        protected $firstBandColorStyleDataType = '';
+        protected $footerColorStyleType = ColorStyle::class;
+        protected $footerColorStyleDataType = '';
+        protected $headerColorStyleType = ColorStyle::class;
+        protected $headerColorStyleDataType = '';
+        protected $secondBandColorStyleType = ColorStyle::class;
+        protected $secondBandColorStyleDataType = '';
+        /**
+         * The first color that is alternating. If this field is set, the first banded
+         * row is filled with the specified color. Otherwise, the first banded row is
+         * filled with a default color.
+         *
+         * @param ColorStyle $firstBandColorStyle
+         */
+        public function setFirstBandColorStyle(ColorStyle $firstBandColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getFirstBandColorStyle()
+        {
+        }
+        /**
+         * The color of the last row. If this field is not set a footer is not added,
+         * the last row is filled with either first_band_color_style or
+         * second_band_color_style, depending on the color of the previous row. If
+         * updating an existing table without a footer to have a footer, the range
+         * will be expanded by 1 row. If updating an existing table with a footer and
+         * removing a footer, the range will be shrunk by 1 row.
+         *
+         * @param ColorStyle $footerColorStyle
+         */
+        public function setFooterColorStyle(ColorStyle $footerColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getFooterColorStyle()
+        {
+        }
+        /**
+         * The color of the header row. If this field is set, the header row is filled
+         * with the specified color. Otherwise, the header row is filled with a
+         * default color.
+         *
+         * @param ColorStyle $headerColorStyle
+         */
+        public function setHeaderColorStyle(ColorStyle $headerColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getHeaderColorStyle()
+        {
+        }
+        /**
+         * The second color that is alternating. If this field is set, the second
+         * banded row is filled with the specified color. Otherwise, the second banded
+         * row is filled with a default color.
+         *
+         * @param ColorStyle $secondBandColorStyle
+         */
+        public function setSecondBandColorStyle(ColorStyle $secondBandColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getSecondBandColorStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColorStyle
+     * Runtime class alias of \Google\Service\Sheets\TableRowsProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstBandColorStyle()
-    {
-    }
-    /**
-     * The color of the last row. If this field is not set a footer is not added,
-     * the last row is filled with either first_band_color_style or
-     * second_band_color_style, depending on the color of the previous row. If
-     * updating an existing table without a footer to have a footer, the range
-     * will be expanded by 1 row. If updating an existing table with a footer and
-     * removing a footer, the range will be shrunk by 1 row.
-     *
-     * @param ColorStyle $footerColorStyle
-     */
-    public function setFooterColorStyle(ColorStyle $footerColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getFooterColorStyle()
-    {
-    }
-    /**
-     * The color of the header row. If this field is set, the header row is filled
-     * with the specified color. Otherwise, the header row is filled with a
-     * default color.
-     *
-     * @param ColorStyle $headerColorStyle
-     */
-    public function setHeaderColorStyle(ColorStyle $headerColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getHeaderColorStyle()
-    {
-    }
-    /**
-     * The second color that is alternating. If this field is set, the second
-     * banded row is filled with the specified color. Otherwise, the second banded
-     * row is filled with a default color.
-     *
-     * @param ColorStyle $secondBandColorStyle
-     */
-    public function setSecondBandColorStyle(ColorStyle $secondBandColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getSecondBandColorStyle()
+    class Google_Service_Sheets_TableRowsProperties extends \Google\Service\Sheets\TableRowsProperties
     {
     }
 }

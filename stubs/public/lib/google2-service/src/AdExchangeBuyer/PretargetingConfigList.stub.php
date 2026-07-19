@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PretargetingConfigList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = PretargetingConfig::class;
-    protected $itemsDataType = 'array';
-    public $kind;
+namespace Google\Service\AdExchangeBuyer {
+    class PretargetingConfigList extends \Google\Collection
+    {
+        protected $collection_key = 'items';
+        protected $itemsType = PretargetingConfig::class;
+        protected $itemsDataType = 'array';
+        public $kind;
+        /**
+         * @param PretargetingConfig[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return PretargetingConfig[]
+         */
+        public function getItems()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param PretargetingConfig[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PretargetingConfigList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return PretargetingConfig[]
-     */
-    public function getItems()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
+    class Google_Service_AdExchangeBuyer_PretargetingConfigList extends \Google\Service\AdExchangeBuyer\PretargetingConfigList
     {
     }
 }

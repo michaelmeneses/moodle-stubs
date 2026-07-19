@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListPluginInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'pluginInstances';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pluginInstancesType = GoogleCloudApihubV1PluginInstance::class;
-    protected $pluginInstancesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListPluginInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'pluginInstances';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pluginInstancesType = GoogleCloudApihubV1PluginInstance::class;
+        protected $pluginInstancesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The plugin instances from the specified parent resource.
+         *
+         * @param GoogleCloudApihubV1PluginInstance[] $pluginInstances
+         */
+        public function setPluginInstances($pluginInstances)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1PluginInstance[]
+         */
+        public function getPluginInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListPluginInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The plugin instances from the specified parent resource.
-     *
-     * @param GoogleCloudApihubV1PluginInstance[] $pluginInstances
-     */
-    public function setPluginInstances($pluginInstances)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1PluginInstance[]
-     */
-    public function getPluginInstances()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListPluginInstancesResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListPluginInstancesResponse
     {
     }
 }

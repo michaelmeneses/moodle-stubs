@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ContextualHeadersDelegatedGroupInfo extends \Google\Model
-{
-    /**
-     * The unspecified output type.
-     */
-    public const OUTPUT_TYPE_OUTPUT_TYPE_UNSPECIFIED = 'OUTPUT_TYPE_UNSPECIFIED';
-    /**
-     * Protobuf output type.
-     */
-    public const OUTPUT_TYPE_PROTOBUF = 'PROTOBUF';
-    /**
-     * JSON output type.
-     */
-    public const OUTPUT_TYPE_JSON = 'JSON';
-    /**
-     * Explicitly disable header output.
-     */
-    public const OUTPUT_TYPE_NONE = 'NONE';
-    /**
-     * Optional. The output type of the delegated group information.
-     *
-     * @var string
-     */
-    public $outputType;
-    /**
-     * Optional. The output type of the delegated group information.
-     *
-     * Accepted values: OUTPUT_TYPE_UNSPECIFIED, PROTOBUF, JSON, NONE
-     *
-     * @param self::OUTPUT_TYPE_* $outputType
-     */
-    public function setOutputType($outputType)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ContextualHeadersDelegatedGroupInfo extends \Google\Model
     {
+        /**
+         * The unspecified output type.
+         */
+        public const OUTPUT_TYPE_OUTPUT_TYPE_UNSPECIFIED = 'OUTPUT_TYPE_UNSPECIFIED';
+        /**
+         * Protobuf output type.
+         */
+        public const OUTPUT_TYPE_PROTOBUF = 'PROTOBUF';
+        /**
+         * JSON output type.
+         */
+        public const OUTPUT_TYPE_JSON = 'JSON';
+        /**
+         * Explicitly disable header output.
+         */
+        public const OUTPUT_TYPE_NONE = 'NONE';
+        /**
+         * Optional. The output type of the delegated group information.
+         *
+         * @var string
+         */
+        public $outputType;
+        /**
+         * Optional. The output type of the delegated group information.
+         *
+         * Accepted values: OUTPUT_TYPE_UNSPECIFIED, PROTOBUF, JSON, NONE
+         *
+         * @param self::OUTPUT_TYPE_* $outputType
+         */
+        public function setOutputType($outputType)
+        {
+        }
+        /**
+         * @return self::OUTPUT_TYPE_*
+         */
+        public function getOutputType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OUTPUT_TYPE_*
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ContextualHeadersDelegatedGroupInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputType()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ContextualHeadersDelegatedGroupInfo extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ContextualHeadersDelegatedGroupInfo
     {
     }
 }

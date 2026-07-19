@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ListAccessLevelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accessLevels';
-    protected $accessLevelsType = AccessLevel::class;
-    protected $accessLevelsDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of the Access Level instances.
-     *
-     * @param AccessLevel[] $accessLevels
-     */
-    public function setAccessLevels($accessLevels)
+namespace Google\Service\AccessContextManager {
+    class ListAccessLevelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accessLevels';
+        protected $accessLevelsType = AccessLevel::class;
+        protected $accessLevelsDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of the Access Level instances.
+         *
+         * @param AccessLevel[] $accessLevels
+         */
+        public function setAccessLevels($accessLevels)
+        {
+        }
+        /**
+         * @return AccessLevel[]
+         */
+        public function getAccessLevels()
+        {
+        }
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessLevel[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ListAccessLevelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLevels()
-    {
-    }
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AccessContextManager_ListAccessLevelsResponse extends \Google\Service\AccessContextManager\ListAccessLevelsResponse
     {
     }
 }

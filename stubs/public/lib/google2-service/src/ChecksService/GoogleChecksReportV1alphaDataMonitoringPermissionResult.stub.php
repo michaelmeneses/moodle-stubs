@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaDataMonitoringPermissionResult extends \Google\Model
-{
-    protected $metadataType = GoogleChecksReportV1alphaDataMonitoringResultMetadata::class;
-    protected $metadataDataType = '';
-    protected $permissionType = GoogleChecksReportV1alphaPermission::class;
-    protected $permissionDataType = '';
-    /**
-     * Metadata about the result.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata
-     */
-    public function setMetadata(GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaDataMonitoringPermissionResult extends \Google\Model
     {
+        protected $metadataType = GoogleChecksReportV1alphaDataMonitoringResultMetadata::class;
+        protected $metadataDataType = '';
+        protected $permissionType = GoogleChecksReportV1alphaPermission::class;
+        protected $permissionDataType = '';
+        /**
+         * Metadata about the result.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata
+         */
+        public function setMetadata(GoogleChecksReportV1alphaDataMonitoringResultMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoringResultMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The permission that was found in your app.
+         *
+         * @param GoogleChecksReportV1alphaPermission $permission
+         */
+        public function setPermission(GoogleChecksReportV1alphaPermission $permission)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaPermission
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaDataMonitoringResultMetadata
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoringPermissionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The permission that was found in your app.
-     *
-     * @param GoogleChecksReportV1alphaPermission $permission
-     */
-    public function setPermission(GoogleChecksReportV1alphaPermission $permission)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaPermission
-     */
-    public function getPermission()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaDataMonitoringPermissionResult extends \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoringPermissionResult
     {
     }
 }

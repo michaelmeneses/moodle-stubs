@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class MergeConflict extends \Google\Model
-{
-    protected $entityInBaseVersionType = Entity::class;
-    protected $entityInBaseVersionDataType = '';
-    protected $entityInWorkspaceType = Entity::class;
-    protected $entityInWorkspaceDataType = '';
-    /**
-     * The base version entity (since the latest sync operation) that has
-     * conflicting changes compared to the workspace. If this field is missing, it
-     * means the workspace entity is deleted from the base version.
-     *
-     * @param Entity $entityInBaseVersion
-     */
-    public function setEntityInBaseVersion(Entity $entityInBaseVersion)
+namespace Google\Service\TagManager {
+    class MergeConflict extends \Google\Model
     {
+        protected $entityInBaseVersionType = Entity::class;
+        protected $entityInBaseVersionDataType = '';
+        protected $entityInWorkspaceType = Entity::class;
+        protected $entityInWorkspaceDataType = '';
+        /**
+         * The base version entity (since the latest sync operation) that has
+         * conflicting changes compared to the workspace. If this field is missing, it
+         * means the workspace entity is deleted from the base version.
+         *
+         * @param Entity $entityInBaseVersion
+         */
+        public function setEntityInBaseVersion(Entity $entityInBaseVersion)
+        {
+        }
+        /**
+         * @return Entity
+         */
+        public function getEntityInBaseVersion()
+        {
+        }
+        /**
+         * The workspace entity that has conflicting changes compared to the base
+         * version. If an entity is deleted in a workspace, it will still appear with
+         * a deleted change status.
+         *
+         * @param Entity $entityInWorkspace
+         */
+        public function setEntityInWorkspace(Entity $entityInWorkspace)
+        {
+        }
+        /**
+         * @return Entity
+         */
+        public function getEntityInWorkspace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity
+     * Runtime class alias of \Google\Service\TagManager\MergeConflict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityInBaseVersion()
-    {
-    }
-    /**
-     * The workspace entity that has conflicting changes compared to the base
-     * version. If an entity is deleted in a workspace, it will still appear with
-     * a deleted change status.
-     *
-     * @param Entity $entityInWorkspace
-     */
-    public function setEntityInWorkspace(Entity $entityInWorkspace)
-    {
-    }
-    /**
-     * @return Entity
-     */
-    public function getEntityInWorkspace()
+    class Google_Service_TagManager_MergeConflict extends \Google\Service\TagManager\MergeConflict
     {
     }
 }

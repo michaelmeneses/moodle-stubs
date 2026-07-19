@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchRequestPersonalizationSpec extends \Google\Model
-{
-    /**
-     * Default value. In this case, server behavior defaults to Mode.AUTO.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Personalization is enabled if data quality requirements are met.
-     */
-    public const MODE_AUTO = 'AUTO';
-    /**
-     * Disable personalization.
-     */
-    public const MODE_DISABLED = 'DISABLED';
-    /**
-     * The personalization mode of the search request. Defaults to Mode.AUTO.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * The personalization mode of the search request. Defaults to Mode.AUTO.
-     *
-     * Accepted values: MODE_UNSPECIFIED, AUTO, DISABLED
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchRequestPersonalizationSpec extends \Google\Model
     {
+        /**
+         * Default value. In this case, server behavior defaults to Mode.AUTO.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Personalization is enabled if data quality requirements are met.
+         */
+        public const MODE_AUTO = 'AUTO';
+        /**
+         * Disable personalization.
+         */
+        public const MODE_DISABLED = 'DISABLED';
+        /**
+         * The personalization mode of the search request. Defaults to Mode.AUTO.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * The personalization mode of the search request. Defaults to Mode.AUTO.
+         *
+         * Accepted values: MODE_UNSPECIFIED, AUTO, DISABLED
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestPersonalizationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchRequestPersonalizationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestPersonalizationSpec
     {
     }
 }

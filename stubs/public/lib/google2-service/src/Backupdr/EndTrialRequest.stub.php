@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class EndTrialRequest extends \Google\Model
-{
-    /**
-     * End reason not set.
-     */
-    public const END_REASON_END_REASON_UNSPECIFIED = 'END_REASON_UNSPECIFIED';
-    /**
-     * Trial is deliberately ended by the user to transition to paid usage.
-     */
-    public const END_REASON_MOVE_TO_PAID = 'MOVE_TO_PAID';
-    /**
-     * Trial is discontinued before expiration.
-     */
-    public const END_REASON_DISCONTINUED = 'DISCONTINUED';
-    /**
-     * Required. The reason for ending the trial.
-     *
-     * @var string
-     */
-    public $endReason;
-    /**
-     * Required. The reason for ending the trial.
-     *
-     * Accepted values: END_REASON_UNSPECIFIED, MOVE_TO_PAID, DISCONTINUED
-     *
-     * @param self::END_REASON_* $endReason
-     */
-    public function setEndReason($endReason)
+namespace Google\Service\Backupdr {
+    class EndTrialRequest extends \Google\Model
     {
+        /**
+         * End reason not set.
+         */
+        public const END_REASON_END_REASON_UNSPECIFIED = 'END_REASON_UNSPECIFIED';
+        /**
+         * Trial is deliberately ended by the user to transition to paid usage.
+         */
+        public const END_REASON_MOVE_TO_PAID = 'MOVE_TO_PAID';
+        /**
+         * Trial is discontinued before expiration.
+         */
+        public const END_REASON_DISCONTINUED = 'DISCONTINUED';
+        /**
+         * Required. The reason for ending the trial.
+         *
+         * @var string
+         */
+        public $endReason;
+        /**
+         * Required. The reason for ending the trial.
+         *
+         * Accepted values: END_REASON_UNSPECIFIED, MOVE_TO_PAID, DISCONTINUED
+         *
+         * @param self::END_REASON_* $endReason
+         */
+        public function setEndReason($endReason)
+        {
+        }
+        /**
+         * @return self::END_REASON_*
+         */
+        public function getEndReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::END_REASON_*
+     * Runtime class alias of \Google\Service\Backupdr\EndTrialRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndReason()
+    class Google_Service_Backupdr_EndTrialRequest extends \Google\Service\Backupdr\EndTrialRequest
     {
     }
 }

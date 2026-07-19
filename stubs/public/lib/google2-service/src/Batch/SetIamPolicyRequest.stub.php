@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class SetIamPolicyRequest extends \Google\Model
-{
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    public $policy;
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param Policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\Batch {
+    class SetIamPolicyRequest extends \Google\Model
     {
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        public $policy;
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param Policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\Batch\SetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Batch_SetIamPolicyRequest extends \Google\Service\Batch\SetIamPolicyRequest
     {
     }
 }

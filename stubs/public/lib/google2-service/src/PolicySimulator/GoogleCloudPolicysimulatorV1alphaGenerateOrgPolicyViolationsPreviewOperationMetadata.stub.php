@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1alphaGenerateOrgPolicyViolationsPreviewOperationMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * @var int
-     */
-    public $resourcesFound;
-    /**
-     * @var int
-     */
-    public $resourcesPending;
-    /**
-     * @var int
-     */
-    public $resourcesScanned;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setRequestTime($requestTime)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1alphaGenerateOrgPolicyViolationsPreviewOperationMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * @var int
+         */
+        public $resourcesFound;
+        /**
+         * @var int
+         */
+        public $resourcesPending;
+        /**
+         * @var int
+         */
+        public $resourcesScanned;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setResourcesFound($resourcesFound)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourcesFound()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setResourcesPending($resourcesPending)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourcesPending()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setResourcesScanned($resourcesScanned)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourcesScanned()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaGenerateOrgPolicyViolationsPreviewOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setResourcesFound($resourcesFound)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourcesFound()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setResourcesPending($resourcesPending)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourcesPending()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setResourcesScanned($resourcesScanned)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourcesScanned()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1alphaGenerateOrgPolicyViolationsPreviewOperationMetadata extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaGenerateOrgPolicyViolationsPreviewOperationMetadata
     {
     }
 }

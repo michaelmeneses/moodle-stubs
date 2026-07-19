@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ExtensionChain extends \Google\Collection
-{
-    protected $collection_key = 'extensions';
-    protected $extensionsType = ExtensionChainExtension::class;
-    protected $extensionsDataType = 'array';
-    protected $matchConditionType = ExtensionChainMatchCondition::class;
-    protected $matchConditionDataType = '';
-    /**
-     * Required. The name for this extension chain. The name is logged as part of
-     * the HTTP request logs. The name must conform with RFC-1034, is restricted
-     * to lower-cased letters, numbers and hyphens, and can have a maximum length
-     * of 63 characters. Additionally, the first character must be a letter and
-     * the last a letter or a number.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. A set of extensions to execute for the matching request. At least
-     * one extension is required. Up to 3 extensions can be defined for each
-     * extension chain for `LbTrafficExtension` resource. `LbRouteExtension` and
-     * `LbEdgeExtension` chains are limited to 1 extension per extension chain.
-     *
-     * @param ExtensionChainExtension[] $extensions
-     */
-    public function setExtensions($extensions)
+namespace Google\Service\NetworkServices {
+    class ExtensionChain extends \Google\Collection
     {
+        protected $collection_key = 'extensions';
+        protected $extensionsType = ExtensionChainExtension::class;
+        protected $extensionsDataType = 'array';
+        protected $matchConditionType = ExtensionChainMatchCondition::class;
+        protected $matchConditionDataType = '';
+        /**
+         * Required. The name for this extension chain. The name is logged as part of
+         * the HTTP request logs. The name must conform with RFC-1034, is restricted
+         * to lower-cased letters, numbers and hyphens, and can have a maximum length
+         * of 63 characters. Additionally, the first character must be a letter and
+         * the last a letter or a number.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. A set of extensions to execute for the matching request. At least
+         * one extension is required. Up to 3 extensions can be defined for each
+         * extension chain for `LbTrafficExtension` resource. `LbRouteExtension` and
+         * `LbEdgeExtension` chains are limited to 1 extension per extension chain.
+         *
+         * @param ExtensionChainExtension[] $extensions
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return ExtensionChainExtension[]
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * Required. Conditions under which this chain is invoked for a request.
+         *
+         * @param ExtensionChainMatchCondition $matchCondition
+         */
+        public function setMatchCondition(ExtensionChainMatchCondition $matchCondition)
+        {
+        }
+        /**
+         * @return ExtensionChainMatchCondition
+         */
+        public function getMatchCondition()
+        {
+        }
+        /**
+         * Required. The name for this extension chain. The name is logged as part of
+         * the HTTP request logs. The name must conform with RFC-1034, is restricted
+         * to lower-cased letters, numbers and hyphens, and can have a maximum length
+         * of 63 characters. Additionally, the first character must be a letter and
+         * the last a letter or a number.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExtensionChainExtension[]
+     * Runtime class alias of \Google\Service\NetworkServices\ExtensionChain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensions()
-    {
-    }
-    /**
-     * Required. Conditions under which this chain is invoked for a request.
-     *
-     * @param ExtensionChainMatchCondition $matchCondition
-     */
-    public function setMatchCondition(ExtensionChainMatchCondition $matchCondition)
-    {
-    }
-    /**
-     * @return ExtensionChainMatchCondition
-     */
-    public function getMatchCondition()
-    {
-    }
-    /**
-     * Required. The name for this extension chain. The name is logged as part of
-     * the HTTP request logs. The name must conform with RFC-1034, is restricted
-     * to lower-cased letters, numbers and hyphens, and can have a maximum length
-     * of 63 characters. Additionally, the first character must be a letter and
-     * the last a letter or a number.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_NetworkServices_ExtensionChain extends \Google\Service\NetworkServices\ExtensionChain
     {
     }
 }

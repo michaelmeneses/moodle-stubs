@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ListClientGatewaysResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $clientGatewaysType = ClientGateway::class;
-    protected $clientGatewaysDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param ClientGateway[]
-     */
-    public function setClientGateways($clientGateways)
+namespace Google\Service\BeyondCorp {
+    class ListClientGatewaysResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $clientGatewaysType = ClientGateway::class;
+        protected $clientGatewaysDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param ClientGateway[]
+         */
+        public function setClientGateways($clientGateways)
+        {
+        }
+        /**
+         * @return ClientGateway[]
+         */
+        public function getClientGateways()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientGateway[]
+     * Runtime class alias of \Google\Service\BeyondCorp\ListClientGatewaysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientGateways()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_ListClientGatewaysResponse extends \Google\Service\BeyondCorp\ListClientGatewaysResponse
     {
     }
 }

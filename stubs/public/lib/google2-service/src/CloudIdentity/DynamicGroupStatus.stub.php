@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class DynamicGroupStatus extends \Google\Model
-{
-    /**
-     * Default.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * The dynamic group is up-to-date.
-     */
-    public const STATUS_UP_TO_DATE = 'UP_TO_DATE';
-    /**
-     * The dynamic group has just been created and memberships are being updated.
-     */
-    public const STATUS_UPDATING_MEMBERSHIPS = 'UPDATING_MEMBERSHIPS';
-    /**
-     * Group is in an unrecoverable state and its memberships can't be updated.
-     */
-    public const STATUS_INVALID_QUERY = 'INVALID_QUERY';
-    /**
-     * Status of the dynamic group.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The latest time at which the dynamic group is guaranteed to be in the given
-     * status. If status is `UP_TO_DATE`, the latest time at which the dynamic
-     * group was confirmed to be up-to-date. If status is `UPDATING_MEMBERSHIPS`,
-     * the time at which dynamic group was created.
-     *
-     * @var string
-     */
-    public $statusTime;
-    /**
-     * Status of the dynamic group.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, UP_TO_DATE, UPDATING_MEMBERSHIPS,
-     * INVALID_QUERY
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
+namespace Google\Service\CloudIdentity {
+    class DynamicGroupStatus extends \Google\Model
     {
+        /**
+         * Default.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * The dynamic group is up-to-date.
+         */
+        public const STATUS_UP_TO_DATE = 'UP_TO_DATE';
+        /**
+         * The dynamic group has just been created and memberships are being updated.
+         */
+        public const STATUS_UPDATING_MEMBERSHIPS = 'UPDATING_MEMBERSHIPS';
+        /**
+         * Group is in an unrecoverable state and its memberships can't be updated.
+         */
+        public const STATUS_INVALID_QUERY = 'INVALID_QUERY';
+        /**
+         * Status of the dynamic group.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The latest time at which the dynamic group is guaranteed to be in the given
+         * status. If status is `UP_TO_DATE`, the latest time at which the dynamic
+         * group was confirmed to be up-to-date. If status is `UPDATING_MEMBERSHIPS`,
+         * the time at which dynamic group was created.
+         *
+         * @var string
+         */
+        public $statusTime;
+        /**
+         * Status of the dynamic group.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, UP_TO_DATE, UPDATING_MEMBERSHIPS,
+         * INVALID_QUERY
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The latest time at which the dynamic group is guaranteed to be in the given
+         * status. If status is `UP_TO_DATE`, the latest time at which the dynamic
+         * group was confirmed to be up-to-date. If status is `UPDATING_MEMBERSHIPS`,
+         * the time at which dynamic group was created.
+         *
+         * @param string $statusTime
+         */
+        public function setStatusTime($statusTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATUS_*
+     * Runtime class alias of \Google\Service\CloudIdentity\DynamicGroupStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * The latest time at which the dynamic group is guaranteed to be in the given
-     * status. If status is `UP_TO_DATE`, the latest time at which the dynamic
-     * group was confirmed to be up-to-date. If status is `UPDATING_MEMBERSHIPS`,
-     * the time at which dynamic group was created.
-     *
-     * @param string $statusTime
-     */
-    public function setStatusTime($statusTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusTime()
+    class Google_Service_CloudIdentity_DynamicGroupStatus extends \Google\Service\CloudIdentity\DynamicGroupStatus
     {
     }
 }

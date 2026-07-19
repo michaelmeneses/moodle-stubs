@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection extends \Google\Model
-{
-    /**
-     * Required. Name of the section.
-     *
-     * @var string
-     */
-    public $section;
-    /**
-     * Required. Summary text for the section.
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * Required. Name of the section.
-     *
-     * @param string $section
-     */
-    public function setSection($section)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection extends \Google\Model
     {
+        /**
+         * Required. Name of the section.
+         *
+         * @var string
+         */
+        public $section;
+        /**
+         * Required. Summary text for the section.
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * Required. Name of the section.
+         *
+         * @param string $section
+         */
+        public function setSection($section)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSection()
+        {
+        }
+        /**
+         * Required. Summary text for the section.
+         *
+         * @param string $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSection()
-    {
-    }
-    /**
-     * Required. Summary text for the section.
-     *
-     * @param string $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection
     {
     }
 }

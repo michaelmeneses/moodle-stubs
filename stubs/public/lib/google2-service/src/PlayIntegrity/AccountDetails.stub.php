@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class AccountDetails extends \Google\Model
-{
-    /**
-     * Play does not have sufficient information to evaluate licensing details
-     */
-    public const APP_LICENSING_VERDICT_UNKNOWN = 'UNKNOWN';
-    /**
-     * The user has a valid license to use the app.
-     */
-    public const APP_LICENSING_VERDICT_LICENSED = 'LICENSED';
-    /**
-     * The user does not have a valid license to use the app.
-     */
-    public const APP_LICENSING_VERDICT_UNLICENSED = 'UNLICENSED';
-    /**
-     * Licensing details were not evaluated since a necessary requirement was
-     * missed. For example DeviceIntegrity did not meet the minimum bar or the
-     * application was not a known Play version.
-     */
-    public const APP_LICENSING_VERDICT_UNEVALUATED = 'UNEVALUATED';
-    protected $accountActivityType = AccountActivity::class;
-    protected $accountActivityDataType = '';
-    /**
-     * Required. Details about the licensing status of the user for the app in the
-     * scope.
-     *
-     * @var string
-     */
-    public $appLicensingVerdict;
-    /**
-     * (Restricted Access) Details about the account activity for the user in the
-     * scope.
-     *
-     * @deprecated
-     * @param AccountActivity $accountActivity
-     */
-    public function setAccountActivity(AccountActivity $accountActivity)
+namespace Google\Service\PlayIntegrity {
+    class AccountDetails extends \Google\Model
     {
+        /**
+         * Play does not have sufficient information to evaluate licensing details
+         */
+        public const APP_LICENSING_VERDICT_UNKNOWN = 'UNKNOWN';
+        /**
+         * The user has a valid license to use the app.
+         */
+        public const APP_LICENSING_VERDICT_LICENSED = 'LICENSED';
+        /**
+         * The user does not have a valid license to use the app.
+         */
+        public const APP_LICENSING_VERDICT_UNLICENSED = 'UNLICENSED';
+        /**
+         * Licensing details were not evaluated since a necessary requirement was
+         * missed. For example DeviceIntegrity did not meet the minimum bar or the
+         * application was not a known Play version.
+         */
+        public const APP_LICENSING_VERDICT_UNEVALUATED = 'UNEVALUATED';
+        protected $accountActivityType = AccountActivity::class;
+        protected $accountActivityDataType = '';
+        /**
+         * Required. Details about the licensing status of the user for the app in the
+         * scope.
+         *
+         * @var string
+         */
+        public $appLicensingVerdict;
+        /**
+         * (Restricted Access) Details about the account activity for the user in the
+         * scope.
+         *
+         * @deprecated
+         * @param AccountActivity $accountActivity
+         */
+        public function setAccountActivity(AccountActivity $accountActivity)
+        {
+        }
+        /**
+         * @deprecated
+         * @return AccountActivity
+         */
+        public function getAccountActivity()
+        {
+        }
+        /**
+         * Required. Details about the licensing status of the user for the app in the
+         * scope.
+         *
+         * Accepted values: UNKNOWN, LICENSED, UNLICENSED, UNEVALUATED
+         *
+         * @param self::APP_LICENSING_VERDICT_* $appLicensingVerdict
+         */
+        public function setAppLicensingVerdict($appLicensingVerdict)
+        {
+        }
+        /**
+         * @return self::APP_LICENSING_VERDICT_*
+         */
+        public function getAppLicensingVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return AccountActivity
+     * Runtime class alias of \Google\Service\PlayIntegrity\AccountDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountActivity()
-    {
-    }
-    /**
-     * Required. Details about the licensing status of the user for the app in the
-     * scope.
-     *
-     * Accepted values: UNKNOWN, LICENSED, UNLICENSED, UNEVALUATED
-     *
-     * @param self::APP_LICENSING_VERDICT_* $appLicensingVerdict
-     */
-    public function setAppLicensingVerdict($appLicensingVerdict)
-    {
-    }
-    /**
-     * @return self::APP_LICENSING_VERDICT_*
-     */
-    public function getAppLicensingVerdict()
+    class Google_Service_PlayIntegrity_AccountDetails extends \Google\Service\PlayIntegrity\AccountDetails
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EventProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $eventId;
-    /**
-     * @var int
-     */
-    public $memberType;
-    /**
-     * @param string
-     */
-    public function setEventId($eventId)
+namespace Google\Service\CloudSearch {
+    class EventProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $eventId;
+        /**
+         * @var int
+         */
+        public $memberType;
+        /**
+         * @param string
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMemberType($memberType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemberType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EventProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMemberType($memberType)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemberType()
+    class Google_Service_CloudSearch_EventProto extends \Google\Service\CloudSearch\EventProto
     {
     }
 }

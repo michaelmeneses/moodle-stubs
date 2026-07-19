@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ModifyCourseWorkAssigneesRequest extends \Google\Model
-{
-    /**
-     * No mode specified. This is never returned.
-     */
-    public const ASSIGNEE_MODE_ASSIGNEE_MODE_UNSPECIFIED = 'ASSIGNEE_MODE_UNSPECIFIED';
-    /**
-     * All students can see the item. This is the default state.
-     */
-    public const ASSIGNEE_MODE_ALL_STUDENTS = 'ALL_STUDENTS';
-    /**
-     * A subset of the students can see the item.
-     */
-    public const ASSIGNEE_MODE_INDIVIDUAL_STUDENTS = 'INDIVIDUAL_STUDENTS';
-    /**
-     * Mode of the coursework describing whether it will be assigned to all
-     * students or specified individual students.
-     *
-     * @var string
-     */
-    public $assigneeMode;
-    protected $modifyIndividualStudentsOptionsType = ModifyIndividualStudentsOptions::class;
-    protected $modifyIndividualStudentsOptionsDataType = '';
-    /**
-     * Mode of the coursework describing whether it will be assigned to all
-     * students or specified individual students.
-     *
-     * Accepted values: ASSIGNEE_MODE_UNSPECIFIED, ALL_STUDENTS,
-     * INDIVIDUAL_STUDENTS
-     *
-     * @param self::ASSIGNEE_MODE_* $assigneeMode
-     */
-    public function setAssigneeMode($assigneeMode)
+namespace Google\Service\Classroom {
+    class ModifyCourseWorkAssigneesRequest extends \Google\Model
     {
+        /**
+         * No mode specified. This is never returned.
+         */
+        public const ASSIGNEE_MODE_ASSIGNEE_MODE_UNSPECIFIED = 'ASSIGNEE_MODE_UNSPECIFIED';
+        /**
+         * All students can see the item. This is the default state.
+         */
+        public const ASSIGNEE_MODE_ALL_STUDENTS = 'ALL_STUDENTS';
+        /**
+         * A subset of the students can see the item.
+         */
+        public const ASSIGNEE_MODE_INDIVIDUAL_STUDENTS = 'INDIVIDUAL_STUDENTS';
+        /**
+         * Mode of the coursework describing whether it will be assigned to all
+         * students or specified individual students.
+         *
+         * @var string
+         */
+        public $assigneeMode;
+        protected $modifyIndividualStudentsOptionsType = ModifyIndividualStudentsOptions::class;
+        protected $modifyIndividualStudentsOptionsDataType = '';
+        /**
+         * Mode of the coursework describing whether it will be assigned to all
+         * students or specified individual students.
+         *
+         * Accepted values: ASSIGNEE_MODE_UNSPECIFIED, ALL_STUDENTS,
+         * INDIVIDUAL_STUDENTS
+         *
+         * @param self::ASSIGNEE_MODE_* $assigneeMode
+         */
+        public function setAssigneeMode($assigneeMode)
+        {
+        }
+        /**
+         * @return self::ASSIGNEE_MODE_*
+         */
+        public function getAssigneeMode()
+        {
+        }
+        /**
+         * Set which students are assigned or not assigned to the coursework. Must be
+         * specified only when `assigneeMode` is `INDIVIDUAL_STUDENTS`.
+         *
+         * @param ModifyIndividualStudentsOptions $modifyIndividualStudentsOptions
+         */
+        public function setModifyIndividualStudentsOptions(ModifyIndividualStudentsOptions $modifyIndividualStudentsOptions)
+        {
+        }
+        /**
+         * @return ModifyIndividualStudentsOptions
+         */
+        public function getModifyIndividualStudentsOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ASSIGNEE_MODE_*
+     * Runtime class alias of \Google\Service\Classroom\ModifyCourseWorkAssigneesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssigneeMode()
-    {
-    }
-    /**
-     * Set which students are assigned or not assigned to the coursework. Must be
-     * specified only when `assigneeMode` is `INDIVIDUAL_STUDENTS`.
-     *
-     * @param ModifyIndividualStudentsOptions $modifyIndividualStudentsOptions
-     */
-    public function setModifyIndividualStudentsOptions(ModifyIndividualStudentsOptions $modifyIndividualStudentsOptions)
-    {
-    }
-    /**
-     * @return ModifyIndividualStudentsOptions
-     */
-    public function getModifyIndividualStudentsOptions()
+    class Google_Service_Classroom_ModifyCourseWorkAssigneesRequest extends \Google\Service\Classroom\ModifyCourseWorkAssigneesRequest
     {
     }
 }

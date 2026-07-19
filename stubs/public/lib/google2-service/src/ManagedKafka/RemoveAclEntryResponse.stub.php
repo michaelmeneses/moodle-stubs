@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class RemoveAclEntryResponse extends \Google\Model
-{
-    protected $aclType = Acl::class;
-    protected $aclDataType = '';
-    /**
-     * Returned with value true if the removed acl entry was the last entry in the
-     * acl, resulting in acl deletion.
-     *
-     * @var bool
-     */
-    public $aclDeleted;
-    /**
-     * The updated acl. Returned if the removed acl entry was not the last entry
-     * in the acl.
-     *
-     * @param Acl $acl
-     */
-    public function setAcl(Acl $acl)
+namespace Google\Service\ManagedKafka {
+    class RemoveAclEntryResponse extends \Google\Model
     {
+        protected $aclType = Acl::class;
+        protected $aclDataType = '';
+        /**
+         * Returned with value true if the removed acl entry was the last entry in the
+         * acl, resulting in acl deletion.
+         *
+         * @var bool
+         */
+        public $aclDeleted;
+        /**
+         * The updated acl. Returned if the removed acl entry was not the last entry
+         * in the acl.
+         *
+         * @param Acl $acl
+         */
+        public function setAcl(Acl $acl)
+        {
+        }
+        /**
+         * @return Acl
+         */
+        public function getAcl()
+        {
+        }
+        /**
+         * Returned with value true if the removed acl entry was the last entry in the
+         * acl, resulting in acl deletion.
+         *
+         * @param bool $aclDeleted
+         */
+        public function setAclDeleted($aclDeleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAclDeleted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Acl
+     * Runtime class alias of \Google\Service\ManagedKafka\RemoveAclEntryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcl()
-    {
-    }
-    /**
-     * Returned with value true if the removed acl entry was the last entry in the
-     * acl, resulting in acl deletion.
-     *
-     * @param bool $aclDeleted
-     */
-    public function setAclDeleted($aclDeleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAclDeleted()
+    class Google_Service_ManagedKafka_RemoveAclEntryResponse extends \Google\Service\ManagedKafka\RemoveAclEntryResponse
     {
     }
 }

@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges;
 
+use core_badges\local\backpack\helper;
+use core_badges\local\backpack\ob_factory;
+use context_system;
+use context_course;
+use context_user;
+use moodle_exception;
+use core_text;
+use award_criteria;
+use core_php_time_limit;
+use html_writer;
+use stdClass;
 /**
  * Class that represents badge.
  *

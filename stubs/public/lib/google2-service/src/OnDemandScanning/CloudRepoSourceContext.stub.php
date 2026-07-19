@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class CloudRepoSourceContext extends \Google\Model
-{
-    protected $aliasContextType = AliasContext::class;
-    protected $aliasContextDataType = '';
-    protected $repoIdType = RepoId::class;
-    protected $repoIdDataType = '';
-    /**
-     * A revision ID.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * An alias, which may be a branch or tag.
-     *
-     * @param AliasContext $aliasContext
-     */
-    public function setAliasContext(AliasContext $aliasContext)
+namespace Google\Service\OnDemandScanning {
+    class CloudRepoSourceContext extends \Google\Model
     {
+        protected $aliasContextType = AliasContext::class;
+        protected $aliasContextDataType = '';
+        protected $repoIdType = RepoId::class;
+        protected $repoIdDataType = '';
+        /**
+         * A revision ID.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * An alias, which may be a branch or tag.
+         *
+         * @param AliasContext $aliasContext
+         */
+        public function setAliasContext(AliasContext $aliasContext)
+        {
+        }
+        /**
+         * @return AliasContext
+         */
+        public function getAliasContext()
+        {
+        }
+        /**
+         * The ID of the repo.
+         *
+         * @param RepoId $repoId
+         */
+        public function setRepoId(RepoId $repoId)
+        {
+        }
+        /**
+         * @return RepoId
+         */
+        public function getRepoId()
+        {
+        }
+        /**
+         * A revision ID.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AliasContext
+     * Runtime class alias of \Google\Service\OnDemandScanning\CloudRepoSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliasContext()
-    {
-    }
-    /**
-     * The ID of the repo.
-     *
-     * @param RepoId $repoId
-     */
-    public function setRepoId(RepoId $repoId)
-    {
-    }
-    /**
-     * @return RepoId
-     */
-    public function getRepoId()
-    {
-    }
-    /**
-     * A revision ID.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_OnDemandScanning_CloudRepoSourceContext extends \Google\Service\OnDemandScanning\CloudRepoSourceContext
     {
     }
 }

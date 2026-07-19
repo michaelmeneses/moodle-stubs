@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class Trial extends \Google\Model
-{
-    /**
-     * End reason not set.
-     */
-    public const END_REASON_END_REASON_UNSPECIFIED = 'END_REASON_UNSPECIFIED';
-    /**
-     * Trial is deliberately ended by the user to transition to paid usage.
-     */
-    public const END_REASON_MOVE_TO_PAID = 'MOVE_TO_PAID';
-    /**
-     * Trial is discontinued before expiration.
-     */
-    public const END_REASON_DISCONTINUED = 'DISCONTINUED';
-    /**
-     * State not set.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Trial is subscribed.
-     */
-    public const STATE_SUBSCRIBED = 'SUBSCRIBED';
-    /**
-     * Trial is unsubscribed before expiration.
-     */
-    public const STATE_UNSUBSCRIBED = 'UNSUBSCRIBED';
-    /**
-     * Trial is expired post 30 days of subscription.
-     */
-    public const STATE_EXPIRED = 'EXPIRED';
-    /**
-     * Trial is eligible for enablement.
-     */
-    public const STATE_ELIGIBLE = 'ELIGIBLE';
-    /**
-     * Trial is not eligible for enablement.
-     */
-    public const STATE_NOT_ELIGIBLE = 'NOT_ELIGIBLE';
-    /**
-     * Output only. The reason for ending the trial.
-     *
-     * @var string
-     */
-    public $endReason;
-    /**
-     * Output only. The time when the trial will expire.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Identifier. The resource name of the trial. Format:
-     * projects/{project}/locations/{location}/trial
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time when the trial was subscribed.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The state of the trial.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The reason for ending the trial.
-     *
-     * Accepted values: END_REASON_UNSPECIFIED, MOVE_TO_PAID, DISCONTINUED
-     *
-     * @param self::END_REASON_* $endReason
-     */
-    public function setEndReason($endReason)
+namespace Google\Service\Backupdr {
+    class Trial extends \Google\Model
     {
+        /**
+         * End reason not set.
+         */
+        public const END_REASON_END_REASON_UNSPECIFIED = 'END_REASON_UNSPECIFIED';
+        /**
+         * Trial is deliberately ended by the user to transition to paid usage.
+         */
+        public const END_REASON_MOVE_TO_PAID = 'MOVE_TO_PAID';
+        /**
+         * Trial is discontinued before expiration.
+         */
+        public const END_REASON_DISCONTINUED = 'DISCONTINUED';
+        /**
+         * State not set.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Trial is subscribed.
+         */
+        public const STATE_SUBSCRIBED = 'SUBSCRIBED';
+        /**
+         * Trial is unsubscribed before expiration.
+         */
+        public const STATE_UNSUBSCRIBED = 'UNSUBSCRIBED';
+        /**
+         * Trial is expired post 30 days of subscription.
+         */
+        public const STATE_EXPIRED = 'EXPIRED';
+        /**
+         * Trial is eligible for enablement.
+         */
+        public const STATE_ELIGIBLE = 'ELIGIBLE';
+        /**
+         * Trial is not eligible for enablement.
+         */
+        public const STATE_NOT_ELIGIBLE = 'NOT_ELIGIBLE';
+        /**
+         * Output only. The reason for ending the trial.
+         *
+         * @var string
+         */
+        public $endReason;
+        /**
+         * Output only. The time when the trial will expire.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Identifier. The resource name of the trial. Format:
+         * projects/{project}/locations/{location}/trial
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time when the trial was subscribed.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The state of the trial.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The reason for ending the trial.
+         *
+         * Accepted values: END_REASON_UNSPECIFIED, MOVE_TO_PAID, DISCONTINUED
+         *
+         * @param self::END_REASON_* $endReason
+         */
+        public function setEndReason($endReason)
+        {
+        }
+        /**
+         * @return self::END_REASON_*
+         */
+        public function getEndReason()
+        {
+        }
+        /**
+         * Output only. The time when the trial will expire.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Identifier. The resource name of the trial. Format:
+         * projects/{project}/locations/{location}/trial
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time when the trial was subscribed.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. The state of the trial.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SUBSCRIBED, UNSUBSCRIBED, EXPIRED,
+         * ELIGIBLE, NOT_ELIGIBLE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::END_REASON_*
+     * Runtime class alias of \Google\Service\Backupdr\Trial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndReason()
-    {
-    }
-    /**
-     * Output only. The time when the trial will expire.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Identifier. The resource name of the trial. Format:
-     * projects/{project}/locations/{location}/trial
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time when the trial was subscribed.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. The state of the trial.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SUBSCRIBED, UNSUBSCRIBED, EXPIRED,
-     * ELIGIBLE, NOT_ELIGIBLE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Backupdr_Trial extends \Google\Service\Backupdr\Trial
     {
     }
 }

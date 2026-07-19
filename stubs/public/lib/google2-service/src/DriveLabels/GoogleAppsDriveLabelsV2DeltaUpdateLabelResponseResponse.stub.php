@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse extends \Google\Model
-{
-    protected $createFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse::class;
-    protected $createFieldDataType = '';
-    protected $createSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse::class;
-    protected $createSelectionChoiceDataType = '';
-    protected $deleteFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse::class;
-    protected $deleteFieldDataType = '';
-    protected $deleteSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse::class;
-    protected $deleteSelectionChoiceDataType = '';
-    protected $disableFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse::class;
-    protected $disableFieldDataType = '';
-    protected $disableSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse::class;
-    protected $disableSelectionChoiceDataType = '';
-    protected $enableFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse::class;
-    protected $enableFieldDataType = '';
-    protected $enableSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse::class;
-    protected $enableSelectionChoiceDataType = '';
-    protected $updateFieldDataType = '';
-    protected $updateFieldTypeType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse::class;
-    protected $updateFieldTypeDataType = '';
-    protected $updateLabelType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse::class;
-    protected $updateLabelDataType = '';
-    protected $updateSelectionChoicePropertiesType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse::class;
-    protected $updateSelectionChoicePropertiesDataType = '';
-    /**
-     * Creates a field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse $createField
-     */
-    public function setCreateField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse $createField)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse extends \Google\Model
     {
+        protected $createFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse::class;
+        protected $createFieldDataType = '';
+        protected $createSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse::class;
+        protected $createSelectionChoiceDataType = '';
+        protected $deleteFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse::class;
+        protected $deleteFieldDataType = '';
+        protected $deleteSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse::class;
+        protected $deleteSelectionChoiceDataType = '';
+        protected $disableFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse::class;
+        protected $disableFieldDataType = '';
+        protected $disableSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse::class;
+        protected $disableSelectionChoiceDataType = '';
+        protected $enableFieldType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse::class;
+        protected $enableFieldDataType = '';
+        protected $enableSelectionChoiceType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse::class;
+        protected $enableSelectionChoiceDataType = '';
+        protected $updateFieldDataType = '';
+        protected $updateFieldTypeType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse::class;
+        protected $updateFieldTypeDataType = '';
+        protected $updateLabelType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse::class;
+        protected $updateLabelDataType = '';
+        protected $updateSelectionChoicePropertiesType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse::class;
+        protected $updateSelectionChoicePropertiesDataType = '';
+        /**
+         * Creates a field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse $createField
+         */
+        public function setCreateField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse $createField)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse
+         */
+        public function getCreateField()
+        {
+        }
+        /**
+         * Creates a selection list option to add to a selection field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse $createSelectionChoice
+         */
+        public function setCreateSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse $createSelectionChoice)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse
+         */
+        public function getCreateSelectionChoice()
+        {
+        }
+        /**
+         * Deletes a field from the label.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse $deleteField
+         */
+        public function setDeleteField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse $deleteField)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse
+         */
+        public function getDeleteField()
+        {
+        }
+        /**
+         * Deletes a choice from a selection field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse $deleteSelectionChoice
+         */
+        public function setDeleteSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse $deleteSelectionChoice)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse
+         */
+        public function getDeleteSelectionChoice()
+        {
+        }
+        /**
+         * Disables field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse $disableField
+         */
+        public function setDisableField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse $disableField)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse
+         */
+        public function getDisableField()
+        {
+        }
+        /**
+         * Disables a choice within a selection field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse $disableSelectionChoice
+         */
+        public function setDisableSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse $disableSelectionChoice)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse
+         */
+        public function getDisableSelectionChoice()
+        {
+        }
+        /**
+         * Enables field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse $enableField
+         */
+        public function setEnableField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse $enableField)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse
+         */
+        public function getEnableField()
+        {
+        }
+        /**
+         * Enables a choice within a selection field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse $enableSelectionChoice
+         */
+        public function setEnableSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse $enableSelectionChoice)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse
+         */
+        public function getEnableSelectionChoice()
+        {
+        }
+        /**
+         * Updates basic properties of a field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldPropertiesResponse $updateField
+         */
+        public function setUpdateField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldPropertiesResponse $updateField)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldPropertiesResponse
+         */
+        public function getUpdateField()
+        {
+        }
+        /**
+         * Updates field type and/or type options.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse $updateFieldType
+         */
+        public function setUpdateFieldType(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse $updateFieldType)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse
+         */
+        public function getUpdateFieldType()
+        {
+        }
+        /**
+         * Updates basic properties of a label.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse $updateLabel
+         */
+        public function setUpdateLabel(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse $updateLabel)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse
+         */
+        public function getUpdateLabel()
+        {
+        }
+        /**
+         * Updates a choice within a selection field.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse $updateSelectionChoiceProperties
+         */
+        public function setUpdateSelectionChoiceProperties(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse $updateSelectionChoiceProperties)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse
+         */
+        public function getUpdateSelectionChoiceProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateFieldResponse
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateField()
-    {
-    }
-    /**
-     * Creates a selection list option to add to a selection field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse $createSelectionChoice
-     */
-    public function setCreateSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse $createSelectionChoice)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse
-     */
-    public function getCreateSelectionChoice()
-    {
-    }
-    /**
-     * Deletes a field from the label.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse $deleteField
-     */
-    public function setDeleteField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse $deleteField)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteFieldResponse
-     */
-    public function getDeleteField()
-    {
-    }
-    /**
-     * Deletes a choice from a selection field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse $deleteSelectionChoice
-     */
-    public function setDeleteSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse $deleteSelectionChoice)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDeleteSelectionChoiceResponse
-     */
-    public function getDeleteSelectionChoice()
-    {
-    }
-    /**
-     * Disables field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse $disableField
-     */
-    public function setDisableField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse $disableField)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableFieldResponse
-     */
-    public function getDisableField()
-    {
-    }
-    /**
-     * Disables a choice within a selection field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse $disableSelectionChoice
-     */
-    public function setDisableSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse $disableSelectionChoice)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseDisableSelectionChoiceResponse
-     */
-    public function getDisableSelectionChoice()
-    {
-    }
-    /**
-     * Enables field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse $enableField
-     */
-    public function setEnableField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse $enableField)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableFieldResponse
-     */
-    public function getEnableField()
-    {
-    }
-    /**
-     * Enables a choice within a selection field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse $enableSelectionChoice
-     */
-    public function setEnableSelectionChoice(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse $enableSelectionChoice)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseEnableSelectionChoiceResponse
-     */
-    public function getEnableSelectionChoice()
-    {
-    }
-    /**
-     * Updates basic properties of a field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldPropertiesResponse $updateField
-     */
-    public function setUpdateField(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldPropertiesResponse $updateField)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldPropertiesResponse
-     */
-    public function getUpdateField()
-    {
-    }
-    /**
-     * Updates field type and/or type options.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse $updateFieldType
-     */
-    public function setUpdateFieldType(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse $updateFieldType)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateFieldTypeResponse
-     */
-    public function getUpdateFieldType()
-    {
-    }
-    /**
-     * Updates basic properties of a label.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse $updateLabel
-     */
-    public function setUpdateLabel(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse $updateLabel)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateLabelPropertiesResponse
-     */
-    public function getUpdateLabel()
-    {
-    }
-    /**
-     * Updates a choice within a selection field.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse $updateSelectionChoiceProperties
-     */
-    public function setUpdateSelectionChoiceProperties(GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse $updateSelectionChoiceProperties)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse
-     */
-    public function getUpdateSelectionChoiceProperties()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse
     {
     }
 }

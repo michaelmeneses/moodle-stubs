@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TextureCompressionFormatTargeting extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    protected $alternativesType = TextureCompressionFormat::class;
-    protected $alternativesDataType = 'array';
-    protected $valueType = TextureCompressionFormat::class;
-    protected $valueDataType = 'array';
-    /**
-     * List of alternative TCFs (TCFs targeted by the sibling splits).
-     *
-     * @param TextureCompressionFormat[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\AndroidPublisher {
+    class TextureCompressionFormatTargeting extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        protected $alternativesType = TextureCompressionFormat::class;
+        protected $alternativesDataType = 'array';
+        protected $valueType = TextureCompressionFormat::class;
+        protected $valueDataType = 'array';
+        /**
+         * List of alternative TCFs (TCFs targeted by the sibling splits).
+         *
+         * @param TextureCompressionFormat[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return TextureCompressionFormat[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * The list of targeted TCFs. Should not be empty.
+         *
+         * @param TextureCompressionFormat[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return TextureCompressionFormat[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextureCompressionFormat[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\TextureCompressionFormatTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * The list of targeted TCFs. Should not be empty.
-     *
-     * @param TextureCompressionFormat[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return TextureCompressionFormat[]
-     */
-    public function getValue()
+    class Google_Service_AndroidPublisher_TextureCompressionFormatTargeting extends \Google\Service\AndroidPublisher\TextureCompressionFormatTargeting
     {
     }
 }

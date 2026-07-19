@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListMinorVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'minorVersions';
-    protected $minorVersionsType = MinorVersion::class;
-    protected $minorVersionsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of MinorVersions.
-     *
-     * @param MinorVersion[] $minorVersions
-     */
-    public function setMinorVersions($minorVersions)
+namespace Google\Service\OracleDatabase {
+    class ListMinorVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'minorVersions';
+        protected $minorVersionsType = MinorVersion::class;
+        protected $minorVersionsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of MinorVersions.
+         *
+         * @param MinorVersion[] $minorVersions
+         */
+        public function setMinorVersions($minorVersions)
+        {
+        }
+        /**
+         * @return MinorVersion[]
+         */
+        public function getMinorVersions()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MinorVersion[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListMinorVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinorVersions()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListMinorVersionsResponse extends \Google\Service\OracleDatabase\ListMinorVersionsResponse
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CopyBackupMetadata extends \Google\Model
-{
-    /**
-     * The name of the backup being created through the copy operation. Values are
-     * of the form `projects//instances//clusters//backups/`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = '';
-    protected $sourceBackupInfoType = BackupInfo::class;
-    protected $sourceBackupInfoDataType = '';
-    /**
-     * The name of the backup being created through the copy operation. Values are
-     * of the form `projects//instances//clusters//backups/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\BigtableAdmin {
+    class CopyBackupMetadata extends \Google\Model
     {
+        /**
+         * The name of the backup being created through the copy operation. Values are
+         * of the form `projects//instances//clusters//backups/`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = '';
+        protected $sourceBackupInfoType = BackupInfo::class;
+        protected $sourceBackupInfoDataType = '';
+        /**
+         * The name of the backup being created through the copy operation. Values are
+         * of the form `projects//instances//clusters//backups/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The progress of the CopyBackup operation.
+         *
+         * @param OperationProgress $progress
+         */
+        public function setProgress(OperationProgress $progress)
+        {
+        }
+        /**
+         * @return OperationProgress
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * Information about the source backup that is being copied from.
+         *
+         * @param BackupInfo $sourceBackupInfo
+         */
+        public function setSourceBackupInfo(BackupInfo $sourceBackupInfo)
+        {
+        }
+        /**
+         * @return BackupInfo
+         */
+        public function getSourceBackupInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CopyBackupMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The progress of the CopyBackup operation.
-     *
-     * @param OperationProgress $progress
-     */
-    public function setProgress(OperationProgress $progress)
-    {
-    }
-    /**
-     * @return OperationProgress
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * Information about the source backup that is being copied from.
-     *
-     * @param BackupInfo $sourceBackupInfo
-     */
-    public function setSourceBackupInfo(BackupInfo $sourceBackupInfo)
-    {
-    }
-    /**
-     * @return BackupInfo
-     */
-    public function getSourceBackupInfo()
+    class Google_Service_BigtableAdmin_CopyBackupMetadata extends \Google\Service\BigtableAdmin\CopyBackupMetadata
     {
     }
 }

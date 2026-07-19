@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class CreateDraftAppRecoveryRequest extends \Google\Model
-{
-    protected $remoteInAppUpdateType = RemoteInAppUpdate::class;
-    protected $remoteInAppUpdateDataType = '';
-    protected $targetingType = Targeting::class;
-    protected $targetingDataType = '';
-    /**
-     * Action type is remote in-app update. As a consequence of this action, a
-     * downloadable recovery module is also created for testing purposes.
-     *
-     * @param RemoteInAppUpdate $remoteInAppUpdate
-     */
-    public function setRemoteInAppUpdate(RemoteInAppUpdate $remoteInAppUpdate)
+namespace Google\Service\AndroidPublisher {
+    class CreateDraftAppRecoveryRequest extends \Google\Model
     {
+        protected $remoteInAppUpdateType = RemoteInAppUpdate::class;
+        protected $remoteInAppUpdateDataType = '';
+        protected $targetingType = Targeting::class;
+        protected $targetingDataType = '';
+        /**
+         * Action type is remote in-app update. As a consequence of this action, a
+         * downloadable recovery module is also created for testing purposes.
+         *
+         * @param RemoteInAppUpdate $remoteInAppUpdate
+         */
+        public function setRemoteInAppUpdate(RemoteInAppUpdate $remoteInAppUpdate)
+        {
+        }
+        /**
+         * @return RemoteInAppUpdate
+         */
+        public function getRemoteInAppUpdate()
+        {
+        }
+        /**
+         * Specifies targeting criteria for the recovery action such as regions,
+         * android sdk versions, app versions etc.
+         *
+         * @param Targeting $targeting
+         */
+        public function setTargeting(Targeting $targeting)
+        {
+        }
+        /**
+         * @return Targeting
+         */
+        public function getTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RemoteInAppUpdate
+     * Runtime class alias of \Google\Service\AndroidPublisher\CreateDraftAppRecoveryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRemoteInAppUpdate()
-    {
-    }
-    /**
-     * Specifies targeting criteria for the recovery action such as regions,
-     * android sdk versions, app versions etc.
-     *
-     * @param Targeting $targeting
-     */
-    public function setTargeting(Targeting $targeting)
-    {
-    }
-    /**
-     * @return Targeting
-     */
-    public function getTargeting()
+    class Google_Service_AndroidPublisher_CreateDraftAppRecoveryRequest extends \Google\Service\AndroidPublisher\CreateDraftAppRecoveryRequest
     {
     }
 }

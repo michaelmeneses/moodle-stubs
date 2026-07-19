@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class AttributeContext extends \Google\Collection
-{
-    protected $collection_key = 'extensions';
-    protected $apiType = Api::class;
-    protected $apiDataType = '';
-    protected $destinationType = Peer::class;
-    protected $destinationDataType = '';
-    /**
-     * Supports extensions for advanced use cases, such as logs and metrics.
-     *
-     * @var array[]
-     */
-    public $extensions;
-    protected $originType = Peer::class;
-    protected $originDataType = '';
-    protected $requestType = Request::class;
-    protected $requestDataType = '';
-    protected $resourceType = ServicecontrolResource::class;
-    protected $resourceDataType = '';
-    protected $responseType = Response::class;
-    protected $responseDataType = '';
-    protected $sourceType = Peer::class;
-    protected $sourceDataType = '';
-    /**
-     * Represents an API operation that is involved to a network activity.
-     *
-     * @param Api $api
-     */
-    public function setApi(Api $api)
+namespace Google\Service\ServiceControl {
+    class AttributeContext extends \Google\Collection
     {
+        protected $collection_key = 'extensions';
+        protected $apiType = Api::class;
+        protected $apiDataType = '';
+        protected $destinationType = Peer::class;
+        protected $destinationDataType = '';
+        /**
+         * Supports extensions for advanced use cases, such as logs and metrics.
+         *
+         * @var array[]
+         */
+        public $extensions;
+        protected $originType = Peer::class;
+        protected $originDataType = '';
+        protected $requestType = Request::class;
+        protected $requestDataType = '';
+        protected $resourceType = ServicecontrolResource::class;
+        protected $resourceDataType = '';
+        protected $responseType = Response::class;
+        protected $responseDataType = '';
+        protected $sourceType = Peer::class;
+        protected $sourceDataType = '';
+        /**
+         * Represents an API operation that is involved to a network activity.
+         *
+         * @param Api $api
+         */
+        public function setApi(Api $api)
+        {
+        }
+        /**
+         * @return Api
+         */
+        public function getApi()
+        {
+        }
+        /**
+         * The destination of a network activity, such as accepting a TCP connection.
+         * In a multi hop network activity, the destination represents the receiver of
+         * the last hop.
+         *
+         * @param Peer $destination
+         */
+        public function setDestination(Peer $destination)
+        {
+        }
+        /**
+         * @return Peer
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Supports extensions for advanced use cases, such as logs and metrics.
+         *
+         * @param array[] $extensions
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * The origin of a network activity. In a multi hop network activity, the
+         * origin represents the sender of the first hop. For the first hop, the
+         * `source` and the `origin` must have the same content.
+         *
+         * @param Peer $origin
+         */
+        public function setOrigin(Peer $origin)
+        {
+        }
+        /**
+         * @return Peer
+         */
+        public function getOrigin()
+        {
+        }
+        /**
+         * Represents a network request, such as an HTTP request.
+         *
+         * @param Request $request
+         */
+        public function setRequest(Request $request)
+        {
+        }
+        /**
+         * @return Request
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Represents a target resource that is involved with a network activity. If
+         * multiple resources are involved with an activity, this must be the primary
+         * one.
+         *
+         * @param ServicecontrolResource $resource
+         */
+        public function setResource(ServicecontrolResource $resource)
+        {
+        }
+        /**
+         * @return ServicecontrolResource
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * Represents a network response, such as an HTTP response.
+         *
+         * @param Response $response
+         */
+        public function setResponse(Response $response)
+        {
+        }
+        /**
+         * @return Response
+         */
+        public function getResponse()
+        {
+        }
+        /**
+         * The source of a network activity, such as starting a TCP connection. In a
+         * multi hop network activity, the source represents the sender of the last
+         * hop.
+         *
+         * @param Peer $source
+         */
+        public function setSource(Peer $source)
+        {
+        }
+        /**
+         * @return Peer
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Api
+     * Runtime class alias of \Google\Service\ServiceControl\AttributeContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApi()
-    {
-    }
-    /**
-     * The destination of a network activity, such as accepting a TCP connection.
-     * In a multi hop network activity, the destination represents the receiver of
-     * the last hop.
-     *
-     * @param Peer $destination
-     */
-    public function setDestination(Peer $destination)
-    {
-    }
-    /**
-     * @return Peer
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * Supports extensions for advanced use cases, such as logs and metrics.
-     *
-     * @param array[] $extensions
-     */
-    public function setExtensions($extensions)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getExtensions()
-    {
-    }
-    /**
-     * The origin of a network activity. In a multi hop network activity, the
-     * origin represents the sender of the first hop. For the first hop, the
-     * `source` and the `origin` must have the same content.
-     *
-     * @param Peer $origin
-     */
-    public function setOrigin(Peer $origin)
-    {
-    }
-    /**
-     * @return Peer
-     */
-    public function getOrigin()
-    {
-    }
-    /**
-     * Represents a network request, such as an HTTP request.
-     *
-     * @param Request $request
-     */
-    public function setRequest(Request $request)
-    {
-    }
-    /**
-     * @return Request
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Represents a target resource that is involved with a network activity. If
-     * multiple resources are involved with an activity, this must be the primary
-     * one.
-     *
-     * @param ServicecontrolResource $resource
-     */
-    public function setResource(ServicecontrolResource $resource)
-    {
-    }
-    /**
-     * @return ServicecontrolResource
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * Represents a network response, such as an HTTP response.
-     *
-     * @param Response $response
-     */
-    public function setResponse(Response $response)
-    {
-    }
-    /**
-     * @return Response
-     */
-    public function getResponse()
-    {
-    }
-    /**
-     * The source of a network activity, such as starting a TCP connection. In a
-     * multi hop network activity, the source represents the sender of the last
-     * hop.
-     *
-     * @param Peer $source
-     */
-    public function setSource(Peer $source)
-    {
-    }
-    /**
-     * @return Peer
-     */
-    public function getSource()
+    class Google_Service_ServiceControl_AttributeContext extends \Google\Service\ServiceControl\AttributeContext
     {
     }
 }

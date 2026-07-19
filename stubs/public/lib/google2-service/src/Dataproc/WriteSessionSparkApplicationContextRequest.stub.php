@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class WriteSessionSparkApplicationContextRequest extends \Google\Collection
-{
-    protected $collection_key = 'sparkWrapperObjects';
-    /**
-     * Required. Parent (Batch) resource reference.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $sparkWrapperObjectsType = SparkWrapperObject::class;
-    protected $sparkWrapperObjectsDataType = 'array';
-    /**
-     * Required. Parent (Batch) resource reference.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Dataproc {
+    class WriteSessionSparkApplicationContextRequest extends \Google\Collection
     {
+        protected $collection_key = 'sparkWrapperObjects';
+        /**
+         * Required. Parent (Batch) resource reference.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $sparkWrapperObjectsType = SparkWrapperObject::class;
+        protected $sparkWrapperObjectsDataType = 'array';
+        /**
+         * Required. Parent (Batch) resource reference.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The batch of spark application context objects sent for
+         * ingestion.
+         *
+         * @param SparkWrapperObject[] $sparkWrapperObjects
+         */
+        public function setSparkWrapperObjects($sparkWrapperObjects)
+        {
+        }
+        /**
+         * @return SparkWrapperObject[]
+         */
+        public function getSparkWrapperObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\WriteSessionSparkApplicationContextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The batch of spark application context objects sent for
-     * ingestion.
-     *
-     * @param SparkWrapperObject[] $sparkWrapperObjects
-     */
-    public function setSparkWrapperObjects($sparkWrapperObjects)
-    {
-    }
-    /**
-     * @return SparkWrapperObject[]
-     */
-    public function getSparkWrapperObjects()
+    class Google_Service_Dataproc_WriteSessionSparkApplicationContextRequest extends \Google\Service\Dataproc\WriteSessionSparkApplicationContextRequest
     {
     }
 }

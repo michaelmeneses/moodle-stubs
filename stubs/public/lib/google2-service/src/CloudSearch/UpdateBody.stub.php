@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateBody extends \Google\Collection
-{
-    protected $collection_key = 'insertContents';
-    protected $insertContentsType = InsertContent::class;
-    protected $insertContentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param InsertContent[]
-     */
-    public function setInsertContents($insertContents)
+namespace Google\Service\CloudSearch {
+    class UpdateBody extends \Google\Collection
     {
+        protected $collection_key = 'insertContents';
+        protected $insertContentsType = InsertContent::class;
+        protected $insertContentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param InsertContent[]
+         */
+        public function setInsertContents($insertContents)
+        {
+        }
+        /**
+         * @return InsertContent[]
+         */
+        public function getInsertContents()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InsertContent[]
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateBody registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsertContents()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_UpdateBody extends \Google\Service\CloudSearch\UpdateBody
     {
     }
 }

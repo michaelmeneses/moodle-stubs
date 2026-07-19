@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DiffDownloadResponse extends \Google\Model
-{
-    protected $objectLocationType = CompositeMedia::class;
-    protected $objectLocationDataType = '';
-    /**
-     * The original object location.
-     *
-     * @param CompositeMedia $objectLocation
-     */
-    public function setObjectLocation(CompositeMedia $objectLocation)
+namespace Google\Service\Walletobjects {
+    class DiffDownloadResponse extends \Google\Model
     {
+        protected $objectLocationType = CompositeMedia::class;
+        protected $objectLocationDataType = '';
+        /**
+         * The original object location.
+         *
+         * @param CompositeMedia $objectLocation
+         */
+        public function setObjectLocation(CompositeMedia $objectLocation)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getObjectLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeMedia
+     * Runtime class alias of \Google\Service\Walletobjects\DiffDownloadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectLocation()
+    class Google_Service_Walletobjects_DiffDownloadResponse extends \Google\Service\Walletobjects\DiffDownloadResponse
     {
     }
 }

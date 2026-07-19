@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult extends \Google\Model
-{
-    protected $bannedPhraseEnforcementResultType = GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult::class;
-    protected $bannedPhraseEnforcementResultDataType = '';
-    protected $modelArmorEnforcementResultType = GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult::class;
-    protected $modelArmorEnforcementResultDataType = '';
-    /**
-     * The policy enforcement result for the banned phrase policy.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult $bannedPhraseEnforcementResult
-     */
-    public function setBannedPhraseEnforcementResult(GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult $bannedPhraseEnforcementResult)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult extends \Google\Model
     {
+        protected $bannedPhraseEnforcementResultType = GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult::class;
+        protected $bannedPhraseEnforcementResultDataType = '';
+        protected $modelArmorEnforcementResultType = GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult::class;
+        protected $modelArmorEnforcementResultDataType = '';
+        /**
+         * The policy enforcement result for the banned phrase policy.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult $bannedPhraseEnforcementResult
+         */
+        public function setBannedPhraseEnforcementResult(GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult $bannedPhraseEnforcementResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult
+         */
+        public function getBannedPhraseEnforcementResult()
+        {
+        }
+        /**
+         * The policy enforcement result for the Model Armor policy.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult $modelArmorEnforcementResult
+         */
+        public function setModelArmorEnforcementResult(GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult $modelArmorEnforcementResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult
+         */
+        public function getModelArmorEnforcementResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannedPhraseEnforcementResult()
-    {
-    }
-    /**
-     * The policy enforcement result for the Model Armor policy.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult $modelArmorEnforcementResult
-     */
-    public function setModelArmorEnforcementResult(GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult $modelArmorEnforcementResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultModelArmorEnforcementResult
-     */
-    public function getModelArmorEnforcementResult()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultPolicyEnforcementResult
     {
     }
 }

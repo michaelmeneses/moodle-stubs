@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ListMeta extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $continue;
-    /**
-     * @var string
-     */
-    public $resourceVersion;
-    /**
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * @param string
-     */
-    public function setContinue($continue)
+namespace Google\Service\CloudRun {
+    class ListMeta extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $continue;
+        /**
+         * @var string
+         */
+        public $resourceVersion;
+        /**
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * @param string
+         */
+        public function setContinue($continue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContinue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceVersion($resourceVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\ListMeta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContinue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceVersion($resourceVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_CloudRun_ListMeta extends \Google\Service\CloudRun\ListMeta
     {
     }
 }

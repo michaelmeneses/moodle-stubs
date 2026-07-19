@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class SAMLParams extends \Google\Collection
-{
-    protected $collection_key = 'authenticationContexts';
-    /**
-     * Additional contexts used for authentication.
-     *
-     * @var string[]
-     */
-    public $authenticationContexts;
-    /**
-     * SAML certificate
-     *
-     * @var string
-     */
-    public $certificate;
-    /**
-     * IdP field that maps to the user’s email address
-     *
-     * @var string
-     */
-    public $emailMapping;
-    /**
-     * Entity id URL
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * Single sign-on URL
-     *
-     * @var string
-     */
-    public $ssoUri;
-    /**
-     * Email address of the first admin users.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * Additional contexts used for authentication.
-     *
-     * @param string[] $authenticationContexts
-     */
-    public function setAuthenticationContexts($authenticationContexts)
+namespace Google\Service\CCAIPlatform {
+    class SAMLParams extends \Google\Collection
     {
+        protected $collection_key = 'authenticationContexts';
+        /**
+         * Additional contexts used for authentication.
+         *
+         * @var string[]
+         */
+        public $authenticationContexts;
+        /**
+         * SAML certificate
+         *
+         * @var string
+         */
+        public $certificate;
+        /**
+         * IdP field that maps to the user’s email address
+         *
+         * @var string
+         */
+        public $emailMapping;
+        /**
+         * Entity id URL
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * Single sign-on URL
+         *
+         * @var string
+         */
+        public $ssoUri;
+        /**
+         * Email address of the first admin users.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * Additional contexts used for authentication.
+         *
+         * @param string[] $authenticationContexts
+         */
+        public function setAuthenticationContexts($authenticationContexts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAuthenticationContexts()
+        {
+        }
+        /**
+         * SAML certificate
+         *
+         * @param string $certificate
+         */
+        public function setCertificate($certificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * IdP field that maps to the user’s email address
+         *
+         * @param string $emailMapping
+         */
+        public function setEmailMapping($emailMapping)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailMapping()
+        {
+        }
+        /**
+         * Entity id URL
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Single sign-on URL
+         *
+         * @param string $ssoUri
+         */
+        public function setSsoUri($ssoUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSsoUri()
+        {
+        }
+        /**
+         * Email address of the first admin users.
+         *
+         * @deprecated
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\SAMLParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthenticationContexts()
-    {
-    }
-    /**
-     * SAML certificate
-     *
-     * @param string $certificate
-     */
-    public function setCertificate($certificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertificate()
-    {
-    }
-    /**
-     * IdP field that maps to the user’s email address
-     *
-     * @param string $emailMapping
-     */
-    public function setEmailMapping($emailMapping)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailMapping()
-    {
-    }
-    /**
-     * Entity id URL
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Single sign-on URL
-     *
-     * @param string $ssoUri
-     */
-    public function setSsoUri($ssoUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSsoUri()
-    {
-    }
-    /**
-     * Email address of the first admin users.
-     *
-     * @deprecated
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getUserEmail()
+    class Google_Service_CCAIPlatform_SAMLParams extends \Google\Service\CCAIPlatform\SAMLParams
     {
     }
 }

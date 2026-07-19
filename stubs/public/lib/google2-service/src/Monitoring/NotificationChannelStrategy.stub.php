@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class NotificationChannelStrategy extends \Google\Collection
-{
-    protected $collection_key = 'notificationChannelNames';
-    /**
-     * The full REST resource name for the notification channels that these
-     * settings apply to. Each of these correspond to the name field in one of the
-     * NotificationChannel objects referenced in the notification_channels field
-     * of this AlertPolicy. The format is:
-     * projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]
-     *
-     * @var string[]
-     */
-    public $notificationChannelNames;
-    /**
-     * The frequency at which to send reminder notifications for open incidents.
-     *
-     * @var string
-     */
-    public $renotifyInterval;
-    /**
-     * The full REST resource name for the notification channels that these
-     * settings apply to. Each of these correspond to the name field in one of the
-     * NotificationChannel objects referenced in the notification_channels field
-     * of this AlertPolicy. The format is:
-     * projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]
-     *
-     * @param string[] $notificationChannelNames
-     */
-    public function setNotificationChannelNames($notificationChannelNames)
+namespace Google\Service\Monitoring {
+    class NotificationChannelStrategy extends \Google\Collection
     {
+        protected $collection_key = 'notificationChannelNames';
+        /**
+         * The full REST resource name for the notification channels that these
+         * settings apply to. Each of these correspond to the name field in one of the
+         * NotificationChannel objects referenced in the notification_channels field
+         * of this AlertPolicy. The format is:
+         * projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]
+         *
+         * @var string[]
+         */
+        public $notificationChannelNames;
+        /**
+         * The frequency at which to send reminder notifications for open incidents.
+         *
+         * @var string
+         */
+        public $renotifyInterval;
+        /**
+         * The full REST resource name for the notification channels that these
+         * settings apply to. Each of these correspond to the name field in one of the
+         * NotificationChannel objects referenced in the notification_channels field
+         * of this AlertPolicy. The format is:
+         * projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]
+         *
+         * @param string[] $notificationChannelNames
+         */
+        public function setNotificationChannelNames($notificationChannelNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotificationChannelNames()
+        {
+        }
+        /**
+         * The frequency at which to send reminder notifications for open incidents.
+         *
+         * @param string $renotifyInterval
+         */
+        public function setRenotifyInterval($renotifyInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenotifyInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Monitoring\NotificationChannelStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotificationChannelNames()
-    {
-    }
-    /**
-     * The frequency at which to send reminder notifications for open incidents.
-     *
-     * @param string $renotifyInterval
-     */
-    public function setRenotifyInterval($renotifyInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenotifyInterval()
+    class Google_Service_Monitoring_NotificationChannelStrategy extends \Google\Service\Monitoring\NotificationChannelStrategy
     {
     }
 }

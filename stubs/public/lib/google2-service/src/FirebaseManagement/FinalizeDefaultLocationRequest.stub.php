@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class FinalizeDefaultLocationRequest extends \Google\Model
-{
-    /**
-     * **DEPRECATED** The ID of the Project's ["location for default Google Cloud
-     * resources"](https://firebase.google.com/docs/projects/locations#default-
-     * cloud-location), which are resources associated with Google App Engine. The
-     * location must be one of the available [Google App Engine
-     * locations](https://cloud.google.com/about/locations#region).
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * **DEPRECATED** The ID of the Project's ["location for default Google Cloud
-     * resources"](https://firebase.google.com/docs/projects/locations#default-
-     * cloud-location), which are resources associated with Google App Engine. The
-     * location must be one of the available [Google App Engine
-     * locations](https://cloud.google.com/about/locations#region).
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
+namespace Google\Service\FirebaseManagement {
+    class FinalizeDefaultLocationRequest extends \Google\Model
     {
+        /**
+         * **DEPRECATED** The ID of the Project's ["location for default Google Cloud
+         * resources"](https://firebase.google.com/docs/projects/locations#default-
+         * cloud-location), which are resources associated with Google App Engine. The
+         * location must be one of the available [Google App Engine
+         * locations](https://cloud.google.com/about/locations#region).
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * **DEPRECATED** The ID of the Project's ["location for default Google Cloud
+         * resources"](https://firebase.google.com/docs/projects/locations#default-
+         * cloud-location), which are resources associated with Google App Engine. The
+         * location must be one of the available [Google App Engine
+         * locations](https://cloud.google.com/about/locations#region).
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\FinalizeDefaultLocationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationId()
+    class Google_Service_FirebaseManagement_FinalizeDefaultLocationRequest extends \Google\Service\FirebaseManagement\FinalizeDefaultLocationRequest
     {
     }
 }

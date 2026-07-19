@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KAnonymityHistogramBucket extends \Google\Collection
-{
-    protected $collection_key = 'bucketValues';
-    /**
-     * Total number of equivalence classes in this bucket.
-     *
-     * @var string
-     */
-    public $bucketSize;
-    /**
-     * Total number of distinct equivalence classes in this bucket.
-     *
-     * @var string
-     */
-    public $bucketValueCount;
-    protected $bucketValuesType = GooglePrivacyDlpV2KAnonymityEquivalenceClass::class;
-    protected $bucketValuesDataType = 'array';
-    /**
-     * Lower bound on the size of the equivalence classes in this bucket.
-     *
-     * @var string
-     */
-    public $equivalenceClassSizeLowerBound;
-    /**
-     * Upper bound on the size of the equivalence classes in this bucket.
-     *
-     * @var string
-     */
-    public $equivalenceClassSizeUpperBound;
-    /**
-     * Total number of equivalence classes in this bucket.
-     *
-     * @param string $bucketSize
-     */
-    public function setBucketSize($bucketSize)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KAnonymityHistogramBucket extends \Google\Collection
     {
+        protected $collection_key = 'bucketValues';
+        /**
+         * Total number of equivalence classes in this bucket.
+         *
+         * @var string
+         */
+        public $bucketSize;
+        /**
+         * Total number of distinct equivalence classes in this bucket.
+         *
+         * @var string
+         */
+        public $bucketValueCount;
+        protected $bucketValuesType = GooglePrivacyDlpV2KAnonymityEquivalenceClass::class;
+        protected $bucketValuesDataType = 'array';
+        /**
+         * Lower bound on the size of the equivalence classes in this bucket.
+         *
+         * @var string
+         */
+        public $equivalenceClassSizeLowerBound;
+        /**
+         * Upper bound on the size of the equivalence classes in this bucket.
+         *
+         * @var string
+         */
+        public $equivalenceClassSizeUpperBound;
+        /**
+         * Total number of equivalence classes in this bucket.
+         *
+         * @param string $bucketSize
+         */
+        public function setBucketSize($bucketSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketSize()
+        {
+        }
+        /**
+         * Total number of distinct equivalence classes in this bucket.
+         *
+         * @param string $bucketValueCount
+         */
+        public function setBucketValueCount($bucketValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketValueCount()
+        {
+        }
+        /**
+         * Sample of equivalence classes in this bucket. The total number of classes
+         * returned per bucket is capped at 20.
+         *
+         * @param GooglePrivacyDlpV2KAnonymityEquivalenceClass[] $bucketValues
+         */
+        public function setBucketValues($bucketValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KAnonymityEquivalenceClass[]
+         */
+        public function getBucketValues()
+        {
+        }
+        /**
+         * Lower bound on the size of the equivalence classes in this bucket.
+         *
+         * @param string $equivalenceClassSizeLowerBound
+         */
+        public function setEquivalenceClassSizeLowerBound($equivalenceClassSizeLowerBound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEquivalenceClassSizeLowerBound()
+        {
+        }
+        /**
+         * Upper bound on the size of the equivalence classes in this bucket.
+         *
+         * @param string $equivalenceClassSizeUpperBound
+         */
+        public function setEquivalenceClassSizeUpperBound($equivalenceClassSizeUpperBound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEquivalenceClassSizeUpperBound()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityHistogramBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketSize()
-    {
-    }
-    /**
-     * Total number of distinct equivalence classes in this bucket.
-     *
-     * @param string $bucketValueCount
-     */
-    public function setBucketValueCount($bucketValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucketValueCount()
-    {
-    }
-    /**
-     * Sample of equivalence classes in this bucket. The total number of classes
-     * returned per bucket is capped at 20.
-     *
-     * @param GooglePrivacyDlpV2KAnonymityEquivalenceClass[] $bucketValues
-     */
-    public function setBucketValues($bucketValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2KAnonymityEquivalenceClass[]
-     */
-    public function getBucketValues()
-    {
-    }
-    /**
-     * Lower bound on the size of the equivalence classes in this bucket.
-     *
-     * @param string $equivalenceClassSizeLowerBound
-     */
-    public function setEquivalenceClassSizeLowerBound($equivalenceClassSizeLowerBound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEquivalenceClassSizeLowerBound()
-    {
-    }
-    /**
-     * Upper bound on the size of the equivalence classes in this bucket.
-     *
-     * @param string $equivalenceClassSizeUpperBound
-     */
-    public function setEquivalenceClassSizeUpperBound($equivalenceClassSizeUpperBound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEquivalenceClassSizeUpperBound()
+    class Google_Service_DLP_GooglePrivacyDlpV2KAnonymityHistogramBucket extends \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityHistogramBucket
     {
     }
 }

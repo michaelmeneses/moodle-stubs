@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec extends \Google\Model
-{
-    /**
-     * Default unknown view type.
-     */
-    public const VIEW_TYPE_VIEW_TYPE_UNSPECIFIED = 'VIEW_TYPE_UNSPECIFIED';
-    /**
-     * Standard view.
-     */
-    public const VIEW_TYPE_STANDARD_VIEW = 'STANDARD_VIEW';
-    /**
-     * Materialized view.
-     */
-    public const VIEW_TYPE_MATERIALIZED_VIEW = 'MATERIALIZED_VIEW';
-    /**
-     * Name of a singular table this view reflects one to one.
-     *
-     * @var string
-     */
-    public $baseTable;
-    /**
-     * SQL query used to generate this view.
-     *
-     * @var string
-     */
-    public $sqlQuery;
-    /**
-     * Type of this view.
-     *
-     * @var string
-     */
-    public $viewType;
-    /**
-     * Name of a singular table this view reflects one to one.
-     *
-     * @param string $baseTable
-     */
-    public function setBaseTable($baseTable)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec extends \Google\Model
     {
+        /**
+         * Default unknown view type.
+         */
+        public const VIEW_TYPE_VIEW_TYPE_UNSPECIFIED = 'VIEW_TYPE_UNSPECIFIED';
+        /**
+         * Standard view.
+         */
+        public const VIEW_TYPE_STANDARD_VIEW = 'STANDARD_VIEW';
+        /**
+         * Materialized view.
+         */
+        public const VIEW_TYPE_MATERIALIZED_VIEW = 'MATERIALIZED_VIEW';
+        /**
+         * Name of a singular table this view reflects one to one.
+         *
+         * @var string
+         */
+        public $baseTable;
+        /**
+         * SQL query used to generate this view.
+         *
+         * @var string
+         */
+        public $sqlQuery;
+        /**
+         * Type of this view.
+         *
+         * @var string
+         */
+        public $viewType;
+        /**
+         * Name of a singular table this view reflects one to one.
+         *
+         * @param string $baseTable
+         */
+        public function setBaseTable($baseTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseTable()
+        {
+        }
+        /**
+         * SQL query used to generate this view.
+         *
+         * @param string $sqlQuery
+         */
+        public function setSqlQuery($sqlQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlQuery()
+        {
+        }
+        /**
+         * Type of this view.
+         *
+         * Accepted values: VIEW_TYPE_UNSPECIFIED, STANDARD_VIEW, MATERIALIZED_VIEW
+         *
+         * @param self::VIEW_TYPE_* $viewType
+         */
+        public function setViewType($viewType)
+        {
+        }
+        /**
+         * @return self::VIEW_TYPE_*
+         */
+        public function getViewType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseTable()
-    {
-    }
-    /**
-     * SQL query used to generate this view.
-     *
-     * @param string $sqlQuery
-     */
-    public function setSqlQuery($sqlQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlQuery()
-    {
-    }
-    /**
-     * Type of this view.
-     *
-     * Accepted values: VIEW_TYPE_UNSPECIFIED, STANDARD_VIEW, MATERIALIZED_VIEW
-     *
-     * @param self::VIEW_TYPE_* $viewType
-     */
-    public function setViewType($viewType)
-    {
-    }
-    /**
-     * @return self::VIEW_TYPE_*
-     */
-    public function getViewType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec
     {
     }
 }

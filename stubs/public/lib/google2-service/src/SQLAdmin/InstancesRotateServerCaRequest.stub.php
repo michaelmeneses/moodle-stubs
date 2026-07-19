@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesRotateServerCaRequest extends \Google\Model
-{
-    protected $rotateServerCaContextType = RotateServerCaContext::class;
-    protected $rotateServerCaContextDataType = '';
-    /**
-     * Contains details about the rotate server CA operation.
-     *
-     * @param RotateServerCaContext $rotateServerCaContext
-     */
-    public function setRotateServerCaContext(RotateServerCaContext $rotateServerCaContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesRotateServerCaRequest extends \Google\Model
     {
+        protected $rotateServerCaContextType = RotateServerCaContext::class;
+        protected $rotateServerCaContextDataType = '';
+        /**
+         * Contains details about the rotate server CA operation.
+         *
+         * @param RotateServerCaContext $rotateServerCaContext
+         */
+        public function setRotateServerCaContext(RotateServerCaContext $rotateServerCaContext)
+        {
+        }
+        /**
+         * @return RotateServerCaContext
+         */
+        public function getRotateServerCaContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RotateServerCaContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesRotateServerCaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRotateServerCaContext()
+    class Google_Service_SQLAdmin_InstancesRotateServerCaRequest extends \Google\Service\SQLAdmin\InstancesRotateServerCaRequest
     {
     }
 }

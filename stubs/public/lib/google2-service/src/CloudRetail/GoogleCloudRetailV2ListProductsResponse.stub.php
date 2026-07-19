@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ListProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * A token that can be sent as ListProductsRequest.page_token to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = GoogleCloudRetailV2Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * A token that can be sent as ListProductsRequest.page_token to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ListProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * A token that can be sent as ListProductsRequest.page_token to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = GoogleCloudRetailV2Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * A token that can be sent as ListProductsRequest.page_token to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The Products.
+         *
+         * @param GoogleCloudRetailV2Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ListProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The Products.
-     *
-     * @param GoogleCloudRetailV2Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2Product[]
-     */
-    public function getProducts()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ListProductsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2ListProductsResponse
     {
     }
 }

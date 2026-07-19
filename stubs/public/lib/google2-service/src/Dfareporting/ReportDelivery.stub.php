@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportDelivery extends \Google\Collection
-{
-    public const EMAIL_OWNER_DELIVERY_TYPE_LINK = 'LINK';
-    public const EMAIL_OWNER_DELIVERY_TYPE_ATTACHMENT = 'ATTACHMENT';
-    protected $collection_key = 'recipients';
-    /**
-     * Whether the report should be emailed to the report owner.
-     *
-     * @var bool
-     */
-    public $emailOwner;
-    /**
-     * The type of delivery for the owner to receive, if enabled.
-     *
-     * @var string
-     */
-    public $emailOwnerDeliveryType;
-    /**
-     * The message to be sent with each email.
-     *
-     * @var string
-     */
-    public $message;
-    protected $recipientsType = Recipient::class;
-    protected $recipientsDataType = 'array';
-    /**
-     * Whether the report should be emailed to the report owner.
-     *
-     * @param bool $emailOwner
-     */
-    public function setEmailOwner($emailOwner)
+namespace Google\Service\Dfareporting {
+    class ReportDelivery extends \Google\Collection
     {
+        public const EMAIL_OWNER_DELIVERY_TYPE_LINK = 'LINK';
+        public const EMAIL_OWNER_DELIVERY_TYPE_ATTACHMENT = 'ATTACHMENT';
+        protected $collection_key = 'recipients';
+        /**
+         * Whether the report should be emailed to the report owner.
+         *
+         * @var bool
+         */
+        public $emailOwner;
+        /**
+         * The type of delivery for the owner to receive, if enabled.
+         *
+         * @var string
+         */
+        public $emailOwnerDeliveryType;
+        /**
+         * The message to be sent with each email.
+         *
+         * @var string
+         */
+        public $message;
+        protected $recipientsType = Recipient::class;
+        protected $recipientsDataType = 'array';
+        /**
+         * Whether the report should be emailed to the report owner.
+         *
+         * @param bool $emailOwner
+         */
+        public function setEmailOwner($emailOwner)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmailOwner()
+        {
+        }
+        /**
+         * The type of delivery for the owner to receive, if enabled.
+         *
+         * Accepted values: LINK, ATTACHMENT
+         *
+         * @param self::EMAIL_OWNER_DELIVERY_TYPE_* $emailOwnerDeliveryType
+         */
+        public function setEmailOwnerDeliveryType($emailOwnerDeliveryType)
+        {
+        }
+        /**
+         * @return self::EMAIL_OWNER_DELIVERY_TYPE_*
+         */
+        public function getEmailOwnerDeliveryType()
+        {
+        }
+        /**
+         * The message to be sent with each email.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The list of recipients to which to email the report.
+         *
+         * @param Recipient[] $recipients
+         */
+        public function setRecipients($recipients)
+        {
+        }
+        /**
+         * @return Recipient[]
+         */
+        public function getRecipients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\ReportDelivery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailOwner()
-    {
-    }
-    /**
-     * The type of delivery for the owner to receive, if enabled.
-     *
-     * Accepted values: LINK, ATTACHMENT
-     *
-     * @param self::EMAIL_OWNER_DELIVERY_TYPE_* $emailOwnerDeliveryType
-     */
-    public function setEmailOwnerDeliveryType($emailOwnerDeliveryType)
-    {
-    }
-    /**
-     * @return self::EMAIL_OWNER_DELIVERY_TYPE_*
-     */
-    public function getEmailOwnerDeliveryType()
-    {
-    }
-    /**
-     * The message to be sent with each email.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The list of recipients to which to email the report.
-     *
-     * @param Recipient[] $recipients
-     */
-    public function setRecipients($recipients)
-    {
-    }
-    /**
-     * @return Recipient[]
-     */
-    public function getRecipients()
+    class Google_Service_Dfareporting_ReportDelivery extends \Google\Service\Dfareporting\ReportDelivery
     {
     }
 }

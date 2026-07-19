@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class CloudStorageSink extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    protected $filesType = CloudStorageFile::class;
-    protected $filesDataType = 'array';
-    /**
-     * Output only. The exported files in Cloud Storage.
-     *
-     * @param CloudStorageFile[] $files
-     */
-    public function setFiles($files)
+namespace Google\Service\Vault {
+    class CloudStorageSink extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        protected $filesType = CloudStorageFile::class;
+        protected $filesDataType = 'array';
+        /**
+         * Output only. The exported files in Cloud Storage.
+         *
+         * @param CloudStorageFile[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return CloudStorageFile[]
+         */
+        public function getFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudStorageFile[]
+     * Runtime class alias of \Google\Service\Vault\CloudStorageSink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFiles()
+    class Google_Service_Vault_CloudStorageSink extends \Google\Service\Vault\CloudStorageSink
     {
     }
 }

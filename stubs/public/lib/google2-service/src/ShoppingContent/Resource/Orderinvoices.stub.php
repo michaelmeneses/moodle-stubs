@@ -21,49 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "orderinvoices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $orderinvoices = $contentService->orderinvoices;
- *  </code>
- */
-class Orderinvoices extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\OrderinvoicesCreateChargeInvoiceRequest;
+    use Google\Service\ShoppingContent\OrderinvoicesCreateChargeInvoiceResponse;
+    use Google\Service\ShoppingContent\OrderinvoicesCreateRefundInvoiceRequest;
+    use Google\Service\ShoppingContent\OrderinvoicesCreateRefundInvoiceResponse;
     /**
-     * Creates a charge invoice for a shipment group, and triggers a charge capture
-     * for orderinvoice enabled orders. (orderinvoices.createchargeinvoice)
-     *
-     * @param string $merchantId The ID of the account that manages the order. This
-     * cannot be a multi-client account.
-     * @param string $orderId The ID of the order.
-     * @param OrderinvoicesCreateChargeInvoiceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return OrderinvoicesCreateChargeInvoiceResponse
-     * @throws \Google\Service\Exception
+     * The "orderinvoices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $orderinvoices = $contentService->orderinvoices;
+     *  </code>
      */
-    public function createchargeinvoice($merchantId, $orderId, OrderinvoicesCreateChargeInvoiceRequest $postBody, $optParams = [])
+    class Orderinvoices extends \Google\Service\Resource
     {
+        /**
+         * Creates a charge invoice for a shipment group, and triggers a charge capture
+         * for orderinvoice enabled orders. (orderinvoices.createchargeinvoice)
+         *
+         * @param string $merchantId The ID of the account that manages the order. This
+         * cannot be a multi-client account.
+         * @param string $orderId The ID of the order.
+         * @param OrderinvoicesCreateChargeInvoiceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return OrderinvoicesCreateChargeInvoiceResponse
+         * @throws \Google\Service\Exception
+         */
+        public function createchargeinvoice($merchantId, $orderId, OrderinvoicesCreateChargeInvoiceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a refund invoice for one or more shipment groups, and triggers a
+         * refund for orderinvoice enabled orders. This can only be used for line items
+         * that have previously been charged using `createChargeInvoice`. All amounts
+         * (except for the summary) are incremental with respect to the previous
+         * invoice. (orderinvoices.createrefundinvoice)
+         *
+         * @param string $merchantId The ID of the account that manages the order. This
+         * cannot be a multi-client account.
+         * @param string $orderId The ID of the order.
+         * @param OrderinvoicesCreateRefundInvoiceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return OrderinvoicesCreateRefundInvoiceResponse
+         * @throws \Google\Service\Exception
+         */
+        public function createrefundinvoice($merchantId, $orderId, OrderinvoicesCreateRefundInvoiceRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a refund invoice for one or more shipment groups, and triggers a
-     * refund for orderinvoice enabled orders. This can only be used for line items
-     * that have previously been charged using `createChargeInvoice`. All amounts
-     * (except for the summary) are incremental with respect to the previous
-     * invoice. (orderinvoices.createrefundinvoice)
-     *
-     * @param string $merchantId The ID of the account that manages the order. This
-     * cannot be a multi-client account.
-     * @param string $orderId The ID of the order.
-     * @param OrderinvoicesCreateRefundInvoiceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return OrderinvoicesCreateRefundInvoiceResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Orderinvoices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function createrefundinvoice($merchantId, $orderId, OrderinvoicesCreateRefundInvoiceRequest $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Orderinvoices extends \Google\Service\ShoppingContent\Resource\Orderinvoices
     {
     }
 }

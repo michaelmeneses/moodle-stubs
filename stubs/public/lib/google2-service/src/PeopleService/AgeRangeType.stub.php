@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class AgeRangeType extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const AGE_RANGE_AGE_RANGE_UNSPECIFIED = 'AGE_RANGE_UNSPECIFIED';
-    /**
-     * Younger than eighteen.
-     */
-    public const AGE_RANGE_LESS_THAN_EIGHTEEN = 'LESS_THAN_EIGHTEEN';
-    /**
-     * Between eighteen and twenty.
-     */
-    public const AGE_RANGE_EIGHTEEN_TO_TWENTY = 'EIGHTEEN_TO_TWENTY';
-    /**
-     * Twenty-one and older.
-     */
-    public const AGE_RANGE_TWENTY_ONE_OR_OLDER = 'TWENTY_ONE_OR_OLDER';
-    /**
-     * The age range.
-     *
-     * @var string
-     */
-    public $ageRange;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The age range.
-     *
-     * Accepted values: AGE_RANGE_UNSPECIFIED, LESS_THAN_EIGHTEEN,
-     * EIGHTEEN_TO_TWENTY, TWENTY_ONE_OR_OLDER
-     *
-     * @param self::AGE_RANGE_* $ageRange
-     */
-    public function setAgeRange($ageRange)
+namespace Google\Service\PeopleService {
+    class AgeRangeType extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const AGE_RANGE_AGE_RANGE_UNSPECIFIED = 'AGE_RANGE_UNSPECIFIED';
+        /**
+         * Younger than eighteen.
+         */
+        public const AGE_RANGE_LESS_THAN_EIGHTEEN = 'LESS_THAN_EIGHTEEN';
+        /**
+         * Between eighteen and twenty.
+         */
+        public const AGE_RANGE_EIGHTEEN_TO_TWENTY = 'EIGHTEEN_TO_TWENTY';
+        /**
+         * Twenty-one and older.
+         */
+        public const AGE_RANGE_TWENTY_ONE_OR_OLDER = 'TWENTY_ONE_OR_OLDER';
+        /**
+         * The age range.
+         *
+         * @var string
+         */
+        public $ageRange;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The age range.
+         *
+         * Accepted values: AGE_RANGE_UNSPECIFIED, LESS_THAN_EIGHTEEN,
+         * EIGHTEEN_TO_TWENTY, TWENTY_ONE_OR_OLDER
+         *
+         * @param self::AGE_RANGE_* $ageRange
+         */
+        public function setAgeRange($ageRange)
+        {
+        }
+        /**
+         * @return self::AGE_RANGE_*
+         */
+        public function getAgeRange()
+        {
+        }
+        /**
+         * Metadata about the age range.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AGE_RANGE_*
+     * Runtime class alias of \Google\Service\PeopleService\AgeRangeType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgeRange()
-    {
-    }
-    /**
-     * Metadata about the age range.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
+    class Google_Service_PeopleService_AgeRangeType extends \Google\Service\PeopleService\AgeRangeType
     {
     }
 }

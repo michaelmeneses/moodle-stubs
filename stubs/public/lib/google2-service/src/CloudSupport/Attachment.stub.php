@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class Attachment extends \Google\Model
-{
-    /**
-     * Output only. The time at which the attachment was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $creatorType = Actor::class;
-    protected $creatorDataType = '';
-    /**
-     * The filename of the attachment (e.g. `"graph.jpg"`).
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * Output only. The MIME type of the attachment (e.g. text/plain).
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Output only. Identifier. The resource name of the attachment.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The size of the attachment in bytes.
-     *
-     * @var string
-     */
-    public $sizeBytes;
-    /**
-     * Output only. The time at which the attachment was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudSupport {
+    class Attachment extends \Google\Model
     {
+        /**
+         * Output only. The time at which the attachment was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $creatorType = Actor::class;
+        protected $creatorDataType = '';
+        /**
+         * The filename of the attachment (e.g. `"graph.jpg"`).
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * Output only. The MIME type of the attachment (e.g. text/plain).
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Output only. Identifier. The resource name of the attachment.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The size of the attachment in bytes.
+         *
+         * @var string
+         */
+        public $sizeBytes;
+        /**
+         * Output only. The time at which the attachment was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The user who uploaded the attachment. Note, the name and email
+         * will be obfuscated if the attachment was uploaded by Google support.
+         *
+         * @param Actor $creator
+         */
+        public function setCreator(Actor $creator)
+        {
+        }
+        /**
+         * @return Actor
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * The filename of the attachment (e.g. `"graph.jpg"`).
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
+        /**
+         * Output only. The MIME type of the attachment (e.g. text/plain).
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource name of the attachment.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The size of the attachment in bytes.
+         *
+         * @param string $sizeBytes
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The user who uploaded the attachment. Note, the name and email
-     * will be obfuscated if the attachment was uploaded by Google support.
-     *
-     * @param Actor $creator
-     */
-    public function setCreator(Actor $creator)
-    {
-    }
-    /**
-     * @return Actor
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * The filename of the attachment (e.g. `"graph.jpg"`).
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
-    {
-    }
-    /**
-     * Output only. The MIME type of the attachment (e.g. text/plain).
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource name of the attachment.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The size of the attachment in bytes.
-     *
-     * @param string $sizeBytes
-     */
-    public function setSizeBytes($sizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeBytes()
+    class Google_Service_CloudSupport_Attachment extends \Google\Service\CloudSupport\Attachment
     {
     }
 }

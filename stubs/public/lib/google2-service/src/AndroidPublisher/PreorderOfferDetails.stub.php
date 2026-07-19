@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class PreorderOfferDetails extends \Google\Model
-{
-    /**
-     * The time when a preordered item is released for a preorder purchase.
-     *
-     * @var string
-     */
-    public $preorderReleaseTime;
-    /**
-     * The time when a preordered item is released for a preorder purchase.
-     *
-     * @param string $preorderReleaseTime
-     */
-    public function setPreorderReleaseTime($preorderReleaseTime)
+namespace Google\Service\AndroidPublisher {
+    class PreorderOfferDetails extends \Google\Model
     {
+        /**
+         * The time when a preordered item is released for a preorder purchase.
+         *
+         * @var string
+         */
+        public $preorderReleaseTime;
+        /**
+         * The time when a preordered item is released for a preorder purchase.
+         *
+         * @param string $preorderReleaseTime
+         */
+        public function setPreorderReleaseTime($preorderReleaseTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreorderReleaseTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\PreorderOfferDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreorderReleaseTime()
+    class Google_Service_AndroidPublisher_PreorderOfferDetails extends \Google\Service\AndroidPublisher\PreorderOfferDetails
     {
     }
 }

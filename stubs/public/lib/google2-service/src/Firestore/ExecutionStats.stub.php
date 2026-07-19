@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ExecutionStats extends \Google\Model
-{
-    /**
-     * Debugging statistics from the execution of the query. Note that the
-     * debugging stats are subject to change as Firestore evolves. It could
-     * include: { "indexes_entries_scanned": "1000", "documents_scanned": "20",
-     * "billing_details" : { "documents_billable": "20", "index_entries_billable":
-     * "1000", "min_query_cost": "0" } }
-     *
-     * @var array[]
-     */
-    public $debugStats;
-    /**
-     * Total time to execute the query in the backend.
-     *
-     * @var string
-     */
-    public $executionDuration;
-    /**
-     * Total billable read operations.
-     *
-     * @var string
-     */
-    public $readOperations;
-    /**
-     * Total number of results returned, including documents, projections,
-     * aggregation results, keys.
-     *
-     * @var string
-     */
-    public $resultsReturned;
-    /**
-     * Debugging statistics from the execution of the query. Note that the
-     * debugging stats are subject to change as Firestore evolves. It could
-     * include: { "indexes_entries_scanned": "1000", "documents_scanned": "20",
-     * "billing_details" : { "documents_billable": "20", "index_entries_billable":
-     * "1000", "min_query_cost": "0" } }
-     *
-     * @param array[] $debugStats
-     */
-    public function setDebugStats($debugStats)
+namespace Google\Service\Firestore {
+    class ExecutionStats extends \Google\Model
     {
+        /**
+         * Debugging statistics from the execution of the query. Note that the
+         * debugging stats are subject to change as Firestore evolves. It could
+         * include: { "indexes_entries_scanned": "1000", "documents_scanned": "20",
+         * "billing_details" : { "documents_billable": "20", "index_entries_billable":
+         * "1000", "min_query_cost": "0" } }
+         *
+         * @var array[]
+         */
+        public $debugStats;
+        /**
+         * Total time to execute the query in the backend.
+         *
+         * @var string
+         */
+        public $executionDuration;
+        /**
+         * Total billable read operations.
+         *
+         * @var string
+         */
+        public $readOperations;
+        /**
+         * Total number of results returned, including documents, projections,
+         * aggregation results, keys.
+         *
+         * @var string
+         */
+        public $resultsReturned;
+        /**
+         * Debugging statistics from the execution of the query. Note that the
+         * debugging stats are subject to change as Firestore evolves. It could
+         * include: { "indexes_entries_scanned": "1000", "documents_scanned": "20",
+         * "billing_details" : { "documents_billable": "20", "index_entries_billable":
+         * "1000", "min_query_cost": "0" } }
+         *
+         * @param array[] $debugStats
+         */
+        public function setDebugStats($debugStats)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDebugStats()
+        {
+        }
+        /**
+         * Total time to execute the query in the backend.
+         *
+         * @param string $executionDuration
+         */
+        public function setExecutionDuration($executionDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionDuration()
+        {
+        }
+        /**
+         * Total billable read operations.
+         *
+         * @param string $readOperations
+         */
+        public function setReadOperations($readOperations)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadOperations()
+        {
+        }
+        /**
+         * Total number of results returned, including documents, projections,
+         * aggregation results, keys.
+         *
+         * @param string $resultsReturned
+         */
+        public function setResultsReturned($resultsReturned)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultsReturned()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Firestore\ExecutionStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugStats()
-    {
-    }
-    /**
-     * Total time to execute the query in the backend.
-     *
-     * @param string $executionDuration
-     */
-    public function setExecutionDuration($executionDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionDuration()
-    {
-    }
-    /**
-     * Total billable read operations.
-     *
-     * @param string $readOperations
-     */
-    public function setReadOperations($readOperations)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadOperations()
-    {
-    }
-    /**
-     * Total number of results returned, including documents, projections,
-     * aggregation results, keys.
-     *
-     * @param string $resultsReturned
-     */
-    public function setResultsReturned($resultsReturned)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultsReturned()
+    class Google_Service_Firestore_ExecutionStats extends \Google\Service\Firestore\ExecutionStats
     {
     }
 }

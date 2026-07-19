@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1Source extends \Google\Model
-{
-    protected $connectedRepositoryType = GoogleDevtoolsCloudbuildV1ConnectedRepository::class;
-    protected $connectedRepositoryDataType = '';
-    protected $developerConnectConfigType = GoogleDevtoolsCloudbuildV1DeveloperConnectConfig::class;
-    protected $developerConnectConfigDataType = '';
-    protected $gitSourceType = GoogleDevtoolsCloudbuildV1GitSource::class;
-    protected $gitSourceDataType = '';
-    protected $repoSourceType = GoogleDevtoolsCloudbuildV1RepoSource::class;
-    protected $repoSourceDataType = '';
-    protected $storageSourceType = GoogleDevtoolsCloudbuildV1StorageSource::class;
-    protected $storageSourceDataType = '';
-    protected $storageSourceManifestType = GoogleDevtoolsCloudbuildV1StorageSourceManifest::class;
-    protected $storageSourceManifestDataType = '';
-    /**
-     * Optional. If provided, get the source from this 2nd-gen Google Cloud Build
-     * repository resource.
-     *
-     * @param GoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository
-     */
-    public function setConnectedRepository(GoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1Source extends \Google\Model
     {
+        protected $connectedRepositoryType = GoogleDevtoolsCloudbuildV1ConnectedRepository::class;
+        protected $connectedRepositoryDataType = '';
+        protected $developerConnectConfigType = GoogleDevtoolsCloudbuildV1DeveloperConnectConfig::class;
+        protected $developerConnectConfigDataType = '';
+        protected $gitSourceType = GoogleDevtoolsCloudbuildV1GitSource::class;
+        protected $gitSourceDataType = '';
+        protected $repoSourceType = GoogleDevtoolsCloudbuildV1RepoSource::class;
+        protected $repoSourceDataType = '';
+        protected $storageSourceType = GoogleDevtoolsCloudbuildV1StorageSource::class;
+        protected $storageSourceDataType = '';
+        protected $storageSourceManifestType = GoogleDevtoolsCloudbuildV1StorageSourceManifest::class;
+        protected $storageSourceManifestDataType = '';
+        /**
+         * Optional. If provided, get the source from this 2nd-gen Google Cloud Build
+         * repository resource.
+         *
+         * @param GoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository
+         */
+        public function setConnectedRepository(GoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1ConnectedRepository
+         */
+        public function getConnectedRepository()
+        {
+        }
+        /**
+         * If provided, get the source from this Developer Connect config.
+         *
+         * @param GoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig
+         */
+        public function setDeveloperConnectConfig(GoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1DeveloperConnectConfig
+         */
+        public function getDeveloperConnectConfig()
+        {
+        }
+        /**
+         * If provided, get the source from this Git repository.
+         *
+         * @param GoogleDevtoolsCloudbuildV1GitSource $gitSource
+         */
+        public function setGitSource(GoogleDevtoolsCloudbuildV1GitSource $gitSource)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1GitSource
+         */
+        public function getGitSource()
+        {
+        }
+        /**
+         * If provided, get the source from this location in a Cloud Source
+         * Repository.
+         *
+         * @param GoogleDevtoolsCloudbuildV1RepoSource $repoSource
+         */
+        public function setRepoSource(GoogleDevtoolsCloudbuildV1RepoSource $repoSource)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1RepoSource
+         */
+        public function getRepoSource()
+        {
+        }
+        /**
+         * If provided, get the source from this location in Cloud Storage.
+         *
+         * @param GoogleDevtoolsCloudbuildV1StorageSource $storageSource
+         */
+        public function setStorageSource(GoogleDevtoolsCloudbuildV1StorageSource $storageSource)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1StorageSource
+         */
+        public function getStorageSource()
+        {
+        }
+        /**
+         * If provided, get the source from this manifest in Cloud Storage. This
+         * feature is in Preview; see description
+         * [here](https://github.com/GoogleCloudPlatform/cloud-
+         * builders/tree/master/gcs-fetcher).
+         *
+         * @param GoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest
+         */
+        public function setStorageSourceManifest(GoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1StorageSourceManifest
+         */
+        public function getStorageSourceManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsCloudbuildV1ConnectedRepository
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedRepository()
-    {
-    }
-    /**
-     * If provided, get the source from this Developer Connect config.
-     *
-     * @param GoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig
-     */
-    public function setDeveloperConnectConfig(GoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1DeveloperConnectConfig
-     */
-    public function getDeveloperConnectConfig()
-    {
-    }
-    /**
-     * If provided, get the source from this Git repository.
-     *
-     * @param GoogleDevtoolsCloudbuildV1GitSource $gitSource
-     */
-    public function setGitSource(GoogleDevtoolsCloudbuildV1GitSource $gitSource)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1GitSource
-     */
-    public function getGitSource()
-    {
-    }
-    /**
-     * If provided, get the source from this location in a Cloud Source
-     * Repository.
-     *
-     * @param GoogleDevtoolsCloudbuildV1RepoSource $repoSource
-     */
-    public function setRepoSource(GoogleDevtoolsCloudbuildV1RepoSource $repoSource)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1RepoSource
-     */
-    public function getRepoSource()
-    {
-    }
-    /**
-     * If provided, get the source from this location in Cloud Storage.
-     *
-     * @param GoogleDevtoolsCloudbuildV1StorageSource $storageSource
-     */
-    public function setStorageSource(GoogleDevtoolsCloudbuildV1StorageSource $storageSource)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1StorageSource
-     */
-    public function getStorageSource()
-    {
-    }
-    /**
-     * If provided, get the source from this manifest in Cloud Storage. This
-     * feature is in Preview; see description
-     * [here](https://github.com/GoogleCloudPlatform/cloud-
-     * builders/tree/master/gcs-fetcher).
-     *
-     * @param GoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest
-     */
-    public function setStorageSourceManifest(GoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1StorageSourceManifest
-     */
-    public function getStorageSourceManifest()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1Source extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Source
     {
     }
 }

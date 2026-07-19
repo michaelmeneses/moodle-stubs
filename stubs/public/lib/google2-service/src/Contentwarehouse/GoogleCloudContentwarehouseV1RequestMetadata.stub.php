@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RequestMetadata extends \Google\Model
-{
-    protected $userInfoType = GoogleCloudContentwarehouseV1UserInfo::class;
-    protected $userInfoDataType = '';
-    /**
-     * Provides user unique identification and groups information.
-     *
-     * @param GoogleCloudContentwarehouseV1UserInfo $userInfo
-     */
-    public function setUserInfo(GoogleCloudContentwarehouseV1UserInfo $userInfo)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RequestMetadata extends \Google\Model
     {
+        protected $userInfoType = GoogleCloudContentwarehouseV1UserInfo::class;
+        protected $userInfoDataType = '';
+        /**
+         * Provides user unique identification and groups information.
+         *
+         * @param GoogleCloudContentwarehouseV1UserInfo $userInfo
+         */
+        public function setUserInfo(GoogleCloudContentwarehouseV1UserInfo $userInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1UserInfo
+         */
+        public function getUserInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1UserInfo
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RequestMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserInfo()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RequestMetadata extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RequestMetadata
     {
     }
 }

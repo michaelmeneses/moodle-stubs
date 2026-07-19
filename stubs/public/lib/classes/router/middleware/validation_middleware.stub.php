@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\middleware;
 
+use core\router\request_validator_interface;
+use core\router\response_handler;
+use core\router\response_validator_interface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\MiddlewareInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 /**
  * Middleware to handle validation of request and response based on the route data.
  *

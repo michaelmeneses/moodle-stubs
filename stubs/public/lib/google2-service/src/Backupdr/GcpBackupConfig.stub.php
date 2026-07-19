@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class GcpBackupConfig extends \Google\Collection
-{
-    protected $collection_key = 'backupPlanRules';
-    /**
-     * The name of the backup plan.
-     *
-     * @var string
-     */
-    public $backupPlan;
-    /**
-     * The name of the backup plan association.
-     *
-     * @var string
-     */
-    public $backupPlanAssociation;
-    /**
-     * The description of the backup plan.
-     *
-     * @var string
-     */
-    public $backupPlanDescription;
-    /**
-     * The user friendly id of the backup plan revision. E.g. v0, v1 etc.
-     *
-     * @var string
-     */
-    public $backupPlanRevisionId;
-    /**
-     * The name of the backup plan revision.
-     *
-     * @var string
-     */
-    public $backupPlanRevisionName;
-    /**
-     * The names of the backup plan rules which point to this backupvault
-     *
-     * @var string[]
-     */
-    public $backupPlanRules;
-    /**
-     * The name of the backup plan.
-     *
-     * @param string $backupPlan
-     */
-    public function setBackupPlan($backupPlan)
+namespace Google\Service\Backupdr {
+    class GcpBackupConfig extends \Google\Collection
     {
+        protected $collection_key = 'backupPlanRules';
+        /**
+         * The name of the backup plan.
+         *
+         * @var string
+         */
+        public $backupPlan;
+        /**
+         * The name of the backup plan association.
+         *
+         * @var string
+         */
+        public $backupPlanAssociation;
+        /**
+         * The description of the backup plan.
+         *
+         * @var string
+         */
+        public $backupPlanDescription;
+        /**
+         * The user friendly id of the backup plan revision. E.g. v0, v1 etc.
+         *
+         * @var string
+         */
+        public $backupPlanRevisionId;
+        /**
+         * The name of the backup plan revision.
+         *
+         * @var string
+         */
+        public $backupPlanRevisionName;
+        /**
+         * The names of the backup plan rules which point to this backupvault
+         *
+         * @var string[]
+         */
+        public $backupPlanRules;
+        /**
+         * The name of the backup plan.
+         *
+         * @param string $backupPlan
+         */
+        public function setBackupPlan($backupPlan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupPlan()
+        {
+        }
+        /**
+         * The name of the backup plan association.
+         *
+         * @param string $backupPlanAssociation
+         */
+        public function setBackupPlanAssociation($backupPlanAssociation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupPlanAssociation()
+        {
+        }
+        /**
+         * The description of the backup plan.
+         *
+         * @param string $backupPlanDescription
+         */
+        public function setBackupPlanDescription($backupPlanDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupPlanDescription()
+        {
+        }
+        /**
+         * The user friendly id of the backup plan revision. E.g. v0, v1 etc.
+         *
+         * @param string $backupPlanRevisionId
+         */
+        public function setBackupPlanRevisionId($backupPlanRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupPlanRevisionId()
+        {
+        }
+        /**
+         * The name of the backup plan revision.
+         *
+         * @param string $backupPlanRevisionName
+         */
+        public function setBackupPlanRevisionName($backupPlanRevisionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupPlanRevisionName()
+        {
+        }
+        /**
+         * The names of the backup plan rules which point to this backupvault
+         *
+         * @param string[] $backupPlanRules
+         */
+        public function setBackupPlanRules($backupPlanRules)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBackupPlanRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\GcpBackupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupPlan()
-    {
-    }
-    /**
-     * The name of the backup plan association.
-     *
-     * @param string $backupPlanAssociation
-     */
-    public function setBackupPlanAssociation($backupPlanAssociation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupPlanAssociation()
-    {
-    }
-    /**
-     * The description of the backup plan.
-     *
-     * @param string $backupPlanDescription
-     */
-    public function setBackupPlanDescription($backupPlanDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupPlanDescription()
-    {
-    }
-    /**
-     * The user friendly id of the backup plan revision. E.g. v0, v1 etc.
-     *
-     * @param string $backupPlanRevisionId
-     */
-    public function setBackupPlanRevisionId($backupPlanRevisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupPlanRevisionId()
-    {
-    }
-    /**
-     * The name of the backup plan revision.
-     *
-     * @param string $backupPlanRevisionName
-     */
-    public function setBackupPlanRevisionName($backupPlanRevisionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupPlanRevisionName()
-    {
-    }
-    /**
-     * The names of the backup plan rules which point to this backupvault
-     *
-     * @param string[] $backupPlanRules
-     */
-    public function setBackupPlanRules($backupPlanRules)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBackupPlanRules()
+    class Google_Service_Backupdr_GcpBackupConfig extends \Google\Service\Backupdr\GcpBackupConfig
     {
     }
 }

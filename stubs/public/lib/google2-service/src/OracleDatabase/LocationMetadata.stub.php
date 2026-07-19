@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class LocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'gcpOracleZones';
-    /**
-     * Output only. Google Cloud Platform Oracle zones in a location.
-     *
-     * @var string[]
-     */
-    public $gcpOracleZones;
-    /**
-     * Output only. Google Cloud Platform Oracle zones in a location.
-     *
-     * @param string[] $gcpOracleZones
-     */
-    public function setGcpOracleZones($gcpOracleZones)
+namespace Google\Service\OracleDatabase {
+    class LocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'gcpOracleZones';
+        /**
+         * Output only. Google Cloud Platform Oracle zones in a location.
+         *
+         * @var string[]
+         */
+        public $gcpOracleZones;
+        /**
+         * Output only. Google Cloud Platform Oracle zones in a location.
+         *
+         * @param string[] $gcpOracleZones
+         */
+        public function setGcpOracleZones($gcpOracleZones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGcpOracleZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OracleDatabase\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpOracleZones()
+    class Google_Service_OracleDatabase_LocationMetadata extends \Google\Service\OracleDatabase\LocationMetadata
     {
     }
 }

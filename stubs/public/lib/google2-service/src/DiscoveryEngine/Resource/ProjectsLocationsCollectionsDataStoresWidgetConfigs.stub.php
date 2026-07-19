@@ -21,59 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "widgetConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $widgetConfigs = $discoveryengineService->projects_locations_collections_dataStores_widgetConfigs;
- *  </code>
- */
-class ProjectsLocationsCollectionsDataStoresWidgetConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfig;
     /**
-     * Gets a WidgetConfig. (widgetConfigs.get)
-     *
-     * @param string $name Required. Full WidgetConfig resource name. Format: `proje
-     * cts/{project}/locations/{location}/collections/{collection_id}/dataStores/{da
-     * ta_store_id}/widgetConfigs/{widget_config_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool acceptCache Optional. Whether it's acceptable to load the
-     * widget config from cache. If set to true, recent changes on widget configs
-     * may take a few minutes to reflect on the end user's view. It's recommended to
-     * set to true for maturely developed widgets, as it improves widget
-     * performance. Set to false to see changes reflected in prod right away, if
-     * your widget is under development.
-     * @opt_param bool getWidgetConfigRequestOption.turnOffCollectionComponents
-     * Optional. Whether to turn off collection_components in WidgetConfig to reduce
-     * latency and data transmission.
-     * @return GoogleCloudDiscoveryengineV1WidgetConfig
-     * @throws \Google\Service\Exception
+     * The "widgetConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $widgetConfigs = $discoveryengineService->projects_locations_collections_dataStores_widgetConfigs;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsCollectionsDataStoresWidgetConfigs extends \Google\Service\Resource
     {
+        /**
+         * Gets a WidgetConfig. (widgetConfigs.get)
+         *
+         * @param string $name Required. Full WidgetConfig resource name. Format: `proje
+         * cts/{project}/locations/{location}/collections/{collection_id}/dataStores/{da
+         * ta_store_id}/widgetConfigs/{widget_config_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool acceptCache Optional. Whether it's acceptable to load the
+         * widget config from cache. If set to true, recent changes on widget configs
+         * may take a few minutes to reflect on the end user's view. It's recommended to
+         * set to true for maturely developed widgets, as it improves widget
+         * performance. Set to false to see changes reflected in prod right away, if
+         * your widget is under development.
+         * @opt_param bool getWidgetConfigRequestOption.turnOffCollectionComponents
+         * Optional. Whether to turn off collection_components in WidgetConfig to reduce
+         * latency and data transmission.
+         * @return GoogleCloudDiscoveryengineV1WidgetConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Update a WidgetConfig. (widgetConfigs.patch)
+         *
+         * @param string $name Immutable. The full resource name of the widget config.
+         * Format: `projects/{project}/locations/{location}/collections/{collection_id}/
+         * dataStores/{data_store_id}/widgetConfigs/{widget_config_id}`. This field must
+         * be a UTF-8 encoded string with a length limit of 1024 characters.
+         * @param GoogleCloudDiscoveryengineV1WidgetConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Indicates which fields in the provided
+         * WidgetConfig to update. The following are the only supported fields: *
+         * WidgetConfig.enable_autocomplete If not set, all supported fields are
+         * updated.
+         * @return GoogleCloudDiscoveryengineV1WidgetConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDiscoveryengineV1WidgetConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Update a WidgetConfig. (widgetConfigs.patch)
-     *
-     * @param string $name Immutable. The full resource name of the widget config.
-     * Format: `projects/{project}/locations/{location}/collections/{collection_id}/
-     * dataStores/{data_store_id}/widgetConfigs/{widget_config_id}`. This field must
-     * be a UTF-8 encoded string with a length limit of 1024 characters.
-     * @param GoogleCloudDiscoveryengineV1WidgetConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Indicates which fields in the provided
-     * WidgetConfig to update. The following are the only supported fields: *
-     * WidgetConfig.enable_autocomplete If not set, all supported fields are
-     * updated.
-     * @return GoogleCloudDiscoveryengineV1WidgetConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresWidgetConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($name, GoogleCloudDiscoveryengineV1WidgetConfig $postBody, $optParams = [])
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsDataStoresWidgetConfigs extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresWidgetConfigs
     {
     }
 }

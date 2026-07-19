@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ListEnvironmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $environmentsType = Environment::class;
-    protected $environmentsDataType = 'array';
-    public $environments = [];
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable = [];
-    /**
-     * @param Environment[]
-     */
-    public function setEnvironments($environments)
+namespace Google\Service\AIPlatformNotebooks {
+    class ListEnvironmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $environmentsType = Environment::class;
+        protected $environmentsDataType = 'array';
+        public $environments = [];
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable = [];
+        /**
+         * @param Environment[]
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return Environment[]
+         */
+        public function getEnvironments()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Environment[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ListEnvironmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironments()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AIPlatformNotebooks_ListEnvironmentsResponse extends \Google\Service\AIPlatformNotebooks\ListEnvironmentsResponse
     {
     }
 }

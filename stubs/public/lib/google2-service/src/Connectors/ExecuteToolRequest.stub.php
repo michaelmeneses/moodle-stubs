@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExecuteToolRequest extends \Google\Model
-{
-    /**
-     * Input parameters for the tool.
-     *
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * Input parameters for the tool.
-     *
-     * @param array[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Connectors {
+    class ExecuteToolRequest extends \Google\Model
     {
+        /**
+         * Input parameters for the tool.
+         *
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * Input parameters for the tool.
+         *
+         * @param array[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ExecuteToolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Connectors_ExecuteToolRequest extends \Google\Service\Connectors\ExecuteToolRequest
     {
     }
 }

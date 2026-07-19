@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PipelineReadyCondition extends \Google\Model
-{
-    /**
-     * True if the Pipeline is in a valid state. Otherwise at least one condition
-     * in `PipelineCondition` is in an invalid state. Iterate over those
-     * conditions and see which condition(s) has status = false to find out what
-     * is wrong with the Pipeline.
-     *
-     * @var bool
-     */
-    public $status;
-    /**
-     * Last time the condition was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * True if the Pipeline is in a valid state. Otherwise at least one condition
-     * in `PipelineCondition` is in an invalid state. Iterate over those
-     * conditions and see which condition(s) has status = false to find out what
-     * is wrong with the Pipeline.
-     *
-     * @param bool $status
-     */
-    public function setStatus($status)
+namespace Google\Service\CloudDeploy {
+    class PipelineReadyCondition extends \Google\Model
     {
+        /**
+         * True if the Pipeline is in a valid state. Otherwise at least one condition
+         * in `PipelineCondition` is in an invalid state. Iterate over those
+         * conditions and see which condition(s) has status = false to find out what
+         * is wrong with the Pipeline.
+         *
+         * @var bool
+         */
+        public $status;
+        /**
+         * Last time the condition was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * True if the Pipeline is in a valid state. Otherwise at least one condition
+         * in `PipelineCondition` is in an invalid state. Iterate over those
+         * conditions and see which condition(s) has status = false to find out what
+         * is wrong with the Pipeline.
+         *
+         * @param bool $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Last time the condition was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDeploy\PipelineReadyCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * Last time the condition was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDeploy_PipelineReadyCondition extends \Google\Service\CloudDeploy\PipelineReadyCondition
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class Quantiles extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $count;
-    /**
-     * @var string
-     */
-    public $maximum;
-    /**
-     * @var string
-     */
-    public $minimum;
-    /**
-     * @var string
-     */
-    public $percentile25;
-    /**
-     * @var string
-     */
-    public $percentile50;
-    /**
-     * @var string
-     */
-    public $percentile75;
-    /**
-     * @var string
-     */
-    public $sum;
-    /**
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\Dataproc {
+    class Quantiles extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $count;
+        /**
+         * @var string
+         */
+        public $maximum;
+        /**
+         * @var string
+         */
+        public $minimum;
+        /**
+         * @var string
+         */
+        public $percentile25;
+        /**
+         * @var string
+         */
+        public $percentile50;
+        /**
+         * @var string
+         */
+        public $percentile75;
+        /**
+         * @var string
+         */
+        public $sum;
+        /**
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param string $maximum
+         */
+        public function setMaximum($maximum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaximum()
+        {
+        }
+        /**
+         * @param string $minimum
+         */
+        public function setMinimum($minimum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimum()
+        {
+        }
+        /**
+         * @param string $percentile25
+         */
+        public function setPercentile25($percentile25)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPercentile25()
+        {
+        }
+        /**
+         * @param string $percentile50
+         */
+        public function setPercentile50($percentile50)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPercentile50()
+        {
+        }
+        /**
+         * @param string $percentile75
+         */
+        public function setPercentile75($percentile75)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPercentile75()
+        {
+        }
+        /**
+         * @param string $sum
+         */
+        public function setSum($sum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\Quantiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * @param string $maximum
-     */
-    public function setMaximum($maximum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaximum()
-    {
-    }
-    /**
-     * @param string $minimum
-     */
-    public function setMinimum($minimum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimum()
-    {
-    }
-    /**
-     * @param string $percentile25
-     */
-    public function setPercentile25($percentile25)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPercentile25()
-    {
-    }
-    /**
-     * @param string $percentile50
-     */
-    public function setPercentile50($percentile50)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPercentile50()
-    {
-    }
-    /**
-     * @param string $percentile75
-     */
-    public function setPercentile75($percentile75)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPercentile75()
-    {
-    }
-    /**
-     * @param string $sum
-     */
-    public function setSum($sum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSum()
+    class Google_Service_Dataproc_Quantiles extends \Google\Service\Dataproc\Quantiles
     {
     }
 }

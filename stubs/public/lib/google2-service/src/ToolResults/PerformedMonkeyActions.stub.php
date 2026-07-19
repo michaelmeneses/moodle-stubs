@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PerformedMonkeyActions extends \Google\Model
-{
-    /**
-     * The total number of monkey actions performed during the crawl.
-     *
-     * @var int
-     */
-    public $totalActions;
-    /**
-     * The total number of monkey actions performed during the crawl.
-     *
-     * @param int $totalActions
-     */
-    public function setTotalActions($totalActions)
+namespace Google\Service\ToolResults {
+    class PerformedMonkeyActions extends \Google\Model
     {
+        /**
+         * The total number of monkey actions performed during the crawl.
+         *
+         * @var int
+         */
+        public $totalActions;
+        /**
+         * The total number of monkey actions performed during the crawl.
+         *
+         * @param int $totalActions
+         */
+        public function setTotalActions($totalActions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\PerformedMonkeyActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalActions()
+    class Google_Service_ToolResults_PerformedMonkeyActions extends \Google\Service\ToolResults\PerformedMonkeyActions
     {
     }
 }

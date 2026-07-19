@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceFileGcs extends \Google\Model
-{
-    /**
-     * Required. Bucket of the Cloud Storage object.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Generation number of the Cloud Storage object.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * Required. Name of the Cloud Storage object.
-     *
-     * @var string
-     */
-    public $object;
-    /**
-     * Required. Bucket of the Cloud Storage object.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceFileGcs extends \Google\Model
     {
+        /**
+         * Required. Bucket of the Cloud Storage object.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Generation number of the Cloud Storage object.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * Required. Name of the Cloud Storage object.
+         *
+         * @var string
+         */
+        public $object;
+        /**
+         * Required. Bucket of the Cloud Storage object.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Generation number of the Cloud Storage object.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * Required. Name of the Cloud Storage object.
+         *
+         * @param string $object
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceFileGcs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Generation number of the Cloud Storage object.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * Required. Name of the Cloud Storage object.
-     *
-     * @param string $object
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
+    class Google_Service_OSConfig_OSPolicyResourceFileGcs extends \Google\Service\OSConfig\OSPolicyResourceFileGcs
     {
     }
 }

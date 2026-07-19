@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DestinationConfig extends \Google\Collection
-{
-    protected $collection_key = 'destinations';
-    protected $destinationsType = GoogleCloudDiscoveryengineV1DestinationConfigDestination::class;
-    protected $destinationsDataType = 'array';
-    /**
-     * Additional parameters for this destination config in json string format.
-     *
-     * @var string
-     */
-    public $jsonParams;
-    /**
-     * Optional. Unique destination identifier that is supported by the connector.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. Additional parameters for this destination config in structured
-     * json format.
-     *
-     * @var array[]
-     */
-    public $params;
-    /**
-     * Optional. The destinations for the corresponding key.
-     *
-     * @param GoogleCloudDiscoveryengineV1DestinationConfigDestination[] $destinations
-     */
-    public function setDestinations($destinations)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DestinationConfig extends \Google\Collection
     {
+        protected $collection_key = 'destinations';
+        protected $destinationsType = GoogleCloudDiscoveryengineV1DestinationConfigDestination::class;
+        protected $destinationsDataType = 'array';
+        /**
+         * Additional parameters for this destination config in json string format.
+         *
+         * @var string
+         */
+        public $jsonParams;
+        /**
+         * Optional. Unique destination identifier that is supported by the connector.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. Additional parameters for this destination config in structured
+         * json format.
+         *
+         * @var array[]
+         */
+        public $params;
+        /**
+         * Optional. The destinations for the corresponding key.
+         *
+         * @param GoogleCloudDiscoveryengineV1DestinationConfigDestination[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1DestinationConfigDestination[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * Additional parameters for this destination config in json string format.
+         *
+         * @param string $jsonParams
+         */
+        public function setJsonParams($jsonParams)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonParams()
+        {
+        }
+        /**
+         * Optional. Unique destination identifier that is supported by the connector.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. Additional parameters for this destination config in structured
+         * json format.
+         *
+         * @param array[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1DestinationConfigDestination[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DestinationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinations()
-    {
-    }
-    /**
-     * Additional parameters for this destination config in json string format.
-     *
-     * @param string $jsonParams
-     */
-    public function setJsonParams($jsonParams)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonParams()
-    {
-    }
-    /**
-     * Optional. Unique destination identifier that is supported by the connector.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. Additional parameters for this destination config in structured
-     * json format.
-     *
-     * @param array[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParams()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DestinationConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DestinationConfig
     {
     }
 }

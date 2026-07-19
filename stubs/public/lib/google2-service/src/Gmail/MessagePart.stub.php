@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class MessagePart extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    protected $bodyType = MessagePartBody::class;
-    protected $bodyDataType = '';
-    /**
-     * The filename of the attachment. Only present if this message part
-     * represents an attachment.
-     *
-     * @var string
-     */
-    public $filename;
-    protected $headersType = MessagePartHeader::class;
-    protected $headersDataType = 'array';
-    /**
-     * The MIME type of the message part.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The immutable ID of the message part.
-     *
-     * @var string
-     */
-    public $partId;
-    protected $partsType = MessagePart::class;
-    protected $partsDataType = 'array';
-    /**
-     * The message part body for this part, which may be empty for container MIME
-     * message parts.
-     *
-     * @param MessagePartBody $body
-     */
-    public function setBody(MessagePartBody $body)
+namespace Google\Service\Gmail {
+    class MessagePart extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        protected $bodyType = MessagePartBody::class;
+        protected $bodyDataType = '';
+        /**
+         * The filename of the attachment. Only present if this message part
+         * represents an attachment.
+         *
+         * @var string
+         */
+        public $filename;
+        protected $headersType = MessagePartHeader::class;
+        protected $headersDataType = 'array';
+        /**
+         * The MIME type of the message part.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The immutable ID of the message part.
+         *
+         * @var string
+         */
+        public $partId;
+        protected $partsType = MessagePart::class;
+        protected $partsDataType = 'array';
+        /**
+         * The message part body for this part, which may be empty for container MIME
+         * message parts.
+         *
+         * @param MessagePartBody $body
+         */
+        public function setBody(MessagePartBody $body)
+        {
+        }
+        /**
+         * @return MessagePartBody
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * The filename of the attachment. Only present if this message part
+         * represents an attachment.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
+        /**
+         * List of headers on this message part. For the top-level message part,
+         * representing the entire message payload, it will contain the standard RFC
+         * 2822 email headers such as `To`, `From`, and `Subject`.
+         *
+         * @param MessagePartHeader[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return MessagePartHeader[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * The MIME type of the message part.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The immutable ID of the message part.
+         *
+         * @param string $partId
+         */
+        public function setPartId($partId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartId()
+        {
+        }
+        /**
+         * The child MIME message parts of this part. This only applies to container
+         * MIME message parts, for example `multipart`. For non- container MIME
+         * message part types, such as `text/plain`, this field is empty. For more
+         * information, see RFC 1521.
+         *
+         * @param MessagePart[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return MessagePart[]
+         */
+        public function getParts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MessagePartBody
+     * Runtime class alias of \Google\Service\Gmail\MessagePart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * The filename of the attachment. Only present if this message part
-     * represents an attachment.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
-    {
-    }
-    /**
-     * List of headers on this message part. For the top-level message part,
-     * representing the entire message payload, it will contain the standard RFC
-     * 2822 email headers such as `To`, `From`, and `Subject`.
-     *
-     * @param MessagePartHeader[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return MessagePartHeader[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * The MIME type of the message part.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The immutable ID of the message part.
-     *
-     * @param string $partId
-     */
-    public function setPartId($partId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartId()
-    {
-    }
-    /**
-     * The child MIME message parts of this part. This only applies to container
-     * MIME message parts, for example `multipart`. For non- container MIME
-     * message part types, such as `text/plain`, this field is empty. For more
-     * information, see RFC 1521.
-     *
-     * @param MessagePart[] $parts
-     */
-    public function setParts($parts)
-    {
-    }
-    /**
-     * @return MessagePart[]
-     */
-    public function getParts()
+    class Google_Service_Gmail_MessagePart extends \Google\Service\Gmail\MessagePart
     {
     }
 }

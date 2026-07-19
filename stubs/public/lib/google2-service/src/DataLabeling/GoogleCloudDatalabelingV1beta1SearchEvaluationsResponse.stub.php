@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'evaluations';
-    protected $evaluationsType = GoogleCloudDatalabelingV1beta1Evaluation::class;
-    protected $evaluationsDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of evaluations matching the search.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Evaluation[] $evaluations
-     */
-    public function setEvaluations($evaluations)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'evaluations';
+        protected $evaluationsType = GoogleCloudDatalabelingV1beta1Evaluation::class;
+        protected $evaluationsDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of evaluations matching the search.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Evaluation[] $evaluations
+         */
+        public function setEvaluations($evaluations)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Evaluation[]
+         */
+        public function getEvaluations()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Evaluation[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluations()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse
     {
     }
 }

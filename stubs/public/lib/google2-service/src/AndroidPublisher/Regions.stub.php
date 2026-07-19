@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Regions extends \Google\Collection
-{
-    protected $collection_key = 'regionCode';
-    /**
-     * Regions targeted by the recovery action. Region codes are ISO 3166 Alpha-2
-     * country codes. For example, US stands for United States of America. See
-     * https://www.iso.org/iso-3166-country-codes.html for the complete list of
-     * country codes.
-     *
-     * @var string[]
-     */
-    public $regionCode;
-    /**
-     * Regions targeted by the recovery action. Region codes are ISO 3166 Alpha-2
-     * country codes. For example, US stands for United States of America. See
-     * https://www.iso.org/iso-3166-country-codes.html for the complete list of
-     * country codes.
-     *
-     * @param string[] $regionCode
-     */
-    public function setRegionCode($regionCode)
+namespace Google\Service\AndroidPublisher {
+    class Regions extends \Google\Collection
     {
+        protected $collection_key = 'regionCode';
+        /**
+         * Regions targeted by the recovery action. Region codes are ISO 3166 Alpha-2
+         * country codes. For example, US stands for United States of America. See
+         * https://www.iso.org/iso-3166-country-codes.html for the complete list of
+         * country codes.
+         *
+         * @var string[]
+         */
+        public $regionCode;
+        /**
+         * Regions targeted by the recovery action. Region codes are ISO 3166 Alpha-2
+         * country codes. For example, US stands for United States of America. See
+         * https://www.iso.org/iso-3166-country-codes.html for the complete list of
+         * country codes.
+         *
+         * @param string[] $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\Regions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionCode()
+    class Google_Service_AndroidPublisher_Regions extends \Google\Service\AndroidPublisher\Regions
     {
     }
 }

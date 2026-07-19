@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworksScopedWarning extends \Google\Model
-{
-    /**
-     * Name of the scope containing this set of Subnetworks.
-     *
-     * @var string
-     */
-    public $scopeName;
-    protected $warningType = SubnetworksScopedWarningWarning::class;
-    protected $warningDataType = '';
-    /**
-     * Name of the scope containing this set of Subnetworks.
-     *
-     * @param string $scopeName
-     */
-    public function setScopeName($scopeName)
+namespace Google\Service\Compute {
+    class SubnetworksScopedWarning extends \Google\Model
     {
+        /**
+         * Name of the scope containing this set of Subnetworks.
+         *
+         * @var string
+         */
+        public $scopeName;
+        protected $warningType = SubnetworksScopedWarningWarning::class;
+        protected $warningDataType = '';
+        /**
+         * Name of the scope containing this set of Subnetworks.
+         *
+         * @param string $scopeName
+         */
+        public function setScopeName($scopeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScopeName()
+        {
+        }
+        /**
+         * An informational warning about unreachable scope
+         *
+         * @param SubnetworksScopedWarningWarning $warning
+         */
+        public function setWarning(SubnetworksScopedWarningWarning $warning)
+        {
+        }
+        /**
+         * @return SubnetworksScopedWarningWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SubnetworksScopedWarning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScopeName()
-    {
-    }
-    /**
-     * An informational warning about unreachable scope
-     *
-     * @param SubnetworksScopedWarningWarning $warning
-     */
-    public function setWarning(SubnetworksScopedWarningWarning $warning)
-    {
-    }
-    /**
-     * @return SubnetworksScopedWarningWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_SubnetworksScopedWarning extends \Google\Service\Compute\SubnetworksScopedWarning
     {
     }
 }

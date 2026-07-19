@@ -21,52 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting\Resource;
-
-/**
- * The "policies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $policies = $prod_tt_sasportalService->policies;
- *  </code>
- */
-class Policies extends \Google\Service\Resource
-{
+namespace Google\Service\SASPortalTesting\Resource {
+    use Google\Service\SASPortalTesting\SasPortalGetPolicyRequest;
+    use Google\Service\SASPortalTesting\SasPortalPolicy;
+    use Google\Service\SASPortalTesting\SasPortalSetPolicyRequest;
+    use Google\Service\SASPortalTesting\SasPortalTestPermissionsRequest;
+    use Google\Service\SASPortalTesting\SasPortalTestPermissionsResponse;
     /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (policies.get)
-     *
-     * @param SasPortalGetPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalPolicy
-     * @throws \Google\Service\Exception
+     * The "policies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
+     *   $policies = $prod_tt_sasportalService->policies;
+     *  </code>
      */
-    public function get(SasPortalGetPolicyRequest $postBody, $optParams = [])
+    class Policies extends \Google\Service\Resource
     {
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (policies.get)
+         *
+         * @param SasPortalGetPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function get(SasPortalGetPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. (policies.set)
+         *
+         * @param SasPortalSetPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function set(SasPortalSetPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource.
+         * (policies.test)
+         *
+         * @param SasPortalTestPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalTestPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function test(SasPortalTestPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. (policies.set)
-     *
-     * @param SasPortalSetPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalPolicy
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SASPortalTesting\Resource\Policies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function set(SasPortalSetPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource.
-     * (policies.test)
-     *
-     * @param SasPortalTestPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalTestPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function test(SasPortalTestPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_SASPortalTesting_Resource_Policies extends \Google\Service\SASPortalTesting\Resource\Policies
     {
     }
 }

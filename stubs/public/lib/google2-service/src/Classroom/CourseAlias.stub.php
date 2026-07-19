@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class CourseAlias extends \Google\Model
-{
-    /**
-     * Alias string. The format of the string indicates the desired alias scoping.
-     * * `d:` indicates a domain-scoped alias. Example: `d:math_101` * `p:`
-     * indicates a project-scoped alias. Example: `p:abc123` This field has a
-     * maximum length of 256 characters.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Alias string. The format of the string indicates the desired alias scoping.
-     * * `d:` indicates a domain-scoped alias. Example: `d:math_101` * `p:`
-     * indicates a project-scoped alias. Example: `p:abc123` This field has a
-     * maximum length of 256 characters.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\Classroom {
+    class CourseAlias extends \Google\Model
     {
+        /**
+         * Alias string. The format of the string indicates the desired alias scoping.
+         * * `d:` indicates a domain-scoped alias. Example: `d:math_101` * `p:`
+         * indicates a project-scoped alias. Example: `p:abc123` This field has a
+         * maximum length of 256 characters.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Alias string. The format of the string indicates the desired alias scoping.
+         * * `d:` indicates a domain-scoped alias. Example: `d:math_101` * `p:`
+         * indicates a project-scoped alias. Example: `p:abc123` This field has a
+         * maximum length of 256 characters.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\CourseAlias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
+    class Google_Service_Classroom_CourseAlias extends \Google\Service\Classroom\CourseAlias
     {
     }
 }

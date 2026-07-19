@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class DateQuestion extends \Google\Model
-{
-    /**
-     * Whether to include the time as part of the question.
-     *
-     * @var bool
-     */
-    public $includeTime;
-    /**
-     * Whether to include the year as part of the question.
-     *
-     * @var bool
-     */
-    public $includeYear;
-    /**
-     * Whether to include the time as part of the question.
-     *
-     * @param bool $includeTime
-     */
-    public function setIncludeTime($includeTime)
+namespace Google\Service\Forms {
+    class DateQuestion extends \Google\Model
     {
+        /**
+         * Whether to include the time as part of the question.
+         *
+         * @var bool
+         */
+        public $includeTime;
+        /**
+         * Whether to include the year as part of the question.
+         *
+         * @var bool
+         */
+        public $includeYear;
+        /**
+         * Whether to include the time as part of the question.
+         *
+         * @param bool $includeTime
+         */
+        public function setIncludeTime($includeTime)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeTime()
+        {
+        }
+        /**
+         * Whether to include the year as part of the question.
+         *
+         * @param bool $includeYear
+         */
+        public function setIncludeYear($includeYear)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeYear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\DateQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeTime()
-    {
-    }
-    /**
-     * Whether to include the year as part of the question.
-     *
-     * @param bool $includeYear
-     */
-    public function setIncludeYear($includeYear)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeYear()
+    class Google_Service_Forms_DateQuestion extends \Google\Service\Forms\DateQuestion
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ListModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = GoogleCloudRetailV2Model::class;
-    protected $modelsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Models.
-     *
-     * @param GoogleCloudRetailV2Model[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ListModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = GoogleCloudRetailV2Model::class;
+        protected $modelsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Models.
+         *
+         * @param GoogleCloudRetailV2Model[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Model[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2Model[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ListModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ListModelsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2ListModelsResponse
     {
     }
 }

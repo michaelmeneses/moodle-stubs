@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class DomainMembership extends \Google\Model
-{
-    /**
-     * True if the person is in the viewer's Google Workspace domain.
-     *
-     * @var bool
-     */
-    public $inViewerDomain;
-    /**
-     * True if the person is in the viewer's Google Workspace domain.
-     *
-     * @param bool $inViewerDomain
-     */
-    public function setInViewerDomain($inViewerDomain)
+namespace Google\Service\PeopleService {
+    class DomainMembership extends \Google\Model
     {
+        /**
+         * True if the person is in the viewer's Google Workspace domain.
+         *
+         * @var bool
+         */
+        public $inViewerDomain;
+        /**
+         * True if the person is in the viewer's Google Workspace domain.
+         *
+         * @param bool $inViewerDomain
+         */
+        public function setInViewerDomain($inViewerDomain)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInViewerDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PeopleService\DomainMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInViewerDomain()
+    class Google_Service_PeopleService_DomainMembership extends \Google\Service\PeopleService\DomainMembership
     {
     }
 }

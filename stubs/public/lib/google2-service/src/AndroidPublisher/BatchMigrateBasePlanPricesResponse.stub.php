@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchMigrateBasePlanPricesResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = MigrateBasePlanPricesResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * Contains one response per requested price migration, in the same order as
-     * the request.
-     *
-     * @param MigrateBasePlanPricesResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\AndroidPublisher {
+    class BatchMigrateBasePlanPricesResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = MigrateBasePlanPricesResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * Contains one response per requested price migration, in the same order as
+         * the request.
+         *
+         * @param MigrateBasePlanPricesResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return MigrateBasePlanPricesResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrateBasePlanPricesResponse[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchMigrateBasePlanPricesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_AndroidPublisher_BatchMigrateBasePlanPricesResponse extends \Google\Service\AndroidPublisher\BatchMigrateBasePlanPricesResponse
     {
     }
 }

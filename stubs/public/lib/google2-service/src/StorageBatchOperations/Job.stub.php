@@ -21,313 +21,322 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class Job extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * In progress.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * Completed successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Cancelled by the user.
-     */
-    public const STATE_CANCELED = 'CANCELED';
-    /**
-     * Terminated due to an unrecoverable failure.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $collection_key = 'errorSummaries';
-    protected $bucketListType = BucketList::class;
-    protected $bucketListDataType = '';
-    /**
-     * Output only. The time that the job was completed.
-     *
-     * @var string
-     */
-    public $completeTime;
-    protected $countersType = Counters::class;
-    protected $countersDataType = '';
-    /**
-     * Output only. The time that the job was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $deleteObjectType = DeleteObject::class;
-    protected $deleteObjectDataType = '';
-    /**
-     * Optional. A description provided by the user for the job. Its max length is
-     * 1024 bytes when Unicode-encoded.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. If true, the job will run in dry run mode, returning the total
-     * object count and, if the object configuration is a prefix list, the bytes
-     * found from source. No transformations will be performed.
-     *
-     * @var bool
-     */
-    public $dryRun;
-    protected $errorSummariesType = ErrorSummary::class;
-    protected $errorSummariesDataType = 'array';
-    protected $loggingConfigType = LoggingConfig::class;
-    protected $loggingConfigDataType = '';
-    /**
-     * Identifier. The resource name of the Job. job_id is unique within the
-     * project, that is either set by the customer or defined by the service.
-     * Format: projects/{project}/locations/global/jobs/{job_id} . For example:
-     * "projects/123456/locations/global/jobs/job01".
-     *
-     * @var string
-     */
-    public $name;
-    protected $putMetadataType = PutMetadata::class;
-    protected $putMetadataDataType = '';
-    protected $putObjectHoldType = PutObjectHold::class;
-    protected $putObjectHoldDataType = '';
-    protected $rewriteObjectType = RewriteObject::class;
-    protected $rewriteObjectDataType = '';
-    /**
-     * Output only. The time that the job was scheduled.
-     *
-     * @var string
-     */
-    public $scheduleTime;
-    /**
-     * Output only. State of the job.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Specifies a list of buckets and their objects to be transformed.
-     *
-     * @param BucketList $bucketList
-     */
-    public function setBucketList(BucketList $bucketList)
+namespace Google\Service\StorageBatchOperations {
+    class Job extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * In progress.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * Completed successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Cancelled by the user.
+         */
+        public const STATE_CANCELED = 'CANCELED';
+        /**
+         * Terminated due to an unrecoverable failure.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $collection_key = 'errorSummaries';
+        protected $bucketListType = BucketList::class;
+        protected $bucketListDataType = '';
+        /**
+         * Output only. The time that the job was completed.
+         *
+         * @var string
+         */
+        public $completeTime;
+        protected $countersType = Counters::class;
+        protected $countersDataType = '';
+        /**
+         * Output only. The time that the job was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $deleteObjectType = DeleteObject::class;
+        protected $deleteObjectDataType = '';
+        /**
+         * Optional. A description provided by the user for the job. Its max length is
+         * 1024 bytes when Unicode-encoded.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. If true, the job will run in dry run mode, returning the total
+         * object count and, if the object configuration is a prefix list, the bytes
+         * found from source. No transformations will be performed.
+         *
+         * @var bool
+         */
+        public $dryRun;
+        protected $errorSummariesType = ErrorSummary::class;
+        protected $errorSummariesDataType = 'array';
+        protected $loggingConfigType = LoggingConfig::class;
+        protected $loggingConfigDataType = '';
+        /**
+         * Identifier. The resource name of the Job. job_id is unique within the
+         * project, that is either set by the customer or defined by the service.
+         * Format: projects/{project}/locations/global/jobs/{job_id} . For example:
+         * "projects/123456/locations/global/jobs/job01".
+         *
+         * @var string
+         */
+        public $name;
+        protected $putMetadataType = PutMetadata::class;
+        protected $putMetadataDataType = '';
+        protected $putObjectHoldType = PutObjectHold::class;
+        protected $putObjectHoldDataType = '';
+        protected $rewriteObjectType = RewriteObject::class;
+        protected $rewriteObjectDataType = '';
+        /**
+         * Output only. The time that the job was scheduled.
+         *
+         * @var string
+         */
+        public $scheduleTime;
+        /**
+         * Output only. State of the job.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Specifies a list of buckets and their objects to be transformed.
+         *
+         * @param BucketList $bucketList
+         */
+        public function setBucketList(BucketList $bucketList)
+        {
+        }
+        /**
+         * @return BucketList
+         */
+        public function getBucketList()
+        {
+        }
+        /**
+         * Output only. The time that the job was completed.
+         *
+         * @param string $completeTime
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * Output only. Information about the progress of the job.
+         *
+         * @param Counters $counters
+         */
+        public function setCounters(Counters $counters)
+        {
+        }
+        /**
+         * @return Counters
+         */
+        public function getCounters()
+        {
+        }
+        /**
+         * Output only. The time that the job was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Delete objects.
+         *
+         * @param DeleteObject $deleteObject
+         */
+        public function setDeleteObject(DeleteObject $deleteObject)
+        {
+        }
+        /**
+         * @return DeleteObject
+         */
+        public function getDeleteObject()
+        {
+        }
+        /**
+         * Optional. A description provided by the user for the job. Its max length is
+         * 1024 bytes when Unicode-encoded.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. If true, the job will run in dry run mode, returning the total
+         * object count and, if the object configuration is a prefix list, the bytes
+         * found from source. No transformations will be performed.
+         *
+         * @param bool $dryRun
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * Output only. Summarizes errors encountered with sample error log entries.
+         *
+         * @param ErrorSummary[] $errorSummaries
+         */
+        public function setErrorSummaries($errorSummaries)
+        {
+        }
+        /**
+         * @return ErrorSummary[]
+         */
+        public function getErrorSummaries()
+        {
+        }
+        /**
+         * Optional. Logging configuration.
+         *
+         * @param LoggingConfig $loggingConfig
+         */
+        public function setLoggingConfig(LoggingConfig $loggingConfig)
+        {
+        }
+        /**
+         * @return LoggingConfig
+         */
+        public function getLoggingConfig()
+        {
+        }
+        /**
+         * Identifier. The resource name of the Job. job_id is unique within the
+         * project, that is either set by the customer or defined by the service.
+         * Format: projects/{project}/locations/global/jobs/{job_id} . For example:
+         * "projects/123456/locations/global/jobs/job01".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Updates object metadata. Allows updating fixed-key and custom metadata and
+         * fixed-key metadata i.e. Cache-Control, Content-Disposition, Content-
+         * Encoding, Content-Language, Content-Type, Custom-Time.
+         *
+         * @param PutMetadata $putMetadata
+         */
+        public function setPutMetadata(PutMetadata $putMetadata)
+        {
+        }
+        /**
+         * @return PutMetadata
+         */
+        public function getPutMetadata()
+        {
+        }
+        /**
+         * Changes object hold status.
+         *
+         * @param PutObjectHold $putObjectHold
+         */
+        public function setPutObjectHold(PutObjectHold $putObjectHold)
+        {
+        }
+        /**
+         * @return PutObjectHold
+         */
+        public function getPutObjectHold()
+        {
+        }
+        /**
+         * Rewrite the object and updates metadata like KMS key.
+         *
+         * @param RewriteObject $rewriteObject
+         */
+        public function setRewriteObject(RewriteObject $rewriteObject)
+        {
+        }
+        /**
+         * @return RewriteObject
+         */
+        public function getRewriteObject()
+        {
+        }
+        /**
+         * Output only. The time that the job was scheduled.
+         *
+         * @param string $scheduleTime
+         */
+        public function setScheduleTime($scheduleTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduleTime()
+        {
+        }
+        /**
+         * Output only. State of the job.
+         *
+         * Accepted values: STATE_UNSPECIFIED, RUNNING, SUCCEEDED, CANCELED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BucketList
+     * Runtime class alias of \Google\Service\StorageBatchOperations\Job registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketList()
-    {
-    }
-    /**
-     * Output only. The time that the job was completed.
-     *
-     * @param string $completeTime
-     */
-    public function setCompleteTime($completeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * Output only. Information about the progress of the job.
-     *
-     * @param Counters $counters
-     */
-    public function setCounters(Counters $counters)
-    {
-    }
-    /**
-     * @return Counters
-     */
-    public function getCounters()
-    {
-    }
-    /**
-     * Output only. The time that the job was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Delete objects.
-     *
-     * @param DeleteObject $deleteObject
-     */
-    public function setDeleteObject(DeleteObject $deleteObject)
-    {
-    }
-    /**
-     * @return DeleteObject
-     */
-    public function getDeleteObject()
-    {
-    }
-    /**
-     * Optional. A description provided by the user for the job. Its max length is
-     * 1024 bytes when Unicode-encoded.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. If true, the job will run in dry run mode, returning the total
-     * object count and, if the object configuration is a prefix list, the bytes
-     * found from source. No transformations will be performed.
-     *
-     * @param bool $dryRun
-     */
-    public function setDryRun($dryRun)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDryRun()
-    {
-    }
-    /**
-     * Output only. Summarizes errors encountered with sample error log entries.
-     *
-     * @param ErrorSummary[] $errorSummaries
-     */
-    public function setErrorSummaries($errorSummaries)
-    {
-    }
-    /**
-     * @return ErrorSummary[]
-     */
-    public function getErrorSummaries()
-    {
-    }
-    /**
-     * Optional. Logging configuration.
-     *
-     * @param LoggingConfig $loggingConfig
-     */
-    public function setLoggingConfig(LoggingConfig $loggingConfig)
-    {
-    }
-    /**
-     * @return LoggingConfig
-     */
-    public function getLoggingConfig()
-    {
-    }
-    /**
-     * Identifier. The resource name of the Job. job_id is unique within the
-     * project, that is either set by the customer or defined by the service.
-     * Format: projects/{project}/locations/global/jobs/{job_id} . For example:
-     * "projects/123456/locations/global/jobs/job01".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Updates object metadata. Allows updating fixed-key and custom metadata and
-     * fixed-key metadata i.e. Cache-Control, Content-Disposition, Content-
-     * Encoding, Content-Language, Content-Type, Custom-Time.
-     *
-     * @param PutMetadata $putMetadata
-     */
-    public function setPutMetadata(PutMetadata $putMetadata)
-    {
-    }
-    /**
-     * @return PutMetadata
-     */
-    public function getPutMetadata()
-    {
-    }
-    /**
-     * Changes object hold status.
-     *
-     * @param PutObjectHold $putObjectHold
-     */
-    public function setPutObjectHold(PutObjectHold $putObjectHold)
-    {
-    }
-    /**
-     * @return PutObjectHold
-     */
-    public function getPutObjectHold()
-    {
-    }
-    /**
-     * Rewrite the object and updates metadata like KMS key.
-     *
-     * @param RewriteObject $rewriteObject
-     */
-    public function setRewriteObject(RewriteObject $rewriteObject)
-    {
-    }
-    /**
-     * @return RewriteObject
-     */
-    public function getRewriteObject()
-    {
-    }
-    /**
-     * Output only. The time that the job was scheduled.
-     *
-     * @param string $scheduleTime
-     */
-    public function setScheduleTime($scheduleTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduleTime()
-    {
-    }
-    /**
-     * Output only. State of the job.
-     *
-     * Accepted values: STATE_UNSPECIFIED, RUNNING, SUCCEEDED, CANCELED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_StorageBatchOperations_Job extends \Google\Service\StorageBatchOperations\Job
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class ListPhotosResponse extends \Google\Collection
-{
-    protected $collection_key = 'photos';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $photosType = Photo::class;
-    protected $photosDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\StreetViewPublish {
+    class ListPhotosResponse extends \Google\Collection
     {
+        protected $collection_key = 'photos';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $photosType = Photo::class;
+        protected $photosDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of photos. The pageSize field in the request determines the number of
+         * items returned.
+         *
+         * @param Photo[] $photos
+         */
+        public function setPhotos($photos)
+        {
+        }
+        /**
+         * @return Photo[]
+         */
+        public function getPhotos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\ListPhotosResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of photos. The pageSize field in the request determines the number of
-     * items returned.
-     *
-     * @param Photo[] $photos
-     */
-    public function setPhotos($photos)
-    {
-    }
-    /**
-     * @return Photo[]
-     */
-    public function getPhotos()
+    class Google_Service_StreetViewPublish_ListPhotosResponse extends \Google\Service\StreetViewPublish\ListPhotosResponse
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class DnsResourceRecord extends \Google\Model
-{
-    /**
-     * Output only. Data of the DNS Resource Record.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Output only. Fully qualified name of the DNS Resource Record. e.g. `_acme-
-     * challenge.example.com`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Type of the DNS Resource Record. Currently always set to
-     * "CNAME".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Data of the DNS Resource Record.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\CertificateManager {
+    class DnsResourceRecord extends \Google\Model
     {
+        /**
+         * Output only. Data of the DNS Resource Record.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Output only. Fully qualified name of the DNS Resource Record. e.g. `_acme-
+         * challenge.example.com`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Type of the DNS Resource Record. Currently always set to
+         * "CNAME".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Data of the DNS Resource Record.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Output only. Fully qualified name of the DNS Resource Record. e.g. `_acme-
+         * challenge.example.com`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Type of the DNS Resource Record. Currently always set to
+         * "CNAME".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\DnsResourceRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Output only. Fully qualified name of the DNS Resource Record. e.g. `_acme-
-     * challenge.example.com`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Type of the DNS Resource Record. Currently always set to
-     * "CNAME".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CertificateManager_DnsResourceRecord extends \Google\Service\CertificateManager\DnsResourceRecord
     {
     }
 }

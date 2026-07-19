@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ConditionContext extends \Google\Model
-{
-    /**
-     * The hypothetical access timestamp to evaluate IAM conditions. Note that
-     * this value must not be earlier than the current time; otherwise, an
-     * INVALID_ARGUMENT error will be returned.
-     *
-     * @var string
-     */
-    public $accessTime;
-    /**
-     * The hypothetical access timestamp to evaluate IAM conditions. Note that
-     * this value must not be earlier than the current time; otherwise, an
-     * INVALID_ARGUMENT error will be returned.
-     *
-     * @param string $accessTime
-     */
-    public function setAccessTime($accessTime)
+namespace Google\Service\CloudAsset {
+    class ConditionContext extends \Google\Model
     {
+        /**
+         * The hypothetical access timestamp to evaluate IAM conditions. Note that
+         * this value must not be earlier than the current time; otherwise, an
+         * INVALID_ARGUMENT error will be returned.
+         *
+         * @var string
+         */
+        public $accessTime;
+        /**
+         * The hypothetical access timestamp to evaluate IAM conditions. Note that
+         * this value must not be earlier than the current time; otherwise, an
+         * INVALID_ARGUMENT error will be returned.
+         *
+         * @param string $accessTime
+         */
+        public function setAccessTime($accessTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\ConditionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessTime()
+    class Google_Service_CloudAsset_ConditionContext extends \Google\Service\CloudAsset\ConditionContext
     {
     }
 }

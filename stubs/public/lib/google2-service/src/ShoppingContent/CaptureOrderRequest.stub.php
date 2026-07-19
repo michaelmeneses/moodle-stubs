@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CaptureOrderRequest extends \Google\Model
-{
+namespace Google\Service\ShoppingContent {
+    class CaptureOrderRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\CaptureOrderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_CaptureOrderRequest extends \Google\Service\ShoppingContent\CaptureOrderRequest
+    {
+    }
 }

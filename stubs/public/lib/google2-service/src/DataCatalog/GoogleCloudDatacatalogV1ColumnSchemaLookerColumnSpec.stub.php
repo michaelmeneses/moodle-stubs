@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const TYPE_LOOKER_COLUMN_TYPE_UNSPECIFIED = 'LOOKER_COLUMN_TYPE_UNSPECIFIED';
-    /**
-     * Dimension.
-     */
-    public const TYPE_DIMENSION = 'DIMENSION';
-    /**
-     * Dimension group - parent for Dimension.
-     */
-    public const TYPE_DIMENSION_GROUP = 'DIMENSION_GROUP';
-    /**
-     * Filter.
-     */
-    public const TYPE_FILTER = 'FILTER';
-    /**
-     * Measure.
-     */
-    public const TYPE_MEASURE = 'MEASURE';
-    /**
-     * Parameter.
-     */
-    public const TYPE_PARAMETER = 'PARAMETER';
-    /**
-     * Looker specific column type of this column.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Looker specific column type of this column.
-     *
-     * Accepted values: LOOKER_COLUMN_TYPE_UNSPECIFIED, DIMENSION,
-     * DIMENSION_GROUP, FILTER, MEASURE, PARAMETER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const TYPE_LOOKER_COLUMN_TYPE_UNSPECIFIED = 'LOOKER_COLUMN_TYPE_UNSPECIFIED';
+        /**
+         * Dimension.
+         */
+        public const TYPE_DIMENSION = 'DIMENSION';
+        /**
+         * Dimension group - parent for Dimension.
+         */
+        public const TYPE_DIMENSION_GROUP = 'DIMENSION_GROUP';
+        /**
+         * Filter.
+         */
+        public const TYPE_FILTER = 'FILTER';
+        /**
+         * Measure.
+         */
+        public const TYPE_MEASURE = 'MEASURE';
+        /**
+         * Parameter.
+         */
+        public const TYPE_PARAMETER = 'PARAMETER';
+        /**
+         * Looker specific column type of this column.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Looker specific column type of this column.
+         *
+         * Accepted values: LOOKER_COLUMN_TYPE_UNSPECIFIED, DIMENSION,
+         * DIMENSION_GROUP, FILTER, MEASURE, PARAMETER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec
     {
     }
 }

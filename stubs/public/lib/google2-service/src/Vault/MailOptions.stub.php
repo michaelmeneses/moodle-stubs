@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class MailOptions extends \Google\Model
-{
-    /**
-     * Encryption status unspecified. Results include both client-side encrypted
-     * and non-encrypted content.
-     */
-    public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_UNSPECIFIED = 'CLIENT_SIDE_ENCRYPTED_OPTION_UNSPECIFIED';
-    /**
-     * Include both client-side encrypted and unencrypted content in results.
-     */
-    public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_ANY = 'CLIENT_SIDE_ENCRYPTED_OPTION_ANY';
-    /**
-     * Include client-side encrypted content only.
-     */
-    public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_ENCRYPTED = 'CLIENT_SIDE_ENCRYPTED_OPTION_ENCRYPTED';
-    /**
-     * Include unencrypted content only.
-     */
-    public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_UNENCRYPTED = 'CLIENT_SIDE_ENCRYPTED_OPTION_UNENCRYPTED';
-    /**
-     * Specifies whether the results should include encrypted content, unencrypted
-     * content, or both. Defaults to including both.
-     *
-     * @var string
-     */
-    public $clientSideEncryptedOption;
-    /**
-     * Set to **true** to exclude drafts.
-     *
-     * @var bool
-     */
-    public $excludeDrafts;
-    /**
-     * Specifies whether the results should include encrypted content, unencrypted
-     * content, or both. Defaults to including both.
-     *
-     * Accepted values: CLIENT_SIDE_ENCRYPTED_OPTION_UNSPECIFIED,
-     * CLIENT_SIDE_ENCRYPTED_OPTION_ANY, CLIENT_SIDE_ENCRYPTED_OPTION_ENCRYPTED,
-     * CLIENT_SIDE_ENCRYPTED_OPTION_UNENCRYPTED
-     *
-     * @param self::CLIENT_SIDE_ENCRYPTED_OPTION_* $clientSideEncryptedOption
-     */
-    public function setClientSideEncryptedOption($clientSideEncryptedOption)
+namespace Google\Service\Vault {
+    class MailOptions extends \Google\Model
     {
+        /**
+         * Encryption status unspecified. Results include both client-side encrypted
+         * and non-encrypted content.
+         */
+        public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_UNSPECIFIED = 'CLIENT_SIDE_ENCRYPTED_OPTION_UNSPECIFIED';
+        /**
+         * Include both client-side encrypted and unencrypted content in results.
+         */
+        public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_ANY = 'CLIENT_SIDE_ENCRYPTED_OPTION_ANY';
+        /**
+         * Include client-side encrypted content only.
+         */
+        public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_ENCRYPTED = 'CLIENT_SIDE_ENCRYPTED_OPTION_ENCRYPTED';
+        /**
+         * Include unencrypted content only.
+         */
+        public const CLIENT_SIDE_ENCRYPTED_OPTION_CLIENT_SIDE_ENCRYPTED_OPTION_UNENCRYPTED = 'CLIENT_SIDE_ENCRYPTED_OPTION_UNENCRYPTED';
+        /**
+         * Specifies whether the results should include encrypted content, unencrypted
+         * content, or both. Defaults to including both.
+         *
+         * @var string
+         */
+        public $clientSideEncryptedOption;
+        /**
+         * Set to **true** to exclude drafts.
+         *
+         * @var bool
+         */
+        public $excludeDrafts;
+        /**
+         * Specifies whether the results should include encrypted content, unencrypted
+         * content, or both. Defaults to including both.
+         *
+         * Accepted values: CLIENT_SIDE_ENCRYPTED_OPTION_UNSPECIFIED,
+         * CLIENT_SIDE_ENCRYPTED_OPTION_ANY, CLIENT_SIDE_ENCRYPTED_OPTION_ENCRYPTED,
+         * CLIENT_SIDE_ENCRYPTED_OPTION_UNENCRYPTED
+         *
+         * @param self::CLIENT_SIDE_ENCRYPTED_OPTION_* $clientSideEncryptedOption
+         */
+        public function setClientSideEncryptedOption($clientSideEncryptedOption)
+        {
+        }
+        /**
+         * @return self::CLIENT_SIDE_ENCRYPTED_OPTION_*
+         */
+        public function getClientSideEncryptedOption()
+        {
+        }
+        /**
+         * Set to **true** to exclude drafts.
+         *
+         * @param bool $excludeDrafts
+         */
+        public function setExcludeDrafts($excludeDrafts)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExcludeDrafts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLIENT_SIDE_ENCRYPTED_OPTION_*
+     * Runtime class alias of \Google\Service\Vault\MailOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientSideEncryptedOption()
-    {
-    }
-    /**
-     * Set to **true** to exclude drafts.
-     *
-     * @param bool $excludeDrafts
-     */
-    public function setExcludeDrafts($excludeDrafts)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExcludeDrafts()
+    class Google_Service_Vault_MailOptions extends \Google\Service\Vault\MailOptions
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BooleanPropertyOptions extends \Google\Model
-{
-    protected $operatorOptionsType = BooleanOperatorOptions::class;
-    protected $operatorOptionsDataType = '';
-    /**
-     * If set, describes how the boolean should be used as a search operator.
-     *
-     * @param BooleanOperatorOptions $operatorOptions
-     */
-    public function setOperatorOptions(BooleanOperatorOptions $operatorOptions)
+namespace Google\Service\CloudSearch {
+    class BooleanPropertyOptions extends \Google\Model
     {
+        protected $operatorOptionsType = BooleanOperatorOptions::class;
+        protected $operatorOptionsDataType = '';
+        /**
+         * If set, describes how the boolean should be used as a search operator.
+         *
+         * @param BooleanOperatorOptions $operatorOptions
+         */
+        public function setOperatorOptions(BooleanOperatorOptions $operatorOptions)
+        {
+        }
+        /**
+         * @return BooleanOperatorOptions
+         */
+        public function getOperatorOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanOperatorOptions
+     * Runtime class alias of \Google\Service\CloudSearch\BooleanPropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorOptions()
+    class Google_Service_CloudSearch_BooleanPropertyOptions extends \Google\Service\CloudSearch\BooleanPropertyOptions
     {
     }
 }

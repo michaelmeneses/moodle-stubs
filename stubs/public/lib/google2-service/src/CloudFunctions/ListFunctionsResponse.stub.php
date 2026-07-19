@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class ListFunctionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $functionsType = CloudfunctionsFunction::class;
-    protected $functionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached. The response does not include any
-     * functions from these locations.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The functions that match the request.
-     *
-     * @param CloudfunctionsFunction[] $functions
-     */
-    public function setFunctions($functions)
+namespace Google\Service\CloudFunctions {
+    class ListFunctionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $functionsType = CloudfunctionsFunction::class;
+        protected $functionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached. The response does not include any
+         * functions from these locations.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The functions that match the request.
+         *
+         * @param CloudfunctionsFunction[] $functions
+         */
+        public function setFunctions($functions)
+        {
+        }
+        /**
+         * @return CloudfunctionsFunction[]
+         */
+        public function getFunctions()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached. The response does not include any
+         * functions from these locations.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudfunctionsFunction[]
+     * Runtime class alias of \Google\Service\CloudFunctions\ListFunctionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctions()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached. The response does not include any
-     * functions from these locations.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudFunctions_ListFunctionsResponse extends \Google\Service\CloudFunctions\ListFunctionsResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class RemarketingConfig extends \Google\Model
-{
-    /**
-     * Output only. The ID of the advertiser.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * Output only. Whether the Floodlight activity remarketing user list is
-     * available to the identified advertiser.
-     *
-     * @var bool
-     */
-    public $remarketingEnabled;
-    /**
-     * Output only. The ID of the advertiser.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class RemarketingConfig extends \Google\Model
     {
+        /**
+         * Output only. The ID of the advertiser.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * Output only. Whether the Floodlight activity remarketing user list is
+         * available to the identified advertiser.
+         *
+         * @var bool
+         */
+        public $remarketingEnabled;
+        /**
+         * Output only. The ID of the advertiser.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Output only. Whether the Floodlight activity remarketing user list is
+         * available to the identified advertiser.
+         *
+         * @param bool $remarketingEnabled
+         */
+        public function setRemarketingEnabled($remarketingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRemarketingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\RemarketingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Output only. Whether the Floodlight activity remarketing user list is
-     * available to the identified advertiser.
-     *
-     * @param bool $remarketingEnabled
-     */
-    public function setRemarketingEnabled($remarketingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRemarketingEnabled()
+    class Google_Service_DisplayVideo_RemarketingConfig extends \Google\Service\DisplayVideo\RemarketingConfig
     {
     }
 }

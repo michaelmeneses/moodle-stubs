@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonKeyword extends \Google\Model
-{
-    /**
-     * The AdGroupCriterion resource name.
-     *
-     * @var string
-     */
-    public $adGroupCriterion;
-    protected $infoType = GoogleAdsSearchads360V0CommonKeywordInfo::class;
-    protected $infoDataType = '';
-    /**
-     * The AdGroupCriterion resource name.
-     *
-     * @param string $adGroupCriterion
-     */
-    public function setAdGroupCriterion($adGroupCriterion)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonKeyword extends \Google\Model
     {
+        /**
+         * The AdGroupCriterion resource name.
+         *
+         * @var string
+         */
+        public $adGroupCriterion;
+        protected $infoType = GoogleAdsSearchads360V0CommonKeywordInfo::class;
+        protected $infoDataType = '';
+        /**
+         * The AdGroupCriterion resource name.
+         *
+         * @param string $adGroupCriterion
+         */
+        public function setAdGroupCriterion($adGroupCriterion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupCriterion()
+        {
+        }
+        /**
+         * Keyword info.
+         *
+         * @param GoogleAdsSearchads360V0CommonKeywordInfo $info
+         */
+        public function setInfo(GoogleAdsSearchads360V0CommonKeywordInfo $info)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonKeywordInfo
+         */
+        public function getInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonKeyword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupCriterion()
-    {
-    }
-    /**
-     * Keyword info.
-     *
-     * @param GoogleAdsSearchads360V0CommonKeywordInfo $info
-     */
-    public function setInfo(GoogleAdsSearchads360V0CommonKeywordInfo $info)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0CommonKeywordInfo
-     */
-    public function getInfo()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonKeyword extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonKeyword
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class PrivateResourceMetadata extends \Google\Model
-{
-    /**
-     * Output only. If true, this resource is user-scoped, meaning it is either a
-     * workspace or sourced from a workspace.
-     *
-     * @var bool
-     */
-    public $userScoped;
-    /**
-     * Output only. If true, this resource is user-scoped, meaning it is either a
-     * workspace or sourced from a workspace.
-     *
-     * @param bool $userScoped
-     */
-    public function setUserScoped($userScoped)
+namespace Google\Service\Dataform {
+    class PrivateResourceMetadata extends \Google\Model
     {
+        /**
+         * Output only. If true, this resource is user-scoped, meaning it is either a
+         * workspace or sourced from a workspace.
+         *
+         * @var bool
+         */
+        public $userScoped;
+        /**
+         * Output only. If true, this resource is user-scoped, meaning it is either a
+         * workspace or sourced from a workspace.
+         *
+         * @param bool $userScoped
+         */
+        public function setUserScoped($userScoped)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUserScoped()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataform\PrivateResourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserScoped()
+    class Google_Service_Dataform_PrivateResourceMetadata extends \Google\Service\Dataform\PrivateResourceMetadata
     {
     }
 }

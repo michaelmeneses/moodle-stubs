@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class Contact extends \Google\Model
-{
-    /**
-     * The display_name of the contact.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Email address for the contact.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The display_name of the contact.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class Contact extends \Google\Model
     {
+        /**
+         * The display_name of the contact.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Email address for the contact.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The display_name of the contact.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Email address for the contact.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\Contact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Email address for the contact.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_AuthorizedBuyersMarketplace_Contact extends \Google\Service\AuthorizedBuyersMarketplace\Contact
     {
     }
 }

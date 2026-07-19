@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertTextRequest extends \Google\Model
-{
-    protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
-    protected $endOfSegmentLocationDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * The text to be inserted. Inserting a newline character will implicitly
-     * create a new Paragraph at that index. The paragraph style of the new
-     * paragraph will be copied from the paragraph at the current insertion index,
-     * including lists and bullets. Text styles for inserted text will be
-     * determined automatically, generally preserving the styling of neighboring
-     * text. In most cases, the text style for the inserted text will match the
-     * text immediately before the insertion index. Some control characters
-     * (U+0000-U+0008, U+000C-U+001F) and characters from the Unicode Basic
-     * Multilingual Plane Private Use Area (U+E000-U+F8FF) will be stripped out of
-     * the inserted text.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Inserts the text at the end of a header, footer, footnote or the document
-     * body.
-     *
-     * @param EndOfSegmentLocation $endOfSegmentLocation
-     */
-    public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+namespace Google\Service\Docs {
+    class InsertTextRequest extends \Google\Model
     {
+        protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
+        protected $endOfSegmentLocationDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * The text to be inserted. Inserting a newline character will implicitly
+         * create a new Paragraph at that index. The paragraph style of the new
+         * paragraph will be copied from the paragraph at the current insertion index,
+         * including lists and bullets. Text styles for inserted text will be
+         * determined automatically, generally preserving the styling of neighboring
+         * text. In most cases, the text style for the inserted text will match the
+         * text immediately before the insertion index. Some control characters
+         * (U+0000-U+0008, U+000C-U+001F) and characters from the Unicode Basic
+         * Multilingual Plane Private Use Area (U+E000-U+F8FF) will be stripped out of
+         * the inserted text.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Inserts the text at the end of a header, footer, footnote or the document
+         * body.
+         *
+         * @param EndOfSegmentLocation $endOfSegmentLocation
+         */
+        public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+        {
+        }
+        /**
+         * @return EndOfSegmentLocation
+         */
+        public function getEndOfSegmentLocation()
+        {
+        }
+        /**
+         * Inserts the text at a specific index in the document. Text must be inserted
+         * inside the bounds of an existing Paragraph. For instance, text cannot be
+         * inserted at a table's start index (i.e. between the table and its preceding
+         * paragraph). The text must be inserted in the preceding paragraph.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The text to be inserted. Inserting a newline character will implicitly
+         * create a new Paragraph at that index. The paragraph style of the new
+         * paragraph will be copied from the paragraph at the current insertion index,
+         * including lists and bullets. Text styles for inserted text will be
+         * determined automatically, generally preserving the styling of neighboring
+         * text. In most cases, the text style for the inserted text will match the
+         * text immediately before the insertion index. Some control characters
+         * (U+0000-U+0008, U+000C-U+001F) and characters from the Unicode Basic
+         * Multilingual Plane Private Use Area (U+E000-U+F8FF) will be stripped out of
+         * the inserted text.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EndOfSegmentLocation
+     * Runtime class alias of \Google\Service\Docs\InsertTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOfSegmentLocation()
-    {
-    }
-    /**
-     * Inserts the text at a specific index in the document. Text must be inserted
-     * inside the bounds of an existing Paragraph. For instance, text cannot be
-     * inserted at a table's start index (i.e. between the table and its preceding
-     * paragraph). The text must be inserted in the preceding paragraph.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The text to be inserted. Inserting a newline character will implicitly
-     * create a new Paragraph at that index. The paragraph style of the new
-     * paragraph will be copied from the paragraph at the current insertion index,
-     * including lists and bullets. Text styles for inserted text will be
-     * determined automatically, generally preserving the styling of neighboring
-     * text. In most cases, the text style for the inserted text will match the
-     * text immediately before the insertion index. Some control characters
-     * (U+0000-U+0008, U+000C-U+001F) and characters from the Unicode Basic
-     * Multilingual Plane Private Use Area (U+E000-U+F8FF) will be stripped out of
-     * the inserted text.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Docs_InsertTextRequest extends \Google\Service\Docs\InsertTextRequest
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AppIcons extends \Google\Model
-{
-    /**
-     * Category of the icon. Allowed values are: * `application` - The icon for
-     * the application. * `document` - The icon for a file associated with the
-     * app. * `documentShared` - The icon for a shared file associated with the
-     * app.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * URL for the icon.
-     *
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * Size of the icon. Represented as the maximum of the width and height.
-     *
-     * @var int
-     */
-    public $size;
-    /**
-     * Category of the icon. Allowed values are: * `application` - The icon for
-     * the application. * `document` - The icon for a file associated with the
-     * app. * `documentShared` - The icon for a shared file associated with the
-     * app.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\Drive {
+    class AppIcons extends \Google\Model
     {
+        /**
+         * Category of the icon. Allowed values are: * `application` - The icon for
+         * the application. * `document` - The icon for a file associated with the
+         * app. * `documentShared` - The icon for a shared file associated with the
+         * app.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * URL for the icon.
+         *
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * Size of the icon. Represented as the maximum of the width and height.
+         *
+         * @var int
+         */
+        public $size;
+        /**
+         * Category of the icon. Allowed values are: * `application` - The icon for
+         * the application. * `document` - The icon for a file associated with the
+         * app. * `documentShared` - The icon for a shared file associated with the
+         * app.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * URL for the icon.
+         *
+         * @param string $iconUrl
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * Size of the icon. Represented as the maximum of the width and height.
+         *
+         * @param int $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\AppIcons registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * URL for the icon.
-     *
-     * @param string $iconUrl
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * Size of the icon. Represented as the maximum of the width and height.
-     *
-     * @param int $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSize()
+    class Google_Service_Drive_AppIcons extends \Google\Service\Drive\AppIcons
     {
     }
 }

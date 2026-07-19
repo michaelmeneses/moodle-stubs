@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class ErrorLogEntry extends \Google\Collection
-{
-    protected $collection_key = 'errorDetails';
-    /**
-     * Optional. Output only. At most 5 error log entries are recorded for a given
-     * error code for a job.
-     *
-     * @var string[]
-     */
-    public $errorDetails;
-    /**
-     * Required. Output only. Object URL. e.g. gs://my_bucket/object.txt
-     *
-     * @var string
-     */
-    public $objectUri;
-    /**
-     * Optional. Output only. At most 5 error log entries are recorded for a given
-     * error code for a job.
-     *
-     * @param string[] $errorDetails
-     */
-    public function setErrorDetails($errorDetails)
+namespace Google\Service\StorageBatchOperations {
+    class ErrorLogEntry extends \Google\Collection
     {
+        protected $collection_key = 'errorDetails';
+        /**
+         * Optional. Output only. At most 5 error log entries are recorded for a given
+         * error code for a job.
+         *
+         * @var string[]
+         */
+        public $errorDetails;
+        /**
+         * Required. Output only. Object URL. e.g. gs://my_bucket/object.txt
+         *
+         * @var string
+         */
+        public $objectUri;
+        /**
+         * Optional. Output only. At most 5 error log entries are recorded for a given
+         * error code for a job.
+         *
+         * @param string[] $errorDetails
+         */
+        public function setErrorDetails($errorDetails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrorDetails()
+        {
+        }
+        /**
+         * Required. Output only. Object URL. e.g. gs://my_bucket/object.txt
+         *
+         * @param string $objectUri
+         */
+        public function setObjectUri($objectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\StorageBatchOperations\ErrorLogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorDetails()
-    {
-    }
-    /**
-     * Required. Output only. Object URL. e.g. gs://my_bucket/object.txt
-     *
-     * @param string $objectUri
-     */
-    public function setObjectUri($objectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectUri()
+    class Google_Service_StorageBatchOperations_ErrorLogEntry extends \Google\Service\StorageBatchOperations\ErrorLogEntry
     {
     }
 }

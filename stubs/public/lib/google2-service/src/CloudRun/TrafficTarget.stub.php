@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class TrafficTarget extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $configurationName;
-    /**
-     * @var bool
-     */
-    public $latestRevision;
-    /**
-     * @var int
-     */
-    public $percent;
-    /**
-     * @var string
-     */
-    public $revisionName;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setConfigurationName($configurationName)
+namespace Google\Service\CloudRun {
+    class TrafficTarget extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $configurationName;
+        /**
+         * @var bool
+         */
+        public $latestRevision;
+        /**
+         * @var int
+         */
+        public $percent;
+        /**
+         * @var string
+         */
+        public $revisionName;
+        /**
+         * @var string
+         */
+        public $tag;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setConfigurationName($configurationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigurationName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setLatestRevision($latestRevision)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLatestRevision()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPercent($percent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionName($revisionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\TrafficTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurationName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setLatestRevision($latestRevision)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLatestRevision()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPercent($percent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionName($revisionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudRun_TrafficTarget extends \Google\Service\CloudRun\TrafficTarget
     {
     }
 }

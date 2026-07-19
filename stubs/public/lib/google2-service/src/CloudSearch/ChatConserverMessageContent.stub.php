@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ChatConserverMessageContent extends \Google\Collection
-{
-    protected $collection_key = 'segment';
-    protected $attachmentType = SocialCommonAttachmentAttachment::class;
-    protected $attachmentDataType = 'array';
-    protected $segmentType = Segment::class;
-    protected $segmentDataType = 'array';
-    /**
-     * @param SocialCommonAttachmentAttachment[]
-     */
-    public function setAttachment($attachment)
+namespace Google\Service\CloudSearch {
+    class ChatConserverMessageContent extends \Google\Collection
     {
+        protected $collection_key = 'segment';
+        protected $attachmentType = SocialCommonAttachmentAttachment::class;
+        protected $attachmentDataType = 'array';
+        protected $segmentType = Segment::class;
+        protected $segmentDataType = 'array';
+        /**
+         * @param SocialCommonAttachmentAttachment[]
+         */
+        public function setAttachment($attachment)
+        {
+        }
+        /**
+         * @return SocialCommonAttachmentAttachment[]
+         */
+        public function getAttachment()
+        {
+        }
+        /**
+         * @param Segment[]
+         */
+        public function setSegment($segment)
+        {
+        }
+        /**
+         * @return Segment[]
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SocialCommonAttachmentAttachment[]
+     * Runtime class alias of \Google\Service\CloudSearch\ChatConserverMessageContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachment()
-    {
-    }
-    /**
-     * @param Segment[]
-     */
-    public function setSegment($segment)
-    {
-    }
-    /**
-     * @return Segment[]
-     */
-    public function getSegment()
+    class Google_Service_CloudSearch_ChatConserverMessageContent extends \Google\Service\CloudSearch\ChatConserverMessageContent
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class VerifyKmsConfigResponse extends \Google\Model
-{
-    /**
-     * Output only. Error message if config is not healthy.
-     *
-     * @var string
-     */
-    public $healthError;
-    /**
-     * Output only. If the customer key configured correctly to the encrypt
-     * volume.
-     *
-     * @var bool
-     */
-    public $healthy;
-    /**
-     * Output only. Instructions for the customers to provide the access to the
-     * encryption key.
-     *
-     * @var string
-     */
-    public $instructions;
-    /**
-     * Output only. Error message if config is not healthy.
-     *
-     * @param string $healthError
-     */
-    public function setHealthError($healthError)
+namespace Google\Service\NetAppFiles {
+    class VerifyKmsConfigResponse extends \Google\Model
     {
+        /**
+         * Output only. Error message if config is not healthy.
+         *
+         * @var string
+         */
+        public $healthError;
+        /**
+         * Output only. If the customer key configured correctly to the encrypt
+         * volume.
+         *
+         * @var bool
+         */
+        public $healthy;
+        /**
+         * Output only. Instructions for the customers to provide the access to the
+         * encryption key.
+         *
+         * @var string
+         */
+        public $instructions;
+        /**
+         * Output only. Error message if config is not healthy.
+         *
+         * @param string $healthError
+         */
+        public function setHealthError($healthError)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthError()
+        {
+        }
+        /**
+         * Output only. If the customer key configured correctly to the encrypt
+         * volume.
+         *
+         * @param bool $healthy
+         */
+        public function setHealthy($healthy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHealthy()
+        {
+        }
+        /**
+         * Output only. Instructions for the customers to provide the access to the
+         * encryption key.
+         *
+         * @param string $instructions
+         */
+        public function setInstructions($instructions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstructions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\VerifyKmsConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthError()
-    {
-    }
-    /**
-     * Output only. If the customer key configured correctly to the encrypt
-     * volume.
-     *
-     * @param bool $healthy
-     */
-    public function setHealthy($healthy)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHealthy()
-    {
-    }
-    /**
-     * Output only. Instructions for the customers to provide the access to the
-     * encryption key.
-     *
-     * @param string $instructions
-     */
-    public function setInstructions($instructions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstructions()
+    class Google_Service_NetAppFiles_VerifyKmsConfigResponse extends \Google\Service\NetAppFiles\VerifyKmsConfigResponse
     {
     }
 }

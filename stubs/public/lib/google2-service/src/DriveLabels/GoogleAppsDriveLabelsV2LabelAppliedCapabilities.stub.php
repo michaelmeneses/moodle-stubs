@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelAppliedCapabilities extends \Google\Model
-{
-    /**
-     * Whether the user can apply this label to items.
-     *
-     * @var bool
-     */
-    public $canApply;
-    /**
-     * Whether the user can read applied metadata related to this label.
-     *
-     * @var bool
-     */
-    public $canRead;
-    /**
-     * Whether the user can remove this label from items.
-     *
-     * @var bool
-     */
-    public $canRemove;
-    /**
-     * Whether the user can apply this label to items.
-     *
-     * @param bool $canApply
-     */
-    public function setCanApply($canApply)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelAppliedCapabilities extends \Google\Model
     {
+        /**
+         * Whether the user can apply this label to items.
+         *
+         * @var bool
+         */
+        public $canApply;
+        /**
+         * Whether the user can read applied metadata related to this label.
+         *
+         * @var bool
+         */
+        public $canRead;
+        /**
+         * Whether the user can remove this label from items.
+         *
+         * @var bool
+         */
+        public $canRemove;
+        /**
+         * Whether the user can apply this label to items.
+         *
+         * @param bool $canApply
+         */
+        public function setCanApply($canApply)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanApply()
+        {
+        }
+        /**
+         * Whether the user can read applied metadata related to this label.
+         *
+         * @param bool $canRead
+         */
+        public function setCanRead($canRead)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRead()
+        {
+        }
+        /**
+         * Whether the user can remove this label from items.
+         *
+         * @param bool $canRemove
+         */
+        public function setCanRemove($canRemove)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRemove()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelAppliedCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanApply()
-    {
-    }
-    /**
-     * Whether the user can read applied metadata related to this label.
-     *
-     * @param bool $canRead
-     */
-    public function setCanRead($canRead)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRead()
-    {
-    }
-    /**
-     * Whether the user can remove this label from items.
-     *
-     * @param bool $canRemove
-     */
-    public function setCanRemove($canRemove)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRemove()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelAppliedCapabilities extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelAppliedCapabilities
     {
     }
 }

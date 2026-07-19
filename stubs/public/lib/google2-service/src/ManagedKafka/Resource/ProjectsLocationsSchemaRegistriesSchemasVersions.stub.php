@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $versions = $managedkafkaService->projects_locations_schemaRegistries_schemas_versions;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesSchemasVersions extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\HttpBody;
     /**
-     * List the schema versions for the given schema id. The response will be an
-     * array of subject-version pairs as: [{"subject":"subject1", "version":1},
-     * {"subject":"subject2", "version":2}].
-     * (versions.listProjectsLocationsSchemaRegistriesSchemasVersions)
-     *
-     * @param string $parent Required. The schema whose schema versions are to be
-     * listed. Structured like: `projects/{project}/locations/{location}/schemaRegis
-     * tries/{schema_registry}/schemas/ids/{schema}` or `projects/{project}/location
-     * s/{location}/schemaRegistries/{schema_registry}/contexts/{context}/schemas/id
-     * s/{schema}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleted Optional. If true, the response will include soft-
-     * deleted versions of the schema, even if the subject is soft-deleted. The
-     * default is false.
-     * @opt_param string subject Optional. The subject to filter the subjects by.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $versions = $managedkafkaService->projects_locations_schemaRegistries_schemas_versions;
+     *  </code>
      */
-    public function listProjectsLocationsSchemaRegistriesSchemasVersions($parent, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesSchemasVersions extends \Google\Service\Resource
+    {
+        /**
+         * List the schema versions for the given schema id. The response will be an
+         * array of subject-version pairs as: [{"subject":"subject1", "version":1},
+         * {"subject":"subject2", "version":2}].
+         * (versions.listProjectsLocationsSchemaRegistriesSchemasVersions)
+         *
+         * @param string $parent Required. The schema whose schema versions are to be
+         * listed. Structured like: `projects/{project}/locations/{location}/schemaRegis
+         * tries/{schema_registry}/schemas/ids/{schema}` or `projects/{project}/location
+         * s/{location}/schemaRegistries/{schema_registry}/contexts/{context}/schemas/id
+         * s/{schema}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleted Optional. If true, the response will include soft-
+         * deleted versions of the schema, even if the subject is soft-deleted. The
+         * default is false.
+         * @opt_param string subject Optional. The subject to filter the subjects by.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesSchemasVersions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSchemasVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesSchemasVersions extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSchemasVersions
     {
     }
 }

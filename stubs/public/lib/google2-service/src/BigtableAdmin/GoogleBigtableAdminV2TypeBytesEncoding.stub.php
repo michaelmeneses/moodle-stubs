@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeBytesEncoding extends \Google\Model
-{
-    protected $rawType = GoogleBigtableAdminV2TypeBytesEncodingRaw::class;
-    protected $rawDataType = '';
-    /**
-     * Use `Raw` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeBytesEncodingRaw $raw
-     */
-    public function setRaw(GoogleBigtableAdminV2TypeBytesEncodingRaw $raw)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeBytesEncoding extends \Google\Model
     {
+        protected $rawType = GoogleBigtableAdminV2TypeBytesEncodingRaw::class;
+        protected $rawDataType = '';
+        /**
+         * Use `Raw` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeBytesEncodingRaw $raw
+         */
+        public function setRaw(GoogleBigtableAdminV2TypeBytesEncodingRaw $raw)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeBytesEncodingRaw
+         */
+        public function getRaw()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeBytesEncodingRaw
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeBytesEncoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRaw()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeBytesEncoding extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeBytesEncoding
     {
     }
 }

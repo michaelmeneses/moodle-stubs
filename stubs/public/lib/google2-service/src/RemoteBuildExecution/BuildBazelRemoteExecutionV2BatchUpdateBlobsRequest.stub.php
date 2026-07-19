@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsRequest
     {
     }
 }

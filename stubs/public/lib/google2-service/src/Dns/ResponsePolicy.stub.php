@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ResponsePolicy extends \Google\Collection
-{
-    protected $collection_key = 'networks';
-    /**
-     * User-provided description for this Response Policy.
-     *
-     * @var string
-     */
-    public $description;
-    protected $gkeClustersType = ResponsePolicyGKECluster::class;
-    protected $gkeClustersDataType = 'array';
-    /**
-     * Unique identifier for the resource; defined by the server (output only).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * User labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $networksType = ResponsePolicyNetwork::class;
-    protected $networksDataType = 'array';
-    /**
-     * User assigned name for this Response Policy.
-     *
-     * @var string
-     */
-    public $responsePolicyName;
-    /**
-     * User-provided description for this Response Policy.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dns {
+    class ResponsePolicy extends \Google\Collection
     {
+        protected $collection_key = 'networks';
+        /**
+         * User-provided description for this Response Policy.
+         *
+         * @var string
+         */
+        public $description;
+        protected $gkeClustersType = ResponsePolicyGKECluster::class;
+        protected $gkeClustersDataType = 'array';
+        /**
+         * Unique identifier for the resource; defined by the server (output only).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * User labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $networksType = ResponsePolicyNetwork::class;
+        protected $networksDataType = 'array';
+        /**
+         * User assigned name for this Response Policy.
+         *
+         * @var string
+         */
+        public $responsePolicyName;
+        /**
+         * User-provided description for this Response Policy.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The list of Google Kubernetes Engine clusters to which this response policy
+         * is applied.
+         *
+         * @param ResponsePolicyGKECluster[] $gkeClusters
+         */
+        public function setGkeClusters($gkeClusters)
+        {
+        }
+        /**
+         * @return ResponsePolicyGKECluster[]
+         */
+        public function getGkeClusters()
+        {
+        }
+        /**
+         * Unique identifier for the resource; defined by the server (output only).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * User labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * List of network names specifying networks to which this policy is applied.
+         *
+         * @param ResponsePolicyNetwork[] $networks
+         */
+        public function setNetworks($networks)
+        {
+        }
+        /**
+         * @return ResponsePolicyNetwork[]
+         */
+        public function getNetworks()
+        {
+        }
+        /**
+         * User assigned name for this Response Policy.
+         *
+         * @param string $responsePolicyName
+         */
+        public function setResponsePolicyName($responsePolicyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponsePolicyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ResponsePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The list of Google Kubernetes Engine clusters to which this response policy
-     * is applied.
-     *
-     * @param ResponsePolicyGKECluster[] $gkeClusters
-     */
-    public function setGkeClusters($gkeClusters)
-    {
-    }
-    /**
-     * @return ResponsePolicyGKECluster[]
-     */
-    public function getGkeClusters()
-    {
-    }
-    /**
-     * Unique identifier for the resource; defined by the server (output only).
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * User labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * List of network names specifying networks to which this policy is applied.
-     *
-     * @param ResponsePolicyNetwork[] $networks
-     */
-    public function setNetworks($networks)
-    {
-    }
-    /**
-     * @return ResponsePolicyNetwork[]
-     */
-    public function getNetworks()
-    {
-    }
-    /**
-     * User assigned name for this Response Policy.
-     *
-     * @param string $responsePolicyName
-     */
-    public function setResponsePolicyName($responsePolicyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponsePolicyName()
+    class Google_Service_Dns_ResponsePolicy extends \Google\Service\Dns\ResponsePolicy
     {
     }
 }

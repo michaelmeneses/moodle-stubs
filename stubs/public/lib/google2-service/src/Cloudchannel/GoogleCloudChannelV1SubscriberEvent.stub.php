@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1SubscriberEvent extends \Google\Model
-{
-    protected $customerEventType = GoogleCloudChannelV1CustomerEvent::class;
-    protected $customerEventDataType = '';
-    protected $entitlementEventType = GoogleCloudChannelV1EntitlementEvent::class;
-    protected $entitlementEventDataType = '';
-    /**
-     * Customer event sent as part of Pub/Sub event to partners.
-     *
-     * @param GoogleCloudChannelV1CustomerEvent $customerEvent
-     */
-    public function setCustomerEvent(GoogleCloudChannelV1CustomerEvent $customerEvent)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1SubscriberEvent extends \Google\Model
     {
+        protected $customerEventType = GoogleCloudChannelV1CustomerEvent::class;
+        protected $customerEventDataType = '';
+        protected $entitlementEventType = GoogleCloudChannelV1EntitlementEvent::class;
+        protected $entitlementEventDataType = '';
+        /**
+         * Customer event sent as part of Pub/Sub event to partners.
+         *
+         * @param GoogleCloudChannelV1CustomerEvent $customerEvent
+         */
+        public function setCustomerEvent(GoogleCloudChannelV1CustomerEvent $customerEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1CustomerEvent
+         */
+        public function getCustomerEvent()
+        {
+        }
+        /**
+         * Entitlement event sent as part of Pub/Sub event to partners.
+         *
+         * @param GoogleCloudChannelV1EntitlementEvent $entitlementEvent
+         */
+        public function setEntitlementEvent(GoogleCloudChannelV1EntitlementEvent $entitlementEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1EntitlementEvent
+         */
+        public function getEntitlementEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1CustomerEvent
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1SubscriberEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerEvent()
-    {
-    }
-    /**
-     * Entitlement event sent as part of Pub/Sub event to partners.
-     *
-     * @param GoogleCloudChannelV1EntitlementEvent $entitlementEvent
-     */
-    public function setEntitlementEvent(GoogleCloudChannelV1EntitlementEvent $entitlementEvent)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1EntitlementEvent
-     */
-    public function getEntitlementEvent()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1SubscriberEvent extends \Google\Service\Cloudchannel\GoogleCloudChannelV1SubscriberEvent
     {
     }
 }

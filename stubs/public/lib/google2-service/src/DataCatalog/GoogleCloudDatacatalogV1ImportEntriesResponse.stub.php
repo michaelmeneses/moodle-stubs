@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ImportEntriesResponse extends \Google\Model
-{
-    /**
-     * Number of entries deleted as a result of import operation.
-     *
-     * @var string
-     */
-    public $deletedEntriesCount;
-    /**
-     * Cumulative number of entries created and entries updated as a result of
-     * import operation.
-     *
-     * @var string
-     */
-    public $upsertedEntriesCount;
-    /**
-     * Number of entries deleted as a result of import operation.
-     *
-     * @param string $deletedEntriesCount
-     */
-    public function setDeletedEntriesCount($deletedEntriesCount)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ImportEntriesResponse extends \Google\Model
     {
+        /**
+         * Number of entries deleted as a result of import operation.
+         *
+         * @var string
+         */
+        public $deletedEntriesCount;
+        /**
+         * Cumulative number of entries created and entries updated as a result of
+         * import operation.
+         *
+         * @var string
+         */
+        public $upsertedEntriesCount;
+        /**
+         * Number of entries deleted as a result of import operation.
+         *
+         * @param string $deletedEntriesCount
+         */
+        public function setDeletedEntriesCount($deletedEntriesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletedEntriesCount()
+        {
+        }
+        /**
+         * Cumulative number of entries created and entries updated as a result of
+         * import operation.
+         *
+         * @param string $upsertedEntriesCount
+         */
+        public function setUpsertedEntriesCount($upsertedEntriesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpsertedEntriesCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletedEntriesCount()
-    {
-    }
-    /**
-     * Cumulative number of entries created and entries updated as a result of
-     * import operation.
-     *
-     * @param string $upsertedEntriesCount
-     */
-    public function setUpsertedEntriesCount($upsertedEntriesCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpsertedEntriesCount()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ImportEntriesResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesResponse
     {
     }
 }

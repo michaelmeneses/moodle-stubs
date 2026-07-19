@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ApplicationVerifyResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["alternatePlayerId" => "alternate_player_id", "playerId" => "player_id"];
-    /**
-     * An alternate ID that was once used for the player that was issued the auth
-     * token used in this request. (This field is not normally populated.)
-     *
-     * @var string
-     */
-    public $alternatePlayerId;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#applicationVerifyResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the player that was issued the auth token used in this request.
-     *
-     * @var string
-     */
-    public $playerId;
-    /**
-     * An alternate ID that was once used for the player that was issued the auth
-     * token used in this request. (This field is not normally populated.)
-     *
-     * @param string $alternatePlayerId
-     */
-    public function setAlternatePlayerId($alternatePlayerId)
+namespace Google\Service\Games {
+    class ApplicationVerifyResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["alternatePlayerId" => "alternate_player_id", "playerId" => "player_id"];
+        /**
+         * An alternate ID that was once used for the player that was issued the auth
+         * token used in this request. (This field is not normally populated.)
+         *
+         * @var string
+         */
+        public $alternatePlayerId;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#applicationVerifyResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the player that was issued the auth token used in this request.
+         *
+         * @var string
+         */
+        public $playerId;
+        /**
+         * An alternate ID that was once used for the player that was issued the auth
+         * token used in this request. (This field is not normally populated.)
+         *
+         * @param string $alternatePlayerId
+         */
+        public function setAlternatePlayerId($alternatePlayerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlternatePlayerId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#applicationVerifyResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The ID of the player that was issued the auth token used in this request.
+         *
+         * @param string $playerId
+         */
+        public function setPlayerId($playerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlayerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\ApplicationVerifyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatePlayerId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#applicationVerifyResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The ID of the player that was issued the auth token used in this request.
-     *
-     * @param string $playerId
-     */
-    public function setPlayerId($playerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlayerId()
+    class Google_Service_Games_ApplicationVerifyResponse extends \Google\Service\Games\ApplicationVerifyResponse
     {
     }
 }

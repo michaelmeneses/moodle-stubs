@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class JobResult extends \Google\Model
-{
-    protected $jobType = Job::class;
-    protected $jobDataType = '';
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * Here Job only contains basic information including name, company,
-     * language_code and requisition_id, use getJob method to retrieve detailed
-     * information of the created/updated job.
-     *
-     * @param Job $job
-     */
-    public function setJob(Job $job)
+namespace Google\Service\CloudTalentSolution {
+    class JobResult extends \Google\Model
     {
+        protected $jobType = Job::class;
+        protected $jobDataType = '';
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * Here Job only contains basic information including name, company,
+         * language_code and requisition_id, use getJob method to retrieve detailed
+         * information of the created/updated job.
+         *
+         * @param Job $job
+         */
+        public function setJob(Job $job)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getJob()
+        {
+        }
+        /**
+         * The status of the job processed. This field is populated if the processing
+         * of the job fails.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job
+     * Runtime class alias of \Google\Service\CloudTalentSolution\JobResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
-    {
-    }
-    /**
-     * The status of the job processed. This field is populated if the processing
-     * of the job fails.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_CloudTalentSolution_JobResult extends \Google\Service\CloudTalentSolution\JobResult
     {
     }
 }

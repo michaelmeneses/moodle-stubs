@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1AnnotatedMessagePart extends \Google\Model
-{
-    /**
-     * Optional. The [Dialogflow system entity
-     * type](https://cloud.google.com/dialogflow/docs/reference/system-entities)
-     * of this message part. If this is empty, Dialogflow could not annotate the
-     * phrase part with a system entity.
-     *
-     * @var string
-     */
-    public $entityType;
-    /**
-     * Optional. The [Dialogflow system entity formatted value
-     * ](https://cloud.google.com/dialogflow/docs/reference/system-entities) of
-     * this message part. For example for a system entity of type `@sys.unit-
-     * currency`, this may contain: { "amount": 5, "currency": "USD" }
-     *
-     * @var array
-     */
-    public $formattedValue;
-    /**
-     * Required. A part of a message possibly annotated with an entity.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Optional. The [Dialogflow system entity
-     * type](https://cloud.google.com/dialogflow/docs/reference/system-entities)
-     * of this message part. If this is empty, Dialogflow could not annotate the
-     * phrase part with a system entity.
-     *
-     * @param string $entityType
-     */
-    public function setEntityType($entityType)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1AnnotatedMessagePart extends \Google\Model
     {
+        /**
+         * Optional. The [Dialogflow system entity
+         * type](https://cloud.google.com/dialogflow/docs/reference/system-entities)
+         * of this message part. If this is empty, Dialogflow could not annotate the
+         * phrase part with a system entity.
+         *
+         * @var string
+         */
+        public $entityType;
+        /**
+         * Optional. The [Dialogflow system entity formatted value
+         * ](https://cloud.google.com/dialogflow/docs/reference/system-entities) of
+         * this message part. For example for a system entity of type `@sys.unit-
+         * currency`, this may contain: { "amount": 5, "currency": "USD" }
+         *
+         * @var array
+         */
+        public $formattedValue;
+        /**
+         * Required. A part of a message possibly annotated with an entity.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Optional. The [Dialogflow system entity
+         * type](https://cloud.google.com/dialogflow/docs/reference/system-entities)
+         * of this message part. If this is empty, Dialogflow could not annotate the
+         * phrase part with a system entity.
+         *
+         * @param string $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityType()
+        {
+        }
+        /**
+         * Optional. The [Dialogflow system entity formatted value
+         * ](https://cloud.google.com/dialogflow/docs/reference/system-entities) of
+         * this message part. For example for a system entity of type `@sys.unit-
+         * currency`, this may contain: { "amount": 5, "currency": "USD" }
+         *
+         * @param array $formattedValue
+         */
+        public function setFormattedValue($formattedValue)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getFormattedValue()
+        {
+        }
+        /**
+         * Required. A part of a message possibly annotated with an entity.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AnnotatedMessagePart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityType()
-    {
-    }
-    /**
-     * Optional. The [Dialogflow system entity formatted value
-     * ](https://cloud.google.com/dialogflow/docs/reference/system-entities) of
-     * this message part. For example for a system entity of type `@sys.unit-
-     * currency`, this may contain: { "amount": 5, "currency": "USD" }
-     *
-     * @param array $formattedValue
-     */
-    public function setFormattedValue($formattedValue)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getFormattedValue()
-    {
-    }
-    /**
-     * Required. A part of a message possibly annotated with an entity.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1AnnotatedMessagePart extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AnnotatedMessagePart
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListGitLabConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'gitlabConfigs';
-    protected $gitlabConfigsType = GitLabConfig::class;
-    protected $gitlabConfigsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GitLabConfig[]
-     */
-    public function setGitlabConfigs($gitlabConfigs)
+namespace Google\Service\CloudBuild {
+    class ListGitLabConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'gitlabConfigs';
+        protected $gitlabConfigsType = GitLabConfig::class;
+        protected $gitlabConfigsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GitLabConfig[]
+         */
+        public function setGitlabConfigs($gitlabConfigs)
+        {
+        }
+        /**
+         * @return GitLabConfig[]
+         */
+        public function getGitlabConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabConfig[]
+     * Runtime class alias of \Google\Service\CloudBuild\ListGitLabConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitlabConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudBuild_ListGitLabConfigsResponse extends \Google\Service\CloudBuild\ListGitLabConfigsResponse
     {
     }
 }

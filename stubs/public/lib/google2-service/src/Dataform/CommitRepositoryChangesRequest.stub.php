@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CommitRepositoryChangesRequest extends \Google\Model
-{
-    protected $commitMetadataType = CommitMetadata::class;
-    protected $commitMetadataDataType = '';
-    protected $fileOperationsType = FileOperation::class;
-    protected $fileOperationsDataType = 'map';
-    /**
-     * Optional. The commit SHA which must be the repository's current HEAD before
-     * applying this commit; otherwise this request will fail. If unset, no
-     * validation on the current HEAD commit SHA is performed.
-     *
-     * @var string
-     */
-    public $requiredHeadCommitSha;
-    /**
-     * Required. The changes to commit to the repository.
-     *
-     * @param CommitMetadata $commitMetadata
-     */
-    public function setCommitMetadata(CommitMetadata $commitMetadata)
+namespace Google\Service\Dataform {
+    class CommitRepositoryChangesRequest extends \Google\Model
     {
+        protected $commitMetadataType = CommitMetadata::class;
+        protected $commitMetadataDataType = '';
+        protected $fileOperationsType = FileOperation::class;
+        protected $fileOperationsDataType = 'map';
+        /**
+         * Optional. The commit SHA which must be the repository's current HEAD before
+         * applying this commit; otherwise this request will fail. If unset, no
+         * validation on the current HEAD commit SHA is performed.
+         *
+         * @var string
+         */
+        public $requiredHeadCommitSha;
+        /**
+         * Required. The changes to commit to the repository.
+         *
+         * @param CommitMetadata $commitMetadata
+         */
+        public function setCommitMetadata(CommitMetadata $commitMetadata)
+        {
+        }
+        /**
+         * @return CommitMetadata
+         */
+        public function getCommitMetadata()
+        {
+        }
+        /**
+         * Optional. A map to the path of the file to the operation. The path is the
+         * full file path including filename, from repository root.
+         *
+         * @param FileOperation[] $fileOperations
+         */
+        public function setFileOperations($fileOperations)
+        {
+        }
+        /**
+         * @return FileOperation[]
+         */
+        public function getFileOperations()
+        {
+        }
+        /**
+         * Optional. The commit SHA which must be the repository's current HEAD before
+         * applying this commit; otherwise this request will fail. If unset, no
+         * validation on the current HEAD commit SHA is performed.
+         *
+         * @param string $requiredHeadCommitSha
+         */
+        public function setRequiredHeadCommitSha($requiredHeadCommitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredHeadCommitSha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitMetadata
+     * Runtime class alias of \Google\Service\Dataform\CommitRepositoryChangesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitMetadata()
-    {
-    }
-    /**
-     * Optional. A map to the path of the file to the operation. The path is the
-     * full file path including filename, from repository root.
-     *
-     * @param FileOperation[] $fileOperations
-     */
-    public function setFileOperations($fileOperations)
-    {
-    }
-    /**
-     * @return FileOperation[]
-     */
-    public function getFileOperations()
-    {
-    }
-    /**
-     * Optional. The commit SHA which must be the repository's current HEAD before
-     * applying this commit; otherwise this request will fail. If unset, no
-     * validation on the current HEAD commit SHA is performed.
-     *
-     * @param string $requiredHeadCommitSha
-     */
-    public function setRequiredHeadCommitSha($requiredHeadCommitSha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequiredHeadCommitSha()
+    class Google_Service_Dataform_CommitRepositoryChangesRequest extends \Google\Service\Dataform\CommitRepositoryChangesRequest
     {
     }
 }

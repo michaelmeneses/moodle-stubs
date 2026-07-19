@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1PurgeDocumentsRequest extends \Google\Model
-{
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1PurgeErrorConfig::class;
-    protected $errorConfigDataType = '';
-    /**
-     * Required. Filter matching documents to purge. Only currently supported
-     * value is `*` (all items).
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Actually performs the purge. If `force` is set to false, return the
-     * expected purge count without deleting any documents.
-     *
-     * @var bool
-     */
-    public $force;
-    protected $gcsSourceType = GoogleCloudDiscoveryengineV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * The desired location of errors incurred during the purge.
-     *
-     * @param GoogleCloudDiscoveryengineV1PurgeErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1PurgeErrorConfig $errorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1PurgeDocumentsRequest extends \Google\Model
     {
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1PurgeErrorConfig::class;
+        protected $errorConfigDataType = '';
+        /**
+         * Required. Filter matching documents to purge. Only currently supported
+         * value is `*` (all items).
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Actually performs the purge. If `force` is set to false, return the
+         * expected purge count without deleting any documents.
+         *
+         * @var bool
+         */
+        public $force;
+        protected $gcsSourceType = GoogleCloudDiscoveryengineV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * The desired location of errors incurred during the purge.
+         *
+         * @param GoogleCloudDiscoveryengineV1PurgeErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1PurgeErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1PurgeErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * Required. Filter matching documents to purge. Only currently supported
+         * value is `*` (all items).
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Actually performs the purge. If `force` is set to false, return the
+         * expected purge count without deleting any documents.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Cloud Storage location for the input content. Supported `data_schema`: *
+         * `document_id`: One valid Document.id per line.
+         *
+         * @param GoogleCloudDiscoveryengineV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudDiscoveryengineV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * Inline source for the input content for purge.
+         *
+         * @param GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1PurgeErrorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeDocumentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * Required. Filter matching documents to purge. Only currently supported
-     * value is `*` (all items).
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Actually performs the purge. If `force` is set to false, return the
-     * expected purge count without deleting any documents.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * Cloud Storage location for the input content. Supported `data_schema`: *
-     * `document_id`: One valid Document.id per line.
-     *
-     * @param GoogleCloudDiscoveryengineV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudDiscoveryengineV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * Inline source for the input content for purge.
-     *
-     * @param GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1PurgeDocumentsRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1PurgeDocumentsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeDocumentsRequest
     {
     }
 }

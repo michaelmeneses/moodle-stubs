@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentStyleFontSize extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $size;
-    /**
-     * @var string
-     */
-    public $unit;
-    /**
-     * @param float
-     */
-    public function setSize($size)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentStyleFontSize extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $size;
+        /**
+         * @var string
+         */
+        public $unit;
+        /**
+         * @param float
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentStyleFontSize registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentStyleFontSize extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentStyleFontSize
     {
     }
 }

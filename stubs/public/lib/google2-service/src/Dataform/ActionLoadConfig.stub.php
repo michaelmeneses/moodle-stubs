@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ActionLoadConfig extends \Google\Model
-{
-    protected $appendType = ActionSimpleLoadMode::class;
-    protected $appendDataType = '';
-    protected $maximumType = ActionIncrementalLoadMode::class;
-    protected $maximumDataType = '';
-    protected $replaceType = ActionSimpleLoadMode::class;
-    protected $replaceDataType = '';
-    protected $uniqueType = ActionIncrementalLoadMode::class;
-    protected $uniqueDataType = '';
-    /**
-     * Append into destination table
-     *
-     * @param ActionSimpleLoadMode $append
-     */
-    public function setAppend(ActionSimpleLoadMode $append)
+namespace Google\Service\Dataform {
+    class ActionLoadConfig extends \Google\Model
     {
+        protected $appendType = ActionSimpleLoadMode::class;
+        protected $appendDataType = '';
+        protected $maximumType = ActionIncrementalLoadMode::class;
+        protected $maximumDataType = '';
+        protected $replaceType = ActionSimpleLoadMode::class;
+        protected $replaceDataType = '';
+        protected $uniqueType = ActionIncrementalLoadMode::class;
+        protected $uniqueDataType = '';
+        /**
+         * Append into destination table
+         *
+         * @param ActionSimpleLoadMode $append
+         */
+        public function setAppend(ActionSimpleLoadMode $append)
+        {
+        }
+        /**
+         * @return ActionSimpleLoadMode
+         */
+        public function getAppend()
+        {
+        }
+        /**
+         * Insert records where the value exceeds the previous maximum value for a
+         * column in the destination table
+         *
+         * @param ActionIncrementalLoadMode $maximum
+         */
+        public function setMaximum(ActionIncrementalLoadMode $maximum)
+        {
+        }
+        /**
+         * @return ActionIncrementalLoadMode
+         */
+        public function getMaximum()
+        {
+        }
+        /**
+         * Replace destination table
+         *
+         * @param ActionSimpleLoadMode $replace
+         */
+        public function setReplace(ActionSimpleLoadMode $replace)
+        {
+        }
+        /**
+         * @return ActionSimpleLoadMode
+         */
+        public function getReplace()
+        {
+        }
+        /**
+         * Insert records where the value of a column is not already present in the
+         * destination table
+         *
+         * @param ActionIncrementalLoadMode $unique
+         */
+        public function setUnique(ActionIncrementalLoadMode $unique)
+        {
+        }
+        /**
+         * @return ActionIncrementalLoadMode
+         */
+        public function getUnique()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActionSimpleLoadMode
+     * Runtime class alias of \Google\Service\Dataform\ActionLoadConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppend()
-    {
-    }
-    /**
-     * Insert records where the value exceeds the previous maximum value for a
-     * column in the destination table
-     *
-     * @param ActionIncrementalLoadMode $maximum
-     */
-    public function setMaximum(ActionIncrementalLoadMode $maximum)
-    {
-    }
-    /**
-     * @return ActionIncrementalLoadMode
-     */
-    public function getMaximum()
-    {
-    }
-    /**
-     * Replace destination table
-     *
-     * @param ActionSimpleLoadMode $replace
-     */
-    public function setReplace(ActionSimpleLoadMode $replace)
-    {
-    }
-    /**
-     * @return ActionSimpleLoadMode
-     */
-    public function getReplace()
-    {
-    }
-    /**
-     * Insert records where the value of a column is not already present in the
-     * destination table
-     *
-     * @param ActionIncrementalLoadMode $unique
-     */
-    public function setUnique(ActionIncrementalLoadMode $unique)
-    {
-    }
-    /**
-     * @return ActionIncrementalLoadMode
-     */
-    public function getUnique()
+    class Google_Service_Dataform_ActionLoadConfig extends \Google\Service\Dataform\ActionLoadConfig
     {
     }
 }

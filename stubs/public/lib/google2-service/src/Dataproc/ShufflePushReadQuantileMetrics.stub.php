@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ShufflePushReadQuantileMetrics extends \Google\Model
-{
-    protected $corruptMergedBlockChunksType = Quantiles::class;
-    protected $corruptMergedBlockChunksDataType = '';
-    protected $localMergedBlocksFetchedType = Quantiles::class;
-    protected $localMergedBlocksFetchedDataType = '';
-    protected $localMergedBytesReadType = Quantiles::class;
-    protected $localMergedBytesReadDataType = '';
-    protected $localMergedChunksFetchedType = Quantiles::class;
-    protected $localMergedChunksFetchedDataType = '';
-    protected $mergedFetchFallbackCountType = Quantiles::class;
-    protected $mergedFetchFallbackCountDataType = '';
-    protected $remoteMergedBlocksFetchedType = Quantiles::class;
-    protected $remoteMergedBlocksFetchedDataType = '';
-    protected $remoteMergedBytesReadType = Quantiles::class;
-    protected $remoteMergedBytesReadDataType = '';
-    protected $remoteMergedChunksFetchedType = Quantiles::class;
-    protected $remoteMergedChunksFetchedDataType = '';
-    protected $remoteMergedReqsDurationType = Quantiles::class;
-    protected $remoteMergedReqsDurationDataType = '';
-    /**
-     * @param Quantiles $corruptMergedBlockChunks
-     */
-    public function setCorruptMergedBlockChunks(Quantiles $corruptMergedBlockChunks)
+namespace Google\Service\Dataproc {
+    class ShufflePushReadQuantileMetrics extends \Google\Model
     {
+        protected $corruptMergedBlockChunksType = Quantiles::class;
+        protected $corruptMergedBlockChunksDataType = '';
+        protected $localMergedBlocksFetchedType = Quantiles::class;
+        protected $localMergedBlocksFetchedDataType = '';
+        protected $localMergedBytesReadType = Quantiles::class;
+        protected $localMergedBytesReadDataType = '';
+        protected $localMergedChunksFetchedType = Quantiles::class;
+        protected $localMergedChunksFetchedDataType = '';
+        protected $mergedFetchFallbackCountType = Quantiles::class;
+        protected $mergedFetchFallbackCountDataType = '';
+        protected $remoteMergedBlocksFetchedType = Quantiles::class;
+        protected $remoteMergedBlocksFetchedDataType = '';
+        protected $remoteMergedBytesReadType = Quantiles::class;
+        protected $remoteMergedBytesReadDataType = '';
+        protected $remoteMergedChunksFetchedType = Quantiles::class;
+        protected $remoteMergedChunksFetchedDataType = '';
+        protected $remoteMergedReqsDurationType = Quantiles::class;
+        protected $remoteMergedReqsDurationDataType = '';
+        /**
+         * @param Quantiles $corruptMergedBlockChunks
+         */
+        public function setCorruptMergedBlockChunks(Quantiles $corruptMergedBlockChunks)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getCorruptMergedBlockChunks()
+        {
+        }
+        /**
+         * @param Quantiles $localMergedBlocksFetched
+         */
+        public function setLocalMergedBlocksFetched(Quantiles $localMergedBlocksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getLocalMergedBlocksFetched()
+        {
+        }
+        /**
+         * @param Quantiles $localMergedBytesRead
+         */
+        public function setLocalMergedBytesRead(Quantiles $localMergedBytesRead)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getLocalMergedBytesRead()
+        {
+        }
+        /**
+         * @param Quantiles $localMergedChunksFetched
+         */
+        public function setLocalMergedChunksFetched(Quantiles $localMergedChunksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getLocalMergedChunksFetched()
+        {
+        }
+        /**
+         * @param Quantiles $mergedFetchFallbackCount
+         */
+        public function setMergedFetchFallbackCount(Quantiles $mergedFetchFallbackCount)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getMergedFetchFallbackCount()
+        {
+        }
+        /**
+         * @param Quantiles $remoteMergedBlocksFetched
+         */
+        public function setRemoteMergedBlocksFetched(Quantiles $remoteMergedBlocksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteMergedBlocksFetched()
+        {
+        }
+        /**
+         * @param Quantiles $remoteMergedBytesRead
+         */
+        public function setRemoteMergedBytesRead(Quantiles $remoteMergedBytesRead)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteMergedBytesRead()
+        {
+        }
+        /**
+         * @param Quantiles $remoteMergedChunksFetched
+         */
+        public function setRemoteMergedChunksFetched(Quantiles $remoteMergedChunksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteMergedChunksFetched()
+        {
+        }
+        /**
+         * @param Quantiles $remoteMergedReqsDuration
+         */
+        public function setRemoteMergedReqsDuration(Quantiles $remoteMergedReqsDuration)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteMergedReqsDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Quantiles
+     * Runtime class alias of \Google\Service\Dataproc\ShufflePushReadQuantileMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorruptMergedBlockChunks()
-    {
-    }
-    /**
-     * @param Quantiles $localMergedBlocksFetched
-     */
-    public function setLocalMergedBlocksFetched(Quantiles $localMergedBlocksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getLocalMergedBlocksFetched()
-    {
-    }
-    /**
-     * @param Quantiles $localMergedBytesRead
-     */
-    public function setLocalMergedBytesRead(Quantiles $localMergedBytesRead)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getLocalMergedBytesRead()
-    {
-    }
-    /**
-     * @param Quantiles $localMergedChunksFetched
-     */
-    public function setLocalMergedChunksFetched(Quantiles $localMergedChunksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getLocalMergedChunksFetched()
-    {
-    }
-    /**
-     * @param Quantiles $mergedFetchFallbackCount
-     */
-    public function setMergedFetchFallbackCount(Quantiles $mergedFetchFallbackCount)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getMergedFetchFallbackCount()
-    {
-    }
-    /**
-     * @param Quantiles $remoteMergedBlocksFetched
-     */
-    public function setRemoteMergedBlocksFetched(Quantiles $remoteMergedBlocksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteMergedBlocksFetched()
-    {
-    }
-    /**
-     * @param Quantiles $remoteMergedBytesRead
-     */
-    public function setRemoteMergedBytesRead(Quantiles $remoteMergedBytesRead)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteMergedBytesRead()
-    {
-    }
-    /**
-     * @param Quantiles $remoteMergedChunksFetched
-     */
-    public function setRemoteMergedChunksFetched(Quantiles $remoteMergedChunksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteMergedChunksFetched()
-    {
-    }
-    /**
-     * @param Quantiles $remoteMergedReqsDuration
-     */
-    public function setRemoteMergedReqsDuration(Quantiles $remoteMergedReqsDuration)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteMergedReqsDuration()
+    class Google_Service_Dataproc_ShufflePushReadQuantileMetrics extends \Google\Service\Dataproc\ShufflePushReadQuantileMetrics
     {
     }
 }

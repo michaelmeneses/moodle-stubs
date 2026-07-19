@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse extends \Google\Model
-{
-    /**
-     * The results of executing the command.
-     *
-     * @var array[]
-     */
-    public $results;
-    /**
-     * The results of executing the command.
-     *
-     * @param array[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse extends \Google\Model
     {
+        /**
+         * The results of executing the command.
+         *
+         * @var array[]
+         */
+        public $results;
+        /**
+         * The results of executing the command.
+         *
+         * @param array[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse
     {
     }
 }

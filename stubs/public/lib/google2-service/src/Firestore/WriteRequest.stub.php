@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class WriteRequest extends \Google\Collection
-{
-    protected $collection_key = 'writes';
-    /**
-     * Labels associated with this write request.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The ID of the write stream to resume. This may only be set in the first
-     * message. When left empty, a new write stream will be created.
-     *
-     * @var string
-     */
-    public $streamId;
-    /**
-     * A stream token that was previously sent by the server. The client should
-     * set this field to the token from the most recent WriteResponse it has
-     * received. This acknowledges that the client has received responses up to
-     * this token. After sending this token, earlier tokens may not be used
-     * anymore. The server may close the stream if there are too many
-     * unacknowledged responses. Leave this field unset when creating a new
-     * stream. To resume a stream at a specific point, set this field and the
-     * `stream_id` field. Leave this field unset when creating a new stream.
-     *
-     * @var string
-     */
-    public $streamToken;
-    protected $writesType = Write::class;
-    protected $writesDataType = 'array';
-    /**
-     * Labels associated with this write request.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Firestore {
+    class WriteRequest extends \Google\Collection
     {
+        protected $collection_key = 'writes';
+        /**
+         * Labels associated with this write request.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The ID of the write stream to resume. This may only be set in the first
+         * message. When left empty, a new write stream will be created.
+         *
+         * @var string
+         */
+        public $streamId;
+        /**
+         * A stream token that was previously sent by the server. The client should
+         * set this field to the token from the most recent WriteResponse it has
+         * received. This acknowledges that the client has received responses up to
+         * this token. After sending this token, earlier tokens may not be used
+         * anymore. The server may close the stream if there are too many
+         * unacknowledged responses. Leave this field unset when creating a new
+         * stream. To resume a stream at a specific point, set this field and the
+         * `stream_id` field. Leave this field unset when creating a new stream.
+         *
+         * @var string
+         */
+        public $streamToken;
+        protected $writesType = Write::class;
+        protected $writesDataType = 'array';
+        /**
+         * Labels associated with this write request.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The ID of the write stream to resume. This may only be set in the first
+         * message. When left empty, a new write stream will be created.
+         *
+         * @param string $streamId
+         */
+        public function setStreamId($streamId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamId()
+        {
+        }
+        /**
+         * A stream token that was previously sent by the server. The client should
+         * set this field to the token from the most recent WriteResponse it has
+         * received. This acknowledges that the client has received responses up to
+         * this token. After sending this token, earlier tokens may not be used
+         * anymore. The server may close the stream if there are too many
+         * unacknowledged responses. Leave this field unset when creating a new
+         * stream. To resume a stream at a specific point, set this field and the
+         * `stream_id` field. Leave this field unset when creating a new stream.
+         *
+         * @param string $streamToken
+         */
+        public function setStreamToken($streamToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamToken()
+        {
+        }
+        /**
+         * The writes to apply. Always executed atomically and in order. This must be
+         * empty on the first request. This may be empty on the last request. This
+         * must not be empty on all other requests.
+         *
+         * @param Write[] $writes
+         */
+        public function setWrites($writes)
+        {
+        }
+        /**
+         * @return Write[]
+         */
+        public function getWrites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Firestore\WriteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The ID of the write stream to resume. This may only be set in the first
-     * message. When left empty, a new write stream will be created.
-     *
-     * @param string $streamId
-     */
-    public function setStreamId($streamId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamId()
-    {
-    }
-    /**
-     * A stream token that was previously sent by the server. The client should
-     * set this field to the token from the most recent WriteResponse it has
-     * received. This acknowledges that the client has received responses up to
-     * this token. After sending this token, earlier tokens may not be used
-     * anymore. The server may close the stream if there are too many
-     * unacknowledged responses. Leave this field unset when creating a new
-     * stream. To resume a stream at a specific point, set this field and the
-     * `stream_id` field. Leave this field unset when creating a new stream.
-     *
-     * @param string $streamToken
-     */
-    public function setStreamToken($streamToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamToken()
-    {
-    }
-    /**
-     * The writes to apply. Always executed atomically and in order. This must be
-     * empty on the first request. This may be empty on the last request. This
-     * must not be empty on all other requests.
-     *
-     * @param Write[] $writes
-     */
-    public function setWrites($writes)
-    {
-    }
-    /**
-     * @return Write[]
-     */
-    public function getWrites()
+    class Google_Service_Firestore_WriteRequest extends \Google\Service\Firestore\WriteRequest
     {
     }
 }

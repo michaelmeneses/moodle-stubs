@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ImageNote extends \Google\Model
-{
-    protected $fingerprintType = Fingerprint::class;
-    protected $fingerprintDataType = '';
-    /**
-     * Required. Immutable. The resource_url for the resource representing the
-     * basis of associated occurrence images.
-     *
-     * @var string
-     */
-    public $resourceUrl;
-    /**
-     * Required. Immutable. The fingerprint of the base image.
-     *
-     * @param Fingerprint $fingerprint
-     */
-    public function setFingerprint(Fingerprint $fingerprint)
+namespace Google\Service\ContainerAnalysis {
+    class ImageNote extends \Google\Model
     {
+        protected $fingerprintType = Fingerprint::class;
+        protected $fingerprintDataType = '';
+        /**
+         * Required. Immutable. The resource_url for the resource representing the
+         * basis of associated occurrence images.
+         *
+         * @var string
+         */
+        public $resourceUrl;
+        /**
+         * Required. Immutable. The fingerprint of the base image.
+         *
+         * @param Fingerprint $fingerprint
+         */
+        public function setFingerprint(Fingerprint $fingerprint)
+        {
+        }
+        /**
+         * @return Fingerprint
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Required. Immutable. The resource_url for the resource representing the
+         * basis of associated occurrence images.
+         *
+         * @param string $resourceUrl
+         */
+        public function setResourceUrl($resourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Fingerprint
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ImageNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Required. Immutable. The resource_url for the resource representing the
-     * basis of associated occurrence images.
-     *
-     * @param string $resourceUrl
-     */
-    public function setResourceUrl($resourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUrl()
+    class Google_Service_ContainerAnalysis_ImageNote extends \Google\Service\ContainerAnalysis\ImageNote
     {
     }
 }

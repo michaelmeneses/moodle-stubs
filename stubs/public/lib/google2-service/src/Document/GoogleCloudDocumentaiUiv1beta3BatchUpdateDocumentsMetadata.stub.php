@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'individualBatchUpdateStatuses';
-    protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    protected $individualBatchUpdateStatusesType = GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadataIndividualBatchUpdateStatus::class;
-    protected $individualBatchUpdateStatusesDataType = 'array';
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'individualBatchUpdateStatuses';
+        protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        protected $individualBatchUpdateStatusesType = GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadataIndividualBatchUpdateStatus::class;
+        protected $individualBatchUpdateStatusesDataType = 'array';
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
+        /**
+         * The list of response details of each document.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadataIndividualBatchUpdateStatus[] $individualBatchUpdateStatuses
+         */
+        public function setIndividualBatchUpdateStatuses($individualBatchUpdateStatuses)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadataIndividualBatchUpdateStatus[]
+         */
+        public function getIndividualBatchUpdateStatuses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
-    {
-    }
-    /**
-     * The list of response details of each document.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadataIndividualBatchUpdateStatus[] $individualBatchUpdateStatuses
-     */
-    public function setIndividualBatchUpdateStatuses($individualBatchUpdateStatuses)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadataIndividualBatchUpdateStatus[]
-     */
-    public function getIndividualBatchUpdateStatuses()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsMetadata
     {
     }
 }

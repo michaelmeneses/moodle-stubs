@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications;
-
-class GoogleCloudAdvisorynotificationsV1ListNotificationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'notifications';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $notificationsType = GoogleCloudAdvisorynotificationsV1Notification::class;
-    protected $notificationsDataType = 'array';
-    /**
-     * Estimation of a total number of notifications.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Advisorynotifications {
+    class GoogleCloudAdvisorynotificationsV1ListNotificationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'notifications';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $notificationsType = GoogleCloudAdvisorynotificationsV1Notification::class;
+        protected $notificationsDataType = 'array';
+        /**
+         * Estimation of a total number of notifications.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of notifications under a given parent.
+         *
+         * @param GoogleCloudAdvisorynotificationsV1Notification[] $notifications
+         */
+        public function setNotifications($notifications)
+        {
+        }
+        /**
+         * @return GoogleCloudAdvisorynotificationsV1Notification[]
+         */
+        public function getNotifications()
+        {
+        }
+        /**
+         * Estimation of a total number of notifications.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1ListNotificationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of notifications under a given parent.
-     *
-     * @param GoogleCloudAdvisorynotificationsV1Notification[] $notifications
-     */
-    public function setNotifications($notifications)
-    {
-    }
-    /**
-     * @return GoogleCloudAdvisorynotificationsV1Notification[]
-     */
-    public function getNotifications()
-    {
-    }
-    /**
-     * Estimation of a total number of notifications.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Advisorynotifications_GoogleCloudAdvisorynotificationsV1ListNotificationsResponse extends \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1ListNotificationsResponse
     {
     }
 }

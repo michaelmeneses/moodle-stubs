@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ExecuteResponse extends \Google\Model
-{
-    public $cachedResult;
-    public $message;
-    protected $resultType = BuildBazelRemoteExecutionV2ActionResult::class;
-    protected $resultDataType = '';
-    protected $serverLogsType = BuildBazelRemoteExecutionV2LogFile::class;
-    protected $serverLogsDataType = 'map';
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    public function setCachedResult($cachedResult)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ExecuteResponse extends \Google\Model
     {
+        public $cachedResult;
+        public $message;
+        protected $resultType = BuildBazelRemoteExecutionV2ActionResult::class;
+        protected $resultDataType = '';
+        protected $serverLogsType = BuildBazelRemoteExecutionV2LogFile::class;
+        protected $serverLogsDataType = 'map';
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        public function setCachedResult($cachedResult)
+        {
+        }
+        public function getCachedResult()
+        {
+        }
+        public function setMessage($message)
+        {
+        }
+        public function getMessage()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2ActionResult
+         */
+        public function setResult(BuildBazelRemoteExecutionV2ActionResult $result)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ActionResult
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2LogFile[]
+         */
+        public function setServerLogs($serverLogs)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2LogFile[]
+         */
+        public function getServerLogs()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
-    public function getCachedResult()
-    {
-    }
-    public function setMessage($message)
-    {
-    }
-    public function getMessage()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2ActionResult
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setResult(BuildBazelRemoteExecutionV2ActionResult $result)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ActionResult
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2LogFile[]
-     */
-    public function setServerLogs($serverLogs)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2LogFile[]
-     */
-    public function getServerLogs()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ExecuteResponse extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteResponse
     {
     }
 }

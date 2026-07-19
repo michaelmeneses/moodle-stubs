@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class OnDeployUpdatePolicy extends \Google\Model
-{
-    /**
-     * Output only. contains the runtime version which was used during latest
-     * function deployment.
-     *
-     * @var string
-     */
-    public $runtimeVersion;
-    /**
-     * Output only. contains the runtime version which was used during latest
-     * function deployment.
-     *
-     * @param string $runtimeVersion
-     */
-    public function setRuntimeVersion($runtimeVersion)
+namespace Google\Service\CloudFunctions {
+    class OnDeployUpdatePolicy extends \Google\Model
     {
+        /**
+         * Output only. contains the runtime version which was used during latest
+         * function deployment.
+         *
+         * @var string
+         */
+        public $runtimeVersion;
+        /**
+         * Output only. contains the runtime version which was used during latest
+         * function deployment.
+         *
+         * @param string $runtimeVersion
+         */
+        public function setRuntimeVersion($runtimeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\OnDeployUpdatePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRuntimeVersion()
+    class Google_Service_CloudFunctions_OnDeployUpdatePolicy extends \Google\Service\CloudFunctions\OnDeployUpdatePolicy
     {
     }
 }

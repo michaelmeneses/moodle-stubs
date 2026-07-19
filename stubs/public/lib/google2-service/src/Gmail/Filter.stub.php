@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class Filter extends \Google\Model
-{
-    protected $actionType = FilterAction::class;
-    protected $actionDataType = '';
-    protected $criteriaType = FilterCriteria::class;
-    protected $criteriaDataType = '';
-    /**
-     * The server assigned ID of the filter.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Action that the filter performs.
-     *
-     * @param FilterAction $action
-     */
-    public function setAction(FilterAction $action)
+namespace Google\Service\Gmail {
+    class Filter extends \Google\Model
     {
+        protected $actionType = FilterAction::class;
+        protected $actionDataType = '';
+        protected $criteriaType = FilterCriteria::class;
+        protected $criteriaDataType = '';
+        /**
+         * The server assigned ID of the filter.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Action that the filter performs.
+         *
+         * @param FilterAction $action
+         */
+        public function setAction(FilterAction $action)
+        {
+        }
+        /**
+         * @return FilterAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Matching criteria for the filter.
+         *
+         * @param FilterCriteria $criteria
+         */
+        public function setCriteria(FilterCriteria $criteria)
+        {
+        }
+        /**
+         * @return FilterCriteria
+         */
+        public function getCriteria()
+        {
+        }
+        /**
+         * The server assigned ID of the filter.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterAction
+     * Runtime class alias of \Google\Service\Gmail\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Matching criteria for the filter.
-     *
-     * @param FilterCriteria $criteria
-     */
-    public function setCriteria(FilterCriteria $criteria)
-    {
-    }
-    /**
-     * @return FilterCriteria
-     */
-    public function getCriteria()
-    {
-    }
-    /**
-     * The server assigned ID of the filter.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Gmail_Filter extends \Google\Service\Gmail\Filter
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class Redirect extends \Google\Model
-{
-    /**
-     * Optional. The status code to use in a redirect response. Must be a valid
-     * HTTP 3XX status code. Defaults to 302 if not present.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Required. The URI of the redirect's intended destination. This URI will be
-     * prepended to the original request path. URI without a scheme are assumed to
-     * be HTTPS.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional. The status code to use in a redirect response. Must be a valid
-     * HTTP 3XX status code. Defaults to 302 if not present.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
+namespace Google\Service\FirebaseAppHosting {
+    class Redirect extends \Google\Model
     {
+        /**
+         * Optional. The status code to use in a redirect response. Must be a valid
+         * HTTP 3XX status code. Defaults to 302 if not present.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Required. The URI of the redirect's intended destination. This URI will be
+         * prepended to the original request path. URI without a scheme are assumed to
+         * be HTTPS.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional. The status code to use in a redirect response. Must be a valid
+         * HTTP 3XX status code. Defaults to 302 if not present.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Required. The URI of the redirect's intended destination. This URI will be
+         * prepended to the original request path. URI without a scheme are assumed to
+         * be HTTPS.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\Redirect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * Required. The URI of the redirect's intended destination. This URI will be
-     * prepended to the original request path. URI without a scheme are assumed to
-     * be HTTPS.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_FirebaseAppHosting_Redirect extends \Google\Service\FirebaseAppHosting\Redirect
     {
     }
 }

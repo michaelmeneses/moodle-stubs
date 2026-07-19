@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadYumArtifactResponse extends \Google\Collection
-{
-    protected $collection_key = 'yumArtifacts';
-    protected $yumArtifactsType = YumArtifact::class;
-    protected $yumArtifactsDataType = 'array';
-    /**
-     * The Yum artifacts updated.
-     *
-     * @param YumArtifact[] $yumArtifacts
-     */
-    public function setYumArtifacts($yumArtifacts)
+namespace Google\Service\ArtifactRegistry {
+    class UploadYumArtifactResponse extends \Google\Collection
     {
+        protected $collection_key = 'yumArtifacts';
+        protected $yumArtifactsType = YumArtifact::class;
+        protected $yumArtifactsDataType = 'array';
+        /**
+         * The Yum artifacts updated.
+         *
+         * @param YumArtifact[] $yumArtifacts
+         */
+        public function setYumArtifacts($yumArtifacts)
+        {
+        }
+        /**
+         * @return YumArtifact[]
+         */
+        public function getYumArtifacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return YumArtifact[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadYumArtifactResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getYumArtifacts()
+    class Google_Service_ArtifactRegistry_UploadYumArtifactResponse extends \Google\Service\ArtifactRegistry\UploadYumArtifactResponse
     {
     }
 }

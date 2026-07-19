@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListMembershipsResponse extends \Google\Collection
-{
-    protected $collection_key = 'memberships';
-    protected $membershipsType = Membership::class;
-    protected $membershipsDataType = 'array';
-    /**
-     * A continuation token to retrieve the next page of results, or empty if
-     * there are no more results available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The `Membership`s under the specified `parent`.
-     *
-     * @param Membership[] $memberships
-     */
-    public function setMemberships($memberships)
+namespace Google\Service\CloudIdentity {
+    class ListMembershipsResponse extends \Google\Collection
     {
+        protected $collection_key = 'memberships';
+        protected $membershipsType = Membership::class;
+        protected $membershipsDataType = 'array';
+        /**
+         * A continuation token to retrieve the next page of results, or empty if
+         * there are no more results available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The `Membership`s under the specified `parent`.
+         *
+         * @param Membership[] $memberships
+         */
+        public function setMemberships($memberships)
+        {
+        }
+        /**
+         * @return Membership[]
+         */
+        public function getMemberships()
+        {
+        }
+        /**
+         * A continuation token to retrieve the next page of results, or empty if
+         * there are no more results available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Membership[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ListMembershipsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberships()
-    {
-    }
-    /**
-     * A continuation token to retrieve the next page of results, or empty if
-     * there are no more results available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_ListMembershipsResponse extends \Google\Service\CloudIdentity\ListMembershipsResponse
     {
     }
 }

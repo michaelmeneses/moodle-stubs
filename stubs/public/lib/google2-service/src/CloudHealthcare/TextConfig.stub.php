@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class TextConfig extends \Google\Collection
-{
-    protected $collection_key = 'transformations';
-    protected $additionalTransformationsType = InfoTypeTransformation::class;
-    protected $additionalTransformationsDataType = 'array';
-    /**
-     * Optional. InfoTypes to skip transforming, overriding
-     * `additional_transformations`.
-     *
-     * @var string[]
-     */
-    public $excludeInfoTypes;
-    protected $transformationsType = InfoTypeTransformation::class;
-    protected $transformationsDataType = 'array';
-    /**
-     * Optional. Transformations to apply to the detected data, overridden by
-     * `exclude_info_types`.
-     *
-     * @param InfoTypeTransformation[] $additionalTransformations
-     */
-    public function setAdditionalTransformations($additionalTransformations)
+namespace Google\Service\CloudHealthcare {
+    class TextConfig extends \Google\Collection
     {
+        protected $collection_key = 'transformations';
+        protected $additionalTransformationsType = InfoTypeTransformation::class;
+        protected $additionalTransformationsDataType = 'array';
+        /**
+         * Optional. InfoTypes to skip transforming, overriding
+         * `additional_transformations`.
+         *
+         * @var string[]
+         */
+        public $excludeInfoTypes;
+        protected $transformationsType = InfoTypeTransformation::class;
+        protected $transformationsDataType = 'array';
+        /**
+         * Optional. Transformations to apply to the detected data, overridden by
+         * `exclude_info_types`.
+         *
+         * @param InfoTypeTransformation[] $additionalTransformations
+         */
+        public function setAdditionalTransformations($additionalTransformations)
+        {
+        }
+        /**
+         * @return InfoTypeTransformation[]
+         */
+        public function getAdditionalTransformations()
+        {
+        }
+        /**
+         * Optional. InfoTypes to skip transforming, overriding
+         * `additional_transformations`.
+         *
+         * @param string[] $excludeInfoTypes
+         */
+        public function setExcludeInfoTypes($excludeInfoTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludeInfoTypes()
+        {
+        }
+        /**
+         * Optional. The transformations to apply to the detected data. Deprecated.
+         * Use `additional_transformations` instead.
+         *
+         * @param InfoTypeTransformation[] $transformations
+         */
+        public function setTransformations($transformations)
+        {
+        }
+        /**
+         * @return InfoTypeTransformation[]
+         */
+        public function getTransformations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InfoTypeTransformation[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\TextConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalTransformations()
-    {
-    }
-    /**
-     * Optional. InfoTypes to skip transforming, overriding
-     * `additional_transformations`.
-     *
-     * @param string[] $excludeInfoTypes
-     */
-    public function setExcludeInfoTypes($excludeInfoTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludeInfoTypes()
-    {
-    }
-    /**
-     * Optional. The transformations to apply to the detected data. Deprecated.
-     * Use `additional_transformations` instead.
-     *
-     * @param InfoTypeTransformation[] $transformations
-     */
-    public function setTransformations($transformations)
-    {
-    }
-    /**
-     * @return InfoTypeTransformation[]
-     */
-    public function getTransformations()
+    class Google_Service_CloudHealthcare_TextConfig extends \Google\Service\CloudHealthcare\TextConfig
     {
     }
 }

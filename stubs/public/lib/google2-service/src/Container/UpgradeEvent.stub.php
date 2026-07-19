@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class UpgradeEvent extends \Google\Model
-{
-    /**
-     * Default value. This shouldn't be used.
-     */
-    public const RESOURCE_TYPE_UPGRADE_RESOURCE_TYPE_UNSPECIFIED = 'UPGRADE_RESOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Master / control plane
-     */
-    public const RESOURCE_TYPE_MASTER = 'MASTER';
-    /**
-     * Node pool
-     */
-    public const RESOURCE_TYPE_NODE_POOL = 'NODE_POOL';
-    /**
-     * The current version before the upgrade.
-     *
-     * @var string
-     */
-    public $currentVersion;
-    /**
-     * The operation associated with this upgrade.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * The time when the operation was started.
-     *
-     * @var string
-     */
-    public $operationStartTime;
-    /**
-     * Optional relative path to the resource. For example in node pool upgrades,
-     * the relative path of the node pool.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The resource type that is upgrading.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * The target version for the upgrade.
-     *
-     * @var string
-     */
-    public $targetVersion;
-    /**
-     * The current version before the upgrade.
-     *
-     * @param string $currentVersion
-     */
-    public function setCurrentVersion($currentVersion)
+namespace Google\Service\Container {
+    class UpgradeEvent extends \Google\Model
     {
+        /**
+         * Default value. This shouldn't be used.
+         */
+        public const RESOURCE_TYPE_UPGRADE_RESOURCE_TYPE_UNSPECIFIED = 'UPGRADE_RESOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Master / control plane
+         */
+        public const RESOURCE_TYPE_MASTER = 'MASTER';
+        /**
+         * Node pool
+         */
+        public const RESOURCE_TYPE_NODE_POOL = 'NODE_POOL';
+        /**
+         * The current version before the upgrade.
+         *
+         * @var string
+         */
+        public $currentVersion;
+        /**
+         * The operation associated with this upgrade.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * The time when the operation was started.
+         *
+         * @var string
+         */
+        public $operationStartTime;
+        /**
+         * Optional relative path to the resource. For example in node pool upgrades,
+         * the relative path of the node pool.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The resource type that is upgrading.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * The target version for the upgrade.
+         *
+         * @var string
+         */
+        public $targetVersion;
+        /**
+         * The current version before the upgrade.
+         *
+         * @param string $currentVersion
+         */
+        public function setCurrentVersion($currentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentVersion()
+        {
+        }
+        /**
+         * The operation associated with this upgrade.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * The time when the operation was started.
+         *
+         * @param string $operationStartTime
+         */
+        public function setOperationStartTime($operationStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationStartTime()
+        {
+        }
+        /**
+         * Optional relative path to the resource. For example in node pool upgrades,
+         * the relative path of the node pool.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The resource type that is upgrading.
+         *
+         * Accepted values: UPGRADE_RESOURCE_TYPE_UNSPECIFIED, MASTER, NODE_POOL
+         *
+         * @param self::RESOURCE_TYPE_* $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return self::RESOURCE_TYPE_*
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * The target version for the upgrade.
+         *
+         * @param string $targetVersion
+         */
+        public function setTargetVersion($targetVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\UpgradeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentVersion()
-    {
-    }
-    /**
-     * The operation associated with this upgrade.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * The time when the operation was started.
-     *
-     * @param string $operationStartTime
-     */
-    public function setOperationStartTime($operationStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationStartTime()
-    {
-    }
-    /**
-     * Optional relative path to the resource. For example in node pool upgrades,
-     * the relative path of the node pool.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The resource type that is upgrading.
-     *
-     * Accepted values: UPGRADE_RESOURCE_TYPE_UNSPECIFIED, MASTER, NODE_POOL
-     *
-     * @param self::RESOURCE_TYPE_* $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return self::RESOURCE_TYPE_*
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * The target version for the upgrade.
-     *
-     * @param string $targetVersion
-     */
-    public function setTargetVersion($targetVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetVersion()
+    class Google_Service_Container_UpgradeEvent extends \Google\Service\Container\UpgradeEvent
     {
     }
 }

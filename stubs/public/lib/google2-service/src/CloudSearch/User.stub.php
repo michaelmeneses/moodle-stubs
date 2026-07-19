@@ -21,239 +21,248 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class User extends \Google\Collection
-{
-    protected $collection_key = 'phoneNumber';
-    /**
-     * @var string
-     */
-    public $avatarUrl;
-    protected $blockRelationshipType = AppsDynamiteSharedUserBlockRelationship::class;
-    protected $blockRelationshipDataType = '';
-    protected $botInfoType = BotInfo::class;
-    protected $botInfoDataType = '';
-    /**
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $firstName;
-    /**
-     * @var string
-     */
-    public $gender;
-    protected $idType = UserId::class;
-    protected $idDataType = '';
-    /**
-     * @var bool
-     */
-    public $isAnonymous;
-    /**
-     * @var string
-     */
-    public $lastName;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $organizationInfoType = AppsDynamiteSharedOrganizationInfo::class;
-    protected $organizationInfoDataType = '';
-    protected $phoneNumberType = AppsDynamiteSharedPhoneNumber::class;
-    protected $phoneNumberDataType = 'array';
-    /**
-     * @var string
-     */
-    public $userAccountState;
-    /**
-     * @var string
-     */
-    public $userProfileVisibility;
-    /**
-     * @param string
-     */
-    public function setAvatarUrl($avatarUrl)
+namespace Google\Service\CloudSearch {
+    class User extends \Google\Collection
     {
+        protected $collection_key = 'phoneNumber';
+        /**
+         * @var string
+         */
+        public $avatarUrl;
+        protected $blockRelationshipType = AppsDynamiteSharedUserBlockRelationship::class;
+        protected $blockRelationshipDataType = '';
+        protected $botInfoType = BotInfo::class;
+        protected $botInfoDataType = '';
+        /**
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * @var string
+         */
+        public $email;
+        /**
+         * @var string
+         */
+        public $firstName;
+        /**
+         * @var string
+         */
+        public $gender;
+        protected $idType = UserId::class;
+        protected $idDataType = '';
+        /**
+         * @var bool
+         */
+        public $isAnonymous;
+        /**
+         * @var string
+         */
+        public $lastName;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $organizationInfoType = AppsDynamiteSharedOrganizationInfo::class;
+        protected $organizationInfoDataType = '';
+        protected $phoneNumberType = AppsDynamiteSharedPhoneNumber::class;
+        protected $phoneNumberDataType = 'array';
+        /**
+         * @var string
+         */
+        public $userAccountState;
+        /**
+         * @var string
+         */
+        public $userProfileVisibility;
+        /**
+         * @param string
+         */
+        public function setAvatarUrl($avatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvatarUrl()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedUserBlockRelationship
+         */
+        public function setBlockRelationship(AppsDynamiteSharedUserBlockRelationship $blockRelationship)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedUserBlockRelationship
+         */
+        public function getBlockRelationship()
+        {
+        }
+        /**
+         * @param BotInfo
+         */
+        public function setBotInfo(BotInfo $botInfo)
+        {
+        }
+        /**
+         * @return BotInfo
+         */
+        public function getBotInfo()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFirstName($firstName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGender($gender)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGender()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setId(UserId $id)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsAnonymous($isAnonymous)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAnonymous()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastName($lastName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOrganizationInfo
+         */
+        public function setOrganizationInfo(AppsDynamiteSharedOrganizationInfo $organizationInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOrganizationInfo
+         */
+        public function getOrganizationInfo()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedPhoneNumber[]
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedPhoneNumber[]
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserAccountState($userAccountState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserAccountState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserProfileVisibility($userProfileVisibility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserProfileVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvatarUrl()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedUserBlockRelationship
-     */
-    public function setBlockRelationship(AppsDynamiteSharedUserBlockRelationship $blockRelationship)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedUserBlockRelationship
-     */
-    public function getBlockRelationship()
-    {
-    }
-    /**
-     * @param BotInfo
-     */
-    public function setBotInfo(BotInfo $botInfo)
-    {
-    }
-    /**
-     * @return BotInfo
-     */
-    public function getBotInfo()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFirstName($firstName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGender($gender)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGender()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setId(UserId $id)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsAnonymous($isAnonymous)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsAnonymous()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastName($lastName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOrganizationInfo
-     */
-    public function setOrganizationInfo(AppsDynamiteSharedOrganizationInfo $organizationInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOrganizationInfo
-     */
-    public function getOrganizationInfo()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedPhoneNumber[]
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedPhoneNumber[]
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserAccountState($userAccountState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserAccountState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserProfileVisibility($userProfileVisibility)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserProfileVisibility()
+    class Google_Service_CloudSearch_User extends \Google\Service\CloudSearch\User
     {
     }
 }

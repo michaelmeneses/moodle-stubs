@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AccountSummary extends \Google\Collection
-{
-    protected $collection_key = 'webProperties';
-    /**
-     * Account ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for Analytics AccountSummary.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Account name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Indicates whether this account is starred or not.
-     *
-     * @var bool
-     */
-    public $starred;
-    protected $webPropertiesType = WebPropertySummary::class;
-    protected $webPropertiesDataType = 'array';
-    /**
-     * Account ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Analytics {
+    class AccountSummary extends \Google\Collection
     {
+        protected $collection_key = 'webProperties';
+        /**
+         * Account ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for Analytics AccountSummary.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Account name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Indicates whether this account is starred or not.
+         *
+         * @var bool
+         */
+        public $starred;
+        protected $webPropertiesType = WebPropertySummary::class;
+        protected $webPropertiesDataType = 'array';
+        /**
+         * Account ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for Analytics AccountSummary.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Account name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Indicates whether this account is starred or not.
+         *
+         * @param bool $starred
+         */
+        public function setStarred($starred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStarred()
+        {
+        }
+        /**
+         * List of web properties under this account.
+         *
+         * @param WebPropertySummary[] $webProperties
+         */
+        public function setWebProperties($webProperties)
+        {
+        }
+        /**
+         * @return WebPropertySummary[]
+         */
+        public function getWebProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\AccountSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for Analytics AccountSummary.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Account name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Indicates whether this account is starred or not.
-     *
-     * @param bool $starred
-     */
-    public function setStarred($starred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStarred()
-    {
-    }
-    /**
-     * List of web properties under this account.
-     *
-     * @param WebPropertySummary[] $webProperties
-     */
-    public function setWebProperties($webProperties)
-    {
-    }
-    /**
-     * @return WebPropertySummary[]
-     */
-    public function getWebProperties()
+    class Google_Service_Analytics_AccountSummary extends \Google\Service\Analytics\AccountSummary
     {
     }
 }

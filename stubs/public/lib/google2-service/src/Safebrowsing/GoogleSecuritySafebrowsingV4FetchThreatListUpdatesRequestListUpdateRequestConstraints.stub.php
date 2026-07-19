@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints extends \Google\Collection
-{
-    protected $collection_key = 'supportedCompressions';
-    /**
-     * @var string
-     */
-    public $deviceLocation;
-    /**
-     * @var string
-     */
-    public $language;
-    /**
-     * @var int
-     */
-    public $maxDatabaseEntries;
-    /**
-     * @var int
-     */
-    public $maxUpdateEntries;
-    /**
-     * @var string
-     */
-    public $region;
-    /**
-     * @var string[]
-     */
-    public $supportedCompressions;
-    /**
-     * @param string
-     */
-    public function setDeviceLocation($deviceLocation)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints extends \Google\Collection
     {
+        protected $collection_key = 'supportedCompressions';
+        /**
+         * @var string
+         */
+        public $deviceLocation;
+        /**
+         * @var string
+         */
+        public $language;
+        /**
+         * @var int
+         */
+        public $maxDatabaseEntries;
+        /**
+         * @var int
+         */
+        public $maxUpdateEntries;
+        /**
+         * @var string
+         */
+        public $region;
+        /**
+         * @var string[]
+         */
+        public $supportedCompressions;
+        /**
+         * @param string
+         */
+        public function setDeviceLocation($deviceLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxDatabaseEntries($maxDatabaseEntries)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDatabaseEntries()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxUpdateEntries($maxUpdateEntries)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxUpdateEntries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSupportedCompressions($supportedCompressions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedCompressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxDatabaseEntries($maxDatabaseEntries)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDatabaseEntries()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxUpdateEntries($maxUpdateEntries)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxUpdateEntries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSupportedCompressions($supportedCompressions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedCompressions()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints
     {
     }
 }

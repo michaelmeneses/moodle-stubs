@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnAddress extends \Google\Model
-{
-    protected $addressType = ReturnAddressAddress::class;
-    protected $addressDataType = '';
-    /**
-     * @var string
-     */
-    public $country;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * @var string
-     */
-    public $returnAddressId;
-    /**
-     * @param ReturnAddressAddress
-     */
-    public function setAddress(ReturnAddressAddress $address)
+namespace Google\Service\ShoppingContent {
+    class ReturnAddress extends \Google\Model
     {
+        protected $addressType = ReturnAddressAddress::class;
+        protected $addressDataType = '';
+        /**
+         * @var string
+         */
+        public $country;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * @var string
+         */
+        public $returnAddressId;
+        /**
+         * @param ReturnAddressAddress
+         */
+        public function setAddress(ReturnAddressAddress $address)
+        {
+        }
+        /**
+         * @return ReturnAddressAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnAddressId($returnAddressId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnAddressId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReturnAddressAddress
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCountry($country)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnAddressId($returnAddressId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnAddressId()
+    class Google_Service_ShoppingContent_ReturnAddress extends \Google\Service\ShoppingContent\ReturnAddress
     {
     }
 }

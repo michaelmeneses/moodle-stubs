@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ObbFile extends \Google\Model
-{
-    protected $obbType = FileReference::class;
-    protected $obbDataType = '';
-    /**
-     * Required. OBB file name which must conform to the format as specified by
-     * Android e.g. [main|patch].0300110.com.example.android.obb which will be
-     * installed into \/Android/obb/\/ on the device.
-     *
-     * @var string
-     */
-    public $obbFileName;
-    /**
-     * Required. Opaque Binary Blob (OBB) file(s) to install on the device.
-     *
-     * @param FileReference $obb
-     */
-    public function setObb(FileReference $obb)
+namespace Google\Service\Testing {
+    class ObbFile extends \Google\Model
     {
+        protected $obbType = FileReference::class;
+        protected $obbDataType = '';
+        /**
+         * Required. OBB file name which must conform to the format as specified by
+         * Android e.g. [main|patch].0300110.com.example.android.obb which will be
+         * installed into \/Android/obb/\/ on the device.
+         *
+         * @var string
+         */
+        public $obbFileName;
+        /**
+         * Required. Opaque Binary Blob (OBB) file(s) to install on the device.
+         *
+         * @param FileReference $obb
+         */
+        public function setObb(FileReference $obb)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getObb()
+        {
+        }
+        /**
+         * Required. OBB file name which must conform to the format as specified by
+         * Android e.g. [main|patch].0300110.com.example.android.obb which will be
+         * installed into \/Android/obb/\/ on the device.
+         *
+         * @param string $obbFileName
+         */
+        public function setObbFileName($obbFileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObbFileName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference
+     * Runtime class alias of \Google\Service\Testing\ObbFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObb()
-    {
-    }
-    /**
-     * Required. OBB file name which must conform to the format as specified by
-     * Android e.g. [main|patch].0300110.com.example.android.obb which will be
-     * installed into \/Android/obb/\/ on the device.
-     *
-     * @param string $obbFileName
-     */
-    public function setObbFileName($obbFileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObbFileName()
+    class Google_Service_Testing_ObbFile extends \Google\Service\Testing\ObbFile
     {
     }
 }

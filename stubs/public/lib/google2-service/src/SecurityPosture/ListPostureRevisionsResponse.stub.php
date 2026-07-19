@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class ListPostureRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'revisions';
-    /**
-     * A pagination token. To retrieve the next page of results, call the method
-     * again with this token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $revisionsType = Posture::class;
-    protected $revisionsDataType = 'array';
-    /**
-     * A pagination token. To retrieve the next page of results, call the method
-     * again with this token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecurityPosture {
+    class ListPostureRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'revisions';
+        /**
+         * A pagination token. To retrieve the next page of results, call the method
+         * again with this token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $revisionsType = Posture::class;
+        protected $revisionsDataType = 'array';
+        /**
+         * A pagination token. To retrieve the next page of results, call the method
+         * again with this token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of revisions for the Posture.
+         *
+         * @param Posture[] $revisions
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return Posture[]
+         */
+        public function getRevisions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\ListPostureRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of revisions for the Posture.
-     *
-     * @param Posture[] $revisions
-     */
-    public function setRevisions($revisions)
-    {
-    }
-    /**
-     * @return Posture[]
-     */
-    public function getRevisions()
+    class Google_Service_SecurityPosture_ListPostureRevisionsResponse extends \Google\Service\SecurityPosture\ListPostureRevisionsResponse
     {
     }
 }

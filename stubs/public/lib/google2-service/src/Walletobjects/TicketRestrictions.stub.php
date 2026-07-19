@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class TicketRestrictions extends \Google\Model
-{
-    protected $otherRestrictionsType = LocalizedString::class;
-    protected $otherRestrictionsDataType = '';
-    protected $routeRestrictionsType = LocalizedString::class;
-    protected $routeRestrictionsDataType = '';
-    protected $routeRestrictionsDetailsType = LocalizedString::class;
-    protected $routeRestrictionsDetailsDataType = '';
-    protected $timeRestrictionsType = LocalizedString::class;
-    protected $timeRestrictionsDataType = '';
-    /**
-     * Extra restrictions that don't fall under the "route" or "time" categories.
-     *
-     * @param LocalizedString $otherRestrictions
-     */
-    public function setOtherRestrictions(LocalizedString $otherRestrictions)
+namespace Google\Service\Walletobjects {
+    class TicketRestrictions extends \Google\Model
     {
+        protected $otherRestrictionsType = LocalizedString::class;
+        protected $otherRestrictionsDataType = '';
+        protected $routeRestrictionsType = LocalizedString::class;
+        protected $routeRestrictionsDataType = '';
+        protected $routeRestrictionsDetailsType = LocalizedString::class;
+        protected $routeRestrictionsDetailsDataType = '';
+        protected $timeRestrictionsType = LocalizedString::class;
+        protected $timeRestrictionsDataType = '';
+        /**
+         * Extra restrictions that don't fall under the "route" or "time" categories.
+         *
+         * @param LocalizedString $otherRestrictions
+         */
+        public function setOtherRestrictions(LocalizedString $otherRestrictions)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getOtherRestrictions()
+        {
+        }
+        /**
+         * Restrictions about routes that may be taken. For example, this may be the
+         * string "Reserved CrossCountry trains only".
+         *
+         * @param LocalizedString $routeRestrictions
+         */
+        public function setRouteRestrictions(LocalizedString $routeRestrictions)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getRouteRestrictions()
+        {
+        }
+        /**
+         * More details about the above `routeRestrictions`.
+         *
+         * @param LocalizedString $routeRestrictionsDetails
+         */
+        public function setRouteRestrictionsDetails(LocalizedString $routeRestrictionsDetails)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getRouteRestrictionsDetails()
+        {
+        }
+        /**
+         * Restrictions about times this ticket may be used.
+         *
+         * @param LocalizedString $timeRestrictions
+         */
+        public function setTimeRestrictions(LocalizedString $timeRestrictions)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getTimeRestrictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\TicketRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOtherRestrictions()
-    {
-    }
-    /**
-     * Restrictions about routes that may be taken. For example, this may be the
-     * string "Reserved CrossCountry trains only".
-     *
-     * @param LocalizedString $routeRestrictions
-     */
-    public function setRouteRestrictions(LocalizedString $routeRestrictions)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getRouteRestrictions()
-    {
-    }
-    /**
-     * More details about the above `routeRestrictions`.
-     *
-     * @param LocalizedString $routeRestrictionsDetails
-     */
-    public function setRouteRestrictionsDetails(LocalizedString $routeRestrictionsDetails)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getRouteRestrictionsDetails()
-    {
-    }
-    /**
-     * Restrictions about times this ticket may be used.
-     *
-     * @param LocalizedString $timeRestrictions
-     */
-    public function setTimeRestrictions(LocalizedString $timeRestrictions)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getTimeRestrictions()
+    class Google_Service_Walletobjects_TicketRestrictions extends \Google\Service\Walletobjects\TicketRestrictions
     {
     }
 }

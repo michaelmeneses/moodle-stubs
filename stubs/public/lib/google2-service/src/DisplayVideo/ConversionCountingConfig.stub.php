@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ConversionCountingConfig extends \Google\Collection
-{
-    protected $collection_key = 'floodlightActivityConfigs';
-    protected $floodlightActivityConfigsType = TrackingFloodlightActivityConfig::class;
-    protected $floodlightActivityConfigsDataType = 'array';
-    /**
-     * The percentage of post-view conversions to count, in millis (1/1000 of a
-     * percent). Must be between 0 and 100000 inclusive. For example, to track 50%
-     * of the post-click conversions, set a value of 50000.
-     *
-     * @var string
-     */
-    public $postViewCountPercentageMillis;
-    /**
-     * The Floodlight activity configs used to track conversions. The number of
-     * conversions counted is the sum of all of the conversions counted by all of
-     * the Floodlight activity IDs specified in this field. This field can't be
-     * updated if a custom bidding algorithm is assigned to the line item. If you
-     * set this field and assign a custom bidding algorithm in the same request,
-     * the floodlight activities must match the ones used by the custom bidding
-     * algorithm.
-     *
-     * @param TrackingFloodlightActivityConfig[] $floodlightActivityConfigs
-     */
-    public function setFloodlightActivityConfigs($floodlightActivityConfigs)
+namespace Google\Service\DisplayVideo {
+    class ConversionCountingConfig extends \Google\Collection
     {
+        protected $collection_key = 'floodlightActivityConfigs';
+        protected $floodlightActivityConfigsType = TrackingFloodlightActivityConfig::class;
+        protected $floodlightActivityConfigsDataType = 'array';
+        /**
+         * The percentage of post-view conversions to count, in millis (1/1000 of a
+         * percent). Must be between 0 and 100000 inclusive. For example, to track 50%
+         * of the post-click conversions, set a value of 50000.
+         *
+         * @var string
+         */
+        public $postViewCountPercentageMillis;
+        /**
+         * The Floodlight activity configs used to track conversions. The number of
+         * conversions counted is the sum of all of the conversions counted by all of
+         * the Floodlight activity IDs specified in this field. This field can't be
+         * updated if a custom bidding algorithm is assigned to the line item. If you
+         * set this field and assign a custom bidding algorithm in the same request,
+         * the floodlight activities must match the ones used by the custom bidding
+         * algorithm.
+         *
+         * @param TrackingFloodlightActivityConfig[] $floodlightActivityConfigs
+         */
+        public function setFloodlightActivityConfigs($floodlightActivityConfigs)
+        {
+        }
+        /**
+         * @return TrackingFloodlightActivityConfig[]
+         */
+        public function getFloodlightActivityConfigs()
+        {
+        }
+        /**
+         * The percentage of post-view conversions to count, in millis (1/1000 of a
+         * percent). Must be between 0 and 100000 inclusive. For example, to track 50%
+         * of the post-click conversions, set a value of 50000.
+         *
+         * @param string $postViewCountPercentageMillis
+         */
+        public function setPostViewCountPercentageMillis($postViewCountPercentageMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostViewCountPercentageMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TrackingFloodlightActivityConfig[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ConversionCountingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightActivityConfigs()
-    {
-    }
-    /**
-     * The percentage of post-view conversions to count, in millis (1/1000 of a
-     * percent). Must be between 0 and 100000 inclusive. For example, to track 50%
-     * of the post-click conversions, set a value of 50000.
-     *
-     * @param string $postViewCountPercentageMillis
-     */
-    public function setPostViewCountPercentageMillis($postViewCountPercentageMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostViewCountPercentageMillis()
+    class Google_Service_DisplayVideo_ConversionCountingConfig extends \Google\Service\DisplayVideo\ConversionCountingConfig
     {
     }
 }

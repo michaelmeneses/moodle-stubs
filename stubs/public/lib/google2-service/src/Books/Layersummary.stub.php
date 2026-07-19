@@ -21,275 +21,284 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Layersummary extends \Google\Collection
-{
-    protected $collection_key = 'annotationTypes';
-    /**
-     * The number of annotations for this layer.
-     *
-     * @var int
-     */
-    public $annotationCount;
-    /**
-     * The list of annotation types contained for this layer.
-     *
-     * @var string[]
-     */
-    public $annotationTypes;
-    /**
-     * Link to get data for this annotation.
-     *
-     * @var string
-     */
-    public $annotationsDataLink;
-    /**
-     * The link to get the annotations for this layer.
-     *
-     * @var string
-     */
-    public $annotationsLink;
-    /**
-     * The content version this resource is for.
-     *
-     * @var string
-     */
-    public $contentVersion;
-    /**
-     * The number of data items for this layer.
-     *
-     * @var int
-     */
-    public $dataCount;
-    /**
-     * Unique id of this layer summary.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource Type
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The layer id for this summary.
-     *
-     * @var string
-     */
-    public $layerId;
-    /**
-     * URL to this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Timestamp for the last time an item in this layer was updated. (RFC 3339
-     * UTC date-time format).
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The current version of this layer's volume annotations. Note that this
-     * version applies only to the data in the books.layers.volumeAnnotations.*
-     * responses. The actual annotation data is versioned separately.
-     *
-     * @var string
-     */
-    public $volumeAnnotationsVersion;
-    /**
-     * The volume id this resource is for.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * The number of annotations for this layer.
-     *
-     * @param int $annotationCount
-     */
-    public function setAnnotationCount($annotationCount)
+namespace Google\Service\Books {
+    class Layersummary extends \Google\Collection
     {
+        protected $collection_key = 'annotationTypes';
+        /**
+         * The number of annotations for this layer.
+         *
+         * @var int
+         */
+        public $annotationCount;
+        /**
+         * The list of annotation types contained for this layer.
+         *
+         * @var string[]
+         */
+        public $annotationTypes;
+        /**
+         * Link to get data for this annotation.
+         *
+         * @var string
+         */
+        public $annotationsDataLink;
+        /**
+         * The link to get the annotations for this layer.
+         *
+         * @var string
+         */
+        public $annotationsLink;
+        /**
+         * The content version this resource is for.
+         *
+         * @var string
+         */
+        public $contentVersion;
+        /**
+         * The number of data items for this layer.
+         *
+         * @var int
+         */
+        public $dataCount;
+        /**
+         * Unique id of this layer summary.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource Type
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The layer id for this summary.
+         *
+         * @var string
+         */
+        public $layerId;
+        /**
+         * URL to this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Timestamp for the last time an item in this layer was updated. (RFC 3339
+         * UTC date-time format).
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The current version of this layer's volume annotations. Note that this
+         * version applies only to the data in the books.layers.volumeAnnotations.*
+         * responses. The actual annotation data is versioned separately.
+         *
+         * @var string
+         */
+        public $volumeAnnotationsVersion;
+        /**
+         * The volume id this resource is for.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * The number of annotations for this layer.
+         *
+         * @param int $annotationCount
+         */
+        public function setAnnotationCount($annotationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAnnotationCount()
+        {
+        }
+        /**
+         * The list of annotation types contained for this layer.
+         *
+         * @param string[] $annotationTypes
+         */
+        public function setAnnotationTypes($annotationTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotationTypes()
+        {
+        }
+        /**
+         * Link to get data for this annotation.
+         *
+         * @param string $annotationsDataLink
+         */
+        public function setAnnotationsDataLink($annotationsDataLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationsDataLink()
+        {
+        }
+        /**
+         * The link to get the annotations for this layer.
+         *
+         * @param string $annotationsLink
+         */
+        public function setAnnotationsLink($annotationsLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationsLink()
+        {
+        }
+        /**
+         * The content version this resource is for.
+         *
+         * @param string $contentVersion
+         */
+        public function setContentVersion($contentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentVersion()
+        {
+        }
+        /**
+         * The number of data items for this layer.
+         *
+         * @param int $dataCount
+         */
+        public function setDataCount($dataCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDataCount()
+        {
+        }
+        /**
+         * Unique id of this layer summary.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource Type
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The layer id for this summary.
+         *
+         * @param string $layerId
+         */
+        public function setLayerId($layerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayerId()
+        {
+        }
+        /**
+         * URL to this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Timestamp for the last time an item in this layer was updated. (RFC 3339
+         * UTC date-time format).
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * The current version of this layer's volume annotations. Note that this
+         * version applies only to the data in the books.layers.volumeAnnotations.*
+         * responses. The actual annotation data is versioned separately.
+         *
+         * @param string $volumeAnnotationsVersion
+         */
+        public function setVolumeAnnotationsVersion($volumeAnnotationsVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeAnnotationsVersion()
+        {
+        }
+        /**
+         * The volume id this resource is for.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Books\Layersummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationCount()
-    {
-    }
-    /**
-     * The list of annotation types contained for this layer.
-     *
-     * @param string[] $annotationTypes
-     */
-    public function setAnnotationTypes($annotationTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAnnotationTypes()
-    {
-    }
-    /**
-     * Link to get data for this annotation.
-     *
-     * @param string $annotationsDataLink
-     */
-    public function setAnnotationsDataLink($annotationsDataLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationsDataLink()
-    {
-    }
-    /**
-     * The link to get the annotations for this layer.
-     *
-     * @param string $annotationsLink
-     */
-    public function setAnnotationsLink($annotationsLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationsLink()
-    {
-    }
-    /**
-     * The content version this resource is for.
-     *
-     * @param string $contentVersion
-     */
-    public function setContentVersion($contentVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentVersion()
-    {
-    }
-    /**
-     * The number of data items for this layer.
-     *
-     * @param int $dataCount
-     */
-    public function setDataCount($dataCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDataCount()
-    {
-    }
-    /**
-     * Unique id of this layer summary.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource Type
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The layer id for this summary.
-     *
-     * @param string $layerId
-     */
-    public function setLayerId($layerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayerId()
-    {
-    }
-    /**
-     * URL to this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Timestamp for the last time an item in this layer was updated. (RFC 3339
-     * UTC date-time format).
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * The current version of this layer's volume annotations. Note that this
-     * version applies only to the data in the books.layers.volumeAnnotations.*
-     * responses. The actual annotation data is versioned separately.
-     *
-     * @param string $volumeAnnotationsVersion
-     */
-    public function setVolumeAnnotationsVersion($volumeAnnotationsVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeAnnotationsVersion()
-    {
-    }
-    /**
-     * The volume id this resource is for.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_Layersummary extends \Google\Service\Books\Layersummary
     {
     }
 }

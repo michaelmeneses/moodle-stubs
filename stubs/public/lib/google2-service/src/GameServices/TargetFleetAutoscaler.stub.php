@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class TargetFleetAutoscaler extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    protected $specSourceType = SpecSource::class;
-    protected $specSourceDataType = '';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\GameServices {
+    class TargetFleetAutoscaler extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        protected $specSourceType = SpecSource::class;
+        protected $specSourceDataType = '';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param SpecSource
+         */
+        public function setSpecSource(SpecSource $specSource)
+        {
+        }
+        /**
+         * @return SpecSource
+         */
+        public function getSpecSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\TargetFleetAutoscaler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param SpecSource
-     */
-    public function setSpecSource(SpecSource $specSource)
-    {
-    }
-    /**
-     * @return SpecSource
-     */
-    public function getSpecSource()
+    class Google_Service_GameServices_TargetFleetAutoscaler extends \Google\Service\GameServices\TargetFleetAutoscaler
     {
     }
 }

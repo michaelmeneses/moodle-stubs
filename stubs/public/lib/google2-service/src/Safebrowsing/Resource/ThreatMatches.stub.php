@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "threatMatches" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $threatMatches = $safebrowsingService->threatMatches;
- *  </code>
- */
-class ThreatMatches extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindThreatMatchesRequest;
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindThreatMatchesResponse;
     /**
-     * Finds the threat entries that match the Safe Browsing lists.
-     * (threatMatches.find)
-     *
-     * @param GoogleSecuritySafebrowsingV4FindThreatMatchesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleSecuritySafebrowsingV4FindThreatMatchesResponse
+     * The "threatMatches" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $threatMatches = $safebrowsingService->threatMatches;
+     *  </code>
      */
-    public function find(GoogleSecuritySafebrowsingV4FindThreatMatchesRequest $postBody, $optParams = [])
+    class ThreatMatches extends \Google\Service\Resource
+    {
+        /**
+         * Finds the threat entries that match the Safe Browsing lists.
+         * (threatMatches.find)
+         *
+         * @param GoogleSecuritySafebrowsingV4FindThreatMatchesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleSecuritySafebrowsingV4FindThreatMatchesResponse
+         */
+        public function find(GoogleSecuritySafebrowsingV4FindThreatMatchesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\ThreatMatches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_ThreatMatches extends \Google\Service\Safebrowsing\Resource\ThreatMatches
     {
     }
 }

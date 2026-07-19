@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'resourceSettings';
-    /**
-     * @var string
-     */
-    public $complianceRegime;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $parent;
-    protected $resourceSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings::class;
-    protected $resourceSettingsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setComplianceRegime($complianceRegime)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'resourceSettings';
+        /**
+         * @var string
+         */
+        public $complianceRegime;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $parent;
+        protected $resourceSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings::class;
+        protected $resourceSettingsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setComplianceRegime($complianceRegime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceRegime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
+         */
+        public function setResourceSettings($resourceSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
+         */
+        public function getResourceSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplianceRegime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
-     */
-    public function setResourceSettings($resourceSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
-     */
-    public function getResourceSettings()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserLanguage extends \Google\Model
-{
-    /**
-     * Other language. User can provide their own language name if there is no
-     * corresponding ISO 639 language code. If this is set, `languageCode` can't
-     * be set.
-     *
-     * @var string
-     */
-    public $customLanguage;
-    /**
-     * ISO 639 string representation of a language. See [Language Codes](/admin-
-     * sdk/directory/v1/languages) for the list of supported codes. Valid language
-     * codes outside the supported set will be accepted by the API but may lead to
-     * unexpected behavior. Illegal values cause `SchemaException`. If this is
-     * set, `customLanguage` can't be set.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Optional. If present, controls whether the specified `languageCode` is the
-     * user's preferred language. If `customLanguage` is set, this can't be set.
-     * Allowed values are `preferred` and `not_preferred`.
-     *
-     * @var string
-     */
-    public $preference;
-    /**
-     * Other language. User can provide their own language name if there is no
-     * corresponding ISO 639 language code. If this is set, `languageCode` can't
-     * be set.
-     *
-     * @param string $customLanguage
-     */
-    public function setCustomLanguage($customLanguage)
+namespace Google\Service\Directory {
+    class UserLanguage extends \Google\Model
     {
+        /**
+         * Other language. User can provide their own language name if there is no
+         * corresponding ISO 639 language code. If this is set, `languageCode` can't
+         * be set.
+         *
+         * @var string
+         */
+        public $customLanguage;
+        /**
+         * ISO 639 string representation of a language. See [Language Codes](/admin-
+         * sdk/directory/v1/languages) for the list of supported codes. Valid language
+         * codes outside the supported set will be accepted by the API but may lead to
+         * unexpected behavior. Illegal values cause `SchemaException`. If this is
+         * set, `customLanguage` can't be set.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Optional. If present, controls whether the specified `languageCode` is the
+         * user's preferred language. If `customLanguage` is set, this can't be set.
+         * Allowed values are `preferred` and `not_preferred`.
+         *
+         * @var string
+         */
+        public $preference;
+        /**
+         * Other language. User can provide their own language name if there is no
+         * corresponding ISO 639 language code. If this is set, `languageCode` can't
+         * be set.
+         *
+         * @param string $customLanguage
+         */
+        public function setCustomLanguage($customLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLanguage()
+        {
+        }
+        /**
+         * ISO 639 string representation of a language. See [Language Codes](/admin-
+         * sdk/directory/v1/languages) for the list of supported codes. Valid language
+         * codes outside the supported set will be accepted by the API but may lead to
+         * unexpected behavior. Illegal values cause `SchemaException`. If this is
+         * set, `customLanguage` can't be set.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Optional. If present, controls whether the specified `languageCode` is the
+         * user's preferred language. If `customLanguage` is set, this can't be set.
+         * Allowed values are `preferred` and `not_preferred`.
+         *
+         * @param string $preference
+         */
+        public function setPreference($preference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserLanguage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomLanguage()
-    {
-    }
-    /**
-     * ISO 639 string representation of a language. See [Language Codes](/admin-
-     * sdk/directory/v1/languages) for the list of supported codes. Valid language
-     * codes outside the supported set will be accepted by the API but may lead to
-     * unexpected behavior. Illegal values cause `SchemaException`. If this is
-     * set, `customLanguage` can't be set.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Optional. If present, controls whether the specified `languageCode` is the
-     * user's preferred language. If `customLanguage` is set, this can't be set.
-     * Allowed values are `preferred` and `not_preferred`.
-     *
-     * @param string $preference
-     */
-    public function setPreference($preference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreference()
+    class Google_Service_Directory_UserLanguage extends \Google\Service\Directory\UserLanguage
     {
     }
 }

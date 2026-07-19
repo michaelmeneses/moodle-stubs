@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataPolicyService;
-
-class ListDataPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataPolicies';
-    protected $dataPoliciesType = DataPolicy::class;
-    protected $dataPoliciesDataType = 'array';
-    /**
-     * Token used to retrieve the next page of results, or empty if there are no
-     * more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Data policies that belong to the requested project.
-     *
-     * @param DataPolicy[] $dataPolicies
-     */
-    public function setDataPolicies($dataPolicies)
+namespace Google\Service\BigQueryDataPolicyService {
+    class ListDataPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataPolicies';
+        protected $dataPoliciesType = DataPolicy::class;
+        protected $dataPoliciesDataType = 'array';
+        /**
+         * Token used to retrieve the next page of results, or empty if there are no
+         * more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Data policies that belong to the requested project.
+         *
+         * @param DataPolicy[] $dataPolicies
+         */
+        public function setDataPolicies($dataPolicies)
+        {
+        }
+        /**
+         * @return DataPolicy[]
+         */
+        public function getDataPolicies()
+        {
+        }
+        /**
+         * Token used to retrieve the next page of results, or empty if there are no
+         * more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataPolicy[]
+     * Runtime class alias of \Google\Service\BigQueryDataPolicyService\ListDataPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataPolicies()
-    {
-    }
-    /**
-     * Token used to retrieve the next page of results, or empty if there are no
-     * more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigQueryDataPolicyService_ListDataPoliciesResponse extends \Google\Service\BigQueryDataPolicyService\ListDataPoliciesResponse
     {
     }
 }

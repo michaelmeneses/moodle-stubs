@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class PolicySectionAnnotation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * @var float
-     */
-    public $score;
-    /**
-     * @var string
-     */
-    public $sectionType;
-    /**
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * @var string
-     */
-    public $textContent;
-    /**
-     * @param string
-     */
-    public function setEndOffset($endOffset)
+namespace Google\Service\ChecksService {
+    class PolicySectionAnnotation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * @var float
+         */
+        public $score;
+        /**
+         * @var string
+         */
+        public $sectionType;
+        /**
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * @var string
+         */
+        public $textContent;
+        /**
+         * @param string
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSectionType($sectionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSectionType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextContent($textContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\PolicySectionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSectionType($sectionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSectionType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextContent($textContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextContent()
+    class Google_Service_ChecksService_PolicySectionAnnotation extends \Google\Service\ChecksService\PolicySectionAnnotation
     {
     }
 }

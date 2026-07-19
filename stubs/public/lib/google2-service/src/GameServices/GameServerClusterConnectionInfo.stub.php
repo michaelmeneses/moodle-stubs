@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class GameServerClusterConnectionInfo extends \Google\Model
-{
-    protected $gkeClusterReferenceType = GkeClusterReference::class;
-    protected $gkeClusterReferenceDataType = '';
-    /**
-     * @var string
-     */
-    public $namespace;
-    /**
-     * @param GkeClusterReference
-     */
-    public function setGkeClusterReference(GkeClusterReference $gkeClusterReference)
+namespace Google\Service\GameServices {
+    class GameServerClusterConnectionInfo extends \Google\Model
     {
+        protected $gkeClusterReferenceType = GkeClusterReference::class;
+        protected $gkeClusterReferenceDataType = '';
+        /**
+         * @var string
+         */
+        public $namespace;
+        /**
+         * @param GkeClusterReference
+         */
+        public function setGkeClusterReference(GkeClusterReference $gkeClusterReference)
+        {
+        }
+        /**
+         * @return GkeClusterReference
+         */
+        public function getGkeClusterReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GkeClusterReference
+     * Runtime class alias of \Google\Service\GameServices\GameServerClusterConnectionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGkeClusterReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNamespace($namespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespace()
+    class Google_Service_GameServices_GameServerClusterConnectionInfo extends \Google\Service\GameServices\GameServerClusterConnectionInfo
     {
     }
 }

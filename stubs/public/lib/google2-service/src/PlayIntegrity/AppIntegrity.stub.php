@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class AppIntegrity extends \Google\Collection
-{
-    /**
-     * Play does not have sufficient information to evaluate app integrity
-     */
-    public const APP_RECOGNITION_VERDICT_UNKNOWN = 'UNKNOWN';
-    /**
-     * The app and certificate match the versions distributed by Play.
-     */
-    public const APP_RECOGNITION_VERDICT_PLAY_RECOGNIZED = 'PLAY_RECOGNIZED';
-    /**
-     * The certificate or package name does not match Google Play records.
-     */
-    public const APP_RECOGNITION_VERDICT_UNRECOGNIZED_VERSION = 'UNRECOGNIZED_VERSION';
-    /**
-     * Application integrity was not evaluated since a necessary requirement was
-     * missed. For example DeviceIntegrity did not meet the minimum bar.
-     */
-    public const APP_RECOGNITION_VERDICT_UNEVALUATED = 'UNEVALUATED';
-    protected $collection_key = 'certificateSha256Digest';
-    /**
-     * Required. Details about the app recognition verdict
-     *
-     * @var string
-     */
-    public $appRecognitionVerdict;
-    /**
-     * The SHA256 hash of the requesting app's signing certificates (base64 web-
-     * safe encoded). Set iff app_recognition_verdict != UNEVALUATED.
-     *
-     * @var string[]
-     */
-    public $certificateSha256Digest;
-    /**
-     * Package name of the application under attestation. Set iff
-     * app_recognition_verdict != UNEVALUATED.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Version code of the application. Set iff app_recognition_verdict !=
-     * UNEVALUATED.
-     *
-     * @var string
-     */
-    public $versionCode;
-    /**
-     * Required. Details about the app recognition verdict
-     *
-     * Accepted values: UNKNOWN, PLAY_RECOGNIZED, UNRECOGNIZED_VERSION,
-     * UNEVALUATED
-     *
-     * @param self::APP_RECOGNITION_VERDICT_* $appRecognitionVerdict
-     */
-    public function setAppRecognitionVerdict($appRecognitionVerdict)
+namespace Google\Service\PlayIntegrity {
+    class AppIntegrity extends \Google\Collection
     {
+        /**
+         * Play does not have sufficient information to evaluate app integrity
+         */
+        public const APP_RECOGNITION_VERDICT_UNKNOWN = 'UNKNOWN';
+        /**
+         * The app and certificate match the versions distributed by Play.
+         */
+        public const APP_RECOGNITION_VERDICT_PLAY_RECOGNIZED = 'PLAY_RECOGNIZED';
+        /**
+         * The certificate or package name does not match Google Play records.
+         */
+        public const APP_RECOGNITION_VERDICT_UNRECOGNIZED_VERSION = 'UNRECOGNIZED_VERSION';
+        /**
+         * Application integrity was not evaluated since a necessary requirement was
+         * missed. For example DeviceIntegrity did not meet the minimum bar.
+         */
+        public const APP_RECOGNITION_VERDICT_UNEVALUATED = 'UNEVALUATED';
+        protected $collection_key = 'certificateSha256Digest';
+        /**
+         * Required. Details about the app recognition verdict
+         *
+         * @var string
+         */
+        public $appRecognitionVerdict;
+        /**
+         * The SHA256 hash of the requesting app's signing certificates (base64 web-
+         * safe encoded). Set iff app_recognition_verdict != UNEVALUATED.
+         *
+         * @var string[]
+         */
+        public $certificateSha256Digest;
+        /**
+         * Package name of the application under attestation. Set iff
+         * app_recognition_verdict != UNEVALUATED.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Version code of the application. Set iff app_recognition_verdict !=
+         * UNEVALUATED.
+         *
+         * @var string
+         */
+        public $versionCode;
+        /**
+         * Required. Details about the app recognition verdict
+         *
+         * Accepted values: UNKNOWN, PLAY_RECOGNIZED, UNRECOGNIZED_VERSION,
+         * UNEVALUATED
+         *
+         * @param self::APP_RECOGNITION_VERDICT_* $appRecognitionVerdict
+         */
+        public function setAppRecognitionVerdict($appRecognitionVerdict)
+        {
+        }
+        /**
+         * @return self::APP_RECOGNITION_VERDICT_*
+         */
+        public function getAppRecognitionVerdict()
+        {
+        }
+        /**
+         * The SHA256 hash of the requesting app's signing certificates (base64 web-
+         * safe encoded). Set iff app_recognition_verdict != UNEVALUATED.
+         *
+         * @param string[] $certificateSha256Digest
+         */
+        public function setCertificateSha256Digest($certificateSha256Digest)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCertificateSha256Digest()
+        {
+        }
+        /**
+         * Package name of the application under attestation. Set iff
+         * app_recognition_verdict != UNEVALUATED.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Version code of the application. Set iff app_recognition_verdict !=
+         * UNEVALUATED.
+         *
+         * @param string $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::APP_RECOGNITION_VERDICT_*
+     * Runtime class alias of \Google\Service\PlayIntegrity\AppIntegrity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppRecognitionVerdict()
-    {
-    }
-    /**
-     * The SHA256 hash of the requesting app's signing certificates (base64 web-
-     * safe encoded). Set iff app_recognition_verdict != UNEVALUATED.
-     *
-     * @param string[] $certificateSha256Digest
-     */
-    public function setCertificateSha256Digest($certificateSha256Digest)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCertificateSha256Digest()
-    {
-    }
-    /**
-     * Package name of the application under attestation. Set iff
-     * app_recognition_verdict != UNEVALUATED.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Version code of the application. Set iff app_recognition_verdict !=
-     * UNEVALUATED.
-     *
-     * @param string $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionCode()
+    class Google_Service_PlayIntegrity_AppIntegrity extends \Google\Service\PlayIntegrity\AppIntegrity
     {
     }
 }

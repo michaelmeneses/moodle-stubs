@@ -21,209 +21,218 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoAttributes extends \Google\Collection
-{
-    public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
-    public const DATA_TYPE_EMAIL = 'EMAIL';
-    public const DATA_TYPE_URL = 'URL';
-    public const DATA_TYPE_CURRENCY = 'CURRENCY';
-    public const DATA_TYPE_TIMESTAMP = 'TIMESTAMP';
-    /**
-     * Domain is a web url string with one top-level private domain and a suffix
-     * (for example: google.com, walmart.com)
-     */
-    public const DATA_TYPE_DOMAIN_NAME = 'DOMAIN_NAME';
-    public const SEARCHABLE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * If yes, the parameter key and value will be full-text indexed. In a proto,
-     * this value will propagate to all children whose searchable is unspecified.
-     */
-    public const SEARCHABLE_YES = 'YES';
-    /**
-     * If no, the parameter key and value will not be full-text indexed. In a
-     * proto, this value will propagate to all children whose searchable is
-     * unspecified.
-     */
-    public const SEARCHABLE_NO = 'NO';
-    protected $collection_key = 'taskVisibility';
-    /**
-     * Things like URL, Email, Currency, Timestamp (rather than string, int64...)
-     *
-     * @var string
-     */
-    public $dataType;
-    protected $defaultValueType = EnterpriseCrmEventbusProtoValueType::class;
-    protected $defaultValueDataType = '';
-    /**
-     * Required for event execution. The validation will be done by the event bus
-     * when the event is triggered.
-     *
-     * @var bool
-     */
-    public $isRequired;
-    /**
-     * Used to indicate if a ParameterEntry should be converted to ParamIndexes
-     * for ST-Spanner full-text search. DEPRECATED: use searchable.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $isSearchable;
-    protected $logSettingsType = EnterpriseCrmEventbusProtoLogSettings::class;
-    protected $logSettingsDataType = '';
-    /**
-     * True if this workflow parameter should be masked in the logs
-     *
-     * @var bool
-     */
-    public $masked;
-    /**
-     * Used to indicate if the ParameterEntry is a read only field or not.
-     *
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * @var string
-     */
-    public $searchable;
-    /**
-     * List of tasks that can view this property, if empty then all.
-     *
-     * @var string[]
-     */
-    public $taskVisibility;
-    /**
-     * Things like URL, Email, Currency, Timestamp (rather than string, int64...)
-     *
-     * Accepted values: DATA_TYPE_UNSPECIFIED, EMAIL, URL, CURRENCY, TIMESTAMP,
-     * DOMAIN_NAME
-     *
-     * @param self::DATA_TYPE_* $dataType
-     */
-    public function setDataType($dataType)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoAttributes extends \Google\Collection
     {
+        public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
+        public const DATA_TYPE_EMAIL = 'EMAIL';
+        public const DATA_TYPE_URL = 'URL';
+        public const DATA_TYPE_CURRENCY = 'CURRENCY';
+        public const DATA_TYPE_TIMESTAMP = 'TIMESTAMP';
+        /**
+         * Domain is a web url string with one top-level private domain and a suffix
+         * (for example: google.com, walmart.com)
+         */
+        public const DATA_TYPE_DOMAIN_NAME = 'DOMAIN_NAME';
+        public const SEARCHABLE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * If yes, the parameter key and value will be full-text indexed. In a proto,
+         * this value will propagate to all children whose searchable is unspecified.
+         */
+        public const SEARCHABLE_YES = 'YES';
+        /**
+         * If no, the parameter key and value will not be full-text indexed. In a
+         * proto, this value will propagate to all children whose searchable is
+         * unspecified.
+         */
+        public const SEARCHABLE_NO = 'NO';
+        protected $collection_key = 'taskVisibility';
+        /**
+         * Things like URL, Email, Currency, Timestamp (rather than string, int64...)
+         *
+         * @var string
+         */
+        public $dataType;
+        protected $defaultValueType = EnterpriseCrmEventbusProtoValueType::class;
+        protected $defaultValueDataType = '';
+        /**
+         * Required for event execution. The validation will be done by the event bus
+         * when the event is triggered.
+         *
+         * @var bool
+         */
+        public $isRequired;
+        /**
+         * Used to indicate if a ParameterEntry should be converted to ParamIndexes
+         * for ST-Spanner full-text search. DEPRECATED: use searchable.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $isSearchable;
+        protected $logSettingsType = EnterpriseCrmEventbusProtoLogSettings::class;
+        protected $logSettingsDataType = '';
+        /**
+         * True if this workflow parameter should be masked in the logs
+         *
+         * @var bool
+         */
+        public $masked;
+        /**
+         * Used to indicate if the ParameterEntry is a read only field or not.
+         *
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * @var string
+         */
+        public $searchable;
+        /**
+         * List of tasks that can view this property, if empty then all.
+         *
+         * @var string[]
+         */
+        public $taskVisibility;
+        /**
+         * Things like URL, Email, Currency, Timestamp (rather than string, int64...)
+         *
+         * Accepted values: DATA_TYPE_UNSPECIFIED, EMAIL, URL, CURRENCY, TIMESTAMP,
+         * DOMAIN_NAME
+         *
+         * @param self::DATA_TYPE_* $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return self::DATA_TYPE_*
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Used to define defaults.
+         *
+         * @param EnterpriseCrmEventbusProtoValueType $defaultValue
+         */
+        public function setDefaultValue(EnterpriseCrmEventbusProtoValueType $defaultValue)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoValueType
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Required for event execution. The validation will be done by the event bus
+         * when the event is triggered.
+         *
+         * @param bool $isRequired
+         */
+        public function setIsRequired($isRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRequired()
+        {
+        }
+        /**
+         * Used to indicate if a ParameterEntry should be converted to ParamIndexes
+         * for ST-Spanner full-text search. DEPRECATED: use searchable.
+         *
+         * @deprecated
+         * @param bool $isSearchable
+         */
+        public function setIsSearchable($isSearchable)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIsSearchable()
+        {
+        }
+        /**
+         * See
+         *
+         * @param EnterpriseCrmEventbusProtoLogSettings $logSettings
+         */
+        public function setLogSettings(EnterpriseCrmEventbusProtoLogSettings $logSettings)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoLogSettings
+         */
+        public function getLogSettings()
+        {
+        }
+        /**
+         * True if this workflow parameter should be masked in the logs
+         *
+         * @param bool $masked
+         */
+        public function setMasked($masked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMasked()
+        {
+        }
+        /**
+         * Used to indicate if the ParameterEntry is a read only field or not.
+         *
+         * @param bool $readOnly
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * @param self::SEARCHABLE_* $searchable
+         */
+        public function setSearchable($searchable)
+        {
+        }
+        /**
+         * @return self::SEARCHABLE_*
+         */
+        public function getSearchable()
+        {
+        }
+        /**
+         * List of tasks that can view this property, if empty then all.
+         *
+         * @param string[] $taskVisibility
+         */
+        public function setTaskVisibility($taskVisibility)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTaskVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_TYPE_*
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataType()
-    {
-    }
-    /**
-     * Used to define defaults.
-     *
-     * @param EnterpriseCrmEventbusProtoValueType $defaultValue
-     */
-    public function setDefaultValue(EnterpriseCrmEventbusProtoValueType $defaultValue)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoValueType
-     */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Required for event execution. The validation will be done by the event bus
-     * when the event is triggered.
-     *
-     * @param bool $isRequired
-     */
-    public function setIsRequired($isRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsRequired()
-    {
-    }
-    /**
-     * Used to indicate if a ParameterEntry should be converted to ParamIndexes
-     * for ST-Spanner full-text search. DEPRECATED: use searchable.
-     *
-     * @deprecated
-     * @param bool $isSearchable
-     */
-    public function setIsSearchable($isSearchable)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getIsSearchable()
-    {
-    }
-    /**
-     * See
-     *
-     * @param EnterpriseCrmEventbusProtoLogSettings $logSettings
-     */
-    public function setLogSettings(EnterpriseCrmEventbusProtoLogSettings $logSettings)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoLogSettings
-     */
-    public function getLogSettings()
-    {
-    }
-    /**
-     * True if this workflow parameter should be masked in the logs
-     *
-     * @param bool $masked
-     */
-    public function setMasked($masked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMasked()
-    {
-    }
-    /**
-     * Used to indicate if the ParameterEntry is a read only field or not.
-     *
-     * @param bool $readOnly
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * @param self::SEARCHABLE_* $searchable
-     */
-    public function setSearchable($searchable)
-    {
-    }
-    /**
-     * @return self::SEARCHABLE_*
-     */
-    public function getSearchable()
-    {
-    }
-    /**
-     * List of tasks that can view this property, if empty then all.
-     *
-     * @param string[] $taskVisibility
-     */
-    public function setTaskVisibility($taskVisibility)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTaskVisibility()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoAttributes extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoAttributes
     {
     }
 }

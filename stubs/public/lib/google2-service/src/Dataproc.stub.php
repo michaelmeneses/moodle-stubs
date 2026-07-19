@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Dataproc (v1).
- *
- * <p>
- * Manages Hadoop-based clusters and jobs on Google Cloud Platform.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/dataproc/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Dataproc extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations_autoscalingPolicies;
-    public $projects_locations_batches;
-    public $projects_locations_batches_sparkApplications;
-    public $projects_locations_operations;
-    public $projects_locations_sessionTemplates;
-    public $projects_locations_sessions;
-    public $projects_locations_sessions_sparkApplications;
-    public $projects_locations_workflowTemplates;
-    public $projects_regions_autoscalingPolicies;
-    public $projects_regions_clusters;
-    public $projects_regions_clusters_nodeGroups;
-    public $projects_regions_jobs;
-    public $projects_regions_operations;
-    public $projects_regions_workflowTemplates;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Dataproc service.
+     * Service definition for Dataproc (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manages Hadoop-based clusters and jobs on Google Cloud Platform.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/dataproc/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Dataproc extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations_autoscalingPolicies;
+        public $projects_locations_batches;
+        public $projects_locations_batches_sparkApplications;
+        public $projects_locations_operations;
+        public $projects_locations_sessionTemplates;
+        public $projects_locations_sessions;
+        public $projects_locations_sessions_sparkApplications;
+        public $projects_locations_workflowTemplates;
+        public $projects_regions_autoscalingPolicies;
+        public $projects_regions_clusters;
+        public $projects_regions_clusters_nodeGroups;
+        public $projects_regions_jobs;
+        public $projects_regions_operations;
+        public $projects_regions_workflowTemplates;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Dataproc service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataproc registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataproc extends \Google\Service\Dataproc
     {
     }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "userDeletion" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $userDeletion = $analyticsService->userDeletion;
- *  </code>
- */
-class UserDeletion extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    /**
+     * The "userDeletion" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $userDeletion = $analyticsService->userDeletion;
+     *  </code>
+     */
+    class UserDeletion extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\UserDeletion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_UserDeletion extends \Google\Service\Analytics\Resource\UserDeletion
+    {
+    }
 }

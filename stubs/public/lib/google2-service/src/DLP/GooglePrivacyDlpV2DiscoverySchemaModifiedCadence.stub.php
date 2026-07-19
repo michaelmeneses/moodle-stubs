@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoverySchemaModifiedCadence extends \Google\Collection
-{
-    /**
-     * Unspecified.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_UNSPECIFIED = 'UPDATE_FREQUENCY_UNSPECIFIED';
-    /**
-     * After the data profile is created, it will never be updated.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_NEVER = 'UPDATE_FREQUENCY_NEVER';
-    /**
-     * The data profile can be updated up to once every 24 hours.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_DAILY = 'UPDATE_FREQUENCY_DAILY';
-    /**
-     * The data profile can be updated up to once every 30 days. Default.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_MONTHLY = 'UPDATE_FREQUENCY_MONTHLY';
-    protected $collection_key = 'types';
-    /**
-     * How frequently profiles may be updated when schemas are modified. Defaults
-     * to monthly.
-     *
-     * @var string
-     */
-    public $frequency;
-    /**
-     * The type of events to consider when deciding if the table's schema has been
-     * modified and should have the profile updated. Defaults to NEW_COLUMNS.
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * How frequently profiles may be updated when schemas are modified. Defaults
-     * to monthly.
-     *
-     * Accepted values: UPDATE_FREQUENCY_UNSPECIFIED, UPDATE_FREQUENCY_NEVER,
-     * UPDATE_FREQUENCY_DAILY, UPDATE_FREQUENCY_MONTHLY
-     *
-     * @param self::FREQUENCY_* $frequency
-     */
-    public function setFrequency($frequency)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoverySchemaModifiedCadence extends \Google\Collection
     {
+        /**
+         * Unspecified.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_UNSPECIFIED = 'UPDATE_FREQUENCY_UNSPECIFIED';
+        /**
+         * After the data profile is created, it will never be updated.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_NEVER = 'UPDATE_FREQUENCY_NEVER';
+        /**
+         * The data profile can be updated up to once every 24 hours.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_DAILY = 'UPDATE_FREQUENCY_DAILY';
+        /**
+         * The data profile can be updated up to once every 30 days. Default.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_MONTHLY = 'UPDATE_FREQUENCY_MONTHLY';
+        protected $collection_key = 'types';
+        /**
+         * How frequently profiles may be updated when schemas are modified. Defaults
+         * to monthly.
+         *
+         * @var string
+         */
+        public $frequency;
+        /**
+         * The type of events to consider when deciding if the table's schema has been
+         * modified and should have the profile updated. Defaults to NEW_COLUMNS.
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * How frequently profiles may be updated when schemas are modified. Defaults
+         * to monthly.
+         *
+         * Accepted values: UPDATE_FREQUENCY_UNSPECIFIED, UPDATE_FREQUENCY_NEVER,
+         * UPDATE_FREQUENCY_DAILY, UPDATE_FREQUENCY_MONTHLY
+         *
+         * @param self::FREQUENCY_* $frequency
+         */
+        public function setFrequency($frequency)
+        {
+        }
+        /**
+         * @return self::FREQUENCY_*
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * The type of events to consider when deciding if the table's schema has been
+         * modified and should have the profile updated. Defaults to NEW_COLUMNS.
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FREQUENCY_*
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoverySchemaModifiedCadence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequency()
-    {
-    }
-    /**
-     * The type of events to consider when deciding if the table's schema has been
-     * modified and should have the profile updated. Defaults to NEW_COLUMNS.
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoverySchemaModifiedCadence extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoverySchemaModifiedCadence
     {
     }
 }

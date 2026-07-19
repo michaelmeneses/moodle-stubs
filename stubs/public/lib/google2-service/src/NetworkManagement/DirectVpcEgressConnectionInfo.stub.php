@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class DirectVpcEgressConnectionInfo extends \Google\Model
-{
-    /**
-     * URI of direct access network.
-     *
-     * @var string
-     */
-    public $networkUri;
-    /**
-     * Region in which the Direct VPC egress is deployed.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Selected starting IP address, from the selected IP range.
-     *
-     * @var string
-     */
-    public $selectedIpAddress;
-    /**
-     * Selected IP range.
-     *
-     * @var string
-     */
-    public $selectedIpRange;
-    /**
-     * URI of direct access subnetwork.
-     *
-     * @var string
-     */
-    public $subnetworkUri;
-    /**
-     * URI of direct access network.
-     *
-     * @param string $networkUri
-     */
-    public function setNetworkUri($networkUri)
+namespace Google\Service\NetworkManagement {
+    class DirectVpcEgressConnectionInfo extends \Google\Model
     {
+        /**
+         * URI of direct access network.
+         *
+         * @var string
+         */
+        public $networkUri;
+        /**
+         * Region in which the Direct VPC egress is deployed.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Selected starting IP address, from the selected IP range.
+         *
+         * @var string
+         */
+        public $selectedIpAddress;
+        /**
+         * Selected IP range.
+         *
+         * @var string
+         */
+        public $selectedIpRange;
+        /**
+         * URI of direct access subnetwork.
+         *
+         * @var string
+         */
+        public $subnetworkUri;
+        /**
+         * URI of direct access network.
+         *
+         * @param string $networkUri
+         */
+        public function setNetworkUri($networkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUri()
+        {
+        }
+        /**
+         * Region in which the Direct VPC egress is deployed.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Selected starting IP address, from the selected IP range.
+         *
+         * @param string $selectedIpAddress
+         */
+        public function setSelectedIpAddress($selectedIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedIpAddress()
+        {
+        }
+        /**
+         * Selected IP range.
+         *
+         * @param string $selectedIpRange
+         */
+        public function setSelectedIpRange($selectedIpRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedIpRange()
+        {
+        }
+        /**
+         * URI of direct access subnetwork.
+         *
+         * @param string $subnetworkUri
+         */
+        public function setSubnetworkUri($subnetworkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetworkUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\DirectVpcEgressConnectionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkUri()
-    {
-    }
-    /**
-     * Region in which the Direct VPC egress is deployed.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Selected starting IP address, from the selected IP range.
-     *
-     * @param string $selectedIpAddress
-     */
-    public function setSelectedIpAddress($selectedIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedIpAddress()
-    {
-    }
-    /**
-     * Selected IP range.
-     *
-     * @param string $selectedIpRange
-     */
-    public function setSelectedIpRange($selectedIpRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedIpRange()
-    {
-    }
-    /**
-     * URI of direct access subnetwork.
-     *
-     * @param string $subnetworkUri
-     */
-    public function setSubnetworkUri($subnetworkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetworkUri()
+    class Google_Service_NetworkManagement_DirectVpcEgressConnectionInfo extends \Google\Service\NetworkManagement\DirectVpcEgressConnectionInfo
     {
     }
 }

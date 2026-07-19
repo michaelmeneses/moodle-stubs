@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTextSentimentAnnotation extends \Google\Model
-{
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $annotationSpecId;
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The sentiment score for text.
-     *
-     * @var int
-     */
-    public $sentiment;
-    /**
-     * The sentiment max score for text.
-     *
-     * @var int
-     */
-    public $sentimentMax;
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $annotationSpecId
-     */
-    public function setAnnotationSpecId($annotationSpecId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTextSentimentAnnotation extends \Google\Model
     {
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $annotationSpecId;
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The sentiment score for text.
+         *
+         * @var int
+         */
+        public $sentiment;
+        /**
+         * The sentiment max score for text.
+         *
+         * @var int
+         */
+        public $sentimentMax;
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $annotationSpecId
+         */
+        public function setAnnotationSpecId($annotationSpecId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecId()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The sentiment score for text.
+         *
+         * @param int $sentiment
+         */
+        public function setSentiment($sentiment)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSentiment()
+        {
+        }
+        /**
+         * The sentiment max score for text.
+         *
+         * @param int $sentimentMax
+         */
+        public function setSentimentMax($sentimentMax)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSentimentMax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextSentimentAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecId()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The sentiment score for text.
-     *
-     * @param int $sentiment
-     */
-    public function setSentiment($sentiment)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSentiment()
-    {
-    }
-    /**
-     * The sentiment max score for text.
-     *
-     * @param int $sentimentMax
-     */
-    public function setSentimentMax($sentimentMax)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSentimentMax()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTextSentimentAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextSentimentAnnotation
     {
     }
 }

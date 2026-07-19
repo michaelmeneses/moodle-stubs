@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "segments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $segments = $analyticsService->management_segments;
- *  </code>
- */
-class ManagementSegments extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\Segments;
     /**
-     * Lists segments to which the user has access.
-     * (segments.listManagementSegments)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of segments to include in this
-     * response.
-     * @opt_param int start-index An index of the first segment to retrieve. Use
-     * this parameter as a pagination mechanism along with the max-results
-     * parameter.
-     * @return Segments
-     * @throws \Google\Service\Exception
+     * The "segments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $segments = $analyticsService->management_segments;
+     *  </code>
      */
-    public function listManagementSegments($optParams = [])
+    class ManagementSegments extends \Google\Service\Resource
+    {
+        /**
+         * Lists segments to which the user has access.
+         * (segments.listManagementSegments)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of segments to include in this
+         * response.
+         * @opt_param int start-index An index of the first segment to retrieve. Use
+         * this parameter as a pagination mechanism along with the max-results
+         * parameter.
+         * @return Segments
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementSegments($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementSegments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_ManagementSegments extends \Google\Service\Analytics\Resource\ManagementSegments
     {
     }
 }

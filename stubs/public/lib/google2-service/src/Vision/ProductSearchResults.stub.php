@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ProductSearchResults extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Timestamp of the index which provided these results. Products added to the
-     * product set and products removed from the product set after this time are
-     * not reflected in the current results.
-     *
-     * @var string
-     */
-    public $indexTime;
-    protected $productGroupedResultsType = GroupedResult::class;
-    protected $productGroupedResultsDataType = 'array';
-    protected $resultsType = Result::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Timestamp of the index which provided these results. Products added to the
-     * product set and products removed from the product set after this time are
-     * not reflected in the current results.
-     *
-     * @param string $indexTime
-     */
-    public function setIndexTime($indexTime)
+namespace Google\Service\Vision {
+    class ProductSearchResults extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Timestamp of the index which provided these results. Products added to the
+         * product set and products removed from the product set after this time are
+         * not reflected in the current results.
+         *
+         * @var string
+         */
+        public $indexTime;
+        protected $productGroupedResultsType = GroupedResult::class;
+        protected $productGroupedResultsDataType = 'array';
+        protected $resultsType = Result::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Timestamp of the index which provided these results. Products added to the
+         * product set and products removed from the product set after this time are
+         * not reflected in the current results.
+         *
+         * @param string $indexTime
+         */
+        public function setIndexTime($indexTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexTime()
+        {
+        }
+        /**
+         * List of results grouped by products detected in the query image. Each entry
+         * corresponds to one bounding polygon in the query image, and contains the
+         * matching products specific to that region. There may be duplicate product
+         * matches in the union of all the per-product results.
+         *
+         * @param GroupedResult[] $productGroupedResults
+         */
+        public function setProductGroupedResults($productGroupedResults)
+        {
+        }
+        /**
+         * @return GroupedResult[]
+         */
+        public function getProductGroupedResults()
+        {
+        }
+        /**
+         * List of results, one for each product match.
+         *
+         * @param Result[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return Result[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\ProductSearchResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexTime()
-    {
-    }
-    /**
-     * List of results grouped by products detected in the query image. Each entry
-     * corresponds to one bounding polygon in the query image, and contains the
-     * matching products specific to that region. There may be duplicate product
-     * matches in the union of all the per-product results.
-     *
-     * @param GroupedResult[] $productGroupedResults
-     */
-    public function setProductGroupedResults($productGroupedResults)
-    {
-    }
-    /**
-     * @return GroupedResult[]
-     */
-    public function getProductGroupedResults()
-    {
-    }
-    /**
-     * List of results, one for each product match.
-     *
-     * @param Result[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return Result[]
-     */
-    public function getResults()
+    class Google_Service_Vision_ProductSearchResults extends \Google\Service\Vision\ProductSearchResults
     {
     }
 }

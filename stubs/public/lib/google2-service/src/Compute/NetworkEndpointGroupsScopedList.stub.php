@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkEndpointGroupsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'networkEndpointGroups';
-    protected $networkEndpointGroupsType = NetworkEndpointGroup::class;
-    protected $networkEndpointGroupsDataType = 'array';
-    protected $warningType = NetworkEndpointGroupsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * Output only. [Output Only] The list ofnetwork endpoint groups that are
-     * contained in this scope.
-     *
-     * @param NetworkEndpointGroup[] $networkEndpointGroups
-     */
-    public function setNetworkEndpointGroups($networkEndpointGroups)
+namespace Google\Service\Compute {
+    class NetworkEndpointGroupsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'networkEndpointGroups';
+        protected $networkEndpointGroupsType = NetworkEndpointGroup::class;
+        protected $networkEndpointGroupsDataType = 'array';
+        protected $warningType = NetworkEndpointGroupsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * Output only. [Output Only] The list ofnetwork endpoint groups that are
+         * contained in this scope.
+         *
+         * @param NetworkEndpointGroup[] $networkEndpointGroups
+         */
+        public function setNetworkEndpointGroups($networkEndpointGroups)
+        {
+        }
+        /**
+         * @return NetworkEndpointGroup[]
+         */
+        public function getNetworkEndpointGroups()
+        {
+        }
+        /**
+         * Output only. [Output Only] An informational warning that replaces the list
+         * of network endpoint groups when the list is empty.
+         *
+         * @param NetworkEndpointGroupsScopedListWarning $warning
+         */
+        public function setWarning(NetworkEndpointGroupsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return NetworkEndpointGroupsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkEndpointGroup[]
+     * Runtime class alias of \Google\Service\Compute\NetworkEndpointGroupsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkEndpointGroups()
-    {
-    }
-    /**
-     * Output only. [Output Only] An informational warning that replaces the list
-     * of network endpoint groups when the list is empty.
-     *
-     * @param NetworkEndpointGroupsScopedListWarning $warning
-     */
-    public function setWarning(NetworkEndpointGroupsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return NetworkEndpointGroupsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_NetworkEndpointGroupsScopedList extends \Google\Service\Compute\NetworkEndpointGroupsScopedList
     {
     }
 }

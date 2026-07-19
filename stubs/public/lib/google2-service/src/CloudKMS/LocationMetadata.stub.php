@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class LocationMetadata extends \Google\Model
-{
-    /**
-     * Indicates whether CryptoKeys with protection_level EXTERNAL can be created
-     * in this location.
-     *
-     * @var bool
-     */
-    public $ekmAvailable;
-    /**
-     * Indicates whether CryptoKeys with protection_level HSM can be created in
-     * this location.
-     *
-     * @var bool
-     */
-    public $hsmAvailable;
-    /**
-     * Indicates whether CryptoKeys with protection_level HSM_SINGLE_TENANT can be
-     * created in this location.
-     *
-     * @var bool
-     */
-    public $hsmSingleTenantAvailable;
-    /**
-     * Indicates whether CryptoKeys with protection_level EXTERNAL can be created
-     * in this location.
-     *
-     * @param bool $ekmAvailable
-     */
-    public function setEkmAvailable($ekmAvailable)
+namespace Google\Service\CloudKMS {
+    class LocationMetadata extends \Google\Model
     {
+        /**
+         * Indicates whether CryptoKeys with protection_level EXTERNAL can be created
+         * in this location.
+         *
+         * @var bool
+         */
+        public $ekmAvailable;
+        /**
+         * Indicates whether CryptoKeys with protection_level HSM can be created in
+         * this location.
+         *
+         * @var bool
+         */
+        public $hsmAvailable;
+        /**
+         * Indicates whether CryptoKeys with protection_level HSM_SINGLE_TENANT can be
+         * created in this location.
+         *
+         * @var bool
+         */
+        public $hsmSingleTenantAvailable;
+        /**
+         * Indicates whether CryptoKeys with protection_level EXTERNAL can be created
+         * in this location.
+         *
+         * @param bool $ekmAvailable
+         */
+        public function setEkmAvailable($ekmAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEkmAvailable()
+        {
+        }
+        /**
+         * Indicates whether CryptoKeys with protection_level HSM can be created in
+         * this location.
+         *
+         * @param bool $hsmAvailable
+         */
+        public function setHsmAvailable($hsmAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHsmAvailable()
+        {
+        }
+        /**
+         * Indicates whether CryptoKeys with protection_level HSM_SINGLE_TENANT can be
+         * created in this location.
+         *
+         * @param bool $hsmSingleTenantAvailable
+         */
+        public function setHsmSingleTenantAvailable($hsmSingleTenantAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHsmSingleTenantAvailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudKMS\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEkmAvailable()
-    {
-    }
-    /**
-     * Indicates whether CryptoKeys with protection_level HSM can be created in
-     * this location.
-     *
-     * @param bool $hsmAvailable
-     */
-    public function setHsmAvailable($hsmAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHsmAvailable()
-    {
-    }
-    /**
-     * Indicates whether CryptoKeys with protection_level HSM_SINGLE_TENANT can be
-     * created in this location.
-     *
-     * @param bool $hsmSingleTenantAvailable
-     */
-    public function setHsmSingleTenantAvailable($hsmSingleTenantAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHsmSingleTenantAvailable()
+    class Google_Service_CloudKMS_LocationMetadata extends \Google\Service\CloudKMS\LocationMetadata
     {
     }
 }

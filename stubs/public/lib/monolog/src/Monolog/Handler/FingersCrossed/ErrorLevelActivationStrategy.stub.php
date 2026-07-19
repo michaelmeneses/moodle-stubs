@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler\FingersCrossed;
 
+use Monolog\Level;
+use Monolog\LogRecord;
+use Monolog\Logger;
+use Psr\Log\LogLevel;
 /**
  * Error level based activation strategy.
  *

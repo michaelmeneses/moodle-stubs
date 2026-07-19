@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization\Resource;
-
-/**
- * The "systempolicy" collection of methods.
- * Typical usage is:
- *  <code>
- *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
- *   $systempolicy = $binaryauthorizationService->systempolicy;
- *  </code>
- */
-class Systempolicy extends \Google\Service\Resource
-{
+namespace Google\Service\BinaryAuthorization\Resource {
+    use Google\Service\BinaryAuthorization\Policy;
     /**
-     * Gets the current system policy in the specified location.
-     * (systempolicy.getPolicy)
-     *
-     * @param string $name Required. The resource name, in the format
-     * `locations/policy`. Note that the system policy is not associated with a
-     * project.
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * The "systempolicy" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
+     *   $systempolicy = $binaryauthorizationService->systempolicy;
+     *  </code>
      */
-    public function getPolicy($name, $optParams = [])
+    class Systempolicy extends \Google\Service\Resource
+    {
+        /**
+         * Gets the current system policy in the specified location.
+         * (systempolicy.getPolicy)
+         *
+         * @param string $name Required. The resource name, in the format
+         * `locations/policy`. Note that the system policy is not associated with a
+         * project.
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getPolicy($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Resource\Systempolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BinaryAuthorization_Resource_Systempolicy extends \Google\Service\BinaryAuthorization\Resource\Systempolicy
     {
     }
 }

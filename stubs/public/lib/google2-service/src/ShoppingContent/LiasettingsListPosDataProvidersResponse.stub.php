@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiasettingsListPosDataProvidersResponse extends \Google\Collection
-{
-    protected $collection_key = 'posDataProviders';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#liasettingsListPosDataProvidersResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $posDataProvidersType = PosDataProviders::class;
-    protected $posDataProvidersDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#liasettingsListPosDataProvidersResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class LiasettingsListPosDataProvidersResponse extends \Google\Collection
     {
+        protected $collection_key = 'posDataProviders';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#liasettingsListPosDataProvidersResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $posDataProvidersType = PosDataProviders::class;
+        protected $posDataProvidersDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#liasettingsListPosDataProvidersResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of POS data providers for each eligible country
+         *
+         * @param PosDataProviders[] $posDataProviders
+         */
+        public function setPosDataProviders($posDataProviders)
+        {
+        }
+        /**
+         * @return PosDataProviders[]
+         */
+        public function getPosDataProviders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LiasettingsListPosDataProvidersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of POS data providers for each eligible country
-     *
-     * @param PosDataProviders[] $posDataProviders
-     */
-    public function setPosDataProviders($posDataProviders)
-    {
-    }
-    /**
-     * @return PosDataProviders[]
-     */
-    public function getPosDataProviders()
+    class Google_Service_ShoppingContent_LiasettingsListPosDataProvidersResponse extends \Google\Service\ShoppingContent\LiasettingsListPosDataProvidersResponse
     {
     }
 }

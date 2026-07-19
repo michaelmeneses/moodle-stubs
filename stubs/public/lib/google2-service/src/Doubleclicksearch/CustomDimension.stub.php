@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class CustomDimension extends \Google\Model
-{
-    /**
-     * Custom dimension name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Custom dimension value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Custom dimension name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Doubleclicksearch {
+    class CustomDimension extends \Google\Model
     {
+        /**
+         * Custom dimension name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Custom dimension value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Custom dimension name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Custom dimension value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\CustomDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Custom dimension value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Doubleclicksearch_CustomDimension extends \Google\Service\Doubleclicksearch\CustomDimension
     {
     }
 }

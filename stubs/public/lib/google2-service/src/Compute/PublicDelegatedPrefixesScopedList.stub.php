@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PublicDelegatedPrefixesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'publicDelegatedPrefixes';
-    protected $publicDelegatedPrefixesType = PublicDelegatedPrefix::class;
-    protected $publicDelegatedPrefixesDataType = 'array';
-    protected $warningType = PublicDelegatedPrefixesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of PublicDelegatedPrefixes contained in this scope.
-     *
-     * @param PublicDelegatedPrefix[] $publicDelegatedPrefixes
-     */
-    public function setPublicDelegatedPrefixes($publicDelegatedPrefixes)
+namespace Google\Service\Compute {
+    class PublicDelegatedPrefixesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'publicDelegatedPrefixes';
+        protected $publicDelegatedPrefixesType = PublicDelegatedPrefix::class;
+        protected $publicDelegatedPrefixesDataType = 'array';
+        protected $warningType = PublicDelegatedPrefixesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of PublicDelegatedPrefixes contained in this scope.
+         *
+         * @param PublicDelegatedPrefix[] $publicDelegatedPrefixes
+         */
+        public function setPublicDelegatedPrefixes($publicDelegatedPrefixes)
+        {
+        }
+        /**
+         * @return PublicDelegatedPrefix[]
+         */
+        public function getPublicDelegatedPrefixes()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of public
+         * delegated prefixes when the list is empty.
+         *
+         * @param PublicDelegatedPrefixesScopedListWarning $warning
+         */
+        public function setWarning(PublicDelegatedPrefixesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return PublicDelegatedPrefixesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublicDelegatedPrefix[]
+     * Runtime class alias of \Google\Service\Compute\PublicDelegatedPrefixesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublicDelegatedPrefixes()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of public
-     * delegated prefixes when the list is empty.
-     *
-     * @param PublicDelegatedPrefixesScopedListWarning $warning
-     */
-    public function setWarning(PublicDelegatedPrefixesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return PublicDelegatedPrefixesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_PublicDelegatedPrefixesScopedList extends \Google\Service\Compute\PublicDelegatedPrefixesScopedList
     {
     }
 }

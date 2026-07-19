@@ -21,270 +21,279 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class VirtualMachineDetails extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $coreCount;
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $guestOsType = GuestOsDetails::class;
-    protected $guestOsDataType = '';
-    /**
-     * @var int
-     */
-    public $memoryMb;
-    /**
-     * @var string
-     */
-    public $osFamily;
-    /**
-     * @var string
-     */
-    public $osName;
-    /**
-     * @var string
-     */
-    public $osVersion;
-    protected $platformType = PlatformDetails::class;
-    protected $platformDataType = '';
-    /**
-     * @var string
-     */
-    public $powerState;
-    /**
-     * @var string
-     */
-    public $vcenterFolder;
-    /**
-     * @var string
-     */
-    public $vcenterUrl;
-    /**
-     * @var string
-     */
-    public $vcenterVmId;
-    protected $vmArchitectureType = VirtualMachineArchitectureDetails::class;
-    protected $vmArchitectureDataType = '';
-    protected $vmDisksType = VirtualMachineDiskDetails::class;
-    protected $vmDisksDataType = '';
-    /**
-     * @var string
-     */
-    public $vmName;
-    protected $vmNetworkType = VirtualMachineNetworkDetails::class;
-    protected $vmNetworkDataType = '';
-    /**
-     * @var string
-     */
-    public $vmUuid;
-    /**
-     * @param int
-     */
-    public function setCoreCount($coreCount)
+namespace Google\Service\MigrationCenterAPI {
+    class VirtualMachineDetails extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $coreCount;
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $guestOsType = GuestOsDetails::class;
+        protected $guestOsDataType = '';
+        /**
+         * @var int
+         */
+        public $memoryMb;
+        /**
+         * @var string
+         */
+        public $osFamily;
+        /**
+         * @var string
+         */
+        public $osName;
+        /**
+         * @var string
+         */
+        public $osVersion;
+        protected $platformType = PlatformDetails::class;
+        protected $platformDataType = '';
+        /**
+         * @var string
+         */
+        public $powerState;
+        /**
+         * @var string
+         */
+        public $vcenterFolder;
+        /**
+         * @var string
+         */
+        public $vcenterUrl;
+        /**
+         * @var string
+         */
+        public $vcenterVmId;
+        protected $vmArchitectureType = VirtualMachineArchitectureDetails::class;
+        protected $vmArchitectureDataType = '';
+        protected $vmDisksType = VirtualMachineDiskDetails::class;
+        protected $vmDisksDataType = '';
+        /**
+         * @var string
+         */
+        public $vmName;
+        protected $vmNetworkType = VirtualMachineNetworkDetails::class;
+        protected $vmNetworkDataType = '';
+        /**
+         * @var string
+         */
+        public $vmUuid;
+        /**
+         * @param int
+         */
+        public function setCoreCount($coreCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCoreCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param GuestOsDetails
+         */
+        public function setGuestOs(GuestOsDetails $guestOs)
+        {
+        }
+        /**
+         * @return GuestOsDetails
+         */
+        public function getGuestOs()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMemoryMb($memoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryMb()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsFamily($osFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsFamily()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsName($osName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsVersion($osVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsVersion()
+        {
+        }
+        /**
+         * @param PlatformDetails
+         */
+        public function setPlatform(PlatformDetails $platform)
+        {
+        }
+        /**
+         * @return PlatformDetails
+         */
+        public function getPlatform()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPowerState($powerState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPowerState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVcenterFolder($vcenterFolder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVcenterFolder()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVcenterUrl($vcenterUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVcenterUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVcenterVmId($vcenterVmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVcenterVmId()
+        {
+        }
+        /**
+         * @param VirtualMachineArchitectureDetails
+         */
+        public function setVmArchitecture(VirtualMachineArchitectureDetails $vmArchitecture)
+        {
+        }
+        /**
+         * @return VirtualMachineArchitectureDetails
+         */
+        public function getVmArchitecture()
+        {
+        }
+        /**
+         * @param VirtualMachineDiskDetails
+         */
+        public function setVmDisks(VirtualMachineDiskDetails $vmDisks)
+        {
+        }
+        /**
+         * @return VirtualMachineDiskDetails
+         */
+        public function getVmDisks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVmName($vmName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmName()
+        {
+        }
+        /**
+         * @param VirtualMachineNetworkDetails
+         */
+        public function setVmNetwork(VirtualMachineNetworkDetails $vmNetwork)
+        {
+        }
+        /**
+         * @return VirtualMachineNetworkDetails
+         */
+        public function getVmNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVmUuid($vmUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\VirtualMachineDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoreCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param GuestOsDetails
-     */
-    public function setGuestOs(GuestOsDetails $guestOs)
-    {
-    }
-    /**
-     * @return GuestOsDetails
-     */
-    public function getGuestOs()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMemoryMb($memoryMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryMb()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsFamily($osFamily)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsFamily()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsName($osName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsVersion($osVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsVersion()
-    {
-    }
-    /**
-     * @param PlatformDetails
-     */
-    public function setPlatform(PlatformDetails $platform)
-    {
-    }
-    /**
-     * @return PlatformDetails
-     */
-    public function getPlatform()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPowerState($powerState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPowerState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVcenterFolder($vcenterFolder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVcenterFolder()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVcenterUrl($vcenterUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVcenterUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVcenterVmId($vcenterVmId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVcenterVmId()
-    {
-    }
-    /**
-     * @param VirtualMachineArchitectureDetails
-     */
-    public function setVmArchitecture(VirtualMachineArchitectureDetails $vmArchitecture)
-    {
-    }
-    /**
-     * @return VirtualMachineArchitectureDetails
-     */
-    public function getVmArchitecture()
-    {
-    }
-    /**
-     * @param VirtualMachineDiskDetails
-     */
-    public function setVmDisks(VirtualMachineDiskDetails $vmDisks)
-    {
-    }
-    /**
-     * @return VirtualMachineDiskDetails
-     */
-    public function getVmDisks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVmName($vmName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmName()
-    {
-    }
-    /**
-     * @param VirtualMachineNetworkDetails
-     */
-    public function setVmNetwork(VirtualMachineNetworkDetails $vmNetwork)
-    {
-    }
-    /**
-     * @return VirtualMachineNetworkDetails
-     */
-    public function getVmNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVmUuid($vmUuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmUuid()
+    class Google_Service_MigrationCenterAPI_VirtualMachineDetails extends \Google\Service\MigrationCenterAPI\VirtualMachineDetails
     {
     }
 }

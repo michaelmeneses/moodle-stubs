@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class ListSecretVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * A token to retrieve the next page of results. Pass this value in
-     * ListSecretVersionsRequest.page_token to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of SecretVersions but 0 when the ListSecretsRequest.filter
-     * field is set.
-     *
-     * @var int
-     */
-    public $totalSize;
-    protected $versionsType = SecretVersion::class;
-    protected $versionsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in
-     * ListSecretVersionsRequest.page_token to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecretManager {
+    class ListSecretVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * A token to retrieve the next page of results. Pass this value in
+         * ListSecretVersionsRequest.page_token to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of SecretVersions but 0 when the ListSecretsRequest.filter
+         * field is set.
+         *
+         * @var int
+         */
+        public $totalSize;
+        protected $versionsType = SecretVersion::class;
+        protected $versionsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in
+         * ListSecretVersionsRequest.page_token to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of SecretVersions but 0 when the ListSecretsRequest.filter
+         * field is set.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
+        /**
+         * The list of SecretVersions sorted in reverse by create_time (newest first).
+         *
+         * @param SecretVersion[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return SecretVersion[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\ListSecretVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of SecretVersions but 0 when the ListSecretsRequest.filter
-     * field is set.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
-    {
-    }
-    /**
-     * The list of SecretVersions sorted in reverse by create_time (newest first).
-     *
-     * @param SecretVersion[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return SecretVersion[]
-     */
-    public function getVersions()
+    class Google_Service_SecretManager_ListSecretVersionsResponse extends \Google\Service\SecretManager\ListSecretVersionsResponse
     {
     }
 }

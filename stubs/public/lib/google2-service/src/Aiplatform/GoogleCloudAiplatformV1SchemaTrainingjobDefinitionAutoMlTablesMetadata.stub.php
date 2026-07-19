@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesMetadata extends \Google\Model
-{
-    /**
-     * BigQuery destination uri for exported evaluated examples.
-     *
-     * @var string
-     */
-    public $evaluatedDataItemsBigqueryUri;
-    /**
-     * Output only. The actual training cost of the model, expressed in milli node
-     * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
-     * exceed the train budget.
-     *
-     * @var string
-     */
-    public $trainCostMilliNodeHours;
-    /**
-     * BigQuery destination uri for exported evaluated examples.
-     *
-     * @param string $evaluatedDataItemsBigqueryUri
-     */
-    public function setEvaluatedDataItemsBigqueryUri($evaluatedDataItemsBigqueryUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesMetadata extends \Google\Model
     {
+        /**
+         * BigQuery destination uri for exported evaluated examples.
+         *
+         * @var string
+         */
+        public $evaluatedDataItemsBigqueryUri;
+        /**
+         * Output only. The actual training cost of the model, expressed in milli node
+         * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
+         * exceed the train budget.
+         *
+         * @var string
+         */
+        public $trainCostMilliNodeHours;
+        /**
+         * BigQuery destination uri for exported evaluated examples.
+         *
+         * @param string $evaluatedDataItemsBigqueryUri
+         */
+        public function setEvaluatedDataItemsBigqueryUri($evaluatedDataItemsBigqueryUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluatedDataItemsBigqueryUri()
+        {
+        }
+        /**
+         * Output only. The actual training cost of the model, expressed in milli node
+         * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
+         * exceed the train budget.
+         *
+         * @param string $trainCostMilliNodeHours
+         */
+        public function setTrainCostMilliNodeHours($trainCostMilliNodeHours)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostMilliNodeHours()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluatedDataItemsBigqueryUri()
-    {
-    }
-    /**
-     * Output only. The actual training cost of the model, expressed in milli node
-     * hours, i.e. 1,000 value in this field means 1 node hour. Guaranteed to not
-     * exceed the train budget.
-     *
-     * @param string $trainCostMilliNodeHours
-     */
-    public function setTrainCostMilliNodeHours($trainCostMilliNodeHours)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostMilliNodeHours()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesMetadata
     {
     }
 }

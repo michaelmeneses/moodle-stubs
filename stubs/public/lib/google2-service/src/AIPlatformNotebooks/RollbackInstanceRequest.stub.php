@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RollbackInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. Output only. Revision Id
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Required. The snapshot for rollback. Example: "projects/test-
-     * project/global/snapshots/krwlzipynril".
-     *
-     * @var string
-     */
-    public $targetSnapshot;
-    /**
-     * Required. Output only. Revision Id
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
+namespace Google\Service\AIPlatformNotebooks {
+    class RollbackInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. Output only. Revision Id
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Required. The snapshot for rollback. Example: "projects/test-
+         * project/global/snapshots/krwlzipynril".
+         *
+         * @var string
+         */
+        public $targetSnapshot;
+        /**
+         * Required. Output only. Revision Id
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Required. The snapshot for rollback. Example: "projects/test-
+         * project/global/snapshots/krwlzipynril".
+         *
+         * @param string $targetSnapshot
+         */
+        public function setTargetSnapshot($targetSnapshot)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetSnapshot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RollbackInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Required. The snapshot for rollback. Example: "projects/test-
-     * project/global/snapshots/krwlzipynril".
-     *
-     * @param string $targetSnapshot
-     */
-    public function setTargetSnapshot($targetSnapshot)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetSnapshot()
+    class Google_Service_AIPlatformNotebooks_RollbackInstanceRequest extends \Google\Service\AIPlatformNotebooks\RollbackInstanceRequest
     {
     }
 }

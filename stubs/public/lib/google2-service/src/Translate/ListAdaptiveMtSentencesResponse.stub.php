@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ListAdaptiveMtSentencesResponse extends \Google\Collection
-{
-    protected $collection_key = 'adaptiveMtSentences';
-    protected $adaptiveMtSentencesType = AdaptiveMtSentence::class;
-    protected $adaptiveMtSentencesDataType = 'array';
-    /**
-     * Optional.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. The list of AdaptiveMtSentences.
-     *
-     * @param AdaptiveMtSentence[] $adaptiveMtSentences
-     */
-    public function setAdaptiveMtSentences($adaptiveMtSentences)
+namespace Google\Service\Translate {
+    class ListAdaptiveMtSentencesResponse extends \Google\Collection
     {
+        protected $collection_key = 'adaptiveMtSentences';
+        protected $adaptiveMtSentencesType = AdaptiveMtSentence::class;
+        protected $adaptiveMtSentencesDataType = 'array';
+        /**
+         * Optional.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. The list of AdaptiveMtSentences.
+         *
+         * @param AdaptiveMtSentence[] $adaptiveMtSentences
+         */
+        public function setAdaptiveMtSentences($adaptiveMtSentences)
+        {
+        }
+        /**
+         * @return AdaptiveMtSentence[]
+         */
+        public function getAdaptiveMtSentences()
+        {
+        }
+        /**
+         * Optional.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptiveMtSentence[]
+     * Runtime class alias of \Google\Service\Translate\ListAdaptiveMtSentencesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptiveMtSentences()
-    {
-    }
-    /**
-     * Optional.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Translate_ListAdaptiveMtSentencesResponse extends \Google\Service\Translate\ListAdaptiveMtSentencesResponse
     {
     }
 }

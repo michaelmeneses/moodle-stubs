@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ProducerPscConfig extends \Google\Model
-{
-    protected $automatedDnsCreationSpecType = AutomatedDnsCreationSpec::class;
-    protected $automatedDnsCreationSpecDataType = '';
-    /**
-     * The resource path of a service attachment. Example:
-     * projects/{projectNumOrId}/regions/{region}/serviceAttachments/{resourceId}.
-     *
-     * @var string
-     */
-    public $serviceAttachmentUri;
-    /**
-     * Optional. The specification for automatically creating a DNS record for
-     * this PSC connection.
-     *
-     * @param AutomatedDnsCreationSpec $automatedDnsCreationSpec
-     */
-    public function setAutomatedDnsCreationSpec(AutomatedDnsCreationSpec $automatedDnsCreationSpec)
+namespace Google\Service\Networkconnectivity {
+    class ProducerPscConfig extends \Google\Model
     {
+        protected $automatedDnsCreationSpecType = AutomatedDnsCreationSpec::class;
+        protected $automatedDnsCreationSpecDataType = '';
+        /**
+         * The resource path of a service attachment. Example:
+         * projects/{projectNumOrId}/regions/{region}/serviceAttachments/{resourceId}.
+         *
+         * @var string
+         */
+        public $serviceAttachmentUri;
+        /**
+         * Optional. The specification for automatically creating a DNS record for
+         * this PSC connection.
+         *
+         * @param AutomatedDnsCreationSpec $automatedDnsCreationSpec
+         */
+        public function setAutomatedDnsCreationSpec(AutomatedDnsCreationSpec $automatedDnsCreationSpec)
+        {
+        }
+        /**
+         * @return AutomatedDnsCreationSpec
+         */
+        public function getAutomatedDnsCreationSpec()
+        {
+        }
+        /**
+         * The resource path of a service attachment. Example:
+         * projects/{projectNumOrId}/regions/{region}/serviceAttachments/{resourceId}.
+         *
+         * @param string $serviceAttachmentUri
+         */
+        public function setServiceAttachmentUri($serviceAttachmentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachmentUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutomatedDnsCreationSpec
+     * Runtime class alias of \Google\Service\Networkconnectivity\ProducerPscConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomatedDnsCreationSpec()
-    {
-    }
-    /**
-     * The resource path of a service attachment. Example:
-     * projects/{projectNumOrId}/regions/{region}/serviceAttachments/{resourceId}.
-     *
-     * @param string $serviceAttachmentUri
-     */
-    public function setServiceAttachmentUri($serviceAttachmentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachmentUri()
+    class Google_Service_Networkconnectivity_ProducerPscConfig extends \Google\Service\Networkconnectivity\ProducerPscConfig
     {
     }
 }

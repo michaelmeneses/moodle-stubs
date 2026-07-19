@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class PolicyOperationMetadata extends \Google\Model
-{
-    public $createTime;
-    public function setCreateTime($createTime)
+namespace Google\Service\Iam {
+    class PolicyOperationMetadata extends \Google\Model
     {
+        public $createTime;
+        public function setCreateTime($createTime)
+        {
+        }
+        public function getCreateTime()
+        {
+        }
     }
-    public function getCreateTime()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Iam\PolicyOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Iam_PolicyOperationMetadata extends \Google\Service\Iam\PolicyOperationMetadata
     {
     }
 }

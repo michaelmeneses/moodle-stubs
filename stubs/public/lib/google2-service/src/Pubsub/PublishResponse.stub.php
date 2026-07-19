@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class PublishResponse extends \Google\Collection
-{
-    protected $collection_key = 'messageIds';
-    /**
-     * Optional. The server-assigned ID of each published message, in the same
-     * order as the messages in the request. IDs are guaranteed to be unique
-     * within the topic.
-     *
-     * @var string[]
-     */
-    public $messageIds;
-    /**
-     * Optional. The server-assigned ID of each published message, in the same
-     * order as the messages in the request. IDs are guaranteed to be unique
-     * within the topic.
-     *
-     * @param string[] $messageIds
-     */
-    public function setMessageIds($messageIds)
+namespace Google\Service\Pubsub {
+    class PublishResponse extends \Google\Collection
     {
+        protected $collection_key = 'messageIds';
+        /**
+         * Optional. The server-assigned ID of each published message, in the same
+         * order as the messages in the request. IDs are guaranteed to be unique
+         * within the topic.
+         *
+         * @var string[]
+         */
+        public $messageIds;
+        /**
+         * Optional. The server-assigned ID of each published message, in the same
+         * order as the messages in the request. IDs are guaranteed to be unique
+         * within the topic.
+         *
+         * @param string[] $messageIds
+         */
+        public function setMessageIds($messageIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMessageIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Pubsub\PublishResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageIds()
+    class Google_Service_Pubsub_PublishResponse extends \Google\Service\Pubsub\PublishResponse
     {
     }
 }

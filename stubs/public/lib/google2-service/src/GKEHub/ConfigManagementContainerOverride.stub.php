@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementContainerOverride extends \Google\Model
-{
-    /**
-     * Required. The name of the container.
-     *
-     * @var string
-     */
-    public $containerName;
-    /**
-     * Optional. The cpu limit of the container.
-     *
-     * @var string
-     */
-    public $cpuLimit;
-    /**
-     * Optional. The cpu request of the container.
-     *
-     * @var string
-     */
-    public $cpuRequest;
-    /**
-     * Optional. The memory limit of the container.
-     *
-     * @var string
-     */
-    public $memoryLimit;
-    /**
-     * Optional. The memory request of the container.
-     *
-     * @var string
-     */
-    public $memoryRequest;
-    /**
-     * Required. The name of the container.
-     *
-     * @param string $containerName
-     */
-    public function setContainerName($containerName)
+namespace Google\Service\GKEHub {
+    class ConfigManagementContainerOverride extends \Google\Model
     {
+        /**
+         * Required. The name of the container.
+         *
+         * @var string
+         */
+        public $containerName;
+        /**
+         * Optional. The cpu limit of the container.
+         *
+         * @var string
+         */
+        public $cpuLimit;
+        /**
+         * Optional. The cpu request of the container.
+         *
+         * @var string
+         */
+        public $cpuRequest;
+        /**
+         * Optional. The memory limit of the container.
+         *
+         * @var string
+         */
+        public $memoryLimit;
+        /**
+         * Optional. The memory request of the container.
+         *
+         * @var string
+         */
+        public $memoryRequest;
+        /**
+         * Required. The name of the container.
+         *
+         * @param string $containerName
+         */
+        public function setContainerName($containerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerName()
+        {
+        }
+        /**
+         * Optional. The cpu limit of the container.
+         *
+         * @param string $cpuLimit
+         */
+        public function setCpuLimit($cpuLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuLimit()
+        {
+        }
+        /**
+         * Optional. The cpu request of the container.
+         *
+         * @param string $cpuRequest
+         */
+        public function setCpuRequest($cpuRequest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuRequest()
+        {
+        }
+        /**
+         * Optional. The memory limit of the container.
+         *
+         * @param string $memoryLimit
+         */
+        public function setMemoryLimit($memoryLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryLimit()
+        {
+        }
+        /**
+         * Optional. The memory request of the container.
+         *
+         * @param string $memoryRequest
+         */
+        public function setMemoryRequest($memoryRequest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementContainerOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerName()
-    {
-    }
-    /**
-     * Optional. The cpu limit of the container.
-     *
-     * @param string $cpuLimit
-     */
-    public function setCpuLimit($cpuLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpuLimit()
-    {
-    }
-    /**
-     * Optional. The cpu request of the container.
-     *
-     * @param string $cpuRequest
-     */
-    public function setCpuRequest($cpuRequest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpuRequest()
-    {
-    }
-    /**
-     * Optional. The memory limit of the container.
-     *
-     * @param string $memoryLimit
-     */
-    public function setMemoryLimit($memoryLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryLimit()
-    {
-    }
-    /**
-     * Optional. The memory request of the container.
-     *
-     * @param string $memoryRequest
-     */
-    public function setMemoryRequest($memoryRequest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryRequest()
+    class Google_Service_GKEHub_ConfigManagementContainerOverride extends \Google\Service\GKEHub\ConfigManagementContainerOverride
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataTransfer;
-
-class Application extends \Google\Collection
-{
-    protected $collection_key = 'transferParams';
-    /**
-     * Etag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The application's ID. Retrievable by using the
-     * [`applications.list()`](https://developers.google.com/workspace/admin/data-
-     * transfer/reference/rest/v1/applications/list) method.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies the resource as a DataTransfer Application Resource.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The application's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $transferParamsType = ApplicationTransferParam::class;
-    protected $transferParamsDataType = 'array';
-    /**
-     * Etag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\DataTransfer {
+    class Application extends \Google\Collection
     {
+        protected $collection_key = 'transferParams';
+        /**
+         * Etag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The application's ID. Retrievable by using the
+         * [`applications.list()`](https://developers.google.com/workspace/admin/data-
+         * transfer/reference/rest/v1/applications/list) method.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies the resource as a DataTransfer Application Resource.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The application's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $transferParamsType = ApplicationTransferParam::class;
+        protected $transferParamsDataType = 'array';
+        /**
+         * Etag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The application's ID. Retrievable by using the
+         * [`applications.list()`](https://developers.google.com/workspace/admin/data-
+         * transfer/reference/rest/v1/applications/list) method.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies the resource as a DataTransfer Application Resource.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The application's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The list of all possible transfer parameters for this application. These
+         * parameters select which categories of the user's data to transfer.
+         *
+         * @param ApplicationTransferParam[] $transferParams
+         */
+        public function setTransferParams($transferParams)
+        {
+        }
+        /**
+         * @return ApplicationTransferParam[]
+         */
+        public function getTransferParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataTransfer\Application registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The application's ID. Retrievable by using the
-     * [`applications.list()`](https://developers.google.com/workspace/admin/data-
-     * transfer/reference/rest/v1/applications/list) method.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies the resource as a DataTransfer Application Resource.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The application's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The list of all possible transfer parameters for this application. These
-     * parameters select which categories of the user's data to transfer.
-     *
-     * @param ApplicationTransferParam[] $transferParams
-     */
-    public function setTransferParams($transferParams)
-    {
-    }
-    /**
-     * @return ApplicationTransferParam[]
-     */
-    public function getTransferParams()
+    class Google_Service_DataTransfer_Application extends \Google\Service\DataTransfer\Application
     {
     }
 }

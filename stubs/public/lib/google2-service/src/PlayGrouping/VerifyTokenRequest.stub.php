@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayGrouping;
-
-class VerifyTokenRequest extends \Google\Model
-{
-    /**
-     * Required. Persona represented by the token. Format: personas/{persona}
-     *
-     * @var string
-     */
-    public $persona;
-    /**
-     * Required. Persona represented by the token. Format: personas/{persona}
-     *
-     * @param string $persona
-     */
-    public function setPersona($persona)
+namespace Google\Service\PlayGrouping {
+    class VerifyTokenRequest extends \Google\Model
     {
+        /**
+         * Required. Persona represented by the token. Format: personas/{persona}
+         *
+         * @var string
+         */
+        public $persona;
+        /**
+         * Required. Persona represented by the token. Format: personas/{persona}
+         *
+         * @param string $persona
+         */
+        public function setPersona($persona)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPersona()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayGrouping\VerifyTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPersona()
+    class Google_Service_PlayGrouping_VerifyTokenRequest extends \Google\Service\PlayGrouping\VerifyTokenRequest
     {
     }
 }

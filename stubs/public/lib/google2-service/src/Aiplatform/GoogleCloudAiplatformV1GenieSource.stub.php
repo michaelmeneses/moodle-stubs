@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenieSource extends \Google\Model
-{
-    /**
-     * Required. The public base model URI.
-     *
-     * @var string
-     */
-    public $baseModelUri;
-    /**
-     * Required. The public base model URI.
-     *
-     * @param string $baseModelUri
-     */
-    public function setBaseModelUri($baseModelUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenieSource extends \Google\Model
     {
+        /**
+         * Required. The public base model URI.
+         *
+         * @var string
+         */
+        public $baseModelUri;
+        /**
+         * Required. The public base model URI.
+         *
+         * @param string $baseModelUri
+         */
+        public function setBaseModelUri($baseModelUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseModelUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenieSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseModelUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenieSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenieSource
     {
     }
 }

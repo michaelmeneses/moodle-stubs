@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class RestoreBackupResponse extends \Google\Model
-{
-    protected $targetResourceType = TargetResource::class;
-    protected $targetResourceDataType = '';
-    /**
-     * Details of the target resource created/modified as part of restore.
-     *
-     * @param TargetResource $targetResource
-     */
-    public function setTargetResource(TargetResource $targetResource)
+namespace Google\Service\Backupdr {
+    class RestoreBackupResponse extends \Google\Model
     {
+        protected $targetResourceType = TargetResource::class;
+        protected $targetResourceDataType = '';
+        /**
+         * Details of the target resource created/modified as part of restore.
+         *
+         * @param TargetResource $targetResource
+         */
+        public function setTargetResource(TargetResource $targetResource)
+        {
+        }
+        /**
+         * @return TargetResource
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetResource
+     * Runtime class alias of \Google\Service\Backupdr\RestoreBackupResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetResource()
+    class Google_Service_Backupdr_RestoreBackupResponse extends \Google\Service\Backupdr\RestoreBackupResponse
     {
     }
 }

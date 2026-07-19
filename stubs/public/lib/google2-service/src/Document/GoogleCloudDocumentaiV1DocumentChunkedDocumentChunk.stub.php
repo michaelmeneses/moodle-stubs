@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk extends \Google\Collection
-{
-    protected $collection_key = 'sourceBlockIds';
-    /**
-     * ID of the chunk.
-     *
-     * @var string
-     */
-    public $chunkId;
-    /**
-     * Text content of the chunk.
-     *
-     * @var string
-     */
-    public $content;
-    protected $pageFootersType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter::class;
-    protected $pageFootersDataType = 'array';
-    protected $pageHeadersType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageHeader::class;
-    protected $pageHeadersDataType = 'array';
-    protected $pageSpanType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan::class;
-    protected $pageSpanDataType = '';
-    /**
-     * Unused.
-     *
-     * @var string[]
-     */
-    public $sourceBlockIds;
-    /**
-     * ID of the chunk.
-     *
-     * @param string $chunkId
-     */
-    public function setChunkId($chunkId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk extends \Google\Collection
     {
+        protected $collection_key = 'sourceBlockIds';
+        /**
+         * ID of the chunk.
+         *
+         * @var string
+         */
+        public $chunkId;
+        /**
+         * Text content of the chunk.
+         *
+         * @var string
+         */
+        public $content;
+        protected $pageFootersType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter::class;
+        protected $pageFootersDataType = 'array';
+        protected $pageHeadersType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageHeader::class;
+        protected $pageHeadersDataType = 'array';
+        protected $pageSpanType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan::class;
+        protected $pageSpanDataType = '';
+        /**
+         * Unused.
+         *
+         * @var string[]
+         */
+        public $sourceBlockIds;
+        /**
+         * ID of the chunk.
+         *
+         * @param string $chunkId
+         */
+        public function setChunkId($chunkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkId()
+        {
+        }
+        /**
+         * Text content of the chunk.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Page footers associated with the chunk.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter[] $pageFooters
+         */
+        public function setPageFooters($pageFooters)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter[]
+         */
+        public function getPageFooters()
+        {
+        }
+        /**
+         * Page headers associated with the chunk.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageHeader[] $pageHeaders
+         */
+        public function setPageHeaders($pageHeaders)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageHeader[]
+         */
+        public function getPageHeaders()
+        {
+        }
+        /**
+         * Page span of the chunk.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan
+         */
+        public function setPageSpan(GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan
+         */
+        public function getPageSpan()
+        {
+        }
+        /**
+         * Unused.
+         *
+         * @param string[] $sourceBlockIds
+         */
+        public function setSourceBlockIds($sourceBlockIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceBlockIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkId()
-    {
-    }
-    /**
-     * Text content of the chunk.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Page footers associated with the chunk.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter[] $pageFooters
-     */
-    public function setPageFooters($pageFooters)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter[]
-     */
-    public function getPageFooters()
-    {
-    }
-    /**
-     * Page headers associated with the chunk.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageHeader[] $pageHeaders
-     */
-    public function setPageHeaders($pageHeaders)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageHeader[]
-     */
-    public function getPageHeaders()
-    {
-    }
-    /**
-     * Page span of the chunk.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan
-     */
-    public function setPageSpan(GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan
-     */
-    public function getPageSpan()
-    {
-    }
-    /**
-     * Unused.
-     *
-     * @param string[] $sourceBlockIds
-     */
-    public function setSourceBlockIds($sourceBlockIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceBlockIds()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk
     {
     }
 }

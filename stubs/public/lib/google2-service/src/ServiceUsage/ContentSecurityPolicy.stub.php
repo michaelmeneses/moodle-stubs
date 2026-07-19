@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ContentSecurityPolicy extends \Google\Model
-{
-    protected $mcpContentSecurityType = ContentSecurity::class;
-    protected $mcpContentSecurityDataType = '';
-    /**
-     * Output only. The resource name of the policy. Only the `default` policy is
-     * supported. We allow the following formats:
-     * `projects/{PROJECT_NUMBER}/contentSecurityPolicies/default`,
-     * `projects/{PROJECT_ID}/contentSecurityPolicies/default`, We only support
-     * project level content security policy for now.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * mcp_content_security contains the content security related settings at
-     * resource level for MCP traffic.
-     *
-     * @param ContentSecurity $mcpContentSecurity
-     */
-    public function setMcpContentSecurity(ContentSecurity $mcpContentSecurity)
+namespace Google\Service\ServiceUsage {
+    class ContentSecurityPolicy extends \Google\Model
     {
+        protected $mcpContentSecurityType = ContentSecurity::class;
+        protected $mcpContentSecurityDataType = '';
+        /**
+         * Output only. The resource name of the policy. Only the `default` policy is
+         * supported. We allow the following formats:
+         * `projects/{PROJECT_NUMBER}/contentSecurityPolicies/default`,
+         * `projects/{PROJECT_ID}/contentSecurityPolicies/default`, We only support
+         * project level content security policy for now.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * mcp_content_security contains the content security related settings at
+         * resource level for MCP traffic.
+         *
+         * @param ContentSecurity $mcpContentSecurity
+         */
+        public function setMcpContentSecurity(ContentSecurity $mcpContentSecurity)
+        {
+        }
+        /**
+         * @return ContentSecurity
+         */
+        public function getMcpContentSecurity()
+        {
+        }
+        /**
+         * Output only. The resource name of the policy. Only the `default` policy is
+         * supported. We allow the following formats:
+         * `projects/{PROJECT_NUMBER}/contentSecurityPolicies/default`,
+         * `projects/{PROJECT_ID}/contentSecurityPolicies/default`, We only support
+         * project level content security policy for now.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContentSecurity
+     * Runtime class alias of \Google\Service\ServiceUsage\ContentSecurityPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMcpContentSecurity()
-    {
-    }
-    /**
-     * Output only. The resource name of the policy. Only the `default` policy is
-     * supported. We allow the following formats:
-     * `projects/{PROJECT_NUMBER}/contentSecurityPolicies/default`,
-     * `projects/{PROJECT_ID}/contentSecurityPolicies/default`, We only support
-     * project level content security policy for now.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ServiceUsage_ContentSecurityPolicy extends \Google\Service\ServiceUsage\ContentSecurityPolicy
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Secret extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $secretVersion;
-    /**
-     * @param string
-     */
-    public function setSecretVersion($secretVersion)
+namespace Google\Service\Connectors {
+    class Secret extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $secretVersion;
+        /**
+         * @param string
+         */
+        public function setSecretVersion($secretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretVersion()
+    class Google_Service_Connectors_Secret extends \Google\Service\Connectors\Secret
     {
     }
 }

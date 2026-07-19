@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ChatConserverDynamitePlaceholderMetadataVideoCallMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $meetingUrl;
-    /**
-     * @param string
-     */
-    public function setMeetingUrl($meetingUrl)
+namespace Google\Service\CloudSearch {
+    class ChatConserverDynamitePlaceholderMetadataVideoCallMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $meetingUrl;
+        /**
+         * @param string
+         */
+        public function setMeetingUrl($meetingUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ChatConserverDynamitePlaceholderMetadataVideoCallMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeetingUrl()
+    class Google_Service_CloudSearch_ChatConserverDynamitePlaceholderMetadataVideoCallMetadata extends \Google\Service\CloudSearch\ChatConserverDynamitePlaceholderMetadataVideoCallMetadata
     {
     }
 }

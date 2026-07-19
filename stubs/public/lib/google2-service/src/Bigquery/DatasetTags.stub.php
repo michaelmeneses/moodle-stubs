@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DatasetTags extends \Google\Model
-{
-    /**
-     * Required. The namespaced friendly name of the tag key, e.g.
-     * "12345/environment" where 12345 is org id.
-     *
-     * @var string
-     */
-    public $tagKey;
-    /**
-     * Required. The friendly short name of the tag value, e.g. "production".
-     *
-     * @var string
-     */
-    public $tagValue;
-    /**
-     * Required. The namespaced friendly name of the tag key, e.g.
-     * "12345/environment" where 12345 is org id.
-     *
-     * @param string $tagKey
-     */
-    public function setTagKey($tagKey)
+namespace Google\Service\Bigquery {
+    class DatasetTags extends \Google\Model
     {
+        /**
+         * Required. The namespaced friendly name of the tag key, e.g.
+         * "12345/environment" where 12345 is org id.
+         *
+         * @var string
+         */
+        public $tagKey;
+        /**
+         * Required. The friendly short name of the tag value, e.g. "production".
+         *
+         * @var string
+         */
+        public $tagValue;
+        /**
+         * Required. The namespaced friendly name of the tag key, e.g.
+         * "12345/environment" where 12345 is org id.
+         *
+         * @param string $tagKey
+         */
+        public function setTagKey($tagKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagKey()
+        {
+        }
+        /**
+         * Required. The friendly short name of the tag value, e.g. "production".
+         *
+         * @param string $tagValue
+         */
+        public function setTagValue($tagValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\DatasetTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTagKey()
-    {
-    }
-    /**
-     * Required. The friendly short name of the tag value, e.g. "production".
-     *
-     * @param string $tagValue
-     */
-    public function setTagValue($tagValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagValue()
+    class Google_Service_Bigquery_DatasetTags extends \Google\Service\Bigquery\DatasetTags
     {
     }
 }

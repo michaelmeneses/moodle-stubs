@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RolloutState extends \Google\Model
-{
-    /**
-     * Start time of the current step.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Display name of the current auto rollout step.
-     *
-     * @var string
-     */
-    public $step;
-    /**
-     * Index of the current step in the auto rollout steps list.
-     *
-     * @var int
-     */
-    public $stepIndex;
-    /**
-     * Start time of the current step.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RolloutState extends \Google\Model
     {
+        /**
+         * Start time of the current step.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Display name of the current auto rollout step.
+         *
+         * @var string
+         */
+        public $step;
+        /**
+         * Index of the current step in the auto rollout steps list.
+         *
+         * @var int
+         */
+        public $stepIndex;
+        /**
+         * Start time of the current step.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Display name of the current auto rollout step.
+         *
+         * @param string $step
+         */
+        public function setStep($step)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStep()
+        {
+        }
+        /**
+         * Index of the current step in the auto rollout steps list.
+         *
+         * @param int $stepIndex
+         */
+        public function setStepIndex($stepIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStepIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RolloutState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Display name of the current auto rollout step.
-     *
-     * @param string $step
-     */
-    public function setStep($step)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStep()
-    {
-    }
-    /**
-     * Index of the current step in the auto rollout steps list.
-     *
-     * @param int $stepIndex
-     */
-    public function setStepIndex($stepIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStepIndex()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RolloutState extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RolloutState
     {
     }
 }

@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class SchemaVersion extends \Google\Collection
-{
-    /**
-     * No schema type. The default will be AVRO.
-     */
-    public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
-    /**
-     * Avro schema type.
-     */
-    public const SCHEMA_TYPE_AVRO = 'AVRO';
-    /**
-     * JSON schema type.
-     */
-    public const SCHEMA_TYPE_JSON = 'JSON';
-    /**
-     * Protobuf schema type.
-     */
-    public const SCHEMA_TYPE_PROTOBUF = 'PROTOBUF';
-    protected $collection_key = 'references';
-    /**
-     * Required. The schema ID.
-     *
-     * @var int
-     */
-    public $id;
-    protected $referencesType = SchemaReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * Required. The schema payload.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Optional. The schema type of the schema.
-     *
-     * @var string
-     */
-    public $schemaType;
-    /**
-     * Required. The subject of the version.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * Required. The version ID
-     *
-     * @var int
-     */
-    public $version;
-    /**
-     * Required. The schema ID.
-     *
-     * @param int $id
-     */
-    public function setId($id)
+namespace Google\Service\ManagedKafka {
+    class SchemaVersion extends \Google\Collection
     {
+        /**
+         * No schema type. The default will be AVRO.
+         */
+        public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
+        /**
+         * Avro schema type.
+         */
+        public const SCHEMA_TYPE_AVRO = 'AVRO';
+        /**
+         * JSON schema type.
+         */
+        public const SCHEMA_TYPE_JSON = 'JSON';
+        /**
+         * Protobuf schema type.
+         */
+        public const SCHEMA_TYPE_PROTOBUF = 'PROTOBUF';
+        protected $collection_key = 'references';
+        /**
+         * Required. The schema ID.
+         *
+         * @var int
+         */
+        public $id;
+        protected $referencesType = SchemaReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * Required. The schema payload.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Optional. The schema type of the schema.
+         *
+         * @var string
+         */
+        public $schemaType;
+        /**
+         * Required. The subject of the version.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * Required. The version ID
+         *
+         * @var int
+         */
+        public $version;
+        /**
+         * Required. The schema ID.
+         *
+         * @param int $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. The schema references used by the schema.
+         *
+         * @param SchemaReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return SchemaReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Required. The schema payload.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Optional. The schema type of the schema.
+         *
+         * Accepted values: SCHEMA_TYPE_UNSPECIFIED, AVRO, JSON, PROTOBUF
+         *
+         * @param self::SCHEMA_TYPE_* $schemaType
+         */
+        public function setSchemaType($schemaType)
+        {
+        }
+        /**
+         * @return self::SCHEMA_TYPE_*
+         */
+        public function getSchemaType()
+        {
+        }
+        /**
+         * Required. The subject of the version.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * Required. The version ID
+         *
+         * @param int $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ManagedKafka\SchemaVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. The schema references used by the schema.
-     *
-     * @param SchemaReference[] $references
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return SchemaReference[]
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * Required. The schema payload.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * Optional. The schema type of the schema.
-     *
-     * Accepted values: SCHEMA_TYPE_UNSPECIFIED, AVRO, JSON, PROTOBUF
-     *
-     * @param self::SCHEMA_TYPE_* $schemaType
-     */
-    public function setSchemaType($schemaType)
-    {
-    }
-    /**
-     * @return self::SCHEMA_TYPE_*
-     */
-    public function getSchemaType()
-    {
-    }
-    /**
-     * Required. The subject of the version.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
-    {
-    }
-    /**
-     * Required. The version ID
-     *
-     * @param int $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_ManagedKafka_SchemaVersion extends \Google\Service\ManagedKafka\SchemaVersion
     {
     }
 }

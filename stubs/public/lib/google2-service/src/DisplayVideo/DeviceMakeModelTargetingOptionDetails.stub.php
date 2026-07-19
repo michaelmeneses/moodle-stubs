@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DeviceMakeModelTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Output only. The display name of the device make and model.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The display name of the device make and model.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class DeviceMakeModelTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Output only. The display name of the device make and model.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The display name of the device make and model.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\DeviceMakeModelTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_DisplayVideo_DeviceMakeModelTargetingOptionDetails extends \Google\Service\DisplayVideo\DeviceMakeModelTargetingOptionDetails
     {
     }
 }

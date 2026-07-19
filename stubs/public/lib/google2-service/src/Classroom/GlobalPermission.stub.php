@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class GlobalPermission extends \Google\Model
-{
-    /**
-     * No permission is specified. This is not returned and is not a valid value.
-     */
-    public const PERMISSION_PERMISSION_UNSPECIFIED = 'PERMISSION_UNSPECIFIED';
-    /**
-     * User is permitted to create a course.
-     */
-    public const PERMISSION_CREATE_COURSE = 'CREATE_COURSE';
-    /**
-     * Permission value.
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * Permission value.
-     *
-     * Accepted values: PERMISSION_UNSPECIFIED, CREATE_COURSE
-     *
-     * @param self::PERMISSION_* $permission
-     */
-    public function setPermission($permission)
+namespace Google\Service\Classroom {
+    class GlobalPermission extends \Google\Model
     {
+        /**
+         * No permission is specified. This is not returned and is not a valid value.
+         */
+        public const PERMISSION_PERMISSION_UNSPECIFIED = 'PERMISSION_UNSPECIFIED';
+        /**
+         * User is permitted to create a course.
+         */
+        public const PERMISSION_CREATE_COURSE = 'CREATE_COURSE';
+        /**
+         * Permission value.
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * Permission value.
+         *
+         * Accepted values: PERMISSION_UNSPECIFIED, CREATE_COURSE
+         *
+         * @param self::PERMISSION_* $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return self::PERMISSION_*
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PERMISSION_*
+     * Runtime class alias of \Google\Service\Classroom\GlobalPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermission()
+    class Google_Service_Classroom_GlobalPermission extends \Google\Service\Classroom\GlobalPermission
     {
     }
 }

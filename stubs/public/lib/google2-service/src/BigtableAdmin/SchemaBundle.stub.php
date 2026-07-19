@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class SchemaBundle extends \Google\Model
-{
-    /**
-     * Optional. The etag for this schema bundle. This may be sent on update and
-     * delete requests to ensure the client has an up-to-date value before
-     * proceeding. The server returns an ABORTED error on a mismatched etag.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier. The unique name identifying this schema bundle. Values are of
-     * the form `projects/{project}/instances/{instance}/tables/{table}/schemaBund
-     * les/{schema_bundle}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $protoSchemaType = ProtoSchema::class;
-    protected $protoSchemaDataType = '';
-    /**
-     * Optional. The etag for this schema bundle. This may be sent on update and
-     * delete requests to ensure the client has an up-to-date value before
-     * proceeding. The server returns an ABORTED error on a mismatched etag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\BigtableAdmin {
+    class SchemaBundle extends \Google\Model
     {
+        /**
+         * Optional. The etag for this schema bundle. This may be sent on update and
+         * delete requests to ensure the client has an up-to-date value before
+         * proceeding. The server returns an ABORTED error on a mismatched etag.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier. The unique name identifying this schema bundle. Values are of
+         * the form `projects/{project}/instances/{instance}/tables/{table}/schemaBund
+         * les/{schema_bundle}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $protoSchemaType = ProtoSchema::class;
+        protected $protoSchemaDataType = '';
+        /**
+         * Optional. The etag for this schema bundle. This may be sent on update and
+         * delete requests to ensure the client has an up-to-date value before
+         * proceeding. The server returns an ABORTED error on a mismatched etag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier. The unique name identifying this schema bundle. Values are of
+         * the form `projects/{project}/instances/{instance}/tables/{table}/schemaBund
+         * les/{schema_bundle}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Schema for Protobufs.
+         *
+         * @param ProtoSchema $protoSchema
+         */
+        public function setProtoSchema(ProtoSchema $protoSchema)
+        {
+        }
+        /**
+         * @return ProtoSchema
+         */
+        public function getProtoSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\SchemaBundle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier. The unique name identifying this schema bundle. Values are of
-     * the form `projects/{project}/instances/{instance}/tables/{table}/schemaBund
-     * les/{schema_bundle}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Schema for Protobufs.
-     *
-     * @param ProtoSchema $protoSchema
-     */
-    public function setProtoSchema(ProtoSchema $protoSchema)
-    {
-    }
-    /**
-     * @return ProtoSchema
-     */
-    public function getProtoSchema()
+    class Google_Service_BigtableAdmin_SchemaBundle extends \Google\Service\BigtableAdmin\SchemaBundle
     {
     }
 }

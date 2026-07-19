@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class MappingRuleFilter extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    /**
-     * Optional. The rule should be applied to specific entities defined by their
-     * fully qualified names.
-     *
-     * @var string[]
-     */
-    public $entities;
-    /**
-     * Optional. The rule should be applied to entities whose non-qualified name
-     * contains the given string.
-     *
-     * @var string
-     */
-    public $entityNameContains;
-    /**
-     * Optional. The rule should be applied to entities whose non-qualified name
-     * starts with the given prefix.
-     *
-     * @var string
-     */
-    public $entityNamePrefix;
-    /**
-     * Optional. The rule should be applied to entities whose non-qualified name
-     * ends with the given suffix.
-     *
-     * @var string
-     */
-    public $entityNameSuffix;
-    /**
-     * Optional. The rule should be applied to entities whose parent entity (fully
-     * qualified name) matches the given value. For example, if the rule applies
-     * to a table entity, the expected value should be a schema (schema). If the
-     * rule applies to a column or index entity, the expected value can be either
-     * a schema (schema) or a table (schema.table)
-     *
-     * @var string
-     */
-    public $parentEntity;
-    /**
-     * Optional. The rule should be applied to specific entities defined by their
-     * fully qualified names.
-     *
-     * @param string[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\DatabaseMigrationService {
+    class MappingRuleFilter extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        /**
+         * Optional. The rule should be applied to specific entities defined by their
+         * fully qualified names.
+         *
+         * @var string[]
+         */
+        public $entities;
+        /**
+         * Optional. The rule should be applied to entities whose non-qualified name
+         * contains the given string.
+         *
+         * @var string
+         */
+        public $entityNameContains;
+        /**
+         * Optional. The rule should be applied to entities whose non-qualified name
+         * starts with the given prefix.
+         *
+         * @var string
+         */
+        public $entityNamePrefix;
+        /**
+         * Optional. The rule should be applied to entities whose non-qualified name
+         * ends with the given suffix.
+         *
+         * @var string
+         */
+        public $entityNameSuffix;
+        /**
+         * Optional. The rule should be applied to entities whose parent entity (fully
+         * qualified name) matches the given value. For example, if the rule applies
+         * to a table entity, the expected value should be a schema (schema). If the
+         * rule applies to a column or index entity, the expected value can be either
+         * a schema (schema) or a table (schema.table)
+         *
+         * @var string
+         */
+        public $parentEntity;
+        /**
+         * Optional. The rule should be applied to specific entities defined by their
+         * fully qualified names.
+         *
+         * @param string[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * Optional. The rule should be applied to entities whose non-qualified name
+         * contains the given string.
+         *
+         * @param string $entityNameContains
+         */
+        public function setEntityNameContains($entityNameContains)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityNameContains()
+        {
+        }
+        /**
+         * Optional. The rule should be applied to entities whose non-qualified name
+         * starts with the given prefix.
+         *
+         * @param string $entityNamePrefix
+         */
+        public function setEntityNamePrefix($entityNamePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityNamePrefix()
+        {
+        }
+        /**
+         * Optional. The rule should be applied to entities whose non-qualified name
+         * ends with the given suffix.
+         *
+         * @param string $entityNameSuffix
+         */
+        public function setEntityNameSuffix($entityNameSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityNameSuffix()
+        {
+        }
+        /**
+         * Optional. The rule should be applied to entities whose parent entity (fully
+         * qualified name) matches the given value. For example, if the rule applies
+         * to a table entity, the expected value should be a schema (schema). If the
+         * rule applies to a column or index entity, the expected value can be either
+         * a schema (schema) or a table (schema.table)
+         *
+         * @param string $parentEntity
+         */
+        public function setParentEntity($parentEntity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentEntity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\MappingRuleFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * Optional. The rule should be applied to entities whose non-qualified name
-     * contains the given string.
-     *
-     * @param string $entityNameContains
-     */
-    public function setEntityNameContains($entityNameContains)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityNameContains()
-    {
-    }
-    /**
-     * Optional. The rule should be applied to entities whose non-qualified name
-     * starts with the given prefix.
-     *
-     * @param string $entityNamePrefix
-     */
-    public function setEntityNamePrefix($entityNamePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityNamePrefix()
-    {
-    }
-    /**
-     * Optional. The rule should be applied to entities whose non-qualified name
-     * ends with the given suffix.
-     *
-     * @param string $entityNameSuffix
-     */
-    public function setEntityNameSuffix($entityNameSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityNameSuffix()
-    {
-    }
-    /**
-     * Optional. The rule should be applied to entities whose parent entity (fully
-     * qualified name) matches the given value. For example, if the rule applies
-     * to a table entity, the expected value should be a schema (schema). If the
-     * rule applies to a column or index entity, the expected value can be either
-     * a schema (schema) or a table (schema.table)
-     *
-     * @param string $parentEntity
-     */
-    public function setParentEntity($parentEntity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentEntity()
+    class Google_Service_DatabaseMigrationService_MappingRuleFilter extends \Google\Service\DatabaseMigrationService\MappingRuleFilter
     {
     }
 }

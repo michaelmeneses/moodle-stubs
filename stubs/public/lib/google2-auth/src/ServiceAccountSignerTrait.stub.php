@@ -23,6 +23,8 @@
  */
 namespace Google\Auth;
 
+use phpseclib3\Crypt\PublicKeyLoader;
+use phpseclib3\Crypt\RSA;
 /**
  * Sign a string using a Service Account private key.
  */

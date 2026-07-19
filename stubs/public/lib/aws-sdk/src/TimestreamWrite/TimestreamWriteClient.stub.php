@@ -8,6 +8,7 @@
  */
 namespace Aws\TimestreamWrite;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Timestream Write** service.
  * @method \Aws\Result createBatchLoadTask(array $args = [])

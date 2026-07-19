@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSStringStats extends \Google\Collection
-{
-    protected $collection_key = 'topUnigramStats';
-    protected $commonStatsType = XPSCommonStats::class;
-    protected $commonStatsDataType = '';
-    protected $topUnigramStatsType = XPSStringStatsUnigramStats::class;
-    protected $topUnigramStatsDataType = 'array';
-    /**
-     * @param XPSCommonStats $commonStats
-     */
-    public function setCommonStats(XPSCommonStats $commonStats)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSStringStats extends \Google\Collection
     {
+        protected $collection_key = 'topUnigramStats';
+        protected $commonStatsType = XPSCommonStats::class;
+        protected $commonStatsDataType = '';
+        protected $topUnigramStatsType = XPSStringStatsUnigramStats::class;
+        protected $topUnigramStatsDataType = 'array';
+        /**
+         * @param XPSCommonStats $commonStats
+         */
+        public function setCommonStats(XPSCommonStats $commonStats)
+        {
+        }
+        /**
+         * @return XPSCommonStats
+         */
+        public function getCommonStats()
+        {
+        }
+        /**
+         * The statistics of the top 20 unigrams, ordered by
+         * StringStats.UnigramStats.count.
+         *
+         * @param XPSStringStatsUnigramStats[] $topUnigramStats
+         */
+        public function setTopUnigramStats($topUnigramStats)
+        {
+        }
+        /**
+         * @return XPSStringStatsUnigramStats[]
+         */
+        public function getTopUnigramStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSCommonStats
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSStringStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonStats()
-    {
-    }
-    /**
-     * The statistics of the top 20 unigrams, ordered by
-     * StringStats.UnigramStats.count.
-     *
-     * @param XPSStringStatsUnigramStats[] $topUnigramStats
-     */
-    public function setTopUnigramStats($topUnigramStats)
-    {
-    }
-    /**
-     * @return XPSStringStatsUnigramStats[]
-     */
-    public function getTopUnigramStats()
+    class Google_Service_CloudNaturalLanguage_XPSStringStats extends \Google\Service\CloudNaturalLanguage\XPSStringStats
     {
     }
 }

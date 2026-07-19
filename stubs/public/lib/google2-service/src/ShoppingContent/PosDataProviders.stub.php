@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PosDataProviders extends \Google\Collection
-{
-    protected $collection_key = 'posDataProviders';
-    /**
-     * Country code.
-     *
-     * @var string
-     */
-    public $country;
-    protected $posDataProvidersType = PosDataProvidersPosDataProvider::class;
-    protected $posDataProvidersDataType = 'array';
-    /**
-     * Country code.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class PosDataProviders extends \Google\Collection
     {
+        protected $collection_key = 'posDataProviders';
+        /**
+         * Country code.
+         *
+         * @var string
+         */
+        public $country;
+        protected $posDataProvidersType = PosDataProvidersPosDataProvider::class;
+        protected $posDataProvidersDataType = 'array';
+        /**
+         * Country code.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * A list of POS data providers.
+         *
+         * @param PosDataProvidersPosDataProvider[] $posDataProviders
+         */
+        public function setPosDataProviders($posDataProviders)
+        {
+        }
+        /**
+         * @return PosDataProvidersPosDataProvider[]
+         */
+        public function getPosDataProviders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PosDataProviders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * A list of POS data providers.
-     *
-     * @param PosDataProvidersPosDataProvider[] $posDataProviders
-     */
-    public function setPosDataProviders($posDataProviders)
-    {
-    }
-    /**
-     * @return PosDataProvidersPosDataProvider[]
-     */
-    public function getPosDataProviders()
+    class Google_Service_ShoppingContent_PosDataProviders extends \Google\Service\ShoppingContent\PosDataProviders
     {
     }
 }

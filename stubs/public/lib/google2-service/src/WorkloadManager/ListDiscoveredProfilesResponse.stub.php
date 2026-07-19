@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ListDiscoveredProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'workloadProfiles';
-    /**
-     * Output only. A token identifying a page of results the server should return
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $workloadProfilesType = WorkloadProfile::class;
-    protected $workloadProfilesDataType = 'array';
-    /**
-     * Output only. A token identifying a page of results the server should return
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\WorkloadManager {
+    class ListDiscoveredProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'workloadProfiles';
+        /**
+         * Output only. A token identifying a page of results the server should return
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $workloadProfilesType = WorkloadProfile::class;
+        protected $workloadProfilesDataType = 'array';
+        /**
+         * Output only. A token identifying a page of results the server should return
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * Output only. The list of workload profiles
+         *
+         * @param WorkloadProfile[] $workloadProfiles
+         */
+        public function setWorkloadProfiles($workloadProfiles)
+        {
+        }
+        /**
+         * @return WorkloadProfile[]
+         */
+        public function getWorkloadProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ListDiscoveredProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * Output only. The list of workload profiles
-     *
-     * @param WorkloadProfile[] $workloadProfiles
-     */
-    public function setWorkloadProfiles($workloadProfiles)
-    {
-    }
-    /**
-     * @return WorkloadProfile[]
-     */
-    public function getWorkloadProfiles()
+    class Google_Service_WorkloadManager_ListDiscoveredProfilesResponse extends \Google\Service\WorkloadManager\ListDiscoveredProfilesResponse
     {
     }
 }

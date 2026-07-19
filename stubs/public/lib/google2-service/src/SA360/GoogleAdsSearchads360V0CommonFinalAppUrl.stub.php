@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonFinalAppUrl extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const OS_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const OS_TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * The Apple IOS operating system.
-     */
-    public const OS_TYPE_IOS = 'IOS';
-    /**
-     * The Android operating system.
-     */
-    public const OS_TYPE_ANDROID = 'ANDROID';
-    /**
-     * The operating system targeted by this URL. Required.
-     *
-     * @var string
-     */
-    public $osType;
-    /**
-     * The app deep link URL. Deep links specify a location in an app that
-     * corresponds to the content you'd like to show, and should be of the form
-     * {scheme}://{host_path} The scheme identifies which app to open. For your
-     * app, you can use a custom scheme that starts with the app's name. The host
-     * and path specify the unique location in the app where your content exists.
-     * Example: "exampleapp://productid_1234". Required.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The operating system targeted by this URL. Required.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, IOS, ANDROID
-     *
-     * @param self::OS_TYPE_* $osType
-     */
-    public function setOsType($osType)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonFinalAppUrl extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const OS_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const OS_TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * The Apple IOS operating system.
+         */
+        public const OS_TYPE_IOS = 'IOS';
+        /**
+         * The Android operating system.
+         */
+        public const OS_TYPE_ANDROID = 'ANDROID';
+        /**
+         * The operating system targeted by this URL. Required.
+         *
+         * @var string
+         */
+        public $osType;
+        /**
+         * The app deep link URL. Deep links specify a location in an app that
+         * corresponds to the content you'd like to show, and should be of the form
+         * {scheme}://{host_path} The scheme identifies which app to open. For your
+         * app, you can use a custom scheme that starts with the app's name. The host
+         * and path specify the unique location in the app where your content exists.
+         * Example: "exampleapp://productid_1234". Required.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The operating system targeted by this URL. Required.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, IOS, ANDROID
+         *
+         * @param self::OS_TYPE_* $osType
+         */
+        public function setOsType($osType)
+        {
+        }
+        /**
+         * @return self::OS_TYPE_*
+         */
+        public function getOsType()
+        {
+        }
+        /**
+         * The app deep link URL. Deep links specify a location in an app that
+         * corresponds to the content you'd like to show, and should be of the form
+         * {scheme}://{host_path} The scheme identifies which app to open. For your
+         * app, you can use a custom scheme that starts with the app's name. The host
+         * and path specify the unique location in the app where your content exists.
+         * Example: "exampleapp://productid_1234". Required.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OS_TYPE_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonFinalAppUrl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOsType()
-    {
-    }
-    /**
-     * The app deep link URL. Deep links specify a location in an app that
-     * corresponds to the content you'd like to show, and should be of the form
-     * {scheme}://{host_path} The scheme identifies which app to open. For your
-     * app, you can use a custom scheme that starts with the app's name. The host
-     * and path specify the unique location in the app where your content exists.
-     * Example: "exampleapp://productid_1234". Required.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonFinalAppUrl extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonFinalAppUrl
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpec extends \Google\Model
-{
-    protected $querySetSpecType = GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec::class;
-    protected $querySetSpecDataType = '';
-    protected $searchRequestType = GoogleCloudDiscoveryengineV1betaSearchRequest::class;
-    protected $searchRequestDataType = '';
-    /**
-     * Optional. The specification of the query set.
-     *
-     * @param GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec $querySetSpec
-     */
-    public function setQuerySetSpec(GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec $querySetSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpec extends \Google\Model
     {
+        protected $querySetSpecType = GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec::class;
+        protected $querySetSpecDataType = '';
+        protected $searchRequestType = GoogleCloudDiscoveryengineV1betaSearchRequest::class;
+        protected $searchRequestDataType = '';
+        /**
+         * Optional. The specification of the query set.
+         *
+         * @param GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec $querySetSpec
+         */
+        public function setQuerySetSpec(GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec $querySetSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec
+         */
+        public function getQuerySetSpec()
+        {
+        }
+        /**
+         * Required. The search request that is used to perform the evaluation. Only
+         * the following fields within SearchRequest are supported; if any other
+         * fields are provided, an UNSUPPORTED error will be returned: *
+         * SearchRequest.serving_config * SearchRequest.branch *
+         * SearchRequest.canonical_filter * SearchRequest.query_expansion_spec *
+         * SearchRequest.spell_correction_spec * SearchRequest.content_search_spec *
+         * SearchRequest.user_pseudo_id
+         *
+         * @param GoogleCloudDiscoveryengineV1betaSearchRequest $searchRequest
+         */
+        public function setSearchRequest(GoogleCloudDiscoveryengineV1betaSearchRequest $searchRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchRequest
+         */
+        public function getSearchRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpecQuerySetSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuerySetSpec()
-    {
-    }
-    /**
-     * Required. The search request that is used to perform the evaluation. Only
-     * the following fields within SearchRequest are supported; if any other
-     * fields are provided, an UNSUPPORTED error will be returned: *
-     * SearchRequest.serving_config * SearchRequest.branch *
-     * SearchRequest.canonical_filter * SearchRequest.query_expansion_spec *
-     * SearchRequest.spell_correction_spec * SearchRequest.content_search_spec *
-     * SearchRequest.user_pseudo_id
-     *
-     * @param GoogleCloudDiscoveryengineV1betaSearchRequest $searchRequest
-     */
-    public function setSearchRequest(GoogleCloudDiscoveryengineV1betaSearchRequest $searchRequest)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchRequest
-     */
-    public function getSearchRequest()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEvaluationEvaluationSpec
     {
     }
 }

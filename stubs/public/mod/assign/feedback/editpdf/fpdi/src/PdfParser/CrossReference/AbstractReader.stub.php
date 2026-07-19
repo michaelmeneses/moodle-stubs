@@ -15,6 +15,10 @@
  */
 namespace setasign\Fpdi\PdfParser\CrossReference;
 
+use setasign\Fpdi\PdfParser\PdfParser;
+use setasign\Fpdi\PdfParser\Type\PdfDictionary;
+use setasign\Fpdi\PdfParser\Type\PdfToken;
+use setasign\Fpdi\PdfParser\Type\PdfTypeException;
 /**
  * Abstract class for cross-reference reader classes.
  */

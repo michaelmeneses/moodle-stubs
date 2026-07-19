@@ -21,232 +21,241 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource extends \Google\Model
-{
-    protected $accountType = GoogleAnalyticsAdminV1alphaAccount::class;
-    protected $accountDataType = '';
-    protected $attributionSettingsType = GoogleAnalyticsAdminV1alphaAttributionSettings::class;
-    protected $attributionSettingsDataType = '';
-    protected $conversionEventType = GoogleAnalyticsAdminV1alphaConversionEvent::class;
-    protected $conversionEventDataType = '';
-    protected $customDimensionType = GoogleAnalyticsAdminV1alphaCustomDimension::class;
-    protected $customDimensionDataType = '';
-    protected $customMetricType = GoogleAnalyticsAdminV1alphaCustomMetric::class;
-    protected $customMetricDataType = '';
-    protected $dataRetentionSettingsType = GoogleAnalyticsAdminV1alphaDataRetentionSettings::class;
-    protected $dataRetentionSettingsDataType = '';
-    protected $dataStreamType = GoogleAnalyticsAdminV1alphaDataStream::class;
-    protected $dataStreamDataType = '';
-    protected $displayVideo360AdvertiserLinkType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink::class;
-    protected $displayVideo360AdvertiserLinkDataType = '';
-    protected $displayVideo360AdvertiserLinkProposalType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal::class;
-    protected $displayVideo360AdvertiserLinkProposalDataType = '';
-    protected $expandedDataSetType = GoogleAnalyticsAdminV1alphaExpandedDataSet::class;
-    protected $expandedDataSetDataType = '';
-    protected $firebaseLinkType = GoogleAnalyticsAdminV1alphaFirebaseLink::class;
-    protected $firebaseLinkDataType = '';
-    protected $googleAdsLinkType = GoogleAnalyticsAdminV1alphaGoogleAdsLink::class;
-    protected $googleAdsLinkDataType = '';
-    protected $googleSignalsSettingsType = GoogleAnalyticsAdminV1alphaGoogleSignalsSettings::class;
-    protected $googleSignalsSettingsDataType = '';
-    protected $measurementProtocolSecretType = GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret::class;
-    protected $measurementProtocolSecretDataType = '';
-    protected $propertyType = GoogleAnalyticsAdminV1alphaProperty::class;
-    protected $propertyDataType = '';
-    protected $searchAds360LinkType = GoogleAnalyticsAdminV1alphaSearchAds360Link::class;
-    protected $searchAds360LinkDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccount
-     */
-    public function setAccount(GoogleAnalyticsAdminV1alphaAccount $account)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource extends \Google\Model
     {
+        protected $accountType = GoogleAnalyticsAdminV1alphaAccount::class;
+        protected $accountDataType = '';
+        protected $attributionSettingsType = GoogleAnalyticsAdminV1alphaAttributionSettings::class;
+        protected $attributionSettingsDataType = '';
+        protected $conversionEventType = GoogleAnalyticsAdminV1alphaConversionEvent::class;
+        protected $conversionEventDataType = '';
+        protected $customDimensionType = GoogleAnalyticsAdminV1alphaCustomDimension::class;
+        protected $customDimensionDataType = '';
+        protected $customMetricType = GoogleAnalyticsAdminV1alphaCustomMetric::class;
+        protected $customMetricDataType = '';
+        protected $dataRetentionSettingsType = GoogleAnalyticsAdminV1alphaDataRetentionSettings::class;
+        protected $dataRetentionSettingsDataType = '';
+        protected $dataStreamType = GoogleAnalyticsAdminV1alphaDataStream::class;
+        protected $dataStreamDataType = '';
+        protected $displayVideo360AdvertiserLinkType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink::class;
+        protected $displayVideo360AdvertiserLinkDataType = '';
+        protected $displayVideo360AdvertiserLinkProposalType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal::class;
+        protected $displayVideo360AdvertiserLinkProposalDataType = '';
+        protected $expandedDataSetType = GoogleAnalyticsAdminV1alphaExpandedDataSet::class;
+        protected $expandedDataSetDataType = '';
+        protected $firebaseLinkType = GoogleAnalyticsAdminV1alphaFirebaseLink::class;
+        protected $firebaseLinkDataType = '';
+        protected $googleAdsLinkType = GoogleAnalyticsAdminV1alphaGoogleAdsLink::class;
+        protected $googleAdsLinkDataType = '';
+        protected $googleSignalsSettingsType = GoogleAnalyticsAdminV1alphaGoogleSignalsSettings::class;
+        protected $googleSignalsSettingsDataType = '';
+        protected $measurementProtocolSecretType = GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret::class;
+        protected $measurementProtocolSecretDataType = '';
+        protected $propertyType = GoogleAnalyticsAdminV1alphaProperty::class;
+        protected $propertyDataType = '';
+        protected $searchAds360LinkType = GoogleAnalyticsAdminV1alphaSearchAds360Link::class;
+        protected $searchAds360LinkDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccount
+         */
+        public function setAccount(GoogleAnalyticsAdminV1alphaAccount $account)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccount
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAttributionSettings
+         */
+        public function setAttributionSettings(GoogleAnalyticsAdminV1alphaAttributionSettings $attributionSettings)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAttributionSettings
+         */
+        public function getAttributionSettings()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaConversionEvent
+         */
+        public function setConversionEvent(GoogleAnalyticsAdminV1alphaConversionEvent $conversionEvent)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaConversionEvent
+         */
+        public function getConversionEvent()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaCustomDimension
+         */
+        public function setCustomDimension(GoogleAnalyticsAdminV1alphaCustomDimension $customDimension)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaCustomDimension
+         */
+        public function getCustomDimension()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaCustomMetric
+         */
+        public function setCustomMetric(GoogleAnalyticsAdminV1alphaCustomMetric $customMetric)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaCustomMetric
+         */
+        public function getCustomMetric()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDataRetentionSettings
+         */
+        public function setDataRetentionSettings(GoogleAnalyticsAdminV1alphaDataRetentionSettings $dataRetentionSettings)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDataRetentionSettings
+         */
+        public function getDataRetentionSettings()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDataStream
+         */
+        public function setDataStream(GoogleAnalyticsAdminV1alphaDataStream $dataStream)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDataStream
+         */
+        public function getDataStream()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
+         */
+        public function setDisplayVideo360AdvertiserLink(GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink $displayVideo360AdvertiserLink)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
+         */
+        public function getDisplayVideo360AdvertiserLink()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal
+         */
+        public function setDisplayVideo360AdvertiserLinkProposal(GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal $displayVideo360AdvertiserLinkProposal)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal
+         */
+        public function getDisplayVideo360AdvertiserLinkProposal()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSet
+         */
+        public function setExpandedDataSet(GoogleAnalyticsAdminV1alphaExpandedDataSet $expandedDataSet)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSet
+         */
+        public function getExpandedDataSet()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaFirebaseLink
+         */
+        public function setFirebaseLink(GoogleAnalyticsAdminV1alphaFirebaseLink $firebaseLink)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaFirebaseLink
+         */
+        public function getFirebaseLink()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaGoogleAdsLink
+         */
+        public function setGoogleAdsLink(GoogleAnalyticsAdminV1alphaGoogleAdsLink $googleAdsLink)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaGoogleAdsLink
+         */
+        public function getGoogleAdsLink()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaGoogleSignalsSettings
+         */
+        public function setGoogleSignalsSettings(GoogleAnalyticsAdminV1alphaGoogleSignalsSettings $googleSignalsSettings)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaGoogleSignalsSettings
+         */
+        public function getGoogleSignalsSettings()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
+         */
+        public function setMeasurementProtocolSecret(GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $measurementProtocolSecret)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
+         */
+        public function getMeasurementProtocolSecret()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaProperty
+         */
+        public function setProperty(GoogleAnalyticsAdminV1alphaProperty $property)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaProperty
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaSearchAds360Link
+         */
+        public function setSearchAds360Link(GoogleAnalyticsAdminV1alphaSearchAds360Link $searchAds360Link)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaSearchAds360Link
+         */
+        public function getSearchAds360Link()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccount
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAttributionSettings
-     */
-    public function setAttributionSettings(GoogleAnalyticsAdminV1alphaAttributionSettings $attributionSettings)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAttributionSettings
-     */
-    public function getAttributionSettings()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaConversionEvent
-     */
-    public function setConversionEvent(GoogleAnalyticsAdminV1alphaConversionEvent $conversionEvent)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaConversionEvent
-     */
-    public function getConversionEvent()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaCustomDimension
-     */
-    public function setCustomDimension(GoogleAnalyticsAdminV1alphaCustomDimension $customDimension)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaCustomDimension
-     */
-    public function getCustomDimension()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaCustomMetric
-     */
-    public function setCustomMetric(GoogleAnalyticsAdminV1alphaCustomMetric $customMetric)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaCustomMetric
-     */
-    public function getCustomMetric()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDataRetentionSettings
-     */
-    public function setDataRetentionSettings(GoogleAnalyticsAdminV1alphaDataRetentionSettings $dataRetentionSettings)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaDataRetentionSettings
-     */
-    public function getDataRetentionSettings()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDataStream
-     */
-    public function setDataStream(GoogleAnalyticsAdminV1alphaDataStream $dataStream)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaDataStream
-     */
-    public function getDataStream()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
-     */
-    public function setDisplayVideo360AdvertiserLink(GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink $displayVideo360AdvertiserLink)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink
-     */
-    public function getDisplayVideo360AdvertiserLink()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal
-     */
-    public function setDisplayVideo360AdvertiserLinkProposal(GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal $displayVideo360AdvertiserLinkProposal)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal
-     */
-    public function getDisplayVideo360AdvertiserLinkProposal()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSet
-     */
-    public function setExpandedDataSet(GoogleAnalyticsAdminV1alphaExpandedDataSet $expandedDataSet)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSet
-     */
-    public function getExpandedDataSet()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaFirebaseLink
-     */
-    public function setFirebaseLink(GoogleAnalyticsAdminV1alphaFirebaseLink $firebaseLink)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaFirebaseLink
-     */
-    public function getFirebaseLink()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaGoogleAdsLink
-     */
-    public function setGoogleAdsLink(GoogleAnalyticsAdminV1alphaGoogleAdsLink $googleAdsLink)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaGoogleAdsLink
-     */
-    public function getGoogleAdsLink()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaGoogleSignalsSettings
-     */
-    public function setGoogleSignalsSettings(GoogleAnalyticsAdminV1alphaGoogleSignalsSettings $googleSignalsSettings)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaGoogleSignalsSettings
-     */
-    public function getGoogleSignalsSettings()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
-     */
-    public function setMeasurementProtocolSecret(GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $measurementProtocolSecret)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
-     */
-    public function getMeasurementProtocolSecret()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaProperty
-     */
-    public function setProperty(GoogleAnalyticsAdminV1alphaProperty $property)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaProperty
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaSearchAds360Link
-     */
-    public function setSearchAds360Link(GoogleAnalyticsAdminV1alphaSearchAds360Link $searchAds360Link)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaSearchAds360Link
-     */
-    public function getSearchAds360Link()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource
     {
     }
 }

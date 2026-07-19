@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class InputDataChange extends \Google\Model
-{
-    /**
-     * Output only. Records read difference percentage compared to a previous run.
-     *
-     * @var float
-     */
-    public $recordsReadDiffPercentage;
-    /**
-     * Output only. Records read difference percentage compared to a previous run.
-     *
-     * @param float $recordsReadDiffPercentage
-     */
-    public function setRecordsReadDiffPercentage($recordsReadDiffPercentage)
+namespace Google\Service\Bigquery {
+    class InputDataChange extends \Google\Model
     {
+        /**
+         * Output only. Records read difference percentage compared to a previous run.
+         *
+         * @var float
+         */
+        public $recordsReadDiffPercentage;
+        /**
+         * Output only. Records read difference percentage compared to a previous run.
+         *
+         * @param float $recordsReadDiffPercentage
+         */
+        public function setRecordsReadDiffPercentage($recordsReadDiffPercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRecordsReadDiffPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Bigquery\InputDataChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecordsReadDiffPercentage()
+    class Google_Service_Bigquery_InputDataChange extends \Google\Service\Bigquery\InputDataChange
     {
     }
 }

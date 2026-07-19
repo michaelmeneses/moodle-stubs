@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AutoMonitoringConfig extends \Google\Model
-{
-    /**
-     * Not set.
-     */
-    public const SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
-    /**
-     * Auto-Monitoring is enabled for all supported applications.
-     */
-    public const SCOPE_ALL = 'ALL';
-    /**
-     * Disable Auto-Monitoring.
-     */
-    public const SCOPE_NONE = 'NONE';
-    /**
-     * Scope for GKE Workload Auto-Monitoring.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Scope for GKE Workload Auto-Monitoring.
-     *
-     * Accepted values: SCOPE_UNSPECIFIED, ALL, NONE
-     *
-     * @param self::SCOPE_* $scope
-     */
-    public function setScope($scope)
+namespace Google\Service\Container {
+    class AutoMonitoringConfig extends \Google\Model
     {
+        /**
+         * Not set.
+         */
+        public const SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
+        /**
+         * Auto-Monitoring is enabled for all supported applications.
+         */
+        public const SCOPE_ALL = 'ALL';
+        /**
+         * Disable Auto-Monitoring.
+         */
+        public const SCOPE_NONE = 'NONE';
+        /**
+         * Scope for GKE Workload Auto-Monitoring.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Scope for GKE Workload Auto-Monitoring.
+         *
+         * Accepted values: SCOPE_UNSPECIFIED, ALL, NONE
+         *
+         * @param self::SCOPE_* $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return self::SCOPE_*
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SCOPE_*
+     * Runtime class alias of \Google\Service\Container\AutoMonitoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScope()
+    class Google_Service_Container_AutoMonitoringConfig extends \Google\Service\Container\AutoMonitoringConfig
     {
     }
 }

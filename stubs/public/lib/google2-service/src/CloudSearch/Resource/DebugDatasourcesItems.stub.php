@@ -21,48 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "items" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $items = $cloudsearchService->debug_datasources_items;
- *  </code>
- */
-class DebugDatasourcesItems extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\CheckAccessResponse;
+    use Google\Service\CloudSearch\Principal;
+    use Google\Service\CloudSearch\SearchItemsByViewUrlRequest;
+    use Google\Service\CloudSearch\SearchItemsByViewUrlResponse;
     /**
-     * Checks whether an item is accessible by specified principal. Principal must
-     * be a user; groups and domain values aren't supported. **Note:** This API
-     * requires an admin account to execute. (items.checkAccess)
-     *
-     * @param string $name Item name, format:
-     * datasources/{source_id}/items/{item_id}
-     * @param Principal $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
-     * help with debugging, set this field. Otherwise, ignore this field.
-     * @return CheckAccessResponse
-     * @throws \Google\Service\Exception
+     * The "items" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $items = $cloudsearchService->debug_datasources_items;
+     *  </code>
      */
-    public function checkAccess($name, Principal $postBody, $optParams = [])
+    class DebugDatasourcesItems extends \Google\Service\Resource
     {
+        /**
+         * Checks whether an item is accessible by specified principal. Principal must
+         * be a user; groups and domain values aren't supported. **Note:** This API
+         * requires an admin account to execute. (items.checkAccess)
+         *
+         * @param string $name Item name, format:
+         * datasources/{source_id}/items/{item_id}
+         * @param Principal $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
+         * help with debugging, set this field. Otherwise, ignore this field.
+         * @return CheckAccessResponse
+         * @throws \Google\Service\Exception
+         */
+        public function checkAccess($name, Principal $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Fetches the item whose viewUrl exactly matches that of the URL provided in
+         * the request. **Note:** This API requires an admin account to execute.
+         * (items.searchByViewUrl)
+         *
+         * @param string $name Source name, format: datasources/{source_id}
+         * @param SearchItemsByViewUrlRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchItemsByViewUrlResponse
+         * @throws \Google\Service\Exception
+         */
+        public function searchByViewUrl($name, SearchItemsByViewUrlRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Fetches the item whose viewUrl exactly matches that of the URL provided in
-     * the request. **Note:** This API requires an admin account to execute.
-     * (items.searchByViewUrl)
-     *
-     * @param string $name Source name, format: datasources/{source_id}
-     * @param SearchItemsByViewUrlRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchItemsByViewUrlResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\DebugDatasourcesItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function searchByViewUrl($name, SearchItemsByViewUrlRequest $postBody, $optParams = [])
+    class Google_Service_CloudSearch_Resource_DebugDatasourcesItems extends \Google\Service\CloudSearch\Resource\DebugDatasourcesItems
     {
     }
 }

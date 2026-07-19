@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class ListBrandsResponse extends \Google\Collection
-{
-    protected $collection_key = 'brands';
-    protected $brandsType = Brand::class;
-    protected $brandsDataType = 'array';
-    /**
-     * Brands existing in the project.
-     *
-     * @param Brand[] $brands
-     */
-    public function setBrands($brands)
+namespace Google\Service\CloudIAP {
+    class ListBrandsResponse extends \Google\Collection
     {
+        protected $collection_key = 'brands';
+        protected $brandsType = Brand::class;
+        protected $brandsDataType = 'array';
+        /**
+         * Brands existing in the project.
+         *
+         * @param Brand[] $brands
+         */
+        public function setBrands($brands)
+        {
+        }
+        /**
+         * @return Brand[]
+         */
+        public function getBrands()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Brand[]
+     * Runtime class alias of \Google\Service\CloudIAP\ListBrandsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrands()
+    class Google_Service_CloudIAP_ListBrandsResponse extends \Google\Service\CloudIAP\ListBrandsResponse
     {
     }
 }

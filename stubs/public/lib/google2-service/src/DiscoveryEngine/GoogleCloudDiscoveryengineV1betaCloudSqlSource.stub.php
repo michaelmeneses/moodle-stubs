@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCloudSqlSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * @var string
-     */
-    public $gcsStagingDir;
-    /**
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * @var bool
-     */
-    public $offload;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $tableId;
-    /**
-     * @param string
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCloudSqlSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * @var string
+         */
+        public $gcsStagingDir;
+        /**
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * @var bool
+         */
+        public $offload;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $tableId;
+        /**
+         * @param string
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGcsStagingDir($gcsStagingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsStagingDir()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setOffload($offload)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOffload()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCloudSqlSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGcsStagingDir($gcsStagingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsStagingDir()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setOffload($offload)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOffload()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCloudSqlSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCloudSqlSource
     {
     }
 }

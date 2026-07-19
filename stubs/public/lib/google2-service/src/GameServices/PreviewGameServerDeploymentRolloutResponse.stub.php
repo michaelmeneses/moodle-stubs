@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class PreviewGameServerDeploymentRolloutResponse extends \Google\Collection
-{
-    protected $collection_key = 'unavailable';
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $targetStateType = TargetState::class;
-    protected $targetStateDataType = '';
-    /**
-     * @var string[]
-     */
-    public $unavailable;
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
+namespace Google\Service\GameServices {
+    class PreviewGameServerDeploymentRolloutResponse extends \Google\Collection
     {
+        protected $collection_key = 'unavailable';
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $targetStateType = TargetState::class;
+        protected $targetStateDataType = '';
+        /**
+         * @var string[]
+         */
+        public $unavailable;
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param TargetState
+         */
+        public function setTargetState(TargetState $targetState)
+        {
+        }
+        /**
+         * @return TargetState
+         */
+        public function getTargetState()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnavailable($unavailable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnavailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\PreviewGameServerDeploymentRolloutResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param TargetState
-     */
-    public function setTargetState(TargetState $targetState)
-    {
-    }
-    /**
-     * @return TargetState
-     */
-    public function getTargetState()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnavailable($unavailable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnavailable()
+    class Google_Service_GameServices_PreviewGameServerDeploymentRolloutResponse extends \Google\Service\GameServices\PreviewGameServerDeploymentRolloutResponse
     {
     }
 }

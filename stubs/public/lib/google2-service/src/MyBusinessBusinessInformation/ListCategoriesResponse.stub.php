@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class ListCategoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    protected $categoriesType = Category::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * If the number of categories exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page of categories on a
-     * subsequent call to `ListCategories`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The matching categories based on the requested parameters.
-     *
-     * @param Category[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class ListCategoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        protected $categoriesType = Category::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * If the number of categories exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page of categories on a
+         * subsequent call to `ListCategories`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The matching categories based on the requested parameters.
+         *
+         * @param Category[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return Category[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * If the number of categories exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page of categories on a
+         * subsequent call to `ListCategories`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Category[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\ListCategoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * If the number of categories exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page of categories on a
-     * subsequent call to `ListCategories`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_MyBusinessBusinessInformation_ListCategoriesResponse extends \Google\Service\MyBusinessBusinessInformation\ListCategoriesResponse
     {
     }
 }

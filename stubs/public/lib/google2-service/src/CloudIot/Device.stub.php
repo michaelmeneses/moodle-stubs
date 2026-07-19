@@ -21,271 +21,280 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class Device extends \Google\Collection
-{
-    protected $collection_key = 'credentials';
-    /**
-     * @var bool
-     */
-    public $blocked;
-    protected $configType = DeviceConfig::class;
-    protected $configDataType = '';
-    protected $credentialsType = DeviceCredential::class;
-    protected $credentialsDataType = 'array';
-    protected $gatewayConfigType = GatewayConfig::class;
-    protected $gatewayConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $lastConfigAckTime;
-    /**
-     * @var string
-     */
-    public $lastConfigSendTime;
-    protected $lastErrorStatusType = Status::class;
-    protected $lastErrorStatusDataType = '';
-    /**
-     * @var string
-     */
-    public $lastErrorTime;
-    /**
-     * @var string
-     */
-    public $lastEventTime;
-    /**
-     * @var string
-     */
-    public $lastHeartbeatTime;
-    /**
-     * @var string
-     */
-    public $lastStateTime;
-    /**
-     * @var string
-     */
-    public $logLevel;
-    /**
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $numId;
-    protected $stateType = DeviceState::class;
-    protected $stateDataType = '';
-    /**
-     * @param bool
-     */
-    public function setBlocked($blocked)
+namespace Google\Service\CloudIot {
+    class Device extends \Google\Collection
     {
+        protected $collection_key = 'credentials';
+        /**
+         * @var bool
+         */
+        public $blocked;
+        protected $configType = DeviceConfig::class;
+        protected $configDataType = '';
+        protected $credentialsType = DeviceCredential::class;
+        protected $credentialsDataType = 'array';
+        protected $gatewayConfigType = GatewayConfig::class;
+        protected $gatewayConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $lastConfigAckTime;
+        /**
+         * @var string
+         */
+        public $lastConfigSendTime;
+        protected $lastErrorStatusType = Status::class;
+        protected $lastErrorStatusDataType = '';
+        /**
+         * @var string
+         */
+        public $lastErrorTime;
+        /**
+         * @var string
+         */
+        public $lastEventTime;
+        /**
+         * @var string
+         */
+        public $lastHeartbeatTime;
+        /**
+         * @var string
+         */
+        public $lastStateTime;
+        /**
+         * @var string
+         */
+        public $logLevel;
+        /**
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $numId;
+        protected $stateType = DeviceState::class;
+        protected $stateDataType = '';
+        /**
+         * @param bool
+         */
+        public function setBlocked($blocked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBlocked()
+        {
+        }
+        /**
+         * @param DeviceConfig
+         */
+        public function setConfig(DeviceConfig $config)
+        {
+        }
+        /**
+         * @return DeviceConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param DeviceCredential[]
+         */
+        public function setCredentials($credentials)
+        {
+        }
+        /**
+         * @return DeviceCredential[]
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * @param GatewayConfig
+         */
+        public function setGatewayConfig(GatewayConfig $gatewayConfig)
+        {
+        }
+        /**
+         * @return GatewayConfig
+         */
+        public function getGatewayConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastConfigAckTime($lastConfigAckTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastConfigAckTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastConfigSendTime($lastConfigSendTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastConfigSendTime()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setLastErrorStatus(Status $lastErrorStatus)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getLastErrorStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastErrorTime($lastErrorTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastErrorTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastEventTime($lastEventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastEventTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastHeartbeatTime($lastHeartbeatTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastHeartbeatTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastStateTime($lastStateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastStateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogLevel($logLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogLevel()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumId($numId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumId()
+        {
+        }
+        /**
+         * @param DeviceState
+         */
+        public function setState(DeviceState $state)
+        {
+        }
+        /**
+         * @return DeviceState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudIot\Device registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocked()
-    {
-    }
-    /**
-     * @param DeviceConfig
-     */
-    public function setConfig(DeviceConfig $config)
-    {
-    }
-    /**
-     * @return DeviceConfig
-     */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param DeviceCredential[]
-     */
-    public function setCredentials($credentials)
-    {
-    }
-    /**
-     * @return DeviceCredential[]
-     */
-    public function getCredentials()
-    {
-    }
-    /**
-     * @param GatewayConfig
-     */
-    public function setGatewayConfig(GatewayConfig $gatewayConfig)
-    {
-    }
-    /**
-     * @return GatewayConfig
-     */
-    public function getGatewayConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastConfigAckTime($lastConfigAckTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastConfigAckTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastConfigSendTime($lastConfigSendTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastConfigSendTime()
-    {
-    }
-    /**
-     * @param Status
-     */
-    public function setLastErrorStatus(Status $lastErrorStatus)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getLastErrorStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastErrorTime($lastErrorTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastErrorTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastEventTime($lastEventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastEventTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastHeartbeatTime($lastHeartbeatTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastHeartbeatTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastStateTime($lastStateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastStateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogLevel($logLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogLevel()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumId($numId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumId()
-    {
-    }
-    /**
-     * @param DeviceState
-     */
-    public function setState(DeviceState $state)
-    {
-    }
-    /**
-     * @return DeviceState
-     */
-    public function getState()
+    class Google_Service_CloudIot_Device extends \Google\Service\CloudIot\Device
     {
     }
 }

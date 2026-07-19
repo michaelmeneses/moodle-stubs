@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1NatGatewayConfig extends \Google\Collection
-{
-    protected $collection_key = 'natIps';
-    /**
-     * @var string[]
-     */
-    public $natIps;
-    /**
-     * @param string[]
-     */
-    public function setNatIps($natIps)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1NatGatewayConfig extends \Google\Collection
     {
+        protected $collection_key = 'natIps';
+        /**
+         * @var string[]
+         */
+        public $natIps;
+        /**
+         * @param string[]
+         */
+        public function setNatIps($natIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNatIps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1NatGatewayConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNatIps()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1NatGatewayConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1NatGatewayConfig
     {
     }
 }

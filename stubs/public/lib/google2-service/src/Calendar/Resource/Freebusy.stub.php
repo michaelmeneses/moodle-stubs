@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar\Resource;
-
-/**
- * The "freebusy" collection of methods.
- * Typical usage is:
- *  <code>
- *   $calendarService = new Google\Service\Calendar(...);
- *   $freebusy = $calendarService->freebusy;
- *  </code>
- */
-class Freebusy extends \Google\Service\Resource
-{
+namespace Google\Service\Calendar\Resource {
+    use Google\Service\Calendar\FreeBusyRequest;
+    use Google\Service\Calendar\FreeBusyResponse;
     /**
-     * Returns free/busy information for a set of calendars. (freebusy.query)
-     *
-     * @param FreeBusyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return FreeBusyResponse
-     * @throws \Google\Service\Exception
+     * The "freebusy" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $calendarService = new Google\Service\Calendar(...);
+     *   $freebusy = $calendarService->freebusy;
+     *  </code>
      */
-    public function query(FreeBusyRequest $postBody, $optParams = [])
+    class Freebusy extends \Google\Service\Resource
+    {
+        /**
+         * Returns free/busy information for a set of calendars. (freebusy.query)
+         *
+         * @param FreeBusyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return FreeBusyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query(FreeBusyRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Calendar\Resource\Freebusy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Calendar_Resource_Freebusy extends \Google\Service\Calendar\Resource\Freebusy
     {
     }
 }

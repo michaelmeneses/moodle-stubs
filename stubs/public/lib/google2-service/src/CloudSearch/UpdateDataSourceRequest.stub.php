@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateDataSourceRequest extends \Google\Model
-{
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    protected $sourceType = DataSource::class;
-    protected $sourceDataType = '';
-    /**
-     * Only applies to
-     * [`settings.datasources.patch`](https://developers.google.com/cloud-
-     * search/docs/reference/rest/v1/settings.datasources/patch). Update mask to
-     * control which fields to update. Example field paths: `name`, `displayName`.
-     * * If `update_mask` is non-empty, then only the fields specified in the
-     * `update_mask` are updated. * If you specify a field in the `update_mask`,
-     * but don't specify its value in the source, that field is cleared. * If the
-     * `update_mask` is not present or empty or has the value `*`, then all fields
-     * are updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
+namespace Google\Service\CloudSearch {
+    class UpdateDataSourceRequest extends \Google\Model
     {
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        protected $sourceType = DataSource::class;
+        protected $sourceDataType = '';
+        /**
+         * Only applies to
+         * [`settings.datasources.patch`](https://developers.google.com/cloud-
+         * search/docs/reference/rest/v1/settings.datasources/patch). Update mask to
+         * control which fields to update. Example field paths: `name`, `displayName`.
+         * * If `update_mask` is non-empty, then only the fields specified in the
+         * `update_mask` are updated. * If you specify a field in the `update_mask`,
+         * but don't specify its value in the source, that field is cleared. * If the
+         * `update_mask` is not present or empty or has the value `*`, then all fields
+         * are updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
+        /**
+         * @param DataSource $source
+         */
+        public function setSource(DataSource $source)
+        {
+        }
+        /**
+         * @return DataSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Only applies to
+         * [`settings.datasources.patch`](https://developers.google.com/cloud-
+         * search/docs/reference/rest/v1/settings.datasources/patch). Update mask to
+         * control which fields to update. Example field paths: `name`, `displayName`.
+         * * If `update_mask` is non-empty, then only the fields specified in the
+         * `update_mask` are updated. * If you specify a field in the `update_mask`,
+         * but don't specify its value in the source, that field is cleared. * If the
+         * `update_mask` is not present or empty or has the value `*`, then all fields
+         * are updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DebugOptions
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateDataSourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugOptions()
-    {
-    }
-    /**
-     * @param DataSource $source
-     */
-    public function setSource(DataSource $source)
-    {
-    }
-    /**
-     * @return DataSource
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Only applies to
-     * [`settings.datasources.patch`](https://developers.google.com/cloud-
-     * search/docs/reference/rest/v1/settings.datasources/patch). Update mask to
-     * control which fields to update. Example field paths: `name`, `displayName`.
-     * * If `update_mask` is non-empty, then only the fields specified in the
-     * `update_mask` are updated. * If you specify a field in the `update_mask`,
-     * but don't specify its value in the source, that field is cleared. * If the
-     * `update_mask` is not present or empty or has the value `*`, then all fields
-     * are updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudSearch_UpdateDataSourceRequest extends \Google\Service\CloudSearch\UpdateDataSourceRequest
     {
     }
 }

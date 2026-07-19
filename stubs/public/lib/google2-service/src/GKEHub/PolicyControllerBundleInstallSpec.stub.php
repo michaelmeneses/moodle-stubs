@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerBundleInstallSpec extends \Google\Collection
-{
-    protected $collection_key = 'exemptedNamespaces';
-    /**
-     * the set of namespaces to be exempted from the bundle
-     *
-     * @var string[]
-     */
-    public $exemptedNamespaces;
-    /**
-     * the set of namespaces to be exempted from the bundle
-     *
-     * @param string[] $exemptedNamespaces
-     */
-    public function setExemptedNamespaces($exemptedNamespaces)
+namespace Google\Service\GKEHub {
+    class PolicyControllerBundleInstallSpec extends \Google\Collection
     {
+        protected $collection_key = 'exemptedNamespaces';
+        /**
+         * the set of namespaces to be exempted from the bundle
+         *
+         * @var string[]
+         */
+        public $exemptedNamespaces;
+        /**
+         * the set of namespaces to be exempted from the bundle
+         *
+         * @param string[] $exemptedNamespaces
+         */
+        public function setExemptedNamespaces($exemptedNamespaces)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExemptedNamespaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerBundleInstallSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExemptedNamespaces()
+    class Google_Service_GKEHub_PolicyControllerBundleInstallSpec extends \Google\Service\GKEHub\PolicyControllerBundleInstallSpec
     {
     }
 }

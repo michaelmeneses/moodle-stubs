@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseObjects extends \Google\Model
-{
-    /**
-     * Unspecified type.
-     */
-    public const CATEGORY_CATEGORY_UNSPECIFIED = 'CATEGORY_UNSPECIFIED';
-    /**
-     * Table.
-     */
-    public const CATEGORY_TABLE = 'TABLE';
-    /**
-     * Index.
-     */
-    public const CATEGORY_INDEX = 'INDEX';
-    /**
-     * Constraints.
-     */
-    public const CATEGORY_CONSTRAINTS = 'CONSTRAINTS';
-    /**
-     * Views.
-     */
-    public const CATEGORY_VIEWS = 'VIEWS';
-    /**
-     * Source code, e.g. procedures.
-     */
-    public const CATEGORY_SOURCE_CODE = 'SOURCE_CODE';
-    /**
-     * Uncategorized objects.
-     */
-    public const CATEGORY_OTHER = 'OTHER';
-    /**
-     * Optional. The category of the objects.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Optional. The number of objects.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Optional. The category of the objects.
-     *
-     * Accepted values: CATEGORY_UNSPECIFIED, TABLE, INDEX, CONSTRAINTS, VIEWS,
-     * SOURCE_CODE, OTHER
-     *
-     * @param self::CATEGORY_* $category
-     */
-    public function setCategory($category)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseObjects extends \Google\Model
     {
+        /**
+         * Unspecified type.
+         */
+        public const CATEGORY_CATEGORY_UNSPECIFIED = 'CATEGORY_UNSPECIFIED';
+        /**
+         * Table.
+         */
+        public const CATEGORY_TABLE = 'TABLE';
+        /**
+         * Index.
+         */
+        public const CATEGORY_INDEX = 'INDEX';
+        /**
+         * Constraints.
+         */
+        public const CATEGORY_CONSTRAINTS = 'CONSTRAINTS';
+        /**
+         * Views.
+         */
+        public const CATEGORY_VIEWS = 'VIEWS';
+        /**
+         * Source code, e.g. procedures.
+         */
+        public const CATEGORY_SOURCE_CODE = 'SOURCE_CODE';
+        /**
+         * Uncategorized objects.
+         */
+        public const CATEGORY_OTHER = 'OTHER';
+        /**
+         * Optional. The category of the objects.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Optional. The number of objects.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Optional. The category of the objects.
+         *
+         * Accepted values: CATEGORY_UNSPECIFIED, TABLE, INDEX, CONSTRAINTS, VIEWS,
+         * SOURCE_CODE, OTHER
+         *
+         * @param self::CATEGORY_* $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return self::CATEGORY_*
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Optional. The number of objects.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CATEGORY_*
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseObjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Optional. The number of objects.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
+    class Google_Service_MigrationCenterAPI_DatabaseObjects extends \Google\Service\MigrationCenterAPI\DatabaseObjects
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCheckGroundingRequest extends \Google\Collection
-{
-    protected $collection_key = 'facts';
-    /**
-     * @var string
-     */
-    public $answerCandidate;
-    protected $factsType = GoogleCloudDiscoveryengineV1betaGroundingFact::class;
-    protected $factsDataType = 'array';
-    protected $groundingSpecType = GoogleCloudDiscoveryengineV1betaCheckGroundingSpec::class;
-    protected $groundingSpecDataType = '';
-    /**
-     * @param string
-     */
-    public function setAnswerCandidate($answerCandidate)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCheckGroundingRequest extends \Google\Collection
     {
+        protected $collection_key = 'facts';
+        /**
+         * @var string
+         */
+        public $answerCandidate;
+        protected $factsType = GoogleCloudDiscoveryengineV1betaGroundingFact::class;
+        protected $factsDataType = 'array';
+        protected $groundingSpecType = GoogleCloudDiscoveryengineV1betaCheckGroundingSpec::class;
+        protected $groundingSpecDataType = '';
+        /**
+         * @param string
+         */
+        public function setAnswerCandidate($answerCandidate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerCandidate()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaGroundingFact[]
+         */
+        public function setFacts($facts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaGroundingFact[]
+         */
+        public function getFacts()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaCheckGroundingSpec
+         */
+        public function setGroundingSpec(GoogleCloudDiscoveryengineV1betaCheckGroundingSpec $groundingSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaCheckGroundingSpec
+         */
+        public function getGroundingSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerCandidate()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaGroundingFact[]
-     */
-    public function setFacts($facts)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaGroundingFact[]
-     */
-    public function getFacts()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaCheckGroundingSpec
-     */
-    public function setGroundingSpec(GoogleCloudDiscoveryengineV1betaCheckGroundingSpec $groundingSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaCheckGroundingSpec
-     */
-    public function getGroundingSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCheckGroundingRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingRequest
     {
     }
 }

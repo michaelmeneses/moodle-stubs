@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Verifiedaccess;
-
-class CrowdStrikeAgent extends \Google\Model
-{
-    /**
-     * Output only. The Agent ID of the Crowdstrike agent.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * Output only. The Customer ID to which the agent belongs to.
-     *
-     * @var string
-     */
-    public $customerId;
-    /**
-     * Output only. The Agent ID of the Crowdstrike agent.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
+namespace Google\Service\Verifiedaccess {
+    class CrowdStrikeAgent extends \Google\Model
     {
+        /**
+         * Output only. The Agent ID of the Crowdstrike agent.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * Output only. The Customer ID to which the agent belongs to.
+         *
+         * @var string
+         */
+        public $customerId;
+        /**
+         * Output only. The Agent ID of the Crowdstrike agent.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * Output only. The Customer ID to which the agent belongs to.
+         *
+         * @param string $customerId
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Verifiedaccess\CrowdStrikeAgent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentId()
-    {
-    }
-    /**
-     * Output only. The Customer ID to which the agent belongs to.
-     *
-     * @param string $customerId
-     */
-    public function setCustomerId($customerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerId()
+    class Google_Service_Verifiedaccess_CrowdStrikeAgent extends \Google\Service\Verifiedaccess\CrowdStrikeAgent
     {
     }
 }

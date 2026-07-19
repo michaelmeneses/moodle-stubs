@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentPageAnchor extends \Google\Collection
-{
-    protected $collection_key = 'pageRefs';
-    protected $pageRefsType = GoogleCloudDocumentaiV1DocumentPageAnchorPageRef::class;
-    protected $pageRefsDataType = 'array';
-    /**
-     * One or more references to visual page elements
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageAnchorPageRef[] $pageRefs
-     */
-    public function setPageRefs($pageRefs)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentPageAnchor extends \Google\Collection
     {
+        protected $collection_key = 'pageRefs';
+        protected $pageRefsType = GoogleCloudDocumentaiV1DocumentPageAnchorPageRef::class;
+        protected $pageRefsDataType = 'array';
+        /**
+         * One or more references to visual page elements
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageAnchorPageRef[] $pageRefs
+         */
+        public function setPageRefs($pageRefs)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageAnchorPageRef[]
+         */
+        public function getPageRefs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentPageAnchorPageRef[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageAnchor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageRefs()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentPageAnchor extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageAnchor
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination extends \Google\Model
-{
-    /**
-     * Required. Cloud Storage directory to export data to.
-     *
-     * @var string
-     */
-    public $outputFolderUri;
-    /**
-     * Required. Cloud Storage directory to export data to.
-     *
-     * @param string $outputFolderUri
-     */
-    public function setOutputFolderUri($outputFolderUri)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination extends \Google\Model
     {
+        /**
+         * Required. Cloud Storage directory to export data to.
+         *
+         * @var string
+         */
+        public $outputFolderUri;
+        /**
+         * Required. Cloud Storage directory to export data to.
+         *
+         * @param string $outputFolderUri
+         */
+        public function setOutputFolderUri($outputFolderUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputFolderUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputFolderUri()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListLocationListsResponse extends \Google\Collection
-{
-    protected $collection_key = 'locationLists';
-    protected $locationListsType = LocationList::class;
-    protected $locationListsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListLocationLists` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of location lists. This list will be absent if empty.
-     *
-     * @param LocationList[] $locationLists
-     */
-    public function setLocationLists($locationLists)
+namespace Google\Service\DisplayVideo {
+    class ListLocationListsResponse extends \Google\Collection
     {
+        protected $collection_key = 'locationLists';
+        protected $locationListsType = LocationList::class;
+        protected $locationListsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListLocationLists` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of location lists. This list will be absent if empty.
+         *
+         * @param LocationList[] $locationLists
+         */
+        public function setLocationLists($locationLists)
+        {
+        }
+        /**
+         * @return LocationList[]
+         */
+        public function getLocationLists()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListLocationLists` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocationList[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListLocationListsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationLists()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListLocationLists` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListLocationListsResponse extends \Google\Service\DisplayVideo\ListLocationListsResponse
     {
     }
 }

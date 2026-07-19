@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore\Resource;
-
-/**
- * The "backupSchedules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firestoreService = new Google\Service\Firestore(...);
- *   $backupSchedules = $firestoreService->projects_databases_backupSchedules;
- *  </code>
- */
-class ProjectsDatabasesBackupSchedules extends \Google\Service\Resource
-{
+namespace Google\Service\Firestore\Resource {
+    use Google\Service\Firestore\FirestoreEmpty;
+    use Google\Service\Firestore\GoogleFirestoreAdminV1BackupSchedule;
+    use Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupSchedulesResponse;
     /**
-     * Creates a backup schedule on a database. At most two backup schedules can be
-     * configured on a database, one daily backup schedule and one weekly backup
-     * schedule. (backupSchedules.create)
-     *
-     * @param string $parent Required. The parent database. Format
-     * `projects/{project}/databases/{database}`
-     * @param GoogleFirestoreAdminV1BackupSchedule $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirestoreAdminV1BackupSchedule
-     * @throws \Google\Service\Exception
+     * The "backupSchedules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firestoreService = new Google\Service\Firestore(...);
+     *   $backupSchedules = $firestoreService->projects_databases_backupSchedules;
+     *  </code>
      */
-    public function create($parent, GoogleFirestoreAdminV1BackupSchedule $postBody, $optParams = [])
+    class ProjectsDatabasesBackupSchedules extends \Google\Service\Resource
     {
+        /**
+         * Creates a backup schedule on a database. At most two backup schedules can be
+         * configured on a database, one daily backup schedule and one weekly backup
+         * schedule. (backupSchedules.create)
+         *
+         * @param string $parent Required. The parent database. Format
+         * `projects/{project}/databases/{database}`
+         * @param GoogleFirestoreAdminV1BackupSchedule $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirestoreAdminV1BackupSchedule
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleFirestoreAdminV1BackupSchedule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a backup schedule. (backupSchedules.delete)
+         *
+         * @param string $name Required. The name of the backup schedule. Format
+         * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
+         * @param array $optParams Optional parameters.
+         * @return FirestoreEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about a backup schedule. (backupSchedules.get)
+         *
+         * @param string $name Required. The name of the backup schedule. Format
+         * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirestoreAdminV1BackupSchedule
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List backup schedules. (backupSchedules.listProjectsDatabasesBackupSchedules)
+         *
+         * @param string $parent Required. The parent database. Format is
+         * `projects/{project}/databases/{database}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirestoreAdminV1ListBackupSchedulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsDatabasesBackupSchedules($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a backup schedule. (backupSchedules.patch)
+         *
+         * @param string $name Output only. The unique backup schedule identifier across
+         * all locations and databases for the given project. This will be auto-
+         * assigned. Format is
+         * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
+         * @param GoogleFirestoreAdminV1BackupSchedule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @return GoogleFirestoreAdminV1BackupSchedule
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleFirestoreAdminV1BackupSchedule $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a backup schedule. (backupSchedules.delete)
-     *
-     * @param string $name Required. The name of the backup schedule. Format
-     * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
-     * @param array $optParams Optional parameters.
-     * @return FirestoreEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firestore\Resource\ProjectsDatabasesBackupSchedules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets information about a backup schedule. (backupSchedules.get)
-     *
-     * @param string $name Required. The name of the backup schedule. Format
-     * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirestoreAdminV1BackupSchedule
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List backup schedules. (backupSchedules.listProjectsDatabasesBackupSchedules)
-     *
-     * @param string $parent Required. The parent database. Format is
-     * `projects/{project}/databases/{database}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirestoreAdminV1ListBackupSchedulesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsDatabasesBackupSchedules($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a backup schedule. (backupSchedules.patch)
-     *
-     * @param string $name Output only. The unique backup schedule identifier across
-     * all locations and databases for the given project. This will be auto-
-     * assigned. Format is
-     * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
-     * @param GoogleFirestoreAdminV1BackupSchedule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @return GoogleFirestoreAdminV1BackupSchedule
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleFirestoreAdminV1BackupSchedule $postBody, $optParams = [])
+    class Google_Service_Firestore_Resource_ProjectsDatabasesBackupSchedules extends \Google\Service\Firestore\Resource\ProjectsDatabasesBackupSchedules
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApiData extends \Google\Model
-{
-    protected $apiMetadataListType = GoogleCloudApihubV1ApiMetadataList::class;
-    protected $apiMetadataListDataType = '';
-    /**
-     * Optional. The list of API metadata.
-     *
-     * @param GoogleCloudApihubV1ApiMetadataList $apiMetadataList
-     */
-    public function setApiMetadataList(GoogleCloudApihubV1ApiMetadataList $apiMetadataList)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApiData extends \Google\Model
     {
+        protected $apiMetadataListType = GoogleCloudApihubV1ApiMetadataList::class;
+        protected $apiMetadataListDataType = '';
+        /**
+         * Optional. The list of API metadata.
+         *
+         * @param GoogleCloudApihubV1ApiMetadataList $apiMetadataList
+         */
+        public function setApiMetadataList(GoogleCloudApihubV1ApiMetadataList $apiMetadataList)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiMetadataList
+         */
+        public function getApiMetadataList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApiMetadataList
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApiData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiMetadataList()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApiData extends \Google\Service\APIhub\GoogleCloudApihubV1ApiData
     {
     }
 }

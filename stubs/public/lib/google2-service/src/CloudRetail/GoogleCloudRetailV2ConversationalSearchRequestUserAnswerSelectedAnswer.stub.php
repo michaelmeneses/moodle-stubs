@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchRequestUserAnswerSelectedAnswer extends \Google\Model
-{
-    protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
-    protected $productAttributeValueDataType = '';
-    /**
-     * Optional. This field specifies the selected answer which is a attribute
-     * key-value.
-     *
-     * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
-     */
-    public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchRequestUserAnswerSelectedAnswer extends \Google\Model
     {
+        protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
+        protected $productAttributeValueDataType = '';
+        /**
+         * Optional. This field specifies the selected answer which is a attribute
+         * key-value.
+         *
+         * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
+         */
+        public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductAttributeValue
+         */
+        public function getProductAttributeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ProductAttributeValue
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequestUserAnswerSelectedAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductAttributeValue()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchRequestUserAnswerSelectedAnswer extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequestUserAnswerSelectedAnswer
     {
     }
 }

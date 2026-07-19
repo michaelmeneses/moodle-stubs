@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AvailableUpdates extends \Google\Model
-{
-    protected $inPlaceUpdateType = ApplianceVersion::class;
-    protected $inPlaceUpdateDataType = '';
-    protected $newDeployableApplianceType = ApplianceVersion::class;
-    protected $newDeployableApplianceDataType = '';
-    /**
-     * The latest version for in place update. The current appliance can be
-     * updated to this version using the API or m4c CLI.
-     *
-     * @param ApplianceVersion $inPlaceUpdate
-     */
-    public function setInPlaceUpdate(ApplianceVersion $inPlaceUpdate)
+namespace Google\Service\VMMigrationService {
+    class AvailableUpdates extends \Google\Model
     {
+        protected $inPlaceUpdateType = ApplianceVersion::class;
+        protected $inPlaceUpdateDataType = '';
+        protected $newDeployableApplianceType = ApplianceVersion::class;
+        protected $newDeployableApplianceDataType = '';
+        /**
+         * The latest version for in place update. The current appliance can be
+         * updated to this version using the API or m4c CLI.
+         *
+         * @param ApplianceVersion $inPlaceUpdate
+         */
+        public function setInPlaceUpdate(ApplianceVersion $inPlaceUpdate)
+        {
+        }
+        /**
+         * @return ApplianceVersion
+         */
+        public function getInPlaceUpdate()
+        {
+        }
+        /**
+         * The newest deployable version of the appliance. The current appliance can't
+         * be updated into this version, and the owner must manually deploy this OVA
+         * to a new appliance.
+         *
+         * @param ApplianceVersion $newDeployableAppliance
+         */
+        public function setNewDeployableAppliance(ApplianceVersion $newDeployableAppliance)
+        {
+        }
+        /**
+         * @return ApplianceVersion
+         */
+        public function getNewDeployableAppliance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplianceVersion
+     * Runtime class alias of \Google\Service\VMMigrationService\AvailableUpdates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInPlaceUpdate()
-    {
-    }
-    /**
-     * The newest deployable version of the appliance. The current appliance can't
-     * be updated into this version, and the owner must manually deploy this OVA
-     * to a new appliance.
-     *
-     * @param ApplianceVersion $newDeployableAppliance
-     */
-    public function setNewDeployableAppliance(ApplianceVersion $newDeployableAppliance)
-    {
-    }
-    /**
-     * @return ApplianceVersion
-     */
-    public function getNewDeployableAppliance()
+    class Google_Service_VMMigrationService_AvailableUpdates extends \Google\Service\VMMigrationService\AvailableUpdates
     {
     }
 }

@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\output;
 
+use html_writer;
+use moodle_url;
+use core\output\inplace_editable;
+use core_external\external_api;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\models\report;
 /**
  * Report name editable component
  *

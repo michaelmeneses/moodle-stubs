@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "twoStepVerification" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $twoStepVerification = $adminService->twoStepVerification;
- *  </code>
- */
-class TwoStepVerification extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
     /**
-     * Turns off 2-Step Verification for user. (twoStepVerification.turnOff)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "twoStepVerification" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $twoStepVerification = $adminService->twoStepVerification;
+     *  </code>
      */
-    public function turnOff($userKey, $optParams = [])
+    class TwoStepVerification extends \Google\Service\Resource
+    {
+        /**
+         * Turns off 2-Step Verification for user. (twoStepVerification.turnOff)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function turnOff($userKey, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\TwoStepVerification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_TwoStepVerification extends \Google\Service\Directory\Resource\TwoStepVerification
     {
     }
 }

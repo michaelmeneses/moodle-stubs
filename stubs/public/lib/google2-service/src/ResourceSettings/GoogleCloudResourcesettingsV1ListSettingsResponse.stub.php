@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1ListSettingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $settingsType = GoogleCloudResourcesettingsV1Setting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1ListSettingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $settingsType = GoogleCloudResourcesettingsV1Setting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1Setting[]
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1Setting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ListSettingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1Setting[]
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1Setting[]
-     */
-    public function getSettings()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1ListSettingsResponse extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ListSettingsResponse
     {
     }
 }

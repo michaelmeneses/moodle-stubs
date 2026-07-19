@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HistoryRecord extends \Google\Model
-{
-    protected $clientContextType = ClientContext::class;
-    protected $clientContextDataType = '';
-    protected $filterUpdateType = FilterUpdate::class;
-    protected $filterUpdateDataType = '';
-    protected $imapUpdateType = ImapUpdate::class;
-    protected $imapUpdateDataType = '';
-    protected $labelUpdateType = LabelUpdate::class;
-    protected $labelUpdateDataType = '';
-    protected $prefUpdateType = PrefUpdate::class;
-    protected $prefUpdateDataType = '';
-    /**
-     * @var string
-     */
-    public $recordId;
-    protected $threadUpdateType = ThreadUpdate::class;
-    protected $threadUpdateDataType = '';
-    protected $transactionContextType = TransactionContext::class;
-    protected $transactionContextDataType = '';
-    protected $txnDebugInfoType = TransactionDebugInfo::class;
-    protected $txnDebugInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param ClientContext
-     */
-    public function setClientContext(ClientContext $clientContext)
+namespace Google\Service\CloudSearch {
+    class HistoryRecord extends \Google\Model
     {
+        protected $clientContextType = ClientContext::class;
+        protected $clientContextDataType = '';
+        protected $filterUpdateType = FilterUpdate::class;
+        protected $filterUpdateDataType = '';
+        protected $imapUpdateType = ImapUpdate::class;
+        protected $imapUpdateDataType = '';
+        protected $labelUpdateType = LabelUpdate::class;
+        protected $labelUpdateDataType = '';
+        protected $prefUpdateType = PrefUpdate::class;
+        protected $prefUpdateDataType = '';
+        /**
+         * @var string
+         */
+        public $recordId;
+        protected $threadUpdateType = ThreadUpdate::class;
+        protected $threadUpdateDataType = '';
+        protected $transactionContextType = TransactionContext::class;
+        protected $transactionContextDataType = '';
+        protected $txnDebugInfoType = TransactionDebugInfo::class;
+        protected $txnDebugInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param ClientContext
+         */
+        public function setClientContext(ClientContext $clientContext)
+        {
+        }
+        /**
+         * @return ClientContext
+         */
+        public function getClientContext()
+        {
+        }
+        /**
+         * @param FilterUpdate
+         */
+        public function setFilterUpdate(FilterUpdate $filterUpdate)
+        {
+        }
+        /**
+         * @return FilterUpdate
+         */
+        public function getFilterUpdate()
+        {
+        }
+        /**
+         * @param ImapUpdate
+         */
+        public function setImapUpdate(ImapUpdate $imapUpdate)
+        {
+        }
+        /**
+         * @return ImapUpdate
+         */
+        public function getImapUpdate()
+        {
+        }
+        /**
+         * @param LabelUpdate
+         */
+        public function setLabelUpdate(LabelUpdate $labelUpdate)
+        {
+        }
+        /**
+         * @return LabelUpdate
+         */
+        public function getLabelUpdate()
+        {
+        }
+        /**
+         * @param PrefUpdate
+         */
+        public function setPrefUpdate(PrefUpdate $prefUpdate)
+        {
+        }
+        /**
+         * @return PrefUpdate
+         */
+        public function getPrefUpdate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecordId($recordId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordId()
+        {
+        }
+        /**
+         * @param ThreadUpdate
+         */
+        public function setThreadUpdate(ThreadUpdate $threadUpdate)
+        {
+        }
+        /**
+         * @return ThreadUpdate
+         */
+        public function getThreadUpdate()
+        {
+        }
+        /**
+         * @param TransactionContext
+         */
+        public function setTransactionContext(TransactionContext $transactionContext)
+        {
+        }
+        /**
+         * @return TransactionContext
+         */
+        public function getTransactionContext()
+        {
+        }
+        /**
+         * @param TransactionDebugInfo
+         */
+        public function setTxnDebugInfo(TransactionDebugInfo $txnDebugInfo)
+        {
+        }
+        /**
+         * @return TransactionDebugInfo
+         */
+        public function getTxnDebugInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientContext
+     * Runtime class alias of \Google\Service\CloudSearch\HistoryRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientContext()
-    {
-    }
-    /**
-     * @param FilterUpdate
-     */
-    public function setFilterUpdate(FilterUpdate $filterUpdate)
-    {
-    }
-    /**
-     * @return FilterUpdate
-     */
-    public function getFilterUpdate()
-    {
-    }
-    /**
-     * @param ImapUpdate
-     */
-    public function setImapUpdate(ImapUpdate $imapUpdate)
-    {
-    }
-    /**
-     * @return ImapUpdate
-     */
-    public function getImapUpdate()
-    {
-    }
-    /**
-     * @param LabelUpdate
-     */
-    public function setLabelUpdate(LabelUpdate $labelUpdate)
-    {
-    }
-    /**
-     * @return LabelUpdate
-     */
-    public function getLabelUpdate()
-    {
-    }
-    /**
-     * @param PrefUpdate
-     */
-    public function setPrefUpdate(PrefUpdate $prefUpdate)
-    {
-    }
-    /**
-     * @return PrefUpdate
-     */
-    public function getPrefUpdate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecordId($recordId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordId()
-    {
-    }
-    /**
-     * @param ThreadUpdate
-     */
-    public function setThreadUpdate(ThreadUpdate $threadUpdate)
-    {
-    }
-    /**
-     * @return ThreadUpdate
-     */
-    public function getThreadUpdate()
-    {
-    }
-    /**
-     * @param TransactionContext
-     */
-    public function setTransactionContext(TransactionContext $transactionContext)
-    {
-    }
-    /**
-     * @return TransactionContext
-     */
-    public function getTransactionContext()
-    {
-    }
-    /**
-     * @param TransactionDebugInfo
-     */
-    public function setTxnDebugInfo(TransactionDebugInfo $txnDebugInfo)
-    {
-    }
-    /**
-     * @return TransactionDebugInfo
-     */
-    public function getTxnDebugInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_HistoryRecord extends \Google\Service\CloudSearch\HistoryRecord
     {
     }
 }

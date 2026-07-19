@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaFile extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const TYPE_INTEGRATION_FILE_UNSPECIFIED = 'INTEGRATION_FILE_UNSPECIFIED';
-    /**
-     * Integration file.
-     */
-    public const TYPE_INTEGRATION = 'INTEGRATION';
-    /**
-     * Integration Config variables.
-     */
-    public const TYPE_INTEGRATION_CONFIG_VARIABLES = 'INTEGRATION_CONFIG_VARIABLES';
-    /**
-     * Integration version config file
-     *
-     * @var array[]
-     */
-    public $integrationConfig;
-    protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionDataType = '';
-    /**
-     * File information like Integration version, Integration Config variables
-     * etc.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Integration version config file
-     *
-     * @param array[] $integrationConfig
-     */
-    public function setIntegrationConfig($integrationConfig)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaFile extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const TYPE_INTEGRATION_FILE_UNSPECIFIED = 'INTEGRATION_FILE_UNSPECIFIED';
+        /**
+         * Integration file.
+         */
+        public const TYPE_INTEGRATION = 'INTEGRATION';
+        /**
+         * Integration Config variables.
+         */
+        public const TYPE_INTEGRATION_CONFIG_VARIABLES = 'INTEGRATION_CONFIG_VARIABLES';
+        /**
+         * Integration version config file
+         *
+         * @var array[]
+         */
+        public $integrationConfig;
+        protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionDataType = '';
+        /**
+         * File information like Integration version, Integration Config variables
+         * etc.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Integration version config file
+         *
+         * @param array[] $integrationConfig
+         */
+        public function setIntegrationConfig($integrationConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getIntegrationConfig()
+        {
+        }
+        /**
+         * Integration version
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
+         */
+        public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+         */
+        public function getIntegrationVersion()
+        {
+        }
+        /**
+         * File information like Integration version, Integration Config variables
+         * etc.
+         *
+         * Accepted values: INTEGRATION_FILE_UNSPECIFIED, INTEGRATION,
+         * INTEGRATION_CONFIG_VARIABLES
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationConfig()
-    {
-    }
-    /**
-     * Integration version
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
-     */
-    public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
-     */
-    public function getIntegrationVersion()
-    {
-    }
-    /**
-     * File information like Integration version, Integration Config variables
-     * etc.
-     *
-     * Accepted values: INTEGRATION_FILE_UNSPECIFIED, INTEGRATION,
-     * INTEGRATION_CONFIG_VARIABLES
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaFile extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaFile
     {
     }
 }

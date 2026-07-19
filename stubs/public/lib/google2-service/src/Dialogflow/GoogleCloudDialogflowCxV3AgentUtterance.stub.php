@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentUtterance extends \Google\Model
-{
-    /**
-     * Required. Message content in text.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Required. Message content in text.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentUtterance extends \Google\Model
     {
+        /**
+         * Required. Message content in text.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Required. Message content in text.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentUtterance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentUtterance extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentUtterance
     {
     }
 }

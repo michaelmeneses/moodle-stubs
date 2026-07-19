@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DiskResourceStatusAsyncReplicationStatus extends \Google\Model
-{
-    /**
-     * Replication is active.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Secondary disk is created and is waiting for replication to start.
-     */
-    public const STATE_CREATED = 'CREATED';
-    /**
-     * Replication is starting.
-     */
-    public const STATE_STARTING = 'STARTING';
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Replication is stopped.
-     */
-    public const STATE_STOPPED = 'STOPPED';
-    /**
-     * Replication is stopping.
-     */
-    public const STATE_STOPPING = 'STOPPING';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Compute {
+    class DiskResourceStatusAsyncReplicationStatus extends \Google\Model
     {
+        /**
+         * Replication is active.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Secondary disk is created and is waiting for replication to start.
+         */
+        public const STATE_CREATED = 'CREATED';
+        /**
+         * Replication is starting.
+         */
+        public const STATE_STARTING = 'STARTING';
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Replication is stopped.
+         */
+        public const STATE_STOPPED = 'STOPPED';
+        /**
+         * Replication is stopping.
+         */
+        public const STATE_STOPPING = 'STOPPING';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Compute\DiskResourceStatusAsyncReplicationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_Compute_DiskResourceStatusAsyncReplicationStatus extends \Google\Service\Compute\DiskResourceStatusAsyncReplicationStatus
     {
     }
 }

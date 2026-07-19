@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListEnvironmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'environments';
-    protected $environmentsType = GoogleCloudDataplexV1Environment::class;
-    protected $environmentsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Environments under the given parent lake.
-     *
-     * @param GoogleCloudDataplexV1Environment[] $environments
-     */
-    public function setEnvironments($environments)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListEnvironmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'environments';
+        protected $environmentsType = GoogleCloudDataplexV1Environment::class;
+        protected $environmentsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Environments under the given parent lake.
+         *
+         * @param GoogleCloudDataplexV1Environment[] $environments
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Environment[]
+         */
+        public function getEnvironments()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Environment[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEnvironmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironments()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListEnvironmentsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEnvironmentsResponse
     {
     }
 }

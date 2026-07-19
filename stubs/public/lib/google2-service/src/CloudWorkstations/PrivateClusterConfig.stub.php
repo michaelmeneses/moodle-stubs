@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class PrivateClusterConfig extends \Google\Collection
-{
-    protected $collection_key = 'allowedProjects';
-    /**
-     * Optional. Additional projects that are allowed to attach to the workstation
-     * cluster's service attachment. By default, the workstation cluster's project
-     * and the VPC host project (if different) are allowed.
-     *
-     * @var string[]
-     */
-    public $allowedProjects;
-    /**
-     * Output only. Hostname for the workstation cluster. This field will be
-     * populated only when private endpoint is enabled. To access workstations in
-     * the workstation cluster, create a new DNS zone mapping this domain name to
-     * an internal IP address and a forwarding rule mapping that address to the
-     * service attachment.
-     *
-     * @var string
-     */
-    public $clusterHostname;
-    /**
-     * Immutable. Whether Workstations endpoint is private.
-     *
-     * @var bool
-     */
-    public $enablePrivateEndpoint;
-    /**
-     * Output only. Service attachment URI for the workstation cluster. The
-     * service attachment is created when private endpoint is enabled. To access
-     * workstations in the workstation cluster, configure access to the managed
-     * service using [Private Service
-     * Connect](https://cloud.google.com/vpc/docs/configure-private-service-
-     * connect-services).
-     *
-     * @var string
-     */
-    public $serviceAttachmentUri;
-    /**
-     * Optional. Additional projects that are allowed to attach to the workstation
-     * cluster's service attachment. By default, the workstation cluster's project
-     * and the VPC host project (if different) are allowed.
-     *
-     * @param string[] $allowedProjects
-     */
-    public function setAllowedProjects($allowedProjects)
+namespace Google\Service\CloudWorkstations {
+    class PrivateClusterConfig extends \Google\Collection
     {
+        protected $collection_key = 'allowedProjects';
+        /**
+         * Optional. Additional projects that are allowed to attach to the workstation
+         * cluster's service attachment. By default, the workstation cluster's project
+         * and the VPC host project (if different) are allowed.
+         *
+         * @var string[]
+         */
+        public $allowedProjects;
+        /**
+         * Output only. Hostname for the workstation cluster. This field will be
+         * populated only when private endpoint is enabled. To access workstations in
+         * the workstation cluster, create a new DNS zone mapping this domain name to
+         * an internal IP address and a forwarding rule mapping that address to the
+         * service attachment.
+         *
+         * @var string
+         */
+        public $clusterHostname;
+        /**
+         * Immutable. Whether Workstations endpoint is private.
+         *
+         * @var bool
+         */
+        public $enablePrivateEndpoint;
+        /**
+         * Output only. Service attachment URI for the workstation cluster. The
+         * service attachment is created when private endpoint is enabled. To access
+         * workstations in the workstation cluster, configure access to the managed
+         * service using [Private Service
+         * Connect](https://cloud.google.com/vpc/docs/configure-private-service-
+         * connect-services).
+         *
+         * @var string
+         */
+        public $serviceAttachmentUri;
+        /**
+         * Optional. Additional projects that are allowed to attach to the workstation
+         * cluster's service attachment. By default, the workstation cluster's project
+         * and the VPC host project (if different) are allowed.
+         *
+         * @param string[] $allowedProjects
+         */
+        public function setAllowedProjects($allowedProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedProjects()
+        {
+        }
+        /**
+         * Output only. Hostname for the workstation cluster. This field will be
+         * populated only when private endpoint is enabled. To access workstations in
+         * the workstation cluster, create a new DNS zone mapping this domain name to
+         * an internal IP address and a forwarding rule mapping that address to the
+         * service attachment.
+         *
+         * @param string $clusterHostname
+         */
+        public function setClusterHostname($clusterHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterHostname()
+        {
+        }
+        /**
+         * Immutable. Whether Workstations endpoint is private.
+         *
+         * @param bool $enablePrivateEndpoint
+         */
+        public function setEnablePrivateEndpoint($enablePrivateEndpoint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePrivateEndpoint()
+        {
+        }
+        /**
+         * Output only. Service attachment URI for the workstation cluster. The
+         * service attachment is created when private endpoint is enabled. To access
+         * workstations in the workstation cluster, configure access to the managed
+         * service using [Private Service
+         * Connect](https://cloud.google.com/vpc/docs/configure-private-service-
+         * connect-services).
+         *
+         * @param string $serviceAttachmentUri
+         */
+        public function setServiceAttachmentUri($serviceAttachmentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachmentUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudWorkstations\PrivateClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedProjects()
-    {
-    }
-    /**
-     * Output only. Hostname for the workstation cluster. This field will be
-     * populated only when private endpoint is enabled. To access workstations in
-     * the workstation cluster, create a new DNS zone mapping this domain name to
-     * an internal IP address and a forwarding rule mapping that address to the
-     * service attachment.
-     *
-     * @param string $clusterHostname
-     */
-    public function setClusterHostname($clusterHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterHostname()
-    {
-    }
-    /**
-     * Immutable. Whether Workstations endpoint is private.
-     *
-     * @param bool $enablePrivateEndpoint
-     */
-    public function setEnablePrivateEndpoint($enablePrivateEndpoint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePrivateEndpoint()
-    {
-    }
-    /**
-     * Output only. Service attachment URI for the workstation cluster. The
-     * service attachment is created when private endpoint is enabled. To access
-     * workstations in the workstation cluster, configure access to the managed
-     * service using [Private Service
-     * Connect](https://cloud.google.com/vpc/docs/configure-private-service-
-     * connect-services).
-     *
-     * @param string $serviceAttachmentUri
-     */
-    public function setServiceAttachmentUri($serviceAttachmentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachmentUri()
+    class Google_Service_CloudWorkstations_PrivateClusterConfig extends \Google\Service\CloudWorkstations\PrivateClusterConfig
     {
     }
 }

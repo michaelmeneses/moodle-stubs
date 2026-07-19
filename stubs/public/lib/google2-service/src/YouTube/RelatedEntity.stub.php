@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class RelatedEntity extends \Google\Model
-{
-    protected $entityType = Entity::class;
-    protected $entityDataType = '';
-    /**
-     * @param Entity $entity
-     */
-    public function setEntity(Entity $entity)
+namespace Google\Service\YouTube {
+    class RelatedEntity extends \Google\Model
     {
+        protected $entityType = Entity::class;
+        protected $entityDataType = '';
+        /**
+         * @param Entity $entity
+         */
+        public function setEntity(Entity $entity)
+        {
+        }
+        /**
+         * @return Entity
+         */
+        public function getEntity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity
+     * Runtime class alias of \Google\Service\YouTube\RelatedEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
+    class Google_Service_YouTube_RelatedEntity extends \Google\Service\YouTube\RelatedEntity
     {
     }
 }

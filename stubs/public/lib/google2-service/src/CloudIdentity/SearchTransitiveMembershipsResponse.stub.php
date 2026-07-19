@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class SearchTransitiveMembershipsResponse extends \Google\Collection
-{
-    protected $collection_key = 'memberships';
-    protected $membershipsType = MemberRelation::class;
-    protected $membershipsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of transitive members satisfying the query.
-     *
-     * @param MemberRelation[] $memberships
-     */
-    public function setMemberships($memberships)
+namespace Google\Service\CloudIdentity {
+    class SearchTransitiveMembershipsResponse extends \Google\Collection
     {
+        protected $collection_key = 'memberships';
+        protected $membershipsType = MemberRelation::class;
+        protected $membershipsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of transitive members satisfying the query.
+         *
+         * @param MemberRelation[] $memberships
+         */
+        public function setMemberships($memberships)
+        {
+        }
+        /**
+         * @return MemberRelation[]
+         */
+        public function getMemberships()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MemberRelation[]
+     * Runtime class alias of \Google\Service\CloudIdentity\SearchTransitiveMembershipsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberships()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_SearchTransitiveMembershipsResponse extends \Google\Service\CloudIdentity\SearchTransitiveMembershipsResponse
     {
     }
 }

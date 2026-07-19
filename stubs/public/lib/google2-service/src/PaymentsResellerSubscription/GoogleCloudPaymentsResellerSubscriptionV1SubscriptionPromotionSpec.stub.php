@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionPromotionSpec extends \Google\Model
-{
-    protected $freeTrialDurationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
-    protected $freeTrialDurationDataType = '';
-    protected $introductoryPricingDetailsType = GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails::class;
-    protected $introductoryPricingDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $promotion;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
-     */
-    public function setFreeTrialDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $freeTrialDuration)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionPromotionSpec extends \Google\Model
     {
+        protected $freeTrialDurationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
+        protected $freeTrialDurationDataType = '';
+        protected $introductoryPricingDetailsType = GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails::class;
+        protected $introductoryPricingDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $promotion;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function setFreeTrialDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $freeTrialDuration)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function getFreeTrialDuration()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
+         */
+        public function setIntroductoryPricingDetails(GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails $introductoryPricingDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
+         */
+        public function getIntroductoryPricingDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPromotion($promotion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromotion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionPromotionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreeTrialDuration()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
-     */
-    public function setIntroductoryPricingDetails(GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails $introductoryPricingDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
-     */
-    public function getIntroductoryPricingDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPromotion($promotion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromotion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1SubscriptionPromotionSpec extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionPromotionSpec
     {
     }
 }

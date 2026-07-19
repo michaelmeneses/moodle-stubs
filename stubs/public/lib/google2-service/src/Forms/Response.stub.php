@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Response extends \Google\Model
-{
-    protected $createItemType = CreateItemResponse::class;
-    protected $createItemDataType = '';
-    /**
-     * The result of creating an item.
-     *
-     * @param CreateItemResponse $createItem
-     */
-    public function setCreateItem(CreateItemResponse $createItem)
+namespace Google\Service\Forms {
+    class Response extends \Google\Model
     {
+        protected $createItemType = CreateItemResponse::class;
+        protected $createItemDataType = '';
+        /**
+         * The result of creating an item.
+         *
+         * @param CreateItemResponse $createItem
+         */
+        public function setCreateItem(CreateItemResponse $createItem)
+        {
+        }
+        /**
+         * @return CreateItemResponse
+         */
+        public function getCreateItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateItemResponse
+     * Runtime class alias of \Google\Service\Forms\Response registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateItem()
+    class Google_Service_Forms_Response extends \Google\Service\Forms\Response
     {
     }
 }

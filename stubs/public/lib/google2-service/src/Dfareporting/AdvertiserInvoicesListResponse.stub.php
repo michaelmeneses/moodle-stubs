@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AdvertiserInvoicesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'invoices';
-    protected $invoicesType = Invoice::class;
-    protected $invoicesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserInvoicesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Invoice collection
-     *
-     * @param Invoice[] $invoices
-     */
-    public function setInvoices($invoices)
+namespace Google\Service\Dfareporting {
+    class AdvertiserInvoicesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'invoices';
+        protected $invoicesType = Invoice::class;
+        protected $invoicesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserInvoicesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Invoice collection
+         *
+         * @param Invoice[] $invoices
+         */
+        public function setInvoices($invoices)
+        {
+        }
+        /**
+         * @return Invoice[]
+         */
+        public function getInvoices()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserInvoicesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Invoice[]
+     * Runtime class alias of \Google\Service\Dfareporting\AdvertiserInvoicesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvoices()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserInvoicesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_AdvertiserInvoicesListResponse extends \Google\Service\Dfareporting\AdvertiserInvoicesListResponse
     {
     }
 }

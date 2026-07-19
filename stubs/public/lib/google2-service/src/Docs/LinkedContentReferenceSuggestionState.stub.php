@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class LinkedContentReferenceSuggestionState extends \Google\Model
-{
-    protected $sheetsChartReferenceSuggestionStateType = SheetsChartReferenceSuggestionState::class;
-    protected $sheetsChartReferenceSuggestionStateDataType = '';
-    /**
-     * A mask that indicates which of the fields in sheets_chart_reference have
-     * been changed in this suggestion.
-     *
-     * @param SheetsChartReferenceSuggestionState $sheetsChartReferenceSuggestionState
-     */
-    public function setSheetsChartReferenceSuggestionState(SheetsChartReferenceSuggestionState $sheetsChartReferenceSuggestionState)
+namespace Google\Service\Docs {
+    class LinkedContentReferenceSuggestionState extends \Google\Model
     {
+        protected $sheetsChartReferenceSuggestionStateType = SheetsChartReferenceSuggestionState::class;
+        protected $sheetsChartReferenceSuggestionStateDataType = '';
+        /**
+         * A mask that indicates which of the fields in sheets_chart_reference have
+         * been changed in this suggestion.
+         *
+         * @param SheetsChartReferenceSuggestionState $sheetsChartReferenceSuggestionState
+         */
+        public function setSheetsChartReferenceSuggestionState(SheetsChartReferenceSuggestionState $sheetsChartReferenceSuggestionState)
+        {
+        }
+        /**
+         * @return SheetsChartReferenceSuggestionState
+         */
+        public function getSheetsChartReferenceSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SheetsChartReferenceSuggestionState
+     * Runtime class alias of \Google\Service\Docs\LinkedContentReferenceSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSheetsChartReferenceSuggestionState()
+    class Google_Service_Docs_LinkedContentReferenceSuggestionState extends \Google\Service\Docs\LinkedContentReferenceSuggestionState
     {
     }
 }

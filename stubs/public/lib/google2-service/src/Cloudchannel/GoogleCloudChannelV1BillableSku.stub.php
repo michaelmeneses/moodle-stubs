@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1BillableSku extends \Google\Model
-{
-    /**
-     * Resource name of Service which contains Repricing SKU. Format:
-     * services/{service}. Example: "services/B7D9-FDCB-15D8".
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Unique human readable name for the Service.
-     *
-     * @var string
-     */
-    public $serviceDisplayName;
-    /**
-     * Resource name of Billable SKU. Format: billableSkus/{sku}. Example:
-     * billableSkus/6E1B-6634-470F".
-     *
-     * @var string
-     */
-    public $sku;
-    /**
-     * Unique human readable name for the SKU.
-     *
-     * @var string
-     */
-    public $skuDisplayName;
-    /**
-     * Resource name of Service which contains Repricing SKU. Format:
-     * services/{service}. Example: "services/B7D9-FDCB-15D8".
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1BillableSku extends \Google\Model
     {
+        /**
+         * Resource name of Service which contains Repricing SKU. Format:
+         * services/{service}. Example: "services/B7D9-FDCB-15D8".
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Unique human readable name for the Service.
+         *
+         * @var string
+         */
+        public $serviceDisplayName;
+        /**
+         * Resource name of Billable SKU. Format: billableSkus/{sku}. Example:
+         * billableSkus/6E1B-6634-470F".
+         *
+         * @var string
+         */
+        public $sku;
+        /**
+         * Unique human readable name for the SKU.
+         *
+         * @var string
+         */
+        public $skuDisplayName;
+        /**
+         * Resource name of Service which contains Repricing SKU. Format:
+         * services/{service}. Example: "services/B7D9-FDCB-15D8".
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Unique human readable name for the Service.
+         *
+         * @param string $serviceDisplayName
+         */
+        public function setServiceDisplayName($serviceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceDisplayName()
+        {
+        }
+        /**
+         * Resource name of Billable SKU. Format: billableSkus/{sku}. Example:
+         * billableSkus/6E1B-6634-470F".
+         *
+         * @param string $sku
+         */
+        public function setSku($sku)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSku()
+        {
+        }
+        /**
+         * Unique human readable name for the SKU.
+         *
+         * @param string $skuDisplayName
+         */
+        public function setSkuDisplayName($skuDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkuDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1BillableSku registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
-    {
-    }
-    /**
-     * Unique human readable name for the Service.
-     *
-     * @param string $serviceDisplayName
-     */
-    public function setServiceDisplayName($serviceDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceDisplayName()
-    {
-    }
-    /**
-     * Resource name of Billable SKU. Format: billableSkus/{sku}. Example:
-     * billableSkus/6E1B-6634-470F".
-     *
-     * @param string $sku
-     */
-    public function setSku($sku)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSku()
-    {
-    }
-    /**
-     * Unique human readable name for the SKU.
-     *
-     * @param string $skuDisplayName
-     */
-    public function setSkuDisplayName($skuDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkuDisplayName()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1BillableSku extends \Google\Service\Cloudchannel\GoogleCloudChannelV1BillableSku
     {
     }
 }

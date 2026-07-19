@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ExcludeReplicas extends \Google\Collection
-{
-    protected $collection_key = 'replicaSelections';
-    protected $replicaSelectionsType = ReplicaSelection::class;
-    protected $replicaSelectionsDataType = 'array';
-    /**
-     * The directed read replica selector.
-     *
-     * @param ReplicaSelection[] $replicaSelections
-     */
-    public function setReplicaSelections($replicaSelections)
+namespace Google\Service\Spanner {
+    class ExcludeReplicas extends \Google\Collection
     {
+        protected $collection_key = 'replicaSelections';
+        protected $replicaSelectionsType = ReplicaSelection::class;
+        protected $replicaSelectionsDataType = 'array';
+        /**
+         * The directed read replica selector.
+         *
+         * @param ReplicaSelection[] $replicaSelections
+         */
+        public function setReplicaSelections($replicaSelections)
+        {
+        }
+        /**
+         * @return ReplicaSelection[]
+         */
+        public function getReplicaSelections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReplicaSelection[]
+     * Runtime class alias of \Google\Service\Spanner\ExcludeReplicas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplicaSelections()
+    class Google_Service_Spanner_ExcludeReplicas extends \Google\Service\Spanner\ExcludeReplicas
     {
     }
 }

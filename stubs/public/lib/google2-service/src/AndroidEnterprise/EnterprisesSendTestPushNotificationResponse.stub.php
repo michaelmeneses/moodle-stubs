@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class EnterprisesSendTestPushNotificationResponse extends \Google\Model
-{
-    /**
-     * The message ID of the test push notification that was sent.
-     *
-     * @var string
-     */
-    public $messageId;
-    /**
-     * The name of the Cloud Pub/Sub topic to which notifications for this
-     * enterprise's enrolled account will be sent.
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * The message ID of the test push notification that was sent.
-     *
-     * @param string $messageId
-     */
-    public function setMessageId($messageId)
+namespace Google\Service\AndroidEnterprise {
+    class EnterprisesSendTestPushNotificationResponse extends \Google\Model
     {
+        /**
+         * The message ID of the test push notification that was sent.
+         *
+         * @var string
+         */
+        public $messageId;
+        /**
+         * The name of the Cloud Pub/Sub topic to which notifications for this
+         * enterprise's enrolled account will be sent.
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * The message ID of the test push notification that was sent.
+         *
+         * @param string $messageId
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * The name of the Cloud Pub/Sub topic to which notifications for this
+         * enterprise's enrolled account will be sent.
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\EnterprisesSendTestPushNotificationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageId()
-    {
-    }
-    /**
-     * The name of the Cloud Pub/Sub topic to which notifications for this
-     * enterprise's enrolled account will be sent.
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicName()
+    class Google_Service_AndroidEnterprise_EnterprisesSendTestPushNotificationResponse extends \Google\Service\AndroidEnterprise\EnterprisesSendTestPushNotificationResponse
     {
     }
 }

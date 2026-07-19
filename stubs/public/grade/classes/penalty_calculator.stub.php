@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades;
 
+use core_grades\penalty_container;
 /**
  * Abstract class for defining the interface between the core penalty system and penalty plugins.
  * Penalty plugins must override this class under their own namespace to receive calls from the core penalty system.

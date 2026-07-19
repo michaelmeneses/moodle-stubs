@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RequestedRiskAnalysisOptions extends \Google\Model
-{
-    protected $jobConfigType = GooglePrivacyDlpV2RiskAnalysisJobConfig::class;
-    protected $jobConfigDataType = '';
-    /**
-     * The job config for the risk job.
-     *
-     * @param GooglePrivacyDlpV2RiskAnalysisJobConfig $jobConfig
-     */
-    public function setJobConfig(GooglePrivacyDlpV2RiskAnalysisJobConfig $jobConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RequestedRiskAnalysisOptions extends \Google\Model
     {
+        protected $jobConfigType = GooglePrivacyDlpV2RiskAnalysisJobConfig::class;
+        protected $jobConfigDataType = '';
+        /**
+         * The job config for the risk job.
+         *
+         * @param GooglePrivacyDlpV2RiskAnalysisJobConfig $jobConfig
+         */
+        public function setJobConfig(GooglePrivacyDlpV2RiskAnalysisJobConfig $jobConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RiskAnalysisJobConfig
+         */
+        public function getJobConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2RiskAnalysisJobConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RequestedRiskAnalysisOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2RequestedRiskAnalysisOptions extends \Google\Service\DLP\GooglePrivacyDlpV2RequestedRiskAnalysisOptions
     {
     }
 }

@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ConnectionInfo extends \Google\Model
-{
-    /**
-     * Output only. The unique ID of the Instance.
-     *
-     * @var string
-     */
-    public $instanceUid;
-    /**
-     * Output only. The private network IP address for the Instance. This is the
-     * default IP for the instance and is always created (even if enable_public_ip
-     * is set). This is the connection endpoint for an end-user application.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The name of the ConnectionInfo singleton resource, e.g.:
-     * projects/{project}/locations/{location}/clusters/instances/connectionInfo
-     * This field currently has no semantic meaning.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The public IP addresses for the Instance. This is available
-     * ONLY when enable_public_ip is set. This is the connection endpoint for an
-     * end-user application.
-     *
-     * @var string
-     */
-    public $publicIpAddress;
-    /**
-     * Output only. The unique ID of the Instance.
-     *
-     * @param string $instanceUid
-     */
-    public function setInstanceUid($instanceUid)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ConnectionInfo extends \Google\Model
     {
+        /**
+         * Output only. The unique ID of the Instance.
+         *
+         * @var string
+         */
+        public $instanceUid;
+        /**
+         * Output only. The private network IP address for the Instance. This is the
+         * default IP for the instance and is always created (even if enable_public_ip
+         * is set). This is the connection endpoint for an end-user application.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The name of the ConnectionInfo singleton resource, e.g.:
+         * projects/{project}/locations/{location}/clusters/instances/connectionInfo
+         * This field currently has no semantic meaning.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The public IP addresses for the Instance. This is available
+         * ONLY when enable_public_ip is set. This is the connection endpoint for an
+         * end-user application.
+         *
+         * @var string
+         */
+        public $publicIpAddress;
+        /**
+         * Output only. The unique ID of the Instance.
+         *
+         * @param string $instanceUid
+         */
+        public function setInstanceUid($instanceUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceUid()
+        {
+        }
+        /**
+         * Output only. The private network IP address for the Instance. This is the
+         * default IP for the instance and is always created (even if enable_public_ip
+         * is set). This is the connection endpoint for an end-user application.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The name of the ConnectionInfo singleton resource, e.g.:
+         * projects/{project}/locations/{location}/clusters/instances/connectionInfo
+         * This field currently has no semantic meaning.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The public IP addresses for the Instance. This is available
+         * ONLY when enable_public_ip is set. This is the connection endpoint for an
+         * end-user application.
+         *
+         * @param string $publicIpAddress
+         */
+        public function setPublicIpAddress($publicIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ConnectionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceUid()
-    {
-    }
-    /**
-     * Output only. The private network IP address for the Instance. This is the
-     * default IP for the instance and is always created (even if enable_public_ip
-     * is set). This is the connection endpoint for an end-user application.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The name of the ConnectionInfo singleton resource, e.g.:
-     * projects/{project}/locations/{location}/clusters/instances/connectionInfo
-     * This field currently has no semantic meaning.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The public IP addresses for the Instance. This is available
-     * ONLY when enable_public_ip is set. This is the connection endpoint for an
-     * end-user application.
-     *
-     * @param string $publicIpAddress
-     */
-    public function setPublicIpAddress($publicIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicIpAddress()
+    class Google_Service_CloudAlloyDBAdmin_ConnectionInfo extends \Google\Service\CloudAlloyDBAdmin\ConnectionInfo
     {
     }
 }

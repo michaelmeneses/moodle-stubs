@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ContentProviderEndpoint extends \Google\Collection
-{
-    protected $collection_key = 'signingCertsSha256';
-    /**
-     * This feature is not generally available.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Required. This feature is not generally available.
-     *
-     * @var string[]
-     */
-    public $signingCertsSha256;
-    /**
-     * This feature is not generally available.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * This feature is not generally available.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
+namespace Google\Service\AndroidManagement {
+    class ContentProviderEndpoint extends \Google\Collection
     {
+        protected $collection_key = 'signingCertsSha256';
+        /**
+         * This feature is not generally available.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Required. This feature is not generally available.
+         *
+         * @var string[]
+         */
+        public $signingCertsSha256;
+        /**
+         * This feature is not generally available.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * This feature is not generally available.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Required. This feature is not generally available.
+         *
+         * @param string[] $signingCertsSha256
+         */
+        public function setSigningCertsSha256($signingCertsSha256)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSigningCertsSha256()
+        {
+        }
+        /**
+         * This feature is not generally available.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ContentProviderEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Required. This feature is not generally available.
-     *
-     * @param string[] $signingCertsSha256
-     */
-    public function setSigningCertsSha256($signingCertsSha256)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSigningCertsSha256()
-    {
-    }
-    /**
-     * This feature is not generally available.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_AndroidManagement_ContentProviderEndpoint extends \Google\Service\AndroidManagement\ContentProviderEndpoint
     {
     }
 }

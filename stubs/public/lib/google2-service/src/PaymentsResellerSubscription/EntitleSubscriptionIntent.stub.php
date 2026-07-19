@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class EntitleSubscriptionIntent extends \Google\Model
-{
-    /**
-     * Required. The name of the subscription resource that is entitled to the
-     * current end user. It is in the format of
-     * "partners/{partner_id}/subscriptions/{subscriptionId}".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The name of the subscription resource that is entitled to the
-     * current end user. It is in the format of
-     * "partners/{partner_id}/subscriptions/{subscriptionId}".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\PaymentsResellerSubscription {
+    class EntitleSubscriptionIntent extends \Google\Model
     {
+        /**
+         * Required. The name of the subscription resource that is entitled to the
+         * current end user. It is in the format of
+         * "partners/{partner_id}/subscriptions/{subscriptionId}".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The name of the subscription resource that is entitled to the
+         * current end user. It is in the format of
+         * "partners/{partner_id}/subscriptions/{subscriptionId}".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\EntitleSubscriptionIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_PaymentsResellerSubscription_EntitleSubscriptionIntent extends \Google\Service\PaymentsResellerSubscription\EntitleSubscriptionIntent
     {
     }
 }

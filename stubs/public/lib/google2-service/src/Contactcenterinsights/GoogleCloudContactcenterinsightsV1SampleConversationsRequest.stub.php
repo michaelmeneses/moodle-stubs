@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1SampleConversationsRequest extends \Google\Model
-{
-    protected $destinationDatasetType = GoogleCloudContactcenterinsightsV1Dataset::class;
-    protected $destinationDatasetDataType = '';
-    /**
-     * Required. The parent resource of the dataset.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $sampleRuleType = GoogleCloudContactcenterinsightsV1SampleRule::class;
-    protected $sampleRuleDataType = '';
-    /**
-     * The dataset resource to copy the sampled conversations to.
-     *
-     * @param GoogleCloudContactcenterinsightsV1Dataset $destinationDataset
-     */
-    public function setDestinationDataset(GoogleCloudContactcenterinsightsV1Dataset $destinationDataset)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1SampleConversationsRequest extends \Google\Model
     {
+        protected $destinationDatasetType = GoogleCloudContactcenterinsightsV1Dataset::class;
+        protected $destinationDatasetDataType = '';
+        /**
+         * Required. The parent resource of the dataset.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $sampleRuleType = GoogleCloudContactcenterinsightsV1SampleRule::class;
+        protected $sampleRuleDataType = '';
+        /**
+         * The dataset resource to copy the sampled conversations to.
+         *
+         * @param GoogleCloudContactcenterinsightsV1Dataset $destinationDataset
+         */
+        public function setDestinationDataset(GoogleCloudContactcenterinsightsV1Dataset $destinationDataset)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1Dataset
+         */
+        public function getDestinationDataset()
+        {
+        }
+        /**
+         * Required. The parent resource of the dataset.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Optional. The sample rule used for sampling conversations.
+         *
+         * @param GoogleCloudContactcenterinsightsV1SampleRule $sampleRule
+         */
+        public function setSampleRule(GoogleCloudContactcenterinsightsV1SampleRule $sampleRule)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1SampleRule
+         */
+        public function getSampleRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1Dataset
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SampleConversationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationDataset()
-    {
-    }
-    /**
-     * Required. The parent resource of the dataset.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Optional. The sample rule used for sampling conversations.
-     *
-     * @param GoogleCloudContactcenterinsightsV1SampleRule $sampleRule
-     */
-    public function setSampleRule(GoogleCloudContactcenterinsightsV1SampleRule $sampleRule)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1SampleRule
-     */
-    public function getSampleRule()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1SampleConversationsRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SampleConversationsRequest
     {
     }
 }

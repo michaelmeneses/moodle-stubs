@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Size extends \Google\Model
-{
-    /**
-     * Height of this size. Acceptable values are 0 to 32767, inclusive.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * IAB standard size. This is a read-only, auto-generated field.
-     *
-     * @var bool
-     */
-    public $iab;
-    /**
-     * ID of this size. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#size".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Width of this size. Acceptable values are 0 to 32767, inclusive.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Height of this size. Acceptable values are 0 to 32767, inclusive.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\Dfareporting {
+    class Size extends \Google\Model
     {
+        /**
+         * Height of this size. Acceptable values are 0 to 32767, inclusive.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * IAB standard size. This is a read-only, auto-generated field.
+         *
+         * @var bool
+         */
+        public $iab;
+        /**
+         * ID of this size. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#size".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Width of this size. Acceptable values are 0 to 32767, inclusive.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Height of this size. Acceptable values are 0 to 32767, inclusive.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * IAB standard size. This is a read-only, auto-generated field.
+         *
+         * @param bool $iab
+         */
+        public function setIab($iab)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIab()
+        {
+        }
+        /**
+         * ID of this size. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#size".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Width of this size. Acceptable values are 0 to 32767, inclusive.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dfareporting\Size registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * IAB standard size. This is a read-only, auto-generated field.
-     *
-     * @param bool $iab
-     */
-    public function setIab($iab)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIab()
-    {
-    }
-    /**
-     * ID of this size. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#size".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Width of this size. Acceptable values are 0 to 32767, inclusive.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Dfareporting_Size extends \Google\Service\Dfareporting\Size
     {
     }
 }

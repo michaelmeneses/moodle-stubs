@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity\Resource;
-
-/**
- * The "deviceRecall" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playintegrityService = new Google\Service\PlayIntegrity(...);
- *   $deviceRecall = $playintegrityService->deviceRecall;
- *  </code>
- */
-class DeviceRecall extends \Google\Service\Resource
-{
+namespace Google\Service\PlayIntegrity\Resource {
+    use Google\Service\PlayIntegrity\WriteDeviceRecallRequest;
+    use Google\Service\PlayIntegrity\WriteDeviceRecallResponse;
     /**
-     * Writes recall bits for the device where Play Integrity API token is obtained.
-     * The endpoint is available to select Play partners in an early access program
-     * (EAP). (deviceRecall.write)
-     *
-     * @param string $packageName Required. Package name of the app the attached
-     * integrity token belongs to.
-     * @param WriteDeviceRecallRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return WriteDeviceRecallResponse
-     * @throws \Google\Service\Exception
+     * The "deviceRecall" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playintegrityService = new Google\Service\PlayIntegrity(...);
+     *   $deviceRecall = $playintegrityService->deviceRecall;
+     *  </code>
      */
-    public function write($packageName, WriteDeviceRecallRequest $postBody, $optParams = [])
+    class DeviceRecall extends \Google\Service\Resource
+    {
+        /**
+         * Writes recall bits for the device where Play Integrity API token is obtained.
+         * The endpoint is available to select Play partners in an early access program
+         * (EAP). (deviceRecall.write)
+         *
+         * @param string $packageName Required. Package name of the app the attached
+         * integrity token belongs to.
+         * @param WriteDeviceRecallRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return WriteDeviceRecallResponse
+         * @throws \Google\Service\Exception
+         */
+        public function write($packageName, WriteDeviceRecallRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayIntegrity\Resource\DeviceRecall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayIntegrity_Resource_DeviceRecall extends \Google\Service\PlayIntegrity\Resource\DeviceRecall
     {
     }
 }

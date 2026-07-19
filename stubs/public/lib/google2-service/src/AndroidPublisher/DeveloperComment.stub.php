@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeveloperComment extends \Google\Model
-{
-    protected $lastModifiedType = Timestamp::class;
-    protected $lastModifiedDataType = '';
-    /**
-     * The content of the comment, i.e. reply body.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The last time at which this comment was updated.
-     *
-     * @param Timestamp $lastModified
-     */
-    public function setLastModified(Timestamp $lastModified)
+namespace Google\Service\AndroidPublisher {
+    class DeveloperComment extends \Google\Model
     {
+        protected $lastModifiedType = Timestamp::class;
+        protected $lastModifiedDataType = '';
+        /**
+         * The content of the comment, i.e. reply body.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The last time at which this comment was updated.
+         *
+         * @param Timestamp $lastModified
+         */
+        public function setLastModified(Timestamp $lastModified)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getLastModified()
+        {
+        }
+        /**
+         * The content of the comment, i.e. reply body.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Timestamp
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeveloperComment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastModified()
-    {
-    }
-    /**
-     * The content of the comment, i.e. reply body.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_AndroidPublisher_DeveloperComment extends \Google\Service\AndroidPublisher\DeveloperComment
     {
     }
 }

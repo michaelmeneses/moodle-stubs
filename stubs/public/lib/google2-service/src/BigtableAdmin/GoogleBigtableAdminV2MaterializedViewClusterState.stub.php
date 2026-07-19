@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2MaterializedViewClusterState extends \Google\Model
-{
-    /**
-     * The state of the materialized view is unknown in this cluster.
-     */
-    public const REPLICATION_STATE_STATE_NOT_KNOWN = 'STATE_NOT_KNOWN';
-    /**
-     * The cluster or view was recently created, and the materialized view must
-     * finish backfilling before it can begin serving Data API requests.
-     */
-    public const REPLICATION_STATE_INITIALIZING = 'INITIALIZING';
-    /**
-     * The materialized view can serve Data API requests from this cluster.
-     * Depending on materialization and replication delay, reads may not
-     * immediately reflect the state of the materialized view in other clusters.
-     */
-    public const REPLICATION_STATE_READY = 'READY';
-    /**
-     * Output only. The state of the materialized view in this cluster.
-     *
-     * @var string
-     */
-    public $replicationState;
-    /**
-     * Output only. The state of the materialized view in this cluster.
-     *
-     * Accepted values: STATE_NOT_KNOWN, INITIALIZING, READY
-     *
-     * @param self::REPLICATION_STATE_* $replicationState
-     */
-    public function setReplicationState($replicationState)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2MaterializedViewClusterState extends \Google\Model
     {
+        /**
+         * The state of the materialized view is unknown in this cluster.
+         */
+        public const REPLICATION_STATE_STATE_NOT_KNOWN = 'STATE_NOT_KNOWN';
+        /**
+         * The cluster or view was recently created, and the materialized view must
+         * finish backfilling before it can begin serving Data API requests.
+         */
+        public const REPLICATION_STATE_INITIALIZING = 'INITIALIZING';
+        /**
+         * The materialized view can serve Data API requests from this cluster.
+         * Depending on materialization and replication delay, reads may not
+         * immediately reflect the state of the materialized view in other clusters.
+         */
+        public const REPLICATION_STATE_READY = 'READY';
+        /**
+         * Output only. The state of the materialized view in this cluster.
+         *
+         * @var string
+         */
+        public $replicationState;
+        /**
+         * Output only. The state of the materialized view in this cluster.
+         *
+         * Accepted values: STATE_NOT_KNOWN, INITIALIZING, READY
+         *
+         * @param self::REPLICATION_STATE_* $replicationState
+         */
+        public function setReplicationState($replicationState)
+        {
+        }
+        /**
+         * @return self::REPLICATION_STATE_*
+         */
+        public function getReplicationState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::REPLICATION_STATE_*
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2MaterializedViewClusterState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplicationState()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2MaterializedViewClusterState extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2MaterializedViewClusterState
     {
     }
 }

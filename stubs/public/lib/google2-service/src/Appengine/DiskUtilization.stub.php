@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class DiskUtilization extends \Google\Model
-{
-    /**
-     * Target bytes read per second.
-     *
-     * @var int
-     */
-    public $targetReadBytesPerSecond;
-    /**
-     * Target ops read per seconds.
-     *
-     * @var int
-     */
-    public $targetReadOpsPerSecond;
-    /**
-     * Target bytes written per second.
-     *
-     * @var int
-     */
-    public $targetWriteBytesPerSecond;
-    /**
-     * Target ops written per second.
-     *
-     * @var int
-     */
-    public $targetWriteOpsPerSecond;
-    /**
-     * Target bytes read per second.
-     *
-     * @param int $targetReadBytesPerSecond
-     */
-    public function setTargetReadBytesPerSecond($targetReadBytesPerSecond)
+namespace Google\Service\Appengine {
+    class DiskUtilization extends \Google\Model
     {
+        /**
+         * Target bytes read per second.
+         *
+         * @var int
+         */
+        public $targetReadBytesPerSecond;
+        /**
+         * Target ops read per seconds.
+         *
+         * @var int
+         */
+        public $targetReadOpsPerSecond;
+        /**
+         * Target bytes written per second.
+         *
+         * @var int
+         */
+        public $targetWriteBytesPerSecond;
+        /**
+         * Target ops written per second.
+         *
+         * @var int
+         */
+        public $targetWriteOpsPerSecond;
+        /**
+         * Target bytes read per second.
+         *
+         * @param int $targetReadBytesPerSecond
+         */
+        public function setTargetReadBytesPerSecond($targetReadBytesPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetReadBytesPerSecond()
+        {
+        }
+        /**
+         * Target ops read per seconds.
+         *
+         * @param int $targetReadOpsPerSecond
+         */
+        public function setTargetReadOpsPerSecond($targetReadOpsPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetReadOpsPerSecond()
+        {
+        }
+        /**
+         * Target bytes written per second.
+         *
+         * @param int $targetWriteBytesPerSecond
+         */
+        public function setTargetWriteBytesPerSecond($targetWriteBytesPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetWriteBytesPerSecond()
+        {
+        }
+        /**
+         * Target ops written per second.
+         *
+         * @param int $targetWriteOpsPerSecond
+         */
+        public function setTargetWriteOpsPerSecond($targetWriteOpsPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetWriteOpsPerSecond()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Appengine\DiskUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetReadBytesPerSecond()
-    {
-    }
-    /**
-     * Target ops read per seconds.
-     *
-     * @param int $targetReadOpsPerSecond
-     */
-    public function setTargetReadOpsPerSecond($targetReadOpsPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetReadOpsPerSecond()
-    {
-    }
-    /**
-     * Target bytes written per second.
-     *
-     * @param int $targetWriteBytesPerSecond
-     */
-    public function setTargetWriteBytesPerSecond($targetWriteBytesPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetWriteBytesPerSecond()
-    {
-    }
-    /**
-     * Target ops written per second.
-     *
-     * @param int $targetWriteOpsPerSecond
-     */
-    public function setTargetWriteOpsPerSecond($targetWriteOpsPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetWriteOpsPerSecond()
+    class Google_Service_Appengine_DiskUtilization extends \Google\Service\Appengine\DiskUtilization
     {
     }
 }

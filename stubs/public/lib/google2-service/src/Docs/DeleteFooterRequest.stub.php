@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DeleteFooterRequest extends \Google\Model
-{
-    /**
-     * The id of the footer to delete. If this footer is defined on DocumentStyle,
-     * the reference to this footer is removed, resulting in no footer of that
-     * type for the first section of the document. If this footer is defined on a
-     * SectionStyle, the reference to this footer is removed and the footer of
-     * that type is now continued from the previous section.
-     *
-     * @var string
-     */
-    public $footerId;
-    /**
-     * The tab that contains the footer to delete. When omitted, the request is
-     * applied to the first tab. In a document containing a single tab: - If
-     * provided, must match the singular tab's ID. - If omitted, the request
-     * applies to the singular tab. In a document containing multiple tabs: - If
-     * provided, the request applies to the specified tab. - If omitted, the
-     * request applies to the first tab in the document.
-     *
-     * @var string
-     */
-    public $tabId;
-    /**
-     * The id of the footer to delete. If this footer is defined on DocumentStyle,
-     * the reference to this footer is removed, resulting in no footer of that
-     * type for the first section of the document. If this footer is defined on a
-     * SectionStyle, the reference to this footer is removed and the footer of
-     * that type is now continued from the previous section.
-     *
-     * @param string $footerId
-     */
-    public function setFooterId($footerId)
+namespace Google\Service\Docs {
+    class DeleteFooterRequest extends \Google\Model
     {
+        /**
+         * The id of the footer to delete. If this footer is defined on DocumentStyle,
+         * the reference to this footer is removed, resulting in no footer of that
+         * type for the first section of the document. If this footer is defined on a
+         * SectionStyle, the reference to this footer is removed and the footer of
+         * that type is now continued from the previous section.
+         *
+         * @var string
+         */
+        public $footerId;
+        /**
+         * The tab that contains the footer to delete. When omitted, the request is
+         * applied to the first tab. In a document containing a single tab: - If
+         * provided, must match the singular tab's ID. - If omitted, the request
+         * applies to the singular tab. In a document containing multiple tabs: - If
+         * provided, the request applies to the specified tab. - If omitted, the
+         * request applies to the first tab in the document.
+         *
+         * @var string
+         */
+        public $tabId;
+        /**
+         * The id of the footer to delete. If this footer is defined on DocumentStyle,
+         * the reference to this footer is removed, resulting in no footer of that
+         * type for the first section of the document. If this footer is defined on a
+         * SectionStyle, the reference to this footer is removed and the footer of
+         * that type is now continued from the previous section.
+         *
+         * @param string $footerId
+         */
+        public function setFooterId($footerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFooterId()
+        {
+        }
+        /**
+         * The tab that contains the footer to delete. When omitted, the request is
+         * applied to the first tab. In a document containing a single tab: - If
+         * provided, must match the singular tab's ID. - If omitted, the request
+         * applies to the singular tab. In a document containing multiple tabs: - If
+         * provided, the request applies to the specified tab. - If omitted, the
+         * request applies to the first tab in the document.
+         *
+         * @param string $tabId
+         */
+        public function setTabId($tabId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTabId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\DeleteFooterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFooterId()
-    {
-    }
-    /**
-     * The tab that contains the footer to delete. When omitted, the request is
-     * applied to the first tab. In a document containing a single tab: - If
-     * provided, must match the singular tab's ID. - If omitted, the request
-     * applies to the singular tab. In a document containing multiple tabs: - If
-     * provided, the request applies to the specified tab. - If omitted, the
-     * request applies to the first tab in the document.
-     *
-     * @param string $tabId
-     */
-    public function setTabId($tabId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTabId()
+    class Google_Service_Docs_DeleteFooterRequest extends \Google\Service\Docs\DeleteFooterRequest
     {
     }
 }

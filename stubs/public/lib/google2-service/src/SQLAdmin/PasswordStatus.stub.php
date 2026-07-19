@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class PasswordStatus extends \Google\Model
-{
-    /**
-     * If true, user does not have login privileges.
-     *
-     * @var bool
-     */
-    public $locked;
-    /**
-     * The expiration time of the current password.
-     *
-     * @var string
-     */
-    public $passwordExpirationTime;
-    /**
-     * If true, user does not have login privileges.
-     *
-     * @param bool $locked
-     */
-    public function setLocked($locked)
+namespace Google\Service\SQLAdmin {
+    class PasswordStatus extends \Google\Model
     {
+        /**
+         * If true, user does not have login privileges.
+         *
+         * @var bool
+         */
+        public $locked;
+        /**
+         * The expiration time of the current password.
+         *
+         * @var string
+         */
+        public $passwordExpirationTime;
+        /**
+         * If true, user does not have login privileges.
+         *
+         * @param bool $locked
+         */
+        public function setLocked($locked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLocked()
+        {
+        }
+        /**
+         * The expiration time of the current password.
+         *
+         * @param string $passwordExpirationTime
+         */
+        public function setPasswordExpirationTime($passwordExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasswordExpirationTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\PasswordStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocked()
-    {
-    }
-    /**
-     * The expiration time of the current password.
-     *
-     * @param string $passwordExpirationTime
-     */
-    public function setPasswordExpirationTime($passwordExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPasswordExpirationTime()
+    class Google_Service_SQLAdmin_PasswordStatus extends \Google\Service\SQLAdmin\PasswordStatus
     {
     }
 }

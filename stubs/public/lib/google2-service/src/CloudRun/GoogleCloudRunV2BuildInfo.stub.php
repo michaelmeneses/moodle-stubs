@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2BuildInfo extends \Google\Model
-{
-    /**
-     * Output only. Entry point of the function when the image is a Cloud Run
-     * function.
-     *
-     * @var string
-     */
-    public $functionTarget;
-    /**
-     * Output only. Source code location of the image.
-     *
-     * @var string
-     */
-    public $sourceLocation;
-    /**
-     * Output only. Entry point of the function when the image is a Cloud Run
-     * function.
-     *
-     * @param string $functionTarget
-     */
-    public function setFunctionTarget($functionTarget)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2BuildInfo extends \Google\Model
     {
+        /**
+         * Output only. Entry point of the function when the image is a Cloud Run
+         * function.
+         *
+         * @var string
+         */
+        public $functionTarget;
+        /**
+         * Output only. Source code location of the image.
+         *
+         * @var string
+         */
+        public $sourceLocation;
+        /**
+         * Output only. Entry point of the function when the image is a Cloud Run
+         * function.
+         *
+         * @param string $functionTarget
+         */
+        public function setFunctionTarget($functionTarget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunctionTarget()
+        {
+        }
+        /**
+         * Output only. Source code location of the image.
+         *
+         * @param string $sourceLocation
+         */
+        public function setSourceLocation($sourceLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2BuildInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionTarget()
-    {
-    }
-    /**
-     * Output only. Source code location of the image.
-     *
-     * @param string $sourceLocation
-     */
-    public function setSourceLocation($sourceLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceLocation()
+    class Google_Service_CloudRun_GoogleCloudRunV2BuildInfo extends \Google\Service\CloudRun\GoogleCloudRunV2BuildInfo
     {
     }
 }

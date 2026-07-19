@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class GoogleCloudStorage extends \Google\Model
-{
-    /**
-     * Required. The path to a directory in GCS that will eventually contain the
-     * results for this test. The requesting user must have write access on the
-     * bucket in the supplied path.
-     *
-     * @var string
-     */
-    public $gcsPath;
-    /**
-     * Required. The path to a directory in GCS that will eventually contain the
-     * results for this test. The requesting user must have write access on the
-     * bucket in the supplied path.
-     *
-     * @param string $gcsPath
-     */
-    public function setGcsPath($gcsPath)
+namespace Google\Service\Testing {
+    class GoogleCloudStorage extends \Google\Model
     {
+        /**
+         * Required. The path to a directory in GCS that will eventually contain the
+         * results for this test. The requesting user must have write access on the
+         * bucket in the supplied path.
+         *
+         * @var string
+         */
+        public $gcsPath;
+        /**
+         * Required. The path to a directory in GCS that will eventually contain the
+         * results for this test. The requesting user must have write access on the
+         * bucket in the supplied path.
+         *
+         * @param string $gcsPath
+         */
+        public function setGcsPath($gcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\GoogleCloudStorage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsPath()
+    class Google_Service_Testing_GoogleCloudStorage extends \Google\Service\Testing\GoogleCloudStorage
     {
     }
 }

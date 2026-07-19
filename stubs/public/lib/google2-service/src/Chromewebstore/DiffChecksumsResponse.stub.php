@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class DiffChecksumsResponse extends \Google\Model
-{
-    protected $checksumsLocationType = CompositeMedia::class;
-    protected $checksumsLocationDataType = '';
-    /**
-     * @var string
-     */
-    public $chunkSizeBytes;
-    protected $objectLocationType = CompositeMedia::class;
-    protected $objectLocationDataType = '';
-    /**
-     * @var string
-     */
-    public $objectSizeBytes;
-    /**
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * @param CompositeMedia
-     */
-    public function setChecksumsLocation(CompositeMedia $checksumsLocation)
+namespace Google\Service\Chromewebstore {
+    class DiffChecksumsResponse extends \Google\Model
     {
+        protected $checksumsLocationType = CompositeMedia::class;
+        protected $checksumsLocationDataType = '';
+        /**
+         * @var string
+         */
+        public $chunkSizeBytes;
+        protected $objectLocationType = CompositeMedia::class;
+        protected $objectLocationDataType = '';
+        /**
+         * @var string
+         */
+        public $objectSizeBytes;
+        /**
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * @param CompositeMedia
+         */
+        public function setChecksumsLocation(CompositeMedia $checksumsLocation)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getChecksumsLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChunkSizeBytes($chunkSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkSizeBytes()
+        {
+        }
+        /**
+         * @param CompositeMedia
+         */
+        public function setObjectLocation(CompositeMedia $objectLocation)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getObjectLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectSizeBytes($objectSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSizeBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeMedia
+     * Runtime class alias of \Google\Service\Chromewebstore\DiffChecksumsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksumsLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChunkSizeBytes($chunkSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChunkSizeBytes()
-    {
-    }
-    /**
-     * @param CompositeMedia
-     */
-    public function setObjectLocation(CompositeMedia $objectLocation)
-    {
-    }
-    /**
-     * @return CompositeMedia
-     */
-    public function getObjectLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectSizeBytes($objectSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectSizeBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_Chromewebstore_DiffChecksumsResponse extends \Google\Service\Chromewebstore\DiffChecksumsResponse
     {
     }
 }

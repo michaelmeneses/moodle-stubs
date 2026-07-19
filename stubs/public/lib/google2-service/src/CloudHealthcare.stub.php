@@ -21,60 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudHealthcare (v1).
- *
- * <p>
- * Manage, store, and access healthcare data in Google Cloud Platform.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/healthcare" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudHealthcare extends \Google\Service
-{
-    /** Read, write and manage healthcare data. */
-    const CLOUD_HEALTHCARE = "https://www.googleapis.com/auth/cloud-healthcare";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_datasets;
-    public $projects_locations_datasets_consentStores;
-    public $projects_locations_datasets_consentStores_attributeDefinitions;
-    public $projects_locations_datasets_consentStores_consentArtifacts;
-    public $projects_locations_datasets_consentStores_consents;
-    public $projects_locations_datasets_consentStores_userDataMappings;
-    public $projects_locations_datasets_dataMapperWorkspaces;
-    public $projects_locations_datasets_dicomStores;
-    public $projects_locations_datasets_dicomStores_dicomWeb_studies;
-    public $projects_locations_datasets_dicomStores_dicomWeb_studies_series;
-    public $projects_locations_datasets_dicomStores_dicomWeb_studies_series_instances;
-    public $projects_locations_datasets_dicomStores_studies;
-    public $projects_locations_datasets_dicomStores_studies_series;
-    public $projects_locations_datasets_dicomStores_studies_series_instances;
-    public $projects_locations_datasets_dicomStores_studies_series_instances_bulkdata;
-    public $projects_locations_datasets_dicomStores_studies_series_instances_frames;
-    public $projects_locations_datasets_fhirStores;
-    public $projects_locations_datasets_fhirStores_fhir;
-    public $projects_locations_datasets_fhirStores_operations;
-    public $projects_locations_datasets_hl7V2Stores;
-    public $projects_locations_datasets_hl7V2Stores_messages;
-    public $projects_locations_datasets_operations;
-    public $projects_locations_services_nlp;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudHealthcare service.
+     * Service definition for CloudHealthcare (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manage, store, and access healthcare data in Google Cloud Platform.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/healthcare" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudHealthcare extends \Google\Service
+    {
+        /** Read, write and manage healthcare data. */
+        const CLOUD_HEALTHCARE = "https://www.googleapis.com/auth/cloud-healthcare";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_datasets;
+        public $projects_locations_datasets_consentStores;
+        public $projects_locations_datasets_consentStores_attributeDefinitions;
+        public $projects_locations_datasets_consentStores_consentArtifacts;
+        public $projects_locations_datasets_consentStores_consents;
+        public $projects_locations_datasets_consentStores_userDataMappings;
+        public $projects_locations_datasets_dataMapperWorkspaces;
+        public $projects_locations_datasets_dicomStores;
+        public $projects_locations_datasets_dicomStores_dicomWeb_studies;
+        public $projects_locations_datasets_dicomStores_dicomWeb_studies_series;
+        public $projects_locations_datasets_dicomStores_dicomWeb_studies_series_instances;
+        public $projects_locations_datasets_dicomStores_studies;
+        public $projects_locations_datasets_dicomStores_studies_series;
+        public $projects_locations_datasets_dicomStores_studies_series_instances;
+        public $projects_locations_datasets_dicomStores_studies_series_instances_bulkdata;
+        public $projects_locations_datasets_dicomStores_studies_series_instances_frames;
+        public $projects_locations_datasets_fhirStores;
+        public $projects_locations_datasets_fhirStores_fhir;
+        public $projects_locations_datasets_fhirStores_operations;
+        public $projects_locations_datasets_hl7V2Stores;
+        public $projects_locations_datasets_hl7V2Stores_messages;
+        public $projects_locations_datasets_operations;
+        public $projects_locations_services_nlp;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudHealthcare service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare extends \Google\Service\CloudHealthcare
     {
     }
 }

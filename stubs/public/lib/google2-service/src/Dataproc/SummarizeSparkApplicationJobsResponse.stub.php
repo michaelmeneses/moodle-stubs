@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SummarizeSparkApplicationJobsResponse extends \Google\Model
-{
-    protected $jobsSummaryType = JobsSummary::class;
-    protected $jobsSummaryDataType = '';
-    /**
-     * Summary of a Spark Application Jobs
-     *
-     * @param JobsSummary $jobsSummary
-     */
-    public function setJobsSummary(JobsSummary $jobsSummary)
+namespace Google\Service\Dataproc {
+    class SummarizeSparkApplicationJobsResponse extends \Google\Model
     {
+        protected $jobsSummaryType = JobsSummary::class;
+        protected $jobsSummaryDataType = '';
+        /**
+         * Summary of a Spark Application Jobs
+         *
+         * @param JobsSummary $jobsSummary
+         */
+        public function setJobsSummary(JobsSummary $jobsSummary)
+        {
+        }
+        /**
+         * @return JobsSummary
+         */
+        public function getJobsSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobsSummary
+     * Runtime class alias of \Google\Service\Dataproc\SummarizeSparkApplicationJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobsSummary()
+    class Google_Service_Dataproc_SummarizeSparkApplicationJobsResponse extends \Google\Service\Dataproc\SummarizeSparkApplicationJobsResponse
     {
     }
 }

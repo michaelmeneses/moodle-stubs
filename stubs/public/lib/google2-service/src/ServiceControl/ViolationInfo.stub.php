@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ViolationInfo extends \Google\Model
-{
-    /**
-     * Default value. This value should not be used.
-     */
-    public const POLICY_TYPE_POLICY_TYPE_UNSPECIFIED = 'POLICY_TYPE_UNSPECIFIED';
-    /**
-     * Indicates boolean policy constraint
-     */
-    public const POLICY_TYPE_BOOLEAN_CONSTRAINT = 'BOOLEAN_CONSTRAINT';
-    /**
-     * Indicates list policy constraint
-     */
-    public const POLICY_TYPE_LIST_CONSTRAINT = 'LIST_CONSTRAINT';
-    /**
-     * Indicates custom policy constraint
-     */
-    public const POLICY_TYPE_CUSTOM_CONSTRAINT = 'CUSTOM_CONSTRAINT';
-    /**
-     * Optional. Value that is being checked for the policy. This could be in
-     * encrypted form (if pii sensitive). This field will only be emitted in
-     * LIST_POLICY types
-     *
-     * @var string
-     */
-    public $checkedValue;
-    /**
-     * Optional. Constraint name
-     *
-     * @var string
-     */
-    public $constraint;
-    /**
-     * Optional. Provides extra information for the specific violated constraint.
-     * See the constraint's documentation to determine if this field is populated
-     * and what the structure of the message should be.
-     *
-     * @var array[]
-     */
-    public $constraintViolationInfo;
-    /**
-     * Optional. Error message that policy is indicating.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Optional. Indicates the type of the policy.
-     *
-     * @var string
-     */
-    public $policyType;
-    /**
-     * Optional. Value that is being checked for the policy. This could be in
-     * encrypted form (if pii sensitive). This field will only be emitted in
-     * LIST_POLICY types
-     *
-     * @param string $checkedValue
-     */
-    public function setCheckedValue($checkedValue)
+namespace Google\Service\ServiceControl {
+    class ViolationInfo extends \Google\Model
     {
+        /**
+         * Default value. This value should not be used.
+         */
+        public const POLICY_TYPE_POLICY_TYPE_UNSPECIFIED = 'POLICY_TYPE_UNSPECIFIED';
+        /**
+         * Indicates boolean policy constraint
+         */
+        public const POLICY_TYPE_BOOLEAN_CONSTRAINT = 'BOOLEAN_CONSTRAINT';
+        /**
+         * Indicates list policy constraint
+         */
+        public const POLICY_TYPE_LIST_CONSTRAINT = 'LIST_CONSTRAINT';
+        /**
+         * Indicates custom policy constraint
+         */
+        public const POLICY_TYPE_CUSTOM_CONSTRAINT = 'CUSTOM_CONSTRAINT';
+        /**
+         * Optional. Value that is being checked for the policy. This could be in
+         * encrypted form (if pii sensitive). This field will only be emitted in
+         * LIST_POLICY types
+         *
+         * @var string
+         */
+        public $checkedValue;
+        /**
+         * Optional. Constraint name
+         *
+         * @var string
+         */
+        public $constraint;
+        /**
+         * Optional. Provides extra information for the specific violated constraint.
+         * See the constraint's documentation to determine if this field is populated
+         * and what the structure of the message should be.
+         *
+         * @var array[]
+         */
+        public $constraintViolationInfo;
+        /**
+         * Optional. Error message that policy is indicating.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Optional. Indicates the type of the policy.
+         *
+         * @var string
+         */
+        public $policyType;
+        /**
+         * Optional. Value that is being checked for the policy. This could be in
+         * encrypted form (if pii sensitive). This field will only be emitted in
+         * LIST_POLICY types
+         *
+         * @param string $checkedValue
+         */
+        public function setCheckedValue($checkedValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckedValue()
+        {
+        }
+        /**
+         * Optional. Constraint name
+         *
+         * @param string $constraint
+         */
+        public function setConstraint($constraint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConstraint()
+        {
+        }
+        /**
+         * Optional. Provides extra information for the specific violated constraint.
+         * See the constraint's documentation to determine if this field is populated
+         * and what the structure of the message should be.
+         *
+         * @param array[] $constraintViolationInfo
+         */
+        public function setConstraintViolationInfo($constraintViolationInfo)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getConstraintViolationInfo()
+        {
+        }
+        /**
+         * Optional. Error message that policy is indicating.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Optional. Indicates the type of the policy.
+         *
+         * Accepted values: POLICY_TYPE_UNSPECIFIED, BOOLEAN_CONSTRAINT,
+         * LIST_CONSTRAINT, CUSTOM_CONSTRAINT
+         *
+         * @param self::POLICY_TYPE_* $policyType
+         */
+        public function setPolicyType($policyType)
+        {
+        }
+        /**
+         * @return self::POLICY_TYPE_*
+         */
+        public function getPolicyType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\ViolationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckedValue()
-    {
-    }
-    /**
-     * Optional. Constraint name
-     *
-     * @param string $constraint
-     */
-    public function setConstraint($constraint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConstraint()
-    {
-    }
-    /**
-     * Optional. Provides extra information for the specific violated constraint.
-     * See the constraint's documentation to determine if this field is populated
-     * and what the structure of the message should be.
-     *
-     * @param array[] $constraintViolationInfo
-     */
-    public function setConstraintViolationInfo($constraintViolationInfo)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getConstraintViolationInfo()
-    {
-    }
-    /**
-     * Optional. Error message that policy is indicating.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Optional. Indicates the type of the policy.
-     *
-     * Accepted values: POLICY_TYPE_UNSPECIFIED, BOOLEAN_CONSTRAINT,
-     * LIST_CONSTRAINT, CUSTOM_CONSTRAINT
-     *
-     * @param self::POLICY_TYPE_* $policyType
-     */
-    public function setPolicyType($policyType)
-    {
-    }
-    /**
-     * @return self::POLICY_TYPE_*
-     */
-    public function getPolicyType()
+    class Google_Service_ServiceControl_ViolationInfo extends \Google\Service\ServiceControl\ViolationInfo
     {
     }
 }

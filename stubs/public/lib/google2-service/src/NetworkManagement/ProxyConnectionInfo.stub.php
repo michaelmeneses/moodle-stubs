@@ -21,234 +21,243 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ProxyConnectionInfo extends \Google\Model
-{
-    /**
-     * URI of the network where connection is proxied.
-     *
-     * @var string
-     */
-    public $networkUri;
-    /**
-     * Destination IP address of a new connection.
-     *
-     * @var string
-     */
-    public $newDestinationIp;
-    /**
-     * Destination port of a new connection. Only valid when protocol is TCP or
-     * UDP.
-     *
-     * @var int
-     */
-    public $newDestinationPort;
-    /**
-     * Source IP address of a new connection.
-     *
-     * @var string
-     */
-    public $newSourceIp;
-    /**
-     * Source port of a new connection. Only valid when protocol is TCP or UDP.
-     *
-     * @var int
-     */
-    public $newSourcePort;
-    /**
-     * Destination IP address of an original connection
-     *
-     * @var string
-     */
-    public $oldDestinationIp;
-    /**
-     * Destination port of an original connection. Only valid when protocol is TCP
-     * or UDP.
-     *
-     * @var int
-     */
-    public $oldDestinationPort;
-    /**
-     * Source IP address of an original connection.
-     *
-     * @var string
-     */
-    public $oldSourceIp;
-    /**
-     * Source port of an original connection. Only valid when protocol is TCP or
-     * UDP.
-     *
-     * @var int
-     */
-    public $oldSourcePort;
-    /**
-     * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Uri of proxy subnet.
-     *
-     * @var string
-     */
-    public $subnetUri;
-    /**
-     * URI of the network where connection is proxied.
-     *
-     * @param string $networkUri
-     */
-    public function setNetworkUri($networkUri)
+namespace Google\Service\NetworkManagement {
+    class ProxyConnectionInfo extends \Google\Model
     {
+        /**
+         * URI of the network where connection is proxied.
+         *
+         * @var string
+         */
+        public $networkUri;
+        /**
+         * Destination IP address of a new connection.
+         *
+         * @var string
+         */
+        public $newDestinationIp;
+        /**
+         * Destination port of a new connection. Only valid when protocol is TCP or
+         * UDP.
+         *
+         * @var int
+         */
+        public $newDestinationPort;
+        /**
+         * Source IP address of a new connection.
+         *
+         * @var string
+         */
+        public $newSourceIp;
+        /**
+         * Source port of a new connection. Only valid when protocol is TCP or UDP.
+         *
+         * @var int
+         */
+        public $newSourcePort;
+        /**
+         * Destination IP address of an original connection
+         *
+         * @var string
+         */
+        public $oldDestinationIp;
+        /**
+         * Destination port of an original connection. Only valid when protocol is TCP
+         * or UDP.
+         *
+         * @var int
+         */
+        public $oldDestinationPort;
+        /**
+         * Source IP address of an original connection.
+         *
+         * @var string
+         */
+        public $oldSourceIp;
+        /**
+         * Source port of an original connection. Only valid when protocol is TCP or
+         * UDP.
+         *
+         * @var int
+         */
+        public $oldSourcePort;
+        /**
+         * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Uri of proxy subnet.
+         *
+         * @var string
+         */
+        public $subnetUri;
+        /**
+         * URI of the network where connection is proxied.
+         *
+         * @param string $networkUri
+         */
+        public function setNetworkUri($networkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUri()
+        {
+        }
+        /**
+         * Destination IP address of a new connection.
+         *
+         * @param string $newDestinationIp
+         */
+        public function setNewDestinationIp($newDestinationIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewDestinationIp()
+        {
+        }
+        /**
+         * Destination port of a new connection. Only valid when protocol is TCP or
+         * UDP.
+         *
+         * @param int $newDestinationPort
+         */
+        public function setNewDestinationPort($newDestinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNewDestinationPort()
+        {
+        }
+        /**
+         * Source IP address of a new connection.
+         *
+         * @param string $newSourceIp
+         */
+        public function setNewSourceIp($newSourceIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewSourceIp()
+        {
+        }
+        /**
+         * Source port of a new connection. Only valid when protocol is TCP or UDP.
+         *
+         * @param int $newSourcePort
+         */
+        public function setNewSourcePort($newSourcePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNewSourcePort()
+        {
+        }
+        /**
+         * Destination IP address of an original connection
+         *
+         * @param string $oldDestinationIp
+         */
+        public function setOldDestinationIp($oldDestinationIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldDestinationIp()
+        {
+        }
+        /**
+         * Destination port of an original connection. Only valid when protocol is TCP
+         * or UDP.
+         *
+         * @param int $oldDestinationPort
+         */
+        public function setOldDestinationPort($oldDestinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOldDestinationPort()
+        {
+        }
+        /**
+         * Source IP address of an original connection.
+         *
+         * @param string $oldSourceIp
+         */
+        public function setOldSourceIp($oldSourceIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldSourceIp()
+        {
+        }
+        /**
+         * Source port of an original connection. Only valid when protocol is TCP or
+         * UDP.
+         *
+         * @param int $oldSourcePort
+         */
+        public function setOldSourcePort($oldSourcePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOldSourcePort()
+        {
+        }
+        /**
+         * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
+         *
+         * @param string $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
+        /**
+         * Uri of proxy subnet.
+         *
+         * @param string $subnetUri
+         */
+        public function setSubnetUri($subnetUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ProxyConnectionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkUri()
-    {
-    }
-    /**
-     * Destination IP address of a new connection.
-     *
-     * @param string $newDestinationIp
-     */
-    public function setNewDestinationIp($newDestinationIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewDestinationIp()
-    {
-    }
-    /**
-     * Destination port of a new connection. Only valid when protocol is TCP or
-     * UDP.
-     *
-     * @param int $newDestinationPort
-     */
-    public function setNewDestinationPort($newDestinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNewDestinationPort()
-    {
-    }
-    /**
-     * Source IP address of a new connection.
-     *
-     * @param string $newSourceIp
-     */
-    public function setNewSourceIp($newSourceIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewSourceIp()
-    {
-    }
-    /**
-     * Source port of a new connection. Only valid when protocol is TCP or UDP.
-     *
-     * @param int $newSourcePort
-     */
-    public function setNewSourcePort($newSourcePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNewSourcePort()
-    {
-    }
-    /**
-     * Destination IP address of an original connection
-     *
-     * @param string $oldDestinationIp
-     */
-    public function setOldDestinationIp($oldDestinationIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldDestinationIp()
-    {
-    }
-    /**
-     * Destination port of an original connection. Only valid when protocol is TCP
-     * or UDP.
-     *
-     * @param int $oldDestinationPort
-     */
-    public function setOldDestinationPort($oldDestinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOldDestinationPort()
-    {
-    }
-    /**
-     * Source IP address of an original connection.
-     *
-     * @param string $oldSourceIp
-     */
-    public function setOldSourceIp($oldSourceIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldSourceIp()
-    {
-    }
-    /**
-     * Source port of an original connection. Only valid when protocol is TCP or
-     * UDP.
-     *
-     * @param int $oldSourcePort
-     */
-    public function setOldSourcePort($oldSourcePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOldSourcePort()
-    {
-    }
-    /**
-     * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
-     *
-     * @param string $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
-    {
-    }
-    /**
-     * Uri of proxy subnet.
-     *
-     * @param string $subnetUri
-     */
-    public function setSubnetUri($subnetUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetUri()
+    class Google_Service_NetworkManagement_ProxyConnectionInfo extends \Google\Service\NetworkManagement\ProxyConnectionInfo
     {
     }
 }

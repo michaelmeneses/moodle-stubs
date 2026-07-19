@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "managedZones" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $managedZones = $dnsService->managedZones;
- *  </code>
- */
-class ProjectsManagedZones extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    /**
+     * The "managedZones" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $managedZones = $dnsService->managedZones;
+     *  </code>
+     */
+    class ProjectsManagedZones extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dns\Resource\ProjectsManagedZones registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dns_Resource_ProjectsManagedZones extends \Google\Service\Dns\Resource\ProjectsManagedZones
+    {
+    }
 }

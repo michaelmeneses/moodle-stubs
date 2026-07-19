@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class UpcomingNotification extends \Google\Model
-{
-    /**
-     * Indicates if the object needs to have upcoming notification enabled.
-     *
-     * @var bool
-     */
-    public $enableNotification;
-    /**
-     * Indicates if the object needs to have upcoming notification enabled.
-     *
-     * @param bool $enableNotification
-     */
-    public function setEnableNotification($enableNotification)
+namespace Google\Service\Walletobjects {
+    class UpcomingNotification extends \Google\Model
     {
+        /**
+         * Indicates if the object needs to have upcoming notification enabled.
+         *
+         * @var bool
+         */
+        public $enableNotification;
+        /**
+         * Indicates if the object needs to have upcoming notification enabled.
+         *
+         * @param bool $enableNotification
+         */
+        public function setEnableNotification($enableNotification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Walletobjects\UpcomingNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableNotification()
+    class Google_Service_Walletobjects_UpcomingNotification extends \Google\Service\Walletobjects\UpcomingNotification
     {
     }
 }

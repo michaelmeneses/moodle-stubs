@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ListTopicsResponse extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * Optional. If not empty, indicates that there may be more topics that match
-     * the request; this value should be passed in a new `ListTopicsRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $topicsType = Topic::class;
-    protected $topicsDataType = 'array';
-    /**
-     * Optional. If not empty, indicates that there may be more topics that match
-     * the request; this value should be passed in a new `ListTopicsRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Pubsub {
+    class ListTopicsResponse extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * Optional. If not empty, indicates that there may be more topics that match
+         * the request; this value should be passed in a new `ListTopicsRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $topicsType = Topic::class;
+        protected $topicsDataType = 'array';
+        /**
+         * Optional. If not empty, indicates that there may be more topics that match
+         * the request; this value should be passed in a new `ListTopicsRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Optional. The resulting topics.
+         *
+         * @param Topic[] $topics
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return Topic[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ListTopicsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Optional. The resulting topics.
-     *
-     * @param Topic[] $topics
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return Topic[]
-     */
-    public function getTopics()
+    class Google_Service_Pubsub_ListTopicsResponse extends \Google\Service\Pubsub\ListTopicsResponse
     {
     }
 }

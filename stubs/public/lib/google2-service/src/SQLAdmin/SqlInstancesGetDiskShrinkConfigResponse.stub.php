@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesGetDiskShrinkConfigResponse extends \Google\Model
-{
-    /**
-     * This is always `sql#getDiskShrinkConfig`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Additional message to customers.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The minimum size to which a disk can be shrunk in GigaBytes.
-     *
-     * @var string
-     */
-    public $minimalTargetSizeGb;
-    /**
-     * This is always `sql#getDiskShrinkConfig`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesGetDiskShrinkConfigResponse extends \Google\Model
     {
+        /**
+         * This is always `sql#getDiskShrinkConfig`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Additional message to customers.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The minimum size to which a disk can be shrunk in GigaBytes.
+         *
+         * @var string
+         */
+        public $minimalTargetSizeGb;
+        /**
+         * This is always `sql#getDiskShrinkConfig`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Additional message to customers.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The minimum size to which a disk can be shrunk in GigaBytes.
+         *
+         * @param string $minimalTargetSizeGb
+         */
+        public function setMinimalTargetSizeGb($minimalTargetSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimalTargetSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesGetDiskShrinkConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Additional message to customers.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The minimum size to which a disk can be shrunk in GigaBytes.
-     *
-     * @param string $minimalTargetSizeGb
-     */
-    public function setMinimalTargetSizeGb($minimalTargetSizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimalTargetSizeGb()
+    class Google_Service_SQLAdmin_SqlInstancesGetDiskShrinkConfigResponse extends \Google\Service\SQLAdmin\SqlInstancesGetDiskShrinkConfigResponse
     {
     }
 }

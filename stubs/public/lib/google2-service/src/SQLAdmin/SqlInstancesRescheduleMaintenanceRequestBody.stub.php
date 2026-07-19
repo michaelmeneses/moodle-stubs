@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesRescheduleMaintenanceRequestBody extends \Google\Model
-{
-    protected $rescheduleType = Reschedule::class;
-    protected $rescheduleDataType = '';
-    /**
-     * Required. The type of the reschedule the user wants.
-     *
-     * @param Reschedule $reschedule
-     */
-    public function setReschedule(Reschedule $reschedule)
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesRescheduleMaintenanceRequestBody extends \Google\Model
     {
+        protected $rescheduleType = Reschedule::class;
+        protected $rescheduleDataType = '';
+        /**
+         * Required. The type of the reschedule the user wants.
+         *
+         * @param Reschedule $reschedule
+         */
+        public function setReschedule(Reschedule $reschedule)
+        {
+        }
+        /**
+         * @return Reschedule
+         */
+        public function getReschedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Reschedule
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesRescheduleMaintenanceRequestBody registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReschedule()
+    class Google_Service_SQLAdmin_SqlInstancesRescheduleMaintenanceRequestBody extends \Google\Service\SQLAdmin\SqlInstancesRescheduleMaintenanceRequestBody
     {
     }
 }

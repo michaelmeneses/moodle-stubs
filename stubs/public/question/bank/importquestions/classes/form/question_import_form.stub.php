@@ -29,6 +29,9 @@
  */
 namespace qbank_importquestions\form;
 
+use moodle_exception;
+use moodleform;
+use stdClass;
 /**
  * Form to import questions into the question bank.
  *

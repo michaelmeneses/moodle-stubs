@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class HttpRequest extends \Google\Model
-{
-    public $cacheFillBytes;
-    public $cacheHit;
-    public $cacheLookup;
-    public $cacheValidatedWithOriginServer;
-    public $latency;
-    public $protocol;
-    public $referer;
-    public $remoteIp;
-    public $requestMethod;
-    public $requestSize;
-    public $requestUrl;
-    public $responseSize;
-    public $serverIp;
-    public $status;
-    public $userAgent;
-    public function setCacheFillBytes($cacheFillBytes)
+namespace Google\Service\Networkconnectivity {
+    class HttpRequest extends \Google\Model
     {
+        public $cacheFillBytes;
+        public $cacheHit;
+        public $cacheLookup;
+        public $cacheValidatedWithOriginServer;
+        public $latency;
+        public $protocol;
+        public $referer;
+        public $remoteIp;
+        public $requestMethod;
+        public $requestSize;
+        public $requestUrl;
+        public $responseSize;
+        public $serverIp;
+        public $status;
+        public $userAgent;
+        public function setCacheFillBytes($cacheFillBytes)
+        {
+        }
+        public function getCacheFillBytes()
+        {
+        }
+        public function setCacheHit($cacheHit)
+        {
+        }
+        public function getCacheHit()
+        {
+        }
+        public function setCacheLookup($cacheLookup)
+        {
+        }
+        public function getCacheLookup()
+        {
+        }
+        public function setCacheValidatedWithOriginServer($cacheValidatedWithOriginServer)
+        {
+        }
+        public function getCacheValidatedWithOriginServer()
+        {
+        }
+        public function setLatency($latency)
+        {
+        }
+        public function getLatency()
+        {
+        }
+        public function setProtocol($protocol)
+        {
+        }
+        public function getProtocol()
+        {
+        }
+        public function setReferer($referer)
+        {
+        }
+        public function getReferer()
+        {
+        }
+        public function setRemoteIp($remoteIp)
+        {
+        }
+        public function getRemoteIp()
+        {
+        }
+        public function setRequestMethod($requestMethod)
+        {
+        }
+        public function getRequestMethod()
+        {
+        }
+        public function setRequestSize($requestSize)
+        {
+        }
+        public function getRequestSize()
+        {
+        }
+        public function setRequestUrl($requestUrl)
+        {
+        }
+        public function getRequestUrl()
+        {
+        }
+        public function setResponseSize($responseSize)
+        {
+        }
+        public function getResponseSize()
+        {
+        }
+        public function setServerIp($serverIp)
+        {
+        }
+        public function getServerIp()
+        {
+        }
+        public function setStatus($status)
+        {
+        }
+        public function getStatus()
+        {
+        }
+        public function setUserAgent($userAgent)
+        {
+        }
+        public function getUserAgent()
+        {
+        }
     }
-    public function getCacheFillBytes()
-    {
-    }
-    public function setCacheHit($cacheHit)
-    {
-    }
-    public function getCacheHit()
-    {
-    }
-    public function setCacheLookup($cacheLookup)
-    {
-    }
-    public function getCacheLookup()
-    {
-    }
-    public function setCacheValidatedWithOriginServer($cacheValidatedWithOriginServer)
-    {
-    }
-    public function getCacheValidatedWithOriginServer()
-    {
-    }
-    public function setLatency($latency)
-    {
-    }
-    public function getLatency()
-    {
-    }
-    public function setProtocol($protocol)
-    {
-    }
-    public function getProtocol()
-    {
-    }
-    public function setReferer($referer)
-    {
-    }
-    public function getReferer()
-    {
-    }
-    public function setRemoteIp($remoteIp)
-    {
-    }
-    public function getRemoteIp()
-    {
-    }
-    public function setRequestMethod($requestMethod)
-    {
-    }
-    public function getRequestMethod()
-    {
-    }
-    public function setRequestSize($requestSize)
-    {
-    }
-    public function getRequestSize()
-    {
-    }
-    public function setRequestUrl($requestUrl)
-    {
-    }
-    public function getRequestUrl()
-    {
-    }
-    public function setResponseSize($responseSize)
-    {
-    }
-    public function getResponseSize()
-    {
-    }
-    public function setServerIp($serverIp)
-    {
-    }
-    public function getServerIp()
-    {
-    }
-    public function setStatus($status)
-    {
-    }
-    public function getStatus()
-    {
-    }
-    public function setUserAgent($userAgent)
-    {
-    }
-    public function getUserAgent()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\HttpRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_HttpRequest extends \Google\Service\Networkconnectivity\HttpRequest
     {
     }
 }

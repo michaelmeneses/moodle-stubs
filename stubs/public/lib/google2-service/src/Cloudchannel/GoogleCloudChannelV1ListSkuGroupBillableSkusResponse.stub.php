@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListSkuGroupBillableSkusResponse extends \Google\Collection
-{
-    protected $collection_key = 'billableSkus';
-    protected $billableSkusType = GoogleCloudChannelV1BillableSku::class;
-    protected $billableSkusDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListSkuGroupBillableSkusRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of billable SKUs in the requested SKU group.
-     *
-     * @param GoogleCloudChannelV1BillableSku[] $billableSkus
-     */
-    public function setBillableSkus($billableSkus)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListSkuGroupBillableSkusResponse extends \Google\Collection
     {
+        protected $collection_key = 'billableSkus';
+        protected $billableSkusType = GoogleCloudChannelV1BillableSku::class;
+        protected $billableSkusDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListSkuGroupBillableSkusRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of billable SKUs in the requested SKU group.
+         *
+         * @param GoogleCloudChannelV1BillableSku[] $billableSkus
+         */
+        public function setBillableSkus($billableSkus)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1BillableSku[]
+         */
+        public function getBillableSkus()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListSkuGroupBillableSkusRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1BillableSku[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkuGroupBillableSkusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillableSkus()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListSkuGroupBillableSkusRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListSkuGroupBillableSkusResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkuGroupBillableSkusResponse
     {
     }
 }

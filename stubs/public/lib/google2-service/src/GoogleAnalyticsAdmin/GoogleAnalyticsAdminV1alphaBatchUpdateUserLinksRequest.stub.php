@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaBatchUpdateUserLinksRequest
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InfoTypeStats extends \Google\Model
-{
-    /**
-     * Number of findings for this infoType.
-     *
-     * @var string
-     */
-    public $count;
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    /**
-     * Number of findings for this infoType.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InfoTypeStats extends \Google\Model
     {
+        /**
+         * Number of findings for this infoType.
+         *
+         * @var string
+         */
+        public $count;
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        /**
+         * Number of findings for this infoType.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The type of finding this stat is for.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The type of finding this stat is for.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoType
-     */
-    public function getInfoType()
+    class Google_Service_DLP_GooglePrivacyDlpV2InfoTypeStats extends \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeStats
     {
     }
 }

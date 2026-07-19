@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SqlPlanMetric extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accumulatorId;
-    /**
-     * @var string
-     */
-    public $metricType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string $accumulatorId
-     */
-    public function setAccumulatorId($accumulatorId)
+namespace Google\Service\Dataproc {
+    class SqlPlanMetric extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accumulatorId;
+        /**
+         * @var string
+         */
+        public $metricType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string $accumulatorId
+         */
+        public function setAccumulatorId($accumulatorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccumulatorId()
+        {
+        }
+        /**
+         * @param string $metricType
+         */
+        public function setMetricType($metricType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricType()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SqlPlanMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccumulatorId()
-    {
-    }
-    /**
-     * @param string $metricType
-     */
-    public function setMetricType($metricType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricType()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dataproc_SqlPlanMetric extends \Google\Service\Dataproc\SqlPlanMetric
     {
     }
 }

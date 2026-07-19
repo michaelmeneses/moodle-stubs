@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupIntent extends \Google\Model
-{
-    public const AVAILABILITY_SLA_AVAILABILITY_SLA_UNSPECIFIED = 'AVAILABILITY_SLA_UNSPECIFIED';
-    public const AVAILABILITY_SLA_NO_SLA = 'NO_SLA';
-    public const AVAILABILITY_SLA_PRODUCTION_CRITICAL = 'PRODUCTION_CRITICAL';
-    public const AVAILABILITY_SLA_PRODUCTION_NON_CRITICAL = 'PRODUCTION_NON_CRITICAL';
-    /**
-     * @var string
-     */
-    public $availabilitySla;
-    /**
-     * @param self::AVAILABILITY_SLA_* $availabilitySla
-     */
-    public function setAvailabilitySla($availabilitySla)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupIntent extends \Google\Model
     {
+        public const AVAILABILITY_SLA_AVAILABILITY_SLA_UNSPECIFIED = 'AVAILABILITY_SLA_UNSPECIFIED';
+        public const AVAILABILITY_SLA_NO_SLA = 'NO_SLA';
+        public const AVAILABILITY_SLA_PRODUCTION_CRITICAL = 'PRODUCTION_CRITICAL';
+        public const AVAILABILITY_SLA_PRODUCTION_NON_CRITICAL = 'PRODUCTION_NON_CRITICAL';
+        /**
+         * @var string
+         */
+        public $availabilitySla;
+        /**
+         * @param self::AVAILABILITY_SLA_* $availabilitySla
+         */
+        public function setAvailabilitySla($availabilitySla)
+        {
+        }
+        /**
+         * @return self::AVAILABILITY_SLA_*
+         */
+        public function getAvailabilitySla()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AVAILABILITY_SLA_*
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilitySla()
+    class Google_Service_Compute_InterconnectAttachmentGroupIntent extends \Google\Service\Compute\InterconnectAttachmentGroupIntent
     {
     }
 }

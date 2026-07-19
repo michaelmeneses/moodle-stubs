@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2AgentCoachingSuggestionAgentActionSuggestion extends \Google\Model
-{
-    /**
-     * Optional. The suggested action for the agent.
-     *
-     * @var string
-     */
-    public $agentAction;
-    protected $duplicateCheckResultType = GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult::class;
-    protected $duplicateCheckResultDataType = '';
-    protected $sourcesType = GoogleCloudDialogflowV2AgentCoachingSuggestionSources::class;
-    protected $sourcesDataType = '';
-    /**
-     * Optional. The suggested action for the agent.
-     *
-     * @param string $agentAction
-     */
-    public function setAgentAction($agentAction)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2AgentCoachingSuggestionAgentActionSuggestion extends \Google\Model
     {
+        /**
+         * Optional. The suggested action for the agent.
+         *
+         * @var string
+         */
+        public $agentAction;
+        protected $duplicateCheckResultType = GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult::class;
+        protected $duplicateCheckResultDataType = '';
+        protected $sourcesType = GoogleCloudDialogflowV2AgentCoachingSuggestionSources::class;
+        protected $sourcesDataType = '';
+        /**
+         * Optional. The suggested action for the agent.
+         *
+         * @param string $agentAction
+         */
+        public function setAgentAction($agentAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentAction()
+        {
+        }
+        /**
+         * Output only. Duplicate check result for the agent action suggestion.
+         *
+         * @param GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult $duplicateCheckResult
+         */
+        public function setDuplicateCheckResult(GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult $duplicateCheckResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult
+         */
+        public function getDuplicateCheckResult()
+        {
+        }
+        /**
+         * Output only. Sources for the agent action suggestion.
+         *
+         * @param GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources
+         */
+        public function setSources(GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2AgentCoachingSuggestionSources
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2AgentCoachingSuggestionAgentActionSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentAction()
-    {
-    }
-    /**
-     * Output only. Duplicate check result for the agent action suggestion.
-     *
-     * @param GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult $duplicateCheckResult
-     */
-    public function setDuplicateCheckResult(GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult $duplicateCheckResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2AgentCoachingSuggestionDuplicateCheckResult
-     */
-    public function getDuplicateCheckResult()
-    {
-    }
-    /**
-     * Output only. Sources for the agent action suggestion.
-     *
-     * @param GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources
-     */
-    public function setSources(GoogleCloudDialogflowV2AgentCoachingSuggestionSources $sources)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2AgentCoachingSuggestionSources
-     */
-    public function getSources()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2AgentCoachingSuggestionAgentActionSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2AgentCoachingSuggestionAgentActionSuggestion
     {
     }
 }

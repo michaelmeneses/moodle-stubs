@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class Write extends \Google\Collection
-{
-    protected $collection_key = 'updateTransforms';
-    protected $currentDocumentType = Precondition::class;
-    protected $currentDocumentDataType = '';
-    /**
-     * A document name to delete. In the format:
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-     *
-     * @var string
-     */
-    public $delete;
-    protected $transformType = DocumentTransform::class;
-    protected $transformDataType = '';
-    protected $updateType = Document::class;
-    protected $updateDataType = '';
-    protected $updateMaskType = DocumentMask::class;
-    protected $updateMaskDataType = '';
-    protected $updateTransformsType = FieldTransform::class;
-    protected $updateTransformsDataType = 'array';
-    /**
-     * An optional precondition on the document. The write will fail if this is
-     * set and not met by the target document.
-     *
-     * @param Precondition $currentDocument
-     */
-    public function setCurrentDocument(Precondition $currentDocument)
+namespace Google\Service\Firestore {
+    class Write extends \Google\Collection
     {
+        protected $collection_key = 'updateTransforms';
+        protected $currentDocumentType = Precondition::class;
+        protected $currentDocumentDataType = '';
+        /**
+         * A document name to delete. In the format:
+         * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+         *
+         * @var string
+         */
+        public $delete;
+        protected $transformType = DocumentTransform::class;
+        protected $transformDataType = '';
+        protected $updateType = Document::class;
+        protected $updateDataType = '';
+        protected $updateMaskType = DocumentMask::class;
+        protected $updateMaskDataType = '';
+        protected $updateTransformsType = FieldTransform::class;
+        protected $updateTransformsDataType = 'array';
+        /**
+         * An optional precondition on the document. The write will fail if this is
+         * set and not met by the target document.
+         *
+         * @param Precondition $currentDocument
+         */
+        public function setCurrentDocument(Precondition $currentDocument)
+        {
+        }
+        /**
+         * @return Precondition
+         */
+        public function getCurrentDocument()
+        {
+        }
+        /**
+         * A document name to delete. In the format:
+         * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+         *
+         * @param string $delete
+         */
+        public function setDelete($delete)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelete()
+        {
+        }
+        /**
+         * Applies a transformation to a document.
+         *
+         * @param DocumentTransform $transform
+         */
+        public function setTransform(DocumentTransform $transform)
+        {
+        }
+        /**
+         * @return DocumentTransform
+         */
+        public function getTransform()
+        {
+        }
+        /**
+         * A document to write.
+         *
+         * @param Document $update
+         */
+        public function setUpdate(Document $update)
+        {
+        }
+        /**
+         * @return Document
+         */
+        public function getUpdate()
+        {
+        }
+        /**
+         * The fields to update in this write. This field can be set only when the
+         * operation is `update`. If the mask is not set for an `update` and the
+         * document exists, any existing data will be overwritten. If the mask is set
+         * and the document on the server has fields not covered by the mask, they are
+         * left unchanged. Fields referenced in the mask, but not present in the input
+         * document, are deleted from the document on the server. The field paths in
+         * this mask must not contain a reserved field name.
+         *
+         * @param DocumentMask $updateMask
+         */
+        public function setUpdateMask(DocumentMask $updateMask)
+        {
+        }
+        /**
+         * @return DocumentMask
+         */
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * The transforms to perform after update. This field can be set only when the
+         * operation is `update`. If present, this write is equivalent to performing
+         * `update` and `transform` to the same document atomically and in order.
+         *
+         * @param FieldTransform[] $updateTransforms
+         */
+        public function setUpdateTransforms($updateTransforms)
+        {
+        }
+        /**
+         * @return FieldTransform[]
+         */
+        public function getUpdateTransforms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Precondition
+     * Runtime class alias of \Google\Service\Firestore\Write registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentDocument()
-    {
-    }
-    /**
-     * A document name to delete. In the format:
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-     *
-     * @param string $delete
-     */
-    public function setDelete($delete)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDelete()
-    {
-    }
-    /**
-     * Applies a transformation to a document.
-     *
-     * @param DocumentTransform $transform
-     */
-    public function setTransform(DocumentTransform $transform)
-    {
-    }
-    /**
-     * @return DocumentTransform
-     */
-    public function getTransform()
-    {
-    }
-    /**
-     * A document to write.
-     *
-     * @param Document $update
-     */
-    public function setUpdate(Document $update)
-    {
-    }
-    /**
-     * @return Document
-     */
-    public function getUpdate()
-    {
-    }
-    /**
-     * The fields to update in this write. This field can be set only when the
-     * operation is `update`. If the mask is not set for an `update` and the
-     * document exists, any existing data will be overwritten. If the mask is set
-     * and the document on the server has fields not covered by the mask, they are
-     * left unchanged. Fields referenced in the mask, but not present in the input
-     * document, are deleted from the document on the server. The field paths in
-     * this mask must not contain a reserved field name.
-     *
-     * @param DocumentMask $updateMask
-     */
-    public function setUpdateMask(DocumentMask $updateMask)
-    {
-    }
-    /**
-     * @return DocumentMask
-     */
-    public function getUpdateMask()
-    {
-    }
-    /**
-     * The transforms to perform after update. This field can be set only when the
-     * operation is `update`. If present, this write is equivalent to performing
-     * `update` and `transform` to the same document atomically and in order.
-     *
-     * @param FieldTransform[] $updateTransforms
-     */
-    public function setUpdateTransforms($updateTransforms)
-    {
-    }
-    /**
-     * @return FieldTransform[]
-     */
-    public function getUpdateTransforms()
+    class Google_Service_Firestore_Write extends \Google\Service\Firestore\Write
     {
     }
 }

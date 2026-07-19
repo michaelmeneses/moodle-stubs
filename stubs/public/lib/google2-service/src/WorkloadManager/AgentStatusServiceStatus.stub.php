@@ -21,183 +21,192 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class AgentStatusServiceStatus extends \Google\Collection
-{
-    /**
-     * The state is unspecified and has not been checked yet.
-     */
-    public const FULLY_FUNCTIONAL_UNSPECIFIED_STATE = 'UNSPECIFIED_STATE';
-    /**
-     * The state is successful (enabled, granted, fully functional).
-     */
-    public const FULLY_FUNCTIONAL_SUCCESS_STATE = 'SUCCESS_STATE';
-    /**
-     * The state is failed (disabled, denied, not fully functional).
-     */
-    public const FULLY_FUNCTIONAL_FAILURE_STATE = 'FAILURE_STATE';
-    /**
-     * There was an internal error while checking the state, state is unknown.
-     */
-    public const FULLY_FUNCTIONAL_ERROR_STATE = 'ERROR_STATE';
-    /**
-     * The state is unspecified and has not been checked yet.
-     */
-    public const STATE_UNSPECIFIED_STATE = 'UNSPECIFIED_STATE';
-    /**
-     * The state is successful (enabled, granted, fully functional).
-     */
-    public const STATE_SUCCESS_STATE = 'SUCCESS_STATE';
-    /**
-     * The state is failed (disabled, denied, not fully functional).
-     */
-    public const STATE_FAILURE_STATE = 'FAILURE_STATE';
-    /**
-     * There was an internal error while checking the state, state is unknown.
-     */
-    public const STATE_ERROR_STATE = 'ERROR_STATE';
-    protected $collection_key = 'iamPermissions';
-    protected $configValuesType = AgentStatusConfigValue::class;
-    protected $configValuesDataType = 'array';
-    /**
-     * Output only. The error message for the service if it is not fully
-     * functional.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Output only. Whether the service is fully functional (all checks passed).
-     *
-     * @var string
-     */
-    public $fullyFunctional;
-    protected $iamPermissionsType = AgentStatusIAMPermission::class;
-    protected $iamPermissionsDataType = 'array';
-    /**
-     * Output only. The name of the service.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The state of the service (enabled or disabled in the
-     * configuration).
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The message to display when the service state is unspecified.
-     *
-     * @var string
-     */
-    public $unspecifiedStateMessage;
-    /**
-     * Output only. The configuration values for the service.
-     *
-     * @param AgentStatusConfigValue[] $configValues
-     */
-    public function setConfigValues($configValues)
+namespace Google\Service\WorkloadManager {
+    class AgentStatusServiceStatus extends \Google\Collection
     {
+        /**
+         * The state is unspecified and has not been checked yet.
+         */
+        public const FULLY_FUNCTIONAL_UNSPECIFIED_STATE = 'UNSPECIFIED_STATE';
+        /**
+         * The state is successful (enabled, granted, fully functional).
+         */
+        public const FULLY_FUNCTIONAL_SUCCESS_STATE = 'SUCCESS_STATE';
+        /**
+         * The state is failed (disabled, denied, not fully functional).
+         */
+        public const FULLY_FUNCTIONAL_FAILURE_STATE = 'FAILURE_STATE';
+        /**
+         * There was an internal error while checking the state, state is unknown.
+         */
+        public const FULLY_FUNCTIONAL_ERROR_STATE = 'ERROR_STATE';
+        /**
+         * The state is unspecified and has not been checked yet.
+         */
+        public const STATE_UNSPECIFIED_STATE = 'UNSPECIFIED_STATE';
+        /**
+         * The state is successful (enabled, granted, fully functional).
+         */
+        public const STATE_SUCCESS_STATE = 'SUCCESS_STATE';
+        /**
+         * The state is failed (disabled, denied, not fully functional).
+         */
+        public const STATE_FAILURE_STATE = 'FAILURE_STATE';
+        /**
+         * There was an internal error while checking the state, state is unknown.
+         */
+        public const STATE_ERROR_STATE = 'ERROR_STATE';
+        protected $collection_key = 'iamPermissions';
+        protected $configValuesType = AgentStatusConfigValue::class;
+        protected $configValuesDataType = 'array';
+        /**
+         * Output only. The error message for the service if it is not fully
+         * functional.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Output only. Whether the service is fully functional (all checks passed).
+         *
+         * @var string
+         */
+        public $fullyFunctional;
+        protected $iamPermissionsType = AgentStatusIAMPermission::class;
+        protected $iamPermissionsDataType = 'array';
+        /**
+         * Output only. The name of the service.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The state of the service (enabled or disabled in the
+         * configuration).
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The message to display when the service state is unspecified.
+         *
+         * @var string
+         */
+        public $unspecifiedStateMessage;
+        /**
+         * Output only. The configuration values for the service.
+         *
+         * @param AgentStatusConfigValue[] $configValues
+         */
+        public function setConfigValues($configValues)
+        {
+        }
+        /**
+         * @return AgentStatusConfigValue[]
+         */
+        public function getConfigValues()
+        {
+        }
+        /**
+         * Output only. The error message for the service if it is not fully
+         * functional.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Output only. Whether the service is fully functional (all checks passed).
+         *
+         * Accepted values: UNSPECIFIED_STATE, SUCCESS_STATE, FAILURE_STATE,
+         * ERROR_STATE
+         *
+         * @param self::FULLY_FUNCTIONAL_* $fullyFunctional
+         */
+        public function setFullyFunctional($fullyFunctional)
+        {
+        }
+        /**
+         * @return self::FULLY_FUNCTIONAL_*
+         */
+        public function getFullyFunctional()
+        {
+        }
+        /**
+         * Output only. The permissions required for the service.
+         *
+         * @param AgentStatusIAMPermission[] $iamPermissions
+         */
+        public function setIamPermissions($iamPermissions)
+        {
+        }
+        /**
+         * @return AgentStatusIAMPermission[]
+         */
+        public function getIamPermissions()
+        {
+        }
+        /**
+         * Output only. The name of the service.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The state of the service (enabled or disabled in the
+         * configuration).
+         *
+         * Accepted values: UNSPECIFIED_STATE, SUCCESS_STATE, FAILURE_STATE,
+         * ERROR_STATE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The message to display when the service state is unspecified.
+         *
+         * @param string $unspecifiedStateMessage
+         */
+        public function setUnspecifiedStateMessage($unspecifiedStateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnspecifiedStateMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentStatusConfigValue[]
+     * Runtime class alias of \Google\Service\WorkloadManager\AgentStatusServiceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigValues()
-    {
-    }
-    /**
-     * Output only. The error message for the service if it is not fully
-     * functional.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Output only. Whether the service is fully functional (all checks passed).
-     *
-     * Accepted values: UNSPECIFIED_STATE, SUCCESS_STATE, FAILURE_STATE,
-     * ERROR_STATE
-     *
-     * @param self::FULLY_FUNCTIONAL_* $fullyFunctional
-     */
-    public function setFullyFunctional($fullyFunctional)
-    {
-    }
-    /**
-     * @return self::FULLY_FUNCTIONAL_*
-     */
-    public function getFullyFunctional()
-    {
-    }
-    /**
-     * Output only. The permissions required for the service.
-     *
-     * @param AgentStatusIAMPermission[] $iamPermissions
-     */
-    public function setIamPermissions($iamPermissions)
-    {
-    }
-    /**
-     * @return AgentStatusIAMPermission[]
-     */
-    public function getIamPermissions()
-    {
-    }
-    /**
-     * Output only. The name of the service.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The state of the service (enabled or disabled in the
-     * configuration).
-     *
-     * Accepted values: UNSPECIFIED_STATE, SUCCESS_STATE, FAILURE_STATE,
-     * ERROR_STATE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The message to display when the service state is unspecified.
-     *
-     * @param string $unspecifiedStateMessage
-     */
-    public function setUnspecifiedStateMessage($unspecifiedStateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnspecifiedStateMessage()
+    class Google_Service_WorkloadManager_AgentStatusServiceStatus extends \Google\Service\WorkloadManager\AgentStatusServiceStatus
     {
     }
 }

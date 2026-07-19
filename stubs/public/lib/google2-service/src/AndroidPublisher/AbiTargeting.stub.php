@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AbiTargeting extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    protected $alternativesType = Abi::class;
-    protected $alternativesDataType = 'array';
-    protected $valueType = Abi::class;
-    protected $valueDataType = 'array';
-    /**
-     * Targeting of other sibling directories that were in the Bundle. For main
-     * splits this is targeting of other main splits.
-     *
-     * @param Abi[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\AndroidPublisher {
+    class AbiTargeting extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        protected $alternativesType = Abi::class;
+        protected $alternativesDataType = 'array';
+        protected $valueType = Abi::class;
+        protected $valueDataType = 'array';
+        /**
+         * Targeting of other sibling directories that were in the Bundle. For main
+         * splits this is targeting of other main splits.
+         *
+         * @param Abi[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return Abi[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * Value of an abi.
+         *
+         * @param Abi[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return Abi[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Abi[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\AbiTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * Value of an abi.
-     *
-     * @param Abi[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return Abi[]
-     */
-    public function getValue()
+    class Google_Service_AndroidPublisher_AbiTargeting extends \Google\Service\AndroidPublisher\AbiTargeting
     {
     }
 }

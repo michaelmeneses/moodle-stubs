@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSuccessPolicy extends \Google\Model
-{
-    /**
-     * UNSPECIFIED.
-     */
-    public const FINAL_STATE_FINAL_STATE_UNSPECIFIED = 'FINAL_STATE_UNSPECIFIED';
-    /**
-     * The default behavior, where successful tasks will be marked as SUCCEEDED.
-     */
-    public const FINAL_STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Sets the state to SUSPENDED after executing. This is required for
-     * SuspensionTask; event execution will continue once the user calls
-     * ResolveSuspensions with the event_execution_info_id and the task number.
-     */
-    public const FINAL_STATE_SUSPENDED = 'SUSPENDED';
-    /**
-     * State to which the execution snapshot status will be set if the task
-     * succeeds.
-     *
-     * @var string
-     */
-    public $finalState;
-    /**
-     * State to which the execution snapshot status will be set if the task
-     * succeeds.
-     *
-     * Accepted values: FINAL_STATE_UNSPECIFIED, SUCCEEDED, SUSPENDED
-     *
-     * @param self::FINAL_STATE_* $finalState
-     */
-    public function setFinalState($finalState)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSuccessPolicy extends \Google\Model
     {
+        /**
+         * UNSPECIFIED.
+         */
+        public const FINAL_STATE_FINAL_STATE_UNSPECIFIED = 'FINAL_STATE_UNSPECIFIED';
+        /**
+         * The default behavior, where successful tasks will be marked as SUCCEEDED.
+         */
+        public const FINAL_STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Sets the state to SUSPENDED after executing. This is required for
+         * SuspensionTask; event execution will continue once the user calls
+         * ResolveSuspensions with the event_execution_info_id and the task number.
+         */
+        public const FINAL_STATE_SUSPENDED = 'SUSPENDED';
+        /**
+         * State to which the execution snapshot status will be set if the task
+         * succeeds.
+         *
+         * @var string
+         */
+        public $finalState;
+        /**
+         * State to which the execution snapshot status will be set if the task
+         * succeeds.
+         *
+         * Accepted values: FINAL_STATE_UNSPECIFIED, SUCCEEDED, SUSPENDED
+         *
+         * @param self::FINAL_STATE_* $finalState
+         */
+        public function setFinalState($finalState)
+        {
+        }
+        /**
+         * @return self::FINAL_STATE_*
+         */
+        public function getFinalState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FINAL_STATE_*
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuccessPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinalState()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSuccessPolicy extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuccessPolicy
     {
     }
 }

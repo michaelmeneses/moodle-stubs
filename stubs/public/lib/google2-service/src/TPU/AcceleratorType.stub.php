@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class AcceleratorType extends \Google\Collection
-{
-    protected $collection_key = 'acceleratorConfigs';
-    protected $acceleratorConfigsType = AcceleratorConfig::class;
-    protected $acceleratorConfigsDataType = 'array';
-    /**
-     * The resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The accelerator type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The accelerator config.
-     *
-     * @param AcceleratorConfig[] $acceleratorConfigs
-     */
-    public function setAcceleratorConfigs($acceleratorConfigs)
+namespace Google\Service\TPU {
+    class AcceleratorType extends \Google\Collection
     {
+        protected $collection_key = 'acceleratorConfigs';
+        protected $acceleratorConfigsType = AcceleratorConfig::class;
+        protected $acceleratorConfigsDataType = 'array';
+        /**
+         * The resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The accelerator type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The accelerator config.
+         *
+         * @param AcceleratorConfig[] $acceleratorConfigs
+         */
+        public function setAcceleratorConfigs($acceleratorConfigs)
+        {
+        }
+        /**
+         * @return AcceleratorConfig[]
+         */
+        public function getAcceleratorConfigs()
+        {
+        }
+        /**
+         * The resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The accelerator type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceleratorConfig[]
+     * Runtime class alias of \Google\Service\TPU\AcceleratorType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorConfigs()
-    {
-    }
-    /**
-     * The resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The accelerator type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_TPU_AcceleratorType extends \Google\Service\TPU\AcceleratorType
     {
     }
 }

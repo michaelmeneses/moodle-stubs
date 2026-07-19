@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'selectedDocuments';
-    protected $sampleTestStatusType = GoogleRpcStatus::class;
-    protected $sampleTestStatusDataType = '';
-    protected $sampleTrainingStatusType = GoogleRpcStatus::class;
-    protected $sampleTrainingStatusDataType = '';
-    protected $selectedDocumentsType = GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument::class;
-    protected $selectedDocumentsDataType = 'array';
-    /**
-     * The status of sampling documents in test split.
-     *
-     * @param GoogleRpcStatus $sampleTestStatus
-     */
-    public function setSampleTestStatus(GoogleRpcStatus $sampleTestStatus)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'selectedDocuments';
+        protected $sampleTestStatusType = GoogleRpcStatus::class;
+        protected $sampleTestStatusDataType = '';
+        protected $sampleTrainingStatusType = GoogleRpcStatus::class;
+        protected $sampleTrainingStatusDataType = '';
+        protected $selectedDocumentsType = GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument::class;
+        protected $selectedDocumentsDataType = 'array';
+        /**
+         * The status of sampling documents in test split.
+         *
+         * @param GoogleRpcStatus $sampleTestStatus
+         */
+        public function setSampleTestStatus(GoogleRpcStatus $sampleTestStatus)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getSampleTestStatus()
+        {
+        }
+        /**
+         * The status of sampling documents in training split.
+         *
+         * @param GoogleRpcStatus $sampleTrainingStatus
+         */
+        public function setSampleTrainingStatus(GoogleRpcStatus $sampleTrainingStatus)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getSampleTrainingStatus()
+        {
+        }
+        /**
+         * The result of the sampling process.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument[] $selectedDocuments
+         */
+        public function setSelectedDocuments($selectedDocuments)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument[]
+         */
+        public function getSelectedDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSampleTestStatus()
-    {
-    }
-    /**
-     * The status of sampling documents in training split.
-     *
-     * @param GoogleRpcStatus $sampleTrainingStatus
-     */
-    public function setSampleTrainingStatus(GoogleRpcStatus $sampleTrainingStatus)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getSampleTrainingStatus()
-    {
-    }
-    /**
-     * The result of the sampling process.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument[] $selectedDocuments
-     */
-    public function setSelectedDocuments($selectedDocuments)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument[]
-     */
-    public function getSelectedDocuments()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponse extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponse
     {
     }
 }

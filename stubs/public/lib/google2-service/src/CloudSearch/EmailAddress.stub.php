@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EmailAddress extends \Google\Model
-{
-    /**
-     * If the value of type is custom, this property contains the custom type
-     * string.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * The email address.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * The URL to send email.
-     *
-     * @var string
-     */
-    public $emailUrl;
-    /**
-     * Indicates if this is the user's primary email. Only one entry can be marked
-     * as primary.
-     *
-     * @var bool
-     */
-    public $primary;
-    /**
-     * The type of the email account. Acceptable values are: "custom", "home",
-     * "other", "work".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * If the value of type is custom, this property contains the custom type
-     * string.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
+namespace Google\Service\CloudSearch {
+    class EmailAddress extends \Google\Model
     {
+        /**
+         * If the value of type is custom, this property contains the custom type
+         * string.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * The email address.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * The URL to send email.
+         *
+         * @var string
+         */
+        public $emailUrl;
+        /**
+         * Indicates if this is the user's primary email. Only one entry can be marked
+         * as primary.
+         *
+         * @var bool
+         */
+        public $primary;
+        /**
+         * The type of the email account. Acceptable values are: "custom", "home",
+         * "other", "work".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * If the value of type is custom, this property contains the custom type
+         * string.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * The email address.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * The URL to send email.
+         *
+         * @param string $emailUrl
+         */
+        public function setEmailUrl($emailUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailUrl()
+        {
+        }
+        /**
+         * Indicates if this is the user's primary email. Only one entry can be marked
+         * as primary.
+         *
+         * @param bool $primary
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * The type of the email account. Acceptable values are: "custom", "home",
+         * "other", "work".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EmailAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomType()
-    {
-    }
-    /**
-     * The email address.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * The URL to send email.
-     *
-     * @param string $emailUrl
-     */
-    public function setEmailUrl($emailUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailUrl()
-    {
-    }
-    /**
-     * Indicates if this is the user's primary email. Only one entry can be marked
-     * as primary.
-     *
-     * @param bool $primary
-     */
-    public function setPrimary($primary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrimary()
-    {
-    }
-    /**
-     * The type of the email account. Acceptable values are: "custom", "home",
-     * "other", "work".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_EmailAddress extends \Google\Service\CloudSearch\EmailAddress
     {
     }
 }

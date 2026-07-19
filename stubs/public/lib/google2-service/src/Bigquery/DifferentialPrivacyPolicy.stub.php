@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DifferentialPrivacyPolicy extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class DifferentialPrivacyPolicy extends \Google\Model
+    {
+        /**
+         * Optional. The total delta budget for all queries against the privacy-
+         * protected view. Each subscriber query against this view charges the amount
+         * of delta that is pre-defined by the contributor through the privacy policy
+         * delta_per_query field. If there is sufficient budget, then the subscriber
+         * query attempts to complete. It might still fail due to other reasons, in
+         * which case the charge is refunded. If there is insufficient budget the
+         * query is rejected. There might be multiple charge attempts if a single
+         * query references multiple views. In this case there must be sufficient
+         * budget for all charges or the query is rejected and charges are refunded in
+         * best effort. The budget does not have a refresh policy and can only be
+         * updated via ALTER VIEW or circumvented by creating a new view that can be
+         * queried with a fresh budget.
+         *
+         * @var 
+         */
+        public $deltaBudget;
+        /**
+         * Output only. The delta budget remaining. If budget is exhausted, no more
+         * queries are allowed. Note that the budget for queries that are in progress
+         * is deducted before the query executes. If the query fails or is cancelled
+         * then the budget is refunded. In this case the amount of budget remaining
+         * can increase.
+         *
+         * @var 
+         */
+        public $deltaBudgetRemaining;
+        /**
+         * Optional. The delta value that is used per query. Delta represents the
+         * probability that any row will fail to be epsilon differentially private.
+         * Indicates the risk associated with exposing aggregate rows in the result of
+         * a query.
+         *
+         * @var 
+         */
+        public $deltaPerQuery;
+        /**
+         * Optional. The total epsilon budget for all queries against the privacy-
+         * protected view. Each subscriber query against this view charges the amount
+         * of epsilon they request in their query. If there is sufficient budget, then
+         * the subscriber query attempts to complete. It might still fail due to other
+         * reasons, in which case the charge is refunded. If there is insufficient
+         * budget the query is rejected. There might be multiple charge attempts if a
+         * single query references multiple views. In this case there must be
+         * sufficient budget for all charges or the query is rejected and charges are
+         * refunded in best effort. The budget does not have a refresh policy and can
+         * only be updated via ALTER VIEW or circumvented by creating a new view that
+         * can be queried with a fresh budget.
+         *
+         * @var 
+         */
+        public $epsilonBudget;
+        /**
+         * Output only. The epsilon budget remaining. If budget is exhausted, no more
+         * queries are allowed. Note that the budget for queries that are in progress
+         * is deducted before the query executes. If the query fails or is cancelled
+         * then the budget is refunded. In this case the amount of budget remaining
+         * can increase.
+         *
+         * @var 
+         */
+        public $epsilonBudgetRemaining;
+        /**
+         * Optional. The maximum epsilon value that a query can consume. If the
+         * subscriber specifies epsilon as a parameter in a SELECT query, it must be
+         * less than or equal to this value. The epsilon parameter controls the amount
+         * of noise that is added to the groups — a higher epsilon means less noise.
+         *
+         * @var 
+         */
+        public $maxEpsilonPerQuery;
+        /**
+         * Optional. The maximum groups contributed value that is used per query.
+         * Represents the maximum number of groups to which each protected entity can
+         * contribute. Changing this value does not improve or worsen privacy. The
+         * best value for accuracy and utility depends on the query and data.
+         *
+         * @var string
+         */
+        public $maxGroupsContributed;
+        /**
+         * Optional. The privacy unit column associated with this policy. Differential
+         * privacy policies can only have one privacy unit column per data source
+         * object (table, view).
+         *
+         * @var string
+         */
+        public $privacyUnitColumn;
+        public function setDeltaBudget($deltaBudget)
+        {
+        }
+        public function getDeltaBudget()
+        {
+        }
+        public function setDeltaBudgetRemaining($deltaBudgetRemaining)
+        {
+        }
+        public function getDeltaBudgetRemaining()
+        {
+        }
+        public function setDeltaPerQuery($deltaPerQuery)
+        {
+        }
+        public function getDeltaPerQuery()
+        {
+        }
+        public function setEpsilonBudget($epsilonBudget)
+        {
+        }
+        public function getEpsilonBudget()
+        {
+        }
+        public function setEpsilonBudgetRemaining($epsilonBudgetRemaining)
+        {
+        }
+        public function getEpsilonBudgetRemaining()
+        {
+        }
+        public function setMaxEpsilonPerQuery($maxEpsilonPerQuery)
+        {
+        }
+        public function getMaxEpsilonPerQuery()
+        {
+        }
+        /**
+         * Optional. The maximum groups contributed value that is used per query.
+         * Represents the maximum number of groups to which each protected entity can
+         * contribute. Changing this value does not improve or worsen privacy. The
+         * best value for accuracy and utility depends on the query and data.
+         *
+         * @param string $maxGroupsContributed
+         */
+        public function setMaxGroupsContributed($maxGroupsContributed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxGroupsContributed()
+        {
+        }
+        /**
+         * Optional. The privacy unit column associated with this policy. Differential
+         * privacy policies can only have one privacy unit column per data source
+         * object (table, view).
+         *
+         * @param string $privacyUnitColumn
+         */
+        public function setPrivacyUnitColumn($privacyUnitColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivacyUnitColumn()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Optional. The total delta budget for all queries against the privacy-
-     * protected view. Each subscriber query against this view charges the amount
-     * of delta that is pre-defined by the contributor through the privacy policy
-     * delta_per_query field. If there is sufficient budget, then the subscriber
-     * query attempts to complete. It might still fail due to other reasons, in
-     * which case the charge is refunded. If there is insufficient budget the
-     * query is rejected. There might be multiple charge attempts if a single
-     * query references multiple views. In this case there must be sufficient
-     * budget for all charges or the query is rejected and charges are refunded in
-     * best effort. The budget does not have a refresh policy and can only be
-     * updated via ALTER VIEW or circumvented by creating a new view that can be
-     * queried with a fresh budget.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\DifferentialPrivacyPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $deltaBudget;
-    /**
-     * Output only. The delta budget remaining. If budget is exhausted, no more
-     * queries are allowed. Note that the budget for queries that are in progress
-     * is deducted before the query executes. If the query fails or is cancelled
-     * then the budget is refunded. In this case the amount of budget remaining
-     * can increase.
-     *
-     * @var 
-     */
-    public $deltaBudgetRemaining;
-    /**
-     * Optional. The delta value that is used per query. Delta represents the
-     * probability that any row will fail to be epsilon differentially private.
-     * Indicates the risk associated with exposing aggregate rows in the result of
-     * a query.
-     *
-     * @var 
-     */
-    public $deltaPerQuery;
-    /**
-     * Optional. The total epsilon budget for all queries against the privacy-
-     * protected view. Each subscriber query against this view charges the amount
-     * of epsilon they request in their query. If there is sufficient budget, then
-     * the subscriber query attempts to complete. It might still fail due to other
-     * reasons, in which case the charge is refunded. If there is insufficient
-     * budget the query is rejected. There might be multiple charge attempts if a
-     * single query references multiple views. In this case there must be
-     * sufficient budget for all charges or the query is rejected and charges are
-     * refunded in best effort. The budget does not have a refresh policy and can
-     * only be updated via ALTER VIEW or circumvented by creating a new view that
-     * can be queried with a fresh budget.
-     *
-     * @var 
-     */
-    public $epsilonBudget;
-    /**
-     * Output only. The epsilon budget remaining. If budget is exhausted, no more
-     * queries are allowed. Note that the budget for queries that are in progress
-     * is deducted before the query executes. If the query fails or is cancelled
-     * then the budget is refunded. In this case the amount of budget remaining
-     * can increase.
-     *
-     * @var 
-     */
-    public $epsilonBudgetRemaining;
-    /**
-     * Optional. The maximum epsilon value that a query can consume. If the
-     * subscriber specifies epsilon as a parameter in a SELECT query, it must be
-     * less than or equal to this value. The epsilon parameter controls the amount
-     * of noise that is added to the groups — a higher epsilon means less noise.
-     *
-     * @var 
-     */
-    public $maxEpsilonPerQuery;
-    /**
-     * Optional. The maximum groups contributed value that is used per query.
-     * Represents the maximum number of groups to which each protected entity can
-     * contribute. Changing this value does not improve or worsen privacy. The
-     * best value for accuracy and utility depends on the query and data.
-     *
-     * @var string
-     */
-    public $maxGroupsContributed;
-    /**
-     * Optional. The privacy unit column associated with this policy. Differential
-     * privacy policies can only have one privacy unit column per data source
-     * object (table, view).
-     *
-     * @var string
-     */
-    public $privacyUnitColumn;
-    public function setDeltaBudget($deltaBudget)
-    {
-    }
-    public function getDeltaBudget()
-    {
-    }
-    public function setDeltaBudgetRemaining($deltaBudgetRemaining)
-    {
-    }
-    public function getDeltaBudgetRemaining()
-    {
-    }
-    public function setDeltaPerQuery($deltaPerQuery)
-    {
-    }
-    public function getDeltaPerQuery()
-    {
-    }
-    public function setEpsilonBudget($epsilonBudget)
-    {
-    }
-    public function getEpsilonBudget()
-    {
-    }
-    public function setEpsilonBudgetRemaining($epsilonBudgetRemaining)
-    {
-    }
-    public function getEpsilonBudgetRemaining()
-    {
-    }
-    public function setMaxEpsilonPerQuery($maxEpsilonPerQuery)
-    {
-    }
-    public function getMaxEpsilonPerQuery()
-    {
-    }
-    /**
-     * Optional. The maximum groups contributed value that is used per query.
-     * Represents the maximum number of groups to which each protected entity can
-     * contribute. Changing this value does not improve or worsen privacy. The
-     * best value for accuracy and utility depends on the query and data.
-     *
-     * @param string $maxGroupsContributed
-     */
-    public function setMaxGroupsContributed($maxGroupsContributed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxGroupsContributed()
-    {
-    }
-    /**
-     * Optional. The privacy unit column associated with this policy. Differential
-     * privacy policies can only have one privacy unit column per data source
-     * object (table, view).
-     *
-     * @param string $privacyUnitColumn
-     */
-    public function setPrivacyUnitColumn($privacyUnitColumn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivacyUnitColumn()
+    class Google_Service_Bigquery_DifferentialPrivacyPolicy extends \Google\Service\Bigquery\DifferentialPrivacyPolicy
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionTabularClassificationPredictionResult extends \Google\Collection
-{
-    protected $collection_key = 'scores';
-    /**
-     * The name of the classes being classified, contains all possible values of
-     * the target column.
-     *
-     * @var string[]
-     */
-    public $classes;
-    /**
-     * The model's confidence in each class being correct, higher value means
-     * higher confidence. The N-th score corresponds to the N-th class in classes.
-     *
-     * @var float[]
-     */
-    public $scores;
-    /**
-     * The name of the classes being classified, contains all possible values of
-     * the target column.
-     *
-     * @param string[] $classes
-     */
-    public function setClasses($classes)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionTabularClassificationPredictionResult extends \Google\Collection
     {
+        protected $collection_key = 'scores';
+        /**
+         * The name of the classes being classified, contains all possible values of
+         * the target column.
+         *
+         * @var string[]
+         */
+        public $classes;
+        /**
+         * The model's confidence in each class being correct, higher value means
+         * higher confidence. The N-th score corresponds to the N-th class in classes.
+         *
+         * @var float[]
+         */
+        public $scores;
+        /**
+         * The name of the classes being classified, contains all possible values of
+         * the target column.
+         *
+         * @param string[] $classes
+         */
+        public function setClasses($classes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClasses()
+        {
+        }
+        /**
+         * The model's confidence in each class being correct, higher value means
+         * higher confidence. The N-th score corresponds to the N-th class in classes.
+         *
+         * @param float[] $scores
+         */
+        public function setScores($scores)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTabularClassificationPredictionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClasses()
-    {
-    }
-    /**
-     * The model's confidence in each class being correct, higher value means
-     * higher confidence. The N-th score corresponds to the N-th class in classes.
-     *
-     * @param float[] $scores
-     */
-    public function setScores($scores)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getScores()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionTabularClassificationPredictionResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTabularClassificationPredictionResult
     {
     }
 }

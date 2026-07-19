@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListCustomJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customJobs';
-    protected $customJobsType = GoogleCloudAiplatformV1CustomJob::class;
-    protected $customJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListCustomJobsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of CustomJobs in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1CustomJob[] $customJobs
-     */
-    public function setCustomJobs($customJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListCustomJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customJobs';
+        protected $customJobsType = GoogleCloudAiplatformV1CustomJob::class;
+        protected $customJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListCustomJobsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of CustomJobs in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1CustomJob[] $customJobs
+         */
+        public function setCustomJobs($customJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CustomJob[]
+         */
+        public function getCustomJobs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListCustomJobsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CustomJob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListCustomJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomJobs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListCustomJobsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListCustomJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListCustomJobsResponse
     {
     }
 }

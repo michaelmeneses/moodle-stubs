@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ToolOpenApiTool extends \Google\Model
-{
-    protected $authenticationType = GoogleCloudDialogflowCxV3ToolAuthentication::class;
-    protected $authenticationDataType = '';
-    protected $serviceDirectoryConfigType = GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig::class;
-    protected $serviceDirectoryConfigDataType = '';
-    /**
-     * Required. The OpenAPI schema specified as a text.
-     *
-     * @var string
-     */
-    public $textSchema;
-    protected $tlsConfigType = GoogleCloudDialogflowCxV3ToolTLSConfig::class;
-    protected $tlsConfigDataType = '';
-    /**
-     * Optional. Authentication information required by the API.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolAuthentication $authentication
-     */
-    public function setAuthentication(GoogleCloudDialogflowCxV3ToolAuthentication $authentication)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ToolOpenApiTool extends \Google\Model
     {
+        protected $authenticationType = GoogleCloudDialogflowCxV3ToolAuthentication::class;
+        protected $authenticationDataType = '';
+        protected $serviceDirectoryConfigType = GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig::class;
+        protected $serviceDirectoryConfigDataType = '';
+        /**
+         * Required. The OpenAPI schema specified as a text.
+         *
+         * @var string
+         */
+        public $textSchema;
+        protected $tlsConfigType = GoogleCloudDialogflowCxV3ToolTLSConfig::class;
+        protected $tlsConfigDataType = '';
+        /**
+         * Optional. Authentication information required by the API.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolAuthentication $authentication
+         */
+        public function setAuthentication(GoogleCloudDialogflowCxV3ToolAuthentication $authentication)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolAuthentication
+         */
+        public function getAuthentication()
+        {
+        }
+        /**
+         * Optional. Service Directory configuration.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig $serviceDirectoryConfig
+         */
+        public function setServiceDirectoryConfig(GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig $serviceDirectoryConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig
+         */
+        public function getServiceDirectoryConfig()
+        {
+        }
+        /**
+         * Required. The OpenAPI schema specified as a text.
+         *
+         * @param string $textSchema
+         */
+        public function setTextSchema($textSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextSchema()
+        {
+        }
+        /**
+         * Optional. TLS configuration for the HTTPS verification.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolTLSConfig $tlsConfig
+         */
+        public function setTlsConfig(GoogleCloudDialogflowCxV3ToolTLSConfig $tlsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolTLSConfig
+         */
+        public function getTlsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ToolAuthentication
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolOpenApiTool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthentication()
-    {
-    }
-    /**
-     * Optional. Service Directory configuration.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig $serviceDirectoryConfig
-     */
-    public function setServiceDirectoryConfig(GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig $serviceDirectoryConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolServiceDirectoryConfig
-     */
-    public function getServiceDirectoryConfig()
-    {
-    }
-    /**
-     * Required. The OpenAPI schema specified as a text.
-     *
-     * @param string $textSchema
-     */
-    public function setTextSchema($textSchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextSchema()
-    {
-    }
-    /**
-     * Optional. TLS configuration for the HTTPS verification.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolTLSConfig $tlsConfig
-     */
-    public function setTlsConfig(GoogleCloudDialogflowCxV3ToolTLSConfig $tlsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolTLSConfig
-     */
-    public function getTlsConfig()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ToolOpenApiTool extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolOpenApiTool
     {
     }
 }

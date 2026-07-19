@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1Word extends \Google\Collection
-{
-    protected $collection_key = 'symbols';
-    protected $boundingBoxType = GoogleCloudVisionV1p2beta1BoundingPoly::class;
-    protected $boundingBoxDataType = '';
-    /**
-     * Confidence of the OCR results for the word. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $propertyType = GoogleCloudVisionV1p2beta1TextAnnotationTextProperty::class;
-    protected $propertyDataType = '';
-    protected $symbolsType = GoogleCloudVisionV1p2beta1Symbol::class;
-    protected $symbolsDataType = 'array';
-    /**
-     * The bounding box for the word. The vertices are in the order of top-left,
-     * top-right, bottom-right, bottom-left. When a rotation of the bounding box
-     * is detected the rotation is represented as around the top-left corner as
-     * defined when the text is read in the 'natural' orientation. For example: *
-     * when the text is horizontal it might look like: 0----1 | | 3----2 * when
-     * it's rotated 180 degrees around the top-left corner it becomes: 2----3 | |
-     * 1----0 and the vertex order will still be (0, 1, 2, 3).
-     *
-     * @param GoogleCloudVisionV1p2beta1BoundingPoly $boundingBox
-     */
-    public function setBoundingBox(GoogleCloudVisionV1p2beta1BoundingPoly $boundingBox)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1Word extends \Google\Collection
     {
+        protected $collection_key = 'symbols';
+        protected $boundingBoxType = GoogleCloudVisionV1p2beta1BoundingPoly::class;
+        protected $boundingBoxDataType = '';
+        /**
+         * Confidence of the OCR results for the word. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $propertyType = GoogleCloudVisionV1p2beta1TextAnnotationTextProperty::class;
+        protected $propertyDataType = '';
+        protected $symbolsType = GoogleCloudVisionV1p2beta1Symbol::class;
+        protected $symbolsDataType = 'array';
+        /**
+         * The bounding box for the word. The vertices are in the order of top-left,
+         * top-right, bottom-right, bottom-left. When a rotation of the bounding box
+         * is detected the rotation is represented as around the top-left corner as
+         * defined when the text is read in the 'natural' orientation. For example: *
+         * when the text is horizontal it might look like: 0----1 | | 3----2 * when
+         * it's rotated 180 degrees around the top-left corner it becomes: 2----3 | |
+         * 1----0 and the vertex order will still be (0, 1, 2, 3).
+         *
+         * @param GoogleCloudVisionV1p2beta1BoundingPoly $boundingBox
+         */
+        public function setBoundingBox(GoogleCloudVisionV1p2beta1BoundingPoly $boundingBox)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1BoundingPoly
+         */
+        public function getBoundingBox()
+        {
+        }
+        /**
+         * Confidence of the OCR results for the word. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Additional information detected for the word.
+         *
+         * @param GoogleCloudVisionV1p2beta1TextAnnotationTextProperty $property
+         */
+        public function setProperty(GoogleCloudVisionV1p2beta1TextAnnotationTextProperty $property)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1TextAnnotationTextProperty
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * List of symbols in the word. The order of the symbols follows the natural
+         * reading order.
+         *
+         * @param GoogleCloudVisionV1p2beta1Symbol[] $symbols
+         */
+        public function setSymbols($symbols)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1Symbol[]
+         */
+        public function getSymbols()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p2beta1BoundingPoly
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1Word registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBox()
-    {
-    }
-    /**
-     * Confidence of the OCR results for the word. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Additional information detected for the word.
-     *
-     * @param GoogleCloudVisionV1p2beta1TextAnnotationTextProperty $property
-     */
-    public function setProperty(GoogleCloudVisionV1p2beta1TextAnnotationTextProperty $property)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1TextAnnotationTextProperty
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * List of symbols in the word. The order of the symbols follows the natural
-     * reading order.
-     *
-     * @param GoogleCloudVisionV1p2beta1Symbol[] $symbols
-     */
-    public function setSymbols($symbols)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1Symbol[]
-     */
-    public function getSymbols()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1Word extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1Word
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "autonomousDbVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $autonomousDbVersions = $oracledatabaseService->projects_locations_autonomousDbVersions;
- *  </code>
- */
-class ProjectsLocationsAutonomousDbVersions extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListAutonomousDbVersionsResponse;
     /**
-     * Lists all the available Autonomous Database versions for a project and
-     * location. (autonomousDbVersions.listProjectsLocationsAutonomousDbVersions)
-     *
-     * @param string $parent Required. The parent value for the Autonomous Database
-     * in the following format: projects/{project}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, at most 50 Autonomous DB Versions will be returned. The maximum
-     * value is 1000; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListAutonomousDbVersionsResponse
-     * @throws \Google\Service\Exception
+     * The "autonomousDbVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $autonomousDbVersions = $oracledatabaseService->projects_locations_autonomousDbVersions;
+     *  </code>
      */
-    public function listProjectsLocationsAutonomousDbVersions($parent, $optParams = [])
+    class ProjectsLocationsAutonomousDbVersions extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the available Autonomous Database versions for a project and
+         * location. (autonomousDbVersions.listProjectsLocationsAutonomousDbVersions)
+         *
+         * @param string $parent Required. The parent value for the Autonomous Database
+         * in the following format: projects/{project}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, at most 50 Autonomous DB Versions will be returned. The maximum
+         * value is 1000; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListAutonomousDbVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAutonomousDbVersions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsAutonomousDbVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsAutonomousDbVersions extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsAutonomousDbVersions
     {
     }
 }

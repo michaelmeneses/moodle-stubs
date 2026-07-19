@@ -21,345 +21,354 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class GceSetup extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $acceleratorConfigsType = AcceleratorConfig::class;
-    protected $acceleratorConfigsDataType = 'array';
-    protected $bootDiskType = BootDisk::class;
-    protected $bootDiskDataType = '';
-    protected $confidentialInstanceConfigType = ConfidentialInstanceConfig::class;
-    protected $confidentialInstanceConfigDataType = '';
-    protected $containerImageType = ContainerImage::class;
-    protected $containerImageDataType = '';
-    protected $dataDisksType = DataDisk::class;
-    protected $dataDisksDataType = 'array';
-    /**
-     * Optional. If true, no external IP will be assigned to this VM instance.
-     *
-     * @var bool
-     */
-    public $disablePublicIp;
-    /**
-     * Optional. Flag to enable ip forwarding or not, default false/off.
-     * https://cloud.google.com/vpc/docs/using-routes#canipforward
-     *
-     * @var bool
-     */
-    public $enableIpForwarding;
-    protected $gpuDriverConfigType = GPUDriverConfig::class;
-    protected $gpuDriverConfigDataType = '';
-    /**
-     * Output only. The unique ID of the Compute Engine instance resource.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Optional. The machine type of the VM instance.
-     * https://cloud.google.com/compute/docs/machine-resource
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Optional. Custom metadata to apply to this instance.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * Optional. The minimum CPU platform to use for this instance. The list of
-     * valid values can be found in
-     * https://cloud.google.com/compute/docs/instances/specify-min-cpu-
-     * platform#availablezones
-     *
-     * @var string
-     */
-    public $minCpuPlatform;
-    protected $networkInterfacesType = NetworkInterface::class;
-    protected $networkInterfacesDataType = 'array';
-    protected $reservationAffinityType = ReservationAffinity::class;
-    protected $reservationAffinityDataType = '';
-    protected $serviceAccountsType = ServiceAccount::class;
-    protected $serviceAccountsDataType = 'array';
-    protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
-    protected $shieldedInstanceConfigDataType = '';
-    /**
-     * Optional. The Compute Engine network tags to add to runtime (see [Add
-     * network tags](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
-     *
-     * @var string[]
-     */
-    public $tags;
-    protected $vmImageType = VmImage::class;
-    protected $vmImageDataType = '';
-    /**
-     * Optional. The hardware accelerators used on this instance. If you use
-     * accelerators, make sure that your configuration has [enough vCPUs and
-     * memory to support the `machine_type` you have
-     * selected](https://cloud.google.com/compute/docs/gpus/#gpus-list). Currently
-     * supports only one accelerator configuration.
-     *
-     * @param AcceleratorConfig[] $acceleratorConfigs
-     */
-    public function setAcceleratorConfigs($acceleratorConfigs)
+namespace Google\Service\AIPlatformNotebooks {
+    class GceSetup extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $acceleratorConfigsType = AcceleratorConfig::class;
+        protected $acceleratorConfigsDataType = 'array';
+        protected $bootDiskType = BootDisk::class;
+        protected $bootDiskDataType = '';
+        protected $confidentialInstanceConfigType = ConfidentialInstanceConfig::class;
+        protected $confidentialInstanceConfigDataType = '';
+        protected $containerImageType = ContainerImage::class;
+        protected $containerImageDataType = '';
+        protected $dataDisksType = DataDisk::class;
+        protected $dataDisksDataType = 'array';
+        /**
+         * Optional. If true, no external IP will be assigned to this VM instance.
+         *
+         * @var bool
+         */
+        public $disablePublicIp;
+        /**
+         * Optional. Flag to enable ip forwarding or not, default false/off.
+         * https://cloud.google.com/vpc/docs/using-routes#canipforward
+         *
+         * @var bool
+         */
+        public $enableIpForwarding;
+        protected $gpuDriverConfigType = GPUDriverConfig::class;
+        protected $gpuDriverConfigDataType = '';
+        /**
+         * Output only. The unique ID of the Compute Engine instance resource.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Optional. The machine type of the VM instance.
+         * https://cloud.google.com/compute/docs/machine-resource
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Optional. Custom metadata to apply to this instance.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * Optional. The minimum CPU platform to use for this instance. The list of
+         * valid values can be found in
+         * https://cloud.google.com/compute/docs/instances/specify-min-cpu-
+         * platform#availablezones
+         *
+         * @var string
+         */
+        public $minCpuPlatform;
+        protected $networkInterfacesType = NetworkInterface::class;
+        protected $networkInterfacesDataType = 'array';
+        protected $reservationAffinityType = ReservationAffinity::class;
+        protected $reservationAffinityDataType = '';
+        protected $serviceAccountsType = ServiceAccount::class;
+        protected $serviceAccountsDataType = 'array';
+        protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
+        protected $shieldedInstanceConfigDataType = '';
+        /**
+         * Optional. The Compute Engine network tags to add to runtime (see [Add
+         * network tags](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
+         *
+         * @var string[]
+         */
+        public $tags;
+        protected $vmImageType = VmImage::class;
+        protected $vmImageDataType = '';
+        /**
+         * Optional. The hardware accelerators used on this instance. If you use
+         * accelerators, make sure that your configuration has [enough vCPUs and
+         * memory to support the `machine_type` you have
+         * selected](https://cloud.google.com/compute/docs/gpus/#gpus-list). Currently
+         * supports only one accelerator configuration.
+         *
+         * @param AcceleratorConfig[] $acceleratorConfigs
+         */
+        public function setAcceleratorConfigs($acceleratorConfigs)
+        {
+        }
+        /**
+         * @return AcceleratorConfig[]
+         */
+        public function getAcceleratorConfigs()
+        {
+        }
+        /**
+         * Optional. The boot disk for the VM.
+         *
+         * @param BootDisk $bootDisk
+         */
+        public function setBootDisk(BootDisk $bootDisk)
+        {
+        }
+        /**
+         * @return BootDisk
+         */
+        public function getBootDisk()
+        {
+        }
+        /**
+         * Optional. Confidential instance configuration.
+         *
+         * @param ConfidentialInstanceConfig $confidentialInstanceConfig
+         */
+        public function setConfidentialInstanceConfig(ConfidentialInstanceConfig $confidentialInstanceConfig)
+        {
+        }
+        /**
+         * @return ConfidentialInstanceConfig
+         */
+        public function getConfidentialInstanceConfig()
+        {
+        }
+        /**
+         * Optional. Use a container image to start the notebook instance.
+         *
+         * @param ContainerImage $containerImage
+         */
+        public function setContainerImage(ContainerImage $containerImage)
+        {
+        }
+        /**
+         * @return ContainerImage
+         */
+        public function getContainerImage()
+        {
+        }
+        /**
+         * Optional. Data disks attached to the VM instance. Currently supports only
+         * one data disk.
+         *
+         * @param DataDisk[] $dataDisks
+         */
+        public function setDataDisks($dataDisks)
+        {
+        }
+        /**
+         * @return DataDisk[]
+         */
+        public function getDataDisks()
+        {
+        }
+        /**
+         * Optional. If true, no external IP will be assigned to this VM instance.
+         *
+         * @param bool $disablePublicIp
+         */
+        public function setDisablePublicIp($disablePublicIp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisablePublicIp()
+        {
+        }
+        /**
+         * Optional. Flag to enable ip forwarding or not, default false/off.
+         * https://cloud.google.com/vpc/docs/using-routes#canipforward
+         *
+         * @param bool $enableIpForwarding
+         */
+        public function setEnableIpForwarding($enableIpForwarding)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIpForwarding()
+        {
+        }
+        /**
+         * Optional. Configuration for GPU drivers.
+         *
+         * @param GPUDriverConfig $gpuDriverConfig
+         */
+        public function setGpuDriverConfig(GPUDriverConfig $gpuDriverConfig)
+        {
+        }
+        /**
+         * @return GPUDriverConfig
+         */
+        public function getGpuDriverConfig()
+        {
+        }
+        /**
+         * Output only. The unique ID of the Compute Engine instance resource.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Optional. The machine type of the VM instance.
+         * https://cloud.google.com/compute/docs/machine-resource
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Optional. Custom metadata to apply to this instance.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Optional. The minimum CPU platform to use for this instance. The list of
+         * valid values can be found in
+         * https://cloud.google.com/compute/docs/instances/specify-min-cpu-
+         * platform#availablezones
+         *
+         * @param string $minCpuPlatform
+         */
+        public function setMinCpuPlatform($minCpuPlatform)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinCpuPlatform()
+        {
+        }
+        /**
+         * Optional. The network interfaces for the VM. Supports only one interface.
+         *
+         * @param NetworkInterface[] $networkInterfaces
+         */
+        public function setNetworkInterfaces($networkInterfaces)
+        {
+        }
+        /**
+         * @return NetworkInterface[]
+         */
+        public function getNetworkInterfaces()
+        {
+        }
+        /**
+         * Optional. Specifies the reservations that this instance can consume from.
+         *
+         * @param ReservationAffinity $reservationAffinity
+         */
+        public function setReservationAffinity(ReservationAffinity $reservationAffinity)
+        {
+        }
+        /**
+         * @return ReservationAffinity
+         */
+        public function getReservationAffinity()
+        {
+        }
+        /**
+         * Optional. The service account that serves as an identity for the VM
+         * instance. Currently supports only one service account.
+         *
+         * @param ServiceAccount[] $serviceAccounts
+         */
+        public function setServiceAccounts($serviceAccounts)
+        {
+        }
+        /**
+         * @return ServiceAccount[]
+         */
+        public function getServiceAccounts()
+        {
+        }
+        /**
+         * Optional. Shielded VM configuration. [Images using supported Shielded VM
+         * features](https://cloud.google.com/compute/docs/instances/modifying-
+         * shielded-vm).
+         *
+         * @param ShieldedInstanceConfig $shieldedInstanceConfig
+         */
+        public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
+        {
+        }
+        /**
+         * @return ShieldedInstanceConfig
+         */
+        public function getShieldedInstanceConfig()
+        {
+        }
+        /**
+         * Optional. The Compute Engine network tags to add to runtime (see [Add
+         * network tags](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Optional. Use a Compute Engine VM image to start the notebook instance.
+         *
+         * @param VmImage $vmImage
+         */
+        public function setVmImage(VmImage $vmImage)
+        {
+        }
+        /**
+         * @return VmImage
+         */
+        public function getVmImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceleratorConfig[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\GceSetup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorConfigs()
-    {
-    }
-    /**
-     * Optional. The boot disk for the VM.
-     *
-     * @param BootDisk $bootDisk
-     */
-    public function setBootDisk(BootDisk $bootDisk)
-    {
-    }
-    /**
-     * @return BootDisk
-     */
-    public function getBootDisk()
-    {
-    }
-    /**
-     * Optional. Confidential instance configuration.
-     *
-     * @param ConfidentialInstanceConfig $confidentialInstanceConfig
-     */
-    public function setConfidentialInstanceConfig(ConfidentialInstanceConfig $confidentialInstanceConfig)
-    {
-    }
-    /**
-     * @return ConfidentialInstanceConfig
-     */
-    public function getConfidentialInstanceConfig()
-    {
-    }
-    /**
-     * Optional. Use a container image to start the notebook instance.
-     *
-     * @param ContainerImage $containerImage
-     */
-    public function setContainerImage(ContainerImage $containerImage)
-    {
-    }
-    /**
-     * @return ContainerImage
-     */
-    public function getContainerImage()
-    {
-    }
-    /**
-     * Optional. Data disks attached to the VM instance. Currently supports only
-     * one data disk.
-     *
-     * @param DataDisk[] $dataDisks
-     */
-    public function setDataDisks($dataDisks)
-    {
-    }
-    /**
-     * @return DataDisk[]
-     */
-    public function getDataDisks()
-    {
-    }
-    /**
-     * Optional. If true, no external IP will be assigned to this VM instance.
-     *
-     * @param bool $disablePublicIp
-     */
-    public function setDisablePublicIp($disablePublicIp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisablePublicIp()
-    {
-    }
-    /**
-     * Optional. Flag to enable ip forwarding or not, default false/off.
-     * https://cloud.google.com/vpc/docs/using-routes#canipforward
-     *
-     * @param bool $enableIpForwarding
-     */
-    public function setEnableIpForwarding($enableIpForwarding)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableIpForwarding()
-    {
-    }
-    /**
-     * Optional. Configuration for GPU drivers.
-     *
-     * @param GPUDriverConfig $gpuDriverConfig
-     */
-    public function setGpuDriverConfig(GPUDriverConfig $gpuDriverConfig)
-    {
-    }
-    /**
-     * @return GPUDriverConfig
-     */
-    public function getGpuDriverConfig()
-    {
-    }
-    /**
-     * Output only. The unique ID of the Compute Engine instance resource.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Optional. The machine type of the VM instance.
-     * https://cloud.google.com/compute/docs/machine-resource
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Optional. Custom metadata to apply to this instance.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Optional. The minimum CPU platform to use for this instance. The list of
-     * valid values can be found in
-     * https://cloud.google.com/compute/docs/instances/specify-min-cpu-
-     * platform#availablezones
-     *
-     * @param string $minCpuPlatform
-     */
-    public function setMinCpuPlatform($minCpuPlatform)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinCpuPlatform()
-    {
-    }
-    /**
-     * Optional. The network interfaces for the VM. Supports only one interface.
-     *
-     * @param NetworkInterface[] $networkInterfaces
-     */
-    public function setNetworkInterfaces($networkInterfaces)
-    {
-    }
-    /**
-     * @return NetworkInterface[]
-     */
-    public function getNetworkInterfaces()
-    {
-    }
-    /**
-     * Optional. Specifies the reservations that this instance can consume from.
-     *
-     * @param ReservationAffinity $reservationAffinity
-     */
-    public function setReservationAffinity(ReservationAffinity $reservationAffinity)
-    {
-    }
-    /**
-     * @return ReservationAffinity
-     */
-    public function getReservationAffinity()
-    {
-    }
-    /**
-     * Optional. The service account that serves as an identity for the VM
-     * instance. Currently supports only one service account.
-     *
-     * @param ServiceAccount[] $serviceAccounts
-     */
-    public function setServiceAccounts($serviceAccounts)
-    {
-    }
-    /**
-     * @return ServiceAccount[]
-     */
-    public function getServiceAccounts()
-    {
-    }
-    /**
-     * Optional. Shielded VM configuration. [Images using supported Shielded VM
-     * features](https://cloud.google.com/compute/docs/instances/modifying-
-     * shielded-vm).
-     *
-     * @param ShieldedInstanceConfig $shieldedInstanceConfig
-     */
-    public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
-    {
-    }
-    /**
-     * @return ShieldedInstanceConfig
-     */
-    public function getShieldedInstanceConfig()
-    {
-    }
-    /**
-     * Optional. The Compute Engine network tags to add to runtime (see [Add
-     * network tags](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Optional. Use a Compute Engine VM image to start the notebook instance.
-     *
-     * @param VmImage $vmImage
-     */
-    public function setVmImage(VmImage $vmImage)
-    {
-    }
-    /**
-     * @return VmImage
-     */
-    public function getVmImage()
+    class Google_Service_AIPlatformNotebooks_GceSetup extends \Google\Service\AIPlatformNotebooks\GceSetup
     {
     }
 }

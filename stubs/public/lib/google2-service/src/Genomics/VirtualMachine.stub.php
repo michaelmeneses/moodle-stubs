@@ -21,239 +21,248 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class VirtualMachine extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    protected $acceleratorsType = Accelerator::class;
-    protected $acceleratorsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $bootDiskSizeGb;
-    /**
-     * @var string
-     */
-    public $bootImage;
-    /**
-     * @var string
-     */
-    public $cpuPlatform;
-    protected $disksType = Disk::class;
-    protected $disksDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $dockerCacheImages;
-    /**
-     * @var bool
-     */
-    public $enableStackdriverMonitoring;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $machineType;
-    protected $networkType = Network::class;
-    protected $networkDataType = '';
-    /**
-     * @var string
-     */
-    public $nvidiaDriverVersion;
-    /**
-     * @var bool
-     */
-    public $preemptible;
-    /**
-     * @var string
-     */
-    public $reservation;
-    protected $serviceAccountType = ServiceAccount::class;
-    protected $serviceAccountDataType = '';
-    protected $volumesType = Volume::class;
-    protected $volumesDataType = 'array';
-    /**
-     * @param Accelerator[]
-     */
-    public function setAccelerators($accelerators)
+namespace Google\Service\Genomics {
+    class VirtualMachine extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        protected $acceleratorsType = Accelerator::class;
+        protected $acceleratorsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $bootDiskSizeGb;
+        /**
+         * @var string
+         */
+        public $bootImage;
+        /**
+         * @var string
+         */
+        public $cpuPlatform;
+        protected $disksType = Disk::class;
+        protected $disksDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $dockerCacheImages;
+        /**
+         * @var bool
+         */
+        public $enableStackdriverMonitoring;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $machineType;
+        protected $networkType = Network::class;
+        protected $networkDataType = '';
+        /**
+         * @var string
+         */
+        public $nvidiaDriverVersion;
+        /**
+         * @var bool
+         */
+        public $preemptible;
+        /**
+         * @var string
+         */
+        public $reservation;
+        protected $serviceAccountType = ServiceAccount::class;
+        protected $serviceAccountDataType = '';
+        protected $volumesType = Volume::class;
+        protected $volumesDataType = 'array';
+        /**
+         * @param Accelerator[]
+         */
+        public function setAccelerators($accelerators)
+        {
+        }
+        /**
+         * @return Accelerator[]
+         */
+        public function getAccelerators()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setBootDiskSizeGb($bootDiskSizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBootDiskSizeGb()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBootImage($bootImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBootImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCpuPlatform($cpuPlatform)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuPlatform()
+        {
+        }
+        /**
+         * @param Disk[]
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return Disk[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDockerCacheImages($dockerCacheImages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDockerCacheImages()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableStackdriverMonitoring($enableStackdriverMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableStackdriverMonitoring()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * @param Network
+         */
+        public function setNetwork(Network $network)
+        {
+        }
+        /**
+         * @return Network
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNvidiaDriverVersion($nvidiaDriverVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNvidiaDriverVersion()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPreemptible($preemptible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreemptible()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReservation($reservation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReservation()
+        {
+        }
+        /**
+         * @param ServiceAccount
+         */
+        public function setServiceAccount(ServiceAccount $serviceAccount)
+        {
+        }
+        /**
+         * @return ServiceAccount
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param Volume[]
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getVolumes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Accelerator[]
+     * Runtime class alias of \Google\Service\Genomics\VirtualMachine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccelerators()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setBootDiskSizeGb($bootDiskSizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getBootDiskSizeGb()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBootImage($bootImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBootImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCpuPlatform($cpuPlatform)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpuPlatform()
-    {
-    }
-    /**
-     * @param Disk[]
-     */
-    public function setDisks($disks)
-    {
-    }
-    /**
-     * @return Disk[]
-     */
-    public function getDisks()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDockerCacheImages($dockerCacheImages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDockerCacheImages()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableStackdriverMonitoring($enableStackdriverMonitoring)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableStackdriverMonitoring()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * @param Network
-     */
-    public function setNetwork(Network $network)
-    {
-    }
-    /**
-     * @return Network
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNvidiaDriverVersion($nvidiaDriverVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNvidiaDriverVersion()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPreemptible($preemptible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreemptible()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReservation($reservation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReservation()
-    {
-    }
-    /**
-     * @param ServiceAccount
-     */
-    public function setServiceAccount(ServiceAccount $serviceAccount)
-    {
-    }
-    /**
-     * @return ServiceAccount
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param Volume[]
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return Volume[]
-     */
-    public function getVolumes()
+    class Google_Service_Genomics_VirtualMachine extends \Google\Service\Genomics\VirtualMachine
     {
     }
 }

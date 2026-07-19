@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "addonsConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $addonsConfig = $apigeeService->organizations_environments_addonsConfig;
- *  </code>
- */
-class OrganizationsEnvironmentsAddonsConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1SetAddonEnablementRequest;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Updates an add-on enablement status of an environment.
-     * (addonsConfig.setAddonEnablement)
-     *
-     * @param string $name Required. Name of the add-ons config. Must be in the
-     * format of `/organizations/{org}/environments/{env}/addonsConfig`
-     * @param GoogleCloudApigeeV1SetAddonEnablementRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "addonsConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $addonsConfig = $apigeeService->organizations_environments_addonsConfig;
+     *  </code>
      */
-    public function setAddonEnablement($name, GoogleCloudApigeeV1SetAddonEnablementRequest $postBody, $optParams = [])
+    class OrganizationsEnvironmentsAddonsConfig extends \Google\Service\Resource
+    {
+        /**
+         * Updates an add-on enablement status of an environment.
+         * (addonsConfig.setAddonEnablement)
+         *
+         * @param string $name Required. Name of the add-ons config. Must be in the
+         * format of `/organizations/{org}/environments/{env}/addonsConfig`
+         * @param GoogleCloudApigeeV1SetAddonEnablementRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function setAddonEnablement($name, GoogleCloudApigeeV1SetAddonEnablementRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsAddonsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsAddonsConfig extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsAddonsConfig
     {
     }
 }

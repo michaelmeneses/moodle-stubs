@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoSchemaV2Channel extends \Google\Model
-{
-    /**
-     * The unique public identifier for the candidate's channel.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The type of channel. The following is a list of types of channels, but is
-     * not exhaustive. More channel types may be added at a later time. One of:
-     * GooglePlus, YouTube, Facebook, Twitter
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The unique public identifier for the candidate's channel.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CivicInfo {
+    class CivicinfoSchemaV2Channel extends \Google\Model
     {
+        /**
+         * The unique public identifier for the candidate's channel.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The type of channel. The following is a list of types of channels, but is
+         * not exhaustive. More channel types may be added at a later time. One of:
+         * GooglePlus, YouTube, Facebook, Twitter
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The unique public identifier for the candidate's channel.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The type of channel. The following is a list of types of channels, but is
+         * not exhaustive. More channel types may be added at a later time. One of:
+         * GooglePlus, YouTube, Facebook, Twitter
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoSchemaV2Channel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The type of channel. The following is a list of types of channels, but is
-     * not exhaustive. More channel types may be added at a later time. One of:
-     * GooglePlus, YouTube, Facebook, Twitter
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CivicInfo_CivicinfoSchemaV2Channel extends \Google\Service\CivicInfo\CivicinfoSchemaV2Channel
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessDimensionValue extends \Google\Model
-{
-    /**
-     * The dimension value. For example, this value may be 'France' for the
-     * 'country' dimension.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The dimension value. For example, this value may be 'France' for the
-     * 'country' dimension.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessDimensionValue extends \Google\Model
     {
+        /**
+         * The dimension value. For example, this value may be 'France' for the
+         * 'country' dimension.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The dimension value. For example, this value may be 'France' for the
+         * 'country' dimension.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessDimensionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessDimensionValue extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessDimensionValue
     {
     }
 }

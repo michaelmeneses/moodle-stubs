@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class SetIamPolicyRequest extends \Google\Model
-{
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * REQUIRED: The complete policy to be applied to the `resource`. The size of
-     * the policy is limited to a few 10s of KB. An empty policy is a valid policy
-     * but certain Google Cloud services (such as Projects) might reject them.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\DataCatalog {
+    class SetIamPolicyRequest extends \Google\Model
     {
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * REQUIRED: The complete policy to be applied to the `resource`. The size of
+         * the policy is limited to a few 10s of KB. An empty policy is a valid policy
+         * but certain Google Cloud services (such as Projects) might reject them.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\DataCatalog\SetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
+    class Google_Service_DataCatalog_SetIamPolicyRequest extends \Google\Service\DataCatalog\SetIamPolicyRequest
     {
     }
 }

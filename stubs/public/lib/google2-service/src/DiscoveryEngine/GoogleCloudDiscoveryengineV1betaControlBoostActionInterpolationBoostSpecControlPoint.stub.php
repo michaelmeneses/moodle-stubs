@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaControlBoostActionInterpolationBoostSpecControlPoint extends \Google\Model
-{
-    /**
-     * Optional. Can be one of: 1. The numerical field value. 2. The duration spec
-     * for freshness: The value must be formatted as an XSD `dayTimeDuration`
-     * value (a restricted subset of an ISO 8601 duration value). The pattern for
-     * this is: `nDnM]`.
-     *
-     * @var string
-     */
-    public $attributeValue;
-    /**
-     * Optional. The value between -1 to 1 by which to boost the score if the
-     * attribute_value evaluates to the value specified above.
-     *
-     * @var float
-     */
-    public $boostAmount;
-    /**
-     * Optional. Can be one of: 1. The numerical field value. 2. The duration spec
-     * for freshness: The value must be formatted as an XSD `dayTimeDuration`
-     * value (a restricted subset of an ISO 8601 duration value). The pattern for
-     * this is: `nDnM]`.
-     *
-     * @param string $attributeValue
-     */
-    public function setAttributeValue($attributeValue)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaControlBoostActionInterpolationBoostSpecControlPoint extends \Google\Model
     {
+        /**
+         * Optional. Can be one of: 1. The numerical field value. 2. The duration spec
+         * for freshness: The value must be formatted as an XSD `dayTimeDuration`
+         * value (a restricted subset of an ISO 8601 duration value). The pattern for
+         * this is: `nDnM]`.
+         *
+         * @var string
+         */
+        public $attributeValue;
+        /**
+         * Optional. The value between -1 to 1 by which to boost the score if the
+         * attribute_value evaluates to the value specified above.
+         *
+         * @var float
+         */
+        public $boostAmount;
+        /**
+         * Optional. Can be one of: 1. The numerical field value. 2. The duration spec
+         * for freshness: The value must be formatted as an XSD `dayTimeDuration`
+         * value (a restricted subset of an ISO 8601 duration value). The pattern for
+         * this is: `nDnM]`.
+         *
+         * @param string $attributeValue
+         */
+        public function setAttributeValue($attributeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeValue()
+        {
+        }
+        /**
+         * Optional. The value between -1 to 1 by which to boost the score if the
+         * attribute_value evaluates to the value specified above.
+         *
+         * @param float $boostAmount
+         */
+        public function setBoostAmount($boostAmount)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBoostAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaControlBoostActionInterpolationBoostSpecControlPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeValue()
-    {
-    }
-    /**
-     * Optional. The value between -1 to 1 by which to boost the score if the
-     * attribute_value evaluates to the value specified above.
-     *
-     * @param float $boostAmount
-     */
-    public function setBoostAmount($boostAmount)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBoostAmount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaControlBoostActionInterpolationBoostSpecControlPoint extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaControlBoostActionInterpolationBoostSpecControlPoint
     {
     }
 }

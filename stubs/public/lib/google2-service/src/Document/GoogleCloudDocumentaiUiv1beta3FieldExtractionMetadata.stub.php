@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata extends \Google\Model
-{
-    protected $entityQueryType = GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery::class;
-    protected $entityQueryDataType = '';
-    protected $summaryOptionsType = GoogleCloudDocumentaiUiv1beta3SummaryOptions::class;
-    protected $summaryOptionsDataType = '';
-    /**
-     * Entity query config.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery $entityQuery
-     */
-    public function setEntityQuery(GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery $entityQuery)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata extends \Google\Model
     {
+        protected $entityQueryType = GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery::class;
+        protected $entityQueryDataType = '';
+        protected $summaryOptionsType = GoogleCloudDocumentaiUiv1beta3SummaryOptions::class;
+        protected $summaryOptionsDataType = '';
+        /**
+         * Entity query config.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery $entityQuery
+         */
+        public function setEntityQuery(GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery $entityQuery)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery
+         */
+        public function getEntityQuery()
+        {
+        }
+        /**
+         * Summary options config.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3SummaryOptions $summaryOptions
+         */
+        public function setSummaryOptions(GoogleCloudDocumentaiUiv1beta3SummaryOptions $summaryOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3SummaryOptions
+         */
+        public function getSummaryOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadataEntityQuery
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityQuery()
-    {
-    }
-    /**
-     * Summary options config.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3SummaryOptions $summaryOptions
-     */
-    public function setSummaryOptions(GoogleCloudDocumentaiUiv1beta3SummaryOptions $summaryOptions)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3SummaryOptions
-     */
-    public function getSummaryOptions()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata
     {
     }
 }

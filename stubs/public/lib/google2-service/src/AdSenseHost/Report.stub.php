@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class Report extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    /**
-     * @var string[]
-     */
-    public $averages;
-    protected $headersType = ReportHeaders::class;
-    protected $headersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string[]
-     */
-    public $rows;
-    /**
-     * @var string
-     */
-    public $totalMatchedRows;
-    /**
-     * @var string[]
-     */
-    public $totals;
-    /**
-     * @var string[]
-     */
-    public $warnings;
-    /**
-     * @param string[]
-     */
-    public function setAverages($averages)
+namespace Google\Service\AdSenseHost {
+    class Report extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        /**
+         * @var string[]
+         */
+        public $averages;
+        protected $headersType = ReportHeaders::class;
+        protected $headersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string[]
+         */
+        public $rows;
+        /**
+         * @var string
+         */
+        public $totalMatchedRows;
+        /**
+         * @var string[]
+         */
+        public $totals;
+        /**
+         * @var string[]
+         */
+        public $warnings;
+        /**
+         * @param string[]
+         */
+        public function setAverages($averages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAverages()
+        {
+        }
+        /**
+         * @param ReportHeaders[]
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return ReportHeaders[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTotalMatchedRows($totalMatchedRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalMatchedRows()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTotals($totals)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTotals()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdSenseHost\Report registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverages()
-    {
-    }
-    /**
-     * @param ReportHeaders[]
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return ReportHeaders[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTotalMatchedRows($totalMatchedRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalMatchedRows()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTotals($totals)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTotals()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarnings()
+    class Google_Service_AdSenseHost_Report extends \Google\Service\AdSenseHost\Report
     {
     }
 }

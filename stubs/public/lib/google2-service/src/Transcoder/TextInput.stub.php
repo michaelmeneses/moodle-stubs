@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class TextInput extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var int
-     */
-    public $track;
-    /**
-     * @param string
-     */
-    public function setKey($key)
+namespace Google\Service\Transcoder {
+    class TextInput extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var int
+         */
+        public $track;
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTrack($track)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrack()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\TextInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTrack($track)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrack()
+    class Google_Service_Transcoder_TextInput extends \Google\Service\Transcoder\TextInput
     {
     }
 }

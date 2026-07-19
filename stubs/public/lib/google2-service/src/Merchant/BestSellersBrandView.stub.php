@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class BestSellersBrandView extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $brand;
-    /**
-     * @var string
-     */
-    public $previousRank;
-    /**
-     * @var string
-     */
-    public $previousRelativeDemand;
-    /**
-     * @var string
-     */
-    public $rank;
-    /**
-     * @var string
-     */
-    public $relativeDemand;
-    /**
-     * @var string
-     */
-    public $relativeDemandChange;
-    /**
-     * @var string
-     */
-    public $reportCategoryId;
-    /**
-     * @var string
-     */
-    public $reportCountryCode;
-    protected $reportDateType = Date::class;
-    protected $reportDateDataType = '';
-    /**
-     * @var string
-     */
-    public $reportGranularity;
-    /**
-     * @param string
-     */
-    public function setBrand($brand)
+namespace Google\Service\Merchant {
+    class BestSellersBrandView extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $brand;
+        /**
+         * @var string
+         */
+        public $previousRank;
+        /**
+         * @var string
+         */
+        public $previousRelativeDemand;
+        /**
+         * @var string
+         */
+        public $rank;
+        /**
+         * @var string
+         */
+        public $relativeDemand;
+        /**
+         * @var string
+         */
+        public $relativeDemandChange;
+        /**
+         * @var string
+         */
+        public $reportCategoryId;
+        /**
+         * @var string
+         */
+        public $reportCountryCode;
+        protected $reportDateType = Date::class;
+        protected $reportDateDataType = '';
+        /**
+         * @var string
+         */
+        public $reportGranularity;
+        /**
+         * @param string
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPreviousRank($previousRank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousRank()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPreviousRelativeDemand($previousRelativeDemand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousRelativeDemand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRank($rank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRank()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRelativeDemand($relativeDemand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativeDemand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRelativeDemandChange($relativeDemandChange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativeDemandChange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCategoryId($reportCategoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCategoryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCountryCode($reportCountryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCountryCode()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setReportDate(Date $reportDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getReportDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportGranularity($reportGranularity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportGranularity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\BestSellersBrandView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPreviousRank($previousRank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousRank()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPreviousRelativeDemand($previousRelativeDemand)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousRelativeDemand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRank($rank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRank()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRelativeDemand($relativeDemand)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativeDemand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRelativeDemandChange($relativeDemandChange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativeDemandChange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCategoryId($reportCategoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCategoryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCountryCode($reportCountryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCountryCode()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setReportDate(Date $reportDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getReportDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportGranularity($reportGranularity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportGranularity()
+    class Google_Service_Merchant_BestSellersBrandView extends \Google\Service\Merchant\BestSellersBrandView
     {
     }
 }

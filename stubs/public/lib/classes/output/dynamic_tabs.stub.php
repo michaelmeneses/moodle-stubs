@@ -8,6 +8,7 @@
  */
 namespace core\output;
 
+use core\output\dynamic_tabs\base;
 /**
  * Class dynamic tabs
  *

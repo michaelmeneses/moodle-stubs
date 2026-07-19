@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Documentation extends \Google\Model
-{
-    /**
-     * Optional. The uri of the externally hosted documentation.
-     *
-     * @var string
-     */
-    public $externalUri;
-    /**
-     * Optional. The uri of the externally hosted documentation.
-     *
-     * @param string $externalUri
-     */
-    public function setExternalUri($externalUri)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Documentation extends \Google\Model
     {
+        /**
+         * Optional. The uri of the externally hosted documentation.
+         *
+         * @var string
+         */
+        public $externalUri;
+        /**
+         * Optional. The uri of the externally hosted documentation.
+         *
+         * @param string $externalUri
+         */
+        public function setExternalUri($externalUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Documentation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalUri()
+    class Google_Service_APIhub_GoogleCloudApihubV1Documentation extends \Google\Service\APIhub\GoogleCloudApihubV1Documentation
     {
     }
 }

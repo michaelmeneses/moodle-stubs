@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EnvironmentSessionStatus extends \Google\Model
-{
-    /**
-     * Output only. Queries over sessions to mark whether the environment is
-     * currently active or not
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * Output only. Queries over sessions to mark whether the environment is
-     * currently active or not
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EnvironmentSessionStatus extends \Google\Model
     {
+        /**
+         * Output only. Queries over sessions to mark whether the environment is
+         * currently active or not
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * Output only. Queries over sessions to mark whether the environment is
+         * currently active or not
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentSessionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EnvironmentSessionStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentSessionStatus
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkSqlBatch extends \Google\Collection
-{
-    protected $collection_key = 'jarFileUris';
-    /**
-     * Optional. HCFS URIs of jar files to be added to the Spark CLASSPATH.
-     *
-     * @var string[]
-     */
-    public $jarFileUris;
-    /**
-     * Required. The HCFS URI of the script that contains Spark SQL queries to
-     * execute.
-     *
-     * @var string
-     */
-    public $queryFileUri;
-    /**
-     * Optional. Mapping of query variable names to values (equivalent to the
-     * Spark SQL command: SET name="value";).
-     *
-     * @var string[]
-     */
-    public $queryVariables;
-    /**
-     * Optional. HCFS URIs of jar files to be added to the Spark CLASSPATH.
-     *
-     * @param string[] $jarFileUris
-     */
-    public function setJarFileUris($jarFileUris)
+namespace Google\Service\Dataproc {
+    class SparkSqlBatch extends \Google\Collection
     {
+        protected $collection_key = 'jarFileUris';
+        /**
+         * Optional. HCFS URIs of jar files to be added to the Spark CLASSPATH.
+         *
+         * @var string[]
+         */
+        public $jarFileUris;
+        /**
+         * Required. The HCFS URI of the script that contains Spark SQL queries to
+         * execute.
+         *
+         * @var string
+         */
+        public $queryFileUri;
+        /**
+         * Optional. Mapping of query variable names to values (equivalent to the
+         * Spark SQL command: SET name="value";).
+         *
+         * @var string[]
+         */
+        public $queryVariables;
+        /**
+         * Optional. HCFS URIs of jar files to be added to the Spark CLASSPATH.
+         *
+         * @param string[] $jarFileUris
+         */
+        public function setJarFileUris($jarFileUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJarFileUris()
+        {
+        }
+        /**
+         * Required. The HCFS URI of the script that contains Spark SQL queries to
+         * execute.
+         *
+         * @param string $queryFileUri
+         */
+        public function setQueryFileUri($queryFileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryFileUri()
+        {
+        }
+        /**
+         * Optional. Mapping of query variable names to values (equivalent to the
+         * Spark SQL command: SET name="value";).
+         *
+         * @param string[] $queryVariables
+         */
+        public function setQueryVariables($queryVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\SparkSqlBatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJarFileUris()
-    {
-    }
-    /**
-     * Required. The HCFS URI of the script that contains Spark SQL queries to
-     * execute.
-     *
-     * @param string $queryFileUri
-     */
-    public function setQueryFileUri($queryFileUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryFileUri()
-    {
-    }
-    /**
-     * Optional. Mapping of query variable names to values (equivalent to the
-     * Spark SQL command: SET name="value";).
-     *
-     * @param string[] $queryVariables
-     */
-    public function setQueryVariables($queryVariables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQueryVariables()
+    class Google_Service_Dataproc_SparkSqlBatch extends \Google\Service\Dataproc\SparkSqlBatch
     {
     }
 }

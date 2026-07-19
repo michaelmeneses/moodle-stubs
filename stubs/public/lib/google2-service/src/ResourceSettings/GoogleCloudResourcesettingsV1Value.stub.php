@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1Value extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    /**
-     * @var string
-     */
-    public $durationValue;
-    protected $enumValueType = GoogleCloudResourcesettingsV1ValueEnumValue::class;
-    protected $enumValueDataType = '';
-    protected $stringMapValueType = GoogleCloudResourcesettingsV1ValueStringMap::class;
-    protected $stringMapValueDataType = '';
-    protected $stringSetValueType = GoogleCloudResourcesettingsV1ValueStringSet::class;
-    protected $stringSetValueDataType = '';
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param bool
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1Value extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        /**
+         * @var string
+         */
+        public $durationValue;
+        protected $enumValueType = GoogleCloudResourcesettingsV1ValueEnumValue::class;
+        protected $enumValueDataType = '';
+        protected $stringMapValueType = GoogleCloudResourcesettingsV1ValueStringMap::class;
+        protected $stringMapValueDataType = '';
+        protected $stringSetValueType = GoogleCloudResourcesettingsV1ValueStringSet::class;
+        protected $stringSetValueDataType = '';
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param bool
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDurationValue($durationValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationValue()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1ValueEnumValue
+         */
+        public function setEnumValue(GoogleCloudResourcesettingsV1ValueEnumValue $enumValue)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1ValueEnumValue
+         */
+        public function getEnumValue()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1ValueStringMap
+         */
+        public function setStringMapValue(GoogleCloudResourcesettingsV1ValueStringMap $stringMapValue)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1ValueStringMap
+         */
+        public function getStringMapValue()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1ValueStringSet
+         */
+        public function setStringSetValue(GoogleCloudResourcesettingsV1ValueStringSet $stringSetValue)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1ValueStringSet
+         */
+        public function getStringSetValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDurationValue($durationValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDurationValue()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1ValueEnumValue
-     */
-    public function setEnumValue(GoogleCloudResourcesettingsV1ValueEnumValue $enumValue)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1ValueEnumValue
-     */
-    public function getEnumValue()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1ValueStringMap
-     */
-    public function setStringMapValue(GoogleCloudResourcesettingsV1ValueStringMap $stringMapValue)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1ValueStringMap
-     */
-    public function getStringMapValue()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1ValueStringSet
-     */
-    public function setStringSetValue(GoogleCloudResourcesettingsV1ValueStringSet $stringSetValue)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1ValueStringSet
-     */
-    public function getStringSetValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1Value extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1Value
     {
     }
 }

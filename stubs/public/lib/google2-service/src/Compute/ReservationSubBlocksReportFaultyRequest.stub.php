@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationSubBlocksReportFaultyRequest extends \Google\Collection
-{
-    public const DISRUPTION_SCHEDULE_DISRUPTION_SCHEDULE_UNSPECIFIED = 'DISRUPTION_SCHEDULE_UNSPECIFIED';
-    /**
-     * All VMs will be disrupted immediately.
-     */
-    public const DISRUPTION_SCHEDULE_IMMEDIATE = 'IMMEDIATE';
-    public const FAILURE_COMPONENT_FAILURE_COMPONENT_UNSPECIFIED = 'FAILURE_COMPONENT_UNSPECIFIED';
-    /**
-     * Multiple hosts experienced the fault.
-     */
-    public const FAILURE_COMPONENT_MULTIPLE_FAULTY_HOSTS = 'MULTIPLE_FAULTY_HOSTS';
-    /**
-     * The NVLink switch experienced the fault.
-     */
-    public const FAILURE_COMPONENT_NVLINK_SWITCH = 'NVLINK_SWITCH';
-    protected $collection_key = 'faultReasons';
-    /**
-     * The disruption schedule for the subBlock.
-     *
-     * @var string
-     */
-    public $disruptionSchedule;
-    /**
-     * The component that experienced the fault.
-     *
-     * @var string
-     */
-    public $failureComponent;
-    protected $faultReasonsType = ReservationSubBlocksReportFaultyRequestFaultReason::class;
-    protected $faultReasonsDataType = 'array';
-    /**
-     * The disruption schedule for the subBlock.
-     *
-     * Accepted values: DISRUPTION_SCHEDULE_UNSPECIFIED, IMMEDIATE
-     *
-     * @param self::DISRUPTION_SCHEDULE_* $disruptionSchedule
-     */
-    public function setDisruptionSchedule($disruptionSchedule)
+namespace Google\Service\Compute {
+    class ReservationSubBlocksReportFaultyRequest extends \Google\Collection
     {
+        public const DISRUPTION_SCHEDULE_DISRUPTION_SCHEDULE_UNSPECIFIED = 'DISRUPTION_SCHEDULE_UNSPECIFIED';
+        /**
+         * All VMs will be disrupted immediately.
+         */
+        public const DISRUPTION_SCHEDULE_IMMEDIATE = 'IMMEDIATE';
+        public const FAILURE_COMPONENT_FAILURE_COMPONENT_UNSPECIFIED = 'FAILURE_COMPONENT_UNSPECIFIED';
+        /**
+         * Multiple hosts experienced the fault.
+         */
+        public const FAILURE_COMPONENT_MULTIPLE_FAULTY_HOSTS = 'MULTIPLE_FAULTY_HOSTS';
+        /**
+         * The NVLink switch experienced the fault.
+         */
+        public const FAILURE_COMPONENT_NVLINK_SWITCH = 'NVLINK_SWITCH';
+        protected $collection_key = 'faultReasons';
+        /**
+         * The disruption schedule for the subBlock.
+         *
+         * @var string
+         */
+        public $disruptionSchedule;
+        /**
+         * The component that experienced the fault.
+         *
+         * @var string
+         */
+        public $failureComponent;
+        protected $faultReasonsType = ReservationSubBlocksReportFaultyRequestFaultReason::class;
+        protected $faultReasonsDataType = 'array';
+        /**
+         * The disruption schedule for the subBlock.
+         *
+         * Accepted values: DISRUPTION_SCHEDULE_UNSPECIFIED, IMMEDIATE
+         *
+         * @param self::DISRUPTION_SCHEDULE_* $disruptionSchedule
+         */
+        public function setDisruptionSchedule($disruptionSchedule)
+        {
+        }
+        /**
+         * @return self::DISRUPTION_SCHEDULE_*
+         */
+        public function getDisruptionSchedule()
+        {
+        }
+        /**
+         * The component that experienced the fault.
+         *
+         * Accepted values: FAILURE_COMPONENT_UNSPECIFIED, MULTIPLE_FAULTY_HOSTS,
+         * NVLINK_SWITCH
+         *
+         * @param self::FAILURE_COMPONENT_* $failureComponent
+         */
+        public function setFailureComponent($failureComponent)
+        {
+        }
+        /**
+         * @return self::FAILURE_COMPONENT_*
+         */
+        public function getFailureComponent()
+        {
+        }
+        /**
+         * The reasons for the fault experienced with the subBlock.
+         *
+         * @param ReservationSubBlocksReportFaultyRequestFaultReason[] $faultReasons
+         */
+        public function setFaultReasons($faultReasons)
+        {
+        }
+        /**
+         * @return ReservationSubBlocksReportFaultyRequestFaultReason[]
+         */
+        public function getFaultReasons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DISRUPTION_SCHEDULE_*
+     * Runtime class alias of \Google\Service\Compute\ReservationSubBlocksReportFaultyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisruptionSchedule()
-    {
-    }
-    /**
-     * The component that experienced the fault.
-     *
-     * Accepted values: FAILURE_COMPONENT_UNSPECIFIED, MULTIPLE_FAULTY_HOSTS,
-     * NVLINK_SWITCH
-     *
-     * @param self::FAILURE_COMPONENT_* $failureComponent
-     */
-    public function setFailureComponent($failureComponent)
-    {
-    }
-    /**
-     * @return self::FAILURE_COMPONENT_*
-     */
-    public function getFailureComponent()
-    {
-    }
-    /**
-     * The reasons for the fault experienced with the subBlock.
-     *
-     * @param ReservationSubBlocksReportFaultyRequestFaultReason[] $faultReasons
-     */
-    public function setFaultReasons($faultReasons)
-    {
-    }
-    /**
-     * @return ReservationSubBlocksReportFaultyRequestFaultReason[]
-     */
-    public function getFaultReasons()
+    class Google_Service_Compute_ReservationSubBlocksReportFaultyRequest extends \Google\Service\Compute\ReservationSubBlocksReportFaultyRequest
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ClassTemplateInfo extends \Google\Model
-{
-    protected $cardBarcodeSectionDetailsType = CardBarcodeSectionDetails::class;
-    protected $cardBarcodeSectionDetailsDataType = '';
-    protected $cardTemplateOverrideType = CardTemplateOverride::class;
-    protected $cardTemplateOverrideDataType = '';
-    protected $detailsTemplateOverrideType = DetailsTemplateOverride::class;
-    protected $detailsTemplateOverrideDataType = '';
-    protected $listTemplateOverrideType = ListTemplateOverride::class;
-    protected $listTemplateOverrideDataType = '';
-    /**
-     * Specifies extra information to be displayed above and below the barcode.
-     *
-     * @param CardBarcodeSectionDetails $cardBarcodeSectionDetails
-     */
-    public function setCardBarcodeSectionDetails(CardBarcodeSectionDetails $cardBarcodeSectionDetails)
+namespace Google\Service\Walletobjects {
+    class ClassTemplateInfo extends \Google\Model
     {
+        protected $cardBarcodeSectionDetailsType = CardBarcodeSectionDetails::class;
+        protected $cardBarcodeSectionDetailsDataType = '';
+        protected $cardTemplateOverrideType = CardTemplateOverride::class;
+        protected $cardTemplateOverrideDataType = '';
+        protected $detailsTemplateOverrideType = DetailsTemplateOverride::class;
+        protected $detailsTemplateOverrideDataType = '';
+        protected $listTemplateOverrideType = ListTemplateOverride::class;
+        protected $listTemplateOverrideDataType = '';
+        /**
+         * Specifies extra information to be displayed above and below the barcode.
+         *
+         * @param CardBarcodeSectionDetails $cardBarcodeSectionDetails
+         */
+        public function setCardBarcodeSectionDetails(CardBarcodeSectionDetails $cardBarcodeSectionDetails)
+        {
+        }
+        /**
+         * @return CardBarcodeSectionDetails
+         */
+        public function getCardBarcodeSectionDetails()
+        {
+        }
+        /**
+         * Override for the card view.
+         *
+         * @param CardTemplateOverride $cardTemplateOverride
+         */
+        public function setCardTemplateOverride(CardTemplateOverride $cardTemplateOverride)
+        {
+        }
+        /**
+         * @return CardTemplateOverride
+         */
+        public function getCardTemplateOverride()
+        {
+        }
+        /**
+         * Override for the details view (beneath the card view).
+         *
+         * @param DetailsTemplateOverride $detailsTemplateOverride
+         */
+        public function setDetailsTemplateOverride(DetailsTemplateOverride $detailsTemplateOverride)
+        {
+        }
+        /**
+         * @return DetailsTemplateOverride
+         */
+        public function getDetailsTemplateOverride()
+        {
+        }
+        /**
+         * Override for the passes list view.
+         *
+         * @param ListTemplateOverride $listTemplateOverride
+         */
+        public function setListTemplateOverride(ListTemplateOverride $listTemplateOverride)
+        {
+        }
+        /**
+         * @return ListTemplateOverride
+         */
+        public function getListTemplateOverride()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CardBarcodeSectionDetails
+     * Runtime class alias of \Google\Service\Walletobjects\ClassTemplateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardBarcodeSectionDetails()
-    {
-    }
-    /**
-     * Override for the card view.
-     *
-     * @param CardTemplateOverride $cardTemplateOverride
-     */
-    public function setCardTemplateOverride(CardTemplateOverride $cardTemplateOverride)
-    {
-    }
-    /**
-     * @return CardTemplateOverride
-     */
-    public function getCardTemplateOverride()
-    {
-    }
-    /**
-     * Override for the details view (beneath the card view).
-     *
-     * @param DetailsTemplateOverride $detailsTemplateOverride
-     */
-    public function setDetailsTemplateOverride(DetailsTemplateOverride $detailsTemplateOverride)
-    {
-    }
-    /**
-     * @return DetailsTemplateOverride
-     */
-    public function getDetailsTemplateOverride()
-    {
-    }
-    /**
-     * Override for the passes list view.
-     *
-     * @param ListTemplateOverride $listTemplateOverride
-     */
-    public function setListTemplateOverride(ListTemplateOverride $listTemplateOverride)
-    {
-    }
-    /**
-     * @return ListTemplateOverride
-     */
-    public function getListTemplateOverride()
+    class Google_Service_Walletobjects_ClassTemplateInfo extends \Google\Service\Walletobjects\ClassTemplateInfo
     {
     }
 }

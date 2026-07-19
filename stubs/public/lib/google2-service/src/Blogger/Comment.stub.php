@@ -21,218 +21,227 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class Comment extends \Google\Model
-{
-    public const STATUS_LIVE = 'LIVE';
-    public const STATUS_EMPTIED = 'EMPTIED';
-    public const STATUS_PENDING = 'PENDING';
-    public const STATUS_SPAM = 'SPAM';
-    protected $authorType = CommentAuthor::class;
-    protected $authorDataType = '';
-    protected $blogType = CommentBlog::class;
-    protected $blogDataType = '';
-    /**
-     * The actual content of the comment. May include HTML markup.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The identifier for this resource.
-     *
-     * @var string
-     */
-    public $id;
-    protected $inReplyToType = CommentInReplyTo::class;
-    protected $inReplyToDataType = '';
-    /**
-     * The kind of this entry. Always blogger#comment.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $postType = CommentPost::class;
-    protected $postDataType = '';
-    /**
-     * RFC 3339 date-time when this comment was published.
-     *
-     * @var string
-     */
-    public $published;
-    /**
-     * The API REST URL to fetch this resource from.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The status of the comment (only populated for admin users).
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * RFC 3339 date-time when this comment was last updated.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The author of this Comment.
-     *
-     * @param CommentAuthor $author
-     */
-    public function setAuthor(CommentAuthor $author)
+namespace Google\Service\Blogger {
+    class Comment extends \Google\Model
     {
+        public const STATUS_LIVE = 'LIVE';
+        public const STATUS_EMPTIED = 'EMPTIED';
+        public const STATUS_PENDING = 'PENDING';
+        public const STATUS_SPAM = 'SPAM';
+        protected $authorType = CommentAuthor::class;
+        protected $authorDataType = '';
+        protected $blogType = CommentBlog::class;
+        protected $blogDataType = '';
+        /**
+         * The actual content of the comment. May include HTML markup.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The identifier for this resource.
+         *
+         * @var string
+         */
+        public $id;
+        protected $inReplyToType = CommentInReplyTo::class;
+        protected $inReplyToDataType = '';
+        /**
+         * The kind of this entry. Always blogger#comment.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $postType = CommentPost::class;
+        protected $postDataType = '';
+        /**
+         * RFC 3339 date-time when this comment was published.
+         *
+         * @var string
+         */
+        public $published;
+        /**
+         * The API REST URL to fetch this resource from.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The status of the comment (only populated for admin users).
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * RFC 3339 date-time when this comment was last updated.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The author of this Comment.
+         *
+         * @param CommentAuthor $author
+         */
+        public function setAuthor(CommentAuthor $author)
+        {
+        }
+        /**
+         * @return CommentAuthor
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Data about the blog containing this comment.
+         *
+         * @param CommentBlog $blog
+         */
+        public function setBlog(CommentBlog $blog)
+        {
+        }
+        /**
+         * @return CommentBlog
+         */
+        public function getBlog()
+        {
+        }
+        /**
+         * The actual content of the comment. May include HTML markup.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The identifier for this resource.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Data about the comment this is in reply to.
+         *
+         * @param CommentInReplyTo $inReplyTo
+         */
+        public function setInReplyTo(CommentInReplyTo $inReplyTo)
+        {
+        }
+        /**
+         * @return CommentInReplyTo
+         */
+        public function getInReplyTo()
+        {
+        }
+        /**
+         * The kind of this entry. Always blogger#comment.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Data about the post containing this comment.
+         *
+         * @param CommentPost $post
+         */
+        public function setPost(CommentPost $post)
+        {
+        }
+        /**
+         * @return CommentPost
+         */
+        public function getPost()
+        {
+        }
+        /**
+         * RFC 3339 date-time when this comment was published.
+         *
+         * @param string $published
+         */
+        public function setPublished($published)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublished()
+        {
+        }
+        /**
+         * The API REST URL to fetch this resource from.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The status of the comment (only populated for admin users).
+         *
+         * Accepted values: LIVE, EMPTIED, PENDING, SPAM
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * RFC 3339 date-time when this comment was last updated.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommentAuthor
+     * Runtime class alias of \Google\Service\Blogger\Comment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Data about the blog containing this comment.
-     *
-     * @param CommentBlog $blog
-     */
-    public function setBlog(CommentBlog $blog)
-    {
-    }
-    /**
-     * @return CommentBlog
-     */
-    public function getBlog()
-    {
-    }
-    /**
-     * The actual content of the comment. May include HTML markup.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * The identifier for this resource.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Data about the comment this is in reply to.
-     *
-     * @param CommentInReplyTo $inReplyTo
-     */
-    public function setInReplyTo(CommentInReplyTo $inReplyTo)
-    {
-    }
-    /**
-     * @return CommentInReplyTo
-     */
-    public function getInReplyTo()
-    {
-    }
-    /**
-     * The kind of this entry. Always blogger#comment.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Data about the post containing this comment.
-     *
-     * @param CommentPost $post
-     */
-    public function setPost(CommentPost $post)
-    {
-    }
-    /**
-     * @return CommentPost
-     */
-    public function getPost()
-    {
-    }
-    /**
-     * RFC 3339 date-time when this comment was published.
-     *
-     * @param string $published
-     */
-    public function setPublished($published)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublished()
-    {
-    }
-    /**
-     * The API REST URL to fetch this resource from.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The status of the comment (only populated for admin users).
-     *
-     * Accepted values: LIVE, EMPTIED, PENDING, SPAM
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * RFC 3339 date-time when this comment was last updated.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Blogger_Comment extends \Google\Service\Blogger\Comment
     {
     }
 }

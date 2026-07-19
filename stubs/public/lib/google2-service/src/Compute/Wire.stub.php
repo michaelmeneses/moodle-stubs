@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Wire extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    /**
-     * Output only. [Output Only] Indicates whether the wire is enabled. When
-     * false, the wire is disabled. When true and when the wire group of the wire
-     * is also enabled, the wire is enabled. Defaults to true.
-     *
-     * @var bool
-     */
-    public $adminEnabled;
-    protected $endpointsType = WireEndpoint::class;
-    protected $endpointsDataType = 'array';
-    /**
-     * Output only. [Output Only] A label that identifies the wire. The format of
-     * this label combines the existing labels of the wire group endpoints and
-     * Interconnect connections used by this wire in alphabetical order as
-     * follows: `ENDPOINT_A+CONNECTION_A1,ENDPOINT_B+CONNECTION_B1`, where:
-     * - ENDPOINT_A and ENDPOINT_B: are the labels    that you entered as map keys
-     * when you specified the wire group endpoint    objects.    - CONNECTION_A1
-     * and CONNECTION_B1: are the    labels that you entered as map keys when you
-     * specified the wire group    Interconnect objects.
-     *
-     * @var string
-     */
-    public $label;
-    protected $wirePropertiesType = WireProperties::class;
-    protected $wirePropertiesDataType = '';
-    /**
-     * Output only. [Output Only] Indicates whether the wire is enabled. When
-     * false, the wire is disabled. When true and when the wire group of the wire
-     * is also enabled, the wire is enabled. Defaults to true.
-     *
-     * @param bool $adminEnabled
-     */
-    public function setAdminEnabled($adminEnabled)
+namespace Google\Service\Compute {
+    class Wire extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        /**
+         * Output only. [Output Only] Indicates whether the wire is enabled. When
+         * false, the wire is disabled. When true and when the wire group of the wire
+         * is also enabled, the wire is enabled. Defaults to true.
+         *
+         * @var bool
+         */
+        public $adminEnabled;
+        protected $endpointsType = WireEndpoint::class;
+        protected $endpointsDataType = 'array';
+        /**
+         * Output only. [Output Only] A label that identifies the wire. The format of
+         * this label combines the existing labels of the wire group endpoints and
+         * Interconnect connections used by this wire in alphabetical order as
+         * follows: `ENDPOINT_A+CONNECTION_A1,ENDPOINT_B+CONNECTION_B1`, where:
+         * - ENDPOINT_A and ENDPOINT_B: are the labels    that you entered as map keys
+         * when you specified the wire group endpoint    objects.    - CONNECTION_A1
+         * and CONNECTION_B1: are the    labels that you entered as map keys when you
+         * specified the wire group    Interconnect objects.
+         *
+         * @var string
+         */
+        public $label;
+        protected $wirePropertiesType = WireProperties::class;
+        protected $wirePropertiesDataType = '';
+        /**
+         * Output only. [Output Only] Indicates whether the wire is enabled. When
+         * false, the wire is disabled. When true and when the wire group of the wire
+         * is also enabled, the wire is enabled. Defaults to true.
+         *
+         * @param bool $adminEnabled
+         */
+        public function setAdminEnabled($adminEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdminEnabled()
+        {
+        }
+        /**
+         * Output only. Wire endpoints are specific Interconnect connections.
+         *
+         * @param WireEndpoint[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return WireEndpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * Output only. [Output Only] A label that identifies the wire. The format of
+         * this label combines the existing labels of the wire group endpoints and
+         * Interconnect connections used by this wire in alphabetical order as
+         * follows: `ENDPOINT_A+CONNECTION_A1,ENDPOINT_B+CONNECTION_B1`, where:
+         * - ENDPOINT_A and ENDPOINT_B: are the labels    that you entered as map keys
+         * when you specified the wire group endpoint    objects.    - CONNECTION_A1
+         * and CONNECTION_B1: are the    labels that you entered as map keys when you
+         * specified the wire group    Interconnect objects.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Output only. [Output Only] Properties of the wire.
+         *
+         * @param WireProperties $wireProperties
+         */
+        public function setWireProperties(WireProperties $wireProperties)
+        {
+        }
+        /**
+         * @return WireProperties
+         */
+        public function getWireProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\Wire registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminEnabled()
-    {
-    }
-    /**
-     * Output only. Wire endpoints are specific Interconnect connections.
-     *
-     * @param WireEndpoint[] $endpoints
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return WireEndpoint[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * Output only. [Output Only] A label that identifies the wire. The format of
-     * this label combines the existing labels of the wire group endpoints and
-     * Interconnect connections used by this wire in alphabetical order as
-     * follows: `ENDPOINT_A+CONNECTION_A1,ENDPOINT_B+CONNECTION_B1`, where:
-     * - ENDPOINT_A and ENDPOINT_B: are the labels    that you entered as map keys
-     * when you specified the wire group endpoint    objects.    - CONNECTION_A1
-     * and CONNECTION_B1: are the    labels that you entered as map keys when you
-     * specified the wire group    Interconnect objects.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Output only. [Output Only] Properties of the wire.
-     *
-     * @param WireProperties $wireProperties
-     */
-    public function setWireProperties(WireProperties $wireProperties)
-    {
-    }
-    /**
-     * @return WireProperties
-     */
-    public function getWireProperties()
+    class Google_Service_Compute_Wire extends \Google\Service\Compute\Wire
     {
     }
 }

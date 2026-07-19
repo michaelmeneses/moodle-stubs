@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StatisticalTable extends \Google\Collection
-{
-    protected $collection_key = 'quasiIds';
-    protected $quasiIdsType = GooglePrivacyDlpV2QuasiIdentifierField::class;
-    protected $quasiIdsDataType = 'array';
-    protected $relativeFrequencyType = GooglePrivacyDlpV2FieldId::class;
-    protected $relativeFrequencyDataType = '';
-    protected $tableType = GooglePrivacyDlpV2BigQueryTable::class;
-    protected $tableDataType = '';
-    /**
-     * Required. Quasi-identifier columns.
-     *
-     * @param GooglePrivacyDlpV2QuasiIdentifierField[] $quasiIds
-     */
-    public function setQuasiIds($quasiIds)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StatisticalTable extends \Google\Collection
     {
+        protected $collection_key = 'quasiIds';
+        protected $quasiIdsType = GooglePrivacyDlpV2QuasiIdentifierField::class;
+        protected $quasiIdsDataType = 'array';
+        protected $relativeFrequencyType = GooglePrivacyDlpV2FieldId::class;
+        protected $relativeFrequencyDataType = '';
+        protected $tableType = GooglePrivacyDlpV2BigQueryTable::class;
+        protected $tableDataType = '';
+        /**
+         * Required. Quasi-identifier columns.
+         *
+         * @param GooglePrivacyDlpV2QuasiIdentifierField[] $quasiIds
+         */
+        public function setQuasiIds($quasiIds)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2QuasiIdentifierField[]
+         */
+        public function getQuasiIds()
+        {
+        }
+        /**
+         * Required. The relative frequency column must contain a floating-point
+         * number between 0 and 1 (inclusive). Null values are assumed to be zero.
+         *
+         * @param GooglePrivacyDlpV2FieldId $relativeFrequency
+         */
+        public function setRelativeFrequency(GooglePrivacyDlpV2FieldId $relativeFrequency)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getRelativeFrequency()
+        {
+        }
+        /**
+         * Required. Auxiliary table location.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTable $table
+         */
+        public function setTable(GooglePrivacyDlpV2BigQueryTable $table)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTable
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2QuasiIdentifierField[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StatisticalTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuasiIds()
-    {
-    }
-    /**
-     * Required. The relative frequency column must contain a floating-point
-     * number between 0 and 1 (inclusive). Null values are assumed to be zero.
-     *
-     * @param GooglePrivacyDlpV2FieldId $relativeFrequency
-     */
-    public function setRelativeFrequency(GooglePrivacyDlpV2FieldId $relativeFrequency)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldId
-     */
-    public function getRelativeFrequency()
-    {
-    }
-    /**
-     * Required. Auxiliary table location.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTable $table
-     */
-    public function setTable(GooglePrivacyDlpV2BigQueryTable $table)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTable
-     */
-    public function getTable()
+    class Google_Service_DLP_GooglePrivacyDlpV2StatisticalTable extends \Google\Service\DLP\GooglePrivacyDlpV2StatisticalTable
     {
     }
 }

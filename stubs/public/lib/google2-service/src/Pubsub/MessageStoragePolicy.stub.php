@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class MessageStoragePolicy extends \Google\Collection
-{
-    protected $collection_key = 'allowedPersistenceRegions';
-    /**
-     * Optional. A list of IDs of Google Cloud regions where messages that are
-     * published to the topic may be persisted in storage. Messages published by
-     * publishers running in non-allowed Google Cloud regions (or running outside
-     * of Google Cloud altogether) are routed for storage in one of the allowed
-     * regions. An empty list means that no regions are allowed, and is not a
-     * valid configuration.
-     *
-     * @var string[]
-     */
-    public $allowedPersistenceRegions;
-    /**
-     * Optional. If true, `allowed_persistence_regions` is also used to enforce
-     * in-transit guarantees for messages. That is, Pub/Sub will fail Publish
-     * operations on this topic and subscribe operations on any subscription
-     * attached to this topic in any region that is not in
-     * `allowed_persistence_regions`.
-     *
-     * @var bool
-     */
-    public $enforceInTransit;
-    /**
-     * Optional. A list of IDs of Google Cloud regions where messages that are
-     * published to the topic may be persisted in storage. Messages published by
-     * publishers running in non-allowed Google Cloud regions (or running outside
-     * of Google Cloud altogether) are routed for storage in one of the allowed
-     * regions. An empty list means that no regions are allowed, and is not a
-     * valid configuration.
-     *
-     * @param string[] $allowedPersistenceRegions
-     */
-    public function setAllowedPersistenceRegions($allowedPersistenceRegions)
+namespace Google\Service\Pubsub {
+    class MessageStoragePolicy extends \Google\Collection
     {
+        protected $collection_key = 'allowedPersistenceRegions';
+        /**
+         * Optional. A list of IDs of Google Cloud regions where messages that are
+         * published to the topic may be persisted in storage. Messages published by
+         * publishers running in non-allowed Google Cloud regions (or running outside
+         * of Google Cloud altogether) are routed for storage in one of the allowed
+         * regions. An empty list means that no regions are allowed, and is not a
+         * valid configuration.
+         *
+         * @var string[]
+         */
+        public $allowedPersistenceRegions;
+        /**
+         * Optional. If true, `allowed_persistence_regions` is also used to enforce
+         * in-transit guarantees for messages. That is, Pub/Sub will fail Publish
+         * operations on this topic and subscribe operations on any subscription
+         * attached to this topic in any region that is not in
+         * `allowed_persistence_regions`.
+         *
+         * @var bool
+         */
+        public $enforceInTransit;
+        /**
+         * Optional. A list of IDs of Google Cloud regions where messages that are
+         * published to the topic may be persisted in storage. Messages published by
+         * publishers running in non-allowed Google Cloud regions (or running outside
+         * of Google Cloud altogether) are routed for storage in one of the allowed
+         * regions. An empty list means that no regions are allowed, and is not a
+         * valid configuration.
+         *
+         * @param string[] $allowedPersistenceRegions
+         */
+        public function setAllowedPersistenceRegions($allowedPersistenceRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedPersistenceRegions()
+        {
+        }
+        /**
+         * Optional. If true, `allowed_persistence_regions` is also used to enforce
+         * in-transit guarantees for messages. That is, Pub/Sub will fail Publish
+         * operations on this topic and subscribe operations on any subscription
+         * attached to this topic in any region that is not in
+         * `allowed_persistence_regions`.
+         *
+         * @param bool $enforceInTransit
+         */
+        public function setEnforceInTransit($enforceInTransit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnforceInTransit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Pubsub\MessageStoragePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedPersistenceRegions()
-    {
-    }
-    /**
-     * Optional. If true, `allowed_persistence_regions` is also used to enforce
-     * in-transit guarantees for messages. That is, Pub/Sub will fail Publish
-     * operations on this topic and subscribe operations on any subscription
-     * attached to this topic in any region that is not in
-     * `allowed_persistence_regions`.
-     *
-     * @param bool $enforceInTransit
-     */
-    public function setEnforceInTransit($enforceInTransit)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnforceInTransit()
+    class Google_Service_Pubsub_MessageStoragePolicy extends \Google\Service\Pubsub\MessageStoragePolicy
     {
     }
 }

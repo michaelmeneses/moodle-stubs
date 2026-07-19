@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AssetEnrichment extends \Google\Model
-{
-    protected $resourceOwnersType = ResourceOwners::class;
-    protected $resourceOwnersDataType = '';
-    /**
-     * The resource owners for a resource. Note that this field only contains the
-     * members that have "roles/owner" role in the resource's IAM Policy.
-     *
-     * @param ResourceOwners $resourceOwners
-     */
-    public function setResourceOwners(ResourceOwners $resourceOwners)
+namespace Google\Service\CloudAsset {
+    class AssetEnrichment extends \Google\Model
     {
+        protected $resourceOwnersType = ResourceOwners::class;
+        protected $resourceOwnersDataType = '';
+        /**
+         * The resource owners for a resource. Note that this field only contains the
+         * members that have "roles/owner" role in the resource's IAM Policy.
+         *
+         * @param ResourceOwners $resourceOwners
+         */
+        public function setResourceOwners(ResourceOwners $resourceOwners)
+        {
+        }
+        /**
+         * @return ResourceOwners
+         */
+        public function getResourceOwners()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceOwners
+     * Runtime class alias of \Google\Service\CloudAsset\AssetEnrichment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceOwners()
+    class Google_Service_CloudAsset_AssetEnrichment extends \Google\Service\CloudAsset\AssetEnrichment
     {
     }
 }

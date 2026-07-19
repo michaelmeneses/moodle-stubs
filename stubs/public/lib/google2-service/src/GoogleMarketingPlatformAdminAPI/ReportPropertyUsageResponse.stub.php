@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class ReportPropertyUsageResponse extends \Google\Collection
-{
-    protected $collection_key = 'propertyUsages';
-    protected $billInfoType = BillInfo::class;
-    protected $billInfoDataType = '';
-    protected $propertyUsagesType = PropertyUsage::class;
-    protected $propertyUsagesDataType = 'array';
-    /**
-     * Bill amount in the specified organization and month. Will be empty if user
-     * only has access to usage data.
-     *
-     * @param BillInfo $billInfo
-     */
-    public function setBillInfo(BillInfo $billInfo)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class ReportPropertyUsageResponse extends \Google\Collection
     {
+        protected $collection_key = 'propertyUsages';
+        protected $billInfoType = BillInfo::class;
+        protected $billInfoDataType = '';
+        protected $propertyUsagesType = PropertyUsage::class;
+        protected $propertyUsagesDataType = 'array';
+        /**
+         * Bill amount in the specified organization and month. Will be empty if user
+         * only has access to usage data.
+         *
+         * @param BillInfo $billInfo
+         */
+        public function setBillInfo(BillInfo $billInfo)
+        {
+        }
+        /**
+         * @return BillInfo
+         */
+        public function getBillInfo()
+        {
+        }
+        /**
+         * Usage data for all properties in the specified organization and month.
+         *
+         * @param PropertyUsage[] $propertyUsages
+         */
+        public function setPropertyUsages($propertyUsages)
+        {
+        }
+        /**
+         * @return PropertyUsage[]
+         */
+        public function getPropertyUsages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BillInfo
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\ReportPropertyUsageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillInfo()
-    {
-    }
-    /**
-     * Usage data for all properties in the specified organization and month.
-     *
-     * @param PropertyUsage[] $propertyUsages
-     */
-    public function setPropertyUsages($propertyUsages)
-    {
-    }
-    /**
-     * @return PropertyUsage[]
-     */
-    public function getPropertyUsages()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_ReportPropertyUsageResponse extends \Google\Service\GoogleMarketingPlatformAdminAPI\ReportPropertyUsageResponse
     {
     }
 }

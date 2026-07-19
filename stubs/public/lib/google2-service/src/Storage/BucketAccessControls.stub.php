@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketAccessControls extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = BucketAccessControl::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of item this is. For lists of bucket access control entries, this
-     * is always storage#bucketAccessControls.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The list of items.
-     *
-     * @param BucketAccessControl[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Storage {
+    class BucketAccessControls extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = BucketAccessControl::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of item this is. For lists of bucket access control entries, this
+         * is always storage#bucketAccessControls.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The list of items.
+         *
+         * @param BucketAccessControl[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return BucketAccessControl[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of item this is. For lists of bucket access control entries, this
+         * is always storage#bucketAccessControls.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BucketAccessControl[]
+     * Runtime class alias of \Google\Service\Storage\BucketAccessControls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of item this is. For lists of bucket access control entries, this
-     * is always storage#bucketAccessControls.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Storage_BucketAccessControls extends \Google\Service\Storage\BucketAccessControls
     {
     }
 }

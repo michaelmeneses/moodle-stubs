@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DailyResourceUsageAggregationCPU extends \Google\Model
-{
-    protected $utilizationPercentageType = DailyResourceUsageAggregationStats::class;
-    protected $utilizationPercentageDataType = '';
-    /**
-     * CPU utilization percentage.
-     *
-     * @param DailyResourceUsageAggregationStats $utilizationPercentage
-     */
-    public function setUtilizationPercentage(DailyResourceUsageAggregationStats $utilizationPercentage)
+namespace Google\Service\MigrationCenterAPI {
+    class DailyResourceUsageAggregationCPU extends \Google\Model
     {
+        protected $utilizationPercentageType = DailyResourceUsageAggregationStats::class;
+        protected $utilizationPercentageDataType = '';
+        /**
+         * CPU utilization percentage.
+         *
+         * @param DailyResourceUsageAggregationStats $utilizationPercentage
+         */
+        public function setUtilizationPercentage(DailyResourceUsageAggregationStats $utilizationPercentage)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationStats
+         */
+        public function getUtilizationPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyResourceUsageAggregationStats
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationCPU registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUtilizationPercentage()
+    class Google_Service_MigrationCenterAPI_DailyResourceUsageAggregationCPU extends \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationCPU
     {
     }
 }

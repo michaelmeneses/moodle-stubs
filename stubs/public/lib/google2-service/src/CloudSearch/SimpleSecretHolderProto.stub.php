@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SimpleSecretHolderProto extends \Google\Model
-{
-    protected $labelType = SimpleSecretLabelProto::class;
-    protected $labelDataType = '';
-    /**
-     * @param SimpleSecretLabelProto
-     */
-    public function setLabel(SimpleSecretLabelProto $label)
+namespace Google\Service\CloudSearch {
+    class SimpleSecretHolderProto extends \Google\Model
     {
+        protected $labelType = SimpleSecretLabelProto::class;
+        protected $labelDataType = '';
+        /**
+         * @param SimpleSecretLabelProto
+         */
+        public function setLabel(SimpleSecretLabelProto $label)
+        {
+        }
+        /**
+         * @return SimpleSecretLabelProto
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SimpleSecretLabelProto
+     * Runtime class alias of \Google\Service\CloudSearch\SimpleSecretHolderProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
+    class Google_Service_CloudSearch_SimpleSecretHolderProto extends \Google\Service\CloudSearch\SimpleSecretHolderProto
     {
     }
 }

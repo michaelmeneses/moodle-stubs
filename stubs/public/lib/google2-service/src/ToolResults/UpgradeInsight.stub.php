@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class UpgradeInsight extends \Google\Model
-{
-    /**
-     * The name of the package to be upgraded.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The suggested version to upgrade to. Optional: In case we are not sure
-     * which version solves this problem
-     *
-     * @var string
-     */
-    public $upgradeToVersion;
-    /**
-     * The name of the package to be upgraded.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
+namespace Google\Service\ToolResults {
+    class UpgradeInsight extends \Google\Model
     {
+        /**
+         * The name of the package to be upgraded.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The suggested version to upgrade to. Optional: In case we are not sure
+         * which version solves this problem
+         *
+         * @var string
+         */
+        public $upgradeToVersion;
+        /**
+         * The name of the package to be upgraded.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * The suggested version to upgrade to. Optional: In case we are not sure
+         * which version solves this problem
+         *
+         * @param string $upgradeToVersion
+         */
+        public function setUpgradeToVersion($upgradeToVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeToVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\UpgradeInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageName()
-    {
-    }
-    /**
-     * The suggested version to upgrade to. Optional: In case we are not sure
-     * which version solves this problem
-     *
-     * @param string $upgradeToVersion
-     */
-    public function setUpgradeToVersion($upgradeToVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeToVersion()
+    class Google_Service_ToolResults_UpgradeInsight extends \Google\Service\ToolResults\UpgradeInsight
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2YaraRuleSignature extends \Google\Model
-{
-    /**
-     * The name of the YARA rule.
-     *
-     * @var string
-     */
-    public $yaraRule;
-    /**
-     * The name of the YARA rule.
-     *
-     * @param string $yaraRule
-     */
-    public function setYaraRule($yaraRule)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2YaraRuleSignature extends \Google\Model
     {
+        /**
+         * The name of the YARA rule.
+         *
+         * @var string
+         */
+        public $yaraRule;
+        /**
+         * The name of the YARA rule.
+         *
+         * @param string $yaraRule
+         */
+        public function setYaraRule($yaraRule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYaraRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2YaraRuleSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getYaraRule()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2YaraRuleSignature extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2YaraRuleSignature
     {
     }
 }

@@ -21,504 +21,513 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class ViewsFromUnit extends \Google\Model
-{
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const BEACH_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const BEACH_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const BEACH_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const BEACH_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const CITY_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const CITY_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const CITY_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const CITY_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const GARDEN_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const GARDEN_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const GARDEN_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const GARDEN_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const LAKE_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const LAKE_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const LAKE_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const LAKE_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const LANDMARK_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const LANDMARK_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const LANDMARK_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const LANDMARK_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const OCEAN_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const OCEAN_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const OCEAN_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const OCEAN_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const POOL_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const POOL_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const POOL_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const POOL_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const VALLEY_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const VALLEY_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const VALLEY_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const VALLEY_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Beach view. A guestroom that features a window through which guests can see
-     * the beach.
-     *
-     * @var bool
-     */
-    public $beachView;
-    /**
-     * Beach view exception.
-     *
-     * @var string
-     */
-    public $beachViewException;
-    /**
-     * City view. A guestroom that features a window through which guests can see
-     * the buildings, parks and/or streets of the city.
-     *
-     * @var bool
-     */
-    public $cityView;
-    /**
-     * City view exception.
-     *
-     * @var string
-     */
-    public $cityViewException;
-    /**
-     * Garden view. A guestroom that features a window through which guests can
-     * see a garden.
-     *
-     * @var bool
-     */
-    public $gardenView;
-    /**
-     * Garden view exception.
-     *
-     * @var string
-     */
-    public $gardenViewException;
-    /**
-     * Lake view.
-     *
-     * @var bool
-     */
-    public $lakeView;
-    /**
-     * Lake view exception.
-     *
-     * @var string
-     */
-    public $lakeViewException;
-    /**
-     * Landmark view. A guestroom that features a window through which guests can
-     * see a landmark such as the countryside, a golf course, the forest, a park,
-     * a rain forst, a mountain or a slope.
-     *
-     * @var bool
-     */
-    public $landmarkView;
-    /**
-     * Landmark view exception.
-     *
-     * @var string
-     */
-    public $landmarkViewException;
-    /**
-     * Ocean view. A guestroom that features a window through which guests can see
-     * the ocean.
-     *
-     * @var bool
-     */
-    public $oceanView;
-    /**
-     * Ocean view exception.
-     *
-     * @var string
-     */
-    public $oceanViewException;
-    /**
-     * Pool view. A guestroom that features a window through which guests can see
-     * the hotel's swimming pool.
-     *
-     * @var bool
-     */
-    public $poolView;
-    /**
-     * Pool view exception.
-     *
-     * @var string
-     */
-    public $poolViewException;
-    /**
-     * Valley view. A guestroom that features a window through which guests can
-     * see over a valley.
-     *
-     * @var bool
-     */
-    public $valleyView;
-    /**
-     * Valley view exception.
-     *
-     * @var string
-     */
-    public $valleyViewException;
-    /**
-     * Beach view. A guestroom that features a window through which guests can see
-     * the beach.
-     *
-     * @param bool $beachView
-     */
-    public function setBeachView($beachView)
+namespace Google\Service\MyBusinessLodging {
+    class ViewsFromUnit extends \Google\Model
     {
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const BEACH_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const BEACH_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const BEACH_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const BEACH_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const CITY_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const CITY_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const CITY_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const CITY_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const GARDEN_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const GARDEN_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const GARDEN_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const GARDEN_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const LAKE_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const LAKE_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const LAKE_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const LAKE_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const LANDMARK_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const LANDMARK_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const LANDMARK_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const LANDMARK_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const OCEAN_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const OCEAN_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const OCEAN_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const OCEAN_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const POOL_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const POOL_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const POOL_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const POOL_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const VALLEY_VIEW_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const VALLEY_VIEW_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const VALLEY_VIEW_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const VALLEY_VIEW_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Beach view. A guestroom that features a window through which guests can see
+         * the beach.
+         *
+         * @var bool
+         */
+        public $beachView;
+        /**
+         * Beach view exception.
+         *
+         * @var string
+         */
+        public $beachViewException;
+        /**
+         * City view. A guestroom that features a window through which guests can see
+         * the buildings, parks and/or streets of the city.
+         *
+         * @var bool
+         */
+        public $cityView;
+        /**
+         * City view exception.
+         *
+         * @var string
+         */
+        public $cityViewException;
+        /**
+         * Garden view. A guestroom that features a window through which guests can
+         * see a garden.
+         *
+         * @var bool
+         */
+        public $gardenView;
+        /**
+         * Garden view exception.
+         *
+         * @var string
+         */
+        public $gardenViewException;
+        /**
+         * Lake view.
+         *
+         * @var bool
+         */
+        public $lakeView;
+        /**
+         * Lake view exception.
+         *
+         * @var string
+         */
+        public $lakeViewException;
+        /**
+         * Landmark view. A guestroom that features a window through which guests can
+         * see a landmark such as the countryside, a golf course, the forest, a park,
+         * a rain forst, a mountain or a slope.
+         *
+         * @var bool
+         */
+        public $landmarkView;
+        /**
+         * Landmark view exception.
+         *
+         * @var string
+         */
+        public $landmarkViewException;
+        /**
+         * Ocean view. A guestroom that features a window through which guests can see
+         * the ocean.
+         *
+         * @var bool
+         */
+        public $oceanView;
+        /**
+         * Ocean view exception.
+         *
+         * @var string
+         */
+        public $oceanViewException;
+        /**
+         * Pool view. A guestroom that features a window through which guests can see
+         * the hotel's swimming pool.
+         *
+         * @var bool
+         */
+        public $poolView;
+        /**
+         * Pool view exception.
+         *
+         * @var string
+         */
+        public $poolViewException;
+        /**
+         * Valley view. A guestroom that features a window through which guests can
+         * see over a valley.
+         *
+         * @var bool
+         */
+        public $valleyView;
+        /**
+         * Valley view exception.
+         *
+         * @var string
+         */
+        public $valleyViewException;
+        /**
+         * Beach view. A guestroom that features a window through which guests can see
+         * the beach.
+         *
+         * @param bool $beachView
+         */
+        public function setBeachView($beachView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBeachView()
+        {
+        }
+        /**
+         * Beach view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::BEACH_VIEW_EXCEPTION_* $beachViewException
+         */
+        public function setBeachViewException($beachViewException)
+        {
+        }
+        /**
+         * @return self::BEACH_VIEW_EXCEPTION_*
+         */
+        public function getBeachViewException()
+        {
+        }
+        /**
+         * City view. A guestroom that features a window through which guests can see
+         * the buildings, parks and/or streets of the city.
+         *
+         * @param bool $cityView
+         */
+        public function setCityView($cityView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCityView()
+        {
+        }
+        /**
+         * City view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::CITY_VIEW_EXCEPTION_* $cityViewException
+         */
+        public function setCityViewException($cityViewException)
+        {
+        }
+        /**
+         * @return self::CITY_VIEW_EXCEPTION_*
+         */
+        public function getCityViewException()
+        {
+        }
+        /**
+         * Garden view. A guestroom that features a window through which guests can
+         * see a garden.
+         *
+         * @param bool $gardenView
+         */
+        public function setGardenView($gardenView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGardenView()
+        {
+        }
+        /**
+         * Garden view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::GARDEN_VIEW_EXCEPTION_* $gardenViewException
+         */
+        public function setGardenViewException($gardenViewException)
+        {
+        }
+        /**
+         * @return self::GARDEN_VIEW_EXCEPTION_*
+         */
+        public function getGardenViewException()
+        {
+        }
+        /**
+         * Lake view.
+         *
+         * @param bool $lakeView
+         */
+        public function setLakeView($lakeView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLakeView()
+        {
+        }
+        /**
+         * Lake view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::LAKE_VIEW_EXCEPTION_* $lakeViewException
+         */
+        public function setLakeViewException($lakeViewException)
+        {
+        }
+        /**
+         * @return self::LAKE_VIEW_EXCEPTION_*
+         */
+        public function getLakeViewException()
+        {
+        }
+        /**
+         * Landmark view. A guestroom that features a window through which guests can
+         * see a landmark such as the countryside, a golf course, the forest, a park,
+         * a rain forst, a mountain or a slope.
+         *
+         * @param bool $landmarkView
+         */
+        public function setLandmarkView($landmarkView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLandmarkView()
+        {
+        }
+        /**
+         * Landmark view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::LANDMARK_VIEW_EXCEPTION_* $landmarkViewException
+         */
+        public function setLandmarkViewException($landmarkViewException)
+        {
+        }
+        /**
+         * @return self::LANDMARK_VIEW_EXCEPTION_*
+         */
+        public function getLandmarkViewException()
+        {
+        }
+        /**
+         * Ocean view. A guestroom that features a window through which guests can see
+         * the ocean.
+         *
+         * @param bool $oceanView
+         */
+        public function setOceanView($oceanView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOceanView()
+        {
+        }
+        /**
+         * Ocean view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::OCEAN_VIEW_EXCEPTION_* $oceanViewException
+         */
+        public function setOceanViewException($oceanViewException)
+        {
+        }
+        /**
+         * @return self::OCEAN_VIEW_EXCEPTION_*
+         */
+        public function getOceanViewException()
+        {
+        }
+        /**
+         * Pool view. A guestroom that features a window through which guests can see
+         * the hotel's swimming pool.
+         *
+         * @param bool $poolView
+         */
+        public function setPoolView($poolView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPoolView()
+        {
+        }
+        /**
+         * Pool view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::POOL_VIEW_EXCEPTION_* $poolViewException
+         */
+        public function setPoolViewException($poolViewException)
+        {
+        }
+        /**
+         * @return self::POOL_VIEW_EXCEPTION_*
+         */
+        public function getPoolViewException()
+        {
+        }
+        /**
+         * Valley view. A guestroom that features a window through which guests can
+         * see over a valley.
+         *
+         * @param bool $valleyView
+         */
+        public function setValleyView($valleyView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValleyView()
+        {
+        }
+        /**
+         * Valley view exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::VALLEY_VIEW_EXCEPTION_* $valleyViewException
+         */
+        public function setValleyViewException($valleyViewException)
+        {
+        }
+        /**
+         * @return self::VALLEY_VIEW_EXCEPTION_*
+         */
+        public function getValleyViewException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MyBusinessLodging\ViewsFromUnit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBeachView()
-    {
-    }
-    /**
-     * Beach view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::BEACH_VIEW_EXCEPTION_* $beachViewException
-     */
-    public function setBeachViewException($beachViewException)
-    {
-    }
-    /**
-     * @return self::BEACH_VIEW_EXCEPTION_*
-     */
-    public function getBeachViewException()
-    {
-    }
-    /**
-     * City view. A guestroom that features a window through which guests can see
-     * the buildings, parks and/or streets of the city.
-     *
-     * @param bool $cityView
-     */
-    public function setCityView($cityView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCityView()
-    {
-    }
-    /**
-     * City view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::CITY_VIEW_EXCEPTION_* $cityViewException
-     */
-    public function setCityViewException($cityViewException)
-    {
-    }
-    /**
-     * @return self::CITY_VIEW_EXCEPTION_*
-     */
-    public function getCityViewException()
-    {
-    }
-    /**
-     * Garden view. A guestroom that features a window through which guests can
-     * see a garden.
-     *
-     * @param bool $gardenView
-     */
-    public function setGardenView($gardenView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGardenView()
-    {
-    }
-    /**
-     * Garden view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::GARDEN_VIEW_EXCEPTION_* $gardenViewException
-     */
-    public function setGardenViewException($gardenViewException)
-    {
-    }
-    /**
-     * @return self::GARDEN_VIEW_EXCEPTION_*
-     */
-    public function getGardenViewException()
-    {
-    }
-    /**
-     * Lake view.
-     *
-     * @param bool $lakeView
-     */
-    public function setLakeView($lakeView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLakeView()
-    {
-    }
-    /**
-     * Lake view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::LAKE_VIEW_EXCEPTION_* $lakeViewException
-     */
-    public function setLakeViewException($lakeViewException)
-    {
-    }
-    /**
-     * @return self::LAKE_VIEW_EXCEPTION_*
-     */
-    public function getLakeViewException()
-    {
-    }
-    /**
-     * Landmark view. A guestroom that features a window through which guests can
-     * see a landmark such as the countryside, a golf course, the forest, a park,
-     * a rain forst, a mountain or a slope.
-     *
-     * @param bool $landmarkView
-     */
-    public function setLandmarkView($landmarkView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLandmarkView()
-    {
-    }
-    /**
-     * Landmark view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::LANDMARK_VIEW_EXCEPTION_* $landmarkViewException
-     */
-    public function setLandmarkViewException($landmarkViewException)
-    {
-    }
-    /**
-     * @return self::LANDMARK_VIEW_EXCEPTION_*
-     */
-    public function getLandmarkViewException()
-    {
-    }
-    /**
-     * Ocean view. A guestroom that features a window through which guests can see
-     * the ocean.
-     *
-     * @param bool $oceanView
-     */
-    public function setOceanView($oceanView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOceanView()
-    {
-    }
-    /**
-     * Ocean view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::OCEAN_VIEW_EXCEPTION_* $oceanViewException
-     */
-    public function setOceanViewException($oceanViewException)
-    {
-    }
-    /**
-     * @return self::OCEAN_VIEW_EXCEPTION_*
-     */
-    public function getOceanViewException()
-    {
-    }
-    /**
-     * Pool view. A guestroom that features a window through which guests can see
-     * the hotel's swimming pool.
-     *
-     * @param bool $poolView
-     */
-    public function setPoolView($poolView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPoolView()
-    {
-    }
-    /**
-     * Pool view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::POOL_VIEW_EXCEPTION_* $poolViewException
-     */
-    public function setPoolViewException($poolViewException)
-    {
-    }
-    /**
-     * @return self::POOL_VIEW_EXCEPTION_*
-     */
-    public function getPoolViewException()
-    {
-    }
-    /**
-     * Valley view. A guestroom that features a window through which guests can
-     * see over a valley.
-     *
-     * @param bool $valleyView
-     */
-    public function setValleyView($valleyView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValleyView()
-    {
-    }
-    /**
-     * Valley view exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::VALLEY_VIEW_EXCEPTION_* $valleyViewException
-     */
-    public function setValleyViewException($valleyViewException)
-    {
-    }
-    /**
-     * @return self::VALLEY_VIEW_EXCEPTION_*
-     */
-    public function getValleyViewException()
+    class Google_Service_MyBusinessLodging_ViewsFromUnit extends \Google\Service\MyBusinessLodging\ViewsFromUnit
     {
     }
 }

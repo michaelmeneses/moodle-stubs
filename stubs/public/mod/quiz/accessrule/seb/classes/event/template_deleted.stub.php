@@ -30,6 +30,8 @@
  */
 namespace quizaccess_seb\event;
 
+use context_system;
+use core\event\base;
 /**
  * Event for when a template is deleted.
  *

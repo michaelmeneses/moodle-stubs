@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FunctionResponse extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    /**
-     * Required. The name of the function to call. Matches
-     * [FunctionDeclaration.name] and [FunctionCall.name].
-     *
-     * @var string
-     */
-    public $name;
-    protected $partsType = GoogleCloudAiplatformV1FunctionResponsePart::class;
-    protected $partsDataType = 'array';
-    /**
-     * Required. The function response in JSON object format. Use "output" key to
-     * specify function output and "error" key to specify error details (if any).
-     * If "output" and "error" keys are not specified, then whole "response" is
-     * treated as function output.
-     *
-     * @var array[]
-     */
-    public $response;
-    /**
-     * Required. The name of the function to call. Matches
-     * [FunctionDeclaration.name] and [FunctionCall.name].
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FunctionResponse extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        /**
+         * Required. The name of the function to call. Matches
+         * [FunctionDeclaration.name] and [FunctionCall.name].
+         *
+         * @var string
+         */
+        public $name;
+        protected $partsType = GoogleCloudAiplatformV1FunctionResponsePart::class;
+        protected $partsDataType = 'array';
+        /**
+         * Required. The function response in JSON object format. Use "output" key to
+         * specify function output and "error" key to specify error details (if any).
+         * If "output" and "error" keys are not specified, then whole "response" is
+         * treated as function output.
+         *
+         * @var array[]
+         */
+        public $response;
+        /**
+         * Required. The name of the function to call. Matches
+         * [FunctionDeclaration.name] and [FunctionCall.name].
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Ordered `Parts` that constitute a function response. Parts may
+         * have different IANA MIME types.
+         *
+         * @param GoogleCloudAiplatformV1FunctionResponsePart[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FunctionResponsePart[]
+         */
+        public function getParts()
+        {
+        }
+        /**
+         * Required. The function response in JSON object format. Use "output" key to
+         * specify function output and "error" key to specify error details (if any).
+         * If "output" and "error" keys are not specified, then whole "response" is
+         * treated as function output.
+         *
+         * @param array[] $response
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Ordered `Parts` that constitute a function response. Parts may
-     * have different IANA MIME types.
-     *
-     * @param GoogleCloudAiplatformV1FunctionResponsePart[] $parts
-     */
-    public function setParts($parts)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FunctionResponsePart[]
-     */
-    public function getParts()
-    {
-    }
-    /**
-     * Required. The function response in JSON object format. Use "output" key to
-     * specify function output and "error" key to specify error details (if any).
-     * If "output" and "error" keys are not specified, then whole "response" is
-     * treated as function output.
-     *
-     * @param array[] $response
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResponse()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FunctionResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponse
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class EncryptionConfiguration extends \Google\Model
-{
-    /**
-     * Optional. Describes the Cloud KMS encryption key that will be used to
-     * protect destination BigQuery table. The BigQuery Service Account associated
-     * with your project requires access to this encryption key.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Optional. Describes the Cloud KMS encryption key that will be used to
-     * protect destination BigQuery table. The BigQuery Service Account associated
-     * with your project requires access to this encryption key.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\Bigquery {
+    class EncryptionConfiguration extends \Google\Model
     {
+        /**
+         * Optional. Describes the Cloud KMS encryption key that will be used to
+         * protect destination BigQuery table. The BigQuery Service Account associated
+         * with your project requires access to this encryption key.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Optional. Describes the Cloud KMS encryption key that will be used to
+         * protect destination BigQuery table. The BigQuery Service Account associated
+         * with your project requires access to this encryption key.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\EncryptionConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_Bigquery_EncryptionConfiguration extends \Google\Service\Bigquery\EncryptionConfiguration
     {
     }
 }

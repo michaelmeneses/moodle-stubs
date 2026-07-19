@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedAction extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * @var string
-     */
-    public $function;
-    /**
-     * @var string
-     */
-    public $interaction;
-    /**
-     * @var string
-     */
-    public $loadIndicator;
-    protected $parametersType = AppsDynamiteSharedActionActionParameter::class;
-    protected $parametersDataType = 'array';
-    public $parameters;
-    /**
-     * @param string
-     */
-    public function setFunction($function)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedAction extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * @var string
+         */
+        public $function;
+        /**
+         * @var string
+         */
+        public $interaction;
+        /**
+         * @var string
+         */
+        public $loadIndicator;
+        protected $parametersType = AppsDynamiteSharedActionActionParameter::class;
+        protected $parametersDataType = 'array';
+        public $parameters;
+        /**
+         * @param string
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInteraction($interaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInteraction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLoadIndicator($loadIndicator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoadIndicator()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedActionActionParameter[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedActionActionParameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInteraction($interaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInteraction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLoadIndicator($loadIndicator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoadIndicator()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedActionActionParameter[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedActionActionParameter[]
-     */
-    public function getParameters()
+    class Google_Service_CloudSearch_AppsDynamiteSharedAction extends \Google\Service\CloudSearch\AppsDynamiteSharedAction
     {
     }
 }

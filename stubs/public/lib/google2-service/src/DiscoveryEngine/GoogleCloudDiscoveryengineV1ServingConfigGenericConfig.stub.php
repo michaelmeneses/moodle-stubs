@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ServingConfigGenericConfig extends \Google\Model
-{
-    protected $contentSearchSpecType = GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec::class;
-    protected $contentSearchSpecDataType = '';
-    /**
-     * Specifies the expected behavior of content search. Only valid for content-
-     * search enabled data store.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec $contentSearchSpec
-     */
-    public function setContentSearchSpec(GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec $contentSearchSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ServingConfigGenericConfig extends \Google\Model
     {
+        protected $contentSearchSpecType = GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec::class;
+        protected $contentSearchSpecDataType = '';
+        /**
+         * Specifies the expected behavior of content search. Only valid for content-
+         * search enabled data store.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec $contentSearchSpec
+         */
+        public function setContentSearchSpec(GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec $contentSearchSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec
+         */
+        public function getContentSearchSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ServingConfigGenericConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentSearchSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ServingConfigGenericConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ServingConfigGenericConfig
     {
     }
 }

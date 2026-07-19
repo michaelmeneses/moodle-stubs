@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Jwt extends \Google\Model
-{
-    /**
-     * The compact encoding of a JWS, which is always three base64 encoded strings
-     * joined by periods. For details, see:
-     * https://tools.ietf.org/html/rfc7515.html#section-3.1
-     *
-     * @var string
-     */
-    public $compactJwt;
-    /**
-     * The compact encoding of a JWS, which is always three base64 encoded strings
-     * joined by periods. For details, see:
-     * https://tools.ietf.org/html/rfc7515.html#section-3.1
-     *
-     * @param string $compactJwt
-     */
-    public function setCompactJwt($compactJwt)
+namespace Google\Service\ContainerAnalysis {
+    class Jwt extends \Google\Model
     {
+        /**
+         * The compact encoding of a JWS, which is always three base64 encoded strings
+         * joined by periods. For details, see:
+         * https://tools.ietf.org/html/rfc7515.html#section-3.1
+         *
+         * @var string
+         */
+        public $compactJwt;
+        /**
+         * The compact encoding of a JWS, which is always three base64 encoded strings
+         * joined by periods. For details, see:
+         * https://tools.ietf.org/html/rfc7515.html#section-3.1
+         *
+         * @param string $compactJwt
+         */
+        public function setCompactJwt($compactJwt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompactJwt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Jwt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompactJwt()
+    class Google_Service_ContainerAnalysis_Jwt extends \Google\Service\ContainerAnalysis\Jwt
     {
     }
 }

@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class SubjectDescription extends \Google\Model
-{
-    /**
-     * The serial number encoded in lowercase hexadecimal.
-     *
-     * @var string
-     */
-    public $hexSerialNumber;
-    /**
-     * For convenience, the actual lifetime of an issued certificate.
-     *
-     * @var string
-     */
-    public $lifetime;
-    /**
-     * The time after which the certificate is expired. Per RFC 5280, the validity
-     * period for a certificate is the period of time from not_before_time through
-     * not_after_time, inclusive. Corresponds to 'not_before_time' + 'lifetime' -
-     * 1 second.
-     *
-     * @var string
-     */
-    public $notAfterTime;
-    /**
-     * The time at which the certificate becomes valid.
-     *
-     * @var string
-     */
-    public $notBeforeTime;
-    protected $subjectType = Subject::class;
-    protected $subjectDataType = '';
-    protected $subjectAltNameType = SubjectAltNames::class;
-    protected $subjectAltNameDataType = '';
-    /**
-     * The serial number encoded in lowercase hexadecimal.
-     *
-     * @param string $hexSerialNumber
-     */
-    public function setHexSerialNumber($hexSerialNumber)
+namespace Google\Service\CertificateAuthorityService {
+    class SubjectDescription extends \Google\Model
     {
+        /**
+         * The serial number encoded in lowercase hexadecimal.
+         *
+         * @var string
+         */
+        public $hexSerialNumber;
+        /**
+         * For convenience, the actual lifetime of an issued certificate.
+         *
+         * @var string
+         */
+        public $lifetime;
+        /**
+         * The time after which the certificate is expired. Per RFC 5280, the validity
+         * period for a certificate is the period of time from not_before_time through
+         * not_after_time, inclusive. Corresponds to 'not_before_time' + 'lifetime' -
+         * 1 second.
+         *
+         * @var string
+         */
+        public $notAfterTime;
+        /**
+         * The time at which the certificate becomes valid.
+         *
+         * @var string
+         */
+        public $notBeforeTime;
+        protected $subjectType = Subject::class;
+        protected $subjectDataType = '';
+        protected $subjectAltNameType = SubjectAltNames::class;
+        protected $subjectAltNameDataType = '';
+        /**
+         * The serial number encoded in lowercase hexadecimal.
+         *
+         * @param string $hexSerialNumber
+         */
+        public function setHexSerialNumber($hexSerialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHexSerialNumber()
+        {
+        }
+        /**
+         * For convenience, the actual lifetime of an issued certificate.
+         *
+         * @param string $lifetime
+         */
+        public function setLifetime($lifetime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLifetime()
+        {
+        }
+        /**
+         * The time after which the certificate is expired. Per RFC 5280, the validity
+         * period for a certificate is the period of time from not_before_time through
+         * not_after_time, inclusive. Corresponds to 'not_before_time' + 'lifetime' -
+         * 1 second.
+         *
+         * @param string $notAfterTime
+         */
+        public function setNotAfterTime($notAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotAfterTime()
+        {
+        }
+        /**
+         * The time at which the certificate becomes valid.
+         *
+         * @param string $notBeforeTime
+         */
+        public function setNotBeforeTime($notBeforeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotBeforeTime()
+        {
+        }
+        /**
+         * Contains distinguished name fields such as the common name, location and /
+         * organization.
+         *
+         * @param Subject $subject
+         */
+        public function setSubject(Subject $subject)
+        {
+        }
+        /**
+         * @return Subject
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * The subject alternative name fields.
+         *
+         * @param SubjectAltNames $subjectAltName
+         */
+        public function setSubjectAltName(SubjectAltNames $subjectAltName)
+        {
+        }
+        /**
+         * @return SubjectAltNames
+         */
+        public function getSubjectAltName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\SubjectDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHexSerialNumber()
-    {
-    }
-    /**
-     * For convenience, the actual lifetime of an issued certificate.
-     *
-     * @param string $lifetime
-     */
-    public function setLifetime($lifetime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLifetime()
-    {
-    }
-    /**
-     * The time after which the certificate is expired. Per RFC 5280, the validity
-     * period for a certificate is the period of time from not_before_time through
-     * not_after_time, inclusive. Corresponds to 'not_before_time' + 'lifetime' -
-     * 1 second.
-     *
-     * @param string $notAfterTime
-     */
-    public function setNotAfterTime($notAfterTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotAfterTime()
-    {
-    }
-    /**
-     * The time at which the certificate becomes valid.
-     *
-     * @param string $notBeforeTime
-     */
-    public function setNotBeforeTime($notBeforeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotBeforeTime()
-    {
-    }
-    /**
-     * Contains distinguished name fields such as the common name, location and /
-     * organization.
-     *
-     * @param Subject $subject
-     */
-    public function setSubject(Subject $subject)
-    {
-    }
-    /**
-     * @return Subject
-     */
-    public function getSubject()
-    {
-    }
-    /**
-     * The subject alternative name fields.
-     *
-     * @param SubjectAltNames $subjectAltName
-     */
-    public function setSubjectAltName(SubjectAltNames $subjectAltName)
-    {
-    }
-    /**
-     * @return SubjectAltNames
-     */
-    public function getSubjectAltName()
+    class Google_Service_CertificateAuthorityService_SubjectDescription extends \Google\Service\CertificateAuthorityService\SubjectDescription
     {
     }
 }

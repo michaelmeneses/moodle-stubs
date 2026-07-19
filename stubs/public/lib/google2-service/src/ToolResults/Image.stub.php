@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Image extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    protected $sourceImageType = ToolOutputReference::class;
-    protected $sourceImageDataType = '';
-    /**
-     * The step to which the image is attached. Always set.
-     *
-     * @var string
-     */
-    public $stepId;
-    protected $thumbnailType = Thumbnail::class;
-    protected $thumbnailDataType = '';
-    /**
-     * An error explaining why the thumbnail could not be rendered.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\ToolResults {
+    class Image extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        protected $sourceImageType = ToolOutputReference::class;
+        protected $sourceImageDataType = '';
+        /**
+         * The step to which the image is attached. Always set.
+         *
+         * @var string
+         */
+        public $stepId;
+        protected $thumbnailType = Thumbnail::class;
+        protected $thumbnailDataType = '';
+        /**
+         * An error explaining why the thumbnail could not be rendered.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * A reference to the full-size, original image. This is the same as the
+         * tool_outputs entry for the image under its Step. Always set.
+         *
+         * @param ToolOutputReference $sourceImage
+         */
+        public function setSourceImage(ToolOutputReference $sourceImage)
+        {
+        }
+        /**
+         * @return ToolOutputReference
+         */
+        public function getSourceImage()
+        {
+        }
+        /**
+         * The step to which the image is attached. Always set.
+         *
+         * @param string $stepId
+         */
+        public function setStepId($stepId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStepId()
+        {
+        }
+        /**
+         * The thumbnail.
+         *
+         * @param Thumbnail $thumbnail
+         */
+        public function setThumbnail(Thumbnail $thumbnail)
+        {
+        }
+        /**
+         * @return Thumbnail
+         */
+        public function getThumbnail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\ToolResults\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * A reference to the full-size, original image. This is the same as the
-     * tool_outputs entry for the image under its Step. Always set.
-     *
-     * @param ToolOutputReference $sourceImage
-     */
-    public function setSourceImage(ToolOutputReference $sourceImage)
-    {
-    }
-    /**
-     * @return ToolOutputReference
-     */
-    public function getSourceImage()
-    {
-    }
-    /**
-     * The step to which the image is attached. Always set.
-     *
-     * @param string $stepId
-     */
-    public function setStepId($stepId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStepId()
-    {
-    }
-    /**
-     * The thumbnail.
-     *
-     * @param Thumbnail $thumbnail
-     */
-    public function setThumbnail(Thumbnail $thumbnail)
-    {
-    }
-    /**
-     * @return Thumbnail
-     */
-    public function getThumbnail()
+    class Google_Service_ToolResults_Image extends \Google\Service\ToolResults\Image
     {
     }
 }

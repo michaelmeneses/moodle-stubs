@@ -21,175 +21,184 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class Profiles extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Profile::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The maximum number of resources the response can contain, regardless of the
-     * actual number of resources returned. Its value ranges from 1 to 1000 with a
-     * value of 1000 by default, or otherwise specified by the max-results query
-     * parameter.
-     *
-     * @var int
-     */
-    public $itemsPerPage;
-    /**
-     * Collection type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Link to next page for this view (profile) collection.
-     *
-     * @var string
-     */
-    public $nextLink;
-    /**
-     * Link to previous page for this view (profile) collection.
-     *
-     * @var string
-     */
-    public $previousLink;
-    /**
-     * The starting index of the resources, which is 1 by default or otherwise
-     * specified by the start-index query parameter.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The total number of results for the query, regardless of the number of
-     * results in the response.
-     *
-     * @var int
-     */
-    public $totalResults;
-    /**
-     * Email ID of the authenticated user
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * A list of views (profiles).
-     *
-     * @param Profile[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Analytics {
+    class Profiles extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Profile::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The maximum number of resources the response can contain, regardless of the
+         * actual number of resources returned. Its value ranges from 1 to 1000 with a
+         * value of 1000 by default, or otherwise specified by the max-results query
+         * parameter.
+         *
+         * @var int
+         */
+        public $itemsPerPage;
+        /**
+         * Collection type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Link to next page for this view (profile) collection.
+         *
+         * @var string
+         */
+        public $nextLink;
+        /**
+         * Link to previous page for this view (profile) collection.
+         *
+         * @var string
+         */
+        public $previousLink;
+        /**
+         * The starting index of the resources, which is 1 by default or otherwise
+         * specified by the start-index query parameter.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The total number of results for the query, regardless of the number of
+         * results in the response.
+         *
+         * @var int
+         */
+        public $totalResults;
+        /**
+         * Email ID of the authenticated user
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * A list of views (profiles).
+         *
+         * @param Profile[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Profile[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The maximum number of resources the response can contain, regardless of the
+         * actual number of resources returned. Its value ranges from 1 to 1000 with a
+         * value of 1000 by default, or otherwise specified by the max-results query
+         * parameter.
+         *
+         * @param int $itemsPerPage
+         */
+        public function setItemsPerPage($itemsPerPage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getItemsPerPage()
+        {
+        }
+        /**
+         * Collection type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Link to next page for this view (profile) collection.
+         *
+         * @param string $nextLink
+         */
+        public function setNextLink($nextLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextLink()
+        {
+        }
+        /**
+         * Link to previous page for this view (profile) collection.
+         *
+         * @param string $previousLink
+         */
+        public function setPreviousLink($previousLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousLink()
+        {
+        }
+        /**
+         * The starting index of the resources, which is 1 by default or otherwise
+         * specified by the start-index query parameter.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The total number of results for the query, regardless of the number of
+         * results in the response.
+         *
+         * @param int $totalResults
+         */
+        public function setTotalResults($totalResults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalResults()
+        {
+        }
+        /**
+         * Email ID of the authenticated user
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Profile[]
+     * Runtime class alias of \Google\Service\Analytics\Profiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The maximum number of resources the response can contain, regardless of the
-     * actual number of resources returned. Its value ranges from 1 to 1000 with a
-     * value of 1000 by default, or otherwise specified by the max-results query
-     * parameter.
-     *
-     * @param int $itemsPerPage
-     */
-    public function setItemsPerPage($itemsPerPage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getItemsPerPage()
-    {
-    }
-    /**
-     * Collection type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Link to next page for this view (profile) collection.
-     *
-     * @param string $nextLink
-     */
-    public function setNextLink($nextLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextLink()
-    {
-    }
-    /**
-     * Link to previous page for this view (profile) collection.
-     *
-     * @param string $previousLink
-     */
-    public function setPreviousLink($previousLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousLink()
-    {
-    }
-    /**
-     * The starting index of the resources, which is 1 by default or otherwise
-     * specified by the start-index query parameter.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The total number of results for the query, regardless of the number of
-     * results in the response.
-     *
-     * @param int $totalResults
-     */
-    public function setTotalResults($totalResults)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalResults()
-    {
-    }
-    /**
-     * Email ID of the authenticated user
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Analytics_Profiles extends \Google\Service\Analytics\Profiles
     {
     }
 }

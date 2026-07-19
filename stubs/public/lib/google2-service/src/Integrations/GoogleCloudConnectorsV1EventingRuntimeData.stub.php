@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1EventingRuntimeData extends \Google\Model
-{
-    /**
-     * Output only. Events listener endpoint. The value will populated after
-     * provisioning the events listener.
-     *
-     * @var string
-     */
-    public $eventsListenerEndpoint;
-    /**
-     * Output only. Events listener PSC Service attachment. The value will be
-     * populated after provisioning the events listener with private connectivity
-     * enabled.
-     *
-     * @var string
-     */
-    public $eventsListenerPscSa;
-    protected $statusType = GoogleCloudConnectorsV1EventingStatus::class;
-    protected $statusDataType = '';
-    protected $webhookDataType = GoogleCloudConnectorsV1EventingRuntimeDataWebhookData::class;
-    protected $webhookDataDataType = '';
-    protected $webhookSubscriptionsType = GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions::class;
-    protected $webhookSubscriptionsDataType = '';
-    /**
-     * Output only. Events listener endpoint. The value will populated after
-     * provisioning the events listener.
-     *
-     * @param string $eventsListenerEndpoint
-     */
-    public function setEventsListenerEndpoint($eventsListenerEndpoint)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1EventingRuntimeData extends \Google\Model
     {
+        /**
+         * Output only. Events listener endpoint. The value will populated after
+         * provisioning the events listener.
+         *
+         * @var string
+         */
+        public $eventsListenerEndpoint;
+        /**
+         * Output only. Events listener PSC Service attachment. The value will be
+         * populated after provisioning the events listener with private connectivity
+         * enabled.
+         *
+         * @var string
+         */
+        public $eventsListenerPscSa;
+        protected $statusType = GoogleCloudConnectorsV1EventingStatus::class;
+        protected $statusDataType = '';
+        protected $webhookDataType = GoogleCloudConnectorsV1EventingRuntimeDataWebhookData::class;
+        protected $webhookDataDataType = '';
+        protected $webhookSubscriptionsType = GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions::class;
+        protected $webhookSubscriptionsDataType = '';
+        /**
+         * Output only. Events listener endpoint. The value will populated after
+         * provisioning the events listener.
+         *
+         * @param string $eventsListenerEndpoint
+         */
+        public function setEventsListenerEndpoint($eventsListenerEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventsListenerEndpoint()
+        {
+        }
+        /**
+         * Output only. Events listener PSC Service attachment. The value will be
+         * populated after provisioning the events listener with private connectivity
+         * enabled.
+         *
+         * @param string $eventsListenerPscSa
+         */
+        public function setEventsListenerPscSa($eventsListenerPscSa)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventsListenerPscSa()
+        {
+        }
+        /**
+         * Output only. Current status of eventing.
+         *
+         * @param GoogleCloudConnectorsV1EventingStatus $status
+         */
+        public function setStatus(GoogleCloudConnectorsV1EventingStatus $status)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1EventingStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. Webhook data.
+         *
+         * @param GoogleCloudConnectorsV1EventingRuntimeDataWebhookData $webhookData
+         */
+        public function setWebhookData(GoogleCloudConnectorsV1EventingRuntimeDataWebhookData $webhookData)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1EventingRuntimeDataWebhookData
+         */
+        public function getWebhookData()
+        {
+        }
+        /**
+         * Output only. Webhook subscriptions.
+         *
+         * @param GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions $webhookSubscriptions
+         */
+        public function setWebhookSubscriptions(GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions $webhookSubscriptions)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions
+         */
+        public function getWebhookSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1EventingRuntimeData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventsListenerEndpoint()
-    {
-    }
-    /**
-     * Output only. Events listener PSC Service attachment. The value will be
-     * populated after provisioning the events listener with private connectivity
-     * enabled.
-     *
-     * @param string $eventsListenerPscSa
-     */
-    public function setEventsListenerPscSa($eventsListenerPscSa)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventsListenerPscSa()
-    {
-    }
-    /**
-     * Output only. Current status of eventing.
-     *
-     * @param GoogleCloudConnectorsV1EventingStatus $status
-     */
-    public function setStatus(GoogleCloudConnectorsV1EventingStatus $status)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1EventingStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. Webhook data.
-     *
-     * @param GoogleCloudConnectorsV1EventingRuntimeDataWebhookData $webhookData
-     */
-    public function setWebhookData(GoogleCloudConnectorsV1EventingRuntimeDataWebhookData $webhookData)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1EventingRuntimeDataWebhookData
-     */
-    public function getWebhookData()
-    {
-    }
-    /**
-     * Output only. Webhook subscriptions.
-     *
-     * @param GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions $webhookSubscriptions
-     */
-    public function setWebhookSubscriptions(GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions $webhookSubscriptions)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions
-     */
-    public function getWebhookSubscriptions()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1EventingRuntimeData extends \Google\Service\Integrations\GoogleCloudConnectorsV1EventingRuntimeData
     {
     }
 }

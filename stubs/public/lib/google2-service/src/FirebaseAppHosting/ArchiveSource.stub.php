@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class ArchiveSource extends \Google\Model
-{
-    protected $authorType = SourceUserMetadata::class;
-    protected $authorDataType = '';
-    /**
-     * Optional. An optional message that describes the uploaded version of the
-     * source code.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Signed URL to an archive in a storage bucket.
-     *
-     * @var string
-     */
-    public $externalSignedUri;
-    /**
-     * Optional. Relative path in the archive.
-     *
-     * @var string
-     */
-    public $rootDirectory;
-    /**
-     * URI to an archive in Cloud Storage. The object must be a zipped (.zip) or
-     * gzipped archive file (.tar.gz) containing source to deploy.
-     *
-     * @var string
-     */
-    public $userStorageUri;
-    /**
-     * Optional. The author contained in the metadata of a version control change.
-     *
-     * @param SourceUserMetadata $author
-     */
-    public function setAuthor(SourceUserMetadata $author)
+namespace Google\Service\FirebaseAppHosting {
+    class ArchiveSource extends \Google\Model
     {
+        protected $authorType = SourceUserMetadata::class;
+        protected $authorDataType = '';
+        /**
+         * Optional. An optional message that describes the uploaded version of the
+         * source code.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Signed URL to an archive in a storage bucket.
+         *
+         * @var string
+         */
+        public $externalSignedUri;
+        /**
+         * Optional. Relative path in the archive.
+         *
+         * @var string
+         */
+        public $rootDirectory;
+        /**
+         * URI to an archive in Cloud Storage. The object must be a zipped (.zip) or
+         * gzipped archive file (.tar.gz) containing source to deploy.
+         *
+         * @var string
+         */
+        public $userStorageUri;
+        /**
+         * Optional. The author contained in the metadata of a version control change.
+         *
+         * @param SourceUserMetadata $author
+         */
+        public function setAuthor(SourceUserMetadata $author)
+        {
+        }
+        /**
+         * @return SourceUserMetadata
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Optional. An optional message that describes the uploaded version of the
+         * source code.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Signed URL to an archive in a storage bucket.
+         *
+         * @param string $externalSignedUri
+         */
+        public function setExternalSignedUri($externalSignedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalSignedUri()
+        {
+        }
+        /**
+         * Optional. Relative path in the archive.
+         *
+         * @param string $rootDirectory
+         */
+        public function setRootDirectory($rootDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRootDirectory()
+        {
+        }
+        /**
+         * URI to an archive in Cloud Storage. The object must be a zipped (.zip) or
+         * gzipped archive file (.tar.gz) containing source to deploy.
+         *
+         * @param string $userStorageUri
+         */
+        public function setUserStorageUri($userStorageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserStorageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceUserMetadata
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\ArchiveSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Optional. An optional message that describes the uploaded version of the
-     * source code.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Signed URL to an archive in a storage bucket.
-     *
-     * @param string $externalSignedUri
-     */
-    public function setExternalSignedUri($externalSignedUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalSignedUri()
-    {
-    }
-    /**
-     * Optional. Relative path in the archive.
-     *
-     * @param string $rootDirectory
-     */
-    public function setRootDirectory($rootDirectory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRootDirectory()
-    {
-    }
-    /**
-     * URI to an archive in Cloud Storage. The object must be a zipped (.zip) or
-     * gzipped archive file (.tar.gz) containing source to deploy.
-     *
-     * @param string $userStorageUri
-     */
-    public function setUserStorageUri($userStorageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserStorageUri()
+    class Google_Service_FirebaseAppHosting_ArchiveSource extends \Google\Service\FirebaseAppHosting\ArchiveSource
     {
     }
 }

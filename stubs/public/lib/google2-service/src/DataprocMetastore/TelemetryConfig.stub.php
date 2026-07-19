@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class TelemetryConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $logFormat;
-    /**
-     * @param string
-     */
-    public function setLogFormat($logFormat)
+namespace Google\Service\DataprocMetastore {
+    class TelemetryConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $logFormat;
+        /**
+         * @param string
+         */
+        public function setLogFormat($logFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\TelemetryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogFormat()
+    class Google_Service_DataprocMetastore_TelemetryConfig extends \Google\Service\DataprocMetastore\TelemetryConfig
     {
     }
 }

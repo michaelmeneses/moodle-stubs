@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Operation extends \Google\Model
-{
-    /**
-     * This field indicates whether the script execution has completed. A
-     * completed execution has a populated `response` field containing the
-     * ExecutionResponse from function that was executed.
-     *
-     * @var bool
-     */
-    public $done;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * If the script function returns successfully, this field contains an
-     * ExecutionResponse object with the function's return value.
-     *
-     * @var array[]
-     */
-    public $response;
-    /**
-     * This field indicates whether the script execution has completed. A
-     * completed execution has a populated `response` field containing the
-     * ExecutionResponse from function that was executed.
-     *
-     * @param bool $done
-     */
-    public function setDone($done)
+namespace Google\Service\Script {
+    class Operation extends \Google\Model
     {
+        /**
+         * This field indicates whether the script execution has completed. A
+         * completed execution has a populated `response` field containing the
+         * ExecutionResponse from function that was executed.
+         *
+         * @var bool
+         */
+        public $done;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * If the script function returns successfully, this field contains an
+         * ExecutionResponse object with the function's return value.
+         *
+         * @var array[]
+         */
+        public $response;
+        /**
+         * This field indicates whether the script execution has completed. A
+         * completed execution has a populated `response` field containing the
+         * ExecutionResponse from function that was executed.
+         *
+         * @param bool $done
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * If a `run` call succeeds but the script function (or Apps Script itself)
+         * throws an exception, this field contains a Status object. The `Status`
+         * object's `details` field contains an array with a single ExecutionError
+         * object that provides information about the nature of the error.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * If the script function returns successfully, this field contains an
+         * ExecutionResponse object with the function's return value.
+         *
+         * @param array[] $response
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Script\Operation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * If a `run` call succeeds but the script function (or Apps Script itself)
-     * throws an exception, this field contains a Status object. The `Status`
-     * object's `details` field contains an array with a single ExecutionError
-     * object that provides information about the nature of the error.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * If the script function returns successfully, this field contains an
-     * ExecutionResponse object with the function's return value.
-     *
-     * @param array[] $response
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResponse()
+    class Google_Service_Script_Operation extends \Google\Service\Script\Operation
     {
     }
 }

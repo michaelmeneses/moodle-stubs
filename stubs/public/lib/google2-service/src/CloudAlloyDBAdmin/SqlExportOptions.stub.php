@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class SqlExportOptions extends \Google\Collection
-{
-    protected $collection_key = 'tables';
-    /**
-     * Optional. If true, output commands to DROP all the dumped database objects
-     * prior to outputting the commands for creating them.
-     *
-     * @var bool
-     */
-    public $cleanTargetObjects;
-    /**
-     * Optional. If true, use DROP ... IF EXISTS commands to check for the
-     * object's existence before dropping it in clean_target_objects mode.
-     *
-     * @var bool
-     */
-    public $ifExistTargetObjects;
-    /**
-     * Optional. If true, only export the schema.
-     *
-     * @var bool
-     */
-    public $schemaOnly;
-    /**
-     * Optional. Tables to export from.
-     *
-     * @var string[]
-     */
-    public $tables;
-    /**
-     * Optional. If true, output commands to DROP all the dumped database objects
-     * prior to outputting the commands for creating them.
-     *
-     * @param bool $cleanTargetObjects
-     */
-    public function setCleanTargetObjects($cleanTargetObjects)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class SqlExportOptions extends \Google\Collection
     {
+        protected $collection_key = 'tables';
+        /**
+         * Optional. If true, output commands to DROP all the dumped database objects
+         * prior to outputting the commands for creating them.
+         *
+         * @var bool
+         */
+        public $cleanTargetObjects;
+        /**
+         * Optional. If true, use DROP ... IF EXISTS commands to check for the
+         * object's existence before dropping it in clean_target_objects mode.
+         *
+         * @var bool
+         */
+        public $ifExistTargetObjects;
+        /**
+         * Optional. If true, only export the schema.
+         *
+         * @var bool
+         */
+        public $schemaOnly;
+        /**
+         * Optional. Tables to export from.
+         *
+         * @var string[]
+         */
+        public $tables;
+        /**
+         * Optional. If true, output commands to DROP all the dumped database objects
+         * prior to outputting the commands for creating them.
+         *
+         * @param bool $cleanTargetObjects
+         */
+        public function setCleanTargetObjects($cleanTargetObjects)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCleanTargetObjects()
+        {
+        }
+        /**
+         * Optional. If true, use DROP ... IF EXISTS commands to check for the
+         * object's existence before dropping it in clean_target_objects mode.
+         *
+         * @param bool $ifExistTargetObjects
+         */
+        public function setIfExistTargetObjects($ifExistTargetObjects)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIfExistTargetObjects()
+        {
+        }
+        /**
+         * Optional. If true, only export the schema.
+         *
+         * @param bool $schemaOnly
+         */
+        public function setSchemaOnly($schemaOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSchemaOnly()
+        {
+        }
+        /**
+         * Optional. Tables to export from.
+         *
+         * @param string[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\SqlExportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCleanTargetObjects()
-    {
-    }
-    /**
-     * Optional. If true, use DROP ... IF EXISTS commands to check for the
-     * object's existence before dropping it in clean_target_objects mode.
-     *
-     * @param bool $ifExistTargetObjects
-     */
-    public function setIfExistTargetObjects($ifExistTargetObjects)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIfExistTargetObjects()
-    {
-    }
-    /**
-     * Optional. If true, only export the schema.
-     *
-     * @param bool $schemaOnly
-     */
-    public function setSchemaOnly($schemaOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSchemaOnly()
-    {
-    }
-    /**
-     * Optional. Tables to export from.
-     *
-     * @param string[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTables()
+    class Google_Service_CloudAlloyDBAdmin_SqlExportOptions extends \Google\Service\CloudAlloyDBAdmin\SqlExportOptions
     {
     }
 }

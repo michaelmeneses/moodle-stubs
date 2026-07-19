@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class Accelerator extends \Google\Model
-{
-    /**
-     * Optional. Number of accelerator cards exposed to the instance.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * Optional. Type of accelerator resource to attach to the instance, for
-     * example, `"nvidia-tesla-p100"`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. Number of accelerator cards exposed to the instance.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudWorkstations {
+    class Accelerator extends \Google\Model
     {
+        /**
+         * Optional. Number of accelerator cards exposed to the instance.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * Optional. Type of accelerator resource to attach to the instance, for
+         * example, `"nvidia-tesla-p100"`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. Number of accelerator cards exposed to the instance.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Optional. Type of accelerator resource to attach to the instance, for
+         * example, `"nvidia-tesla-p100"`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudWorkstations\Accelerator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Optional. Type of accelerator resource to attach to the instance, for
-     * example, `"nvidia-tesla-p100"`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudWorkstations_Accelerator extends \Google\Service\CloudWorkstations\Accelerator
     {
     }
 }

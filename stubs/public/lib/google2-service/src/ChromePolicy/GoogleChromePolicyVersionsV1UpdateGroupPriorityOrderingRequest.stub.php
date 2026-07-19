@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest extends \Google\Collection
-{
-    protected $collection_key = 'groupIds';
-    /**
-     * Required. The group IDs, in desired priority ordering.
-     *
-     * @var string[]
-     */
-    public $groupIds;
-    /**
-     * The namespace of the policy type for the request.
-     *
-     * @var string
-     */
-    public $policyNamespace;
-    /**
-     * The schema name of the policy for the request.
-     *
-     * @var string
-     */
-    public $policySchema;
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * Required. The group IDs, in desired priority ordering.
-     *
-     * @param string[] $groupIds
-     */
-    public function setGroupIds($groupIds)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest extends \Google\Collection
     {
+        protected $collection_key = 'groupIds';
+        /**
+         * Required. The group IDs, in desired priority ordering.
+         *
+         * @var string[]
+         */
+        public $groupIds;
+        /**
+         * The namespace of the policy type for the request.
+         *
+         * @var string
+         */
+        public $policyNamespace;
+        /**
+         * The schema name of the policy for the request.
+         *
+         * @var string
+         */
+        public $policySchema;
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * Required. The group IDs, in desired priority ordering.
+         *
+         * @param string[] $groupIds
+         */
+        public function setGroupIds($groupIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGroupIds()
+        {
+        }
+        /**
+         * The namespace of the policy type for the request.
+         *
+         * @param string $policyNamespace
+         */
+        public function setPolicyNamespace($policyNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyNamespace()
+        {
+        }
+        /**
+         * The schema name of the policy for the request.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * Required. The key of the target for which we want to update the group
+         * priority ordering. The target resource must point to an app.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupIds()
-    {
-    }
-    /**
-     * The namespace of the policy type for the request.
-     *
-     * @param string $policyNamespace
-     */
-    public function setPolicyNamespace($policyNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyNamespace()
-    {
-    }
-    /**
-     * The schema name of the policy for the request.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * Required. The key of the target for which we want to update the group
-     * priority ordering. The target resource must point to an app.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest
     {
     }
 }

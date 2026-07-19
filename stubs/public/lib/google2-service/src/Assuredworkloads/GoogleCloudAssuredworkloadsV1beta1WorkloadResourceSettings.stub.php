@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $resourceId;
-    /**
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $resourceId;
+        /**
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceId($resourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceId($resourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Variant extends \Google\Model
-{
-    protected $deviceSpecType = DeviceSpec::class;
-    protected $deviceSpecDataType = '';
-    protected $optionsType = SystemApkOptions::class;
-    protected $optionsDataType = '';
-    /**
-     * Output only. The ID of a previously created system APK variant.
-     *
-     * @var string
-     */
-    public $variantId;
-    /**
-     * The device spec used to generate the APK.
-     *
-     * @param DeviceSpec $deviceSpec
-     */
-    public function setDeviceSpec(DeviceSpec $deviceSpec)
+namespace Google\Service\AndroidPublisher {
+    class Variant extends \Google\Model
     {
+        protected $deviceSpecType = DeviceSpec::class;
+        protected $deviceSpecDataType = '';
+        protected $optionsType = SystemApkOptions::class;
+        protected $optionsDataType = '';
+        /**
+         * Output only. The ID of a previously created system APK variant.
+         *
+         * @var string
+         */
+        public $variantId;
+        /**
+         * The device spec used to generate the APK.
+         *
+         * @param DeviceSpec $deviceSpec
+         */
+        public function setDeviceSpec(DeviceSpec $deviceSpec)
+        {
+        }
+        /**
+         * @return DeviceSpec
+         */
+        public function getDeviceSpec()
+        {
+        }
+        /**
+         * Optional. Options applied to the generated APK.
+         *
+         * @param SystemApkOptions $options
+         */
+        public function setOptions(SystemApkOptions $options)
+        {
+        }
+        /**
+         * @return SystemApkOptions
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * Output only. The ID of a previously created system APK variant.
+         *
+         * @param string $variantId
+         */
+        public function setVariantId($variantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceSpec
+     * Runtime class alias of \Google\Service\AndroidPublisher\Variant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceSpec()
-    {
-    }
-    /**
-     * Optional. Options applied to the generated APK.
-     *
-     * @param SystemApkOptions $options
-     */
-    public function setOptions(SystemApkOptions $options)
-    {
-    }
-    /**
-     * @return SystemApkOptions
-     */
-    public function getOptions()
-    {
-    }
-    /**
-     * Output only. The ID of a previously created system APK variant.
-     *
-     * @param string $variantId
-     */
-    public function setVariantId($variantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariantId()
+    class Google_Service_AndroidPublisher_Variant extends \Google\Service\AndroidPublisher\Variant
     {
     }
 }

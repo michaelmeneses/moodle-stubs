@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class AnalyticsDetails extends \Google\Collection
-{
-    protected $collection_key = 'streamMappings';
-    protected $analyticsPropertyType = AnalyticsProperty::class;
-    protected $analyticsPropertyDataType = '';
-    protected $streamMappingsType = StreamMapping::class;
-    protected $streamMappingsDataType = 'array';
-    /**
-     * The Analytics Property object associated with the specified
-     * `FirebaseProject`. This object contains the details of the Google Analytics
-     * property associated with the Project.
-     *
-     * @param AnalyticsProperty $analyticsProperty
-     */
-    public function setAnalyticsProperty(AnalyticsProperty $analyticsProperty)
+namespace Google\Service\FirebaseManagement {
+    class AnalyticsDetails extends \Google\Collection
     {
+        protected $collection_key = 'streamMappings';
+        protected $analyticsPropertyType = AnalyticsProperty::class;
+        protected $analyticsPropertyDataType = '';
+        protected $streamMappingsType = StreamMapping::class;
+        protected $streamMappingsDataType = 'array';
+        /**
+         * The Analytics Property object associated with the specified
+         * `FirebaseProject`. This object contains the details of the Google Analytics
+         * property associated with the Project.
+         *
+         * @param AnalyticsProperty $analyticsProperty
+         */
+        public function setAnalyticsProperty(AnalyticsProperty $analyticsProperty)
+        {
+        }
+        /**
+         * @return AnalyticsProperty
+         */
+        public function getAnalyticsProperty()
+        {
+        }
+        /**
+         * - For `AndroidApps` and `IosApps`: a map of `app` to `streamId` for each
+         * Firebase App in the specified `FirebaseProject`. Each `app` and `streamId`
+         * appears only once. - For `WebApps`: a map of `app` to `streamId` and
+         * `measurementId` for each `WebApp` in the specified `FirebaseProject`. Each
+         * `app`, `streamId`, and `measurementId` appears only once.
+         *
+         * @param StreamMapping[] $streamMappings
+         */
+        public function setStreamMappings($streamMappings)
+        {
+        }
+        /**
+         * @return StreamMapping[]
+         */
+        public function getStreamMappings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyticsProperty
+     * Runtime class alias of \Google\Service\FirebaseManagement\AnalyticsDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsProperty()
-    {
-    }
-    /**
-     * - For `AndroidApps` and `IosApps`: a map of `app` to `streamId` for each
-     * Firebase App in the specified `FirebaseProject`. Each `app` and `streamId`
-     * appears only once. - For `WebApps`: a map of `app` to `streamId` and
-     * `measurementId` for each `WebApp` in the specified `FirebaseProject`. Each
-     * `app`, `streamId`, and `measurementId` appears only once.
-     *
-     * @param StreamMapping[] $streamMappings
-     */
-    public function setStreamMappings($streamMappings)
-    {
-    }
-    /**
-     * @return StreamMapping[]
-     */
-    public function getStreamMappings()
+    class Google_Service_FirebaseManagement_AnalyticsDetails extends \Google\Service\FirebaseManagement\AnalyticsDetails
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResult extends \Google\Model
-{
-    protected $additionalFilterType = GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter::class;
-    protected $additionalFilterDataType = '';
-    protected $followupQuestionType = GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion::class;
-    protected $followupQuestionDataType = '';
-    /**
-     * This is the incremental additional filters implied from the current user
-     * answer. User should add the suggested addition filters to the previous
-     * ConversationalSearchRequest.search_params.filter and SearchRequest.filter,
-     * and use the merged filter in the follow up requests.
-     *
-     * @param GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter $additionalFilter
-     */
-    public function setAdditionalFilter(GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter $additionalFilter)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResult extends \Google\Model
     {
+        protected $additionalFilterType = GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter::class;
+        protected $additionalFilterDataType = '';
+        protected $followupQuestionType = GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion::class;
+        protected $followupQuestionDataType = '';
+        /**
+         * This is the incremental additional filters implied from the current user
+         * answer. User should add the suggested addition filters to the previous
+         * ConversationalSearchRequest.search_params.filter and SearchRequest.filter,
+         * and use the merged filter in the follow up requests.
+         *
+         * @param GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter $additionalFilter
+         */
+        public function setAdditionalFilter(GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter $additionalFilter)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter
+         */
+        public function getAdditionalFilter()
+        {
+        }
+        /**
+         * The conversational filtering question.
+         *
+         * @param GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion $followupQuestion
+         */
+        public function setFollowupQuestion(GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion $followupQuestion)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion
+         */
+        public function getFollowupQuestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalFilter()
-    {
-    }
-    /**
-     * The conversational filtering question.
-     *
-     * @param GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion $followupQuestion
-     */
-    public function setFollowupQuestion(GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion $followupQuestion)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion
-     */
-    public function getFollowupQuestion()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResult
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListDatastoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $datastoresType = Datastore::class;
-    protected $datastoresDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of Datastores.
-     *
-     * @param Datastore[] $datastores
-     */
-    public function setDatastores($datastores)
+namespace Google\Service\VMwareEngine {
+    class ListDatastoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $datastoresType = Datastore::class;
+        protected $datastoresDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of Datastores.
+         *
+         * @param Datastore[] $datastores
+         */
+        public function setDatastores($datastores)
+        {
+        }
+        /**
+         * @return Datastore[]
+         */
+        public function getDatastores()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Datastore[]
+     * Runtime class alias of \Google\Service\VMwareEngine\ListDatastoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatastores()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_VMwareEngine_ListDatastoresResponse extends \Google\Service\VMwareEngine\ListDatastoresResponse
     {
     }
 }

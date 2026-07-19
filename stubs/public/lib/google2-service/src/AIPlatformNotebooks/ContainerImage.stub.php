@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ContainerImage extends \Google\Model
-{
-    /**
-     * Required. The path to the container image repository. For example:
-     * `gcr.io/{project_id}/{image_name}`
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * Optional. The tag of the container image. If not specified, this defaults
-     * to the latest tag.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Required. The path to the container image repository. For example:
-     * `gcr.io/{project_id}/{image_name}`
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
+namespace Google\Service\AIPlatformNotebooks {
+    class ContainerImage extends \Google\Model
     {
+        /**
+         * Required. The path to the container image repository. For example:
+         * `gcr.io/{project_id}/{image_name}`
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * Optional. The tag of the container image. If not specified, this defaults
+         * to the latest tag.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Required. The path to the container image repository. For example:
+         * `gcr.io/{project_id}/{image_name}`
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * Optional. The tag of the container image. If not specified, this defaults
+         * to the latest tag.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ContainerImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRepository()
-    {
-    }
-    /**
-     * Optional. The tag of the container image. If not specified, this defaults
-     * to the latest tag.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_AIPlatformNotebooks_ContainerImage extends \Google\Service\AIPlatformNotebooks\ContainerImage
     {
     }
 }

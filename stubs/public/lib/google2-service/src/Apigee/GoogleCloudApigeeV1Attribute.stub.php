@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Attribute extends \Google\Model
-{
-    /**
-     * API key of the attribute.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Value of the attribute.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * API key of the attribute.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Attribute extends \Google\Model
     {
+        /**
+         * API key of the attribute.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Value of the attribute.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * API key of the attribute.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value of the attribute.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Attribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Value of the attribute.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Attribute extends \Google\Service\Apigee\GoogleCloudApigeeV1Attribute
     {
     }
 }

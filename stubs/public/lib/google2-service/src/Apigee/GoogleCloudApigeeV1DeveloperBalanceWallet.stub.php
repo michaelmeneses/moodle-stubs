@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeveloperBalanceWallet extends \Google\Model
-{
-    protected $balanceType = GoogleTypeMoney::class;
-    protected $balanceDataType = '';
-    /**
-     * Output only. Time at which the developer last added credit to the account
-     * in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $lastCreditTime;
-    /**
-     * Current remaining balance of the developer for a particular currency.
-     *
-     * @param GoogleTypeMoney $balance
-     */
-    public function setBalance(GoogleTypeMoney $balance)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeveloperBalanceWallet extends \Google\Model
     {
+        protected $balanceType = GoogleTypeMoney::class;
+        protected $balanceDataType = '';
+        /**
+         * Output only. Time at which the developer last added credit to the account
+         * in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $lastCreditTime;
+        /**
+         * Current remaining balance of the developer for a particular currency.
+         *
+         * @param GoogleTypeMoney $balance
+         */
+        public function setBalance(GoogleTypeMoney $balance)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getBalance()
+        {
+        }
+        /**
+         * Output only. Time at which the developer last added credit to the account
+         * in milliseconds since epoch.
+         *
+         * @param string $lastCreditTime
+         */
+        public function setLastCreditTime($lastCreditTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastCreditTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeMoney
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalanceWallet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBalance()
-    {
-    }
-    /**
-     * Output only. Time at which the developer last added credit to the account
-     * in milliseconds since epoch.
-     *
-     * @param string $lastCreditTime
-     */
-    public function setLastCreditTime($lastCreditTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastCreditTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeveloperBalanceWallet extends \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperBalanceWallet
     {
     }
 }

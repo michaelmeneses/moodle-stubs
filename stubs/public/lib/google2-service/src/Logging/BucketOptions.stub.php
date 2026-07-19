@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class BucketOptions extends \Google\Model
-{
-    protected $explicitBucketsType = Explicit::class;
-    protected $explicitBucketsDataType = '';
-    protected $exponentialBucketsType = Exponential::class;
-    protected $exponentialBucketsDataType = '';
-    protected $linearBucketsType = Linear::class;
-    protected $linearBucketsDataType = '';
-    /**
-     * The explicit buckets.
-     *
-     * @param Explicit $explicitBuckets
-     */
-    public function setExplicitBuckets(Explicit $explicitBuckets)
+namespace Google\Service\Logging {
+    class BucketOptions extends \Google\Model
     {
+        protected $explicitBucketsType = Explicit::class;
+        protected $explicitBucketsDataType = '';
+        protected $exponentialBucketsType = Exponential::class;
+        protected $exponentialBucketsDataType = '';
+        protected $linearBucketsType = Linear::class;
+        protected $linearBucketsDataType = '';
+        /**
+         * The explicit buckets.
+         *
+         * @param Explicit $explicitBuckets
+         */
+        public function setExplicitBuckets(Explicit $explicitBuckets)
+        {
+        }
+        /**
+         * @return Explicit
+         */
+        public function getExplicitBuckets()
+        {
+        }
+        /**
+         * The exponential buckets.
+         *
+         * @param Exponential $exponentialBuckets
+         */
+        public function setExponentialBuckets(Exponential $exponentialBuckets)
+        {
+        }
+        /**
+         * @return Exponential
+         */
+        public function getExponentialBuckets()
+        {
+        }
+        /**
+         * The linear bucket.
+         *
+         * @param Linear $linearBuckets
+         */
+        public function setLinearBuckets(Linear $linearBuckets)
+        {
+        }
+        /**
+         * @return Linear
+         */
+        public function getLinearBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Explicit
+     * Runtime class alias of \Google\Service\Logging\BucketOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplicitBuckets()
-    {
-    }
-    /**
-     * The exponential buckets.
-     *
-     * @param Exponential $exponentialBuckets
-     */
-    public function setExponentialBuckets(Exponential $exponentialBuckets)
-    {
-    }
-    /**
-     * @return Exponential
-     */
-    public function getExponentialBuckets()
-    {
-    }
-    /**
-     * The linear bucket.
-     *
-     * @param Linear $linearBuckets
-     */
-    public function setLinearBuckets(Linear $linearBuckets)
-    {
-    }
-    /**
-     * @return Linear
-     */
-    public function getLinearBuckets()
+    class Google_Service_Logging_BucketOptions extends \Google\Service\Logging\BucketOptions
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeFleetState extends \Google\Collection
-{
-    protected $collection_key = 'downstreamFleets';
-    /**
-     * @var string[]
-     */
-    public $downstreamFleets;
-    protected $gkeStateType = ClusterUpgradeGKEUpgradeFeatureState::class;
-    protected $gkeStateDataType = '';
-    protected $ignoredType = ClusterUpgradeIgnoredMembership::class;
-    protected $ignoredDataType = 'map';
-    /**
-     * @param string[]
-     */
-    public function setDownstreamFleets($downstreamFleets)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeFleetState extends \Google\Collection
     {
+        protected $collection_key = 'downstreamFleets';
+        /**
+         * @var string[]
+         */
+        public $downstreamFleets;
+        protected $gkeStateType = ClusterUpgradeGKEUpgradeFeatureState::class;
+        protected $gkeStateDataType = '';
+        protected $ignoredType = ClusterUpgradeIgnoredMembership::class;
+        protected $ignoredDataType = 'map';
+        /**
+         * @param string[]
+         */
+        public function setDownstreamFleets($downstreamFleets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDownstreamFleets()
+        {
+        }
+        /**
+         * @param ClusterUpgradeGKEUpgradeFeatureState
+         */
+        public function setGkeState(ClusterUpgradeGKEUpgradeFeatureState $gkeState)
+        {
+        }
+        /**
+         * @return ClusterUpgradeGKEUpgradeFeatureState
+         */
+        public function getGkeState()
+        {
+        }
+        /**
+         * @param ClusterUpgradeIgnoredMembership[]
+         */
+        public function setIgnored($ignored)
+        {
+        }
+        /**
+         * @return ClusterUpgradeIgnoredMembership[]
+         */
+        public function getIgnored()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeFleetState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownstreamFleets()
-    {
-    }
-    /**
-     * @param ClusterUpgradeGKEUpgradeFeatureState
-     */
-    public function setGkeState(ClusterUpgradeGKEUpgradeFeatureState $gkeState)
-    {
-    }
-    /**
-     * @return ClusterUpgradeGKEUpgradeFeatureState
-     */
-    public function getGkeState()
-    {
-    }
-    /**
-     * @param ClusterUpgradeIgnoredMembership[]
-     */
-    public function setIgnored($ignored)
-    {
-    }
-    /**
-     * @return ClusterUpgradeIgnoredMembership[]
-     */
-    public function getIgnored()
+    class Google_Service_GKEHub_ClusterUpgradeFleetState extends \Google\Service\GKEHub\ClusterUpgradeFleetState
     {
     }
 }

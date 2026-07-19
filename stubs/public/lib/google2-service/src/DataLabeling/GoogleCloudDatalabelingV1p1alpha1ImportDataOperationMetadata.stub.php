@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialFailures';
-    /**
-     * Output only. Timestamp when import dataset request was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The name of imported dataset. "projects/datasets"
-     *
-     * @var string
-     */
-    public $dataset;
-    protected $partialFailuresType = GoogleRpcStatus::class;
-    protected $partialFailuresDataType = 'array';
-    /**
-     * Output only. Timestamp when import dataset request was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialFailures';
+        /**
+         * Output only. Timestamp when import dataset request was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The name of imported dataset. "projects/datasets"
+         *
+         * @var string
+         */
+        public $dataset;
+        protected $partialFailuresType = GoogleRpcStatus::class;
+        protected $partialFailuresDataType = 'array';
+        /**
+         * Output only. Timestamp when import dataset request was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The name of imported dataset. "projects/datasets"
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Output only. Partial failures encountered. E.g. single files that couldn't
+         * be read. Status details field will contain standard GCP error details.
+         *
+         * @param GoogleRpcStatus[] $partialFailures
+         */
+        public function setPartialFailures($partialFailures)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialFailures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The name of imported dataset. "projects/datasets"
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataset()
-    {
-    }
-    /**
-     * Output only. Partial failures encountered. E.g. single files that couldn't
-     * be read. Status details field will contain standard GCP error details.
-     *
-     * @param GoogleRpcStatus[] $partialFailures
-     */
-    public function setPartialFailures($partialFailures)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialFailures()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata
     {
     }
 }

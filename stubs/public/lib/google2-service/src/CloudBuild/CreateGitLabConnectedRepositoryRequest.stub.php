@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class CreateGitLabConnectedRepositoryRequest extends \Google\Model
-{
-    protected $gitlabConnectedRepositoryType = GitLabConnectedRepository::class;
-    protected $gitlabConnectedRepositoryDataType = '';
-    /**
-     * @var string
-     */
-    public $parent;
-    /**
-     * @param GitLabConnectedRepository
-     */
-    public function setGitlabConnectedRepository(GitLabConnectedRepository $gitlabConnectedRepository)
+namespace Google\Service\CloudBuild {
+    class CreateGitLabConnectedRepositoryRequest extends \Google\Model
     {
+        protected $gitlabConnectedRepositoryType = GitLabConnectedRepository::class;
+        protected $gitlabConnectedRepositoryDataType = '';
+        /**
+         * @var string
+         */
+        public $parent;
+        /**
+         * @param GitLabConnectedRepository
+         */
+        public function setGitlabConnectedRepository(GitLabConnectedRepository $gitlabConnectedRepository)
+        {
+        }
+        /**
+         * @return GitLabConnectedRepository
+         */
+        public function getGitlabConnectedRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabConnectedRepository
+     * Runtime class alias of \Google\Service\CloudBuild\CreateGitLabConnectedRepositoryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitlabConnectedRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_CloudBuild_CreateGitLabConnectedRepositoryRequest extends \Google\Service\CloudBuild\CreateGitLabConnectedRepositoryRequest
     {
     }
 }

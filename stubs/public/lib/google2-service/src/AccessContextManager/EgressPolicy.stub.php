@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class EgressPolicy extends \Google\Model
-{
-    protected $egressFromType = EgressFrom::class;
-    protected $egressFromDataType = '';
-    protected $egressToType = EgressTo::class;
-    protected $egressToDataType = '';
-    /**
-     * Optional. Human-readable title for the egress rule. The title must be
-     * unique within the perimeter and can not exceed 100 characters. Within the
-     * access policy, the combined length of all rule titles must not exceed
-     * 240,000 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Defines conditions on the source of a request causing this EgressPolicy to
-     * apply.
-     *
-     * @param EgressFrom $egressFrom
-     */
-    public function setEgressFrom(EgressFrom $egressFrom)
+namespace Google\Service\AccessContextManager {
+    class EgressPolicy extends \Google\Model
     {
+        protected $egressFromType = EgressFrom::class;
+        protected $egressFromDataType = '';
+        protected $egressToType = EgressTo::class;
+        protected $egressToDataType = '';
+        /**
+         * Optional. Human-readable title for the egress rule. The title must be
+         * unique within the perimeter and can not exceed 100 characters. Within the
+         * access policy, the combined length of all rule titles must not exceed
+         * 240,000 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Defines conditions on the source of a request causing this EgressPolicy to
+         * apply.
+         *
+         * @param EgressFrom $egressFrom
+         */
+        public function setEgressFrom(EgressFrom $egressFrom)
+        {
+        }
+        /**
+         * @return EgressFrom
+         */
+        public function getEgressFrom()
+        {
+        }
+        /**
+         * Defines the conditions on the ApiOperation and destination resources that
+         * cause this EgressPolicy to apply.
+         *
+         * @param EgressTo $egressTo
+         */
+        public function setEgressTo(EgressTo $egressTo)
+        {
+        }
+        /**
+         * @return EgressTo
+         */
+        public function getEgressTo()
+        {
+        }
+        /**
+         * Optional. Human-readable title for the egress rule. The title must be
+         * unique within the perimeter and can not exceed 100 characters. Within the
+         * access policy, the combined length of all rule titles must not exceed
+         * 240,000 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EgressFrom
+     * Runtime class alias of \Google\Service\AccessContextManager\EgressPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressFrom()
-    {
-    }
-    /**
-     * Defines the conditions on the ApiOperation and destination resources that
-     * cause this EgressPolicy to apply.
-     *
-     * @param EgressTo $egressTo
-     */
-    public function setEgressTo(EgressTo $egressTo)
-    {
-    }
-    /**
-     * @return EgressTo
-     */
-    public function getEgressTo()
-    {
-    }
-    /**
-     * Optional. Human-readable title for the egress rule. The title must be
-     * unique within the perimeter and can not exceed 100 characters. Within the
-     * access policy, the combined length of all rule titles must not exceed
-     * 240,000 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AccessContextManager_EgressPolicy extends \Google\Service\AccessContextManager\EgressPolicy
     {
     }
 }

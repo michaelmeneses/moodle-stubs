@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Partition extends \Google\Model
-{
-    /**
-     * This token can be passed to `Read`, `StreamingRead`, `ExecuteSql`, or
-     * `ExecuteStreamingSql` requests to restrict the results to those identified
-     * by this partition token.
-     *
-     * @var string
-     */
-    public $partitionToken;
-    /**
-     * This token can be passed to `Read`, `StreamingRead`, `ExecuteSql`, or
-     * `ExecuteStreamingSql` requests to restrict the results to those identified
-     * by this partition token.
-     *
-     * @param string $partitionToken
-     */
-    public function setPartitionToken($partitionToken)
+namespace Google\Service\Spanner {
+    class Partition extends \Google\Model
     {
+        /**
+         * This token can be passed to `Read`, `StreamingRead`, `ExecuteSql`, or
+         * `ExecuteStreamingSql` requests to restrict the results to those identified
+         * by this partition token.
+         *
+         * @var string
+         */
+        public $partitionToken;
+        /**
+         * This token can be passed to `Read`, `StreamingRead`, `ExecuteSql`, or
+         * `ExecuteStreamingSql` requests to restrict the results to those identified
+         * by this partition token.
+         *
+         * @param string $partitionToken
+         */
+        public function setPartitionToken($partitionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartitionToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\Partition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitionToken()
+    class Google_Service_Spanner_Partition extends \Google\Service\Spanner\Partition
     {
     }
 }

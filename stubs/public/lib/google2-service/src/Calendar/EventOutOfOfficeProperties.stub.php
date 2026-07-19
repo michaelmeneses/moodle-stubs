@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventOutOfOfficeProperties extends \Google\Model
-{
-    /**
-     * Whether to decline meeting invitations which overlap Out of office events.
-     * Valid values are declineNone, meaning that no meeting invitations are
-     * declined; declineAllConflictingInvitations, meaning that all conflicting
-     * meeting invitations that conflict with the event are declined; and
-     * declineOnlyNewConflictingInvitations, meaning that only new conflicting
-     * meeting invitations which arrive while the Out of office event is present
-     * are to be declined.
-     *
-     * @var string
-     */
-    public $autoDeclineMode;
-    /**
-     * Response message to set if an existing event or new invitation is
-     * automatically declined by Calendar.
-     *
-     * @var string
-     */
-    public $declineMessage;
-    /**
-     * Whether to decline meeting invitations which overlap Out of office events.
-     * Valid values are declineNone, meaning that no meeting invitations are
-     * declined; declineAllConflictingInvitations, meaning that all conflicting
-     * meeting invitations that conflict with the event are declined; and
-     * declineOnlyNewConflictingInvitations, meaning that only new conflicting
-     * meeting invitations which arrive while the Out of office event is present
-     * are to be declined.
-     *
-     * @param string $autoDeclineMode
-     */
-    public function setAutoDeclineMode($autoDeclineMode)
+namespace Google\Service\Calendar {
+    class EventOutOfOfficeProperties extends \Google\Model
     {
+        /**
+         * Whether to decline meeting invitations which overlap Out of office events.
+         * Valid values are declineNone, meaning that no meeting invitations are
+         * declined; declineAllConflictingInvitations, meaning that all conflicting
+         * meeting invitations that conflict with the event are declined; and
+         * declineOnlyNewConflictingInvitations, meaning that only new conflicting
+         * meeting invitations which arrive while the Out of office event is present
+         * are to be declined.
+         *
+         * @var string
+         */
+        public $autoDeclineMode;
+        /**
+         * Response message to set if an existing event or new invitation is
+         * automatically declined by Calendar.
+         *
+         * @var string
+         */
+        public $declineMessage;
+        /**
+         * Whether to decline meeting invitations which overlap Out of office events.
+         * Valid values are declineNone, meaning that no meeting invitations are
+         * declined; declineAllConflictingInvitations, meaning that all conflicting
+         * meeting invitations that conflict with the event are declined; and
+         * declineOnlyNewConflictingInvitations, meaning that only new conflicting
+         * meeting invitations which arrive while the Out of office event is present
+         * are to be declined.
+         *
+         * @param string $autoDeclineMode
+         */
+        public function setAutoDeclineMode($autoDeclineMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoDeclineMode()
+        {
+        }
+        /**
+         * Response message to set if an existing event or new invitation is
+         * automatically declined by Calendar.
+         *
+         * @param string $declineMessage
+         */
+        public function setDeclineMessage($declineMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeclineMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventOutOfOfficeProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoDeclineMode()
-    {
-    }
-    /**
-     * Response message to set if an existing event or new invitation is
-     * automatically declined by Calendar.
-     *
-     * @param string $declineMessage
-     */
-    public function setDeclineMessage($declineMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeclineMessage()
+    class Google_Service_Calendar_EventOutOfOfficeProperties extends \Google\Service\Calendar\EventOutOfOfficeProperties
     {
     }
 }

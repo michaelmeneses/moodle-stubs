@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount extends \Google\Model
-{
-    /**
-     * Aggregation key.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Aggregation value.
-     *
-     * @var int
-     */
-    public $value;
-    /**
-     * Aggregation key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount extends \Google\Model
     {
+        /**
+         * Aggregation key.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Aggregation value.
+         *
+         * @var int
+         */
+        public $value;
+        /**
+         * Aggregation key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Aggregation value.
+         *
+         * @param int $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Aggregation value.
-     *
-     * @param int $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValue()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount
     {
     }
 }

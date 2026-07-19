@@ -16,6 +16,7 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\LogRecord;
 /**
  * Generates a context from a Closure if the Closure is the only value
  * in the context

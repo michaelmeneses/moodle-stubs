@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class UnwantedEventInterval extends \Google\Model
-{
-    /**
-     * Required. Duration of the event.
-     *
-     * @var int
-     */
-    public $durationMinutes;
-    protected $startTimeType = DateTime::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. Duration of the event.
-     *
-     * @param int $durationMinutes
-     */
-    public function setDurationMinutes($durationMinutes)
+namespace Google\Service\CCAIPlatform {
+    class UnwantedEventInterval extends \Google\Model
     {
+        /**
+         * Required. Duration of the event.
+         *
+         * @var int
+         */
+        public $durationMinutes;
+        protected $startTimeType = DateTime::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. Duration of the event.
+         *
+         * @param int $durationMinutes
+         */
+        public function setDurationMinutes($durationMinutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDurationMinutes()
+        {
+        }
+        /**
+         * Required. Start time of the event.
+         *
+         * @param DateTime $startTime
+         */
+        public function setStartTime(DateTime $startTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CCAIPlatform\UnwantedEventInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationMinutes()
-    {
-    }
-    /**
-     * Required. Start time of the event.
-     *
-     * @param DateTime $startTime
-     */
-    public function setStartTime(DateTime $startTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getStartTime()
+    class Google_Service_CCAIPlatform_UnwantedEventInterval extends \Google\Service\CCAIPlatform\UnwantedEventInterval
     {
     }
 }

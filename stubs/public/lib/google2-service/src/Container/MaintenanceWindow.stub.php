@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MaintenanceWindow extends \Google\Model
-{
-    protected $dailyMaintenanceWindowType = DailyMaintenanceWindow::class;
-    protected $dailyMaintenanceWindowDataType = '';
-    protected $maintenanceExclusionsType = TimeWindow::class;
-    protected $maintenanceExclusionsDataType = 'map';
-    protected $recurringWindowType = RecurringTimeWindow::class;
-    protected $recurringWindowDataType = '';
-    /**
-     * DailyMaintenanceWindow specifies a daily maintenance operation window.
-     *
-     * @param DailyMaintenanceWindow $dailyMaintenanceWindow
-     */
-    public function setDailyMaintenanceWindow(DailyMaintenanceWindow $dailyMaintenanceWindow)
+namespace Google\Service\Container {
+    class MaintenanceWindow extends \Google\Model
     {
+        protected $dailyMaintenanceWindowType = DailyMaintenanceWindow::class;
+        protected $dailyMaintenanceWindowDataType = '';
+        protected $maintenanceExclusionsType = TimeWindow::class;
+        protected $maintenanceExclusionsDataType = 'map';
+        protected $recurringWindowType = RecurringTimeWindow::class;
+        protected $recurringWindowDataType = '';
+        /**
+         * DailyMaintenanceWindow specifies a daily maintenance operation window.
+         *
+         * @param DailyMaintenanceWindow $dailyMaintenanceWindow
+         */
+        public function setDailyMaintenanceWindow(DailyMaintenanceWindow $dailyMaintenanceWindow)
+        {
+        }
+        /**
+         * @return DailyMaintenanceWindow
+         */
+        public function getDailyMaintenanceWindow()
+        {
+        }
+        /**
+         * Exceptions to maintenance window. Non-emergency maintenance should not
+         * occur in these windows.
+         *
+         * @param TimeWindow[] $maintenanceExclusions
+         */
+        public function setMaintenanceExclusions($maintenanceExclusions)
+        {
+        }
+        /**
+         * @return TimeWindow[]
+         */
+        public function getMaintenanceExclusions()
+        {
+        }
+        /**
+         * RecurringWindow specifies some number of recurring time periods for
+         * maintenance to occur. The time windows may be overlapping. If no
+         * maintenance windows are set, maintenance can occur at any time.
+         *
+         * @param RecurringTimeWindow $recurringWindow
+         */
+        public function setRecurringWindow(RecurringTimeWindow $recurringWindow)
+        {
+        }
+        /**
+         * @return RecurringTimeWindow
+         */
+        public function getRecurringWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyMaintenanceWindow
+     * Runtime class alias of \Google\Service\Container\MaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailyMaintenanceWindow()
-    {
-    }
-    /**
-     * Exceptions to maintenance window. Non-emergency maintenance should not
-     * occur in these windows.
-     *
-     * @param TimeWindow[] $maintenanceExclusions
-     */
-    public function setMaintenanceExclusions($maintenanceExclusions)
-    {
-    }
-    /**
-     * @return TimeWindow[]
-     */
-    public function getMaintenanceExclusions()
-    {
-    }
-    /**
-     * RecurringWindow specifies some number of recurring time periods for
-     * maintenance to occur. The time windows may be overlapping. If no
-     * maintenance windows are set, maintenance can occur at any time.
-     *
-     * @param RecurringTimeWindow $recurringWindow
-     */
-    public function setRecurringWindow(RecurringTimeWindow $recurringWindow)
-    {
-    }
-    /**
-     * @return RecurringTimeWindow
-     */
-    public function getRecurringWindow()
+    class Google_Service_Container_MaintenanceWindow extends \Google\Service\Container\MaintenanceWindow
     {
     }
 }

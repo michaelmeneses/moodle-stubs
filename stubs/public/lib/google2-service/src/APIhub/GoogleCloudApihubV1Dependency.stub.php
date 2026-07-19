@@ -21,224 +21,233 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Dependency extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const DISCOVERY_MODE_DISCOVERY_MODE_UNSPECIFIED = 'DISCOVERY_MODE_UNSPECIFIED';
-    /**
-     * Manual mode of discovery when the dependency is defined by the user.
-     */
-    public const DISCOVERY_MODE_MANUAL = 'MANUAL';
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Dependency will be in a proposed state when it is newly identified by the
-     * API hub on its own.
-     */
-    public const STATE_PROPOSED = 'PROPOSED';
-    /**
-     * Dependency will be in a validated state when it is validated by the admin
-     * or manually created in the API hub.
-     */
-    public const STATE_VALIDATED = 'VALIDATED';
-    protected $attributesType = GoogleCloudApihubV1AttributeValues::class;
-    protected $attributesDataType = 'map';
-    protected $consumerType = GoogleCloudApihubV1DependencyEntityReference::class;
-    protected $consumerDataType = '';
-    /**
-     * Output only. The time at which the dependency was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Human readable description corresponding of the dependency.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. Discovery mode of the dependency.
-     *
-     * @var string
-     */
-    public $discoveryMode;
-    protected $errorDetailType = GoogleCloudApihubV1DependencyErrorDetail::class;
-    protected $errorDetailDataType = '';
-    /**
-     * Identifier. The name of the dependency in the API Hub. Format:
-     * `projects/{project}/locations/{location}/dependencies/{dependency}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. State of the dependency.
-     *
-     * @var string
-     */
-    public $state;
-    protected $supplierType = GoogleCloudApihubV1DependencyEntityReference::class;
-    protected $supplierDataType = '';
-    /**
-     * Output only. The time at which the dependency was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The list of user defined attributes associated with the
-     * dependency resource. The key is the attribute name. It will be of the
-     * format: `projects/{project}/locations/{location}/attributes/{attribute}`.
-     * The value is the attribute values associated with the resource.
-     *
-     * @param GoogleCloudApihubV1AttributeValues[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Dependency extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const DISCOVERY_MODE_DISCOVERY_MODE_UNSPECIFIED = 'DISCOVERY_MODE_UNSPECIFIED';
+        /**
+         * Manual mode of discovery when the dependency is defined by the user.
+         */
+        public const DISCOVERY_MODE_MANUAL = 'MANUAL';
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Dependency will be in a proposed state when it is newly identified by the
+         * API hub on its own.
+         */
+        public const STATE_PROPOSED = 'PROPOSED';
+        /**
+         * Dependency will be in a validated state when it is validated by the admin
+         * or manually created in the API hub.
+         */
+        public const STATE_VALIDATED = 'VALIDATED';
+        protected $attributesType = GoogleCloudApihubV1AttributeValues::class;
+        protected $attributesDataType = 'map';
+        protected $consumerType = GoogleCloudApihubV1DependencyEntityReference::class;
+        protected $consumerDataType = '';
+        /**
+         * Output only. The time at which the dependency was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Human readable description corresponding of the dependency.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. Discovery mode of the dependency.
+         *
+         * @var string
+         */
+        public $discoveryMode;
+        protected $errorDetailType = GoogleCloudApihubV1DependencyErrorDetail::class;
+        protected $errorDetailDataType = '';
+        /**
+         * Identifier. The name of the dependency in the API Hub. Format:
+         * `projects/{project}/locations/{location}/dependencies/{dependency}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. State of the dependency.
+         *
+         * @var string
+         */
+        public $state;
+        protected $supplierType = GoogleCloudApihubV1DependencyEntityReference::class;
+        protected $supplierDataType = '';
+        /**
+         * Output only. The time at which the dependency was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The list of user defined attributes associated with the
+         * dependency resource. The key is the attribute name. It will be of the
+         * format: `projects/{project}/locations/{location}/attributes/{attribute}`.
+         * The value is the attribute values associated with the resource.
+         *
+         * @param GoogleCloudApihubV1AttributeValues[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AttributeValues[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Required. Immutable. The entity acting as the consumer in the dependency.
+         *
+         * @param GoogleCloudApihubV1DependencyEntityReference $consumer
+         */
+        public function setConsumer(GoogleCloudApihubV1DependencyEntityReference $consumer)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1DependencyEntityReference
+         */
+        public function getConsumer()
+        {
+        }
+        /**
+         * Output only. The time at which the dependency was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Human readable description corresponding of the dependency.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Discovery mode of the dependency.
+         *
+         * Accepted values: DISCOVERY_MODE_UNSPECIFIED, MANUAL
+         *
+         * @param self::DISCOVERY_MODE_* $discoveryMode
+         */
+        public function setDiscoveryMode($discoveryMode)
+        {
+        }
+        /**
+         * @return self::DISCOVERY_MODE_*
+         */
+        public function getDiscoveryMode()
+        {
+        }
+        /**
+         * Output only. Error details of a dependency if the system has detected it
+         * internally.
+         *
+         * @param GoogleCloudApihubV1DependencyErrorDetail $errorDetail
+         */
+        public function setErrorDetail(GoogleCloudApihubV1DependencyErrorDetail $errorDetail)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1DependencyErrorDetail
+         */
+        public function getErrorDetail()
+        {
+        }
+        /**
+         * Identifier. The name of the dependency in the API Hub. Format:
+         * `projects/{project}/locations/{location}/dependencies/{dependency}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. State of the dependency.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PROPOSED, VALIDATED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Required. Immutable. The entity acting as the supplier in the dependency.
+         *
+         * @param GoogleCloudApihubV1DependencyEntityReference $supplier
+         */
+        public function setSupplier(GoogleCloudApihubV1DependencyEntityReference $supplier)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1DependencyEntityReference
+         */
+        public function getSupplier()
+        {
+        }
+        /**
+         * Output only. The time at which the dependency was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AttributeValues[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Dependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Required. Immutable. The entity acting as the consumer in the dependency.
-     *
-     * @param GoogleCloudApihubV1DependencyEntityReference $consumer
-     */
-    public function setConsumer(GoogleCloudApihubV1DependencyEntityReference $consumer)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1DependencyEntityReference
-     */
-    public function getConsumer()
-    {
-    }
-    /**
-     * Output only. The time at which the dependency was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Human readable description corresponding of the dependency.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Discovery mode of the dependency.
-     *
-     * Accepted values: DISCOVERY_MODE_UNSPECIFIED, MANUAL
-     *
-     * @param self::DISCOVERY_MODE_* $discoveryMode
-     */
-    public function setDiscoveryMode($discoveryMode)
-    {
-    }
-    /**
-     * @return self::DISCOVERY_MODE_*
-     */
-    public function getDiscoveryMode()
-    {
-    }
-    /**
-     * Output only. Error details of a dependency if the system has detected it
-     * internally.
-     *
-     * @param GoogleCloudApihubV1DependencyErrorDetail $errorDetail
-     */
-    public function setErrorDetail(GoogleCloudApihubV1DependencyErrorDetail $errorDetail)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1DependencyErrorDetail
-     */
-    public function getErrorDetail()
-    {
-    }
-    /**
-     * Identifier. The name of the dependency in the API Hub. Format:
-     * `projects/{project}/locations/{location}/dependencies/{dependency}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. State of the dependency.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PROPOSED, VALIDATED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Required. Immutable. The entity acting as the supplier in the dependency.
-     *
-     * @param GoogleCloudApihubV1DependencyEntityReference $supplier
-     */
-    public function setSupplier(GoogleCloudApihubV1DependencyEntityReference $supplier)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1DependencyEntityReference
-     */
-    public function getSupplier()
-    {
-    }
-    /**
-     * Output only. The time at which the dependency was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1Dependency extends \Google\Service\APIhub\GoogleCloudApihubV1Dependency
     {
     }
 }

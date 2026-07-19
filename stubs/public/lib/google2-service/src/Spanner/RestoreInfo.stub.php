@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class RestoreInfo extends \Google\Model
-{
-    /**
-     * No restore associated.
-     */
-    public const SOURCE_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * A backup was used as the source of the restore.
-     */
-    public const SOURCE_TYPE_BACKUP = 'BACKUP';
-    protected $backupInfoType = BackupInfo::class;
-    protected $backupInfoDataType = '';
-    /**
-     * The type of the restore source.
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * Information about the backup used to restore the database. The backup may
-     * no longer exist.
-     *
-     * @param BackupInfo $backupInfo
-     */
-    public function setBackupInfo(BackupInfo $backupInfo)
+namespace Google\Service\Spanner {
+    class RestoreInfo extends \Google\Model
     {
+        /**
+         * No restore associated.
+         */
+        public const SOURCE_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * A backup was used as the source of the restore.
+         */
+        public const SOURCE_TYPE_BACKUP = 'BACKUP';
+        protected $backupInfoType = BackupInfo::class;
+        protected $backupInfoDataType = '';
+        /**
+         * The type of the restore source.
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * Information about the backup used to restore the database. The backup may
+         * no longer exist.
+         *
+         * @param BackupInfo $backupInfo
+         */
+        public function setBackupInfo(BackupInfo $backupInfo)
+        {
+        }
+        /**
+         * @return BackupInfo
+         */
+        public function getBackupInfo()
+        {
+        }
+        /**
+         * The type of the restore source.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, BACKUP
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupInfo
+     * Runtime class alias of \Google\Service\Spanner\RestoreInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupInfo()
-    {
-    }
-    /**
-     * The type of the restore source.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, BACKUP
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_Spanner_RestoreInfo extends \Google\Service\Spanner\RestoreInfo
     {
     }
 }

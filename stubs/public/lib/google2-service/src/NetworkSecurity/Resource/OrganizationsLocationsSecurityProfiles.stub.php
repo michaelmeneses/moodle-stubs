@@ -21,104 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity\Resource;
-
-/**
- * The "securityProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networksecurityService = new Google\Service\NetworkSecurity(...);
- *   $securityProfiles = $networksecurityService->organizations_locations_securityProfiles;
- *  </code>
- */
-class OrganizationsLocationsSecurityProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkSecurity\Resource {
+    use Google\Service\NetworkSecurity\ListSecurityProfilesResponse;
+    use Google\Service\NetworkSecurity\Operation;
+    use Google\Service\NetworkSecurity\SecurityProfile;
     /**
-     * Creates a new SecurityProfile in a given organization and location.
-     * (securityProfiles.create)
-     *
-     * @param string $parent Required. The parent resource of the SecurityProfile.
-     * Must be in the format `projects|organizations/locations/{location}`.
-     * @param SecurityProfile $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string securityProfileId Required. Short name of the
-     * SecurityProfile resource to be created. This value should be 1-63 characters
-     * long, containing only letters, numbers, hyphens, and underscores, and should
-     * not start with a number. E.g. "security_profile1".
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "securityProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networksecurityService = new Google\Service\NetworkSecurity(...);
+     *   $securityProfiles = $networksecurityService->organizations_locations_securityProfiles;
+     *  </code>
      */
-    public function create($parent, SecurityProfile $postBody, $optParams = [])
+    class OrganizationsLocationsSecurityProfiles extends \Google\Service\Resource
     {
+        /**
+         * Creates a new SecurityProfile in a given organization and location.
+         * (securityProfiles.create)
+         *
+         * @param string $parent Required. The parent resource of the SecurityProfile.
+         * Must be in the format `projects|organizations/locations/{location}`.
+         * @param SecurityProfile $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string securityProfileId Required. Short name of the
+         * SecurityProfile resource to be created. This value should be 1-63 characters
+         * long, containing only letters, numbers, hyphens, and underscores, and should
+         * not start with a number. E.g. "security_profile1".
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SecurityProfile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single SecurityProfile. (securityProfiles.delete)
+         *
+         * @param string $name Required. A name of the SecurityProfile to delete. Must
+         * be in the format `projects|organizations/locations/{location}/securityProfile
+         * s/{security_profile_id}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string etag Optional. If client provided etag is out of date,
+         * delete will return FAILED_PRECONDITION error.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single SecurityProfile. (securityProfiles.get)
+         *
+         * @param string $name Required. A name of the SecurityProfile to get. Must be
+         * in the format `projects|organizations/locations/{location}/securityProfiles/{
+         * security_profile_id}`.
+         * @param array $optParams Optional parameters.
+         * @return SecurityProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists SecurityProfiles in a given organization and location.
+         * (securityProfiles.listOrganizationsLocationsSecurityProfiles)
+         *
+         * @param string $parent Required. The project or organization and location from
+         * which the SecurityProfiles should be listed, specified in the format
+         * `projects|organizations/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of SecurityProfiles to return per
+         * call.
+         * @opt_param string pageToken The value returned by the last
+         * `ListSecurityProfilesResponse` Indicates that this is a continuation of a
+         * prior `ListSecurityProfiles` call, and that the system should return the next
+         * page of data.
+         * @return ListSecurityProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsSecurityProfiles($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single SecurityProfile. (securityProfiles.patch)
+         *
+         * @param string $name Immutable. Identifier. Name of the SecurityProfile
+         * resource. It matches pattern `projects|organizations/locations/{location}/sec
+         * urityProfiles/{security_profile}`.
+         * @param SecurityProfile $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Field mask is used to specify the
+         * fields to be overwritten in the SecurityProfile resource by the update. The
+         * fields specified in the update_mask are relative to the resource, not the
+         * full request. A field will be overwritten if it is in the mask.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SecurityProfile $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single SecurityProfile. (securityProfiles.delete)
-     *
-     * @param string $name Required. A name of the SecurityProfile to delete. Must
-     * be in the format `projects|organizations/locations/{location}/securityProfile
-     * s/{security_profile_id}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string etag Optional. If client provided etag is out of date,
-     * delete will return FAILED_PRECONDITION error.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkSecurity\Resource\OrganizationsLocationsSecurityProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single SecurityProfile. (securityProfiles.get)
-     *
-     * @param string $name Required. A name of the SecurityProfile to get. Must be
-     * in the format `projects|organizations/locations/{location}/securityProfiles/{
-     * security_profile_id}`.
-     * @param array $optParams Optional parameters.
-     * @return SecurityProfile
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists SecurityProfiles in a given organization and location.
-     * (securityProfiles.listOrganizationsLocationsSecurityProfiles)
-     *
-     * @param string $parent Required. The project or organization and location from
-     * which the SecurityProfiles should be listed, specified in the format
-     * `projects|organizations/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of SecurityProfiles to return per
-     * call.
-     * @opt_param string pageToken The value returned by the last
-     * `ListSecurityProfilesResponse` Indicates that this is a continuation of a
-     * prior `ListSecurityProfiles` call, and that the system should return the next
-     * page of data.
-     * @return ListSecurityProfilesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsLocationsSecurityProfiles($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the parameters of a single SecurityProfile. (securityProfiles.patch)
-     *
-     * @param string $name Immutable. Identifier. Name of the SecurityProfile
-     * resource. It matches pattern `projects|organizations/locations/{location}/sec
-     * urityProfiles/{security_profile}`.
-     * @param SecurityProfile $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Field mask is used to specify the
-     * fields to be overwritten in the SecurityProfile resource by the update. The
-     * fields specified in the update_mask are relative to the resource, not the
-     * full request. A field will be overwritten if it is in the mask.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, SecurityProfile $postBody, $optParams = [])
+    class Google_Service_NetworkSecurity_Resource_OrganizationsLocationsSecurityProfiles extends \Google\Service\NetworkSecurity\Resource\OrganizationsLocationsSecurityProfiles
     {
     }
 }

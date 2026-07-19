@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class BuildSource extends \Google\Model
-{
-    protected $archiveType = ArchiveSource::class;
-    protected $archiveDataType = '';
-    protected $codebaseType = CodebaseSource::class;
-    protected $codebaseDataType = '';
-    protected $containerType = ContainerSource::class;
-    protected $containerDataType = '';
-    /**
-     * An archive source.
-     *
-     * @param ArchiveSource $archive
-     */
-    public function setArchive(ArchiveSource $archive)
+namespace Google\Service\FirebaseAppHosting {
+    class BuildSource extends \Google\Model
     {
+        protected $archiveType = ArchiveSource::class;
+        protected $archiveDataType = '';
+        protected $codebaseType = CodebaseSource::class;
+        protected $codebaseDataType = '';
+        protected $containerType = ContainerSource::class;
+        protected $containerDataType = '';
+        /**
+         * An archive source.
+         *
+         * @param ArchiveSource $archive
+         */
+        public function setArchive(ArchiveSource $archive)
+        {
+        }
+        /**
+         * @return ArchiveSource
+         */
+        public function getArchive()
+        {
+        }
+        /**
+         * A codebase source.
+         *
+         * @param CodebaseSource $codebase
+         */
+        public function setCodebase(CodebaseSource $codebase)
+        {
+        }
+        /**
+         * @return CodebaseSource
+         */
+        public function getCodebase()
+        {
+        }
+        /**
+         * An Artifact Registry container image source.
+         *
+         * @param ContainerSource $container
+         */
+        public function setContainer(ContainerSource $container)
+        {
+        }
+        /**
+         * @return ContainerSource
+         */
+        public function getContainer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ArchiveSource
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\BuildSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchive()
-    {
-    }
-    /**
-     * A codebase source.
-     *
-     * @param CodebaseSource $codebase
-     */
-    public function setCodebase(CodebaseSource $codebase)
-    {
-    }
-    /**
-     * @return CodebaseSource
-     */
-    public function getCodebase()
-    {
-    }
-    /**
-     * An Artifact Registry container image source.
-     *
-     * @param ContainerSource $container
-     */
-    public function setContainer(ContainerSource $container)
-    {
-    }
-    /**
-     * @return ContainerSource
-     */
-    public function getContainer()
+    class Google_Service_FirebaseAppHosting_BuildSource extends \Google\Service\FirebaseAppHosting\BuildSource
     {
     }
 }

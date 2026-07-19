@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CreateResourceValueConfigRequest extends \Google\Model
-{
-    /**
-     * Required. Resource name of the new ResourceValueConfig's parent.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $resourceValueConfigType = GoogleCloudSecuritycenterV1ResourceValueConfig::class;
-    protected $resourceValueConfigDataType = '';
-    /**
-     * Required. Resource name of the new ResourceValueConfig's parent.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\SecurityCommandCenter {
+    class CreateResourceValueConfigRequest extends \Google\Model
     {
+        /**
+         * Required. Resource name of the new ResourceValueConfig's parent.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $resourceValueConfigType = GoogleCloudSecuritycenterV1ResourceValueConfig::class;
+        protected $resourceValueConfigDataType = '';
+        /**
+         * Required. Resource name of the new ResourceValueConfig's parent.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The resource value config being created.
+         *
+         * @param GoogleCloudSecuritycenterV1ResourceValueConfig $resourceValueConfig
+         */
+        public function setResourceValueConfig(GoogleCloudSecuritycenterV1ResourceValueConfig $resourceValueConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1ResourceValueConfig
+         */
+        public function getResourceValueConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CreateResourceValueConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The resource value config being created.
-     *
-     * @param GoogleCloudSecuritycenterV1ResourceValueConfig $resourceValueConfig
-     */
-    public function setResourceValueConfig(GoogleCloudSecuritycenterV1ResourceValueConfig $resourceValueConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV1ResourceValueConfig
-     */
-    public function getResourceValueConfig()
+    class Google_Service_SecurityCommandCenter_CreateResourceValueConfigRequest extends \Google\Service\SecurityCommandCenter\CreateResourceValueConfigRequest
     {
     }
 }

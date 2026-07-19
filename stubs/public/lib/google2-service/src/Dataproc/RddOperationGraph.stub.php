@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RddOperationGraph extends \Google\Collection
-{
-    protected $collection_key = 'outgoingEdges';
-    protected $edgesType = RddOperationEdge::class;
-    protected $edgesDataType = 'array';
-    protected $incomingEdgesType = RddOperationEdge::class;
-    protected $incomingEdgesDataType = 'array';
-    protected $outgoingEdgesType = RddOperationEdge::class;
-    protected $outgoingEdgesDataType = 'array';
-    protected $rootClusterType = RddOperationCluster::class;
-    protected $rootClusterDataType = '';
-    /**
-     * @var string
-     */
-    public $stageId;
-    /**
-     * @param RddOperationEdge[] $edges
-     */
-    public function setEdges($edges)
+namespace Google\Service\Dataproc {
+    class RddOperationGraph extends \Google\Collection
     {
+        protected $collection_key = 'outgoingEdges';
+        protected $edgesType = RddOperationEdge::class;
+        protected $edgesDataType = 'array';
+        protected $incomingEdgesType = RddOperationEdge::class;
+        protected $incomingEdgesDataType = 'array';
+        protected $outgoingEdgesType = RddOperationEdge::class;
+        protected $outgoingEdgesDataType = 'array';
+        protected $rootClusterType = RddOperationCluster::class;
+        protected $rootClusterDataType = '';
+        /**
+         * @var string
+         */
+        public $stageId;
+        /**
+         * @param RddOperationEdge[] $edges
+         */
+        public function setEdges($edges)
+        {
+        }
+        /**
+         * @return RddOperationEdge[]
+         */
+        public function getEdges()
+        {
+        }
+        /**
+         * @param RddOperationEdge[] $incomingEdges
+         */
+        public function setIncomingEdges($incomingEdges)
+        {
+        }
+        /**
+         * @return RddOperationEdge[]
+         */
+        public function getIncomingEdges()
+        {
+        }
+        /**
+         * @param RddOperationEdge[] $outgoingEdges
+         */
+        public function setOutgoingEdges($outgoingEdges)
+        {
+        }
+        /**
+         * @return RddOperationEdge[]
+         */
+        public function getOutgoingEdges()
+        {
+        }
+        /**
+         * @param RddOperationCluster $rootCluster
+         */
+        public function setRootCluster(RddOperationCluster $rootCluster)
+        {
+        }
+        /**
+         * @return RddOperationCluster
+         */
+        public function getRootCluster()
+        {
+        }
+        /**
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RddOperationEdge[]
+     * Runtime class alias of \Google\Service\Dataproc\RddOperationGraph registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdges()
-    {
-    }
-    /**
-     * @param RddOperationEdge[] $incomingEdges
-     */
-    public function setIncomingEdges($incomingEdges)
-    {
-    }
-    /**
-     * @return RddOperationEdge[]
-     */
-    public function getIncomingEdges()
-    {
-    }
-    /**
-     * @param RddOperationEdge[] $outgoingEdges
-     */
-    public function setOutgoingEdges($outgoingEdges)
-    {
-    }
-    /**
-     * @return RddOperationEdge[]
-     */
-    public function getOutgoingEdges()
-    {
-    }
-    /**
-     * @param RddOperationCluster $rootCluster
-     */
-    public function setRootCluster(RddOperationCluster $rootCluster)
-    {
-    }
-    /**
-     * @return RddOperationCluster
-     */
-    public function getRootCluster()
-    {
-    }
-    /**
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
+    class Google_Service_Dataproc_RddOperationGraph extends \Google\Service\Dataproc\RddOperationGraph
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyAnalyzer;
-
-class GoogleCloudPolicyanalyzerV1QueryActivityResponse extends \Google\Collection
-{
-    protected $collection_key = 'activities';
-    protected $activitiesType = GoogleCloudPolicyanalyzerV1Activity::class;
-    protected $activitiesDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `nextPageToken` is included. To get the next set of results, call this
-     * method again using the value of `nextPageToken` as `pageToken`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The set of activities that match the filter included in the request.
-     *
-     * @param GoogleCloudPolicyanalyzerV1Activity[] $activities
-     */
-    public function setActivities($activities)
+namespace Google\Service\PolicyAnalyzer {
+    class GoogleCloudPolicyanalyzerV1QueryActivityResponse extends \Google\Collection
     {
+        protected $collection_key = 'activities';
+        protected $activitiesType = GoogleCloudPolicyanalyzerV1Activity::class;
+        protected $activitiesDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `nextPageToken` is included. To get the next set of results, call this
+         * method again using the value of `nextPageToken` as `pageToken`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The set of activities that match the filter included in the request.
+         *
+         * @param GoogleCloudPolicyanalyzerV1Activity[] $activities
+         */
+        public function setActivities($activities)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicyanalyzerV1Activity[]
+         */
+        public function getActivities()
+        {
+        }
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `nextPageToken` is included. To get the next set of results, call this
+         * method again using the value of `nextPageToken` as `pageToken`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicyanalyzerV1Activity[]
+     * Runtime class alias of \Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1QueryActivityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivities()
-    {
-    }
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `nextPageToken` is included. To get the next set of results, call this
-     * method again using the value of `nextPageToken` as `pageToken`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_PolicyAnalyzer_GoogleCloudPolicyanalyzerV1QueryActivityResponse extends \Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1QueryActivityResponse
     {
     }
 }

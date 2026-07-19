@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class HcxActivationKey extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * State of a newly generated activation key.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * State of key when it has been used to activate HCX appliance.
-     */
-    public const STATE_CONSUMED = 'CONSUMED';
-    /**
-     * State of key when it is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Output only. HCX activation key.
-     *
-     * @var string
-     */
-    public $activationKey;
-    /**
-     * Output only. Creation time of HCX activation key.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The resource name of this HcxActivationKey. Resource names are
-     * schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-central1/privateClouds/my-
-     * cloud/hcxActivationKeys/my-key`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. State of HCX activation key.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. System-generated unique identifier for the resource.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. HCX activation key.
-     *
-     * @param string $activationKey
-     */
-    public function setActivationKey($activationKey)
+namespace Google\Service\VMwareEngine {
+    class HcxActivationKey extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * State of a newly generated activation key.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * State of key when it has been used to activate HCX appliance.
+         */
+        public const STATE_CONSUMED = 'CONSUMED';
+        /**
+         * State of key when it is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Output only. HCX activation key.
+         *
+         * @var string
+         */
+        public $activationKey;
+        /**
+         * Output only. Creation time of HCX activation key.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The resource name of this HcxActivationKey. Resource names are
+         * schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-central1/privateClouds/my-
+         * cloud/hcxActivationKeys/my-key`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. State of HCX activation key.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. System-generated unique identifier for the resource.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. HCX activation key.
+         *
+         * @param string $activationKey
+         */
+        public function setActivationKey($activationKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivationKey()
+        {
+        }
+        /**
+         * Output only. Creation time of HCX activation key.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The resource name of this HcxActivationKey. Resource names are
+         * schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-central1/privateClouds/my-
+         * cloud/hcxActivationKeys/my-key`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. State of HCX activation key.
+         *
+         * Accepted values: STATE_UNSPECIFIED, AVAILABLE, CONSUMED, CREATING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. System-generated unique identifier for the resource.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\HcxActivationKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationKey()
-    {
-    }
-    /**
-     * Output only. Creation time of HCX activation key.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The resource name of this HcxActivationKey. Resource names are
-     * schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-central1/privateClouds/my-
-     * cloud/hcxActivationKeys/my-key`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. State of HCX activation key.
-     *
-     * Accepted values: STATE_UNSPECIFIED, AVAILABLE, CONSUMED, CREATING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. System-generated unique identifier for the resource.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_VMwareEngine_HcxActivationKey extends \Google\Service\VMwareEngine\HcxActivationKey
     {
     }
 }

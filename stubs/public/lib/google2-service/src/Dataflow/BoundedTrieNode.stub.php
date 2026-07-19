@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class BoundedTrieNode extends \Google\Model
-{
-    protected $childrenType = BoundedTrieNode::class;
-    protected $childrenDataType = 'map';
-    /**
-     * Whether this node has been truncated. A truncated leaf represents possibly
-     * many children with the same prefix.
-     *
-     * @var bool
-     */
-    public $truncated;
-    /**
-     * Children of this node. Must be empty if truncated is true.
-     *
-     * @param BoundedTrieNode[] $children
-     */
-    public function setChildren($children)
+namespace Google\Service\Dataflow {
+    class BoundedTrieNode extends \Google\Model
     {
+        protected $childrenType = BoundedTrieNode::class;
+        protected $childrenDataType = 'map';
+        /**
+         * Whether this node has been truncated. A truncated leaf represents possibly
+         * many children with the same prefix.
+         *
+         * @var bool
+         */
+        public $truncated;
+        /**
+         * Children of this node. Must be empty if truncated is true.
+         *
+         * @param BoundedTrieNode[] $children
+         */
+        public function setChildren($children)
+        {
+        }
+        /**
+         * @return BoundedTrieNode[]
+         */
+        public function getChildren()
+        {
+        }
+        /**
+         * Whether this node has been truncated. A truncated leaf represents possibly
+         * many children with the same prefix.
+         *
+         * @param bool $truncated
+         */
+        public function setTruncated($truncated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTruncated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BoundedTrieNode[]
+     * Runtime class alias of \Google\Service\Dataflow\BoundedTrieNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildren()
-    {
-    }
-    /**
-     * Whether this node has been truncated. A truncated leaf represents possibly
-     * many children with the same prefix.
-     *
-     * @param bool $truncated
-     */
-    public function setTruncated($truncated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTruncated()
+    class Google_Service_Dataflow_BoundedTrieNode extends \Google\Service\Dataflow\BoundedTrieNode
     {
     }
 }

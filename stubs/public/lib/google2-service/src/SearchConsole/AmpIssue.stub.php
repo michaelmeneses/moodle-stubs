@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class AmpIssue extends \Google\Model
-{
-    /**
-     * Unknown severity.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Warning.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * Error.
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * Brief description of this issue.
-     *
-     * @var string
-     */
-    public $issueMessage;
-    /**
-     * Severity of this issue: WARNING or ERROR.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Brief description of this issue.
-     *
-     * @param string $issueMessage
-     */
-    public function setIssueMessage($issueMessage)
+namespace Google\Service\SearchConsole {
+    class AmpIssue extends \Google\Model
     {
+        /**
+         * Unknown severity.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Warning.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * Error.
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * Brief description of this issue.
+         *
+         * @var string
+         */
+        public $issueMessage;
+        /**
+         * Severity of this issue: WARNING or ERROR.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Brief description of this issue.
+         *
+         * @param string $issueMessage
+         */
+        public function setIssueMessage($issueMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueMessage()
+        {
+        }
+        /**
+         * Severity of this issue: WARNING or ERROR.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, WARNING, ERROR
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SearchConsole\AmpIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueMessage()
-    {
-    }
-    /**
-     * Severity of this issue: WARNING or ERROR.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, WARNING, ERROR
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_SearchConsole_AmpIssue extends \Google\Service\SearchConsole\AmpIssue
     {
     }
 }

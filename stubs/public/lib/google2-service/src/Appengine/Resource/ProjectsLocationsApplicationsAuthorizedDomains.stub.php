@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine\Resource;
-
-/**
- * The "authorizedDomains" collection of methods.
- * Typical usage is:
- *  <code>
- *   $appengineService = new Google\Service\Appengine(...);
- *   $authorizedDomains = $appengineService->projects_locations_applications_authorizedDomains;
- *  </code>
- */
-class ProjectsLocationsApplicationsAuthorizedDomains extends \Google\Service\Resource
-{
+namespace Google\Service\Appengine\Resource {
+    use Google\Service\Appengine\ListAuthorizedDomainsResponse;
     /**
-     * Lists all domains the user is authorized to administer.
-     * (authorizedDomains.listProjectsLocationsApplicationsAuthorizedDomains)
-     *
-     * @param string $projectsId Part of `parent`. Required. Name of the parent
-     * Application resource. Example: apps/myapp.
-     * @param string $locationsId Part of `parent`. See documentation of
-     * `projectsId`.
-     * @param string $applicationsId Part of `parent`. See documentation of
-     * `projectsId`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum results to return per page.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListAuthorizedDomainsResponse
-     * @throws \Google\Service\Exception
+     * The "authorizedDomains" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $appengineService = new Google\Service\Appengine(...);
+     *   $authorizedDomains = $appengineService->projects_locations_applications_authorizedDomains;
+     *  </code>
      */
-    public function listProjectsLocationsApplicationsAuthorizedDomains($projectsId, $locationsId, $applicationsId, $optParams = [])
+    class ProjectsLocationsApplicationsAuthorizedDomains extends \Google\Service\Resource
+    {
+        /**
+         * Lists all domains the user is authorized to administer.
+         * (authorizedDomains.listProjectsLocationsApplicationsAuthorizedDomains)
+         *
+         * @param string $projectsId Part of `parent`. Required. Name of the parent
+         * Application resource. Example: apps/myapp.
+         * @param string $locationsId Part of `parent`. See documentation of
+         * `projectsId`.
+         * @param string $applicationsId Part of `parent`. See documentation of
+         * `projectsId`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum results to return per page.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListAuthorizedDomainsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsApplicationsAuthorizedDomains($projectsId, $locationsId, $applicationsId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Appengine\Resource\ProjectsLocationsApplicationsAuthorizedDomains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Appengine_Resource_ProjectsLocationsApplicationsAuthorizedDomains extends \Google\Service\Appengine\Resource\ProjectsLocationsApplicationsAuthorizedDomains
     {
     }
 }

@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CompliancePostureConfig extends \Google\Collection
-{
-    /**
-     * Default value not specified.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Disables Compliance Posture features on the cluster.
-     */
-    public const MODE_DISABLED = 'DISABLED';
-    /**
-     * Enables Compliance Posture features on the cluster.
-     */
-    public const MODE_ENABLED = 'ENABLED';
-    protected $collection_key = 'complianceStandards';
-    protected $complianceStandardsType = ComplianceStandard::class;
-    protected $complianceStandardsDataType = 'array';
-    /**
-     * Defines the enablement mode for Compliance Posture.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * List of enabled compliance standards.
-     *
-     * @param ComplianceStandard[] $complianceStandards
-     */
-    public function setComplianceStandards($complianceStandards)
+namespace Google\Service\Container {
+    class CompliancePostureConfig extends \Google\Collection
     {
+        /**
+         * Default value not specified.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Disables Compliance Posture features on the cluster.
+         */
+        public const MODE_DISABLED = 'DISABLED';
+        /**
+         * Enables Compliance Posture features on the cluster.
+         */
+        public const MODE_ENABLED = 'ENABLED';
+        protected $collection_key = 'complianceStandards';
+        protected $complianceStandardsType = ComplianceStandard::class;
+        protected $complianceStandardsDataType = 'array';
+        /**
+         * Defines the enablement mode for Compliance Posture.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * List of enabled compliance standards.
+         *
+         * @param ComplianceStandard[] $complianceStandards
+         */
+        public function setComplianceStandards($complianceStandards)
+        {
+        }
+        /**
+         * @return ComplianceStandard[]
+         */
+        public function getComplianceStandards()
+        {
+        }
+        /**
+         * Defines the enablement mode for Compliance Posture.
+         *
+         * Accepted values: MODE_UNSPECIFIED, DISABLED, ENABLED
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComplianceStandard[]
+     * Runtime class alias of \Google\Service\Container\CompliancePostureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplianceStandards()
-    {
-    }
-    /**
-     * Defines the enablement mode for Compliance Posture.
-     *
-     * Accepted values: MODE_UNSPECIFIED, DISABLED, ENABLED
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return self::MODE_*
-     */
-    public function getMode()
+    class Google_Service_Container_CompliancePostureConfig extends \Google\Service\Container\CompliancePostureConfig
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkEndpointGroupsListEndpointsRequest extends \Google\Model
-{
-    /**
-     * Show the health status for each network endpoint. Impacts latency of the
-     * call.
-     */
-    public const HEALTH_STATUS_SHOW = 'SHOW';
-    /**
-     * Health status for network endpoints will not be provided.
-     */
-    public const HEALTH_STATUS_SKIP = 'SKIP';
-    /**
-     * Optional query parameter for showing the health status of each network
-     * endpoint. Valid options are SKIP or SHOW. If you don't specify this
-     * parameter, the health status of network endpoints will not be provided.
-     *
-     * @var string
-     */
-    public $healthStatus;
-    /**
-     * Optional query parameter for showing the health status of each network
-     * endpoint. Valid options are SKIP or SHOW. If you don't specify this
-     * parameter, the health status of network endpoints will not be provided.
-     *
-     * Accepted values: SHOW, SKIP
-     *
-     * @param self::HEALTH_STATUS_* $healthStatus
-     */
-    public function setHealthStatus($healthStatus)
+namespace Google\Service\Compute {
+    class NetworkEndpointGroupsListEndpointsRequest extends \Google\Model
     {
+        /**
+         * Show the health status for each network endpoint. Impacts latency of the
+         * call.
+         */
+        public const HEALTH_STATUS_SHOW = 'SHOW';
+        /**
+         * Health status for network endpoints will not be provided.
+         */
+        public const HEALTH_STATUS_SKIP = 'SKIP';
+        /**
+         * Optional query parameter for showing the health status of each network
+         * endpoint. Valid options are SKIP or SHOW. If you don't specify this
+         * parameter, the health status of network endpoints will not be provided.
+         *
+         * @var string
+         */
+        public $healthStatus;
+        /**
+         * Optional query parameter for showing the health status of each network
+         * endpoint. Valid options are SKIP or SHOW. If you don't specify this
+         * parameter, the health status of network endpoints will not be provided.
+         *
+         * Accepted values: SHOW, SKIP
+         *
+         * @param self::HEALTH_STATUS_* $healthStatus
+         */
+        public function setHealthStatus($healthStatus)
+        {
+        }
+        /**
+         * @return self::HEALTH_STATUS_*
+         */
+        public function getHealthStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::HEALTH_STATUS_*
+     * Runtime class alias of \Google\Service\Compute\NetworkEndpointGroupsListEndpointsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthStatus()
+    class Google_Service_Compute_NetworkEndpointGroupsListEndpointsRequest extends \Google\Service\Compute\NetworkEndpointGroupsListEndpointsRequest
     {
     }
 }

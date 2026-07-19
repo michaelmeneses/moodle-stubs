@@ -21,47 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $versions = $connectorsService->versions;
- *  </code>
- */
-class ProjectsLocationsConnectorsGlobalProvidersConnectorsVersions extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    use Google\Service\Connectors\ConnectorVersion;
+    use Google\Service\Connectors\ListConnectorVersionsResponse;
     /**
-     * Gets details of a single connector version. (versions.get)
-     *
-     * @param string $name Required. Resource name of the form:
-     * `projects/locations/providers/connectors/versions`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Specifies which fields of the ConnectorVersion are
-     * returned in the response. Defaults to `CUSTOMER` view.
-     * @return ConnectorVersion
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $versions = $connectorsService->versions;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsConnectorsGlobalProvidersConnectorsVersions extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single connector version. (versions.get)
+         *
+         * @param string $name Required. Resource name of the form:
+         * `projects/locations/providers/connectors/versions`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Specifies which fields of the ConnectorVersion are
+         * returned in the response. Defaults to `CUSTOMER` view.
+         * @return ConnectorVersion
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Connector Versions in a given project and location.
+         * (versions.listProjectsLocationsConnectorsGlobalProvidersConnectorsVersions)
+         *
+         * @param string $parent Required. Parent resource of the connectors, of the
+         * form: `projects/locations/providers/connectors`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @opt_param string view Specifies which fields of the ConnectorVersion are
+         * returned in the response. Defaults to `CUSTOMER` view.
+         * @return ListConnectorVersionsResponse
+         */
+        public function listProjectsLocationsConnectorsGlobalProvidersConnectorsVersions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Connector Versions in a given project and location.
-     * (versions.listProjectsLocationsConnectorsGlobalProvidersConnectorsVersions)
-     *
-     * @param string $parent Required. Parent resource of the connectors, of the
-     * form: `projects/locations/providers/connectors`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @opt_param string view Specifies which fields of the ConnectorVersion are
-     * returned in the response. Defaults to `CUSTOMER` view.
-     * @return ListConnectorVersionsResponse
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnectorsGlobalProvidersConnectorsVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsConnectorsGlobalProvidersConnectorsVersions($parent, $optParams = [])
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnectorsGlobalProvidersConnectorsVersions extends \Google\Service\Connectors\Resource\ProjectsLocationsConnectorsGlobalProvidersConnectorsVersions
     {
     }
 }

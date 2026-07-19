@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class ReportRequestReportScope extends \Google\Model
-{
-    /**
-     * DS ad group ID.
-     *
-     * @var string
-     */
-    public $adGroupId;
-    /**
-     * DS ad ID.
-     *
-     * @var string
-     */
-    public $adId;
-    /**
-     * DS advertiser ID.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * DS agency ID.
-     *
-     * @var string
-     */
-    public $agencyId;
-    /**
-     * DS campaign ID.
-     *
-     * @var string
-     */
-    public $campaignId;
-    /**
-     * DS engine account ID.
-     *
-     * @var string
-     */
-    public $engineAccountId;
-    /**
-     * DS keyword ID.
-     *
-     * @var string
-     */
-    public $keywordId;
-    /**
-     * DS ad group ID.
-     *
-     * @param string $adGroupId
-     */
-    public function setAdGroupId($adGroupId)
+namespace Google\Service\Doubleclicksearch {
+    class ReportRequestReportScope extends \Google\Model
     {
+        /**
+         * DS ad group ID.
+         *
+         * @var string
+         */
+        public $adGroupId;
+        /**
+         * DS ad ID.
+         *
+         * @var string
+         */
+        public $adId;
+        /**
+         * DS advertiser ID.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * DS agency ID.
+         *
+         * @var string
+         */
+        public $agencyId;
+        /**
+         * DS campaign ID.
+         *
+         * @var string
+         */
+        public $campaignId;
+        /**
+         * DS engine account ID.
+         *
+         * @var string
+         */
+        public $engineAccountId;
+        /**
+         * DS keyword ID.
+         *
+         * @var string
+         */
+        public $keywordId;
+        /**
+         * DS ad group ID.
+         *
+         * @param string $adGroupId
+         */
+        public function setAdGroupId($adGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupId()
+        {
+        }
+        /**
+         * DS ad ID.
+         *
+         * @param string $adId
+         */
+        public function setAdId($adId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdId()
+        {
+        }
+        /**
+         * DS advertiser ID.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * DS agency ID.
+         *
+         * @param string $agencyId
+         */
+        public function setAgencyId($agencyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgencyId()
+        {
+        }
+        /**
+         * DS campaign ID.
+         *
+         * @param string $campaignId
+         */
+        public function setCampaignId($campaignId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCampaignId()
+        {
+        }
+        /**
+         * DS engine account ID.
+         *
+         * @param string $engineAccountId
+         */
+        public function setEngineAccountId($engineAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEngineAccountId()
+        {
+        }
+        /**
+         * DS keyword ID.
+         *
+         * @param string $keywordId
+         */
+        public function setKeywordId($keywordId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeywordId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\ReportRequestReportScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupId()
-    {
-    }
-    /**
-     * DS ad ID.
-     *
-     * @param string $adId
-     */
-    public function setAdId($adId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdId()
-    {
-    }
-    /**
-     * DS advertiser ID.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * DS agency ID.
-     *
-     * @param string $agencyId
-     */
-    public function setAgencyId($agencyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgencyId()
-    {
-    }
-    /**
-     * DS campaign ID.
-     *
-     * @param string $campaignId
-     */
-    public function setCampaignId($campaignId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCampaignId()
-    {
-    }
-    /**
-     * DS engine account ID.
-     *
-     * @param string $engineAccountId
-     */
-    public function setEngineAccountId($engineAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEngineAccountId()
-    {
-    }
-    /**
-     * DS keyword ID.
-     *
-     * @param string $keywordId
-     */
-    public function setKeywordId($keywordId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeywordId()
+    class Google_Service_Doubleclicksearch_ReportRequestReportScope extends \Google\Service\Doubleclicksearch\ReportRequestReportScope
     {
     }
 }

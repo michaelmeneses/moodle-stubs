@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class StateAndNotificationPayload extends \Google\Model
-{
-    protected $devicesType = ReportStateAndNotificationDevice::class;
-    protected $devicesDataType = '';
-    /**
-     * The devices for updating state and sending notifications.
-     *
-     * @param ReportStateAndNotificationDevice $devices
-     */
-    public function setDevices(ReportStateAndNotificationDevice $devices)
+namespace Google\Service\HomeGraphService {
+    class StateAndNotificationPayload extends \Google\Model
     {
+        protected $devicesType = ReportStateAndNotificationDevice::class;
+        protected $devicesDataType = '';
+        /**
+         * The devices for updating state and sending notifications.
+         *
+         * @param ReportStateAndNotificationDevice $devices
+         */
+        public function setDevices(ReportStateAndNotificationDevice $devices)
+        {
+        }
+        /**
+         * @return ReportStateAndNotificationDevice
+         */
+        public function getDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportStateAndNotificationDevice
+     * Runtime class alias of \Google\Service\HomeGraphService\StateAndNotificationPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
+    class Google_Service_HomeGraphService_StateAndNotificationPayload extends \Google\Service\HomeGraphService\StateAndNotificationPayload
     {
     }
 }

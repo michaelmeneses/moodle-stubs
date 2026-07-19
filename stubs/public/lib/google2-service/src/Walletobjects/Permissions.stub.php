@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Permissions extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * ID of the issuer the list of permissions refer to.
-     *
-     * @var string
-     */
-    public $issuerId;
-    protected $permissionsType = Permission::class;
-    protected $permissionsDataType = 'array';
-    /**
-     * ID of the issuer the list of permissions refer to.
-     *
-     * @param string $issuerId
-     */
-    public function setIssuerId($issuerId)
+namespace Google\Service\Walletobjects {
+    class Permissions extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * ID of the issuer the list of permissions refer to.
+         *
+         * @var string
+         */
+        public $issuerId;
+        protected $permissionsType = Permission::class;
+        protected $permissionsDataType = 'array';
+        /**
+         * ID of the issuer the list of permissions refer to.
+         *
+         * @param string $issuerId
+         */
+        public function setIssuerId($issuerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuerId()
+        {
+        }
+        /**
+         * The complete list of permissions for the issuer account.
+         *
+         * @param Permission[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return Permission[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\Permissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssuerId()
-    {
-    }
-    /**
-     * The complete list of permissions for the issuer account.
-     *
-     * @param Permission[] $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return Permission[]
-     */
-    public function getPermissions()
+    class Google_Service_Walletobjects_Permissions extends \Google\Service\Walletobjects\Permissions
     {
     }
 }

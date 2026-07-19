@@ -21,211 +21,220 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Action extends \Google\Collection
-{
-    protected $collection_key = 'mounts';
-    /**
-     * @var string[]
-     */
-    public $commands;
-    protected $credentialsType = Secret::class;
-    protected $credentialsDataType = '';
-    protected $encryptedEnvironmentType = Secret::class;
-    protected $encryptedEnvironmentDataType = '';
-    /**
-     * @var string
-     */
-    public $entrypoint;
-    /**
-     * @var string[]
-     */
-    public $environment;
-    /**
-     * @var string[]
-     */
-    public $flags;
-    /**
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $mountsType = Mount::class;
-    protected $mountsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $pidNamespace;
-    /**
-     * @var int[]
-     */
-    public $portMappings;
-    /**
-     * @var string
-     */
-    public $timeout;
-    /**
-     * @param string[]
-     */
-    public function setCommands($commands)
+namespace Google\Service\Genomics {
+    class Action extends \Google\Collection
     {
+        protected $collection_key = 'mounts';
+        /**
+         * @var string[]
+         */
+        public $commands;
+        protected $credentialsType = Secret::class;
+        protected $credentialsDataType = '';
+        protected $encryptedEnvironmentType = Secret::class;
+        protected $encryptedEnvironmentDataType = '';
+        /**
+         * @var string
+         */
+        public $entrypoint;
+        /**
+         * @var string[]
+         */
+        public $environment;
+        /**
+         * @var string[]
+         */
+        public $flags;
+        /**
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $mountsType = Mount::class;
+        protected $mountsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $pidNamespace;
+        /**
+         * @var int[]
+         */
+        public $portMappings;
+        /**
+         * @var string
+         */
+        public $timeout;
+        /**
+         * @param string[]
+         */
+        public function setCommands($commands)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommands()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setCredentials(Secret $credentials)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setEncryptedEnvironment(Secret $encryptedEnvironment)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getEncryptedEnvironment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntrypoint($entrypoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntrypoint()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFlags($flags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFlags()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param Mount[]
+         */
+        public function setMounts($mounts)
+        {
+        }
+        /**
+         * @return Mount[]
+         */
+        public function getMounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPidNamespace($pidNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPidNamespace()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setPortMappings($portMappings)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getPortMappings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Genomics\Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommands()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setCredentials(Secret $credentials)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getCredentials()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setEncryptedEnvironment(Secret $encryptedEnvironment)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getEncryptedEnvironment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntrypoint($entrypoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntrypoint()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFlags($flags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFlags()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param Mount[]
-     */
-    public function setMounts($mounts)
-    {
-    }
-    /**
-     * @return Mount[]
-     */
-    public function getMounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPidNamespace($pidNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPidNamespace()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setPortMappings($portMappings)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getPortMappings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_Genomics_Action extends \Google\Service\Genomics\Action
     {
     }
 }

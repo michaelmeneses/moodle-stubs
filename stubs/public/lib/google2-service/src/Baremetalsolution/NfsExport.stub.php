@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class NfsExport extends \Google\Model
-{
-    /**
-     * Unspecified value.
-     */
-    public const PERMISSIONS_PERMISSIONS_UNSPECIFIED = 'PERMISSIONS_UNSPECIFIED';
-    /**
-     * Read-only permission.
-     */
-    public const PERMISSIONS_READ_ONLY = 'READ_ONLY';
-    /**
-     * Read-write permission.
-     */
-    public const PERMISSIONS_READ_WRITE = 'READ_WRITE';
-    /**
-     * Allow dev flag in NfsShare AllowedClientsRequest.
-     *
-     * @var bool
-     */
-    public $allowDev;
-    /**
-     * Allow the setuid flag.
-     *
-     * @var bool
-     */
-    public $allowSuid;
-    /**
-     * A CIDR range.
-     *
-     * @var string
-     */
-    public $cidr;
-    /**
-     * Either a single machine, identified by an ID, or a comma-separated list of
-     * machine IDs.
-     *
-     * @var string
-     */
-    public $machineId;
-    /**
-     * Network to use to publish the export.
-     *
-     * @var string
-     */
-    public $networkId;
-    /**
-     * Disable root squashing, which is a feature of NFS. Root squash is a special
-     * mapping of the remote superuser (root) identity when using identity
-     * authentication.
-     *
-     * @var bool
-     */
-    public $noRootSquash;
-    /**
-     * Export permissions.
-     *
-     * @var string
-     */
-    public $permissions;
-    /**
-     * Allow dev flag in NfsShare AllowedClientsRequest.
-     *
-     * @param bool $allowDev
-     */
-    public function setAllowDev($allowDev)
+namespace Google\Service\Baremetalsolution {
+    class NfsExport extends \Google\Model
     {
+        /**
+         * Unspecified value.
+         */
+        public const PERMISSIONS_PERMISSIONS_UNSPECIFIED = 'PERMISSIONS_UNSPECIFIED';
+        /**
+         * Read-only permission.
+         */
+        public const PERMISSIONS_READ_ONLY = 'READ_ONLY';
+        /**
+         * Read-write permission.
+         */
+        public const PERMISSIONS_READ_WRITE = 'READ_WRITE';
+        /**
+         * Allow dev flag in NfsShare AllowedClientsRequest.
+         *
+         * @var bool
+         */
+        public $allowDev;
+        /**
+         * Allow the setuid flag.
+         *
+         * @var bool
+         */
+        public $allowSuid;
+        /**
+         * A CIDR range.
+         *
+         * @var string
+         */
+        public $cidr;
+        /**
+         * Either a single machine, identified by an ID, or a comma-separated list of
+         * machine IDs.
+         *
+         * @var string
+         */
+        public $machineId;
+        /**
+         * Network to use to publish the export.
+         *
+         * @var string
+         */
+        public $networkId;
+        /**
+         * Disable root squashing, which is a feature of NFS. Root squash is a special
+         * mapping of the remote superuser (root) identity when using identity
+         * authentication.
+         *
+         * @var bool
+         */
+        public $noRootSquash;
+        /**
+         * Export permissions.
+         *
+         * @var string
+         */
+        public $permissions;
+        /**
+         * Allow dev flag in NfsShare AllowedClientsRequest.
+         *
+         * @param bool $allowDev
+         */
+        public function setAllowDev($allowDev)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowDev()
+        {
+        }
+        /**
+         * Allow the setuid flag.
+         *
+         * @param bool $allowSuid
+         */
+        public function setAllowSuid($allowSuid)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowSuid()
+        {
+        }
+        /**
+         * A CIDR range.
+         *
+         * @param string $cidr
+         */
+        public function setCidr($cidr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCidr()
+        {
+        }
+        /**
+         * Either a single machine, identified by an ID, or a comma-separated list of
+         * machine IDs.
+         *
+         * @param string $machineId
+         */
+        public function setMachineId($machineId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineId()
+        {
+        }
+        /**
+         * Network to use to publish the export.
+         *
+         * @param string $networkId
+         */
+        public function setNetworkId($networkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkId()
+        {
+        }
+        /**
+         * Disable root squashing, which is a feature of NFS. Root squash is a special
+         * mapping of the remote superuser (root) identity when using identity
+         * authentication.
+         *
+         * @param bool $noRootSquash
+         */
+        public function setNoRootSquash($noRootSquash)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoRootSquash()
+        {
+        }
+        /**
+         * Export permissions.
+         *
+         * Accepted values: PERMISSIONS_UNSPECIFIED, READ_ONLY, READ_WRITE
+         *
+         * @param self::PERMISSIONS_* $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return self::PERMISSIONS_*
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Baremetalsolution\NfsExport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowDev()
-    {
-    }
-    /**
-     * Allow the setuid flag.
-     *
-     * @param bool $allowSuid
-     */
-    public function setAllowSuid($allowSuid)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowSuid()
-    {
-    }
-    /**
-     * A CIDR range.
-     *
-     * @param string $cidr
-     */
-    public function setCidr($cidr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCidr()
-    {
-    }
-    /**
-     * Either a single machine, identified by an ID, or a comma-separated list of
-     * machine IDs.
-     *
-     * @param string $machineId
-     */
-    public function setMachineId($machineId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineId()
-    {
-    }
-    /**
-     * Network to use to publish the export.
-     *
-     * @param string $networkId
-     */
-    public function setNetworkId($networkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkId()
-    {
-    }
-    /**
-     * Disable root squashing, which is a feature of NFS. Root squash is a special
-     * mapping of the remote superuser (root) identity when using identity
-     * authentication.
-     *
-     * @param bool $noRootSquash
-     */
-    public function setNoRootSquash($noRootSquash)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoRootSquash()
-    {
-    }
-    /**
-     * Export permissions.
-     *
-     * Accepted values: PERMISSIONS_UNSPECIFIED, READ_ONLY, READ_WRITE
-     *
-     * @param self::PERMISSIONS_* $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return self::PERMISSIONS_*
-     */
-    public function getPermissions()
+    class Google_Service_Baremetalsolution_NfsExport extends \Google\Service\Baremetalsolution\NfsExport
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PostgresqlTable extends \Google\Collection
-{
-    protected $collection_key = 'postgresqlColumns';
-    protected $postgresqlColumnsType = PostgresqlColumn::class;
-    protected $postgresqlColumnsDataType = 'array';
-    /**
-     * Table name.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * PostgreSQL columns in the schema. When unspecified as part of
-     * include/exclude objects, includes/excludes everything.
-     *
-     * @param PostgresqlColumn[] $postgresqlColumns
-     */
-    public function setPostgresqlColumns($postgresqlColumns)
+namespace Google\Service\Datastream {
+    class PostgresqlTable extends \Google\Collection
     {
+        protected $collection_key = 'postgresqlColumns';
+        protected $postgresqlColumnsType = PostgresqlColumn::class;
+        protected $postgresqlColumnsDataType = 'array';
+        /**
+         * Table name.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * PostgreSQL columns in the schema. When unspecified as part of
+         * include/exclude objects, includes/excludes everything.
+         *
+         * @param PostgresqlColumn[] $postgresqlColumns
+         */
+        public function setPostgresqlColumns($postgresqlColumns)
+        {
+        }
+        /**
+         * @return PostgresqlColumn[]
+         */
+        public function getPostgresqlColumns()
+        {
+        }
+        /**
+         * Table name.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostgresqlColumn[]
+     * Runtime class alias of \Google\Service\Datastream\PostgresqlTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostgresqlColumns()
-    {
-    }
-    /**
-     * Table name.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Datastream_PostgresqlTable extends \Google\Service\Datastream\PostgresqlTable
     {
     }
 }

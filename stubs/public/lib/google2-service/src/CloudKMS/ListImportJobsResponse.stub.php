@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ListImportJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'importJobs';
-    protected $importJobsType = ImportJob::class;
-    protected $importJobsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListImportJobsRequest.page_token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of ImportJobs that matched the query. This field is not
-     * populated if ListImportJobsRequest.filter is applied.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The list of ImportJobs.
-     *
-     * @param ImportJob[] $importJobs
-     */
-    public function setImportJobs($importJobs)
+namespace Google\Service\CloudKMS {
+    class ListImportJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'importJobs';
+        protected $importJobsType = ImportJob::class;
+        protected $importJobsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListImportJobsRequest.page_token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of ImportJobs that matched the query. This field is not
+         * populated if ListImportJobsRequest.filter is applied.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The list of ImportJobs.
+         *
+         * @param ImportJob[] $importJobs
+         */
+        public function setImportJobs($importJobs)
+        {
+        }
+        /**
+         * @return ImportJob[]
+         */
+        public function getImportJobs()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListImportJobsRequest.page_token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of ImportJobs that matched the query. This field is not
+         * populated if ListImportJobsRequest.filter is applied.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportJob[]
+     * Runtime class alias of \Google\Service\CloudKMS\ListImportJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportJobs()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListImportJobsRequest.page_token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of ImportJobs that matched the query. This field is not
-     * populated if ListImportJobsRequest.filter is applied.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_CloudKMS_ListImportJobsResponse extends \Google\Service\CloudKMS\ListImportJobsResponse
     {
     }
 }

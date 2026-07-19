@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RollbackTargetResponse extends \Google\Model
-{
-    protected $rollbackConfigType = RollbackTargetConfig::class;
-    protected $rollbackConfigDataType = '';
-    /**
-     * The config of the rollback `Rollout` created or will be created.
-     *
-     * @param RollbackTargetConfig $rollbackConfig
-     */
-    public function setRollbackConfig(RollbackTargetConfig $rollbackConfig)
+namespace Google\Service\CloudDeploy {
+    class RollbackTargetResponse extends \Google\Model
     {
+        protected $rollbackConfigType = RollbackTargetConfig::class;
+        protected $rollbackConfigDataType = '';
+        /**
+         * The config of the rollback `Rollout` created or will be created.
+         *
+         * @param RollbackTargetConfig $rollbackConfig
+         */
+        public function setRollbackConfig(RollbackTargetConfig $rollbackConfig)
+        {
+        }
+        /**
+         * @return RollbackTargetConfig
+         */
+        public function getRollbackConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RollbackTargetConfig
+     * Runtime class alias of \Google\Service\CloudDeploy\RollbackTargetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRollbackConfig()
+    class Google_Service_CloudDeploy_RollbackTargetResponse extends \Google\Service\CloudDeploy\RollbackTargetResponse
     {
     }
 }

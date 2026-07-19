@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GcsDestination extends \Google\Model
-{
-    /**
-     * The URI of the Cloud Storage object. It's the same URI that is used by
-     * gsutil. Example: "gs://bucket_name/object_name". See [Viewing and Editing
-     * Object Metadata](https://cloud.google.com/storage/docs/viewing-editing-
-     * metadata) for more information. If the specified Cloud Storage object
-     * already exists and there is no
-     * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
-     * overwritten with the exported result.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The URI prefix of all generated Cloud Storage objects. Example:
-     * "gs://bucket_name/object_name_prefix". Each object URI is in format:
-     * "gs://bucket_name/object_name_prefix// and only contains assets for that
-     * type. starts from 0. Example:
-     * "gs://bucket_name/object_name_prefix/compute.googleapis.com/Disk/0" is the
-     * first shard of output objects containing all compute.googleapis.com/Disk
-     * assets. An INVALID_ARGUMENT error will be returned if file with the same
-     * name "gs://bucket_name/object_name_prefix" already exists.
-     *
-     * @var string
-     */
-    public $uriPrefix;
-    /**
-     * The URI of the Cloud Storage object. It's the same URI that is used by
-     * gsutil. Example: "gs://bucket_name/object_name". See [Viewing and Editing
-     * Object Metadata](https://cloud.google.com/storage/docs/viewing-editing-
-     * metadata) for more information. If the specified Cloud Storage object
-     * already exists and there is no
-     * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
-     * overwritten with the exported result.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\CloudAsset {
+    class GcsDestination extends \Google\Model
     {
+        /**
+         * The URI of the Cloud Storage object. It's the same URI that is used by
+         * gsutil. Example: "gs://bucket_name/object_name". See [Viewing and Editing
+         * Object Metadata](https://cloud.google.com/storage/docs/viewing-editing-
+         * metadata) for more information. If the specified Cloud Storage object
+         * already exists and there is no
+         * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
+         * overwritten with the exported result.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The URI prefix of all generated Cloud Storage objects. Example:
+         * "gs://bucket_name/object_name_prefix". Each object URI is in format:
+         * "gs://bucket_name/object_name_prefix// and only contains assets for that
+         * type. starts from 0. Example:
+         * "gs://bucket_name/object_name_prefix/compute.googleapis.com/Disk/0" is the
+         * first shard of output objects containing all compute.googleapis.com/Disk
+         * assets. An INVALID_ARGUMENT error will be returned if file with the same
+         * name "gs://bucket_name/object_name_prefix" already exists.
+         *
+         * @var string
+         */
+        public $uriPrefix;
+        /**
+         * The URI of the Cloud Storage object. It's the same URI that is used by
+         * gsutil. Example: "gs://bucket_name/object_name". See [Viewing and Editing
+         * Object Metadata](https://cloud.google.com/storage/docs/viewing-editing-
+         * metadata) for more information. If the specified Cloud Storage object
+         * already exists and there is no
+         * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
+         * overwritten with the exported result.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * The URI prefix of all generated Cloud Storage objects. Example:
+         * "gs://bucket_name/object_name_prefix". Each object URI is in format:
+         * "gs://bucket_name/object_name_prefix// and only contains assets for that
+         * type. starts from 0. Example:
+         * "gs://bucket_name/object_name_prefix/compute.googleapis.com/Disk/0" is the
+         * first shard of output objects containing all compute.googleapis.com/Disk
+         * assets. An INVALID_ARGUMENT error will be returned if file with the same
+         * name "gs://bucket_name/object_name_prefix" already exists.
+         *
+         * @param string $uriPrefix
+         */
+        public function setUriPrefix($uriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
-    {
-    }
-    /**
-     * The URI prefix of all generated Cloud Storage objects. Example:
-     * "gs://bucket_name/object_name_prefix". Each object URI is in format:
-     * "gs://bucket_name/object_name_prefix// and only contains assets for that
-     * type. starts from 0. Example:
-     * "gs://bucket_name/object_name_prefix/compute.googleapis.com/Disk/0" is the
-     * first shard of output objects containing all compute.googleapis.com/Disk
-     * assets. An INVALID_ARGUMENT error will be returned if file with the same
-     * name "gs://bucket_name/object_name_prefix" already exists.
-     *
-     * @param string $uriPrefix
-     */
-    public function setUriPrefix($uriPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUriPrefix()
+    class Google_Service_CloudAsset_GcsDestination extends \Google\Service\CloudAsset\GcsDestination
     {
     }
 }

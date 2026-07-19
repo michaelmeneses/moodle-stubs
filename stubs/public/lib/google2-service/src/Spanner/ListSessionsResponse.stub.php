@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * `next_page_token` can be sent in a subsequent ListSessions call to fetch
-     * more of the matching sessions.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionsType = Session::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListSessions call to fetch
-     * more of the matching sessions.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Spanner {
+    class ListSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * `next_page_token` can be sent in a subsequent ListSessions call to fetch
+         * more of the matching sessions.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionsType = Session::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListSessions call to fetch
+         * more of the matching sessions.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of requested sessions.
+         *
+         * @param Session[] $sessions
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return Session[]
+         */
+        public function getSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ListSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of requested sessions.
-     *
-     * @param Session[] $sessions
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return Session[]
-     */
-    public function getSessions()
+    class Google_Service_Spanner_ListSessionsResponse extends \Google\Service\Spanner\ListSessionsResponse
     {
     }
 }

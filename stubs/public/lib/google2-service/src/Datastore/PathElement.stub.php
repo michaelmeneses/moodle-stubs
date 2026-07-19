@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class PathElement extends \Google\Model
-{
-    /**
-     * The auto-allocated ID of the entity. Never equal to zero. Values less than
-     * zero are discouraged and may not be supported in the future.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of the entity. A kind matching regex `__.*__` is reserved/read-
-     * only. A kind must not contain more than 1500 bytes when UTF-8 encoded.
-     * Cannot be `""`. Must be valid UTF-8 bytes. Legacy values that are not valid
-     * UTF-8 are encoded as `__bytes__` where `` is the base-64 encoding of the
-     * bytes.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the entity. A name matching regex `__.*__` is reserved/read-
-     * only. A name must not be more than 1500 bytes when UTF-8 encoded. Cannot be
-     * `""`. Must be valid UTF-8 bytes. Legacy values that are not valid UTF-8 are
-     * encoded as `__bytes__` where `` is the base-64 encoding of the bytes.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The auto-allocated ID of the entity. Never equal to zero. Values less than
-     * zero are discouraged and may not be supported in the future.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Datastore {
+    class PathElement extends \Google\Model
     {
+        /**
+         * The auto-allocated ID of the entity. Never equal to zero. Values less than
+         * zero are discouraged and may not be supported in the future.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of the entity. A kind matching regex `__.*__` is reserved/read-
+         * only. A kind must not contain more than 1500 bytes when UTF-8 encoded.
+         * Cannot be `""`. Must be valid UTF-8 bytes. Legacy values that are not valid
+         * UTF-8 are encoded as `__bytes__` where `` is the base-64 encoding of the
+         * bytes.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the entity. A name matching regex `__.*__` is reserved/read-
+         * only. A name must not be more than 1500 bytes when UTF-8 encoded. Cannot be
+         * `""`. Must be valid UTF-8 bytes. Legacy values that are not valid UTF-8 are
+         * encoded as `__bytes__` where `` is the base-64 encoding of the bytes.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The auto-allocated ID of the entity. Never equal to zero. Values less than
+         * zero are discouraged and may not be supported in the future.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of the entity. A kind matching regex `__.*__` is reserved/read-
+         * only. A kind must not contain more than 1500 bytes when UTF-8 encoded.
+         * Cannot be `""`. Must be valid UTF-8 bytes. Legacy values that are not valid
+         * UTF-8 are encoded as `__bytes__` where `` is the base-64 encoding of the
+         * bytes.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the entity. A name matching regex `__.*__` is reserved/read-
+         * only. A name must not be more than 1500 bytes when UTF-8 encoded. Cannot be
+         * `""`. Must be valid UTF-8 bytes. Legacy values that are not valid UTF-8 are
+         * encoded as `__bytes__` where `` is the base-64 encoding of the bytes.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\PathElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of the entity. A kind matching regex `__.*__` is reserved/read-
-     * only. A kind must not contain more than 1500 bytes when UTF-8 encoded.
-     * Cannot be `""`. Must be valid UTF-8 bytes. Legacy values that are not valid
-     * UTF-8 are encoded as `__bytes__` where `` is the base-64 encoding of the
-     * bytes.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the entity. A name matching regex `__.*__` is reserved/read-
-     * only. A name must not be more than 1500 bytes when UTF-8 encoded. Cannot be
-     * `""`. Must be valid UTF-8 bytes. Legacy values that are not valid UTF-8 are
-     * encoded as `__bytes__` where `` is the base-64 encoding of the bytes.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Datastore_PathElement extends \Google\Service\Datastore\PathElement
     {
     }
 }

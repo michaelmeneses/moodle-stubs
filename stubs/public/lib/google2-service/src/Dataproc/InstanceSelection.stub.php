@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InstanceSelection extends \Google\Collection
-{
-    protected $collection_key = 'machineTypes';
-    /**
-     * Optional. Full machine-type names, e.g. "n1-standard-16".
-     *
-     * @var string[]
-     */
-    public $machineTypes;
-    /**
-     * Optional. Preference of this instance selection. Lower number means higher
-     * preference. Dataproc will first try to create a VM based on the machine-
-     * type with priority rank and fallback to next rank based on availability.
-     * Machine types and instance selections with the same priority have the same
-     * preference.
-     *
-     * @var int
-     */
-    public $rank;
-    /**
-     * Optional. Full machine-type names, e.g. "n1-standard-16".
-     *
-     * @param string[] $machineTypes
-     */
-    public function setMachineTypes($machineTypes)
+namespace Google\Service\Dataproc {
+    class InstanceSelection extends \Google\Collection
     {
+        protected $collection_key = 'machineTypes';
+        /**
+         * Optional. Full machine-type names, e.g. "n1-standard-16".
+         *
+         * @var string[]
+         */
+        public $machineTypes;
+        /**
+         * Optional. Preference of this instance selection. Lower number means higher
+         * preference. Dataproc will first try to create a VM based on the machine-
+         * type with priority rank and fallback to next rank based on availability.
+         * Machine types and instance selections with the same priority have the same
+         * preference.
+         *
+         * @var int
+         */
+        public $rank;
+        /**
+         * Optional. Full machine-type names, e.g. "n1-standard-16".
+         *
+         * @param string[] $machineTypes
+         */
+        public function setMachineTypes($machineTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMachineTypes()
+        {
+        }
+        /**
+         * Optional. Preference of this instance selection. Lower number means higher
+         * preference. Dataproc will first try to create a VM based on the machine-
+         * type with priority rank and fallback to next rank based on availability.
+         * Machine types and instance selections with the same priority have the same
+         * preference.
+         *
+         * @param int $rank
+         */
+        public function setRank($rank)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\InstanceSelection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineTypes()
-    {
-    }
-    /**
-     * Optional. Preference of this instance selection. Lower number means higher
-     * preference. Dataproc will first try to create a VM based on the machine-
-     * type with priority rank and fallback to next rank based on availability.
-     * Machine types and instance selections with the same priority have the same
-     * preference.
-     *
-     * @param int $rank
-     */
-    public function setRank($rank)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRank()
+    class Google_Service_Dataproc_InstanceSelection extends \Google\Service\Dataproc\InstanceSelection
     {
     }
 }

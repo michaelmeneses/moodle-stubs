@@ -21,44 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "resources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $resources = $connectorsService->projects_locations_connections_resources;
- *  </code>
- */
-class ProjectsLocationsConnectionsResources extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    use Google\Service\Connectors\GetResourceResponse;
+    use Google\Service\Connectors\ListResourcesResponse;
     /**
-     * Gets a specific resource. (resources.get)
-     *
-     * @param string $name Required. Resource name of the Resource. Format: projects
-     * /{project}/locations/{location}/connections/{connection}/resources/{resource}
-     * @param array $optParams Optional parameters.
-     * @return GetResourceResponse
-     * @throws \Google\Service\Exception
+     * The "resources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $resources = $connectorsService->projects_locations_connections_resources;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsConnectionsResources extends \Google\Service\Resource
     {
+        /**
+         * Gets a specific resource. (resources.get)
+         *
+         * @param string $name Required. Resource name of the Resource. Format: projects
+         * /{project}/locations/{location}/connections/{connection}/resources/{resource}
+         * @param array $optParams Optional parameters.
+         * @return GetResourceResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all available resources.
+         * (resources.listProjectsLocationsConnectionsResources)
+         *
+         * @param string $parent Required. Resource name of the connection. Format:
+         * projects/{project}/locations/{location}/connections/{connection}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Page size for the request.
+         * @opt_param string pageToken Optional. Page token for the request.
+         * @return ListResourcesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectionsResources($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all available resources.
-     * (resources.listProjectsLocationsConnectionsResources)
-     *
-     * @param string $parent Required. Resource name of the connection. Format:
-     * projects/{project}/locations/{location}/connections/{connection}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Page size for the request.
-     * @opt_param string pageToken Optional. Page token for the request.
-     * @return ListResourcesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnectionsResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsConnectionsResources($parent, $optParams = [])
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnectionsResources extends \Google\Service\Connectors\Resource\ProjectsLocationsConnectionsResources
     {
     }
 }

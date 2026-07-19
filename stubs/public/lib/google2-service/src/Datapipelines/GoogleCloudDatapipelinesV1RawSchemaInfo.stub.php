@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1RawSchemaInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $rawSchema;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setRawSchema($rawSchema)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1RawSchemaInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $rawSchema;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setRawSchema($rawSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawSchema()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1RawSchemaInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRawSchema()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1RawSchemaInfo extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1RawSchemaInfo
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1ReliabilityProjection extends \Google\Collection
-{
-    protected $collection_key = 'risks';
-    /**
-     * Per-recommender projection.
-     *
-     * @var array[]
-     */
-    public $details;
-    /**
-     * Reliability risks mitigated by this recommendation.
-     *
-     * @var string[]
-     */
-    public $risks;
-    /**
-     * Per-recommender projection.
-     *
-     * @param array[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1ReliabilityProjection extends \Google\Collection
     {
+        protected $collection_key = 'risks';
+        /**
+         * Per-recommender projection.
+         *
+         * @var array[]
+         */
+        public $details;
+        /**
+         * Reliability risks mitigated by this recommendation.
+         *
+         * @var string[]
+         */
+        public $risks;
+        /**
+         * Per-recommender projection.
+         *
+         * @param array[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Reliability risks mitigated by this recommendation.
+         *
+         * @param string[] $risks
+         */
+        public function setRisks($risks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRisks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1ReliabilityProjection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Reliability risks mitigated by this recommendation.
-     *
-     * @param string[] $risks
-     */
-    public function setRisks($risks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRisks()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1ReliabilityProjection extends \Google\Service\Recommender\GoogleCloudRecommenderV1ReliabilityProjection
     {
     }
 }

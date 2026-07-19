@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class ModifyLabelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'modifiedLabels';
-    /**
-     * This is always `"drive#modifyLabelsResponse"`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $modifiedLabelsType = Label::class;
-    protected $modifiedLabelsDataType = 'array';
-    /**
-     * This is always `"drive#modifyLabelsResponse"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Drive {
+    class ModifyLabelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'modifiedLabels';
+        /**
+         * This is always `"drive#modifyLabelsResponse"`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $modifiedLabelsType = Label::class;
+        protected $modifiedLabelsDataType = 'array';
+        /**
+         * This is always `"drive#modifyLabelsResponse"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of labels which were added or updated by the request.
+         *
+         * @param Label[] $modifiedLabels
+         */
+        public function setModifiedLabels($modifiedLabels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getModifiedLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\ModifyLabelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of labels which were added or updated by the request.
-     *
-     * @param Label[] $modifiedLabels
-     */
-    public function setModifiedLabels($modifiedLabels)
-    {
-    }
-    /**
-     * @return Label[]
-     */
-    public function getModifiedLabels()
+    class Google_Service_Drive_ModifyLabelsResponse extends \Google\Service\Drive\ModifyLabelsResponse
     {
     }
 }

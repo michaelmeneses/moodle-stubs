@@ -21,65 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat\Resource;
-
-/**
- * The "spaceNotificationSetting" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chatService = new Google\Service\HangoutsChat(...);
- *   $spaceNotificationSetting = $chatService->users_spaces_spaceNotificationSetting;
- *  </code>
- */
-class UsersSpacesSpaceNotificationSetting extends \Google\Service\Resource
-{
+namespace Google\Service\HangoutsChat\Resource {
+    use Google\Service\HangoutsChat\SpaceNotificationSetting;
     /**
-     * Gets the space notification setting. For an example, see [Get the caller's
-     * space notification setting](https://developers.google.com/workspace/chat/get-
-     * space-notification-setting). Requires [user
-     * authentication](https://developers.google.com/workspace/chat/authenticate-
-     * authorize-chat-user) with the [authorization
-     * scope](https://developers.google.com/workspace/chat/authenticate-
-     * authorize#chat-api-scopes): -
-     * `https://www.googleapis.com/auth/chat.users.spacesettings`
-     * (spaceNotificationSetting.get)
-     *
-     * @param string $name Required. Format:
-     * users/{user}/spaces/{space}/spaceNotificationSetting -
-     * `users/me/spaces/{space}/spaceNotificationSetting`, OR -
-     * `users/user@example.com/spaces/{space}/spaceNotificationSetting`, OR -
-     * `users/123456789/spaces/{space}/spaceNotificationSetting`. Note: Only the
-     * caller's user id or email is allowed in the path.
-     * @param array $optParams Optional parameters.
-     * @return SpaceNotificationSetting
-     * @throws \Google\Service\Exception
+     * The "spaceNotificationSetting" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chatService = new Google\Service\HangoutsChat(...);
+     *   $spaceNotificationSetting = $chatService->users_spaces_spaceNotificationSetting;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class UsersSpacesSpaceNotificationSetting extends \Google\Service\Resource
     {
+        /**
+         * Gets the space notification setting. For an example, see [Get the caller's
+         * space notification setting](https://developers.google.com/workspace/chat/get-
+         * space-notification-setting). Requires [user
+         * authentication](https://developers.google.com/workspace/chat/authenticate-
+         * authorize-chat-user) with the [authorization
+         * scope](https://developers.google.com/workspace/chat/authenticate-
+         * authorize#chat-api-scopes): -
+         * `https://www.googleapis.com/auth/chat.users.spacesettings`
+         * (spaceNotificationSetting.get)
+         *
+         * @param string $name Required. Format:
+         * users/{user}/spaces/{space}/spaceNotificationSetting -
+         * `users/me/spaces/{space}/spaceNotificationSetting`, OR -
+         * `users/user@example.com/spaces/{space}/spaceNotificationSetting`, OR -
+         * `users/123456789/spaces/{space}/spaceNotificationSetting`. Note: Only the
+         * caller's user id or email is allowed in the path.
+         * @param array $optParams Optional parameters.
+         * @return SpaceNotificationSetting
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the space notification setting. For an example, see [Update the
+         * caller's space notification
+         * setting](https://developers.google.com/workspace/chat/update-space-
+         * notification-setting). Requires [user
+         * authentication](https://developers.google.com/workspace/chat/authenticate-
+         * authorize-chat-user) with the [authorization
+         * scope](https://developers.google.com/workspace/chat/authenticate-
+         * authorize#chat-api-scopes): -
+         * `https://www.googleapis.com/auth/chat.users.spacesettings`
+         * (spaceNotificationSetting.patch)
+         *
+         * @param string $name Identifier. The resource name of the space notification
+         * setting. Format: `users/{user}/spaces/{space}/spaceNotificationSetting`.
+         * @param SpaceNotificationSetting $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Supported field paths: -
+         * `notification_setting` - `mute_setting`
+         * @return SpaceNotificationSetting
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SpaceNotificationSetting $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the space notification setting. For an example, see [Update the
-     * caller's space notification
-     * setting](https://developers.google.com/workspace/chat/update-space-
-     * notification-setting). Requires [user
-     * authentication](https://developers.google.com/workspace/chat/authenticate-
-     * authorize-chat-user) with the [authorization
-     * scope](https://developers.google.com/workspace/chat/authenticate-
-     * authorize#chat-api-scopes): -
-     * `https://www.googleapis.com/auth/chat.users.spacesettings`
-     * (spaceNotificationSetting.patch)
-     *
-     * @param string $name Identifier. The resource name of the space notification
-     * setting. Format: `users/{user}/spaces/{space}/spaceNotificationSetting`.
-     * @param SpaceNotificationSetting $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Supported field paths: -
-     * `notification_setting` - `mute_setting`
-     * @return SpaceNotificationSetting
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\HangoutsChat\Resource\UsersSpacesSpaceNotificationSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($name, SpaceNotificationSetting $postBody, $optParams = [])
+    class Google_Service_HangoutsChat_Resource_UsersSpacesSpaceNotificationSetting extends \Google\Service\HangoutsChat\Resource\UsersSpacesSpaceNotificationSetting
     {
     }
 }

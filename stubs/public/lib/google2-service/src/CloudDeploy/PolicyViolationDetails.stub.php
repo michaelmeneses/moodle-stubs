@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PolicyViolationDetails extends \Google\Model
-{
-    /**
-     * User readable message about why the request violated a policy. This is not
-     * intended for machine parsing.
-     *
-     * @var string
-     */
-    public $failureMessage;
-    /**
-     * Name of the policy that was violated. Policy resource will be in the format
-     * of `projects/{project}/locations/{location}/policies/{policy}`.
-     *
-     * @var string
-     */
-    public $policy;
-    /**
-     * Id of the rule that triggered the policy violation.
-     *
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * User readable message about why the request violated a policy. This is not
-     * intended for machine parsing.
-     *
-     * @param string $failureMessage
-     */
-    public function setFailureMessage($failureMessage)
+namespace Google\Service\CloudDeploy {
+    class PolicyViolationDetails extends \Google\Model
     {
+        /**
+         * User readable message about why the request violated a policy. This is not
+         * intended for machine parsing.
+         *
+         * @var string
+         */
+        public $failureMessage;
+        /**
+         * Name of the policy that was violated. Policy resource will be in the format
+         * of `projects/{project}/locations/{location}/policies/{policy}`.
+         *
+         * @var string
+         */
+        public $policy;
+        /**
+         * Id of the rule that triggered the policy violation.
+         *
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * User readable message about why the request violated a policy. This is not
+         * intended for machine parsing.
+         *
+         * @param string $failureMessage
+         */
+        public function setFailureMessage($failureMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureMessage()
+        {
+        }
+        /**
+         * Name of the policy that was violated. Policy resource will be in the format
+         * of `projects/{project}/locations/{location}/policies/{policy}`.
+         *
+         * @param string $policy
+         */
+        public function setPolicy($policy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * Id of the rule that triggered the policy violation.
+         *
+         * @param string $ruleId
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\PolicyViolationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureMessage()
-    {
-    }
-    /**
-     * Name of the policy that was violated. Policy resource will be in the format
-     * of `projects/{project}/locations/{location}/policies/{policy}`.
-     *
-     * @param string $policy
-     */
-    public function setPolicy($policy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * Id of the rule that triggered the policy violation.
-     *
-     * @param string $ruleId
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
+    class Google_Service_CloudDeploy_PolicyViolationDetails extends \Google\Service\CloudDeploy\PolicyViolationDetails
     {
     }
 }

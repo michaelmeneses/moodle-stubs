@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleHomePayload extends \Google\Model
-{
-    /**
-     * Output only. This identifies whether the subscription is attached to a
-     * Google Home structure.
-     *
-     * @var bool
-     */
-    public $attachedToGoogleStructure;
-    /**
-     * Optional. Structure identifier on Google side.
-     *
-     * @var string
-     */
-    public $googleStructureId;
-    /**
-     * Optional. This identifies the structure ID on partner side that the
-     * subscription should be applied to. Only required when the partner requires
-     * structure mapping.
-     *
-     * @var string
-     */
-    public $partnerStructureId;
-    /**
-     * Output only. This identifies whether the subscription is attached to a
-     * Google Home structure.
-     *
-     * @param bool $attachedToGoogleStructure
-     */
-    public function setAttachedToGoogleStructure($attachedToGoogleStructure)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleHomePayload extends \Google\Model
     {
+        /**
+         * Output only. This identifies whether the subscription is attached to a
+         * Google Home structure.
+         *
+         * @var bool
+         */
+        public $attachedToGoogleStructure;
+        /**
+         * Optional. Structure identifier on Google side.
+         *
+         * @var string
+         */
+        public $googleStructureId;
+        /**
+         * Optional. This identifies the structure ID on partner side that the
+         * subscription should be applied to. Only required when the partner requires
+         * structure mapping.
+         *
+         * @var string
+         */
+        public $partnerStructureId;
+        /**
+         * Output only. This identifies whether the subscription is attached to a
+         * Google Home structure.
+         *
+         * @param bool $attachedToGoogleStructure
+         */
+        public function setAttachedToGoogleStructure($attachedToGoogleStructure)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAttachedToGoogleStructure()
+        {
+        }
+        /**
+         * Optional. Structure identifier on Google side.
+         *
+         * @param string $googleStructureId
+         */
+        public function setGoogleStructureId($googleStructureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleStructureId()
+        {
+        }
+        /**
+         * Optional. This identifies the structure ID on partner side that the
+         * subscription should be applied to. Only required when the partner requires
+         * structure mapping.
+         *
+         * @param string $partnerStructureId
+         */
+        public function setPartnerStructureId($partnerStructureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerStructureId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleHomePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachedToGoogleStructure()
-    {
-    }
-    /**
-     * Optional. Structure identifier on Google side.
-     *
-     * @param string $googleStructureId
-     */
-    public function setGoogleStructureId($googleStructureId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleStructureId()
-    {
-    }
-    /**
-     * Optional. This identifies the structure ID on partner side that the
-     * subscription should be applied to. Only required when the partner requires
-     * structure mapping.
-     *
-     * @param string $partnerStructureId
-     */
-    public function setPartnerStructureId($partnerStructureId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerStructureId()
+    class Google_Service_PaymentsResellerSubscription_GoogleHomePayload extends \Google\Service\PaymentsResellerSubscription\GoogleHomePayload
     {
     }
 }

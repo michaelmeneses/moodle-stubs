@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaVertex extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaVertex extends \Google\Model
+    {
+        /**
+         * X coordinate.
+         *
+         * @var 
+         */
+        public $x;
+        /**
+         * Y coordinate.
+         *
+         * @var 
+         */
+        public $y;
+        public function setX($x)
+        {
+        }
+        public function getX()
+        {
+        }
+        public function setY($y)
+        {
+        }
+        public function getY()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * X coordinate.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVertex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $x;
-    /**
-     * Y coordinate.
-     *
-     * @var 
-     */
-    public $y;
-    public function setX($x)
-    {
-    }
-    public function getX()
-    {
-    }
-    public function setY($y)
-    {
-    }
-    public function getY()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaVertex extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVertex
     {
     }
 }

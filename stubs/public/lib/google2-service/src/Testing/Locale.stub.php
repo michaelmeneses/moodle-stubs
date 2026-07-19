@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Locale extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * The id for this locale. Example: "en_US".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A human-friendly name for this language/locale. Example: "English".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A human-friendly string representing the region for this locale. Example:
-     * "United States". Not present for every locale.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Tags for this dimension. Example: "default".
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * The id for this locale. Example: "en_US".
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Testing {
+    class Locale extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * The id for this locale. Example: "en_US".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A human-friendly name for this language/locale. Example: "English".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A human-friendly string representing the region for this locale. Example:
+         * "United States". Not present for every locale.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Tags for this dimension. Example: "default".
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * The id for this locale. Example: "en_US".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A human-friendly name for this language/locale. Example: "English".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A human-friendly string representing the region for this locale. Example:
+         * "United States". Not present for every locale.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Tags for this dimension. Example: "default".
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\Locale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A human-friendly name for this language/locale. Example: "English".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A human-friendly string representing the region for this locale. Example:
-     * "United States". Not present for every locale.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Tags for this dimension. Example: "default".
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Testing_Locale extends \Google\Service\Testing\Locale
     {
     }
 }

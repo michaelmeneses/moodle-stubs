@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PerfSampleSeries extends \Google\Model
-{
-    protected $basicPerfSampleSeriesType = BasicPerfSampleSeries::class;
-    protected $basicPerfSampleSeriesDataType = '';
-    /**
-     * A tool results execution ID. @OutputOnly
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * A tool results history ID. @OutputOnly
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * The cloud project @OutputOnly
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * A sample series id @OutputOnly
-     *
-     * @var string
-     */
-    public $sampleSeriesId;
-    /**
-     * A tool results step ID. @OutputOnly
-     *
-     * @var string
-     */
-    public $stepId;
-    /**
-     * Basic series represented by a line chart
-     *
-     * @param BasicPerfSampleSeries $basicPerfSampleSeries
-     */
-    public function setBasicPerfSampleSeries(BasicPerfSampleSeries $basicPerfSampleSeries)
+namespace Google\Service\ToolResults {
+    class PerfSampleSeries extends \Google\Model
     {
+        protected $basicPerfSampleSeriesType = BasicPerfSampleSeries::class;
+        protected $basicPerfSampleSeriesDataType = '';
+        /**
+         * A tool results execution ID. @OutputOnly
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * A tool results history ID. @OutputOnly
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * The cloud project @OutputOnly
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * A sample series id @OutputOnly
+         *
+         * @var string
+         */
+        public $sampleSeriesId;
+        /**
+         * A tool results step ID. @OutputOnly
+         *
+         * @var string
+         */
+        public $stepId;
+        /**
+         * Basic series represented by a line chart
+         *
+         * @param BasicPerfSampleSeries $basicPerfSampleSeries
+         */
+        public function setBasicPerfSampleSeries(BasicPerfSampleSeries $basicPerfSampleSeries)
+        {
+        }
+        /**
+         * @return BasicPerfSampleSeries
+         */
+        public function getBasicPerfSampleSeries()
+        {
+        }
+        /**
+         * A tool results execution ID. @OutputOnly
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * A tool results history ID. @OutputOnly
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * The cloud project @OutputOnly
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * A sample series id @OutputOnly
+         *
+         * @param string $sampleSeriesId
+         */
+        public function setSampleSeriesId($sampleSeriesId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleSeriesId()
+        {
+        }
+        /**
+         * A tool results step ID. @OutputOnly
+         *
+         * @param string $stepId
+         */
+        public function setStepId($stepId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStepId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicPerfSampleSeries
+     * Runtime class alias of \Google\Service\ToolResults\PerfSampleSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicPerfSampleSeries()
-    {
-    }
-    /**
-     * A tool results execution ID. @OutputOnly
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * A tool results history ID. @OutputOnly
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * The cloud project @OutputOnly
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * A sample series id @OutputOnly
-     *
-     * @param string $sampleSeriesId
-     */
-    public function setSampleSeriesId($sampleSeriesId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleSeriesId()
-    {
-    }
-    /**
-     * A tool results step ID. @OutputOnly
-     *
-     * @param string $stepId
-     */
-    public function setStepId($stepId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStepId()
+    class Google_Service_ToolResults_PerfSampleSeries extends \Google\Service\ToolResults\PerfSampleSeries
     {
     }
 }

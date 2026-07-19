@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class AppEngine extends \Google\Model
-{
-    /**
-     * The ID of the App Engine module underlying this service. Corresponds to the
-     * module_id resource label in the gae_app monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_gae_app).
-     *
-     * @var string
-     */
-    public $moduleId;
-    /**
-     * The ID of the App Engine module underlying this service. Corresponds to the
-     * module_id resource label in the gae_app monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_gae_app).
-     *
-     * @param string $moduleId
-     */
-    public function setModuleId($moduleId)
+namespace Google\Service\Monitoring {
+    class AppEngine extends \Google\Model
     {
+        /**
+         * The ID of the App Engine module underlying this service. Corresponds to the
+         * module_id resource label in the gae_app monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_gae_app).
+         *
+         * @var string
+         */
+        public $moduleId;
+        /**
+         * The ID of the App Engine module underlying this service. Corresponds to the
+         * module_id resource label in the gae_app monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_gae_app).
+         *
+         * @param string $moduleId
+         */
+        public function setModuleId($moduleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModuleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\AppEngine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModuleId()
+    class Google_Service_Monitoring_AppEngine extends \Google\Service\Monitoring\AppEngine
     {
     }
 }

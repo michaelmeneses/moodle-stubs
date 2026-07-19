@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class SbomConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $enablementConfig;
-    /**
-     * @var string
-     */
-    public $lastEnableTime;
-    /**
-     * @param string
-     */
-    public function setEnablementConfig($enablementConfig)
+namespace Google\Service\ArtifactRegistry {
+    class SbomConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $enablementConfig;
+        /**
+         * @var string
+         */
+        public $lastEnableTime;
+        /**
+         * @param string
+         */
+        public function setEnablementConfig($enablementConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnablementConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastEnableTime($lastEnableTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastEnableTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\SbomConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablementConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastEnableTime($lastEnableTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastEnableTime()
+    class Google_Service_ArtifactRegistry_SbomConfig extends \Google\Service\ArtifactRegistry\SbomConfig
     {
     }
 }

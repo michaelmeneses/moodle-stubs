@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AndroidProvisioningPartner (v1).
- *
- * <p>
- * Automates Android zero-touch enrollment for device resellers, customers, and
- * EMMs.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/zero-touch/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AndroidProvisioningPartner extends \Google\Service
-{
-    public $customers;
-    public $customers_configurations;
-    public $customers_devices;
-    public $customers_dpcs;
-    public $operations;
-    public $partners_customers;
-    public $partners_devices;
-    public $partners_vendors;
-    public $partners_vendors_customers;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AndroidProvisioningPartner
-     * service.
+     * Service definition for AndroidProvisioningPartner (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Automates Android zero-touch enrollment for device resellers, customers, and
+     * EMMs.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/zero-touch/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AndroidProvisioningPartner extends \Google\Service
+    {
+        public $customers;
+        public $customers_configurations;
+        public $customers_devices;
+        public $customers_dpcs;
+        public $operations;
+        public $partners_customers;
+        public $partners_devices;
+        public $partners_vendors;
+        public $partners_vendors_customers;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the AndroidProvisioningPartner
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidProvisioningPartner extends \Google\Service\AndroidProvisioningPartner
     {
     }
 }

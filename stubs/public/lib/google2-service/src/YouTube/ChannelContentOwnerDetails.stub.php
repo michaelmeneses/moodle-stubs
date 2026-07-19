@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelContentOwnerDetails extends \Google\Model
-{
-    /**
-     * The ID of the content owner linked to the channel.
-     *
-     * @var string
-     */
-    public $contentOwner;
-    /**
-     * The date and time when the channel was linked to the content owner.
-     *
-     * @var string
-     */
-    public $timeLinked;
-    /**
-     * The ID of the content owner linked to the channel.
-     *
-     * @param string $contentOwner
-     */
-    public function setContentOwner($contentOwner)
+namespace Google\Service\YouTube {
+    class ChannelContentOwnerDetails extends \Google\Model
     {
+        /**
+         * The ID of the content owner linked to the channel.
+         *
+         * @var string
+         */
+        public $contentOwner;
+        /**
+         * The date and time when the channel was linked to the content owner.
+         *
+         * @var string
+         */
+        public $timeLinked;
+        /**
+         * The ID of the content owner linked to the channel.
+         *
+         * @param string $contentOwner
+         */
+        public function setContentOwner($contentOwner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentOwner()
+        {
+        }
+        /**
+         * The date and time when the channel was linked to the content owner.
+         *
+         * @param string $timeLinked
+         */
+        public function setTimeLinked($timeLinked)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeLinked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelContentOwnerDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentOwner()
-    {
-    }
-    /**
-     * The date and time when the channel was linked to the content owner.
-     *
-     * @param string $timeLinked
-     */
-    public function setTimeLinked($timeLinked)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeLinked()
+    class Google_Service_YouTube_ChannelContentOwnerDetails extends \Google\Service\YouTube\ChannelContentOwnerDetails
     {
     }
 }

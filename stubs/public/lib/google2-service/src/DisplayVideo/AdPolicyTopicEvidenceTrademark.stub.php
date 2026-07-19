@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceTrademark extends \Google\Collection
-{
-    protected $collection_key = 'countryRestrictions';
-    protected $countryRestrictionsType = AdPolicyCriterionRestriction::class;
-    protected $countryRestrictionsDataType = 'array';
-    /**
-     * The trademark content owner.
-     *
-     * @var string
-     */
-    public $owner;
-    /**
-     * The trademark term.
-     *
-     * @var string
-     */
-    public $term;
-    /**
-     * Countries where the policy violation is relevant.
-     *
-     * @param AdPolicyCriterionRestriction[] $countryRestrictions
-     */
-    public function setCountryRestrictions($countryRestrictions)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceTrademark extends \Google\Collection
     {
+        protected $collection_key = 'countryRestrictions';
+        protected $countryRestrictionsType = AdPolicyCriterionRestriction::class;
+        protected $countryRestrictionsDataType = 'array';
+        /**
+         * The trademark content owner.
+         *
+         * @var string
+         */
+        public $owner;
+        /**
+         * The trademark term.
+         *
+         * @var string
+         */
+        public $term;
+        /**
+         * Countries where the policy violation is relevant.
+         *
+         * @param AdPolicyCriterionRestriction[] $countryRestrictions
+         */
+        public function setCountryRestrictions($countryRestrictions)
+        {
+        }
+        /**
+         * @return AdPolicyCriterionRestriction[]
+         */
+        public function getCountryRestrictions()
+        {
+        }
+        /**
+         * The trademark content owner.
+         *
+         * @param string $owner
+         */
+        public function setOwner($owner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwner()
+        {
+        }
+        /**
+         * The trademark term.
+         *
+         * @param string $term
+         */
+        public function setTerm($term)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdPolicyCriterionRestriction[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceTrademark registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryRestrictions()
-    {
-    }
-    /**
-     * The trademark content owner.
-     *
-     * @param string $owner
-     */
-    public function setOwner($owner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwner()
-    {
-    }
-    /**
-     * The trademark term.
-     *
-     * @param string $term
-     */
-    public function setTerm($term)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerm()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceTrademark extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceTrademark
     {
     }
 }

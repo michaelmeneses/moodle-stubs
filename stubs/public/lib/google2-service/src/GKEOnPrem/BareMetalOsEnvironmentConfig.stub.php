@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalOsEnvironmentConfig extends \Google\Model
-{
-    /**
-     * Whether the package repo should not be included when initializing bare
-     * metal machines.
-     *
-     * @var bool
-     */
-    public $packageRepoExcluded;
-    /**
-     * Whether the package repo should not be included when initializing bare
-     * metal machines.
-     *
-     * @param bool $packageRepoExcluded
-     */
-    public function setPackageRepoExcluded($packageRepoExcluded)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalOsEnvironmentConfig extends \Google\Model
     {
+        /**
+         * Whether the package repo should not be included when initializing bare
+         * metal machines.
+         *
+         * @var bool
+         */
+        public $packageRepoExcluded;
+        /**
+         * Whether the package repo should not be included when initializing bare
+         * metal machines.
+         *
+         * @param bool $packageRepoExcluded
+         */
+        public function setPackageRepoExcluded($packageRepoExcluded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPackageRepoExcluded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalOsEnvironmentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageRepoExcluded()
+    class Google_Service_GKEOnPrem_BareMetalOsEnvironmentConfig extends \Google\Service\GKEOnPrem\BareMetalOsEnvironmentConfig
     {
     }
 }

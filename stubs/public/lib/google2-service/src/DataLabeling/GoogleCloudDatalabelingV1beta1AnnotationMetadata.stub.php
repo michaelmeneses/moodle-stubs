@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1AnnotationMetadata extends \Google\Model
-{
-    protected $operatorMetadataType = GoogleCloudDatalabelingV1beta1OperatorMetadata::class;
-    protected $operatorMetadataDataType = '';
-    /**
-     * Metadata related to human labeling.
-     *
-     * @param GoogleCloudDatalabelingV1beta1OperatorMetadata $operatorMetadata
-     */
-    public function setOperatorMetadata(GoogleCloudDatalabelingV1beta1OperatorMetadata $operatorMetadata)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1AnnotationMetadata extends \Google\Model
     {
+        protected $operatorMetadataType = GoogleCloudDatalabelingV1beta1OperatorMetadata::class;
+        protected $operatorMetadataDataType = '';
+        /**
+         * Metadata related to human labeling.
+         *
+         * @param GoogleCloudDatalabelingV1beta1OperatorMetadata $operatorMetadata
+         */
+        public function setOperatorMetadata(GoogleCloudDatalabelingV1beta1OperatorMetadata $operatorMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1OperatorMetadata
+         */
+        public function getOperatorMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1OperatorMetadata
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorMetadata()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1AnnotationMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationMetadata
     {
     }
 }

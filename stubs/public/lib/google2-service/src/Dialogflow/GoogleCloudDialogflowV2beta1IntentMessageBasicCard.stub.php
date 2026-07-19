@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageBasicCard extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = GoogleCloudDialogflowV2beta1IntentMessageBasicCardButton::class;
-    protected $buttonsDataType = 'array';
-    /**
-     * Required, unless image is present. The body text of the card.
-     *
-     * @var string
-     */
-    public $formattedText;
-    protected $imageType = GoogleCloudDialogflowV2beta1IntentMessageImage::class;
-    protected $imageDataType = '';
-    /**
-     * Optional. The subtitle of the card.
-     *
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * Optional. The title of the card.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. The collection of card buttons.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageBasicCardButton[] $buttons
-     */
-    public function setButtons($buttons)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageBasicCard extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = GoogleCloudDialogflowV2beta1IntentMessageBasicCardButton::class;
+        protected $buttonsDataType = 'array';
+        /**
+         * Required, unless image is present. The body text of the card.
+         *
+         * @var string
+         */
+        public $formattedText;
+        protected $imageType = GoogleCloudDialogflowV2beta1IntentMessageImage::class;
+        protected $imageDataType = '';
+        /**
+         * Optional. The subtitle of the card.
+         *
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * Optional. The title of the card.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. The collection of card buttons.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageBasicCardButton[] $buttons
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageBasicCardButton[]
+         */
+        public function getButtons()
+        {
+        }
+        /**
+         * Required, unless image is present. The body text of the card.
+         *
+         * @param string $formattedText
+         */
+        public function setFormattedText($formattedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedText()
+        {
+        }
+        /**
+         * Optional. The image for the card.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageImage $image
+         */
+        public function setImage(GoogleCloudDialogflowV2beta1IntentMessageImage $image)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. The subtitle of the card.
+         *
+         * @param string $subtitle
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * Optional. The title of the card.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageBasicCardButton[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageBasicCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
-    {
-    }
-    /**
-     * Required, unless image is present. The body text of the card.
-     *
-     * @param string $formattedText
-     */
-    public function setFormattedText($formattedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedText()
-    {
-    }
-    /**
-     * Optional. The image for the card.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageImage $image
-     */
-    public function setImage(GoogleCloudDialogflowV2beta1IntentMessageImage $image)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. The subtitle of the card.
-     *
-     * @param string $subtitle
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * Optional. The title of the card.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageBasicCard extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageBasicCard
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class FindFullHashesRequest extends \Google\Collection
-{
-    protected $collection_key = 'clientStates';
-    protected $apiClientType = ClientInfo::class;
-    protected $apiClientDataType = '';
-    public $apiClient;
-    protected $clientType = ClientInfo::class;
-    protected $clientDataType = '';
-    public $client;
-    /**
-     * @var string[]
-     */
-    public $clientStates;
-    protected $threatInfoType = ThreatInfo::class;
-    protected $threatInfoDataType = '';
-    public $threatInfo;
-    /**
-     * @param ClientInfo
-     */
-    public function setApiClient(ClientInfo $apiClient)
+namespace Google\Service\Safebrowsing {
+    class FindFullHashesRequest extends \Google\Collection
     {
+        protected $collection_key = 'clientStates';
+        protected $apiClientType = ClientInfo::class;
+        protected $apiClientDataType = '';
+        public $apiClient;
+        protected $clientType = ClientInfo::class;
+        protected $clientDataType = '';
+        public $client;
+        /**
+         * @var string[]
+         */
+        public $clientStates;
+        protected $threatInfoType = ThreatInfo::class;
+        protected $threatInfoDataType = '';
+        public $threatInfo;
+        /**
+         * @param ClientInfo
+         */
+        public function setApiClient(ClientInfo $apiClient)
+        {
+        }
+        /**
+         * @return ClientInfo
+         */
+        public function getApiClient()
+        {
+        }
+        /**
+         * @param ClientInfo
+         */
+        public function setClient(ClientInfo $client)
+        {
+        }
+        /**
+         * @return ClientInfo
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setClientStates($clientStates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClientStates()
+        {
+        }
+        /**
+         * @param ThreatInfo
+         */
+        public function setThreatInfo(ThreatInfo $threatInfo)
+        {
+        }
+        /**
+         * @return ThreatInfo
+         */
+        public function getThreatInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\FindFullHashesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiClient()
-    {
-    }
-    /**
-     * @param ClientInfo
-     */
-    public function setClient(ClientInfo $client)
-    {
-    }
-    /**
-     * @return ClientInfo
-     */
-    public function getClient()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setClientStates($clientStates)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getClientStates()
-    {
-    }
-    /**
-     * @param ThreatInfo
-     */
-    public function setThreatInfo(ThreatInfo $threatInfo)
-    {
-    }
-    /**
-     * @return ThreatInfo
-     */
-    public function getThreatInfo()
+    class Google_Service_Safebrowsing_FindFullHashesRequest extends \Google\Service\Safebrowsing\FindFullHashesRequest
     {
     }
 }

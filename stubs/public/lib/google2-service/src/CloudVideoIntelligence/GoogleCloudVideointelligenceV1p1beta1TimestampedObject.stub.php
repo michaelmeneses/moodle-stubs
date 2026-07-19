@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p1beta1TimestampedObject extends \Google\Collection
-{
-    protected $collection_key = 'landmarks';
-    protected $attributesType = GoogleCloudVideointelligenceV1p1beta1DetectedAttribute::class;
-    protected $attributesDataType = 'array';
-    protected $landmarksType = GoogleCloudVideointelligenceV1p1beta1DetectedLandmark::class;
-    protected $landmarksDataType = 'array';
-    protected $normalizedBoundingBoxType = GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox::class;
-    protected $normalizedBoundingBoxDataType = '';
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * video frame for this object.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * Optional. The attributes of the object in the bounding box.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1DetectedAttribute[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p1beta1TimestampedObject extends \Google\Collection
     {
+        protected $collection_key = 'landmarks';
+        protected $attributesType = GoogleCloudVideointelligenceV1p1beta1DetectedAttribute::class;
+        protected $attributesDataType = 'array';
+        protected $landmarksType = GoogleCloudVideointelligenceV1p1beta1DetectedLandmark::class;
+        protected $landmarksDataType = 'array';
+        protected $normalizedBoundingBoxType = GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox::class;
+        protected $normalizedBoundingBoxDataType = '';
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * video frame for this object.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * Optional. The attributes of the object in the bounding box.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1DetectedAttribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1DetectedAttribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Optional. The detected landmarks.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1DetectedLandmark[] $landmarks
+         */
+        public function setLandmarks($landmarks)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1DetectedLandmark[]
+         */
+        public function getLandmarks()
+        {
+        }
+        /**
+         * Normalized Bounding box in a frame, where the object is located.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox $normalizedBoundingBox
+         */
+        public function setNormalizedBoundingBox(GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox $normalizedBoundingBox)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox
+         */
+        public function getNormalizedBoundingBox()
+        {
+        }
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * video frame for this object.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p1beta1DetectedAttribute[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p1beta1TimestampedObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Optional. The detected landmarks.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1DetectedLandmark[] $landmarks
-     */
-    public function setLandmarks($landmarks)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p1beta1DetectedLandmark[]
-     */
-    public function getLandmarks()
-    {
-    }
-    /**
-     * Normalized Bounding box in a frame, where the object is located.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox $normalizedBoundingBox
-     */
-    public function setNormalizedBoundingBox(GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox $normalizedBoundingBox)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingBox
-     */
-    public function getNormalizedBoundingBox()
-    {
-    }
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * video frame for this object.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p1beta1TimestampedObject extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p1beta1TimestampedObject
     {
     }
 }

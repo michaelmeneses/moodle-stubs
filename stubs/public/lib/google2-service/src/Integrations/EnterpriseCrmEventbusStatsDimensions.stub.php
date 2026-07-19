@@ -21,195 +21,204 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusStatsDimensions extends \Google\Model
-{
-    public const ENUM_FILTER_TYPE_DEFAULT_INCLUSIVE = 'DEFAULT_INCLUSIVE';
-    public const ENUM_FILTER_TYPE_EXCLUSIVE = 'EXCLUSIVE';
-    public const RETRY_ATTEMPT_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Task has completed successfully or has depleted all retry attempts.
-     */
-    public const RETRY_ATTEMPT_FINAL = 'FINAL';
-    /**
-     * Task has failed but may be retried.
-     */
-    public const RETRY_ATTEMPT_RETRYABLE = 'RETRYABLE';
-    /**
-     * Task has been deliberately canceled.
-     */
-    public const RETRY_ATTEMPT_CANCELED = 'CANCELED';
-    /**
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Whether to include or exclude the enums matching the regex.
-     *
-     * @var string
-     */
-    public $enumFilterType;
-    /**
-     * @var string
-     */
-    public $errorEnumString;
-    /**
-     * @var string
-     */
-    public $retryAttempt;
-    /**
-     * @var string
-     */
-    public $taskName;
-    /**
-     * @var string
-     */
-    public $taskNumber;
-    /**
-     * Stats have been or will be aggregated on set fields for any semantically-
-     * meaningful combination.
-     *
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * @var string
-     */
-    public $warningEnumString;
-    /**
-     * @var string
-     */
-    public $workflowId;
-    /**
-     * @var string
-     */
-    public $workflowName;
-    /**
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusStatsDimensions extends \Google\Model
     {
+        public const ENUM_FILTER_TYPE_DEFAULT_INCLUSIVE = 'DEFAULT_INCLUSIVE';
+        public const ENUM_FILTER_TYPE_EXCLUSIVE = 'EXCLUSIVE';
+        public const RETRY_ATTEMPT_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Task has completed successfully or has depleted all retry attempts.
+         */
+        public const RETRY_ATTEMPT_FINAL = 'FINAL';
+        /**
+         * Task has failed but may be retried.
+         */
+        public const RETRY_ATTEMPT_RETRYABLE = 'RETRYABLE';
+        /**
+         * Task has been deliberately canceled.
+         */
+        public const RETRY_ATTEMPT_CANCELED = 'CANCELED';
+        /**
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Whether to include or exclude the enums matching the regex.
+         *
+         * @var string
+         */
+        public $enumFilterType;
+        /**
+         * @var string
+         */
+        public $errorEnumString;
+        /**
+         * @var string
+         */
+        public $retryAttempt;
+        /**
+         * @var string
+         */
+        public $taskName;
+        /**
+         * @var string
+         */
+        public $taskNumber;
+        /**
+         * Stats have been or will be aggregated on set fields for any semantically-
+         * meaningful combination.
+         *
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * @var string
+         */
+        public $warningEnumString;
+        /**
+         * @var string
+         */
+        public $workflowId;
+        /**
+         * @var string
+         */
+        public $workflowName;
+        /**
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Whether to include or exclude the enums matching the regex.
+         *
+         * Accepted values: DEFAULT_INCLUSIVE, EXCLUSIVE
+         *
+         * @param self::ENUM_FILTER_TYPE_* $enumFilterType
+         */
+        public function setEnumFilterType($enumFilterType)
+        {
+        }
+        /**
+         * @return self::ENUM_FILTER_TYPE_*
+         */
+        public function getEnumFilterType()
+        {
+        }
+        /**
+         * @param string $errorEnumString
+         */
+        public function setErrorEnumString($errorEnumString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorEnumString()
+        {
+        }
+        /**
+         * @param self::RETRY_ATTEMPT_* $retryAttempt
+         */
+        public function setRetryAttempt($retryAttempt)
+        {
+        }
+        /**
+         * @return self::RETRY_ATTEMPT_*
+         */
+        public function getRetryAttempt()
+        {
+        }
+        /**
+         * @param string $taskName
+         */
+        public function setTaskName($taskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskName()
+        {
+        }
+        /**
+         * @param string $taskNumber
+         */
+        public function setTaskNumber($taskNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskNumber()
+        {
+        }
+        /**
+         * Stats have been or will be aggregated on set fields for any semantically-
+         * meaningful combination.
+         *
+         * @param string $triggerId
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
+        /**
+         * @param string $warningEnumString
+         */
+        public function setWarningEnumString($warningEnumString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWarningEnumString()
+        {
+        }
+        /**
+         * @param string $workflowId
+         */
+        public function setWorkflowId($workflowId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkflowId()
+        {
+        }
+        /**
+         * @param string $workflowName
+         */
+        public function setWorkflowName($workflowName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkflowName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusStatsDimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Whether to include or exclude the enums matching the regex.
-     *
-     * Accepted values: DEFAULT_INCLUSIVE, EXCLUSIVE
-     *
-     * @param self::ENUM_FILTER_TYPE_* $enumFilterType
-     */
-    public function setEnumFilterType($enumFilterType)
-    {
-    }
-    /**
-     * @return self::ENUM_FILTER_TYPE_*
-     */
-    public function getEnumFilterType()
-    {
-    }
-    /**
-     * @param string $errorEnumString
-     */
-    public function setErrorEnumString($errorEnumString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorEnumString()
-    {
-    }
-    /**
-     * @param self::RETRY_ATTEMPT_* $retryAttempt
-     */
-    public function setRetryAttempt($retryAttempt)
-    {
-    }
-    /**
-     * @return self::RETRY_ATTEMPT_*
-     */
-    public function getRetryAttempt()
-    {
-    }
-    /**
-     * @param string $taskName
-     */
-    public function setTaskName($taskName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskName()
-    {
-    }
-    /**
-     * @param string $taskNumber
-     */
-    public function setTaskNumber($taskNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskNumber()
-    {
-    }
-    /**
-     * Stats have been or will be aggregated on set fields for any semantically-
-     * meaningful combination.
-     *
-     * @param string $triggerId
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerId()
-    {
-    }
-    /**
-     * @param string $warningEnumString
-     */
-    public function setWarningEnumString($warningEnumString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWarningEnumString()
-    {
-    }
-    /**
-     * @param string $workflowId
-     */
-    public function setWorkflowId($workflowId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkflowId()
-    {
-    }
-    /**
-     * @param string $workflowName
-     */
-    public function setWorkflowName($workflowName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkflowName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusStatsDimensions extends \Google\Service\Integrations\EnterpriseCrmEventbusStatsDimensions
     {
     }
 }

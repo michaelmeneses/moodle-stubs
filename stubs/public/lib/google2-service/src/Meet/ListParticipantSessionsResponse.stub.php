@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ListParticipantSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'participantSessions';
-    /**
-     * Token to be circulated back for further List call if current List doesn't
-     * include all the participants. Unset if all participants are returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $participantSessionsType = ParticipantSession::class;
-    protected $participantSessionsDataType = 'array';
-    /**
-     * Token to be circulated back for further List call if current List doesn't
-     * include all the participants. Unset if all participants are returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Meet {
+    class ListParticipantSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'participantSessions';
+        /**
+         * Token to be circulated back for further List call if current List doesn't
+         * include all the participants. Unset if all participants are returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $participantSessionsType = ParticipantSession::class;
+        protected $participantSessionsDataType = 'array';
+        /**
+         * Token to be circulated back for further List call if current List doesn't
+         * include all the participants. Unset if all participants are returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of participants in one page.
+         *
+         * @param ParticipantSession[] $participantSessions
+         */
+        public function setParticipantSessions($participantSessions)
+        {
+        }
+        /**
+         * @return ParticipantSession[]
+         */
+        public function getParticipantSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\ListParticipantSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of participants in one page.
-     *
-     * @param ParticipantSession[] $participantSessions
-     */
-    public function setParticipantSessions($participantSessions)
-    {
-    }
-    /**
-     * @return ParticipantSession[]
-     */
-    public function getParticipantSessions()
+    class Google_Service_Meet_ListParticipantSessionsResponse extends \Google\Service\Meet\ListParticipantSessionsResponse
     {
     }
 }

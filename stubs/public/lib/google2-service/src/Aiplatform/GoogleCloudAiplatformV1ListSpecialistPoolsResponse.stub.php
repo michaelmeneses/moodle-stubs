@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListSpecialistPoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'specialistPools';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $specialistPoolsType = GoogleCloudAiplatformV1SpecialistPool::class;
-    protected $specialistPoolsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListSpecialistPoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'specialistPools';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $specialistPoolsType = GoogleCloudAiplatformV1SpecialistPool::class;
+        protected $specialistPoolsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of SpecialistPools that matches the specified filter in the request.
+         *
+         * @param GoogleCloudAiplatformV1SpecialistPool[] $specialistPools
+         */
+        public function setSpecialistPools($specialistPools)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SpecialistPool[]
+         */
+        public function getSpecialistPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSpecialistPoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of SpecialistPools that matches the specified filter in the request.
-     *
-     * @param GoogleCloudAiplatformV1SpecialistPool[] $specialistPools
-     */
-    public function setSpecialistPools($specialistPools)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SpecialistPool[]
-     */
-    public function getSpecialistPools()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListSpecialistPoolsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSpecialistPoolsResponse
     {
     }
 }

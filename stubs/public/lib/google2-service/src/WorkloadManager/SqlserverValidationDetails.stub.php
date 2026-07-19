@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SqlserverValidationDetails extends \Google\Model
-{
-    /**
-     * Required. Collected data is in format.
-     *
-     * @var string[]
-     */
-    public $fields;
-    /**
-     * Required. Collected data is in format.
-     *
-     * @param string[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\WorkloadManager {
+    class SqlserverValidationDetails extends \Google\Model
     {
+        /**
+         * Required. Collected data is in format.
+         *
+         * @var string[]
+         */
+        public $fields;
+        /**
+         * Required. Collected data is in format.
+         *
+         * @param string[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\SqlserverValidationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_WorkloadManager_SqlserverValidationDetails extends \Google\Service\WorkloadManager\SqlserverValidationDetails
     {
     }
 }

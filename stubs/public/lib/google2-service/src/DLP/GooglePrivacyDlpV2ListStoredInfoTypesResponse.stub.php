@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListStoredInfoTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'storedInfoTypes';
-    /**
-     * If the next page is available then the next page token to be used in the
-     * following ListStoredInfoTypes request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $storedInfoTypesType = GooglePrivacyDlpV2StoredInfoType::class;
-    protected $storedInfoTypesDataType = 'array';
-    /**
-     * If the next page is available then the next page token to be used in the
-     * following ListStoredInfoTypes request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListStoredInfoTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'storedInfoTypes';
+        /**
+         * If the next page is available then the next page token to be used in the
+         * following ListStoredInfoTypes request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $storedInfoTypesType = GooglePrivacyDlpV2StoredInfoType::class;
+        protected $storedInfoTypesDataType = 'array';
+        /**
+         * If the next page is available then the next page token to be used in the
+         * following ListStoredInfoTypes request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of storedInfoTypes, up to page_size in ListStoredInfoTypesRequest.
+         *
+         * @param GooglePrivacyDlpV2StoredInfoType[] $storedInfoTypes
+         */
+        public function setStoredInfoTypes($storedInfoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StoredInfoType[]
+         */
+        public function getStoredInfoTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListStoredInfoTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of storedInfoTypes, up to page_size in ListStoredInfoTypesRequest.
-     *
-     * @param GooglePrivacyDlpV2StoredInfoType[] $storedInfoTypes
-     */
-    public function setStoredInfoTypes($storedInfoTypes)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2StoredInfoType[]
-     */
-    public function getStoredInfoTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListStoredInfoTypesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListStoredInfoTypesResponse
     {
     }
 }

@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1McpTool extends \Google\Model
-{
-    protected $annotationsType = GoogleCloudApihubV1ToolAnnotations::class;
-    protected $annotationsDataType = '';
-    /**
-     * Optional. Description of what the tool does.
-     *
-     * @var string
-     */
-    public $description;
-    protected $inputSchemaType = GoogleCloudApihubV1OperationSchema::class;
-    protected $inputSchemaDataType = '';
-    /**
-     * Required. The name of the tool, unique within its parent scope (version).
-     *
-     * @var string
-     */
-    public $name;
-    protected $outputSchemaType = GoogleCloudApihubV1OperationSchema::class;
-    protected $outputSchemaDataType = '';
-    /**
-     * Optional. Optional title for the tool.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. Optional annotations for the tool.
-     *
-     * @param GoogleCloudApihubV1ToolAnnotations $annotations
-     */
-    public function setAnnotations(GoogleCloudApihubV1ToolAnnotations $annotations)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1McpTool extends \Google\Model
     {
+        protected $annotationsType = GoogleCloudApihubV1ToolAnnotations::class;
+        protected $annotationsDataType = '';
+        /**
+         * Optional. Description of what the tool does.
+         *
+         * @var string
+         */
+        public $description;
+        protected $inputSchemaType = GoogleCloudApihubV1OperationSchema::class;
+        protected $inputSchemaDataType = '';
+        /**
+         * Required. The name of the tool, unique within its parent scope (version).
+         *
+         * @var string
+         */
+        public $name;
+        protected $outputSchemaType = GoogleCloudApihubV1OperationSchema::class;
+        protected $outputSchemaDataType = '';
+        /**
+         * Optional. Optional title for the tool.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. Optional annotations for the tool.
+         *
+         * @param GoogleCloudApihubV1ToolAnnotations $annotations
+         */
+        public function setAnnotations(GoogleCloudApihubV1ToolAnnotations $annotations)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ToolAnnotations
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Optional. Description of what the tool does.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Input schema for the operation. This can be parsed only from MCP
+         * schema type.
+         *
+         * @param GoogleCloudApihubV1OperationSchema $inputSchema
+         */
+        public function setInputSchema(GoogleCloudApihubV1OperationSchema $inputSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1OperationSchema
+         */
+        public function getInputSchema()
+        {
+        }
+        /**
+         * Required. The name of the tool, unique within its parent scope (version).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Output schema for the operation. This can be parsed only from MCP
+         * schema type.
+         *
+         * @param GoogleCloudApihubV1OperationSchema $outputSchema
+         */
+        public function setOutputSchema(GoogleCloudApihubV1OperationSchema $outputSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1OperationSchema
+         */
+        public function getOutputSchema()
+        {
+        }
+        /**
+         * Optional. Optional title for the tool.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ToolAnnotations
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1McpTool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Optional. Description of what the tool does.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Input schema for the operation. This can be parsed only from MCP
-     * schema type.
-     *
-     * @param GoogleCloudApihubV1OperationSchema $inputSchema
-     */
-    public function setInputSchema(GoogleCloudApihubV1OperationSchema $inputSchema)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1OperationSchema
-     */
-    public function getInputSchema()
-    {
-    }
-    /**
-     * Required. The name of the tool, unique within its parent scope (version).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Output schema for the operation. This can be parsed only from MCP
-     * schema type.
-     *
-     * @param GoogleCloudApihubV1OperationSchema $outputSchema
-     */
-    public function setOutputSchema(GoogleCloudApihubV1OperationSchema $outputSchema)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1OperationSchema
-     */
-    public function getOutputSchema()
-    {
-    }
-    /**
-     * Optional. Optional title for the tool.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_APIhub_GoogleCloudApihubV1McpTool extends \Google\Service\APIhub\GoogleCloudApihubV1McpTool
     {
     }
 }

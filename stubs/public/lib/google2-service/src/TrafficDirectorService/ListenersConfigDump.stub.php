@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class ListenersConfigDump extends \Google\Collection
-{
-    protected $collection_key = 'staticListeners';
-    protected $dynamicListenersType = DynamicListener::class;
-    protected $dynamicListenersDataType = 'array';
-    protected $staticListenersType = StaticListener::class;
-    protected $staticListenersDataType = 'array';
-    /**
-     * This is the :ref:`version_info ` in the last processed LDS discovery
-     * response. If there are only static bootstrap listeners, this field will be
-     * "".
-     *
-     * @var string
-     */
-    public $versionInfo;
-    /**
-     * State for any warming, active, or draining listeners.
-     *
-     * @param DynamicListener[] $dynamicListeners
-     */
-    public function setDynamicListeners($dynamicListeners)
+namespace Google\Service\TrafficDirectorService {
+    class ListenersConfigDump extends \Google\Collection
     {
+        protected $collection_key = 'staticListeners';
+        protected $dynamicListenersType = DynamicListener::class;
+        protected $dynamicListenersDataType = 'array';
+        protected $staticListenersType = StaticListener::class;
+        protected $staticListenersDataType = 'array';
+        /**
+         * This is the :ref:`version_info ` in the last processed LDS discovery
+         * response. If there are only static bootstrap listeners, this field will be
+         * "".
+         *
+         * @var string
+         */
+        public $versionInfo;
+        /**
+         * State for any warming, active, or draining listeners.
+         *
+         * @param DynamicListener[] $dynamicListeners
+         */
+        public function setDynamicListeners($dynamicListeners)
+        {
+        }
+        /**
+         * @return DynamicListener[]
+         */
+        public function getDynamicListeners()
+        {
+        }
+        /**
+         * The statically loaded listener configs.
+         *
+         * @param StaticListener[] $staticListeners
+         */
+        public function setStaticListeners($staticListeners)
+        {
+        }
+        /**
+         * @return StaticListener[]
+         */
+        public function getStaticListeners()
+        {
+        }
+        /**
+         * This is the :ref:`version_info ` in the last processed LDS discovery
+         * response. If there are only static bootstrap listeners, this field will be
+         * "".
+         *
+         * @param string $versionInfo
+         */
+        public function setVersionInfo($versionInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicListener[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\ListenersConfigDump registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicListeners()
-    {
-    }
-    /**
-     * The statically loaded listener configs.
-     *
-     * @param StaticListener[] $staticListeners
-     */
-    public function setStaticListeners($staticListeners)
-    {
-    }
-    /**
-     * @return StaticListener[]
-     */
-    public function getStaticListeners()
-    {
-    }
-    /**
-     * This is the :ref:`version_info ` in the last processed LDS discovery
-     * response. If there are only static bootstrap listeners, this field will be
-     * "".
-     *
-     * @param string $versionInfo
-     */
-    public function setVersionInfo($versionInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionInfo()
+    class Google_Service_TrafficDirectorService_ListenersConfigDump extends \Google\Service\TrafficDirectorService\ListenersConfigDump
     {
     }
 }

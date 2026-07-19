@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class TrackInfo extends \Google\Model
-{
-    /**
-     * A modifiable name for a track. This is the visible name in the play
-     * developer console.
-     *
-     * @var string
-     */
-    public $trackAlias;
-    /**
-     * Unmodifiable, unique track identifier. This identifier is the
-     * releaseTrackId in the url of the play developer console page that displays
-     * the track information.
-     *
-     * @var string
-     */
-    public $trackId;
-    /**
-     * A modifiable name for a track. This is the visible name in the play
-     * developer console.
-     *
-     * @param string $trackAlias
-     */
-    public function setTrackAlias($trackAlias)
+namespace Google\Service\AndroidEnterprise {
+    class TrackInfo extends \Google\Model
     {
+        /**
+         * A modifiable name for a track. This is the visible name in the play
+         * developer console.
+         *
+         * @var string
+         */
+        public $trackAlias;
+        /**
+         * Unmodifiable, unique track identifier. This identifier is the
+         * releaseTrackId in the url of the play developer console page that displays
+         * the track information.
+         *
+         * @var string
+         */
+        public $trackId;
+        /**
+         * A modifiable name for a track. This is the visible name in the play
+         * developer console.
+         *
+         * @param string $trackAlias
+         */
+        public function setTrackAlias($trackAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackAlias()
+        {
+        }
+        /**
+         * Unmodifiable, unique track identifier. This identifier is the
+         * releaseTrackId in the url of the play developer console page that displays
+         * the track information.
+         *
+         * @param string $trackId
+         */
+        public function setTrackId($trackId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\TrackInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrackAlias()
-    {
-    }
-    /**
-     * Unmodifiable, unique track identifier. This identifier is the
-     * releaseTrackId in the url of the play developer console page that displays
-     * the track information.
-     *
-     * @param string $trackId
-     */
-    public function setTrackId($trackId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackId()
+    class Google_Service_AndroidEnterprise_TrackInfo extends \Google\Service\AndroidEnterprise\TrackInfo
     {
     }
 }

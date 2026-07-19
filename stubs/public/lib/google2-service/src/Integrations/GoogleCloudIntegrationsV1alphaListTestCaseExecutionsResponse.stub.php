@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListTestCaseExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    protected $executionsType = GoogleCloudIntegrationsV1alphaExecution::class;
-    protected $executionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaExecution[]
-     */
-    public function setExecutions($executions)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListTestCaseExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        protected $executionsType = GoogleCloudIntegrationsV1alphaExecution::class;
+        protected $executionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaExecution[]
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaExecution[]
+         */
+        public function getExecutions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaExecution[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCaseExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListTestCaseExecutionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCaseExecutionsResponse
     {
     }
 }

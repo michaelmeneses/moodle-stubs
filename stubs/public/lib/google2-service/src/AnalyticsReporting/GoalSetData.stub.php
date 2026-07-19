@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class GoalSetData extends \Google\Collection
-{
-    protected $collection_key = 'goals';
-    protected $goalsType = GoalData::class;
-    protected $goalsDataType = 'array';
-    /**
-     * @param GoalData[]
-     */
-    public function setGoals($goals)
+namespace Google\Service\AnalyticsReporting {
+    class GoalSetData extends \Google\Collection
     {
+        protected $collection_key = 'goals';
+        protected $goalsType = GoalData::class;
+        protected $goalsDataType = 'array';
+        /**
+         * @param GoalData[]
+         */
+        public function setGoals($goals)
+        {
+        }
+        /**
+         * @return GoalData[]
+         */
+        public function getGoals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoalData[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\GoalSetData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoals()
+    class Google_Service_AnalyticsReporting_GoalSetData extends \Google\Service\AnalyticsReporting\GoalSetData
     {
     }
 }

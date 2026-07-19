@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService\Resource;
-
-/**
- * The "apps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $checksService = new Google\Service\ChecksService(...);
- *   $apps = $checksService->accounts_apps;
- *  </code>
- */
-class AccountsApps extends \Google\Service\Resource
-{
+namespace Google\Service\ChecksService\Resource {
+    use Google\Service\ChecksService\GoogleChecksAccountV1alphaApp;
+    use Google\Service\ChecksService\GoogleChecksAccountV1alphaListAppsResponse;
     /**
-     * Gets an app. (apps.get)
-     *
-     * @param string $name Required. Resource name of the app. Example:
-     * `accounts/123/apps/456`
-     * @param array $optParams Optional parameters.
-     * @return GoogleChecksAccountV1alphaApp
-     * @throws \Google\Service\Exception
+     * The "apps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $checksService = new Google\Service\ChecksService(...);
+     *   $apps = $checksService->accounts_apps;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class AccountsApps extends \Google\Service\Resource
     {
+        /**
+         * Gets an app. (apps.get)
+         *
+         * @param string $name Required. Resource name of the app. Example:
+         * `accounts/123/apps/456`
+         * @param array $optParams Optional parameters.
+         * @return GoogleChecksAccountV1alphaApp
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the apps under the given account. (apps.listAccountsApps)
+         *
+         * @param string $parent Required. The parent account. Example: `accounts/123`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of results to return.
+         * The server may further constrain the maximum number of results returned in a
+         * single page. If unspecified, the server will decide the number of results to
+         * be returned.
+         * @opt_param string pageToken Optional. A page token received from a previous
+         * `ListApps` call. Provide this to retrieve the subsequent page.
+         * @return GoogleChecksAccountV1alphaListAppsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsApps($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the apps under the given account. (apps.listAccountsApps)
-     *
-     * @param string $parent Required. The parent account. Example: `accounts/123`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of results to return.
-     * The server may further constrain the maximum number of results returned in a
-     * single page. If unspecified, the server will decide the number of results to
-     * be returned.
-     * @opt_param string pageToken Optional. A page token received from a previous
-     * `ListApps` call. Provide this to retrieve the subsequent page.
-     * @return GoogleChecksAccountV1alphaListAppsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChecksService\Resource\AccountsApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsApps($parent, $optParams = [])
+    class Google_Service_ChecksService_Resource_AccountsApps extends \Google\Service\ChecksService\Resource\AccountsApps
     {
     }
 }

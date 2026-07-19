@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RegionPostalCodeArea extends \Google\Collection
-{
-    protected $collection_key = 'postalCodes';
-    protected $postalCodesType = RegionPostalCodeAreaPostalCodeRange::class;
-    protected $postalCodesDataType = 'array';
-    /**
-     * Required. CLDR territory code or the country the postal code group applies
-     * to.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Required. A range of postal codes.
-     *
-     * @param RegionPostalCodeAreaPostalCodeRange[] $postalCodes
-     */
-    public function setPostalCodes($postalCodes)
+namespace Google\Service\ShoppingContent {
+    class RegionPostalCodeArea extends \Google\Collection
     {
+        protected $collection_key = 'postalCodes';
+        protected $postalCodesType = RegionPostalCodeAreaPostalCodeRange::class;
+        protected $postalCodesDataType = 'array';
+        /**
+         * Required. CLDR territory code or the country the postal code group applies
+         * to.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Required. A range of postal codes.
+         *
+         * @param RegionPostalCodeAreaPostalCodeRange[] $postalCodes
+         */
+        public function setPostalCodes($postalCodes)
+        {
+        }
+        /**
+         * @return RegionPostalCodeAreaPostalCodeRange[]
+         */
+        public function getPostalCodes()
+        {
+        }
+        /**
+         * Required. CLDR territory code or the country the postal code group applies
+         * to.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegionPostalCodeAreaPostalCodeRange[]
+     * Runtime class alias of \Google\Service\ShoppingContent\RegionPostalCodeArea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostalCodes()
-    {
-    }
-    /**
-     * Required. CLDR territory code or the country the postal code group applies
-     * to.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_ShoppingContent_RegionPostalCodeArea extends \Google\Service\ShoppingContent\RegionPostalCodeArea
     {
     }
 }

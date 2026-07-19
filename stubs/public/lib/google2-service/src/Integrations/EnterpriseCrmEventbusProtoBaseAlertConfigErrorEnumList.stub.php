@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBaseAlertConfigErrorEnumList extends \Google\Collection
-{
-    public const FILTER_TYPE_DEFAULT_INCLUSIVE = 'DEFAULT_INCLUSIVE';
-    public const FILTER_TYPE_EXCLUSIVE = 'EXCLUSIVE';
-    protected $collection_key = 'enumStrings';
-    /**
-     * @var string[]
-     */
-    public $enumStrings;
-    /**
-     * @var string
-     */
-    public $filterType;
-    /**
-     * @param string[] $enumStrings
-     */
-    public function setEnumStrings($enumStrings)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBaseAlertConfigErrorEnumList extends \Google\Collection
     {
+        public const FILTER_TYPE_DEFAULT_INCLUSIVE = 'DEFAULT_INCLUSIVE';
+        public const FILTER_TYPE_EXCLUSIVE = 'EXCLUSIVE';
+        protected $collection_key = 'enumStrings';
+        /**
+         * @var string[]
+         */
+        public $enumStrings;
+        /**
+         * @var string
+         */
+        public $filterType;
+        /**
+         * @param string[] $enumStrings
+         */
+        public function setEnumStrings($enumStrings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnumStrings()
+        {
+        }
+        /**
+         * @param self::FILTER_TYPE_* $filterType
+         */
+        public function setFilterType($filterType)
+        {
+        }
+        /**
+         * @return self::FILTER_TYPE_*
+         */
+        public function getFilterType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseAlertConfigErrorEnumList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnumStrings()
-    {
-    }
-    /**
-     * @param self::FILTER_TYPE_* $filterType
-     */
-    public function setFilterType($filterType)
-    {
-    }
-    /**
-     * @return self::FILTER_TYPE_*
-     */
-    public function getFilterType()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBaseAlertConfigErrorEnumList extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseAlertConfigErrorEnumList
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedImage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    protected $onClickType = AppsDynamiteSharedOnClick::class;
-    protected $onClickDataType = '';
-    public $onClick;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedImage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        protected $onClickType = AppsDynamiteSharedOnClick::class;
+        protected $onClickDataType = '';
+        public $onClick;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOnClick
+         */
+        public function setOnClick(AppsDynamiteSharedOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOnClick
-     */
-    public function setOnClick(AppsDynamiteSharedOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOnClick
-     */
-    public function getOnClick()
+    class Google_Service_CloudSearch_AppsDynamiteSharedImage extends \Google\Service\CloudSearch\AppsDynamiteSharedImage
     {
     }
 }

@@ -29,6 +29,9 @@
  */
 namespace report_insights\output;
 
+use plugin_renderer_base;
+use templatable;
+use renderable;
 /**
  * Renderer class.
  *

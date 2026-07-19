@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighborQueryStringFilter extends \Google\Collection
-{
-    protected $collection_key = 'denyTokens';
-    /**
-     * Optional. The allowed tokens.
-     *
-     * @var string[]
-     */
-    public $allowTokens;
-    /**
-     * Optional. The denied tokens.
-     *
-     * @var string[]
-     */
-    public $denyTokens;
-    /**
-     * Required. Column names in BigQuery that used as filters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The allowed tokens.
-     *
-     * @param string[] $allowTokens
-     */
-    public function setAllowTokens($allowTokens)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighborQueryStringFilter extends \Google\Collection
     {
+        protected $collection_key = 'denyTokens';
+        /**
+         * Optional. The allowed tokens.
+         *
+         * @var string[]
+         */
+        public $allowTokens;
+        /**
+         * Optional. The denied tokens.
+         *
+         * @var string[]
+         */
+        public $denyTokens;
+        /**
+         * Required. Column names in BigQuery that used as filters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The allowed tokens.
+         *
+         * @param string[] $allowTokens
+         */
+        public function setAllowTokens($allowTokens)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowTokens()
+        {
+        }
+        /**
+         * Optional. The denied tokens.
+         *
+         * @param string[] $denyTokens
+         */
+        public function setDenyTokens($denyTokens)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDenyTokens()
+        {
+        }
+        /**
+         * Required. Column names in BigQuery that used as filters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborQueryStringFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowTokens()
-    {
-    }
-    /**
-     * Optional. The denied tokens.
-     *
-     * @param string[] $denyTokens
-     */
-    public function setDenyTokens($denyTokens)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDenyTokens()
-    {
-    }
-    /**
-     * Required. Column names in BigQuery that used as filters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighborQueryStringFilter extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborQueryStringFilter
     {
     }
 }

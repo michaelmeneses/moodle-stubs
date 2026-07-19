@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListAlertPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'alertPolicies';
-    protected $alertPoliciesType = AlertPolicy::class;
-    protected $alertPoliciesDataType = 'array';
-    /**
-     * If there might be more results than were returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of alert policies in all pages. This number is only an
-     * estimate, and may change in subsequent pages. https://aip.dev/158
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The returned alert policies.
-     *
-     * @param AlertPolicy[] $alertPolicies
-     */
-    public function setAlertPolicies($alertPolicies)
+namespace Google\Service\Monitoring {
+    class ListAlertPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'alertPolicies';
+        protected $alertPoliciesType = AlertPolicy::class;
+        protected $alertPoliciesDataType = 'array';
+        /**
+         * If there might be more results than were returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of alert policies in all pages. This number is only an
+         * estimate, and may change in subsequent pages. https://aip.dev/158
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The returned alert policies.
+         *
+         * @param AlertPolicy[] $alertPolicies
+         */
+        public function setAlertPolicies($alertPolicies)
+        {
+        }
+        /**
+         * @return AlertPolicy[]
+         */
+        public function getAlertPolicies()
+        {
+        }
+        /**
+         * If there might be more results than were returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of alert policies in all pages. This number is only an
+         * estimate, and may change in subsequent pages. https://aip.dev/158
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AlertPolicy[]
+     * Runtime class alias of \Google\Service\Monitoring\ListAlertPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertPolicies()
-    {
-    }
-    /**
-     * If there might be more results than were returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of alert policies in all pages. This number is only an
-     * estimate, and may change in subsequent pages. https://aip.dev/158
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Monitoring_ListAlertPoliciesResponse extends \Google\Service\Monitoring\ListAlertPoliciesResponse
     {
     }
 }

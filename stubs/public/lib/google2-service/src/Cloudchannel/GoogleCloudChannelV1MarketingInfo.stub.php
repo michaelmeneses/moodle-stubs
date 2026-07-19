@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1MarketingInfo extends \Google\Model
-{
-    protected $defaultLogoType = GoogleCloudChannelV1Media::class;
-    protected $defaultLogoDataType = '';
-    /**
-     * Human readable description. Description can contain HTML.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Human readable name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Default logo.
-     *
-     * @param GoogleCloudChannelV1Media $defaultLogo
-     */
-    public function setDefaultLogo(GoogleCloudChannelV1Media $defaultLogo)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1MarketingInfo extends \Google\Model
     {
+        protected $defaultLogoType = GoogleCloudChannelV1Media::class;
+        protected $defaultLogoDataType = '';
+        /**
+         * Human readable description. Description can contain HTML.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Human readable name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Default logo.
+         *
+         * @param GoogleCloudChannelV1Media $defaultLogo
+         */
+        public function setDefaultLogo(GoogleCloudChannelV1Media $defaultLogo)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Media
+         */
+        public function getDefaultLogo()
+        {
+        }
+        /**
+         * Human readable description. Description can contain HTML.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Human readable name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Media
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1MarketingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultLogo()
-    {
-    }
-    /**
-     * Human readable description. Description can contain HTML.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Human readable name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1MarketingInfo extends \Google\Service\Cloudchannel\GoogleCloudChannelV1MarketingInfo
     {
     }
 }

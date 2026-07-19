@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PostLocation extends \Google\Model
-{
-    /**
-     * Location's latitude.
-     *
-     * @var 
-     */
-    public $lat;
-    /**
-     * Location's longitude.
-     *
-     * @var 
-     */
-    public $lng;
-    /**
-     * Location name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Location's viewport span. Can be used when rendering a map preview.
-     *
-     * @var string
-     */
-    public $span;
-    public function setLat($lat)
+namespace Google\Service\Blogger {
+    class PostLocation extends \Google\Model
     {
+        /**
+         * Location's latitude.
+         *
+         * @var 
+         */
+        public $lat;
+        /**
+         * Location's longitude.
+         *
+         * @var 
+         */
+        public $lng;
+        /**
+         * Location name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Location's viewport span. Can be used when rendering a map preview.
+         *
+         * @var string
+         */
+        public $span;
+        public function setLat($lat)
+        {
+        }
+        public function getLat()
+        {
+        }
+        public function setLng($lng)
+        {
+        }
+        public function getLng()
+        {
+        }
+        /**
+         * Location name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Location's viewport span. Can be used when rendering a map preview.
+         *
+         * @param string $span
+         */
+        public function setSpan($span)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpan()
+        {
+        }
     }
-    public function getLat()
-    {
-    }
-    public function setLng($lng)
-    {
-    }
-    public function getLng()
-    {
-    }
+}
+namespace {
     /**
-     * Location name.
-     *
-     * @param string $name
+     * Runtime class alias of \Google\Service\Blogger\PostLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Location's viewport span. Can be used when rendering a map preview.
-     *
-     * @param string $span
-     */
-    public function setSpan($span)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpan()
+    class Google_Service_Blogger_PostLocation extends \Google\Service\Blogger\PostLocation
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2ResourcePath extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    protected $nodesType = GoogleCloudSecuritycenterV2ResourcePathNode::class;
-    protected $nodesDataType = 'array';
-    /**
-     * The list of nodes that make the up resource path, ordered from lowest level
-     * to highest level.
-     *
-     * @param GoogleCloudSecuritycenterV2ResourcePathNode[] $nodes
-     */
-    public function setNodes($nodes)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2ResourcePath extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        protected $nodesType = GoogleCloudSecuritycenterV2ResourcePathNode::class;
+        protected $nodesDataType = 'array';
+        /**
+         * The list of nodes that make the up resource path, ordered from lowest level
+         * to highest level.
+         *
+         * @param GoogleCloudSecuritycenterV2ResourcePathNode[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ResourcePathNode[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2ResourcePathNode[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ResourcePath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodes()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2ResourcePath extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ResourcePath
     {
     }
 }

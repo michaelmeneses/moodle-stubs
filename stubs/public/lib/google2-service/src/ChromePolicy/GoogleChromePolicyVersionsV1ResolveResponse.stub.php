@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ResolveResponse extends \Google\Collection
-{
-    protected $collection_key = 'resolvedPolicies';
-    /**
-     * The page token used to get the next set of resolved policies found by the
-     * request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resolvedPoliciesType = GoogleChromePolicyVersionsV1ResolvedPolicy::class;
-    protected $resolvedPoliciesDataType = 'array';
-    /**
-     * The page token used to get the next set of resolved policies found by the
-     * request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ResolveResponse extends \Google\Collection
     {
+        protected $collection_key = 'resolvedPolicies';
+        /**
+         * The page token used to get the next set of resolved policies found by the
+         * request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resolvedPoliciesType = GoogleChromePolicyVersionsV1ResolvedPolicy::class;
+        protected $resolvedPoliciesDataType = 'array';
+        /**
+         * The page token used to get the next set of resolved policies found by the
+         * request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of resolved policies found by the resolve request.
+         *
+         * @param GoogleChromePolicyVersionsV1ResolvedPolicy[] $resolvedPolicies
+         */
+        public function setResolvedPolicies($resolvedPolicies)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1ResolvedPolicy[]
+         */
+        public function getResolvedPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of resolved policies found by the resolve request.
-     *
-     * @param GoogleChromePolicyVersionsV1ResolvedPolicy[] $resolvedPolicies
-     */
-    public function setResolvedPolicies($resolvedPolicies)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1ResolvedPolicy[]
-     */
-    public function getResolvedPolicies()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ResolveResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveResponse
     {
     }
 }

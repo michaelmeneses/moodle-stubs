@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Grade extends \Google\Model
-{
-    /**
-     * Output only. Whether the question was answered correctly or not. A zero-
-     * point score is not enough to infer incorrectness, since a correctly
-     * answered question could be worth zero points.
-     *
-     * @var bool
-     */
-    public $correct;
-    protected $feedbackType = Feedback::class;
-    protected $feedbackDataType = '';
-    /**
-     * Output only. The numeric score awarded for the answer.
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * Output only. Whether the question was answered correctly or not. A zero-
-     * point score is not enough to infer incorrectness, since a correctly
-     * answered question could be worth zero points.
-     *
-     * @param bool $correct
-     */
-    public function setCorrect($correct)
+namespace Google\Service\Forms {
+    class Grade extends \Google\Model
     {
+        /**
+         * Output only. Whether the question was answered correctly or not. A zero-
+         * point score is not enough to infer incorrectness, since a correctly
+         * answered question could be worth zero points.
+         *
+         * @var bool
+         */
+        public $correct;
+        protected $feedbackType = Feedback::class;
+        protected $feedbackDataType = '';
+        /**
+         * Output only. The numeric score awarded for the answer.
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * Output only. Whether the question was answered correctly or not. A zero-
+         * point score is not enough to infer incorrectness, since a correctly
+         * answered question could be worth zero points.
+         *
+         * @param bool $correct
+         */
+        public function setCorrect($correct)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCorrect()
+        {
+        }
+        /**
+         * Output only. Additional feedback given for an answer.
+         *
+         * @param Feedback $feedback
+         */
+        public function setFeedback(Feedback $feedback)
+        {
+        }
+        /**
+         * @return Feedback
+         */
+        public function getFeedback()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\Grade registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorrect()
-    {
-    }
-    /**
-     * Output only. Additional feedback given for an answer.
-     *
-     * @param Feedback $feedback
-     */
-    public function setFeedback(Feedback $feedback)
-    {
-    }
-    /**
-     * @return Feedback
-     */
-    public function getFeedback()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
+    class Google_Service_Forms_Grade extends \Google\Service\Forms\Grade
     {
     }
 }

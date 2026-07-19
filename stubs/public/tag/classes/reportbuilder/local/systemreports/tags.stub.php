@@ -8,6 +8,17 @@
  */
 namespace core_tag\reportbuilder\local\systemreports;
 
+use core\context\system;
+use core_reportbuilder\local\aggregation\count;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\report\{action, column};
+use core_reportbuilder\system_report;
+use core_tag\output\{tagflag, tagisstandard, tagname};
+use core_tag\reportbuilder\local\entities\{instance, tag};
+use lang_string;
+use moodle_url;
+use pix_icon;
+use stdClass;
 /**
  * Tags collection system report
  *

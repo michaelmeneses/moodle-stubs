@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ClusterToRepair extends \Google\Model
-{
-    /**
-     * No action will be taken by default.
-     */
-    public const CLUSTER_REPAIR_ACTION_CLUSTER_REPAIR_ACTION_UNSPECIFIED = 'CLUSTER_REPAIR_ACTION_UNSPECIFIED';
-    /**
-     * Repair cluster in ERROR_DUE_TO_UPDATE states.
-     */
-    public const CLUSTER_REPAIR_ACTION_REPAIR_ERROR_DUE_TO_UPDATE_CLUSTER = 'REPAIR_ERROR_DUE_TO_UPDATE_CLUSTER';
-    /**
-     * Required. Repair action to take on the cluster resource.
-     *
-     * @var string
-     */
-    public $clusterRepairAction;
-    /**
-     * Required. Repair action to take on the cluster resource.
-     *
-     * Accepted values: CLUSTER_REPAIR_ACTION_UNSPECIFIED,
-     * REPAIR_ERROR_DUE_TO_UPDATE_CLUSTER
-     *
-     * @param self::CLUSTER_REPAIR_ACTION_* $clusterRepairAction
-     */
-    public function setClusterRepairAction($clusterRepairAction)
+namespace Google\Service\Dataproc {
+    class ClusterToRepair extends \Google\Model
     {
+        /**
+         * No action will be taken by default.
+         */
+        public const CLUSTER_REPAIR_ACTION_CLUSTER_REPAIR_ACTION_UNSPECIFIED = 'CLUSTER_REPAIR_ACTION_UNSPECIFIED';
+        /**
+         * Repair cluster in ERROR_DUE_TO_UPDATE states.
+         */
+        public const CLUSTER_REPAIR_ACTION_REPAIR_ERROR_DUE_TO_UPDATE_CLUSTER = 'REPAIR_ERROR_DUE_TO_UPDATE_CLUSTER';
+        /**
+         * Required. Repair action to take on the cluster resource.
+         *
+         * @var string
+         */
+        public $clusterRepairAction;
+        /**
+         * Required. Repair action to take on the cluster resource.
+         *
+         * Accepted values: CLUSTER_REPAIR_ACTION_UNSPECIFIED,
+         * REPAIR_ERROR_DUE_TO_UPDATE_CLUSTER
+         *
+         * @param self::CLUSTER_REPAIR_ACTION_* $clusterRepairAction
+         */
+        public function setClusterRepairAction($clusterRepairAction)
+        {
+        }
+        /**
+         * @return self::CLUSTER_REPAIR_ACTION_*
+         */
+        public function getClusterRepairAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLUSTER_REPAIR_ACTION_*
+     * Runtime class alias of \Google\Service\Dataproc\ClusterToRepair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterRepairAction()
+    class Google_Service_Dataproc_ClusterToRepair extends \Google\Service\Dataproc\ClusterToRepair
     {
     }
 }

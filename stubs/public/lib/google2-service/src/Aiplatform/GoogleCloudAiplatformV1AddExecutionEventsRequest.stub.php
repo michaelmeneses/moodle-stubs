@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AddExecutionEventsRequest extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    protected $eventsType = GoogleCloudAiplatformV1Event::class;
-    protected $eventsDataType = 'array';
-    /**
-     * The Events to create and add.
-     *
-     * @param GoogleCloudAiplatformV1Event[] $events
-     */
-    public function setEvents($events)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AddExecutionEventsRequest extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        protected $eventsType = GoogleCloudAiplatformV1Event::class;
+        protected $eventsDataType = 'array';
+        /**
+         * The Events to create and add.
+         *
+         * @param GoogleCloudAiplatformV1Event[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Event[]
+         */
+        public function getEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Event[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AddExecutionEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvents()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AddExecutionEventsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AddExecutionEventsRequest
     {
     }
 }

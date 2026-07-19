@@ -21,53 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy\Resource;
-
-/**
- * The "orgunits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $orgunits = $chromepolicyService->customers_policies_orgunits;
- *  </code>
- */
-class CustomersPoliciesOrgunits extends \Google\Service\Resource
-{
+namespace Google\Service\ChromePolicy\Resource {
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest;
+    use Google\Service\ChromePolicy\GoogleProtobufEmpty;
     /**
-     * Modify multiple policy values that are applied to a specific org unit so that
-     * they now inherit the value from a parent (if applicable). All targets must
-     * have the same target format. That is to say that they must point to the same
-     * target resource and must have the same keys specified in
-     * `additionalTargetKeyNames`, though the values for those keys may be
-     * different. On failure the request will return the error details as part of
-     * the google.rpc.Status. (orgunits.batchInherit)
-     *
-     * @param string $customer ID of the G Suite account or literal "my_customer"
-     * for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "orgunits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromepolicyService = new Google\Service\ChromePolicy(...);
+     *   $orgunits = $chromepolicyService->customers_policies_orgunits;
+     *  </code>
      */
-    public function batchInherit($customer, GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest $postBody, $optParams = [])
+    class CustomersPoliciesOrgunits extends \Google\Service\Resource
     {
+        /**
+         * Modify multiple policy values that are applied to a specific org unit so that
+         * they now inherit the value from a parent (if applicable). All targets must
+         * have the same target format. That is to say that they must point to the same
+         * target resource and must have the same keys specified in
+         * `additionalTargetKeyNames`, though the values for those keys may be
+         * different. On failure the request will return the error details as part of
+         * the google.rpc.Status. (orgunits.batchInherit)
+         *
+         * @param string $customer ID of the G Suite account or literal "my_customer"
+         * for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function batchInherit($customer, GoogleChromePolicyVersionsV1BatchInheritOrgUnitPoliciesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Modify multiple policy values that are applied to a specific org unit. All
+         * targets must have the same target format. That is to say that they must point
+         * to the same target resource and must have the same keys specified in
+         * `additionalTargetKeyNames`, though the values for those keys may be
+         * different. On failure the request will return the error details as part of
+         * the google.rpc.Status. (orgunits.batchModify)
+         *
+         * @param string $customer ID of the G Suite account or literal "my_customer"
+         * for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function batchModify($customer, GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Modify multiple policy values that are applied to a specific org unit. All
-     * targets must have the same target format. That is to say that they must point
-     * to the same target resource and must have the same keys specified in
-     * `additionalTargetKeyNames`, though the values for those keys may be
-     * different. On failure the request will return the error details as part of
-     * the google.rpc.Status. (orgunits.batchModify)
-     *
-     * @param string $customer ID of the G Suite account or literal "my_customer"
-     * for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromePolicy\Resource\CustomersPoliciesOrgunits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function batchModify($customer, GoogleChromePolicyVersionsV1BatchModifyOrgUnitPoliciesRequest $postBody, $optParams = [])
+    class Google_Service_ChromePolicy_Resource_CustomersPoliciesOrgunits extends \Google\Service\ChromePolicy\Resource\CustomersPoliciesOrgunits
     {
     }
 }

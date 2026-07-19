@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class TimedCount extends \Google\Model
-{
-    /**
-     * Approximate number of occurrences in the given time period.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * End of the time period to which `count` refers (excluded).
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start of the time period to which `count` refers (included).
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Approximate number of occurrences in the given time period.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\Clouderrorreporting {
+    class TimedCount extends \Google\Model
     {
+        /**
+         * Approximate number of occurrences in the given time period.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * End of the time period to which `count` refers (excluded).
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start of the time period to which `count` refers (included).
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Approximate number of occurrences in the given time period.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * End of the time period to which `count` refers (excluded).
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start of the time period to which `count` refers (included).
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Clouderrorreporting\TimedCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * End of the time period to which `count` refers (excluded).
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start of the time period to which `count` refers (included).
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Clouderrorreporting_TimedCount extends \Google\Service\Clouderrorreporting\TimedCount
     {
     }
 }

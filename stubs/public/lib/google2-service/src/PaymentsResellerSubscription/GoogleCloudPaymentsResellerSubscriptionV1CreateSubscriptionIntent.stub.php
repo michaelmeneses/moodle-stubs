@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $parent;
-    protected $subscriptionType = GoogleCloudPaymentsResellerSubscriptionV1Subscription::class;
-    protected $subscriptionDataType = '';
-    /**
-     * @var string
-     */
-    public $subscriptionId;
-    /**
-     * @param string
-     */
-    public function setParent($parent)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $parent;
+        protected $subscriptionType = GoogleCloudPaymentsResellerSubscriptionV1Subscription::class;
+        protected $subscriptionDataType = '';
+        /**
+         * @var string
+         */
+        public $subscriptionId;
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Subscription
+         */
+        public function setSubscription(GoogleCloudPaymentsResellerSubscriptionV1Subscription $subscription)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Subscription
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubscriptionId($subscriptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Subscription
-     */
-    public function setSubscription(GoogleCloudPaymentsResellerSubscriptionV1Subscription $subscription)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Subscription
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubscriptionId($subscriptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriptionId()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent
     {
     }
 }

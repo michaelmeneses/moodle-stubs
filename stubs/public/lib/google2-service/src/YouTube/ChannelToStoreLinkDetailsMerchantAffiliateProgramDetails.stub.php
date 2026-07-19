@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails extends \Google\Model
-{
-    /**
-     * Unspecified status.
-     */
-    public const STATUS_merchantAffiliateProgramStatusUnspecified = 'merchantAffiliateProgramStatusUnspecified';
-    /**
-     * Merchant is eligible for the merchant affiliate program.
-     */
-    public const STATUS_merchantAffiliateProgramStatusEligible = 'merchantAffiliateProgramStatusEligible';
-    /**
-     * Merchant affiliate program is active.
-     */
-    public const STATUS_merchantAffiliateProgramStatusActive = 'merchantAffiliateProgramStatusActive';
-    /**
-     * Merchant affiliate program is paused.
-     */
-    public const STATUS_merchantAffiliateProgramStatusPaused = 'merchantAffiliateProgramStatusPaused';
-    /**
-     * The current merchant affiliate program status.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The current merchant affiliate program status.
-     *
-     * Accepted values: merchantAffiliateProgramStatusUnspecified,
-     * merchantAffiliateProgramStatusEligible,
-     * merchantAffiliateProgramStatusActive, merchantAffiliateProgramStatusPaused
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
+namespace Google\Service\YouTube {
+    class ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails extends \Google\Model
     {
+        /**
+         * Unspecified status.
+         */
+        public const STATUS_merchantAffiliateProgramStatusUnspecified = 'merchantAffiliateProgramStatusUnspecified';
+        /**
+         * Merchant is eligible for the merchant affiliate program.
+         */
+        public const STATUS_merchantAffiliateProgramStatusEligible = 'merchantAffiliateProgramStatusEligible';
+        /**
+         * Merchant affiliate program is active.
+         */
+        public const STATUS_merchantAffiliateProgramStatusActive = 'merchantAffiliateProgramStatusActive';
+        /**
+         * Merchant affiliate program is paused.
+         */
+        public const STATUS_merchantAffiliateProgramStatusPaused = 'merchantAffiliateProgramStatusPaused';
+        /**
+         * The current merchant affiliate program status.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The current merchant affiliate program status.
+         *
+         * Accepted values: merchantAffiliateProgramStatusUnspecified,
+         * merchantAffiliateProgramStatusEligible,
+         * merchantAffiliateProgramStatusActive, merchantAffiliateProgramStatusPaused
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATUS_*
+     * Runtime class alias of \Google\Service\YouTube\ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
+    class Google_Service_YouTube_ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails extends \Google\Service\YouTube\ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails
     {
     }
 }

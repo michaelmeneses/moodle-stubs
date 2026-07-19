@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageHeader extends \Google\Model
-{
-    protected $pageSpanType = GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan::class;
-    protected $pageSpanDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan
-     */
-    public function setPageSpan(GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageHeader extends \Google\Model
     {
+        protected $pageSpanType = GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan::class;
+        protected $pageSpanDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan
+         */
+        public function setPageSpan(GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan
+         */
+        public function getPageSpan()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageSpan
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSpan()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageHeader extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentChunkedDocumentChunkChunkPageHeader
     {
     }
 }

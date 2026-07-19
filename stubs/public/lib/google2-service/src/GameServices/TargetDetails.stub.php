@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class TargetDetails extends \Google\Collection
-{
-    protected $collection_key = 'fleetDetails';
-    protected $fleetDetailsType = TargetFleetDetails::class;
-    protected $fleetDetailsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $gameServerClusterName;
-    /**
-     * @var string
-     */
-    public $gameServerDeploymentName;
-    /**
-     * @param TargetFleetDetails[]
-     */
-    public function setFleetDetails($fleetDetails)
+namespace Google\Service\GameServices {
+    class TargetDetails extends \Google\Collection
     {
+        protected $collection_key = 'fleetDetails';
+        protected $fleetDetailsType = TargetFleetDetails::class;
+        protected $fleetDetailsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $gameServerClusterName;
+        /**
+         * @var string
+         */
+        public $gameServerDeploymentName;
+        /**
+         * @param TargetFleetDetails[]
+         */
+        public function setFleetDetails($fleetDetails)
+        {
+        }
+        /**
+         * @return TargetFleetDetails[]
+         */
+        public function getFleetDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGameServerClusterName($gameServerClusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGameServerClusterName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGameServerDeploymentName($gameServerDeploymentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGameServerDeploymentName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetFleetDetails[]
+     * Runtime class alias of \Google\Service\GameServices\TargetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFleetDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGameServerClusterName($gameServerClusterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGameServerClusterName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGameServerDeploymentName($gameServerDeploymentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGameServerDeploymentName()
+    class Google_Service_GameServices_TargetDetails extends \Google\Service\GameServices\TargetDetails
     {
     }
 }

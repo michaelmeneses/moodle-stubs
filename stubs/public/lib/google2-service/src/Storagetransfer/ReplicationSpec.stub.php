@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ReplicationSpec extends \Google\Model
-{
-    protected $gcsDataSinkType = GcsData::class;
-    protected $gcsDataSinkDataType = '';
-    protected $gcsDataSourceType = GcsData::class;
-    protected $gcsDataSourceDataType = '';
-    protected $objectConditionsType = ObjectConditions::class;
-    protected $objectConditionsDataType = '';
-    protected $transferOptionsType = TransferOptions::class;
-    protected $transferOptionsDataType = '';
-    /**
-     * The Cloud Storage bucket to which to replicate objects.
-     *
-     * @param GcsData $gcsDataSink
-     */
-    public function setGcsDataSink(GcsData $gcsDataSink)
+namespace Google\Service\Storagetransfer {
+    class ReplicationSpec extends \Google\Model
     {
+        protected $gcsDataSinkType = GcsData::class;
+        protected $gcsDataSinkDataType = '';
+        protected $gcsDataSourceType = GcsData::class;
+        protected $gcsDataSourceDataType = '';
+        protected $objectConditionsType = ObjectConditions::class;
+        protected $objectConditionsDataType = '';
+        protected $transferOptionsType = TransferOptions::class;
+        protected $transferOptionsDataType = '';
+        /**
+         * The Cloud Storage bucket to which to replicate objects.
+         *
+         * @param GcsData $gcsDataSink
+         */
+        public function setGcsDataSink(GcsData $gcsDataSink)
+        {
+        }
+        /**
+         * @return GcsData
+         */
+        public function getGcsDataSink()
+        {
+        }
+        /**
+         * The Cloud Storage bucket from which to replicate objects.
+         *
+         * @param GcsData $gcsDataSource
+         */
+        public function setGcsDataSource(GcsData $gcsDataSource)
+        {
+        }
+        /**
+         * @return GcsData
+         */
+        public function getGcsDataSource()
+        {
+        }
+        /**
+         * Object conditions that determine which objects are transferred. For
+         * replication jobs, only `include_prefixes` and `exclude_prefixes` are
+         * supported.
+         *
+         * @param ObjectConditions $objectConditions
+         */
+        public function setObjectConditions(ObjectConditions $objectConditions)
+        {
+        }
+        /**
+         * @return ObjectConditions
+         */
+        public function getObjectConditions()
+        {
+        }
+        /**
+         * Specifies the metadata options to be applied during replication. Delete
+         * options are not supported. If a delete option is specified, the request
+         * fails with an INVALID_ARGUMENT error.
+         *
+         * @param TransferOptions $transferOptions
+         */
+        public function setTransferOptions(TransferOptions $transferOptions)
+        {
+        }
+        /**
+         * @return TransferOptions
+         */
+        public function getTransferOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsData
+     * Runtime class alias of \Google\Service\Storagetransfer\ReplicationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDataSink()
-    {
-    }
-    /**
-     * The Cloud Storage bucket from which to replicate objects.
-     *
-     * @param GcsData $gcsDataSource
-     */
-    public function setGcsDataSource(GcsData $gcsDataSource)
-    {
-    }
-    /**
-     * @return GcsData
-     */
-    public function getGcsDataSource()
-    {
-    }
-    /**
-     * Object conditions that determine which objects are transferred. For
-     * replication jobs, only `include_prefixes` and `exclude_prefixes` are
-     * supported.
-     *
-     * @param ObjectConditions $objectConditions
-     */
-    public function setObjectConditions(ObjectConditions $objectConditions)
-    {
-    }
-    /**
-     * @return ObjectConditions
-     */
-    public function getObjectConditions()
-    {
-    }
-    /**
-     * Specifies the metadata options to be applied during replication. Delete
-     * options are not supported. If a delete option is specified, the request
-     * fails with an INVALID_ARGUMENT error.
-     *
-     * @param TransferOptions $transferOptions
-     */
-    public function setTransferOptions(TransferOptions $transferOptions)
-    {
-    }
-    /**
-     * @return TransferOptions
-     */
-    public function getTransferOptions()
+    class Google_Service_Storagetransfer_ReplicationSpec extends \Google\Service\Storagetransfer\ReplicationSpec
     {
     }
 }

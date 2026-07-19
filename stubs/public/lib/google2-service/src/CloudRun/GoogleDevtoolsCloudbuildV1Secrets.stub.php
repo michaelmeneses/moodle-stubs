@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1Secrets extends \Google\Collection
-{
-    protected $collection_key = 'secretManager';
-    protected $inlineType = GoogleDevtoolsCloudbuildV1InlineSecret::class;
-    protected $inlineDataType = 'array';
-    protected $secretManagerType = GoogleDevtoolsCloudbuildV1SecretManagerSecret::class;
-    protected $secretManagerDataType = 'array';
-    /**
-     * Secrets encrypted with KMS key and the associated secret environment
-     * variable.
-     *
-     * @param GoogleDevtoolsCloudbuildV1InlineSecret[] $inline
-     */
-    public function setInline($inline)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1Secrets extends \Google\Collection
     {
+        protected $collection_key = 'secretManager';
+        protected $inlineType = GoogleDevtoolsCloudbuildV1InlineSecret::class;
+        protected $inlineDataType = 'array';
+        protected $secretManagerType = GoogleDevtoolsCloudbuildV1SecretManagerSecret::class;
+        protected $secretManagerDataType = 'array';
+        /**
+         * Secrets encrypted with KMS key and the associated secret environment
+         * variable.
+         *
+         * @param GoogleDevtoolsCloudbuildV1InlineSecret[] $inline
+         */
+        public function setInline($inline)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1InlineSecret[]
+         */
+        public function getInline()
+        {
+        }
+        /**
+         * Secrets in Secret Manager and associated secret environment variable.
+         *
+         * @param GoogleDevtoolsCloudbuildV1SecretManagerSecret[] $secretManager
+         */
+        public function setSecretManager($secretManager)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1SecretManagerSecret[]
+         */
+        public function getSecretManager()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsCloudbuildV1InlineSecret[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Secrets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInline()
-    {
-    }
-    /**
-     * Secrets in Secret Manager and associated secret environment variable.
-     *
-     * @param GoogleDevtoolsCloudbuildV1SecretManagerSecret[] $secretManager
-     */
-    public function setSecretManager($secretManager)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1SecretManagerSecret[]
-     */
-    public function getSecretManager()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1Secrets extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Secrets
     {
     }
 }

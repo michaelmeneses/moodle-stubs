@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Site extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the site.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The app ID or URL of the site. Must be UTF-8 encoded with a
-     * maximum length of 240 bytes.
-     *
-     * @var string
-     */
-    public $urlOrAppId;
-    /**
-     * Output only. The resource name of the site.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DisplayVideo {
+    class Site extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the site.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The app ID or URL of the site. Must be UTF-8 encoded with a
+         * maximum length of 240 bytes.
+         *
+         * @var string
+         */
+        public $urlOrAppId;
+        /**
+         * Output only. The resource name of the site.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The app ID or URL of the site. Must be UTF-8 encoded with a
+         * maximum length of 240 bytes.
+         *
+         * @param string $urlOrAppId
+         */
+        public function setUrlOrAppId($urlOrAppId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlOrAppId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\Site registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The app ID or URL of the site. Must be UTF-8 encoded with a
-     * maximum length of 240 bytes.
-     *
-     * @param string $urlOrAppId
-     */
-    public function setUrlOrAppId($urlOrAppId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlOrAppId()
+    class Google_Service_DisplayVideo_Site extends \Google\Service\DisplayVideo\Site
     {
     }
 }

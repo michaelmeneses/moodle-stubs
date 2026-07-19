@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class ReportRequestOrderBy extends \Google\Model
-{
-    protected $columnType = ReportApiColumnSpec::class;
-    protected $columnDataType = '';
-    /**
-     * The sort direction, which is either `ascending` or `descending`.
-     *
-     * @var string
-     */
-    public $sortOrder;
-    /**
-     * Column to perform the sort on. This can be a DoubleClick Search-defined
-     * column or a saved column.
-     *
-     * @param ReportApiColumnSpec $column
-     */
-    public function setColumn(ReportApiColumnSpec $column)
+namespace Google\Service\Doubleclicksearch {
+    class ReportRequestOrderBy extends \Google\Model
     {
+        protected $columnType = ReportApiColumnSpec::class;
+        protected $columnDataType = '';
+        /**
+         * The sort direction, which is either `ascending` or `descending`.
+         *
+         * @var string
+         */
+        public $sortOrder;
+        /**
+         * Column to perform the sort on. This can be a DoubleClick Search-defined
+         * column or a saved column.
+         *
+         * @param ReportApiColumnSpec $column
+         */
+        public function setColumn(ReportApiColumnSpec $column)
+        {
+        }
+        /**
+         * @return ReportApiColumnSpec
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * The sort direction, which is either `ascending` or `descending`.
+         *
+         * @param string $sortOrder
+         */
+        public function setSortOrder($sortOrder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSortOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportApiColumnSpec
+     * Runtime class alias of \Google\Service\Doubleclicksearch\ReportRequestOrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * The sort direction, which is either `ascending` or `descending`.
-     *
-     * @param string $sortOrder
-     */
-    public function setSortOrder($sortOrder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSortOrder()
+    class Google_Service_Doubleclicksearch_ReportRequestOrderBy extends \Google\Service\Doubleclicksearch\ReportRequestOrderBy
     {
     }
 }

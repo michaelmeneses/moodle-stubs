@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Insight extends \Google\Model
-{
-    protected $agentStatusType = AgentStatus::class;
-    protected $agentStatusDataType = '';
-    /**
-     * Optional. The instance id where the insight is generated from
-     *
-     * @var string
-     */
-    public $instanceId;
-    protected $openShiftValidationType = OpenShiftValidation::class;
-    protected $openShiftValidationDataType = '';
-    protected $sapDiscoveryType = SapDiscovery::class;
-    protected $sapDiscoveryDataType = '';
-    protected $sapValidationType = SapValidation::class;
-    protected $sapValidationDataType = '';
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @var string
-     */
-    public $sentTime;
-    protected $sqlserverValidationType = SqlserverValidation::class;
-    protected $sqlserverValidationDataType = '';
-    protected $torsoValidationType = TorsoValidation::class;
-    protected $torsoValidationDataType = '';
-    /**
-     * The insights data for the agent status.
-     *
-     * @param AgentStatus $agentStatus
-     */
-    public function setAgentStatus(AgentStatus $agentStatus)
+namespace Google\Service\WorkloadManager {
+    class Insight extends \Google\Model
     {
+        protected $agentStatusType = AgentStatus::class;
+        protected $agentStatusDataType = '';
+        /**
+         * Optional. The instance id where the insight is generated from
+         *
+         * @var string
+         */
+        public $instanceId;
+        protected $openShiftValidationType = OpenShiftValidation::class;
+        protected $openShiftValidationDataType = '';
+        protected $sapDiscoveryType = SapDiscovery::class;
+        protected $sapDiscoveryDataType = '';
+        protected $sapValidationType = SapValidation::class;
+        protected $sapValidationDataType = '';
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @var string
+         */
+        public $sentTime;
+        protected $sqlserverValidationType = SqlserverValidation::class;
+        protected $sqlserverValidationDataType = '';
+        protected $torsoValidationType = TorsoValidation::class;
+        protected $torsoValidationDataType = '';
+        /**
+         * The insights data for the agent status.
+         *
+         * @param AgentStatus $agentStatus
+         */
+        public function setAgentStatus(AgentStatus $agentStatus)
+        {
+        }
+        /**
+         * @return AgentStatus
+         */
+        public function getAgentStatus()
+        {
+        }
+        /**
+         * Optional. The instance id where the insight is generated from
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * The insights data for the OpenShift workload validation.
+         *
+         * @param OpenShiftValidation $openShiftValidation
+         */
+        public function setOpenShiftValidation(OpenShiftValidation $openShiftValidation)
+        {
+        }
+        /**
+         * @return OpenShiftValidation
+         */
+        public function getOpenShiftValidation()
+        {
+        }
+        /**
+         * The insights data for SAP system discovery. This is a copy of SAP System
+         * proto and should get updated whenever that one changes.
+         *
+         * @param SapDiscovery $sapDiscovery
+         */
+        public function setSapDiscovery(SapDiscovery $sapDiscovery)
+        {
+        }
+        /**
+         * @return SapDiscovery
+         */
+        public function getSapDiscovery()
+        {
+        }
+        /**
+         * The insights data for the SAP workload validation.
+         *
+         * @param SapValidation $sapValidation
+         */
+        public function setSapValidation(SapValidation $sapValidation)
+        {
+        }
+        /**
+         * @return SapValidation
+         */
+        public function getSapValidation()
+        {
+        }
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @param string $sentTime
+         */
+        public function setSentTime($sentTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSentTime()
+        {
+        }
+        /**
+         * The insights data for the sqlserver workload validation.
+         *
+         * @param SqlserverValidation $sqlserverValidation
+         */
+        public function setSqlserverValidation(SqlserverValidation $sqlserverValidation)
+        {
+        }
+        /**
+         * @return SqlserverValidation
+         */
+        public function getSqlserverValidation()
+        {
+        }
+        /**
+         * The insights data for workload validation of torso workloads.
+         *
+         * @param TorsoValidation $torsoValidation
+         */
+        public function setTorsoValidation(TorsoValidation $torsoValidation)
+        {
+        }
+        /**
+         * @return TorsoValidation
+         */
+        public function getTorsoValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentStatus
+     * Runtime class alias of \Google\Service\WorkloadManager\Insight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentStatus()
-    {
-    }
-    /**
-     * Optional. The instance id where the insight is generated from
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * The insights data for the OpenShift workload validation.
-     *
-     * @param OpenShiftValidation $openShiftValidation
-     */
-    public function setOpenShiftValidation(OpenShiftValidation $openShiftValidation)
-    {
-    }
-    /**
-     * @return OpenShiftValidation
-     */
-    public function getOpenShiftValidation()
-    {
-    }
-    /**
-     * The insights data for SAP system discovery. This is a copy of SAP System
-     * proto and should get updated whenever that one changes.
-     *
-     * @param SapDiscovery $sapDiscovery
-     */
-    public function setSapDiscovery(SapDiscovery $sapDiscovery)
-    {
-    }
-    /**
-     * @return SapDiscovery
-     */
-    public function getSapDiscovery()
-    {
-    }
-    /**
-     * The insights data for the SAP workload validation.
-     *
-     * @param SapValidation $sapValidation
-     */
-    public function setSapValidation(SapValidation $sapValidation)
-    {
-    }
-    /**
-     * @return SapValidation
-     */
-    public function getSapValidation()
-    {
-    }
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @param string $sentTime
-     */
-    public function setSentTime($sentTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSentTime()
-    {
-    }
-    /**
-     * The insights data for the sqlserver workload validation.
-     *
-     * @param SqlserverValidation $sqlserverValidation
-     */
-    public function setSqlserverValidation(SqlserverValidation $sqlserverValidation)
-    {
-    }
-    /**
-     * @return SqlserverValidation
-     */
-    public function getSqlserverValidation()
-    {
-    }
-    /**
-     * The insights data for workload validation of torso workloads.
-     *
-     * @param TorsoValidation $torsoValidation
-     */
-    public function setTorsoValidation(TorsoValidation $torsoValidation)
-    {
-    }
-    /**
-     * @return TorsoValidation
-     */
-    public function getTorsoValidation()
+    class Google_Service_WorkloadManager_Insight extends \Google\Service\WorkloadManager\Insight
     {
     }
 }

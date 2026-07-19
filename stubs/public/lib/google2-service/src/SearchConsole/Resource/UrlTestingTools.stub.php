@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole\Resource;
-
-/**
- * The "urlTestingTools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchconsoleService = new Google\Service\SearchConsole(...);
- *   $urlTestingTools = $searchconsoleService->urlTestingTools;
- *  </code>
- */
-class UrlTestingTools extends \Google\Service\Resource
-{
+namespace Google\Service\SearchConsole\Resource {
+    /**
+     * The "urlTestingTools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchconsoleService = new Google\Service\SearchConsole(...);
+     *   $urlTestingTools = $searchconsoleService->urlTestingTools;
+     *  </code>
+     */
+    class UrlTestingTools extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SearchConsole\Resource\UrlTestingTools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SearchConsole_Resource_UrlTestingTools extends \Google\Service\SearchConsole\Resource\UrlTestingTools
+    {
+    }
 }

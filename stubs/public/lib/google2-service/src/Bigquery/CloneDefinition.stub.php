@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class CloneDefinition extends \Google\Model
-{
-    protected $baseTableReferenceType = TableReference::class;
-    protected $baseTableReferenceDataType = '';
-    /**
-     * Required. The time at which the base table was cloned. This value is
-     * reported in the JSON response using RFC3339 format.
-     *
-     * @var string
-     */
-    public $cloneTime;
-    /**
-     * Required. Reference describing the ID of the table that was cloned.
-     *
-     * @param TableReference $baseTableReference
-     */
-    public function setBaseTableReference(TableReference $baseTableReference)
+namespace Google\Service\Bigquery {
+    class CloneDefinition extends \Google\Model
     {
+        protected $baseTableReferenceType = TableReference::class;
+        protected $baseTableReferenceDataType = '';
+        /**
+         * Required. The time at which the base table was cloned. This value is
+         * reported in the JSON response using RFC3339 format.
+         *
+         * @var string
+         */
+        public $cloneTime;
+        /**
+         * Required. Reference describing the ID of the table that was cloned.
+         *
+         * @param TableReference $baseTableReference
+         */
+        public function setBaseTableReference(TableReference $baseTableReference)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getBaseTableReference()
+        {
+        }
+        /**
+         * Required. The time at which the base table was cloned. This value is
+         * reported in the JSON response using RFC3339 format.
+         *
+         * @param string $cloneTime
+         */
+        public function setCloneTime($cloneTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloneTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableReference
+     * Runtime class alias of \Google\Service\Bigquery\CloneDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseTableReference()
-    {
-    }
-    /**
-     * Required. The time at which the base table was cloned. This value is
-     * reported in the JSON response using RFC3339 format.
-     *
-     * @param string $cloneTime
-     */
-    public function setCloneTime($cloneTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloneTime()
+    class Google_Service_Bigquery_CloneDefinition extends \Google\Service\Bigquery\CloneDefinition
     {
     }
 }

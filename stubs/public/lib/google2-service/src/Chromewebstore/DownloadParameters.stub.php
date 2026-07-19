@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class DownloadParameters extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $allowGzipCompression;
-    /**
-     * @var bool
-     */
-    public $ignoreRange;
-    /**
-     * @param bool
-     */
-    public function setAllowGzipCompression($allowGzipCompression)
+namespace Google\Service\Chromewebstore {
+    class DownloadParameters extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $allowGzipCompression;
+        /**
+         * @var bool
+         */
+        public $ignoreRange;
+        /**
+         * @param bool
+         */
+        public function setAllowGzipCompression($allowGzipCompression)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowGzipCompression()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIgnoreRange($ignoreRange)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Chromewebstore\DownloadParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowGzipCompression()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIgnoreRange($ignoreRange)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreRange()
+    class Google_Service_Chromewebstore_DownloadParameters extends \Google\Service\Chromewebstore\DownloadParameters
     {
     }
 }

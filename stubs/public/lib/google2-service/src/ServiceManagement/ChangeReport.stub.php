@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class ChangeReport extends \Google\Collection
-{
-    protected $collection_key = 'configChanges';
-    protected $configChangesType = ConfigChange::class;
-    protected $configChangesDataType = 'array';
-    /**
-     * List of changes between two service configurations. The changes will be
-     * alphabetically sorted based on the identifier of each change. A
-     * ConfigChange identifier is a dot separated path to the configuration.
-     * Example: visibility.rules[selector='LibraryService.CreateBook'].restriction
-     *
-     * @param ConfigChange[] $configChanges
-     */
-    public function setConfigChanges($configChanges)
+namespace Google\Service\ServiceManagement {
+    class ChangeReport extends \Google\Collection
     {
+        protected $collection_key = 'configChanges';
+        protected $configChangesType = ConfigChange::class;
+        protected $configChangesDataType = 'array';
+        /**
+         * List of changes between two service configurations. The changes will be
+         * alphabetically sorted based on the identifier of each change. A
+         * ConfigChange identifier is a dot separated path to the configuration.
+         * Example: visibility.rules[selector='LibraryService.CreateBook'].restriction
+         *
+         * @param ConfigChange[] $configChanges
+         */
+        public function setConfigChanges($configChanges)
+        {
+        }
+        /**
+         * @return ConfigChange[]
+         */
+        public function getConfigChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigChange[]
+     * Runtime class alias of \Google\Service\ServiceManagement\ChangeReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigChanges()
+    class Google_Service_ServiceManagement_ChangeReport extends \Google\Service\ServiceManagement\ChangeReport
     {
     }
 }

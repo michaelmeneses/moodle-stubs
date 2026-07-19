@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ResourceUtilizationReportResponse extends \Google\Model
-{
+namespace Google\Service\Dataflow {
+    class ResourceUtilizationReportResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\ResourceUtilizationReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_ResourceUtilizationReportResponse extends \Google\Service\Dataflow\ResourceUtilizationReportResponse
+    {
+    }
 }

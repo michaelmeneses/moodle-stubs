@@ -21,76 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat\Resource;
-
-/**
- * The "rooms" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chatService = new Google\Service\HangoutsChat(...);
- *   $rooms = $chatService->rooms;
- *  </code>
- */
-class Rooms extends \Google\Service\Resource
-{
+namespace Google\Service\HangoutsChat\Resource {
+    use Google\Service\HangoutsChat\Message;
     /**
-     * Legacy path for creating message. Calling these will result in a BadRequest
-     * response. (rooms.messages)
-     *
-     * @param string $parent Required. The resource name of the space in which to
-     * create a message. Format: spaces/{space}
-     * @param Message $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string messageId Optional. A custom name for a Chat message
-     * assigned at creation. Must start with `client-` and contain only lowercase
-     * letters, numbers, and hyphens up to 63 characters in length. Specify this
-     * field to get, update, or delete the message with the specified value. For
-     * example usage, see [Name a created message](https://developers.google.com/cha
-     * t/api/guides/crudl/messages#name_a_created_message).
-     * @opt_param string messageReplyOption Optional. Specifies whether a message
-     * starts a thread or replies to one. Only supported in named spaces.
-     * @opt_param string requestId Optional. A unique request ID for this message.
-     * Specifying an existing request ID returns the message created with that ID
-     * instead of creating a new message.
-     * @opt_param string threadKey Optional. Deprecated: Use thread.thread_key
-     * instead. Opaque thread identifier. To start or add to a thread, create a
-     * message and specify a `threadKey` or the thread.name. For example usage, see
-     * [Start or reply to a message
-     * thread](/chat/api/guides/crudl/messages#start_or_reply_to_a_message_thread).
-     * @return Message
+     * The "rooms" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chatService = new Google\Service\HangoutsChat(...);
+     *   $rooms = $chatService->rooms;
+     *  </code>
      */
-    public function messages($parent, Message $postBody, $optParams = [])
+    class Rooms extends \Google\Service\Resource
     {
+        /**
+         * Legacy path for creating message. Calling these will result in a BadRequest
+         * response. (rooms.messages)
+         *
+         * @param string $parent Required. The resource name of the space in which to
+         * create a message. Format: spaces/{space}
+         * @param Message $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string messageId Optional. A custom name for a Chat message
+         * assigned at creation. Must start with `client-` and contain only lowercase
+         * letters, numbers, and hyphens up to 63 characters in length. Specify this
+         * field to get, update, or delete the message with the specified value. For
+         * example usage, see [Name a created message](https://developers.google.com/cha
+         * t/api/guides/crudl/messages#name_a_created_message).
+         * @opt_param string messageReplyOption Optional. Specifies whether a message
+         * starts a thread or replies to one. Only supported in named spaces.
+         * @opt_param string requestId Optional. A unique request ID for this message.
+         * Specifying an existing request ID returns the message created with that ID
+         * instead of creating a new message.
+         * @opt_param string threadKey Optional. Deprecated: Use thread.thread_key
+         * instead. Opaque thread identifier. To start or add to a thread, create a
+         * message and specify a `threadKey` or the thread.name. For example usage, see
+         * [Start or reply to a message
+         * thread](/chat/api/guides/crudl/messages#start_or_reply_to_a_message_thread).
+         * @return Message
+         */
+        public function messages($parent, Message $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Legacy path for creating message. Calling these will result in a BadRequest
+         * response. (rooms.webhooks)
+         *
+         * @param string $parent Required. The resource name of the space in which to
+         * create a message. Format: spaces/{space}
+         * @param Message $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string messageId Optional. A custom name for a Chat message
+         * assigned at creation. Must start with `client-` and contain only lowercase
+         * letters, numbers, and hyphens up to 63 characters in length. Specify this
+         * field to get, update, or delete the message with the specified value. For
+         * example usage, see [Name a created message](https://developers.google.com/cha
+         * t/api/guides/crudl/messages#name_a_created_message).
+         * @opt_param string messageReplyOption Optional. Specifies whether a message
+         * starts a thread or replies to one. Only supported in named spaces.
+         * @opt_param string requestId Optional. A unique request ID for this message.
+         * Specifying an existing request ID returns the message created with that ID
+         * instead of creating a new message.
+         * @opt_param string threadKey Optional. Deprecated: Use thread.thread_key
+         * instead. Opaque thread identifier. To start or add to a thread, create a
+         * message and specify a `threadKey` or the thread.name. For example usage, see
+         * [Start or reply to a message
+         * thread](/chat/api/guides/crudl/messages#start_or_reply_to_a_message_thread).
+         * @return Message
+         */
+        public function webhooks($parent, Message $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Legacy path for creating message. Calling these will result in a BadRequest
-     * response. (rooms.webhooks)
-     *
-     * @param string $parent Required. The resource name of the space in which to
-     * create a message. Format: spaces/{space}
-     * @param Message $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string messageId Optional. A custom name for a Chat message
-     * assigned at creation. Must start with `client-` and contain only lowercase
-     * letters, numbers, and hyphens up to 63 characters in length. Specify this
-     * field to get, update, or delete the message with the specified value. For
-     * example usage, see [Name a created message](https://developers.google.com/cha
-     * t/api/guides/crudl/messages#name_a_created_message).
-     * @opt_param string messageReplyOption Optional. Specifies whether a message
-     * starts a thread or replies to one. Only supported in named spaces.
-     * @opt_param string requestId Optional. A unique request ID for this message.
-     * Specifying an existing request ID returns the message created with that ID
-     * instead of creating a new message.
-     * @opt_param string threadKey Optional. Deprecated: Use thread.thread_key
-     * instead. Opaque thread identifier. To start or add to a thread, create a
-     * message and specify a `threadKey` or the thread.name. For example usage, see
-     * [Start or reply to a message
-     * thread](/chat/api/guides/crudl/messages#start_or_reply_to_a_message_thread).
-     * @return Message
+     * Runtime class alias of \Google\Service\HangoutsChat\Resource\Rooms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function webhooks($parent, Message $postBody, $optParams = [])
+    class Google_Service_HangoutsChat_Resource_Rooms extends \Google\Service\HangoutsChat\Resource\Rooms
     {
     }
 }

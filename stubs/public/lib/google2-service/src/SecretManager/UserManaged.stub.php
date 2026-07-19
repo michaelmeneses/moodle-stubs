@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class UserManaged extends \Google\Collection
-{
-    protected $collection_key = 'replicas';
-    protected $replicasType = Replica::class;
-    protected $replicasDataType = 'array';
-    /**
-     * Required. The list of Replicas for this Secret. Cannot be empty.
-     *
-     * @param Replica[] $replicas
-     */
-    public function setReplicas($replicas)
+namespace Google\Service\SecretManager {
+    class UserManaged extends \Google\Collection
     {
+        protected $collection_key = 'replicas';
+        protected $replicasType = Replica::class;
+        protected $replicasDataType = 'array';
+        /**
+         * Required. The list of Replicas for this Secret. Cannot be empty.
+         *
+         * @param Replica[] $replicas
+         */
+        public function setReplicas($replicas)
+        {
+        }
+        /**
+         * @return Replica[]
+         */
+        public function getReplicas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Replica[]
+     * Runtime class alias of \Google\Service\SecretManager\UserManaged registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplicas()
+    class Google_Service_SecretManager_UserManaged extends \Google\Service\SecretManager\UserManaged
     {
     }
 }

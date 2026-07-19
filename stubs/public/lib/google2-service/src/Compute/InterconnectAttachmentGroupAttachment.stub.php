@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupAttachment extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attachment;
-    /**
-     * @param string $attachment
-     */
-    public function setAttachment($attachment)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupAttachment extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attachment;
+        /**
+         * @param string $attachment
+         */
+        public function setAttachment($attachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachment()
+    class Google_Service_Compute_InterconnectAttachmentGroupAttachment extends \Google\Service\Compute\InterconnectAttachmentGroupAttachment
     {
     }
 }

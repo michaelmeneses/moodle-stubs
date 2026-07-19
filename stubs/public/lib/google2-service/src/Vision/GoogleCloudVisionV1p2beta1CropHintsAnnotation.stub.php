@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1CropHintsAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'cropHints';
-    protected $cropHintsType = GoogleCloudVisionV1p2beta1CropHint::class;
-    protected $cropHintsDataType = 'array';
-    /**
-     * Crop hint results.
-     *
-     * @param GoogleCloudVisionV1p2beta1CropHint[] $cropHints
-     */
-    public function setCropHints($cropHints)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1CropHintsAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'cropHints';
+        protected $cropHintsType = GoogleCloudVisionV1p2beta1CropHint::class;
+        protected $cropHintsDataType = 'array';
+        /**
+         * Crop hint results.
+         *
+         * @param GoogleCloudVisionV1p2beta1CropHint[] $cropHints
+         */
+        public function setCropHints($cropHints)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1CropHint[]
+         */
+        public function getCropHints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p2beta1CropHint[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1CropHintsAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCropHints()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1CropHintsAnnotation extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1CropHintsAnnotation
     {
     }
 }

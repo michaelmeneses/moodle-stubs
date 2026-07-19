@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BluetoothAdapterInfo extends \Google\Model
-{
-    /**
-     * Output only. The MAC address of the adapter.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Output only. The number of devices connected to this adapter.
-     *
-     * @var int
-     */
-    public $numConnectedDevices;
-    /**
-     * Output only. The MAC address of the adapter.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Directory {
+    class BluetoothAdapterInfo extends \Google\Model
     {
+        /**
+         * Output only. The MAC address of the adapter.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Output only. The number of devices connected to this adapter.
+         *
+         * @var int
+         */
+        public $numConnectedDevices;
+        /**
+         * Output only. The MAC address of the adapter.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Output only. The number of devices connected to this adapter.
+         *
+         * @param int $numConnectedDevices
+         */
+        public function setNumConnectedDevices($numConnectedDevices)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumConnectedDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\BluetoothAdapterInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Output only. The number of devices connected to this adapter.
-     *
-     * @param int $numConnectedDevices
-     */
-    public function setNumConnectedDevices($numConnectedDevices)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumConnectedDevices()
+    class Google_Service_Directory_BluetoothAdapterInfo extends \Google\Service\Directory\BluetoothAdapterInfo
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDocumentationSpec extends \Google\Model
-{
-    /**
-     * Optional. Whether to publish result to Dataplex Catalog.
-     *
-     * @var bool
-     */
-    public $catalogPublishingEnabled;
-    /**
-     * Optional. Whether to publish result to Dataplex Catalog.
-     *
-     * @param bool $catalogPublishingEnabled
-     */
-    public function setCatalogPublishingEnabled($catalogPublishingEnabled)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDocumentationSpec extends \Google\Model
     {
+        /**
+         * Optional. Whether to publish result to Dataplex Catalog.
+         *
+         * @var bool
+         */
+        public $catalogPublishingEnabled;
+        /**
+         * Optional. Whether to publish result to Dataplex Catalog.
+         *
+         * @param bool $catalogPublishingEnabled
+         */
+        public function setCatalogPublishingEnabled($catalogPublishingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCatalogPublishingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogPublishingEnabled()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDocumentationSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationSpec
     {
     }
 }

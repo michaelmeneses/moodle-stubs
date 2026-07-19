@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BundlesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'bundles';
-    protected $bundlesType = Bundle::class;
-    protected $bundlesDataType = 'array';
-    /**
-     * The kind of this response ("androidpublisher#bundlesListResponse").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * All app bundles.
-     *
-     * @param Bundle[] $bundles
-     */
-    public function setBundles($bundles)
+namespace Google\Service\AndroidPublisher {
+    class BundlesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'bundles';
+        protected $bundlesType = Bundle::class;
+        protected $bundlesDataType = 'array';
+        /**
+         * The kind of this response ("androidpublisher#bundlesListResponse").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * All app bundles.
+         *
+         * @param Bundle[] $bundles
+         */
+        public function setBundles($bundles)
+        {
+        }
+        /**
+         * @return Bundle[]
+         */
+        public function getBundles()
+        {
+        }
+        /**
+         * The kind of this response ("androidpublisher#bundlesListResponse").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bundle[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BundlesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundles()
-    {
-    }
-    /**
-     * The kind of this response ("androidpublisher#bundlesListResponse").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_AndroidPublisher_BundlesListResponse extends \Google\Service\AndroidPublisher\BundlesListResponse
     {
     }
 }

@@ -21,113 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "services" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $services = $runService->services;
- *  </code>
- */
-class NamespacesServices extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\ListServicesResponse;
+    use Google\Service\CloudRun\Service;
+    use Google\Service\CloudRun\Status;
     /**
-     * Create a service. (services.create)
-     *
-     * @param string $parent The namespace in which the service should be created.
-     * For Cloud Run (fully managed), replace {namespace_id} with the project ID or
-     * number.
-     * @param Service $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dryRun Indicates that the server should validate the
-     * request and populate default values without persisting the request. Supported
-     * values: `all`
-     * @return Service
+     * The "services" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $services = $runService->services;
+     *  </code>
      */
-    public function create($parent, Service $postBody, $optParams = [])
+    class NamespacesServices extends \Google\Service\Resource
     {
+        /**
+         * Create a service. (services.create)
+         *
+         * @param string $parent The namespace in which the service should be created.
+         * For Cloud Run (fully managed), replace {namespace_id} with the project ID or
+         * number.
+         * @param Service $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dryRun Indicates that the server should validate the
+         * request and populate default values without persisting the request. Supported
+         * values: `all`
+         * @return Service
+         */
+        public function create($parent, Service $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a service. This will cause the Service to stop serving traffic and
+         * will delete the child entities like Routes, Configurations and Revisions.
+         * (services.delete)
+         *
+         * @param string $name The name of the service to delete. For Cloud Run (fully
+         * managed), replace {namespace_id} with the project ID or number.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string apiVersion Cloud Run currently ignores this parameter.
+         * @opt_param string dryRun Indicates that the server should validate the
+         * request and populate default values without persisting the request. Supported
+         * values: `all`
+         * @opt_param string kind Cloud Run currently ignores this parameter.
+         * @opt_param string propagationPolicy Specifies the propagation policy of
+         * delete. Cloud Run currently ignores this setting, and deletes in the
+         * background. Please see kubernetes.io/docs/concepts/workloads/controllers
+         * /garbage-collection/ for more information.
+         * @return Status
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get information about a service. (services.get)
+         *
+         * @param string $name The name of the service to retrieve. For Cloud Run (fully
+         * managed), replace {namespace_id} with the project ID or number.
+         * @param array $optParams Optional parameters.
+         * @return Service
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List services. (services.listNamespacesServices)
+         *
+         * @param string $parent The namespace from which the services should be listed.
+         * For Cloud Run (fully managed), replace {namespace_id} with the project ID or
+         * number.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string continue Optional. Encoded string to continue paging.
+         * @opt_param string fieldSelector Allows to filter resources based on a
+         * specific value for a field name. Send this in a query string format. i.e.
+         * 'metadata.name%3Dlorem'. Not currently used by Cloud Run.
+         * @opt_param bool includeUninitialized Not currently used by Cloud Run.
+         * @opt_param string labelSelector Allows to filter resources based on a label.
+         * Supported operations are =, !=, exists, in, and notIn.
+         * @opt_param int limit Optional. The maximum number of records that should be
+         * returned.
+         * @opt_param string resourceVersion The baseline resource version from which
+         * the list or watch operation should start. Not currently used by Cloud Run.
+         * @opt_param bool watch Flag that indicates that the client expects to watch
+         * this resource as well. Not currently used by Cloud Run.
+         * @return ListServicesResponse
+         */
+        public function listNamespacesServices($parent, $optParams = [])
+        {
+        }
+        /**
+         * Replace a service. Only the spec and metadata labels and annotations are
+         * modifiable. After the Update request, Cloud Run will work to make the
+         * 'status' match the requested 'spec'. May provide metadata.resourceVersion to
+         * enforce update from last read for optimistic concurrency control.
+         * (services.replaceService)
+         *
+         * @param string $name The name of the service being replaced. For Cloud Run
+         * (fully managed), replace {namespace_id} with the project ID or number.
+         * @param Service $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dryRun Indicates that the server should validate the
+         * request and populate default values without persisting the request. Supported
+         * values: `all`
+         * @return Service
+         */
+        public function replaceService($name, Service $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a service. This will cause the Service to stop serving traffic and
-     * will delete the child entities like Routes, Configurations and Revisions.
-     * (services.delete)
-     *
-     * @param string $name The name of the service to delete. For Cloud Run (fully
-     * managed), replace {namespace_id} with the project ID or number.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string apiVersion Cloud Run currently ignores this parameter.
-     * @opt_param string dryRun Indicates that the server should validate the
-     * request and populate default values without persisting the request. Supported
-     * values: `all`
-     * @opt_param string kind Cloud Run currently ignores this parameter.
-     * @opt_param string propagationPolicy Specifies the propagation policy of
-     * delete. Cloud Run currently ignores this setting, and deletes in the
-     * background. Please see kubernetes.io/docs/concepts/workloads/controllers
-     * /garbage-collection/ for more information.
-     * @return Status
+     * Runtime class alias of \Google\Service\CloudRun\Resource\NamespacesServices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get information about a service. (services.get)
-     *
-     * @param string $name The name of the service to retrieve. For Cloud Run (fully
-     * managed), replace {namespace_id} with the project ID or number.
-     * @param array $optParams Optional parameters.
-     * @return Service
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List services. (services.listNamespacesServices)
-     *
-     * @param string $parent The namespace from which the services should be listed.
-     * For Cloud Run (fully managed), replace {namespace_id} with the project ID or
-     * number.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string continue Optional. Encoded string to continue paging.
-     * @opt_param string fieldSelector Allows to filter resources based on a
-     * specific value for a field name. Send this in a query string format. i.e.
-     * 'metadata.name%3Dlorem'. Not currently used by Cloud Run.
-     * @opt_param bool includeUninitialized Not currently used by Cloud Run.
-     * @opt_param string labelSelector Allows to filter resources based on a label.
-     * Supported operations are =, !=, exists, in, and notIn.
-     * @opt_param int limit Optional. The maximum number of records that should be
-     * returned.
-     * @opt_param string resourceVersion The baseline resource version from which
-     * the list or watch operation should start. Not currently used by Cloud Run.
-     * @opt_param bool watch Flag that indicates that the client expects to watch
-     * this resource as well. Not currently used by Cloud Run.
-     * @return ListServicesResponse
-     */
-    public function listNamespacesServices($parent, $optParams = [])
-    {
-    }
-    /**
-     * Replace a service. Only the spec and metadata labels and annotations are
-     * modifiable. After the Update request, Cloud Run will work to make the
-     * 'status' match the requested 'spec'. May provide metadata.resourceVersion to
-     * enforce update from last read for optimistic concurrency control.
-     * (services.replaceService)
-     *
-     * @param string $name The name of the service being replaced. For Cloud Run
-     * (fully managed), replace {namespace_id} with the project ID or number.
-     * @param Service $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dryRun Indicates that the server should validate the
-     * request and populate default values without persisting the request. Supported
-     * values: `all`
-     * @return Service
-     */
-    public function replaceService($name, Service $postBody, $optParams = [])
+    class Google_Service_CloudRun_Resource_NamespacesServices extends \Google\Service\CloudRun\Resource\NamespacesServices
     {
     }
 }

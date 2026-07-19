@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerResourceList extends \Google\Model
-{
-    /**
-     * CPU requirement expressed in Kubernetes resource units.
-     *
-     * @var string
-     */
-    public $cpu;
-    /**
-     * Memory requirement expressed in Kubernetes resource units.
-     *
-     * @var string
-     */
-    public $memory;
-    /**
-     * CPU requirement expressed in Kubernetes resource units.
-     *
-     * @param string $cpu
-     */
-    public function setCpu($cpu)
+namespace Google\Service\GKEHub {
+    class PolicyControllerResourceList extends \Google\Model
     {
+        /**
+         * CPU requirement expressed in Kubernetes resource units.
+         *
+         * @var string
+         */
+        public $cpu;
+        /**
+         * Memory requirement expressed in Kubernetes resource units.
+         *
+         * @var string
+         */
+        public $memory;
+        /**
+         * CPU requirement expressed in Kubernetes resource units.
+         *
+         * @param string $cpu
+         */
+        public function setCpu($cpu)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Memory requirement expressed in Kubernetes resource units.
+         *
+         * @param string $memory
+         */
+        public function setMemory($memory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerResourceList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpu()
-    {
-    }
-    /**
-     * Memory requirement expressed in Kubernetes resource units.
-     *
-     * @param string $memory
-     */
-    public function setMemory($memory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemory()
+    class Google_Service_GKEHub_PolicyControllerResourceList extends \Google\Service\GKEHub\PolicyControllerResourceList
     {
     }
 }

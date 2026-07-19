@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accountTicketId;
-    /**
-     * @param string
-     */
-    public function setAccountTicketId($accountTicketId)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accountTicketId;
+        /**
+         * @param string
+         */
+        public function setAccountTicketId($accountTicketId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountTicketId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountTicketId()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse
     {
     }
 }

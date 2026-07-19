@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class GKEWorkload extends \Google\Model
-{
-    /**
-     * Required. Immutable. The name of the GKE cluster. Format:
-     * `projects/{project}/locations/{location}/clusters/{cluster}`.
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * Output only. The name of the GKE deployment. Format: `projects/{project}/lo
-     * cations/{location}/clusters/{cluster}/namespaces/{namespace}/deployments/{d
-     * eployment}`.
-     *
-     * @var string
-     */
-    public $deployment;
-    /**
-     * Required. Immutable. The name of the GKE cluster. Format:
-     * `projects/{project}/locations/{location}/clusters/{cluster}`.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
+namespace Google\Service\DeveloperConnect {
+    class GKEWorkload extends \Google\Model
     {
+        /**
+         * Required. Immutable. The name of the GKE cluster. Format:
+         * `projects/{project}/locations/{location}/clusters/{cluster}`.
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * Output only. The name of the GKE deployment. Format: `projects/{project}/lo
+         * cations/{location}/clusters/{cluster}/namespaces/{namespace}/deployments/{d
+         * eployment}`.
+         *
+         * @var string
+         */
+        public $deployment;
+        /**
+         * Required. Immutable. The name of the GKE cluster. Format:
+         * `projects/{project}/locations/{location}/clusters/{cluster}`.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Output only. The name of the GKE deployment. Format: `projects/{project}/lo
+         * cations/{location}/clusters/{cluster}/namespaces/{namespace}/deployments/{d
+         * eployment}`.
+         *
+         * @param string $deployment
+         */
+        public function setDeployment($deployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\GKEWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * Output only. The name of the GKE deployment. Format: `projects/{project}/lo
-     * cations/{location}/clusters/{cluster}/namespaces/{namespace}/deployments/{d
-     * eployment}`.
-     *
-     * @param string $deployment
-     */
-    public function setDeployment($deployment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeployment()
+    class Google_Service_DeveloperConnect_GKEWorkload extends \Google\Service\DeveloperConnect\GKEWorkload
     {
     }
 }

@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3EntityType extends \Google\Collection
-{
-    /**
-     * Auto expansion disabled for the entity.
-     */
-    public const AUTO_EXPANSION_MODE_AUTO_EXPANSION_MODE_UNSPECIFIED = 'AUTO_EXPANSION_MODE_UNSPECIFIED';
-    /**
-     * Allows an agent to recognize values that have not been explicitly listed in
-     * the entity.
-     */
-    public const AUTO_EXPANSION_MODE_AUTO_EXPANSION_MODE_DEFAULT = 'AUTO_EXPANSION_MODE_DEFAULT';
-    /**
-     * Not specified. This value should be never used.
-     */
-    public const KIND_KIND_UNSPECIFIED = 'KIND_UNSPECIFIED';
-    /**
-     * Map entity types allow mapping of a group of synonyms to a canonical value.
-     */
-    public const KIND_KIND_MAP = 'KIND_MAP';
-    /**
-     * List entity types contain a set of entries that do not map to canonical
-     * values. However, list entity types can contain references to other entity
-     * types (with or without aliases).
-     */
-    public const KIND_KIND_LIST = 'KIND_LIST';
-    /**
-     * Regexp entity types allow to specify regular expressions in entries values.
-     */
-    public const KIND_KIND_REGEXP = 'KIND_REGEXP';
-    protected $collection_key = 'excludedPhrases';
-    /**
-     * Indicates whether the entity type can be automatically expanded.
-     *
-     * @var string
-     */
-    public $autoExpansionMode;
-    /**
-     * Required. The human-readable name of the entity type, unique within the
-     * agent.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Enables fuzzy entity extraction during classification.
-     *
-     * @var bool
-     */
-    public $enableFuzzyExtraction;
-    protected $entitiesType = GoogleCloudDialogflowCxV3EntityTypeEntity::class;
-    protected $entitiesDataType = 'array';
-    protected $excludedPhrasesType = GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase::class;
-    protected $excludedPhrasesDataType = 'array';
-    /**
-     * Required. Indicates the kind of entity type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The unique identifier of the entity type. Required for
-     * EntityTypes.UpdateEntityType. Format:
-     * `projects//locations//agents//entityTypes/`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Indicates whether parameters of the entity type should be redacted in log.
-     * If redaction is enabled, page parameters and intent parameters referring to
-     * the entity type will be replaced by parameter name when logging.
-     *
-     * @var bool
-     */
-    public $redact;
-    /**
-     * Indicates whether the entity type can be automatically expanded.
-     *
-     * Accepted values: AUTO_EXPANSION_MODE_UNSPECIFIED,
-     * AUTO_EXPANSION_MODE_DEFAULT
-     *
-     * @param self::AUTO_EXPANSION_MODE_* $autoExpansionMode
-     */
-    public function setAutoExpansionMode($autoExpansionMode)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3EntityType extends \Google\Collection
     {
+        /**
+         * Auto expansion disabled for the entity.
+         */
+        public const AUTO_EXPANSION_MODE_AUTO_EXPANSION_MODE_UNSPECIFIED = 'AUTO_EXPANSION_MODE_UNSPECIFIED';
+        /**
+         * Allows an agent to recognize values that have not been explicitly listed in
+         * the entity.
+         */
+        public const AUTO_EXPANSION_MODE_AUTO_EXPANSION_MODE_DEFAULT = 'AUTO_EXPANSION_MODE_DEFAULT';
+        /**
+         * Not specified. This value should be never used.
+         */
+        public const KIND_KIND_UNSPECIFIED = 'KIND_UNSPECIFIED';
+        /**
+         * Map entity types allow mapping of a group of synonyms to a canonical value.
+         */
+        public const KIND_KIND_MAP = 'KIND_MAP';
+        /**
+         * List entity types contain a set of entries that do not map to canonical
+         * values. However, list entity types can contain references to other entity
+         * types (with or without aliases).
+         */
+        public const KIND_KIND_LIST = 'KIND_LIST';
+        /**
+         * Regexp entity types allow to specify regular expressions in entries values.
+         */
+        public const KIND_KIND_REGEXP = 'KIND_REGEXP';
+        protected $collection_key = 'excludedPhrases';
+        /**
+         * Indicates whether the entity type can be automatically expanded.
+         *
+         * @var string
+         */
+        public $autoExpansionMode;
+        /**
+         * Required. The human-readable name of the entity type, unique within the
+         * agent.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Enables fuzzy entity extraction during classification.
+         *
+         * @var bool
+         */
+        public $enableFuzzyExtraction;
+        protected $entitiesType = GoogleCloudDialogflowCxV3EntityTypeEntity::class;
+        protected $entitiesDataType = 'array';
+        protected $excludedPhrasesType = GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase::class;
+        protected $excludedPhrasesDataType = 'array';
+        /**
+         * Required. Indicates the kind of entity type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The unique identifier of the entity type. Required for
+         * EntityTypes.UpdateEntityType. Format:
+         * `projects//locations//agents//entityTypes/`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Indicates whether parameters of the entity type should be redacted in log.
+         * If redaction is enabled, page parameters and intent parameters referring to
+         * the entity type will be replaced by parameter name when logging.
+         *
+         * @var bool
+         */
+        public $redact;
+        /**
+         * Indicates whether the entity type can be automatically expanded.
+         *
+         * Accepted values: AUTO_EXPANSION_MODE_UNSPECIFIED,
+         * AUTO_EXPANSION_MODE_DEFAULT
+         *
+         * @param self::AUTO_EXPANSION_MODE_* $autoExpansionMode
+         */
+        public function setAutoExpansionMode($autoExpansionMode)
+        {
+        }
+        /**
+         * @return self::AUTO_EXPANSION_MODE_*
+         */
+        public function getAutoExpansionMode()
+        {
+        }
+        /**
+         * Required. The human-readable name of the entity type, unique within the
+         * agent.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Enables fuzzy entity extraction during classification.
+         *
+         * @param bool $enableFuzzyExtraction
+         */
+        public function setEnableFuzzyExtraction($enableFuzzyExtraction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableFuzzyExtraction()
+        {
+        }
+        /**
+         * The collection of entity entries associated with the entity type.
+         *
+         * @param GoogleCloudDialogflowCxV3EntityTypeEntity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3EntityTypeEntity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * Collection of exceptional words and phrases that shouldn't be matched. For
+         * example, if you have a size entity type with entry `giant`(an adjective),
+         * you might consider adding `giants`(a noun) as an exclusion. If the kind of
+         * entity type is `KIND_MAP`, then the phrases specified by entities and
+         * excluded phrases should be mutually exclusive.
+         *
+         * @param GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase[] $excludedPhrases
+         */
+        public function setExcludedPhrases($excludedPhrases)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase[]
+         */
+        public function getExcludedPhrases()
+        {
+        }
+        /**
+         * Required. Indicates the kind of entity type.
+         *
+         * Accepted values: KIND_UNSPECIFIED, KIND_MAP, KIND_LIST, KIND_REGEXP
+         *
+         * @param self::KIND_* $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return self::KIND_*
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The unique identifier of the entity type. Required for
+         * EntityTypes.UpdateEntityType. Format:
+         * `projects//locations//agents//entityTypes/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Indicates whether parameters of the entity type should be redacted in log.
+         * If redaction is enabled, page parameters and intent parameters referring to
+         * the entity type will be replaced by parameter name when logging.
+         *
+         * @param bool $redact
+         */
+        public function setRedact($redact)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRedact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AUTO_EXPANSION_MODE_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EntityType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoExpansionMode()
-    {
-    }
-    /**
-     * Required. The human-readable name of the entity type, unique within the
-     * agent.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Enables fuzzy entity extraction during classification.
-     *
-     * @param bool $enableFuzzyExtraction
-     */
-    public function setEnableFuzzyExtraction($enableFuzzyExtraction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableFuzzyExtraction()
-    {
-    }
-    /**
-     * The collection of entity entries associated with the entity type.
-     *
-     * @param GoogleCloudDialogflowCxV3EntityTypeEntity[] $entities
-     */
-    public function setEntities($entities)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3EntityTypeEntity[]
-     */
-    public function getEntities()
-    {
-    }
-    /**
-     * Collection of exceptional words and phrases that shouldn't be matched. For
-     * example, if you have a size entity type with entry `giant`(an adjective),
-     * you might consider adding `giants`(a noun) as an exclusion. If the kind of
-     * entity type is `KIND_MAP`, then the phrases specified by entities and
-     * excluded phrases should be mutually exclusive.
-     *
-     * @param GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase[] $excludedPhrases
-     */
-    public function setExcludedPhrases($excludedPhrases)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3EntityTypeExcludedPhrase[]
-     */
-    public function getExcludedPhrases()
-    {
-    }
-    /**
-     * Required. Indicates the kind of entity type.
-     *
-     * Accepted values: KIND_UNSPECIFIED, KIND_MAP, KIND_LIST, KIND_REGEXP
-     *
-     * @param self::KIND_* $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return self::KIND_*
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The unique identifier of the entity type. Required for
-     * EntityTypes.UpdateEntityType. Format:
-     * `projects//locations//agents//entityTypes/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Indicates whether parameters of the entity type should be redacted in log.
-     * If redaction is enabled, page parameters and intent parameters referring to
-     * the entity type will be replaced by parameter name when logging.
-     *
-     * @param bool $redact
-     */
-    public function setRedact($redact)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRedact()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3EntityType extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EntityType
     {
     }
 }

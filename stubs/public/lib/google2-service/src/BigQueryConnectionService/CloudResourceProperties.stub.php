@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class CloudResourceProperties extends \Google\Model
-{
-    /**
-     * Output only. The account ID of the service created for the purpose of this
-     * connection. The service account does not have any permissions associated
-     * with it when it is created. After creation, customers delegate permissions
-     * to the service account. When the connection is used in the context of an
-     * operation in BigQuery, the service account will be used to connect to the
-     * desired resources in GCP. The account ID is in the form of: @gcp-sa-
-     * bigquery-cloudresource.iam.gserviceaccount.com
-     *
-     * @var string
-     */
-    public $serviceAccountId;
-    /**
-     * Output only. The account ID of the service created for the purpose of this
-     * connection. The service account does not have any permissions associated
-     * with it when it is created. After creation, customers delegate permissions
-     * to the service account. When the connection is used in the context of an
-     * operation in BigQuery, the service account will be used to connect to the
-     * desired resources in GCP. The account ID is in the form of: @gcp-sa-
-     * bigquery-cloudresource.iam.gserviceaccount.com
-     *
-     * @param string $serviceAccountId
-     */
-    public function setServiceAccountId($serviceAccountId)
+namespace Google\Service\BigQueryConnectionService {
+    class CloudResourceProperties extends \Google\Model
     {
+        /**
+         * Output only. The account ID of the service created for the purpose of this
+         * connection. The service account does not have any permissions associated
+         * with it when it is created. After creation, customers delegate permissions
+         * to the service account. When the connection is used in the context of an
+         * operation in BigQuery, the service account will be used to connect to the
+         * desired resources in GCP. The account ID is in the form of: @gcp-sa-
+         * bigquery-cloudresource.iam.gserviceaccount.com
+         *
+         * @var string
+         */
+        public $serviceAccountId;
+        /**
+         * Output only. The account ID of the service created for the purpose of this
+         * connection. The service account does not have any permissions associated
+         * with it when it is created. After creation, customers delegate permissions
+         * to the service account. When the connection is used in the context of an
+         * operation in BigQuery, the service account will be used to connect to the
+         * desired resources in GCP. The account ID is in the form of: @gcp-sa-
+         * bigquery-cloudresource.iam.gserviceaccount.com
+         *
+         * @param string $serviceAccountId
+         */
+        public function setServiceAccountId($serviceAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\CloudResourceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccountId()
+    class Google_Service_BigQueryConnectionService_CloudResourceProperties extends \Google\Service\BigQueryConnectionService\CloudResourceProperties
     {
     }
 }

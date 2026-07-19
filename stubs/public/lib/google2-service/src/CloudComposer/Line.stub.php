@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class Line extends \Google\Model
-{
-    /**
-     * Text content of the log line.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Number of the line.
-     *
-     * @var int
-     */
-    public $lineNumber;
-    /**
-     * Text content of the log line.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\CloudComposer {
+    class Line extends \Google\Model
     {
+        /**
+         * Text content of the log line.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Number of the line.
+         *
+         * @var int
+         */
+        public $lineNumber;
+        /**
+         * Text content of the log line.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Number of the line.
+         *
+         * @param int $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\Line registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Number of the line.
-     *
-     * @param int $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLineNumber()
+    class Google_Service_CloudComposer_Line extends \Google\Service\CloudComposer\Line
     {
     }
 }

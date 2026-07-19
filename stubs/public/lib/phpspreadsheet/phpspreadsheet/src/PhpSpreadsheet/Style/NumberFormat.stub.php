@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
 class NumberFormat extends Supervisor
 {
     // Pre-defined formats

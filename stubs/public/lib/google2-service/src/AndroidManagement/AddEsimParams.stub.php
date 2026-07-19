@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class AddEsimParams extends \Google\Model
-{
-    /**
-     * eSIM activation state is not specified. This defaults to the eSIM profile
-     * being NOT_ACTIVATED on personally-owned devices and ACTIVATED on company-
-     * owned devices.
-     */
-    public const ACTIVATION_STATE_ACTIVATION_STATE_UNSPECIFIED = 'ACTIVATION_STATE_UNSPECIFIED';
-    /**
-     * The eSIM is automatically activated after downloading. Setting this as the
-     * activation state for personally-owned devices will result in the command
-     * being rejected.
-     */
-    public const ACTIVATION_STATE_ACTIVATED = 'ACTIVATED';
-    /**
-     * The eSIM profile is downloaded but not activated. In this case, the user
-     * will need to activate the eSIM manually on the device.
-     */
-    public const ACTIVATION_STATE_NOT_ACTIVATED = 'NOT_ACTIVATED';
-    /**
-     * Required. The activation code for the eSIM profile.
-     *
-     * @var string
-     */
-    public $activationCode;
-    /**
-     * Required. The activation state of the eSIM profile once it is downloaded.
-     *
-     * @var string
-     */
-    public $activationState;
-    /**
-     * Required. The activation code for the eSIM profile.
-     *
-     * @param string $activationCode
-     */
-    public function setActivationCode($activationCode)
+namespace Google\Service\AndroidManagement {
+    class AddEsimParams extends \Google\Model
     {
+        /**
+         * eSIM activation state is not specified. This defaults to the eSIM profile
+         * being NOT_ACTIVATED on personally-owned devices and ACTIVATED on company-
+         * owned devices.
+         */
+        public const ACTIVATION_STATE_ACTIVATION_STATE_UNSPECIFIED = 'ACTIVATION_STATE_UNSPECIFIED';
+        /**
+         * The eSIM is automatically activated after downloading. Setting this as the
+         * activation state for personally-owned devices will result in the command
+         * being rejected.
+         */
+        public const ACTIVATION_STATE_ACTIVATED = 'ACTIVATED';
+        /**
+         * The eSIM profile is downloaded but not activated. In this case, the user
+         * will need to activate the eSIM manually on the device.
+         */
+        public const ACTIVATION_STATE_NOT_ACTIVATED = 'NOT_ACTIVATED';
+        /**
+         * Required. The activation code for the eSIM profile.
+         *
+         * @var string
+         */
+        public $activationCode;
+        /**
+         * Required. The activation state of the eSIM profile once it is downloaded.
+         *
+         * @var string
+         */
+        public $activationState;
+        /**
+         * Required. The activation code for the eSIM profile.
+         *
+         * @param string $activationCode
+         */
+        public function setActivationCode($activationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivationCode()
+        {
+        }
+        /**
+         * Required. The activation state of the eSIM profile once it is downloaded.
+         *
+         * Accepted values: ACTIVATION_STATE_UNSPECIFIED, ACTIVATED, NOT_ACTIVATED
+         *
+         * @param self::ACTIVATION_STATE_* $activationState
+         */
+        public function setActivationState($activationState)
+        {
+        }
+        /**
+         * @return self::ACTIVATION_STATE_*
+         */
+        public function getActivationState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\AddEsimParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationCode()
-    {
-    }
-    /**
-     * Required. The activation state of the eSIM profile once it is downloaded.
-     *
-     * Accepted values: ACTIVATION_STATE_UNSPECIFIED, ACTIVATED, NOT_ACTIVATED
-     *
-     * @param self::ACTIVATION_STATE_* $activationState
-     */
-    public function setActivationState($activationState)
-    {
-    }
-    /**
-     * @return self::ACTIVATION_STATE_*
-     */
-    public function getActivationState()
+    class Google_Service_AndroidManagement_AddEsimParams extends \Google\Service\AndroidManagement\AddEsimParams
     {
     }
 }

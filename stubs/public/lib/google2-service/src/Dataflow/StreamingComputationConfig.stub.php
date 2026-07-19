@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingComputationConfig extends \Google\Collection
-{
-    protected $collection_key = 'instructions';
-    /**
-     * Unique identifier for this computation.
-     *
-     * @var string
-     */
-    public $computationId;
-    protected $instructionsType = ParallelInstruction::class;
-    protected $instructionsDataType = 'array';
-    /**
-     * Stage name of this computation.
-     *
-     * @var string
-     */
-    public $stageName;
-    /**
-     * System defined name for this computation.
-     *
-     * @var string
-     */
-    public $systemName;
-    /**
-     * Map from user name of stateful transforms in this stage to their state
-     * family.
-     *
-     * @var string[]
-     */
-    public $transformUserNameToStateFamily;
-    /**
-     * Unique identifier for this computation.
-     *
-     * @param string $computationId
-     */
-    public function setComputationId($computationId)
+namespace Google\Service\Dataflow {
+    class StreamingComputationConfig extends \Google\Collection
     {
+        protected $collection_key = 'instructions';
+        /**
+         * Unique identifier for this computation.
+         *
+         * @var string
+         */
+        public $computationId;
+        protected $instructionsType = ParallelInstruction::class;
+        protected $instructionsDataType = 'array';
+        /**
+         * Stage name of this computation.
+         *
+         * @var string
+         */
+        public $stageName;
+        /**
+         * System defined name for this computation.
+         *
+         * @var string
+         */
+        public $systemName;
+        /**
+         * Map from user name of stateful transforms in this stage to their state
+         * family.
+         *
+         * @var string[]
+         */
+        public $transformUserNameToStateFamily;
+        /**
+         * Unique identifier for this computation.
+         *
+         * @param string $computationId
+         */
+        public function setComputationId($computationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComputationId()
+        {
+        }
+        /**
+         * Instructions that comprise the computation.
+         *
+         * @param ParallelInstruction[] $instructions
+         */
+        public function setInstructions($instructions)
+        {
+        }
+        /**
+         * @return ParallelInstruction[]
+         */
+        public function getInstructions()
+        {
+        }
+        /**
+         * Stage name of this computation.
+         *
+         * @param string $stageName
+         */
+        public function setStageName($stageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageName()
+        {
+        }
+        /**
+         * System defined name for this computation.
+         *
+         * @param string $systemName
+         */
+        public function setSystemName($systemName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemName()
+        {
+        }
+        /**
+         * Map from user name of stateful transforms in this stage to their state
+         * family.
+         *
+         * @param string[] $transformUserNameToStateFamily
+         */
+        public function setTransformUserNameToStateFamily($transformUserNameToStateFamily)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTransformUserNameToStateFamily()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingComputationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputationId()
-    {
-    }
-    /**
-     * Instructions that comprise the computation.
-     *
-     * @param ParallelInstruction[] $instructions
-     */
-    public function setInstructions($instructions)
-    {
-    }
-    /**
-     * @return ParallelInstruction[]
-     */
-    public function getInstructions()
-    {
-    }
-    /**
-     * Stage name of this computation.
-     *
-     * @param string $stageName
-     */
-    public function setStageName($stageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageName()
-    {
-    }
-    /**
-     * System defined name for this computation.
-     *
-     * @param string $systemName
-     */
-    public function setSystemName($systemName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemName()
-    {
-    }
-    /**
-     * Map from user name of stateful transforms in this stage to their state
-     * family.
-     *
-     * @param string[] $transformUserNameToStateFamily
-     */
-    public function setTransformUserNameToStateFamily($transformUserNameToStateFamily)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTransformUserNameToStateFamily()
+    class Google_Service_Dataflow_StreamingComputationConfig extends \Google\Service\Dataflow\StreamingComputationConfig
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class KeyId extends \Google\Model
-{
-    /**
-     * Optional. The value of this KeyId encoded in lowercase hexadecimal. This is
-     * most likely the 160 bit SHA-1 hash of the public key.
-     *
-     * @var string
-     */
-    public $keyId;
-    /**
-     * Optional. The value of this KeyId encoded in lowercase hexadecimal. This is
-     * most likely the 160 bit SHA-1 hash of the public key.
-     *
-     * @param string $keyId
-     */
-    public function setKeyId($keyId)
+namespace Google\Service\CertificateAuthorityService {
+    class KeyId extends \Google\Model
     {
+        /**
+         * Optional. The value of this KeyId encoded in lowercase hexadecimal. This is
+         * most likely the 160 bit SHA-1 hash of the public key.
+         *
+         * @var string
+         */
+        public $keyId;
+        /**
+         * Optional. The value of this KeyId encoded in lowercase hexadecimal. This is
+         * most likely the 160 bit SHA-1 hash of the public key.
+         *
+         * @param string $keyId
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\KeyId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyId()
+    class Google_Service_CertificateAuthorityService_KeyId extends \Google\Service\CertificateAuthorityService\KeyId
     {
     }
 }

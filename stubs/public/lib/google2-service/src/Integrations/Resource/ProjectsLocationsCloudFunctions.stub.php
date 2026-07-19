@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "cloudFunctions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $cloudFunctions = $integrationsService->projects_locations_cloudFunctions;
- *  </code>
- */
-class ProjectsLocationsCloudFunctions extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateCloudFunctionRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse;
     /**
-     * Creates a cloud function project. (cloudFunctions.create)
-     *
-     * @param string $parent Required. The project that the executed integration
-     * belongs to.
-     * @param GoogleCloudIntegrationsV1alphaCreateCloudFunctionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse
-     * @throws \Google\Service\Exception
+     * The "cloudFunctions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $cloudFunctions = $integrationsService->projects_locations_cloudFunctions;
+     *  </code>
      */
-    public function create($parent, GoogleCloudIntegrationsV1alphaCreateCloudFunctionRequest $postBody, $optParams = [])
+    class ProjectsLocationsCloudFunctions extends \Google\Service\Resource
+    {
+        /**
+         * Creates a cloud function project. (cloudFunctions.create)
+         *
+         * @param string $parent Required. The project that the executed integration
+         * belongs to.
+         * @param GoogleCloudIntegrationsV1alphaCreateCloudFunctionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaCreateCloudFunctionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudIntegrationsV1alphaCreateCloudFunctionRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsCloudFunctions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsCloudFunctions extends \Google\Service\Integrations\Resource\ProjectsLocationsCloudFunctions
     {
     }
 }

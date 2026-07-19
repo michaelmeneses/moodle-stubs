@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GeneratedUniversalApk extends \Google\Model
-{
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @var string
-     */
-    public $downloadId;
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @param string $downloadId
-     */
-    public function setDownloadId($downloadId)
+namespace Google\Service\AndroidPublisher {
+    class GeneratedUniversalApk extends \Google\Model
     {
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @var string
+         */
+        public $downloadId;
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @param string $downloadId
+         */
+        public function setDownloadId($downloadId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\GeneratedUniversalApk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadId()
+    class Google_Service_AndroidPublisher_GeneratedUniversalApk extends \Google\Service\AndroidPublisher\GeneratedUniversalApk
     {
     }
 }

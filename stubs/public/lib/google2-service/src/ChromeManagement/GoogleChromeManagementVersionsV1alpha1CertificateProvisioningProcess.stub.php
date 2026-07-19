@@ -21,240 +21,249 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $caConnectionAdapterConfigReference;
-    protected $chromeOsDeviceType = GoogleChromeManagementVersionsV1alpha1ChromeOsDevice::class;
-    protected $chromeOsDeviceDataType = '';
-    protected $chromeOsUserSessionType = GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession::class;
-    protected $chromeOsUserSessionDataType = '';
-    /**
-     * @var string
-     */
-    public $failureMessage;
-    protected $genericCaConnectionType = GoogleChromeManagementVersionsV1alpha1GenericCaConnection::class;
-    protected $genericCaConnectionDataType = '';
-    protected $genericProfileType = GoogleChromeManagementVersionsV1alpha1GenericProfile::class;
-    protected $genericProfileDataType = '';
-    /**
-     * @var string
-     */
-    public $issuedCertificate;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $profileAdapterConfigReference;
-    /**
-     * @var string
-     */
-    public $provisioningProfileId;
-    /**
-     * @var string
-     */
-    public $signData;
-    /**
-     * @var string
-     */
-    public $signature;
-    /**
-     * @var string
-     */
-    public $signatureAlgorithm;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $subjectPublicKeyInfo;
-    /**
-     * @param string
-     */
-    public function setCaConnectionAdapterConfigReference($caConnectionAdapterConfigReference)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $caConnectionAdapterConfigReference;
+        protected $chromeOsDeviceType = GoogleChromeManagementVersionsV1alpha1ChromeOsDevice::class;
+        protected $chromeOsDeviceDataType = '';
+        protected $chromeOsUserSessionType = GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession::class;
+        protected $chromeOsUserSessionDataType = '';
+        /**
+         * @var string
+         */
+        public $failureMessage;
+        protected $genericCaConnectionType = GoogleChromeManagementVersionsV1alpha1GenericCaConnection::class;
+        protected $genericCaConnectionDataType = '';
+        protected $genericProfileType = GoogleChromeManagementVersionsV1alpha1GenericProfile::class;
+        protected $genericProfileDataType = '';
+        /**
+         * @var string
+         */
+        public $issuedCertificate;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $profileAdapterConfigReference;
+        /**
+         * @var string
+         */
+        public $provisioningProfileId;
+        /**
+         * @var string
+         */
+        public $signData;
+        /**
+         * @var string
+         */
+        public $signature;
+        /**
+         * @var string
+         */
+        public $signatureAlgorithm;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $subjectPublicKeyInfo;
+        /**
+         * @param string
+         */
+        public function setCaConnectionAdapterConfigReference($caConnectionAdapterConfigReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaConnectionAdapterConfigReference()
+        {
+        }
+        /**
+         * @param GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
+         */
+        public function setChromeOsDevice(GoogleChromeManagementVersionsV1alpha1ChromeOsDevice $chromeOsDevice)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
+         */
+        public function getChromeOsDevice()
+        {
+        }
+        /**
+         * @param GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession
+         */
+        public function setChromeOsUserSession(GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession $chromeOsUserSession)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession
+         */
+        public function getChromeOsUserSession()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFailureMessage($failureMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureMessage()
+        {
+        }
+        /**
+         * @param GoogleChromeManagementVersionsV1alpha1GenericCaConnection
+         */
+        public function setGenericCaConnection(GoogleChromeManagementVersionsV1alpha1GenericCaConnection $genericCaConnection)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1alpha1GenericCaConnection
+         */
+        public function getGenericCaConnection()
+        {
+        }
+        /**
+         * @param GoogleChromeManagementVersionsV1alpha1GenericProfile
+         */
+        public function setGenericProfile(GoogleChromeManagementVersionsV1alpha1GenericProfile $genericProfile)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1alpha1GenericProfile
+         */
+        public function getGenericProfile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIssuedCertificate($issuedCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuedCertificate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProfileAdapterConfigReference($profileAdapterConfigReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileAdapterConfigReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProvisioningProfileId($provisioningProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisioningProfileId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignData($signData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignature($signature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignature()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignatureAlgorithm($signatureAlgorithm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignatureAlgorithm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubjectPublicKeyInfo($subjectPublicKeyInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectPublicKeyInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaConnectionAdapterConfigReference()
-    {
-    }
-    /**
-     * @param GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
-     */
-    public function setChromeOsDevice(GoogleChromeManagementVersionsV1alpha1ChromeOsDevice $chromeOsDevice)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
-     */
-    public function getChromeOsDevice()
-    {
-    }
-    /**
-     * @param GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession
-     */
-    public function setChromeOsUserSession(GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession $chromeOsUserSession)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession
-     */
-    public function getChromeOsUserSession()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFailureMessage($failureMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureMessage()
-    {
-    }
-    /**
-     * @param GoogleChromeManagementVersionsV1alpha1GenericCaConnection
-     */
-    public function setGenericCaConnection(GoogleChromeManagementVersionsV1alpha1GenericCaConnection $genericCaConnection)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1alpha1GenericCaConnection
-     */
-    public function getGenericCaConnection()
-    {
-    }
-    /**
-     * @param GoogleChromeManagementVersionsV1alpha1GenericProfile
-     */
-    public function setGenericProfile(GoogleChromeManagementVersionsV1alpha1GenericProfile $genericProfile)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1alpha1GenericProfile
-     */
-    public function getGenericProfile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIssuedCertificate($issuedCertificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuedCertificate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProfileAdapterConfigReference($profileAdapterConfigReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileAdapterConfigReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProvisioningProfileId($provisioningProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisioningProfileId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignData($signData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignature($signature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignature()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignatureAlgorithm($signatureAlgorithm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignatureAlgorithm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubjectPublicKeyInfo($subjectPublicKeyInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectPublicKeyInfo()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess
     {
     }
 }

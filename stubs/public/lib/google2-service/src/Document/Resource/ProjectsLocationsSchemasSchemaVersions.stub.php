@@ -21,108 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document\Resource;
-
-/**
- * The "schemaVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $documentaiService = new Google\Service\Document(...);
- *   $schemaVersions = $documentaiService->projects_locations_schemas_schemaVersions;
- *  </code>
- */
-class ProjectsLocationsSchemasSchemaVersions extends \Google\Service\Resource
-{
+namespace Google\Service\Document\Resource {
+    use Google\Service\Document\GoogleCloudDocumentaiV1GenerateSchemaVersionRequest;
+    use Google\Service\Document\GoogleCloudDocumentaiV1GenerateSchemaVersionResponse;
+    use Google\Service\Document\GoogleCloudDocumentaiV1ListSchemaVersionsResponse;
+    use Google\Service\Document\GoogleCloudDocumentaiV1SchemaVersion;
+    use Google\Service\Document\GoogleLongrunningOperation;
     /**
-     * Creates a schema version. (schemaVersions.create)
-     *
-     * @param string $parent Required. The parent (project and location) under which
-     * to create the SchemaVersion. Format:
-     * `projects/{project}/locations/{location}/schemas/{schema}`
-     * @param GoogleCloudDocumentaiV1SchemaVersion $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDocumentaiV1SchemaVersion
-     * @throws \Google\Service\Exception
+     * The "schemaVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $documentaiService = new Google\Service\Document(...);
+     *   $schemaVersions = $documentaiService->projects_locations_schemas_schemaVersions;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDocumentaiV1SchemaVersion $postBody, $optParams = [])
+    class ProjectsLocationsSchemasSchemaVersions extends \Google\Service\Resource
     {
+        /**
+         * Creates a schema version. (schemaVersions.create)
+         *
+         * @param string $parent Required. The parent (project and location) under which
+         * to create the SchemaVersion. Format:
+         * `projects/{project}/locations/{location}/schemas/{schema}`
+         * @param GoogleCloudDocumentaiV1SchemaVersion $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDocumentaiV1SchemaVersion
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDocumentaiV1SchemaVersion $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a schema version. (schemaVersions.delete)
+         *
+         * @param string $name Required. The name of the SchemaVersion to delete.
+         * Format: `projects/{project}/locations/{location}/schemas/{schema}/schemaVersi
+         * ons/{schema_version}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Generates a schema version. (schemaVersions.generate)
+         *
+         * @param string $parent Required. The parent (project, location and schema)
+         * under which to generate the SchemaVersion. Format:
+         * `projects/{project}/locations/{location}/schemas/{schema}`
+         * @param GoogleCloudDocumentaiV1GenerateSchemaVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDocumentaiV1GenerateSchemaVersionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generate($parent, GoogleCloudDocumentaiV1GenerateSchemaVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a schema version. (schemaVersions.get)
+         *
+         * @param string $name Required. The name of the SchemaVersion to get. Format: `
+         * projects/{project}/locations/{location}/schemas/{schema}/schemaVersions/{sche
+         * ma_version}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDocumentaiV1SchemaVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists SchemaVersions.
+         * (schemaVersions.listProjectsLocationsSchemasSchemaVersions)
+         *
+         * @param string $parent Required. Format:
+         * `projects/{project}/locations/{location}/schemas/{schema}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of SchemaVersion to
+         * return. If unspecified, at most `10` SchemaVersion will be returned. The
+         * maximum value is `20`. Values above `20` will be coerced to `20`.
+         * @opt_param string pageToken Optional. We will return the SchemaVersion sorted
+         * by creation time. The page token will point to the next SchemaVersion.
+         * @return GoogleCloudDocumentaiV1ListSchemaVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemasSchemaVersions($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a schema version. Editable fields are: - `display_name` - `labels`
+         * (schemaVersions.patch)
+         *
+         * @param string $name Identifier. The resource name of the SchemaVersion.
+         * Format: `projects/{project}/locations/{location}/schemas/{schema}/schemaVersi
+         * ons/{schema_version}`
+         * @param GoogleCloudDocumentaiV1SchemaVersion $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The update mask to apply to the
+         * resource. **Note:** Only the following fields can be updated: - display_name.
+         * - labels.
+         * @return GoogleCloudDocumentaiV1SchemaVersion
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDocumentaiV1SchemaVersion $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a schema version. (schemaVersions.delete)
-     *
-     * @param string $name Required. The name of the SchemaVersion to delete.
-     * Format: `projects/{project}/locations/{location}/schemas/{schema}/schemaVersi
-     * ons/{schema_version}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Document\Resource\ProjectsLocationsSchemasSchemaVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Generates a schema version. (schemaVersions.generate)
-     *
-     * @param string $parent Required. The parent (project, location and schema)
-     * under which to generate the SchemaVersion. Format:
-     * `projects/{project}/locations/{location}/schemas/{schema}`
-     * @param GoogleCloudDocumentaiV1GenerateSchemaVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDocumentaiV1GenerateSchemaVersionResponse
-     * @throws \Google\Service\Exception
-     */
-    public function generate($parent, GoogleCloudDocumentaiV1GenerateSchemaVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a schema version. (schemaVersions.get)
-     *
-     * @param string $name Required. The name of the SchemaVersion to get. Format: `
-     * projects/{project}/locations/{location}/schemas/{schema}/schemaVersions/{sche
-     * ma_version}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDocumentaiV1SchemaVersion
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists SchemaVersions.
-     * (schemaVersions.listProjectsLocationsSchemasSchemaVersions)
-     *
-     * @param string $parent Required. Format:
-     * `projects/{project}/locations/{location}/schemas/{schema}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of SchemaVersion to
-     * return. If unspecified, at most `10` SchemaVersion will be returned. The
-     * maximum value is `20`. Values above `20` will be coerced to `20`.
-     * @opt_param string pageToken Optional. We will return the SchemaVersion sorted
-     * by creation time. The page token will point to the next SchemaVersion.
-     * @return GoogleCloudDocumentaiV1ListSchemaVersionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSchemasSchemaVersions($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a schema version. Editable fields are: - `display_name` - `labels`
-     * (schemaVersions.patch)
-     *
-     * @param string $name Identifier. The resource name of the SchemaVersion.
-     * Format: `projects/{project}/locations/{location}/schemas/{schema}/schemaVersi
-     * ons/{schema_version}`
-     * @param GoogleCloudDocumentaiV1SchemaVersion $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The update mask to apply to the
-     * resource. **Note:** Only the following fields can be updated: - display_name.
-     * - labels.
-     * @return GoogleCloudDocumentaiV1SchemaVersion
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudDocumentaiV1SchemaVersion $postBody, $optParams = [])
+    class Google_Service_Document_Resource_ProjectsLocationsSchemasSchemaVersions extends \Google\Service\Document\Resource\ProjectsLocationsSchemasSchemaVersions
     {
     }
 }

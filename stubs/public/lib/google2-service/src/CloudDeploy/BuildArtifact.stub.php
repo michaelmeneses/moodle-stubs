@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class BuildArtifact extends \Google\Model
-{
-    /**
-     * Optional. Image name in Skaffold configuration.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Optional. Image tag to use. This will generally be the full path to an
-     * image, such as "gcr.io/my-project/busybox:1.2.3" or "gcr.io/my-
-     * project/busybox@sha256:abc123".
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Optional. Image name in Skaffold configuration.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\CloudDeploy {
+    class BuildArtifact extends \Google\Model
     {
+        /**
+         * Optional. Image name in Skaffold configuration.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Optional. Image tag to use. This will generally be the full path to an
+         * image, such as "gcr.io/my-project/busybox:1.2.3" or "gcr.io/my-
+         * project/busybox@sha256:abc123".
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Optional. Image name in Skaffold configuration.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. Image tag to use. This will generally be the full path to an
+         * image, such as "gcr.io/my-project/busybox:1.2.3" or "gcr.io/my-
+         * project/busybox@sha256:abc123".
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\BuildArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. Image tag to use. This will generally be the full path to an
-     * image, such as "gcr.io/my-project/busybox:1.2.3" or "gcr.io/my-
-     * project/busybox@sha256:abc123".
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_CloudDeploy_BuildArtifact extends \Google\Service\CloudDeploy\BuildArtifact
     {
     }
 }

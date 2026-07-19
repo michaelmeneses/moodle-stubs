@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class Price extends \Google\Model
-{
-    public $amountMicros;
-    public $currencyCode;
-    public $expectedCpmMicros;
-    public $pricingType;
-    public function setAmountMicros($amountMicros)
+namespace Google\Service\AdExchangeBuyer {
+    class Price extends \Google\Model
     {
+        public $amountMicros;
+        public $currencyCode;
+        public $expectedCpmMicros;
+        public $pricingType;
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        public function getAmountMicros()
+        {
+        }
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        public function getCurrencyCode()
+        {
+        }
+        public function setExpectedCpmMicros($expectedCpmMicros)
+        {
+        }
+        public function getExpectedCpmMicros()
+        {
+        }
+        public function setPricingType($pricingType)
+        {
+        }
+        public function getPricingType()
+        {
+        }
     }
-    public function getAmountMicros()
-    {
-    }
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    public function getCurrencyCode()
-    {
-    }
-    public function setExpectedCpmMicros($expectedCpmMicros)
-    {
-    }
-    public function getExpectedCpmMicros()
-    {
-    }
-    public function setPricingType($pricingType)
-    {
-    }
-    public function getPricingType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Price registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_Price extends \Google\Service\AdExchangeBuyer\Price
     {
     }
 }

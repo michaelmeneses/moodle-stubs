@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class ReportData extends \Google\Collection
-{
-    protected $collection_key = 'totals';
-    /**
-     * @var string
-     */
-    public $dataLastRefreshed;
-    /**
-     * @var string
-     */
-    public $emptyReason;
-    /**
-     * @var bool
-     */
-    public $isDataGolden;
-    protected $maximumsType = DateRangeValues::class;
-    protected $maximumsDataType = 'array';
-    protected $minimumsType = DateRangeValues::class;
-    protected $minimumsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $rowCount;
-    protected $rowsType = ReportRow::class;
-    protected $rowsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $samplesReadCounts;
-    /**
-     * @var string[]
-     */
-    public $samplingSpaceSizes;
-    protected $totalsType = DateRangeValues::class;
-    protected $totalsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setDataLastRefreshed($dataLastRefreshed)
+namespace Google\Service\AnalyticsReporting {
+    class ReportData extends \Google\Collection
     {
+        protected $collection_key = 'totals';
+        /**
+         * @var string
+         */
+        public $dataLastRefreshed;
+        /**
+         * @var string
+         */
+        public $emptyReason;
+        /**
+         * @var bool
+         */
+        public $isDataGolden;
+        protected $maximumsType = DateRangeValues::class;
+        protected $maximumsDataType = 'array';
+        protected $minimumsType = DateRangeValues::class;
+        protected $minimumsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $rowCount;
+        protected $rowsType = ReportRow::class;
+        protected $rowsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $samplesReadCounts;
+        /**
+         * @var string[]
+         */
+        public $samplingSpaceSizes;
+        protected $totalsType = DateRangeValues::class;
+        protected $totalsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setDataLastRefreshed($dataLastRefreshed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataLastRefreshed()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEmptyReason($emptyReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmptyReason()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsDataGolden($isDataGolden)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDataGolden()
+        {
+        }
+        /**
+         * @param DateRangeValues[]
+         */
+        public function setMaximums($maximums)
+        {
+        }
+        /**
+         * @return DateRangeValues[]
+         */
+        public function getMaximums()
+        {
+        }
+        /**
+         * @param DateRangeValues[]
+         */
+        public function setMinimums($minimums)
+        {
+        }
+        /**
+         * @return DateRangeValues[]
+         */
+        public function getMinimums()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * @param ReportRow[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return ReportRow[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSamplesReadCounts($samplesReadCounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSamplesReadCounts()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSamplingSpaceSizes($samplingSpaceSizes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSamplingSpaceSizes()
+        {
+        }
+        /**
+         * @param DateRangeValues[]
+         */
+        public function setTotals($totals)
+        {
+        }
+        /**
+         * @return DateRangeValues[]
+         */
+        public function getTotals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\ReportData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataLastRefreshed()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEmptyReason($emptyReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmptyReason()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsDataGolden($isDataGolden)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDataGolden()
-    {
-    }
-    /**
-     * @param DateRangeValues[]
-     */
-    public function setMaximums($maximums)
-    {
-    }
-    /**
-     * @return DateRangeValues[]
-     */
-    public function getMaximums()
-    {
-    }
-    /**
-     * @param DateRangeValues[]
-     */
-    public function setMinimums($minimums)
-    {
-    }
-    /**
-     * @return DateRangeValues[]
-     */
-    public function getMinimums()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * @param ReportRow[]
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return ReportRow[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSamplesReadCounts($samplesReadCounts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSamplesReadCounts()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSamplingSpaceSizes($samplingSpaceSizes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSamplingSpaceSizes()
-    {
-    }
-    /**
-     * @param DateRangeValues[]
-     */
-    public function setTotals($totals)
-    {
-    }
-    /**
-     * @return DateRangeValues[]
-     */
-    public function getTotals()
+    class Google_Service_AnalyticsReporting_ReportData extends \Google\Service\AnalyticsReporting\ReportData
     {
     }
 }

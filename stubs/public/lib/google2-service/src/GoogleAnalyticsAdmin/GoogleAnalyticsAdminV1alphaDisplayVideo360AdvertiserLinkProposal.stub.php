@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $adsPersonalizationEnabled;
-    /**
-     * @var string
-     */
-    public $advertiserDisplayName;
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var bool
-     */
-    public $campaignDataSharingEnabled;
-    /**
-     * @var bool
-     */
-    public $costDataSharingEnabled;
-    protected $linkProposalStatusDetailsType = GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails::class;
-    protected $linkProposalStatusDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $validationEmail;
-    /**
-     * @param bool
-     */
-    public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $adsPersonalizationEnabled;
+        /**
+         * @var string
+         */
+        public $advertiserDisplayName;
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var bool
+         */
+        public $campaignDataSharingEnabled;
+        /**
+         * @var bool
+         */
+        public $costDataSharingEnabled;
+        protected $linkProposalStatusDetailsType = GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails::class;
+        protected $linkProposalStatusDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $validationEmail;
+        /**
+         * @param bool
+         */
+        public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdsPersonalizationEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserDisplayName($advertiserDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCampaignDataSharingEnabled($campaignDataSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCampaignDataSharingEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCostDataSharingEnabled($costDataSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCostDataSharingEnabled()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails
+         */
+        public function setLinkProposalStatusDetails(GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails $linkProposalStatusDetails)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails
+         */
+        public function getLinkProposalStatusDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidationEmail($validationEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdsPersonalizationEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserDisplayName($advertiserDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCampaignDataSharingEnabled($campaignDataSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCampaignDataSharingEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCostDataSharingEnabled($costDataSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCostDataSharingEnabled()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails
-     */
-    public function setLinkProposalStatusDetails(GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails $linkProposalStatusDetails)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails
-     */
-    public function getLinkProposalStatusDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidationEmail($validationEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationEmail()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLinkProposal
     {
     }
 }

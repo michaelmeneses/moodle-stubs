@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class BatchTaskSpec extends \Google\Model
-{
-    protected $deleteObjectTaskSpecType = DeleteObjectTaskSpec::class;
-    protected $deleteObjectTaskSpecDataType = '';
-    protected $listTaskSpecType = ListTaskSpec::class;
-    protected $listTaskSpecDataType = '';
-    protected $metadataTaskSpecType = MetadataTaskSpec::class;
-    protected $metadataTaskSpecDataType = '';
-    /**
-     * @param DeleteObjectTaskSpec
-     */
-    public function setDeleteObjectTaskSpec(DeleteObjectTaskSpec $deleteObjectTaskSpec)
+namespace Google\Service\Storagetransfer {
+    class BatchTaskSpec extends \Google\Model
     {
+        protected $deleteObjectTaskSpecType = DeleteObjectTaskSpec::class;
+        protected $deleteObjectTaskSpecDataType = '';
+        protected $listTaskSpecType = ListTaskSpec::class;
+        protected $listTaskSpecDataType = '';
+        protected $metadataTaskSpecType = MetadataTaskSpec::class;
+        protected $metadataTaskSpecDataType = '';
+        /**
+         * @param DeleteObjectTaskSpec
+         */
+        public function setDeleteObjectTaskSpec(DeleteObjectTaskSpec $deleteObjectTaskSpec)
+        {
+        }
+        /**
+         * @return DeleteObjectTaskSpec
+         */
+        public function getDeleteObjectTaskSpec()
+        {
+        }
+        /**
+         * @param ListTaskSpec
+         */
+        public function setListTaskSpec(ListTaskSpec $listTaskSpec)
+        {
+        }
+        /**
+         * @return ListTaskSpec
+         */
+        public function getListTaskSpec()
+        {
+        }
+        /**
+         * @param MetadataTaskSpec
+         */
+        public function setMetadataTaskSpec(MetadataTaskSpec $metadataTaskSpec)
+        {
+        }
+        /**
+         * @return MetadataTaskSpec
+         */
+        public function getMetadataTaskSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeleteObjectTaskSpec
+     * Runtime class alias of \Google\Service\Storagetransfer\BatchTaskSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteObjectTaskSpec()
-    {
-    }
-    /**
-     * @param ListTaskSpec
-     */
-    public function setListTaskSpec(ListTaskSpec $listTaskSpec)
-    {
-    }
-    /**
-     * @return ListTaskSpec
-     */
-    public function getListTaskSpec()
-    {
-    }
-    /**
-     * @param MetadataTaskSpec
-     */
-    public function setMetadataTaskSpec(MetadataTaskSpec $metadataTaskSpec)
-    {
-    }
-    /**
-     * @return MetadataTaskSpec
-     */
-    public function getMetadataTaskSpec()
+    class Google_Service_Storagetransfer_BatchTaskSpec extends \Google\Service\Storagetransfer\BatchTaskSpec
     {
     }
 }

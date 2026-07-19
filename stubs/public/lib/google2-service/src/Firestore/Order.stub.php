@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class Order extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const DIRECTION_DIRECTION_UNSPECIFIED = 'DIRECTION_UNSPECIFIED';
-    /**
-     * Ascending.
-     */
-    public const DIRECTION_ASCENDING = 'ASCENDING';
-    /**
-     * Descending.
-     */
-    public const DIRECTION_DESCENDING = 'DESCENDING';
-    /**
-     * The direction to order by. Defaults to `ASCENDING`.
-     *
-     * @var string
-     */
-    public $direction;
-    protected $fieldType = FieldReference::class;
-    protected $fieldDataType = '';
-    /**
-     * The direction to order by. Defaults to `ASCENDING`.
-     *
-     * Accepted values: DIRECTION_UNSPECIFIED, ASCENDING, DESCENDING
-     *
-     * @param self::DIRECTION_* $direction
-     */
-    public function setDirection($direction)
+namespace Google\Service\Firestore {
+    class Order extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const DIRECTION_DIRECTION_UNSPECIFIED = 'DIRECTION_UNSPECIFIED';
+        /**
+         * Ascending.
+         */
+        public const DIRECTION_ASCENDING = 'ASCENDING';
+        /**
+         * Descending.
+         */
+        public const DIRECTION_DESCENDING = 'DESCENDING';
+        /**
+         * The direction to order by. Defaults to `ASCENDING`.
+         *
+         * @var string
+         */
+        public $direction;
+        protected $fieldType = FieldReference::class;
+        protected $fieldDataType = '';
+        /**
+         * The direction to order by. Defaults to `ASCENDING`.
+         *
+         * Accepted values: DIRECTION_UNSPECIFIED, ASCENDING, DESCENDING
+         *
+         * @param self::DIRECTION_* $direction
+         */
+        public function setDirection($direction)
+        {
+        }
+        /**
+         * @return self::DIRECTION_*
+         */
+        public function getDirection()
+        {
+        }
+        /**
+         * The field to order by.
+         *
+         * @param FieldReference $field
+         */
+        public function setField(FieldReference $field)
+        {
+        }
+        /**
+         * @return FieldReference
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIRECTION_*
+     * Runtime class alias of \Google\Service\Firestore\Order registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirection()
-    {
-    }
-    /**
-     * The field to order by.
-     *
-     * @param FieldReference $field
-     */
-    public function setField(FieldReference $field)
-    {
-    }
-    /**
-     * @return FieldReference
-     */
-    public function getField()
+    class Google_Service_Firestore_Order extends \Google\Service\Firestore\Order
     {
     }
 }

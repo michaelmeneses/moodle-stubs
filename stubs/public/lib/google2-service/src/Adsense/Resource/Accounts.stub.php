@@ -21,82 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseService = new Google\Service\Adsense(...);
- *   $accounts = $adsenseService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\Adsense\Resource {
+    use Google\Service\Adsense\Account;
+    use Google\Service\Adsense\AdBlockingRecoveryTag;
+    use Google\Service\Adsense\ListAccountsResponse;
+    use Google\Service\Adsense\ListChildAccountsResponse;
     /**
-     * Gets information about the selected AdSense account. (accounts.get)
-     *
-     * @param string $name Required. Account to get information about. Format:
-     * accounts/{account}
-     * @param array $optParams Optional parameters.
-     * @return Account
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseService = new Google\Service\Adsense(...);
+     *   $accounts = $adsenseService->accounts;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Gets information about the selected AdSense account. (accounts.get)
+         *
+         * @param string $name Required. Account to get information about. Format:
+         * accounts/{account}
+         * @param array $optParams Optional parameters.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the ad blocking recovery tag of an account.
+         * (accounts.getAdBlockingRecoveryTag)
+         *
+         * @param string $name Required. The name of the account to get the tag for.
+         * Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         * @return AdBlockingRecoveryTag
+         * @throws \Google\Service\Exception
+         */
+        public function getAdBlockingRecoveryTag($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all accounts available to this user. (accounts.listAccounts)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of accounts to include in the
+         * response, used for paging. If unspecified, at most 10000 accounts will be
+         * returned. The maximum value is 10000; values above 10000 will be coerced to
+         * 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListAccounts` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListAccounts` must match the
+         * call that provided the page token.
+         * @return ListAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccounts($optParams = [])
+        {
+        }
+        /**
+         * Lists all accounts directly managed by the given AdSense account.
+         * (accounts.listChildAccounts)
+         *
+         * @param string $parent Required. The parent account, which owns the child
+         * accounts. Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of accounts to include in the
+         * response, used for paging. If unspecified, at most 10000 accounts will be
+         * returned. The maximum value is 10000; values above 10000 will be coerced to
+         * 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListChildAccounts` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListChildAccounts` must match
+         * the call that provided the page token.
+         * @return ListChildAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listChildAccounts($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the ad blocking recovery tag of an account.
-     * (accounts.getAdBlockingRecoveryTag)
-     *
-     * @param string $name Required. The name of the account to get the tag for.
-     * Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     * @return AdBlockingRecoveryTag
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Adsense\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdBlockingRecoveryTag($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all accounts available to this user. (accounts.listAccounts)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of accounts to include in the
-     * response, used for paging. If unspecified, at most 10000 accounts will be
-     * returned. The maximum value is 10000; values above 10000 will be coerced to
-     * 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListAccounts` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListAccounts` must match the
-     * call that provided the page token.
-     * @return ListAccountsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccounts($optParams = [])
-    {
-    }
-    /**
-     * Lists all accounts directly managed by the given AdSense account.
-     * (accounts.listChildAccounts)
-     *
-     * @param string $parent Required. The parent account, which owns the child
-     * accounts. Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of accounts to include in the
-     * response, used for paging. If unspecified, at most 10000 accounts will be
-     * returned. The maximum value is 10000; values above 10000 will be coerced to
-     * 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListChildAccounts` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListChildAccounts` must match
-     * the call that provided the page token.
-     * @return ListChildAccountsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listChildAccounts($parent, $optParams = [])
+    class Google_Service_Adsense_Resource_Accounts extends \Google\Service\Adsense\Resource\Accounts
     {
     }
 }

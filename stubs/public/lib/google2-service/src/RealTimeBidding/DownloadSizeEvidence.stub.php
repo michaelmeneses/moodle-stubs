@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class DownloadSizeEvidence extends \Google\Collection
-{
-    protected $collection_key = 'topUrlDownloadSizeBreakdowns';
-    protected $topUrlDownloadSizeBreakdownsType = UrlDownloadSize::class;
-    protected $topUrlDownloadSizeBreakdownsDataType = 'array';
-    /**
-     * Total download size (in kilobytes) for all the resources in the creative.
-     *
-     * @var int
-     */
-    public $totalDownloadSizeKb;
-    /**
-     * Download size broken down by URLs with the top download size.
-     *
-     * @param UrlDownloadSize[] $topUrlDownloadSizeBreakdowns
-     */
-    public function setTopUrlDownloadSizeBreakdowns($topUrlDownloadSizeBreakdowns)
+namespace Google\Service\RealTimeBidding {
+    class DownloadSizeEvidence extends \Google\Collection
     {
+        protected $collection_key = 'topUrlDownloadSizeBreakdowns';
+        protected $topUrlDownloadSizeBreakdownsType = UrlDownloadSize::class;
+        protected $topUrlDownloadSizeBreakdownsDataType = 'array';
+        /**
+         * Total download size (in kilobytes) for all the resources in the creative.
+         *
+         * @var int
+         */
+        public $totalDownloadSizeKb;
+        /**
+         * Download size broken down by URLs with the top download size.
+         *
+         * @param UrlDownloadSize[] $topUrlDownloadSizeBreakdowns
+         */
+        public function setTopUrlDownloadSizeBreakdowns($topUrlDownloadSizeBreakdowns)
+        {
+        }
+        /**
+         * @return UrlDownloadSize[]
+         */
+        public function getTopUrlDownloadSizeBreakdowns()
+        {
+        }
+        /**
+         * Total download size (in kilobytes) for all the resources in the creative.
+         *
+         * @param int $totalDownloadSizeKb
+         */
+        public function setTotalDownloadSizeKb($totalDownloadSizeKb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalDownloadSizeKb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlDownloadSize[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\DownloadSizeEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopUrlDownloadSizeBreakdowns()
-    {
-    }
-    /**
-     * Total download size (in kilobytes) for all the resources in the creative.
-     *
-     * @param int $totalDownloadSizeKb
-     */
-    public function setTotalDownloadSizeKb($totalDownloadSizeKb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalDownloadSizeKb()
+    class Google_Service_RealTimeBidding_DownloadSizeEvidence extends \Google\Service\RealTimeBidding\DownloadSizeEvidence
     {
     }
 }

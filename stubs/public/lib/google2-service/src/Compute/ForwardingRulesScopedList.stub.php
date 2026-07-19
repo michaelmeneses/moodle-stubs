@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ForwardingRulesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'forwardingRules';
-    protected $forwardingRulesType = ForwardingRule::class;
-    protected $forwardingRulesDataType = 'array';
-    protected $warningType = ForwardingRulesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of forwarding rules contained in this scope.
-     *
-     * @param ForwardingRule[] $forwardingRules
-     */
-    public function setForwardingRules($forwardingRules)
+namespace Google\Service\Compute {
+    class ForwardingRulesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'forwardingRules';
+        protected $forwardingRulesType = ForwardingRule::class;
+        protected $forwardingRulesDataType = 'array';
+        protected $warningType = ForwardingRulesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of forwarding rules contained in this scope.
+         *
+         * @param ForwardingRule[] $forwardingRules
+         */
+        public function setForwardingRules($forwardingRules)
+        {
+        }
+        /**
+         * @return ForwardingRule[]
+         */
+        public function getForwardingRules()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of forwarding rules when the
+         * list is empty.
+         *
+         * @param ForwardingRulesScopedListWarning $warning
+         */
+        public function setWarning(ForwardingRulesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return ForwardingRulesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ForwardingRule[]
+     * Runtime class alias of \Google\Service\Compute\ForwardingRulesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForwardingRules()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of forwarding rules when the
-     * list is empty.
-     *
-     * @param ForwardingRulesScopedListWarning $warning
-     */
-    public function setWarning(ForwardingRulesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return ForwardingRulesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_ForwardingRulesScopedList extends \Google\Service\Compute\ForwardingRulesScopedList
     {
     }
 }

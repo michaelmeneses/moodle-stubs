@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ClientContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clientOperationId;
-    /**
-     * @var string
-     */
-    public $clientType;
-    protected $sessionContextType = SessionContext::class;
-    protected $sessionContextDataType = '';
-    /**
-     * @var string
-     */
-    public $userIp;
-    /**
-     * @param string
-     */
-    public function setClientOperationId($clientOperationId)
+namespace Google\Service\CloudSearch {
+    class ClientContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clientOperationId;
+        /**
+         * @var string
+         */
+        public $clientType;
+        protected $sessionContextType = SessionContext::class;
+        protected $sessionContextDataType = '';
+        /**
+         * @var string
+         */
+        public $userIp;
+        /**
+         * @param string
+         */
+        public function setClientOperationId($clientOperationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClientType($clientType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientType()
+        {
+        }
+        /**
+         * @param SessionContext
+         */
+        public function setSessionContext(SessionContext $sessionContext)
+        {
+        }
+        /**
+         * @return SessionContext
+         */
+        public function getSessionContext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserIp($userIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ClientContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClientType($clientType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientType()
-    {
-    }
-    /**
-     * @param SessionContext
-     */
-    public function setSessionContext(SessionContext $sessionContext)
-    {
-    }
-    /**
-     * @return SessionContext
-     */
-    public function getSessionContext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserIp($userIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserIp()
+    class Google_Service_CloudSearch_ClientContext extends \Google\Service\CloudSearch\ClientContext
     {
     }
 }

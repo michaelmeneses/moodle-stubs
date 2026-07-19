@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ListBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backupsType = Backup::class;
-    protected $backupsDataType = 'array';
-    /**
-     * The token you can use to retrieve the next page of results. Not returned if
-     * there are no more results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of backups in the project.
-     *
-     * @param Backup[] $backups
-     */
-    public function setBackups($backups)
+namespace Google\Service\NetAppFiles {
+    class ListBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backupsType = Backup::class;
+        protected $backupsDataType = 'array';
+        /**
+         * The token you can use to retrieve the next page of results. Not returned if
+         * there are no more results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of backups in the project.
+         *
+         * @param Backup[] $backups
+         */
+        public function setBackups($backups)
+        {
+        }
+        /**
+         * @return Backup[]
+         */
+        public function getBackups()
+        {
+        }
+        /**
+         * The token you can use to retrieve the next page of results. Not returned if
+         * there are no more results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Backup[]
+     * Runtime class alias of \Google\Service\NetAppFiles\ListBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackups()
-    {
-    }
-    /**
-     * The token you can use to retrieve the next page of results. Not returned if
-     * there are no more results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetAppFiles_ListBackupsResponse extends \Google\Service\NetAppFiles\ListBackupsResponse
     {
     }
 }

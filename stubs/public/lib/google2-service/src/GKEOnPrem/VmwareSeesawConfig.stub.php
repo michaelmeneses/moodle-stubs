@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareSeesawConfig extends \Google\Collection
-{
-    protected $collection_key = 'vms';
-    /**
-     * Enable two load balancer VMs to achieve a highly-available Seesaw load
-     * balancer.
-     *
-     * @var bool
-     */
-    public $enableHa;
-    /**
-     * Required. In general the following format should be used for the Seesaw
-     * group name: seesaw-for-[cluster_name].
-     *
-     * @var string
-     */
-    public $group;
-    protected $ipBlocksType = VmwareIpBlock::class;
-    protected $ipBlocksDataType = 'array';
-    /**
-     * Required. MasterIP is the IP announced by the master of Seesaw group.
-     *
-     * @var string
-     */
-    public $masterIp;
-    /**
-     * Name to be used by Stackdriver.
-     *
-     * @var string
-     */
-    public $stackdriverName;
-    /**
-     * Names of the VMs created for this Seesaw group.
-     *
-     * @var string[]
-     */
-    public $vms;
-    /**
-     * Enable two load balancer VMs to achieve a highly-available Seesaw load
-     * balancer.
-     *
-     * @param bool $enableHa
-     */
-    public function setEnableHa($enableHa)
+namespace Google\Service\GKEOnPrem {
+    class VmwareSeesawConfig extends \Google\Collection
     {
+        protected $collection_key = 'vms';
+        /**
+         * Enable two load balancer VMs to achieve a highly-available Seesaw load
+         * balancer.
+         *
+         * @var bool
+         */
+        public $enableHa;
+        /**
+         * Required. In general the following format should be used for the Seesaw
+         * group name: seesaw-for-[cluster_name].
+         *
+         * @var string
+         */
+        public $group;
+        protected $ipBlocksType = VmwareIpBlock::class;
+        protected $ipBlocksDataType = 'array';
+        /**
+         * Required. MasterIP is the IP announced by the master of Seesaw group.
+         *
+         * @var string
+         */
+        public $masterIp;
+        /**
+         * Name to be used by Stackdriver.
+         *
+         * @var string
+         */
+        public $stackdriverName;
+        /**
+         * Names of the VMs created for this Seesaw group.
+         *
+         * @var string[]
+         */
+        public $vms;
+        /**
+         * Enable two load balancer VMs to achieve a highly-available Seesaw load
+         * balancer.
+         *
+         * @param bool $enableHa
+         */
+        public function setEnableHa($enableHa)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableHa()
+        {
+        }
+        /**
+         * Required. In general the following format should be used for the Seesaw
+         * group name: seesaw-for-[cluster_name].
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Required. The IP Blocks to be used by the Seesaw load balancer
+         *
+         * @param VmwareIpBlock[] $ipBlocks
+         */
+        public function setIpBlocks($ipBlocks)
+        {
+        }
+        /**
+         * @return VmwareIpBlock[]
+         */
+        public function getIpBlocks()
+        {
+        }
+        /**
+         * Required. MasterIP is the IP announced by the master of Seesaw group.
+         *
+         * @param string $masterIp
+         */
+        public function setMasterIp($masterIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterIp()
+        {
+        }
+        /**
+         * Name to be used by Stackdriver.
+         *
+         * @param string $stackdriverName
+         */
+        public function setStackdriverName($stackdriverName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStackdriverName()
+        {
+        }
+        /**
+         * Names of the VMs created for this Seesaw group.
+         *
+         * @param string[] $vms
+         */
+        public function setVms($vms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareSeesawConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableHa()
-    {
-    }
-    /**
-     * Required. In general the following format should be used for the Seesaw
-     * group name: seesaw-for-[cluster_name].
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * Required. The IP Blocks to be used by the Seesaw load balancer
-     *
-     * @param VmwareIpBlock[] $ipBlocks
-     */
-    public function setIpBlocks($ipBlocks)
-    {
-    }
-    /**
-     * @return VmwareIpBlock[]
-     */
-    public function getIpBlocks()
-    {
-    }
-    /**
-     * Required. MasterIP is the IP announced by the master of Seesaw group.
-     *
-     * @param string $masterIp
-     */
-    public function setMasterIp($masterIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterIp()
-    {
-    }
-    /**
-     * Name to be used by Stackdriver.
-     *
-     * @param string $stackdriverName
-     */
-    public function setStackdriverName($stackdriverName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStackdriverName()
-    {
-    }
-    /**
-     * Names of the VMs created for this Seesaw group.
-     *
-     * @param string[] $vms
-     */
-    public function setVms($vms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVms()
+    class Google_Service_GKEOnPrem_VmwareSeesawConfig extends \Google\Service\GKEOnPrem\VmwareSeesawConfig
     {
     }
 }

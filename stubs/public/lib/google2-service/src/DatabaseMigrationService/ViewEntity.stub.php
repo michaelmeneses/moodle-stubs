@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ViewEntity extends \Google\Collection
-{
-    protected $collection_key = 'constraints';
-    protected $constraintsType = ConstraintEntity::class;
-    protected $constraintsDataType = 'array';
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The SQL code which creates the view.
-     *
-     * @var string
-     */
-    public $sqlCode;
-    /**
-     * View constraints.
-     *
-     * @param ConstraintEntity[] $constraints
-     */
-    public function setConstraints($constraints)
+namespace Google\Service\DatabaseMigrationService {
+    class ViewEntity extends \Google\Collection
     {
+        protected $collection_key = 'constraints';
+        protected $constraintsType = ConstraintEntity::class;
+        protected $constraintsDataType = 'array';
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The SQL code which creates the view.
+         *
+         * @var string
+         */
+        public $sqlCode;
+        /**
+         * View constraints.
+         *
+         * @param ConstraintEntity[] $constraints
+         */
+        public function setConstraints($constraints)
+        {
+        }
+        /**
+         * @return ConstraintEntity[]
+         */
+        public function getConstraints()
+        {
+        }
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The SQL code which creates the view.
+         *
+         * @param string $sqlCode
+         */
+        public function setSqlCode($sqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConstraintEntity[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ViewEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraints()
-    {
-    }
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The SQL code which creates the view.
-     *
-     * @param string $sqlCode
-     */
-    public function setSqlCode($sqlCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlCode()
+    class Google_Service_DatabaseMigrationService_ViewEntity extends \Google\Service\DatabaseMigrationService\ViewEntity
     {
     }
 }

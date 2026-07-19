@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class WonderMessageMapping extends \Google\Collection
-{
-    protected $collection_key = 'wonderCardMessageId';
-    /**
-     * @var string[]
-     */
-    public $wonderCardMessageId;
-    /**
-     * @param string[]
-     */
-    public function setWonderCardMessageId($wonderCardMessageId)
+namespace Google\Service\CloudSearch {
+    class WonderMessageMapping extends \Google\Collection
     {
+        protected $collection_key = 'wonderCardMessageId';
+        /**
+         * @var string[]
+         */
+        public $wonderCardMessageId;
+        /**
+         * @param string[]
+         */
+        public function setWonderCardMessageId($wonderCardMessageId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWonderCardMessageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\WonderMessageMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWonderCardMessageId()
+    class Google_Service_CloudSearch_WonderMessageMapping extends \Google\Service\CloudSearch\WonderMessageMapping
     {
     }
 }

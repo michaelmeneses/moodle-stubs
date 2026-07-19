@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $compliant;
-    /**
-     * @var int
-     */
-    public $errors;
-    /**
-     * @var int
-     */
-    public $noncompliant;
-    /**
-     * @var int
-     */
-    public $scanned;
-    /**
-     * @var int
-     */
-    public $unenforced;
-    /**
-     * @param int
-     */
-    public function setCompliant($compliant)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $compliant;
+        /**
+         * @var int
+         */
+        public $errors;
+        /**
+         * @var int
+         */
+        public $noncompliant;
+        /**
+         * @var int
+         */
+        public $scanned;
+        /**
+         * @var int
+         */
+        public $unenforced;
+        /**
+         * @param int
+         */
+        public function setCompliant($compliant)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompliant()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNoncompliant($noncompliant)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNoncompliant()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setScanned($scanned)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScanned()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setUnenforced($unenforced)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUnenforced()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompliant()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNoncompliant($noncompliant)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNoncompliant()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setScanned($scanned)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScanned()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setUnenforced($unenforced)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUnenforced()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyViolationsPreviewResourceCounts
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1IngestConversationsRequestConversationConfig extends \Google\Model
-{
-    /**
-     * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
-     * that this must be set for conversations to be properly displayed and
-     * analyzed.
-     *
-     * @var int
-     */
-    public $agentChannel;
-    /**
-     * Optional. An opaque, user-specified string representing a human agent who
-     * handled all conversations in the import. Note that this will be overridden
-     * if per-conversation metadata is provided through the `metadata_bucket_uri`.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
-     * that this must be set for conversations to be properly displayed and
-     * analyzed.
-     *
-     * @var int
-     */
-    public $customerChannel;
-    /**
-     * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
-     * that this must be set for conversations to be properly displayed and
-     * analyzed.
-     *
-     * @param int $agentChannel
-     */
-    public function setAgentChannel($agentChannel)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1IngestConversationsRequestConversationConfig extends \Google\Model
     {
+        /**
+         * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
+         * that this must be set for conversations to be properly displayed and
+         * analyzed.
+         *
+         * @var int
+         */
+        public $agentChannel;
+        /**
+         * Optional. An opaque, user-specified string representing a human agent who
+         * handled all conversations in the import. Note that this will be overridden
+         * if per-conversation metadata is provided through the `metadata_bucket_uri`.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
+         * that this must be set for conversations to be properly displayed and
+         * analyzed.
+         *
+         * @var int
+         */
+        public $customerChannel;
+        /**
+         * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
+         * that this must be set for conversations to be properly displayed and
+         * analyzed.
+         *
+         * @param int $agentChannel
+         */
+        public function setAgentChannel($agentChannel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAgentChannel()
+        {
+        }
+        /**
+         * Optional. An opaque, user-specified string representing a human agent who
+         * handled all conversations in the import. Note that this will be overridden
+         * if per-conversation metadata is provided through the `metadata_bucket_uri`.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
+         * that this must be set for conversations to be properly displayed and
+         * analyzed.
+         *
+         * @param int $customerChannel
+         */
+        public function setCustomerChannel($customerChannel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCustomerChannel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1IngestConversationsRequestConversationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentChannel()
-    {
-    }
-    /**
-     * Optional. An opaque, user-specified string representing a human agent who
-     * handled all conversations in the import. Note that this will be overridden
-     * if per-conversation metadata is provided through the `metadata_bucket_uri`.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentId()
-    {
-    }
-    /**
-     * Optional. Indicates which of the channels, 1 or 2, contains the agent. Note
-     * that this must be set for conversations to be properly displayed and
-     * analyzed.
-     *
-     * @param int $customerChannel
-     */
-    public function setCustomerChannel($customerChannel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCustomerChannel()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1IngestConversationsRequestConversationConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1IngestConversationsRequestConversationConfig
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ListSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'subscriptions';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $subscriptionsType = Subscription::class;
-    protected $subscriptionsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PubsubLite {
+    class ListSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'subscriptions';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $subscriptionsType = Subscription::class;
+        protected $subscriptionsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of subscriptions in the requested parent. The order of the
+         * subscriptions is unspecified.
+         *
+         * @param Subscription[] $subscriptions
+         */
+        public function setSubscriptions($subscriptions)
+        {
+        }
+        /**
+         * @return Subscription[]
+         */
+        public function getSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ListSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of subscriptions in the requested parent. The order of the
-     * subscriptions is unspecified.
-     *
-     * @param Subscription[] $subscriptions
-     */
-    public function setSubscriptions($subscriptions)
-    {
-    }
-    /**
-     * @return Subscription[]
-     */
-    public function getSubscriptions()
+    class Google_Service_PubsubLite_ListSubscriptionsResponse extends \Google\Service\PubsubLite\ListSubscriptionsResponse
     {
     }
 }

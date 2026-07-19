@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class GoogleCloudRedisV1LocationMetadata extends \Google\Model
-{
-    protected $availableZonesType = GoogleCloudRedisV1ZoneMetadata::class;
-    protected $availableZonesDataType = 'map';
-    /**
-     * Output only. The set of available zones in the location. The map is keyed
-     * by the lowercase ID of each zone, as defined by GCE. These keys can be
-     * specified in `location_id` or `alternative_location_id` fields when
-     * creating a Redis instance.
-     *
-     * @param GoogleCloudRedisV1ZoneMetadata[] $availableZones
-     */
-    public function setAvailableZones($availableZones)
+namespace Google\Service\CloudRedis {
+    class GoogleCloudRedisV1LocationMetadata extends \Google\Model
     {
+        protected $availableZonesType = GoogleCloudRedisV1ZoneMetadata::class;
+        protected $availableZonesDataType = 'map';
+        /**
+         * Output only. The set of available zones in the location. The map is keyed
+         * by the lowercase ID of each zone, as defined by GCE. These keys can be
+         * specified in `location_id` or `alternative_location_id` fields when
+         * creating a Redis instance.
+         *
+         * @param GoogleCloudRedisV1ZoneMetadata[] $availableZones
+         */
+        public function setAvailableZones($availableZones)
+        {
+        }
+        /**
+         * @return GoogleCloudRedisV1ZoneMetadata[]
+         */
+        public function getAvailableZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRedisV1ZoneMetadata[]
+     * Runtime class alias of \Google\Service\CloudRedis\GoogleCloudRedisV1LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableZones()
+    class Google_Service_CloudRedis_GoogleCloudRedisV1LocationMetadata extends \Google\Service\CloudRedis\GoogleCloudRedisV1LocationMetadata
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\ApplicationSignals;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CloudWatch Application Signals** service.
  * @method \Aws\Result batchGetServiceLevelObjectiveBudgetReport(array $args = [])

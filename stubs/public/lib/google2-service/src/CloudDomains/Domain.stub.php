@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class Domain extends \Google\Model
-{
-    /**
-     * The assessment is undefined.
-     */
-    public const RESOURCE_STATE_RESOURCE_STATE_UNSPECIFIED = 'RESOURCE_STATE_UNSPECIFIED';
-    /**
-     * A `Registration` resource can be created for this domain by calling
-     * `ImportDomain`.
-     */
-    public const RESOURCE_STATE_IMPORTABLE = 'IMPORTABLE';
-    /**
-     * A `Registration` resource cannot be created for this domain because it is
-     * not supported by Cloud Domains; for example, the top-level domain is not
-     * supported or the registry charges non-standard pricing for yearly renewals.
-     */
-    public const RESOURCE_STATE_UNSUPPORTED = 'UNSUPPORTED';
-    /**
-     * A `Registration` resource cannot be created for this domain because it is
-     * suspended and needs to be resolved with Google Domains.
-     */
-    public const RESOURCE_STATE_SUSPENDED = 'SUSPENDED';
-    /**
-     * A `Registration` resource cannot be created for this domain because it is
-     * expired and needs to be renewed with Google Domains.
-     */
-    public const RESOURCE_STATE_EXPIRED = 'EXPIRED';
-    /**
-     * A `Registration` resource cannot be created for this domain because it is
-     * deleted, but it may be possible to restore it with Google Domains.
-     */
-    public const RESOURCE_STATE_DELETED = 'DELETED';
-    /**
-     * The domain name. Unicode domain names are expressed in Punycode format.
-     *
-     * @var string
-     */
-    public $domainName;
-    /**
-     * The state of this domain as a `Registration` resource.
-     *
-     * @var string
-     */
-    public $resourceState;
-    protected $yearlyPriceType = Money::class;
-    protected $yearlyPriceDataType = '';
-    /**
-     * The domain name. Unicode domain names are expressed in Punycode format.
-     *
-     * @param string $domainName
-     */
-    public function setDomainName($domainName)
+namespace Google\Service\CloudDomains {
+    class Domain extends \Google\Model
     {
+        /**
+         * The assessment is undefined.
+         */
+        public const RESOURCE_STATE_RESOURCE_STATE_UNSPECIFIED = 'RESOURCE_STATE_UNSPECIFIED';
+        /**
+         * A `Registration` resource can be created for this domain by calling
+         * `ImportDomain`.
+         */
+        public const RESOURCE_STATE_IMPORTABLE = 'IMPORTABLE';
+        /**
+         * A `Registration` resource cannot be created for this domain because it is
+         * not supported by Cloud Domains; for example, the top-level domain is not
+         * supported or the registry charges non-standard pricing for yearly renewals.
+         */
+        public const RESOURCE_STATE_UNSUPPORTED = 'UNSUPPORTED';
+        /**
+         * A `Registration` resource cannot be created for this domain because it is
+         * suspended and needs to be resolved with Google Domains.
+         */
+        public const RESOURCE_STATE_SUSPENDED = 'SUSPENDED';
+        /**
+         * A `Registration` resource cannot be created for this domain because it is
+         * expired and needs to be renewed with Google Domains.
+         */
+        public const RESOURCE_STATE_EXPIRED = 'EXPIRED';
+        /**
+         * A `Registration` resource cannot be created for this domain because it is
+         * deleted, but it may be possible to restore it with Google Domains.
+         */
+        public const RESOURCE_STATE_DELETED = 'DELETED';
+        /**
+         * The domain name. Unicode domain names are expressed in Punycode format.
+         *
+         * @var string
+         */
+        public $domainName;
+        /**
+         * The state of this domain as a `Registration` resource.
+         *
+         * @var string
+         */
+        public $resourceState;
+        protected $yearlyPriceType = Money::class;
+        protected $yearlyPriceDataType = '';
+        /**
+         * The domain name. Unicode domain names are expressed in Punycode format.
+         *
+         * @param string $domainName
+         */
+        public function setDomainName($domainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainName()
+        {
+        }
+        /**
+         * The state of this domain as a `Registration` resource.
+         *
+         * Accepted values: RESOURCE_STATE_UNSPECIFIED, IMPORTABLE, UNSUPPORTED,
+         * SUSPENDED, EXPIRED, DELETED
+         *
+         * @param self::RESOURCE_STATE_* $resourceState
+         */
+        public function setResourceState($resourceState)
+        {
+        }
+        /**
+         * @return self::RESOURCE_STATE_*
+         */
+        public function getResourceState()
+        {
+        }
+        /**
+         * Price to renew the domain for one year. Only set when `resource_state` is
+         * `IMPORTABLE`.
+         *
+         * @param Money $yearlyPrice
+         */
+        public function setYearlyPrice(Money $yearlyPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getYearlyPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\Domain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainName()
-    {
-    }
-    /**
-     * The state of this domain as a `Registration` resource.
-     *
-     * Accepted values: RESOURCE_STATE_UNSPECIFIED, IMPORTABLE, UNSUPPORTED,
-     * SUSPENDED, EXPIRED, DELETED
-     *
-     * @param self::RESOURCE_STATE_* $resourceState
-     */
-    public function setResourceState($resourceState)
-    {
-    }
-    /**
-     * @return self::RESOURCE_STATE_*
-     */
-    public function getResourceState()
-    {
-    }
-    /**
-     * Price to renew the domain for one year. Only set when `resource_state` is
-     * `IMPORTABLE`.
-     *
-     * @param Money $yearlyPrice
-     */
-    public function setYearlyPrice(Money $yearlyPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getYearlyPrice()
+    class Google_Service_CloudDomains_Domain extends \Google\Service\CloudDomains\Domain
     {
     }
 }

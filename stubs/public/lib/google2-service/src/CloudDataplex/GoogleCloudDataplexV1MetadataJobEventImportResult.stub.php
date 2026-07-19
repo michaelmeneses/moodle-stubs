@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1MetadataJobEventImportResult extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createdEntries;
-    /**
-     * @var string
-     */
-    public $deletedEntries;
-    /**
-     * @var string
-     */
-    public $mutatedEntryGroups;
-    /**
-     * @var string
-     */
-    public $recreatedEntries;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $unchangedEntries;
-    /**
-     * @var string
-     */
-    public $updatedEntries;
-    /**
-     * @param string
-     */
-    public function setCreatedEntries($createdEntries)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1MetadataJobEventImportResult extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createdEntries;
+        /**
+         * @var string
+         */
+        public $deletedEntries;
+        /**
+         * @var string
+         */
+        public $mutatedEntryGroups;
+        /**
+         * @var string
+         */
+        public $recreatedEntries;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $unchangedEntries;
+        /**
+         * @var string
+         */
+        public $updatedEntries;
+        /**
+         * @param string
+         */
+        public function setCreatedEntries($createdEntries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedEntries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeletedEntries($deletedEntries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletedEntries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMutatedEntryGroups($mutatedEntryGroups)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMutatedEntryGroups()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecreatedEntries($recreatedEntries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecreatedEntries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnchangedEntries($unchangedEntries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnchangedEntries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdatedEntries($updatedEntries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdatedEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobEventImportResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedEntries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeletedEntries($deletedEntries)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeletedEntries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMutatedEntryGroups($mutatedEntryGroups)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMutatedEntryGroups()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecreatedEntries($recreatedEntries)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecreatedEntries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnchangedEntries($unchangedEntries)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnchangedEntries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdatedEntries($updatedEntries)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdatedEntries()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1MetadataJobEventImportResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobEventImportResult
     {
     }
 }

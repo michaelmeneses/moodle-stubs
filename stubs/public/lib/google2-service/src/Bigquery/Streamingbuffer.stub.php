@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Streamingbuffer extends \Google\Model
-{
-    /**
-     * Output only. A lower-bound estimate of the number of bytes currently in the
-     * streaming buffer.
-     *
-     * @var string
-     */
-    public $estimatedBytes;
-    /**
-     * Output only. A lower-bound estimate of the number of rows currently in the
-     * streaming buffer.
-     *
-     * @var string
-     */
-    public $estimatedRows;
-    /**
-     * Output only. Contains the timestamp of the oldest entry in the streaming
-     * buffer, in milliseconds since the epoch, if the streaming buffer is
-     * available.
-     *
-     * @var string
-     */
-    public $oldestEntryTime;
-    /**
-     * Output only. A lower-bound estimate of the number of bytes currently in the
-     * streaming buffer.
-     *
-     * @param string $estimatedBytes
-     */
-    public function setEstimatedBytes($estimatedBytes)
+namespace Google\Service\Bigquery {
+    class Streamingbuffer extends \Google\Model
     {
+        /**
+         * Output only. A lower-bound estimate of the number of bytes currently in the
+         * streaming buffer.
+         *
+         * @var string
+         */
+        public $estimatedBytes;
+        /**
+         * Output only. A lower-bound estimate of the number of rows currently in the
+         * streaming buffer.
+         *
+         * @var string
+         */
+        public $estimatedRows;
+        /**
+         * Output only. Contains the timestamp of the oldest entry in the streaming
+         * buffer, in milliseconds since the epoch, if the streaming buffer is
+         * available.
+         *
+         * @var string
+         */
+        public $oldestEntryTime;
+        /**
+         * Output only. A lower-bound estimate of the number of bytes currently in the
+         * streaming buffer.
+         *
+         * @param string $estimatedBytes
+         */
+        public function setEstimatedBytes($estimatedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedBytes()
+        {
+        }
+        /**
+         * Output only. A lower-bound estimate of the number of rows currently in the
+         * streaming buffer.
+         *
+         * @param string $estimatedRows
+         */
+        public function setEstimatedRows($estimatedRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedRows()
+        {
+        }
+        /**
+         * Output only. Contains the timestamp of the oldest entry in the streaming
+         * buffer, in milliseconds since the epoch, if the streaming buffer is
+         * available.
+         *
+         * @param string $oldestEntryTime
+         */
+        public function setOldestEntryTime($oldestEntryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldestEntryTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\Streamingbuffer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedBytes()
-    {
-    }
-    /**
-     * Output only. A lower-bound estimate of the number of rows currently in the
-     * streaming buffer.
-     *
-     * @param string $estimatedRows
-     */
-    public function setEstimatedRows($estimatedRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedRows()
-    {
-    }
-    /**
-     * Output only. Contains the timestamp of the oldest entry in the streaming
-     * buffer, in milliseconds since the epoch, if the streaming buffer is
-     * available.
-     *
-     * @param string $oldestEntryTime
-     */
-    public function setOldestEntryTime($oldestEntryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldestEntryTime()
+    class Google_Service_Bigquery_Streamingbuffer extends \Google\Service\Bigquery\Streamingbuffer
     {
     }
 }

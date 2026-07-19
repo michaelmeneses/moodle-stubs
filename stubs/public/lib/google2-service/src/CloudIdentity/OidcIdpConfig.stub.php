@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class OidcIdpConfig extends \Google\Model
-{
-    /**
-     * The **Change Password URL** of the identity provider. Users will be sent to
-     * this URL when changing their passwords at `myaccount.google.com`. This
-     * takes precedence over the change password URL configured at customer-level.
-     * Must use `HTTPS`.
-     *
-     * @var string
-     */
-    public $changePasswordUri;
-    /**
-     * Required. The Issuer identifier for the IdP. Must be a URL. The discovery
-     * URL will be derived from this as described in Section 4 of [the OIDC
-     * specification](https://openid.net/specs/openid-connect-discovery-1_0.html).
-     *
-     * @var string
-     */
-    public $issuerUri;
-    /**
-     * The **Change Password URL** of the identity provider. Users will be sent to
-     * this URL when changing their passwords at `myaccount.google.com`. This
-     * takes precedence over the change password URL configured at customer-level.
-     * Must use `HTTPS`.
-     *
-     * @param string $changePasswordUri
-     */
-    public function setChangePasswordUri($changePasswordUri)
+namespace Google\Service\CloudIdentity {
+    class OidcIdpConfig extends \Google\Model
     {
+        /**
+         * The **Change Password URL** of the identity provider. Users will be sent to
+         * this URL when changing their passwords at `myaccount.google.com`. This
+         * takes precedence over the change password URL configured at customer-level.
+         * Must use `HTTPS`.
+         *
+         * @var string
+         */
+        public $changePasswordUri;
+        /**
+         * Required. The Issuer identifier for the IdP. Must be a URL. The discovery
+         * URL will be derived from this as described in Section 4 of [the OIDC
+         * specification](https://openid.net/specs/openid-connect-discovery-1_0.html).
+         *
+         * @var string
+         */
+        public $issuerUri;
+        /**
+         * The **Change Password URL** of the identity provider. Users will be sent to
+         * this URL when changing their passwords at `myaccount.google.com`. This
+         * takes precedence over the change password URL configured at customer-level.
+         * Must use `HTTPS`.
+         *
+         * @param string $changePasswordUri
+         */
+        public function setChangePasswordUri($changePasswordUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangePasswordUri()
+        {
+        }
+        /**
+         * Required. The Issuer identifier for the IdP. Must be a URL. The discovery
+         * URL will be derived from this as described in Section 4 of [the OIDC
+         * specification](https://openid.net/specs/openid-connect-discovery-1_0.html).
+         *
+         * @param string $issuerUri
+         */
+        public function setIssuerUri($issuerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuerUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\OidcIdpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangePasswordUri()
-    {
-    }
-    /**
-     * Required. The Issuer identifier for the IdP. Must be a URL. The discovery
-     * URL will be derived from this as described in Section 4 of [the OIDC
-     * specification](https://openid.net/specs/openid-connect-discovery-1_0.html).
-     *
-     * @param string $issuerUri
-     */
-    public function setIssuerUri($issuerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuerUri()
+    class Google_Service_CloudIdentity_OidcIdpConfig extends \Google\Service\CloudIdentity\OidcIdpConfig
     {
     }
 }

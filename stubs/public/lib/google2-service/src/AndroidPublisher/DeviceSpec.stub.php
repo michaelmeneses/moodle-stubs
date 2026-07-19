@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceSpec extends \Google\Collection
-{
-    protected $collection_key = 'supportedLocales';
-    /**
-     * Screen dpi.
-     *
-     * @var string
-     */
-    public $screenDensity;
-    /**
-     * Supported ABI architectures in the order of preference. The values should
-     * be the string as reported by the platform, e.g. "armeabi-v7a", "x86_64".
-     *
-     * @var string[]
-     */
-    public $supportedAbis;
-    /**
-     * All installed locales represented as BCP-47 strings, e.g. "en-US".
-     *
-     * @var string[]
-     */
-    public $supportedLocales;
-    /**
-     * Screen dpi.
-     *
-     * @param string $screenDensity
-     */
-    public function setScreenDensity($screenDensity)
+namespace Google\Service\AndroidPublisher {
+    class DeviceSpec extends \Google\Collection
     {
+        protected $collection_key = 'supportedLocales';
+        /**
+         * Screen dpi.
+         *
+         * @var string
+         */
+        public $screenDensity;
+        /**
+         * Supported ABI architectures in the order of preference. The values should
+         * be the string as reported by the platform, e.g. "armeabi-v7a", "x86_64".
+         *
+         * @var string[]
+         */
+        public $supportedAbis;
+        /**
+         * All installed locales represented as BCP-47 strings, e.g. "en-US".
+         *
+         * @var string[]
+         */
+        public $supportedLocales;
+        /**
+         * Screen dpi.
+         *
+         * @param string $screenDensity
+         */
+        public function setScreenDensity($screenDensity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenDensity()
+        {
+        }
+        /**
+         * Supported ABI architectures in the order of preference. The values should
+         * be the string as reported by the platform, e.g. "armeabi-v7a", "x86_64".
+         *
+         * @param string[] $supportedAbis
+         */
+        public function setSupportedAbis($supportedAbis)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedAbis()
+        {
+        }
+        /**
+         * All installed locales represented as BCP-47 strings, e.g. "en-US".
+         *
+         * @param string[] $supportedLocales
+         */
+        public function setSupportedLocales($supportedLocales)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedLocales()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScreenDensity()
-    {
-    }
-    /**
-     * Supported ABI architectures in the order of preference. The values should
-     * be the string as reported by the platform, e.g. "armeabi-v7a", "x86_64".
-     *
-     * @param string[] $supportedAbis
-     */
-    public function setSupportedAbis($supportedAbis)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedAbis()
-    {
-    }
-    /**
-     * All installed locales represented as BCP-47 strings, e.g. "en-US".
-     *
-     * @param string[] $supportedLocales
-     */
-    public function setSupportedLocales($supportedLocales)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedLocales()
+    class Google_Service_AndroidPublisher_DeviceSpec extends \Google\Service\AndroidPublisher\DeviceSpec
     {
     }
 }

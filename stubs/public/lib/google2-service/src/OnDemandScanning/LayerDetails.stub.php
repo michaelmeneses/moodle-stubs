@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class LayerDetails extends \Google\Collection
-{
-    protected $collection_key = 'baseImages';
-    protected $baseImagesType = BaseImage::class;
-    protected $baseImagesDataType = 'array';
-    /**
-     * The layer chain ID (sha256 hash) of the layer in the container image.
-     * https://github.com/opencontainers/image-spec/blob/main/config.md#layer-
-     * chainid
-     *
-     * @var string
-     */
-    public $chainId;
-    /**
-     * The layer build command that was used to build the layer. This may not be
-     * found in all layers depending on how the container image is built.
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * The diff ID (sha256 hash) of the layer in the container image.
-     *
-     * @var string
-     */
-    public $diffId;
-    /**
-     * The index of the layer in the container image.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * The base images the layer is found within.
-     *
-     * @param BaseImage[] $baseImages
-     */
-    public function setBaseImages($baseImages)
+namespace Google\Service\OnDemandScanning {
+    class LayerDetails extends \Google\Collection
     {
+        protected $collection_key = 'baseImages';
+        protected $baseImagesType = BaseImage::class;
+        protected $baseImagesDataType = 'array';
+        /**
+         * The layer chain ID (sha256 hash) of the layer in the container image.
+         * https://github.com/opencontainers/image-spec/blob/main/config.md#layer-
+         * chainid
+         *
+         * @var string
+         */
+        public $chainId;
+        /**
+         * The layer build command that was used to build the layer. This may not be
+         * found in all layers depending on how the container image is built.
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * The diff ID (sha256 hash) of the layer in the container image.
+         *
+         * @var string
+         */
+        public $diffId;
+        /**
+         * The index of the layer in the container image.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * The base images the layer is found within.
+         *
+         * @param BaseImage[] $baseImages
+         */
+        public function setBaseImages($baseImages)
+        {
+        }
+        /**
+         * @return BaseImage[]
+         */
+        public function getBaseImages()
+        {
+        }
+        /**
+         * The layer chain ID (sha256 hash) of the layer in the container image.
+         * https://github.com/opencontainers/image-spec/blob/main/config.md#layer-
+         * chainid
+         *
+         * @param string $chainId
+         */
+        public function setChainId($chainId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChainId()
+        {
+        }
+        /**
+         * The layer build command that was used to build the layer. This may not be
+         * found in all layers depending on how the container image is built.
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * The diff ID (sha256 hash) of the layer in the container image.
+         *
+         * @param string $diffId
+         */
+        public function setDiffId($diffId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiffId()
+        {
+        }
+        /**
+         * The index of the layer in the container image.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BaseImage[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\LayerDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseImages()
-    {
-    }
-    /**
-     * The layer chain ID (sha256 hash) of the layer in the container image.
-     * https://github.com/opencontainers/image-spec/blob/main/config.md#layer-
-     * chainid
-     *
-     * @param string $chainId
-     */
-    public function setChainId($chainId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChainId()
-    {
-    }
-    /**
-     * The layer build command that was used to build the layer. This may not be
-     * found in all layers depending on how the container image is built.
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommand()
-    {
-    }
-    /**
-     * The diff ID (sha256 hash) of the layer in the container image.
-     *
-     * @param string $diffId
-     */
-    public function setDiffId($diffId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiffId()
-    {
-    }
-    /**
-     * The index of the layer in the container image.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
+    class Google_Service_OnDemandScanning_LayerDetails extends \Google\Service\OnDemandScanning\LayerDetails
     {
     }
 }

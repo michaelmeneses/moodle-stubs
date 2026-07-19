@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosRoboTest extends \Google\Model
-{
-    /**
-     * The bundle ID for the app-under-test. This is determined by examining the
-     * application's "Info.plist" file.
-     *
-     * @var string
-     */
-    public $appBundleId;
-    protected $appIpaType = FileReference::class;
-    protected $appIpaDataType = '';
-    protected $roboScriptType = FileReference::class;
-    protected $roboScriptDataType = '';
-    /**
-     * The bundle ID for the app-under-test. This is determined by examining the
-     * application's "Info.plist" file.
-     *
-     * @param string $appBundleId
-     */
-    public function setAppBundleId($appBundleId)
+namespace Google\Service\Testing {
+    class IosRoboTest extends \Google\Model
     {
+        /**
+         * The bundle ID for the app-under-test. This is determined by examining the
+         * application's "Info.plist" file.
+         *
+         * @var string
+         */
+        public $appBundleId;
+        protected $appIpaType = FileReference::class;
+        protected $appIpaDataType = '';
+        protected $roboScriptType = FileReference::class;
+        protected $roboScriptDataType = '';
+        /**
+         * The bundle ID for the app-under-test. This is determined by examining the
+         * application's "Info.plist" file.
+         *
+         * @param string $appBundleId
+         */
+        public function setAppBundleId($appBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppBundleId()
+        {
+        }
+        /**
+         * Required. The ipa stored at this file should be used to run the test.
+         *
+         * @param FileReference $appIpa
+         */
+        public function setAppIpa(FileReference $appIpa)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getAppIpa()
+        {
+        }
+        /**
+         * An optional Roboscript to customize the crawl. See
+         * https://firebase.google.com/docs/test-lab/android/robo-scripts-reference
+         * for more information about Roboscripts. The maximum allowed file size of
+         * the roboscript is 10MiB.
+         *
+         * @param FileReference $roboScript
+         */
+        public function setRoboScript(FileReference $roboScript)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getRoboScript()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\IosRoboTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppBundleId()
-    {
-    }
-    /**
-     * Required. The ipa stored at this file should be used to run the test.
-     *
-     * @param FileReference $appIpa
-     */
-    public function setAppIpa(FileReference $appIpa)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getAppIpa()
-    {
-    }
-    /**
-     * An optional Roboscript to customize the crawl. See
-     * https://firebase.google.com/docs/test-lab/android/robo-scripts-reference
-     * for more information about Roboscripts. The maximum allowed file size of
-     * the roboscript is 10MiB.
-     *
-     * @param FileReference $roboScript
-     */
-    public function setRoboScript(FileReference $roboScript)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getRoboScript()
+    class Google_Service_Testing_IosRoboTest extends \Google\Service\Testing\IosRoboTest
     {
     }
 }

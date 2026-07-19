@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DisksScopedList extends \Google\Collection
-{
-    protected $collection_key = 'disks';
-    protected $disksType = Disk::class;
-    protected $disksDataType = 'array';
-    protected $warningType = DisksScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of disks contained in this scope.
-     *
-     * @param Disk[] $disks
-     */
-    public function setDisks($disks)
+namespace Google\Service\Compute {
+    class DisksScopedList extends \Google\Collection
     {
+        protected $collection_key = 'disks';
+        protected $disksType = Disk::class;
+        protected $disksDataType = 'array';
+        protected $warningType = DisksScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of disks contained in this scope.
+         *
+         * @param Disk[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return Disk[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of disks when
+         * the list is empty.
+         *
+         * @param DisksScopedListWarning $warning
+         */
+        public function setWarning(DisksScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return DisksScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Disk[]
+     * Runtime class alias of \Google\Service\Compute\DisksScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of disks when
-     * the list is empty.
-     *
-     * @param DisksScopedListWarning $warning
-     */
-    public function setWarning(DisksScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return DisksScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_DisksScopedList extends \Google\Service\Compute\DisksScopedList
     {
     }
 }

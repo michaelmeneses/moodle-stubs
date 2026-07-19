@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class FetchRepositoryHistoryResponse extends \Google\Collection
-{
-    protected $collection_key = 'commits';
-    protected $commitsType = CommitLogEntry::class;
-    protected $commitsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of commit logs, ordered by 'git log' default order.
-     *
-     * @param CommitLogEntry[] $commits
-     */
-    public function setCommits($commits)
+namespace Google\Service\Dataform {
+    class FetchRepositoryHistoryResponse extends \Google\Collection
     {
+        protected $collection_key = 'commits';
+        protected $commitsType = CommitLogEntry::class;
+        protected $commitsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of commit logs, ordered by 'git log' default order.
+         *
+         * @param CommitLogEntry[] $commits
+         */
+        public function setCommits($commits)
+        {
+        }
+        /**
+         * @return CommitLogEntry[]
+         */
+        public function getCommits()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitLogEntry[]
+     * Runtime class alias of \Google\Service\Dataform\FetchRepositoryHistoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommits()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dataform_FetchRepositoryHistoryResponse extends \Google\Service\Dataform\FetchRepositoryHistoryResponse
     {
     }
 }

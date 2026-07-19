@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MetadataManagementActivity extends \Google\Collection
-{
-    protected $collection_key = 'restores';
-    protected $metadataExportsType = MetadataExport::class;
-    protected $metadataExportsDataType = 'array';
-    protected $restoresType = Restore::class;
-    protected $restoresDataType = 'array';
-    /**
-     * @param MetadataExport[]
-     */
-    public function setMetadataExports($metadataExports)
+namespace Google\Service\DataprocMetastore {
+    class MetadataManagementActivity extends \Google\Collection
     {
+        protected $collection_key = 'restores';
+        protected $metadataExportsType = MetadataExport::class;
+        protected $metadataExportsDataType = 'array';
+        protected $restoresType = Restore::class;
+        protected $restoresDataType = 'array';
+        /**
+         * @param MetadataExport[]
+         */
+        public function setMetadataExports($metadataExports)
+        {
+        }
+        /**
+         * @return MetadataExport[]
+         */
+        public function getMetadataExports()
+        {
+        }
+        /**
+         * @param Restore[]
+         */
+        public function setRestores($restores)
+        {
+        }
+        /**
+         * @return Restore[]
+         */
+        public function getRestores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetadataExport[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\MetadataManagementActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataExports()
-    {
-    }
-    /**
-     * @param Restore[]
-     */
-    public function setRestores($restores)
-    {
-    }
-    /**
-     * @return Restore[]
-     */
-    public function getRestores()
+    class Google_Service_DataprocMetastore_MetadataManagementActivity extends \Google\Service\DataprocMetastore\MetadataManagementActivity
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class StackTrace extends \Google\Model
-{
-    protected $stackFramesType = StackFrames::class;
-    protected $stackFramesDataType = '';
-    /**
-     * The hash ID is used to conserve network bandwidth for duplicate stack
-     * traces within a single trace. Often multiple spans will have identical
-     * stack traces. The first occurrence of a stack trace should contain both the
-     * `stackFrame` content and a value in `stackTraceHashId`. Subsequent spans
-     * within the same request can refer to that stack trace by only setting
-     * `stackTraceHashId`.
-     *
-     * @var string
-     */
-    public $stackTraceHashId;
-    /**
-     * Stack frames in this stack trace. A maximum of 128 frames are allowed.
-     *
-     * @param StackFrames $stackFrames
-     */
-    public function setStackFrames(StackFrames $stackFrames)
+namespace Google\Service\CloudTrace {
+    class StackTrace extends \Google\Model
     {
+        protected $stackFramesType = StackFrames::class;
+        protected $stackFramesDataType = '';
+        /**
+         * The hash ID is used to conserve network bandwidth for duplicate stack
+         * traces within a single trace. Often multiple spans will have identical
+         * stack traces. The first occurrence of a stack trace should contain both the
+         * `stackFrame` content and a value in `stackTraceHashId`. Subsequent spans
+         * within the same request can refer to that stack trace by only setting
+         * `stackTraceHashId`.
+         *
+         * @var string
+         */
+        public $stackTraceHashId;
+        /**
+         * Stack frames in this stack trace. A maximum of 128 frames are allowed.
+         *
+         * @param StackFrames $stackFrames
+         */
+        public function setStackFrames(StackFrames $stackFrames)
+        {
+        }
+        /**
+         * @return StackFrames
+         */
+        public function getStackFrames()
+        {
+        }
+        /**
+         * The hash ID is used to conserve network bandwidth for duplicate stack
+         * traces within a single trace. Often multiple spans will have identical
+         * stack traces. The first occurrence of a stack trace should contain both the
+         * `stackFrame` content and a value in `stackTraceHashId`. Subsequent spans
+         * within the same request can refer to that stack trace by only setting
+         * `stackTraceHashId`.
+         *
+         * @param string $stackTraceHashId
+         */
+        public function setStackTraceHashId($stackTraceHashId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStackTraceHashId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StackFrames
+     * Runtime class alias of \Google\Service\CloudTrace\StackTrace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStackFrames()
-    {
-    }
-    /**
-     * The hash ID is used to conserve network bandwidth for duplicate stack
-     * traces within a single trace. Often multiple spans will have identical
-     * stack traces. The first occurrence of a stack trace should contain both the
-     * `stackFrame` content and a value in `stackTraceHashId`. Subsequent spans
-     * within the same request can refer to that stack trace by only setting
-     * `stackTraceHashId`.
-     *
-     * @param string $stackTraceHashId
-     */
-    public function setStackTraceHashId($stackTraceHashId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStackTraceHashId()
+    class Google_Service_CloudTrace_StackTrace extends \Google\Service\CloudTrace\StackTrace
     {
     }
 }

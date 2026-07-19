@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2HybridContentItem extends \Google\Model
-{
-    protected $findingDetailsType = GooglePrivacyDlpV2HybridFindingDetails::class;
-    protected $findingDetailsDataType = '';
-    protected $itemType = GooglePrivacyDlpV2ContentItem::class;
-    protected $itemDataType = '';
-    /**
-     * Supplementary information that will be added to each finding.
-     *
-     * @param GooglePrivacyDlpV2HybridFindingDetails $findingDetails
-     */
-    public function setFindingDetails(GooglePrivacyDlpV2HybridFindingDetails $findingDetails)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2HybridContentItem extends \Google\Model
     {
+        protected $findingDetailsType = GooglePrivacyDlpV2HybridFindingDetails::class;
+        protected $findingDetailsDataType = '';
+        protected $itemType = GooglePrivacyDlpV2ContentItem::class;
+        protected $itemDataType = '';
+        /**
+         * Supplementary information that will be added to each finding.
+         *
+         * @param GooglePrivacyDlpV2HybridFindingDetails $findingDetails
+         */
+        public function setFindingDetails(GooglePrivacyDlpV2HybridFindingDetails $findingDetails)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2HybridFindingDetails
+         */
+        public function getFindingDetails()
+        {
+        }
+        /**
+         * The item to inspect.
+         *
+         * @param GooglePrivacyDlpV2ContentItem $item
+         */
+        public function setItem(GooglePrivacyDlpV2ContentItem $item)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ContentItem
+         */
+        public function getItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2HybridFindingDetails
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2HybridContentItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFindingDetails()
-    {
-    }
-    /**
-     * The item to inspect.
-     *
-     * @param GooglePrivacyDlpV2ContentItem $item
-     */
-    public function setItem(GooglePrivacyDlpV2ContentItem $item)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ContentItem
-     */
-    public function getItem()
+    class Google_Service_DLP_GooglePrivacyDlpV2HybridContentItem extends \Google\Service\DLP\GooglePrivacyDlpV2HybridContentItem
     {
     }
 }

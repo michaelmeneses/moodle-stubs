@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceUsers';
-    protected $deviceUsersType = GoogleAppsCloudidentityDevicesV1DeviceUser::class;
-    protected $deviceUsersDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. Empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Devices meeting the list restrictions.
-     *
-     * @param GoogleAppsCloudidentityDevicesV1DeviceUser[] $deviceUsers
-     */
-    public function setDeviceUsers($deviceUsers)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceUsers';
+        protected $deviceUsersType = GoogleAppsCloudidentityDevicesV1DeviceUser::class;
+        protected $deviceUsersDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. Empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Devices meeting the list restrictions.
+         *
+         * @param GoogleAppsCloudidentityDevicesV1DeviceUser[] $deviceUsers
+         */
+        public function setDeviceUsers($deviceUsers)
+        {
+        }
+        /**
+         * @return GoogleAppsCloudidentityDevicesV1DeviceUser[]
+         */
+        public function getDeviceUsers()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. Empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCloudidentityDevicesV1DeviceUser[]
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceUsers()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. Empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse
     {
     }
 }

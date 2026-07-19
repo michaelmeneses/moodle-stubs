@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class InstanceAuthString extends \Google\Model
-{
-    /**
-     * AUTH string set on the instance.
-     *
-     * @var string
-     */
-    public $authString;
-    /**
-     * AUTH string set on the instance.
-     *
-     * @param string $authString
-     */
-    public function setAuthString($authString)
+namespace Google\Service\CloudRedis {
+    class InstanceAuthString extends \Google\Model
     {
+        /**
+         * AUTH string set on the instance.
+         *
+         * @var string
+         */
+        public $authString;
+        /**
+         * AUTH string set on the instance.
+         *
+         * @param string $authString
+         */
+        public function setAuthString($authString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\InstanceAuthString registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthString()
+    class Google_Service_CloudRedis_InstanceAuthString extends \Google\Service\CloudRedis\InstanceAuthString
     {
     }
 }

@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AccountActiveAdSummary extends \Google\Model
-{
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_40K = 'ACTIVE_ADS_TIER_40K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_75K = 'ACTIVE_ADS_TIER_75K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_100K = 'ACTIVE_ADS_TIER_100K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_200K = 'ACTIVE_ADS_TIER_200K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_300K = 'ACTIVE_ADS_TIER_300K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_500K = 'ACTIVE_ADS_TIER_500K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_750K = 'ACTIVE_ADS_TIER_750K';
-    public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_1M = 'ACTIVE_ADS_TIER_1M';
-    /**
-     * ID of the account.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Ads that have been activated for the account
-     *
-     * @var string
-     */
-    public $activeAds;
-    /**
-     * Maximum number of active ads allowed for the account.
-     *
-     * @var string
-     */
-    public $activeAdsLimitTier;
-    /**
-     * Ads that can be activated for the account.
-     *
-     * @var string
-     */
-    public $availableAds;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountActiveAdSummary".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ID of the account.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class AccountActiveAdSummary extends \Google\Model
     {
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_40K = 'ACTIVE_ADS_TIER_40K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_75K = 'ACTIVE_ADS_TIER_75K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_100K = 'ACTIVE_ADS_TIER_100K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_200K = 'ACTIVE_ADS_TIER_200K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_300K = 'ACTIVE_ADS_TIER_300K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_500K = 'ACTIVE_ADS_TIER_500K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_750K = 'ACTIVE_ADS_TIER_750K';
+        public const ACTIVE_ADS_LIMIT_TIER_ACTIVE_ADS_TIER_1M = 'ACTIVE_ADS_TIER_1M';
+        /**
+         * ID of the account.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Ads that have been activated for the account
+         *
+         * @var string
+         */
+        public $activeAds;
+        /**
+         * Maximum number of active ads allowed for the account.
+         *
+         * @var string
+         */
+        public $activeAdsLimitTier;
+        /**
+         * Ads that can be activated for the account.
+         *
+         * @var string
+         */
+        public $availableAds;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountActiveAdSummary".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ID of the account.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Ads that have been activated for the account
+         *
+         * @param string $activeAds
+         */
+        public function setActiveAds($activeAds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveAds()
+        {
+        }
+        /**
+         * Maximum number of active ads allowed for the account.
+         *
+         * Accepted values: ACTIVE_ADS_TIER_40K, ACTIVE_ADS_TIER_75K,
+         * ACTIVE_ADS_TIER_100K, ACTIVE_ADS_TIER_200K, ACTIVE_ADS_TIER_300K,
+         * ACTIVE_ADS_TIER_500K, ACTIVE_ADS_TIER_750K, ACTIVE_ADS_TIER_1M
+         *
+         * @param self::ACTIVE_ADS_LIMIT_TIER_* $activeAdsLimitTier
+         */
+        public function setActiveAdsLimitTier($activeAdsLimitTier)
+        {
+        }
+        /**
+         * @return self::ACTIVE_ADS_LIMIT_TIER_*
+         */
+        public function getActiveAdsLimitTier()
+        {
+        }
+        /**
+         * Ads that can be activated for the account.
+         *
+         * @param string $availableAds
+         */
+        public function setAvailableAds($availableAds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvailableAds()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountActiveAdSummary".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\AccountActiveAdSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Ads that have been activated for the account
-     *
-     * @param string $activeAds
-     */
-    public function setActiveAds($activeAds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActiveAds()
-    {
-    }
-    /**
-     * Maximum number of active ads allowed for the account.
-     *
-     * Accepted values: ACTIVE_ADS_TIER_40K, ACTIVE_ADS_TIER_75K,
-     * ACTIVE_ADS_TIER_100K, ACTIVE_ADS_TIER_200K, ACTIVE_ADS_TIER_300K,
-     * ACTIVE_ADS_TIER_500K, ACTIVE_ADS_TIER_750K, ACTIVE_ADS_TIER_1M
-     *
-     * @param self::ACTIVE_ADS_LIMIT_TIER_* $activeAdsLimitTier
-     */
-    public function setActiveAdsLimitTier($activeAdsLimitTier)
-    {
-    }
-    /**
-     * @return self::ACTIVE_ADS_LIMIT_TIER_*
-     */
-    public function getActiveAdsLimitTier()
-    {
-    }
-    /**
-     * Ads that can be activated for the account.
-     *
-     * @param string $availableAds
-     */
-    public function setAvailableAds($availableAds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAvailableAds()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountActiveAdSummary".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_AccountActiveAdSummary extends \Google\Service\Dfareporting\AccountActiveAdSummary
     {
     }
 }

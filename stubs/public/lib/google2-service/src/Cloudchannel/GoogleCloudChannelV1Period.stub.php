@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Period extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const PERIOD_TYPE_PERIOD_TYPE_UNSPECIFIED = 'PERIOD_TYPE_UNSPECIFIED';
-    /**
-     * Day.
-     */
-    public const PERIOD_TYPE_DAY = 'DAY';
-    /**
-     * Month.
-     */
-    public const PERIOD_TYPE_MONTH = 'MONTH';
-    /**
-     * Year.
-     */
-    public const PERIOD_TYPE_YEAR = 'YEAR';
-    /**
-     * Total duration of Period Type defined.
-     *
-     * @var int
-     */
-    public $duration;
-    /**
-     * Period Type.
-     *
-     * @var string
-     */
-    public $periodType;
-    /**
-     * Total duration of Period Type defined.
-     *
-     * @param int $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Period extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const PERIOD_TYPE_PERIOD_TYPE_UNSPECIFIED = 'PERIOD_TYPE_UNSPECIFIED';
+        /**
+         * Day.
+         */
+        public const PERIOD_TYPE_DAY = 'DAY';
+        /**
+         * Month.
+         */
+        public const PERIOD_TYPE_MONTH = 'MONTH';
+        /**
+         * Year.
+         */
+        public const PERIOD_TYPE_YEAR = 'YEAR';
+        /**
+         * Total duration of Period Type defined.
+         *
+         * @var int
+         */
+        public $duration;
+        /**
+         * Period Type.
+         *
+         * @var string
+         */
+        public $periodType;
+        /**
+         * Total duration of Period Type defined.
+         *
+         * @param int $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Period Type.
+         *
+         * Accepted values: PERIOD_TYPE_UNSPECIFIED, DAY, MONTH, YEAR
+         *
+         * @param self::PERIOD_TYPE_* $periodType
+         */
+        public function setPeriodType($periodType)
+        {
+        }
+        /**
+         * @return self::PERIOD_TYPE_*
+         */
+        public function getPeriodType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Period registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Period Type.
-     *
-     * Accepted values: PERIOD_TYPE_UNSPECIFIED, DAY, MONTH, YEAR
-     *
-     * @param self::PERIOD_TYPE_* $periodType
-     */
-    public function setPeriodType($periodType)
-    {
-    }
-    /**
-     * @return self::PERIOD_TYPE_*
-     */
-    public function getPeriodType()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Period extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Period
     {
     }
 }

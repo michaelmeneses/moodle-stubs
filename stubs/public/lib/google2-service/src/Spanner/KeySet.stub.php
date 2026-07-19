@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class KeySet extends \Google\Collection
-{
-    protected $collection_key = 'ranges';
-    /**
-     * For convenience `all` can be set to `true` to indicate that this `KeySet`
-     * matches all keys in the table or index. Note that any keys specified in
-     * `keys` or `ranges` are only yielded once.
-     *
-     * @var bool
-     */
-    public $all;
-    /**
-     * A list of specific keys. Entries in `keys` should have exactly as many
-     * elements as there are columns in the primary or index key with which this
-     * `KeySet` is used. Individual key values are encoded as described here.
-     *
-     * @var array[]
-     */
-    public $keys;
-    protected $rangesType = KeyRange::class;
-    protected $rangesDataType = 'array';
-    /**
-     * For convenience `all` can be set to `true` to indicate that this `KeySet`
-     * matches all keys in the table or index. Note that any keys specified in
-     * `keys` or `ranges` are only yielded once.
-     *
-     * @param bool $all
-     */
-    public function setAll($all)
+namespace Google\Service\Spanner {
+    class KeySet extends \Google\Collection
     {
+        protected $collection_key = 'ranges';
+        /**
+         * For convenience `all` can be set to `true` to indicate that this `KeySet`
+         * matches all keys in the table or index. Note that any keys specified in
+         * `keys` or `ranges` are only yielded once.
+         *
+         * @var bool
+         */
+        public $all;
+        /**
+         * A list of specific keys. Entries in `keys` should have exactly as many
+         * elements as there are columns in the primary or index key with which this
+         * `KeySet` is used. Individual key values are encoded as described here.
+         *
+         * @var array[]
+         */
+        public $keys;
+        protected $rangesType = KeyRange::class;
+        protected $rangesDataType = 'array';
+        /**
+         * For convenience `all` can be set to `true` to indicate that this `KeySet`
+         * matches all keys in the table or index. Note that any keys specified in
+         * `keys` or `ranges` are only yielded once.
+         *
+         * @param bool $all
+         */
+        public function setAll($all)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAll()
+        {
+        }
+        /**
+         * A list of specific keys. Entries in `keys` should have exactly as many
+         * elements as there are columns in the primary or index key with which this
+         * `KeySet` is used. Individual key values are encoded as described here.
+         *
+         * @param array[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getKeys()
+        {
+        }
+        /**
+         * A list of key ranges. See KeyRange for more information about key range
+         * specifications.
+         *
+         * @param KeyRange[] $ranges
+         */
+        public function setRanges($ranges)
+        {
+        }
+        /**
+         * @return KeyRange[]
+         */
+        public function getRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\KeySet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAll()
-    {
-    }
-    /**
-     * A list of specific keys. Entries in `keys` should have exactly as many
-     * elements as there are columns in the primary or index key with which this
-     * `KeySet` is used. Individual key values are encoded as described here.
-     *
-     * @param array[] $keys
-     */
-    public function setKeys($keys)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getKeys()
-    {
-    }
-    /**
-     * A list of key ranges. See KeyRange for more information about key range
-     * specifications.
-     *
-     * @param KeyRange[] $ranges
-     */
-    public function setRanges($ranges)
-    {
-    }
-    /**
-     * @return KeyRange[]
-     */
-    public function getRanges()
+    class Google_Service_Spanner_KeySet extends \Google\Service\Spanner\KeySet
     {
     }
 }

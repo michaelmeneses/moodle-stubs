@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1BatchUpdateServicesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleFirebaseAppcheckV1UpdateServiceRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Optional. A comma-separated list of names of fields in the Services to
-     * update. Example: `display_name`. If the `update_mask` field is set in both
-     * this request and any of the UpdateServiceRequest messages, they must match
-     * or the entire batch fails and no updates will be committed.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The request messages specifying the Services to update. A maximum
-     * of 100 objects can be updated in a batch.
-     *
-     * @param GoogleFirebaseAppcheckV1UpdateServiceRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1BatchUpdateServicesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleFirebaseAppcheckV1UpdateServiceRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Optional. A comma-separated list of names of fields in the Services to
+         * update. Example: `display_name`. If the `update_mask` field is set in both
+         * this request and any of the UpdateServiceRequest messages, they must match
+         * or the entire batch fails and no updates will be committed.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The request messages specifying the Services to update. A maximum
+         * of 100 objects can be updated in a batch.
+         *
+         * @param GoogleFirebaseAppcheckV1UpdateServiceRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1UpdateServiceRequest[]
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * Optional. A comma-separated list of names of fields in the Services to
+         * update. Example: `display_name`. If the `update_mask` field is set in both
+         * this request and any of the UpdateServiceRequest messages, they must match
+         * or the entire batch fails and no updates will be committed.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1UpdateServiceRequest[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateServicesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
-    {
-    }
-    /**
-     * Optional. A comma-separated list of names of fields in the Services to
-     * update. Example: `display_name`. If the `update_mask` field is set in both
-     * this request and any of the UpdateServiceRequest messages, they must match
-     * or the entire batch fails and no updates will be committed.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1BatchUpdateServicesRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateServicesRequest
     {
     }
 }

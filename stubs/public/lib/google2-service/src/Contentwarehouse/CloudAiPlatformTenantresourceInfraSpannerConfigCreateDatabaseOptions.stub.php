@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions extends \Google\Model
-{
-    /**
-     * The cloud resource name for the CMEK encryption. For example,
-     * projects//locations/
-     *
-     * @var string
-     */
-    public $cmekCloudResourceName;
-    /**
-     * The cloud resource type for the CMEK encryption. For example,
-     * contentwarehouse.googleapis.com/Location
-     *
-     * @var string
-     */
-    public $cmekCloudResourceType;
-    /**
-     * The service name for the CMEK encryption. For example,
-     * contentwarehouse.googleapis.com
-     *
-     * @var string
-     */
-    public $cmekServiceName;
-    /**
-     * The cloud resource name for the CMEK encryption. For example,
-     * projects//locations/
-     *
-     * @param string $cmekCloudResourceName
-     */
-    public function setCmekCloudResourceName($cmekCloudResourceName)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions extends \Google\Model
     {
+        /**
+         * The cloud resource name for the CMEK encryption. For example,
+         * projects//locations/
+         *
+         * @var string
+         */
+        public $cmekCloudResourceName;
+        /**
+         * The cloud resource type for the CMEK encryption. For example,
+         * contentwarehouse.googleapis.com/Location
+         *
+         * @var string
+         */
+        public $cmekCloudResourceType;
+        /**
+         * The service name for the CMEK encryption. For example,
+         * contentwarehouse.googleapis.com
+         *
+         * @var string
+         */
+        public $cmekServiceName;
+        /**
+         * The cloud resource name for the CMEK encryption. For example,
+         * projects//locations/
+         *
+         * @param string $cmekCloudResourceName
+         */
+        public function setCmekCloudResourceName($cmekCloudResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmekCloudResourceName()
+        {
+        }
+        /**
+         * The cloud resource type for the CMEK encryption. For example,
+         * contentwarehouse.googleapis.com/Location
+         *
+         * @param string $cmekCloudResourceType
+         */
+        public function setCmekCloudResourceType($cmekCloudResourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmekCloudResourceType()
+        {
+        }
+        /**
+         * The service name for the CMEK encryption. For example,
+         * contentwarehouse.googleapis.com
+         *
+         * @param string $cmekServiceName
+         */
+        public function setCmekServiceName($cmekServiceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmekServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmekCloudResourceName()
-    {
-    }
-    /**
-     * The cloud resource type for the CMEK encryption. For example,
-     * contentwarehouse.googleapis.com/Location
-     *
-     * @param string $cmekCloudResourceType
-     */
-    public function setCmekCloudResourceType($cmekCloudResourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCmekCloudResourceType()
-    {
-    }
-    /**
-     * The service name for the CMEK encryption. For example,
-     * contentwarehouse.googleapis.com
-     *
-     * @param string $cmekServiceName
-     */
-    public function setCmekServiceName($cmekServiceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCmekServiceName()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceInfraSpannerConfigCreateDatabaseOptions
     {
     }
 }

@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageVisualElement extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    /**
-     * Type of the VisualElement.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A list of detected languages together with confidence.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $detectedLanguages
-     */
-    public function setDetectedLanguages($detectedLanguages)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageVisualElement extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        /**
+         * Type of the VisualElement.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A list of detected languages together with confidence.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $detectedLanguages
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * Layout for VisualElement.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * Type of the VisualElement.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageVisualElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * Layout for VisualElement.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * Type of the VisualElement.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageVisualElement extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageVisualElement
     {
     }
 }

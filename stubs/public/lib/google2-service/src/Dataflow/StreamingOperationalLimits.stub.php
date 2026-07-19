@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingOperationalLimits extends \Google\Model
-{
-    /**
-     * The maximum size for an element in bag state.
-     *
-     * @var string
-     */
-    public $maxBagElementBytes;
-    /**
-     * The maximum size for an element in global data.
-     *
-     * @var string
-     */
-    public $maxGlobalDataBytes;
-    /**
-     * The maximum size allowed for a key.
-     *
-     * @var string
-     */
-    public $maxKeyBytes;
-    /**
-     * The maximum size for a single output element.
-     *
-     * @var string
-     */
-    public $maxProductionOutputBytes;
-    /**
-     * The maximum size for an element in sorted list state.
-     *
-     * @var string
-     */
-    public $maxSortedListElementBytes;
-    /**
-     * The maximum size for a source state update.
-     *
-     * @var string
-     */
-    public $maxSourceStateBytes;
-    /**
-     * The maximum size for a state tag.
-     *
-     * @var string
-     */
-    public $maxTagBytes;
-    /**
-     * The maximum size for a value state field.
-     *
-     * @var string
-     */
-    public $maxValueBytes;
-    /**
-     * The maximum size for an element in bag state.
-     *
-     * @param string $maxBagElementBytes
-     */
-    public function setMaxBagElementBytes($maxBagElementBytes)
+namespace Google\Service\Dataflow {
+    class StreamingOperationalLimits extends \Google\Model
     {
+        /**
+         * The maximum size for an element in bag state.
+         *
+         * @var string
+         */
+        public $maxBagElementBytes;
+        /**
+         * The maximum size for an element in global data.
+         *
+         * @var string
+         */
+        public $maxGlobalDataBytes;
+        /**
+         * The maximum size allowed for a key.
+         *
+         * @var string
+         */
+        public $maxKeyBytes;
+        /**
+         * The maximum size for a single output element.
+         *
+         * @var string
+         */
+        public $maxProductionOutputBytes;
+        /**
+         * The maximum size for an element in sorted list state.
+         *
+         * @var string
+         */
+        public $maxSortedListElementBytes;
+        /**
+         * The maximum size for a source state update.
+         *
+         * @var string
+         */
+        public $maxSourceStateBytes;
+        /**
+         * The maximum size for a state tag.
+         *
+         * @var string
+         */
+        public $maxTagBytes;
+        /**
+         * The maximum size for a value state field.
+         *
+         * @var string
+         */
+        public $maxValueBytes;
+        /**
+         * The maximum size for an element in bag state.
+         *
+         * @param string $maxBagElementBytes
+         */
+        public function setMaxBagElementBytes($maxBagElementBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxBagElementBytes()
+        {
+        }
+        /**
+         * The maximum size for an element in global data.
+         *
+         * @param string $maxGlobalDataBytes
+         */
+        public function setMaxGlobalDataBytes($maxGlobalDataBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxGlobalDataBytes()
+        {
+        }
+        /**
+         * The maximum size allowed for a key.
+         *
+         * @param string $maxKeyBytes
+         */
+        public function setMaxKeyBytes($maxKeyBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxKeyBytes()
+        {
+        }
+        /**
+         * The maximum size for a single output element.
+         *
+         * @param string $maxProductionOutputBytes
+         */
+        public function setMaxProductionOutputBytes($maxProductionOutputBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxProductionOutputBytes()
+        {
+        }
+        /**
+         * The maximum size for an element in sorted list state.
+         *
+         * @param string $maxSortedListElementBytes
+         */
+        public function setMaxSortedListElementBytes($maxSortedListElementBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxSortedListElementBytes()
+        {
+        }
+        /**
+         * The maximum size for a source state update.
+         *
+         * @param string $maxSourceStateBytes
+         */
+        public function setMaxSourceStateBytes($maxSourceStateBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxSourceStateBytes()
+        {
+        }
+        /**
+         * The maximum size for a state tag.
+         *
+         * @param string $maxTagBytes
+         */
+        public function setMaxTagBytes($maxTagBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxTagBytes()
+        {
+        }
+        /**
+         * The maximum size for a value state field.
+         *
+         * @param string $maxValueBytes
+         */
+        public function setMaxValueBytes($maxValueBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValueBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingOperationalLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxBagElementBytes()
-    {
-    }
-    /**
-     * The maximum size for an element in global data.
-     *
-     * @param string $maxGlobalDataBytes
-     */
-    public function setMaxGlobalDataBytes($maxGlobalDataBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxGlobalDataBytes()
-    {
-    }
-    /**
-     * The maximum size allowed for a key.
-     *
-     * @param string $maxKeyBytes
-     */
-    public function setMaxKeyBytes($maxKeyBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxKeyBytes()
-    {
-    }
-    /**
-     * The maximum size for a single output element.
-     *
-     * @param string $maxProductionOutputBytes
-     */
-    public function setMaxProductionOutputBytes($maxProductionOutputBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxProductionOutputBytes()
-    {
-    }
-    /**
-     * The maximum size for an element in sorted list state.
-     *
-     * @param string $maxSortedListElementBytes
-     */
-    public function setMaxSortedListElementBytes($maxSortedListElementBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxSortedListElementBytes()
-    {
-    }
-    /**
-     * The maximum size for a source state update.
-     *
-     * @param string $maxSourceStateBytes
-     */
-    public function setMaxSourceStateBytes($maxSourceStateBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxSourceStateBytes()
-    {
-    }
-    /**
-     * The maximum size for a state tag.
-     *
-     * @param string $maxTagBytes
-     */
-    public function setMaxTagBytes($maxTagBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxTagBytes()
-    {
-    }
-    /**
-     * The maximum size for a value state field.
-     *
-     * @param string $maxValueBytes
-     */
-    public function setMaxValueBytes($maxValueBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxValueBytes()
+    class Google_Service_Dataflow_StreamingOperationalLimits extends \Google\Service\Dataflow\StreamingOperationalLimits
     {
     }
 }

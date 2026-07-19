@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class HealthCheck extends \Google\Model
-{
-    /**
-     * Interval between health checks.
-     *
-     * @var string
-     */
-    public $checkInterval;
-    /**
-     * Whether to explicitly disable health checks for this instance.
-     *
-     * @var bool
-     */
-    public $disableHealthCheck;
-    /**
-     * Number of consecutive successful health checks required before receiving
-     * traffic.
-     *
-     * @var string
-     */
-    public $healthyThreshold;
-    /**
-     * Host header to send when performing an HTTP health check. Example:
-     * "myapp.appspot.com"
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * Number of consecutive failed health checks required before an instance is
-     * restarted.
-     *
-     * @var string
-     */
-    public $restartThreshold;
-    /**
-     * Time before the health check is considered failed.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * Number of consecutive failed health checks required before removing
-     * traffic.
-     *
-     * @var string
-     */
-    public $unhealthyThreshold;
-    /**
-     * Interval between health checks.
-     *
-     * @param string $checkInterval
-     */
-    public function setCheckInterval($checkInterval)
+namespace Google\Service\Appengine {
+    class HealthCheck extends \Google\Model
     {
+        /**
+         * Interval between health checks.
+         *
+         * @var string
+         */
+        public $checkInterval;
+        /**
+         * Whether to explicitly disable health checks for this instance.
+         *
+         * @var bool
+         */
+        public $disableHealthCheck;
+        /**
+         * Number of consecutive successful health checks required before receiving
+         * traffic.
+         *
+         * @var string
+         */
+        public $healthyThreshold;
+        /**
+         * Host header to send when performing an HTTP health check. Example:
+         * "myapp.appspot.com"
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * Number of consecutive failed health checks required before an instance is
+         * restarted.
+         *
+         * @var string
+         */
+        public $restartThreshold;
+        /**
+         * Time before the health check is considered failed.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * Number of consecutive failed health checks required before removing
+         * traffic.
+         *
+         * @var string
+         */
+        public $unhealthyThreshold;
+        /**
+         * Interval between health checks.
+         *
+         * @param string $checkInterval
+         */
+        public function setCheckInterval($checkInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckInterval()
+        {
+        }
+        /**
+         * Whether to explicitly disable health checks for this instance.
+         *
+         * @param bool $disableHealthCheck
+         */
+        public function setDisableHealthCheck($disableHealthCheck)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableHealthCheck()
+        {
+        }
+        /**
+         * Number of consecutive successful health checks required before receiving
+         * traffic.
+         *
+         * @param string $healthyThreshold
+         */
+        public function setHealthyThreshold($healthyThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthyThreshold()
+        {
+        }
+        /**
+         * Host header to send when performing an HTTP health check. Example:
+         * "myapp.appspot.com"
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * Number of consecutive failed health checks required before an instance is
+         * restarted.
+         *
+         * @param string $restartThreshold
+         */
+        public function setRestartThreshold($restartThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRestartThreshold()
+        {
+        }
+        /**
+         * Time before the health check is considered failed.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
+        /**
+         * Number of consecutive failed health checks required before removing
+         * traffic.
+         *
+         * @param string $unhealthyThreshold
+         */
+        public function setUnhealthyThreshold($unhealthyThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnhealthyThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\HealthCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckInterval()
-    {
-    }
-    /**
-     * Whether to explicitly disable health checks for this instance.
-     *
-     * @param bool $disableHealthCheck
-     */
-    public function setDisableHealthCheck($disableHealthCheck)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableHealthCheck()
-    {
-    }
-    /**
-     * Number of consecutive successful health checks required before receiving
-     * traffic.
-     *
-     * @param string $healthyThreshold
-     */
-    public function setHealthyThreshold($healthyThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealthyThreshold()
-    {
-    }
-    /**
-     * Host header to send when performing an HTTP health check. Example:
-     * "myapp.appspot.com"
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * Number of consecutive failed health checks required before an instance is
-     * restarted.
-     *
-     * @param string $restartThreshold
-     */
-    public function setRestartThreshold($restartThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRestartThreshold()
-    {
-    }
-    /**
-     * Time before the health check is considered failed.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
-    {
-    }
-    /**
-     * Number of consecutive failed health checks required before removing
-     * traffic.
-     *
-     * @param string $unhealthyThreshold
-     */
-    public function setUnhealthyThreshold($unhealthyThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnhealthyThreshold()
+    class Google_Service_Appengine_HealthCheck extends \Google\Service\Appengine\HealthCheck
     {
     }
 }

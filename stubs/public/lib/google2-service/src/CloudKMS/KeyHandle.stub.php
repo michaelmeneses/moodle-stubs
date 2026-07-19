@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class KeyHandle extends \Google\Model
-{
-    /**
-     * Output only. Name of a CryptoKey that has been provisioned for Customer
-     * Managed Encryption Key (CMEK) use in the KeyHandle project and location for
-     * the requested resource type. The CryptoKey project will reflect the value
-     * configured in the AutokeyConfig on the resource project's ancestor folder
-     * at the time of the KeyHandle creation. If more than one ancestor folder has
-     * a configured AutokeyConfig, the nearest of these configurations is used.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Identifier. Name of the KeyHandle resource, e.g.
-     * `projects/{PROJECT_ID}/locations/{LOCATION}/keyHandles/{KEY_HANDLE_ID}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Indicates the resource type that the resulting CryptoKey is meant
-     * to protect, e.g. `{SERVICE}.googleapis.com/{TYPE}`. See documentation for
-     * supported resource types.
-     *
-     * @var string
-     */
-    public $resourceTypeSelector;
-    /**
-     * Output only. Name of a CryptoKey that has been provisioned for Customer
-     * Managed Encryption Key (CMEK) use in the KeyHandle project and location for
-     * the requested resource type. The CryptoKey project will reflect the value
-     * configured in the AutokeyConfig on the resource project's ancestor folder
-     * at the time of the KeyHandle creation. If more than one ancestor folder has
-     * a configured AutokeyConfig, the nearest of these configurations is used.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
+namespace Google\Service\CloudKMS {
+    class KeyHandle extends \Google\Model
     {
+        /**
+         * Output only. Name of a CryptoKey that has been provisioned for Customer
+         * Managed Encryption Key (CMEK) use in the KeyHandle project and location for
+         * the requested resource type. The CryptoKey project will reflect the value
+         * configured in the AutokeyConfig on the resource project's ancestor folder
+         * at the time of the KeyHandle creation. If more than one ancestor folder has
+         * a configured AutokeyConfig, the nearest of these configurations is used.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Identifier. Name of the KeyHandle resource, e.g.
+         * `projects/{PROJECT_ID}/locations/{LOCATION}/keyHandles/{KEY_HANDLE_ID}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Indicates the resource type that the resulting CryptoKey is meant
+         * to protect, e.g. `{SERVICE}.googleapis.com/{TYPE}`. See documentation for
+         * supported resource types.
+         *
+         * @var string
+         */
+        public $resourceTypeSelector;
+        /**
+         * Output only. Name of a CryptoKey that has been provisioned for Customer
+         * Managed Encryption Key (CMEK) use in the KeyHandle project and location for
+         * the requested resource type. The CryptoKey project will reflect the value
+         * configured in the AutokeyConfig on the resource project's ancestor folder
+         * at the time of the KeyHandle creation. If more than one ancestor folder has
+         * a configured AutokeyConfig, the nearest of these configurations is used.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
+        /**
+         * Identifier. Name of the KeyHandle resource, e.g.
+         * `projects/{PROJECT_ID}/locations/{LOCATION}/keyHandles/{KEY_HANDLE_ID}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Indicates the resource type that the resulting CryptoKey is meant
+         * to protect, e.g. `{SERVICE}.googleapis.com/{TYPE}`. See documentation for
+         * supported resource types.
+         *
+         * @param string $resourceTypeSelector
+         */
+        public function setResourceTypeSelector($resourceTypeSelector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceTypeSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\KeyHandle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKey()
-    {
-    }
-    /**
-     * Identifier. Name of the KeyHandle resource, e.g.
-     * `projects/{PROJECT_ID}/locations/{LOCATION}/keyHandles/{KEY_HANDLE_ID}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Indicates the resource type that the resulting CryptoKey is meant
-     * to protect, e.g. `{SERVICE}.googleapis.com/{TYPE}`. See documentation for
-     * supported resource types.
-     *
-     * @param string $resourceTypeSelector
-     */
-    public function setResourceTypeSelector($resourceTypeSelector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceTypeSelector()
+    class Google_Service_CloudKMS_KeyHandle extends \Google\Service\CloudKMS\KeyHandle
     {
     }
 }

@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableRow extends \Google\Collection
-{
-    protected $collection_key = 'tableCells';
-    /**
-     * The zero-based end index of this row, exclusive, in UTF-16 code units.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * The zero-based start index of this row, in UTF-16 code units.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A TableRow may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $suggestedTableRowStyleChangesType = SuggestedTableRowStyle::class;
-    protected $suggestedTableRowStyleChangesDataType = 'map';
-    protected $tableCellsType = TableCell::class;
-    protected $tableCellsDataType = 'array';
-    protected $tableRowStyleType = TableRowStyle::class;
-    protected $tableRowStyleDataType = '';
-    /**
-     * The zero-based end index of this row, exclusive, in UTF-16 code units.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Docs {
+    class TableRow extends \Google\Collection
     {
+        protected $collection_key = 'tableCells';
+        /**
+         * The zero-based end index of this row, exclusive, in UTF-16 code units.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * The zero-based start index of this row, in UTF-16 code units.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A TableRow may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $suggestedTableRowStyleChangesType = SuggestedTableRowStyle::class;
+        protected $suggestedTableRowStyleChangesDataType = 'map';
+        protected $tableCellsType = TableCell::class;
+        protected $tableCellsDataType = 'array';
+        protected $tableRowStyleType = TableRowStyle::class;
+        protected $tableRowStyleDataType = '';
+        /**
+         * The zero-based end index of this row, exclusive, in UTF-16 code units.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * The zero-based start index of this row, in UTF-16 code units.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A TableRow may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The suggested style changes to this row, keyed by suggestion ID.
+         *
+         * @param SuggestedTableRowStyle[] $suggestedTableRowStyleChanges
+         */
+        public function setSuggestedTableRowStyleChanges($suggestedTableRowStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedTableRowStyle[]
+         */
+        public function getSuggestedTableRowStyleChanges()
+        {
+        }
+        /**
+         * The contents and style of each cell in this row. It's possible for a table
+         * to be non-rectangular, so some rows may have a different number of cells
+         * than other rows in the same table.
+         *
+         * @param TableCell[] $tableCells
+         */
+        public function setTableCells($tableCells)
+        {
+        }
+        /**
+         * @return TableCell[]
+         */
+        public function getTableCells()
+        {
+        }
+        /**
+         * The style of the table row.
+         *
+         * @param TableRowStyle $tableRowStyle
+         */
+        public function setTableRowStyle(TableRowStyle $tableRowStyle)
+        {
+        }
+        /**
+         * @return TableRowStyle
+         */
+        public function getTableRowStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\TableRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * The zero-based start index of this row, in UTF-16 code units.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A TableRow may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The suggested style changes to this row, keyed by suggestion ID.
-     *
-     * @param SuggestedTableRowStyle[] $suggestedTableRowStyleChanges
-     */
-    public function setSuggestedTableRowStyleChanges($suggestedTableRowStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedTableRowStyle[]
-     */
-    public function getSuggestedTableRowStyleChanges()
-    {
-    }
-    /**
-     * The contents and style of each cell in this row. It's possible for a table
-     * to be non-rectangular, so some rows may have a different number of cells
-     * than other rows in the same table.
-     *
-     * @param TableCell[] $tableCells
-     */
-    public function setTableCells($tableCells)
-    {
-    }
-    /**
-     * @return TableCell[]
-     */
-    public function getTableCells()
-    {
-    }
-    /**
-     * The style of the table row.
-     *
-     * @param TableRowStyle $tableRowStyle
-     */
-    public function setTableRowStyle(TableRowStyle $tableRowStyle)
-    {
-    }
-    /**
-     * @return TableRowStyle
-     */
-    public function getTableRowStyle()
+    class Google_Service_Docs_TableRow extends \Google\Service\Docs\TableRow
     {
     }
 }

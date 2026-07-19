@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PostdeployJob extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    /**
-     * Output only. The custom actions that the postdeploy Job executes.
-     *
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * Output only. The custom actions that the postdeploy Job executes.
-     *
-     * @param string[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\CloudDeploy {
+    class PostdeployJob extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        /**
+         * Output only. The custom actions that the postdeploy Job executes.
+         *
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * Output only. The custom actions that the postdeploy Job executes.
+         *
+         * @param string[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\PostdeployJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
+    class Google_Service_CloudDeploy_PostdeployJob extends \Google\Service\CloudDeploy\PostdeployJob
     {
     }
 }

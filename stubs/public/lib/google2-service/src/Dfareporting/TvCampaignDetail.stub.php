@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TvCampaignDetail extends \Google\Collection
-{
-    protected $collection_key = 'timepoints';
-    /**
-     * ID of this TV campaign.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#tvCampaignSummary".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $timepointsType = TvCampaignTimepoint::class;
-    protected $timepointsDataType = 'array';
-    /**
-     * ID of this TV campaign.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dfareporting {
+    class TvCampaignDetail extends \Google\Collection
     {
+        protected $collection_key = 'timepoints';
+        /**
+         * ID of this TV campaign.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#tvCampaignSummary".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $timepointsType = TvCampaignTimepoint::class;
+        protected $timepointsDataType = 'array';
+        /**
+         * ID of this TV campaign.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#tvCampaignSummary".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The timepoints of the TV campaign.
+         *
+         * @param TvCampaignTimepoint[] $timepoints
+         */
+        public function setTimepoints($timepoints)
+        {
+        }
+        /**
+         * @return TvCampaignTimepoint[]
+         */
+        public function getTimepoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TvCampaignDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#tvCampaignSummary".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The timepoints of the TV campaign.
-     *
-     * @param TvCampaignTimepoint[] $timepoints
-     */
-    public function setTimepoints($timepoints)
-    {
-    }
-    /**
-     * @return TvCampaignTimepoint[]
-     */
-    public function getTimepoints()
+    class Google_Service_Dfareporting_TvCampaignDetail extends \Google\Service\Dfareporting\TvCampaignDetail
     {
     }
 }

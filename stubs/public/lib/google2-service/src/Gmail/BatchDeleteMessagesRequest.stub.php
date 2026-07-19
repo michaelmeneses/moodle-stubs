@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class BatchDeleteMessagesRequest extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * The IDs of the messages to delete.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * The IDs of the messages to delete.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
+namespace Google\Service\Gmail {
+    class BatchDeleteMessagesRequest extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * The IDs of the messages to delete.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * The IDs of the messages to delete.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Gmail\BatchDeleteMessagesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIds()
+    class Google_Service_Gmail_BatchDeleteMessagesRequest extends \Google\Service\Gmail\BatchDeleteMessagesRequest
     {
     }
 }

@@ -21,220 +21,229 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionDeploy extends \Google\Model
-{
-    /**
-     * Optional. The path to the directory containing the Model artifact and any
-     * of its supporting files.
-     *
-     * @var string
-     */
-    public $artifactUri;
-    protected $automaticResourcesType = GoogleCloudAiplatformV1AutomaticResources::class;
-    protected $automaticResourcesDataType = '';
-    protected $containerSpecType = GoogleCloudAiplatformV1ModelContainerSpec::class;
-    protected $containerSpecDataType = '';
-    protected $dedicatedResourcesType = GoogleCloudAiplatformV1DedicatedResources::class;
-    protected $dedicatedResourcesDataType = '';
-    protected $deployMetadataType = GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata::class;
-    protected $deployMetadataDataType = '';
-    /**
-     * Optional. The name of the deploy task (e.g., "text to image generation").
-     *
-     * @var string
-     */
-    public $deployTaskName;
-    protected $largeModelReferenceType = GoogleCloudAiplatformV1LargeModelReference::class;
-    protected $largeModelReferenceDataType = '';
-    /**
-     * Optional. Default model display name.
-     *
-     * @var string
-     */
-    public $modelDisplayName;
-    /**
-     * Optional. The signed URI for ephemeral Cloud Storage access to model
-     * artifact.
-     *
-     * @var string
-     */
-    public $publicArtifactUri;
-    /**
-     * The resource name of the shared DeploymentResourcePool to deploy on.
-     * Format: `projects/{project}/locations/{location}/deploymentResourcePools/{d
-     * eployment_resource_pool}`
-     *
-     * @var string
-     */
-    public $sharedResources;
-    /**
-     * Required. The title of the regional resource reference.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. The path to the directory containing the Model artifact and any
-     * of its supporting files.
-     *
-     * @param string $artifactUri
-     */
-    public function setArtifactUri($artifactUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionDeploy extends \Google\Model
     {
+        /**
+         * Optional. The path to the directory containing the Model artifact and any
+         * of its supporting files.
+         *
+         * @var string
+         */
+        public $artifactUri;
+        protected $automaticResourcesType = GoogleCloudAiplatformV1AutomaticResources::class;
+        protected $automaticResourcesDataType = '';
+        protected $containerSpecType = GoogleCloudAiplatformV1ModelContainerSpec::class;
+        protected $containerSpecDataType = '';
+        protected $dedicatedResourcesType = GoogleCloudAiplatformV1DedicatedResources::class;
+        protected $dedicatedResourcesDataType = '';
+        protected $deployMetadataType = GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata::class;
+        protected $deployMetadataDataType = '';
+        /**
+         * Optional. The name of the deploy task (e.g., "text to image generation").
+         *
+         * @var string
+         */
+        public $deployTaskName;
+        protected $largeModelReferenceType = GoogleCloudAiplatformV1LargeModelReference::class;
+        protected $largeModelReferenceDataType = '';
+        /**
+         * Optional. Default model display name.
+         *
+         * @var string
+         */
+        public $modelDisplayName;
+        /**
+         * Optional. The signed URI for ephemeral Cloud Storage access to model
+         * artifact.
+         *
+         * @var string
+         */
+        public $publicArtifactUri;
+        /**
+         * The resource name of the shared DeploymentResourcePool to deploy on.
+         * Format: `projects/{project}/locations/{location}/deploymentResourcePools/{d
+         * eployment_resource_pool}`
+         *
+         * @var string
+         */
+        public $sharedResources;
+        /**
+         * Required. The title of the regional resource reference.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. The path to the directory containing the Model artifact and any
+         * of its supporting files.
+         *
+         * @param string $artifactUri
+         */
+        public function setArtifactUri($artifactUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactUri()
+        {
+        }
+        /**
+         * A description of resources that to large degree are decided by Vertex AI,
+         * and require only a modest additional configuration.
+         *
+         * @param GoogleCloudAiplatformV1AutomaticResources $automaticResources
+         */
+        public function setAutomaticResources(GoogleCloudAiplatformV1AutomaticResources $automaticResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1AutomaticResources
+         */
+        public function getAutomaticResources()
+        {
+        }
+        /**
+         * Optional. The specification of the container that is to be used when
+         * deploying this Model in Vertex AI. Not present for Large Models.
+         *
+         * @param GoogleCloudAiplatformV1ModelContainerSpec $containerSpec
+         */
+        public function setContainerSpec(GoogleCloudAiplatformV1ModelContainerSpec $containerSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelContainerSpec
+         */
+        public function getContainerSpec()
+        {
+        }
+        /**
+         * A description of resources that are dedicated to the DeployedModel, and
+         * that need a higher degree of manual configuration.
+         *
+         * @param GoogleCloudAiplatformV1DedicatedResources $dedicatedResources
+         */
+        public function setDedicatedResources(GoogleCloudAiplatformV1DedicatedResources $dedicatedResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DedicatedResources
+         */
+        public function getDedicatedResources()
+        {
+        }
+        /**
+         * Optional. Metadata information about this deployment config.
+         *
+         * @param GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata $deployMetadata
+         */
+        public function setDeployMetadata(GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata $deployMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata
+         */
+        public function getDeployMetadata()
+        {
+        }
+        /**
+         * Optional. The name of the deploy task (e.g., "text to image generation").
+         *
+         * @param string $deployTaskName
+         */
+        public function setDeployTaskName($deployTaskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployTaskName()
+        {
+        }
+        /**
+         * Optional. Large model reference. When this is set, model_artifact_spec is
+         * not needed.
+         *
+         * @param GoogleCloudAiplatformV1LargeModelReference $largeModelReference
+         */
+        public function setLargeModelReference(GoogleCloudAiplatformV1LargeModelReference $largeModelReference)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1LargeModelReference
+         */
+        public function getLargeModelReference()
+        {
+        }
+        /**
+         * Optional. Default model display name.
+         *
+         * @param string $modelDisplayName
+         */
+        public function setModelDisplayName($modelDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelDisplayName()
+        {
+        }
+        /**
+         * Optional. The signed URI for ephemeral Cloud Storage access to model
+         * artifact.
+         *
+         * @param string $publicArtifactUri
+         */
+        public function setPublicArtifactUri($publicArtifactUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicArtifactUri()
+        {
+        }
+        /**
+         * The resource name of the shared DeploymentResourcePool to deploy on.
+         * Format: `projects/{project}/locations/{location}/deploymentResourcePools/{d
+         * eployment_resource_pool}`
+         *
+         * @param string $sharedResources
+         */
+        public function setSharedResources($sharedResources)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSharedResources()
+        {
+        }
+        /**
+         * Required. The title of the regional resource reference.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionDeploy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactUri()
-    {
-    }
-    /**
-     * A description of resources that to large degree are decided by Vertex AI,
-     * and require only a modest additional configuration.
-     *
-     * @param GoogleCloudAiplatformV1AutomaticResources $automaticResources
-     */
-    public function setAutomaticResources(GoogleCloudAiplatformV1AutomaticResources $automaticResources)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1AutomaticResources
-     */
-    public function getAutomaticResources()
-    {
-    }
-    /**
-     * Optional. The specification of the container that is to be used when
-     * deploying this Model in Vertex AI. Not present for Large Models.
-     *
-     * @param GoogleCloudAiplatformV1ModelContainerSpec $containerSpec
-     */
-    public function setContainerSpec(GoogleCloudAiplatformV1ModelContainerSpec $containerSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModelContainerSpec
-     */
-    public function getContainerSpec()
-    {
-    }
-    /**
-     * A description of resources that are dedicated to the DeployedModel, and
-     * that need a higher degree of manual configuration.
-     *
-     * @param GoogleCloudAiplatformV1DedicatedResources $dedicatedResources
-     */
-    public function setDedicatedResources(GoogleCloudAiplatformV1DedicatedResources $dedicatedResources)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DedicatedResources
-     */
-    public function getDedicatedResources()
-    {
-    }
-    /**
-     * Optional. Metadata information about this deployment config.
-     *
-     * @param GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata $deployMetadata
-     */
-    public function setDeployMetadata(GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata $deployMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PublisherModelCallToActionDeployDeployMetadata
-     */
-    public function getDeployMetadata()
-    {
-    }
-    /**
-     * Optional. The name of the deploy task (e.g., "text to image generation").
-     *
-     * @param string $deployTaskName
-     */
-    public function setDeployTaskName($deployTaskName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeployTaskName()
-    {
-    }
-    /**
-     * Optional. Large model reference. When this is set, model_artifact_spec is
-     * not needed.
-     *
-     * @param GoogleCloudAiplatformV1LargeModelReference $largeModelReference
-     */
-    public function setLargeModelReference(GoogleCloudAiplatformV1LargeModelReference $largeModelReference)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1LargeModelReference
-     */
-    public function getLargeModelReference()
-    {
-    }
-    /**
-     * Optional. Default model display name.
-     *
-     * @param string $modelDisplayName
-     */
-    public function setModelDisplayName($modelDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelDisplayName()
-    {
-    }
-    /**
-     * Optional. The signed URI for ephemeral Cloud Storage access to model
-     * artifact.
-     *
-     * @param string $publicArtifactUri
-     */
-    public function setPublicArtifactUri($publicArtifactUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicArtifactUri()
-    {
-    }
-    /**
-     * The resource name of the shared DeploymentResourcePool to deploy on.
-     * Format: `projects/{project}/locations/{location}/deploymentResourcePools/{d
-     * eployment_resource_pool}`
-     *
-     * @param string $sharedResources
-     */
-    public function setSharedResources($sharedResources)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSharedResources()
-    {
-    }
-    /**
-     * Required. The title of the regional resource reference.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionDeploy extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionDeploy
     {
     }
 }

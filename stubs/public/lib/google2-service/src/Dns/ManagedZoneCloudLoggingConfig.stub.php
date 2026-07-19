@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZoneCloudLoggingConfig extends \Google\Model
-{
-    /**
-     * If set, enable query logging for this ManagedZone. False by default, making
-     * logging opt-in.
-     *
-     * @var bool
-     */
-    public $enableLogging;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * If set, enable query logging for this ManagedZone. False by default, making
-     * logging opt-in.
-     *
-     * @param bool $enableLogging
-     */
-    public function setEnableLogging($enableLogging)
+namespace Google\Service\Dns {
+    class ManagedZoneCloudLoggingConfig extends \Google\Model
     {
+        /**
+         * If set, enable query logging for this ManagedZone. False by default, making
+         * logging opt-in.
+         *
+         * @var bool
+         */
+        public $enableLogging;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * If set, enable query logging for this ManagedZone. False by default, making
+         * logging opt-in.
+         *
+         * @param bool $enableLogging
+         */
+        public function setEnableLogging($enableLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableLogging()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dns\ManagedZoneCloudLoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableLogging()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dns_ManagedZoneCloudLoggingConfig extends \Google\Service\Dns\ManagedZoneCloudLoggingConfig
     {
     }
 }

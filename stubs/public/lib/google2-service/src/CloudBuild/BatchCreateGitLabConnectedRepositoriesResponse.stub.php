@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BatchCreateGitLabConnectedRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'gitlabConnectedRepositories';
-    protected $gitlabConnectedRepositoriesType = GitLabConnectedRepository::class;
-    protected $gitlabConnectedRepositoriesDataType = 'array';
-    /**
-     * @param GitLabConnectedRepository[]
-     */
-    public function setGitlabConnectedRepositories($gitlabConnectedRepositories)
+namespace Google\Service\CloudBuild {
+    class BatchCreateGitLabConnectedRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'gitlabConnectedRepositories';
+        protected $gitlabConnectedRepositoriesType = GitLabConnectedRepository::class;
+        protected $gitlabConnectedRepositoriesDataType = 'array';
+        /**
+         * @param GitLabConnectedRepository[]
+         */
+        public function setGitlabConnectedRepositories($gitlabConnectedRepositories)
+        {
+        }
+        /**
+         * @return GitLabConnectedRepository[]
+         */
+        public function getGitlabConnectedRepositories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabConnectedRepository[]
+     * Runtime class alias of \Google\Service\CloudBuild\BatchCreateGitLabConnectedRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitlabConnectedRepositories()
+    class Google_Service_CloudBuild_BatchCreateGitLabConnectedRepositoriesResponse extends \Google\Service\CloudBuild\BatchCreateGitLabConnectedRepositoriesResponse
     {
     }
 }

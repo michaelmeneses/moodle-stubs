@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DiskEncryptionConfiguration extends \Google\Model
-{
-    /**
-     * This is always `sql#diskEncryptionConfiguration`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Resource name of KMS key for disk encryption
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * This is always `sql#diskEncryptionConfiguration`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class DiskEncryptionConfiguration extends \Google\Model
     {
+        /**
+         * This is always `sql#diskEncryptionConfiguration`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Resource name of KMS key for disk encryption
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * This is always `sql#diskEncryptionConfiguration`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Resource name of KMS key for disk encryption
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\DiskEncryptionConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Resource name of KMS key for disk encryption
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
+    class Google_Service_SQLAdmin_DiskEncryptionConfiguration extends \Google\Service\SQLAdmin\DiskEncryptionConfiguration
     {
     }
 }

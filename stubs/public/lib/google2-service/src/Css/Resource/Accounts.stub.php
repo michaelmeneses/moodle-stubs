@@ -21,72 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cssService = new Google\Service\Css(...);
- *   $accounts = $cssService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\Css\Resource {
+    use Google\Service\Css\Account;
+    use Google\Service\Css\ListChildAccountsResponse;
+    use Google\Service\Css\UpdateAccountLabelsRequest;
     /**
-     * Retrieves a single CSS/MC account by ID. (accounts.get)
-     *
-     * @param string $name Required. The name of the managed CSS/MC account. Format:
-     * accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string parent Optional. Only required when retrieving MC account
-     * information. The CSS domain that is the parent resource of the MC account.
-     * Format: accounts/{account}
-     * @return Account
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cssService = new Google\Service\Css(...);
+     *   $accounts = $cssService->accounts;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a single CSS/MC account by ID. (accounts.get)
+         *
+         * @param string $name Required. The name of the managed CSS/MC account. Format:
+         * accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string parent Optional. Only required when retrieving MC account
+         * information. The CSS domain that is the parent resource of the MC account.
+         * Format: accounts/{account}
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the accounts under the specified CSS account ID, and optionally
+         * filters by label ID and account name. (accounts.listChildAccounts)
+         *
+         * @param string $parent Required. The parent account. Must be a CSS group or
+         * domain. Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fullName If set, only the MC accounts with the given name
+         * (case sensitive) will be returned.
+         * @opt_param string labelId If set, only the MC accounts with the given label
+         * ID will be returned.
+         * @opt_param int pageSize Optional. The maximum number of accounts to return.
+         * The service may return fewer than this value. If unspecified, at most 50
+         * accounts will be returned. The maximum value is 100; values above 100 will be
+         * coerced to 100.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListChildAccounts` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListChildAccounts` must match
+         * the call that provided the page token.
+         * @return ListChildAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listChildAccounts($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates labels assigned to CSS/MC accounts by a CSS domain.
+         * (accounts.updateLabels)
+         *
+         * @param string $name Required. The label resource name. Format:
+         * accounts/{account}
+         * @param UpdateAccountLabelsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function updateLabels($name, UpdateAccountLabelsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the accounts under the specified CSS account ID, and optionally
-     * filters by label ID and account name. (accounts.listChildAccounts)
-     *
-     * @param string $parent Required. The parent account. Must be a CSS group or
-     * domain. Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fullName If set, only the MC accounts with the given name
-     * (case sensitive) will be returned.
-     * @opt_param string labelId If set, only the MC accounts with the given label
-     * ID will be returned.
-     * @opt_param int pageSize Optional. The maximum number of accounts to return.
-     * The service may return fewer than this value. If unspecified, at most 50
-     * accounts will be returned. The maximum value is 100; values above 100 will be
-     * coerced to 100.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListChildAccounts` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListChildAccounts` must match
-     * the call that provided the page token.
-     * @return ListChildAccountsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Css\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listChildAccounts($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates labels assigned to CSS/MC accounts by a CSS domain.
-     * (accounts.updateLabels)
-     *
-     * @param string $name Required. The label resource name. Format:
-     * accounts/{account}
-     * @param UpdateAccountLabelsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Account
-     * @throws \Google\Service\Exception
-     */
-    public function updateLabels($name, UpdateAccountLabelsRequest $postBody, $optParams = [])
+    class Google_Service_Css_Resource_Accounts extends \Google\Service\Css\Resource\Accounts
     {
     }
 }

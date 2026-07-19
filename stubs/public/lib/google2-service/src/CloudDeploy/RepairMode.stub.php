@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RepairMode extends \Google\Model
-{
-    protected $retryType = Retry::class;
-    protected $retryDataType = '';
-    protected $rollbackType = Rollback::class;
-    protected $rollbackDataType = '';
-    /**
-     * @param Retry
-     */
-    public function setRetry(Retry $retry)
+namespace Google\Service\CloudDeploy {
+    class RepairMode extends \Google\Model
     {
+        protected $retryType = Retry::class;
+        protected $retryDataType = '';
+        protected $rollbackType = Rollback::class;
+        protected $rollbackDataType = '';
+        /**
+         * @param Retry
+         */
+        public function setRetry(Retry $retry)
+        {
+        }
+        /**
+         * @return Retry
+         */
+        public function getRetry()
+        {
+        }
+        /**
+         * @param Rollback
+         */
+        public function setRollback(Rollback $rollback)
+        {
+        }
+        /**
+         * @return Rollback
+         */
+        public function getRollback()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Retry
+     * Runtime class alias of \Google\Service\CloudDeploy\RepairMode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetry()
-    {
-    }
-    /**
-     * @param Rollback
-     */
-    public function setRollback(Rollback $rollback)
-    {
-    }
-    /**
-     * @return Rollback
-     */
-    public function getRollback()
+    class Google_Service_CloudDeploy_RepairMode extends \Google\Service\CloudDeploy\RepairMode
     {
     }
 }

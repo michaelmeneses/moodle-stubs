@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TargetWindow extends \Google\Model
-{
-    /**
-     * Open up a new window to display the backup image Corresponds to "_blank" in
-     * html
-     */
-    public const TARGET_WINDOW_OPTION_NEW_WINDOW = 'NEW_WINDOW';
-    /**
-     * Use the current window to display the backup image Corresponds to "_top" in
-     * html
-     */
-    public const TARGET_WINDOW_OPTION_CURRENT_WINDOW = 'CURRENT_WINDOW';
-    /**
-     * User-defined HTML used to display the backup image Corresponds to "other"
-     */
-    public const TARGET_WINDOW_OPTION_CUSTOM = 'CUSTOM';
-    /**
-     * User-entered value.
-     *
-     * @var string
-     */
-    public $customHtml;
-    /**
-     * Type of browser window for which the backup image of the flash creative can
-     * be displayed.
-     *
-     * @var string
-     */
-    public $targetWindowOption;
-    /**
-     * User-entered value.
-     *
-     * @param string $customHtml
-     */
-    public function setCustomHtml($customHtml)
+namespace Google\Service\Dfareporting {
+    class TargetWindow extends \Google\Model
     {
+        /**
+         * Open up a new window to display the backup image Corresponds to "_blank" in
+         * html
+         */
+        public const TARGET_WINDOW_OPTION_NEW_WINDOW = 'NEW_WINDOW';
+        /**
+         * Use the current window to display the backup image Corresponds to "_top" in
+         * html
+         */
+        public const TARGET_WINDOW_OPTION_CURRENT_WINDOW = 'CURRENT_WINDOW';
+        /**
+         * User-defined HTML used to display the backup image Corresponds to "other"
+         */
+        public const TARGET_WINDOW_OPTION_CUSTOM = 'CUSTOM';
+        /**
+         * User-entered value.
+         *
+         * @var string
+         */
+        public $customHtml;
+        /**
+         * Type of browser window for which the backup image of the flash creative can
+         * be displayed.
+         *
+         * @var string
+         */
+        public $targetWindowOption;
+        /**
+         * User-entered value.
+         *
+         * @param string $customHtml
+         */
+        public function setCustomHtml($customHtml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomHtml()
+        {
+        }
+        /**
+         * Type of browser window for which the backup image of the flash creative can
+         * be displayed.
+         *
+         * Accepted values: NEW_WINDOW, CURRENT_WINDOW, CUSTOM
+         *
+         * @param self::TARGET_WINDOW_OPTION_* $targetWindowOption
+         */
+        public function setTargetWindowOption($targetWindowOption)
+        {
+        }
+        /**
+         * @return self::TARGET_WINDOW_OPTION_*
+         */
+        public function getTargetWindowOption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TargetWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomHtml()
-    {
-    }
-    /**
-     * Type of browser window for which the backup image of the flash creative can
-     * be displayed.
-     *
-     * Accepted values: NEW_WINDOW, CURRENT_WINDOW, CUSTOM
-     *
-     * @param self::TARGET_WINDOW_OPTION_* $targetWindowOption
-     */
-    public function setTargetWindowOption($targetWindowOption)
-    {
-    }
-    /**
-     * @return self::TARGET_WINDOW_OPTION_*
-     */
-    public function getTargetWindowOption()
+    class Google_Service_Dfareporting_TargetWindow extends \Google\Service\Dfareporting\TargetWindow
     {
     }
 }

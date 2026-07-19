@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1DeniedAccessAccessTuple extends \Google\Model
-{
-    protected $accessType = GoogleCloudAssetV1DeniedAccessAccess::class;
-    protected $accessDataType = '';
-    protected $identityType = GoogleCloudAssetV1DeniedAccessIdentity::class;
-    protected $identityDataType = '';
-    protected $resourceType = GoogleCloudAssetV1DeniedAccessResource::class;
-    protected $resourceDataType = '';
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessAccess
-     */
-    public function setAccess(GoogleCloudAssetV1DeniedAccessAccess $access)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1DeniedAccessAccessTuple extends \Google\Model
     {
+        protected $accessType = GoogleCloudAssetV1DeniedAccessAccess::class;
+        protected $accessDataType = '';
+        protected $identityType = GoogleCloudAssetV1DeniedAccessIdentity::class;
+        protected $identityDataType = '';
+        protected $resourceType = GoogleCloudAssetV1DeniedAccessResource::class;
+        protected $resourceDataType = '';
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessAccess
+         */
+        public function setAccess(GoogleCloudAssetV1DeniedAccessAccess $access)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessAccess
+         */
+        public function getAccess()
+        {
+        }
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessIdentity
+         */
+        public function setIdentity(GoogleCloudAssetV1DeniedAccessIdentity $identity)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessIdentity
+         */
+        public function getIdentity()
+        {
+        }
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessResource
+         */
+        public function setResource(GoogleCloudAssetV1DeniedAccessResource $resource)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessResource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1DeniedAccessAccess
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessAccessTuple registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccess()
-    {
-    }
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessIdentity
-     */
-    public function setIdentity(GoogleCloudAssetV1DeniedAccessIdentity $identity)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1DeniedAccessIdentity
-     */
-    public function getIdentity()
-    {
-    }
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessResource
-     */
-    public function setResource(GoogleCloudAssetV1DeniedAccessResource $resource)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1DeniedAccessResource
-     */
-    public function getResource()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1DeniedAccessAccessTuple extends \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessAccessTuple
     {
     }
 }

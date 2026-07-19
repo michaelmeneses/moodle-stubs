@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class ResourceSelector extends \Google\Collection
-{
-    protected $collection_key = 'resourceTypes';
-    /**
-     * Required. The resource types to run the detector on. Each custom module can
-     * specify up to 5 resource types.
-     *
-     * @var string[]
-     */
-    public $resourceTypes;
-    /**
-     * Required. The resource types to run the detector on. Each custom module can
-     * specify up to 5 resource types.
-     *
-     * @param string[] $resourceTypes
-     */
-    public function setResourceTypes($resourceTypes)
+namespace Google\Service\SecurityPosture {
+    class ResourceSelector extends \Google\Collection
     {
+        protected $collection_key = 'resourceTypes';
+        /**
+         * Required. The resource types to run the detector on. Each custom module can
+         * specify up to 5 resource types.
+         *
+         * @var string[]
+         */
+        public $resourceTypes;
+        /**
+         * Required. The resource types to run the detector on. Each custom module can
+         * specify up to 5 resource types.
+         *
+         * @param string[] $resourceTypes
+         */
+        public function setResourceTypes($resourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityPosture\ResourceSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceTypes()
+    class Google_Service_SecurityPosture_ResourceSelector extends \Google\Service\SecurityPosture\ResourceSelector
     {
     }
 }

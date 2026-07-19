@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmCapabilities extends \Google\Collection
-{
-    protected $collection_key = 'osCapabilities';
-    /**
-     * Output only. The last time OS capabilities list was updated.
-     *
-     * @var string
-     */
-    public $lastOsCapabilitiesUpdateTime;
-    /**
-     * Output only. Unordered list. List of certain VM OS capabilities needed for
-     * some Compute Engine features.
-     *
-     * @var string[]
-     */
-    public $osCapabilities;
-    /**
-     * Output only. The last time OS capabilities list was updated.
-     *
-     * @param string $lastOsCapabilitiesUpdateTime
-     */
-    public function setLastOsCapabilitiesUpdateTime($lastOsCapabilitiesUpdateTime)
+namespace Google\Service\VMMigrationService {
+    class VmCapabilities extends \Google\Collection
     {
+        protected $collection_key = 'osCapabilities';
+        /**
+         * Output only. The last time OS capabilities list was updated.
+         *
+         * @var string
+         */
+        public $lastOsCapabilitiesUpdateTime;
+        /**
+         * Output only. Unordered list. List of certain VM OS capabilities needed for
+         * some Compute Engine features.
+         *
+         * @var string[]
+         */
+        public $osCapabilities;
+        /**
+         * Output only. The last time OS capabilities list was updated.
+         *
+         * @param string $lastOsCapabilitiesUpdateTime
+         */
+        public function setLastOsCapabilitiesUpdateTime($lastOsCapabilitiesUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastOsCapabilitiesUpdateTime()
+        {
+        }
+        /**
+         * Output only. Unordered list. List of certain VM OS capabilities needed for
+         * some Compute Engine features.
+         *
+         * @param string[] $osCapabilities
+         */
+        public function setOsCapabilities($osCapabilities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOsCapabilities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\VmCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastOsCapabilitiesUpdateTime()
-    {
-    }
-    /**
-     * Output only. Unordered list. List of certain VM OS capabilities needed for
-     * some Compute Engine features.
-     *
-     * @param string[] $osCapabilities
-     */
-    public function setOsCapabilities($osCapabilities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOsCapabilities()
+    class Google_Service_VMMigrationService_VmCapabilities extends \Google\Service\VMMigrationService\VmCapabilities
     {
     }
 }

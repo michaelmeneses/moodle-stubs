@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Hcx extends \Google\Model
-{
-    /**
-     * Unspecified appliance state. This is the default value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The appliance is operational and can be used.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The appliance is being deployed.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The appliance is being activated.
-     */
-    public const STATE_ACTIVATING = 'ACTIVATING';
-    /**
-     * Fully qualified domain name of the appliance.
-     *
-     * @var string
-     */
-    public $fqdn;
-    /**
-     * Internal IP address of the appliance.
-     *
-     * @var string
-     */
-    public $internalIp;
-    /**
-     * Output only. The state of the appliance.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Version of the appliance.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Fully qualified domain name of the appliance.
-     *
-     * @param string $fqdn
-     */
-    public function setFqdn($fqdn)
+namespace Google\Service\VMwareEngine {
+    class Hcx extends \Google\Model
     {
+        /**
+         * Unspecified appliance state. This is the default value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The appliance is operational and can be used.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The appliance is being deployed.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The appliance is being activated.
+         */
+        public const STATE_ACTIVATING = 'ACTIVATING';
+        /**
+         * Fully qualified domain name of the appliance.
+         *
+         * @var string
+         */
+        public $fqdn;
+        /**
+         * Internal IP address of the appliance.
+         *
+         * @var string
+         */
+        public $internalIp;
+        /**
+         * Output only. The state of the appliance.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Version of the appliance.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Fully qualified domain name of the appliance.
+         *
+         * @param string $fqdn
+         */
+        public function setFqdn($fqdn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFqdn()
+        {
+        }
+        /**
+         * Internal IP address of the appliance.
+         *
+         * @param string $internalIp
+         */
+        public function setInternalIp($internalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalIp()
+        {
+        }
+        /**
+         * Output only. The state of the appliance.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, ACTIVATING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Version of the appliance.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\Hcx registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFqdn()
-    {
-    }
-    /**
-     * Internal IP address of the appliance.
-     *
-     * @param string $internalIp
-     */
-    public function setInternalIp($internalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalIp()
-    {
-    }
-    /**
-     * Output only. The state of the appliance.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, ACTIVATING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Version of the appliance.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_VMwareEngine_Hcx extends \Google\Service\VMwareEngine\Hcx
     {
     }
 }

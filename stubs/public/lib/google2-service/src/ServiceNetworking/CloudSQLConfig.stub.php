@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class CloudSQLConfig extends \Google\Model
-{
-    /**
-     * Required. Peering service used for peering with the Cloud SQL project.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Required. The name of the umbrella network in the Cloud SQL umbrella
-     * project.
-     *
-     * @var string
-     */
-    public $umbrellaNetwork;
-    /**
-     * Required. The project number of the Cloud SQL umbrella project.
-     *
-     * @var string
-     */
-    public $umbrellaProject;
-    /**
-     * Required. Peering service used for peering with the Cloud SQL project.
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\ServiceNetworking {
+    class CloudSQLConfig extends \Google\Model
     {
+        /**
+         * Required. Peering service used for peering with the Cloud SQL project.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Required. The name of the umbrella network in the Cloud SQL umbrella
+         * project.
+         *
+         * @var string
+         */
+        public $umbrellaNetwork;
+        /**
+         * Required. The project number of the Cloud SQL umbrella project.
+         *
+         * @var string
+         */
+        public $umbrellaProject;
+        /**
+         * Required. Peering service used for peering with the Cloud SQL project.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Required. The name of the umbrella network in the Cloud SQL umbrella
+         * project.
+         *
+         * @param string $umbrellaNetwork
+         */
+        public function setUmbrellaNetwork($umbrellaNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUmbrellaNetwork()
+        {
+        }
+        /**
+         * Required. The project number of the Cloud SQL umbrella project.
+         *
+         * @param string $umbrellaProject
+         */
+        public function setUmbrellaProject($umbrellaProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUmbrellaProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\CloudSQLConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
-    {
-    }
-    /**
-     * Required. The name of the umbrella network in the Cloud SQL umbrella
-     * project.
-     *
-     * @param string $umbrellaNetwork
-     */
-    public function setUmbrellaNetwork($umbrellaNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUmbrellaNetwork()
-    {
-    }
-    /**
-     * Required. The project number of the Cloud SQL umbrella project.
-     *
-     * @param string $umbrellaProject
-     */
-    public function setUmbrellaProject($umbrellaProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUmbrellaProject()
+    class Google_Service_ServiceNetworking_CloudSQLConfig extends \Google\Service\ServiceNetworking\CloudSQLConfig
     {
     }
 }

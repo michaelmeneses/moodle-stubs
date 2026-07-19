@@ -21,354 +21,363 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class Stream extends \Google\Collection
-{
-    /**
-     * Unspecified stream state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The stream has been created but has not yet started streaming data.
-     */
-    public const STATE_NOT_STARTED = 'NOT_STARTED';
-    /**
-     * The stream is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The stream is paused.
-     */
-    public const STATE_PAUSED = 'PAUSED';
-    /**
-     * The stream is in maintenance mode. Updates are rejected on the resource in
-     * this state.
-     */
-    public const STATE_MAINTENANCE = 'MAINTENANCE';
-    /**
-     * The stream is experiencing an error that is preventing data from being
-     * streamed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The stream has experienced a terminal failure.
-     */
-    public const STATE_FAILED_PERMANENTLY = 'FAILED_PERMANENTLY';
-    /**
-     * The stream is starting, but not yet running.
-     */
-    public const STATE_STARTING = 'STARTING';
-    /**
-     * The Stream is no longer reading new events, but still writing events in the
-     * buffer.
-     */
-    public const STATE_DRAINING = 'DRAINING';
-    protected $collection_key = 'ruleSets';
-    protected $backfillAllType = BackfillAllStrategy::class;
-    protected $backfillAllDataType = '';
-    protected $backfillNoneType = BackfillNoneStrategy::class;
-    protected $backfillNoneDataType = '';
-    /**
-     * Output only. The creation time of the stream.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Immutable. A reference to a KMS encryption key. If provided, it will be
-     * used to encrypt the data. If left blank, data will be encrypted using an
-     * internal Stream-specific encryption key provisioned through KMS.
-     *
-     * @var string
-     */
-    public $customerManagedEncryptionKey;
-    protected $destinationConfigType = DestinationConfig::class;
-    protected $destinationConfigDataType = '';
-    /**
-     * Required. Display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. If the stream was recovered, the time of the last recovery.
-     * Note: This field is currently experimental.
-     *
-     * @var string
-     */
-    public $lastRecoveryTime;
-    /**
-     * Output only. Identifier. The stream's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $ruleSetsType = RuleSet::class;
-    protected $ruleSetsDataType = 'array';
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    protected $sourceConfigType = SourceConfig::class;
-    protected $sourceConfigDataType = '';
-    /**
-     * The state of the stream.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The last update time of the stream.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Automatically backfill objects included in the stream source configuration.
-     * Specific objects can be excluded.
-     *
-     * @param BackfillAllStrategy $backfillAll
-     */
-    public function setBackfillAll(BackfillAllStrategy $backfillAll)
+namespace Google\Service\Datastream {
+    class Stream extends \Google\Collection
     {
+        /**
+         * Unspecified stream state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The stream has been created but has not yet started streaming data.
+         */
+        public const STATE_NOT_STARTED = 'NOT_STARTED';
+        /**
+         * The stream is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The stream is paused.
+         */
+        public const STATE_PAUSED = 'PAUSED';
+        /**
+         * The stream is in maintenance mode. Updates are rejected on the resource in
+         * this state.
+         */
+        public const STATE_MAINTENANCE = 'MAINTENANCE';
+        /**
+         * The stream is experiencing an error that is preventing data from being
+         * streamed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The stream has experienced a terminal failure.
+         */
+        public const STATE_FAILED_PERMANENTLY = 'FAILED_PERMANENTLY';
+        /**
+         * The stream is starting, but not yet running.
+         */
+        public const STATE_STARTING = 'STARTING';
+        /**
+         * The Stream is no longer reading new events, but still writing events in the
+         * buffer.
+         */
+        public const STATE_DRAINING = 'DRAINING';
+        protected $collection_key = 'ruleSets';
+        protected $backfillAllType = BackfillAllStrategy::class;
+        protected $backfillAllDataType = '';
+        protected $backfillNoneType = BackfillNoneStrategy::class;
+        protected $backfillNoneDataType = '';
+        /**
+         * Output only. The creation time of the stream.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Immutable. A reference to a KMS encryption key. If provided, it will be
+         * used to encrypt the data. If left blank, data will be encrypted using an
+         * internal Stream-specific encryption key provisioned through KMS.
+         *
+         * @var string
+         */
+        public $customerManagedEncryptionKey;
+        protected $destinationConfigType = DestinationConfig::class;
+        protected $destinationConfigDataType = '';
+        /**
+         * Required. Display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. If the stream was recovered, the time of the last recovery.
+         * Note: This field is currently experimental.
+         *
+         * @var string
+         */
+        public $lastRecoveryTime;
+        /**
+         * Output only. Identifier. The stream's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $ruleSetsType = RuleSet::class;
+        protected $ruleSetsDataType = 'array';
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        protected $sourceConfigType = SourceConfig::class;
+        protected $sourceConfigDataType = '';
+        /**
+         * The state of the stream.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The last update time of the stream.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Automatically backfill objects included in the stream source configuration.
+         * Specific objects can be excluded.
+         *
+         * @param BackfillAllStrategy $backfillAll
+         */
+        public function setBackfillAll(BackfillAllStrategy $backfillAll)
+        {
+        }
+        /**
+         * @return BackfillAllStrategy
+         */
+        public function getBackfillAll()
+        {
+        }
+        /**
+         * Do not automatically backfill any objects.
+         *
+         * @param BackfillNoneStrategy $backfillNone
+         */
+        public function setBackfillNone(BackfillNoneStrategy $backfillNone)
+        {
+        }
+        /**
+         * @return BackfillNoneStrategy
+         */
+        public function getBackfillNone()
+        {
+        }
+        /**
+         * Output only. The creation time of the stream.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Immutable. A reference to a KMS encryption key. If provided, it will be
+         * used to encrypt the data. If left blank, data will be encrypted using an
+         * internal Stream-specific encryption key provisioned through KMS.
+         *
+         * @param string $customerManagedEncryptionKey
+         */
+        public function setCustomerManagedEncryptionKey($customerManagedEncryptionKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerManagedEncryptionKey()
+        {
+        }
+        /**
+         * Required. Destination connection profile configuration.
+         *
+         * @param DestinationConfig $destinationConfig
+         */
+        public function setDestinationConfig(DestinationConfig $destinationConfig)
+        {
+        }
+        /**
+         * @return DestinationConfig
+         */
+        public function getDestinationConfig()
+        {
+        }
+        /**
+         * Required. Display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Errors on the Stream.
+         *
+         * @param Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. If the stream was recovered, the time of the last recovery.
+         * Note: This field is currently experimental.
+         *
+         * @param string $lastRecoveryTime
+         */
+        public function setLastRecoveryTime($lastRecoveryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRecoveryTime()
+        {
+        }
+        /**
+         * Output only. Identifier. The stream's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Rule sets to apply to the stream.
+         *
+         * @param RuleSet[] $ruleSets
+         */
+        public function setRuleSets($ruleSets)
+        {
+        }
+        /**
+         * @return RuleSet[]
+         */
+        public function getRuleSets()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Required. Source connection profile configuration.
+         *
+         * @param SourceConfig $sourceConfig
+         */
+        public function setSourceConfig(SourceConfig $sourceConfig)
+        {
+        }
+        /**
+         * @return SourceConfig
+         */
+        public function getSourceConfig()
+        {
+        }
+        /**
+         * The state of the stream.
+         *
+         * Accepted values: STATE_UNSPECIFIED, NOT_STARTED, RUNNING, PAUSED,
+         * MAINTENANCE, FAILED, FAILED_PERMANENTLY, STARTING, DRAINING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The last update time of the stream.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackfillAllStrategy
+     * Runtime class alias of \Google\Service\Datastream\Stream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackfillAll()
-    {
-    }
-    /**
-     * Do not automatically backfill any objects.
-     *
-     * @param BackfillNoneStrategy $backfillNone
-     */
-    public function setBackfillNone(BackfillNoneStrategy $backfillNone)
-    {
-    }
-    /**
-     * @return BackfillNoneStrategy
-     */
-    public function getBackfillNone()
-    {
-    }
-    /**
-     * Output only. The creation time of the stream.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Immutable. A reference to a KMS encryption key. If provided, it will be
-     * used to encrypt the data. If left blank, data will be encrypted using an
-     * internal Stream-specific encryption key provisioned through KMS.
-     *
-     * @param string $customerManagedEncryptionKey
-     */
-    public function setCustomerManagedEncryptionKey($customerManagedEncryptionKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerManagedEncryptionKey()
-    {
-    }
-    /**
-     * Required. Destination connection profile configuration.
-     *
-     * @param DestinationConfig $destinationConfig
-     */
-    public function setDestinationConfig(DestinationConfig $destinationConfig)
-    {
-    }
-    /**
-     * @return DestinationConfig
-     */
-    public function getDestinationConfig()
-    {
-    }
-    /**
-     * Required. Display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Errors on the Stream.
-     *
-     * @param Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Error[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. If the stream was recovered, the time of the last recovery.
-     * Note: This field is currently experimental.
-     *
-     * @param string $lastRecoveryTime
-     */
-    public function setLastRecoveryTime($lastRecoveryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRecoveryTime()
-    {
-    }
-    /**
-     * Output only. Identifier. The stream's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Rule sets to apply to the stream.
-     *
-     * @param RuleSet[] $ruleSets
-     */
-    public function setRuleSets($ruleSets)
-    {
-    }
-    /**
-     * @return RuleSet[]
-     */
-    public function getRuleSets()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Required. Source connection profile configuration.
-     *
-     * @param SourceConfig $sourceConfig
-     */
-    public function setSourceConfig(SourceConfig $sourceConfig)
-    {
-    }
-    /**
-     * @return SourceConfig
-     */
-    public function getSourceConfig()
-    {
-    }
-    /**
-     * The state of the stream.
-     *
-     * Accepted values: STATE_UNSPECIFIED, NOT_STARTED, RUNNING, PAUSED,
-     * MAINTENANCE, FAILED, FAILED_PERMANENTLY, STARTING, DRAINING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The last update time of the stream.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Datastream_Stream extends \Google\Service\Datastream\Stream
     {
     }
 }

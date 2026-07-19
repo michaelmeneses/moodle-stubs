@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlGtidPosition extends \Google\Model
-{
-    /**
-     * Required. The gtid set to start replication from.
-     *
-     * @var string
-     */
-    public $gtidSet;
-    /**
-     * Required. The gtid set to start replication from.
-     *
-     * @param string $gtidSet
-     */
-    public function setGtidSet($gtidSet)
+namespace Google\Service\Datastream {
+    class MysqlGtidPosition extends \Google\Model
     {
+        /**
+         * Required. The gtid set to start replication from.
+         *
+         * @var string
+         */
+        public $gtidSet;
+        /**
+         * Required. The gtid set to start replication from.
+         *
+         * @param string $gtidSet
+         */
+        public function setGtidSet($gtidSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGtidSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MysqlGtidPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGtidSet()
+    class Google_Service_Datastream_MysqlGtidPosition extends \Google\Service\Datastream\MysqlGtidPosition
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SectionColumnProperties extends \Google\Model
-{
-    protected $paddingEndType = Dimension::class;
-    protected $paddingEndDataType = '';
-    protected $widthType = Dimension::class;
-    protected $widthDataType = '';
-    /**
-     * The padding at the end of the column.
-     *
-     * @param Dimension $paddingEnd
-     */
-    public function setPaddingEnd(Dimension $paddingEnd)
+namespace Google\Service\Docs {
+    class SectionColumnProperties extends \Google\Model
     {
+        protected $paddingEndType = Dimension::class;
+        protected $paddingEndDataType = '';
+        protected $widthType = Dimension::class;
+        protected $widthDataType = '';
+        /**
+         * The padding at the end of the column.
+         *
+         * @param Dimension $paddingEnd
+         */
+        public function setPaddingEnd(Dimension $paddingEnd)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getPaddingEnd()
+        {
+        }
+        /**
+         * Output only. The width of the column.
+         *
+         * @param Dimension $width
+         */
+        public function setWidth(Dimension $width)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Docs\SectionColumnProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPaddingEnd()
-    {
-    }
-    /**
-     * Output only. The width of the column.
-     *
-     * @param Dimension $width
-     */
-    public function setWidth(Dimension $width)
-    {
-    }
-    /**
-     * @return Dimension
-     */
-    public function getWidth()
+    class Google_Service_Docs_SectionColumnProperties extends \Google\Service\Docs\SectionColumnProperties
     {
     }
 }

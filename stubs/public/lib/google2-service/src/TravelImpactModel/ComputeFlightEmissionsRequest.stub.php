@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class ComputeFlightEmissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'flights';
-    protected $flightsType = Flight::class;
-    protected $flightsDataType = 'array';
-    /**
-     * Required. Direct flights to return emission estimates for.
-     *
-     * @param Flight[] $flights
-     */
-    public function setFlights($flights)
+namespace Google\Service\TravelImpactModel {
+    class ComputeFlightEmissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'flights';
+        protected $flightsType = Flight::class;
+        protected $flightsDataType = 'array';
+        /**
+         * Required. Direct flights to return emission estimates for.
+         *
+         * @param Flight[] $flights
+         */
+        public function setFlights($flights)
+        {
+        }
+        /**
+         * @return Flight[]
+         */
+        public function getFlights()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Flight[]
+     * Runtime class alias of \Google\Service\TravelImpactModel\ComputeFlightEmissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlights()
+    class Google_Service_TravelImpactModel_ComputeFlightEmissionsRequest extends \Google\Service\TravelImpactModel\ComputeFlightEmissionsRequest
     {
     }
 }

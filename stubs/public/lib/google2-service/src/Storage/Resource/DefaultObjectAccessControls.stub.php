@@ -21,125 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage\Resource;
-
-/**
- * The "defaultObjectAccessControls" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storageService = new Google\Service\Storage(...);
- *   $defaultObjectAccessControls = $storageService->defaultObjectAccessControls;
- *  </code>
- */
-class DefaultObjectAccessControls extends \Google\Service\Resource
-{
+namespace Google\Service\Storage\Resource {
+    use Google\Service\Storage\ObjectAccessControl;
+    use Google\Service\Storage\ObjectAccessControls as ObjectAccessControlsModel;
     /**
-     * Permanently deletes the default object ACL entry for the specified entity on
-     * the specified bucket. (defaultObjectAccessControls.delete)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @throws \Google\Service\Exception
+     * The "defaultObjectAccessControls" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storageService = new Google\Service\Storage(...);
+     *   $defaultObjectAccessControls = $storageService->defaultObjectAccessControls;
+     *  </code>
      */
-    public function delete($bucket, $entity, $optParams = [])
+    class DefaultObjectAccessControls extends \Google\Service\Resource
     {
+        /**
+         * Permanently deletes the default object ACL entry for the specified entity on
+         * the specified bucket. (defaultObjectAccessControls.delete)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($bucket, $entity, $optParams = [])
+        {
+        }
+        /**
+         * Returns the default object ACL entry for the specified entity on the
+         * specified bucket. (defaultObjectAccessControls.get)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function get($bucket, $entity, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new default object ACL entry on the specified bucket.
+         * (defaultObjectAccessControls.insert)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param ObjectAccessControl $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function insert($bucket, ObjectAccessControl $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves default object ACL entries on the specified bucket.
+         * (defaultObjectAccessControls.listDefaultObjectAccessControls)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ifMetagenerationMatch If present, only return default ACL
+         * listing if the bucket's current metageneration matches this value.
+         * @opt_param string ifMetagenerationNotMatch If present, only return default
+         * ACL listing if the bucket's current metageneration does not match the given
+         * value.
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControlsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listDefaultObjectAccessControls($bucket, $optParams = [])
+        {
+        }
+        /**
+         * Patches a default object ACL entry on the specified bucket.
+         * (defaultObjectAccessControls.patch)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param ObjectAccessControl $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function patch($bucket, $entity, ObjectAccessControl $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a default object ACL entry on the specified bucket.
+         * (defaultObjectAccessControls.update)
+         *
+         * @param string $bucket Name of a bucket.
+         * @param string $entity The entity holding the permission. Can be user-userId,
+         * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
+         * allAuthenticatedUsers.
+         * @param ObjectAccessControl $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * Required for Requester Pays buckets.
+         * @return ObjectAccessControl
+         * @throws \Google\Service\Exception
+         */
+        public function update($bucket, $entity, ObjectAccessControl $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the default object ACL entry for the specified entity on the
-     * specified bucket. (defaultObjectAccessControls.get)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Storage\Resource\DefaultObjectAccessControls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($bucket, $entity, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new default object ACL entry on the specified bucket.
-     * (defaultObjectAccessControls.insert)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param ObjectAccessControl $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
-     */
-    public function insert($bucket, ObjectAccessControl $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves default object ACL entries on the specified bucket.
-     * (defaultObjectAccessControls.listDefaultObjectAccessControls)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ifMetagenerationMatch If present, only return default ACL
-     * listing if the bucket's current metageneration matches this value.
-     * @opt_param string ifMetagenerationNotMatch If present, only return default
-     * ACL listing if the bucket's current metageneration does not match the given
-     * value.
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControlsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listDefaultObjectAccessControls($bucket, $optParams = [])
-    {
-    }
-    /**
-     * Patches a default object ACL entry on the specified bucket.
-     * (defaultObjectAccessControls.patch)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param ObjectAccessControl $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
-     */
-    public function patch($bucket, $entity, ObjectAccessControl $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a default object ACL entry on the specified bucket.
-     * (defaultObjectAccessControls.update)
-     *
-     * @param string $bucket Name of a bucket.
-     * @param string $entity The entity holding the permission. Can be user-userId,
-     * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
-     * allAuthenticatedUsers.
-     * @param ObjectAccessControl $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * Required for Requester Pays buckets.
-     * @return ObjectAccessControl
-     * @throws \Google\Service\Exception
-     */
-    public function update($bucket, $entity, ObjectAccessControl $postBody, $optParams = [])
+    class Google_Service_Storage_Resource_DefaultObjectAccessControls extends \Google\Service\Storage\Resource\DefaultObjectAccessControls
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedAssistantSessionContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $contextualSessionId;
-    /**
-     * @param string
-     */
-    public function setContextualSessionId($contextualSessionId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedAssistantSessionContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $contextualSessionId;
+        /**
+         * @param string
+         */
+        public function setContextualSessionId($contextualSessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContextualSessionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedAssistantSessionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextualSessionId()
+    class Google_Service_CloudSearch_AppsDynamiteSharedAssistantSessionContext extends \Google\Service\CloudSearch\AppsDynamiteSharedAssistantSessionContext
     {
     }
 }

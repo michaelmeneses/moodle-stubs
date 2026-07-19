@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkHistoryServerConfig extends \Google\Model
-{
-    /**
-     * Optional. Resource name of an existing Dataproc Cluster to act as a Spark
-     * History Server for the workload.Example:
-     * projects/[project_id]/regions/[region]/clusters/[cluster_name]
-     *
-     * @var string
-     */
-    public $dataprocCluster;
-    /**
-     * Optional. Resource name of an existing Dataproc Cluster to act as a Spark
-     * History Server for the workload.Example:
-     * projects/[project_id]/regions/[region]/clusters/[cluster_name]
-     *
-     * @param string $dataprocCluster
-     */
-    public function setDataprocCluster($dataprocCluster)
+namespace Google\Service\Dataproc {
+    class SparkHistoryServerConfig extends \Google\Model
     {
+        /**
+         * Optional. Resource name of an existing Dataproc Cluster to act as a Spark
+         * History Server for the workload.Example:
+         * projects/[project_id]/regions/[region]/clusters/[cluster_name]
+         *
+         * @var string
+         */
+        public $dataprocCluster;
+        /**
+         * Optional. Resource name of an existing Dataproc Cluster to act as a Spark
+         * History Server for the workload.Example:
+         * projects/[project_id]/regions/[region]/clusters/[cluster_name]
+         *
+         * @param string $dataprocCluster
+         */
+        public function setDataprocCluster($dataprocCluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataprocCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SparkHistoryServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataprocCluster()
+    class Google_Service_Dataproc_SparkHistoryServerConfig extends \Google\Service\Dataproc\SparkHistoryServerConfig
     {
     }
 }

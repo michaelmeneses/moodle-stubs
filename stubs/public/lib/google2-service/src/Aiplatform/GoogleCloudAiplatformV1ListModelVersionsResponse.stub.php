@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListModelVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = GoogleCloudAiplatformV1Model::class;
-    protected $modelsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListModelVersionsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Model versions in the requested page. In the returned Model name
-     * field, version ID instead of regvision tag will be included.
-     *
-     * @param GoogleCloudAiplatformV1Model[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListModelVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = GoogleCloudAiplatformV1Model::class;
+        protected $modelsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListModelVersionsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Model versions in the requested page. In the returned Model name
+         * field, version ID instead of regvision tag will be included.
+         *
+         * @param GoogleCloudAiplatformV1Model[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Model[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListModelVersionsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Model[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListModelVersionsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListModelVersionsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionsResponse
     {
     }
 }

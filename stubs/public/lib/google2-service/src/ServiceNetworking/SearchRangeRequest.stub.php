@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class SearchRangeRequest extends \Google\Model
-{
-    /**
-     * Required. The prefix length of the IP range. Use usual CIDR range notation.
-     * For example, '30' to find unused x.x.x.x/30 CIDR range. Actual range will
-     * be determined using allocated range for the consumer peered network and
-     * returned in the result.
-     *
-     * @var int
-     */
-    public $ipPrefixLength;
-    /**
-     * Required. Network name in the consumer project. This network must have been
-     * already peered with a shared VPC network using CreateConnection method.
-     * Must be in a form 'projects/{project}/global/networks/{network}'. {project}
-     * is a project number, as in '12345' {network} is network name.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Required. The prefix length of the IP range. Use usual CIDR range notation.
-     * For example, '30' to find unused x.x.x.x/30 CIDR range. Actual range will
-     * be determined using allocated range for the consumer peered network and
-     * returned in the result.
-     *
-     * @param int $ipPrefixLength
-     */
-    public function setIpPrefixLength($ipPrefixLength)
+namespace Google\Service\ServiceNetworking {
+    class SearchRangeRequest extends \Google\Model
     {
+        /**
+         * Required. The prefix length of the IP range. Use usual CIDR range notation.
+         * For example, '30' to find unused x.x.x.x/30 CIDR range. Actual range will
+         * be determined using allocated range for the consumer peered network and
+         * returned in the result.
+         *
+         * @var int
+         */
+        public $ipPrefixLength;
+        /**
+         * Required. Network name in the consumer project. This network must have been
+         * already peered with a shared VPC network using CreateConnection method.
+         * Must be in a form 'projects/{project}/global/networks/{network}'. {project}
+         * is a project number, as in '12345' {network} is network name.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Required. The prefix length of the IP range. Use usual CIDR range notation.
+         * For example, '30' to find unused x.x.x.x/30 CIDR range. Actual range will
+         * be determined using allocated range for the consumer peered network and
+         * returned in the result.
+         *
+         * @param int $ipPrefixLength
+         */
+        public function setIpPrefixLength($ipPrefixLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIpPrefixLength()
+        {
+        }
+        /**
+         * Required. Network name in the consumer project. This network must have been
+         * already peered with a shared VPC network using CreateConnection method.
+         * Must be in a form 'projects/{project}/global/networks/{network}'. {project}
+         * is a project number, as in '12345' {network} is network name.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ServiceNetworking\SearchRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpPrefixLength()
-    {
-    }
-    /**
-     * Required. Network name in the consumer project. This network must have been
-     * already peered with a shared VPC network using CreateConnection method.
-     * Must be in a form 'projects/{project}/global/networks/{network}'. {project}
-     * is a project number, as in '12345' {network} is network name.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
+    class Google_Service_ServiceNetworking_SearchRangeRequest extends \Google\Service\ServiceNetworking\SearchRangeRequest
     {
     }
 }

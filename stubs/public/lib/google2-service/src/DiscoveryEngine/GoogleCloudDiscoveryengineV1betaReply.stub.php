@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaReply extends \Google\Collection
-{
-    protected $collection_key = 'references';
-    protected $referencesType = GoogleCloudDiscoveryengineV1betaReplyReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $reply;
-    protected $summaryType = GoogleCloudDiscoveryengineV1betaSearchResponseSummary::class;
-    protected $summaryDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaReplyReference[]
-     */
-    public function setReferences($references)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaReply extends \Google\Collection
     {
+        protected $collection_key = 'references';
+        protected $referencesType = GoogleCloudDiscoveryengineV1betaReplyReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $reply;
+        protected $summaryType = GoogleCloudDiscoveryengineV1betaSearchResponseSummary::class;
+        protected $summaryDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaReplyReference[]
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaReplyReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReply($reply)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReply()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummary
+         */
+        public function setSummary(GoogleCloudDiscoveryengineV1betaSearchResponseSummary $summary)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummary
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaReplyReference[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaReply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferences()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReply($reply)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReply()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummary
-     */
-    public function setSummary(GoogleCloudDiscoveryengineV1betaSearchResponseSummary $summary)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummary
-     */
-    public function getSummary()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaReply extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaReply
     {
     }
 }

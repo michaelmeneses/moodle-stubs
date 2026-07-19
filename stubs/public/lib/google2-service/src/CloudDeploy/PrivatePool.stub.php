@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PrivatePool extends \Google\Model
-{
-    /**
-     * Optional. Cloud Storage location where execution outputs should be stored.
-     * This can either be a bucket ("gs://my-bucket") or a path within a bucket
-     * ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the
-     * same region will be used.
-     *
-     * @var string
-     */
-    public $artifactStorage;
-    /**
-     * Optional. Google service account to use for execution. If unspecified, the
-     * project execution service account (-compute@developer.gserviceaccount.com)
-     * will be used.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Required. Resource name of the Cloud Build worker pool to use. The format
-     * is `projects/{project}/locations/{location}/workerPools/{pool}`.
-     *
-     * @var string
-     */
-    public $workerPool;
-    /**
-     * Optional. Cloud Storage location where execution outputs should be stored.
-     * This can either be a bucket ("gs://my-bucket") or a path within a bucket
-     * ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the
-     * same region will be used.
-     *
-     * @param string $artifactStorage
-     */
-    public function setArtifactStorage($artifactStorage)
+namespace Google\Service\CloudDeploy {
+    class PrivatePool extends \Google\Model
     {
+        /**
+         * Optional. Cloud Storage location where execution outputs should be stored.
+         * This can either be a bucket ("gs://my-bucket") or a path within a bucket
+         * ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the
+         * same region will be used.
+         *
+         * @var string
+         */
+        public $artifactStorage;
+        /**
+         * Optional. Google service account to use for execution. If unspecified, the
+         * project execution service account (-compute@developer.gserviceaccount.com)
+         * will be used.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Required. Resource name of the Cloud Build worker pool to use. The format
+         * is `projects/{project}/locations/{location}/workerPools/{pool}`.
+         *
+         * @var string
+         */
+        public $workerPool;
+        /**
+         * Optional. Cloud Storage location where execution outputs should be stored.
+         * This can either be a bucket ("gs://my-bucket") or a path within a bucket
+         * ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the
+         * same region will be used.
+         *
+         * @param string $artifactStorage
+         */
+        public function setArtifactStorage($artifactStorage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactStorage()
+        {
+        }
+        /**
+         * Optional. Google service account to use for execution. If unspecified, the
+         * project execution service account (-compute@developer.gserviceaccount.com)
+         * will be used.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Required. Resource name of the Cloud Build worker pool to use. The format
+         * is `projects/{project}/locations/{location}/workerPools/{pool}`.
+         *
+         * @param string $workerPool
+         */
+        public function setWorkerPool($workerPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\PrivatePool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactStorage()
-    {
-    }
-    /**
-     * Optional. Google service account to use for execution. If unspecified, the
-     * project execution service account (-compute@developer.gserviceaccount.com)
-     * will be used.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Required. Resource name of the Cloud Build worker pool to use. The format
-     * is `projects/{project}/locations/{location}/workerPools/{pool}`.
-     *
-     * @param string $workerPool
-     */
-    public function setWorkerPool($workerPool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerPool()
+    class Google_Service_CloudDeploy_PrivatePool extends \Google\Service\CloudDeploy\PrivatePool
     {
     }
 }

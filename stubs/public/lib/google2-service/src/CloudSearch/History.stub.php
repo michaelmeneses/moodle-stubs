@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class History extends \Google\Collection
-{
-    protected $collection_key = 'record';
-    protected $recordType = HistoryRecord::class;
-    protected $recordDataType = 'array';
-    /**
-     * @param HistoryRecord[]
-     */
-    public function setRecord($record)
+namespace Google\Service\CloudSearch {
+    class History extends \Google\Collection
     {
+        protected $collection_key = 'record';
+        protected $recordType = HistoryRecord::class;
+        protected $recordDataType = 'array';
+        /**
+         * @param HistoryRecord[]
+         */
+        public function setRecord($record)
+        {
+        }
+        /**
+         * @return HistoryRecord[]
+         */
+        public function getRecord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HistoryRecord[]
+     * Runtime class alias of \Google\Service\CloudSearch\History registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecord()
+    class Google_Service_CloudSearch_History extends \Google\Service\CloudSearch\History
     {
     }
 }

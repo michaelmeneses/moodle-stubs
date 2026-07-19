@@ -8,6 +8,7 @@
  */
 namespace Aws\AutoScaling;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Auto Scaling** service.
  *

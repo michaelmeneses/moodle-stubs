@@ -21,284 +21,293 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class RemarketingAudience extends \Google\Collection
-{
-    protected $collection_key = 'linkedViews';
-    /**
-     * Account ID to which this remarketing audience belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $audienceDefinitionType = RemarketingAudienceAudienceDefinition::class;
-    protected $audienceDefinitionDataType = '';
-    /**
-     * The type of audience, either SIMPLE or STATE_BASED.
-     *
-     * @var string
-     */
-    public $audienceType;
-    /**
-     * Time this remarketing audience was created.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * The description of this remarketing audience.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Remarketing Audience ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Internal ID for the web property to which this remarketing audience
-     * belongs.
-     *
-     * @var string
-     */
-    public $internalWebPropertyId;
-    /**
-     * Collection type.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $linkedAdAccountsType = LinkedForeignAccount::class;
-    protected $linkedAdAccountsDataType = 'array';
-    /**
-     * The views (profiles) that this remarketing audience is linked to.
-     *
-     * @var string[]
-     */
-    public $linkedViews;
-    /**
-     * The name of this remarketing audience.
-     *
-     * @var string
-     */
-    public $name;
-    protected $stateBasedAudienceDefinitionType = RemarketingAudienceStateBasedAudienceDefinition::class;
-    protected $stateBasedAudienceDefinitionDataType = '';
-    /**
-     * Time this remarketing audience was last modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Web property ID of the form UA-XXXXX-YY to which this remarketing audience
-     * belongs.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID to which this remarketing audience belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class RemarketingAudience extends \Google\Collection
     {
+        protected $collection_key = 'linkedViews';
+        /**
+         * Account ID to which this remarketing audience belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $audienceDefinitionType = RemarketingAudienceAudienceDefinition::class;
+        protected $audienceDefinitionDataType = '';
+        /**
+         * The type of audience, either SIMPLE or STATE_BASED.
+         *
+         * @var string
+         */
+        public $audienceType;
+        /**
+         * Time this remarketing audience was created.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * The description of this remarketing audience.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Remarketing Audience ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Internal ID for the web property to which this remarketing audience
+         * belongs.
+         *
+         * @var string
+         */
+        public $internalWebPropertyId;
+        /**
+         * Collection type.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $linkedAdAccountsType = LinkedForeignAccount::class;
+        protected $linkedAdAccountsDataType = 'array';
+        /**
+         * The views (profiles) that this remarketing audience is linked to.
+         *
+         * @var string[]
+         */
+        public $linkedViews;
+        /**
+         * The name of this remarketing audience.
+         *
+         * @var string
+         */
+        public $name;
+        protected $stateBasedAudienceDefinitionType = RemarketingAudienceStateBasedAudienceDefinition::class;
+        protected $stateBasedAudienceDefinitionDataType = '';
+        /**
+         * Time this remarketing audience was last modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Web property ID of the form UA-XXXXX-YY to which this remarketing audience
+         * belongs.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID to which this remarketing audience belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The simple audience definition that will cause a user to be added to an
+         * audience.
+         *
+         * @param RemarketingAudienceAudienceDefinition $audienceDefinition
+         */
+        public function setAudienceDefinition(RemarketingAudienceAudienceDefinition $audienceDefinition)
+        {
+        }
+        /**
+         * @return RemarketingAudienceAudienceDefinition
+         */
+        public function getAudienceDefinition()
+        {
+        }
+        /**
+         * The type of audience, either SIMPLE or STATE_BASED.
+         *
+         * @param string $audienceType
+         */
+        public function setAudienceType($audienceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudienceType()
+        {
+        }
+        /**
+         * Time this remarketing audience was created.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * The description of this remarketing audience.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Remarketing Audience ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Internal ID for the web property to which this remarketing audience
+         * belongs.
+         *
+         * @param string $internalWebPropertyId
+         */
+        public function setInternalWebPropertyId($internalWebPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalWebPropertyId()
+        {
+        }
+        /**
+         * Collection type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The linked ad accounts associated with this remarketing audience. A
+         * remarketing audience can have only one linkedAdAccount currently.
+         *
+         * @param LinkedForeignAccount[] $linkedAdAccounts
+         */
+        public function setLinkedAdAccounts($linkedAdAccounts)
+        {
+        }
+        /**
+         * @return LinkedForeignAccount[]
+         */
+        public function getLinkedAdAccounts()
+        {
+        }
+        /**
+         * The views (profiles) that this remarketing audience is linked to.
+         *
+         * @param string[] $linkedViews
+         */
+        public function setLinkedViews($linkedViews)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLinkedViews()
+        {
+        }
+        /**
+         * The name of this remarketing audience.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A state based audience definition that will cause a user to be added or
+         * removed from an audience.
+         *
+         * @param RemarketingAudienceStateBasedAudienceDefinition $stateBasedAudienceDefinition
+         */
+        public function setStateBasedAudienceDefinition(RemarketingAudienceStateBasedAudienceDefinition $stateBasedAudienceDefinition)
+        {
+        }
+        /**
+         * @return RemarketingAudienceStateBasedAudienceDefinition
+         */
+        public function getStateBasedAudienceDefinition()
+        {
+        }
+        /**
+         * Time this remarketing audience was last modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * Web property ID of the form UA-XXXXX-YY to which this remarketing audience
+         * belongs.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\RemarketingAudience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The simple audience definition that will cause a user to be added to an
-     * audience.
-     *
-     * @param RemarketingAudienceAudienceDefinition $audienceDefinition
-     */
-    public function setAudienceDefinition(RemarketingAudienceAudienceDefinition $audienceDefinition)
-    {
-    }
-    /**
-     * @return RemarketingAudienceAudienceDefinition
-     */
-    public function getAudienceDefinition()
-    {
-    }
-    /**
-     * The type of audience, either SIMPLE or STATE_BASED.
-     *
-     * @param string $audienceType
-     */
-    public function setAudienceType($audienceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAudienceType()
-    {
-    }
-    /**
-     * Time this remarketing audience was created.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * The description of this remarketing audience.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Remarketing Audience ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Internal ID for the web property to which this remarketing audience
-     * belongs.
-     *
-     * @param string $internalWebPropertyId
-     */
-    public function setInternalWebPropertyId($internalWebPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalWebPropertyId()
-    {
-    }
-    /**
-     * Collection type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The linked ad accounts associated with this remarketing audience. A
-     * remarketing audience can have only one linkedAdAccount currently.
-     *
-     * @param LinkedForeignAccount[] $linkedAdAccounts
-     */
-    public function setLinkedAdAccounts($linkedAdAccounts)
-    {
-    }
-    /**
-     * @return LinkedForeignAccount[]
-     */
-    public function getLinkedAdAccounts()
-    {
-    }
-    /**
-     * The views (profiles) that this remarketing audience is linked to.
-     *
-     * @param string[] $linkedViews
-     */
-    public function setLinkedViews($linkedViews)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLinkedViews()
-    {
-    }
-    /**
-     * The name of this remarketing audience.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A state based audience definition that will cause a user to be added or
-     * removed from an audience.
-     *
-     * @param RemarketingAudienceStateBasedAudienceDefinition $stateBasedAudienceDefinition
-     */
-    public function setStateBasedAudienceDefinition(RemarketingAudienceStateBasedAudienceDefinition $stateBasedAudienceDefinition)
-    {
-    }
-    /**
-     * @return RemarketingAudienceStateBasedAudienceDefinition
-     */
-    public function getStateBasedAudienceDefinition()
-    {
-    }
-    /**
-     * Time this remarketing audience was last modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * Web property ID of the form UA-XXXXX-YY to which this remarketing audience
-     * belongs.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_RemarketingAudience extends \Google\Service\Analytics\RemarketingAudience
     {
     }
 }

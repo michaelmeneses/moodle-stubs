@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAssetSet extends \Google\Model
-{
-    /**
-     * Output only. The ID of the asset set.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Immutable. The resource name of the asset set. Asset set resource names
-     * have the form: `customers/{customer_id}/assetSets/{asset_set_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The ID of the asset set.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAssetSet extends \Google\Model
     {
+        /**
+         * Output only. The ID of the asset set.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Immutable. The resource name of the asset set. Asset set resource names
+         * have the form: `customers/{customer_id}/assetSets/{asset_set_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The ID of the asset set.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Immutable. The resource name of the asset set. Asset set resource names
+         * have the form: `customers/{customer_id}/assetSets/{asset_set_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Immutable. The resource name of the asset set. Asset set resource names
-     * have the form: `customers/{customer_id}/assetSets/{asset_set_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAssetSet extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetSet
     {
     }
 }

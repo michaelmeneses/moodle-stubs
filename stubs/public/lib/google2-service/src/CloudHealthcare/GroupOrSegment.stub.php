@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class GroupOrSegment extends \Google\Model
-{
-    protected $groupType = SchemaGroup::class;
-    protected $groupDataType = '';
-    protected $segmentType = SchemaSegment::class;
-    protected $segmentDataType = '';
-    /**
-     * @param SchemaGroup $group
-     */
-    public function setGroup(SchemaGroup $group)
+namespace Google\Service\CloudHealthcare {
+    class GroupOrSegment extends \Google\Model
     {
+        protected $groupType = SchemaGroup::class;
+        protected $groupDataType = '';
+        protected $segmentType = SchemaSegment::class;
+        protected $segmentDataType = '';
+        /**
+         * @param SchemaGroup $group
+         */
+        public function setGroup(SchemaGroup $group)
+        {
+        }
+        /**
+         * @return SchemaGroup
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * @param SchemaSegment $segment
+         */
+        public function setSegment(SchemaSegment $segment)
+        {
+        }
+        /**
+         * @return SchemaSegment
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SchemaGroup
+     * Runtime class alias of \Google\Service\CloudHealthcare\GroupOrSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroup()
-    {
-    }
-    /**
-     * @param SchemaSegment $segment
-     */
-    public function setSegment(SchemaSegment $segment)
-    {
-    }
-    /**
-     * @return SchemaSegment
-     */
-    public function getSegment()
+    class Google_Service_CloudHealthcare_GroupOrSegment extends \Google\Service\CloudHealthcare\GroupOrSegment
     {
     }
 }

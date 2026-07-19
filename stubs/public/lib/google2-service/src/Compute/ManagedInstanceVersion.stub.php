@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ManagedInstanceVersion extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] The intended template of the instance. This
-     * field is empty when current_action is one of { DELETING, ABANDONING }.
-     *
-     * @var string
-     */
-    public $instanceTemplate;
-    /**
-     * Output only. [Output Only] Name of the version.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] The intended template of the instance. This
-     * field is empty when current_action is one of { DELETING, ABANDONING }.
-     *
-     * @param string $instanceTemplate
-     */
-    public function setInstanceTemplate($instanceTemplate)
+namespace Google\Service\Compute {
+    class ManagedInstanceVersion extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] The intended template of the instance. This
+         * field is empty when current_action is one of { DELETING, ABANDONING }.
+         *
+         * @var string
+         */
+        public $instanceTemplate;
+        /**
+         * Output only. [Output Only] Name of the version.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] The intended template of the instance. This
+         * field is empty when current_action is one of { DELETING, ABANDONING }.
+         *
+         * @param string $instanceTemplate
+         */
+        public function setInstanceTemplate($instanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTemplate()
+        {
+        }
+        /**
+         * Output only. [Output Only] Name of the version.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ManagedInstanceVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceTemplate()
-    {
-    }
-    /**
-     * Output only. [Output Only] Name of the version.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Compute_ManagedInstanceVersion extends \Google\Service\Compute\ManagedInstanceVersion
     {
     }
 }

@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalNrqzValidation extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Draft state.
-     */
-    public const STATE_DRAFT = 'DRAFT';
-    /**
-     * Final state.
-     */
-    public const STATE_FINAL = 'FINAL';
-    /**
-     * Validation case ID.
-     *
-     * @var string
-     */
-    public $caseId;
-    /**
-     * CPI who signed the validation.
-     *
-     * @var string
-     */
-    public $cpiId;
-    /**
-     * Device latitude that's associated with the validation.
-     *
-     * @var 
-     */
-    public $latitude;
-    /**
-     * Device longitude that's associated with the validation.
-     *
-     * @var 
-     */
-    public $longitude;
-    /**
-     * State of the NRQZ validation info.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Validation case ID.
-     *
-     * @param string $caseId
-     */
-    public function setCaseId($caseId)
+namespace Google\Service\Sasportal {
+    class SasPortalNrqzValidation extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Draft state.
+         */
+        public const STATE_DRAFT = 'DRAFT';
+        /**
+         * Final state.
+         */
+        public const STATE_FINAL = 'FINAL';
+        /**
+         * Validation case ID.
+         *
+         * @var string
+         */
+        public $caseId;
+        /**
+         * CPI who signed the validation.
+         *
+         * @var string
+         */
+        public $cpiId;
+        /**
+         * Device latitude that's associated with the validation.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * Device longitude that's associated with the validation.
+         *
+         * @var 
+         */
+        public $longitude;
+        /**
+         * State of the NRQZ validation info.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Validation case ID.
+         *
+         * @param string $caseId
+         */
+        public function setCaseId($caseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaseId()
+        {
+        }
+        /**
+         * CPI who signed the validation.
+         *
+         * @param string $cpiId
+         */
+        public function setCpiId($cpiId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpiId()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+        /**
+         * State of the NRQZ validation info.
+         *
+         * Accepted values: STATE_UNSPECIFIED, DRAFT, FINAL
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalNrqzValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseId()
-    {
-    }
-    /**
-     * CPI who signed the validation.
-     *
-     * @param string $cpiId
-     */
-    public function setCpiId($cpiId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpiId()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
-    {
-    }
-    /**
-     * State of the NRQZ validation info.
-     *
-     * Accepted values: STATE_UNSPECIFIED, DRAFT, FINAL
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Sasportal_SasPortalNrqzValidation extends \Google\Service\Sasportal\SasPortalNrqzValidation
     {
     }
 }

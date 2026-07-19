@@ -21,217 +21,226 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagCorpus extends \Google\Model
-{
-    protected $corpusStatusType = GoogleCloudAiplatformV1CorpusStatus::class;
-    protected $corpusStatusDataType = '';
-    /**
-     * Output only. Timestamp when this RagCorpus was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The description of the RagCorpus.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The display name of the RagCorpus. The name can be up to 128
-     * characters long and can consist of any UTF-8 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
-    protected $encryptionSpecDataType = '';
-    /**
-     * Output only. The resource name of the RagCorpus.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Output only. Timestamp when this RagCorpus was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $vectorDbConfigType = GoogleCloudAiplatformV1RagVectorDbConfig::class;
-    protected $vectorDbConfigDataType = '';
-    protected $vertexAiSearchConfigType = GoogleCloudAiplatformV1VertexAiSearchConfig::class;
-    protected $vertexAiSearchConfigDataType = '';
-    /**
-     * Output only. RagCorpus state.
-     *
-     * @param GoogleCloudAiplatformV1CorpusStatus $corpusStatus
-     */
-    public function setCorpusStatus(GoogleCloudAiplatformV1CorpusStatus $corpusStatus)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagCorpus extends \Google\Model
     {
+        protected $corpusStatusType = GoogleCloudAiplatformV1CorpusStatus::class;
+        protected $corpusStatusDataType = '';
+        /**
+         * Output only. Timestamp when this RagCorpus was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The description of the RagCorpus.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The display name of the RagCorpus. The name can be up to 128
+         * characters long and can consist of any UTF-8 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
+        protected $encryptionSpecDataType = '';
+        /**
+         * Output only. The resource name of the RagCorpus.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Output only. Timestamp when this RagCorpus was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $vectorDbConfigType = GoogleCloudAiplatformV1RagVectorDbConfig::class;
+        protected $vectorDbConfigDataType = '';
+        protected $vertexAiSearchConfigType = GoogleCloudAiplatformV1VertexAiSearchConfig::class;
+        protected $vertexAiSearchConfigDataType = '';
+        /**
+         * Output only. RagCorpus state.
+         *
+         * @param GoogleCloudAiplatformV1CorpusStatus $corpusStatus
+         */
+        public function setCorpusStatus(GoogleCloudAiplatformV1CorpusStatus $corpusStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CorpusStatus
+         */
+        public function getCorpusStatus()
+        {
+        }
+        /**
+         * Output only. Timestamp when this RagCorpus was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The description of the RagCorpus.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The display name of the RagCorpus. The name can be up to 128
+         * characters long and can consist of any UTF-8 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Immutable. The CMEK key name used to encrypt at-rest data related
+         * to this Corpus. Only applicable to RagManagedDb option for Vector DB. This
+         * field can only be set at corpus creation time, and cannot be updated or
+         * deleted.
+         *
+         * @param GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec
+         */
+        public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EncryptionSpec
+         */
+        public function getEncryptionSpec()
+        {
+        }
+        /**
+         * Output only. The resource name of the RagCorpus.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. Timestamp when this RagCorpus was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. Immutable. The config for the Vector DBs.
+         *
+         * @param GoogleCloudAiplatformV1RagVectorDbConfig $vectorDbConfig
+         */
+        public function setVectorDbConfig(GoogleCloudAiplatformV1RagVectorDbConfig $vectorDbConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagVectorDbConfig
+         */
+        public function getVectorDbConfig()
+        {
+        }
+        /**
+         * Optional. Immutable. The config for the Vertex AI Search.
+         *
+         * @param GoogleCloudAiplatformV1VertexAiSearchConfig $vertexAiSearchConfig
+         */
+        public function setVertexAiSearchConfig(GoogleCloudAiplatformV1VertexAiSearchConfig $vertexAiSearchConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1VertexAiSearchConfig
+         */
+        public function getVertexAiSearchConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CorpusStatus
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagCorpus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorpusStatus()
-    {
-    }
-    /**
-     * Output only. Timestamp when this RagCorpus was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The description of the RagCorpus.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The display name of the RagCorpus. The name can be up to 128
-     * characters long and can consist of any UTF-8 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Immutable. The CMEK key name used to encrypt at-rest data related
-     * to this Corpus. Only applicable to RagManagedDb option for Vector DB. This
-     * field can only be set at corpus creation time, and cannot be updated or
-     * deleted.
-     *
-     * @param GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec
-     */
-    public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EncryptionSpec
-     */
-    public function getEncryptionSpec()
-    {
-    }
-    /**
-     * Output only. The resource name of the RagCorpus.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. Timestamp when this RagCorpus was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. Immutable. The config for the Vector DBs.
-     *
-     * @param GoogleCloudAiplatformV1RagVectorDbConfig $vectorDbConfig
-     */
-    public function setVectorDbConfig(GoogleCloudAiplatformV1RagVectorDbConfig $vectorDbConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagVectorDbConfig
-     */
-    public function getVectorDbConfig()
-    {
-    }
-    /**
-     * Optional. Immutable. The config for the Vertex AI Search.
-     *
-     * @param GoogleCloudAiplatformV1VertexAiSearchConfig $vertexAiSearchConfig
-     */
-    public function setVertexAiSearchConfig(GoogleCloudAiplatformV1VertexAiSearchConfig $vertexAiSearchConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1VertexAiSearchConfig
-     */
-    public function getVertexAiSearchConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagCorpus extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagCorpus
     {
     }
 }

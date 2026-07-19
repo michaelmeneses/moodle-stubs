@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class SearchFoldersResponse extends \Google\Collection
-{
-    protected $collection_key = 'folders';
-    protected $foldersType = Folder::class;
-    protected $foldersDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to `SearchFolders` that
-     * indicates from where searching should continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A possibly paginated folder search results. the specified parent resource.
-     *
-     * @param Folder[] $folders
-     */
-    public function setFolders($folders)
+namespace Google\Service\CloudResourceManager {
+    class SearchFoldersResponse extends \Google\Collection
     {
+        protected $collection_key = 'folders';
+        protected $foldersType = Folder::class;
+        protected $foldersDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to `SearchFolders` that
+         * indicates from where searching should continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A possibly paginated folder search results. the specified parent resource.
+         *
+         * @param Folder[] $folders
+         */
+        public function setFolders($folders)
+        {
+        }
+        /**
+         * @return Folder[]
+         */
+        public function getFolders()
+        {
+        }
+        /**
+         * A pagination token returned from a previous call to `SearchFolders` that
+         * indicates from where searching should continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Folder[]
+     * Runtime class alias of \Google\Service\CloudResourceManager\SearchFoldersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolders()
-    {
-    }
-    /**
-     * A pagination token returned from a previous call to `SearchFolders` that
-     * indicates from where searching should continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudResourceManager_SearchFoldersResponse extends \Google\Service\CloudResourceManager\SearchFoldersResponse
     {
     }
 }

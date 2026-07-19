@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourceGroupReference extends \Google\Model
-{
-    /**
-     * A URI referencing one of the instance groups or network endpoint groups
-     * listed in the backend service.
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * A URI referencing one of the instance groups or network endpoint groups
-     * listed in the backend service.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
+namespace Google\Service\Compute {
+    class ResourceGroupReference extends \Google\Model
     {
+        /**
+         * A URI referencing one of the instance groups or network endpoint groups
+         * listed in the backend service.
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * A URI referencing one of the instance groups or network endpoint groups
+         * listed in the backend service.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourceGroupReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroup()
+    class Google_Service_Compute_ResourceGroupReference extends \Google\Service\Compute\ResourceGroupReference
     {
     }
 }

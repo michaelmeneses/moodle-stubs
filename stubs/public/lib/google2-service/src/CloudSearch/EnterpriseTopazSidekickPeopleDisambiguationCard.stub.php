@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPeopleDisambiguationCard extends \Google\Collection
-{
-    protected $collection_key = 'person';
-    protected $personType = EnterpriseTopazSidekickCommonPerson::class;
-    protected $personDataType = 'array';
-    /**
-     * Candidate persons for the query.
-     *
-     * @param EnterpriseTopazSidekickCommonPerson[] $person
-     */
-    public function setPerson($person)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPeopleDisambiguationCard extends \Google\Collection
     {
+        protected $collection_key = 'person';
+        protected $personType = EnterpriseTopazSidekickCommonPerson::class;
+        protected $personDataType = 'array';
+        /**
+         * Candidate persons for the query.
+         *
+         * @param EnterpriseTopazSidekickCommonPerson[] $person
+         */
+        public function setPerson($person)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPerson[]
+         */
+        public function getPerson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickCommonPerson[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleDisambiguationCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerson()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPeopleDisambiguationCard extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleDisambiguationCard
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class PreviewCreateGameServerClusterResponse extends \Google\Model
-{
-    protected $clusterStateType = KubernetesClusterState::class;
-    protected $clusterStateDataType = '';
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $targetStateType = TargetState::class;
-    protected $targetStateDataType = '';
-    /**
-     * @param KubernetesClusterState
-     */
-    public function setClusterState(KubernetesClusterState $clusterState)
+namespace Google\Service\GameServices {
+    class PreviewCreateGameServerClusterResponse extends \Google\Model
     {
+        protected $clusterStateType = KubernetesClusterState::class;
+        protected $clusterStateDataType = '';
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $targetStateType = TargetState::class;
+        protected $targetStateDataType = '';
+        /**
+         * @param KubernetesClusterState
+         */
+        public function setClusterState(KubernetesClusterState $clusterState)
+        {
+        }
+        /**
+         * @return KubernetesClusterState
+         */
+        public function getClusterState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param TargetState
+         */
+        public function setTargetState(TargetState $targetState)
+        {
+        }
+        /**
+         * @return TargetState
+         */
+        public function getTargetState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KubernetesClusterState
+     * Runtime class alias of \Google\Service\GameServices\PreviewCreateGameServerClusterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param TargetState
-     */
-    public function setTargetState(TargetState $targetState)
-    {
-    }
-    /**
-     * @return TargetState
-     */
-    public function getTargetState()
+    class Google_Service_GameServices_PreviewCreateGameServerClusterResponse extends \Google\Service\GameServices\PreviewCreateGameServerClusterResponse
     {
     }
 }

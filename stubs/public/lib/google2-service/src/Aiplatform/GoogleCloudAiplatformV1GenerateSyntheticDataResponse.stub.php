@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateSyntheticDataResponse extends \Google\Collection
-{
-    protected $collection_key = 'syntheticExamples';
-    protected $syntheticExamplesType = GoogleCloudAiplatformV1SyntheticExample::class;
-    protected $syntheticExamplesDataType = 'array';
-    /**
-     * A list of generated synthetic examples.
-     *
-     * @param GoogleCloudAiplatformV1SyntheticExample[] $syntheticExamples
-     */
-    public function setSyntheticExamples($syntheticExamples)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateSyntheticDataResponse extends \Google\Collection
     {
+        protected $collection_key = 'syntheticExamples';
+        protected $syntheticExamplesType = GoogleCloudAiplatformV1SyntheticExample::class;
+        protected $syntheticExamplesDataType = 'array';
+        /**
+         * A list of generated synthetic examples.
+         *
+         * @param GoogleCloudAiplatformV1SyntheticExample[] $syntheticExamples
+         */
+        public function setSyntheticExamples($syntheticExamples)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SyntheticExample[]
+         */
+        public function getSyntheticExamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SyntheticExample[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateSyntheticDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSyntheticExamples()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateSyntheticDataResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateSyntheticDataResponse
     {
     }
 }

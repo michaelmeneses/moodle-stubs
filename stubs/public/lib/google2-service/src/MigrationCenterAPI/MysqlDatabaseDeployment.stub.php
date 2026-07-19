@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MysqlDatabaseDeployment extends \Google\Collection
-{
-    protected $collection_key = 'variables';
-    protected $pluginsType = MySqlPlugin::class;
-    protected $pluginsDataType = 'array';
-    protected $propertiesType = MySqlProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * Optional. Number of resource groups.
-     *
-     * @var int
-     */
-    public $resourceGroupsCount;
-    protected $variablesType = MySqlVariable::class;
-    protected $variablesDataType = 'array';
-    /**
-     * Optional. List of MySql plugins.
-     *
-     * @param MySqlPlugin[] $plugins
-     */
-    public function setPlugins($plugins)
+namespace Google\Service\MigrationCenterAPI {
+    class MysqlDatabaseDeployment extends \Google\Collection
     {
+        protected $collection_key = 'variables';
+        protected $pluginsType = MySqlPlugin::class;
+        protected $pluginsDataType = 'array';
+        protected $propertiesType = MySqlProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * Optional. Number of resource groups.
+         *
+         * @var int
+         */
+        public $resourceGroupsCount;
+        protected $variablesType = MySqlVariable::class;
+        protected $variablesDataType = 'array';
+        /**
+         * Optional. List of MySql plugins.
+         *
+         * @param MySqlPlugin[] $plugins
+         */
+        public function setPlugins($plugins)
+        {
+        }
+        /**
+         * @return MySqlPlugin[]
+         */
+        public function getPlugins()
+        {
+        }
+        /**
+         * Optional. List of MySql properties.
+         *
+         * @param MySqlProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return MySqlProperty[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Optional. Number of resource groups.
+         *
+         * @param int $resourceGroupsCount
+         */
+        public function setResourceGroupsCount($resourceGroupsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourceGroupsCount()
+        {
+        }
+        /**
+         * Optional. List of MySql variables.
+         *
+         * @param MySqlVariable[] $variables
+         */
+        public function setVariables($variables)
+        {
+        }
+        /**
+         * @return MySqlVariable[]
+         */
+        public function getVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MySqlPlugin[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MysqlDatabaseDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlugins()
-    {
-    }
-    /**
-     * Optional. List of MySql properties.
-     *
-     * @param MySqlProperty[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return MySqlProperty[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Optional. Number of resource groups.
-     *
-     * @param int $resourceGroupsCount
-     */
-    public function setResourceGroupsCount($resourceGroupsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourceGroupsCount()
-    {
-    }
-    /**
-     * Optional. List of MySql variables.
-     *
-     * @param MySqlVariable[] $variables
-     */
-    public function setVariables($variables)
-    {
-    }
-    /**
-     * @return MySqlVariable[]
-     */
-    public function getVariables()
+    class Google_Service_MigrationCenterAPI_MysqlDatabaseDeployment extends \Google\Service\MigrationCenterAPI\MysqlDatabaseDeployment
     {
     }
 }

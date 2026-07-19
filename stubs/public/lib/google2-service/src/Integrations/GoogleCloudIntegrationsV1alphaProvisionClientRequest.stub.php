@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaProvisionClientRequest extends \Google\Model
-{
-    protected $cloudKmsConfigType = GoogleCloudIntegrationsV1alphaCloudKmsConfig::class;
-    protected $cloudKmsConfigDataType = '';
-    /**
-     * Optional. Indicates if sample workflow should be created along with
-     * provisioning
-     *
-     * @var bool
-     */
-    public $createSampleWorkflows;
-    /**
-     * Optional. Indicates if the client should be allowed to make HTTP calls.
-     *
-     * @var bool
-     */
-    public $enableHttpCall;
-    /**
-     * Optional. Indicates if the client should be allowed to use managed AI
-     * features, i.e. using Cloud Companion APIs of the tenant project. This will
-     * allow the customers to use features like Troubleshooting, OpenAPI spec
-     * enrichment, etc. for free.
-     *
-     * @var bool
-     */
-    public $enableManagedAiFeatures;
-    /**
-     * Optional. Deprecated. Indicates provision with GMEK or CMEK. This field is
-     * deprecated and the provision would always be GMEK if cloud_kms_config is
-     * not present in the request.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $provisionGmek;
-    /**
-     * Optional. User input run-as service account, if empty, will bring up a new
-     * default service account
-     *
-     * @var string
-     */
-    public $runAsServiceAccount;
-    /**
-     * Optional. Indicates if skip CP provision or not
-     *
-     * @var bool
-     */
-    public $skipCpProvision;
-    /**
-     * Optional. OPTIONAL: Cloud KMS config for AuthModule to encrypt/decrypt
-     * credentials.
-     *
-     * @param GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig
-     */
-    public function setCloudKmsConfig(GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaProvisionClientRequest extends \Google\Model
     {
+        protected $cloudKmsConfigType = GoogleCloudIntegrationsV1alphaCloudKmsConfig::class;
+        protected $cloudKmsConfigDataType = '';
+        /**
+         * Optional. Indicates if sample workflow should be created along with
+         * provisioning
+         *
+         * @var bool
+         */
+        public $createSampleWorkflows;
+        /**
+         * Optional. Indicates if the client should be allowed to make HTTP calls.
+         *
+         * @var bool
+         */
+        public $enableHttpCall;
+        /**
+         * Optional. Indicates if the client should be allowed to use managed AI
+         * features, i.e. using Cloud Companion APIs of the tenant project. This will
+         * allow the customers to use features like Troubleshooting, OpenAPI spec
+         * enrichment, etc. for free.
+         *
+         * @var bool
+         */
+        public $enableManagedAiFeatures;
+        /**
+         * Optional. Deprecated. Indicates provision with GMEK or CMEK. This field is
+         * deprecated and the provision would always be GMEK if cloud_kms_config is
+         * not present in the request.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $provisionGmek;
+        /**
+         * Optional. User input run-as service account, if empty, will bring up a new
+         * default service account
+         *
+         * @var string
+         */
+        public $runAsServiceAccount;
+        /**
+         * Optional. Indicates if skip CP provision or not
+         *
+         * @var bool
+         */
+        public $skipCpProvision;
+        /**
+         * Optional. OPTIONAL: Cloud KMS config for AuthModule to encrypt/decrypt
+         * credentials.
+         *
+         * @param GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig
+         */
+        public function setCloudKmsConfig(GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaCloudKmsConfig
+         */
+        public function getCloudKmsConfig()
+        {
+        }
+        /**
+         * Optional. Indicates if sample workflow should be created along with
+         * provisioning
+         *
+         * @param bool $createSampleWorkflows
+         */
+        public function setCreateSampleWorkflows($createSampleWorkflows)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCreateSampleWorkflows()
+        {
+        }
+        /**
+         * Optional. Indicates if the client should be allowed to make HTTP calls.
+         *
+         * @param bool $enableHttpCall
+         */
+        public function setEnableHttpCall($enableHttpCall)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableHttpCall()
+        {
+        }
+        /**
+         * Optional. Indicates if the client should be allowed to use managed AI
+         * features, i.e. using Cloud Companion APIs of the tenant project. This will
+         * allow the customers to use features like Troubleshooting, OpenAPI spec
+         * enrichment, etc. for free.
+         *
+         * @param bool $enableManagedAiFeatures
+         */
+        public function setEnableManagedAiFeatures($enableManagedAiFeatures)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableManagedAiFeatures()
+        {
+        }
+        /**
+         * Optional. Deprecated. Indicates provision with GMEK or CMEK. This field is
+         * deprecated and the provision would always be GMEK if cloud_kms_config is
+         * not present in the request.
+         *
+         * @deprecated
+         * @param bool $provisionGmek
+         */
+        public function setProvisionGmek($provisionGmek)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getProvisionGmek()
+        {
+        }
+        /**
+         * Optional. User input run-as service account, if empty, will bring up a new
+         * default service account
+         *
+         * @param string $runAsServiceAccount
+         */
+        public function setRunAsServiceAccount($runAsServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunAsServiceAccount()
+        {
+        }
+        /**
+         * Optional. Indicates if skip CP provision or not
+         *
+         * @param bool $skipCpProvision
+         */
+        public function setSkipCpProvision($skipCpProvision)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipCpProvision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaCloudKmsConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudKmsConfig()
-    {
-    }
-    /**
-     * Optional. Indicates if sample workflow should be created along with
-     * provisioning
-     *
-     * @param bool $createSampleWorkflows
-     */
-    public function setCreateSampleWorkflows($createSampleWorkflows)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCreateSampleWorkflows()
-    {
-    }
-    /**
-     * Optional. Indicates if the client should be allowed to make HTTP calls.
-     *
-     * @param bool $enableHttpCall
-     */
-    public function setEnableHttpCall($enableHttpCall)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableHttpCall()
-    {
-    }
-    /**
-     * Optional. Indicates if the client should be allowed to use managed AI
-     * features, i.e. using Cloud Companion APIs of the tenant project. This will
-     * allow the customers to use features like Troubleshooting, OpenAPI spec
-     * enrichment, etc. for free.
-     *
-     * @param bool $enableManagedAiFeatures
-     */
-    public function setEnableManagedAiFeatures($enableManagedAiFeatures)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableManagedAiFeatures()
-    {
-    }
-    /**
-     * Optional. Deprecated. Indicates provision with GMEK or CMEK. This field is
-     * deprecated and the provision would always be GMEK if cloud_kms_config is
-     * not present in the request.
-     *
-     * @deprecated
-     * @param bool $provisionGmek
-     */
-    public function setProvisionGmek($provisionGmek)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getProvisionGmek()
-    {
-    }
-    /**
-     * Optional. User input run-as service account, if empty, will bring up a new
-     * default service account
-     *
-     * @param string $runAsServiceAccount
-     */
-    public function setRunAsServiceAccount($runAsServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRunAsServiceAccount()
-    {
-    }
-    /**
-     * Optional. Indicates if skip CP provision or not
-     *
-     * @param bool $skipCpProvision
-     */
-    public function setSkipCpProvision($skipCpProvision)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipCpProvision()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaProvisionClientRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientRequest
     {
     }
 }

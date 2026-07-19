@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class SigstorePublicKey extends \Google\Model
-{
-    /**
-     * The public key material in PEM format.
-     *
-     * @var string
-     */
-    public $publicKeyPem;
-    /**
-     * The public key material in PEM format.
-     *
-     * @param string $publicKeyPem
-     */
-    public function setPublicKeyPem($publicKeyPem)
+namespace Google\Service\BinaryAuthorization {
+    class SigstorePublicKey extends \Google\Model
     {
+        /**
+         * The public key material in PEM format.
+         *
+         * @var string
+         */
+        public $publicKeyPem;
+        /**
+         * The public key material in PEM format.
+         *
+         * @param string $publicKeyPem
+         */
+        public function setPublicKeyPem($publicKeyPem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKeyPem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\SigstorePublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublicKeyPem()
+    class Google_Service_BinaryAuthorization_SigstorePublicKey extends \Google\Service\BinaryAuthorization\SigstorePublicKey
     {
     }
 }

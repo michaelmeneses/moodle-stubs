@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3RevisionReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $latestProcessorVersion;
-    /**
-     * @var string
-     */
-    public $revisionCase;
-    /**
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * @param string
-     */
-    public function setLatestProcessorVersion($latestProcessorVersion)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3RevisionReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $latestProcessorVersion;
+        /**
+         * @var string
+         */
+        public $revisionCase;
+        /**
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * @param string
+         */
+        public function setLatestProcessorVersion($latestProcessorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestProcessorVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionCase($revisionCase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCase()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3RevisionReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatestProcessorVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionCase($revisionCase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCase()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3RevisionReference extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3RevisionReference
     {
     }
 }

@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations extends \Google\Model
-{
-    protected $requirementOverrideType = CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride::class;
-    protected $requirementOverrideDataType = '';
-    /**
-     * @var string
-     */
-    public $ziOrgPolicy;
-    /**
-     * @var string
-     */
-    public $ziRegionPolicy;
-    /**
-     * @var string
-     */
-    public $ziRegionState;
-    /**
-     * @var string
-     */
-    public $zoneIsolation;
-    /**
-     * @var string
-     */
-    public $zoneSeparation;
-    /**
-     * @var string
-     */
-    public $zsOrgPolicy;
-    /**
-     * @var string
-     */
-    public $zsRegionState;
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride
-     */
-    public function setRequirementOverride(CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride $requirementOverride)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations extends \Google\Model
     {
+        protected $requirementOverrideType = CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride::class;
+        protected $requirementOverrideDataType = '';
+        /**
+         * @var string
+         */
+        public $ziOrgPolicy;
+        /**
+         * @var string
+         */
+        public $ziRegionPolicy;
+        /**
+         * @var string
+         */
+        public $ziRegionState;
+        /**
+         * @var string
+         */
+        public $zoneIsolation;
+        /**
+         * @var string
+         */
+        public $zoneSeparation;
+        /**
+         * @var string
+         */
+        public $zsOrgPolicy;
+        /**
+         * @var string
+         */
+        public $zsRegionState;
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride
+         */
+        public function setRequirementOverride(CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride $requirementOverride)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride
+         */
+        public function getRequirementOverride()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZiOrgPolicy($ziOrgPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZiOrgPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZiRegionPolicy($ziRegionPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZiRegionPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZiRegionState($ziRegionState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZiRegionState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZoneIsolation($zoneIsolation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZoneIsolation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZoneSeparation($zoneSeparation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZoneSeparation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZsOrgPolicy($zsOrgPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZsOrgPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZsRegionState($zsRegionState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZsRegionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectationsRequirementOverride
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequirementOverride()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZiOrgPolicy($ziOrgPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZiOrgPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZiRegionPolicy($ziRegionPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZiRegionPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZiRegionState($ziRegionState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZiRegionState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZoneIsolation($zoneIsolation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZoneIsolation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZoneSeparation($zoneSeparation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZoneSeparation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZsOrgPolicy($zsOrgPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZsOrgPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZsRegionState($zsRegionState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZsRegionState()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations
     {
     }
 }

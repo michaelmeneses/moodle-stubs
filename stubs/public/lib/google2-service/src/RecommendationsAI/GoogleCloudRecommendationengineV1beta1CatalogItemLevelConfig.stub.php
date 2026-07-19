@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig extends \Google\Model
-{
-    /**
-     * Unknown value - should never be used.
-     */
-    public const EVENT_ITEM_LEVEL_CATALOG_ITEM_LEVEL_UNSPECIFIED = 'CATALOG_ITEM_LEVEL_UNSPECIFIED';
-    /**
-     * Catalog items are at variant level.
-     */
-    public const EVENT_ITEM_LEVEL_VARIANT = 'VARIANT';
-    /**
-     * Catalog items are at master level.
-     */
-    public const EVENT_ITEM_LEVEL_MASTER = 'MASTER';
-    /**
-     * Unknown value - should never be used.
-     */
-    public const PREDICT_ITEM_LEVEL_CATALOG_ITEM_LEVEL_UNSPECIFIED = 'CATALOG_ITEM_LEVEL_UNSPECIFIED';
-    /**
-     * Catalog items are at variant level.
-     */
-    public const PREDICT_ITEM_LEVEL_VARIANT = 'VARIANT';
-    /**
-     * Catalog items are at master level.
-     */
-    public const PREDICT_ITEM_LEVEL_MASTER = 'MASTER';
-    /**
-     * Optional. Level of the catalog at which events are uploaded. See
-     * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
-     * more details.
-     *
-     * @var string
-     */
-    public $eventItemLevel;
-    /**
-     * Optional. Level of the catalog at which predictions are made. See
-     * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
-     * more details.
-     *
-     * @var string
-     */
-    public $predictItemLevel;
-    /**
-     * Optional. Level of the catalog at which events are uploaded. See
-     * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
-     * more details.
-     *
-     * Accepted values: CATALOG_ITEM_LEVEL_UNSPECIFIED, VARIANT, MASTER
-     *
-     * @param self::EVENT_ITEM_LEVEL_* $eventItemLevel
-     */
-    public function setEventItemLevel($eventItemLevel)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig extends \Google\Model
     {
+        /**
+         * Unknown value - should never be used.
+         */
+        public const EVENT_ITEM_LEVEL_CATALOG_ITEM_LEVEL_UNSPECIFIED = 'CATALOG_ITEM_LEVEL_UNSPECIFIED';
+        /**
+         * Catalog items are at variant level.
+         */
+        public const EVENT_ITEM_LEVEL_VARIANT = 'VARIANT';
+        /**
+         * Catalog items are at master level.
+         */
+        public const EVENT_ITEM_LEVEL_MASTER = 'MASTER';
+        /**
+         * Unknown value - should never be used.
+         */
+        public const PREDICT_ITEM_LEVEL_CATALOG_ITEM_LEVEL_UNSPECIFIED = 'CATALOG_ITEM_LEVEL_UNSPECIFIED';
+        /**
+         * Catalog items are at variant level.
+         */
+        public const PREDICT_ITEM_LEVEL_VARIANT = 'VARIANT';
+        /**
+         * Catalog items are at master level.
+         */
+        public const PREDICT_ITEM_LEVEL_MASTER = 'MASTER';
+        /**
+         * Optional. Level of the catalog at which events are uploaded. See
+         * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
+         * more details.
+         *
+         * @var string
+         */
+        public $eventItemLevel;
+        /**
+         * Optional. Level of the catalog at which predictions are made. See
+         * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
+         * more details.
+         *
+         * @var string
+         */
+        public $predictItemLevel;
+        /**
+         * Optional. Level of the catalog at which events are uploaded. See
+         * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
+         * more details.
+         *
+         * Accepted values: CATALOG_ITEM_LEVEL_UNSPECIFIED, VARIANT, MASTER
+         *
+         * @param self::EVENT_ITEM_LEVEL_* $eventItemLevel
+         */
+        public function setEventItemLevel($eventItemLevel)
+        {
+        }
+        /**
+         * @return self::EVENT_ITEM_LEVEL_*
+         */
+        public function getEventItemLevel()
+        {
+        }
+        /**
+         * Optional. Level of the catalog at which predictions are made. See
+         * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
+         * more details.
+         *
+         * Accepted values: CATALOG_ITEM_LEVEL_UNSPECIFIED, VARIANT, MASTER
+         *
+         * @param self::PREDICT_ITEM_LEVEL_* $predictItemLevel
+         */
+        public function setPredictItemLevel($predictItemLevel)
+        {
+        }
+        /**
+         * @return self::PREDICT_ITEM_LEVEL_*
+         */
+        public function getPredictItemLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EVENT_ITEM_LEVEL_*
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventItemLevel()
-    {
-    }
-    /**
-     * Optional. Level of the catalog at which predictions are made. See
-     * https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for
-     * more details.
-     *
-     * Accepted values: CATALOG_ITEM_LEVEL_UNSPECIFIED, VARIANT, MASTER
-     *
-     * @param self::PREDICT_ITEM_LEVEL_* $predictItemLevel
-     */
-    public function setPredictItemLevel($predictItemLevel)
-    {
-    }
-    /**
-     * @return self::PREDICT_ITEM_LEVEL_*
-     */
-    public function getPredictItemLevel()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * Required. The fact to generate a memory from.
-     *
-     * @var string
-     */
-    public $fact;
-    protected $topicsType = GoogleCloudAiplatformV1MemoryTopicId::class;
-    protected $topicsDataType = 'array';
-    /**
-     * Required. The fact to generate a memory from.
-     *
-     * @param string $fact
-     */
-    public function setFact($fact)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * Required. The fact to generate a memory from.
+         *
+         * @var string
+         */
+        public $fact;
+        protected $topicsType = GoogleCloudAiplatformV1MemoryTopicId::class;
+        protected $topicsDataType = 'array';
+        /**
+         * Required. The fact to generate a memory from.
+         *
+         * @param string $fact
+         */
+        public function setFact($fact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFact()
+        {
+        }
+        /**
+         * Optional. The list of topics that the memory should be associated with. For
+         * example, use `custom_memory_topic_label = "jargon"` if the extracted memory
+         * is an example of memory extraction for the custom topic `jargon`.
+         *
+         * @param GoogleCloudAiplatformV1MemoryTopicId[] $topics
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryTopicId[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFact()
-    {
-    }
-    /**
-     * Optional. The list of topics that the memory should be associated with. For
-     * example, use `custom_memory_topic_label = "jargon"` if the extracted memory
-     * is an example of memory extraction for the custom topic `jargon`.
-     *
-     * @param GoogleCloudAiplatformV1MemoryTopicId[] $topics
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryTopicId[]
-     */
-    public function getTopics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory
     {
     }
 }

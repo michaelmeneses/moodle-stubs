@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class UserIdentifier extends \Google\Model
-{
-    protected $addressType = AddressInfo::class;
-    protected $addressDataType = '';
-    /**
-     * Hashed email address using SHA-256 hash function after normalization.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Hashed phone number using SHA-256 hash function after normalization (E164
-     * standard).
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * The known components of a user's address. Holds a grouping of identifiers
-     * that are matched all at once.
-     *
-     * @param AddressInfo $address
-     */
-    public function setAddress(AddressInfo $address)
+namespace Google\Service\DataManager {
+    class UserIdentifier extends \Google\Model
     {
+        protected $addressType = AddressInfo::class;
+        protected $addressDataType = '';
+        /**
+         * Hashed email address using SHA-256 hash function after normalization.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Hashed phone number using SHA-256 hash function after normalization (E164
+         * standard).
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * The known components of a user's address. Holds a grouping of identifiers
+         * that are matched all at once.
+         *
+         * @param AddressInfo $address
+         */
+        public function setAddress(AddressInfo $address)
+        {
+        }
+        /**
+         * @return AddressInfo
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Hashed email address using SHA-256 hash function after normalization.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * Hashed phone number using SHA-256 hash function after normalization (E164
+         * standard).
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AddressInfo
+     * Runtime class alias of \Google\Service\DataManager\UserIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Hashed email address using SHA-256 hash function after normalization.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * Hashed phone number using SHA-256 hash function after normalization (E164
-     * standard).
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
+    class Google_Service_DataManager_UserIdentifier extends \Google\Service\DataManager\UserIdentifier
     {
     }
 }

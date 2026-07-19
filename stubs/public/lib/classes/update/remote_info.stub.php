@@ -29,6 +29,7 @@
  */
 namespace core\update;
 
+use stdClass;
 /**
  * Thin wrapper for data structures returned by {@link api::get_plugin_info()}
  *

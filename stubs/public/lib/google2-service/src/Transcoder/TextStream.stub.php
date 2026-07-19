@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class TextStream extends \Google\Collection
-{
-    protected $collection_key = 'mapping';
-    /**
-     * The codec for this text stream. The default is `webvtt`. Supported text
-     * codecs: - `srt` - `ttml` - `cea608` - `cea708` - `webvtt`
-     *
-     * @var string
-     */
-    public $codec;
-    /**
-     * The name for this particular text stream that will be added to the HLS/DASH
-     * manifest. Not supported in MP4 files.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The BCP-47 language code, such as `en-US` or `sr-Latn`. For more
-     * information, see
-     * https://www.unicode.org/reports/tr35/#Unicode_locale_identifier. Not
-     * supported in MP4 files.
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $mappingType = TextMapping::class;
-    protected $mappingDataType = 'array';
-    /**
-     * The codec for this text stream. The default is `webvtt`. Supported text
-     * codecs: - `srt` - `ttml` - `cea608` - `cea708` - `webvtt`
-     *
-     * @param string $codec
-     */
-    public function setCodec($codec)
+namespace Google\Service\Transcoder {
+    class TextStream extends \Google\Collection
     {
+        protected $collection_key = 'mapping';
+        /**
+         * The codec for this text stream. The default is `webvtt`. Supported text
+         * codecs: - `srt` - `ttml` - `cea608` - `cea708` - `webvtt`
+         *
+         * @var string
+         */
+        public $codec;
+        /**
+         * The name for this particular text stream that will be added to the HLS/DASH
+         * manifest. Not supported in MP4 files.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The BCP-47 language code, such as `en-US` or `sr-Latn`. For more
+         * information, see
+         * https://www.unicode.org/reports/tr35/#Unicode_locale_identifier. Not
+         * supported in MP4 files.
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $mappingType = TextMapping::class;
+        protected $mappingDataType = 'array';
+        /**
+         * The codec for this text stream. The default is `webvtt`. Supported text
+         * codecs: - `srt` - `ttml` - `cea608` - `cea708` - `webvtt`
+         *
+         * @param string $codec
+         */
+        public function setCodec($codec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodec()
+        {
+        }
+        /**
+         * The name for this particular text stream that will be added to the HLS/DASH
+         * manifest. Not supported in MP4 files.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The BCP-47 language code, such as `en-US` or `sr-Latn`. For more
+         * information, see
+         * https://www.unicode.org/reports/tr35/#Unicode_locale_identifier. Not
+         * supported in MP4 files.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The mapping for the JobConfig.edit_list atoms with text EditAtom.inputs.
+         *
+         * @param TextMapping[] $mapping
+         */
+        public function setMapping($mapping)
+        {
+        }
+        /**
+         * @return TextMapping[]
+         */
+        public function getMapping()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\TextStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodec()
-    {
-    }
-    /**
-     * The name for this particular text stream that will be added to the HLS/DASH
-     * manifest. Not supported in MP4 files.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The BCP-47 language code, such as `en-US` or `sr-Latn`. For more
-     * information, see
-     * https://www.unicode.org/reports/tr35/#Unicode_locale_identifier. Not
-     * supported in MP4 files.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The mapping for the JobConfig.edit_list atoms with text EditAtom.inputs.
-     *
-     * @param TextMapping[] $mapping
-     */
-    public function setMapping($mapping)
-    {
-    }
-    /**
-     * @return TextMapping[]
-     */
-    public function getMapping()
+    class Google_Service_Transcoder_TextStream extends \Google\Service\Transcoder\TextStream
     {
     }
 }

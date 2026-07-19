@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class CreatePhraseSetRequest extends \Google\Model
-{
-    protected $phraseSetType = PhraseSet::class;
-    protected $phraseSetDataType = '';
-    /**
-     * Required. The ID to use for the phrase set, which will become the final
-     * component of the phrase set's resource name. This value should restrict to
-     * letters, numbers, and hyphens, with the first character a letter, the last
-     * a letter or a number, and be 4-63 characters.
-     *
-     * @var string
-     */
-    public $phraseSetId;
-    /**
-     * Required. The phrase set to create.
-     *
-     * @param PhraseSet $phraseSet
-     */
-    public function setPhraseSet(PhraseSet $phraseSet)
+namespace Google\Service\Speech {
+    class CreatePhraseSetRequest extends \Google\Model
     {
+        protected $phraseSetType = PhraseSet::class;
+        protected $phraseSetDataType = '';
+        /**
+         * Required. The ID to use for the phrase set, which will become the final
+         * component of the phrase set's resource name. This value should restrict to
+         * letters, numbers, and hyphens, with the first character a letter, the last
+         * a letter or a number, and be 4-63 characters.
+         *
+         * @var string
+         */
+        public $phraseSetId;
+        /**
+         * Required. The phrase set to create.
+         *
+         * @param PhraseSet $phraseSet
+         */
+        public function setPhraseSet(PhraseSet $phraseSet)
+        {
+        }
+        /**
+         * @return PhraseSet
+         */
+        public function getPhraseSet()
+        {
+        }
+        /**
+         * Required. The ID to use for the phrase set, which will become the final
+         * component of the phrase set's resource name. This value should restrict to
+         * letters, numbers, and hyphens, with the first character a letter, the last
+         * a letter or a number, and be 4-63 characters.
+         *
+         * @param string $phraseSetId
+         */
+        public function setPhraseSetId($phraseSetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhraseSetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PhraseSet
+     * Runtime class alias of \Google\Service\Speech\CreatePhraseSetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhraseSet()
-    {
-    }
-    /**
-     * Required. The ID to use for the phrase set, which will become the final
-     * component of the phrase set's resource name. This value should restrict to
-     * letters, numbers, and hyphens, with the first character a letter, the last
-     * a letter or a number, and be 4-63 characters.
-     *
-     * @param string $phraseSetId
-     */
-    public function setPhraseSetId($phraseSetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhraseSetId()
+    class Google_Service_Speech_CreatePhraseSetRequest extends \Google\Service\Speech\CreatePhraseSetRequest
     {
     }
 }

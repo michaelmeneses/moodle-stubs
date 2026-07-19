@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LocalizedString extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $language;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string $language
-     */
-    public function setLanguage($language)
+namespace Google\Service\YouTube {
+    class LocalizedString extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $language;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LocalizedString registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguage()
-    {
-    }
-    /**
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_YouTube_LocalizedString extends \Google\Service\YouTube\LocalizedString
     {
     }
 }

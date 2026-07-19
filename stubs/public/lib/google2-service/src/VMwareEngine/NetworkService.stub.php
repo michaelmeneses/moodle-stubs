@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class NetworkService extends \Google\Model
-{
-    /**
-     * Unspecified service state. This is the default value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Service is not provisioned.
-     */
-    public const STATE_UNPROVISIONED = 'UNPROVISIONED';
-    /**
-     * Service is in the process of being provisioned/deprovisioned.
-     */
-    public const STATE_RECONCILING = 'RECONCILING';
-    /**
-     * Service is active.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * True if the service is enabled; false otherwise.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Output only. State of the service. New values may be added to this enum
-     * when appropriate.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * True if the service is enabled; false otherwise.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\VMwareEngine {
+    class NetworkService extends \Google\Model
     {
+        /**
+         * Unspecified service state. This is the default value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Service is not provisioned.
+         */
+        public const STATE_UNPROVISIONED = 'UNPROVISIONED';
+        /**
+         * Service is in the process of being provisioned/deprovisioned.
+         */
+        public const STATE_RECONCILING = 'RECONCILING';
+        /**
+         * Service is active.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * True if the service is enabled; false otherwise.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Output only. State of the service. New values may be added to this enum
+         * when appropriate.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * True if the service is enabled; false otherwise.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Output only. State of the service. New values may be added to this enum
+         * when appropriate.
+         *
+         * Accepted values: STATE_UNSPECIFIED, UNPROVISIONED, RECONCILING, ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\VMwareEngine\NetworkService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Output only. State of the service. New values may be added to this enum
-     * when appropriate.
-     *
-     * Accepted values: STATE_UNSPECIFIED, UNPROVISIONED, RECONCILING, ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_VMwareEngine_NetworkService extends \Google\Service\VMwareEngine\NetworkService
     {
     }
 }

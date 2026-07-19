@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class NetworkConfig extends \Google\Model
-{
-    /**
-     * Allows the TPU node to send and receive packets with non-matching
-     * destination or source IPs. This is required if you plan to use the TPU
-     * workers to forward routes.
-     *
-     * @var bool
-     */
-    public $canIpForward;
-    /**
-     * Indicates that external IP addresses would be associated with the TPU
-     * workers. If set to false, the specified subnetwork or network should have
-     * Private Google Access enabled.
-     *
-     * @var bool
-     */
-    public $enableExternalIps;
-    /**
-     * The name of the network for the TPU node. It must be a preexisting Google
-     * Compute Engine network. If none is provided, "default" will be used.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Optional. Specifies networking queue count for TPU VM instance's network
-     * interface.
-     *
-     * @var int
-     */
-    public $queueCount;
-    /**
-     * The name of the subnetwork for the TPU node. It must be a preexisting
-     * Google Compute Engine subnetwork. If none is provided, "default" will be
-     * used.
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Allows the TPU node to send and receive packets with non-matching
-     * destination or source IPs. This is required if you plan to use the TPU
-     * workers to forward routes.
-     *
-     * @param bool $canIpForward
-     */
-    public function setCanIpForward($canIpForward)
+namespace Google\Service\TPU {
+    class NetworkConfig extends \Google\Model
     {
+        /**
+         * Allows the TPU node to send and receive packets with non-matching
+         * destination or source IPs. This is required if you plan to use the TPU
+         * workers to forward routes.
+         *
+         * @var bool
+         */
+        public $canIpForward;
+        /**
+         * Indicates that external IP addresses would be associated with the TPU
+         * workers. If set to false, the specified subnetwork or network should have
+         * Private Google Access enabled.
+         *
+         * @var bool
+         */
+        public $enableExternalIps;
+        /**
+         * The name of the network for the TPU node. It must be a preexisting Google
+         * Compute Engine network. If none is provided, "default" will be used.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Optional. Specifies networking queue count for TPU VM instance's network
+         * interface.
+         *
+         * @var int
+         */
+        public $queueCount;
+        /**
+         * The name of the subnetwork for the TPU node. It must be a preexisting
+         * Google Compute Engine subnetwork. If none is provided, "default" will be
+         * used.
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Allows the TPU node to send and receive packets with non-matching
+         * destination or source IPs. This is required if you plan to use the TPU
+         * workers to forward routes.
+         *
+         * @param bool $canIpForward
+         */
+        public function setCanIpForward($canIpForward)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanIpForward()
+        {
+        }
+        /**
+         * Indicates that external IP addresses would be associated with the TPU
+         * workers. If set to false, the specified subnetwork or network should have
+         * Private Google Access enabled.
+         *
+         * @param bool $enableExternalIps
+         */
+        public function setEnableExternalIps($enableExternalIps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableExternalIps()
+        {
+        }
+        /**
+         * The name of the network for the TPU node. It must be a preexisting Google
+         * Compute Engine network. If none is provided, "default" will be used.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. Specifies networking queue count for TPU VM instance's network
+         * interface.
+         *
+         * @param int $queueCount
+         */
+        public function setQueueCount($queueCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQueueCount()
+        {
+        }
+        /**
+         * The name of the subnetwork for the TPU node. It must be a preexisting
+         * Google Compute Engine subnetwork. If none is provided, "default" will be
+         * used.
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TPU\NetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanIpForward()
-    {
-    }
-    /**
-     * Indicates that external IP addresses would be associated with the TPU
-     * workers. If set to false, the specified subnetwork or network should have
-     * Private Google Access enabled.
-     *
-     * @param bool $enableExternalIps
-     */
-    public function setEnableExternalIps($enableExternalIps)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableExternalIps()
-    {
-    }
-    /**
-     * The name of the network for the TPU node. It must be a preexisting Google
-     * Compute Engine network. If none is provided, "default" will be used.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. Specifies networking queue count for TPU VM instance's network
-     * interface.
-     *
-     * @param int $queueCount
-     */
-    public function setQueueCount($queueCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getQueueCount()
-    {
-    }
-    /**
-     * The name of the subnetwork for the TPU node. It must be a preexisting
-     * Google Compute Engine subnetwork. If none is provided, "default" will be
-     * used.
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_TPU_NetworkConfig extends \Google\Service\TPU\NetworkConfig
     {
     }
 }

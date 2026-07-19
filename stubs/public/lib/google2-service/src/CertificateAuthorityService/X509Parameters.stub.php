@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class X509Parameters extends \Google\Collection
-{
-    protected $collection_key = 'policyIds';
-    protected $additionalExtensionsType = X509Extension::class;
-    protected $additionalExtensionsDataType = 'array';
-    /**
-     * Optional. Describes Online Certificate Status Protocol (OCSP) endpoint
-     * addresses that appear in the "Authority Information Access" extension in
-     * the certificate.
-     *
-     * @var string[]
-     */
-    public $aiaOcspServers;
-    protected $caOptionsType = CaOptions::class;
-    protected $caOptionsDataType = '';
-    protected $keyUsageType = KeyUsage::class;
-    protected $keyUsageDataType = '';
-    protected $nameConstraintsType = NameConstraints::class;
-    protected $nameConstraintsDataType = '';
-    protected $policyIdsType = ObjectId::class;
-    protected $policyIdsDataType = 'array';
-    /**
-     * Optional. Describes custom X.509 extensions.
-     *
-     * @param X509Extension[] $additionalExtensions
-     */
-    public function setAdditionalExtensions($additionalExtensions)
+namespace Google\Service\CertificateAuthorityService {
+    class X509Parameters extends \Google\Collection
     {
+        protected $collection_key = 'policyIds';
+        protected $additionalExtensionsType = X509Extension::class;
+        protected $additionalExtensionsDataType = 'array';
+        /**
+         * Optional. Describes Online Certificate Status Protocol (OCSP) endpoint
+         * addresses that appear in the "Authority Information Access" extension in
+         * the certificate.
+         *
+         * @var string[]
+         */
+        public $aiaOcspServers;
+        protected $caOptionsType = CaOptions::class;
+        protected $caOptionsDataType = '';
+        protected $keyUsageType = KeyUsage::class;
+        protected $keyUsageDataType = '';
+        protected $nameConstraintsType = NameConstraints::class;
+        protected $nameConstraintsDataType = '';
+        protected $policyIdsType = ObjectId::class;
+        protected $policyIdsDataType = 'array';
+        /**
+         * Optional. Describes custom X.509 extensions.
+         *
+         * @param X509Extension[] $additionalExtensions
+         */
+        public function setAdditionalExtensions($additionalExtensions)
+        {
+        }
+        /**
+         * @return X509Extension[]
+         */
+        public function getAdditionalExtensions()
+        {
+        }
+        /**
+         * Optional. Describes Online Certificate Status Protocol (OCSP) endpoint
+         * addresses that appear in the "Authority Information Access" extension in
+         * the certificate.
+         *
+         * @param string[] $aiaOcspServers
+         */
+        public function setAiaOcspServers($aiaOcspServers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAiaOcspServers()
+        {
+        }
+        /**
+         * Optional. Describes options in this X509Parameters that are relevant in a
+         * CA certificate. If not specified, a default basic constraints extension
+         * with `is_ca=false` will be added for leaf certificates.
+         *
+         * @param CaOptions $caOptions
+         */
+        public function setCaOptions(CaOptions $caOptions)
+        {
+        }
+        /**
+         * @return CaOptions
+         */
+        public function getCaOptions()
+        {
+        }
+        /**
+         * Optional. Indicates the intended use for keys that correspond to a
+         * certificate.
+         *
+         * @param KeyUsage $keyUsage
+         */
+        public function setKeyUsage(KeyUsage $keyUsage)
+        {
+        }
+        /**
+         * @return KeyUsage
+         */
+        public function getKeyUsage()
+        {
+        }
+        /**
+         * Optional. Describes the X.509 name constraints extension.
+         *
+         * @param NameConstraints $nameConstraints
+         */
+        public function setNameConstraints(NameConstraints $nameConstraints)
+        {
+        }
+        /**
+         * @return NameConstraints
+         */
+        public function getNameConstraints()
+        {
+        }
+        /**
+         * Optional. Describes the X.509 certificate policy object identifiers, per
+         * https://tools.ietf.org/html/rfc5280#section-4.2.1.4.
+         *
+         * @param ObjectId[] $policyIds
+         */
+        public function setPolicyIds($policyIds)
+        {
+        }
+        /**
+         * @return ObjectId[]
+         */
+        public function getPolicyIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return X509Extension[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\X509Parameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalExtensions()
-    {
-    }
-    /**
-     * Optional. Describes Online Certificate Status Protocol (OCSP) endpoint
-     * addresses that appear in the "Authority Information Access" extension in
-     * the certificate.
-     *
-     * @param string[] $aiaOcspServers
-     */
-    public function setAiaOcspServers($aiaOcspServers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAiaOcspServers()
-    {
-    }
-    /**
-     * Optional. Describes options in this X509Parameters that are relevant in a
-     * CA certificate. If not specified, a default basic constraints extension
-     * with `is_ca=false` will be added for leaf certificates.
-     *
-     * @param CaOptions $caOptions
-     */
-    public function setCaOptions(CaOptions $caOptions)
-    {
-    }
-    /**
-     * @return CaOptions
-     */
-    public function getCaOptions()
-    {
-    }
-    /**
-     * Optional. Indicates the intended use for keys that correspond to a
-     * certificate.
-     *
-     * @param KeyUsage $keyUsage
-     */
-    public function setKeyUsage(KeyUsage $keyUsage)
-    {
-    }
-    /**
-     * @return KeyUsage
-     */
-    public function getKeyUsage()
-    {
-    }
-    /**
-     * Optional. Describes the X.509 name constraints extension.
-     *
-     * @param NameConstraints $nameConstraints
-     */
-    public function setNameConstraints(NameConstraints $nameConstraints)
-    {
-    }
-    /**
-     * @return NameConstraints
-     */
-    public function getNameConstraints()
-    {
-    }
-    /**
-     * Optional. Describes the X.509 certificate policy object identifiers, per
-     * https://tools.ietf.org/html/rfc5280#section-4.2.1.4.
-     *
-     * @param ObjectId[] $policyIds
-     */
-    public function setPolicyIds($policyIds)
-    {
-    }
-    /**
-     * @return ObjectId[]
-     */
-    public function getPolicyIds()
+    class Google_Service_CertificateAuthorityService_X509Parameters extends \Google\Service\CertificateAuthorityService\X509Parameters
     {
     }
 }

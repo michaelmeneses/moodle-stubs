@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchMigrateResourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'migrateResourceResponses';
-    protected $migrateResourceResponsesType = GoogleCloudAiplatformV1MigrateResourceResponse::class;
-    protected $migrateResourceResponsesDataType = 'array';
-    /**
-     * Successfully migrated resources.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceResponse[] $migrateResourceResponses
-     */
-    public function setMigrateResourceResponses($migrateResourceResponses)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchMigrateResourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'migrateResourceResponses';
+        protected $migrateResourceResponsesType = GoogleCloudAiplatformV1MigrateResourceResponse::class;
+        protected $migrateResourceResponsesDataType = 'array';
+        /**
+         * Successfully migrated resources.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceResponse[] $migrateResourceResponses
+         */
+        public function setMigrateResourceResponses($migrateResourceResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceResponse[]
+         */
+        public function getMigrateResourceResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MigrateResourceResponse[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrateResourceResponses()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchMigrateResourcesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesResponse
     {
     }
 }

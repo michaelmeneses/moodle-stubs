@@ -21,185 +21,194 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Offer extends \Google\Collection
-{
-    protected $collection_key = 'priceByResources';
-    protected $constraintsType = GoogleCloudChannelV1Constraints::class;
-    protected $constraintsDataType = '';
-    /**
-     * The deal code of the offer to get a special promotion or discount.
-     *
-     * @var string
-     */
-    public $dealCode;
-    /**
-     * Output only. End of the Offer validity time.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $marketingInfoType = GoogleCloudChannelV1MarketingInfo::class;
-    protected $marketingInfoDataType = '';
-    /**
-     * Resource Name of the Offer. Format: accounts/{account_id}/offers/{offer_id}
-     *
-     * @var string
-     */
-    public $name;
-    protected $parameterDefinitionsType = GoogleCloudChannelV1ParameterDefinition::class;
-    protected $parameterDefinitionsDataType = 'array';
-    protected $planType = GoogleCloudChannelV1Plan::class;
-    protected $planDataType = '';
-    protected $priceByResourcesType = GoogleCloudChannelV1PriceByResource::class;
-    protected $priceByResourcesDataType = 'array';
-    protected $skuType = GoogleCloudChannelV1Sku::class;
-    protected $skuDataType = '';
-    /**
-     * Start of the Offer validity time.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Constraints on transacting the Offer.
-     *
-     * @param GoogleCloudChannelV1Constraints $constraints
-     */
-    public function setConstraints(GoogleCloudChannelV1Constraints $constraints)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Offer extends \Google\Collection
     {
+        protected $collection_key = 'priceByResources';
+        protected $constraintsType = GoogleCloudChannelV1Constraints::class;
+        protected $constraintsDataType = '';
+        /**
+         * The deal code of the offer to get a special promotion or discount.
+         *
+         * @var string
+         */
+        public $dealCode;
+        /**
+         * Output only. End of the Offer validity time.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $marketingInfoType = GoogleCloudChannelV1MarketingInfo::class;
+        protected $marketingInfoDataType = '';
+        /**
+         * Resource Name of the Offer. Format: accounts/{account_id}/offers/{offer_id}
+         *
+         * @var string
+         */
+        public $name;
+        protected $parameterDefinitionsType = GoogleCloudChannelV1ParameterDefinition::class;
+        protected $parameterDefinitionsDataType = 'array';
+        protected $planType = GoogleCloudChannelV1Plan::class;
+        protected $planDataType = '';
+        protected $priceByResourcesType = GoogleCloudChannelV1PriceByResource::class;
+        protected $priceByResourcesDataType = 'array';
+        protected $skuType = GoogleCloudChannelV1Sku::class;
+        protected $skuDataType = '';
+        /**
+         * Start of the Offer validity time.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Constraints on transacting the Offer.
+         *
+         * @param GoogleCloudChannelV1Constraints $constraints
+         */
+        public function setConstraints(GoogleCloudChannelV1Constraints $constraints)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Constraints
+         */
+        public function getConstraints()
+        {
+        }
+        /**
+         * The deal code of the offer to get a special promotion or discount.
+         *
+         * @param string $dealCode
+         */
+        public function setDealCode($dealCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDealCode()
+        {
+        }
+        /**
+         * Output only. End of the Offer validity time.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Marketing information for the Offer.
+         *
+         * @param GoogleCloudChannelV1MarketingInfo $marketingInfo
+         */
+        public function setMarketingInfo(GoogleCloudChannelV1MarketingInfo $marketingInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1MarketingInfo
+         */
+        public function getMarketingInfo()
+        {
+        }
+        /**
+         * Resource Name of the Offer. Format: accounts/{account_id}/offers/{offer_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Parameters required to use current Offer to purchase.
+         *
+         * @param GoogleCloudChannelV1ParameterDefinition[] $parameterDefinitions
+         */
+        public function setParameterDefinitions($parameterDefinitions)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ParameterDefinition[]
+         */
+        public function getParameterDefinitions()
+        {
+        }
+        /**
+         * Describes the payment plan for the Offer.
+         *
+         * @param GoogleCloudChannelV1Plan $plan
+         */
+        public function setPlan(GoogleCloudChannelV1Plan $plan)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Plan
+         */
+        public function getPlan()
+        {
+        }
+        /**
+         * Price for each monetizable resource type.
+         *
+         * @param GoogleCloudChannelV1PriceByResource[] $priceByResources
+         */
+        public function setPriceByResources($priceByResources)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1PriceByResource[]
+         */
+        public function getPriceByResources()
+        {
+        }
+        /**
+         * SKU the offer is associated with.
+         *
+         * @param GoogleCloudChannelV1Sku $sku
+         */
+        public function setSku(GoogleCloudChannelV1Sku $sku)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Sku
+         */
+        public function getSku()
+        {
+        }
+        /**
+         * Start of the Offer validity time.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Constraints
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Offer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraints()
-    {
-    }
-    /**
-     * The deal code of the offer to get a special promotion or discount.
-     *
-     * @param string $dealCode
-     */
-    public function setDealCode($dealCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDealCode()
-    {
-    }
-    /**
-     * Output only. End of the Offer validity time.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Marketing information for the Offer.
-     *
-     * @param GoogleCloudChannelV1MarketingInfo $marketingInfo
-     */
-    public function setMarketingInfo(GoogleCloudChannelV1MarketingInfo $marketingInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1MarketingInfo
-     */
-    public function getMarketingInfo()
-    {
-    }
-    /**
-     * Resource Name of the Offer. Format: accounts/{account_id}/offers/{offer_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Parameters required to use current Offer to purchase.
-     *
-     * @param GoogleCloudChannelV1ParameterDefinition[] $parameterDefinitions
-     */
-    public function setParameterDefinitions($parameterDefinitions)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1ParameterDefinition[]
-     */
-    public function getParameterDefinitions()
-    {
-    }
-    /**
-     * Describes the payment plan for the Offer.
-     *
-     * @param GoogleCloudChannelV1Plan $plan
-     */
-    public function setPlan(GoogleCloudChannelV1Plan $plan)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Plan
-     */
-    public function getPlan()
-    {
-    }
-    /**
-     * Price for each monetizable resource type.
-     *
-     * @param GoogleCloudChannelV1PriceByResource[] $priceByResources
-     */
-    public function setPriceByResources($priceByResources)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1PriceByResource[]
-     */
-    public function getPriceByResources()
-    {
-    }
-    /**
-     * SKU the offer is associated with.
-     *
-     * @param GoogleCloudChannelV1Sku $sku
-     */
-    public function setSku(GoogleCloudChannelV1Sku $sku)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Sku
-     */
-    public function getSku()
-    {
-    }
-    /**
-     * Start of the Offer validity time.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Offer extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Offer
     {
     }
 }

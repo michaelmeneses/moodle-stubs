@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class GeneratePlayGroupingApiTokenResponse extends \Google\Model
-{
-    protected $tokenType = PlayGroupingApiToken::class;
-    protected $tokenDataType = '';
-    /**
-     * Token for accessing the Play Grouping API.
-     *
-     * @param PlayGroupingApiToken $token
-     */
-    public function setToken(PlayGroupingApiToken $token)
+namespace Google\Service\Games {
+    class GeneratePlayGroupingApiTokenResponse extends \Google\Model
     {
+        protected $tokenType = PlayGroupingApiToken::class;
+        protected $tokenDataType = '';
+        /**
+         * Token for accessing the Play Grouping API.
+         *
+         * @param PlayGroupingApiToken $token
+         */
+        public function setToken(PlayGroupingApiToken $token)
+        {
+        }
+        /**
+         * @return PlayGroupingApiToken
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlayGroupingApiToken
+     * Runtime class alias of \Google\Service\Games\GeneratePlayGroupingApiTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
+    class Google_Service_Games_GeneratePlayGroupingApiTokenResponse extends \Google\Service\Games\GeneratePlayGroupingApiTokenResponse
     {
     }
 }

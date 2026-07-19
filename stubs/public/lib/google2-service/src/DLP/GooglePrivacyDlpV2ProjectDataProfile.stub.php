@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ProjectDataProfile extends \Google\Model
-{
-    protected $dataRiskLevelType = GooglePrivacyDlpV2DataRiskLevel::class;
-    protected $dataRiskLevelDataType = '';
-    /**
-     * The number of file store data profiles generated for this project.
-     *
-     * @var string
-     */
-    public $fileStoreDataProfileCount;
-    /**
-     * The resource name of the profile.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The last time the profile was generated.
-     *
-     * @var string
-     */
-    public $profileLastGenerated;
-    protected $profileStatusType = GooglePrivacyDlpV2ProfileStatus::class;
-    protected $profileStatusDataType = '';
-    /**
-     * Project ID or account that was profiled.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
-    protected $sensitivityScoreDataType = '';
-    /**
-     * The number of table data profiles generated for this project.
-     *
-     * @var string
-     */
-    public $tableDataProfileCount;
-    /**
-     * The data risk level of this project.
-     *
-     * @param GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel
-     */
-    public function setDataRiskLevel(GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ProjectDataProfile extends \Google\Model
     {
+        protected $dataRiskLevelType = GooglePrivacyDlpV2DataRiskLevel::class;
+        protected $dataRiskLevelDataType = '';
+        /**
+         * The number of file store data profiles generated for this project.
+         *
+         * @var string
+         */
+        public $fileStoreDataProfileCount;
+        /**
+         * The resource name of the profile.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The last time the profile was generated.
+         *
+         * @var string
+         */
+        public $profileLastGenerated;
+        protected $profileStatusType = GooglePrivacyDlpV2ProfileStatus::class;
+        protected $profileStatusDataType = '';
+        /**
+         * Project ID or account that was profiled.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
+        protected $sensitivityScoreDataType = '';
+        /**
+         * The number of table data profiles generated for this project.
+         *
+         * @var string
+         */
+        public $tableDataProfileCount;
+        /**
+         * The data risk level of this project.
+         *
+         * @param GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel
+         */
+        public function setDataRiskLevel(GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DataRiskLevel
+         */
+        public function getDataRiskLevel()
+        {
+        }
+        /**
+         * The number of file store data profiles generated for this project.
+         *
+         * @param string $fileStoreDataProfileCount
+         */
+        public function setFileStoreDataProfileCount($fileStoreDataProfileCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileStoreDataProfileCount()
+        {
+        }
+        /**
+         * The resource name of the profile.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The last time the profile was generated.
+         *
+         * @param string $profileLastGenerated
+         */
+        public function setProfileLastGenerated($profileLastGenerated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileLastGenerated()
+        {
+        }
+        /**
+         * Success or error status of the last attempt to profile the project.
+         *
+         * @param GooglePrivacyDlpV2ProfileStatus $profileStatus
+         */
+        public function setProfileStatus(GooglePrivacyDlpV2ProfileStatus $profileStatus)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ProfileStatus
+         */
+        public function getProfileStatus()
+        {
+        }
+        /**
+         * Project ID or account that was profiled.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * The sensitivity score of this project.
+         *
+         * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
+         */
+        public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SensitivityScore
+         */
+        public function getSensitivityScore()
+        {
+        }
+        /**
+         * The number of table data profiles generated for this project.
+         *
+         * @param string $tableDataProfileCount
+         */
+        public function setTableDataProfileCount($tableDataProfileCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableDataProfileCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DataRiskLevel
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ProjectDataProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataRiskLevel()
-    {
-    }
-    /**
-     * The number of file store data profiles generated for this project.
-     *
-     * @param string $fileStoreDataProfileCount
-     */
-    public function setFileStoreDataProfileCount($fileStoreDataProfileCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileStoreDataProfileCount()
-    {
-    }
-    /**
-     * The resource name of the profile.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The last time the profile was generated.
-     *
-     * @param string $profileLastGenerated
-     */
-    public function setProfileLastGenerated($profileLastGenerated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileLastGenerated()
-    {
-    }
-    /**
-     * Success or error status of the last attempt to profile the project.
-     *
-     * @param GooglePrivacyDlpV2ProfileStatus $profileStatus
-     */
-    public function setProfileStatus(GooglePrivacyDlpV2ProfileStatus $profileStatus)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ProfileStatus
-     */
-    public function getProfileStatus()
-    {
-    }
-    /**
-     * Project ID or account that was profiled.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * The sensitivity score of this project.
-     *
-     * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
-     */
-    public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SensitivityScore
-     */
-    public function getSensitivityScore()
-    {
-    }
-    /**
-     * The number of table data profiles generated for this project.
-     *
-     * @param string $tableDataProfileCount
-     */
-    public function setTableDataProfileCount($tableDataProfileCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableDataProfileCount()
+    class Google_Service_DLP_GooglePrivacyDlpV2ProjectDataProfile extends \Google\Service\DLP\GooglePrivacyDlpV2ProjectDataProfile
     {
     }
 }

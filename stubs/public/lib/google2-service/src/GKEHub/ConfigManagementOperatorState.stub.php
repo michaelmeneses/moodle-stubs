@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementOperatorState extends \Google\Collection
-{
-    /**
-     * Deployment's state cannot be determined.
-     */
-    public const DEPLOYMENT_STATE_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * Deployment is not installed.
-     */
-    public const DEPLOYMENT_STATE_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Deployment is installed.
-     */
-    public const DEPLOYMENT_STATE_INSTALLED = 'INSTALLED';
-    /**
-     * Deployment was attempted to be installed, but has errors.
-     */
-    public const DEPLOYMENT_STATE_ERROR = 'ERROR';
-    /**
-     * Deployment is installing or terminating
-     */
-    public const DEPLOYMENT_STATE_PENDING = 'PENDING';
-    protected $collection_key = 'errors';
-    /**
-     * The state of the Operator's deployment.
-     *
-     * @var string
-     */
-    public $deploymentState;
-    protected $errorsType = ConfigManagementInstallError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The semenatic version number of the operator.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The state of the Operator's deployment.
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
-     * ERROR, PENDING
-     *
-     * @param self::DEPLOYMENT_STATE_* $deploymentState
-     */
-    public function setDeploymentState($deploymentState)
+namespace Google\Service\GKEHub {
+    class ConfigManagementOperatorState extends \Google\Collection
     {
+        /**
+         * Deployment's state cannot be determined.
+         */
+        public const DEPLOYMENT_STATE_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * Deployment is not installed.
+         */
+        public const DEPLOYMENT_STATE_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Deployment is installed.
+         */
+        public const DEPLOYMENT_STATE_INSTALLED = 'INSTALLED';
+        /**
+         * Deployment was attempted to be installed, but has errors.
+         */
+        public const DEPLOYMENT_STATE_ERROR = 'ERROR';
+        /**
+         * Deployment is installing or terminating
+         */
+        public const DEPLOYMENT_STATE_PENDING = 'PENDING';
+        protected $collection_key = 'errors';
+        /**
+         * The state of the Operator's deployment.
+         *
+         * @var string
+         */
+        public $deploymentState;
+        protected $errorsType = ConfigManagementInstallError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The semenatic version number of the operator.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The state of the Operator's deployment.
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
+         * ERROR, PENDING
+         *
+         * @param self::DEPLOYMENT_STATE_* $deploymentState
+         */
+        public function setDeploymentState($deploymentState)
+        {
+        }
+        /**
+         * @return self::DEPLOYMENT_STATE_*
+         */
+        public function getDeploymentState()
+        {
+        }
+        /**
+         * Install errors.
+         *
+         * @param ConfigManagementInstallError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ConfigManagementInstallError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The semenatic version number of the operator.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DEPLOYMENT_STATE_*
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementOperatorState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentState()
-    {
-    }
-    /**
-     * Install errors.
-     *
-     * @param ConfigManagementInstallError[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return ConfigManagementInstallError[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The semenatic version number of the operator.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_ConfigManagementOperatorState extends \Google\Service\GKEHub\ConfigManagementOperatorState
     {
     }
 }

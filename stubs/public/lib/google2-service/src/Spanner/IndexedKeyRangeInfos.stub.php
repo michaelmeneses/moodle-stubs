@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class IndexedKeyRangeInfos extends \Google\Model
-{
-    protected $keyRangeInfosType = KeyRangeInfos::class;
-    protected $keyRangeInfosDataType = 'map';
-    /**
-     * A (sparse) mapping from key bucket index to the KeyRangeInfos for that key
-     * bucket.
-     *
-     * @param KeyRangeInfos[] $keyRangeInfos
-     */
-    public function setKeyRangeInfos($keyRangeInfos)
+namespace Google\Service\Spanner {
+    class IndexedKeyRangeInfos extends \Google\Model
     {
+        protected $keyRangeInfosType = KeyRangeInfos::class;
+        protected $keyRangeInfosDataType = 'map';
+        /**
+         * A (sparse) mapping from key bucket index to the KeyRangeInfos for that key
+         * bucket.
+         *
+         * @param KeyRangeInfos[] $keyRangeInfos
+         */
+        public function setKeyRangeInfos($keyRangeInfos)
+        {
+        }
+        /**
+         * @return KeyRangeInfos[]
+         */
+        public function getKeyRangeInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyRangeInfos[]
+     * Runtime class alias of \Google\Service\Spanner\IndexedKeyRangeInfos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyRangeInfos()
+    class Google_Service_Spanner_IndexedKeyRangeInfos extends \Google\Service\Spanner\IndexedKeyRangeInfos
     {
     }
 }

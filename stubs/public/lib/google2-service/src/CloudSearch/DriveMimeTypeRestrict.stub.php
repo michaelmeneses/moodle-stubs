@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DriveMimeTypeRestrict extends \Google\Model
-{
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    public const TYPE_PDF = 'PDF';
-    public const TYPE_DOCUMENT = 'DOCUMENT';
-    public const TYPE_PRESENTATION = 'PRESENTATION';
-    public const TYPE_SPREADSHEET = 'SPREADSHEET';
-    public const TYPE_FORM = 'FORM';
-    public const TYPE_DRAWING = 'DRAWING';
-    public const TYPE_SCRIPT = 'SCRIPT';
-    public const TYPE_MAP = 'MAP';
-    public const TYPE_IMAGE = 'IMAGE';
-    public const TYPE_AUDIO = 'AUDIO';
-    public const TYPE_VIDEO = 'VIDEO';
-    public const TYPE_FOLDER = 'FOLDER';
-    public const TYPE_ARCHIVE = 'ARCHIVE';
-    public const TYPE_SITE = 'SITE';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudSearch {
+    class DriveMimeTypeRestrict extends \Google\Model
     {
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        public const TYPE_PDF = 'PDF';
+        public const TYPE_DOCUMENT = 'DOCUMENT';
+        public const TYPE_PRESENTATION = 'PRESENTATION';
+        public const TYPE_SPREADSHEET = 'SPREADSHEET';
+        public const TYPE_FORM = 'FORM';
+        public const TYPE_DRAWING = 'DRAWING';
+        public const TYPE_SCRIPT = 'SCRIPT';
+        public const TYPE_MAP = 'MAP';
+        public const TYPE_IMAGE = 'IMAGE';
+        public const TYPE_AUDIO = 'AUDIO';
+        public const TYPE_VIDEO = 'VIDEO';
+        public const TYPE_FOLDER = 'FOLDER';
+        public const TYPE_ARCHIVE = 'ARCHIVE';
+        public const TYPE_SITE = 'SITE';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\CloudSearch\DriveMimeTypeRestrict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_CloudSearch_DriveMimeTypeRestrict extends \Google\Service\CloudSearch\DriveMimeTypeRestrict
     {
     }
 }

@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonWebpageConditionInfo extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const OPERAND_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const OPERAND_UNKNOWN = 'UNKNOWN';
-    /**
-     * Operand denoting a webpage URL targeting condition.
-     */
-    public const OPERAND_URL = 'URL';
-    /**
-     * Operand denoting a webpage category targeting condition.
-     */
-    public const OPERAND_CATEGORY = 'CATEGORY';
-    /**
-     * Operand denoting a webpage title targeting condition.
-     */
-    public const OPERAND_PAGE_TITLE = 'PAGE_TITLE';
-    /**
-     * Operand denoting a webpage content targeting condition.
-     */
-    public const OPERAND_PAGE_CONTENT = 'PAGE_CONTENT';
-    /**
-     * Operand denoting a webpage custom label targeting condition.
-     */
-    public const OPERAND_CUSTOM_LABEL = 'CUSTOM_LABEL';
-    /**
-     * Not specified.
-     */
-    public const OPERATOR_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const OPERATOR_UNKNOWN = 'UNKNOWN';
-    /**
-     * The argument web condition is equal to the compared web condition.
-     */
-    public const OPERATOR_EQUALS = 'EQUALS';
-    /**
-     * The argument web condition is part of the compared web condition.
-     */
-    public const OPERATOR_CONTAINS = 'CONTAINS';
-    /**
-     * Argument of webpage targeting condition.
-     *
-     * @var string
-     */
-    public $argument;
-    /**
-     * Operand of webpage targeting condition.
-     *
-     * @var string
-     */
-    public $operand;
-    /**
-     * Operator of webpage targeting condition.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Argument of webpage targeting condition.
-     *
-     * @param string $argument
-     */
-    public function setArgument($argument)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonWebpageConditionInfo extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const OPERAND_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const OPERAND_UNKNOWN = 'UNKNOWN';
+        /**
+         * Operand denoting a webpage URL targeting condition.
+         */
+        public const OPERAND_URL = 'URL';
+        /**
+         * Operand denoting a webpage category targeting condition.
+         */
+        public const OPERAND_CATEGORY = 'CATEGORY';
+        /**
+         * Operand denoting a webpage title targeting condition.
+         */
+        public const OPERAND_PAGE_TITLE = 'PAGE_TITLE';
+        /**
+         * Operand denoting a webpage content targeting condition.
+         */
+        public const OPERAND_PAGE_CONTENT = 'PAGE_CONTENT';
+        /**
+         * Operand denoting a webpage custom label targeting condition.
+         */
+        public const OPERAND_CUSTOM_LABEL = 'CUSTOM_LABEL';
+        /**
+         * Not specified.
+         */
+        public const OPERATOR_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const OPERATOR_UNKNOWN = 'UNKNOWN';
+        /**
+         * The argument web condition is equal to the compared web condition.
+         */
+        public const OPERATOR_EQUALS = 'EQUALS';
+        /**
+         * The argument web condition is part of the compared web condition.
+         */
+        public const OPERATOR_CONTAINS = 'CONTAINS';
+        /**
+         * Argument of webpage targeting condition.
+         *
+         * @var string
+         */
+        public $argument;
+        /**
+         * Operand of webpage targeting condition.
+         *
+         * @var string
+         */
+        public $operand;
+        /**
+         * Operator of webpage targeting condition.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Argument of webpage targeting condition.
+         *
+         * @param string $argument
+         */
+        public function setArgument($argument)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArgument()
+        {
+        }
+        /**
+         * Operand of webpage targeting condition.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, URL, CATEGORY, PAGE_TITLE,
+         * PAGE_CONTENT, CUSTOM_LABEL
+         *
+         * @param self::OPERAND_* $operand
+         */
+        public function setOperand($operand)
+        {
+        }
+        /**
+         * @return self::OPERAND_*
+         */
+        public function getOperand()
+        {
+        }
+        /**
+         * Operator of webpage targeting condition.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, EQUALS, CONTAINS
+         *
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonWebpageConditionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgument()
-    {
-    }
-    /**
-     * Operand of webpage targeting condition.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, URL, CATEGORY, PAGE_TITLE,
-     * PAGE_CONTENT, CUSTOM_LABEL
-     *
-     * @param self::OPERAND_* $operand
-     */
-    public function setOperand($operand)
-    {
-    }
-    /**
-     * @return self::OPERAND_*
-     */
-    public function getOperand()
-    {
-    }
-    /**
-     * Operator of webpage targeting condition.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, EQUALS, CONTAINS
-     *
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonWebpageConditionInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonWebpageConditionInfo
     {
     }
 }

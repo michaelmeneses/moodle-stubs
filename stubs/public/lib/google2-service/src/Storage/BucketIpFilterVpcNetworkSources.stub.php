@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketIpFilterVpcNetworkSources extends \Google\Collection
-{
-    protected $collection_key = 'allowedIpCidrRanges';
-    /**
-     * The list of IPv4, IPv6 cidr ranges subnetworks that are allowed to access
-     * the bucket.
-     *
-     * @var string[]
-     */
-    public $allowedIpCidrRanges;
-    /**
-     * Name of the network. Format:
-     * projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * The list of IPv4, IPv6 cidr ranges subnetworks that are allowed to access
-     * the bucket.
-     *
-     * @param string[] $allowedIpCidrRanges
-     */
-    public function setAllowedIpCidrRanges($allowedIpCidrRanges)
+namespace Google\Service\Storage {
+    class BucketIpFilterVpcNetworkSources extends \Google\Collection
     {
+        protected $collection_key = 'allowedIpCidrRanges';
+        /**
+         * The list of IPv4, IPv6 cidr ranges subnetworks that are allowed to access
+         * the bucket.
+         *
+         * @var string[]
+         */
+        public $allowedIpCidrRanges;
+        /**
+         * Name of the network. Format:
+         * projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * The list of IPv4, IPv6 cidr ranges subnetworks that are allowed to access
+         * the bucket.
+         *
+         * @param string[] $allowedIpCidrRanges
+         */
+        public function setAllowedIpCidrRanges($allowedIpCidrRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedIpCidrRanges()
+        {
+        }
+        /**
+         * Name of the network. Format:
+         * projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Storage\BucketIpFilterVpcNetworkSources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedIpCidrRanges()
-    {
-    }
-    /**
-     * Name of the network. Format:
-     * projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
+    class Google_Service_Storage_BucketIpFilterVpcNetworkSources extends \Google\Service\Storage\BucketIpFilterVpcNetworkSources
     {
     }
 }

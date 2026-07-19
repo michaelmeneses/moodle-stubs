@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TrimWhitespaceRequest extends \Google\Model
-{
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The range whose cells to trim.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
+namespace Google\Service\Sheets {
+    class TrimWhitespaceRequest extends \Google\Model
     {
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The range whose cells to trim.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridRange
+     * Runtime class alias of \Google\Service\Sheets\TrimWhitespaceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
+    class Google_Service_Sheets_TrimWhitespaceRequest extends \Google\Service\Sheets\TrimWhitespaceRequest
     {
     }
 }

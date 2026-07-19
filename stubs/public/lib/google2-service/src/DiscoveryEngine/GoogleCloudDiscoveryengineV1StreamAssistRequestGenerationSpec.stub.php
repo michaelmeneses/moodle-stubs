@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1StreamAssistRequestGenerationSpec extends \Google\Model
-{
-    /**
-     * Optional. The Vertex AI model_id used for the generative model. If not set,
-     * the default Assistant model will be used.
-     *
-     * @var string
-     */
-    public $modelId;
-    /**
-     * Optional. The Vertex AI model_id used for the generative model. If not set,
-     * the default Assistant model will be used.
-     *
-     * @param string $modelId
-     */
-    public function setModelId($modelId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1StreamAssistRequestGenerationSpec extends \Google\Model
     {
+        /**
+         * Optional. The Vertex AI model_id used for the generative model. If not set,
+         * the default Assistant model will be used.
+         *
+         * @var string
+         */
+        public $modelId;
+        /**
+         * Optional. The Vertex AI model_id used for the generative model. If not set,
+         * the default Assistant model will be used.
+         *
+         * @param string $modelId
+         */
+        public function setModelId($modelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistRequestGenerationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1StreamAssistRequestGenerationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistRequestGenerationSpec
     {
     }
 }

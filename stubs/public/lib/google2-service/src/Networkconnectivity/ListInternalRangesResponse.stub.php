@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListInternalRangesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $internalRangesType = InternalRange::class;
-    protected $internalRangesDataType = 'array';
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Internal ranges to be returned.
-     *
-     * @param InternalRange[] $internalRanges
-     */
-    public function setInternalRanges($internalRanges)
+namespace Google\Service\Networkconnectivity {
+    class ListInternalRangesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $internalRangesType = InternalRange::class;
+        protected $internalRangesDataType = 'array';
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Internal ranges to be returned.
+         *
+         * @param InternalRange[] $internalRanges
+         */
+        public function setInternalRanges($internalRanges)
+        {
+        }
+        /**
+         * @return InternalRange[]
+         */
+        public function getInternalRanges()
+        {
+        }
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InternalRange[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListInternalRangesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInternalRanges()
-    {
-    }
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListInternalRangesResponse extends \Google\Service\Networkconnectivity\ListInternalRangesResponse
     {
     }
 }

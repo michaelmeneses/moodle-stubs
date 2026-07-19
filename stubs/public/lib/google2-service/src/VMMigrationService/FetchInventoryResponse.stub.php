@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class FetchInventoryResponse extends \Google\Model
-{
-    protected $awsVmsType = AwsVmsDetails::class;
-    protected $awsVmsDataType = '';
-    protected $azureVmsType = AzureVmsDetails::class;
-    protected $azureVmsDataType = '';
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. The timestamp when the source was last queried (if the result
-     * is from the cache).
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $vmwareVmsType = VmwareVmsDetails::class;
-    protected $vmwareVmsDataType = '';
-    /**
-     * The description of the VMs in a Source of type AWS.
-     *
-     * @param AwsVmsDetails $awsVms
-     */
-    public function setAwsVms(AwsVmsDetails $awsVms)
+namespace Google\Service\VMMigrationService {
+    class FetchInventoryResponse extends \Google\Model
     {
+        protected $awsVmsType = AwsVmsDetails::class;
+        protected $awsVmsDataType = '';
+        protected $azureVmsType = AzureVmsDetails::class;
+        protected $azureVmsDataType = '';
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. The timestamp when the source was last queried (if the result
+         * is from the cache).
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $vmwareVmsType = VmwareVmsDetails::class;
+        protected $vmwareVmsDataType = '';
+        /**
+         * The description of the VMs in a Source of type AWS.
+         *
+         * @param AwsVmsDetails $awsVms
+         */
+        public function setAwsVms(AwsVmsDetails $awsVms)
+        {
+        }
+        /**
+         * @return AwsVmsDetails
+         */
+        public function getAwsVms()
+        {
+        }
+        /**
+         * The description of the VMs in a Source of type Azure.
+         *
+         * @param AzureVmsDetails $azureVms
+         */
+        public function setAzureVms(AzureVmsDetails $azureVms)
+        {
+        }
+        /**
+         * @return AzureVmsDetails
+         */
+        public function getAzureVms()
+        {
+        }
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. The timestamp when the source was last queried (if the result
+         * is from the cache).
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The description of the VMs in a Source of type Vmware.
+         *
+         * @param VmwareVmsDetails $vmwareVms
+         */
+        public function setVmwareVms(VmwareVmsDetails $vmwareVms)
+        {
+        }
+        /**
+         * @return VmwareVmsDetails
+         */
+        public function getVmwareVms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsVmsDetails
+     * Runtime class alias of \Google\Service\VMMigrationService\FetchInventoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsVms()
-    {
-    }
-    /**
-     * The description of the VMs in a Source of type Azure.
-     *
-     * @param AzureVmsDetails $azureVms
-     */
-    public function setAzureVms(AzureVmsDetails $azureVms)
-    {
-    }
-    /**
-     * @return AzureVmsDetails
-     */
-    public function getAzureVms()
-    {
-    }
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. The timestamp when the source was last queried (if the result
-     * is from the cache).
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The description of the VMs in a Source of type Vmware.
-     *
-     * @param VmwareVmsDetails $vmwareVms
-     */
-    public function setVmwareVms(VmwareVmsDetails $vmwareVms)
-    {
-    }
-    /**
-     * @return VmwareVmsDetails
-     */
-    public function getVmwareVms()
+    class Google_Service_VMMigrationService_FetchInventoryResponse extends \Google\Service\VMMigrationService\FetchInventoryResponse
     {
     }
 }

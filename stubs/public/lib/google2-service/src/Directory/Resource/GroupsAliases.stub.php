@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "aliases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $aliases = $adminService->groups_aliases;
- *  </code>
- */
-class GroupsAliases extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Alias;
+    use Google\Service\Directory\Aliases;
     /**
-     * Removes an alias. (aliases.delete)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param string $alias The alias to be removed
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "aliases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $aliases = $adminService->groups_aliases;
+     *  </code>
      */
-    public function delete($groupKey, $alias, $optParams = [])
+    class GroupsAliases extends \Google\Service\Resource
     {
+        /**
+         * Removes an alias. (aliases.delete)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param string $alias The alias to be removed
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($groupKey, $alias, $optParams = [])
+        {
+        }
+        /**
+         * Adds an alias for the group. (aliases.insert)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param Alias $postBody
+         * @param array $optParams Optional parameters.
+         * @return Alias
+         * @throws \Google\Service\Exception
+         */
+        public function insert($groupKey, Alias $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all aliases for a group. (aliases.listGroupsAliases)
+         *
+         * @param string $groupKey Identifies the group in the API request. The value
+         * can be the group's email address, group alias, or the unique group ID.
+         * @param array $optParams Optional parameters.
+         * @return Aliases
+         * @throws \Google\Service\Exception
+         */
+        public function listGroupsAliases($groupKey, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds an alias for the group. (aliases.insert)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param Alias $postBody
-     * @param array $optParams Optional parameters.
-     * @return Alias
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\GroupsAliases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($groupKey, Alias $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all aliases for a group. (aliases.listGroupsAliases)
-     *
-     * @param string $groupKey Identifies the group in the API request. The value
-     * can be the group's email address, group alias, or the unique group ID.
-     * @param array $optParams Optional parameters.
-     * @return Aliases
-     * @throws \Google\Service\Exception
-     */
-    public function listGroupsAliases($groupKey, $optParams = [])
+    class Google_Service_Directory_Resource_GroupsAliases extends \Google\Service\Directory\Resource\GroupsAliases
     {
     }
 }

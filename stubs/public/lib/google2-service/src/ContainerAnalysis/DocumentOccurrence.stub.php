@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class DocumentOccurrence extends \Google\Collection
-{
-    protected $collection_key = 'externalDocumentRefs';
-    public $createTime;
-    public $creatorComment;
-    public $creators;
-    public $documentComment;
-    public $externalDocumentRefs;
-    public $id;
-    public $licenseListVersion;
-    public $namespace;
-    public $title;
-    public function setCreateTime($createTime)
+namespace Google\Service\ContainerAnalysis {
+    class DocumentOccurrence extends \Google\Collection
     {
+        protected $collection_key = 'externalDocumentRefs';
+        public $createTime;
+        public $creatorComment;
+        public $creators;
+        public $documentComment;
+        public $externalDocumentRefs;
+        public $id;
+        public $licenseListVersion;
+        public $namespace;
+        public $title;
+        public function setCreateTime($createTime)
+        {
+        }
+        public function getCreateTime()
+        {
+        }
+        public function setCreatorComment($creatorComment)
+        {
+        }
+        public function getCreatorComment()
+        {
+        }
+        public function setCreators($creators)
+        {
+        }
+        public function getCreators()
+        {
+        }
+        public function setDocumentComment($documentComment)
+        {
+        }
+        public function getDocumentComment()
+        {
+        }
+        public function setExternalDocumentRefs($externalDocumentRefs)
+        {
+        }
+        public function getExternalDocumentRefs()
+        {
+        }
+        public function setId($id)
+        {
+        }
+        public function getId()
+        {
+        }
+        public function setLicenseListVersion($licenseListVersion)
+        {
+        }
+        public function getLicenseListVersion()
+        {
+        }
+        public function setNamespace($namespace)
+        {
+        }
+        public function getNamespace()
+        {
+        }
+        public function setTitle($title)
+        {
+        }
+        public function getTitle()
+        {
+        }
     }
-    public function getCreateTime()
-    {
-    }
-    public function setCreatorComment($creatorComment)
-    {
-    }
-    public function getCreatorComment()
-    {
-    }
-    public function setCreators($creators)
-    {
-    }
-    public function getCreators()
-    {
-    }
-    public function setDocumentComment($documentComment)
-    {
-    }
-    public function getDocumentComment()
-    {
-    }
-    public function setExternalDocumentRefs($externalDocumentRefs)
-    {
-    }
-    public function getExternalDocumentRefs()
-    {
-    }
-    public function setId($id)
-    {
-    }
-    public function getId()
-    {
-    }
-    public function setLicenseListVersion($licenseListVersion)
-    {
-    }
-    public function getLicenseListVersion()
-    {
-    }
-    public function setNamespace($namespace)
-    {
-    }
-    public function getNamespace()
-    {
-    }
-    public function setTitle($title)
-    {
-    }
-    public function getTitle()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\DocumentOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_DocumentOccurrence extends \Google\Service\ContainerAnalysis\DocumentOccurrence
     {
     }
 }

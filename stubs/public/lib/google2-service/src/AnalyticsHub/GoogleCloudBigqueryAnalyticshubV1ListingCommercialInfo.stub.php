@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfo extends \Google\Model
-{
-    protected $cloudMarketplaceType = GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo::class;
-    protected $cloudMarketplaceDataType = '';
-    /**
-     * Output only. Details of the Marketplace Data Product associated with the
-     * Listing.
-     *
-     * @param GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace
-     */
-    public function setCloudMarketplace(GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace)
+namespace Google\Service\AnalyticsHub {
+    class GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfo extends \Google\Model
     {
+        protected $cloudMarketplaceType = GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo::class;
+        protected $cloudMarketplaceDataType = '';
+        /**
+         * Output only. Details of the Marketplace Data Product associated with the
+         * Listing.
+         *
+         * @param GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace
+         */
+        public function setCloudMarketplace(GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace)
+        {
+        }
+        /**
+         * @return GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo
+         */
+        public function getCloudMarketplace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfoGoogleCloudMarketplaceInfo
+     * Runtime class alias of \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudMarketplace()
+    class Google_Service_AnalyticsHub_GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfo extends \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1ListingCommercialInfo
     {
     }
 }

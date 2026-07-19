@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class HttpBody extends \Google\Collection
-{
-    protected $collection_key = 'extensions';
-    /**
-     * The HTTP Content-Type header value specifying the content type of the body.
-     *
-     * @var string
-     */
-    public $contentType;
-    /**
-     * The HTTP request/response body as raw binary.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Application specific response metadata. Must be set in the first response
-     * for streaming APIs.
-     *
-     * @var array[]
-     */
-    public $extensions;
-    /**
-     * The HTTP Content-Type header value specifying the content type of the body.
-     *
-     * @param string $contentType
-     */
-    public function setContentType($contentType)
+namespace Google\Service\AirQuality {
+    class HttpBody extends \Google\Collection
     {
+        protected $collection_key = 'extensions';
+        /**
+         * The HTTP Content-Type header value specifying the content type of the body.
+         *
+         * @var string
+         */
+        public $contentType;
+        /**
+         * The HTTP request/response body as raw binary.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Application specific response metadata. Must be set in the first response
+         * for streaming APIs.
+         *
+         * @var array[]
+         */
+        public $extensions;
+        /**
+         * The HTTP Content-Type header value specifying the content type of the body.
+         *
+         * @param string $contentType
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * The HTTP request/response body as raw binary.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Application specific response metadata. Must be set in the first response
+         * for streaming APIs.
+         *
+         * @param array[] $extensions
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AirQuality\HttpBody registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * The HTTP request/response body as raw binary.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Application specific response metadata. Must be set in the first response
-     * for streaming APIs.
-     *
-     * @param array[] $extensions
-     */
-    public function setExtensions($extensions)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getExtensions()
+    class Google_Service_AirQuality_HttpBody extends \Google\Service\AirQuality\HttpBody
     {
     }
 }

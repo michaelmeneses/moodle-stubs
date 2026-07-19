@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class OidcToken extends \Google\Model
-{
-    /**
-     * Audience to be used when generating OIDC token. If not specified, the URI
-     * specified in target will be used.
-     *
-     * @var string
-     */
-    public $audience;
-    /**
-     * [Service account email](https://cloud.google.com/iam/docs/service-accounts)
-     * to be used for generating OIDC token. The service account must be within
-     * the same project as the queue. The caller must have
-     * iam.serviceAccounts.actAs permission for the service account.
-     *
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * Audience to be used when generating OIDC token. If not specified, the URI
-     * specified in target will be used.
-     *
-     * @param string $audience
-     */
-    public function setAudience($audience)
+namespace Google\Service\CloudTasks {
+    class OidcToken extends \Google\Model
     {
+        /**
+         * Audience to be used when generating OIDC token. If not specified, the URI
+         * specified in target will be used.
+         *
+         * @var string
+         */
+        public $audience;
+        /**
+         * [Service account email](https://cloud.google.com/iam/docs/service-accounts)
+         * to be used for generating OIDC token. The service account must be within
+         * the same project as the queue. The caller must have
+         * iam.serviceAccounts.actAs permission for the service account.
+         *
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * Audience to be used when generating OIDC token. If not specified, the URI
+         * specified in target will be used.
+         *
+         * @param string $audience
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
+        /**
+         * [Service account email](https://cloud.google.com/iam/docs/service-accounts)
+         * to be used for generating OIDC token. The service account must be within
+         * the same project as the queue. The caller must have
+         * iam.serviceAccounts.actAs permission for the service account.
+         *
+         * @param string $serviceAccountEmail
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\OidcToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
-    {
-    }
-    /**
-     * [Service account email](https://cloud.google.com/iam/docs/service-accounts)
-     * to be used for generating OIDC token. The service account must be within
-     * the same project as the queue. The caller must have
-     * iam.serviceAccounts.actAs permission for the service account.
-     *
-     * @param string $serviceAccountEmail
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountEmail()
+    class Google_Service_CloudTasks_OidcToken extends \Google\Service\CloudTasks\OidcToken
     {
     }
 }

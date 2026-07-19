@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality\Resource;
-
-/**
- * The "currentConditions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $airqualityService = new Google\Service\AirQuality(...);
- *   $currentConditions = $airqualityService->currentConditions;
- *  </code>
- */
-class CurrentConditions extends \Google\Service\Resource
-{
+namespace Google\Service\AirQuality\Resource {
+    use Google\Service\AirQuality\LookupCurrentConditionsRequest;
+    use Google\Service\AirQuality\LookupCurrentConditionsResponse;
     /**
-     * The Current Conditions endpoint provides hourly air quality information in
-     * more than 100 countries, up to a 500 x 500 meters resolution. Includes over
-     * 70 local indexes and global air quality index and categories.
-     * (currentConditions.lookup)
-     *
-     * @param LookupCurrentConditionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LookupCurrentConditionsResponse
-     * @throws \Google\Service\Exception
+     * The "currentConditions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $airqualityService = new Google\Service\AirQuality(...);
+     *   $currentConditions = $airqualityService->currentConditions;
+     *  </code>
      */
-    public function lookup(LookupCurrentConditionsRequest $postBody, $optParams = [])
+    class CurrentConditions extends \Google\Service\Resource
+    {
+        /**
+         * The Current Conditions endpoint provides hourly air quality information in
+         * more than 100 countries, up to a 500 x 500 meters resolution. Includes over
+         * 70 local indexes and global air quality index and categories.
+         * (currentConditions.lookup)
+         *
+         * @param LookupCurrentConditionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LookupCurrentConditionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookup(LookupCurrentConditionsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AirQuality\Resource\CurrentConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AirQuality_Resource_CurrentConditions extends \Google\Service\AirQuality\Resource\CurrentConditions
     {
     }
 }

@@ -21,81 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "edits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $edits = $androidpublisherService->edits;
- *  </code>
- */
-class Edits extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\AppEdit;
     /**
-     * Commits an app edit. (edits.commit)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool changesNotSentForReview When a rejection happens, the
-     * parameter will make sure that the changes in this edit won't be reviewed
-     * until they are explicitly sent for review from within the Google Play Console
-     * UI. These changes will be added to any other changes that are not yet sent
-     * for review.
-     * @return AppEdit
-     * @throws \Google\Service\Exception
+     * The "edits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $edits = $androidpublisherService->edits;
+     *  </code>
      */
-    public function commit($packageName, $editId, $optParams = [])
+    class Edits extends \Google\Service\Resource
     {
+        /**
+         * Commits an app edit. (edits.commit)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool changesNotSentForReview When a rejection happens, the
+         * parameter will make sure that the changes in this edit won't be reviewed
+         * until they are explicitly sent for review from within the Google Play Console
+         * UI. These changes will be added to any other changes that are not yet sent
+         * for review.
+         * @return AppEdit
+         * @throws \Google\Service\Exception
+         */
+        public function commit($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an app edit. (edits.delete)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Gets an app edit. (edits.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return AppEdit
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new edit for an app. (edits.insert)
+         *
+         * @param string $packageName Package name of the app.
+         * @param AppEdit $postBody
+         * @param array $optParams Optional parameters.
+         * @return AppEdit
+         * @throws \Google\Service\Exception
+         */
+        public function insert($packageName, AppEdit $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Validates an app edit. (edits.validate)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return AppEdit
+         * @throws \Google\Service\Exception
+         */
+        public function validate($packageName, $editId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an app edit. (edits.delete)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Edits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($packageName, $editId, $optParams = [])
-    {
-    }
-    /**
-     * Gets an app edit. (edits.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return AppEdit
-     * @throws \Google\Service\Exception
-     */
-    public function get($packageName, $editId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new edit for an app. (edits.insert)
-     *
-     * @param string $packageName Package name of the app.
-     * @param AppEdit $postBody
-     * @param array $optParams Optional parameters.
-     * @return AppEdit
-     * @throws \Google\Service\Exception
-     */
-    public function insert($packageName, AppEdit $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Validates an app edit. (edits.validate)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return AppEdit
-     * @throws \Google\Service\Exception
-     */
-    public function validate($packageName, $editId, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Edits extends \Google\Service\AndroidPublisher\Resource\Edits
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Mod extends \Google\Collection
-{
-    protected $collection_key = 'oldValues';
-    protected $keysType = ModValue::class;
-    protected $keysDataType = 'array';
-    protected $newValuesType = ModValue::class;
-    protected $newValuesDataType = 'array';
-    protected $oldValuesType = ModValue::class;
-    protected $oldValuesDataType = 'array';
-    /**
-     * Returns the value of the primary key of the modified row.
-     *
-     * @param ModValue[] $keys
-     */
-    public function setKeys($keys)
+namespace Google\Service\Spanner {
+    class Mod extends \Google\Collection
     {
+        protected $collection_key = 'oldValues';
+        protected $keysType = ModValue::class;
+        protected $keysDataType = 'array';
+        protected $newValuesType = ModValue::class;
+        protected $newValuesDataType = 'array';
+        protected $oldValuesType = ModValue::class;
+        protected $oldValuesDataType = 'array';
+        /**
+         * Returns the value of the primary key of the modified row.
+         *
+         * @param ModValue[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return ModValue[]
+         */
+        public function getKeys()
+        {
+        }
+        /**
+         * Returns the new values after the change for the modified columns. Always
+         * empty for DELETE.
+         *
+         * @param ModValue[] $newValues
+         */
+        public function setNewValues($newValues)
+        {
+        }
+        /**
+         * @return ModValue[]
+         */
+        public function getNewValues()
+        {
+        }
+        /**
+         * Returns the old values before the change for the modified columns. Always
+         * empty for INSERT, or if old values are not being captured specified by
+         * value_capture_type.
+         *
+         * @param ModValue[] $oldValues
+         */
+        public function setOldValues($oldValues)
+        {
+        }
+        /**
+         * @return ModValue[]
+         */
+        public function getOldValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ModValue[]
+     * Runtime class alias of \Google\Service\Spanner\Mod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
-    {
-    }
-    /**
-     * Returns the new values after the change for the modified columns. Always
-     * empty for DELETE.
-     *
-     * @param ModValue[] $newValues
-     */
-    public function setNewValues($newValues)
-    {
-    }
-    /**
-     * @return ModValue[]
-     */
-    public function getNewValues()
-    {
-    }
-    /**
-     * Returns the old values before the change for the modified columns. Always
-     * empty for INSERT, or if old values are not being captured specified by
-     * value_capture_type.
-     *
-     * @param ModValue[] $oldValues
-     */
-    public function setOldValues($oldValues)
-    {
-    }
-    /**
-     * @return ModValue[]
-     */
-    public function getOldValues()
+    class Google_Service_Spanner_Mod extends \Google\Service\Spanner\Mod
     {
     }
 }

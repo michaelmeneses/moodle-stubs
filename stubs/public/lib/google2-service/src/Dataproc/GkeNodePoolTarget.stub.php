@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class GkeNodePoolTarget extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * Required. The target GKE node pool. Format: 'projects/{project}/locations/{
-     * location}/clusters/{cluster}/nodePools/{node_pool}'
-     *
-     * @var string
-     */
-    public $nodePool;
-    protected $nodePoolConfigType = GkeNodePoolConfig::class;
-    protected $nodePoolConfigDataType = '';
-    /**
-     * Required. The roles associated with the GKE node pool.
-     *
-     * @var string[]
-     */
-    public $roles;
-    /**
-     * Required. The target GKE node pool. Format: 'projects/{project}/locations/{
-     * location}/clusters/{cluster}/nodePools/{node_pool}'
-     *
-     * @param string $nodePool
-     */
-    public function setNodePool($nodePool)
+namespace Google\Service\Dataproc {
+    class GkeNodePoolTarget extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * Required. The target GKE node pool. Format: 'projects/{project}/locations/{
+         * location}/clusters/{cluster}/nodePools/{node_pool}'
+         *
+         * @var string
+         */
+        public $nodePool;
+        protected $nodePoolConfigType = GkeNodePoolConfig::class;
+        protected $nodePoolConfigDataType = '';
+        /**
+         * Required. The roles associated with the GKE node pool.
+         *
+         * @var string[]
+         */
+        public $roles;
+        /**
+         * Required. The target GKE node pool. Format: 'projects/{project}/locations/{
+         * location}/clusters/{cluster}/nodePools/{node_pool}'
+         *
+         * @param string $nodePool
+         */
+        public function setNodePool($nodePool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodePool()
+        {
+        }
+        /**
+         * Input only. The configuration for the GKE node pool.If specified, Dataproc
+         * attempts to create a node pool with the specified shape. If one with the
+         * same name already exists, it is verified against all specified fields. If a
+         * field differs, the virtual cluster creation will fail.If omitted, any node
+         * pool with the specified name is used. If a node pool with the specified
+         * name does not exist, Dataproc create a node pool with default values.This
+         * is an input only field. It will not be returned by the API.
+         *
+         * @param GkeNodePoolConfig $nodePoolConfig
+         */
+        public function setNodePoolConfig(GkeNodePoolConfig $nodePoolConfig)
+        {
+        }
+        /**
+         * @return GkeNodePoolConfig
+         */
+        public function getNodePoolConfig()
+        {
+        }
+        /**
+         * Required. The roles associated with the GKE node pool.
+         *
+         * @param string[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\GkeNodePoolTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodePool()
-    {
-    }
-    /**
-     * Input only. The configuration for the GKE node pool.If specified, Dataproc
-     * attempts to create a node pool with the specified shape. If one with the
-     * same name already exists, it is verified against all specified fields. If a
-     * field differs, the virtual cluster creation will fail.If omitted, any node
-     * pool with the specified name is used. If a node pool with the specified
-     * name does not exist, Dataproc create a node pool with default values.This
-     * is an input only field. It will not be returned by the API.
-     *
-     * @param GkeNodePoolConfig $nodePoolConfig
-     */
-    public function setNodePoolConfig(GkeNodePoolConfig $nodePoolConfig)
-    {
-    }
-    /**
-     * @return GkeNodePoolConfig
-     */
-    public function getNodePoolConfig()
-    {
-    }
-    /**
-     * Required. The roles associated with the GKE node pool.
-     *
-     * @param string[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
+    class Google_Service_Dataproc_GkeNodePoolTarget extends \Google\Service\Dataproc\GkeNodePoolTarget
     {
     }
 }

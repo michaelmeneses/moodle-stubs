@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3ProcessorVersionAlias extends \Google\Model
-{
-    /**
-     * The alias in the form of `processor_version` resource name.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * The resource name of aliased processor version.
-     *
-     * @var string
-     */
-    public $processorVersion;
-    /**
-     * The alias in the form of `processor_version` resource name.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3ProcessorVersionAlias extends \Google\Model
     {
+        /**
+         * The alias in the form of `processor_version` resource name.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * The resource name of aliased processor version.
+         *
+         * @var string
+         */
+        public $processorVersion;
+        /**
+         * The alias in the form of `processor_version` resource name.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * The resource name of aliased processor version.
+         *
+         * @param string $processorVersion
+         */
+        public function setProcessorVersion($processorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3ProcessorVersionAlias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * The resource name of aliased processor version.
-     *
-     * @param string $processorVersion
-     */
-    public function setProcessorVersion($processorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessorVersion()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3ProcessorVersionAlias extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3ProcessorVersionAlias
     {
     }
 }

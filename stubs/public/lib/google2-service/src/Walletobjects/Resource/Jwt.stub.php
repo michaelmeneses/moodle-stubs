@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "jwt" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $jwt = $walletobjectsService->jwt;
- *  </code>
- */
-class Jwt extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\JwtInsertResponse;
+    use Google\Service\Walletobjects\JwtResource;
     /**
-     * Inserts the resources in the JWT. (jwt.insert)
-     *
-     * @param JwtResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return JwtInsertResponse
-     * @throws \Google\Service\Exception
+     * The "jwt" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $jwt = $walletobjectsService->jwt;
+     *  </code>
      */
-    public function insert(JwtResource $postBody, $optParams = [])
+    class Jwt extends \Google\Service\Resource
+    {
+        /**
+         * Inserts the resources in the JWT. (jwt.insert)
+         *
+         * @param JwtResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return JwtInsertResponse
+         * @throws \Google\Service\Exception
+         */
+        public function insert(JwtResource $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Jwt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Walletobjects_Resource_Jwt extends \Google\Service\Walletobjects\Resource\Jwt
     {
     }
 }

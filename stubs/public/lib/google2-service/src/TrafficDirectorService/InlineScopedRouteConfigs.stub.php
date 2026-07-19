@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class InlineScopedRouteConfigs extends \Google\Collection
-{
-    protected $collection_key = 'scopedRouteConfigs';
-    /**
-     * The timestamp when the scoped route config set was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * The name assigned to the scoped route configurations.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The scoped route configurations.
-     *
-     * @var array[]
-     */
-    public $scopedRouteConfigs;
-    /**
-     * The timestamp when the scoped route config set was last updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
+namespace Google\Service\TrafficDirectorService {
+    class InlineScopedRouteConfigs extends \Google\Collection
     {
+        protected $collection_key = 'scopedRouteConfigs';
+        /**
+         * The timestamp when the scoped route config set was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * The name assigned to the scoped route configurations.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The scoped route configurations.
+         *
+         * @var array[]
+         */
+        public $scopedRouteConfigs;
+        /**
+         * The timestamp when the scoped route config set was last updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
+        /**
+         * The name assigned to the scoped route configurations.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The scoped route configurations.
+         *
+         * @param array[] $scopedRouteConfigs
+         */
+        public function setScopedRouteConfigs($scopedRouteConfigs)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getScopedRouteConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\InlineScopedRouteConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdated()
-    {
-    }
-    /**
-     * The name assigned to the scoped route configurations.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The scoped route configurations.
-     *
-     * @param array[] $scopedRouteConfigs
-     */
-    public function setScopedRouteConfigs($scopedRouteConfigs)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getScopedRouteConfigs()
+    class Google_Service_TrafficDirectorService_InlineScopedRouteConfigs extends \Google\Service\TrafficDirectorService\InlineScopedRouteConfigs
     {
     }
 }

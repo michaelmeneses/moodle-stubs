@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeleteFeatureValuesResponse extends \Google\Model
-{
-    protected $selectEntityType = GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity::class;
-    protected $selectEntityDataType = '';
-    protected $selectTimeRangeAndFeatureType = GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature::class;
-    protected $selectTimeRangeAndFeatureDataType = '';
-    /**
-     * Response for request specifying the entities to delete
-     *
-     * @param GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity $selectEntity
-     */
-    public function setSelectEntity(GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity $selectEntity)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeleteFeatureValuesResponse extends \Google\Model
     {
+        protected $selectEntityType = GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity::class;
+        protected $selectEntityDataType = '';
+        protected $selectTimeRangeAndFeatureType = GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature::class;
+        protected $selectTimeRangeAndFeatureDataType = '';
+        /**
+         * Response for request specifying the entities to delete
+         *
+         * @param GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity $selectEntity
+         */
+        public function setSelectEntity(GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity $selectEntity)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity
+         */
+        public function getSelectEntity()
+        {
+        }
+        /**
+         * Response for request specifying time range and feature
+         *
+         * @param GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature $selectTimeRangeAndFeature
+         */
+        public function setSelectTimeRangeAndFeature(GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature $selectTimeRangeAndFeature)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature
+         */
+        public function getSelectTimeRangeAndFeature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelectEntity()
-    {
-    }
-    /**
-     * Response for request specifying time range and feature
-     *
-     * @param GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature $selectTimeRangeAndFeature
-     */
-    public function setSelectTimeRangeAndFeature(GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature $selectTimeRangeAndFeature)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature
-     */
-    public function getSelectTimeRangeAndFeature()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeleteFeatureValuesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesResponse
     {
     }
 }

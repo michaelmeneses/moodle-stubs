@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1HPAConfig extends \Google\Model
-{
-    /**
-     * Output only. Percent CPU utilization where HPA triggers autoscaling.
-     *
-     * @var string
-     */
-    public $cpuUtilizationThreshold;
-    /**
-     * Output only. Percent Memory utilization where HPA triggers autoscaling.
-     *
-     * @var string
-     */
-    public $memoryUtilizationThreshold;
-    /**
-     * Output only. Percent CPU utilization where HPA triggers autoscaling.
-     *
-     * @param string $cpuUtilizationThreshold
-     */
-    public function setCpuUtilizationThreshold($cpuUtilizationThreshold)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1HPAConfig extends \Google\Model
     {
+        /**
+         * Output only. Percent CPU utilization where HPA triggers autoscaling.
+         *
+         * @var string
+         */
+        public $cpuUtilizationThreshold;
+        /**
+         * Output only. Percent Memory utilization where HPA triggers autoscaling.
+         *
+         * @var string
+         */
+        public $memoryUtilizationThreshold;
+        /**
+         * Output only. Percent CPU utilization where HPA triggers autoscaling.
+         *
+         * @param string $cpuUtilizationThreshold
+         */
+        public function setCpuUtilizationThreshold($cpuUtilizationThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuUtilizationThreshold()
+        {
+        }
+        /**
+         * Output only. Percent Memory utilization where HPA triggers autoscaling.
+         *
+         * @param string $memoryUtilizationThreshold
+         */
+        public function setMemoryUtilizationThreshold($memoryUtilizationThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryUtilizationThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1HPAConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuUtilizationThreshold()
-    {
-    }
-    /**
-     * Output only. Percent Memory utilization where HPA triggers autoscaling.
-     *
-     * @param string $memoryUtilizationThreshold
-     */
-    public function setMemoryUtilizationThreshold($memoryUtilizationThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryUtilizationThreshold()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1HPAConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1HPAConfig
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeAccessInfoPdf extends \Google\Model
-{
-    /**
-     * URL to retrieve ACS token for pdf download. (In LITE projection.)
-     *
-     * @var string
-     */
-    public $acsTokenLink;
-    /**
-     * URL to download pdf. (In LITE projection.)
-     *
-     * @var string
-     */
-    public $downloadLink;
-    /**
-     * Is a scanned image pdf available either as public domain or for purchase.
-     * (In LITE projection.)
-     *
-     * @var bool
-     */
-    public $isAvailable;
-    /**
-     * URL to retrieve ACS token for pdf download. (In LITE projection.)
-     *
-     * @param string $acsTokenLink
-     */
-    public function setAcsTokenLink($acsTokenLink)
+namespace Google\Service\Books {
+    class VolumeAccessInfoPdf extends \Google\Model
     {
+        /**
+         * URL to retrieve ACS token for pdf download. (In LITE projection.)
+         *
+         * @var string
+         */
+        public $acsTokenLink;
+        /**
+         * URL to download pdf. (In LITE projection.)
+         *
+         * @var string
+         */
+        public $downloadLink;
+        /**
+         * Is a scanned image pdf available either as public domain or for purchase.
+         * (In LITE projection.)
+         *
+         * @var bool
+         */
+        public $isAvailable;
+        /**
+         * URL to retrieve ACS token for pdf download. (In LITE projection.)
+         *
+         * @param string $acsTokenLink
+         */
+        public function setAcsTokenLink($acsTokenLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcsTokenLink()
+        {
+        }
+        /**
+         * URL to download pdf. (In LITE projection.)
+         *
+         * @param string $downloadLink
+         */
+        public function setDownloadLink($downloadLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadLink()
+        {
+        }
+        /**
+         * Is a scanned image pdf available either as public domain or for purchase.
+         * (In LITE projection.)
+         *
+         * @param bool $isAvailable
+         */
+        public function setIsAvailable($isAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAvailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeAccessInfoPdf registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcsTokenLink()
-    {
-    }
-    /**
-     * URL to download pdf. (In LITE projection.)
-     *
-     * @param string $downloadLink
-     */
-    public function setDownloadLink($downloadLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadLink()
-    {
-    }
-    /**
-     * Is a scanned image pdf available either as public domain or for purchase.
-     * (In LITE projection.)
-     *
-     * @param bool $isAvailable
-     */
-    public function setIsAvailable($isAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsAvailable()
+    class Google_Service_Books_VolumeAccessInfoPdf extends \Google\Service\Books\VolumeAccessInfoPdf
     {
     }
 }

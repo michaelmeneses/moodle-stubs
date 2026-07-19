@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Ideahub (v1beta).
- *
- * <p>
- * This is an invitation-only API.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://console.cloud.google.com/apis/library/ideahub.googleapis.com" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Ideahub extends \Google\Service
-{
-    public $platforms_properties_ideaActivities;
-    public $platforms_properties_ideaStates;
-    public $platforms_properties_ideas;
-    public $platforms_properties_locales;
-    public $platforms_properties_topicStates;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Ideahub service.
+     * Service definition for Ideahub (v1beta).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * This is an invitation-only API.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://console.cloud.google.com/apis/library/ideahub.googleapis.com" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Ideahub extends \Google\Service
+    {
+        public $platforms_properties_ideaActivities;
+        public $platforms_properties_ideaStates;
+        public $platforms_properties_ideas;
+        public $platforms_properties_locales;
+        public $platforms_properties_topicStates;
+        /**
+         * Constructs the internal representation of the Ideahub service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub extends \Google\Service\Ideahub
     {
     }
 }

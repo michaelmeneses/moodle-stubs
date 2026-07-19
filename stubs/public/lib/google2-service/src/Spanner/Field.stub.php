@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Field extends \Google\Model
-{
-    /**
-     * The name of the field. For reads, this is the column name. For SQL queries,
-     * it is the column alias (e.g., `"Word"` in the query `"SELECT 'hello' AS
-     * Word"`), or the column name (e.g., `"ColName"` in the query `"SELECT
-     * ColName FROM Table"`). Some columns might have an empty name (e.g.,
-     * `"SELECT UPPER(ColName)"`). Note that a query result can contain multiple
-     * fields with the same name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $typeType = Type::class;
-    protected $typeDataType = '';
-    /**
-     * The name of the field. For reads, this is the column name. For SQL queries,
-     * it is the column alias (e.g., `"Word"` in the query `"SELECT 'hello' AS
-     * Word"`), or the column name (e.g., `"ColName"` in the query `"SELECT
-     * ColName FROM Table"`). Some columns might have an empty name (e.g.,
-     * `"SELECT UPPER(ColName)"`). Note that a query result can contain multiple
-     * fields with the same name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Spanner {
+    class Field extends \Google\Model
     {
+        /**
+         * The name of the field. For reads, this is the column name. For SQL queries,
+         * it is the column alias (e.g., `"Word"` in the query `"SELECT 'hello' AS
+         * Word"`), or the column name (e.g., `"ColName"` in the query `"SELECT
+         * ColName FROM Table"`). Some columns might have an empty name (e.g.,
+         * `"SELECT UPPER(ColName)"`). Note that a query result can contain multiple
+         * fields with the same name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $typeType = Type::class;
+        protected $typeDataType = '';
+        /**
+         * The name of the field. For reads, this is the column name. For SQL queries,
+         * it is the column alias (e.g., `"Word"` in the query `"SELECT 'hello' AS
+         * Word"`), or the column name (e.g., `"ColName"` in the query `"SELECT
+         * ColName FROM Table"`). Some columns might have an empty name (e.g.,
+         * `"SELECT UPPER(ColName)"`). Note that a query result can contain multiple
+         * fields with the same name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of the field.
+         *
+         * @param Type $type
+         */
+        public function setType(Type $type)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\Field registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The type of the field.
-     *
-     * @param Type $type
-     */
-    public function setType(Type $type)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getType()
+    class Google_Service_Spanner_Field extends \Google\Service\Spanner\Field
     {
     }
 }

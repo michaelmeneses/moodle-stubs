@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class RunQueryRequest extends \Google\Model
-{
-    protected $dataRangeType = DataRange::class;
-    protected $dataRangeDataType = '';
-    /**
-     * The date range used by the query to generate the report. If unspecified,
-     * the query's original data_range is used.
-     *
-     * @param DataRange $dataRange
-     */
-    public function setDataRange(DataRange $dataRange)
+namespace Google\Service\DoubleClickBidManager {
+    class RunQueryRequest extends \Google\Model
     {
+        protected $dataRangeType = DataRange::class;
+        protected $dataRangeDataType = '';
+        /**
+         * The date range used by the query to generate the report. If unspecified,
+         * the query's original data_range is used.
+         *
+         * @param DataRange $dataRange
+         */
+        public function setDataRange(DataRange $dataRange)
+        {
+        }
+        /**
+         * @return DataRange
+         */
+        public function getDataRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataRange
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\RunQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataRange()
+    class Google_Service_DoubleClickBidManager_RunQueryRequest extends \Google\Service\DoubleClickBidManager\RunQueryRequest
     {
     }
 }

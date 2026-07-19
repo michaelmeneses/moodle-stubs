@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class PhoneUser extends \Google\Model
-{
-    /**
-     * Output only. Partially redacted user's phone number when calling.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Partially redacted user's phone number when calling.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Meet {
+    class PhoneUser extends \Google\Model
     {
+        /**
+         * Output only. Partially redacted user's phone number when calling.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Partially redacted user's phone number when calling.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\PhoneUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_Meet_PhoneUser extends \Google\Service\Meet\PhoneUser
     {
     }
 }

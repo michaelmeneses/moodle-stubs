@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class Settings extends \Google\Collection
-{
-    protected $collection_key = 'notifications';
-    protected $notificationsType = Notification::class;
-    protected $notificationsDataType = 'array';
-    /**
-     * The list of notifications.
-     *
-     * @param Notification[] $notifications
-     */
-    public function setNotifications($notifications)
+namespace Google\Service\AlertCenter {
+    class Settings extends \Google\Collection
     {
+        protected $collection_key = 'notifications';
+        protected $notificationsType = Notification::class;
+        protected $notificationsDataType = 'array';
+        /**
+         * The list of notifications.
+         *
+         * @param Notification[] $notifications
+         */
+        public function setNotifications($notifications)
+        {
+        }
+        /**
+         * @return Notification[]
+         */
+        public function getNotifications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Notification[]
+     * Runtime class alias of \Google\Service\AlertCenter\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotifications()
+    class Google_Service_AlertCenter_Settings extends \Google\Service\AlertCenter\Settings
     {
     }
 }

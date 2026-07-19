@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitation extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * @var string
-     */
-    public $endIndex;
-    protected $sourcesType = GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitationSource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $startIndex;
-    /**
-     * @param string
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitation extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * @var string
+         */
+        public $endIndex;
+        protected $sourcesType = GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitationSource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $startIndex;
+        /**
+         * @param string
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitationSource[]
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitationSource[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitationSource[]
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitationSource[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartIndex()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummaryCitation
     {
     }
 }

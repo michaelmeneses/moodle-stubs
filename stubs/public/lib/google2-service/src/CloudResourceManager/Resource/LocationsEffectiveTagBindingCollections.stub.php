@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager\Resource;
-
-/**
- * The "effectiveTagBindingCollections" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
- *   $effectiveTagBindingCollections = $cloudresourcemanagerService->locations_effectiveTagBindingCollections;
- *  </code>
- */
-class LocationsEffectiveTagBindingCollections extends \Google\Service\Resource
-{
+namespace Google\Service\CloudResourceManager\Resource {
+    use Google\Service\CloudResourceManager\EffectiveTagBindingCollection;
     /**
-     * Returns effective tag bindings on a GCP resource.
-     * (effectiveTagBindingCollections.get)
-     *
-     * @param string $name Required. The full name of the
-     * EffectiveTagBindingCollection in format:
-     * `locations/{location}/effectiveTagBindingCollections/{encoded-full-resource-
-     * name}` where the encoded-full-resource-name is the UTF-8 encoded name of the
-     * resource the TagBindings are bound to. E.g. "locations/global/effectiveTagBin
-     * dingCollections/%2f%2fcloudresourcemanager.googleapis.com%2fprojects%2f123"
-     * @param array $optParams Optional parameters.
-     * @return EffectiveTagBindingCollection
-     * @throws \Google\Service\Exception
+     * The "effectiveTagBindingCollections" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
+     *   $effectiveTagBindingCollections = $cloudresourcemanagerService->locations_effectiveTagBindingCollections;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class LocationsEffectiveTagBindingCollections extends \Google\Service\Resource
+    {
+        /**
+         * Returns effective tag bindings on a GCP resource.
+         * (effectiveTagBindingCollections.get)
+         *
+         * @param string $name Required. The full name of the
+         * EffectiveTagBindingCollection in format:
+         * `locations/{location}/effectiveTagBindingCollections/{encoded-full-resource-
+         * name}` where the encoded-full-resource-name is the UTF-8 encoded name of the
+         * resource the TagBindings are bound to. E.g. "locations/global/effectiveTagBin
+         * dingCollections/%2f%2fcloudresourcemanager.googleapis.com%2fprojects%2f123"
+         * @param array $optParams Optional parameters.
+         * @return EffectiveTagBindingCollection
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudResourceManager\Resource\LocationsEffectiveTagBindingCollections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudResourceManager_Resource_LocationsEffectiveTagBindingCollections extends \Google\Service\CloudResourceManager\Resource\LocationsEffectiveTagBindingCollections
     {
     }
 }

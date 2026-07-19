@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DiscoverableProgram extends \Google\Model
-{
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Visible only to testers that have access to issuer account.
-     */
-    public const STATE_TRUSTED_TESTERS = 'TRUSTED_TESTERS';
-    /**
-     * Legacy alias for `TRUSTED_TESTERS`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const STATE_trustedTesters = 'trustedTesters';
-    /**
-     * Visible to all.
-     */
-    public const STATE_LIVE = 'LIVE';
-    /**
-     * Legacy alias for `LIVE`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const STATE_live = 'live';
-    /**
-     * Not visible.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * Legacy alias for `DISABLED`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const STATE_disabled = 'disabled';
-    protected $merchantSigninInfoType = DiscoverableProgramMerchantSigninInfo::class;
-    protected $merchantSigninInfoDataType = '';
-    protected $merchantSignupInfoType = DiscoverableProgramMerchantSignupInfo::class;
-    protected $merchantSignupInfoDataType = '';
-    /**
-     * Visibility state of the discoverable program.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Information about the ability to signin and add a valuable for this program
-     * through a merchant site. Used when MERCHANT_HOSTED_SIGNIN is enabled.
-     *
-     * @param DiscoverableProgramMerchantSigninInfo $merchantSigninInfo
-     */
-    public function setMerchantSigninInfo(DiscoverableProgramMerchantSigninInfo $merchantSigninInfo)
+namespace Google\Service\Walletobjects {
+    class DiscoverableProgram extends \Google\Model
     {
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Visible only to testers that have access to issuer account.
+         */
+        public const STATE_TRUSTED_TESTERS = 'TRUSTED_TESTERS';
+        /**
+         * Legacy alias for `TRUSTED_TESTERS`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const STATE_trustedTesters = 'trustedTesters';
+        /**
+         * Visible to all.
+         */
+        public const STATE_LIVE = 'LIVE';
+        /**
+         * Legacy alias for `LIVE`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const STATE_live = 'live';
+        /**
+         * Not visible.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * Legacy alias for `DISABLED`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const STATE_disabled = 'disabled';
+        protected $merchantSigninInfoType = DiscoverableProgramMerchantSigninInfo::class;
+        protected $merchantSigninInfoDataType = '';
+        protected $merchantSignupInfoType = DiscoverableProgramMerchantSignupInfo::class;
+        protected $merchantSignupInfoDataType = '';
+        /**
+         * Visibility state of the discoverable program.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Information about the ability to signin and add a valuable for this program
+         * through a merchant site. Used when MERCHANT_HOSTED_SIGNIN is enabled.
+         *
+         * @param DiscoverableProgramMerchantSigninInfo $merchantSigninInfo
+         */
+        public function setMerchantSigninInfo(DiscoverableProgramMerchantSigninInfo $merchantSigninInfo)
+        {
+        }
+        /**
+         * @return DiscoverableProgramMerchantSigninInfo
+         */
+        public function getMerchantSigninInfo()
+        {
+        }
+        /**
+         * Information about the ability to signup and add a valuable for this program
+         * through a merchant site. Used when MERCHANT_HOSTED_SIGNUP is enabled.
+         *
+         * @param DiscoverableProgramMerchantSignupInfo $merchantSignupInfo
+         */
+        public function setMerchantSignupInfo(DiscoverableProgramMerchantSignupInfo $merchantSignupInfo)
+        {
+        }
+        /**
+         * @return DiscoverableProgramMerchantSignupInfo
+         */
+        public function getMerchantSignupInfo()
+        {
+        }
+        /**
+         * Visibility state of the discoverable program.
+         *
+         * Accepted values: STATE_UNSPECIFIED, TRUSTED_TESTERS, trustedTesters, LIVE,
+         * live, DISABLED, disabled
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoverableProgramMerchantSigninInfo
+     * Runtime class alias of \Google\Service\Walletobjects\DiscoverableProgram registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMerchantSigninInfo()
-    {
-    }
-    /**
-     * Information about the ability to signup and add a valuable for this program
-     * through a merchant site. Used when MERCHANT_HOSTED_SIGNUP is enabled.
-     *
-     * @param DiscoverableProgramMerchantSignupInfo $merchantSignupInfo
-     */
-    public function setMerchantSignupInfo(DiscoverableProgramMerchantSignupInfo $merchantSignupInfo)
-    {
-    }
-    /**
-     * @return DiscoverableProgramMerchantSignupInfo
-     */
-    public function getMerchantSignupInfo()
-    {
-    }
-    /**
-     * Visibility state of the discoverable program.
-     *
-     * Accepted values: STATE_UNSPECIFIED, TRUSTED_TESTERS, trustedTesters, LIVE,
-     * live, DISABLED, disabled
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Walletobjects_DiscoverableProgram extends \Google\Service\Walletobjects\DiscoverableProgram
     {
     }
 }

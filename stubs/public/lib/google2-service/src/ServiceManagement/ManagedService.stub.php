@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class ManagedService extends \Google\Model
-{
-    /**
-     * ID of the project that produces and owns this service.
-     *
-     * @var string
-     */
-    public $producerProjectId;
-    /**
-     * The name of the service. See the
-     * [overview](https://cloud.google.com/service-infrastructure/docs/overview)
-     * for naming requirements.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * ID of the project that produces and owns this service.
-     *
-     * @param string $producerProjectId
-     */
-    public function setProducerProjectId($producerProjectId)
+namespace Google\Service\ServiceManagement {
+    class ManagedService extends \Google\Model
     {
+        /**
+         * ID of the project that produces and owns this service.
+         *
+         * @var string
+         */
+        public $producerProjectId;
+        /**
+         * The name of the service. See the
+         * [overview](https://cloud.google.com/service-infrastructure/docs/overview)
+         * for naming requirements.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * ID of the project that produces and owns this service.
+         *
+         * @param string $producerProjectId
+         */
+        public function setProducerProjectId($producerProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProducerProjectId()
+        {
+        }
+        /**
+         * The name of the service. See the
+         * [overview](https://cloud.google.com/service-infrastructure/docs/overview)
+         * for naming requirements.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\ManagedService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProducerProjectId()
-    {
-    }
-    /**
-     * The name of the service. See the
-     * [overview](https://cloud.google.com/service-infrastructure/docs/overview)
-     * for naming requirements.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_ServiceManagement_ManagedService extends \Google\Service\ServiceManagement\ManagedService
     {
     }
 }

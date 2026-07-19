@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedSegmentedMembershipCounts extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    protected $valueType = AppsDynamiteSharedSegmentedMembershipCount::class;
-    protected $valueDataType = 'array';
-    /**
-     * @param AppsDynamiteSharedSegmentedMembershipCount[]
-     */
-    public function setValue($value)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedSegmentedMembershipCounts extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        protected $valueType = AppsDynamiteSharedSegmentedMembershipCount::class;
+        protected $valueDataType = 'array';
+        /**
+         * @param AppsDynamiteSharedSegmentedMembershipCount[]
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSegmentedMembershipCount[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedSegmentedMembershipCount[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedSegmentedMembershipCounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_CloudSearch_AppsDynamiteSharedSegmentedMembershipCounts extends \Google\Service\CloudSearch\AppsDynamiteSharedSegmentedMembershipCounts
     {
     }
 }

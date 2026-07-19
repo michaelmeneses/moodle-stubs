@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceSplitOptions extends \Google\Model
-{
-    /**
-     * The source should be split into a set of bundles where the estimated size
-     * of each is approximately this many bytes.
-     *
-     * @var string
-     */
-    public $desiredBundleSizeBytes;
-    /**
-     * DEPRECATED in favor of desired_bundle_size_bytes.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $desiredShardSizeBytes;
-    /**
-     * The source should be split into a set of bundles where the estimated size
-     * of each is approximately this many bytes.
-     *
-     * @param string $desiredBundleSizeBytes
-     */
-    public function setDesiredBundleSizeBytes($desiredBundleSizeBytes)
+namespace Google\Service\Dataflow {
+    class SourceSplitOptions extends \Google\Model
     {
+        /**
+         * The source should be split into a set of bundles where the estimated size
+         * of each is approximately this many bytes.
+         *
+         * @var string
+         */
+        public $desiredBundleSizeBytes;
+        /**
+         * DEPRECATED in favor of desired_bundle_size_bytes.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $desiredShardSizeBytes;
+        /**
+         * The source should be split into a set of bundles where the estimated size
+         * of each is approximately this many bytes.
+         *
+         * @param string $desiredBundleSizeBytes
+         */
+        public function setDesiredBundleSizeBytes($desiredBundleSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDesiredBundleSizeBytes()
+        {
+        }
+        /**
+         * DEPRECATED in favor of desired_bundle_size_bytes.
+         *
+         * @deprecated
+         * @param string $desiredShardSizeBytes
+         */
+        public function setDesiredShardSizeBytes($desiredShardSizeBytes)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDesiredShardSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\SourceSplitOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesiredBundleSizeBytes()
-    {
-    }
-    /**
-     * DEPRECATED in favor of desired_bundle_size_bytes.
-     *
-     * @deprecated
-     * @param string $desiredShardSizeBytes
-     */
-    public function setDesiredShardSizeBytes($desiredShardSizeBytes)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getDesiredShardSizeBytes()
+    class Google_Service_Dataflow_SourceSplitOptions extends \Google\Service\Dataflow\SourceSplitOptions
     {
     }
 }

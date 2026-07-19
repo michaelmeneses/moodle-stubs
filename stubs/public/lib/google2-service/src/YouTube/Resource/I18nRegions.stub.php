@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "i18nRegions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $i18nRegions = $youtubeService->i18nRegions;
- *  </code>
- */
-class I18nRegions extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\I18nRegionListResponse;
     /**
-     * Retrieves a list of resources, possibly filtered.
-     * (i18nRegions.listI18nRegions)
-     *
-     * @param string|array $part The *part* parameter specifies the i18nRegion
-     * resource properties that the API response will include. Set the parameter
-     * value to snippet.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hl
-     * @return I18nRegionListResponse
-     * @throws \Google\Service\Exception
+     * The "i18nRegions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $i18nRegions = $youtubeService->i18nRegions;
+     *  </code>
      */
-    public function listI18nRegions($part, $optParams = [])
+    class I18nRegions extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of resources, possibly filtered.
+         * (i18nRegions.listI18nRegions)
+         *
+         * @param string|array $part The *part* parameter specifies the i18nRegion
+         * resource properties that the API response will include. Set the parameter
+         * value to snippet.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hl
+         * @return I18nRegionListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listI18nRegions($part, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\I18nRegions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_I18nRegions extends \Google\Service\YouTube\Resource\I18nRegions
     {
     }
 }

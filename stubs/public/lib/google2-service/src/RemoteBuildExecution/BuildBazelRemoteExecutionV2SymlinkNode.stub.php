@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2SymlinkNode extends \Google\Model
-{
-    public $name;
-    protected $nodePropertiesType = BuildBazelRemoteExecutionV2NodeProperties::class;
-    protected $nodePropertiesDataType = '';
-    public $target;
-    public function setName($name)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2SymlinkNode extends \Google\Model
     {
+        public $name;
+        protected $nodePropertiesType = BuildBazelRemoteExecutionV2NodeProperties::class;
+        protected $nodePropertiesDataType = '';
+        public $target;
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2NodeProperties
+         */
+        public function setNodeProperties(BuildBazelRemoteExecutionV2NodeProperties $nodeProperties)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2NodeProperties
+         */
+        public function getNodeProperties()
+        {
+        }
+        public function setTarget($target)
+        {
+        }
+        public function getTarget()
+        {
+        }
     }
-    public function getName()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2NodeProperties
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2SymlinkNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setNodeProperties(BuildBazelRemoteExecutionV2NodeProperties $nodeProperties)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2NodeProperties
-     */
-    public function getNodeProperties()
-    {
-    }
-    public function setTarget($target)
-    {
-    }
-    public function getTarget()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2SymlinkNode extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2SymlinkNode
     {
     }
 }

@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1TrainCustomModelRequest extends \Google\Model
-{
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $gcsTrainingInputType = GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput::class;
-    protected $gcsTrainingInputDataType = '';
-    /**
-     * If not provided, a UUID will be generated.
-     *
-     * @var string
-     */
-    public $modelId;
-    /**
-     * Model to be trained. Supported values are: * **search-tuning**: Fine tuning
-     * the search system based on data provided.
-     *
-     * @var string
-     */
-    public $modelType;
-    /**
-     * The desired location of errors incurred during the data ingestion and
-     * training.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1TrainCustomModelRequest extends \Google\Model
     {
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $gcsTrainingInputType = GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput::class;
+        protected $gcsTrainingInputDataType = '';
+        /**
+         * If not provided, a UUID will be generated.
+         *
+         * @var string
+         */
+        public $modelId;
+        /**
+         * Model to be trained. Supported values are: * **search-tuning**: Fine tuning
+         * the search system based on data provided.
+         *
+         * @var string
+         */
+        public $modelType;
+        /**
+         * The desired location of errors incurred during the data ingestion and
+         * training.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * Cloud Storage training input.
+         *
+         * @param GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput $gcsTrainingInput
+         */
+        public function setGcsTrainingInput(GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput $gcsTrainingInput)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput
+         */
+        public function getGcsTrainingInput()
+        {
+        }
+        /**
+         * If not provided, a UUID will be generated.
+         *
+         * @param string $modelId
+         */
+        public function setModelId($modelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelId()
+        {
+        }
+        /**
+         * Model to be trained. Supported values are: * **search-tuning**: Fine tuning
+         * the search system based on data provided.
+         *
+         * @param string $modelType
+         */
+        public function setModelType($modelType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TrainCustomModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * Cloud Storage training input.
-     *
-     * @param GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput $gcsTrainingInput
-     */
-    public function setGcsTrainingInput(GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput $gcsTrainingInput)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1TrainCustomModelRequestGcsTrainingInput
-     */
-    public function getGcsTrainingInput()
-    {
-    }
-    /**
-     * If not provided, a UUID will be generated.
-     *
-     * @param string $modelId
-     */
-    public function setModelId($modelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelId()
-    {
-    }
-    /**
-     * Model to be trained. Supported values are: * **search-tuning**: Fine tuning
-     * the search system based on data provided.
-     *
-     * @param string $modelType
-     */
-    public function setModelType($modelType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1TrainCustomModelRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TrainCustomModelRequest
     {
     }
 }

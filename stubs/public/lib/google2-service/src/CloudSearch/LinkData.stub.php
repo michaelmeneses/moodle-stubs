@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class LinkData extends \Google\Model
-{
-    protected $attachmentType = SocialCommonAttachmentAttachment::class;
-    protected $attachmentDataType = '';
-    /**
-     * @var string
-     */
-    public $attachmentRenderHint;
-    /**
-     * @var string
-     */
-    public $displayUrl;
-    /**
-     * @var string
-     */
-    public $linkTarget;
-    /**
-     * @var string
-     */
-    public $linkType;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param SocialCommonAttachmentAttachment
-     */
-    public function setAttachment(SocialCommonAttachmentAttachment $attachment)
+namespace Google\Service\CloudSearch {
+    class LinkData extends \Google\Model
     {
+        protected $attachmentType = SocialCommonAttachmentAttachment::class;
+        protected $attachmentDataType = '';
+        /**
+         * @var string
+         */
+        public $attachmentRenderHint;
+        /**
+         * @var string
+         */
+        public $displayUrl;
+        /**
+         * @var string
+         */
+        public $linkTarget;
+        /**
+         * @var string
+         */
+        public $linkType;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param SocialCommonAttachmentAttachment
+         */
+        public function setAttachment(SocialCommonAttachmentAttachment $attachment)
+        {
+        }
+        /**
+         * @return SocialCommonAttachmentAttachment
+         */
+        public function getAttachment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttachmentRenderHint($attachmentRenderHint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentRenderHint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayUrl($displayUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLinkTarget($linkTarget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkTarget()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLinkType($linkType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SocialCommonAttachmentAttachment
+     * Runtime class alias of \Google\Service\CloudSearch\LinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttachmentRenderHint($attachmentRenderHint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttachmentRenderHint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayUrl($displayUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLinkTarget($linkTarget)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkTarget()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLinkType($linkType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_LinkData extends \Google\Service\CloudSearch\LinkData
     {
     }
 }

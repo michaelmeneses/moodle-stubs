@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class ReviewerResponse extends \Google\Model
-{
-    /**
-     * Response was set to an unrecognized value.
-     */
-    public const RESPONSE_RESPONSE_UNSPECIFIED = 'RESPONSE_UNSPECIFIED';
-    /**
-     * The reviewer has not yet responded
-     */
-    public const RESPONSE_NO_RESPONSE = 'NO_RESPONSE';
-    /**
-     * The Reviewer has approved the item.
-     */
-    public const RESPONSE_APPROVED = 'APPROVED';
-    /**
-     * The Reviewer has declined the item.
-     */
-    public const RESPONSE_DECLINED = 'DECLINED';
-    /**
-     * This is always drive#reviewerResponse.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A Reviewer’s Response for the Approval.
-     *
-     * @var string
-     */
-    public $response;
-    protected $reviewerType = User::class;
-    protected $reviewerDataType = '';
-    /**
-     * This is always drive#reviewerResponse.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Drive {
+    class ReviewerResponse extends \Google\Model
     {
+        /**
+         * Response was set to an unrecognized value.
+         */
+        public const RESPONSE_RESPONSE_UNSPECIFIED = 'RESPONSE_UNSPECIFIED';
+        /**
+         * The reviewer has not yet responded
+         */
+        public const RESPONSE_NO_RESPONSE = 'NO_RESPONSE';
+        /**
+         * The Reviewer has approved the item.
+         */
+        public const RESPONSE_APPROVED = 'APPROVED';
+        /**
+         * The Reviewer has declined the item.
+         */
+        public const RESPONSE_DECLINED = 'DECLINED';
+        /**
+         * This is always drive#reviewerResponse.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A Reviewer’s Response for the Approval.
+         *
+         * @var string
+         */
+        public $response;
+        protected $reviewerType = User::class;
+        protected $reviewerDataType = '';
+        /**
+         * This is always drive#reviewerResponse.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A Reviewer’s Response for the Approval.
+         *
+         * Accepted values: RESPONSE_UNSPECIFIED, NO_RESPONSE, APPROVED, DECLINED
+         *
+         * @param self::RESPONSE_* $response
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return self::RESPONSE_*
+         */
+        public function getResponse()
+        {
+        }
+        /**
+         * The user that is responsible for this response.
+         *
+         * @param User $reviewer
+         */
+        public function setReviewer(User $reviewer)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getReviewer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\ReviewerResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * A Reviewer’s Response for the Approval.
-     *
-     * Accepted values: RESPONSE_UNSPECIFIED, NO_RESPONSE, APPROVED, DECLINED
-     *
-     * @param self::RESPONSE_* $response
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return self::RESPONSE_*
-     */
-    public function getResponse()
-    {
-    }
-    /**
-     * The user that is responsible for this response.
-     *
-     * @param User $reviewer
-     */
-    public function setReviewer(User $reviewer)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getReviewer()
+    class Google_Service_Drive_ReviewerResponse extends \Google\Service\Drive\ReviewerResponse
     {
     }
 }

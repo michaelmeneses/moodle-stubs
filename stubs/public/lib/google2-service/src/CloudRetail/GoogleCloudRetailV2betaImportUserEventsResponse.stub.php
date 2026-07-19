@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaImportUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRetailV2betaImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $importSummaryType = GoogleCloudRetailV2betaUserEventImportSummary::class;
-    protected $importSummaryDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaImportUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRetailV2betaImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $importSummaryType = GoogleCloudRetailV2betaUserEventImportSummary::class;
+        protected $importSummaryDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Echoes the destination for the complete errors if this field was set in the
+         * request.
+         *
+         * @param GoogleCloudRetailV2betaImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2betaImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Aggregated statistics of user event import status.
+         *
+         * @param GoogleCloudRetailV2betaUserEventImportSummary $importSummary
+         */
+        public function setImportSummary(GoogleCloudRetailV2betaUserEventImportSummary $importSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaUserEventImportSummary
+         */
+        public function getImportSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaImportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Echoes the destination for the complete errors if this field was set in the
-     * request.
-     *
-     * @param GoogleCloudRetailV2betaImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2betaImportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2betaImportErrorsConfig
-     */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Aggregated statistics of user event import status.
-     *
-     * @param GoogleCloudRetailV2betaUserEventImportSummary $importSummary
-     */
-    public function setImportSummary(GoogleCloudRetailV2betaUserEventImportSummary $importSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2betaUserEventImportSummary
-     */
-    public function getImportSummary()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaImportUserEventsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaImportUserEventsResponse
     {
     }
 }

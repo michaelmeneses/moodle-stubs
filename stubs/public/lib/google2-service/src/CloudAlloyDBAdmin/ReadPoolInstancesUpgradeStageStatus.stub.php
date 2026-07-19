@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ReadPoolInstancesUpgradeStageStatus extends \Google\Model
-{
-    protected $upgradeStatsType = Stats::class;
-    protected $upgradeStatsDataType = '';
-    /**
-     * Read pool instances upgrade statistics.
-     *
-     * @param Stats $upgradeStats
-     */
-    public function setUpgradeStats(Stats $upgradeStats)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ReadPoolInstancesUpgradeStageStatus extends \Google\Model
     {
+        protected $upgradeStatsType = Stats::class;
+        protected $upgradeStatsDataType = '';
+        /**
+         * Read pool instances upgrade statistics.
+         *
+         * @param Stats $upgradeStats
+         */
+        public function setUpgradeStats(Stats $upgradeStats)
+        {
+        }
+        /**
+         * @return Stats
+         */
+        public function getUpgradeStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Stats
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ReadPoolInstancesUpgradeStageStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpgradeStats()
+    class Google_Service_CloudAlloyDBAdmin_ReadPoolInstancesUpgradeStageStatus extends \Google\Service\CloudAlloyDBAdmin\ReadPoolInstancesUpgradeStageStatus
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceSystemRamFreeReports extends \Google\Collection
-{
-    protected $collection_key = 'systemRamFreeInfo';
-    /**
-     * Date and time the report was received.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * @var string[]
-     */
-    public $systemRamFreeInfo;
-    /**
-     * Date and time the report was received.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceSystemRamFreeReports extends \Google\Collection
     {
+        protected $collection_key = 'systemRamFreeInfo';
+        /**
+         * Date and time the report was received.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * @var string[]
+         */
+        public $systemRamFreeInfo;
+        /**
+         * Date and time the report was received.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * @param string[] $systemRamFreeInfo
+         */
+        public function setSystemRamFreeInfo($systemRamFreeInfo)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSystemRamFreeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceSystemRamFreeReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportTime()
-    {
-    }
-    /**
-     * @param string[] $systemRamFreeInfo
-     */
-    public function setSystemRamFreeInfo($systemRamFreeInfo)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSystemRamFreeInfo()
+    class Google_Service_Directory_ChromeOsDeviceSystemRamFreeReports extends \Google\Service\Directory\ChromeOsDeviceSystemRamFreeReports
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class RenewalSettings extends \Google\Model
-{
-    /**
-     * Identifies the resource as a subscription renewal setting. Value:
-     * `subscriptions#renewalSettings`
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Renewal settings for the annual commitment plan. For more detailed
-     * information, see renewal options in the administrator help center. When
-     * renewing a subscription, the `renewalType` is a required property.
-     *
-     * @var string
-     */
-    public $renewalType;
-    /**
-     * Identifies the resource as a subscription renewal setting. Value:
-     * `subscriptions#renewalSettings`
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Reseller {
+    class RenewalSettings extends \Google\Model
     {
+        /**
+         * Identifies the resource as a subscription renewal setting. Value:
+         * `subscriptions#renewalSettings`
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Renewal settings for the annual commitment plan. For more detailed
+         * information, see renewal options in the administrator help center. When
+         * renewing a subscription, the `renewalType` is a required property.
+         *
+         * @var string
+         */
+        public $renewalType;
+        /**
+         * Identifies the resource as a subscription renewal setting. Value:
+         * `subscriptions#renewalSettings`
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Renewal settings for the annual commitment plan. For more detailed
+         * information, see renewal options in the administrator help center. When
+         * renewing a subscription, the `renewalType` is a required property.
+         *
+         * @param string $renewalType
+         */
+        public function setRenewalType($renewalType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenewalType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\RenewalSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Renewal settings for the annual commitment plan. For more detailed
-     * information, see renewal options in the administrator help center. When
-     * renewing a subscription, the `renewalType` is a required property.
-     *
-     * @param string $renewalType
-     */
-    public function setRenewalType($renewalType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenewalType()
+    class Google_Service_Reseller_RenewalSettings extends \Google\Service\Reseller\RenewalSettings
     {
     }
 }

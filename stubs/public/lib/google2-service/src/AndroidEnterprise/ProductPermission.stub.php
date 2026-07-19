@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductPermission extends \Google\Model
-{
-    /**
-     * The permission is required by the app but has not yet been accepted by the
-     * enterprise.
-     */
-    public const STATE_required = 'required';
-    /**
-     * The permission has been accepted by the enterprise.
-     */
-    public const STATE_accepted = 'accepted';
-    /**
-     * An opaque string uniquely identifying the permission.
-     *
-     * @var string
-     */
-    public $permissionId;
-    /**
-     * Whether the permission has been accepted or not.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * An opaque string uniquely identifying the permission.
-     *
-     * @param string $permissionId
-     */
-    public function setPermissionId($permissionId)
+namespace Google\Service\AndroidEnterprise {
+    class ProductPermission extends \Google\Model
     {
+        /**
+         * The permission is required by the app but has not yet been accepted by the
+         * enterprise.
+         */
+        public const STATE_required = 'required';
+        /**
+         * The permission has been accepted by the enterprise.
+         */
+        public const STATE_accepted = 'accepted';
+        /**
+         * An opaque string uniquely identifying the permission.
+         *
+         * @var string
+         */
+        public $permissionId;
+        /**
+         * Whether the permission has been accepted or not.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * An opaque string uniquely identifying the permission.
+         *
+         * @param string $permissionId
+         */
+        public function setPermissionId($permissionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermissionId()
+        {
+        }
+        /**
+         * Whether the permission has been accepted or not.
+         *
+         * Accepted values: required, accepted
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissionId()
-    {
-    }
-    /**
-     * Whether the permission has been accepted or not.
-     *
-     * Accepted values: required, accepted
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_AndroidEnterprise_ProductPermission extends \Google\Service\AndroidEnterprise\ProductPermission
     {
     }
 }

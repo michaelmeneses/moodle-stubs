@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $versionsType = GoogleCloudDialogflowCxV3Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $versionsType = GoogleCloudDialogflowCxV3Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of versions. There will be a maximum number of items returned based
+         * on the page_size field in the request. The list may in some cases be empty
+         * or contain fewer entries than page_size even if this isn't the last page.
+         *
+         * @param GoogleCloudDialogflowCxV3Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of versions. There will be a maximum number of items returned based
-     * on the page_size field in the request. The list may in some cases be empty
-     * or contain fewer entries than page_size even if this isn't the last page.
-     *
-     * @param GoogleCloudDialogflowCxV3Version[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Version[]
-     */
-    public function getVersions()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListVersionsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListVersionsResponse
     {
     }
 }

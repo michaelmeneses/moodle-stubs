@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class GeoPoint extends \Google\Model
-{
+namespace Google\Service\YouTube {
+    class GeoPoint extends \Google\Model
+    {
+        /**
+         * Altitude above the reference ellipsoid, in meters.
+         *
+         * @var 
+         */
+        public $altitude;
+        /**
+         * Latitude in degrees.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * Longitude in degrees.
+         *
+         * @var 
+         */
+        public $longitude;
+        public function setAltitude($altitude)
+        {
+        }
+        public function getAltitude()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Altitude above the reference ellipsoid, in meters.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\YouTube\GeoPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $altitude;
-    /**
-     * Latitude in degrees.
-     *
-     * @var 
-     */
-    public $latitude;
-    /**
-     * Longitude in degrees.
-     *
-     * @var 
-     */
-    public $longitude;
-    public function setAltitude($altitude)
-    {
-    }
-    public function getAltitude()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_YouTube_GeoPoint extends \Google\Service\YouTube\GeoPoint
     {
     }
 }

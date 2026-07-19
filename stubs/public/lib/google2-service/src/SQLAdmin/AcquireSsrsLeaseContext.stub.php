@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class AcquireSsrsLeaseContext extends \Google\Model
-{
-    /**
-     * Lease duration needed for SSRS setup.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * The report database to be used for SSRS setup.
-     *
-     * @var string
-     */
-    public $reportDatabase;
-    /**
-     * The username to be used as the service login to connect to the report
-     * database for SSRS setup.
-     *
-     * @var string
-     */
-    public $serviceLogin;
-    /**
-     * The username to be used as the setup login to connect to the database
-     * server for SSRS setup.
-     *
-     * @var string
-     */
-    public $setupLogin;
-    /**
-     * Lease duration needed for SSRS setup.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\SQLAdmin {
+    class AcquireSsrsLeaseContext extends \Google\Model
     {
+        /**
+         * Lease duration needed for SSRS setup.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * The report database to be used for SSRS setup.
+         *
+         * @var string
+         */
+        public $reportDatabase;
+        /**
+         * The username to be used as the service login to connect to the report
+         * database for SSRS setup.
+         *
+         * @var string
+         */
+        public $serviceLogin;
+        /**
+         * The username to be used as the setup login to connect to the database
+         * server for SSRS setup.
+         *
+         * @var string
+         */
+        public $setupLogin;
+        /**
+         * Lease duration needed for SSRS setup.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * The report database to be used for SSRS setup.
+         *
+         * @param string $reportDatabase
+         */
+        public function setReportDatabase($reportDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportDatabase()
+        {
+        }
+        /**
+         * The username to be used as the service login to connect to the report
+         * database for SSRS setup.
+         *
+         * @param string $serviceLogin
+         */
+        public function setServiceLogin($serviceLogin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceLogin()
+        {
+        }
+        /**
+         * The username to be used as the setup login to connect to the database
+         * server for SSRS setup.
+         *
+         * @param string $setupLogin
+         */
+        public function setSetupLogin($setupLogin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetupLogin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\AcquireSsrsLeaseContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * The report database to be used for SSRS setup.
-     *
-     * @param string $reportDatabase
-     */
-    public function setReportDatabase($reportDatabase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportDatabase()
-    {
-    }
-    /**
-     * The username to be used as the service login to connect to the report
-     * database for SSRS setup.
-     *
-     * @param string $serviceLogin
-     */
-    public function setServiceLogin($serviceLogin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceLogin()
-    {
-    }
-    /**
-     * The username to be used as the setup login to connect to the database
-     * server for SSRS setup.
-     *
-     * @param string $setupLogin
-     */
-    public function setSetupLogin($setupLogin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetupLogin()
+    class Google_Service_SQLAdmin_AcquireSsrsLeaseContext extends \Google\Service\SQLAdmin\AcquireSsrsLeaseContext
     {
     }
 }

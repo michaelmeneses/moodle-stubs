@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ProductInputConfig extends \Google\Model
-{
-    protected $bigQuerySourceType = GoogleCloudRetailV2BigQuerySource::class;
-    protected $bigQuerySourceDataType = '';
-    protected $gcsSourceType = GoogleCloudRetailV2GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $productInlineSourceType = GoogleCloudRetailV2ProductInlineSource::class;
-    protected $productInlineSourceDataType = '';
-    /**
-     * BigQuery input source.
-     *
-     * @param GoogleCloudRetailV2BigQuerySource $bigQuerySource
-     */
-    public function setBigQuerySource(GoogleCloudRetailV2BigQuerySource $bigQuerySource)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ProductInputConfig extends \Google\Model
     {
+        protected $bigQuerySourceType = GoogleCloudRetailV2BigQuerySource::class;
+        protected $bigQuerySourceDataType = '';
+        protected $gcsSourceType = GoogleCloudRetailV2GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $productInlineSourceType = GoogleCloudRetailV2ProductInlineSource::class;
+        protected $productInlineSourceDataType = '';
+        /**
+         * BigQuery input source.
+         *
+         * @param GoogleCloudRetailV2BigQuerySource $bigQuerySource
+         */
+        public function setBigQuerySource(GoogleCloudRetailV2BigQuerySource $bigQuerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2BigQuerySource
+         */
+        public function getBigQuerySource()
+        {
+        }
+        /**
+         * Google Cloud Storage location for the input content.
+         *
+         * @param GoogleCloudRetailV2GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudRetailV2GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * The Inline source for the input content for products.
+         *
+         * @param GoogleCloudRetailV2ProductInlineSource $productInlineSource
+         */
+        public function setProductInlineSource(GoogleCloudRetailV2ProductInlineSource $productInlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductInlineSource
+         */
+        public function getProductInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2BigQuerySource
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ProductInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQuerySource()
-    {
-    }
-    /**
-     * Google Cloud Storage location for the input content.
-     *
-     * @param GoogleCloudRetailV2GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudRetailV2GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * The Inline source for the input content for products.
-     *
-     * @param GoogleCloudRetailV2ProductInlineSource $productInlineSource
-     */
-    public function setProductInlineSource(GoogleCloudRetailV2ProductInlineSource $productInlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ProductInlineSource
-     */
-    public function getProductInlineSource()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ProductInputConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2ProductInputConfig
     {
     }
 }

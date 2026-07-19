@@ -21,208 +21,217 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserPosixAccount extends \Google\Model
-{
-    /**
-     * A POSIX account field identifier.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The GECOS (user information) for this account.
-     *
-     * @var string
-     */
-    public $gecos;
-    /**
-     * The default group ID.
-     *
-     * @var string
-     */
-    public $gid;
-    /**
-     * The path to the home directory for this account.
-     *
-     * @var string
-     */
-    public $homeDirectory;
-    /**
-     * The operating system type for this account.
-     *
-     * @var string
-     */
-    public $operatingSystemType;
-    /**
-     * If this is user's primary account within the SystemId.
-     *
-     * @var bool
-     */
-    public $primary;
-    /**
-     * The path to the login shell for this account.
-     *
-     * @var string
-     */
-    public $shell;
-    /**
-     * System identifier for which account Username or Uid apply to.
-     *
-     * @var string
-     */
-    public $systemId;
-    /**
-     * The POSIX compliant user ID.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * The username of the account.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * A POSIX account field identifier.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Directory {
+    class UserPosixAccount extends \Google\Model
     {
+        /**
+         * A POSIX account field identifier.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The GECOS (user information) for this account.
+         *
+         * @var string
+         */
+        public $gecos;
+        /**
+         * The default group ID.
+         *
+         * @var string
+         */
+        public $gid;
+        /**
+         * The path to the home directory for this account.
+         *
+         * @var string
+         */
+        public $homeDirectory;
+        /**
+         * The operating system type for this account.
+         *
+         * @var string
+         */
+        public $operatingSystemType;
+        /**
+         * If this is user's primary account within the SystemId.
+         *
+         * @var bool
+         */
+        public $primary;
+        /**
+         * The path to the login shell for this account.
+         *
+         * @var string
+         */
+        public $shell;
+        /**
+         * System identifier for which account Username or Uid apply to.
+         *
+         * @var string
+         */
+        public $systemId;
+        /**
+         * The POSIX compliant user ID.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * The username of the account.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * A POSIX account field identifier.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The GECOS (user information) for this account.
+         *
+         * @param string $gecos
+         */
+        public function setGecos($gecos)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGecos()
+        {
+        }
+        /**
+         * The default group ID.
+         *
+         * @param string $gid
+         */
+        public function setGid($gid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGid()
+        {
+        }
+        /**
+         * The path to the home directory for this account.
+         *
+         * @param string $homeDirectory
+         */
+        public function setHomeDirectory($homeDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHomeDirectory()
+        {
+        }
+        /**
+         * The operating system type for this account.
+         *
+         * @param string $operatingSystemType
+         */
+        public function setOperatingSystemType($operatingSystemType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatingSystemType()
+        {
+        }
+        /**
+         * If this is user's primary account within the SystemId.
+         *
+         * @param bool $primary
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * The path to the login shell for this account.
+         *
+         * @param string $shell
+         */
+        public function setShell($shell)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShell()
+        {
+        }
+        /**
+         * System identifier for which account Username or Uid apply to.
+         *
+         * @param string $systemId
+         */
+        public function setSystemId($systemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemId()
+        {
+        }
+        /**
+         * The POSIX compliant user ID.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * The username of the account.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserPosixAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The GECOS (user information) for this account.
-     *
-     * @param string $gecos
-     */
-    public function setGecos($gecos)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGecos()
-    {
-    }
-    /**
-     * The default group ID.
-     *
-     * @param string $gid
-     */
-    public function setGid($gid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGid()
-    {
-    }
-    /**
-     * The path to the home directory for this account.
-     *
-     * @param string $homeDirectory
-     */
-    public function setHomeDirectory($homeDirectory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHomeDirectory()
-    {
-    }
-    /**
-     * The operating system type for this account.
-     *
-     * @param string $operatingSystemType
-     */
-    public function setOperatingSystemType($operatingSystemType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperatingSystemType()
-    {
-    }
-    /**
-     * If this is user's primary account within the SystemId.
-     *
-     * @param bool $primary
-     */
-    public function setPrimary($primary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrimary()
-    {
-    }
-    /**
-     * The path to the login shell for this account.
-     *
-     * @param string $shell
-     */
-    public function setShell($shell)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShell()
-    {
-    }
-    /**
-     * System identifier for which account Username or Uid apply to.
-     *
-     * @param string $systemId
-     */
-    public function setSystemId($systemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemId()
-    {
-    }
-    /**
-     * The POSIX compliant user ID.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * The username of the account.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Directory_UserPosixAccount extends \Google\Service\Directory\UserPosixAccount
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval extends \Google\Model
-{
-    protected $lowerBoundType = GoogleTypeDecimal::class;
-    protected $lowerBoundDataType = '';
-    protected $upperBoundType = GoogleTypeDecimal::class;
-    protected $upperBoundDataType = '';
-    /**
-     * The confidence interval's lower bound.
-     *
-     * @param GoogleTypeDecimal $lowerBound
-     */
-    public function setLowerBound(GoogleTypeDecimal $lowerBound)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval extends \Google\Model
     {
+        protected $lowerBoundType = GoogleTypeDecimal::class;
+        protected $lowerBoundDataType = '';
+        protected $upperBoundType = GoogleTypeDecimal::class;
+        protected $upperBoundDataType = '';
+        /**
+         * The confidence interval's lower bound.
+         *
+         * @param GoogleTypeDecimal $lowerBound
+         */
+        public function setLowerBound(GoogleTypeDecimal $lowerBound)
+        {
+        }
+        /**
+         * @return GoogleTypeDecimal
+         */
+        public function getLowerBound()
+        {
+        }
+        /**
+         * The confidence interval's upper bound.
+         *
+         * @param GoogleTypeDecimal $upperBound
+         */
+        public function setUpperBound(GoogleTypeDecimal $upperBound)
+        {
+        }
+        /**
+         * @return GoogleTypeDecimal
+         */
+        public function getUpperBound()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDecimal
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLowerBound()
-    {
-    }
-    /**
-     * The confidence interval's upper bound.
-     *
-     * @param GoogleTypeDecimal $upperBound
-     */
-    public function setUpperBound(GoogleTypeDecimal $upperBound)
-    {
-    }
-    /**
-     * @return GoogleTypeDecimal
-     */
-    public function getUpperBound()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DecimalConfidenceInterval
     {
     }
 }

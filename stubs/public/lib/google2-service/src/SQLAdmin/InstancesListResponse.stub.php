@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $itemsType = DatabaseInstance::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#instancesList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $warningsType = ApiWarning::class;
-    protected $warningsDataType = 'array';
-    /**
-     * List of database instance resources.
-     *
-     * @param DatabaseInstance[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class InstancesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $itemsType = DatabaseInstance::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#instancesList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $warningsType = ApiWarning::class;
+        protected $warningsDataType = 'array';
+        /**
+         * List of database instance resources.
+         *
+         * @param DatabaseInstance[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return DatabaseInstance[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#instancesList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of warnings that occurred while handling the request.
+         *
+         * @param ApiWarning[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return ApiWarning[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatabaseInstance[]
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#instancesList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of warnings that occurred while handling the request.
-     *
-     * @param ApiWarning[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return ApiWarning[]
-     */
-    public function getWarnings()
+    class Google_Service_SQLAdmin_InstancesListResponse extends \Google\Service\SQLAdmin\InstancesListResponse
     {
     }
 }

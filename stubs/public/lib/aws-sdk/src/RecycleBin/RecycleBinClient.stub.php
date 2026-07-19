@@ -8,6 +8,7 @@
  */
 namespace Aws\RecycleBin;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Recycle Bin** service.
  * @method \Aws\Result createRule(array $args = [])

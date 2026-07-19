@@ -21,203 +21,212 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeploymentConfig extends \Google\Collection
-{
-    protected $collection_key = 'deploymentGroups';
-    /**
-     * Additional key-value metadata for the deployment.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Base path where the application will be hosted. Defaults to "/".
-     *
-     * @var string
-     */
-    public $basePath;
-    /**
-     * The list of deployment groups in which this proxy should be deployed. Not
-     * currently populated for shared flows.
-     *
-     * @var string[]
-     */
-    public $deploymentGroups;
-    /**
-     * A mapping from basepaths to proxy endpoint names in this proxy. Not
-     * populated for shared flows.
-     *
-     * @var string[]
-     */
-    public $endpoints;
-    /**
-     * Location of the API proxy bundle as a URI.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Name of the API or shared flow revision to be deployed in the following
-     * format: `organizations/{org}/apis/{api}/revisions/{rev}` or
-     * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Unique ID of the API proxy revision.
-     *
-     * @var string
-     */
-    public $proxyUid;
-    /**
-     * The service account identity associated with this deployment. If non-empty,
-     * will be in the following format:
-     * `projects/-/serviceAccounts/{account_email}`
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Unique ID. The ID will only change if the deployment is deleted and
-     * recreated.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Additional key-value metadata for the deployment.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeploymentConfig extends \Google\Collection
     {
+        protected $collection_key = 'deploymentGroups';
+        /**
+         * Additional key-value metadata for the deployment.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Base path where the application will be hosted. Defaults to "/".
+         *
+         * @var string
+         */
+        public $basePath;
+        /**
+         * The list of deployment groups in which this proxy should be deployed. Not
+         * currently populated for shared flows.
+         *
+         * @var string[]
+         */
+        public $deploymentGroups;
+        /**
+         * A mapping from basepaths to proxy endpoint names in this proxy. Not
+         * populated for shared flows.
+         *
+         * @var string[]
+         */
+        public $endpoints;
+        /**
+         * Location of the API proxy bundle as a URI.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Name of the API or shared flow revision to be deployed in the following
+         * format: `organizations/{org}/apis/{api}/revisions/{rev}` or
+         * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Unique ID of the API proxy revision.
+         *
+         * @var string
+         */
+        public $proxyUid;
+        /**
+         * The service account identity associated with this deployment. If non-empty,
+         * will be in the following format:
+         * `projects/-/serviceAccounts/{account_email}`
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Unique ID. The ID will only change if the deployment is deleted and
+         * recreated.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Additional key-value metadata for the deployment.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Base path where the application will be hosted. Defaults to "/".
+         *
+         * @param string $basePath
+         */
+        public function setBasePath($basePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasePath()
+        {
+        }
+        /**
+         * The list of deployment groups in which this proxy should be deployed. Not
+         * currently populated for shared flows.
+         *
+         * @param string[] $deploymentGroups
+         */
+        public function setDeploymentGroups($deploymentGroups)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeploymentGroups()
+        {
+        }
+        /**
+         * A mapping from basepaths to proxy endpoint names in this proxy. Not
+         * populated for shared flows.
+         *
+         * @param string[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * Location of the API proxy bundle as a URI.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Name of the API or shared flow revision to be deployed in the following
+         * format: `organizations/{org}/apis/{api}/revisions/{rev}` or
+         * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Unique ID of the API proxy revision.
+         *
+         * @param string $proxyUid
+         */
+        public function setProxyUid($proxyUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProxyUid()
+        {
+        }
+        /**
+         * The service account identity associated with this deployment. If non-empty,
+         * will be in the following format:
+         * `projects/-/serviceAccounts/{account_email}`
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Unique ID. The ID will only change if the deployment is deleted and
+         * recreated.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Base path where the application will be hosted. Defaults to "/".
-     *
-     * @param string $basePath
-     */
-    public function setBasePath($basePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBasePath()
-    {
-    }
-    /**
-     * The list of deployment groups in which this proxy should be deployed. Not
-     * currently populated for shared flows.
-     *
-     * @param string[] $deploymentGroups
-     */
-    public function setDeploymentGroups($deploymentGroups)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeploymentGroups()
-    {
-    }
-    /**
-     * A mapping from basepaths to proxy endpoint names in this proxy. Not
-     * populated for shared flows.
-     *
-     * @param string[] $endpoints
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * Location of the API proxy bundle as a URI.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Name of the API or shared flow revision to be deployed in the following
-     * format: `organizations/{org}/apis/{api}/revisions/{rev}` or
-     * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Unique ID of the API proxy revision.
-     *
-     * @param string $proxyUid
-     */
-    public function setProxyUid($proxyUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProxyUid()
-    {
-    }
-    /**
-     * The service account identity associated with this deployment. If non-empty,
-     * will be in the following format:
-     * `projects/-/serviceAccounts/{account_email}`
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Unique ID. The ID will only change if the deployment is deleted and
-     * recreated.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeploymentConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentConfig
     {
     }
 }

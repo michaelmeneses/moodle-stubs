@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class DeployedFleetDetails extends \Google\Model
-{
-    protected $deployedAutoscalerType = DeployedFleetAutoscaler::class;
-    protected $deployedAutoscalerDataType = '';
-    protected $deployedFleetType = DeployedFleet::class;
-    protected $deployedFleetDataType = '';
-    /**
-     * @param DeployedFleetAutoscaler
-     */
-    public function setDeployedAutoscaler(DeployedFleetAutoscaler $deployedAutoscaler)
+namespace Google\Service\GameServices {
+    class DeployedFleetDetails extends \Google\Model
     {
+        protected $deployedAutoscalerType = DeployedFleetAutoscaler::class;
+        protected $deployedAutoscalerDataType = '';
+        protected $deployedFleetType = DeployedFleet::class;
+        protected $deployedFleetDataType = '';
+        /**
+         * @param DeployedFleetAutoscaler
+         */
+        public function setDeployedAutoscaler(DeployedFleetAutoscaler $deployedAutoscaler)
+        {
+        }
+        /**
+         * @return DeployedFleetAutoscaler
+         */
+        public function getDeployedAutoscaler()
+        {
+        }
+        /**
+         * @param DeployedFleet
+         */
+        public function setDeployedFleet(DeployedFleet $deployedFleet)
+        {
+        }
+        /**
+         * @return DeployedFleet
+         */
+        public function getDeployedFleet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeployedFleetAutoscaler
+     * Runtime class alias of \Google\Service\GameServices\DeployedFleetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedAutoscaler()
-    {
-    }
-    /**
-     * @param DeployedFleet
-     */
-    public function setDeployedFleet(DeployedFleet $deployedFleet)
-    {
-    }
-    /**
-     * @return DeployedFleet
-     */
-    public function getDeployedFleet()
+    class Google_Service_GameServices_DeployedFleetDetails extends \Google\Service\GameServices\DeployedFleetDetails
     {
     }
 }

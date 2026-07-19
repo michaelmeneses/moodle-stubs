@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ACMEDNS;
-
-class RotateChallengesRequest extends \Google\Collection
-{
-    protected $collection_key = 'recordsToRemove';
-    /**
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * @var bool
-     */
-    public $keepExpiredRecords;
-    protected $recordsToAddType = AcmeTxtRecord::class;
-    protected $recordsToAddDataType = 'array';
-    protected $recordsToRemoveType = AcmeTxtRecord::class;
-    protected $recordsToRemoveDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\ACMEDNS {
+    class RotateChallengesRequest extends \Google\Collection
     {
+        protected $collection_key = 'recordsToRemove';
+        /**
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * @var bool
+         */
+        public $keepExpiredRecords;
+        protected $recordsToAddType = AcmeTxtRecord::class;
+        protected $recordsToAddDataType = 'array';
+        protected $recordsToRemoveType = AcmeTxtRecord::class;
+        protected $recordsToRemoveDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setKeepExpiredRecords($keepExpiredRecords)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeepExpiredRecords()
+        {
+        }
+        /**
+         * @param AcmeTxtRecord[]
+         */
+        public function setRecordsToAdd($recordsToAdd)
+        {
+        }
+        /**
+         * @return AcmeTxtRecord[]
+         */
+        public function getRecordsToAdd()
+        {
+        }
+        /**
+         * @param AcmeTxtRecord[]
+         */
+        public function setRecordsToRemove($recordsToRemove)
+        {
+        }
+        /**
+         * @return AcmeTxtRecord[]
+         */
+        public function getRecordsToRemove()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ACMEDNS\RotateChallengesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setKeepExpiredRecords($keepExpiredRecords)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeepExpiredRecords()
-    {
-    }
-    /**
-     * @param AcmeTxtRecord[]
-     */
-    public function setRecordsToAdd($recordsToAdd)
-    {
-    }
-    /**
-     * @return AcmeTxtRecord[]
-     */
-    public function getRecordsToAdd()
-    {
-    }
-    /**
-     * @param AcmeTxtRecord[]
-     */
-    public function setRecordsToRemove($recordsToRemove)
-    {
-    }
-    /**
-     * @return AcmeTxtRecord[]
-     */
-    public function getRecordsToRemove()
+    class Google_Service_ACMEDNS_RotateChallengesRequest extends \Google\Service\ACMEDNS\RotateChallengesRequest
     {
     }
 }

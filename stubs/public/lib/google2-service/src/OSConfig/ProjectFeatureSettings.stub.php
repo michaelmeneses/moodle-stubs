@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ProjectFeatureSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $patchAndConfigFeatureSet;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\OSConfig {
+    class ProjectFeatureSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $patchAndConfigFeatureSet;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPatchAndConfigFeatureSet($patchAndConfigFeatureSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatchAndConfigFeatureSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\ProjectFeatureSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPatchAndConfigFeatureSet($patchAndConfigFeatureSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatchAndConfigFeatureSet()
+    class Google_Service_OSConfig_ProjectFeatureSettings extends \Google\Service\OSConfig\ProjectFeatureSettings
     {
     }
 }

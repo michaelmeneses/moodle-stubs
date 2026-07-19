@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class CalendarResources extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = CalendarResource::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies this as a collection of CalendarResources. This is always
-     * `admin#directory#resources#calendars#calendarResourcesList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class CalendarResources extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = CalendarResource::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies this as a collection of CalendarResources. This is always
+         * `admin#directory#resources#calendars#calendarResourcesList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The CalendarResources in this page of results.
+         *
+         * @param CalendarResource[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return CalendarResource[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies this as a collection of CalendarResources. This is always
+         * `admin#directory#resources#calendars#calendarResourcesList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\CalendarResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The CalendarResources in this page of results.
-     *
-     * @param CalendarResource[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return CalendarResource[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies this as a collection of CalendarResources. This is always
-     * `admin#directory#resources#calendars#calendarResourcesList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Directory_CalendarResources extends \Google\Service\Directory\CalendarResources
     {
     }
 }

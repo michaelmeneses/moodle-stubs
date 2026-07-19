@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SBOMReferenceNote extends \Google\Model
-{
-    /**
-     * The format that SBOM takes. E.g. may be spdx, cyclonedx, etc...
-     *
-     * @var string
-     */
-    public $format;
-    /**
-     * The version of the format that the SBOM takes. E.g. if the format is spdx,
-     * the version may be 2.3.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The format that SBOM takes. E.g. may be spdx, cyclonedx, etc...
-     *
-     * @param string $format
-     */
-    public function setFormat($format)
+namespace Google\Service\ContainerAnalysis {
+    class SBOMReferenceNote extends \Google\Model
     {
+        /**
+         * The format that SBOM takes. E.g. may be spdx, cyclonedx, etc...
+         *
+         * @var string
+         */
+        public $format;
+        /**
+         * The version of the format that the SBOM takes. E.g. if the format is spdx,
+         * the version may be 2.3.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The format that SBOM takes. E.g. may be spdx, cyclonedx, etc...
+         *
+         * @param string $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * The version of the format that the SBOM takes. E.g. if the format is spdx,
+         * the version may be 2.3.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SBOMReferenceNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * The version of the format that the SBOM takes. E.g. if the format is spdx,
-     * the version may be 2.3.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ContainerAnalysis_SBOMReferenceNote extends \Google\Service\ContainerAnalysis\SBOMReferenceNote
     {
     }
 }

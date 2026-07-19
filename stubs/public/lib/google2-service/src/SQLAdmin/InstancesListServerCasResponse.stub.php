@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesListServerCasResponse extends \Google\Collection
-{
-    protected $collection_key = 'certs';
-    /**
-     * @var string
-     */
-    public $activeVersion;
-    protected $certsType = SslCert::class;
-    protected $certsDataType = 'array';
-    /**
-     * This is always `sql#instancesListServerCas`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param string $activeVersion
-     */
-    public function setActiveVersion($activeVersion)
+namespace Google\Service\SQLAdmin {
+    class InstancesListServerCasResponse extends \Google\Collection
     {
+        protected $collection_key = 'certs';
+        /**
+         * @var string
+         */
+        public $activeVersion;
+        protected $certsType = SslCert::class;
+        protected $certsDataType = 'array';
+        /**
+         * This is always `sql#instancesListServerCas`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param string $activeVersion
+         */
+        public function setActiveVersion($activeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveVersion()
+        {
+        }
+        /**
+         * List of server CA certificates for the instance.
+         *
+         * @param SslCert[] $certs
+         */
+        public function setCerts($certs)
+        {
+        }
+        /**
+         * @return SslCert[]
+         */
+        public function getCerts()
+        {
+        }
+        /**
+         * This is always `sql#instancesListServerCas`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesListServerCasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveVersion()
-    {
-    }
-    /**
-     * List of server CA certificates for the instance.
-     *
-     * @param SslCert[] $certs
-     */
-    public function setCerts($certs)
-    {
-    }
-    /**
-     * @return SslCert[]
-     */
-    public function getCerts()
-    {
-    }
-    /**
-     * This is always `sql#instancesListServerCas`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_InstancesListServerCasResponse extends \Google\Service\SQLAdmin\InstancesListServerCasResponse
     {
     }
 }

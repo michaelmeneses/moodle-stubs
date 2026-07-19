@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonSearchAds360ExpandedDynamicSearchAdInfo extends \Google\Model
-{
-    /**
-     * The tracking id of the ad.
-     *
-     * @var string
-     */
-    public $adTrackingId;
-    /**
-     * The first line of the ad's description.
-     *
-     * @var string
-     */
-    public $description1;
-    /**
-     * The second line of the ad's description.
-     *
-     * @var string
-     */
-    public $description2;
-    /**
-     * The tracking id of the ad.
-     *
-     * @param string $adTrackingId
-     */
-    public function setAdTrackingId($adTrackingId)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonSearchAds360ExpandedDynamicSearchAdInfo extends \Google\Model
     {
+        /**
+         * The tracking id of the ad.
+         *
+         * @var string
+         */
+        public $adTrackingId;
+        /**
+         * The first line of the ad's description.
+         *
+         * @var string
+         */
+        public $description1;
+        /**
+         * The second line of the ad's description.
+         *
+         * @var string
+         */
+        public $description2;
+        /**
+         * The tracking id of the ad.
+         *
+         * @param string $adTrackingId
+         */
+        public function setAdTrackingId($adTrackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdTrackingId()
+        {
+        }
+        /**
+         * The first line of the ad's description.
+         *
+         * @param string $description1
+         */
+        public function setDescription1($description1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription1()
+        {
+        }
+        /**
+         * The second line of the ad's description.
+         *
+         * @param string $description2
+         */
+        public function setDescription2($description2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonSearchAds360ExpandedDynamicSearchAdInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdTrackingId()
-    {
-    }
-    /**
-     * The first line of the ad's description.
-     *
-     * @param string $description1
-     */
-    public function setDescription1($description1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription1()
-    {
-    }
-    /**
-     * The second line of the ad's description.
-     *
-     * @param string $description2
-     */
-    public function setDescription2($description2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription2()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonSearchAds360ExpandedDynamicSearchAdInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonSearchAds360ExpandedDynamicSearchAdInfo
     {
     }
 }

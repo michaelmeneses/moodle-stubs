@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class DimensionValue extends \Google\Model
-{
-    /**
-     * Value as a string if the dimension type is a string.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Value as a string if the dimension type is a string.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\AnalyticsData {
+    class DimensionValue extends \Google\Model
     {
+        /**
+         * Value as a string if the dimension type is a string.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Value as a string if the dimension type is a string.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\DimensionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_AnalyticsData_DimensionValue extends \Google\Service\AnalyticsData\DimensionValue
     {
     }
 }

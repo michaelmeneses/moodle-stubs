@@ -21,26 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces\Resource;
-
-/**
- * The "Text" collection of methods.
- * Typical usage is:
- *  <code>
- *   $placesService = new Google\Service\MapsPlaces(...);
- *   $Text = $placesService->Text;
- *  </code>
- */
-class Text extends \Google\Service\Resource
-{
+namespace Google\Service\MapsPlaces\Resource {
+    use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequest;
+    use Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextResponse;
     /**
-     * Text query based place search. (Text.search)
-     *
-     * @param GoogleMapsPlacesV1SearchTextRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleMapsPlacesV1SearchTextResponse
+     * The "Text" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $placesService = new Google\Service\MapsPlaces(...);
+     *   $Text = $placesService->Text;
+     *  </code>
      */
-    public function search(GoogleMapsPlacesV1SearchTextRequest $postBody, $optParams = [])
+    class Text extends \Google\Service\Resource
+    {
+        /**
+         * Text query based place search. (Text.search)
+         *
+         * @param GoogleMapsPlacesV1SearchTextRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleMapsPlacesV1SearchTextResponse
+         */
+        public function search(GoogleMapsPlacesV1SearchTextRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MapsPlaces\Resource\Text registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MapsPlaces_Resource_Text extends \Google\Service\MapsPlaces\Resource\Text
     {
     }
 }

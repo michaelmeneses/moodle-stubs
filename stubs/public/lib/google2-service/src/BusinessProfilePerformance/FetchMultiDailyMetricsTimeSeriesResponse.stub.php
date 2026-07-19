@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class FetchMultiDailyMetricsTimeSeriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'multiDailyMetricTimeSeries';
-    protected $multiDailyMetricTimeSeriesType = MultiDailyMetricTimeSeries::class;
-    protected $multiDailyMetricTimeSeriesDataType = 'array';
-    /**
-     * DailyMetrics and their corresponding time series.
-     *
-     * @param MultiDailyMetricTimeSeries[] $multiDailyMetricTimeSeries
-     */
-    public function setMultiDailyMetricTimeSeries($multiDailyMetricTimeSeries)
+namespace Google\Service\BusinessProfilePerformance {
+    class FetchMultiDailyMetricsTimeSeriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'multiDailyMetricTimeSeries';
+        protected $multiDailyMetricTimeSeriesType = MultiDailyMetricTimeSeries::class;
+        protected $multiDailyMetricTimeSeriesDataType = 'array';
+        /**
+         * DailyMetrics and their corresponding time series.
+         *
+         * @param MultiDailyMetricTimeSeries[] $multiDailyMetricTimeSeries
+         */
+        public function setMultiDailyMetricTimeSeries($multiDailyMetricTimeSeries)
+        {
+        }
+        /**
+         * @return MultiDailyMetricTimeSeries[]
+         */
+        public function getMultiDailyMetricTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MultiDailyMetricTimeSeries[]
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\FetchMultiDailyMetricsTimeSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiDailyMetricTimeSeries()
+    class Google_Service_BusinessProfilePerformance_FetchMultiDailyMetricsTimeSeriesResponse extends \Google\Service\BusinessProfilePerformance\FetchMultiDailyMetricsTimeSeriesResponse
     {
     }
 }

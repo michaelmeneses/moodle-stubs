@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class Draft extends \Google\Model
-{
-    /**
-     * The immutable ID of the draft.
-     *
-     * @var string
-     */
-    public $id;
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * The immutable ID of the draft.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Gmail {
+    class Draft extends \Google\Model
     {
+        /**
+         * The immutable ID of the draft.
+         *
+         * @var string
+         */
+        public $id;
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * The immutable ID of the draft.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The message content of the draft.
+         *
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\Draft registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The message content of the draft.
-     *
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
-    {
-    }
-    /**
-     * @return Message
-     */
-    public function getMessage()
+    class Google_Service_Gmail_Draft extends \Google\Service\Gmail\Draft
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ResponseMessageText extends \Google\Collection
-{
-    protected $collection_key = 'text';
-    /**
-     * Output only. Whether the playback of this message can be interrupted by the
-     * end user's speech and the client can then starts the next Dialogflow
-     * request.
-     *
-     * @var bool
-     */
-    public $allowPlaybackInterruption;
-    /**
-     * Required. A collection of text response variants. If multiple variants are
-     * defined, only one text response variant is returned at runtime.
-     *
-     * @var string[]
-     */
-    public $text;
-    /**
-     * Output only. Whether the playback of this message can be interrupted by the
-     * end user's speech and the client can then starts the next Dialogflow
-     * request.
-     *
-     * @param bool $allowPlaybackInterruption
-     */
-    public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ResponseMessageText extends \Google\Collection
     {
+        protected $collection_key = 'text';
+        /**
+         * Output only. Whether the playback of this message can be interrupted by the
+         * end user's speech and the client can then starts the next Dialogflow
+         * request.
+         *
+         * @var bool
+         */
+        public $allowPlaybackInterruption;
+        /**
+         * Required. A collection of text response variants. If multiple variants are
+         * defined, only one text response variant is returned at runtime.
+         *
+         * @var string[]
+         */
+        public $text;
+        /**
+         * Output only. Whether the playback of this message can be interrupted by the
+         * end user's speech and the client can then starts the next Dialogflow
+         * request.
+         *
+         * @param bool $allowPlaybackInterruption
+         */
+        public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowPlaybackInterruption()
+        {
+        }
+        /**
+         * Required. A collection of text response variants. If multiple variants are
+         * defined, only one text response variant is returned at runtime.
+         *
+         * @param string[] $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPlaybackInterruption()
-    {
-    }
-    /**
-     * Required. A collection of text response variants. If multiple variants are
-     * defined, only one text response variant is returned at runtime.
-     *
-     * @param string[] $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ResponseMessageText extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageText
     {
     }
 }

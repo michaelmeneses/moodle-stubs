@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ThirdPartyLinkListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = ThirdPartyLink::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#thirdPartyLinkListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class ThirdPartyLinkListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = ThirdPartyLink::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#thirdPartyLinkListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param ThirdPartyLink[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return ThirdPartyLink[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#thirdPartyLinkListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ThirdPartyLinkListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param ThirdPartyLink[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return ThirdPartyLink[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#thirdPartyLinkListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_YouTube_ThirdPartyLinkListResponse extends \Google\Service\YouTube\ThirdPartyLinkListResponse
     {
     }
 }

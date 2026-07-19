@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FileList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = DfareportingFile::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#fileList".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Continuation token used to page through files. To retrieve the next page of
-     * results, set the next request's "pageToken" to the value of this field. The
-     * page token is only valid for a limited amount of time and should not be
-     * persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Dfareporting {
+    class FileList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = DfareportingFile::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#fileList".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Continuation token used to page through files. To retrieve the next page of
+         * results, set the next request's "pageToken" to the value of this field. The
+         * page token is only valid for a limited amount of time and should not be
+         * persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The files returned in this response.
+         *
+         * @param DfareportingFile[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return DfareportingFile[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#fileList".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Continuation token used to page through files. To retrieve the next page of
+         * results, set the next request's "pageToken" to the value of this field. The
+         * page token is only valid for a limited amount of time and should not be
+         * persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\FileList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The files returned in this response.
-     *
-     * @param DfareportingFile[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return DfareportingFile[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#fileList".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Continuation token used to page through files. To retrieve the next page of
-     * results, set the next request's "pageToken" to the value of this field. The
-     * page token is only valid for a limited amount of time and should not be
-     * persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_FileList extends \Google\Service\Dfareporting\FileList
     {
     }
 }

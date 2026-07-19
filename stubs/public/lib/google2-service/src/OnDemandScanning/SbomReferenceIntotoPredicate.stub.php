@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class SbomReferenceIntotoPredicate extends \Google\Model
-{
-    /**
-     * A map of algorithm to digest of the contents of the SBOM.
-     *
-     * @var string[]
-     */
-    public $digest;
-    /**
-     * The location of the SBOM.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The mime type of the SBOM.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The person or system referring this predicate to the consumer.
-     *
-     * @var string
-     */
-    public $referrerId;
-    /**
-     * A map of algorithm to digest of the contents of the SBOM.
-     *
-     * @param string[] $digest
-     */
-    public function setDigest($digest)
+namespace Google\Service\OnDemandScanning {
+    class SbomReferenceIntotoPredicate extends \Google\Model
     {
+        /**
+         * A map of algorithm to digest of the contents of the SBOM.
+         *
+         * @var string[]
+         */
+        public $digest;
+        /**
+         * The location of the SBOM.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The mime type of the SBOM.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The person or system referring this predicate to the consumer.
+         *
+         * @var string
+         */
+        public $referrerId;
+        /**
+         * A map of algorithm to digest of the contents of the SBOM.
+         *
+         * @param string[] $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * The location of the SBOM.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The mime type of the SBOM.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The person or system referring this predicate to the consumer.
+         *
+         * @param string $referrerId
+         */
+        public function setReferrerId($referrerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\SbomReferenceIntotoPredicate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * The location of the SBOM.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The mime type of the SBOM.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The person or system referring this predicate to the consumer.
-     *
-     * @param string $referrerId
-     */
-    public function setReferrerId($referrerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferrerId()
+    class Google_Service_OnDemandScanning_SbomReferenceIntotoPredicate extends \Google\Service\OnDemandScanning\SbomReferenceIntotoPredicate
     {
     }
 }

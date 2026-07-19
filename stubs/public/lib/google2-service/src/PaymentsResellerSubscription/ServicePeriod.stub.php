@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ServicePeriod extends \Google\Model
-{
-    /**
-     * Optional. The end time of the service period. Time is exclusive.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Required. The start time of the service period. Time is inclusive.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. The end time of the service period. Time is exclusive.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ServicePeriod extends \Google\Model
     {
+        /**
+         * Optional. The end time of the service period. Time is exclusive.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Required. The start time of the service period. Time is inclusive.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. The end time of the service period. Time is exclusive.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. The start time of the service period. Time is inclusive.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ServicePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. The start time of the service period. Time is inclusive.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_PaymentsResellerSubscription_ServicePeriod extends \Google\Service\PaymentsResellerSubscription\ServicePeriod
     {
     }
 }

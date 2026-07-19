@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlatformTypesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'platformTypes';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#platformTypesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $platformTypesType = PlatformType::class;
-    protected $platformTypesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#platformTypesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class PlatformTypesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'platformTypes';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#platformTypesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $platformTypesType = PlatformType::class;
+        protected $platformTypesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#platformTypesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Platform type collection.
+         *
+         * @param PlatformType[] $platformTypes
+         */
+        public function setPlatformTypes($platformTypes)
+        {
+        }
+        /**
+         * @return PlatformType[]
+         */
+        public function getPlatformTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PlatformTypesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Platform type collection.
-     *
-     * @param PlatformType[] $platformTypes
-     */
-    public function setPlatformTypes($platformTypes)
-    {
-    }
-    /**
-     * @return PlatformType[]
-     */
-    public function getPlatformTypes()
+    class Google_Service_Dfareporting_PlatformTypesListResponse extends \Google\Service\Dfareporting\PlatformTypesListResponse
     {
     }
 }

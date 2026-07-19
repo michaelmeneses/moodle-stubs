@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupManagersStopInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * If this flag is set to true, the Instance Group Manager will proceed to
-     * stop the instances, skipping initialization on them.
-     *
-     * @var bool
-     */
-    public $forceStop;
-    /**
-     * The URLs of one or more instances to stop. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @var string[]
-     */
-    public $instances;
-    /**
-     * If this flag is set to true, the Instance Group Manager will proceed to
-     * stop the instances, skipping initialization on them.
-     *
-     * @param bool $forceStop
-     */
-    public function setForceStop($forceStop)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupManagersStopInstancesRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * If this flag is set to true, the Instance Group Manager will proceed to
+         * stop the instances, skipping initialization on them.
+         *
+         * @var bool
+         */
+        public $forceStop;
+        /**
+         * The URLs of one or more instances to stop. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @var string[]
+         */
+        public $instances;
+        /**
+         * If this flag is set to true, the Instance Group Manager will proceed to
+         * stop the instances, skipping initialization on them.
+         *
+         * @param bool $forceStop
+         */
+        public function setForceStop($forceStop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForceStop()
+        {
+        }
+        /**
+         * The URLs of one or more instances to stop. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @param string[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupManagersStopInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForceStop()
-    {
-    }
-    /**
-     * The URLs of one or more instances to stop. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @param string[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInstances()
+    class Google_Service_Compute_RegionInstanceGroupManagersStopInstancesRequest extends \Google\Service\Compute\RegionInstanceGroupManagersStopInstancesRequest
     {
     }
 }

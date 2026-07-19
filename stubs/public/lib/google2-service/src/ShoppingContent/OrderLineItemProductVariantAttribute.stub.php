@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemProductVariantAttribute extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dimension;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setDimension($dimension)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemProductVariantAttribute extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dimension;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemProductVariantAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ShoppingContent_OrderLineItemProductVariantAttribute extends \Google\Service\ShoppingContent\OrderLineItemProductVariantAttribute
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class ContentTypeInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bestGuess;
-    /**
-     * @var string
-     */
-    public $fromBytes;
-    /**
-     * @var string
-     */
-    public $fromFileName;
-    /**
-     * @var string
-     */
-    public $fromHeader;
-    /**
-     * @var string
-     */
-    public $fromUrlPath;
-    /**
-     * @param string
-     */
-    public function setBestGuess($bestGuess)
+namespace Google\Service\Chromewebstore {
+    class ContentTypeInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bestGuess;
+        /**
+         * @var string
+         */
+        public $fromBytes;
+        /**
+         * @var string
+         */
+        public $fromFileName;
+        /**
+         * @var string
+         */
+        public $fromHeader;
+        /**
+         * @var string
+         */
+        public $fromUrlPath;
+        /**
+         * @param string
+         */
+        public function setBestGuess($bestGuess)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBestGuess()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFromBytes($fromBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFromFileName($fromFileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromFileName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFromHeader($fromHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromHeader()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFromUrlPath($fromUrlPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromUrlPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\ContentTypeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestGuess()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFromBytes($fromBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFromFileName($fromFileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromFileName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFromHeader($fromHeader)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromHeader()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFromUrlPath($fromUrlPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromUrlPath()
+    class Google_Service_Chromewebstore_ContentTypeInfo extends \Google\Service\Chromewebstore\ContentTypeInfo
     {
     }
 }

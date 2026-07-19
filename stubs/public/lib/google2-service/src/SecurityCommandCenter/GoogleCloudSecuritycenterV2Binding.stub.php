@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Binding extends \Google\Collection
-{
-    protected $collection_key = 'subjects';
-    /**
-     * Name for the binding.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Namespace for the binding.
-     *
-     * @var string
-     */
-    public $ns;
-    protected $roleType = GoogleCloudSecuritycenterV2Role::class;
-    protected $roleDataType = '';
-    protected $subjectsType = GoogleCloudSecuritycenterV2Subject::class;
-    protected $subjectsDataType = 'array';
-    /**
-     * Name for the binding.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Binding extends \Google\Collection
     {
+        protected $collection_key = 'subjects';
+        /**
+         * Name for the binding.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Namespace for the binding.
+         *
+         * @var string
+         */
+        public $ns;
+        protected $roleType = GoogleCloudSecuritycenterV2Role::class;
+        protected $roleDataType = '';
+        protected $subjectsType = GoogleCloudSecuritycenterV2Subject::class;
+        protected $subjectsDataType = 'array';
+        /**
+         * Name for the binding.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Namespace for the binding.
+         *
+         * @param string $ns
+         */
+        public function setNs($ns)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNs()
+        {
+        }
+        /**
+         * The Role or ClusterRole referenced by the binding.
+         *
+         * @param GoogleCloudSecuritycenterV2Role $role
+         */
+        public function setRole(GoogleCloudSecuritycenterV2Role $role)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Role
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Represents one or more subjects that are bound to the role. Not always
+         * available for PATCH requests.
+         *
+         * @param GoogleCloudSecuritycenterV2Subject[] $subjects
+         */
+        public function setSubjects($subjects)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Subject[]
+         */
+        public function getSubjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Binding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Namespace for the binding.
-     *
-     * @param string $ns
-     */
-    public function setNs($ns)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNs()
-    {
-    }
-    /**
-     * The Role or ClusterRole referenced by the binding.
-     *
-     * @param GoogleCloudSecuritycenterV2Role $role
-     */
-    public function setRole(GoogleCloudSecuritycenterV2Role $role)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Role
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * Represents one or more subjects that are bound to the role. Not always
-     * available for PATCH requests.
-     *
-     * @param GoogleCloudSecuritycenterV2Subject[] $subjects
-     */
-    public function setSubjects($subjects)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Subject[]
-     */
-    public function getSubjects()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Binding extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Binding
     {
     }
 }

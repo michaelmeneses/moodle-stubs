@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class CachePrePopulate extends \Google\Collection
-{
-    protected $collection_key = 'pathList';
-    /**
-     * Optional. List of directory-paths to be excluded for pre-population for the
-     * FlexCache volume.
-     *
-     * @var string[]
-     */
-    public $excludePathList;
-    /**
-     * Optional. List of directory-paths to be pre-populated for the FlexCache
-     * volume.
-     *
-     * @var string[]
-     */
-    public $pathList;
-    /**
-     * Optional. Flag indicating whether the directories listed with the pathList
-     * need to be recursively pre-populated.
-     *
-     * @var bool
-     */
-    public $recursion;
-    /**
-     * Optional. List of directory-paths to be excluded for pre-population for the
-     * FlexCache volume.
-     *
-     * @param string[] $excludePathList
-     */
-    public function setExcludePathList($excludePathList)
+namespace Google\Service\NetAppFiles {
+    class CachePrePopulate extends \Google\Collection
     {
+        protected $collection_key = 'pathList';
+        /**
+         * Optional. List of directory-paths to be excluded for pre-population for the
+         * FlexCache volume.
+         *
+         * @var string[]
+         */
+        public $excludePathList;
+        /**
+         * Optional. List of directory-paths to be pre-populated for the FlexCache
+         * volume.
+         *
+         * @var string[]
+         */
+        public $pathList;
+        /**
+         * Optional. Flag indicating whether the directories listed with the pathList
+         * need to be recursively pre-populated.
+         *
+         * @var bool
+         */
+        public $recursion;
+        /**
+         * Optional. List of directory-paths to be excluded for pre-population for the
+         * FlexCache volume.
+         *
+         * @param string[] $excludePathList
+         */
+        public function setExcludePathList($excludePathList)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludePathList()
+        {
+        }
+        /**
+         * Optional. List of directory-paths to be pre-populated for the FlexCache
+         * volume.
+         *
+         * @param string[] $pathList
+         */
+        public function setPathList($pathList)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPathList()
+        {
+        }
+        /**
+         * Optional. Flag indicating whether the directories listed with the pathList
+         * need to be recursively pre-populated.
+         *
+         * @param bool $recursion
+         */
+        public function setRecursion($recursion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRecursion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetAppFiles\CachePrePopulate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludePathList()
-    {
-    }
-    /**
-     * Optional. List of directory-paths to be pre-populated for the FlexCache
-     * volume.
-     *
-     * @param string[] $pathList
-     */
-    public function setPathList($pathList)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPathList()
-    {
-    }
-    /**
-     * Optional. Flag indicating whether the directories listed with the pathList
-     * need to be recursively pre-populated.
-     *
-     * @param bool $recursion
-     */
-    public function setRecursion($recursion)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRecursion()
+    class Google_Service_NetAppFiles_CachePrePopulate extends \Google\Service\NetAppFiles\CachePrePopulate
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1UsageSignal extends \Google\Model
-{
-    public $updateTime;
-    protected $usageWithinTimeRangeType = GoogleCloudDatacatalogV1beta1UsageStats::class;
-    protected $usageWithinTimeRangeDataType = 'map';
-    public function setUpdateTime($updateTime)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1UsageSignal extends \Google\Model
     {
+        public $updateTime;
+        protected $usageWithinTimeRangeType = GoogleCloudDatacatalogV1beta1UsageStats::class;
+        protected $usageWithinTimeRangeDataType = 'map';
+        public function setUpdateTime($updateTime)
+        {
+        }
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1UsageStats[]
+         */
+        public function setUsageWithinTimeRange($usageWithinTimeRange)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1UsageStats[]
+         */
+        public function getUsageWithinTimeRange()
+        {
+        }
     }
-    public function getUpdateTime()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1UsageStats[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1UsageSignal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setUsageWithinTimeRange($usageWithinTimeRange)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1UsageStats[]
-     */
-    public function getUsageWithinTimeRange()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1UsageSignal extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1UsageSignal
     {
     }
 }

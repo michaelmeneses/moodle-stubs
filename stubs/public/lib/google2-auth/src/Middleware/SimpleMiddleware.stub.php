@@ -23,6 +23,8 @@
  */
 namespace Google\Auth\Middleware;
 
+use GuzzleHttp\Psr7\Query;
+use Psr\Http\Message\RequestInterface;
 /**
  * SimpleMiddleware is a Guzzle Middleware that implements Google's Simple API
  * access.

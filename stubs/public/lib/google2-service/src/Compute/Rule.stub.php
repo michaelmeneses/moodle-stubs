@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Rule extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * @var string
-     */
-    public $action;
-    protected $conditionsType = Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string[]
-     */
-    public $ins;
-    protected $logConfigsType = LogConfig::class;
-    protected $logConfigsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $notIns;
-    /**
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\Compute {
+    class Rule extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * @var string
+         */
+        public $action;
+        protected $conditionsType = Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string[]
+         */
+        public $ins;
+        protected $logConfigsType = LogConfig::class;
+        protected $logConfigsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $notIns;
+        /**
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIns($ins)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIns()
+        {
+        }
+        /**
+         * @param LogConfig[]
+         */
+        public function setLogConfigs($logConfigs)
+        {
+        }
+        /**
+         * @return LogConfig[]
+         */
+        public function getLogConfigs()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setNotIns($notIns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotIns()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param Condition[]
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return Condition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIns($ins)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIns()
-    {
-    }
-    /**
-     * @param LogConfig[]
-     */
-    public function setLogConfigs($logConfigs)
-    {
-    }
-    /**
-     * @return LogConfig[]
-     */
-    public function getLogConfigs()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setNotIns($notIns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotIns()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermissions()
+    class Google_Service_Compute_Rule extends \Google\Service\Compute\Rule
     {
     }
 }

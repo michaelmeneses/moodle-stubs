@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class InvocationConfig extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const QUERY_PRIORITY_QUERY_PRIORITY_UNSPECIFIED = 'QUERY_PRIORITY_UNSPECIFIED';
-    /**
-     * Query will be executed in BigQuery with interactive priority. More
-     * information can be found at https://cloud.google.com/bigquery/docs/running-
-     * queries#queries.
-     */
-    public const QUERY_PRIORITY_INTERACTIVE = 'INTERACTIVE';
-    /**
-     * Query will be executed in BigQuery with batch priority. More information
-     * can be found at https://cloud.google.com/bigquery/docs/running-
-     * queries#batchqueries.
-     */
-    public const QUERY_PRIORITY_BATCH = 'BATCH';
-    protected $collection_key = 'includedTargets';
-    /**
-     * Optional. When set to true, any incremental tables will be fully refreshed.
-     *
-     * @var bool
-     */
-    public $fullyRefreshIncrementalTablesEnabled;
-    /**
-     * Optional. The set of tags to include.
-     *
-     * @var string[]
-     */
-    public $includedTags;
-    protected $includedTargetsType = Target::class;
-    protected $includedTargetsDataType = 'array';
-    /**
-     * Optional. Specifies the priority for query execution in BigQuery. More
-     * information can be found at https://cloud.google.com/bigquery/docs/running-
-     * queries#queries.
-     *
-     * @var string
-     */
-    public $queryPriority;
-    /**
-     * Optional. The service account to run workflow invocations under.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Optional. When set to true, transitive dependencies of included actions
-     * will be executed.
-     *
-     * @var bool
-     */
-    public $transitiveDependenciesIncluded;
-    /**
-     * Optional. When set to true, transitive dependents of included actions will
-     * be executed.
-     *
-     * @var bool
-     */
-    public $transitiveDependentsIncluded;
-    /**
-     * Optional. When set to true, any incremental tables will be fully refreshed.
-     *
-     * @param bool $fullyRefreshIncrementalTablesEnabled
-     */
-    public function setFullyRefreshIncrementalTablesEnabled($fullyRefreshIncrementalTablesEnabled)
+namespace Google\Service\Dataform {
+    class InvocationConfig extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const QUERY_PRIORITY_QUERY_PRIORITY_UNSPECIFIED = 'QUERY_PRIORITY_UNSPECIFIED';
+        /**
+         * Query will be executed in BigQuery with interactive priority. More
+         * information can be found at https://cloud.google.com/bigquery/docs/running-
+         * queries#queries.
+         */
+        public const QUERY_PRIORITY_INTERACTIVE = 'INTERACTIVE';
+        /**
+         * Query will be executed in BigQuery with batch priority. More information
+         * can be found at https://cloud.google.com/bigquery/docs/running-
+         * queries#batchqueries.
+         */
+        public const QUERY_PRIORITY_BATCH = 'BATCH';
+        protected $collection_key = 'includedTargets';
+        /**
+         * Optional. When set to true, any incremental tables will be fully refreshed.
+         *
+         * @var bool
+         */
+        public $fullyRefreshIncrementalTablesEnabled;
+        /**
+         * Optional. The set of tags to include.
+         *
+         * @var string[]
+         */
+        public $includedTags;
+        protected $includedTargetsType = Target::class;
+        protected $includedTargetsDataType = 'array';
+        /**
+         * Optional. Specifies the priority for query execution in BigQuery. More
+         * information can be found at https://cloud.google.com/bigquery/docs/running-
+         * queries#queries.
+         *
+         * @var string
+         */
+        public $queryPriority;
+        /**
+         * Optional. The service account to run workflow invocations under.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Optional. When set to true, transitive dependencies of included actions
+         * will be executed.
+         *
+         * @var bool
+         */
+        public $transitiveDependenciesIncluded;
+        /**
+         * Optional. When set to true, transitive dependents of included actions will
+         * be executed.
+         *
+         * @var bool
+         */
+        public $transitiveDependentsIncluded;
+        /**
+         * Optional. When set to true, any incremental tables will be fully refreshed.
+         *
+         * @param bool $fullyRefreshIncrementalTablesEnabled
+         */
+        public function setFullyRefreshIncrementalTablesEnabled($fullyRefreshIncrementalTablesEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullyRefreshIncrementalTablesEnabled()
+        {
+        }
+        /**
+         * Optional. The set of tags to include.
+         *
+         * @param string[] $includedTags
+         */
+        public function setIncludedTags($includedTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedTags()
+        {
+        }
+        /**
+         * Optional. The set of action identifiers to include.
+         *
+         * @param Target[] $includedTargets
+         */
+        public function setIncludedTargets($includedTargets)
+        {
+        }
+        /**
+         * @return Target[]
+         */
+        public function getIncludedTargets()
+        {
+        }
+        /**
+         * Optional. Specifies the priority for query execution in BigQuery. More
+         * information can be found at https://cloud.google.com/bigquery/docs/running-
+         * queries#queries.
+         *
+         * Accepted values: QUERY_PRIORITY_UNSPECIFIED, INTERACTIVE, BATCH
+         *
+         * @param self::QUERY_PRIORITY_* $queryPriority
+         */
+        public function setQueryPriority($queryPriority)
+        {
+        }
+        /**
+         * @return self::QUERY_PRIORITY_*
+         */
+        public function getQueryPriority()
+        {
+        }
+        /**
+         * Optional. The service account to run workflow invocations under.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Optional. When set to true, transitive dependencies of included actions
+         * will be executed.
+         *
+         * @param bool $transitiveDependenciesIncluded
+         */
+        public function setTransitiveDependenciesIncluded($transitiveDependenciesIncluded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTransitiveDependenciesIncluded()
+        {
+        }
+        /**
+         * Optional. When set to true, transitive dependents of included actions will
+         * be executed.
+         *
+         * @param bool $transitiveDependentsIncluded
+         */
+        public function setTransitiveDependentsIncluded($transitiveDependentsIncluded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTransitiveDependentsIncluded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataform\InvocationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullyRefreshIncrementalTablesEnabled()
-    {
-    }
-    /**
-     * Optional. The set of tags to include.
-     *
-     * @param string[] $includedTags
-     */
-    public function setIncludedTags($includedTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedTags()
-    {
-    }
-    /**
-     * Optional. The set of action identifiers to include.
-     *
-     * @param Target[] $includedTargets
-     */
-    public function setIncludedTargets($includedTargets)
-    {
-    }
-    /**
-     * @return Target[]
-     */
-    public function getIncludedTargets()
-    {
-    }
-    /**
-     * Optional. Specifies the priority for query execution in BigQuery. More
-     * information can be found at https://cloud.google.com/bigquery/docs/running-
-     * queries#queries.
-     *
-     * Accepted values: QUERY_PRIORITY_UNSPECIFIED, INTERACTIVE, BATCH
-     *
-     * @param self::QUERY_PRIORITY_* $queryPriority
-     */
-    public function setQueryPriority($queryPriority)
-    {
-    }
-    /**
-     * @return self::QUERY_PRIORITY_*
-     */
-    public function getQueryPriority()
-    {
-    }
-    /**
-     * Optional. The service account to run workflow invocations under.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Optional. When set to true, transitive dependencies of included actions
-     * will be executed.
-     *
-     * @param bool $transitiveDependenciesIncluded
-     */
-    public function setTransitiveDependenciesIncluded($transitiveDependenciesIncluded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTransitiveDependenciesIncluded()
-    {
-    }
-    /**
-     * Optional. When set to true, transitive dependents of included actions will
-     * be executed.
-     *
-     * @param bool $transitiveDependentsIncluded
-     */
-    public function setTransitiveDependentsIncluded($transitiveDependentsIncluded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTransitiveDependentsIncluded()
+    class Google_Service_Dataform_InvocationConfig extends \Google\Service\Dataform\InvocationConfig
     {
     }
 }

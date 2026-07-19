@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'transitionRouteGroups';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transitionRouteGroupsType = GoogleCloudDialogflowCxV3TransitionRouteGroup::class;
-    protected $transitionRouteGroupsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'transitionRouteGroups';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transitionRouteGroupsType = GoogleCloudDialogflowCxV3TransitionRouteGroup::class;
+        protected $transitionRouteGroupsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of transition route groups. There will be a maximum number of
+         * items returned based on the page_size field in the request. The list may in
+         * some cases be empty or contain fewer entries than page_size even if this
+         * isn't the last page.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionRouteGroup[] $transitionRouteGroups
+         */
+        public function setTransitionRouteGroups($transitionRouteGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionRouteGroup[]
+         */
+        public function getTransitionRouteGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of transition route groups. There will be a maximum number of
-     * items returned based on the page_size field in the request. The list may in
-     * some cases be empty or contain fewer entries than page_size even if this
-     * isn't the last page.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionRouteGroup[] $transitionRouteGroups
-     */
-    public function setTransitionRouteGroups($transitionRouteGroups)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionRouteGroup[]
-     */
-    public function getTransitionRouteGroups()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTransitionRouteGroupsResponse
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateInstancePartitionMetadata extends \Google\Model
-{
-    /**
-     * The time at which this operation was cancelled. If set, this operation is
-     * in the process of undoing itself (which is guaranteed to succeed) and
-     * cannot be cancelled again.
-     *
-     * @var string
-     */
-    public $cancelTime;
-    /**
-     * The time at which this operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $instancePartitionType = InstancePartition::class;
-    protected $instancePartitionDataType = '';
-    /**
-     * The time at which UpdateInstancePartition request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The time at which this operation was cancelled. If set, this operation is
-     * in the process of undoing itself (which is guaranteed to succeed) and
-     * cannot be cancelled again.
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Spanner {
+    class UpdateInstancePartitionMetadata extends \Google\Model
     {
+        /**
+         * The time at which this operation was cancelled. If set, this operation is
+         * in the process of undoing itself (which is guaranteed to succeed) and
+         * cannot be cancelled again.
+         *
+         * @var string
+         */
+        public $cancelTime;
+        /**
+         * The time at which this operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $instancePartitionType = InstancePartition::class;
+        protected $instancePartitionDataType = '';
+        /**
+         * The time at which UpdateInstancePartition request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The time at which this operation was cancelled. If set, this operation is
+         * in the process of undoing itself (which is guaranteed to succeed) and
+         * cannot be cancelled again.
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * The time at which this operation failed or was completed successfully.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The desired end state of the update.
+         *
+         * @param InstancePartition $instancePartition
+         */
+        public function setInstancePartition(InstancePartition $instancePartition)
+        {
+        }
+        /**
+         * @return InstancePartition
+         */
+        public function getInstancePartition()
+        {
+        }
+        /**
+         * The time at which UpdateInstancePartition request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\UpdateInstancePartitionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * The time at which this operation failed or was completed successfully.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The desired end state of the update.
-     *
-     * @param InstancePartition $instancePartition
-     */
-    public function setInstancePartition(InstancePartition $instancePartition)
-    {
-    }
-    /**
-     * @return InstancePartition
-     */
-    public function getInstancePartition()
-    {
-    }
-    /**
-     * The time at which UpdateInstancePartition request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Spanner_UpdateInstancePartitionMetadata extends \Google\Service\Spanner\UpdateInstancePartitionMetadata
     {
     }
 }

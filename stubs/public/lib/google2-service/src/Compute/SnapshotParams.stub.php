@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SnapshotParams extends \Google\Model
-{
-    /**
-     * Resource manager tags to be bound to the snapshot. Tag keys and values have
-     * the same definition as resource manager tags. Keys and values can be either
-     * in numeric format, such as `tagKeys/{tag_key_id}` and `tagValues/456` or in
-     * namespaced format such as `{org_id|project_id}/{tag_key_short_name}` and
-     * `{tag_value_short_name}`. The field is ignored (both PUT & PATCH) when
-     * empty.
-     *
-     * @var string[]
-     */
-    public $resourceManagerTags;
-    /**
-     * Resource manager tags to be bound to the snapshot. Tag keys and values have
-     * the same definition as resource manager tags. Keys and values can be either
-     * in numeric format, such as `tagKeys/{tag_key_id}` and `tagValues/456` or in
-     * namespaced format such as `{org_id|project_id}/{tag_key_short_name}` and
-     * `{tag_value_short_name}`. The field is ignored (both PUT & PATCH) when
-     * empty.
-     *
-     * @param string[] $resourceManagerTags
-     */
-    public function setResourceManagerTags($resourceManagerTags)
+namespace Google\Service\Compute {
+    class SnapshotParams extends \Google\Model
     {
+        /**
+         * Resource manager tags to be bound to the snapshot. Tag keys and values have
+         * the same definition as resource manager tags. Keys and values can be either
+         * in numeric format, such as `tagKeys/{tag_key_id}` and `tagValues/456` or in
+         * namespaced format such as `{org_id|project_id}/{tag_key_short_name}` and
+         * `{tag_value_short_name}`. The field is ignored (both PUT & PATCH) when
+         * empty.
+         *
+         * @var string[]
+         */
+        public $resourceManagerTags;
+        /**
+         * Resource manager tags to be bound to the snapshot. Tag keys and values have
+         * the same definition as resource manager tags. Keys and values can be either
+         * in numeric format, such as `tagKeys/{tag_key_id}` and `tagValues/456` or in
+         * namespaced format such as `{org_id|project_id}/{tag_key_short_name}` and
+         * `{tag_value_short_name}`. The field is ignored (both PUT & PATCH) when
+         * empty.
+         *
+         * @param string[] $resourceManagerTags
+         */
+        public function setResourceManagerTags($resourceManagerTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceManagerTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\SnapshotParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceManagerTags()
+    class Google_Service_Compute_SnapshotParams extends \Google\Service\Compute\SnapshotParams
     {
     }
 }

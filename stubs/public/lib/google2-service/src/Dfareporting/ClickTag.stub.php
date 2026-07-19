@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ClickTag extends \Google\Model
-{
-    protected $clickThroughUrlType = CreativeClickThroughUrl::class;
-    protected $clickThroughUrlDataType = '';
-    /**
-     * Advertiser event name associated with the click tag. This field is used by
-     * DISPLAY_IMAGE_GALLERY and HTML5_BANNER creatives. Applicable to DISPLAY
-     * when the primary asset type is not HTML_IMAGE.
-     *
-     * @var string
-     */
-    public $eventName;
-    /**
-     * Parameter name for the specified click tag. For DISPLAY_IMAGE_GALLERY
-     * creative assets, this field must match the value of the creative asset's
-     * creativeAssetId.name field.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Parameter value for the specified click tag. This field contains a click-
-     * through url.
-     *
-     * @param CreativeClickThroughUrl $clickThroughUrl
-     */
-    public function setClickThroughUrl(CreativeClickThroughUrl $clickThroughUrl)
+namespace Google\Service\Dfareporting {
+    class ClickTag extends \Google\Model
     {
+        protected $clickThroughUrlType = CreativeClickThroughUrl::class;
+        protected $clickThroughUrlDataType = '';
+        /**
+         * Advertiser event name associated with the click tag. This field is used by
+         * DISPLAY_IMAGE_GALLERY and HTML5_BANNER creatives. Applicable to DISPLAY
+         * when the primary asset type is not HTML_IMAGE.
+         *
+         * @var string
+         */
+        public $eventName;
+        /**
+         * Parameter name for the specified click tag. For DISPLAY_IMAGE_GALLERY
+         * creative assets, this field must match the value of the creative asset's
+         * creativeAssetId.name field.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Parameter value for the specified click tag. This field contains a click-
+         * through url.
+         *
+         * @param CreativeClickThroughUrl $clickThroughUrl
+         */
+        public function setClickThroughUrl(CreativeClickThroughUrl $clickThroughUrl)
+        {
+        }
+        /**
+         * @return CreativeClickThroughUrl
+         */
+        public function getClickThroughUrl()
+        {
+        }
+        /**
+         * Advertiser event name associated with the click tag. This field is used by
+         * DISPLAY_IMAGE_GALLERY and HTML5_BANNER creatives. Applicable to DISPLAY
+         * when the primary asset type is not HTML_IMAGE.
+         *
+         * @param string $eventName
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * Parameter name for the specified click tag. For DISPLAY_IMAGE_GALLERY
+         * creative assets, this field must match the value of the creative asset's
+         * creativeAssetId.name field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreativeClickThroughUrl
+     * Runtime class alias of \Google\Service\Dfareporting\ClickTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClickThroughUrl()
-    {
-    }
-    /**
-     * Advertiser event name associated with the click tag. This field is used by
-     * DISPLAY_IMAGE_GALLERY and HTML5_BANNER creatives. Applicable to DISPLAY
-     * when the primary asset type is not HTML_IMAGE.
-     *
-     * @param string $eventName
-     */
-    public function setEventName($eventName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventName()
-    {
-    }
-    /**
-     * Parameter name for the specified click tag. For DISPLAY_IMAGE_GALLERY
-     * creative assets, this field must match the value of the creative asset's
-     * creativeAssetId.name field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_ClickTag extends \Google\Service\Dfareporting\ClickTag
     {
     }
 }

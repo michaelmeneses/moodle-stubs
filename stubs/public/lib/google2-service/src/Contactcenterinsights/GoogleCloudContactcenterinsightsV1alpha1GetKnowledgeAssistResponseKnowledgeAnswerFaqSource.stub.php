@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $document;
-    /**
-     * @var string
-     */
-    public $question;
-    /**
-     * @param string
-     */
-    public function setDocument($document)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $document;
+        /**
+         * @var string
+         */
+        public $question;
+        /**
+         * @param string
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuestion($question)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuestion($question)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestion()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource
     {
     }
 }

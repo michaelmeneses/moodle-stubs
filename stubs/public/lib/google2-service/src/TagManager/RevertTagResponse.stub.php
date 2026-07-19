@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertTagResponse extends \Google\Model
-{
-    protected $tagType = Tag::class;
-    protected $tagDataType = '';
-    /**
-     * Tag as it appears in the latest container version since the last workspace
-     * synchronization operation. If no tag is present, that means the tag was
-     * deleted in the latest container version.
-     *
-     * @param Tag $tag
-     */
-    public function setTag(Tag $tag)
+namespace Google\Service\TagManager {
+    class RevertTagResponse extends \Google\Model
     {
+        protected $tagType = Tag::class;
+        protected $tagDataType = '';
+        /**
+         * Tag as it appears in the latest container version since the last workspace
+         * synchronization operation. If no tag is present, that means the tag was
+         * deleted in the latest container version.
+         *
+         * @param Tag $tag
+         */
+        public function setTag(Tag $tag)
+        {
+        }
+        /**
+         * @return Tag
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Tag
+     * Runtime class alias of \Google\Service\TagManager\RevertTagResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag()
+    class Google_Service_TagManager_RevertTagResponse extends \Google\Service\TagManager\RevertTagResponse
     {
     }
 }

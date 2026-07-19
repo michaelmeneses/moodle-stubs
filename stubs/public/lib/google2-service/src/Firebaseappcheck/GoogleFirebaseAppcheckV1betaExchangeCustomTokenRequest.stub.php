@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeCustomTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $customToken;
-    /**
-     * @param string
-     */
-    public function setCustomToken($customToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeCustomTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $customToken;
+        /**
+         * @param string
+         */
+        public function setCustomToken($customToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeCustomTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeCustomTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeCustomTokenRequest
     {
     }
 }

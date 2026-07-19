@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ReplaceAllTextResponse extends \Google\Model
-{
-    /**
-     * The number of occurrences changed by replacing all text.
-     *
-     * @var int
-     */
-    public $occurrencesChanged;
-    /**
-     * The number of occurrences changed by replacing all text.
-     *
-     * @param int $occurrencesChanged
-     */
-    public function setOccurrencesChanged($occurrencesChanged)
+namespace Google\Service\Slides {
+    class ReplaceAllTextResponse extends \Google\Model
     {
+        /**
+         * The number of occurrences changed by replacing all text.
+         *
+         * @var int
+         */
+        public $occurrencesChanged;
+        /**
+         * The number of occurrences changed by replacing all text.
+         *
+         * @param int $occurrencesChanged
+         */
+        public function setOccurrencesChanged($occurrencesChanged)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOccurrencesChanged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\ReplaceAllTextResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOccurrencesChanged()
+    class Google_Service_Slides_ReplaceAllTextResponse extends \Google\Service\Slides\ReplaceAllTextResponse
     {
     }
 }

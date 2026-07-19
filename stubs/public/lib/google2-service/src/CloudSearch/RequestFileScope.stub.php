@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RequestFileScope extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @param string
-     */
-    public function setItemId($itemId)
+namespace Google\Service\CloudSearch {
+    class RequestFileScope extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $itemId;
+        /**
+         * @param string
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\RequestFileScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemId()
+    class Google_Service_CloudSearch_RequestFileScope extends \Google\Service\CloudSearch\RequestFileScope
     {
     }
 }

@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ObjectMeta extends \Google\Collection
-{
-    protected $collection_key = 'ownerReferences';
-    /**
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * @var string
-     */
-    public $clusterName;
-    /**
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * @var int
-     */
-    public $deletionGracePeriodSeconds;
-    /**
-     * @var string
-     */
-    public $deletionTimestamp;
-    /**
-     * @var string[]
-     */
-    public $finalizers;
-    /**
-     * @var string
-     */
-    public $generateName;
-    /**
-     * @var int
-     */
-    public $generation;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $namespace;
-    protected $ownerReferencesType = OwnerReference::class;
-    protected $ownerReferencesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $resourceVersion;
-    /**
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @param string[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudRun {
+    class ObjectMeta extends \Google\Collection
     {
+        protected $collection_key = 'ownerReferences';
+        /**
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * @var string
+         */
+        public $clusterName;
+        /**
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * @var int
+         */
+        public $deletionGracePeriodSeconds;
+        /**
+         * @var string
+         */
+        public $deletionTimestamp;
+        /**
+         * @var string[]
+         */
+        public $finalizers;
+        /**
+         * @var string
+         */
+        public $generateName;
+        /**
+         * @var int
+         */
+        public $generation;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $namespace;
+        protected $ownerReferencesType = OwnerReference::class;
+        protected $ownerReferencesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $resourceVersion;
+        /**
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @param string[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClusterName($clusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setDeletionGracePeriodSeconds($deletionGracePeriodSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeletionGracePeriodSeconds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeletionTimestamp($deletionTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletionTimestamp()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFinalizers($finalizers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFinalizers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGenerateName($generateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenerateName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
+        /**
+         * @param OwnerReference[]
+         */
+        public function setOwnerReferences($ownerReferences)
+        {
+        }
+        /**
+         * @return OwnerReference[]
+         */
+        public function getOwnerReferences()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceVersion($resourceVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\ObjectMeta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClusterName($clusterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreationTimestamp($creationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setDeletionGracePeriodSeconds($deletionGracePeriodSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDeletionGracePeriodSeconds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeletionTimestamp($deletionTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeletionTimestamp()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFinalizers($finalizers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFinalizers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGenerateName($generateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGenerateName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNamespace($namespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespace()
-    {
-    }
-    /**
-     * @param OwnerReference[]
-     */
-    public function setOwnerReferences($ownerReferences)
-    {
-    }
-    /**
-     * @return OwnerReference[]
-     */
-    public function getOwnerReferences()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceVersion($resourceVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_CloudRun_ObjectMeta extends \Google\Service\CloudRun\ObjectMeta
     {
     }
 }

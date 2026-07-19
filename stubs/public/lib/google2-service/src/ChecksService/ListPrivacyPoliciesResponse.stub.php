@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class ListPrivacyPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'privacyPolicies';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $privacyPoliciesType = PrivacyPolicy::class;
-    protected $privacyPoliciesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChecksService {
+    class ListPrivacyPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'privacyPolicies';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $privacyPoliciesType = PrivacyPolicy::class;
+        protected $privacyPoliciesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param PrivacyPolicy[]
+         */
+        public function setPrivacyPolicies($privacyPolicies)
+        {
+        }
+        /**
+         * @return PrivacyPolicy[]
+         */
+        public function getPrivacyPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\ListPrivacyPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param PrivacyPolicy[]
-     */
-    public function setPrivacyPolicies($privacyPolicies)
-    {
-    }
-    /**
-     * @return PrivacyPolicy[]
-     */
-    public function getPrivacyPolicies()
+    class Google_Service_ChecksService_ListPrivacyPoliciesResponse extends \Google\Service\ChecksService\ListPrivacyPoliciesResponse
     {
     }
 }

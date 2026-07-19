@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class GlobalSetPolicyRequest extends \Google\Collection
-{
-    protected $collection_key = 'bindings';
-    protected $bindingsType = Binding::class;
-    protected $bindingsDataType = 'array';
-    /**
-     * Flatten Policy to create a backward compatible wire-format. Deprecated. Use
-     * 'policy' to specify the etag.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * Update mask for the policy.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Flatten Policy to create a backward compatible wire-format. Deprecated. Use
-     * 'policy' to specify bindings.
-     *
-     * @param Binding[] $bindings
-     */
-    public function setBindings($bindings)
+namespace Google\Service\DeploymentManager {
+    class GlobalSetPolicyRequest extends \Google\Collection
     {
+        protected $collection_key = 'bindings';
+        protected $bindingsType = Binding::class;
+        protected $bindingsDataType = 'array';
+        /**
+         * Flatten Policy to create a backward compatible wire-format. Deprecated. Use
+         * 'policy' to specify the etag.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * Update mask for the policy.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Flatten Policy to create a backward compatible wire-format. Deprecated. Use
+         * 'policy' to specify bindings.
+         *
+         * @param Binding[] $bindings
+         */
+        public function setBindings($bindings)
+        {
+        }
+        /**
+         * @return Binding[]
+         */
+        public function getBindings()
+        {
+        }
+        /**
+         * Flatten Policy to create a backward compatible wire-format. Deprecated. Use
+         * 'policy' to specify the etag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * REQUIRED: The complete policy to be applied to the 'resource'. The size of
+         * the policy is limited to a few 10s of KB. An empty policy is in general a
+         * valid policy but certain services (like Projects) might reject them.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * Update mask for the policy.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Binding[]
+     * Runtime class alias of \Google\Service\DeploymentManager\GlobalSetPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBindings()
-    {
-    }
-    /**
-     * Flatten Policy to create a backward compatible wire-format. Deprecated. Use
-     * 'policy' to specify the etag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * REQUIRED: The complete policy to be applied to the 'resource'. The size of
-     * the policy is limited to a few 10s of KB. An empty policy is in general a
-     * valid policy but certain services (like Projects) might reject them.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
-    {
-    }
-    /**
-     * @return Policy
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * Update mask for the policy.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DeploymentManager_GlobalSetPolicyRequest extends \Google\Service\DeploymentManager\GlobalSetPolicyRequest
     {
     }
 }

@@ -21,176 +21,185 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PipelineTask extends \Google\Collection
-{
-    protected $collection_key = 'workspaces';
-    /**
-     * Name of the task.
-     *
-     * @var string
-     */
-    public $name;
-    protected $paramsType = Param::class;
-    protected $paramsDataType = 'array';
-    /**
-     * Retries represents how many times this task should be retried in case of
-     * task failure.
-     *
-     * @var int
-     */
-    public $retries;
-    /**
-     * RunAfter is the list of PipelineTask names that should be executed before
-     * this Task executes. (Used to force a specific ordering in graph execution.)
-     *
-     * @var string[]
-     */
-    public $runAfter;
-    protected $taskRefType = TaskRef::class;
-    protected $taskRefDataType = '';
-    protected $taskSpecType = EmbeddedTask::class;
-    protected $taskSpecDataType = '';
-    /**
-     * Time after which the TaskRun times out. Defaults to 1 hour. Specified
-     * TaskRun timeout should be less than 24h.
-     *
-     * @var string
-     */
-    public $timeout;
-    protected $whenExpressionsType = WhenExpression::class;
-    protected $whenExpressionsDataType = 'array';
-    protected $workspacesType = WorkspacePipelineTaskBinding::class;
-    protected $workspacesDataType = 'array';
-    /**
-     * Name of the task.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class PipelineTask extends \Google\Collection
     {
+        protected $collection_key = 'workspaces';
+        /**
+         * Name of the task.
+         *
+         * @var string
+         */
+        public $name;
+        protected $paramsType = Param::class;
+        protected $paramsDataType = 'array';
+        /**
+         * Retries represents how many times this task should be retried in case of
+         * task failure.
+         *
+         * @var int
+         */
+        public $retries;
+        /**
+         * RunAfter is the list of PipelineTask names that should be executed before
+         * this Task executes. (Used to force a specific ordering in graph execution.)
+         *
+         * @var string[]
+         */
+        public $runAfter;
+        protected $taskRefType = TaskRef::class;
+        protected $taskRefDataType = '';
+        protected $taskSpecType = EmbeddedTask::class;
+        protected $taskSpecDataType = '';
+        /**
+         * Time after which the TaskRun times out. Defaults to 1 hour. Specified
+         * TaskRun timeout should be less than 24h.
+         *
+         * @var string
+         */
+        public $timeout;
+        protected $whenExpressionsType = WhenExpression::class;
+        protected $whenExpressionsDataType = 'array';
+        protected $workspacesType = WorkspacePipelineTaskBinding::class;
+        protected $workspacesDataType = 'array';
+        /**
+         * Name of the task.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Params is a list of parameter names and values.
+         *
+         * @param Param[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return Param[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * Retries represents how many times this task should be retried in case of
+         * task failure.
+         *
+         * @param int $retries
+         */
+        public function setRetries($retries)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRetries()
+        {
+        }
+        /**
+         * RunAfter is the list of PipelineTask names that should be executed before
+         * this Task executes. (Used to force a specific ordering in graph execution.)
+         *
+         * @param string[] $runAfter
+         */
+        public function setRunAfter($runAfter)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRunAfter()
+        {
+        }
+        /**
+         * Reference to a specific instance of a task.
+         *
+         * @param TaskRef $taskRef
+         */
+        public function setTaskRef(TaskRef $taskRef)
+        {
+        }
+        /**
+         * @return TaskRef
+         */
+        public function getTaskRef()
+        {
+        }
+        /**
+         * Spec to instantiate this TaskRun.
+         *
+         * @param EmbeddedTask $taskSpec
+         */
+        public function setTaskSpec(EmbeddedTask $taskSpec)
+        {
+        }
+        /**
+         * @return EmbeddedTask
+         */
+        public function getTaskSpec()
+        {
+        }
+        /**
+         * Time after which the TaskRun times out. Defaults to 1 hour. Specified
+         * TaskRun timeout should be less than 24h.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
+        /**
+         * Conditions that need to be true for the task to run.
+         *
+         * @param WhenExpression[] $whenExpressions
+         */
+        public function setWhenExpressions($whenExpressions)
+        {
+        }
+        /**
+         * @return WhenExpression[]
+         */
+        public function getWhenExpressions()
+        {
+        }
+        /**
+         * Workspaces maps workspaces from the pipeline spec to the workspaces
+         * declared in the Task.
+         *
+         * @param WorkspacePipelineTaskBinding[] $workspaces
+         */
+        public function setWorkspaces($workspaces)
+        {
+        }
+        /**
+         * @return WorkspacePipelineTaskBinding[]
+         */
+        public function getWorkspaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PipelineTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Params is a list of parameter names and values.
-     *
-     * @param Param[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return Param[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * Retries represents how many times this task should be retried in case of
-     * task failure.
-     *
-     * @param int $retries
-     */
-    public function setRetries($retries)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRetries()
-    {
-    }
-    /**
-     * RunAfter is the list of PipelineTask names that should be executed before
-     * this Task executes. (Used to force a specific ordering in graph execution.)
-     *
-     * @param string[] $runAfter
-     */
-    public function setRunAfter($runAfter)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRunAfter()
-    {
-    }
-    /**
-     * Reference to a specific instance of a task.
-     *
-     * @param TaskRef $taskRef
-     */
-    public function setTaskRef(TaskRef $taskRef)
-    {
-    }
-    /**
-     * @return TaskRef
-     */
-    public function getTaskRef()
-    {
-    }
-    /**
-     * Spec to instantiate this TaskRun.
-     *
-     * @param EmbeddedTask $taskSpec
-     */
-    public function setTaskSpec(EmbeddedTask $taskSpec)
-    {
-    }
-    /**
-     * @return EmbeddedTask
-     */
-    public function getTaskSpec()
-    {
-    }
-    /**
-     * Time after which the TaskRun times out. Defaults to 1 hour. Specified
-     * TaskRun timeout should be less than 24h.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
-    {
-    }
-    /**
-     * Conditions that need to be true for the task to run.
-     *
-     * @param WhenExpression[] $whenExpressions
-     */
-    public function setWhenExpressions($whenExpressions)
-    {
-    }
-    /**
-     * @return WhenExpression[]
-     */
-    public function getWhenExpressions()
-    {
-    }
-    /**
-     * Workspaces maps workspaces from the pipeline spec to the workspaces
-     * declared in the Task.
-     *
-     * @param WorkspacePipelineTaskBinding[] $workspaces
-     */
-    public function setWorkspaces($workspaces)
-    {
-    }
-    /**
-     * @return WorkspacePipelineTaskBinding[]
-     */
-    public function getWorkspaces()
+    class Google_Service_CloudBuild_PipelineTask extends \Google\Service\CloudBuild\PipelineTask
     {
     }
 }

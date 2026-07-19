@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeAssetSelection extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * @var string
-     */
-    public $defaultAssetId;
-    protected $rulesType = Rule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setDefaultAssetId($defaultAssetId)
+namespace Google\Service\Dfareporting {
+    class CreativeAssetSelection extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * @var string
+         */
+        public $defaultAssetId;
+        protected $rulesType = Rule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setDefaultAssetId($defaultAssetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultAssetId()
+        {
+        }
+        /**
+         * @param Rule[]
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return Rule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeAssetSelection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultAssetId()
-    {
-    }
-    /**
-     * @param Rule[]
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return Rule[]
-     */
-    public function getRules()
+    class Google_Service_Dfareporting_CreativeAssetSelection extends \Google\Service\Dfareporting\CreativeAssetSelection
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ReadWrite extends \Google\Model
-{
-    /**
-     * Default value. * If isolation level is REPEATABLE_READ, then it is an error
-     * to specify `read_lock_mode`. Locking semantics default to `OPTIMISTIC`. No
-     * validation checks are done for reads, except to validate that the data that
-     * was served at the snapshot time is unchanged at commit time in the
-     * following cases: 1. reads done as part of queries that use `SELECT FOR
-     * UPDATE` 2. reads done as part of statements with a `LOCK_SCANNED_RANGES`
-     * hint 3. reads done as part of DML statements * At all other isolation
-     * levels, if `read_lock_mode` is the default value, then pessimistic read
-     * locks are used.
-     */
-    public const READ_LOCK_MODE_READ_LOCK_MODE_UNSPECIFIED = 'READ_LOCK_MODE_UNSPECIFIED';
-    /**
-     * Pessimistic lock mode. Read locks are acquired immediately on read.
-     * Semantics described only applies to SERIALIZABLE isolation.
-     */
-    public const READ_LOCK_MODE_PESSIMISTIC = 'PESSIMISTIC';
-    /**
-     * Optimistic lock mode. Locks for reads within the transaction are not
-     * acquired on read. Instead the locks are acquired on a commit to validate
-     * that read/queried data has not changed since the transaction started.
-     * Semantics described only applies to SERIALIZABLE isolation.
-     */
-    public const READ_LOCK_MODE_OPTIMISTIC = 'OPTIMISTIC';
-    /**
-     * Optional. Clients should pass the transaction ID of the previous
-     * transaction attempt that was aborted if this transaction is being executed
-     * on a multiplexed session.
-     *
-     * @var string
-     */
-    public $multiplexedSessionPreviousTransactionId;
-    /**
-     * Read lock mode for the transaction.
-     *
-     * @var string
-     */
-    public $readLockMode;
-    /**
-     * Optional. Clients should pass the transaction ID of the previous
-     * transaction attempt that was aborted if this transaction is being executed
-     * on a multiplexed session.
-     *
-     * @param string $multiplexedSessionPreviousTransactionId
-     */
-    public function setMultiplexedSessionPreviousTransactionId($multiplexedSessionPreviousTransactionId)
+namespace Google\Service\Spanner {
+    class ReadWrite extends \Google\Model
     {
+        /**
+         * Default value. * If isolation level is REPEATABLE_READ, then it is an error
+         * to specify `read_lock_mode`. Locking semantics default to `OPTIMISTIC`. No
+         * validation checks are done for reads, except to validate that the data that
+         * was served at the snapshot time is unchanged at commit time in the
+         * following cases: 1. reads done as part of queries that use `SELECT FOR
+         * UPDATE` 2. reads done as part of statements with a `LOCK_SCANNED_RANGES`
+         * hint 3. reads done as part of DML statements * At all other isolation
+         * levels, if `read_lock_mode` is the default value, then pessimistic read
+         * locks are used.
+         */
+        public const READ_LOCK_MODE_READ_LOCK_MODE_UNSPECIFIED = 'READ_LOCK_MODE_UNSPECIFIED';
+        /**
+         * Pessimistic lock mode. Read locks are acquired immediately on read.
+         * Semantics described only applies to SERIALIZABLE isolation.
+         */
+        public const READ_LOCK_MODE_PESSIMISTIC = 'PESSIMISTIC';
+        /**
+         * Optimistic lock mode. Locks for reads within the transaction are not
+         * acquired on read. Instead the locks are acquired on a commit to validate
+         * that read/queried data has not changed since the transaction started.
+         * Semantics described only applies to SERIALIZABLE isolation.
+         */
+        public const READ_LOCK_MODE_OPTIMISTIC = 'OPTIMISTIC';
+        /**
+         * Optional. Clients should pass the transaction ID of the previous
+         * transaction attempt that was aborted if this transaction is being executed
+         * on a multiplexed session.
+         *
+         * @var string
+         */
+        public $multiplexedSessionPreviousTransactionId;
+        /**
+         * Read lock mode for the transaction.
+         *
+         * @var string
+         */
+        public $readLockMode;
+        /**
+         * Optional. Clients should pass the transaction ID of the previous
+         * transaction attempt that was aborted if this transaction is being executed
+         * on a multiplexed session.
+         *
+         * @param string $multiplexedSessionPreviousTransactionId
+         */
+        public function setMultiplexedSessionPreviousTransactionId($multiplexedSessionPreviousTransactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMultiplexedSessionPreviousTransactionId()
+        {
+        }
+        /**
+         * Read lock mode for the transaction.
+         *
+         * Accepted values: READ_LOCK_MODE_UNSPECIFIED, PESSIMISTIC, OPTIMISTIC
+         *
+         * @param self::READ_LOCK_MODE_* $readLockMode
+         */
+        public function setReadLockMode($readLockMode)
+        {
+        }
+        /**
+         * @return self::READ_LOCK_MODE_*
+         */
+        public function getReadLockMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ReadWrite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiplexedSessionPreviousTransactionId()
-    {
-    }
-    /**
-     * Read lock mode for the transaction.
-     *
-     * Accepted values: READ_LOCK_MODE_UNSPECIFIED, PESSIMISTIC, OPTIMISTIC
-     *
-     * @param self::READ_LOCK_MODE_* $readLockMode
-     */
-    public function setReadLockMode($readLockMode)
-    {
-    }
-    /**
-     * @return self::READ_LOCK_MODE_*
-     */
-    public function getReadLockMode()
+    class Google_Service_Spanner_ReadWrite extends \Google\Service\Spanner\ReadWrite
     {
     }
 }

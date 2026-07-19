@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class Image extends \Google\Model
-{
-    /**
-     * Image height in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The URL of the image.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Image width in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Image height in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\RealTimeBidding {
+    class Image extends \Google\Model
     {
+        /**
+         * Image height in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The URL of the image.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Image width in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Image height in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The URL of the image.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * Image width in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\RealTimeBidding\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The URL of the image.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * Image width in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_RealTimeBidding_Image extends \Google\Service\RealTimeBidding\Image
     {
     }
 }

@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StoragePoolList extends \Google\Collection
-{
-    protected $collection_key = 'unreachables';
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = StoragePool::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource. Always compute#storagePoolList
-     * for lists of storagePools.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Unreachable resources. end_interface:
-     * MixerListResponseWithEtagBuilder
-     *
-     * @var string[]
-     */
-    public $unreachables;
-    protected $warningType = StoragePoolListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Compute {
+    class StoragePoolList extends \Google\Collection
     {
+        protected $collection_key = 'unreachables';
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = StoragePool::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource. Always compute#storagePoolList
+         * for lists of storagePools.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Unreachable resources. end_interface:
+         * MixerListResponseWithEtagBuilder
+         *
+         * @var string[]
+         */
+        public $unreachables;
+        protected $warningType = StoragePoolListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A list of StoragePool resources.
+         *
+         * @param StoragePool[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return StoragePool[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource. Always compute#storagePoolList
+         * for lists of storagePools.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Unreachable resources. end_interface:
+         * MixerListResponseWithEtagBuilder
+         *
+         * @param string[] $unreachables
+         */
+        public function setUnreachables($unreachables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachables()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param StoragePoolListWarning $warning
+         */
+        public function setWarning(StoragePoolListWarning $warning)
+        {
+        }
+        /**
+         * @return StoragePoolListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\StoragePoolList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * A list of StoragePool resources.
-     *
-     * @param StoragePool[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return StoragePool[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource. Always compute#storagePoolList
-     * for lists of storagePools.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Unreachable resources. end_interface:
-     * MixerListResponseWithEtagBuilder
-     *
-     * @param string[] $unreachables
-     */
-    public function setUnreachables($unreachables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachables()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param StoragePoolListWarning $warning
-     */
-    public function setWarning(StoragePoolListWarning $warning)
-    {
-    }
-    /**
-     * @return StoragePoolListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_StoragePoolList extends \Google\Service\Compute\StoragePoolList
     {
     }
 }

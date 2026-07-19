@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $manufacturersService = new Google\Service\ManufacturerCenter(...);
- *   $accounts = $manufacturersService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\ManufacturerCenter\Resource {
+    /**
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $manufacturersService = new Google\Service\ManufacturerCenter(...);
+     *   $accounts = $manufacturersService->accounts;
+     *  </code>
+     */
+    class Accounts extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManufacturerCenter\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManufacturerCenter_Resource_Accounts extends \Google\Service\ManufacturerCenter\Resource\Accounts
+    {
+    }
 }

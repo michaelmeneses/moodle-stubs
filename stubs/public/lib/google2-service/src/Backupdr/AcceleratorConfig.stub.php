@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class AcceleratorConfig extends \Google\Model
-{
-    /**
-     * Optional. The number of the guest accelerator cards exposed to this
-     * instance.
-     *
-     * @var int
-     */
-    public $acceleratorCount;
-    /**
-     * Optional. Full or partial URL of the accelerator type resource to attach to
-     * this instance.
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    /**
-     * Optional. The number of the guest accelerator cards exposed to this
-     * instance.
-     *
-     * @param int $acceleratorCount
-     */
-    public function setAcceleratorCount($acceleratorCount)
+namespace Google\Service\Backupdr {
+    class AcceleratorConfig extends \Google\Model
     {
+        /**
+         * Optional. The number of the guest accelerator cards exposed to this
+         * instance.
+         *
+         * @var int
+         */
+        public $acceleratorCount;
+        /**
+         * Optional. Full or partial URL of the accelerator type resource to attach to
+         * this instance.
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        /**
+         * Optional. The number of the guest accelerator cards exposed to this
+         * instance.
+         *
+         * @param int $acceleratorCount
+         */
+        public function setAcceleratorCount($acceleratorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcceleratorCount()
+        {
+        }
+        /**
+         * Optional. Full or partial URL of the accelerator type resource to attach to
+         * this instance.
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Backupdr\AcceleratorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorCount()
-    {
-    }
-    /**
-     * Optional. Full or partial URL of the accelerator type resource to attach to
-     * this instance.
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAcceleratorType()
+    class Google_Service_Backupdr_AcceleratorConfig extends \Google\Service\Backupdr\AcceleratorConfig
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1AppCheckToken extends \Google\Model
-{
-    /**
-     * The App Check token. App Check tokens are signed
-     * [JWTs](https://tools.ietf.org/html/rfc7519) containing claims that identify
-     * the attested app and GCP project. This token is used to access Google
-     * services protected by App Check. These tokens can also be [verified by your
-     * own custom backends](https://firebase.google.com/docs/app-check/custom-
-     * resource-backend) using the Firebase Admin SDK or third-party libraries.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The duration from the time this token is minted until its expiration. This
-     * field is intended to ease client-side token management, since the client
-     * may have clock skew, but is still able to accurately measure a duration.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * The App Check token. App Check tokens are signed
-     * [JWTs](https://tools.ietf.org/html/rfc7519) containing claims that identify
-     * the attested app and GCP project. This token is used to access Google
-     * services protected by App Check. These tokens can also be [verified by your
-     * own custom backends](https://firebase.google.com/docs/app-check/custom-
-     * resource-backend) using the Firebase Admin SDK or third-party libraries.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1AppCheckToken extends \Google\Model
     {
+        /**
+         * The App Check token. App Check tokens are signed
+         * [JWTs](https://tools.ietf.org/html/rfc7519) containing claims that identify
+         * the attested app and GCP project. This token is used to access Google
+         * services protected by App Check. These tokens can also be [verified by your
+         * own custom backends](https://firebase.google.com/docs/app-check/custom-
+         * resource-backend) using the Firebase Admin SDK or third-party libraries.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The duration from the time this token is minted until its expiration. This
+         * field is intended to ease client-side token management, since the client
+         * may have clock skew, but is still able to accurately measure a duration.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * The App Check token. App Check tokens are signed
+         * [JWTs](https://tools.ietf.org/html/rfc7519) containing claims that identify
+         * the attested app and GCP project. This token is used to access Google
+         * services protected by App Check. These tokens can also be [verified by your
+         * own custom backends](https://firebase.google.com/docs/app-check/custom-
+         * resource-backend) using the Firebase Admin SDK or third-party libraries.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * The duration from the time this token is minted until its expiration. This
+         * field is intended to ease client-side token management, since the client
+         * may have clock skew, but is still able to accurately measure a duration.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
-    {
-    }
-    /**
-     * The duration from the time this token is minted until its expiration. This
-     * field is intended to ease client-side token management, since the client
-     * may have clock skew, but is still able to accurately measure a duration.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1AppCheckToken extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppCheckToken
     {
     }
 }

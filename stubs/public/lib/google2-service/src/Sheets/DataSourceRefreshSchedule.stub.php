@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceRefreshSchedule extends \Google\Model
-{
-    /**
-     * Default value, do not use.
-     */
-    public const REFRESH_SCOPE_DATA_SOURCE_REFRESH_SCOPE_UNSPECIFIED = 'DATA_SOURCE_REFRESH_SCOPE_UNSPECIFIED';
-    /**
-     * Refreshes all data sources and their associated data source objects in the
-     * spreadsheet.
-     */
-    public const REFRESH_SCOPE_ALL_DATA_SOURCES = 'ALL_DATA_SOURCES';
-    protected $dailyScheduleType = DataSourceRefreshDailySchedule::class;
-    protected $dailyScheduleDataType = '';
-    /**
-     * True if the refresh schedule is enabled, or false otherwise.
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $monthlyScheduleType = DataSourceRefreshMonthlySchedule::class;
-    protected $monthlyScheduleDataType = '';
-    protected $nextRunType = Interval::class;
-    protected $nextRunDataType = '';
-    /**
-     * The scope of the refresh. Must be ALL_DATA_SOURCES.
-     *
-     * @var string
-     */
-    public $refreshScope;
-    protected $weeklyScheduleType = DataSourceRefreshWeeklySchedule::class;
-    protected $weeklyScheduleDataType = '';
-    /**
-     * Daily refresh schedule.
-     *
-     * @param DataSourceRefreshDailySchedule $dailySchedule
-     */
-    public function setDailySchedule(DataSourceRefreshDailySchedule $dailySchedule)
+namespace Google\Service\Sheets {
+    class DataSourceRefreshSchedule extends \Google\Model
     {
+        /**
+         * Default value, do not use.
+         */
+        public const REFRESH_SCOPE_DATA_SOURCE_REFRESH_SCOPE_UNSPECIFIED = 'DATA_SOURCE_REFRESH_SCOPE_UNSPECIFIED';
+        /**
+         * Refreshes all data sources and their associated data source objects in the
+         * spreadsheet.
+         */
+        public const REFRESH_SCOPE_ALL_DATA_SOURCES = 'ALL_DATA_SOURCES';
+        protected $dailyScheduleType = DataSourceRefreshDailySchedule::class;
+        protected $dailyScheduleDataType = '';
+        /**
+         * True if the refresh schedule is enabled, or false otherwise.
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $monthlyScheduleType = DataSourceRefreshMonthlySchedule::class;
+        protected $monthlyScheduleDataType = '';
+        protected $nextRunType = Interval::class;
+        protected $nextRunDataType = '';
+        /**
+         * The scope of the refresh. Must be ALL_DATA_SOURCES.
+         *
+         * @var string
+         */
+        public $refreshScope;
+        protected $weeklyScheduleType = DataSourceRefreshWeeklySchedule::class;
+        protected $weeklyScheduleDataType = '';
+        /**
+         * Daily refresh schedule.
+         *
+         * @param DataSourceRefreshDailySchedule $dailySchedule
+         */
+        public function setDailySchedule(DataSourceRefreshDailySchedule $dailySchedule)
+        {
+        }
+        /**
+         * @return DataSourceRefreshDailySchedule
+         */
+        public function getDailySchedule()
+        {
+        }
+        /**
+         * True if the refresh schedule is enabled, or false otherwise.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Monthly refresh schedule.
+         *
+         * @param DataSourceRefreshMonthlySchedule $monthlySchedule
+         */
+        public function setMonthlySchedule(DataSourceRefreshMonthlySchedule $monthlySchedule)
+        {
+        }
+        /**
+         * @return DataSourceRefreshMonthlySchedule
+         */
+        public function getMonthlySchedule()
+        {
+        }
+        /**
+         * Output only. The time interval of the next run.
+         *
+         * @param Interval $nextRun
+         */
+        public function setNextRun(Interval $nextRun)
+        {
+        }
+        /**
+         * @return Interval
+         */
+        public function getNextRun()
+        {
+        }
+        /**
+         * The scope of the refresh. Must be ALL_DATA_SOURCES.
+         *
+         * Accepted values: DATA_SOURCE_REFRESH_SCOPE_UNSPECIFIED, ALL_DATA_SOURCES
+         *
+         * @param self::REFRESH_SCOPE_* $refreshScope
+         */
+        public function setRefreshScope($refreshScope)
+        {
+        }
+        /**
+         * @return self::REFRESH_SCOPE_*
+         */
+        public function getRefreshScope()
+        {
+        }
+        /**
+         * Weekly refresh schedule.
+         *
+         * @param DataSourceRefreshWeeklySchedule $weeklySchedule
+         */
+        public function setWeeklySchedule(DataSourceRefreshWeeklySchedule $weeklySchedule)
+        {
+        }
+        /**
+         * @return DataSourceRefreshWeeklySchedule
+         */
+        public function getWeeklySchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceRefreshDailySchedule
+     * Runtime class alias of \Google\Service\Sheets\DataSourceRefreshSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailySchedule()
-    {
-    }
-    /**
-     * True if the refresh schedule is enabled, or false otherwise.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Monthly refresh schedule.
-     *
-     * @param DataSourceRefreshMonthlySchedule $monthlySchedule
-     */
-    public function setMonthlySchedule(DataSourceRefreshMonthlySchedule $monthlySchedule)
-    {
-    }
-    /**
-     * @return DataSourceRefreshMonthlySchedule
-     */
-    public function getMonthlySchedule()
-    {
-    }
-    /**
-     * Output only. The time interval of the next run.
-     *
-     * @param Interval $nextRun
-     */
-    public function setNextRun(Interval $nextRun)
-    {
-    }
-    /**
-     * @return Interval
-     */
-    public function getNextRun()
-    {
-    }
-    /**
-     * The scope of the refresh. Must be ALL_DATA_SOURCES.
-     *
-     * Accepted values: DATA_SOURCE_REFRESH_SCOPE_UNSPECIFIED, ALL_DATA_SOURCES
-     *
-     * @param self::REFRESH_SCOPE_* $refreshScope
-     */
-    public function setRefreshScope($refreshScope)
-    {
-    }
-    /**
-     * @return self::REFRESH_SCOPE_*
-     */
-    public function getRefreshScope()
-    {
-    }
-    /**
-     * Weekly refresh schedule.
-     *
-     * @param DataSourceRefreshWeeklySchedule $weeklySchedule
-     */
-    public function setWeeklySchedule(DataSourceRefreshWeeklySchedule $weeklySchedule)
-    {
-    }
-    /**
-     * @return DataSourceRefreshWeeklySchedule
-     */
-    public function getWeeklySchedule()
+    class Google_Service_Sheets_DataSourceRefreshSchedule extends \Google\Service\Sheets\DataSourceRefreshSchedule
     {
     }
 }

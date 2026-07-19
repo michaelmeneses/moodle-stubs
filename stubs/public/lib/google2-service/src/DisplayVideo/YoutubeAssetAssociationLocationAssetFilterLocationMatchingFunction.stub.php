@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAssetAssociationLocationAssetFilterLocationMatchingFunction extends \Google\Collection
-{
-    protected $collection_key = 'locationAssetIds';
-    /**
-     * Optional. The business name to match with. This field is optional and can
-     * only be set if location_matching_type is `FILTER`.
-     *
-     * @var string
-     */
-    public $business;
-    /**
-     * Optional. The labels to match with. Labels are logically OR'ed together.
-     * This field is optional and can only be set if location_matching_type is
-     * `FILTER`.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. The selected location asset IDs. This field is required if
-     * location_matching_type is `SELECTED_ASSETS`.
-     *
-     * @var string[]
-     */
-    public $locationAssetIds;
-    /**
-     * Optional. The business name to match with. This field is optional and can
-     * only be set if location_matching_type is `FILTER`.
-     *
-     * @param string $business
-     */
-    public function setBusiness($business)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAssetAssociationLocationAssetFilterLocationMatchingFunction extends \Google\Collection
     {
+        protected $collection_key = 'locationAssetIds';
+        /**
+         * Optional. The business name to match with. This field is optional and can
+         * only be set if location_matching_type is `FILTER`.
+         *
+         * @var string
+         */
+        public $business;
+        /**
+         * Optional. The labels to match with. Labels are logically OR'ed together.
+         * This field is optional and can only be set if location_matching_type is
+         * `FILTER`.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. The selected location asset IDs. This field is required if
+         * location_matching_type is `SELECTED_ASSETS`.
+         *
+         * @var string[]
+         */
+        public $locationAssetIds;
+        /**
+         * Optional. The business name to match with. This field is optional and can
+         * only be set if location_matching_type is `FILTER`.
+         *
+         * @param string $business
+         */
+        public function setBusiness($business)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Optional. The labels to match with. Labels are logically OR'ed together.
+         * This field is optional and can only be set if location_matching_type is
+         * `FILTER`.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. The selected location asset IDs. This field is required if
+         * location_matching_type is `SELECTED_ASSETS`.
+         *
+         * @param string[] $locationAssetIds
+         */
+        public function setLocationAssetIds($locationAssetIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocationAssetIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAssetAssociationLocationAssetFilterLocationMatchingFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Optional. The labels to match with. Labels are logically OR'ed together.
-     * This field is optional and can only be set if location_matching_type is
-     * `FILTER`.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. The selected location asset IDs. This field is required if
-     * location_matching_type is `SELECTED_ASSETS`.
-     *
-     * @param string[] $locationAssetIds
-     */
-    public function setLocationAssetIds($locationAssetIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocationAssetIds()
+    class Google_Service_DisplayVideo_YoutubeAssetAssociationLocationAssetFilterLocationMatchingFunction extends \Google\Service\DisplayVideo\YoutubeAssetAssociationLocationAssetFilterLocationMatchingFunction
     {
     }
 }

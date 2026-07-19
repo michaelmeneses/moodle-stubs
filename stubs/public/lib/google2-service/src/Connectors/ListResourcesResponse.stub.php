@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListResourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Next page token if more resources available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = ConnectorsResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Connectors {
+    class ListResourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Next page token if more resources available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = ConnectorsResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Next page token if more resources available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of available resources.
+         *
+         * @param ConnectorsResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ConnectorsResource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ListResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Next page token if more resources available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of available resources.
-     *
-     * @param ConnectorsResource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ConnectorsResource[]
-     */
-    public function getResources()
+    class Google_Service_Connectors_ListResourcesResponse extends \Google\Service\Connectors\ListResourcesResponse
     {
     }
 }

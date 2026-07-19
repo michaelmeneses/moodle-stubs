@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest extends \Google\Model
-{
-    /**
-     * Required. A debug token secret. This string must match a debug token secret
-     * previously created using CreateDebugToken.
-     *
-     * @var string
-     */
-    public $debugToken;
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @var bool
-     */
-    public $limitedUse;
-    /**
-     * Required. A debug token secret. This string must match a debug token secret
-     * previously created using CreateDebugToken.
-     *
-     * @param string $debugToken
-     */
-    public function setDebugToken($debugToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest extends \Google\Model
     {
+        /**
+         * Required. A debug token secret. This string must match a debug token secret
+         * previously created using CreateDebugToken.
+         *
+         * @var string
+         */
+        public $debugToken;
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @var bool
+         */
+        public $limitedUse;
+        /**
+         * Required. A debug token secret. This string must match a debug token secret
+         * previously created using CreateDebugToken.
+         *
+         * @param string $debugToken
+         */
+        public function setDebugToken($debugToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDebugToken()
+        {
+        }
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @param bool $limitedUse
+         */
+        public function setLimitedUse($limitedUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLimitedUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugToken()
-    {
-    }
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @param bool $limitedUse
-     */
-    public function setLimitedUse($limitedUse)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLimitedUse()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDebugTokenRequest
     {
     }
 }

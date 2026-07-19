@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Question answering correctness instance.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Question answering correctness instance.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for question answering correctness score metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for question answering correctness score metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput
     {
     }
 }

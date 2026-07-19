@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class SubscribeClientsRequest extends \Google\Collection
-{
-    protected $collection_key = 'clients';
-    /**
-     * Optional. A list of client buyers to subscribe to the auction package, with
-     * client buyer in the format `buyers/{accountId}/clients/{clientAccountId}`.
-     * The current buyer will be subscribed to the auction package regardless of
-     * the list contents if not already.
-     *
-     * @var string[]
-     */
-    public $clients;
-    /**
-     * Optional. A list of client buyers to subscribe to the auction package, with
-     * client buyer in the format `buyers/{accountId}/clients/{clientAccountId}`.
-     * The current buyer will be subscribed to the auction package regardless of
-     * the list contents if not already.
-     *
-     * @param string[] $clients
-     */
-    public function setClients($clients)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class SubscribeClientsRequest extends \Google\Collection
     {
+        protected $collection_key = 'clients';
+        /**
+         * Optional. A list of client buyers to subscribe to the auction package, with
+         * client buyer in the format `buyers/{accountId}/clients/{clientAccountId}`.
+         * The current buyer will be subscribed to the auction package regardless of
+         * the list contents if not already.
+         *
+         * @var string[]
+         */
+        public $clients;
+        /**
+         * Optional. A list of client buyers to subscribe to the auction package, with
+         * client buyer in the format `buyers/{accountId}/clients/{clientAccountId}`.
+         * The current buyer will be subscribed to the auction package regardless of
+         * the list contents if not already.
+         *
+         * @param string[] $clients
+         */
+        public function setClients($clients)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\SubscribeClientsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClients()
+    class Google_Service_AuthorizedBuyersMarketplace_SubscribeClientsRequest extends \Google\Service\AuthorizedBuyersMarketplace\SubscribeClientsRequest
     {
     }
 }

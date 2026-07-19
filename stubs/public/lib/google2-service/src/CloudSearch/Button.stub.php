@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Button extends \Google\Model
-{
-    protected $imageButtonType = ImageButton::class;
-    protected $imageButtonDataType = '';
-    protected $textButtonType = TextButton::class;
-    protected $textButtonDataType = '';
-    /**
-     * @param ImageButton
-     */
-    public function setImageButton(ImageButton $imageButton)
+namespace Google\Service\CloudSearch {
+    class Button extends \Google\Model
     {
+        protected $imageButtonType = ImageButton::class;
+        protected $imageButtonDataType = '';
+        protected $textButtonType = TextButton::class;
+        protected $textButtonDataType = '';
+        /**
+         * @param ImageButton
+         */
+        public function setImageButton(ImageButton $imageButton)
+        {
+        }
+        /**
+         * @return ImageButton
+         */
+        public function getImageButton()
+        {
+        }
+        /**
+         * @param TextButton
+         */
+        public function setTextButton(TextButton $textButton)
+        {
+        }
+        /**
+         * @return TextButton
+         */
+        public function getTextButton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageButton
+     * Runtime class alias of \Google\Service\CloudSearch\Button registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageButton()
-    {
-    }
-    /**
-     * @param TextButton
-     */
-    public function setTextButton(TextButton $textButton)
-    {
-    }
-    /**
-     * @return TextButton
-     */
-    public function getTextButton()
+    class Google_Service_CloudSearch_Button extends \Google\Service\CloudSearch\Button
     {
     }
 }

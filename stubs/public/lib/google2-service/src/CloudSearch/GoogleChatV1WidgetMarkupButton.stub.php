@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupButton extends \Google\Model
-{
-    protected $imageButtonType = GoogleChatV1WidgetMarkupImageButton::class;
-    protected $imageButtonDataType = '';
-    protected $textButtonType = GoogleChatV1WidgetMarkupTextButton::class;
-    protected $textButtonDataType = '';
-    /**
-     * @param GoogleChatV1WidgetMarkupImageButton
-     */
-    public function setImageButton(GoogleChatV1WidgetMarkupImageButton $imageButton)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupButton extends \Google\Model
     {
+        protected $imageButtonType = GoogleChatV1WidgetMarkupImageButton::class;
+        protected $imageButtonDataType = '';
+        protected $textButtonType = GoogleChatV1WidgetMarkupTextButton::class;
+        protected $textButtonDataType = '';
+        /**
+         * @param GoogleChatV1WidgetMarkupImageButton
+         */
+        public function setImageButton(GoogleChatV1WidgetMarkupImageButton $imageButton)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupImageButton
+         */
+        public function getImageButton()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupTextButton
+         */
+        public function setTextButton(GoogleChatV1WidgetMarkupTextButton $textButton)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupTextButton
+         */
+        public function getTextButton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1WidgetMarkupImageButton
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageButton()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupTextButton
-     */
-    public function setTextButton(GoogleChatV1WidgetMarkupTextButton $textButton)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupTextButton
-     */
-    public function getTextButton()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupButton extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupButton
     {
     }
 }

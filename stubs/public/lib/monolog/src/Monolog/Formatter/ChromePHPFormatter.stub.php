@@ -16,6 +16,8 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * Formats a log message according to the ChromePHP array format
  *

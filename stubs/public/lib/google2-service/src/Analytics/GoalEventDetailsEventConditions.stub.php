@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GoalEventDetailsEventConditions extends \Google\Model
-{
-    /**
-     * Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL.
-     *
-     * @var string
-     */
-    public $comparisonType;
-    /**
-     * Value used for this comparison.
-     *
-     * @var string
-     */
-    public $comparisonValue;
-    /**
-     * Expression used for this match.
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * Type of the match to be performed. Possible values are REGEXP, BEGINS_WITH,
-     * or EXACT.
-     *
-     * @var string
-     */
-    public $matchType;
-    /**
-     * Type of this event condition. Possible values are CATEGORY, ACTION, LABEL,
-     * or VALUE.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL.
-     *
-     * @param string $comparisonType
-     */
-    public function setComparisonType($comparisonType)
+namespace Google\Service\Analytics {
+    class GoalEventDetailsEventConditions extends \Google\Model
     {
+        /**
+         * Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL.
+         *
+         * @var string
+         */
+        public $comparisonType;
+        /**
+         * Value used for this comparison.
+         *
+         * @var string
+         */
+        public $comparisonValue;
+        /**
+         * Expression used for this match.
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * Type of the match to be performed. Possible values are REGEXP, BEGINS_WITH,
+         * or EXACT.
+         *
+         * @var string
+         */
+        public $matchType;
+        /**
+         * Type of this event condition. Possible values are CATEGORY, ACTION, LABEL,
+         * or VALUE.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL.
+         *
+         * @param string $comparisonType
+         */
+        public function setComparisonType($comparisonType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparisonType()
+        {
+        }
+        /**
+         * Value used for this comparison.
+         *
+         * @param string $comparisonValue
+         */
+        public function setComparisonValue($comparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparisonValue()
+        {
+        }
+        /**
+         * Expression used for this match.
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
+        /**
+         * Type of the match to be performed. Possible values are REGEXP, BEGINS_WITH,
+         * or EXACT.
+         *
+         * @param string $matchType
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * Type of this event condition. Possible values are CATEGORY, ACTION, LABEL,
+         * or VALUE.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\GoalEventDetailsEventConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisonType()
-    {
-    }
-    /**
-     * Value used for this comparison.
-     *
-     * @param string $comparisonValue
-     */
-    public function setComparisonValue($comparisonValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComparisonValue()
-    {
-    }
-    /**
-     * Expression used for this match.
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
-    {
-    }
-    /**
-     * Type of the match to be performed. Possible values are REGEXP, BEGINS_WITH,
-     * or EXACT.
-     *
-     * @param string $matchType
-     */
-    public function setMatchType($matchType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchType()
-    {
-    }
-    /**
-     * Type of this event condition. Possible values are CATEGORY, ACTION, LABEL,
-     * or VALUE.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_GoalEventDetailsEventConditions extends \Google\Service\Analytics\GoalEventDetailsEventConditions
     {
     }
 }

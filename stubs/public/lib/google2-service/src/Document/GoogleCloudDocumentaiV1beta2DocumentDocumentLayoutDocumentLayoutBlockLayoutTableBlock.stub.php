@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock extends \Google\Collection
-{
-    protected $collection_key = 'headerRows';
-    protected $bodyRowsType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
-    protected $bodyRowsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $caption;
-    protected $headerRowsType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
-    protected $headerRowsDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
-     */
-    public function setBodyRows($bodyRows)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock extends \Google\Collection
     {
+        protected $collection_key = 'headerRows';
+        protected $bodyRowsType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
+        protected $bodyRowsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $caption;
+        protected $headerRowsType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
+        protected $headerRowsDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+         */
+        public function setBodyRows($bodyRows)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+         */
+        public function getBodyRows()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCaption($caption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaption()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+         */
+        public function setHeaderRows($headerRows)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+         */
+        public function getHeaderRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBodyRows()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCaption($caption)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaption()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
-     */
-    public function setHeaderRows($headerRows)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
-     */
-    public function getHeaderRows()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock
     {
     }
 }

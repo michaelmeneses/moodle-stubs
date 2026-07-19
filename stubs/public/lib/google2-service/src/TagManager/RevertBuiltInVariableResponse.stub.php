@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertBuiltInVariableResponse extends \Google\Model
-{
-    /**
-     * Whether the built-in variable is enabled after reversion.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether the built-in variable is enabled after reversion.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\TagManager {
+    class RevertBuiltInVariableResponse extends \Google\Model
     {
+        /**
+         * Whether the built-in variable is enabled after reversion.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether the built-in variable is enabled after reversion.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\RevertBuiltInVariableResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_TagManager_RevertBuiltInVariableResponse extends \Google\Service\TagManager\RevertBuiltInVariableResponse
     {
     }
 }

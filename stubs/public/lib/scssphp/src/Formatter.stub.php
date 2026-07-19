@@ -17,6 +17,8 @@
  */
 namespace ScssPhp\ScssPhp;
 
+use ScssPhp\ScssPhp\Formatter\OutputBlock;
+use ScssPhp\ScssPhp\SourceMap\SourceMapGenerator;
 /**
  * Base formatter
  *

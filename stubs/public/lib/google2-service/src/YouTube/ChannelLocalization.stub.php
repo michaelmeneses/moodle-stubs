@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelLocalization extends \Google\Model
-{
-    /**
-     * The localized strings for channel's description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The localized strings for channel's title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The localized strings for channel's description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\YouTube {
+    class ChannelLocalization extends \Google\Model
     {
+        /**
+         * The localized strings for channel's description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The localized strings for channel's title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The localized strings for channel's description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The localized strings for channel's title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelLocalization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The localized strings for channel's title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_ChannelLocalization extends \Google\Service\YouTube\ChannelLocalization
     {
     }
 }

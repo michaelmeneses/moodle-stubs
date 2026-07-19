@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectsGetDiagnosticsResponse extends \Google\Model
-{
-    protected $resultType = InterconnectDiagnostics::class;
-    protected $resultDataType = '';
-    /**
-     * @param InterconnectDiagnostics $result
-     */
-    public function setResult(InterconnectDiagnostics $result)
+namespace Google\Service\Compute {
+    class InterconnectsGetDiagnosticsResponse extends \Google\Model
     {
+        protected $resultType = InterconnectDiagnostics::class;
+        protected $resultDataType = '';
+        /**
+         * @param InterconnectDiagnostics $result
+         */
+        public function setResult(InterconnectDiagnostics $result)
+        {
+        }
+        /**
+         * @return InterconnectDiagnostics
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectDiagnostics
+     * Runtime class alias of \Google\Service\Compute\InterconnectsGetDiagnosticsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Compute_InterconnectsGetDiagnosticsResponse extends \Google\Service\Compute\InterconnectsGetDiagnosticsResponse
     {
     }
 }

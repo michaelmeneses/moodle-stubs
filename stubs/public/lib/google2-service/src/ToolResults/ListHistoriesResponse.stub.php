@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListHistoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'histories';
-    protected $historiesType = History::class;
-    protected $historiesDataType = 'array';
-    /**
-     * A continuation token to resume the query at the next item. Will only be set
-     * if there are more histories to fetch. Tokens are valid for up to one hour
-     * from the time of the first list request. For instance, if you make a list
-     * request at 1PM and use the token from this first request 10 minutes later,
-     * the token from this second response will only be valid for 50 minutes.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Histories.
-     *
-     * @param History[] $histories
-     */
-    public function setHistories($histories)
+namespace Google\Service\ToolResults {
+    class ListHistoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'histories';
+        protected $historiesType = History::class;
+        protected $historiesDataType = 'array';
+        /**
+         * A continuation token to resume the query at the next item. Will only be set
+         * if there are more histories to fetch. Tokens are valid for up to one hour
+         * from the time of the first list request. For instance, if you make a list
+         * request at 1PM and use the token from this first request 10 minutes later,
+         * the token from this second response will only be valid for 50 minutes.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Histories.
+         *
+         * @param History[] $histories
+         */
+        public function setHistories($histories)
+        {
+        }
+        /**
+         * @return History[]
+         */
+        public function getHistories()
+        {
+        }
+        /**
+         * A continuation token to resume the query at the next item. Will only be set
+         * if there are more histories to fetch. Tokens are valid for up to one hour
+         * from the time of the first list request. For instance, if you make a list
+         * request at 1PM and use the token from this first request 10 minutes later,
+         * the token from this second response will only be valid for 50 minutes.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return History[]
+     * Runtime class alias of \Google\Service\ToolResults\ListHistoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistories()
-    {
-    }
-    /**
-     * A continuation token to resume the query at the next item. Will only be set
-     * if there are more histories to fetch. Tokens are valid for up to one hour
-     * from the time of the first list request. For instance, if you make a list
-     * request at 1PM and use the token from this first request 10 minutes later,
-     * the token from this second response will only be valid for 50 minutes.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ToolResults_ListHistoriesResponse extends \Google\Service\ToolResults\ListHistoriesResponse
     {
     }
 }

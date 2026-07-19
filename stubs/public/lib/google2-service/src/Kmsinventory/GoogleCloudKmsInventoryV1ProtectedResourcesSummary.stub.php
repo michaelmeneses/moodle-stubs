@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Kmsinventory;
-
-class GoogleCloudKmsInventoryV1ProtectedResourcesSummary extends \Google\Model
-{
-    /**
-     * The number of resources protected by the key grouped by Cloud product.
-     *
-     * @var string[]
-     */
-    public $cloudProducts;
-    /**
-     * The number of resources protected by the key grouped by region.
-     *
-     * @var string[]
-     */
-    public $locations;
-    /**
-     * The full name of the ProtectedResourcesSummary resource. Example:
-     * projects/test-project/locations/us/keyRings/test-keyring/cryptoKeys/test-
-     * key/protectedResourcesSummary
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The number of distinct Cloud projects in the same Cloud organization as the
-     * key that have resources protected by the key.
-     *
-     * @var int
-     */
-    public $projectCount;
-    /**
-     * The total number of protected resources in the same Cloud organization as
-     * the key.
-     *
-     * @var string
-     */
-    public $resourceCount;
-    /**
-     * The number of resources protected by the key grouped by resource type.
-     *
-     * @var string[]
-     */
-    public $resourceTypes;
-    /**
-     * The number of resources protected by the key grouped by Cloud product.
-     *
-     * @param string[] $cloudProducts
-     */
-    public function setCloudProducts($cloudProducts)
+namespace Google\Service\Kmsinventory {
+    class GoogleCloudKmsInventoryV1ProtectedResourcesSummary extends \Google\Model
     {
+        /**
+         * The number of resources protected by the key grouped by Cloud product.
+         *
+         * @var string[]
+         */
+        public $cloudProducts;
+        /**
+         * The number of resources protected by the key grouped by region.
+         *
+         * @var string[]
+         */
+        public $locations;
+        /**
+         * The full name of the ProtectedResourcesSummary resource. Example:
+         * projects/test-project/locations/us/keyRings/test-keyring/cryptoKeys/test-
+         * key/protectedResourcesSummary
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The number of distinct Cloud projects in the same Cloud organization as the
+         * key that have resources protected by the key.
+         *
+         * @var int
+         */
+        public $projectCount;
+        /**
+         * The total number of protected resources in the same Cloud organization as
+         * the key.
+         *
+         * @var string
+         */
+        public $resourceCount;
+        /**
+         * The number of resources protected by the key grouped by resource type.
+         *
+         * @var string[]
+         */
+        public $resourceTypes;
+        /**
+         * The number of resources protected by the key grouped by Cloud product.
+         *
+         * @param string[] $cloudProducts
+         */
+        public function setCloudProducts($cloudProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCloudProducts()
+        {
+        }
+        /**
+         * The number of resources protected by the key grouped by region.
+         *
+         * @param string[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * The full name of the ProtectedResourcesSummary resource. Example:
+         * projects/test-project/locations/us/keyRings/test-keyring/cryptoKeys/test-
+         * key/protectedResourcesSummary
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The number of distinct Cloud projects in the same Cloud organization as the
+         * key that have resources protected by the key.
+         *
+         * @param int $projectCount
+         */
+        public function setProjectCount($projectCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProjectCount()
+        {
+        }
+        /**
+         * The total number of protected resources in the same Cloud organization as
+         * the key.
+         *
+         * @param string $resourceCount
+         */
+        public function setResourceCount($resourceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceCount()
+        {
+        }
+        /**
+         * The number of resources protected by the key grouped by resource type.
+         *
+         * @param string[] $resourceTypes
+         */
+        public function setResourceTypes($resourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ProtectedResourcesSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudProducts()
-    {
-    }
-    /**
-     * The number of resources protected by the key grouped by region.
-     *
-     * @param string[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocations()
-    {
-    }
-    /**
-     * The full name of the ProtectedResourcesSummary resource. Example:
-     * projects/test-project/locations/us/keyRings/test-keyring/cryptoKeys/test-
-     * key/protectedResourcesSummary
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The number of distinct Cloud projects in the same Cloud organization as the
-     * key that have resources protected by the key.
-     *
-     * @param int $projectCount
-     */
-    public function setProjectCount($projectCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProjectCount()
-    {
-    }
-    /**
-     * The total number of protected resources in the same Cloud organization as
-     * the key.
-     *
-     * @param string $resourceCount
-     */
-    public function setResourceCount($resourceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceCount()
-    {
-    }
-    /**
-     * The number of resources protected by the key grouped by resource type.
-     *
-     * @param string[] $resourceTypes
-     */
-    public function setResourceTypes($resourceTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceTypes()
+    class Google_Service_Kmsinventory_GoogleCloudKmsInventoryV1ProtectedResourcesSummary extends \Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ProtectedResourcesSummary
     {
     }
 }

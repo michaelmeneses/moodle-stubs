@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1alphaLocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'supportedHiveMetastoreVersions';
-    protected $customRegionMetadataType = GoogleCloudMetastoreV1alphaCustomRegionMetadata::class;
-    protected $customRegionMetadataDataType = 'array';
-    protected $multiRegionMetadataType = GoogleCloudMetastoreV1alphaMultiRegionMetadata::class;
-    protected $multiRegionMetadataDataType = '';
-    protected $supportedHiveMetastoreVersionsType = GoogleCloudMetastoreV1alphaHiveMetastoreVersion::class;
-    protected $supportedHiveMetastoreVersionsDataType = 'array';
-    /**
-     * @param GoogleCloudMetastoreV1alphaCustomRegionMetadata[]
-     */
-    public function setCustomRegionMetadata($customRegionMetadata)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1alphaLocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'supportedHiveMetastoreVersions';
+        protected $customRegionMetadataType = GoogleCloudMetastoreV1alphaCustomRegionMetadata::class;
+        protected $customRegionMetadataDataType = 'array';
+        protected $multiRegionMetadataType = GoogleCloudMetastoreV1alphaMultiRegionMetadata::class;
+        protected $multiRegionMetadataDataType = '';
+        protected $supportedHiveMetastoreVersionsType = GoogleCloudMetastoreV1alphaHiveMetastoreVersion::class;
+        protected $supportedHiveMetastoreVersionsDataType = 'array';
+        /**
+         * @param GoogleCloudMetastoreV1alphaCustomRegionMetadata[]
+         */
+        public function setCustomRegionMetadata($customRegionMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV1alphaCustomRegionMetadata[]
+         */
+        public function getCustomRegionMetadata()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV1alphaMultiRegionMetadata
+         */
+        public function setMultiRegionMetadata(GoogleCloudMetastoreV1alphaMultiRegionMetadata $multiRegionMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV1alphaMultiRegionMetadata
+         */
+        public function getMultiRegionMetadata()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV1alphaHiveMetastoreVersion[]
+         */
+        public function setSupportedHiveMetastoreVersions($supportedHiveMetastoreVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV1alphaHiveMetastoreVersion[]
+         */
+        public function getSupportedHiveMetastoreVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMetastoreV1alphaCustomRegionMetadata[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaLocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomRegionMetadata()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV1alphaMultiRegionMetadata
-     */
-    public function setMultiRegionMetadata(GoogleCloudMetastoreV1alphaMultiRegionMetadata $multiRegionMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV1alphaMultiRegionMetadata
-     */
-    public function getMultiRegionMetadata()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV1alphaHiveMetastoreVersion[]
-     */
-    public function setSupportedHiveMetastoreVersions($supportedHiveMetastoreVersions)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV1alphaHiveMetastoreVersion[]
-     */
-    public function getSupportedHiveMetastoreVersions()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1alphaLocationMetadata extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaLocationMetadata
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class LookupInvoiceCurrencyResponse extends \Google\Model
-{
-    /**
-     * Currency used by the advertiser in ISO 4217 format.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Currency used by the advertiser in ISO 4217 format.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\DisplayVideo {
+    class LookupInvoiceCurrencyResponse extends \Google\Model
     {
+        /**
+         * Currency used by the advertiser in ISO 4217 format.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Currency used by the advertiser in ISO 4217 format.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\LookupInvoiceCurrencyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
+    class Google_Service_DisplayVideo_LookupInvoiceCurrencyResponse extends \Google\Service\DisplayVideo\LookupInvoiceCurrencyResponse
     {
     }
 }

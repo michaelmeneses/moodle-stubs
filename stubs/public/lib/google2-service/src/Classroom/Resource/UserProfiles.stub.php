@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom\Resource;
-
-/**
- * The "userProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $classroomService = new Google\Service\Classroom(...);
- *   $userProfiles = $classroomService->userProfiles;
- *  </code>
- */
-class UserProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Classroom\Resource {
+    use Google\Service\Classroom\UserProfile;
     /**
-     * Returns a user profile. This method returns the following error codes: *
-     * `PERMISSION_DENIED` if the requesting user is not permitted to access this
-     * user profile, if no profile exists with the requested ID, or for access
-     * errors. (userProfiles.get)
-     *
-     * @param string $userId Identifier of the profile to return. The identifier can
-     * be one of the following: * the numeric identifier for the user * the email
-     * address of the user * the string literal `"me"`, indicating the requesting
-     * user
-     * @param array $optParams Optional parameters.
-     * @return UserProfile
-     * @throws \Google\Service\Exception
+     * The "userProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $classroomService = new Google\Service\Classroom(...);
+     *   $userProfiles = $classroomService->userProfiles;
+     *  </code>
      */
-    public function get($userId, $optParams = [])
+    class UserProfiles extends \Google\Service\Resource
+    {
+        /**
+         * Returns a user profile. This method returns the following error codes: *
+         * `PERMISSION_DENIED` if the requesting user is not permitted to access this
+         * user profile, if no profile exists with the requested ID, or for access
+         * errors. (userProfiles.get)
+         *
+         * @param string $userId Identifier of the profile to return. The identifier can
+         * be one of the following: * the numeric identifier for the user * the email
+         * address of the user * the string literal `"me"`, indicating the requesting
+         * user
+         * @param array $optParams Optional parameters.
+         * @return UserProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Classroom\Resource\UserProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Classroom_Resource_UserProfiles extends \Google\Service\Classroom\Resource\UserProfiles
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MemberId extends \Google\Model
-{
-    protected $rosterIdType = RosterId::class;
-    protected $rosterIdDataType = '';
-    protected $userIdType = UserId::class;
-    protected $userIdDataType = '';
-    /**
-     * @param RosterId
-     */
-    public function setRosterId(RosterId $rosterId)
+namespace Google\Service\CloudSearch {
+    class MemberId extends \Google\Model
     {
+        protected $rosterIdType = RosterId::class;
+        protected $rosterIdDataType = '';
+        protected $userIdType = UserId::class;
+        protected $userIdDataType = '';
+        /**
+         * @param RosterId
+         */
+        public function setRosterId(RosterId $rosterId)
+        {
+        }
+        /**
+         * @return RosterId
+         */
+        public function getRosterId()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUserId(UserId $userId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RosterId
+     * Runtime class alias of \Google\Service\CloudSearch\MemberId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRosterId()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUserId(UserId $userId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_MemberId extends \Google\Service\CloudSearch\MemberId
     {
     }
 }

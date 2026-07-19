@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ConfigTemplate extends \Google\Collection
-{
-    protected $collection_key = 'additionalConfigTemplate';
-    protected $additionalConfigTemplateType = GoogleCloudApihubV1ConfigVariableTemplate::class;
-    protected $additionalConfigTemplateDataType = 'array';
-    protected $authConfigTemplateType = GoogleCloudApihubV1AuthConfigTemplate::class;
-    protected $authConfigTemplateDataType = '';
-    /**
-     * Optional. The list of additional configuration variables for the plugin's
-     * configuration.
-     *
-     * @param GoogleCloudApihubV1ConfigVariableTemplate[] $additionalConfigTemplate
-     */
-    public function setAdditionalConfigTemplate($additionalConfigTemplate)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ConfigTemplate extends \Google\Collection
     {
+        protected $collection_key = 'additionalConfigTemplate';
+        protected $additionalConfigTemplateType = GoogleCloudApihubV1ConfigVariableTemplate::class;
+        protected $additionalConfigTemplateDataType = 'array';
+        protected $authConfigTemplateType = GoogleCloudApihubV1AuthConfigTemplate::class;
+        protected $authConfigTemplateDataType = '';
+        /**
+         * Optional. The list of additional configuration variables for the plugin's
+         * configuration.
+         *
+         * @param GoogleCloudApihubV1ConfigVariableTemplate[] $additionalConfigTemplate
+         */
+        public function setAdditionalConfigTemplate($additionalConfigTemplate)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ConfigVariableTemplate[]
+         */
+        public function getAdditionalConfigTemplate()
+        {
+        }
+        /**
+         * Optional. The authentication template for the plugin.
+         *
+         * @param GoogleCloudApihubV1AuthConfigTemplate $authConfigTemplate
+         */
+        public function setAuthConfigTemplate(GoogleCloudApihubV1AuthConfigTemplate $authConfigTemplate)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AuthConfigTemplate
+         */
+        public function getAuthConfigTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ConfigVariableTemplate[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ConfigTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalConfigTemplate()
-    {
-    }
-    /**
-     * Optional. The authentication template for the plugin.
-     *
-     * @param GoogleCloudApihubV1AuthConfigTemplate $authConfigTemplate
-     */
-    public function setAuthConfigTemplate(GoogleCloudApihubV1AuthConfigTemplate $authConfigTemplate)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1AuthConfigTemplate
-     */
-    public function getAuthConfigTemplate()
+    class Google_Service_APIhub_GoogleCloudApihubV1ConfigTemplate extends \Google\Service\APIhub\GoogleCloudApihubV1ConfigTemplate
     {
     }
 }

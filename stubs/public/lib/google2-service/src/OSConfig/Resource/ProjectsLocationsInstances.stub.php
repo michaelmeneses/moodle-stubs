@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig\Resource;
-
-/**
- * The "instances" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osconfigService = new Google\Service\OSConfig(...);
- *   $instances = $osconfigService->projects_locations_instances;
- *  </code>
- */
-class ProjectsLocationsInstances extends \Google\Service\Resource
-{
+namespace Google\Service\OSConfig\Resource {
+    /**
+     * The "instances" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osconfigService = new Google\Service\OSConfig(...);
+     *   $instances = $osconfigService->projects_locations_instances;
+     *  </code>
+     */
+    class ProjectsLocationsInstances extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OSConfig\Resource\ProjectsLocationsInstances registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OSConfig_Resource_ProjectsLocationsInstances extends \Google\Service\OSConfig\Resource\ProjectsLocationsInstances
+    {
+    }
 }

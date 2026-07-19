@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SamplePlayableLocation extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    protected $centerPointType = GoogleTypeLatLng::class;
-    protected $centerPointDataType = '';
-    public $name;
-    public $placeId;
-    public $plusCode;
-    protected $snappedPointType = GoogleTypeLatLng::class;
-    protected $snappedPointDataType = '';
-    public $types;
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SamplePlayableLocation extends \Google\Collection
+    {
+        protected $collection_key = 'types';
+        protected $centerPointType = GoogleTypeLatLng::class;
+        protected $centerPointDataType = '';
+        public $name;
+        public $placeId;
+        public $plusCode;
+        protected $snappedPointType = GoogleTypeLatLng::class;
+        protected $snappedPointDataType = '';
+        public $types;
+        /**
+         * @param GoogleTypeLatLng
+         */
+        public function setCenterPoint(GoogleTypeLatLng $centerPoint)
+        {
+        }
+        /**
+         * @return GoogleTypeLatLng
+         */
+        public function getCenterPoint()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setPlaceId($placeId)
+        {
+        }
+        public function getPlaceId()
+        {
+        }
+        public function setPlusCode($plusCode)
+        {
+        }
+        public function getPlusCode()
+        {
+        }
+        /**
+         * @param GoogleTypeLatLng
+         */
+        public function setSnappedPoint(GoogleTypeLatLng $snappedPoint)
+        {
+        }
+        /**
+         * @return GoogleTypeLatLng
+         */
+        public function getSnappedPoint()
+        {
+        }
+        public function setTypes($types)
+        {
+        }
+        public function getTypes()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleTypeLatLng
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCenterPoint(GoogleTypeLatLng $centerPoint)
-    {
-    }
-    /**
-     * @return GoogleTypeLatLng
-     */
-    public function getCenterPoint()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setPlaceId($placeId)
-    {
-    }
-    public function getPlaceId()
-    {
-    }
-    public function setPlusCode($plusCode)
-    {
-    }
-    public function getPlusCode()
-    {
-    }
-    /**
-     * @param GoogleTypeLatLng
-     */
-    public function setSnappedPoint(GoogleTypeLatLng $snappedPoint)
-    {
-    }
-    /**
-     * @return GoogleTypeLatLng
-     */
-    public function getSnappedPoint()
-    {
-    }
-    public function setTypes($types)
-    {
-    }
-    public function getTypes()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SamplePlayableLocation extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocation
     {
     }
 }

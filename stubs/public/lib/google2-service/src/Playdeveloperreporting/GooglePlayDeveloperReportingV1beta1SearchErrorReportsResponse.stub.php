@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1SearchErrorReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorReports';
-    protected $errorReportsType = GooglePlayDeveloperReportingV1beta1ErrorReport::class;
-    protected $errorReportsDataType = 'array';
-    /**
-     * Page token to fetch the next page of reports.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Error reports that were found.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1ErrorReport[] $errorReports
-     */
-    public function setErrorReports($errorReports)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1SearchErrorReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorReports';
+        protected $errorReportsType = GooglePlayDeveloperReportingV1beta1ErrorReport::class;
+        protected $errorReportsDataType = 'array';
+        /**
+         * Page token to fetch the next page of reports.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Error reports that were found.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1ErrorReport[] $errorReports
+         */
+        public function setErrorReports($errorReports)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1ErrorReport[]
+         */
+        public function getErrorReports()
+        {
+        }
+        /**
+         * Page token to fetch the next page of reports.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1ErrorReport[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchErrorReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorReports()
-    {
-    }
-    /**
-     * Page token to fetch the next page of reports.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1SearchErrorReportsResponse extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchErrorReportsResponse
     {
     }
 }

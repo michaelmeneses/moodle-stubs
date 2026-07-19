@@ -21,367 +21,376 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ContainerVersion extends \Google\Collection
-{
-    protected $collection_key = 'zone';
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $builtInVariableType = BuiltInVariable::class;
-    protected $builtInVariableDataType = 'array';
-    protected $clientType = Client::class;
-    protected $clientDataType = 'array';
-    protected $containerType = Container::class;
-    protected $containerDataType = '';
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * The Container Version ID uniquely identifies the GTM Container Version.
-     *
-     * @var string
-     */
-    public $containerVersionId;
-    protected $customTemplateType = CustomTemplate::class;
-    protected $customTemplateDataType = 'array';
-    /**
-     * A value of true indicates this container version has been deleted.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * Container version description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The fingerprint of the GTM Container Version as computed at storage time.
-     * This value is recomputed whenever the container version is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    protected $folderType = Folder::class;
-    protected $folderDataType = 'array';
-    protected $gtagConfigType = GtagConfig::class;
-    protected $gtagConfigDataType = 'array';
-    /**
-     * Container version display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * GTM Container Version's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    protected $tagType = Tag::class;
-    protected $tagDataType = 'array';
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    protected $transformationType = Transformation::class;
-    protected $transformationDataType = 'array';
-    protected $triggerType = Trigger::class;
-    protected $triggerDataType = 'array';
-    protected $variableType = Variable::class;
-    protected $variableDataType = 'array';
-    protected $zoneType = Zone::class;
-    protected $zoneDataType = 'array';
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class ContainerVersion extends \Google\Collection
     {
+        protected $collection_key = 'zone';
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $builtInVariableType = BuiltInVariable::class;
+        protected $builtInVariableDataType = 'array';
+        protected $clientType = Client::class;
+        protected $clientDataType = 'array';
+        protected $containerType = Container::class;
+        protected $containerDataType = '';
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * The Container Version ID uniquely identifies the GTM Container Version.
+         *
+         * @var string
+         */
+        public $containerVersionId;
+        protected $customTemplateType = CustomTemplate::class;
+        protected $customTemplateDataType = 'array';
+        /**
+         * A value of true indicates this container version has been deleted.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * Container version description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The fingerprint of the GTM Container Version as computed at storage time.
+         * This value is recomputed whenever the container version is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        protected $folderType = Folder::class;
+        protected $folderDataType = 'array';
+        protected $gtagConfigType = GtagConfig::class;
+        protected $gtagConfigDataType = 'array';
+        /**
+         * Container version display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * GTM Container Version's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        protected $tagType = Tag::class;
+        protected $tagDataType = 'array';
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        protected $transformationType = Transformation::class;
+        protected $transformationDataType = 'array';
+        protected $triggerType = Trigger::class;
+        protected $triggerDataType = 'array';
+        protected $variableType = Variable::class;
+        protected $variableDataType = 'array';
+        protected $zoneType = Zone::class;
+        protected $zoneDataType = 'array';
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The built-in variables in the container that this version was taken from.
+         *
+         * @param BuiltInVariable[] $builtInVariable
+         */
+        public function setBuiltInVariable($builtInVariable)
+        {
+        }
+        /**
+         * @return BuiltInVariable[]
+         */
+        public function getBuiltInVariable()
+        {
+        }
+        /**
+         * The clients in the container that this version was taken from.
+         *
+         * @param Client[] $client
+         */
+        public function setClient($client)
+        {
+        }
+        /**
+         * @return Client[]
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * The container that this version was taken from.
+         *
+         * @param Container $container
+         */
+        public function setContainer(Container $container)
+        {
+        }
+        /**
+         * @return Container
+         */
+        public function getContainer()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * The Container Version ID uniquely identifies the GTM Container Version.
+         *
+         * @param string $containerVersionId
+         */
+        public function setContainerVersionId($containerVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerVersionId()
+        {
+        }
+        /**
+         * The custom templates in the container that this version was taken from.
+         *
+         * @param CustomTemplate[] $customTemplate
+         */
+        public function setCustomTemplate($customTemplate)
+        {
+        }
+        /**
+         * @return CustomTemplate[]
+         */
+        public function getCustomTemplate()
+        {
+        }
+        /**
+         * A value of true indicates this container version has been deleted.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Container version description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The fingerprint of the GTM Container Version as computed at storage time.
+         * This value is recomputed whenever the container version is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The folders in the container that this version was taken from.
+         *
+         * @param Folder[] $folder
+         */
+        public function setFolder($folder)
+        {
+        }
+        /**
+         * @return Folder[]
+         */
+        public function getFolder()
+        {
+        }
+        /**
+         * The Google tag configs in the container that this version was taken from.
+         *
+         * @param GtagConfig[] $gtagConfig
+         */
+        public function setGtagConfig($gtagConfig)
+        {
+        }
+        /**
+         * @return GtagConfig[]
+         */
+        public function getGtagConfig()
+        {
+        }
+        /**
+         * Container version display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * GTM Container Version's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * The tags in the container that this version was taken from.
+         *
+         * @param Tag[] $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * The transformations in the container that this version was taken from.
+         *
+         * @param Transformation[] $transformation
+         */
+        public function setTransformation($transformation)
+        {
+        }
+        /**
+         * @return Transformation[]
+         */
+        public function getTransformation()
+        {
+        }
+        /**
+         * The triggers in the container that this version was taken from.
+         *
+         * @param Trigger[] $trigger
+         */
+        public function setTrigger($trigger)
+        {
+        }
+        /**
+         * @return Trigger[]
+         */
+        public function getTrigger()
+        {
+        }
+        /**
+         * The variables in the container that this version was taken from.
+         *
+         * @param Variable[] $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getVariable()
+        {
+        }
+        /**
+         * The zones in the container that this version was taken from.
+         *
+         * @param Zone[] $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return Zone[]
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ContainerVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The built-in variables in the container that this version was taken from.
-     *
-     * @param BuiltInVariable[] $builtInVariable
-     */
-    public function setBuiltInVariable($builtInVariable)
-    {
-    }
-    /**
-     * @return BuiltInVariable[]
-     */
-    public function getBuiltInVariable()
-    {
-    }
-    /**
-     * The clients in the container that this version was taken from.
-     *
-     * @param Client[] $client
-     */
-    public function setClient($client)
-    {
-    }
-    /**
-     * @return Client[]
-     */
-    public function getClient()
-    {
-    }
-    /**
-     * The container that this version was taken from.
-     *
-     * @param Container $container
-     */
-    public function setContainer(Container $container)
-    {
-    }
-    /**
-     * @return Container
-     */
-    public function getContainer()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * The Container Version ID uniquely identifies the GTM Container Version.
-     *
-     * @param string $containerVersionId
-     */
-    public function setContainerVersionId($containerVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerVersionId()
-    {
-    }
-    /**
-     * The custom templates in the container that this version was taken from.
-     *
-     * @param CustomTemplate[] $customTemplate
-     */
-    public function setCustomTemplate($customTemplate)
-    {
-    }
-    /**
-     * @return CustomTemplate[]
-     */
-    public function getCustomTemplate()
-    {
-    }
-    /**
-     * A value of true indicates this container version has been deleted.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Container version description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The fingerprint of the GTM Container Version as computed at storage time.
-     * This value is recomputed whenever the container version is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The folders in the container that this version was taken from.
-     *
-     * @param Folder[] $folder
-     */
-    public function setFolder($folder)
-    {
-    }
-    /**
-     * @return Folder[]
-     */
-    public function getFolder()
-    {
-    }
-    /**
-     * The Google tag configs in the container that this version was taken from.
-     *
-     * @param GtagConfig[] $gtagConfig
-     */
-    public function setGtagConfig($gtagConfig)
-    {
-    }
-    /**
-     * @return GtagConfig[]
-     */
-    public function getGtagConfig()
-    {
-    }
-    /**
-     * Container version display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * GTM Container Version's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * The tags in the container that this version was taken from.
-     *
-     * @param Tag[] $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return Tag[]
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * The transformations in the container that this version was taken from.
-     *
-     * @param Transformation[] $transformation
-     */
-    public function setTransformation($transformation)
-    {
-    }
-    /**
-     * @return Transformation[]
-     */
-    public function getTransformation()
-    {
-    }
-    /**
-     * The triggers in the container that this version was taken from.
-     *
-     * @param Trigger[] $trigger
-     */
-    public function setTrigger($trigger)
-    {
-    }
-    /**
-     * @return Trigger[]
-     */
-    public function getTrigger()
-    {
-    }
-    /**
-     * The variables in the container that this version was taken from.
-     *
-     * @param Variable[] $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return Variable[]
-     */
-    public function getVariable()
-    {
-    }
-    /**
-     * The zones in the container that this version was taken from.
-     *
-     * @param Zone[] $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return Zone[]
-     */
-    public function getZone()
+    class Google_Service_TagManager_ContainerVersion extends \Google\Service\TagManager\ContainerVersion
     {
     }
 }

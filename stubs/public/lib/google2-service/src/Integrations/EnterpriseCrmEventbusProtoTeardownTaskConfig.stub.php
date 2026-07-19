@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoTeardownTaskConfig extends \Google\Model
-{
-    /**
-     * The creator's email address.
-     *
-     * @var string
-     */
-    public $creatorEmail;
-    /**
-     * Required. Unique identifier of the teardown task within this Config. We use
-     * this field as the identifier to find next teardown tasks.
-     *
-     * @var string
-     */
-    public $name;
-    protected $nextTeardownTaskType = EnterpriseCrmEventbusProtoNextTeardownTask::class;
-    protected $nextTeardownTaskDataType = '';
-    protected $parametersType = EnterpriseCrmEventbusProtoEventParameters::class;
-    protected $parametersDataType = '';
-    protected $propertiesType = EnterpriseCrmEventbusProtoEventBusProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Required. Implementation class name.
-     *
-     * @var string
-     */
-    public $teardownTaskImplementationClassName;
-    /**
-     * The creator's email address.
-     *
-     * @param string $creatorEmail
-     */
-    public function setCreatorEmail($creatorEmail)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoTeardownTaskConfig extends \Google\Model
     {
+        /**
+         * The creator's email address.
+         *
+         * @var string
+         */
+        public $creatorEmail;
+        /**
+         * Required. Unique identifier of the teardown task within this Config. We use
+         * this field as the identifier to find next teardown tasks.
+         *
+         * @var string
+         */
+        public $name;
+        protected $nextTeardownTaskType = EnterpriseCrmEventbusProtoNextTeardownTask::class;
+        protected $nextTeardownTaskDataType = '';
+        protected $parametersType = EnterpriseCrmEventbusProtoEventParameters::class;
+        protected $parametersDataType = '';
+        protected $propertiesType = EnterpriseCrmEventbusProtoEventBusProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Required. Implementation class name.
+         *
+         * @var string
+         */
+        public $teardownTaskImplementationClassName;
+        /**
+         * The creator's email address.
+         *
+         * @param string $creatorEmail
+         */
+        public function setCreatorEmail($creatorEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorEmail()
+        {
+        }
+        /**
+         * Required. Unique identifier of the teardown task within this Config. We use
+         * this field as the identifier to find next teardown tasks.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoNextTeardownTask $nextTeardownTask
+         */
+        public function setNextTeardownTask(EnterpriseCrmEventbusProtoNextTeardownTask $nextTeardownTask)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoNextTeardownTask
+         */
+        public function getNextTeardownTask()
+        {
+        }
+        /**
+         * The parameters the user can pass to this task.
+         *
+         * @param EnterpriseCrmEventbusProtoEventParameters $parameters
+         */
+        public function setParameters(EnterpriseCrmEventbusProtoEventParameters $parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoEventParameters
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoEventBusProperties $properties
+         */
+        public function setProperties(EnterpriseCrmEventbusProtoEventBusProperties $properties)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoEventBusProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Required. Implementation class name.
+         *
+         * @param string $teardownTaskImplementationClassName
+         */
+        public function setTeardownTaskImplementationClassName($teardownTaskImplementationClassName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTeardownTaskImplementationClassName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoTeardownTaskConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatorEmail()
-    {
-    }
-    /**
-     * Required. Unique identifier of the teardown task within this Config. We use
-     * this field as the identifier to find next teardown tasks.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoNextTeardownTask $nextTeardownTask
-     */
-    public function setNextTeardownTask(EnterpriseCrmEventbusProtoNextTeardownTask $nextTeardownTask)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoNextTeardownTask
-     */
-    public function getNextTeardownTask()
-    {
-    }
-    /**
-     * The parameters the user can pass to this task.
-     *
-     * @param EnterpriseCrmEventbusProtoEventParameters $parameters
-     */
-    public function setParameters(EnterpriseCrmEventbusProtoEventParameters $parameters)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoEventParameters
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoEventBusProperties $properties
-     */
-    public function setProperties(EnterpriseCrmEventbusProtoEventBusProperties $properties)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoEventBusProperties
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Required. Implementation class name.
-     *
-     * @param string $teardownTaskImplementationClassName
-     */
-    public function setTeardownTaskImplementationClassName($teardownTaskImplementationClassName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTeardownTaskImplementationClassName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoTeardownTaskConfig extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoTeardownTaskConfig
     {
     }
 }

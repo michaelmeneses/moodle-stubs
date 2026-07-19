@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class DesiredAdditionalIPRangesConfig extends \Google\Collection
-{
-    protected $collection_key = 'additionalIpRangesConfigs';
-    protected $additionalIpRangesConfigsType = AdditionalIPRangesConfig::class;
-    protected $additionalIpRangesConfigsDataType = 'array';
-    /**
-     * List of additional IP ranges configs where each AdditionalIPRangesConfig
-     * corresponds to one subnetwork's IP ranges
-     *
-     * @param AdditionalIPRangesConfig[] $additionalIpRangesConfigs
-     */
-    public function setAdditionalIpRangesConfigs($additionalIpRangesConfigs)
+namespace Google\Service\Container {
+    class DesiredAdditionalIPRangesConfig extends \Google\Collection
     {
+        protected $collection_key = 'additionalIpRangesConfigs';
+        protected $additionalIpRangesConfigsType = AdditionalIPRangesConfig::class;
+        protected $additionalIpRangesConfigsDataType = 'array';
+        /**
+         * List of additional IP ranges configs where each AdditionalIPRangesConfig
+         * corresponds to one subnetwork's IP ranges
+         *
+         * @param AdditionalIPRangesConfig[] $additionalIpRangesConfigs
+         */
+        public function setAdditionalIpRangesConfigs($additionalIpRangesConfigs)
+        {
+        }
+        /**
+         * @return AdditionalIPRangesConfig[]
+         */
+        public function getAdditionalIpRangesConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdditionalIPRangesConfig[]
+     * Runtime class alias of \Google\Service\Container\DesiredAdditionalIPRangesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalIpRangesConfigs()
+    class Google_Service_Container_DesiredAdditionalIPRangesConfig extends \Google\Service\Container\DesiredAdditionalIPRangesConfig
     {
     }
 }

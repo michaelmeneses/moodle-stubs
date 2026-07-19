@@ -21,56 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "cloudloading" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $cloudloading = $booksService->cloudloading;
- *  </code>
- */
-class Cloudloading extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\BooksCloudloadingResource;
+    use Google\Service\Books\BooksEmpty;
     /**
-     * Add a user-upload volume and triggers processing. (cloudloading.addBook)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string drive_document_id A drive document id. The
-     * upload_client_token must not be set.
-     * @opt_param string mime_type The document MIME type. It can be set only if the
-     * drive_document_id is set.
-     * @opt_param string name The document name. It can be set only if the
-     * drive_document_id is set.
-     * @opt_param string upload_client_token Scotty upload token.
-     * @return BooksCloudloadingResource
-     * @throws \Google\Service\Exception
+     * The "cloudloading" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $cloudloading = $booksService->cloudloading;
+     *  </code>
      */
-    public function addBook($optParams = [])
+    class Cloudloading extends \Google\Service\Resource
     {
+        /**
+         * Add a user-upload volume and triggers processing. (cloudloading.addBook)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string drive_document_id A drive document id. The
+         * upload_client_token must not be set.
+         * @opt_param string mime_type The document MIME type. It can be set only if the
+         * drive_document_id is set.
+         * @opt_param string name The document name. It can be set only if the
+         * drive_document_id is set.
+         * @opt_param string upload_client_token Scotty upload token.
+         * @return BooksCloudloadingResource
+         * @throws \Google\Service\Exception
+         */
+        public function addBook($optParams = [])
+        {
+        }
+        /**
+         * Remove the book and its contents (cloudloading.deleteBook)
+         *
+         * @param string $volumeId The id of the book to be removed.
+         * @param array $optParams Optional parameters.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function deleteBook($volumeId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a user-upload volume. (cloudloading.updateBook)
+         *
+         * @param BooksCloudloadingResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return BooksCloudloadingResource
+         * @throws \Google\Service\Exception
+         */
+        public function updateBook(BooksCloudloadingResource $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Remove the book and its contents (cloudloading.deleteBook)
-     *
-     * @param string $volumeId The id of the book to be removed.
-     * @param array $optParams Optional parameters.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\Cloudloading registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function deleteBook($volumeId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a user-upload volume. (cloudloading.updateBook)
-     *
-     * @param BooksCloudloadingResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return BooksCloudloadingResource
-     * @throws \Google\Service\Exception
-     */
-    public function updateBook(BooksCloudloadingResource $postBody, $optParams = [])
+    class Google_Service_Books_Resource_Cloudloading extends \Google\Service\Books\Resource\Cloudloading
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1IntotoArtifact extends \Google\Model
-{
-    protected $hashesType = ArtifactHashes::class;
-    protected $hashesDataType = '';
-    public $resourceUri;
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1IntotoArtifact extends \Google\Model
+    {
+        protected $hashesType = ArtifactHashes::class;
+        protected $hashesDataType = '';
+        public $resourceUri;
+        /**
+         * @param ArtifactHashes
+         */
+        public function setHashes(ArtifactHashes $hashes)
+        {
+        }
+        /**
+         * @return ArtifactHashes
+         */
+        public function getHashes()
+        {
+        }
+        public function setResourceUri($resourceUri)
+        {
+        }
+        public function getResourceUri()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param ArtifactHashes
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1IntotoArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setHashes(ArtifactHashes $hashes)
-    {
-    }
-    /**
-     * @return ArtifactHashes
-     */
-    public function getHashes()
-    {
-    }
-    public function setResourceUri($resourceUri)
-    {
-    }
-    public function getResourceUri()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1IntotoArtifact extends \Google\Service\ContainerAnalysis\GrafeasV1beta1IntotoArtifact
     {
     }
 }

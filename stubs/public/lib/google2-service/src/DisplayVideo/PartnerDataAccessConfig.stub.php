@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PartnerDataAccessConfig extends \Google\Model
-{
-    protected $sdfConfigType = SdfConfig::class;
-    protected $sdfConfigDataType = '';
-    /**
-     * Structured Data Files (SDF) settings for the partner. The SDF configuration
-     * for the partner.
-     *
-     * @param SdfConfig $sdfConfig
-     */
-    public function setSdfConfig(SdfConfig $sdfConfig)
+namespace Google\Service\DisplayVideo {
+    class PartnerDataAccessConfig extends \Google\Model
     {
+        protected $sdfConfigType = SdfConfig::class;
+        protected $sdfConfigDataType = '';
+        /**
+         * Structured Data Files (SDF) settings for the partner. The SDF configuration
+         * for the partner.
+         *
+         * @param SdfConfig $sdfConfig
+         */
+        public function setSdfConfig(SdfConfig $sdfConfig)
+        {
+        }
+        /**
+         * @return SdfConfig
+         */
+        public function getSdfConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SdfConfig
+     * Runtime class alias of \Google\Service\DisplayVideo\PartnerDataAccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdfConfig()
+    class Google_Service_DisplayVideo_PartnerDataAccessConfig extends \Google\Service\DisplayVideo\PartnerDataAccessConfig
     {
     }
 }

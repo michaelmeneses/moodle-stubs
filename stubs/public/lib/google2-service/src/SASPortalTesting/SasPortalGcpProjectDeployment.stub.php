@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalGcpProjectDeployment extends \Google\Model
-{
-    protected $deploymentType = SasPortalDeployment::class;
-    protected $deploymentDataType = '';
-    /**
-     * Whether SAS analytics has been enabled.
-     *
-     * @var bool
-     */
-    public $hasEnabledAnalytics;
-    /**
-     * Deployment associated with the GCP project.
-     *
-     * @param SasPortalDeployment $deployment
-     */
-    public function setDeployment(SasPortalDeployment $deployment)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalGcpProjectDeployment extends \Google\Model
     {
+        protected $deploymentType = SasPortalDeployment::class;
+        protected $deploymentDataType = '';
+        /**
+         * Whether SAS analytics has been enabled.
+         *
+         * @var bool
+         */
+        public $hasEnabledAnalytics;
+        /**
+         * Deployment associated with the GCP project.
+         *
+         * @param SasPortalDeployment $deployment
+         */
+        public function setDeployment(SasPortalDeployment $deployment)
+        {
+        }
+        /**
+         * @return SasPortalDeployment
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * Whether SAS analytics has been enabled.
+         *
+         * @param bool $hasEnabledAnalytics
+         */
+        public function setHasEnabledAnalytics($hasEnabledAnalytics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasEnabledAnalytics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalDeployment
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalGcpProjectDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * Whether SAS analytics has been enabled.
-     *
-     * @param bool $hasEnabledAnalytics
-     */
-    public function setHasEnabledAnalytics($hasEnabledAnalytics)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasEnabledAnalytics()
+    class Google_Service_SASPortalTesting_SasPortalGcpProjectDeployment extends \Google\Service\SASPortalTesting\SasPortalGcpProjectDeployment
     {
     }
 }

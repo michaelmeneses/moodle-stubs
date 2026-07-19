@@ -8,6 +8,19 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
+use Aws\Api\Validator;
+use Aws\Credentials\CredentialsInterface;
+use Aws\EndpointV2\EndpointProviderV2;
+use Aws\Exception\AwsException;
+use Aws\Signature\DpopSignature;
+use Aws\Signature\S3ExpressSignature;
+use Aws\Token\TokenAuthorization;
+use Aws\Token\TokenInterface;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\LazyOpenStream;
+use Psr\Http\Message\RequestInterface;
 final class Middleware
 {
     /**

@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1ExchangeTokenResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["accessBoundarySessionKey" => "access_boundary_session_key", "accessToken" => "access_token", "expiresIn" => "expires_in", "issuedTokenType" => "issued_token_type", "tokenType" => "token_type"];
-    /**
-     * The access boundary session key. This key is used along with the access
-     * boundary intermediary token to generate Credential Access Boundary tokens
-     * at client side. This field is absent when the `requested_token_type` from
-     * the request is not `urn:ietf:params:oauth:token-
-     * type:access_boundary_intermediary_token`.
-     *
-     * @var string
-     */
-    public $accessBoundarySessionKey;
-    /**
-     * An OAuth 2.0 security token, issued by Google, in response to the token
-     * exchange request. Tokens can vary in size, depending in part on the size of
-     * mapped claims, up to a maximum of 12288 bytes (12 KB). Google reserves the
-     * right to change the token size and the maximum length at any time.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * The amount of time, in seconds, between the time when the access token was
-     * issued and the time when the access token will expire. This field is absent
-     * when the `subject_token` in the request is a a short-lived access token for
-     * a Cloud Identity or Google Workspace user account. In this case, the access
-     * token has the same expiration time as the `subject_token`.
-     *
-     * @var int
-     */
-    public $expiresIn;
-    /**
-     * The token type. Always matches the value of `requested_token_type` from the
-     * request.
-     *
-     * @var string
-     */
-    public $issuedTokenType;
-    /**
-     * The type of access token. Always has the value `Bearer`.
-     *
-     * @var string
-     */
-    public $tokenType;
-    /**
-     * The access boundary session key. This key is used along with the access
-     * boundary intermediary token to generate Credential Access Boundary tokens
-     * at client side. This field is absent when the `requested_token_type` from
-     * the request is not `urn:ietf:params:oauth:token-
-     * type:access_boundary_intermediary_token`.
-     *
-     * @param string $accessBoundarySessionKey
-     */
-    public function setAccessBoundarySessionKey($accessBoundarySessionKey)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1ExchangeTokenResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["accessBoundarySessionKey" => "access_boundary_session_key", "accessToken" => "access_token", "expiresIn" => "expires_in", "issuedTokenType" => "issued_token_type", "tokenType" => "token_type"];
+        /**
+         * The access boundary session key. This key is used along with the access
+         * boundary intermediary token to generate Credential Access Boundary tokens
+         * at client side. This field is absent when the `requested_token_type` from
+         * the request is not `urn:ietf:params:oauth:token-
+         * type:access_boundary_intermediary_token`.
+         *
+         * @var string
+         */
+        public $accessBoundarySessionKey;
+        /**
+         * An OAuth 2.0 security token, issued by Google, in response to the token
+         * exchange request. Tokens can vary in size, depending in part on the size of
+         * mapped claims, up to a maximum of 12288 bytes (12 KB). Google reserves the
+         * right to change the token size and the maximum length at any time.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * The amount of time, in seconds, between the time when the access token was
+         * issued and the time when the access token will expire. This field is absent
+         * when the `subject_token` in the request is a a short-lived access token for
+         * a Cloud Identity or Google Workspace user account. In this case, the access
+         * token has the same expiration time as the `subject_token`.
+         *
+         * @var int
+         */
+        public $expiresIn;
+        /**
+         * The token type. Always matches the value of `requested_token_type` from the
+         * request.
+         *
+         * @var string
+         */
+        public $issuedTokenType;
+        /**
+         * The type of access token. Always has the value `Bearer`.
+         *
+         * @var string
+         */
+        public $tokenType;
+        /**
+         * The access boundary session key. This key is used along with the access
+         * boundary intermediary token to generate Credential Access Boundary tokens
+         * at client side. This field is absent when the `requested_token_type` from
+         * the request is not `urn:ietf:params:oauth:token-
+         * type:access_boundary_intermediary_token`.
+         *
+         * @param string $accessBoundarySessionKey
+         */
+        public function setAccessBoundarySessionKey($accessBoundarySessionKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessBoundarySessionKey()
+        {
+        }
+        /**
+         * An OAuth 2.0 security token, issued by Google, in response to the token
+         * exchange request. Tokens can vary in size, depending in part on the size of
+         * mapped claims, up to a maximum of 12288 bytes (12 KB). Google reserves the
+         * right to change the token size and the maximum length at any time.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * The amount of time, in seconds, between the time when the access token was
+         * issued and the time when the access token will expire. This field is absent
+         * when the `subject_token` in the request is a a short-lived access token for
+         * a Cloud Identity or Google Workspace user account. In this case, the access
+         * token has the same expiration time as the `subject_token`.
+         *
+         * @param int $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * The token type. Always matches the value of `requested_token_type` from the
+         * request.
+         *
+         * @param string $issuedTokenType
+         */
+        public function setIssuedTokenType($issuedTokenType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuedTokenType()
+        {
+        }
+        /**
+         * The type of access token. Always has the value `Bearer`.
+         *
+         * @param string $tokenType
+         */
+        public function setTokenType($tokenType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessBoundarySessionKey()
-    {
-    }
-    /**
-     * An OAuth 2.0 security token, issued by Google, in response to the token
-     * exchange request. Tokens can vary in size, depending in part on the size of
-     * mapped claims, up to a maximum of 12288 bytes (12 KB). Google reserves the
-     * right to change the token size and the maximum length at any time.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * The amount of time, in seconds, between the time when the access token was
-     * issued and the time when the access token will expire. This field is absent
-     * when the `subject_token` in the request is a a short-lived access token for
-     * a Cloud Identity or Google Workspace user account. In this case, the access
-     * token has the same expiration time as the `subject_token`.
-     *
-     * @param int $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * The token type. Always matches the value of `requested_token_type` from the
-     * request.
-     *
-     * @param string $issuedTokenType
-     */
-    public function setIssuedTokenType($issuedTokenType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuedTokenType()
-    {
-    }
-    /**
-     * The type of access token. Always has the value `Bearer`.
-     *
-     * @param string $tokenType
-     */
-    public function setTokenType($tokenType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenType()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1ExchangeTokenResponse extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeTokenResponse
     {
     }
 }

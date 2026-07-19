@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'slices';
-    /**
-     * Required. The location of the data.
-     * "projects/{project}/locations/{location}"
-     *
-     * @var string
-     */
-    public $location;
-    protected $macroAverageSliceType = GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice::class;
-    protected $macroAverageSliceDataType = '';
-    protected $slicesType = GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice::class;
-    protected $slicesDataType = 'array';
-    /**
-     * The metrics last update time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. The location of the data.
-     * "projects/{project}/locations/{location}"
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'slices';
+        /**
+         * Required. The location of the data.
+         * "projects/{project}/locations/{location}"
+         *
+         * @var string
+         */
+        public $location;
+        protected $macroAverageSliceType = GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice::class;
+        protected $macroAverageSliceDataType = '';
+        protected $slicesType = GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice::class;
+        protected $slicesDataType = 'array';
+        /**
+         * The metrics last update time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. The location of the data.
+         * "projects/{project}/locations/{location}"
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The macro average slice contains aggregated averages across all selected
+         * dimensions. i.e. if group_by agent and scorecard_id is specified, this
+         * field will contain the average across all agents and all scorecards. This
+         * field is only populated if the request specifies a Dimension.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice $macroAverageSlice
+         */
+        public function setMacroAverageSlice(GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice $macroAverageSlice)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice
+         */
+        public function getMacroAverageSlice()
+        {
+        }
+        /**
+         * A slice contains a total and (if the request specified a time granularity)
+         * a time series of metric values. Each slice contains a unique combination of
+         * the cardinality of dimensions from the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice[] $slices
+         */
+        public function setSlices($slices)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice[]
+         */
+        public function getSlices()
+        {
+        }
+        /**
+         * The metrics last update time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The macro average slice contains aggregated averages across all selected
-     * dimensions. i.e. if group_by agent and scorecard_id is specified, this
-     * field will contain the average across all agents and all scorecards. This
-     * field is only populated if the request specifies a Dimension.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice $macroAverageSlice
-     */
-    public function setMacroAverageSlice(GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice $macroAverageSlice)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice
-     */
-    public function getMacroAverageSlice()
-    {
-    }
-    /**
-     * A slice contains a total and (if the request specified a time granularity)
-     * a time series of metric values. Each slice contains a unique combination of
-     * the cardinality of dimensions from the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice[] $slices
-     */
-    public function setSlices($slices)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponseSlice[]
-     */
-    public function getSlices()
-    {
-    }
-    /**
-     * The metrics last update time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1QueryMetricsResponse
     {
     }
 }

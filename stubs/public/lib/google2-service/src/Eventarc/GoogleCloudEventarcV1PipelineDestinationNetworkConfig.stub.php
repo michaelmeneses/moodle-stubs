@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineDestinationNetworkConfig extends \Google\Model
-{
-    /**
-     * Required. Name of the NetworkAttachment that allows access to the consumer
-     * VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NE
-     * TWORK_ATTACHMENT_NAME}`
-     *
-     * @var string
-     */
-    public $networkAttachment;
-    /**
-     * Required. Name of the NetworkAttachment that allows access to the consumer
-     * VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NE
-     * TWORK_ATTACHMENT_NAME}`
-     *
-     * @param string $networkAttachment
-     */
-    public function setNetworkAttachment($networkAttachment)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineDestinationNetworkConfig extends \Google\Model
     {
+        /**
+         * Required. Name of the NetworkAttachment that allows access to the consumer
+         * VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NE
+         * TWORK_ATTACHMENT_NAME}`
+         *
+         * @var string
+         */
+        public $networkAttachment;
+        /**
+         * Required. Name of the NetworkAttachment that allows access to the consumer
+         * VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NE
+         * TWORK_ATTACHMENT_NAME}`
+         *
+         * @param string $networkAttachment
+         */
+        public function setNetworkAttachment($networkAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineDestinationNetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkAttachment()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineDestinationNetworkConfig extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineDestinationNetworkConfig
     {
     }
 }

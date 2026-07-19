@@ -21,68 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck\Resource;
-
-/**
- * The "safetyNetConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
- *   $safetyNetConfig = $firebaseappcheckService->projects_apps_safetyNetConfig;
- *  </code>
- */
-class ProjectsAppsSafetyNetConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Firebaseappcheck\Resource {
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse;
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1SafetyNetConfig;
     /**
-     * Atomically gets the SafetyNetConfigs for the specified list of apps.
-     * (safetyNetConfig.batchGet)
-     *
-     * @param string $parent Required. The parent project name shared by all
-     * SafetyNetConfigs being retrieved, in the format ``` projects/{project_number}
-     * ``` The parent collection in the `name` field of any resource being retrieved
-     * must match this field, or the entire batch fails.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string names Required. The relative resource names of the
-     * SafetyNetConfigs to retrieve, in the format ```
-     * projects/{project_number}/apps/{app_id}/safetyNetConfig ``` A maximum of 100
-     * objects can be retrieved in a batch.
-     * @return GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse
-     * @throws \Google\Service\Exception
+     * The "safetyNetConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
+     *   $safetyNetConfig = $firebaseappcheckService->projects_apps_safetyNetConfig;
+     *  </code>
      */
-    public function batchGet($parent, $optParams = [])
+    class ProjectsAppsSafetyNetConfig extends \Google\Service\Resource
     {
+        /**
+         * Atomically gets the SafetyNetConfigs for the specified list of apps.
+         * (safetyNetConfig.batchGet)
+         *
+         * @param string $parent Required. The parent project name shared by all
+         * SafetyNetConfigs being retrieved, in the format ``` projects/{project_number}
+         * ``` The parent collection in the `name` field of any resource being retrieved
+         * must match this field, or the entire batch fails.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string names Required. The relative resource names of the
+         * SafetyNetConfigs to retrieve, in the format ```
+         * projects/{project_number}/apps/{app_id}/safetyNetConfig ``` A maximum of 100
+         * objects can be retrieved in a batch.
+         * @return GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet($parent, $optParams = [])
+        {
+        }
+        /**
+         * Gets the SafetyNetConfig for the specified app. (safetyNetConfig.get)
+         *
+         * @param string $name Required. The relative resource name of the
+         * SafetyNetConfig, in the format: ```
+         * projects/{project_number}/apps/{app_id}/safetyNetConfig ```
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppcheckV1SafetyNetConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the SafetyNetConfig for the specified app. While this configuration
+         * is incomplete or invalid, the app will be unable to exchange SafetyNet tokens
+         * for App Check tokens. (safetyNetConfig.patch)
+         *
+         * @param string $name Required. The relative resource name of the SafetyNet
+         * configuration object, in the format: ```
+         * projects/{project_number}/apps/{app_id}/safetyNetConfig ```
+         * @param GoogleFirebaseAppcheckV1SafetyNetConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A comma-separated list of names of
+         * fields in the SafetyNetConfig to update. Example: `token_ttl`.
+         * @return GoogleFirebaseAppcheckV1SafetyNetConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleFirebaseAppcheckV1SafetyNetConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the SafetyNetConfig for the specified app. (safetyNetConfig.get)
-     *
-     * @param string $name Required. The relative resource name of the
-     * SafetyNetConfig, in the format: ```
-     * projects/{project_number}/apps/{app_id}/safetyNetConfig ```
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppcheckV1SafetyNetConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firebaseappcheck\Resource\ProjectsAppsSafetyNetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the SafetyNetConfig for the specified app. While this configuration
-     * is incomplete or invalid, the app will be unable to exchange SafetyNet tokens
-     * for App Check tokens. (safetyNetConfig.patch)
-     *
-     * @param string $name Required. The relative resource name of the SafetyNet
-     * configuration object, in the format: ```
-     * projects/{project_number}/apps/{app_id}/safetyNetConfig ```
-     * @param GoogleFirebaseAppcheckV1SafetyNetConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A comma-separated list of names of
-     * fields in the SafetyNetConfig to update. Example: `token_ttl`.
-     * @return GoogleFirebaseAppcheckV1SafetyNetConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleFirebaseAppcheckV1SafetyNetConfig $postBody, $optParams = [])
+    class Google_Service_Firebaseappcheck_Resource_ProjectsAppsSafetyNetConfig extends \Google\Service\Firebaseappcheck\Resource\ProjectsAppsSafetyNetConfig
     {
     }
 }

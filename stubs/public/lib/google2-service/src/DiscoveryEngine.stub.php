@@ -21,113 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DiscoveryEngine (v1).
- *
- * <p>
- * Discovery Engine API.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/generative-ai-app-builder/docs/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DiscoveryEngine extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Search your organization's data in the Cloud Search index. */
-    const CLOUD_SEARCH_QUERY = "https://www.googleapis.com/auth/cloud_search.query";
-    /** View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.. */
-    const DISCOVERYENGINE_ASSIST_READWRITE = "https://www.googleapis.com/auth/discoveryengine.assist.readwrite";
-    /** View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.. */
-    const DISCOVERYENGINE_READWRITE = "https://www.googleapis.com/auth/discoveryengine.readwrite";
-    public $projects;
-    public $projects_locations;
-    public $projects_locations_cmekConfigs;
-    public $projects_locations_collections;
-    public $projects_locations_collections_dataConnector_operations;
-    public $projects_locations_collections_dataStores;
-    public $projects_locations_collections_dataStores_branches;
-    public $projects_locations_collections_dataStores_branches_documents;
-    public $projects_locations_collections_dataStores_branches_operations;
-    public $projects_locations_collections_dataStores_completionConfig;
-    public $projects_locations_collections_dataStores_completionSuggestions;
-    public $projects_locations_collections_dataStores_controls;
-    public $projects_locations_collections_dataStores_conversations;
-    public $projects_locations_collections_dataStores_customModels;
-    public $projects_locations_collections_dataStores_models_operations;
-    public $projects_locations_collections_dataStores_operations;
-    public $projects_locations_collections_dataStores_schemas;
-    public $projects_locations_collections_dataStores_schemas_operations;
-    public $projects_locations_collections_dataStores_servingConfigs;
-    public $projects_locations_collections_dataStores_sessions;
-    public $projects_locations_collections_dataStores_sessions_answers;
-    public $projects_locations_collections_dataStores_siteSearchEngine;
-    public $projects_locations_collections_dataStores_siteSearchEngine_operations;
-    public $projects_locations_collections_dataStores_siteSearchEngine_sitemaps;
-    public $projects_locations_collections_dataStores_siteSearchEngine_targetSites;
-    public $projects_locations_collections_dataStores_siteSearchEngine_targetSites_operations;
-    public $projects_locations_collections_dataStores_suggestionDenyListEntries;
-    public $projects_locations_collections_dataStores_userEvents;
-    public $projects_locations_collections_dataStores_widgetConfigs;
-    public $projects_locations_collections_engines;
-    public $projects_locations_collections_engines_assistants;
-    public $projects_locations_collections_engines_assistants_agents_operations;
-    public $projects_locations_collections_engines_completionConfig;
-    public $projects_locations_collections_engines_controls;
-    public $projects_locations_collections_engines_conversations;
-    public $projects_locations_collections_engines_operations;
-    public $projects_locations_collections_engines_servingConfigs;
-    public $projects_locations_collections_engines_sessions;
-    public $projects_locations_collections_engines_sessions_answers;
-    public $projects_locations_collections_engines_widgetConfigs;
-    public $projects_locations_collections_operations;
-    public $projects_locations_dataStores;
-    public $projects_locations_dataStores_branches;
-    public $projects_locations_dataStores_branches_documents;
-    public $projects_locations_dataStores_branches_operations;
-    public $projects_locations_dataStores_completionConfig;
-    public $projects_locations_dataStores_completionSuggestions;
-    public $projects_locations_dataStores_controls;
-    public $projects_locations_dataStores_conversations;
-    public $projects_locations_dataStores_models_operations;
-    public $projects_locations_dataStores_operations;
-    public $projects_locations_dataStores_schemas;
-    public $projects_locations_dataStores_servingConfigs;
-    public $projects_locations_dataStores_sessions;
-    public $projects_locations_dataStores_sessions_answers;
-    public $projects_locations_dataStores_siteSearchEngine;
-    public $projects_locations_dataStores_siteSearchEngine_sitemaps;
-    public $projects_locations_dataStores_siteSearchEngine_targetSites;
-    public $projects_locations_dataStores_suggestionDenyListEntries;
-    public $projects_locations_dataStores_userEvents;
-    public $projects_locations_dataStores_widgetConfigs;
-    public $projects_locations_groundingConfigs;
-    public $projects_locations_identityMappingStores;
-    public $projects_locations_identityMappingStores_operations;
-    public $projects_locations_licenseConfigs;
-    public $projects_locations_operations;
-    public $projects_locations_podcasts_operations;
-    public $projects_locations_rankingConfigs;
-    public $projects_locations_userEvents;
-    public $projects_locations_userStores;
-    public $projects_locations_userStores_licenseConfigsUsageStats;
-    public $projects_locations_userStores_userLicenses;
-    public $projects_operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DiscoveryEngine service.
+     * Service definition for DiscoveryEngine (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Discovery Engine API.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/generative-ai-app-builder/docs/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DiscoveryEngine extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Search your organization's data in the Cloud Search index. */
+        const CLOUD_SEARCH_QUERY = "https://www.googleapis.com/auth/cloud_search.query";
+        /** View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.. */
+        const DISCOVERYENGINE_ASSIST_READWRITE = "https://www.googleapis.com/auth/discoveryengine.assist.readwrite";
+        /** View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.. */
+        const DISCOVERYENGINE_READWRITE = "https://www.googleapis.com/auth/discoveryengine.readwrite";
+        public $projects;
+        public $projects_locations;
+        public $projects_locations_cmekConfigs;
+        public $projects_locations_collections;
+        public $projects_locations_collections_dataConnector_operations;
+        public $projects_locations_collections_dataStores;
+        public $projects_locations_collections_dataStores_branches;
+        public $projects_locations_collections_dataStores_branches_documents;
+        public $projects_locations_collections_dataStores_branches_operations;
+        public $projects_locations_collections_dataStores_completionConfig;
+        public $projects_locations_collections_dataStores_completionSuggestions;
+        public $projects_locations_collections_dataStores_controls;
+        public $projects_locations_collections_dataStores_conversations;
+        public $projects_locations_collections_dataStores_customModels;
+        public $projects_locations_collections_dataStores_models_operations;
+        public $projects_locations_collections_dataStores_operations;
+        public $projects_locations_collections_dataStores_schemas;
+        public $projects_locations_collections_dataStores_schemas_operations;
+        public $projects_locations_collections_dataStores_servingConfigs;
+        public $projects_locations_collections_dataStores_sessions;
+        public $projects_locations_collections_dataStores_sessions_answers;
+        public $projects_locations_collections_dataStores_siteSearchEngine;
+        public $projects_locations_collections_dataStores_siteSearchEngine_operations;
+        public $projects_locations_collections_dataStores_siteSearchEngine_sitemaps;
+        public $projects_locations_collections_dataStores_siteSearchEngine_targetSites;
+        public $projects_locations_collections_dataStores_siteSearchEngine_targetSites_operations;
+        public $projects_locations_collections_dataStores_suggestionDenyListEntries;
+        public $projects_locations_collections_dataStores_userEvents;
+        public $projects_locations_collections_dataStores_widgetConfigs;
+        public $projects_locations_collections_engines;
+        public $projects_locations_collections_engines_assistants;
+        public $projects_locations_collections_engines_assistants_agents_operations;
+        public $projects_locations_collections_engines_completionConfig;
+        public $projects_locations_collections_engines_controls;
+        public $projects_locations_collections_engines_conversations;
+        public $projects_locations_collections_engines_operations;
+        public $projects_locations_collections_engines_servingConfigs;
+        public $projects_locations_collections_engines_sessions;
+        public $projects_locations_collections_engines_sessions_answers;
+        public $projects_locations_collections_engines_widgetConfigs;
+        public $projects_locations_collections_operations;
+        public $projects_locations_dataStores;
+        public $projects_locations_dataStores_branches;
+        public $projects_locations_dataStores_branches_documents;
+        public $projects_locations_dataStores_branches_operations;
+        public $projects_locations_dataStores_completionConfig;
+        public $projects_locations_dataStores_completionSuggestions;
+        public $projects_locations_dataStores_controls;
+        public $projects_locations_dataStores_conversations;
+        public $projects_locations_dataStores_models_operations;
+        public $projects_locations_dataStores_operations;
+        public $projects_locations_dataStores_schemas;
+        public $projects_locations_dataStores_servingConfigs;
+        public $projects_locations_dataStores_sessions;
+        public $projects_locations_dataStores_sessions_answers;
+        public $projects_locations_dataStores_siteSearchEngine;
+        public $projects_locations_dataStores_siteSearchEngine_sitemaps;
+        public $projects_locations_dataStores_siteSearchEngine_targetSites;
+        public $projects_locations_dataStores_suggestionDenyListEntries;
+        public $projects_locations_dataStores_userEvents;
+        public $projects_locations_dataStores_widgetConfigs;
+        public $projects_locations_groundingConfigs;
+        public $projects_locations_identityMappingStores;
+        public $projects_locations_identityMappingStores_operations;
+        public $projects_locations_licenseConfigs;
+        public $projects_locations_operations;
+        public $projects_locations_podcasts_operations;
+        public $projects_locations_rankingConfigs;
+        public $projects_locations_userEvents;
+        public $projects_locations_userStores;
+        public $projects_locations_userStores_licenseConfigsUsageStats;
+        public $projects_locations_userStores_userLicenses;
+        public $projects_operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DiscoveryEngine service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine extends \Google\Service\DiscoveryEngine
     {
     }
 }

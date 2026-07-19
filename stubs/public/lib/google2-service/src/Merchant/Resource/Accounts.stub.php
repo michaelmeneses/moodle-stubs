@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $merchantapiService = new Google\Service\Merchant(...);
- *   $accounts = $merchantapiService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\Merchant\Resource {
+    /**
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $merchantapiService = new Google\Service\Merchant(...);
+     *   $accounts = $merchantapiService->accounts;
+     *  </code>
+     */
+    class Accounts extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Merchant\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Merchant_Resource_Accounts extends \Google\Service\Merchant\Resource\Accounts
+    {
+    }
 }

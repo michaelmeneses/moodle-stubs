@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis\Resource;
-
-/**
- * The "occurrences" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
- *   $occurrences = $containeranalysisService->projects_notes_occurrences;
- *  </code>
- */
-class ProjectsNotesOccurrences extends \Google\Service\Resource
-{
+namespace Google\Service\ContainerAnalysis\Resource {
+    use Google\Service\ContainerAnalysis\ListNoteOccurrencesResponse;
     /**
-     * Lists occurrences referencing the specified note. Provider projects can use
-     * this method to get all occurrences across consumer projects referencing the
-     * specified note. (occurrences.listProjectsNotesOccurrences)
-     *
-     * @param string $name Required. The name of the note to list occurrences for in
-     * the form of `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression.
-     * @opt_param int pageSize Number of occurrences to return in the list.
-     * @opt_param string pageToken Token to provide to skip to a particular spot in
-     * the list.
-     * @return ListNoteOccurrencesResponse
-     * @throws \Google\Service\Exception
+     * The "occurrences" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
+     *   $occurrences = $containeranalysisService->projects_notes_occurrences;
+     *  </code>
      */
-    public function listProjectsNotesOccurrences($name, $optParams = [])
+    class ProjectsNotesOccurrences extends \Google\Service\Resource
+    {
+        /**
+         * Lists occurrences referencing the specified note. Provider projects can use
+         * this method to get all occurrences across consumer projects referencing the
+         * specified note. (occurrences.listProjectsNotesOccurrences)
+         *
+         * @param string $name Required. The name of the note to list occurrences for in
+         * the form of `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression.
+         * @opt_param int pageSize Number of occurrences to return in the list.
+         * @opt_param string pageToken Token to provide to skip to a particular spot in
+         * the list.
+         * @return ListNoteOccurrencesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsNotesOccurrences($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Resource\ProjectsNotesOccurrences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_Resource_ProjectsNotesOccurrences extends \Google\Service\ContainerAnalysis\Resource\ProjectsNotesOccurrences
     {
     }
 }

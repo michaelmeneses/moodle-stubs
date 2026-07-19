@@ -21,88 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "rules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $rules = $artifactregistryService->projects_locations_repositories_rules;
- *  </code>
- */
-class ProjectsLocationsRepositoriesRules extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ArtifactregistryEmpty;
+    use Google\Service\ArtifactRegistry\GoogleDevtoolsArtifactregistryV1Rule;
+    use Google\Service\ArtifactRegistry\ListRulesResponse;
     /**
-     * Creates a rule. (rules.create)
-     *
-     * @param string $parent Required. The name of the parent resource where the
-     * rule will be created.
-     * @param GoogleDevtoolsArtifactregistryV1Rule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ruleId The rule id to use for this repository.
-     * @return GoogleDevtoolsArtifactregistryV1Rule
-     * @throws \Google\Service\Exception
+     * The "rules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $rules = $artifactregistryService->projects_locations_repositories_rules;
+     *  </code>
      */
-    public function create($parent, GoogleDevtoolsArtifactregistryV1Rule $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesRules extends \Google\Service\Resource
     {
+        /**
+         * Creates a rule. (rules.create)
+         *
+         * @param string $parent Required. The name of the parent resource where the
+         * rule will be created.
+         * @param GoogleDevtoolsArtifactregistryV1Rule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ruleId The rule id to use for this repository.
+         * @return GoogleDevtoolsArtifactregistryV1Rule
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleDevtoolsArtifactregistryV1Rule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a rule. (rules.delete)
+         *
+         * @param string $name Required. The name of the rule to delete.
+         * @param array $optParams Optional parameters.
+         * @return ArtifactregistryEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a rule. (rules.get)
+         *
+         * @param string $name Required. The name of the rule to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return GoogleDevtoolsArtifactregistryV1Rule
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists rules. (rules.listProjectsLocationsRepositoriesRules)
+         *
+         * @param string $parent Required. The name of the parent repository whose rules
+         * will be listed. For example: `projects/p1/locations/us-
+         * central1/repositories/repo1`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of rules to return. Maximum page
+         * size is 1,000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request, if any.
+         * @return ListRulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesRules($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a rule. (rules.patch)
+         *
+         * @param string $name The name of the rule, for example:
+         * `projects/p1/locations/us-central1/repositories/repo1/rules/rule1`.
+         * @param GoogleDevtoolsArtifactregistryV1Rule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The update mask applies to the resource. For the
+         * `FieldMask` definition, see https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask
+         * @return GoogleDevtoolsArtifactregistryV1Rule
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleDevtoolsArtifactregistryV1Rule $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a rule. (rules.delete)
-     *
-     * @param string $name Required. The name of the rule to delete.
-     * @param array $optParams Optional parameters.
-     * @return ArtifactregistryEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a rule. (rules.get)
-     *
-     * @param string $name Required. The name of the rule to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return GoogleDevtoolsArtifactregistryV1Rule
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists rules. (rules.listProjectsLocationsRepositoriesRules)
-     *
-     * @param string $parent Required. The name of the parent repository whose rules
-     * will be listed. For example: `projects/p1/locations/us-
-     * central1/repositories/repo1`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of rules to return. Maximum page
-     * size is 1,000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request, if any.
-     * @return ListRulesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesRules($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a rule. (rules.patch)
-     *
-     * @param string $name The name of the rule, for example:
-     * `projects/p1/locations/us-central1/repositories/repo1/rules/rule1`.
-     * @param GoogleDevtoolsArtifactregistryV1Rule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The update mask applies to the resource. For the
-     * `FieldMask` definition, see https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask
-     * @return GoogleDevtoolsArtifactregistryV1Rule
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleDevtoolsArtifactregistryV1Rule $postBody, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesRules extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesRules
     {
     }
 }

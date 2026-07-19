@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListContextsResponse extends \Google\Collection
-{
-    protected $collection_key = 'contexts';
-    protected $contextsType = GoogleCloudAiplatformV1Context::class;
-    protected $contextsDataType = 'array';
-    /**
-     * A token, which can be sent as ListContextsRequest.page_token to retrieve
-     * the next page. If this field is not populated, there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Contexts retrieved from the MetadataStore.
-     *
-     * @param GoogleCloudAiplatformV1Context[] $contexts
-     */
-    public function setContexts($contexts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListContextsResponse extends \Google\Collection
     {
+        protected $collection_key = 'contexts';
+        protected $contextsType = GoogleCloudAiplatformV1Context::class;
+        protected $contextsDataType = 'array';
+        /**
+         * A token, which can be sent as ListContextsRequest.page_token to retrieve
+         * the next page. If this field is not populated, there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Contexts retrieved from the MetadataStore.
+         *
+         * @param GoogleCloudAiplatformV1Context[] $contexts
+         */
+        public function setContexts($contexts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Context[]
+         */
+        public function getContexts()
+        {
+        }
+        /**
+         * A token, which can be sent as ListContextsRequest.page_token to retrieve
+         * the next page. If this field is not populated, there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Context[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListContextsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContexts()
-    {
-    }
-    /**
-     * A token, which can be sent as ListContextsRequest.page_token to retrieve
-     * the next page. If this field is not populated, there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListContextsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListContextsResponse
     {
     }
 }

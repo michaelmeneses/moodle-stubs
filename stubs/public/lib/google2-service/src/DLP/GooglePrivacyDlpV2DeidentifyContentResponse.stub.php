@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeidentifyContentResponse extends \Google\Model
-{
-    protected $itemType = GooglePrivacyDlpV2ContentItem::class;
-    protected $itemDataType = '';
-    protected $overviewType = GooglePrivacyDlpV2TransformationOverview::class;
-    protected $overviewDataType = '';
-    /**
-     * The de-identified item.
-     *
-     * @param GooglePrivacyDlpV2ContentItem $item
-     */
-    public function setItem(GooglePrivacyDlpV2ContentItem $item)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeidentifyContentResponse extends \Google\Model
     {
+        protected $itemType = GooglePrivacyDlpV2ContentItem::class;
+        protected $itemDataType = '';
+        protected $overviewType = GooglePrivacyDlpV2TransformationOverview::class;
+        protected $overviewDataType = '';
+        /**
+         * The de-identified item.
+         *
+         * @param GooglePrivacyDlpV2ContentItem $item
+         */
+        public function setItem(GooglePrivacyDlpV2ContentItem $item)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ContentItem
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * An overview of the changes that were made on the `item`.
+         *
+         * @param GooglePrivacyDlpV2TransformationOverview $overview
+         */
+        public function setOverview(GooglePrivacyDlpV2TransformationOverview $overview)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TransformationOverview
+         */
+        public function getOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ContentItem
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItem()
-    {
-    }
-    /**
-     * An overview of the changes that were made on the `item`.
-     *
-     * @param GooglePrivacyDlpV2TransformationOverview $overview
-     */
-    public function setOverview(GooglePrivacyDlpV2TransformationOverview $overview)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TransformationOverview
-     */
-    public function getOverview()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeidentifyContentResponse extends \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyContentResponse
     {
     }
 }

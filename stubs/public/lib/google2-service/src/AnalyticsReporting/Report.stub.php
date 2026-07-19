@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class Report extends \Google\Model
-{
-    protected $columnHeaderType = ColumnHeader::class;
-    protected $columnHeaderDataType = '';
-    protected $dataType = ReportData::class;
-    protected $dataDataType = '';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param ColumnHeader
-     */
-    public function setColumnHeader(ColumnHeader $columnHeader)
+namespace Google\Service\AnalyticsReporting {
+    class Report extends \Google\Model
     {
+        protected $columnHeaderType = ColumnHeader::class;
+        protected $columnHeaderDataType = '';
+        protected $dataType = ReportData::class;
+        protected $dataDataType = '';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param ColumnHeader
+         */
+        public function setColumnHeader(ColumnHeader $columnHeader)
+        {
+        }
+        /**
+         * @return ColumnHeader
+         */
+        public function getColumnHeader()
+        {
+        }
+        /**
+         * @param ReportData
+         */
+        public function setData(ReportData $data)
+        {
+        }
+        /**
+         * @return ReportData
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColumnHeader
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Report registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnHeader()
-    {
-    }
-    /**
-     * @param ReportData
-     */
-    public function setData(ReportData $data)
-    {
-    }
-    /**
-     * @return ReportData
-     */
-    public function getData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AnalyticsReporting_Report extends \Google\Service\AnalyticsReporting\Report
     {
     }
 }

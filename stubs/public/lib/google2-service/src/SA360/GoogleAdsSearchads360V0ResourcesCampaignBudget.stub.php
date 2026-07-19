@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCampaignBudget extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const DELIVERY_METHOD_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const DELIVERY_METHOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * The budget server will throttle serving evenly across the entire time
-     * period.
-     */
-    public const DELIVERY_METHOD_STANDARD = 'STANDARD';
-    /**
-     * The budget server will not throttle serving, and ads will serve as fast as
-     * possible.
-     */
-    public const DELIVERY_METHOD_ACCELERATED = 'ACCELERATED';
-    /**
-     * Not specified.
-     */
-    public const PERIOD_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const PERIOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * Daily budget.
-     */
-    public const PERIOD_DAILY = 'DAILY';
-    /**
-     * Fixed daily budget.
-     */
-    public const PERIOD_FIXED_DAILY = 'FIXED_DAILY';
-    /**
-     * Custom budget can be used with total_amount to specify lifetime budget
-     * limit.
-     */
-    public const PERIOD_CUSTOM_PERIOD = 'CUSTOM_PERIOD';
-    /**
-     * The amount of the budget, in the local currency for the account. Amount is
-     * specified in micros, where one million is equivalent to one currency unit.
-     * Monthly spend is capped at 30.4 times this amount.
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * The delivery method that determines the rate at which the campaign budget
-     * is spent. Defaults to STANDARD if unspecified in a create operation.
-     *
-     * @var string
-     */
-    public $deliveryMethod;
-    /**
-     * Immutable. Period over which to spend the budget. Defaults to DAILY if not
-     * specified.
-     *
-     * @var string
-     */
-    public $period;
-    /**
-     * Immutable. The resource name of the campaign budget. Campaign budget
-     * resource names have the form:
-     * `customers/{customer_id}/campaignBudgets/{campaign_budget_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * The amount of the budget, in the local currency for the account. Amount is
-     * specified in micros, where one million is equivalent to one currency unit.
-     * Monthly spend is capped at 30.4 times this amount.
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCampaignBudget extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const DELIVERY_METHOD_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const DELIVERY_METHOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * The budget server will throttle serving evenly across the entire time
+         * period.
+         */
+        public const DELIVERY_METHOD_STANDARD = 'STANDARD';
+        /**
+         * The budget server will not throttle serving, and ads will serve as fast as
+         * possible.
+         */
+        public const DELIVERY_METHOD_ACCELERATED = 'ACCELERATED';
+        /**
+         * Not specified.
+         */
+        public const PERIOD_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const PERIOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * Daily budget.
+         */
+        public const PERIOD_DAILY = 'DAILY';
+        /**
+         * Fixed daily budget.
+         */
+        public const PERIOD_FIXED_DAILY = 'FIXED_DAILY';
+        /**
+         * Custom budget can be used with total_amount to specify lifetime budget
+         * limit.
+         */
+        public const PERIOD_CUSTOM_PERIOD = 'CUSTOM_PERIOD';
+        /**
+         * The amount of the budget, in the local currency for the account. Amount is
+         * specified in micros, where one million is equivalent to one currency unit.
+         * Monthly spend is capped at 30.4 times this amount.
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * The delivery method that determines the rate at which the campaign budget
+         * is spent. Defaults to STANDARD if unspecified in a create operation.
+         *
+         * @var string
+         */
+        public $deliveryMethod;
+        /**
+         * Immutable. Period over which to spend the budget. Defaults to DAILY if not
+         * specified.
+         *
+         * @var string
+         */
+        public $period;
+        /**
+         * Immutable. The resource name of the campaign budget. Campaign budget
+         * resource names have the form:
+         * `customers/{customer_id}/campaignBudgets/{campaign_budget_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * The amount of the budget, in the local currency for the account. Amount is
+         * specified in micros, where one million is equivalent to one currency unit.
+         * Monthly spend is capped at 30.4 times this amount.
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * The delivery method that determines the rate at which the campaign budget
+         * is spent. Defaults to STANDARD if unspecified in a create operation.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, STANDARD, ACCELERATED
+         *
+         * @param self::DELIVERY_METHOD_* $deliveryMethod
+         */
+        public function setDeliveryMethod($deliveryMethod)
+        {
+        }
+        /**
+         * @return self::DELIVERY_METHOD_*
+         */
+        public function getDeliveryMethod()
+        {
+        }
+        /**
+         * Immutable. Period over which to spend the budget. Defaults to DAILY if not
+         * specified.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, DAILY, FIXED_DAILY, CUSTOM_PERIOD
+         *
+         * @param self::PERIOD_* $period
+         */
+        public function setPeriod($period)
+        {
+        }
+        /**
+         * @return self::PERIOD_*
+         */
+        public function getPeriod()
+        {
+        }
+        /**
+         * Immutable. The resource name of the campaign budget. Campaign budget
+         * resource names have the form:
+         * `customers/{customer_id}/campaignBudgets/{campaign_budget_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignBudget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * The delivery method that determines the rate at which the campaign budget
-     * is spent. Defaults to STANDARD if unspecified in a create operation.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, STANDARD, ACCELERATED
-     *
-     * @param self::DELIVERY_METHOD_* $deliveryMethod
-     */
-    public function setDeliveryMethod($deliveryMethod)
-    {
-    }
-    /**
-     * @return self::DELIVERY_METHOD_*
-     */
-    public function getDeliveryMethod()
-    {
-    }
-    /**
-     * Immutable. Period over which to spend the budget. Defaults to DAILY if not
-     * specified.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, DAILY, FIXED_DAILY, CUSTOM_PERIOD
-     *
-     * @param self::PERIOD_* $period
-     */
-    public function setPeriod($period)
-    {
-    }
-    /**
-     * @return self::PERIOD_*
-     */
-    public function getPeriod()
-    {
-    }
-    /**
-     * Immutable. The resource name of the campaign budget. Campaign budget
-     * resource names have the form:
-     * `customers/{customer_id}/campaignBudgets/{campaign_budget_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCampaignBudget extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignBudget
     {
     }
 }

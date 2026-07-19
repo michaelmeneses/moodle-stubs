@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class AwsS3CompatibleData extends \Google\Model
-{
-    /**
-     * Required. Specifies the name of the bucket.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * Required. Specifies the endpoint of the storage service.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Specifies the root path to transfer objects. Must be an empty string or
-     * full path name that ends with a '/'. This field is treated as an object
-     * prefix. As such, it should generally not begin with a '/'.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Specifies the region to sign requests with. This can be left blank if
-     * requests should be signed with an empty region.
-     *
-     * @var string
-     */
-    public $region;
-    protected $s3MetadataType = S3CompatibleMetadata::class;
-    protected $s3MetadataDataType = '';
-    /**
-     * Required. Specifies the name of the bucket.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Storagetransfer {
+    class AwsS3CompatibleData extends \Google\Model
     {
+        /**
+         * Required. Specifies the name of the bucket.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * Required. Specifies the endpoint of the storage service.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Specifies the root path to transfer objects. Must be an empty string or
+         * full path name that ends with a '/'. This field is treated as an object
+         * prefix. As such, it should generally not begin with a '/'.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Specifies the region to sign requests with. This can be left blank if
+         * requests should be signed with an empty region.
+         *
+         * @var string
+         */
+        public $region;
+        protected $s3MetadataType = S3CompatibleMetadata::class;
+        protected $s3MetadataDataType = '';
+        /**
+         * Required. Specifies the name of the bucket.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * Required. Specifies the endpoint of the storage service.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Specifies the root path to transfer objects. Must be an empty string or
+         * full path name that ends with a '/'. This field is treated as an object
+         * prefix. As such, it should generally not begin with a '/'.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Specifies the region to sign requests with. This can be left blank if
+         * requests should be signed with an empty region.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * A S3 compatible metadata.
+         *
+         * @param S3CompatibleMetadata $s3Metadata
+         */
+        public function setS3Metadata(S3CompatibleMetadata $s3Metadata)
+        {
+        }
+        /**
+         * @return S3CompatibleMetadata
+         */
+        public function getS3Metadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\AwsS3CompatibleData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * Required. Specifies the endpoint of the storage service.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Specifies the root path to transfer objects. Must be an empty string or
-     * full path name that ends with a '/'. This field is treated as an object
-     * prefix. As such, it should generally not begin with a '/'.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Specifies the region to sign requests with. This can be left blank if
-     * requests should be signed with an empty region.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * A S3 compatible metadata.
-     *
-     * @param S3CompatibleMetadata $s3Metadata
-     */
-    public function setS3Metadata(S3CompatibleMetadata $s3Metadata)
-    {
-    }
-    /**
-     * @return S3CompatibleMetadata
-     */
-    public function getS3Metadata()
+    class Google_Service_Storagetransfer_AwsS3CompatibleData extends \Google\Service\Storagetransfer\AwsS3CompatibleData
     {
     }
 }

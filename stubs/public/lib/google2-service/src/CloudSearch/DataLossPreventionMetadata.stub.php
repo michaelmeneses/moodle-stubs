@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DataLossPreventionMetadata extends \Google\Model
-{
-    protected $dlpMessageScanRecordType = DlpMessageScanRecord::class;
-    protected $dlpMessageScanRecordDataType = '';
-    protected $dlpScanSummaryType = DlpScanSummary::class;
-    protected $dlpScanSummaryDataType = '';
-    /**
-     * @var bool
-     */
-    public $warnAcknowledged;
-    /**
-     * @param DlpMessageScanRecord
-     */
-    public function setDlpMessageScanRecord(DlpMessageScanRecord $dlpMessageScanRecord)
+namespace Google\Service\CloudSearch {
+    class DataLossPreventionMetadata extends \Google\Model
     {
+        protected $dlpMessageScanRecordType = DlpMessageScanRecord::class;
+        protected $dlpMessageScanRecordDataType = '';
+        protected $dlpScanSummaryType = DlpScanSummary::class;
+        protected $dlpScanSummaryDataType = '';
+        /**
+         * @var bool
+         */
+        public $warnAcknowledged;
+        /**
+         * @param DlpMessageScanRecord
+         */
+        public function setDlpMessageScanRecord(DlpMessageScanRecord $dlpMessageScanRecord)
+        {
+        }
+        /**
+         * @return DlpMessageScanRecord
+         */
+        public function getDlpMessageScanRecord()
+        {
+        }
+        /**
+         * @param DlpScanSummary
+         */
+        public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
+        {
+        }
+        /**
+         * @return DlpScanSummary
+         */
+        public function getDlpScanSummary()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWarnAcknowledged($warnAcknowledged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWarnAcknowledged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DlpMessageScanRecord
+     * Runtime class alias of \Google\Service\CloudSearch\DataLossPreventionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDlpMessageScanRecord()
-    {
-    }
-    /**
-     * @param DlpScanSummary
-     */
-    public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
-    {
-    }
-    /**
-     * @return DlpScanSummary
-     */
-    public function getDlpScanSummary()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWarnAcknowledged($warnAcknowledged)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWarnAcknowledged()
+    class Google_Service_CloudSearch_DataLossPreventionMetadata extends \Google\Service\CloudSearch\DataLossPreventionMetadata
     {
     }
 }

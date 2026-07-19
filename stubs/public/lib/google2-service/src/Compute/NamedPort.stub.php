@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NamedPort extends \Google\Model
-{
-    /**
-     * The name for this named port. The name must be 1-63 characters long, and
-     * comply withRFC1035.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The port number, which can be a value between 1 and 65535.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * The name for this named port. The name must be 1-63 characters long, and
-     * comply withRFC1035.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class NamedPort extends \Google\Model
     {
+        /**
+         * The name for this named port. The name must be 1-63 characters long, and
+         * comply withRFC1035.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The port number, which can be a value between 1 and 65535.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * The name for this named port. The name must be 1-63 characters long, and
+         * comply withRFC1035.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The port number, which can be a value between 1 and 65535.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NamedPort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The port number, which can be a value between 1 and 65535.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_Compute_NamedPort extends \Google\Service\Compute\NamedPort
     {
     }
 }

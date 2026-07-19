@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RRSetRoutingPolicy extends \Google\Model
-{
-    protected $geoType = GeoPolicy::class;
-    protected $geoDataType = '';
-    protected $geoPolicyType = GeoPolicy::class;
-    protected $geoPolicyDataType = '';
-    /**
-     * The fully qualified URL of the HealthCheck to use for this
-     * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
-     * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
-     * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
-     *
-     * @var string
-     */
-    public $healthCheck;
-    protected $primaryBackupType = PrimaryBackupPolicy::class;
-    protected $primaryBackupDataType = '';
-    protected $wrrType = WrrPolicy::class;
-    protected $wrrDataType = '';
-    protected $wrrPolicyType = WrrPolicy::class;
-    protected $wrrPolicyDataType = '';
-    /**
-     * @param GeoPolicy $geo
-     */
-    public function setGeo(GeoPolicy $geo)
+namespace Google\Service\CloudDomains {
+    class RRSetRoutingPolicy extends \Google\Model
     {
+        protected $geoType = GeoPolicy::class;
+        protected $geoDataType = '';
+        protected $geoPolicyType = GeoPolicy::class;
+        protected $geoPolicyDataType = '';
+        /**
+         * The fully qualified URL of the HealthCheck to use for this
+         * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
+         * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
+         * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
+         *
+         * @var string
+         */
+        public $healthCheck;
+        protected $primaryBackupType = PrimaryBackupPolicy::class;
+        protected $primaryBackupDataType = '';
+        protected $wrrType = WrrPolicy::class;
+        protected $wrrDataType = '';
+        protected $wrrPolicyType = WrrPolicy::class;
+        protected $wrrPolicyDataType = '';
+        /**
+         * @param GeoPolicy $geo
+         */
+        public function setGeo(GeoPolicy $geo)
+        {
+        }
+        /**
+         * @return GeoPolicy
+         */
+        public function getGeo()
+        {
+        }
+        /**
+         * @deprecated
+         * @param GeoPolicy $geoPolicy
+         */
+        public function setGeoPolicy(GeoPolicy $geoPolicy)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GeoPolicy
+         */
+        public function getGeoPolicy()
+        {
+        }
+        /**
+         * The fully qualified URL of the HealthCheck to use for this
+         * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
+         * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
+         * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
+         *
+         * @param string $healthCheck
+         */
+        public function setHealthCheck($healthCheck)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthCheck()
+        {
+        }
+        /**
+         * @param PrimaryBackupPolicy $primaryBackup
+         */
+        public function setPrimaryBackup(PrimaryBackupPolicy $primaryBackup)
+        {
+        }
+        /**
+         * @return PrimaryBackupPolicy
+         */
+        public function getPrimaryBackup()
+        {
+        }
+        /**
+         * @param WrrPolicy $wrr
+         */
+        public function setWrr(WrrPolicy $wrr)
+        {
+        }
+        /**
+         * @return WrrPolicy
+         */
+        public function getWrr()
+        {
+        }
+        /**
+         * @deprecated
+         * @param WrrPolicy $wrrPolicy
+         */
+        public function setWrrPolicy(WrrPolicy $wrrPolicy)
+        {
+        }
+        /**
+         * @deprecated
+         * @return WrrPolicy
+         */
+        public function getWrrPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeoPolicy
+     * Runtime class alias of \Google\Service\CloudDomains\RRSetRoutingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeo()
-    {
-    }
-    /**
-     * @deprecated
-     * @param GeoPolicy $geoPolicy
-     */
-    public function setGeoPolicy(GeoPolicy $geoPolicy)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GeoPolicy
-     */
-    public function getGeoPolicy()
-    {
-    }
-    /**
-     * The fully qualified URL of the HealthCheck to use for this
-     * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
-     * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
-     * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
-     *
-     * @param string $healthCheck
-     */
-    public function setHealthCheck($healthCheck)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealthCheck()
-    {
-    }
-    /**
-     * @param PrimaryBackupPolicy $primaryBackup
-     */
-    public function setPrimaryBackup(PrimaryBackupPolicy $primaryBackup)
-    {
-    }
-    /**
-     * @return PrimaryBackupPolicy
-     */
-    public function getPrimaryBackup()
-    {
-    }
-    /**
-     * @param WrrPolicy $wrr
-     */
-    public function setWrr(WrrPolicy $wrr)
-    {
-    }
-    /**
-     * @return WrrPolicy
-     */
-    public function getWrr()
-    {
-    }
-    /**
-     * @deprecated
-     * @param WrrPolicy $wrrPolicy
-     */
-    public function setWrrPolicy(WrrPolicy $wrrPolicy)
-    {
-    }
-    /**
-     * @deprecated
-     * @return WrrPolicy
-     */
-    public function getWrrPolicy()
+    class Google_Service_CloudDomains_RRSetRoutingPolicy extends \Google\Service\CloudDomains\RRSetRoutingPolicy
     {
     }
 }

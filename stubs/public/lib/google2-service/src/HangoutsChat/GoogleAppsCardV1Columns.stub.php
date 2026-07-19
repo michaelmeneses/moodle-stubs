@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Columns extends \Google\Collection
-{
-    protected $collection_key = 'columnItems';
-    protected $columnItemsType = GoogleAppsCardV1Column::class;
-    protected $columnItemsDataType = 'array';
-    /**
-     * An array of columns. You can include up to 2 columns in a card or dialog.
-     *
-     * @param GoogleAppsCardV1Column[] $columnItems
-     */
-    public function setColumnItems($columnItems)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Columns extends \Google\Collection
     {
+        protected $collection_key = 'columnItems';
+        protected $columnItemsType = GoogleAppsCardV1Column::class;
+        protected $columnItemsDataType = 'array';
+        /**
+         * An array of columns. You can include up to 2 columns in a card or dialog.
+         *
+         * @param GoogleAppsCardV1Column[] $columnItems
+         */
+        public function setColumnItems($columnItems)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Column[]
+         */
+        public function getColumnItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Column[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Columns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnItems()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Columns extends \Google\Service\HangoutsChat\GoogleAppsCardV1Columns
     {
     }
 }

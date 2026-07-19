@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class OrderBy extends \Google\Model
-{
-    /**
-     * If true, sorts by descending order.
-     *
-     * @var bool
-     */
-    public $desc;
-    protected $dimensionType = DimensionOrderBy::class;
-    protected $dimensionDataType = '';
-    protected $metricType = MetricOrderBy::class;
-    protected $metricDataType = '';
-    protected $pivotType = PivotOrderBy::class;
-    protected $pivotDataType = '';
-    /**
-     * If true, sorts by descending order.
-     *
-     * @param bool $desc
-     */
-    public function setDesc($desc)
+namespace Google\Service\AnalyticsData {
+    class OrderBy extends \Google\Model
     {
+        /**
+         * If true, sorts by descending order.
+         *
+         * @var bool
+         */
+        public $desc;
+        protected $dimensionType = DimensionOrderBy::class;
+        protected $dimensionDataType = '';
+        protected $metricType = MetricOrderBy::class;
+        protected $metricDataType = '';
+        protected $pivotType = PivotOrderBy::class;
+        protected $pivotDataType = '';
+        /**
+         * If true, sorts by descending order.
+         *
+         * @param bool $desc
+         */
+        public function setDesc($desc)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDesc()
+        {
+        }
+        /**
+         * Sorts results by a dimension's values.
+         *
+         * @param DimensionOrderBy $dimension
+         */
+        public function setDimension(DimensionOrderBy $dimension)
+        {
+        }
+        /**
+         * @return DimensionOrderBy
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Sorts results by a metric's values.
+         *
+         * @param MetricOrderBy $metric
+         */
+        public function setMetric(MetricOrderBy $metric)
+        {
+        }
+        /**
+         * @return MetricOrderBy
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * Sorts results by a metric's values within a pivot column group.
+         *
+         * @param PivotOrderBy $pivot
+         */
+        public function setPivot(PivotOrderBy $pivot)
+        {
+        }
+        /**
+         * @return PivotOrderBy
+         */
+        public function getPivot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsData\OrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesc()
-    {
-    }
-    /**
-     * Sorts results by a dimension's values.
-     *
-     * @param DimensionOrderBy $dimension
-     */
-    public function setDimension(DimensionOrderBy $dimension)
-    {
-    }
-    /**
-     * @return DimensionOrderBy
-     */
-    public function getDimension()
-    {
-    }
-    /**
-     * Sorts results by a metric's values.
-     *
-     * @param MetricOrderBy $metric
-     */
-    public function setMetric(MetricOrderBy $metric)
-    {
-    }
-    /**
-     * @return MetricOrderBy
-     */
-    public function getMetric()
-    {
-    }
-    /**
-     * Sorts results by a metric's values within a pivot column group.
-     *
-     * @param PivotOrderBy $pivot
-     */
-    public function setPivot(PivotOrderBy $pivot)
-    {
-    }
-    /**
-     * @return PivotOrderBy
-     */
-    public function getPivot()
+    class Google_Service_AnalyticsData_OrderBy extends \Google\Service\AnalyticsData\OrderBy
     {
     }
 }

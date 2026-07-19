@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ListDatasetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'datasets';
-    protected $datasetsType = Dataset::class;
-    protected $datasetsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this token to the page_token
-     * field in the ListDatasetsRequest to obtain the corresponding page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The datasets read.
-     *
-     * @param Dataset[] $datasets
-     */
-    public function setDatasets($datasets)
+namespace Google\Service\Translate {
+    class ListDatasetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'datasets';
+        protected $datasetsType = Dataset::class;
+        protected $datasetsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this token to the page_token
+         * field in the ListDatasetsRequest to obtain the corresponding page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The datasets read.
+         *
+         * @param Dataset[] $datasets
+         */
+        public function setDatasets($datasets)
+        {
+        }
+        /**
+         * @return Dataset[]
+         */
+        public function getDatasets()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this token to the page_token
+         * field in the ListDatasetsRequest to obtain the corresponding page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dataset[]
+     * Runtime class alias of \Google\Service\Translate\ListDatasetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasets()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this token to the page_token
-     * field in the ListDatasetsRequest to obtain the corresponding page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Translate_ListDatasetsResponse extends \Google\Service\Translate\ListDatasetsResponse
     {
     }
 }

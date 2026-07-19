@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessFilter extends \Google\Model
-{
-    protected $betweenFilterType = GoogleAnalyticsAdminV1alphaAccessBetweenFilter::class;
-    protected $betweenFilterDataType = '';
-    /**
-     * @var string
-     */
-    public $fieldName;
-    protected $inListFilterType = GoogleAnalyticsAdminV1alphaAccessInListFilter::class;
-    protected $inListFilterDataType = '';
-    protected $numericFilterType = GoogleAnalyticsAdminV1alphaAccessNumericFilter::class;
-    protected $numericFilterDataType = '';
-    protected $stringFilterType = GoogleAnalyticsAdminV1alphaAccessStringFilter::class;
-    protected $stringFilterDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessBetweenFilter
-     */
-    public function setBetweenFilter(GoogleAnalyticsAdminV1alphaAccessBetweenFilter $betweenFilter)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessFilter extends \Google\Model
     {
+        protected $betweenFilterType = GoogleAnalyticsAdminV1alphaAccessBetweenFilter::class;
+        protected $betweenFilterDataType = '';
+        /**
+         * @var string
+         */
+        public $fieldName;
+        protected $inListFilterType = GoogleAnalyticsAdminV1alphaAccessInListFilter::class;
+        protected $inListFilterDataType = '';
+        protected $numericFilterType = GoogleAnalyticsAdminV1alphaAccessNumericFilter::class;
+        protected $numericFilterDataType = '';
+        protected $stringFilterType = GoogleAnalyticsAdminV1alphaAccessStringFilter::class;
+        protected $stringFilterDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessBetweenFilter
+         */
+        public function setBetweenFilter(GoogleAnalyticsAdminV1alphaAccessBetweenFilter $betweenFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessBetweenFilter
+         */
+        public function getBetweenFilter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessInListFilter
+         */
+        public function setInListFilter(GoogleAnalyticsAdminV1alphaAccessInListFilter $inListFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessInListFilter
+         */
+        public function getInListFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessNumericFilter
+         */
+        public function setNumericFilter(GoogleAnalyticsAdminV1alphaAccessNumericFilter $numericFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessNumericFilter
+         */
+        public function getNumericFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessStringFilter
+         */
+        public function setStringFilter(GoogleAnalyticsAdminV1alphaAccessStringFilter $stringFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessStringFilter
+         */
+        public function getStringFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccessBetweenFilter
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBetweenFilter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessInListFilter
-     */
-    public function setInListFilter(GoogleAnalyticsAdminV1alphaAccessInListFilter $inListFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessInListFilter
-     */
-    public function getInListFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessNumericFilter
-     */
-    public function setNumericFilter(GoogleAnalyticsAdminV1alphaAccessNumericFilter $numericFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessNumericFilter
-     */
-    public function getNumericFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessStringFilter
-     */
-    public function setStringFilter(GoogleAnalyticsAdminV1alphaAccessStringFilter $stringFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessStringFilter
-     */
-    public function getStringFilter()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessFilter
     {
     }
 }

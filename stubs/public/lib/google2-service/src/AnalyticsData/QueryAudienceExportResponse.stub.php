@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class QueryAudienceExportResponse extends \Google\Collection
-{
-    protected $collection_key = 'audienceRows';
-    protected $audienceExportType = AudienceExport::class;
-    protected $audienceExportDataType = '';
-    protected $audienceRowsType = V1betaAudienceRow::class;
-    protected $audienceRowsDataType = 'array';
-    /**
-     * The total number of rows in the AudienceExport result. `rowCount` is
-     * independent of the number of rows returned in the response, the `limit`
-     * request parameter, and the `offset` request parameter. For example if a
-     * query returns 175 rows and includes `limit` of 50 in the API request, the
-     * response will contain `rowCount` of 175 but only 50 rows. To learn more
-     * about this pagination parameter, see [Pagination](https://developers.google
-     * .com/analytics/devguides/reporting/data/v1/basics#pagination).
-     *
-     * @var int
-     */
-    public $rowCount;
-    /**
-     * Configuration data about AudienceExport being queried. Returned to help
-     * interpret the audience rows in this response. For example, the dimensions
-     * in this AudienceExport correspond to the columns in the AudienceRows.
-     *
-     * @param AudienceExport $audienceExport
-     */
-    public function setAudienceExport(AudienceExport $audienceExport)
+namespace Google\Service\AnalyticsData {
+    class QueryAudienceExportResponse extends \Google\Collection
     {
+        protected $collection_key = 'audienceRows';
+        protected $audienceExportType = AudienceExport::class;
+        protected $audienceExportDataType = '';
+        protected $audienceRowsType = V1betaAudienceRow::class;
+        protected $audienceRowsDataType = 'array';
+        /**
+         * The total number of rows in the AudienceExport result. `rowCount` is
+         * independent of the number of rows returned in the response, the `limit`
+         * request parameter, and the `offset` request parameter. For example if a
+         * query returns 175 rows and includes `limit` of 50 in the API request, the
+         * response will contain `rowCount` of 175 but only 50 rows. To learn more
+         * about this pagination parameter, see [Pagination](https://developers.google
+         * .com/analytics/devguides/reporting/data/v1/basics#pagination).
+         *
+         * @var int
+         */
+        public $rowCount;
+        /**
+         * Configuration data about AudienceExport being queried. Returned to help
+         * interpret the audience rows in this response. For example, the dimensions
+         * in this AudienceExport correspond to the columns in the AudienceRows.
+         *
+         * @param AudienceExport $audienceExport
+         */
+        public function setAudienceExport(AudienceExport $audienceExport)
+        {
+        }
+        /**
+         * @return AudienceExport
+         */
+        public function getAudienceExport()
+        {
+        }
+        /**
+         * Rows for each user in an audience export. The number of rows in this
+         * response will be less than or equal to request's page size.
+         *
+         * @param V1betaAudienceRow[] $audienceRows
+         */
+        public function setAudienceRows($audienceRows)
+        {
+        }
+        /**
+         * @return V1betaAudienceRow[]
+         */
+        public function getAudienceRows()
+        {
+        }
+        /**
+         * The total number of rows in the AudienceExport result. `rowCount` is
+         * independent of the number of rows returned in the response, the `limit`
+         * request parameter, and the `offset` request parameter. For example if a
+         * query returns 175 rows and includes `limit` of 50 in the API request, the
+         * response will contain `rowCount` of 175 but only 50 rows. To learn more
+         * about this pagination parameter, see [Pagination](https://developers.google
+         * .com/analytics/devguides/reporting/data/v1/basics#pagination).
+         *
+         * @param int $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudienceExport
+     * Runtime class alias of \Google\Service\AnalyticsData\QueryAudienceExportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudienceExport()
-    {
-    }
-    /**
-     * Rows for each user in an audience export. The number of rows in this
-     * response will be less than or equal to request's page size.
-     *
-     * @param V1betaAudienceRow[] $audienceRows
-     */
-    public function setAudienceRows($audienceRows)
-    {
-    }
-    /**
-     * @return V1betaAudienceRow[]
-     */
-    public function getAudienceRows()
-    {
-    }
-    /**
-     * The total number of rows in the AudienceExport result. `rowCount` is
-     * independent of the number of rows returned in the response, the `limit`
-     * request parameter, and the `offset` request parameter. For example if a
-     * query returns 175 rows and includes `limit` of 50 in the API request, the
-     * response will contain `rowCount` of 175 but only 50 rows. To learn more
-     * about this pagination parameter, see [Pagination](https://developers.google
-     * .com/analytics/devguides/reporting/data/v1/basics#pagination).
-     *
-     * @param int $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowCount()
+    class Google_Service_AnalyticsData_QueryAudienceExportResponse extends \Google\Service\AnalyticsData\QueryAudienceExportResponse
     {
     }
 }

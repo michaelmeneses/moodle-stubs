@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\output;
 
+use moodle_url;
+use url_select;
 /**
  * Class responses_action_bar. The tertiary nav for the responses page
  *

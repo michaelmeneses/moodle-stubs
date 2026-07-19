@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class HttpData extends \Google\Model
-{
-    /**
-     * Required. The URL that points to the file that stores the object list
-     * entries. This file must allow public access. The URL is either an
-     * HTTP/HTTPS address (e.g. `https://example.com/urllist.tsv`) or a Cloud
-     * Storage path (e.g. `gs://my-bucket/urllist.tsv`).
-     *
-     * @var string
-     */
-    public $listUrl;
-    /**
-     * Required. The URL that points to the file that stores the object list
-     * entries. This file must allow public access. The URL is either an
-     * HTTP/HTTPS address (e.g. `https://example.com/urllist.tsv`) or a Cloud
-     * Storage path (e.g. `gs://my-bucket/urllist.tsv`).
-     *
-     * @param string $listUrl
-     */
-    public function setListUrl($listUrl)
+namespace Google\Service\Storagetransfer {
+    class HttpData extends \Google\Model
     {
+        /**
+         * Required. The URL that points to the file that stores the object list
+         * entries. This file must allow public access. The URL is either an
+         * HTTP/HTTPS address (e.g. `https://example.com/urllist.tsv`) or a Cloud
+         * Storage path (e.g. `gs://my-bucket/urllist.tsv`).
+         *
+         * @var string
+         */
+        public $listUrl;
+        /**
+         * Required. The URL that points to the file that stores the object list
+         * entries. This file must allow public access. The URL is either an
+         * HTTP/HTTPS address (e.g. `https://example.com/urllist.tsv`) or a Cloud
+         * Storage path (e.g. `gs://my-bucket/urllist.tsv`).
+         *
+         * @param string $listUrl
+         */
+        public function setListUrl($listUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\HttpData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListUrl()
+    class Google_Service_Storagetransfer_HttpData extends \Google\Service\Storagetransfer\HttpData
     {
     }
 }

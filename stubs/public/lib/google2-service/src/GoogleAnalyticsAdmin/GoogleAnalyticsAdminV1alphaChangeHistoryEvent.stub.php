@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaChangeHistoryEvent extends \Google\Collection
-{
-    protected $collection_key = 'changes';
-    /**
-     * @var string
-     */
-    public $actorType;
-    /**
-     * @var string
-     */
-    public $changeTime;
-    protected $changesType = GoogleAnalyticsAdminV1alphaChangeHistoryChange::class;
-    protected $changesDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $changesFiltered;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $userActorEmail;
-    /**
-     * @param string
-     */
-    public function setActorType($actorType)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaChangeHistoryEvent extends \Google\Collection
     {
+        protected $collection_key = 'changes';
+        /**
+         * @var string
+         */
+        public $actorType;
+        /**
+         * @var string
+         */
+        public $changeTime;
+        protected $changesType = GoogleAnalyticsAdminV1alphaChangeHistoryChange::class;
+        protected $changesDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $changesFiltered;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $userActorEmail;
+        /**
+         * @param string
+         */
+        public function setActorType($actorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActorType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChangeTime($changeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangeTime()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaChangeHistoryChange[]
+         */
+        public function setChanges($changes)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaChangeHistoryChange[]
+         */
+        public function getChanges()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setChangesFiltered($changesFiltered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChangesFiltered()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserActorEmail($userActorEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserActorEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaChangeHistoryEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActorType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChangeTime($changeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChangeTime()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaChangeHistoryChange[]
-     */
-    public function setChanges($changes)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaChangeHistoryChange[]
-     */
-    public function getChanges()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setChangesFiltered($changesFiltered)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getChangesFiltered()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserActorEmail($userActorEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserActorEmail()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaChangeHistoryEvent extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaChangeHistoryEvent
     {
     }
 }

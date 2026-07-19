@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ChunkAnnotationMetadata extends \Google\Model
-{
-    /**
-     * Output only. Image id is provided if the structured content is based on an
-     * image.
-     *
-     * @var string
-     */
-    public $imageId;
-    protected $structuredContentType = GoogleCloudDiscoveryengineV1ChunkStructuredContent::class;
-    protected $structuredContentDataType = '';
-    /**
-     * Output only. Image id is provided if the structured content is based on an
-     * image.
-     *
-     * @param string $imageId
-     */
-    public function setImageId($imageId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ChunkAnnotationMetadata extends \Google\Model
     {
+        /**
+         * Output only. Image id is provided if the structured content is based on an
+         * image.
+         *
+         * @var string
+         */
+        public $imageId;
+        protected $structuredContentType = GoogleCloudDiscoveryengineV1ChunkStructuredContent::class;
+        protected $structuredContentDataType = '';
+        /**
+         * Output only. Image id is provided if the structured content is based on an
+         * image.
+         *
+         * @param string $imageId
+         */
+        public function setImageId($imageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageId()
+        {
+        }
+        /**
+         * Output only. The structured content information.
+         *
+         * @param GoogleCloudDiscoveryengineV1ChunkStructuredContent $structuredContent
+         */
+        public function setStructuredContent(GoogleCloudDiscoveryengineV1ChunkStructuredContent $structuredContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ChunkStructuredContent
+         */
+        public function getStructuredContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkAnnotationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageId()
-    {
-    }
-    /**
-     * Output only. The structured content information.
-     *
-     * @param GoogleCloudDiscoveryengineV1ChunkStructuredContent $structuredContent
-     */
-    public function setStructuredContent(GoogleCloudDiscoveryengineV1ChunkStructuredContent $structuredContent)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ChunkStructuredContent
-     */
-    public function getStructuredContent()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ChunkAnnotationMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkAnnotationMetadata
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetails extends \Google\Collection
-{
-    protected $collection_key = 'bundleElements';
-    protected $bundleElementsType = GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement::class;
-    protected $bundleElementsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $entitlementMode;
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement[]
-     */
-    public function setBundleElements($bundleElements)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetails extends \Google\Collection
     {
+        protected $collection_key = 'bundleElements';
+        protected $bundleElementsType = GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement::class;
+        protected $bundleElementsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $entitlementMode;
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement[]
+         */
+        public function setBundleElements($bundleElements)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement[]
+         */
+        public function getBundleElements()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntitlementMode($entitlementMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntitlementMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleElements()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntitlementMode($entitlementMode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntitlementMode()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetails extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetails
     {
     }
 }

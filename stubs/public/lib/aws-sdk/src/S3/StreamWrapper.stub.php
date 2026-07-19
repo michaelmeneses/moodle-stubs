@@ -8,6 +8,14 @@
  */
 namespace Aws\S3;
 
+use Aws\CacheInterface;
+use Aws\LruArrayCache;
+use Aws\Result;
+use Aws\S3\Exception\S3Exception;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Stream;
+use GuzzleHttp\Psr7\CachingStream;
+use Psr\Http\Message\StreamInterface;
 /**
  * Amazon S3 stream wrapper to use "s3://<bucket>/<key>" files with PHP
  * streams, supporting "r", "w", "a", "x".

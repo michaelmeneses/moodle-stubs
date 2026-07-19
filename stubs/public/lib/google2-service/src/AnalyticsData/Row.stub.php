@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class Row extends \Google\Collection
-{
-    protected $collection_key = 'metricValues';
-    protected $dimensionValuesType = DimensionValue::class;
-    protected $dimensionValuesDataType = 'array';
-    protected $metricValuesType = MetricValue::class;
-    protected $metricValuesDataType = 'array';
-    /**
-     * List of requested dimension values. In a PivotReport, dimension_values are
-     * only listed for dimensions included in a pivot.
-     *
-     * @param DimensionValue[] $dimensionValues
-     */
-    public function setDimensionValues($dimensionValues)
+namespace Google\Service\AnalyticsData {
+    class Row extends \Google\Collection
     {
+        protected $collection_key = 'metricValues';
+        protected $dimensionValuesType = DimensionValue::class;
+        protected $dimensionValuesDataType = 'array';
+        protected $metricValuesType = MetricValue::class;
+        protected $metricValuesDataType = 'array';
+        /**
+         * List of requested dimension values. In a PivotReport, dimension_values are
+         * only listed for dimensions included in a pivot.
+         *
+         * @param DimensionValue[] $dimensionValues
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
+        /**
+         * List of requested visible metric values.
+         *
+         * @param MetricValue[] $metricValues
+         */
+        public function setMetricValues($metricValues)
+        {
+        }
+        /**
+         * @return MetricValue[]
+         */
+        public function getMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionValue[]
+     * Runtime class alias of \Google\Service\AnalyticsData\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionValues()
-    {
-    }
-    /**
-     * List of requested visible metric values.
-     *
-     * @param MetricValue[] $metricValues
-     */
-    public function setMetricValues($metricValues)
-    {
-    }
-    /**
-     * @return MetricValue[]
-     */
-    public function getMetricValues()
+    class Google_Service_AnalyticsData_Row extends \Google\Service\AnalyticsData\Row
     {
     }
 }

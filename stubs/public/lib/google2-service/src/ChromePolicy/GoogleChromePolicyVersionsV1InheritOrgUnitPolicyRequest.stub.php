@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1InheritOrgUnitPolicyRequest extends \Google\Model
-{
-    /**
-     * The fully qualified name of the policy schema that is being inherited.
-     *
-     * @var string
-     */
-    public $policySchema;
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * The fully qualified name of the policy schema that is being inherited.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1InheritOrgUnitPolicyRequest extends \Google\Model
     {
+        /**
+         * The fully qualified name of the policy schema that is being inherited.
+         *
+         * @var string
+         */
+        public $policySchema;
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * The fully qualified name of the policy schema that is being inherited.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * Required. The key of the target for which we want to modify a policy. The
+         * target resource must point to an Org Unit.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1InheritOrgUnitPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * Required. The key of the target for which we want to modify a policy. The
-     * target resource must point to an Org Unit.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1InheritOrgUnitPolicyRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1InheritOrgUnitPolicyRequest
     {
     }
 }

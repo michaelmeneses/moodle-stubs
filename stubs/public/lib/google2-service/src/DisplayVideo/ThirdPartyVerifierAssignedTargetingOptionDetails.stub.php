@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ThirdPartyVerifierAssignedTargetingOptionDetails extends \Google\Model
-{
-    protected $adlooxType = Adloox::class;
-    protected $adlooxDataType = '';
-    protected $doubleVerifyType = DoubleVerify::class;
-    protected $doubleVerifyDataType = '';
-    protected $integralAdScienceType = IntegralAdScience::class;
-    protected $integralAdScienceDataType = '';
-    /**
-     * Third party brand verifier -- Scope3 (previously known as Adloox).
-     *
-     * @param Adloox $adloox
-     */
-    public function setAdloox(Adloox $adloox)
+namespace Google\Service\DisplayVideo {
+    class ThirdPartyVerifierAssignedTargetingOptionDetails extends \Google\Model
     {
+        protected $adlooxType = Adloox::class;
+        protected $adlooxDataType = '';
+        protected $doubleVerifyType = DoubleVerify::class;
+        protected $doubleVerifyDataType = '';
+        protected $integralAdScienceType = IntegralAdScience::class;
+        protected $integralAdScienceDataType = '';
+        /**
+         * Third party brand verifier -- Scope3 (previously known as Adloox).
+         *
+         * @param Adloox $adloox
+         */
+        public function setAdloox(Adloox $adloox)
+        {
+        }
+        /**
+         * @return Adloox
+         */
+        public function getAdloox()
+        {
+        }
+        /**
+         * Third party brand verifier -- DoubleVerify.
+         *
+         * @param DoubleVerify $doubleVerify
+         */
+        public function setDoubleVerify(DoubleVerify $doubleVerify)
+        {
+        }
+        /**
+         * @return DoubleVerify
+         */
+        public function getDoubleVerify()
+        {
+        }
+        /**
+         * Third party brand verifier -- Integral Ad Science.
+         *
+         * @param IntegralAdScience $integralAdScience
+         */
+        public function setIntegralAdScience(IntegralAdScience $integralAdScience)
+        {
+        }
+        /**
+         * @return IntegralAdScience
+         */
+        public function getIntegralAdScience()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Adloox
+     * Runtime class alias of \Google\Service\DisplayVideo\ThirdPartyVerifierAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdloox()
-    {
-    }
-    /**
-     * Third party brand verifier -- DoubleVerify.
-     *
-     * @param DoubleVerify $doubleVerify
-     */
-    public function setDoubleVerify(DoubleVerify $doubleVerify)
-    {
-    }
-    /**
-     * @return DoubleVerify
-     */
-    public function getDoubleVerify()
-    {
-    }
-    /**
-     * Third party brand verifier -- Integral Ad Science.
-     *
-     * @param IntegralAdScience $integralAdScience
-     */
-    public function setIntegralAdScience(IntegralAdScience $integralAdScience)
-    {
-    }
-    /**
-     * @return IntegralAdScience
-     */
-    public function getIntegralAdScience()
+    class Google_Service_DisplayVideo_ThirdPartyVerifierAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\ThirdPartyVerifierAssignedTargetingOptionDetails
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class ExecuteMutationResponse extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    /**
-     * The result of executing the requested operation.
-     *
-     * @var array[]
-     */
-    public $data;
-    protected $errorsType = GraphqlError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The result of executing the requested operation.
-     *
-     * @param array[] $data
-     */
-    public function setData($data)
+namespace Google\Service\FirebaseDataConnect {
+    class ExecuteMutationResponse extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        /**
+         * The result of executing the requested operation.
+         *
+         * @var array[]
+         */
+        public $data;
+        protected $errorsType = GraphqlError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The result of executing the requested operation.
+         *
+         * @param array[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Errors of this response.
+         *
+         * @param GraphqlError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return GraphqlError[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\ExecuteMutationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Errors of this response.
-     *
-     * @param GraphqlError[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return GraphqlError[]
-     */
-    public function getErrors()
+    class Google_Service_FirebaseDataConnect_ExecuteMutationResponse extends \Google\Service\FirebaseDataConnect\ExecuteMutationResponse
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class DynamicSegment extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    protected $sessionSegmentType = SegmentDefinition::class;
-    protected $sessionSegmentDataType = '';
-    protected $userSegmentType = SegmentDefinition::class;
-    protected $userSegmentDataType = '';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\AnalyticsReporting {
+    class DynamicSegment extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        protected $sessionSegmentType = SegmentDefinition::class;
+        protected $sessionSegmentDataType = '';
+        protected $userSegmentType = SegmentDefinition::class;
+        protected $userSegmentDataType = '';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param SegmentDefinition
+         */
+        public function setSessionSegment(SegmentDefinition $sessionSegment)
+        {
+        }
+        /**
+         * @return SegmentDefinition
+         */
+        public function getSessionSegment()
+        {
+        }
+        /**
+         * @param SegmentDefinition
+         */
+        public function setUserSegment(SegmentDefinition $userSegment)
+        {
+        }
+        /**
+         * @return SegmentDefinition
+         */
+        public function getUserSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\DynamicSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param SegmentDefinition
-     */
-    public function setSessionSegment(SegmentDefinition $sessionSegment)
-    {
-    }
-    /**
-     * @return SegmentDefinition
-     */
-    public function getSessionSegment()
-    {
-    }
-    /**
-     * @param SegmentDefinition
-     */
-    public function setUserSegment(SegmentDefinition $userSegment)
-    {
-    }
-    /**
-     * @return SegmentDefinition
-     */
-    public function getUserSegment()
+    class Google_Service_AnalyticsReporting_DynamicSegment extends \Google\Service\AnalyticsReporting\DynamicSegment
     {
     }
 }

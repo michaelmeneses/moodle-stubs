@@ -21,40 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "userRolePermissionGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $userRolePermissionGroups = $dfareportingService->userRolePermissionGroups;
- *  </code>
- */
-class UserRolePermissionGroups extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\UserRolePermissionGroup;
+    use Google\Service\Dfareporting\UserRolePermissionGroupsListResponse;
     /**
-     * Gets one user role permission group by ID. (userRolePermissionGroups.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id User role permission group ID.
-     * @param array $optParams Optional parameters.
-     * @return UserRolePermissionGroup
-     * @throws \Google\Service\Exception
+     * The "userRolePermissionGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $userRolePermissionGroups = $dfareportingService->userRolePermissionGroups;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class UserRolePermissionGroups extends \Google\Service\Resource
     {
+        /**
+         * Gets one user role permission group by ID. (userRolePermissionGroups.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id User role permission group ID.
+         * @param array $optParams Optional parameters.
+         * @return UserRolePermissionGroup
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Gets a list of all supported user role permission groups.
+         * (userRolePermissionGroups.listUserRolePermissionGroups)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return UserRolePermissionGroupsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUserRolePermissionGroups($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a list of all supported user role permission groups.
-     * (userRolePermissionGroups.listUserRolePermissionGroups)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return UserRolePermissionGroupsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\UserRolePermissionGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listUserRolePermissionGroups($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_UserRolePermissionGroups extends \Google\Service\Dfareporting\Resource\UserRolePermissionGroups
     {
     }
 }

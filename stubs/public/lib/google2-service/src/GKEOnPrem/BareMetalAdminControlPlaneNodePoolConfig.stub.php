@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminControlPlaneNodePoolConfig extends \Google\Model
-{
-    protected $nodePoolConfigType = BareMetalNodePoolConfig::class;
-    protected $nodePoolConfigDataType = '';
-    /**
-     * Required. The generic configuration for a node pool running the control
-     * plane.
-     *
-     * @param BareMetalNodePoolConfig $nodePoolConfig
-     */
-    public function setNodePoolConfig(BareMetalNodePoolConfig $nodePoolConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminControlPlaneNodePoolConfig extends \Google\Model
     {
+        protected $nodePoolConfigType = BareMetalNodePoolConfig::class;
+        protected $nodePoolConfigDataType = '';
+        /**
+         * Required. The generic configuration for a node pool running the control
+         * plane.
+         *
+         * @param BareMetalNodePoolConfig $nodePoolConfig
+         */
+        public function setNodePoolConfig(BareMetalNodePoolConfig $nodePoolConfig)
+        {
+        }
+        /**
+         * @return BareMetalNodePoolConfig
+         */
+        public function getNodePoolConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalNodePoolConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminControlPlaneNodePoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodePoolConfig()
+    class Google_Service_GKEOnPrem_BareMetalAdminControlPlaneNodePoolConfig extends \Google\Service\GKEOnPrem\BareMetalAdminControlPlaneNodePoolConfig
     {
     }
 }

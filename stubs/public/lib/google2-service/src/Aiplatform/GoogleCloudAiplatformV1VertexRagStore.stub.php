@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1VertexRagStore extends \Google\Collection
-{
-    protected $collection_key = 'ragResources';
-    protected $ragResourcesType = GoogleCloudAiplatformV1VertexRagStoreRagResource::class;
-    protected $ragResourcesDataType = 'array';
-    protected $ragRetrievalConfigType = GoogleCloudAiplatformV1RagRetrievalConfig::class;
-    protected $ragRetrievalConfigDataType = '';
-    /**
-     * Optional. Number of top k results to return from the selected corpora.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $similarityTopK;
-    /**
-     * Optional. Only return results with vector distance smaller than the
-     * threshold.
-     *
-     * @deprecated
-     * @var 
-     */
-    public $vectorDistanceThreshold;
-    /**
-     * Optional. The representation of the rag source. It can be used to specify
-     * corpus only or ragfiles. Currently only support one corpus or multiple
-     * files from one corpus. In the future we may open up multiple corpora
-     * support.
-     *
-     * @param GoogleCloudAiplatformV1VertexRagStoreRagResource[] $ragResources
-     */
-    public function setRagResources($ragResources)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1VertexRagStore extends \Google\Collection
     {
+        protected $collection_key = 'ragResources';
+        protected $ragResourcesType = GoogleCloudAiplatformV1VertexRagStoreRagResource::class;
+        protected $ragResourcesDataType = 'array';
+        protected $ragRetrievalConfigType = GoogleCloudAiplatformV1RagRetrievalConfig::class;
+        protected $ragRetrievalConfigDataType = '';
+        /**
+         * Optional. Number of top k results to return from the selected corpora.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $similarityTopK;
+        /**
+         * Optional. Only return results with vector distance smaller than the
+         * threshold.
+         *
+         * @deprecated
+         * @var 
+         */
+        public $vectorDistanceThreshold;
+        /**
+         * Optional. The representation of the rag source. It can be used to specify
+         * corpus only or ragfiles. Currently only support one corpus or multiple
+         * files from one corpus. In the future we may open up multiple corpora
+         * support.
+         *
+         * @param GoogleCloudAiplatformV1VertexRagStoreRagResource[] $ragResources
+         */
+        public function setRagResources($ragResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1VertexRagStoreRagResource[]
+         */
+        public function getRagResources()
+        {
+        }
+        /**
+         * Optional. The retrieval config for the Rag query.
+         *
+         * @param GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig
+         */
+        public function setRagRetrievalConfig(GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagRetrievalConfig
+         */
+        public function getRagRetrievalConfig()
+        {
+        }
+        /**
+         * Optional. Number of top k results to return from the selected corpora.
+         *
+         * @deprecated
+         * @param int $similarityTopK
+         */
+        public function setSimilarityTopK($similarityTopK)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getSimilarityTopK()
+        {
+        }
+        public function setVectorDistanceThreshold($vectorDistanceThreshold)
+        {
+        }
+        public function getVectorDistanceThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1VertexRagStoreRagResource[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1VertexRagStore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagResources()
-    {
-    }
-    /**
-     * Optional. The retrieval config for the Rag query.
-     *
-     * @param GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig
-     */
-    public function setRagRetrievalConfig(GoogleCloudAiplatformV1RagRetrievalConfig $ragRetrievalConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagRetrievalConfig
-     */
-    public function getRagRetrievalConfig()
-    {
-    }
-    /**
-     * Optional. Number of top k results to return from the selected corpora.
-     *
-     * @deprecated
-     * @param int $similarityTopK
-     */
-    public function setSimilarityTopK($similarityTopK)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getSimilarityTopK()
-    {
-    }
-    public function setVectorDistanceThreshold($vectorDistanceThreshold)
-    {
-    }
-    public function getVectorDistanceThreshold()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1VertexRagStore extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1VertexRagStore
     {
     }
 }

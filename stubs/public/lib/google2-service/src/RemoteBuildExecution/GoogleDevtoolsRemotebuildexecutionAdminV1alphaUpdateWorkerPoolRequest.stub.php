@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateWorkerPoolRequest extends \Google\Model
-{
-    public $updateMask;
-    protected $workerPoolType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool::class;
-    protected $workerPoolDataType = '';
-    public function setUpdateMask($updateMask)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateWorkerPoolRequest extends \Google\Model
     {
+        public $updateMask;
+        protected $workerPoolType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool::class;
+        protected $workerPoolDataType = '';
+        public function setUpdateMask($updateMask)
+        {
+        }
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
+         */
+        public function setWorkerPool(GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool $workerPool)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
+         */
+        public function getWorkerPool()
+        {
+        }
     }
-    public function getUpdateMask()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateWorkerPoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setWorkerPool(GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool $workerPool)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
-     */
-    public function getWorkerPool()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateWorkerPoolRequest extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateWorkerPoolRequest
     {
     }
 }

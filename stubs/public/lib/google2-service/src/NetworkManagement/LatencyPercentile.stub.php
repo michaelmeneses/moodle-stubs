@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class LatencyPercentile extends \Google\Model
-{
-    /**
-     * percent-th percentile of latency observed, in microseconds. Fraction of
-     * percent/100 of samples have latency lower or equal to the value of this
-     * field.
-     *
-     * @var string
-     */
-    public $latencyMicros;
-    /**
-     * Percentage of samples this data point applies to.
-     *
-     * @var int
-     */
-    public $percent;
-    /**
-     * percent-th percentile of latency observed, in microseconds. Fraction of
-     * percent/100 of samples have latency lower or equal to the value of this
-     * field.
-     *
-     * @param string $latencyMicros
-     */
-    public function setLatencyMicros($latencyMicros)
+namespace Google\Service\NetworkManagement {
+    class LatencyPercentile extends \Google\Model
     {
+        /**
+         * percent-th percentile of latency observed, in microseconds. Fraction of
+         * percent/100 of samples have latency lower or equal to the value of this
+         * field.
+         *
+         * @var string
+         */
+        public $latencyMicros;
+        /**
+         * Percentage of samples this data point applies to.
+         *
+         * @var int
+         */
+        public $percent;
+        /**
+         * percent-th percentile of latency observed, in microseconds. Fraction of
+         * percent/100 of samples have latency lower or equal to the value of this
+         * field.
+         *
+         * @param string $latencyMicros
+         */
+        public function setLatencyMicros($latencyMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatencyMicros()
+        {
+        }
+        /**
+         * Percentage of samples this data point applies to.
+         *
+         * @param int $percent
+         */
+        public function setPercent($percent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\LatencyPercentile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatencyMicros()
-    {
-    }
-    /**
-     * Percentage of samples this data point applies to.
-     *
-     * @param int $percent
-     */
-    public function setPercent($percent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercent()
+    class Google_Service_NetworkManagement_LatencyPercentile extends \Google\Service\NetworkManagement\LatencyPercentile
     {
     }
 }

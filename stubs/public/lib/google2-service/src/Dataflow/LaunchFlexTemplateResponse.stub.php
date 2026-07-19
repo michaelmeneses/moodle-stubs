@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class LaunchFlexTemplateResponse extends \Google\Model
-{
-    protected $jobType = Job::class;
-    protected $jobDataType = '';
-    /**
-     * The job that was launched, if the request was not a dry run and the job was
-     * successfully launched.
-     *
-     * @param Job $job
-     */
-    public function setJob(Job $job)
+namespace Google\Service\Dataflow {
+    class LaunchFlexTemplateResponse extends \Google\Model
     {
+        protected $jobType = Job::class;
+        protected $jobDataType = '';
+        /**
+         * The job that was launched, if the request was not a dry run and the job was
+         * successfully launched.
+         *
+         * @param Job $job
+         */
+        public function setJob(Job $job)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job
+     * Runtime class alias of \Google\Service\Dataflow\LaunchFlexTemplateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
+    class Google_Service_Dataflow_LaunchFlexTemplateResponse extends \Google\Service\Dataflow\LaunchFlexTemplateResponse
     {
     }
 }

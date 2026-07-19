@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableFieldRequest extends \Google\Model
-{
-    /**
-     * Required. ID of the field to enable.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. ID of the field to enable.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableFieldRequest extends \Google\Model
     {
+        /**
+         * Required. ID of the field to enable.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. ID of the field to enable.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableFieldRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableFieldRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableFieldRequest
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceSplitResponse extends \Google\Collection
-{
-    /**
-     * The source split outcome is unknown, or unspecified.
-     */
-    public const OUTCOME_SOURCE_SPLIT_OUTCOME_UNKNOWN = 'SOURCE_SPLIT_OUTCOME_UNKNOWN';
-    /**
-     * The current source should be processed "as is" without splitting.
-     */
-    public const OUTCOME_SOURCE_SPLIT_OUTCOME_USE_CURRENT = 'SOURCE_SPLIT_OUTCOME_USE_CURRENT';
-    /**
-     * Splitting produced a list of bundles.
-     */
-    public const OUTCOME_SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED = 'SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED';
-    protected $collection_key = 'shards';
-    protected $bundlesType = DerivedSource::class;
-    protected $bundlesDataType = 'array';
-    /**
-     * Indicates whether splitting happened and produced a list of bundles. If
-     * this is USE_CURRENT_SOURCE_AS_IS, the current source should be processed
-     * "as is" without splitting. "bundles" is ignored in this case. If this is
-     * SPLITTING_HAPPENED, then "bundles" contains a list of bundles into which
-     * the source was split.
-     *
-     * @var string
-     */
-    public $outcome;
-    protected $shardsType = SourceSplitShard::class;
-    protected $shardsDataType = 'array';
-    /**
-     * If outcome is SPLITTING_HAPPENED, then this is a list of bundles into which
-     * the source was split. Otherwise this field is ignored. This list can be
-     * empty, which means the source represents an empty input.
-     *
-     * @param DerivedSource[] $bundles
-     */
-    public function setBundles($bundles)
+namespace Google\Service\Dataflow {
+    class SourceSplitResponse extends \Google\Collection
     {
+        /**
+         * The source split outcome is unknown, or unspecified.
+         */
+        public const OUTCOME_SOURCE_SPLIT_OUTCOME_UNKNOWN = 'SOURCE_SPLIT_OUTCOME_UNKNOWN';
+        /**
+         * The current source should be processed "as is" without splitting.
+         */
+        public const OUTCOME_SOURCE_SPLIT_OUTCOME_USE_CURRENT = 'SOURCE_SPLIT_OUTCOME_USE_CURRENT';
+        /**
+         * Splitting produced a list of bundles.
+         */
+        public const OUTCOME_SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED = 'SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED';
+        protected $collection_key = 'shards';
+        protected $bundlesType = DerivedSource::class;
+        protected $bundlesDataType = 'array';
+        /**
+         * Indicates whether splitting happened and produced a list of bundles. If
+         * this is USE_CURRENT_SOURCE_AS_IS, the current source should be processed
+         * "as is" without splitting. "bundles" is ignored in this case. If this is
+         * SPLITTING_HAPPENED, then "bundles" contains a list of bundles into which
+         * the source was split.
+         *
+         * @var string
+         */
+        public $outcome;
+        protected $shardsType = SourceSplitShard::class;
+        protected $shardsDataType = 'array';
+        /**
+         * If outcome is SPLITTING_HAPPENED, then this is a list of bundles into which
+         * the source was split. Otherwise this field is ignored. This list can be
+         * empty, which means the source represents an empty input.
+         *
+         * @param DerivedSource[] $bundles
+         */
+        public function setBundles($bundles)
+        {
+        }
+        /**
+         * @return DerivedSource[]
+         */
+        public function getBundles()
+        {
+        }
+        /**
+         * Indicates whether splitting happened and produced a list of bundles. If
+         * this is USE_CURRENT_SOURCE_AS_IS, the current source should be processed
+         * "as is" without splitting. "bundles" is ignored in this case. If this is
+         * SPLITTING_HAPPENED, then "bundles" contains a list of bundles into which
+         * the source was split.
+         *
+         * Accepted values: SOURCE_SPLIT_OUTCOME_UNKNOWN,
+         * SOURCE_SPLIT_OUTCOME_USE_CURRENT, SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED
+         *
+         * @param self::OUTCOME_* $outcome
+         */
+        public function setOutcome($outcome)
+        {
+        }
+        /**
+         * @return self::OUTCOME_*
+         */
+        public function getOutcome()
+        {
+        }
+        /**
+         * DEPRECATED in favor of bundles.
+         *
+         * @deprecated
+         * @param SourceSplitShard[] $shards
+         */
+        public function setShards($shards)
+        {
+        }
+        /**
+         * @deprecated
+         * @return SourceSplitShard[]
+         */
+        public function getShards()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DerivedSource[]
+     * Runtime class alias of \Google\Service\Dataflow\SourceSplitResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundles()
-    {
-    }
-    /**
-     * Indicates whether splitting happened and produced a list of bundles. If
-     * this is USE_CURRENT_SOURCE_AS_IS, the current source should be processed
-     * "as is" without splitting. "bundles" is ignored in this case. If this is
-     * SPLITTING_HAPPENED, then "bundles" contains a list of bundles into which
-     * the source was split.
-     *
-     * Accepted values: SOURCE_SPLIT_OUTCOME_UNKNOWN,
-     * SOURCE_SPLIT_OUTCOME_USE_CURRENT, SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED
-     *
-     * @param self::OUTCOME_* $outcome
-     */
-    public function setOutcome($outcome)
-    {
-    }
-    /**
-     * @return self::OUTCOME_*
-     */
-    public function getOutcome()
-    {
-    }
-    /**
-     * DEPRECATED in favor of bundles.
-     *
-     * @deprecated
-     * @param SourceSplitShard[] $shards
-     */
-    public function setShards($shards)
-    {
-    }
-    /**
-     * @deprecated
-     * @return SourceSplitShard[]
-     */
-    public function getShards()
+    class Google_Service_Dataflow_SourceSplitResponse extends \Google\Service\Dataflow\SourceSplitResponse
     {
     }
 }

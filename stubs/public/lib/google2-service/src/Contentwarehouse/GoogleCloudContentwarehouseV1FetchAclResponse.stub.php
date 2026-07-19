@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1FetchAclResponse extends \Google\Model
-{
-    protected $metadataType = GoogleCloudContentwarehouseV1ResponseMetadata::class;
-    protected $metadataDataType = '';
-    protected $policyType = GoogleIamV1Policy::class;
-    protected $policyDataType = '';
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param GoogleCloudContentwarehouseV1ResponseMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudContentwarehouseV1ResponseMetadata $metadata)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1FetchAclResponse extends \Google\Model
     {
+        protected $metadataType = GoogleCloudContentwarehouseV1ResponseMetadata::class;
+        protected $metadataDataType = '';
+        protected $policyType = GoogleIamV1Policy::class;
+        protected $policyDataType = '';
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param GoogleCloudContentwarehouseV1ResponseMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudContentwarehouseV1ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The IAM policy.
+         *
+         * @param GoogleIamV1Policy $policy
+         */
+        public function setPolicy(GoogleIamV1Policy $policy)
+        {
+        }
+        /**
+         * @return GoogleIamV1Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1ResponseMetadata
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The IAM policy.
-     *
-     * @param GoogleIamV1Policy $policy
-     */
-    public function setPolicy(GoogleIamV1Policy $policy)
-    {
-    }
-    /**
-     * @return GoogleIamV1Policy
-     */
-    public function getPolicy()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1FetchAclResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclResponse
     {
     }
 }

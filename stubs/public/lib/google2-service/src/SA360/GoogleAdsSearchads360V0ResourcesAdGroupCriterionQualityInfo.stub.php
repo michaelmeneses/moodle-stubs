@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAdGroupCriterionQualityInfo extends \Google\Model
-{
-    /**
-     * Output only. The quality score. This field may not be populated if Google
-     * does not have enough information to determine a value.
-     *
-     * @var int
-     */
-    public $qualityScore;
-    /**
-     * Output only. The quality score. This field may not be populated if Google
-     * does not have enough information to determine a value.
-     *
-     * @param int $qualityScore
-     */
-    public function setQualityScore($qualityScore)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAdGroupCriterionQualityInfo extends \Google\Model
     {
+        /**
+         * Output only. The quality score. This field may not be populated if Google
+         * does not have enough information to determine a value.
+         *
+         * @var int
+         */
+        public $qualityScore;
+        /**
+         * Output only. The quality score. This field may not be populated if Google
+         * does not have enough information to determine a value.
+         *
+         * @param int $qualityScore
+         */
+        public function setQualityScore($qualityScore)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQualityScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupCriterionQualityInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQualityScore()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAdGroupCriterionQualityInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupCriterionQualityInfo
     {
     }
 }

@@ -21,158 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream\Resource;
-
-/**
- * The "connectionProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datastreamService = new Google\Service\Datastream(...);
- *   $connectionProfiles = $datastreamService->projects_locations_connectionProfiles;
- *  </code>
- */
-class ProjectsLocationsConnectionProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Datastream\Resource {
+    use Google\Service\Datastream\ConnectionProfile;
+    use Google\Service\Datastream\DiscoverConnectionProfileRequest;
+    use Google\Service\Datastream\DiscoverConnectionProfileResponse;
+    use Google\Service\Datastream\ListConnectionProfilesResponse;
+    use Google\Service\Datastream\Operation;
     /**
-     * Use this method to create a connection profile in a project and location.
-     * (connectionProfiles.create)
-     *
-     * @param string $parent Required. The parent that owns the collection of
-     * ConnectionProfiles.
-     * @param ConnectionProfile $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string connectionProfileId Required. The connection profile
-     * identifier.
-     * @opt_param bool force Optional. Create the connection profile without
-     * validating it.
-     * @opt_param string requestId Optional. A request ID to identify requests.
-     * Specify a unique request ID so that if you must retry your request, the
-     * server will know to ignore the request if it has already been completed. The
-     * server will guarantee that for at least 60 minutes since the first request.
-     * For example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @opt_param bool validateOnly Optional. Only validate the connection profile,
-     * but don't create any resources. The default is false.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "connectionProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datastreamService = new Google\Service\Datastream(...);
+     *   $connectionProfiles = $datastreamService->projects_locations_connectionProfiles;
+     *  </code>
      */
-    public function create($parent, ConnectionProfile $postBody, $optParams = [])
+    class ProjectsLocationsConnectionProfiles extends \Google\Service\Resource
     {
+        /**
+         * Use this method to create a connection profile in a project and location.
+         * (connectionProfiles.create)
+         *
+         * @param string $parent Required. The parent that owns the collection of
+         * ConnectionProfiles.
+         * @param ConnectionProfile $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string connectionProfileId Required. The connection profile
+         * identifier.
+         * @opt_param bool force Optional. Create the connection profile without
+         * validating it.
+         * @opt_param string requestId Optional. A request ID to identify requests.
+         * Specify a unique request ID so that if you must retry your request, the
+         * server will know to ignore the request if it has already been completed. The
+         * server will guarantee that for at least 60 minutes since the first request.
+         * For example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @opt_param bool validateOnly Optional. Only validate the connection profile,
+         * but don't create any resources. The default is false.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ConnectionProfile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Use this method to delete a connection profile. (connectionProfiles.delete)
+         *
+         * @param string $name Required. The name of the connection profile resource to
+         * delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. A request ID to identify requests.
+         * Specify a unique request ID so that if you must retry your request, the
+         * server will know to ignore the request if it has already been completed. The
+         * server will guarantee that for at least 60 minutes after the first request.
+         * For example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Use this method to discover a connection profile. The discover API call
+         * exposes the data objects and metadata belonging to the profile. Typically, a
+         * request returns children data objects of a parent data object that's
+         * optionally supplied in the request. (connectionProfiles.discover)
+         *
+         * @param string $parent Required. The parent resource of the connection profile
+         * type. Must be in the format `projects/locations`.
+         * @param DiscoverConnectionProfileRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return DiscoverConnectionProfileResponse
+         * @throws \Google\Service\Exception
+         */
+        public function discover($parent, DiscoverConnectionProfileRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Use this method to get details about a connection profile.
+         * (connectionProfiles.get)
+         *
+         * @param string $name Required. The name of the connection profile resource to
+         * get.
+         * @param array $optParams Optional parameters.
+         * @return ConnectionProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Use this method to list connection profiles created in a project and
+         * location. (connectionProfiles.listProjectsLocationsConnectionProfiles)
+         *
+         * @param string $parent Required. The parent that owns the collection of
+         * connection profiles.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter request.
+         * @opt_param string orderBy Order by fields for the result.
+         * @opt_param int pageSize Maximum number of connection profiles to return. If
+         * unspecified, at most 50 connection profiles will be returned. The maximum
+         * value is 1000; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Page token received from a previous
+         * `ListConnectionProfiles` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListConnectionProfiles`
+         * must match the call that provided the page token.
+         * @return ListConnectionProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectionProfiles($parent, $optParams = [])
+        {
+        }
+        /**
+         * Use this method to update the parameters of a connection profile.
+         * (connectionProfiles.patch)
+         *
+         * @param string $name Output only. Identifier. The resource's name.
+         * @param ConnectionProfile $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool force Optional. Update the connection profile without
+         * validating it.
+         * @opt_param string requestId Optional. A request ID to identify requests.
+         * Specify a unique request ID so that if you must retry your request, the
+         * server will know to ignore the request if it has already been completed. The
+         * server will guarantee that for at least 60 minutes since the first request.
+         * For example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the ConnectionProfile resource by the update. The
+         * fields specified in the update_mask are relative to the resource, not the
+         * full request. A field will be overwritten if it is in the mask. If the user
+         * does not provide a mask then all fields will be overwritten.
+         * @opt_param bool validateOnly Optional. Only validate the connection profile,
+         * but don't update any resources. The default is false.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, ConnectionProfile $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Use this method to delete a connection profile. (connectionProfiles.delete)
-     *
-     * @param string $name Required. The name of the connection profile resource to
-     * delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. A request ID to identify requests.
-     * Specify a unique request ID so that if you must retry your request, the
-     * server will know to ignore the request if it has already been completed. The
-     * server will guarantee that for at least 60 minutes after the first request.
-     * For example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Datastream\Resource\ProjectsLocationsConnectionProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Use this method to discover a connection profile. The discover API call
-     * exposes the data objects and metadata belonging to the profile. Typically, a
-     * request returns children data objects of a parent data object that's
-     * optionally supplied in the request. (connectionProfiles.discover)
-     *
-     * @param string $parent Required. The parent resource of the connection profile
-     * type. Must be in the format `projects/locations`.
-     * @param DiscoverConnectionProfileRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return DiscoverConnectionProfileResponse
-     * @throws \Google\Service\Exception
-     */
-    public function discover($parent, DiscoverConnectionProfileRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Use this method to get details about a connection profile.
-     * (connectionProfiles.get)
-     *
-     * @param string $name Required. The name of the connection profile resource to
-     * get.
-     * @param array $optParams Optional parameters.
-     * @return ConnectionProfile
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Use this method to list connection profiles created in a project and
-     * location. (connectionProfiles.listProjectsLocationsConnectionProfiles)
-     *
-     * @param string $parent Required. The parent that owns the collection of
-     * connection profiles.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter request.
-     * @opt_param string orderBy Order by fields for the result.
-     * @opt_param int pageSize Maximum number of connection profiles to return. If
-     * unspecified, at most 50 connection profiles will be returned. The maximum
-     * value is 1000; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Page token received from a previous
-     * `ListConnectionProfiles` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListConnectionProfiles`
-     * must match the call that provided the page token.
-     * @return ListConnectionProfilesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsConnectionProfiles($parent, $optParams = [])
-    {
-    }
-    /**
-     * Use this method to update the parameters of a connection profile.
-     * (connectionProfiles.patch)
-     *
-     * @param string $name Output only. Identifier. The resource's name.
-     * @param ConnectionProfile $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool force Optional. Update the connection profile without
-     * validating it.
-     * @opt_param string requestId Optional. A request ID to identify requests.
-     * Specify a unique request ID so that if you must retry your request, the
-     * server will know to ignore the request if it has already been completed. The
-     * server will guarantee that for at least 60 minutes since the first request.
-     * For example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the ConnectionProfile resource by the update. The
-     * fields specified in the update_mask are relative to the resource, not the
-     * full request. A field will be overwritten if it is in the mask. If the user
-     * does not provide a mask then all fields will be overwritten.
-     * @opt_param bool validateOnly Optional. Only validate the connection profile,
-     * but don't update any resources. The default is false.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, ConnectionProfile $postBody, $optParams = [])
+    class Google_Service_Datastream_Resource_ProjectsLocationsConnectionProfiles extends \Google\Service\Datastream\Resource\ProjectsLocationsConnectionProfiles
     {
     }
 }

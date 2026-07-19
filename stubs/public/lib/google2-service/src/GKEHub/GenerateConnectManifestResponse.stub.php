@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class GenerateConnectManifestResponse extends \Google\Collection
-{
-    protected $collection_key = 'manifest';
-    protected $manifestType = ConnectAgentResource::class;
-    protected $manifestDataType = 'array';
-    /**
-     * @param ConnectAgentResource[]
-     */
-    public function setManifest($manifest)
+namespace Google\Service\GKEHub {
+    class GenerateConnectManifestResponse extends \Google\Collection
     {
+        protected $collection_key = 'manifest';
+        protected $manifestType = ConnectAgentResource::class;
+        protected $manifestDataType = 'array';
+        /**
+         * @param ConnectAgentResource[]
+         */
+        public function setManifest($manifest)
+        {
+        }
+        /**
+         * @return ConnectAgentResource[]
+         */
+        public function getManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectAgentResource[]
+     * Runtime class alias of \Google\Service\GKEHub\GenerateConnectManifestResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManifest()
+    class Google_Service_GKEHub_GenerateConnectManifestResponse extends \Google\Service\GKEHub\GenerateConnectManifestResponse
     {
     }
 }

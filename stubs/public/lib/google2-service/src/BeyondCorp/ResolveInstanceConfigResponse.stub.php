@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ResolveInstanceConfigResponse extends \Google\Model
-{
-    protected $instanceConfigType = ConnectorInstanceConfig::class;
-    protected $instanceConfigDataType = '';
-    /**
-     * @param ConnectorInstanceConfig
-     */
-    public function setInstanceConfig(ConnectorInstanceConfig $instanceConfig)
+namespace Google\Service\BeyondCorp {
+    class ResolveInstanceConfigResponse extends \Google\Model
     {
+        protected $instanceConfigType = ConnectorInstanceConfig::class;
+        protected $instanceConfigDataType = '';
+        /**
+         * @param ConnectorInstanceConfig
+         */
+        public function setInstanceConfig(ConnectorInstanceConfig $instanceConfig)
+        {
+        }
+        /**
+         * @return ConnectorInstanceConfig
+         */
+        public function getInstanceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectorInstanceConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\ResolveInstanceConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceConfig()
+    class Google_Service_BeyondCorp_ResolveInstanceConfigResponse extends \Google\Service\BeyondCorp\ResolveInstanceConfigResponse
     {
     }
 }

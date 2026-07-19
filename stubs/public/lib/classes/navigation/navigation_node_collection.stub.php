@@ -20,146 +20,159 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Navigation node collection
- *
- * This class is responsible for managing a collection of navigation nodes.
- * It is required because a node's unique identifier is a combination of both its
- * key and its type.
- *
- * Originally an array was used with a string key that was a combination of the two
- * however it was decided that a better solution would be to use a class that
- * implements the standard IteratorAggregate interface.
- *
- * @package   core
- * @category  navigation
- * @copyright 2010 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class navigation_node_collection implements Countable, IteratorAggregate
-{
+namespace core\navigation {
+    use ArrayIterator;
+    use Countable;
+    use IteratorAggregate;
+    use Traversable;
     /**
-     * A multidimensional array to where the first key is the type and the second
-     * key is the nodes key.
-     * @var array
-     */
-    protected $collection = [];
-    /**
-     * An array that contains references to nodes in the same order they were added.
-     * This is maintained as a progressive array.
-     * @var array
-     */
-    protected $orderedcollection = [];
-    /**
-     * A reference to the last node that was added to the collection
-     * @var navigation_node
-     */
-    protected $last = null;
-    /**
-     * The total number of items added to this array.
-     * @var int
-     */
-    protected $count = 0;
-    /**
-     * Label for collection of nodes.
-     * @var string
-     */
-    protected $collectionlabel = '';
-    /**
-     * Adds a navigation node to the collection.
+     * Navigation node collection
      *
-     * @param navigation_node $node Node to add
-     * @param string $beforekey If specified, adds before a node with this key,
-     *   otherwise adds at end
-     * @return navigation_node Added node
+     * This class is responsible for managing a collection of navigation nodes.
+     * It is required because a node's unique identifier is a combination of both its
+     * key and its type.
+     *
+     * Originally an array was used with a string key that was a combination of the two
+     * however it was decided that a better solution would be to use a class that
+     * implements the standard IteratorAggregate interface.
+     *
+     * @package   core
+     * @category  navigation
+     * @copyright 2010 Sam Hemelryk
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function add(navigation_node $node, $beforekey = null)
+    class navigation_node_collection implements Countable, IteratorAggregate
     {
+        /**
+         * A multidimensional array to where the first key is the type and the second
+         * key is the nodes key.
+         * @var array
+         */
+        protected $collection = [];
+        /**
+         * An array that contains references to nodes in the same order they were added.
+         * This is maintained as a progressive array.
+         * @var array
+         */
+        protected $orderedcollection = [];
+        /**
+         * A reference to the last node that was added to the collection
+         * @var navigation_node
+         */
+        protected $last = null;
+        /**
+         * The total number of items added to this array.
+         * @var int
+         */
+        protected $count = 0;
+        /**
+         * Label for collection of nodes.
+         * @var string
+         */
+        protected $collectionlabel = '';
+        /**
+         * Adds a navigation node to the collection.
+         *
+         * @param navigation_node $node Node to add
+         * @param string $beforekey If specified, adds before a node with this key,
+         *   otherwise adds at end
+         * @return navigation_node Added node
+         */
+        public function add(navigation_node $node, $beforekey = null)
+        {
+        }
+        /**
+         * Return a list of all the keys of all the nodes.
+         *
+         * @return array the keys.
+         */
+        public function get_key_list()
+        {
+        }
+        /**
+         * Set a label for this collection.
+         *
+         * @param string $label
+         */
+        public function set_collectionlabel($label)
+        {
+        }
+        /**
+         * Return a label for this collection.
+         *
+         * @return string
+         */
+        public function get_collectionlabel()
+        {
+        }
+        /**
+         * Fetches a node from this collection.
+         *
+         * @param string|int $key The key of the node we want to find.
+         * @param int $type One of navigation_node::TYPE_*.
+         * @return navigation_node|null|false
+         */
+        public function get($key, $type = null)
+        {
+        }
+        /**
+         * Searches for a node with matching key and type.
+         *
+         * This function searches both the nodes in this collection and all of
+         * the nodes in each collection belonging to the nodes in this collection.
+         *
+         * Recursive.
+         *
+         * @param string|int $key  The key of the node we want to find.
+         * @param int $type  One of navigation_node::TYPE_*.
+         * @return navigation_node|false
+         */
+        public function find($key, $type = null)
+        {
+        }
+        /**
+         * Fetches the last node that was added to this collection
+         *
+         * @return navigation_node
+         */
+        public function last()
+        {
+        }
+        /**
+         * Fetches all nodes of a given type from this collection
+         *
+         * @param string|int $type  node type being searched for.
+         * @return array ordered collection
+         */
+        public function type($type)
+        {
+        }
+        /**
+         * Removes the node with the given key and type from the collection
+         *
+         * @param string|int $key The key of the node we want to find.
+         * @param int $type
+         * @return bool
+         */
+        public function remove($key, $type = null)
+        {
+        }
+        #[\Override]
+        public function count(): int
+        {
+        }
+        #[\Override]
+        public function getIterator(): Traversable
+        {
+        }
     }
+}
+namespace {
     /**
-     * Return a list of all the keys of all the nodes.
-     *
-     * @return array the keys.
+     * Runtime class alias of \core\navigation\navigation_node_collection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get_key_list()
-    {
-    }
-    /**
-     * Set a label for this collection.
-     *
-     * @param string $label
-     */
-    public function set_collectionlabel($label)
-    {
-    }
-    /**
-     * Return a label for this collection.
-     *
-     * @return string
-     */
-    public function get_collectionlabel()
-    {
-    }
-    /**
-     * Fetches a node from this collection.
-     *
-     * @param string|int $key The key of the node we want to find.
-     * @param int $type One of navigation_node::TYPE_*.
-     * @return navigation_node|null|false
-     */
-    public function get($key, $type = null)
-    {
-    }
-    /**
-     * Searches for a node with matching key and type.
-     *
-     * This function searches both the nodes in this collection and all of
-     * the nodes in each collection belonging to the nodes in this collection.
-     *
-     * Recursive.
-     *
-     * @param string|int $key  The key of the node we want to find.
-     * @param int $type  One of navigation_node::TYPE_*.
-     * @return navigation_node|false
-     */
-    public function find($key, $type = null)
-    {
-    }
-    /**
-     * Fetches the last node that was added to this collection
-     *
-     * @return navigation_node
-     */
-    public function last()
-    {
-    }
-    /**
-     * Fetches all nodes of a given type from this collection
-     *
-     * @param string|int $type  node type being searched for.
-     * @return array ordered collection
-     */
-    public function type($type)
-    {
-    }
-    /**
-     * Removes the node with the given key and type from the collection
-     *
-     * @param string|int $key The key of the node we want to find.
-     * @param int $type
-     * @return bool
-     */
-    public function remove($key, $type = null)
-    {
-    }
-    #[\Override]
-    public function count(): int
-    {
-    }
-    #[\Override]
-    public function getIterator(): Traversable
+    class navigation_node_collection extends \core\navigation\navigation_node_collection
     {
     }
 }

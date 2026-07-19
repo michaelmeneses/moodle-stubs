@@ -29,6 +29,7 @@
  */
 namespace mod_data\external;
 
+use core\external\exporter;
 /**
  * Class for exporting field data.
  *

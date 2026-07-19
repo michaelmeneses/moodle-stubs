@@ -21,279 +21,288 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaUserEvent extends \Google\Collection
-{
-    protected $collection_key = 'tagIds';
-    protected $attributesType = GoogleCloudDiscoveryengineV1betaCustomAttribute::class;
-    protected $attributesDataType = 'map';
-    /**
-     * @var string
-     */
-    public $attributionToken;
-    protected $completionInfoType = GoogleCloudDiscoveryengineV1betaCompletionInfo::class;
-    protected $completionInfoDataType = '';
-    /**
-     * @var bool
-     */
-    public $directUserRequest;
-    protected $documentsType = GoogleCloudDiscoveryengineV1betaDocumentInfo::class;
-    protected $documentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * @var string
-     */
-    public $eventType;
-    /**
-     * @var string
-     */
-    public $filter;
-    protected $mediaInfoType = GoogleCloudDiscoveryengineV1betaMediaInfo::class;
-    protected $mediaInfoDataType = '';
-    protected $pageInfoType = GoogleCloudDiscoveryengineV1betaPageInfo::class;
-    protected $pageInfoDataType = '';
-    protected $panelType = GoogleCloudDiscoveryengineV1betaPanelInfo::class;
-    protected $panelDataType = '';
-    /**
-     * @var string[]
-     */
-    public $promotionIds;
-    protected $searchInfoType = GoogleCloudDiscoveryengineV1betaSearchInfo::class;
-    protected $searchInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string[]
-     */
-    public $tagIds;
-    protected $transactionInfoType = GoogleCloudDiscoveryengineV1betaTransactionInfo::class;
-    protected $transactionInfoDataType = '';
-    protected $userInfoType = GoogleCloudDiscoveryengineV1betaUserInfo::class;
-    protected $userInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $userPseudoId;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaCustomAttribute[]
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaUserEvent extends \Google\Collection
     {
+        protected $collection_key = 'tagIds';
+        protected $attributesType = GoogleCloudDiscoveryengineV1betaCustomAttribute::class;
+        protected $attributesDataType = 'map';
+        /**
+         * @var string
+         */
+        public $attributionToken;
+        protected $completionInfoType = GoogleCloudDiscoveryengineV1betaCompletionInfo::class;
+        protected $completionInfoDataType = '';
+        /**
+         * @var bool
+         */
+        public $directUserRequest;
+        protected $documentsType = GoogleCloudDiscoveryengineV1betaDocumentInfo::class;
+        protected $documentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * @var string
+         */
+        public $eventType;
+        /**
+         * @var string
+         */
+        public $filter;
+        protected $mediaInfoType = GoogleCloudDiscoveryengineV1betaMediaInfo::class;
+        protected $mediaInfoDataType = '';
+        protected $pageInfoType = GoogleCloudDiscoveryengineV1betaPageInfo::class;
+        protected $pageInfoDataType = '';
+        protected $panelType = GoogleCloudDiscoveryengineV1betaPanelInfo::class;
+        protected $panelDataType = '';
+        /**
+         * @var string[]
+         */
+        public $promotionIds;
+        protected $searchInfoType = GoogleCloudDiscoveryengineV1betaSearchInfo::class;
+        protected $searchInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $sessionId;
+        /**
+         * @var string[]
+         */
+        public $tagIds;
+        protected $transactionInfoType = GoogleCloudDiscoveryengineV1betaTransactionInfo::class;
+        protected $transactionInfoDataType = '';
+        protected $userInfoType = GoogleCloudDiscoveryengineV1betaUserInfo::class;
+        protected $userInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $userPseudoId;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaCustomAttribute[]
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaCustomAttribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttributionToken($attributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaCompletionInfo
+         */
+        public function setCompletionInfo(GoogleCloudDiscoveryengineV1betaCompletionInfo $completionInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaCompletionInfo
+         */
+        public function getCompletionInfo()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDirectUserRequest($directUserRequest)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDirectUserRequest()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDocumentInfo[]
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDocumentInfo[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventType($eventType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaMediaInfo
+         */
+        public function setMediaInfo(GoogleCloudDiscoveryengineV1betaMediaInfo $mediaInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaMediaInfo
+         */
+        public function getMediaInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaPageInfo
+         */
+        public function setPageInfo(GoogleCloudDiscoveryengineV1betaPageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaPageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaPanelInfo
+         */
+        public function setPanel(GoogleCloudDiscoveryengineV1betaPanelInfo $panel)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaPanelInfo
+         */
+        public function getPanel()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPromotionIds($promotionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPromotionIds()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchInfo
+         */
+        public function setSearchInfo(GoogleCloudDiscoveryengineV1betaSearchInfo $searchInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchInfo
+         */
+        public function getSearchInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionId($sessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTagIds($tagIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTagIds()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaTransactionInfo
+         */
+        public function setTransactionInfo(GoogleCloudDiscoveryengineV1betaTransactionInfo $transactionInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTransactionInfo
+         */
+        public function getTransactionInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaUserInfo
+         */
+        public function setUserInfo(GoogleCloudDiscoveryengineV1betaUserInfo $userInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaUserInfo
+         */
+        public function getUserInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserPseudoId($userPseudoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPseudoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaCustomAttribute[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaUserEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttributionToken($attributionToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttributionToken()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaCompletionInfo
-     */
-    public function setCompletionInfo(GoogleCloudDiscoveryengineV1betaCompletionInfo $completionInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaCompletionInfo
-     */
-    public function getCompletionInfo()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDirectUserRequest($directUserRequest)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDirectUserRequest()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDocumentInfo[]
-     */
-    public function setDocuments($documents)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaDocumentInfo[]
-     */
-    public function getDocuments()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventType($eventType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaMediaInfo
-     */
-    public function setMediaInfo(GoogleCloudDiscoveryengineV1betaMediaInfo $mediaInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaMediaInfo
-     */
-    public function getMediaInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaPageInfo
-     */
-    public function setPageInfo(GoogleCloudDiscoveryengineV1betaPageInfo $pageInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaPageInfo
-     */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaPanelInfo
-     */
-    public function setPanel(GoogleCloudDiscoveryengineV1betaPanelInfo $panel)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaPanelInfo
-     */
-    public function getPanel()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPromotionIds($promotionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPromotionIds()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchInfo
-     */
-    public function setSearchInfo(GoogleCloudDiscoveryengineV1betaSearchInfo $searchInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchInfo
-     */
-    public function getSearchInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionId($sessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTagIds($tagIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTagIds()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaTransactionInfo
-     */
-    public function setTransactionInfo(GoogleCloudDiscoveryengineV1betaTransactionInfo $transactionInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaTransactionInfo
-     */
-    public function getTransactionInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaUserInfo
-     */
-    public function setUserInfo(GoogleCloudDiscoveryengineV1betaUserInfo $userInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaUserInfo
-     */
-    public function getUserInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserPseudoId($userPseudoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPseudoId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaUserEvent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaUserEvent
     {
     }
 }

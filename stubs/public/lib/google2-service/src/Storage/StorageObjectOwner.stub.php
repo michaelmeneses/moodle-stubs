@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class StorageObjectOwner extends \Google\Model
-{
-    /**
-     * The entity, in the form user-userId.
-     *
-     * @var string
-     */
-    public $entity;
-    /**
-     * The ID for the entity.
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * The entity, in the form user-userId.
-     *
-     * @param string $entity
-     */
-    public function setEntity($entity)
+namespace Google\Service\Storage {
+    class StorageObjectOwner extends \Google\Model
     {
+        /**
+         * The entity, in the form user-userId.
+         *
+         * @var string
+         */
+        public $entity;
+        /**
+         * The ID for the entity.
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * The entity, in the form user-userId.
+         *
+         * @param string $entity
+         */
+        public function setEntity($entity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * The ID for the entity.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\StorageObjectOwner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
-    {
-    }
-    /**
-     * The ID for the entity.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
+    class Google_Service_Storage_StorageObjectOwner extends \Google\Service\Storage\StorageObjectOwner
     {
     }
 }

@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\Common;
 
+use OpenSpout\Common\Entity\Style\Style;
+use OpenSpout\Common\TempFolderOptionTrait;
 abstract class AbstractOptions
 {
     use TempFolderOptionTrait;

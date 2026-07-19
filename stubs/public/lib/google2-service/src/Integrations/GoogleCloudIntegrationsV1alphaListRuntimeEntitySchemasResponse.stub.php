@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimeEntitySchemas';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimeEntitySchemasType = GoogleCloudIntegrationsV1alphaRuntimeEntitySchema::class;
-    protected $runtimeEntitySchemasDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimeEntitySchemas';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimeEntitySchemasType = GoogleCloudIntegrationsV1alphaRuntimeEntitySchema::class;
+        protected $runtimeEntitySchemasDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Runtime entity schemas.
+         *
+         * @param GoogleCloudIntegrationsV1alphaRuntimeEntitySchema[] $runtimeEntitySchemas
+         */
+        public function setRuntimeEntitySchemas($runtimeEntitySchemas)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaRuntimeEntitySchema[]
+         */
+        public function getRuntimeEntitySchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Runtime entity schemas.
-     *
-     * @param GoogleCloudIntegrationsV1alphaRuntimeEntitySchema[] $runtimeEntitySchemas
-     */
-    public function setRuntimeEntitySchemas($runtimeEntitySchemas)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaRuntimeEntitySchema[]
-     */
-    public function getRuntimeEntitySchemas()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListRuntimeEntitySchemasResponse
     {
     }
 }

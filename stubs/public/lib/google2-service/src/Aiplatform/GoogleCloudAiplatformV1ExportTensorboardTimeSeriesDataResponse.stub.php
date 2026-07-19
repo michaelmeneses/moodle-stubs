@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataResponse extends \Google\Collection
-{
-    protected $collection_key = 'timeSeriesDataPoints';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $timeSeriesDataPointsType = GoogleCloudAiplatformV1TimeSeriesDataPoint::class;
-    protected $timeSeriesDataPointsDataType = 'array';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataResponse extends \Google\Collection
     {
+        protected $collection_key = 'timeSeriesDataPoints';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $timeSeriesDataPointsType = GoogleCloudAiplatformV1TimeSeriesDataPoint::class;
+        protected $timeSeriesDataPointsDataType = 'array';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The returned time series data points.
+         *
+         * @param GoogleCloudAiplatformV1TimeSeriesDataPoint[] $timeSeriesDataPoints
+         */
+        public function setTimeSeriesDataPoints($timeSeriesDataPoints)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TimeSeriesDataPoint[]
+         */
+        public function getTimeSeriesDataPoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The returned time series data points.
-     *
-     * @param GoogleCloudAiplatformV1TimeSeriesDataPoint[] $timeSeriesDataPoints
-     */
-    public function setTimeSeriesDataPoints($timeSeriesDataPoints)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TimeSeriesDataPoint[]
-     */
-    public function getTimeSeriesDataPoints()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataResponse
     {
     }
 }

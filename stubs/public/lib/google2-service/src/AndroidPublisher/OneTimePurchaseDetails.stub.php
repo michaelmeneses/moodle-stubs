@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimePurchaseDetails extends \Google\Model
-{
-    /**
-     * The offer ID of the one-time purchase offer.
-     *
-     * @var string
-     */
-    public $offerId;
-    protected $preorderDetailsType = PreorderDetails::class;
-    protected $preorderDetailsDataType = '';
-    /**
-     * ID of the purchase option. This field is set for both purchase options and
-     * variant offers. For purchase options, this ID identifies the purchase
-     * option itself. For variant offers, this ID refers to the associated
-     * purchase option, and in conjunction with offer_id it identifies the variant
-     * offer.
-     *
-     * @var string
-     */
-    public $purchaseOptionId;
-    /**
-     * The number of items purchased (for multi-quantity item purchases).
-     *
-     * @var int
-     */
-    public $quantity;
-    protected $rentalDetailsType = RentalDetails::class;
-    protected $rentalDetailsDataType = '';
-    /**
-     * The offer ID of the one-time purchase offer.
-     *
-     * @param string $offerId
-     */
-    public function setOfferId($offerId)
+namespace Google\Service\AndroidPublisher {
+    class OneTimePurchaseDetails extends \Google\Model
     {
+        /**
+         * The offer ID of the one-time purchase offer.
+         *
+         * @var string
+         */
+        public $offerId;
+        protected $preorderDetailsType = PreorderDetails::class;
+        protected $preorderDetailsDataType = '';
+        /**
+         * ID of the purchase option. This field is set for both purchase options and
+         * variant offers. For purchase options, this ID identifies the purchase
+         * option itself. For variant offers, this ID refers to the associated
+         * purchase option, and in conjunction with offer_id it identifies the variant
+         * offer.
+         *
+         * @var string
+         */
+        public $purchaseOptionId;
+        /**
+         * The number of items purchased (for multi-quantity item purchases).
+         *
+         * @var int
+         */
+        public $quantity;
+        protected $rentalDetailsType = RentalDetails::class;
+        protected $rentalDetailsDataType = '';
+        /**
+         * The offer ID of the one-time purchase offer.
+         *
+         * @param string $offerId
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * The details of a pre-order purchase. Only set if it is a pre-order
+         * purchase. Note that this field will be set even after pre-order is
+         * fulfilled.
+         *
+         * @param PreorderDetails $preorderDetails
+         */
+        public function setPreorderDetails(PreorderDetails $preorderDetails)
+        {
+        }
+        /**
+         * @return PreorderDetails
+         */
+        public function getPreorderDetails()
+        {
+        }
+        /**
+         * ID of the purchase option. This field is set for both purchase options and
+         * variant offers. For purchase options, this ID identifies the purchase
+         * option itself. For variant offers, this ID refers to the associated
+         * purchase option, and in conjunction with offer_id it identifies the variant
+         * offer.
+         *
+         * @param string $purchaseOptionId
+         */
+        public function setPurchaseOptionId($purchaseOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurchaseOptionId()
+        {
+        }
+        /**
+         * The number of items purchased (for multi-quantity item purchases).
+         *
+         * @param int $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * The details of a rent purchase. Only set if it is a rent purchase.
+         *
+         * @param RentalDetails $rentalDetails
+         */
+        public function setRentalDetails(RentalDetails $rentalDetails)
+        {
+        }
+        /**
+         * @return RentalDetails
+         */
+        public function getRentalDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimePurchaseDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOfferId()
-    {
-    }
-    /**
-     * The details of a pre-order purchase. Only set if it is a pre-order
-     * purchase. Note that this field will be set even after pre-order is
-     * fulfilled.
-     *
-     * @param PreorderDetails $preorderDetails
-     */
-    public function setPreorderDetails(PreorderDetails $preorderDetails)
-    {
-    }
-    /**
-     * @return PreorderDetails
-     */
-    public function getPreorderDetails()
-    {
-    }
-    /**
-     * ID of the purchase option. This field is set for both purchase options and
-     * variant offers. For purchase options, this ID identifies the purchase
-     * option itself. For variant offers, this ID refers to the associated
-     * purchase option, and in conjunction with offer_id it identifies the variant
-     * offer.
-     *
-     * @param string $purchaseOptionId
-     */
-    public function setPurchaseOptionId($purchaseOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurchaseOptionId()
-    {
-    }
-    /**
-     * The number of items purchased (for multi-quantity item purchases).
-     *
-     * @param int $quantity
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getQuantity()
-    {
-    }
-    /**
-     * The details of a rent purchase. Only set if it is a rent purchase.
-     *
-     * @param RentalDetails $rentalDetails
-     */
-    public function setRentalDetails(RentalDetails $rentalDetails)
-    {
-    }
-    /**
-     * @return RentalDetails
-     */
-    public function getRentalDetails()
+    class Google_Service_AndroidPublisher_OneTimePurchaseDetails extends \Google\Service\AndroidPublisher\OneTimePurchaseDetails
     {
     }
 }

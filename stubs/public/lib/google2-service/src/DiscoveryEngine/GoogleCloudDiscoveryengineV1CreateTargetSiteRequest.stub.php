@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CreateTargetSiteRequest extends \Google\Model
-{
-    /**
-     * Required. Parent resource name of TargetSite, such as `projects/{project}/l
-     * ocations/{location}/collections/{collection}/dataStores/{data_store}/siteSe
-     * archEngine`.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $targetSiteType = GoogleCloudDiscoveryengineV1TargetSite::class;
-    protected $targetSiteDataType = '';
-    /**
-     * Required. Parent resource name of TargetSite, such as `projects/{project}/l
-     * ocations/{location}/collections/{collection}/dataStores/{data_store}/siteSe
-     * archEngine`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CreateTargetSiteRequest extends \Google\Model
     {
+        /**
+         * Required. Parent resource name of TargetSite, such as `projects/{project}/l
+         * ocations/{location}/collections/{collection}/dataStores/{data_store}/siteSe
+         * archEngine`.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $targetSiteType = GoogleCloudDiscoveryengineV1TargetSite::class;
+        protected $targetSiteDataType = '';
+        /**
+         * Required. Parent resource name of TargetSite, such as `projects/{project}/l
+         * ocations/{location}/collections/{collection}/dataStores/{data_store}/siteSe
+         * archEngine`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The TargetSite to create.
+         *
+         * @param GoogleCloudDiscoveryengineV1TargetSite $targetSite
+         */
+        public function setTargetSite(GoogleCloudDiscoveryengineV1TargetSite $targetSite)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1TargetSite
+         */
+        public function getTargetSite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CreateTargetSiteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The TargetSite to create.
-     *
-     * @param GoogleCloudDiscoveryengineV1TargetSite $targetSite
-     */
-    public function setTargetSite(GoogleCloudDiscoveryengineV1TargetSite $targetSite)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1TargetSite
-     */
-    public function getTargetSite()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CreateTargetSiteRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CreateTargetSiteRequest
     {
     }
 }

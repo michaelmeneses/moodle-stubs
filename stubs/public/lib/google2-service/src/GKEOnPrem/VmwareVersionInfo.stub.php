@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareVersionInfo extends \Google\Collection
-{
-    protected $collection_key = 'dependencies';
-    protected $dependenciesType = UpgradeDependency::class;
-    protected $dependenciesDataType = 'array';
-    /**
-     * If set, the cluster dependencies (e.g. the admin cluster, other user
-     * clusters managed by the same admin cluster) must be upgraded before this
-     * version can be installed or upgraded to.
-     *
-     * @var bool
-     */
-    public $hasDependencies;
-    /**
-     * If set, the version is installed in the admin cluster. Otherwise, the
-     * version bundle must be downloaded and installed before a user cluster can
-     * be created at or upgraded to this version.
-     *
-     * @var bool
-     */
-    public $isInstalled;
-    /**
-     * Version number e.g. 1.13.1-gke.1000.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The list of upgrade dependencies for this version.
-     *
-     * @param UpgradeDependency[] $dependencies
-     */
-    public function setDependencies($dependencies)
+namespace Google\Service\GKEOnPrem {
+    class VmwareVersionInfo extends \Google\Collection
     {
+        protected $collection_key = 'dependencies';
+        protected $dependenciesType = UpgradeDependency::class;
+        protected $dependenciesDataType = 'array';
+        /**
+         * If set, the cluster dependencies (e.g. the admin cluster, other user
+         * clusters managed by the same admin cluster) must be upgraded before this
+         * version can be installed or upgraded to.
+         *
+         * @var bool
+         */
+        public $hasDependencies;
+        /**
+         * If set, the version is installed in the admin cluster. Otherwise, the
+         * version bundle must be downloaded and installed before a user cluster can
+         * be created at or upgraded to this version.
+         *
+         * @var bool
+         */
+        public $isInstalled;
+        /**
+         * Version number e.g. 1.13.1-gke.1000.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The list of upgrade dependencies for this version.
+         *
+         * @param UpgradeDependency[] $dependencies
+         */
+        public function setDependencies($dependencies)
+        {
+        }
+        /**
+         * @return UpgradeDependency[]
+         */
+        public function getDependencies()
+        {
+        }
+        /**
+         * If set, the cluster dependencies (e.g. the admin cluster, other user
+         * clusters managed by the same admin cluster) must be upgraded before this
+         * version can be installed or upgraded to.
+         *
+         * @param bool $hasDependencies
+         */
+        public function setHasDependencies($hasDependencies)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasDependencies()
+        {
+        }
+        /**
+         * If set, the version is installed in the admin cluster. Otherwise, the
+         * version bundle must be downloaded and installed before a user cluster can
+         * be created at or upgraded to this version.
+         *
+         * @param bool $isInstalled
+         */
+        public function setIsInstalled($isInstalled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInstalled()
+        {
+        }
+        /**
+         * Version number e.g. 1.13.1-gke.1000.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpgradeDependency[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareVersionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencies()
-    {
-    }
-    /**
-     * If set, the cluster dependencies (e.g. the admin cluster, other user
-     * clusters managed by the same admin cluster) must be upgraded before this
-     * version can be installed or upgraded to.
-     *
-     * @param bool $hasDependencies
-     */
-    public function setHasDependencies($hasDependencies)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasDependencies()
-    {
-    }
-    /**
-     * If set, the version is installed in the admin cluster. Otherwise, the
-     * version bundle must be downloaded and installed before a user cluster can
-     * be created at or upgraded to this version.
-     *
-     * @param bool $isInstalled
-     */
-    public function setIsInstalled($isInstalled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInstalled()
-    {
-    }
-    /**
-     * Version number e.g. 1.13.1-gke.1000.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEOnPrem_VmwareVersionInfo extends \Google\Service\GKEOnPrem\VmwareVersionInfo
     {
     }
 }

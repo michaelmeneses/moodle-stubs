@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ProductBundleDetailsBundleElement extends \Google\Model
-{
-    /**
-     * Required. Output only. Product resource name that identifies the bundle
-     * element. The format is 'partners/{partner_id}/products/{product_id}'.
-     *
-     * @var string
-     */
-    public $product;
-    /**
-     * Required. Output only. Product resource name that identifies the bundle
-     * element. The format is 'partners/{partner_id}/products/{product_id}'.
-     *
-     * @param string $product
-     */
-    public function setProduct($product)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ProductBundleDetailsBundleElement extends \Google\Model
     {
+        /**
+         * Required. Output only. Product resource name that identifies the bundle
+         * element. The format is 'partners/{partner_id}/products/{product_id}'.
+         *
+         * @var string
+         */
+        public $product;
+        /**
+         * Required. Output only. Product resource name that identifies the bundle
+         * element. The format is 'partners/{partner_id}/products/{product_id}'.
+         *
+         * @param string $product
+         */
+        public function setProduct($product)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProduct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ProductBundleDetailsBundleElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProduct()
+    class Google_Service_PaymentsResellerSubscription_ProductBundleDetailsBundleElement extends \Google\Service\PaymentsResellerSubscription\ProductBundleDetailsBundleElement
     {
     }
 }

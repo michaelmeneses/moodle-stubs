@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class AggregationResult extends \Google\Model
-{
-    protected $aggregatePropertiesType = Value::class;
-    protected $aggregatePropertiesDataType = 'map';
-    /**
-     * The result of the aggregation functions, ex: `COUNT(*) AS total_entities`.
-     * The key is the alias assigned to the aggregation function on input and the
-     * size of this map equals the number of aggregation functions in the query.
-     *
-     * @param Value[] $aggregateProperties
-     */
-    public function setAggregateProperties($aggregateProperties)
+namespace Google\Service\Datastore {
+    class AggregationResult extends \Google\Model
     {
+        protected $aggregatePropertiesType = Value::class;
+        protected $aggregatePropertiesDataType = 'map';
+        /**
+         * The result of the aggregation functions, ex: `COUNT(*) AS total_entities`.
+         * The key is the alias assigned to the aggregation function on input and the
+         * size of this map equals the number of aggregation functions in the query.
+         *
+         * @param Value[] $aggregateProperties
+         */
+        public function setAggregateProperties($aggregateProperties)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getAggregateProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\Datastore\AggregationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateProperties()
+    class Google_Service_Datastore_AggregationResult extends \Google\Service\Datastore\AggregationResult
     {
     }
 }

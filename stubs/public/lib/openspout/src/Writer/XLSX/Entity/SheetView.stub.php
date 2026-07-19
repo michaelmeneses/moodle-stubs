@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\XLSX\Entity;
 
+use OpenSpout\Common\Exception\InvalidArgumentException;
+use OpenSpout\Reader\XLSX\Helper\CellHelper;
 final class SheetView
 {
     private bool $showFormulas = false;

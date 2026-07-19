@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceAccessors extends \Google\Model
-{
-    protected $advertisersType = InventorySourceAccessorsAdvertiserAccessors::class;
-    protected $advertisersDataType = '';
-    protected $partnerType = InventorySourceAccessorsPartnerAccessor::class;
-    protected $partnerDataType = '';
-    /**
-     * The advertisers with access to the inventory source. All advertisers must
-     * belong to the same partner.
-     *
-     * @param InventorySourceAccessorsAdvertiserAccessors $advertisers
-     */
-    public function setAdvertisers(InventorySourceAccessorsAdvertiserAccessors $advertisers)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceAccessors extends \Google\Model
     {
+        protected $advertisersType = InventorySourceAccessorsAdvertiserAccessors::class;
+        protected $advertisersDataType = '';
+        protected $partnerType = InventorySourceAccessorsPartnerAccessor::class;
+        protected $partnerDataType = '';
+        /**
+         * The advertisers with access to the inventory source. All advertisers must
+         * belong to the same partner.
+         *
+         * @param InventorySourceAccessorsAdvertiserAccessors $advertisers
+         */
+        public function setAdvertisers(InventorySourceAccessorsAdvertiserAccessors $advertisers)
+        {
+        }
+        /**
+         * @return InventorySourceAccessorsAdvertiserAccessors
+         */
+        public function getAdvertisers()
+        {
+        }
+        /**
+         * The partner with access to the inventory source.
+         *
+         * @param InventorySourceAccessorsPartnerAccessor $partner
+         */
+        public function setPartner(InventorySourceAccessorsPartnerAccessor $partner)
+        {
+        }
+        /**
+         * @return InventorySourceAccessorsPartnerAccessor
+         */
+        public function getPartner()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventorySourceAccessorsAdvertiserAccessors
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceAccessors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertisers()
-    {
-    }
-    /**
-     * The partner with access to the inventory source.
-     *
-     * @param InventorySourceAccessorsPartnerAccessor $partner
-     */
-    public function setPartner(InventorySourceAccessorsPartnerAccessor $partner)
-    {
-    }
-    /**
-     * @return InventorySourceAccessorsPartnerAccessor
-     */
-    public function getPartner()
+    class Google_Service_DisplayVideo_InventorySourceAccessors extends \Google\Service\DisplayVideo\InventorySourceAccessors
     {
     }
 }

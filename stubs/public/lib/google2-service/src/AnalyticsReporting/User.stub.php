@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class User extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $userId;
-    /**
-     * @param string
-     */
-    public function setType($type)
+namespace Google\Service\AnalyticsReporting {
+    class User extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $userId;
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_AnalyticsReporting_User extends \Google\Service\AnalyticsReporting\User
     {
     }
 }

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades;
 
+use grade_grade;
+use grade_item;
+use moodle_exception;
 /**
  * An object for storing and aggregating penalty information.
  *
@@ -98,10 +101,7 @@ final class penalty_container
     /**
      * Get the grade before penalties are applied.
      *
-     * Returns the raw grade (the original source grade from the activity, before
-     * grade-item factors such as multiplier or offset are applied).
-     *
-     * @return float The raw grade before any penalty or grade-item adjustment
+     * @return float The grade before penalties are applied
      */
     public function get_grade_before_penalties(): float
     {

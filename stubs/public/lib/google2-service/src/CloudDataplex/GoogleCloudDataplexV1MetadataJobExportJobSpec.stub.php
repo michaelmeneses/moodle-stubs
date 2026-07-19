@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1MetadataJobExportJobSpec extends \Google\Model
-{
-    /**
-     * Required. The root path of the Cloud Storage bucket to export the metadata
-     * to, in the format gs://{bucket}/. You can optionally specify a custom
-     * prefix after the bucket name, in the format gs://{bucket}/{prefix}/. The
-     * maximum length of the custom prefix is 128 characters. Dataplex Universal
-     * Catalog constructs the object path for the exported files by using the
-     * bucket name and prefix that you provide, followed by a system-generated
-     * path.The bucket must be in the same VPC Service Controls perimeter as the
-     * job.
-     *
-     * @var string
-     */
-    public $outputPath;
-    protected $scopeType = GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope::class;
-    protected $scopeDataType = '';
-    /**
-     * Required. The root path of the Cloud Storage bucket to export the metadata
-     * to, in the format gs://{bucket}/. You can optionally specify a custom
-     * prefix after the bucket name, in the format gs://{bucket}/{prefix}/. The
-     * maximum length of the custom prefix is 128 characters. Dataplex Universal
-     * Catalog constructs the object path for the exported files by using the
-     * bucket name and prefix that you provide, followed by a system-generated
-     * path.The bucket must be in the same VPC Service Controls perimeter as the
-     * job.
-     *
-     * @param string $outputPath
-     */
-    public function setOutputPath($outputPath)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1MetadataJobExportJobSpec extends \Google\Model
     {
+        /**
+         * Required. The root path of the Cloud Storage bucket to export the metadata
+         * to, in the format gs://{bucket}/. You can optionally specify a custom
+         * prefix after the bucket name, in the format gs://{bucket}/{prefix}/. The
+         * maximum length of the custom prefix is 128 characters. Dataplex Universal
+         * Catalog constructs the object path for the exported files by using the
+         * bucket name and prefix that you provide, followed by a system-generated
+         * path.The bucket must be in the same VPC Service Controls perimeter as the
+         * job.
+         *
+         * @var string
+         */
+        public $outputPath;
+        protected $scopeType = GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope::class;
+        protected $scopeDataType = '';
+        /**
+         * Required. The root path of the Cloud Storage bucket to export the metadata
+         * to, in the format gs://{bucket}/. You can optionally specify a custom
+         * prefix after the bucket name, in the format gs://{bucket}/{prefix}/. The
+         * maximum length of the custom prefix is 128 characters. Dataplex Universal
+         * Catalog constructs the object path for the exported files by using the
+         * bucket name and prefix that you provide, followed by a system-generated
+         * path.The bucket must be in the same VPC Service Controls perimeter as the
+         * job.
+         *
+         * @param string $outputPath
+         */
+        public function setOutputPath($outputPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputPath()
+        {
+        }
+        /**
+         * Required. The scope of the export job.
+         *
+         * @param GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope $scope
+         */
+        public function setScope(GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope $scope)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobExportJobSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputPath()
-    {
-    }
-    /**
-     * Required. The scope of the export job.
-     *
-     * @param GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope $scope
-     */
-    public function setScope(GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope $scope)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1MetadataJobExportJobSpecExportJobScope
-     */
-    public function getScope()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1MetadataJobExportJobSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobExportJobSpec
     {
     }
 }

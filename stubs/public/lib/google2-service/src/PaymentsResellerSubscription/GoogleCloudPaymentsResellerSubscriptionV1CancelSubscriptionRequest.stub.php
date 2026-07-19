@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $cancelImmediately;
-    /**
-     * @var string
-     */
-    public $cancellationReason;
-    /**
-     * @param bool
-     */
-    public function setCancelImmediately($cancelImmediately)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $cancelImmediately;
+        /**
+         * @var string
+         */
+        public $cancellationReason;
+        /**
+         * @param bool
+         */
+        public function setCancelImmediately($cancelImmediately)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCancelImmediately()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCancellationReason($cancellationReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancellationReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelImmediately()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCancellationReason($cancellationReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCancellationReason()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1CancelSubscriptionRequest
     {
     }
 }

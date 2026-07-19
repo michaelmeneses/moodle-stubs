@@ -20,30 +20,40 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Class used to populate site admin navigation for ajax.
- *
- * @package   core
- * @category  navigation
- * @copyright 2013 Rajesh Taneja <rajesh@moodle.com>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class settings_navigation_ajax extends settings_navigation
-{
+namespace core\navigation {
+    use moodle_page;
     /**
-     * Constructs the navigation for use in an AJAX request
+     * Class used to populate site admin navigation for ajax.
      *
-     * @param moodle_page $page
+     * @package   core
+     * @category  navigation
+     * @copyright 2013 Rajesh Taneja <rajesh@moodle.com>
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(moodle_page &$page)
+    class settings_navigation_ajax extends settings_navigation
     {
+        /**
+         * Constructs the navigation for use in an AJAX request
+         *
+         * @param moodle_page $page
+         */
+        public function __construct(moodle_page &$page)
+        {
+        }
+        /**
+         * Initialise the site admin navigation.
+         */
+        public function initialise()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Initialise the site admin navigation.
+     * Runtime class alias of \core\navigation\settings_navigation_ajax registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function initialise()
+    class settings_navigation_ajax extends \core\navigation\settings_navigation_ajax
     {
     }
 }

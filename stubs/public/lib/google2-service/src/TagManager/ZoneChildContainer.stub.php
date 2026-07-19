@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ZoneChildContainer extends \Google\Model
-{
-    /**
-     * The zone's nickname for the child container.
-     *
-     * @var string
-     */
-    public $nickname;
-    /**
-     * The child container's public id.
-     *
-     * @var string
-     */
-    public $publicId;
-    /**
-     * The zone's nickname for the child container.
-     *
-     * @param string $nickname
-     */
-    public function setNickname($nickname)
+namespace Google\Service\TagManager {
+    class ZoneChildContainer extends \Google\Model
     {
+        /**
+         * The zone's nickname for the child container.
+         *
+         * @var string
+         */
+        public $nickname;
+        /**
+         * The child container's public id.
+         *
+         * @var string
+         */
+        public $publicId;
+        /**
+         * The zone's nickname for the child container.
+         *
+         * @param string $nickname
+         */
+        public function setNickname($nickname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNickname()
+        {
+        }
+        /**
+         * The child container's public id.
+         *
+         * @param string $publicId
+         */
+        public function setPublicId($publicId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ZoneChildContainer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNickname()
-    {
-    }
-    /**
-     * The child container's public id.
-     *
-     * @param string $publicId
-     */
-    public function setPublicId($publicId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicId()
+    class Google_Service_TagManager_ZoneChildContainer extends \Google\Service\TagManager\ZoneChildContainer
     {
     }
 }

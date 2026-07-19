@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminLoadBalancerNodePoolConfig extends \Google\Model
-{
-    protected $nodePoolConfigType = BareMetalNodePoolConfig::class;
-    protected $nodePoolConfigDataType = '';
-    /**
-     * The generic configuration for a node pool running a load balancer.
-     *
-     * @param BareMetalNodePoolConfig $nodePoolConfig
-     */
-    public function setNodePoolConfig(BareMetalNodePoolConfig $nodePoolConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminLoadBalancerNodePoolConfig extends \Google\Model
     {
+        protected $nodePoolConfigType = BareMetalNodePoolConfig::class;
+        protected $nodePoolConfigDataType = '';
+        /**
+         * The generic configuration for a node pool running a load balancer.
+         *
+         * @param BareMetalNodePoolConfig $nodePoolConfig
+         */
+        public function setNodePoolConfig(BareMetalNodePoolConfig $nodePoolConfig)
+        {
+        }
+        /**
+         * @return BareMetalNodePoolConfig
+         */
+        public function getNodePoolConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalNodePoolConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminLoadBalancerNodePoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodePoolConfig()
+    class Google_Service_GKEOnPrem_BareMetalAdminLoadBalancerNodePoolConfig extends \Google\Service\GKEOnPrem\BareMetalAdminLoadBalancerNodePoolConfig
     {
     }
 }

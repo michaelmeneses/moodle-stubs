@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "continuousTestResults" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $continuousTestResults = $dialogflowService->projects_locations_agents_environments_continuousTestResults;
- *  </code>
- */
-class ProjectsLocationsAgentsEnvironmentsContinuousTestResults extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse;
     /**
-     * Fetches a list of continuous test results for a given environment. (continuou
-     * sTestResults.listProjectsLocationsAgentsEnvironmentsContinuousTestResults)
-     *
-     * @param string $parent Required. The environment to list results for. Format:
-     * `projects//locations//agents//environments/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 100 and at most 1000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse
-     * @throws \Google\Service\Exception
+     * The "continuousTestResults" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $continuousTestResults = $dialogflowService->projects_locations_agents_environments_continuousTestResults;
+     *  </code>
      */
-    public function listProjectsLocationsAgentsEnvironmentsContinuousTestResults($parent, $optParams = [])
+    class ProjectsLocationsAgentsEnvironmentsContinuousTestResults extends \Google\Service\Resource
+    {
+        /**
+         * Fetches a list of continuous test results for a given environment. (continuou
+         * sTestResults.listProjectsLocationsAgentsEnvironmentsContinuousTestResults)
+         *
+         * @param string $parent Required. The environment to list results for. Format:
+         * `projects//locations//agents//environments/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 100 and at most 1000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListContinuousTestResultsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsEnvironmentsContinuousTestResults($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsContinuousTestResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsEnvironmentsContinuousTestResults extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsContinuousTestResults
     {
     }
 }

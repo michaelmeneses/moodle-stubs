@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class LabeledItem extends \Google\Model
-{
-    /**
-     * Internal id associated with the item.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Display string as entered by user.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Internal id associated with the item.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Area120Tables {
+    class LabeledItem extends \Google\Model
     {
+        /**
+         * Internal id associated with the item.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Display string as entered by user.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Internal id associated with the item.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Display string as entered by user.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Area120Tables\LabeledItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Display string as entered by user.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Area120Tables_LabeledItem extends \Google\Service\Area120Tables\LabeledItem
     {
     }
 }

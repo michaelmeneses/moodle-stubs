@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EncryptionSpec extends \Google\Model
-{
-    /**
-     * Required. The Cloud KMS resource identifier of the customer managed
-     * encryption key used to protect a resource. Has the form: `projects/my-
-     * project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. The key
-     * needs to be in the same region as where the compute resource is created.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Required. The Cloud KMS resource identifier of the customer managed
-     * encryption key used to protect a resource. Has the form: `projects/my-
-     * project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. The key
-     * needs to be in the same region as where the compute resource is created.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EncryptionSpec extends \Google\Model
     {
+        /**
+         * Required. The Cloud KMS resource identifier of the customer managed
+         * encryption key used to protect a resource. Has the form: `projects/my-
+         * project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. The key
+         * needs to be in the same region as where the compute resource is created.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Required. The Cloud KMS resource identifier of the customer managed
+         * encryption key used to protect a resource. Has the form: `projects/my-
+         * project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. The key
+         * needs to be in the same region as where the compute resource is created.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EncryptionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EncryptionSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EncryptionSpec
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GrpcOperationGroup extends \Google\Collection
-{
-    protected $collection_key = 'operationConfigs';
-    protected $operationConfigsType = GoogleCloudApigeeV1GrpcOperationConfig::class;
-    protected $operationConfigsDataType = 'array';
-    /**
-     * Required. List of operation configurations for either Apigee API proxies
-     * that are associated with this API product.
-     *
-     * @param GoogleCloudApigeeV1GrpcOperationConfig[] $operationConfigs
-     */
-    public function setOperationConfigs($operationConfigs)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GrpcOperationGroup extends \Google\Collection
     {
+        protected $collection_key = 'operationConfigs';
+        protected $operationConfigsType = GoogleCloudApigeeV1GrpcOperationConfig::class;
+        protected $operationConfigsDataType = 'array';
+        /**
+         * Required. List of operation configurations for either Apigee API proxies
+         * that are associated with this API product.
+         *
+         * @param GoogleCloudApigeeV1GrpcOperationConfig[] $operationConfigs
+         */
+        public function setOperationConfigs($operationConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1GrpcOperationConfig[]
+         */
+        public function getOperationConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1GrpcOperationConfig[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GrpcOperationGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationConfigs()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GrpcOperationGroup extends \Google\Service\Apigee\GoogleCloudApigeeV1GrpcOperationGroup
     {
     }
 }

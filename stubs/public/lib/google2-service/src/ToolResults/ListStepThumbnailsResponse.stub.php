@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListStepThumbnailsResponse extends \Google\Collection
-{
-    protected $collection_key = 'thumbnails';
-    /**
-     * A continuation token to resume the query at the next item. If set,
-     * indicates that there are more thumbnails to read, by calling list again
-     * with this value in the page_token field.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $thumbnailsType = Image::class;
-    protected $thumbnailsDataType = 'array';
-    /**
-     * A continuation token to resume the query at the next item. If set,
-     * indicates that there are more thumbnails to read, by calling list again
-     * with this value in the page_token field.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ToolResults {
+    class ListStepThumbnailsResponse extends \Google\Collection
     {
+        protected $collection_key = 'thumbnails';
+        /**
+         * A continuation token to resume the query at the next item. If set,
+         * indicates that there are more thumbnails to read, by calling list again
+         * with this value in the page_token field.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $thumbnailsType = Image::class;
+        protected $thumbnailsDataType = 'array';
+        /**
+         * A continuation token to resume the query at the next item. If set,
+         * indicates that there are more thumbnails to read, by calling list again
+         * with this value in the page_token field.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of image data. Images are returned in a deterministic order; they
+         * are ordered by these factors, in order of importance: * First, by their
+         * associated test case. Images without a test case are considered greater
+         * than images with one. * Second, by their creation time. Images without a
+         * creation time are greater than images with one. * Third, by the order in
+         * which they were added to the step (by calls to CreateStep or UpdateStep).
+         *
+         * @param Image[] $thumbnails
+         */
+        public function setThumbnails($thumbnails)
+        {
+        }
+        /**
+         * @return Image[]
+         */
+        public function getThumbnails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\ListStepThumbnailsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of image data. Images are returned in a deterministic order; they
-     * are ordered by these factors, in order of importance: * First, by their
-     * associated test case. Images without a test case are considered greater
-     * than images with one. * Second, by their creation time. Images without a
-     * creation time are greater than images with one. * Third, by the order in
-     * which they were added to the step (by calls to CreateStep or UpdateStep).
-     *
-     * @param Image[] $thumbnails
-     */
-    public function setThumbnails($thumbnails)
-    {
-    }
-    /**
-     * @return Image[]
-     */
-    public function getThumbnails()
+    class Google_Service_ToolResults_ListStepThumbnailsResponse extends \Google\Service\ToolResults\ListStepThumbnailsResponse
     {
     }
 }

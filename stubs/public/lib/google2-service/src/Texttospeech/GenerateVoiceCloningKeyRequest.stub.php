@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class GenerateVoiceCloningKeyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $consentScript;
-    /**
-     * @var string
-     */
-    public $languageCode;
-    protected $referenceAudioType = InputAudio::class;
-    protected $referenceAudioDataType = '';
-    protected $voiceTalentConsentType = InputAudio::class;
-    protected $voiceTalentConsentDataType = '';
-    /**
-     * @param string
-     */
-    public function setConsentScript($consentScript)
+namespace Google\Service\Texttospeech {
+    class GenerateVoiceCloningKeyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $consentScript;
+        /**
+         * @var string
+         */
+        public $languageCode;
+        protected $referenceAudioType = InputAudio::class;
+        protected $referenceAudioDataType = '';
+        protected $voiceTalentConsentType = InputAudio::class;
+        protected $voiceTalentConsentDataType = '';
+        /**
+         * @param string
+         */
+        public function setConsentScript($consentScript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentScript()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * @param InputAudio
+         */
+        public function setReferenceAudio(InputAudio $referenceAudio)
+        {
+        }
+        /**
+         * @return InputAudio
+         */
+        public function getReferenceAudio()
+        {
+        }
+        /**
+         * @param InputAudio
+         */
+        public function setVoiceTalentConsent(InputAudio $voiceTalentConsent)
+        {
+        }
+        /**
+         * @return InputAudio
+         */
+        public function getVoiceTalentConsent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\GenerateVoiceCloningKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentScript()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * @param InputAudio
-     */
-    public function setReferenceAudio(InputAudio $referenceAudio)
-    {
-    }
-    /**
-     * @return InputAudio
-     */
-    public function getReferenceAudio()
-    {
-    }
-    /**
-     * @param InputAudio
-     */
-    public function setVoiceTalentConsent(InputAudio $voiceTalentConsent)
-    {
-    }
-    /**
-     * @return InputAudio
-     */
-    public function getVoiceTalentConsent()
+    class Google_Service_Texttospeech_GenerateVoiceCloningKeyRequest extends \Google\Service\Texttospeech\GenerateVoiceCloningKeyRequest
     {
     }
 }

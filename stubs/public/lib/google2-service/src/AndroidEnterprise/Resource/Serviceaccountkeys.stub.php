@@ -21,63 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "serviceaccountkeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $serviceaccountkeys = $androidenterpriseService->serviceaccountkeys;
- *  </code>
- */
-class Serviceaccountkeys extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\ServiceAccountKey;
+    use Google\Service\AndroidEnterprise\ServiceAccountKeysListResponse;
     /**
-     * Removes and invalidates the specified credentials for the service account
-     * associated with this enterprise. The calling service account must have been
-     * retrieved by calling Enterprises.GetServiceAccount and must have been set as
-     * the enterprise service account by calling Enterprises.SetAccount.
-     * (serviceaccountkeys.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $keyId The ID of the key.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "serviceaccountkeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $serviceaccountkeys = $androidenterpriseService->serviceaccountkeys;
+     *  </code>
      */
-    public function delete($enterpriseId, $keyId, $optParams = [])
+    class Serviceaccountkeys extends \Google\Service\Resource
     {
+        /**
+         * Removes and invalidates the specified credentials for the service account
+         * associated with this enterprise. The calling service account must have been
+         * retrieved by calling Enterprises.GetServiceAccount and must have been set as
+         * the enterprise service account by calling Enterprises.SetAccount.
+         * (serviceaccountkeys.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $keyId The ID of the key.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $keyId, $optParams = [])
+        {
+        }
+        /**
+         * Generates new credentials for the service account associated with this
+         * enterprise. The calling service account must have been retrieved by calling
+         * Enterprises.GetServiceAccount and must have been set as the enterprise
+         * service account by calling Enterprises.SetAccount. Only the type of the key
+         * should be populated in the resource to be inserted.
+         * (serviceaccountkeys.insert)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param ServiceAccountKey $postBody
+         * @param array $optParams Optional parameters.
+         * @return ServiceAccountKey
+         * @throws \Google\Service\Exception
+         */
+        public function insert($enterpriseId, ServiceAccountKey $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all active credentials for the service account associated with this
+         * enterprise. Only the ID and key type are returned. The calling service
+         * account must have been retrieved by calling Enterprises.GetServiceAccount and
+         * must have been set as the enterprise service account by calling
+         * Enterprises.SetAccount. (serviceaccountkeys.listServiceaccountkeys)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param array $optParams Optional parameters.
+         * @return ServiceAccountKeysListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listServiceaccountkeys($enterpriseId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Generates new credentials for the service account associated with this
-     * enterprise. The calling service account must have been retrieved by calling
-     * Enterprises.GetServiceAccount and must have been set as the enterprise
-     * service account by calling Enterprises.SetAccount. Only the type of the key
-     * should be populated in the resource to be inserted.
-     * (serviceaccountkeys.insert)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param ServiceAccountKey $postBody
-     * @param array $optParams Optional parameters.
-     * @return ServiceAccountKey
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Serviceaccountkeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($enterpriseId, ServiceAccountKey $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all active credentials for the service account associated with this
-     * enterprise. Only the ID and key type are returned. The calling service
-     * account must have been retrieved by calling Enterprises.GetServiceAccount and
-     * must have been set as the enterprise service account by calling
-     * Enterprises.SetAccount. (serviceaccountkeys.listServiceaccountkeys)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param array $optParams Optional parameters.
-     * @return ServiceAccountKeysListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listServiceaccountkeys($enterpriseId, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Serviceaccountkeys extends \Google\Service\AndroidEnterprise\Resource\Serviceaccountkeys
     {
     }
 }

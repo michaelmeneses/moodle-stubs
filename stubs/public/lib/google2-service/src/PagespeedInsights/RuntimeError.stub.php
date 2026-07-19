@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class RuntimeError extends \Google\Model
-{
-    /**
-     * The enumerated Lighthouse Error code.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A human readable message explaining the error code.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The enumerated Lighthouse Error code.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\PagespeedInsights {
+    class RuntimeError extends \Google\Model
     {
+        /**
+         * The enumerated Lighthouse Error code.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A human readable message explaining the error code.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The enumerated Lighthouse Error code.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A human readable message explaining the error code.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\RuntimeError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A human readable message explaining the error code.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_PagespeedInsights_RuntimeError extends \Google\Service\PagespeedInsights\RuntimeError
     {
     }
 }

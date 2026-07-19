@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlServerDatabaseBackup extends \Google\Model
-{
-    /**
-     * Required. Name of a SQL Server database for which to define backup
-     * configuration.
-     *
-     * @var string
-     */
-    public $database;
-    protected $encryptionOptionsType = SqlServerEncryptionOptions::class;
-    protected $encryptionOptionsDataType = '';
-    /**
-     * Required. Name of a SQL Server database for which to define backup
-     * configuration.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlServerDatabaseBackup extends \Google\Model
     {
+        /**
+         * Required. Name of a SQL Server database for which to define backup
+         * configuration.
+         *
+         * @var string
+         */
+        public $database;
+        protected $encryptionOptionsType = SqlServerEncryptionOptions::class;
+        protected $encryptionOptionsDataType = '';
+        /**
+         * Required. Name of a SQL Server database for which to define backup
+         * configuration.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Optional. Encryption settings for the database. Required if provided
+         * database backups are encrypted. Encryption settings include path to
+         * certificate, path to certificate private key, and key password.
+         *
+         * @param SqlServerEncryptionOptions $encryptionOptions
+         */
+        public function setEncryptionOptions(SqlServerEncryptionOptions $encryptionOptions)
+        {
+        }
+        /**
+         * @return SqlServerEncryptionOptions
+         */
+        public function getEncryptionOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlServerDatabaseBackup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Optional. Encryption settings for the database. Required if provided
-     * database backups are encrypted. Encryption settings include path to
-     * certificate, path to certificate private key, and key password.
-     *
-     * @param SqlServerEncryptionOptions $encryptionOptions
-     */
-    public function setEncryptionOptions(SqlServerEncryptionOptions $encryptionOptions)
-    {
-    }
-    /**
-     * @return SqlServerEncryptionOptions
-     */
-    public function getEncryptionOptions()
+    class Google_Service_DatabaseMigrationService_SqlServerDatabaseBackup extends \Google\Service\DatabaseMigrationService\SqlServerDatabaseBackup
     {
     }
 }

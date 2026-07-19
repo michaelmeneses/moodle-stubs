@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AutoscalingPolicyLoadBalancingUtilization extends \Google\Model
-{
-    /**
-     * Fraction of backend capacity utilization (set in HTTP(S) load balancing
-     * configuration) that the autoscaler maintains. Must be a positive float
-     * value. If not defined, the default is 0.8.
-     *
-     * @var 
-     */
-    public $utilizationTarget;
-    public function setUtilizationTarget($utilizationTarget)
+namespace Google\Service\Compute {
+    class AutoscalingPolicyLoadBalancingUtilization extends \Google\Model
     {
+        /**
+         * Fraction of backend capacity utilization (set in HTTP(S) load balancing
+         * configuration) that the autoscaler maintains. Must be a positive float
+         * value. If not defined, the default is 0.8.
+         *
+         * @var 
+         */
+        public $utilizationTarget;
+        public function setUtilizationTarget($utilizationTarget)
+        {
+        }
+        public function getUtilizationTarget()
+        {
+        }
     }
-    public function getUtilizationTarget()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Compute\AutoscalingPolicyLoadBalancingUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Compute_AutoscalingPolicyLoadBalancingUtilization extends \Google\Service\Compute\AutoscalingPolicyLoadBalancingUtilization
     {
     }
 }

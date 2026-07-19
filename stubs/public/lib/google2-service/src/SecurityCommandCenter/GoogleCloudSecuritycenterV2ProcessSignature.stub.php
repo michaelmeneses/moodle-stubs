@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2ProcessSignature extends \Google\Model
-{
-    /**
-     * The default signature type.
-     */
-    public const SIGNATURE_TYPE_SIGNATURE_TYPE_UNSPECIFIED = 'SIGNATURE_TYPE_UNSPECIFIED';
-    /**
-     * Used for signatures concerning processes.
-     */
-    public const SIGNATURE_TYPE_SIGNATURE_TYPE_PROCESS = 'SIGNATURE_TYPE_PROCESS';
-    /**
-     * Used for signatures concerning disks.
-     */
-    public const SIGNATURE_TYPE_SIGNATURE_TYPE_FILE = 'SIGNATURE_TYPE_FILE';
-    protected $memoryHashSignatureType = GoogleCloudSecuritycenterV2MemoryHashSignature::class;
-    protected $memoryHashSignatureDataType = '';
-    /**
-     * Describes the type of resource associated with the signature.
-     *
-     * @var string
-     */
-    public $signatureType;
-    protected $yaraRuleSignatureType = GoogleCloudSecuritycenterV2YaraRuleSignature::class;
-    protected $yaraRuleSignatureDataType = '';
-    /**
-     * Signature indicating that a binary family was matched.
-     *
-     * @param GoogleCloudSecuritycenterV2MemoryHashSignature $memoryHashSignature
-     */
-    public function setMemoryHashSignature(GoogleCloudSecuritycenterV2MemoryHashSignature $memoryHashSignature)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2ProcessSignature extends \Google\Model
     {
+        /**
+         * The default signature type.
+         */
+        public const SIGNATURE_TYPE_SIGNATURE_TYPE_UNSPECIFIED = 'SIGNATURE_TYPE_UNSPECIFIED';
+        /**
+         * Used for signatures concerning processes.
+         */
+        public const SIGNATURE_TYPE_SIGNATURE_TYPE_PROCESS = 'SIGNATURE_TYPE_PROCESS';
+        /**
+         * Used for signatures concerning disks.
+         */
+        public const SIGNATURE_TYPE_SIGNATURE_TYPE_FILE = 'SIGNATURE_TYPE_FILE';
+        protected $memoryHashSignatureType = GoogleCloudSecuritycenterV2MemoryHashSignature::class;
+        protected $memoryHashSignatureDataType = '';
+        /**
+         * Describes the type of resource associated with the signature.
+         *
+         * @var string
+         */
+        public $signatureType;
+        protected $yaraRuleSignatureType = GoogleCloudSecuritycenterV2YaraRuleSignature::class;
+        protected $yaraRuleSignatureDataType = '';
+        /**
+         * Signature indicating that a binary family was matched.
+         *
+         * @param GoogleCloudSecuritycenterV2MemoryHashSignature $memoryHashSignature
+         */
+        public function setMemoryHashSignature(GoogleCloudSecuritycenterV2MemoryHashSignature $memoryHashSignature)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2MemoryHashSignature
+         */
+        public function getMemoryHashSignature()
+        {
+        }
+        /**
+         * Describes the type of resource associated with the signature.
+         *
+         * Accepted values: SIGNATURE_TYPE_UNSPECIFIED, SIGNATURE_TYPE_PROCESS,
+         * SIGNATURE_TYPE_FILE
+         *
+         * @param self::SIGNATURE_TYPE_* $signatureType
+         */
+        public function setSignatureType($signatureType)
+        {
+        }
+        /**
+         * @return self::SIGNATURE_TYPE_*
+         */
+        public function getSignatureType()
+        {
+        }
+        /**
+         * Signature indicating that a YARA rule was matched.
+         *
+         * @param GoogleCloudSecuritycenterV2YaraRuleSignature $yaraRuleSignature
+         */
+        public function setYaraRuleSignature(GoogleCloudSecuritycenterV2YaraRuleSignature $yaraRuleSignature)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2YaraRuleSignature
+         */
+        public function getYaraRuleSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2MemoryHashSignature
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ProcessSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryHashSignature()
-    {
-    }
-    /**
-     * Describes the type of resource associated with the signature.
-     *
-     * Accepted values: SIGNATURE_TYPE_UNSPECIFIED, SIGNATURE_TYPE_PROCESS,
-     * SIGNATURE_TYPE_FILE
-     *
-     * @param self::SIGNATURE_TYPE_* $signatureType
-     */
-    public function setSignatureType($signatureType)
-    {
-    }
-    /**
-     * @return self::SIGNATURE_TYPE_*
-     */
-    public function getSignatureType()
-    {
-    }
-    /**
-     * Signature indicating that a YARA rule was matched.
-     *
-     * @param GoogleCloudSecuritycenterV2YaraRuleSignature $yaraRuleSignature
-     */
-    public function setYaraRuleSignature(GoogleCloudSecuritycenterV2YaraRuleSignature $yaraRuleSignature)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2YaraRuleSignature
-     */
-    public function getYaraRuleSignature()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2ProcessSignature extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ProcessSignature
     {
     }
 }

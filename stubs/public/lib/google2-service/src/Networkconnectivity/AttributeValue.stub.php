@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class AttributeValue extends \Google\Model
-{
-    public $boolValue;
-    public $intValue;
-    protected $stringValueType = TruncatableString::class;
-    protected $stringValueDataType = '';
-    public function setBoolValue($boolValue)
+namespace Google\Service\Networkconnectivity {
+    class AttributeValue extends \Google\Model
     {
+        public $boolValue;
+        public $intValue;
+        protected $stringValueType = TruncatableString::class;
+        protected $stringValueDataType = '';
+        public function setBoolValue($boolValue)
+        {
+        }
+        public function getBoolValue()
+        {
+        }
+        public function setIntValue($intValue)
+        {
+        }
+        public function getIntValue()
+        {
+        }
+        /**
+         * @param TruncatableString
+         */
+        public function setStringValue(TruncatableString $stringValue)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getStringValue()
+        {
+        }
     }
-    public function getBoolValue()
-    {
-    }
-    public function setIntValue($intValue)
-    {
-    }
-    public function getIntValue()
-    {
-    }
+}
+namespace {
     /**
-     * @param TruncatableString
+     * Runtime class alias of \Google\Service\Networkconnectivity\AttributeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setStringValue(TruncatableString $stringValue)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getStringValue()
+    class Google_Service_Networkconnectivity_AttributeValue extends \Google\Service\Networkconnectivity\AttributeValue
     {
     }
 }

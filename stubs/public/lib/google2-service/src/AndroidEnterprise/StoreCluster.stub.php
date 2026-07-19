@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class StoreCluster extends \Google\Collection
-{
-    protected $collection_key = 'productId';
-    /**
-     * Unique ID of this cluster. Assigned by the server. Immutable once assigned.
-     *
-     * @var string
-     */
-    public $id;
-    protected $nameType = LocalizedText::class;
-    protected $nameDataType = 'array';
-    /**
-     * String (US-ASCII only) used to determine order of this cluster within the
-     * parent page's elements. Page elements are sorted in lexicographic order of
-     * this field. Duplicated values are allowed, but ordering between elements
-     * with duplicate order is undefined. The value of this field is never visible
-     * to a user, it is used solely for the purpose of defining an ordering.
-     * Maximum length is 256 characters.
-     *
-     * @var string
-     */
-    public $orderInPage;
-    /**
-     * List of products in the order they are displayed in the cluster. There
-     * should not be duplicates within a cluster.
-     *
-     * @var string[]
-     */
-    public $productId;
-    /**
-     * Unique ID of this cluster. Assigned by the server. Immutable once assigned.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\AndroidEnterprise {
+    class StoreCluster extends \Google\Collection
     {
+        protected $collection_key = 'productId';
+        /**
+         * Unique ID of this cluster. Assigned by the server. Immutable once assigned.
+         *
+         * @var string
+         */
+        public $id;
+        protected $nameType = LocalizedText::class;
+        protected $nameDataType = 'array';
+        /**
+         * String (US-ASCII only) used to determine order of this cluster within the
+         * parent page's elements. Page elements are sorted in lexicographic order of
+         * this field. Duplicated values are allowed, but ordering between elements
+         * with duplicate order is undefined. The value of this field is never visible
+         * to a user, it is used solely for the purpose of defining an ordering.
+         * Maximum length is 256 characters.
+         *
+         * @var string
+         */
+        public $orderInPage;
+        /**
+         * List of products in the order they are displayed in the cluster. There
+         * should not be duplicates within a cluster.
+         *
+         * @var string[]
+         */
+        public $productId;
+        /**
+         * Unique ID of this cluster. Assigned by the server. Immutable once assigned.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Ordered list of localized strings giving the name of this page. The text
+         * displayed is the one that best matches the user locale, or the first entry
+         * if there is no good match. There needs to be at least one entry.
+         *
+         * @param LocalizedText[] $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return LocalizedText[]
+         */
+        public function getName()
+        {
+        }
+        /**
+         * String (US-ASCII only) used to determine order of this cluster within the
+         * parent page's elements. Page elements are sorted in lexicographic order of
+         * this field. Duplicated values are allowed, but ordering between elements
+         * with duplicate order is undefined. The value of this field is never visible
+         * to a user, it is used solely for the purpose of defining an ordering.
+         * Maximum length is 256 characters.
+         *
+         * @param string $orderInPage
+         */
+        public function setOrderInPage($orderInPage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderInPage()
+        {
+        }
+        /**
+         * List of products in the order they are displayed in the cluster. There
+         * should not be duplicates within a cluster.
+         *
+         * @param string[] $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\StoreCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Ordered list of localized strings giving the name of this page. The text
-     * displayed is the one that best matches the user locale, or the first entry
-     * if there is no good match. There needs to be at least one entry.
-     *
-     * @param LocalizedText[] $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return LocalizedText[]
-     */
-    public function getName()
-    {
-    }
-    /**
-     * String (US-ASCII only) used to determine order of this cluster within the
-     * parent page's elements. Page elements are sorted in lexicographic order of
-     * this field. Duplicated values are allowed, but ordering between elements
-     * with duplicate order is undefined. The value of this field is never visible
-     * to a user, it is used solely for the purpose of defining an ordering.
-     * Maximum length is 256 characters.
-     *
-     * @param string $orderInPage
-     */
-    public function setOrderInPage($orderInPage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderInPage()
-    {
-    }
-    /**
-     * List of products in the order they are displayed in the cluster. There
-     * should not be duplicates within a cluster.
-     *
-     * @param string[] $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_StoreCluster extends \Google\Service\AndroidEnterprise\StoreCluster
     {
     }
 }

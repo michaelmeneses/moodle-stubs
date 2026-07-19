@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2AuthorizedViewSubsetView extends \Google\Collection
-{
-    protected $collection_key = 'rowPrefixes';
-    protected $familySubsetsType = GoogleBigtableAdminV2AuthorizedViewFamilySubsets::class;
-    protected $familySubsetsDataType = 'map';
-    /**
-     * Row prefixes to be included in the AuthorizedView. To provide access to all
-     * rows, include the empty string as a prefix ("").
-     *
-     * @var string[]
-     */
-    public $rowPrefixes;
-    /**
-     * Map from column family name to the columns in this family to be included in
-     * the AuthorizedView.
-     *
-     * @param GoogleBigtableAdminV2AuthorizedViewFamilySubsets[] $familySubsets
-     */
-    public function setFamilySubsets($familySubsets)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2AuthorizedViewSubsetView extends \Google\Collection
     {
+        protected $collection_key = 'rowPrefixes';
+        protected $familySubsetsType = GoogleBigtableAdminV2AuthorizedViewFamilySubsets::class;
+        protected $familySubsetsDataType = 'map';
+        /**
+         * Row prefixes to be included in the AuthorizedView. To provide access to all
+         * rows, include the empty string as a prefix ("").
+         *
+         * @var string[]
+         */
+        public $rowPrefixes;
+        /**
+         * Map from column family name to the columns in this family to be included in
+         * the AuthorizedView.
+         *
+         * @param GoogleBigtableAdminV2AuthorizedViewFamilySubsets[] $familySubsets
+         */
+        public function setFamilySubsets($familySubsets)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2AuthorizedViewFamilySubsets[]
+         */
+        public function getFamilySubsets()
+        {
+        }
+        /**
+         * Row prefixes to be included in the AuthorizedView. To provide access to all
+         * rows, include the empty string as a prefix ("").
+         *
+         * @param string[] $rowPrefixes
+         */
+        public function setRowPrefixes($rowPrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRowPrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2AuthorizedViewFamilySubsets[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2AuthorizedViewSubsetView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilySubsets()
-    {
-    }
-    /**
-     * Row prefixes to be included in the AuthorizedView. To provide access to all
-     * rows, include the empty string as a prefix ("").
-     *
-     * @param string[] $rowPrefixes
-     */
-    public function setRowPrefixes($rowPrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRowPrefixes()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2AuthorizedViewSubsetView extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2AuthorizedViewSubsetView
     {
     }
 }

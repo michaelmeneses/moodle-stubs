@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosRuntimeConfiguration extends \Google\Collection
-{
-    protected $collection_key = 'orientations';
-    protected $localesType = Locale::class;
-    protected $localesDataType = 'array';
-    protected $orientationsType = Orientation::class;
-    protected $orientationsDataType = 'array';
-    /**
-     * The set of available locales.
-     *
-     * @param Locale[] $locales
-     */
-    public function setLocales($locales)
+namespace Google\Service\Testing {
+    class IosRuntimeConfiguration extends \Google\Collection
     {
+        protected $collection_key = 'orientations';
+        protected $localesType = Locale::class;
+        protected $localesDataType = 'array';
+        protected $orientationsType = Orientation::class;
+        protected $orientationsDataType = 'array';
+        /**
+         * The set of available locales.
+         *
+         * @param Locale[] $locales
+         */
+        public function setLocales($locales)
+        {
+        }
+        /**
+         * @return Locale[]
+         */
+        public function getLocales()
+        {
+        }
+        /**
+         * The set of available orientations.
+         *
+         * @param Orientation[] $orientations
+         */
+        public function setOrientations($orientations)
+        {
+        }
+        /**
+         * @return Orientation[]
+         */
+        public function getOrientations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Locale[]
+     * Runtime class alias of \Google\Service\Testing\IosRuntimeConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocales()
-    {
-    }
-    /**
-     * The set of available orientations.
-     *
-     * @param Orientation[] $orientations
-     */
-    public function setOrientations($orientations)
-    {
-    }
-    /**
-     * @return Orientation[]
-     */
-    public function getOrientations()
+    class Google_Service_Testing_IosRuntimeConfiguration extends \Google\Service\Testing\IosRuntimeConfiguration
     {
     }
 }

@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig\Resource;
-
-/**
- * The "inventories" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osconfigService = new Google\Service\OSConfig(...);
- *   $inventories = $osconfigService->projects_locations_instances_inventories;
- *  </code>
- */
-class ProjectsLocationsInstancesInventories extends \Google\Service\Resource
-{
+namespace Google\Service\OSConfig\Resource {
+    use Google\Service\OSConfig\Inventory;
+    use Google\Service\OSConfig\ListInventoriesResponse;
     /**
-     * Get inventory data for the specified VM instance. If the VM has no associated
-     * inventory, the message `NOT_FOUND` is returned. (inventories.get)
-     *
-     * @param string $name Required. API resource name for inventory resource.
-     * Format:
-     * `projects/{project}/locations/{location}/instances/{instance}/inventory` For
-     * `{project}`, either `project-number` or `project-id` can be provided. For
-     * `{instance}`, either Compute Engine `instance-id` or `instance-name` can be
-     * provided.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Inventory view indicating what information should be
-     * included in the inventory resource. If unspecified, the default view is
-     * BASIC.
-     * @return Inventory
-     * @throws \Google\Service\Exception
+     * The "inventories" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osconfigService = new Google\Service\OSConfig(...);
+     *   $inventories = $osconfigService->projects_locations_instances_inventories;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsInstancesInventories extends \Google\Service\Resource
     {
+        /**
+         * Get inventory data for the specified VM instance. If the VM has no associated
+         * inventory, the message `NOT_FOUND` is returned. (inventories.get)
+         *
+         * @param string $name Required. API resource name for inventory resource.
+         * Format:
+         * `projects/{project}/locations/{location}/instances/{instance}/inventory` For
+         * `{project}`, either `project-number` or `project-id` can be provided. For
+         * `{instance}`, either Compute Engine `instance-id` or `instance-name` can be
+         * provided.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Inventory view indicating what information should be
+         * included in the inventory resource. If unspecified, the default view is
+         * BASIC.
+         * @return Inventory
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List inventory data for all VM instances in the specified zone.
+         * (inventories.listProjectsLocationsInstancesInventories)
+         *
+         * @param string $parent Required. The parent resource name. Format:
+         * `projects/{project}/locations/{location}/instances/-` For `{project}`, either
+         * `project-number` or `project-id` can be provided.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter If provided, this field specifies the criteria that
+         * must be met by a `Inventory` API resource to be included in the response.
+         * @opt_param int pageSize The maximum number of results to return.
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to `ListInventories` that indicates where this listing should continue from.
+         * @opt_param string view Inventory view indicating what information should be
+         * included in the inventory resource. If unspecified, the default view is
+         * BASIC.
+         * @return ListInventoriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsInstancesInventories($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List inventory data for all VM instances in the specified zone.
-     * (inventories.listProjectsLocationsInstancesInventories)
-     *
-     * @param string $parent Required. The parent resource name. Format:
-     * `projects/{project}/locations/{location}/instances/-` For `{project}`, either
-     * `project-number` or `project-id` can be provided.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter If provided, this field specifies the criteria that
-     * must be met by a `Inventory` API resource to be included in the response.
-     * @opt_param int pageSize The maximum number of results to return.
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to `ListInventories` that indicates where this listing should continue from.
-     * @opt_param string view Inventory view indicating what information should be
-     * included in the inventory resource. If unspecified, the default view is
-     * BASIC.
-     * @return ListInventoriesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\OSConfig\Resource\ProjectsLocationsInstancesInventories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsInstancesInventories($parent, $optParams = [])
+    class Google_Service_OSConfig_Resource_ProjectsLocationsInstancesInventories extends \Google\Service\OSConfig\Resource\ProjectsLocationsInstancesInventories
     {
     }
 }

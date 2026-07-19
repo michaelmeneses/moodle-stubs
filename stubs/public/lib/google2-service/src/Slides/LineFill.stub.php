@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class LineFill extends \Google\Model
-{
-    protected $solidFillType = SolidFill::class;
-    protected $solidFillDataType = '';
-    /**
-     * Solid color fill.
-     *
-     * @param SolidFill $solidFill
-     */
-    public function setSolidFill(SolidFill $solidFill)
+namespace Google\Service\Slides {
+    class LineFill extends \Google\Model
     {
+        protected $solidFillType = SolidFill::class;
+        protected $solidFillDataType = '';
+        /**
+         * Solid color fill.
+         *
+         * @param SolidFill $solidFill
+         */
+        public function setSolidFill(SolidFill $solidFill)
+        {
+        }
+        /**
+         * @return SolidFill
+         */
+        public function getSolidFill()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SolidFill
+     * Runtime class alias of \Google\Service\Slides\LineFill registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSolidFill()
+    class Google_Service_Slides_LineFill extends \Google\Service\Slides\LineFill
     {
     }
 }

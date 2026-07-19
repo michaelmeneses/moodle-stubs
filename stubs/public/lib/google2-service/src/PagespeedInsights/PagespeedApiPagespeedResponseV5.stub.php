@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class PagespeedApiPagespeedResponseV5 extends \Google\Model
-{
-    /**
-     * The UTC timestamp of this analysis.
-     *
-     * @var string
-     */
-    public $analysisUTCTimestamp;
-    /**
-     * The captcha verify result
-     *
-     * @var string
-     */
-    public $captchaResult;
-    /**
-     * Canonicalized and final URL for the document, after following page
-     * redirects (if any).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Kind of result.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $lighthouseResultType = LighthouseResultV5::class;
-    protected $lighthouseResultDataType = '';
-    protected $loadingExperienceType = PagespeedApiLoadingExperienceV5::class;
-    protected $loadingExperienceDataType = '';
-    protected $originLoadingExperienceType = PagespeedApiLoadingExperienceV5::class;
-    protected $originLoadingExperienceDataType = '';
-    protected $versionType = PagespeedVersion::class;
-    protected $versionDataType = '';
-    /**
-     * The UTC timestamp of this analysis.
-     *
-     * @param string $analysisUTCTimestamp
-     */
-    public function setAnalysisUTCTimestamp($analysisUTCTimestamp)
+namespace Google\Service\PagespeedInsights {
+    class PagespeedApiPagespeedResponseV5 extends \Google\Model
     {
+        /**
+         * The UTC timestamp of this analysis.
+         *
+         * @var string
+         */
+        public $analysisUTCTimestamp;
+        /**
+         * The captcha verify result
+         *
+         * @var string
+         */
+        public $captchaResult;
+        /**
+         * Canonicalized and final URL for the document, after following page
+         * redirects (if any).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Kind of result.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $lighthouseResultType = LighthouseResultV5::class;
+        protected $lighthouseResultDataType = '';
+        protected $loadingExperienceType = PagespeedApiLoadingExperienceV5::class;
+        protected $loadingExperienceDataType = '';
+        protected $originLoadingExperienceType = PagespeedApiLoadingExperienceV5::class;
+        protected $originLoadingExperienceDataType = '';
+        protected $versionType = PagespeedVersion::class;
+        protected $versionDataType = '';
+        /**
+         * The UTC timestamp of this analysis.
+         *
+         * @param string $analysisUTCTimestamp
+         */
+        public function setAnalysisUTCTimestamp($analysisUTCTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalysisUTCTimestamp()
+        {
+        }
+        /**
+         * The captcha verify result
+         *
+         * @param string $captchaResult
+         */
+        public function setCaptchaResult($captchaResult)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptchaResult()
+        {
+        }
+        /**
+         * Canonicalized and final URL for the document, after following page
+         * redirects (if any).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Kind of result.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Lighthouse response for the audit url as an object.
+         *
+         * @param LighthouseResultV5 $lighthouseResult
+         */
+        public function setLighthouseResult(LighthouseResultV5 $lighthouseResult)
+        {
+        }
+        /**
+         * @return LighthouseResultV5
+         */
+        public function getLighthouseResult()
+        {
+        }
+        /**
+         * Metrics of end users' page loading experience.
+         *
+         * @param PagespeedApiLoadingExperienceV5 $loadingExperience
+         */
+        public function setLoadingExperience(PagespeedApiLoadingExperienceV5 $loadingExperience)
+        {
+        }
+        /**
+         * @return PagespeedApiLoadingExperienceV5
+         */
+        public function getLoadingExperience()
+        {
+        }
+        /**
+         * Metrics of the aggregated page loading experience of the origin
+         *
+         * @param PagespeedApiLoadingExperienceV5 $originLoadingExperience
+         */
+        public function setOriginLoadingExperience(PagespeedApiLoadingExperienceV5 $originLoadingExperience)
+        {
+        }
+        /**
+         * @return PagespeedApiLoadingExperienceV5
+         */
+        public function getOriginLoadingExperience()
+        {
+        }
+        /**
+         * The version of PageSpeed used to generate these results.
+         *
+         * @param PagespeedVersion $version
+         */
+        public function setVersion(PagespeedVersion $version)
+        {
+        }
+        /**
+         * @return PagespeedVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\PagespeedApiPagespeedResponseV5 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisUTCTimestamp()
-    {
-    }
-    /**
-     * The captcha verify result
-     *
-     * @param string $captchaResult
-     */
-    public function setCaptchaResult($captchaResult)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaptchaResult()
-    {
-    }
-    /**
-     * Canonicalized and final URL for the document, after following page
-     * redirects (if any).
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Kind of result.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Lighthouse response for the audit url as an object.
-     *
-     * @param LighthouseResultV5 $lighthouseResult
-     */
-    public function setLighthouseResult(LighthouseResultV5 $lighthouseResult)
-    {
-    }
-    /**
-     * @return LighthouseResultV5
-     */
-    public function getLighthouseResult()
-    {
-    }
-    /**
-     * Metrics of end users' page loading experience.
-     *
-     * @param PagespeedApiLoadingExperienceV5 $loadingExperience
-     */
-    public function setLoadingExperience(PagespeedApiLoadingExperienceV5 $loadingExperience)
-    {
-    }
-    /**
-     * @return PagespeedApiLoadingExperienceV5
-     */
-    public function getLoadingExperience()
-    {
-    }
-    /**
-     * Metrics of the aggregated page loading experience of the origin
-     *
-     * @param PagespeedApiLoadingExperienceV5 $originLoadingExperience
-     */
-    public function setOriginLoadingExperience(PagespeedApiLoadingExperienceV5 $originLoadingExperience)
-    {
-    }
-    /**
-     * @return PagespeedApiLoadingExperienceV5
-     */
-    public function getOriginLoadingExperience()
-    {
-    }
-    /**
-     * The version of PageSpeed used to generate these results.
-     *
-     * @param PagespeedVersion $version
-     */
-    public function setVersion(PagespeedVersion $version)
-    {
-    }
-    /**
-     * @return PagespeedVersion
-     */
-    public function getVersion()
+    class Google_Service_PagespeedInsights_PagespeedApiPagespeedResponseV5 extends \Google\Service\PagespeedInsights\PagespeedApiPagespeedResponseV5
     {
     }
 }

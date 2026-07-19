@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountIdentifier extends \Google\Model
-{
-    /**
-     * The aggregator ID, set for aggregators and subaccounts (in that case, it
-     * represents the aggregator of the subaccount).
-     *
-     * @var string
-     */
-    public $aggregatorId;
-    /**
-     * The merchant account ID, set for individual accounts and subaccounts.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * The aggregator ID, set for aggregators and subaccounts (in that case, it
-     * represents the aggregator of the subaccount).
-     *
-     * @param string $aggregatorId
-     */
-    public function setAggregatorId($aggregatorId)
+namespace Google\Service\ShoppingContent {
+    class AccountIdentifier extends \Google\Model
     {
+        /**
+         * The aggregator ID, set for aggregators and subaccounts (in that case, it
+         * represents the aggregator of the subaccount).
+         *
+         * @var string
+         */
+        public $aggregatorId;
+        /**
+         * The merchant account ID, set for individual accounts and subaccounts.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * The aggregator ID, set for aggregators and subaccounts (in that case, it
+         * represents the aggregator of the subaccount).
+         *
+         * @param string $aggregatorId
+         */
+        public function setAggregatorId($aggregatorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAggregatorId()
+        {
+        }
+        /**
+         * The merchant account ID, set for individual accounts and subaccounts.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregatorId()
-    {
-    }
-    /**
-     * The merchant account ID, set for individual accounts and subaccounts.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
+    class Google_Service_ShoppingContent_AccountIdentifier extends \Google\Service\ShoppingContent\AccountIdentifier
     {
     }
 }

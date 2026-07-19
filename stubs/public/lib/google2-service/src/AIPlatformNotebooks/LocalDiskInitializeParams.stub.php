@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class LocalDiskInitializeParams extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $diskName;
-    /**
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * @var string
-     */
-    public $diskType;
-    /**
-     * @var string[]
-     */
-    public $labels = [];
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\AIPlatformNotebooks {
+    class LocalDiskInitializeParams extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $diskName;
+        /**
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * @var string
+         */
+        public $diskType;
+        /**
+         * @var string[]
+         */
+        public $labels = [];
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiskName($diskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiskType($diskType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\LocalDiskInitializeParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiskName($diskName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiskSizeGb($diskSizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiskType($diskType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_AIPlatformNotebooks_LocalDiskInitializeParams extends \Google\Service\AIPlatformNotebooks\LocalDiskInitializeParams
     {
     }
 }

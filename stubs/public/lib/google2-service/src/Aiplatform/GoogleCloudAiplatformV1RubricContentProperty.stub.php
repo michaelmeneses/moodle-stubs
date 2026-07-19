@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricContentProperty extends \Google\Model
-{
-    /**
-     * Description of the property being evaluated. Example: "The model's response
-     * is grammatically correct."
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Description of the property being evaluated. Example: "The model's response
-     * is grammatically correct."
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricContentProperty extends \Google\Model
     {
+        /**
+         * Description of the property being evaluated. Example: "The model's response
+         * is grammatically correct."
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Description of the property being evaluated. Example: "The model's response
+         * is grammatically correct."
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricContentProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricContentProperty extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricContentProperty
     {
     }
 }

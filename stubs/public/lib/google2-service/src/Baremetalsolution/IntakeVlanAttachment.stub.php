@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class IntakeVlanAttachment extends \Google\Model
-{
-    /**
-     * Identifier of the VLAN attachment.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Attachment pairing key.
-     *
-     * @var string
-     */
-    public $pairingKey;
-    /**
-     * Identifier of the VLAN attachment.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Baremetalsolution {
+    class IntakeVlanAttachment extends \Google\Model
     {
+        /**
+         * Identifier of the VLAN attachment.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Attachment pairing key.
+         *
+         * @var string
+         */
+        public $pairingKey;
+        /**
+         * Identifier of the VLAN attachment.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Attachment pairing key.
+         *
+         * @param string $pairingKey
+         */
+        public function setPairingKey($pairingKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPairingKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\IntakeVlanAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Attachment pairing key.
-     *
-     * @param string $pairingKey
-     */
-    public function setPairingKey($pairingKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPairingKey()
+    class Google_Service_Baremetalsolution_IntakeVlanAttachment extends \Google\Service\Baremetalsolution\IntakeVlanAttachment
     {
     }
 }

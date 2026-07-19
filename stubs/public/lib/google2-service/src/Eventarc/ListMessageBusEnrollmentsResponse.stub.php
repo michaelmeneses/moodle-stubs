@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class ListMessageBusEnrollmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The requested enrollments, up to the number specified in `page_size`.
-     *
-     * @var string[]
-     */
-    public $enrollments;
-    /**
-     * A page token that can be sent to `ListMessageBusEnrollments` to request the
-     * next page. If this is empty, then there are no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources, if any.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The requested enrollments, up to the number specified in `page_size`.
-     *
-     * @param string[] $enrollments
-     */
-    public function setEnrollments($enrollments)
+namespace Google\Service\Eventarc {
+    class ListMessageBusEnrollmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The requested enrollments, up to the number specified in `page_size`.
+         *
+         * @var string[]
+         */
+        public $enrollments;
+        /**
+         * A page token that can be sent to `ListMessageBusEnrollments` to request the
+         * next page. If this is empty, then there are no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources, if any.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The requested enrollments, up to the number specified in `page_size`.
+         *
+         * @param string[] $enrollments
+         */
+        public function setEnrollments($enrollments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnrollments()
+        {
+        }
+        /**
+         * A page token that can be sent to `ListMessageBusEnrollments` to request the
+         * next page. If this is empty, then there are no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources, if any.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Eventarc\ListMessageBusEnrollmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnrollments()
-    {
-    }
-    /**
-     * A page token that can be sent to `ListMessageBusEnrollments` to request the
-     * next page. If this is empty, then there are no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources, if any.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Eventarc_ListMessageBusEnrollmentsResponse extends \Google\Service\Eventarc\ListMessageBusEnrollmentsResponse
     {
     }
 }

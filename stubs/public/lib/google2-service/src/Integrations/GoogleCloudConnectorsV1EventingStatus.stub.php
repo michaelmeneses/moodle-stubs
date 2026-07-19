@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1EventingStatus extends \Google\Model
-{
-    /**
-     * Default state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Eventing is enabled and ready to receive events.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Eventing is not active due to an error.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Ingress endpoint required.
-     */
-    public const STATE_INGRESS_ENDPOINT_REQUIRED = 'INGRESS_ENDPOINT_REQUIRED';
-    /**
-     * Output only. Description of error if State is set to "ERROR".
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. State.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Description of error if State is set to "ERROR".
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1EventingStatus extends \Google\Model
     {
+        /**
+         * Default state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Eventing is enabled and ready to receive events.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Eventing is not active due to an error.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Ingress endpoint required.
+         */
+        public const STATE_INGRESS_ENDPOINT_REQUIRED = 'INGRESS_ENDPOINT_REQUIRED';
+        /**
+         * Output only. Description of error if State is set to "ERROR".
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. State.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Description of error if State is set to "ERROR".
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. State.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, ERROR,
+         * INGRESS_ENDPOINT_REQUIRED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1EventingStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. State.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, ERROR,
-     * INGRESS_ENDPOINT_REQUIRED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1EventingStatus extends \Google\Service\Integrations\GoogleCloudConnectorsV1EventingStatus
     {
     }
 }

@@ -21,72 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "schemaRegistries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $schemaRegistries = $managedkafkaService->projects_locations_schemaRegistries;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistries extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\CreateSchemaRegistryRequest;
+    use Google\Service\ManagedKafka\ListSchemaRegistriesResponse;
+    use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+    use Google\Service\ManagedKafka\SchemaRegistry;
     /**
-     * Create a schema registry instance. (schemaRegistries.create)
-     *
-     * @param string $parent Required. The parent whose schema registry instance is
-     * to be created. Structured like: `projects/{project}/locations/{location}`
-     * @param CreateSchemaRegistryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SchemaRegistry
-     * @throws \Google\Service\Exception
+     * The "schemaRegistries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $schemaRegistries = $managedkafkaService->projects_locations_schemaRegistries;
+     *  </code>
      */
-    public function create($parent, CreateSchemaRegistryRequest $postBody, $optParams = [])
+    class ProjectsLocationsSchemaRegistries extends \Google\Service\Resource
     {
+        /**
+         * Create a schema registry instance. (schemaRegistries.create)
+         *
+         * @param string $parent Required. The parent whose schema registry instance is
+         * to be created. Structured like: `projects/{project}/locations/{location}`
+         * @param CreateSchemaRegistryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SchemaRegistry
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CreateSchemaRegistryRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a schema registry instance. (schemaRegistries.delete)
+         *
+         * @param string $name Required. The name of the schema registry instance to
+         * delete. Structured like:
+         * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * @param array $optParams Optional parameters.
+         * @return ManagedkafkaEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get the schema registry instance. (schemaRegistries.get)
+         *
+         * @param string $name Required. The name of the schema registry instance to
+         * return. Structured like:
+         * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * @param array $optParams Optional parameters.
+         * @return SchemaRegistry
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List schema registries.
+         * (schemaRegistries.listProjectsLocationsSchemaRegistries)
+         *
+         * @param string $parent Required. The parent whose schema registry instances
+         * are to be listed. Structured like: `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Optional. Specifies the view to return for the schema
+         * registry instances. If not specified, the default view is
+         * SCHEMA_REGISTRY_VIEW_BASIC.
+         * @return ListSchemaRegistriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistries($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a schema registry instance. (schemaRegistries.delete)
-     *
-     * @param string $name Required. The name of the schema registry instance to
-     * delete. Structured like:
-     * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * @param array $optParams Optional parameters.
-     * @return ManagedkafkaEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get the schema registry instance. (schemaRegistries.get)
-     *
-     * @param string $name Required. The name of the schema registry instance to
-     * return. Structured like:
-     * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * @param array $optParams Optional parameters.
-     * @return SchemaRegistry
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List schema registries.
-     * (schemaRegistries.listProjectsLocationsSchemaRegistries)
-     *
-     * @param string $parent Required. The parent whose schema registry instances
-     * are to be listed. Structured like: `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Optional. Specifies the view to return for the schema
-     * registry instances. If not specified, the default view is
-     * SCHEMA_REGISTRY_VIEW_BASIC.
-     * @return ListSchemaRegistriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSchemaRegistries($parent, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistries extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistries
     {
     }
 }

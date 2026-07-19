@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmCardsTemplatesAplosSeriesData extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $rowsType = EnterpriseCrmCardsTemplatesAplosSeriesDataRow::class;
-    protected $rowsDataType = 'array';
-    public $rows;
-    /**
-     * @param EnterpriseCrmCardsTemplatesAplosSeriesDataRow[]
-     */
-    public function setRows($rows)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmCardsTemplatesAplosSeriesData extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $rowsType = EnterpriseCrmCardsTemplatesAplosSeriesDataRow::class;
+        protected $rowsDataType = 'array';
+        public $rows;
+        /**
+         * @param EnterpriseCrmCardsTemplatesAplosSeriesDataRow[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsTemplatesAplosSeriesDataRow[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmCardsTemplatesAplosSeriesDataRow[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmCardsTemplatesAplosSeriesData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRows()
+    class Google_Service_Integrations_EnterpriseCrmCardsTemplatesAplosSeriesData extends \Google\Service\Integrations\EnterpriseCrmCardsTemplatesAplosSeriesData
     {
     }
 }

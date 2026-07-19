@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Comment extends \Google\Collection
-{
-    protected $collection_key = 'mentionedUsers';
-    protected $assignmentType = Assignment::class;
-    protected $assignmentDataType = '';
-    protected $mentionedUsersType = User::class;
-    protected $mentionedUsersDataType = 'array';
-    protected $postType = Post::class;
-    protected $postDataType = '';
-    protected $suggestionType = Suggestion::class;
-    protected $suggestionDataType = '';
-    /**
-     * A change on an assignment.
-     *
-     * @param Assignment $assignment
-     */
-    public function setAssignment(Assignment $assignment)
+namespace Google\Service\DriveActivity {
+    class Comment extends \Google\Collection
     {
+        protected $collection_key = 'mentionedUsers';
+        protected $assignmentType = Assignment::class;
+        protected $assignmentDataType = '';
+        protected $mentionedUsersType = User::class;
+        protected $mentionedUsersDataType = 'array';
+        protected $postType = Post::class;
+        protected $postDataType = '';
+        protected $suggestionType = Suggestion::class;
+        protected $suggestionDataType = '';
+        /**
+         * A change on an assignment.
+         *
+         * @param Assignment $assignment
+         */
+        public function setAssignment(Assignment $assignment)
+        {
+        }
+        /**
+         * @return Assignment
+         */
+        public function getAssignment()
+        {
+        }
+        /**
+         * Users who are mentioned in this comment.
+         *
+         * @param User[] $mentionedUsers
+         */
+        public function setMentionedUsers($mentionedUsers)
+        {
+        }
+        /**
+         * @return User[]
+         */
+        public function getMentionedUsers()
+        {
+        }
+        /**
+         * A change on a regular posted comment.
+         *
+         * @param Post $post
+         */
+        public function setPost(Post $post)
+        {
+        }
+        /**
+         * @return Post
+         */
+        public function getPost()
+        {
+        }
+        /**
+         * A change on a suggestion.
+         *
+         * @param Suggestion $suggestion
+         */
+        public function setSuggestion(Suggestion $suggestion)
+        {
+        }
+        /**
+         * @return Suggestion
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Assignment
+     * Runtime class alias of \Google\Service\DriveActivity\Comment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignment()
-    {
-    }
-    /**
-     * Users who are mentioned in this comment.
-     *
-     * @param User[] $mentionedUsers
-     */
-    public function setMentionedUsers($mentionedUsers)
-    {
-    }
-    /**
-     * @return User[]
-     */
-    public function getMentionedUsers()
-    {
-    }
-    /**
-     * A change on a regular posted comment.
-     *
-     * @param Post $post
-     */
-    public function setPost(Post $post)
-    {
-    }
-    /**
-     * @return Post
-     */
-    public function getPost()
-    {
-    }
-    /**
-     * A change on a suggestion.
-     *
-     * @param Suggestion $suggestion
-     */
-    public function setSuggestion(Suggestion $suggestion)
-    {
-    }
-    /**
-     * @return Suggestion
-     */
-    public function getSuggestion()
+    class Google_Service_DriveActivity_Comment extends \Google\Service\DriveActivity\Comment
     {
     }
 }

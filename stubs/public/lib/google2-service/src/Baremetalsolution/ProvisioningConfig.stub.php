@@ -21,350 +21,359 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ProvisioningConfig extends \Google\Collection
-{
-    /**
-     * State wasn't specified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * ProvisioningConfig is a draft and can be freely modified.
-     */
-    public const STATE_DRAFT = 'DRAFT';
-    /**
-     * ProvisioningConfig was already submitted and cannot be modified.
-     */
-    public const STATE_SUBMITTED = 'SUBMITTED';
-    /**
-     * ProvisioningConfig was in the provisioning state. Initially this state
-     * comes from the work order table in big query when SNOW is used. Later this
-     * field can be set by the work order API.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * ProvisioningConfig was provisioned, meaning the resources exist.
-     */
-    public const STATE_PROVISIONED = 'PROVISIONED';
-    /**
-     * ProvisioningConfig was validated. A validation tool will be run to set this
-     * state.
-     */
-    public const STATE_VALIDATED = 'VALIDATED';
-    /**
-     * ProvisioningConfig was canceled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The request is submitted for provisioning, with error return.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $collection_key = 'volumes';
-    /**
-     * Output only. URI to Cloud Console UI view of this provisioning config.
-     *
-     * @var string
-     */
-    public $cloudConsoleUri;
-    /**
-     * Optional. The user-defined identifier of the provisioning config.
-     *
-     * @var string
-     */
-    public $customId;
-    /**
-     * Email provided to send a confirmation with provisioning config to.
-     * Deprecated in favour of email field in request messages.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $email;
-    /**
-     * A service account to enable customers to access instance credentials upon
-     * handover.
-     *
-     * @var string
-     */
-    public $handoverServiceAccount;
-    protected $instancesType = InstanceConfig::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Optional. Location name of this ProvisioningConfig. It is optional only for
-     * Intake UI transition period.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The system-generated name of the provisioning config. This
-     * follows the UUID format.
-     *
-     * @var string
-     */
-    public $name;
-    protected $networksType = NetworkConfig::class;
-    protected $networksDataType = 'array';
-    /**
-     * Optional. Pod name. Pod is an independent part of infrastructure. Instance
-     * can be connected to the assets (networks, volumes, nfsshares) allocated in
-     * the same pod only.
-     *
-     * @var string
-     */
-    public $pod;
-    /**
-     * Output only. State of ProvisioningConfig.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Optional status messages associated with the FAILED state.
-     *
-     * @var string
-     */
-    public $statusMessage;
-    /**
-     * A generated ticket id to track provisioning request.
-     *
-     * @var string
-     */
-    public $ticketId;
-    /**
-     * Output only. Last update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $volumesType = VolumeConfig::class;
-    protected $volumesDataType = 'array';
-    /**
-     * If true, VPC SC is enabled for the cluster.
-     *
-     * @var bool
-     */
-    public $vpcScEnabled;
-    /**
-     * Output only. URI to Cloud Console UI view of this provisioning config.
-     *
-     * @param string $cloudConsoleUri
-     */
-    public function setCloudConsoleUri($cloudConsoleUri)
+namespace Google\Service\Baremetalsolution {
+    class ProvisioningConfig extends \Google\Collection
     {
+        /**
+         * State wasn't specified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * ProvisioningConfig is a draft and can be freely modified.
+         */
+        public const STATE_DRAFT = 'DRAFT';
+        /**
+         * ProvisioningConfig was already submitted and cannot be modified.
+         */
+        public const STATE_SUBMITTED = 'SUBMITTED';
+        /**
+         * ProvisioningConfig was in the provisioning state. Initially this state
+         * comes from the work order table in big query when SNOW is used. Later this
+         * field can be set by the work order API.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * ProvisioningConfig was provisioned, meaning the resources exist.
+         */
+        public const STATE_PROVISIONED = 'PROVISIONED';
+        /**
+         * ProvisioningConfig was validated. A validation tool will be run to set this
+         * state.
+         */
+        public const STATE_VALIDATED = 'VALIDATED';
+        /**
+         * ProvisioningConfig was canceled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The request is submitted for provisioning, with error return.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $collection_key = 'volumes';
+        /**
+         * Output only. URI to Cloud Console UI view of this provisioning config.
+         *
+         * @var string
+         */
+        public $cloudConsoleUri;
+        /**
+         * Optional. The user-defined identifier of the provisioning config.
+         *
+         * @var string
+         */
+        public $customId;
+        /**
+         * Email provided to send a confirmation with provisioning config to.
+         * Deprecated in favour of email field in request messages.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $email;
+        /**
+         * A service account to enable customers to access instance credentials upon
+         * handover.
+         *
+         * @var string
+         */
+        public $handoverServiceAccount;
+        protected $instancesType = InstanceConfig::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Optional. Location name of this ProvisioningConfig. It is optional only for
+         * Intake UI transition period.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The system-generated name of the provisioning config. This
+         * follows the UUID format.
+         *
+         * @var string
+         */
+        public $name;
+        protected $networksType = NetworkConfig::class;
+        protected $networksDataType = 'array';
+        /**
+         * Optional. Pod name. Pod is an independent part of infrastructure. Instance
+         * can be connected to the assets (networks, volumes, nfsshares) allocated in
+         * the same pod only.
+         *
+         * @var string
+         */
+        public $pod;
+        /**
+         * Output only. State of ProvisioningConfig.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Optional status messages associated with the FAILED state.
+         *
+         * @var string
+         */
+        public $statusMessage;
+        /**
+         * A generated ticket id to track provisioning request.
+         *
+         * @var string
+         */
+        public $ticketId;
+        /**
+         * Output only. Last update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $volumesType = VolumeConfig::class;
+        protected $volumesDataType = 'array';
+        /**
+         * If true, VPC SC is enabled for the cluster.
+         *
+         * @var bool
+         */
+        public $vpcScEnabled;
+        /**
+         * Output only. URI to Cloud Console UI view of this provisioning config.
+         *
+         * @param string $cloudConsoleUri
+         */
+        public function setCloudConsoleUri($cloudConsoleUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudConsoleUri()
+        {
+        }
+        /**
+         * Optional. The user-defined identifier of the provisioning config.
+         *
+         * @param string $customId
+         */
+        public function setCustomId($customId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomId()
+        {
+        }
+        /**
+         * Email provided to send a confirmation with provisioning config to.
+         * Deprecated in favour of email field in request messages.
+         *
+         * @deprecated
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * A service account to enable customers to access instance credentials upon
+         * handover.
+         *
+         * @param string $handoverServiceAccount
+         */
+        public function setHandoverServiceAccount($handoverServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHandoverServiceAccount()
+        {
+        }
+        /**
+         * Instances to be created.
+         *
+         * @param InstanceConfig[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return InstanceConfig[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Optional. Location name of this ProvisioningConfig. It is optional only for
+         * Intake UI transition period.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. The system-generated name of the provisioning config. This
+         * follows the UUID format.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Networks to be created.
+         *
+         * @param NetworkConfig[] $networks
+         */
+        public function setNetworks($networks)
+        {
+        }
+        /**
+         * @return NetworkConfig[]
+         */
+        public function getNetworks()
+        {
+        }
+        /**
+         * Optional. Pod name. Pod is an independent part of infrastructure. Instance
+         * can be connected to the assets (networks, volumes, nfsshares) allocated in
+         * the same pod only.
+         *
+         * @param string $pod
+         */
+        public function setPod($pod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPod()
+        {
+        }
+        /**
+         * Output only. State of ProvisioningConfig.
+         *
+         * Accepted values: STATE_UNSPECIFIED, DRAFT, SUBMITTED, PROVISIONING,
+         * PROVISIONED, VALIDATED, CANCELLED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Optional status messages associated with the FAILED state.
+         *
+         * @param string $statusMessage
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * A generated ticket id to track provisioning request.
+         *
+         * @param string $ticketId
+         */
+        public function setTicketId($ticketId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTicketId()
+        {
+        }
+        /**
+         * Output only. Last update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Volumes to be created.
+         *
+         * @param VolumeConfig[] $volumes
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return VolumeConfig[]
+         */
+        public function getVolumes()
+        {
+        }
+        /**
+         * If true, VPC SC is enabled for the cluster.
+         *
+         * @param bool $vpcScEnabled
+         */
+        public function setVpcScEnabled($vpcScEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVpcScEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ProvisioningConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudConsoleUri()
-    {
-    }
-    /**
-     * Optional. The user-defined identifier of the provisioning config.
-     *
-     * @param string $customId
-     */
-    public function setCustomId($customId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomId()
-    {
-    }
-    /**
-     * Email provided to send a confirmation with provisioning config to.
-     * Deprecated in favour of email field in request messages.
-     *
-     * @deprecated
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * A service account to enable customers to access instance credentials upon
-     * handover.
-     *
-     * @param string $handoverServiceAccount
-     */
-    public function setHandoverServiceAccount($handoverServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHandoverServiceAccount()
-    {
-    }
-    /**
-     * Instances to be created.
-     *
-     * @param InstanceConfig[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return InstanceConfig[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * Optional. Location name of this ProvisioningConfig. It is optional only for
-     * Intake UI transition period.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. The system-generated name of the provisioning config. This
-     * follows the UUID format.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Networks to be created.
-     *
-     * @param NetworkConfig[] $networks
-     */
-    public function setNetworks($networks)
-    {
-    }
-    /**
-     * @return NetworkConfig[]
-     */
-    public function getNetworks()
-    {
-    }
-    /**
-     * Optional. Pod name. Pod is an independent part of infrastructure. Instance
-     * can be connected to the assets (networks, volumes, nfsshares) allocated in
-     * the same pod only.
-     *
-     * @param string $pod
-     */
-    public function setPod($pod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPod()
-    {
-    }
-    /**
-     * Output only. State of ProvisioningConfig.
-     *
-     * Accepted values: STATE_UNSPECIFIED, DRAFT, SUBMITTED, PROVISIONING,
-     * PROVISIONED, VALIDATED, CANCELLED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Optional status messages associated with the FAILED state.
-     *
-     * @param string $statusMessage
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * A generated ticket id to track provisioning request.
-     *
-     * @param string $ticketId
-     */
-    public function setTicketId($ticketId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTicketId()
-    {
-    }
-    /**
-     * Output only. Last update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Volumes to be created.
-     *
-     * @param VolumeConfig[] $volumes
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return VolumeConfig[]
-     */
-    public function getVolumes()
-    {
-    }
-    /**
-     * If true, VPC SC is enabled for the cluster.
-     *
-     * @param bool $vpcScEnabled
-     */
-    public function setVpcScEnabled($vpcScEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVpcScEnabled()
+    class Google_Service_Baremetalsolution_ProvisioningConfig extends \Google\Service\Baremetalsolution\ProvisioningConfig
     {
     }
 }

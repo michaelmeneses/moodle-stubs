@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PretargetingConfigDimensions extends \Google\Model
-{
-    public $height;
-    public $width;
-    public function setHeight($height)
+namespace Google\Service\AdExchangeBuyer {
+    class PretargetingConfigDimensions extends \Google\Model
     {
+        public $height;
+        public $width;
+        public function setHeight($height)
+        {
+        }
+        public function getHeight()
+        {
+        }
+        public function setWidth($width)
+        {
+        }
+        public function getWidth()
+        {
+        }
     }
-    public function getHeight()
-    {
-    }
-    public function setWidth($width)
-    {
-    }
-    public function getWidth()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PretargetingConfigDimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_PretargetingConfigDimensions extends \Google\Service\AdExchangeBuyer\PretargetingConfigDimensions
     {
     }
 }

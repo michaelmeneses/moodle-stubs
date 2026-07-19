@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class WorkloadPolicyConfig extends \Google\Model
-{
-    /**
-     * If true, workloads can use NET_ADMIN capability.
-     *
-     * @var bool
-     */
-    public $allowNetAdmin;
-    /**
-     * If true, enables the GCW Auditor that audits workloads on standard
-     * clusters.
-     *
-     * @var bool
-     */
-    public $autopilotCompatibilityAuditingEnabled;
-    /**
-     * If true, workloads can use NET_ADMIN capability.
-     *
-     * @param bool $allowNetAdmin
-     */
-    public function setAllowNetAdmin($allowNetAdmin)
+namespace Google\Service\Container {
+    class WorkloadPolicyConfig extends \Google\Model
     {
+        /**
+         * If true, workloads can use NET_ADMIN capability.
+         *
+         * @var bool
+         */
+        public $allowNetAdmin;
+        /**
+         * If true, enables the GCW Auditor that audits workloads on standard
+         * clusters.
+         *
+         * @var bool
+         */
+        public $autopilotCompatibilityAuditingEnabled;
+        /**
+         * If true, workloads can use NET_ADMIN capability.
+         *
+         * @param bool $allowNetAdmin
+         */
+        public function setAllowNetAdmin($allowNetAdmin)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowNetAdmin()
+        {
+        }
+        /**
+         * If true, enables the GCW Auditor that audits workloads on standard
+         * clusters.
+         *
+         * @param bool $autopilotCompatibilityAuditingEnabled
+         */
+        public function setAutopilotCompatibilityAuditingEnabled($autopilotCompatibilityAuditingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutopilotCompatibilityAuditingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\WorkloadPolicyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowNetAdmin()
-    {
-    }
-    /**
-     * If true, enables the GCW Auditor that audits workloads on standard
-     * clusters.
-     *
-     * @param bool $autopilotCompatibilityAuditingEnabled
-     */
-    public function setAutopilotCompatibilityAuditingEnabled($autopilotCompatibilityAuditingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutopilotCompatibilityAuditingEnabled()
+    class Google_Service_Container_WorkloadPolicyConfig extends \Google\Service\Container\WorkloadPolicyConfig
     {
     }
 }

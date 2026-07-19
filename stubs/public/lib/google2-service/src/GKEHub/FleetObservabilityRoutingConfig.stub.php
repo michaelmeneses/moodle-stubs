@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityRoutingConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @param string
-     */
-    public function setMode($mode)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityRoutingConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mode;
+        /**
+         * @param string
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityRoutingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_GKEHub_FleetObservabilityRoutingConfig extends \Google\Service\GKEHub\FleetObservabilityRoutingConfig
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ConfigVariable extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * @var string
-     */
-    public $intValue;
-    /**
-     * @var string
-     */
-    public $key;
-    protected $secretValueType = Secret::class;
-    protected $secretValueDataType = '';
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param bool
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Connectors {
+    class ConfigVariable extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * @var string
+         */
+        public $intValue;
+        /**
+         * @var string
+         */
+        public $key;
+        protected $secretValueType = Secret::class;
+        protected $secretValueDataType = '';
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param bool
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setSecretValue(Secret $secretValue)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getSecretValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Connectors\ConfigVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setSecretValue(Secret $secretValue)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getSecretValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Connectors_ConfigVariable extends \Google\Service\Connectors\ConfigVariable
     {
     }
 }

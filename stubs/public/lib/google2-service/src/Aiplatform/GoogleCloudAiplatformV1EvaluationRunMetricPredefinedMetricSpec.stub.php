@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec extends \Google\Model
-{
-    /**
-     * Required. The name of a pre-defined metric, such as
-     * "instruction_following_v1" or "text_quality_v1".
-     *
-     * @var string
-     */
-    public $metricSpecName;
-    /**
-     * Optional. The parameters needed to run the pre-defined metric.
-     *
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * Required. The name of a pre-defined metric, such as
-     * "instruction_following_v1" or "text_quality_v1".
-     *
-     * @param string $metricSpecName
-     */
-    public function setMetricSpecName($metricSpecName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec extends \Google\Model
     {
+        /**
+         * Required. The name of a pre-defined metric, such as
+         * "instruction_following_v1" or "text_quality_v1".
+         *
+         * @var string
+         */
+        public $metricSpecName;
+        /**
+         * Optional. The parameters needed to run the pre-defined metric.
+         *
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * Required. The name of a pre-defined metric, such as
+         * "instruction_following_v1" or "text_quality_v1".
+         *
+         * @param string $metricSpecName
+         */
+        public function setMetricSpecName($metricSpecName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricSpecName()
+        {
+        }
+        /**
+         * Optional. The parameters needed to run the pre-defined metric.
+         *
+         * @param array[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricSpecName()
-    {
-    }
-    /**
-     * Optional. The parameters needed to run the pre-defined metric.
-     *
-     * @param array[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParameters()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec
     {
     }
 }

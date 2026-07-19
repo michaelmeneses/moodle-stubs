@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "dnsRecordSet" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $dnsRecordSet = $servicenetworkingService->services_dnsRecordSet;
- *  </code>
- */
-class ServicesDnsRecordSet extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\DnsRecordSet;
     /**
-     * Producers can use this method to retrieve information about the DNS record
-     * set added to the private zone inside the shared tenant host project
-     * associated with a consumer network. (dnsRecordSet.get)
-     *
-     * @param string $parent Required. Parent resource identifying the connection
-     * which owns this collection of DNS zones in the format services/{service}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string consumerNetwork Required. The consumer network containing
-     * the record set. Must be in the form of
-     * projects/{project}/global/networks/{network}
-     * @opt_param string domain Required. The domain name of the zone containing the
-     * recordset.
-     * @opt_param string type Required. RecordSet Type eg. type='A'. See the list of
-     * [Supported DNS Types](https://dns.corp.google.com/docs/overview).
-     * @opt_param string zone Required. The name of the zone containing the record
-     * set.
-     * @return DnsRecordSet
+     * The "dnsRecordSet" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $dnsRecordSet = $servicenetworkingService->services_dnsRecordSet;
+     *  </code>
      */
-    public function get($parent, $optParams = [])
+    class ServicesDnsRecordSet extends \Google\Service\Resource
+    {
+        /**
+         * Producers can use this method to retrieve information about the DNS record
+         * set added to the private zone inside the shared tenant host project
+         * associated with a consumer network. (dnsRecordSet.get)
+         *
+         * @param string $parent Required. Parent resource identifying the connection
+         * which owns this collection of DNS zones in the format services/{service}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string consumerNetwork Required. The consumer network containing
+         * the record set. Must be in the form of
+         * projects/{project}/global/networks/{network}
+         * @opt_param string domain Required. The domain name of the zone containing the
+         * recordset.
+         * @opt_param string type Required. RecordSet Type eg. type='A'. See the list of
+         * [Supported DNS Types](https://dns.corp.google.com/docs/overview).
+         * @opt_param string zone Required. The name of the zone containing the record
+         * set.
+         * @return DnsRecordSet
+         */
+        public function get($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesDnsRecordSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking_Resource_ServicesDnsRecordSet extends \Google\Service\ServiceNetworking\Resource\ServicesDnsRecordSet
     {
     }
 }

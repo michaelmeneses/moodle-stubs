@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Partner extends \Google\Collection
-{
-    protected $collection_key = 'skus';
-    /**
-     * Output only. Time the resource was created
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $ekmSolutionsType = EkmMetadata::class;
-    protected $ekmSolutionsDataType = 'array';
-    /**
-     * Identifier. The resource name of the partner. Format:
-     * `organizations/{organization}/locations/{location}/partner` Example:
-     * "organizations/123456/locations/us-central1/partner"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * List of Google Cloud regions that the partner sells services to customers.
-     * Valid Google Cloud regions found here:
-     * https://cloud.google.com/compute/docs/regions-zones
-     *
-     * @var string[]
-     */
-    public $operatedCloudRegions;
-    /**
-     * Google Cloud project ID in the partner's Google Cloud organization for
-     * receiving enhanced Logs for Partners.
-     *
-     * @var string
-     */
-    public $partnerProjectId;
-    protected $skusType = Sku::class;
-    protected $skusDataType = 'array';
-    /**
-     * Output only. The last time the resource was updated
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Time the resource was created
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudControlsPartnerService {
+    class Partner extends \Google\Collection
     {
+        protected $collection_key = 'skus';
+        /**
+         * Output only. Time the resource was created
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $ekmSolutionsType = EkmMetadata::class;
+        protected $ekmSolutionsDataType = 'array';
+        /**
+         * Identifier. The resource name of the partner. Format:
+         * `organizations/{organization}/locations/{location}/partner` Example:
+         * "organizations/123456/locations/us-central1/partner"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * List of Google Cloud regions that the partner sells services to customers.
+         * Valid Google Cloud regions found here:
+         * https://cloud.google.com/compute/docs/regions-zones
+         *
+         * @var string[]
+         */
+        public $operatedCloudRegions;
+        /**
+         * Google Cloud project ID in the partner's Google Cloud organization for
+         * receiving enhanced Logs for Partners.
+         *
+         * @var string
+         */
+        public $partnerProjectId;
+        protected $skusType = Sku::class;
+        protected $skusDataType = 'array';
+        /**
+         * Output only. The last time the resource was updated
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Time the resource was created
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * List of Google Cloud supported EKM partners supported by the partner
+         *
+         * @param EkmMetadata[] $ekmSolutions
+         */
+        public function setEkmSolutions($ekmSolutions)
+        {
+        }
+        /**
+         * @return EkmMetadata[]
+         */
+        public function getEkmSolutions()
+        {
+        }
+        /**
+         * Identifier. The resource name of the partner. Format:
+         * `organizations/{organization}/locations/{location}/partner` Example:
+         * "organizations/123456/locations/us-central1/partner"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * List of Google Cloud regions that the partner sells services to customers.
+         * Valid Google Cloud regions found here:
+         * https://cloud.google.com/compute/docs/regions-zones
+         *
+         * @param string[] $operatedCloudRegions
+         */
+        public function setOperatedCloudRegions($operatedCloudRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOperatedCloudRegions()
+        {
+        }
+        /**
+         * Google Cloud project ID in the partner's Google Cloud organization for
+         * receiving enhanced Logs for Partners.
+         *
+         * @param string $partnerProjectId
+         */
+        public function setPartnerProjectId($partnerProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerProjectId()
+        {
+        }
+        /**
+         * List of SKUs the partner is offering
+         *
+         * @param Sku[] $skus
+         */
+        public function setSkus($skus)
+        {
+        }
+        /**
+         * @return Sku[]
+         */
+        public function getSkus()
+        {
+        }
+        /**
+         * Output only. The last time the resource was updated
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Partner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * List of Google Cloud supported EKM partners supported by the partner
-     *
-     * @param EkmMetadata[] $ekmSolutions
-     */
-    public function setEkmSolutions($ekmSolutions)
-    {
-    }
-    /**
-     * @return EkmMetadata[]
-     */
-    public function getEkmSolutions()
-    {
-    }
-    /**
-     * Identifier. The resource name of the partner. Format:
-     * `organizations/{organization}/locations/{location}/partner` Example:
-     * "organizations/123456/locations/us-central1/partner"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * List of Google Cloud regions that the partner sells services to customers.
-     * Valid Google Cloud regions found here:
-     * https://cloud.google.com/compute/docs/regions-zones
-     *
-     * @param string[] $operatedCloudRegions
-     */
-    public function setOperatedCloudRegions($operatedCloudRegions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOperatedCloudRegions()
-    {
-    }
-    /**
-     * Google Cloud project ID in the partner's Google Cloud organization for
-     * receiving enhanced Logs for Partners.
-     *
-     * @param string $partnerProjectId
-     */
-    public function setPartnerProjectId($partnerProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerProjectId()
-    {
-    }
-    /**
-     * List of SKUs the partner is offering
-     *
-     * @param Sku[] $skus
-     */
-    public function setSkus($skus)
-    {
-    }
-    /**
-     * @return Sku[]
-     */
-    public function getSkus()
-    {
-    }
-    /**
-     * Output only. The last time the resource was updated
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudControlsPartnerService_Partner extends \Google\Service\CloudControlsPartnerService\Partner
     {
     }
 }

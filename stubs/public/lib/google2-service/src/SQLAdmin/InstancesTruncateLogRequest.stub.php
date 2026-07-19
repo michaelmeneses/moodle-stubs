@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesTruncateLogRequest extends \Google\Model
-{
-    protected $truncateLogContextType = TruncateLogContext::class;
-    protected $truncateLogContextDataType = '';
-    /**
-     * Contains details about the truncate log operation.
-     *
-     * @param TruncateLogContext $truncateLogContext
-     */
-    public function setTruncateLogContext(TruncateLogContext $truncateLogContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesTruncateLogRequest extends \Google\Model
     {
+        protected $truncateLogContextType = TruncateLogContext::class;
+        protected $truncateLogContextDataType = '';
+        /**
+         * Contains details about the truncate log operation.
+         *
+         * @param TruncateLogContext $truncateLogContext
+         */
+        public function setTruncateLogContext(TruncateLogContext $truncateLogContext)
+        {
+        }
+        /**
+         * @return TruncateLogContext
+         */
+        public function getTruncateLogContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TruncateLogContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesTruncateLogRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTruncateLogContext()
+    class Google_Service_SQLAdmin_InstancesTruncateLogRequest extends \Google\Service\SQLAdmin\InstancesTruncateLogRequest
     {
     }
 }

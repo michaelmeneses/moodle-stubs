@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Segment extends \Google\Model
-{
-    /**
-     * Output only. The end index of the segment in the `Part`, measured in bytes.
-     * This marks the end of the segment and is exclusive, meaning the segment
-     * includes content up to, but not including, the byte at this index.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * Output only. The index of the `Part` object that this segment belongs to.
-     * This is useful for associating the segment with a specific part of the
-     * content.
-     *
-     * @var int
-     */
-    public $partIndex;
-    /**
-     * Output only. The start index of the segment in the `Part`, measured in
-     * bytes. This marks the beginning of the segment and is inclusive, meaning
-     * the byte at this index is the first byte of the segment.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * Output only. The text of the segment.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Output only. The end index of the segment in the `Part`, measured in bytes.
-     * This marks the end of the segment and is exclusive, meaning the segment
-     * includes content up to, but not including, the byte at this index.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Segment extends \Google\Model
     {
+        /**
+         * Output only. The end index of the segment in the `Part`, measured in bytes.
+         * This marks the end of the segment and is exclusive, meaning the segment
+         * includes content up to, but not including, the byte at this index.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * Output only. The index of the `Part` object that this segment belongs to.
+         * This is useful for associating the segment with a specific part of the
+         * content.
+         *
+         * @var int
+         */
+        public $partIndex;
+        /**
+         * Output only. The start index of the segment in the `Part`, measured in
+         * bytes. This marks the beginning of the segment and is inclusive, meaning
+         * the byte at this index is the first byte of the segment.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * Output only. The text of the segment.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Output only. The end index of the segment in the `Part`, measured in bytes.
+         * This marks the end of the segment and is exclusive, meaning the segment
+         * includes content up to, but not including, the byte at this index.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Output only. The index of the `Part` object that this segment belongs to.
+         * This is useful for associating the segment with a specific part of the
+         * content.
+         *
+         * @param int $partIndex
+         */
+        public function setPartIndex($partIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPartIndex()
+        {
+        }
+        /**
+         * Output only. The start index of the segment in the `Part`, measured in
+         * bytes. This marks the beginning of the segment and is inclusive, meaning
+         * the byte at this index is the first byte of the segment.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * Output only. The text of the segment.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Segment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Output only. The index of the `Part` object that this segment belongs to.
-     * This is useful for associating the segment with a specific part of the
-     * content.
-     *
-     * @param int $partIndex
-     */
-    public function setPartIndex($partIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPartIndex()
-    {
-    }
-    /**
-     * Output only. The start index of the segment in the `Part`, measured in
-     * bytes. This marks the beginning of the segment and is inclusive, meaning
-     * the byte at this index is the first byte of the segment.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * Output only. The text of the segment.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Segment extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Segment
     {
     }
 }

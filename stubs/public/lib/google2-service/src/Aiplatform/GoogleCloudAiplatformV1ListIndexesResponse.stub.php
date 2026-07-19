@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListIndexesResponse extends \Google\Collection
-{
-    protected $collection_key = 'indexes';
-    protected $indexesType = GoogleCloudAiplatformV1Index::class;
-    protected $indexesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListIndexesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of indexes in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1Index[] $indexes
-     */
-    public function setIndexes($indexes)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListIndexesResponse extends \Google\Collection
     {
+        protected $collection_key = 'indexes';
+        protected $indexesType = GoogleCloudAiplatformV1Index::class;
+        protected $indexesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListIndexesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of indexes in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1Index[] $indexes
+         */
+        public function setIndexes($indexes)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Index[]
+         */
+        public function getIndexes()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListIndexesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Index[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListIndexesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexes()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListIndexesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListIndexesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListIndexesResponse
     {
     }
 }

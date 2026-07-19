@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions extends \Google\Collection
-{
-    protected $collection_key = 'webhookData';
-    protected $webhookDataType = GoogleCloudConnectorsV1EventingRuntimeDataWebhookData::class;
-    protected $webhookDataDataType = 'array';
-    /**
-     * Output only. Webhook data.
-     *
-     * @param GoogleCloudConnectorsV1EventingRuntimeDataWebhookData[] $webhookData
-     */
-    public function setWebhookData($webhookData)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions extends \Google\Collection
     {
+        protected $collection_key = 'webhookData';
+        protected $webhookDataType = GoogleCloudConnectorsV1EventingRuntimeDataWebhookData::class;
+        protected $webhookDataDataType = 'array';
+        /**
+         * Output only. Webhook data.
+         *
+         * @param GoogleCloudConnectorsV1EventingRuntimeDataWebhookData[] $webhookData
+         */
+        public function setWebhookData($webhookData)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1EventingRuntimeDataWebhookData[]
+         */
+        public function getWebhookData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudConnectorsV1EventingRuntimeDataWebhookData[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebhookData()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions extends \Google\Service\Integrations\GoogleCloudConnectorsV1EventingRuntimeDataWebhookSubscriptions
     {
     }
 }

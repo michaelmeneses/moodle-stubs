@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class DecodePcIntegrityTokenRequest extends \Google\Model
-{
-    /**
-     * Encoded integrity token.
-     *
-     * @var string
-     */
-    public $integrityToken;
-    /**
-     * Encoded integrity token.
-     *
-     * @param string $integrityToken
-     */
-    public function setIntegrityToken($integrityToken)
+namespace Google\Service\PlayIntegrity {
+    class DecodePcIntegrityTokenRequest extends \Google\Model
     {
+        /**
+         * Encoded integrity token.
+         *
+         * @var string
+         */
+        public $integrityToken;
+        /**
+         * Encoded integrity token.
+         *
+         * @param string $integrityToken
+         */
+        public function setIntegrityToken($integrityToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrityToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayIntegrity\DecodePcIntegrityTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrityToken()
+    class Google_Service_PlayIntegrity_DecodePcIntegrityTokenRequest extends \Google\Service\PlayIntegrity\DecodePcIntegrityTokenRequest
     {
     }
 }

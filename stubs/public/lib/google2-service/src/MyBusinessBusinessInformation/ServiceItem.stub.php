@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class ServiceItem extends \Google\Model
-{
-    protected $freeFormServiceItemType = FreeFormServiceItem::class;
-    protected $freeFormServiceItemDataType = '';
-    protected $priceType = Money::class;
-    protected $priceDataType = '';
-    protected $structuredServiceItemType = StructuredServiceItem::class;
-    protected $structuredServiceItemDataType = '';
-    /**
-     * Optional. This field will be set case of free-form services data.
-     *
-     * @param FreeFormServiceItem $freeFormServiceItem
-     */
-    public function setFreeFormServiceItem(FreeFormServiceItem $freeFormServiceItem)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class ServiceItem extends \Google\Model
     {
+        protected $freeFormServiceItemType = FreeFormServiceItem::class;
+        protected $freeFormServiceItemDataType = '';
+        protected $priceType = Money::class;
+        protected $priceDataType = '';
+        protected $structuredServiceItemType = StructuredServiceItem::class;
+        protected $structuredServiceItemDataType = '';
+        /**
+         * Optional. This field will be set case of free-form services data.
+         *
+         * @param FreeFormServiceItem $freeFormServiceItem
+         */
+        public function setFreeFormServiceItem(FreeFormServiceItem $freeFormServiceItem)
+        {
+        }
+        /**
+         * @return FreeFormServiceItem
+         */
+        public function getFreeFormServiceItem()
+        {
+        }
+        /**
+         * Optional. Represents the monetary price of the service item. We recommend
+         * that currency_code and units should be set when including a price. This
+         * will be treated as a fixed price for the service item.
+         *
+         * @param Money $price
+         */
+        public function setPrice(Money $price)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * Optional. This field will be set case of structured services data.
+         *
+         * @param StructuredServiceItem $structuredServiceItem
+         */
+        public function setStructuredServiceItem(StructuredServiceItem $structuredServiceItem)
+        {
+        }
+        /**
+         * @return StructuredServiceItem
+         */
+        public function getStructuredServiceItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FreeFormServiceItem
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\ServiceItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreeFormServiceItem()
-    {
-    }
-    /**
-     * Optional. Represents the monetary price of the service item. We recommend
-     * that currency_code and units should be set when including a price. This
-     * will be treated as a fixed price for the service item.
-     *
-     * @param Money $price
-     */
-    public function setPrice(Money $price)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * Optional. This field will be set case of structured services data.
-     *
-     * @param StructuredServiceItem $structuredServiceItem
-     */
-    public function setStructuredServiceItem(StructuredServiceItem $structuredServiceItem)
-    {
-    }
-    /**
-     * @return StructuredServiceItem
-     */
-    public function getStructuredServiceItem()
+    class Google_Service_MyBusinessBusinessInformation_ServiceItem extends \Google\Service\MyBusinessBusinessInformation\ServiceItem
     {
     }
 }

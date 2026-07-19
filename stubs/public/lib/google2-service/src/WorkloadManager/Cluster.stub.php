@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Cluster extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    /**
-     * @var string[]
-     */
-    public $nodes;
-    /**
-     * @var string
-     */
-    public $witnessServer;
-    /**
-     * @param string[]
-     */
-    public function setNodes($nodes)
+namespace Google\Service\WorkloadManager {
+    class Cluster extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        /**
+         * @var string[]
+         */
+        public $nodes;
+        /**
+         * @var string
+         */
+        public $witnessServer;
+        /**
+         * @param string[]
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNodes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWitnessServer($witnessServer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWitnessServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\Cluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWitnessServer($witnessServer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWitnessServer()
+    class Google_Service_WorkloadManager_Cluster extends \Google\Service\WorkloadManager\Cluster
     {
     }
 }

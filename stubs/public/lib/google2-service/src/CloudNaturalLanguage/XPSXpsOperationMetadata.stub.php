@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSXpsOperationMetadata extends \Google\Model
-{
-    /**
-     * Optional. XPS server can opt to provide example count of the long running
-     * operation (e.g. training, data importing, batch prediction).
-     *
-     * @var string
-     */
-    public $exampleCount;
-    protected $reportingMetricsType = XPSReportingMetrics::class;
-    protected $reportingMetricsDataType = '';
-    protected $tablesTrainingOperationMetadataType = XPSTablesTrainingOperationMetadata::class;
-    protected $tablesTrainingOperationMetadataDataType = '';
-    protected $videoBatchPredictOperationMetadataType = XPSVideoBatchPredictOperationMetadata::class;
-    protected $videoBatchPredictOperationMetadataDataType = '';
-    protected $videoTrainingOperationMetadataType = XPSVideoTrainingOperationMetadata::class;
-    protected $videoTrainingOperationMetadataDataType = '';
-    protected $visionTrainingOperationMetadataType = XPSVisionTrainingOperationMetadata::class;
-    protected $visionTrainingOperationMetadataDataType = '';
-    /**
-     * Optional. XPS server can opt to provide example count of the long running
-     * operation (e.g. training, data importing, batch prediction).
-     *
-     * @param string $exampleCount
-     */
-    public function setExampleCount($exampleCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSXpsOperationMetadata extends \Google\Model
     {
+        /**
+         * Optional. XPS server can opt to provide example count of the long running
+         * operation (e.g. training, data importing, batch prediction).
+         *
+         * @var string
+         */
+        public $exampleCount;
+        protected $reportingMetricsType = XPSReportingMetrics::class;
+        protected $reportingMetricsDataType = '';
+        protected $tablesTrainingOperationMetadataType = XPSTablesTrainingOperationMetadata::class;
+        protected $tablesTrainingOperationMetadataDataType = '';
+        protected $videoBatchPredictOperationMetadataType = XPSVideoBatchPredictOperationMetadata::class;
+        protected $videoBatchPredictOperationMetadataDataType = '';
+        protected $videoTrainingOperationMetadataType = XPSVideoTrainingOperationMetadata::class;
+        protected $videoTrainingOperationMetadataDataType = '';
+        protected $visionTrainingOperationMetadataType = XPSVisionTrainingOperationMetadata::class;
+        protected $visionTrainingOperationMetadataDataType = '';
+        /**
+         * Optional. XPS server can opt to provide example count of the long running
+         * operation (e.g. training, data importing, batch prediction).
+         *
+         * @param string $exampleCount
+         */
+        public function setExampleCount($exampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExampleCount()
+        {
+        }
+        /**
+         * Metrics for the operation. By the time the operation is terminated (whether
+         * succeeded or failed) as returned from XPS, AutoML BE assumes the metrics
+         * are finalized. AutoML BE transparently posts the metrics to Chemist if it's
+         * not empty, regardless of the response content or error type. If user is
+         * supposed to be charged in case of cancellation/error, this field should be
+         * set. In the case where the type of LRO doesn't require any billing, this
+         * field should be left unset.
+         *
+         * @param XPSReportingMetrics $reportingMetrics
+         */
+        public function setReportingMetrics(XPSReportingMetrics $reportingMetrics)
+        {
+        }
+        /**
+         * @return XPSReportingMetrics
+         */
+        public function getReportingMetrics()
+        {
+        }
+        /**
+         * @param XPSTablesTrainingOperationMetadata $tablesTrainingOperationMetadata
+         */
+        public function setTablesTrainingOperationMetadata(XPSTablesTrainingOperationMetadata $tablesTrainingOperationMetadata)
+        {
+        }
+        /**
+         * @return XPSTablesTrainingOperationMetadata
+         */
+        public function getTablesTrainingOperationMetadata()
+        {
+        }
+        /**
+         * @param XPSVideoBatchPredictOperationMetadata $videoBatchPredictOperationMetadata
+         */
+        public function setVideoBatchPredictOperationMetadata(XPSVideoBatchPredictOperationMetadata $videoBatchPredictOperationMetadata)
+        {
+        }
+        /**
+         * @return XPSVideoBatchPredictOperationMetadata
+         */
+        public function getVideoBatchPredictOperationMetadata()
+        {
+        }
+        /**
+         * @param XPSVideoTrainingOperationMetadata $videoTrainingOperationMetadata
+         */
+        public function setVideoTrainingOperationMetadata(XPSVideoTrainingOperationMetadata $videoTrainingOperationMetadata)
+        {
+        }
+        /**
+         * @return XPSVideoTrainingOperationMetadata
+         */
+        public function getVideoTrainingOperationMetadata()
+        {
+        }
+        /**
+         * @param XPSVisionTrainingOperationMetadata $visionTrainingOperationMetadata
+         */
+        public function setVisionTrainingOperationMetadata(XPSVisionTrainingOperationMetadata $visionTrainingOperationMetadata)
+        {
+        }
+        /**
+         * @return XPSVisionTrainingOperationMetadata
+         */
+        public function getVisionTrainingOperationMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSXpsOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleCount()
-    {
-    }
-    /**
-     * Metrics for the operation. By the time the operation is terminated (whether
-     * succeeded or failed) as returned from XPS, AutoML BE assumes the metrics
-     * are finalized. AutoML BE transparently posts the metrics to Chemist if it's
-     * not empty, regardless of the response content or error type. If user is
-     * supposed to be charged in case of cancellation/error, this field should be
-     * set. In the case where the type of LRO doesn't require any billing, this
-     * field should be left unset.
-     *
-     * @param XPSReportingMetrics $reportingMetrics
-     */
-    public function setReportingMetrics(XPSReportingMetrics $reportingMetrics)
-    {
-    }
-    /**
-     * @return XPSReportingMetrics
-     */
-    public function getReportingMetrics()
-    {
-    }
-    /**
-     * @param XPSTablesTrainingOperationMetadata $tablesTrainingOperationMetadata
-     */
-    public function setTablesTrainingOperationMetadata(XPSTablesTrainingOperationMetadata $tablesTrainingOperationMetadata)
-    {
-    }
-    /**
-     * @return XPSTablesTrainingOperationMetadata
-     */
-    public function getTablesTrainingOperationMetadata()
-    {
-    }
-    /**
-     * @param XPSVideoBatchPredictOperationMetadata $videoBatchPredictOperationMetadata
-     */
-    public function setVideoBatchPredictOperationMetadata(XPSVideoBatchPredictOperationMetadata $videoBatchPredictOperationMetadata)
-    {
-    }
-    /**
-     * @return XPSVideoBatchPredictOperationMetadata
-     */
-    public function getVideoBatchPredictOperationMetadata()
-    {
-    }
-    /**
-     * @param XPSVideoTrainingOperationMetadata $videoTrainingOperationMetadata
-     */
-    public function setVideoTrainingOperationMetadata(XPSVideoTrainingOperationMetadata $videoTrainingOperationMetadata)
-    {
-    }
-    /**
-     * @return XPSVideoTrainingOperationMetadata
-     */
-    public function getVideoTrainingOperationMetadata()
-    {
-    }
-    /**
-     * @param XPSVisionTrainingOperationMetadata $visionTrainingOperationMetadata
-     */
-    public function setVisionTrainingOperationMetadata(XPSVisionTrainingOperationMetadata $visionTrainingOperationMetadata)
-    {
-    }
-    /**
-     * @return XPSVisionTrainingOperationMetadata
-     */
-    public function getVisionTrainingOperationMetadata()
+    class Google_Service_CloudNaturalLanguage_XPSXpsOperationMetadata extends \Google\Service\CloudNaturalLanguage\XPSXpsOperationMetadata
     {
     }
 }

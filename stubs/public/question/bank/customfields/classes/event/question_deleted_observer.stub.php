@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_customfields\event;
 
+use core\event\question_deleted;
+use qbank_customfields\customfield\question_handler;
 /**
  * Event observer for question deletion
  *

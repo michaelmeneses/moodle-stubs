@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class TypeFilter extends \Google\Collection
-{
-    protected $collection_key = 'includedTypes';
-    /**
-     * Optional. Excluded primary Place types.
-     *
-     * @var string[]
-     */
-    public $excludedPrimaryTypes;
-    /**
-     * Optional. Excluded Place types.
-     *
-     * @var string[]
-     */
-    public $excludedTypes;
-    /**
-     * Optional. Included primary Place types.
-     *
-     * @var string[]
-     */
-    public $includedPrimaryTypes;
-    /**
-     * Optional. Included Place types.
-     *
-     * @var string[]
-     */
-    public $includedTypes;
-    /**
-     * Optional. Excluded primary Place types.
-     *
-     * @param string[] $excludedPrimaryTypes
-     */
-    public function setExcludedPrimaryTypes($excludedPrimaryTypes)
+namespace Google\Service\AreaInsights {
+    class TypeFilter extends \Google\Collection
     {
+        protected $collection_key = 'includedTypes';
+        /**
+         * Optional. Excluded primary Place types.
+         *
+         * @var string[]
+         */
+        public $excludedPrimaryTypes;
+        /**
+         * Optional. Excluded Place types.
+         *
+         * @var string[]
+         */
+        public $excludedTypes;
+        /**
+         * Optional. Included primary Place types.
+         *
+         * @var string[]
+         */
+        public $includedPrimaryTypes;
+        /**
+         * Optional. Included Place types.
+         *
+         * @var string[]
+         */
+        public $includedTypes;
+        /**
+         * Optional. Excluded primary Place types.
+         *
+         * @param string[] $excludedPrimaryTypes
+         */
+        public function setExcludedPrimaryTypes($excludedPrimaryTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedPrimaryTypes()
+        {
+        }
+        /**
+         * Optional. Excluded Place types.
+         *
+         * @param string[] $excludedTypes
+         */
+        public function setExcludedTypes($excludedTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedTypes()
+        {
+        }
+        /**
+         * Optional. Included primary Place types.
+         *
+         * @param string[] $includedPrimaryTypes
+         */
+        public function setIncludedPrimaryTypes($includedPrimaryTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedPrimaryTypes()
+        {
+        }
+        /**
+         * Optional. Included Place types.
+         *
+         * @param string[] $includedTypes
+         */
+        public function setIncludedTypes($includedTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AreaInsights\TypeFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedPrimaryTypes()
-    {
-    }
-    /**
-     * Optional. Excluded Place types.
-     *
-     * @param string[] $excludedTypes
-     */
-    public function setExcludedTypes($excludedTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedTypes()
-    {
-    }
-    /**
-     * Optional. Included primary Place types.
-     *
-     * @param string[] $includedPrimaryTypes
-     */
-    public function setIncludedPrimaryTypes($includedPrimaryTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedPrimaryTypes()
-    {
-    }
-    /**
-     * Optional. Included Place types.
-     *
-     * @param string[] $includedTypes
-     */
-    public function setIncludedTypes($includedTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedTypes()
+    class Google_Service_AreaInsights_TypeFilter extends \Google\Service\AreaInsights\TypeFilter
     {
     }
 }

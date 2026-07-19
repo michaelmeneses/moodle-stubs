@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableConstraintsForeignKeysColumnReferences extends \Google\Model
-{
-    /**
-     * Required. The column in the primary key that are referenced by the
-     * referencing_column.
-     *
-     * @var string
-     */
-    public $referencedColumn;
-    /**
-     * Required. The column that composes the foreign key.
-     *
-     * @var string
-     */
-    public $referencingColumn;
-    /**
-     * Required. The column in the primary key that are referenced by the
-     * referencing_column.
-     *
-     * @param string $referencedColumn
-     */
-    public function setReferencedColumn($referencedColumn)
+namespace Google\Service\Bigquery {
+    class TableConstraintsForeignKeysColumnReferences extends \Google\Model
     {
+        /**
+         * Required. The column in the primary key that are referenced by the
+         * referencing_column.
+         *
+         * @var string
+         */
+        public $referencedColumn;
+        /**
+         * Required. The column that composes the foreign key.
+         *
+         * @var string
+         */
+        public $referencingColumn;
+        /**
+         * Required. The column in the primary key that are referenced by the
+         * referencing_column.
+         *
+         * @param string $referencedColumn
+         */
+        public function setReferencedColumn($referencedColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferencedColumn()
+        {
+        }
+        /**
+         * Required. The column that composes the foreign key.
+         *
+         * @param string $referencingColumn
+         */
+        public function setReferencingColumn($referencingColumn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferencingColumn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableConstraintsForeignKeysColumnReferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferencedColumn()
-    {
-    }
-    /**
-     * Required. The column that composes the foreign key.
-     *
-     * @param string $referencingColumn
-     */
-    public function setReferencingColumn($referencingColumn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferencingColumn()
+    class Google_Service_Bigquery_TableConstraintsForeignKeysColumnReferences extends \Google\Service\Bigquery\TableConstraintsForeignKeysColumnReferences
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ConfidentialInstanceConfig extends \Google\Model
-{
-    /**
-     * No type specified. Do not use this value.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED = 'CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED';
-    /**
-     * AMD Secure Encrypted Virtualization.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_SEV = 'SEV';
-    /**
-     * AMD Secure Encrypted Virtualization - Secure Nested Paging.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_SEV_SNP = 'SEV_SNP';
-    /**
-     * Intel Trust Domain eXtension.
-     */
-    public const CONFIDENTIAL_INSTANCE_TYPE_TDX = 'TDX';
-    /**
-     * Defines the type of technology used by the confidential instance.
-     *
-     * @var string
-     */
-    public $confidentialInstanceType;
-    /**
-     * Defines whether the instance should have confidential compute enabled.
-     *
-     * @var bool
-     */
-    public $enableConfidentialCompute;
-    /**
-     * Defines the type of technology used by the confidential instance.
-     *
-     * Accepted values: CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED, SEV, SEV_SNP, TDX
-     *
-     * @param self::CONFIDENTIAL_INSTANCE_TYPE_* $confidentialInstanceType
-     */
-    public function setConfidentialInstanceType($confidentialInstanceType)
+namespace Google\Service\Compute {
+    class ConfidentialInstanceConfig extends \Google\Model
     {
+        /**
+         * No type specified. Do not use this value.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED = 'CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED';
+        /**
+         * AMD Secure Encrypted Virtualization.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_SEV = 'SEV';
+        /**
+         * AMD Secure Encrypted Virtualization - Secure Nested Paging.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_SEV_SNP = 'SEV_SNP';
+        /**
+         * Intel Trust Domain eXtension.
+         */
+        public const CONFIDENTIAL_INSTANCE_TYPE_TDX = 'TDX';
+        /**
+         * Defines the type of technology used by the confidential instance.
+         *
+         * @var string
+         */
+        public $confidentialInstanceType;
+        /**
+         * Defines whether the instance should have confidential compute enabled.
+         *
+         * @var bool
+         */
+        public $enableConfidentialCompute;
+        /**
+         * Defines the type of technology used by the confidential instance.
+         *
+         * Accepted values: CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED, SEV, SEV_SNP, TDX
+         *
+         * @param self::CONFIDENTIAL_INSTANCE_TYPE_* $confidentialInstanceType
+         */
+        public function setConfidentialInstanceType($confidentialInstanceType)
+        {
+        }
+        /**
+         * @return self::CONFIDENTIAL_INSTANCE_TYPE_*
+         */
+        public function getConfidentialInstanceType()
+        {
+        }
+        /**
+         * Defines whether the instance should have confidential compute enabled.
+         *
+         * @param bool $enableConfidentialCompute
+         */
+        public function setEnableConfidentialCompute($enableConfidentialCompute)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableConfidentialCompute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONFIDENTIAL_INSTANCE_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\ConfidentialInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidentialInstanceType()
-    {
-    }
-    /**
-     * Defines whether the instance should have confidential compute enabled.
-     *
-     * @param bool $enableConfidentialCompute
-     */
-    public function setEnableConfidentialCompute($enableConfidentialCompute)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableConfidentialCompute()
+    class Google_Service_Compute_ConfidentialInstanceConfig extends \Google\Service\Compute\ConfidentialInstanceConfig
     {
     }
 }

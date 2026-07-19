@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse extends \Google\Collection
-{
-    protected $collection_key = 'removals';
-    protected $additionsType = GoogleSecuritySafebrowsingV4ThreatEntrySet::class;
-    protected $additionsDataType = 'array';
-    protected $checksumType = GoogleSecuritySafebrowsingV4Checksum::class;
-    protected $checksumDataType = '';
-    /**
-     * @var string
-     */
-    public $newClientState;
-    /**
-     * @var string
-     */
-    public $platformType;
-    protected $removalsType = GoogleSecuritySafebrowsingV4ThreatEntrySet::class;
-    protected $removalsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $responseType;
-    /**
-     * @var string
-     */
-    public $threatEntryType;
-    /**
-     * @var string
-     */
-    public $threatType;
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatEntrySet[]
-     */
-    public function setAdditions($additions)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse extends \Google\Collection
     {
+        protected $collection_key = 'removals';
+        protected $additionsType = GoogleSecuritySafebrowsingV4ThreatEntrySet::class;
+        protected $additionsDataType = 'array';
+        protected $checksumType = GoogleSecuritySafebrowsingV4Checksum::class;
+        protected $checksumDataType = '';
+        /**
+         * @var string
+         */
+        public $newClientState;
+        /**
+         * @var string
+         */
+        public $platformType;
+        protected $removalsType = GoogleSecuritySafebrowsingV4ThreatEntrySet::class;
+        protected $removalsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $responseType;
+        /**
+         * @var string
+         */
+        public $threatEntryType;
+        /**
+         * @var string
+         */
+        public $threatType;
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatEntrySet[]
+         */
+        public function setAdditions($additions)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatEntrySet[]
+         */
+        public function getAdditions()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4Checksum
+         */
+        public function setChecksum(GoogleSecuritySafebrowsingV4Checksum $checksum)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4Checksum
+         */
+        public function getChecksum()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNewClientState($newClientState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewClientState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatEntrySet[]
+         */
+        public function setRemovals($removals)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatEntrySet[]
+         */
+        public function getRemovals()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResponseType($responseType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatEntryType($threatEntryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatEntryType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4ThreatEntrySet[]
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditions()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4Checksum
-     */
-    public function setChecksum(GoogleSecuritySafebrowsingV4Checksum $checksum)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4Checksum
-     */
-    public function getChecksum()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNewClientState($newClientState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewClientState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatEntrySet[]
-     */
-    public function setRemovals($removals)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ThreatEntrySet[]
-     */
-    public function getRemovals()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResponseType($responseType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatEntryType($threatEntryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatEntryType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class Dimension extends \Google\Collection
-{
-    protected $collection_key = 'histogramBuckets';
-    /**
-     * @var string[]
-     */
-    public $histogramBuckets;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string[]
-     */
-    public function setHistogramBuckets($histogramBuckets)
+namespace Google\Service\AnalyticsReporting {
+    class Dimension extends \Google\Collection
     {
+        protected $collection_key = 'histogramBuckets';
+        /**
+         * @var string[]
+         */
+        public $histogramBuckets;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string[]
+         */
+        public function setHistogramBuckets($histogramBuckets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHistogramBuckets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Dimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistogramBuckets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AnalyticsReporting_Dimension extends \Google\Service\AnalyticsReporting\Dimension
     {
     }
 }

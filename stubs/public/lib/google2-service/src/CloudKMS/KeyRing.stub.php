@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class KeyRing extends \Google\Model
-{
-    /**
-     * Output only. The time at which this KeyRing was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The resource name for the KeyRing in the format
-     * `projects/locations/keyRings`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time at which this KeyRing was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudKMS {
+    class KeyRing extends \Google\Model
     {
+        /**
+         * Output only. The time at which this KeyRing was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The resource name for the KeyRing in the format
+         * `projects/locations/keyRings`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time at which this KeyRing was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The resource name for the KeyRing in the format
+         * `projects/locations/keyRings`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\KeyRing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The resource name for the KeyRing in the format
-     * `projects/locations/keyRings`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudKMS_KeyRing extends \Google\Service\CloudKMS\KeyRing
     {
     }
 }

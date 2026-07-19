@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1SystemTimestamps extends \Google\Model
-{
-    /**
-     * Creation timestamp of the resource within the given system.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Expiration timestamp of the resource within the given system.
-     * Currently only applicable to BigQuery resources.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Timestamp of the last modification of the resource or its metadata within a
-     * given system. Note: Depending on the source system, not every modification
-     * updates this timestamp. For example, BigQuery timestamps every metadata
-     * modification but not data or permission changes.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Creation timestamp of the resource within the given system.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1SystemTimestamps extends \Google\Model
     {
+        /**
+         * Creation timestamp of the resource within the given system.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Expiration timestamp of the resource within the given system.
+         * Currently only applicable to BigQuery resources.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Timestamp of the last modification of the resource or its metadata within a
+         * given system. Note: Depending on the source system, not every modification
+         * updates this timestamp. For example, BigQuery timestamps every metadata
+         * modification but not data or permission changes.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Creation timestamp of the resource within the given system.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Expiration timestamp of the resource within the given system.
+         * Currently only applicable to BigQuery resources.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Timestamp of the last modification of the resource or its metadata within a
+         * given system. Note: Depending on the source system, not every modification
+         * updates this timestamp. For example, BigQuery timestamps every metadata
+         * modification but not data or permission changes.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1SystemTimestamps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Expiration timestamp of the resource within the given system.
-     * Currently only applicable to BigQuery resources.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Timestamp of the last modification of the resource or its metadata within a
-     * given system. Note: Depending on the source system, not every modification
-     * updates this timestamp. For example, BigQuery timestamps every metadata
-     * modification but not data or permission changes.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1SystemTimestamps extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1SystemTimestamps
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob\Resource;
-
-/**
- * The "apps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $admobService = new Google\Service\AdMob(...);
- *   $apps = $admobService->accounts_apps;
- *  </code>
- */
-class AccountsApps extends \Google\Service\Resource
-{
+namespace Google\Service\AdMob\Resource {
+    use Google\Service\AdMob\ListAppsResponse;
     /**
-     * List the apps under the specified AdMob account. (apps.listAccountsApps)
-     *
-     * @param string $parent Required. Resource name of the account to list apps
-     * for. Example: accounts/pub-9876543210987654
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of apps to return. If unspecified
-     * or 0, at most 10,000 apps will be returned. The maximum value is 20,000;
-     * values above 20,000 will be coerced to 20,000.
-     * @opt_param string pageToken The value returned by the last
-     * `ListAppsResponse`; indicates that this is a continuation of a prior
-     * `ListApps` call, and that the system should return the next page of data.
-     * @return ListAppsResponse
-     * @throws \Google\Service\Exception
+     * The "apps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $admobService = new Google\Service\AdMob(...);
+     *   $apps = $admobService->accounts_apps;
+     *  </code>
      */
-    public function listAccountsApps($parent, $optParams = [])
+    class AccountsApps extends \Google\Service\Resource
+    {
+        /**
+         * List the apps under the specified AdMob account. (apps.listAccountsApps)
+         *
+         * @param string $parent Required. Resource name of the account to list apps
+         * for. Example: accounts/pub-9876543210987654
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of apps to return. If unspecified
+         * or 0, at most 10,000 apps will be returned. The maximum value is 20,000;
+         * values above 20,000 will be coerced to 20,000.
+         * @opt_param string pageToken The value returned by the last
+         * `ListAppsResponse`; indicates that this is a continuation of a prior
+         * `ListApps` call, and that the system should return the next page of data.
+         * @return ListAppsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsApps($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdMob\Resource\AccountsApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdMob_Resource_AccountsApps extends \Google\Service\AdMob\Resource\AccountsApps
     {
     }
 }

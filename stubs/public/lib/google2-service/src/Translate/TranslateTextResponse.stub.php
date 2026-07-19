@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class TranslateTextResponse extends \Google\Collection
-{
-    protected $collection_key = 'translations';
-    protected $glossaryTranslationsType = Translation::class;
-    protected $glossaryTranslationsDataType = 'array';
-    protected $translationsType = Translation::class;
-    protected $translationsDataType = 'array';
-    /**
-     * Text translation responses if a glossary is provided in the request. This
-     * can be the same as `translations` if no terms apply. This field has the
-     * same length as `contents`.
-     *
-     * @param Translation[] $glossaryTranslations
-     */
-    public function setGlossaryTranslations($glossaryTranslations)
+namespace Google\Service\Translate {
+    class TranslateTextResponse extends \Google\Collection
     {
+        protected $collection_key = 'translations';
+        protected $glossaryTranslationsType = Translation::class;
+        protected $glossaryTranslationsDataType = 'array';
+        protected $translationsType = Translation::class;
+        protected $translationsDataType = 'array';
+        /**
+         * Text translation responses if a glossary is provided in the request. This
+         * can be the same as `translations` if no terms apply. This field has the
+         * same length as `contents`.
+         *
+         * @param Translation[] $glossaryTranslations
+         */
+        public function setGlossaryTranslations($glossaryTranslations)
+        {
+        }
+        /**
+         * @return Translation[]
+         */
+        public function getGlossaryTranslations()
+        {
+        }
+        /**
+         * Text translation responses with no glossary applied. This field has the
+         * same length as `contents`.
+         *
+         * @param Translation[] $translations
+         */
+        public function setTranslations($translations)
+        {
+        }
+        /**
+         * @return Translation[]
+         */
+        public function getTranslations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Translation[]
+     * Runtime class alias of \Google\Service\Translate\TranslateTextResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGlossaryTranslations()
-    {
-    }
-    /**
-     * Text translation responses with no glossary applied. This field has the
-     * same length as `contents`.
-     *
-     * @param Translation[] $translations
-     */
-    public function setTranslations($translations)
-    {
-    }
-    /**
-     * @return Translation[]
-     */
-    public function getTranslations()
+    class Google_Service_Translate_TranslateTextResponse extends \Google\Service\Translate\TranslateTextResponse
     {
     }
 }

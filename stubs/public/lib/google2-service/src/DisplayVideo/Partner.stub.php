@@ -21,221 +21,230 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Partner extends \Google\Model
-{
-    /**
-     * Default value when status is not specified or is unknown in this version.
-     */
-    public const ENTITY_STATUS_ENTITY_STATUS_UNSPECIFIED = 'ENTITY_STATUS_UNSPECIFIED';
-    /**
-     * The entity is enabled to bid and spend budget.
-     */
-    public const ENTITY_STATUS_ENTITY_STATUS_ACTIVE = 'ENTITY_STATUS_ACTIVE';
-    /**
-     * The entity is archived. Bidding and budget spending are disabled. An entity
-     * can be deleted after archived. Deleted entities cannot be retrieved.
-     */
-    public const ENTITY_STATUS_ENTITY_STATUS_ARCHIVED = 'ENTITY_STATUS_ARCHIVED';
-    /**
-     * The entity is under draft. Bidding and budget spending are disabled.
-     */
-    public const ENTITY_STATUS_ENTITY_STATUS_DRAFT = 'ENTITY_STATUS_DRAFT';
-    /**
-     * Bidding and budget spending are paused for the entity.
-     */
-    public const ENTITY_STATUS_ENTITY_STATUS_PAUSED = 'ENTITY_STATUS_PAUSED';
-    /**
-     * The entity is scheduled for deletion.
-     */
-    public const ENTITY_STATUS_ENTITY_STATUS_SCHEDULED_FOR_DELETION = 'ENTITY_STATUS_SCHEDULED_FOR_DELETION';
-    protected $adServerConfigType = PartnerAdServerConfig::class;
-    protected $adServerConfigDataType = '';
-    protected $billingConfigType = PartnerBillingConfig::class;
-    protected $billingConfigDataType = '';
-    protected $dataAccessConfigType = PartnerDataAccessConfig::class;
-    protected $dataAccessConfigDataType = '';
-    /**
-     * The display name of the partner. Must be UTF-8 encoded with a maximum size
-     * of 240 bytes.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The status of the partner.
-     *
-     * @var string
-     */
-    public $entityStatus;
-    protected $exchangeConfigType = ExchangeConfig::class;
-    protected $exchangeConfigDataType = '';
-    protected $generalConfigType = PartnerGeneralConfig::class;
-    protected $generalConfigDataType = '';
-    /**
-     * Output only. The resource name of the partner.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The unique ID of the partner. Assigned by the system.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * Output only. The timestamp when the partner was last updated. Assigned by
-     * the system.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Ad server related settings of the partner.
-     *
-     * @param PartnerAdServerConfig $adServerConfig
-     */
-    public function setAdServerConfig(PartnerAdServerConfig $adServerConfig)
+namespace Google\Service\DisplayVideo {
+    class Partner extends \Google\Model
     {
+        /**
+         * Default value when status is not specified or is unknown in this version.
+         */
+        public const ENTITY_STATUS_ENTITY_STATUS_UNSPECIFIED = 'ENTITY_STATUS_UNSPECIFIED';
+        /**
+         * The entity is enabled to bid and spend budget.
+         */
+        public const ENTITY_STATUS_ENTITY_STATUS_ACTIVE = 'ENTITY_STATUS_ACTIVE';
+        /**
+         * The entity is archived. Bidding and budget spending are disabled. An entity
+         * can be deleted after archived. Deleted entities cannot be retrieved.
+         */
+        public const ENTITY_STATUS_ENTITY_STATUS_ARCHIVED = 'ENTITY_STATUS_ARCHIVED';
+        /**
+         * The entity is under draft. Bidding and budget spending are disabled.
+         */
+        public const ENTITY_STATUS_ENTITY_STATUS_DRAFT = 'ENTITY_STATUS_DRAFT';
+        /**
+         * Bidding and budget spending are paused for the entity.
+         */
+        public const ENTITY_STATUS_ENTITY_STATUS_PAUSED = 'ENTITY_STATUS_PAUSED';
+        /**
+         * The entity is scheduled for deletion.
+         */
+        public const ENTITY_STATUS_ENTITY_STATUS_SCHEDULED_FOR_DELETION = 'ENTITY_STATUS_SCHEDULED_FOR_DELETION';
+        protected $adServerConfigType = PartnerAdServerConfig::class;
+        protected $adServerConfigDataType = '';
+        protected $billingConfigType = PartnerBillingConfig::class;
+        protected $billingConfigDataType = '';
+        protected $dataAccessConfigType = PartnerDataAccessConfig::class;
+        protected $dataAccessConfigDataType = '';
+        /**
+         * The display name of the partner. Must be UTF-8 encoded with a maximum size
+         * of 240 bytes.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The status of the partner.
+         *
+         * @var string
+         */
+        public $entityStatus;
+        protected $exchangeConfigType = ExchangeConfig::class;
+        protected $exchangeConfigDataType = '';
+        protected $generalConfigType = PartnerGeneralConfig::class;
+        protected $generalConfigDataType = '';
+        /**
+         * Output only. The resource name of the partner.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The unique ID of the partner. Assigned by the system.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * Output only. The timestamp when the partner was last updated. Assigned by
+         * the system.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Ad server related settings of the partner.
+         *
+         * @param PartnerAdServerConfig $adServerConfig
+         */
+        public function setAdServerConfig(PartnerAdServerConfig $adServerConfig)
+        {
+        }
+        /**
+         * @return PartnerAdServerConfig
+         */
+        public function getAdServerConfig()
+        {
+        }
+        /**
+         * Billing related settings of the partner.
+         *
+         * @param PartnerBillingConfig $billingConfig
+         */
+        public function setBillingConfig(PartnerBillingConfig $billingConfig)
+        {
+        }
+        /**
+         * @return PartnerBillingConfig
+         */
+        public function getBillingConfig()
+        {
+        }
+        /**
+         * Settings that control how partner data may be accessed.
+         *
+         * @param PartnerDataAccessConfig $dataAccessConfig
+         */
+        public function setDataAccessConfig(PartnerDataAccessConfig $dataAccessConfig)
+        {
+        }
+        /**
+         * @return PartnerDataAccessConfig
+         */
+        public function getDataAccessConfig()
+        {
+        }
+        /**
+         * The display name of the partner. Must be UTF-8 encoded with a maximum size
+         * of 240 bytes.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The status of the partner.
+         *
+         * Accepted values: ENTITY_STATUS_UNSPECIFIED, ENTITY_STATUS_ACTIVE,
+         * ENTITY_STATUS_ARCHIVED, ENTITY_STATUS_DRAFT, ENTITY_STATUS_PAUSED,
+         * ENTITY_STATUS_SCHEDULED_FOR_DELETION
+         *
+         * @param self::ENTITY_STATUS_* $entityStatus
+         */
+        public function setEntityStatus($entityStatus)
+        {
+        }
+        /**
+         * @return self::ENTITY_STATUS_*
+         */
+        public function getEntityStatus()
+        {
+        }
+        /**
+         * Settings that control which exchanges are enabled for the partner.
+         *
+         * @param ExchangeConfig $exchangeConfig
+         */
+        public function setExchangeConfig(ExchangeConfig $exchangeConfig)
+        {
+        }
+        /**
+         * @return ExchangeConfig
+         */
+        public function getExchangeConfig()
+        {
+        }
+        /**
+         * General settings of the partner.
+         *
+         * @param PartnerGeneralConfig $generalConfig
+         */
+        public function setGeneralConfig(PartnerGeneralConfig $generalConfig)
+        {
+        }
+        /**
+         * @return PartnerGeneralConfig
+         */
+        public function getGeneralConfig()
+        {
+        }
+        /**
+         * Output only. The resource name of the partner.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The unique ID of the partner. Assigned by the system.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
+        /**
+         * Output only. The timestamp when the partner was last updated. Assigned by
+         * the system.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PartnerAdServerConfig
+     * Runtime class alias of \Google\Service\DisplayVideo\Partner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdServerConfig()
-    {
-    }
-    /**
-     * Billing related settings of the partner.
-     *
-     * @param PartnerBillingConfig $billingConfig
-     */
-    public function setBillingConfig(PartnerBillingConfig $billingConfig)
-    {
-    }
-    /**
-     * @return PartnerBillingConfig
-     */
-    public function getBillingConfig()
-    {
-    }
-    /**
-     * Settings that control how partner data may be accessed.
-     *
-     * @param PartnerDataAccessConfig $dataAccessConfig
-     */
-    public function setDataAccessConfig(PartnerDataAccessConfig $dataAccessConfig)
-    {
-    }
-    /**
-     * @return PartnerDataAccessConfig
-     */
-    public function getDataAccessConfig()
-    {
-    }
-    /**
-     * The display name of the partner. Must be UTF-8 encoded with a maximum size
-     * of 240 bytes.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The status of the partner.
-     *
-     * Accepted values: ENTITY_STATUS_UNSPECIFIED, ENTITY_STATUS_ACTIVE,
-     * ENTITY_STATUS_ARCHIVED, ENTITY_STATUS_DRAFT, ENTITY_STATUS_PAUSED,
-     * ENTITY_STATUS_SCHEDULED_FOR_DELETION
-     *
-     * @param self::ENTITY_STATUS_* $entityStatus
-     */
-    public function setEntityStatus($entityStatus)
-    {
-    }
-    /**
-     * @return self::ENTITY_STATUS_*
-     */
-    public function getEntityStatus()
-    {
-    }
-    /**
-     * Settings that control which exchanges are enabled for the partner.
-     *
-     * @param ExchangeConfig $exchangeConfig
-     */
-    public function setExchangeConfig(ExchangeConfig $exchangeConfig)
-    {
-    }
-    /**
-     * @return ExchangeConfig
-     */
-    public function getExchangeConfig()
-    {
-    }
-    /**
-     * General settings of the partner.
-     *
-     * @param PartnerGeneralConfig $generalConfig
-     */
-    public function setGeneralConfig(PartnerGeneralConfig $generalConfig)
-    {
-    }
-    /**
-     * @return PartnerGeneralConfig
-     */
-    public function getGeneralConfig()
-    {
-    }
-    /**
-     * Output only. The resource name of the partner.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The unique ID of the partner. Assigned by the system.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
-    {
-    }
-    /**
-     * Output only. The timestamp when the partner was last updated. Assigned by
-     * the system.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DisplayVideo_Partner extends \Google\Service\DisplayVideo\Partner
     {
     }
 }

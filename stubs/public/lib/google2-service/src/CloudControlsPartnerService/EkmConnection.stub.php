@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class EkmConnection extends \Google\Model
-{
-    /**
-     * Unspecified EKM connection state
-     */
-    public const CONNECTION_STATE_CONNECTION_STATE_UNSPECIFIED = 'CONNECTION_STATE_UNSPECIFIED';
-    /**
-     * Available EKM connection state
-     */
-    public const CONNECTION_STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * Not available EKM connection state
-     */
-    public const CONNECTION_STATE_NOT_AVAILABLE = 'NOT_AVAILABLE';
-    /**
-     * Error EKM connection state
-     */
-    public const CONNECTION_STATE_ERROR = 'ERROR';
-    /**
-     * Permission denied EKM connection state
-     */
-    public const CONNECTION_STATE_PERMISSION_DENIED = 'PERMISSION_DENIED';
-    protected $connectionErrorType = ConnectionError::class;
-    protected $connectionErrorDataType = '';
-    /**
-     * Resource name of the EKM connection in the format:
-     * projects/{project}/locations/{location}/ekmConnections/{ekm_connection}
-     *
-     * @var string
-     */
-    public $connectionName;
-    /**
-     * Output only. The connection state
-     *
-     * @var string
-     */
-    public $connectionState;
-    /**
-     * The connection error that occurred if any
-     *
-     * @param ConnectionError $connectionError
-     */
-    public function setConnectionError(ConnectionError $connectionError)
+namespace Google\Service\CloudControlsPartnerService {
+    class EkmConnection extends \Google\Model
     {
+        /**
+         * Unspecified EKM connection state
+         */
+        public const CONNECTION_STATE_CONNECTION_STATE_UNSPECIFIED = 'CONNECTION_STATE_UNSPECIFIED';
+        /**
+         * Available EKM connection state
+         */
+        public const CONNECTION_STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * Not available EKM connection state
+         */
+        public const CONNECTION_STATE_NOT_AVAILABLE = 'NOT_AVAILABLE';
+        /**
+         * Error EKM connection state
+         */
+        public const CONNECTION_STATE_ERROR = 'ERROR';
+        /**
+         * Permission denied EKM connection state
+         */
+        public const CONNECTION_STATE_PERMISSION_DENIED = 'PERMISSION_DENIED';
+        protected $connectionErrorType = ConnectionError::class;
+        protected $connectionErrorDataType = '';
+        /**
+         * Resource name of the EKM connection in the format:
+         * projects/{project}/locations/{location}/ekmConnections/{ekm_connection}
+         *
+         * @var string
+         */
+        public $connectionName;
+        /**
+         * Output only. The connection state
+         *
+         * @var string
+         */
+        public $connectionState;
+        /**
+         * The connection error that occurred if any
+         *
+         * @param ConnectionError $connectionError
+         */
+        public function setConnectionError(ConnectionError $connectionError)
+        {
+        }
+        /**
+         * @return ConnectionError
+         */
+        public function getConnectionError()
+        {
+        }
+        /**
+         * Resource name of the EKM connection in the format:
+         * projects/{project}/locations/{location}/ekmConnections/{ekm_connection}
+         *
+         * @param string $connectionName
+         */
+        public function setConnectionName($connectionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionName()
+        {
+        }
+        /**
+         * Output only. The connection state
+         *
+         * Accepted values: CONNECTION_STATE_UNSPECIFIED, AVAILABLE, NOT_AVAILABLE,
+         * ERROR, PERMISSION_DENIED
+         *
+         * @param self::CONNECTION_STATE_* $connectionState
+         */
+        public function setConnectionState($connectionState)
+        {
+        }
+        /**
+         * @return self::CONNECTION_STATE_*
+         */
+        public function getConnectionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectionError
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\EkmConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionError()
-    {
-    }
-    /**
-     * Resource name of the EKM connection in the format:
-     * projects/{project}/locations/{location}/ekmConnections/{ekm_connection}
-     *
-     * @param string $connectionName
-     */
-    public function setConnectionName($connectionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectionName()
-    {
-    }
-    /**
-     * Output only. The connection state
-     *
-     * Accepted values: CONNECTION_STATE_UNSPECIFIED, AVAILABLE, NOT_AVAILABLE,
-     * ERROR, PERMISSION_DENIED
-     *
-     * @param self::CONNECTION_STATE_* $connectionState
-     */
-    public function setConnectionState($connectionState)
-    {
-    }
-    /**
-     * @return self::CONNECTION_STATE_*
-     */
-    public function getConnectionState()
+    class Google_Service_CloudControlsPartnerService_EkmConnection extends \Google\Service\CloudControlsPartnerService\EkmConnection
     {
     }
 }

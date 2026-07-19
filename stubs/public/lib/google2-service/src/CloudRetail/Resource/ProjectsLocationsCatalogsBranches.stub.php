@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail\Resource;
-
-/**
- * The "branches" collection of methods.
- * Typical usage is:
- *  <code>
- *   $retailService = new Google\Service\CloudRetail(...);
- *   $branches = $retailService->projects_locations_catalogs_branches;
- *  </code>
- */
-class ProjectsLocationsCatalogsBranches extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRetail\Resource {
+    /**
+     * The "branches" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $retailService = new Google\Service\CloudRetail(...);
+     *   $branches = $retailService->projects_locations_catalogs_branches;
+     *  </code>
+     */
+    class ProjectsLocationsCatalogsBranches extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogsBranches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRetail_Resource_ProjectsLocationsCatalogsBranches extends \Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogsBranches
+    {
+    }
 }

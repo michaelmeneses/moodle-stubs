@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class ObjectId extends \Google\Collection
-{
-    protected $collection_key = 'objectIdPath';
-    /**
-     * Required. The parts of an OID path. The most significant parts of the path
-     * come first.
-     *
-     * @var int[]
-     */
-    public $objectIdPath;
-    /**
-     * Required. The parts of an OID path. The most significant parts of the path
-     * come first.
-     *
-     * @param int[] $objectIdPath
-     */
-    public function setObjectIdPath($objectIdPath)
+namespace Google\Service\CertificateAuthorityService {
+    class ObjectId extends \Google\Collection
     {
+        protected $collection_key = 'objectIdPath';
+        /**
+         * Required. The parts of an OID path. The most significant parts of the path
+         * come first.
+         *
+         * @var int[]
+         */
+        public $objectIdPath;
+        /**
+         * Required. The parts of an OID path. The most significant parts of the path
+         * come first.
+         *
+         * @param int[] $objectIdPath
+         */
+        public function setObjectIdPath($objectIdPath)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getObjectIdPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\ObjectId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectIdPath()
+    class Google_Service_CertificateAuthorityService_ObjectId extends \Google\Service\CertificateAuthorityService\ObjectId
     {
     }
 }

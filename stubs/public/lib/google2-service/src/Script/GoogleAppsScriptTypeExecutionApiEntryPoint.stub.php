@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class GoogleAppsScriptTypeExecutionApiEntryPoint extends \Google\Model
-{
-    protected $entryPointConfigType = GoogleAppsScriptTypeExecutionApiConfig::class;
-    protected $entryPointConfigDataType = '';
-    /**
-     * The entry point's configuration.
-     *
-     * @param GoogleAppsScriptTypeExecutionApiConfig $entryPointConfig
-     */
-    public function setEntryPointConfig(GoogleAppsScriptTypeExecutionApiConfig $entryPointConfig)
+namespace Google\Service\Script {
+    class GoogleAppsScriptTypeExecutionApiEntryPoint extends \Google\Model
     {
+        protected $entryPointConfigType = GoogleAppsScriptTypeExecutionApiConfig::class;
+        protected $entryPointConfigDataType = '';
+        /**
+         * The entry point's configuration.
+         *
+         * @param GoogleAppsScriptTypeExecutionApiConfig $entryPointConfig
+         */
+        public function setEntryPointConfig(GoogleAppsScriptTypeExecutionApiConfig $entryPointConfig)
+        {
+        }
+        /**
+         * @return GoogleAppsScriptTypeExecutionApiConfig
+         */
+        public function getEntryPointConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsScriptTypeExecutionApiConfig
+     * Runtime class alias of \Google\Service\Script\GoogleAppsScriptTypeExecutionApiEntryPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntryPointConfig()
+    class Google_Service_Script_GoogleAppsScriptTypeExecutionApiEntryPoint extends \Google\Service\Script\GoogleAppsScriptTypeExecutionApiEntryPoint
     {
     }
 }

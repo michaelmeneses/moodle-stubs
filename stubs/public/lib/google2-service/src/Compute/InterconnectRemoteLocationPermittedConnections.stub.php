@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectRemoteLocationPermittedConnections extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] URL of an Interconnect location that is
-     * permitted to connect to this Interconnect remote location.
-     *
-     * @var string
-     */
-    public $interconnectLocation;
-    /**
-     * Output only. [Output Only] URL of an Interconnect location that is
-     * permitted to connect to this Interconnect remote location.
-     *
-     * @param string $interconnectLocation
-     */
-    public function setInterconnectLocation($interconnectLocation)
+namespace Google\Service\Compute {
+    class InterconnectRemoteLocationPermittedConnections extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] URL of an Interconnect location that is
+         * permitted to connect to this Interconnect remote location.
+         *
+         * @var string
+         */
+        public $interconnectLocation;
+        /**
+         * Output only. [Output Only] URL of an Interconnect location that is
+         * permitted to connect to this Interconnect remote location.
+         *
+         * @param string $interconnectLocation
+         */
+        public function setInterconnectLocation($interconnectLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterconnectLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectRemoteLocationPermittedConnections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnectLocation()
+    class Google_Service_Compute_InterconnectRemoteLocationPermittedConnections extends \Google\Service\Compute\InterconnectRemoteLocationPermittedConnections
     {
     }
 }

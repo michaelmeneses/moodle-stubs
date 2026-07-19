@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class Tags extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Optional. An array of tags. Each tag must be 1-63 characters long, and
-     * comply with RFC1035.
-     *
-     * @var string[]
-     */
-    public $items;
-    /**
-     * Optional. An array of tags. Each tag must be 1-63 characters long, and
-     * comply with RFC1035.
-     *
-     * @param string[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Backupdr {
+    class Tags extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Optional. An array of tags. Each tag must be 1-63 characters long, and
+         * comply with RFC1035.
+         *
+         * @var string[]
+         */
+        public $items;
+        /**
+         * Optional. An array of tags. Each tag must be 1-63 characters long, and
+         * comply with RFC1035.
+         *
+         * @param string[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Backupdr\Tags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_Backupdr_Tags extends \Google\Service\Backupdr\Tags
     {
     }
 }

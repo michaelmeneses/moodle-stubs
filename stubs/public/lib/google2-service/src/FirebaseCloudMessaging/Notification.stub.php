@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class Notification extends \Google\Model
-{
-    /**
-     * The notification's body text.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Contains the URL of an image that is going to be downloaded on the device
-     * and displayed in a notification. JPEG, PNG, BMP have full support across
-     * platforms. Animated GIF and video only work on iOS. WebP and HEIF have
-     * varying levels of support across platforms and platform versions. Android
-     * has 1MB image size limit. Quota usage and implications/costs for hosting
-     * image on Firebase Storage: https://firebase.google.com/pricing
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * The notification's title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The notification's body text.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\FirebaseCloudMessaging {
+    class Notification extends \Google\Model
     {
+        /**
+         * The notification's body text.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Contains the URL of an image that is going to be downloaded on the device
+         * and displayed in a notification. JPEG, PNG, BMP have full support across
+         * platforms. Animated GIF and video only work on iOS. WebP and HEIF have
+         * varying levels of support across platforms and platform versions. Android
+         * has 1MB image size limit. Quota usage and implications/costs for hosting
+         * image on Firebase Storage: https://firebase.google.com/pricing
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * The notification's title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The notification's body text.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Contains the URL of an image that is going to be downloaded on the device
+         * and displayed in a notification. JPEG, PNG, BMP have full support across
+         * platforms. Animated GIF and video only work on iOS. WebP and HEIF have
+         * varying levels of support across platforms and platform versions. Android
+         * has 1MB image size limit. Quota usage and implications/costs for hosting
+         * image on Firebase Storage: https://firebase.google.com/pricing
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The notification's title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\Notification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * Contains the URL of an image that is going to be downloaded on the device
-     * and displayed in a notification. JPEG, PNG, BMP have full support across
-     * platforms. Animated GIF and video only work on iOS. WebP and HEIF have
-     * varying levels of support across platforms and platform versions. Android
-     * has 1MB image size limit. Quota usage and implications/costs for hosting
-     * image on Firebase Storage: https://firebase.google.com/pricing
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * The notification's title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_FirebaseCloudMessaging_Notification extends \Google\Service\FirebaseCloudMessaging\Notification
     {
     }
 }

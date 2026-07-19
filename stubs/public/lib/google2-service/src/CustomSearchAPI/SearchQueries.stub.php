@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class SearchQueries extends \Google\Collection
-{
-    protected $collection_key = 'request';
-    protected $nextPageType = SearchQueriesNextPage::class;
-    protected $nextPageDataType = 'array';
-    protected $previousPageType = SearchQueriesPreviousPage::class;
-    protected $previousPageDataType = 'array';
-    protected $requestType = SearchQueriesRequest::class;
-    protected $requestDataType = 'array';
-    /**
-     * Metadata representing the next page of results, if applicable.
-     *
-     * @param SearchQueriesNextPage[] $nextPage
-     */
-    public function setNextPage($nextPage)
+namespace Google\Service\CustomSearchAPI {
+    class SearchQueries extends \Google\Collection
     {
+        protected $collection_key = 'request';
+        protected $nextPageType = SearchQueriesNextPage::class;
+        protected $nextPageDataType = 'array';
+        protected $previousPageType = SearchQueriesPreviousPage::class;
+        protected $previousPageDataType = 'array';
+        protected $requestType = SearchQueriesRequest::class;
+        protected $requestDataType = 'array';
+        /**
+         * Metadata representing the next page of results, if applicable.
+         *
+         * @param SearchQueriesNextPage[] $nextPage
+         */
+        public function setNextPage($nextPage)
+        {
+        }
+        /**
+         * @return SearchQueriesNextPage[]
+         */
+        public function getNextPage()
+        {
+        }
+        /**
+         * Metadata representing the previous page of results, if applicable.
+         *
+         * @param SearchQueriesPreviousPage[] $previousPage
+         */
+        public function setPreviousPage($previousPage)
+        {
+        }
+        /**
+         * @return SearchQueriesPreviousPage[]
+         */
+        public function getPreviousPage()
+        {
+        }
+        /**
+         * Metadata representing the current request.
+         *
+         * @param SearchQueriesRequest[] $request
+         */
+        public function setRequest($request)
+        {
+        }
+        /**
+         * @return SearchQueriesRequest[]
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SearchQueriesNextPage[]
+     * Runtime class alias of \Google\Service\CustomSearchAPI\SearchQueries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPage()
-    {
-    }
-    /**
-     * Metadata representing the previous page of results, if applicable.
-     *
-     * @param SearchQueriesPreviousPage[] $previousPage
-     */
-    public function setPreviousPage($previousPage)
-    {
-    }
-    /**
-     * @return SearchQueriesPreviousPage[]
-     */
-    public function getPreviousPage()
-    {
-    }
-    /**
-     * Metadata representing the current request.
-     *
-     * @param SearchQueriesRequest[] $request
-     */
-    public function setRequest($request)
-    {
-    }
-    /**
-     * @return SearchQueriesRequest[]
-     */
-    public function getRequest()
+    class Google_Service_CustomSearchAPI_SearchQueries extends \Google\Service\CustomSearchAPI\SearchQueries
     {
     }
 }

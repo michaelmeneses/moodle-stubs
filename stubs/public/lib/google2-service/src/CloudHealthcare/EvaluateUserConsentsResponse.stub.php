@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class EvaluateUserConsentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list. This token is valid for 72 hours after it is created.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = Result::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list. This token is valid for 72 hours after it is created.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudHealthcare {
+    class EvaluateUserConsentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list. This token is valid for 72 hours after it is created.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = Result::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list. This token is valid for 72 hours after it is created.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The consent evaluation result for each `data_id`.
+         *
+         * @param Result[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return Result[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\EvaluateUserConsentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The consent evaluation result for each `data_id`.
-     *
-     * @param Result[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return Result[]
-     */
-    public function getResults()
+    class Google_Service_CloudHealthcare_EvaluateUserConsentsResponse extends \Google\Service\CloudHealthcare\EvaluateUserConsentsResponse
     {
     }
 }

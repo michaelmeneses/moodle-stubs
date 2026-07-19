@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaLiftSuspensionResponse extends \Google\Model
-{
-    /**
-     * Execution Id that will be returned
-     *
-     * @var string
-     */
-    public $eventExecutionInfoId;
-    /**
-     * Execution Id that will be returned
-     *
-     * @param string $eventExecutionInfoId
-     */
-    public function setEventExecutionInfoId($eventExecutionInfoId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaLiftSuspensionResponse extends \Google\Model
     {
+        /**
+         * Execution Id that will be returned
+         *
+         * @var string
+         */
+        public $eventExecutionInfoId;
+        /**
+         * Execution Id that will be returned
+         *
+         * @param string $eventExecutionInfoId
+         */
+        public function setEventExecutionInfoId($eventExecutionInfoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventExecutionInfoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLiftSuspensionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventExecutionInfoId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaLiftSuspensionResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLiftSuspensionResponse
     {
     }
 }

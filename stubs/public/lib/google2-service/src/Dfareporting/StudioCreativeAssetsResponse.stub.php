@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class StudioCreativeAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = StudioCreativeAsset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * The list of studio creative assets.
-     *
-     * @param StudioCreativeAsset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\Dfareporting {
+    class StudioCreativeAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = StudioCreativeAsset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * The list of studio creative assets.
+         *
+         * @param StudioCreativeAsset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return StudioCreativeAsset[]
+         */
+        public function getAssets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StudioCreativeAsset[]
+     * Runtime class alias of \Google\Service\Dfareporting\StudioCreativeAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
+    class Google_Service_Dfareporting_StudioCreativeAssetsResponse extends \Google\Service\Dfareporting\StudioCreativeAssetsResponse
     {
     }
 }

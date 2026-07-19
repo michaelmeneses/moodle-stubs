@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1GcsPrefix extends \Google\Model
-{
-    /**
-     * The URI prefix.
-     *
-     * @var string
-     */
-    public $gcsUriPrefix;
-    /**
-     * The URI prefix.
-     *
-     * @param string $gcsUriPrefix
-     */
-    public function setGcsUriPrefix($gcsUriPrefix)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1GcsPrefix extends \Google\Model
     {
+        /**
+         * The URI prefix.
+         *
+         * @var string
+         */
+        public $gcsUriPrefix;
+        /**
+         * The URI prefix.
+         *
+         * @param string $gcsUriPrefix
+         */
+        public function setGcsUriPrefix($gcsUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1GcsPrefix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUriPrefix()
+    class Google_Service_Document_GoogleCloudDocumentaiV1GcsPrefix extends \Google\Service\Document\GoogleCloudDocumentaiV1GcsPrefix
     {
     }
 }

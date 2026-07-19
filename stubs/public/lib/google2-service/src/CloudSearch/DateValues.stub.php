@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DateValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = Date::class;
-    protected $valuesDataType = 'array';
-    /**
-     * @param Date[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CloudSearch {
+    class DateValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = Date::class;
+        protected $valuesDataType = 'array';
+        /**
+         * @param Date[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return Date[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date[]
+     * Runtime class alias of \Google\Service\CloudSearch\DateValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CloudSearch_DateValues extends \Google\Service\CloudSearch\DateValues
     {
     }
 }

@@ -21,120 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "resourceRecordSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $resourceRecordSets = $dnsService->resourceRecordSets;
- *  </code>
- */
-class ResourceRecordSets extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\ResourceRecordSet;
+    use Google\Service\Dns\ResourceRecordSetsDeleteResponse;
+    use Google\Service\Dns\ResourceRecordSetsListResponse;
     /**
-     * Creates a new ResourceRecordSet. (resourceRecordSets.create)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param ResourceRecordSet $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResourceRecordSet
-     * @throws \Google\Service\Exception
+     * The "resourceRecordSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $resourceRecordSets = $dnsService->resourceRecordSets;
+     *  </code>
      */
-    public function create($project, $managedZone, ResourceRecordSet $postBody, $optParams = [])
+    class ResourceRecordSets extends \Google\Service\Resource
     {
+        /**
+         * Creates a new ResourceRecordSet. (resourceRecordSets.create)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param ResourceRecordSet $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResourceRecordSet
+         * @throws \Google\Service\Exception
+         */
+        public function create($project, $managedZone, ResourceRecordSet $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a previously created ResourceRecordSet. (resourceRecordSets.delete)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param string $name Fully qualified domain name.
+         * @param string $type RRSet type.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResourceRecordSetsDeleteResponse
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $managedZone, $name, $type, $optParams = [])
+        {
+        }
+        /**
+         * Fetches the representation of an existing ResourceRecordSet.
+         * (resourceRecordSets.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param string $name Fully qualified domain name.
+         * @param string $type RRSet type.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResourceRecordSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $managedZone, $name, $type, $optParams = [])
+        {
+        }
+        /**
+         * Enumerates ResourceRecordSets that you have created but not yet deleted.
+         * (resourceRecordSets.listResourceRecordSets)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Optional. Maximum number of results to be returned.
+         * If unspecified, the server decides how many results to return.
+         * @opt_param string name Restricts the list to return only records with this
+         * fully qualified domain name. Mutually exclusive with the {@code filter}
+         * field.
+         * @opt_param string pageToken Optional. A tag returned by a previous list
+         * request that was truncated. Use this parameter to continue a previous list
+         * request.
+         * @opt_param string type Restricts the list to return only records of this
+         * type. If present, the "name" parameter must also be present. Mutually
+         * exclusive with the {@code filter} field.
+         * @return ResourceRecordSetsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listResourceRecordSets($project, $managedZone, $optParams = [])
+        {
+        }
+        /**
+         * Applies a partial update to an existing ResourceRecordSet.
+         * (resourceRecordSets.patch)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param string $name Fully qualified domain name.
+         * @param string $type RRSet type.
+         * @param ResourceRecordSet $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResourceRecordSet
+         * @throws \Google\Service\Exception
+         */
+        public function patch($project, $managedZone, $name, $type, ResourceRecordSet $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a previously created ResourceRecordSet. (resourceRecordSets.delete)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param string $name Fully qualified domain name.
-     * @param string $type RRSet type.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResourceRecordSetsDeleteResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dns\Resource\ResourceRecordSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($project, $managedZone, $name, $type, $optParams = [])
-    {
-    }
-    /**
-     * Fetches the representation of an existing ResourceRecordSet.
-     * (resourceRecordSets.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param string $name Fully qualified domain name.
-     * @param string $type RRSet type.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResourceRecordSet
-     * @throws \Google\Service\Exception
-     */
-    public function get($project, $managedZone, $name, $type, $optParams = [])
-    {
-    }
-    /**
-     * Enumerates ResourceRecordSets that you have created but not yet deleted.
-     * (resourceRecordSets.listResourceRecordSets)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Optional. Maximum number of results to be returned.
-     * If unspecified, the server decides how many results to return.
-     * @opt_param string name Restricts the list to return only records with this
-     * fully qualified domain name. Mutually exclusive with the {@code filter}
-     * field.
-     * @opt_param string pageToken Optional. A tag returned by a previous list
-     * request that was truncated. Use this parameter to continue a previous list
-     * request.
-     * @opt_param string type Restricts the list to return only records of this
-     * type. If present, the "name" parameter must also be present. Mutually
-     * exclusive with the {@code filter} field.
-     * @return ResourceRecordSetsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listResourceRecordSets($project, $managedZone, $optParams = [])
-    {
-    }
-    /**
-     * Applies a partial update to an existing ResourceRecordSet.
-     * (resourceRecordSets.patch)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param string $name Fully qualified domain name.
-     * @param string $type RRSet type.
-     * @param ResourceRecordSet $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResourceRecordSet
-     * @throws \Google\Service\Exception
-     */
-    public function patch($project, $managedZone, $name, $type, ResourceRecordSet $postBody, $optParams = [])
+    class Google_Service_Dns_Resource_ResourceRecordSets extends \Google\Service\Dns\Resource\ResourceRecordSets
     {
     }
 }

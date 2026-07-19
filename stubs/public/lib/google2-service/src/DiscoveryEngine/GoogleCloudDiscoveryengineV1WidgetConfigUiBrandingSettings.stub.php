@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigUiBrandingSettings extends \Google\Model
-{
-    protected $logoType = GoogleCloudDiscoveryengineV1WidgetConfigImage::class;
-    protected $logoDataType = '';
-    /**
-     * Logo image.
-     *
-     * @param GoogleCloudDiscoveryengineV1WidgetConfigImage $logo
-     */
-    public function setLogo(GoogleCloudDiscoveryengineV1WidgetConfigImage $logo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigUiBrandingSettings extends \Google\Model
     {
+        protected $logoType = GoogleCloudDiscoveryengineV1WidgetConfigImage::class;
+        protected $logoDataType = '';
+        /**
+         * Logo image.
+         *
+         * @param GoogleCloudDiscoveryengineV1WidgetConfigImage $logo
+         */
+        public function setLogo(GoogleCloudDiscoveryengineV1WidgetConfigImage $logo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1WidgetConfigImage
+         */
+        public function getLogo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1WidgetConfigImage
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigUiBrandingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogo()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigUiBrandingSettings extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigUiBrandingSettings
     {
     }
 }

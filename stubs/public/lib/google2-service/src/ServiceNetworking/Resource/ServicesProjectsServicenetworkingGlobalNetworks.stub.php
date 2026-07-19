@@ -21,82 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "networks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $networks = $servicenetworkingService->services_projects_global_networks;
- *  </code>
- */
-class ServicesProjectsServicenetworkingGlobalNetworks extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\ConsumerConfig;
+    use Google\Service\ServiceNetworking\Operation;
+    use Google\Service\ServiceNetworking\UpdateConsumerConfigRequest;
+    use Google\Service\ServiceNetworking\VpcServiceControls;
     /**
-     * Service producers use this method to get the configuration of their
-     * connection including the import/export of custom routes and subnetwork routes
-     * with public IP. (networks.get)
-     *
-     * @param string $name Required. Name of the consumer config to retrieve in the
-     * format: `services/{service}/projects/{project}/global/networks/{network}`.
-     * {service} is the peering service that is managing connectivity for the
-     * service producer's organization. For Google services that support this
-     * functionality, this value is `servicenetworking.googleapis.com`. {project} is
-     * a project number e.g. `12345` that contains the service consumer's VPC
-     * network. {network} is the name of the service consumer's VPC network.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeUsedIpRanges Optional. When true, include the used IP
-     * ranges as part of the GetConsumerConfig output. This includes routes created
-     * inside the service networking network, consumer network, peers of the
-     * consumer network, and reserved ranges inside the service networking network.
-     * By default, this is false
-     * @return ConsumerConfig
-     * @throws \Google\Service\Exception
+     * The "networks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $networks = $servicenetworkingService->services_projects_global_networks;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ServicesProjectsServicenetworkingGlobalNetworks extends \Google\Service\Resource
     {
+        /**
+         * Service producers use this method to get the configuration of their
+         * connection including the import/export of custom routes and subnetwork routes
+         * with public IP. (networks.get)
+         *
+         * @param string $name Required. Name of the consumer config to retrieve in the
+         * format: `services/{service}/projects/{project}/global/networks/{network}`.
+         * {service} is the peering service that is managing connectivity for the
+         * service producer's organization. For Google services that support this
+         * functionality, this value is `servicenetworking.googleapis.com`. {project} is
+         * a project number e.g. `12345` that contains the service consumer's VPC
+         * network. {network} is the name of the service consumer's VPC network.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeUsedIpRanges Optional. When true, include the used IP
+         * ranges as part of the GetConsumerConfig output. This includes routes created
+         * inside the service networking network, consumer network, peers of the
+         * consumer network, and reserved ranges inside the service networking network.
+         * By default, this is false
+         * @return ConsumerConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Consumers use this method to find out the state of VPC Service Controls. The
+         * controls could be enabled or disabled for a connection.
+         * (networks.getVpcServiceControls)
+         *
+         * @param string $name Required. Name of the VPC Service Controls config to
+         * retrieve in the format:
+         * `services/{service}/projects/{project}/global/networks/{network}`. {service}
+         * is the peering service that is managing connectivity for the service
+         * producer's organization. For Google services that support this functionality,
+         * this value is `servicenetworking.googleapis.com`. {project} is a project
+         * number e.g. `12345` that contains the service consumer's VPC network.
+         * {network} is the name of the service consumer's VPC network.
+         * @param array $optParams Optional parameters.
+         * @return VpcServiceControls
+         * @throws \Google\Service\Exception
+         */
+        public function getVpcServiceControls($name, $optParams = [])
+        {
+        }
+        /**
+         * Service producers use this method to update the configuration of their
+         * connection including the import/export of custom routes and subnetwork routes
+         * with public IP. (networks.updateConsumerConfig)
+         *
+         * @param string $parent Required. Parent resource identifying the connection
+         * for which the consumer config is being updated in the format:
+         * `services/{service}/projects/{project}/global/networks/{network}` {service}
+         * is the peering service that is managing connectivity for the service
+         * producer's organization. For Google services that support this functionality,
+         * this value is `servicenetworking.googleapis.com`. {project} is the number of
+         * the project that contains the service consumer's VPC network e.g. `12345`.
+         * {network} is the name of the service consumer's VPC network.
+         * @param UpdateConsumerConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function updateConsumerConfig($parent, UpdateConsumerConfigRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Consumers use this method to find out the state of VPC Service Controls. The
-     * controls could be enabled or disabled for a connection.
-     * (networks.getVpcServiceControls)
-     *
-     * @param string $name Required. Name of the VPC Service Controls config to
-     * retrieve in the format:
-     * `services/{service}/projects/{project}/global/networks/{network}`. {service}
-     * is the peering service that is managing connectivity for the service
-     * producer's organization. For Google services that support this functionality,
-     * this value is `servicenetworking.googleapis.com`. {project} is a project
-     * number e.g. `12345` that contains the service consumer's VPC network.
-     * {network} is the name of the service consumer's VPC network.
-     * @param array $optParams Optional parameters.
-     * @return VpcServiceControls
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesProjectsServicenetworkingGlobalNetworks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpcServiceControls($name, $optParams = [])
-    {
-    }
-    /**
-     * Service producers use this method to update the configuration of their
-     * connection including the import/export of custom routes and subnetwork routes
-     * with public IP. (networks.updateConsumerConfig)
-     *
-     * @param string $parent Required. Parent resource identifying the connection
-     * for which the consumer config is being updated in the format:
-     * `services/{service}/projects/{project}/global/networks/{network}` {service}
-     * is the peering service that is managing connectivity for the service
-     * producer's organization. For Google services that support this functionality,
-     * this value is `servicenetworking.googleapis.com`. {project} is the number of
-     * the project that contains the service consumer's VPC network e.g. `12345`.
-     * {network} is the name of the service consumer's VPC network.
-     * @param UpdateConsumerConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function updateConsumerConfig($parent, UpdateConsumerConfigRequest $postBody, $optParams = [])
+    class Google_Service_ServiceNetworking_Resource_ServicesProjectsServicenetworkingGlobalNetworks extends \Google\Service\ServiceNetworking\Resource\ServicesProjectsServicenetworkingGlobalNetworks
     {
     }
 }

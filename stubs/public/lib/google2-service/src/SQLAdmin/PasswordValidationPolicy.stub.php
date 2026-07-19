@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class PasswordValidationPolicy extends \Google\Model
-{
-    /**
-     * Complexity check is not specified.
-     */
-    public const COMPLEXITY_COMPLEXITY_UNSPECIFIED = 'COMPLEXITY_UNSPECIFIED';
-    /**
-     * A combination of lowercase, uppercase, numeric, and non-alphanumeric
-     * characters.
-     */
-    public const COMPLEXITY_COMPLEXITY_DEFAULT = 'COMPLEXITY_DEFAULT';
-    /**
-     * The complexity of the password.
-     *
-     * @var string
-     */
-    public $complexity;
-    /**
-     * This field is deprecated and will be removed in a future version of the
-     * API.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $disallowCompromisedCredentials;
-    /**
-     * Disallow username as a part of the password.
-     *
-     * @var bool
-     */
-    public $disallowUsernameSubstring;
-    /**
-     * Whether to enable the password policy or not. When enabled, passwords must
-     * meet complexity requirements. Keep this policy enabled to help prevent
-     * unauthorized access. Disabling this policy allows weak passwords.
-     *
-     * @var bool
-     */
-    public $enablePasswordPolicy;
-    /**
-     * Minimum number of characters allowed.
-     *
-     * @var int
-     */
-    public $minLength;
-    /**
-     * Minimum interval after which the password can be changed. This flag is only
-     * supported for PostgreSQL.
-     *
-     * @var string
-     */
-    public $passwordChangeInterval;
-    /**
-     * Number of previous passwords that cannot be reused.
-     *
-     * @var int
-     */
-    public $reuseInterval;
-    /**
-     * The complexity of the password.
-     *
-     * Accepted values: COMPLEXITY_UNSPECIFIED, COMPLEXITY_DEFAULT
-     *
-     * @param self::COMPLEXITY_* $complexity
-     */
-    public function setComplexity($complexity)
+namespace Google\Service\SQLAdmin {
+    class PasswordValidationPolicy extends \Google\Model
     {
+        /**
+         * Complexity check is not specified.
+         */
+        public const COMPLEXITY_COMPLEXITY_UNSPECIFIED = 'COMPLEXITY_UNSPECIFIED';
+        /**
+         * A combination of lowercase, uppercase, numeric, and non-alphanumeric
+         * characters.
+         */
+        public const COMPLEXITY_COMPLEXITY_DEFAULT = 'COMPLEXITY_DEFAULT';
+        /**
+         * The complexity of the password.
+         *
+         * @var string
+         */
+        public $complexity;
+        /**
+         * This field is deprecated and will be removed in a future version of the
+         * API.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $disallowCompromisedCredentials;
+        /**
+         * Disallow username as a part of the password.
+         *
+         * @var bool
+         */
+        public $disallowUsernameSubstring;
+        /**
+         * Whether to enable the password policy or not. When enabled, passwords must
+         * meet complexity requirements. Keep this policy enabled to help prevent
+         * unauthorized access. Disabling this policy allows weak passwords.
+         *
+         * @var bool
+         */
+        public $enablePasswordPolicy;
+        /**
+         * Minimum number of characters allowed.
+         *
+         * @var int
+         */
+        public $minLength;
+        /**
+         * Minimum interval after which the password can be changed. This flag is only
+         * supported for PostgreSQL.
+         *
+         * @var string
+         */
+        public $passwordChangeInterval;
+        /**
+         * Number of previous passwords that cannot be reused.
+         *
+         * @var int
+         */
+        public $reuseInterval;
+        /**
+         * The complexity of the password.
+         *
+         * Accepted values: COMPLEXITY_UNSPECIFIED, COMPLEXITY_DEFAULT
+         *
+         * @param self::COMPLEXITY_* $complexity
+         */
+        public function setComplexity($complexity)
+        {
+        }
+        /**
+         * @return self::COMPLEXITY_*
+         */
+        public function getComplexity()
+        {
+        }
+        /**
+         * This field is deprecated and will be removed in a future version of the
+         * API.
+         *
+         * @deprecated
+         * @param bool $disallowCompromisedCredentials
+         */
+        public function setDisallowCompromisedCredentials($disallowCompromisedCredentials)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getDisallowCompromisedCredentials()
+        {
+        }
+        /**
+         * Disallow username as a part of the password.
+         *
+         * @param bool $disallowUsernameSubstring
+         */
+        public function setDisallowUsernameSubstring($disallowUsernameSubstring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisallowUsernameSubstring()
+        {
+        }
+        /**
+         * Whether to enable the password policy or not. When enabled, passwords must
+         * meet complexity requirements. Keep this policy enabled to help prevent
+         * unauthorized access. Disabling this policy allows weak passwords.
+         *
+         * @param bool $enablePasswordPolicy
+         */
+        public function setEnablePasswordPolicy($enablePasswordPolicy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePasswordPolicy()
+        {
+        }
+        /**
+         * Minimum number of characters allowed.
+         *
+         * @param int $minLength
+         */
+        public function setMinLength($minLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinLength()
+        {
+        }
+        /**
+         * Minimum interval after which the password can be changed. This flag is only
+         * supported for PostgreSQL.
+         *
+         * @param string $passwordChangeInterval
+         */
+        public function setPasswordChangeInterval($passwordChangeInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasswordChangeInterval()
+        {
+        }
+        /**
+         * Number of previous passwords that cannot be reused.
+         *
+         * @param int $reuseInterval
+         */
+        public function setReuseInterval($reuseInterval)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReuseInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPLEXITY_*
+     * Runtime class alias of \Google\Service\SQLAdmin\PasswordValidationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplexity()
-    {
-    }
-    /**
-     * This field is deprecated and will be removed in a future version of the
-     * API.
-     *
-     * @deprecated
-     * @param bool $disallowCompromisedCredentials
-     */
-    public function setDisallowCompromisedCredentials($disallowCompromisedCredentials)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getDisallowCompromisedCredentials()
-    {
-    }
-    /**
-     * Disallow username as a part of the password.
-     *
-     * @param bool $disallowUsernameSubstring
-     */
-    public function setDisallowUsernameSubstring($disallowUsernameSubstring)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisallowUsernameSubstring()
-    {
-    }
-    /**
-     * Whether to enable the password policy or not. When enabled, passwords must
-     * meet complexity requirements. Keep this policy enabled to help prevent
-     * unauthorized access. Disabling this policy allows weak passwords.
-     *
-     * @param bool $enablePasswordPolicy
-     */
-    public function setEnablePasswordPolicy($enablePasswordPolicy)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePasswordPolicy()
-    {
-    }
-    /**
-     * Minimum number of characters allowed.
-     *
-     * @param int $minLength
-     */
-    public function setMinLength($minLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinLength()
-    {
-    }
-    /**
-     * Minimum interval after which the password can be changed. This flag is only
-     * supported for PostgreSQL.
-     *
-     * @param string $passwordChangeInterval
-     */
-    public function setPasswordChangeInterval($passwordChangeInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPasswordChangeInterval()
-    {
-    }
-    /**
-     * Number of previous passwords that cannot be reused.
-     *
-     * @param int $reuseInterval
-     */
-    public function setReuseInterval($reuseInterval)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReuseInterval()
+    class Google_Service_SQLAdmin_PasswordValidationPolicy extends \Google\Service\SQLAdmin\PasswordValidationPolicy
     {
     }
 }

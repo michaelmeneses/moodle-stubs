@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PubSubIODetails extends \Google\Model
-{
-    /**
-     * Subscription used in the connection.
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * Topic accessed in the connection.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Subscription used in the connection.
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
+namespace Google\Service\Dataflow {
+    class PubSubIODetails extends \Google\Model
     {
+        /**
+         * Subscription used in the connection.
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * Topic accessed in the connection.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Subscription used in the connection.
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * Topic accessed in the connection.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\PubSubIODetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
-    {
-    }
-    /**
-     * Topic accessed in the connection.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_Dataflow_PubSubIODetails extends \Google\Service\Dataflow\PubSubIODetails
     {
     }
 }

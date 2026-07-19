@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParameterMapField extends \Google\Model
-{
-    protected $literalValueType = EnterpriseCrmEventbusProtoParameterValueType::class;
-    protected $literalValueDataType = '';
-    /**
-     * Referencing one of the WF variables.
-     *
-     * @var string
-     */
-    public $referenceKey;
-    /**
-     * Passing a literal value.
-     *
-     * @param EnterpriseCrmEventbusProtoParameterValueType $literalValue
-     */
-    public function setLiteralValue(EnterpriseCrmEventbusProtoParameterValueType $literalValue)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParameterMapField extends \Google\Model
     {
+        protected $literalValueType = EnterpriseCrmEventbusProtoParameterValueType::class;
+        protected $literalValueDataType = '';
+        /**
+         * Referencing one of the WF variables.
+         *
+         * @var string
+         */
+        public $referenceKey;
+        /**
+         * Passing a literal value.
+         *
+         * @param EnterpriseCrmEventbusProtoParameterValueType $literalValue
+         */
+        public function setLiteralValue(EnterpriseCrmEventbusProtoParameterValueType $literalValue)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterValueType
+         */
+        public function getLiteralValue()
+        {
+        }
+        /**
+         * Referencing one of the WF variables.
+         *
+         * @param string $referenceKey
+         */
+        public function setReferenceKey($referenceKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoParameterValueType
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParameterMapField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLiteralValue()
-    {
-    }
-    /**
-     * Referencing one of the WF variables.
-     *
-     * @param string $referenceKey
-     */
-    public function setReferenceKey($referenceKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceKey()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParameterMapField extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParameterMapField
     {
     }
 }

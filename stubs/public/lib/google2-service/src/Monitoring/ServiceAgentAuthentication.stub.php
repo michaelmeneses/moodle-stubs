@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ServiceAgentAuthentication extends \Google\Model
-{
-    /**
-     * Default value, will result in OIDC Authentication.
-     */
-    public const TYPE_SERVICE_AGENT_AUTHENTICATION_TYPE_UNSPECIFIED = 'SERVICE_AGENT_AUTHENTICATION_TYPE_UNSPECIFIED';
-    /**
-     * OIDC Authentication
-     */
-    public const TYPE_OIDC_TOKEN = 'OIDC_TOKEN';
-    /**
-     * Type of authentication.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Type of authentication.
-     *
-     * Accepted values: SERVICE_AGENT_AUTHENTICATION_TYPE_UNSPECIFIED, OIDC_TOKEN
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\Monitoring {
+    class ServiceAgentAuthentication extends \Google\Model
     {
+        /**
+         * Default value, will result in OIDC Authentication.
+         */
+        public const TYPE_SERVICE_AGENT_AUTHENTICATION_TYPE_UNSPECIFIED = 'SERVICE_AGENT_AUTHENTICATION_TYPE_UNSPECIFIED';
+        /**
+         * OIDC Authentication
+         */
+        public const TYPE_OIDC_TOKEN = 'OIDC_TOKEN';
+        /**
+         * Type of authentication.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Type of authentication.
+         *
+         * Accepted values: SERVICE_AGENT_AUTHENTICATION_TYPE_UNSPECIFIED, OIDC_TOKEN
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\Monitoring\ServiceAgentAuthentication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Monitoring_ServiceAgentAuthentication extends \Google\Service\Monitoring\ServiceAgentAuthentication
     {
     }
 }

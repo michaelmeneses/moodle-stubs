@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RoutersListBgpRoutes extends \Google\Collection
-{
-    protected $collection_key = 'unreachables';
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#routersListBgpRoutes for lists of bgp routes.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultType = BgpRoute::class;
-    protected $resultDataType = 'array';
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachables;
-    protected $warningType = RoutersListBgpRoutesWarning::class;
-    protected $warningDataType = '';
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Compute {
+    class RoutersListBgpRoutes extends \Google\Collection
     {
+        protected $collection_key = 'unreachables';
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#routersListBgpRoutes for lists of bgp routes.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultType = BgpRoute::class;
+        protected $resultDataType = 'array';
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachables;
+        protected $warningType = RoutersListBgpRoutesWarning::class;
+        protected $warningDataType = '';
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#routersListBgpRoutes for lists of bgp routes.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * [Output Only] A list of bgp routes.
+         *
+         * @param BgpRoute[] $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return BgpRoute[]
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Unreachable resources.
+         *
+         * @param string[] $unreachables
+         */
+        public function setUnreachables($unreachables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachables()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param RoutersListBgpRoutesWarning $warning
+         */
+        public function setWarning(RoutersListBgpRoutesWarning $warning)
+        {
+        }
+        /**
+         * @return RoutersListBgpRoutesWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RoutersListBgpRoutes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#routersListBgpRoutes for lists of bgp routes.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * [Output Only] A list of bgp routes.
-     *
-     * @param BgpRoute[] $result
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return BgpRoute[]
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Unreachable resources.
-     *
-     * @param string[] $unreachables
-     */
-    public function setUnreachables($unreachables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachables()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param RoutersListBgpRoutesWarning $warning
-     */
-    public function setWarning(RoutersListBgpRoutesWarning $warning)
-    {
-    }
-    /**
-     * @return RoutersListBgpRoutesWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_RoutersListBgpRoutes extends \Google\Service\Compute\RoutersListBgpRoutes
     {
     }
 }

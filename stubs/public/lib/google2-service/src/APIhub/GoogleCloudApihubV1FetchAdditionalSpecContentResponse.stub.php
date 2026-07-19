@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1FetchAdditionalSpecContentResponse extends \Google\Model
-{
-    protected $additionalSpecContentType = GoogleCloudApihubV1AdditionalSpecContent::class;
-    protected $additionalSpecContentDataType = '';
-    /**
-     * The additional spec content.
-     *
-     * @param GoogleCloudApihubV1AdditionalSpecContent $additionalSpecContent
-     */
-    public function setAdditionalSpecContent(GoogleCloudApihubV1AdditionalSpecContent $additionalSpecContent)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1FetchAdditionalSpecContentResponse extends \Google\Model
     {
+        protected $additionalSpecContentType = GoogleCloudApihubV1AdditionalSpecContent::class;
+        protected $additionalSpecContentDataType = '';
+        /**
+         * The additional spec content.
+         *
+         * @param GoogleCloudApihubV1AdditionalSpecContent $additionalSpecContent
+         */
+        public function setAdditionalSpecContent(GoogleCloudApihubV1AdditionalSpecContent $additionalSpecContent)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AdditionalSpecContent
+         */
+        public function getAdditionalSpecContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AdditionalSpecContent
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1FetchAdditionalSpecContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalSpecContent()
+    class Google_Service_APIhub_GoogleCloudApihubV1FetchAdditionalSpecContentResponse extends \Google\Service\APIhub\GoogleCloudApihubV1FetchAdditionalSpecContentResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2RevisionScaling extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $maxInstanceCount;
-    /**
-     * @var int
-     */
-    public $minInstanceCount;
-    /**
-     * @param int
-     */
-    public function setMaxInstanceCount($maxInstanceCount)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2RevisionScaling extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $maxInstanceCount;
+        /**
+         * @var int
+         */
+        public $minInstanceCount;
+        /**
+         * @param int
+         */
+        public function setMaxInstanceCount($maxInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxInstanceCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinInstanceCount($minInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinInstanceCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2RevisionScaling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxInstanceCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinInstanceCount($minInstanceCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinInstanceCount()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2RevisionScaling extends \Google\Service\CloudRun\GoogleCloudRunOpV2RevisionScaling
     {
     }
 }

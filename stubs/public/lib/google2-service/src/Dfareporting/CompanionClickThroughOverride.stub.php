@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CompanionClickThroughOverride extends \Google\Model
-{
-    protected $clickThroughUrlType = ClickThroughUrl::class;
-    protected $clickThroughUrlDataType = '';
-    /**
-     * ID of the creative for this companion click-through override.
-     *
-     * @var string
-     */
-    public $creativeId;
-    /**
-     * Click-through URL of this companion click-through override.
-     *
-     * @param ClickThroughUrl $clickThroughUrl
-     */
-    public function setClickThroughUrl(ClickThroughUrl $clickThroughUrl)
+namespace Google\Service\Dfareporting {
+    class CompanionClickThroughOverride extends \Google\Model
     {
+        protected $clickThroughUrlType = ClickThroughUrl::class;
+        protected $clickThroughUrlDataType = '';
+        /**
+         * ID of the creative for this companion click-through override.
+         *
+         * @var string
+         */
+        public $creativeId;
+        /**
+         * Click-through URL of this companion click-through override.
+         *
+         * @param ClickThroughUrl $clickThroughUrl
+         */
+        public function setClickThroughUrl(ClickThroughUrl $clickThroughUrl)
+        {
+        }
+        /**
+         * @return ClickThroughUrl
+         */
+        public function getClickThroughUrl()
+        {
+        }
+        /**
+         * ID of the creative for this companion click-through override.
+         *
+         * @param string $creativeId
+         */
+        public function setCreativeId($creativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClickThroughUrl
+     * Runtime class alias of \Google\Service\Dfareporting\CompanionClickThroughOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClickThroughUrl()
-    {
-    }
-    /**
-     * ID of the creative for this companion click-through override.
-     *
-     * @param string $creativeId
-     */
-    public function setCreativeId($creativeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreativeId()
+    class Google_Service_Dfareporting_CompanionClickThroughOverride extends \Google\Service\Dfareporting\CompanionClickThroughOverride
     {
     }
 }

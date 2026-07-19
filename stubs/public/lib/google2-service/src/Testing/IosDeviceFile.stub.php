@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosDeviceFile extends \Google\Model
-{
-    /**
-     * The bundle id of the app where this file lives. iOS apps sandbox their own
-     * filesystem, so app files must specify which app installed on the device.
-     *
-     * @var string
-     */
-    public $bundleId;
-    protected $contentType = FileReference::class;
-    protected $contentDataType = '';
-    /**
-     * Location of the file on the device, inside the app's sandboxed filesystem
-     *
-     * @var string
-     */
-    public $devicePath;
-    /**
-     * The bundle id of the app where this file lives. iOS apps sandbox their own
-     * filesystem, so app files must specify which app installed on the device.
-     *
-     * @param string $bundleId
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\Testing {
+    class IosDeviceFile extends \Google\Model
     {
+        /**
+         * The bundle id of the app where this file lives. iOS apps sandbox their own
+         * filesystem, so app files must specify which app installed on the device.
+         *
+         * @var string
+         */
+        public $bundleId;
+        protected $contentType = FileReference::class;
+        protected $contentDataType = '';
+        /**
+         * Location of the file on the device, inside the app's sandboxed filesystem
+         *
+         * @var string
+         */
+        public $devicePath;
+        /**
+         * The bundle id of the app where this file lives. iOS apps sandbox their own
+         * filesystem, so app files must specify which app installed on the device.
+         *
+         * @param string $bundleId
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * The source file
+         *
+         * @param FileReference $content
+         */
+        public function setContent(FileReference $content)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Location of the file on the device, inside the app's sandboxed filesystem
+         *
+         * @param string $devicePath
+         */
+        public function setDevicePath($devicePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDevicePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\IosDeviceFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
-    {
-    }
-    /**
-     * The source file
-     *
-     * @param FileReference $content
-     */
-    public function setContent(FileReference $content)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Location of the file on the device, inside the app's sandboxed filesystem
-     *
-     * @param string $devicePath
-     */
-    public function setDevicePath($devicePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDevicePath()
+    class Google_Service_Testing_IosDeviceFile extends \Google\Service\Testing\IosDeviceFile
     {
     }
 }

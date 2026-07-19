@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListAppGroupAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'appGroupApps';
-    protected $appGroupAppsType = GoogleCloudApigeeV1AppGroupApp::class;
-    protected $appGroupAppsDataType = 'array';
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of AppGroup apps and their credentials.
-     *
-     * @param GoogleCloudApigeeV1AppGroupApp[] $appGroupApps
-     */
-    public function setAppGroupApps($appGroupApps)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListAppGroupAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'appGroupApps';
+        protected $appGroupAppsType = GoogleCloudApigeeV1AppGroupApp::class;
+        protected $appGroupAppsDataType = 'array';
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of AppGroup apps and their credentials.
+         *
+         * @param GoogleCloudApigeeV1AppGroupApp[] $appGroupApps
+         */
+        public function setAppGroupApps($appGroupApps)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AppGroupApp[]
+         */
+        public function getAppGroupApps()
+        {
+        }
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AppGroupApp[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListAppGroupAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppGroupApps()
-    {
-    }
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListAppGroupAppsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListAppGroupAppsResponse
     {
     }
 }

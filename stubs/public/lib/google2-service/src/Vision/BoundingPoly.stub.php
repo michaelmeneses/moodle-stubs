@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class BoundingPoly extends \Google\Collection
-{
-    protected $collection_key = 'vertices';
-    protected $normalizedVerticesType = NormalizedVertex::class;
-    protected $normalizedVerticesDataType = 'array';
-    protected $verticesType = Vertex::class;
-    protected $verticesDataType = 'array';
-    /**
-     * The bounding polygon normalized vertices.
-     *
-     * @param NormalizedVertex[] $normalizedVertices
-     */
-    public function setNormalizedVertices($normalizedVertices)
+namespace Google\Service\Vision {
+    class BoundingPoly extends \Google\Collection
     {
+        protected $collection_key = 'vertices';
+        protected $normalizedVerticesType = NormalizedVertex::class;
+        protected $normalizedVerticesDataType = 'array';
+        protected $verticesType = Vertex::class;
+        protected $verticesDataType = 'array';
+        /**
+         * The bounding polygon normalized vertices.
+         *
+         * @param NormalizedVertex[] $normalizedVertices
+         */
+        public function setNormalizedVertices($normalizedVertices)
+        {
+        }
+        /**
+         * @return NormalizedVertex[]
+         */
+        public function getNormalizedVertices()
+        {
+        }
+        /**
+         * The bounding polygon vertices.
+         *
+         * @param Vertex[] $vertices
+         */
+        public function setVertices($vertices)
+        {
+        }
+        /**
+         * @return Vertex[]
+         */
+        public function getVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NormalizedVertex[]
+     * Runtime class alias of \Google\Service\Vision\BoundingPoly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedVertices()
-    {
-    }
-    /**
-     * The bounding polygon vertices.
-     *
-     * @param Vertex[] $vertices
-     */
-    public function setVertices($vertices)
-    {
-    }
-    /**
-     * @return Vertex[]
-     */
-    public function getVertices()
+    class Google_Service_Vision_BoundingPoly extends \Google\Service\Vision\BoundingPoly
     {
     }
 }

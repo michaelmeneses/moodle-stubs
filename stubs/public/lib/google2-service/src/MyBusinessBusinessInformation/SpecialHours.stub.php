@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class SpecialHours extends \Google\Collection
-{
-    protected $collection_key = 'specialHourPeriods';
-    protected $specialHourPeriodsType = SpecialHourPeriod::class;
-    protected $specialHourPeriodsDataType = 'array';
-    /**
-     * Required. A list of exceptions to the business's regular hours.
-     *
-     * @param SpecialHourPeriod[] $specialHourPeriods
-     */
-    public function setSpecialHourPeriods($specialHourPeriods)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class SpecialHours extends \Google\Collection
     {
+        protected $collection_key = 'specialHourPeriods';
+        protected $specialHourPeriodsType = SpecialHourPeriod::class;
+        protected $specialHourPeriodsDataType = 'array';
+        /**
+         * Required. A list of exceptions to the business's regular hours.
+         *
+         * @param SpecialHourPeriod[] $specialHourPeriods
+         */
+        public function setSpecialHourPeriods($specialHourPeriods)
+        {
+        }
+        /**
+         * @return SpecialHourPeriod[]
+         */
+        public function getSpecialHourPeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SpecialHourPeriod[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\SpecialHours registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpecialHourPeriods()
+    class Google_Service_MyBusinessBusinessInformation_SpecialHours extends \Google\Service\MyBusinessBusinessInformation\SpecialHours
     {
     }
 }

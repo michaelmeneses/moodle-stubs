@@ -21,58 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasedynamiclinksService = new Google\Service\FirebaseDynamicLinks(...);
- *   $v1 = $firebasedynamiclinksService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseDynamicLinks\Resource {
+    use Google\Service\FirebaseDynamicLinks\DynamicLinkStats;
+    use Google\Service\FirebaseDynamicLinks\GetIosPostInstallAttributionRequest;
+    use Google\Service\FirebaseDynamicLinks\GetIosPostInstallAttributionResponse;
+    use Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionRequest;
+    use Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionResponse;
     /**
-     * Fetches analytics stats of a short Dynamic Link for a given duration. Metrics
-     * include number of clicks, redirects, installs, app first opens, and app
-     * reopens. (v1.getLinkStats)
-     *
-     * @param string $dynamicLink Dynamic Link URL. e.g.
-     * https://abcd.app.goo.gl/wxyz
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string durationDays The span of time requested in days.
-     * @opt_param string sdkVersion Google SDK version. Version takes the form
-     * "$major.$minor.$patch"
-     * @return DynamicLinkStats
-     * @throws \Google\Service\Exception
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasedynamiclinksService = new Google\Service\FirebaseDynamicLinks(...);
+     *   $v1 = $firebasedynamiclinksService->v1;
+     *  </code>
      */
-    public function getLinkStats($dynamicLink, $optParams = [])
+    class V1 extends \Google\Service\Resource
     {
+        /**
+         * Fetches analytics stats of a short Dynamic Link for a given duration. Metrics
+         * include number of clicks, redirects, installs, app first opens, and app
+         * reopens. (v1.getLinkStats)
+         *
+         * @param string $dynamicLink Dynamic Link URL. e.g.
+         * https://abcd.app.goo.gl/wxyz
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string durationDays The span of time requested in days.
+         * @opt_param string sdkVersion Google SDK version. Version takes the form
+         * "$major.$minor.$patch"
+         * @return DynamicLinkStats
+         * @throws \Google\Service\Exception
+         */
+        public function getLinkStats($dynamicLink, $optParams = [])
+        {
+        }
+        /**
+         * Get iOS strong/weak-match info for post-install attribution.
+         * (v1.installAttribution)
+         *
+         * @param GetIosPostInstallAttributionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetIosPostInstallAttributionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function installAttribution(GetIosPostInstallAttributionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get iOS reopen attribution for app universal link open deeplinking.
+         * (v1.reopenAttribution)
+         *
+         * @param GetIosReopenAttributionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetIosReopenAttributionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reopenAttribution(GetIosReopenAttributionRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get iOS strong/weak-match info for post-install attribution.
-     * (v1.installAttribution)
-     *
-     * @param GetIosPostInstallAttributionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetIosPostInstallAttributionResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function installAttribution(GetIosPostInstallAttributionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Get iOS reopen attribution for app universal link open deeplinking.
-     * (v1.reopenAttribution)
-     *
-     * @param GetIosReopenAttributionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetIosReopenAttributionResponse
-     * @throws \Google\Service\Exception
-     */
-    public function reopenAttribution(GetIosReopenAttributionRequest $postBody, $optParams = [])
+    class Google_Service_FirebaseDynamicLinks_Resource_V1 extends \Google\Service\FirebaseDynamicLinks\Resource\V1
     {
     }
 }

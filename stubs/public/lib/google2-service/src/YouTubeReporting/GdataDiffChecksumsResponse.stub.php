@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataDiffChecksumsResponse extends \Google\Model
-{
-    protected $checksumsLocationType = GdataCompositeMedia::class;
-    protected $checksumsLocationDataType = '';
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $chunkSizeBytes;
-    protected $objectLocationType = GdataCompositeMedia::class;
-    protected $objectLocationDataType = '';
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectSizeBytes;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * gdata
-     *
-     * @param GdataCompositeMedia $checksumsLocation
-     */
-    public function setChecksumsLocation(GdataCompositeMedia $checksumsLocation)
+namespace Google\Service\YouTubeReporting {
+    class GdataDiffChecksumsResponse extends \Google\Model
     {
+        protected $checksumsLocationType = GdataCompositeMedia::class;
+        protected $checksumsLocationDataType = '';
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $chunkSizeBytes;
+        protected $objectLocationType = GdataCompositeMedia::class;
+        protected $objectLocationDataType = '';
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectSizeBytes;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * gdata
+         *
+         * @param GdataCompositeMedia $checksumsLocation
+         */
+        public function setChecksumsLocation(GdataCompositeMedia $checksumsLocation)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getChecksumsLocation()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $chunkSizeBytes
+         */
+        public function setChunkSizeBytes($chunkSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkSizeBytes()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param GdataCompositeMedia $objectLocation
+         */
+        public function setObjectLocation(GdataCompositeMedia $objectLocation)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getObjectLocation()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $objectSizeBytes
+         */
+        public function setObjectSizeBytes($objectSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSizeBytes()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GdataCompositeMedia
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataDiffChecksumsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksumsLocation()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $chunkSizeBytes
-     */
-    public function setChunkSizeBytes($chunkSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChunkSizeBytes()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param GdataCompositeMedia $objectLocation
-     */
-    public function setObjectLocation(GdataCompositeMedia $objectLocation)
-    {
-    }
-    /**
-     * @return GdataCompositeMedia
-     */
-    public function getObjectLocation()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $objectSizeBytes
-     */
-    public function setObjectSizeBytes($objectSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectSizeBytes()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_YouTubeReporting_GdataDiffChecksumsResponse extends \Google\Service\YouTubeReporting\GdataDiffChecksumsResponse
     {
     }
 }

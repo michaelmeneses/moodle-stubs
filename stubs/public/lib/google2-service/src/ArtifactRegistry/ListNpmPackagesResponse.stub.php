@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListNpmPackagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'npmPackages';
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $npmPackagesType = NpmPackage::class;
-    protected $npmPackagesDataType = 'array';
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListNpmPackagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'npmPackages';
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $npmPackagesType = NpmPackage::class;
+        protected $npmPackagesDataType = 'array';
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The npm packages returned.
+         *
+         * @param NpmPackage[] $npmPackages
+         */
+        public function setNpmPackages($npmPackages)
+        {
+        }
+        /**
+         * @return NpmPackage[]
+         */
+        public function getNpmPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListNpmPackagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The npm packages returned.
-     *
-     * @param NpmPackage[] $npmPackages
-     */
-    public function setNpmPackages($npmPackages)
-    {
-    }
-    /**
-     * @return NpmPackage[]
-     */
-    public function getNpmPackages()
+    class Google_Service_ArtifactRegistry_ListNpmPackagesResponse extends \Google\Service\ArtifactRegistry\ListNpmPackagesResponse
     {
     }
 }

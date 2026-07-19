@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionGenerateVideoResponse extends \Google\Collection
-{
-    protected $collection_key = 'videos';
-    protected $generatedSamplesType = CloudAiLargeModelsVisionMedia::class;
-    protected $generatedSamplesDataType = 'array';
-    /**
-     * Returns if any videos were filtered due to RAI policies.
-     *
-     * @var int
-     */
-    public $raiMediaFilteredCount;
-    /**
-     * Returns rai failure reasons if any.
-     *
-     * @var string[]
-     */
-    public $raiMediaFilteredReasons;
-    protected $videosType = CloudAiLargeModelsVisionGenerateVideoResponseVideo::class;
-    protected $videosDataType = 'array';
-    /**
-     * The generates samples.
-     *
-     * @param CloudAiLargeModelsVisionMedia[] $generatedSamples
-     */
-    public function setGeneratedSamples($generatedSamples)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionGenerateVideoResponse extends \Google\Collection
     {
+        protected $collection_key = 'videos';
+        protected $generatedSamplesType = CloudAiLargeModelsVisionMedia::class;
+        protected $generatedSamplesDataType = 'array';
+        /**
+         * Returns if any videos were filtered due to RAI policies.
+         *
+         * @var int
+         */
+        public $raiMediaFilteredCount;
+        /**
+         * Returns rai failure reasons if any.
+         *
+         * @var string[]
+         */
+        public $raiMediaFilteredReasons;
+        protected $videosType = CloudAiLargeModelsVisionGenerateVideoResponseVideo::class;
+        protected $videosDataType = 'array';
+        /**
+         * The generates samples.
+         *
+         * @param CloudAiLargeModelsVisionMedia[] $generatedSamples
+         */
+        public function setGeneratedSamples($generatedSamples)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionMedia[]
+         */
+        public function getGeneratedSamples()
+        {
+        }
+        /**
+         * Returns if any videos were filtered due to RAI policies.
+         *
+         * @param int $raiMediaFilteredCount
+         */
+        public function setRaiMediaFilteredCount($raiMediaFilteredCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRaiMediaFilteredCount()
+        {
+        }
+        /**
+         * Returns rai failure reasons if any.
+         *
+         * @param string[] $raiMediaFilteredReasons
+         */
+        public function setRaiMediaFilteredReasons($raiMediaFilteredReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRaiMediaFilteredReasons()
+        {
+        }
+        /**
+         * List of videos, used to align naming with the external response.
+         *
+         * @param CloudAiLargeModelsVisionGenerateVideoResponseVideo[] $videos
+         */
+        public function setVideos($videos)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionGenerateVideoResponseVideo[]
+         */
+        public function getVideos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiLargeModelsVisionMedia[]
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionGenerateVideoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratedSamples()
-    {
-    }
-    /**
-     * Returns if any videos were filtered due to RAI policies.
-     *
-     * @param int $raiMediaFilteredCount
-     */
-    public function setRaiMediaFilteredCount($raiMediaFilteredCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRaiMediaFilteredCount()
-    {
-    }
-    /**
-     * Returns rai failure reasons if any.
-     *
-     * @param string[] $raiMediaFilteredReasons
-     */
-    public function setRaiMediaFilteredReasons($raiMediaFilteredReasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRaiMediaFilteredReasons()
-    {
-    }
-    /**
-     * List of videos, used to align naming with the external response.
-     *
-     * @param CloudAiLargeModelsVisionGenerateVideoResponseVideo[] $videos
-     */
-    public function setVideos($videos)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionGenerateVideoResponseVideo[]
-     */
-    public function getVideos()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionGenerateVideoResponse extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionGenerateVideoResponse
     {
     }
 }

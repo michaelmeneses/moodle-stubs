@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1EnableUserCredsRequest extends \Google\Model
-{
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1EnableUserCredsRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1EnableUserCredsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firestore_GoogleFirestoreAdminV1EnableUserCredsRequest extends \Google\Service\Firestore\GoogleFirestoreAdminV1EnableUserCredsRequest
+    {
+    }
 }

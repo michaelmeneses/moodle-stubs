@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends \Google\Model
-{
-    public $maxPriority;
-    public $minPriority;
-    public function setMaxPriority($maxPriority)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends \Google\Model
     {
+        public $maxPriority;
+        public $minPriority;
+        public function setMaxPriority($maxPriority)
+        {
+        }
+        public function getMaxPriority()
+        {
+        }
+        public function setMinPriority($minPriority)
+        {
+        }
+        public function getMinPriority()
+        {
+        }
     }
-    public function getMaxPriority()
-    {
-    }
-    public function setMinPriority($minPriority)
-    {
-    }
-    public function getMinPriority()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange
     {
     }
 }

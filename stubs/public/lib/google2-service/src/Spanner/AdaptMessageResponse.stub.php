@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class AdaptMessageResponse extends \Google\Model
-{
-    /**
-     * Optional. Indicates whether this is the last AdaptMessageResponse in the
-     * stream. This field may be optionally set by the server. Clients should not
-     * rely on this field being set in all cases.
-     *
-     * @var bool
-     */
-    public $last;
-    /**
-     * Optional. Uninterpreted bytes from the underlying wire protocol.
-     *
-     * @var string
-     */
-    public $payload;
-    /**
-     * Optional. Opaque state updates to be applied by the client.
-     *
-     * @var string[]
-     */
-    public $stateUpdates;
-    /**
-     * Optional. Indicates whether this is the last AdaptMessageResponse in the
-     * stream. This field may be optionally set by the server. Clients should not
-     * rely on this field being set in all cases.
-     *
-     * @param bool $last
-     */
-    public function setLast($last)
+namespace Google\Service\Spanner {
+    class AdaptMessageResponse extends \Google\Model
     {
+        /**
+         * Optional. Indicates whether this is the last AdaptMessageResponse in the
+         * stream. This field may be optionally set by the server. Clients should not
+         * rely on this field being set in all cases.
+         *
+         * @var bool
+         */
+        public $last;
+        /**
+         * Optional. Uninterpreted bytes from the underlying wire protocol.
+         *
+         * @var string
+         */
+        public $payload;
+        /**
+         * Optional. Opaque state updates to be applied by the client.
+         *
+         * @var string[]
+         */
+        public $stateUpdates;
+        /**
+         * Optional. Indicates whether this is the last AdaptMessageResponse in the
+         * stream. This field may be optionally set by the server. Clients should not
+         * rely on this field being set in all cases.
+         *
+         * @param bool $last
+         */
+        public function setLast($last)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLast()
+        {
+        }
+        /**
+         * Optional. Uninterpreted bytes from the underlying wire protocol.
+         *
+         * @param string $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Optional. Opaque state updates to be applied by the client.
+         *
+         * @param string[] $stateUpdates
+         */
+        public function setStateUpdates($stateUpdates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStateUpdates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\AdaptMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLast()
-    {
-    }
-    /**
-     * Optional. Uninterpreted bytes from the underlying wire protocol.
-     *
-     * @param string $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Optional. Opaque state updates to be applied by the client.
-     *
-     * @param string[] $stateUpdates
-     */
-    public function setStateUpdates($stateUpdates)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStateUpdates()
+    class Google_Service_Spanner_AdaptMessageResponse extends \Google\Service\Spanner\AdaptMessageResponse
     {
     }
 }

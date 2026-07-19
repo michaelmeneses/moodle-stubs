@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class MatchedValueRange extends \Google\Collection
-{
-    protected $collection_key = 'dataFilters';
-    protected $dataFiltersType = DataFilter::class;
-    protected $dataFiltersDataType = 'array';
-    protected $valueRangeType = ValueRange::class;
-    protected $valueRangeDataType = '';
-    /**
-     * The DataFilters from the request that matched the range of values.
-     *
-     * @param DataFilter[] $dataFilters
-     */
-    public function setDataFilters($dataFilters)
+namespace Google\Service\Sheets {
+    class MatchedValueRange extends \Google\Collection
     {
+        protected $collection_key = 'dataFilters';
+        protected $dataFiltersType = DataFilter::class;
+        protected $dataFiltersDataType = 'array';
+        protected $valueRangeType = ValueRange::class;
+        protected $valueRangeDataType = '';
+        /**
+         * The DataFilters from the request that matched the range of values.
+         *
+         * @param DataFilter[] $dataFilters
+         */
+        public function setDataFilters($dataFilters)
+        {
+        }
+        /**
+         * @return DataFilter[]
+         */
+        public function getDataFilters()
+        {
+        }
+        /**
+         * The values matched by the DataFilter.
+         *
+         * @param ValueRange $valueRange
+         */
+        public function setValueRange(ValueRange $valueRange)
+        {
+        }
+        /**
+         * @return ValueRange
+         */
+        public function getValueRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter[]
+     * Runtime class alias of \Google\Service\Sheets\MatchedValueRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilters()
-    {
-    }
-    /**
-     * The values matched by the DataFilter.
-     *
-     * @param ValueRange $valueRange
-     */
-    public function setValueRange(ValueRange $valueRange)
-    {
-    }
-    /**
-     * @return ValueRange
-     */
-    public function getValueRange()
+    class Google_Service_Sheets_MatchedValueRange extends \Google\Service\Sheets\MatchedValueRange
     {
     }
 }

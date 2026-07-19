@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4ThreatHit extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $clientInfoType = GoogleSecuritySafebrowsingV4ClientInfo::class;
-    protected $clientInfoDataType = '';
-    protected $entryType = GoogleSecuritySafebrowsingV4ThreatEntry::class;
-    protected $entryDataType = '';
-    /**
-     * @var string
-     */
-    public $platformType;
-    protected $resourcesType = GoogleSecuritySafebrowsingV4ThreatHitThreatSource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $threatType;
-    protected $userInfoType = GoogleSecuritySafebrowsingV4ThreatHitUserInfo::class;
-    protected $userInfoDataType = '';
-    /**
-     * @param GoogleSecuritySafebrowsingV4ClientInfo
-     */
-    public function setClientInfo(GoogleSecuritySafebrowsingV4ClientInfo $clientInfo)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4ThreatHit extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $clientInfoType = GoogleSecuritySafebrowsingV4ClientInfo::class;
+        protected $clientInfoDataType = '';
+        protected $entryType = GoogleSecuritySafebrowsingV4ThreatEntry::class;
+        protected $entryDataType = '';
+        /**
+         * @var string
+         */
+        public $platformType;
+        protected $resourcesType = GoogleSecuritySafebrowsingV4ThreatHitThreatSource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $threatType;
+        protected $userInfoType = GoogleSecuritySafebrowsingV4ThreatHitUserInfo::class;
+        protected $userInfoDataType = '';
+        /**
+         * @param GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function setClientInfo(GoogleSecuritySafebrowsingV4ClientInfo $clientInfo)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function getClientInfo()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatEntry
+         */
+        public function setEntry(GoogleSecuritySafebrowsingV4ThreatEntry $entry)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatEntry
+         */
+        public function getEntry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatHitThreatSource[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatHitThreatSource[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatHitUserInfo
+         */
+        public function setUserInfo(GoogleSecuritySafebrowsingV4ThreatHitUserInfo $userInfo)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatHitUserInfo
+         */
+        public function getUserInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatHit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientInfo()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatEntry
-     */
-    public function setEntry(GoogleSecuritySafebrowsingV4ThreatEntry $entry)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ThreatEntry
-     */
-    public function getEntry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatHitThreatSource[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ThreatHitThreatSource[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatHitUserInfo
-     */
-    public function setUserInfo(GoogleSecuritySafebrowsingV4ThreatHitUserInfo $userInfo)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ThreatHitUserInfo
-     */
-    public function getUserInfo()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4ThreatHit extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatHit
     {
     }
 }

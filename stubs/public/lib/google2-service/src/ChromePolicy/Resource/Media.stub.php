@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $media = $chromepolicyService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\ChromePolicy\Resource {
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileResponse;
     /**
-     * Creates an enterprise file from the content provided by user. Returns a
-     * public download url for end user. (media.upload)
-     *
-     * @param string $customer Required. The customer for which the file upload will
-     * apply.
-     * @param GoogleChromePolicyVersionsV1UploadPolicyFileRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1UploadPolicyFileResponse
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromepolicyService = new Google\Service\ChromePolicy(...);
+     *   $media = $chromepolicyService->media;
+     *  </code>
      */
-    public function upload($customer, GoogleChromePolicyVersionsV1UploadPolicyFileRequest $postBody, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Creates an enterprise file from the content provided by user. Returns a
+         * public download url for end user. (media.upload)
+         *
+         * @param string $customer Required. The customer for which the file upload will
+         * apply.
+         * @param GoogleChromePolicyVersionsV1UploadPolicyFileRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1UploadPolicyFileResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($customer, GoogleChromePolicyVersionsV1UploadPolicyFileRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromePolicy\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromePolicy_Resource_Media extends \Google\Service\ChromePolicy\Resource\Media
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnTunnelsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'vpnTunnels';
-    protected $vpnTunnelsType = VpnTunnel::class;
-    protected $vpnTunnelsDataType = 'array';
-    protected $warningType = VpnTunnelsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of VPN tunnels contained in this scope.
-     *
-     * @param VpnTunnel[] $vpnTunnels
-     */
-    public function setVpnTunnels($vpnTunnels)
+namespace Google\Service\Compute {
+    class VpnTunnelsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'vpnTunnels';
+        protected $vpnTunnelsType = VpnTunnel::class;
+        protected $vpnTunnelsDataType = 'array';
+        protected $warningType = VpnTunnelsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of VPN tunnels contained in this scope.
+         *
+         * @param VpnTunnel[] $vpnTunnels
+         */
+        public function setVpnTunnels($vpnTunnels)
+        {
+        }
+        /**
+         * @return VpnTunnel[]
+         */
+        public function getVpnTunnels()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of addresses when the list is
+         * empty.
+         *
+         * @param VpnTunnelsScopedListWarning $warning
+         */
+        public function setWarning(VpnTunnelsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return VpnTunnelsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VpnTunnel[]
+     * Runtime class alias of \Google\Service\Compute\VpnTunnelsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpnTunnels()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of addresses when the list is
-     * empty.
-     *
-     * @param VpnTunnelsScopedListWarning $warning
-     */
-    public function setWarning(VpnTunnelsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return VpnTunnelsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_VpnTunnelsScopedList extends \Google\Service\Compute\VpnTunnelsScopedList
     {
     }
 }

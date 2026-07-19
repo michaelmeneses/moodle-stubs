@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2SecretKeySelector extends \Google\Model
-{
-    /**
-     * Required. The name of the secret in Cloud Secret Manager. Format:
-     * {secret_name} if the secret is in the same project.
-     * projects/{project}/secrets/{secret_name} if the secret is in a different
-     * project.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * The Cloud Secret Manager secret version. Can be 'latest' for the latest
-     * version, an integer for a specific version, or a version alias.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Required. The name of the secret in Cloud Secret Manager. Format:
-     * {secret_name} if the secret is in the same project.
-     * projects/{project}/secrets/{secret_name} if the secret is in a different
-     * project.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2SecretKeySelector extends \Google\Model
     {
+        /**
+         * Required. The name of the secret in Cloud Secret Manager. Format:
+         * {secret_name} if the secret is in the same project.
+         * projects/{project}/secrets/{secret_name} if the secret is in a different
+         * project.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * The Cloud Secret Manager secret version. Can be 'latest' for the latest
+         * version, an integer for a specific version, or a version alias.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Required. The name of the secret in Cloud Secret Manager. Format:
+         * {secret_name} if the secret is in the same project.
+         * projects/{project}/secrets/{secret_name} if the secret is in a different
+         * project.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * The Cloud Secret Manager secret version. Can be 'latest' for the latest
+         * version, an integer for a specific version, or a version alias.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2SecretKeySelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecret()
-    {
-    }
-    /**
-     * The Cloud Secret Manager secret version. Can be 'latest' for the latest
-     * version, an integer for a specific version, or a version alias.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudRun_GoogleCloudRunV2SecretKeySelector extends \Google\Service\CloudRun\GoogleCloudRunV2SecretKeySelector
     {
     }
 }

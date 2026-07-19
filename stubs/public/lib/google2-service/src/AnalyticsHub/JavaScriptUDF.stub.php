@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class JavaScriptUDF extends \Google\Model
-{
-    /**
-     * Required. JavaScript code that contains a function `function_name` with the
-     * below signature: ``` * * Transforms a Pub/Sub message. * @return
-     * {(Object)>|null)} - To * filter a message, return `null`. To transform a
-     * message return a map * with the following keys: * - (required) 'data' :
-     * {string} * - (optional) 'attributes' : {Object} * Returning empty
-     * `attributes` will remove all attributes from the * message. * * @param
-     * {(Object)>} Pub/Sub * message. Keys: * - (required) 'data' : {string} * -
-     * (required) 'attributes' : {Object} * * @param {Object} metadata - Pub/Sub
-     * message metadata. * Keys: * - (required) 'message_id' : {string} * -
-     * (optional) 'publish_time': {string} YYYY-MM-DDTHH:MM:SSZ format * -
-     * (optional) 'ordering_key': {string}  function (message, metadata) { } ```
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Required. Name of the JavasScript function that should applied to Pub/Sub
-     * messages.
-     *
-     * @var string
-     */
-    public $functionName;
-    /**
-     * Required. JavaScript code that contains a function `function_name` with the
-     * below signature: ``` * * Transforms a Pub/Sub message. * @return
-     * {(Object)>|null)} - To * filter a message, return `null`. To transform a
-     * message return a map * with the following keys: * - (required) 'data' :
-     * {string} * - (optional) 'attributes' : {Object} * Returning empty
-     * `attributes` will remove all attributes from the * message. * * @param
-     * {(Object)>} Pub/Sub * message. Keys: * - (required) 'data' : {string} * -
-     * (required) 'attributes' : {Object} * * @param {Object} metadata - Pub/Sub
-     * message metadata. * Keys: * - (required) 'message_id' : {string} * -
-     * (optional) 'publish_time': {string} YYYY-MM-DDTHH:MM:SSZ format * -
-     * (optional) 'ordering_key': {string}  function (message, metadata) { } ```
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\AnalyticsHub {
+    class JavaScriptUDF extends \Google\Model
     {
+        /**
+         * Required. JavaScript code that contains a function `function_name` with the
+         * below signature: ``` * * Transforms a Pub/Sub message. * @return
+         * {(Object)>|null)} - To * filter a message, return `null`. To transform a
+         * message return a map * with the following keys: * - (required) 'data' :
+         * {string} * - (optional) 'attributes' : {Object} * Returning empty
+         * `attributes` will remove all attributes from the * message. * * @param
+         * {(Object)>} Pub/Sub * message. Keys: * - (required) 'data' : {string} * -
+         * (required) 'attributes' : {Object} * * @param {Object} metadata - Pub/Sub
+         * message metadata. * Keys: * - (required) 'message_id' : {string} * -
+         * (optional) 'publish_time': {string} YYYY-MM-DDTHH:MM:SSZ format * -
+         * (optional) 'ordering_key': {string}  function (message, metadata) { } ```
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Required. Name of the JavasScript function that should applied to Pub/Sub
+         * messages.
+         *
+         * @var string
+         */
+        public $functionName;
+        /**
+         * Required. JavaScript code that contains a function `function_name` with the
+         * below signature: ``` * * Transforms a Pub/Sub message. * @return
+         * {(Object)>|null)} - To * filter a message, return `null`. To transform a
+         * message return a map * with the following keys: * - (required) 'data' :
+         * {string} * - (optional) 'attributes' : {Object} * Returning empty
+         * `attributes` will remove all attributes from the * message. * * @param
+         * {(Object)>} Pub/Sub * message. Keys: * - (required) 'data' : {string} * -
+         * (required) 'attributes' : {Object} * * @param {Object} metadata - Pub/Sub
+         * message metadata. * Keys: * - (required) 'message_id' : {string} * -
+         * (optional) 'publish_time': {string} YYYY-MM-DDTHH:MM:SSZ format * -
+         * (optional) 'ordering_key': {string}  function (message, metadata) { } ```
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Required. Name of the JavasScript function that should applied to Pub/Sub
+         * messages.
+         *
+         * @param string $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\JavaScriptUDF registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Required. Name of the JavasScript function that should applied to Pub/Sub
-     * messages.
-     *
-     * @param string $functionName
-     */
-    public function setFunctionName($functionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunctionName()
+    class Google_Service_AnalyticsHub_JavaScriptUDF extends \Google\Service\AnalyticsHub\JavaScriptUDF
     {
     }
 }

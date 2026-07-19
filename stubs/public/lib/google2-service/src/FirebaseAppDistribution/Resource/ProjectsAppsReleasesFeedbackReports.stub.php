@@ -21,65 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution\Resource;
-
-/**
- * The "feedbackReports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappdistributionService = new Google\Service\FirebaseAppDistribution(...);
- *   $feedbackReports = $firebaseappdistributionService->projects_apps_releases_feedbackReports;
- *  </code>
- */
-class ProjectsAppsReleasesFeedbackReports extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseAppDistribution\Resource {
+    use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1FeedbackReport;
+    use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListFeedbackReportsResponse;
+    use Google\Service\FirebaseAppDistribution\GoogleProtobufEmpty;
     /**
-     * Deletes a feedback report. (feedbackReports.delete)
-     *
-     * @param string $name Required. The name of the feedback report to delete.
-     * Format: projects/{project_number}/apps/{app}/releases/{release}/feedbackRepor
-     * ts/{feedback_report}
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "feedbackReports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappdistributionService = new Google\Service\FirebaseAppDistribution(...);
+     *   $feedbackReports = $firebaseappdistributionService->projects_apps_releases_feedbackReports;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsAppsReleasesFeedbackReports extends \Google\Service\Resource
     {
+        /**
+         * Deletes a feedback report. (feedbackReports.delete)
+         *
+         * @param string $name Required. The name of the feedback report to delete.
+         * Format: projects/{project_number}/apps/{app}/releases/{release}/feedbackRepor
+         * ts/{feedback_report}
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a feedback report. (feedbackReports.get)
+         *
+         * @param string $name Required. The name of the feedback report to retrieve.
+         * Format: projects/{project_number}/apps/{app}/releases/{release}/feedbackRepor
+         * ts/{feedback_report}
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppdistroV1FeedbackReport
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists feedback reports. By default, sorts by `createTime` in descending
+         * order. (feedbackReports.listProjectsAppsReleasesFeedbackReports)
+         *
+         * @param string $parent Required. The name of the release resource, which is
+         * the parent of the feedback report resources. Format:
+         * `projects/{project_number}/apps/{app}/releases/{release}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Output only. The maximum number of feedback reports
+         * to return. The service may return fewer than this value. The valid range is
+         * [1-100]; If unspecified (0), at most 25 feedback reports are returned. Values
+         * above 100 are coerced to 100.
+         * @opt_param string pageToken Output only. A page token, received from a
+         * previous `ListFeedbackReports` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to `ListFeedbackReports`
+         * must match the call that provided the page token.
+         * @return GoogleFirebaseAppdistroV1ListFeedbackReportsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsAppsReleasesFeedbackReports($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a feedback report. (feedbackReports.get)
-     *
-     * @param string $name Required. The name of the feedback report to retrieve.
-     * Format: projects/{project_number}/apps/{app}/releases/{release}/feedbackRepor
-     * ts/{feedback_report}
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppdistroV1FeedbackReport
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\Resource\ProjectsAppsReleasesFeedbackReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists feedback reports. By default, sorts by `createTime` in descending
-     * order. (feedbackReports.listProjectsAppsReleasesFeedbackReports)
-     *
-     * @param string $parent Required. The name of the release resource, which is
-     * the parent of the feedback report resources. Format:
-     * `projects/{project_number}/apps/{app}/releases/{release}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Output only. The maximum number of feedback reports
-     * to return. The service may return fewer than this value. The valid range is
-     * [1-100]; If unspecified (0), at most 25 feedback reports are returned. Values
-     * above 100 are coerced to 100.
-     * @opt_param string pageToken Output only. A page token, received from a
-     * previous `ListFeedbackReports` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to `ListFeedbackReports`
-     * must match the call that provided the page token.
-     * @return GoogleFirebaseAppdistroV1ListFeedbackReportsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsAppsReleasesFeedbackReports($parent, $optParams = [])
+    class Google_Service_FirebaseAppDistribution_Resource_ProjectsAppsReleasesFeedbackReports extends \Google\Service\FirebaseAppDistribution\Resource\ProjectsAppsReleasesFeedbackReports
     {
     }
 }

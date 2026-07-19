@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam\Resource;
-
-/**
- * The "providers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iamService = new Google\Service\Iam(...);
- *   $providers = $iamService->locations_workforcePools_providers;
- *  </code>
- */
-class LocationsWorkforcePoolsProviders extends \Google\Service\Resource
-{
+namespace Google\Service\Iam\Resource {
+    /**
+     * The "providers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iamService = new Google\Service\Iam(...);
+     *   $providers = $iamService->locations_workforcePools_providers;
+     *  </code>
+     */
+    class LocationsWorkforcePoolsProviders extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Iam\Resource\LocationsWorkforcePoolsProviders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Iam_Resource_LocationsWorkforcePoolsProviders extends \Google\Service\Iam\Resource\LocationsWorkforcePoolsProviders
+    {
+    }
 }

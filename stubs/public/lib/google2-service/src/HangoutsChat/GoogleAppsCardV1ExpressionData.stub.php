@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1ExpressionData extends \Google\Collection
-{
-    protected $collection_key = 'eventActions';
-    protected $conditionsType = GoogleAppsCardV1Condition::class;
-    protected $conditionsDataType = 'array';
-    protected $eventActionsType = GoogleAppsCardV1EventAction::class;
-    protected $eventActionsDataType = 'array';
-    /**
-     * The uncompiled expression.
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * The unique identifier of the ExpressionData.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The list of conditions that are determined by the expression evaluation
-     * result.
-     *
-     * @param GoogleAppsCardV1Condition[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1ExpressionData extends \Google\Collection
     {
+        protected $collection_key = 'eventActions';
+        protected $conditionsType = GoogleAppsCardV1Condition::class;
+        protected $conditionsDataType = 'array';
+        protected $eventActionsType = GoogleAppsCardV1EventAction::class;
+        protected $eventActionsDataType = 'array';
+        /**
+         * The uncompiled expression.
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * The unique identifier of the ExpressionData.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The list of conditions that are determined by the expression evaluation
+         * result.
+         *
+         * @param GoogleAppsCardV1Condition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * The list of actions that the ExpressionData can be used.
+         *
+         * @param GoogleAppsCardV1EventAction[] $eventActions
+         */
+        public function setEventActions($eventActions)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1EventAction[]
+         */
+        public function getEventActions()
+        {
+        }
+        /**
+         * The uncompiled expression.
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
+        /**
+         * The unique identifier of the ExpressionData.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Condition[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1ExpressionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * The list of actions that the ExpressionData can be used.
-     *
-     * @param GoogleAppsCardV1EventAction[] $eventActions
-     */
-    public function setEventActions($eventActions)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1EventAction[]
-     */
-    public function getEventActions()
-    {
-    }
-    /**
-     * The uncompiled expression.
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
-    {
-    }
-    /**
-     * The unique identifier of the ExpressionData.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1ExpressionData extends \Google\Service\HangoutsChat\GoogleAppsCardV1ExpressionData
     {
     }
 }

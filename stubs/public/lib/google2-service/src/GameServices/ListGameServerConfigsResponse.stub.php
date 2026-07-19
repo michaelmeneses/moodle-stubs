@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class ListGameServerConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $gameServerConfigsType = GameServerConfig::class;
-    protected $gameServerConfigsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param GameServerConfig[]
-     */
-    public function setGameServerConfigs($gameServerConfigs)
+namespace Google\Service\GameServices {
+    class ListGameServerConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $gameServerConfigsType = GameServerConfig::class;
+        protected $gameServerConfigsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param GameServerConfig[]
+         */
+        public function setGameServerConfigs($gameServerConfigs)
+        {
+        }
+        /**
+         * @return GameServerConfig[]
+         */
+        public function getGameServerConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GameServerConfig[]
+     * Runtime class alias of \Google\Service\GameServices\ListGameServerConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGameServerConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GameServices_ListGameServerConfigsResponse extends \Google\Service\GameServices\ListGameServerConfigsResponse
     {
     }
 }

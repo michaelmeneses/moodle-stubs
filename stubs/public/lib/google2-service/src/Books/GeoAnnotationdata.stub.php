@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class GeoAnnotationdata extends \Google\Model
-{
-    /**
-     * The type of annotation this data is for.
-     *
-     * @var string
-     */
-    public $annotationType;
-    protected $dataType = Geolayerdata::class;
-    protected $dataDataType = '';
-    /**
-     * Base64 encoded data for this annotation data.
-     *
-     * @var string
-     */
-    public $encodedData;
-    /**
-     * Unique id for this annotation data.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource Type
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The Layer id for this data. *
-     *
-     * @var string
-     */
-    public $layerId;
-    /**
-     * URL for this resource. *
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Timestamp for the last time this data was updated. (RFC 3339 UTC date-time
-     * format).
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The volume id for this data. *
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * The type of annotation this data is for.
-     *
-     * @param string $annotationType
-     */
-    public function setAnnotationType($annotationType)
+namespace Google\Service\Books {
+    class GeoAnnotationdata extends \Google\Model
     {
+        /**
+         * The type of annotation this data is for.
+         *
+         * @var string
+         */
+        public $annotationType;
+        protected $dataType = Geolayerdata::class;
+        protected $dataDataType = '';
+        /**
+         * Base64 encoded data for this annotation data.
+         *
+         * @var string
+         */
+        public $encodedData;
+        /**
+         * Unique id for this annotation data.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource Type
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The Layer id for this data. *
+         *
+         * @var string
+         */
+        public $layerId;
+        /**
+         * URL for this resource. *
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Timestamp for the last time this data was updated. (RFC 3339 UTC date-time
+         * format).
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The volume id for this data. *
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * The type of annotation this data is for.
+         *
+         * @param string $annotationType
+         */
+        public function setAnnotationType($annotationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationType()
+        {
+        }
+        /**
+         * JSON encoded data for this geo annotation data. Emitted with name 'data' in
+         * JSON output. Either this or dict_data will be populated.
+         *
+         * @param Geolayerdata $data
+         */
+        public function setData(Geolayerdata $data)
+        {
+        }
+        /**
+         * @return Geolayerdata
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Base64 encoded data for this annotation data.
+         *
+         * @param string $encodedData
+         */
+        public function setEncodedData($encodedData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedData()
+        {
+        }
+        /**
+         * Unique id for this annotation data.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource Type
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The Layer id for this data. *
+         *
+         * @param string $layerId
+         */
+        public function setLayerId($layerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayerId()
+        {
+        }
+        /**
+         * URL for this resource. *
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Timestamp for the last time this data was updated. (RFC 3339 UTC date-time
+         * format).
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * The volume id for this data. *
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\GeoAnnotationdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationType()
-    {
-    }
-    /**
-     * JSON encoded data for this geo annotation data. Emitted with name 'data' in
-     * JSON output. Either this or dict_data will be populated.
-     *
-     * @param Geolayerdata $data
-     */
-    public function setData(Geolayerdata $data)
-    {
-    }
-    /**
-     * @return Geolayerdata
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Base64 encoded data for this annotation data.
-     *
-     * @param string $encodedData
-     */
-    public function setEncodedData($encodedData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncodedData()
-    {
-    }
-    /**
-     * Unique id for this annotation data.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource Type
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The Layer id for this data. *
-     *
-     * @param string $layerId
-     */
-    public function setLayerId($layerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayerId()
-    {
-    }
-    /**
-     * URL for this resource. *
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Timestamp for the last time this data was updated. (RFC 3339 UTC date-time
-     * format).
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * The volume id for this data. *
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_GeoAnnotationdata extends \Google\Service\Books\GeoAnnotationdata
     {
     }
 }

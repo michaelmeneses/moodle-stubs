@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class Digest extends \Google\Model
-{
-    /**
-     * A message digest produced with the SHA-256 algorithm.
-     *
-     * @var string
-     */
-    public $sha256;
-    /**
-     * A message digest produced with the SHA-384 algorithm.
-     *
-     * @var string
-     */
-    public $sha384;
-    /**
-     * A message digest produced with the SHA-512 algorithm.
-     *
-     * @var string
-     */
-    public $sha512;
-    /**
-     * A message digest produced with the SHA-256 algorithm.
-     *
-     * @param string $sha256
-     */
-    public function setSha256($sha256)
+namespace Google\Service\CloudKMS {
+    class Digest extends \Google\Model
     {
+        /**
+         * A message digest produced with the SHA-256 algorithm.
+         *
+         * @var string
+         */
+        public $sha256;
+        /**
+         * A message digest produced with the SHA-384 algorithm.
+         *
+         * @var string
+         */
+        public $sha384;
+        /**
+         * A message digest produced with the SHA-512 algorithm.
+         *
+         * @var string
+         */
+        public $sha512;
+        /**
+         * A message digest produced with the SHA-256 algorithm.
+         *
+         * @param string $sha256
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
+        /**
+         * A message digest produced with the SHA-384 algorithm.
+         *
+         * @param string $sha384
+         */
+        public function setSha384($sha384)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha384()
+        {
+        }
+        /**
+         * A message digest produced with the SHA-512 algorithm.
+         *
+         * @param string $sha512
+         */
+        public function setSha512($sha512)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha512()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\Digest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSha256()
-    {
-    }
-    /**
-     * A message digest produced with the SHA-384 algorithm.
-     *
-     * @param string $sha384
-     */
-    public function setSha384($sha384)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha384()
-    {
-    }
-    /**
-     * A message digest produced with the SHA-512 algorithm.
-     *
-     * @param string $sha512
-     */
-    public function setSha512($sha512)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha512()
+    class Google_Service_CloudKMS_Digest extends \Google\Service\CloudKMS\Digest
     {
     }
 }

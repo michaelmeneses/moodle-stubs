@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class AndroidDeviceCatalog extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    protected $modelsType = AndroidModel::class;
-    protected $modelsDataType = 'array';
-    protected $runtimeConfigurationType = AndroidRuntimeConfiguration::class;
-    protected $runtimeConfigurationDataType = '';
-    protected $versionsType = AndroidVersion::class;
-    protected $versionsDataType = 'array';
-    /**
-     * The set of supported Android device models.
-     *
-     * @param AndroidModel[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\Testing {
+    class AndroidDeviceCatalog extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        protected $modelsType = AndroidModel::class;
+        protected $modelsDataType = 'array';
+        protected $runtimeConfigurationType = AndroidRuntimeConfiguration::class;
+        protected $runtimeConfigurationDataType = '';
+        protected $versionsType = AndroidVersion::class;
+        protected $versionsDataType = 'array';
+        /**
+         * The set of supported Android device models.
+         *
+         * @param AndroidModel[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return AndroidModel[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * The set of supported runtime configurations.
+         *
+         * @param AndroidRuntimeConfiguration $runtimeConfiguration
+         */
+        public function setRuntimeConfiguration(AndroidRuntimeConfiguration $runtimeConfiguration)
+        {
+        }
+        /**
+         * @return AndroidRuntimeConfiguration
+         */
+        public function getRuntimeConfiguration()
+        {
+        }
+        /**
+         * The set of supported Android OS versions.
+         *
+         * @param AndroidVersion[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return AndroidVersion[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidModel[]
+     * Runtime class alias of \Google\Service\Testing\AndroidDeviceCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * The set of supported runtime configurations.
-     *
-     * @param AndroidRuntimeConfiguration $runtimeConfiguration
-     */
-    public function setRuntimeConfiguration(AndroidRuntimeConfiguration $runtimeConfiguration)
-    {
-    }
-    /**
-     * @return AndroidRuntimeConfiguration
-     */
-    public function getRuntimeConfiguration()
-    {
-    }
-    /**
-     * The set of supported Android OS versions.
-     *
-     * @param AndroidVersion[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return AndroidVersion[]
-     */
-    public function getVersions()
+    class Google_Service_Testing_AndroidDeviceCatalog extends \Google\Service\Testing\AndroidDeviceCatalog
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1SmartComposeSuggestionData extends \Google\Model
-{
-    /**
-     * The system's confidence score that this suggestion is a good match for this
-     * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
-     * certain).
-     *
-     * @var 
-     */
-    public $confidenceScore;
-    /**
-     * Map that contains metadata about the Smart Compose suggestion and the
-     * document from which it originates.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @var string
-     */
-    public $queryRecord;
-    /**
-     * The content of the suggestion.
-     *
-     * @var string
-     */
-    public $suggestion;
-    public function setConfidenceScore($confidenceScore)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1SmartComposeSuggestionData extends \Google\Model
     {
+        /**
+         * The system's confidence score that this suggestion is a good match for this
+         * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
+         * certain).
+         *
+         * @var 
+         */
+        public $confidenceScore;
+        /**
+         * Map that contains metadata about the Smart Compose suggestion and the
+         * document from which it originates.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @var string
+         */
+        public $queryRecord;
+        /**
+         * The content of the suggestion.
+         *
+         * @var string
+         */
+        public $suggestion;
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * Map that contains metadata about the Smart Compose suggestion and the
+         * document from which it originates.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @param string $queryRecord
+         */
+        public function setQueryRecord($queryRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryRecord()
+        {
+        }
+        /**
+         * The content of the suggestion.
+         *
+         * @param string $suggestion
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
-    public function getConfidenceScore()
-    {
-    }
+}
+namespace {
     /**
-     * Map that contains metadata about the Smart Compose suggestion and the
-     * document from which it originates.
-     *
-     * @param string[] $metadata
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SmartComposeSuggestionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @param string $queryRecord
-     */
-    public function setQueryRecord($queryRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryRecord()
-    {
-    }
-    /**
-     * The content of the suggestion.
-     *
-     * @param string $suggestion
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1SmartComposeSuggestionData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SmartComposeSuggestionData
     {
     }
 }

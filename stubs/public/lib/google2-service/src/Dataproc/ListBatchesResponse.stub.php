@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ListBatchesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $batchesType = Batch::class;
-    protected $batchesDataType = 'array';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. List of Batches that could not be included in the response.
-     * Attempting to get one of these resources may indicate why it was not
-     * included in the list response.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Output only. The batches from the specified collection.
-     *
-     * @param Batch[] $batches
-     */
-    public function setBatches($batches)
+namespace Google\Service\Dataproc {
+    class ListBatchesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $batchesType = Batch::class;
+        protected $batchesDataType = 'array';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. List of Batches that could not be included in the response.
+         * Attempting to get one of these resources may indicate why it was not
+         * included in the list response.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Output only. The batches from the specified collection.
+         *
+         * @param Batch[] $batches
+         */
+        public function setBatches($batches)
+        {
+        }
+        /**
+         * @return Batch[]
+         */
+        public function getBatches()
+        {
+        }
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. List of Batches that could not be included in the response.
+         * Attempting to get one of these resources may indicate why it was not
+         * included in the list response.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Batch[]
+     * Runtime class alias of \Google\Service\Dataproc\ListBatchesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatches()
-    {
-    }
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. List of Batches that could not be included in the response.
-     * Attempting to get one of these resources may indicate why it was not
-     * included in the list response.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Dataproc_ListBatchesResponse extends \Google\Service\Dataproc\ListBatchesResponse
     {
     }
 }

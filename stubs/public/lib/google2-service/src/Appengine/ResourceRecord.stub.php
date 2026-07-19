@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ResourceRecord extends \Google\Model
-{
-    /**
-     * An unknown resource record.
-     */
-    public const TYPE_RECORD_TYPE_UNSPECIFIED = 'RECORD_TYPE_UNSPECIFIED';
-    /**
-     * An A resource record. Data is an IPv4 address.
-     */
-    public const TYPE_A = 'A';
-    /**
-     * An AAAA resource record. Data is an IPv6 address.
-     */
-    public const TYPE_AAAA = 'AAAA';
-    /**
-     * A CNAME resource record. Data is a domain name to be aliased.
-     */
-    public const TYPE_CNAME = 'CNAME';
-    /**
-     * Relative name of the object affected by this record. Only applicable for
-     * CNAME records. Example: 'www'.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Data for this record. Values vary by record type, as defined in RFC 1035
-     * (section 5) and RFC 1034 (section 3.6.1).
-     *
-     * @var string
-     */
-    public $rrdata;
-    /**
-     * Resource record type. Example: AAAA.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Relative name of the object affected by this record. Only applicable for
-     * CNAME records. Example: 'www'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Appengine {
+    class ResourceRecord extends \Google\Model
     {
+        /**
+         * An unknown resource record.
+         */
+        public const TYPE_RECORD_TYPE_UNSPECIFIED = 'RECORD_TYPE_UNSPECIFIED';
+        /**
+         * An A resource record. Data is an IPv4 address.
+         */
+        public const TYPE_A = 'A';
+        /**
+         * An AAAA resource record. Data is an IPv6 address.
+         */
+        public const TYPE_AAAA = 'AAAA';
+        /**
+         * A CNAME resource record. Data is a domain name to be aliased.
+         */
+        public const TYPE_CNAME = 'CNAME';
+        /**
+         * Relative name of the object affected by this record. Only applicable for
+         * CNAME records. Example: 'www'.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Data for this record. Values vary by record type, as defined in RFC 1035
+         * (section 5) and RFC 1034 (section 3.6.1).
+         *
+         * @var string
+         */
+        public $rrdata;
+        /**
+         * Resource record type. Example: AAAA.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Relative name of the object affected by this record. Only applicable for
+         * CNAME records. Example: 'www'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Data for this record. Values vary by record type, as defined in RFC 1035
+         * (section 5) and RFC 1034 (section 3.6.1).
+         *
+         * @param string $rrdata
+         */
+        public function setRrdata($rrdata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRrdata()
+        {
+        }
+        /**
+         * Resource record type. Example: AAAA.
+         *
+         * Accepted values: RECORD_TYPE_UNSPECIFIED, A, AAAA, CNAME
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ResourceRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Data for this record. Values vary by record type, as defined in RFC 1035
-     * (section 5) and RFC 1034 (section 3.6.1).
-     *
-     * @param string $rrdata
-     */
-    public function setRrdata($rrdata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRrdata()
-    {
-    }
-    /**
-     * Resource record type. Example: AAAA.
-     *
-     * Accepted values: RECORD_TYPE_UNSPECIFIED, A, AAAA, CNAME
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Appengine_ResourceRecord extends \Google\Service\Appengine\ResourceRecord
     {
     }
 }

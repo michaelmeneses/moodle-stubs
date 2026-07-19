@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ManagedPrometheusConfig extends \Google\Model
-{
-    protected $autoMonitoringConfigType = AutoMonitoringConfig::class;
-    protected $autoMonitoringConfigDataType = '';
-    /**
-     * Enable Managed Collection.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * GKE Workload Auto-Monitoring Configuration.
-     *
-     * @param AutoMonitoringConfig $autoMonitoringConfig
-     */
-    public function setAutoMonitoringConfig(AutoMonitoringConfig $autoMonitoringConfig)
+namespace Google\Service\Container {
+    class ManagedPrometheusConfig extends \Google\Model
     {
+        protected $autoMonitoringConfigType = AutoMonitoringConfig::class;
+        protected $autoMonitoringConfigDataType = '';
+        /**
+         * Enable Managed Collection.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * GKE Workload Auto-Monitoring Configuration.
+         *
+         * @param AutoMonitoringConfig $autoMonitoringConfig
+         */
+        public function setAutoMonitoringConfig(AutoMonitoringConfig $autoMonitoringConfig)
+        {
+        }
+        /**
+         * @return AutoMonitoringConfig
+         */
+        public function getAutoMonitoringConfig()
+        {
+        }
+        /**
+         * Enable Managed Collection.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoMonitoringConfig
+     * Runtime class alias of \Google\Service\Container\ManagedPrometheusConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoMonitoringConfig()
-    {
-    }
-    /**
-     * Enable Managed Collection.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_Container_ManagedPrometheusConfig extends \Google\Service\Container\ManagedPrometheusConfig
     {
     }
 }

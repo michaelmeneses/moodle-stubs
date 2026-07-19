@@ -21,125 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "reasoningEngines" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $reasoningEngines = $aiplatformService->reasoningEngines;
- *  </code>
- */
-class ReasoningEngines extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleApiHttpBody;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListReasoningEnginesResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryReasoningEngineRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryReasoningEngineResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngine;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Creates a reasoning engine. (reasoningEngines.create)
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngine $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string parent Required. The resource name of the Location to
-     * create the ReasoningEngine in. Format:
-     * `projects/{project}/locations/{location}`
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "reasoningEngines" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $reasoningEngines = $aiplatformService->reasoningEngines;
+     *  </code>
      */
-    public function create(GoogleCloudAiplatformV1ReasoningEngine $postBody, $optParams = [])
+    class ReasoningEngines extends \Google\Service\Resource
     {
+        /**
+         * Creates a reasoning engine. (reasoningEngines.create)
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngine $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string parent Required. The resource name of the Location to
+         * create the ReasoningEngine in. Format:
+         * `projects/{project}/locations/{location}`
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create(GoogleCloudAiplatformV1ReasoningEngine $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a reasoning engine. (reasoningEngines.delete)
+         *
+         * @param string $name Required. The name of the ReasoningEngine resource to be
+         * deleted. Format:
+         * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool force Optional. If set to true, child resources of this
+         * reasoning engine will also be deleted. Otherwise, the request will fail with
+         * FAILED_PRECONDITION error when the reasoning engine has undeleted child
+         * resources.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a reasoning engine. (reasoningEngines.get)
+         *
+         * @param string $name Required. The name of the ReasoningEngine resource.
+         * Format:
+         * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1ReasoningEngine
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists reasoning engines in a location.
+         * (reasoningEngines.listReasoningEngines)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. The standard list filter. More detail in
+         * [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize Optional. The standard list page size.
+         * @opt_param string pageToken Optional. The standard list page token.
+         * @opt_param string parent Required. The resource name of the Location to list
+         * the ReasoningEngines from. Format: `projects/{project}/locations/{location}`
+         * @return GoogleCloudAiplatformV1ListReasoningEnginesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listReasoningEngines($optParams = [])
+        {
+        }
+        /**
+         * Updates a reasoning engine. (reasoningEngines.patch)
+         *
+         * @param string $name Identifier. The resource name of the ReasoningEngine.
+         * Format:
+         * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
+         * @param GoogleCloudAiplatformV1ReasoningEngine $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Mask specifying which fields to
+         * update.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudAiplatformV1ReasoningEngine $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Queries using a reasoning engine. (reasoningEngines.query)
+         *
+         * @param string $name Required. The name of the ReasoningEngine resource to
+         * use. Format:
+         * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
+         * @param GoogleCloudAiplatformV1QueryReasoningEngineRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1QueryReasoningEngineResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, GoogleCloudAiplatformV1QueryReasoningEngineRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Streams queries using a reasoning engine. (reasoningEngines.streamQuery)
+         *
+         * @param string $name Required. The name of the ReasoningEngine resource to
+         * use. Format:
+         * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
+         * @param GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleApiHttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function streamQuery($name, GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a reasoning engine. (reasoningEngines.delete)
-     *
-     * @param string $name Required. The name of the ReasoningEngine resource to be
-     * deleted. Format:
-     * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool force Optional. If set to true, child resources of this
-     * reasoning engine will also be deleted. Otherwise, the request will fail with
-     * FAILED_PRECONDITION error when the reasoning engine has undeleted child
-     * resources.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ReasoningEngines registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a reasoning engine. (reasoningEngines.get)
-     *
-     * @param string $name Required. The name of the ReasoningEngine resource.
-     * Format:
-     * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1ReasoningEngine
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists reasoning engines in a location.
-     * (reasoningEngines.listReasoningEngines)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. The standard list filter. More detail in
-     * [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize Optional. The standard list page size.
-     * @opt_param string pageToken Optional. The standard list page token.
-     * @opt_param string parent Required. The resource name of the Location to list
-     * the ReasoningEngines from. Format: `projects/{project}/locations/{location}`
-     * @return GoogleCloudAiplatformV1ListReasoningEnginesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listReasoningEngines($optParams = [])
-    {
-    }
-    /**
-     * Updates a reasoning engine. (reasoningEngines.patch)
-     *
-     * @param string $name Identifier. The resource name of the ReasoningEngine.
-     * Format:
-     * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
-     * @param GoogleCloudAiplatformV1ReasoningEngine $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Mask specifying which fields to
-     * update.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudAiplatformV1ReasoningEngine $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Queries using a reasoning engine. (reasoningEngines.query)
-     *
-     * @param string $name Required. The name of the ReasoningEngine resource to
-     * use. Format:
-     * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
-     * @param GoogleCloudAiplatformV1QueryReasoningEngineRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1QueryReasoningEngineResponse
-     * @throws \Google\Service\Exception
-     */
-    public function query($name, GoogleCloudAiplatformV1QueryReasoningEngineRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Streams queries using a reasoning engine. (reasoningEngines.streamQuery)
-     *
-     * @param string $name Required. The name of the ReasoningEngine resource to
-     * use. Format:
-     * `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`
-     * @param GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleApiHttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function streamQuery($name, GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest $postBody, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ReasoningEngines extends \Google\Service\Aiplatform\Resource\ReasoningEngines
     {
     }
 }

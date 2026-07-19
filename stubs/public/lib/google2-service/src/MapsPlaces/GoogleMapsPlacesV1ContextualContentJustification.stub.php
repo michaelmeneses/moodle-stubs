@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContextualContentJustification extends \Google\Model
-{
-    protected $businessAvailabilityAttributesJustificationType = GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification::class;
-    protected $businessAvailabilityAttributesJustificationDataType = '';
-    protected $reviewJustificationType = GoogleMapsPlacesV1ContextualContentJustificationReviewJustification::class;
-    protected $reviewJustificationDataType = '';
-    /**
-     * Experimental: See
-     * https://developers.google.com/maps/documentation/places/web-
-     * service/experimental/places-generative for more details.
-     *
-     * @param GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification $businessAvailabilityAttributesJustification
-     */
-    public function setBusinessAvailabilityAttributesJustification(GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification $businessAvailabilityAttributesJustification)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContextualContentJustification extends \Google\Model
     {
+        protected $businessAvailabilityAttributesJustificationType = GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification::class;
+        protected $businessAvailabilityAttributesJustificationDataType = '';
+        protected $reviewJustificationType = GoogleMapsPlacesV1ContextualContentJustificationReviewJustification::class;
+        protected $reviewJustificationDataType = '';
+        /**
+         * Experimental: See
+         * https://developers.google.com/maps/documentation/places/web-
+         * service/experimental/places-generative for more details.
+         *
+         * @param GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification $businessAvailabilityAttributesJustification
+         */
+        public function setBusinessAvailabilityAttributesJustification(GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification $businessAvailabilityAttributesJustification)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification
+         */
+        public function getBusinessAvailabilityAttributesJustification()
+        {
+        }
+        /**
+         * Experimental: See
+         * https://developers.google.com/maps/documentation/places/web-
+         * service/experimental/places-generative for more details.
+         *
+         * @param GoogleMapsPlacesV1ContextualContentJustificationReviewJustification $reviewJustification
+         */
+        public function setReviewJustification(GoogleMapsPlacesV1ContextualContentJustificationReviewJustification $reviewJustification)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContextualContentJustificationReviewJustification
+         */
+        public function getReviewJustification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessAvailabilityAttributesJustification()
-    {
-    }
-    /**
-     * Experimental: See
-     * https://developers.google.com/maps/documentation/places/web-
-     * service/experimental/places-generative for more details.
-     *
-     * @param GoogleMapsPlacesV1ContextualContentJustificationReviewJustification $reviewJustification
-     */
-    public function setReviewJustification(GoogleMapsPlacesV1ContextualContentJustificationReviewJustification $reviewJustification)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1ContextualContentJustificationReviewJustification
-     */
-    public function getReviewJustification()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContextualContentJustification extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustification
     {
     }
 }

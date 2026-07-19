@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class DiskPath extends \Google\Model
-{
-    /**
-     * UUID of the partition (format
-     * https://wiki.archlinux.org/title/persistent_block_device_naming#by-uuid)
-     *
-     * @var string
-     */
-    public $partitionUuid;
-    /**
-     * Relative path of the file in the partition as a JSON encoded string.
-     * Example: /home/user1/executable_file.sh
-     *
-     * @var string
-     */
-    public $relativePath;
-    /**
-     * UUID of the partition (format
-     * https://wiki.archlinux.org/title/persistent_block_device_naming#by-uuid)
-     *
-     * @param string $partitionUuid
-     */
-    public function setPartitionUuid($partitionUuid)
+namespace Google\Service\SecurityCommandCenter {
+    class DiskPath extends \Google\Model
     {
+        /**
+         * UUID of the partition (format
+         * https://wiki.archlinux.org/title/persistent_block_device_naming#by-uuid)
+         *
+         * @var string
+         */
+        public $partitionUuid;
+        /**
+         * Relative path of the file in the partition as a JSON encoded string.
+         * Example: /home/user1/executable_file.sh
+         *
+         * @var string
+         */
+        public $relativePath;
+        /**
+         * UUID of the partition (format
+         * https://wiki.archlinux.org/title/persistent_block_device_naming#by-uuid)
+         *
+         * @param string $partitionUuid
+         */
+        public function setPartitionUuid($partitionUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartitionUuid()
+        {
+        }
+        /**
+         * Relative path of the file in the partition as a JSON encoded string.
+         * Example: /home/user1/executable_file.sh
+         *
+         * @param string $relativePath
+         */
+        public function setRelativePath($relativePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\DiskPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitionUuid()
-    {
-    }
-    /**
-     * Relative path of the file in the partition as a JSON encoded string.
-     * Example: /home/user1/executable_file.sh
-     *
-     * @param string $relativePath
-     */
-    public function setRelativePath($relativePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativePath()
+    class Google_Service_SecurityCommandCenter_DiskPath extends \Google\Service\SecurityCommandCenter\DiskPath
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class NegativeKeywordListAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Required. ID of the negative keyword list. Should refer to the
-     * negative_keyword_list_id field of a NegativeKeywordList resource.
-     *
-     * @var string
-     */
-    public $negativeKeywordListId;
-    /**
-     * Required. ID of the negative keyword list. Should refer to the
-     * negative_keyword_list_id field of a NegativeKeywordList resource.
-     *
-     * @param string $negativeKeywordListId
-     */
-    public function setNegativeKeywordListId($negativeKeywordListId)
+namespace Google\Service\DisplayVideo {
+    class NegativeKeywordListAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Required. ID of the negative keyword list. Should refer to the
+         * negative_keyword_list_id field of a NegativeKeywordList resource.
+         *
+         * @var string
+         */
+        public $negativeKeywordListId;
+        /**
+         * Required. ID of the negative keyword list. Should refer to the
+         * negative_keyword_list_id field of a NegativeKeywordList resource.
+         *
+         * @param string $negativeKeywordListId
+         */
+        public function setNegativeKeywordListId($negativeKeywordListId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegativeKeywordListId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\NegativeKeywordListAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegativeKeywordListId()
+    class Google_Service_DisplayVideo_NegativeKeywordListAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\NegativeKeywordListAssignedTargetingOptionDetails
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4ThreatEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $hash;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setDigest($digest)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4ThreatEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $hash;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHash($hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHash($hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4ThreatEntry extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntry
     {
     }
 }

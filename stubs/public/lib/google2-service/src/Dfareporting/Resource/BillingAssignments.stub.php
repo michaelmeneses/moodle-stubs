@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "billingAssignments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $billingAssignments = $dfareportingService->billingAssignments;
- *  </code>
- */
-class BillingAssignments extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\BillingAssignment;
+    use Google\Service\Dfareporting\BillingAssignmentsListResponse;
     /**
-     * Inserts a new billing assignment and returns the new assignment. Only one of
-     * advertiser_id or campaign_id is support per request. If the new assignment
-     * has no effect (assigning a campaign to the parent advertiser billing profile
-     * or assigning an advertiser to the account billing profile), no assignment
-     * will be returned. (billingAssignments.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $billingProfileId Billing profile ID of this billing
-     * assignment.
-     * @param BillingAssignment $postBody
-     * @param array $optParams Optional parameters.
-     * @return BillingAssignment
-     * @throws \Google\Service\Exception
+     * The "billingAssignments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $billingAssignments = $dfareportingService->billingAssignments;
+     *  </code>
      */
-    public function insert($profileId, $billingProfileId, BillingAssignment $postBody, $optParams = [])
+    class BillingAssignments extends \Google\Service\Resource
     {
+        /**
+         * Inserts a new billing assignment and returns the new assignment. Only one of
+         * advertiser_id or campaign_id is support per request. If the new assignment
+         * has no effect (assigning a campaign to the parent advertiser billing profile
+         * or assigning an advertiser to the account billing profile), no assignment
+         * will be returned. (billingAssignments.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $billingProfileId Billing profile ID of this billing
+         * assignment.
+         * @param BillingAssignment $postBody
+         * @param array $optParams Optional parameters.
+         * @return BillingAssignment
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, $billingProfileId, BillingAssignment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of billing assignments.
+         * (billingAssignments.listBillingAssignments)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $billingProfileId Billing profile ID of this billing
+         * assignment.
+         * @param array $optParams Optional parameters.
+         * @return BillingAssignmentsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBillingAssignments($profileId, $billingProfileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of billing assignments.
-     * (billingAssignments.listBillingAssignments)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $billingProfileId Billing profile ID of this billing
-     * assignment.
-     * @param array $optParams Optional parameters.
-     * @return BillingAssignmentsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\BillingAssignments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBillingAssignments($profileId, $billingProfileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_BillingAssignments extends \Google\Service\Dfareporting\Resource\BillingAssignments
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaGetUriPatternDocumentDataResponse extends \Google\Model
-{
-    /**
-     * Document data keyed by URI pattern. For example: document_data_map = {
-     * "www.url1.com": { "Categories": ["category1", "category2"] },
-     * "www.url2.com": { "Categories": ["category3"] } }
-     *
-     * @var array[]
-     */
-    public $documentDataMap;
-    /**
-     * Document data keyed by URI pattern. For example: document_data_map = {
-     * "www.url1.com": { "Categories": ["category1", "category2"] },
-     * "www.url2.com": { "Categories": ["category3"] } }
-     *
-     * @param array[] $documentDataMap
-     */
-    public function setDocumentDataMap($documentDataMap)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaGetUriPatternDocumentDataResponse extends \Google\Model
     {
+        /**
+         * Document data keyed by URI pattern. For example: document_data_map = {
+         * "www.url1.com": { "Categories": ["category1", "category2"] },
+         * "www.url2.com": { "Categories": ["category3"] } }
+         *
+         * @var array[]
+         */
+        public $documentDataMap;
+        /**
+         * Document data keyed by URI pattern. For example: document_data_map = {
+         * "www.url1.com": { "Categories": ["category1", "category2"] },
+         * "www.url2.com": { "Categories": ["category3"] } }
+         *
+         * @param array[] $documentDataMap
+         */
+        public function setDocumentDataMap($documentDataMap)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDocumentDataMap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaGetUriPatternDocumentDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentDataMap()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaGetUriPatternDocumentDataResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaGetUriPatternDocumentDataResponse
     {
     }
 }

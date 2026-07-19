@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ParameterDefinition extends \Google\Collection
-{
-    /**
-     * Not used.
-     */
-    public const PARAMETER_TYPE_PARAMETER_TYPE_UNSPECIFIED = 'PARAMETER_TYPE_UNSPECIFIED';
-    /**
-     * Int64 type.
-     */
-    public const PARAMETER_TYPE_INT64 = 'INT64';
-    /**
-     * String type.
-     */
-    public const PARAMETER_TYPE_STRING = 'STRING';
-    /**
-     * Double type.
-     */
-    public const PARAMETER_TYPE_DOUBLE = 'DOUBLE';
-    /**
-     * Boolean type.
-     */
-    public const PARAMETER_TYPE_BOOLEAN = 'BOOLEAN';
-    protected $collection_key = 'allowedValues';
-    protected $allowedValuesType = GoogleCloudChannelV1Value::class;
-    protected $allowedValuesDataType = 'array';
-    protected $maxValueType = GoogleCloudChannelV1Value::class;
-    protected $maxValueDataType = '';
-    protected $minValueType = GoogleCloudChannelV1Value::class;
-    protected $minValueDataType = '';
-    /**
-     * Name of the parameter.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * If set to true, parameter is optional to purchase this Offer.
-     *
-     * @var bool
-     */
-    public $optional;
-    /**
-     * Data type of the parameter. Minimal value, Maximum value and allowed values
-     * will use specified data type here.
-     *
-     * @var string
-     */
-    public $parameterType;
-    /**
-     * If not empty, parameter values must be drawn from this list. For example,
-     * [us-west1, us-west2, ...] Applicable to STRING parameter type.
-     *
-     * @param GoogleCloudChannelV1Value[] $allowedValues
-     */
-    public function setAllowedValues($allowedValues)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ParameterDefinition extends \Google\Collection
     {
+        /**
+         * Not used.
+         */
+        public const PARAMETER_TYPE_PARAMETER_TYPE_UNSPECIFIED = 'PARAMETER_TYPE_UNSPECIFIED';
+        /**
+         * Int64 type.
+         */
+        public const PARAMETER_TYPE_INT64 = 'INT64';
+        /**
+         * String type.
+         */
+        public const PARAMETER_TYPE_STRING = 'STRING';
+        /**
+         * Double type.
+         */
+        public const PARAMETER_TYPE_DOUBLE = 'DOUBLE';
+        /**
+         * Boolean type.
+         */
+        public const PARAMETER_TYPE_BOOLEAN = 'BOOLEAN';
+        protected $collection_key = 'allowedValues';
+        protected $allowedValuesType = GoogleCloudChannelV1Value::class;
+        protected $allowedValuesDataType = 'array';
+        protected $maxValueType = GoogleCloudChannelV1Value::class;
+        protected $maxValueDataType = '';
+        protected $minValueType = GoogleCloudChannelV1Value::class;
+        protected $minValueDataType = '';
+        /**
+         * Name of the parameter.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * If set to true, parameter is optional to purchase this Offer.
+         *
+         * @var bool
+         */
+        public $optional;
+        /**
+         * Data type of the parameter. Minimal value, Maximum value and allowed values
+         * will use specified data type here.
+         *
+         * @var string
+         */
+        public $parameterType;
+        /**
+         * If not empty, parameter values must be drawn from this list. For example,
+         * [us-west1, us-west2, ...] Applicable to STRING parameter type.
+         *
+         * @param GoogleCloudChannelV1Value[] $allowedValues
+         */
+        public function setAllowedValues($allowedValues)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Value[]
+         */
+        public function getAllowedValues()
+        {
+        }
+        /**
+         * Maximum value of the parameter, if applicable. Inclusive. For example,
+         * maximum seats when purchasing Google Workspace Business Standard.
+         * Applicable to INT64 and DOUBLE parameter types.
+         *
+         * @param GoogleCloudChannelV1Value $maxValue
+         */
+        public function setMaxValue(GoogleCloudChannelV1Value $maxValue)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Value
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Minimal value of the parameter, if applicable. Inclusive. For example,
+         * minimal commitment when purchasing Anthos is 0.01. Applicable to INT64 and
+         * DOUBLE parameter types.
+         *
+         * @param GoogleCloudChannelV1Value $minValue
+         */
+        public function setMinValue(GoogleCloudChannelV1Value $minValue)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Value
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * Name of the parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * If set to true, parameter is optional to purchase this Offer.
+         *
+         * @param bool $optional
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
+        /**
+         * Data type of the parameter. Minimal value, Maximum value and allowed values
+         * will use specified data type here.
+         *
+         * Accepted values: PARAMETER_TYPE_UNSPECIFIED, INT64, STRING, DOUBLE, BOOLEAN
+         *
+         * @param self::PARAMETER_TYPE_* $parameterType
+         */
+        public function setParameterType($parameterType)
+        {
+        }
+        /**
+         * @return self::PARAMETER_TYPE_*
+         */
+        public function getParameterType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Value[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ParameterDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedValues()
-    {
-    }
-    /**
-     * Maximum value of the parameter, if applicable. Inclusive. For example,
-     * maximum seats when purchasing Google Workspace Business Standard.
-     * Applicable to INT64 and DOUBLE parameter types.
-     *
-     * @param GoogleCloudChannelV1Value $maxValue
-     */
-    public function setMaxValue(GoogleCloudChannelV1Value $maxValue)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Value
-     */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Minimal value of the parameter, if applicable. Inclusive. For example,
-     * minimal commitment when purchasing Anthos is 0.01. Applicable to INT64 and
-     * DOUBLE parameter types.
-     *
-     * @param GoogleCloudChannelV1Value $minValue
-     */
-    public function setMinValue(GoogleCloudChannelV1Value $minValue)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Value
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * Name of the parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * If set to true, parameter is optional to purchase this Offer.
-     *
-     * @param bool $optional
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
-    {
-    }
-    /**
-     * Data type of the parameter. Minimal value, Maximum value and allowed values
-     * will use specified data type here.
-     *
-     * Accepted values: PARAMETER_TYPE_UNSPECIFIED, INT64, STRING, DOUBLE, BOOLEAN
-     *
-     * @param self::PARAMETER_TYPE_* $parameterType
-     */
-    public function setParameterType($parameterType)
-    {
-    }
-    /**
-     * @return self::PARAMETER_TYPE_*
-     */
-    public function getParameterType()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ParameterDefinition extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ParameterDefinition
     {
     }
 }

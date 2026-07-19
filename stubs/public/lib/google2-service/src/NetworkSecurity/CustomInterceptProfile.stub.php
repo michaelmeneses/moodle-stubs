@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class CustomInterceptProfile extends \Google\Model
-{
-    /**
-     * Required. The target InterceptEndpointGroup. When a firewall rule with this
-     * security profile attached matches a packet, the packet will be intercepted
-     * to the location-local target in this group.
-     *
-     * @var string
-     */
-    public $interceptEndpointGroup;
-    /**
-     * Required. The target InterceptEndpointGroup. When a firewall rule with this
-     * security profile attached matches a packet, the packet will be intercepted
-     * to the location-local target in this group.
-     *
-     * @param string $interceptEndpointGroup
-     */
-    public function setInterceptEndpointGroup($interceptEndpointGroup)
+namespace Google\Service\NetworkSecurity {
+    class CustomInterceptProfile extends \Google\Model
     {
+        /**
+         * Required. The target InterceptEndpointGroup. When a firewall rule with this
+         * security profile attached matches a packet, the packet will be intercepted
+         * to the location-local target in this group.
+         *
+         * @var string
+         */
+        public $interceptEndpointGroup;
+        /**
+         * Required. The target InterceptEndpointGroup. When a firewall rule with this
+         * security profile attached matches a packet, the packet will be intercepted
+         * to the location-local target in this group.
+         *
+         * @param string $interceptEndpointGroup
+         */
+        public function setInterceptEndpointGroup($interceptEndpointGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterceptEndpointGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\CustomInterceptProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterceptEndpointGroup()
+    class Google_Service_NetworkSecurity_CustomInterceptProfile extends \Google\Service\NetworkSecurity\CustomInterceptProfile
     {
     }
 }

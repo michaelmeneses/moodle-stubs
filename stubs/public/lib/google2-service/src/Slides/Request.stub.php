@@ -21,713 +21,722 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Request extends \Google\Model
-{
-    protected $createImageType = CreateImageRequest::class;
-    protected $createImageDataType = '';
-    protected $createLineType = CreateLineRequest::class;
-    protected $createLineDataType = '';
-    protected $createParagraphBulletsType = CreateParagraphBulletsRequest::class;
-    protected $createParagraphBulletsDataType = '';
-    protected $createShapeType = CreateShapeRequest::class;
-    protected $createShapeDataType = '';
-    protected $createSheetsChartType = CreateSheetsChartRequest::class;
-    protected $createSheetsChartDataType = '';
-    protected $createSlideType = CreateSlideRequest::class;
-    protected $createSlideDataType = '';
-    protected $createTableType = CreateTableRequest::class;
-    protected $createTableDataType = '';
-    protected $createVideoType = CreateVideoRequest::class;
-    protected $createVideoDataType = '';
-    protected $deleteObjectType = DeleteObjectRequest::class;
-    protected $deleteObjectDataType = '';
-    protected $deleteParagraphBulletsType = DeleteParagraphBulletsRequest::class;
-    protected $deleteParagraphBulletsDataType = '';
-    protected $deleteTableColumnType = DeleteTableColumnRequest::class;
-    protected $deleteTableColumnDataType = '';
-    protected $deleteTableRowType = DeleteTableRowRequest::class;
-    protected $deleteTableRowDataType = '';
-    protected $deleteTextType = DeleteTextRequest::class;
-    protected $deleteTextDataType = '';
-    protected $duplicateObjectType = DuplicateObjectRequest::class;
-    protected $duplicateObjectDataType = '';
-    protected $groupObjectsType = GroupObjectsRequest::class;
-    protected $groupObjectsDataType = '';
-    protected $insertTableColumnsType = InsertTableColumnsRequest::class;
-    protected $insertTableColumnsDataType = '';
-    protected $insertTableRowsType = InsertTableRowsRequest::class;
-    protected $insertTableRowsDataType = '';
-    protected $insertTextType = InsertTextRequest::class;
-    protected $insertTextDataType = '';
-    protected $mergeTableCellsType = MergeTableCellsRequest::class;
-    protected $mergeTableCellsDataType = '';
-    protected $refreshSheetsChartType = RefreshSheetsChartRequest::class;
-    protected $refreshSheetsChartDataType = '';
-    protected $replaceAllShapesWithImageType = ReplaceAllShapesWithImageRequest::class;
-    protected $replaceAllShapesWithImageDataType = '';
-    protected $replaceAllShapesWithSheetsChartType = ReplaceAllShapesWithSheetsChartRequest::class;
-    protected $replaceAllShapesWithSheetsChartDataType = '';
-    protected $replaceAllTextType = ReplaceAllTextRequest::class;
-    protected $replaceAllTextDataType = '';
-    protected $replaceImageType = ReplaceImageRequest::class;
-    protected $replaceImageDataType = '';
-    protected $rerouteLineType = RerouteLineRequest::class;
-    protected $rerouteLineDataType = '';
-    protected $ungroupObjectsType = UngroupObjectsRequest::class;
-    protected $ungroupObjectsDataType = '';
-    protected $unmergeTableCellsType = UnmergeTableCellsRequest::class;
-    protected $unmergeTableCellsDataType = '';
-    protected $updateImagePropertiesType = UpdateImagePropertiesRequest::class;
-    protected $updateImagePropertiesDataType = '';
-    protected $updateLineCategoryType = UpdateLineCategoryRequest::class;
-    protected $updateLineCategoryDataType = '';
-    protected $updateLinePropertiesType = UpdateLinePropertiesRequest::class;
-    protected $updateLinePropertiesDataType = '';
-    protected $updatePageElementAltTextType = UpdatePageElementAltTextRequest::class;
-    protected $updatePageElementAltTextDataType = '';
-    protected $updatePageElementTransformType = UpdatePageElementTransformRequest::class;
-    protected $updatePageElementTransformDataType = '';
-    protected $updatePageElementsZOrderType = UpdatePageElementsZOrderRequest::class;
-    protected $updatePageElementsZOrderDataType = '';
-    protected $updatePagePropertiesType = UpdatePagePropertiesRequest::class;
-    protected $updatePagePropertiesDataType = '';
-    protected $updateParagraphStyleType = UpdateParagraphStyleRequest::class;
-    protected $updateParagraphStyleDataType = '';
-    protected $updateShapePropertiesType = UpdateShapePropertiesRequest::class;
-    protected $updateShapePropertiesDataType = '';
-    protected $updateSlidePropertiesType = UpdateSlidePropertiesRequest::class;
-    protected $updateSlidePropertiesDataType = '';
-    protected $updateSlidesPositionType = UpdateSlidesPositionRequest::class;
-    protected $updateSlidesPositionDataType = '';
-    protected $updateTableBorderPropertiesType = UpdateTableBorderPropertiesRequest::class;
-    protected $updateTableBorderPropertiesDataType = '';
-    protected $updateTableCellPropertiesType = UpdateTableCellPropertiesRequest::class;
-    protected $updateTableCellPropertiesDataType = '';
-    protected $updateTableColumnPropertiesType = UpdateTableColumnPropertiesRequest::class;
-    protected $updateTableColumnPropertiesDataType = '';
-    protected $updateTableRowPropertiesType = UpdateTableRowPropertiesRequest::class;
-    protected $updateTableRowPropertiesDataType = '';
-    protected $updateTextStyleType = UpdateTextStyleRequest::class;
-    protected $updateTextStyleDataType = '';
-    protected $updateVideoPropertiesType = UpdateVideoPropertiesRequest::class;
-    protected $updateVideoPropertiesDataType = '';
-    /**
-     * Creates an image.
-     *
-     * @param CreateImageRequest $createImage
-     */
-    public function setCreateImage(CreateImageRequest $createImage)
-    {
-    }
-    /**
-     * @return CreateImageRequest
-     */
-    public function getCreateImage()
-    {
-    }
-    /**
-     * Creates a line.
-     *
-     * @param CreateLineRequest $createLine
-     */
-    public function setCreateLine(CreateLineRequest $createLine)
-    {
-    }
-    /**
-     * @return CreateLineRequest
-     */
-    public function getCreateLine()
-    {
-    }
-    /**
-     * Creates bullets for paragraphs.
-     *
-     * @param CreateParagraphBulletsRequest $createParagraphBullets
-     */
-    public function setCreateParagraphBullets(CreateParagraphBulletsRequest $createParagraphBullets)
-    {
-    }
-    /**
-     * @return CreateParagraphBulletsRequest
-     */
-    public function getCreateParagraphBullets()
-    {
-    }
-    /**
-     * Creates a new shape.
-     *
-     * @param CreateShapeRequest $createShape
-     */
-    public function setCreateShape(CreateShapeRequest $createShape)
-    {
-    }
-    /**
-     * @return CreateShapeRequest
-     */
-    public function getCreateShape()
-    {
-    }
-    /**
-     * Creates an embedded Google Sheets chart.
-     *
-     * @param CreateSheetsChartRequest $createSheetsChart
-     */
-    public function setCreateSheetsChart(CreateSheetsChartRequest $createSheetsChart)
-    {
-    }
-    /**
-     * @return CreateSheetsChartRequest
-     */
-    public function getCreateSheetsChart()
-    {
-    }
-    /**
-     * Creates a new slide.
-     *
-     * @param CreateSlideRequest $createSlide
-     */
-    public function setCreateSlide(CreateSlideRequest $createSlide)
-    {
-    }
-    /**
-     * @return CreateSlideRequest
-     */
-    public function getCreateSlide()
-    {
-    }
-    /**
-     * Creates a new table.
-     *
-     * @param CreateTableRequest $createTable
-     */
-    public function setCreateTable(CreateTableRequest $createTable)
-    {
-    }
-    /**
-     * @return CreateTableRequest
-     */
-    public function getCreateTable()
-    {
-    }
-    /**
-     * Creates a video.
-     *
-     * @param CreateVideoRequest $createVideo
-     */
-    public function setCreateVideo(CreateVideoRequest $createVideo)
-    {
-    }
-    /**
-     * @return CreateVideoRequest
-     */
-    public function getCreateVideo()
-    {
-    }
-    /**
-     * Deletes a page or page element from the presentation.
-     *
-     * @param DeleteObjectRequest $deleteObject
-     */
-    public function setDeleteObject(DeleteObjectRequest $deleteObject)
-    {
-    }
-    /**
-     * @return DeleteObjectRequest
-     */
-    public function getDeleteObject()
-    {
-    }
-    /**
-     * Deletes bullets from paragraphs.
-     *
-     * @param DeleteParagraphBulletsRequest $deleteParagraphBullets
-     */
-    public function setDeleteParagraphBullets(DeleteParagraphBulletsRequest $deleteParagraphBullets)
-    {
-    }
-    /**
-     * @return DeleteParagraphBulletsRequest
-     */
-    public function getDeleteParagraphBullets()
-    {
-    }
-    /**
-     * Deletes a column from a table.
-     *
-     * @param DeleteTableColumnRequest $deleteTableColumn
-     */
-    public function setDeleteTableColumn(DeleteTableColumnRequest $deleteTableColumn)
-    {
-    }
-    /**
-     * @return DeleteTableColumnRequest
-     */
-    public function getDeleteTableColumn()
-    {
-    }
-    /**
-     * Deletes a row from a table.
-     *
-     * @param DeleteTableRowRequest $deleteTableRow
-     */
-    public function setDeleteTableRow(DeleteTableRowRequest $deleteTableRow)
-    {
-    }
-    /**
-     * @return DeleteTableRowRequest
-     */
-    public function getDeleteTableRow()
-    {
-    }
-    /**
-     * Deletes text from a shape or a table cell.
-     *
-     * @param DeleteTextRequest $deleteText
-     */
-    public function setDeleteText(DeleteTextRequest $deleteText)
-    {
-    }
-    /**
-     * @return DeleteTextRequest
-     */
-    public function getDeleteText()
-    {
-    }
-    /**
-     * Duplicates a slide or page element.
-     *
-     * @param DuplicateObjectRequest $duplicateObject
-     */
-    public function setDuplicateObject(DuplicateObjectRequest $duplicateObject)
-    {
-    }
-    /**
-     * @return DuplicateObjectRequest
-     */
-    public function getDuplicateObject()
-    {
-    }
-    /**
-     * Groups objects, such as page elements.
-     *
-     * @param GroupObjectsRequest $groupObjects
-     */
-    public function setGroupObjects(GroupObjectsRequest $groupObjects)
-    {
-    }
-    /**
-     * @return GroupObjectsRequest
-     */
-    public function getGroupObjects()
-    {
-    }
-    /**
-     * Inserts columns into a table.
-     *
-     * @param InsertTableColumnsRequest $insertTableColumns
-     */
-    public function setInsertTableColumns(InsertTableColumnsRequest $insertTableColumns)
-    {
-    }
-    /**
-     * @return InsertTableColumnsRequest
-     */
-    public function getInsertTableColumns()
-    {
-    }
-    /**
-     * Inserts rows into a table.
-     *
-     * @param InsertTableRowsRequest $insertTableRows
-     */
-    public function setInsertTableRows(InsertTableRowsRequest $insertTableRows)
-    {
-    }
-    /**
-     * @return InsertTableRowsRequest
-     */
-    public function getInsertTableRows()
-    {
-    }
-    /**
-     * Inserts text into a shape or table cell.
-     *
-     * @param InsertTextRequest $insertText
-     */
-    public function setInsertText(InsertTextRequest $insertText)
-    {
-    }
-    /**
-     * @return InsertTextRequest
-     */
-    public function getInsertText()
-    {
-    }
-    /**
-     * Merges cells in a Table.
-     *
-     * @param MergeTableCellsRequest $mergeTableCells
-     */
-    public function setMergeTableCells(MergeTableCellsRequest $mergeTableCells)
-    {
-    }
-    /**
-     * @return MergeTableCellsRequest
-     */
-    public function getMergeTableCells()
-    {
-    }
-    /**
-     * Refreshes a Google Sheets chart.
-     *
-     * @param RefreshSheetsChartRequest $refreshSheetsChart
-     */
-    public function setRefreshSheetsChart(RefreshSheetsChartRequest $refreshSheetsChart)
-    {
-    }
-    /**
-     * @return RefreshSheetsChartRequest
-     */
-    public function getRefreshSheetsChart()
-    {
-    }
-    /**
-     * Replaces all shapes matching some criteria with an image.
-     *
-     * @param ReplaceAllShapesWithImageRequest $replaceAllShapesWithImage
-     */
-    public function setReplaceAllShapesWithImage(ReplaceAllShapesWithImageRequest $replaceAllShapesWithImage)
-    {
-    }
-    /**
-     * @return ReplaceAllShapesWithImageRequest
-     */
-    public function getReplaceAllShapesWithImage()
-    {
-    }
-    /**
-     * Replaces all shapes matching some criteria with a Google Sheets chart.
-     *
-     * @param ReplaceAllShapesWithSheetsChartRequest $replaceAllShapesWithSheetsChart
-     */
-    public function setReplaceAllShapesWithSheetsChart(ReplaceAllShapesWithSheetsChartRequest $replaceAllShapesWithSheetsChart)
-    {
-    }
-    /**
-     * @return ReplaceAllShapesWithSheetsChartRequest
-     */
-    public function getReplaceAllShapesWithSheetsChart()
-    {
-    }
-    /**
-     * Replaces all instances of specified text.
-     *
-     * @param ReplaceAllTextRequest $replaceAllText
-     */
-    public function setReplaceAllText(ReplaceAllTextRequest $replaceAllText)
-    {
-    }
-    /**
-     * @return ReplaceAllTextRequest
-     */
-    public function getReplaceAllText()
-    {
-    }
-    /**
-     * Replaces an existing image with a new image.
-     *
-     * @param ReplaceImageRequest $replaceImage
-     */
-    public function setReplaceImage(ReplaceImageRequest $replaceImage)
-    {
-    }
-    /**
-     * @return ReplaceImageRequest
-     */
-    public function getReplaceImage()
-    {
-    }
-    /**
-     * Reroutes a line such that it's connected at the two closest connection
-     * sites on the connected page elements.
-     *
-     * @param RerouteLineRequest $rerouteLine
-     */
-    public function setRerouteLine(RerouteLineRequest $rerouteLine)
-    {
-    }
-    /**
-     * @return RerouteLineRequest
-     */
-    public function getRerouteLine()
-    {
-    }
-    /**
-     * Ungroups objects, such as groups.
-     *
-     * @param UngroupObjectsRequest $ungroupObjects
-     */
-    public function setUngroupObjects(UngroupObjectsRequest $ungroupObjects)
-    {
-    }
-    /**
-     * @return UngroupObjectsRequest
-     */
-    public function getUngroupObjects()
-    {
-    }
-    /**
-     * Unmerges cells in a Table.
-     *
-     * @param UnmergeTableCellsRequest $unmergeTableCells
-     */
-    public function setUnmergeTableCells(UnmergeTableCellsRequest $unmergeTableCells)
-    {
-    }
-    /**
-     * @return UnmergeTableCellsRequest
-     */
-    public function getUnmergeTableCells()
-    {
-    }
-    /**
-     * Updates the properties of an Image.
-     *
-     * @param UpdateImagePropertiesRequest $updateImageProperties
-     */
-    public function setUpdateImageProperties(UpdateImagePropertiesRequest $updateImageProperties)
-    {
-    }
-    /**
-     * @return UpdateImagePropertiesRequest
-     */
-    public function getUpdateImageProperties()
-    {
-    }
-    /**
-     * Updates the category of a line.
-     *
-     * @param UpdateLineCategoryRequest $updateLineCategory
-     */
-    public function setUpdateLineCategory(UpdateLineCategoryRequest $updateLineCategory)
-    {
-    }
-    /**
-     * @return UpdateLineCategoryRequest
-     */
-    public function getUpdateLineCategory()
-    {
-    }
-    /**
-     * Updates the properties of a Line.
-     *
-     * @param UpdateLinePropertiesRequest $updateLineProperties
-     */
-    public function setUpdateLineProperties(UpdateLinePropertiesRequest $updateLineProperties)
-    {
-    }
-    /**
-     * @return UpdateLinePropertiesRequest
-     */
-    public function getUpdateLineProperties()
-    {
-    }
-    /**
-     * Updates the alt text title and/or description of a page element.
-     *
-     * @param UpdatePageElementAltTextRequest $updatePageElementAltText
-     */
-    public function setUpdatePageElementAltText(UpdatePageElementAltTextRequest $updatePageElementAltText)
-    {
-    }
-    /**
-     * @return UpdatePageElementAltTextRequest
-     */
-    public function getUpdatePageElementAltText()
-    {
-    }
-    /**
-     * Updates the transform of a page element.
-     *
-     * @param UpdatePageElementTransformRequest $updatePageElementTransform
-     */
-    public function setUpdatePageElementTransform(UpdatePageElementTransformRequest $updatePageElementTransform)
-    {
-    }
-    /**
-     * @return UpdatePageElementTransformRequest
-     */
-    public function getUpdatePageElementTransform()
-    {
-    }
-    /**
-     * Updates the Z-order of page elements.
-     *
-     * @param UpdatePageElementsZOrderRequest $updatePageElementsZOrder
-     */
-    public function setUpdatePageElementsZOrder(UpdatePageElementsZOrderRequest $updatePageElementsZOrder)
-    {
-    }
-    /**
-     * @return UpdatePageElementsZOrderRequest
-     */
-    public function getUpdatePageElementsZOrder()
-    {
-    }
-    /**
-     * Updates the properties of a Page.
-     *
-     * @param UpdatePagePropertiesRequest $updatePageProperties
-     */
-    public function setUpdatePageProperties(UpdatePagePropertiesRequest $updatePageProperties)
-    {
-    }
-    /**
-     * @return UpdatePagePropertiesRequest
-     */
-    public function getUpdatePageProperties()
-    {
-    }
-    /**
-     * Updates the styling of paragraphs within a Shape or Table.
-     *
-     * @param UpdateParagraphStyleRequest $updateParagraphStyle
-     */
-    public function setUpdateParagraphStyle(UpdateParagraphStyleRequest $updateParagraphStyle)
-    {
-    }
-    /**
-     * @return UpdateParagraphStyleRequest
-     */
-    public function getUpdateParagraphStyle()
-    {
-    }
-    /**
-     * Updates the properties of a Shape.
-     *
-     * @param UpdateShapePropertiesRequest $updateShapeProperties
-     */
-    public function setUpdateShapeProperties(UpdateShapePropertiesRequest $updateShapeProperties)
-    {
-    }
-    /**
-     * @return UpdateShapePropertiesRequest
-     */
-    public function getUpdateShapeProperties()
-    {
-    }
-    /**
-     * Updates the properties of a Slide
-     *
-     * @param UpdateSlidePropertiesRequest $updateSlideProperties
-     */
-    public function setUpdateSlideProperties(UpdateSlidePropertiesRequest $updateSlideProperties)
-    {
-    }
-    /**
-     * @return UpdateSlidePropertiesRequest
-     */
-    public function getUpdateSlideProperties()
-    {
-    }
-    /**
-     * Updates the position of a set of slides in the presentation.
-     *
-     * @param UpdateSlidesPositionRequest $updateSlidesPosition
-     */
-    public function setUpdateSlidesPosition(UpdateSlidesPositionRequest $updateSlidesPosition)
-    {
-    }
-    /**
-     * @return UpdateSlidesPositionRequest
-     */
-    public function getUpdateSlidesPosition()
-    {
-    }
-    /**
-     * Updates the properties of the table borders in a Table.
-     *
-     * @param UpdateTableBorderPropertiesRequest $updateTableBorderProperties
-     */
-    public function setUpdateTableBorderProperties(UpdateTableBorderPropertiesRequest $updateTableBorderProperties)
-    {
-    }
-    /**
-     * @return UpdateTableBorderPropertiesRequest
-     */
-    public function getUpdateTableBorderProperties()
-    {
-    }
-    /**
-     * Updates the properties of a TableCell.
-     *
-     * @param UpdateTableCellPropertiesRequest $updateTableCellProperties
-     */
-    public function setUpdateTableCellProperties(UpdateTableCellPropertiesRequest $updateTableCellProperties)
-    {
-    }
-    /**
-     * @return UpdateTableCellPropertiesRequest
-     */
-    public function getUpdateTableCellProperties()
-    {
-    }
-    /**
-     * Updates the properties of a Table column.
-     *
-     * @param UpdateTableColumnPropertiesRequest $updateTableColumnProperties
-     */
-    public function setUpdateTableColumnProperties(UpdateTableColumnPropertiesRequest $updateTableColumnProperties)
-    {
-    }
-    /**
-     * @return UpdateTableColumnPropertiesRequest
-     */
-    public function getUpdateTableColumnProperties()
-    {
-    }
-    /**
-     * Updates the properties of a Table row.
-     *
-     * @param UpdateTableRowPropertiesRequest $updateTableRowProperties
-     */
-    public function setUpdateTableRowProperties(UpdateTableRowPropertiesRequest $updateTableRowProperties)
-    {
-    }
-    /**
-     * @return UpdateTableRowPropertiesRequest
-     */
-    public function getUpdateTableRowProperties()
-    {
-    }
-    /**
-     * Updates the styling of text within a Shape or Table.
-     *
-     * @param UpdateTextStyleRequest $updateTextStyle
-     */
-    public function setUpdateTextStyle(UpdateTextStyleRequest $updateTextStyle)
-    {
-    }
-    /**
-     * @return UpdateTextStyleRequest
-     */
-    public function getUpdateTextStyle()
-    {
-    }
-    /**
-     * Updates the properties of a Video.
-     *
-     * @param UpdateVideoPropertiesRequest $updateVideoProperties
-     */
-    public function setUpdateVideoProperties(UpdateVideoPropertiesRequest $updateVideoProperties)
-    {
-    }
-    /**
-     * @return UpdateVideoPropertiesRequest
-     */
-    public function getUpdateVideoProperties()
+namespace Google\Service\Slides {
+    class Request extends \Google\Model
+    {
+        protected $createImageType = CreateImageRequest::class;
+        protected $createImageDataType = '';
+        protected $createLineType = CreateLineRequest::class;
+        protected $createLineDataType = '';
+        protected $createParagraphBulletsType = CreateParagraphBulletsRequest::class;
+        protected $createParagraphBulletsDataType = '';
+        protected $createShapeType = CreateShapeRequest::class;
+        protected $createShapeDataType = '';
+        protected $createSheetsChartType = CreateSheetsChartRequest::class;
+        protected $createSheetsChartDataType = '';
+        protected $createSlideType = CreateSlideRequest::class;
+        protected $createSlideDataType = '';
+        protected $createTableType = CreateTableRequest::class;
+        protected $createTableDataType = '';
+        protected $createVideoType = CreateVideoRequest::class;
+        protected $createVideoDataType = '';
+        protected $deleteObjectType = DeleteObjectRequest::class;
+        protected $deleteObjectDataType = '';
+        protected $deleteParagraphBulletsType = DeleteParagraphBulletsRequest::class;
+        protected $deleteParagraphBulletsDataType = '';
+        protected $deleteTableColumnType = DeleteTableColumnRequest::class;
+        protected $deleteTableColumnDataType = '';
+        protected $deleteTableRowType = DeleteTableRowRequest::class;
+        protected $deleteTableRowDataType = '';
+        protected $deleteTextType = DeleteTextRequest::class;
+        protected $deleteTextDataType = '';
+        protected $duplicateObjectType = DuplicateObjectRequest::class;
+        protected $duplicateObjectDataType = '';
+        protected $groupObjectsType = GroupObjectsRequest::class;
+        protected $groupObjectsDataType = '';
+        protected $insertTableColumnsType = InsertTableColumnsRequest::class;
+        protected $insertTableColumnsDataType = '';
+        protected $insertTableRowsType = InsertTableRowsRequest::class;
+        protected $insertTableRowsDataType = '';
+        protected $insertTextType = InsertTextRequest::class;
+        protected $insertTextDataType = '';
+        protected $mergeTableCellsType = MergeTableCellsRequest::class;
+        protected $mergeTableCellsDataType = '';
+        protected $refreshSheetsChartType = RefreshSheetsChartRequest::class;
+        protected $refreshSheetsChartDataType = '';
+        protected $replaceAllShapesWithImageType = ReplaceAllShapesWithImageRequest::class;
+        protected $replaceAllShapesWithImageDataType = '';
+        protected $replaceAllShapesWithSheetsChartType = ReplaceAllShapesWithSheetsChartRequest::class;
+        protected $replaceAllShapesWithSheetsChartDataType = '';
+        protected $replaceAllTextType = ReplaceAllTextRequest::class;
+        protected $replaceAllTextDataType = '';
+        protected $replaceImageType = ReplaceImageRequest::class;
+        protected $replaceImageDataType = '';
+        protected $rerouteLineType = RerouteLineRequest::class;
+        protected $rerouteLineDataType = '';
+        protected $ungroupObjectsType = UngroupObjectsRequest::class;
+        protected $ungroupObjectsDataType = '';
+        protected $unmergeTableCellsType = UnmergeTableCellsRequest::class;
+        protected $unmergeTableCellsDataType = '';
+        protected $updateImagePropertiesType = UpdateImagePropertiesRequest::class;
+        protected $updateImagePropertiesDataType = '';
+        protected $updateLineCategoryType = UpdateLineCategoryRequest::class;
+        protected $updateLineCategoryDataType = '';
+        protected $updateLinePropertiesType = UpdateLinePropertiesRequest::class;
+        protected $updateLinePropertiesDataType = '';
+        protected $updatePageElementAltTextType = UpdatePageElementAltTextRequest::class;
+        protected $updatePageElementAltTextDataType = '';
+        protected $updatePageElementTransformType = UpdatePageElementTransformRequest::class;
+        protected $updatePageElementTransformDataType = '';
+        protected $updatePageElementsZOrderType = UpdatePageElementsZOrderRequest::class;
+        protected $updatePageElementsZOrderDataType = '';
+        protected $updatePagePropertiesType = UpdatePagePropertiesRequest::class;
+        protected $updatePagePropertiesDataType = '';
+        protected $updateParagraphStyleType = UpdateParagraphStyleRequest::class;
+        protected $updateParagraphStyleDataType = '';
+        protected $updateShapePropertiesType = UpdateShapePropertiesRequest::class;
+        protected $updateShapePropertiesDataType = '';
+        protected $updateSlidePropertiesType = UpdateSlidePropertiesRequest::class;
+        protected $updateSlidePropertiesDataType = '';
+        protected $updateSlidesPositionType = UpdateSlidesPositionRequest::class;
+        protected $updateSlidesPositionDataType = '';
+        protected $updateTableBorderPropertiesType = UpdateTableBorderPropertiesRequest::class;
+        protected $updateTableBorderPropertiesDataType = '';
+        protected $updateTableCellPropertiesType = UpdateTableCellPropertiesRequest::class;
+        protected $updateTableCellPropertiesDataType = '';
+        protected $updateTableColumnPropertiesType = UpdateTableColumnPropertiesRequest::class;
+        protected $updateTableColumnPropertiesDataType = '';
+        protected $updateTableRowPropertiesType = UpdateTableRowPropertiesRequest::class;
+        protected $updateTableRowPropertiesDataType = '';
+        protected $updateTextStyleType = UpdateTextStyleRequest::class;
+        protected $updateTextStyleDataType = '';
+        protected $updateVideoPropertiesType = UpdateVideoPropertiesRequest::class;
+        protected $updateVideoPropertiesDataType = '';
+        /**
+         * Creates an image.
+         *
+         * @param CreateImageRequest $createImage
+         */
+        public function setCreateImage(CreateImageRequest $createImage)
+        {
+        }
+        /**
+         * @return CreateImageRequest
+         */
+        public function getCreateImage()
+        {
+        }
+        /**
+         * Creates a line.
+         *
+         * @param CreateLineRequest $createLine
+         */
+        public function setCreateLine(CreateLineRequest $createLine)
+        {
+        }
+        /**
+         * @return CreateLineRequest
+         */
+        public function getCreateLine()
+        {
+        }
+        /**
+         * Creates bullets for paragraphs.
+         *
+         * @param CreateParagraphBulletsRequest $createParagraphBullets
+         */
+        public function setCreateParagraphBullets(CreateParagraphBulletsRequest $createParagraphBullets)
+        {
+        }
+        /**
+         * @return CreateParagraphBulletsRequest
+         */
+        public function getCreateParagraphBullets()
+        {
+        }
+        /**
+         * Creates a new shape.
+         *
+         * @param CreateShapeRequest $createShape
+         */
+        public function setCreateShape(CreateShapeRequest $createShape)
+        {
+        }
+        /**
+         * @return CreateShapeRequest
+         */
+        public function getCreateShape()
+        {
+        }
+        /**
+         * Creates an embedded Google Sheets chart.
+         *
+         * @param CreateSheetsChartRequest $createSheetsChart
+         */
+        public function setCreateSheetsChart(CreateSheetsChartRequest $createSheetsChart)
+        {
+        }
+        /**
+         * @return CreateSheetsChartRequest
+         */
+        public function getCreateSheetsChart()
+        {
+        }
+        /**
+         * Creates a new slide.
+         *
+         * @param CreateSlideRequest $createSlide
+         */
+        public function setCreateSlide(CreateSlideRequest $createSlide)
+        {
+        }
+        /**
+         * @return CreateSlideRequest
+         */
+        public function getCreateSlide()
+        {
+        }
+        /**
+         * Creates a new table.
+         *
+         * @param CreateTableRequest $createTable
+         */
+        public function setCreateTable(CreateTableRequest $createTable)
+        {
+        }
+        /**
+         * @return CreateTableRequest
+         */
+        public function getCreateTable()
+        {
+        }
+        /**
+         * Creates a video.
+         *
+         * @param CreateVideoRequest $createVideo
+         */
+        public function setCreateVideo(CreateVideoRequest $createVideo)
+        {
+        }
+        /**
+         * @return CreateVideoRequest
+         */
+        public function getCreateVideo()
+        {
+        }
+        /**
+         * Deletes a page or page element from the presentation.
+         *
+         * @param DeleteObjectRequest $deleteObject
+         */
+        public function setDeleteObject(DeleteObjectRequest $deleteObject)
+        {
+        }
+        /**
+         * @return DeleteObjectRequest
+         */
+        public function getDeleteObject()
+        {
+        }
+        /**
+         * Deletes bullets from paragraphs.
+         *
+         * @param DeleteParagraphBulletsRequest $deleteParagraphBullets
+         */
+        public function setDeleteParagraphBullets(DeleteParagraphBulletsRequest $deleteParagraphBullets)
+        {
+        }
+        /**
+         * @return DeleteParagraphBulletsRequest
+         */
+        public function getDeleteParagraphBullets()
+        {
+        }
+        /**
+         * Deletes a column from a table.
+         *
+         * @param DeleteTableColumnRequest $deleteTableColumn
+         */
+        public function setDeleteTableColumn(DeleteTableColumnRequest $deleteTableColumn)
+        {
+        }
+        /**
+         * @return DeleteTableColumnRequest
+         */
+        public function getDeleteTableColumn()
+        {
+        }
+        /**
+         * Deletes a row from a table.
+         *
+         * @param DeleteTableRowRequest $deleteTableRow
+         */
+        public function setDeleteTableRow(DeleteTableRowRequest $deleteTableRow)
+        {
+        }
+        /**
+         * @return DeleteTableRowRequest
+         */
+        public function getDeleteTableRow()
+        {
+        }
+        /**
+         * Deletes text from a shape or a table cell.
+         *
+         * @param DeleteTextRequest $deleteText
+         */
+        public function setDeleteText(DeleteTextRequest $deleteText)
+        {
+        }
+        /**
+         * @return DeleteTextRequest
+         */
+        public function getDeleteText()
+        {
+        }
+        /**
+         * Duplicates a slide or page element.
+         *
+         * @param DuplicateObjectRequest $duplicateObject
+         */
+        public function setDuplicateObject(DuplicateObjectRequest $duplicateObject)
+        {
+        }
+        /**
+         * @return DuplicateObjectRequest
+         */
+        public function getDuplicateObject()
+        {
+        }
+        /**
+         * Groups objects, such as page elements.
+         *
+         * @param GroupObjectsRequest $groupObjects
+         */
+        public function setGroupObjects(GroupObjectsRequest $groupObjects)
+        {
+        }
+        /**
+         * @return GroupObjectsRequest
+         */
+        public function getGroupObjects()
+        {
+        }
+        /**
+         * Inserts columns into a table.
+         *
+         * @param InsertTableColumnsRequest $insertTableColumns
+         */
+        public function setInsertTableColumns(InsertTableColumnsRequest $insertTableColumns)
+        {
+        }
+        /**
+         * @return InsertTableColumnsRequest
+         */
+        public function getInsertTableColumns()
+        {
+        }
+        /**
+         * Inserts rows into a table.
+         *
+         * @param InsertTableRowsRequest $insertTableRows
+         */
+        public function setInsertTableRows(InsertTableRowsRequest $insertTableRows)
+        {
+        }
+        /**
+         * @return InsertTableRowsRequest
+         */
+        public function getInsertTableRows()
+        {
+        }
+        /**
+         * Inserts text into a shape or table cell.
+         *
+         * @param InsertTextRequest $insertText
+         */
+        public function setInsertText(InsertTextRequest $insertText)
+        {
+        }
+        /**
+         * @return InsertTextRequest
+         */
+        public function getInsertText()
+        {
+        }
+        /**
+         * Merges cells in a Table.
+         *
+         * @param MergeTableCellsRequest $mergeTableCells
+         */
+        public function setMergeTableCells(MergeTableCellsRequest $mergeTableCells)
+        {
+        }
+        /**
+         * @return MergeTableCellsRequest
+         */
+        public function getMergeTableCells()
+        {
+        }
+        /**
+         * Refreshes a Google Sheets chart.
+         *
+         * @param RefreshSheetsChartRequest $refreshSheetsChart
+         */
+        public function setRefreshSheetsChart(RefreshSheetsChartRequest $refreshSheetsChart)
+        {
+        }
+        /**
+         * @return RefreshSheetsChartRequest
+         */
+        public function getRefreshSheetsChart()
+        {
+        }
+        /**
+         * Replaces all shapes matching some criteria with an image.
+         *
+         * @param ReplaceAllShapesWithImageRequest $replaceAllShapesWithImage
+         */
+        public function setReplaceAllShapesWithImage(ReplaceAllShapesWithImageRequest $replaceAllShapesWithImage)
+        {
+        }
+        /**
+         * @return ReplaceAllShapesWithImageRequest
+         */
+        public function getReplaceAllShapesWithImage()
+        {
+        }
+        /**
+         * Replaces all shapes matching some criteria with a Google Sheets chart.
+         *
+         * @param ReplaceAllShapesWithSheetsChartRequest $replaceAllShapesWithSheetsChart
+         */
+        public function setReplaceAllShapesWithSheetsChart(ReplaceAllShapesWithSheetsChartRequest $replaceAllShapesWithSheetsChart)
+        {
+        }
+        /**
+         * @return ReplaceAllShapesWithSheetsChartRequest
+         */
+        public function getReplaceAllShapesWithSheetsChart()
+        {
+        }
+        /**
+         * Replaces all instances of specified text.
+         *
+         * @param ReplaceAllTextRequest $replaceAllText
+         */
+        public function setReplaceAllText(ReplaceAllTextRequest $replaceAllText)
+        {
+        }
+        /**
+         * @return ReplaceAllTextRequest
+         */
+        public function getReplaceAllText()
+        {
+        }
+        /**
+         * Replaces an existing image with a new image.
+         *
+         * @param ReplaceImageRequest $replaceImage
+         */
+        public function setReplaceImage(ReplaceImageRequest $replaceImage)
+        {
+        }
+        /**
+         * @return ReplaceImageRequest
+         */
+        public function getReplaceImage()
+        {
+        }
+        /**
+         * Reroutes a line such that it's connected at the two closest connection
+         * sites on the connected page elements.
+         *
+         * @param RerouteLineRequest $rerouteLine
+         */
+        public function setRerouteLine(RerouteLineRequest $rerouteLine)
+        {
+        }
+        /**
+         * @return RerouteLineRequest
+         */
+        public function getRerouteLine()
+        {
+        }
+        /**
+         * Ungroups objects, such as groups.
+         *
+         * @param UngroupObjectsRequest $ungroupObjects
+         */
+        public function setUngroupObjects(UngroupObjectsRequest $ungroupObjects)
+        {
+        }
+        /**
+         * @return UngroupObjectsRequest
+         */
+        public function getUngroupObjects()
+        {
+        }
+        /**
+         * Unmerges cells in a Table.
+         *
+         * @param UnmergeTableCellsRequest $unmergeTableCells
+         */
+        public function setUnmergeTableCells(UnmergeTableCellsRequest $unmergeTableCells)
+        {
+        }
+        /**
+         * @return UnmergeTableCellsRequest
+         */
+        public function getUnmergeTableCells()
+        {
+        }
+        /**
+         * Updates the properties of an Image.
+         *
+         * @param UpdateImagePropertiesRequest $updateImageProperties
+         */
+        public function setUpdateImageProperties(UpdateImagePropertiesRequest $updateImageProperties)
+        {
+        }
+        /**
+         * @return UpdateImagePropertiesRequest
+         */
+        public function getUpdateImageProperties()
+        {
+        }
+        /**
+         * Updates the category of a line.
+         *
+         * @param UpdateLineCategoryRequest $updateLineCategory
+         */
+        public function setUpdateLineCategory(UpdateLineCategoryRequest $updateLineCategory)
+        {
+        }
+        /**
+         * @return UpdateLineCategoryRequest
+         */
+        public function getUpdateLineCategory()
+        {
+        }
+        /**
+         * Updates the properties of a Line.
+         *
+         * @param UpdateLinePropertiesRequest $updateLineProperties
+         */
+        public function setUpdateLineProperties(UpdateLinePropertiesRequest $updateLineProperties)
+        {
+        }
+        /**
+         * @return UpdateLinePropertiesRequest
+         */
+        public function getUpdateLineProperties()
+        {
+        }
+        /**
+         * Updates the alt text title and/or description of a page element.
+         *
+         * @param UpdatePageElementAltTextRequest $updatePageElementAltText
+         */
+        public function setUpdatePageElementAltText(UpdatePageElementAltTextRequest $updatePageElementAltText)
+        {
+        }
+        /**
+         * @return UpdatePageElementAltTextRequest
+         */
+        public function getUpdatePageElementAltText()
+        {
+        }
+        /**
+         * Updates the transform of a page element.
+         *
+         * @param UpdatePageElementTransformRequest $updatePageElementTransform
+         */
+        public function setUpdatePageElementTransform(UpdatePageElementTransformRequest $updatePageElementTransform)
+        {
+        }
+        /**
+         * @return UpdatePageElementTransformRequest
+         */
+        public function getUpdatePageElementTransform()
+        {
+        }
+        /**
+         * Updates the Z-order of page elements.
+         *
+         * @param UpdatePageElementsZOrderRequest $updatePageElementsZOrder
+         */
+        public function setUpdatePageElementsZOrder(UpdatePageElementsZOrderRequest $updatePageElementsZOrder)
+        {
+        }
+        /**
+         * @return UpdatePageElementsZOrderRequest
+         */
+        public function getUpdatePageElementsZOrder()
+        {
+        }
+        /**
+         * Updates the properties of a Page.
+         *
+         * @param UpdatePagePropertiesRequest $updatePageProperties
+         */
+        public function setUpdatePageProperties(UpdatePagePropertiesRequest $updatePageProperties)
+        {
+        }
+        /**
+         * @return UpdatePagePropertiesRequest
+         */
+        public function getUpdatePageProperties()
+        {
+        }
+        /**
+         * Updates the styling of paragraphs within a Shape or Table.
+         *
+         * @param UpdateParagraphStyleRequest $updateParagraphStyle
+         */
+        public function setUpdateParagraphStyle(UpdateParagraphStyleRequest $updateParagraphStyle)
+        {
+        }
+        /**
+         * @return UpdateParagraphStyleRequest
+         */
+        public function getUpdateParagraphStyle()
+        {
+        }
+        /**
+         * Updates the properties of a Shape.
+         *
+         * @param UpdateShapePropertiesRequest $updateShapeProperties
+         */
+        public function setUpdateShapeProperties(UpdateShapePropertiesRequest $updateShapeProperties)
+        {
+        }
+        /**
+         * @return UpdateShapePropertiesRequest
+         */
+        public function getUpdateShapeProperties()
+        {
+        }
+        /**
+         * Updates the properties of a Slide
+         *
+         * @param UpdateSlidePropertiesRequest $updateSlideProperties
+         */
+        public function setUpdateSlideProperties(UpdateSlidePropertiesRequest $updateSlideProperties)
+        {
+        }
+        /**
+         * @return UpdateSlidePropertiesRequest
+         */
+        public function getUpdateSlideProperties()
+        {
+        }
+        /**
+         * Updates the position of a set of slides in the presentation.
+         *
+         * @param UpdateSlidesPositionRequest $updateSlidesPosition
+         */
+        public function setUpdateSlidesPosition(UpdateSlidesPositionRequest $updateSlidesPosition)
+        {
+        }
+        /**
+         * @return UpdateSlidesPositionRequest
+         */
+        public function getUpdateSlidesPosition()
+        {
+        }
+        /**
+         * Updates the properties of the table borders in a Table.
+         *
+         * @param UpdateTableBorderPropertiesRequest $updateTableBorderProperties
+         */
+        public function setUpdateTableBorderProperties(UpdateTableBorderPropertiesRequest $updateTableBorderProperties)
+        {
+        }
+        /**
+         * @return UpdateTableBorderPropertiesRequest
+         */
+        public function getUpdateTableBorderProperties()
+        {
+        }
+        /**
+         * Updates the properties of a TableCell.
+         *
+         * @param UpdateTableCellPropertiesRequest $updateTableCellProperties
+         */
+        public function setUpdateTableCellProperties(UpdateTableCellPropertiesRequest $updateTableCellProperties)
+        {
+        }
+        /**
+         * @return UpdateTableCellPropertiesRequest
+         */
+        public function getUpdateTableCellProperties()
+        {
+        }
+        /**
+         * Updates the properties of a Table column.
+         *
+         * @param UpdateTableColumnPropertiesRequest $updateTableColumnProperties
+         */
+        public function setUpdateTableColumnProperties(UpdateTableColumnPropertiesRequest $updateTableColumnProperties)
+        {
+        }
+        /**
+         * @return UpdateTableColumnPropertiesRequest
+         */
+        public function getUpdateTableColumnProperties()
+        {
+        }
+        /**
+         * Updates the properties of a Table row.
+         *
+         * @param UpdateTableRowPropertiesRequest $updateTableRowProperties
+         */
+        public function setUpdateTableRowProperties(UpdateTableRowPropertiesRequest $updateTableRowProperties)
+        {
+        }
+        /**
+         * @return UpdateTableRowPropertiesRequest
+         */
+        public function getUpdateTableRowProperties()
+        {
+        }
+        /**
+         * Updates the styling of text within a Shape or Table.
+         *
+         * @param UpdateTextStyleRequest $updateTextStyle
+         */
+        public function setUpdateTextStyle(UpdateTextStyleRequest $updateTextStyle)
+        {
+        }
+        /**
+         * @return UpdateTextStyleRequest
+         */
+        public function getUpdateTextStyle()
+        {
+        }
+        /**
+         * Updates the properties of a Video.
+         *
+         * @param UpdateVideoPropertiesRequest $updateVideoProperties
+         */
+        public function setUpdateVideoProperties(UpdateVideoPropertiesRequest $updateVideoProperties)
+        {
+        }
+        /**
+         * @return UpdateVideoPropertiesRequest
+         */
+        public function getUpdateVideoProperties()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Slides\Request registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Slides_Request extends \Google\Service\Slides\Request
     {
     }
 }

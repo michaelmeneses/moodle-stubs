@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class AdmissionWhitelistPattern extends \Google\Model
-{
-    /**
-     * An image name pattern to allowlist, in the form `registry/path/to/image`.
-     * This supports a trailing `*` wildcard, but this is allowed only in text
-     * after the `registry/` part. This also supports a trailing `**` wildcard
-     * which matches subdirectories of a given entry.
-     *
-     * @var string
-     */
-    public $namePattern;
-    /**
-     * An image name pattern to allowlist, in the form `registry/path/to/image`.
-     * This supports a trailing `*` wildcard, but this is allowed only in text
-     * after the `registry/` part. This also supports a trailing `**` wildcard
-     * which matches subdirectories of a given entry.
-     *
-     * @param string $namePattern
-     */
-    public function setNamePattern($namePattern)
+namespace Google\Service\BinaryAuthorization {
+    class AdmissionWhitelistPattern extends \Google\Model
     {
+        /**
+         * An image name pattern to allowlist, in the form `registry/path/to/image`.
+         * This supports a trailing `*` wildcard, but this is allowed only in text
+         * after the `registry/` part. This also supports a trailing `**` wildcard
+         * which matches subdirectories of a given entry.
+         *
+         * @var string
+         */
+        public $namePattern;
+        /**
+         * An image name pattern to allowlist, in the form `registry/path/to/image`.
+         * This supports a trailing `*` wildcard, but this is allowed only in text
+         * after the `registry/` part. This also supports a trailing `**` wildcard
+         * which matches subdirectories of a given entry.
+         *
+         * @param string $namePattern
+         */
+        public function setNamePattern($namePattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamePattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\AdmissionWhitelistPattern registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamePattern()
+    class Google_Service_BinaryAuthorization_AdmissionWhitelistPattern extends \Google\Service\BinaryAuthorization\AdmissionWhitelistPattern
     {
     }
 }

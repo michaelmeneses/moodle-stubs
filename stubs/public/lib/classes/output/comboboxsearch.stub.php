@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\moodle_exception;
 /**
  * Renderable class for the comboboxsearch.
  *

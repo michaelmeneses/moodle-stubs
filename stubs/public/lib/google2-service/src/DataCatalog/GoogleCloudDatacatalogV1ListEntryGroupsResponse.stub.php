@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ListEntryGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entryGroups';
-    protected $entryGroupsType = GoogleCloudDatacatalogV1EntryGroup::class;
-    protected $entryGroupsDataType = 'array';
-    /**
-     * Pagination token to specify in the next call to retrieve the next page of
-     * results. Empty if there are no more items.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Entry group details.
-     *
-     * @param GoogleCloudDatacatalogV1EntryGroup[] $entryGroups
-     */
-    public function setEntryGroups($entryGroups)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ListEntryGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'entryGroups';
+        protected $entryGroupsType = GoogleCloudDatacatalogV1EntryGroup::class;
+        protected $entryGroupsDataType = 'array';
+        /**
+         * Pagination token to specify in the next call to retrieve the next page of
+         * results. Empty if there are no more items.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Entry group details.
+         *
+         * @param GoogleCloudDatacatalogV1EntryGroup[] $entryGroups
+         */
+        public function setEntryGroups($entryGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1EntryGroup[]
+         */
+        public function getEntryGroups()
+        {
+        }
+        /**
+         * Pagination token to specify in the next call to retrieve the next page of
+         * results. Empty if there are no more items.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1EntryGroup[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntryGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntryGroups()
-    {
-    }
-    /**
-     * Pagination token to specify in the next call to retrieve the next page of
-     * results. Empty if there are no more items.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ListEntryGroupsResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListEntryGroupsResponse
     {
     }
 }

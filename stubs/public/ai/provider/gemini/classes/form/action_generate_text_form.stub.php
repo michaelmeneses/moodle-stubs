@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_gemini\form;
 
+use aiprovider_gemini\aimodel\gemini_base;
 /**
  * Generate text action provider settings form.
  *

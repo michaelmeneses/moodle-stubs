@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class DocumentNote extends \Google\Model
-{
-    public $dataLicence;
-    public $spdxVersion;
-    public function setDataLicence($dataLicence)
+namespace Google\Service\ContainerAnalysis {
+    class DocumentNote extends \Google\Model
     {
+        public $dataLicence;
+        public $spdxVersion;
+        public function setDataLicence($dataLicence)
+        {
+        }
+        public function getDataLicence()
+        {
+        }
+        public function setSpdxVersion($spdxVersion)
+        {
+        }
+        public function getSpdxVersion()
+        {
+        }
     }
-    public function getDataLicence()
-    {
-    }
-    public function setSpdxVersion($spdxVersion)
-    {
-    }
-    public function getSpdxVersion()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\DocumentNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_DocumentNote extends \Google\Service\ContainerAnalysis\DocumentNote
     {
     }
 }

@@ -21,74 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement\Resource;
-
-/**
- * The "admins" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessaccountmanagementService = new Google\Service\MyBusinessAccountManagement(...);
- *   $admins = $mybusinessaccountmanagementService->accounts_admins;
- *  </code>
- */
-class AccountsAdmins extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessAccountManagement\Resource {
+    use Google\Service\MyBusinessAccountManagement\Admin;
+    use Google\Service\MyBusinessAccountManagement\ListAccountAdminsResponse;
+    use Google\Service\MyBusinessAccountManagement\MybusinessaccountmanagementEmpty;
     /**
-     * Invites the specified user to become an administrator for the specified
-     * account. The invitee must accept the invitation in order to be granted access
-     * to the account. See AcceptInvitation to programmatically accept an
-     * invitation. (admins.create)
-     *
-     * @param string $parent Required. The resource name of the account this admin
-     * is created for. `accounts/{account_id}`.
-     * @param Admin $postBody
-     * @param array $optParams Optional parameters.
-     * @return Admin
-     * @throws \Google\Service\Exception
+     * The "admins" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessaccountmanagementService = new Google\Service\MyBusinessAccountManagement(...);
+     *   $admins = $mybusinessaccountmanagementService->accounts_admins;
+     *  </code>
      */
-    public function create($parent, Admin $postBody, $optParams = [])
+    class AccountsAdmins extends \Google\Service\Resource
     {
+        /**
+         * Invites the specified user to become an administrator for the specified
+         * account. The invitee must accept the invitation in order to be granted access
+         * to the account. See AcceptInvitation to programmatically accept an
+         * invitation. (admins.create)
+         *
+         * @param string $parent Required. The resource name of the account this admin
+         * is created for. `accounts/{account_id}`.
+         * @param Admin $postBody
+         * @param array $optParams Optional parameters.
+         * @return Admin
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Admin $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes the specified admin from the specified account. (admins.delete)
+         *
+         * @param string $name Required. The resource name of the admin to remove from
+         * the account. `accounts/{account_id}/admins/{admin_id}`.
+         * @param array $optParams Optional parameters.
+         * @return MybusinessaccountmanagementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the admins for the specified account. (admins.listAccountsAdmins)
+         *
+         * @param string $parent Required. The name of the account from which to
+         * retrieve a list of admins. `accounts/{account_id}/admins`.
+         * @param array $optParams Optional parameters.
+         * @return ListAccountAdminsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdmins($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the Admin for the specified Account Admin. (admins.patch)
+         *
+         * @param string $name Immutable. The resource name. For account admins, this is
+         * in the form: `accounts/{account_id}/admins/{admin_id}` For location admins,
+         * this is in the form: `locations/{location_id}/admins/{admin_id}` This field
+         * will be ignored if set during admin creation.
+         * @param Admin $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The specific fields that should be
+         * updated. The only editable field is role.
+         * @return Admin
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Admin $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes the specified admin from the specified account. (admins.delete)
-     *
-     * @param string $name Required. The resource name of the admin to remove from
-     * the account. `accounts/{account_id}/admins/{admin_id}`.
-     * @param array $optParams Optional parameters.
-     * @return MybusinessaccountmanagementEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\Resource\AccountsAdmins registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the admins for the specified account. (admins.listAccountsAdmins)
-     *
-     * @param string $parent Required. The name of the account from which to
-     * retrieve a list of admins. `accounts/{account_id}/admins`.
-     * @param array $optParams Optional parameters.
-     * @return ListAccountAdminsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsAdmins($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the Admin for the specified Account Admin. (admins.patch)
-     *
-     * @param string $name Immutable. The resource name. For account admins, this is
-     * in the form: `accounts/{account_id}/admins/{admin_id}` For location admins,
-     * this is in the form: `locations/{location_id}/admins/{admin_id}` This field
-     * will be ignored if set during admin creation.
-     * @param Admin $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The specific fields that should be
-     * updated. The only editable field is role.
-     * @return Admin
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Admin $postBody, $optParams = [])
+    class Google_Service_MyBusinessAccountManagement_Resource_AccountsAdmins extends \Google\Service\MyBusinessAccountManagement\Resource\AccountsAdmins
     {
     }
 }

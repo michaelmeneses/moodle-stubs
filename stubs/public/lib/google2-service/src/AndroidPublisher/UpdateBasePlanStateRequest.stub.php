@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UpdateBasePlanStateRequest extends \Google\Model
-{
-    protected $activateBasePlanRequestType = ActivateBasePlanRequest::class;
-    protected $activateBasePlanRequestDataType = '';
-    protected $deactivateBasePlanRequestType = DeactivateBasePlanRequest::class;
-    protected $deactivateBasePlanRequestDataType = '';
-    /**
-     * Activates a base plan. Once activated, base plans will be available to new
-     * subscribers.
-     *
-     * @param ActivateBasePlanRequest $activateBasePlanRequest
-     */
-    public function setActivateBasePlanRequest(ActivateBasePlanRequest $activateBasePlanRequest)
+namespace Google\Service\AndroidPublisher {
+    class UpdateBasePlanStateRequest extends \Google\Model
     {
+        protected $activateBasePlanRequestType = ActivateBasePlanRequest::class;
+        protected $activateBasePlanRequestDataType = '';
+        protected $deactivateBasePlanRequestType = DeactivateBasePlanRequest::class;
+        protected $deactivateBasePlanRequestDataType = '';
+        /**
+         * Activates a base plan. Once activated, base plans will be available to new
+         * subscribers.
+         *
+         * @param ActivateBasePlanRequest $activateBasePlanRequest
+         */
+        public function setActivateBasePlanRequest(ActivateBasePlanRequest $activateBasePlanRequest)
+        {
+        }
+        /**
+         * @return ActivateBasePlanRequest
+         */
+        public function getActivateBasePlanRequest()
+        {
+        }
+        /**
+         * Deactivates a base plan. Once deactivated, the base plan will become
+         * unavailable to new subscribers, but existing subscribers will maintain
+         * their subscription
+         *
+         * @param DeactivateBasePlanRequest $deactivateBasePlanRequest
+         */
+        public function setDeactivateBasePlanRequest(DeactivateBasePlanRequest $deactivateBasePlanRequest)
+        {
+        }
+        /**
+         * @return DeactivateBasePlanRequest
+         */
+        public function getDeactivateBasePlanRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivateBasePlanRequest
+     * Runtime class alias of \Google\Service\AndroidPublisher\UpdateBasePlanStateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivateBasePlanRequest()
-    {
-    }
-    /**
-     * Deactivates a base plan. Once deactivated, the base plan will become
-     * unavailable to new subscribers, but existing subscribers will maintain
-     * their subscription
-     *
-     * @param DeactivateBasePlanRequest $deactivateBasePlanRequest
-     */
-    public function setDeactivateBasePlanRequest(DeactivateBasePlanRequest $deactivateBasePlanRequest)
-    {
-    }
-    /**
-     * @return DeactivateBasePlanRequest
-     */
-    public function getDeactivateBasePlanRequest()
+    class Google_Service_AndroidPublisher_UpdateBasePlanStateRequest extends \Google\Service\AndroidPublisher\UpdateBasePlanStateRequest
     {
     }
 }

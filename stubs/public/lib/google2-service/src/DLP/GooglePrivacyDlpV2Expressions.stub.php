@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Expressions extends \Google\Model
-{
-    /**
-     * Unused
-     */
-    public const LOGICAL_OPERATOR_LOGICAL_OPERATOR_UNSPECIFIED = 'LOGICAL_OPERATOR_UNSPECIFIED';
-    /**
-     * Conditional AND
-     */
-    public const LOGICAL_OPERATOR_AND = 'AND';
-    protected $conditionsType = GooglePrivacyDlpV2Conditions::class;
-    protected $conditionsDataType = '';
-    /**
-     * The operator to apply to the result of conditions. Default and currently
-     * only supported value is `AND`.
-     *
-     * @var string
-     */
-    public $logicalOperator;
-    /**
-     * Conditions to apply to the expression.
-     *
-     * @param GooglePrivacyDlpV2Conditions $conditions
-     */
-    public function setConditions(GooglePrivacyDlpV2Conditions $conditions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Expressions extends \Google\Model
     {
+        /**
+         * Unused
+         */
+        public const LOGICAL_OPERATOR_LOGICAL_OPERATOR_UNSPECIFIED = 'LOGICAL_OPERATOR_UNSPECIFIED';
+        /**
+         * Conditional AND
+         */
+        public const LOGICAL_OPERATOR_AND = 'AND';
+        protected $conditionsType = GooglePrivacyDlpV2Conditions::class;
+        protected $conditionsDataType = '';
+        /**
+         * The operator to apply to the result of conditions. Default and currently
+         * only supported value is `AND`.
+         *
+         * @var string
+         */
+        public $logicalOperator;
+        /**
+         * Conditions to apply to the expression.
+         *
+         * @param GooglePrivacyDlpV2Conditions $conditions
+         */
+        public function setConditions(GooglePrivacyDlpV2Conditions $conditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Conditions
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * The operator to apply to the result of conditions. Default and currently
+         * only supported value is `AND`.
+         *
+         * Accepted values: LOGICAL_OPERATOR_UNSPECIFIED, AND
+         *
+         * @param self::LOGICAL_OPERATOR_* $logicalOperator
+         */
+        public function setLogicalOperator($logicalOperator)
+        {
+        }
+        /**
+         * @return self::LOGICAL_OPERATOR_*
+         */
+        public function getLogicalOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Conditions
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Expressions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * The operator to apply to the result of conditions. Default and currently
-     * only supported value is `AND`.
-     *
-     * Accepted values: LOGICAL_OPERATOR_UNSPECIFIED, AND
-     *
-     * @param self::LOGICAL_OPERATOR_* $logicalOperator
-     */
-    public function setLogicalOperator($logicalOperator)
-    {
-    }
-    /**
-     * @return self::LOGICAL_OPERATOR_*
-     */
-    public function getLogicalOperator()
+    class Google_Service_DLP_GooglePrivacyDlpV2Expressions extends \Google\Service\DLP\GooglePrivacyDlpV2Expressions
     {
     }
 }

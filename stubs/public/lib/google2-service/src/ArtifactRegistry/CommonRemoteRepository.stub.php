@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class CommonRemoteRepository extends \Google\Model
-{
-    /**
-     * Required. A common public repository base for remote repository.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. A common public repository base for remote repository.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\ArtifactRegistry {
+    class CommonRemoteRepository extends \Google\Model
     {
+        /**
+         * Required. A common public repository base for remote repository.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. A common public repository base for remote repository.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\CommonRemoteRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_ArtifactRegistry_CommonRemoteRepository extends \Google\Service\ArtifactRegistry\CommonRemoteRepository
     {
     }
 }

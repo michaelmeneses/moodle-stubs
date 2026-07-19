@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "hybrid" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $hybrid = $apigeeService->hybrid;
- *  </code>
- */
-class Hybrid extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    /**
+     * The "hybrid" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $hybrid = $apigeeService->hybrid;
+     *  </code>
+     */
+    class Hybrid extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\Hybrid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_Hybrid extends \Google\Service\Apigee\Resource\Hybrid
+    {
+    }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class SerDeInfo extends \Google\Model
-{
-    /**
-     * The fully qualified Java class name of the serialization library.
-     *
-     * @var string
-     */
-    public $serializationLib;
-    /**
-     * The fully qualified Java class name of the serialization library.
-     *
-     * @param string $serializationLib
-     */
-    public function setSerializationLib($serializationLib)
+namespace Google\Service\BigLakeService {
+    class SerDeInfo extends \Google\Model
     {
+        /**
+         * The fully qualified Java class name of the serialization library.
+         *
+         * @var string
+         */
+        public $serializationLib;
+        /**
+         * The fully qualified Java class name of the serialization library.
+         *
+         * @param string $serializationLib
+         */
+        public function setSerializationLib($serializationLib)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerializationLib()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\SerDeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSerializationLib()
+    class Google_Service_BigLakeService_SerDeInfo extends \Google\Service\BigLakeService\SerDeInfo
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceAwsMetadata extends \Google\Model
-{
-    protected $accountType = GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount::class;
-    protected $accountDataType = '';
-    /**
-     * The AWS account of the resource associated with the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount $account
-     */
-    public function setAccount(GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount $account)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceAwsMetadata extends \Google\Model
     {
+        protected $accountType = GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount::class;
+        protected $accountDataType = '';
+        /**
+         * The AWS account of the resource associated with the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount $account
+         */
+        public function setAccount(GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount $account)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount
+         */
+        public function getAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceAwsMetadataAwsAccount
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAwsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceAwsMetadata extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAwsMetadata
     {
     }
 }

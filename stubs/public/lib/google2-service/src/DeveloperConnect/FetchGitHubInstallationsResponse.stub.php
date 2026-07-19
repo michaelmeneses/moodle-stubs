@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class FetchGitHubInstallationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'installations';
-    protected $installationsType = Installation::class;
-    protected $installationsDataType = 'array';
-    /**
-     * List of installations available to the OAuth user (for github.com) or all
-     * the installations (for GitHub enterprise).
-     *
-     * @param Installation[] $installations
-     */
-    public function setInstallations($installations)
+namespace Google\Service\DeveloperConnect {
+    class FetchGitHubInstallationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'installations';
+        protected $installationsType = Installation::class;
+        protected $installationsDataType = 'array';
+        /**
+         * List of installations available to the OAuth user (for github.com) or all
+         * the installations (for GitHub enterprise).
+         *
+         * @param Installation[] $installations
+         */
+        public function setInstallations($installations)
+        {
+        }
+        /**
+         * @return Installation[]
+         */
+        public function getInstallations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Installation[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\FetchGitHubInstallationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstallations()
+    class Google_Service_DeveloperConnect_FetchGitHubInstallationsResponse extends \Google\Service\DeveloperConnect\FetchGitHubInstallationsResponse
     {
     }
 }

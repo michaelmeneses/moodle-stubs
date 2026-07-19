@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Location extends \Google\Model
-{
-    /**
-     * The zero-based index, in UTF-16 code units. The index is relative to the
-     * beginning of the segment specified by segment_id.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * The ID of the header, footer or footnote the location is in. An empty
-     * segment ID signifies the document's body.
-     *
-     * @var string
-     */
-    public $segmentId;
-    /**
-     * The tab that the location is in. When omitted, the request is applied to
-     * the first tab. In a document containing a single tab: - If provided, must
-     * match the singular tab's ID. - If omitted, the request applies to the
-     * singular tab. In a document containing multiple tabs: - If provided, the
-     * request applies to the specified tab. - If omitted, the request applies to
-     * the first tab in the document.
-     *
-     * @var string
-     */
-    public $tabId;
-    /**
-     * The zero-based index, in UTF-16 code units. The index is relative to the
-     * beginning of the segment specified by segment_id.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Docs {
+    class Location extends \Google\Model
     {
+        /**
+         * The zero-based index, in UTF-16 code units. The index is relative to the
+         * beginning of the segment specified by segment_id.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * The ID of the header, footer or footnote the location is in. An empty
+         * segment ID signifies the document's body.
+         *
+         * @var string
+         */
+        public $segmentId;
+        /**
+         * The tab that the location is in. When omitted, the request is applied to
+         * the first tab. In a document containing a single tab: - If provided, must
+         * match the singular tab's ID. - If omitted, the request applies to the
+         * singular tab. In a document containing multiple tabs: - If provided, the
+         * request applies to the specified tab. - If omitted, the request applies to
+         * the first tab in the document.
+         *
+         * @var string
+         */
+        public $tabId;
+        /**
+         * The zero-based index, in UTF-16 code units. The index is relative to the
+         * beginning of the segment specified by segment_id.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The ID of the header, footer or footnote the location is in. An empty
+         * segment ID signifies the document's body.
+         *
+         * @param string $segmentId
+         */
+        public function setSegmentId($segmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentId()
+        {
+        }
+        /**
+         * The tab that the location is in. When omitted, the request is applied to
+         * the first tab. In a document containing a single tab: - If provided, must
+         * match the singular tab's ID. - If omitted, the request applies to the
+         * singular tab. In a document containing multiple tabs: - If provided, the
+         * request applies to the specified tab. - If omitted, the request applies to
+         * the first tab in the document.
+         *
+         * @param string $tabId
+         */
+        public function setTabId($tabId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTabId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * The ID of the header, footer or footnote the location is in. An empty
-     * segment ID signifies the document's body.
-     *
-     * @param string $segmentId
-     */
-    public function setSegmentId($segmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentId()
-    {
-    }
-    /**
-     * The tab that the location is in. When omitted, the request is applied to
-     * the first tab. In a document containing a single tab: - If provided, must
-     * match the singular tab's ID. - If omitted, the request applies to the
-     * singular tab. In a document containing multiple tabs: - If provided, the
-     * request applies to the specified tab. - If omitted, the request applies to
-     * the first tab in the document.
-     *
-     * @param string $tabId
-     */
-    public function setTabId($tabId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTabId()
+    class Google_Service_Docs_Location extends \Google\Service\Docs\Location
     {
     }
 }

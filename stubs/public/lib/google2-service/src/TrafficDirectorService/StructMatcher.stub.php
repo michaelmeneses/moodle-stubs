@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class StructMatcher extends \Google\Collection
-{
-    protected $collection_key = 'path';
-    protected $pathType = PathSegment::class;
-    protected $pathDataType = 'array';
-    protected $valueType = ValueMatcher::class;
-    protected $valueDataType = '';
-    /**
-     * The path to retrieve the Value from the Struct.
-     *
-     * @param PathSegment[] $path
-     */
-    public function setPath($path)
+namespace Google\Service\TrafficDirectorService {
+    class StructMatcher extends \Google\Collection
     {
+        protected $collection_key = 'path';
+        protected $pathType = PathSegment::class;
+        protected $pathDataType = 'array';
+        protected $valueType = ValueMatcher::class;
+        protected $valueDataType = '';
+        /**
+         * The path to retrieve the Value from the Struct.
+         *
+         * @param PathSegment[] $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return PathSegment[]
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * The StructMatcher is matched if the value retrieved by path is matched to
+         * this value.
+         *
+         * @param ValueMatcher $value
+         */
+        public function setValue(ValueMatcher $value)
+        {
+        }
+        /**
+         * @return ValueMatcher
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PathSegment[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\StructMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * The StructMatcher is matched if the value retrieved by path is matched to
-     * this value.
-     *
-     * @param ValueMatcher $value
-     */
-    public function setValue(ValueMatcher $value)
-    {
-    }
-    /**
-     * @return ValueMatcher
-     */
-    public function getValue()
+    class Google_Service_TrafficDirectorService_StructMatcher extends \Google\Service\TrafficDirectorService\StructMatcher
     {
     }
 }

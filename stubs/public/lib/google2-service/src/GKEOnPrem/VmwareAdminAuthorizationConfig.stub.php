@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminAuthorizationConfig extends \Google\Collection
-{
-    protected $collection_key = 'viewerUsers';
-    protected $viewerUsersType = ClusterUser::class;
-    protected $viewerUsersDataType = 'array';
-    /**
-     * For VMware admin clusters, users will be granted the cluster-viewer role on
-     * the cluster.
-     *
-     * @param ClusterUser[] $viewerUsers
-     */
-    public function setViewerUsers($viewerUsers)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminAuthorizationConfig extends \Google\Collection
     {
+        protected $collection_key = 'viewerUsers';
+        protected $viewerUsersType = ClusterUser::class;
+        protected $viewerUsersDataType = 'array';
+        /**
+         * For VMware admin clusters, users will be granted the cluster-viewer role on
+         * the cluster.
+         *
+         * @param ClusterUser[] $viewerUsers
+         */
+        public function setViewerUsers($viewerUsers)
+        {
+        }
+        /**
+         * @return ClusterUser[]
+         */
+        public function getViewerUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUser[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminAuthorizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getViewerUsers()
+    class Google_Service_GKEOnPrem_VmwareAdminAuthorizationConfig extends \Google\Service\GKEOnPrem\VmwareAdminAuthorizationConfig
     {
     }
 }

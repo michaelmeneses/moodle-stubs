@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ExecAction extends \Google\Collection
-{
-    protected $collection_key = 'command';
-    /**
-     * @var string[]
-     */
-    public $command;
-    /**
-     * @param string[]
-     */
-    public function setCommand($command)
+namespace Google\Service\CloudRun {
+    class ExecAction extends \Google\Collection
     {
+        protected $collection_key = 'command';
+        /**
+         * @var string[]
+         */
+        public $command;
+        /**
+         * @param string[]
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommand()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\ExecAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
+    class Google_Service_CloudRun_ExecAction extends \Google\Service\CloudRun\ExecAction
     {
     }
 }

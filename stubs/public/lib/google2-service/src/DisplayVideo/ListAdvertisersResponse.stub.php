@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListAdvertisersResponse extends \Google\Collection
-{
-    protected $collection_key = 'advertisers';
-    protected $advertisersType = Advertiser::class;
-    protected $advertisersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAdvertisers` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of advertisers. This list will be absent if empty.
-     *
-     * @param Advertiser[] $advertisers
-     */
-    public function setAdvertisers($advertisers)
+namespace Google\Service\DisplayVideo {
+    class ListAdvertisersResponse extends \Google\Collection
     {
+        protected $collection_key = 'advertisers';
+        protected $advertisersType = Advertiser::class;
+        protected $advertisersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAdvertisers` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of advertisers. This list will be absent if empty.
+         *
+         * @param Advertiser[] $advertisers
+         */
+        public function setAdvertisers($advertisers)
+        {
+        }
+        /**
+         * @return Advertiser[]
+         */
+        public function getAdvertisers()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAdvertisers` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Advertiser[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListAdvertisersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertisers()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAdvertisers` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListAdvertisersResponse extends \Google\Service\DisplayVideo\ListAdvertisersResponse
     {
     }
 }

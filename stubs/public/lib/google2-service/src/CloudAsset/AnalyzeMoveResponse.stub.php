@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzeMoveResponse extends \Google\Collection
-{
-    protected $collection_key = 'moveAnalysis';
-    protected $moveAnalysisType = MoveAnalysis::class;
-    protected $moveAnalysisDataType = 'array';
-    /**
-     * The list of analyses returned from performing the intended resource move
-     * analysis. The analysis is grouped by different Google Cloud services.
-     *
-     * @param MoveAnalysis[] $moveAnalysis
-     */
-    public function setMoveAnalysis($moveAnalysis)
+namespace Google\Service\CloudAsset {
+    class AnalyzeMoveResponse extends \Google\Collection
     {
+        protected $collection_key = 'moveAnalysis';
+        protected $moveAnalysisType = MoveAnalysis::class;
+        protected $moveAnalysisDataType = 'array';
+        /**
+         * The list of analyses returned from performing the intended resource move
+         * analysis. The analysis is grouped by different Google Cloud services.
+         *
+         * @param MoveAnalysis[] $moveAnalysis
+         */
+        public function setMoveAnalysis($moveAnalysis)
+        {
+        }
+        /**
+         * @return MoveAnalysis[]
+         */
+        public function getMoveAnalysis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MoveAnalysis[]
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzeMoveResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMoveAnalysis()
+    class Google_Service_CloudAsset_AnalyzeMoveResponse extends \Google\Service\CloudAsset\AnalyzeMoveResponse
     {
     }
 }

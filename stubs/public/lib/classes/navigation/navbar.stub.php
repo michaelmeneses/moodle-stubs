@@ -20,127 +20,144 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Navbar class
- *
- * This class is used to manage the navbar, which is initialised from the navigation
- * object held by PAGE
- *
- * @package   core
- * @category  navigation
- * @copyright 2009 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class navbar extends navigation_node
-{
-    /** @var bool A switch for whether the navbar is initialised or not */
-    protected $initialised = false;
-    /** @var mixed keys used to reference the nodes on the navbar */
-    protected $keys = [];
-    /** @var null|string content of the navbar */
-    protected $content = null;
-    /** @var moodle_page object the moodle page that this navbar belongs to */
-    protected $page;
-    /** @var bool A switch for whether to ignore the active navigation information */
-    protected $ignoreactive = false;
-    /** @var bool A switch to let us know if we are in the middle of an install */
-    protected $duringinstall = false;
-    /** @var bool A switch for whether the navbar has items */
-    protected $hasitems = false;
-    /** @var array An array of navigation nodes for the navbar */
-    protected $items;
-    /** @var array An array of child node objects */
-    public $children = [];
-    /** @var bool A switch for whether we want to include the root node in the navbar */
-    public $includesettingsbase = false;
-    /** @var breadcrumb_navigation_node[] $prependchildren */
-    protected $prependchildren = [];
+namespace core\navigation {
+    use core\context\course as context_course;
+    use core\context_helper;
+    use core_course_category;
+    use core\context\coursecat as context_coursecat;
+    use core\output\action_link;
+    use core\output\pix_icon;
+    use core\url;
+    use moodle_page;
     /**
-     * The almighty constructor
+     * Navbar class
      *
-     * @param moodle_page $page
+     * This class is used to manage the navbar, which is initialised from the navigation
+     * object held by PAGE
+     *
+     * @package   core
+     * @category  navigation
+     * @copyright 2009 Sam Hemelryk
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(moodle_page $page)
+    class navbar extends navigation_node
     {
+        /** @var bool A switch for whether the navbar is initialised or not */
+        protected $initialised = false;
+        /** @var mixed keys used to reference the nodes on the navbar */
+        protected $keys = [];
+        /** @var null|string content of the navbar */
+        protected $content = null;
+        /** @var moodle_page object the moodle page that this navbar belongs to */
+        protected $page;
+        /** @var bool A switch for whether to ignore the active navigation information */
+        protected $ignoreactive = false;
+        /** @var bool A switch to let us know if we are in the middle of an install */
+        protected $duringinstall = false;
+        /** @var bool A switch for whether the navbar has items */
+        protected $hasitems = false;
+        /** @var array An array of navigation nodes for the navbar */
+        protected $items;
+        /** @var array An array of child node objects */
+        public $children = [];
+        /** @var bool A switch for whether we want to include the root node in the navbar */
+        public $includesettingsbase = false;
+        /** @var breadcrumb_navigation_node[] $prependchildren */
+        protected $prependchildren = [];
+        /**
+         * The almighty constructor
+         *
+         * @param moodle_page $page
+         */
+        public function __construct(moodle_page $page)
+        {
+        }
+        /**
+         * Quick check to see if the navbar will have items in.
+         *
+         * @return bool Returns true if the navbar will have items, false otherwise
+         */
+        public function has_items()
+        {
+        }
+        /**
+         * Turn on/off ignore active
+         *
+         * @param bool $setting
+         */
+        public function ignore_active($setting = true)
+        {
+        }
+        /**
+         * Gets a navigation node
+         *
+         * @param string|int $key for referencing the navbar nodes
+         * @param int $type breadcrumb_navigation_node::TYPE_*
+         * @return breadcrumb_navigation_node|bool
+         */
+        public function get($key, $type = null)
+        {
+        }
+        /**
+         * Returns an array of breadcrumb_navigation_nodes that make up the navbar.
+         *
+         * @return array
+         */
+        public function get_items()
+        {
+        }
+        /**
+         * Get the list of categories leading to this course.
+         *
+         * This function is used by {@link navbar::get_items()} to add back the "courses"
+         * node and category chain leading to the current course.  Note that this is only ever
+         * called for the current course, so we don't need to bother taking in any parameters.
+         *
+         * @return array
+         */
+        private function get_course_categories()
+        {
+        }
+        /**
+         * Add a new breadcrumb_navigation_node to the navbar, overrides parent::add
+         *
+         * This function overrides {@link breadcrumb_navigation_node::add()} so that we can change
+         * the way nodes get added to allow us to simply call add and have the node added to the
+         * end of the navbar
+         *
+         * @param string $text
+         * @param string|url|action_link $action An action to associate with this node.
+         * @param int $type One of navigation_node::TYPE_*
+         * @param string $shorttext
+         * @param string|int $key A key to identify this node with. Key + type is unique to a parent.
+         * @param pix_icon $icon An optional icon to use for this node.
+         * @return navigation_node
+         */
+        public function add($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
+        {
+        }
+        /**
+         * Prepends a new navigation_node to the start of the navbar
+         *
+         * @param string $text
+         * @param string|url|action_link $action An action to associate with this node.
+         * @param int $type One of navigation_node::TYPE_*
+         * @param string $shorttext
+         * @param string|int $key A key to identify this node with. Key + type is unique to a parent.
+         * @param pix_icon $icon An optional icon to use for this node.
+         * @return navigation_node
+         */
+        public function prepend($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Quick check to see if the navbar will have items in.
-     *
-     * @return bool Returns true if the navbar will have items, false otherwise
+     * Runtime class alias of \core\navigation\navbar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function has_items()
-    {
-    }
-    /**
-     * Turn on/off ignore active
-     *
-     * @param bool $setting
-     */
-    public function ignore_active($setting = true)
-    {
-    }
-    /**
-     * Gets a navigation node
-     *
-     * @param string|int $key for referencing the navbar nodes
-     * @param int $type breadcrumb_navigation_node::TYPE_*
-     * @return breadcrumb_navigation_node|bool
-     */
-    public function get($key, $type = null)
-    {
-    }
-    /**
-     * Returns an array of breadcrumb_navigation_nodes that make up the navbar.
-     *
-     * @return array
-     */
-    public function get_items()
-    {
-    }
-    /**
-     * Get the list of categories leading to this course.
-     *
-     * This function is used by {@link navbar::get_items()} to add back the "courses"
-     * node and category chain leading to the current course.  Note that this is only ever
-     * called for the current course, so we don't need to bother taking in any parameters.
-     *
-     * @return array
-     */
-    private function get_course_categories()
-    {
-    }
-    /**
-     * Add a new breadcrumb_navigation_node to the navbar, overrides parent::add
-     *
-     * This function overrides {@link breadcrumb_navigation_node::add()} so that we can change
-     * the way nodes get added to allow us to simply call add and have the node added to the
-     * end of the navbar
-     *
-     * @param string $text
-     * @param string|url|action_link $action An action to associate with this node.
-     * @param int $type One of navigation_node::TYPE_*
-     * @param string $shorttext
-     * @param string|int $key A key to identify this node with. Key + type is unique to a parent.
-     * @param pix_icon $icon An optional icon to use for this node.
-     * @return navigation_node
-     */
-    public function add($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
-    {
-    }
-    /**
-     * Prepends a new navigation_node to the start of the navbar
-     *
-     * @param string $text
-     * @param string|url|action_link $action An action to associate with this node.
-     * @param int $type One of navigation_node::TYPE_*
-     * @param string $shorttext
-     * @param string|int $key A key to identify this node with. Key + type is unique to a parent.
-     * @param pix_icon $icon An optional icon to use for this node.
-     * @return navigation_node
-     */
-    public function prepend($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
+    class navbar extends \core\navigation\navbar
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class UploadedMavenArtifact extends \Google\Model
-{
-    protected $fileHashesType = FileHashes::class;
-    protected $fileHashesDataType = '';
-    protected $pushTimingType = TimeSpan::class;
-    protected $pushTimingDataType = '';
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param FileHashes
-     */
-    public function setFileHashes(FileHashes $fileHashes)
+namespace Google\Service\CloudBuild {
+    class UploadedMavenArtifact extends \Google\Model
     {
+        protected $fileHashesType = FileHashes::class;
+        protected $fileHashesDataType = '';
+        protected $pushTimingType = TimeSpan::class;
+        protected $pushTimingDataType = '';
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param FileHashes
+         */
+        public function setFileHashes(FileHashes $fileHashes)
+        {
+        }
+        /**
+         * @return FileHashes
+         */
+        public function getFileHashes()
+        {
+        }
+        /**
+         * @param TimeSpan
+         */
+        public function setPushTiming(TimeSpan $pushTiming)
+        {
+        }
+        /**
+         * @return TimeSpan
+         */
+        public function getPushTiming()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileHashes
+     * Runtime class alias of \Google\Service\CloudBuild\UploadedMavenArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHashes()
-    {
-    }
-    /**
-     * @param TimeSpan
-     */
-    public function setPushTiming(TimeSpan $pushTiming)
-    {
-    }
-    /**
-     * @return TimeSpan
-     */
-    public function getPushTiming()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudBuild_UploadedMavenArtifact extends \Google\Service\CloudBuild\UploadedMavenArtifact
     {
     }
 }

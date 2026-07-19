@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ScoringConfig extends \Google\Model
-{
-    /**
-     * Whether to use freshness as a ranking signal. By default, freshness is used
-     * as a ranking signal. Note that this setting is not available in the Admin
-     * UI.
-     *
-     * @var bool
-     */
-    public $disableFreshness;
-    /**
-     * Whether to personalize the results. By default, personal signals will be
-     * used to boost results.
-     *
-     * @var bool
-     */
-    public $disablePersonalization;
-    /**
-     * Whether to use freshness as a ranking signal. By default, freshness is used
-     * as a ranking signal. Note that this setting is not available in the Admin
-     * UI.
-     *
-     * @param bool $disableFreshness
-     */
-    public function setDisableFreshness($disableFreshness)
+namespace Google\Service\CloudSearch {
+    class ScoringConfig extends \Google\Model
     {
+        /**
+         * Whether to use freshness as a ranking signal. By default, freshness is used
+         * as a ranking signal. Note that this setting is not available in the Admin
+         * UI.
+         *
+         * @var bool
+         */
+        public $disableFreshness;
+        /**
+         * Whether to personalize the results. By default, personal signals will be
+         * used to boost results.
+         *
+         * @var bool
+         */
+        public $disablePersonalization;
+        /**
+         * Whether to use freshness as a ranking signal. By default, freshness is used
+         * as a ranking signal. Note that this setting is not available in the Admin
+         * UI.
+         *
+         * @param bool $disableFreshness
+         */
+        public function setDisableFreshness($disableFreshness)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableFreshness()
+        {
+        }
+        /**
+         * Whether to personalize the results. By default, personal signals will be
+         * used to boost results.
+         *
+         * @param bool $disablePersonalization
+         */
+        public function setDisablePersonalization($disablePersonalization)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisablePersonalization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\ScoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableFreshness()
-    {
-    }
-    /**
-     * Whether to personalize the results. By default, personal signals will be
-     * used to boost results.
-     *
-     * @param bool $disablePersonalization
-     */
-    public function setDisablePersonalization($disablePersonalization)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisablePersonalization()
+    class Google_Service_CloudSearch_ScoringConfig extends \Google\Service\CloudSearch\ScoringConfig
     {
     }
 }

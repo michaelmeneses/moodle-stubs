@@ -29,6 +29,8 @@
  */
 namespace core_competency\external;
 
+use core_competency\competency;
+use core_competency\competency_framework;
 /**
  * Performance helper class.
  *

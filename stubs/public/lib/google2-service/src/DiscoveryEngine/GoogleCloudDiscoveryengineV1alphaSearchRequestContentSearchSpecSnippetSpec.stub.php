@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecSnippetSpec extends \Google\Model
-{
-    /**
-     * [DEPRECATED] This field is deprecated. To control snippet return, use
-     * `return_snippet` field. For backwards compatibility, we will return snippet
-     * if max_snippet_count > 0.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $maxSnippetCount;
-    /**
-     * [DEPRECATED] This field is deprecated and will have no affect on the
-     * snippet.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $referenceOnly;
-    /**
-     * If `true`, then return snippet. If no snippet can be generated, we return
-     * "No snippet is available for this page." A `snippet_status` with `SUCCESS`
-     * or `NO_SNIPPET_AVAILABLE` will also be returned.
-     *
-     * @var bool
-     */
-    public $returnSnippet;
-    /**
-     * [DEPRECATED] This field is deprecated. To control snippet return, use
-     * `return_snippet` field. For backwards compatibility, we will return snippet
-     * if max_snippet_count > 0.
-     *
-     * @deprecated
-     * @param int $maxSnippetCount
-     */
-    public function setMaxSnippetCount($maxSnippetCount)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecSnippetSpec extends \Google\Model
     {
+        /**
+         * [DEPRECATED] This field is deprecated. To control snippet return, use
+         * `return_snippet` field. For backwards compatibility, we will return snippet
+         * if max_snippet_count > 0.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $maxSnippetCount;
+        /**
+         * [DEPRECATED] This field is deprecated and will have no affect on the
+         * snippet.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $referenceOnly;
+        /**
+         * If `true`, then return snippet. If no snippet can be generated, we return
+         * "No snippet is available for this page." A `snippet_status` with `SUCCESS`
+         * or `NO_SNIPPET_AVAILABLE` will also be returned.
+         *
+         * @var bool
+         */
+        public $returnSnippet;
+        /**
+         * [DEPRECATED] This field is deprecated. To control snippet return, use
+         * `return_snippet` field. For backwards compatibility, we will return snippet
+         * if max_snippet_count > 0.
+         *
+         * @deprecated
+         * @param int $maxSnippetCount
+         */
+        public function setMaxSnippetCount($maxSnippetCount)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getMaxSnippetCount()
+        {
+        }
+        /**
+         * [DEPRECATED] This field is deprecated and will have no affect on the
+         * snippet.
+         *
+         * @deprecated
+         * @param bool $referenceOnly
+         */
+        public function setReferenceOnly($referenceOnly)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getReferenceOnly()
+        {
+        }
+        /**
+         * If `true`, then return snippet. If no snippet can be generated, we return
+         * "No snippet is available for this page." A `snippet_status` with `SUCCESS`
+         * or `NO_SNIPPET_AVAILABLE` will also be returned.
+         *
+         * @param bool $returnSnippet
+         */
+        public function setReturnSnippet($returnSnippet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecSnippetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxSnippetCount()
-    {
-    }
-    /**
-     * [DEPRECATED] This field is deprecated and will have no affect on the
-     * snippet.
-     *
-     * @deprecated
-     * @param bool $referenceOnly
-     */
-    public function setReferenceOnly($referenceOnly)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getReferenceOnly()
-    {
-    }
-    /**
-     * If `true`, then return snippet. If no snippet can be generated, we return
-     * "No snippet is available for this page." A `snippet_status` with `SUCCESS`
-     * or `NO_SNIPPET_AVAILABLE` will also be returned.
-     *
-     * @param bool $returnSnippet
-     */
-    public function setReturnSnippet($returnSnippet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnSnippet()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecSnippetSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecSnippetSpec
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPersonalizedDocsCardProto extends \Google\Collection
-{
-    protected $collection_key = 'documentGroup';
-    protected $documentGroupType = EnterpriseTopazSidekickDocumentGroup::class;
-    protected $documentGroupDataType = 'array';
-    /**
-     * Document group.
-     *
-     * @param EnterpriseTopazSidekickDocumentGroup[] $documentGroup
-     */
-    public function setDocumentGroup($documentGroup)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPersonalizedDocsCardProto extends \Google\Collection
     {
+        protected $collection_key = 'documentGroup';
+        protected $documentGroupType = EnterpriseTopazSidekickDocumentGroup::class;
+        protected $documentGroupDataType = 'array';
+        /**
+         * Document group.
+         *
+         * @param EnterpriseTopazSidekickDocumentGroup[] $documentGroup
+         */
+        public function setDocumentGroup($documentGroup)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickDocumentGroup[]
+         */
+        public function getDocumentGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickDocumentGroup[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPersonalizedDocsCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentGroup()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPersonalizedDocsCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPersonalizedDocsCardProto
     {
     }
 }

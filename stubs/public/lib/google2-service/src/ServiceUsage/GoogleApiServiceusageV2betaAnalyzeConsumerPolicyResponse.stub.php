@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV2betaAnalyzeConsumerPolicyResponse extends \Google\Collection
-{
-    protected $collection_key = 'analysis';
-    protected $analysisType = GoogleApiServiceusageV2betaAnalysis::class;
-    protected $analysisDataType = 'array';
-    /**
-     * The list of analyses returned from performing the intended policy update
-     * analysis. The analysis is grouped by service name and different analysis
-     * types. The empty analysis list means that the consumer policy can be
-     * updated without any warnings or blockers.
-     *
-     * @param GoogleApiServiceusageV2betaAnalysis[] $analysis
-     */
-    public function setAnalysis($analysis)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV2betaAnalyzeConsumerPolicyResponse extends \Google\Collection
     {
+        protected $collection_key = 'analysis';
+        protected $analysisType = GoogleApiServiceusageV2betaAnalysis::class;
+        protected $analysisDataType = 'array';
+        /**
+         * The list of analyses returned from performing the intended policy update
+         * analysis. The analysis is grouped by service name and different analysis
+         * types. The empty analysis list means that the consumer policy can be
+         * updated without any warnings or blockers.
+         *
+         * @param GoogleApiServiceusageV2betaAnalysis[] $analysis
+         */
+        public function setAnalysis($analysis)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV2betaAnalysis[]
+         */
+        public function getAnalysis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiServiceusageV2betaAnalysis[]
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaAnalyzeConsumerPolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysis()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV2betaAnalyzeConsumerPolicyResponse extends \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaAnalyzeConsumerPolicyResponse
     {
     }
 }

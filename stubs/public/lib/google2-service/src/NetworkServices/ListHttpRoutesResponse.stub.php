@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ListHttpRoutesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $httpRoutesType = HttpRoute::class;
-    protected $httpRoutesDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources. Populated when the request opts into
-     * return_partial_success and reading across collections e.g. when attempting
-     * to list all resources across all supported locations.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of HttpRoute resources.
-     *
-     * @param HttpRoute[] $httpRoutes
-     */
-    public function setHttpRoutes($httpRoutes)
+namespace Google\Service\NetworkServices {
+    class ListHttpRoutesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $httpRoutesType = HttpRoute::class;
+        protected $httpRoutesDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources. Populated when the request opts into
+         * return_partial_success and reading across collections e.g. when attempting
+         * to list all resources across all supported locations.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of HttpRoute resources.
+         *
+         * @param HttpRoute[] $httpRoutes
+         */
+        public function setHttpRoutes($httpRoutes)
+        {
+        }
+        /**
+         * @return HttpRoute[]
+         */
+        public function getHttpRoutes()
+        {
+        }
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources. Populated when the request opts into
+         * return_partial_success and reading across collections e.g. when attempting
+         * to list all resources across all supported locations.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpRoute[]
+     * Runtime class alias of \Google\Service\NetworkServices\ListHttpRoutesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpRoutes()
-    {
-    }
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources. Populated when the request opts into
-     * return_partial_success and reading across collections e.g. when attempting
-     * to list all resources across all supported locations.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkServices_ListHttpRoutesResponse extends \Google\Service\NetworkServices\ListHttpRoutesResponse
     {
     }
 }

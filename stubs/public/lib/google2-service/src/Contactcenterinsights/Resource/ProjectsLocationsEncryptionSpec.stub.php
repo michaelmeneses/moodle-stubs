@@ -21,35 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "encryptionSpec" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $encryptionSpec = $contactcenterinsightsService->projects_locations_encryptionSpec;
- *  </code>
- */
-class ProjectsLocationsEncryptionSpec extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
     /**
-     * Initializes a location-level encryption key specification. An error will
-     * result if the location has resources already created before the
-     * initialization. After the encryption specification is initialized at a
-     * location, it is immutable and all newly created resources under the location
-     * will be encrypted with the existing specification.
-     * (encryptionSpec.initialize)
-     *
-     * @param string $name Immutable. The resource name of the encryption key
-     * specification resource. Format:
-     * projects/{project}/locations/{location}/encryptionSpec
-     * @param GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "encryptionSpec" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $encryptionSpec = $contactcenterinsightsService->projects_locations_encryptionSpec;
+     *  </code>
      */
-    public function initialize($name, GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest $postBody, $optParams = [])
+    class ProjectsLocationsEncryptionSpec extends \Google\Service\Resource
+    {
+        /**
+         * Initializes a location-level encryption key specification. An error will
+         * result if the location has resources already created before the
+         * initialization. After the encryption specification is initialized at a
+         * location, it is immutable and all newly created resources under the location
+         * will be encrypted with the existing specification.
+         * (encryptionSpec.initialize)
+         *
+         * @param string $name Immutable. The resource name of the encryption key
+         * specification resource. Format:
+         * projects/{project}/locations/{location}/encryptionSpec
+         * @param GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function initialize($name, GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsEncryptionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsEncryptionSpec extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsEncryptionSpec
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapInstanceProperties extends \Google\Collection
-{
-    protected $collection_key = 'numbers';
-    protected $agentStatesType = AgentStates::class;
-    protected $agentStatesDataType = '';
-    /**
-     * Optional. SAP Instance numbers. They are from '00' to '99'.
-     *
-     * @var string[]
-     */
-    public $numbers;
-    /**
-     * Optional. Sap Instance Agent status.
-     *
-     * @param AgentStates $agentStates
-     */
-    public function setAgentStates(AgentStates $agentStates)
+namespace Google\Service\WorkloadManager {
+    class SapInstanceProperties extends \Google\Collection
     {
+        protected $collection_key = 'numbers';
+        protected $agentStatesType = AgentStates::class;
+        protected $agentStatesDataType = '';
+        /**
+         * Optional. SAP Instance numbers. They are from '00' to '99'.
+         *
+         * @var string[]
+         */
+        public $numbers;
+        /**
+         * Optional. Sap Instance Agent status.
+         *
+         * @param AgentStates $agentStates
+         */
+        public function setAgentStates(AgentStates $agentStates)
+        {
+        }
+        /**
+         * @return AgentStates
+         */
+        public function getAgentStates()
+        {
+        }
+        /**
+         * Optional. SAP Instance numbers. They are from '00' to '99'.
+         *
+         * @param string[] $numbers
+         */
+        public function setNumbers($numbers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNumbers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentStates
+     * Runtime class alias of \Google\Service\WorkloadManager\SapInstanceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentStates()
-    {
-    }
-    /**
-     * Optional. SAP Instance numbers. They are from '00' to '99'.
-     *
-     * @param string[] $numbers
-     */
-    public function setNumbers($numbers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNumbers()
+    class Google_Service_WorkloadManager_SapInstanceProperties extends \Google\Service\WorkloadManager\SapInstanceProperties
     {
     }
 }

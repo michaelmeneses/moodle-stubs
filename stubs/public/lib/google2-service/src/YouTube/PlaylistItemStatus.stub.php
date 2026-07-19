@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistItemStatus extends \Google\Model
-{
-    public const PRIVACY_STATUS_public = 'public';
-    public const PRIVACY_STATUS_unlisted = 'unlisted';
-    public const PRIVACY_STATUS_private = 'private';
-    /**
-     * This resource's privacy status.
-     *
-     * @var string
-     */
-    public $privacyStatus;
-    /**
-     * This resource's privacy status.
-     *
-     * Accepted values: public, unlisted, private
-     *
-     * @param self::PRIVACY_STATUS_* $privacyStatus
-     */
-    public function setPrivacyStatus($privacyStatus)
+namespace Google\Service\YouTube {
+    class PlaylistItemStatus extends \Google\Model
     {
+        public const PRIVACY_STATUS_public = 'public';
+        public const PRIVACY_STATUS_unlisted = 'unlisted';
+        public const PRIVACY_STATUS_private = 'private';
+        /**
+         * This resource's privacy status.
+         *
+         * @var string
+         */
+        public $privacyStatus;
+        /**
+         * This resource's privacy status.
+         *
+         * Accepted values: public, unlisted, private
+         *
+         * @param self::PRIVACY_STATUS_* $privacyStatus
+         */
+        public function setPrivacyStatus($privacyStatus)
+        {
+        }
+        /**
+         * @return self::PRIVACY_STATUS_*
+         */
+        public function getPrivacyStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PRIVACY_STATUS_*
+     * Runtime class alias of \Google\Service\YouTube\PlaylistItemStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivacyStatus()
+    class Google_Service_YouTube_PlaylistItemStatus extends \Google\Service\YouTube\PlaylistItemStatus
     {
     }
 }

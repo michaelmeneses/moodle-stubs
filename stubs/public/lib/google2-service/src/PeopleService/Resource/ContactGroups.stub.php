@@ -21,134 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService\Resource;
-
-/**
- * The "contactGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $peopleService = new Google\Service\PeopleService(...);
- *   $contactGroups = $peopleService->contactGroups;
- *  </code>
- */
-class ContactGroups extends \Google\Service\Resource
-{
+namespace Google\Service\PeopleService\Resource {
+    use Google\Service\PeopleService\BatchGetContactGroupsResponse;
+    use Google\Service\PeopleService\ContactGroup;
+    use Google\Service\PeopleService\CreateContactGroupRequest;
+    use Google\Service\PeopleService\ListContactGroupsResponse;
+    use Google\Service\PeopleService\PeopleEmpty;
+    use Google\Service\PeopleService\UpdateContactGroupRequest;
     /**
-     * Get a list of contact groups owned by the authenticated user by specifying a
-     * list of contact group resource names. (contactGroups.batchGet)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string groupFields Optional. A field mask to restrict which fields
-     * on the group are returned. Defaults to `metadata`, `groupType`,
-     * `memberCount`, and `name` if not set or set to empty. Valid fields are: *
-     * clientData * groupType * memberCount * metadata * name
-     * @opt_param int maxMembers Optional. Specifies the maximum number of members
-     * to return for each group. Defaults to 0 if not set, which will return zero
-     * members.
-     * @opt_param string resourceNames Required. The resource names of the contact
-     * groups to get. There is a maximum of 200 resource names.
-     * @return BatchGetContactGroupsResponse
-     * @throws \Google\Service\Exception
+     * The "contactGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $peopleService = new Google\Service\PeopleService(...);
+     *   $contactGroups = $peopleService->contactGroups;
+     *  </code>
      */
-    public function batchGet($optParams = [])
+    class ContactGroups extends \Google\Service\Resource
     {
+        /**
+         * Get a list of contact groups owned by the authenticated user by specifying a
+         * list of contact group resource names. (contactGroups.batchGet)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string groupFields Optional. A field mask to restrict which fields
+         * on the group are returned. Defaults to `metadata`, `groupType`,
+         * `memberCount`, and `name` if not set or set to empty. Valid fields are: *
+         * clientData * groupType * memberCount * metadata * name
+         * @opt_param int maxMembers Optional. Specifies the maximum number of members
+         * to return for each group. Defaults to 0 if not set, which will return zero
+         * members.
+         * @opt_param string resourceNames Required. The resource names of the contact
+         * groups to get. There is a maximum of 200 resource names.
+         * @return BatchGetContactGroupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet($optParams = [])
+        {
+        }
+        /**
+         * Create a new contact group owned by the authenticated user. Created contact
+         * group names must be unique to the users contact groups. Attempting to create
+         * a group with a duplicate name will return a HTTP 409 error. Mutate requests
+         * for the same user should be sent sequentially to avoid increased latency and
+         * failures. (contactGroups.create)
+         *
+         * @param CreateContactGroupRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ContactGroup
+         * @throws \Google\Service\Exception
+         */
+        public function create(CreateContactGroupRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete an existing contact group owned by the authenticated user by
+         * specifying a contact group resource name. Mutate requests for the same user
+         * should be sent sequentially to avoid increased latency and failures.
+         * (contactGroups.delete)
+         *
+         * @param string $resourceName Required. The resource name of the contact group
+         * to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleteContacts Optional. Set to true to also delete the
+         * contacts in the specified group.
+         * @return PeopleEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($resourceName, $optParams = [])
+        {
+        }
+        /**
+         * Get a specific contact group owned by the authenticated user by specifying a
+         * contact group resource name. (contactGroups.get)
+         *
+         * @param string $resourceName Required. The resource name of the contact group
+         * to get.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string groupFields Optional. A field mask to restrict which fields
+         * on the group are returned. Defaults to `metadata`, `groupType`,
+         * `memberCount`, and `name` if not set or set to empty. Valid fields are: *
+         * clientData * groupType * memberCount * metadata * name
+         * @opt_param int maxMembers Optional. Specifies the maximum number of members
+         * to return. Defaults to 0 if not set, which will return zero members.
+         * @return ContactGroup
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceName, $optParams = [])
+        {
+        }
+        /**
+         * List all contact groups owned by the authenticated user. Members of the
+         * contact groups are not populated. (contactGroups.listContactGroups)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string groupFields Optional. A field mask to restrict which fields
+         * on the group are returned. Defaults to `metadata`, `groupType`,
+         * `memberCount`, and `name` if not set or set to empty. Valid fields are: *
+         * clientData * groupType * memberCount * metadata * name
+         * @opt_param int pageSize Optional. The maximum number of resources to return.
+         * Valid values are between 1 and 1000, inclusive. Defaults to 30 if not set or
+         * set to 0.
+         * @opt_param string pageToken Optional. The next_page_token value returned from
+         * a previous call to
+         * [ListContactGroups](/people/api/rest/v1/contactgroups/list). Requests the
+         * next page of resources.
+         * @opt_param string syncToken Optional. A sync token, returned by a previous
+         * call to `contactgroups.list`. Only resources changed since the sync token was
+         * created will be returned.
+         * @return ListContactGroupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listContactGroups($optParams = [])
+        {
+        }
+        /**
+         * Update the name of an existing contact group owned by the authenticated user.
+         * Updated contact group names must be unique to the users contact groups.
+         * Attempting to create a group with a duplicate name will return a HTTP 409
+         * error. Mutate requests for the same user should be sent sequentially to avoid
+         * increased latency and failures. (contactGroups.update)
+         *
+         * @param string $resourceName The resource name for the contact group, assigned
+         * by the server. An ASCII string, in the form of
+         * `contactGroups/{contact_group_id}`.
+         * @param UpdateContactGroupRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ContactGroup
+         * @throws \Google\Service\Exception
+         */
+        public function update($resourceName, UpdateContactGroupRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Create a new contact group owned by the authenticated user. Created contact
-     * group names must be unique to the users contact groups. Attempting to create
-     * a group with a duplicate name will return a HTTP 409 error. Mutate requests
-     * for the same user should be sent sequentially to avoid increased latency and
-     * failures. (contactGroups.create)
-     *
-     * @param CreateContactGroupRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ContactGroup
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\PeopleService\Resource\ContactGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create(CreateContactGroupRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Delete an existing contact group owned by the authenticated user by
-     * specifying a contact group resource name. Mutate requests for the same user
-     * should be sent sequentially to avoid increased latency and failures.
-     * (contactGroups.delete)
-     *
-     * @param string $resourceName Required. The resource name of the contact group
-     * to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleteContacts Optional. Set to true to also delete the
-     * contacts in the specified group.
-     * @return PeopleEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($resourceName, $optParams = [])
-    {
-    }
-    /**
-     * Get a specific contact group owned by the authenticated user by specifying a
-     * contact group resource name. (contactGroups.get)
-     *
-     * @param string $resourceName Required. The resource name of the contact group
-     * to get.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string groupFields Optional. A field mask to restrict which fields
-     * on the group are returned. Defaults to `metadata`, `groupType`,
-     * `memberCount`, and `name` if not set or set to empty. Valid fields are: *
-     * clientData * groupType * memberCount * metadata * name
-     * @opt_param int maxMembers Optional. Specifies the maximum number of members
-     * to return. Defaults to 0 if not set, which will return zero members.
-     * @return ContactGroup
-     * @throws \Google\Service\Exception
-     */
-    public function get($resourceName, $optParams = [])
-    {
-    }
-    /**
-     * List all contact groups owned by the authenticated user. Members of the
-     * contact groups are not populated. (contactGroups.listContactGroups)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string groupFields Optional. A field mask to restrict which fields
-     * on the group are returned. Defaults to `metadata`, `groupType`,
-     * `memberCount`, and `name` if not set or set to empty. Valid fields are: *
-     * clientData * groupType * memberCount * metadata * name
-     * @opt_param int pageSize Optional. The maximum number of resources to return.
-     * Valid values are between 1 and 1000, inclusive. Defaults to 30 if not set or
-     * set to 0.
-     * @opt_param string pageToken Optional. The next_page_token value returned from
-     * a previous call to
-     * [ListContactGroups](/people/api/rest/v1/contactgroups/list). Requests the
-     * next page of resources.
-     * @opt_param string syncToken Optional. A sync token, returned by a previous
-     * call to `contactgroups.list`. Only resources changed since the sync token was
-     * created will be returned.
-     * @return ListContactGroupsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listContactGroups($optParams = [])
-    {
-    }
-    /**
-     * Update the name of an existing contact group owned by the authenticated user.
-     * Updated contact group names must be unique to the users contact groups.
-     * Attempting to create a group with a duplicate name will return a HTTP 409
-     * error. Mutate requests for the same user should be sent sequentially to avoid
-     * increased latency and failures. (contactGroups.update)
-     *
-     * @param string $resourceName The resource name for the contact group, assigned
-     * by the server. An ASCII string, in the form of
-     * `contactGroups/{contact_group_id}`.
-     * @param UpdateContactGroupRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ContactGroup
-     * @throws \Google\Service\Exception
-     */
-    public function update($resourceName, UpdateContactGroupRequest $postBody, $optParams = [])
+    class Google_Service_PeopleService_Resource_ContactGroups extends \Google\Service\PeopleService\Resource\ContactGroups
     {
     }
 }

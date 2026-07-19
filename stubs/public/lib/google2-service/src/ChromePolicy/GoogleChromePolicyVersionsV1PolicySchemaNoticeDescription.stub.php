@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicySchemaNoticeDescription extends \Google\Model
-{
-    /**
-     * Output only. Whether the user needs to acknowledge the notice message
-     * before the value can be set.
-     *
-     * @var bool
-     */
-    public $acknowledgementRequired;
-    /**
-     * Output only. The field name associated with the notice.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * Output only. The notice message associate with the value of the field.
-     *
-     * @var string
-     */
-    public $noticeMessage;
-    /**
-     * Output only. The value of the field that has a notice. When setting the
-     * field to this value, the user may be required to acknowledge the notice
-     * message in order for the value to be set.
-     *
-     * @var string
-     */
-    public $noticeValue;
-    /**
-     * Output only. Whether the user needs to acknowledge the notice message
-     * before the value can be set.
-     *
-     * @param bool $acknowledgementRequired
-     */
-    public function setAcknowledgementRequired($acknowledgementRequired)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicySchemaNoticeDescription extends \Google\Model
     {
+        /**
+         * Output only. Whether the user needs to acknowledge the notice message
+         * before the value can be set.
+         *
+         * @var bool
+         */
+        public $acknowledgementRequired;
+        /**
+         * Output only. The field name associated with the notice.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * Output only. The notice message associate with the value of the field.
+         *
+         * @var string
+         */
+        public $noticeMessage;
+        /**
+         * Output only. The value of the field that has a notice. When setting the
+         * field to this value, the user may be required to acknowledge the notice
+         * message in order for the value to be set.
+         *
+         * @var string
+         */
+        public $noticeValue;
+        /**
+         * Output only. Whether the user needs to acknowledge the notice message
+         * before the value can be set.
+         *
+         * @param bool $acknowledgementRequired
+         */
+        public function setAcknowledgementRequired($acknowledgementRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcknowledgementRequired()
+        {
+        }
+        /**
+         * Output only. The field name associated with the notice.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Output only. The notice message associate with the value of the field.
+         *
+         * @param string $noticeMessage
+         */
+        public function setNoticeMessage($noticeMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoticeMessage()
+        {
+        }
+        /**
+         * Output only. The value of the field that has a notice. When setting the
+         * field to this value, the user may be required to acknowledge the notice
+         * message in order for the value to be set.
+         *
+         * @param string $noticeValue
+         */
+        public function setNoticeValue($noticeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoticeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchemaNoticeDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgementRequired()
-    {
-    }
-    /**
-     * Output only. The field name associated with the notice.
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * Output only. The notice message associate with the value of the field.
-     *
-     * @param string $noticeMessage
-     */
-    public function setNoticeMessage($noticeMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoticeMessage()
-    {
-    }
-    /**
-     * Output only. The value of the field that has a notice. When setting the
-     * field to this value, the user may be required to acknowledge the notice
-     * message in order for the value to be set.
-     *
-     * @param string $noticeValue
-     */
-    public function setNoticeValue($noticeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoticeValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicySchemaNoticeDescription extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchemaNoticeDescription
     {
     }
 }

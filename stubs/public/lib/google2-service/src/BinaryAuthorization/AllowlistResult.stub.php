@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class AllowlistResult extends \Google\Model
-{
-    /**
-     * The allowlist pattern that the image matched.
-     *
-     * @var string
-     */
-    public $matchedPattern;
-    /**
-     * The allowlist pattern that the image matched.
-     *
-     * @param string $matchedPattern
-     */
-    public function setMatchedPattern($matchedPattern)
+namespace Google\Service\BinaryAuthorization {
+    class AllowlistResult extends \Google\Model
     {
+        /**
+         * The allowlist pattern that the image matched.
+         *
+         * @var string
+         */
+        public $matchedPattern;
+        /**
+         * The allowlist pattern that the image matched.
+         *
+         * @param string $matchedPattern
+         */
+        public function setMatchedPattern($matchedPattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchedPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\AllowlistResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchedPattern()
+    class Google_Service_BinaryAuthorization_AllowlistResult extends \Google\Service\BinaryAuthorization\AllowlistResult
     {
     }
 }

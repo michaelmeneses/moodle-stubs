@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class CustomMetricParentLink extends \Google\Model
-{
-    /**
-     * Link to the property to which the custom metric belongs.
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Type of the parent link. Set to "analytics#webproperty".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Link to the property to which the custom metric belongs.
-     *
-     * @param string $href
-     */
-    public function setHref($href)
+namespace Google\Service\Analytics {
+    class CustomMetricParentLink extends \Google\Model
     {
+        /**
+         * Link to the property to which the custom metric belongs.
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Type of the parent link. Set to "analytics#webproperty".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Link to the property to which the custom metric belongs.
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Type of the parent link. Set to "analytics#webproperty".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\CustomMetricParentLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * Type of the parent link. Set to "analytics#webproperty".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_CustomMetricParentLink extends \Google\Service\Analytics\CustomMetricParentLink
     {
     }
 }

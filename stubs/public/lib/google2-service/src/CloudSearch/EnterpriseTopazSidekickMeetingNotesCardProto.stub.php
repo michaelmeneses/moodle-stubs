@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickMeetingNotesCardProto extends \Google\Model
-{
-    protected $eventType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $eventDataType = '';
-    /**
-     * Google Drive ID (a.k.a. resource ID) of the file.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * Title we want to show for meeting notes in the answer card
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * New URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The event to request meeting notes creation.
-     *
-     * @param EnterpriseTopazSidekickAgendaEntry $event
-     */
-    public function setEvent(EnterpriseTopazSidekickAgendaEntry $event)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickMeetingNotesCardProto extends \Google\Model
     {
+        protected $eventType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $eventDataType = '';
+        /**
+         * Google Drive ID (a.k.a. resource ID) of the file.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * Title we want to show for meeting notes in the answer card
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * New URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The event to request meeting notes creation.
+         *
+         * @param EnterpriseTopazSidekickAgendaEntry $event
+         */
+        public function setEvent(EnterpriseTopazSidekickAgendaEntry $event)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * Google Drive ID (a.k.a. resource ID) of the file.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * Title we want to show for meeting notes in the answer card
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * New URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickAgendaEntry
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickMeetingNotesCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvent()
-    {
-    }
-    /**
-     * Google Drive ID (a.k.a. resource ID) of the file.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileId()
-    {
-    }
-    /**
-     * Title we want to show for meeting notes in the answer card
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * New URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickMeetingNotesCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickMeetingNotesCardProto
     {
     }
 }

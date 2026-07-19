@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class AndroidRoboTest extends \Google\Model
-{
-    /**
-     * The initial activity that should be used to start the app. Optional
-     *
-     * @var string
-     */
-    public $appInitialActivity;
-    /**
-     * The java package for the bootstrap. Optional
-     *
-     * @var string
-     */
-    public $bootstrapPackageId;
-    /**
-     * The runner class for the bootstrap. Optional
-     *
-     * @var string
-     */
-    public $bootstrapRunnerClass;
-    /**
-     * The max depth of the traversal stack Robo can explore. Optional
-     *
-     * @var int
-     */
-    public $maxDepth;
-    /**
-     * The max number of steps/actions Robo can execute. Default is no limit (0).
-     * Optional
-     *
-     * @var int
-     */
-    public $maxSteps;
-    /**
-     * The initial activity that should be used to start the app. Optional
-     *
-     * @param string $appInitialActivity
-     */
-    public function setAppInitialActivity($appInitialActivity)
+namespace Google\Service\ToolResults {
+    class AndroidRoboTest extends \Google\Model
     {
+        /**
+         * The initial activity that should be used to start the app. Optional
+         *
+         * @var string
+         */
+        public $appInitialActivity;
+        /**
+         * The java package for the bootstrap. Optional
+         *
+         * @var string
+         */
+        public $bootstrapPackageId;
+        /**
+         * The runner class for the bootstrap. Optional
+         *
+         * @var string
+         */
+        public $bootstrapRunnerClass;
+        /**
+         * The max depth of the traversal stack Robo can explore. Optional
+         *
+         * @var int
+         */
+        public $maxDepth;
+        /**
+         * The max number of steps/actions Robo can execute. Default is no limit (0).
+         * Optional
+         *
+         * @var int
+         */
+        public $maxSteps;
+        /**
+         * The initial activity that should be used to start the app. Optional
+         *
+         * @param string $appInitialActivity
+         */
+        public function setAppInitialActivity($appInitialActivity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppInitialActivity()
+        {
+        }
+        /**
+         * The java package for the bootstrap. Optional
+         *
+         * @param string $bootstrapPackageId
+         */
+        public function setBootstrapPackageId($bootstrapPackageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBootstrapPackageId()
+        {
+        }
+        /**
+         * The runner class for the bootstrap. Optional
+         *
+         * @param string $bootstrapRunnerClass
+         */
+        public function setBootstrapRunnerClass($bootstrapRunnerClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBootstrapRunnerClass()
+        {
+        }
+        /**
+         * The max depth of the traversal stack Robo can explore. Optional
+         *
+         * @param int $maxDepth
+         */
+        public function setMaxDepth($maxDepth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDepth()
+        {
+        }
+        /**
+         * The max number of steps/actions Robo can execute. Default is no limit (0).
+         * Optional
+         *
+         * @param int $maxSteps
+         */
+        public function setMaxSteps($maxSteps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\AndroidRoboTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppInitialActivity()
-    {
-    }
-    /**
-     * The java package for the bootstrap. Optional
-     *
-     * @param string $bootstrapPackageId
-     */
-    public function setBootstrapPackageId($bootstrapPackageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBootstrapPackageId()
-    {
-    }
-    /**
-     * The runner class for the bootstrap. Optional
-     *
-     * @param string $bootstrapRunnerClass
-     */
-    public function setBootstrapRunnerClass($bootstrapRunnerClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBootstrapRunnerClass()
-    {
-    }
-    /**
-     * The max depth of the traversal stack Robo can explore. Optional
-     *
-     * @param int $maxDepth
-     */
-    public function setMaxDepth($maxDepth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDepth()
-    {
-    }
-    /**
-     * The max number of steps/actions Robo can execute. Default is no limit (0).
-     * Optional
-     *
-     * @param int $maxSteps
-     */
-    public function setMaxSteps($maxSteps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxSteps()
+    class Google_Service_ToolResults_AndroidRoboTest extends \Google\Service\ToolResults\AndroidRoboTest
     {
     }
 }

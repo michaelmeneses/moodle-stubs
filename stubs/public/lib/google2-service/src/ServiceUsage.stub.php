@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ServiceUsage (v1).
- *
- * <p>
- * Enables services that service consumers want to use on Google Cloud Platform,
- * lists the available or enabled services, or disables services that service
- * consumers no longer use.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/service-usage/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ServiceUsage extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    /** Manage your Google API service configuration. */
-    const SERVICE_MANAGEMENT = "https://www.googleapis.com/auth/service.management";
-    public $operations;
-    public $services;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ServiceUsage service.
+     * Service definition for ServiceUsage (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Enables services that service consumers want to use on Google Cloud Platform,
+     * lists the available or enabled services, or disables services that service
+     * consumers no longer use.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/service-usage/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ServiceUsage extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        /** Manage your Google API service configuration. */
+        const SERVICE_MANAGEMENT = "https://www.googleapis.com/auth/service.management";
+        public $operations;
+        public $services;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ServiceUsage service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceUsage extends \Google\Service\ServiceUsage
     {
     }
 }

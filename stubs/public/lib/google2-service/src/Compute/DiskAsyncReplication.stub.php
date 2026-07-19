@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DiskAsyncReplication extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] URL of the DiskConsistencyGroupPolicy if
-     * replication was started on the disk as a member of a group.
-     *
-     * @var string
-     */
-    public $consistencyGroupPolicy;
-    /**
-     * Output only. [Output Only] ID of the DiskConsistencyGroupPolicy if
-     * replication was started on the disk as a member of a group.
-     *
-     * @var string
-     */
-    public $consistencyGroupPolicyId;
-    /**
-     * The other disk asynchronously replicated to or from the current disk. You
-     * can provide this as a partial or full URL to the resource. For example, the
-     * following are valid values:              - https://www.googleapis.com/compu
-     * te/v1/projects/project/zones/zone/disks/disk     -
-     * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
-     *
-     * @var string
-     */
-    public $disk;
-    /**
-     * Output only. [Output Only] The unique ID of the other disk asynchronously
-     * replicated to or from the current disk. This value identifies the exact
-     * disk that was used to create this replication. For example, if you started
-     * replicating the persistent disk from a disk that was later deleted and
-     * recreated under the same name, the disk ID would identify the exact version
-     * of the disk that was used.
-     *
-     * @var string
-     */
-    public $diskId;
-    /**
-     * Output only. [Output Only] URL of the DiskConsistencyGroupPolicy if
-     * replication was started on the disk as a member of a group.
-     *
-     * @param string $consistencyGroupPolicy
-     */
-    public function setConsistencyGroupPolicy($consistencyGroupPolicy)
+namespace Google\Service\Compute {
+    class DiskAsyncReplication extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] URL of the DiskConsistencyGroupPolicy if
+         * replication was started on the disk as a member of a group.
+         *
+         * @var string
+         */
+        public $consistencyGroupPolicy;
+        /**
+         * Output only. [Output Only] ID of the DiskConsistencyGroupPolicy if
+         * replication was started on the disk as a member of a group.
+         *
+         * @var string
+         */
+        public $consistencyGroupPolicyId;
+        /**
+         * The other disk asynchronously replicated to or from the current disk. You
+         * can provide this as a partial or full URL to the resource. For example, the
+         * following are valid values:              - https://www.googleapis.com/compu
+         * te/v1/projects/project/zones/zone/disks/disk     -
+         * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
+         *
+         * @var string
+         */
+        public $disk;
+        /**
+         * Output only. [Output Only] The unique ID of the other disk asynchronously
+         * replicated to or from the current disk. This value identifies the exact
+         * disk that was used to create this replication. For example, if you started
+         * replicating the persistent disk from a disk that was later deleted and
+         * recreated under the same name, the disk ID would identify the exact version
+         * of the disk that was used.
+         *
+         * @var string
+         */
+        public $diskId;
+        /**
+         * Output only. [Output Only] URL of the DiskConsistencyGroupPolicy if
+         * replication was started on the disk as a member of a group.
+         *
+         * @param string $consistencyGroupPolicy
+         */
+        public function setConsistencyGroupPolicy($consistencyGroupPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsistencyGroupPolicy()
+        {
+        }
+        /**
+         * Output only. [Output Only] ID of the DiskConsistencyGroupPolicy if
+         * replication was started on the disk as a member of a group.
+         *
+         * @param string $consistencyGroupPolicyId
+         */
+        public function setConsistencyGroupPolicyId($consistencyGroupPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsistencyGroupPolicyId()
+        {
+        }
+        /**
+         * The other disk asynchronously replicated to or from the current disk. You
+         * can provide this as a partial or full URL to the resource. For example, the
+         * following are valid values:              - https://www.googleapis.com/compu
+         * te/v1/projects/project/zones/zone/disks/disk     -
+         * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
+         *
+         * @param string $disk
+         */
+        public function setDisk($disk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisk()
+        {
+        }
+        /**
+         * Output only. [Output Only] The unique ID of the other disk asynchronously
+         * replicated to or from the current disk. This value identifies the exact
+         * disk that was used to create this replication. For example, if you started
+         * replicating the persistent disk from a disk that was later deleted and
+         * recreated under the same name, the disk ID would identify the exact version
+         * of the disk that was used.
+         *
+         * @param string $diskId
+         */
+        public function setDiskId($diskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\DiskAsyncReplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsistencyGroupPolicy()
-    {
-    }
-    /**
-     * Output only. [Output Only] ID of the DiskConsistencyGroupPolicy if
-     * replication was started on the disk as a member of a group.
-     *
-     * @param string $consistencyGroupPolicyId
-     */
-    public function setConsistencyGroupPolicyId($consistencyGroupPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsistencyGroupPolicyId()
-    {
-    }
-    /**
-     * The other disk asynchronously replicated to or from the current disk. You
-     * can provide this as a partial or full URL to the resource. For example, the
-     * following are valid values:              - https://www.googleapis.com/compu
-     * te/v1/projects/project/zones/zone/disks/disk     -
-     * projects/project/zones/zone/disks/disk     - zones/zone/disks/disk
-     *
-     * @param string $disk
-     */
-    public function setDisk($disk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisk()
-    {
-    }
-    /**
-     * Output only. [Output Only] The unique ID of the other disk asynchronously
-     * replicated to or from the current disk. This value identifies the exact
-     * disk that was used to create this replication. For example, if you started
-     * replicating the persistent disk from a disk that was later deleted and
-     * recreated under the same name, the disk ID would identify the exact version
-     * of the disk that was used.
-     *
-     * @param string $diskId
-     */
-    public function setDiskId($diskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskId()
+    class Google_Service_Compute_DiskAsyncReplication extends \Google\Service\Compute\DiskAsyncReplication
     {
     }
 }

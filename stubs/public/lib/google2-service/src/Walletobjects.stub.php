@@ -21,54 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Walletobjects (v1).
- *
- * <p>
- * API for issuers to save and manage Google Wallet Objects.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/pay/passes" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Walletobjects extends \Google\Service
-{
-    /** Private Service: https://www.googleapis.com/auth/wallet_object.issuer. */
-    const WALLET_OBJECT_ISSUER = "https://www.googleapis.com/auth/wallet_object.issuer";
-    public $eventticketclass;
-    public $eventticketobject;
-    public $flightclass;
-    public $flightobject;
-    public $genericclass;
-    public $genericobject;
-    public $giftcardclass;
-    public $giftcardobject;
-    public $issuer;
-    public $jwt;
-    public $loyaltyclass;
-    public $loyaltyobject;
-    public $media;
-    public $offerclass;
-    public $offerobject;
-    public $permissions;
-    public $smarttap;
-    public $transitclass;
-    public $transitobject;
-    public $walletobjects_v1_privateContent;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Walletobjects service.
+     * Service definition for Walletobjects (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * API for issuers to save and manage Google Wallet Objects.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/pay/passes" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Walletobjects extends \Google\Service
+    {
+        /** Private Service: https://www.googleapis.com/auth/wallet_object.issuer. */
+        const WALLET_OBJECT_ISSUER = "https://www.googleapis.com/auth/wallet_object.issuer";
+        public $eventticketclass;
+        public $eventticketobject;
+        public $flightclass;
+        public $flightobject;
+        public $genericclass;
+        public $genericobject;
+        public $giftcardclass;
+        public $giftcardobject;
+        public $issuer;
+        public $jwt;
+        public $loyaltyclass;
+        public $loyaltyobject;
+        public $media;
+        public $offerclass;
+        public $offerobject;
+        public $permissions;
+        public $smarttap;
+        public $transitclass;
+        public $transitobject;
+        public $walletobjects_v1_privateContent;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Walletobjects service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Walletobjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Walletobjects extends \Google\Service\Walletobjects
     {
     }
 }

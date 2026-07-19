@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class SendCommandToDeviceResponse extends \Google\Model
-{
+namespace Google\Service\CloudIot {
+    class SendCommandToDeviceResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIot\SendCommandToDeviceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIot_SendCommandToDeviceResponse extends \Google\Service\CloudIot\SendCommandToDeviceResponse
+    {
+    }
 }

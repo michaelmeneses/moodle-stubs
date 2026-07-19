@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class IntegrationDetails extends \Google\Model
-{
-    /**
-     * Additional details of the entry in string format. Must be UTF-8 encoded
-     * with a length of no more than 1000 characters.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * An external identifier to be associated with the entry. The integration
-     * code will show up together with the entry in many places in the system, for
-     * example, reporting. Must be UTF-8 encoded with a length of no more than 500
-     * characters.
-     *
-     * @var string
-     */
-    public $integrationCode;
-    /**
-     * Additional details of the entry in string format. Must be UTF-8 encoded
-     * with a length of no more than 1000 characters.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\DisplayVideo {
+    class IntegrationDetails extends \Google\Model
     {
+        /**
+         * Additional details of the entry in string format. Must be UTF-8 encoded
+         * with a length of no more than 1000 characters.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * An external identifier to be associated with the entry. The integration
+         * code will show up together with the entry in many places in the system, for
+         * example, reporting. Must be UTF-8 encoded with a length of no more than 500
+         * characters.
+         *
+         * @var string
+         */
+        public $integrationCode;
+        /**
+         * Additional details of the entry in string format. Must be UTF-8 encoded
+         * with a length of no more than 1000 characters.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * An external identifier to be associated with the entry. The integration
+         * code will show up together with the entry in many places in the system, for
+         * example, reporting. Must be UTF-8 encoded with a length of no more than 500
+         * characters.
+         *
+         * @param string $integrationCode
+         */
+        public function setIntegrationCode($integrationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrationCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\IntegrationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * An external identifier to be associated with the entry. The integration
-     * code will show up together with the entry in many places in the system, for
-     * example, reporting. Must be UTF-8 encoded with a length of no more than 500
-     * characters.
-     *
-     * @param string $integrationCode
-     */
-    public function setIntegrationCode($integrationCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegrationCode()
+    class Google_Service_DisplayVideo_IntegrationDetails extends \Google\Service\DisplayVideo\IntegrationDetails
     {
     }
 }

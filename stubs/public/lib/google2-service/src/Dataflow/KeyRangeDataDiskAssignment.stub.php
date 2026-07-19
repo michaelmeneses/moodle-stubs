@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class KeyRangeDataDiskAssignment extends \Google\Model
-{
-    /**
-     * The name of the data disk where data for this range is stored. This name is
-     * local to the Google Cloud Platform project and uniquely identifies the disk
-     * within that project, for example
-     * "myproject-1014-104817-4c2-harness-0-disk-1".
-     *
-     * @var string
-     */
-    public $dataDisk;
-    /**
-     * The end (exclusive) of the key range.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * The start (inclusive) of the key range.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * The name of the data disk where data for this range is stored. This name is
-     * local to the Google Cloud Platform project and uniquely identifies the disk
-     * within that project, for example
-     * "myproject-1014-104817-4c2-harness-0-disk-1".
-     *
-     * @param string $dataDisk
-     */
-    public function setDataDisk($dataDisk)
+namespace Google\Service\Dataflow {
+    class KeyRangeDataDiskAssignment extends \Google\Model
     {
+        /**
+         * The name of the data disk where data for this range is stored. This name is
+         * local to the Google Cloud Platform project and uniquely identifies the disk
+         * within that project, for example
+         * "myproject-1014-104817-4c2-harness-0-disk-1".
+         *
+         * @var string
+         */
+        public $dataDisk;
+        /**
+         * The end (exclusive) of the key range.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * The start (inclusive) of the key range.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * The name of the data disk where data for this range is stored. This name is
+         * local to the Google Cloud Platform project and uniquely identifies the disk
+         * within that project, for example
+         * "myproject-1014-104817-4c2-harness-0-disk-1".
+         *
+         * @param string $dataDisk
+         */
+        public function setDataDisk($dataDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataDisk()
+        {
+        }
+        /**
+         * The end (exclusive) of the key range.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * The start (inclusive) of the key range.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\KeyRangeDataDiskAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataDisk()
-    {
-    }
-    /**
-     * The end (exclusive) of the key range.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * The start (inclusive) of the key range.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Dataflow_KeyRangeDataDiskAssignment extends \Google\Service\Dataflow\KeyRangeDataDiskAssignment
     {
     }
 }

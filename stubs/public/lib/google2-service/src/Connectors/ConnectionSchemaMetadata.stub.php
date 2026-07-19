@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ConnectionSchemaMetadata extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    /**
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * @var string[]
-     */
-    public $entities;
-    /**
-     * @param string[]
-     */
-    public function setActions($actions)
+namespace Google\Service\Connectors {
+    class ConnectionSchemaMetadata extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        /**
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * @var string[]
+         */
+        public $entities;
+        /**
+         * @param string[]
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Connectors\ConnectionSchemaMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEntities($entities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEntities()
+    class Google_Service_Connectors_ConnectionSchemaMetadata extends \Google\Service\Connectors\ConnectionSchemaMetadata
     {
     }
 }

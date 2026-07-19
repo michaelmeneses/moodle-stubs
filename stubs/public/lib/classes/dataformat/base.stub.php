@@ -30,6 +30,7 @@
  */
 namespace core\dataformat;
 
+use coding_exception;
 /**
  * Base class for dataformat.
  *

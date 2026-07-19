@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AggregateAssetsValuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $resultsType = AggregationResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The aggregation results.
-     *
-     * @param AggregationResult[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\MigrationCenterAPI {
+    class AggregateAssetsValuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $resultsType = AggregationResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The aggregation results.
+         *
+         * @param AggregationResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return AggregationResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregationResult[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AggregateAssetsValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_MigrationCenterAPI_AggregateAssetsValuesResponse extends \Google\Service\MigrationCenterAPI\AggregateAssetsValuesResponse
     {
     }
 }

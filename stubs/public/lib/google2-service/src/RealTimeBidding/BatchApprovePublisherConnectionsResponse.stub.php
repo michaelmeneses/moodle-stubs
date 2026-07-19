@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class BatchApprovePublisherConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'publisherConnections';
-    protected $publisherConnectionsType = PublisherConnection::class;
-    protected $publisherConnectionsDataType = 'array';
-    /**
-     * The publisher connections that have been approved.
-     *
-     * @param PublisherConnection[] $publisherConnections
-     */
-    public function setPublisherConnections($publisherConnections)
+namespace Google\Service\RealTimeBidding {
+    class BatchApprovePublisherConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'publisherConnections';
+        protected $publisherConnectionsType = PublisherConnection::class;
+        protected $publisherConnectionsDataType = 'array';
+        /**
+         * The publisher connections that have been approved.
+         *
+         * @param PublisherConnection[] $publisherConnections
+         */
+        public function setPublisherConnections($publisherConnections)
+        {
+        }
+        /**
+         * @return PublisherConnection[]
+         */
+        public function getPublisherConnections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublisherConnection[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\BatchApprovePublisherConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublisherConnections()
+    class Google_Service_RealTimeBidding_BatchApprovePublisherConnectionsResponse extends \Google\Service\RealTimeBidding\BatchApprovePublisherConnectionsResponse
     {
     }
 }

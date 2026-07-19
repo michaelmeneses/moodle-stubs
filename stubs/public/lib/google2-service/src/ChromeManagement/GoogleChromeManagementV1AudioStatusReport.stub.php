@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1AudioStatusReport extends \Google\Model
-{
-    /**
-     * Output only. Active input device's name.
-     *
-     * @var string
-     */
-    public $inputDevice;
-    /**
-     * Output only. Active input device's gain in [0, 100].
-     *
-     * @var int
-     */
-    public $inputGain;
-    /**
-     * Output only. Is active input device mute or not.
-     *
-     * @var bool
-     */
-    public $inputMute;
-    /**
-     * Output only. Active output device's name.
-     *
-     * @var string
-     */
-    public $outputDevice;
-    /**
-     * Output only. Is active output device mute or not.
-     *
-     * @var bool
-     */
-    public $outputMute;
-    /**
-     * Output only. Active output device's volume in [0, 100].
-     *
-     * @var int
-     */
-    public $outputVolume;
-    /**
-     * Output only. Timestamp of when the sample was collected on device.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Active input device's name.
-     *
-     * @param string $inputDevice
-     */
-    public function setInputDevice($inputDevice)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1AudioStatusReport extends \Google\Model
     {
+        /**
+         * Output only. Active input device's name.
+         *
+         * @var string
+         */
+        public $inputDevice;
+        /**
+         * Output only. Active input device's gain in [0, 100].
+         *
+         * @var int
+         */
+        public $inputGain;
+        /**
+         * Output only. Is active input device mute or not.
+         *
+         * @var bool
+         */
+        public $inputMute;
+        /**
+         * Output only. Active output device's name.
+         *
+         * @var string
+         */
+        public $outputDevice;
+        /**
+         * Output only. Is active output device mute or not.
+         *
+         * @var bool
+         */
+        public $outputMute;
+        /**
+         * Output only. Active output device's volume in [0, 100].
+         *
+         * @var int
+         */
+        public $outputVolume;
+        /**
+         * Output only. Timestamp of when the sample was collected on device.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Active input device's name.
+         *
+         * @param string $inputDevice
+         */
+        public function setInputDevice($inputDevice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputDevice()
+        {
+        }
+        /**
+         * Output only. Active input device's gain in [0, 100].
+         *
+         * @param int $inputGain
+         */
+        public function setInputGain($inputGain)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInputGain()
+        {
+        }
+        /**
+         * Output only. Is active input device mute or not.
+         *
+         * @param bool $inputMute
+         */
+        public function setInputMute($inputMute)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInputMute()
+        {
+        }
+        /**
+         * Output only. Active output device's name.
+         *
+         * @param string $outputDevice
+         */
+        public function setOutputDevice($outputDevice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputDevice()
+        {
+        }
+        /**
+         * Output only. Is active output device mute or not.
+         *
+         * @param bool $outputMute
+         */
+        public function setOutputMute($outputMute)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOutputMute()
+        {
+        }
+        /**
+         * Output only. Active output device's volume in [0, 100].
+         *
+         * @param int $outputVolume
+         */
+        public function setOutputVolume($outputVolume)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOutputVolume()
+        {
+        }
+        /**
+         * Output only. Timestamp of when the sample was collected on device.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1AudioStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputDevice()
-    {
-    }
-    /**
-     * Output only. Active input device's gain in [0, 100].
-     *
-     * @param int $inputGain
-     */
-    public function setInputGain($inputGain)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInputGain()
-    {
-    }
-    /**
-     * Output only. Is active input device mute or not.
-     *
-     * @param bool $inputMute
-     */
-    public function setInputMute($inputMute)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInputMute()
-    {
-    }
-    /**
-     * Output only. Active output device's name.
-     *
-     * @param string $outputDevice
-     */
-    public function setOutputDevice($outputDevice)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputDevice()
-    {
-    }
-    /**
-     * Output only. Is active output device mute or not.
-     *
-     * @param bool $outputMute
-     */
-    public function setOutputMute($outputMute)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOutputMute()
-    {
-    }
-    /**
-     * Output only. Active output device's volume in [0, 100].
-     *
-     * @param int $outputVolume
-     */
-    public function setOutputVolume($outputVolume)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOutputVolume()
-    {
-    }
-    /**
-     * Output only. Timestamp of when the sample was collected on device.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1AudioStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1AudioStatusReport
     {
     }
 }

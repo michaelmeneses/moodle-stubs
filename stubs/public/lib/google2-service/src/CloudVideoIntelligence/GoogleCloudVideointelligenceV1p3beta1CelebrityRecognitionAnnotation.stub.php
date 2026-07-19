@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'celebrityTracks';
-    protected $celebrityTracksType = GoogleCloudVideointelligenceV1p3beta1CelebrityTrack::class;
-    protected $celebrityTracksDataType = 'array';
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The tracks detected from the input video, including recognized celebrities
-     * and other detected faces in the video.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1CelebrityTrack[] $celebrityTracks
-     */
-    public function setCelebrityTracks($celebrityTracks)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'celebrityTracks';
+        protected $celebrityTracksType = GoogleCloudVideointelligenceV1p3beta1CelebrityTrack::class;
+        protected $celebrityTracksDataType = 'array';
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The tracks detected from the input video, including recognized celebrities
+         * and other detected faces in the video.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1CelebrityTrack[] $celebrityTracks
+         */
+        public function setCelebrityTracks($celebrityTracks)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1CelebrityTrack[]
+         */
+        public function getCelebrityTracks()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p3beta1CelebrityTrack[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCelebrityTracks()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation
     {
     }
 }

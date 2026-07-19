@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DataManager (v1).
- *
- * <p>
- * A unified ingestion API for data partners, agencies and advertisers to
- * connect first-party data across Google advertising products.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/data-manager" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DataManager extends \Google\Service
-{
-    /** See, edit, create, import, or delete your customer data in Google Ads, Google Marketing Platform (Campaign Manager 360, Search Ads 360, Display & Video 360), and Google Analytics. */
-    const DATAMANAGER = "https://www.googleapis.com/auth/datamanager";
-    public $audienceMembers;
-    public $events;
-    public $requestStatus;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DataManager service.
+     * Service definition for DataManager (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * A unified ingestion API for data partners, agencies and advertisers to
+     * connect first-party data across Google advertising products.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/data-manager" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DataManager extends \Google\Service
+    {
+        /** See, edit, create, import, or delete your customer data in Google Ads, Google Marketing Platform (Campaign Manager 360, Search Ads 360, Display & Video 360), and Google Analytics. */
+        const DATAMANAGER = "https://www.googleapis.com/auth/datamanager";
+        public $audienceMembers;
+        public $events;
+        public $requestStatus;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DataManager service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataManager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataManager extends \Google\Service\DataManager
     {
     }
 }

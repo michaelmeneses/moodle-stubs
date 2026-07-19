@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreviewFeatureStatusReleaseStatus extends \Google\Model
-{
-    public const STAGE_DEPRECATED = 'DEPRECATED';
-    public const STAGE_GA = 'GA';
-    public const STAGE_PREVIEW = 'PREVIEW';
-    public const STAGE_STAGE_UNSPECIFIED = 'STAGE_UNSPECIFIED';
-    /**
-     * Output only. [Output Only] The stage of the feature.
-     *
-     * @var string
-     */
-    public $stage;
-    protected $updateDateType = Date::class;
-    protected $updateDateDataType = '';
-    /**
-     * Output only. [Output Only] The stage of the feature.
-     *
-     * Accepted values: DEPRECATED, GA, PREVIEW, STAGE_UNSPECIFIED
-     *
-     * @param self::STAGE_* $stage
-     */
-    public function setStage($stage)
+namespace Google\Service\Compute {
+    class PreviewFeatureStatusReleaseStatus extends \Google\Model
     {
+        public const STAGE_DEPRECATED = 'DEPRECATED';
+        public const STAGE_GA = 'GA';
+        public const STAGE_PREVIEW = 'PREVIEW';
+        public const STAGE_STAGE_UNSPECIFIED = 'STAGE_UNSPECIFIED';
+        /**
+         * Output only. [Output Only] The stage of the feature.
+         *
+         * @var string
+         */
+        public $stage;
+        protected $updateDateType = Date::class;
+        protected $updateDateDataType = '';
+        /**
+         * Output only. [Output Only] The stage of the feature.
+         *
+         * Accepted values: DEPRECATED, GA, PREVIEW, STAGE_UNSPECIFIED
+         *
+         * @param self::STAGE_* $stage
+         */
+        public function setStage($stage)
+        {
+        }
+        /**
+         * @return self::STAGE_*
+         */
+        public function getStage()
+        {
+        }
+        /**
+         * Output only. The last date when a feature transitioned between
+         * ReleaseStatuses.
+         *
+         * @param Date $updateDate
+         */
+        public function setUpdateDate(Date $updateDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getUpdateDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STAGE_*
+     * Runtime class alias of \Google\Service\Compute\PreviewFeatureStatusReleaseStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStage()
-    {
-    }
-    /**
-     * Output only. The last date when a feature transitioned between
-     * ReleaseStatuses.
-     *
-     * @param Date $updateDate
-     */
-    public function setUpdateDate(Date $updateDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getUpdateDate()
+    class Google_Service_Compute_PreviewFeatureStatusReleaseStatus extends \Google\Service\Compute\PreviewFeatureStatusReleaseStatus
     {
     }
 }

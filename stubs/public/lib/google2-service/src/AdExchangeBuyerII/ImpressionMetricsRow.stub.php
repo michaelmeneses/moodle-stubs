@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ImpressionMetricsRow extends \Google\Model
-{
-    protected $availableImpressionsType = MetricValue::class;
-    protected $availableImpressionsDataType = '';
-    protected $bidRequestsType = MetricValue::class;
-    protected $bidRequestsDataType = '';
-    protected $inventoryMatchesType = MetricValue::class;
-    protected $inventoryMatchesDataType = '';
-    protected $responsesWithBidsType = MetricValue::class;
-    protected $responsesWithBidsDataType = '';
-    protected $rowDimensionsType = RowDimensions::class;
-    protected $rowDimensionsDataType = '';
-    protected $successfulResponsesType = MetricValue::class;
-    protected $successfulResponsesDataType = '';
-    /**
-     * The number of impressions available to the buyer on Ad Exchange. In some
-     * cases this value may be unavailable.
-     *
-     * @param MetricValue $availableImpressions
-     */
-    public function setAvailableImpressions(MetricValue $availableImpressions)
+namespace Google\Service\AdExchangeBuyerII {
+    class ImpressionMetricsRow extends \Google\Model
     {
+        protected $availableImpressionsType = MetricValue::class;
+        protected $availableImpressionsDataType = '';
+        protected $bidRequestsType = MetricValue::class;
+        protected $bidRequestsDataType = '';
+        protected $inventoryMatchesType = MetricValue::class;
+        protected $inventoryMatchesDataType = '';
+        protected $responsesWithBidsType = MetricValue::class;
+        protected $responsesWithBidsDataType = '';
+        protected $rowDimensionsType = RowDimensions::class;
+        protected $rowDimensionsDataType = '';
+        protected $successfulResponsesType = MetricValue::class;
+        protected $successfulResponsesDataType = '';
+        /**
+         * The number of impressions available to the buyer on Ad Exchange. In some
+         * cases this value may be unavailable.
+         *
+         * @param MetricValue $availableImpressions
+         */
+        public function setAvailableImpressions(MetricValue $availableImpressions)
+        {
+        }
+        /**
+         * @return MetricValue
+         */
+        public function getAvailableImpressions()
+        {
+        }
+        /**
+         * The number of impressions for which Ad Exchange sent the buyer a bid
+         * request.
+         *
+         * @param MetricValue $bidRequests
+         */
+        public function setBidRequests(MetricValue $bidRequests)
+        {
+        }
+        /**
+         * @return MetricValue
+         */
+        public function getBidRequests()
+        {
+        }
+        /**
+         * The number of impressions that match the buyer's inventory pretargeting.
+         *
+         * @param MetricValue $inventoryMatches
+         */
+        public function setInventoryMatches(MetricValue $inventoryMatches)
+        {
+        }
+        /**
+         * @return MetricValue
+         */
+        public function getInventoryMatches()
+        {
+        }
+        /**
+         * The number of impressions for which Ad Exchange received a response from
+         * the buyer that contained at least one applicable bid.
+         *
+         * @param MetricValue $responsesWithBids
+         */
+        public function setResponsesWithBids(MetricValue $responsesWithBids)
+        {
+        }
+        /**
+         * @return MetricValue
+         */
+        public function getResponsesWithBids()
+        {
+        }
+        /**
+         * The values of all dimensions associated with metric values in this row.
+         *
+         * @param RowDimensions $rowDimensions
+         */
+        public function setRowDimensions(RowDimensions $rowDimensions)
+        {
+        }
+        /**
+         * @return RowDimensions
+         */
+        public function getRowDimensions()
+        {
+        }
+        /**
+         * The number of impressions for which the buyer successfully sent a response
+         * to Ad Exchange.
+         *
+         * @param MetricValue $successfulResponses
+         */
+        public function setSuccessfulResponses(MetricValue $successfulResponses)
+        {
+        }
+        /**
+         * @return MetricValue
+         */
+        public function getSuccessfulResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricValue
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ImpressionMetricsRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableImpressions()
-    {
-    }
-    /**
-     * The number of impressions for which Ad Exchange sent the buyer a bid
-     * request.
-     *
-     * @param MetricValue $bidRequests
-     */
-    public function setBidRequests(MetricValue $bidRequests)
-    {
-    }
-    /**
-     * @return MetricValue
-     */
-    public function getBidRequests()
-    {
-    }
-    /**
-     * The number of impressions that match the buyer's inventory pretargeting.
-     *
-     * @param MetricValue $inventoryMatches
-     */
-    public function setInventoryMatches(MetricValue $inventoryMatches)
-    {
-    }
-    /**
-     * @return MetricValue
-     */
-    public function getInventoryMatches()
-    {
-    }
-    /**
-     * The number of impressions for which Ad Exchange received a response from
-     * the buyer that contained at least one applicable bid.
-     *
-     * @param MetricValue $responsesWithBids
-     */
-    public function setResponsesWithBids(MetricValue $responsesWithBids)
-    {
-    }
-    /**
-     * @return MetricValue
-     */
-    public function getResponsesWithBids()
-    {
-    }
-    /**
-     * The values of all dimensions associated with metric values in this row.
-     *
-     * @param RowDimensions $rowDimensions
-     */
-    public function setRowDimensions(RowDimensions $rowDimensions)
-    {
-    }
-    /**
-     * @return RowDimensions
-     */
-    public function getRowDimensions()
-    {
-    }
-    /**
-     * The number of impressions for which the buyer successfully sent a response
-     * to Ad Exchange.
-     *
-     * @param MetricValue $successfulResponses
-     */
-    public function setSuccessfulResponses(MetricValue $successfulResponses)
-    {
-    }
-    /**
-     * @return MetricValue
-     */
-    public function getSuccessfulResponses()
+    class Google_Service_AdExchangeBuyerII_ImpressionMetricsRow extends \Google\Service\AdExchangeBuyerII\ImpressionMetricsRow
     {
     }
 }

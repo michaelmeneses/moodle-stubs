@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class CustomDns extends \Google\Collection
-{
-    protected $collection_key = 'nameServers';
-    protected $dsRecordsType = DsRecord::class;
-    protected $dsRecordsDataType = 'array';
-    /**
-     * Required. A list of name servers that store the DNS zone for this domain.
-     * Each name server is a domain name, with Unicode domain names expressed in
-     * Punycode format.
-     *
-     * @var string[]
-     */
-    public $nameServers;
-    /**
-     * The list of DS records for this domain, which are used to enable DNSSEC.
-     * The domain's DNS provider can provide the values to set here. If this field
-     * is empty, DNSSEC is disabled.
-     *
-     * @param DsRecord[] $dsRecords
-     */
-    public function setDsRecords($dsRecords)
+namespace Google\Service\CloudDomains {
+    class CustomDns extends \Google\Collection
     {
+        protected $collection_key = 'nameServers';
+        protected $dsRecordsType = DsRecord::class;
+        protected $dsRecordsDataType = 'array';
+        /**
+         * Required. A list of name servers that store the DNS zone for this domain.
+         * Each name server is a domain name, with Unicode domain names expressed in
+         * Punycode format.
+         *
+         * @var string[]
+         */
+        public $nameServers;
+        /**
+         * The list of DS records for this domain, which are used to enable DNSSEC.
+         * The domain's DNS provider can provide the values to set here. If this field
+         * is empty, DNSSEC is disabled.
+         *
+         * @param DsRecord[] $dsRecords
+         */
+        public function setDsRecords($dsRecords)
+        {
+        }
+        /**
+         * @return DsRecord[]
+         */
+        public function getDsRecords()
+        {
+        }
+        /**
+         * Required. A list of name servers that store the DNS zone for this domain.
+         * Each name server is a domain name, with Unicode domain names expressed in
+         * Punycode format.
+         *
+         * @param string[] $nameServers
+         */
+        public function setNameServers($nameServers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNameServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DsRecord[]
+     * Runtime class alias of \Google\Service\CloudDomains\CustomDns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDsRecords()
-    {
-    }
-    /**
-     * Required. A list of name servers that store the DNS zone for this domain.
-     * Each name server is a domain name, with Unicode domain names expressed in
-     * Punycode format.
-     *
-     * @param string[] $nameServers
-     */
-    public function setNameServers($nameServers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNameServers()
+    class Google_Service_CloudDomains_CustomDns extends \Google\Service\CloudDomains\CustomDns
     {
     }
 }

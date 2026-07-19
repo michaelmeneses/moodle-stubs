@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPersonProfileCardRelatedPeople extends \Google\Collection
-{
-    public const RELATION_UNKNOWN = 'UNKNOWN';
-    public const RELATION_MANAGER = 'MANAGER';
-    public const RELATION_DIRECT_REPORT = 'DIRECT_REPORT';
-    protected $collection_key = 'relatedPerson';
-    protected $relatedPersonType = EnterpriseTopazSidekickCommonPerson::class;
-    protected $relatedPersonDataType = 'array';
-    /**
-     * Relation type.
-     *
-     * @var string
-     */
-    public $relation;
-    /**
-     * Related people.
-     *
-     * @param EnterpriseTopazSidekickCommonPerson[] $relatedPerson
-     */
-    public function setRelatedPerson($relatedPerson)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPersonProfileCardRelatedPeople extends \Google\Collection
     {
+        public const RELATION_UNKNOWN = 'UNKNOWN';
+        public const RELATION_MANAGER = 'MANAGER';
+        public const RELATION_DIRECT_REPORT = 'DIRECT_REPORT';
+        protected $collection_key = 'relatedPerson';
+        protected $relatedPersonType = EnterpriseTopazSidekickCommonPerson::class;
+        protected $relatedPersonDataType = 'array';
+        /**
+         * Relation type.
+         *
+         * @var string
+         */
+        public $relation;
+        /**
+         * Related people.
+         *
+         * @param EnterpriseTopazSidekickCommonPerson[] $relatedPerson
+         */
+        public function setRelatedPerson($relatedPerson)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPerson[]
+         */
+        public function getRelatedPerson()
+        {
+        }
+        /**
+         * Relation type.
+         *
+         * Accepted values: UNKNOWN, MANAGER, DIRECT_REPORT
+         *
+         * @param self::RELATION_* $relation
+         */
+        public function setRelation($relation)
+        {
+        }
+        /**
+         * @return self::RELATION_*
+         */
+        public function getRelation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickCommonPerson[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPersonProfileCardRelatedPeople registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelatedPerson()
-    {
-    }
-    /**
-     * Relation type.
-     *
-     * Accepted values: UNKNOWN, MANAGER, DIRECT_REPORT
-     *
-     * @param self::RELATION_* $relation
-     */
-    public function setRelation($relation)
-    {
-    }
-    /**
-     * @return self::RELATION_*
-     */
-    public function getRelation()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPersonProfileCardRelatedPeople extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPersonProfileCardRelatedPeople
     {
     }
 }

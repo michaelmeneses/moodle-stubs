@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class Pipe extends \Google\Model
-{
-    /**
-     * The mode for the Pipe. Not applicable for abstract sockets.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Unix Domain Socket path. On Linux, paths starting with '@' will use the
-     * abstract namespace. The starting '@' is replaced by a null byte by Envoy.
-     * Paths starting with '@' will result in an error in environments other than
-     * Linux.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * The mode for the Pipe. Not applicable for abstract sockets.
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\TrafficDirectorService {
+    class Pipe extends \Google\Model
     {
+        /**
+         * The mode for the Pipe. Not applicable for abstract sockets.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Unix Domain Socket path. On Linux, paths starting with '@' will use the
+         * abstract namespace. The starting '@' is replaced by a null byte by Envoy.
+         * Paths starting with '@' will result in an error in environments other than
+         * Linux.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * The mode for the Pipe. Not applicable for abstract sockets.
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Unix Domain Socket path. On Linux, paths starting with '@' will use the
+         * abstract namespace. The starting '@' is replaced by a null byte by Envoy.
+         * Paths starting with '@' will result in an error in environments other than
+         * Linux.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\Pipe registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * Unix Domain Socket path. On Linux, paths starting with '@' will use the
-     * abstract namespace. The starting '@' is replaced by a null byte by Envoy.
-     * Paths starting with '@' will result in an error in environments other than
-     * Linux.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_TrafficDirectorService_Pipe extends \Google\Service\TrafficDirectorService\Pipe
     {
     }
 }

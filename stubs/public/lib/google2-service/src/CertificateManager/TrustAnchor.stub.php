@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class TrustAnchor extends \Google\Model
-{
-    /**
-     * PEM root certificate of the PKI used for validation. Each certificate
-     * provided in PEM format may occupy up to 5kB.
-     *
-     * @var string
-     */
-    public $pemCertificate;
-    /**
-     * PEM root certificate of the PKI used for validation. Each certificate
-     * provided in PEM format may occupy up to 5kB.
-     *
-     * @param string $pemCertificate
-     */
-    public function setPemCertificate($pemCertificate)
+namespace Google\Service\CertificateManager {
+    class TrustAnchor extends \Google\Model
     {
+        /**
+         * PEM root certificate of the PKI used for validation. Each certificate
+         * provided in PEM format may occupy up to 5kB.
+         *
+         * @var string
+         */
+        public $pemCertificate;
+        /**
+         * PEM root certificate of the PKI used for validation. Each certificate
+         * provided in PEM format may occupy up to 5kB.
+         *
+         * @param string $pemCertificate
+         */
+        public function setPemCertificate($pemCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPemCertificate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\TrustAnchor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPemCertificate()
+    class Google_Service_CertificateManager_TrustAnchor extends \Google\Service\CertificateManager\TrustAnchor
     {
     }
 }

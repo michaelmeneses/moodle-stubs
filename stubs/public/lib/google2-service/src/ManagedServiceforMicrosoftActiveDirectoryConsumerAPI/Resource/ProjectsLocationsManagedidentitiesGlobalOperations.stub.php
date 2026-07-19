@@ -21,80 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedidentitiesService = new Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI(...);
- *   $operations = $managedidentitiesService->projects_locations_global_operations;
- *  </code>
- */
-class ProjectsLocationsManagedidentitiesGlobalOperations extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource {
+    use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\CancelOperationRequest;
+    use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListOperationsResponse;
+    use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ManagedidentitiesEmpty;
+    use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Operation;
     /**
-     * Starts asynchronous cancellation on a long-running operation. The server
-     * makes a best effort to cancel the operation, but success is not guaranteed.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of `1`, corresponding to
-     * `Code.CANCELLED`. (operations.cancel)
-     *
-     * @param string $name The name of the operation resource to be cancelled.
-     * @param CancelOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ManagedidentitiesEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedidentitiesService = new Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI(...);
+     *   $operations = $managedidentitiesService->projects_locations_global_operations;
+     *  </code>
      */
-    public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+    class ProjectsLocationsManagedidentitiesGlobalOperations extends \Google\Service\Resource
     {
+        /**
+         * Starts asynchronous cancellation on a long-running operation. The server
+         * makes a best effort to cancel the operation, but success is not guaranteed.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of `1`, corresponding to
+         * `Code.CANCELLED`. (operations.cancel)
+         *
+         * @param string $name The name of the operation resource to be cancelled.
+         * @param CancelOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ManagedidentitiesEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a long-running operation. This method indicates that the client is no
+         * longer interested in the operation result. It does not cancel the operation.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return ManagedidentitiesEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`.
+         * (operations.listProjectsLocationsManagedidentitiesGlobalOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @return ListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsManagedidentitiesGlobalOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a long-running operation. This method indicates that the client is no
-     * longer interested in the operation result. It does not cancel the operation.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return ManagedidentitiesEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource\ProjectsLocationsManagedidentitiesGlobalOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`.
-     * (operations.listProjectsLocationsManagedidentitiesGlobalOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @return ListOperationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsManagedidentitiesGlobalOperations($name, $optParams = [])
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_Resource_ProjectsLocationsManagedidentitiesGlobalOperations extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource\ProjectsLocationsManagedidentitiesGlobalOperations
     {
     }
 }

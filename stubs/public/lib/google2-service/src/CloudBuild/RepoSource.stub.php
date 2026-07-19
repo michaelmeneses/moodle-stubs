@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class RepoSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $branchName;
-    /**
-     * @var string
-     */
-    public $commitSha;
-    /**
-     * @var string
-     */
-    public $dir;
-    /**
-     * @var bool
-     */
-    public $invertRegex;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $repoName;
-    /**
-     * @var string[]
-     */
-    public $substitutions;
-    /**
-     * @var string
-     */
-    public $tagName;
-    /**
-     * @param string
-     */
-    public function setBranchName($branchName)
+namespace Google\Service\CloudBuild {
+    class RepoSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $branchName;
+        /**
+         * @var string
+         */
+        public $commitSha;
+        /**
+         * @var string
+         */
+        public $dir;
+        /**
+         * @var bool
+         */
+        public $invertRegex;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $repoName;
+        /**
+         * @var string[]
+         */
+        public $substitutions;
+        /**
+         * @var string
+         */
+        public $tagName;
+        /**
+         * @param string
+         */
+        public function setBranchName($branchName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranchName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCommitSha($commitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitSha()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDir($dir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDir()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInvertRegex($invertRegex)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvertRegex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepoName($repoName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepoName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSubstitutions($substitutions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubstitutions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTagName($tagName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\RepoSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranchName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCommitSha($commitSha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitSha()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDir($dir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDir()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInvertRegex($invertRegex)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvertRegex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepoName($repoName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepoName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSubstitutions($substitutions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubstitutions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTagName($tagName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagName()
+    class Google_Service_CloudBuild_RepoSource extends \Google\Service\CloudBuild\RepoSource
     {
     }
 }

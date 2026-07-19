@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PhaseArtifact extends \Google\Model
-{
-    /**
-     * Output only. File path of the directory of rendered job manifests relative
-     * to the URI. This is only set if it is applicable.
-     *
-     * @var string
-     */
-    public $jobManifestsPath;
-    /**
-     * Output only. File path of the rendered manifest relative to the URI.
-     *
-     * @var string
-     */
-    public $manifestPath;
-    /**
-     * Output only. File path of the resolved Skaffold configuration relative to
-     * the URI.
-     *
-     * @var string
-     */
-    public $skaffoldConfigPath;
-    /**
-     * Output only. File path of the directory of rendered job manifests relative
-     * to the URI. This is only set if it is applicable.
-     *
-     * @param string $jobManifestsPath
-     */
-    public function setJobManifestsPath($jobManifestsPath)
+namespace Google\Service\CloudDeploy {
+    class PhaseArtifact extends \Google\Model
     {
+        /**
+         * Output only. File path of the directory of rendered job manifests relative
+         * to the URI. This is only set if it is applicable.
+         *
+         * @var string
+         */
+        public $jobManifestsPath;
+        /**
+         * Output only. File path of the rendered manifest relative to the URI.
+         *
+         * @var string
+         */
+        public $manifestPath;
+        /**
+         * Output only. File path of the resolved Skaffold configuration relative to
+         * the URI.
+         *
+         * @var string
+         */
+        public $skaffoldConfigPath;
+        /**
+         * Output only. File path of the directory of rendered job manifests relative
+         * to the URI. This is only set if it is applicable.
+         *
+         * @param string $jobManifestsPath
+         */
+        public function setJobManifestsPath($jobManifestsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobManifestsPath()
+        {
+        }
+        /**
+         * Output only. File path of the rendered manifest relative to the URI.
+         *
+         * @param string $manifestPath
+         */
+        public function setManifestPath($manifestPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestPath()
+        {
+        }
+        /**
+         * Output only. File path of the resolved Skaffold configuration relative to
+         * the URI.
+         *
+         * @param string $skaffoldConfigPath
+         */
+        public function setSkaffoldConfigPath($skaffoldConfigPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkaffoldConfigPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\PhaseArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobManifestsPath()
-    {
-    }
-    /**
-     * Output only. File path of the rendered manifest relative to the URI.
-     *
-     * @param string $manifestPath
-     */
-    public function setManifestPath($manifestPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifestPath()
-    {
-    }
-    /**
-     * Output only. File path of the resolved Skaffold configuration relative to
-     * the URI.
-     *
-     * @param string $skaffoldConfigPath
-     */
-    public function setSkaffoldConfigPath($skaffoldConfigPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkaffoldConfigPath()
+    class Google_Service_CloudDeploy_PhaseArtifact extends \Google\Service\CloudDeploy\PhaseArtifact
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityAssessmentResult extends \Google\Model
-{
-    /**
-     * The time of the assessment of this resource. This could lag behind
-     * `assessment_time` due to caching within the backend.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    protected $resourceType = GoogleCloudApigeeV1SecurityAssessmentResultResource::class;
-    protected $resourceDataType = '';
-    protected $scoringResultType = GoogleCloudApigeeV1SecurityAssessmentResultScoringResult::class;
-    protected $scoringResultDataType = '';
-    /**
-     * The time of the assessment of this resource. This could lag behind
-     * `assessment_time` due to caching within the backend.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityAssessmentResult extends \Google\Model
     {
+        /**
+         * The time of the assessment of this resource. This could lag behind
+         * `assessment_time` due to caching within the backend.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        protected $resourceType = GoogleCloudApigeeV1SecurityAssessmentResultResource::class;
+        protected $resourceDataType = '';
+        protected $scoringResultType = GoogleCloudApigeeV1SecurityAssessmentResultScoringResult::class;
+        protected $scoringResultDataType = '';
+        /**
+         * The time of the assessment of this resource. This could lag behind
+         * `assessment_time` due to caching within the backend.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The error status if scoring fails.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The assessed resource.
+         *
+         * @param GoogleCloudApigeeV1SecurityAssessmentResultResource $resource
+         */
+        public function setResource(GoogleCloudApigeeV1SecurityAssessmentResultResource $resource)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityAssessmentResultResource
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The result of the assessment.
+         *
+         * @param GoogleCloudApigeeV1SecurityAssessmentResultScoringResult $scoringResult
+         */
+        public function setScoringResult(GoogleCloudApigeeV1SecurityAssessmentResultScoringResult $scoringResult)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityAssessmentResultScoringResult
+         */
+        public function getScoringResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The error status if scoring fails.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The assessed resource.
-     *
-     * @param GoogleCloudApigeeV1SecurityAssessmentResultResource $resource
-     */
-    public function setResource(GoogleCloudApigeeV1SecurityAssessmentResultResource $resource)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityAssessmentResultResource
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The result of the assessment.
-     *
-     * @param GoogleCloudApigeeV1SecurityAssessmentResultScoringResult $scoringResult
-     */
-    public function setScoringResult(GoogleCloudApigeeV1SecurityAssessmentResultScoringResult $scoringResult)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityAssessmentResultScoringResult
-     */
-    public function getScoringResult()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityAssessmentResult extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResult
     {
     }
 }

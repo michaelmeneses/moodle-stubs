@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class CustomSourceLocation extends \Google\Model
-{
-    /**
-     * Whether this source is stateful.
-     *
-     * @var bool
-     */
-    public $stateful;
-    /**
-     * Whether this source is stateful.
-     *
-     * @param bool $stateful
-     */
-    public function setStateful($stateful)
+namespace Google\Service\Dataflow {
+    class CustomSourceLocation extends \Google\Model
     {
+        /**
+         * Whether this source is stateful.
+         *
+         * @var bool
+         */
+        public $stateful;
+        /**
+         * Whether this source is stateful.
+         *
+         * @param bool $stateful
+         */
+        public function setStateful($stateful)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStateful()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataflow\CustomSourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStateful()
+    class Google_Service_Dataflow_CustomSourceLocation extends \Google\Service\Dataflow\CustomSourceLocation
     {
     }
 }

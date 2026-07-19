@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainDialogflowSource extends \Google\Model
-{
-    /**
-     * Cloud Storage URI that points to a file that contains the conversation
-     * audio.
-     *
-     * @var string
-     */
-    public $audioUri;
-    /**
-     * Output only. The name of the Dialogflow conversation that this conversation
-     * resource is derived from. Format:
-     * projects/{project}/locations/{location}/conversations/{conversation}
-     *
-     * @var string
-     */
-    public $dialogflowConversation;
-    /**
-     * Cloud Storage URI that points to a file that contains the conversation
-     * audio.
-     *
-     * @param string $audioUri
-     */
-    public function setAudioUri($audioUri)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainDialogflowSource extends \Google\Model
     {
+        /**
+         * Cloud Storage URI that points to a file that contains the conversation
+         * audio.
+         *
+         * @var string
+         */
+        public $audioUri;
+        /**
+         * Output only. The name of the Dialogflow conversation that this conversation
+         * resource is derived from. Format:
+         * projects/{project}/locations/{location}/conversations/{conversation}
+         *
+         * @var string
+         */
+        public $dialogflowConversation;
+        /**
+         * Cloud Storage URI that points to a file that contains the conversation
+         * audio.
+         *
+         * @param string $audioUri
+         */
+        public function setAudioUri($audioUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioUri()
+        {
+        }
+        /**
+         * Output only. The name of the Dialogflow conversation that this conversation
+         * resource is derived from. Format:
+         * projects/{project}/locations/{location}/conversations/{conversation}
+         *
+         * @param string $dialogflowConversation
+         */
+        public function setDialogflowConversation($dialogflowConversation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogflowConversation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDialogflowSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioUri()
-    {
-    }
-    /**
-     * Output only. The name of the Dialogflow conversation that this conversation
-     * resource is derived from. Format:
-     * projects/{project}/locations/{location}/conversations/{conversation}
-     *
-     * @param string $dialogflowConversation
-     */
-    public function setDialogflowConversation($dialogflowConversation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDialogflowConversation()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainDialogflowSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDialogflowSource
     {
     }
 }

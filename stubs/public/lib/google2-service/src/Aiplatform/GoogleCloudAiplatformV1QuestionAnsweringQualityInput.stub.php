@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QuestionAnsweringQualityInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringQualityInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringQualitySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Question answering quality instance.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringQualityInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringQualityInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QuestionAnsweringQualityInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringQualityInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringQualitySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Question answering quality instance.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringQualityInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringQualityInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringQualityInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for question answering quality score metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringQualitySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringQualitySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringQualitySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringQualityInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringQualityInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for question answering quality score metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringQualitySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringQualitySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringQualitySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QuestionAnsweringQualityInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringQualityInput
     {
     }
 }

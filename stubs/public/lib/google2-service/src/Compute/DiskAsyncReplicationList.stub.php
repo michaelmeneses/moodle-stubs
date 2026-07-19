@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DiskAsyncReplicationList extends \Google\Model
-{
-    protected $asyncReplicationDiskType = DiskAsyncReplication::class;
-    protected $asyncReplicationDiskDataType = '';
-    /**
-     * @param DiskAsyncReplication $asyncReplicationDisk
-     */
-    public function setAsyncReplicationDisk(DiskAsyncReplication $asyncReplicationDisk)
+namespace Google\Service\Compute {
+    class DiskAsyncReplicationList extends \Google\Model
     {
+        protected $asyncReplicationDiskType = DiskAsyncReplication::class;
+        protected $asyncReplicationDiskDataType = '';
+        /**
+         * @param DiskAsyncReplication $asyncReplicationDisk
+         */
+        public function setAsyncReplicationDisk(DiskAsyncReplication $asyncReplicationDisk)
+        {
+        }
+        /**
+         * @return DiskAsyncReplication
+         */
+        public function getAsyncReplicationDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskAsyncReplication
+     * Runtime class alias of \Google\Service\Compute\DiskAsyncReplicationList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsyncReplicationDisk()
+    class Google_Service_Compute_DiskAsyncReplicationList extends \Google\Service\Compute\DiskAsyncReplicationList
     {
     }
 }

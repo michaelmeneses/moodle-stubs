@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1EventInput extends \Google\Model
-{
-    /**
-     * Required. The language of this query. See [Language
-     * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
-     * list of the currently supported language codes. Note that queries in the
-     * same session do not necessarily need to specify the same language. This
-     * field is ignored when used in the context of a
-     * WebhookResponse.followup_event_input field, because the language was
-     * already defined in the originating detect intent request.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Required. The unique identifier of the event.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The collection of parameters associated with the event. Depending on your
-     * protocol or client library language, this is a map, associative array,
-     * symbol table, dictionary, or JSON object composed of a collection of
-     * (MapKey, MapValue) pairs: * MapKey type: string * MapKey value: parameter
-     * name * MapValue type: If parameter's entity type is a composite entity then
-     * use map, otherwise, depending on the parameter value type, it could be one
-     * of string, number, boolean, null, list or map. * MapValue value: If
-     * parameter's entity type is a composite entity then use map from composite
-     * entity property names to property values, otherwise, use parameter value.
-     *
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * Required. The language of this query. See [Language
-     * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
-     * list of the currently supported language codes. Note that queries in the
-     * same session do not necessarily need to specify the same language. This
-     * field is ignored when used in the context of a
-     * WebhookResponse.followup_event_input field, because the language was
-     * already defined in the originating detect intent request.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1EventInput extends \Google\Model
     {
+        /**
+         * Required. The language of this query. See [Language
+         * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
+         * list of the currently supported language codes. Note that queries in the
+         * same session do not necessarily need to specify the same language. This
+         * field is ignored when used in the context of a
+         * WebhookResponse.followup_event_input field, because the language was
+         * already defined in the originating detect intent request.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Required. The unique identifier of the event.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The collection of parameters associated with the event. Depending on your
+         * protocol or client library language, this is a map, associative array,
+         * symbol table, dictionary, or JSON object composed of a collection of
+         * (MapKey, MapValue) pairs: * MapKey type: string * MapKey value: parameter
+         * name * MapValue type: If parameter's entity type is a composite entity then
+         * use map, otherwise, depending on the parameter value type, it could be one
+         * of string, number, boolean, null, list or map. * MapValue value: If
+         * parameter's entity type is a composite entity then use map from composite
+         * entity property names to property values, otherwise, use parameter value.
+         *
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * Required. The language of this query. See [Language
+         * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
+         * list of the currently supported language codes. Note that queries in the
+         * same session do not necessarily need to specify the same language. This
+         * field is ignored when used in the context of a
+         * WebhookResponse.followup_event_input field, because the language was
+         * already defined in the originating detect intent request.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Required. The unique identifier of the event.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The collection of parameters associated with the event. Depending on your
+         * protocol or client library language, this is a map, associative array,
+         * symbol table, dictionary, or JSON object composed of a collection of
+         * (MapKey, MapValue) pairs: * MapKey type: string * MapKey value: parameter
+         * name * MapValue type: If parameter's entity type is a composite entity then
+         * use map, otherwise, depending on the parameter value type, it could be one
+         * of string, number, boolean, null, list or map. * MapValue value: If
+         * parameter's entity type is a composite entity then use map from composite
+         * entity property names to property values, otherwise, use parameter value.
+         *
+         * @param array[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1EventInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Required. The unique identifier of the event.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The collection of parameters associated with the event. Depending on your
-     * protocol or client library language, this is a map, associative array,
-     * symbol table, dictionary, or JSON object composed of a collection of
-     * (MapKey, MapValue) pairs: * MapKey type: string * MapKey value: parameter
-     * name * MapValue type: If parameter's entity type is a composite entity then
-     * use map, otherwise, depending on the parameter value type, it could be one
-     * of string, number, boolean, null, list or map. * MapValue value: If
-     * parameter's entity type is a composite entity then use map from composite
-     * entity property names to property values, otherwise, use parameter value.
-     *
-     * @param array[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParameters()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EventInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1EventInput
     {
     }
 }

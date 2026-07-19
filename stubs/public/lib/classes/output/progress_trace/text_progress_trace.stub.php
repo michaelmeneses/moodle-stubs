@@ -20,19 +20,29 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\progress_trace;
-
-/**
- * This subclass of progress_trace outputs to plain text.
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-class text_progress_trace extends progress_trace
-{
-    #[\Override]
-    public function output(string $message, int $depth = 0): void
+namespace core\output\progress_trace {
+    use core\output\progress_trace;
+    /**
+     * This subclass of progress_trace outputs to plain text.
+     *
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     */
+    class text_progress_trace extends progress_trace
+    {
+        #[\Override]
+        public function output(string $message, int $depth = 0): void
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\progress_trace\text_progress_trace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class text_progress_trace extends \core\output\progress_trace\text_progress_trace
     {
     }
 }

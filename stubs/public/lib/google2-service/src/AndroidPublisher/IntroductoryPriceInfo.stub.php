@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class IntroductoryPriceInfo extends \Google\Model
-{
-    /**
-     * Introductory price of the subscription, not including tax. The currency is
-     * the same as price_currency_code. Price is expressed in micro-units, where
-     * 1,000,000 micro-units represents one unit of the currency. For example, if
-     * the subscription price is €1.99, price_amount_micros is 1990000.
-     *
-     * @var string
-     */
-    public $introductoryPriceAmountMicros;
-    /**
-     * ISO 4217 currency code for the introductory subscription price. For
-     * example, if the price is specified in British pounds sterling,
-     * price_currency_code is "GBP".
-     *
-     * @var string
-     */
-    public $introductoryPriceCurrencyCode;
-    /**
-     * The number of billing period to offer introductory pricing.
-     *
-     * @var int
-     */
-    public $introductoryPriceCycles;
-    /**
-     * Introductory price period, specified in ISO 8601 format. Common values are
-     * (but not limited to) "P1W" (one week), "P1M" (one month), "P3M" (three
-     * months), "P6M" (six months), and "P1Y" (one year).
-     *
-     * @var string
-     */
-    public $introductoryPricePeriod;
-    /**
-     * Introductory price of the subscription, not including tax. The currency is
-     * the same as price_currency_code. Price is expressed in micro-units, where
-     * 1,000,000 micro-units represents one unit of the currency. For example, if
-     * the subscription price is €1.99, price_amount_micros is 1990000.
-     *
-     * @param string $introductoryPriceAmountMicros
-     */
-    public function setIntroductoryPriceAmountMicros($introductoryPriceAmountMicros)
+namespace Google\Service\AndroidPublisher {
+    class IntroductoryPriceInfo extends \Google\Model
     {
+        /**
+         * Introductory price of the subscription, not including tax. The currency is
+         * the same as price_currency_code. Price is expressed in micro-units, where
+         * 1,000,000 micro-units represents one unit of the currency. For example, if
+         * the subscription price is €1.99, price_amount_micros is 1990000.
+         *
+         * @var string
+         */
+        public $introductoryPriceAmountMicros;
+        /**
+         * ISO 4217 currency code for the introductory subscription price. For
+         * example, if the price is specified in British pounds sterling,
+         * price_currency_code is "GBP".
+         *
+         * @var string
+         */
+        public $introductoryPriceCurrencyCode;
+        /**
+         * The number of billing period to offer introductory pricing.
+         *
+         * @var int
+         */
+        public $introductoryPriceCycles;
+        /**
+         * Introductory price period, specified in ISO 8601 format. Common values are
+         * (but not limited to) "P1W" (one week), "P1M" (one month), "P3M" (three
+         * months), "P6M" (six months), and "P1Y" (one year).
+         *
+         * @var string
+         */
+        public $introductoryPricePeriod;
+        /**
+         * Introductory price of the subscription, not including tax. The currency is
+         * the same as price_currency_code. Price is expressed in micro-units, where
+         * 1,000,000 micro-units represents one unit of the currency. For example, if
+         * the subscription price is €1.99, price_amount_micros is 1990000.
+         *
+         * @param string $introductoryPriceAmountMicros
+         */
+        public function setIntroductoryPriceAmountMicros($introductoryPriceAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntroductoryPriceAmountMicros()
+        {
+        }
+        /**
+         * ISO 4217 currency code for the introductory subscription price. For
+         * example, if the price is specified in British pounds sterling,
+         * price_currency_code is "GBP".
+         *
+         * @param string $introductoryPriceCurrencyCode
+         */
+        public function setIntroductoryPriceCurrencyCode($introductoryPriceCurrencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntroductoryPriceCurrencyCode()
+        {
+        }
+        /**
+         * The number of billing period to offer introductory pricing.
+         *
+         * @param int $introductoryPriceCycles
+         */
+        public function setIntroductoryPriceCycles($introductoryPriceCycles)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntroductoryPriceCycles()
+        {
+        }
+        /**
+         * Introductory price period, specified in ISO 8601 format. Common values are
+         * (but not limited to) "P1W" (one week), "P1M" (one month), "P3M" (three
+         * months), "P6M" (six months), and "P1Y" (one year).
+         *
+         * @param string $introductoryPricePeriod
+         */
+        public function setIntroductoryPricePeriod($introductoryPricePeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntroductoryPricePeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\IntroductoryPriceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntroductoryPriceAmountMicros()
-    {
-    }
-    /**
-     * ISO 4217 currency code for the introductory subscription price. For
-     * example, if the price is specified in British pounds sterling,
-     * price_currency_code is "GBP".
-     *
-     * @param string $introductoryPriceCurrencyCode
-     */
-    public function setIntroductoryPriceCurrencyCode($introductoryPriceCurrencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntroductoryPriceCurrencyCode()
-    {
-    }
-    /**
-     * The number of billing period to offer introductory pricing.
-     *
-     * @param int $introductoryPriceCycles
-     */
-    public function setIntroductoryPriceCycles($introductoryPriceCycles)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntroductoryPriceCycles()
-    {
-    }
-    /**
-     * Introductory price period, specified in ISO 8601 format. Common values are
-     * (but not limited to) "P1W" (one week), "P1M" (one month), "P3M" (three
-     * months), "P6M" (six months), and "P1Y" (one year).
-     *
-     * @param string $introductoryPricePeriod
-     */
-    public function setIntroductoryPricePeriod($introductoryPricePeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntroductoryPricePeriod()
+    class Google_Service_AndroidPublisher_IntroductoryPriceInfo extends \Google\Service\AndroidPublisher\IntroductoryPriceInfo
     {
     }
 }

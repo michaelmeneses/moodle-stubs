@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkProfileProfileType extends \Google\Model
-{
-    /**
-     * RDMA network.
-     */
-    public const NETWORK_TYPE_RDMA = 'RDMA';
-    /**
-     * ULL network.
-     */
-    public const NETWORK_TYPE_ULL = 'ULL';
-    /**
-     * VPC network.
-     */
-    public const NETWORK_TYPE_VPC = 'VPC';
-    /**
-     * RDMA over Falcon.
-     */
-    public const RDMA_SUBTYPE_FALCON = 'FALCON';
-    /**
-     * RDMA over Converged Ethernet (RoCE).
-     */
-    public const RDMA_SUBTYPE_ROCE = 'ROCE';
-    /**
-     * Exchange operator.
-     */
-    public const ULL_SUBTYPE_OPERATOR = 'OPERATOR';
-    /**
-     * Exchange participant.
-     */
-    public const ULL_SUBTYPE_PARTICIPANT = 'PARTICIPANT';
-    /**
-     * Regionally bound VPC network.
-     */
-    public const VPC_SUBTYPE_REGIONAL = 'REGIONAL';
-    /**
-     * @var string
-     */
-    public $networkType;
-    /**
-     * @var string
-     */
-    public $rdmaSubtype;
-    /**
-     * @var string
-     */
-    public $ullSubtype;
-    /**
-     * @var string
-     */
-    public $vpcSubtype;
-    /**
-     * @param self::NETWORK_TYPE_* $networkType
-     */
-    public function setNetworkType($networkType)
+namespace Google\Service\Compute {
+    class NetworkProfileProfileType extends \Google\Model
     {
+        /**
+         * RDMA network.
+         */
+        public const NETWORK_TYPE_RDMA = 'RDMA';
+        /**
+         * ULL network.
+         */
+        public const NETWORK_TYPE_ULL = 'ULL';
+        /**
+         * VPC network.
+         */
+        public const NETWORK_TYPE_VPC = 'VPC';
+        /**
+         * RDMA over Falcon.
+         */
+        public const RDMA_SUBTYPE_FALCON = 'FALCON';
+        /**
+         * RDMA over Converged Ethernet (RoCE).
+         */
+        public const RDMA_SUBTYPE_ROCE = 'ROCE';
+        /**
+         * Exchange operator.
+         */
+        public const ULL_SUBTYPE_OPERATOR = 'OPERATOR';
+        /**
+         * Exchange participant.
+         */
+        public const ULL_SUBTYPE_PARTICIPANT = 'PARTICIPANT';
+        /**
+         * Regionally bound VPC network.
+         */
+        public const VPC_SUBTYPE_REGIONAL = 'REGIONAL';
+        /**
+         * @var string
+         */
+        public $networkType;
+        /**
+         * @var string
+         */
+        public $rdmaSubtype;
+        /**
+         * @var string
+         */
+        public $ullSubtype;
+        /**
+         * @var string
+         */
+        public $vpcSubtype;
+        /**
+         * @param self::NETWORK_TYPE_* $networkType
+         */
+        public function setNetworkType($networkType)
+        {
+        }
+        /**
+         * @return self::NETWORK_TYPE_*
+         */
+        public function getNetworkType()
+        {
+        }
+        /**
+         * @param self::RDMA_SUBTYPE_* $rdmaSubtype
+         */
+        public function setRdmaSubtype($rdmaSubtype)
+        {
+        }
+        /**
+         * @return self::RDMA_SUBTYPE_*
+         */
+        public function getRdmaSubtype()
+        {
+        }
+        /**
+         * @param self::ULL_SUBTYPE_* $ullSubtype
+         */
+        public function setUllSubtype($ullSubtype)
+        {
+        }
+        /**
+         * @return self::ULL_SUBTYPE_*
+         */
+        public function getUllSubtype()
+        {
+        }
+        /**
+         * @param self::VPC_SUBTYPE_* $vpcSubtype
+         */
+        public function setVpcSubtype($vpcSubtype)
+        {
+        }
+        /**
+         * @return self::VPC_SUBTYPE_*
+         */
+        public function getVpcSubtype()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::NETWORK_TYPE_*
+     * Runtime class alias of \Google\Service\Compute\NetworkProfileProfileType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkType()
-    {
-    }
-    /**
-     * @param self::RDMA_SUBTYPE_* $rdmaSubtype
-     */
-    public function setRdmaSubtype($rdmaSubtype)
-    {
-    }
-    /**
-     * @return self::RDMA_SUBTYPE_*
-     */
-    public function getRdmaSubtype()
-    {
-    }
-    /**
-     * @param self::ULL_SUBTYPE_* $ullSubtype
-     */
-    public function setUllSubtype($ullSubtype)
-    {
-    }
-    /**
-     * @return self::ULL_SUBTYPE_*
-     */
-    public function getUllSubtype()
-    {
-    }
-    /**
-     * @param self::VPC_SUBTYPE_* $vpcSubtype
-     */
-    public function setVpcSubtype($vpcSubtype)
-    {
-    }
-    /**
-     * @return self::VPC_SUBTYPE_*
-     */
-    public function getVpcSubtype()
+    class Google_Service_Compute_NetworkProfileProfileType extends \Google\Service\Compute\NetworkProfileProfileType
     {
     }
 }

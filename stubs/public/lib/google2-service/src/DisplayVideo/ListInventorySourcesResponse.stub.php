@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListInventorySourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'inventorySources';
-    protected $inventorySourcesType = InventorySource::class;
-    protected $inventorySourcesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListInventorySources` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of inventory sources. This list will be absent if empty.
-     *
-     * @param InventorySource[] $inventorySources
-     */
-    public function setInventorySources($inventorySources)
+namespace Google\Service\DisplayVideo {
+    class ListInventorySourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'inventorySources';
+        protected $inventorySourcesType = InventorySource::class;
+        protected $inventorySourcesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListInventorySources` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of inventory sources. This list will be absent if empty.
+         *
+         * @param InventorySource[] $inventorySources
+         */
+        public function setInventorySources($inventorySources)
+        {
+        }
+        /**
+         * @return InventorySource[]
+         */
+        public function getInventorySources()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListInventorySources` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventorySource[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListInventorySourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventorySources()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListInventorySources` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListInventorySourcesResponse extends \Google\Service\DisplayVideo\ListInventorySourcesResponse
     {
     }
 }

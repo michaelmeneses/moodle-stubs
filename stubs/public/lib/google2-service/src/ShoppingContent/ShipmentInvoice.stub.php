@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShipmentInvoice extends \Google\Collection
-{
-    protected $collection_key = 'lineItemInvoices';
-    protected $invoiceSummaryType = InvoiceSummary::class;
-    protected $invoiceSummaryDataType = '';
-    protected $lineItemInvoicesType = ShipmentInvoiceLineItemInvoice::class;
-    protected $lineItemInvoicesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $shipmentGroupId;
-    /**
-     * @param InvoiceSummary
-     */
-    public function setInvoiceSummary(InvoiceSummary $invoiceSummary)
+namespace Google\Service\ShoppingContent {
+    class ShipmentInvoice extends \Google\Collection
     {
+        protected $collection_key = 'lineItemInvoices';
+        protected $invoiceSummaryType = InvoiceSummary::class;
+        protected $invoiceSummaryDataType = '';
+        protected $lineItemInvoicesType = ShipmentInvoiceLineItemInvoice::class;
+        protected $lineItemInvoicesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $shipmentGroupId;
+        /**
+         * @param InvoiceSummary
+         */
+        public function setInvoiceSummary(InvoiceSummary $invoiceSummary)
+        {
+        }
+        /**
+         * @return InvoiceSummary
+         */
+        public function getInvoiceSummary()
+        {
+        }
+        /**
+         * @param ShipmentInvoiceLineItemInvoice[]
+         */
+        public function setLineItemInvoices($lineItemInvoices)
+        {
+        }
+        /**
+         * @return ShipmentInvoiceLineItemInvoice[]
+         */
+        public function getLineItemInvoices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentGroupId($shipmentGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentGroupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InvoiceSummary
+     * Runtime class alias of \Google\Service\ShoppingContent\ShipmentInvoice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvoiceSummary()
-    {
-    }
-    /**
-     * @param ShipmentInvoiceLineItemInvoice[]
-     */
-    public function setLineItemInvoices($lineItemInvoices)
-    {
-    }
-    /**
-     * @return ShipmentInvoiceLineItemInvoice[]
-     */
-    public function getLineItemInvoices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentGroupId($shipmentGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentGroupId()
+    class Google_Service_ShoppingContent_ShipmentInvoice extends \Google\Service\ShoppingContent\ShipmentInvoice
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class AddRolesRequest extends \Google\Collection
-{
-    protected $collection_key = 'policyBinding';
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is a project number, as in '12345' {network} is a network name.
-     *
-     * @var string
-     */
-    public $consumerNetwork;
-    protected $policyBindingType = PolicyBinding::class;
-    protected $policyBindingDataType = 'array';
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is a project number, as in '12345' {network} is a network name.
-     *
-     * @param string $consumerNetwork
-     */
-    public function setConsumerNetwork($consumerNetwork)
+namespace Google\Service\ServiceNetworking {
+    class AddRolesRequest extends \Google\Collection
     {
+        protected $collection_key = 'policyBinding';
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is a project number, as in '12345' {network} is a network name.
+         *
+         * @var string
+         */
+        public $consumerNetwork;
+        protected $policyBindingType = PolicyBinding::class;
+        protected $policyBindingDataType = 'array';
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is a project number, as in '12345' {network} is a network name.
+         *
+         * @param string $consumerNetwork
+         */
+        public function setConsumerNetwork($consumerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetwork()
+        {
+        }
+        /**
+         * Required. List of policy bindings to add to shared VPC host project.
+         *
+         * @param PolicyBinding[] $policyBinding
+         */
+        public function setPolicyBinding($policyBinding)
+        {
+        }
+        /**
+         * @return PolicyBinding[]
+         */
+        public function getPolicyBinding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\AddRolesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerNetwork()
-    {
-    }
-    /**
-     * Required. List of policy bindings to add to shared VPC host project.
-     *
-     * @param PolicyBinding[] $policyBinding
-     */
-    public function setPolicyBinding($policyBinding)
-    {
-    }
-    /**
-     * @return PolicyBinding[]
-     */
-    public function getPolicyBinding()
+    class Google_Service_ServiceNetworking_AddRolesRequest extends \Google\Service\ServiceNetworking\AddRolesRequest
     {
     }
 }

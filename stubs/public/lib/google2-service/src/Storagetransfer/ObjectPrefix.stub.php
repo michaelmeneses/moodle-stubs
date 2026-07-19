@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ObjectPrefix extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * @var string
-     */
-    public $objectPrefix;
-    /**
-     * @param string
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Storagetransfer {
+    class ObjectPrefix extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * @var string
+         */
+        public $objectPrefix;
+        /**
+         * @param string
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectPrefix($objectPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\ObjectPrefix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectPrefix($objectPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectPrefix()
+    class Google_Service_Storagetransfer_ObjectPrefix extends \Google\Service\Storagetransfer\ObjectPrefix
     {
     }
 }

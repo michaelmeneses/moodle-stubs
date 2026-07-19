@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class AvroConfig extends \Google\Model
-{
-    /**
-     * Optional. When true, the output Cloud Storage file will be serialized using
-     * the topic schema, if it exists.
-     *
-     * @var bool
-     */
-    public $useTopicSchema;
-    /**
-     * Optional. When true, write the subscription name, message_id, publish_time,
-     * attributes, and ordering_key as additional fields in the output. The
-     * subscription name, message_id, and publish_time fields are put in their own
-     * fields while all other message properties other than data (for example, an
-     * ordering_key, if present) are added as entries in the attributes map.
-     *
-     * @var bool
-     */
-    public $writeMetadata;
-    /**
-     * Optional. When true, the output Cloud Storage file will be serialized using
-     * the topic schema, if it exists.
-     *
-     * @param bool $useTopicSchema
-     */
-    public function setUseTopicSchema($useTopicSchema)
+namespace Google\Service\Pubsub {
+    class AvroConfig extends \Google\Model
     {
+        /**
+         * Optional. When true, the output Cloud Storage file will be serialized using
+         * the topic schema, if it exists.
+         *
+         * @var bool
+         */
+        public $useTopicSchema;
+        /**
+         * Optional. When true, write the subscription name, message_id, publish_time,
+         * attributes, and ordering_key as additional fields in the output. The
+         * subscription name, message_id, and publish_time fields are put in their own
+         * fields while all other message properties other than data (for example, an
+         * ordering_key, if present) are added as entries in the attributes map.
+         *
+         * @var bool
+         */
+        public $writeMetadata;
+        /**
+         * Optional. When true, the output Cloud Storage file will be serialized using
+         * the topic schema, if it exists.
+         *
+         * @param bool $useTopicSchema
+         */
+        public function setUseTopicSchema($useTopicSchema)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseTopicSchema()
+        {
+        }
+        /**
+         * Optional. When true, write the subscription name, message_id, publish_time,
+         * attributes, and ordering_key as additional fields in the output. The
+         * subscription name, message_id, and publish_time fields are put in their own
+         * fields while all other message properties other than data (for example, an
+         * ordering_key, if present) are added as entries in the attributes map.
+         *
+         * @param bool $writeMetadata
+         */
+        public function setWriteMetadata($writeMetadata)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWriteMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Pubsub\AvroConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseTopicSchema()
-    {
-    }
-    /**
-     * Optional. When true, write the subscription name, message_id, publish_time,
-     * attributes, and ordering_key as additional fields in the output. The
-     * subscription name, message_id, and publish_time fields are put in their own
-     * fields while all other message properties other than data (for example, an
-     * ordering_key, if present) are added as entries in the attributes map.
-     *
-     * @param bool $writeMetadata
-     */
-    public function setWriteMetadata($writeMetadata)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWriteMetadata()
+    class Google_Service_Pubsub_AvroConfig extends \Google\Service\Pubsub\AvroConfig
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Bullet extends \Google\Model
-{
-    /**
-     * The ID of the list this paragraph belongs to.
-     *
-     * @var string
-     */
-    public $listId;
-    /**
-     * The nesting level of this paragraph in the list.
-     *
-     * @var int
-     */
-    public $nestingLevel;
-    protected $textStyleType = TextStyle::class;
-    protected $textStyleDataType = '';
-    /**
-     * The ID of the list this paragraph belongs to.
-     *
-     * @param string $listId
-     */
-    public function setListId($listId)
+namespace Google\Service\Docs {
+    class Bullet extends \Google\Model
     {
+        /**
+         * The ID of the list this paragraph belongs to.
+         *
+         * @var string
+         */
+        public $listId;
+        /**
+         * The nesting level of this paragraph in the list.
+         *
+         * @var int
+         */
+        public $nestingLevel;
+        protected $textStyleType = TextStyle::class;
+        protected $textStyleDataType = '';
+        /**
+         * The ID of the list this paragraph belongs to.
+         *
+         * @param string $listId
+         */
+        public function setListId($listId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListId()
+        {
+        }
+        /**
+         * The nesting level of this paragraph in the list.
+         *
+         * @param int $nestingLevel
+         */
+        public function setNestingLevel($nestingLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNestingLevel()
+        {
+        }
+        /**
+         * The paragraph-specific text style applied to this bullet.
+         *
+         * @param TextStyle $textStyle
+         */
+        public function setTextStyle(TextStyle $textStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getTextStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\Bullet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListId()
-    {
-    }
-    /**
-     * The nesting level of this paragraph in the list.
-     *
-     * @param int $nestingLevel
-     */
-    public function setNestingLevel($nestingLevel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNestingLevel()
-    {
-    }
-    /**
-     * The paragraph-specific text style applied to this bullet.
-     *
-     * @param TextStyle $textStyle
-     */
-    public function setTextStyle(TextStyle $textStyle)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getTextStyle()
+    class Google_Service_Docs_Bullet extends \Google\Service\Docs\Bullet
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class ListDatabasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'databases';
-    protected $databasesType = Database::class;
-    protected $databasesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The databases from the specified catalog.
-     *
-     * @param Database[] $databases
-     */
-    public function setDatabases($databases)
+namespace Google\Service\BigLakeService {
+    class ListDatabasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'databases';
+        protected $databasesType = Database::class;
+        protected $databasesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The databases from the specified catalog.
+         *
+         * @param Database[] $databases
+         */
+        public function setDatabases($databases)
+        {
+        }
+        /**
+         * @return Database[]
+         */
+        public function getDatabases()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Database[]
+     * Runtime class alias of \Google\Service\BigLakeService\ListDatabasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabases()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigLakeService_ListDatabasesResponse extends \Google\Service\BigLakeService\ListDatabasesResponse
     {
     }
 }

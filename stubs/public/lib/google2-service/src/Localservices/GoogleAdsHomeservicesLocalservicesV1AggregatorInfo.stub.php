@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Localservices;
-
-class GoogleAdsHomeservicesLocalservicesV1AggregatorInfo extends \Google\Model
-{
-    /**
-     * Provider id (listed in aggregator system) which maps to a account id in GLS
-     * system.
-     *
-     * @var string
-     */
-    public $aggregatorProviderId;
-    /**
-     * Provider id (listed in aggregator system) which maps to a account id in GLS
-     * system.
-     *
-     * @param string $aggregatorProviderId
-     */
-    public function setAggregatorProviderId($aggregatorProviderId)
+namespace Google\Service\Localservices {
+    class GoogleAdsHomeservicesLocalservicesV1AggregatorInfo extends \Google\Model
     {
+        /**
+         * Provider id (listed in aggregator system) which maps to a account id in GLS
+         * system.
+         *
+         * @var string
+         */
+        public $aggregatorProviderId;
+        /**
+         * Provider id (listed in aggregator system) which maps to a account id in GLS
+         * system.
+         *
+         * @param string $aggregatorProviderId
+         */
+        public function setAggregatorProviderId($aggregatorProviderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAggregatorProviderId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1AggregatorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregatorProviderId()
+    class Google_Service_Localservices_GoogleAdsHomeservicesLocalservicesV1AggregatorInfo extends \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1AggregatorInfo
     {
     }
 }

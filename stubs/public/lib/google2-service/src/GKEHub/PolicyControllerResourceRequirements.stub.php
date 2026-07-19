@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerResourceRequirements extends \Google\Model
-{
-    protected $limitsType = PolicyControllerResourceList::class;
-    protected $limitsDataType = '';
-    protected $requestsType = PolicyControllerResourceList::class;
-    protected $requestsDataType = '';
-    /**
-     * Limits describes the maximum amount of compute resources allowed for use by
-     * the running container.
-     *
-     * @param PolicyControllerResourceList $limits
-     */
-    public function setLimits(PolicyControllerResourceList $limits)
+namespace Google\Service\GKEHub {
+    class PolicyControllerResourceRequirements extends \Google\Model
     {
+        protected $limitsType = PolicyControllerResourceList::class;
+        protected $limitsDataType = '';
+        protected $requestsType = PolicyControllerResourceList::class;
+        protected $requestsDataType = '';
+        /**
+         * Limits describes the maximum amount of compute resources allowed for use by
+         * the running container.
+         *
+         * @param PolicyControllerResourceList $limits
+         */
+        public function setLimits(PolicyControllerResourceList $limits)
+        {
+        }
+        /**
+         * @return PolicyControllerResourceList
+         */
+        public function getLimits()
+        {
+        }
+        /**
+         * Requests describes the amount of compute resources reserved for the
+         * container by the kube-scheduler.
+         *
+         * @param PolicyControllerResourceList $requests
+         */
+        public function setRequests(PolicyControllerResourceList $requests)
+        {
+        }
+        /**
+         * @return PolicyControllerResourceList
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyControllerResourceList
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerResourceRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimits()
-    {
-    }
-    /**
-     * Requests describes the amount of compute resources reserved for the
-     * container by the kube-scheduler.
-     *
-     * @param PolicyControllerResourceList $requests
-     */
-    public function setRequests(PolicyControllerResourceList $requests)
-    {
-    }
-    /**
-     * @return PolicyControllerResourceList
-     */
-    public function getRequests()
+    class Google_Service_GKEHub_PolicyControllerResourceRequirements extends \Google\Service\GKEHub\PolicyControllerResourceRequirements
     {
     }
 }

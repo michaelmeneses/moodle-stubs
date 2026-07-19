@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2VertexDatasetRegex extends \Google\Model
-{
-    /**
-     * For organizations, if unset, will match all projects. Has no effect for
-     * configurations created within a project.
-     *
-     * @var string
-     */
-    public $projectIdRegex;
-    /**
-     * For organizations, if unset, will match all projects. Has no effect for
-     * configurations created within a project.
-     *
-     * @param string $projectIdRegex
-     */
-    public function setProjectIdRegex($projectIdRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2VertexDatasetRegex extends \Google\Model
     {
+        /**
+         * For organizations, if unset, will match all projects. Has no effect for
+         * configurations created within a project.
+         *
+         * @var string
+         */
+        public $projectIdRegex;
+        /**
+         * For organizations, if unset, will match all projects. Has no effect for
+         * configurations created within a project.
+         *
+         * @param string $projectIdRegex
+         */
+        public function setProjectIdRegex($projectIdRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectIdRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectIdRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2VertexDatasetRegex extends \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetRegex
     {
     }
 }

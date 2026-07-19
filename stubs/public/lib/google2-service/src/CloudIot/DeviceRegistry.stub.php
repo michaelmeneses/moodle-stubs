@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class DeviceRegistry extends \Google\Collection
-{
-    protected $collection_key = 'eventNotificationConfigs';
-    protected $credentialsType = RegistryCredential::class;
-    protected $credentialsDataType = 'array';
-    protected $eventNotificationConfigsType = EventNotificationConfig::class;
-    protected $eventNotificationConfigsDataType = 'array';
-    protected $httpConfigType = HttpConfig::class;
-    protected $httpConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $logLevel;
-    protected $mqttConfigType = MqttConfig::class;
-    protected $mqttConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $stateNotificationConfigType = StateNotificationConfig::class;
-    protected $stateNotificationConfigDataType = '';
-    /**
-     * @param RegistryCredential[]
-     */
-    public function setCredentials($credentials)
+namespace Google\Service\CloudIot {
+    class DeviceRegistry extends \Google\Collection
     {
+        protected $collection_key = 'eventNotificationConfigs';
+        protected $credentialsType = RegistryCredential::class;
+        protected $credentialsDataType = 'array';
+        protected $eventNotificationConfigsType = EventNotificationConfig::class;
+        protected $eventNotificationConfigsDataType = 'array';
+        protected $httpConfigType = HttpConfig::class;
+        protected $httpConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $logLevel;
+        protected $mqttConfigType = MqttConfig::class;
+        protected $mqttConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $stateNotificationConfigType = StateNotificationConfig::class;
+        protected $stateNotificationConfigDataType = '';
+        /**
+         * @param RegistryCredential[]
+         */
+        public function setCredentials($credentials)
+        {
+        }
+        /**
+         * @return RegistryCredential[]
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * @param EventNotificationConfig[]
+         */
+        public function setEventNotificationConfigs($eventNotificationConfigs)
+        {
+        }
+        /**
+         * @return EventNotificationConfig[]
+         */
+        public function getEventNotificationConfigs()
+        {
+        }
+        /**
+         * @param HttpConfig
+         */
+        public function setHttpConfig(HttpConfig $httpConfig)
+        {
+        }
+        /**
+         * @return HttpConfig
+         */
+        public function getHttpConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogLevel($logLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogLevel()
+        {
+        }
+        /**
+         * @param MqttConfig
+         */
+        public function setMqttConfig(MqttConfig $mqttConfig)
+        {
+        }
+        /**
+         * @return MqttConfig
+         */
+        public function getMqttConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param StateNotificationConfig
+         */
+        public function setStateNotificationConfig(StateNotificationConfig $stateNotificationConfig)
+        {
+        }
+        /**
+         * @return StateNotificationConfig
+         */
+        public function getStateNotificationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegistryCredential[]
+     * Runtime class alias of \Google\Service\CloudIot\DeviceRegistry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCredentials()
-    {
-    }
-    /**
-     * @param EventNotificationConfig[]
-     */
-    public function setEventNotificationConfigs($eventNotificationConfigs)
-    {
-    }
-    /**
-     * @return EventNotificationConfig[]
-     */
-    public function getEventNotificationConfigs()
-    {
-    }
-    /**
-     * @param HttpConfig
-     */
-    public function setHttpConfig(HttpConfig $httpConfig)
-    {
-    }
-    /**
-     * @return HttpConfig
-     */
-    public function getHttpConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogLevel($logLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogLevel()
-    {
-    }
-    /**
-     * @param MqttConfig
-     */
-    public function setMqttConfig(MqttConfig $mqttConfig)
-    {
-    }
-    /**
-     * @return MqttConfig
-     */
-    public function getMqttConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param StateNotificationConfig
-     */
-    public function setStateNotificationConfig(StateNotificationConfig $stateNotificationConfig)
-    {
-    }
-    /**
-     * @return StateNotificationConfig
-     */
-    public function getStateNotificationConfig()
+    class Google_Service_CloudIot_DeviceRegistry extends \Google\Service\CloudIot\DeviceRegistry
     {
     }
 }

@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1Constraint extends \Google\Model
-{
-    /**
-     * This is only used for distinguishing unset values and should never be used.
-     */
-    public const CONSTRAINT_DEFAULT_CONSTRAINT_DEFAULT_UNSPECIFIED = 'CONSTRAINT_DEFAULT_UNSPECIFIED';
-    /**
-     * Indicate that all values are allowed for list constraints. Indicate that
-     * enforcement is off for boolean constraints.
-     */
-    public const CONSTRAINT_DEFAULT_ALLOW = 'ALLOW';
-    /**
-     * Indicate that all values are denied for list constraints. Indicate that
-     * enforcement is on for boolean constraints.
-     */
-    public const CONSTRAINT_DEFAULT_DENY = 'DENY';
-    protected $booleanConstraintType = GoogleCloudAssetV1BooleanConstraint::class;
-    protected $booleanConstraintDataType = '';
-    /**
-     * The evaluation behavior of this constraint in the absence of 'Policy'.
-     *
-     * @var string
-     */
-    public $constraintDefault;
-    /**
-     * Detailed description of what this `Constraint` controls as well as how and
-     * where it is enforced.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The human readable name of the constraint.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $listConstraintType = GoogleCloudAssetV1ListConstraint::class;
-    protected $listConstraintDataType = '';
-    /**
-     * The unique name of the constraint. Format of the name should be *
-     * `constraints/{constraint_name}` For example,
-     * `constraints/compute.disableSerialPortAccess`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Defines this constraint as being a BooleanConstraint.
-     *
-     * @param GoogleCloudAssetV1BooleanConstraint $booleanConstraint
-     */
-    public function setBooleanConstraint(GoogleCloudAssetV1BooleanConstraint $booleanConstraint)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1Constraint extends \Google\Model
     {
+        /**
+         * This is only used for distinguishing unset values and should never be used.
+         */
+        public const CONSTRAINT_DEFAULT_CONSTRAINT_DEFAULT_UNSPECIFIED = 'CONSTRAINT_DEFAULT_UNSPECIFIED';
+        /**
+         * Indicate that all values are allowed for list constraints. Indicate that
+         * enforcement is off for boolean constraints.
+         */
+        public const CONSTRAINT_DEFAULT_ALLOW = 'ALLOW';
+        /**
+         * Indicate that all values are denied for list constraints. Indicate that
+         * enforcement is on for boolean constraints.
+         */
+        public const CONSTRAINT_DEFAULT_DENY = 'DENY';
+        protected $booleanConstraintType = GoogleCloudAssetV1BooleanConstraint::class;
+        protected $booleanConstraintDataType = '';
+        /**
+         * The evaluation behavior of this constraint in the absence of 'Policy'.
+         *
+         * @var string
+         */
+        public $constraintDefault;
+        /**
+         * Detailed description of what this `Constraint` controls as well as how and
+         * where it is enforced.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The human readable name of the constraint.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $listConstraintType = GoogleCloudAssetV1ListConstraint::class;
+        protected $listConstraintDataType = '';
+        /**
+         * The unique name of the constraint. Format of the name should be *
+         * `constraints/{constraint_name}` For example,
+         * `constraints/compute.disableSerialPortAccess`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Defines this constraint as being a BooleanConstraint.
+         *
+         * @param GoogleCloudAssetV1BooleanConstraint $booleanConstraint
+         */
+        public function setBooleanConstraint(GoogleCloudAssetV1BooleanConstraint $booleanConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1BooleanConstraint
+         */
+        public function getBooleanConstraint()
+        {
+        }
+        /**
+         * The evaluation behavior of this constraint in the absence of 'Policy'.
+         *
+         * Accepted values: CONSTRAINT_DEFAULT_UNSPECIFIED, ALLOW, DENY
+         *
+         * @param self::CONSTRAINT_DEFAULT_* $constraintDefault
+         */
+        public function setConstraintDefault($constraintDefault)
+        {
+        }
+        /**
+         * @return self::CONSTRAINT_DEFAULT_*
+         */
+        public function getConstraintDefault()
+        {
+        }
+        /**
+         * Detailed description of what this `Constraint` controls as well as how and
+         * where it is enforced.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The human readable name of the constraint.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Defines this constraint as being a ListConstraint.
+         *
+         * @param GoogleCloudAssetV1ListConstraint $listConstraint
+         */
+        public function setListConstraint(GoogleCloudAssetV1ListConstraint $listConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1ListConstraint
+         */
+        public function getListConstraint()
+        {
+        }
+        /**
+         * The unique name of the constraint. Format of the name should be *
+         * `constraints/{constraint_name}` For example,
+         * `constraints/compute.disableSerialPortAccess`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1BooleanConstraint
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1Constraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanConstraint()
-    {
-    }
-    /**
-     * The evaluation behavior of this constraint in the absence of 'Policy'.
-     *
-     * Accepted values: CONSTRAINT_DEFAULT_UNSPECIFIED, ALLOW, DENY
-     *
-     * @param self::CONSTRAINT_DEFAULT_* $constraintDefault
-     */
-    public function setConstraintDefault($constraintDefault)
-    {
-    }
-    /**
-     * @return self::CONSTRAINT_DEFAULT_*
-     */
-    public function getConstraintDefault()
-    {
-    }
-    /**
-     * Detailed description of what this `Constraint` controls as well as how and
-     * where it is enforced.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The human readable name of the constraint.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Defines this constraint as being a ListConstraint.
-     *
-     * @param GoogleCloudAssetV1ListConstraint $listConstraint
-     */
-    public function setListConstraint(GoogleCloudAssetV1ListConstraint $listConstraint)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1ListConstraint
-     */
-    public function getListConstraint()
-    {
-    }
-    /**
-     * The unique name of the constraint. Format of the name should be *
-     * `constraints/{constraint_name}` For example,
-     * `constraints/compute.disableSerialPortAccess`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1Constraint extends \Google\Service\CloudAsset\GoogleCloudAssetV1Constraint
     {
     }
 }

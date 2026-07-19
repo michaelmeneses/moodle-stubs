@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class DecodePcIntegrityTokenResponse extends \Google\Model
-{
-    protected $tokenPayloadExternalType = PcTokenPayloadExternal::class;
-    protected $tokenPayloadExternalDataType = '';
-    /**
-     * Plain token payload generated from the decoded integrity token.
-     *
-     * @param PcTokenPayloadExternal $tokenPayloadExternal
-     */
-    public function setTokenPayloadExternal(PcTokenPayloadExternal $tokenPayloadExternal)
+namespace Google\Service\PlayIntegrity {
+    class DecodePcIntegrityTokenResponse extends \Google\Model
     {
+        protected $tokenPayloadExternalType = PcTokenPayloadExternal::class;
+        protected $tokenPayloadExternalDataType = '';
+        /**
+         * Plain token payload generated from the decoded integrity token.
+         *
+         * @param PcTokenPayloadExternal $tokenPayloadExternal
+         */
+        public function setTokenPayloadExternal(PcTokenPayloadExternal $tokenPayloadExternal)
+        {
+        }
+        /**
+         * @return PcTokenPayloadExternal
+         */
+        public function getTokenPayloadExternal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PcTokenPayloadExternal
+     * Runtime class alias of \Google\Service\PlayIntegrity\DecodePcIntegrityTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokenPayloadExternal()
+    class Google_Service_PlayIntegrity_DecodePcIntegrityTokenResponse extends \Google\Service\PlayIntegrity\DecodePcIntegrityTokenResponse
     {
     }
 }

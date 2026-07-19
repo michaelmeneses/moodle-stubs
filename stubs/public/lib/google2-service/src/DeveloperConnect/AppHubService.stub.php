@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class AppHubService extends \Google\Model
-{
-    /**
-     * Required. Output only. Immutable. The name of the App Hub Service. Format:
-     * `projects/{project}/locations/{location}/applications/{application}/service
-     * s/{service}`.
-     *
-     * @var string
-     */
-    public $apphubService;
-    /**
-     * Output only. The criticality of the App Hub Service.
-     *
-     * @var string
-     */
-    public $criticality;
-    /**
-     * Output only. The environment of the App Hub Service.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Required. Output only. Immutable. The name of the App Hub Service. Format:
-     * `projects/{project}/locations/{location}/applications/{application}/service
-     * s/{service}`.
-     *
-     * @param string $apphubService
-     */
-    public function setApphubService($apphubService)
+namespace Google\Service\DeveloperConnect {
+    class AppHubService extends \Google\Model
     {
+        /**
+         * Required. Output only. Immutable. The name of the App Hub Service. Format:
+         * `projects/{project}/locations/{location}/applications/{application}/service
+         * s/{service}`.
+         *
+         * @var string
+         */
+        public $apphubService;
+        /**
+         * Output only. The criticality of the App Hub Service.
+         *
+         * @var string
+         */
+        public $criticality;
+        /**
+         * Output only. The environment of the App Hub Service.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Required. Output only. Immutable. The name of the App Hub Service. Format:
+         * `projects/{project}/locations/{location}/applications/{application}/service
+         * s/{service}`.
+         *
+         * @param string $apphubService
+         */
+        public function setApphubService($apphubService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApphubService()
+        {
+        }
+        /**
+         * Output only. The criticality of the App Hub Service.
+         *
+         * @param string $criticality
+         */
+        public function setCriticality($criticality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCriticality()
+        {
+        }
+        /**
+         * Output only. The environment of the App Hub Service.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\AppHubService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApphubService()
-    {
-    }
-    /**
-     * Output only. The criticality of the App Hub Service.
-     *
-     * @param string $criticality
-     */
-    public function setCriticality($criticality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCriticality()
-    {
-    }
-    /**
-     * Output only. The environment of the App Hub Service.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
+    class Google_Service_DeveloperConnect_AppHubService extends \Google\Service\DeveloperConnect\AppHubService
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TranscodeSetting extends \Google\Collection
-{
-    protected $collection_key = 'enabledVideoFormats';
-    /**
-     * Allowlist of video formats to be served to this placement. Set this list to
-     * null or empty to serve all video formats.
-     *
-     * @var int[]
-     */
-    public $enabledVideoFormats;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#transcodeSetting".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Allowlist of video formats to be served to this placement. Set this list to
-     * null or empty to serve all video formats.
-     *
-     * @param int[] $enabledVideoFormats
-     */
-    public function setEnabledVideoFormats($enabledVideoFormats)
+namespace Google\Service\Dfareporting {
+    class TranscodeSetting extends \Google\Collection
     {
+        protected $collection_key = 'enabledVideoFormats';
+        /**
+         * Allowlist of video formats to be served to this placement. Set this list to
+         * null or empty to serve all video formats.
+         *
+         * @var int[]
+         */
+        public $enabledVideoFormats;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#transcodeSetting".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Allowlist of video formats to be served to this placement. Set this list to
+         * null or empty to serve all video formats.
+         *
+         * @param int[] $enabledVideoFormats
+         */
+        public function setEnabledVideoFormats($enabledVideoFormats)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getEnabledVideoFormats()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#transcodeSetting".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Dfareporting\TranscodeSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledVideoFormats()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#transcodeSetting".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_TranscodeSetting extends \Google\Service\Dfareporting\TranscodeSetting
     {
     }
 }

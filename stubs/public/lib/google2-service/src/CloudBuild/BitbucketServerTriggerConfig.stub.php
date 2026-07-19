@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BitbucketServerTriggerConfig extends \Google\Model
-{
-    protected $bitbucketServerConfigType = BitbucketServerConfig::class;
-    protected $bitbucketServerConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $bitbucketServerConfigResource;
-    /**
-     * @var string
-     */
-    public $projectKey;
-    protected $pullRequestType = PullRequestFilter::class;
-    protected $pullRequestDataType = '';
-    protected $pushType = PushFilter::class;
-    protected $pushDataType = '';
-    /**
-     * @var string
-     */
-    public $repoSlug;
-    /**
-     * @param BitbucketServerConfig
-     */
-    public function setBitbucketServerConfig(BitbucketServerConfig $bitbucketServerConfig)
+namespace Google\Service\CloudBuild {
+    class BitbucketServerTriggerConfig extends \Google\Model
     {
+        protected $bitbucketServerConfigType = BitbucketServerConfig::class;
+        protected $bitbucketServerConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $bitbucketServerConfigResource;
+        /**
+         * @var string
+         */
+        public $projectKey;
+        protected $pullRequestType = PullRequestFilter::class;
+        protected $pullRequestDataType = '';
+        protected $pushType = PushFilter::class;
+        protected $pushDataType = '';
+        /**
+         * @var string
+         */
+        public $repoSlug;
+        /**
+         * @param BitbucketServerConfig
+         */
+        public function setBitbucketServerConfig(BitbucketServerConfig $bitbucketServerConfig)
+        {
+        }
+        /**
+         * @return BitbucketServerConfig
+         */
+        public function getBitbucketServerConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBitbucketServerConfigResource($bitbucketServerConfigResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBitbucketServerConfigResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectKey($projectKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectKey()
+        {
+        }
+        /**
+         * @param PullRequestFilter
+         */
+        public function setPullRequest(PullRequestFilter $pullRequest)
+        {
+        }
+        /**
+         * @return PullRequestFilter
+         */
+        public function getPullRequest()
+        {
+        }
+        /**
+         * @param PushFilter
+         */
+        public function setPush(PushFilter $push)
+        {
+        }
+        /**
+         * @return PushFilter
+         */
+        public function getPush()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepoSlug($repoSlug)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepoSlug()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitbucketServerConfig
+     * Runtime class alias of \Google\Service\CloudBuild\BitbucketServerTriggerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBitbucketServerConfigResource($bitbucketServerConfigResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBitbucketServerConfigResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectKey($projectKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectKey()
-    {
-    }
-    /**
-     * @param PullRequestFilter
-     */
-    public function setPullRequest(PullRequestFilter $pullRequest)
-    {
-    }
-    /**
-     * @return PullRequestFilter
-     */
-    public function getPullRequest()
-    {
-    }
-    /**
-     * @param PushFilter
-     */
-    public function setPush(PushFilter $push)
-    {
-    }
-    /**
-     * @return PushFilter
-     */
-    public function getPush()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepoSlug($repoSlug)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepoSlug()
+    class Google_Service_CloudBuild_BitbucketServerTriggerConfig extends \Google\Service\CloudBuild\BitbucketServerTriggerConfig
     {
     }
 }

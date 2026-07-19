@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class ConsumerProject extends \Google\Model
-{
-    /**
-     * Required. Project number of the consumer that is launching the service
-     * instance. It can own the network that is peered with Google or, be a
-     * service project in an XPN where the host project has the network.
-     *
-     * @var string
-     */
-    public $projectNum;
-    /**
-     * Required. Project number of the consumer that is launching the service
-     * instance. It can own the network that is peered with Google or, be a
-     * service project in an XPN where the host project has the network.
-     *
-     * @param string $projectNum
-     */
-    public function setProjectNum($projectNum)
+namespace Google\Service\ServiceNetworking {
+    class ConsumerProject extends \Google\Model
     {
+        /**
+         * Required. Project number of the consumer that is launching the service
+         * instance. It can own the network that is peered with Google or, be a
+         * service project in an XPN where the host project has the network.
+         *
+         * @var string
+         */
+        public $projectNum;
+        /**
+         * Required. Project number of the consumer that is launching the service
+         * instance. It can own the network that is peered with Google or, be a
+         * service project in an XPN where the host project has the network.
+         *
+         * @param string $projectNum
+         */
+        public function setProjectNum($projectNum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\ConsumerProject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectNum()
+    class Google_Service_ServiceNetworking_ConsumerProject extends \Google\Service\ServiceNetworking\ConsumerProject
     {
     }
 }

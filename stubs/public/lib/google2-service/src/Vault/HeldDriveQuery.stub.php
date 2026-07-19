@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class HeldDriveQuery extends \Google\Model
-{
-    /**
-     * To include files in shared drives in the hold, set to **true**.
-     *
-     * @var bool
-     */
-    public $includeSharedDriveFiles;
-    /**
-     * To include files in Team Drives in the hold, set to **true**.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $includeTeamDriveFiles;
-    /**
-     * To include files in shared drives in the hold, set to **true**.
-     *
-     * @param bool $includeSharedDriveFiles
-     */
-    public function setIncludeSharedDriveFiles($includeSharedDriveFiles)
+namespace Google\Service\Vault {
+    class HeldDriveQuery extends \Google\Model
     {
+        /**
+         * To include files in shared drives in the hold, set to **true**.
+         *
+         * @var bool
+         */
+        public $includeSharedDriveFiles;
+        /**
+         * To include files in Team Drives in the hold, set to **true**.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $includeTeamDriveFiles;
+        /**
+         * To include files in shared drives in the hold, set to **true**.
+         *
+         * @param bool $includeSharedDriveFiles
+         */
+        public function setIncludeSharedDriveFiles($includeSharedDriveFiles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeSharedDriveFiles()
+        {
+        }
+        /**
+         * To include files in Team Drives in the hold, set to **true**.
+         *
+         * @deprecated
+         * @param bool $includeTeamDriveFiles
+         */
+        public function setIncludeTeamDriveFiles($includeTeamDriveFiles)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIncludeTeamDriveFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vault\HeldDriveQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeSharedDriveFiles()
-    {
-    }
-    /**
-     * To include files in Team Drives in the hold, set to **true**.
-     *
-     * @deprecated
-     * @param bool $includeTeamDriveFiles
-     */
-    public function setIncludeTeamDriveFiles($includeTeamDriveFiles)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getIncludeTeamDriveFiles()
+    class Google_Service_Vault_HeldDriveQuery extends \Google\Service\Vault\HeldDriveQuery
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1CostProjection extends \Google\Model
-{
-    protected $costType = GoogleTypeMoney::class;
-    protected $costDataType = '';
-    protected $costInLocalCurrencyType = GoogleTypeMoney::class;
-    protected $costInLocalCurrencyDataType = '';
-    /**
-     * Duration for which this cost applies.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * An approximate projection on amount saved or amount incurred. Negative cost
-     * units indicate cost savings and positive cost units indicate increase. See
-     * google.type.Money documentation for positive/negative units. A user's
-     * permissions may affect whether the cost is computed using list prices or
-     * custom contract prices.
-     *
-     * @param GoogleTypeMoney $cost
-     */
-    public function setCost(GoogleTypeMoney $cost)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1CostProjection extends \Google\Model
     {
+        protected $costType = GoogleTypeMoney::class;
+        protected $costDataType = '';
+        protected $costInLocalCurrencyType = GoogleTypeMoney::class;
+        protected $costInLocalCurrencyDataType = '';
+        /**
+         * Duration for which this cost applies.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * An approximate projection on amount saved or amount incurred. Negative cost
+         * units indicate cost savings and positive cost units indicate increase. See
+         * google.type.Money documentation for positive/negative units. A user's
+         * permissions may affect whether the cost is computed using list prices or
+         * custom contract prices.
+         *
+         * @param GoogleTypeMoney $cost
+         */
+        public function setCost(GoogleTypeMoney $cost)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getCost()
+        {
+        }
+        /**
+         * The approximate cost savings in the billing account's local currency.
+         *
+         * @param GoogleTypeMoney $costInLocalCurrency
+         */
+        public function setCostInLocalCurrency(GoogleTypeMoney $costInLocalCurrency)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getCostInLocalCurrency()
+        {
+        }
+        /**
+         * Duration for which this cost applies.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeMoney
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1CostProjection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCost()
-    {
-    }
-    /**
-     * The approximate cost savings in the billing account's local currency.
-     *
-     * @param GoogleTypeMoney $costInLocalCurrency
-     */
-    public function setCostInLocalCurrency(GoogleTypeMoney $costInLocalCurrency)
-    {
-    }
-    /**
-     * @return GoogleTypeMoney
-     */
-    public function getCostInLocalCurrency()
-    {
-    }
-    /**
-     * Duration for which this cost applies.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1CostProjection extends \Google\Service\Recommender\GoogleCloudRecommenderV1CostProjection
     {
     }
 }

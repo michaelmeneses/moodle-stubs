@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class UndeleteDatasetRequest extends \Google\Model
-{
-    /**
-     * Optional. The exact time when the dataset was deleted. If not specified,
-     * the most recently deleted version is undeleted. Undeleting a dataset using
-     * deletion time is not supported.
-     *
-     * @var string
-     */
-    public $deletionTime;
-    /**
-     * Optional. The exact time when the dataset was deleted. If not specified,
-     * the most recently deleted version is undeleted. Undeleting a dataset using
-     * deletion time is not supported.
-     *
-     * @param string $deletionTime
-     */
-    public function setDeletionTime($deletionTime)
+namespace Google\Service\Bigquery {
+    class UndeleteDatasetRequest extends \Google\Model
     {
+        /**
+         * Optional. The exact time when the dataset was deleted. If not specified,
+         * the most recently deleted version is undeleted. Undeleting a dataset using
+         * deletion time is not supported.
+         *
+         * @var string
+         */
+        public $deletionTime;
+        /**
+         * Optional. The exact time when the dataset was deleted. If not specified,
+         * the most recently deleted version is undeleted. Undeleting a dataset using
+         * deletion time is not supported.
+         *
+         * @param string $deletionTime
+         */
+        public function setDeletionTime($deletionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletionTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\UndeleteDatasetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletionTime()
+    class Google_Service_Bigquery_UndeleteDatasetRequest extends \Google\Service\Bigquery\UndeleteDatasetRequest
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickCommonDebugInfo extends \Google\Model
-{
-    /**
-     * Debug message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Debug message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickCommonDebugInfo extends \Google\Model
     {
+        /**
+         * Debug message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Debug message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickCommonDebugInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickCommonDebugInfo extends \Google\Service\CloudSearch\EnterpriseTopazSidekickCommonDebugInfo
     {
     }
 }

@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SourceProgress extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $endOffset;
-    public $inputRowsPerSecond;
-    /**
-     * @var string
-     */
-    public $latestOffset;
-    /**
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * @var string
-     */
-    public $numInputRows;
-    public $processedRowsPerSecond;
-    /**
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dataproc {
+    class SourceProgress extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $endOffset;
+        public $inputRowsPerSecond;
+        /**
+         * @var string
+         */
+        public $latestOffset;
+        /**
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * @var string
+         */
+        public $numInputRows;
+        public $processedRowsPerSecond;
+        /**
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        public function setInputRowsPerSecond($inputRowsPerSecond)
+        {
+        }
+        public function getInputRowsPerSecond()
+        {
+        }
+        /**
+         * @param string $latestOffset
+         */
+        public function setLatestOffset($latestOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestOffset()
+        {
+        }
+        /**
+         * @param string[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param string $numInputRows
+         */
+        public function setNumInputRows($numInputRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumInputRows()
+        {
+        }
+        public function setProcessedRowsPerSecond($processedRowsPerSecond)
+        {
+        }
+        public function getProcessedRowsPerSecond()
+        {
+        }
+        /**
+         * @param string $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SourceProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string $endOffset
-     */
-    public function setEndOffset($endOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOffset()
-    {
-    }
-    public function setInputRowsPerSecond($inputRowsPerSecond)
-    {
-    }
-    public function getInputRowsPerSecond()
-    {
-    }
-    /**
-     * @param string $latestOffset
-     */
-    public function setLatestOffset($latestOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestOffset()
-    {
-    }
-    /**
-     * @param string[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param string $numInputRows
-     */
-    public function setNumInputRows($numInputRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumInputRows()
-    {
-    }
-    public function setProcessedRowsPerSecond($processedRowsPerSecond)
-    {
-    }
-    public function getProcessedRowsPerSecond()
-    {
-    }
-    /**
-     * @param string $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
+    class Google_Service_Dataproc_SourceProgress extends \Google\Service\Dataproc\SourceProgress
     {
     }
 }

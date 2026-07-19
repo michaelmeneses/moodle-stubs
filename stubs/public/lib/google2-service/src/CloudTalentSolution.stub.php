@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudTalentSolution (v4).
- *
- * <p>
- * Cloud Talent Solution provides the capability to create, read, update, and
- * delete job postings, as well as search jobs based on keywords and filters.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/talent-solution/job-search/docs/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudTalentSolution extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Manage job postings. */
-    const JOBS = "https://www.googleapis.com/auth/jobs";
-    public $projects_operations;
-    public $projects_tenants;
-    public $projects_tenants_clientEvents;
-    public $projects_tenants_companies;
-    public $projects_tenants_jobs;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudTalentSolution service.
+     * Service definition for CloudTalentSolution (v4).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Cloud Talent Solution provides the capability to create, read, update, and
+     * delete job postings, as well as search jobs based on keywords and filters.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/talent-solution/job-search/docs/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudTalentSolution extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Manage job postings. */
+        const JOBS = "https://www.googleapis.com/auth/jobs";
+        public $projects_operations;
+        public $projects_tenants;
+        public $projects_tenants_clientEvents;
+        public $projects_tenants_companies;
+        public $projects_tenants_jobs;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudTalentSolution service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudTalentSolution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudTalentSolution extends \Google\Service\CloudTalentSolution
     {
     }
 }

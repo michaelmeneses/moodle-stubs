@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends \Google\Model
-{
-    /**
-     * The time at which the operation was submitted.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The name of the study that the trial belongs to.
-     *
-     * @var string
-     */
-    public $study;
-    /**
-     * The trial name.
-     *
-     * @var string
-     */
-    public $trial;
-    /**
-     * The time at which the operation was submitted.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends \Google\Model
     {
+        /**
+         * The time at which the operation was submitted.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The name of the study that the trial belongs to.
+         *
+         * @var string
+         */
+        public $study;
+        /**
+         * The trial name.
+         *
+         * @var string
+         */
+        public $trial;
+        /**
+         * The time at which the operation was submitted.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The name of the study that the trial belongs to.
+         *
+         * @param string $study
+         */
+        public function setStudy($study)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudy()
+        {
+        }
+        /**
+         * The trial name.
+         *
+         * @param string $trial
+         */
+        public function setTrial($trial)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The name of the study that the trial belongs to.
-     *
-     * @param string $study
-     */
-    public function setStudy($study)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudy()
-    {
-    }
-    /**
-     * The trial name.
-     *
-     * @param string $trial
-     */
-    public function setTrial($trial)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrial()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata
     {
     }
 }

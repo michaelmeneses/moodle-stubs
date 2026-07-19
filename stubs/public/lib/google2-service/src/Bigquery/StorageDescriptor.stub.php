@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StorageDescriptor extends \Google\Model
-{
-    /**
-     * Optional. Specifies the fully qualified class name of the InputFormat (e.g.
-     * "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat"). The maximum length is
-     * 128 characters.
-     *
-     * @var string
-     */
-    public $inputFormat;
-    /**
-     * Optional. The physical location of the table (e.g. `gs://spark-dataproc-
-     * data/pangea-data/case_sensitive/` or `gs://spark-dataproc-data/pangea-
-     * data`). The maximum length is 2056 bytes.
-     *
-     * @var string
-     */
-    public $locationUri;
-    /**
-     * Optional. Specifies the fully qualified class name of the OutputFormat
-     * (e.g. "org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat"). The maximum
-     * length is 128 characters.
-     *
-     * @var string
-     */
-    public $outputFormat;
-    protected $serdeInfoType = SerDeInfo::class;
-    protected $serdeInfoDataType = '';
-    /**
-     * Optional. Specifies the fully qualified class name of the InputFormat (e.g.
-     * "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat"). The maximum length is
-     * 128 characters.
-     *
-     * @param string $inputFormat
-     */
-    public function setInputFormat($inputFormat)
+namespace Google\Service\Bigquery {
+    class StorageDescriptor extends \Google\Model
     {
+        /**
+         * Optional. Specifies the fully qualified class name of the InputFormat (e.g.
+         * "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat"). The maximum length is
+         * 128 characters.
+         *
+         * @var string
+         */
+        public $inputFormat;
+        /**
+         * Optional. The physical location of the table (e.g. `gs://spark-dataproc-
+         * data/pangea-data/case_sensitive/` or `gs://spark-dataproc-data/pangea-
+         * data`). The maximum length is 2056 bytes.
+         *
+         * @var string
+         */
+        public $locationUri;
+        /**
+         * Optional. Specifies the fully qualified class name of the OutputFormat
+         * (e.g. "org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat"). The maximum
+         * length is 128 characters.
+         *
+         * @var string
+         */
+        public $outputFormat;
+        protected $serdeInfoType = SerDeInfo::class;
+        protected $serdeInfoDataType = '';
+        /**
+         * Optional. Specifies the fully qualified class name of the InputFormat (e.g.
+         * "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat"). The maximum length is
+         * 128 characters.
+         *
+         * @param string $inputFormat
+         */
+        public function setInputFormat($inputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputFormat()
+        {
+        }
+        /**
+         * Optional. The physical location of the table (e.g. `gs://spark-dataproc-
+         * data/pangea-data/case_sensitive/` or `gs://spark-dataproc-data/pangea-
+         * data`). The maximum length is 2056 bytes.
+         *
+         * @param string $locationUri
+         */
+        public function setLocationUri($locationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationUri()
+        {
+        }
+        /**
+         * Optional. Specifies the fully qualified class name of the OutputFormat
+         * (e.g. "org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat"). The maximum
+         * length is 128 characters.
+         *
+         * @param string $outputFormat
+         */
+        public function setOutputFormat($outputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputFormat()
+        {
+        }
+        /**
+         * Optional. Serializer and deserializer information.
+         *
+         * @param SerDeInfo $serdeInfo
+         */
+        public function setSerdeInfo(SerDeInfo $serdeInfo)
+        {
+        }
+        /**
+         * @return SerDeInfo
+         */
+        public function getSerdeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\StorageDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputFormat()
-    {
-    }
-    /**
-     * Optional. The physical location of the table (e.g. `gs://spark-dataproc-
-     * data/pangea-data/case_sensitive/` or `gs://spark-dataproc-data/pangea-
-     * data`). The maximum length is 2056 bytes.
-     *
-     * @param string $locationUri
-     */
-    public function setLocationUri($locationUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationUri()
-    {
-    }
-    /**
-     * Optional. Specifies the fully qualified class name of the OutputFormat
-     * (e.g. "org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat"). The maximum
-     * length is 128 characters.
-     *
-     * @param string $outputFormat
-     */
-    public function setOutputFormat($outputFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputFormat()
-    {
-    }
-    /**
-     * Optional. Serializer and deserializer information.
-     *
-     * @param SerDeInfo $serdeInfo
-     */
-    public function setSerdeInfo(SerDeInfo $serdeInfo)
-    {
-    }
-    /**
-     * @return SerDeInfo
-     */
-    public function getSerdeInfo()
+    class Google_Service_Bigquery_StorageDescriptor extends \Google\Service\Bigquery\StorageDescriptor
     {
     }
 }

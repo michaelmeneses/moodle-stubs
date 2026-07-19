@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class DocumentChange extends \Google\Collection
-{
-    protected $collection_key = 'targetIds';
-    protected $documentType = Document::class;
-    protected $documentDataType = '';
-    /**
-     * A set of target IDs for targets that no longer match this document.
-     *
-     * @var int[]
-     */
-    public $removedTargetIds;
-    /**
-     * A set of target IDs of targets that match this document.
-     *
-     * @var int[]
-     */
-    public $targetIds;
-    /**
-     * The new state of the Document. If `mask` is set, contains only fields that
-     * were updated or added.
-     *
-     * @param Document $document
-     */
-    public function setDocument(Document $document)
+namespace Google\Service\Firestore {
+    class DocumentChange extends \Google\Collection
     {
+        protected $collection_key = 'targetIds';
+        protected $documentType = Document::class;
+        protected $documentDataType = '';
+        /**
+         * A set of target IDs for targets that no longer match this document.
+         *
+         * @var int[]
+         */
+        public $removedTargetIds;
+        /**
+         * A set of target IDs of targets that match this document.
+         *
+         * @var int[]
+         */
+        public $targetIds;
+        /**
+         * The new state of the Document. If `mask` is set, contains only fields that
+         * were updated or added.
+         *
+         * @param Document $document
+         */
+        public function setDocument(Document $document)
+        {
+        }
+        /**
+         * @return Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * A set of target IDs for targets that no longer match this document.
+         *
+         * @param int[] $removedTargetIds
+         */
+        public function setRemovedTargetIds($removedTargetIds)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getRemovedTargetIds()
+        {
+        }
+        /**
+         * A set of target IDs of targets that match this document.
+         *
+         * @param int[] $targetIds
+         */
+        public function setTargetIds($targetIds)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getTargetIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Document
+     * Runtime class alias of \Google\Service\Firestore\DocumentChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * A set of target IDs for targets that no longer match this document.
-     *
-     * @param int[] $removedTargetIds
-     */
-    public function setRemovedTargetIds($removedTargetIds)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getRemovedTargetIds()
-    {
-    }
-    /**
-     * A set of target IDs of targets that match this document.
-     *
-     * @param int[] $targetIds
-     */
-    public function setTargetIds($targetIds)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getTargetIds()
+    class Google_Service_Firestore_DocumentChange extends \Google\Service\Firestore\DocumentChange
     {
     }
 }

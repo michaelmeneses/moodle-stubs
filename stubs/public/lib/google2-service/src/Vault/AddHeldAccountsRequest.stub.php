@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class AddHeldAccountsRequest extends \Google\Collection
-{
-    protected $collection_key = 'emails';
-    /**
-     * A comma-separated list of the account IDs of the accounts to add to the
-     * hold. Specify either **emails** or **account_ids**, but not both.
-     *
-     * @var string[]
-     */
-    public $accountIds;
-    /**
-     * A comma-separated list of the emails of the accounts to add to the hold.
-     * Specify either **emails** or **account_ids**, but not both.
-     *
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * A comma-separated list of the account IDs of the accounts to add to the
-     * hold. Specify either **emails** or **account_ids**, but not both.
-     *
-     * @param string[] $accountIds
-     */
-    public function setAccountIds($accountIds)
+namespace Google\Service\Vault {
+    class AddHeldAccountsRequest extends \Google\Collection
     {
+        protected $collection_key = 'emails';
+        /**
+         * A comma-separated list of the account IDs of the accounts to add to the
+         * hold. Specify either **emails** or **account_ids**, but not both.
+         *
+         * @var string[]
+         */
+        public $accountIds;
+        /**
+         * A comma-separated list of the emails of the accounts to add to the hold.
+         * Specify either **emails** or **account_ids**, but not both.
+         *
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * A comma-separated list of the account IDs of the accounts to add to the
+         * hold. Specify either **emails** or **account_ids**, but not both.
+         *
+         * @param string[] $accountIds
+         */
+        public function setAccountIds($accountIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAccountIds()
+        {
+        }
+        /**
+         * A comma-separated list of the emails of the accounts to add to the hold.
+         * Specify either **emails** or **account_ids**, but not both.
+         *
+         * @param string[] $emails
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\AddHeldAccountsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountIds()
-    {
-    }
-    /**
-     * A comma-separated list of the emails of the accounts to add to the hold.
-     * Specify either **emails** or **account_ids**, but not both.
-     *
-     * @param string[] $emails
-     */
-    public function setEmails($emails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEmails()
+    class Google_Service_Vault_AddHeldAccountsRequest extends \Google\Service\Vault\AddHeldAccountsRequest
     {
     }
 }

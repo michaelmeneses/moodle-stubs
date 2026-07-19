@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class TermsAndConditions extends \Google\Model
-{
-    protected $contentType = UserFacingMessage::class;
-    protected $contentDataType = '';
-    protected $headerType = UserFacingMessage::class;
-    protected $headerDataType = '';
-    /**
-     * A well-formatted HTML string. It will be parsed on the client with
-     * android.text.Html#fromHtml.
-     *
-     * @param UserFacingMessage $content
-     */
-    public function setContent(UserFacingMessage $content)
+namespace Google\Service\AndroidManagement {
+    class TermsAndConditions extends \Google\Model
     {
+        protected $contentType = UserFacingMessage::class;
+        protected $contentDataType = '';
+        protected $headerType = UserFacingMessage::class;
+        protected $headerDataType = '';
+        /**
+         * A well-formatted HTML string. It will be parsed on the client with
+         * android.text.Html#fromHtml.
+         *
+         * @param UserFacingMessage $content
+         */
+        public function setContent(UserFacingMessage $content)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * A short header which appears above the HTML content.
+         *
+         * @param UserFacingMessage $header
+         */
+        public function setHeader(UserFacingMessage $header)
+        {
+        }
+        /**
+         * @return UserFacingMessage
+         */
+        public function getHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserFacingMessage
+     * Runtime class alias of \Google\Service\AndroidManagement\TermsAndConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * A short header which appears above the HTML content.
-     *
-     * @param UserFacingMessage $header
-     */
-    public function setHeader(UserFacingMessage $header)
-    {
-    }
-    /**
-     * @return UserFacingMessage
-     */
-    public function getHeader()
+    class Google_Service_AndroidManagement_TermsAndConditions extends \Google\Service\AndroidManagement\TermsAndConditions
     {
     }
 }

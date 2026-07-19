@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemShippingDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deliverByDate;
-    protected $methodType = OrderLineItemShippingDetailsMethod::class;
-    protected $methodDataType = '';
-    /**
-     * @var string
-     */
-    public $pickupPromiseInMinutes;
-    /**
-     * @var string
-     */
-    public $shipByDate;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setDeliverByDate($deliverByDate)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemShippingDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deliverByDate;
+        protected $methodType = OrderLineItemShippingDetailsMethod::class;
+        protected $methodDataType = '';
+        /**
+         * @var string
+         */
+        public $pickupPromiseInMinutes;
+        /**
+         * @var string
+         */
+        public $shipByDate;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setDeliverByDate($deliverByDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeliverByDate()
+        {
+        }
+        /**
+         * @param OrderLineItemShippingDetailsMethod
+         */
+        public function setMethod(OrderLineItemShippingDetailsMethod $method)
+        {
+        }
+        /**
+         * @return OrderLineItemShippingDetailsMethod
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPickupPromiseInMinutes($pickupPromiseInMinutes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPickupPromiseInMinutes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipByDate($shipByDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipByDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemShippingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliverByDate()
-    {
-    }
-    /**
-     * @param OrderLineItemShippingDetailsMethod
-     */
-    public function setMethod(OrderLineItemShippingDetailsMethod $method)
-    {
-    }
-    /**
-     * @return OrderLineItemShippingDetailsMethod
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPickupPromiseInMinutes($pickupPromiseInMinutes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPickupPromiseInMinutes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipByDate($shipByDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipByDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_OrderLineItemShippingDetails extends \Google\Service\ShoppingContent\OrderLineItemShippingDetails
     {
     }
 }

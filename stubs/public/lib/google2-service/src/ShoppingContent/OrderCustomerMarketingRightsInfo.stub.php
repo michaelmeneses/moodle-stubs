@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderCustomerMarketingRightsInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $explicitMarketingPreference;
-    /**
-     * @var string
-     */
-    public $lastUpdatedTimestamp;
-    /**
-     * @var string
-     */
-    public $marketingEmailAddress;
-    /**
-     * @param string
-     */
-    public function setExplicitMarketingPreference($explicitMarketingPreference)
+namespace Google\Service\ShoppingContent {
+    class OrderCustomerMarketingRightsInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $explicitMarketingPreference;
+        /**
+         * @var string
+         */
+        public $lastUpdatedTimestamp;
+        /**
+         * @var string
+         */
+        public $marketingEmailAddress;
+        /**
+         * @param string
+         */
+        public function setExplicitMarketingPreference($explicitMarketingPreference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplicitMarketingPreference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestamp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMarketingEmailAddress($marketingEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMarketingEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderCustomerMarketingRightsInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplicitMarketingPreference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdatedTimestamp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMarketingEmailAddress($marketingEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMarketingEmailAddress()
+    class Google_Service_ShoppingContent_OrderCustomerMarketingRightsInfo extends \Google\Service\ShoppingContent\OrderCustomerMarketingRightsInfo
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceCpuInfoLogicalCpus extends \Google\Collection
-{
-    protected $collection_key = 'cStates';
-    protected $cStatesType = ChromeOsDeviceCpuInfoLogicalCpusCStates::class;
-    protected $cStatesDataType = 'array';
-    /**
-     * Current frequency the CPU is running at.
-     *
-     * @var int
-     */
-    public $currentScalingFrequencyKhz;
-    /**
-     * Idle time since last boot.
-     *
-     * @var string
-     */
-    public $idleDuration;
-    /**
-     * Maximum frequency the CPU is allowed to run at, by policy.
-     *
-     * @var int
-     */
-    public $maxScalingFrequencyKhz;
-    /**
-     * C-States indicate the power consumption state of the CPU. For more
-     * information look at documentation published by the CPU maker.
-     *
-     * @param ChromeOsDeviceCpuInfoLogicalCpusCStates[] $cStates
-     */
-    public function setCStates($cStates)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceCpuInfoLogicalCpus extends \Google\Collection
     {
+        protected $collection_key = 'cStates';
+        protected $cStatesType = ChromeOsDeviceCpuInfoLogicalCpusCStates::class;
+        protected $cStatesDataType = 'array';
+        /**
+         * Current frequency the CPU is running at.
+         *
+         * @var int
+         */
+        public $currentScalingFrequencyKhz;
+        /**
+         * Idle time since last boot.
+         *
+         * @var string
+         */
+        public $idleDuration;
+        /**
+         * Maximum frequency the CPU is allowed to run at, by policy.
+         *
+         * @var int
+         */
+        public $maxScalingFrequencyKhz;
+        /**
+         * C-States indicate the power consumption state of the CPU. For more
+         * information look at documentation published by the CPU maker.
+         *
+         * @param ChromeOsDeviceCpuInfoLogicalCpusCStates[] $cStates
+         */
+        public function setCStates($cStates)
+        {
+        }
+        /**
+         * @return ChromeOsDeviceCpuInfoLogicalCpusCStates[]
+         */
+        public function getCStates()
+        {
+        }
+        /**
+         * Current frequency the CPU is running at.
+         *
+         * @param int $currentScalingFrequencyKhz
+         */
+        public function setCurrentScalingFrequencyKhz($currentScalingFrequencyKhz)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentScalingFrequencyKhz()
+        {
+        }
+        /**
+         * Idle time since last boot.
+         *
+         * @param string $idleDuration
+         */
+        public function setIdleDuration($idleDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdleDuration()
+        {
+        }
+        /**
+         * Maximum frequency the CPU is allowed to run at, by policy.
+         *
+         * @param int $maxScalingFrequencyKhz
+         */
+        public function setMaxScalingFrequencyKhz($maxScalingFrequencyKhz)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxScalingFrequencyKhz()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChromeOsDeviceCpuInfoLogicalCpusCStates[]
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceCpuInfoLogicalCpus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCStates()
-    {
-    }
-    /**
-     * Current frequency the CPU is running at.
-     *
-     * @param int $currentScalingFrequencyKhz
-     */
-    public function setCurrentScalingFrequencyKhz($currentScalingFrequencyKhz)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCurrentScalingFrequencyKhz()
-    {
-    }
-    /**
-     * Idle time since last boot.
-     *
-     * @param string $idleDuration
-     */
-    public function setIdleDuration($idleDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdleDuration()
-    {
-    }
-    /**
-     * Maximum frequency the CPU is allowed to run at, by policy.
-     *
-     * @param int $maxScalingFrequencyKhz
-     */
-    public function setMaxScalingFrequencyKhz($maxScalingFrequencyKhz)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxScalingFrequencyKhz()
+    class Google_Service_Directory_ChromeOsDeviceCpuInfoLogicalCpus extends \Google\Service\Directory\ChromeOsDeviceCpuInfoLogicalCpus
     {
     }
 }

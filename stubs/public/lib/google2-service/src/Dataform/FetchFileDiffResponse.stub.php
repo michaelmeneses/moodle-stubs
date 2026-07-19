@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class FetchFileDiffResponse extends \Google\Model
-{
-    /**
-     * The raw formatted Git diff for the file.
-     *
-     * @var string
-     */
-    public $formattedDiff;
-    /**
-     * The raw formatted Git diff for the file.
-     *
-     * @param string $formattedDiff
-     */
-    public function setFormattedDiff($formattedDiff)
+namespace Google\Service\Dataform {
+    class FetchFileDiffResponse extends \Google\Model
     {
+        /**
+         * The raw formatted Git diff for the file.
+         *
+         * @var string
+         */
+        public $formattedDiff;
+        /**
+         * The raw formatted Git diff for the file.
+         *
+         * @param string $formattedDiff
+         */
+        public function setFormattedDiff($formattedDiff)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedDiff()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\FetchFileDiffResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedDiff()
+    class Google_Service_Dataform_FetchFileDiffResponse extends \Google\Service\Dataform\FetchFileDiffResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class GetPolicyOptions extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $requestedPolicyVersion;
-    /**
-     * @param int
-     */
-    public function setRequestedPolicyVersion($requestedPolicyVersion)
+namespace Google\Service\CloudIot {
+    class GetPolicyOptions extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $requestedPolicyVersion;
+        /**
+         * @param int
+         */
+        public function setRequestedPolicyVersion($requestedPolicyVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRequestedPolicyVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudIot\GetPolicyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestedPolicyVersion()
+    class Google_Service_CloudIot_GetPolicyOptions extends \Google\Service\CloudIot\GetPolicyOptions
     {
     }
 }

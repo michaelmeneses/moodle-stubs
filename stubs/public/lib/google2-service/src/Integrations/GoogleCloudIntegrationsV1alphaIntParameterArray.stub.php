@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaIntParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'intValues';
-    /**
-     * Integer array.
-     *
-     * @var string[]
-     */
-    public $intValues;
-    /**
-     * Integer array.
-     *
-     * @param string[] $intValues
-     */
-    public function setIntValues($intValues)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaIntParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'intValues';
+        /**
+         * Integer array.
+         *
+         * @var string[]
+         */
+        public $intValues;
+        /**
+         * Integer array.
+         *
+         * @param string[] $intValues
+         */
+        public function setIntValues($intValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntValues()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaIntParameterArray extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntParameterArray
     {
     }
 }

@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1AcceleratorConfig extends \Google\Model
-{
-    /**
-     * Unspecified accelerator type. Default to no GPU.
-     */
-    public const TYPE_ACCELERATOR_TYPE_UNSPECIFIED = 'ACCELERATOR_TYPE_UNSPECIFIED';
-    /**
-     * Nvidia Tesla K80 GPU.
-     */
-    public const TYPE_NVIDIA_TESLA_K80 = 'NVIDIA_TESLA_K80';
-    /**
-     * Nvidia Tesla P100 GPU.
-     */
-    public const TYPE_NVIDIA_TESLA_P100 = 'NVIDIA_TESLA_P100';
-    /**
-     * Nvidia V100 GPU.
-     */
-    public const TYPE_NVIDIA_TESLA_V100 = 'NVIDIA_TESLA_V100';
-    /**
-     * Nvidia Tesla P4 GPU.
-     */
-    public const TYPE_NVIDIA_TESLA_P4 = 'NVIDIA_TESLA_P4';
-    /**
-     * Nvidia T4 GPU.
-     */
-    public const TYPE_NVIDIA_TESLA_T4 = 'NVIDIA_TESLA_T4';
-    /**
-     * Nvidia A100 GPU.
-     */
-    public const TYPE_NVIDIA_TESLA_A100 = 'NVIDIA_TESLA_A100';
-    /**
-     * TPU v2.
-     */
-    public const TYPE_TPU_V2 = 'TPU_V2';
-    /**
-     * TPU v3.
-     */
-    public const TYPE_TPU_V3 = 'TPU_V3';
-    /**
-     * TPU v2 POD.
-     */
-    public const TYPE_TPU_V2_POD = 'TPU_V2_POD';
-    /**
-     * TPU v3 POD.
-     */
-    public const TYPE_TPU_V3_POD = 'TPU_V3_POD';
-    /**
-     * TPU v4 POD.
-     */
-    public const TYPE_TPU_V4_POD = 'TPU_V4_POD';
-    /**
-     * The number of accelerators to attach to each machine running the job.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The type of accelerator to use.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The number of accelerators to attach to each machine running the job.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1AcceleratorConfig extends \Google\Model
     {
+        /**
+         * Unspecified accelerator type. Default to no GPU.
+         */
+        public const TYPE_ACCELERATOR_TYPE_UNSPECIFIED = 'ACCELERATOR_TYPE_UNSPECIFIED';
+        /**
+         * Nvidia Tesla K80 GPU.
+         */
+        public const TYPE_NVIDIA_TESLA_K80 = 'NVIDIA_TESLA_K80';
+        /**
+         * Nvidia Tesla P100 GPU.
+         */
+        public const TYPE_NVIDIA_TESLA_P100 = 'NVIDIA_TESLA_P100';
+        /**
+         * Nvidia V100 GPU.
+         */
+        public const TYPE_NVIDIA_TESLA_V100 = 'NVIDIA_TESLA_V100';
+        /**
+         * Nvidia Tesla P4 GPU.
+         */
+        public const TYPE_NVIDIA_TESLA_P4 = 'NVIDIA_TESLA_P4';
+        /**
+         * Nvidia T4 GPU.
+         */
+        public const TYPE_NVIDIA_TESLA_T4 = 'NVIDIA_TESLA_T4';
+        /**
+         * Nvidia A100 GPU.
+         */
+        public const TYPE_NVIDIA_TESLA_A100 = 'NVIDIA_TESLA_A100';
+        /**
+         * TPU v2.
+         */
+        public const TYPE_TPU_V2 = 'TPU_V2';
+        /**
+         * TPU v3.
+         */
+        public const TYPE_TPU_V3 = 'TPU_V3';
+        /**
+         * TPU v2 POD.
+         */
+        public const TYPE_TPU_V2_POD = 'TPU_V2_POD';
+        /**
+         * TPU v3 POD.
+         */
+        public const TYPE_TPU_V3_POD = 'TPU_V3_POD';
+        /**
+         * TPU v4 POD.
+         */
+        public const TYPE_TPU_V4_POD = 'TPU_V4_POD';
+        /**
+         * The number of accelerators to attach to each machine running the job.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The type of accelerator to use.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The number of accelerators to attach to each machine running the job.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The type of accelerator to use.
+         *
+         * Accepted values: ACCELERATOR_TYPE_UNSPECIFIED, NVIDIA_TESLA_K80,
+         * NVIDIA_TESLA_P100, NVIDIA_TESLA_V100, NVIDIA_TESLA_P4, NVIDIA_TESLA_T4,
+         * NVIDIA_TESLA_A100, TPU_V2, TPU_V3, TPU_V2_POD, TPU_V3_POD, TPU_V4_POD
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AcceleratorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The type of accelerator to use.
-     *
-     * Accepted values: ACCELERATOR_TYPE_UNSPECIFIED, NVIDIA_TESLA_K80,
-     * NVIDIA_TESLA_P100, NVIDIA_TESLA_V100, NVIDIA_TESLA_P4, NVIDIA_TESLA_T4,
-     * NVIDIA_TESLA_A100, TPU_V2, TPU_V3, TPU_V2_POD, TPU_V3_POD, TPU_V4_POD
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AcceleratorConfig extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AcceleratorConfig
     {
     }
 }

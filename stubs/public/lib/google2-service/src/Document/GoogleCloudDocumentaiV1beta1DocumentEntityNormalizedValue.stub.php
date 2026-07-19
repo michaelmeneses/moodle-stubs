@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue extends \Google\Model
-{
-    protected $addressValueType = GoogleTypePostalAddress::class;
-    protected $addressValueDataType = '';
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    protected $dateValueType = GoogleTypeDate::class;
-    protected $dateValueDataType = '';
-    protected $datetimeValueType = GoogleTypeDateTime::class;
-    protected $datetimeValueDataType = '';
-    /**
-     * @var float
-     */
-    public $floatValue;
-    /**
-     * @var int
-     */
-    public $integerValue;
-    protected $moneyValueType = GoogleTypeMoney::class;
-    protected $moneyValueDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param GoogleTypePostalAddress
-     */
-    public function setAddressValue(GoogleTypePostalAddress $addressValue)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue extends \Google\Model
     {
+        protected $addressValueType = GoogleTypePostalAddress::class;
+        protected $addressValueDataType = '';
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        protected $dateValueType = GoogleTypeDate::class;
+        protected $dateValueDataType = '';
+        protected $datetimeValueType = GoogleTypeDateTime::class;
+        protected $datetimeValueDataType = '';
+        /**
+         * @var float
+         */
+        public $floatValue;
+        /**
+         * @var int
+         */
+        public $integerValue;
+        protected $moneyValueType = GoogleTypeMoney::class;
+        protected $moneyValueDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param GoogleTypePostalAddress
+         */
+        public function setAddressValue(GoogleTypePostalAddress $addressValue)
+        {
+        }
+        /**
+         * @return GoogleTypePostalAddress
+         */
+        public function getAddressValue()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param GoogleTypeDate
+         */
+        public function setDateValue(GoogleTypeDate $dateValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getDateValue()
+        {
+        }
+        /**
+         * @param GoogleTypeDateTime
+         */
+        public function setDatetimeValue(GoogleTypeDateTime $datetimeValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getDatetimeValue()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFloatValue()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIntegerValue($integerValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntegerValue()
+        {
+        }
+        /**
+         * @param GoogleTypeMoney
+         */
+        public function setMoneyValue(GoogleTypeMoney $moneyValue)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getMoneyValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypePostalAddress
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressValue()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setBooleanValue($booleanValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param GoogleTypeDate
-     */
-    public function setDateValue(GoogleTypeDate $dateValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getDateValue()
-    {
-    }
-    /**
-     * @param GoogleTypeDateTime
-     */
-    public function setDatetimeValue(GoogleTypeDateTime $datetimeValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getDatetimeValue()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setFloatValue($floatValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFloatValue()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIntegerValue($integerValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntegerValue()
-    {
-    }
-    /**
-     * @param GoogleTypeMoney
-     */
-    public function setMoneyValue(GoogleTypeMoney $moneyValue)
-    {
-    }
-    /**
-     * @return GoogleTypeMoney
-     */
-    public function getMoneyValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue
     {
     }
 }

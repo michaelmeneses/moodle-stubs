@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class VoicemailRecipientError extends \Google\Model
-{
-    /**
-     * Reason wasn't specified.
-     */
-    public const INVALID_REASON_EMAIL_INVALID_REASON_UNSPECIFIED = 'EMAIL_INVALID_REASON_UNSPECIFIED';
-    /**
-     * User can't receive emails due to insufficient quota.
-     */
-    public const INVALID_REASON_OUT_OF_QUOTA = 'OUT_OF_QUOTA';
-    /**
-     * All recipients were deleted.
-     */
-    public const INVALID_REASON_RECIPIENT_DELETED = 'RECIPIENT_DELETED';
-    /**
-     * Email address of the invalid recipient. This may be unavailable if the
-     * recipient was deleted.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Reason for the error.
-     *
-     * @var string
-     */
-    public $invalidReason;
-    /**
-     * Email address of the invalid recipient. This may be unavailable if the
-     * recipient was deleted.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AlertCenter {
+    class VoicemailRecipientError extends \Google\Model
     {
+        /**
+         * Reason wasn't specified.
+         */
+        public const INVALID_REASON_EMAIL_INVALID_REASON_UNSPECIFIED = 'EMAIL_INVALID_REASON_UNSPECIFIED';
+        /**
+         * User can't receive emails due to insufficient quota.
+         */
+        public const INVALID_REASON_OUT_OF_QUOTA = 'OUT_OF_QUOTA';
+        /**
+         * All recipients were deleted.
+         */
+        public const INVALID_REASON_RECIPIENT_DELETED = 'RECIPIENT_DELETED';
+        /**
+         * Email address of the invalid recipient. This may be unavailable if the
+         * recipient was deleted.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Reason for the error.
+         *
+         * @var string
+         */
+        public $invalidReason;
+        /**
+         * Email address of the invalid recipient. This may be unavailable if the
+         * recipient was deleted.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Reason for the error.
+         *
+         * Accepted values: EMAIL_INVALID_REASON_UNSPECIFIED, OUT_OF_QUOTA,
+         * RECIPIENT_DELETED
+         *
+         * @param self::INVALID_REASON_* $invalidReason
+         */
+        public function setInvalidReason($invalidReason)
+        {
+        }
+        /**
+         * @return self::INVALID_REASON_*
+         */
+        public function getInvalidReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\VoicemailRecipientError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Reason for the error.
-     *
-     * Accepted values: EMAIL_INVALID_REASON_UNSPECIFIED, OUT_OF_QUOTA,
-     * RECIPIENT_DELETED
-     *
-     * @param self::INVALID_REASON_* $invalidReason
-     */
-    public function setInvalidReason($invalidReason)
-    {
-    }
-    /**
-     * @return self::INVALID_REASON_*
-     */
-    public function getInvalidReason()
+    class Google_Service_AlertCenter_VoicemailRecipientError extends \Google\Service\AlertCenter\VoicemailRecipientError
     {
     }
 }

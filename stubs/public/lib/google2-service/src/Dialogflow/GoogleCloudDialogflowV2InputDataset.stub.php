@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2InputDataset extends \Google\Model
-{
-    /**
-     * Required. ConversationDataset resource name. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Required. ConversationDataset resource name. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2InputDataset extends \Google\Model
     {
+        /**
+         * Required. ConversationDataset resource name. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Required. ConversationDataset resource name. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2InputDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2InputDataset extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2InputDataset
     {
     }
 }

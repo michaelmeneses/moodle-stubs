@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaInterval extends \Google\Model
-{
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaInterval extends \Google\Model
+    {
+        /**
+         * Exclusive upper bound.
+         *
+         * @var 
+         */
+        public $exclusiveMaximum;
+        /**
+         * Exclusive lower bound.
+         *
+         * @var 
+         */
+        public $exclusiveMinimum;
+        /**
+         * Inclusive upper bound.
+         *
+         * @var 
+         */
+        public $maximum;
+        /**
+         * Inclusive lower bound.
+         *
+         * @var 
+         */
+        public $minimum;
+        public function setExclusiveMaximum($exclusiveMaximum)
+        {
+        }
+        public function getExclusiveMaximum()
+        {
+        }
+        public function setExclusiveMinimum($exclusiveMinimum)
+        {
+        }
+        public function getExclusiveMinimum()
+        {
+        }
+        public function setMaximum($maximum)
+        {
+        }
+        public function getMaximum()
+        {
+        }
+        public function setMinimum($minimum)
+        {
+        }
+        public function getMinimum()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Exclusive upper bound.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $exclusiveMaximum;
-    /**
-     * Exclusive lower bound.
-     *
-     * @var 
-     */
-    public $exclusiveMinimum;
-    /**
-     * Inclusive upper bound.
-     *
-     * @var 
-     */
-    public $maximum;
-    /**
-     * Inclusive lower bound.
-     *
-     * @var 
-     */
-    public $minimum;
-    public function setExclusiveMaximum($exclusiveMaximum)
-    {
-    }
-    public function getExclusiveMaximum()
-    {
-    }
-    public function setExclusiveMinimum($exclusiveMinimum)
-    {
-    }
-    public function getExclusiveMinimum()
-    {
-    }
-    public function setMaximum($maximum)
-    {
-    }
-    public function getMaximum()
-    {
-    }
-    public function setMinimum($minimum)
-    {
-    }
-    public function getMinimum()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaInterval extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaInterval
     {
     }
 }

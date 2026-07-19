@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteTableRequest extends \Google\Model
-{
-    /**
-     * The ID of the table to delete.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * The ID of the table to delete.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
+namespace Google\Service\Sheets {
+    class DeleteTableRequest extends \Google\Model
     {
+        /**
+         * The ID of the table to delete.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * The ID of the table to delete.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\DeleteTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableId()
+    class Google_Service_Sheets_DeleteTableRequest extends \Google\Service\Sheets\DeleteTableRequest
     {
     }
 }

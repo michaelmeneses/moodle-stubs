@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class Imu extends \Google\Collection
-{
-    protected $collection_key = 'magUt';
-    protected $accelMpspsType = Measurement3d::class;
-    protected $accelMpspsDataType = 'array';
-    protected $gyroRpsType = Measurement3d::class;
-    protected $gyroRpsDataType = 'array';
-    protected $magUtType = Measurement3d::class;
-    protected $magUtDataType = 'array';
-    /**
-     * The accelerometer measurements in meters/sec^2 with increasing timestamps
-     * from devices.
-     *
-     * @param Measurement3d[] $accelMpsps
-     */
-    public function setAccelMpsps($accelMpsps)
+namespace Google\Service\StreetViewPublish {
+    class Imu extends \Google\Collection
     {
+        protected $collection_key = 'magUt';
+        protected $accelMpspsType = Measurement3d::class;
+        protected $accelMpspsDataType = 'array';
+        protected $gyroRpsType = Measurement3d::class;
+        protected $gyroRpsDataType = 'array';
+        protected $magUtType = Measurement3d::class;
+        protected $magUtDataType = 'array';
+        /**
+         * The accelerometer measurements in meters/sec^2 with increasing timestamps
+         * from devices.
+         *
+         * @param Measurement3d[] $accelMpsps
+         */
+        public function setAccelMpsps($accelMpsps)
+        {
+        }
+        /**
+         * @return Measurement3d[]
+         */
+        public function getAccelMpsps()
+        {
+        }
+        /**
+         * The gyroscope measurements in radians/sec with increasing timestamps from
+         * devices.
+         *
+         * @param Measurement3d[] $gyroRps
+         */
+        public function setGyroRps($gyroRps)
+        {
+        }
+        /**
+         * @return Measurement3d[]
+         */
+        public function getGyroRps()
+        {
+        }
+        /**
+         * The magnetometer measurements of the magnetic field in microtesla (uT) with
+         * increasing timestamps from devices.
+         *
+         * @param Measurement3d[] $magUt
+         */
+        public function setMagUt($magUt)
+        {
+        }
+        /**
+         * @return Measurement3d[]
+         */
+        public function getMagUt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Measurement3d[]
+     * Runtime class alias of \Google\Service\StreetViewPublish\Imu registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccelMpsps()
-    {
-    }
-    /**
-     * The gyroscope measurements in radians/sec with increasing timestamps from
-     * devices.
-     *
-     * @param Measurement3d[] $gyroRps
-     */
-    public function setGyroRps($gyroRps)
-    {
-    }
-    /**
-     * @return Measurement3d[]
-     */
-    public function getGyroRps()
-    {
-    }
-    /**
-     * The magnetometer measurements of the magnetic field in microtesla (uT) with
-     * increasing timestamps from devices.
-     *
-     * @param Measurement3d[] $magUt
-     */
-    public function setMagUt($magUt)
-    {
-    }
-    /**
-     * @return Measurement3d[]
-     */
-    public function getMagUt()
+    class Google_Service_StreetViewPublish_Imu extends \Google\Service\StreetViewPublish\Imu
     {
     }
 }

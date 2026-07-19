@@ -21,197 +21,206 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesVerifyExternalSyncSettingsRequest extends \Google\Collection
-{
-    /**
-     * Default value is a logical dump file-based migration
-     */
-    public const MIGRATION_TYPE_MIGRATION_TYPE_UNSPECIFIED = 'MIGRATION_TYPE_UNSPECIFIED';
-    /**
-     * Logical dump file-based migration
-     */
-    public const MIGRATION_TYPE_LOGICAL = 'LOGICAL';
-    /**
-     * Physical file-based migration
-     */
-    public const MIGRATION_TYPE_PHYSICAL = 'PHYSICAL';
-    /**
-     * Unknown external sync mode, will be defaulted to ONLINE mode
-     */
-    public const SYNC_MODE_EXTERNAL_SYNC_MODE_UNSPECIFIED = 'EXTERNAL_SYNC_MODE_UNSPECIFIED';
-    /**
-     * Online external sync will set up replication after initial data external
-     * sync
-     */
-    public const SYNC_MODE_ONLINE = 'ONLINE';
-    /**
-     * Offline external sync only dumps and loads a one-time snapshot of the
-     * primary instance's data
-     */
-    public const SYNC_MODE_OFFLINE = 'OFFLINE';
-    /**
-     * Unknown sync parallel level. Will be defaulted to OPTIMAL.
-     */
-    public const SYNC_PARALLEL_LEVEL_EXTERNAL_SYNC_PARALLEL_LEVEL_UNSPECIFIED = 'EXTERNAL_SYNC_PARALLEL_LEVEL_UNSPECIFIED';
-    /**
-     * Minimal parallel level.
-     */
-    public const SYNC_PARALLEL_LEVEL_MIN = 'MIN';
-    /**
-     * Optimal parallel level.
-     */
-    public const SYNC_PARALLEL_LEVEL_OPTIMAL = 'OPTIMAL';
-    /**
-     * Maximum parallel level.
-     */
-    public const SYNC_PARALLEL_LEVEL_MAX = 'MAX';
-    protected $collection_key = 'selectedObjects';
-    /**
-     * Optional. MigrationType configures the migration to use physical files or
-     * logical dump files. If not set, then the logical dump file configuration is
-     * used. Valid values are `LOGICAL` or `PHYSICAL`. Only applicable to MySQL.
-     *
-     * @var string
-     */
-    public $migrationType;
-    protected $mysqlSyncConfigType = MySqlSyncConfig::class;
-    protected $mysqlSyncConfigDataType = '';
-    protected $selectedObjectsType = ExternalSyncSelectedObject::class;
-    protected $selectedObjectsDataType = 'array';
-    /**
-     * External sync mode
-     *
-     * @var string
-     */
-    public $syncMode;
-    /**
-     * Optional. Parallel level for initial data sync. Only applicable for
-     * PostgreSQL.
-     *
-     * @var string
-     */
-    public $syncParallelLevel;
-    /**
-     * Flag to enable verifying connection only
-     *
-     * @var bool
-     */
-    public $verifyConnectionOnly;
-    /**
-     * Optional. Flag to verify settings required by replication setup only
-     *
-     * @var bool
-     */
-    public $verifyReplicationOnly;
-    /**
-     * Optional. MigrationType configures the migration to use physical files or
-     * logical dump files. If not set, then the logical dump file configuration is
-     * used. Valid values are `LOGICAL` or `PHYSICAL`. Only applicable to MySQL.
-     *
-     * Accepted values: MIGRATION_TYPE_UNSPECIFIED, LOGICAL, PHYSICAL
-     *
-     * @param self::MIGRATION_TYPE_* $migrationType
-     */
-    public function setMigrationType($migrationType)
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesVerifyExternalSyncSettingsRequest extends \Google\Collection
     {
+        /**
+         * Default value is a logical dump file-based migration
+         */
+        public const MIGRATION_TYPE_MIGRATION_TYPE_UNSPECIFIED = 'MIGRATION_TYPE_UNSPECIFIED';
+        /**
+         * Logical dump file-based migration
+         */
+        public const MIGRATION_TYPE_LOGICAL = 'LOGICAL';
+        /**
+         * Physical file-based migration
+         */
+        public const MIGRATION_TYPE_PHYSICAL = 'PHYSICAL';
+        /**
+         * Unknown external sync mode, will be defaulted to ONLINE mode
+         */
+        public const SYNC_MODE_EXTERNAL_SYNC_MODE_UNSPECIFIED = 'EXTERNAL_SYNC_MODE_UNSPECIFIED';
+        /**
+         * Online external sync will set up replication after initial data external
+         * sync
+         */
+        public const SYNC_MODE_ONLINE = 'ONLINE';
+        /**
+         * Offline external sync only dumps and loads a one-time snapshot of the
+         * primary instance's data
+         */
+        public const SYNC_MODE_OFFLINE = 'OFFLINE';
+        /**
+         * Unknown sync parallel level. Will be defaulted to OPTIMAL.
+         */
+        public const SYNC_PARALLEL_LEVEL_EXTERNAL_SYNC_PARALLEL_LEVEL_UNSPECIFIED = 'EXTERNAL_SYNC_PARALLEL_LEVEL_UNSPECIFIED';
+        /**
+         * Minimal parallel level.
+         */
+        public const SYNC_PARALLEL_LEVEL_MIN = 'MIN';
+        /**
+         * Optimal parallel level.
+         */
+        public const SYNC_PARALLEL_LEVEL_OPTIMAL = 'OPTIMAL';
+        /**
+         * Maximum parallel level.
+         */
+        public const SYNC_PARALLEL_LEVEL_MAX = 'MAX';
+        protected $collection_key = 'selectedObjects';
+        /**
+         * Optional. MigrationType configures the migration to use physical files or
+         * logical dump files. If not set, then the logical dump file configuration is
+         * used. Valid values are `LOGICAL` or `PHYSICAL`. Only applicable to MySQL.
+         *
+         * @var string
+         */
+        public $migrationType;
+        protected $mysqlSyncConfigType = MySqlSyncConfig::class;
+        protected $mysqlSyncConfigDataType = '';
+        protected $selectedObjectsType = ExternalSyncSelectedObject::class;
+        protected $selectedObjectsDataType = 'array';
+        /**
+         * External sync mode
+         *
+         * @var string
+         */
+        public $syncMode;
+        /**
+         * Optional. Parallel level for initial data sync. Only applicable for
+         * PostgreSQL.
+         *
+         * @var string
+         */
+        public $syncParallelLevel;
+        /**
+         * Flag to enable verifying connection only
+         *
+         * @var bool
+         */
+        public $verifyConnectionOnly;
+        /**
+         * Optional. Flag to verify settings required by replication setup only
+         *
+         * @var bool
+         */
+        public $verifyReplicationOnly;
+        /**
+         * Optional. MigrationType configures the migration to use physical files or
+         * logical dump files. If not set, then the logical dump file configuration is
+         * used. Valid values are `LOGICAL` or `PHYSICAL`. Only applicable to MySQL.
+         *
+         * Accepted values: MIGRATION_TYPE_UNSPECIFIED, LOGICAL, PHYSICAL
+         *
+         * @param self::MIGRATION_TYPE_* $migrationType
+         */
+        public function setMigrationType($migrationType)
+        {
+        }
+        /**
+         * @return self::MIGRATION_TYPE_*
+         */
+        public function getMigrationType()
+        {
+        }
+        /**
+         * Optional. MySQL-specific settings for start external sync.
+         *
+         * @param MySqlSyncConfig $mysqlSyncConfig
+         */
+        public function setMysqlSyncConfig(MySqlSyncConfig $mysqlSyncConfig)
+        {
+        }
+        /**
+         * @return MySqlSyncConfig
+         */
+        public function getMysqlSyncConfig()
+        {
+        }
+        /**
+         * Optional. Migrate only the specified objects from the source instance. If
+         * this field is empty, then migrate all objects.
+         *
+         * @param ExternalSyncSelectedObject[] $selectedObjects
+         */
+        public function setSelectedObjects($selectedObjects)
+        {
+        }
+        /**
+         * @return ExternalSyncSelectedObject[]
+         */
+        public function getSelectedObjects()
+        {
+        }
+        /**
+         * External sync mode
+         *
+         * Accepted values: EXTERNAL_SYNC_MODE_UNSPECIFIED, ONLINE, OFFLINE
+         *
+         * @param self::SYNC_MODE_* $syncMode
+         */
+        public function setSyncMode($syncMode)
+        {
+        }
+        /**
+         * @return self::SYNC_MODE_*
+         */
+        public function getSyncMode()
+        {
+        }
+        /**
+         * Optional. Parallel level for initial data sync. Only applicable for
+         * PostgreSQL.
+         *
+         * Accepted values: EXTERNAL_SYNC_PARALLEL_LEVEL_UNSPECIFIED, MIN, OPTIMAL,
+         * MAX
+         *
+         * @param self::SYNC_PARALLEL_LEVEL_* $syncParallelLevel
+         */
+        public function setSyncParallelLevel($syncParallelLevel)
+        {
+        }
+        /**
+         * @return self::SYNC_PARALLEL_LEVEL_*
+         */
+        public function getSyncParallelLevel()
+        {
+        }
+        /**
+         * Flag to enable verifying connection only
+         *
+         * @param bool $verifyConnectionOnly
+         */
+        public function setVerifyConnectionOnly($verifyConnectionOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerifyConnectionOnly()
+        {
+        }
+        /**
+         * Optional. Flag to verify settings required by replication setup only
+         *
+         * @param bool $verifyReplicationOnly
+         */
+        public function setVerifyReplicationOnly($verifyReplicationOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerifyReplicationOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MIGRATION_TYPE_*
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesVerifyExternalSyncSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationType()
-    {
-    }
-    /**
-     * Optional. MySQL-specific settings for start external sync.
-     *
-     * @param MySqlSyncConfig $mysqlSyncConfig
-     */
-    public function setMysqlSyncConfig(MySqlSyncConfig $mysqlSyncConfig)
-    {
-    }
-    /**
-     * @return MySqlSyncConfig
-     */
-    public function getMysqlSyncConfig()
-    {
-    }
-    /**
-     * Optional. Migrate only the specified objects from the source instance. If
-     * this field is empty, then migrate all objects.
-     *
-     * @param ExternalSyncSelectedObject[] $selectedObjects
-     */
-    public function setSelectedObjects($selectedObjects)
-    {
-    }
-    /**
-     * @return ExternalSyncSelectedObject[]
-     */
-    public function getSelectedObjects()
-    {
-    }
-    /**
-     * External sync mode
-     *
-     * Accepted values: EXTERNAL_SYNC_MODE_UNSPECIFIED, ONLINE, OFFLINE
-     *
-     * @param self::SYNC_MODE_* $syncMode
-     */
-    public function setSyncMode($syncMode)
-    {
-    }
-    /**
-     * @return self::SYNC_MODE_*
-     */
-    public function getSyncMode()
-    {
-    }
-    /**
-     * Optional. Parallel level for initial data sync. Only applicable for
-     * PostgreSQL.
-     *
-     * Accepted values: EXTERNAL_SYNC_PARALLEL_LEVEL_UNSPECIFIED, MIN, OPTIMAL,
-     * MAX
-     *
-     * @param self::SYNC_PARALLEL_LEVEL_* $syncParallelLevel
-     */
-    public function setSyncParallelLevel($syncParallelLevel)
-    {
-    }
-    /**
-     * @return self::SYNC_PARALLEL_LEVEL_*
-     */
-    public function getSyncParallelLevel()
-    {
-    }
-    /**
-     * Flag to enable verifying connection only
-     *
-     * @param bool $verifyConnectionOnly
-     */
-    public function setVerifyConnectionOnly($verifyConnectionOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerifyConnectionOnly()
-    {
-    }
-    /**
-     * Optional. Flag to verify settings required by replication setup only
-     *
-     * @param bool $verifyReplicationOnly
-     */
-    public function setVerifyReplicationOnly($verifyReplicationOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerifyReplicationOnly()
+    class Google_Service_SQLAdmin_SqlInstancesVerifyExternalSyncSettingsRequest extends \Google\Service\SQLAdmin\SqlInstancesVerifyExternalSyncSettingsRequest
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class SetPublishedDeployPercentageRequest extends \Google\Model
-{
-    /**
-     * Required. Unscaled percentage value for the publised revision (nonnegative
-     * number between 0 and 100). It must be larger than the existing target
-     * percentage.
-     *
-     * @var int
-     */
-    public $deployPercentage;
-    /**
-     * Required. Unscaled percentage value for the publised revision (nonnegative
-     * number between 0 and 100). It must be larger than the existing target
-     * percentage.
-     *
-     * @param int $deployPercentage
-     */
-    public function setDeployPercentage($deployPercentage)
+namespace Google\Service\Chromewebstore {
+    class SetPublishedDeployPercentageRequest extends \Google\Model
     {
+        /**
+         * Required. Unscaled percentage value for the publised revision (nonnegative
+         * number between 0 and 100). It must be larger than the existing target
+         * percentage.
+         *
+         * @var int
+         */
+        public $deployPercentage;
+        /**
+         * Required. Unscaled percentage value for the publised revision (nonnegative
+         * number between 0 and 100). It must be larger than the existing target
+         * percentage.
+         *
+         * @param int $deployPercentage
+         */
+        public function setDeployPercentage($deployPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeployPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Chromewebstore\SetPublishedDeployPercentageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployPercentage()
+    class Google_Service_Chromewebstore_SetPublishedDeployPercentageRequest extends \Google\Service\Chromewebstore\SetPublishedDeployPercentageRequest
     {
     }
 }

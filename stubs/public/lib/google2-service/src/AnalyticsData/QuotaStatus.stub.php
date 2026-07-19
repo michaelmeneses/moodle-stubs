@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class QuotaStatus extends \Google\Model
-{
-    /**
-     * Quota consumed by this request.
-     *
-     * @var int
-     */
-    public $consumed;
-    /**
-     * Quota remaining after this request.
-     *
-     * @var int
-     */
-    public $remaining;
-    /**
-     * Quota consumed by this request.
-     *
-     * @param int $consumed
-     */
-    public function setConsumed($consumed)
+namespace Google\Service\AnalyticsData {
+    class QuotaStatus extends \Google\Model
     {
+        /**
+         * Quota consumed by this request.
+         *
+         * @var int
+         */
+        public $consumed;
+        /**
+         * Quota remaining after this request.
+         *
+         * @var int
+         */
+        public $remaining;
+        /**
+         * Quota consumed by this request.
+         *
+         * @param int $consumed
+         */
+        public function setConsumed($consumed)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConsumed()
+        {
+        }
+        /**
+         * Quota remaining after this request.
+         *
+         * @param int $remaining
+         */
+        public function setRemaining($remaining)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemaining()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AnalyticsData\QuotaStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumed()
-    {
-    }
-    /**
-     * Quota remaining after this request.
-     *
-     * @param int $remaining
-     */
-    public function setRemaining($remaining)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemaining()
+    class Google_Service_AnalyticsData_QuotaStatus extends \Google\Service\AnalyticsData\QuotaStatus
     {
     }
 }

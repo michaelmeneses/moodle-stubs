@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class SizesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'sizes';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#sizesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $sizesType = Size::class;
-    protected $sizesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#sizesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class SizesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'sizes';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#sizesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $sizesType = Size::class;
+        protected $sizesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#sizesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Size collection.
+         *
+         * @param Size[] $sizes
+         */
+        public function setSizes($sizes)
+        {
+        }
+        /**
+         * @return Size[]
+         */
+        public function getSizes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\SizesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Size collection.
-     *
-     * @param Size[] $sizes
-     */
-    public function setSizes($sizes)
-    {
-    }
-    /**
-     * @return Size[]
-     */
-    public function getSizes()
+    class Google_Service_Dfareporting_SizesListResponse extends \Google\Service\Dfareporting\SizesListResponse
     {
     }
 }

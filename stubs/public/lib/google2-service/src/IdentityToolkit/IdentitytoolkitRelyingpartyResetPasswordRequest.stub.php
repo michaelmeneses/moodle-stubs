@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyResetPasswordRequest extends \Google\Model
-{
-    /**
-     * The email address of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The new password inputted by the user.
-     *
-     * @var string
-     */
-    public $newPassword;
-    /**
-     * The old password inputted by the user.
-     *
-     * @var string
-     */
-    public $oldPassword;
-    /**
-     * The confirmation code.
-     *
-     * @var string
-     */
-    public $oobCode;
-    /**
-     * The email address of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyResetPasswordRequest extends \Google\Model
     {
+        /**
+         * The email address of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The new password inputted by the user.
+         *
+         * @var string
+         */
+        public $newPassword;
+        /**
+         * The old password inputted by the user.
+         *
+         * @var string
+         */
+        public $oldPassword;
+        /**
+         * The confirmation code.
+         *
+         * @var string
+         */
+        public $oobCode;
+        /**
+         * The email address of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The new password inputted by the user.
+         *
+         * @param string $newPassword
+         */
+        public function setNewPassword($newPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewPassword()
+        {
+        }
+        /**
+         * The old password inputted by the user.
+         *
+         * @param string $oldPassword
+         */
+        public function setOldPassword($oldPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldPassword()
+        {
+        }
+        /**
+         * The confirmation code.
+         *
+         * @param string $oobCode
+         */
+        public function setOobCode($oobCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOobCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyResetPasswordRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The new password inputted by the user.
-     *
-     * @param string $newPassword
-     */
-    public function setNewPassword($newPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewPassword()
-    {
-    }
-    /**
-     * The old password inputted by the user.
-     *
-     * @param string $oldPassword
-     */
-    public function setOldPassword($oldPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldPassword()
-    {
-    }
-    /**
-     * The confirmation code.
-     *
-     * @param string $oobCode
-     */
-    public function setOobCode($oobCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOobCode()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyResetPasswordRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyResetPasswordRequest
     {
     }
 }

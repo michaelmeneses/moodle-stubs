@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class PeriodicExportConfig extends \Google\Model
-{
-    /**
-     * Required. Cloud Storage bucket URI for periodic export. Format:
-     * gs://{bucket_name}
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Required. Name of the CMEK key in KMS. Format: projects/{project}/locations
-     * /{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}
-     *
-     * @var string
-     */
-    public $kmsKey;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. Cloud Storage bucket URI for periodic export. Format:
-     * gs://{bucket_name}
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Looker {
+    class PeriodicExportConfig extends \Google\Model
     {
+        /**
+         * Required. Cloud Storage bucket URI for periodic export. Format:
+         * gs://{bucket_name}
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Required. Name of the CMEK key in KMS. Format: projects/{project}/locations
+         * /{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}
+         *
+         * @var string
+         */
+        public $kmsKey;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. Cloud Storage bucket URI for periodic export. Format:
+         * gs://{bucket_name}
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * Required. Name of the CMEK key in KMS. Format: projects/{project}/locations
+         * /{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
+        /**
+         * Required. Time in UTC to start the periodic export job.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\PeriodicExportConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * Required. Name of the CMEK key in KMS. Format: projects/{project}/locations
-     * /{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKey()
-    {
-    }
-    /**
-     * Required. Time in UTC to start the periodic export job.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_Looker_PeriodicExportConfig extends \Google\Service\Looker\PeriodicExportConfig
     {
     }
 }

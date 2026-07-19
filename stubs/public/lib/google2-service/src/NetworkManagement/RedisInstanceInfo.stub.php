@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class RedisInstanceInfo extends \Google\Model
-{
-    /**
-     * Name of a Cloud Redis Instance.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * URI of a Cloud Redis Instance network.
-     *
-     * @var string
-     */
-    public $networkUri;
-    /**
-     * Primary endpoint IP address of a Cloud Redis Instance.
-     *
-     * @var string
-     */
-    public $primaryEndpointIp;
-    /**
-     * Read endpoint IP address of a Cloud Redis Instance (if applicable).
-     *
-     * @var string
-     */
-    public $readEndpointIp;
-    /**
-     * Region in which the Cloud Redis Instance is defined.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * URI of a Cloud Redis Instance.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a Cloud Redis Instance.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class RedisInstanceInfo extends \Google\Model
     {
+        /**
+         * Name of a Cloud Redis Instance.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * URI of a Cloud Redis Instance network.
+         *
+         * @var string
+         */
+        public $networkUri;
+        /**
+         * Primary endpoint IP address of a Cloud Redis Instance.
+         *
+         * @var string
+         */
+        public $primaryEndpointIp;
+        /**
+         * Read endpoint IP address of a Cloud Redis Instance (if applicable).
+         *
+         * @var string
+         */
+        public $readEndpointIp;
+        /**
+         * Region in which the Cloud Redis Instance is defined.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * URI of a Cloud Redis Instance.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a Cloud Redis Instance.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * URI of a Cloud Redis Instance network.
+         *
+         * @param string $networkUri
+         */
+        public function setNetworkUri($networkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUri()
+        {
+        }
+        /**
+         * Primary endpoint IP address of a Cloud Redis Instance.
+         *
+         * @param string $primaryEndpointIp
+         */
+        public function setPrimaryEndpointIp($primaryEndpointIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryEndpointIp()
+        {
+        }
+        /**
+         * Read endpoint IP address of a Cloud Redis Instance (if applicable).
+         *
+         * @param string $readEndpointIp
+         */
+        public function setReadEndpointIp($readEndpointIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadEndpointIp()
+        {
+        }
+        /**
+         * Region in which the Cloud Redis Instance is defined.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * URI of a Cloud Redis Instance.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\RedisInstanceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * URI of a Cloud Redis Instance network.
-     *
-     * @param string $networkUri
-     */
-    public function setNetworkUri($networkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUri()
-    {
-    }
-    /**
-     * Primary endpoint IP address of a Cloud Redis Instance.
-     *
-     * @param string $primaryEndpointIp
-     */
-    public function setPrimaryEndpointIp($primaryEndpointIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryEndpointIp()
-    {
-    }
-    /**
-     * Read endpoint IP address of a Cloud Redis Instance (if applicable).
-     *
-     * @param string $readEndpointIp
-     */
-    public function setReadEndpointIp($readEndpointIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadEndpointIp()
-    {
-    }
-    /**
-     * Region in which the Cloud Redis Instance is defined.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * URI of a Cloud Redis Instance.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_RedisInstanceInfo extends \Google\Service\NetworkManagement\RedisInstanceInfo
     {
     }
 }

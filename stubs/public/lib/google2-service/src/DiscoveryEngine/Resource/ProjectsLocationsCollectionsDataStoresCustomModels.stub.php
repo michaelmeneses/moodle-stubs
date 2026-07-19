@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "customModels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $customModels = $discoveryengineService->projects_locations_collections_dataStores_customModels;
- *  </code>
- */
-class ProjectsLocationsCollectionsDataStoresCustomModels extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListCustomModelsResponse;
     /**
-     * Gets a list of all the custom models.
-     * (customModels.listProjectsLocationsCollectionsDataStoresCustomModels)
-     *
-     * @param string $dataStore Required. The resource name of the parent Data
-     * Store, such as `projects/locations/global/collections/default_collection/data
-     * Stores/default_data_store`. This field is used to identify the data store
-     * where to fetch the models from.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1ListCustomModelsResponse
-     * @throws \Google\Service\Exception
+     * The "customModels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $customModels = $discoveryengineService->projects_locations_collections_dataStores_customModels;
+     *  </code>
      */
-    public function listProjectsLocationsCollectionsDataStoresCustomModels($dataStore, $optParams = [])
+    class ProjectsLocationsCollectionsDataStoresCustomModels extends \Google\Service\Resource
+    {
+        /**
+         * Gets a list of all the custom models.
+         * (customModels.listProjectsLocationsCollectionsDataStoresCustomModels)
+         *
+         * @param string $dataStore Required. The resource name of the parent Data
+         * Store, such as `projects/locations/global/collections/default_collection/data
+         * Stores/default_data_store`. This field is used to identify the data store
+         * where to fetch the models from.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1ListCustomModelsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCollectionsDataStoresCustomModels($dataStore, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresCustomModels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsDataStoresCustomModels extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresCustomModels
     {
     }
 }

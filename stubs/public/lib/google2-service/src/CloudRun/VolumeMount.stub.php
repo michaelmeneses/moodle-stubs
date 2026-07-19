@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class VolumeMount extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mountPath;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * @var string
-     */
-    public $subPath;
-    /**
-     * @param string
-     */
-    public function setMountPath($mountPath)
+namespace Google\Service\CloudRun {
+    class VolumeMount extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mountPath;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * @var string
+         */
+        public $subPath;
+        /**
+         * @param string
+         */
+        public function setMountPath($mountPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubPath($subPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\VolumeMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMountPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubPath($subPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubPath()
+    class Google_Service_CloudRun_VolumeMount extends \Google\Service\CloudRun\VolumeMount
     {
     }
 }

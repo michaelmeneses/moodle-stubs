@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantToolList extends \Google\Collection
-{
-    protected $collection_key = 'toolInfo';
-    protected $toolInfoType = GoogleCloudDiscoveryengineV1AssistantToolInfo::class;
-    protected $toolInfoDataType = 'array';
-    /**
-     * The list of tools with corresponding tool information.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantToolInfo[] $toolInfo
-     */
-    public function setToolInfo($toolInfo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantToolList extends \Google\Collection
     {
+        protected $collection_key = 'toolInfo';
+        protected $toolInfoType = GoogleCloudDiscoveryengineV1AssistantToolInfo::class;
+        protected $toolInfoDataType = 'array';
+        /**
+         * The list of tools with corresponding tool information.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantToolInfo[] $toolInfo
+         */
+        public function setToolInfo($toolInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantToolInfo[]
+         */
+        public function getToolInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AssistantToolInfo[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantToolList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolInfo()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantToolList extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantToolList
     {
     }
 }

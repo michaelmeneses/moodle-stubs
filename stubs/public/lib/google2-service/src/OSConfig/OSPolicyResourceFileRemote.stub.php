@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceFileRemote extends \Google\Model
-{
-    /**
-     * SHA256 checksum of the remote file.
-     *
-     * @var string
-     */
-    public $sha256Checksum;
-    /**
-     * Required. URI from which to fetch the object. It should contain both the
-     * protocol and path following the format `{protocol}://{location}`.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * SHA256 checksum of the remote file.
-     *
-     * @param string $sha256Checksum
-     */
-    public function setSha256Checksum($sha256Checksum)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceFileRemote extends \Google\Model
     {
+        /**
+         * SHA256 checksum of the remote file.
+         *
+         * @var string
+         */
+        public $sha256Checksum;
+        /**
+         * Required. URI from which to fetch the object. It should contain both the
+         * protocol and path following the format `{protocol}://{location}`.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * SHA256 checksum of the remote file.
+         *
+         * @param string $sha256Checksum
+         */
+        public function setSha256Checksum($sha256Checksum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256Checksum()
+        {
+        }
+        /**
+         * Required. URI from which to fetch the object. It should contain both the
+         * protocol and path following the format `{protocol}://{location}`.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceFileRemote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSha256Checksum()
-    {
-    }
-    /**
-     * Required. URI from which to fetch the object. It should contain both the
-     * protocol and path following the format `{protocol}://{location}`.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_OSConfig_OSPolicyResourceFileRemote extends \Google\Service\OSConfig\OSPolicyResourceFileRemote
     {
     }
 }

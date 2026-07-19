@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class Autopilot extends \Google\Model
-{
-    /**
-     * Enable Autopilot
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $privilegedAdmissionConfigType = PrivilegedAdmissionConfig::class;
-    protected $privilegedAdmissionConfigDataType = '';
-    protected $workloadPolicyConfigType = WorkloadPolicyConfig::class;
-    protected $workloadPolicyConfigDataType = '';
-    /**
-     * Enable Autopilot
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class Autopilot extends \Google\Model
     {
+        /**
+         * Enable Autopilot
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $privilegedAdmissionConfigType = PrivilegedAdmissionConfig::class;
+        protected $privilegedAdmissionConfigDataType = '';
+        protected $workloadPolicyConfigType = WorkloadPolicyConfig::class;
+        protected $workloadPolicyConfigDataType = '';
+        /**
+         * Enable Autopilot
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * PrivilegedAdmissionConfig is the configuration related to privileged
+         * admission control.
+         *
+         * @param PrivilegedAdmissionConfig $privilegedAdmissionConfig
+         */
+        public function setPrivilegedAdmissionConfig(PrivilegedAdmissionConfig $privilegedAdmissionConfig)
+        {
+        }
+        /**
+         * @return PrivilegedAdmissionConfig
+         */
+        public function getPrivilegedAdmissionConfig()
+        {
+        }
+        /**
+         * WorkloadPolicyConfig is the configuration related to GCW workload policy
+         *
+         * @param WorkloadPolicyConfig $workloadPolicyConfig
+         */
+        public function setWorkloadPolicyConfig(WorkloadPolicyConfig $workloadPolicyConfig)
+        {
+        }
+        /**
+         * @return WorkloadPolicyConfig
+         */
+        public function getWorkloadPolicyConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\Autopilot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * PrivilegedAdmissionConfig is the configuration related to privileged
-     * admission control.
-     *
-     * @param PrivilegedAdmissionConfig $privilegedAdmissionConfig
-     */
-    public function setPrivilegedAdmissionConfig(PrivilegedAdmissionConfig $privilegedAdmissionConfig)
-    {
-    }
-    /**
-     * @return PrivilegedAdmissionConfig
-     */
-    public function getPrivilegedAdmissionConfig()
-    {
-    }
-    /**
-     * WorkloadPolicyConfig is the configuration related to GCW workload policy
-     *
-     * @param WorkloadPolicyConfig $workloadPolicyConfig
-     */
-    public function setWorkloadPolicyConfig(WorkloadPolicyConfig $workloadPolicyConfig)
-    {
-    }
-    /**
-     * @return WorkloadPolicyConfig
-     */
-    public function getWorkloadPolicyConfig()
+    class Google_Service_Container_Autopilot extends \Google\Service\Container\Autopilot
     {
     }
 }

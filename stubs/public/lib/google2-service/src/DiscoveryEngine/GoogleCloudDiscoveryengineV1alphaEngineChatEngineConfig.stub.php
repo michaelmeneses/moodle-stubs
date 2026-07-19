@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfig extends \Google\Model
-{
-    protected $agentCreationConfigType = GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig::class;
-    protected $agentCreationConfigDataType = '';
-    /**
-     * Optional. If the flag set to true, we allow the agent and engine are in
-     * different locations, otherwise the agent and engine are required to be in
-     * the same location. The flag is set to false by default. Note that the
-     * `allow_cross_region` are one-time consumed by and passed to
-     * EngineService.CreateEngine. It means they cannot be retrieved using
-     * EngineService.GetEngine or EngineService.ListEngines API after engine
-     * creation.
-     *
-     * @var bool
-     */
-    public $allowCrossRegion;
-    /**
-     * The resource name of an exist Dialogflow agent to link to this Chat Engine.
-     * Customers can either provide `agent_creation_config` to create agent or
-     * provide an agent name that links the agent with the Chat engine. Format:
-     * `projects//locations//agents/`. Note that the `dialogflow_agent_to_link`
-     * are one-time consumed by and passed to Dialogflow service. It means they
-     * cannot be retrieved using EngineService.GetEngine or
-     * EngineService.ListEngines API after engine creation. Use
-     * ChatEngineMetadata.dialogflow_agent for actual agent association after
-     * Engine is created.
-     *
-     * @var string
-     */
-    public $dialogflowAgentToLink;
-    /**
-     * The configurationt generate the Dialogflow agent that is associated to this
-     * Engine. Note that these configurations are one-time consumed by and passed
-     * to Dialogflow service. It means they cannot be retrieved using
-     * EngineService.GetEngine or EngineService.ListEngines API after engine
-     * creation.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig $agentCreationConfig
-     */
-    public function setAgentCreationConfig(GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig $agentCreationConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfig extends \Google\Model
     {
+        protected $agentCreationConfigType = GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig::class;
+        protected $agentCreationConfigDataType = '';
+        /**
+         * Optional. If the flag set to true, we allow the agent and engine are in
+         * different locations, otherwise the agent and engine are required to be in
+         * the same location. The flag is set to false by default. Note that the
+         * `allow_cross_region` are one-time consumed by and passed to
+         * EngineService.CreateEngine. It means they cannot be retrieved using
+         * EngineService.GetEngine or EngineService.ListEngines API after engine
+         * creation.
+         *
+         * @var bool
+         */
+        public $allowCrossRegion;
+        /**
+         * The resource name of an exist Dialogflow agent to link to this Chat Engine.
+         * Customers can either provide `agent_creation_config` to create agent or
+         * provide an agent name that links the agent with the Chat engine. Format:
+         * `projects//locations//agents/`. Note that the `dialogflow_agent_to_link`
+         * are one-time consumed by and passed to Dialogflow service. It means they
+         * cannot be retrieved using EngineService.GetEngine or
+         * EngineService.ListEngines API after engine creation. Use
+         * ChatEngineMetadata.dialogflow_agent for actual agent association after
+         * Engine is created.
+         *
+         * @var string
+         */
+        public $dialogflowAgentToLink;
+        /**
+         * The configurationt generate the Dialogflow agent that is associated to this
+         * Engine. Note that these configurations are one-time consumed by and passed
+         * to Dialogflow service. It means they cannot be retrieved using
+         * EngineService.GetEngine or EngineService.ListEngines API after engine
+         * creation.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig $agentCreationConfig
+         */
+        public function setAgentCreationConfig(GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig $agentCreationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig
+         */
+        public function getAgentCreationConfig()
+        {
+        }
+        /**
+         * Optional. If the flag set to true, we allow the agent and engine are in
+         * different locations, otherwise the agent and engine are required to be in
+         * the same location. The flag is set to false by default. Note that the
+         * `allow_cross_region` are one-time consumed by and passed to
+         * EngineService.CreateEngine. It means they cannot be retrieved using
+         * EngineService.GetEngine or EngineService.ListEngines API after engine
+         * creation.
+         *
+         * @param bool $allowCrossRegion
+         */
+        public function setAllowCrossRegion($allowCrossRegion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowCrossRegion()
+        {
+        }
+        /**
+         * The resource name of an exist Dialogflow agent to link to this Chat Engine.
+         * Customers can either provide `agent_creation_config` to create agent or
+         * provide an agent name that links the agent with the Chat engine. Format:
+         * `projects//locations//agents/`. Note that the `dialogflow_agent_to_link`
+         * are one-time consumed by and passed to Dialogflow service. It means they
+         * cannot be retrieved using EngineService.GetEngine or
+         * EngineService.ListEngines API after engine creation. Use
+         * ChatEngineMetadata.dialogflow_agent for actual agent association after
+         * Engine is created.
+         *
+         * @param string $dialogflowAgentToLink
+         */
+        public function setDialogflowAgentToLink($dialogflowAgentToLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogflowAgentToLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfigAgentCreationConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentCreationConfig()
-    {
-    }
-    /**
-     * Optional. If the flag set to true, we allow the agent and engine are in
-     * different locations, otherwise the agent and engine are required to be in
-     * the same location. The flag is set to false by default. Note that the
-     * `allow_cross_region` are one-time consumed by and passed to
-     * EngineService.CreateEngine. It means they cannot be retrieved using
-     * EngineService.GetEngine or EngineService.ListEngines API after engine
-     * creation.
-     *
-     * @param bool $allowCrossRegion
-     */
-    public function setAllowCrossRegion($allowCrossRegion)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowCrossRegion()
-    {
-    }
-    /**
-     * The resource name of an exist Dialogflow agent to link to this Chat Engine.
-     * Customers can either provide `agent_creation_config` to create agent or
-     * provide an agent name that links the agent with the Chat engine. Format:
-     * `projects//locations//agents/`. Note that the `dialogflow_agent_to_link`
-     * are one-time consumed by and passed to Dialogflow service. It means they
-     * cannot be retrieved using EngineService.GetEngine or
-     * EngineService.ListEngines API after engine creation. Use
-     * ChatEngineMetadata.dialogflow_agent for actual agent association after
-     * Engine is created.
-     *
-     * @param string $dialogflowAgentToLink
-     */
-    public function setDialogflowAgentToLink($dialogflowAgentToLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDialogflowAgentToLink()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineChatEngineConfig
     {
     }
 }

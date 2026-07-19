@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ObjectValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = StructuredDataObject::class;
-    protected $valuesDataType = 'array';
-    /**
-     * @param StructuredDataObject[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CloudSearch {
+    class ObjectValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = StructuredDataObject::class;
+        protected $valuesDataType = 'array';
+        /**
+         * @param StructuredDataObject[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return StructuredDataObject[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StructuredDataObject[]
+     * Runtime class alias of \Google\Service\CloudSearch\ObjectValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CloudSearch_ObjectValues extends \Google\Service\CloudSearch\ObjectValues
     {
     }
 }

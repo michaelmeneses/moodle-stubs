@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetHttpsProxiesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'targetHttpsProxies';
-    protected $targetHttpsProxiesType = TargetHttpsProxy::class;
-    protected $targetHttpsProxiesDataType = 'array';
-    protected $warningType = TargetHttpsProxiesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of TargetHttpsProxies contained in this scope.
-     *
-     * @param TargetHttpsProxy[] $targetHttpsProxies
-     */
-    public function setTargetHttpsProxies($targetHttpsProxies)
+namespace Google\Service\Compute {
+    class TargetHttpsProxiesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'targetHttpsProxies';
+        protected $targetHttpsProxiesType = TargetHttpsProxy::class;
+        protected $targetHttpsProxiesDataType = 'array';
+        protected $warningType = TargetHttpsProxiesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of TargetHttpsProxies contained in this scope.
+         *
+         * @param TargetHttpsProxy[] $targetHttpsProxies
+         */
+        public function setTargetHttpsProxies($targetHttpsProxies)
+        {
+        }
+        /**
+         * @return TargetHttpsProxy[]
+         */
+        public function getTargetHttpsProxies()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of backend services when the
+         * list is empty.
+         *
+         * @param TargetHttpsProxiesScopedListWarning $warning
+         */
+        public function setWarning(TargetHttpsProxiesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return TargetHttpsProxiesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetHttpsProxy[]
+     * Runtime class alias of \Google\Service\Compute\TargetHttpsProxiesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetHttpsProxies()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of backend services when the
-     * list is empty.
-     *
-     * @param TargetHttpsProxiesScopedListWarning $warning
-     */
-    public function setWarning(TargetHttpsProxiesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return TargetHttpsProxiesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_TargetHttpsProxiesScopedList extends \Google\Service\Compute\TargetHttpsProxiesScopedList
     {
     }
 }

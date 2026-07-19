@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AcquisitionTargetingRule extends \Google\Model
-{
-    protected $scopeType = TargetingRuleScope::class;
-    protected $scopeDataType = '';
-    /**
-     * Required. The scope of subscriptions this rule considers. Only allows "this
-     * subscription" and "any subscription in app".
-     *
-     * @param TargetingRuleScope $scope
-     */
-    public function setScope(TargetingRuleScope $scope)
+namespace Google\Service\AndroidPublisher {
+    class AcquisitionTargetingRule extends \Google\Model
     {
+        protected $scopeType = TargetingRuleScope::class;
+        protected $scopeDataType = '';
+        /**
+         * Required. The scope of subscriptions this rule considers. Only allows "this
+         * subscription" and "any subscription in app".
+         *
+         * @param TargetingRuleScope $scope
+         */
+        public function setScope(TargetingRuleScope $scope)
+        {
+        }
+        /**
+         * @return TargetingRuleScope
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetingRuleScope
+     * Runtime class alias of \Google\Service\AndroidPublisher\AcquisitionTargetingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScope()
+    class Google_Service_AndroidPublisher_AcquisitionTargetingRule extends \Google\Service\AndroidPublisher\AcquisitionTargetingRule
     {
     }
 }

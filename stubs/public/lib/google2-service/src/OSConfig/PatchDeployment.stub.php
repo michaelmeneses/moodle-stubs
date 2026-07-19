@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchDeployment extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $duration;
-    protected $instanceFilterType = PatchInstanceFilter::class;
-    protected $instanceFilterDataType = '';
-    /**
-     * @var string
-     */
-    public $lastExecuteTime;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $oneTimeScheduleType = OneTimeSchedule::class;
-    protected $oneTimeScheduleDataType = '';
-    protected $patchConfigType = PatchConfig::class;
-    protected $patchConfigDataType = '';
-    protected $recurringScheduleType = RecurringSchedule::class;
-    protected $recurringScheduleDataType = '';
-    protected $rolloutType = PatchRollout::class;
-    protected $rolloutDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\OSConfig {
+    class PatchDeployment extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $duration;
+        protected $instanceFilterType = PatchInstanceFilter::class;
+        protected $instanceFilterDataType = '';
+        /**
+         * @var string
+         */
+        public $lastExecuteTime;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $oneTimeScheduleType = OneTimeSchedule::class;
+        protected $oneTimeScheduleDataType = '';
+        protected $patchConfigType = PatchConfig::class;
+        protected $patchConfigDataType = '';
+        protected $recurringScheduleType = RecurringSchedule::class;
+        protected $recurringScheduleDataType = '';
+        protected $rolloutType = PatchRollout::class;
+        protected $rolloutDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param PatchInstanceFilter
+         */
+        public function setInstanceFilter(PatchInstanceFilter $instanceFilter)
+        {
+        }
+        /**
+         * @return PatchInstanceFilter
+         */
+        public function getInstanceFilter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastExecuteTime($lastExecuteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastExecuteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param OneTimeSchedule
+         */
+        public function setOneTimeSchedule(OneTimeSchedule $oneTimeSchedule)
+        {
+        }
+        /**
+         * @return OneTimeSchedule
+         */
+        public function getOneTimeSchedule()
+        {
+        }
+        /**
+         * @param PatchConfig
+         */
+        public function setPatchConfig(PatchConfig $patchConfig)
+        {
+        }
+        /**
+         * @return PatchConfig
+         */
+        public function getPatchConfig()
+        {
+        }
+        /**
+         * @param RecurringSchedule
+         */
+        public function setRecurringSchedule(RecurringSchedule $recurringSchedule)
+        {
+        }
+        /**
+         * @return RecurringSchedule
+         */
+        public function getRecurringSchedule()
+        {
+        }
+        /**
+         * @param PatchRollout
+         */
+        public function setRollout(PatchRollout $rollout)
+        {
+        }
+        /**
+         * @return PatchRollout
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\PatchDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param PatchInstanceFilter
-     */
-    public function setInstanceFilter(PatchInstanceFilter $instanceFilter)
-    {
-    }
-    /**
-     * @return PatchInstanceFilter
-     */
-    public function getInstanceFilter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastExecuteTime($lastExecuteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastExecuteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param OneTimeSchedule
-     */
-    public function setOneTimeSchedule(OneTimeSchedule $oneTimeSchedule)
-    {
-    }
-    /**
-     * @return OneTimeSchedule
-     */
-    public function getOneTimeSchedule()
-    {
-    }
-    /**
-     * @param PatchConfig
-     */
-    public function setPatchConfig(PatchConfig $patchConfig)
-    {
-    }
-    /**
-     * @return PatchConfig
-     */
-    public function getPatchConfig()
-    {
-    }
-    /**
-     * @param RecurringSchedule
-     */
-    public function setRecurringSchedule(RecurringSchedule $recurringSchedule)
-    {
-    }
-    /**
-     * @return RecurringSchedule
-     */
-    public function getRecurringSchedule()
-    {
-    }
-    /**
-     * @param PatchRollout
-     */
-    public function setRollout(PatchRollout $rollout)
-    {
-    }
-    /**
-     * @return PatchRollout
-     */
-    public function getRollout()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_OSConfig_PatchDeployment extends \Google\Service\OSConfig\PatchDeployment
     {
     }
 }

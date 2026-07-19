@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1alphaTestReleaseResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $testMatrix;
-    /**
-     * @param string
-     */
-    public function setTestMatrix($testMatrix)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1alphaTestReleaseResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $testMatrix;
+        /**
+         * @param string
+         */
+        public function setTestMatrix($testMatrix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestMatrix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1alphaTestReleaseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestMatrix()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1alphaTestReleaseResponse extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1alphaTestReleaseResponse
     {
     }
 }

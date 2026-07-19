@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Progress extends \Google\Model
-{
-    public $analyzed;
-    public $encoded;
-    public $notified;
-    public $uploaded;
-    public function setAnalyzed($analyzed)
+namespace Google\Service\Transcoder {
+    class Progress extends \Google\Model
     {
+        public $analyzed;
+        public $encoded;
+        public $notified;
+        public $uploaded;
+        public function setAnalyzed($analyzed)
+        {
+        }
+        public function getAnalyzed()
+        {
+        }
+        public function setEncoded($encoded)
+        {
+        }
+        public function getEncoded()
+        {
+        }
+        public function setNotified($notified)
+        {
+        }
+        public function getNotified()
+        {
+        }
+        public function setUploaded($uploaded)
+        {
+        }
+        public function getUploaded()
+        {
+        }
     }
-    public function getAnalyzed()
-    {
-    }
-    public function setEncoded($encoded)
-    {
-    }
-    public function getEncoded()
-    {
-    }
-    public function setNotified($notified)
-    {
-    }
-    public function getNotified()
-    {
-    }
-    public function setUploaded($uploaded)
-    {
-    }
-    public function getUploaded()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Transcoder\Progress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Transcoder_Progress extends \Google\Service\Transcoder\Progress
     {
     }
 }

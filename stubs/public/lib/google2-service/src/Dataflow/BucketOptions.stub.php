@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class BucketOptions extends \Google\Model
-{
-    protected $exponentialType = Base2Exponent::class;
-    protected $exponentialDataType = '';
-    protected $linearType = Linear::class;
-    protected $linearDataType = '';
-    /**
-     * Bucket boundaries grow exponentially.
-     *
-     * @param Base2Exponent $exponential
-     */
-    public function setExponential(Base2Exponent $exponential)
+namespace Google\Service\Dataflow {
+    class BucketOptions extends \Google\Model
     {
+        protected $exponentialType = Base2Exponent::class;
+        protected $exponentialDataType = '';
+        protected $linearType = Linear::class;
+        protected $linearDataType = '';
+        /**
+         * Bucket boundaries grow exponentially.
+         *
+         * @param Base2Exponent $exponential
+         */
+        public function setExponential(Base2Exponent $exponential)
+        {
+        }
+        /**
+         * @return Base2Exponent
+         */
+        public function getExponential()
+        {
+        }
+        /**
+         * Bucket boundaries grow linearly.
+         *
+         * @param Linear $linear
+         */
+        public function setLinear(Linear $linear)
+        {
+        }
+        /**
+         * @return Linear
+         */
+        public function getLinear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Base2Exponent
+     * Runtime class alias of \Google\Service\Dataflow\BucketOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExponential()
-    {
-    }
-    /**
-     * Bucket boundaries grow linearly.
-     *
-     * @param Linear $linear
-     */
-    public function setLinear(Linear $linear)
-    {
-    }
-    /**
-     * @return Linear
-     */
-    public function getLinear()
+    class Google_Service_Dataflow_BucketOptions extends \Google\Service\Dataflow\BucketOptions
     {
     }
 }

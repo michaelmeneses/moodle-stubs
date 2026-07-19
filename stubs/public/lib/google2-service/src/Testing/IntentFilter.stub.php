@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IntentFilter extends \Google\Collection
-{
-    protected $collection_key = 'categoryNames';
-    /**
-     * The android:name value of the tag.
-     *
-     * @var string[]
-     */
-    public $actionNames;
-    /**
-     * The android:name value of the tag.
-     *
-     * @var string[]
-     */
-    public $categoryNames;
-    /**
-     * The android:mimeType value of the tag.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The android:name value of the tag.
-     *
-     * @param string[] $actionNames
-     */
-    public function setActionNames($actionNames)
+namespace Google\Service\Testing {
+    class IntentFilter extends \Google\Collection
     {
+        protected $collection_key = 'categoryNames';
+        /**
+         * The android:name value of the tag.
+         *
+         * @var string[]
+         */
+        public $actionNames;
+        /**
+         * The android:name value of the tag.
+         *
+         * @var string[]
+         */
+        public $categoryNames;
+        /**
+         * The android:mimeType value of the tag.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The android:name value of the tag.
+         *
+         * @param string[] $actionNames
+         */
+        public function setActionNames($actionNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActionNames()
+        {
+        }
+        /**
+         * The android:name value of the tag.
+         *
+         * @param string[] $categoryNames
+         */
+        public function setCategoryNames($categoryNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategoryNames()
+        {
+        }
+        /**
+         * The android:mimeType value of the tag.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Testing\IntentFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionNames()
-    {
-    }
-    /**
-     * The android:name value of the tag.
-     *
-     * @param string[] $categoryNames
-     */
-    public function setCategoryNames($categoryNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCategoryNames()
-    {
-    }
-    /**
-     * The android:mimeType value of the tag.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Testing_IntentFilter extends \Google\Service\Testing\IntentFilter
     {
     }
 }

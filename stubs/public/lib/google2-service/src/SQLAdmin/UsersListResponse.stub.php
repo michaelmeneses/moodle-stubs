@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class UsersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = User::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#usersList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Unused.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of user resources in the instance.
-     *
-     * @param User[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class UsersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = User::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#usersList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Unused.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of user resources in the instance.
+         *
+         * @param User[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return User[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#usersList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Unused.
+         *
+         * @deprecated
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return User[]
+     * Runtime class alias of \Google\Service\SQLAdmin\UsersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#usersList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Unused.
-     *
-     * @deprecated
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SQLAdmin_UsersListResponse extends \Google\Service\SQLAdmin\UsersListResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertPageBreakRequest extends \Google\Model
-{
-    protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
-    protected $endOfSegmentLocationDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * Inserts the page break at the end of the document body. Page breaks cannot
-     * be inserted inside a footnote, header or footer. Since page breaks can only
-     * be inserted inside the body, the segment ID field must be empty.
-     *
-     * @param EndOfSegmentLocation $endOfSegmentLocation
-     */
-    public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+namespace Google\Service\Docs {
+    class InsertPageBreakRequest extends \Google\Model
     {
+        protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
+        protected $endOfSegmentLocationDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * Inserts the page break at the end of the document body. Page breaks cannot
+         * be inserted inside a footnote, header or footer. Since page breaks can only
+         * be inserted inside the body, the segment ID field must be empty.
+         *
+         * @param EndOfSegmentLocation $endOfSegmentLocation
+         */
+        public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+        {
+        }
+        /**
+         * @return EndOfSegmentLocation
+         */
+        public function getEndOfSegmentLocation()
+        {
+        }
+        /**
+         * Inserts the page break at a specific index in the document. The page break
+         * must be inserted inside the bounds of an existing Paragraph. For instance,
+         * it cannot be inserted at a table's start index (i.e. between the table and
+         * its preceding paragraph). Page breaks cannot be inserted inside a table,
+         * equation, footnote, header or footer. Since page breaks can only be
+         * inserted inside the body, the segment ID field must be empty.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EndOfSegmentLocation
+     * Runtime class alias of \Google\Service\Docs\InsertPageBreakRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOfSegmentLocation()
-    {
-    }
-    /**
-     * Inserts the page break at a specific index in the document. The page break
-     * must be inserted inside the bounds of an existing Paragraph. For instance,
-     * it cannot be inserted at a table's start index (i.e. between the table and
-     * its preceding paragraph). Page breaks cannot be inserted inside a table,
-     * equation, footnote, header or footer. Since page breaks can only be
-     * inserted inside the body, the segment ID field must be empty.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
+    class Google_Service_Docs_InsertPageBreakRequest extends \Google\Service\Docs\InsertPageBreakRequest
     {
     }
 }

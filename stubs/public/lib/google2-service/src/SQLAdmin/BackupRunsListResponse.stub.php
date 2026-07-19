@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class BackupRunsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = BackupRun::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#backupRunsList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of backup runs in reverse chronological order of the enqueued time.
-     *
-     * @param BackupRun[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class BackupRunsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = BackupRun::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#backupRunsList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of backup runs in reverse chronological order of the enqueued time.
+         *
+         * @param BackupRun[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return BackupRun[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#backupRunsList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupRun[]
+     * Runtime class alias of \Google\Service\SQLAdmin\BackupRunsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#backupRunsList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SQLAdmin_BackupRunsListResponse extends \Google\Service\SQLAdmin\BackupRunsListResponse
     {
     }
 }

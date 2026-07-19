@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics\Resource;
-
-/**
- * The "workers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $genomicsService = new Google\Service\Genomics(...);
- *   $workers = $genomicsService->workers;
- *  </code>
- */
-class Workers extends \Google\Service\Resource
-{
+namespace Google\Service\Genomics\Resource {
+    use Google\Service\Genomics\CheckInRequest;
+    use Google\Service\Genomics\CheckInResponse;
     /**
-     * The worker uses this method to retrieve the assigned operation and provide
-     * periodic status updates. (workers.checkIn)
-     *
-     * @param string $id The VM identity token for authenticating the VM instance.
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
-     * @param CheckInRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CheckInResponse
+     * The "workers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $genomicsService = new Google\Service\Genomics(...);
+     *   $workers = $genomicsService->workers;
+     *  </code>
      */
-    public function checkIn($id, CheckInRequest $postBody, $optParams = [])
+    class Workers extends \Google\Service\Resource
+    {
+        /**
+         * The worker uses this method to retrieve the assigned operation and provide
+         * periodic status updates. (workers.checkIn)
+         *
+         * @param string $id The VM identity token for authenticating the VM instance.
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
+         * @param CheckInRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CheckInResponse
+         */
+        public function checkIn($id, CheckInRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Genomics\Resource\Workers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Genomics_Resource_Workers extends \Google\Service\Genomics\Resource\Workers
     {
     }
 }

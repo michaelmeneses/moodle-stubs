@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickFindMeetingTimeCardProto extends \Google\Collection
-{
-    protected $collection_key = 'skippedInvitees';
-    protected $commonAvailableTimeSlotsType = EnterpriseTopazSidekickTimeSlot::class;
-    protected $commonAvailableTimeSlotsDataType = 'array';
-    protected $inviteesType = EnterpriseTopazSidekickPerson::class;
-    protected $inviteesDataType = 'array';
-    protected $requesterType = EnterpriseTopazSidekickPerson::class;
-    protected $requesterDataType = '';
-    protected $scheduledMeetingType = EnterpriseTopazSidekickScheduledMeeting::class;
-    protected $scheduledMeetingDataType = '';
-    protected $skippedInviteesType = EnterpriseTopazSidekickPerson::class;
-    protected $skippedInviteesDataType = 'array';
-    protected $timeBoundariesType = EnterpriseTopazSidekickTimeSlot::class;
-    protected $timeBoundariesDataType = '';
-    /**
-     * Timezone ID.
-     *
-     * @var string
-     */
-    public $timezoneId;
-    /**
-     * Slots when all attendees have availability.
-     *
-     * @param EnterpriseTopazSidekickTimeSlot[] $commonAvailableTimeSlots
-     */
-    public function setCommonAvailableTimeSlots($commonAvailableTimeSlots)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickFindMeetingTimeCardProto extends \Google\Collection
     {
+        protected $collection_key = 'skippedInvitees';
+        protected $commonAvailableTimeSlotsType = EnterpriseTopazSidekickTimeSlot::class;
+        protected $commonAvailableTimeSlotsDataType = 'array';
+        protected $inviteesType = EnterpriseTopazSidekickPerson::class;
+        protected $inviteesDataType = 'array';
+        protected $requesterType = EnterpriseTopazSidekickPerson::class;
+        protected $requesterDataType = '';
+        protected $scheduledMeetingType = EnterpriseTopazSidekickScheduledMeeting::class;
+        protected $scheduledMeetingDataType = '';
+        protected $skippedInviteesType = EnterpriseTopazSidekickPerson::class;
+        protected $skippedInviteesDataType = 'array';
+        protected $timeBoundariesType = EnterpriseTopazSidekickTimeSlot::class;
+        protected $timeBoundariesDataType = '';
+        /**
+         * Timezone ID.
+         *
+         * @var string
+         */
+        public $timezoneId;
+        /**
+         * Slots when all attendees have availability.
+         *
+         * @param EnterpriseTopazSidekickTimeSlot[] $commonAvailableTimeSlots
+         */
+        public function setCommonAvailableTimeSlots($commonAvailableTimeSlots)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickTimeSlot[]
+         */
+        public function getCommonAvailableTimeSlots()
+        {
+        }
+        /**
+         * Invitees to the event.
+         *
+         * @param EnterpriseTopazSidekickPerson[] $invitees
+         */
+        public function setInvitees($invitees)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPerson[]
+         */
+        public function getInvitees()
+        {
+        }
+        /**
+         * Requester.
+         *
+         * @param EnterpriseTopazSidekickPerson $requester
+         */
+        public function setRequester(EnterpriseTopazSidekickPerson $requester)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPerson
+         */
+        public function getRequester()
+        {
+        }
+        /**
+         * Details about the scheduled meeting, if one exists.
+         *
+         * @param EnterpriseTopazSidekickScheduledMeeting $scheduledMeeting
+         */
+        public function setScheduledMeeting(EnterpriseTopazSidekickScheduledMeeting $scheduledMeeting)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickScheduledMeeting
+         */
+        public function getScheduledMeeting()
+        {
+        }
+        /**
+         * Invitees that have been skipped in the computation, most likely because
+         * they are groups.
+         *
+         * @param EnterpriseTopazSidekickPerson[] $skippedInvitees
+         */
+        public function setSkippedInvitees($skippedInvitees)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPerson[]
+         */
+        public function getSkippedInvitees()
+        {
+        }
+        /**
+         * Min and max timestamp used to find a common available timeslot.
+         *
+         * @param EnterpriseTopazSidekickTimeSlot $timeBoundaries
+         */
+        public function setTimeBoundaries(EnterpriseTopazSidekickTimeSlot $timeBoundaries)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickTimeSlot
+         */
+        public function getTimeBoundaries()
+        {
+        }
+        /**
+         * Timezone ID.
+         *
+         * @param string $timezoneId
+         */
+        public function setTimezoneId($timezoneId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimezoneId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickTimeSlot[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickFindMeetingTimeCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonAvailableTimeSlots()
-    {
-    }
-    /**
-     * Invitees to the event.
-     *
-     * @param EnterpriseTopazSidekickPerson[] $invitees
-     */
-    public function setInvitees($invitees)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickPerson[]
-     */
-    public function getInvitees()
-    {
-    }
-    /**
-     * Requester.
-     *
-     * @param EnterpriseTopazSidekickPerson $requester
-     */
-    public function setRequester(EnterpriseTopazSidekickPerson $requester)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickPerson
-     */
-    public function getRequester()
-    {
-    }
-    /**
-     * Details about the scheduled meeting, if one exists.
-     *
-     * @param EnterpriseTopazSidekickScheduledMeeting $scheduledMeeting
-     */
-    public function setScheduledMeeting(EnterpriseTopazSidekickScheduledMeeting $scheduledMeeting)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickScheduledMeeting
-     */
-    public function getScheduledMeeting()
-    {
-    }
-    /**
-     * Invitees that have been skipped in the computation, most likely because
-     * they are groups.
-     *
-     * @param EnterpriseTopazSidekickPerson[] $skippedInvitees
-     */
-    public function setSkippedInvitees($skippedInvitees)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickPerson[]
-     */
-    public function getSkippedInvitees()
-    {
-    }
-    /**
-     * Min and max timestamp used to find a common available timeslot.
-     *
-     * @param EnterpriseTopazSidekickTimeSlot $timeBoundaries
-     */
-    public function setTimeBoundaries(EnterpriseTopazSidekickTimeSlot $timeBoundaries)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickTimeSlot
-     */
-    public function getTimeBoundaries()
-    {
-    }
-    /**
-     * Timezone ID.
-     *
-     * @param string $timezoneId
-     */
-    public function setTimezoneId($timezoneId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimezoneId()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickFindMeetingTimeCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickFindMeetingTimeCardProto
     {
     }
 }

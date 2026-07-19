@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GetCustomerSessionStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'stats';
-    protected $statsType = CustomerSessionStats::class;
-    protected $statsDataType = 'array';
-    /**
-     * @param CustomerSessionStats[] $stats
-     */
-    public function setStats($stats)
+namespace Google\Service\CloudSearch {
+    class GetCustomerSessionStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'stats';
+        protected $statsType = CustomerSessionStats::class;
+        protected $statsDataType = 'array';
+        /**
+         * @param CustomerSessionStats[] $stats
+         */
+        public function setStats($stats)
+        {
+        }
+        /**
+         * @return CustomerSessionStats[]
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerSessionStats[]
+     * Runtime class alias of \Google\Service\CloudSearch\GetCustomerSessionStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStats()
+    class Google_Service_CloudSearch_GetCustomerSessionStatsResponse extends \Google\Service\CloudSearch\GetCustomerSessionStatsResponse
     {
     }
 }

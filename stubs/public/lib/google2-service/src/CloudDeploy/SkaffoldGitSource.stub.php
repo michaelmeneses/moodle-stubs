@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class SkaffoldGitSource extends \Google\Model
-{
-    /**
-     * Optional. Relative path from the repository root to the Skaffold file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. Git branch or tag to use when cloning the repository.
-     *
-     * @var string
-     */
-    public $ref;
-    /**
-     * Required. Git repository the package should be cloned from.
-     *
-     * @var string
-     */
-    public $repo;
-    /**
-     * Optional. Relative path from the repository root to the Skaffold file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudDeploy {
+    class SkaffoldGitSource extends \Google\Model
     {
+        /**
+         * Optional. Relative path from the repository root to the Skaffold file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. Git branch or tag to use when cloning the repository.
+         *
+         * @var string
+         */
+        public $ref;
+        /**
+         * Required. Git repository the package should be cloned from.
+         *
+         * @var string
+         */
+        public $repo;
+        /**
+         * Optional. Relative path from the repository root to the Skaffold file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Optional. Git branch or tag to use when cloning the repository.
+         *
+         * @param string $ref
+         */
+        public function setRef($ref)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRef()
+        {
+        }
+        /**
+         * Required. Git repository the package should be cloned from.
+         *
+         * @param string $repo
+         */
+        public function setRepo($repo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\SkaffoldGitSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Optional. Git branch or tag to use when cloning the repository.
-     *
-     * @param string $ref
-     */
-    public function setRef($ref)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRef()
-    {
-    }
-    /**
-     * Required. Git repository the package should be cloned from.
-     *
-     * @param string $repo
-     */
-    public function setRepo($repo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepo()
+    class Google_Service_CloudDeploy_SkaffoldGitSource extends \Google\Service\CloudDeploy\SkaffoldGitSource
     {
     }
 }

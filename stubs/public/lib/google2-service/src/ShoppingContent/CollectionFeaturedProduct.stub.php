@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CollectionFeaturedProduct extends \Google\Model
-{
-    /**
-     * The unique identifier for the product item.
-     *
-     * @var string
-     */
-    public $offerId;
-    /**
-     * Required. X-coordinate of the product callout on the Shoppable Image.
-     *
-     * @var float
-     */
-    public $x;
-    /**
-     * Required. Y-coordinate of the product callout on the Shoppable Image.
-     *
-     * @var float
-     */
-    public $y;
-    /**
-     * The unique identifier for the product item.
-     *
-     * @param string $offerId
-     */
-    public function setOfferId($offerId)
+namespace Google\Service\ShoppingContent {
+    class CollectionFeaturedProduct extends \Google\Model
     {
+        /**
+         * The unique identifier for the product item.
+         *
+         * @var string
+         */
+        public $offerId;
+        /**
+         * Required. X-coordinate of the product callout on the Shoppable Image.
+         *
+         * @var float
+         */
+        public $x;
+        /**
+         * Required. Y-coordinate of the product callout on the Shoppable Image.
+         *
+         * @var float
+         */
+        public $y;
+        /**
+         * The unique identifier for the product item.
+         *
+         * @param string $offerId
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * Required. X-coordinate of the product callout on the Shoppable Image.
+         *
+         * @param float $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Required. Y-coordinate of the product callout on the Shoppable Image.
+         *
+         * @param float $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\CollectionFeaturedProduct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOfferId()
-    {
-    }
-    /**
-     * Required. X-coordinate of the product callout on the Shoppable Image.
-     *
-     * @param float $x
-     */
-    public function setX($x)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getX()
-    {
-    }
-    /**
-     * Required. Y-coordinate of the product callout on the Shoppable Image.
-     *
-     * @param float $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getY()
+    class Google_Service_ShoppingContent_CollectionFeaturedProduct extends \Google\Service\ShoppingContent\CollectionFeaturedProduct
     {
     }
 }

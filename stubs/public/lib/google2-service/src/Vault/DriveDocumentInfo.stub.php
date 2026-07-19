@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class DriveDocumentInfo extends \Google\Model
-{
-    protected $documentIdsType = DriveDocumentIds::class;
-    protected $documentIdsDataType = '';
-    /**
-     * Specify Drive documents by document ID.
-     *
-     * @param DriveDocumentIds $documentIds
-     */
-    public function setDocumentIds(DriveDocumentIds $documentIds)
+namespace Google\Service\Vault {
+    class DriveDocumentInfo extends \Google\Model
     {
+        protected $documentIdsType = DriveDocumentIds::class;
+        protected $documentIdsDataType = '';
+        /**
+         * Specify Drive documents by document ID.
+         *
+         * @param DriveDocumentIds $documentIds
+         */
+        public function setDocumentIds(DriveDocumentIds $documentIds)
+        {
+        }
+        /**
+         * @return DriveDocumentIds
+         */
+        public function getDocumentIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveDocumentIds
+     * Runtime class alias of \Google\Service\Vault\DriveDocumentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentIds()
+    class Google_Service_Vault_DriveDocumentInfo extends \Google\Service\Vault\DriveDocumentInfo
     {
     }
 }

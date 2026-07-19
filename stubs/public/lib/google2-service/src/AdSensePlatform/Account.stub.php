@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform;
-
-class Account extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Unchecked.
-     */
-    public const STATE_UNCHECKED = 'UNCHECKED';
-    /**
-     * The account is ready to serve ads.
-     */
-    public const STATE_APPROVED = 'APPROVED';
-    /**
-     * The account has been blocked from serving ads.
-     */
-    public const STATE_DISAPPROVED = 'DISAPPROVED';
-    /**
-     * Output only. Creation time of the account.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. An opaque token that uniquely identifies the account among all
-     * the platform's accounts. This string may contain at most 64 non-whitespace
-     * ASCII characters, but otherwise has no predefined structure. However, it is
-     * expected to be a platform-specific identifier for the user creating the
-     * account, so that only a single account can be created for any given user.
-     * This field must not contain any information that is recognizable as
-     * personally identifiable information. e.g. it should not be an email address
-     * or login name. Once an account has been created, a second attempt to create
-     * an account using the same creation_request_id will result in an
-     * ALREADY_EXISTS error.
-     *
-     * @var string
-     */
-    public $creationRequestId;
-    /**
-     * Display name of this account.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Resource name of the account. Format:
-     * platforms/pub-[0-9]+/accounts/pub-[0-9]+
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Input only. CLDR region code of the country/region of the
-     * address. Set this to country code of the child account if known, otherwise
-     * to your own country code.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Output only. Approval state of the account.
-     *
-     * @var string
-     */
-    public $state;
-    protected $timeZoneType = TimeZone::class;
-    protected $timeZoneDataType = '';
-    /**
-     * Output only. Creation time of the account.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AdSensePlatform {
+    class Account extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Unchecked.
+         */
+        public const STATE_UNCHECKED = 'UNCHECKED';
+        /**
+         * The account is ready to serve ads.
+         */
+        public const STATE_APPROVED = 'APPROVED';
+        /**
+         * The account has been blocked from serving ads.
+         */
+        public const STATE_DISAPPROVED = 'DISAPPROVED';
+        /**
+         * Output only. Creation time of the account.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. An opaque token that uniquely identifies the account among all
+         * the platform's accounts. This string may contain at most 64 non-whitespace
+         * ASCII characters, but otherwise has no predefined structure. However, it is
+         * expected to be a platform-specific identifier for the user creating the
+         * account, so that only a single account can be created for any given user.
+         * This field must not contain any information that is recognizable as
+         * personally identifiable information. e.g. it should not be an email address
+         * or login name. Once an account has been created, a second attempt to create
+         * an account using the same creation_request_id will result in an
+         * ALREADY_EXISTS error.
+         *
+         * @var string
+         */
+        public $creationRequestId;
+        /**
+         * Display name of this account.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Resource name of the account. Format:
+         * platforms/pub-[0-9]+/accounts/pub-[0-9]+
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Input only. CLDR region code of the country/region of the
+         * address. Set this to country code of the child account if known, otherwise
+         * to your own country code.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Output only. Approval state of the account.
+         *
+         * @var string
+         */
+        public $state;
+        protected $timeZoneType = TimeZone::class;
+        protected $timeZoneDataType = '';
+        /**
+         * Output only. Creation time of the account.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. An opaque token that uniquely identifies the account among all
+         * the platform's accounts. This string may contain at most 64 non-whitespace
+         * ASCII characters, but otherwise has no predefined structure. However, it is
+         * expected to be a platform-specific identifier for the user creating the
+         * account, so that only a single account can be created for any given user.
+         * This field must not contain any information that is recognizable as
+         * personally identifiable information. e.g. it should not be an email address
+         * or login name. Once an account has been created, a second attempt to create
+         * an account using the same creation_request_id will result in an
+         * ALREADY_EXISTS error.
+         *
+         * @param string $creationRequestId
+         */
+        public function setCreationRequestId($creationRequestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationRequestId()
+        {
+        }
+        /**
+         * Display name of this account.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Resource name of the account. Format:
+         * platforms/pub-[0-9]+/accounts/pub-[0-9]+
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Input only. CLDR region code of the country/region of the
+         * address. Set this to country code of the child account if known, otherwise
+         * to your own country code.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * Output only. Approval state of the account.
+         *
+         * Accepted values: STATE_UNSPECIFIED, UNCHECKED, APPROVED, DISAPPROVED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Required. The IANA TZ timezone code of this account. For more information,
+         * see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. This
+         * field is used for reporting. It is recommended to set it to the same value
+         * for all child accounts.
+         *
+         * @param TimeZone $timeZone
+         */
+        public function setTimeZone(TimeZone $timeZone)
+        {
+        }
+        /**
+         * @return TimeZone
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSensePlatform\Account registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. An opaque token that uniquely identifies the account among all
-     * the platform's accounts. This string may contain at most 64 non-whitespace
-     * ASCII characters, but otherwise has no predefined structure. However, it is
-     * expected to be a platform-specific identifier for the user creating the
-     * account, so that only a single account can be created for any given user.
-     * This field must not contain any information that is recognizable as
-     * personally identifiable information. e.g. it should not be an email address
-     * or login name. Once an account has been created, a second attempt to create
-     * an account using the same creation_request_id will result in an
-     * ALREADY_EXISTS error.
-     *
-     * @param string $creationRequestId
-     */
-    public function setCreationRequestId($creationRequestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationRequestId()
-    {
-    }
-    /**
-     * Display name of this account.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Resource name of the account. Format:
-     * platforms/pub-[0-9]+/accounts/pub-[0-9]+
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Input only. CLDR region code of the country/region of the
-     * address. Set this to country code of the child account if known, otherwise
-     * to your own country code.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * Output only. Approval state of the account.
-     *
-     * Accepted values: STATE_UNSPECIFIED, UNCHECKED, APPROVED, DISAPPROVED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Required. The IANA TZ timezone code of this account. For more information,
-     * see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. This
-     * field is used for reporting. It is recommended to set it to the same value
-     * for all child accounts.
-     *
-     * @param TimeZone $timeZone
-     */
-    public function setTimeZone(TimeZone $timeZone)
-    {
-    }
-    /**
-     * @return TimeZone
-     */
-    public function getTimeZone()
+    class Google_Service_AdSensePlatform_Account extends \Google\Service\AdSensePlatform\Account
     {
     }
 }

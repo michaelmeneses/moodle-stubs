@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class AccessSettings extends \Google\Collection
-{
-    protected $collection_key = 'identitySources';
-    protected $allowedDomainsSettingsType = AllowedDomainsSettings::class;
-    protected $allowedDomainsSettingsDataType = '';
-    protected $corsSettingsType = CorsSettings::class;
-    protected $corsSettingsDataType = '';
-    protected $gcipSettingsType = GcipSettings::class;
-    protected $gcipSettingsDataType = '';
-    /**
-     * Optional. Identity sources that IAP can use to authenticate the end user.
-     * Only one identity source can be configured.
-     *
-     * @var string[]
-     */
-    public $identitySources;
-    protected $oauthSettingsType = OAuthSettings::class;
-    protected $oauthSettingsDataType = '';
-    protected $policyDelegationSettingsType = PolicyDelegationSettings::class;
-    protected $policyDelegationSettingsDataType = '';
-    protected $reauthSettingsType = ReauthSettings::class;
-    protected $reauthSettingsDataType = '';
-    protected $workforceIdentitySettingsType = WorkforceIdentitySettings::class;
-    protected $workforceIdentitySettingsDataType = '';
-    /**
-     * Optional. Settings to configure and enable allowed domains.
-     *
-     * @param AllowedDomainsSettings $allowedDomainsSettings
-     */
-    public function setAllowedDomainsSettings(AllowedDomainsSettings $allowedDomainsSettings)
+namespace Google\Service\CloudIAP {
+    class AccessSettings extends \Google\Collection
     {
+        protected $collection_key = 'identitySources';
+        protected $allowedDomainsSettingsType = AllowedDomainsSettings::class;
+        protected $allowedDomainsSettingsDataType = '';
+        protected $corsSettingsType = CorsSettings::class;
+        protected $corsSettingsDataType = '';
+        protected $gcipSettingsType = GcipSettings::class;
+        protected $gcipSettingsDataType = '';
+        /**
+         * Optional. Identity sources that IAP can use to authenticate the end user.
+         * Only one identity source can be configured.
+         *
+         * @var string[]
+         */
+        public $identitySources;
+        protected $oauthSettingsType = OAuthSettings::class;
+        protected $oauthSettingsDataType = '';
+        protected $policyDelegationSettingsType = PolicyDelegationSettings::class;
+        protected $policyDelegationSettingsDataType = '';
+        protected $reauthSettingsType = ReauthSettings::class;
+        protected $reauthSettingsDataType = '';
+        protected $workforceIdentitySettingsType = WorkforceIdentitySettings::class;
+        protected $workforceIdentitySettingsDataType = '';
+        /**
+         * Optional. Settings to configure and enable allowed domains.
+         *
+         * @param AllowedDomainsSettings $allowedDomainsSettings
+         */
+        public function setAllowedDomainsSettings(AllowedDomainsSettings $allowedDomainsSettings)
+        {
+        }
+        /**
+         * @return AllowedDomainsSettings
+         */
+        public function getAllowedDomainsSettings()
+        {
+        }
+        /**
+         * Optional. Configuration to allow cross-origin requests via IAP.
+         *
+         * @param CorsSettings $corsSettings
+         */
+        public function setCorsSettings(CorsSettings $corsSettings)
+        {
+        }
+        /**
+         * @return CorsSettings
+         */
+        public function getCorsSettings()
+        {
+        }
+        /**
+         * Optional. GCIP claims and endpoint configurations for 3p identity
+         * providers.
+         *
+         * @param GcipSettings $gcipSettings
+         */
+        public function setGcipSettings(GcipSettings $gcipSettings)
+        {
+        }
+        /**
+         * @return GcipSettings
+         */
+        public function getGcipSettings()
+        {
+        }
+        /**
+         * Optional. Identity sources that IAP can use to authenticate the end user.
+         * Only one identity source can be configured.
+         *
+         * @param string[] $identitySources
+         */
+        public function setIdentitySources($identitySources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIdentitySources()
+        {
+        }
+        /**
+         * Optional. Settings to configure IAP's OAuth behavior.
+         *
+         * @param OAuthSettings $oauthSettings
+         */
+        public function setOauthSettings(OAuthSettings $oauthSettings)
+        {
+        }
+        /**
+         * @return OAuthSettings
+         */
+        public function getOauthSettings()
+        {
+        }
+        /**
+         * Optional. Settings to allow google-internal teams to use IAP for apps
+         * hosted in a tenant project.
+         *
+         * @param PolicyDelegationSettings $policyDelegationSettings
+         */
+        public function setPolicyDelegationSettings(PolicyDelegationSettings $policyDelegationSettings)
+        {
+        }
+        /**
+         * @return PolicyDelegationSettings
+         */
+        public function getPolicyDelegationSettings()
+        {
+        }
+        /**
+         * Optional. Settings to configure reauthentication policies in IAP.
+         *
+         * @param ReauthSettings $reauthSettings
+         */
+        public function setReauthSettings(ReauthSettings $reauthSettings)
+        {
+        }
+        /**
+         * @return ReauthSettings
+         */
+        public function getReauthSettings()
+        {
+        }
+        /**
+         * Optional. Settings to configure the workforce identity federation,
+         * including workforce pools and OAuth 2.0 settings.
+         *
+         * @param WorkforceIdentitySettings $workforceIdentitySettings
+         */
+        public function setWorkforceIdentitySettings(WorkforceIdentitySettings $workforceIdentitySettings)
+        {
+        }
+        /**
+         * @return WorkforceIdentitySettings
+         */
+        public function getWorkforceIdentitySettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllowedDomainsSettings
+     * Runtime class alias of \Google\Service\CloudIAP\AccessSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedDomainsSettings()
-    {
-    }
-    /**
-     * Optional. Configuration to allow cross-origin requests via IAP.
-     *
-     * @param CorsSettings $corsSettings
-     */
-    public function setCorsSettings(CorsSettings $corsSettings)
-    {
-    }
-    /**
-     * @return CorsSettings
-     */
-    public function getCorsSettings()
-    {
-    }
-    /**
-     * Optional. GCIP claims and endpoint configurations for 3p identity
-     * providers.
-     *
-     * @param GcipSettings $gcipSettings
-     */
-    public function setGcipSettings(GcipSettings $gcipSettings)
-    {
-    }
-    /**
-     * @return GcipSettings
-     */
-    public function getGcipSettings()
-    {
-    }
-    /**
-     * Optional. Identity sources that IAP can use to authenticate the end user.
-     * Only one identity source can be configured.
-     *
-     * @param string[] $identitySources
-     */
-    public function setIdentitySources($identitySources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIdentitySources()
-    {
-    }
-    /**
-     * Optional. Settings to configure IAP's OAuth behavior.
-     *
-     * @param OAuthSettings $oauthSettings
-     */
-    public function setOauthSettings(OAuthSettings $oauthSettings)
-    {
-    }
-    /**
-     * @return OAuthSettings
-     */
-    public function getOauthSettings()
-    {
-    }
-    /**
-     * Optional. Settings to allow google-internal teams to use IAP for apps
-     * hosted in a tenant project.
-     *
-     * @param PolicyDelegationSettings $policyDelegationSettings
-     */
-    public function setPolicyDelegationSettings(PolicyDelegationSettings $policyDelegationSettings)
-    {
-    }
-    /**
-     * @return PolicyDelegationSettings
-     */
-    public function getPolicyDelegationSettings()
-    {
-    }
-    /**
-     * Optional. Settings to configure reauthentication policies in IAP.
-     *
-     * @param ReauthSettings $reauthSettings
-     */
-    public function setReauthSettings(ReauthSettings $reauthSettings)
-    {
-    }
-    /**
-     * @return ReauthSettings
-     */
-    public function getReauthSettings()
-    {
-    }
-    /**
-     * Optional. Settings to configure the workforce identity federation,
-     * including workforce pools and OAuth 2.0 settings.
-     *
-     * @param WorkforceIdentitySettings $workforceIdentitySettings
-     */
-    public function setWorkforceIdentitySettings(WorkforceIdentitySettings $workforceIdentitySettings)
-    {
-    }
-    /**
-     * @return WorkforceIdentitySettings
-     */
-    public function getWorkforceIdentitySettings()
+    class Google_Service_CloudIAP_AccessSettings extends \Google\Service\CloudIAP\AccessSettings
     {
     }
 }

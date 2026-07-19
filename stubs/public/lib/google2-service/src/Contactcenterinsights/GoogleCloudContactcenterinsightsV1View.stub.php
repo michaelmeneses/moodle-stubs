@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1View extends \Google\Model
-{
-    /**
-     * Output only. The time at which this view was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The human-readable display name of the view.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Immutable. The resource name of the view. Format:
-     * projects/{project}/locations/{location}/views/{view}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The most recent time at which the view was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * A filter to reduce conversation results to a specific subset. Refer to
-     * https://cloud.google.com/contact-center/insights/docs/filtering for
-     * details.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. The time at which this view was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1View extends \Google\Model
     {
+        /**
+         * Output only. The time at which this view was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The human-readable display name of the view.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Immutable. The resource name of the view. Format:
+         * projects/{project}/locations/{location}/views/{view}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The most recent time at which the view was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * A filter to reduce conversation results to a specific subset. Refer to
+         * https://cloud.google.com/contact-center/insights/docs/filtering for
+         * details.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. The time at which this view was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The human-readable display name of the view.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Immutable. The resource name of the view. Format:
+         * projects/{project}/locations/{location}/views/{view}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The most recent time at which the view was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * A filter to reduce conversation results to a specific subset. Refer to
+         * https://cloud.google.com/contact-center/insights/docs/filtering for
+         * details.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1View registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The human-readable display name of the view.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Immutable. The resource name of the view. Format:
-     * projects/{project}/locations/{location}/views/{view}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The most recent time at which the view was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * A filter to reduce conversation results to a specific subset. Refer to
-     * https://cloud.google.com/contact-center/insights/docs/filtering for
-     * details.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1View extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1View
     {
     }
 }

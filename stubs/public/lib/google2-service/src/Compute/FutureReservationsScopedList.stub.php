@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureReservationsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'futureReservations';
-    protected $futureReservationsType = FutureReservation::class;
-    protected $futureReservationsDataType = 'array';
-    protected $warningType = FutureReservationsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of future reservations contained in this scope.
-     *
-     * @param FutureReservation[] $futureReservations
-     */
-    public function setFutureReservations($futureReservations)
+namespace Google\Service\Compute {
+    class FutureReservationsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'futureReservations';
+        protected $futureReservationsType = FutureReservation::class;
+        protected $futureReservationsDataType = 'array';
+        protected $warningType = FutureReservationsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of future reservations contained in this scope.
+         *
+         * @param FutureReservation[] $futureReservations
+         */
+        public function setFutureReservations($futureReservations)
+        {
+        }
+        /**
+         * @return FutureReservation[]
+         */
+        public function getFutureReservations()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of future reservations when
+         * the list is empty.
+         *
+         * @param FutureReservationsScopedListWarning $warning
+         */
+        public function setWarning(FutureReservationsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return FutureReservationsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FutureReservation[]
+     * Runtime class alias of \Google\Service\Compute\FutureReservationsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFutureReservations()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of future reservations when
-     * the list is empty.
-     *
-     * @param FutureReservationsScopedListWarning $warning
-     */
-    public function setWarning(FutureReservationsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return FutureReservationsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_FutureReservationsScopedList extends \Google\Service\Compute\FutureReservationsScopedList
     {
     }
 }

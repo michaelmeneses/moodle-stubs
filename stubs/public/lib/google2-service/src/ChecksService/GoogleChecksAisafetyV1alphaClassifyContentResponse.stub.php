@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksAisafetyV1alphaClassifyContentResponse extends \Google\Collection
-{
-    protected $collection_key = 'policyResults';
-    protected $policyResultsType = GoogleChecksAisafetyV1alphaClassifyContentResponsePolicyResult::class;
-    protected $policyResultsDataType = 'array';
-    /**
-     * Results of the classification for each policy.
-     *
-     * @param GoogleChecksAisafetyV1alphaClassifyContentResponsePolicyResult[] $policyResults
-     */
-    public function setPolicyResults($policyResults)
+namespace Google\Service\ChecksService {
+    class GoogleChecksAisafetyV1alphaClassifyContentResponse extends \Google\Collection
     {
+        protected $collection_key = 'policyResults';
+        protected $policyResultsType = GoogleChecksAisafetyV1alphaClassifyContentResponsePolicyResult::class;
+        protected $policyResultsDataType = 'array';
+        /**
+         * Results of the classification for each policy.
+         *
+         * @param GoogleChecksAisafetyV1alphaClassifyContentResponsePolicyResult[] $policyResults
+         */
+        public function setPolicyResults($policyResults)
+        {
+        }
+        /**
+         * @return GoogleChecksAisafetyV1alphaClassifyContentResponsePolicyResult[]
+         */
+        public function getPolicyResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksAisafetyV1alphaClassifyContentResponsePolicyResult[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyResults()
+    class Google_Service_ChecksService_GoogleChecksAisafetyV1alphaClassifyContentResponse extends \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentResponse
     {
     }
 }

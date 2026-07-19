@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial extends \Google\Model
-{
-    /**
-     * Required. The phone number to fill in the default dialer app. This field
-     * should be in [E.164](https://en.wikipedia.org/wiki/E.164) format. An
-     * example of a correctly formatted phone number: +15556767888.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Required. The phone number to fill in the default dialer app. This field
-     * should be in [E.164](https://en.wikipedia.org/wiki/E.164) format. An
-     * example of a correctly formatted phone number: +15556767888.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial extends \Google\Model
     {
+        /**
+         * Required. The phone number to fill in the default dialer app. This field
+         * should be in [E.164](https://en.wikipedia.org/wiki/E.164) format. An
+         * example of a correctly formatted phone number: +15556767888.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Required. The phone number to fill in the default dialer app. This field
+         * should be in [E.164](https://en.wikipedia.org/wiki/E.164) format. An
+         * example of a correctly formatted phone number: +15556767888.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneNumber()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial
     {
     }
 }

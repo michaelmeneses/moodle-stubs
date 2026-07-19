@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountIdentityType extends \Google\Model
-{
-    /**
-     * Optional. Indicates that the business identifies itself with a given
-     * identity type. Setting this field does not automatically mean eligibility
-     * for promotions.
-     *
-     * @var bool
-     */
-    public $selfIdentified;
-    /**
-     * Optional. Indicates that the business identifies itself with a given
-     * identity type. Setting this field does not automatically mean eligibility
-     * for promotions.
-     *
-     * @param bool $selfIdentified
-     */
-    public function setSelfIdentified($selfIdentified)
+namespace Google\Service\ShoppingContent {
+    class AccountIdentityType extends \Google\Model
     {
+        /**
+         * Optional. Indicates that the business identifies itself with a given
+         * identity type. Setting this field does not automatically mean eligibility
+         * for promotions.
+         *
+         * @var bool
+         */
+        public $selfIdentified;
+        /**
+         * Optional. Indicates that the business identifies itself with a given
+         * identity type. Setting this field does not automatically mean eligibility
+         * for promotions.
+         *
+         * @param bool $selfIdentified
+         */
+        public function setSelfIdentified($selfIdentified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSelfIdentified()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountIdentityType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelfIdentified()
+    class Google_Service_ShoppingContent_AccountIdentityType extends \Google\Service\ShoppingContent\AccountIdentityType
     {
     }
 }

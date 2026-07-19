@@ -21,322 +21,331 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DatacenterConnector extends \Google\Model
-{
-    /**
-     * The state is unknown. This is used for API compatibility only and is not
-     * used by the system.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The state was not sampled by the health checks yet.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The source was sampled by health checks and is not available.
-     */
-    public const STATE_OFFLINE = 'OFFLINE';
-    /**
-     * The source is available but might not be usable yet due to unvalidated
-     * credentials or another reason. The credentials referred to are the ones to
-     * the Source. The error message will contain further details.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The source exists and its credentials were verified.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Output only. Appliance OVA version. This is the OVA which is manually
-     * installed by the user and contains the infrastructure for the automatically
-     * updatable components on the appliance.
-     *
-     * @var string
-     */
-    public $applianceInfrastructureVersion;
-    /**
-     * Output only. Appliance last installed update bundle version. This is the
-     * version of the automatically updatable components on the appliance.
-     *
-     * @var string
-     */
-    public $applianceSoftwareVersion;
-    protected $availableVersionsType = AvailableUpdates::class;
-    protected $availableVersionsDataType = '';
-    /**
-     * Output only. The communication channel between the datacenter connector and
-     * Google Cloud.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Output only. The time the connector was created (as an API call, not when
-     * it was actually installed).
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. The connector's name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. A unique key for this connector. This key is internal to the OVA
-     * connector and is supplied with its creation during the registration process
-     * and can not be modified.
-     *
-     * @var string
-     */
-    public $registrationId;
-    /**
-     * The service account to use in the connector when communicating with the
-     * cloud.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Output only. State of the DatacenterConnector, as determined by the health
-     * checks.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time the state was last set.
-     *
-     * @var string
-     */
-    public $stateTime;
-    /**
-     * Output only. The last time the connector was updated with an API call.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $upgradeStatusType = UpgradeStatus::class;
-    protected $upgradeStatusDataType = '';
-    /**
-     * The version running in the DatacenterConnector. This is supplied by the OVA
-     * connector during the registration process and can not be modified.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Appliance OVA version. This is the OVA which is manually
-     * installed by the user and contains the infrastructure for the automatically
-     * updatable components on the appliance.
-     *
-     * @param string $applianceInfrastructureVersion
-     */
-    public function setApplianceInfrastructureVersion($applianceInfrastructureVersion)
+namespace Google\Service\VMMigrationService {
+    class DatacenterConnector extends \Google\Model
     {
+        /**
+         * The state is unknown. This is used for API compatibility only and is not
+         * used by the system.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The state was not sampled by the health checks yet.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The source was sampled by health checks and is not available.
+         */
+        public const STATE_OFFLINE = 'OFFLINE';
+        /**
+         * The source is available but might not be usable yet due to unvalidated
+         * credentials or another reason. The credentials referred to are the ones to
+         * the Source. The error message will contain further details.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The source exists and its credentials were verified.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Output only. Appliance OVA version. This is the OVA which is manually
+         * installed by the user and contains the infrastructure for the automatically
+         * updatable components on the appliance.
+         *
+         * @var string
+         */
+        public $applianceInfrastructureVersion;
+        /**
+         * Output only. Appliance last installed update bundle version. This is the
+         * version of the automatically updatable components on the appliance.
+         *
+         * @var string
+         */
+        public $applianceSoftwareVersion;
+        protected $availableVersionsType = AvailableUpdates::class;
+        protected $availableVersionsDataType = '';
+        /**
+         * Output only. The communication channel between the datacenter connector and
+         * Google Cloud.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Output only. The time the connector was created (as an API call, not when
+         * it was actually installed).
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. The connector's name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. A unique key for this connector. This key is internal to the OVA
+         * connector and is supplied with its creation during the registration process
+         * and can not be modified.
+         *
+         * @var string
+         */
+        public $registrationId;
+        /**
+         * The service account to use in the connector when communicating with the
+         * cloud.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Output only. State of the DatacenterConnector, as determined by the health
+         * checks.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time the state was last set.
+         *
+         * @var string
+         */
+        public $stateTime;
+        /**
+         * Output only. The last time the connector was updated with an API call.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $upgradeStatusType = UpgradeStatus::class;
+        protected $upgradeStatusDataType = '';
+        /**
+         * The version running in the DatacenterConnector. This is supplied by the OVA
+         * connector during the registration process and can not be modified.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Appliance OVA version. This is the OVA which is manually
+         * installed by the user and contains the infrastructure for the automatically
+         * updatable components on the appliance.
+         *
+         * @param string $applianceInfrastructureVersion
+         */
+        public function setApplianceInfrastructureVersion($applianceInfrastructureVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplianceInfrastructureVersion()
+        {
+        }
+        /**
+         * Output only. Appliance last installed update bundle version. This is the
+         * version of the automatically updatable components on the appliance.
+         *
+         * @param string $applianceSoftwareVersion
+         */
+        public function setApplianceSoftwareVersion($applianceSoftwareVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplianceSoftwareVersion()
+        {
+        }
+        /**
+         * Output only. The available versions for updating this appliance.
+         *
+         * @param AvailableUpdates $availableVersions
+         */
+        public function setAvailableVersions(AvailableUpdates $availableVersions)
+        {
+        }
+        /**
+         * @return AvailableUpdates
+         */
+        public function getAvailableVersions()
+        {
+        }
+        /**
+         * Output only. The communication channel between the datacenter connector and
+         * Google Cloud.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Output only. The time the connector was created (as an API call, not when
+         * it was actually installed).
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Provides details on the state of the Datacenter Connector in
+         * case of an error.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The connector's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. A unique key for this connector. This key is internal to the OVA
+         * connector and is supplied with its creation during the registration process
+         * and can not be modified.
+         *
+         * @param string $registrationId
+         */
+        public function setRegistrationId($registrationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegistrationId()
+        {
+        }
+        /**
+         * The service account to use in the connector when communicating with the
+         * cloud.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Output only. State of the DatacenterConnector, as determined by the health
+         * checks.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, OFFLINE, FAILED, ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time the state was last set.
+         *
+         * @param string $stateTime
+         */
+        public function setStateTime($stateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateTime()
+        {
+        }
+        /**
+         * Output only. The last time the connector was updated with an API call.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. The status of the current / last upgradeAppliance operation.
+         *
+         * @param UpgradeStatus $upgradeStatus
+         */
+        public function setUpgradeStatus(UpgradeStatus $upgradeStatus)
+        {
+        }
+        /**
+         * @return UpgradeStatus
+         */
+        public function getUpgradeStatus()
+        {
+        }
+        /**
+         * The version running in the DatacenterConnector. This is supplied by the OVA
+         * connector during the registration process and can not be modified.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\DatacenterConnector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplianceInfrastructureVersion()
-    {
-    }
-    /**
-     * Output only. Appliance last installed update bundle version. This is the
-     * version of the automatically updatable components on the appliance.
-     *
-     * @param string $applianceSoftwareVersion
-     */
-    public function setApplianceSoftwareVersion($applianceSoftwareVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplianceSoftwareVersion()
-    {
-    }
-    /**
-     * Output only. The available versions for updating this appliance.
-     *
-     * @param AvailableUpdates $availableVersions
-     */
-    public function setAvailableVersions(AvailableUpdates $availableVersions)
-    {
-    }
-    /**
-     * @return AvailableUpdates
-     */
-    public function getAvailableVersions()
-    {
-    }
-    /**
-     * Output only. The communication channel between the datacenter connector and
-     * Google Cloud.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucket()
-    {
-    }
-    /**
-     * Output only. The time the connector was created (as an API call, not when
-     * it was actually installed).
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Provides details on the state of the Datacenter Connector in
-     * case of an error.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The connector's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. A unique key for this connector. This key is internal to the OVA
-     * connector and is supplied with its creation during the registration process
-     * and can not be modified.
-     *
-     * @param string $registrationId
-     */
-    public function setRegistrationId($registrationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegistrationId()
-    {
-    }
-    /**
-     * The service account to use in the connector when communicating with the
-     * cloud.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Output only. State of the DatacenterConnector, as determined by the health
-     * checks.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, OFFLINE, FAILED, ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time the state was last set.
-     *
-     * @param string $stateTime
-     */
-    public function setStateTime($stateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateTime()
-    {
-    }
-    /**
-     * Output only. The last time the connector was updated with an API call.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. The status of the current / last upgradeAppliance operation.
-     *
-     * @param UpgradeStatus $upgradeStatus
-     */
-    public function setUpgradeStatus(UpgradeStatus $upgradeStatus)
-    {
-    }
-    /**
-     * @return UpgradeStatus
-     */
-    public function getUpgradeStatus()
-    {
-    }
-    /**
-     * The version running in the DatacenterConnector. This is supplied by the OVA
-     * connector during the registration process and can not be modified.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_VMMigrationService_DatacenterConnector extends \Google\Service\VMMigrationService\DatacenterConnector
     {
     }
 }

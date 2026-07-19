@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodeDrainConfig extends \Google\Model
-{
-    /**
-     * Whether to respect PDB during node pool deletion.
-     *
-     * @var bool
-     */
-    public $respectPdbDuringNodePoolDeletion;
-    /**
-     * Whether to respect PDB during node pool deletion.
-     *
-     * @param bool $respectPdbDuringNodePoolDeletion
-     */
-    public function setRespectPdbDuringNodePoolDeletion($respectPdbDuringNodePoolDeletion)
+namespace Google\Service\Container {
+    class NodeDrainConfig extends \Google\Model
     {
+        /**
+         * Whether to respect PDB during node pool deletion.
+         *
+         * @var bool
+         */
+        public $respectPdbDuringNodePoolDeletion;
+        /**
+         * Whether to respect PDB during node pool deletion.
+         *
+         * @param bool $respectPdbDuringNodePoolDeletion
+         */
+        public function setRespectPdbDuringNodePoolDeletion($respectPdbDuringNodePoolDeletion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRespectPdbDuringNodePoolDeletion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\NodeDrainConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRespectPdbDuringNodePoolDeletion()
+    class Google_Service_Container_NodeDrainConfig extends \Google\Service\Container\NodeDrainConfig
     {
     }
 }

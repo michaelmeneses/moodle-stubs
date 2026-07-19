@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ReportRowDimensionValue extends \Google\Model
-{
-    /**
-     * The localized string representation of the value. If unspecified, the
-     * display label should be derived from the value.
-     *
-     * @var string
-     */
-    public $displayLabel;
-    /**
-     * Dimension value in the format specified in the report's spec Dimension
-     * enum.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The localized string representation of the value. If unspecified, the
-     * display label should be derived from the value.
-     *
-     * @param string $displayLabel
-     */
-    public function setDisplayLabel($displayLabel)
+namespace Google\Service\AdMob {
+    class ReportRowDimensionValue extends \Google\Model
     {
+        /**
+         * The localized string representation of the value. If unspecified, the
+         * display label should be derived from the value.
+         *
+         * @var string
+         */
+        public $displayLabel;
+        /**
+         * Dimension value in the format specified in the report's spec Dimension
+         * enum.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The localized string representation of the value. If unspecified, the
+         * display label should be derived from the value.
+         *
+         * @param string $displayLabel
+         */
+        public function setDisplayLabel($displayLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayLabel()
+        {
+        }
+        /**
+         * Dimension value in the format specified in the report's spec Dimension
+         * enum.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdMob\ReportRowDimensionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayLabel()
-    {
-    }
-    /**
-     * Dimension value in the format specified in the report's spec Dimension
-     * enum.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_AdMob_ReportRowDimensionValue extends \Google\Service\AdMob\ReportRowDimensionValue
     {
     }
 }

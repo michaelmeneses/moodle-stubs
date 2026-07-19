@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DimensionRange extends \Google\Model
-{
-    /**
-     * The default value, do not use.
-     */
-    public const DIMENSION_DIMENSION_UNSPECIFIED = 'DIMENSION_UNSPECIFIED';
-    /**
-     * Operates on the rows of a sheet.
-     */
-    public const DIMENSION_ROWS = 'ROWS';
-    /**
-     * Operates on the columns of a sheet.
-     */
-    public const DIMENSION_COLUMNS = 'COLUMNS';
-    /**
-     * The dimension of the span.
-     *
-     * @var string
-     */
-    public $dimension;
-    /**
-     * The end (exclusive) of the span, or not set if unbounded.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * The sheet this span is on.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The start (inclusive) of the span, or not set if unbounded.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The dimension of the span.
-     *
-     * Accepted values: DIMENSION_UNSPECIFIED, ROWS, COLUMNS
-     *
-     * @param self::DIMENSION_* $dimension
-     */
-    public function setDimension($dimension)
+namespace Google\Service\Sheets {
+    class DimensionRange extends \Google\Model
     {
+        /**
+         * The default value, do not use.
+         */
+        public const DIMENSION_DIMENSION_UNSPECIFIED = 'DIMENSION_UNSPECIFIED';
+        /**
+         * Operates on the rows of a sheet.
+         */
+        public const DIMENSION_ROWS = 'ROWS';
+        /**
+         * Operates on the columns of a sheet.
+         */
+        public const DIMENSION_COLUMNS = 'COLUMNS';
+        /**
+         * The dimension of the span.
+         *
+         * @var string
+         */
+        public $dimension;
+        /**
+         * The end (exclusive) of the span, or not set if unbounded.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * The sheet this span is on.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The start (inclusive) of the span, or not set if unbounded.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The dimension of the span.
+         *
+         * Accepted values: DIMENSION_UNSPECIFIED, ROWS, COLUMNS
+         *
+         * @param self::DIMENSION_* $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return self::DIMENSION_*
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * The end (exclusive) of the span, or not set if unbounded.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * The sheet this span is on.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
+        /**
+         * The start (inclusive) of the span, or not set if unbounded.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIMENSION_*
+     * Runtime class alias of \Google\Service\Sheets\DimensionRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * The end (exclusive) of the span, or not set if unbounded.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * The sheet this span is on.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
-    {
-    }
-    /**
-     * The start (inclusive) of the span, or not set if unbounded.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_Sheets_DimensionRange extends \Google\Service\Sheets\DimensionRange
     {
     }
 }

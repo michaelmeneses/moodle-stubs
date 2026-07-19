@@ -21,236 +21,245 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Cluster extends \Google\Collection
-{
-    /**
-     * The default value. This value should never be used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Cluster is operational and can be used by the user.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The Cluster is being deployed.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Adding or removing of a node to the cluster, any other cluster specific
-     * updates.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * The Cluster is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The Cluster is undergoing maintenance, for example: a failed node is
-     * getting replaced.
-     */
-    public const STATE_REPAIRING = 'REPAIRING';
-    protected $collection_key = 'datastoreMountConfig';
-    protected $autoscalingSettingsType = AutoscalingSettings::class;
-    protected $autoscalingSettingsDataType = '';
-    /**
-     * Output only. Creation time of this resource.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $datastoreMountConfigType = DatastoreMountConfig::class;
-    protected $datastoreMountConfigDataType = 'array';
-    /**
-     * Output only. True if the cluster is a management cluster; false otherwise.
-     * There can only be one management cluster in a private cloud and it has to
-     * be the first one.
-     *
-     * @var bool
-     */
-    public $management;
-    /**
-     * Output only. Identifier. The resource name of this cluster. Resource names
-     * are schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-central1-a/privateClouds/my-
-     * cloud/clusters/my-cluster`
-     *
-     * @var string
-     */
-    public $name;
-    protected $nodeTypeConfigsType = NodeTypeConfig::class;
-    protected $nodeTypeConfigsDataType = 'map';
-    /**
-     * Output only. State of the resource.
-     *
-     * @var string
-     */
-    public $state;
-    protected $stretchedClusterConfigType = StretchedClusterConfig::class;
-    protected $stretchedClusterConfigDataType = '';
-    /**
-     * Output only. System-generated unique identifier for the resource.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Last update time of this resource.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Configuration of the autoscaling applied to this cluster.
-     *
-     * @param AutoscalingSettings $autoscalingSettings
-     */
-    public function setAutoscalingSettings(AutoscalingSettings $autoscalingSettings)
+namespace Google\Service\VMwareEngine {
+    class Cluster extends \Google\Collection
     {
+        /**
+         * The default value. This value should never be used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Cluster is operational and can be used by the user.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The Cluster is being deployed.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Adding or removing of a node to the cluster, any other cluster specific
+         * updates.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * The Cluster is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The Cluster is undergoing maintenance, for example: a failed node is
+         * getting replaced.
+         */
+        public const STATE_REPAIRING = 'REPAIRING';
+        protected $collection_key = 'datastoreMountConfig';
+        protected $autoscalingSettingsType = AutoscalingSettings::class;
+        protected $autoscalingSettingsDataType = '';
+        /**
+         * Output only. Creation time of this resource.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $datastoreMountConfigType = DatastoreMountConfig::class;
+        protected $datastoreMountConfigDataType = 'array';
+        /**
+         * Output only. True if the cluster is a management cluster; false otherwise.
+         * There can only be one management cluster in a private cloud and it has to
+         * be the first one.
+         *
+         * @var bool
+         */
+        public $management;
+        /**
+         * Output only. Identifier. The resource name of this cluster. Resource names
+         * are schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-central1-a/privateClouds/my-
+         * cloud/clusters/my-cluster`
+         *
+         * @var string
+         */
+        public $name;
+        protected $nodeTypeConfigsType = NodeTypeConfig::class;
+        protected $nodeTypeConfigsDataType = 'map';
+        /**
+         * Output only. State of the resource.
+         *
+         * @var string
+         */
+        public $state;
+        protected $stretchedClusterConfigType = StretchedClusterConfig::class;
+        protected $stretchedClusterConfigDataType = '';
+        /**
+         * Output only. System-generated unique identifier for the resource.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Last update time of this resource.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Configuration of the autoscaling applied to this cluster.
+         *
+         * @param AutoscalingSettings $autoscalingSettings
+         */
+        public function setAutoscalingSettings(AutoscalingSettings $autoscalingSettings)
+        {
+        }
+        /**
+         * @return AutoscalingSettings
+         */
+        public function getAutoscalingSettings()
+        {
+        }
+        /**
+         * Output only. Creation time of this resource.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Configuration of a mounted datastore.
+         *
+         * @param DatastoreMountConfig[] $datastoreMountConfig
+         */
+        public function setDatastoreMountConfig($datastoreMountConfig)
+        {
+        }
+        /**
+         * @return DatastoreMountConfig[]
+         */
+        public function getDatastoreMountConfig()
+        {
+        }
+        /**
+         * Output only. True if the cluster is a management cluster; false otherwise.
+         * There can only be one management cluster in a private cloud and it has to
+         * be the first one.
+         *
+         * @param bool $management
+         */
+        public function setManagement($management)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getManagement()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource name of this cluster. Resource names
+         * are schemeless URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-central1-a/privateClouds/my-
+         * cloud/clusters/my-cluster`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The map of cluster node types in this cluster, where the key is
+         * canonical identifier of the node type (corresponds to the `NodeType`).
+         *
+         * @param NodeTypeConfig[] $nodeTypeConfigs
+         */
+        public function setNodeTypeConfigs($nodeTypeConfigs)
+        {
+        }
+        /**
+         * @return NodeTypeConfig[]
+         */
+        public function getNodeTypeConfigs()
+        {
+        }
+        /**
+         * Output only. State of the resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, UPDATING, DELETING,
+         * REPAIRING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Optional. Configuration of a stretched cluster. Required for clusters that
+         * belong to a STRETCHED private cloud.
+         *
+         * @param StretchedClusterConfig $stretchedClusterConfig
+         */
+        public function setStretchedClusterConfig(StretchedClusterConfig $stretchedClusterConfig)
+        {
+        }
+        /**
+         * @return StretchedClusterConfig
+         */
+        public function getStretchedClusterConfig()
+        {
+        }
+        /**
+         * Output only. System-generated unique identifier for the resource.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Last update time of this resource.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoscalingSettings
+     * Runtime class alias of \Google\Service\VMwareEngine\Cluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalingSettings()
-    {
-    }
-    /**
-     * Output only. Creation time of this resource.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Configuration of a mounted datastore.
-     *
-     * @param DatastoreMountConfig[] $datastoreMountConfig
-     */
-    public function setDatastoreMountConfig($datastoreMountConfig)
-    {
-    }
-    /**
-     * @return DatastoreMountConfig[]
-     */
-    public function getDatastoreMountConfig()
-    {
-    }
-    /**
-     * Output only. True if the cluster is a management cluster; false otherwise.
-     * There can only be one management cluster in a private cloud and it has to
-     * be the first one.
-     *
-     * @param bool $management
-     */
-    public function setManagement($management)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getManagement()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource name of this cluster. Resource names
-     * are schemeless URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-central1-a/privateClouds/my-
-     * cloud/clusters/my-cluster`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The map of cluster node types in this cluster, where the key is
-     * canonical identifier of the node type (corresponds to the `NodeType`).
-     *
-     * @param NodeTypeConfig[] $nodeTypeConfigs
-     */
-    public function setNodeTypeConfigs($nodeTypeConfigs)
-    {
-    }
-    /**
-     * @return NodeTypeConfig[]
-     */
-    public function getNodeTypeConfigs()
-    {
-    }
-    /**
-     * Output only. State of the resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, UPDATING, DELETING,
-     * REPAIRING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Optional. Configuration of a stretched cluster. Required for clusters that
-     * belong to a STRETCHED private cloud.
-     *
-     * @param StretchedClusterConfig $stretchedClusterConfig
-     */
-    public function setStretchedClusterConfig(StretchedClusterConfig $stretchedClusterConfig)
-    {
-    }
-    /**
-     * @return StretchedClusterConfig
-     */
-    public function getStretchedClusterConfig()
-    {
-    }
-    /**
-     * Output only. System-generated unique identifier for the resource.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Last update time of this resource.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_VMwareEngine_Cluster extends \Google\Service\VMwareEngine\Cluster
     {
     }
 }

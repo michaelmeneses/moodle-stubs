@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ShieldedInstanceIdentityEntry extends \Google\Model
-{
-    /**
-     * A PEM-encoded X.509 certificate. This field can be empty.
-     *
-     * @var string
-     */
-    public $ekCert;
-    /**
-     * A PEM-encoded public key.
-     *
-     * @var string
-     */
-    public $ekPub;
-    /**
-     * A PEM-encoded X.509 certificate. This field can be empty.
-     *
-     * @param string $ekCert
-     */
-    public function setEkCert($ekCert)
+namespace Google\Service\Compute {
+    class ShieldedInstanceIdentityEntry extends \Google\Model
     {
+        /**
+         * A PEM-encoded X.509 certificate. This field can be empty.
+         *
+         * @var string
+         */
+        public $ekCert;
+        /**
+         * A PEM-encoded public key.
+         *
+         * @var string
+         */
+        public $ekPub;
+        /**
+         * A PEM-encoded X.509 certificate. This field can be empty.
+         *
+         * @param string $ekCert
+         */
+        public function setEkCert($ekCert)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEkCert()
+        {
+        }
+        /**
+         * A PEM-encoded public key.
+         *
+         * @param string $ekPub
+         */
+        public function setEkPub($ekPub)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEkPub()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ShieldedInstanceIdentityEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEkCert()
-    {
-    }
-    /**
-     * A PEM-encoded public key.
-     *
-     * @param string $ekPub
-     */
-    public function setEkPub($ekPub)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEkPub()
+    class Google_Service_Compute_ShieldedInstanceIdentityEntry extends \Google\Service\Compute\ShieldedInstanceIdentityEntry
     {
     }
 }

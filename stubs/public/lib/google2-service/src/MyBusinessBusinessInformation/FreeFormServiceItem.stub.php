@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class FreeFormServiceItem extends \Google\Model
-{
-    /**
-     * Required. This field represents the category name (i.e. the category's
-     * stable ID). The `category` and `service_type_id` should match the possible
-     * combinations provided in the `Category` message.
-     *
-     * @var string
-     */
-    public $category;
-    protected $labelType = Label::class;
-    protected $labelDataType = '';
-    /**
-     * Required. This field represents the category name (i.e. the category's
-     * stable ID). The `category` and `service_type_id` should match the possible
-     * combinations provided in the `Category` message.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class FreeFormServiceItem extends \Google\Model
     {
+        /**
+         * Required. This field represents the category name (i.e. the category's
+         * stable ID). The `category` and `service_type_id` should match the possible
+         * combinations provided in the `Category` message.
+         *
+         * @var string
+         */
+        public $category;
+        protected $labelType = Label::class;
+        protected $labelDataType = '';
+        /**
+         * Required. This field represents the category name (i.e. the category's
+         * stable ID). The `category` and `service_type_id` should match the possible
+         * combinations provided in the `Category` message.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Required. Language-tagged labels for the item. We recommend that item names
+         * be 140 characters or less, and descriptions 250 characters or less. This
+         * field should only be set if the input is a custom service item.
+         * Standardized service types should be updated via service_type_id.
+         *
+         * @param Label $label
+         */
+        public function setLabel(Label $label)
+        {
+        }
+        /**
+         * @return Label
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\FreeFormServiceItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Required. Language-tagged labels for the item. We recommend that item names
-     * be 140 characters or less, and descriptions 250 characters or less. This
-     * field should only be set if the input is a custom service item.
-     * Standardized service types should be updated via service_type_id.
-     *
-     * @param Label $label
-     */
-    public function setLabel(Label $label)
-    {
-    }
-    /**
-     * @return Label
-     */
-    public function getLabel()
+    class Google_Service_MyBusinessBusinessInformation_FreeFormServiceItem extends \Google\Service\MyBusinessBusinessInformation\FreeFormServiceItem
     {
     }
 }

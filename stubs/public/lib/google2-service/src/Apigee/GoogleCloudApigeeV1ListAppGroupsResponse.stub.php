@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListAppGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'appGroups';
-    protected $appGroupsType = GoogleCloudApigeeV1AppGroup::class;
-    protected $appGroupsDataType = 'array';
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total count of AppGroups.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * List of AppGroups.
-     *
-     * @param GoogleCloudApigeeV1AppGroup[] $appGroups
-     */
-    public function setAppGroups($appGroups)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListAppGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'appGroups';
+        protected $appGroupsType = GoogleCloudApigeeV1AppGroup::class;
+        protected $appGroupsDataType = 'array';
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total count of AppGroups.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * List of AppGroups.
+         *
+         * @param GoogleCloudApigeeV1AppGroup[] $appGroups
+         */
+        public function setAppGroups($appGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AppGroup[]
+         */
+        public function getAppGroups()
+        {
+        }
+        /**
+         * Token that can be sent as `next_page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total count of AppGroups.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AppGroup[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListAppGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppGroups()
-    {
-    }
-    /**
-     * Token that can be sent as `next_page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total count of AppGroups.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListAppGroupsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListAppGroupsResponse
     {
     }
 }

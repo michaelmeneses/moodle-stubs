@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1SearchTextRequestLocation extends \Google\Model
-{
-    protected $rectangleType = GoogleGeoTypeViewport::class;
-    protected $rectangleDataType = '';
-    /**
-     * @var bool
-     */
-    public $strictRestriction;
-    /**
-     * @param GoogleGeoTypeViewport
-     */
-    public function setRectangle(GoogleGeoTypeViewport $rectangle)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1SearchTextRequestLocation extends \Google\Model
     {
+        protected $rectangleType = GoogleGeoTypeViewport::class;
+        protected $rectangleDataType = '';
+        /**
+         * @var bool
+         */
+        public $strictRestriction;
+        /**
+         * @param GoogleGeoTypeViewport
+         */
+        public function setRectangle(GoogleGeoTypeViewport $rectangle)
+        {
+        }
+        /**
+         * @return GoogleGeoTypeViewport
+         */
+        public function getRectangle()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setStrictRestriction($strictRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrictRestriction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleGeoTypeViewport
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRectangle()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setStrictRestriction($strictRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrictRestriction()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1SearchTextRequestLocation extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestLocation
     {
     }
 }

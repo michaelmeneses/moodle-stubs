@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class Status extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    /**
-     * The status code, which should be an enum value of google.rpc.Code.
-     *
-     * @var int
-     */
-    public $code;
-    /**
-     * A list of messages that carry the error details. There is a common set of
-     * message types for APIs to use.
-     *
-     * @var array[]
-     */
-    public $details;
-    /**
-     * A developer-facing error message, which should be in English. Any user-
-     * facing error message should be localized and sent in the
-     * google.rpc.Status.details field, or localized by the client.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The status code, which should be an enum value of google.rpc.Code.
-     *
-     * @param int $code
-     */
-    public function setCode($code)
+namespace Google\Service\AccessContextManager {
+    class Status extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        /**
+         * The status code, which should be an enum value of google.rpc.Code.
+         *
+         * @var int
+         */
+        public $code;
+        /**
+         * A list of messages that carry the error details. There is a common set of
+         * message types for APIs to use.
+         *
+         * @var array[]
+         */
+        public $details;
+        /**
+         * A developer-facing error message, which should be in English. Any user-
+         * facing error message should be localized and sent in the
+         * google.rpc.Status.details field, or localized by the client.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The status code, which should be an enum value of google.rpc.Code.
+         *
+         * @param int $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A list of messages that carry the error details. There is a common set of
+         * message types for APIs to use.
+         *
+         * @param array[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * A developer-facing error message, which should be in English. Any user-
+         * facing error message should be localized and sent in the
+         * google.rpc.Status.details field, or localized by the client.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AccessContextManager\Status registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A list of messages that carry the error details. There is a common set of
-     * message types for APIs to use.
-     *
-     * @param array[] $details
-     */
-    public function setDetails($details)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * A developer-facing error message, which should be in English. Any user-
-     * facing error message should be localized and sent in the
-     * google.rpc.Status.details field, or localized by the client.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_AccessContextManager_Status extends \Google\Service\AccessContextManager\Status
     {
     }
 }

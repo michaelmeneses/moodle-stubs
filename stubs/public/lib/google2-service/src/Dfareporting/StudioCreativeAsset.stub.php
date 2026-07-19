@@ -21,233 +21,242 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class StudioCreativeAsset extends \Google\Model
-{
-    /**
-     * Unknown type of asset.
-     */
-    public const TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
-    /**
-     * The asset is an HTML file.
-     */
-    public const TYPE_HTML = 'HTML';
-    /**
-     * The asset is a video file.
-     */
-    public const TYPE_VIDEO = 'VIDEO';
-    /**
-     * The asset is an image file.
-     */
-    public const TYPE_IMAGE = 'IMAGE';
-    /**
-     * The asset is a font file.
-     */
-    public const TYPE_FONT = 'FONT';
-    protected $createInfoType = LastModifiedInfo::class;
-    protected $createInfoDataType = '';
-    /**
-     * The filename of the studio creative asset. It is default to the original
-     * filename of the asset.
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * The filesize of the studio creative asset. This is a read-only field.
-     *
-     * @var string
-     */
-    public $filesize;
-    /**
-     * Output only. Unique ID of this studio creative asset. This is a read-only,
-     * auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    protected $lastModifiedInfoType = LastModifiedInfo::class;
-    protected $lastModifiedInfoDataType = '';
-    /**
-     * Studio account ID of this studio creative asset. This field, if left unset,
-     * will be auto-populated..
-     *
-     * @var string
-     */
-    public $studioAccountId;
-    /**
-     * Studio advertiser ID of this studio creative asset. This is a required
-     * field on insertion.
-     *
-     * @var string
-     */
-    public $studioAdvertiserId;
-    /**
-     * Studio creative ID of this studio creative asset. The asset will be
-     * associated to the creative if creative id is set.
-     *
-     * @var string
-     */
-    public $studioCreativeId;
-    /**
-     * The type of the studio creative asset. It is a auto-generated, read-only
-     * field.
-     *
-     * @var string
-     */
-    public $type;
-    protected $videoProcessingDataType = VideoProcessingData::class;
-    protected $videoProcessingDataDataType = '';
-    /**
-     * Output only. The creation timestamp of the studio creative asset. This is a
-     * read-only field.
-     *
-     * @param LastModifiedInfo $createInfo
-     */
-    public function setCreateInfo(LastModifiedInfo $createInfo)
+namespace Google\Service\Dfareporting {
+    class StudioCreativeAsset extends \Google\Model
     {
+        /**
+         * Unknown type of asset.
+         */
+        public const TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
+        /**
+         * The asset is an HTML file.
+         */
+        public const TYPE_HTML = 'HTML';
+        /**
+         * The asset is a video file.
+         */
+        public const TYPE_VIDEO = 'VIDEO';
+        /**
+         * The asset is an image file.
+         */
+        public const TYPE_IMAGE = 'IMAGE';
+        /**
+         * The asset is a font file.
+         */
+        public const TYPE_FONT = 'FONT';
+        protected $createInfoType = LastModifiedInfo::class;
+        protected $createInfoDataType = '';
+        /**
+         * The filename of the studio creative asset. It is default to the original
+         * filename of the asset.
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * The filesize of the studio creative asset. This is a read-only field.
+         *
+         * @var string
+         */
+        public $filesize;
+        /**
+         * Output only. Unique ID of this studio creative asset. This is a read-only,
+         * auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        protected $lastModifiedInfoType = LastModifiedInfo::class;
+        protected $lastModifiedInfoDataType = '';
+        /**
+         * Studio account ID of this studio creative asset. This field, if left unset,
+         * will be auto-populated..
+         *
+         * @var string
+         */
+        public $studioAccountId;
+        /**
+         * Studio advertiser ID of this studio creative asset. This is a required
+         * field on insertion.
+         *
+         * @var string
+         */
+        public $studioAdvertiserId;
+        /**
+         * Studio creative ID of this studio creative asset. The asset will be
+         * associated to the creative if creative id is set.
+         *
+         * @var string
+         */
+        public $studioCreativeId;
+        /**
+         * The type of the studio creative asset. It is a auto-generated, read-only
+         * field.
+         *
+         * @var string
+         */
+        public $type;
+        protected $videoProcessingDataType = VideoProcessingData::class;
+        protected $videoProcessingDataDataType = '';
+        /**
+         * Output only. The creation timestamp of the studio creative asset. This is a
+         * read-only field.
+         *
+         * @param LastModifiedInfo $createInfo
+         */
+        public function setCreateInfo(LastModifiedInfo $createInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getCreateInfo()
+        {
+        }
+        /**
+         * The filename of the studio creative asset. It is default to the original
+         * filename of the asset.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
+        /**
+         * The filesize of the studio creative asset. This is a read-only field.
+         *
+         * @param string $filesize
+         */
+        public function setFilesize($filesize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilesize()
+        {
+        }
+        /**
+         * Output only. Unique ID of this studio creative asset. This is a read-only,
+         * auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. The last modified timestamp of the studio creative asset. This
+         * is a read-only field.
+         *
+         * @param LastModifiedInfo $lastModifiedInfo
+         */
+        public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getLastModifiedInfo()
+        {
+        }
+        /**
+         * Studio account ID of this studio creative asset. This field, if left unset,
+         * will be auto-populated..
+         *
+         * @param string $studioAccountId
+         */
+        public function setStudioAccountId($studioAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioAccountId()
+        {
+        }
+        /**
+         * Studio advertiser ID of this studio creative asset. This is a required
+         * field on insertion.
+         *
+         * @param string $studioAdvertiserId
+         */
+        public function setStudioAdvertiserId($studioAdvertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioAdvertiserId()
+        {
+        }
+        /**
+         * Studio creative ID of this studio creative asset. The asset will be
+         * associated to the creative if creative id is set.
+         *
+         * @param string $studioCreativeId
+         */
+        public function setStudioCreativeId($studioCreativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioCreativeId()
+        {
+        }
+        /**
+         * The type of the studio creative asset. It is a auto-generated, read-only
+         * field.
+         *
+         * Accepted values: UNKNOWN_TYPE, HTML, VIDEO, IMAGE, FONT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The processing data of the studio creative asset. This is a read-only
+         * field.
+         *
+         * @param VideoProcessingData $videoProcessingData
+         */
+        public function setVideoProcessingData(VideoProcessingData $videoProcessingData)
+        {
+        }
+        /**
+         * @return VideoProcessingData
+         */
+        public function getVideoProcessingData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LastModifiedInfo
+     * Runtime class alias of \Google\Service\Dfareporting\StudioCreativeAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateInfo()
-    {
-    }
-    /**
-     * The filename of the studio creative asset. It is default to the original
-     * filename of the asset.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
-    {
-    }
-    /**
-     * The filesize of the studio creative asset. This is a read-only field.
-     *
-     * @param string $filesize
-     */
-    public function setFilesize($filesize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilesize()
-    {
-    }
-    /**
-     * Output only. Unique ID of this studio creative asset. This is a read-only,
-     * auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. The last modified timestamp of the studio creative asset. This
-     * is a read-only field.
-     *
-     * @param LastModifiedInfo $lastModifiedInfo
-     */
-    public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getLastModifiedInfo()
-    {
-    }
-    /**
-     * Studio account ID of this studio creative asset. This field, if left unset,
-     * will be auto-populated..
-     *
-     * @param string $studioAccountId
-     */
-    public function setStudioAccountId($studioAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudioAccountId()
-    {
-    }
-    /**
-     * Studio advertiser ID of this studio creative asset. This is a required
-     * field on insertion.
-     *
-     * @param string $studioAdvertiserId
-     */
-    public function setStudioAdvertiserId($studioAdvertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudioAdvertiserId()
-    {
-    }
-    /**
-     * Studio creative ID of this studio creative asset. The asset will be
-     * associated to the creative if creative id is set.
-     *
-     * @param string $studioCreativeId
-     */
-    public function setStudioCreativeId($studioCreativeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudioCreativeId()
-    {
-    }
-    /**
-     * The type of the studio creative asset. It is a auto-generated, read-only
-     * field.
-     *
-     * Accepted values: UNKNOWN_TYPE, HTML, VIDEO, IMAGE, FONT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The processing data of the studio creative asset. This is a read-only
-     * field.
-     *
-     * @param VideoProcessingData $videoProcessingData
-     */
-    public function setVideoProcessingData(VideoProcessingData $videoProcessingData)
-    {
-    }
-    /**
-     * @return VideoProcessingData
-     */
-    public function getVideoProcessingData()
+    class Google_Service_Dfareporting_StudioCreativeAsset extends \Google\Service\Dfareporting\StudioCreativeAsset
     {
     }
 }

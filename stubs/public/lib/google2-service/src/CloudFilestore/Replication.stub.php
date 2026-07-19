@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class Replication extends \Google\Collection
-{
-    /**
-     * Role not set.
-     */
-    public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * The instance is the `ACTIVE` replication member, functions as the
-     * replication source instance.
-     */
-    public const ROLE_ACTIVE = 'ACTIVE';
-    /**
-     * The instance is the `STANDBY` replication member, functions as the
-     * replication destination instance.
-     */
-    public const ROLE_STANDBY = 'STANDBY';
-    protected $collection_key = 'replicas';
-    protected $replicasType = ReplicaConfig::class;
-    protected $replicasDataType = 'array';
-    /**
-     * Optional. The replication role. When creating a new replica, this field
-     * must be set to `STANDBY`.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Optional. Replication configuration for the replica instance associated
-     * with this instance. Only a single replica is supported.
-     *
-     * @param ReplicaConfig[] $replicas
-     */
-    public function setReplicas($replicas)
+namespace Google\Service\CloudFilestore {
+    class Replication extends \Google\Collection
     {
+        /**
+         * Role not set.
+         */
+        public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * The instance is the `ACTIVE` replication member, functions as the
+         * replication source instance.
+         */
+        public const ROLE_ACTIVE = 'ACTIVE';
+        /**
+         * The instance is the `STANDBY` replication member, functions as the
+         * replication destination instance.
+         */
+        public const ROLE_STANDBY = 'STANDBY';
+        protected $collection_key = 'replicas';
+        protected $replicasType = ReplicaConfig::class;
+        protected $replicasDataType = 'array';
+        /**
+         * Optional. The replication role. When creating a new replica, this field
+         * must be set to `STANDBY`.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Optional. Replication configuration for the replica instance associated
+         * with this instance. Only a single replica is supported.
+         *
+         * @param ReplicaConfig[] $replicas
+         */
+        public function setReplicas($replicas)
+        {
+        }
+        /**
+         * @return ReplicaConfig[]
+         */
+        public function getReplicas()
+        {
+        }
+        /**
+         * Optional. The replication role. When creating a new replica, this field
+         * must be set to `STANDBY`.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, ACTIVE, STANDBY
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReplicaConfig[]
+     * Runtime class alias of \Google\Service\CloudFilestore\Replication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplicas()
-    {
-    }
-    /**
-     * Optional. The replication role. When creating a new replica, this field
-     * must be set to `STANDBY`.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, ACTIVE, STANDBY
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
+    class Google_Service_CloudFilestore_Replication extends \Google\Service\CloudFilestore\Replication
     {
     }
 }

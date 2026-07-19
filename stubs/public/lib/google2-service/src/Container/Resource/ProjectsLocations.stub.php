@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containerService = new Google\Service\Container(...);
- *   $locations = $containerService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Container\Resource {
+    use Google\Service\Container\ServerConfig;
     /**
-     * Returns configuration info about the Google Kubernetes Engine service.
-     * (locations.getServerConfig)
-     *
-     * @param string $name The name (project and location) of the server config to
-     * get, specified in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string projectId Deprecated. The Google Developers Console
-     * [project ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @opt_param string zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) to return
-     * operations for. This field has been deprecated and replaced by the name
-     * field.
-     * @return ServerConfig
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containerService = new Google\Service\Container(...);
+     *   $locations = $containerService->projects_locations;
+     *  </code>
      */
-    public function getServerConfig($name, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
+    {
+        /**
+         * Returns configuration info about the Google Kubernetes Engine service.
+         * (locations.getServerConfig)
+         *
+         * @param string $name The name (project and location) of the server config to
+         * get, specified in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string projectId Deprecated. The Google Developers Console
+         * [project ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @opt_param string zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) to return
+         * operations for. This field has been deprecated and replaced by the name
+         * field.
+         * @return ServerConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getServerConfig($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Container\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Container_Resource_ProjectsLocations extends \Google\Service\Container\Resource\ProjectsLocations
     {
     }
 }

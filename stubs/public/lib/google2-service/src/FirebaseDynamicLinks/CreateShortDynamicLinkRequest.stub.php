@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class CreateShortDynamicLinkRequest extends \Google\Model
-{
-    protected $dynamicLinkInfoType = DynamicLinkInfo::class;
-    protected $dynamicLinkInfoDataType = '';
-    /**
-     * Full long Dynamic Link URL with desired query parameters specified. For
-     * example,
-     * "https://sample.app.goo.gl/?link=http://www.google.com&apn=com.sample",
-     * [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-
-     * shortener).
-     *
-     * @var string
-     */
-    public $longDynamicLink;
-    /**
-     * Google SDK version. Version takes the form "$major.$minor.$patch"
-     *
-     * @var string
-     */
-    public $sdkVersion;
-    protected $suffixType = Suffix::class;
-    protected $suffixDataType = '';
-    /**
-     * Information about the Dynamic Link to be shortened. [Learn
-     * more](https://firebase.google.com/docs/reference/dynamic-links/link-
-     * shortener).
-     *
-     * @param DynamicLinkInfo $dynamicLinkInfo
-     */
-    public function setDynamicLinkInfo(DynamicLinkInfo $dynamicLinkInfo)
+namespace Google\Service\FirebaseDynamicLinks {
+    class CreateShortDynamicLinkRequest extends \Google\Model
     {
+        protected $dynamicLinkInfoType = DynamicLinkInfo::class;
+        protected $dynamicLinkInfoDataType = '';
+        /**
+         * Full long Dynamic Link URL with desired query parameters specified. For
+         * example,
+         * "https://sample.app.goo.gl/?link=http://www.google.com&apn=com.sample",
+         * [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-
+         * shortener).
+         *
+         * @var string
+         */
+        public $longDynamicLink;
+        /**
+         * Google SDK version. Version takes the form "$major.$minor.$patch"
+         *
+         * @var string
+         */
+        public $sdkVersion;
+        protected $suffixType = Suffix::class;
+        protected $suffixDataType = '';
+        /**
+         * Information about the Dynamic Link to be shortened. [Learn
+         * more](https://firebase.google.com/docs/reference/dynamic-links/link-
+         * shortener).
+         *
+         * @param DynamicLinkInfo $dynamicLinkInfo
+         */
+        public function setDynamicLinkInfo(DynamicLinkInfo $dynamicLinkInfo)
+        {
+        }
+        /**
+         * @return DynamicLinkInfo
+         */
+        public function getDynamicLinkInfo()
+        {
+        }
+        /**
+         * Full long Dynamic Link URL with desired query parameters specified. For
+         * example,
+         * "https://sample.app.goo.gl/?link=http://www.google.com&apn=com.sample",
+         * [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-
+         * shortener).
+         *
+         * @param string $longDynamicLink
+         */
+        public function setLongDynamicLink($longDynamicLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongDynamicLink()
+        {
+        }
+        /**
+         * Google SDK version. Version takes the form "$major.$minor.$patch"
+         *
+         * @param string $sdkVersion
+         */
+        public function setSdkVersion($sdkVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSdkVersion()
+        {
+        }
+        /**
+         * Short Dynamic Link suffix. Optional.
+         *
+         * @param Suffix $suffix
+         */
+        public function setSuffix(Suffix $suffix)
+        {
+        }
+        /**
+         * @return Suffix
+         */
+        public function getSuffix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicLinkInfo
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\CreateShortDynamicLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicLinkInfo()
-    {
-    }
-    /**
-     * Full long Dynamic Link URL with desired query parameters specified. For
-     * example,
-     * "https://sample.app.goo.gl/?link=http://www.google.com&apn=com.sample",
-     * [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-
-     * shortener).
-     *
-     * @param string $longDynamicLink
-     */
-    public function setLongDynamicLink($longDynamicLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongDynamicLink()
-    {
-    }
-    /**
-     * Google SDK version. Version takes the form "$major.$minor.$patch"
-     *
-     * @param string $sdkVersion
-     */
-    public function setSdkVersion($sdkVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSdkVersion()
-    {
-    }
-    /**
-     * Short Dynamic Link suffix. Optional.
-     *
-     * @param Suffix $suffix
-     */
-    public function setSuffix(Suffix $suffix)
-    {
-    }
-    /**
-     * @return Suffix
-     */
-    public function getSuffix()
+    class Google_Service_FirebaseDynamicLinks_CreateShortDynamicLinkRequest extends \Google\Service\FirebaseDynamicLinks\CreateShortDynamicLinkRequest
     {
     }
 }

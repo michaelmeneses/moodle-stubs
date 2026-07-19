@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor extends \Google\Model
-{
-    /**
-     * Corresponds to `ClaimReview.author.image`.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * Name of the organization that is publishing the fact check. Corresponds to
-     * `ClaimReview.author.name`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Corresponds to `ClaimReview.author.image`.
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor extends \Google\Model
     {
+        /**
+         * Corresponds to `ClaimReview.author.image`.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * Name of the organization that is publishing the fact check. Corresponds to
+         * `ClaimReview.author.name`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Corresponds to `ClaimReview.author.image`.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * Name of the organization that is publishing the fact check. Corresponds to
+         * `ClaimReview.author.name`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * Name of the organization that is publishing the fact check. Corresponds to
-     * `ClaimReview.author.name`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor
     {
     }
 }

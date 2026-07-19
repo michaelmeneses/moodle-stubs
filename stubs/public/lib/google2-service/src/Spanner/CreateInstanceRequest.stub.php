@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class CreateInstanceRequest extends \Google\Model
-{
-    protected $instanceType = Instance::class;
-    protected $instanceDataType = '';
-    /**
-     * Required. The ID of the instance to create. Valid identifiers are of the
-     * form `a-z*[a-z0-9]` and must be between 2 and 64 characters in length.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Required. The instance to create. The name may be omitted, but if specified
-     * must be `/instances/`.
-     *
-     * @param Instance $instance
-     */
-    public function setInstance(Instance $instance)
+namespace Google\Service\Spanner {
+    class CreateInstanceRequest extends \Google\Model
     {
+        protected $instanceType = Instance::class;
+        protected $instanceDataType = '';
+        /**
+         * Required. The ID of the instance to create. Valid identifiers are of the
+         * form `a-z*[a-z0-9]` and must be between 2 and 64 characters in length.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Required. The instance to create. The name may be omitted, but if specified
+         * must be `/instances/`.
+         *
+         * @param Instance $instance
+         */
+        public function setInstance(Instance $instance)
+        {
+        }
+        /**
+         * @return Instance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. The ID of the instance to create. Valid identifiers are of the
+         * form `a-z*[a-z0-9]` and must be between 2 and 64 characters in length.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance
+     * Runtime class alias of \Google\Service\Spanner\CreateInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. The ID of the instance to create. Valid identifiers are of the
-     * form `a-z*[a-z0-9]` and must be between 2 and 64 characters in length.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
+    class Google_Service_Spanner_CreateInstanceRequest extends \Google\Service\Spanner\CreateInstanceRequest
     {
     }
 }

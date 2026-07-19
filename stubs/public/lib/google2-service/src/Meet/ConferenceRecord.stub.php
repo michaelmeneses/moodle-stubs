@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ConferenceRecord extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when the conference ended. Set for past conferences.
-     * Unset if the conference is ongoing.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. Server enforced expiration time for when this conference
-     * record resource is deleted. The resource is deleted 30 days after the
-     * conference ends.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Identifier. Resource name of the conference record. Format:
-     * `conferenceRecords/{conference_record}` where `{conference_record}` is a
-     * unique ID for each instance of a call within a space.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The space where the conference was held.
-     *
-     * @var string
-     */
-    public $space;
-    /**
-     * Output only. Timestamp when the conference started. Always set.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. Timestamp when the conference ended. Set for past conferences.
-     * Unset if the conference is ongoing.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Meet {
+    class ConferenceRecord extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when the conference ended. Set for past conferences.
+         * Unset if the conference is ongoing.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. Server enforced expiration time for when this conference
+         * record resource is deleted. The resource is deleted 30 days after the
+         * conference ends.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Identifier. Resource name of the conference record. Format:
+         * `conferenceRecords/{conference_record}` where `{conference_record}` is a
+         * unique ID for each instance of a call within a space.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The space where the conference was held.
+         *
+         * @var string
+         */
+        public $space;
+        /**
+         * Output only. Timestamp when the conference started. Always set.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. Timestamp when the conference ended. Set for past conferences.
+         * Unset if the conference is ongoing.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Server enforced expiration time for when this conference
+         * record resource is deleted. The resource is deleted 30 days after the
+         * conference ends.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Identifier. Resource name of the conference record. Format:
+         * `conferenceRecords/{conference_record}` where `{conference_record}` is a
+         * unique ID for each instance of a call within a space.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The space where the conference was held.
+         *
+         * @param string $space
+         */
+        public function setSpace($space)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpace()
+        {
+        }
+        /**
+         * Output only. Timestamp when the conference started. Always set.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\ConferenceRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Server enforced expiration time for when this conference
-     * record resource is deleted. The resource is deleted 30 days after the
-     * conference ends.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Identifier. Resource name of the conference record. Format:
-     * `conferenceRecords/{conference_record}` where `{conference_record}` is a
-     * unique ID for each instance of a call within a space.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The space where the conference was held.
-     *
-     * @param string $space
-     */
-    public function setSpace($space)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpace()
-    {
-    }
-    /**
-     * Output only. Timestamp when the conference started. Always set.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Meet_ConferenceRecord extends \Google\Service\Meet\ConferenceRecord
     {
     }
 }

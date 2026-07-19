@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager\Resource;
-
-/**
- * The "scannedResources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
- *   $scannedResources = $workloadmanagerService->projects_locations_evaluations_executions_scannedResources;
- *  </code>
- */
-class ProjectsLocationsEvaluationsExecutionsScannedResources extends \Google\Service\Resource
-{
+namespace Google\Service\WorkloadManager\Resource {
+    use Google\Service\WorkloadManager\ListScannedResourcesResponse;
     /**
-     * List all scanned resources for a single Execution.
-     * (scannedResources.listProjectsLocationsEvaluationsExecutionsScannedResources)
-     *
-     * @param string $parent Required. parent for ListScannedResourcesRequest
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filtering results
-     * @opt_param string orderBy Field to sort by. See
-     * https://google.aip.dev/132#ordering for more details.
-     * @opt_param int pageSize Requested page size. Server may return fewer items
-     * than requested. If unspecified, server will pick an appropriate default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return.
-     * @opt_param string rule rule name
-     * @return ListScannedResourcesResponse
-     * @throws \Google\Service\Exception
+     * The "scannedResources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
+     *   $scannedResources = $workloadmanagerService->projects_locations_evaluations_executions_scannedResources;
+     *  </code>
      */
-    public function listProjectsLocationsEvaluationsExecutionsScannedResources($parent, $optParams = [])
+    class ProjectsLocationsEvaluationsExecutionsScannedResources extends \Google\Service\Resource
+    {
+        /**
+         * List all scanned resources for a single Execution.
+         * (scannedResources.listProjectsLocationsEvaluationsExecutionsScannedResources)
+         *
+         * @param string $parent Required. parent for ListScannedResourcesRequest
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filtering results
+         * @opt_param string orderBy Field to sort by. See
+         * https://google.aip.dev/132#ordering for more details.
+         * @opt_param int pageSize Requested page size. Server may return fewer items
+         * than requested. If unspecified, server will pick an appropriate default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return.
+         * @opt_param string rule rule name
+         * @return ListScannedResourcesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEvaluationsExecutionsScannedResources($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkloadManager\Resource\ProjectsLocationsEvaluationsExecutionsScannedResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkloadManager_Resource_ProjectsLocationsEvaluationsExecutionsScannedResources extends \Google\Service\WorkloadManager\Resource\ProjectsLocationsEvaluationsExecutionsScannedResources
     {
     }
 }

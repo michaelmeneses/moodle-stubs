@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService\Resource;
-
-/**
- * The "members" collection of methods.
- * Typical usage is:
- *  <code>
- *   $peopleService = new Google\Service\PeopleService(...);
- *   $members = $peopleService->contactGroups_members;
- *  </code>
- */
-class ContactGroupsMembers extends \Google\Service\Resource
-{
+namespace Google\Service\PeopleService\Resource {
+    use Google\Service\PeopleService\ModifyContactGroupMembersRequest;
+    use Google\Service\PeopleService\ModifyContactGroupMembersResponse;
     /**
-     * Modify the members of a contact group owned by the authenticated user. The
-     * only system contact groups that can have members added are
-     * `contactGroups/myContacts` and `contactGroups/starred`. Other system contact
-     * groups are deprecated and can only have contacts removed. (members.modify)
-     *
-     * @param string $resourceName Required. The resource name of the contact group
-     * to modify.
-     * @param ModifyContactGroupMembersRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ModifyContactGroupMembersResponse
-     * @throws \Google\Service\Exception
+     * The "members" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $peopleService = new Google\Service\PeopleService(...);
+     *   $members = $peopleService->contactGroups_members;
+     *  </code>
      */
-    public function modify($resourceName, ModifyContactGroupMembersRequest $postBody, $optParams = [])
+    class ContactGroupsMembers extends \Google\Service\Resource
+    {
+        /**
+         * Modify the members of a contact group owned by the authenticated user. The
+         * only system contact groups that can have members added are
+         * `contactGroups/myContacts` and `contactGroups/starred`. Other system contact
+         * groups are deprecated and can only have contacts removed. (members.modify)
+         *
+         * @param string $resourceName Required. The resource name of the contact group
+         * to modify.
+         * @param ModifyContactGroupMembersRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ModifyContactGroupMembersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function modify($resourceName, ModifyContactGroupMembersRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PeopleService\Resource\ContactGroupsMembers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PeopleService_Resource_ContactGroupsMembers extends \Google\Service\PeopleService\Resource\ContactGroupsMembers
     {
     }
 }

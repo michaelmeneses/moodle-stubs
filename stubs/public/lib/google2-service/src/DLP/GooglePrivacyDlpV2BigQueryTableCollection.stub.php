@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BigQueryTableCollection extends \Google\Model
-{
-    protected $includeRegexesType = GooglePrivacyDlpV2BigQueryRegexes::class;
-    protected $includeRegexesDataType = '';
-    /**
-     * A collection of regular expressions to match a BigQuery table against.
-     *
-     * @param GooglePrivacyDlpV2BigQueryRegexes $includeRegexes
-     */
-    public function setIncludeRegexes(GooglePrivacyDlpV2BigQueryRegexes $includeRegexes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BigQueryTableCollection extends \Google\Model
     {
+        protected $includeRegexesType = GooglePrivacyDlpV2BigQueryRegexes::class;
+        protected $includeRegexesDataType = '';
+        /**
+         * A collection of regular expressions to match a BigQuery table against.
+         *
+         * @param GooglePrivacyDlpV2BigQueryRegexes $includeRegexes
+         */
+        public function setIncludeRegexes(GooglePrivacyDlpV2BigQueryRegexes $includeRegexes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryRegexes
+         */
+        public function getIncludeRegexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryRegexes
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BigQueryTableCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeRegexes()
+    class Google_Service_DLP_GooglePrivacyDlpV2BigQueryTableCollection extends \Google\Service\DLP\GooglePrivacyDlpV2BigQueryTableCollection
     {
     }
 }

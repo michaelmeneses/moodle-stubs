@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaNumericValue extends \Google\Model
-{
-    public $doubleValue;
-    /**
-     * @var string
-     */
-    public $int64Value;
-    public function setDoubleValue($doubleValue)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaNumericValue extends \Google\Model
     {
+        public $doubleValue;
+        /**
+         * @var string
+         */
+        public $int64Value;
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
     }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * @param string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaNumericValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaNumericValue extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaNumericValue
     {
     }
 }

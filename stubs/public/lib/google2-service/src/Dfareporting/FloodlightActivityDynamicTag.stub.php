@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FloodlightActivityDynamicTag extends \Google\Model
-{
-    /**
-     * ID of this dynamic tag. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of this tag.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Tag code.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * ID of this dynamic tag. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dfareporting {
+    class FloodlightActivityDynamicTag extends \Google\Model
     {
+        /**
+         * ID of this dynamic tag. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of this tag.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Tag code.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * ID of this dynamic tag. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of this tag.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Tag code.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\FloodlightActivityDynamicTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Name of this tag.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Tag code.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Dfareporting_FloodlightActivityDynamicTag extends \Google\Service\Dfareporting\FloodlightActivityDynamicTag
     {
     }
 }

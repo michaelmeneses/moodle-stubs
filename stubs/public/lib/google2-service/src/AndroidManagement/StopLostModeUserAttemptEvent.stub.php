@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class StopLostModeUserAttemptEvent extends \Google\Model
-{
-    /**
-     * This value is not used.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * Indicates that the user successfully stopped lost mode.
-     */
-    public const STATUS_ATTEMPT_SUCCEEDED = 'ATTEMPT_SUCCEEDED';
-    /**
-     * Indicates that the user's attempt to stop lost mode failed.
-     */
-    public const STATUS_ATTEMPT_FAILED = 'ATTEMPT_FAILED';
-    /**
-     * The status of the attempt to stop lost mode.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The status of the attempt to stop lost mode.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, ATTEMPT_SUCCEEDED, ATTEMPT_FAILED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
+namespace Google\Service\AndroidManagement {
+    class StopLostModeUserAttemptEvent extends \Google\Model
     {
+        /**
+         * This value is not used.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * Indicates that the user successfully stopped lost mode.
+         */
+        public const STATUS_ATTEMPT_SUCCEEDED = 'ATTEMPT_SUCCEEDED';
+        /**
+         * Indicates that the user's attempt to stop lost mode failed.
+         */
+        public const STATUS_ATTEMPT_FAILED = 'ATTEMPT_FAILED';
+        /**
+         * The status of the attempt to stop lost mode.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The status of the attempt to stop lost mode.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, ATTEMPT_SUCCEEDED, ATTEMPT_FAILED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATUS_*
+     * Runtime class alias of \Google\Service\AndroidManagement\StopLostModeUserAttemptEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
+    class Google_Service_AndroidManagement_StopLostModeUserAttemptEvent extends \Google\Service\AndroidManagement\StopLostModeUserAttemptEvent
     {
     }
 }

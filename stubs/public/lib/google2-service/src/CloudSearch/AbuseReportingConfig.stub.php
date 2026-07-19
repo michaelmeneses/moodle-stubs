@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AbuseReportingConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $recordingAllowed;
-    /**
-     * @var bool
-     */
-    public $writtenUgcAllowed;
-    /**
-     * @param bool
-     */
-    public function setRecordingAllowed($recordingAllowed)
+namespace Google\Service\CloudSearch {
+    class AbuseReportingConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $recordingAllowed;
+        /**
+         * @var bool
+         */
+        public $writtenUgcAllowed;
+        /**
+         * @param bool
+         */
+        public function setRecordingAllowed($recordingAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRecordingAllowed()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWrittenUgcAllowed($writtenUgcAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWrittenUgcAllowed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AbuseReportingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecordingAllowed()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWrittenUgcAllowed($writtenUgcAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWrittenUgcAllowed()
+    class Google_Service_CloudSearch_AbuseReportingConfig extends \Google\Service\CloudSearch\AbuseReportingConfig
     {
     }
 }

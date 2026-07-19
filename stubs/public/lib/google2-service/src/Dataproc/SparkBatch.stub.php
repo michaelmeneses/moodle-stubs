@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkBatch extends \Google\Collection
-{
-    protected $collection_key = 'jarFileUris';
-    /**
-     * Optional. HCFS URIs of archives to be extracted into the working directory
-     * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
-     * .zip.
-     *
-     * @var string[]
-     */
-    public $archiveUris;
-    /**
-     * Optional. The arguments to pass to the driver. Do not include arguments
-     * that can be set as batch properties, such as --conf, since a collision can
-     * occur that causes an incorrect batch submission.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * Optional. HCFS URIs of files to be placed in the working directory of each
-     * executor.
-     *
-     * @var string[]
-     */
-    public $fileUris;
-    /**
-     * Optional. HCFS URIs of jar files to add to the classpath of the Spark
-     * driver and tasks.
-     *
-     * @var string[]
-     */
-    public $jarFileUris;
-    /**
-     * Optional. The name of the driver main class. The jar file that contains the
-     * class must be in the classpath or specified in jar_file_uris.
-     *
-     * @var string
-     */
-    public $mainClass;
-    /**
-     * Optional. The HCFS URI of the jar file that contains the main class.
-     *
-     * @var string
-     */
-    public $mainJarFileUri;
-    /**
-     * Optional. HCFS URIs of archives to be extracted into the working directory
-     * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
-     * .zip.
-     *
-     * @param string[] $archiveUris
-     */
-    public function setArchiveUris($archiveUris)
+namespace Google\Service\Dataproc {
+    class SparkBatch extends \Google\Collection
     {
+        protected $collection_key = 'jarFileUris';
+        /**
+         * Optional. HCFS URIs of archives to be extracted into the working directory
+         * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
+         * .zip.
+         *
+         * @var string[]
+         */
+        public $archiveUris;
+        /**
+         * Optional. The arguments to pass to the driver. Do not include arguments
+         * that can be set as batch properties, such as --conf, since a collision can
+         * occur that causes an incorrect batch submission.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * Optional. HCFS URIs of files to be placed in the working directory of each
+         * executor.
+         *
+         * @var string[]
+         */
+        public $fileUris;
+        /**
+         * Optional. HCFS URIs of jar files to add to the classpath of the Spark
+         * driver and tasks.
+         *
+         * @var string[]
+         */
+        public $jarFileUris;
+        /**
+         * Optional. The name of the driver main class. The jar file that contains the
+         * class must be in the classpath or specified in jar_file_uris.
+         *
+         * @var string
+         */
+        public $mainClass;
+        /**
+         * Optional. The HCFS URI of the jar file that contains the main class.
+         *
+         * @var string
+         */
+        public $mainJarFileUri;
+        /**
+         * Optional. HCFS URIs of archives to be extracted into the working directory
+         * of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and
+         * .zip.
+         *
+         * @param string[] $archiveUris
+         */
+        public function setArchiveUris($archiveUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArchiveUris()
+        {
+        }
+        /**
+         * Optional. The arguments to pass to the driver. Do not include arguments
+         * that can be set as batch properties, such as --conf, since a collision can
+         * occur that causes an incorrect batch submission.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Optional. HCFS URIs of files to be placed in the working directory of each
+         * executor.
+         *
+         * @param string[] $fileUris
+         */
+        public function setFileUris($fileUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFileUris()
+        {
+        }
+        /**
+         * Optional. HCFS URIs of jar files to add to the classpath of the Spark
+         * driver and tasks.
+         *
+         * @param string[] $jarFileUris
+         */
+        public function setJarFileUris($jarFileUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJarFileUris()
+        {
+        }
+        /**
+         * Optional. The name of the driver main class. The jar file that contains the
+         * class must be in the classpath or specified in jar_file_uris.
+         *
+         * @param string $mainClass
+         */
+        public function setMainClass($mainClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMainClass()
+        {
+        }
+        /**
+         * Optional. The HCFS URI of the jar file that contains the main class.
+         *
+         * @param string $mainJarFileUri
+         */
+        public function setMainJarFileUri($mainJarFileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMainJarFileUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\SparkBatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveUris()
-    {
-    }
-    /**
-     * Optional. The arguments to pass to the driver. Do not include arguments
-     * that can be set as batch properties, such as --conf, since a collision can
-     * occur that causes an incorrect batch submission.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getArgs()
-    {
-    }
-    /**
-     * Optional. HCFS URIs of files to be placed in the working directory of each
-     * executor.
-     *
-     * @param string[] $fileUris
-     */
-    public function setFileUris($fileUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFileUris()
-    {
-    }
-    /**
-     * Optional. HCFS URIs of jar files to add to the classpath of the Spark
-     * driver and tasks.
-     *
-     * @param string[] $jarFileUris
-     */
-    public function setJarFileUris($jarFileUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getJarFileUris()
-    {
-    }
-    /**
-     * Optional. The name of the driver main class. The jar file that contains the
-     * class must be in the classpath or specified in jar_file_uris.
-     *
-     * @param string $mainClass
-     */
-    public function setMainClass($mainClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMainClass()
-    {
-    }
-    /**
-     * Optional. The HCFS URI of the jar file that contains the main class.
-     *
-     * @param string $mainJarFileUri
-     */
-    public function setMainJarFileUri($mainJarFileUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMainJarFileUri()
+    class Google_Service_Dataproc_SparkBatch extends \Google\Service\Dataproc\SparkBatch
     {
     }
 }

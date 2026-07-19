@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class SecuritypostureEmpty extends \Google\Model
-{
+namespace Google\Service\SecurityPosture {
+    class SecuritypostureEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityPosture\SecuritypostureEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityPosture_SecuritypostureEmpty extends \Google\Service\SecurityPosture\SecuritypostureEmpty
+    {
+    }
 }

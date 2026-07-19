@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "dbVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $dbVersions = $oracledatabaseService->projects_locations_dbVersions;
- *  </code>
- */
-class ProjectsLocationsDbVersions extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListDbVersionsResponse;
     /**
-     * List DbVersions for the given project and location.
-     * (dbVersions.listProjectsLocationsDbVersions)
-     *
-     * @param string $parent Required. The parent value for the DbVersion resource
-     * with the format: projects/{project}/locations/{location}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression that matches a subset of
-     * the DbVersions to show. The supported filter for dbSystem creation is
-     * `db_system_shape = {db_system_shape} AND storage_management =
-     * {storage_management}`. If no filter is provided, all DbVersions will be
-     * returned.
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, a maximum of 50 DbVersions will be returned. The maximum value
-     * is 1000; values above 1000 will be reset to 1000.
-     * @opt_param string pageToken Optional. A token identifying the requested page
-     * of results to return. All fields except the filter should remain the same as
-     * in the request that provided this page token.
-     * @return ListDbVersionsResponse
-     * @throws \Google\Service\Exception
+     * The "dbVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $dbVersions = $oracledatabaseService->projects_locations_dbVersions;
+     *  </code>
      */
-    public function listProjectsLocationsDbVersions($parent, $optParams = [])
+    class ProjectsLocationsDbVersions extends \Google\Service\Resource
+    {
+        /**
+         * List DbVersions for the given project and location.
+         * (dbVersions.listProjectsLocationsDbVersions)
+         *
+         * @param string $parent Required. The parent value for the DbVersion resource
+         * with the format: projects/{project}/locations/{location}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression that matches a subset of
+         * the DbVersions to show. The supported filter for dbSystem creation is
+         * `db_system_shape = {db_system_shape} AND storage_management =
+         * {storage_management}`. If no filter is provided, all DbVersions will be
+         * returned.
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, a maximum of 50 DbVersions will be returned. The maximum value
+         * is 1000; values above 1000 will be reset to 1000.
+         * @opt_param string pageToken Optional. A token identifying the requested page
+         * of results to return. All fields except the filter should remain the same as
+         * in the request that provided this page token.
+         * @return ListDbVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDbVersions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsDbVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsDbVersions extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsDbVersions
     {
     }
 }

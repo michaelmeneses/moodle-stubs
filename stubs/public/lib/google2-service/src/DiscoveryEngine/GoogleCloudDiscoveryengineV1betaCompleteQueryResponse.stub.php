@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCompleteQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'querySuggestions';
-    protected $querySuggestionsType = GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion::class;
-    protected $querySuggestionsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $tailMatchTriggered;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion[]
-     */
-    public function setQuerySuggestions($querySuggestions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCompleteQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'querySuggestions';
+        protected $querySuggestionsType = GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion::class;
+        protected $querySuggestionsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $tailMatchTriggered;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion[]
+         */
+        public function setQuerySuggestions($querySuggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion[]
+         */
+        public function getQuerySuggestions()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setTailMatchTriggered($tailMatchTriggered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTailMatchTriggered()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCompleteQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuerySuggestions()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setTailMatchTriggered($tailMatchTriggered)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTailMatchTriggered()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCompleteQueryResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCompleteQueryResponse
     {
     }
 }

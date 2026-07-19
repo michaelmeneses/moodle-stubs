@@ -21,75 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage\Resource;
-
-/**
- * The "documents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $languageService = new Google\Service\CloudNaturalLanguage(...);
- *   $documents = $languageService->documents;
- *  </code>
- */
-class Documents extends \Google\Service\Resource
-{
+namespace Google\Service\CloudNaturalLanguage\Resource {
+    use Google\Service\CloudNaturalLanguage\AnalyzeEntitiesRequest;
+    use Google\Service\CloudNaturalLanguage\AnalyzeEntitiesResponse;
+    use Google\Service\CloudNaturalLanguage\AnalyzeSentimentRequest;
+    use Google\Service\CloudNaturalLanguage\AnalyzeSentimentResponse;
+    use Google\Service\CloudNaturalLanguage\AnnotateTextRequest;
+    use Google\Service\CloudNaturalLanguage\AnnotateTextResponse;
+    use Google\Service\CloudNaturalLanguage\ClassifyTextRequest;
+    use Google\Service\CloudNaturalLanguage\ClassifyTextResponse;
+    use Google\Service\CloudNaturalLanguage\ModerateTextRequest;
+    use Google\Service\CloudNaturalLanguage\ModerateTextResponse;
     /**
-     * Finds named entities (currently proper names and common nouns) in the text
-     * along with entity types, probability, mentions for each entity, and other
-     * properties. (documents.analyzeEntities)
-     *
-     * @param AnalyzeEntitiesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AnalyzeEntitiesResponse
-     * @throws \Google\Service\Exception
+     * The "documents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $languageService = new Google\Service\CloudNaturalLanguage(...);
+     *   $documents = $languageService->documents;
+     *  </code>
      */
-    public function analyzeEntities(AnalyzeEntitiesRequest $postBody, $optParams = [])
+    class Documents extends \Google\Service\Resource
     {
+        /**
+         * Finds named entities (currently proper names and common nouns) in the text
+         * along with entity types, probability, mentions for each entity, and other
+         * properties. (documents.analyzeEntities)
+         *
+         * @param AnalyzeEntitiesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AnalyzeEntitiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function analyzeEntities(AnalyzeEntitiesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Analyzes the sentiment of the provided text. (documents.analyzeSentiment)
+         *
+         * @param AnalyzeSentimentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AnalyzeSentimentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function analyzeSentiment(AnalyzeSentimentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * A convenience method that provides all features in one call.
+         * (documents.annotateText)
+         *
+         * @param AnnotateTextRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AnnotateTextResponse
+         * @throws \Google\Service\Exception
+         */
+        public function annotateText(AnnotateTextRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Classifies a document into categories. (documents.classifyText)
+         *
+         * @param ClassifyTextRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ClassifyTextResponse
+         * @throws \Google\Service\Exception
+         */
+        public function classifyText(ClassifyTextRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Moderates a document for harmful and sensitive categories.
+         * (documents.moderateText)
+         *
+         * @param ModerateTextRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ModerateTextResponse
+         * @throws \Google\Service\Exception
+         */
+        public function moderateText(ModerateTextRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Analyzes the sentiment of the provided text. (documents.analyzeSentiment)
-     *
-     * @param AnalyzeSentimentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AnalyzeSentimentResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\Resource\Documents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function analyzeSentiment(AnalyzeSentimentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * A convenience method that provides all features in one call.
-     * (documents.annotateText)
-     *
-     * @param AnnotateTextRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AnnotateTextResponse
-     * @throws \Google\Service\Exception
-     */
-    public function annotateText(AnnotateTextRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Classifies a document into categories. (documents.classifyText)
-     *
-     * @param ClassifyTextRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ClassifyTextResponse
-     * @throws \Google\Service\Exception
-     */
-    public function classifyText(ClassifyTextRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Moderates a document for harmful and sensitive categories.
-     * (documents.moderateText)
-     *
-     * @param ModerateTextRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ModerateTextResponse
-     * @throws \Google\Service\Exception
-     */
-    public function moderateText(ModerateTextRequest $postBody, $optParams = [])
+    class Google_Service_CloudNaturalLanguage_Resource_Documents extends \Google\Service\CloudNaturalLanguage\Resource\Documents
     {
     }
 }

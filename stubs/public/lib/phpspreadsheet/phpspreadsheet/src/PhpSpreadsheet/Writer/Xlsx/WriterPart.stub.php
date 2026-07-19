@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 abstract class WriterPart
 {
     /**

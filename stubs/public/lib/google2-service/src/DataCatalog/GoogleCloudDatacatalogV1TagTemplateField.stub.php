@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1TagTemplateField extends \Google\Model
-{
-    /**
-     * The description for this field. Defaults to an empty string.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The display name for this field. Defaults to an empty string. The name must
-     * contain only Unicode letters, numbers (0-9), underscores (_), dashes (-),
-     * spaces ( ), and can't start or end with spaces. The maximum length is 200
-     * characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * If true, this field is required. Defaults to false.
-     *
-     * @var bool
-     */
-    public $isRequired;
-    /**
-     * Identifier. The resource name of the tag template field in URL format.
-     * Example: `projects/{PROJECT_ID}/locations/{LOCATION}/tagTemplates/{TAG_TEMP
-     * LATE}/fields/{FIELD}` Note: The tag template field itself might not be
-     * stored in the location specified in its name. The name must contain only
-     * letters (a-z, A-Z), numbers (0-9), or underscores (_), and must start with
-     * a letter or underscore. The maximum length is 64 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The order of this field with respect to other fields in this tag template.
-     * For example, a higher value can indicate a more important field. The value
-     * can be negative. Multiple fields can have the same order and field orders
-     * within a tag don't have to be sequential.
-     *
-     * @var int
-     */
-    public $order;
-    protected $typeType = GoogleCloudDatacatalogV1FieldType::class;
-    protected $typeDataType = '';
-    /**
-     * The description for this field. Defaults to an empty string.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1TagTemplateField extends \Google\Model
     {
+        /**
+         * The description for this field. Defaults to an empty string.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The display name for this field. Defaults to an empty string. The name must
+         * contain only Unicode letters, numbers (0-9), underscores (_), dashes (-),
+         * spaces ( ), and can't start or end with spaces. The maximum length is 200
+         * characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * If true, this field is required. Defaults to false.
+         *
+         * @var bool
+         */
+        public $isRequired;
+        /**
+         * Identifier. The resource name of the tag template field in URL format.
+         * Example: `projects/{PROJECT_ID}/locations/{LOCATION}/tagTemplates/{TAG_TEMP
+         * LATE}/fields/{FIELD}` Note: The tag template field itself might not be
+         * stored in the location specified in its name. The name must contain only
+         * letters (a-z, A-Z), numbers (0-9), or underscores (_), and must start with
+         * a letter or underscore. The maximum length is 64 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The order of this field with respect to other fields in this tag template.
+         * For example, a higher value can indicate a more important field. The value
+         * can be negative. Multiple fields can have the same order and field orders
+         * within a tag don't have to be sequential.
+         *
+         * @var int
+         */
+        public $order;
+        protected $typeType = GoogleCloudDatacatalogV1FieldType::class;
+        protected $typeDataType = '';
+        /**
+         * The description for this field. Defaults to an empty string.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The display name for this field. Defaults to an empty string. The name must
+         * contain only Unicode letters, numbers (0-9), underscores (_), dashes (-),
+         * spaces ( ), and can't start or end with spaces. The maximum length is 200
+         * characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * If true, this field is required. Defaults to false.
+         *
+         * @param bool $isRequired
+         */
+        public function setIsRequired($isRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRequired()
+        {
+        }
+        /**
+         * Identifier. The resource name of the tag template field in URL format.
+         * Example: `projects/{PROJECT_ID}/locations/{LOCATION}/tagTemplates/{TAG_TEMP
+         * LATE}/fields/{FIELD}` Note: The tag template field itself might not be
+         * stored in the location specified in its name. The name must contain only
+         * letters (a-z, A-Z), numbers (0-9), or underscores (_), and must start with
+         * a letter or underscore. The maximum length is 64 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The order of this field with respect to other fields in this tag template.
+         * For example, a higher value can indicate a more important field. The value
+         * can be negative. Multiple fields can have the same order and field orders
+         * within a tag don't have to be sequential.
+         *
+         * @param int $order
+         */
+        public function setOrder($order)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOrder()
+        {
+        }
+        /**
+         * Required. The type of value this tag field can contain.
+         *
+         * @param GoogleCloudDatacatalogV1FieldType $type
+         */
+        public function setType(GoogleCloudDatacatalogV1FieldType $type)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1FieldType
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplateField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The display name for this field. Defaults to an empty string. The name must
-     * contain only Unicode letters, numbers (0-9), underscores (_), dashes (-),
-     * spaces ( ), and can't start or end with spaces. The maximum length is 200
-     * characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * If true, this field is required. Defaults to false.
-     *
-     * @param bool $isRequired
-     */
-    public function setIsRequired($isRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsRequired()
-    {
-    }
-    /**
-     * Identifier. The resource name of the tag template field in URL format.
-     * Example: `projects/{PROJECT_ID}/locations/{LOCATION}/tagTemplates/{TAG_TEMP
-     * LATE}/fields/{FIELD}` Note: The tag template field itself might not be
-     * stored in the location specified in its name. The name must contain only
-     * letters (a-z, A-Z), numbers (0-9), or underscores (_), and must start with
-     * a letter or underscore. The maximum length is 64 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The order of this field with respect to other fields in this tag template.
-     * For example, a higher value can indicate a more important field. The value
-     * can be negative. Multiple fields can have the same order and field orders
-     * within a tag don't have to be sequential.
-     *
-     * @param int $order
-     */
-    public function setOrder($order)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOrder()
-    {
-    }
-    /**
-     * Required. The type of value this tag field can contain.
-     *
-     * @param GoogleCloudDatacatalogV1FieldType $type
-     */
-    public function setType(GoogleCloudDatacatalogV1FieldType $type)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1FieldType
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1TagTemplateField extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplateField
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1Track extends \Google\Collection
-{
-    protected $collection_key = 'servingReleases';
-    /**
-     * Readable identifier of the track.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $servingReleasesType = GooglePlayDeveloperReportingV1beta1Release::class;
-    protected $servingReleasesDataType = 'array';
-    /**
-     * The type of the track.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Readable identifier of the track.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1Track extends \Google\Collection
     {
+        protected $collection_key = 'servingReleases';
+        /**
+         * Readable identifier of the track.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $servingReleasesType = GooglePlayDeveloperReportingV1beta1Release::class;
+        protected $servingReleasesDataType = 'array';
+        /**
+         * The type of the track.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Readable identifier of the track.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Represents all active releases in the track.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1Release[] $servingReleases
+         */
+        public function setServingReleases($servingReleases)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1Release[]
+         */
+        public function getServingReleases()
+        {
+        }
+        /**
+         * The type of the track.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Track registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Represents all active releases in the track.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1Release[] $servingReleases
-     */
-    public function setServingReleases($servingReleases)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1Release[]
-     */
-    public function getServingReleases()
-    {
-    }
-    /**
-     * The type of the track.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1Track extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Track
     {
     }
 }

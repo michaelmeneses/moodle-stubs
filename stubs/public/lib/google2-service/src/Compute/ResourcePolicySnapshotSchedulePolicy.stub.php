@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicySnapshotSchedulePolicy extends \Google\Model
-{
-    protected $retentionPolicyType = ResourcePolicySnapshotSchedulePolicyRetentionPolicy::class;
-    protected $retentionPolicyDataType = '';
-    protected $scheduleType = ResourcePolicySnapshotSchedulePolicySchedule::class;
-    protected $scheduleDataType = '';
-    protected $snapshotPropertiesType = ResourcePolicySnapshotSchedulePolicySnapshotProperties::class;
-    protected $snapshotPropertiesDataType = '';
-    /**
-     * Retention policy applied to snapshots created by this resource policy.
-     *
-     * @param ResourcePolicySnapshotSchedulePolicyRetentionPolicy $retentionPolicy
-     */
-    public function setRetentionPolicy(ResourcePolicySnapshotSchedulePolicyRetentionPolicy $retentionPolicy)
+namespace Google\Service\Compute {
+    class ResourcePolicySnapshotSchedulePolicy extends \Google\Model
     {
+        protected $retentionPolicyType = ResourcePolicySnapshotSchedulePolicyRetentionPolicy::class;
+        protected $retentionPolicyDataType = '';
+        protected $scheduleType = ResourcePolicySnapshotSchedulePolicySchedule::class;
+        protected $scheduleDataType = '';
+        protected $snapshotPropertiesType = ResourcePolicySnapshotSchedulePolicySnapshotProperties::class;
+        protected $snapshotPropertiesDataType = '';
+        /**
+         * Retention policy applied to snapshots created by this resource policy.
+         *
+         * @param ResourcePolicySnapshotSchedulePolicyRetentionPolicy $retentionPolicy
+         */
+        public function setRetentionPolicy(ResourcePolicySnapshotSchedulePolicyRetentionPolicy $retentionPolicy)
+        {
+        }
+        /**
+         * @return ResourcePolicySnapshotSchedulePolicyRetentionPolicy
+         */
+        public function getRetentionPolicy()
+        {
+        }
+        /**
+         * A Vm Maintenance Policy specifies what kind of infrastructure maintenance
+         * we are allowed to perform on this VM and when. Schedule that is applied to
+         * disks covered by this policy.
+         *
+         * @param ResourcePolicySnapshotSchedulePolicySchedule $schedule
+         */
+        public function setSchedule(ResourcePolicySnapshotSchedulePolicySchedule $schedule)
+        {
+        }
+        /**
+         * @return ResourcePolicySnapshotSchedulePolicySchedule
+         */
+        public function getSchedule()
+        {
+        }
+        /**
+         * Properties with which snapshots are created such as labels, encryption
+         * keys.
+         *
+         * @param ResourcePolicySnapshotSchedulePolicySnapshotProperties $snapshotProperties
+         */
+        public function setSnapshotProperties(ResourcePolicySnapshotSchedulePolicySnapshotProperties $snapshotProperties)
+        {
+        }
+        /**
+         * @return ResourcePolicySnapshotSchedulePolicySnapshotProperties
+         */
+        public function getSnapshotProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourcePolicySnapshotSchedulePolicyRetentionPolicy
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicySnapshotSchedulePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetentionPolicy()
-    {
-    }
-    /**
-     * A Vm Maintenance Policy specifies what kind of infrastructure maintenance
-     * we are allowed to perform on this VM and when. Schedule that is applied to
-     * disks covered by this policy.
-     *
-     * @param ResourcePolicySnapshotSchedulePolicySchedule $schedule
-     */
-    public function setSchedule(ResourcePolicySnapshotSchedulePolicySchedule $schedule)
-    {
-    }
-    /**
-     * @return ResourcePolicySnapshotSchedulePolicySchedule
-     */
-    public function getSchedule()
-    {
-    }
-    /**
-     * Properties with which snapshots are created such as labels, encryption
-     * keys.
-     *
-     * @param ResourcePolicySnapshotSchedulePolicySnapshotProperties $snapshotProperties
-     */
-    public function setSnapshotProperties(ResourcePolicySnapshotSchedulePolicySnapshotProperties $snapshotProperties)
-    {
-    }
-    /**
-     * @return ResourcePolicySnapshotSchedulePolicySnapshotProperties
-     */
-    public function getSnapshotProperties()
+    class Google_Service_Compute_ResourcePolicySnapshotSchedulePolicy extends \Google\Service\Compute\ResourcePolicySnapshotSchedulePolicy
     {
     }
 }

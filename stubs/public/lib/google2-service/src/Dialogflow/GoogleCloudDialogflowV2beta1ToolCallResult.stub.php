@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ToolCallResult extends \Google\Model
-{
-    /**
-     * Optional. The name of the tool's action associated with this call.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Optional. The answer record associated with this tool call result.
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * Only populated if the response content is utf-8 encoded.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Output only. Create time of the tool call result.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $errorType = GoogleCloudDialogflowV2beta1ToolCallResultError::class;
-    protected $errorDataType = '';
-    /**
-     * Only populated if the response content is not utf-8 encoded. (by definition
-     * byte fields are base64 encoded).
-     *
-     * @var string
-     */
-    public $rawContent;
-    /**
-     * Optional. The tool associated with this call. Format:
-     * `projects//locations//tools/`.
-     *
-     * @var string
-     */
-    public $tool;
-    /**
-     * Optional. The name of the tool's action associated with this call.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ToolCallResult extends \Google\Model
     {
+        /**
+         * Optional. The name of the tool's action associated with this call.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Optional. The answer record associated with this tool call result.
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * Only populated if the response content is utf-8 encoded.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Output only. Create time of the tool call result.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $errorType = GoogleCloudDialogflowV2beta1ToolCallResultError::class;
+        protected $errorDataType = '';
+        /**
+         * Only populated if the response content is not utf-8 encoded. (by definition
+         * byte fields are base64 encoded).
+         *
+         * @var string
+         */
+        public $rawContent;
+        /**
+         * Optional. The tool associated with this call. Format:
+         * `projects//locations//tools/`.
+         *
+         * @var string
+         */
+        public $tool;
+        /**
+         * Optional. The name of the tool's action associated with this call.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. The answer record associated with this tool call result.
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * Only populated if the response content is utf-8 encoded.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Output only. Create time of the tool call result.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The tool call's error.
+         *
+         * @param GoogleCloudDialogflowV2beta1ToolCallResultError $error
+         */
+        public function setError(GoogleCloudDialogflowV2beta1ToolCallResultError $error)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ToolCallResultError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Only populated if the response content is not utf-8 encoded. (by definition
+         * byte fields are base64 encoded).
+         *
+         * @param string $rawContent
+         */
+        public function setRawContent($rawContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawContent()
+        {
+        }
+        /**
+         * Optional. The tool associated with this call. Format:
+         * `projects//locations//tools/`.
+         *
+         * @param string $tool
+         */
+        public function setTool($tool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ToolCallResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. The answer record associated with this tool call result.
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * Only populated if the response content is utf-8 encoded.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Output only. Create time of the tool call result.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The tool call's error.
-     *
-     * @param GoogleCloudDialogflowV2beta1ToolCallResultError $error
-     */
-    public function setError(GoogleCloudDialogflowV2beta1ToolCallResultError $error)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1ToolCallResultError
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Only populated if the response content is not utf-8 encoded. (by definition
-     * byte fields are base64 encoded).
-     *
-     * @param string $rawContent
-     */
-    public function setRawContent($rawContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawContent()
-    {
-    }
-    /**
-     * Optional. The tool associated with this call. Format:
-     * `projects//locations//tools/`.
-     *
-     * @param string $tool
-     */
-    public function setTool($tool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTool()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ToolCallResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ToolCallResult
     {
     }
 }

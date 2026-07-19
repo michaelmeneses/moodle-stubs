@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ListTopicSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'subscriptions';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The names of subscriptions attached to the topic. The order of the
-     * subscriptions is unspecified.
-     *
-     * @var string[]
-     */
-    public $subscriptions;
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PubsubLite {
+    class ListTopicSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'subscriptions';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The names of subscriptions attached to the topic. The order of the
+         * subscriptions is unspecified.
+         *
+         * @var string[]
+         */
+        public $subscriptions;
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The names of subscriptions attached to the topic. The order of the
+         * subscriptions is unspecified.
+         *
+         * @param string[] $subscriptions
+         */
+        public function setSubscriptions($subscriptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ListTopicSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The names of subscriptions attached to the topic. The order of the
-     * subscriptions is unspecified.
-     *
-     * @param string[] $subscriptions
-     */
-    public function setSubscriptions($subscriptions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubscriptions()
+    class Google_Service_PubsubLite_ListTopicSubscriptionsResponse extends \Google\Service\PubsubLite\ListTopicSubscriptionsResponse
     {
     }
 }

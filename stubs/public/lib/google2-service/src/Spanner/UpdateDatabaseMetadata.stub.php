@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateDatabaseMetadata extends \Google\Model
-{
-    /**
-     * The time at which this operation was cancelled. If set, this operation is
-     * in the process of undoing itself (which is best-effort).
-     *
-     * @var string
-     */
-    public $cancelTime;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = '';
-    protected $requestType = UpdateDatabaseRequest::class;
-    protected $requestDataType = '';
-    /**
-     * The time at which this operation was cancelled. If set, this operation is
-     * in the process of undoing itself (which is best-effort).
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Spanner {
+    class UpdateDatabaseMetadata extends \Google\Model
     {
+        /**
+         * The time at which this operation was cancelled. If set, this operation is
+         * in the process of undoing itself (which is best-effort).
+         *
+         * @var string
+         */
+        public $cancelTime;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = '';
+        protected $requestType = UpdateDatabaseRequest::class;
+        protected $requestDataType = '';
+        /**
+         * The time at which this operation was cancelled. If set, this operation is
+         * in the process of undoing itself (which is best-effort).
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * The progress of the UpdateDatabase operation.
+         *
+         * @param OperationProgress $progress
+         */
+        public function setProgress(OperationProgress $progress)
+        {
+        }
+        /**
+         * @return OperationProgress
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * The request for UpdateDatabase.
+         *
+         * @param UpdateDatabaseRequest $request
+         */
+        public function setRequest(UpdateDatabaseRequest $request)
+        {
+        }
+        /**
+         * @return UpdateDatabaseRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\UpdateDatabaseMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * The progress of the UpdateDatabase operation.
-     *
-     * @param OperationProgress $progress
-     */
-    public function setProgress(OperationProgress $progress)
-    {
-    }
-    /**
-     * @return OperationProgress
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * The request for UpdateDatabase.
-     *
-     * @param UpdateDatabaseRequest $request
-     */
-    public function setRequest(UpdateDatabaseRequest $request)
-    {
-    }
-    /**
-     * @return UpdateDatabaseRequest
-     */
-    public function getRequest()
+    class Google_Service_Spanner_UpdateDatabaseMetadata extends \Google\Service\Spanner\UpdateDatabaseMetadata
     {
     }
 }

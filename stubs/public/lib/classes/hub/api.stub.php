@@ -29,6 +29,11 @@
  */
 namespace core\hub;
 
+use moodle_exception;
+use curl;
+use stdClass;
+use coding_exception;
+use moodle_url;
 /**
  * Provides methods to communicate with the hub (sites directory) web services.
  *

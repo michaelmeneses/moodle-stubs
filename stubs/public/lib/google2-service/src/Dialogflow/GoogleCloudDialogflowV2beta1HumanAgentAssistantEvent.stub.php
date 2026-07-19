@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1HumanAgentAssistantEvent extends \Google\Collection
-{
-    protected $collection_key = 'suggestionResults';
-    /**
-     * The conversation this notification refers to. Format:
-     * `projects//conversations/`.
-     *
-     * @var string
-     */
-    public $conversation;
-    /**
-     * The participant that the suggestion is compiled for. And This field is used
-     * to call Participants.ListSuggestions API. Format:
-     * `projects//conversations//participants/`. It will not be set in legacy
-     * workflow. HumanAgentAssistantConfig.name for more information.
-     *
-     * @var string
-     */
-    public $participant;
-    protected $suggestionResultsType = GoogleCloudDialogflowV2beta1SuggestionResult::class;
-    protected $suggestionResultsDataType = 'array';
-    /**
-     * The conversation this notification refers to. Format:
-     * `projects//conversations/`.
-     *
-     * @param string $conversation
-     */
-    public function setConversation($conversation)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1HumanAgentAssistantEvent extends \Google\Collection
     {
+        protected $collection_key = 'suggestionResults';
+        /**
+         * The conversation this notification refers to. Format:
+         * `projects//conversations/`.
+         *
+         * @var string
+         */
+        public $conversation;
+        /**
+         * The participant that the suggestion is compiled for. And This field is used
+         * to call Participants.ListSuggestions API. Format:
+         * `projects//conversations//participants/`. It will not be set in legacy
+         * workflow. HumanAgentAssistantConfig.name for more information.
+         *
+         * @var string
+         */
+        public $participant;
+        protected $suggestionResultsType = GoogleCloudDialogflowV2beta1SuggestionResult::class;
+        protected $suggestionResultsDataType = 'array';
+        /**
+         * The conversation this notification refers to. Format:
+         * `projects//conversations/`.
+         *
+         * @param string $conversation
+         */
+        public function setConversation($conversation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * The participant that the suggestion is compiled for. And This field is used
+         * to call Participants.ListSuggestions API. Format:
+         * `projects//conversations//participants/`. It will not be set in legacy
+         * workflow. HumanAgentAssistantConfig.name for more information.
+         *
+         * @param string $participant
+         */
+        public function setParticipant($participant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParticipant()
+        {
+        }
+        /**
+         * The suggestion results payload that this notification refers to. It will
+         * only be set when
+         * HumanAgentAssistantConfig.SuggestionConfig.group_suggestion_responses sets
+         * to true.
+         *
+         * @param GoogleCloudDialogflowV2beta1SuggestionResult[] $suggestionResults
+         */
+        public function setSuggestionResults($suggestionResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1SuggestionResult[]
+         */
+        public function getSuggestionResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1HumanAgentAssistantEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversation()
-    {
-    }
-    /**
-     * The participant that the suggestion is compiled for. And This field is used
-     * to call Participants.ListSuggestions API. Format:
-     * `projects//conversations//participants/`. It will not be set in legacy
-     * workflow. HumanAgentAssistantConfig.name for more information.
-     *
-     * @param string $participant
-     */
-    public function setParticipant($participant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParticipant()
-    {
-    }
-    /**
-     * The suggestion results payload that this notification refers to. It will
-     * only be set when
-     * HumanAgentAssistantConfig.SuggestionConfig.group_suggestion_responses sets
-     * to true.
-     *
-     * @param GoogleCloudDialogflowV2beta1SuggestionResult[] $suggestionResults
-     */
-    public function setSuggestionResults($suggestionResults)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1SuggestionResult[]
-     */
-    public function getSuggestionResults()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1HumanAgentAssistantEvent extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1HumanAgentAssistantEvent
     {
     }
 }

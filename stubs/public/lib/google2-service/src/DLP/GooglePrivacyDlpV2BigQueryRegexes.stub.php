@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BigQueryRegexes extends \Google\Collection
-{
-    protected $collection_key = 'patterns';
-    protected $patternsType = GooglePrivacyDlpV2BigQueryRegex::class;
-    protected $patternsDataType = 'array';
-    /**
-     * A single BigQuery regular expression pattern to match against one or more
-     * tables, datasets, or projects that contain BigQuery tables.
-     *
-     * @param GooglePrivacyDlpV2BigQueryRegex[] $patterns
-     */
-    public function setPatterns($patterns)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BigQueryRegexes extends \Google\Collection
     {
+        protected $collection_key = 'patterns';
+        protected $patternsType = GooglePrivacyDlpV2BigQueryRegex::class;
+        protected $patternsDataType = 'array';
+        /**
+         * A single BigQuery regular expression pattern to match against one or more
+         * tables, datasets, or projects that contain BigQuery tables.
+         *
+         * @param GooglePrivacyDlpV2BigQueryRegex[] $patterns
+         */
+        public function setPatterns($patterns)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryRegex[]
+         */
+        public function getPatterns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryRegex[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BigQueryRegexes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPatterns()
+    class Google_Service_DLP_GooglePrivacyDlpV2BigQueryRegexes extends \Google\Service\DLP\GooglePrivacyDlpV2BigQueryRegexes
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedUserRolesResponse extends \Google\Collection
-{
-    protected $collection_key = 'createdAssignedUserRoles';
-    protected $createdAssignedUserRolesType = AssignedUserRole::class;
-    protected $createdAssignedUserRolesDataType = 'array';
-    /**
-     * The list of assigned user roles that have been successfully created. This
-     * list will be absent if empty.
-     *
-     * @param AssignedUserRole[] $createdAssignedUserRoles
-     */
-    public function setCreatedAssignedUserRoles($createdAssignedUserRoles)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedUserRolesResponse extends \Google\Collection
     {
+        protected $collection_key = 'createdAssignedUserRoles';
+        protected $createdAssignedUserRolesType = AssignedUserRole::class;
+        protected $createdAssignedUserRolesDataType = 'array';
+        /**
+         * The list of assigned user roles that have been successfully created. This
+         * list will be absent if empty.
+         *
+         * @param AssignedUserRole[] $createdAssignedUserRoles
+         */
+        public function setCreatedAssignedUserRoles($createdAssignedUserRoles)
+        {
+        }
+        /**
+         * @return AssignedUserRole[]
+         */
+        public function getCreatedAssignedUserRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedUserRole[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedUserRolesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAssignedUserRoles()
+    class Google_Service_DisplayVideo_BulkEditAssignedUserRolesResponse extends \Google\Service\DisplayVideo\BulkEditAssignedUserRolesResponse
     {
     }
 }

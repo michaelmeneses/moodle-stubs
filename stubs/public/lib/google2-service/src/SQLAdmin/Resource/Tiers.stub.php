@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "tiers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $tiers = $sqladminService->tiers;
- *  </code>
- */
-class Tiers extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\TiersListResponse;
     /**
-     * Lists all available machine types (tiers) for Cloud SQL, for example, `db-
-     * custom-1-3840`. For more information, see
-     * https://cloud.google.com/sql/pricing. (tiers.listTiers)
-     *
-     * @param string $project Project ID of the project for which to list tiers.
-     * @param array $optParams Optional parameters.
-     * @return TiersListResponse
-     * @throws \Google\Service\Exception
+     * The "tiers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $tiers = $sqladminService->tiers;
+     *  </code>
      */
-    public function listTiers($project, $optParams = [])
+    class Tiers extends \Google\Service\Resource
+    {
+        /**
+         * Lists all available machine types (tiers) for Cloud SQL, for example, `db-
+         * custom-1-3840`. For more information, see
+         * https://cloud.google.com/sql/pricing. (tiers.listTiers)
+         *
+         * @param string $project Project ID of the project for which to list tiers.
+         * @param array $optParams Optional parameters.
+         * @return TiersListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listTiers($project, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\Tiers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SQLAdmin_Resource_Tiers extends \Google\Service\SQLAdmin\Resource\Tiers
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Option extends \Google\Model
-{
-    /**
-     * The option's name. For protobuf built-in options (options defined in
-     * descriptor.proto), this is the short name. For example, `"map_entry"`. For
-     * custom options, it should be the fully-qualified name. For example,
-     * `"google.api.http"`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The option's value packed in an Any message. If the value is a primitive,
-     * the corresponding wrapper type defined in google/protobuf/wrappers.proto
-     * should be used. If the value is an enum, it should be stored as an int32
-     * value using the google.protobuf.Int32Value type.
-     *
-     * @var array[]
-     */
-    public $value;
-    /**
-     * The option's name. For protobuf built-in options (options defined in
-     * descriptor.proto), this is the short name. For example, `"map_entry"`. For
-     * custom options, it should be the fully-qualified name. For example,
-     * `"google.api.http"`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ServiceManagement {
+    class Option extends \Google\Model
     {
+        /**
+         * The option's name. For protobuf built-in options (options defined in
+         * descriptor.proto), this is the short name. For example, `"map_entry"`. For
+         * custom options, it should be the fully-qualified name. For example,
+         * `"google.api.http"`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The option's value packed in an Any message. If the value is a primitive,
+         * the corresponding wrapper type defined in google/protobuf/wrappers.proto
+         * should be used. If the value is an enum, it should be stored as an int32
+         * value using the google.protobuf.Int32Value type.
+         *
+         * @var array[]
+         */
+        public $value;
+        /**
+         * The option's name. For protobuf built-in options (options defined in
+         * descriptor.proto), this is the short name. For example, `"map_entry"`. For
+         * custom options, it should be the fully-qualified name. For example,
+         * `"google.api.http"`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The option's value packed in an Any message. If the value is a primitive,
+         * the corresponding wrapper type defined in google/protobuf/wrappers.proto
+         * should be used. If the value is an enum, it should be stored as an int32
+         * value using the google.protobuf.Int32Value type.
+         *
+         * @param array[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\Option registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The option's value packed in an Any message. If the value is a primitive,
-     * the corresponding wrapper type defined in google/protobuf/wrappers.proto
-     * should be used. If the value is an enum, it should be stored as an int32
-     * value using the google.protobuf.Int32Value type.
-     *
-     * @param array[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValue()
+    class Google_Service_ServiceManagement_Option extends \Google\Service\ServiceManagement\Option
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class DoubleComparisonFilter extends \Google\Model
-{
-    /**
-     * Value comparison unspecified.
-     */
-    public const VALUE_COMPARISON_VALUE_COMPARISON_UNSPECIFIED = 'VALUE_COMPARISON_UNSPECIFIED';
-    /**
-     * Value is smaller than the Compare value.
-     */
-    public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_SMALLER_THAN = 'VALUE_COMPARISON_IF_VALUE_SMALLER_THAN';
-    /**
-     * Value is smaller or equal than the Compare value.
-     */
-    public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_SMALLER_EQUAL_THAN = 'VALUE_COMPARISON_IF_VALUE_SMALLER_EQUAL_THAN';
-    /**
-     * Value is larger than the Compare value.
-     */
-    public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_LARGER_THAN = 'VALUE_COMPARISON_IF_VALUE_LARGER_THAN';
-    /**
-     * Value is larger or equal than the Compare value.
-     */
-    public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_LARGER_EQUAL_THAN = 'VALUE_COMPARISON_IF_VALUE_LARGER_EQUAL_THAN';
-    /**
-     * Required. Double compare value to be used
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Required. Relation between source value and compare value
-     *
-     * @var string
-     */
-    public $valueComparison;
-    public function setValue($value)
+namespace Google\Service\DatabaseMigrationService {
+    class DoubleComparisonFilter extends \Google\Model
     {
+        /**
+         * Value comparison unspecified.
+         */
+        public const VALUE_COMPARISON_VALUE_COMPARISON_UNSPECIFIED = 'VALUE_COMPARISON_UNSPECIFIED';
+        /**
+         * Value is smaller than the Compare value.
+         */
+        public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_SMALLER_THAN = 'VALUE_COMPARISON_IF_VALUE_SMALLER_THAN';
+        /**
+         * Value is smaller or equal than the Compare value.
+         */
+        public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_SMALLER_EQUAL_THAN = 'VALUE_COMPARISON_IF_VALUE_SMALLER_EQUAL_THAN';
+        /**
+         * Value is larger than the Compare value.
+         */
+        public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_LARGER_THAN = 'VALUE_COMPARISON_IF_VALUE_LARGER_THAN';
+        /**
+         * Value is larger or equal than the Compare value.
+         */
+        public const VALUE_COMPARISON_VALUE_COMPARISON_IF_VALUE_LARGER_EQUAL_THAN = 'VALUE_COMPARISON_IF_VALUE_LARGER_EQUAL_THAN';
+        /**
+         * Required. Double compare value to be used
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Required. Relation between source value and compare value
+         *
+         * @var string
+         */
+        public $valueComparison;
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
+        /**
+         * Required. Relation between source value and compare value
+         *
+         * Accepted values: VALUE_COMPARISON_UNSPECIFIED,
+         * VALUE_COMPARISON_IF_VALUE_SMALLER_THAN,
+         * VALUE_COMPARISON_IF_VALUE_SMALLER_EQUAL_THAN,
+         * VALUE_COMPARISON_IF_VALUE_LARGER_THAN,
+         * VALUE_COMPARISON_IF_VALUE_LARGER_EQUAL_THAN
+         *
+         * @param self::VALUE_COMPARISON_* $valueComparison
+         */
+        public function setValueComparison($valueComparison)
+        {
+        }
+        /**
+         * @return self::VALUE_COMPARISON_*
+         */
+        public function getValueComparison()
+        {
+        }
     }
-    public function getValue()
-    {
-    }
+}
+namespace {
     /**
-     * Required. Relation between source value and compare value
-     *
-     * Accepted values: VALUE_COMPARISON_UNSPECIFIED,
-     * VALUE_COMPARISON_IF_VALUE_SMALLER_THAN,
-     * VALUE_COMPARISON_IF_VALUE_SMALLER_EQUAL_THAN,
-     * VALUE_COMPARISON_IF_VALUE_LARGER_THAN,
-     * VALUE_COMPARISON_IF_VALUE_LARGER_EQUAL_THAN
-     *
-     * @param self::VALUE_COMPARISON_* $valueComparison
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\DoubleComparisonFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setValueComparison($valueComparison)
-    {
-    }
-    /**
-     * @return self::VALUE_COMPARISON_*
-     */
-    public function getValueComparison()
+    class Google_Service_DatabaseMigrationService_DoubleComparisonFilter extends \Google\Service\DatabaseMigrationService\DoubleComparisonFilter
     {
     }
 }

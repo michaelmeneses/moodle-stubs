@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class CourseRosterChangesInfo extends \Google\Model
-{
-    /**
-     * The `course_id` of the course to subscribe to roster changes for.
-     *
-     * @var string
-     */
-    public $courseId;
-    /**
-     * The `course_id` of the course to subscribe to roster changes for.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
+namespace Google\Service\Classroom {
+    class CourseRosterChangesInfo extends \Google\Model
     {
+        /**
+         * The `course_id` of the course to subscribe to roster changes for.
+         *
+         * @var string
+         */
+        public $courseId;
+        /**
+         * The `course_id` of the course to subscribe to roster changes for.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\CourseRosterChangesInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourseId()
+    class Google_Service_Classroom_CourseRosterChangesInfo extends \Google\Service\Classroom\CourseRosterChangesInfo
     {
     }
 }

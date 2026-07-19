@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ShuffleReadQuantileMetrics extends \Google\Model
-{
-    protected $fetchWaitTimeMillisType = Quantiles::class;
-    protected $fetchWaitTimeMillisDataType = '';
-    protected $localBlocksFetchedType = Quantiles::class;
-    protected $localBlocksFetchedDataType = '';
-    protected $readBytesType = Quantiles::class;
-    protected $readBytesDataType = '';
-    protected $readRecordsType = Quantiles::class;
-    protected $readRecordsDataType = '';
-    protected $remoteBlocksFetchedType = Quantiles::class;
-    protected $remoteBlocksFetchedDataType = '';
-    protected $remoteBytesReadType = Quantiles::class;
-    protected $remoteBytesReadDataType = '';
-    protected $remoteBytesReadToDiskType = Quantiles::class;
-    protected $remoteBytesReadToDiskDataType = '';
-    protected $remoteReqsDurationType = Quantiles::class;
-    protected $remoteReqsDurationDataType = '';
-    protected $shufflePushReadMetricsType = ShufflePushReadQuantileMetrics::class;
-    protected $shufflePushReadMetricsDataType = '';
-    protected $totalBlocksFetchedType = Quantiles::class;
-    protected $totalBlocksFetchedDataType = '';
-    /**
-     * @param Quantiles $fetchWaitTimeMillis
-     */
-    public function setFetchWaitTimeMillis(Quantiles $fetchWaitTimeMillis)
+namespace Google\Service\Dataproc {
+    class ShuffleReadQuantileMetrics extends \Google\Model
     {
+        protected $fetchWaitTimeMillisType = Quantiles::class;
+        protected $fetchWaitTimeMillisDataType = '';
+        protected $localBlocksFetchedType = Quantiles::class;
+        protected $localBlocksFetchedDataType = '';
+        protected $readBytesType = Quantiles::class;
+        protected $readBytesDataType = '';
+        protected $readRecordsType = Quantiles::class;
+        protected $readRecordsDataType = '';
+        protected $remoteBlocksFetchedType = Quantiles::class;
+        protected $remoteBlocksFetchedDataType = '';
+        protected $remoteBytesReadType = Quantiles::class;
+        protected $remoteBytesReadDataType = '';
+        protected $remoteBytesReadToDiskType = Quantiles::class;
+        protected $remoteBytesReadToDiskDataType = '';
+        protected $remoteReqsDurationType = Quantiles::class;
+        protected $remoteReqsDurationDataType = '';
+        protected $shufflePushReadMetricsType = ShufflePushReadQuantileMetrics::class;
+        protected $shufflePushReadMetricsDataType = '';
+        protected $totalBlocksFetchedType = Quantiles::class;
+        protected $totalBlocksFetchedDataType = '';
+        /**
+         * @param Quantiles $fetchWaitTimeMillis
+         */
+        public function setFetchWaitTimeMillis(Quantiles $fetchWaitTimeMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getFetchWaitTimeMillis()
+        {
+        }
+        /**
+         * @param Quantiles $localBlocksFetched
+         */
+        public function setLocalBlocksFetched(Quantiles $localBlocksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getLocalBlocksFetched()
+        {
+        }
+        /**
+         * @param Quantiles $readBytes
+         */
+        public function setReadBytes(Quantiles $readBytes)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getReadBytes()
+        {
+        }
+        /**
+         * @param Quantiles $readRecords
+         */
+        public function setReadRecords(Quantiles $readRecords)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getReadRecords()
+        {
+        }
+        /**
+         * @param Quantiles $remoteBlocksFetched
+         */
+        public function setRemoteBlocksFetched(Quantiles $remoteBlocksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteBlocksFetched()
+        {
+        }
+        /**
+         * @param Quantiles $remoteBytesRead
+         */
+        public function setRemoteBytesRead(Quantiles $remoteBytesRead)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteBytesRead()
+        {
+        }
+        /**
+         * @param Quantiles $remoteBytesReadToDisk
+         */
+        public function setRemoteBytesReadToDisk(Quantiles $remoteBytesReadToDisk)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteBytesReadToDisk()
+        {
+        }
+        /**
+         * @param Quantiles $remoteReqsDuration
+         */
+        public function setRemoteReqsDuration(Quantiles $remoteReqsDuration)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRemoteReqsDuration()
+        {
+        }
+        /**
+         * @param ShufflePushReadQuantileMetrics $shufflePushReadMetrics
+         */
+        public function setShufflePushReadMetrics(ShufflePushReadQuantileMetrics $shufflePushReadMetrics)
+        {
+        }
+        /**
+         * @return ShufflePushReadQuantileMetrics
+         */
+        public function getShufflePushReadMetrics()
+        {
+        }
+        /**
+         * @param Quantiles $totalBlocksFetched
+         */
+        public function setTotalBlocksFetched(Quantiles $totalBlocksFetched)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getTotalBlocksFetched()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Quantiles
+     * Runtime class alias of \Google\Service\Dataproc\ShuffleReadQuantileMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFetchWaitTimeMillis()
-    {
-    }
-    /**
-     * @param Quantiles $localBlocksFetched
-     */
-    public function setLocalBlocksFetched(Quantiles $localBlocksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getLocalBlocksFetched()
-    {
-    }
-    /**
-     * @param Quantiles $readBytes
-     */
-    public function setReadBytes(Quantiles $readBytes)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getReadBytes()
-    {
-    }
-    /**
-     * @param Quantiles $readRecords
-     */
-    public function setReadRecords(Quantiles $readRecords)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getReadRecords()
-    {
-    }
-    /**
-     * @param Quantiles $remoteBlocksFetched
-     */
-    public function setRemoteBlocksFetched(Quantiles $remoteBlocksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteBlocksFetched()
-    {
-    }
-    /**
-     * @param Quantiles $remoteBytesRead
-     */
-    public function setRemoteBytesRead(Quantiles $remoteBytesRead)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteBytesRead()
-    {
-    }
-    /**
-     * @param Quantiles $remoteBytesReadToDisk
-     */
-    public function setRemoteBytesReadToDisk(Quantiles $remoteBytesReadToDisk)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteBytesReadToDisk()
-    {
-    }
-    /**
-     * @param Quantiles $remoteReqsDuration
-     */
-    public function setRemoteReqsDuration(Quantiles $remoteReqsDuration)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRemoteReqsDuration()
-    {
-    }
-    /**
-     * @param ShufflePushReadQuantileMetrics $shufflePushReadMetrics
-     */
-    public function setShufflePushReadMetrics(ShufflePushReadQuantileMetrics $shufflePushReadMetrics)
-    {
-    }
-    /**
-     * @return ShufflePushReadQuantileMetrics
-     */
-    public function getShufflePushReadMetrics()
-    {
-    }
-    /**
-     * @param Quantiles $totalBlocksFetched
-     */
-    public function setTotalBlocksFetched(Quantiles $totalBlocksFetched)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getTotalBlocksFetched()
+    class Google_Service_Dataproc_ShuffleReadQuantileMetrics extends \Google\Service\Dataproc\ShuffleReadQuantileMetrics
     {
     }
 }

@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights\Resource;
-
-/**
- * The "pagespeedapi" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pagespeedonlineService = new Google\Service\PagespeedInsights(...);
- *   $pagespeedapi = $pagespeedonlineService->pagespeedapi;
- *  </code>
- */
-class Pagespeedapi extends \Google\Service\Resource
-{
+namespace Google\Service\PagespeedInsights\Resource {
+    use Google\Service\PagespeedInsights\PagespeedApiPagespeedResponseV5;
     /**
-     * Runs PageSpeed analysis on the page at the specified URL, and returns
-     * PageSpeed scores, a list of suggestions to make that page faster, and other
-     * information. (pagespeedapi.runpagespeed)
-     *
-     * @param string $url Required. The URL to fetch and analyze
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string captchaToken The captcha token passed when filling out a
-     * captcha.
-     * @opt_param string category A Lighthouse category to run; if none are given,
-     * only Performance category will be run
-     * @opt_param string locale The locale used to localize formatted results
-     * @opt_param string strategy The analysis strategy (desktop or mobile) to use,
-     * and desktop is the default
-     * @opt_param string utm_campaign Campaign name for analytics.
-     * @opt_param string utm_source Campaign source for analytics.
-     * @return PagespeedApiPagespeedResponseV5
-     * @throws \Google\Service\Exception
+     * The "pagespeedapi" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pagespeedonlineService = new Google\Service\PagespeedInsights(...);
+     *   $pagespeedapi = $pagespeedonlineService->pagespeedapi;
+     *  </code>
      */
-    public function runpagespeed($url, $optParams = [])
+    class Pagespeedapi extends \Google\Service\Resource
+    {
+        /**
+         * Runs PageSpeed analysis on the page at the specified URL, and returns
+         * PageSpeed scores, a list of suggestions to make that page faster, and other
+         * information. (pagespeedapi.runpagespeed)
+         *
+         * @param string $url Required. The URL to fetch and analyze
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string captchaToken The captcha token passed when filling out a
+         * captcha.
+         * @opt_param string category A Lighthouse category to run; if none are given,
+         * only Performance category will be run
+         * @opt_param string locale The locale used to localize formatted results
+         * @opt_param string strategy The analysis strategy (desktop or mobile) to use,
+         * and desktop is the default
+         * @opt_param string utm_campaign Campaign name for analytics.
+         * @opt_param string utm_source Campaign source for analytics.
+         * @return PagespeedApiPagespeedResponseV5
+         * @throws \Google\Service\Exception
+         */
+        public function runpagespeed($url, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PagespeedInsights\Resource\Pagespeedapi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PagespeedInsights_Resource_Pagespeedapi extends \Google\Service\PagespeedInsights\Resource\Pagespeedapi
     {
     }
 }

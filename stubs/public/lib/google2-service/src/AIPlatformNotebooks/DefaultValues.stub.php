@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class DefaultValues extends \Google\Model
-{
-    /**
-     * Output only. The default machine type used by the backend if not provided
-     * by the user.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Output only. The default machine type used by the backend if not provided
-     * by the user.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\AIPlatformNotebooks {
+    class DefaultValues extends \Google\Model
     {
+        /**
+         * Output only. The default machine type used by the backend if not provided
+         * by the user.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Output only. The default machine type used by the backend if not provided
+         * by the user.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\DefaultValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
+    class Google_Service_AIPlatformNotebooks_DefaultValues extends \Google\Service\AIPlatformNotebooks\DefaultValues
     {
     }
 }

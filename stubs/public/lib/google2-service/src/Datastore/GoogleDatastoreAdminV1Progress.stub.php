@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1Progress extends \Google\Model
-{
-    /**
-     * The amount of work that has been completed. Note that this may be greater
-     * than work_estimated.
-     *
-     * @var string
-     */
-    public $workCompleted;
-    /**
-     * An estimate of how much work needs to be performed. May be zero if the work
-     * estimate is unavailable.
-     *
-     * @var string
-     */
-    public $workEstimated;
-    /**
-     * The amount of work that has been completed. Note that this may be greater
-     * than work_estimated.
-     *
-     * @param string $workCompleted
-     */
-    public function setWorkCompleted($workCompleted)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1Progress extends \Google\Model
     {
+        /**
+         * The amount of work that has been completed. Note that this may be greater
+         * than work_estimated.
+         *
+         * @var string
+         */
+        public $workCompleted;
+        /**
+         * An estimate of how much work needs to be performed. May be zero if the work
+         * estimate is unavailable.
+         *
+         * @var string
+         */
+        public $workEstimated;
+        /**
+         * The amount of work that has been completed. Note that this may be greater
+         * than work_estimated.
+         *
+         * @param string $workCompleted
+         */
+        public function setWorkCompleted($workCompleted)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkCompleted()
+        {
+        }
+        /**
+         * An estimate of how much work needs to be performed. May be zero if the work
+         * estimate is unavailable.
+         *
+         * @param string $workEstimated
+         */
+        public function setWorkEstimated($workEstimated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkEstimated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1Progress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkCompleted()
-    {
-    }
-    /**
-     * An estimate of how much work needs to be performed. May be zero if the work
-     * estimate is unavailable.
-     *
-     * @param string $workEstimated
-     */
-    public function setWorkEstimated($workEstimated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkEstimated()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1Progress extends \Google\Service\Datastore\GoogleDatastoreAdminV1Progress
     {
     }
 }

@@ -21,240 +21,249 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class Snapshot extends \Google\Model
-{
-    /**
-     * A snapshot representing a save game.
-     */
-    public const TYPE_SAVE_GAME = 'SAVE_GAME';
-    protected $coverImageType = SnapshotImage::class;
-    protected $coverImageDataType = '';
-    /**
-     * The description of this snapshot.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The ID of the file underlying this snapshot in the Drive API. Only present
-     * if the snapshot is a view on a Drive file and the file is owned by the
-     * caller.
-     *
-     * @var string
-     */
-    public $driveId;
-    /**
-     * The duration associated with this snapshot, in millis.
-     *
-     * @var string
-     */
-    public $durationMillis;
-    /**
-     * The ID of the snapshot.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#snapshot`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The timestamp (in millis since Unix epoch) of the last modification to this
-     * snapshot.
-     *
-     * @var string
-     */
-    public $lastModifiedMillis;
-    /**
-     * The progress value (64-bit integer set by developer) associated with this
-     * snapshot.
-     *
-     * @var string
-     */
-    public $progressValue;
-    /**
-     * The title of this snapshot.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The type of this snapshot.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The unique name provided when the snapshot was created.
-     *
-     * @var string
-     */
-    public $uniqueName;
-    /**
-     * The cover image of this snapshot. May be absent if there is no image.
-     *
-     * @param SnapshotImage $coverImage
-     */
-    public function setCoverImage(SnapshotImage $coverImage)
+namespace Google\Service\Games {
+    class Snapshot extends \Google\Model
     {
+        /**
+         * A snapshot representing a save game.
+         */
+        public const TYPE_SAVE_GAME = 'SAVE_GAME';
+        protected $coverImageType = SnapshotImage::class;
+        protected $coverImageDataType = '';
+        /**
+         * The description of this snapshot.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The ID of the file underlying this snapshot in the Drive API. Only present
+         * if the snapshot is a view on a Drive file and the file is owned by the
+         * caller.
+         *
+         * @var string
+         */
+        public $driveId;
+        /**
+         * The duration associated with this snapshot, in millis.
+         *
+         * @var string
+         */
+        public $durationMillis;
+        /**
+         * The ID of the snapshot.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#snapshot`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The timestamp (in millis since Unix epoch) of the last modification to this
+         * snapshot.
+         *
+         * @var string
+         */
+        public $lastModifiedMillis;
+        /**
+         * The progress value (64-bit integer set by developer) associated with this
+         * snapshot.
+         *
+         * @var string
+         */
+        public $progressValue;
+        /**
+         * The title of this snapshot.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The type of this snapshot.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The unique name provided when the snapshot was created.
+         *
+         * @var string
+         */
+        public $uniqueName;
+        /**
+         * The cover image of this snapshot. May be absent if there is no image.
+         *
+         * @param SnapshotImage $coverImage
+         */
+        public function setCoverImage(SnapshotImage $coverImage)
+        {
+        }
+        /**
+         * @return SnapshotImage
+         */
+        public function getCoverImage()
+        {
+        }
+        /**
+         * The description of this snapshot.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The ID of the file underlying this snapshot in the Drive API. Only present
+         * if the snapshot is a view on a Drive file and the file is owned by the
+         * caller.
+         *
+         * @param string $driveId
+         */
+        public function setDriveId($driveId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveId()
+        {
+        }
+        /**
+         * The duration associated with this snapshot, in millis.
+         *
+         * @param string $durationMillis
+         */
+        public function setDurationMillis($durationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * The ID of the snapshot.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#snapshot`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The timestamp (in millis since Unix epoch) of the last modification to this
+         * snapshot.
+         *
+         * @param string $lastModifiedMillis
+         */
+        public function setLastModifiedMillis($lastModifiedMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedMillis()
+        {
+        }
+        /**
+         * The progress value (64-bit integer set by developer) associated with this
+         * snapshot.
+         *
+         * @param string $progressValue
+         */
+        public function setProgressValue($progressValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProgressValue()
+        {
+        }
+        /**
+         * The title of this snapshot.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The type of this snapshot.
+         *
+         * Accepted values: SAVE_GAME
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The unique name provided when the snapshot was created.
+         *
+         * @param string $uniqueName
+         */
+        public function setUniqueName($uniqueName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniqueName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SnapshotImage
+     * Runtime class alias of \Google\Service\Games\Snapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoverImage()
-    {
-    }
-    /**
-     * The description of this snapshot.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The ID of the file underlying this snapshot in the Drive API. Only present
-     * if the snapshot is a view on a Drive file and the file is owned by the
-     * caller.
-     *
-     * @param string $driveId
-     */
-    public function setDriveId($driveId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriveId()
-    {
-    }
-    /**
-     * The duration associated with this snapshot, in millis.
-     *
-     * @param string $durationMillis
-     */
-    public function setDurationMillis($durationMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * The ID of the snapshot.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#snapshot`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The timestamp (in millis since Unix epoch) of the last modification to this
-     * snapshot.
-     *
-     * @param string $lastModifiedMillis
-     */
-    public function setLastModifiedMillis($lastModifiedMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedMillis()
-    {
-    }
-    /**
-     * The progress value (64-bit integer set by developer) associated with this
-     * snapshot.
-     *
-     * @param string $progressValue
-     */
-    public function setProgressValue($progressValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProgressValue()
-    {
-    }
-    /**
-     * The title of this snapshot.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The type of this snapshot.
-     *
-     * Accepted values: SAVE_GAME
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The unique name provided when the snapshot was created.
-     *
-     * @param string $uniqueName
-     */
-    public function setUniqueName($uniqueName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniqueName()
+    class Google_Service_Games_Snapshot extends \Google\Service\Games\Snapshot
     {
     }
 }

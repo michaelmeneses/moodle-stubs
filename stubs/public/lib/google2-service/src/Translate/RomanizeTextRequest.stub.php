@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class RomanizeTextRequest extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    /**
-     * Required. The content of the input in string format.
-     *
-     * @var string[]
-     */
-    public $contents;
-    /**
-     * Optional. The ISO-639 language code of the input text if known, for
-     * example, "hi" or "zh". If the source language isn't specified, the API
-     * attempts to identify the source language automatically and returns the
-     * source language for each content in the response.
-     *
-     * @var string
-     */
-    public $sourceLanguageCode;
-    /**
-     * Required. The content of the input in string format.
-     *
-     * @param string[] $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Translate {
+    class RomanizeTextRequest extends \Google\Collection
     {
+        protected $collection_key = 'contents';
+        /**
+         * Required. The content of the input in string format.
+         *
+         * @var string[]
+         */
+        public $contents;
+        /**
+         * Optional. The ISO-639 language code of the input text if known, for
+         * example, "hi" or "zh". If the source language isn't specified, the API
+         * attempts to identify the source language automatically and returns the
+         * source language for each content in the response.
+         *
+         * @var string
+         */
+        public $sourceLanguageCode;
+        /**
+         * Required. The content of the input in string format.
+         *
+         * @param string[] $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Optional. The ISO-639 language code of the input text if known, for
+         * example, "hi" or "zh". If the source language isn't specified, the API
+         * attempts to identify the source language automatically and returns the
+         * source language for each content in the response.
+         *
+         * @param string $sourceLanguageCode
+         */
+        public function setSourceLanguageCode($sourceLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Translate\RomanizeTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Optional. The ISO-639 language code of the input text if known, for
-     * example, "hi" or "zh". If the source language isn't specified, the API
-     * attempts to identify the source language automatically and returns the
-     * source language for each content in the response.
-     *
-     * @param string $sourceLanguageCode
-     */
-    public function setSourceLanguageCode($sourceLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceLanguageCode()
+    class Google_Service_Translate_RomanizeTextRequest extends \Google\Service\Translate\RomanizeTextRequest
     {
     }
 }

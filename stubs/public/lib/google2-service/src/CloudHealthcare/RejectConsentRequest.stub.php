@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class RejectConsentRequest extends \Google\Model
-{
-    /**
-     * Optional. The resource name of the Consent artifact that contains
-     * documentation of the user's rejection of the draft Consent, of the form `pr
-     * ojects/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentSt
-     * ores/{consent_store_id}/consentArtifacts/{consent_artifact_id}`. If the
-     * draft Consent had a Consent artifact, this Consent artifact overwrites it.
-     *
-     * @var string
-     */
-    public $consentArtifact;
-    /**
-     * Optional. The resource name of the Consent artifact that contains
-     * documentation of the user's rejection of the draft Consent, of the form `pr
-     * ojects/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentSt
-     * ores/{consent_store_id}/consentArtifacts/{consent_artifact_id}`. If the
-     * draft Consent had a Consent artifact, this Consent artifact overwrites it.
-     *
-     * @param string $consentArtifact
-     */
-    public function setConsentArtifact($consentArtifact)
+namespace Google\Service\CloudHealthcare {
+    class RejectConsentRequest extends \Google\Model
     {
+        /**
+         * Optional. The resource name of the Consent artifact that contains
+         * documentation of the user's rejection of the draft Consent, of the form `pr
+         * ojects/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentSt
+         * ores/{consent_store_id}/consentArtifacts/{consent_artifact_id}`. If the
+         * draft Consent had a Consent artifact, this Consent artifact overwrites it.
+         *
+         * @var string
+         */
+        public $consentArtifact;
+        /**
+         * Optional. The resource name of the Consent artifact that contains
+         * documentation of the user's rejection of the draft Consent, of the form `pr
+         * ojects/{project_id}/locations/{location_id}/datasets/{dataset_id}/consentSt
+         * ores/{consent_store_id}/consentArtifacts/{consent_artifact_id}`. If the
+         * draft Consent had a Consent artifact, this Consent artifact overwrites it.
+         *
+         * @param string $consentArtifact
+         */
+        public function setConsentArtifact($consentArtifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentArtifact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\RejectConsentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentArtifact()
+    class Google_Service_CloudHealthcare_RejectConsentRequest extends \Google\Service\CloudHealthcare\RejectConsentRequest
     {
     }
 }

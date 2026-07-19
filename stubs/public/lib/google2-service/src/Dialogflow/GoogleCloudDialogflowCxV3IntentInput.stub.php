@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3IntentInput extends \Google\Model
-{
-    /**
-     * Required. The unique identifier of the intent. Format:
-     * `projects//locations//agents//intents/`.
-     *
-     * @var string
-     */
-    public $intent;
-    /**
-     * Required. The unique identifier of the intent. Format:
-     * `projects//locations//agents//intents/`.
-     *
-     * @param string $intent
-     */
-    public function setIntent($intent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3IntentInput extends \Google\Model
     {
+        /**
+         * Required. The unique identifier of the intent. Format:
+         * `projects//locations//agents//intents/`.
+         *
+         * @var string
+         */
+        public $intent;
+        /**
+         * Required. The unique identifier of the intent. Format:
+         * `projects//locations//agents//intents/`.
+         *
+         * @param string $intent
+         */
+        public function setIntent($intent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntent()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3IntentInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentInput
     {
     }
 }

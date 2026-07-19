@@ -21,59 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "sizes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $sizes = $dfareportingService->sizes;
- *  </code>
- */
-class Sizes extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\Size;
+    use Google\Service\Dfareporting\SizesListResponse;
     /**
-     * Gets one size by ID. (sizes.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Size ID.
-     * @param array $optParams Optional parameters.
-     * @return Size
-     * @throws \Google\Service\Exception
+     * The "sizes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $sizes = $dfareportingService->sizes;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class Sizes extends \Google\Service\Resource
     {
+        /**
+         * Gets one size by ID. (sizes.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Size ID.
+         * @param array $optParams Optional parameters.
+         * @return Size
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new size. (sizes.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param Size $postBody
+         * @param array $optParams Optional parameters.
+         * @return Size
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, Size $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of sizes, possibly filtered. Retrieved sizes are globally
+         * unique and may include values not currently in use by your account. Due to
+         * this, the list of sizes returned by this method may differ from the list seen
+         * in the Trafficking UI. (sizes.listSizes)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int height Select only sizes with this height.
+         * @opt_param bool iabStandard Select only IAB standard sizes.
+         * @opt_param string ids Select only sizes with these IDs.
+         * @opt_param int width Select only sizes with this width.
+         * @return SizesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSizes($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new size. (sizes.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param Size $postBody
-     * @param array $optParams Optional parameters.
-     * @return Size
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Sizes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, Size $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of sizes, possibly filtered. Retrieved sizes are globally
-     * unique and may include values not currently in use by your account. Due to
-     * this, the list of sizes returned by this method may differ from the list seen
-     * in the Trafficking UI. (sizes.listSizes)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int height Select only sizes with this height.
-     * @opt_param bool iabStandard Select only IAB standard sizes.
-     * @opt_param string ids Select only sizes with these IDs.
-     * @opt_param int width Select only sizes with this width.
-     * @return SizesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listSizes($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Sizes extends \Google\Service\Dfareporting\Resource\Sizes
     {
     }
 }

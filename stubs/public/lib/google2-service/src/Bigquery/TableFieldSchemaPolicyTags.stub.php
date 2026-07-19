@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableFieldSchemaPolicyTags extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * A list of policy tag resource names. For example,
-     * "projects/1/locations/eu/taxonomies/2/policyTags/3". At most 1 policy tag
-     * is currently allowed.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * A list of policy tag resource names. For example,
-     * "projects/1/locations/eu/taxonomies/2/policyTags/3". At most 1 policy tag
-     * is currently allowed.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Bigquery {
+    class TableFieldSchemaPolicyTags extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * A list of policy tag resource names. For example,
+         * "projects/1/locations/eu/taxonomies/2/policyTags/3". At most 1 policy tag
+         * is currently allowed.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * A list of policy tag resource names. For example,
+         * "projects/1/locations/eu/taxonomies/2/policyTags/3". At most 1 policy tag
+         * is currently allowed.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\TableFieldSchemaPolicyTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Bigquery_TableFieldSchemaPolicyTags extends \Google\Service\Bigquery\TableFieldSchemaPolicyTags
     {
     }
 }

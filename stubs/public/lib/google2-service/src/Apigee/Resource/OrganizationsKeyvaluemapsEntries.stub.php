@@ -21,139 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "entries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $entries = $apigeeService->organizations_keyvaluemaps_entries;
- *  </code>
- */
-class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1KeyValueEntry;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListKeyValueEntriesResponse;
     /**
-     * Creates key value entries in a key value map scoped to an organization,
-     * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
-     * higher. (entries.create)
-     *
-     * @param string $parent Required. Scope as indicated by the URI in which to
-     * create the key value map entry. Use **one** of the following structures in
-     * your request: *
-     * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `orga
-     * nizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluemap
-     * }` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`. If the
-     * KeyValueMap is under an API Proxy resource that has the `space` attribute
-     * set, IAM permissions are checked against the Space resource path. To learn
-     * more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param GoogleCloudApigeeV1KeyValueEntry $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1KeyValueEntry
-     * @throws \Google\Service\Exception
+     * The "entries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $entries = $apigeeService->organizations_keyvaluemaps_entries;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1KeyValueEntry $postBody, $optParams = [])
+    class OrganizationsKeyvaluemapsEntries extends \Google\Service\Resource
     {
+        /**
+         * Creates key value entries in a key value map scoped to an organization,
+         * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
+         * higher. (entries.create)
+         *
+         * @param string $parent Required. Scope as indicated by the URI in which to
+         * create the key value map entry. Use **one** of the following structures in
+         * your request: *
+         * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `orga
+         * nizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluemap
+         * }` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`. If the
+         * KeyValueMap is under an API Proxy resource that has the `space` attribute
+         * set, IAM permissions are checked against the Space resource path. To learn
+         * more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param GoogleCloudApigeeV1KeyValueEntry $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1KeyValueEntry
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1KeyValueEntry $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a key value entry from a key value map scoped to an organization,
+         * environment, or API proxy. **Notes:** * After you delete the key value entry,
+         * the policy consuming the entry will continue to function with its cached
+         * values for a few minutes. This is expected behavior. * Supported for Apigee
+         * hybrid 1.8.x and higher. (entries.delete)
+         *
+         * @param string $name Required. Scope as indicated by the URI in which to
+         * delete the key value map entry. Use **one** of the following structures in
+         * your request: * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyval
+         * uemap}/entries/{entry}`. * `organizations/{organization}/environments/{enviro
+         * nment}/keyvaluemaps/{keyvaluemap}/entries/{entry}` *
+         * `organizations/{organization}/keyvaluemaps/{keyvaluemap}/entries/{entry}`. If
+         * the KeyValueMap is under an API Proxy resource that has the `space` attribute
+         * set, IAM permissions are checked against the Space resource path. To learn
+         * more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1KeyValueEntry
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get the key value entry value for a key value map scoped to an organization,
+         * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
+         * higher. (entries.get)
+         *
+         * @param string $name Required. Scope as indicated by the URI in which to fetch
+         * the key value map entry/value. Use **one** of the following structures in
+         * your request: * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyval
+         * uemap}/entries/{entry}`. * `organizations/{organization}/environments/{enviro
+         * nment}/keyvaluemaps/{keyvaluemap}/entries/{entry}` *
+         * `organizations/{organization}/keyvaluemaps/{keyvaluemap}/entries/{entry}`. If
+         * the KeyValueMap is under an API Proxy resource that has the `space` attribute
+         * set, IAM permissions are checked against the Space resource path. To learn
+         * more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1KeyValueEntry
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists key value entries for key values maps scoped to an organization,
+         * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
+         * higher. (entries.listOrganizationsKeyvaluemapsEntries)
+         *
+         * @param string $parent Required. Scope as indicated by the URI in which to
+         * list key value maps. Use **one** of the following structures in your request:
+         * * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `or
+         * ganizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluem
+         * ap}` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`. If the
+         * KeyValueMap is under an API Proxy resource that has the `space` attribute
+         * set, IAM permissions are checked against the Space resource path. To learn
+         * more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of key value entries to
+         * return. If unspecified, at most 100 entries will be returned.
+         * @opt_param string pageToken Optional. Page token. If provides, must be a
+         * valid key value entry returned from a previous call that can be used to
+         * retrieve the next page.
+         * @return GoogleCloudApigeeV1ListKeyValueEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsKeyvaluemapsEntries($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update key value entry scoped to an organization, environment, or API proxy
+         * for an existing key. (entries.update)
+         *
+         * @param string $name Required. Scope as indicated by the URI in which to
+         * create the key value map entry. Use **one** of the following structures in
+         * your request: *
+         * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `orga
+         * nizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluemap
+         * }` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`. If the
+         * KeyValueMap is under an API Proxy resource that has the `space` attribute
+         * set, IAM permissions are checked against the Space resource path. To learn
+         * more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param GoogleCloudApigeeV1KeyValueEntry $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1KeyValueEntry
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, GoogleCloudApigeeV1KeyValueEntry $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a key value entry from a key value map scoped to an organization,
-     * environment, or API proxy. **Notes:** * After you delete the key value entry,
-     * the policy consuming the entry will continue to function with its cached
-     * values for a few minutes. This is expected behavior. * Supported for Apigee
-     * hybrid 1.8.x and higher. (entries.delete)
-     *
-     * @param string $name Required. Scope as indicated by the URI in which to
-     * delete the key value map entry. Use **one** of the following structures in
-     * your request: * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyval
-     * uemap}/entries/{entry}`. * `organizations/{organization}/environments/{enviro
-     * nment}/keyvaluemaps/{keyvaluemap}/entries/{entry}` *
-     * `organizations/{organization}/keyvaluemaps/{keyvaluemap}/entries/{entry}`. If
-     * the KeyValueMap is under an API Proxy resource that has the `space` attribute
-     * set, IAM permissions are checked against the Space resource path. To learn
-     * more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1KeyValueEntry
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsKeyvaluemapsEntries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get the key value entry value for a key value map scoped to an organization,
-     * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
-     * higher. (entries.get)
-     *
-     * @param string $name Required. Scope as indicated by the URI in which to fetch
-     * the key value map entry/value. Use **one** of the following structures in
-     * your request: * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyval
-     * uemap}/entries/{entry}`. * `organizations/{organization}/environments/{enviro
-     * nment}/keyvaluemaps/{keyvaluemap}/entries/{entry}` *
-     * `organizations/{organization}/keyvaluemaps/{keyvaluemap}/entries/{entry}`. If
-     * the KeyValueMap is under an API Proxy resource that has the `space` attribute
-     * set, IAM permissions are checked against the Space resource path. To learn
-     * more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1KeyValueEntry
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists key value entries for key values maps scoped to an organization,
-     * environment, or API proxy. **Note**: Supported for Apigee hybrid 1.8.x and
-     * higher. (entries.listOrganizationsKeyvaluemapsEntries)
-     *
-     * @param string $parent Required. Scope as indicated by the URI in which to
-     * list key value maps. Use **one** of the following structures in your request:
-     * * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `or
-     * ganizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluem
-     * ap}` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`. If the
-     * KeyValueMap is under an API Proxy resource that has the `space` attribute
-     * set, IAM permissions are checked against the Space resource path. To learn
-     * more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of key value entries to
-     * return. If unspecified, at most 100 entries will be returned.
-     * @opt_param string pageToken Optional. Page token. If provides, must be a
-     * valid key value entry returned from a previous call that can be used to
-     * retrieve the next page.
-     * @return GoogleCloudApigeeV1ListKeyValueEntriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsKeyvaluemapsEntries($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update key value entry scoped to an organization, environment, or API proxy
-     * for an existing key. (entries.update)
-     *
-     * @param string $name Required. Scope as indicated by the URI in which to
-     * create the key value map entry. Use **one** of the following structures in
-     * your request: *
-     * `organizations/{organization}/apis/{api}/keyvaluemaps/{keyvaluemap}`. * `orga
-     * nizations/{organization}/environments/{environment}/keyvaluemaps/{keyvaluemap
-     * }` * `organizations/{organization}/keyvaluemaps/{keyvaluemap}`. If the
-     * KeyValueMap is under an API Proxy resource that has the `space` attribute
-     * set, IAM permissions are checked against the Space resource path. To learn
-     * more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param GoogleCloudApigeeV1KeyValueEntry $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1KeyValueEntry
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, GoogleCloudApigeeV1KeyValueEntry $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsKeyvaluemapsEntries extends \Google\Service\Apigee\Resource\OrganizationsKeyvaluemapsEntries
     {
     }
 }

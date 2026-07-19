@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkUpdateLineItemsRequest extends \Google\Collection
-{
-    protected $collection_key = 'lineItemIds';
-    /**
-     * Required. IDs of line items to update.
-     *
-     * @var string[]
-     */
-    public $lineItemIds;
-    protected $targetLineItemType = LineItem::class;
-    protected $targetLineItemDataType = '';
-    /**
-     * Required. A field mask identifying which fields to update. Only the
-     * following fields are currently supported: * entityStatus *
-     * containsEuPoliticalAds
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. IDs of line items to update.
-     *
-     * @param string[] $lineItemIds
-     */
-    public function setLineItemIds($lineItemIds)
+namespace Google\Service\DisplayVideo {
+    class BulkUpdateLineItemsRequest extends \Google\Collection
     {
+        protected $collection_key = 'lineItemIds';
+        /**
+         * Required. IDs of line items to update.
+         *
+         * @var string[]
+         */
+        public $lineItemIds;
+        protected $targetLineItemType = LineItem::class;
+        protected $targetLineItemDataType = '';
+        /**
+         * Required. A field mask identifying which fields to update. Only the
+         * following fields are currently supported: * entityStatus *
+         * containsEuPoliticalAds
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. IDs of line items to update.
+         *
+         * @param string[] $lineItemIds
+         */
+        public function setLineItemIds($lineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLineItemIds()
+        {
+        }
+        /**
+         * Required. A line item object containing the fields to be updated and the
+         * new values to assign to all line items specified in line_item_ids."
+         *
+         * @param LineItem $targetLineItem
+         */
+        public function setTargetLineItem(LineItem $targetLineItem)
+        {
+        }
+        /**
+         * @return LineItem
+         */
+        public function getTargetLineItem()
+        {
+        }
+        /**
+         * Required. A field mask identifying which fields to update. Only the
+         * following fields are currently supported: * entityStatus *
+         * containsEuPoliticalAds
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkUpdateLineItemsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemIds()
-    {
-    }
-    /**
-     * Required. A line item object containing the fields to be updated and the
-     * new values to assign to all line items specified in line_item_ids."
-     *
-     * @param LineItem $targetLineItem
-     */
-    public function setTargetLineItem(LineItem $targetLineItem)
-    {
-    }
-    /**
-     * @return LineItem
-     */
-    public function getTargetLineItem()
-    {
-    }
-    /**
-     * Required. A field mask identifying which fields to update. Only the
-     * following fields are currently supported: * entityStatus *
-     * containsEuPoliticalAds
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DisplayVideo_BulkUpdateLineItemsRequest extends \Google\Service\DisplayVideo\BulkUpdateLineItemsRequest
     {
     }
 }

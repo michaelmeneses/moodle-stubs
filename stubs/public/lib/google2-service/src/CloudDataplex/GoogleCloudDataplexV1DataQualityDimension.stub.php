@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityDimension extends \Google\Model
-{
-    /**
-     * Output only. The dimension name a rule belongs to. Custom dimension name is
-     * supported with all uppercase letters and maximum length of 30 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The dimension name a rule belongs to. Custom dimension name is
-     * supported with all uppercase letters and maximum length of 30 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityDimension extends \Google\Model
     {
+        /**
+         * Output only. The dimension name a rule belongs to. Custom dimension name is
+         * supported with all uppercase letters and maximum length of 30 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The dimension name a rule belongs to. Custom dimension name is
+         * supported with all uppercase letters and maximum length of 30 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityDimension extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityDimension
     {
     }
 }

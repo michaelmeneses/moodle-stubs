@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1ValueMatcher extends \Google\Model
-{
-    /**
-     * To be used for full regex matching. The regular expression is using the
-     * Google RE2 syntax (https://github.com/google/re2/wiki/Syntax), so to be
-     * used with RE2::FullMatch
-     *
-     * @var string
-     */
-    public $matchesPattern;
-    /**
-     * To be used for full regex matching. The regular expression is using the
-     * Google RE2 syntax (https://github.com/google/re2/wiki/Syntax), so to be
-     * used with RE2::FullMatch
-     *
-     * @param string $matchesPattern
-     */
-    public function setMatchesPattern($matchesPattern)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1ValueMatcher extends \Google\Model
     {
+        /**
+         * To be used for full regex matching. The regular expression is using the
+         * Google RE2 syntax (https://github.com/google/re2/wiki/Syntax), so to be
+         * used with RE2::FullMatch
+         *
+         * @var string
+         */
+        public $matchesPattern;
+        /**
+         * To be used for full regex matching. The regular expression is using the
+         * Google RE2 syntax (https://github.com/google/re2/wiki/Syntax), so to be
+         * used with RE2::FullMatch
+         *
+         * @param string $matchesPattern
+         */
+        public function setMatchesPattern($matchesPattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchesPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1ValueMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchesPattern()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1ValueMatcher extends \Google\Service\Recommender\GoogleCloudRecommenderV1ValueMatcher
     {
     }
 }

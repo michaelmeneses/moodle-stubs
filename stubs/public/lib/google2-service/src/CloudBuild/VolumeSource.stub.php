@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class VolumeSource extends \Google\Model
-{
-    protected $emptyDirType = EmptyDirVolumeSource::class;
-    protected $emptyDirDataType = '';
-    /**
-     * Name of the Volume. Must be a DNS_LABEL and unique within the pod. More
-     * info: https://kubernetes.io/docs/concepts/overview/working-with-
-     * objects/names/#names
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A temporary directory that shares a pod's lifetime.
-     *
-     * @param EmptyDirVolumeSource $emptyDir
-     */
-    public function setEmptyDir(EmptyDirVolumeSource $emptyDir)
+namespace Google\Service\CloudBuild {
+    class VolumeSource extends \Google\Model
     {
+        protected $emptyDirType = EmptyDirVolumeSource::class;
+        protected $emptyDirDataType = '';
+        /**
+         * Name of the Volume. Must be a DNS_LABEL and unique within the pod. More
+         * info: https://kubernetes.io/docs/concepts/overview/working-with-
+         * objects/names/#names
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A temporary directory that shares a pod's lifetime.
+         *
+         * @param EmptyDirVolumeSource $emptyDir
+         */
+        public function setEmptyDir(EmptyDirVolumeSource $emptyDir)
+        {
+        }
+        /**
+         * @return EmptyDirVolumeSource
+         */
+        public function getEmptyDir()
+        {
+        }
+        /**
+         * Name of the Volume. Must be a DNS_LABEL and unique within the pod. More
+         * info: https://kubernetes.io/docs/concepts/overview/working-with-
+         * objects/names/#names
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmptyDirVolumeSource
+     * Runtime class alias of \Google\Service\CloudBuild\VolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmptyDir()
-    {
-    }
-    /**
-     * Name of the Volume. Must be a DNS_LABEL and unique within the pod. More
-     * info: https://kubernetes.io/docs/concepts/overview/working-with-
-     * objects/names/#names
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudBuild_VolumeSource extends \Google\Service\CloudBuild\VolumeSource
     {
     }
 }

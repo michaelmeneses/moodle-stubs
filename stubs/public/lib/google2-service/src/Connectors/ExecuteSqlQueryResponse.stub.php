@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExecuteSqlQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * In the case of successful execution of the query the response contains
-     * results returned by the external system. For example, the result rows of
-     * the query are contained in the 'results' Struct list - "results": [ {
-     * "field1": "val1", "field2": "val2",.. },.. ] Each Struct row can contain
-     * fields any type of like nested Structs or lists.
-     *
-     * @var array[]
-     */
-    public $results;
-    /**
-     * In the case of successful execution of the query the response contains
-     * results returned by the external system. For example, the result rows of
-     * the query are contained in the 'results' Struct list - "results": [ {
-     * "field1": "val1", "field2": "val2",.. },.. ] Each Struct row can contain
-     * fields any type of like nested Structs or lists.
-     *
-     * @param array[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\Connectors {
+    class ExecuteSqlQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * In the case of successful execution of the query the response contains
+         * results returned by the external system. For example, the result rows of
+         * the query are contained in the 'results' Struct list - "results": [ {
+         * "field1": "val1", "field2": "val2",.. },.. ] Each Struct row can contain
+         * fields any type of like nested Structs or lists.
+         *
+         * @var array[]
+         */
+        public $results;
+        /**
+         * In the case of successful execution of the query the response contains
+         * results returned by the external system. For example, the result rows of
+         * the query are contained in the 'results' Struct list - "results": [ {
+         * "field1": "val1", "field2": "val2",.. },.. ] Each Struct row can contain
+         * fields any type of like nested Structs or lists.
+         *
+         * @param array[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ExecuteSqlQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_Connectors_ExecuteSqlQueryResponse extends \Google\Service\Connectors\ExecuteSqlQueryResponse
     {
     }
 }

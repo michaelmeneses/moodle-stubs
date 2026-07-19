@@ -21,120 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU\Resource;
-
-/**
- * The "nodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tpuService = new Google\Service\TPU(...);
- *   $nodes = $tpuService->projects_locations_nodes;
- *  </code>
- */
-class ProjectsLocationsNodes extends \Google\Service\Resource
-{
+namespace Google\Service\TPU\Resource {
+    use Google\Service\TPU\GetGuestAttributesRequest;
+    use Google\Service\TPU\GetGuestAttributesResponse;
+    use Google\Service\TPU\ListNodesResponse;
+    use Google\Service\TPU\Node;
+    use Google\Service\TPU\Operation;
+    use Google\Service\TPU\StartNodeRequest;
+    use Google\Service\TPU\StopNodeRequest;
     /**
-     * Creates a node. (nodes.create)
-     *
-     * @param string $parent Required. The parent resource name.
-     * @param Node $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string nodeId The unqualified resource name.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "nodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tpuService = new Google\Service\TPU(...);
+     *   $nodes = $tpuService->projects_locations_nodes;
+     *  </code>
      */
-    public function create($parent, Node $postBody, $optParams = [])
+    class ProjectsLocationsNodes extends \Google\Service\Resource
     {
+        /**
+         * Creates a node. (nodes.create)
+         *
+         * @param string $parent Required. The parent resource name.
+         * @param Node $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string nodeId The unqualified resource name.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Node $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a node. (nodes.delete)
+         *
+         * @param string $name Required. The resource name.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details of a node. (nodes.get)
+         *
+         * @param string $name Required. The resource name.
+         * @param array $optParams Optional parameters.
+         * @return Node
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the guest attributes for the node. (nodes.getGuestAttributes)
+         *
+         * @param string $name Required. The resource name.
+         * @param GetGuestAttributesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetGuestAttributesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getGuestAttributes($name, GetGuestAttributesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists nodes. (nodes.listProjectsLocationsNodes)
+         *
+         * @param string $parent Required. The parent resource name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListNodesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNodes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the configurations of a node. (nodes.patch)
+         *
+         * @param string $name Output only. Immutable. The name of the TPU.
+         * @param Node $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Mask of fields from Node to update.
+         * Supported fields: [description, tags, labels, metadata,
+         * network_config.enable_external_ips].
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Node $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Starts a node. (nodes.start)
+         *
+         * @param string $name Required. The resource name.
+         * @param StartNodeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function start($name, StartNodeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Stops a node. This operation is only available with single TPU nodes.
+         * (nodes.stop)
+         *
+         * @param string $name Required. The resource name.
+         * @param StopNodeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function stop($name, StopNodeRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a node. (nodes.delete)
-     *
-     * @param string $name Required. The resource name.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TPU\Resource\ProjectsLocationsNodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the details of a node. (nodes.get)
-     *
-     * @param string $name Required. The resource name.
-     * @param array $optParams Optional parameters.
-     * @return Node
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the guest attributes for the node. (nodes.getGuestAttributes)
-     *
-     * @param string $name Required. The resource name.
-     * @param GetGuestAttributesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetGuestAttributesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function getGuestAttributes($name, GetGuestAttributesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists nodes. (nodes.listProjectsLocationsNodes)
-     *
-     * @param string $parent Required. The parent resource name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListNodesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsNodes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the configurations of a node. (nodes.patch)
-     *
-     * @param string $name Output only. Immutable. The name of the TPU.
-     * @param Node $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Mask of fields from Node to update.
-     * Supported fields: [description, tags, labels, metadata,
-     * network_config.enable_external_ips].
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Node $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Starts a node. (nodes.start)
-     *
-     * @param string $name Required. The resource name.
-     * @param StartNodeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function start($name, StartNodeRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Stops a node. This operation is only available with single TPU nodes.
-     * (nodes.stop)
-     *
-     * @param string $name Required. The resource name.
-     * @param StopNodeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function stop($name, StopNodeRequest $postBody, $optParams = [])
+    class Google_Service_TPU_Resource_ProjectsLocationsNodes extends \Google\Service\TPU\Resource\ProjectsLocationsNodes
     {
     }
 }

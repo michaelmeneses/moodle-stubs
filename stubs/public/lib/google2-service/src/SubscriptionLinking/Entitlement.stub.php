@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SubscriptionLinking;
-
-class Entitlement extends \Google\Model
-{
-    /**
-     * The detail field can carry a description of the SKU that corresponds to
-     * what the user has been granted access to. This description, which is opaque
-     * to Google, can be displayed in the Google user subscription console for
-     * users who linked the subscription to a Google Account. Max 80 character
-     * limit.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * Required. Expiration time of the entitlement. Entitlements that have
-     * expired over 30 days will be purged. The max expire_time is 398 days from
-     * now().
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Required. The publication's product ID that the user has access to. This is
-     * the same product ID as can be found in Schema.org markup
-     * (http://schema.org/productID). E.g. "dailybugle.com:basic"
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * A source-specific subscription token. This is an opaque string that the
-     * publisher provides to Google. This token is opaque and has no meaning to
-     * Google.
-     *
-     * @var string
-     */
-    public $subscriptionToken;
-    /**
-     * The detail field can carry a description of the SKU that corresponds to
-     * what the user has been granted access to. This description, which is opaque
-     * to Google, can be displayed in the Google user subscription console for
-     * users who linked the subscription to a Google Account. Max 80 character
-     * limit.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
+namespace Google\Service\SubscriptionLinking {
+    class Entitlement extends \Google\Model
     {
+        /**
+         * The detail field can carry a description of the SKU that corresponds to
+         * what the user has been granted access to. This description, which is opaque
+         * to Google, can be displayed in the Google user subscription console for
+         * users who linked the subscription to a Google Account. Max 80 character
+         * limit.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * Required. Expiration time of the entitlement. Entitlements that have
+         * expired over 30 days will be purged. The max expire_time is 398 days from
+         * now().
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Required. The publication's product ID that the user has access to. This is
+         * the same product ID as can be found in Schema.org markup
+         * (http://schema.org/productID). E.g. "dailybugle.com:basic"
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * A source-specific subscription token. This is an opaque string that the
+         * publisher provides to Google. This token is opaque and has no meaning to
+         * Google.
+         *
+         * @var string
+         */
+        public $subscriptionToken;
+        /**
+         * The detail field can carry a description of the SKU that corresponds to
+         * what the user has been granted access to. This description, which is opaque
+         * to Google, can be displayed in the Google user subscription console for
+         * users who linked the subscription to a Google Account. Max 80 character
+         * limit.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * Required. Expiration time of the entitlement. Entitlements that have
+         * expired over 30 days will be purged. The max expire_time is 398 days from
+         * now().
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Required. The publication's product ID that the user has access to. This is
+         * the same product ID as can be found in Schema.org markup
+         * (http://schema.org/productID). E.g. "dailybugle.com:basic"
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * A source-specific subscription token. This is an opaque string that the
+         * publisher provides to Google. This token is opaque and has no meaning to
+         * Google.
+         *
+         * @param string $subscriptionToken
+         */
+        public function setSubscriptionToken($subscriptionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriptionToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SubscriptionLinking\Entitlement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetail()
-    {
-    }
-    /**
-     * Required. Expiration time of the entitlement. Entitlements that have
-     * expired over 30 days will be purged. The max expire_time is 398 days from
-     * now().
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Required. The publication's product ID that the user has access to. This is
-     * the same product ID as can be found in Schema.org markup
-     * (http://schema.org/productID). E.g. "dailybugle.com:basic"
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * A source-specific subscription token. This is an opaque string that the
-     * publisher provides to Google. This token is opaque and has no meaning to
-     * Google.
-     *
-     * @param string $subscriptionToken
-     */
-    public function setSubscriptionToken($subscriptionToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriptionToken()
+    class Google_Service_SubscriptionLinking_Entitlement extends \Google\Service\SubscriptionLinking\Entitlement
     {
     }
 }

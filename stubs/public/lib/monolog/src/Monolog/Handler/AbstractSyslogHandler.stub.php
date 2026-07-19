@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LineFormatter;
 /**
  * Common syslog functionality
  */

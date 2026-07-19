@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse extends \Google\Model
-{
-    /**
-     * The server-generated ID of the field.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * The server-generated ID of the created choice within the field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The server-generated ID of the field.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse extends \Google\Model
     {
+        /**
+         * The server-generated ID of the field.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * The server-generated ID of the created choice within the field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The server-generated ID of the field.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * The server-generated ID of the created choice within the field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * The server-generated ID of the created choice within the field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseCreateSelectionChoiceResponse
     {
     }
 }

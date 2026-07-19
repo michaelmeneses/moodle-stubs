@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoNodeIdentifier extends \Google\Model
-{
-    public const ELEMENT_TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
-    public const ELEMENT_TYPE_TASK_CONFIG = 'TASK_CONFIG';
-    public const ELEMENT_TYPE_TRIGGER_CONFIG = 'TRIGGER_CONFIG';
-    /**
-     * Configuration of the edge.
-     *
-     * @var string
-     */
-    public $elementIdentifier;
-    /**
-     * Destination node where the edge ends. It can only be a task config.
-     *
-     * @var string
-     */
-    public $elementType;
-    /**
-     * Configuration of the edge.
-     *
-     * @param string $elementIdentifier
-     */
-    public function setElementIdentifier($elementIdentifier)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoNodeIdentifier extends \Google\Model
     {
+        public const ELEMENT_TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
+        public const ELEMENT_TYPE_TASK_CONFIG = 'TASK_CONFIG';
+        public const ELEMENT_TYPE_TRIGGER_CONFIG = 'TRIGGER_CONFIG';
+        /**
+         * Configuration of the edge.
+         *
+         * @var string
+         */
+        public $elementIdentifier;
+        /**
+         * Destination node where the edge ends. It can only be a task config.
+         *
+         * @var string
+         */
+        public $elementType;
+        /**
+         * Configuration of the edge.
+         *
+         * @param string $elementIdentifier
+         */
+        public function setElementIdentifier($elementIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElementIdentifier()
+        {
+        }
+        /**
+         * Destination node where the edge ends. It can only be a task config.
+         *
+         * Accepted values: UNKNOWN_TYPE, TASK_CONFIG, TRIGGER_CONFIG
+         *
+         * @param self::ELEMENT_TYPE_* $elementType
+         */
+        public function setElementType($elementType)
+        {
+        }
+        /**
+         * @return self::ELEMENT_TYPE_*
+         */
+        public function getElementType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoNodeIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElementIdentifier()
-    {
-    }
-    /**
-     * Destination node where the edge ends. It can only be a task config.
-     *
-     * Accepted values: UNKNOWN_TYPE, TASK_CONFIG, TRIGGER_CONFIG
-     *
-     * @param self::ELEMENT_TYPE_* $elementType
-     */
-    public function setElementType($elementType)
-    {
-    }
-    /**
-     * @return self::ELEMENT_TYPE_*
-     */
-    public function getElementType()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoNodeIdentifier extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoNodeIdentifier
     {
     }
 }

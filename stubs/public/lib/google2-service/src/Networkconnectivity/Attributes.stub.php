@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Attributes extends \Google\Model
-{
-    protected $attributeMapType = AttributeValue::class;
-    protected $attributeMapDataType = 'map';
-    public $droppedAttributesCount;
+namespace Google\Service\Networkconnectivity {
+    class Attributes extends \Google\Model
+    {
+        protected $attributeMapType = AttributeValue::class;
+        protected $attributeMapDataType = 'map';
+        public $droppedAttributesCount;
+        /**
+         * @param AttributeValue[]
+         */
+        public function setAttributeMap($attributeMap)
+        {
+        }
+        /**
+         * @return AttributeValue[]
+         */
+        public function getAttributeMap()
+        {
+        }
+        public function setDroppedAttributesCount($droppedAttributesCount)
+        {
+        }
+        public function getDroppedAttributesCount()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param AttributeValue[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\Attributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAttributeMap($attributeMap)
-    {
-    }
-    /**
-     * @return AttributeValue[]
-     */
-    public function getAttributeMap()
-    {
-    }
-    public function setDroppedAttributesCount($droppedAttributesCount)
-    {
-    }
-    public function getDroppedAttributesCount()
+    class Google_Service_Networkconnectivity_Attributes extends \Google\Service\Networkconnectivity\Attributes
     {
     }
 }

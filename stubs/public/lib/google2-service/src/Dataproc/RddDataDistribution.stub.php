@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RddDataDistribution extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $address;
-    /**
-     * @var string
-     */
-    public $diskUsed;
-    /**
-     * @var string
-     */
-    public $memoryRemaining;
-    /**
-     * @var string
-     */
-    public $memoryUsed;
-    /**
-     * @var string
-     */
-    public $offHeapMemoryRemaining;
-    /**
-     * @var string
-     */
-    public $offHeapMemoryUsed;
-    /**
-     * @var string
-     */
-    public $onHeapMemoryRemaining;
-    /**
-     * @var string
-     */
-    public $onHeapMemoryUsed;
-    /**
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Dataproc {
+    class RddDataDistribution extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $address;
+        /**
+         * @var string
+         */
+        public $diskUsed;
+        /**
+         * @var string
+         */
+        public $memoryRemaining;
+        /**
+         * @var string
+         */
+        public $memoryUsed;
+        /**
+         * @var string
+         */
+        public $offHeapMemoryRemaining;
+        /**
+         * @var string
+         */
+        public $offHeapMemoryUsed;
+        /**
+         * @var string
+         */
+        public $onHeapMemoryRemaining;
+        /**
+         * @var string
+         */
+        public $onHeapMemoryUsed;
+        /**
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param string $diskUsed
+         */
+        public function setDiskUsed($diskUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskUsed()
+        {
+        }
+        /**
+         * @param string $memoryRemaining
+         */
+        public function setMemoryRemaining($memoryRemaining)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryRemaining()
+        {
+        }
+        /**
+         * @param string $memoryUsed
+         */
+        public function setMemoryUsed($memoryUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryUsed()
+        {
+        }
+        /**
+         * @param string $offHeapMemoryRemaining
+         */
+        public function setOffHeapMemoryRemaining($offHeapMemoryRemaining)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffHeapMemoryRemaining()
+        {
+        }
+        /**
+         * @param string $offHeapMemoryUsed
+         */
+        public function setOffHeapMemoryUsed($offHeapMemoryUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffHeapMemoryUsed()
+        {
+        }
+        /**
+         * @param string $onHeapMemoryRemaining
+         */
+        public function setOnHeapMemoryRemaining($onHeapMemoryRemaining)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnHeapMemoryRemaining()
+        {
+        }
+        /**
+         * @param string $onHeapMemoryUsed
+         */
+        public function setOnHeapMemoryUsed($onHeapMemoryUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnHeapMemoryUsed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\RddDataDistribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param string $diskUsed
-     */
-    public function setDiskUsed($diskUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskUsed()
-    {
-    }
-    /**
-     * @param string $memoryRemaining
-     */
-    public function setMemoryRemaining($memoryRemaining)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryRemaining()
-    {
-    }
-    /**
-     * @param string $memoryUsed
-     */
-    public function setMemoryUsed($memoryUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryUsed()
-    {
-    }
-    /**
-     * @param string $offHeapMemoryRemaining
-     */
-    public function setOffHeapMemoryRemaining($offHeapMemoryRemaining)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffHeapMemoryRemaining()
-    {
-    }
-    /**
-     * @param string $offHeapMemoryUsed
-     */
-    public function setOffHeapMemoryUsed($offHeapMemoryUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffHeapMemoryUsed()
-    {
-    }
-    /**
-     * @param string $onHeapMemoryRemaining
-     */
-    public function setOnHeapMemoryRemaining($onHeapMemoryRemaining)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnHeapMemoryRemaining()
-    {
-    }
-    /**
-     * @param string $onHeapMemoryUsed
-     */
-    public function setOnHeapMemoryUsed($onHeapMemoryUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnHeapMemoryUsed()
+    class Google_Service_Dataproc_RddDataDistribution extends \Google\Service\Dataproc\RddDataDistribution
     {
     }
 }

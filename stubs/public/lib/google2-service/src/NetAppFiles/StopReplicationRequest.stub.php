@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class StopReplicationRequest extends \Google\Model
-{
-    /**
-     * Indicates whether to stop replication forcefully while data transfer is in
-     * progress. Warning! if force is true, this will abort any current transfers
-     * and can lead to data loss due to partial transfer. If force is false, stop
-     * replication will fail while data transfer is in progress and you will need
-     * to retry later.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Indicates whether to stop replication forcefully while data transfer is in
-     * progress. Warning! if force is true, this will abort any current transfers
-     * and can lead to data loss due to partial transfer. If force is false, stop
-     * replication will fail while data transfer is in progress and you will need
-     * to retry later.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
+namespace Google\Service\NetAppFiles {
+    class StopReplicationRequest extends \Google\Model
     {
+        /**
+         * Indicates whether to stop replication forcefully while data transfer is in
+         * progress. Warning! if force is true, this will abort any current transfers
+         * and can lead to data loss due to partial transfer. If force is false, stop
+         * replication will fail while data transfer is in progress and you will need
+         * to retry later.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Indicates whether to stop replication forcefully while data transfer is in
+         * progress. Warning! if force is true, this will abort any current transfers
+         * and can lead to data loss due to partial transfer. If force is false, stop
+         * replication will fail while data transfer is in progress and you will need
+         * to retry later.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\NetAppFiles\StopReplicationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForce()
+    class Google_Service_NetAppFiles_StopReplicationRequest extends \Google\Service\NetAppFiles\StopReplicationRequest
     {
     }
 }

@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager\Resource;
-
-/**
- * The "branchRules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
- *   $branchRules = $securesourcemanagerService->projects_locations_repositories_branchRules;
- *  </code>
- */
-class ProjectsLocationsRepositoriesBranchRules extends \Google\Service\Resource
-{
+namespace Google\Service\SecureSourceManager\Resource {
+    use Google\Service\SecureSourceManager\BranchRule;
+    use Google\Service\SecureSourceManager\ListBranchRulesResponse;
+    use Google\Service\SecureSourceManager\Operation;
     /**
-     * CreateBranchRule creates a branch rule in a given repository.
-     * (branchRules.create)
-     *
-     * @param string $parent
-     * @param BranchRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string branchRuleId
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "branchRules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
+     *   $branchRules = $securesourcemanagerService->projects_locations_repositories_branchRules;
+     *  </code>
      */
-    public function create($parent, BranchRule $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesBranchRules extends \Google\Service\Resource
     {
+        /**
+         * CreateBranchRule creates a branch rule in a given repository.
+         * (branchRules.create)
+         *
+         * @param string $parent
+         * @param BranchRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string branchRuleId
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, BranchRule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * DeleteBranchRule deletes a branch rule. (branchRules.delete)
+         *
+         * @param string $name
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool allowMissing Optional. If set to true, and the branch rule is
+         * not found, the request will succeed but no action will be taken on the
+         * server.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * GetBranchRule gets a branch rule. (branchRules.get)
+         *
+         * @param string $name Required. Name of the repository to retrieve. The format
+         * is `projects/{project}/locations/{location}/repositories/{repository}/branchR
+         * ules/{branch_rule}`.
+         * @param array $optParams Optional parameters.
+         * @return BranchRule
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * ListBranchRules lists branch rules in a given repository.
+         * (branchRules.listProjectsLocationsRepositoriesBranchRules)
+         *
+         * @param string $parent
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize
+         * @opt_param string pageToken
+         * @return ListBranchRulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesBranchRules($parent, $optParams = [])
+        {
+        }
+        /**
+         * UpdateBranchRule updates a branch rule. (branchRules.patch)
+         *
+         * @param string $name Optional. A unique identifier for a BranchRule. The name
+         * should be of the format: `projects/{project}/locations/{location}/repositorie
+         * s/{repository}/branchRules/{branch_rule}`
+         * @param BranchRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Field mask is used to specify the
+         * fields to be overwritten in the branchRule resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. The special value
+         * "*" means full replacement.
+         * @opt_param bool validateOnly Optional. If set, validate the request and
+         * preview the review, but do not actually post it. (https://google.aip.dev/163,
+         * for declarative friendly)
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, BranchRule $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * DeleteBranchRule deletes a branch rule. (branchRules.delete)
-     *
-     * @param string $name
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool allowMissing Optional. If set to true, and the branch rule is
-     * not found, the request will succeed but no action will be taken on the
-     * server.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesBranchRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * GetBranchRule gets a branch rule. (branchRules.get)
-     *
-     * @param string $name Required. Name of the repository to retrieve. The format
-     * is `projects/{project}/locations/{location}/repositories/{repository}/branchR
-     * ules/{branch_rule}`.
-     * @param array $optParams Optional parameters.
-     * @return BranchRule
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * ListBranchRules lists branch rules in a given repository.
-     * (branchRules.listProjectsLocationsRepositoriesBranchRules)
-     *
-     * @param string $parent
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize
-     * @opt_param string pageToken
-     * @return ListBranchRulesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesBranchRules($parent, $optParams = [])
-    {
-    }
-    /**
-     * UpdateBranchRule updates a branch rule. (branchRules.patch)
-     *
-     * @param string $name Optional. A unique identifier for a BranchRule. The name
-     * should be of the format: `projects/{project}/locations/{location}/repositorie
-     * s/{repository}/branchRules/{branch_rule}`
-     * @param BranchRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Field mask is used to specify the
-     * fields to be overwritten in the branchRule resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. The special value
-     * "*" means full replacement.
-     * @opt_param bool validateOnly Optional. If set, validate the request and
-     * preview the review, but do not actually post it. (https://google.aip.dev/163,
-     * for declarative friendly)
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, BranchRule $postBody, $optParams = [])
+    class Google_Service_SecureSourceManager_Resource_ProjectsLocationsRepositoriesBranchRules extends \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesBranchRules
     {
     }
 }

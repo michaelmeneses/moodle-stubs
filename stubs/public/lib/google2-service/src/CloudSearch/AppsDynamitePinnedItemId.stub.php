@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamitePinnedItemId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $driveId;
-    /**
-     * @param string
-     */
-    public function setDriveId($driveId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamitePinnedItemId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $driveId;
+        /**
+         * @param string
+         */
+        public function setDriveId($driveId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamitePinnedItemId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveId()
+    class Google_Service_CloudSearch_AppsDynamitePinnedItemId extends \Google\Service\CloudSearch\AppsDynamitePinnedItemId
     {
     }
 }

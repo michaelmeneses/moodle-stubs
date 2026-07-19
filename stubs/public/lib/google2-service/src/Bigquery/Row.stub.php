@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Row extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    /**
-     * The original label of this row.
-     *
-     * @var string
-     */
-    public $actualLabel;
-    protected $entriesType = Entry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * The original label of this row.
-     *
-     * @param string $actualLabel
-     */
-    public function setActualLabel($actualLabel)
+namespace Google\Service\Bigquery {
+    class Row extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        /**
+         * The original label of this row.
+         *
+         * @var string
+         */
+        public $actualLabel;
+        protected $entriesType = Entry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * The original label of this row.
+         *
+         * @param string $actualLabel
+         */
+        public function setActualLabel($actualLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActualLabel()
+        {
+        }
+        /**
+         * Info describing predicted label distribution.
+         *
+         * @param Entry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return Entry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActualLabel()
-    {
-    }
-    /**
-     * Info describing predicted label distribution.
-     *
-     * @param Entry[] $entries
-     */
-    public function setEntries($entries)
-    {
-    }
-    /**
-     * @return Entry[]
-     */
-    public function getEntries()
+    class Google_Service_Bigquery_Row extends \Google\Service\Bigquery\Row
     {
     }
 }

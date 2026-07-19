@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class TaskResourceRequest extends \Google\Model
-{
-    public $amount;
-    /**
-     * @var string
-     */
-    public $resourceName;
-    public function setAmount($amount)
+namespace Google\Service\Dataproc {
+    class TaskResourceRequest extends \Google\Model
     {
+        public $amount;
+        /**
+         * @var string
+         */
+        public $resourceName;
+        public function setAmount($amount)
+        {
+        }
+        public function getAmount()
+        {
+        }
+        /**
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
-    public function getAmount()
-    {
-    }
+}
+namespace {
     /**
-     * @param string $resourceName
+     * Runtime class alias of \Google\Service\Dataproc\TaskResourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_Dataproc_TaskResourceRequest extends \Google\Service\Dataproc\TaskResourceRequest
     {
     }
 }

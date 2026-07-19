@@ -21,90 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform\Resource;
-
-/**
- * The "compilationResults" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataformService = new Google\Service\Dataform(...);
- *   $compilationResults = $dataformService->projects_locations_repositories_compilationResults;
- *  </code>
- */
-class ProjectsLocationsRepositoriesCompilationResults extends \Google\Service\Resource
-{
+namespace Google\Service\Dataform\Resource {
+    use Google\Service\Dataform\CompilationResult;
+    use Google\Service\Dataform\ListCompilationResultsResponse;
+    use Google\Service\Dataform\QueryCompilationResultActionsResponse;
     /**
-     * Creates a new CompilationResult in a given project and location.
-     * (compilationResults.create)
-     *
-     * @param string $parent Required. The repository in which to create the
-     * compilation result. Must be in the format `projects/locations/repositories`.
-     * @param CompilationResult $postBody
-     * @param array $optParams Optional parameters.
-     * @return CompilationResult
-     * @throws \Google\Service\Exception
+     * The "compilationResults" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataformService = new Google\Service\Dataform(...);
+     *   $compilationResults = $dataformService->projects_locations_repositories_compilationResults;
+     *  </code>
      */
-    public function create($parent, CompilationResult $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesCompilationResults extends \Google\Service\Resource
     {
+        /**
+         * Creates a new CompilationResult in a given project and location.
+         * (compilationResults.create)
+         *
+         * @param string $parent Required. The repository in which to create the
+         * compilation result. Must be in the format `projects/locations/repositories`.
+         * @param CompilationResult $postBody
+         * @param array $optParams Optional parameters.
+         * @return CompilationResult
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CompilationResult $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Fetches a single CompilationResult. (compilationResults.get)
+         *
+         * @param string $name Required. The compilation result's name.
+         * @param array $optParams Optional parameters.
+         * @return CompilationResult
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists CompilationResults in a given Repository.
+         * (compilationResults.listProjectsLocationsRepositoriesCompilationResults)
+         *
+         * @param string $parent Required. The repository in which to list compilation
+         * results. Must be in the format `projects/locations/repositories`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter for the returned list.
+         * @opt_param string orderBy Optional. This field only supports ordering by
+         * `name` and `create_time`. If unspecified, the server will choose the
+         * ordering. If specified, the default order is ascending for the `name` field.
+         * @opt_param int pageSize Optional. Maximum number of compilation results to
+         * return. The server may return fewer items than requested. If unspecified, the
+         * server will pick an appropriate default.
+         * @opt_param string pageToken Optional. Page token received from a previous
+         * `ListCompilationResults` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListCompilationResults`,
+         * with the exception of `page_size`, must match the call that provided the page
+         * token.
+         * @return ListCompilationResultsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesCompilationResults($parent, $optParams = [])
+        {
+        }
+        /**
+         * Returns CompilationResultActions in a given CompilationResult.
+         * (compilationResults.query)
+         *
+         * @param string $name Required. The compilation result's name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Optional filter for the returned list.
+         * Filtering is only currently supported on the `file_path` field.
+         * @opt_param int pageSize Optional. Maximum number of compilation results to
+         * return. The server may return fewer items than requested. If unspecified, the
+         * server will pick an appropriate default.
+         * @opt_param string pageToken Optional. Page token received from a previous
+         * `QueryCompilationResultActions` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to
+         * `QueryCompilationResultActions`, with the exception of `page_size`, must
+         * match the call that provided the page token.
+         * @return QueryCompilationResultActionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Fetches a single CompilationResult. (compilationResults.get)
-     *
-     * @param string $name Required. The compilation result's name.
-     * @param array $optParams Optional parameters.
-     * @return CompilationResult
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataform\Resource\ProjectsLocationsRepositoriesCompilationResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists CompilationResults in a given Repository.
-     * (compilationResults.listProjectsLocationsRepositoriesCompilationResults)
-     *
-     * @param string $parent Required. The repository in which to list compilation
-     * results. Must be in the format `projects/locations/repositories`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter for the returned list.
-     * @opt_param string orderBy Optional. This field only supports ordering by
-     * `name` and `create_time`. If unspecified, the server will choose the
-     * ordering. If specified, the default order is ascending for the `name` field.
-     * @opt_param int pageSize Optional. Maximum number of compilation results to
-     * return. The server may return fewer items than requested. If unspecified, the
-     * server will pick an appropriate default.
-     * @opt_param string pageToken Optional. Page token received from a previous
-     * `ListCompilationResults` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListCompilationResults`,
-     * with the exception of `page_size`, must match the call that provided the page
-     * token.
-     * @return ListCompilationResultsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesCompilationResults($parent, $optParams = [])
-    {
-    }
-    /**
-     * Returns CompilationResultActions in a given CompilationResult.
-     * (compilationResults.query)
-     *
-     * @param string $name Required. The compilation result's name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Optional filter for the returned list.
-     * Filtering is only currently supported on the `file_path` field.
-     * @opt_param int pageSize Optional. Maximum number of compilation results to
-     * return. The server may return fewer items than requested. If unspecified, the
-     * server will pick an appropriate default.
-     * @opt_param string pageToken Optional. Page token received from a previous
-     * `QueryCompilationResultActions` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to
-     * `QueryCompilationResultActions`, with the exception of `page_size`, must
-     * match the call that provided the page token.
-     * @return QueryCompilationResultActionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function query($name, $optParams = [])
+    class Google_Service_Dataform_Resource_ProjectsLocationsRepositoriesCompilationResults extends \Google\Service\Dataform\Resource\ProjectsLocationsRepositoriesCompilationResults
     {
     }
 }

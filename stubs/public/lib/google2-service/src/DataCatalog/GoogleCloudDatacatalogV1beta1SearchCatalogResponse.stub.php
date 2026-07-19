@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1SearchCatalogResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    public $nextPageToken;
-    protected $resultsType = GoogleCloudDatacatalogV1beta1SearchCatalogResult::class;
-    protected $resultsDataType = 'array';
-    public $unreachable;
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1SearchCatalogResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        public $nextPageToken;
+        protected $resultsType = GoogleCloudDatacatalogV1beta1SearchCatalogResult::class;
+        protected $resultsDataType = 'array';
+        public $unreachable;
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SearchCatalogResult[]
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SearchCatalogResult[]
+         */
+        public function getResults()
+        {
+        }
+        public function setUnreachable($unreachable)
+        {
+        }
+        public function getUnreachable()
+        {
+        }
     }
-    public function getNextPageToken()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SearchCatalogResult[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SearchCatalogResult[]
-     */
-    public function getResults()
-    {
-    }
-    public function setUnreachable($unreachable)
-    {
-    }
-    public function getUnreachable()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1SearchCatalogResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogResponse
     {
     }
 }

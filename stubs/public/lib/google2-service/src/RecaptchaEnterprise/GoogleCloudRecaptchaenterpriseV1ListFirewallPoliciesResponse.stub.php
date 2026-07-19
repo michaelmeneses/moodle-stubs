@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ListFirewallPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'firewallPolicies';
-    protected $firewallPoliciesType = GoogleCloudRecaptchaenterpriseV1FirewallPolicy::class;
-    protected $firewallPoliciesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. It is set to empty if no
-     * policies remain in results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Policy details.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1FirewallPolicy[] $firewallPolicies
-     */
-    public function setFirewallPolicies($firewallPolicies)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ListFirewallPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'firewallPolicies';
+        protected $firewallPoliciesType = GoogleCloudRecaptchaenterpriseV1FirewallPolicy::class;
+        protected $firewallPoliciesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. It is set to empty if no
+         * policies remain in results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Policy details.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1FirewallPolicy[] $firewallPolicies
+         */
+        public function setFirewallPolicies($firewallPolicies)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1FirewallPolicy[]
+         */
+        public function getFirewallPolicies()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. It is set to empty if no
+         * policies remain in results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1FirewallPolicy[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListFirewallPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallPolicies()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. It is set to empty if no
-     * policies remain in results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ListFirewallPoliciesResponse extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListFirewallPoliciesResponse
     {
     }
 }

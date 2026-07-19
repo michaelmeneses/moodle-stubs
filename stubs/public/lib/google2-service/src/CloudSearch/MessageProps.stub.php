@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageProps extends \Google\Model
-{
-    protected $babelPropsType = BabelMessageProps::class;
-    protected $babelPropsDataType = '';
-    /**
-     * @param BabelMessageProps
-     */
-    public function setBabelProps(BabelMessageProps $babelProps)
+namespace Google\Service\CloudSearch {
+    class MessageProps extends \Google\Model
     {
+        protected $babelPropsType = BabelMessageProps::class;
+        protected $babelPropsDataType = '';
+        /**
+         * @param BabelMessageProps
+         */
+        public function setBabelProps(BabelMessageProps $babelProps)
+        {
+        }
+        /**
+         * @return BabelMessageProps
+         */
+        public function getBabelProps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BabelMessageProps
+     * Runtime class alias of \Google\Service\CloudSearch\MessageProps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBabelProps()
+    class Google_Service_CloudSearch_MessageProps extends \Google\Service\CloudSearch\MessageProps
     {
     }
 }

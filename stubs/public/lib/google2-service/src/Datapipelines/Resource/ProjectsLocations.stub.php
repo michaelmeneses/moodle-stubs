@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datapipelinesService = new Google\Service\Datapipelines(...);
- *   $locations = $datapipelinesService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Datapipelines\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datapipelinesService = new Google\Service\Datapipelines(...);
+     *   $locations = $datapipelinesService->projects_locations;
+     *  </code>
+     */
+    class ProjectsLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Datapipelines\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Datapipelines_Resource_ProjectsLocations extends \Google\Service\Datapipelines\Resource\ProjectsLocations
+    {
+    }
 }

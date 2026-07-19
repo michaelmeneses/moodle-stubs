@@ -21,70 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "returncarrier" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $returncarrier = $contentService->accounts_returncarrier;
- *  </code>
- */
-class AccountsReturncarrier extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\AccountReturnCarrier;
+    use Google\Service\ShoppingContent\ListAccountReturnCarrierResponse;
     /**
-     * Links return carrier to a merchant account. (returncarrier.create)
-     *
-     * @param string $accountId Required. The Merchant Center Account Id under which
-     * the Return Carrier is to be linked.
-     * @param AccountReturnCarrier $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountReturnCarrier
-     * @throws \Google\Service\Exception
+     * The "returncarrier" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $returncarrier = $contentService->accounts_returncarrier;
+     *  </code>
      */
-    public function create($accountId, AccountReturnCarrier $postBody, $optParams = [])
+    class AccountsReturncarrier extends \Google\Service\Resource
     {
+        /**
+         * Links return carrier to a merchant account. (returncarrier.create)
+         *
+         * @param string $accountId Required. The Merchant Center Account Id under which
+         * the Return Carrier is to be linked.
+         * @param AccountReturnCarrier $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountReturnCarrier
+         * @throws \Google\Service\Exception
+         */
+        public function create($accountId, AccountReturnCarrier $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a return carrier in the merchant account. (returncarrier.delete)
+         *
+         * @param string $accountId Required. The Merchant Center Account Id under which
+         * the Return Carrier is to be linked.
+         * @param string $carrierAccountId Required. The Google-provided unique carrier
+         * ID, used to update the resource.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $carrierAccountId, $optParams = [])
+        {
+        }
+        /**
+         * Lists available return carriers in the merchant account.
+         * (returncarrier.listAccountsReturncarrier)
+         *
+         * @param string $accountId Required. The Merchant Center Account Id under which
+         * the Return Carrier is to be linked.
+         * @param array $optParams Optional parameters.
+         * @return ListAccountReturnCarrierResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsReturncarrier($accountId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a return carrier in the merchant account. (returncarrier.patch)
+         *
+         * @param string $accountId Required. The Merchant Center Account Id under which
+         * the Return Carrier is to be linked.
+         * @param string $carrierAccountId Required. The Google-provided unique carrier
+         * ID, used to update the resource.
+         * @param AccountReturnCarrier $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountReturnCarrier
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $carrierAccountId, AccountReturnCarrier $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a return carrier in the merchant account. (returncarrier.delete)
-     *
-     * @param string $accountId Required. The Merchant Center Account Id under which
-     * the Return Carrier is to be linked.
-     * @param string $carrierAccountId Required. The Google-provided unique carrier
-     * ID, used to update the resource.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\AccountsReturncarrier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($accountId, $carrierAccountId, $optParams = [])
-    {
-    }
-    /**
-     * Lists available return carriers in the merchant account.
-     * (returncarrier.listAccountsReturncarrier)
-     *
-     * @param string $accountId Required. The Merchant Center Account Id under which
-     * the Return Carrier is to be linked.
-     * @param array $optParams Optional parameters.
-     * @return ListAccountReturnCarrierResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsReturncarrier($accountId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a return carrier in the merchant account. (returncarrier.patch)
-     *
-     * @param string $accountId Required. The Merchant Center Account Id under which
-     * the Return Carrier is to be linked.
-     * @param string $carrierAccountId Required. The Google-provided unique carrier
-     * ID, used to update the resource.
-     * @param AccountReturnCarrier $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountReturnCarrier
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $carrierAccountId, AccountReturnCarrier $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_AccountsReturncarrier extends \Google\Service\ShoppingContent\Resource\AccountsReturncarrier
     {
     }
 }

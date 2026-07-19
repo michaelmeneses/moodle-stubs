@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class V1betaAudienceDimension extends \Google\Model
-{
-    /**
-     * Optional. The API name of the dimension. See the [API Dimensions](https://d
-     * evelopers.google.com/analytics/devguides/reporting/data/v1/audience-list-
-     * api-schema#dimensions) for the list of dimension names.
-     *
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * Optional. The API name of the dimension. See the [API Dimensions](https://d
-     * evelopers.google.com/analytics/devguides/reporting/data/v1/audience-list-
-     * api-schema#dimensions) for the list of dimension names.
-     *
-     * @param string $dimensionName
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\AnalyticsData {
+    class V1betaAudienceDimension extends \Google\Model
     {
+        /**
+         * Optional. The API name of the dimension. See the [API Dimensions](https://d
+         * evelopers.google.com/analytics/devguides/reporting/data/v1/audience-list-
+         * api-schema#dimensions) for the list of dimension names.
+         *
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * Optional. The API name of the dimension. See the [API Dimensions](https://d
+         * evelopers.google.com/analytics/devguides/reporting/data/v1/audience-list-
+         * api-schema#dimensions) for the list of dimension names.
+         *
+         * @param string $dimensionName
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\V1betaAudienceDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
+    class Google_Service_AnalyticsData_V1betaAudienceDimension extends \Google\Service\AnalyticsData\V1betaAudienceDimension
     {
     }
 }

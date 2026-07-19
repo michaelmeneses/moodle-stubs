@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ModifyEntryContactsRequest extends \Google\Model
-{
-    protected $contactsType = GoogleCloudDatacatalogV1Contacts::class;
-    protected $contactsDataType = '';
-    /**
-     * Required. The new value for the Contacts.
-     *
-     * @param GoogleCloudDatacatalogV1Contacts $contacts
-     */
-    public function setContacts(GoogleCloudDatacatalogV1Contacts $contacts)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ModifyEntryContactsRequest extends \Google\Model
     {
+        protected $contactsType = GoogleCloudDatacatalogV1Contacts::class;
+        protected $contactsDataType = '';
+        /**
+         * Required. The new value for the Contacts.
+         *
+         * @param GoogleCloudDatacatalogV1Contacts $contacts
+         */
+        public function setContacts(GoogleCloudDatacatalogV1Contacts $contacts)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Contacts
+         */
+        public function getContacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1Contacts
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContacts()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ModifyEntryContactsRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ModifyEntryContactsRequest
     {
     }
 }

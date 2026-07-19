@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UserActionReference extends \Google\Model
-{
-    /**
-     * For API calls that start a LabelingJob. Resource name of the LabelingJob.
-     * Format: `projects/{project}/locations/{location}/dataLabelingJobs/{data_lab
-     * eling_job}`
-     *
-     * @var string
-     */
-    public $dataLabelingJob;
-    /**
-     * The method name of the API RPC call. For example,
-     * "/google.cloud.aiplatform.{apiVersion}.DatasetService.CreateDataset"
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * For API calls that return a long running operation. Resource name of the
-     * long running operation. Format:
-     * `projects/{project}/locations/{location}/operations/{operation}`
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * For API calls that start a LabelingJob. Resource name of the LabelingJob.
-     * Format: `projects/{project}/locations/{location}/dataLabelingJobs/{data_lab
-     * eling_job}`
-     *
-     * @param string $dataLabelingJob
-     */
-    public function setDataLabelingJob($dataLabelingJob)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UserActionReference extends \Google\Model
     {
+        /**
+         * For API calls that start a LabelingJob. Resource name of the LabelingJob.
+         * Format: `projects/{project}/locations/{location}/dataLabelingJobs/{data_lab
+         * eling_job}`
+         *
+         * @var string
+         */
+        public $dataLabelingJob;
+        /**
+         * The method name of the API RPC call. For example,
+         * "/google.cloud.aiplatform.{apiVersion}.DatasetService.CreateDataset"
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * For API calls that return a long running operation. Resource name of the
+         * long running operation. Format:
+         * `projects/{project}/locations/{location}/operations/{operation}`
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * For API calls that start a LabelingJob. Resource name of the LabelingJob.
+         * Format: `projects/{project}/locations/{location}/dataLabelingJobs/{data_lab
+         * eling_job}`
+         *
+         * @param string $dataLabelingJob
+         */
+        public function setDataLabelingJob($dataLabelingJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataLabelingJob()
+        {
+        }
+        /**
+         * The method name of the API RPC call. For example,
+         * "/google.cloud.aiplatform.{apiVersion}.DatasetService.CreateDataset"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * For API calls that return a long running operation. Resource name of the
+         * long running operation. Format:
+         * `projects/{project}/locations/{location}/operations/{operation}`
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UserActionReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataLabelingJob()
-    {
-    }
-    /**
-     * The method name of the API RPC call. For example,
-     * "/google.cloud.aiplatform.{apiVersion}.DatasetService.CreateDataset"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * For API calls that return a long running operation. Resource name of the
-     * long running operation. Format:
-     * `projects/{project}/locations/{location}/operations/{operation}`
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UserActionReference extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UserActionReference
     {
     }
 }

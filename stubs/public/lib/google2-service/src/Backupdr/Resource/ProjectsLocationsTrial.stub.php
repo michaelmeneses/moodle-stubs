@@ -21,43 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr\Resource;
-
-/**
- * The "trial" collection of methods.
- * Typical usage is:
- *  <code>
- *   $backupdrService = new Google\Service\Backupdr(...);
- *   $trial = $backupdrService->projects_locations_trial;
- *  </code>
- */
-class ProjectsLocationsTrial extends \Google\Service\Resource
-{
+namespace Google\Service\Backupdr\Resource {
+    use Google\Service\Backupdr\EndTrialRequest;
+    use Google\Service\Backupdr\SubscribeTrialRequest;
+    use Google\Service\Backupdr\Trial;
     /**
-     * Ends the trial for a project (trial.end)
-     *
-     * @param string $parent Required. The parent resource where the trial has been
-     * created. Format: projects/{project}/locations/{location}
-     * @param EndTrialRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Trial
-     * @throws \Google\Service\Exception
+     * The "trial" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $backupdrService = new Google\Service\Backupdr(...);
+     *   $trial = $backupdrService->projects_locations_trial;
+     *  </code>
      */
-    public function end($parent, EndTrialRequest $postBody, $optParams = [])
+    class ProjectsLocationsTrial extends \Google\Service\Resource
     {
+        /**
+         * Ends the trial for a project (trial.end)
+         *
+         * @param string $parent Required. The parent resource where the trial has been
+         * created. Format: projects/{project}/locations/{location}
+         * @param EndTrialRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Trial
+         * @throws \Google\Service\Exception
+         */
+        public function end($parent, EndTrialRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Subscribes to a trial for a project (trial.subscribe)
+         *
+         * @param string $parent Required. The project where this trial will be created.
+         * Format: projects/{project}/locations/{location} Supported Locations are - us,
+         * eu and asia.
+         * @param SubscribeTrialRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Trial
+         * @throws \Google\Service\Exception
+         */
+        public function subscribe($parent, SubscribeTrialRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Subscribes to a trial for a project (trial.subscribe)
-     *
-     * @param string $parent Required. The project where this trial will be created.
-     * Format: projects/{project}/locations/{location} Supported Locations are - us,
-     * eu and asia.
-     * @param SubscribeTrialRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Trial
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Backupdr\Resource\ProjectsLocationsTrial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function subscribe($parent, SubscribeTrialRequest $postBody, $optParams = [])
+    class Google_Service_Backupdr_Resource_ProjectsLocationsTrial extends \Google\Service\Backupdr\Resource\ProjectsLocationsTrial
     {
     }
 }

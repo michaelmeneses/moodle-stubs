@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ChannelAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Required. ID of the channel. Should refer to the channel ID field on a
-     * [Partner-owned channel](partners.channels#Channel.FIELDS.channel_id) or
-     * [advertiser-owned channel](advertisers.channels#Channel.FIELDS.channel_id)
-     * resource.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * Indicates if this option is being negatively targeted. For advertiser level
-     * assigned targeting option, this field must be true.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * Required. ID of the channel. Should refer to the channel ID field on a
-     * [Partner-owned channel](partners.channels#Channel.FIELDS.channel_id) or
-     * [advertiser-owned channel](advertisers.channels#Channel.FIELDS.channel_id)
-     * resource.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\DisplayVideo {
+    class ChannelAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Required. ID of the channel. Should refer to the channel ID field on a
+         * [Partner-owned channel](partners.channels#Channel.FIELDS.channel_id) or
+         * [advertiser-owned channel](advertisers.channels#Channel.FIELDS.channel_id)
+         * resource.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * Indicates if this option is being negatively targeted. For advertiser level
+         * assigned targeting option, this field must be true.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * Required. ID of the channel. Should refer to the channel ID field on a
+         * [Partner-owned channel](partners.channels#Channel.FIELDS.channel_id) or
+         * [advertiser-owned channel](advertisers.channels#Channel.FIELDS.channel_id)
+         * resource.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * Indicates if this option is being negatively targeted. For advertiser level
+         * assigned targeting option, this field must be true.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ChannelAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * Indicates if this option is being negatively targeted. For advertiser level
-     * assigned targeting option, this field must be true.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNegative()
+    class Google_Service_DisplayVideo_ChannelAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\ChannelAssignedTargetingOptionDetails
     {
     }
 }

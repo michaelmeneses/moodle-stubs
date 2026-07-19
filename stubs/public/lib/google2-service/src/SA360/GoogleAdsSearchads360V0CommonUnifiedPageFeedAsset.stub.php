@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonUnifiedPageFeedAsset extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * Labels used to group the page urls.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The webpage that advertisers want to target.
-     *
-     * @var string
-     */
-    public $pageUrl;
-    /**
-     * Labels used to group the page urls.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonUnifiedPageFeedAsset extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * Labels used to group the page urls.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The webpage that advertisers want to target.
+         *
+         * @var string
+         */
+        public $pageUrl;
+        /**
+         * Labels used to group the page urls.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The webpage that advertisers want to target.
+         *
+         * @param string $pageUrl
+         */
+        public function setPageUrl($pageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonUnifiedPageFeedAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The webpage that advertisers want to target.
-     *
-     * @param string $pageUrl
-     */
-    public function setPageUrl($pageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageUrl()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonUnifiedPageFeedAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonUnifiedPageFeedAsset
     {
     }
 }

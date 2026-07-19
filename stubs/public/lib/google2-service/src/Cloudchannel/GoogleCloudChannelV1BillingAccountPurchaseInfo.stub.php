@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1BillingAccountPurchaseInfo extends \Google\Model
-{
-    protected $billingAccountType = GoogleCloudChannelV1BillingAccount::class;
-    protected $billingAccountDataType = '';
-    /**
-     * The billing account resource.
-     *
-     * @param GoogleCloudChannelV1BillingAccount $billingAccount
-     */
-    public function setBillingAccount(GoogleCloudChannelV1BillingAccount $billingAccount)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1BillingAccountPurchaseInfo extends \Google\Model
     {
+        protected $billingAccountType = GoogleCloudChannelV1BillingAccount::class;
+        protected $billingAccountDataType = '';
+        /**
+         * The billing account resource.
+         *
+         * @param GoogleCloudChannelV1BillingAccount $billingAccount
+         */
+        public function setBillingAccount(GoogleCloudChannelV1BillingAccount $billingAccount)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1BillingAccount
+         */
+        public function getBillingAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1BillingAccount
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1BillingAccountPurchaseInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAccount()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1BillingAccountPurchaseInfo extends \Google\Service\Cloudchannel\GoogleCloudChannelV1BillingAccountPurchaseInfo
     {
     }
 }

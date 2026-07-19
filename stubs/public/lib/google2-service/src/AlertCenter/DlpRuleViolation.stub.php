@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class DlpRuleViolation extends \Google\Model
-{
-    protected $ruleViolationInfoType = RuleViolationInfo::class;
-    protected $ruleViolationInfoDataType = '';
-    /**
-     * Details about the violated DLP rule. Admins can use the predefined
-     * detectors provided by Google Cloud DLP https://cloud.google.com/dlp/ when
-     * setting up a DLP rule. Matched Cloud DLP detectors in this violation if any
-     * will be captured in the MatchInfo.predefined_detector.
-     *
-     * @param RuleViolationInfo $ruleViolationInfo
-     */
-    public function setRuleViolationInfo(RuleViolationInfo $ruleViolationInfo)
+namespace Google\Service\AlertCenter {
+    class DlpRuleViolation extends \Google\Model
     {
+        protected $ruleViolationInfoType = RuleViolationInfo::class;
+        protected $ruleViolationInfoDataType = '';
+        /**
+         * Details about the violated DLP rule. Admins can use the predefined
+         * detectors provided by Google Cloud DLP https://cloud.google.com/dlp/ when
+         * setting up a DLP rule. Matched Cloud DLP detectors in this violation if any
+         * will be captured in the MatchInfo.predefined_detector.
+         *
+         * @param RuleViolationInfo $ruleViolationInfo
+         */
+        public function setRuleViolationInfo(RuleViolationInfo $ruleViolationInfo)
+        {
+        }
+        /**
+         * @return RuleViolationInfo
+         */
+        public function getRuleViolationInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RuleViolationInfo
+     * Runtime class alias of \Google\Service\AlertCenter\DlpRuleViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRuleViolationInfo()
+    class Google_Service_AlertCenter_DlpRuleViolation extends \Google\Service\AlertCenter\DlpRuleViolation
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class NotificationConfig extends \Google\Model
-{
-    protected $pubsubNotificationType = CloudPubSubNotificationConfig::class;
-    protected $pubsubNotificationDataType = '';
-    /**
-     * @param CloudPubSubNotificationConfig
-     */
-    public function setPubsubNotification(CloudPubSubNotificationConfig $pubsubNotification)
+namespace Google\Service\BeyondCorp {
+    class NotificationConfig extends \Google\Model
     {
+        protected $pubsubNotificationType = CloudPubSubNotificationConfig::class;
+        protected $pubsubNotificationDataType = '';
+        /**
+         * @param CloudPubSubNotificationConfig
+         */
+        public function setPubsubNotification(CloudPubSubNotificationConfig $pubsubNotification)
+        {
+        }
+        /**
+         * @return CloudPubSubNotificationConfig
+         */
+        public function getPubsubNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudPubSubNotificationConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\NotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubNotification()
+    class Google_Service_BeyondCorp_NotificationConfig extends \Google\Service\BeyondCorp\NotificationConfig
     {
     }
 }

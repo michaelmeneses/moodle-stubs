@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2CreateConversationDatasetOperationMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the conversation dataset that will be created. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @var string
-     */
-    public $conversationDataset;
-    /**
-     * The resource name of the conversation dataset that will be created. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @param string $conversationDataset
-     */
-    public function setConversationDataset($conversationDataset)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2CreateConversationDatasetOperationMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the conversation dataset that will be created. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @var string
+         */
+        public $conversationDataset;
+        /**
+         * The resource name of the conversation dataset that will be created. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @param string $conversationDataset
+         */
+        public function setConversationDataset($conversationDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2CreateConversationDatasetOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationDataset()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2CreateConversationDatasetOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2CreateConversationDatasetOperationMetadata
     {
     }
 }

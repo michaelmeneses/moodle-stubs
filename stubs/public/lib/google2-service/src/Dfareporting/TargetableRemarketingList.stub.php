@@ -21,307 +21,316 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TargetableRemarketingList extends \Google\Model
-{
-    /**
-     * covers sources not supported in DCM other than those listed below
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_OTHER = 'REMARKETING_LIST_SOURCE_OTHER';
-    /**
-     * ADX
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_ADX = 'REMARKETING_LIST_SOURCE_ADX';
-    /**
-     * DFP
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DFP = 'REMARKETING_LIST_SOURCE_DFP';
-    /**
-     * XFP
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_XFP = 'REMARKETING_LIST_SOURCE_XFP';
-    /**
-     * DoubleClick Campaign Manager
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DFA = 'REMARKETING_LIST_SOURCE_DFA';
-    /**
-     * Google Analytics Premium
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_GA = 'REMARKETING_LIST_SOURCE_GA';
-    /**
-     * Youtube
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_YOUTUBE = 'REMARKETING_LIST_SOURCE_YOUTUBE';
-    /**
-     * DoubleClick Bid Manager
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DBM = 'REMARKETING_LIST_SOURCE_DBM';
-    /**
-     * G+
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_GPLUS = 'REMARKETING_LIST_SOURCE_GPLUS';
-    /**
-     * DoubleClick Audience Center
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DMP = 'REMARKETING_LIST_SOURCE_DMP';
-    /**
-     * Playstore
-     */
-    public const LIST_SOURCE_REMARKETING_LIST_SOURCE_PLAY_STORE = 'REMARKETING_LIST_SOURCE_PLAY_STORE';
-    /**
-     * Account ID of this remarketing list. This is a read-only, auto-generated
-     * field that is only returned in GET requests.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Whether this targetable remarketing list is active.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * Dimension value for the advertiser ID that owns this targetable remarketing
-     * list.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $advertiserIdDimensionValueType = DimensionValue::class;
-    protected $advertiserIdDimensionValueDataType = '';
-    /**
-     * Targetable remarketing list description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Targetable remarketing list ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#targetableRemarketingList".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Number of days that a user should remain in the targetable remarketing list
-     * without an impression.
-     *
-     * @var string
-     */
-    public $lifeSpan;
-    /**
-     * Number of users currently in the list. This is a read-only field.
-     *
-     * @var string
-     */
-    public $listSize;
-    /**
-     * Product from which this targetable remarketing list was originated.
-     *
-     * @var string
-     */
-    public $listSource;
-    /**
-     * Name of the targetable remarketing list. Is no greater than 128 characters
-     * long.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Subaccount ID of this remarketing list. This is a read-only, auto-generated
-     * field that is only returned in GET requests.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * Account ID of this remarketing list. This is a read-only, auto-generated
-     * field that is only returned in GET requests.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class TargetableRemarketingList extends \Google\Model
     {
+        /**
+         * covers sources not supported in DCM other than those listed below
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_OTHER = 'REMARKETING_LIST_SOURCE_OTHER';
+        /**
+         * ADX
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_ADX = 'REMARKETING_LIST_SOURCE_ADX';
+        /**
+         * DFP
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DFP = 'REMARKETING_LIST_SOURCE_DFP';
+        /**
+         * XFP
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_XFP = 'REMARKETING_LIST_SOURCE_XFP';
+        /**
+         * DoubleClick Campaign Manager
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DFA = 'REMARKETING_LIST_SOURCE_DFA';
+        /**
+         * Google Analytics Premium
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_GA = 'REMARKETING_LIST_SOURCE_GA';
+        /**
+         * Youtube
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_YOUTUBE = 'REMARKETING_LIST_SOURCE_YOUTUBE';
+        /**
+         * DoubleClick Bid Manager
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DBM = 'REMARKETING_LIST_SOURCE_DBM';
+        /**
+         * G+
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_GPLUS = 'REMARKETING_LIST_SOURCE_GPLUS';
+        /**
+         * DoubleClick Audience Center
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_DMP = 'REMARKETING_LIST_SOURCE_DMP';
+        /**
+         * Playstore
+         */
+        public const LIST_SOURCE_REMARKETING_LIST_SOURCE_PLAY_STORE = 'REMARKETING_LIST_SOURCE_PLAY_STORE';
+        /**
+         * Account ID of this remarketing list. This is a read-only, auto-generated
+         * field that is only returned in GET requests.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Whether this targetable remarketing list is active.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * Dimension value for the advertiser ID that owns this targetable remarketing
+         * list.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $advertiserIdDimensionValueType = DimensionValue::class;
+        protected $advertiserIdDimensionValueDataType = '';
+        /**
+         * Targetable remarketing list description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Targetable remarketing list ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#targetableRemarketingList".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Number of days that a user should remain in the targetable remarketing list
+         * without an impression.
+         *
+         * @var string
+         */
+        public $lifeSpan;
+        /**
+         * Number of users currently in the list. This is a read-only field.
+         *
+         * @var string
+         */
+        public $listSize;
+        /**
+         * Product from which this targetable remarketing list was originated.
+         *
+         * @var string
+         */
+        public $listSource;
+        /**
+         * Name of the targetable remarketing list. Is no greater than 128 characters
+         * long.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Subaccount ID of this remarketing list. This is a read-only, auto-generated
+         * field that is only returned in GET requests.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * Account ID of this remarketing list. This is a read-only, auto-generated
+         * field that is only returned in GET requests.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Whether this targetable remarketing list is active.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Dimension value for the advertiser ID that owns this targetable remarketing
+         * list.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the advertiser.
+         *
+         * @param DimensionValue $advertiserIdDimensionValue
+         */
+        public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getAdvertiserIdDimensionValue()
+        {
+        }
+        /**
+         * Targetable remarketing list description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Targetable remarketing list ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#targetableRemarketingList".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Number of days that a user should remain in the targetable remarketing list
+         * without an impression.
+         *
+         * @param string $lifeSpan
+         */
+        public function setLifeSpan($lifeSpan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLifeSpan()
+        {
+        }
+        /**
+         * Number of users currently in the list. This is a read-only field.
+         *
+         * @param string $listSize
+         */
+        public function setListSize($listSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListSize()
+        {
+        }
+        /**
+         * Product from which this targetable remarketing list was originated.
+         *
+         * Accepted values: REMARKETING_LIST_SOURCE_OTHER,
+         * REMARKETING_LIST_SOURCE_ADX, REMARKETING_LIST_SOURCE_DFP,
+         * REMARKETING_LIST_SOURCE_XFP, REMARKETING_LIST_SOURCE_DFA,
+         * REMARKETING_LIST_SOURCE_GA, REMARKETING_LIST_SOURCE_YOUTUBE,
+         * REMARKETING_LIST_SOURCE_DBM, REMARKETING_LIST_SOURCE_GPLUS,
+         * REMARKETING_LIST_SOURCE_DMP, REMARKETING_LIST_SOURCE_PLAY_STORE
+         *
+         * @param self::LIST_SOURCE_* $listSource
+         */
+        public function setListSource($listSource)
+        {
+        }
+        /**
+         * @return self::LIST_SOURCE_*
+         */
+        public function getListSource()
+        {
+        }
+        /**
+         * Name of the targetable remarketing list. Is no greater than 128 characters
+         * long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Subaccount ID of this remarketing list. This is a read-only, auto-generated
+         * field that is only returned in GET requests.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TargetableRemarketingList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Whether this targetable remarketing list is active.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getActive()
-    {
-    }
-    /**
-     * Dimension value for the advertiser ID that owns this targetable remarketing
-     * list.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the advertiser.
-     *
-     * @param DimensionValue $advertiserIdDimensionValue
-     */
-    public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getAdvertiserIdDimensionValue()
-    {
-    }
-    /**
-     * Targetable remarketing list description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Targetable remarketing list ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#targetableRemarketingList".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Number of days that a user should remain in the targetable remarketing list
-     * without an impression.
-     *
-     * @param string $lifeSpan
-     */
-    public function setLifeSpan($lifeSpan)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLifeSpan()
-    {
-    }
-    /**
-     * Number of users currently in the list. This is a read-only field.
-     *
-     * @param string $listSize
-     */
-    public function setListSize($listSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getListSize()
-    {
-    }
-    /**
-     * Product from which this targetable remarketing list was originated.
-     *
-     * Accepted values: REMARKETING_LIST_SOURCE_OTHER,
-     * REMARKETING_LIST_SOURCE_ADX, REMARKETING_LIST_SOURCE_DFP,
-     * REMARKETING_LIST_SOURCE_XFP, REMARKETING_LIST_SOURCE_DFA,
-     * REMARKETING_LIST_SOURCE_GA, REMARKETING_LIST_SOURCE_YOUTUBE,
-     * REMARKETING_LIST_SOURCE_DBM, REMARKETING_LIST_SOURCE_GPLUS,
-     * REMARKETING_LIST_SOURCE_DMP, REMARKETING_LIST_SOURCE_PLAY_STORE
-     *
-     * @param self::LIST_SOURCE_* $listSource
-     */
-    public function setListSource($listSource)
-    {
-    }
-    /**
-     * @return self::LIST_SOURCE_*
-     */
-    public function getListSource()
-    {
-    }
-    /**
-     * Name of the targetable remarketing list. Is no greater than 128 characters
-     * long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Subaccount ID of this remarketing list. This is a read-only, auto-generated
-     * field that is only returned in GET requests.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
+    class Google_Service_Dfareporting_TargetableRemarketingList extends \Google\Service\Dfareporting\TargetableRemarketingList
     {
     }
 }

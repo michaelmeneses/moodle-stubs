@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DiskEntryList extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = DiskEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Disk entries.
-     *
-     * @param DiskEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\MigrationCenterAPI {
+    class DiskEntryList extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = DiskEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Disk entries.
+         *
+         * @param DiskEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return DiskEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskEntry[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DiskEntryList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_MigrationCenterAPI_DiskEntryList extends \Google\Service\MigrationCenterAPI\DiskEntryList
     {
     }
 }

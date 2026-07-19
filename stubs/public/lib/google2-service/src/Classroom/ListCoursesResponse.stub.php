@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListCoursesResponse extends \Google\Collection
-{
-    protected $collection_key = 'courses';
-    protected $coursesType = Course::class;
-    protected $coursesDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Courses that match the list request.
-     *
-     * @param Course[] $courses
-     */
-    public function setCourses($courses)
+namespace Google\Service\Classroom {
+    class ListCoursesResponse extends \Google\Collection
     {
+        protected $collection_key = 'courses';
+        protected $coursesType = Course::class;
+        protected $coursesDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Courses that match the list request.
+         *
+         * @param Course[] $courses
+         */
+        public function setCourses($courses)
+        {
+        }
+        /**
+         * @return Course[]
+         */
+        public function getCourses()
+        {
+        }
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Course[]
+     * Runtime class alias of \Google\Service\Classroom\ListCoursesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourses()
-    {
-    }
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListCoursesResponse extends \Google\Service\Classroom\ListCoursesResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class AchievementUpdateMultipleResponse extends \Google\Collection
-{
-    protected $collection_key = 'updatedAchievements';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUpdateMultipleResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $updatedAchievementsType = AchievementUpdateResponse::class;
-    protected $updatedAchievementsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#achievementUpdateMultipleResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class AchievementUpdateMultipleResponse extends \Google\Collection
     {
+        protected $collection_key = 'updatedAchievements';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUpdateMultipleResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $updatedAchievementsType = AchievementUpdateResponse::class;
+        protected $updatedAchievementsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#achievementUpdateMultipleResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The updated state of the achievements.
+         *
+         * @param AchievementUpdateResponse[] $updatedAchievements
+         */
+        public function setUpdatedAchievements($updatedAchievements)
+        {
+        }
+        /**
+         * @return AchievementUpdateResponse[]
+         */
+        public function getUpdatedAchievements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\AchievementUpdateMultipleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The updated state of the achievements.
-     *
-     * @param AchievementUpdateResponse[] $updatedAchievements
-     */
-    public function setUpdatedAchievements($updatedAchievements)
-    {
-    }
-    /**
-     * @return AchievementUpdateResponse[]
-     */
-    public function getUpdatedAchievements()
+    class Google_Service_Games_AchievementUpdateMultipleResponse extends \Google\Service\Games\AchievementUpdateMultipleResponse
     {
     }
 }

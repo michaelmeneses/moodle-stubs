@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeSaleInfoListPrice extends \Google\Model
-{
-    /**
-     * Amount in the currency listed below. (In LITE projection.)
-     *
-     * @var 
-     */
-    public $amount;
-    /**
-     * An ISO 4217, three-letter currency code. (In LITE projection.)
-     *
-     * @var string
-     */
-    public $currencyCode;
-    public function setAmount($amount)
+namespace Google\Service\Books {
+    class VolumeSaleInfoListPrice extends \Google\Model
     {
+        /**
+         * Amount in the currency listed below. (In LITE projection.)
+         *
+         * @var 
+         */
+        public $amount;
+        /**
+         * An ISO 4217, three-letter currency code. (In LITE projection.)
+         *
+         * @var string
+         */
+        public $currencyCode;
+        public function setAmount($amount)
+        {
+        }
+        public function getAmount()
+        {
+        }
+        /**
+         * An ISO 4217, three-letter currency code. (In LITE projection.)
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
     }
-    public function getAmount()
-    {
-    }
+}
+namespace {
     /**
-     * An ISO 4217, three-letter currency code. (In LITE projection.)
-     *
-     * @param string $currencyCode
+     * Runtime class alias of \Google\Service\Books\VolumeSaleInfoListPrice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
+    class Google_Service_Books_VolumeSaleInfoListPrice extends \Google\Service\Books\VolumeSaleInfoListPrice
     {
     }
 }

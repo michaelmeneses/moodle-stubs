@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $reports = $dfareportingService->reports;
- *  </code>
- */
-class Reports extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DfareportingFile;
+    use Google\Service\Dfareporting\Report;
+    use Google\Service\Dfareporting\ReportList;
     /**
-     * Deletes a report by its ID. (reports.delete)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param string $reportId The ID of the report.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $reports = $dfareportingService->reports;
+     *  </code>
      */
-    public function delete($profileId, $reportId, $optParams = [])
+    class Reports extends \Google\Service\Resource
     {
+        /**
+         * Deletes a report by its ID. (reports.delete)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param string $reportId The ID of the report.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($profileId, $reportId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a report by its ID. (reports.get)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param string $reportId The ID of the report.
+         * @param array $optParams Optional parameters.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $reportId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a report. (reports.insert)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param Report $postBody
+         * @param array $optParams Optional parameters.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, Report $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves list of reports. (reports.listReports)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken The value of the nextToken from the previous
+         * result page.
+         * @opt_param string scope The scope that defines which results are returned.
+         * @opt_param string sortField The field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return ReportList
+         * @throws \Google\Service\Exception
+         */
+        public function listReports($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Runs a report. (reports.run)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param string $reportId The ID of the report.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool synchronous If set and true, tries to run the report
+         * synchronously.
+         * @return DfareportingFile
+         * @throws \Google\Service\Exception
+         */
+        public function run($profileId, $reportId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a report. (reports.update)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param string $reportId The ID of the report.
+         * @param Report $postBody
+         * @param array $optParams Optional parameters.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, $reportId, Report $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a report by its ID. (reports.get)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param string $reportId The ID of the report.
-     * @param array $optParams Optional parameters.
-     * @return Report
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Reports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($profileId, $reportId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a report. (reports.insert)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param Report $postBody
-     * @param array $optParams Optional parameters.
-     * @return Report
-     * @throws \Google\Service\Exception
-     */
-    public function insert($profileId, Report $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves list of reports. (reports.listReports)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken The value of the nextToken from the previous
-     * result page.
-     * @opt_param string scope The scope that defines which results are returned.
-     * @opt_param string sortField The field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return ReportList
-     * @throws \Google\Service\Exception
-     */
-    public function listReports($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Runs a report. (reports.run)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param string $reportId The ID of the report.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool synchronous If set and true, tries to run the report
-     * synchronously.
-     * @return DfareportingFile
-     * @throws \Google\Service\Exception
-     */
-    public function run($profileId, $reportId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a report. (reports.update)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param string $reportId The ID of the report.
-     * @param Report $postBody
-     * @param array $optParams Optional parameters.
-     * @return Report
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, $reportId, Report $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Reports extends \Google\Service\Dfareporting\Resource\Reports
     {
     }
 }

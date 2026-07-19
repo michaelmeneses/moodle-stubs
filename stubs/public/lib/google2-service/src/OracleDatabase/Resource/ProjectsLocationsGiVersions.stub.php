@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "giVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $giVersions = $oracledatabaseService->projects_locations_giVersions;
- *  </code>
- */
-class ProjectsLocationsGiVersions extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListGiVersionsResponse;
     /**
-     * Lists all the valid Oracle Grid Infrastructure (GI) versions for the given
-     * project and location. (giVersions.listProjectsLocationsGiVersions)
-     *
-     * @param string $parent Required. The parent value for Grid Infrastructure
-     * Version in the following format: Format:
-     * projects/{project}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. An expression for filtering the results of
-     * the request. Only the shape, gcp_oracle_zone and gi_version fields are
-     * supported in this format: `shape="{shape}"`.
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, a maximum of 50 Oracle Grid Infrastructure (GI) versions will be
-     * returned. The maximum value is 1000; values above 1000 will be reset to 1000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListGiVersionsResponse
-     * @throws \Google\Service\Exception
+     * The "giVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $giVersions = $oracledatabaseService->projects_locations_giVersions;
+     *  </code>
      */
-    public function listProjectsLocationsGiVersions($parent, $optParams = [])
+    class ProjectsLocationsGiVersions extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the valid Oracle Grid Infrastructure (GI) versions for the given
+         * project and location. (giVersions.listProjectsLocationsGiVersions)
+         *
+         * @param string $parent Required. The parent value for Grid Infrastructure
+         * Version in the following format: Format:
+         * projects/{project}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. An expression for filtering the results of
+         * the request. Only the shape, gcp_oracle_zone and gi_version fields are
+         * supported in this format: `shape="{shape}"`.
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, a maximum of 50 Oracle Grid Infrastructure (GI) versions will be
+         * returned. The maximum value is 1000; values above 1000 will be reset to 1000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListGiVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsGiVersions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsGiVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsGiVersions extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsGiVersions
     {
     }
 }

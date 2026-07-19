@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class ReportPropertyUsageRequest extends \Google\Model
-{
-    /**
-     * Required. The target month to list property usages. Format: YYYY-MM. For
-     * example, "2025-05"
-     *
-     * @var string
-     */
-    public $month;
-    /**
-     * Required. The target month to list property usages. Format: YYYY-MM. For
-     * example, "2025-05"
-     *
-     * @param string $month
-     */
-    public function setMonth($month)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class ReportPropertyUsageRequest extends \Google\Model
     {
+        /**
+         * Required. The target month to list property usages. Format: YYYY-MM. For
+         * example, "2025-05"
+         *
+         * @var string
+         */
+        public $month;
+        /**
+         * Required. The target month to list property usages. Format: YYYY-MM. For
+         * example, "2025-05"
+         *
+         * @param string $month
+         */
+        public function setMonth($month)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\ReportPropertyUsageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMonth()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_ReportPropertyUsageRequest extends \Google\Service\GoogleMarketingPlatformAdminAPI\ReportPropertyUsageRequest
     {
     }
 }

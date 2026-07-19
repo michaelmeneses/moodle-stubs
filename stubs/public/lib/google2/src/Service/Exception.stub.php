@@ -23,6 +23,7 @@
  */
 namespace Google\Service;
 
+use Google\Exception as GoogleException;
 class Exception extends GoogleException
 {
     /**

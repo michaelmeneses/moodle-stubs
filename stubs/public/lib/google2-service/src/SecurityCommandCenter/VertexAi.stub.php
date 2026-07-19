@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class VertexAi extends \Google\Collection
-{
-    protected $collection_key = 'pipelines';
-    protected $datasetsType = Dataset::class;
-    protected $datasetsDataType = 'array';
-    protected $pipelinesType = Pipeline::class;
-    protected $pipelinesDataType = 'array';
-    /**
-     * Datasets associated with the finding.
-     *
-     * @param Dataset[] $datasets
-     */
-    public function setDatasets($datasets)
+namespace Google\Service\SecurityCommandCenter {
+    class VertexAi extends \Google\Collection
     {
+        protected $collection_key = 'pipelines';
+        protected $datasetsType = Dataset::class;
+        protected $datasetsDataType = 'array';
+        protected $pipelinesType = Pipeline::class;
+        protected $pipelinesDataType = 'array';
+        /**
+         * Datasets associated with the finding.
+         *
+         * @param Dataset[] $datasets
+         */
+        public function setDatasets($datasets)
+        {
+        }
+        /**
+         * @return Dataset[]
+         */
+        public function getDatasets()
+        {
+        }
+        /**
+         * Pipelines associated with the finding.
+         *
+         * @param Pipeline[] $pipelines
+         */
+        public function setPipelines($pipelines)
+        {
+        }
+        /**
+         * @return Pipeline[]
+         */
+        public function getPipelines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dataset[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\VertexAi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasets()
-    {
-    }
-    /**
-     * Pipelines associated with the finding.
-     *
-     * @param Pipeline[] $pipelines
-     */
-    public function setPipelines($pipelines)
-    {
-    }
-    /**
-     * @return Pipeline[]
-     */
-    public function getPipelines()
+    class Google_Service_SecurityCommandCenter_VertexAi extends \Google\Service\SecurityCommandCenter\VertexAi
     {
     }
 }

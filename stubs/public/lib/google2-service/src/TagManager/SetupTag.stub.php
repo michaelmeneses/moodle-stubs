@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class SetupTag extends \Google\Model
-{
-    /**
-     * If true, fire the main tag if and only if the setup tag fires successfully.
-     * If false, fire the main tag regardless of setup tag firing status.
-     *
-     * @var bool
-     */
-    public $stopOnSetupFailure;
-    /**
-     * The name of the setup tag.
-     *
-     * @var string
-     */
-    public $tagName;
-    /**
-     * If true, fire the main tag if and only if the setup tag fires successfully.
-     * If false, fire the main tag regardless of setup tag firing status.
-     *
-     * @param bool $stopOnSetupFailure
-     */
-    public function setStopOnSetupFailure($stopOnSetupFailure)
+namespace Google\Service\TagManager {
+    class SetupTag extends \Google\Model
     {
+        /**
+         * If true, fire the main tag if and only if the setup tag fires successfully.
+         * If false, fire the main tag regardless of setup tag firing status.
+         *
+         * @var bool
+         */
+        public $stopOnSetupFailure;
+        /**
+         * The name of the setup tag.
+         *
+         * @var string
+         */
+        public $tagName;
+        /**
+         * If true, fire the main tag if and only if the setup tag fires successfully.
+         * If false, fire the main tag regardless of setup tag firing status.
+         *
+         * @param bool $stopOnSetupFailure
+         */
+        public function setStopOnSetupFailure($stopOnSetupFailure)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStopOnSetupFailure()
+        {
+        }
+        /**
+         * The name of the setup tag.
+         *
+         * @param string $tagName
+         */
+        public function setTagName($tagName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\SetupTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStopOnSetupFailure()
-    {
-    }
-    /**
-     * The name of the setup tag.
-     *
-     * @param string $tagName
-     */
-    public function setTagName($tagName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagName()
+    class Google_Service_TagManager_SetupTag extends \Google\Service\TagManager\SetupTag
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class RunStreamRequest extends \Google\Model
-{
-    protected $cdcStrategyType = CdcStrategy::class;
-    protected $cdcStrategyDataType = '';
-    /**
-     * Optional. Update the stream without validating it.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Optional. The CDC strategy of the stream. If not set, the system's default
-     * value will be used.
-     *
-     * @param CdcStrategy $cdcStrategy
-     */
-    public function setCdcStrategy(CdcStrategy $cdcStrategy)
+namespace Google\Service\Datastream {
+    class RunStreamRequest extends \Google\Model
     {
+        protected $cdcStrategyType = CdcStrategy::class;
+        protected $cdcStrategyDataType = '';
+        /**
+         * Optional. Update the stream without validating it.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Optional. The CDC strategy of the stream. If not set, the system's default
+         * value will be used.
+         *
+         * @param CdcStrategy $cdcStrategy
+         */
+        public function setCdcStrategy(CdcStrategy $cdcStrategy)
+        {
+        }
+        /**
+         * @return CdcStrategy
+         */
+        public function getCdcStrategy()
+        {
+        }
+        /**
+         * Optional. Update the stream without validating it.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CdcStrategy
+     * Runtime class alias of \Google\Service\Datastream\RunStreamRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCdcStrategy()
-    {
-    }
-    /**
-     * Optional. Update the stream without validating it.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
+    class Google_Service_Datastream_RunStreamRequest extends \Google\Service\Datastream\RunStreamRequest
     {
     }
 }

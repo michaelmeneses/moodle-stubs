@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerReference extends \Google\Model
-{
-    protected $chunkInfoType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo::class;
-    protected $chunkInfoDataType = '';
-    protected $structuredDocumentInfoType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo::class;
-    protected $structuredDocumentInfoDataType = '';
-    protected $unstructuredDocumentInfoType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo::class;
-    protected $unstructuredDocumentInfoDataType = '';
-    /**
-     * Chunk information.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo $chunkInfo
-     */
-    public function setChunkInfo(GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo $chunkInfo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerReference extends \Google\Model
     {
+        protected $chunkInfoType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo::class;
+        protected $chunkInfoDataType = '';
+        protected $structuredDocumentInfoType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo::class;
+        protected $structuredDocumentInfoDataType = '';
+        protected $unstructuredDocumentInfoType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo::class;
+        protected $unstructuredDocumentInfoDataType = '';
+        /**
+         * Chunk information.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo $chunkInfo
+         */
+        public function setChunkInfo(GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo $chunkInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo
+         */
+        public function getChunkInfo()
+        {
+        }
+        /**
+         * Structured document information.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo $structuredDocumentInfo
+         */
+        public function setStructuredDocumentInfo(GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo $structuredDocumentInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo
+         */
+        public function getStructuredDocumentInfo()
+        {
+        }
+        /**
+         * Unstructured document information.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo $unstructuredDocumentInfo
+         */
+        public function setUnstructuredDocumentInfo(GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo $unstructuredDocumentInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo
+         */
+        public function getUnstructuredDocumentInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkInfo()
-    {
-    }
-    /**
-     * Structured document information.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo $structuredDocumentInfo
-     */
-    public function setStructuredDocumentInfo(GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo $structuredDocumentInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo
-     */
-    public function getStructuredDocumentInfo()
-    {
-    }
-    /**
-     * Unstructured document information.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo $unstructuredDocumentInfo
-     */
-    public function setUnstructuredDocumentInfo(GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo $unstructuredDocumentInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfo
-     */
-    public function getUnstructuredDocumentInfo()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerReference extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReference
     {
     }
 }

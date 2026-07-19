@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class AutoscalingTargets extends \Google\Model
-{
-    /**
-     * Required. The target high priority cpu utilization percentage that the
-     * autoscaler should be trying to achieve for the instance. This number is on
-     * a scale from 0 (no utilization) to 100 (full utilization). The valid range
-     * is [10, 90] inclusive.
-     *
-     * @var int
-     */
-    public $highPriorityCpuUtilizationPercent;
-    /**
-     * Required. The target storage utilization percentage that the autoscaler
-     * should be trying to achieve for the instance. This number is on a scale
-     * from 0 (no utilization) to 100 (full utilization). The valid range is [10,
-     * 99] inclusive.
-     *
-     * @var int
-     */
-    public $storageUtilizationPercent;
-    /**
-     * Required. The target high priority cpu utilization percentage that the
-     * autoscaler should be trying to achieve for the instance. This number is on
-     * a scale from 0 (no utilization) to 100 (full utilization). The valid range
-     * is [10, 90] inclusive.
-     *
-     * @param int $highPriorityCpuUtilizationPercent
-     */
-    public function setHighPriorityCpuUtilizationPercent($highPriorityCpuUtilizationPercent)
+namespace Google\Service\Spanner {
+    class AutoscalingTargets extends \Google\Model
     {
+        /**
+         * Required. The target high priority cpu utilization percentage that the
+         * autoscaler should be trying to achieve for the instance. This number is on
+         * a scale from 0 (no utilization) to 100 (full utilization). The valid range
+         * is [10, 90] inclusive.
+         *
+         * @var int
+         */
+        public $highPriorityCpuUtilizationPercent;
+        /**
+         * Required. The target storage utilization percentage that the autoscaler
+         * should be trying to achieve for the instance. This number is on a scale
+         * from 0 (no utilization) to 100 (full utilization). The valid range is [10,
+         * 99] inclusive.
+         *
+         * @var int
+         */
+        public $storageUtilizationPercent;
+        /**
+         * Required. The target high priority cpu utilization percentage that the
+         * autoscaler should be trying to achieve for the instance. This number is on
+         * a scale from 0 (no utilization) to 100 (full utilization). The valid range
+         * is [10, 90] inclusive.
+         *
+         * @param int $highPriorityCpuUtilizationPercent
+         */
+        public function setHighPriorityCpuUtilizationPercent($highPriorityCpuUtilizationPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHighPriorityCpuUtilizationPercent()
+        {
+        }
+        /**
+         * Required. The target storage utilization percentage that the autoscaler
+         * should be trying to achieve for the instance. This number is on a scale
+         * from 0 (no utilization) to 100 (full utilization). The valid range is [10,
+         * 99] inclusive.
+         *
+         * @param int $storageUtilizationPercent
+         */
+        public function setStorageUtilizationPercent($storageUtilizationPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStorageUtilizationPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Spanner\AutoscalingTargets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHighPriorityCpuUtilizationPercent()
-    {
-    }
-    /**
-     * Required. The target storage utilization percentage that the autoscaler
-     * should be trying to achieve for the instance. This number is on a scale
-     * from 0 (no utilization) to 100 (full utilization). The valid range is [10,
-     * 99] inclusive.
-     *
-     * @param int $storageUtilizationPercent
-     */
-    public function setStorageUtilizationPercent($storageUtilizationPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStorageUtilizationPercent()
+    class Google_Service_Spanner_AutoscalingTargets extends \Google\Service\Spanner\AutoscalingTargets
     {
     }
 }

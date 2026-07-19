@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class MessageSet extends \Google\Model
-{
+namespace Google\Service\CivicInfo {
+    class MessageSet extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CivicInfo\MessageSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CivicInfo_MessageSet extends \Google\Service\CivicInfo\MessageSet
+    {
+    }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class Encryption extends \Google\Model
-{
-    /**
-     * Required. The name of the encryption key that is stored in Google Cloud
-     * KMS.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Required. The name of the encryption key that is stored in Google Cloud
-     * KMS.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
+namespace Google\Service\VMMigrationService {
+    class Encryption extends \Google\Model
     {
+        /**
+         * Required. The name of the encryption key that is stored in Google Cloud
+         * KMS.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Required. The name of the encryption key that is stored in Google Cloud
+         * KMS.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\Encryption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKey()
+    class Google_Service_VMMigrationService_Encryption extends \Google\Service\VMMigrationService\Encryption
     {
     }
 }
